@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C57",
+      "C59",
+      "C71",
+      "C72"
+    ],
+    "result": "eEF1A1 isoform specifically controls HSP gene transcription during heat shock. Knockdown of eEF1A1 (but not eEF1A2) markedly reduced HSP70 and HSP27 protein and mRNA induction, impaired RNAPII recruitment to HSP70 gene, reduced HSF1 binding to HSP70 promoter, and decreased transcription intensity per cell. This effect is independent of eEF1A1's role in translation, as it persists even when translation is chemically inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C29, C35-C37, C39-C40, C42, C44-C48, C50-C51, C57, C59, C71-C72 collectively demonstrate that eEF1A1 specifically controls HSP transcription through multiple complementary experimental approaches (Western blot, RT-QPCR, ChIP, FISH, run-on assays). The isoform specificity (C28, C43) and independence from translation function (C42, C44) are well-supported. The data show consistent effects across multiple cell types and with different siRNA pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C112"
+    ],
+    "result": "eEF1A1-depleted cells exhibit severely impaired HSR and compromised thermotolerance without affecting general cell viability or overall protein synthesis. A ~70% knockdown of eEF1A1 did not compromise cell viability under non-stress conditions or overall translation, but resulted in ~70% reduction in HSP70 protein levels and loss of thermotolerance after heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C33-C34, C37-C38, C112 are well-supported by cell viability assays (MTT), thermotolerance assays (FACS with propidium iodide), pulse-chase experiments with [35S]-methionine, and Western blot quantification. The data demonstrate that the knockdown level is sufficient to impair HSR without affecting basal cellular functions, validating the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C43",
+      "C145",
+      "C146"
+    ],
+    "result": "Tissue-specific isoform eEF1A2 does not support HSR, and motor neurons expressing only eEF1A2 do not induce HSPs upon stress. Knockdown of eEF1A2 had no effect on HSP70 mRNA induction or protein amount, and mature motor neurons express only eEF1A2 instead of eEF1A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C43, C145-C146 are supported by knockdown experiments (Figure 1\u2014figure supplement 4A,B) and immunofluorescence data (Figure 1\u2014figure supplement 3C) showing differential isoform expression in motor neurons. This provides a mechanistic explanation for the known inability of motor neurons to mount HSR despite expressing HSF1 (C147). The 98% amino acid similarity (C23) makes the functional difference particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "eEF1A1 enhances HSF1 binding to HSP70 promoter through direct interaction. Knockdown of eEF1A1 reduced HSE binding activity in cell extracts and HSF1 recruitment to HSP70 promoter by ChIP. eEF1A1 co-immunoprecipitated with HSF1 upon heat shock, formed a ternary complex with HSF1 and DNA (demonstrated by EMSA supershift), and showed direct binding to HSP70 promoter DNA in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62, C64, C67-C70 are supported by multiple complementary techniques (EMSA, ChIP, co-IP, supershift assays) demonstrating the eEF1A1-HSF1 interaction and its functional consequence on HSF1 DNA binding. The in vitro binding data (C68) confirms direct interaction, though noted as relatively weak. The specificity is demonstrated by higher occupancy at HSP70/HSP27 promoters versus GAPDH (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C121"
+    ],
+    "result": "eEF1A1 localizes to HSP70 transcription sites in the nucleus and interacts with elongating RNAPII. Upon heat shock, eEF1A1 accumulates in discrete nuclear dots corresponding to HSP70 transcription sites (27-64% colocalization from 30-60 min HS), with no colocalization at \u03b2-actin transcription sites. eEF1A1 occupancy increases in HSP70 ORF and 3'UTR upon heat shock, and this occupancy is reduced when RNAPII elongation is inhibited by DRB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82, C121 are supported by smFISH with Cherry-eEF1A1 fusion protein, ChIP analysis, and co-IP experiments. The temporal dynamics of colocalization (C76), specificity for HSP70 versus \u03b2-actin (C77), and dependence on RNAPII elongation (C80) provide strong evidence. The co-IP of eEF1A1 with RNAPII (C82) supports the proposed interaction with the elongation complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "eEF1A1 binds specifically to the 3'UTR of HSP70 mRNA through stem-loop 2. RNA-IP detected HSP70 mRNA association with eEF1A1 in heat-shocked cells. RNA-EMSA showed eEF1A1 altered mobility of 3'UTR but not 5'UTR or unrelated RNA. Deletion mapping identified stem-loop 2 (\u039483-93, \u0394151-158) as the primary binding site, with an estimated Kd of ~100 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C83-C86, C89-C91 are supported by RNA-IP, RNA-EMSA, and deletion analysis. The specificity for 3'UTR over 5'UTR and unrelated RNA (C85-C86) is clearly demonstrated. The deletion mapping (C89-C90) provides structural detail, though the Kd measurement (C91) should be considered an estimate from EMSA rather than a precise equilibrium measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C87",
+      "C88",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "eEF1A1 stabilizes HSP70 mRNA through transcription-coupled mechanism. After 30 min of heat shock, HSP70 mRNA decay rate increased substantially in eEF1A1-depleted cells, while GAPDH mRNA decay was unaffected. Luciferase assays showed that only the presence of both HSP70 promoter and 3'UTR resulted in decreased activity upon eEF1A1 knockdown, not when expressed from SV40 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C87-C88, C92-C94 are supported by actinomycin D chase experiments and luciferase reporter assays. The specificity for HSP70 versus GAPDH (C88) and the requirement for both promoter and 3'UTR (C92-C93) support the model of transcription-coupled mRNA stabilization (C94). The experimental design appropriately tests the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C135"
+    ],
+    "result": "eEF1A1 facilitates HSP70 mRNA nuclear export through interaction with TPR1. Cells knocked down for eEF1A1 showed stronger nuclear FISH signal and accumulated ~30% of HSP70 mRNA in nucleus after 2 hr heat shock (versus >95% cytoplasmic in control), with no effect on GAPDH. eEF1A1 depletion greatly diminished HSP70 mRNA binding to TPR1, and eEF1A1 co-immunoprecipitated with TPR1 during heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C98-C101, C103-C105, C135 are supported by smFISH, nuclear/cytoplasmic fractionation with RT-QPCR, RNA-IP, and co-IP experiments. The specificity for HSP70 versus GAPDH (C101) and the functional link to TPR1 (C103-C104) support the proposed export mechanism. The model of a ternary TPR1-HSF1-eEF1A1 complex (C135) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "eEF1A1 facilitates loading of HSP70 mRNA into polysomes for translation. Areas with higher density of HSP70 mRNAs corresponded to brighter Cherry-eEF1A1 signal, and this accumulation was not observed in eEF1A1-depleted cells. Polysome fractionation showed smaller amount of HSP70 mRNA in light ribosomes in eEF1A1-depleted cells, while polysome profiles and general protein synthesis were unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110, C136-C138 are supported by smFISH and polysome fractionation experiments. The selective effect on HSP70 loading without affecting general translation (C137-C138) is well-demonstrated. However, the mechanistic details of how eEF1A1 facilitates polysome loading remain unclear and would benefit from additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C30",
+      "C111",
+      "C112",
+      "C119",
+      "C149"
+    ],
+    "result": "eEF1A1 coordinates all stages of HSP70 gene expression by adjusting transcriptional yield to translational needs, rendering HSR rapid, robust, and highly selective. Each step of HSP70 gene expression (transcription, stability, transport, translation) is impaired when eEF1A1 is partially depleted, and the sum of these effects accounts for ~70% reduction in HSP70 protein level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C30, C111-C112, C119, C149 represent the integrative conclusion supported by the collective experimental data showing eEF1A1's role at multiple stages. The coordination model (C10, C30) is well-supported by the mechanistic data. The quantitative agreement between knockdown level and phenotype (C112) strengthens the conclusion. This represents the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "HSP70 transcription during heat shock is synchronized but stochastic at the single-cell level. Although most cells switched from undetectable to massive HSP70 mRNA induction from 30-60 min of heat shock, not all cells respond with the same intensity at the same time, and induction within transcription sites of the same cell is stochastic. Transcription ends at 2 hr despite continued stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by single-molecule FISH observations across multiple time points. The stochastic nature of transcription site activation (C115) and the temporal dynamics (C116-C118) provide important context for understanding HSR regulation. These observations are descriptive but well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C74"
+    ],
+    "result": "At 30 min of heat shock, approximately 80% of MEF cells showed active HSP70 transcription in at least 1 of 4 alleles. This was quantified by single-molecule FISH showing strong nuclear signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C74 are supported by smFISH data with quantification. The observation that MEFs are tetraploid is noted. This provides important baseline characterization of the heat shock response kinetics in the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Formation of the HSF1-eEF1A1-DNA complex requires an RNA component that is thought to function as a thermosensor. This was demonstrated by RNAse treatment abolishing the complex in EMSA experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 are supported by EMSA data with RNAse treatment (Figure 2\u2014figure supplement 1B) and previous work (Shamovsky et al., 2006). The thermosensor hypothesis (C124) is speculative but based on prior work. The RNA requirement is clearly demonstrated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The association of eEF1A1 with RNAPII may facilitate relocation of eEF1A1 from promoter to 3'UTR and may be crucial for mRNA stability and transport. While binding of eEF1A1 to HSP70 mRNA could be independent of transcription elongation, the RNAPII interaction suggests a coupled mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C127 are explicitly stated as possibilities and hypotheses ('may facilitate', 'may be crucial', 'it is possible'). While the co-IP data (C82) and ChIP data (C78) support an association, the mechanistic details of how this facilitates mRNA processing remain speculative. Additional experiments would be needed to definitively establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C144",
+      "C148",
+      "C150"
+    ],
+    "result": "eEF1A1 represents an attractive therapeutic target for conditions associated with disrupted protein homeostasis, including neurodegenerative diseases. The findings suggest a novel therapeutic strategy by enabling eEF1A1 expression in motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C144, C148, C150 are speculative statements about potential therapeutic applications. While the basic science findings are solid, no therapeutic validation experiments are presented. The therapeutic potential is plausible given the role in HSR and the motor neuron isoform difference, but remains to be tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The remaining eEF1A1 after knockdown supports the residual HSP70 expression observed in depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is a reasonable inference from the observation that HSP70 expression is reduced but not completely abolished in eEF1A1-depleted cells. This is consistent with the dose-dependent nature of the effect and the incomplete knockdown (~70%).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "The interaction of eEF1A1 with trans-acting factors (AUF1, PABP1) and its phosphorylation/methylation status may determine mRNA stability. PKR may influence HSP70 mRNA stability via phosphorylation of eEF1A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C132 are speculative statements about potential regulatory mechanisms. While based on established knowledge about these factors (C128-C130), no direct experimental evidence is provided in this manuscript to test these specific hypotheses. These represent reasonable directions for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "eEF1A1 likely modulates the expression of many genes controlled by HSF1, supported by results with HSP27 and other HSPs showing similar effects of eEF1A1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 are supported by experimental data showing effects on HSP27 (C36, C39) and multiple HSP genes (C40). While stated as 'likely', the data support generalization beyond HSP70. However, the extent and specificity across all HSF1 target genes remains to be fully characterized.",
+    "result_type": "MINOR"
+  }
+]

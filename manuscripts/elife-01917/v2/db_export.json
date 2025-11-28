@@ -1,0 +1,1886 @@
+{
+  "submission": {
+    "id": "a5087b0f-2880-4500-b7ce-a028ddde8445",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:16:55.020655Z",
+    "updated_at": "2025-11-28T20:16:55.020655Z"
+  },
+  "content": [
+    {
+      "id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "submission_id": "a5087b0f-2880-4500-b7ce-a028ddde8445",
+      "content_type": "manuscript",
+      "content_text": "# Fluorescent sensors for activity and regulation of the nitrate transceptor CHL1/NRT1.1 and oligopeptide transporters\n\n## Authors\n\n- Cheng-Hsun Ho<sup>1</sup>\n- Wolf B Frommer<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Plant Biology Carnegie Institution for Science Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo monitor nitrate and peptide transport activity in vivo, we converted the dual-affinity nitrate transceptor CHL1/NRT1.1/NPF6.3 and four related oligopeptide transporters PTR1, 2, 4, and 5 into fluorescence activity sensors (NiTrac1, PepTrac). Substrate addition to yeast expressing transporter fusions with yellow fluorescent protein and mCerulean triggered substrate-dependent donor quenching or resonance energy transfer. Fluorescence changes were nitrate/peptide-specific, respectively. Like CHL1, NiTrac1 had biphasic kinetics. Mutation of T101A eliminated high-affinity transport and blocked the fluorescence response to low nitrate. NiTrac was used for characterizing side chains considered important for substrate interaction, proton coupling, and regulation. We observed a striking correlation between transport activity and sensor output. Coexpression of NiTrac with known calcineurin-like proteins (CBL1, 9; CIPK23) and candidates identified in an interactome screen (CBL1, KT2, WNKinase 8) blocked NiTrac1 responses, demonstrating the suitability for in vivo analysis of activity and regulation. The new technology is applicable in plant and medical research.\n\n## Introduction\n\nQuantitatively, nitrogen is the single most limiting nutrient for plants. Thus, not surprisingly, maximal crop yield depends critically on nitrogen fertilizer inputs. Current practices require production of \u223c1.5 \u00d7 107 tons of N-fertilizer per annum, consuming \u223c1% of the world\u2019s annual energy production. Plants absorb only a fraction of the fertilizer applied to the field, leading to leaching into groundwater, polluting the environment, and damaging human health. Improvements in nitrogen use efficiency of crops are urgently required; although potential targets including uptake transporters and metabolic enzymes have been identified, successful improvements in N-efficiency are rare (McAllister et al., 2012; Jiang, 2012b; Xu et al., 2012; Schroeder et al., 2013). Overexpression of an alanine amino transferase or the transporter OsPTR9 are two of the few examples of improved nitrogen use efficiency (Shrawat et al., 2008; Fang et al., 2013). Ammonium, nitrate, amino acids, and di- and tripeptides serve as the major forms of inorganic and organic nitrogen for plants. Uptake occurs predominantly from the soil/rhizosphere into roots, although aerial parts of the plant are also capable of absorbing nitrogen (McAllister et al., 2012). Nitrogen availability and distribution in soil vary both spatially and temporally. Inorganic nitrogen uptake is complex and involves multiple ammonium and nitrate uptake systems, typically grouped into low-affinity/high-capacity and high-affinity/low-capacity systems (Siddiqi et al., 1990; Wang et al., 1994; von Wir\u00e9n et al., 1997). Their relative activity is influenced by both exogenous and endogenous factors. The exact sites of uptake of the various forms of nitrogen along the length of the root, the cells that are directly involved, and in vivo regulation are not well understood. Also, the exact intercellular path towards the stele is not experimentally proven. The reasons for this lack of knowledge lie in the fact that nitrogen transport is difficult to measure. Some studies rely on the analysis of the depletion of the medium, others use stable isotopes, or the 13N-isotope, which has a short half-life time of \u223c10 min and requires access to a suitable supply source (Wang et al., 1993; Clarkson et al., 1996). Most of these techniques lack spatial resolution, that is information on which cell layers and which root zones absorb the nutrient. Electrophysiological assays can provide spatial information; however, they are mostly used at accessible surfaces. Spatial information has been provided in a few studies by methods such as vibrating electrodes (Henriksen et al., 1990, 1992), positron-emitting tracer imaging systems (Matsunami et al., 1999; Kiyomiya et al., 2001), or secondary ion mass spectrometers (Clode et al., 2009). We also know little about differences in the distribution of the nitrogen forms in different root cell types or zones and with respect to cellular compartmentation. Classical approaches average total ion/metabolite levels over all cells in the sample, for example, in whole roots. Nitrate levels differ dramatically between root cell types (Zhen et al., 1991; Karley et al., 2000). Recently, a GFP-labeled protoplast-sorting platform was used to compare metabolomes of individual cell types in roots (Moussaieff et al., 2013). This study found that the levels of small oligopeptides were comparatively higher in the epidermis and endodermis compared to other root cell types. Compartmental analyses indicated that the nitrate concentration of root vacuoles is \u223c10-fold higher compared to the cytosol (Zhen et al., 1991).\n\nTransporters are placed in strategic positions to control which and how much of a specific nitrogen form can enter a given cell at a given point of time. The progress in identifying transporter genes provided a new handle for addressing the mechanisms and the spatial and temporal regulation of nitrogen acquisition from a new level of detail. Three major families of transporters for inorganic nitrogen uptake (and distribution) have been identified: the NPF/POT nitrate transporter family (Leran et al., 2013), NRT2 nitrate transporters (Kotur et al., 2012), and the ammonium transporters of the AMT/MEP/Rh family (von Wir\u00e9n et al., 2000; Andrade and Einsle, 2007). In addition to their role in nitrate uptake, members of the NPF/POT (Leran et al., 2013) family play important roles also in the transport of histidine, dicarboxylates, oligopeptides, and glucosinolates, and surprisingly at least three major plant hormones: auxin, ABA, and gibberellin (Krouk et al., 2010; Kanno et al., 2012; Boursiac et al., 2013). Genes are valuable tools for exploring physiological functions. Analysis of RNA levels allows us to study gene regulation (Gazzarrini et al., 1999), for example, transcriptional GUS-fusions for determining organ and cell type specific expression and translational GFP-fusions for subcellular localization. Both classical and novel methods, including cell-specific transcriptional profiles and \u2018translatomes\u2019 provide us with new insights into differences in the expression of transporters in roots (Brady et al., 2007; Mustroph et al., 2009). Analysis of cell type-specific expression profiles showed that the majority of changes in nitrate-induced gene expression are cell-specific (Gifford et al., 2008). Expression and purification of the proteins followed by reconstitution in vesicles or expression in heterologous systems to interrogate biochemical properties include Km and transport mechanisms. The genes can be used as a basis for structure function studies (Loqu\u00e9 et al., 2007) and to obtain crystal structures (Andrade et al., 2005; Doki et al., 2013). We can use the genes to identify interacting proteins (Lalonde et al., 2010). Importantly, the availability of genes enables us to generate specific mutants (Yuan et al., 2007; Wang et al., 2009) that provide insights into their physiological roles. However, even with this massive amount of detailed data, the key information is missing, namely the information on the activity state of a given protein in vivo. In vivo activity depends mainly on two additional parameters beyond protein abundance at a given membrane: the local concentration of the substrate/s, the status of the cell (e.g., the membrane potential and local pH as key determinants for ion transporter activity), and the status of cellular regulatory networks required for the activity of the protein in question. Again, genes can help us to find regulators and study the effect of mutations on nitrogen acquisition, but ultimately we need to be able to quantify the activity of the transporters in individual cells in vivo.\n\nNitrogen uptake is controlled by many factors, such as nitrogen level, energy status of the plant, assimilation status of imported nitrogen, N-demand, and involved mobile signals between shoots and roots as well as between different parts of the root system (von Wir\u00e9n et al., 1997). Nitrate transporters are regulated through phosphorylation, mediated by calcium-dependent calcineurin-like kinases (Calcineurin B-like, CBL and CBL-interacting protein kinase, CIPK) (Ho et al., 2009; Hu et al., 2009; Wang et al., 2009). Major breakthroughs were findings that indicate both the members of the AMT and NPF/POT family function as transporters and receptors (transceptors) (Ho et al., 2009; Lima et al., 2010; Rubio-Texeira et al., 2010). However, despite broad progress, at present, we have only a limited understanding of signaling pathways that control nitrogen acquisition.\n\nIt is important to develop tools for monitoring the activity of individual transporters in specific locations in individual cells of plant roots in a minimally invasive manner. A minimally invasive tool that has proven valuable for monitoring ions and metabolite levels with high spatial and temporal resolution is genetically encoded fluorescent nanosensors (Okumoto, 2012). These sensors rely on substrate binding\u2013dependent conformational rearrangements in a sensory domain. The rearrangements are reported by changes in F\u00f6rster Resonance Energy Transfer (FRET) efficiency between two fluorescent proteins, which act as FRET donor and acceptor due to spectral overlap. Sensors for glucose, sucrose, and zinc have successfully been used in Arabidopsis to monitor steady state levels as well as accumulation and elimination under both static and dynamic conditions where roots were exposed to pulses of the respective analytes (Deuschle et al., 2006; Chaudhuri et al., 2008; Okumoto et al., 2008; Chaudhuri et al., 2011; Lanquar et al., 2014).\n\nThe recent progress in obtaining crystal structures for transporters, and more importantly the availability of transporter structures in multiple configurations, has provided insights into the conformational rearrangements occurring during the transport cycle (Doki et al., 2013; Guettou et al., 2013; Henderson and Baldwin, 2013; Madej et al., 2013). Biochemical and structural analyses have shown that many transporters undergo conformational changes during the transport cycle (Shimamura et al., 2010; Jiang, 2012a; Krishnamurthy and Gouaux, 2012). Important in this context is that such rearrangements have been observed for many members of the MFS superfamily, including members of the NPF/POT family (Doki et al., 2013). We therefore hypothesized that it should be possible to \u2018record\u2019 the conformational rearrangements that occur during the transport cycle in a similar manner as used for the engineering of the FRET sensors. The first prototype for transport activity sensors, named AmTrac, uses ammonium transporters as sensory domains for engineering transport activity sensors by inserting a circularly permutated EGFP (cpEGFP) into a conformation-sensitive position of an ammonium transporter (De Michele et al., 2013). Addition of ammonium to yeast cells expressing the AmTrac sensor triggers concentration-dependent and reversible changes in fluorescence intensity (De Michele et al., 2013). Whether this approach is transferable to other family proteins in different species remained to be shown. To create nitrate and peptide transport activity sensors, we fused CHL1 and four PTRs to fluorescent protein pairs, expressed the fusions in yeast, and tested their response to substrate addition (named NiTrac for nitrate transport activity and PepTrac for peptide transport activity). The five sensors responded to the addition of nitrate or peptides, respectively. The kinetics of the NiTrac1 sensor response was strikingly similar to the transport kinetics of the native CHL1; the response was specific and reversible. The new sensors were used to study structure/function relationships, to correlate effects of mutations in CHL1 and NiTrac1 on activity and sensor responses, and to observe the effect of potential regulators on the conformation of the transporter. The successful use of the sensors in yeast indicates that these new tools can be used for in planta analyses.\n\n## Results\n\n### Engineering of a nitrate transport activity sensor\n\nIt is likely that the nitrate transceptor CHL1 undergoes conformational rearrangements during its transport cycle. To measure substrate-dependent conformational rearrangements, CHL1 was sandwiched between a yellow acceptor (Aphrodite) and cyan donor fluorophore (mCerulean) (Rizzo et al., 2006; Figure 1A). This chimera, named NiTrac1, was expressed in yeast, followed by spectral analysis of yeast cultures in a spectrofluorimeter (Figure 1B). The fluorophores were in F\u00f6rster distance, as evidenced by significant resonance energy transfer. If conformational rearrangements were induced by substrate addition, one might expect a change in the energy transfer rate. To our surprise, and in contrast to typical FRET sensors (e.g., glucose or glutamate [Fehr et al., 2003; Okumoto et al., 2005]), we observed an overall reduction in the emission intensities of both donor and acceptor, but no obvious change in FRET efficiency. Cyan FPs are typically robust compare to the yellow variants; specifically, they are less sensitive to pH changes or other ions compared to yellow variants (here Venus encoded by codon-modified Aphrodite gene sequence [Deuschle et al., 2006]). However, Aphrodite emission was unaffected by nitrate when excited directly (Figure 1B, inset), indicating that the external nitrate triggers donor quenching in the cytosol. The sensor response can be expressed as a ratio change between the emission intensity of the sensor at CFP excitation relative to YFP emission obtained from acceptor excitation. As one may have expected, the nitrate analog chlorate that lead to the naming of CHL1 (chlorate resistance of the chl1 mutant) (Tsay, 1993) also triggered NiTrac quenching (Figure 1C). The response of NiTrac1 is nitrate- and chlorate-specific; other compounds such as chloride, ammonium, divalent cations, and dipeptide had no significant effect (Figure 1D). When mCerulean was replaced by the corral-derived cyan fluorescent protein mTFP (Ai et al., 2008), we observed FRET, but nitrate addition had no effect on the emission of this variant (Figure 1E). The mTFP variant, named NiTrac1c (control), therefore can serve as a control sensor for in vivo measurements. Replacement of mCerulean with eCFP, another jellyfish variant, retained the donor-quenching response to nitrate (Figure 1F). Although we do not understand the mechanism by which nitrate triggers donor quenching, the effect is likely related to a specific property common to mCerulean and eCFP and lacking in mTFP.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01917/elife-01917-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the NiTrac1 sensor construct. Aphrodite, yellow; mCerulean, light blue; CHL1/NRT1.1/NPF6.3 dark blue; TM, transmembrane domain. (B) Emission spectra for NiTrac1 expressed in yeast cells; excitation at 428 nm: addition of 5 mM potassium nitrate (red; control 5 mM KCl, blue) lead to a reduction in fluorescence intensity of donor and acceptor emission, caused by donor quenching. Inset: emission of Aphrodite in NiTrac1 when excited at 505 nm. Aphrodite emission was unaffected. (C) Nitrate and its analog chlorate both trigger quenching at 5 mM concentrations. Nitrate-induced ratio change (peak fluorescence intensity of Aphrodite excited at 505 nm over emission spectrum at 485 nm obtained with excitation at 428 nm). Data are normalized to buffer-treated control c. (D) Substrate specificity: yeast cells expressing NiTrac1 were treated with the indicated compounds at 5 mM concentrations. Only nitrate and chlorate triggered responses that were significantly different from control c (*p<0.05, t test). Experiment performed as in Figure 1C. (E) Absence of quenching of NiTrac1 when mCerulean was exchanged for mTFP (excitation at 440 nm). Inset: emission of Aphrodite in NiTrac1 when excited at 505 nm. (F) Donor quenching is retained when mCerulean is exchanged for eCFP in NiTrac1 in response to addition of 5 mM potassium nitrate (red; control 5 mM KCl, blue; excitation at 428 nm). Inset: emission of Aphrodite in NiTrac1 when excited at 505 nm. (G) No detectable effect on the fluorescence properties of nitrate addition to yeast cells coexpressing a cytosolically localized free mCerulean and the CHL1 transceptor. Mean \u00b1 SD; n = 3.\n\n### Engineering of four peptide transport activity sensors\n\nIt is conceivable that nitrate is taken up by CHL1 into the cytosol where it binds to mCerulean or eCFP, leading to quenching. However, addition of nitrate to yeast cells expressing CHL1 alone had no effect on the fluorescence of a cytosolically expressed mCerulean (Figure 1G). One could argue that quenching occurs locally at the exit pore of the transporter directly at the plasma membrane and thus requires tethering of mCerulean to the transporter. To test whether quenching is specifically caused by nitrate, we created similar constructs for the oligopeptide transporters PTR1, 2, 4, and 5 from Arabidopsis (Komarova et al., 2012; Tsay et al., 2007; Leran et al., 2013; Figure 2A). These proteins share between 39% and 74% homology with CHL1. PepTrac1, PepTrac2, and PepTrac5 sensors all responded with donor quenching to the addition of 0.5 mM diglycine (Figure 2B\u2013D). Interestingly, PepTrac4 responded to substrate addition with a ratio change that is consistent with a change in the energy transfer rate rather than donor quenching (Figure 2E). Further characterization will be necessary to explore the molecular basis of donor quenching and how conformational rearrangements cause donor quenching in NiTrac1 by nitrate or PepTrac1 by peptides and how they induce resonance energy transfer in PepTrac4.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01917/elife-01917-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of the PepTrac sensor constructs. AtPTR1, 2, 4, and 5 were used for PepTrac sensor creation. Three-dimensional model of AFP-PTRs-mCerulean chimeric protein based on the crystal structure of bacteria peptide transporters (\u2018Materials and methods\u2019). PTR1 is shown in rainbow cartoon; AFP in yellow; mCerulean in blue. (B\u2013D) Donor quenching of PepTrac1, 2, and 5 expressed in yeast in response to addition of 0.5 mM diglycine (red; control 5 mM KCl, blue; excitation at 428 nm). Inset: emission of Aphrodite in PepTrac1, 2, and 5 when excited at 505 nm. (E) FRET ratio change for PepTrac4 (red; control 5 mM KCl, blue; excitation at 428 nm). Mean \u00b1 SD; n = 3.\n\n### Biphasic kinetics of the NiTrac1 response\n\nThe conformational rearrangements in the sensors could be induced by substrate binding or reflect rearrangements that occur during the transport cycle. Because binding and transport typically have different kinetic constants, we analyzed the response kinetics of NiTrac1. CHL1 is unusual in that it shows biphasic nitrate uptake kinetics (Figure 3A; Liu and Tsay, 2003). The observed dual-affinity in oocytes had been attributed to phosphorylation of T101 by endogenous kinase (Liu and Tsay, 2003). The phosphorylation hypothesis would suggest that about half of the transporter molecules are phosphorylated. Interestingly, we observed that the kinetics of the fluorescence response of NiTrac1 in yeast were also biphasic (Figure 3A). Since it is unlikely that yeast also partially phosphorylates the transporter, the biphasic kinetics are more likely an intrinsic property of the protein. Mutation of T101 to alanine had been shown to eliminate the high-affinity component (Figure 3B; Liu and Tsay, 2003). Introduction of T101A into NiTrac1 also eliminated the high-affinity component, intimating that NiTrac1 is a transport activity sensor, and that conformational rearrangements during the transport cycle affect mCerulean emission (Figure 3B). Interestingly, the transport Kms of both high- and low-affinity phases matched the values obtained for the fluorescence response, supporting the hypothesis that NiTrac measures the transport activity. Measurement of the sensor response in individual yeast cells demonstrated rapid nitrate-induced quenching and reversibility of the fluorescence intensity after removal of nitrate (Figure 3C), indicating that the sensor can be used effectively for in planta analyses.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01917/elife-01917-fig3-v2.jpg)\n\n**Figure 3.:** (A) Biphasic nitrate uptake kinetics of the fluorescence response of NiTrac1 (red) and biphasic nitrate uptake transport kinetics of CHL1/NRT1.1 (Black). (B) Monophasic nitrate uptake kinetics of the fluorescence response of NiTrac1-T101A (red) and monophasic low-affinity transport kinetics of CHL1/NRT1.1-T101A (Black, oocyte uptake data from (Liu and Tsay, 2003). The Kms of NiTrac1 for nitrate are \u223c75.1 \u00b1 21 \u03bcM and 3.8 \u00b1 2.6 mM; for NiTrac1-T101A is 3.5 \u00b1 3.7 mM. Excitation and emission as Figure 1C. The amount of decreased fluorescence intensity by addition of indicated nitrate concentration in Figure 3A,B were normalized to water-treated control (0) (mean \u00b1 SD; n = 3). (C) Analysis of the NiTrac1 response in individual yeast cells trapped in a Cellasic microfluidic plate. Cells were initially perfused with 50 mM MES buffer pH 5.5, followed by a square pulse of 10 mM KNO3 in MES buffer for 6 min (blue frame). Data were normalized to the initial value (mean \u00b1 SD; n = 3).\n\n### Effect of mutations on the NiTrac1 response and NRT1.1 activity\n\nTo study the NiTrac mechanism in more detail and to identify residues important for the transport function of the transporter and sensor, we generated a homology model for CHL1 on the basis of crystal structures of bacterial proton-dependent oligopeptide transporter homologs (\u2018Materials and methods\u2019) and predicted potentially functionally important residues structurally close to the substrate binding pocket from the predicted structure and from sequence alignments. We specifically targeted residues that might be important for substrate specificity, residues involved in proton cotransport, and salt bridges possibly involved in dynamic movements during the transport cycle (Figure 4A). As one may have expected, different mutants showed different energy transfer ratios, consistent with conformational differences (altered distance and/or orientation of the fluorophores in the absence of substrate; Figure 4B). Interestingly, we not only observed cases in which donor quenching was lost, but also changes that are consistent with changes in FRET efficiency in response to ligand addition, as well as mixtures of donor quenching and change in the FRET efficiency (Figure 4B). However, without knowledge of the effect of the mutations on transport activity, the data are difficult to interpret. Therefore, we introduced the corresponding mutations into CHL1, expressed the mutants in Xenopus oocytes and used two-electrode voltage clamp (TEVC, Figure 5), and 15N-uptake (Figure 6) to measure the transport activity. In response to nitrate addition, CHL1 expressing oocytes showed an inward current, consistent with the proposed 2H+/NO3\u2212 cotransport mechanism. CHL1 contains a highly conserved motif E41-E44-R45 in TM1 predicted to play a role in proton coupling (Newstead, 2011; Newstead et al., 2011; Solcan et al., 2012; Doki et al., 2013). Mutations in this motif in the oligopeptide transporters PepTSt (from Streptococcus thermophiles [Solcan et al., 2012]), PepTSo, PepTSo2 (both from Shewanella oneidensis) (Newstead, 2011), and GkPOT (from Geobacillus kaustophilus) (Doki et al., 2013) typically lost proton-driven transport activity. We therefore tested the role of residues in this motif using NiTrac expressed in yeast and CHL1 expressed on oocytes. Mutation in any of the three residues (E41A, E44A, and R45A, TM1) led to a loss of nitrate-induced currents and 15N-uptake in both the high- and low-affinity range (0.5/0.25 and 10 mM) (Figures 5, 6). The corresponding mutant of NiTrac1 also lost the sensor response to nitrate addition (Figures 4B, 7), indicating that the conserved motif is also used for proton cotransport of nitrate. Interestingly, the mutant was characterized by higher FRET compared to wild-type CHL1, indicating that the mutation leads to a conformational change in the protein (Figure 4B). Structural and functional analyses of the bacterial peptide transporter PepTSt had implicated a salt bridge between a conserved K126 in TM4 and E400 in TM10 in peptide recognition and/or structural movements during the transport cycle (Solcan et al., 2012). This lysine is conserved throughout the POT family (K164 of CHL1, TM4) (Newstead, 2011; Newstead et al., 2011; Solcan et al., 2012; Doki et al., 2013). Consistent with results from the bacterial PepTSt and GkPOT, mutation of K164 to alanine or aspartate in CHL1 completely abolished nitrate uptake in both the high- and low-affinity range (0.25 and 10 mM) (Figure 6); however, the nitrate-dependent inward currents were retained (Figure 5). Mutation K136A in GkPOT and K126A in PepTSt both abolished completely proton-driven uptake but still had counterflow activities (Doki et al., 2013; Solcan et al., 2012). Both CHL1-K164 mutants either function as nitrate-dependent proton channels or have lost selectivity, and consistent with the shift of the reversal potential to more negative values transport other anions such as chloride. NiTrac1-K164A surprisingly showed a different response mode, that is upon addition of nitrate the mutant not only showed donor quenching but apparently also a change in FRET efficiency, underlining the exceptional sensitivity of NiTrac1 to effects of mutations on conformation (Figure 4B). Mutation of the salt bridge acceptor E476A in TM10 of CHL1 led to loss of both the nitrate-induced inward current and 15N-uptake (Figures 5, 6) and NiTrac lost the sensor response to addition of nitrate (Figure 4B); by contrast, and as one might expect, the conservative mutation E476D had no significant effect on transport properties and sensor response (Figures 4B, 5, and 6). Alanine substitutions were introduced into corresponding sites predicted to be in the vicinity of the substrate-binding pocket (L49, Q358, and Y388 in TM1, TM7, and TM8, respectively). Consistent with the results obtained for the corresponding residue (N342 in TM8) in GKPOT (Doki et al., 2013), Y388A had no detectable effect on the nitrate-induced inward currents, 15N-uptake, and sensor response (Figures 4B, 5, and 6), indicating the residue Y388 may not be involved in nitrate binding or transport cycle of CHL1. Mutation of L49 in TM1 and Q358 in TM7 of CHL1 to alanine had no significant effect on nitrate-induced inward currents and 15N-uptake (Figures 5, 6), but NiTrac responses were characterized by a mixture of donor quenching and FRET change (Figure 4B). Based on the protein sequence alignments, CHL1 carries an extended cytoplasmic loop connecting the N- and C-terminal six helical bundles. To test the role of this loop, a triple mutant E264A-E266A-K267A was analyzed. The triple mutant lost specifically the low-affinity component nitrate-induced inward current and 15N uptake but retained the high-affinity component (Figures 5, 6), implicating the charged residues in the extended loop in the regulation of nitrate uptake affinity. Similarly, the corresponding NiTrac1 mutant also lost the sensor response to high nitrate concentrations (Figure 4B). Together, these data show that NiTrac1 is a sensitive tool for reporting conformational changes in mutants and further support the hypothesis that NiTrac1 reports activity states of the transporter.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01917/elife-01917-fig4-v2.jpg)\n\n**Figure 4.:** (A) Three-dimensional model of CHL1 protein based on the crystal structures of bacteria (\u2018Materials and methods\u2019). Red square, potential substrate binding pocket. Right panel, enlarged potential substrate binding pocket. (B). Fluorescence response of NiTrac1 mutants expressed in yeast in response to addition of 10 mM potassium nitrate (red; control 10 mM KCl, blue; excitation at 428 nm). To compare the differences in fluorescence intensity between wild type and mutants of CHL1 as well as the differences after addition of nitrate, all data from wild type and mutants were normalized to the intensity of KCl-treated controls at 470 nm. Mean \u00b1 SD; n = 3.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01917/elife-01917-fig5-v2.jpg)\n\n**Figure 5.:** Oocytes were voltage clamped at \u221240 mV and stepped into a test voltage between \u221220 and \u2212180 mV for 300 ms, in \u221220-mV increments. The currents (I) shown here are the difference between the currents flowing at +300 ms in the cRNA-injected CHL1 mutants and water-injected control of the indicated substrates. The curves presented here were recorded from a single oocyte. Similar results were obtained using another two different batches of oocytes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01917/elife-01917-fig6-v2.jpg)\n\n**Figure 6.:** The injected oocytes with various cRNA of CHL1 mutants were incubated with 0.25 mM and 10 mM K15NO3 buffer at pH 5.5 for about 1.5\u223c2 hr, and their 15N content was determined as described in \u2018Materials and methods\u2019. The values are mean \u00b1 SD (n = 5\u223c6 for all three experiments). Data are normalized to the 0.25 mM treated CHL1-injected oocytes. +, significant difference (p<0.05, t test) compared with water-injected oocytes. An asterisk indicates a significant difference (p<0.05, t test) compared with the CHL1-injected oocytes. Similar results were obtained using another two batches of oocytes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01917/elife-01917-fig7-v2.jpg)\n\n**Figure 7.:** CHL1 column: wild type and various mutants of CHL1. 15N column: nitrate uptake measured in oocytes using 15NO3\u2212 (checkmark \u2713 indicates transport activity detected, whereas \u00d7 indicates no significant, or dramatically reduced, uptake activity; red HA: measured at low nitrate concentration to analyze high-affinity component; blue LA: measured at high nitrate concentration to analyze low-affinity component). TEVC column: effect of mutations on current voltage relationships measured by two-electrode voltage clamping; checkmark \u2713 indicates nitrate-induced current observed, whereas \u00d7 indicates no significant, or dramatically reduced, current induced by nitrate; red HA and blue LA as defined above. FRET* column: crude classification of the apparent energy transfer efficiency observed in NiTrac and NiTrac mutants in the absence of substrate; multiple arrows (\u2191) indicate a relative higher energy transfer efficiency. Blue arrows, reduced apparent energy transfer; red arrows, increased apparent energy transfer. SR column: type of response of NiTrac or mutants to substrate addition: DQ, donor quenching; iET, increased energy transfer; rET, reduced energy transfer.\n\n### Effect of regulatory proteins on the NiTrac1 response\n\nThe transceptor CHL1 plays important roles in nitrate uptake, transport, sensing, and must therefore be subject to regulation of its activity by posttranslational regulation on the one hand; on the other hand, CHL1 must interact with intracellular proteins in order to control downstream transcription by signaling pathways. We hypothesized that binding of regulatory proteins or signaling proteins might affect the fluorescence properties of NiTrac1. Therefore, we tested whether coexpression of the known interactor CIPK23, which can phosphorylate CHL1 at T101 in in vitro assays, would affect the properties of NiTrac1 (Figure 8). CIPK23 did not change the energy transfer between the fluorophores in the absence of nitrate, but blocked the fluorescence response of NiTrac1 to nitrate addition (Figure 8B), either by stoichiometric binding or by phosphorylation of T101. The coactivator CBL9, which did not affect CHL1 transport activity on its own but enhanced the CIPK23-mediated phosphorylation of CHL1 (Ho et al., 2009), had no detectable effect on the fluorescence response of NiTrac1 by itself (Figure 8C). By contrast, CIPK8, which is nitrate inducible in a CHL1-dependent fashion, did not affect the Nitrac1 response. However, CBL1 on its own also blocked the Nitrac1 response to nitrate addition (Figure 8D). The analysis of coexpression of NiTrac1 with combinations of CIPKs and CBLs will require a different approach since episomal expression of three partners likely will create high variability due to copy number variance.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01917/elife-01917-fig8-v2.jpg)\n\n**Figure 8.:** Known interactors or regulators, such as CIPK8, CIPK23, CBL1, and CBL9 as well as other interactors identified in a large-scale membrane protein interaction screen were co-expressed with NiTrac1 in yeast cells. (A) Donor quenching response of NiTrac1 with vector as control. (B) and (C) Fluorescence response of NiTrac1 in CIPK23 and CBL9 coexpressing yeast, respectively. (D) The fluorescence response indicates that CIPK23, CBL1, At2g40540, and At5g41990 affect the conformation NiTrac1, whereas no detectable change is observed for CBL9, CIPK8, At1g71140, and At1g25510. Experiment performed as in Figure 1C. (A\u2013C) Nitrate-induced ratio change (peak fluorescence intensity of Aphrodite excited at 505 nm over emission spectrum obtained with excitation at 428 nm). Data are normalized to KCl-treated control at 470 nm. An asterisk indicates a significant difference (p<0.05, t test) compared with the KNO3-treated control. Mean \u00b1 SD; n = 3.\n\nA large-scale interactome screen recently identified novel CHL1 interactors (Lalonde, 2010). To test whether some of these interactors affect NiTrac1 fluorescence, we coexpressed four candidate proteins with NiTrac1 in yeast. Although two of the four did not show significant effects on NiTrac1 or the response to nitrate addition, we found that the potassium transporter KT2 and the WNK kinase WNK8 blocked NiTrac1 responses (Figure 8D). Further experiments will be required to characterize the role of these new interactions; however, the results demonstrate the suitability of NiTrac1 for analyzing the effect of known and novel interactors on CHL1 conformation and activity.\n\n## Discussion\n\nTo be able to monitor the activity and regulation of individual isoforms of the nitrate and peptide transporter family in planta and to study their structure function relationships, we engineered five transporters of the NPF/POT family to report their activity and conformation in vivo. The five proteins were fused with yellow and cyan versions of GFP at their N- and C-termini, respectively. When expressed in yeast, the sensors respond to substrate addition either by donor quenching or by a FRET change. The most striking feature of NiTrac is the biphasic response kinetic that matches the dual-affinity transport properties of the protein strikingly well. Based on a predicted structural model and sequence alignments, we mutated select amino acids. Analysis of the fluorescence response of these mutants and comparison with transport assays provides us with insights into the structure-function relationship of the CHL1 nitrate transceptor. The sensor is also used for probing structural rearrangements that occur when NiTrac is coexpressed with putative regulators and interactors, and we discovered new candidate regulatory proteins. The engineering of a suite of nitrate and peptide transport activity sensors complements our recent work in which we developed the prototype for fluorescence-based activity sensors AmTrac and MepTrac by inserting circularly permutated EGFP into conformation-sensitive positions of ammonium transporters. Addition of ammonium to yeast cells expressing the AmTrac/MepTrac sensors triggered concentration-dependent and reversible changes in fluorescence intensity (De Michele et al., 2013). Together, the engineering of activity sensors through two different approaches: insertion of a fluorophore into a conformationally sensitive site in AMT/MEPs and terminal fusions of a fluorophore pair to the NPF/POT family proteins indicate the potential to transfer the concept to other transporters, receptors, and enzymes. This suite of genetically encoded sensors provides a unique set of tools for observing the activity of individual transporter family members in intact tissue layers of intact plants.\n\n### Sensor output from NiTrac1 and PepTracs\n\nThe activity sensors can provide three types of reports: (i) the basic ratio provides information on structure, specifically conformation of the population of sensors that can be compared between, for example, mutants or in response to coexpression of a regulator; (ii) the intensity of donor or acceptor can be subject to substrate-induced changes that lead to quenching as seen in NiTrac and PepTrac. At present, we do not understand the molecular basis of nitrate-induced donor quenching, which appears to affect mCerulean and CFP, but not mTFP. The fact that three PepTracs show a similar quenching effect when dipeptides are added may indicate that the quenching is caused by a conformational rearrangement in the transporter. A more detailed biophysical characterization may shed light on this unexpected behavior of the sensors. (iii) The change in the emission ratio of the two fluorophores upon substrate addition in PepTrac4 is likely caused by a change in the resonance energy transfer as had been observed for small molecule sensors (Okumoto, 2012). In certain cases, that is, NiTrac1 mutants L49A and Q358A (Figure 7), we observed a mixture of donor quenching and FRET changes. We thus hypothesize that both NiTracs and all four PepTracs have the potential to report in two different modes, that is, donor quenching, a FRET change or a combination thereof.\n\nStructural rearrangements triggered by mutations, by binding of a regulator or by mutations apparently lead to a variety of changes in the fluorescence output. One of the most striking features of NiTrac1 is that it reflects the biphasic kinetics of CHL1 and that even the transport and fluorescence response constants are highly similar. Mutagenesis of T101 to alanine, which had been shown to specifically affect the high-affinity component of nitrate uptake, also specifically eliminated the high-affinity response in NiTrac1. These findings strongly supported the notion that NiTrac reports the processes that occur in the transceptor, when it binds and/or transports nitrate. The observations also intimate that the dual-affinity is not caused by partial phosphorylation of CHL1 when expressed in oocytes, as suggested by Tsay\u2019s group (Liu and Tsay, 2003), but more likely represent an intrinsic property of CHL1 since they also occur when NiTrac1 is expressed in yeast. CHL1 also functions as nitrate sensor to regulate transcription of a variety of genes including that of the high-affinity nitrate transporter NRT2 (Ho et al., 2009). Interestingly, the transport and signaling activities of CHL1 can be decoupled by Pro492L in the loop connecting TM10 and 11 (Ho et al., 2009). It will thus be interesting to introduce this mutation into NiTrac1 and monitor the effect on the sensor output.\n\n### Using NiTrac1 as a tool for structure function analyses\n\nTaking the advantage of a homology model, we introduced mutations into NiTrac1 and studied the effects on the transport activity by TEVC recording and 15N-uptake into oocytes, and compared the effects to fluorescence readouts from the corresponding NiTrac1 mutants. Specifically, we analyzed the role of the putative proton-coupling motif 41ExxER45; the role of charged residues in the extended loop R264R266K267; and residues in the substrate binding pocket as well as a predicted a salt bridge L49, K164, Q358, Y388, and E476 (Newstead, 2011; Newstead et al., 2011; Solcan et al., 2012; Doki et al., 2013). We observed three main types of response (Figure 7): (i) loss of both nitrate uptake activity and loss of the sensor response in E41A, E44A, R45A, and E476A; (ii) loss of either high- or low-affinity uptake activity and correlated loss of the respective sensor response in T101A and R264A/R266A/K267A; and (iii) maintenance of the nitrate uptake activity and sensor response in L49A, Y388A, Q358A, and E476D. Relative to NiTrac1, more than half of the mutants show a change in FRET between the two fluorophores in the absence of substrate addition. Consistent with the role of E41 and E44 in proton coupling for bacterial peptide transporters, the fluorescence response of E41A, E44A, and R45A NiTrac1 variants support a similar role in the nitrate transporter CHL1. Interestingly, L49A, which did not show detectable differences in transport activity, showed a mixture of donor quenching and FRET change in response to nitrate addition, demonstrating that NiTrac1 is exquisitely sensitive for detecting changes in the overall protein conformation. R45A lost transport activity but retained a FRET change response after the addition of substrate rather than showing a quenching response, indicating an overall conformational change due to binding of nitrate in the absence of a functional transport cycle. Interestingly, mutation of charged residues in the extended cytoplasmic loop of CHL1 (R264A/R266A/K267A) specifically affected the low-affinity component in sensor and uptake response, implicating the loop, potentially through interacting proteins that can tune activity. How T101 phosphorylation, which affects the behavior of CHL1/NiTrac1 at low nitrate levels cooperates with the cytosolic loop, which appears to specifically affect the behavior in high nitrate conditions will be interesting to address in future experiments. Based on our studies, we presume that K164, Q358, and E476 may participate in nitrate binding. Consistent with data from bacterial peptide transporters, E476A lost both sensor response and uptake activity. This conserved residue aspartate likely plays a role in the binding pocket and/or salt bridge formation that is important for the substrate transport cycle. Mutants carrying K164A/D and Q385A mutations were both characterized by significantly increased nitrate-dependent inward currents. It will be interesting to further explore the cause for the increased conductivity with respect to transported ion species. Although the data from the limited number of mutants do not allow us to draw conclusions on the exact molecular nature of the conformational changes, we nevertheless provide the first evidence that activity sensors are highly sensitive and simple tools for probing structure-function relationships in heterologous and homologous systems without the necessity to purify the transporters.\n\n### Effect of CIPK and CBL proteins on the NiTrac1 sensors\n\nThe interaction of proteins likely affects the conformation of both partners, either directly or as a consequence of modifications such as phosphorylation. Here we show that activity sensors can be used to probe such interactions with exquisite sensitivity. As a proof of concept, we demonstrate that coexpression of the calcium-dependent kinase CIPK23, which is phosphorylating T101 of CHL1 and thereby inhibiting the low-affinity component of CHL1, can block the fluorescence response when coexpressed with NiTrac1. Although typically CIPKs are thought to require a CBL for substrate recognition and derepression of the autoinhibition, CIPK23 had been shown to be able to interact with CHL1 on its own and trigger at least partial phosphorylation of T101 in vitro (Ho et al., 2009). Interestingly, although CBL9 had been shown to enhance the CIPK-mediated phosphorylation of T101, we did not observe an effect of coexpression of CBL on NiTrac1. Surprisingly, and despite the high sequence identity between AtCBL9 and AtCBL1 (\u223c89% identity), CBL1 but not CBL9 inhibited the nitrate response of NiTrac1. AtCBL1 and 9 have been shown to regulate a variety of processes including potassium uptake, pollen germination, as well as sugar-, hormone- and ROS-signaling (Sagi and Fluhr, 2006; Xu et al., 2006; Cheong et al., 2007; Hashimoto and Kudla, 2011; Drerup et al., 2013; Kimura et al., 2013; Li, 2013a). Even though CBL1 and 9 have apparent overlapping functions, they can have specific effects, for example, the AtCBL1-AtCIPK1 complex is involved in ABA-dependent stress responses, whereas the AtCBL9-AtCIPK1 complex plays roles in ABA-independent stress responses (Drerup et al., 2013). In general, CIPKs depend on their coactivator-CBLs to activate CIPK kinase activity. However, recent studies showed that full-length CIPK23, CIPK16, or CIPK6 alone can activate the AKT1 potassium channel system (Li et al., 2006; Lee et al., 2007; Fujii et al., 2009). Also, AtCBL10 interacts with AKT1 to regulate potassium homeostasis without binding to any AtCIPKs (Ren et al., 2013). The assays deployed here use strong promoters and high copy number plasmids. It will therefore be important to test whether low levels of the kinase are sufficient for inhibiting NiTrac1. It will also be interesting to compare the responses of NiTrac1 when expressed in mutant plants lacking components of the CBL-CIPK machinery.\n\n### WNK kinase and potassium transporter interactions\n\nIn addition, we tested whether NiTrac1 can be used to monitor conformational rearrangements caused by interacting proteins, specifically we tested interactors detected in a large-scale membrane protein/signaling protein interaction screen (Lalonde et al., 2010). Surprisingly, we found an interaction of CHL1 with the potassium transporter AtKT2/KUP2/SHY3, which plays a role in potassium uptake. Coexpression of KT2 with NiTrac1 led to a block of the nitrate response. Whether this interaction plays a role in crosstalk between nitrogen and potassium uptake remains to be shown. In addition, we had found an interaction with the \u2018no lysine (K) kinase 8\u2019 WNK8. Also, WNK8 blocked the nitrate-induced fluorescence response of NiTrac1. WNK8 had been shown to interact specifically with and phosphorylate subunit C of the vacuolar H+-ATPase AtVHA-C (Hong-Hermesdorf et al., 2006), as well as with the calcineurin B-like 1 calcium sensor AtCBL1 (Li, 2013b). It will be interesting to further explore the network between CBL1, WNK8, and CHL1.\n\nObviously, NiTrac1 is highly sensitive to conformational changes that occur during the transport cycle, effects of mutations, and to changes caused by interaction with other proteins. Thus, analyses performed with these sensors in plants will have to differentiate between responses caused by substrate and regulatory interactions. The use of controls, for example, the mTFP sensor and elimination of FRET by exchanging the acceptor with a non-fretting fluorophore, as well as the use of mutant sensors may be a way to dissect the relative contribution of substrate and protein interactions. These new tools are complementary to the classical tools set including electrophysiology and tracer studies but have the clear advantage of allowing measurements deep inside plant or animal tissues and organs, domains largely inaccessible to other technologies.\n\n### Outlook\n\nIn summary, we developed a set of five sensors that can report the activity of nitrate and peptide transporters in vivo. At the same time, such activity sensors prove to be sensitive tools for studying the effect of mutations on the conformation of the transporter or to detect the regulatory interactions with other proteins. The next step will be to deploy NiTrac1 and its mutants as well as the PepTracs in Arabidopsis plants to characterize the activity of the transporters and their regulation in vivo. The plant peptide transporters are close homologs of the human SLC15 peptide transporters. The SLC15 transporter PepT1 has pathophysiological relevance in processes like intestinal inflammation and inflammatory bowel disease (Ingersoll et al., 2012), and it serves as a key transport mechanism for uptake of drugs (Agu et al., 2011). Given the success in engineering five members of the plant transporter family, we envisage that the approach can be implemented also for measuring the activity of the human transporters in situ and to use such sensors, for example, for drug screens.\n\n## Materials and methods\n\n### DNA constructs\n\nAll transporter and sensor constructs were inserted by Gateway LR reactions, into the yeast expression vectors pDRFlip30, 34, and 39. pDRFlip30 is a vector that sandwiches the insert between an N-terminal Aphrodite t9 (AFPt9) variant (Deuschle et al., 2006), with nine amino acids truncated of C-terminus and a C-terminal monomeric Cerulean (mCer) (Rizzo et al., 2006). pDRFlip39 sandwiches the inserted polypeptide between an N-terminal enhanced dimer Aphrodite t9 (edAFPt9) and C-terminal fluorescent protein enhanced dimer, seven amino acids and nine amino acids truncated of N-terminus and C-terminus of eCyan (t7.ed.eCFPt9), respectively. pDRFlip34 carries an N-terminal AFPt9 and a C-terminal t7.TFP.t9 (t7.TFP.t9) (Rizzo et al., 2006). All plasmids contain the f1 replication origin, a GATEWAY cassette (attR1-CmR-ccdB-attR2), positioned between the pair of fluorescent proteins, the PMA1 promoter fragment, an ADH terminator, and the URA3 cassette for selection in yeast. Vector construction has been described (Jones, In press). The full length ORF of CHL1, PTR1, PTR2, PTR4, and PTR5 from Arabidopsis and different mutants of NRT1.1 in the TOPO GATEWAY Entry vector were used as sensory domains for creating the nitrate sensor NiTrac1 and the peptide sensors PepTrac1, PepTrac2, PepTrac4, and PepTrac5. The yeast expression vectors were then created by GATEWAY LR reactions between different forms of pTOPO-NRT/PRT and different pDRFlip-GWs, following manufacturer\u2019s instructions. For functional assays in Xenopus oocytes, the cDNAs of CHL1 and all mutants of CHL1 were cloned into the oocyte expression vector pOO2-GW (Loqu\u00e9 et al., 2009). Point mutations for studying characterization of CHL1 in oocyte and NiTrac1 in yeast were generated by QuikChange Lightning Site-Directed Mutagenesis Kit (Agilent Technologies, Santa Clara, CA). For the coexpression assays with interactors in yeast, putative interactors were inserted, by LR reaction, in the yeast expression vector pDR-XN-GW vector, which replaced URA3 with LEU2 in pDRf1 containing the f1 replication origin, GATEWAY cassette (-attR1-CmR-ccdB-attR2), PMA1 promoter fragment, and ADH terminator in yeast (Loqu\u00e9 et al., 2007).\n\n### Yeast cultures\n\nThe yeast BJ5465 [MATa, ura3\u201352, trp1, leu2\u03941, his3\u0394200, pep4\u2237HIS3, prb1\u03941.6R, can1, GAL+] was obtained from the Yeast Genetic Stock Center (University of California, Berkeley, CA). Yeast was transformed using the lithium acetate method (Gietz et al., 1992), and transformants were selected on solid YNB (minimal yeast medium without nitrogen; Difco) supplemented with 2% glucose and -ura/-ura-leu DropOut medium (Clontech, Mountain View, CA). Single colonies were grown in 5 ml liquid YNB supplemented with 2% glucose, and -ura/-ura-leu drop out under agitation (230 rpm) at 30\u00b0C until OD600nm \u223c 0.5 was reached. The liquid cultures were subcultured by dilution to OD600nm 0.01 in the same liquid medium and grown at 30\u00b0C until OD600nm \u223c 0.2.\n\n### Fluorimetry\n\nFluorimetric analyses are described in more detail at Bio-protocol (Ho and Frommer, 2016). In brief, fresh yeast cultures (OD600nm \u223c 0.2) were washed twice in 50 mM MES buffer, pH 5.5, and resuspended to OD600nm \u223c0.5 in the same MES buffer supplemented with 0.05% agarose to delay cell sedimentation. Fluorescence was measured in a fluorescence plate reader (M1000; TECAN, Austria), in bottom reading mode using a 7.5 nm bandwidth for both excitation and emission (Bermejo et al., 2010; Bermejo et al., 2011). Typically, emission spectra were recorded (\u03bbem 470\u2013570 nm). To quantify fluorescence responses of the sensors to substrate addition, 100 \u00b5l of substrate (dissolved in MES buffer, pH 5.5 as 500% stock solution) was added to 100 \u00b5l of cells in 96-well flat bottom plates (#655101; Greiner, Monroe, NC). Fluorescence from cultures harboring pDRFlip30 (donor: mCER) and 39 (donor: t7.ed.eCFPt9) was measured by excitation at \u03bbexc 428 nm; cell expressing from pDRFlip34 (donor t7.TFP.t9) was excited at \u03bbexc = 440 nm.\n\nQuantitative fluorescence intensity data from individual yeast cells expressing the sensors (Figure 3C) were acquired on an inverted microscope (Leica, Wetzlar, Germany). To be able to record fluorescence intensities in single cells over time, yeast cells were trapped as a single cell layer in a microfluidic perfusion system (Y04C plate, Onyx, Cellasic, Hayward, CA, USA) and perfused with either 50 mM MES buffer, pH 5.5, or buffer supplemented with 10 mM KNO3 (Bermejo et al., 2010; Bermejo et al., 2011). Briefly, imaging was performed on an inverted fluorescence microscope (Leica DMIRE2) with a QuantEM digital camera (Photometrics) and a 40\u00d7/NA (numerical aperture) 1.25\u20130.75 oil-immersion lens (IMM HCX PL Apo CS). Dual-emission intensity ratios were simultaneously recorded using a DualView unit with a Dual CFP/YFP-ET filter set (ET470/24m and ET535/30m; Chroma) and Slidebook 4.0 software (Intelligent Imaging Innovations). Excitation (filter ET430/24x; Chroma) was provided by a Lambda LS light source (Sutter Instruments; 100%lamp output). Images were acquired within the linear detection range of the camera at intervals of 20 s. The exposure time was typically 1000 ms with an EM (electron-multiplying) gain of 3 \u00b0\u00f8 at 10 MHz and an electron multiplying charge coupled device (EMCCD) camera (Evolve, Photometrics, Tucson, AZ, USA). Measurements were taken every 10 s, with 100 ms exposure time using Slidebook 5.4 image acquisition software (Intelligent Imaging Innovations, Denver, CO, USA). Fluorescence pixel intensity was quantified using Fiji software; single cells were selected and analyzed with the help of the ROI manager tool.\n\n### Structure prediction for CHL1 and PTR1\n\nProtein structure prediction for CHL1 and PTR1 was performed using Phyre (Kelley and Sternberg, 2009). Full-length CHL1 (At1g12110) and AtPTR1/NPF8.1 (At3g54140) amino acid sequences were used for the 3D structure prediction on the website. The analysis made use of four solved crystal structures of nitrate/peptide homologs (PDB ID: 4iky, 2xut, 4aps, 4lep) (Newstead, 2011; Newstead et al., 2011; Solcan et al., 2012; Doki et al., 2013). The homologs shared 16\u201327% identity with CHL1 or PTR1. The predicted potentially functionally important residues were from the predicted structure (3DLigandSite, [Wass et al., 2010]) and from sequence alignments. After structural prediction of CHL1, 41-ExxER-45, in TM1, the conserved sequence motif involved in proton cotransport (22-ExxER-26, 21-ExxER-25, 21-ExxER-25, 32-ExxER-36 in PepTSt, PepTSo, PepTSo2, and GtPOT, respectively), putative residues involved in substrate binding pocket L49 in TM1 (Y30, Y29, Y29, and Y40 in PepTSt, PepTSo, PepTSo2, and GtPOT, respectively), Q358 in TM7 (Q289, Q317, Q291, and Q311 in PepTSt, PepTSo, PepTSo2, and GtPOT, respectively), and Y388 in TM8 (N328, N321, and N342 in PepTSt, PepTSo2, and GtPOT, respectively), and putative residues of salt bridges K164 in TM4 (K126, K127, K121, and K136 in PepTSt, PepTSo, PepTSo2, and GtPOT, respectively), E476 in TM10 (E400, E419, E402, and E413 in PepTSt, PepTSo, PepTSo2, and GtPOT, respectively), and residues R264/R266/K267 in the lateral helices loop between TM6 and TM7 were selected for mutagenesis.\n\n### Functional expression of CHL1 and respective mutants in Xenopus oocytes\n\nTEVC in oocyte was performed essentially as described previously (De Michele et al., 2013). In brief, for in vitro transcription, pOO2-CHL1 and respective mutants were linearized with MluI. Capped cRNA was in vitro transcribed by SP6 RNA polymerase using mMESSAGE mMACHINE kits (Ambion, Austin, TX). Xenopus laevis oocytes were obtained from the laboratory of Miriam Goodman by surgery manually or ordered from Ecocyte Bio Science (Austin, TX). The oocytes were injected via the Roboinjector (Multi Channel Systems, Reutlingen, Germany; [Lemaire et al., 2004; Pehl et al., 2004]) with distilled water (50 nl as control) or cRNA from CHL1 or CHL1 mutants (50 ng in 50 nl). Cells were kept at 16\u00b0C 2\u20134 days in ND96 buffer containing 96 mM NaCl, 2 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, and 5 mM HEPES, pH 7.4, containing gentamycin (50 \u03bcg/\u03bcl) before recording experiments. Recordings were typically performed at day three after cRNA injection.\n\n### Electrophysiological measurements in Xenopus oocytes\n\nElectrophysiological analyses of injected oocytes were performed as described previously (Huang et al., 1999; De Michele et al., 2013). Reaction buffers used recording current (I)-voltage (V) relationships were (i) 230 mM mannitol, 0.3 mM CaCl2, and 10 mM HEPES and (ii) 220 mM mannitol, 0.3 mM CaCl2, and 10 mM HEPES at the pH indicated plus 0.5 or 10 mM CsNO3. Typical resting potentials were \u223c\u221240 mV. Measurements were recorded by oocytes that were voltage clamped at \u221240 mV and a step protocol was used (\u221220 to \u2212180 mV for 300 ms, in \u221220 mV increments) and measured by the two-electrode voltage-clamp (TEVC) Roboocyte system (Multi Channel Systems) (Pehl et al., 2004; Lemaire et al., 2004).\n\n### 15NO3\u2212 uptake assays in Xenopus oocytes\n\nNitrate uptake assays were performed using 15N-labeled nitrate (Ho et al., 2009), and oocytes injected with CHL1 cRNA were used as positive controls. After 2\u20134 days cRNA injection, the oocytes were incubated for 90\u223c120 min in 15NO3\u2212 medium containing 230 mM mannitol, 0.3 mM CaCl2, 10 mM HEPES, and pH 5.5. Then, oocytes were rinsed five times with ND96 buffer and individually dried at 80\u00b0C for 1\u20132 days. 15N content was analyzed in an ECS 4010 Elemental Combustion System (Costech Analytical Technologies Inc., Valencia, CA, USA) whose output was connected to a Delta plus Advantage mass spectrometer (Thermo Fisher Scientific Inc., Waltham, MA, USA).\n\n### Statistical analyses\n\nFor statistical analyses of 15N-nitrate uptake into oocytes (Figure 6) and the effect of treatments on the fluorescence responses (Figures 1C and 8D), we used analysis of deviance (ANOVA); factors (sample, treatment) were treated as fixed factors. ANOVAs were performed using the analysis of variance (ANOVA) calculator\u2014one-way ANOVA from Summary Data (www.danielsoper.com/statcalc). All experiments were performed at least with three biological repeats. The reported values represent mean and standard deviation. Student\u2019s t test was used in Figures 1, 6 and 8 to determine significance.\n",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "628fc622-91e2-405d-9744-29bfb5c47265",
+      "submission_id": "a5087b0f-2880-4500-b7ce-a028ddde8445",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01917.011](https://doi.org/10.7554/eLife.01917.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cFluorescent sensors for activity and regulation of the nitrate transceptor CHL1/NRT1.1 and oligopeptide transporters\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor (Detlef Weigel), a Reviewing editor, and 2 reviewers, one of whom, Oliver Einsle, has agreed to reveal his identity.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this study, the authors constructed the FRET-based nitrate sensor NiTrac1 by sandwiching CHL1 in between of two fluorescent proteins. NiTrac1 showed quenching of fluorescence in dependence of nitrate addition, and the quenching response showed biphasic kinetics like CHL1. The quenching was affected specifically by nitrate, by amino acid substitutions of CHL1 and interacting factors of CHL1. To control for a general quenching effect of nitrate on this type of reporter, the authors also constructed PepTracs, FRET-based peptide sensors constructed on the basis of PTR-type oligopeptide transporters. From the analysis of fluorophore-dependent emissions, the expression of cytosolic fluorophores and cyan fluorophore variants, the authors concluded that NiTrac1 and most PepTracs do not allow FRET-dependent but fluorophore-dependent substrate interaction to record in vivo activities of these membrane transporters.\n\nA homology model based on a peptide transporter structure was used to design point-specific mutants. This part of the study is very well carried out and yields interesting results, to the point that the authors postulate the involvement of certain residues \u2013 K134, Q358 and E476 \u2013 in nitrate transport of NiTrac. This is a very nice result, as it implicated that the fusion approach can be used for functional studies of transport mechanism, but throughout the work the authors do not refer to two recent structures of bacterial nitrate transporters of the MFS family, NarK and NarU, that may be of high relevance here. While the reviewers were not aware of the degree of homology between these and CHL1, it might add substantially to the quality of the discussion to consider this new structural data within the present work (Yan et al. (2013) CellRep 3:716, and Zheng et al. (2013) Nature 481:469).\n\nThe experiments in this study appear to have been conducted with great care and the conclusions are consistent with the results. This study thus is complementary to a recent report from the same group, in which a permutated GFP was introduced into the cytosolic loop of ammonium transporters to record substrate-dependent conformational changes of the protein (De Michele et al. 2013). Even though the authors are not yet able to explain the molecular mechanism underlying substrate-dependent fluorescence quenching, this study opens up a new avenue to monitor in vivo activities of transporters and thus promises to be highly influential to this field.\n\nThe following points should be addressed in a revised version of the manuscript:\n\n1) One major concern that may require additional experimentation is the lack of a data set that shows time-dependent activation and reversibility of substrate-dependent fluorescence quenching. Such a data set is required not only to proof that activity and not activation is monitored by this molecular reporter but also to support its suitability to report in-planta changes of nitrate transport activities, i.e. when nitrate reduction depletes cytosolic nitrate pools. Such basic data are important as long as we don't know exactly what the quenching means. If these experiments cannot be done, the reasons for omitting them should be stated in the Discussion.\n\n2) Figure 1C: It would be highly useful to see changes in emission ratio after addition of potassium chlorate (not just chloride) since chlorate is a proven substrate analog for CHL1.\n\nThe reason to try chlorate is to obtain additional information on the responsiveness of the transporter-fluorophore complex to a substrate analog. If chlorate yields a similar response as nitrate while the other substrates did not, then I would consider this as an additional argument for a substrate-transporter interaction being responsible for the fluorescence quenching. (The reason to propose trying out chlorate is to obtain additional information on the responsiveness of the transporter-fluorophore complex to a substrate analog. If chlorate yields a similar response as nitrate while the other substrates did not, then one would consider this as an additional argument for a substrate-transporter interaction being responsible for the fluorescence quenching. Since one expects this to be a short-time response, there are no concerns about the toxicity of chlorate.)\n",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d0eec508-946e-42fe-81d7-08e4baebf5f2",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C1",
+      "claim": "Nitrogen is quantitatively the single most limiting nutrient for plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, nitrogen is the single most limiting nutrient for plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction without specific citation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "8966c895-5688-4e41-9af9-2aebfae5a64f",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C2",
+      "claim": "Maximal crop yield depends critically on nitrogen fertilizer inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, not surprisingly, maximal crop yield depends critically on nitrogen fertilizer inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge following from the previous statement about nitrogen limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "f920e73c-b010-462d-9b90-b8ca7158831c",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C3",
+      "claim": "Current practices require production of approximately 1.5 \u00d7 10^7 tons of N-fertilizer per annum.",
+      "claim_type": "EXPLICIT",
+      "source": "Current practices require production of \u223c1.5 \u00d7 107 tons of N-fertilizer per annum, consuming \u223c1% of the world's annual energy production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual statistic about current fertilizer production.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "557568c6-3238-4a2c-b1b3-2765faa9fa46",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C4",
+      "claim": "N-fertilizer production consumes approximately 1% of the world's annual energy production.",
+      "claim_type": "EXPLICIT",
+      "source": "Current practices require production of \u223c1.5 \u00d7 107 tons of N-fertilizer per annum, consuming \u223c1% of the world's annual energy production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual statistic about energy consumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "97bf62bf-88c4-404f-84f0-e81bb4597ccd",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C5",
+      "claim": "Plants absorb only a fraction of the fertilizer applied to the field.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants absorb only a fraction of the fertilizer applied to the field, leading to leaching into groundwater, polluting the environment, and damaging human health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about fertilizer efficiency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "c1ced589-b537-4404-96eb-c496d204e727",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C6",
+      "claim": "Overexpression of an alanine amino transferase improved nitrogen use efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of an alanine amino transferase or the transporter OsPTR9 are two of the few examples of improved nitrogen use efficiency (Shrawat et al., 2008; Fang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "80910148-9fe1-472b-899d-0340d5d9e304",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C7",
+      "claim": "Overexpression of the transporter OsPTR9 improved nitrogen use efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of an alanine amino transferase or the transporter OsPTR9 are two of the few examples of improved nitrogen use efficiency (Shrawat et al., 2008; Fang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "c4a4413b-52a7-4cd9-874e-ff216d5b567e",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C8",
+      "claim": "Ammonium, nitrate, amino acids, and di- and tripeptides serve as the major forms of inorganic and organic nitrogen for plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Ammonium, nitrate, amino acids, and di- and tripeptides serve as the major forms of inorganic and organic nitrogen for plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about nitrogen forms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "bfd1c852-ad0e-4e14-8004-4d4554189399",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C9",
+      "claim": "Nitrogen uptake occurs predominantly from the soil/rhizosphere into roots.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake occurs predominantly from the soil/rhizosphere into roots, although aerial parts of the plant are also capable of absorbing nitrogen (McAllister et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9d09dc04-dc8e-4b24-899a-e67dc368cdfd",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C10",
+      "claim": "Aerial parts of the plant are capable of absorbing nitrogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake occurs predominantly from the soil/rhizosphere into roots, although aerial parts of the plant are also capable of absorbing nitrogen (McAllister et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "1da4e62b-5ed0-4f8a-b78a-e3d6d7768a91",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C11",
+      "claim": "Inorganic nitrogen uptake involves multiple ammonium and nitrate uptake systems, typically grouped into low-affinity/high-capacity and high-affinity/low-capacity systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Inorganic nitrogen uptake is complex and involves multiple ammonium and nitrate uptake systems, typically grouped into low-affinity/high-capacity and high-affinity/low-capacity systems (Siddiqi et al., 1990; Wang et al., 1994; von Wir\u00e9n et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "ea38ffe0-9233-4882-ae23-543386007253",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C12",
+      "claim": "The 13N-isotope has a short half-life time of approximately 10 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies rely on the analysis of the depletion of the medium, others use stable isotopes, or the 13N-isotope, which has a short half-life time of \u223c10 min and requires access to a suitable supply source (Wang et al., 1993; Clarkson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual property of the isotope.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "29fd9c65-cd31-4860-a7fa-fd5d5c05e914",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C13",
+      "claim": "Nitrate levels differ dramatically between root cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Nitrate levels differ dramatically between root cell types (Zhen et al., 1991; Karley et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "f7d58808-0a73-4657-bc04-ec9e4d22c92b",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C14",
+      "claim": "The levels of small oligopeptides were comparatively higher in the epidermis and endodermis compared to other root cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This study found that the levels of small oligopeptides were comparatively higher in the epidermis and endodermis compared to other root cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a referenced study (Moussaieff et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "d8ecbb37-0068-4f96-a326-0e617402cd78",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C15",
+      "claim": "The nitrate concentration of root vacuoles is approximately 10-fold higher compared to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Compartmental analyses indicated that the nitrate concentration of root vacuoles is \u223c10-fold higher compared to the cytosol (Zhen et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "ea3b877e-939d-4d96-b3f2-d184a0ad4318",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C16",
+      "claim": "Three major families of transporters for inorganic nitrogen uptake have been identified: the NPF/POT nitrate transporter family, NRT2 nitrate transporters, and the ammonium transporters of the AMT/MEP/Rh family.",
+      "claim_type": "EXPLICIT",
+      "source": "Three major families of transporters for inorganic nitrogen uptake (and distribution) have been identified: the NPF/POT nitrate transporter family (Leran et al., 2013), NRT2 nitrate transporters (Kotur et al., 2012), and the ammonium transporters of the AMT/MEP/Rh family (von Wir\u00e9n et al., 2000; Andrade and Einsle, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "7374409c-df38-45b1-a6a6-12824d3c0716",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C17",
+      "claim": "Members of the NPF/POT family play important roles in the transport of histidine, dicarboxylates, oligopeptides, and glucosinolates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their role in nitrate uptake, members of the NPF/POT (Leran et al., 2013) family play important roles also in the transport of histidine, dicarboxylates, oligopeptides, and glucosinolates, and surprisingly at least three major plant hormones: auxin, ABA, and gibberellin (Krouk et al., 2010; Kanno et al., 2012; Boursiac et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "1f1770b5-3da2-499f-8051-d4bdc2eebe71",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C18",
+      "claim": "At least three major plant hormones (auxin, ABA, and gibberellin) are transported by members of the NPF/POT family.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their role in nitrate uptake, members of the NPF/POT (Leran et al., 2013) family play important roles also in the transport of histidine, dicarboxylates, oligopeptides, and glucosinolates, and surprisingly at least three major plant hormones: auxin, ABA, and gibberellin (Krouk et al., 2010; Kanno et al., 2012; Boursiac et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "77b5dd6b-f258-4c73-b46e-ace4d9369a93",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C19",
+      "claim": "The majority of changes in nitrate-induced gene expression are cell-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cell type-specific expression profiles showed that the majority of changes in nitrate-induced gene expression are cell-specific (Gifford et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "d5429daf-def8-4374-94db-eb0cd8f61bd9",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C20",
+      "claim": "Nitrate transporters are regulated through phosphorylation, mediated by calcium-dependent calcineurin-like kinases (CBL and CIPK).",
+      "claim_type": "EXPLICIT",
+      "source": "Nitrate transporters are regulated through phosphorylation, mediated by calcium-dependent calcineurin-like kinases (Calcineurin B-like, CBL and CBL-interacting protein kinase, CIPK) (Ho et al., 2009; Hu et al., 2009; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "944aa347-73b6-4d02-a34a-abe3e811fb3e",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C21",
+      "claim": "Members of the AMT and NPF/POT family function as transporters and receptors (transceptors).",
+      "claim_type": "EXPLICIT",
+      "source": "Major breakthroughs were findings that indicate both the members of the AMT and NPF/POT family function as transporters and receptors (transceptors) (Ho et al., 2009; Lima et al., 2010; Rubio-Texeira et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "31f998d9-e9b8-4b4d-94be-8da3f228071f",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C22",
+      "claim": "Many transporters undergo conformational changes during the transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical and structural analyses have shown that many transporters undergo conformational changes during the transport cycle (Shimamura et al., 2010; Jiang, 2012a; Krishnamurthy and Gouaux, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "14bb016c-9b52-4a59-9588-9f740da81f85",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C23",
+      "claim": "Conformational rearrangements have been observed for many members of the MFS superfamily, including members of the NPF/POT family.",
+      "claim_type": "EXPLICIT",
+      "source": "Important in this context is that such rearrangements have been observed for many members of the MFS superfamily, including members of the NPF/POT family (Doki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9cbb42f2-601a-4efd-b515-b17c5649db03",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C24",
+      "claim": "AmTrac uses ammonium transporters as sensory domains by inserting a circularly permutated EGFP into a conformation-sensitive position.",
+      "claim_type": "EXPLICIT",
+      "source": "The first prototype for transport activity sensors, named AmTrac, uses ammonium transporters as sensory domains for engineering transport activity sensors by inserting a circularly permutated EGFP (cpEGFP) into a conformation-sensitive position of an ammonium transporter (De Michele et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "3352c738-391b-4090-a7ad-ef67fa064ad0",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C25",
+      "claim": "Addition of ammonium to yeast cells expressing the AmTrac sensor triggers concentration-dependent and reversible changes in fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of ammonium to yeast cells expressing the AmTrac sensor triggers concentration-dependent and reversible changes in fluorescence intensity (De Michele et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "7af56d10-5863-424a-8f6b-4ebdd664ab93",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C26",
+      "claim": "NiTrac1 was created by sandwiching CHL1 between a yellow acceptor (Aphrodite) and cyan donor fluorophore (mCerulean).",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the nitrate transceptor CHL1 undergoes conformational rearrangements during its transport cycle. To measure substrate-dependent conformational rearrangements, CHL1 was sandwiched between a yellow acceptor (Aphrodite) and cyan donor fluorophore (mCerulean) (Rizzo et al., 2006; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design for creating NiTrac1, with reference to Figure 1A showing the construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "c7f50638-82cd-409d-888c-d2bfb51ceae5",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C27",
+      "claim": "Addition of nitrate to yeast expressing NiTrac1 triggered an overall reduction in the emission intensities of both donor and acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, and in contrast to typical FRET sensors (e.g., glucose or glutamate [Fehr et al., 2003; Okumoto et al., 2005]), we observed an overall reduction in the emission intensities of both donor and acceptor, but no obvious change in FRET efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "ba05cacc-644f-4f1d-a532-3165a232098a",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C28",
+      "claim": "Aphrodite emission was unaffected by nitrate when excited directly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Aphrodite emission was unaffected by nitrate when excited directly (Figure 1B, inset), indicating that the external nitrate triggers donor quenching in the cytosol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 1B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "21511f7c-0def-4078-bd5a-b83c76b920fc",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C29",
+      "claim": "External nitrate triggers donor quenching in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Aphrodite emission was unaffected by nitrate when excited directly (Figure 1B, inset), indicating that the external nitrate triggers donor quenching in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Aphrodite emission is unaffected when excited directly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "40d694d0-ffda-432b-929e-ac318d0e8e1d",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C30",
+      "claim": "The nitrate analog chlorate triggered NiTrac quenching.",
+      "claim_type": "EXPLICIT",
+      "source": "As one may have expected, the nitrate analog chlorate that lead to the naming of CHL1 (chlorate resistance of the chl1 mutant) (Tsay, 1993) also triggered NiTrac quenching (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "28b80bc3-5a14-4edd-bb6c-077911425619",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C31",
+      "claim": "The response of NiTrac1 is nitrate- and chlorate-specific; other compounds such as chloride, ammonium, divalent cations, and dipeptide had no significant effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The response of NiTrac1 is nitrate- and chlorate-specific; other compounds such as chloride, ammonium, divalent cations, and dipeptide had no significant effect (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "1673a22b-e4d5-43ea-8533-ac96b2547c39",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C32",
+      "claim": "When mCerulean was replaced by mTFP, nitrate addition had no effect on the emission of the NiTrac1 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "When mCerulean was replaced by the corral-derived cyan fluorescent protein mTFP (Ai et al., 2008), we observed FRET, but nitrate addition had no effect on the emission of this variant (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "c80bf122-99a6-4cc6-a30f-7e8a36be9668",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C33",
+      "claim": "Replacement of mCerulean with eCFP retained the donor-quenching response to nitrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacement of mCerulean with eCFP, another jellyfish variant, retained the donor-quenching response to nitrate (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "d634915e-a446-4cc2-98f2-c12bd16554ff",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C34",
+      "claim": "Addition of nitrate to yeast cells expressing CHL1 alone had no effect on the fluorescence of a cytosolically expressed mCerulean.",
+      "claim_type": "EXPLICIT",
+      "source": "However, addition of nitrate to yeast cells expressing CHL1 alone had no effect on the fluorescence of a cytosolically expressed mCerulean (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "8fcc0fdf-1b46-4889-866c-325310e64346",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C35",
+      "claim": "PepTrac1, PepTrac2, and PepTrac5 sensors all responded with donor quenching to the addition of 0.5 mM diglycine.",
+      "claim_type": "EXPLICIT",
+      "source": "PepTrac1, PepTrac2, and PepTrac5 sensors all responded with donor quenching to the addition of 0.5 mM diglycine (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "390c1ad8-a0c9-477f-a5f7-4eed2bf75bde",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C36",
+      "claim": "PepTrac4 responded to substrate addition with a ratio change that is consistent with a change in the energy transfer rate rather than donor quenching.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PepTrac4 responded to substrate addition with a ratio change that is consistent with a change in the energy transfer rate rather than donor quenching (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "3e295a7e-522c-4320-a1c3-c747901cb1ef",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C37",
+      "claim": "CHL1 shows biphasic nitrate uptake kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "CHL1 is unusual in that it shows biphasic nitrate uptake kinetics (Figure 3A; Liu and Tsay, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by both experimental data in Figure 3A and a citation to published research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "19ccfa69-93be-4d9b-80e3-2600915aed2b",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C38",
+      "claim": "The kinetics of the fluorescence response of NiTrac1 in yeast were biphasic.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the kinetics of the fluorescence response of NiTrac1 in yeast were also biphasic (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "f70b3b22-b46c-444a-8f08-b26207feb784",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C39",
+      "claim": "Mutation of T101 to alanine eliminated the high-affinity component of CHL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of T101 to alanine had been shown to eliminate the high-affinity component (Figure 3B; Liu and Tsay, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by both experimental data in Figure 3B and a citation to published research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9d76b803-3254-4844-a925-cce4915c34ce",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C40",
+      "claim": "Introduction of T101A into NiTrac1 eliminated the high-affinity component.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of T101A into NiTrac1 also eliminated the high-affinity component, intimating that NiTrac1 is a transport activity sensor, and that conformational rearrangements during the transport cycle affect mCerulean emission (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "29733a7b-c241-4141-9c51-1ad79cc2da97",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C41",
+      "claim": "The transport Kms of both high- and low-affinity phases matched the values obtained for the fluorescence response.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the transport Kms of both high- and low-affinity phases matched the values obtained for the fluorescence response, supporting the hypothesis that NiTrac measures the transport activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the kinetic data from transport and fluorescence measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "d2b2bf31-7f5e-424c-8065-5f871464519d",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C42",
+      "claim": "The sensor can be used effectively for in planta analyses based on rapid nitrate-induced quenching and reversibility in individual yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of the sensor response in individual yeast cells demonstrated rapid nitrate-induced quenching and reversibility of the fluorescence intensity after removal of nitrate (Figure 3C), indicating that the sensor can be used effectively for in planta analyses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data shown in Figure 3C demonstrating reversibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "f0b8b6de-1588-4e25-8419-303f20a5e65b",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C43",
+      "claim": "The Kms of NiTrac1 for nitrate are approximately 75.1 \u00b1 21 \u03bcM and 3.8 \u00b1 2.6 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kms of NiTrac1 for nitrate are \u223c75.1 \u00b1 21 \u03bcM and 3.8 \u00b1 2.6 mM; for NiTrac1-T101A is 3.5 \u00b1 3.7 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "8acc7b19-8c6c-4157-af02-64af4884cc27",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C44",
+      "claim": "The Km of NiTrac1-T101A for nitrate is 3.5 \u00b1 3.7 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kms of NiTrac1 for nitrate are \u223c75.1 \u00b1 21 \u03bcM and 3.8 \u00b1 2.6 mM; for NiTrac1-T101A is 3.5 \u00b1 3.7 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "f4210242-c55c-4082-bc02-50d57b0a096d",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C45",
+      "claim": "CHL1 contains a highly conserved motif E41-E44-R45 in TM1 predicted to play a role in proton coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "CHL1 contains a highly conserved motif E41-E44-R45 in TM1 predicted to play a role in proton coupling (Newstead, 2011; Newstead et al., 2011; Solcan et al., 2012; Doki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural predictions and supported by citations to published research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "afff73b4-6987-46b0-affb-d425916baf0e",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C46",
+      "claim": "Mutations in the E41-E44-R45 motif in oligopeptide transporters typically lost proton-driven transport activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in this motif in the oligopeptide transporters PepTSt (from Streptococcus thermophiles [Solcan et al., 2012]), PepTSo, PepTSo2 (both from Shewanella oneidensis) (Newstead, 2011), and GkPOT (from Geobacillus kaustophilus) (Doki et al., 2013) typically lost proton-driven transport activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on bacterial transporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "7311474a-65de-4db6-b8c9-e2a0304c2eb5",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C47",
+      "claim": "Mutation in any of the three residues (E41A, E44A, and R45A, TM1) led to a loss of nitrate-induced currents and 15N-uptake in both the high- and low-affinity range.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation in any of the three residues (E41A, E44A, and R45A, TM1) led to a loss of nitrate-induced currents and 15N-uptake in both the high- and low-affinity range (0.5/0.25 and 10 mM) (Figures 5, 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "52c98781-751d-43b5-9c77-c0c81a9757f7",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C48",
+      "claim": "The corresponding mutant of NiTrac1 (E41A, E44A, or R45A) lost the sensor response to nitrate addition.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding mutant of NiTrac1 also lost the sensor response to nitrate addition (Figures 4B, 7), indicating that the conserved motif is also used for proton cotransport of nitrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 4B and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "49dfd0df-33b5-46cc-8675-66548e068275",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C49",
+      "claim": "The conserved motif E41-E44-R45 is used for proton cotransport of nitrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding mutant of NiTrac1 also lost the sensor response to nitrate addition (Figures 4B, 7), indicating that the conserved motif is also used for proton cotransport of nitrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the loss of function in mutants affecting this motif.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "1f35c0e8-2792-4613-97bd-af1e3c3559bf",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C50",
+      "claim": "A salt bridge between K126 in TM4 and E400 in TM10 is implicated in peptide recognition and/or structural movements during the transport cycle in PepTSt.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and functional analyses of the bacterial peptide transporter PepTSt had implicated a salt bridge between a conserved K126 in TM4 and E400 in TM10 in peptide recognition and/or structural movements during the transport cycle (Solcan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "0b4db7ff-023a-4ac9-8d8c-6e58bf825d88",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C51",
+      "claim": "K164 in CHL1 is conserved throughout the POT family.",
+      "claim_type": "EXPLICIT",
+      "source": "This lysine is conserved throughout the POT family (K164 of CHL1, TM4) (Newstead, 2011; Newstead et al., 2011; Solcan et al., 2012; Doki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on sequence conservation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "62898e44-6cc1-4988-88c5-207c325c9a78",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C52",
+      "claim": "Mutation of K164 to alanine or aspartate in CHL1 completely abolished nitrate uptake in both the high- and low-affinity range.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with results from the bacterial PepTSt and GkPOT, mutation of K164 to alanine or aspartate in CHL1 completely abolished nitrate uptake in both the high- and low-affinity range (0.25 and 10 mM) (Figure 6); however, the nitrate-dependent inward currents were retained (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "5cb7d35c-2189-47f6-ac45-0c693ce46556",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C53",
+      "claim": "CHL1-K164 mutants retained nitrate-dependent inward currents despite loss of uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with results from the bacterial PepTSt and GkPOT, mutation of K164 to alanine or aspartate in CHL1 completely abolished nitrate uptake in both the high- and low-affinity range (0.25 and 10 mM) (Figure 6); however, the nitrate-dependent inward currents were retained (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "071d7982-9be2-43b9-b23f-3393a60166c9",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C54",
+      "claim": "CHL1-K164 mutants either function as nitrate-dependent proton channels or have lost selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CHL1-K164 mutants either function as nitrate-dependent proton channels or have lost selectivity, and consistent with the shift of the reversal potential to more negative values transport other anions such as chloride.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation of retained currents but lost uptake.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "5fdb3eb3-3665-43c0-91b0-1dd44a28a606",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C55",
+      "claim": "NiTrac1-K164A showed both donor quenching and a change in FRET efficiency upon addition of nitrate.",
+      "claim_type": "EXPLICIT",
+      "source": "NiTrac1-K164A surprisingly showed a different response mode, that is upon addition of nitrate the mutant not only showed donor quenching but apparently also a change in FRET efficiency, underlining the exceptional sensitivity of NiTrac1 to effects of mutations on conformation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "66f7db2b-0479-41f4-903e-eb662efe7021",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C56",
+      "claim": "Mutation of E476A in TM10 of CHL1 led to loss of both the nitrate-induced inward current and 15N-uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the salt bridge acceptor E476A in TM10 of CHL1 led to loss of both the nitrate-induced inward current and 15N-uptake (Figures 5, 6) and NiTrac lost the sensor response to addition of nitrate (Figure 4B);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 4B, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "623cf0f5-e17e-4458-bb83-80c68b375b67",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C57",
+      "claim": "The conservative mutation E476D had no significant effect on transport properties and sensor response.",
+      "claim_type": "EXPLICIT",
+      "source": "by contrast, and as one might expect, the conservative mutation E476D had no significant effect on transport properties and sensor response (Figures 4B, 5, and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 4B, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "e5c04bf8-8806-4551-9ef7-76a5cf5ee459",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C58",
+      "claim": "Y388A had no detectable effect on the nitrate-induced inward currents, 15N-uptake, and sensor response.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results obtained for the corresponding residue (N342 in TM8) in GKPOT (Doki et al., 2013), Y388A had no detectable effect on the nitrate-induced inward currents, 15N-uptake, and sensor response (Figures 4B, 5, and 6), indicating the residue Y388 may not be involved in nitrate binding or transport cycle of CHL1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 4B, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "e5d36cfb-ce2d-4b39-98fe-f2a676be4f1e",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C59",
+      "claim": "The residue Y388 may not be involved in nitrate binding or transport cycle of CHL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results obtained for the corresponding residue (N342 in TM8) in GKPOT (Doki et al., 2013), Y388A had no detectable effect on the nitrate-induced inward currents, 15N-uptake, and sensor response (Figures 4B, 5, and 6), indicating the residue Y388 may not be involved in nitrate binding or transport cycle of CHL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of effect of the Y388A mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "05da557b-b6d7-429b-9b8d-6ceb283b2a29",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C60",
+      "claim": "Mutation of L49 in TM1 and Q358 in TM7 of CHL1 to alanine had no significant effect on nitrate-induced inward currents and 15N-uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of L49 in TM1 and Q358 in TM7 of CHL1 to alanine had no significant effect on nitrate-induced inward currents and 15N-uptake (Figures 5, 6), but NiTrac responses were characterized by a mixture of donor quenching and FRET change (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figures 4B, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "6442bd61-1fd0-4719-a8d5-ec440c10db6b",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C63",
+      "claim": "The corresponding NiTrac1 triple mutant (E264A-E266A-K267A) lost the sensor response to high nitrate concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the corresponding NiTrac1 mutant also lost the sensor response to high nitrate concentrations (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9e64763b-edde-4808-be63-073f204d2401",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C64",
+      "claim": "CIPK23 can phosphorylate CHL1 at T101 in in vitro assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we tested whether coexpression of the known interactor CIPK23, which can phosphorylate CHL1 at T101 in in vitro assays, would affect the properties of NiTrac1 (Figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information, likely from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "040da7eb-6eee-4b9d-a018-eca6964c4a1a",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C65",
+      "claim": "CIPK23 did not change the energy transfer between the fluorophores in the absence of nitrate.",
+      "claim_type": "EXPLICIT",
+      "source": "CIPK23 did not change the energy transfer between the fluorophores in the absence of nitrate, but blocked the fluorescence response of NiTrac1 to nitrate addition (Figure 8B), either by stoichiometric binding or by phosphorylation of T101.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9254a864-c0d7-4809-b6b7-edac386f852e",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C66",
+      "claim": "CIPK23 blocked the fluorescence response of NiTrac1 to nitrate addition.",
+      "claim_type": "EXPLICIT",
+      "source": "CIPK23 did not change the energy transfer between the fluorophores in the absence of nitrate, but blocked the fluorescence response of NiTrac1 to nitrate addition (Figure 8B), either by stoichiometric binding or by phosphorylation of T101.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "09216510-a498-42be-9bd0-11994623874a",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C67",
+      "claim": "CBL9 enhanced the CIPK23-mediated phosphorylation of CHL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The coactivator CBL9, which did not affect CHL1 transport activity on its own but enhanced the CIPK23-mediated phosphorylation of CHL1 (Ho et al., 2009), had no detectable effect on the fluorescence response of NiTrac1 by itself (Figure 8C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "ad0ce2e2-0863-490e-aeb7-062450cd1e0b",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C68",
+      "claim": "CBL9 had no detectable effect on the fluorescence response of NiTrac1 by itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The coactivator CBL9, which did not affect CHL1 transport activity on its own but enhanced the CIPK23-mediated phosphorylation of CHL1 (Ho et al., 2009), had no detectable effect on the fluorescence response of NiTrac1 by itself (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "5c070b60-6038-4b88-857d-3a32676a32fa",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C69",
+      "claim": "CIPK8 is nitrate inducible in a CHL1-dependent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, CIPK8, which is nitrate inducible in a CHL1-dependent fashion, did not affect the Nitrac1 response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information, likely from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "2aaf80b2-ef24-450e-b290-582fa46efab6",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C70",
+      "claim": "CIPK8 did not affect the NiTrac1 response.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, CIPK8, which is nitrate inducible in a CHL1-dependent fashion, did not affect the Nitrac1 response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "57435b09-3a50-4f7a-b002-e245321b82f7",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C71",
+      "claim": "CBL1 blocked the NiTrac1 response to nitrate addition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CBL1 on its own also blocked the Nitrac1 response to nitrate addition (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9ce45991-869e-4654-abfb-8797a42de066",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C72",
+      "claim": "The potassium transporter KT2 blocked NiTrac1 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although two of the four did not show significant effects on NiTrac1 or the response to nitrate addition, we found that the potassium transporter KT2 and the WNK kinase WNK8 blocked NiTrac1 responses (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "a79277d9-f915-46d2-a55a-f52e9a7dda0f",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C73",
+      "claim": "The WNK kinase WNK8 blocked NiTrac1 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although two of the four did not show significant effects on NiTrac1 or the response to nitrate addition, we found that the potassium transporter KT2 and the WNK kinase WNK8 blocked NiTrac1 responses (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "536c29f6-3857-458f-8e34-87be51371150",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C74",
+      "claim": "The most striking feature of NiTrac is the biphasic response kinetic that matches the dual-affinity transport properties of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The most striking feature of NiTrac is the biphasic response kinetic that matches the dual-affinity transport properties of the protein strikingly well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary observation comparing the sensor response to transport kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "d59e9664-20a9-4c64-97db-f4026d797ccc",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C75",
+      "claim": "NiTrac1 is a sensitive tool for reporting conformational changes in mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that NiTrac1 is a sensitive tool for reporting conformational changes in mutants and further support the hypothesis that NiTrac1 reports activity states of the transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comprehensive mutational analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "343861ea-f450-47a8-9dc0-55955a2193fe",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C76",
+      "claim": "NiTrac1 reports activity states of the transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that NiTrac1 is a sensitive tool for reporting conformational changes in mutants and further support the hypothesis that NiTrac1 reports activity states of the transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between transport activity and sensor output.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "96c49559-a950-4106-84a8-7a119c8a8160",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C77",
+      "claim": "The dual-affinity of CHL1 is not caused by partial phosphorylation when expressed in oocytes but represents an intrinsic property of CHL1.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings strongly supported the notion that NiTrac reports the processes that occur in the transceptor, when it binds and/or transports nitrate. The observations also intimate that the dual-affinity is not caused by partial phosphorylation of CHL1 when expressed in oocytes, as suggested by Tsay's group (Liu and Tsay, 2003), but more likely represent an intrinsic property of CHL1 since they also occur when NiTrac1 is expressed in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that biphasic kinetics occur in yeast, which is unlikely to phosphorylate the transporter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "35f61eed-4da9-4bf4-8161-e87d051c0dbe",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C78",
+      "claim": "CHL1 functions as nitrate sensor to regulate transcription of a variety of genes including that of the high-affinity nitrate transporter NRT2.",
+      "claim_type": "EXPLICIT",
+      "source": "CHL1 also functions as nitrate sensor to regulate transcription of a variety of genes including that of the high-affinity nitrate transporter NRT2 (Ho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "c1e316a8-2c0f-4759-90dd-7de988d9136e",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C79",
+      "claim": "The transport and signaling activities of CHL1 can be decoupled by Pro492L mutation in the loop connecting TM10 and 11.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the transport and signaling activities of CHL1 can be decoupled by Pro492L in the loop connecting TM10 and 11 (Ho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "f41520e5-d778-4627-be87-61cdc856cfdb",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C80",
+      "claim": "Activity sensors can be used to probe protein interactions with exquisite sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction of proteins likely affects the conformation of both partners, either directly or as a consequence of modifications such as phosphorylation. Here we show that activity sensors can be used to probe such interactions with exquisite sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful demonstration of detecting regulatory protein effects on NiTrac1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "b662ccba-ce59-4d85-9bd6-27f1ace8479a",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C81",
+      "claim": "CIPK23 can interact with CHL1 on its own and trigger at least partial phosphorylation of T101 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Although typically CIPKs are thought to require a CBL for substrate recognition and derepression of the autoinhibition, CIPK23 had been shown to be able to interact with CHL1 on its own and trigger at least partial phosphorylation of T101 in vitro (Ho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "f8be68b7-28e4-4125-869a-0b31f6a89748",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C82",
+      "claim": "CBL9 enhanced the CIPK-mediated phosphorylation of T101.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although CBL9 had been shown to enhance the CIPK-mediated phosphorylation of T101, we did not observe an effect of coexpression of CBL on NiTrac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "235f3c5e-6a6f-40df-9709-48e07bb7d89b",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C83",
+      "claim": "AtCBL1 and AtCBL9 share approximately 89% identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, and despite the high sequence identity between AtCBL9 and AtCBL1 (\u223c89% identity), CBL1 but not CBL9 inhibited the nitrate response of NiTrac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual observation about sequence identity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9bf47544-aacb-47f7-a231-48a898848e3d",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C84",
+      "claim": "AtCBL1 and 9 have been shown to regulate a variety of processes including potassium uptake, pollen germination, as well as sugar-, hormone- and ROS-signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "AtCBL1 and 9 have been shown to regulate a variety of processes including potassium uptake, pollen germination, as well as sugar-, hormone- and ROS-signaling (Sagi and Fluhr, 2006; Xu et al., 2006; Cheong et al., 2007; Hashimoto and Kudla, 2011; Drerup et al., 2013; Kimura et al., 2013; Li, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "acecf271-dc83-4dfc-8838-627ea35982c3",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C85",
+      "claim": "The AtCBL1-AtCIPK1 complex is involved in ABA-dependent stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though CBL1 and 9 have apparent overlapping functions, they can have specific effects, for example, the AtCBL1-AtCIPK1 complex is involved in ABA-dependent stress responses, whereas the AtCBL9-AtCIPK1 complex plays roles in ABA-independent stress responses (Drerup et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "c64e2b5c-21b5-4371-ade9-bb1ad14e4c95",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C86",
+      "claim": "The AtCBL9-AtCIPK1 complex plays roles in ABA-independent stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though CBL1 and 9 have apparent overlapping functions, they can have specific effects, for example, the AtCBL1-AtCIPK1 complex is involved in ABA-dependent stress responses, whereas the AtCBL9-AtCIPK1 complex plays roles in ABA-independent stress responses (Drerup et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "33290fa9-8ae4-41bc-a8e9-30d1a445a493",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C87",
+      "claim": "Full-length CIPK23, CIPK16, or CIPK6 alone can activate the AKT1 potassium channel system.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies showed that full-length CIPK23, CIPK16, or CIPK6 alone can activate the AKT1 potassium channel system (Li et al., 2006; Lee et al., 2007; Fujii et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "7de88b52-ab3b-4874-973b-b2505e2b9b56",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C88",
+      "claim": "AtCBL10 interacts with AKT1 to regulate potassium homeostasis without binding to any AtCIPKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, AtCBL10 interacts with AKT1 to regulate potassium homeostasis without binding to any AtCIPKs (Ren et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9d5f5ec6-4698-43be-bbb3-272cde3ed828",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C89",
+      "claim": "AtKT2/KUP2/SHY3 plays a role in potassium uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found an interaction of CHL1 with the potassium transporter AtKT2/KUP2/SHY3, which plays a role in potassium uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information about the function of KT2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "78e333c3-0742-40e4-991c-181222ae81f1",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C90",
+      "claim": "Coexpression of KT2 with NiTrac1 led to a block of the nitrate response.",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression of KT2 with NiTrac1 led to a block of the nitrate response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "8461b246-f642-44cb-be32-2433dd42fd97",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C91",
+      "claim": "WNK8 interacts specifically with and phosphorylates subunit C of the vacuolar H+-ATPase AtVHA-C.",
+      "claim_type": "EXPLICIT",
+      "source": "WNK8 had been shown to interact specifically with and phosphorylate subunit C of the vacuolar H+-ATPase AtVHA-C (Hong-Hermesdorf et al., 2006), as well as with the calcineurin B-like 1 calcium sensor AtCBL1 (Li, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "9326979d-b8fe-43f5-ad1c-acb963809206",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C92",
+      "claim": "WNK8 interacts with the calcineurin B-like 1 calcium sensor AtCBL1.",
+      "claim_type": "EXPLICIT",
+      "source": "WNK8 had been shown to interact specifically with and phosphorylate subunit C of the vacuolar H+-ATPase AtVHA-C (Hong-Hermesdorf et al., 2006), as well as with the calcineurin B-like 1 calcium sensor AtCBL1 (Li, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "7b1c3613-1cf7-46a2-9331-73d635ce2cb7",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C93",
+      "claim": "NiTrac1 is highly sensitive to conformational changes that occur during the transport cycle, effects of mutations, and to changes caused by interaction with other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Obviously, NiTrac1 is highly sensitive to conformational changes that occur during the transport cycle, effects of mutations, and to changes caused by interaction with other proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comprehensive experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "1562207e-b20d-403f-b4c7-b8db52ba5e35",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C94",
+      "claim": "The plant peptide transporters are close homologs of the human SLC15 peptide transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The plant peptide transporters are close homologs of the human SLC15 peptide transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about sequence homology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "4b05e900-473c-4c4a-bdd1-aedd9630d534",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C95",
+      "claim": "The SLC15 transporter PepT1 has pathophysiological relevance in processes like intestinal inflammation and inflammatory bowel disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The SLC15 transporter PepT1 has pathophysiological relevance in processes like intestinal inflammation and inflammatory bowel disease (Ingersoll et al., 2012), and it serves as a key transport mechanism for uptake of drugs (Agu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "a450f6cd-e42c-419a-bf17-d161d4d16530",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "claim_id": "C96",
+      "claim": "PepT1 serves as a key transport mechanism for uptake of drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "The SLC15 transporter PepT1 has pathophysiological relevance in processes like intestinal inflammation and inflammatory bowel disease (Ingersoll et al., 2012), and it serves as a key transport mechanism for uptake of drugs (Agu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4cc9464e-d0f7-4eff-901a-acd37bd16232",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NiTrac1, a fluorescent sensor created by sandwiching CHL1 between Aphrodite and mCerulean, responds to nitrate addition with donor quenching that is nitrate- and chlorate-specific. The quenching mechanism is specific to certain cyan fluorescent proteins (mCerulean, eCFP) but not others (mTFP), and requires tethering to the transporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 provide converging evidence for NiTrac1 functionality. The sensor design (C26), substrate-specific donor quenching (C27-C31), fluorophore-dependent response (C32-C33), and requirement for transporter tethering (C34) are all directly supported by experimental data shown in Figures 1B-G. The specificity controls and fluorophore variants strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "c09ad33f-eaf9-4380-8e8c-9e78c46ad2db",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Four peptide transport activity sensors (PepTrac1, 2, 4, 5) were engineered from oligopeptide transporters PTR1, 2, 4, and 5. Three sensors (PepTrac1, 2, 5) responded with donor quenching to diglycine addition, while PepTrac4 showed a FRET ratio change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are directly supported by experimental data in Figures 2B-E showing distinct response modes for different PepTrac sensors. The successful engineering of multiple sensors with different response mechanisms demonstrates the transferability of the approach across related transporters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "17af08a6-5f98-4d7b-9d01-061a1de599e1",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NiTrac1 exhibits biphasic kinetics matching CHL1's dual-affinity transport properties. The T101A mutation eliminates the high-affinity component in both transport and sensor response, with Km values closely matching between fluorescence response and transport activity. The sensor shows rapid, reversible responses in individual yeast cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 provide strong evidence that NiTrac1 reports transport activity. The matching biphasic kinetics (C37-C38), parallel effects of T101A mutation (C39-C40), concordant Km values (C41, C43-C44), and reversibility in single cells (C42) collectively demonstrate that the sensor faithfully reports transporter activity states. Data from Figures 3A-C support all claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "8d112c49-b545-4887-a47f-c180d94c5fde",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The conserved E41-E44-R45 motif in TM1 of CHL1 is essential for proton-coupled nitrate transport. Mutations in any of these three residues abolished both nitrate-induced currents and 15N-uptake in CHL1, and eliminated the NiTrac1 sensor response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are well-supported by data from Figures 4B, 5, 6, and 7. The conserved motif prediction (C45) based on bacterial homologs (C46) is validated by loss-of-function mutations in CHL1 (C47) and NiTrac1 (C48), leading to the conclusion about proton cotransport (C49). The parallel loss of transport activity and sensor response strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "0c8d9901-067f-4398-ad5c-29a6d67a3dfa",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The conserved lysine K164 in TM4 of CHL1 is critical for nitrate transport but not for nitrate-dependent currents. K164A/D mutations completely abolished nitrate uptake while retaining inward currents, suggesting the mutants function as nitrate-dependent proton channels or have lost selectivity. NiTrac1-K164A showed a mixed response of donor quenching and FRET change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by data in Figures 4B, 5, and 6. The conservation of K164 (C50-C51), complete loss of uptake with retained currents (C52-C53), and the altered sensor response (C55) are all experimentally demonstrated. However, the interpretation that mutants function as channels or have lost selectivity (C54) is speculative and labeled as such in the evidence. The core experimental observations are solid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "30575a71-93d8-4974-aa78-4de835c868a8",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mutations in the predicted substrate binding pocket show differential effects: E476A abolished both transport and sensor response, while the conservative E476D mutation had no effect. Y388A had no detectable effect on transport or sensor response, suggesting Y388 is not involved in nitrate binding or transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by data in Figures 4B, 5, and 6. The contrasting effects of E476A vs E476D (C56-C57) and the lack of effect of Y388A (C58) are clearly demonstrated. The inference that Y388 is not involved in transport (C59) is reasonable given the lack of phenotype, though absence of evidence is not definitive proof.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "012f4b3c-11e7-4df0-bdb4-8ad88371a447",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mutations in the extended cytoplasmic loop (R264A/R266A/K267A triple mutant) specifically eliminated the low-affinity component of nitrate transport and sensor response while retaining the high-affinity component.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C63 are supported by data in Figures 4B, 5, and 6. The selective loss of low-affinity transport (Figure 6) and sensor response (Figure 4B) while maintaining high-affinity function implicates this loop in affinity regulation. The mixed sensor response for individual mutations (C60) adds nuance to the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "206865da-7894-43fe-81fe-1df8dbe0bda5",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NiTrac1 is a sensitive tool for reporting transporter activity states and conformational changes. The biphasic response kinetics match CHL1's dual-affinity transport properties, and the dual-affinity is an intrinsic property of CHL1 rather than being caused by partial phosphorylation in oocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 represent summary conclusions well-supported by the comprehensive mutational and kinetic data. The matching kinetics (C74), sensitivity to mutations (C75), correlation with activity (C76), and the observation of biphasic kinetics in yeast where phosphorylation is unlikely (C77) collectively support these interpretations. These are reasonable inferences from the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "d9d22bab-aee3-4ae7-ad4e-7557c7fe7827",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CIPK23 blocks the fluorescence response of NiTrac1 to nitrate addition without changing basal FRET, likely through phosphorylation of T101 or stoichiometric binding. CBL9, which enhances CIPK23-mediated phosphorylation of CHL1, had no detectable effect on NiTrac1 by itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by data in Figure 8B-C. The blocking effect of CIPK23 (C65-C66) and lack of effect of CBL9 alone (C68) are clearly demonstrated. The known phosphorylation activity (C64, C67) provides mechanistic context. The interpretation that blocking occurs through phosphorylation or binding is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "80f8069e-6c6c-4a70-9c44-e14343332844",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Among CBL proteins tested, CBL1 blocked the NiTrac1 response to nitrate addition, while CIPK8 had no effect, despite CBL1 and CBL9 sharing ~89% sequence identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by experimental data in Figure 8D. The differential effects of CBL1 vs CBL9 (C71 vs C68) despite high sequence identity (C83) and the lack of effect of CIPK8 (C70) are clearly demonstrated. This reveals unexpected specificity in regulatory interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "bd02e98d-6b43-4e65-9045-3eff1754a57e",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Novel interactors identified in an interactome screen affect NiTrac1 responses: the potassium transporter KT2 and WNK kinase WNK8 both blocked NiTrac1 responses to nitrate addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 and C89-C90 are supported by data in Figure 8D. The blocking effects of KT2 and WNK8 on NiTrac1 responses are experimentally demonstrated. This represents a novel application of the sensor for discovering regulatory interactions, though the physiological significance requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "e3e3245c-1551-464f-857c-20eaa046593b",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Activity sensors can be used to probe protein interactions with high sensitivity. NiTrac1 is highly sensitive to conformational changes during transport, effects of mutations, and changes caused by protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C93 represent summary conclusions supported by the comprehensive data on regulatory protein effects (Figures 8B-D) and mutational analyses (Figures 4-7). The successful detection of multiple regulatory interactions and subtle conformational changes validates the sensor's sensitivity and utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "5a85751e-98cf-4c48-a6b8-52dad88e612a",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Nitrogen is the single most limiting nutrient for plants quantitatively, and maximal crop yield depends critically on nitrogen fertilizer inputs. Current practices require production of ~1.5\u00d710^7 tons of N-fertilizer annually, consuming ~1% of world energy production, with plants absorbing only a fraction of applied fertilizer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C1-C5 are presented as established knowledge in the introduction without specific citations. While these are generally accepted facts in agricultural science, the specific quantitative claims (C3-C4) should be verified against primary sources. The lack of citations for these foundational claims is a weakness, though they serve primarily as motivation rather than as results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "57e735dc-4791-4f1b-805c-cbfcfadf942c",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on nitrogen uptake in plants, including forms of nitrogen, uptake systems, transporter families, spatial distribution, and regulation through phosphorylation and transceptor function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C23 represent background knowledge supported by appropriate citations to published research. These claims establish the scientific context for the study and are appropriately referenced. They are not results of this work but rather establish the foundation and motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "131dbe58-8772-4c8f-8d32-0f4757680add",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "AmTrac, a prototype transport activity sensor using ammonium transporters with inserted cpEGFP, triggers concentration-dependent and reversible fluorescence changes upon ammonium addition to yeast cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 describe prior work (De Michele et al., 2013) that provides the conceptual foundation for the current study. These are appropriately cited and accurately represent the previous work that inspired the NiTrac/PepTrac development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background information on CHL1 signaling function, CBL-CIPK regulation, and known protein interactions relevant to understanding the regulatory experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C92 represent background knowledge from cited literature that provides context for interpreting the regulatory interaction experiments. These are appropriately referenced and establish the known regulatory framework for CHL1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    },
+    {
+      "id": "2807191e-814c-4c66-b360-33574df7260c",
+      "content_id": "79b2e688-78e7-452e-9147-0891298f4d32",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Plant peptide transporters are close homologs of human SLC15 peptide transporters. PepT1 has pathophysiological relevance in intestinal inflammation and inflammatory bowel disease and serves as a key mechanism for drug uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 provide translational context for the PepTrac sensors, establishing potential medical applications. These are appropriately cited and motivate the broader significance of the sensor technology beyond plant biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:55.020655Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7af56d10-5863-424a-8f6b-4ebdd664ab93",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "c7f50638-82cd-409d-888c-d2bfb51ceae5",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "ba05cacc-644f-4f1d-a532-3165a232098a",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "21511f7c-0def-4078-bd5a-b83c76b920fc",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "40d694d0-ffda-432b-929e-ac318d0e8e1d",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "28b80bc3-5a14-4edd-bb6c-077911425619",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "1673a22b-e4d5-43ea-8533-ac96b2547c39",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "c80bf122-99a6-4cc6-a30f-7e8a36be9668",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "d634915e-a446-4cc2-98f2-c12bd16554ff",
+      "result_id": "4cc9464e-d0f7-4eff-901a-acd37bd16232"
+    },
+    {
+      "claim_id": "8fcc0fdf-1b46-4889-866c-325310e64346",
+      "result_id": "c09ad33f-eaf9-4380-8e8c-9e78c46ad2db"
+    },
+    {
+      "claim_id": "390c1ad8-a0c9-477f-a5f7-4eed2bf75bde",
+      "result_id": "c09ad33f-eaf9-4380-8e8c-9e78c46ad2db"
+    },
+    {
+      "claim_id": "3e295a7e-522c-4320-a1c3-c747901cb1ef",
+      "result_id": "17af08a6-5f98-4d7b-9d01-061a1de599e1"
+    },
+    {
+      "claim_id": "19ccfa69-93be-4d9b-80e3-2600915aed2b",
+      "result_id": "17af08a6-5f98-4d7b-9d01-061a1de599e1"
+    },
+    {
+      "claim_id": "f70b3b22-b46c-444a-8f08-b26207feb784",
+      "result_id": "17af08a6-5f98-4d7b-9d01-061a1de599e1"
+    },
+    {
+      "claim_id": "9d76b803-3254-4844-a925-cce4915c34ce",
+      "result_id": "17af08a6-5f98-4d7b-9d01-061a1de599e1"
+    },
+    {
+      "claim_id": "29733a7b-c241-4141-9c51-1ad79cc2da97",
+      "result_id": "17af08a6-5f98-4d7b-9d01-061a1de599e1"
+    },
+    {
+      "claim_id": "d2b2bf31-7f5e-424c-8065-5f871464519d",
+      "result_id": "17af08a6-5f98-4d7b-9d01-061a1de599e1"
+    },
+    {
+      "claim_id": "f0b8b6de-1588-4e25-8419-303f20a5e65b",
+      "result_id": "17af08a6-5f98-4d7b-9d01-061a1de599e1"
+    },
+    {
+      "claim_id": "8acc7b19-8c6c-4157-af02-64af4884cc27",
+      "result_id": "17af08a6-5f98-4d7b-9d01-061a1de599e1"
+    },
+    {
+      "claim_id": "f4210242-c55c-4082-bc02-50d57b0a096d",
+      "result_id": "8d112c49-b545-4887-a47f-c180d94c5fde"
+    },
+    {
+      "claim_id": "afff73b4-6987-46b0-affb-d425916baf0e",
+      "result_id": "8d112c49-b545-4887-a47f-c180d94c5fde"
+    },
+    {
+      "claim_id": "7311474a-65de-4db6-b8c9-e2a0304c2eb5",
+      "result_id": "8d112c49-b545-4887-a47f-c180d94c5fde"
+    },
+    {
+      "claim_id": "52c98781-751d-43b5-9c77-c0c81a9757f7",
+      "result_id": "8d112c49-b545-4887-a47f-c180d94c5fde"
+    },
+    {
+      "claim_id": "49dfd0df-33b5-46cc-8675-66548e068275",
+      "result_id": "8d112c49-b545-4887-a47f-c180d94c5fde"
+    },
+    {
+      "claim_id": "1f35c0e8-2792-4613-97bd-af1e3c3559bf",
+      "result_id": "0c8d9901-067f-4398-ad5c-29a6d67a3dfa"
+    },
+    {
+      "claim_id": "0b4db7ff-023a-4ac9-8d8c-6e58bf825d88",
+      "result_id": "0c8d9901-067f-4398-ad5c-29a6d67a3dfa"
+    },
+    {
+      "claim_id": "62898e44-6cc1-4988-88c5-207c325c9a78",
+      "result_id": "0c8d9901-067f-4398-ad5c-29a6d67a3dfa"
+    },
+    {
+      "claim_id": "5cb7d35c-2189-47f6-ac45-0c693ce46556",
+      "result_id": "0c8d9901-067f-4398-ad5c-29a6d67a3dfa"
+    },
+    {
+      "claim_id": "071d7982-9be2-43b9-b23f-3393a60166c9",
+      "result_id": "0c8d9901-067f-4398-ad5c-29a6d67a3dfa"
+    },
+    {
+      "claim_id": "5fdb3eb3-3665-43c0-91b0-1dd44a28a606",
+      "result_id": "0c8d9901-067f-4398-ad5c-29a6d67a3dfa"
+    },
+    {
+      "claim_id": "66f7db2b-0479-41f4-903e-eb662efe7021",
+      "result_id": "30575a71-93d8-4974-aa78-4de835c868a8"
+    },
+    {
+      "claim_id": "623cf0f5-e17e-4458-bb83-80c68b375b67",
+      "result_id": "30575a71-93d8-4974-aa78-4de835c868a8"
+    },
+    {
+      "claim_id": "e5c04bf8-8806-4551-9ef7-76a5cf5ee459",
+      "result_id": "30575a71-93d8-4974-aa78-4de835c868a8"
+    },
+    {
+      "claim_id": "e5d36cfb-ce2d-4b39-98fe-f2a676be4f1e",
+      "result_id": "30575a71-93d8-4974-aa78-4de835c868a8"
+    },
+    {
+      "claim_id": "05da557b-b6d7-429b-9b8d-6ceb283b2a29",
+      "result_id": "012f4b3c-11e7-4df0-bdb4-8ad88371a447"
+    },
+    {
+      "claim_id": "6442bd61-1fd0-4719-a8d5-ec440c10db6b",
+      "result_id": "012f4b3c-11e7-4df0-bdb4-8ad88371a447"
+    },
+    {
+      "claim_id": "536c29f6-3857-458f-8e34-87be51371150",
+      "result_id": "206865da-7894-43fe-81fe-1df8dbe0bda5"
+    },
+    {
+      "claim_id": "d59e9664-20a9-4c64-97db-f4026d797ccc",
+      "result_id": "206865da-7894-43fe-81fe-1df8dbe0bda5"
+    },
+    {
+      "claim_id": "343861ea-f450-47a8-9dc0-55955a2193fe",
+      "result_id": "206865da-7894-43fe-81fe-1df8dbe0bda5"
+    },
+    {
+      "claim_id": "96c49559-a950-4106-84a8-7a119c8a8160",
+      "result_id": "206865da-7894-43fe-81fe-1df8dbe0bda5"
+    },
+    {
+      "claim_id": "9e64763b-edde-4808-be63-073f204d2401",
+      "result_id": "d9d22bab-aee3-4ae7-ad4e-7557c7fe7827"
+    },
+    {
+      "claim_id": "040da7eb-6eee-4b9d-a018-eca6964c4a1a",
+      "result_id": "d9d22bab-aee3-4ae7-ad4e-7557c7fe7827"
+    },
+    {
+      "claim_id": "9254a864-c0d7-4809-b6b7-edac386f852e",
+      "result_id": "d9d22bab-aee3-4ae7-ad4e-7557c7fe7827"
+    },
+    {
+      "claim_id": "09216510-a498-42be-9bd0-11994623874a",
+      "result_id": "d9d22bab-aee3-4ae7-ad4e-7557c7fe7827"
+    },
+    {
+      "claim_id": "ad0ce2e2-0863-490e-aeb7-062450cd1e0b",
+      "result_id": "d9d22bab-aee3-4ae7-ad4e-7557c7fe7827"
+    },
+    {
+      "claim_id": "5c070b60-6038-4b88-857d-3a32676a32fa",
+      "result_id": "80f8069e-6c6c-4a70-9c44-e14343332844"
+    },
+    {
+      "claim_id": "2aaf80b2-ef24-450e-b290-582fa46efab6",
+      "result_id": "80f8069e-6c6c-4a70-9c44-e14343332844"
+    },
+    {
+      "claim_id": "57435b09-3a50-4f7a-b002-e245321b82f7",
+      "result_id": "80f8069e-6c6c-4a70-9c44-e14343332844"
+    },
+    {
+      "claim_id": "9ce45991-869e-4654-abfb-8797a42de066",
+      "result_id": "bd02e98d-6b43-4e65-9045-3eff1754a57e"
+    },
+    {
+      "claim_id": "a79277d9-f915-46d2-a55a-f52e9a7dda0f",
+      "result_id": "bd02e98d-6b43-4e65-9045-3eff1754a57e"
+    },
+    {
+      "claim_id": "9d5f5ec6-4698-43be-bbb3-272cde3ed828",
+      "result_id": "bd02e98d-6b43-4e65-9045-3eff1754a57e"
+    },
+    {
+      "claim_id": "78e333c3-0742-40e4-991c-181222ae81f1",
+      "result_id": "bd02e98d-6b43-4e65-9045-3eff1754a57e"
+    },
+    {
+      "claim_id": "f41520e5-d778-4627-be87-61cdc856cfdb",
+      "result_id": "e3e3245c-1551-464f-857c-20eaa046593b"
+    },
+    {
+      "claim_id": "7b1c3613-1cf7-46a2-9331-73d635ce2cb7",
+      "result_id": "e3e3245c-1551-464f-857c-20eaa046593b"
+    },
+    {
+      "claim_id": "d0eec508-946e-42fe-81d7-08e4baebf5f2",
+      "result_id": "5a85751e-98cf-4c48-a6b8-52dad88e612a"
+    },
+    {
+      "claim_id": "8966c895-5688-4e41-9af9-2aebfae5a64f",
+      "result_id": "5a85751e-98cf-4c48-a6b8-52dad88e612a"
+    },
+    {
+      "claim_id": "f920e73c-b010-462d-9b90-b8ca7158831c",
+      "result_id": "5a85751e-98cf-4c48-a6b8-52dad88e612a"
+    },
+    {
+      "claim_id": "557568c6-3238-4a2c-b1b3-2765faa9fa46",
+      "result_id": "5a85751e-98cf-4c48-a6b8-52dad88e612a"
+    },
+    {
+      "claim_id": "97bf62bf-88c4-404f-84f0-e81bb4597ccd",
+      "result_id": "5a85751e-98cf-4c48-a6b8-52dad88e612a"
+    },
+    {
+      "claim_id": "c1ced589-b537-4404-96eb-c496d204e727",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "80910148-9fe1-472b-899d-0340d5d9e304",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "c4a4413b-52a7-4cd9-874e-ff216d5b567e",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "bfd1c852-ad0e-4e14-8004-4d4554189399",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "9d09dc04-dc8e-4b24-899a-e67dc368cdfd",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "1da4e62b-5ed0-4f8a-b78a-e3d6d7768a91",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "ea38ffe0-9233-4882-ae23-543386007253",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "29fd9c65-cd31-4860-a7fa-fd5d5c05e914",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "f7d58808-0a73-4657-bc04-ec9e4d22c92b",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "d8ecbb37-0068-4f96-a326-0e617402cd78",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "ea3b877e-939d-4d96-b3f2-d184a0ad4318",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "7374409c-df38-45b1-a6a6-12824d3c0716",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "1f1770b5-3da2-499f-8051-d4bdc2eebe71",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "77b5dd6b-f258-4c73-b46e-ace4d9369a93",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "d5429daf-def8-4374-94db-eb0cd8f61bd9",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "944aa347-73b6-4d02-a34a-abe3e811fb3e",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "31f998d9-e9b8-4b4d-94be-8da3f228071f",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "14bb016c-9b52-4a59-9588-9f740da81f85",
+      "result_id": "57e735dc-4791-4f1b-805c-cbfcfadf942c"
+    },
+    {
+      "claim_id": "9cbb42f2-601a-4efd-b515-b17c5649db03",
+      "result_id": "131dbe58-8772-4c8f-8d32-0f4757680add"
+    },
+    {
+      "claim_id": "3352c738-391b-4090-a7ad-ef67fa064ad0",
+      "result_id": "131dbe58-8772-4c8f-8d32-0f4757680add"
+    },
+    {
+      "claim_id": "35f61eed-4da9-4bf4-8161-e87d051c0dbe",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "c1e316a8-2c0f-4759-90dd-7de988d9136e",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "b662ccba-ce59-4d85-9bd6-27f1ace8479a",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "f8be68b7-28e4-4125-869a-0b31f6a89748",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "235f3c5e-6a6f-40df-9709-48e07bb7d89b",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "9bf47544-aacb-47f7-a231-48a898848e3d",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "acecf271-dc83-4dfc-8838-627ea35982c3",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "c64e2b5c-21b5-4371-ade9-bb1ad14e4c95",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "33290fa9-8ae4-41bc-a8e9-30d1a445a493",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "7de88b52-ab3b-4874-973b-b2505e2b9b56",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "8461b246-f642-44cb-be32-2433dd42fd97",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "9326979d-b8fe-43f5-ad1c-acb963809206",
+      "result_id": "23ea19e4-62d9-4fa9-ad41-236b382bde8f"
+    },
+    {
+      "claim_id": "1562207e-b20d-403f-b4c7-b8db52ba5e35",
+      "result_id": "2807191e-814c-4c66-b360-33574df7260c"
+    },
+    {
+      "claim_id": "4b05e900-473c-4c4a-bdd1-aedd9630d534",
+      "result_id": "2807191e-814c-4c66-b360-33574df7260c"
+    },
+    {
+      "claim_id": "a450f6cd-e42c-419a-bf17-d161d4d16530",
+      "result_id": "2807191e-814c-4c66-b360-33574df7260c"
+    }
+  ],
+  "comparisons": []
+}

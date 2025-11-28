@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Star 27 is a novel staurosporine analog with high selectivity for FLT3 over Class III RTKs, particularly KIT. Through structure-activity relationship studies, the authors identified that a C7-methyl substituent combined with n-propyl amine yields optimal potency (IC50 = 1.5 nM for FLT3) and selectivity (KIT/FLT3 ratio >1700, CSF1R/FLT3 ratio >16,500). This selectivity correlates with inhibition of kinases containing Phe gatekeepers while avoiding those with Thr gatekeepers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64 provide comprehensive biochemical characterization showing Star 27's potency and selectivity through purified kinase assays (Figure 1B,C) and kinome profiling (Figure 1D-F). The SAR is well-defined with appropriate controls (Star 23, Star 27-iso, PKC412), and the gatekeeper correlation provides mechanistic insight. Multiple replicates with error bars support statistical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Star 27 demonstrates selective inhibition of FLT3-driven cell proliferation and apoptosis while sparing KIT-dependent cells. In cellular assays, Star 27 achieved >122-fold selectivity (HMC1.1/MV4;11) compared to 22-fold for PKC412. Star 27 induced similar apoptosis to PKC412 in FLT3-ITD+ Molm14 cells but minimal apoptosis in KIT-mutant HMC1.1 cells, with comparable inhibition of FLT3 phosphorylation and downstream signaling in FLT3-driven cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are well-supported by cellular proliferation data (Figure 2A), caspase-3 activation assays (Figure 2B,C), and Western blot analysis of signaling pathways (Figure 2D). The data show consistent selectivity across multiple assays with appropriate controls and statistical analysis. The comparison to clinical inhibitors (sorafenib, AC220, ponatinib) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Star 27 inhibits primary FLT3-mutant AML blast colony formation while showing no toxicity toward normal human hematopoiesis. Both PKC412 and Star 27 demonstrated >80% inhibition of FLT3-ITD+ patient blast colonies at 1000 nM. However, PKC412 showed dose-dependent inhibition of normal hematopoietic progenitor colony formation, while Star 27 demonstrated no significant effect up to 1000 nM on normal bone marrow or stimulated peripheral blood samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by colony-forming assays using primary patient samples (Figure 3A-F). The data include appropriate controls (DMSO), multiple concentrations, and statistical analysis. The differential effects on leukemic vs. normal cells provide strong evidence for the therapeutic window. Sample sizes and replication are adequately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In vivo zebrafish studies demonstrate that Star 27 lacks myelosuppressive toxicity while maintaining efficacy against FLT3-ITD AML. Star 27 treatment up to 10 \u03bcM showed no morphological defects or myelosuppression in wild-type embryos, whereas PKC412 caused significant heart and tail defects at 1-2.5 \u03bcM and statistically significant myelosuppression at 10 \u03bcM. Both drugs showed efficacy in preventing FLT3-ITD blast spread in the AML model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by comprehensive zebrafish studies (Figure 4) including morphological assessment, myeloperoxidase staining, and FLT3-ITD efficacy models. The data include appropriate controls (DMSO, vehicle), multiple concentrations, statistical analysis (p<0.01), and comparison to published AC220 results. The model has been validated in prior work (He et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "Computational modeling suggests Star 27's selectivity arises from both electronic and steric mechanisms. PKC412 maintains a partial positive charge at C7 that matches KIT's Thr gatekeeper negative charge, while Star 27's C7 methyl renders the lactam neutral. Additionally, steric arguments suggest Star 27's methyl group prevents binding to KIT's restricted ATP pocket while FLT3's larger active site accommodates it. This model may explain selectivity for Phe gatekeeper kinases over Thr gatekeeper kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C97 present computational predictions (Figure 5) that provide plausible mechanistic explanations but lack experimental validation. The electronic potential mapping is shown, but no direct experimental evidence (e.g., co-crystal structures, mutagenesis studies) confirms the proposed interactions. The steric argument references crystallographic data (Gajiwala et al., 2009) but states \"data not shown.\" The model is speculative and requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C98",
+      "C99"
+    ],
+    "result": "Star 27 maintains activity against FLT3 kinase domain mutations that confer resistance to clinical inhibitors. Testing against 17 drug-resistant mutants showed Star 27 maintained similar potency to FLT3-ITD alone, comparable to PKC412's equipotent profile. This contrasts with Type II inhibitors (AC220, sorafenib, ponatinib) that show substantial loss of potency against activation loop mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by comprehensive resistance profiling (Figure 6A) against clinically relevant mutations. The data include appropriate comparisons to published values for clinical inhibitors, multiple replicates with error bars, and testing of mutations from both saturating mutagenesis and patient samples. The Type I inhibitor mechanism provides a rational basis for the observed resistance profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Crenolanib, despite improved FLT3/KIT selectivity over earlier inhibitors, retains significant KIT inhibitory activity. The authors demonstrate crenolanib inhibits p-KIT in HMC1.1 cells at IC50 = 12 nM with downstream effects on p-AKT and p-S6. Colony-forming assays show crenolanib causes substantial dampening of normal bone marrow colony growth for both CFU and BFU subtypes, contrasting with prior reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 are supported by Western blot data (Figure 6B) and colony-forming assays (Figure 6C). The authors directly tested crenolanib under identical conditions to their other experiments, providing valid comparison. The discrepancy with published data (Galanis et al., 2014) is addressed by extending the dose range and improving statistical rigor. The data support the conclusion that crenolanib's KIT inhibition remains problematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors propose KIT is an anti-target in FLT3 inhibitor therapy based on synthetic lethality. They cite mouse genetic studies showing that loss of either Flt3 or Kit alone maintains normal hematopoiesis, but dual loss causes dramatic hematopoietic depletion and lethality. This synthetic lethal relationship may explain myelosuppression observed with current FLT3 inhibitors that also inhibit KIT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by cited genetic studies (Mackarehtschian et al., 1995) and the authors' experimental data showing differential toxicity of dual vs. selective inhibition. The synthetic lethality concept is well-established (Bershtein et al., 2006; Dar et al., 2012) and the clinical correlation with myelosuppression is documented. However, the mechanism remains somewhat inferential as direct proof of synthetic lethality in human hematopoiesis is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "FLT3 mutations, particularly FLT3-ITD occurring in 25% of AML patients, confer poor prognosis with increased relapse and shortened survival. While FLT3 inhibitors like AC220 achieve substantial blast reduction and represent the most selective clinical candidates, their utility is limited by myelosuppression as dose-limiting toxicity, with most patients experiencing incomplete count recovery (CRi) rather than complete remission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C16-C25 represent well-established clinical knowledge supported by appropriate citations (Mizuki et al., 2000; Kindler et al., 2005; Smith et al., 2012; Chao et al., 2009; Zarrinkar et al., 2009; Galanis et al., 2012; Cortes et al., 2013). These provide essential background and clinical context for the study. The claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Clinical trials of FLT3 inhibitors demonstrate correlation between KIT inhibition and incomplete hematologic recovery. PKC412 achieved only 25% CR (mostly CRi) with >90% grade 3/4 myelosuppression. AC220 showed 50% CR but 45% were CRi, correlating with equipotent FLT3/KIT inhibition. Crenolanib, with improved but still significant KIT inhibition (IC50 = 67 nM), showed only 17% composite CR with 2/3 achieving only CRi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 accurately cite clinical trial data (Strati et al., 2014; Cortes et al., 2013; Galanis et al., 2014; Collins et al., 2014) and make reasonable correlations between biochemical selectivity and clinical outcomes. The inference connecting KIT inhibition to myelosuppression (C36) is logical given the genetic data, though causation is not definitively proven. The clinical data support the therapeutic rationale for improved selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Secondary FLT3 kinase domain mutations, particularly at D835, cause resistance to Type II inhibitors by biasing the kinase toward active conformation. Type I inhibitors like crenolanib can bypass D835 mutations, though clinical response rates remain modest. The authors propose Type I inhibitors binding active conformations would circumvent Type II resistance mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by appropriate citations (Smith et al., 2012; Wodicka et al., 2010; Galanis et al., 2014; Lee et al., 2014; Collins et al., 2014) and represent established understanding of FLT3 inhibitor resistance mechanisms. The mechanistic explanation for D835 mutations (C42) is well-supported by structural biology. The Type I/Type II inhibitor distinction provides rational basis for drug design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The staurosporine scaffold has been used for 30 years with analogs (PKC412, CEP701) proven as FLT3 inhibitors, though clinical activity has been modest. The C7 position remains virtually unexplored for selectivity modulation. The authors' prior work showed C7-substituted staralogs selectively inhibit analog-sensitive kinases, with Star 12 (C7-isobutyl) weakly but selectively inhibiting FLT3 over KIT in kinome profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are supported by appropriate citations (Strati et al., 2014; Wood et al., 1999; Bishop et al., 2000; Heidel et al., 2005; Lopez et al., 2013) and the authors' kinome profiling data. The historical context and prior work on staralogs provide strong foundation for the current study. The observation about Star 12's selectivity (C52) is data-driven and motivated the optimization to Star 27.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "MLN518 (tandutinib) had similar IC50s for FLT3 and KIT (220 and 170 nM) and while it reduced FLT3-ITD+ blasts in patient samples, exposure at doses necessary for efficacy led to severe depletion of healthy hematopoietic colony formation at 1 \u03bcM in normal bone marrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by citation to Griswold et al., 2004 and provide additional clinical evidence for the FLT3/KIT synthetic lethality hypothesis. The data on MLN518's equipotent inhibition and associated toxicity strengthen the rationale for developing more selective inhibitors. This represents established knowledge appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "CSF1R knockout studies in 'toothless' rats demonstrate its importance for osteoclastogenesis, colon development, and macrophage/dendritic cell production. Toothless rats show 32% platelet loss not reversed by bone marrow transplant. Star 27's large CSF1R/FLT3 selectivity window (>16,500-fold) may provide clinical benefit by avoiding CSF1R-related toxicities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 are supported by appropriate citations (Chen et al., 2011; Huynh et al., 2013; Stanley et al., 1997; Thiede et al., 1996) documenting CSF1R's biological roles. However, C115's speculation about clinical benefit is not experimentally validated in this manuscript. The authors acknowledge (in Discussion) that CSF1R's role in synthetic lethality is less clear than KIT's, with conflicting reports. More work is needed to establish CSF1R as an anti-target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C26",
+      "C27"
+    ],
+    "result": "Background information on kinase inhibitor development and AML epidemiology: 25 kinase inhibitors approved in 14 years; kinase inhibitors target conserved ATP pockets making selectivity problematic; off-target effects limit dosing; AML comprises 2% of US cancer deaths with ~19,000 cases and ~10,500 deaths annually; no new therapies approved in 30 years with ~25% cure rate; Class III RTKs regulate normal hematopoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15, C26-C27 represent well-established background knowledge appropriately cited (Mullard, 2014; Leukemia and Lymphoma Society, 2014). These provide essential context for the study's rationale and significance. The information is accurate and properly sourced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Kinome profiling at 1 \u03bcM shows PKC412 and Star 27 inhibit many of the same targets, but with important differences in tyrosine kinases. There is substantial shift toward PKC412 inhibition in tyrosine kinases correlating with high Thr gatekeeper content (42 Thr GKs in Tyr kinases vs 34 in non-Tyr kinases). This is particularly striking for the Src family (all Thr GKs), while Phe GK-containing kinases show equipotent inhibition by both drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by kinome profiling data (Figure 1D-F) showing differential inhibition patterns. The correlation with gatekeeper residues is data-driven and provides mechanistic insight. The analysis appropriately identifies the Src family as a key differentiator. However, testing at 1 \u03bcM (1000-fold above IC50) may overestimate promiscuity; lower concentrations would better reflect therapeutic selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The zebrafish model has been validated for studying FLT3-ITD AML, with embryos injected with FLT3-ITD and treated with AC220 shown to recapitulate clinical knock-down of FLT3-ITD. The model provides robust and sensitive measures of in vivo myelopoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by citation to He et al., 2014 and represent validation of the experimental model used in this study. The zebrafish model is well-established for hematopoiesis studies (Davidson and Zon, 2004; de Jong and Zon, 2005) and the specific FLT3-ITD application has been published. This provides appropriate justification for the model choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The authors argue that Star 27's reduced potency against FLT3 in Ba/F3 cells relative to PKC412 is mitigated by more relevant human cell data and predicted increased maximum tolerated dosing from avoiding KIT. They attribute the decreased toxicity to addition of a single methyl group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 represent reasonable inferences from the data. The comparison between Ba/F3 (Figure 6A) and human cells (Figure 2A) shows Star 27 maintains better activity in human cells. The single methyl group attribution (C117) is supported by the SAR data showing this is the key structural difference. However, the prediction about maximum tolerated dosing is speculative and would require clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors discuss general principles of kinase inhibitor therapy: current FLT3 inhibitors cause myelosuppression regardless of remission status; avoiding anti-targets should reduce dose-limiting toxicities allowing more complete pathway inhibition; efficacy requires maximal pathway inhibition (e.g., vemurafenib requires >90% BRAF inhibition); off-target effects on related kinases cause dose-limiting toxicities; the goal is identifying key anti-targets to improve therapeutic index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107, C122-C125 represent established principles in kinase inhibitor therapy appropriately cited (Bollag et al., 2010) and synthesized from the manuscript's data. The vemurafenib example (C123) provides strong precedent for the importance of maximal pathway inhibition. These claims provide important context for interpreting the significance of improved selectivity, though some aspects (C107) remain prospective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "FLT3 has been shown important for dendritic cell maintenance and proposed as a target for autoimmunity/inflammation, particularly atherosclerosis. CEP701 has been investigated but its promiscuity for KIT and CSF1R will hamper development. Star 27 should enable FLT3 inhibition for inflammation/autoimmunity while allowing KIT and CSF1R to maintain dendritic cell functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C118 is supported by citation (Ramos et al., 2014), but C119-C121 are largely speculative. The proposed application to autoimmunity/inflammation (C119) and CEP701's limitations (C120) are mentioned without experimental validation in this manuscript. The speculation about Star 27's utility (C121) is reasonable given the selectivity data but represents future work rather than demonstrated results. No data on inflammation or autoimmunity models are presented.",
+    "result_type": "MINOR"
+  }
+]

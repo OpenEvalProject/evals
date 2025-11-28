@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C95",
+      "C96",
+      "C101"
+    ],
+    "result": "The authors developed a microtubule (MT) bridge assay to track dynein motility in three dimensions. MT bridges were constructed by suspending fluorescently labeled MTs between surface-immobilized beads coated with dynein MTBD. Cargo beads coated with dynein motors were tracked in 3D using xy position from Gaussian fitting and z position from bead intensity calibration, with tracking precision of 3 nm (x) and 5 nm (y).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23, C95-C96, and C101 describe a well-documented experimental method with appropriate controls and calibration. The z-position calibration curve (C95, Figure 1D) is based on 20 beads and shows good fit (R\u00b2=0.998). The tracking precision is explicitly stated and the method is validated using kinesin-1 as a positive control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Kinesin-1 was used to validate the MT bridge assay. Kinesin-1-coated beads moved along GMP-CPP MTs (96% 14-protofilament with 6400\u00b11000 nm left-handed pitch) with left-handed helical motion at 541\u00b123 nm/s velocity and 6500\u00b1400 nm pitch (N=6), matching both the MT supertwist and prior literature values (5700-7900 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 provide strong validation of the experimental system. The kinesin-1 results match expected behavior from prior work (following single protofilament with left-handed helicity matching MT structure). The measured pitch (6500\u00b1400 nm) agrees well with the known MT supertwist (6400\u00b11000 nm) and published values, though the sample size (N=6) is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C103",
+      "C104"
+    ],
+    "result": "GST-Dyn331kD-coated beads move in helical trajectories around MTs with a pitch of 591\u00b132 nm (67 rotations, 15 beads), corresponding to sideways movement of 6 nm per 48 nm forward. Unlike other motors, dynein exhibits bidirectional helical movement with both left-handed (75% of rotations, 546\u00b142 nm pitch) and right-handed (25%, 749\u00b181 nm pitch) trajectories at similar speeds (79\u00b14.7 vs 89\u00b117 nm/s, p=0.28). Beads occasionally switch helical direction during runs (4/67 rotations) but never reverse along the MT axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C34-C41 present the core finding with substantial data (67 rotations from 15 beads). The bidirectional helical movement is well-documented with statistical analysis showing significant difference in pitch between left- and right-handed movement (p=0.01) but not in speed (p=0.28). The observation of directional switches (4/67) without axial reversal strengthens the conclusion. Data correction for MT supertwist (C103-C104) is appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C97"
+    ],
+    "result": "Full-length yeast dynein exhibits helical motility with pitch of 500\u00b136 nm and bidirectional movement, but with opposite handedness preference compared to GST-Dyn331kD. Full-length dynein shows 58% right-handed preference (p=10\u207b\u2075) versus 75% left-handed for GST-Dyn331kD. Both forms show similar speeds for left- and right-handed movement (42\u00b111 vs 43\u00b110 nm/s for full-length, p=0.21) and occasional directional switches (8/33 rotations for full-length).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C42-C48, C97 demonstrate that bidirectional helical motility is a general property of cytoplasmic dynein, not an artifact of the truncated construct. The statistically significant difference in handedness preference between constructs (p=10\u207b\u2075) is well-supported. The authors appropriately speculate (C48) that GST dimerization may affect head orientation. Sample sizes are adequate (33 rotations for full-length).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Dynein's helical motility is independent of MT track helicity. The pitch of dynein rotation (~600 nm) is much shorter than GMP-CPP MT supertwist (~6400 nm). This was confirmed using taxol-stabilized MTs (mixture of 12/13/14 protofilaments), which showed similar pitch (607\u00b150 nm, N=34) and handedness distribution (68% left, 32% right) as GMP-CPP MTs (p=0.77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide strong evidence that dynein's helical movement is motor-driven rather than track-guided. The comparison between GMP-CPP and taxol-stabilized MTs is an appropriate control, showing similar results despite different MT compositions. The statistical comparison (p=0.77) supports the conclusion. The ~10-fold difference between dynein pitch and MT supertwist is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C81",
+      "C100"
+    ],
+    "result": "Single GST-Dyn331kD dimers tracked on MT bridges show run length (1.5\u00b10.2 \u00b5m, N=10) and velocity (64\u00b18 nm/s) similar to surface-immobilized MT assays and to multiple-motor cargo beads (80\u00b110 nm/s, p=0.12). However, single motors show high variability in perpendicular movement and frequent directional switches, without regular helical movement. This excludes rotational tug-of-war as the mechanism for bidirectional helical motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62, C81, C100 provide critical mechanistic insight. The single-motor experiments appropriately control for MT fluctuations by subtracting quantum dot-labeled MT position (C102). The lack of regular helical movement in single motors, combined with persistent helical movement of multiple motors, logically excludes tug-of-war. Sample sizes are modest (N=10) but adequate for this control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C98"
+    ],
+    "result": "Multiple monomeric Dyn331kD motors drive processive cargo movement at 61\u00b16 nm/s with helical trajectories (pitch 579\u00b138 nm, 57 rotations, 11 beads). Monomers show 59% right-handed preference, similar to full-length dimers (p=0.47) and statistically indistinguishable speeds for both directions (66\u00b110 vs 57\u00b16 nm/s, p=0.18). This indicates that right-handed preference is not due to head-head orientation in dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72, C98 provide strong evidence that helical handedness preference is an intrinsic property of individual dynein motor domains. The monomer experiments appropriately eliminate the contribution of interhead coordination. The similarity in handedness preference between monomers and full-length dimers (p=0.47) supports the conclusion. Sample size (57 rotations, 11 beads) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors propose a mechanistic model for dynein's right-handed preference: monomers preferentially bind the nearest tubulin site toward the minus end, which geometrically favors rightward steps. In dimers, the preferred 30\u00b0 right-side orientation of the leading head would make rightward steps more favorable for the trailing head, resulting in net rightward bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C75-C79 present a speculative mechanistic model based on geometric considerations and prior structural data (C78). While the model is reasonable and consistent with the observed right-handed preference, it lacks direct experimental validation. The geometric calculations appear sound, but alternative explanations are not rigorously excluded. This represents a plausible hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose that helical directionality switches may result from changes in motor attachment and orientation during processive runs. Since individual motors have 1400 nm run length but cargo beads travel longer distances, motors must detach and reattach, potentially altering the orientation of MT-bound motors and causing directional reversals. The molecular basis remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C82-C86 present a speculative model for directional switching. The inference that motors detach/reattach (C85) is logical given the run length data (C84), but the proposed mechanism for directional switching lacks direct experimental support. The model involving steric exclusion (C83) and orientation changes (C86) is plausible but unvalidated. The authors appropriately acknowledge uncertainty (C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors speculate that bidirectional helical motility may allow dynein to avoid roadblocks and prevent traffic jams in crowded cellular environments. This is supported by prior work showing dynein can bypass roadblocks while kinesin-1 stalls, and by the known crowding of MT surfaces with associated proteins and the intracellular space with organelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C87-C93 present functional speculation about the biological significance of bidirectional helical motility. While the speculation is reasonable and supported by prior observations of roadblock bypass (C92), there is no direct experimental evidence in this study linking helical motility to obstacle avoidance or traffic management. This represents a plausible hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C32",
+      "C33",
+      "C37",
+      "C73",
+      "C74",
+      "C99",
+      "C102"
+    ],
+    "result": "The manuscript provides appropriate background context: dynein is a minus-end directed MT motor with diverse cellular functions; prior 2D studies showed dynein takes sideways steps unlike kinesin-1's single protofilament tracking; helical movement has been observed for other motor families; and the full 3D trajectory of dynein was unknown due to steric constraints in surface-based assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C16, C32-C33, C37, C73-C74, C99, C102 accurately represent established knowledge and prior work, appropriately cited throughout. These claims provide necessary context and motivation for the study. The characterization of the knowledge gap (C12, C15) appropriately justifies the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

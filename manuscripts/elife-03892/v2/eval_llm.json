@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes the anatomical connectivity between rod bipolar cells (RBCs) and their postsynaptic targets AII and A17 amacrine cells. Each RBC has ~50 ribbon synapses that often form dyads with one AII and one A17 cell. Critically, each RBC makes tens of synaptic contacts onto a single AII but typically only one contact onto a single A17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are well-supported by multiple citations to prior anatomical studies and EM reconstruction data shown in Figure 1A. The differential connectivity pattern (multiple RBC\u2192AII synapses vs. single RBC\u2192A17 synapses) is central to the experimental design and is consistently supported across cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Under dark-adapted conditions, spontaneous excitatory synaptic input variance in AII amacrine cells is more than 10 times larger than in A17 amacrine cells (1000\u00b1154 pA\u00b2 vs 72\u00b122 pA\u00b2). This large variability in AII inputs arises from excitatory RBC inputs, persists in gap junction knockout mice, and is insensitive to inhibitory receptor blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide converging evidence from multiple experimental manipulations (Gjd2 knockout, pharmacological blockade) with appropriate statistical tests (p=3\u00d710\u207b\u2076) and adequate sample sizes (n=17-20). The conclusion that large AII fluctuations arise from RBC inputs is well-supported by the control experiments ruling out gap junctions and inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Paired recordings from neighboring A17 amacrine cells reveal strong correlations in excitatory synaptic input in darkness (CCpeak=0.51\u00b10.03), which are reversibly reduced by dim backgrounds and eliminated by NBQX. This indicates that overlapping A17s receive input from many common RBCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by direct paired recordings (n=8 pairs) with appropriate statistical analysis (p=0.0053) and pharmacological controls. The anatomical basis (C18) is supported by citation to prior work, and the functional measurements are consistent with the proposed connectivity pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Direct measurements rule out electrical coupling between A17s (resistance 9.8\u00b11.3 G\u03a9, >30\u00d7 input resistance) and upstream rod divergence (RBC pair correlation 0.03\u00b10.02) as primary sources of A17 correlations. Synchronized release from different synapses of the same RBC dominates the measured correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 provide critical control experiments with direct measurements (n=6 pairs for coupling, n=6 for RBC pairs). The high electrical resistance and weak RBC correlations effectively rule out alternative explanations, supporting the conclusion that cross-synaptic synchrony is the dominant mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Using anatomical connectivity measurements and Equation 1, the measured A17 correlation of 0.51\u00b10.03 corresponds to a RBC cross-synaptic synchrony (CSS) of 0.80\u00b10.08 in darkness, indicating nearly perfect synchronization. Dim backgrounds reduce CSS to 0.52\u00b10.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C33 rely on Equation 1 and anatomical measurements from C18 and Figure 4. While the mathematical framework is presented, the assumptions underlying Equation 1 (complete dendritic overlap, homogeneous release probability, electrotonic scaling) are acknowledged to underestimate synchrony. The conversion from correlation to CSS depends critically on these assumptions, which may introduce uncertainty. However, the qualitative conclusion of high CSS is likely robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Pharmacological manipulation with mGluR6 agonist (APB) and antagonist (LY341495) demonstrates that CSS strength depends on whether noise originates from upstream RBC voltage fluctuations or intrinsic synaptic mechanisms. Suppressing RBC voltage fluctuations while maintaining release rate dramatically reduces CSS (from 0.71\u00b10.08 to 0.18\u00b10.05) and noise transmission to AIIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 present a clever pharmacological dissection with appropriate controls (n=4-8 pairs) and statistical analysis (p=0.0034). The experiments effectively separate the contributions of upstream voltage fluctuations from intrinsic synaptic noise. The conclusion that high CSS in darkness is generated by RBC voltage fluctuations is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Across a 1000-fold range of light levels (0.5-500 R*/rod/s), RBC signal variance changes less than 2-fold while AII variance decreases 10-fold. CSS decreases from ~0.8 in darkness to 0.36\u00b10.08 at 500 R*/rod/s, with corresponding changes in temporal correlation structure. This indicates light-dependent desynchronization of RBC output synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 are supported by systematic measurements across light levels with appropriate statistical tests (p<0.05 for multiple comparisons) and adequate sample sizes (n=4-7). The use of Gjd2 knockout mice (C46) provides additional control. The autocorrelation analysis (C49-C50) provides mechanistic insight into the desynchronization process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The decrease in CSS with increasing light is consistent with prior studies showing that increased RBC voltage produces presynaptic depression by reducing available vesicle pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 appropriately cites three prior studies (Dunn and Rieke 2008; Jarsky et al. 2011; Oesch and Diamond 2011) that provide mechanistic support for the observed light-dependent changes in CSS. This represents proper integration with existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Paired recordings from On alpha and Off sustained RGCs show that excitatory and inhibitory inputs are highly correlated in darkness (CCpeak=0.43\u00b10.04). These correlations depend on normal RBC dendritic input, as they are eliminated by APB and only weakly restored by APB+LY (CCpeak=0.06\u00b10.05), paralleling the CSS measurements. This demonstrates that high CSS at RBC\u2192AII synapses creates ganglion cell correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 extend the CSS findings to downstream circuit function with appropriate paired recordings (n=4-5 pairs) and pharmacological manipulations. The parallel dependence of RGC correlations and CSS on normal RBC input provides strong evidence for the functional importance of CSS. The cited prior work (Murphy and Rieke 2008) supports the circuit connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The manuscript's main findings are that RBC output synapses exhibit ~80% synchrony in darkness, causing AII noise to be dominated by rod photoreceptor noise rather than synaptic noise, and that this synchrony transitions to low CSS with increasing light level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 accurately summarize the major findings supported by the experimental data in prior claim groups. These summary statements are well-justified by the converging evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript contextualizes findings within the broader requirement for low-noise synaptic transmission to support single-photon detection. Prior work has established that rod photoreceptors detect single photons and that synaptic saturation at the rod-RBC synapse enhances signal sensitivity >10-fold by suppressing rod noise transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 appropriately cite established prior work (Rieke and Baylor 1998; van Rossum and Smith 1998; Field and Rieke 2002; Berntson et al. 2004; Sampath and Rieke 2004) to provide context. These are well-established findings in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Achieving CSS of 0.8 requires near-deterministic vesicle release (CV\u22640.5) at individual synapses. Multiple mechanisms facilitate this: ~10 active zones per ribbon, high vesicle availability, postsynaptic receptor saturation, and full readily releasable pools maintained by low spontaneous release rates in darkness. RBC synapses operate far from Poisson statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 provide mechanistic interpretation supported by modeling (Figure 8A), anatomical data (C71), and appropriate citations (Tong and Jahr 1994; Singer and Diamond 2006). The inference that CV\u22640.5 is required follows logically from the CSS measurements, though direct measurement of CV at individual synapses would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The manuscript proposes that cross-synaptic synchrony is a key determinant of whether anatomical divergence produces correlated signals in downstream neurons, and that changes in CSS can dynamically control correlation strength without morphological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 represent well-supported general principles derived from the specific findings. The light-dependent changes in CSS (C33, C53) without morphological changes provide direct evidence for this principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Mathematical modeling shows that CSS of 0.8 constrains the coefficient of variation at individual synapses to \u22640.5, assuming homogeneous release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by the mathematical relationship presented in the methods and illustrated in Figure 8A. The assumption of homogeneous release probability is clearly stated, though this assumption may not hold perfectly in biological systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The manuscript describes methodological details including recording timing (within 4 hours of dissection), cell targeting depth (\u226520 \u03bcm), anatomical parameters (A17 dendrites traverse ~40 \u03bcm to reach sublaminas 4-5, electrotonic length 32.3 \u03bcm), synaptic identification criteria (>1 pixel overlap), and experimental design to ensure dark adaptation (one recording per preparation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 describe methodological details that are clearly stated and appropriately referenced (C82 cites Grimes et al. 2010 for electrotonic length). These details are important for reproducibility and interpretation but represent standard methodological reporting.",
+    "result_type": "MINOR"
+  }
+]

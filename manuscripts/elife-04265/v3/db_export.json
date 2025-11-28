@@ -1,0 +1,1690 @@
+{
+  "submission": {
+    "id": "97f2340c-0e3e-4a74-a0ac-a4e85d1a6fda",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:11:02.902625Z",
+    "updated_at": "2025-11-28T22:11:02.902625Z"
+  },
+  "content": [
+    {
+      "id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "submission_id": "97f2340c-0e3e-4a74-a0ac-a4e85d1a6fda",
+      "content_type": "manuscript",
+      "content_text": "# CED-3 caspase acts with miRNAs to regulate non-apoptotic gene expression dynamics for robust development in C. elegans\n\n## Authors\n\n- Benjamin P Weaver<sup>1</sup> \u2020\n- Rebecca Zabinsky<sup>1</sup>\n- Yi M Weaver<sup>2</sup>\n- Eui Seung Lee<sup>1</sup>\n- Ding Xue<sup>1</sup>\n- Min Han<sup>2</sup>\n\n### Affiliations\n\n1. Department of Molecular, Cellular and Developmental Biology University of Colorado Boulder Boulder United States\n2. Department of Molecular, Cellular and Developmental Biology Howard Hughes Medical Institute, University of Colorado Boulder Boulder United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetic redundancy and pleiotropism have limited the discovery of functions associated with miRNAs and other regulatory mechanisms. To overcome this, we performed an enhancer screen for developmental defects caused by compromising both global miRISC function and individual genes in Caenorhabditis elegans. Among 126 interactors with miRNAs, we surprisingly found the CED-3 caspase that has only been well studied for its role in promoting apoptosis, mostly through protein activation. We provide evidence for a non-apoptotic function of CED-3 caspase that regulates multiple developmental events through proteolytic inactivation. Specifically, LIN-14, LIN-28, and DISL-2 proteins are known miRNA targets, key regulators of developmental timing, and/or stem cell pluripotency factors involved in miRNA processing. We show CED-3 cleaves these proteins in vitro. We also show CED-3 down-regulates LIN-28 in vivo, possibly rendering it more susceptible to proteasomal degradation. This mechanism may critically contribute to the robustness of gene expression dynamics governing proper developmental control.\n\n## Introduction\n\nThe robustness of animal development is ensured by multiple regulatory mechanisms with overlapping roles acting on specific cellular processes, often manifested as genetic redundancy (Fay et al., 2002; Kitano, 2004; Felix and Wagner, 2008; Hammell et al., 2009). miRNAs mostly exert repression of gene expression by blocking target mRNA translation and/or through mRNA decay as part of the miRNA-induced-silencing complex (miRISC), which includes GW182 and argonaute proteins (Ding and Han, 2007; Fabian and Sonenberg, 2012). miRNA-mediated gene silencing is a critical regulatory mechanism that ensures dynamic changes in gene expression during animal development or other physiological processes (Ambros, 2004; Bartel and Chen, 2004). However, specific physiological roles of individual miRNAs are often executed through the combinatory effects of multi-miRNA, multi-target mRNA networks (Brenner et al., 2010; Karp et al., 2011; Kudlow et al., 2012; Miska et al., 2007; Parry et al., 2007; Than et al., 2013; Alvarez-Saavedra and Horvitz, 2010). Moreover, these miRNA\u2013mRNA interaction networks may act in concert, and often semi-redundantly, with other regulatory mechanisms to limit the expression of many genes involved in animal development or other physiological functions (Figure 1A). Therefore, tackling genetic redundancy would be critical to uncover many specific functions associated with miRNAs and other gene expression regulatory mechanisms.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig1-v3.jpg)\n\n**Figure 1.:** (A) Rationale of enhancer screen strategy (detailed in Figure 1\u2014figure supplement 1A). (B) The number of genes identified as interactors of either/both ain-1(lf) and/or ain-2(lf). (C) Distribution of the 126 interactors into functional categories (interactors listed in Supplementary file 2). (D) The proportion of genes exhibiting singular vs pleiotropic RNAi phenotypes with ain-1(lf) or ain-2(lf) (detailed phenotypic frequencies shown in Figure 1\u2014figure supplement 1B).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cartoon diagram illustrating steps of the screen performed for the entire ORF RNAi library using liquid culture 96-well format. We included the RNAi-sensitizing mutation, rrf-3(lf), with ain-1(lf) and ain-2(lf) to increase screen sensitivity and therefore used rrf-3(lf) alone for the control. In the double blind, we identified genes where the RNAi effect for the control was mostly normal but where ain-1(lf) or ain-2(lf) showed an obvious enhancer phenotype (as defined in Supplementary file 1). Example phenotypes body morphology defect (Bmd), embryonic lethality (Emb), and reduced brood size (Red) are depicted for illustration purposes only. Confirmations were performed in quadruplicate in the double blind. These interactors were all then revealed and sequence-verified. (B) Frequency of phenotypes observed in the RNAi screen. The three letter phenotypes indicated here are all defined in Supplementary file 1 and are depicted here as the frequency of occurrence amongst interactors for either ain-1 or ain-2. Due to pleiotropism, the sum of the phenotypes will exceed 100%. All genes identified in the screen with individual phenotypes are listed in Supplementary file 2.\n\nWe have carried out a genome-wide enhancer screen for genes that when knocked down would generate a strong developmental defect when general miRISC function is compromised. Among a large number of interactors identified from the screen is the ced-3 gene that encodes a caspase, well-characterized as a key component of the apoptotic pathway (Conradt and Xue, 2005). While ced-3 is absolutely required for the apoptotic process, null mutations of the gene are not associated with obvious developmental defects (Hengartner, 1997). However, two recent studies have reported different non-apoptotic roles of the ced-3 pathway, namely in stress-related neuronal function (Pinan-Lucarre et al., 2012) and aging (Yee et al., 2014). Because no specific downstream targets of CED-3 were found in these studies, the mechanistic detail of such non-apoptotic functions of CED-3 remains unclear. Moreover, whether the CED-3 system is widely utilized to regulate animal development and other functions is a question of high significance.\n\n## Results\n\n### A genome-wide enhancer screen to identify factors that act with miRISCs to ensure robust development\n\nTo uncover specific physiological functions of miRNAs and other regulatory mechanisms acting with miRNAs during development, we performed a genetic enhancer screen for developmental defects that manifested only when miRISC function and another regulatory mechanism were both compromised (Figure 1A). We chose to use loss-of-function (lf) mutations of the ain-1 and ain-2 genes (GW182 orthologs) that each alone significantly compromises but does not eliminate global miRISC function (Ding et al., 2005; Zhang et al., 2007, 2009). While the ain-1(lf) mutant has a mild heterochronic phenotype and the ain-2(lf) mutant is superficially wild-type, loss of both genes results in severe pleiotropic defects including alteration in temporal cell fate patterning. Therefore, an enhancer screen using the ain-1(lf) or ain-2(lf) mutant can potentially detect functions associated with most miRNAs.\n\nUsing the entire Caenorhabditis elegans ORFeome RNAi feeding library (Rual et al., 2004), we performed a double-blind screen that identified 126 genetic interactors (Figure 1A\u2013D, Figure 1\u2014figure supplement 1 and Supplementary files 1,2), of which only eight have been reported to interact with miRNA regulatory pathways (Parry et al., 2007). Many interactions were confirmed by testing candidate mutants for phenotypes when treated with ain-1 and ain-2 RNAi (Supplementary file 3). Nearly two-thirds of the 126 genetic interactors were found to interact with both ain-1 and ain-2 genes (Figure 1B). Gene ontology analysis revealed that these genes belong to a broad range of functional groups (Figure 1C). Over-representation of genes associated with protein stability is consistent with the hypothesis that miRNAs act in concert with other repressive mechanisms to limit gene expression (Figure 1A,C). We found that ain-1(lf) displayed more pronounced pleiotropism with its interactors than ain-2(lf) (Figure 1D) and that the two GW182 homologs have distinct frequencies of phenotypes with their interactors (Figure 1\u2014figure supplement 1B), arguing against general sickness being the cause for the enhancement (further elaborated in Figure 2\u2014figure supplement 1). The pleiotropic nature of ain-1 interactions is consistent with the diverse physiological functions associated with AIN-1 or possibly its expression patterns or levels.\n\n### Cooperation between the CED-3 pathway and miRISC on multiple aspects of development\n\nWe were most surprised to identify the C. elegans cell-killing caspase, ced-3, as an interactor of the miRISC GW182 homolog, ain-1. Using multiple alleles of each gene, we found that ced-3(lf);ain-1(lf) double mutants have pleiotropic developmental phenotypes including delays in larval growth rate, smaller brood size, abnormal adult body morphology, egg-laying defect (accumulation of eggs inside the animal), sluggish movement, embryonic lethality, and laid oocytes (failure to fertilize) (Figure 2A\u2013D and Figure 2\u2014figure supplement 2A,B). The penetrance of abnormal phenotypes increased as the adults continued to age (Figure 2\u2014figure supplement 2C) and was therefore best quantified in a synchronized population. Combining mutations of miRISC components such as ain-1(GW182)(lf) or alg-1(argonaute)(lf) with the cell death pathway factors ced-3(caspase)(lf) or its upstream activator, ced-4(apaf-like)(lf), results in abnormal adults (Figure 2E) but ced-3(lf);ain-2(lf) animals did not show a significant defect (Figure 2\u2014figure supplement 2D). To test the involvement of other core cell death pathway factors, we also examined the interaction of ain-1 with egl-1 that has been shown to act upstream of the CED-3 caspase to promote apoptosis (Figure 2\u2014figure supplement 3A) and egl-1(lf) is known to cause a strong cell death defect (Conradt and Xue, 2005). We found that, like ced-3(lf) and ced-4(lf), egl-1(RNAi) also significantly enhanced the developmental defects of ain-1(lf) (Figure 2\u2014figure supplement 3B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig2-v3.jpg)\n\n**Figure 2.:** (A and B) Microscopic images showing the pleiotropic phenotypes of the ced-3(lf);ain-1(lf) double mutant, including egg-laying defect (Egl), sluggish movement (Slu), body morphology defects (Bmd), larval arrest (Lva), and embryonic lethality (Emb). Asterisk in (A) indicates an Egl animal that was devoured by internally hatched progeny, and the arrow indicates an adult animal with multiple defects (Egl, Slu and Bmd). Figure 2\u2014figure supplement 1 shows the phenotype of another interactor, ceh-18, which is very different from ced-3, supporting distinct physiological relevance of the identified interactors. (C) ced-3(RNAi) significantly enhanced the frequency of ain-1(lf) phenotypes. Mean values \u00b1 SD for percent normal (p < 0.001, *compared to wt with mock RNAi, **compared to all others, Chi-square test comparing the distributions of phenotypes). Number of worms tested indicated above each bar (same for all figures). (D) Mean values \u00b1 SD of embryonic lethality (p < 0.05 **compared to all, Mann\u2013Whitney test). (E) Enhancement of miRISC phenotypes by ced-3(lf) and ced-4(lf). Mean values \u00b1 SD for percent normal (p < 0.0001, *compared to each of the relevant single mutants, Chi-square test comparing the distributions of phenotypes). Other ain-1 and ced-3 alleles (Figure 2\u2014figure supplement 2) and the ain-1 interaction with egl-1 (Figure 2\u2014figure supplement 3) were also tested. (F) Rescue effects of expressing ain-1 or ain-2 in specific tissues (driven by tissue-specific promoters for the four principal tissues of C. elegans including the hypodermis, gut, muscle, and nerve; see \u2018Materials and methods\u2019) in the ced-3(lf);ain-1(lf) double mutants. \u2018All tissues\u2019 indicates a genomic ain-1 transgene. Mean values \u00b1 SD for percent normal [p < 0.0001, Fisher's Exact test comparing the distribution of normal and abnormal animals for each rescue to ced-3(lf);ain-1(lf) without rescue (see \u2018Materials and methods\u2019 for statistical rationale)].\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** DIC images of gonads from single and double mutant animals. (A) Arrows indicate the farthest point for the gonad turn. Asterisks are located near the first identifiable oocyte in the given gonad arm. The expanded segment is a digital zoom-in to show the morphological detail of the double mutant gonad for the indicated segment. (B) Dot plot of the oocyte counts per gonad arm (n = 40 for each strain). Each dot represents the number of oocytes in one gonad arm and the median values are given by black bars for each strain (p < 0.001, *compared to ain-1(lf) and **compared to both ain-1(lf) and ceh-18(lf) alone, Mann\u2013Whitney test). The distinct phenotypes observed amongst some of the genetic interactors, such as ced-3 (shown in Figure 2) vs ceh-18 suggest distinct physiological functions and argue against general sickness of the single mutants. This conclusion is also supported more broadly by the frequency of phenotypes observed (Figure 1\u2014figure supplement 1B) such that equal frequency is not observed across the various phenotypes.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) ain-1(lf) animals treated with ced-3(RNAi) have a significant increase in oocytes laid (p < 0.0001, *compared to wt mock, **compared to all others, Mann\u2013Whitney test). (B) Developmental defects associated with ced-3(lf);ain-1(lf) double mutants were observed for other ain-1(lf) and ced-3(lf) alleles. Bar graph showing the synergistic effect between ain-1(tm3681) and two ced-3(lf) alleles on the egg-laying defective (Egl) phenotype. Animals were scored 5 days after eggs were placed on plates. The mean values are shown (**p < 0.001 compared to wt and each of the relevant single mutants, Fisher's exact test). (C) Phenotypes of adults scored at two time points after synchronized first stage larvae were placed on OP50 food. In panel (C), and elsewhere in the study, unless noted, the ain-1(ku322) and ced-3(n1286) alleles were used (**p < 0.001, relative to wt and single mutants, Fisher's exact test comparing the distribution of normal and abnormal animals). (D) The ced-3(lf);ain-2(lf) double mutant adults are phenotypically comparable to the ced-3(lf) single mutant adults in (C) at 96 hr on OP50 food following synchronization (p < 0.001, Chi-square analysis). For all panels: Slu, sluggish or immobile; Egl, egg-laying defective; Rup, ruptured through vulva. Number of worms tested is indicated above each bar.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Core apoptotic regulatory pathway with C. elegans gene names indicated (mammalian counterparts in parentheses). (B) The phenotypes observed for ced-3(lf);ain-1(lf) were observed when combining ain-1(lf) with RNAi of upstream components of the ced-3 pathway. The ain-1(lf) single mutant shows enhanced defects when treated with ced-3, ced-4, or egl-1 RNAi for two RNAi generations. Significance of phenotypes when wt and ain-1(lf) animals were fed the indicated RNAi was determined [**p < 0.001, relative to both ain-1(lf) fed mock RNAi and to wt fed the given RNAi, Fisher's exact test comparing the distributions of normal and abnormal animals (see \u2018Materials and methods\u2019 for statistical rationale)].\n\nTo better characterize these defects, we tested the interaction in specific tissues. Expressing either ain-1 or ain-2 in the intestine or hypodermis alone partially rescued the defects of the ced-3(lf);ain-1(lf) double mutant (Figure 2F). These findings suggest that these two tissues are the major sites for miRNA functions in this interaction and likely also CED-3 function given that ced-3 acts cell autonomously (Yuan and Horvitz, 1990). Expressing ced-3 with strong tissue-specific promoters has been shown to kill those tissues, even in cells that do not normally die, due to the resulting high level of CED-3 accumulation (Shaham and Horvitz, 1996; Hengartner, 1997) thus preventing the reciprocal rescue experiments.\n\n### Non-apoptotic functions of ced-3 caspase in development\n\nThe ced-3 caspase has been well-characterized for its role in apoptosis but not demonstrated to have a broad, non-apoptotic function in development (Yuan et al., 1993; Xue et al., 1996; Conradt and Xue, 2005; Peden et al., 2008). The fact that strong ced-3(lf) alleles cause robust defects in programmed cell death but not the developmental defects described above suggests that the functions of ced-3 with miRISCs uncovered in our screen are non-apoptotic. To further address this question, we first used an assay previously shown to effectively identify apoptotic functions of genes, such as mcd-1 encoding a zinc-finger containing protein, for which mutations caused subtle apoptotic defects alone, but significantly enhanced the cell death defect of a ced-3 reduction-of-function allele (ced-3(rf)) (Reddien et al., 2007) (Figure 3A). We found that, in contrast to the positive control, mcd-1(lf), the ain-1(lf) mutation did not enhance the apoptotic defect of ced-3(rf) animals as assayed by observing the perdurance of lin-11::GFP positive undead P9-11.aap cells (Figure 3A\u2013B). Because nuc-1 encodes an effector nuclease important for the proper execution of apoptosis (Wu et al., 2000), we then tested if the ain-1(lf) mutation was able to enhance any subtle nuc-1(lf) phenotype and found no significant defect beyond the phenotypes of the single mutants (Figure 3C). Finally, ain-1(RNAi) did not affect the number of apoptotic cell corpses accumulating in the heads of ced-1(lf) first stage larvae (Figure 3D), which are defective in cell corpse engulfment allowing for visualization of dead cell corpses. Therefore, the ain-1 and ced-3 interaction described above is non-apoptotic.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig3-v3.jpg)\n\n**Figure 3.:** (A) Cartoon illustrating a previously established enhancer assay using a reduction-of-function (rf) ced-3 allele (Reddien et al., 2007). (B) ain-1(lf) does not enhance the cell death defect of a ced-3(rf) mutation (p < 0.0001, *compared to ced-3(rf), Mann\u2013Whitney test). (C) No enhanced interaction between ain-1(lf) and nuc-1(lf). Mean values \u00b1 SD (no significant difference, Fisher's Exact test comparing the distributions of normal and abnormal animals of the ain-1(lf);nuc-1(lf) double mutant to the single mutants). (D) ain-1(RNAi) does not alter apoptotic events as indicated by L1 head corpses that fail to occur in ced-3(lf) mutants. The ced-1(lf) mutation was used to enhance visualization of head corpses (Ledwich et al., 2000). Mean values \u00b1 SD (no significant difference, Mann\u2013Whitney test).\n\n### Function of ced-3 caspase in temporal cell fate patterning\n\nFurther analysis indicated that the ced-3(lf) and ced-4(lf) single mutants have mild reduction in their rates of post-embryonic growth similar to the ain-1(lf) and alg-1(lf) mutants (Figure 4A\u2013C and also Figure 4\u2014figure supplement 1 for more ced-3(lf) data). Additionally, the ced-3(lf);ain-1(lf) and ced-3(lf);alg-1(lf) double mutants, but not ced-3(lf);ain-2(lf), have significantly slower growth rates beyond either single mutant (Figure 4A\u2013C and Figure 4\u2014figure supplement 1), suggesting cooperativity in regulating the related developmental programs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig4-v3.jpg)\n\n**Figure 4.:** (A) Percent of animals reaching adulthood at 96 hr after hatching is shown. Mean \u00b1 SD (p < 0.0001, *compared to wt, **compared to the relevant single mutants, Fisher's Exact test comparing the distributions of adult to larval-stage animals at this time). (B and C) Distribution of stages at 48 hr and 72 hr with food (p < 0.0001, *compared to wt, **compared to the relevant single mutants, Chi-square test comparing the distributions of all stages). Also see Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Animals were synchronized 36 hr in M9 buffer at 20\u00b0C then placed on standard bacteria food (OP50) and staged every 24 hr thereafter. Data for 24 and 96 hr are shown here and data for 48 and 72 hr are shown in Figure 4B\u2013C. The distribution of animals from first larval stage (L1) through young adult/adult (indicated as YA+) is shown (p < 0.0001, *compared to wt, Chi-square analysis comparing the distributions of stages). Number of worms indicated above each set.\n\nTo interrogate the genetic interaction further, we screened all of the available C. elegans miRNA deletion strains in the blind (Figure 5A, strains listed in Supplementary file 4) for synthetic interactions with ced-3 by depleting ced-3 in each miRNA mutant background by RNA interference. After finding pronounced RNAi effects associated with several miRNA deletions, we then generated double or triple mutants containing ced-3(lf) and the miRNA mutations, and observed phenotypes similar to those seen in ced-3(lf);ain-1(lf) (Figure 5B, and refer to Figure 2A\u2013E) Specifically, mutations in the let-7-family members, mir-48 and mir-84, had the strongest effect with a fully penetrant egg-laying defect observed in the ced-3(lf);mir-48(lf);mir-84(lf) triple mutant (Figure 5B). Interestingly, the ced-3(lf);mir-1(lf);mir-84(lf) triple mutant displayed some developmental defects not seen in the mir-1(lf);mir-84(lf), ced-3(lf);mir-1(lf), or the ced-3(lf);mir-84(lf) double mutants (Figure 5B). Since ced-3(lf) had the strongest developmental defects with the let-7-family members, and since both lin-14 and lin-28 mRNAs are well-known targets of the let-7-family of miRNAs, we thus tested the possibility that ced-3(lf) may enhance specific temporal cell fate patterning defects of these miRNA mutants by examining their adult alae. Normal adult-specific alae are generated by seam cells and defects in adult alae formation are commonly used as a sensitive assay for defects in temporal cell fate patterning (Ambros and Horvitz, 1984). We found that ced-3(lf) significantly enhanced adult alae defects (Figure 5C,D). This effect was observed for both the miR-48(lf),miR-84(lf);ced-3(lf) triple mutant and the ced-3(lf);ain-1(lf) double mutant, but not the ced-3(lf);mir-1(lf);mir-84(lf) triple mutant (Figure 5D). These findings suggested the hypothesis that the expression of some developmental timing regulators is co-regulated by miRISCs and ced-3.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig5-v3.jpg)\n\n**Figure 5.:** (A) Diagram for screening miRNA deletion mutants (listed in Supplementary file 4) when fed mock or ced-3 RNAi to identify overt developmental phenotypes when ced-3 was depleted. let-7(lf) and lin-4(lf) mutants were excluded due to significant defects alone. (B) miRNA deletion(s) [indicated by the miR number(s)] identified in (A) were combined with ced-3(lf). \u2018+\u2019 and \u2018\u2212\u2019 indicate wild-type and ced-3(null), respectively. Phenotypes including egg-laying defect (Egl), ruptured vulva (Rup), and sluggish movement (Slu) were quantified. Mean values \u00b1 SD for percent normal (p < 0.05, *when compared to ced-3(lf) and the relevant miRNA deletion(s) alone, Fisher's Exact test comparing the distributions of normal and abnormal animals). (C and D) ced-3(lf) enhances adult-specific alae defects including low quality (thin and rough) and gapped alae [bracket in (C) near the mid-body shows a gap]. Percent of adults with alae defects (p < 0.001, *compared to the relevant single or double mutants, Chi-square test comparing the distributions of adult alae phenotypes).\n\n### Negative regulation of the pluripotency factors lin-14, lin-28, and disl-2 by ced-3\n\nTo better analyze the mechanism underlying this non-apoptotic temporal cell fate patterning function of ced-3, we tested its effect on seam cell development. The division and differentiation pattern of the stem cell-like seam cells are regulated by a well-described genetic pathway that includes several miRNAs and the LIN-28 pluripotency factor that blocks the maturation of pre-let-7 miRNA (Viswanathan and Daley, 2010). During each larval stage, lateral seam cells (V1\u2013V4 and V6) divide in an asymmetric, stem-cell like manner with additional stems cells only produced in the L2 stage by an additional symmetric division pattern that duplicates V1\u2013V4 and V6 seam cell numbers (Sulston and Horvitz, 1977; Ambros and Horvitz, 1984). Wild-type animals consistently have 16 seam cells on both the left and right sides by adulthood (Joshi et al., 2010). The dynamic changes in the expression levels of several conserved pluripotency factors are critical for proper temporal cell fate patterning. LIN-14 is highly expressed during L1 to promote L1-specific developmental programs, whereas LIN-28 is highly expressed from late embryonic to L2 stages and acts to promote the L2-specific programs including the only normal symmetric division of V1\u2013V4 and V6 seam cells (Ambros and Horvitz, 1984; Ambros, 1989; Ruvkun and Giusto, 1989; Moss et al., 1997; Rougvie and Moss, 2013) (Diagrammed in Figure 6\u2014figure supplement 2A). Expression of LIN-14 and LIN-28 rapidly diminishes after L1 and L2, respectively, which is necessary for animals to progress to the next stage (Figure 6\u2014figure supplement 2A). Loss-of-function (lf) mutations in lin-14 and lin-28 result in animals skipping the L1- and L2-specific programs, respectively (precocious phenotype) (Figure 6\u2014figure supplement 2A). In contrast, hyperactive (gain-of-function, gf) mutations leading to prolonged expression of each gene cause the animals to reiterate the corresponding stage (retarded phenotype) (Figure 6\u2014figure supplement 2A). Because of the additional symmetric cell division of V1\u2013V4 and V6 seam cells in L2, skipping or reiterating the L2 stage in lin-28(lf) or lin-28(gf) mutations lead to a decrease or increase of total seam cell number, respectively (Ambros and Horvitz, 1984; Moss et al., 1997) and diagrammed in Figure 6\u2014figure supplement 2A. Mammalian DIS3L2 was recently annotated as the ribonuclease that degrades the uridylated pre-let-7 miRNA following binding by LIN-28 and 3\u2032-oligo-uridylation by a polyU polymerase (Chang et al., 2013). We identified the likely C. elegans ortholog of Dis3l2 and named it disl-2 (Figure 6\u2014figure supplement 1). The effects for disl-2 on seam cell development have not been determined.\n\nAs previously published (Ding et al., 2005; Zhang et al., 2007), we also found that the ain-1(lf) mutant alone has a mild increase in the number of seam cells by late larval development (Figure 6A,B and Figure 6\u2014figure supplement 2) consistent with the well-established role of miRNAs in regulation of temporal cell fate patterning; whereas the ced-3(lf) mutant alone rarely shows altered seam cell numbers (Figure 6A,B and Figure 6\u2014figure supplement 2). Strikingly, the ced-3(lf);ain-1(lf) double mutants have both a markedly increased number of seam cells and an increased range of seam cell number by late larval development (Figure 6A,B) with a mean value (\u00b1SD) of 25.9 (\u00b15.5) per side. Notably, the ced-3(lf);ain-1(lf) double mutants hatch with the correct number of seam cells but they continue to increase inappropriately throughout later larval development (Figure 6\u2014figure supplement 2A,B). The production of supernumerary seam cells indicates a previously unknown role for ced-3 in cooperating with miRISC-regulated seam cell differentiation and temporal cell fate patterning (Figure 6A,B and Figure 6\u2014figure supplement 2C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig6-v3.jpg)\n\n**Figure 6.:** (A and B) Pseudocolored GFP from DIC images of a seam cell reporter and dot plot quantitation. The tick line depicts 16 seam cells that are normally found in wild-type animals. Black bars indicate the median values for each strain (p < 0.0001, *compared to wt, **compared to single mutants, Mann\u2013Whitney test). (C) Effect of RNAi treatment beginning at L2 on the seam-cell-number phenotype of the ced-3(lf);ain-1(lf) double mutant (p < 0.0001, *compared to mock RNAi, Mann\u2013Whitney test). C. elegans disl-2 is homologous to mammalian Dis3l2 (Figure 6\u2014figure supplement 1). (D) Effect of the same RNAi on the ced-3(lf);ain-1(lf) double mutant defects. Mean values \u00b1 SD for percent normal [p < 0.0001, *compared to mock RNAi, Fisher's Exact test comparing the distributions of normal and abnormal animals (see \u2018Materials and methods\u2019 for statistical rationale)].\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Domain prediction and sequence alignment of the mammalian DIS3L2 protein with the C. elegans DISL-2 protein. Domain prediction was done by Interpro (Hunter et al., 2012) and Pfam (Punta et al., 2012), and the alignment was done using Clustal W (Larkin et al., 2007).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Diagram depicting the symmetric and asymmetric cell divisions of V1\u2013V4 and V6 lineages (based on content detailed in a recent review [Rougvie and Moss, 2013]). One cell is shown beginning at L1 (red). In wt, the L2 stage has a symmetric division followed by asymmetric divisions thereafter. The lin-28(lf) mutation generates a precocious phenotype without the L2-specific symmetric division; whereas, the lin-28(gf) mutation generates a retarded phenotype with further L2-like reiterations. Thus, a normal animal hatches with 10 seam cells that result in 16 terminally differentiated seam cells by adulthood. (B) The ced-3(lf);ain-1(lf) double mutant animals hatch with the correct number of seam cells which continue to develop during late larval stages. 10 seam cells are observed for all strains with no significant differences observed. Black bars indicate the median values for each strain (p > 0.05, Mann\u2013Whitney test, all single and double mutants compared to wild-type). (C) Quantitation of third and fourth larval stages of the ced-3(lf);ain-1(lf) double mutant animals suggests supernumerary seam cells continue to arise during late larval stages. Black bars indicate the median values for each strain (p = 0.008, *compared to L3 stage ced-3(lf);ain-1(lf), Mann\u2013Whitney test). The data shown for the L4 animals in panel (B) here are unique from the main Figure 6B and are not repeated.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** lin-66 was previously shown to limit the expression of LIN-28 by an incompletely understood mechanism (Morita and Han, 2006). We therefore tested if loss of ced-3 could enhance the vulva defect in lin-66(RNAi). (A) Images and (B) bar graph showing that lin-66(RNAi) increases the frequency of ruptured vulva of both ced-3(lf) and ain-1(lf) mutants. L2 stage animals were fed either mock or lin-66(RNAi) and the subsequent generation was scored for ruptured vulva (Rup) at adulthood (multiple ruptured animals are indicated by arrows). RNAi was used due to the fourth larval stage lethality of the lin-66(lf) alleles. ain-1 in miRISC is already known to negatively regulate LIN-28 expression and its enhancer phenotype here with lin-66(RNAi) serves as a positive control. The percent mean values are shown (number of worms indicated above each bar, **p < 0.001, Chi-square analysis).\n\nWe found that the increased number of seam cells in the ced-3(lf);ain-1(lf) double mutants was partially suppressed by down-regulating lin-14, lin-28, or disl-2(Dis3l2) through RNAi treatment beginning at L2 (Figure 6C), suggesting that an abnormally high level of any of the three proteins could be a significant contributor to the phenotype. A lin-14(lf) or lin-28(lf) mutation would not be effective for such a suppression test because of the strong defects associated with them at the early larval stage (Rougvie and Moss, 2013). LIN-66 was previously shown to act in parallel to miRNAs to repress LIN-28 expression (Morita and Han, 2006). Consistent with a ced-3 function in lin-28-mediated temporal cell fate patterning regulation, we also observed that ced-3(lf) enhanced the heterochronic defect of lin-66 reduction (Figure 6\u2014figure supplement 3). We further found that down-regulation of lin-14, lin-28, or disl-2(Dis3l2) by RNAi beginning at L2 could significantly suppress the defects in the ced-3(lf);ain-1(lf) double mutants (Figure 6D). These findings suggest that ced-3 cooperates with miRNAs to regulate the lin-14-lin-28-disl-2(Dis3l2) axis during development.\n\n### Cleavage of LIN-14, LIN-28, and DISL-2 in vitro by CED-3\n\nThe above genetic data suggest that ced-3 normally represses lin-28, disl-2, and/or lin-14 in development. As a caspase, we thought that CED-3 may directly repress the expression of these genes through proteolytic cleavage, which is consistent with our observation that LIN-14, LIN-28, and DISL-2 contain multiple consensus CED-3 cleavage sites that consist of a tetra-peptide sequence usually ending in an aspartic acid residue (Xue et al., 1996). To test this hypothesis, we performed an in vitro CED-3 cleavage assay as previously described (Xue et al., 1996). We found that the DIS3L2 ribonuclease homolog, DISL-2, was robustly cleaved by the CED-3 caspase while LIN-14 and LIN-28 were partially cleaved (Figure 7A). The multiple cleavage products generated by CED-3 cleavage of DISL-2 (Figure 7A,B) suggest a clear role for CED-3-mediated inactivation of this target protein. We further tested the specificity of the partial LIN-28 cleavage by CED-3 and found that it was completely blocked by addition of the caspase-specific-inhibitor zDEVD-fmk (Figure 7C). We then determined the proteolytic cleavage site for LIN-28 by mutagenesis and identified the CED-3-specific recognition sequence (Figure 7D and Figure 7\u2014figure supplement 1). Numerous possible cleavage sites were found for LIN-14 and DISL-2 but were not pursued further (Figure 7\u2014figure supplement 2). The identified sequence DVVD fits the canonical CED-3 recognition motif (DxxD) (Xue et al., 1996) and mutating the second aspartic acid residue to an alanine (D31A in Figure 7D) entirely eliminated CED-3 cleavage. CED-3 proteolysis of LIN-28A generates an N-terminal asparagine in the remaining protein (Figure 7E). Asparagine is known to function generally as a destabilizing residue at the N-terminus of eukaryotic proteins resulting in proteasomal degradation in a phenomenon termed the N-end rule (Sriram et al., 2011).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig7-v3.jpg)\n\n**Figure 7.:** (A) Established in vitro CED-3 cleavage assay (Xue et al., 1996) of 35S-labeled proteins. CED-9 served as a positive control throughout. Red asterisks indicate cleavage products (same in B\u2013D). (B) Result from a longer-run gel showing near quantitative cleavage of full-length DISL-2 (arrow indicates the full-length protein). (C) In vitro cleavage assay with the zDEVD-fmk caspase-specific irreversible inhibitor (Rickers et al., 1998). The arrow and arrowhead (and red asterisks) indicate the full-length protein and a predominant CED-3 cleavage product, respectively. (D) Effect of the D31A mutation on CED-3 cleavage (for other mutants see Figure 7\u2014figure supplement 1). (E) Diagram showing the position and consequence of LIN-28A cleavage by CED-3 in vitro (22 kDa with an N-terminal asparagine). Each panel was performed as an independent experiment.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Several possible cleavage sites exist in the C. elegans LIN-28A protein corresponding to the tetra-peptide D(E,N,G)xxD(E) cleavage sequence with the alternate residues indicated in parentheses and the proximal residue for cleavage underlined (aspartic acid in this position strongly favored) (Xue et al., 1996). (A\u2013B) Mutants were made for the second acidic residue in the tetra-peptide sequence for all such sites in the LIN-28A N-terminal region but only the DVVD to DVVA mutation (noted as D31A in panel B and Figure 7D) abolished CED-3 cleavage. Cleavage products are indicated by red asterisk. These experiments were run independently of those shown in Figure 7 and thus constitute replicates for the mutant D31A cleavage assay.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Numerous possible CED-3 cleavage sites are found in LIN-14B and DISL-2 based on the consensus motif detailed in Figure 7\u2014figure supplement 1 (Xue et al., 1996). (A\u2013B) Potential CED-3 substrate tetrapeptides are shown in red font, some of which overlap. Closed triangles and open triangles indicate potential cleavage sites of high and moderate probability, respectively. The numbers in parentheses above the sequences indicate the proximal acidic residue. The LIN-14B isoform is shown in (A) since this is the isoform we cloned. However, all of the predicted cleavage sites shown here are also present in the LIN-14A isoform, which differs in the amino terminus prior to the first predicted site.\n\n### CED-3 impact on LIN-28 turnover in vivo\n\nTo examine CED-3-mediated turnover of the LIN-28 protein in vivo, we generated a polyclonal antibody against a C-terminal peptide in LIN-28 that recognizes both LIN-28 isoforms reported previously (Seggerson et al., 2002) (Figure 8\u2014figure supplement 1A,B). We found that the dynamic decrease in LIN-28 abundance during L2\u2013L4 stages was similarly delayed by two different ced-3(lf) mutations (Figure 8A and quantitation shown in Figure 8\u2014figure supplement 1C). At late L4 (48 hr in Figure 8A), LIN-28 was almost completely absent in both wild type and ced-3(lf) mutants, indicating the role of general, non-CED-3-mediated, proteolysis during late larval stages. Interestingly, the 22-kDa cleavage product observed in the in vitro assay (Figure 7D,E) was not observable in vivo (Figure 8A), consistent with the idea that the cleavage product with an asparagine at its N-terminus was possibly degraded by an additional proteolytic process. It is possible that the delayed down-regulation of LIN-28 seen in Figure 8A is the consequence of the slower post-embryonic growth rate observed for ced-3(lf) mutants (Figure 4). To address this question, we first used a LIN-28::GFP transgenic strain previously shown to have functional LIN-28 activity (Moss et al., 1997) to monitor stage-matched L3 larvae with or without a ced-3(lf) mutation by DIC microscopy. We observed that the ced-3(lf) mutation delayed the proper down-regulation of the LIN-28::GFP reporter at L3 in the hypodermis (Figure 8B\u2013D and Figure 8\u2014figure supplement 2A\u2013C). We also found that down-regulation of LIN-28::GFP expression was delayed in neuronal cells in the head (Figure 8\u2014figure supplement 2D,E). These findings support the hypothesis for the delayed down-regulation of LIN-28 by ced-3(lf). The difference in magnitude between the Western blot results and the number of fluorescent cells seen by DIC microscopy may suggest that the observed fluorescence levels do not linearly reflect the protein levels and that the two methods may have different dynamic ranges.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig8-v3.jpg)\n\n**Figure 8.:** (A) Western blot with the LIN-28 antibody we developed (validation shown in Figure 8\u2014figure supplement 1) to see the effects of ced-3(lf) mutations on LIN-28 protein expression during developmental transitions. Notice that the cleavage product of the larger isoform of LIN-28 observed in the in vitro assay (Figure 7) is not detectable in the in vivo analysis, suggesting that the cleavage product, which has an Asn instead of Met as the N-terminal end residue, may potentially be sensitive to the N-end rule proteasomal degradation pathway. The pattern and timing of LIN-28 expression and downregulation we show here for wt are similar to previous findings (Seggerson et al., 2002; Morita and Han, 2006) and two independent ced-3(lf) mutant strains are shown here (quantitation is shown in Figure 8\u2014figure supplement 1C). (B\u2013C) Pseudocolored GFP from DIC images of L3 larvae near the mid-body. Also see DIC images of these same animals without GFP illumination (similar length gonads shown in Figure 8\u2014figure supplement 2A,B) and test of similar staging (Figure 8\u2014figure supplement 2C). Size bars are indicated. \u2018wt\u2019 indicates the lin-28(+)::gfp integrated transgene alone previously shown to be functional (Moss et al., 1997) and \u2018ced-3(lf)\u2019 indicates this same transgene combined with a ced-3(lf) mutation. (D) Quantitation of the LIN-28::GFP expression between the strains within the L3 stage. (p = 0.0038, significant compared to wt, Mann\u2013Whitney test comparing the integrated intensity of LIN-28::GFP hypodermal expression in L3 larvae). Persistent expression of LIN-28::GFP in head cells (Figure 8\u2014figure supplement 2D,E).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig8-figsupp1-v3.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Western blot to demonstrate the specificity of our peptide-purified rabbit-anti-C. elegans LIN-28 antibody. The peptide we chose to immunize the rabbits with is found near the C-terminus (reported in \u2018Materials and methods\u2019) and therefore should recognize both the a and b isoforms equally well. Equivalent amounts of extracts from mixed staged wt, lin-28(n719,lf), and a strain with an integrated transgene of lin-28::GFP were resolved by SDS-PAGE then probed with our purified LIN-28 antibody. The Is[lin-28::gfp] strain shows both the endogenous forms of LIN-28 and the shifted fusion protein. (B) The large isoform of LIN-28 (corresponding to the a isoform) was synthesized in vitro then added at increasing amounts into the lin-28(n719,lf) strain to simulate a complex mixture for all other background proteins. Three exposures of the same gel are shown. Two predominant background bands from the in vitro lysate are indicated by dashed blue lines. LIN-28-specific bands (identified in panel A) are indicated. The lin-28(n719) + mock lane has as much in vitro lysate as the most +LIN-28a lane but with a mock vector to show lysate background. This background is not present in the worm extracts (compare the lin-28(n719) lane vs lin-28(n719) + mock). (C) Quantitation of Western blot data from Figure 8A. Arbitrarily, 100% was defined as the intensity of total LIN-28 at 0 hr normalized to actin for the wt strain. Both ced-3(lf) strains were set relative to the wt 0 hr. The subsequent time points for all strains were compared to this 0 hr value.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig8-figsupp2-v3.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A\u2013C) Analysis of gonad length in LIN-28(+) transgenic lines with ced-3(wt) or ced-3(lf). We first picked L3 stage animals in the blind on a non-fluorescent microscope. Prior to GFP illumination, we assessed the sub-stages of animals by measuring the gonad length of the animals. This was done since the animals had roller phenotype making P cell division difficult to observe and strong defects in LIN-28, directly, are known to have only minor effects on gonad development (Ambros, 1997). Thus, these strains should not be expected to have significant defects in gonad extension and gonad length should serve as a quantifiable metric of larval stage similar to previous reports (Ambros and Horvitz, 1984; Moss et al., 1997; Abbott et al., 2005). The images shown here (A\u2013B) are from the same animals shown in the main Figure 8B\u2013C. The white bars indicate 20 \u03bcM. The white brackets indicate the gonads of equal length. (C) No significant difference in gonad length for the L3 samples was observed between the two strains suggesting similar sub-stage. Mean \u00b1 SD is shown (p > 0.05, Mann\u2013Whitney test). (D\u2013E) Pseudocolored GFP from DIC head images of L3 larvae and quantitation of the number of cells expressing LIN-28::GFP (p < 0.0001, *compared to wt;(+), Chi-square test comparing the distributions of L3 larvae based on the number of LIN-28::GFP positive cells). \u2018+\u2019 indicates the lin-28(+)::gfp integrated transgene previously shown to be functional (Moss et al., 1997). This set of experiments was done completely independently of the ones shown in main Figure 8B\u2013D. A similar method for selection of L3 animals in the blind on a non-fluorescent microscope was used. All animals were visualized for GFP positive cells through multiple focal planes of the head. All images were taken with identical exposure times, and all cells were counted by an individual who did not take the images.\n\nWe then further addressed the question by testing the physiological impact of the lin-28(D31A) mutation. Specifically, we made the point mutation in the previously published lin-28(+)::gfp fusion protein (Moss et al., 1997). To ensure that the LIN-28(D31A) mutation did not disrupt the global function of the protein, we tested its ability to overcome the highly penetrant protruding vulva (Pvl) phenotype in lin-28(n719,lf) animals and found that it was able to rescue the Pvl phenotype (Figure 9\u2014figure supplement 1). Following integration and outcrossing, we found the copy number of the lin-28(D31A)::gfp transgene to be slightly lower than that of the non-mutated lin-28(+)::gfp transgene (Figure 9\u2014figure supplement 2). We then examined the developmental profile and found that the lin-28(D31A)::gfp transgene alone caused a delay in larval development similar to that caused by the combination of the lin-28(+)::gfp transgene with ced-3(lf) (Figure 9A). Western blot analysis showed that the lin-28(D31A)::gfp integration had less basal expression than the non-mutated lin-28(+)::gfp integration, consistent with the lower copy number estimate. We observed a quantifiable difference in the down-regulation of the lin-28(D31A)::gfp transgene compared to the lin-28(+)::gfp transgene (Figure 9B,C). This finding provides evidence that a failure in CED-3 cleavage of LIN-28 leads to slower degradation of LIN-28 and is one of the causes of slower development, since the D31A point mutation alone resulted in both a slower growth rate (Figure 9A) and delayed LIN-28 down-regulation (Figure 9B,C). Additionally, in this Western blot (Figure 9B\u2013C), down-regulation of the wild-type LIN-28 transgene in ced-3(lf) worms seems to be delayed more than LIN-28(D31A) in wild-type worms. Such a difference could be due to roles of CED-3 on other targets such as LIN-14 and DISL-2, which is also expected to contribute to the larval developmental defect in ced-3(lf) (Figure 9A).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig9-v3.jpg)\n\n**Figure 9.:** (A) Effects of disrupting CED-3 activity on LIN-28 in vivo on the rate of post-embryonic growth. Percent of animals reaching adulthood at 96 hr after hatching is shown. \u2018+\u2019 indicates the lin-28(+)::gfp integrated transgene described in Figure 8B\u2013C. D31A indicates a transgene integration with the CED-3-cleavage-resistant D31A point mutation in the first exon of LIN-28 but is otherwise identical to the original (+) transgene. Test of lin-28(lf) rescue (Figure 9\u2014figure supplement 1) and copy number of the transgenes (Figure 9\u2014figure supplement 2). Mean values \u00b1 SD (p < 0.0001, *compared to wt;(+), Fisher's Exact test comparing the distributions of adult to larval-stage animals at this time). (B\u2013C) Western blot for the LIN-28::GFP transgenes described in (A) and quantitation from three independent Western blot experiments of the LIN-28::GFP transgenes [one Western blot shown in (B)]. Here, 1.0 was defined as the intensity of total LIN-28(D31A)::GFP at 0 hr normalized to actin. Both the lin-28(+) and the ced-3(lf);lin-28(+) strains and the 30 hr time point for all strains were compared to this value. Mean \u00b1 SEM for the two time points (dashed lines are used only to indicate the net change in relative expression for the three strains). (D) Disrupting CED-3 activity on LIN-28 enhances adult alae defects of the strains described in (A) (p < 0.01, *compared to wt;(+), Chi-square test comparing the distributions of adult alae phenotypes). Figure 9\u2014figure supplement 3 shows examples of the adult alae phenotypes for these three strains. Data for increased expression of LIN-14 in ced-3(lf) mutants at the first larval stage is shown in Figure 9\u2014figure supplement 4.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig9-figsupp1-v3.jpg)\n\n**Figure 9\u2014figure supplement 1.:** The full name of the extrachromosomal array that we tested: Ex[lin-28(D31A)::gfp::lin-28 3\u2032UTR; myo-3::mCherry; pBSIIKS(\u2212)] where myo-3::mCherry served as the transgenic marker. (A) Myo-3::mCherry positive animals are rescued from the Pvl phenotype similar to the original lin-28(+)::gfp described previously (Moss et al., 1997). The top panel shows two adults not carrying the array which displayed the protruding vulva (Pvl) and ruptured vulva (Rup) (arrows) phenotype, respectively. Three adults carrying the array are indicated in this same panel by an asterisk near their well-developed vulva (also myo-3::mCherry positive). The bottom two panels show magnified images of two different animals, one without array, and therefore Pvl, and one with the array, and therefore not Pvl. (B) The array-positive animals have a significant rescue compared to animals without the array (89% rescued on average, p < 0.0001, *when compared to animals without the array, Fisher's Exact test) showing that the D31A mutation does not alter the gross function of the protein. Rather, we conclude that the D31A mutation only abolishes the direct cleavage of LIN-28 as supported by our in vitro experiments (Figure 7 and Figure 7\u2014figure supplement 1). The offspring from parents bearing the rescue array may have some maternal effect with \u223c10% of adults not carrying the array without Pvl but with severe egg-laying defect (also suggests a non-functional vulva) and the remaining 5% with apparently normal vulva.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig9-figsupp2-v3.jpg)\n\n**Figure 9\u2014figure supplement 2.:** + indicates the [lin-28(+)::gfp::lin-28 3\u2032UTR; rol-6] integrated transgene which was previously published as functional (Moss et al., 1997). D31A indicates the transgene integration we generated which contains the D31A point mutation in the first exon of LIN-28. Following integration, total DNA was used as input for qPCR to quantify the copy number. Mean \u00b1 SD is from two sets of lin-28 primers normalized to two sets of unrelated endogenous genes (ain-1 and hrp-1). These findings suggest low copy number integration for the two transgenes.\n\n![Figure 9\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig9-figsupp3-v3.jpg)\n\n**Figure 9\u2014figure supplement 3.:** (A\u2013D) Adult alae were scored using DIC optics (quantitation of findings is shown in Figure 9D). These images serve only as visual reference for the phenotypes scored. The strains are described in Figure 9\u2014figure supplements 1\u20132.\n\n![Figure 9\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig9-figsupp4-v3.jpg)\n\n**Figure 9\u2014figure supplement 4.:** An integrated transgenic strain Is[lin-14::gfp] previously published (Olsson-Carter and Slack, 2010) was crossed with a ced-3(lf) mutation. Sibling offspring were isolated to obtain the Is[lin-14::gfp] (with wild-type ced-3 gene) and the ced-3(lf);Is[lin-14::gfp]. Results from three independent Western blots of three independent synchronous first stage larvae are shown here. Samples were synchronized, collected, processed, probed by Western blot with an anti-GFP antibody (Clontech, Antibody JL8) independently at different times. Though the difference between wild-type and ced-3(lf) is subtle, it is repeatable. The subtle effects seen for LIN-14 are also of note since it is, in part, an upstream positive regulator of lin-28. Thus, subtle effects may be physiologically significant.\n\nExamination of adult-specific alae is a sensitive physiological readout that should overcome any limitations of monitoring delays in the down-regulation of LIN-28 expression levels since scoring adult alae ensures stage-matching and accounts for any perdurance. To further test the functional outcome of both the LIN-28(D31A) transgene and the LIN-28(+) transgene combined with ced-3(lf), we examined the adult-specific alae and found significant defects including low quality and gapped alae (Figure 9D and Figure 9\u2014figure supplement 3). This is consistent with the data described above that ced-3(lf) enhances adult-specific alae defect of let-7-family miRNA mutants and ain-1(lf) (Figure 5C\u2013D). We should note that the original report of the LIN-28(+) transgene indicated that some of the adults were observed to have gapped alae (Moss et al., 1997). Though we did observe rough and very thin sections of alae for this strain (scored as low quality alae), we did not observe any gapped adult alae. This subtle difference is likely explained by a different threshold since we scored alae using a sensitive camera (See \u2018Materials and methods\u2019). Nonetheless, the relative enhancement of ced-3(lf) with this transgene is quite obvious and similar to that of the caspase-cleavage resistant LIN-28(D31A) point mutant transgene (Figure 9D). Altogether, our data support a causal role for CED-3 cleavage of LIN-28 in the regulation of temporal cell fate patterning. CED-3 appears to facilitate the stereotypical transition of LIN-28 to enhance the robustness of the L2 to L3 developmental transition.\n\nConsistent with LIN-14 being modestly cleaved by CED-3 in vitro (Figure 7A), we found that the LIN-14::GFP level was modestly increased in ced-3(lf) mutants in vivo at the L1 stage (Figure 9\u2014figure supplement 4). This result may not be explained by slower growth rate since these animals were obtained as synchronous L1s without food. Our attempts to monitor DISL-2 protein levels including developing an antibody to endogenous DISL-2 were impeded by technical difficulties. Moreover, N- and C-terminal GFP fusions to DISL-2 had exceedingly low levels of expression beyond detection by common methods suggesting that DISL-2 protein levels are kept exquisitely low for physiological significance.\n\nTherefore, our in vitro and in vivo data show that developmental timing regulators are proteolytic targets of the CED-3 caspase, likely resulting in their inactivation. This role of CED-3 cleavage is in contrast to known apoptotic functions of CED-3 caspase activity in two major aspects: CED-3 inactivates its targets rather than activates them as in its apoptotic function (Conradt and Xue, 2005); and it acts with other regulatory systems, including miRNAs and possibly the N-end rule proteasomal system, to maintain robust developmental functions.\n\n## Discussion\n\n### Role of non-apoptotic CED-3 activity in enhancing the robustness of dynamic changes in gene expression for development\n\nWe report the discovery of a new gene expression regulatory mechanism whereby a non-apoptotic activity of the CED-3 caspase functions to inactivate and repress the expression of key developmental regulators, significantly contributing to the robustness of gene expression dynamics and animal development (Figure 10A). Consistent with this, a previous report showed that CED-3 is capable of cleaving more than 22 C. elegans proteins in an in vitro proteomics survey (Taylor et al., 2007) and two recent genetics-based findings showed that ced-3 may play important roles in neural regeneration (Pinan-Lucarre et al., 2012) and aging (Yee et al., 2014). Second, the described CED-3 function in repressing gene expression is likely in contrast to the role of CED-3 in promoting apoptosis through activation of protein targets by cleavage at specific sites (Nakagawa et al., 2010; Chen et al., 2013). Here, the CED-3 cleavage alone may already destroy the target protein activity. Additionally, the cleavage products may be further degraded by other degradation systems notably via N-terminal destabilizing residues which may make the target more susceptible to additional degradation mechanisms, such as proteasomal degradation (Sriram et al., 2011) (Figure 10B). We hypothesize that this function operates continually during development to facilitate rapid turnover of these regulatory proteins at the post-translational level and in cooperation with other regulatory mechanisms (Figure 10\u2014figure supplement 1). We should note that it is curious that only the LIN-28A isoform was found to be cleaved by CED-3 in vitro yet expression of both LIN-28A and LIN-28B isoforms was altered by ced-3(lf) in vivo. This may imply that ced-3 has potential indirect effects on other factors within the heterochronic pathway that could alter LIN-28 isoform expression but further experiments are required to satisfactorily explain this.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig10-v3.jpg)\n\n**Figure 10.:** (A) Model of CED-3 collaborating with miRNAs to repress the expression of LIN-14, LIN-28, and DISL-2. Red blocks indicate the new findings. For simplicity, many other factors in the pathway were not included here including additional regulators associated with this pathway that were also identified in our genomic enhancer screen (see Figure 10\u2014figure supplement 1). (B) Hypothetical model for the biochemical role of CED-3 cleavage in protein turnover during development whereby a new N-terminus is generated which could potentially destabilize the protein according to the N-end rule (see text).\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04265/elife-04265-fig10-figsupp1-v3.jpg)\n\n**Figure 10\u2014figure supplement 1.:** Modified from the discussion provided by a recent review (Rougvie and Moss, 2013), this model is still simplified given the complex and dynamic processes (Ambros, 1989; Slack and Ruvkun, 1997; Ambros, 2000; Pasquinelli and Ruvkun, 2002; Resnick et al., 2010; Rougvie and Moss, 2013). Black arrows and blocks indicate aspects of the pathway that were previously known. Red blocks and font indicate the major findings of this study. Blue font indicates factors known to function in this pathway that were also identified in our enhancer screen (Supplementary file 2) as genetic interactors of GW182 (ain-1 and/or ain-2). The blue asterisk associated with let-7 is to indicate that we also identified the let-7 family miRNAs in our miRNA-ced-3 enhancer screen (Figure 5A,B) and that ced-3(lf) was able to enhance their specific temporal cell fate patterning phenotypes as seen with adult-specific alae defects (Figure 5D). The blue asterisks and dashed red lines for miR-1 and miR-246 indicate additional miRNAs we identified in our miRNA-ced-3 enhancer screen (Figure 5A,B). Both miR-1 and miR-246 are predicted to target lin-14 mRNA (See \u2018Materials and methods\u2019) but have not been experimentally demonstrated to do so here. They failed to show enhanced specific developmental timing defects and were not pursued further. Dashed arrows and blocks are intended to indicate a combination of complex direct and indirect effects ultimately affecting developmental fate and timing. ** Previous works have indicated DAF-12 functions on several components of the pathway (Rougvie and Moss, 2013; Hochbaum et al., 2011), providing the basis for us to have observed the enhanced developmental defects associated with ain-1(lf) and daf-12(RNAi) (Supplementary file 2). The exact mechanism of LIN-66 function is still unclear (dashed block) though it is able to negatively regulate LIN-28 function (Morita and Han, 2006). MSI-1 (Musashi-1) was identified as an RNA-binding protein that may be important for LIN-28-mediated regulation of pre-miRNA processing as well as translational regulation (Sakakibara et al., 1996; Kawahara et al., 2011). Interestingly, we also identified the C. elegans musashi-1 ortholog, msi-1, as an enhancer in our screen (Supplementary file 2). Following binding by LIN-28, pre-let-7 is poly-uridylated by a TUTase (poly-U-polymerase) to mark it for destruction. PUP-2 is indicated here as a C. elegans ortholog for TUTase and it was also identified in our screen (Supplementary file 2). Recently, the RNAse, Dis3l2 (Dis-3-like RNAse gene 2), was identified as the 3\u2032-5\u2032 exonuclease that degrades poly-uridylated-pre-let-7 miRNA and is the RNAse mutated in Perlman syndrome (Kawahara et al., 2011; Chang et al., 2013; Ustianenko et al., 2013). We suggest that the C. elegans gene F48E8.6 is the C. elegans ortholog of Dis3l2 and have therefore named it DISL-2 (Dis-3-like RNAse gene 2) (See Figure 6\u2014figure supplement 1). The intricate network of regulatory factors shown here emphasizes the importance of this pathway and how CED-3 caspase cooperates with the miRISC and numerous other factors to control temporal cell fate patterning.\n\nWe find that the altered LIN-28 expression levels in a ced-3(lf) background or with the caspase-cleavage resistant mutant [LIN-28(D31A)] in a ced-3(wt) background, are subtle compared to previous findings regarding a lin-28(gf) transgene with deleted lin-4 and let-7 miRNA-binding sites in the 3\u2032 UTR (Moss et al., 1997). Consistent with this subtlety, ced-3(lf) alone displays essentially no defect in seam cell numbers (Figure 6). The physiological effect of this subtle regulation is clearly seen in seam cell temporal patterning when miRNA function is compromised in the ain-1(lf) mutant background. This prominent enhancement indicates that ced-3 has an important role in supporting the robustness of the larval transitions. Based on the pleiotropic phenotypes associated with ced-3(lf);ain-1(lf), such roles may potentially extend to a broad range of cellular processes.\n\n### Cooperative gene regulation revealed by our genome-scale screen\n\nPrevious studies using model organisms, including our own, have indicated that genetic redundancy by structurally unrelated genes is commonly associated with genes with regulatory functions (Ferguson et al., 1987; Fay et al., 2002; Suzuki and Han, 2006; Costanzo et al., 2011). Asking the same question for the global miRISC function, our screen, by identifying 118 previously unknown miRISC interactors, thus identified new roles for miRISC in normal developmental processes that are otherwise masked by redundancy and/or pleiotropism, as well as identifying other regulatory mechanisms that collaborate with miRNAs. Examples we found for the latter in this study include genes encoding the POU-homeodomain protein (ceh-18, Figure 2\u2014figure supplement 1), the histone acetyltransferase (pcaf-1), the ras-related GTPase homolog (ral-1), the homeodomain transcription factor (unc-39), and the cell-killing ced-3 caspase (the majority of this study) (and others listed in Supplementary file 2). However, the interactions identified in this study most likely reflect only a small portion of miRNA functions because screening for obvious developmental defects under well-fed conditions only permitted us to identify limited physiological functions. Applying various assays, including behavioural assays or animals under various growth or stress conditions, is expected to identify many more miRNA functions. Furthermore, although feeding RNAi has important advantages for such a screen, it is not effective for many genes especially for genes functioning in certain tissues such as neurons. Therefore, genetic screens or analyses under sensitized backgrounds will continue to play a major role in identifying miRNA functions.\n\n## Materials and methods\n\n### C. elegans strains\n\nSee Supplementary file 4 for the list of all strains used in this study.\n\n### Rationale of phenotypes scored in this screen\n\nIn this screen, we wanted to identify genetic pathways that may redundantly cooperate with the miRISC in development. Since the loss of most miRISC function resulted in highly pleiotropic phenotypes (Zhang et al., 2009), we chose to score multiple obvious phenotypes (defined in Supplementary file 1).\n\n### Genome-wide, double blind RNAi screen\n\nThe ORFeome RNAi feeding library (Rual et al., 2004) was screened using a 96-well liquid culture format in the double blind. Here, double blind means that no identities for interactors were revealed to anyone setting up the plates, anyone phenotyping the plates, nor anyone processing the scored data until all candidate interactors were confirmed in a secondary screen performed in quadruplicate (see below). Similar to a previously reported method (Lehner et al., 2006), a 2 day set up for each screening session was employed (Figure 1\u2014figure supplement 1A).\n\nFor each scoring session, rrf-3(pk1426,lf), ain-1(ku322,lf);rrf-3(pk1426,lf), and ain-2(tm2432,lf);rrf-3(pk1426,lf) were each fed with mock, ain-1, and ain-2 RNAi cultures in parallel which served as the experimental controls. These controls were set up in 4 sets of triplicate (n = 12 total for each). We identified potential interactors whenever ain-1(ku322);rrf-3(pk1426) or ain-2(tm2432);rrf-3(pk1426) showed a significant defect (Figure 1\u2014figure supplement 1A). All candidates were then retested in quadruplicate liquid format. Any gene showing effect in three or more replicates was considered a bona fide interactor by RNAi and their identities were then revealed and confirmed by sequence analysis. Multiple interactors were confirmed by testing the corresponding mutant strains when treated with ain-1 or ain-2 RNAi (Supplementary file 3).\n\n### Statistical analyses\n\nBefore any statistical analyses were made, all relevant data sets were first tested for normality using the D'Agostino-Pearson omnibus test. This test also informed us for sufficient sample sizes. We analyzed our results in the following ways: (1) the Mann\u2013Whitney test was used for pair-wise comparisons, (2) Chi-square analysis was used to compare distributions of categorical data, and (3) Fisher's Exact test was used to analyze cases where two categories were most important between two strains (e.g., the frequency of normal animals to the pooled frequency of all abnormal animals in each of the tissue-specific rescues or in the RNAi suppression test). Use of Fisher's Exact test in such cases prevented outcomes where Chi-square analysis of the same data may identify a rescue as significant only because the abnormal phenotypic categories had changed in distribution relative to the unrescued mutant, but where the fraction of normal animals was not improved. p values and statistical tests were reported throughout the study. Statistics source data have been provided.\n\n### RNAi treatment by feeding on solid agar\n\nSimilar to the liquid culture format, positive and negative controls were run in parallel to ensure effectiveness of the culturing conditions. RNAi cultures and plates were prepared as previously described (Fraser et al., 2000; Timmons et al., 2001) with 100 \u03bcg/ml ampicillin. Depending on the experiment, strains were added to RNAi plates in one of the following ways: (1) bleached strains were synchronised in M9 for 36 hr at 20\u00b0C, counted, then added to plates or (2) either eggs, L2 stage animals, or L4 stage animals were carefully added to lawns.\n\n### Counting percent of eggs hatched after RNAi treatment\n\nGravid young adult ain-1(lf) hermaphrodites fed either mock or ced-3 RNAi since hatching were transferred to a new RNAi plate and allowed to lay eggs for 4\u20135 hr. The young adults were removed and the eggs laid were counted. After 40 hr at 20\u00b0C, unhatched eggs and larvae were scored. 64 hr after removing young adults, very few additional larvae were observed for ain-1(lf) animals treated with ced-3 RNAi. Data are from eight independent trials.\n\n### Assay for the rates of post-embryonic development\n\nSynchronous L1 stage animals were added to normal food (OP50 bacteria) (150\u2013200 worms per trial) and incubated at 20\u00b0C. Animals were scored for developmental stages every 24 hr thereafter. Data are from three to five independent trials.\n\n### Tissue-specific rescue of ain-1(lf)\n\nThe ain-1(lf) defects were rescued using a fragment of genomic DNA containing ain-1 sequence and native promoter (Ding et al., 2005), an ain-1 sequence driven by a dpy-5 (hypodermal-specific [Thacker et al., 2006]) or a ges-1 (gut-specific [Egan et al., 1995]) promoter, and genome-integrated constructs with tissue-specific promoters driving ain-2 expression which has previously been shown by our lab to rescue ain-1(lf) in those tissues (Zhang et al., 2011; Kudlow et al., 2012; Than et al., 2013). Data are from four to ten independent trials.\n\n### Enhancer screen for miRNA deletion mutants with ced-3 RNAi\n\nIn the blind, all available miRNA deletion mutants were tested for enhancer phenotypes with ced-3 using the RNAi feeding method on solid agar. The let-7(lf) and lin-4(lf) mutants were excluded since they are very sick. One person picked 10 eggs or 2 L4 stage animals onto mock or ced-3 RNAi in replicates according to a key that was kept confidential. 4 to 5 days later, another person then examined the plates for phenotypes (defined in Supplementary file 1). All mutants showing an RNAi phenotype were revealed for identity and then crossed with ced-3(lf) mutants in single or in combination and tested for enhancer phenotypes.\n\n### Apoptotic assay and rationale\n\nWe employed a published assay to identify subtle apoptotic enhancers using a reporter line: ced-3(n2427, reduction of function);nls106 [lin-11::GFP + lin-15(+)X] (Reddien et al., 2007). The ced-3(n717);nIs106 strain served as the positive control for complete loss of ced-3 function, and the mcd-1(n3376);ced-3(n2427,rf);nIs106 strain was the positive control for enhanced ablation of programmed cell death comparable to the strong ced-3(n717) loss of function allele for accumulation of P9-11.aap cells, consistent with the previous findings (Reddien et al., 2007). Young adults of all strains were scored in the blind for the number of GFP-positive undead P9-11.aap ventral cord cells. Three independent lines of ced-3(n2427,rf);ain-1(lf);nIs106 were scored in the blind (data for these three lines were combined in Figure 3B).\n\n### L1 stage cell-corpse assay\n\nThis standard method was done as previously described (Ledwich et al., 2000). The ced-1(e1735) mutation was used to enhance visualization of corpses. DIC optics were used to count the head corpses.\n\n### 3\u2032 UTR miRNA seed site prediction\n\nThese predictions were all made by TargetScan 6.2 release June 2012 (Jan et al., 2011; Lewis et al., 2005).\n\n### Scoring adult-specific alae\n\nAdult alae were scored using DIC optics (Zeiss Axioplan 2, Thornwood, NY) at 630\u00d7 magnification (Ding et al., 2005; Zhang et al., 2007, 2009). One side of each non-roller adult was scored (the side facing up). All roller phenotype animals (the three LIN-28::GFP transgenic lines) were scored in the same way such that all alae that could be viewed were assessed for gaps and quality. Each animal was scored as either normal, low quality alae (very thin and rough sections) or gapped alae (discontinuous alae). Animals with both low quality and gapped alae were counted as only gapped alae so that each animal was represented only once. Any thin region of alae that appeared as a gap through the oculars was imaged by the camera (Zeiss Axiocam MRm) and evaluated on a large screen. Only alae observed as truly discontinuous by aid of the camera were scored as gapped. This method was applied equally to all strains throughout the study.\n\n### Seam cell counting method\n\nAll seam cell lines were counted on a fluorescent microscope with DIC optics (Zeiss Axioplan 2) at 110\u00d7 and 630\u00d7 magnification (Zhang et al., 2009) at the L1, L3, or L4 stage. To prevent over-representation of our sample size, we reported only one side of each animal. We randomly chose to report the top or the left side of the animal, depending on the orientation in the microscopy field. We followed this convention for the single mutants as well. Therefore, one dot corresponds to one side of one animal and each animal is plotted only once (Figure 6A\u2013C and Figure 6\u2014figure supplement 2). Data are from five independent trials.\n\n### RNAi suppression test\n\nWe hypothesized that loss of both ain-1 and ced-3 resulted in the upregulation of LIN-14, LIN-28, and DISL-2. These factors are normally expressed at high levels beginning in late embryonic development and down-regulated toward the end of the second larval stage. We therefore decided to begin RNAi treatment of ced-3(lf);ain-1(lf) animals at the second larval stage and score for phenotypes 48\u201354 hr later. Animals were considered normal if they were only mildly-to-moderately egg-laying defective and capable of normal motility. Data are from three to six independent trials.\n\n### CED-3 in vitro cleavage assay\n\nThe LIN-14, LIN-28, and DISL-2 coding sequence templates for in vitro synthesis were each generated first by reverse transcription from mixed stage WT (N2) C. elegans total RNA and then PCR amplified before subcloning into pTNT vector (Promega, Madison WI). The primer sequences are as follows (Restrictions sites indicated in bold-type, start codons underlined in FWD primers): lin-14 FWD, attacgcgtACCATGGCTATGGATCTGCCTGGAACGTCTTCGAAC; REV, attggtaccCTATTGTGGACCTTGAAGAGGAGGAG; lin-28 FWD, attacgcgtACCATGGCTATGTCGACGGTAGTATCGGAGGGA; REV, attggtaccCTCAGTGTCTAGATGATTCTATTCATC; disl-2 FWD, attacgcgtACCATGGCTATGTCAGCAGTTGAAAGTCCCGTT; REV, attggtaccCTACTGAAGAATTGTTGAGCCCGTTTC. Point mutations were generated using Quick Change II kit (Agilent Technologies, Santa Clara, CA). All constructs were sequence-verified. As previously published (Xue et al., 1996), cleavage substrates were freshly synthesised with L-35S-Methionine in vitro and used immediately. For caspase inhibitor reactions, zDEVD-fmk caspase-specific inhibitor (ApexBio, Houston, TX) or DMSO was added. All cleavage reactions were incubated at 30\u00b0C in a thermocycler with heated lid for up to 6 hr. Each panel shown in Figure 7 was performed independently with freshly synthesized L-35S-labeled substrates and independent cleavage reactions for each experiment.\n\n### LIN-28 antibody and Western blot\n\nAntibody against a LIN-28 C-terminal peptide (RKHRPEQVAAEEAEA) was produced by Spring Valley Laboratories (Sykesville, MD) using rabbit as the host and purified using a peptide column. Validation of the specificity of the antibody is shown in Figure 8\u2014figure supplement 1A,B. Synchronous L1 stage animals were added to normal food (OP50 bacteria) and incubated at 20\u00b0C then collected at the indicated hours with food. For each time-point, equivalent protein input from wt, ced-3(n717), and ced-3(n1286) staged animal lysates were resolved by SDS-PAGE and then detected by Western blot using the anti-LIN-28 antibody. Actin was used as loading control (Anti-Actin antibody, A2066, Sigma\u2013Aldrich, St. Louis, MO).\n\n### Scoring LIN-28::GFP positive cells by DIC optics\n\nSimilarly sized L3 stage animals were picked on a non-fluorescent dissecting scope to blind the selection of animals. Prior to fluorescent illumination, gonad length was observed and measured to ensure animals were of comparable developmental stage (Ambros and Horvitz, 1984; Moss et al., 1997; Abbott et al., 2005). This method should provide a similar distribution of developmental sub-stages for both backgrounds within the L3 stage. No significant difference in gonad extension was found (Figure 8\u2014figure supplement 2A\u2013C). Gonad length was measured and recorded prior to GFP illumination to ensure no bias. All animals were illuminated for 5 s for each picture by DIC optics. Multiple planes through the animal were examined by one person to ensure all GFP positive cells were identified. Another person, who did not take the images, then used ImageJ to obtain integrated GFP intensity values which were reported relative to the gonad length to account for stage (Figure 8B\u2013D) or counted the number of GFP positive head cells (Figure 8\u2014figure supplement 2D,E). Data for all animals viewed by DIC were kept and reported. Data for the hypodermal and head cell expression assays come from two and three independent experiments, respectively.\n",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "b19eb470-9afc-4eb5-944a-94fe98ceccf8",
+      "submission_id": "97f2340c-0e3e-4a74-a0ac-a4e85d1a6fda",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leemor Joshua-Tor, Cold Spring Harbor Laboratory , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04265.041](https://doi.org/10.7554/eLife.04265.041)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cNon-apoptotic CED-3 regulates LIN-28-LET-7 pluripotency pathway and other factors for robust development in C. elegans\u201d for consideration at eLife. Your full submission has been evaluated by Detlef Weigel (Senior editor), a member of our Board of Reviewing Editors, and 2 peer reviewers, and the decision was reached after discussions between the reviewers.\n\nWe are in principle interested in the work, because it potentially reveals a new and exciting mechanism for CED-3 action. Unfortunately, the claims made in the article and abstract, which imply a direct effect of the CED-3 protease on the stability of Lin-28 present only one possible explanation of many for the observed data. Demonstrating such a direct effect would, however, be essential for eventual acceptance of the work. We would minimally expect direct in vivo observations of Lin28 protein stability in the appropriate ced3 genetic background in properly staged animals.\n\nThe main set of experiments that are not clear revolve around the interpretation of the LIN-28 time course in wild-type and ced-3 mutants. There is an important facet to the interpretation of these experiments that may be explained by the trivial notion that ced-3 mutants develop more slowly than wild-type animals. The reviewers feel that this caveat could be addressed as you will see in the more detailed comments below. It would also be important to provide a clear definition of what is being phenotypically assayed.\n\nReviewer #1:\n\nSummary: While the authors outline a nice genetic strategy to identify components that function with or in parallel to genes involved in general miRNA regulation and also clearly demonstrate that ced-3 functions in this capacity and outside its role in cell death, the experiments that demonstrate LIN-28 regulatory defects in ced-3 mutants are need expansion. The in vitro and genetic data are solid. Unfortunately, the phenotypes the statement that ced-3 contributes to the post-translational regulation of various miRNA targets is not complete. The authors have all of the reagents to prove this assertion follow-up experiments are outlined below.\n\nGenetic screen and strategy: The authors present the findings of a genome-wide RNAi screen designed to identify factors that work together or in parallel to essential components of the miRNA machinery that regulates developmental gene expression. The basis for this screen relies on the fact that ain-1, encoding the C. elegans miRISC component/GW Protein homolog, is non-essential (due to a redundancy with the C. elegans ain-2 gene), displays a variety of pleiotropic phenotypes that can serve as the starting point for an enhancer screen. To identify genetic interactors, the authors systematically depleted each protein-coding gene individually by RNAi and scored for a wide range of general phenotypes. This resulted in the identification of 126 genes, that when depleted, result in a reproducibly synergistic enhancement of ain-1 and ain-2 mutant phenotypes. This list is composed of genes that function in a wide array of cellular and development functions and is interesting in itself with regard to the many functions for miRNAs in normal development.\n\nReviewer #2:\n\nThe manuscript by Weaver et al. presents the data from a carefully controlled genome-wide RNAi screen to search for genes whose depletion enhances phenotypes of animals compromised for miRISC function. This data set is likely to be of broad interest to the scientific community. A significant and somewhat surprising finding from this screen is the discovery that the CED-3 caspase has non-apoptotic roles in multiple developmental processes. Other recent studies have implicated ced-3 in similar such functions, but did not pursue ced-3 involvement to the level of protein targets. One key aspect of this paper is the identification of candidate ced-3 target proteins with bearing on the synthetic phenotype. However, the experiments to demonstrate the in vivo relevance of these targets need to be strengthened.\n\nCed-3 mediated cleavage of LIN-28, LIN-14, and DISL-2 is an attractive hypothesis that is nicely supported by in vitro studies. What is most important is to substantiate this with in vivo studies, which the authors attempt using developmental westerns and transgene expression studies. As is, these experiments are weak. Figure 8 should ultimately have quantitation of LIN-28 signals vs actin, but the more problematic issue is that in Figure 4\u2013figure supplement 1, the authors demonstrate that ced-3 animals have a developmental delay. Is it fair to compare animals at the same timepoint for Figure 8? E.g. at 24 hours wt are L3s but ced-3 mutants are mostly L2s. Could the apparent persistence of LIN-28 in ced-3 mutants be an indirect result? I.e. LIN-28 levels appear higher because the population is developmentally younger rather than lack of LIN-28 cleavage by CED-3?\n\nTo clarify the issue of the cleavage product not being detectable on westerns, is it possible to inactivate the N-end rule pathway to show the cleavage product is present in wt but not ced-3 mutants?\n\nDemonstration of physiological relevance is also important. The authors attempt this by engineering a mutation in the CED-3 cleavage site in a lin-28::gfp transgene and compare it to a similar strain with wild-type lin-28::gfp made years ago. They compare these strains using qPCR to indicate that copy number is similar. This is not terribly satisfying, as integrated arrays can be silenced to different degrees. At minimum, how does expression compare between these strains? A perhaps better experiment would be to integrate the constructs in single copy at the same locus or engineer the mutation into the endogenous lin-28 locus.\n\nThe manuscript could also benefit from revision of the text. The presentation of data is sometimes hard to follow and suffers from some paragraphs that read as strings of facts without input of the authors' interpretations. There is also a tendency to throw in gene names without introduction or explanation of relevance. Both of these weaknesses make the paper less accessible to non-specialists. One example of an issue that warrants clarification is the description of phenotypes.\n\nThere are various places where phenotypes are referred to as \u201cadult onset\u201d or \u201cmore severe as animals progressed into adulthood\u201d, but there isn't data that demonstrate these aspects of the phenotypes. A related issue is the use of \u201csuperficially wt adults\u201d. For example, the rescue experiments (Figure 2D) are difficult to interpret when the measurement is \u201csuperficially wt adults\u201d. Does hypodermal or gut expression of ain-1 rescue multiple phenes, restoring pleiotropic defects to superficially wild-type? Or does hyp expression only rescue hypodermal phenotypes? More explanation of the phenotype, perhaps in the methods, would help. Do the various aspects of the pleiotropic phenotype track together? Or do some animals have subsets? The multi-colored bar graphs in Figure 2 help some, but it is not completely clear how separable are the phenes.\n\n[Editors\u2019 note: further revisions were requested, as shown below.]\n\nThank you for resubmitting your work entitled \u201cNon-apoptotic CED-3 activity regulates LIN-28 pluripotency pathway and others for robust development in C. elegans\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Detlef Weigel (Senior editor), a Reviewing editor, and the original two reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nIn your revised manuscript entitled \u201cNon-apoptotic CED-3 activity regulates LIN-28 pluripotency pathway and others for robust development in C. elegans,\u201d you addressed most of the main concerns that the reviewers were concerned about. The assertions made in the current version of the manuscript are much more strongly supported than the previous version. The manuscript is more appropriately specific about phenotypes, having dispensed with \u201cadult onset\u201d and \u201csuperficially wild-type\u201d in favor of more specific phenotypes. Additional data have been added to support your claim of LIN-28 as a proteolysis target of CED-3 and the conclusions have been toned down.\n\nWhile the new experiments provide stronger evidence ced-3 function in the regulation of miRNA targets, the text of the manuscript was difficult to read with regard to clarity and succinctness. In addition, the authors should also address the issues raised below in a corrected version:\n\n1) Please provide an alternative title that would be understandable to a wider audience. \u2018CED-3\u2019 and \u2018LIN-28\u2019 may not be familiar to many people and some description might help.\n\n2) The abstract should be clarified further as it implies that LIN-14, LIN-28, DISL-1 are all demonstrated in vivo targets.\n\n3) It is appreciated that demonstration of CED-3-mediated proteolysis in vivo is challenging. The new data to support a role in proteolysis are helpful, but perhaps not definitive, a result that might be consistent with a mechanism that contributes to robustness of a developmental process. Analysis of lin-28::gfp in \u201cage-matched\u201d wt and ced-3(lf) mutants is provided through a picture of a head together with quantitation that indicates a modest increase in number of GFP+ cells when ced-3 is missing. The data seem to support the claim, but additional experimental details could help. What is the definition of \u201cage-matched\u201d here? Are the animals scored simply somewhere within the L3 stage? Or were they selected at a specific point within the stage by cell division pattern? This is an issue because the wild-type transgene is not always off; are the animals all at the same point in the L3? Also, are the cell types in question consistent with LIN-28 function?\n\n4) The authors should avoid using developmental delay when they are referring to heterochronic phenotypes. This is especially important because the authors do measure both the growth rates and temporal patterning of development. It may be easier to just use temporal patterning when they reference heterochronic phenotypes.\n\n5) Figure 6, it is relevant to know when the additional seam cells arise. The Methods section on scoring has been elaborated, but this information still appears to be lacking. Are the animals born with the correct number of seam cells and it gradually increases through extra L2-type proliferative divisions or is it late onset? This issue should be easy to clarify. Figure 6B should include the quantification of Wild Type seam cell numbers.\n\n6) The paragraph outlining LIN-28, LIN-14 and DIS-1 regulation in C. elegans development should be more clearly written. This would include an outline of seam cell development, stage-specific expression of the genes and then the phenotypic consequences (with regard to seam cell number) associated with mutations in each of these genes. The impact of the synthetic interactions will be more impactful.\n\n7) Regarding the text about the tetra-peptide sequence for CED-3 cleavage: these sites (numbers etc.) should be shown in each of the proteins. In addition, while true, the LIN-28 isoform lacks this putative site but is barely mentioned throughout the text. Its absence would have implications for future experiments and discussions.\n\n8) Experiments outlined in Figure 9 should be more clearly described in the text or in the Figure legend. Is it the case that the percentage of animals reaching adulthood actually means the percentage of animals reaching adulthood after a defined time interval? What is that time interval?\n\nThe authors argue that aspects of these experiments support their model and some do, but some of the comparisons involve two variables (two different transgenes and +/- ced-3) coupled to potential developmental delays, which continue to complicate interpretations. Perhaps the new Figure 9D makes the best argument. Here, the animals are being assayed for adult cuticle, so must have reach a particular stage. And one can compare the effect of each transgene on the phenotype: if D31A starts out with lower expression than the wild-type transgene, one might expect it to have a weaker phenotype than the wild-type, yet it appears stronger, consistent with LIN-28 staying high longer. (It is a bit puzzling that the wt transgene does not cause gaps in alae, as this was indicated in Moss et al. '97.)\n\nSince the LIN-28(D31A)::GFP transgene outlined in Figure 9 produces a ced-3(lf)-like phenotype (a slowing of animal growth), one would expect that the expression of LIN-28(D31A)::GFP would maintain inappropriate expression pattern to a similar amount/time (if not more than) the wild-type LIN-28::GFP reporter exhibits in ced-3(lf) animals. Why was this not done? It seems so obvious and so easy to do.\n\n9) It seems incredibly surprising that the additional expression of LIN-28::GFP in ced-3 mutant backgrounds (increased expression in a very small number of cells; Figure 8B) reflects the dramatic differences in the expression of the endogenous LIN-28 at a similar time point/developmental stage described in the experiments outlined in Figure 8A. While the perdurance of LIN-28::GFP expression in ced-3(lf) mutants is supported by the in vivo evidence, these dramatic differences in scale of the phenotype should be addressed in the text.\n",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "84dcd689-a282-4b73-95e9-b3e7e45b00d8",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C1",
+      "claim": "A genome-wide enhancer screen using ain-1(lf) and ain-2(lf) mutations identified 126 genetic interactors with miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the entire Caenorhabditis elegans ORFeome RNAi feeding library (Rual et al., 2004), we performed a double-blind screen that identified 126 genetic interactors (Figure 1A\u2013D, Figure 1\u2014figure supplement 1 and Supplementary files 1,2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by data from the genome-wide RNAi screen described in the methods and results, with specific numbers reported.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "20561e64-9aca-4c00-830b-8d258d50f97f",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C2",
+      "claim": "Only eight of the 126 genetic interactors have been previously reported to interact with miRNA regulatory pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the entire Caenorhabditis elegans ORFeome RNAi feeding library (Rual et al., 2004), we performed a double-blind screen that identified 126 genetic interactors (Figure 1A\u2013D, Figure 1\u2014figure supplement 1 and Supplementary files 1,2), of which only eight have been reported to interact with miRNA regulatory pathways (Parry et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous study (Parry et al., 2007) and compares it to the current screen results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "62b8982e-512b-4052-9e71-a45394b879c5",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C3",
+      "claim": "Nearly two-thirds of the 126 genetic interactors were found to interact with both ain-1 and ain-2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly two-thirds of the 126 genetic interactors were found to interact with both ain-1 and ain-2 genes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "7faa830c-442b-4768-9d6a-df2e5e199ed2",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C4",
+      "claim": "Over-representation of genes associated with protein stability is consistent with the hypothesis that miRNAs act in concert with other repressive mechanisms to limit gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-representation of genes associated with protein stability is consistent with the hypothesis that miRNAs act in concert with other repressive mechanisms to limit gene expression (Figure 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on gene ontology analysis results shown in Figure 1C and interpreted in the context of known miRNA function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "f5a9edda-9177-4056-b4ab-f45e7452c1dd",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C5",
+      "claim": "ain-1(lf) displayed more pronounced pleiotropism with its interactors than ain-2(lf).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ain-1(lf) displayed more pronounced pleiotropism with its interactors than ain-2(lf) (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1D comparing phenotypic distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "f08d2faa-a4f9-489a-bb93-f0df7493ab83",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C6",
+      "claim": "The two GW182 homologs have distinct frequencies of phenotypes with their interactors.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ain-1(lf) displayed more pronounced pleiotropism with its interactors than ain-2(lf) (Figure 1D) and that the two GW182 homologs have distinct frequencies of phenotypes with their interactors (Figure 1\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic frequency data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "6e52125f-338c-4fca-904d-9a9bb95a18fd",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C7",
+      "claim": "ced-3(lf);ain-1(lf) double mutants have pleiotropic developmental phenotypes including delays in larval growth rate, smaller brood size, abnormal adult body morphology, egg-laying defect, sluggish movement, embryonic lethality, and laid oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using multiple alleles of each gene, we found that ced-3(lf);ain-1(lf) double mutants have pleiotropic developmental phenotypes including delays in larval growth rate, smaller brood size, abnormal adult body morphology, egg-laying defect (accumulation of eggs inside the animal), sluggish movement, embryonic lethality, and laid oocytes (failure to fertilize) (Figure 2A\u2013D and Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopic observations and quantitative phenotypic data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "b2b0dea6-e297-4a7c-845c-5950f61fc11e",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C8",
+      "claim": "Combining mutations of miRISC components such as ain-1(GW182)(lf) or alg-1(argonaute)(lf) with the cell death pathway factors ced-3(caspase)(lf) or its upstream activator, ced-4(apaf-like)(lf), results in abnormal adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining mutations of miRISC components such as ain-1(GW182)(lf) or alg-1(argonaute)(lf) with the cell death pathway factors ced-3(caspase)(lf) or its upstream activator, ced-4(apaf-like)(lf), results in abnormal adults (Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic data from genetic crosses shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "1e722f9e-44b1-4e3c-9504-385ea1d2c391",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C9",
+      "claim": "ced-3(lf);ain-2(lf) animals did not show a significant defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining mutations of miRISC components such as ain-1(GW182)(lf) or alg-1(argonaute)(lf) with the cell death pathway factors ced-3(caspase)(lf) or its upstream activator, ced-4(apaf-like)(lf), results in abnormal adults (Figure 2E) but ced-3(lf);ain-2(lf) animals did not show a significant defect (Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic data shown in Figure 2\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "75c22916-cdde-4abd-ad09-024a8552e287",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C10",
+      "claim": "egl-1(RNAi) significantly enhanced the developmental defects of ain-1(lf).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, like ced-3(lf) and ced-4(lf), egl-1(RNAi) also significantly enhanced the developmental defects of ain-1(lf) (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAi experimental data shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "38c5b1d4-23e3-4105-966a-eace29f20e77",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C11",
+      "claim": "Expressing either ain-1 or ain-2 in the intestine or hypodermis alone partially rescued the defects of the ced-3(lf);ain-1(lf) double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing either ain-1 or ain-2 in the intestine or hypodermis alone partially rescued the defects of the ced-3(lf);ain-1(lf) double mutant (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tissue-specific rescue experiments shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "985be278-9216-4c79-ae80-b9c5797962f1",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C12",
+      "claim": "The intestine and hypodermis are the major sites for miRNA functions in the ced-3 and ain-1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that these two tissues are the major sites for miRNA functions in this interaction and likely also CED-3 function given that ced-3 acts cell autonomously (Yuan and Horvitz, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from tissue-specific rescue data and cited literature on ced-3 cell autonomy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "eae135c3-acfd-4082-9c64-a52509caf090",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C13",
+      "claim": "ced-3 acts cell autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that these two tissues are the major sites for miRNA functions in this interaction and likely also CED-3 function given that ced-3 acts cell autonomously (Yuan and Horvitz, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work (Yuan and Horvitz, 1990).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "2a7bfa87-a1c6-4f74-9dfa-4b45d3cf815e",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C14",
+      "claim": "Strong ced-3(lf) alleles cause robust defects in programmed cell death but not the developmental defects described in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that strong ced-3(lf) alleles cause robust defects in programmed cell death but not the developmental defects described above suggests that the functions of ced-3 with miRISCs uncovered in our screen are non-apoptotic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of known apoptotic phenotypes with the novel developmental phenotypes observed in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "04cdeb53-445b-4618-a508-d97ffc5ae1c7",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C15",
+      "claim": "The functions of ced-3 with miRISCs uncovered in this screen are non-apoptotic.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that strong ced-3(lf) alleles cause robust defects in programmed cell death but not the developmental defects described above suggests that the functions of ced-3 with miRISCs uncovered in our screen are non-apoptotic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that ced-3(lf) alone does not cause the developmental defects seen in double mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "e60229b3-aa71-4cb8-baaf-5a3af7ad079b",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C16",
+      "claim": "ain-1(lf) mutation did not enhance the apoptotic defect of ced-3(rf) animals as assayed by observing the perdurance of lin-11::GFP positive undead P9-11.aap cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, in contrast to the positive control, mcd-1(lf), the ain-1(lf) mutation did not enhance the apoptotic defect of ced-3(rf) animals as assayed by observing the perdurance of lin-11::GFP positive undead P9-11.aap cells (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell death assay data shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "ba7b0bce-1471-4bc4-94cc-ab51e00ee46c",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C17",
+      "claim": "ain-1(lf) mutation did not enhance any subtle nuc-1(lf) phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Because nuc-1 encodes an effector nuclease important for the proper execution of apoptosis (Wu et al., 2000), we then tested if the ain-1(lf) mutation was able to enhance any subtle nuc-1(lf) phenotype and found no significant defect beyond the phenotypes of the single mutants (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genetic interaction data shown in Figure 3C and cites previous work on nuc-1 function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "396612b9-43db-491e-9158-2196679a5713",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C18",
+      "claim": "ain-1(RNAi) did not affect the number of apoptotic cell corpses accumulating in the heads of ced-1(lf) first stage larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ain-1(RNAi) did not affect the number of apoptotic cell corpses accumulating in the heads of ced-1(lf) first stage larvae (Figure 3D), which are defective in cell corpse engulfment allowing for visualization of dead cell corpses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell corpse counting data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "d298a18d-8685-4266-a356-24967731b0ba",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C19",
+      "claim": "The ain-1 and ced-3 interaction is non-apoptotic.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the ain-1 and ced-3 interaction described above is non-apoptotic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple apoptotic assays showing no enhancement by ain-1(lf).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "9ea3f690-956f-429e-8efb-11f3b39e2ad4",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C20",
+      "claim": "ced-3(lf) and ced-4(lf) single mutants have mild reduction in their rates of post-embryonic growth similar to the ain-1(lf) and alg-1(lf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis indicated that the ced-3(lf) and ced-4(lf) single mutants have mild reduction in their rates of post-embryonic growth similar to the ain-1(lf) and alg-1(lf) mutants (Figure 4A\u2013C and also Figure 4\u2014figure supplement 1 for more ced-3(lf) data).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by developmental timing data shown in Figure 4A-C and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "0fdce912-e4eb-4be8-b4b2-51a12ed45cb6",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C21",
+      "claim": "The ced-3(lf);ain-1(lf) and ced-3(lf);alg-1(lf) double mutants, but not ced-3(lf);ain-2(lf), have significantly slower growth rates beyond either single mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the ced-3(lf);ain-1(lf) and ced-3(lf);alg-1(lf) double mutants, but not ced-3(lf);ain-2(lf), have significantly slower growth rates beyond either single mutant (Figure 4A\u2013C and Figure 4\u2014figure supplement 1), suggesting cooperativity in regulating the related developmental programs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by developmental timing data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "41dc0195-8353-4a31-9cf7-5264b85d34c4",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C22",
+      "claim": "Mutations in the let-7-family members, mir-48 and mir-84, had the strongest effect with a fully penetrant egg-laying defect observed in the ced-3(lf);mir-48(lf);mir-84(lf) triple mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, mutations in the let-7-family members, mir-48 and mir-84, had the strongest effect with a fully penetrant egg-laying defect observed in the ced-3(lf);mir-48(lf);mir-84(lf) triple mutant (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic data from miRNA deletion mutants shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "1e101c8b-efbe-4c88-a037-5878e2fdfa49",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C23",
+      "claim": "The ced-3(lf);mir-1(lf);mir-84(lf) triple mutant displayed some developmental defects not seen in the mir-1(lf);mir-84(lf), ced-3(lf);mir-1(lf), or the ced-3(lf);mir-84(lf) double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the ced-3(lf);mir-1(lf);mir-84(lf) triple mutant displayed some developmental defects not seen in the mir-1(lf);mir-84(lf), ced-3(lf);mir-1(lf), or the ced-3(lf);mir-84(lf) double mutants (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "4c99a1f2-0fdf-48d9-82e3-767e272221e6",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C24",
+      "claim": "ced-3(lf) significantly enhanced adult alae defects in miR-48(lf),miR-84(lf);ced-3(lf) triple mutant and the ced-3(lf);ain-1(lf) double mutant, but not the ced-3(lf);mir-1(lf);mir-84(lf) triple mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ced-3(lf) significantly enhanced adult alae defects (Figure 5C,D). This effect was observed for both the miR-48(lf),miR-84(lf);ced-3(lf) triple mutant and the ced-3(lf);ain-1(lf) double mutant, but not the ced-3(lf);mir-1(lf);mir-84(lf) triple mutant (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by adult alae phenotypic data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "50be363c-a9dd-46d3-9f16-5addca394df3",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C25",
+      "claim": "The expression of some developmental timing regulators is co-regulated by miRISCs and ced-3.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggested the hypothesis that the expression of some developmental timing regulators is co-regulated by miRISCs and ced-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis inferred from the genetic interaction data with miRNAs and temporal cell fate patterning defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "c8dd02d9-4626-42fc-8c90-23848fcea36c",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C26",
+      "claim": "Wild-type animals consistently have 16 seam cells on both the left and right sides by adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type animals consistently have 16 seam cells on both the left and right sides by adulthood (Joshi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work (Joshi et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "63a5003d-d26e-4170-a2a3-f9a70023c1c5",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C27",
+      "claim": "LIN-14 is highly expressed during L1 to promote L1-specific developmental programs.",
+      "claim_type": "EXPLICIT",
+      "source": "LIN-14 is highly expressed during L1 to promote L1-specific developmental programs, whereas LIN-28 is highly expressed from late embryonic to L2 stages and acts to promote the L2-specific programs including the only normal symmetric division of V1\u2013V4 and V6 seam cells (Ambros and Horvitz, 1984; Ambros, 1989; Ruvkun and Giusto, 1989; Moss et al., 1997; Rougvie and Moss, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous work on LIN-14 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "05bae864-e814-40c4-ba9b-fab3cfbdd336",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C28",
+      "claim": "LIN-28 is highly expressed from late embryonic to L2 stages and acts to promote the L2-specific programs including the only normal symmetric division of V1\u2013V4 and V6 seam cells.",
+      "claim_type": "EXPLICIT",
+      "source": "LIN-14 is highly expressed during L1 to promote L1-specific developmental programs, whereas LIN-28 is highly expressed from late embryonic to L2 stages and acts to promote the L2-specific programs including the only normal symmetric division of V1\u2013V4 and V6 seam cells (Ambros and Horvitz, 1984; Ambros, 1989; Ruvkun and Giusto, 1989; Moss et al., 1997; Rougvie and Moss, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous work on LIN-28 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "58ea0540-7c3f-4003-bb22-9dda97c15dbb",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C29",
+      "claim": "Expression of LIN-14 and LIN-28 rapidly diminishes after L1 and L2, respectively, which is necessary for animals to progress to the next stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of LIN-14 and LIN-28 rapidly diminishes after L1 and L2, respectively, which is necessary for animals to progress to the next stage (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of developmental timing and illustrated in Figure 6\u2014figure supplement 2A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "42de7c8e-7ebd-4e20-bdb3-346cfcf4920e",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C30",
+      "claim": "Loss-of-function mutations in lin-14 and lin-28 result in animals skipping the L1- and L2-specific programs, respectively (precocious phenotype).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function (lf) mutations in lin-14 and lin-28 result in animals skipping the L1- and L2-specific programs, respectively (precocious phenotype) (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of heterochronic mutant phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "fcd1b5db-b88b-446c-9817-0f2808e9629d",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C31",
+      "claim": "Hyperactive (gain-of-function, gf) mutations leading to prolonged expression of lin-14 or lin-28 cause the animals to reiterate the corresponding stage (retarded phenotype).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hyperactive (gain-of-function, gf) mutations leading to prolonged expression of each gene cause the animals to reiterate the corresponding stage (retarded phenotype) (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of heterochronic mutant phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "e530b468-954a-434b-bc54-6320a5d0c9ab",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C32",
+      "claim": "Mammalian DIS3L2 is the ribonuclease that degrades the uridylated pre-let-7 miRNA following binding by LIN-28 and 3\u2032-oligo-uridylation by a polyU polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian DIS3L2 was recently annotated as the ribonuclease that degrades the uridylated pre-let-7 miRNA following binding by LIN-28 and 3\u2032-oligo-uridylation by a polyU polymerase (Chang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to recent work (Chang et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "acddbf11-dadd-443d-abac-f7a16bb8b53f",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C33",
+      "claim": "The C. elegans gene F48E8.6 is the C. elegans ortholog of mammalian Dis3l2.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the likely C. elegans ortholog of Dis3l2 and named it disl-2 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment and domain prediction shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "3ccad2ca-360e-4547-b078-da05c492432a",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C34",
+      "claim": "The ain-1(lf) mutant alone has a mild increase in the number of seam cells by late larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously published (Ding et al., 2005; Zhang et al., 2007), we also found that the ain-1(lf) mutant alone has a mild increase in the number of seam cells by late larval development (Figure 6A,B and Figure 6\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by seam cell counting data and cites previous publications.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "d8afaa61-a7b6-4198-8990-34a80ed9b8ba",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C35",
+      "claim": "The ced-3(lf) mutant alone rarely shows altered seam cell numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously published (Ding et al., 2005; Zhang et al., 2007), we also found that the ain-1(lf) mutant alone has a mild increase in the number of seam cells by late larval development (Figure 6A,B and Figure 6\u2014figure supplement 2) consistent with the well-established role of miRNAs in regulation of temporal cell fate patterning; whereas the ced-3(lf) mutant alone rarely shows altered seam cell numbers (Figure 6A,B and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by seam cell counting data shown in Figure 6A-B and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "2a60c57b-5736-40c9-a806-925dbe20f33b",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C36",
+      "claim": "The ced-3(lf);ain-1(lf) double mutants have both a markedly increased number of seam cells and an increased range of seam cell number by late larval development with a mean value (\u00b1SD) of 25.9 (\u00b15.5) per side.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the ced-3(lf);ain-1(lf) double mutants have both a markedly increased number of seam cells and an increased range of seam cell number by late larval development (Figure 6A,B) with a mean value (\u00b1SD) of 25.9 (\u00b15.5) per side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative seam cell counting data shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "2d043d84-3639-4c7a-ab29-e0bfbb84a413",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C37",
+      "claim": "The ced-3(lf);ain-1(lf) double mutants hatch with the correct number of seam cells but they continue to increase inappropriately throughout later larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the ced-3(lf);ain-1(lf) double mutants hatch with the correct number of seam cells but they continue to increase inappropriately throughout later larval development (Figure 6\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by seam cell counting at different developmental stages shown in Figure 6\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "1cf7de5e-d4ca-49a7-8689-a31289b693fb",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C38",
+      "claim": "The increased number of seam cells in the ced-3(lf);ain-1(lf) double mutants was partially suppressed by down-regulating lin-14, lin-28, or disl-2 through RNAi treatment beginning at L2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the increased number of seam cells in the ced-3(lf);ain-1(lf) double mutants was partially suppressed by down-regulating lin-14, lin-28, or disl-2(Dis3l2) through RNAi treatment beginning at L2 (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAi suppression data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "efc57594-7056-4e65-a611-f17f6dfb8137",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C39",
+      "claim": "An abnormally high level of lin-14, lin-28, or disl-2 could be a significant contributor to the seam cell phenotype in ced-3(lf);ain-1(lf) double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the increased number of seam cells in the ced-3(lf);ain-1(lf) double mutants was partially suppressed by down-regulating lin-14, lin-28, or disl-2(Dis3l2) through RNAi treatment beginning at L2 (Figure 6C), suggesting that an abnormally high level of any of the three proteins could be a significant contributor to the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the RNAi suppression results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "e97adcd3-66f9-4e9f-9691-2ce5cea98e11",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C40",
+      "claim": "ced-3(lf) enhanced the heterochronic defect of lin-66 reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a ced-3 function in lin-28-mediated temporal cell fate patterning regulation, we also observed that ced-3(lf) enhanced the heterochronic defect of lin-66 reduction (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic data shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "d799b583-dd88-42f5-87b4-170c9810d252",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C41",
+      "claim": "Down-regulation of lin-14, lin-28, or disl-2 by RNAi beginning at L2 could significantly suppress the defects in the ced-3(lf);ain-1(lf) double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that down-regulation of lin-14, lin-28, or disl-2(Dis3l2) by RNAi beginning at L2 could significantly suppress the defects in the ced-3(lf);ain-1(lf) double mutants (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAi suppression data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "329b7df9-b946-4293-9186-56df2f8f5aae",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C42",
+      "claim": "ced-3 cooperates with miRNAs to regulate the lin-14-lin-28-disl-2(Dis3l2) axis during development.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that ced-3 cooperates with miRNAs to regulate the lin-14-lin-28-disl-2(Dis3l2) axis during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the genetic interaction and suppression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "4970de1c-b6b1-4578-8c76-1ff38386369b",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C43",
+      "claim": "LIN-14, LIN-28, and DISL-2 contain multiple consensus CED-3 cleavage sites that consist of a tetra-peptide sequence usually ending in an aspartic acid residue.",
+      "claim_type": "EXPLICIT",
+      "source": "As a caspase, we thought that CED-3 may directly repress the expression of these genes through proteolytic cleavage, which is consistent with our observation that LIN-14, LIN-28, and DISL-2 contain multiple consensus CED-3 cleavage sites that consist of a tetra-peptide sequence usually ending in an aspartic acid residue (Xue et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence analysis and cites previous work on CED-3 cleavage specificity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "1a036116-3c73-40c0-845d-1828e57d81c6",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C44",
+      "claim": "DISL-2 was robustly cleaved by the CED-3 caspase in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DIS3L2 ribonuclease homolog, DISL-2, was robustly cleaved by the CED-3 caspase while LIN-14 and LIN-28 were partially cleaved (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro cleavage assay data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "63b31edf-8def-48b4-841d-89711b186e23",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C45",
+      "claim": "LIN-14 and LIN-28 were partially cleaved by CED-3 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DIS3L2 ribonuclease homolog, DISL-2, was robustly cleaved by the CED-3 caspase while LIN-14 and LIN-28 were partially cleaved (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro cleavage assay data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "eb35c3a5-21b0-48ad-8b35-57154d8a50d0",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C46",
+      "claim": "The partial LIN-28 cleavage by CED-3 was completely blocked by addition of the caspase-specific-inhibitor zDEVD-fmk.",
+      "claim_type": "EXPLICIT",
+      "source": "We further tested the specificity of the partial LIN-28 cleavage by CED-3 and found that it was completely blocked by addition of the caspase-specific-inhibitor zDEVD-fmk (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro cleavage assay with inhibitor shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "06dccff9-9f85-4004-9a96-abccff45de32",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C48",
+      "claim": "Mutating the second aspartic acid residue to an alanine (D31A) in the DVVD sequence entirely eliminated CED-3 cleavage of LIN-28.",
+      "claim_type": "EXPLICIT",
+      "source": "The identified sequence DVVD fits the canonical CED-3 recognition motif (DxxD) (Xue et al., 1996) and mutating the second aspartic acid residue to an alanine (D31A in Figure 7D) entirely eliminated CED-3 cleavage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mutagenesis data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "83ec4045-d94a-4c1e-a542-74228517cd15",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C49",
+      "claim": "CED-3 proteolysis of LIN-28A generates an N-terminal asparagine in the remaining protein.",
+      "claim_type": "EXPLICIT",
+      "source": "CED-3 proteolysis of LIN-28A generates an N-terminal asparagine in the remaining protein (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the cleavage site determination and illustrated in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "5b9866cc-8562-4cab-a7b4-51bd3738f9ba",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C50",
+      "claim": "Asparagine is known to function generally as a destabilizing residue at the N-terminus of eukaryotic proteins resulting in proteasomal degradation in a phenomenon termed the N-end rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Asparagine is known to function generally as a destabilizing residue at the N-terminus of eukaryotic proteins resulting in proteasomal degradation in a phenomenon termed the N-end rule (Sriram et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on the N-end rule (Sriram et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "c2dcc950-8f64-4bac-9a7d-d201a30225ab",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C51",
+      "claim": "The dynamic decrease in LIN-28 abundance during L2\u2013L4 stages was similarly delayed by two different ced-3(lf) mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the dynamic decrease in LIN-28 abundance during L2\u2013L4 stages was similarly delayed by two different ced-3(lf) mutations (Figure 8A and quantitation shown in Figure 8\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 8A and Figure 8\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "7f202ffe-cbc2-4766-9bd4-f5d021ab91b7",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C52",
+      "claim": "At late L4 (48 hr), LIN-28 was almost completely absent in both wild type and ced-3(lf) mutants, indicating the role of general, non-CED-3-mediated, proteolysis during late larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "At late L4 (48 hr in Figure 8A), LIN-28 was almost completely absent in both wild type and ced-3(lf) mutants, indicating the role of general, non-CED-3-mediated, proteolysis during late larval stages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from Western blot data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "2c602646-39ce-4347-883b-895085e7cce9",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C53",
+      "claim": "The 22-kDa cleavage product observed in the in vitro assay was not observable in vivo, consistent with the idea that the cleavage product with an asparagine at its N-terminus was possibly degraded by an additional proteolytic process.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 22-kDa cleavage product observed in the in vitro assay (Figure 7D,E) was not observable in vivo (Figure 8A), consistent with the idea that the cleavage product with an asparagine at its N-terminus was possibly degraded by an additional proteolytic process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from comparison of in vitro and in vivo data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "f6847547-93e8-4385-80da-cddf4dfc75c6",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C54",
+      "claim": "The ced-3(lf) mutation delayed the proper down-regulation of the LIN-28::GFP reporter at L3 in the hypodermis.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the ced-3(lf) mutation delayed the proper down-regulation of the LIN-28::GFP reporter at L3 in the hypodermis (Figure 8B\u2013D and Figure 8\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 8B-D and Figure 8\u2014figure supplement 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "8fdd5af5-440b-46ca-947c-ad8063793e14",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C55",
+      "claim": "Down-regulation of LIN-28::GFP expression was delayed in neuronal cells in the head in ced-3(lf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that down-regulation of LIN-28::GFP expression was delayed in neuronal cells in the head (Figure 8\u2014figure supplement 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 8\u2014figure supplement 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "ff1b3022-3120-4002-b042-9cabec74a585",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C56",
+      "claim": "The lin-28(D31A)::gfp transgene was able to rescue the Pvl phenotype in lin-28(n719,lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that the LIN-28(D31A) mutation did not disrupt the global function of the protein, we tested its ability to overcome the highly penetrant protruding vulva (Pvl) phenotype in lin-28(n719,lf) animals and found that it was able to rescue the Pvl phenotype (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue data shown in Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "fba80339-e17a-4639-ab81-7f65f7f04e57",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C57",
+      "claim": "The copy number of the lin-28(D31A)::gfp transgene is slightly lower than that of the non-mutated lin-28(+)::gfp transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Following integration and outcrossing, we found the copy number of the lin-28(D31A)::gfp transgene to be slightly lower than that of the non-mutated lin-28(+)::gfp transgene (Figure 9\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 9\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "88836804-c246-4076-9ba6-a264f54d35c0",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C58",
+      "claim": "The lin-28(D31A)::gfp transgene alone caused a delay in larval development similar to that caused by the combination of the lin-28(+)::gfp transgene with ced-3(lf).",
+      "claim_type": "EXPLICIT",
+      "source": "We then examined the developmental profile and found that the lin-28(D31A)::gfp transgene alone caused a delay in larval development similar to that caused by the combination of the lin-28(+)::gfp transgene with ced-3(lf) (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by developmental timing data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "f953dc14-92ef-4dd0-8419-61b97803d657",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C59",
+      "claim": "The lin-28(D31A)::gfp integration had less basal expression than the non-mutated lin-28(+)::gfp integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that the lin-28(D31A)::gfp integration had less basal expression than the non-mutated lin-28(+)::gfp integration, consistent with the lower copy number estimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Western blot data and is consistent with copy number data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "69963333-d6f5-4d60-8c0d-05d192978d6d",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C60",
+      "claim": "A quantifiable difference in the down-regulation of the lin-28(D31A)::gfp transgene compared to the lin-28(+)::gfp transgene was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a quantifiable difference in the down-regulation of the lin-28(D31A)::gfp transgene compared to the lin-28(+)::gfp transgene (Figure 9B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 9B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "5dd48b3e-09a1-4e11-934f-258005bb1e4b",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C61",
+      "claim": "A failure in CED-3 cleavage of LIN-28 leads to slower degradation of LIN-28 and is one of the causes of slower development.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding provides evidence that a failure in CED-3 cleavage of LIN-28 leads to slower degradation of LIN-28 and is one of the causes of slower development, since the D31A point mutation alone resulted in both a slower growth rate (Figure 9A) and delayed LIN-28 down-regulation (Figure 9B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the D31A mutant phenotypic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "6f42cc8a-5dd1-42e8-82e9-03064fd15f2b",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C62",
+      "claim": "Disrupting CED-3 activity on LIN-28 enhances adult alae defects.",
+      "claim_type": "EXPLICIT",
+      "source": "To further test the functional outcome of both the LIN-28(D31A) transgene and the LIN-28(+) transgene combined with ced-3(lf), we examined the adult-specific alae and found significant defects including low quality and gapped alae (Figure 9D and Figure 9\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by adult alae phenotypic data shown in Figure 9D and Figure 9\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "13abb270-ecb5-4ac0-ba77-277abb86da6e",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C63",
+      "claim": "The LIN-14::GFP level was modestly increased in ced-3(lf) mutants in vivo at the L1 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with LIN-14 being modestly cleaved by CED-3 in vitro (Figure 7A), we found that the LIN-14::GFP level was modestly increased in ced-3(lf) mutants in vivo at the L1 stage (Figure 9\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 9\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "68b15ce3-2c22-4a69-80f1-a6107adfcf95",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C64",
+      "claim": "CED-3 caspase has a non-apoptotic function that regulates multiple developmental events through proteolytic inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence for a non-apoptotic function of CED-3 caspase that regulates multiple developmental events through proteolytic inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "963ae8bd-de9f-4bb5-a2d4-da89144e63f8",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C65",
+      "claim": "CED-3 cleaves LIN-14, LIN-28, and DISL-2 proteins in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, LIN-14, LIN-28, and DISL-2 proteins are known miRNA targets, key regulators of developmental timing, and/or stem cell pluripotency factors involved in miRNA processing. We show CED-3 cleaves these proteins in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vitro cleavage assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "0a38df28-2bae-4179-90bf-450d84c5c44f",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C66",
+      "claim": "CED-3 down-regulates LIN-28 in vivo, possibly rendering it more susceptible to proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show CED-3 down-regulates LIN-28 in vivo, possibly rendering it more susceptible to proteasomal degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vivo Western blot and fluorescence data, with speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "aca11e52-bffa-4f58-a76b-03883a938aaf",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C67",
+      "claim": "The CED-3 mechanism may critically contribute to the robustness of gene expression dynamics governing proper developmental control.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism may critically contribute to the robustness of gene expression dynamics governing proper developmental control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative conclusion based on the overall findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "5722483a-eb96-4a0e-9c14-21493c7d98dd",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C68",
+      "claim": "miRNAs mostly exert repression of gene expression by blocking target mRNA translation and/or through mRNA decay as part of the miRNA-induced-silencing complex (miRISC), which includes GW182 and argonaute proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "miRNAs mostly exert repression of gene expression by blocking target mRNA translation and/or through mRNA decay as part of the miRNA-induced-silencing complex (miRISC), which includes GW182 and argonaute proteins (Ding and Han, 2007; Fabian and Sonenberg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work on miRNA mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "f2b3d313-e6cc-40a6-9ea8-98ca96c673e0",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C69",
+      "claim": "miRNA-mediated gene silencing is a critical regulatory mechanism that ensures dynamic changes in gene expression during animal development or other physiological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "miRNA-mediated gene silencing is a critical regulatory mechanism that ensures dynamic changes in gene expression during animal development or other physiological processes (Ambros, 2004; Bartel and Chen, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work on miRNA functions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "37a751e1-4ee6-49c1-8c9e-f8912ac07439",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C70",
+      "claim": "Specific physiological roles of individual miRNAs are often executed through the combinatory effects of multi-miRNA, multi-target mRNA networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, specific physiological roles of individual miRNAs are often executed through the combinatory effects of multi-miRNA, multi-target mRNA networks (Brenner et al., 2010; Karp et al., 2011; Kudlow et al., 2012; Miska et al., 2007; Parry et al., 2007; Than et al., 2013; Alvarez-Saavedra and Horvitz, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous work on miRNA networks.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "6d5a4f28-11bd-45b9-85dc-d265edf509cc",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C71",
+      "claim": "miRNA\u2013mRNA interaction networks may act in concert, and often semi-redundantly, with other regulatory mechanisms to limit the expression of many genes involved in animal development or other physiological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these miRNA\u2013mRNA interaction networks may act in concert, and often semi-redundantly, with other regulatory mechanisms to limit the expression of many genes involved in animal development or other physiological functions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "da165b73-f042-4ed2-ad16-c1cd4c2d8bb5",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C72",
+      "claim": "The ain-1(lf) mutant has a mild heterochronic phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "While the ain-1(lf) mutant has a mild heterochronic phenotype and the ain-2(lf) mutant is superficially wild-type, loss of both genes results in severe pleiotropic defects including alteration in temporal cell fate patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of ain-1 mutant phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "38b9fe23-de19-43f9-b920-4010ff3f21a3",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C73",
+      "claim": "The ain-2(lf) mutant is superficially wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "While the ain-1(lf) mutant has a mild heterochronic phenotype and the ain-2(lf) mutant is superficially wild-type, loss of both genes results in severe pleiotropic defects including alteration in temporal cell fate patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of ain-2 mutant phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "2cc88c34-dafe-43b2-99cd-1ac9b12477e3",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C74",
+      "claim": "Loss of both ain-1 and ain-2 genes results in severe pleiotropic defects including alteration in temporal cell fate patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "While the ain-1(lf) mutant has a mild heterochronic phenotype and the ain-2(lf) mutant is superficially wild-type, loss of both genes results in severe pleiotropic defects including alteration in temporal cell fate patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of ain-1;ain-2 double mutant phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "edee92ee-5fe8-4fcd-b25f-a98d61c147aa",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C75",
+      "claim": "CED-3 is capable of cleaving more than 22 C. elegans proteins in an in vitro proteomics survey.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, a previous report showed that CED-3 is capable of cleaving more than 22 C. elegans proteins in an in vitro proteomics survey (Taylor et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work (Taylor et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "47b52e93-559b-41d0-a5e4-a93283cfd440",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C76",
+      "claim": "ced-3 may play important roles in neural regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, a previous report showed that CED-3 is capable of cleaving more than 22 C. elegans proteins in an in vitro proteomics survey (Taylor et al., 2007) and two recent genetics-based findings showed that ced-3 may play important roles in neural regeneration (Pinan-Lucarre et al., 2012) and aging (Yee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to recent work (Pinan-Lucarre et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "1bad58f8-d495-4652-a96c-e4067c2e1dd0",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C77",
+      "claim": "ced-3 may play important roles in aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, a previous report showed that CED-3 is capable of cleaving more than 22 C. elegans proteins in an in vitro proteomics survey (Taylor et al., 2007) and two recent genetics-based findings showed that ced-3 may play important roles in neural regeneration (Pinan-Lucarre et al., 2012) and aging (Yee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to recent work (Yee et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "611f76e5-e29d-4be8-8444-61703b58735a",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C78",
+      "claim": "The described CED-3 function in repressing gene expression is likely in contrast to the role of CED-3 in promoting apoptosis through activation of protein targets by cleavage at specific sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the described CED-3 function in repressing gene expression is likely in contrast to the role of CED-3 in promoting apoptosis through activation of protein targets by cleavage at specific sites (Nakagawa et al., 2010; Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with known apoptotic functions of CED-3 cited from previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "467024fb-b43e-4d9b-b406-c438fd37c771",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C79",
+      "claim": "CED-3 cleavage alone may already destroy the target protein activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the CED-3 cleavage alone may already destroy the target protein activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative based on the observed cleavage patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "b052e60c-fd87-4a6c-8f0c-c55cc868ef8a",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C80",
+      "claim": "The cleavage products may be further degraded by other degradation systems notably via N-terminal destabilizing residues which may make the target more susceptible to additional degradation mechanisms, such as proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the cleavage products may be further degraded by other degradation systems notably via N-terminal destabilizing residues which may make the target more susceptible to additional degradation mechanisms, such as proteasomal degradation (Sriram et al., 2011) (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is speculative based on the N-end rule and illustrated in Figure 10B.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "ea4e91cd-3129-4658-b816-0b063b42a1c9",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "claim_id": "C81",
+      "claim": "The CED-3 function operates continually during development to facilitate rapid turnover of regulatory proteins at the post-translational level and in cooperation with other regulatory mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that this function operates continually during development to facilitate rapid turnover of these regulatory proteins at the post-translational level and in cooperation with other regulatory mechanisms (Figure 10\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a hypothesis based on the overall findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f7d0d49-6c32-4e44-9799-f2a7a7a9b6cf",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A genome-wide RNAi screen identified 126 genetic interactors with miRISC components ain-1 and ain-2, of which 118 are novel. The interactors show enrichment for protein stability genes and differential pleiotropism between ain-1 and ain-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are well-supported by the double-blind RNAi screen methodology and quantitative data presented in Figure 1. The screen design, confirmation strategy, and gene ontology analysis provide converging evidence for the identification and characterization of these interactors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "cfc35dfc-0b6f-40dd-a598-fda420d9ce0f",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of ced-3 caspase genetically interacts with ain-1 (but not ain-2) to produce pleiotropic developmental defects. This interaction is also observed with other miRISC components and cell death pathway genes, with the intestine and hypodermis being major sites of function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 are supported by extensive phenotypic characterization using multiple alleles (C7-C10), tissue-specific rescue experiments (C11-C12), and appropriate citations for ced-3 cell autonomy (C13). The specificity of the ain-1 but not ain-2 interaction (C9) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "7650288b-f022-4f7f-843a-b14d8cd91c9b",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ced-3 and ain-1 genetic interaction is non-apoptotic, as demonstrated by multiple independent apoptotic assays showing no enhancement of cell death phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 are well-supported by three independent apoptotic assays (C16-C18) that all show negative results, combined with the observation that strong ced-3(lf) alleles cause apoptotic but not developmental defects (C14). The convergence of multiple negative controls strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "d19a94cb-cba4-42f1-a8a8-9efd5015dfb2",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ced-3(lf) and ced-4(lf) single mutants show mild growth delays similar to ain-1(lf) and alg-1(lf), and ced-3(lf);ain-1(lf) and ced-3(lf);alg-1(lf) double mutants show synergistic growth delays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by developmental timing data across multiple time points (Figure 4A-C and supplements). The observation of synergistic effects in double mutants but not with ain-2 provides specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "3bf522e7-bd53-45d3-8137-fb12aa5ef122",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Specific miRNA deletions (particularly let-7 family members mir-48 and mir-84) show genetic interactions with ced-3(lf), producing developmental defects and enhanced adult alae defects, suggesting co-regulation of developmental timing regulators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by systematic screening of miRNA deletion mutants and quantitative phenotypic analysis (Figure 5). The specificity of effects with different miRNA combinations and the adult alae phenotypes provide converging evidence. C25 is appropriately stated as a hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "889bf3e1-fa53-4339-ba55-8fc9c59ccc51",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Background knowledge on C. elegans developmental timing: wild-type seam cell numbers, LIN-14 and LIN-28 expression patterns and functions, and mammalian DIS3L2 function in pre-let-7 degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 are appropriately cited to established literature and provide necessary background context. These are well-established facts in the field supported by multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "f80a6874-f5e0-4497-acf0-3f04e0fc60b6",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The C. elegans gene F48E8.6 (named disl-2) is the ortholog of mammalian Dis3l2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by sequence alignment and domain prediction analysis shown in Figure 6\u2014figure supplement 1, demonstrating conserved catalytic domains and ribonuclease II family signature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "0024d25b-f0a6-4069-a8e8-5e2bce494f17",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ced-3(lf);ain-1(lf) double mutants show a dramatic increase in seam cell numbers (mean 25.9\u00b15.5 per side) compared to single mutants, with normal numbers at hatching but inappropriate increases during larval development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are strongly supported by quantitative seam cell counting data at multiple developmental stages (Figure 6A-B and supplements). The temporal analysis (C37) demonstrates that the defect arises post-embryonically, which is critical for understanding the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "990145f2-fc7e-4c5a-bad9-a256faaa0897",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RNAi knockdown of lin-14, lin-28, or disl-2 beginning at L2 partially suppresses both the seam cell phenotype and general developmental defects of ced-3(lf);ain-1(lf) double mutants, suggesting ced-3 cooperates with miRNAs to regulate these factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by RNAi suppression experiments (Figure 6C-D). The partial suppression by multiple independent targets provides strong genetic evidence for the proposed regulatory axis. The enhancement of lin-66 defects (C40) provides additional supporting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "96640571-4632-4edc-aa17-7e9c2b56e207",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CED-3 cleaves LIN-14, LIN-28, and DISL-2 in vitro, with DISL-2 being robustly cleaved and LIN-28 partially cleaved at a specific DVVD site (D31), generating an N-terminal asparagine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 are well-supported by in vitro cleavage assays with appropriate controls including caspase inhibitor (C46) and site-directed mutagenesis (C48). The identification of the specific cleavage site and resulting N-terminal residue is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "7fdbac71-b13c-4a93-89f1-d93defb5c7f4",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Asparagine functions as a destabilizing N-terminal residue leading to proteasomal degradation via the N-end rule.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is appropriately cited to established literature (Sriram et al., 2011) on the N-end rule pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "aa5aee53-5c2f-49d3-89ad-11761ea4642a",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LIN-28 protein down-regulation during L2-L4 is delayed in ced-3(lf) mutants, with eventual complete degradation by late L4. The 22-kDa cleavage product observed in vitro is not detected in vivo, consistent with rapid degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by Western blot analysis with two independent ced-3(lf) alleles (Figure 8A and supplement). The absence of the cleavage product in vivo (C53) is appropriately interpreted as consistent with N-end rule degradation, though this remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "a57247a5-d902-468b-b1d6-2a5ba9dc985b",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ced-3(lf) delays down-regulation of LIN-28::GFP reporter expression at L3 in both hypodermis and neuronal cells in the head.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by fluorescence microscopy of stage-matched L3 larvae (Figure 8B-D and supplements). The authors appropriately controlled for developmental stage by measuring gonad length, addressing a potential confounding factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "625a0490-57ab-475c-b361-c7974b7b1be5",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A caspase-cleavage-resistant LIN-28(D31A) transgene causes developmental delays and delayed LIN-28 down-regulation similar to ced-3(lf), and enhances adult alae defects, demonstrating that CED-3 cleavage of LIN-28 is functionally important for development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 are well-supported by multiple complementary experiments: rescue of lin-28(lf) (C56), transgene copy number determination (C57), developmental timing (C58), Western blot analysis (C59-C60), and adult alae phenotypes (C62). This provides strong evidence that the specific cleavage site is functionally relevant in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "ad344d2e-46d7-46f2-9952-1ad114d70c8c",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "LIN-14::GFP levels are modestly increased in ced-3(lf) mutants at L1 stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by Western blot data from three independent experiments (Figure 9\u2014figure supplement 4). The modest effect is consistent with the partial in vitro cleavage observed for LIN-14.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "ec0adca9-d438-4740-9cc3-f954791fefb1",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CED-3 caspase has a non-apoptotic function regulating development through proteolytic inactivation of LIN-14, LIN-28, and DISL-2, potentially enhancing robustness of gene expression dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are well-supported by the cumulative evidence from genetic interactions, in vitro cleavage, and in vivo protein level changes. C67 is appropriately speculative about the broader significance. The integration of multiple lines of evidence (genetic, biochemical, cell biological) strongly supports this major conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "2705e6dc-7b19-4ef0-b66d-a88c3453375a",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on miRNA mechanisms: miRNAs repress gene expression through miRISC, are critical for development, often function through multi-miRNA networks, and act semi-redundantly with other regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are appropriately cited to established literature and provide necessary background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "237c568c-3524-4cda-a270-c26f2eca040a",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on ain-1 and ain-2 mutant phenotypes: ain-1(lf) has mild heterochronic phenotype, ain-2(lf) is superficially wild-type, and loss of both causes severe pleiotropic defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are established knowledge appropriately used to justify the screen design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "62f82de0-f1fa-43e9-91a1-78c425ed3b83",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work shows CED-3 can cleave >22 C. elegans proteins in vitro and may have roles in neural regeneration and aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 are appropriately cited to prior literature and provide context for non-apoptotic CED-3 functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    },
+    {
+      "id": "0d60c552-e05b-41c9-a584-7d642072a39c",
+      "content_id": "720181d6-3179-4aec-9e80-29ea65cba927",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The non-apoptotic CED-3 function described here contrasts with apoptotic functions (protein activation vs. inactivation), may directly destroy target activity, and may facilitate degradation via N-end rule, operating continually during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C81 are largely speculative (C79-C81) or inferential (C78). While the speculation is reasonable and supported by the N-end rule literature (C80), direct evidence for proteasomal involvement and continuous operation during development is limited. The absence of the cleavage product in vivo (C53) is consistent with but does not prove N-end rule degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:11:02.902625Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "84dcd689-a282-4b73-95e9-b3e7e45b00d8",
+      "result_id": "9f7d0d49-6c32-4e44-9799-f2a7a7a9b6cf"
+    },
+    {
+      "claim_id": "20561e64-9aca-4c00-830b-8d258d50f97f",
+      "result_id": "9f7d0d49-6c32-4e44-9799-f2a7a7a9b6cf"
+    },
+    {
+      "claim_id": "62b8982e-512b-4052-9e71-a45394b879c5",
+      "result_id": "9f7d0d49-6c32-4e44-9799-f2a7a7a9b6cf"
+    },
+    {
+      "claim_id": "7faa830c-442b-4768-9d6a-df2e5e199ed2",
+      "result_id": "9f7d0d49-6c32-4e44-9799-f2a7a7a9b6cf"
+    },
+    {
+      "claim_id": "f5a9edda-9177-4056-b4ab-f45e7452c1dd",
+      "result_id": "9f7d0d49-6c32-4e44-9799-f2a7a7a9b6cf"
+    },
+    {
+      "claim_id": "f08d2faa-a4f9-489a-bb93-f0df7493ab83",
+      "result_id": "9f7d0d49-6c32-4e44-9799-f2a7a7a9b6cf"
+    },
+    {
+      "claim_id": "6e52125f-338c-4fca-904d-9a9bb95a18fd",
+      "result_id": "cfc35dfc-0b6f-40dd-a598-fda420d9ce0f"
+    },
+    {
+      "claim_id": "b2b0dea6-e297-4a7c-845c-5950f61fc11e",
+      "result_id": "cfc35dfc-0b6f-40dd-a598-fda420d9ce0f"
+    },
+    {
+      "claim_id": "1e722f9e-44b1-4e3c-9504-385ea1d2c391",
+      "result_id": "cfc35dfc-0b6f-40dd-a598-fda420d9ce0f"
+    },
+    {
+      "claim_id": "75c22916-cdde-4abd-ad09-024a8552e287",
+      "result_id": "cfc35dfc-0b6f-40dd-a598-fda420d9ce0f"
+    },
+    {
+      "claim_id": "38c5b1d4-23e3-4105-966a-eace29f20e77",
+      "result_id": "cfc35dfc-0b6f-40dd-a598-fda420d9ce0f"
+    },
+    {
+      "claim_id": "985be278-9216-4c79-ae80-b9c5797962f1",
+      "result_id": "cfc35dfc-0b6f-40dd-a598-fda420d9ce0f"
+    },
+    {
+      "claim_id": "eae135c3-acfd-4082-9c64-a52509caf090",
+      "result_id": "cfc35dfc-0b6f-40dd-a598-fda420d9ce0f"
+    },
+    {
+      "claim_id": "2a7bfa87-a1c6-4f74-9dfa-4b45d3cf815e",
+      "result_id": "7650288b-f022-4f7f-843a-b14d8cd91c9b"
+    },
+    {
+      "claim_id": "04cdeb53-445b-4618-a508-d97ffc5ae1c7",
+      "result_id": "7650288b-f022-4f7f-843a-b14d8cd91c9b"
+    },
+    {
+      "claim_id": "e60229b3-aa71-4cb8-baaf-5a3af7ad079b",
+      "result_id": "7650288b-f022-4f7f-843a-b14d8cd91c9b"
+    },
+    {
+      "claim_id": "ba7b0bce-1471-4bc4-94cc-ab51e00ee46c",
+      "result_id": "7650288b-f022-4f7f-843a-b14d8cd91c9b"
+    },
+    {
+      "claim_id": "396612b9-43db-491e-9158-2196679a5713",
+      "result_id": "7650288b-f022-4f7f-843a-b14d8cd91c9b"
+    },
+    {
+      "claim_id": "d298a18d-8685-4266-a356-24967731b0ba",
+      "result_id": "7650288b-f022-4f7f-843a-b14d8cd91c9b"
+    },
+    {
+      "claim_id": "9ea3f690-956f-429e-8efb-11f3b39e2ad4",
+      "result_id": "d19a94cb-cba4-42f1-a8a8-9efd5015dfb2"
+    },
+    {
+      "claim_id": "0fdce912-e4eb-4be8-b4b2-51a12ed45cb6",
+      "result_id": "d19a94cb-cba4-42f1-a8a8-9efd5015dfb2"
+    },
+    {
+      "claim_id": "41dc0195-8353-4a31-9cf7-5264b85d34c4",
+      "result_id": "3bf522e7-bd53-45d3-8137-fb12aa5ef122"
+    },
+    {
+      "claim_id": "1e101c8b-efbe-4c88-a037-5878e2fdfa49",
+      "result_id": "3bf522e7-bd53-45d3-8137-fb12aa5ef122"
+    },
+    {
+      "claim_id": "4c99a1f2-0fdf-48d9-82e3-767e272221e6",
+      "result_id": "3bf522e7-bd53-45d3-8137-fb12aa5ef122"
+    },
+    {
+      "claim_id": "50be363c-a9dd-46d3-9f16-5addca394df3",
+      "result_id": "3bf522e7-bd53-45d3-8137-fb12aa5ef122"
+    },
+    {
+      "claim_id": "c8dd02d9-4626-42fc-8c90-23848fcea36c",
+      "result_id": "889bf3e1-fa53-4339-ba55-8fc9c59ccc51"
+    },
+    {
+      "claim_id": "63a5003d-d26e-4170-a2a3-f9a70023c1c5",
+      "result_id": "889bf3e1-fa53-4339-ba55-8fc9c59ccc51"
+    },
+    {
+      "claim_id": "05bae864-e814-40c4-ba9b-fab3cfbdd336",
+      "result_id": "889bf3e1-fa53-4339-ba55-8fc9c59ccc51"
+    },
+    {
+      "claim_id": "58ea0540-7c3f-4003-bb22-9dda97c15dbb",
+      "result_id": "889bf3e1-fa53-4339-ba55-8fc9c59ccc51"
+    },
+    {
+      "claim_id": "42de7c8e-7ebd-4e20-bdb3-346cfcf4920e",
+      "result_id": "889bf3e1-fa53-4339-ba55-8fc9c59ccc51"
+    },
+    {
+      "claim_id": "fcd1b5db-b88b-446c-9817-0f2808e9629d",
+      "result_id": "889bf3e1-fa53-4339-ba55-8fc9c59ccc51"
+    },
+    {
+      "claim_id": "e530b468-954a-434b-bc54-6320a5d0c9ab",
+      "result_id": "889bf3e1-fa53-4339-ba55-8fc9c59ccc51"
+    },
+    {
+      "claim_id": "acddbf11-dadd-443d-abac-f7a16bb8b53f",
+      "result_id": "f80a6874-f5e0-4497-acf0-3f04e0fc60b6"
+    },
+    {
+      "claim_id": "3ccad2ca-360e-4547-b078-da05c492432a",
+      "result_id": "0024d25b-f0a6-4069-a8e8-5e2bce494f17"
+    },
+    {
+      "claim_id": "d8afaa61-a7b6-4198-8990-34a80ed9b8ba",
+      "result_id": "0024d25b-f0a6-4069-a8e8-5e2bce494f17"
+    },
+    {
+      "claim_id": "2a60c57b-5736-40c9-a806-925dbe20f33b",
+      "result_id": "0024d25b-f0a6-4069-a8e8-5e2bce494f17"
+    },
+    {
+      "claim_id": "2d043d84-3639-4c7a-ab29-e0bfbb84a413",
+      "result_id": "0024d25b-f0a6-4069-a8e8-5e2bce494f17"
+    },
+    {
+      "claim_id": "1cf7de5e-d4ca-49a7-8689-a31289b693fb",
+      "result_id": "990145f2-fc7e-4c5a-bad9-a256faaa0897"
+    },
+    {
+      "claim_id": "efc57594-7056-4e65-a611-f17f6dfb8137",
+      "result_id": "990145f2-fc7e-4c5a-bad9-a256faaa0897"
+    },
+    {
+      "claim_id": "e97adcd3-66f9-4e9f-9691-2ce5cea98e11",
+      "result_id": "990145f2-fc7e-4c5a-bad9-a256faaa0897"
+    },
+    {
+      "claim_id": "d799b583-dd88-42f5-87b4-170c9810d252",
+      "result_id": "990145f2-fc7e-4c5a-bad9-a256faaa0897"
+    },
+    {
+      "claim_id": "329b7df9-b946-4293-9186-56df2f8f5aae",
+      "result_id": "990145f2-fc7e-4c5a-bad9-a256faaa0897"
+    },
+    {
+      "claim_id": "4970de1c-b6b1-4578-8c76-1ff38386369b",
+      "result_id": "96640571-4632-4edc-aa17-7e9c2b56e207"
+    },
+    {
+      "claim_id": "1a036116-3c73-40c0-845d-1828e57d81c6",
+      "result_id": "96640571-4632-4edc-aa17-7e9c2b56e207"
+    },
+    {
+      "claim_id": "63b31edf-8def-48b4-841d-89711b186e23",
+      "result_id": "96640571-4632-4edc-aa17-7e9c2b56e207"
+    },
+    {
+      "claim_id": "eb35c3a5-21b0-48ad-8b35-57154d8a50d0",
+      "result_id": "96640571-4632-4edc-aa17-7e9c2b56e207"
+    },
+    {
+      "claim_id": "06dccff9-9f85-4004-9a96-abccff45de32",
+      "result_id": "96640571-4632-4edc-aa17-7e9c2b56e207"
+    },
+    {
+      "claim_id": "83ec4045-d94a-4c1e-a542-74228517cd15",
+      "result_id": "96640571-4632-4edc-aa17-7e9c2b56e207"
+    },
+    {
+      "claim_id": "5b9866cc-8562-4cab-a7b4-51bd3738f9ba",
+      "result_id": "7fdbac71-b13c-4a93-89f1-d93defb5c7f4"
+    },
+    {
+      "claim_id": "c2dcc950-8f64-4bac-9a7d-d201a30225ab",
+      "result_id": "aa5aee53-5c2f-49d3-89ad-11761ea4642a"
+    },
+    {
+      "claim_id": "7f202ffe-cbc2-4766-9bd4-f5d021ab91b7",
+      "result_id": "aa5aee53-5c2f-49d3-89ad-11761ea4642a"
+    },
+    {
+      "claim_id": "2c602646-39ce-4347-883b-895085e7cce9",
+      "result_id": "aa5aee53-5c2f-49d3-89ad-11761ea4642a"
+    },
+    {
+      "claim_id": "f6847547-93e8-4385-80da-cddf4dfc75c6",
+      "result_id": "a57247a5-d902-468b-b1d6-2a5ba9dc985b"
+    },
+    {
+      "claim_id": "8fdd5af5-440b-46ca-947c-ad8063793e14",
+      "result_id": "a57247a5-d902-468b-b1d6-2a5ba9dc985b"
+    },
+    {
+      "claim_id": "ff1b3022-3120-4002-b042-9cabec74a585",
+      "result_id": "625a0490-57ab-475c-b361-c7974b7b1be5"
+    },
+    {
+      "claim_id": "fba80339-e17a-4639-ab81-7f65f7f04e57",
+      "result_id": "625a0490-57ab-475c-b361-c7974b7b1be5"
+    },
+    {
+      "claim_id": "88836804-c246-4076-9ba6-a264f54d35c0",
+      "result_id": "625a0490-57ab-475c-b361-c7974b7b1be5"
+    },
+    {
+      "claim_id": "f953dc14-92ef-4dd0-8419-61b97803d657",
+      "result_id": "625a0490-57ab-475c-b361-c7974b7b1be5"
+    },
+    {
+      "claim_id": "69963333-d6f5-4d60-8c0d-05d192978d6d",
+      "result_id": "625a0490-57ab-475c-b361-c7974b7b1be5"
+    },
+    {
+      "claim_id": "5dd48b3e-09a1-4e11-934f-258005bb1e4b",
+      "result_id": "625a0490-57ab-475c-b361-c7974b7b1be5"
+    },
+    {
+      "claim_id": "6f42cc8a-5dd1-42e8-82e9-03064fd15f2b",
+      "result_id": "625a0490-57ab-475c-b361-c7974b7b1be5"
+    },
+    {
+      "claim_id": "13abb270-ecb5-4ac0-ba77-277abb86da6e",
+      "result_id": "ad344d2e-46d7-46f2-9952-1ad114d70c8c"
+    },
+    {
+      "claim_id": "68b15ce3-2c22-4a69-80f1-a6107adfcf95",
+      "result_id": "ec0adca9-d438-4740-9cc3-f954791fefb1"
+    },
+    {
+      "claim_id": "963ae8bd-de9f-4bb5-a2d4-da89144e63f8",
+      "result_id": "ec0adca9-d438-4740-9cc3-f954791fefb1"
+    },
+    {
+      "claim_id": "0a38df28-2bae-4179-90bf-450d84c5c44f",
+      "result_id": "ec0adca9-d438-4740-9cc3-f954791fefb1"
+    },
+    {
+      "claim_id": "aca11e52-bffa-4f58-a76b-03883a938aaf",
+      "result_id": "ec0adca9-d438-4740-9cc3-f954791fefb1"
+    },
+    {
+      "claim_id": "5722483a-eb96-4a0e-9c14-21493c7d98dd",
+      "result_id": "2705e6dc-7b19-4ef0-b66d-a88c3453375a"
+    },
+    {
+      "claim_id": "f2b3d313-e6cc-40a6-9ea8-98ca96c673e0",
+      "result_id": "2705e6dc-7b19-4ef0-b66d-a88c3453375a"
+    },
+    {
+      "claim_id": "37a751e1-4ee6-49c1-8c9e-f8912ac07439",
+      "result_id": "2705e6dc-7b19-4ef0-b66d-a88c3453375a"
+    },
+    {
+      "claim_id": "6d5a4f28-11bd-45b9-85dc-d265edf509cc",
+      "result_id": "2705e6dc-7b19-4ef0-b66d-a88c3453375a"
+    },
+    {
+      "claim_id": "da165b73-f042-4ed2-ad16-c1cd4c2d8bb5",
+      "result_id": "237c568c-3524-4cda-a270-c26f2eca040a"
+    },
+    {
+      "claim_id": "38b9fe23-de19-43f9-b920-4010ff3f21a3",
+      "result_id": "237c568c-3524-4cda-a270-c26f2eca040a"
+    },
+    {
+      "claim_id": "2cc88c34-dafe-43b2-99cd-1ac9b12477e3",
+      "result_id": "237c568c-3524-4cda-a270-c26f2eca040a"
+    },
+    {
+      "claim_id": "edee92ee-5fe8-4fcd-b25f-a98d61c147aa",
+      "result_id": "62f82de0-f1fa-43e9-91a1-78c425ed3b83"
+    },
+    {
+      "claim_id": "47b52e93-559b-41d0-a5e4-a93283cfd440",
+      "result_id": "62f82de0-f1fa-43e9-91a1-78c425ed3b83"
+    },
+    {
+      "claim_id": "1bad58f8-d495-4652-a96c-e4067c2e1dd0",
+      "result_id": "62f82de0-f1fa-43e9-91a1-78c425ed3b83"
+    },
+    {
+      "claim_id": "611f76e5-e29d-4be8-8444-61703b58735a",
+      "result_id": "0d60c552-e05b-41c9-a584-7d642072a39c"
+    },
+    {
+      "claim_id": "467024fb-b43e-4d9b-b406-c438fd37c771",
+      "result_id": "0d60c552-e05b-41c9-a584-7d642072a39c"
+    },
+    {
+      "claim_id": "b052e60c-fd87-4a6c-8f0c-c55cc868ef8a",
+      "result_id": "0d60c552-e05b-41c9-a584-7d642072a39c"
+    },
+    {
+      "claim_id": "ea4e91cd-3129-4658-b816-0b063b42a1c9",
+      "result_id": "0d60c552-e05b-41c9-a584-7d642072a39c"
+    }
+  ],
+  "comparisons": []
+}

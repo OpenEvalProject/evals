@@ -1,0 +1,1823 @@
+{
+  "submission": {
+    "id": "edbd5603-a110-455a-bdf7-88339b1748a2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:01:11.270093Z",
+    "updated_at": "2025-11-28T20:01:11.270093Z"
+  },
+  "content": [
+    {
+      "id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "submission_id": "edbd5603-a110-455a-bdf7-88339b1748a2",
+      "content_type": "manuscript",
+      "content_text": "# Hypothalamic melanin concentrating hormone neurons communicate the nutrient value of sugar\n\n## Authors\n\n- Ana I Domingos<sup>1</sup> \u2020\n- Aylesse Sordillo<sup>1</sup>\n- Marcelo O Dietrich<sup>2</sup>\n- Zhong-Wu Liu<sup>2</sup>\n- Luis A Tellez<sup>4</sup>\n- Jake Vaynshteyn<sup>6</sup>\n- Jozelia G Ferreira<sup>4</sup>\n- Mats I Ekstrand<sup>1</sup>\n- Tamas L Horvath<sup>2</sup>\n- Ivan E de Araujo<sup>4</sup>\n- Jeffrey M Friedman<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Genetics The Rockefeller University New York United States\n2. Section of Comparative Medicine Yale University New Haven United States\n3. Department of Biochemistry Universidade Federal do Rio Grande do Sul (UFRGS) Porto Alegre Brazil\n4. Feeding Laboratory The JB Pierce Laboratory New Haven United States\n5. Department of Psychiatry Yale University School of Medicine New Haven United States\n6. Department of Neuroscience Albert Einstein College of Medicine New York United States\n7. Howard Hughes Medical Institute, The Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSugars that contain glucose, such as sucrose, are generally preferred to artificial sweeteners owing to their post-ingestive rewarding effect, which elevates striatal dopamine (DA) release. While the post-ingestive rewarding effect, which artificial sweeteners do not have, signals the nutrient value of sugar and influences food preference, the neural circuitry that mediates the rewarding effect of glucose is unknown. In this study, we show that optogenetic activation of melanin-concentrating hormone (MCH) neurons during intake of the artificial sweetener sucralose increases striatal dopamine levels and inverts the normal preference for sucrose vs sucralose. Conversely, animals with ablation of MCH neurons no longer prefer sucrose to sucralose and show reduced striatal DA release upon sucrose ingestion. We further show that MCH neurons project to reward areas and are required for the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2212/\u2212 mice. These studies identify an essential component of the neural pathways linking nutrient sensing and food reward.\n\n## Introduction\n\nAnimals and humans generally prefer sugars containing glucose, such as sucrose, compared to non-nutritive sweeteners such as sucralose (Smiciklas-Wright et al., 2002; Jacobson, 2005; Domingos et al., 2011; Sicher, 2011) as a result of the post-ingestive rewarding effect of sucrose (Domingos et al., 2011). This post-ingestive rewarding effect of sucrose was first described by showing that non-nutritive liquids that are paired to glucose administration either in the intra-gastric tract or in plasma, are greatly preferred over liquids that are not paired with nutrients (de Araujo et al., 2008; Ren et al., 2010; de Araujo et al., 2010; Oliveira-Maia et al., 2011; Sclafani et al., 2011; Fernstrom et al., 2012; de Araujo et al., 2013). In addition, sweet-blind Trpm5 knockout mice can still sense the nutrient value of sucrose (de Araujo et al., 2008). These studies have indicated that the nutrient value of sucrose is sensed and in turn establishes a preference for nutritive sugars (Ren et al., 2010; de Araujo et al., 2010; Sclafani et al., 2011; Fernstrom et al., 2012). These data further indicate that the post-ingestive rewarding effect plays an important role in driving nutrient choice (in addition to sweet taste). However, despite the substantial evidence that they play a major, perhaps dominant, role in driving food intake and sweetener preference, the neural pathways that sense glucose and mediate the post-ingestive rewarding effect of sucrose have not been identified.\n\nRodent studies have further shown that sucrose but not artificial sweeteners such as sucralose can drive dopamine (DA) release in the midbrain even in the absence of taste (de Araujo et al., 2008; Ren et al., 2010; de Araujo et al., 2010; Oliveira-Maia et al., 2011; Sclafani et al., 2011; Fernstrom et al., 2012; de Araujo et al., 2013). The combination of sweet taste plus an increase of dopamine accounts for the preference for natural vs artificial sweeteners (Domingos et al., 2011). We previously reported that the artificial sweetener sucralose is preferred to sucrose only if supplemented by a proxy for this post-ingestive reward in the form of optogenetic activation of DA neurons (Domingos et al., 2011). However, the elements of the neural circuit that convey the post-ingestive rewarding effect of sucrose and activate DA neurons are unknown.\n\nMelanin-concentrating hormone-expressing neurons (Pmch or, MCH neurons; in accordance with previous literature [Shimada et al., 1998; Alon and Friedman, 2006; Kong et al., 2010], we adopt the later nomenclature throughout this report) in the lateral hypothalamus (LH) are glucose sensitive, and show increased activity when extracellular glucose levels increase (Burdakov et al., 2005; Kong et al., 2010). Pmch knockout and MCH neuronal ablation lead to reduced body weight, indicating a critical role of these neurons in the regulation of energy balance (Shimada et al., 1998; Whiddon and Palmiter, 2013). In addition, MCH neurons send dense projections to reward centers in the striatum and midbrain where dopaminergic neurons are located (current report). This strong anatomical connection between MCH neurons and reward nuclei, as well as the fact that MCH neurons sense glucose levels, led us to hypothesize that these hypothalamic neurons could play a role in conveying the reward value of sucrose.\n\n## Results\n\nWe first tested whether optogenetic activation of MCH neurons could alter an animal\u2019s preference for sucrose vs sucralose using a BAC transgenic Pmch-CRE mouse line that we generated (see \u2018Materials and methods\u2019). Pmch-CRE mice were crossed to the channelrhodopsin-2 (ChR2) reporter mouse line B6;129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J (Madisen et al., 2012), herein abbreviated Rosa26-LSL-ChR2-YFP, to generate Pmch-ChR2 mice. We characterized Pmch-CRE mice and thus confirmed tissue- and cell-specific expression of ChR2-YFP in MCH neurons as shown (Figure 1A). The YFP signal was seen in the LH with the characteristic appearance of MCH neurons (Figure 1A), and there was a 92 \u00b1 8% overlap of YFP and MCH. In addition, 97 \u00b1 3% of MCH neurons expressed ChR2-YFP (Figure 1B). Whole-cell patch-clamp recordings in slice preparations confirmed light-evoked spiking at 5, 10, and 20 Hz (Figure 1C), as well as during continuous light pulses of one second (Figure 1D). The spike rate of MCH neurons was higher with light pulses of 20 Hz vs 5 Hz. Note, glucose has been shown to evoke similar high-frequency bursting of MCH neurons (see inset, Figure 1D) (Burdakov et al., 2005). We also recorded voltage responses to consecutive pulses of continuous light in order to test the capacity of these cells to resist repeated trains of light stimulation (Figure 1D). Spike attenuation (Figure 1D, inset) during optogenetic stimulation was similar to what has been previously reported for glucose-triggered responses (Burdakov et al., 2005; Kong et al., 2010) in MCH neurons, and changes in membrane potential were resilient to optical stimulation (Figure 1\u2014figure supplement 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig1-v1.jpg)\n\n**Figure 1.:** (A) Pmch-CRE mice were mated to Rosa26-LSL-ChR2-YFP, and expression of ChR2-YFP (green\u2014right panel) in MCH neurons (red\u2014middle panel) in the LH are shown individually as well as in a merged panel (left panel); scale bar (Scale bar: 15 \u00b5m). (B) Quantification of co-expression of MCH and YFP shows that 97 \u00b1 3% of MCH positive neurons expressed YFP and that 92 \u00b1 8% of ChR2-YFP neurons expressed MCH (n = 1200 cells in four mice). (C) The effect of light stimulation on spike activity, evoked by light stimulation at 5 Hz, 10 Hz, and 20 Hz. (D) The response to 1 s continuous light stimulation, repeated 10 times. Inset, spike train in response to continuous light stimulation similar to what has been described for glucose-induced responses (see text for references and Figure 1\u2014figure supplement 1 for quantification).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) In voltage clamp mode, typical lightinduced ChR2 currents (n = 10, 1 ms pulse) and average amplitude of ChR2-induced inward currents. (B) Quantification of Figure 1D: left plot\u2014continuous light stimulation generates a spiking rate of 20 \u00b1 1.37 spikes/s (n = 20 light pulses). Right plot\u2013Vm before, during and after continuous light stimulation shows that continuous light stimulation for 1 s depolarizes MCH neurons, which promptly recover to native membrane potential (Vm) upon termination of light pulses.\n\nWe implanted optical fibers into the LH of Pmch-ChR2 and Pmch-CRE control mice (respectively, ChR2[+] and ChR2[\u2013]) and assayed their preferences in a series of two-bottle choice tests (Figure 2, Figure 2\u2014figure supplement 1 and \u2018Materials and methods\u2019). After five licks at a designated sipper, laser pulses of 5 Hz, 20 Hz, were delivered for 1 s, followed by a refractory period of another second (\u2018Materials and methods\u2019 and Figure 2\u2014figure supplement 1). ChR2(+) and ChR2(\u2013) mice had equal preference for water+laser vs water alone at all stimulation frequencies tested (Figure 2A). We next compared an animal\u2019s preference for sucrose vs sucralose plus optogenetic activation of MCH neurons (see \u2018Materials and methods\u2019 for the rationale of concentrations chosen). In the absence of ChR2 (gray bars in Figure 2) or at a low stimulation frequency of 5 Hz (Figure 2A), animals still preferred sucrose to sucralose. However, consistent with the greater effect of 20 Hz on spiking of MCH neurons in slice preparation, a light frequency of 20 Hz, as well as continuous light, inverted an animal\u2019s preference with a strong preference for sucralose plus MCH activation relative to sucrose (Figure 2B, Figure 2\u2014figure supplement 2). At 20 Hz, ChR2(\u2013) mice (Figure 2B, middle panel, gray bars) displayed a preference ratio for sucrose of 82.2 \u00b1 3%, whereas ChR2(+) mice had a sucrose preference ratio of 20.0 \u00b1 4% (Figure 2B, middle panel, blue bars). This preference ratio for sucrose is significantly lower than isopreference (p<0.0001 one sample T-test against 50%). Under continuous light, ChR2(\u2013) mice displayed a preference ratio for sucrose of 76.7 \u00b1 3% (Figure 2B, right panel, gray bars), whereas ChR2(+) mice displayed a preference ratio for sucrose of 26.8 \u00b1 5% (Figure 2B, right panel, blue bars). This preference ratio for sucrose is significantly lower than isopreference (p<0.0007 one sample T-test against 50%).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig2-v1.jpg)\n\n**Figure 2.:** (A) Pmch-ChR2 and Pmch-CRE control mice (respectively, ChR2[+] and ChR2[\u2212]) were implanted with optical fibers (Figure 2\u2014figure supplement 1) and were given the choice between water paired to laser and water alone. Laser preference is defined as the ratio of the number of licks of the water bottle that was paired to laser \u2018ON\u2019 and the total number of licks of both bottles (\u00d7100). Light stimulation during ingestive behavior was set to 5 Hz, 20 Hz, and continuous (Figure 2\u2014figure supplement 1 for lick/laser contingency). Optogenetic stimulation of MCH neurons during water intake did not influence preference behavior at any of the light stimulation frequencies. (B) ChR2(\u2013) and Chr2(+) mice were given the choice between sucralose coupled to laser and sucrose. Sucrose preference is defined as the ratio of the number of licks of the bottle containing sucrose and the total number of licks of both bottles (\u00d7100). Light stimulation during ingestion of sucralose was set to 5 Hz, 20 Hz, and continuous. 20 Hz and continuous light stimulation, but not 5 Hz, inverts preference from sucrose to sucralose (see \u2018Materials and methods\u2019 and Figure 2\u2014figure supplement 2 for total licks per bottle). All data are mean \u00b1 SEM and n = 4 mice. ***p<0.0001, ns: p>0.28, t test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic of optical fiber implant in LH of ChR2(\u2212) and ChR2(+) mice. (B) The laser was turned ON for one second at every five consecutive licks on the same sipper, and OFF for the following 1 s. The laser was turned ON at three frequency regimens: either at 5 Hz, 20 Hz or continuously on. Lick/laser contingencies were the same for sucralose and water. Each vertical blue stroke in the blue raster represents the laser onset. Bottom schematic of magnified time lines (zoom in inset) of licks and laser are not draw to scale.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Licks on each bottle, averaged across mice. ChR2(\u2212) and ChR2(+) mice gave a total number of licks, respectively. (A) 347 \u00b1 61 and 432 \u00b1 72 on the water+laser and 385 \u00b1 78 and 382 \u00b1 70 on the water. (B) 354 \u00b1 71 and 382 \u00b1 70 on the water+laser and 317 \u00b1 69 and 333 \u00b1 52 on the water. (C) 395 \u00b1 72 and 334 \u00b1 73 on the water+laser and 320 \u00b1 53 and 326 \u00b1 64 on the water. (D) 102 \u00b1 31 and 182 \u00b1 45 on sucralose+laser and 464 \u00b1 92 and 588 \u00b1 81 on sucrose (E) 107 \u00b1 13 and 555 \u00b1 87 on sucralose+laser and 494 \u00b1 74 and 139 \u00b1 33 on sucrose. (F) 141 \u00b1 56 and 386 \u00b1 68 on sucralose+laser and 463 \u00b1 83 and 141 \u00b1 56 on sucrose. All data are mean \u00b1 SEM, ***p<0.0002, **p<0.005, *p<0.02, t tests.\n\nThe post-ingestive rewarding effect of glucose is associated with an increase of DA release in the striatum (de Araujo et al., 2013; de Araujo et al., 2008; de Araujo et al., 2010; Ren et al., 2010), and we confirmed that MCH neurons densely innervate the striatum and the ventral midbrain, making synapses onto DA neurons (Figure 3\u2014figure supplement 1, \u2018Materials and methods\u2019). We thus tested whether the inversion of preference to sucralose by activating MCH neurons was correlated with increases in striatal DA release as measured by microdialysis in ChR2(+) mice (de Araujo et al., 2008; de Araujo et al., 2013) (Figure 3A). After signal stabilization, samples were collected during a 30-min period when the animals had access to sucralose (Figure 3A,B). As previously reported, animals drinking sucralose (without light stimulation) displayed negligible changes in striatal DA levels (Figure 3B). Animals drinking sucralose when the laser was set to OFF displayed an overall 8.2 \u00b1 2.6% change from baseline DA (average across all S1\u2013S5 samples); this change was not significantly different from baseline (gray bars in Figure 3E p>0.05, one sample T-test against 100% baseline). However, when sucralose ingestion was coupled to laser stimulation of MCH neurons, DA release significantly increased in the striatum (**p<0.008; Figure 3C\u2013G, blue bars). When laser was set to ON during ingestion of sucralose, DA levels increased 68.7 \u00b1 9% vs baseline DA (average across all S1\u2013S5 samples, blue bars in Figure 3E). This increase is not only significantly different from baseline and the OFF condition, but is also significantly different from DA release after experimenter-controlled (i.e., direct) delivery of laser pulses, in the absence of sucralose ingestion (light blue bar in Figure 2E, ****p<5.7e10\u22127, t-test, with Bonferroni correction for multiple comparisons). Each animal received the same number of pulses as the number of laser pulses during ingestion of sucralose in the ON condition (Figure 3E). Mice used in condition laser-ON were the same as in condition laser-OFF. Optogenetic activation of MCH neurons markedly increased sucralose ingestion during the laser ON condition (*p<0.05; Figure 3F) while activation of MCH neurons did not change intake of water (Figure 2\u2014figure supplement 2). As mentioned above, optogenetic stimulation of MCH neurons paired to water was not preferred to water alone, showing that activation of MCH neurons is not rewarding in the absence of sucralose. Thus, both MCH activation and the presence of sucralose were required to establish a change of preference.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematics of microdialysis sampling of striatal DA release in behaving mice (left panel) after intracranial implants of optical fibers in the LH and microdialysis probe in the striatum (S). (B) A timeline of licking behavior and DA collection with corresponding HPLC-ECD chromatograms of DA release when a ChR2(+) mouse drank 1.5 mM sucralose with the laser OFF. (C) A timeline with the laser ON at 20 Hz. (D) A timeline of average of DA increases from baseline across mice. (E) Overall change from baseline DA averaging across all S1\u2013S5 samples in (D) and in the absence of drinking behavior with the laser ON (lighter blue). Each animal received the same number of pulses as the number of laser pulses delivered during ingestion of sucralose in the ON condition. On average, 201 \u00b1 40 pulses were delivered. (F) The cumulative licks during microdialysis in both conditions are shown (see Figure 3\u2014figure supplement 1 for MCH projections to reward centers and Figure 3\u2014figure supplement 2 for requirement of DA transmission in sucrose/sucralose preference). All data are mean \u00b1 SEM and n = 4 mice, *p<0.05, **p<0.008, ****p<5.7e10\u22127.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) GFP labeled axons that form synaptic-like boutons (white arrowheads) onto dopamine neurons. (B) Electron microscopy of gold enhanced detection of GFP in MCH neurons (black arrowheads) and silver-gold enhanced detection of TH-expressing neurons (grey arrow heads) of MCH-GFP transgenic mice, showing the existence of asymmetrical synapses between MCH and DA neurons, note the presence of dense core vesicles in MCHsilver-gold labeled boutons. (C) axonal projections of MCH-GFP neurons onto the dorsal striatum (DS). (D) axonal projections of MCH-GFP neurons onto the nucleus accumbens (Nac). (E) axonal projections of MCH-GFP neurons onto the substancia nigra (SN). (F) axonal projections of MCH-GFP neurons onto the ventral tegmental area (VTA).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Blocking dopamine transmission with haloperidol (hal) suppressed preference for sucrose versus sucralose. In 10 min, wild-type animals injected with hal (ip, 1 mg/kg) showed a preference ratio for sucrose of 51 \u00b1 7%, whereas vehicle treated animals showed a preference ratio for sucrose of 79 \u00b1 4%. (B) Licks on each bottle in (A) averaged across mice. Vehicle and haloperidol treated mice gave a total number of licks, respectively 272 \u00b1 28, 104 \u00b1 16 on sucrose and 72 \u00b1 10, 100 \u00b1 11 on sucralose. All data are mean \u00b1 SEM, n= 12 mice. ***p<0.0022, ****p<0.0001, NS = not significant, t test.\n\nWe next tested whether a loss of MCH neurons decreased DA release during sucrose intake. We crossed Pmch-CRE mice to C57BL/6-Gt(ROSA)26Sortm1(HBEGF)Awai/J, (Buch et al., 2005) herein abbreviated Rosa26-LSL-DTR, to generate Pmch-CRE;LSL-DTR mice that specifically express the diphtheria toxin receptor (DTR) in MCH neurons (Figure 4). We injected Pmch-CRE;LSL-DTR mice with diphtheria toxin (+DT) or vehicle (+veh) intracranially (1 ng/g of body weight). This dose led to a complete loss of MCH neurons (Figure 4A, see Figure 4\u2014figure supplement 1 for other doses). MCH-ablated (Pmch-CRE-LSL-DTR+DT) and control mice (Pmch-CRE-LSL-DTR+veh, and LSL-DTR+DT) were subjected to microdialysis sampling of striatal DA during sucrose ingestion (Figure 4B). Control mice drinking sucrose displayed significantly higher dopamine levels compared to MCH-ablated mice (Figure 4C\u2013F; **p<0.008 ANOVA in Figure 4E). Control mice showed an overall 118.3 \u00b1 0.3% increase in striatal DA levels while drinking sucrose (average across all S1\u20135 samples, Figure 4F, ***p<1.98e10\u22129 T-test). The increase of DA levels was significantly above those at baseline (p<0.0018, one sample T-test compared to 100% baseline). In contrast to animals without DT injection, MCH-ablated mice showed a negligible DA efflux during sucrose intake, and the levels after sucrose exposure did not differ from baseline levels (p>0.4, one sample T-test compared to 100% baseline). Baseline DA levels were similar in both groups (Figure 4, Figure 4\u2014figure supplement 2A). Consistent with a lower reward value of sucrose, when given free access to sucrose or water, MCH-ablated mice consumed significantly less sucrose than control mice (Figure 4G, *p<0.05 ANOVA), while water intake was equivalent between the groups (Figure 4, Figure 4\u2014figure supplement 2B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig4-v1.jpg)\n\n**Figure 4.:** (A) Pmch-CRE;LSL-DTR mice were treated with 1 ng/g of DT. Complete ablation of MCH neurons by intracranial injection of diphtheria toxin is shown. (see Figure 4\u2014figure supplement 1 for other doses). (B) Schematics of microdialysis in behaving mice after intracranial implant of microdialysis probe in the striatum (S). (C) A timeline of licking behavior and DA collection, with corresponding HPLC-ECD chromatograms when a control mouse drank 0.4 M sucrose is shown. (D) A timeline similar to (C) when an MCH-ablated mouse drank sucrose (E) timeline of average DA increases from baseline across mice are shown. (F) For both genotypes, overall change from baseline DA averaging across all S1\u2013S5 samples in (E) is shown. (G) Cumulative licks during microdialysis in both groups (see figure supplements for additional controls). All data are mean \u00b1 SEM and n = 4 mice. *p<0.05, **p<0.008, ***p<1.98e10\u22129.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Medium/high systemic doses (\u223c25 ng/g body weight or higher) of DT are thought to be toxic to wild type mice. We thus assessed whether low doses of DT administered intra-cranially were efficient at ablating MCH neurons, keeping mice viable, normal in size, and free of any gross physical or behavioral abnormalities. Animals were injected intra-crannially at coordinates AP = \u22121.5, ML = +/\u22121.6, DV = 5.5 (\u2018Materials and methods\u2019). PBS injected mice had 31 \u00b1 2 neurons/section marked with MCH. At a dose of 0.5 ng per gram of animal, 3.6 \u00b1 0.5/section neurons marked with MCH could be visualized under fluorescence microscopy. At a dose of 1 ng per gram of animal, 0.3 \u00b1 0.18 neuron/section marked with MCH could be visualized under fluorescence microscopy. Statistically, this amount is not significantly different from zero (p>0.05, One sample t test against zero). All data are mean \u00b1 SEM, n = 5 mice.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Baseline DA concentration of ablated MCH-Cre; LSL-DTR+DT mice (0.34 \u00b1 0.09pg/\u03bcl) were not significantly different from control MCH-Cre; LSLDTR+veh mice (0.25 \u00b1 0.05pg/\u03bcl)(p>0.22, t test), thus excluding chronic effects of MCH neuronal ablation on DA levels. (B) after 20\u201323 hr of water deprivation, ablated MCH-Cre; LSL-DTR+DT mice drank, for 1 hr, approximately as much water (782 \u00b1 100 licks) as control MCH-Cre;LSL-DTR+veh mice (642 \u00b1 101 licks) (difference is not statistically significant p>0.29, t test, n = 4 mice). All data are mean \u00b1 SEM.\n\nMCH-ablated and control mice were also given a series of choices sequentially with studies of (A) sucrose vs sucralose, (B) sucrose vs water, (C) sucralose vs water (Figure 5A\u2013C), and preference ratios for each comparison were computed. Preference ratios for sucrose in Pmch-CRE;LSL-DTR(+veh), LSL-DTR(+DT) and Pmch-CRE;LSL-DTR(+DT) mice were, respectively, 77.1 \u00b1 7%, 82.0 \u00b1 4%, and 39.9 \u00b1 5%. While control mice preferred sucrose to sucralose, MCH-ablated mice no longer had a preference for sucrose. This reduction in sucrose preference is statistically significant (Figure 5A, *p<0.0012, \u00a5p<0.009, T-test with Bonferroni correction for multiple comparisons, same-symbol pairs indicate statistically significant differences; see also Figure 5\u2014figure supplement 1 for total licks in each). However, MCH neuronal ablation did not alter an animal\u2019s preference for either sucrose or sucralose vs water indicating that, in contrast to their requirement for establishing the post-ingestive effect of sucrose, MCH neurons are not required for establishing a preference for sweet taste (Figure 5B,C and Figure 5\u2014figure supplement 1). The postprandial increase in blood glucose after sucrose ingestion was normal in MCH-ablated animals (Figure 5 and Figure 5\u2014figure supplement 2), demonstrating that the changes in sucrose preference were not a result of any differences in blood glucose levels (Kong et al., 2010). Altogether, these data indicate that activation of MCH neurons are necessary and sufficient for establishing the preference of animals for sucrose compared to artificial sweeteners.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013C) Mice with ablated MCH neurons (red filled bars) and their respective controls (blue filled bars) were given the choice of (A) 0.4 M sucrose vs 1.5 mM sucralose (*p<0.03, \u00a5p<0.011, see \u2018Materials and methods\u2019 for the rationale of concentrations). (B) Sucrose vs water. (C) Sucralose vs water. All mice preferred either sweetener\u2014sucrose or sucralose\u2014over water. (D) Sweet-blind Trpm5\u2212/\u2212 mice, with and without ablation of MCH neurons, were subject to a 4-day bottle-conditioning protocol, in which sucrose and sucralose were presented in opposing bottles, on alternate days. Bottle preference was tested on the fifth day with two bottles filled with water. Sweet-blind control mice showed a significant side bias towards the bottle where sucrose was placed during the conditioning sessions whereas MCH-ablated mice did not (*p<0.045, \u00a5p<0.099, see Figure 5\u2014figure supplement 1 for total licks in each bottle, Figure 5\u2014figure supplement 2 for blood glucose controls, and \u2019Materials and Methods\u2019 for details). All data are mean \u00b1 SEM and n = 8 mice, t test with Bonferroni correction for multiple comparisons.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Licks on each bottle, averaged across mice, panels follow the same order as in main figure. LSL-DTR+DT and MCH-Cre; LSL-DTR+veh control mice and MCH-Cre; LSL-DTR+DT ablated mice give a total number of licks, respectively. (A) 287 \u00b1 31, 336 \u00b1 11, 99 \u00b1 14 on sucrose and 63 \u00b1 7, 100 \u00b1 11, 149 \u00b1 19 on sucralose. (B) 308 \u00b1 43, 301 \u00b1 33, 310 \u00b1 34 on sucrose and 150 \u00b1 17, 80 \u00b1 9, 73 \u00b1 8 on water. (C) 316 \u00b1 34, 288 \u00b1 31, 320 \u00b1 35, on sucralose and 69 \u00b1 8, 59 \u00b1 6, 106 \u00b1 12 on water (d) Trpm5\u2212/\u2212 LSL-DTR+DT and Trpm5\u2212/\u2212 MCH-Cre; LSL-DTR+veh control mice and Trpm5\u2212/\u2212 MCH-Cre; LSL-DTR+DT ablated mice give a total number of licks, respectively 267 \u00b1 29, 248 \u00b1 27, 99 \u00b1 11 on the sucrose-conditioned side and 114 \u00b1 12, 65 \u00b1 7, 97 \u00b1 10 on the sucralose control side. All data is mean \u00b1 SEM, ****p<0.0001, ***p<0.005, NS = not significant\u2014p>0.05. t test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Blood glucose (BG) was measured 10 min before and after an IP bolus injection of glucose (10%, \u2018Materials and methods\u2019). The BG of MCH-Cre; LSL-DTR+DT MCH-ablated mice and control MCH-Cre;-LSL-DTR+veh before injection was, respectively, 122 \u00b1 11 mg/dl and 151 \u00b1 16 mg/dl. After injection, BG raises, respectively to 325 \u00b1 28 mg/dl and 355 \u00b1 34 mg/dl. The raise in BG was statistically significant before/after injection (*p<0.05, student t test, n = 4), but not across control and ablated groups of mice (*p>0.05, student t test, n = 4). (B) BG levels were measured ten minutes before and at the end of a behavioral trial in which mice drank 0.4 M sucrose for 10 min. The BG of MCH-Cre;-LSL-DTR+DT mice and control MCH-Cre;-LSL-DTR+veh before drinking was, respectively, 121.82 \u00b1 11 mg/dl and 138 \u00b1 12 mg/dl. After drinking, BG raised, respectively to 254 \u00b1 20 mg/dl and 295 \u00b1 55 mg/dl. The raise in BG was statistically significant before/after drinking (*p<0.05, student t test, n = 4), but not across control and ablated groups of mice (p>0.05, student t test, n = 4). (C) MCH-Cre;-LSL-DTR+DT MCH-ablated mice and control MCH-Cre;-LSL-DTR+veh drank comparable amounts of sucrose solution during the behavioral trial in panel (B), respectively, 336 \u00b1 132 and 351 \u00b1 121 licks (n = 4).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01462/elife-01462-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (B\u2013C) Confocal imaging of cFos staining of in Th positive neurons in the VTA of one control Trpm5\u2212/\u2212;MCHCRE; Rosa26-Flox-DTR+veh mouse after drinking sucrose (350 licks). (D\u2013F) Confocal imaging of cFos staining in Th positive neurons in the VTA of one ablated Trpm5\u2212/\u2212;MCHCRE; Rosa26-Flox-DTR+dt mouse after drinking 0.4 M sucrose (364 licks). (G) Quantification across groups (n = 4) revealed that the level of cFos expression in DA neurons after exposure to sucrose is significantly lower in sweet blind Trpm5\u2212/\u2212 animals in which MCH neurons have been ablated vs controls. Trpm5\u2212/\u2212;MCHCRE; Rosa26-Flox-DTR+dt, show cFos expression in 20.3 \u00b1 3.7% of DA neurons after sucrose intake vs. 36.0 \u00b1 2.5% in control Trpm5\u2212/\u2212;MCH-CRE;Rosa26-Flox-DTR+veh (p*< 0.004, t test). Ablated and control group drank, respectively, 356 \u00b1 102 and 341 \u00b1 111 licks of 0.4 M sucrose (n = 4). (H) Ablation of MCH neurons does not impact activation in THnegative cells. Quantification of c-Fos in nondopaminergic cells of the same slices as in (g). Trpm5\u2212/\u2212;MCH-CRE;Rosa26-Flox-DTR+veh and Trpm5\u2212/\u2212;MCH-CRE;Rosa26-Flox-DTR+dt have respectively, 16.0 \u00b1 4% and 14.1 \u00b1 3.5% of cFos positive neurons that are TH negative.\n\nFinally, to confirm that MCH neurons are required for the post-ingestive rewarding effect of sugar even in the absence of sweet taste, we tested whether sucrose could condition preference in sweet-blind Trpm5\u2013/\u2013 mice lacking MCH neurons (Figure 5D, de Araujo et al., 2008). Sweet-blind control mice showed a significant side bias towards the side where sucrose was placed during the conditioning sessions, in which sucrose or sucralose are delivered at opposite sides on alternate days, (Figure 5D). In contrast, sweet-blind MCH-ablated mice did not show a preference in this conditioning protocol, indicating that the post-ingestive rewarding effect of sucrose had been lost. Trpm5\u2013/\u2013 Pmch-CRE;LSL-DTR+veh and Trpm5\u2013/\u2013LSL-DTR+DT control mice showed conditioned side preferences of 70 \u00b1 3% and 79 \u00b1 5% respectively, towards the side where sucrose was placed. Trpm5\u2013/\u2013 Pmch-CRE;-LSL-DTR(+DT) mice had 50 \u00b1 7% conditioned side preference towards the side where sucrose was placed. This reduction in sucrose conditioning was statistically significant from that of controls (Figure 5D, *p<0.045, \u00a5p<0.099, T-test with Bonferroni correction for multiple comparisons, same-symbol pairs indicate statistically significant differences). Finally, the behavioral conditioning by the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2013/\u2013 mice positively correlates with the extent of DA neuron activation, as assayed by staining for cFos in DA neurons in the ventral tegmental area (VTA) (Figure 5, Figure 5\u2014figure supplement 2). These data confirm that MCH neurons are required for sensing the nutrient value of sucrose in the absence of taste.\n\n## Discussion\n\nIn this manuscript, we report that MCH neurons are necessary and sufficient for establishing a preference for sucrose vs sucralose, an artificial sweetener. MCH neurons serve as an essential link between glucose sensing and sugar reward, and these data thus identify a key component of the neural circuit that establishes the preference for natural vs artificial sweeteners (Smiciklas-Wright et al., 2002; Jacobson, 2005; Domingos et al., 2011; Sicher, 2011).\n\nMCH neurons have previously been shown to be excited by glucose (Burdakov et al., 2005; Kong et al., 2010), suggesting that direct glucose sensing by these neurons regulates reward. However, it is also possible that glucose is sensed elsewhere, such as by putative gastric/intestinal sensors or other nutrient sensors, which inform the brain and MCH neurons about the nutrient content of ingested food (Sclafani et al., 2011). Glucose sensing in MCH neurons or elsewhere would explain why, even in the absence of taste (such as in Trpm5\u2013/\u2013 mice), sucrose is able to drive significant increase of striatal DA. This increase, in turn, conveys reward and conditions behavior (de Araujo et al., 2008). We note, however, that optogenetic stimulation of MCH neurons alone is not sufficient to alter behavior in the absence of taste. The data thus suggest that MCH neurons are components of a reward-encoding network that integrates information from multiple sources, including the nutrients themselves, lingual taste buds and, possibly, other sites of glucose sensing like the gut. Consistent with this possibility, viral tracing from lingual taste buds shows that MCH neurons are part of a circuit processing gustatory information (P\u00e9rez et al., 2011). This finding is also consistent with the optogenetic data reported here, showing a requirement for both sweet taste and activation of MCH neurons to drive reward. The role of MCH neurons uncovered here contrasts with that of DA neurons, which upon optogenetic stimulation have been shown to be rewarding when paired to water (Domingos et al., 2011).\n\nA synergy between taste and the post-ingestive rewarding effect would explain why sucrose and other fructose/glucose disaccharides, which are more potent stimulators of sweet-taste receptors than glucose alone, are generally preferred to glucose alone (Sclafani and Mann, 1987; Nelson et al., 2001). This synergy would also explain why our optogenetic gain of function experiments lead to an inversion of preference, rather than an isopreference, which could perhaps have been achieved by decreasing the concentration of sucralose. Likewise, the loss of function of MCH neurons leads to isopreference, but this could perhaps be biased toward sucralose by increasing its concentration. Further studies will be necessary to establish the relevant sites of glucose sensing, identify additional elements of the neural circuit integrating gustatory perception with nutrient sensing and reward, as well as elucidating the neural mechanisms by which MCH neurons regulate striatal DA release. Several methods including viral tracing can be used to identify monosynaptic or polysynaptic inputs onto MCH and DA neurons.\n\nAs mentioned, the activity of MCH neurons is increased by glucose (Burdakov et al., 2005). Glucose-activated MCH neurons and pancreatic \u03b2 cells share signal transduction components necessary for glucose sensing, and both Kir6.2 and UCP2 regulate glucose excitability of MCH neurons (Kong et al., 2010). Moreover, a loss of function of Kir6.1 in MCH neurons leads to alterations in results of a glucose tolerance test with increased plasma glucose at later times, establishing a role for these neurons in glucose homeostasis (Kong et al., 2010). Further studies are required to establish whether these or other components of glucose sensing pathways are also required for the ability of MCH neurons to influence sucrose preference. It is possible, however, that additional neural populations are components of this nutrient sensing circuit. For example, orexin/hypocretin-containing neurons can also sense glucose and it is thus possible that these or other neural populations in the mesolimbic system, or higher order centers can also influence the reward value of sugar (Burdakov et al., 2005; Karnani and Burdakov, 2011).\n\nPrevious reports have also explored the relationship between MCH neurons and reward: both MCH knockout and MCH ablated mice show augmented locomotor responses to psychostimulant drugs (Pissios et al., 2008; Whiddon and Palmiter, 2013). These augmented locomotor phenotypes contrast with the behavioral effect we see with a loss of sucrose preference in MCH ablated mice. It is possible that the locomotor phenotypes in response to stimulants result from actions in the ventral striatum, where the MCH receptor (MCHR-1) is expressed, and that sucrose preference relies on other brain areas. Further experiments will be required to ascertain which brain areas and MCH projections are relevant for sucrose preference. Loss of function of MCHR-1 recreates the locomotor phenotypes seen in Pmch\u2212/\u2212 mice: Mchr1\u2212/\u2212 mice are super-sensitive to the locomotor activating effects of d-amphetamine (Smith et al., 2005). These studies do not establish whether it is MCH or another neurotransmitter expressed in these neurons that is responsible for the observed phenotypes, and further experiments will also be required to ascertain whether the MCH neuropeptide itself is relevant for sucrose preference.\n\nWe assayed dopamine release using microdialysis to show that MCH neural activation increases dopamine release in the striatum and that the increase of dopamine in response to sucrose is lost after ablation of MCH neurons. Consistent with this, the levels of cFos in dopaminergic neurons of the VTA are reduced in MCH-ablated, sweet-blind Trpm5 KO mice given sucrose. These assays of taste-blind mice confirm that MCH neurons regulate the activity of dopaminergic neurons, though the data do not establish whether this effect of dopaminergic neural activity and dopamine release is direct and/or indirect. Further studies will be necessary to establish how MCH neurons regulate dopaminergic signaling. The delineation of this neural circuit may also provide a basis for understanding how leptin modulates reward (Domingos et al., 2011). The effects of leptin on reward are unlikely to be a result of a direct effect on MCH neurons as they do not appear to express the leptin receptor (Leinninger et al., 2011). However, a distinct neural population in the LH expressing neurotensin respond to leptin, and further studies may reveal whether or not leptin reduces MCH activity indirectly by activating these cells (Leinninger et al., 2011). Ablation of MCH neurons attenuates the obese phenotype of leptin deficient ob/ob mice indicating that MCH neurons are downstream of leptin action (Alon and Friedman, 2006).\n\nAblation of MCH neurons causes hypophagia and leanness, and it is possible that the reduced food intake is a result of a loss of the reward value of nutrient in these animals (Alon and Friedman, 2006). The reward value of sugar is also regulated by leptin, which has been recently reported to have a presynaptic action to suppress excitatory synaptic input onto VTA DA neurons (Domingos et al., 2011; Thompson and Borgland, 2013). Further studies will reveal whether leptin modulates excitatory output to the VTA via MCH neurons or influences nutrient preference by a direct effect on DA neurons in the VTA. The importance of brain nutrient sensing for behavior has also been studied in Drosophila (Dus et al., 2011, 2013; Miyamoto et al., 2012, 2013). Future studies will likely elucidate the extent to which the cellular mechanisms and neural pathways that regulate nutrient preference are shared between invertebrates and mammals. Brain nutrient sensing may represent an evolutionary adaptation to avoid starvation, by expediting decisions about which foods to consume.\n\nIn summary, these results confirm that MCH neurons are both necessary and sufficient for sensing the nutrient value of sucrose and suggest that these neurons play a critical role in establishing nutrient preference. The market share of sugared soda is nearly triple that of diet soda (Smiciklas-Wright et al., 2002; Jacobson, 2005; Sicher, 2011), and our data suggest a biological approach to potentially regulate sugar consumption. This could be achieved via the development of means for suppressing the activity MCH neurons, or via the development of new artificial sweeteners with neuroexcitatory activity specific to MCH neurons.\n\n## Materials and methods\n\n### Pmch-CRE transgenic mice\n\nIn order to restrict Cre expression to MCH neurons we used a BAC clone containing the full-length pro-melanin-concentrating hormone gene (RP23\u2013129A21) with upstream and downstream flanking sequences of 108 kb and 89 kb, respectively. Prior to further manipulation, BAC DNA was prepared and electroporated into E.coli strain SW102 as required for BAC recombineering. An NLS-Cre PolyA construct (pML78, Mark Lewandowski, National Cancer Institute) was targeted to replace the ATG translational start codon of MCH exon 1 and correct insertion was verified by PCR and sequencing. 5\u2032 recombineering homology: TGAAAGTTTTCATCCAATGCACTCTTGTTTGGCTTTATGCAAGCATCAAA 3\u2032 recombineering homology: CTGCAGAAAGATCCGTTGTCGCCCCTTCTCTGGAACAATACAAAAACGAC. All DNA fragments used for recombineering were generated with the FastStart High Fidelity PCR System (Roche, Indianapolis, IN). The modified BAC insert was released by NotI digestion, gel purified and used for pronuclear injection. Rosa26-LSL-ChR2-YFP and Rosa26-LSL-DTR were obtained from Jackson Laboratories. All animal procedures were carried out in accordance with the National Institutes of Health Guidelines on the Care and Use of Animals and approved by the Rockefeller University Institutional Animal Care and Use Committee (Protocols #13608, #10005 and #09012), JB Pierce Institutional Animal Care and Use Committee, (Protocol #101) and Yale University Institutional Animal Care and Use Committee (Protocol #2011-07942).\n\n### Immunohistochemistry\n\nImmunohistochemistry was performed as published elsewhere (Domingos et al., 2011, P\u00e9rez et al., 2011), using chicken anti-GFP (1:1000; Abcam, Cambridge, MA), rabbit anti-MCH (1:1000; Abcam), c-Fos (1:100; Abcam).\n\n### Electrophysiology\n\n30 to 50-day old MCH-ChR2-YFP mice were used for recordings. Mice were euthanized at the beginning of the light cycle (9:00 AM), and brain slices containing the LH were cut at 300 \u03bcm (2/mouse). Slices were transferred to a chamber at room temperature to stabilize in artificial cerebrospinal fluid (aCSF). Slices were then transferred to a recording chamber after \u22651 hr recovery and constantly perfused at 34\u00b0C with bath solution at a speed of 1.5 ml/min. Whole cell patch-clamp recording was performed on identified MCH-YFP neurons with a Multiclamp 700B amplifier (Axon Instruments, New York, NY). The patch pipettes were made of borosilicate glass (Sutter Instruments, Novato, CA) with a Sutter pipette puller (P-97). The tip resistance of the recording pipettes was 2\u20133 M\u03a9 after being filled with a pipette solution containing (in mM): K-gluconate 125, MgCl2 2, HEPES 10, EGTA 0.2, Mg-ATP 4, Na2- phosphocreatin 10, and Na2-GTP 0.5, pH 7.3 with KOH. The composition of the bath solution was as follows (in mM): NaCl 124, KCl 3, CaCl2 2, MgCl2 2, NaH2PO4 1.23, glucose 2.5, sucrose 7.5, and NaHCO3 26. After a gigaohm seal and whole-cell access were achieved, membrane potential and action potentials were recorded under current clamp at 0 pA. ChR2 currents were recorded under voltage clamp mode. Light stimulation (470 nm, LED)(CoolLED pE-100, UK) was performed in the following configurations: 5, 10, 20 Hz (1 ms pulses, 20 pulses total); 10 x 1 s (1 s pulse light ON, 1 s light OFF). All data were sampled at 3\u201310 kHz and filtered at 1\u20133 kHz with an Apple Macintosh computer using Axograph X (Axograph X, Berkeley, CA).\n\n### Behavioral and optogenetic setup\n\nMedAssociates chambers (MedAssociates, St. Albans, VT) were equipped with two contact lickometers and a laser source (solid state Crystal laser, 473 nm wavelength) controlled by MedPC via a TT impulse to be triggered upon lick detection (Domingos et al., 2011). The laser turns on every five consecutive licks on the same bottle (Figure 1\u2014figure supplement 1).\n\nAnimals were acclimated to the chambers until side preference for either bottle was even. During the acclimation and exposure periods mice were water deprived for 16\u201323 hr and were given water through the bottles inside the chamber for half an hour. In addition, stimuli in 10 min two-bottle tests were side balanced across the same genoptype group, being received either through the left bottle or through the right bottle. Two-bottle preference was calculated as the ratio: preference for 1 = number of licks on bottle 1/(number of licks on bottle 1+number of licks on bottle 2) and expressed as percentage values, with 50% representing the indifference ratio (referred to as isopreference in the \u2018Results\u2019 section). Behavioral data was analyzed with Excel and Prism, and expressed as mean \u00b1 SEM. Significance tests comparing groups were ANOVAs or t tests and, when appropriate, followed by Bonferroni corrections for multiple comparisons. Two-bottle tests without laser stimulation were carried out in the same setup, with the laser turned off. The size of each animal group is represented by \u2018n\u2019, and each animal was tested three times. The investigator was blind to the genotype. In all cases, concentration of sucrose was 0.4M and concentration of sucralose was 1.5 mM. These concentrations were based on previous literature (consult supplementary figure-4 in Domingos et al., 2011). Briefly, the differences in molarity of sucrose and sucralose reflect differences in ligand-binding affinity of either sweetener to taste receptors, and were chosen among the plateau values of behavioral dose-response curves (preference for either sweetener versus water in Domingos et al., 2011). Volume dispensed by the lickometers averages 2 \u03bcl/lick (Domingos et al., 2011). Locations of optical probes were confirmed histologically (data not shown). For each light stimulation regimen in Figure 2, mice in top and bottom panels are the same. After animals were corrected for any spontaneous side bias, and prior to the 10-min testing data in Figure 2, animals had a 10-min pre-exposure to either one of the two stimuli in two consecutive days. The pre-exposure procedure is intended to avoid novelty-related artifacts. On day one animals had exposure to water, followed by water+laser the day after. On the third day animals were tested for water vs water+laser for 10 min. On the fourth day, animals had exposure to sucrose, followed by sucralose+laser the day after. On the sixth day animals were tested for sucrose vs sucralose+laser for 10 min.\n\n### Microdialysis during ingestive behavior\n\nDuring the experimental sessions microdialysate samples from the freely-moving mice were collected, separated and quantified by high-pressure liquid chromatography coupled to electro-chemical detection methods (\u2018HPLC-ECD\u2019). Briefly, after recovery from surgery and behavioral habituation, a microdialysis probe (2 mm CMA-7, cut off 6 kDa, CMA Microdialysis, Stockholm, Sweden) was inserted into the striatum through the guide cannula (the corresponding CMA-7 model). After insertion, probes were connected to a syringe pump and perfused at 1.2 \u03bcl/min with artificial CSF (Harvard Apparatus). After a 90 min washout period, dialysate samples were collected every 6 min and immediately manually injected into a HTEC-500 HPLC unit (Eicom, Japan). Analytes were then separated via an affinity column (PP-ODS, Eicom), and compounds subjected to redox reactions within an electro-chemical detection unit (amperometric DC mode, applied potential range from 0 to \u223c2000 mV, 1 mV steps). Resulting chromatograms were analyzed using the software EPC-300 (Eicom, Japan), and actual sample concentrations were computed based on peak areas obtained from 0.5 pg/\u03bcl dopamine standards (Sigma) and expressed as % changes with respect to the mean dopamine concentration associated with baseline (i.e., behavioral task) samples. Animals were water deprived for 16\u201323 hr, and rested in their home cages for baseline sample collection until values were stable. Chromatograms shown in Figures 3 and 4 are time-gated to the DA peak at 1.7 min. S0 denotes the pre-ingestion sample, and refers to the sample in which the animal was placed inside the behavioral box. Locations of microdialysis probes were confirmed histologically.\n\n### Electron microscopy of MCH synapses onto DA neurons\n\nThe pre-embedding dual-labeling protocol of anti-GFP and anti-TH used in this study was adapted from Lane et al. (2010). Briefly, vibratome sections were placed in 0.1% sodium borohydride and 0.1% glycine in 0.1 M phosphate buffer to remove excess aldehydes. Sections were incubated in a cryoprotectant solution (25% sucrose and 2.5% glycol in 0.05 M phosphate buffer), then immersed successively in liquid Freon and liquid nitrogen to freeze, and thawed at room temperature in 0.1 M phosphate buffer to enhance penetration of immunoreagents. Sections were incubated in 2% bovine serum albumin (BSA) in PBS to block non-specific labeling and then incubated for 42 hr at 4\u00b0C in a primary antibody solution containing both rabbit anti-TH (P40101; 1:1000; Pel-Freez) and mouse anti-GFP (1:1000; Millipore mab3580) antibody in 0.1% BSA in PBS. Detection of GFP was done first. Sections were incubated for 2 hr in biotinylated horse anti-mouse IgG (1:1000) and the immunoperoxidase\u2013DAB procedure was applied using avidin-biotin complex (Vectastain Elite ABC kit from Vector Laboratories), followed by diaminobenzidine and urea tablets (Sigma) for 10 min. The DAB reaction product was then silver-gold enhanced for 15 min using the Teclemariam method (Teclemariam-Mesbah et al., 1997). After fixation in 0.5% glutaraldehyde, the detection for TH began: the sections were incubated for 2 hr in biotinylated horse anti-rabbit IgG (1:1000) and followed by the same steps used for GFP except, no silver enhancement was used. After post-fixation in 1% osmium tetroxide/1% Potassium ferrocyanide in 0.1 M cacodylate buffer (pH 7.4) for 1 hr at 4\u00b0C, the sections were dehydrated in a graded ethanol series, propylene oxide and embedded in Eponate (Ted Pella, INC). Blocks were cut with a diamond knife on a Leica UltracutE. Ultra-thin (\u223c70 nm) sections were collected on uncoated 200 mesh grids. Unstained sections were viewed with a TecnaiSpiritBT Transmission Electron Microscope (FEI) at 80 KV and images were taken with Gatan 895 ULTRASCAN Digital Camera.\n\n### Blood glucose measurements\n\nBlood glucose tests were performed on mice that had been fasted for 24 hr beginning at the onset of the dark cycle. The following day mice were given an intraperitoneal injection of an aqueous solution of 10% glucose (10 ml/Kg body weight) and blood glucose was measured from the tail vein at 0 and 10 min using an Ascensia Elite XL glucometer (Bayer Health-Care, Tarrytown, NY).\n\n### Conditioning to post-ingestive rewarding effects of sucrose, in the absence of taste\n\nOnce acclimated to the behavioral chamber, sweet blind Trpm5\u2212/\u2212 mice were resented with one bottle containing sucrose or sucralose. The drinking behavior is quantified by monitoring licks with contact lickometers (MedAssociates) and the number of licks for each bottle was used to calculate the preference ratio for sucrose, as in Domingos et al. (2011). To verify whether Trpm5\u2212/\u2212 mice with dysfunctional MCH neurons could detect the post-ingestive effects of sucrose, we adapted a conditioning protocol as in de Araujo et al. (2008), that allows the animal to manifest taste-independent preferences (scheme in Figure 5). All experiments were conducted with naive animals under a 16\u201323 hr water deprivation schedule. Animals were conditioned for 4 days with daily 30 min sessions of free access to either 1.5 mM sucralose or 0.4 M sucrose in one-bottle forced-choice training sessions. Either solution was presented on the opposite sides of the chamber on intercalated days. After training, on the 5th day, side bias was tested in 10-min two-bottle water versus water tests. This procedure was executed in Trpm5\u2212/\u2212 mice with ablated MCH neurons and control Trpm5\u2212/\u2212 mice with normal MCH neurons.\n",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "9097b9d6-4dbd-49a4-b502-f4887bd16661",
+      "submission_id": "edbd5603-a110-455a-bdf7-88339b1748a2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeremy Nathans, Howard Hughes Medical Institute, Johns Hopkins University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01462.018](https://doi.org/10.7554/eLife.01462.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cHypothalamic MCH neurons convey the nutrient value of sugar\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 3 reviewers, one of whom, Seth Blackshaw, has agreed to reveal his identity.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis is an elegant and important piece of work, and the manuscript is well constructed and written. It convincingly establishes that the activation of MCH neurons is both necessary and sufficient for the post-ingestive hedonic effects of sucrose. Specifically, the authors start with the paradigm that glucose-containing sugars, such as sucrose, are generally preferred to artificial sweeteners and that the molecular underpinnings of that phenomenon are largely represented by post-ingestive striatal dopamine release. The authors uncover what appears to be the backbone of the neurocircuitry that is responsible for that mechanism. Using optogenetic activation as well as genetically targeted ablation in mice, Domingos and colleagues prove convincingly that neurons identified by production of the neuropeptide MCH are responsible for the differential reward value of sucrose versus sucralose. In addition, they show that MCH neurons indeed project to brain areas involved in reward control and that MCH neurons are required for detection of reward value in mice where sweet perception has been deleted by gene disruption of the TRPM5 receptor. The data are convincing and of high quality.\n\nSubstantive concerns:\n\n1) The main target of MCH neuron action in regulating sucrose vs sucralose preference are unclear, as all photostimulation in the study was directly applied to MCH neuronal cell bodies in the LH. The data in Figure 3 demonstrate that MCH efferents are found in proximity to TH-expressing cells in the striatum and midbrain, but only in the VTA are MCH axons and TH-positive cell bodies really intermingled. Since it is also known that MCH neurons project directly to orexinergic neurons, which in turn regulate activity of mesolimbic dopaminergic neurons, this raises the possibility that indirect effects of MCH activity may control sugar preference. Have the authors tried applying photostimulation directly to the VTA, and does it produce behavioral effects similar to those seen in LH? Alternatively, have they shown that MCH neuron activation directly stimulates TH-positive neurons in the VTA or other regions in the central reward circuit?\n\n2) In previous work (Domingos, et al., 2011), the authors convincingly showed that leptin negatively regulates sucrose vs sucralose preference, while fasting (presumably coupled with reduction in leptin signaling) enhanced this preference. A key unresolved question here is whether these effects of fasting and leptin on sucrose vs sucralose preference require the action of MCH neurons. It would be highly desirable if the investigators addressed this question using the MCH-Cre;R26-lsl-DTR animals described here.\n\n3) The study does not address whether sucrose vs sucralose preference requires MCH itself. The authors allude to this possibility, noting that Pmch-/- mice show lower body weight, but this should be easy to test directly, using either genetic or pharmacological approaches. This also addresses the question of whether it is activity of MCH neurons, rather than simply the presence of these cells, that is necessary for sucrose vs sucralose preference. Also, does fructose contribute anything to the \u201cmetabolic signal\u201d or is its action simply to increase palatability above that of glucose?\n",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d5e8b17-7de6-4790-a378-db65dabbd227",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C1",
+      "claim": "Sugars that contain glucose, such as sucrose, are generally preferred to artificial sweeteners owing to their post-ingestive rewarding effect, which elevates striatal dopamine (DA) release.",
+      "claim_type": "EXPLICIT",
+      "source": "Sugars that contain glucose, such as sucrose, are generally preferred to artificial sweeteners owing to their post-ingestive rewarding effect, which elevates striatal dopamine (DA) release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature (Smiciklas-Wright et al., 2002; Jacobson, 2005; Domingos et al., 2011; Sicher, 2011) and established knowledge about dopamine's role in reward.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "15a37648-65b4-4a02-82a2-b2452e8e388d",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C2",
+      "claim": "Optogenetic activation of melanin-concentrating hormone (MCH) neurons during intake of the artificial sweetener sucralose increases striatal dopamine levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that optogenetic activation of melanin-concentrating hormone (MCH) neurons during intake of the artificial sweetener sucralose increases striatal dopamine levels and inverts the normal preference for sucrose vs sucralose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 3, showing microdialysis measurements of dopamine release during optogenetic stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "72d1c15d-1376-4edc-8252-a1449e616fd4",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C3",
+      "claim": "Optogenetic activation of MCH neurons during sucralose intake inverts the normal preference for sucrose vs sucralose.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that optogenetic activation of melanin-concentrating hormone (MCH) neurons during intake of the artificial sweetener sucralose increases striatal dopamine levels and inverts the normal preference for sucrose vs sucralose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data in Figure 2 showing preference reversal with optogenetic stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "1e21e55f-4297-4357-b502-e7dee43801b2",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C4",
+      "claim": "Animals with ablation of MCH neurons no longer prefer sucrose to sucralose.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, animals with ablation of MCH neurons no longer prefer sucrose to sucralose and show reduced striatal DA release upon sucrose ingestion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral preference data in Figure 5A showing loss of sucrose preference in MCH-ablated mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "fbf8da11-39c1-4956-9a45-b858f0338f89",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C5",
+      "claim": "Animals with ablation of MCH neurons show reduced striatal DA release upon sucrose ingestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, animals with ablation of MCH neurons no longer prefer sucrose to sucralose and show reduced striatal DA release upon sucrose ingestion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microdialysis data in Figure 4 showing reduced dopamine release in MCH-ablated mice drinking sucrose.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "7c0b9315-6f51-4071-8d8c-7fc817cbe07f",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C6",
+      "claim": "MCH neurons project to reward areas.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that MCH neurons project to reward areas and are required for the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2212/\u2212 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by anatomical data in Figure 3\u2014figure supplement 1 showing MCH projections to striatum and midbrain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "dad40f9c-e46a-4043-ad1d-81b7198cc1a8",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C7",
+      "claim": "MCH neurons are required for the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that MCH neurons project to reward areas and are required for the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2212/\u2212 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by conditioning data in Figure 5D showing loss of sucrose conditioning in sweet-blind MCH-ablated mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "fd2523a6-5802-4d8a-b842-2c67a6e7d44d",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C8",
+      "claim": "The post-ingestive rewarding effect of sucrose was first described by showing that non-nutritive liquids that are paired to glucose administration either in the intra-gastric tract or in plasma, are greatly preferred over liquids that are not paired with nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "This post-ingestive rewarding effect of sucrose was first described by showing that non-nutritive liquids that are paired to glucose administration either in the intra-gastric tract or in plasma, are greatly preferred over liquids that are not paired with nutrients (de Araujo et al., 2008; Ren et al., 2010; de Araujo et al., 2010; Oliveira-Maia et al., 2011; Sclafani et al., 2011; Fernstrom et al., 2012; de Araujo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "fa54fd3c-d4c1-4928-a00c-a298d52c394e",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C9",
+      "claim": "Sweet-blind Trpm5 knockout mice can still sense the nutrient value of sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, sweet-blind Trpm5 knockout mice can still sense the nutrient value of sucrose (de Araujo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "ef64d6a6-02ef-4209-a7be-5967210a3b8b",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C10",
+      "claim": "Sucrose but not artificial sweeteners such as sucralose can drive dopamine (DA) release in the midbrain even in the absence of taste.",
+      "claim_type": "EXPLICIT",
+      "source": "Rodent studies have further shown that sucrose but not artificial sweeteners such as sucralose can drive dopamine (DA) release in the midbrain even in the absence of taste (de Araujo et al., 2008; Ren et al., 2010; de Araujo et al., 2010; Oliveira-Maia et al., 2011; Sclafani et al., 2011; Fernstrom et al., 2012; de Araujo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous rodent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "1664fad3-c194-4f82-945d-46b4c7a2ee37",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C11",
+      "claim": "The combination of sweet taste plus an increase of dopamine accounts for the preference for natural vs artificial sweeteners.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of sweet taste plus an increase of dopamine accounts for the preference for natural vs artificial sweeteners (Domingos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "0e22f1fb-6168-4de3-b523-70871d33a0e5",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C12",
+      "claim": "The artificial sweetener sucralose is preferred to sucrose only if supplemented by a proxy for this post-ingestive reward in the form of optogenetic activation of DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that the artificial sweetener sucralose is preferred to sucrose only if supplemented by a proxy for this post-ingestive reward in the form of optogenetic activation of DA neurons (Domingos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "c0e0d7cb-eac4-4ec8-b258-9d16753759dd",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C13",
+      "claim": "MCH neurons in the lateral hypothalamus (LH) are glucose sensitive, and show increased activity when extracellular glucose levels increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanin-concentrating hormone-expressing neurons (Pmch or, MCH neurons; in accordance with previous literature [Shimada et al., 1998; Alon and Friedman, 2006; Kong et al., 2010], we adopt the later nomenclature throughout this report) in the lateral hypothalamus (LH) are glucose sensitive, and show increased activity when extracellular glucose levels increase (Burdakov et al., 2005; Kong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "2e473de9-5d11-4812-9f17-7befeebd1784",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C14",
+      "claim": "Pmch knockout and MCH neuronal ablation lead to reduced body weight, indicating a critical role of these neurons in the regulation of energy balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Pmch knockout and MCH neuronal ablation lead to reduced body weight, indicating a critical role of these neurons in the regulation of energy balance (Shimada et al., 1998; Whiddon and Palmiter, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "40fe0f1a-9fa1-4dca-8f0a-5d635fd0576c",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C15",
+      "claim": "MCH neurons send dense projections to reward centers in the striatum and midbrain where dopaminergic neurons are located.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MCH neurons send dense projections to reward centers in the striatum and midbrain where dopaminergic neurons are located (current report).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by anatomical data presented in the current manuscript (Figure 3\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "e5be1d20-a707-45e2-947c-f9bad85b0e70",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C16",
+      "claim": "97 \u00b1 3% of MCH neurons expressed ChR2-YFP in Pmch-ChR2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 97 \u00b1 3% of MCH neurons expressed ChR2-YFP (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "6c03caeb-4be4-4532-b48b-b3839870b590",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C17",
+      "claim": "92 \u00b1 8% of ChR2-YFP neurons expressed MCH in Pmch-ChR2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The YFP signal was seen in the LH with the characteristic appearance of MCH neurons (Figure 1A), and there was a 92 \u00b1 8% overlap of YFP and MCH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "e6854a75-3ca5-4ffc-b049-89019a418002",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C18",
+      "claim": "Whole-cell patch-clamp recordings in slice preparations confirmed light-evoked spiking at 5, 10, and 20 Hz in MCH neurons expressing ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell patch-clamp recordings in slice preparations confirmed light-evoked spiking at 5, 10, and 20 Hz (Figure 1C), as well as during continuous light pulses of one second (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "69b9299e-ee03-4ea1-8e80-d1f905ea1648",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C19",
+      "claim": "The spike rate of MCH neurons was higher with light pulses of 20 Hz vs 5 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The spike rate of MCH neurons was higher with light pulses of 20 Hz vs 5 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the electrophysiology data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "d663f709-a182-4764-9d1d-8de36d076aa1",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C20",
+      "claim": "Glucose has been shown to evoke similar high-frequency bursting of MCH neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, glucose has been shown to evoke similar high-frequency bursting of MCH neurons (see inset, Figure 1D) (Burdakov et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "bc5a1b91-5179-46c1-9db6-135b2368c333",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C21",
+      "claim": "Spike attenuation during optogenetic stimulation was similar to what has been previously reported for glucose-triggered responses in MCH neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike attenuation (Figure 1D, inset) during optogenetic stimulation was similar to what has been previously reported for glucose-triggered responses (Burdakov et al., 2005; Kong et al., 2010) in MCH neurons, and changes in membrane potential were resilient to optical stimulation (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison to cited previous studies and data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "e01f4b32-f8f1-414a-bc77-af55045555d9",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C22",
+      "claim": "ChR2(+) and ChR2(\u2013) mice had equal preference for water+laser vs water alone at all stimulation frequencies tested.",
+      "claim_type": "EXPLICIT",
+      "source": "ChR2(+) and ChR2(\u2013) mice had equal preference for water+laser vs water alone at all stimulation frequencies tested (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "f2fc0c6f-e3d8-4c47-9840-35fd6eb68fdb",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C23",
+      "claim": "In the absence of ChR2 or at a low stimulation frequency of 5 Hz, animals still preferred sucrose to sucralose.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ChR2 (gray bars in Figure 2) or at a low stimulation frequency of 5 Hz (Figure 2A), animals still preferred sucrose to sucralose.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "a025687e-6422-4af9-a125-e93d0e6e82fb",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C24",
+      "claim": "A light frequency of 20 Hz inverted an animal's preference with a strong preference for sucralose plus MCH activation relative to sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "However, consistent with the greater effect of 20 Hz on spiking of MCH neurons in slice preparation, a light frequency of 20 Hz, as well as continuous light, inverted an animal's preference with a strong preference for sucralose plus MCH activation relative to sucrose (Figure 2B, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "17a6be0a-fc2d-44fd-bf1c-514fb4b91f89",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C25",
+      "claim": "At 20 Hz, ChR2(\u2013) mice displayed a preference ratio for sucrose of 82.2 \u00b1 3%, whereas ChR2(+) mice had a sucrose preference ratio of 20.0 \u00b1 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "At 20 Hz, ChR2(\u2013) mice (Figure 2B, middle panel, gray bars) displayed a preference ratio for sucrose of 82.2 \u00b1 3%, whereas ChR2(+) mice had a sucrose preference ratio of 20.0 \u00b1 4% (Figure 2B, middle panel, blue bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "7c267db3-3e6e-4e31-8cf3-a0118e349538",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C26",
+      "claim": "Under continuous light, ChR2(\u2013) mice displayed a preference ratio for sucrose of 76.7 \u00b1 3%, whereas ChR2(+) mice displayed a preference ratio for sucrose of 26.8 \u00b1 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Under continuous light, ChR2(\u2013) mice displayed a preference ratio for sucrose of 76.7 \u00b1 3% (Figure 2B, right panel, gray bars), whereas ChR2(+) mice displayed a preference ratio for sucrose of 26.8 \u00b1 5% (Figure 2B, right panel, blue bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "34437ac6-b60a-435e-8204-622d5afb13f6",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C27",
+      "claim": "MCH neurons densely innervate the striatum and the ventral midbrain, making synapses onto DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-ingestive rewarding effect of glucose is associated with an increase of DA release in the striatum (de Araujo et al., 2013; de Araujo et al., 2008; de Araujo et al., 2010; Ren et al., 2010), and we confirmed that MCH neurons densely innervate the striatum and the ventral midbrain, making synapses onto DA neurons (Figure 3\u2014figure supplement 1, 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "83bfd52a-a2fe-4aef-a9da-e1c67ebee659",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C28",
+      "claim": "Animals drinking sucralose without light stimulation displayed negligible changes in striatal DA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, animals drinking sucralose (without light stimulation) displayed negligible changes in striatal DA levels (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microdialysis data shown in Figure 3B and citation to previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "0119dcbc-ed5d-4115-8eb3-ae72f8cb1a25",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C29",
+      "claim": "Animals drinking sucralose when the laser was set to OFF displayed an overall 8.2 \u00b1 2.6% change from baseline DA.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals drinking sucralose when the laser was set to OFF displayed an overall 8.2 \u00b1 2.6% change from baseline DA (average across all S1\u2013S5 samples); this change was not significantly different from baseline (gray bars in Figure 3E p>0.05, one sample T-test against 100% baseline).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microdialysis data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "2070177d-78ac-4fd3-90f2-98d94d76f3b1",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C30",
+      "claim": "When sucralose ingestion was coupled to laser stimulation of MCH neurons, DA release significantly increased in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when sucralose ingestion was coupled to laser stimulation of MCH neurons, DA release significantly increased in the striatum (**p<0.008; Figure 3C\u2013G, blue bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microdialysis data shown in Figure 3C-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "28c7d7d4-4834-4eb5-a919-5f6f15dfd8b1",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C31",
+      "claim": "When laser was set to ON during ingestion of sucralose, DA levels increased 68.7 \u00b1 9% vs baseline DA.",
+      "claim_type": "EXPLICIT",
+      "source": "When laser was set to ON during ingestion of sucralose, DA levels increased 68.7 \u00b1 9% vs baseline DA (average across all S1\u2013S5 samples, blue bars in Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microdialysis data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "2ff43d4c-b06e-4bcb-b96c-cc4d07473753",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C32",
+      "claim": "Optogenetic activation of MCH neurons markedly increased sucralose ingestion during the laser ON condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of MCH neurons markedly increased sucralose ingestion during the laser ON condition (*p<0.05; Figure 3F) while activation of MCH neurons did not change intake of water (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "81bbd7e4-75ad-4069-b63a-8ccaca63370f",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C33",
+      "claim": "Optogenetic stimulation of MCH neurons paired to water was not preferred to water alone, showing that activation of MCH neurons is not rewarding in the absence of sucralose.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, optogenetic stimulation of MCH neurons paired to water was not preferred to water alone, showing that activation of MCH neurons is not rewarding in the absence of sucralose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "3d99afb5-8e13-4e85-8a7b-8282a1ae7731",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C34",
+      "claim": "Both MCH activation and the presence of sucralose were required to establish a change of preference.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both MCH activation and the presence of sucralose were required to establish a change of preference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results showing that MCH activation alone (with water) does not change preference, but MCH activation with sucralose does.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "1f139166-07f8-4a1d-9fca-1c866984511e",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C35",
+      "claim": "Control mice drinking sucrose displayed significantly higher dopamine levels compared to MCH-ablated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "MCH-ablated (Pmch-CRE-LSL-DTR+DT) and control mice (Pmch-CRE-LSL-DTR+veh, and LSL-DTR+DT) were subjected to microdialysis sampling of striatal DA during sucrose ingestion (Figure 4B). Control mice drinking sucrose displayed significantly higher dopamine levels compared to MCH-ablated mice (Figure 4C\u2013F; **p<0.008 ANOVA in Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microdialysis data shown in Figure 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "6f6ddd05-1ac1-4ff7-8216-e9e79fa73aa1",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C36",
+      "claim": "Control mice showed an overall 118.3 \u00b1 0.3% increase in striatal DA levels while drinking sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "Control mice showed an overall 118.3 \u00b1 0.3% increase in striatal DA levels while drinking sucrose (average across all S1\u20135 samples, Figure 4F, ***p<1.98e10\u22129 T-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microdialysis data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "151d2894-bc08-4963-9309-d14afeb80a1b",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C37",
+      "claim": "MCH-ablated mice showed a negligible DA efflux during sucrose intake, and the levels after sucrose exposure did not differ from baseline levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to animals without DT injection, MCH-ablated mice showed a negligible DA efflux during sucrose intake, and the levels after sucrose exposure did not differ from baseline levels (p>0.4, one sample T-test compared to 100% baseline).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microdialysis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "9b17577a-599a-4e15-b646-bb0429b6d77b",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C38",
+      "claim": "Baseline DA levels were similar in both MCH-ablated and control groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Baseline DA levels were similar in both groups (Figure 4, Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "c1b544ab-dcbb-429b-aaa6-b0cafe2da7c2",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C39",
+      "claim": "MCH-ablated mice consumed significantly less sucrose than control mice when given free access to sucrose or water.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a lower reward value of sucrose, when given free access to sucrose or water, MCH-ablated mice consumed significantly less sucrose than control mice (Figure 4G, *p<0.05 ANOVA), while water intake was equivalent between the groups (Figure 4, Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "66f4ea62-8ba5-4907-afb4-eb6b356a0eec",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C40",
+      "claim": "Water intake was equivalent between MCH-ablated and control groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a lower reward value of sucrose, when given free access to sucrose or water, MCH-ablated mice consumed significantly less sucrose than control mice (Figure 4G, *p<0.05 ANOVA), while water intake was equivalent between the groups (Figure 4, Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "3a01837e-861d-4668-a1d6-490e1a2738a0",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C41",
+      "claim": "Preference ratios for sucrose in Pmch-CRE;LSL-DTR(+veh), LSL-DTR(+DT) and Pmch-CRE;LSL-DTR(+DT) mice were, respectively, 77.1 \u00b1 7%, 82.0 \u00b1 4%, and 39.9 \u00b1 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Preference ratios for sucrose in Pmch-CRE;LSL-DTR(+veh), LSL-DTR(+DT) and Pmch-CRE;LSL-DTR(+DT) mice were, respectively, 77.1 \u00b1 7%, 82.0 \u00b1 4%, and 39.9 \u00b1 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "e436f60d-f091-4c66-af0f-5688b83b1764",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C42",
+      "claim": "While control mice preferred sucrose to sucralose, MCH-ablated mice no longer had a preference for sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "While control mice preferred sucrose to sucralose, MCH-ablated mice no longer had a preference for sucrose. This reduction in sucrose preference is statistically significant (Figure 5A, *p<0.0012, \u00a5p<0.009, T-test with Bonferroni correction for multiple comparisons, same-symbol pairs indicate statistically significant differences; see also Figure 5\u2014figure supplement 1 for total licks in each).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "161170b6-70aa-4654-a21a-ab4a163e1556",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C43",
+      "claim": "MCH neuronal ablation did not alter an animal's preference for either sucrose or sucralose vs water.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MCH neuronal ablation did not alter an animal's preference for either sucrose or sucralose vs water indicating that, in contrast to their requirement for establishing the post-ingestive effect of sucrose, MCH neurons are not required for establishing a preference for sweet taste (Figure 5B,C and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "6fa99cd2-b96d-4de4-ad29-0fe61193d6ae",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C44",
+      "claim": "MCH neurons are not required for establishing a preference for sweet taste.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MCH neuronal ablation did not alter an animal's preference for either sucrose or sucralose vs water indicating that, in contrast to their requirement for establishing the post-ingestive effect of sucrose, MCH neurons are not required for establishing a preference for sweet taste (Figure 5B,C and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that MCH-ablated mice still prefer sweet substances over water.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "ecf3dfd5-3f3f-40eb-9251-c5622d67e987",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C45",
+      "claim": "The postprandial increase in blood glucose after sucrose ingestion was normal in MCH-ablated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The postprandial increase in blood glucose after sucrose ingestion was normal in MCH-ablated animals (Figure 5 and Figure 5\u2014figure supplement 2), demonstrating that the changes in sucrose preference were not a result of any differences in blood glucose levels (Kong et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by blood glucose data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "c170e273-b1da-409a-b730-a2dc4cf64c94",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C46",
+      "claim": "Activation of MCH neurons are necessary and sufficient for establishing the preference of animals for sucrose compared to artificial sweeteners.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data indicate that activation of MCH neurons are necessary and sufficient for establishing the preference of animals for sucrose compared to artificial sweeteners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined gain-of-function and loss-of-function experiments showing that MCH activation inverts preference and MCH ablation eliminates sucrose preference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "91caefcc-6ef2-45d5-ac24-ac125ceb36b6",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C47",
+      "claim": "Sweet-blind control mice showed a significant side bias towards the bottle where sucrose was placed during the conditioning sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Sweet-blind control mice showed a significant side bias towards the side where sucrose was placed during the conditioning sessions, in which sucrose or sucralose are delivered at opposite sides on alternate days, (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by conditioning data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "d2854b48-ed4b-4e05-87a4-4b94985c84dc",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C48",
+      "claim": "Sweet-blind MCH-ablated mice did not show a preference in the conditioning protocol, indicating that the post-ingestive rewarding effect of sucrose had been lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, sweet-blind MCH-ablated mice did not show a preference in this conditioning protocol, indicating that the post-ingestive rewarding effect of sucrose had been lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by conditioning data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "42bd831e-3a39-4dca-8136-783454d7aa22",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C49",
+      "claim": "Trpm5\u2013/\u2013 Pmch-CRE;LSL-DTR+veh and Trpm5\u2013/\u2013LSL-DTR+DT control mice showed conditioned side preferences of 70 \u00b1 3% and 79 \u00b1 5% respectively, towards the side where sucrose was placed.",
+      "claim_type": "EXPLICIT",
+      "source": "Trpm5\u2013/\u2013 Pmch-CRE;LSL-DTR+veh and Trpm5\u2013/\u2013LSL-DTR+DT control mice showed conditioned side preferences of 70 \u00b1 3% and 79 \u00b1 5% respectively, towards the side where sucrose was placed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by conditioning data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "0b802100-2219-4565-a273-7a7753f26f1e",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C50",
+      "claim": "Trpm5\u2013/\u2013 Pmch-CRE;-LSL-DTR(+DT) mice had 50 \u00b1 7% conditioned side preference towards the side where sucrose was placed.",
+      "claim_type": "EXPLICIT",
+      "source": "Trpm5\u2013/\u2013 Pmch-CRE;-LSL-DTR(+DT) mice had 50 \u00b1 7% conditioned side preference towards the side where sucrose was placed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by conditioning data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "b490a564-defb-40bf-b0e2-59d7a9bd542b",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C51",
+      "claim": "The behavioral conditioning by the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2013/\u2013 mice positively correlates with the extent of DA neuron activation, as assayed by staining for cFos in DA neurons in the ventral tegmental area (VTA).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the behavioral conditioning by the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2013/\u2013 mice positively correlates with the extent of DA neuron activation, as assayed by staining for cFos in DA neurons in the ventral tegmental area (VTA) (Figure 5, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cFos staining data shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "e4825834-3d03-4e1c-9cd4-8e6a2df9fcfc",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C52",
+      "claim": "MCH neurons are required for sensing the nutrient value of sucrose in the absence of taste.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that MCH neurons are required for sensing the nutrient value of sucrose in the absence of taste.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the conditioning experiments in sweet-blind mice showing loss of sucrose conditioning in MCH-ablated animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "02804264-bb34-40a9-bc4e-dc3f761b8aee",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C53",
+      "claim": "MCH neurons are necessary and sufficient for establishing a preference for sucrose vs sucralose.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manuscript, we report that MCH neurons are necessary and sufficient for establishing a preference for sucrose vs sucralose, an artificial sweetener.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the combined gain-of-function and loss-of-function experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "ba2f1d4d-4f57-4d06-b944-a500f9332d18",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C54",
+      "claim": "MCH neurons serve as an essential link between glucose sensing and sugar reward.",
+      "claim_type": "EXPLICIT",
+      "source": "MCH neurons serve as an essential link between glucose sensing and sugar reward, and these data thus identify a key component of the neural circuit that establishes the preference for natural vs artificial sweeteners (Smiciklas-Wright et al., 2002; Jacobson, 2005; Domingos et al., 2011; Sicher, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results showing MCH neurons respond to glucose and regulate reward-related dopamine release.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "d02a7ab4-adbf-4e2f-b5f8-d08fb2ed7f8d",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C55",
+      "claim": "It is possible that glucose is sensed elsewhere, such as by putative gastric/intestinal sensors or other nutrient sensors, which inform the brain and MCH neurons about the nutrient content of ingested food.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is also possible that glucose is sensed elsewhere, such as by putative gastric/intestinal sensors or other nutrient sensors, which inform the brain and MCH neurons about the nutrient content of ingested food (Sclafani et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, discussing alternative mechanisms for glucose sensing.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "f8022890-3ad7-4bc1-aa49-39c01ba15972",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C56",
+      "claim": "Optogenetic stimulation of MCH neurons alone is not sufficient to alter behavior in the absence of taste.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that optogenetic stimulation of MCH neurons alone is not sufficient to alter behavior in the absence of taste.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the observation that MCH activation with water does not change preference (Figure 2A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "3018fa02-7540-4526-ba5b-26e8ce28ccb9",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C57",
+      "claim": "MCH neurons are components of a reward-encoding network that integrates information from multiple sources, including the nutrients themselves, lingual taste buds and, possibly, other sites of glucose sensing like the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "The data thus suggest that MCH neurons are components of a reward-encoding network that integrates information from multiple sources, including the nutrients themselves, lingual taste buds and, possibly, other sites of glucose sensing like the gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the requirement for both sweet taste and MCH activation to drive reward.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "ef22564f-3bfb-45af-b82b-94a61587974d",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C58",
+      "claim": "Viral tracing from lingual taste buds shows that MCH neurons are part of a circuit processing gustatory information.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, viral tracing from lingual taste buds shows that MCH neurons are part of a circuit processing gustatory information (P\u00e9rez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "c4a7cd50-2582-483c-a880-662bb31f189d",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C59",
+      "claim": "The role of MCH neurons contrasts with that of DA neurons, which upon optogenetic stimulation have been shown to be rewarding when paired to water.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of MCH neurons uncovered here contrasts with that of DA neurons, which upon optogenetic stimulation have been shown to be rewarding when paired to water (Domingos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study and comparison to current results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "ec6e6768-49c8-41d7-9692-84ce874f27f4",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C60",
+      "claim": "A synergy between taste and the post-ingestive rewarding effect would explain why sucrose and other fructose/glucose disaccharides, which are more potent stimulators of sweet-taste receptors than glucose alone, are generally preferred to glucose alone.",
+      "claim_type": "EXPLICIT",
+      "source": "A synergy between taste and the post-ingestive rewarding effect would explain why sucrose and other fructose/glucose disaccharides, which are more potent stimulators of sweet-taste receptors than glucose alone, are generally preferred to glucose alone (Sclafani and Mann, 1987; Nelson et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing an explanation for observed preferences based on synergy between taste and post-ingestive effects.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "38a3f91d-e267-4fd1-bae7-59421e61d471",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C61",
+      "claim": "The activity of MCH neurons is increased by glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned, the activity of MCH neurons is increased by glucose (Burdakov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "f45887e4-0b22-4125-a12d-e27a9fb54f1c",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C62",
+      "claim": "Glucose-activated MCH neurons and pancreatic \u03b2 cells share signal transduction components necessary for glucose sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose-activated MCH neurons and pancreatic \u03b2 cells share signal transduction components necessary for glucose sensing, and both Kir6.2 and UCP2 regulate glucose excitability of MCH neurons (Kong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "07f28ad1-5b9d-4099-9e69-716f78a2bfb8",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C63",
+      "claim": "A loss of function of Kir6.1 in MCH neurons leads to alterations in results of a glucose tolerance test with increased plasma glucose at later times.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a loss of function of Kir6.1 in MCH neurons leads to alterations in results of a glucose tolerance test with increased plasma glucose at later times, establishing a role for these neurons in glucose homeostasis (Kong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "212f0034-7d4c-45c0-93a1-007459637aaf",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C64",
+      "claim": "Orexin/hypocretin-containing neurons can also sense glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, orexin/hypocretin-containing neurons can also sense glucose and it is thus possible that these or other neural populations in the mesolimbic system, or higher order centers can also influence the reward value of sugar (Burdakov et al., 2005; Karnani and Burdakov, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "34c3020e-6942-40ad-a8f4-eb39587d87ed",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C65",
+      "claim": "Both MCH knockout and MCH ablated mice show augmented locomotor responses to psychostimulant drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports have also explored the relationship between MCH neurons and reward: both MCH knockout and MCH ablated mice show augmented locomotor responses to psychostimulant drugs (Pissios et al., 2008; Whiddon and Palmiter, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "1ba1fe0b-5adf-4de6-8c5d-bebdcc3b2258",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C66",
+      "claim": "Loss of function of MCHR-1 recreates the locomotor phenotypes seen in Pmch\u2212/\u2212 mice: Mchr1\u2212/\u2212 mice are super-sensitive to the locomotor activating effects of d-amphetamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of function of MCHR-1 recreates the locomotor phenotypes seen in Pmch\u2212/\u2212 mice: Mchr1\u2212/\u2212 mice are super-sensitive to the locomotor activating effects of d-amphetamine (Smith et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "01f72e7b-ef71-4fea-8aea-073f53c30503",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C67",
+      "claim": "The levels of cFos in dopaminergic neurons of the VTA are reduced in MCH-ablated, sweet-blind Trpm5 KO mice given sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the levels of cFos in dopaminergic neurons of the VTA are reduced in MCH-ablated, sweet-blind Trpm5 KO mice given sucrose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cFos staining data shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "a2e2d6f7-2a2a-4425-b1aa-130f68ec4039",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C68",
+      "claim": "MCH neurons do not appear to express the leptin receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of leptin on reward are unlikely to be a result of a direct effect on MCH neurons as they do not appear to express the leptin receptor (Leinninger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "1cd94fac-84e4-428a-8433-7e32a3e397d8",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C69",
+      "claim": "A distinct neural population in the LH expressing neurotensin respond to leptin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a distinct neural population in the LH expressing neurotensin respond to leptin, and further studies may reveal whether or not leptin reduces MCH activity indirectly by activating these cells (Leinninger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "3501970b-eb97-4e96-a582-1e38425a82e8",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C70",
+      "claim": "Ablation of MCH neurons attenuates the obese phenotype of leptin deficient ob/ob mice indicating that MCH neurons are downstream of leptin action.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of MCH neurons attenuates the obese phenotype of leptin deficient ob/ob mice indicating that MCH neurons are downstream of leptin action (Alon and Friedman, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "6160484a-00b6-40c8-add4-86cf948afe20",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C71",
+      "claim": "It is possible that the reduced food intake in MCH-ablated animals is a result of a loss of the reward value of nutrient in these animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of MCH neurons causes hypophagia and leanness, and it is possible that the reduced food intake is a result of a loss of the reward value of nutrient in these animals (Alon and Friedman, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing a mechanism for the hypophagia observed in MCH-ablated mice.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "59a24dcd-6a85-46ce-b37b-03c67edef093",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C72",
+      "claim": "Leptin has been recently reported to have a presynaptic action to suppress excitatory synaptic input onto VTA DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The reward value of sugar is also regulated by leptin, which has been recently reported to have a presynaptic action to suppress excitatory synaptic input onto VTA DA neurons (Domingos et al., 2011; Thompson and Borgland, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "a8cec9aa-5fcb-4464-a978-1f9d16b7455c",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C73",
+      "claim": "The market share of sugared soda is nearly triple that of diet soda.",
+      "claim_type": "EXPLICIT",
+      "source": "The market share of sugared soda is nearly triple that of diet soda (Smiciklas-Wright et al., 2002; Jacobson, 2005; Sicher, 2011), and our data suggest a biological approach to potentially regulate sugar consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous reports on market data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "366ef23a-46e4-4ef1-b35a-99e4c89d3442",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C74",
+      "claim": "Blocking dopamine transmission with haloperidol suppressed preference for sucrose versus sucralose.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Blocking dopamine transmission with haloperidol (hal) suppressed preference for sucrose versus sucralose. In 10 min, wild-type animals injected with hal (ip, 1 mg/kg) showed a preference ratio for sucrose of 51 \u00b1 7%, whereas vehicle treated animals showed a preference ratio for sucrose of 79 \u00b1 4%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "21dd5da4-179e-400a-86ae-25fc23c7d670",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C75",
+      "claim": "Intracranial injection of 1 ng/g of diphtheria toxin led to a complete loss of MCH neurons in Pmch-CRE;LSL-DTR mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We injected Pmch-CRE;LSL-DTR mice with diphtheria toxin (+DT) or vehicle (+veh) intracranially (1 ng/g of body weight). This dose led to a complete loss of MCH neurons (Figure 4A, see Figure 4\u2014figure supplement 1 for other doses).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "87597917-d86d-43d2-87f4-00199d811d96",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C76",
+      "claim": "At a dose of 1 ng per gram of animal, 0.3 \u00b1 0.18 neuron/section marked with MCH could be visualized under fluorescence microscopy, which is not significantly different from zero.",
+      "claim_type": "EXPLICIT",
+      "source": "At a dose of 1 ng per gram of animal, 0.3 \u00b1 0.18 neuron/section marked with MCH could be visualized under fluorescence microscopy. Statistically, this amount is not significantly different from zero (p>0.05, One sample t test against zero).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "d238966c-ca56-405f-b5e8-325e831547fb",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C77",
+      "claim": "Baseline DA concentration of ablated MCH-Cre; LSL-DTR+DT mice (0.34 \u00b1 0.09pg/\u03bcl) were not significantly different from control MCH-Cre; LSL-DTR+veh mice (0.25 \u00b1 0.05pg/\u03bcl).",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Baseline DA concentration of ablated MCH-Cre; LSL-DTR+DT mice (0.34 \u00b1 0.09pg/\u03bcl) were not significantly different from control MCH-Cre; LSLDTR+veh mice (0.25 \u00b1 0.05pg/\u03bcl)(p>0.22, t test), thus excluding chronic effects of MCH neuronal ablation on DA levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by baseline dopamine measurement data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "90b3e319-bfc3-4e34-9540-89e4be765f63",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C78",
+      "claim": "After 20\u201323 hr of water deprivation, ablated MCH-Cre; LSL-DTR+DT mice drank approximately as much water (782 \u00b1 100 licks) as control MCH-Cre;LSL-DTR+veh mice (642 \u00b1 101 licks).",
+      "claim_type": "EXPLICIT",
+      "source": "(B) after 20\u201323 hr of water deprivation, ablated MCH-Cre; LSL-DTR+DT mice drank, for 1 hr, approximately as much water (782 \u00b1 100 licks) as control MCH-Cre;LSL-DTR+veh mice (642 \u00b1 101 licks) (difference is not statistically significant p>0.29, t test, n = 4 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by water intake data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "9173a538-c42d-4f61-8800-f702f806879c",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C79",
+      "claim": "The BG of MCH-Cre; LSL-DTR+DT MCH-ablated mice and control MCH-Cre;-LSL-DTR+veh before IP glucose injection was, respectively, 122 \u00b1 11 mg/dl and 151 \u00b1 16 mg/dl.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Blood glucose (BG) was measured 10 min before and after an IP bolus injection of glucose (10%, 'Materials and methods'). The BG of MCH-Cre; LSL-DTR+DT MCH-ablated mice and control MCH-Cre;-LSL-DTR+veh before injection was, respectively, 122 \u00b1 11 mg/dl and 151 \u00b1 16 mg/dl.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by blood glucose measurement data shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "48c4d593-d6a2-4c7c-b8ee-26c58de5a285",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C80",
+      "claim": "After IP glucose injection, BG raises to 325 \u00b1 28 mg/dl in MCH-ablated mice and 355 \u00b1 34 mg/dl in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "After injection, BG raises, respectively to 325 \u00b1 28 mg/dl and 355 \u00b1 34 mg/dl.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by blood glucose measurement data shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "145a22af-39fb-471b-9bd9-3558e79a69b7",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C81",
+      "claim": "The raise in BG after IP glucose injection was statistically significant before/after injection, but not across control and ablated groups of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The raise in BG was statistically significant before/after injection (*p<0.05, student t test, n = 4), but not across control and ablated groups of mice (*p>0.05, student t test, n = 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of blood glucose data shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "07f7b854-4fed-4d1b-9cca-1db4e530afd9",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C82",
+      "claim": "The level of cFos expression in DA neurons after exposure to sucrose is significantly lower in sweet blind Trpm5\u2212/\u2212 animals in which MCH neurons have been ablated vs controls.",
+      "claim_type": "EXPLICIT",
+      "source": "(G) Quantification across groups (n = 4) revealed that the level of cFos expression in DA neurons after exposure to sucrose is significantly lower in sweet blind Trpm5\u2212/\u2212 animals in which MCH neurons have been ablated vs controls. Trpm5\u2212/\u2212;MCHCRE; Rosa26-Flox-DTR+dt, show cFos expression in 20.3 \u00b1 3.7% of DA neurons after sucrose intake vs. 36.0 \u00b1 2.5% in control Trpm5\u2212/\u2212;MCH-CRE;Rosa26-Flox-DTR+veh (p*< 0.004, t test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cFos quantification data shown in Figure 5\u2014figure supplement 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "d3bc5eb0-f8b2-48ef-8c48-44caa1a677ca",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C83",
+      "claim": "Ablation of MCH neurons does not impact activation in TH-negative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "(H) Ablation of MCH neurons does not impact activation in THnegative cells. Quantification of c-Fos in nondopaminergic cells of the same slices as in (g). Trpm5\u2212/\u2212;MCH-CRE;Rosa26-Flox-DTR+veh and Trpm5\u2212/\u2212;MCH-CRE;Rosa26-Flox-DTR+dt have respectively, 16.0 \u00b1 4% and 14.1 \u00b1 3.5% of cFos positive neurons that are TH negative.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cFos quantification data shown in Figure 5\u2014figure supplement 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "c96b405b-68b5-4dc1-b8f9-b03e2cfdfc3d",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C84",
+      "claim": "MCH neurons make asymmetrical synapses onto dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Electron microscopy of gold enhanced detection of GFP in MCH neurons (black arrowheads) and silver-gold enhanced detection of TH-expressing neurons (grey arrow heads) of MCH-GFP transgenic mice, showing the existence of asymmetrical synapses between MCH and DA neurons, note the presence of dense core vesicles in MCHsilver-gold labeled boutons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "845f993c-0ef1-40c5-b2a2-261464a46c43",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C85",
+      "claim": "MCH neurons have dense core vesicles in their boutons.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Electron microscopy of gold enhanced detection of GFP in MCH neurons (black arrowheads) and silver-gold enhanced detection of TH-expressing neurons (grey arrow heads) of MCH-GFP transgenic mice, showing the existence of asymmetrical synapses between MCH and DA neurons, note the presence of dense core vesicles in MCHsilver-gold labeled boutons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "7468b6da-3224-4488-bc19-914c365d6a21",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C86",
+      "claim": "Continuous light stimulation for 1 s depolarizes MCH neurons, which promptly recover to native membrane potential (Vm) upon termination of light pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Quantification of Figure 1D: left plot\u2014continuous light stimulation generates a spiking rate of 20 \u00b1 1.37 spikes/s (n = 20 light pulses). Right plot\u2013Vm before, during and after continuous light stimulation shows that continuous light stimulation for 1 s depolarizes MCH neurons, which promptly recover to native membrane potential (Vm) upon termination of light pulses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "9b7be17a-c7f7-4904-8629-06c506183c27",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "claim_id": "C87",
+      "claim": "Continuous light stimulation generates a spiking rate of 20 \u00b1 1.37 spikes/s in MCH neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Quantification of Figure 1D: left plot\u2014continuous light stimulation generates a spiking rate of 20 \u00b1 1.37 spikes/s (n = 20 light pulses).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "65fa0589-449e-466c-81bb-01fd74e37781",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated and validated a Pmch-ChR2 mouse line showing that 97\u00b13% of MCH neurons expressed ChR2-YFP and 92\u00b18% of ChR2-YFP neurons expressed MCH. Whole-cell patch-clamp recordings confirmed light-evoked spiking at 5, 10, and 20 Hz, with higher spike rates at 20 Hz compared to 5 Hz, and continuous light stimulation generating a spiking rate of 20\u00b11.37 spikes/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 and C86-C87 provide converging evidence from immunohistochemistry (high specificity and overlap of ChR2-YFP with MCH) and electrophysiology (frequency-dependent light-evoked spiking) that validate the optogenetic tool. The quantification is appropriate and the electrophysiological characterization demonstrates functional ChR2 expression with frequency-dependent responses similar to glucose-induced responses in MCH neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "ff3a5a05-b3bb-4cdd-999e-3aee1060931d",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic activation of MCH neurons paired with water did not alter preference for water+laser versus water alone at any stimulation frequency tested, demonstrating that MCH neuron activation alone is not rewarding in the absence of taste.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C33, and C56 consistently show that MCH activation with water does not change preference behavior (Figure 2A). This control experiment is critical for establishing that MCH neurons require the presence of a sweet tastant to influence behavior, supporting the interpretation that MCH neurons integrate multiple signals rather than being intrinsically rewarding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "ac2befd9-8c17-4d5b-b84c-d49d27a2b713",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic activation of MCH neurons at 20 Hz or continuous light during sucralose intake inverted the normal preference for sucrose versus sucralose, with ChR2(+) mice showing sucrose preference ratios of 20.0\u00b14% (20 Hz) and 26.8\u00b15% (continuous), compared to 82.2\u00b13% and 76.7\u00b13% in ChR2(\u2212) controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 and C3 provide strong behavioral evidence with appropriate controls (ChR2\u2212 mice, 5 Hz stimulation) showing frequency-dependent effects. The preference inversion is statistically significant and consistent across two stimulation paradigms (20 Hz and continuous). The data demonstrate sufficiency of MCH activation to drive preference when paired with sweet taste.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "0fa4401e-4cf5-4706-acf1-2476ef87a127",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetic activation of MCH neurons during sucralose intake increased striatal dopamine levels by 68.7\u00b19% versus baseline, compared to negligible changes (8.2\u00b12.6%) when the laser was OFF. MCH activation also significantly increased sucralose consumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C28-C32 provide microdialysis evidence linking MCH activation to dopamine release. The data include appropriate baseline controls and show statistically significant increases in both dopamine release and consumption. The increase in dopamine is significantly different from both baseline and laser-only controls, supporting a causal relationship between MCH activation and dopamine signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "5a4680ac-835d-4eab-95e5-6bd41bd4818a",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MCH neurons densely innervate the striatum and ventral midbrain, making asymmetrical synapses onto dopamine neurons, with dense core vesicles present in MCH boutons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C15, C27, C84, and C85 provide anatomical evidence from multiple techniques (immunohistochemistry, electron microscopy) showing MCH projections to reward areas and direct synaptic connections to DA neurons. The electron microscopy data (Figure 3\u2014figure supplement 1B) provides ultrastructural confirmation of synaptic connectivity, supporting the anatomical basis for MCH regulation of dopamine signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "4e0e3108-a464-4f6c-834c-a037acd5bee6",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Intracranial injection of 1 ng/g diphtheria toxin led to complete ablation of MCH neurons in Pmch-CRE;LSL-DTR mice, with 0.3\u00b10.18 neurons/section remaining, which is not significantly different from zero.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C76 provide quantitative evidence of effective MCH neuron ablation using the DTR/DT system. The dose-response data (Figure 4\u2014figure supplement 1) and statistical analysis confirm near-complete ablation. This is a critical methodological validation for the loss-of-function experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "4b5e45c6-1d5b-4f77-afb0-c88cae41ca31",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MCH-ablated mice no longer preferred sucrose to sucralose, showing a preference ratio of 39.9\u00b15% compared to 77.1\u00b17% and 82.0\u00b14% in control groups, a statistically significant reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41, and C42 demonstrate loss of sucrose preference in MCH-ablated mice with appropriate controls (vehicle-treated and genetic controls). The statistical analysis includes Bonferroni correction for multiple comparisons, and the effect is robust. This provides strong evidence for necessity of MCH neurons in establishing sucrose preference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "3fc6bae2-8715-4408-8a4f-8caa7f259cff",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MCH-ablated mice showed negligible dopamine efflux during sucrose intake (not different from baseline), while control mice showed an overall 118.3\u00b10.3% increase in striatal dopamine levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C35-C37 provide microdialysis evidence that MCH neurons are necessary for sucrose-induced dopamine release. The data include appropriate controls and statistical tests. The loss of dopamine response in MCH-ablated mice is consistent with the behavioral loss of sucrose preference, supporting a mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "18dca3d2-495e-41b7-8268-111594191527",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Baseline dopamine levels were similar between MCH-ablated (0.34\u00b10.09 pg/\u03bcl) and control (0.25\u00b10.05 pg/\u03bcl) mice, excluding chronic effects of MCH neuronal ablation on dopamine levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C77 provide an important control showing that MCH ablation does not chronically alter baseline dopamine levels. This supports the interpretation that the loss of sucrose-induced dopamine release is specific to the post-ingestive response rather than a general deficit in dopaminergic function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "deb9041d-c645-4e94-9c19-98fa5b1af0ee",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MCH-ablated mice consumed significantly less sucrose than control mice when given free access, while water intake was equivalent between groups (782\u00b1100 vs 642\u00b1101 licks).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C40, and C78 show that MCH ablation specifically reduces sucrose consumption without affecting water intake. This control is important for demonstrating that the behavioral effects are specific to reward rather than general deficits in drinking behavior or motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "7db653e5-ffbc-4b7a-94ed-05e8b4f6db12",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MCH neuronal ablation did not alter preference for either sucrose or sucralose versus water, indicating that MCH neurons are not required for establishing a preference for sweet taste.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C44 provide critical evidence that MCH neurons specifically mediate post-ingestive reward rather than sweet taste perception. The data show preserved preference for both sweeteners over water in MCH-ablated mice (Figure 5B,C), supporting the interpretation that MCH neurons integrate nutrient value rather than taste information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "67b11895-7849-4f39-b5ae-dcb9b06dadcf",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The postprandial increase in blood glucose after sucrose ingestion was normal in MCH-ablated animals, with blood glucose rising from 122\u00b111 to 325\u00b128 mg/dl in ablated mice and from 151\u00b116 to 355\u00b134 mg/dl in controls, with no significant difference between groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C79-C81 provide important controls showing that MCH ablation does not affect glucose metabolism or absorption. This rules out the alternative explanation that changes in sucrose preference result from altered glucose handling rather than altered reward signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "6951bc09-4072-4c1f-9116-5e72cedd3175",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MCH neurons are required for the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2212/\u2212 mice. Sweet-blind control mice showed conditioned side preferences of 70\u00b13% and 79\u00b15% toward sucrose, while MCH-ablated sweet-blind mice showed no preference (50\u00b17%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C47-C50, C52 provide strong evidence that MCH neurons mediate nutrient sensing independent of taste. The conditioning paradigm in Trpm5\u2212/\u2212 mice is well-controlled and demonstrates that MCH neurons are necessary for detecting the post-ingestive rewarding effect of sucrose even when sweet taste is absent. This is a critical experiment supporting the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "0ee95c71-4f36-42c3-b69e-4ab0226199de",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Behavioral conditioning by the post-ingestive rewarding effect of sucrose in sweet-blind Trpm5\u2212/\u2212 mice positively correlates with DA neuron activation. MCH-ablated sweet-blind mice showed significantly lower cFos expression in DA neurons (20.3\u00b13.7%) compared to controls (36.0\u00b12.5%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C67, and C82 provide cellular-level evidence linking MCH neurons to DA neuron activation using cFos as a marker. The data support the mechanistic model that MCH neurons regulate DA neuron activity in response to sucrose. However, cFos is an indirect measure of neural activity and the correlation does not establish direct causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "8a2c8c6a-28fd-4cf5-a018-8f8f611ea975",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ablation of MCH neurons does not impact activation in TH-negative cells, with 16.0\u00b14% and 14.1\u00b13.5% cFos-positive TH-negative neurons in control and ablated mice respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 provides an important specificity control showing that MCH ablation specifically affects dopaminergic neurons rather than causing general changes in VTA activity. This supports the interpretation that MCH neurons specifically regulate DA signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "9a1cabf7-de17-4c62-9fa7-3e4335dcb042",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MCH neurons are necessary and sufficient for establishing preference for sucrose versus artificial sweeteners, serving as an essential link between glucose sensing and sugar reward by integrating information from multiple sources including nutrients, taste buds, and possibly gut sensors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C46, C53, C54, and C57 represent the main conclusions of the paper. These are well-supported by the combined gain-of-function (optogenetic activation inverts preference) and loss-of-function (ablation eliminates sucrose preference) experiments. The requirement for both MCH activation and sweet taste (C34) supports the integration model (C57). However, the claim of 'sufficiency' should be interpreted cautiously as MCH activation alone (without taste) is not rewarding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "261e7c18-2a59-4d6c-9f02-5c37eceb1f20",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Blocking dopamine transmission with haloperidol suppressed preference for sucrose versus sucralose, with haloperidol-treated animals showing a preference ratio of 51\u00b17% compared to 79\u00b14% in vehicle-treated animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 provides pharmacological evidence that dopamine transmission is necessary for sucrose preference. This supports the model that MCH neurons influence preference through dopaminergic signaling. However, haloperidol has broad effects on dopamine signaling and may affect multiple aspects of behavior beyond reward.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "1735f87a-aeaa-4174-8ae0-16aa4c58691f",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior work has established that sugars containing glucose are preferred to artificial sweeteners due to post-ingestive rewarding effects that elevate striatal dopamine release, and that sweet-blind Trpm5 knockout mice can still sense the nutrient value of sucrose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C8-C12 accurately summarize prior literature establishing the post-ingestive rewarding effect of sugars and the role of dopamine. These citations provide appropriate context for the current study. The claims are supported by multiple citations to previous work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "add061e4-c8d7-4d9d-8a8a-afc5dfea67b4",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work has shown that MCH neurons in the lateral hypothalamus are glucose sensitive, show increased activity when extracellular glucose increases, and play a critical role in energy balance regulation. MCH neurons share glucose sensing machinery with pancreatic \u03b2 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C14, C61, C62, and C63 accurately cite prior literature on MCH neuron properties. These provide important background establishing MCH neurons as candidate mediators of glucose sensing and reward. The citations are appropriate and support the rationale for investigating MCH neurons in this context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "f1a49b3e-dc8a-45fa-a4f1-2bfc424a798d",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors speculate that glucose may be sensed by gastric/intestinal sensors or other nutrient sensors that inform MCH neurons, and that synergy between taste and post-ingestive reward may explain preferences for sucrose over glucose alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55, C60, and C71 are explicitly speculative and discuss alternative mechanisms and interpretations. While these are reasonable hypotheses based on the data, they are not directly tested in the manuscript. The speculation is appropriately qualified and provides useful discussion of alternative models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    },
+    {
+      "id": "bccba51c-c678-455d-860a-8f2769183e81",
+      "content_id": "09a7613d-5c61-422c-9e91-7ca8a396e9ac",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Prior work has shown that MCH neurons are part of circuits processing gustatory information, that MCH and orexin neurons can sense glucose, that MCH neurons interact with leptin signaling, and that the market share of sugared soda is nearly triple that of diet soda.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C59, C64, C65, C66, C68, C69, C70, C72, and C73 cite prior literature providing additional context about MCH neuron function, related neural populations, and the real-world relevance of sugar preference. The citations appear accurate and provide appropriate background and discussion context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:01:11.270093Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e5be1d20-a707-45e2-947c-f9bad85b0e70",
+      "result_id": "65fa0589-449e-466c-81bb-01fd74e37781"
+    },
+    {
+      "claim_id": "6c03caeb-4be4-4532-b48b-b3839870b590",
+      "result_id": "65fa0589-449e-466c-81bb-01fd74e37781"
+    },
+    {
+      "claim_id": "e6854a75-3ca5-4ffc-b049-89019a418002",
+      "result_id": "65fa0589-449e-466c-81bb-01fd74e37781"
+    },
+    {
+      "claim_id": "69b9299e-ee03-4ea1-8e80-d1f905ea1648",
+      "result_id": "65fa0589-449e-466c-81bb-01fd74e37781"
+    },
+    {
+      "claim_id": "d663f709-a182-4764-9d1d-8de36d076aa1",
+      "result_id": "65fa0589-449e-466c-81bb-01fd74e37781"
+    },
+    {
+      "claim_id": "bc5a1b91-5179-46c1-9db6-135b2368c333",
+      "result_id": "65fa0589-449e-466c-81bb-01fd74e37781"
+    },
+    {
+      "claim_id": "7468b6da-3224-4488-bc19-914c365d6a21",
+      "result_id": "65fa0589-449e-466c-81bb-01fd74e37781"
+    },
+    {
+      "claim_id": "9b7be17a-c7f7-4904-8629-06c506183c27",
+      "result_id": "65fa0589-449e-466c-81bb-01fd74e37781"
+    },
+    {
+      "claim_id": "e01f4b32-f8f1-414a-bc77-af55045555d9",
+      "result_id": "ff3a5a05-b3bb-4cdd-999e-3aee1060931d"
+    },
+    {
+      "claim_id": "81bbd7e4-75ad-4069-b63a-8ccaca63370f",
+      "result_id": "ff3a5a05-b3bb-4cdd-999e-3aee1060931d"
+    },
+    {
+      "claim_id": "f8022890-3ad7-4bc1-aa49-39c01ba15972",
+      "result_id": "ff3a5a05-b3bb-4cdd-999e-3aee1060931d"
+    },
+    {
+      "claim_id": "f2fc0c6f-e3d8-4c47-9840-35fd6eb68fdb",
+      "result_id": "ac2befd9-8c17-4d5b-b84c-d49d27a2b713"
+    },
+    {
+      "claim_id": "a025687e-6422-4af9-a125-e93d0e6e82fb",
+      "result_id": "ac2befd9-8c17-4d5b-b84c-d49d27a2b713"
+    },
+    {
+      "claim_id": "17a6be0a-fc2d-44fd-bf1c-514fb4b91f89",
+      "result_id": "ac2befd9-8c17-4d5b-b84c-d49d27a2b713"
+    },
+    {
+      "claim_id": "7c267db3-3e6e-4e31-8cf3-a0118e349538",
+      "result_id": "ac2befd9-8c17-4d5b-b84c-d49d27a2b713"
+    },
+    {
+      "claim_id": "72d1c15d-1376-4edc-8252-a1449e616fd4",
+      "result_id": "ac2befd9-8c17-4d5b-b84c-d49d27a2b713"
+    },
+    {
+      "claim_id": "15a37648-65b4-4a02-82a2-b2452e8e388d",
+      "result_id": "0fa4401e-4cf5-4706-acf1-2476ef87a127"
+    },
+    {
+      "claim_id": "83bfd52a-a2fe-4aef-a9da-e1c67ebee659",
+      "result_id": "0fa4401e-4cf5-4706-acf1-2476ef87a127"
+    },
+    {
+      "claim_id": "0119dcbc-ed5d-4115-8eb3-ae72f8cb1a25",
+      "result_id": "0fa4401e-4cf5-4706-acf1-2476ef87a127"
+    },
+    {
+      "claim_id": "2070177d-78ac-4fd3-90f2-98d94d76f3b1",
+      "result_id": "0fa4401e-4cf5-4706-acf1-2476ef87a127"
+    },
+    {
+      "claim_id": "28c7d7d4-4834-4eb5-a919-5f6f15dfd8b1",
+      "result_id": "0fa4401e-4cf5-4706-acf1-2476ef87a127"
+    },
+    {
+      "claim_id": "2ff43d4c-b06e-4bcb-b96c-cc4d07473753",
+      "result_id": "0fa4401e-4cf5-4706-acf1-2476ef87a127"
+    },
+    {
+      "claim_id": "7c0b9315-6f51-4071-8d8c-7fc817cbe07f",
+      "result_id": "5a4680ac-835d-4eab-95e5-6bd41bd4818a"
+    },
+    {
+      "claim_id": "40fe0f1a-9fa1-4dca-8f0a-5d635fd0576c",
+      "result_id": "5a4680ac-835d-4eab-95e5-6bd41bd4818a"
+    },
+    {
+      "claim_id": "34437ac6-b60a-435e-8204-622d5afb13f6",
+      "result_id": "5a4680ac-835d-4eab-95e5-6bd41bd4818a"
+    },
+    {
+      "claim_id": "c96b405b-68b5-4dc1-b8f9-b03e2cfdfc3d",
+      "result_id": "5a4680ac-835d-4eab-95e5-6bd41bd4818a"
+    },
+    {
+      "claim_id": "845f993c-0ef1-40c5-b2a2-261464a46c43",
+      "result_id": "5a4680ac-835d-4eab-95e5-6bd41bd4818a"
+    },
+    {
+      "claim_id": "21dd5da4-179e-400a-86ae-25fc23c7d670",
+      "result_id": "4e0e3108-a464-4f6c-834c-a037acd5bee6"
+    },
+    {
+      "claim_id": "87597917-d86d-43d2-87f4-00199d811d96",
+      "result_id": "4e0e3108-a464-4f6c-834c-a037acd5bee6"
+    },
+    {
+      "claim_id": "1e21e55f-4297-4357-b502-e7dee43801b2",
+      "result_id": "4b5e45c6-1d5b-4f77-afb0-c88cae41ca31"
+    },
+    {
+      "claim_id": "3a01837e-861d-4668-a1d6-490e1a2738a0",
+      "result_id": "4b5e45c6-1d5b-4f77-afb0-c88cae41ca31"
+    },
+    {
+      "claim_id": "e436f60d-f091-4c66-af0f-5688b83b1764",
+      "result_id": "4b5e45c6-1d5b-4f77-afb0-c88cae41ca31"
+    },
+    {
+      "claim_id": "fbf8da11-39c1-4956-9a45-b858f0338f89",
+      "result_id": "3fc6bae2-8715-4408-8a4f-8caa7f259cff"
+    },
+    {
+      "claim_id": "1f139166-07f8-4a1d-9fca-1c866984511e",
+      "result_id": "3fc6bae2-8715-4408-8a4f-8caa7f259cff"
+    },
+    {
+      "claim_id": "6f6ddd05-1ac1-4ff7-8216-e9e79fa73aa1",
+      "result_id": "3fc6bae2-8715-4408-8a4f-8caa7f259cff"
+    },
+    {
+      "claim_id": "151d2894-bc08-4963-9309-d14afeb80a1b",
+      "result_id": "3fc6bae2-8715-4408-8a4f-8caa7f259cff"
+    },
+    {
+      "claim_id": "9b17577a-599a-4e15-b646-bb0429b6d77b",
+      "result_id": "18dca3d2-495e-41b7-8268-111594191527"
+    },
+    {
+      "claim_id": "d238966c-ca56-405f-b5e8-325e831547fb",
+      "result_id": "18dca3d2-495e-41b7-8268-111594191527"
+    },
+    {
+      "claim_id": "c1b544ab-dcbb-429b-aaa6-b0cafe2da7c2",
+      "result_id": "deb9041d-c645-4e94-9c19-98fa5b1af0ee"
+    },
+    {
+      "claim_id": "66f4ea62-8ba5-4907-afb4-eb6b356a0eec",
+      "result_id": "deb9041d-c645-4e94-9c19-98fa5b1af0ee"
+    },
+    {
+      "claim_id": "90b3e319-bfc3-4e34-9540-89e4be765f63",
+      "result_id": "deb9041d-c645-4e94-9c19-98fa5b1af0ee"
+    },
+    {
+      "claim_id": "161170b6-70aa-4654-a21a-ab4a163e1556",
+      "result_id": "7db653e5-ffbc-4b7a-94ed-05e8b4f6db12"
+    },
+    {
+      "claim_id": "6fa99cd2-b96d-4de4-ad29-0fe61193d6ae",
+      "result_id": "7db653e5-ffbc-4b7a-94ed-05e8b4f6db12"
+    },
+    {
+      "claim_id": "ecf3dfd5-3f3f-40eb-9251-c5622d67e987",
+      "result_id": "67b11895-7849-4f39-b5ae-dcb9b06dadcf"
+    },
+    {
+      "claim_id": "9173a538-c42d-4f61-8800-f702f806879c",
+      "result_id": "67b11895-7849-4f39-b5ae-dcb9b06dadcf"
+    },
+    {
+      "claim_id": "48c4d593-d6a2-4c7c-b8ee-26c58de5a285",
+      "result_id": "67b11895-7849-4f39-b5ae-dcb9b06dadcf"
+    },
+    {
+      "claim_id": "145a22af-39fb-471b-9bd9-3558e79a69b7",
+      "result_id": "67b11895-7849-4f39-b5ae-dcb9b06dadcf"
+    },
+    {
+      "claim_id": "dad40f9c-e46a-4043-ad1d-81b7198cc1a8",
+      "result_id": "6951bc09-4072-4c1f-9116-5e72cedd3175"
+    },
+    {
+      "claim_id": "91caefcc-6ef2-45d5-ac24-ac125ceb36b6",
+      "result_id": "6951bc09-4072-4c1f-9116-5e72cedd3175"
+    },
+    {
+      "claim_id": "d2854b48-ed4b-4e05-87a4-4b94985c84dc",
+      "result_id": "6951bc09-4072-4c1f-9116-5e72cedd3175"
+    },
+    {
+      "claim_id": "42bd831e-3a39-4dca-8136-783454d7aa22",
+      "result_id": "6951bc09-4072-4c1f-9116-5e72cedd3175"
+    },
+    {
+      "claim_id": "0b802100-2219-4565-a273-7a7753f26f1e",
+      "result_id": "6951bc09-4072-4c1f-9116-5e72cedd3175"
+    },
+    {
+      "claim_id": "e4825834-3d03-4e1c-9cd4-8e6a2df9fcfc",
+      "result_id": "6951bc09-4072-4c1f-9116-5e72cedd3175"
+    },
+    {
+      "claim_id": "b490a564-defb-40bf-b0e2-59d7a9bd542b",
+      "result_id": "0ee95c71-4f36-42c3-b69e-4ab0226199de"
+    },
+    {
+      "claim_id": "01f72e7b-ef71-4fea-8aea-073f53c30503",
+      "result_id": "0ee95c71-4f36-42c3-b69e-4ab0226199de"
+    },
+    {
+      "claim_id": "07f7b854-4fed-4d1b-9cca-1db4e530afd9",
+      "result_id": "0ee95c71-4f36-42c3-b69e-4ab0226199de"
+    },
+    {
+      "claim_id": "d3bc5eb0-f8b2-48ef-8c48-44caa1a677ca",
+      "result_id": "8a2c8c6a-28fd-4cf5-a018-8f8f611ea975"
+    },
+    {
+      "claim_id": "3d99afb5-8e13-4e85-8a7b-8282a1ae7731",
+      "result_id": "9a1cabf7-de17-4c62-9fa7-3e4335dcb042"
+    },
+    {
+      "claim_id": "c170e273-b1da-409a-b730-a2dc4cf64c94",
+      "result_id": "9a1cabf7-de17-4c62-9fa7-3e4335dcb042"
+    },
+    {
+      "claim_id": "02804264-bb34-40a9-bc4e-dc3f761b8aee",
+      "result_id": "9a1cabf7-de17-4c62-9fa7-3e4335dcb042"
+    },
+    {
+      "claim_id": "ba2f1d4d-4f57-4d06-b944-a500f9332d18",
+      "result_id": "9a1cabf7-de17-4c62-9fa7-3e4335dcb042"
+    },
+    {
+      "claim_id": "3018fa02-7540-4526-ba5b-26e8ce28ccb9",
+      "result_id": "9a1cabf7-de17-4c62-9fa7-3e4335dcb042"
+    },
+    {
+      "claim_id": "366ef23a-46e4-4ef1-b35a-99e4c89d3442",
+      "result_id": "261e7c18-2a59-4d6c-9f02-5c37eceb1f20"
+    },
+    {
+      "claim_id": "5d5e8b17-7de6-4790-a378-db65dabbd227",
+      "result_id": "1735f87a-aeaa-4174-8ae0-16aa4c58691f"
+    },
+    {
+      "claim_id": "fd2523a6-5802-4d8a-b842-2c67a6e7d44d",
+      "result_id": "1735f87a-aeaa-4174-8ae0-16aa4c58691f"
+    },
+    {
+      "claim_id": "fa54fd3c-d4c1-4928-a00c-a298d52c394e",
+      "result_id": "1735f87a-aeaa-4174-8ae0-16aa4c58691f"
+    },
+    {
+      "claim_id": "ef64d6a6-02ef-4209-a7be-5967210a3b8b",
+      "result_id": "1735f87a-aeaa-4174-8ae0-16aa4c58691f"
+    },
+    {
+      "claim_id": "1664fad3-c194-4f82-945d-46b4c7a2ee37",
+      "result_id": "1735f87a-aeaa-4174-8ae0-16aa4c58691f"
+    },
+    {
+      "claim_id": "0e22f1fb-6168-4de3-b523-70871d33a0e5",
+      "result_id": "1735f87a-aeaa-4174-8ae0-16aa4c58691f"
+    },
+    {
+      "claim_id": "c0e0d7cb-eac4-4ec8-b258-9d16753759dd",
+      "result_id": "add061e4-c8d7-4d9d-8a8a-afc5dfea67b4"
+    },
+    {
+      "claim_id": "2e473de9-5d11-4812-9f17-7befeebd1784",
+      "result_id": "add061e4-c8d7-4d9d-8a8a-afc5dfea67b4"
+    },
+    {
+      "claim_id": "38a3f91d-e267-4fd1-bae7-59421e61d471",
+      "result_id": "add061e4-c8d7-4d9d-8a8a-afc5dfea67b4"
+    },
+    {
+      "claim_id": "f45887e4-0b22-4125-a12d-e27a9fb54f1c",
+      "result_id": "add061e4-c8d7-4d9d-8a8a-afc5dfea67b4"
+    },
+    {
+      "claim_id": "07f28ad1-5b9d-4099-9e69-716f78a2bfb8",
+      "result_id": "add061e4-c8d7-4d9d-8a8a-afc5dfea67b4"
+    },
+    {
+      "claim_id": "d02a7ab4-adbf-4e2f-b5f8-d08fb2ed7f8d",
+      "result_id": "f1a49b3e-dc8a-45fa-a4f1-2bfc424a798d"
+    },
+    {
+      "claim_id": "ec6e6768-49c8-41d7-9692-84ce874f27f4",
+      "result_id": "f1a49b3e-dc8a-45fa-a4f1-2bfc424a798d"
+    },
+    {
+      "claim_id": "6160484a-00b6-40c8-add4-86cf948afe20",
+      "result_id": "f1a49b3e-dc8a-45fa-a4f1-2bfc424a798d"
+    },
+    {
+      "claim_id": "ef22564f-3bfb-45af-b82b-94a61587974d",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "c4a7cd50-2582-483c-a880-662bb31f189d",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "212f0034-7d4c-45c0-93a1-007459637aaf",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "34c3020e-6942-40ad-a8f4-eb39587d87ed",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "1ba1fe0b-5adf-4de6-8c5d-bebdcc3b2258",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "a2e2d6f7-2a2a-4425-b1aa-130f68ec4039",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "1cd94fac-84e4-428a-8433-7e32a3e397d8",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "3501970b-eb97-4e96-a582-1e38425a82e8",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "59a24dcd-6a85-46ce-b37b-03c67edef093",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    },
+    {
+      "claim_id": "a8cec9aa-5fcb-4464-a978-1f9d16b7455c",
+      "result_id": "bccba51c-c678-455d-860a-8f2769183e81"
+    }
+  ],
+  "comparisons": []
+}

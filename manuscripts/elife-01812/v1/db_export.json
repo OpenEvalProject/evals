@@ -1,0 +1,2127 @@
+{
+  "submission": {
+    "id": "74cc3801-5831-47be-b16e-b0b671ca5212",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:13:26.547919Z",
+    "updated_at": "2025-11-28T20:13:26.547919Z"
+  },
+  "content": [
+    {
+      "id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "submission_id": "74cc3801-5831-47be-b16e-b0b671ca5212",
+      "content_type": "manuscript",
+      "content_text": "# Structure of the SAS-6 cartwheel hub from Leishmania major\n\n## Authors\n\n- Mark van Breugel<sup>1</sup> \u2020\n- Rainer Wilcken<sup>1</sup>\n- Stephen H McLaughlin<sup>1</sup>\n- Trevor J Rutherford<sup>1</sup>\n- Christopher M Johnson<sup>1</sup>\n\n### Affiliations\n\n1. Medical Research Council Laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCentrioles are cylindrical cell organelles with a ninefold symmetric peripheral microtubule array that is essential to template cilia and flagella. They are built around a central cartwheel assembly that is organized through homo-oligomerization of the centriolar protein SAS-6, but whether SAS-6 self-assembly can dictate cartwheel and thereby centriole symmetry is unclear. Here we show that Leishmania major SAS-6 crystallizes as a 9-fold symmetric cartwheel and provide the X-ray structure of this assembly at a resolution of 3.5 \u00c5. We furthermore demonstrate that oligomerization of Leishmania SAS-6 can be inhibited by a small molecule in vitro and provide indications for its binding site. Our results firmly establish that SAS-6 can impose cartwheel symmetry on its own and indicate how this process might occur mechanistically in vivo. Importantly, our data also provide a proof-of-principle that inhibition of SAS-6 oligomerization by small molecules is feasible.\n\n## Introduction\n\nEukaryotic flagella and cilia have essential roles in cell locomotion, fluid movement, and sensing. Their formation strictly requires the presence of centrioles, cylindrical organelles with a radially ninefold symmetric, peripheral microtubule array (Bettencourt-Dias and Glover, 2007; Azimzadeh and Marshall, 2010; Gonczy, 2012). During ciliogenesis/flagellogenesis, centrioles (then referred to as basal bodies) dock to the cell membrane via their distal ends and nucleate the flagellar/ciliar axoneme from their microtubule array (Sherwin and Gull, 1989; Dawe et al., 2007; Ishikawa and Marshall, 2011; Avasthi and Marshall, 2012; Chemes, 2012). The symmetry and diameter of centrioles (and thereby of flagella/cilia) is, to a large extent, established through scaffolding by the centriolar cartwheel, a structure with a central ring-like hub and nine radially projecting spokes that contact the peripheral centriolar microtubules (Azimzadeh and Marshall, 2010; Brito et al., 2012; Gonczy, 2012).\n\nThe cartwheel is organized through the homo-oligomerization of the highly conserved centriolar protein SAS-6 (Nakazawa et al., 2007; Kitagawa et al., 2011; van Breugel et al., 2011). High-resolution crystal structures of zebrafish and C. reinhardtii SAS-6 fragments together with biochemical and biophysical characterizations (Kitagawa et al., 2011; van Breugel et al., 2011) demonstrated that two dimerization interfaces in SAS-6 mediate this oligomerization: a coiled-coil domain that forms a rod-like parallel dimer; and a globular N-terminal domain that forms a curved head-to-head dimer. Modeling these two dimer interactions together in silico resulted in ring assemblies that were compatible with the symmetry and dimension of cartwheels observed in vivo. In these models, the N-terminal head domains constitute the cartwheel hubs from which the coiled-coil rods project to form the cartwheel spokes (Kitagawa et al., 2011; van Breugel et al., 2011). However, so far, no high-resolution structure of the SAS-6 cartwheel is available. Although rotary shadowing EM studies suggested that SAS-6 might be able to form cartwheels, the available resolution was insufficient to determine the symmetry of the observed assemblies directly (Kitagawa et al., 2011). Another, higher resolution, EM study with recombinant SAS-6 revealed cartwheel-like assemblies with an eightfold, not a ninefold symmetry (van Breugel et al., 2011), while a third EM study showed the presence of SAS-6 tetramers (Gopalakrishnan et al., 2010). Furthermore, the available biochemical and biophysical data do not provide evidence for efficient cartwheel formation by SAS-6 in solution (Gopalakrishnan et al., 2010; Kitagawa et al., 2011; van Breugel et al., 2011), raising the question of whether SAS-6 alone is sufficient to organize ninefold symmetric cartwheels and, if so, under what conditions.\n\nSAS-6 is a highly conserved protein that is found in all eukaryotes that have cilia/flagella during some of their life-cycle stages (Carvalho-Santos et al., 2010; Hodges et al., 2010). Inhibiting SAS-6 self-assembly by point mutations in vivo abolishes the formation of centrioles (Kitagawa et al., 2011; van Breugel et al., 2011; Lettman et al., 2013) and thereby flagella (van Breugel et al., 2011). Thus, targeting SAS-6 oligomerization by inhibitors could be a strategy to disable flagellogenesis in organisms that cause human disease and rely on flagella for their pathogenicity. The Trypanosomatids are of special interest in this respect. They consist of parasitic, eukaryotic protozoa with a single flagellum and comprise members that cause major human diseases, such as sleeping sickness (Trypanosoma brucei), Chagas disease (Trypanosoma cruzi), and Leishmaniasis (Leishmania spec.) (Simpson et al., 2006). These organisms display complex life cycles in which they shuttle between an insect vector and human or animal hosts. Their flagellum provides key roles in this life cycle through its multiple functions in essential cellular processes such as motility, signalling, sensing, and attachment (Vaughan and Gull, 2003; Ralston et al., 2009; Gluenz et al., 2010). Furthermore, the flagellar pocket, a membrane invagination from which the flagellum emerges, is the exclusive site of vesicular membrane traffic in these organisms (Overath et al., 1997; Landfear and Ignatushchenko, 2001; Field and Carrington, 2004, 2009; Overath and Engstler, 2004). It is therefore not surprising that flagella have been demonstrated or are proposed to be key factors in the pathogenicity of these organisms (Vaughan and Gull, 2003; Ralston et al., 2009; Gluenz et al., 2010).\n\nAs in other eukaryotes, the flagellum of the Trypanosomatids is templated from centrioles (basal bodies). Tomographic EM studies demonstrated the presence of canonical, ninefold symmetric cartwheel structures in the centre of their centrioles (Lacomble et al., 2009). Currently, no high-resolution structures of SAS-6 homologues from Trypanosomatids are available, and it is unclear whether oligomerization of their SAS-6 homologues could be inhibited.\n\n## Results\n\n### Leishmania major SAS-6 is highly similar to other SAS-6 homologues\n\nThe genomes of Trypanosoma brucei, Trypanosoma cruzi, and Leishmania major have recently been sequenced (Berriman et al., 2005; El-Sayed et al., 2005; Ivens et al., 2005). BLAST searches identified the likely SAS-6 homologues in these organisms with similar domain architectures (Figure 1A, Figure 1\u2014figure supplement 1) and sequence identities to human SAS-6 of 21.0 \u00b1 1.4% in 459 \u00b1 21 aligned residues. Multiple sequence alignment of their N-terminal domains (Figure 1\u2014figure supplement 1B) shows that key residues are well conserved compared to zebrafish SAS-6, the closest homologue of human SAS-6 for which high-resolution structures are available (van Breugel et al., 2011). Different from zebrafish SAS-6, they have long N-terminal extensions (Figure 1A, Figure 1\u2014figure supplement 1A,B) that vary in length and are poorly conserved. Since these extensions hindered our crystallization attempts, we largely removed them in the constructs used in this manuscript. The part of the extensions still present did not show electron density in our crystal structures.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig1-v1.jpg)\n\n**Figure 1.:** (A) Domain overview of L. major SAS-6. Lines indicate constructs that were used in this work. (B and C) Left: ribbon presentation of the head-to-head dimers of L. major SAS-6\u2019s N-terminal domain present in the SAS-697\u2013274 crystal. Shown are the dimers formed between chain B and chain C (B) and chain A and symmetry-related chain A (C). \u03b1-helices (\u03b1) and \u03b2-sheets (\u03b2) are numbered sequentially. Right: detailed views of the corresponding dimerization interfaces. Interface residues are labelled and shown in sticks, dotted orange lines indicate hydrogen bonds. The two dimers show largely identical side-chain orientations in their interfaces. Note, however, that F257 (ringed in blue) in the B\u2013C dimer inserts into a hydrophobic pocket, while in the A\u2013A dimer Y215 is flipped into this pocket and displaces F257. To better illustrate this, a semi-transparent molecular surface of one of the subunits is also presented (grey). (D) Sedimentation-equilibrium analytical ultracentrifugation data for 400 \u00b5M L. major SAS-697\u2013274 wild-type (blue circles) and F257E mutant (green circles) and Y215K mutant (red circles) obtained at 11300, 17000, and 21200 rpm. Data for the F257E mutant were fitted to an ideal single-species model (solid line). Analysis of multiple concentrations gave a molecular weight of 17,727 \u00b1 219 Da, close to the expected molecular weight for the monomer of 19,640 Da. As initial fits to a similar model for the WT and Y215K data gave higher molecular weights of 27,589 \u00b1 209 Da and 30,951 \u00b1 595 respectively, the data were fitted to a monomer\u2013dimer equilibrium model (solid line) giving dissociation constants, KD, of 622 \u00b1 70 \u00b5M for the WT and 190 \u00b1 27 \u00b5M for Y215K mutant. The plots on the right show the residuals of the fits to the data for the wild-type (blue circles) and the corresponding F257E mutant (green circles) and Y215K mutant (red circles). (E) Left: ribbon presentation of the L. major SAS-697\u2013320 F257E coiled-coil dimer structure (chain A: red, chain B: green). Right: detailed view of the region boxed on the left. Interaction interface between N-terminal head domain and the coiled-coil stalk. Residues that make contact are labelled and are shown as sticks, dotted orange lines indicate hydrogen bonds.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic representation of Leishmania major and Danio rerio SAS-6. Both proteins show a similar overall architecture with an N-terminal head domain and a coiled-coil domain of comparable lengths. The bar indicates the aligned SAS-6 region shown in (B). (B) Multiple sequence alignment of the N-terminal head domains of SAS-6 from Trypanosoma brucei, Trypanosoma cruzi, Leishmania major, and Danio rerio. The numbering refers to L. major SAS-6. The alignment is colored according to the Clustal coloring scheme. Red stars indicate key residues of the interaction interface of the homo-dimer of this domain. (C) Overlay of the structures of L. major SAS-697\u2013274 (green) and Danio rerio N-SAS-61\u2013156 (blue). Face-on view onto the hydrophobic pocket into which a highly conserved phenylalanine (F257 in L. major, F131 in D. rerio SAS-6) is inserted in the homo-dimerized form of this domain. Residues of this pocket are labelled and are shown as sticks. (D) Detailed view of the interaction interface between N-terminal head domain and the coiled-coil stalk of SAS-6. Overlay of this interface from L. major SAS-697\u2013320 F257E (green) with that from Danio rerio N-SAS-61\u2013179 F131D (blue). Residues that make contact are labelled and are shown as sticks, dotted yellow lines indicate hydrogen bonds.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Ribbon presentation of the SAS-6 octamer present in the L. major SAS-697\u2013320 F257E crystal. The ASU of the crystal contained four SAS-6 monomers that are labelled from A\u2013D. The arrow specifies the view direction shown as a close-up in (B). (B) Left: ribbon presentation of the B\u2013C head-to-head homo-dimer in the L. major SAS-697\u2013320 F257E crystal. Right: corresponding detailed view of the homo-dimer interface. The other head-to-head dimers in the crystal showed similar arrangements to the ones presented here. Interface residues are labelled and shown in sticks. Dotted yellow lines indicate hydrogen bonds. Highlighted in lemon and ringed in blue is the mutated E257 residue. Note that Y215 is swung into the hydrophobic pocket, whereas E257 points outwards. The remainder of the interface residues show similar side-chain orientations as observed in the wild-type SAS-697\u2013274 crystal (Figure 1).\n\nTo elucidate the structural organization of L. major SAS-6, we solved the structure of its N-terminal domain (Lm SAS-697\u2013274) by X-ray crystallography to a resolution of 2.2 \u00c5 (Table 1, Table 2; Figure 1B). The asymmetric unit (ASU) of the crystal contained three molecules that were virtually identical to each other (139 \u00b1 2 selected pairs superpose with an rmsd of 0.70 \u00b1 0.13 \u00c5 in secondary structure matching). Our structure demonstrates a high similarity of L. major SAS-6 to previously solved SAS-6 structures (Kitagawa et al., 2011; van Breugel et al., 2011) (secondary structure matching to the D. rerio SAS-6 head domain results in an rmsd of 1.59 \u00b1 0.09 \u00c5 with 133 \u00b1 2 selected pairs). Like these, the N-terminal domain of L. major SAS-6 consists of a 7-stranded \u03b2-barrel, capped by a helix-turn-helix motif, that forms a curved cross-handshake homo-dimer within the crystal through a highly conserved interaction interface (Figure 1B, Figure 1\u2014figure supplement 1B,C). In this dimer, the \u03b2-hairpins formed by \u03b2-strands \u03b26 and \u03b27 pack antiparallelly against each other. Phenylalanine 257 at the tip of this hairpin is inserted into a conserved hydrophobic pocket that is constituted by the helix-turn-helix motif and the base of this hairpin in the B-C homo-dimer (formed by chain B and chain C in the crystal, Figure 1B). Dimerization is also observed in solution, as judged by equilibrium ultracentrifugation, and then depends on the presence of F257 (Figure 1D). The measured KD of this dimerization is \u223c600 \u03bcM and therefore approximately 5- to 10-fold weaker than seen for other SAS-6 homologues (Kitagawa et al., 2011; van Breugel et al., 2011).\n\n**Table 1.**\n Native dataset analysis and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>L. major SAS-697\u2013274 WT</th>\n      <th>L. major SAS-697\u2013320 F257E</th>\n      <th>L. major SAS-697\u2013320 WT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Beamline</td>\n      <td>Diamond I04</td>\n      <td>ESRF ID29</td>\n      <td>ESRF BM14</td>\n    </tr>\n    <tr>\n      <td>Space Group</td>\n      <td>P43212</td>\n      <td>C121</td>\n      <td>H3</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.9794</td>\n      <td>0.90</td>\n      <td>0.97813</td>\n    </tr>\n    <tr>\n      <td>Monomers in the asymmetric unit</td>\n      <td>3</td>\n      <td>4</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Unit Cell dimensions (\u00c5)</td>\n      <td>a = 84.25 b = 84.25 c = 239.94 \u03b1 = 90.0 \u03b2 = 90.0 \u03b3 = 90.0</td>\n      <td>a = 108.9 b = 81.25 c = 133.1 \u03b1 = 90.0 \u03b2 = 91.5 \u03b3 = 90.0</td>\n      <td>a = 482.7 b = 482.7 c = 43.13 \u03b1 = 90.0 \u03b2 = 90.0 \u03b3 = 120.0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>48.9\u20132.2</td>\n      <td>46.91\u20132.9/3.4 (anisotropy)</td>\n      <td>66.9\u20133.5/4.2 (anisotropy)</td>\n    </tr>\n    <tr>\n      <td>Completeness (overall/inner/outer shell)</td>\n      <td>99.9/98.9/100</td>\n      <td>99.9/99.1/99.9</td>\n      <td>100/99.1/100</td>\n    </tr>\n    <tr>\n      <td>Rmerge (overall/inner/outer shell)</td>\n      <td>0.144/0.064/1.505</td>\n      <td>0.152/0.032/2.570</td>\n      <td>0.335/0.074/3.061</td>\n    </tr>\n    <tr>\n      <td>Rpim (overall/inner/outer shell)</td>\n      <td>0.065/0.030/0.657</td>\n      <td>0.061/0.013/1.033</td>\n      <td>0.073/0.016/0.704</td>\n    </tr>\n    <tr>\n      <td>Mean I/\u03c3I (overall/inner/outer shell)</td>\n      <td>7.6/18.6/1.4</td>\n      <td>10.6/41.4/0.9</td>\n      <td>8.2/33.3/1.5</td>\n    </tr>\n    <tr>\n      <td>Multiplicity (overall/inner/outer shell)</td>\n      <td>5.9/5.5/6.0</td>\n      <td>7.2/6.7/7.1</td>\n      <td>22.3/21.9/19.8</td>\n    </tr>\n    <tr>\n      <td>Number of reflections</td>\n      <td>45,569</td>\n      <td>24,090</td>\n      <td>48,521</td>\n    </tr>\n    <tr>\n      <td>Number of atoms</td>\n      <td>3536</td>\n      <td>5653</td>\n      <td>8777</td>\n    </tr>\n    <tr>\n      <td>Waters</td>\n      <td>141</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree (% data used)</td>\n      <td>20.8/24.5 (5.0%)</td>\n      <td>23.7/25.6 (5.0%)</td>\n      <td>22.4/24.2 (5.1%)</td>\n    </tr>\n    <tr>\n      <td>rmsd from ideal values: bond length/angles</td>\n      <td>0.010/1.349</td>\n      <td>0.008/1.255</td>\n      <td>0.006/1.348</td>\n    </tr>\n    <tr>\n      <td>Mean B value</td>\n      <td>51.5</td>\n      <td>92.8</td>\n      <td>150.6</td>\n    </tr>\n    <tr>\n      <td>Average Real-space correlation coefficient</td>\n      <td>0.976</td>\n      <td>0.924</td>\n      <td>0.881</td>\n    </tr>\n    <tr>\n      <td>Molprobity Score</td>\n      <td>1.14 (100th percentile)</td>\n      <td>1.33 (100th percentile)</td>\n      <td>1.41 (100th percentile)</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n SeMet L. major SAS-697\u2212274 WT dataset analysis\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Beamline</td>\n      <td colspan=\"3\">Diamond I03</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td colspan=\"3\">P43212</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.9794 (Peak)</td>\n      <td>0.9796 (Inflection)</td>\n      <td>0.9393 (Remote)</td>\n    </tr>\n    <tr>\n      <td>Unit Cell dimensions (\u00c5)</td>\n      <td>a = 84.19 b = 84.19 c = 239.6 \u03b1 = 90.0 \u03b2 = 90.0 \u03b3 = 90.0</td>\n      <td>a = 84.24 b = 84.24 c = 239.7 \u03b1 = 90.0 \u03b2 = 90.0 \u03b3 = 90.0</td>\n      <td>a = 84.22 b = 84.22 c = 239.7 \u03b1 = 90.0 \u03b2 = 90.0 \u03b3 = 90.0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>68.9\u20132.3</td>\n      <td>68.9\u20132.3</td>\n      <td>68.9\u20132.3</td>\n    </tr>\n    <tr>\n      <td>Completeness (overall/inner/outer shell)</td>\n      <td>99.8/99.9/99.7</td>\n      <td>99.7/99.9/99.7</td>\n      <td>99.8/99.7/99.7</td>\n    </tr>\n    <tr>\n      <td>Rmerge (overall/inner/outer shell)</td>\n      <td>0.130/0.066/0.942</td>\n      <td>0.122/0.048/1.001</td>\n      <td>0.131/0.052/0.973</td>\n    </tr>\n    <tr>\n      <td>Rpim (overall/inner/outer shell)</td>\n      <td>0.066/0.036/0.467</td>\n      <td>0.062/0.026/0.497</td>\n      <td>0.066/0.028/0.486</td>\n    </tr>\n    <tr>\n      <td>Mean I/sd(I) (overall/inner/outer shell)</td>\n      <td>7.4/18.8/1.7</td>\n      <td>7.8/21.8/1.7</td>\n      <td>7.2/20.2/1.6</td>\n    </tr>\n    <tr>\n      <td>Multiplicity (overall/inner/outer shell)</td>\n      <td>4.8/4.1/4.9</td>\n      <td>4.7/4.1/4.9</td>\n      <td>4.7/4.0/4.8</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\"></td>\n    </tr>\n    <tr>\n      <td>Se sites found/expected</td>\n      <td colspan=\"3\">14/12</td>\n    </tr>\n  </tbody>\n</table>\n\nTo ascertain the role of the coiled-coil domain of L. major SAS-6, we tried to crystallize constructs that included both the N-terminal domain and parts of the coiled-coiled domain, but initially failed to obtain diffraction-grade crystals. However, by introducing the F257E mutation to strongly weaken head-to-head dimerization we managed to crystallize construct Lm SAS-697\u2013320 F257E that contained the N-terminal head domain and the first seven heptad-repeats of the coiled-coil domain. We subsequently solved its X-ray structure to a resolution of 2.9 \u00c5 (Table 1; Figure 1E). The asymmetric unit of the crystal contained four molecules that were highly similar to each other and superposed with an rmsd of 1.17 \u00b1 0.50 \u00c5 in secondary structure matching with 165 \u00b1 16 selected pairs. The crystal structure revealed that the L. major SAS-6 coiled-coil domain is a parallel dimer and packs via conserved interactions against the N-terminal head-domains as seen in other SAS-6 homologues (Figure 1E, Figure 1\u2014figure supplement 1D). Thus, our structural analyses demonstrate that L. major SAS-6 is highly similar to other SAS-6 homologues.\n\n### Alternative dimerization arrangements of Leishmania major SAS-6 reveal a dimerization-impaired state\n\nOur structural analysis also revealed the presence of an alternative arrangement of the head-to-head homo-dimer of L. major SAS-6. In the Lm SAS-697\u2013274 crystal, the A\u2013A homo-dimer (formed by chain A and symmetry-related chain A) shares the features of the B\u2013C homo-dimer described above. However, in the A\u2013A homo-dimer, the Y215 sidechain is flipped into its own hydrophobic pocket resulting in the displacement from this pocket of residue F257 of its homo-dimer partner (Figure 1C) probably weakening the interaction. Intriguingly, we found a similar arrangement in the Lm SAS-697\u2013320 F257E crystal. The F257E mutation abolishes head-to-head dimerization in solution (Figure 1D), yet, in the crystal, due to the high protein and precipitant concentrations, some of the SAS-6 molecules present are found nevertheless in head-to-head dimers and form a curved octamer. In this octamer residues Y215 are also swung into their own hydrophobic pockets, while E257 point away from them (Figure 1\u2014figure supplement 2). These data suggest that the closed Y215 conformation corresponds to a low-affinity dimerization state of the head domains and might therefore constitute a potential regulatory mechanism of SAS-6 oligomerization. In solution, the presence of a dimerization-impaired state could also explain the relatively low affinity of head-to-head dimerization of wild-type L. major SAS-6 apparent in analytical ultracentrifugation (\u223c600 \u03bcM compared to 50\u2013100 \u03bcM observed for other species) since other SAS-6 homologues do not have aromatic residues at the equivalent position of Y215 that could play such a role.\n\nTo test whether the Y215 closed conformation significantly compromises dimerization in solution, we mutated Y215 in Lm SAS-697\u2013274 to lysine that is unable to block the hydrophobic pocket in a similar way. Subsequently, we subjected the purified protein to analytical ultracentrifugation (Figure 1D). The measured KD of head-to-head dimerization of the Y215K mutant was \u223c200 \u03bcM and therefore approximately threefold lower than for the corresponding wild-type protein. We conclude that Y215 acts to partially inhibit head-to-head dimerization of L. major SAS-6.\n\n### Leishmania major SAS-6 crystallizes as ninefold symmetric rings that are highly similar to centriolar cartwheels in vivo\n\nThe presence of curved SAS-6 octamers in the crystal of the Lm SAS-697\u2013320 F257E mutant that is strongly impaired in its ability to form head-to-head dimers suggests that wild-type versions of SAS-6 would adopt even larger assemblies. The low affinity of head-to-head dimerization together with the concomitant sample heterogeneity makes EM studies of the resulting assemblies technically challenging. To overcome these limitations we tried to crystallize L. major SAS-6 constructs with both dimerization interfaces intact. Obtaining crystals that diffracted well enough to solve their structure proved difficult. However, with the wild-type construct of Lm SAS-697\u2013320, we finally succeeded to find a crystal form of the space-group H3 that diffracted to a resolution of \u223c3.5 \u00c5 along the l-axis with anisotropy limiting the resolution along the h-k plane to \u223c4.2 \u00c5. Using the structure of the Lm SAS-697\u2013274 B\u2013C homo-dimer as a search model, a molecular replacement solution could be found that allowed the subsequent placement of the coiled-coil part present in the construct (Figure 2). The unit cell of the Lm SAS-697\u2013320 crystal form contained three 9-fold symmetric SAS-6 rings with three SAS-6 dimers constituting the ASU. These three dimers were highly similar to each other and overlayed with an rmsd of 0.88 \u00b1 0.29 \u00c5 in secondary structure matching with 357 \u00b1 14 selected pairs. No electron density was seen inside the SAS-6 rings. The inner diameters of the SAS-6 rings are \u223c19 nm and correspond well to the diameters of cartwheel hubs observed in vivo (Lacomble et al., 2009; Guichard et al., 2010, 2012). In the crystal, SAS-6 rings are stacked onto each other. Neighbouring rings interact through inter-digitation of their coiled-coil domains in an antiparallel way (Figure 2\u2014figure supplement 1). We confirmed our structural model by calculating a phased anomalous map using the refined phases based on our model and the amplitudes of an isomorphic dataset collected from crystals of the selenomethionine derivative (Figure 2B; Table 3). Peaks in this map correlated with the positions of methionines in our model. Thus, under appropriate conditions, L. major SAS-6 can adopt ninefold symmetric rings that are highly similar to cartwheels observed in vivo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig2-v1.jpg)\n\n**Figure 2.:** (A) Ribbon presentation of the L. major SAS-697\u2013320 structure. Shown is the ring assembly present in the unit cell of the L. major SAS-697\u2013320 crystal. Protein chains are colored alternatingly in green and red to allow easier comparison with Figure 1. Top: side-view, bottom: face-on view of the L. major SAS-697\u2013320 ring structure. The nonagon in the center of the ring indicates the (quasi-) ninefold symmetry axis. The ASU of the crystal contained six SAS-6 monomers that are labelled from A\u2013F. No clear electron density could be seen for the distal part of the coiled-coil of the A\u2013B dimer, probably due to the lack of stabilizing crystal packing interactions compared to the C\u2013D and E\u2013F dimer (Figure 2\u2014figure supplement 1B). (B) Detailed view of the region boxed in (A). Shown in blue sticks are the methionine-side chains of the SAS-697\u2013320 model. In magenta, iso-mesh representation of the phased anomalous difference map at a contour level of \u03c3 = 5 showing the selenium positions in the crystallized selenomethionine derivate of L. major SAS-697\u2013320.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Stacking of the L. major SAS-697\u2013320 rings in the crystal. Rings are stacked directly onto each other through interactions of the N-terminal domains of SAS-6. Left: face-on view, right: turned by 90\u00b0 around the x-axis. (B) Lateral interactions of the L. major SAS-697\u2013320 rings in the crystal. Top: face-on view, the arrow indicates the view direction shown at the bottom as a close-up. The coiled-coil stalks interact in an antiparallel way with each other. Their termini touch the head domains of adjacent rings.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Overlay of the wild-type L. major SAS-697\u2013320 ring structure (green) with the two dimers present in the ASU of the L. major SAS-697\u2013320 F257E crystal (A\u2013B dimer in magenta, C\u2013D dimer in red). The SAS-697\u2013320 F257E A\u2013B/C\u2013D dimer superposed to wild-type L. major SAS-697\u2013320 with an rmsd of 0.91 \u00c5/1.62 \u00c5 in secondary structure matching with 330/319 selected pairs respectively. (B) Overlay of the wild-type L. major SAS-697\u2013320 ring structure (green) with the B\u2013C dimer present in the ASU of the L. major SAS-697\u2013274 crystal (blue). Secondary structure matching of these two structures resulted in an rmsd of 0.77 \u00c5 (283 selected pairs).\n\n**Table 3.**\n SeMet L. major SAS-697\u2212320 WT dataset analysis\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Beamline</td>\n      <td>ESRF BM14</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>H3</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.97872 (Peak)</td>\n    </tr>\n    <tr>\n      <td>Unit Cell dimensions (\u00c5)</td>\n      <td>a = 481.7 b = 481.7 c = 42.9 \u03b1 = 90.0 \u03b2 = 90.0 \u03b3 = 120.0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>48.2\u20134.0/5.4 (anisotropy)</td>\n    </tr>\n    <tr>\n      <td>Completeness (overall/inner/outer shell)</td>\n      <td>100.0/98.8/100.0</td>\n    </tr>\n    <tr>\n      <td>Rmerge (overall/inner/outer shell)</td>\n      <td>0.194/0.054/2.118</td>\n    </tr>\n    <tr>\n      <td>Rpim (overall/inner/outer shell)</td>\n      <td>0.091/0.026/0.987</td>\n    </tr>\n    <tr>\n      <td>Mean I/sd(I) (overall/inner/outer shell)</td>\n      <td>3.8/13.7/0.9</td>\n    </tr>\n    <tr>\n      <td>Multiplicity (overall/inner/outer shell)</td>\n      <td>5.6/5.5/5.6</td>\n    </tr>\n  </tbody>\n</table>\n\n### A small compound can inhibit SAS-6 oligomerization in vitro\n\nTo find out whether we could inhibit SAS-6 oligomerization, we conducted a small-scale fragment screen using a custom library of halogenated fragments (HEFLib) (Wilcken et al., 2012). First, pools of compounds were screened for their ability to bind to and thereby cause a shift perturbation in the {1H,15N}-HSQC NMR spectrum of 15N labelled Lm SAS-6. To avoid ambiguities in the interpretation of shift perturbations that could stem from the partial presence of oligomers, we used the Lm SAS-697\u2013274 F257E mutant for these binding studies that is monomeric in solution (Figure 1D). One dimensional spin-echo experiments provided a crude estimate of 18 ms for the backbone amide 1H T2 relaxation time constants, consistent with the molecular mass of the construct (\u223c20 kDa) (Anglister et al., 1993).\n\nTo determine the putative interaction sites of binding candidates, we assigned the backbone resonances of Lm SAS-697\u2013274 F257E using 13C,15N double-labelled protein and mapped the HSQC chemical shift perturbations onto the crystal structure of wild-type Lm SAS-697\u2013274. Strong perturbations in chemical shifts are most consistent with compound PK9119 ((5-bromo-7-ethyl-1H-indol-3-ylmethyl)-dimethyl-amine, Figure 3A) binding adjacent to the head-to-head dimerization interface of Lm SAS-697\u2013274 (Figure 3B, Figure 3\u2014figure supplement 1A,B). Smaller, but significant shift changes indicate that binding may alter this interface by affecting the conformation of the helix-turn-helix motif that constitutes a part of it. We also examined aromatic side chain 1H resonances of the Phe and Tyr residues using C\u03b2\u2013H\u03b4 correlation maps, which enabled us to identify two side-chains (F199, F212) that are perturbed on binding of PK9119 (Figure 3B, Figure 3\u2014figure supplement 1C). These two side-chains cluster together around the helix-turn-helix motif. HSQC chemical shift titration experiments with PK9119 and L. major SAS-697\u2013274 F257E suggest a millimolar binding affinity; the low solubility of PK9119 in aqueous solutions and lack of a reference compound for competition binding assays makes more accurate KD determinations technically challenging.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig3-v1.jpg)\n\n**Figure 3.:** (A) The chemical structure of compound PK9119 as a structure formula (top) or three-dimensional model (bottom). (B) Heat map of the chemical shift perturbations in the {1H-15N}-HSQC spectrum of 15N-labelled L. major SAS-697\u2013274 F257E in the presence of 2 mM PK9119. Data are plotted onto the crystal structure of wild-type L. major SAS-697\u2013274. Higher shift perturbation is depicted in warmer colors, whilst prolines (not observable in the HSQC) are colored grey, and unassigned/untraced residues are colored white. The magenta F257 is from the homo-dimer partner and is inserted into the hydrophobic pocket of the dimerization interface. Note that the chemical shift perturbations cluster close to this pocket. Side-chains are drawn for F199 and F212 that showed robust perturbations in (HB)CB(CGCD)HD correlation spectra in the presence of 1 mM PK9119 (Figure 3\u2014figure supplement 1C). (C) SEC-MALS chromatogram of L. major SAS-697\u2013424 showing the refractive index signal with the derived molar masses indicated by the thicker horizontal lines. L. major SAS-697\u2013424 displayed a distribution of masses from that of the dimer up to >200 kDa consistent with a concentration driven self-association equilibrium. In the presence of 1 mM PK9119 the maximal mass was almost halved. The F257E mutant displayed a constant mass of 71 kDa in the absence and presence of PK9119 consistent with the mass of a dimer of L. major SAS-697\u2013424. All samples were injected on SEC-MALS at 25 mg/ml (675 \u03bcM in monomer). Due to dilution during SEC the peak concentrations achieved were a factor of \u223c10 lower than this (\u223c68 \u03bcM in monomer).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) {1H-15N}-HSQC overlay of 15N-labelled L. major SAS-697\u2013274 F257E in the presence or absence of 1 mM or 2 mM PK9119. (B) Graphical representation of the chemical shift perturbations from the data in panel A, 2 mM PK9119. Perturbation is quantified as a weighted combination \u0394\u03b41H + (\u0394\u03b415N/5). The blue line indicates that the trajectory of the S170 correlation is not quantified, as its peak could not be traced in the presence of PK9119. (C) Overlay of (HB)CB(CGCD)HD spectra for 13C/15N labelled protein in the presence or absence of 1 mM PK9119, showing C\u03b2\u2013H\u03b4 correlations for Phe and Tyr side chain resonances. C\u03b2 resonance frequencies of three unperturbed correlations (F184, F185 and Y230), indicated by a horizontal line, are unresolved to within the 0.2 ppm/point resolution of the C\u03b2 assignment spectra, and are not assigned.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** SEC-MALS chromatogram of Danio rerio SAS-61\u2013326 showing the refractive index signal with the derived molar masses indicated by the thicker horizontal lines. Dr SAS-61\u2013326 displayed a distribution of masses from that of the dimer up to \u223c250 kDa consistent with a concentration driven self-association equilibrium. In the presence of 1 mM PK9119, the maximal observed mass was reduced to \u223c160 kDa. The F131D mutant displayed a constant mass of 75 kDa in the absence and presence of PK9119 consistent with the mass of a Dr SAS-61\u2013326 dimer. All samples were injected on SEC-MALS at 10 mg/ml (263 \u03bcM in monomer). Due to dilution during SEC, the peak concentrations were a factor of \u223c10 lower than this (\u223c26 \u03bcM in monomer). The largest species seen for Dr SAS-61\u2013326 are bigger than seen for L. major SAS-697\u2013424 (Figure 3C), despite a threefold lower concentration in monomer. This observation is consistent with the weaker head-to-head dimerization KD for L. major SAS-6 seen by analytical ultracentrifugation when compared with measurements on D. rerio SAS-6 (van Breugel et al., 2011).\n\nTo determine whether PK9119 affects oligomerization of L. major SAS-6, we subjected wild-type and F257E mutant protein to size-exclusion chromatography\u2014multi-angle light scattering (SEC-MALS) in the presence or absence of 1 mM PK9119 (Figure 3C). Since we were unable to make full length L. major SAS-6 recombinantly, we used a L. major SAS-6 construct that contained the N-terminal domain and approximately half of its coiled-coil domain (Lm SAS-697\u2013424) for this assay. Similar to the previous findings (Gopalakrishnan et al., 2010; Kitagawa et al., 2011; van Breugel et al., 2011), we did not find evidence for a stable ring-fraction of SAS-6 in solution, but found a complex equilibrium of SAS-6 oligomers (ranging up to approximately SAS-6 hexamers) for the wild-type construct in the absence of PK9119, while the F257E mutant was a stable dimer under these conditions, in agreement with stable dimer formation through its coiled-coil domain. When the runs were repeated in the presence of PK9119, we saw a clear shift in the elution volume for the wild-type but not the F257E SAS-6 construct towards smaller molecular weights and a decrease in the analysed mass from MALS, demonstrating that PK9119 partially affects head-to-head dimerization. We also repeated this experiment with the equivalent constructs of zebrafish SAS-6 (Dr SAS-61\u2013326, wild-type and F131D) under similar conditions. The results showed that zebrafish SAS-6 oligomerization was also affected by the presence of PK9119, although to a lesser extent than L. major SAS-6 oligomerization (Figure 3\u2014figure supplement 2). Thus, PK9119 appears to be a general inhibitor of SAS-6 oligomerization in vitro with some preference for the L. major variant, and represents a starting point for further screening of chemical analogs or fragment evolution.\n\n## Discussion\n\nSAS-6 organizes the rotationally ninefold symmetric cartwheel (Nakazawa et al., 2007; Kitagawa et al., 2011; van Breugel et al., 2011), an early assembly intermediate of centrioles that participates in establishing their symmetry and diameter (Nakazawa et al., 2007; Brito et al., 2012; Gonczy, 2012). Based on high-resolution structures of SAS-6 fragments and in silico modeling, detailed models of how SAS-6 self-associates to organize these cartwheels have been proposed (Nakazawa et al., 2007; Kitagawa et al., 2011; van Breugel et al., 2011). However, these models have so far not been confirmed; EM studies with recombinant SAS-6 constructs were either of too low resolution (Kitagawa et al., 2011) or showed assemblies that were not ninefold symmetric (Gopalakrishnan et al., 2010; van Breugel et al., 2011). Furthermore, several studies found no evidence for complete ring-formation by recombinant SAS-6 in solution (Gopalakrishnan et al., 2010; Kitagawa et al., 2011; van Breugel et al., 2011). Thus, it has been unclear if and under what conditions SAS-6 is sufficient to assemble ninefold symmetric cartwheels and thereby assist in dictating centriole symmetry.\n\nWe were unable to detect cartwheel formation by recombinant L. major SAS-6 in solution, confirming these previous findings. However, we demonstrate that under high protein and precipitant concentrations, a L. major SAS-6 construct crystallized as ninefold symmetric rings with a diameter very similar to cartwheel hubs in vivo; this provides the first unambiguous experimental evidence that SAS-6 is able to form ninefold symmetric cartwheels on its own. Our results suggest that SAS-6 needs to be highly concentrated locally in order to be able to form cartwheels. Intriguingly, in vivo, SAS-6 is indeed highly enriched at the site of centriole formation (Kleylein-Sohn et al., 2007; Strnad et al., 2007; Dammermann et al., 2008; Blachon et al., 2009; Sonnen et al., 2012; Lettman et al., 2013). However, in vivo, SAS-6 assembly occurs in the context of other essential centriole duplication factors, some of which can be found in a complex with SAS-6 (Stevens et al., 2010; Tang et al., 2011; Lin et al., 2013). It is therefore likely that additional centriole proteins assist SAS-6 assembly, especially in light of the fact that several studies (Gopalakrishnan et al., 2010; Kitagawa et al., 2011; van Breugel et al., 2011), and our study presented here, have been unable to demonstrate efficient cartwheel assembly by SAS-6 in solution.\n\nWhy does SAS-6 not form cartwheels efficiently? The interaction interfaces that are critical for ring formation (i.e., the head-to-head dimer interface and the head-domain\u2013coiled-coil interface) are both relatively small (Figures 1, 2; Kitagawa et al., 2011; van Breugel et al., 2011). In solution, SAS-6 oligomers are therefore likely to show some \u2018wobble\u2019 that would make ring closure inefficient and assembled rings unstable. However, in our ring structure, both of these critical interfaces are similar in their orientations to those observed in the crystals of the Lm SAS-697\u2013320 F257E and the Lm SAS-697\u2013274 constructs that did not crystallize as rings (Figure 2\u2014figure supplement 2). Thus, although clearly not occurring efficiently in solution, our data suggest that ninefold symmetric ring formation might correspond to a weakly favored SAS-6 conformation that needs to be stabilized. In our crystal structure, rings are stabilized by crystal packing interactions and, in vivo, probably by SAS-6 interacting proteins. This model could explain why SAS-6 is required for the faithful establishment of centriole symmetry, while not being the sole determinant of their ninefold symmetry in vivo (Nakazawa et al., 2007).\n\nIn basal bodies, cartwheels are stacked onto each other with a vertical distance between cartwheel hubs of \u223c8 nm (Guichard et al., 2012). Although we observed a similar stacking in our cartwheel hub structure (Figure 2\u2014figure supplement 1), the corresponding distance was only \u223c4 nm. Furthermore, although a comparable packing was previously observed in a crystal of the N-terminal head domain of zebrafish SAS-6 (van Breugel et al., 2011), the underlying packing interactions are based on a non-conserved interface and are therefore unlikely to be of relevance in vivo. Recent EM tomograms of basal bodies from Trichonympha (Guichard et al., 2012, 2013) rather suggest that ring stacking in vivo is based on parallel interactions between the SAS-6 coiled-coil stalks and vertical interactions of SAS-6 associated components at the periphery of centriolar cartwheels.\n\nInterestingly, we discovered a dimerization-impaired state of Leishmania major SAS-6 that could provide a potential regulatory mechanism for its assembly. In this state, residue Y215 blocks the hydrophobic pocket into which F257 from its homo-dimer partner binds. Mutating Y215 to lysine resulted in an apparent threefold increase in dimerization affinity as measured by analytical ultracentrifugation. If open and closed Y215 conformations are in equilibrium with each other, the dimerization affinity of the closed Y215 state in solution would be even lower than the measured value, since, in this case, ultracentrifugation analyses the association of a mixture of open and closed states. We speculate that a release of this closed SAS-6 state through either a regulatory protein or a direct phosphorylation of Y215 could provide a simple mechanism to trigger SAS-6 assembly locally by increasing the concentration of assembly efficient SAS-6. Should this mechanism indeed be used in vivo (which is currently unknown), it would probably be confined to the Trypanosomatids as other SAS-6 homologues appear not to have tyrosine/aromatic residues in the position equivalent to Y215 that could play an equivalent role.\n\nFinally, as a proof-of-principle we show that oligomerization of SAS-6 can be inhibited by the small molecule PK9119 in vitro. The evolutionary conservation of the hydrophobic pocket involved in dimerization together with PK9119\u2019s relatively broad activity in inhibiting both L. major and (to a lesser extent) D. rerio SAS-6 could suggest that PK9119 targets this pocket. However, our NMR binding studies are most consistent with PK9119 binding adjacent to the head-to-head dimerization interface and thereby altering its structure subtly (Figure 3B). Confirming this notion, when we modeled the SAS-6\u2013PK9119 complex with the HADDOCK software package (available at http://haddock.science.uu.nl/services/HADDOCK/haddock.php) (de Vries et al., 2010; Wassenaar et al., 2012), using high ambiguity restraints derived from the observed chemical shift perturbations in HSQC spectra (6 restraints >0.2 ppm), we found that of the 200 docked structures 98% occupied a single cluster in which PK9119 was bound to helix \u03b11, but not on the side lining the hydrophobic pocket, but on its opposite side, facing away from this pocket (data not shown). Clearly, an elucidation of a high-resolution structure of PK9119 bound to its target would be important to understand how exactly PK9119 functions in inhibiting L. major SAS-6. The binding affinity of our compound is currently low (in the mM range) and it does not show strong species specificity. To establish whether PK9119 has any potential to be improved in these critical aspects, it will be essential to systematically explore chemical modifications of its central indole scaffold. Regardless of these limitations, our demonstration that SAS-6 can be inhibited in vitro is a first, small step towards the goal of developing SAS-6 inhibitors that also could be used in vivo, for example as a cell-biological tool.\n\n## Materials and methods\n\n### Recombinant protein expression and purification\n\nAll L. major constructs were made synthetically as codon-optimized genes (IDT, Coralville, Iowa). Zebrafish SAS-6 constructs were described earlier (van Breugel et al., 2011). All constructs were N-terminally His-tagged. Proteins were expressed in E. coli BL21 Rosetta and purified using standard methods via NiNTA (Qiagen, Hilden, Germany) chromatography, proteolytic tag cleavage, size-exclusion chromatography and ion-exchange chromatography. The L. major SAS-697\u2013274 and SAS-697\u2013320 selenomethionine derivatives were purified in the same way, but expression was in M9 medium supplemented with 2 mM MgSO4, 0.4% (wt/vol) glucose, 25 \u00b5g/ml FeSO4.7H2O, 40 \u00b5g/ml amino acid mix (excluding Methionine), 1 \u00b5g/ml riboflavin, 1 \u00b5g/ml niacinamide, 0.1 \u00b5g/ml pyridoxine monohydrochloride, 1 \u00b5g/ml thiamine and 40 \u00b5g/ml seleno-L-methionine. All purified L. major constructs included the extra sequence GP, zebrafish SAS-6 GPH at their N-termini from the cloning/protease cleavage site.\n\n### Crystallization\n\nSeMet L. major SAS-697\u2013274 crystals were obtained using the sitting drop method with a reservoir solution of 100 mM bisTris pH 5.1, 200 mM MgCl2, 20% (wt/vol) PEG-3350 at 16\u00b0C. Drops were set up using 100 nl protein solution and 100 nl of reservoir solution. After half a day, the crystals were mounted in 100 mM bisTris pH 5.1, 200 mM MgCl2, 10% (wt/vol) PEG-3350, 25% (wt/vol) Glycerol and flash-frozen in liquid nitrogen.\n\nNative L. major SAS-697\u2013274 was crystallized at 16\u00b0C using the sitting drop method with 200 nl of the protein solution and 200 nl of the reservoir solution (100 mM bisTris pH 5.1, 200 mM MgCl2, 20% [wt/vol] PEG-3350). The crystals were mounted in 100 mM bisTris pH 5.1, 200 mM MgCl2, 10% (wt/vol) PEG-3350, 25% (wt/vol) glycerol after 1 day and flash-frozen in liquid nitrogen.\n\nL. major SAS-697\u2013320 F257E was crystallized in sitting drops in 100 mM NaCitrate pH 5.85, 21% (wt/vol) PEG-3000 at 16\u00b0C using 1 \u03bcl of protein solution and 1 \u03bcl of the reservoir solution. The crystals were mounted after 4\u20135 days in 100 mM NaCitrate pH 5.85, 21% (wt/vol) PEG-3000 and increasing amounts of PEG-400 to a final concentration of 20% (wt/vol) before flash-freezing them in liquid nitrogen.\n\nL. major SAS-697\u2013320 WT crystals were obtained using the sitting drop method with a reservoir solution of 100 mM bisTris pH 6.23, 100 mM NaAcetate (not pH adjusted), 26.5\u201327% (wt/vol) PEG-400 at 16\u00b0C. Drops were set up using 1.8 \u03bcl of protein solution and 1.8 \u03bcl of the reservoir solution. After 3 days, the crystals were mounted in 100 mM bisTris pH 6.23, 100 mM NaAcetate (not pH adjusted), 28% (wt/vol) PEG-400.\n\nSeMet L. major SAS-697\u2013320 WT crystals were obtained using the sitting drop method with a reservoir solution of 100 mM bisTris pH 6.23, 100 mM NaAcetate (not pH adjusted), 25.5% (wt/vol) PEG-400 at 16\u00b0C. Drops were set up using 1.5 \u03bcl of protein solution and 1.5 \u03bcl of the reservoir solution. After 3 days, the crystals were mounted in 100 mM bisTris pH 6.23, 100 mM NaAcetate (not pH adjusted), 30% (wt/vol) PEG-400.\n\nThe protein concentrations of the crystallized constructs were determined by the Bradford assay with BSA as a standard and were: 80.3 mg/ml (SeMet L. major SAS-697\u2013274), 29.3 mg/ml (L. major SAS-697\u2013274), 94.7 mg/ml (L. major SAS-697\u2013320 F257E), 50.3 mg/ml SeMet L. major SAS-697\u2013320 and 50.1 mg/ml (L. major SAS-697\u2013320).\n\n### Data collection and processing\n\nData sets were integrated and scaled using MOSFLM (Leslie and Powell, 2007) (SeMet and native L. major SAS-697\u2013274, L. major SAS-697\u2013320) or XDS (Kabsch, 2010) (L. major SAS-697\u2013320 F257E and SeMet L. major SAS-697\u2013320). Data sets were scaled using SCALA or AIMLESS (Evans, 2006; Evans and Murshudov, 2013). The L. major SAS-697\u2013274 structure was solved from the corresponding 3-wavelength SeMet dataset by MAD using the SHELX CDE pipeline in HKL2MAP (Pape and Schneider, 2004), resulting in clear electron density into which an initial model was built using BUCANNEER (Cowtan, 2006, 2008) and manual building. REFMAC (Murshudov et al., 2011) was used to refine the model against the native data set with manual building done in Coot (Emsley and Cowtan, 2004). L. major SAS-697\u2013320 WT and F257E were solved by molecular replacement in Phaser (McCoy et al., 2007) using the L. major SAS-697\u2013274 structure as a search model (SAS-697\u2013274 monomer (F257E) or the BC-dimer (WT). The models were subsequently further built in Coot (Emsley and Cowtan, 2004) and refined in REFMAC (Murshudov et al., 2011) and Phenix.refine (Afonine et al., 2005) using NCS and (for WT L. major SAS-697\u2013320) TLS refinement with separate TLS groups for the globular N-terminal and the coiled-coil domains and also using as a reference model restraint the B chain of L. major SAS-697\u2013274 (residue 130\u2013271). Refinement yielded clear density for the missing coiled-coil part of these constructs.\n\n### Analytical ultracentrifugation\n\nEquilibrium sedimentation experiments were performed on an Optima XL-I analytical ultracentrifuge (Beckmann, Brea, California) using An50Ti rotors. Sample volumes of 110 \u00b5l with protein concentrations of 100, 200, and 400 \u03bcM were loaded in 12 mm 6-sector cells and centrifuged at 11300, 17000, and 21200 rpm until equilibrium was reached at 4\u00b0C. At each speed, comparison of several scans was used to judge whether or not equilibrium had been reached. Buffer conditions were 50 mM Tris, 100 mM NaCl, pH 8.0. The solvent density and viscosity (\u03c1 = 1.00557 g/ml and \u03b7 = 1.6056 mPa\u22c5s) were calculated using Sednterp (Dr Thomas Laue, University of New Hampshire, Sednterp server available at: http://sednterp.unh.edu. Desktop version can be downloaded from: http://bitcwiki.sr.unh.edu/index.php/Downloads). Data were processed and analysed using UltraSpin software (available at: http://www.mrc-lmb.cam.ac.uk/dbv/ultraspin2/) and SEDPHAT (Schuck, 2003).\n\n### NMR experiments\n\nSmall molecules were screened for binding to approximately 40 \u00b5M 15N-labelled protein in aqueous phosphate buffer (25 mM Phosphate, 150 mM NaCl, 2 mM DTT, pH 7.2) and up to 2 mM ligand concentration, with a total of 5% (vol/vol) DMSO-d6. {1H-15N}-fast-HSQC spectra (Mori et al., 1995) were recorded using a Bruker Avance spectrometer operating at 800 MHz 1H frequency, with a 5 mm cryogenic inverse probe and sample temperature of 298 K. The digital resolution of the processed data was 3.2 and 5.3 Hz/point in f2 and f1, respectively. Backbone resonance assignments were obtained from HNCACB, CBCA(CO)NH, HN(CA)CO, HNCO and HNCANH spectra at 600 MHz 1H frequency, acquired using unmodified Bruker pulse programs and a protein concentration of 400 \u00b5M. Aromatic sidechain resonances were assigned from a (HB)CB(CGCD)HD spectrum. Data were processed using TopSpin version 3 (commercially available from Bruker, Billerica, Massachusetts, details available at http://www.bruker.com/products/mr/nmr/nmr-software/software/topspin/) and analysed using Sparky (Goddard & Kneller, UCSF, San Francisco, available at http://www.cgl.ucsf.edu/home/sparky/).\n\n### HADDOCK calculations\n\nModels of the complex between SAS-6 and PK9119 were generated by submitting the crystal structure coordinates of a L. major SAS-697\u2013274 monomer to the WeNMR server (available at: https://www.wenmr.eu) (de Vries et al., 2010; Wassenaar et al., 2012), using default HADDOCK parameters and CNS topology parameters for PK9119 based on the PRODRG predictions provided on the HADDOCK server (available at http://haddock.science.uu.nl/services/HADDOCK/haddock.php).\n\n### Size exclusion chromatography coupled to multi-angle light scattering (SEC-MALS)\n\nThe mass in solution of L. major SAS-697\u2013424, wild-type and F257E mutant, Dr SAS-61\u2212326, wild-type and F131D mutant, was determined by SEC-MALS measurements using a Wyatt Heleos II 18 angle light scattering instrument coupled to a Wyatt Optilab rEX online refractive index detector. Detector 12 in the Heleos instrument was replaced with Wyatt\u2019s QELS detector for dynamic light scattering measurement. Protein samples (100 \u03bcl) were resolved on a Superdex S-200 10/300 analytical gel filtration column (GE Healthcare, Little Chalfont, UK) running at 0.5 ml/min in 50 mM bisTris, 100 mM NaCl, pH 7.0 buffer, containing 0.126% (vol/vol) DMSO and \u00b11 mM chemical compound PK9119 ((5-bromo-7-ethyl-1H-indol-3-ylmethyl)-dimethyl-amine, Sigma-Aldrich, St. Louis, Missouri) before passing through the light scattering and refractive index detectors in a standard SEC-MALS format. Buffers were filtered through a 0.22-\u03bcm filter before usage to remove any PK9119 precipitates. Protein concentration was determined from the excess differential refractive index based on 0.186 RI increment for 1 g/ml protein solution. The concentration and the observed scattered intensity at each point in the chromatograms were used to calculate the absolute molecular mass from the intercept of the Debye plot using Zimm\u2019s model as implemented in Wyatt\u2019s ASTRA software (commercially available from Wyatt technology, Santa Barbara, California, details at: http://www.wyatt.com/products/software/astra.html).\n",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "dd169315-21cf-4bb6-92aa-d6f57c1a683d",
+      "submission_id": "74cc3801-5831-47be-b16e-b0b671ca5212",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01812.015](https://doi.org/10.7554/eLife.01812.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cStructure of the SAS-6 cartwheel hub from Leishmania major\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, John Kuriyan, and 3 reviewers, one of whom, Erich Nigg, has agreed to reveal his identity.\n\nThe Senior editor and reviewers discussed their comments before we reached this decision, and the Senior editor has assembled the following comments to help you prepare a revised submission.\n\nThe centriolar protein SAS-6 has recently been shown to be a major determinant of the 9-fold symmetry of the cartwheel, an important structure in centriole assembly. (This was shown independently by two groups, one being the author of the present study). This conclusion was based on a combination of X-ray structure data, in silico modeling and rotatory shadowing EM. Although immediately embraced by the community as an important and beautiful advance, it had not previously been established formally that SAS-6 alone can assemble into rings with 9-fold symmetry.\n\nThe gap in structural knowledge concerning SAS-6 has been filled in the present study. Structures of fragments containing the N-terminal head domain (97-274) or a dimerization deficient head domain + coiled coil fragment (97-320 F237E) provide new insights into the interactions that stabilize head-to-head SAS-6 dimer interfaces and the interface between the coiled-coil and the head domain, respectively. Most importantly, the authors were also able to solve the structure of the wild-type 97-320 construct, and made the important observation that this fragment crystallizes in a nine-fold symmetry, creating a ring with a diameter very similar to cartwheel hubs observed in centrioles in vivo. Thus, the authors' data show that SAS-6 is sufficient to form a ring with nine-fold symmetry and that other components are not required.\n\nThe authors also provide evidence for a potential auto-inhibitory conformation in Leishmania SAS-6 (involving Y215) \u2013 however, this aromatic residue is not present in animal SAS-6 and its in vivo relevance is uncertain. In addition, the manuscript identifies a pocket at a dimer interface between head domains that can be targeted by small molecules. Although they emphasize the potential of future therapeutic uses of such compounds, the present data are rather preliminary and can only be seen as a first modest step in this direction (the compound is of low affinity and shows little species-specificity).\n\nIn conclusion, that the authors have determined a crystal structure of the cartwheel is really quite remarkable, given its large diameter and the lack of stabilizing internal spokes. The additional structures add to the strength of the story. The identification of a potential small molecule inhibitor is nice and makes it a sound story for publication. The auto-inhibitory discussion may be a little overdone with little experimental support, but it seems reasonable to present the idea that Y215 may play a direct role in SAS-6 assembly regulation. Thus, the paper should be published in eLife once the authors have addressed the following minor comments, using their own judgement as to how best to respond to each of these points. The revised paper will receive a very rapid final decision by the editor without further review, and so a clear discussion of how these points are addressed will be helpful.\n\nMinor comments:\n\n1) The authors state that SAS-6 rings are stacked onto each other in the crystal and they also refer to literature stating that Sas-6 rings are stacked onto each other in basal bodies (Guichard et al., 2012). They should discuss these data, and also a recent publication reporting that C. elegans SAS-6 forms a spiral (Hilbert et al., PNAS 2013).\n\n2) A couple of the reviewers had issues related to arguments about energy.\n\nThe full architecture could be more stable than intermediates; however, if it were low energy than it would be favored in solution, which it is not. It is also clear that it isn't stable in any in vitro context outside the crystal. Since it is difficult to argue about free energy or energy from crystal structures, particularly due to the confounding effects of local concentration, the authors may wish to just exclude these arguments (the structure speaks for itself). Specifically, in the section entitled \u2018Leishmania major SAS-6 crystallizes as 9-fold symmetric rings that are highly similar to centriolar cartwheels in vivo\u2019: the authors argue that because each of the dimers in the asymmetric unit in the 97-320 structure has a similar conformation, this conformation represents a low energy state of SAS-6. The logic of this argument and the rationale for making it are unclear. Any conformation that crystallizes (including tetrameric and octameric SAS-6) is likely to be a low energy conformation. The observation that under the 97-320 crystallization conditions SAS-6 forms a nine-membered ring is not sufficient evidence to claim the head-to-head dimer conformation in the nine-fold symmetrical ring is more stable in general than the dimer interfaces previously observed in octameric or tetrameric structures.\n\n3) The authors state in the Abstract that their data indicate how cartwheel assembly is regulated in vivo. While the observation that a residue in Lm SAS-6 can adopt a conformation that weakens head-to-head contacts is suggestive, it is premature to state that this observation provides the structural basis for regulation of cartwheel-imposed symmetry.\n\n4) Section entitled \u2018A small compound can inhibit SAS-6 oligomerization in vitro\u2019: The NMR data show perturbations in and around the hydrophobic dimerization pocket when the inhibitor binds. It would be easier to assess the correlation between the chemical shift data and the residues in the dimerization pocket if the authors explicitly listed the residues (and ideally, show them in the figure) that are within interaction distance of F527 versus those that show a perturbation. Because of the sensitivity of chemical shift perturbations to allosteric structural changes, the authors should consider modifying the statement \u201cStrong perturbations indicate that PK9119 \u2026 binds\u201d to indicate that the perturbation data is consistent with PK9119 binding to the hydrophobic pocket.\n\n5) Discussion section: The authors observe that the nine-membered rings stack vertically in the crystal based on interactions between the head domains, with a stacking distance of about 4 nm. That the ring stacking distance is much greater in vivo and that the stacking interfaces in the crystal are not conserved argues against the authors' speculation that the observed ring stacking contacts in the crystal are important during cartwheel assembly. It would be an improvement to remove this speculation.\n\n6) Last paragraph of Discussion section: The authors note that PK9119 can be docked into the hydrophobic pocket. The authors do not present criteria for evaluating whether a particular ligand can be docked or not. Therefore, the authors should either include the docking data in the Results section, making the details of the modeling and it's interpretation clear, or this statement should be removed from the Discussion.\n\n7) Results section\u201d The term 'helix-turn-helix motif' is defined as an architecture in certain DNA binding proteins. I found the use of the phrase here inappropriate. If it truly is a helix-turn-helix motif it should be explained better.\n\n8) The description of the B-C homo-dimer is not symmetry related, unless there is a misunderstanding. This is an asymmetric unit dimer while the A-A homo-dimer is symmetry related. It should be clarified. The use of color in Figure 1 is confusing as the molecules are colored the same even though different interfaces are being described. Altering the color to make these more distinct would be helpful. Specifically, using different colors for the subunit interfaces would help in clarity as one relates the complexes to each other. Minimally, flipping the coloring in E would make it easier to understand how the dimerization interfaces differ. This could then be echoed in Figure 2. Adding numbers to D would help more than these traces.\n\n9) Section entitled \u2018Alternative dimerization arrangements of Leishmania major SAS-6 suggest an auto-inhibitory mechanism\u2019: This is where the auto-inhibitory discussion becomes confusing. Auto-inhibitory suggests that there must be a state change to get binding. Instead, what is described is that the conformation of Y215 lowers the affinity but doesn't inhibit binding. This can be described better.\n\n10) \u201cThis map showed a good agreement...\u201d is strange phrasing. Did the methionine positions agree with the anomalous map? If so, it should just say 'Peaks in this map correlated to positions of methionines in our model.'\n\n11) Discussion section: The argument that concentration mediates cartwheel formation seems overstated. As the assembly process requires other proteins, it seems more likely that other proteins convey stability to form the complex.\n\n12) Last paragraph of Discussion section: If the authors would like to discuss PK9119 docking they should describe this in more detail in the results. The methods do not give enough details to suggest that there is any reason to trust the results. This should be either dropped or expanded.\n\n13) Regarding the docking, the argument that 'our results suggest that targeting SAS-6 oligomerization...to interfere with pathogenicity' may be a bit too strong. Clearly, others have demonstrated oligomerization of SAS-6 homologues is critical in centriole formation and flagella are important in tyrpanosomatids, so the idea is not a novel one. That said, the authors should more strongly state that they have demonstrated that a small molecule can affect this assembly in vitro. However, that is a long way from showing that this interface will be a good target in vivo, moreover, it isn't obvious that they have identified a great lead compound for this.\n",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "50b46886-1868-4600-803e-2f849c233bf2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C1",
+      "claim": "Centrioles are cylindrical cell organelles with a ninefold symmetric peripheral microtubule array that is essential to template cilia and flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Centrioles are cylindrical cell organelles with a ninefold symmetric peripheral microtubule array that is essential to template cilia and flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about centriole structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "8e8e9e60-be5b-4fc9-87c8-0a7a879be84a",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C2",
+      "claim": "Centrioles are built around a central cartwheel assembly that is organized through homo-oligomerization of the centriolar protein SAS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "They are built around a central cartwheel assembly that is organized through homo-oligomerization of the centriolar protein SAS-6, but whether SAS-6 self-assembly can dictate cartwheel and thereby centriole symmetry is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge about centriole structure and SAS-6's role, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "5d31ca31-dbdf-4d24-b098-d60fd5795e67",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C3",
+      "claim": "Leishmania major SAS-6 crystallizes as a 9-fold symmetric cartwheel.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that Leishmania major SAS-6 crystallizes as a 9-fold symmetric cartwheel and provide the X-ray structure of this assembly at a resolution of 3.5 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental crystallography data presented in the manuscript, including Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "7f56da54-0ea1-475c-8ff0-a5ee8cc85819",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C4",
+      "claim": "The X-ray structure of the Leishmania major SAS-6 cartwheel assembly was determined at a resolution of 3.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that Leishmania major SAS-6 crystallizes as a 9-fold symmetric cartwheel and provide the X-ray structure of this assembly at a resolution of 3.5 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by crystallographic data in Table 1 showing resolution of 66.9\u20133.5/4.2 \u00c5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "eeeb7b41-4ebd-4322-93ee-3804de7975ba",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C5",
+      "claim": "Oligomerization of Leishmania SAS-6 can be inhibited by a small molecule in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore demonstrate that oligomerization of Leishmania SAS-6 can be inhibited by a small molecule in vitro and provide indications for its binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEC-MALS and NMR data showing PK9119 inhibits SAS-6 oligomerization (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "eca6f3b8-b696-4edc-9a83-da5bcdd6acbe",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C6",
+      "claim": "SAS-6 can impose cartwheel symmetry on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results firmly establish that SAS-6 can impose cartwheel symmetry on its own and indicate how this process might occur mechanistically in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure showing ninefold symmetric rings formed by SAS-6 alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "1b08b61d-7332-4c03-a566-1b5492963d57",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C7",
+      "claim": "Inhibition of SAS-6 oligomerization by small molecules is feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data also provide a proof-of-principle that inhibition of SAS-6 oligomerization by small molecules is feasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the PK9119 inhibition experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "f7052f05-8d3f-4955-93f8-a64142baf03b",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C8",
+      "claim": "Eukaryotic flagella and cilia have essential roles in cell locomotion, fluid movement, and sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic flagella and cilia have essential roles in cell locomotion, fluid movement, and sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about flagella and cilia function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "012247cc-99ab-4e54-b4d0-3adf76f13795",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C9",
+      "claim": "Formation of flagella and cilia strictly requires the presence of centrioles.",
+      "claim_type": "EXPLICIT",
+      "source": "Their formation strictly requires the presence of centrioles, cylindrical organelles with a radially ninefold symmetric, peripheral microtubule array (Bettencourt-Dias and Glover, 2007; Azimzadeh and Marshall, 2010; Gonczy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "2b7d2983-b788-41e6-bef1-6e51d40fb461",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C10",
+      "claim": "During ciliogenesis/flagellogenesis, centrioles dock to the cell membrane via their distal ends and nucleate the flagellar/ciliar axoneme from their microtubule array.",
+      "claim_type": "EXPLICIT",
+      "source": "During ciliogenesis/flagellogenesis, centrioles (then referred to as basal bodies) dock to the cell membrane via their distal ends and nucleate the flagellar/ciliar axoneme from their microtubule array (Sherwin and Gull, 1989; Dawe et al., 2007; Ishikawa and Marshall, 2011; Avasthi and Marshall, 2012; Chemes, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "191d7752-153c-4f3a-bed5-78a8f344109f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C11",
+      "claim": "The symmetry and diameter of centrioles is, to a large extent, established through scaffolding by the centriolar cartwheel.",
+      "claim_type": "EXPLICIT",
+      "source": "The symmetry and diameter of centrioles (and thereby of flagella/cilia) is, to a large extent, established through scaffolding by the centriolar cartwheel, a structure with a central ring-like hub and nine radially projecting spokes that contact the peripheral centriolar microtubules (Azimzadeh and Marshall, 2010; Brito et al., 2012; Gonczy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "35c19e9d-ceac-4d72-b113-e9e32c196304",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C12",
+      "claim": "The cartwheel is a structure with a central ring-like hub and nine radially projecting spokes that contact the peripheral centriolar microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The symmetry and diameter of centrioles (and thereby of flagella/cilia) is, to a large extent, established through scaffolding by the centriolar cartwheel, a structure with a central ring-like hub and nine radially projecting spokes that contact the peripheral centriolar microtubules (Azimzadeh and Marshall, 2010; Brito et al., 2012; Gonczy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature describing cartwheel structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "0f92a2de-3234-410a-a068-d01582425e9d",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C13",
+      "claim": "The cartwheel is organized through the homo-oligomerization of the highly conserved centriolar protein SAS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "The cartwheel is organized through the homo-oligomerization of the highly conserved centriolar protein SAS-6 (Nakazawa et al., 2007; Kitagawa et al., 2011; van Breugel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "cb90a331-74b3-446c-9487-ecae1aa6208b",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C14",
+      "claim": "SAS-6 has a coiled-coil domain that forms a rod-like parallel dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution crystal structures of zebrafish and C. reinhardtii SAS-6 fragments together with biochemical and biophysical characterizations (Kitagawa et al., 2011; van Breugel et al., 2011) demonstrated that two dimerization interfaces in SAS-6 mediate this oligomerization: a coiled-coil domain that forms a rod-like parallel dimer; and a globular N-terminal domain that forms a curved head-to-head dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "7cc74404-777e-4715-be00-96c205057cef",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C15",
+      "claim": "SAS-6 has a globular N-terminal domain that forms a curved head-to-head dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution crystal structures of zebrafish and C. reinhardtii SAS-6 fragments together with biochemical and biophysical characterizations (Kitagawa et al., 2011; van Breugel et al., 2011) demonstrated that two dimerization interfaces in SAS-6 mediate this oligomerization: a coiled-coil domain that forms a rod-like parallel dimer; and a globular N-terminal domain that forms a curved head-to-head dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "cedc1410-bb46-46fa-8508-1083e55f9950",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C16",
+      "claim": "In SAS-6 models, the N-terminal head domains constitute the cartwheel hubs from which the coiled-coil rods project to form the cartwheel spokes.",
+      "claim_type": "EXPLICIT",
+      "source": "In these models, the N-terminal head domains constitute the cartwheel hubs from which the coiled-coil rods project to form the cartwheel spokes (Kitagawa et al., 2011; van Breugel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on modeling studies cited in previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "030959a0-0b82-4f94-8233-7f043c90137f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C17",
+      "claim": "No high-resolution structure of the SAS-6 cartwheel was available prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, so far, no high-resolution structure of the SAS-6 cartwheel is available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge prior to the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "86d9621f-8646-4f6f-a00c-5594a7527ef9",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C18",
+      "claim": "A previous EM study with recombinant SAS-6 revealed cartwheel-like assemblies with an eightfold, not a ninefold symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Another, higher resolution, EM study with recombinant SAS-6 revealed cartwheel-like assemblies with an eightfold, not a ninefold symmetry (van Breugel et al., 2011), while a third EM study showed the presence of SAS-6 tetramers (Gopalakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "6539b25f-a7e4-49d0-b466-b3ae2361f58d",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C19",
+      "claim": "A previous EM study showed the presence of SAS-6 tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Another, higher resolution, EM study with recombinant SAS-6 revealed cartwheel-like assemblies with an eightfold, not a ninefold symmetry (van Breugel et al., 2011), while a third EM study showed the presence of SAS-6 tetramers (Gopalakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "fa6c9d27-ed9e-42ef-bb6c-7b0c945e5cbd",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C20",
+      "claim": "Available biochemical and biophysical data do not provide evidence for efficient cartwheel formation by SAS-6 in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the available biochemical and biophysical data do not provide evidence for efficient cartwheel formation by SAS-6 in solution (Gopalakrishnan et al., 2010; Kitagawa et al., 2011; van Breugel et al., 2011), raising the question of whether SAS-6 alone is sufficient to organize ninefold symmetric cartwheels and, if so, under what conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous biochemical and biophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d6ace26d-cd8a-4bb6-8ad0-c2511f0ab846",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C21",
+      "claim": "SAS-6 is a highly conserved protein that is found in all eukaryotes that have cilia/flagella during some of their life-cycle stages.",
+      "claim_type": "EXPLICIT",
+      "source": "SAS-6 is a highly conserved protein that is found in all eukaryotes that have cilia/flagella during some of their life-cycle stages (Carvalho-Santos et al., 2010; Hodges et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on SAS-6 conservation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "2837b8df-7949-4c76-9780-40cee639e0e8",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C22",
+      "claim": "Inhibiting SAS-6 self-assembly by point mutations in vivo abolishes the formation of centrioles.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting SAS-6 self-assembly by point mutations in vivo abolishes the formation of centrioles (Kitagawa et al., 2011; van Breugel et al., 2011; Lettman et al., 2013) and thereby flagella (van Breugel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "950b3c38-5aa4-4c4b-aae4-c95a5bc2fdf3",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C23",
+      "claim": "Inhibiting SAS-6 self-assembly by point mutations in vivo abolishes the formation of flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting SAS-6 self-assembly by point mutations in vivo abolishes the formation of centrioles (Kitagawa et al., 2011; van Breugel et al., 2011; Lettman et al., 2013) and thereby flagella (van Breugel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous in vivo study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d67585b4-3657-46a1-a859-b65dc42e8dde",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C24",
+      "claim": "Targeting SAS-6 oligomerization by inhibitors could be a strategy to disable flagellogenesis in organisms that cause human disease and rely on flagella for their pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, targeting SAS-6 oligomerization by inhibitors could be a strategy to disable flagellogenesis in organisms that cause human disease and rely on flagella for their pathogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the known role of SAS-6 in flagellogenesis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "69f624b5-7482-440c-a3e8-89d585f753ec",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C25",
+      "claim": "Trypanosomatids consist of parasitic, eukaryotic protozoa with a single flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "They consist of parasitic, eukaryotic protozoa with a single flagellum and comprise members that cause major human diseases, such as sleeping sickness (Trypanosoma brucei), Chagas disease (Trypanosoma cruzi), and Leishmaniasis (Leishmania spec.) (Simpson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Trypanosomatids, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "b8056f68-5c4a-4879-a18d-26795ae86838",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C26",
+      "claim": "Trypanosomatids comprise members that cause major human diseases, such as sleeping sickness, Chagas disease, and Leishmaniasis.",
+      "claim_type": "EXPLICIT",
+      "source": "They consist of parasitic, eukaryotic protozoa with a single flagellum and comprise members that cause major human diseases, such as sleeping sickness (Trypanosoma brucei), Chagas disease (Trypanosoma cruzi), and Leishmaniasis (Leishmania spec.) (Simpson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Trypanosomatid diseases, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "81b0bf3f-82db-4f39-88bb-67f8dfd6500f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C27",
+      "claim": "The flagellum of Trypanosomatids provides key roles in their life cycle through its multiple functions in essential cellular processes such as motility, signalling, sensing, and attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Their flagellum provides key roles in this life cycle through its multiple functions in essential cellular processes such as motility, signalling, sensing, and attachment (Vaughan and Gull, 2003; Ralston et al., 2009; Gluenz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Trypanosomatid flagella.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "a74dcf8e-c5ce-4078-8924-28c217e46bc9",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C28",
+      "claim": "The flagellar pocket is the exclusive site of vesicular membrane traffic in Trypanosomatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the flagellar pocket, a membrane invagination from which the flagellum emerges, is the exclusive site of vesicular membrane traffic in these organisms (Overath et al., 1997; Landfear and Ignatushchenko, 2001; Field and Carrington, 2004, 2009; Overath and Engstler, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Trypanosomatid cell biology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "0e4d07c1-3480-4edd-a2d6-8eb40a5ee562",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C29",
+      "claim": "Flagella have been demonstrated or are proposed to be key factors in the pathogenicity of Trypanosomatids.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore not surprising that flagella have been demonstrated or are proposed to be key factors in the pathogenicity of these organisms (Vaughan and Gull, 2003; Ralston et al., 2009; Gluenz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Trypanosomatid pathogenicity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "72514ec3-8bbb-44aa-b251-1c1bccbbf90a",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C30",
+      "claim": "The flagellum of Trypanosomatids is templated from centrioles (basal bodies).",
+      "claim_type": "EXPLICIT",
+      "source": "As in other eukaryotes, the flagellum of the Trypanosomatids is templated from centrioles (basal bodies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about flagellum formation in Trypanosomatids.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "317141d2-9d3d-4ebf-a852-2c16279e5498",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C31",
+      "claim": "Tomographic EM studies demonstrated the presence of canonical, ninefold symmetric cartwheel structures in the centre of Trypanosomatid centrioles.",
+      "claim_type": "EXPLICIT",
+      "source": "Tomographic EM studies demonstrated the presence of canonical, ninefold symmetric cartwheel structures in the centre of their centrioles (Lacomble et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "36603419-1560-4061-b31d-43581a3926b2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C32",
+      "claim": "No high-resolution structures of SAS-6 homologues from Trypanosomatids were available prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, no high-resolution structures of SAS-6 homologues from Trypanosomatids are available, and it is unclear whether oligomerization of their SAS-6 homologues could be inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge prior to the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "6e5e3959-faba-49c6-a0eb-52064ca62aac",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C33",
+      "claim": "The genomes of Trypanosoma brucei, Trypanosoma cruzi, and Leishmania major have been sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomes of Trypanosoma brucei, Trypanosoma cruzi, and Leishmania major have recently been sequenced (Berriman et al., 2005; El-Sayed et al., 2005; Ivens et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to genome sequencing papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "5df5862a-a766-46f9-8181-9e5b9b98e4b4",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C34",
+      "claim": "BLAST searches identified the likely SAS-6 homologues in Trypanosoma brucei, Trypanosoma cruzi, and Leishmania major with similar domain architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "BLAST searches identified the likely SAS-6 homologues in these organisms with similar domain architectures (Figure 1A, Figure 1\u2014figure supplement 1) and sequence identities to human SAS-6 of 21.0 \u00b1 1.4% in 459 \u00b1 21 aligned residues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioinformatics analysis and figures showing domain architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "0d7bdcf8-8e2a-4e87-9441-482b24a67c2b",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C35",
+      "claim": "Trypanosomatid SAS-6 homologues have sequence identities to human SAS-6 of 21.0 \u00b1 1.4% in 459 \u00b1 21 aligned residues.",
+      "claim_type": "EXPLICIT",
+      "source": "BLAST searches identified the likely SAS-6 homologues in these organisms with similar domain architectures (Figure 1A, Figure 1\u2014figure supplement 1) and sequence identities to human SAS-6 of 21.0 \u00b1 1.4% in 459 \u00b1 21 aligned residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d0c602b5-5ec2-4b33-abbb-96ba000212c9",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C36",
+      "claim": "Key residues in the N-terminal domains of Trypanosomatid SAS-6 homologues are well conserved compared to zebrafish SAS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple sequence alignment of their N-terminal domains (Figure 1\u2014figure supplement 1B) shows that key residues are well conserved compared to zebrafish SAS-6, the closest homologue of human SAS-6 for which high-resolution structures are available (van Breugel et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d1ff3b3b-f94d-4c34-b260-022b4c904fb4",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C37",
+      "claim": "Trypanosomatid SAS-6 homologues have long N-terminal extensions that vary in length and are poorly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from zebrafish SAS-6, they have long N-terminal extensions (Figure 1A, Figure 1\u2014figure supplement 1A,B) that vary in length and are poorly conserved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment and domain architecture data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "34b9ed1d-cb95-453f-a782-9ae7d3faeb26",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C38",
+      "claim": "The N-terminal extensions of Trypanosomatid SAS-6 hindered crystallization attempts.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these extensions hindered our crystallization attempts, we largely removed them in the constructs used in this manuscript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental observations during crystallization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "25763c00-2efd-4a77-ac93-28c1d312e7fb",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C39",
+      "claim": "The part of the N-terminal extensions still present in crystallized constructs did not show electron density in crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The part of the extensions still present did not show electron density in our crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "4f84c4b4-0e46-4d7a-ad50-b9c219c8c8de",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C40",
+      "claim": "The structure of L. major SAS-6 N-terminal domain (Lm SAS-697\u2013274) was solved by X-ray crystallography to a resolution of 2.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "To elucidate the structural organization of L. major SAS-6, we solved the structure of its N-terminal domain (Lm SAS-697\u2013274) by X-ray crystallography to a resolution of 2.2 \u00c5 (Table 1, Table 2; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic data in Table 1 and structural figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "b15dc228-d6f8-4fe2-a785-2a8ac21b6648",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C41",
+      "claim": "The asymmetric unit of the Lm SAS-697\u2013274 crystal contained three molecules that were virtually identical to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric unit (ASU) of the crystal contained three molecules that were virtually identical to each other (139 \u00b1 2 selected pairs superpose with an rmsd of 0.70 \u00b1 0.13 \u00c5 in secondary structure matching).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "c2daeb20-35a4-400a-8286-082b5a87513c",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C42",
+      "claim": "L. major SAS-6 demonstrates a high similarity to previously solved SAS-6 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure demonstrates a high similarity of L. major SAS-6 to previously solved SAS-6 structures (Kitagawa et al., 2011; van Breugel et al., 2011) (secondary structure matching to the D. rerio SAS-6 head domain results in an rmsd of 1.59 \u00b1 0.09 \u00c5 with 133 \u00b1 2 selected pairs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison data and citations to previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "3a6a652f-f0df-4aca-8dfe-ed7fb3b8df26",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C43",
+      "claim": "The N-terminal domain of L. major SAS-6 consists of a 7-stranded \u03b2-barrel, capped by a helix-turn-helix motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Like these, the N-terminal domain of L. major SAS-6 consists of a 7-stranded \u03b2-barrel, capped by a helix-turn-helix motif, that forms a curved cross-handshake homo-dimer within the crystal through a highly conserved interaction interface (Figure 1B, Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "4c82dccc-14bf-485c-b2d7-832b1bda90a9",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C44",
+      "claim": "The N-terminal domain of L. major SAS-6 forms a curved cross-handshake homo-dimer within the crystal through a highly conserved interaction interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Like these, the N-terminal domain of L. major SAS-6 consists of a 7-stranded \u03b2-barrel, capped by a helix-turn-helix motif, that forms a curved cross-handshake homo-dimer within the crystal through a highly conserved interaction interface (Figure 1B, Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure and sequence conservation data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "210591d0-b371-4d08-80a6-a34a66deb409",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C45",
+      "claim": "In the L. major SAS-6 head-to-head dimer, phenylalanine 257 at the tip of the \u03b2-hairpin is inserted into a conserved hydrophobic pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In this dimer, the \u03b2-hairpins formed by \u03b2-strands \u03b26 and \u03b27 pack antiparallelly against each other. Phenylalanine 257 at the tip of this hairpin is inserted into a conserved hydrophobic pocket that is constituted by the helix-turn-helix motif and the base of this hairpin in the B-C homo-dimer (formed by chain B and chain C in the crystal, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "8128a728-04da-49d1-b2ae-be35df45b4ea",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C46",
+      "claim": "Dimerization of L. major SAS-6 N-terminal domain is observed in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimerization is also observed in solution, as judged by equilibrium ultracentrifugation, and then depends on the presence of F257 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analytical ultracentrifugation data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "71dde413-9347-4d3f-8fd6-83ce1589fd86",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C47",
+      "claim": "Dimerization of L. major SAS-6 N-terminal domain depends on the presence of F257.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimerization is also observed in solution, as judged by equilibrium ultracentrifugation, and then depends on the presence of F257 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analytical ultracentrifugation data comparing wild-type and F257E mutant shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "bf5e045f-d1dd-436c-9380-238e61004c1a",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C48",
+      "claim": "The measured KD of L. major SAS-6 head-to-head dimerization is approximately 600 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured KD of this dimerization is \u223c600 \u03bcM and therefore approximately 5- to 10-fold weaker than seen for other SAS-6 homologues (Kitagawa et al., 2011; van Breugel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analytical ultracentrifugation data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "5c641cee-9af4-4492-8989-9bce4dad43bf",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C49",
+      "claim": "The KD of L. major SAS-6 head-to-head dimerization is approximately 5- to 10-fold weaker than seen for other SAS-6 homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured KD of this dimerization is \u223c600 \u03bcM and therefore approximately 5- to 10-fold weaker than seen for other SAS-6 homologues (Kitagawa et al., 2011; van Breugel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of analytical ultracentrifugation data with cited previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "dd59791b-beea-422b-8750-e68770075334",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C50",
+      "claim": "The structure of Lm SAS-697\u2013320 F257E was solved by X-ray crystallography to a resolution of 2.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by introducing the F257E mutation to strongly weaken head-to-head dimerization we managed to crystallize construct Lm SAS-697\u2013320 F257E that contained the N-terminal head domain and the first seven heptad-repeats of the coiled-coil domain. We subsequently solved its X-ray structure to a resolution of 2.9 \u00c5 (Table 1; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "147b29a7-ec31-48e2-8fc9-426232b7886e",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C51",
+      "claim": "The asymmetric unit of the Lm SAS-697\u2013320 F257E crystal contained four molecules that were highly similar to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric unit of the crystal contained four molecules that were highly similar to each other and superposed with an rmsd of 1.17 \u00b1 0.50 \u00c5 in secondary structure matching with 165 \u00b1 16 selected pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "a1599d47-fa60-442f-be2d-f7b190e1b6a0",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C52",
+      "claim": "The L. major SAS-6 coiled-coil domain is a parallel dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure revealed that the L. major SAS-6 coiled-coil domain is a parallel dimer and packs via conserved interactions against the N-terminal head-domains as seen in other SAS-6 homologues (Figure 1E, Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "dfe009c8-8bd4-4de6-a3bb-f2b89ff865d7",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C53",
+      "claim": "The L. major SAS-6 coiled-coil domain packs via conserved interactions against the N-terminal head-domains as seen in other SAS-6 homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure revealed that the L. major SAS-6 coiled-coil domain is a parallel dimer and packs via conserved interactions against the N-terminal head-domains as seen in other SAS-6 homologues (Figure 1E, Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure and comparison with other SAS-6 structures shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "c5e5350a-52df-4a8b-b3ec-868752be537d",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C54",
+      "claim": "L. major SAS-6 is highly similar to other SAS-6 homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our structural analyses demonstrate that L. major SAS-6 is highly similar to other SAS-6 homologues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on structural comparison data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "76ea4d56-ac94-4217-b537-0b655b9ef4ef",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C55",
+      "claim": "In the Lm SAS-697\u2013274 crystal A\u2013A homo-dimer, the Y215 sidechain is flipped into its own hydrophobic pocket resulting in the displacement of residue F257 of its homo-dimer partner.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the A\u2013A homo-dimer, the Y215 sidechain is flipped into its own hydrophobic pocket resulting in the displacement from this pocket of residue F257 of its homo-dimer partner (Figure 1C) probably weakening the interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "98291c05-9767-46d8-849c-ad689f512f1b",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C56",
+      "claim": "The closed Y215 conformation probably weakens the head-to-head dimerization interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the A\u2013A homo-dimer, the Y215 sidechain is flipped into its own hydrophobic pocket resulting in the displacement from this pocket of residue F257 of its homo-dimer partner (Figure 1C) probably weakening the interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "ee485cd3-dfdd-4956-88d5-592b7d13141f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C57",
+      "claim": "In the Lm SAS-697\u2013320 F257E crystal octamer, residues Y215 are swung into their own hydrophobic pockets, while E257 point away from them.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we found a similar arrangement in the Lm SAS-697\u2013320 F257E crystal. The F257E mutation abolishes head-to-head dimerization in solution (Figure 1D), yet, in the crystal, due to the high protein and precipitant concentrations, some of the SAS-6 molecules present are found nevertheless in head-to-head dimers and form a curved octamer. In this octamer residues Y215 are also swung into their own hydrophobic pockets, while E257 point away from them (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "61c96adc-ed7c-4362-9b2e-9c2afa1e685b",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C58",
+      "claim": "The F257E mutation abolishes head-to-head dimerization of L. major SAS-6 in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The F257E mutation abolishes head-to-head dimerization in solution (Figure 1D), yet, in the crystal, due to the high protein and precipitant concentrations, some of the SAS-6 molecules present are found nevertheless in head-to-head dimers and form a curved octamer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analytical ultracentrifugation data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "a7f23412-a6b6-4370-b512-c2bc6516c9e6",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C59",
+      "claim": "The closed Y215 conformation corresponds to a low-affinity dimerization state of the head domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the closed Y215 conformation corresponds to a low-affinity dimerization state of the head domains and might therefore constitute a potential regulatory mechanism of SAS-6 oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "8158af78-b250-402d-a002-6d903f6a226e",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C60",
+      "claim": "The closed Y215 conformation might constitute a potential regulatory mechanism of SAS-6 oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the closed Y215 conformation corresponds to a low-affinity dimerization state of the head domains and might therefore constitute a potential regulatory mechanism of SAS-6 oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on structural observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "1a185c53-0421-4f59-b64b-80fe2f7b92f2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C61",
+      "claim": "The presence of a dimerization-impaired state could explain the relatively low affinity of head-to-head dimerization of wild-type L. major SAS-6 in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "In solution, the presence of a dimerization-impaired state could also explain the relatively low affinity of head-to-head dimerization of wild-type L. major SAS-6 apparent in analytical ultracentrifugation (\u223c600 \u03bcM compared to 50\u2013100 \u03bcM observed for other species) since other SAS-6 homologues do not have aromatic residues at the equivalent position of Y215 that could play such a role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "66b562d9-125e-42da-8137-562c3c82cd28",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C62",
+      "claim": "Other SAS-6 homologues do not have aromatic residues at the equivalent position of Y215.",
+      "claim_type": "EXPLICIT",
+      "source": "In solution, the presence of a dimerization-impaired state could also explain the relatively low affinity of head-to-head dimerization of wild-type L. major SAS-6 apparent in analytical ultracentrifugation (\u223c600 \u03bcM compared to 50\u2013100 \u03bcM observed for other species) since other SAS-6 homologues do not have aromatic residues at the equivalent position of Y215 that could play such a role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "bd24dbe7-3743-4465-81c1-1f6fde614720",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C63",
+      "claim": "The measured KD of head-to-head dimerization of the Y215K mutant was approximately 200 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured KD of head-to-head dimerization of the Y215K mutant was \u223c200 \u03bcM and therefore approximately threefold lower than for the corresponding wild-type protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analytical ultracentrifugation data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "df81675a-5c3d-444f-adf9-d192c046e993",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C64",
+      "claim": "The KD of head-to-head dimerization of the Y215K mutant is approximately threefold lower than for the corresponding wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured KD of head-to-head dimerization of the Y215K mutant was \u223c200 \u03bcM and therefore approximately threefold lower than for the corresponding wild-type protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analytical ultracentrifugation data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "697434fd-2cd9-4006-bf0a-a428dd7a8e39",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C65",
+      "claim": "Y215 acts to partially inhibit head-to-head dimerization of L. major SAS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Y215 acts to partially inhibit head-to-head dimerization of L. major SAS-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the Y215K mutant data showing increased dimerization affinity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "44d07582-a6cf-4e42-8017-b7378c8a75a3",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C66",
+      "claim": "The presence of curved SAS-6 octamers in the crystal of the Lm SAS-697\u2013320 F257E mutant suggests that wild-type versions of SAS-6 would adopt even larger assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of curved SAS-6 octamers in the crystal of the Lm SAS-697\u2013320 F257E mutant that is strongly impaired in its ability to form head-to-head dimers suggests that wild-type versions of SAS-6 would adopt even larger assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of octamers in the F257E mutant crystal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "ac11cec2-e326-41ff-a60d-f779088f5ca8",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C67",
+      "claim": "The unit cell of the Lm SAS-697\u2013320 crystal form contained three 9-fold symmetric SAS-6 rings with three SAS-6 dimers constituting the ASU.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the structure of the Lm SAS-697\u2013274 B\u2013C homo-dimer as a search model, a molecular replacement solution could be found that allowed the subsequent placement of the coiled-coil part present in the construct (Figure 2). The unit cell of the Lm SAS-697\u2013320 crystal form contained three 9-fold symmetric SAS-6 rings with three SAS-6 dimers constituting the ASU.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic data and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "f239376d-ea74-4397-adb7-e4a66361768f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C68",
+      "claim": "The three dimers in the ASU of the Lm SAS-697\u2013320 crystal were highly similar to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "These three dimers were highly similar to each other and overlayed with an rmsd of 0.88 \u00b1 0.29 \u00c5 in secondary structure matching with 357 \u00b1 14 selected pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "9cf88feb-25c3-45b2-ae6f-9c27fac1c9c2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C69",
+      "claim": "No electron density was seen inside the SAS-6 rings in the Lm SAS-697\u2013320 crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "No electron density was seen inside the SAS-6 rings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "c0a106d6-3ee9-4ad5-b026-c45eae4bff0f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C70",
+      "claim": "The inner diameters of the SAS-6 rings are approximately 19 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner diameters of the SAS-6 rings are \u223c19 nm and correspond well to the diameters of cartwheel hubs observed in vivo (Lacomble et al., 2009; Guichard et al., 2010, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by measurements from the crystal structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "b64f435e-3c1d-4c83-901b-7e5b73f81e0f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C71",
+      "claim": "The inner diameters of the SAS-6 rings correspond well to the diameters of cartwheel hubs observed in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner diameters of the SAS-6 rings are \u223c19 nm and correspond well to the diameters of cartwheel hubs observed in vivo (Lacomble et al., 2009; Guichard et al., 2010, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with cited EM studies of cartwheels in vivo.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "f9a508a5-d36b-49cf-b321-f3c4c32f57a7",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C72",
+      "claim": "In the Lm SAS-697\u2013320 crystal, SAS-6 rings are stacked onto each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal, SAS-6 rings are stacked onto each other. Neighbouring rings interact through inter-digitation of their coiled-coil domains in an antiparallel way (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "645a664f-f19b-40ec-890b-d0fa9a0c398b",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C73",
+      "claim": "Neighbouring SAS-6 rings in the crystal interact through inter-digitation of their coiled-coil domains in an antiparallel way.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal, SAS-6 rings are stacked onto each other. Neighbouring rings interact through inter-digitation of their coiled-coil domains in an antiparallel way (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "e71e380a-72f0-4c85-a20a-a1dc9a799f24",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C74",
+      "claim": "The structural model of Lm SAS-697\u2013320 was confirmed by calculating a phased anomalous map using refined phases and amplitudes from a selenomethionine derivative dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed our structural model by calculating a phased anomalous map using the refined phases based on our model and the amplitudes of an isomorphic dataset collected from crystals of the selenomethionine derivative (Figure 2B; Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the phased anomalous map shown in Figure 2B and data in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "881868eb-b8e8-4998-be62-aeef079d59ee",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C75",
+      "claim": "Peaks in the phased anomalous map correlated with the positions of methionines in the structural model.",
+      "claim_type": "EXPLICIT",
+      "source": "Peaks in this map correlated with the positions of methionines in our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the phased anomalous map shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "9adff322-20c4-446a-966c-e06658bc02e2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C76",
+      "claim": "Under appropriate conditions, L. major SAS-6 can adopt ninefold symmetric rings that are highly similar to cartwheels observed in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, under appropriate conditions, L. major SAS-6 can adopt ninefold symmetric rings that are highly similar to cartwheels observed in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the crystal structure data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "70d6a750-a3d8-46d5-8227-e667a434935a",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C77",
+      "claim": "Strong perturbations in chemical shifts are most consistent with compound PK9119 binding adjacent to the head-to-head dimerization interface of Lm SAS-697\u2013274.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong perturbations in chemical shifts are most consistent with compound PK9119 ((5-bromo-7-ethyl-1H-indol-3-ylmethyl)-dimethyl-amine, Figure 3A) binding adjacent to the head-to-head dimerization interface of Lm SAS-697\u2013274 (Figure 3B, Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NMR chemical shift perturbation data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "66420899-9a5a-4f13-b6d1-496f6f99f5dd",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C78",
+      "claim": "Binding of PK9119 may alter the head-to-head dimerization interface by affecting the conformation of the helix-turn-helix motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Smaller, but significant shift changes indicate that binding may alter this interface by affecting the conformation of the helix-turn-helix motif that constitutes a part of it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on NMR chemical shift perturbation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "886fbaa2-c828-40c7-a8e6-5e6f174a49f6",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C79",
+      "claim": "Two aromatic side chains (F199, F212) are perturbed on binding of PK9119.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined aromatic side chain 1H resonances of the Phe and Tyr residues using C\u03b2\u2013H\u03b4 correlation maps, which enabled us to identify two side-chains (F199, F212) that are perturbed on binding of PK9119 (Figure 3B, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NMR data shown in Figure 3B and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "dc0efd7b-56c7-4dc5-9691-092a186a46a9",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C80",
+      "claim": "F199 and F212 cluster together around the helix-turn-helix motif.",
+      "claim_type": "EXPLICIT",
+      "source": "These two side-chains cluster together around the helix-turn-helix motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mapping NMR perturbations onto the crystal structure shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "bf0e3e47-83db-4f2c-8a2a-a61d10f91c9b",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C81",
+      "claim": "HSQC chemical shift titration experiments with PK9119 and L. major SAS-697\u2013274 F257E suggest a millimolar binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "HSQC chemical shift titration experiments with PK9119 and L. major SAS-697\u2013274 F257E suggest a millimolar binding affinity; the low solubility of PK9119 in aqueous solutions and lack of a reference compound for competition binding assays makes more accurate KD determinations technically challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NMR titration data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "4b67a033-218c-44b4-b701-9b81b11208fe",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C82",
+      "claim": "L. major SAS-697\u2013424 displayed a distribution of masses from that of the dimer up to >200 kDa consistent with a concentration driven self-association equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "L. major SAS-697\u2013424 displayed a distribution of masses from that of the dimer up to >200 kDa consistent with a concentration driven self-association equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEC-MALS data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "c827ef1c-2e7c-4d13-8f23-df0ce66084e2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C83",
+      "claim": "In the presence of 1 mM PK9119, the maximal mass of L. major SAS-697\u2013424 oligomers was almost halved.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 1 mM PK9119 the maximal mass was almost halved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEC-MALS data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "179f5f35-c07f-490b-9e16-b76d13fe8cb0",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C84",
+      "claim": "The F257E mutant of L. major SAS-697\u2013424 displayed a constant mass of 71 kDa in the absence and presence of PK9119 consistent with the mass of a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The F257E mutant displayed a constant mass of 71 kDa in the absence and presence of PK9119 consistent with the mass of a dimer of L. major SAS-697\u2013424.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEC-MALS data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "2aa3732e-fb81-4709-a025-09120a921f51",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C85",
+      "claim": "PK9119 partially affects head-to-head dimerization of L. major SAS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "When the runs were repeated in the presence of PK9119, we saw a clear shift in the elution volume for the wild-type but not the F257E SAS-6 construct towards smaller molecular weights and a decrease in the analysed mass from MALS, demonstrating that PK9119 partially affects head-to-head dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEC-MALS data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "aafec177-b5a3-4ecb-92f8-7d6486d21adc",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C86",
+      "claim": "Zebrafish SAS-6 oligomerization was affected by the presence of PK9119, although to a lesser extent than L. major SAS-6 oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that zebrafish SAS-6 oligomerization was also affected by the presence of PK9119, although to a lesser extent than L. major SAS-6 oligomerization (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC-MALS data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "567b618d-f8c2-4bae-a826-0263f1bfaff0",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C87",
+      "claim": "PK9119 appears to be a general inhibitor of SAS-6 oligomerization in vitro with some preference for the L. major variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PK9119 appears to be a general inhibitor of SAS-6 oligomerization in vitro with some preference for the L. major variant, and represents a starting point for further screening of chemical analogs or fragment evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on SEC-MALS data for both L. major and zebrafish SAS-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "66a794c5-b59b-4b4c-abb9-65c311c36cda",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C88",
+      "claim": "PK9119 represents a starting point for further screening of chemical analogs or fragment evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PK9119 appears to be a general inhibitor of SAS-6 oligomerization in vitro with some preference for the L. major variant, and represents a starting point for further screening of chemical analogs or fragment evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d317875d-9ec7-4839-b033-b12df5c163a5",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C89",
+      "claim": "The cartwheel is an early assembly intermediate of centrioles that participates in establishing their symmetry and diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "SAS-6 organizes the rotationally ninefold symmetric cartwheel (Nakazawa et al., 2007; Kitagawa et al., 2011; van Breugel et al., 2011), an early assembly intermediate of centrioles that participates in establishing their symmetry and diameter (Nakazawa et al., 2007; Brito et al., 2012; Gonczy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "ff808c4a-33f6-4cba-911f-15f216908d43",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C90",
+      "claim": "The current study provides the first unambiguous experimental evidence that SAS-6 is able to form ninefold symmetric cartwheels on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we demonstrate that under high protein and precipitant concentrations, a L. major SAS-6 construct crystallized as ninefold symmetric rings with a diameter very similar to cartwheel hubs in vivo; this provides the first unambiguous experimental evidence that SAS-6 is able to form ninefold symmetric cartwheels on its own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "2ddd17d7-d8e1-402e-8830-792c91e79aa8",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C91",
+      "claim": "SAS-6 needs to be highly concentrated locally in order to be able to form cartwheels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that SAS-6 needs to be highly concentrated locally in order to be able to form cartwheels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that cartwheels only formed under high protein and precipitant concentrations in crystals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d952dd9c-36b4-48dd-8125-5be46755a346",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C92",
+      "claim": "In vivo, SAS-6 is highly enriched at the site of centriole formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in vivo, SAS-6 is indeed highly enriched at the site of centriole formation (Kleylein-Sohn et al., 2007; Strnad et al., 2007; Dammermann et al., 2008; Blachon et al., 2009; Sonnen et al., 2012; Lettman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "4856d124-6056-48ee-b346-d98574779754",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C93",
+      "claim": "In vivo, SAS-6 assembly occurs in the context of other essential centriole duplication factors, some of which can be found in a complex with SAS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in vivo, SAS-6 assembly occurs in the context of other essential centriole duplication factors, some of which can be found in a complex with SAS-6 (Stevens et al., 2010; Tang et al., 2011; Lin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on centriole duplication factors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "142c8fdf-a2e6-4c2b-bf89-69cef6775557",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C94",
+      "claim": "It is likely that additional centriole proteins assist SAS-6 assembly in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore likely that additional centriole proteins assist SAS-6 assembly, especially in light of the fact that several studies (Gopalakrishnan et al., 2010; Kitagawa et al., 2011; van Breugel et al., 2011), and our study presented here, have been unable to demonstrate efficient cartwheel assembly by SAS-6 in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of efficient cartwheel assembly in solution and the presence of SAS-6-interacting proteins in vivo.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "5f3557a6-af14-4ffc-9cf8-a4b599df4b31",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C95",
+      "claim": "The interaction interfaces critical for ring formation (the head-to-head dimer interface and the head-domain\u2013coiled-coil interface) are both relatively small.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction interfaces that are critical for ring formation (i.e., the head-to-head dimer interface and the head-domain\u2013coiled-coil interface) are both relatively small (Figures 1, 2; Kitagawa et al., 2011; van Breugel et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figures 1 and 2 and cited previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d0b65147-d707-49c4-af80-df0c7671d59b",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C96",
+      "claim": "In solution, SAS-6 oligomers are likely to show some 'wobble' that would make ring closure inefficient and assembled rings unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "In solution, SAS-6 oligomers are therefore likely to show some 'wobble' that would make ring closure inefficient and assembled rings unstable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the small size of the interaction interfaces.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "099bb9fa-4b92-4ccf-981a-564191fd0ddb",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C97",
+      "claim": "In the ring structure, both critical interfaces are similar in their orientations to those observed in crystals that did not crystallize as rings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our ring structure, both of these critical interfaces are similar in their orientations to those observed in the crystals of the Lm SAS-697\u2013320 F257E and the Lm SAS-697\u2013274 constructs that did not crystallize as rings (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "365e6a50-ec20-4d19-8cfe-554d43f441d7",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C98",
+      "claim": "Ninefold symmetric ring formation might correspond to a weakly favored SAS-6 conformation that needs to be stabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although clearly not occurring efficiently in solution, our data suggest that ninefold symmetric ring formation might correspond to a weakly favored SAS-6 conformation that needs to be stabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that rings form in crystals but not efficiently in solution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "179ce4f0-597f-4a3c-9e1d-47c2759ec97f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C99",
+      "claim": "In the crystal structure, rings are stabilized by crystal packing interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In our crystal structure, rings are stabilized by crystal packing interactions and, in vivo, probably by SAS-6 interacting proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the crystal structure showing packing interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "e5707124-1074-48b5-98d9-de2bbc6c335c",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C100",
+      "claim": "In vivo, SAS-6 rings are probably stabilized by SAS-6 interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In our crystal structure, rings are stabilized by crystal packing interactions and, in vivo, probably by SAS-6 interacting proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from the crystal structure and knowledge of SAS-6-interacting proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "1fa9307d-fb85-45b8-a7dd-977d61fb703f",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C101",
+      "claim": "SAS-6 is required for the faithful establishment of centriole symmetry, while not being the sole determinant of their ninefold symmetry in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This model could explain why SAS-6 is required for the faithful establishment of centriole symmetry, while not being the sole determinant of their ninefold symmetry in vivo (Nakazawa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and cited previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "f4747fd5-0bae-40f1-942b-809b4def1313",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C102",
+      "claim": "In basal bodies, cartwheels are stacked onto each other with a vertical distance between cartwheel hubs of approximately 8 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In basal bodies, cartwheels are stacked onto each other with a vertical distance between cartwheel hubs of \u223c8 nm (Guichard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "95df92ca-cafc-4198-9e94-88ac38aba1d2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C103",
+      "claim": "In the crystal structure, the vertical distance between stacked cartwheel hubs was only approximately 4 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed a similar stacking in our cartwheel hub structure (Figure 2\u2014figure supplement 1), the corresponding distance was only \u223c4 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by measurements from the crystal structure shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "082da98f-7591-4a77-9466-fe8327d93696",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C104",
+      "claim": "The packing interactions observed in the crystal are based on a non-conserved interface and are therefore unlikely to be of relevance in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although a comparable packing was previously observed in a crystal of the N-terminal head domain of zebrafish SAS-6 (van Breugel et al., 2011), the underlying packing interactions are based on a non-conserved interface and are therefore unlikely to be of relevance in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence conservation analysis and comparison with previous structures.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "15b32508-4751-48f3-afd8-594c337296d5",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C105",
+      "claim": "Recent EM tomograms suggest that ring stacking in vivo is based on parallel interactions between the SAS-6 coiled-coil stalks and vertical interactions of SAS-6 associated components at the periphery of centriolar cartwheels.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent EM tomograms of basal bodies from Trichonympha (Guichard et al., 2012, 2013) rather suggest that ring stacking in vivo is based on parallel interactions between the SAS-6 coiled-coil stalks and vertical interactions of SAS-6 associated components at the periphery of centriolar cartwheels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent EM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "83d98cf5-84b5-4428-bb81-9a256b53bbc2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C106",
+      "claim": "A release of the closed Y215 SAS-6 state through either a regulatory protein or a direct phosphorylation of Y215 could provide a mechanism to trigger SAS-6 assembly locally.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that a release of this closed SAS-6 state through either a regulatory protein or a direct phosphorylation of Y215 could provide a simple mechanism to trigger SAS-6 assembly locally by increasing the concentration of assembly efficient SAS-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the structural observations of the Y215 closed state.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "9f8f51fd-0ee1-4ab4-a8dd-72c88d5b0395",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C107",
+      "claim": "If the Y215 regulatory mechanism is used in vivo, it would probably be confined to the Trypanosomatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Should this mechanism indeed be used in vivo (which is currently unknown), it would probably be confined to the Trypanosomatids as other SAS-6 homologues appear not to have tyrosine/aromatic residues in the position equivalent to Y215 that could play an equivalent role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on sequence conservation analysis.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "5bc1824b-adb6-4e6c-be50-ee105118c1b1",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C108",
+      "claim": "The evolutionary conservation of the hydrophobic pocket involved in dimerization together with PK9119's relatively broad activity could suggest that PK9119 targets this pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary conservation of the hydrophobic pocket involved in dimerization together with PK9119's relatively broad activity in inhibiting both L. major and (to a lesser extent) D. rerio SAS-6 could suggest that PK9119 targets this pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on conservation analysis and inhibition data.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d83e0762-7c8e-4759-a444-ad63e513a736",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C109",
+      "claim": "NMR binding studies are most consistent with PK9119 binding adjacent to the head-to-head dimerization interface and thereby altering its structure subtly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our NMR binding studies are most consistent with PK9119 binding adjacent to the head-to-head dimerization interface and thereby altering its structure subtly (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NMR chemical shift perturbation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "a2d50b8b-9cf3-4887-94f6-7b04906f9995",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C110",
+      "claim": "HADDOCK modeling suggests that 98% of docked PK9119 structures occupied a single cluster in which PK9119 was bound to helix \u03b11, facing away from the hydrophobic pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming this notion, when we modeled the SAS-6\u2013PK9119 complex with the HADDOCK software package (available at http://haddock.science.uu.nl/services/HADDOCK/haddock.php) (de Vries et al., 2010; Wassenaar et al., 2012), using high ambiguity restraints derived from the observed chemical shift perturbations in HSQC spectra (6 restraints >0.2 ppm), we found that of the 200 docked structures 98% occupied a single cluster in which PK9119 was bound to helix \u03b11, but not on the side lining the hydrophobic pocket, but on its opposite side, facing away from this pocket (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational modeling using HADDOCK.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "85ab958e-f6c0-4437-8555-484fec665628",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C111",
+      "claim": "An elucidation of a high-resolution structure of PK9119 bound to its target would be important to understand how exactly PK9119 functions in inhibiting L. major SAS-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, an elucidation of a high-resolution structure of PK9119 bound to its target would be important to understand how exactly PK9119 functions in inhibiting L. major SAS-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "0b11a7f9-6c83-4bfc-a855-1c8bb33e8943",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C112",
+      "claim": "The binding affinity of PK9119 is currently low (in the mM range).",
+      "claim_type": "EXPLICIT",
+      "source": "The binding affinity of our compound is currently low (in the mM range) and it does not show strong species specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by NMR titration data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "3b80a0cf-bb7d-41a1-8a6a-97a6f39483d7",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C113",
+      "claim": "PK9119 does not show strong species specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding affinity of our compound is currently low (in the mM range) and it does not show strong species specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEC-MALS data showing inhibition of both L. major and zebrafish SAS-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "69b070a6-311e-4c25-b653-3f349e3119db",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C114",
+      "claim": "It will be essential to systematically explore chemical modifications of PK9119's central indole scaffold to improve binding affinity and species specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish whether PK9119 has any potential to be improved in these critical aspects, it will be essential to systematically explore chemical modifications of its central indole scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "1be02146-6045-4efc-9460-fba2850dc2fb",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "claim_id": "C115",
+      "claim": "The demonstration that SAS-6 can be inhibited in vitro is a first step towards developing SAS-6 inhibitors that could be used in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of these limitations, our demonstration that SAS-6 can be inhibited in vitro is a first, small step towards the goal of developing SAS-6 inhibitors that also could be used in vivo, for example as a cell-biological tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance of the findings for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "L. major SAS-6 is structurally highly similar to other SAS-6 homologues. The N-terminal domain forms a curved head-to-head dimer with a KD of ~600 \u03bcM, which is 5-10 fold weaker than other SAS-6 homologues. The coiled-coil domain forms a parallel dimer that packs against the N-terminal head domains through conserved interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C54 collectively demonstrate the structural characterization of L. major SAS-6 through crystallography (C40, C50), analytical ultracentrifugation (C46-C49), and comparison with other SAS-6 structures (C42, C52-C54). The crystallographic data in Tables 1-2 and Figures 1B-E provide strong evidence for the structural similarity and dimerization properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "d4b96299-0917-4da7-8766-8885df061281",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "L. major SAS-6 exhibits an alternative dimerization-impaired state where Y215 is flipped into its own hydrophobic pocket, displacing F257 and weakening head-to-head dimerization. The Y215K mutant shows ~3-fold increased dimerization affinity (KD ~200 \u03bcM vs ~600 \u03bcM for wild-type), demonstrating that Y215 partially inhibits dimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C65 are well-supported by crystal structures (C55, C57, Figure 1C and Figure 1\u2014figure supplement 2) and analytical ultracentrifugation data (C58, C63-C64, Figure 1D). The Y215K mutant provides functional validation of the regulatory mechanism (C65). However, whether this mechanism operates in vivo remains unknown (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "fd51f7db-b934-476a-934d-b6b93484a350",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "L. major SAS-6 crystallizes as ninefold symmetric rings with inner diameters of ~19 nm, matching cartwheel hub dimensions observed in vivo. This provides the first unambiguous experimental evidence that SAS-6 alone can form ninefold symmetric cartwheels under appropriate conditions (high protein and precipitant concentrations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C66-C76 are strongly supported by crystallographic data (Table 1, Figure 2) including molecular replacement, selenomethionine derivative validation (C74-C75), and comparison with in vivo EM data (C71). The structure definitively demonstrates ninefold symmetry (C67, C90), representing a major advance over previous studies that showed eightfold symmetry or tetramers (C18-C19).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The small molecule PK9119 inhibits SAS-6 oligomerization in vitro. NMR studies indicate PK9119 binds adjacent to the head-to-head dimerization interface with millimolar affinity. SEC-MALS experiments show PK9119 reduces the maximal oligomer mass of L. major SAS-6 by approximately half and also affects zebrafish SAS-6 oligomerization to a lesser extent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7, and C77-C87 are supported by NMR chemical shift perturbation data (Figure 3B, Figure 3\u2014figure supplement 1) and SEC-MALS experiments (Figure 3C, Figure 3\u2014figure supplement 2). The binding affinity is low (mM range, C81, C112) and species specificity is limited (C86, C113), but the proof-of-principle for SAS-6 inhibition is established. The F257E mutant serves as an appropriate negative control (C84-C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "3c7745fb-2f5c-4dac-834d-7785572b8276",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SAS-6 can impose cartwheel symmetry on its own but requires high local concentration and likely needs stabilization by other proteins in vivo. The critical interaction interfaces for ring formation are relatively small, suggesting that ninefold symmetric ring formation corresponds to a weakly favored conformation that is stabilized by crystal packing in vitro and probably by SAS-6-interacting proteins in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C91-C101 present a mechanistic model supported by the crystal structure data (C3-C4, C67-C76) and the observation that efficient cartwheel assembly does not occur in solution (C20, C82, C94). The model is consistent with in vivo observations of SAS-6 enrichment at centriole formation sites (C92) and the presence of SAS-6-interacting proteins (C93). However, some aspects remain speculative (C100) and require future validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "989fccc8-29cb-4bec-bcea-79ace870dbc2",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The vertical stacking distance between cartwheel hubs in the crystal structure (~4 nm) differs from that observed in basal bodies in vivo (~8 nm). The crystal packing interactions are based on a non-conserved interface and are unlikely to be biologically relevant. Recent EM studies suggest ring stacking in vivo involves parallel coiled-coil interactions and vertical interactions of SAS-6-associated components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 are supported by measurements from the crystal structure (C103, Figure 2\u2014figure supplement 1), sequence conservation analysis (C104), and citations to EM studies (C102, C105). The discrepancy between crystal and in vivo stacking is clearly acknowledged, and alternative mechanisms are proposed based on recent EM data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "a2fe8835-5d83-41ba-9b78-39706f93ae1e",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Y215 regulatory mechanism might provide a way to trigger SAS-6 assembly locally in Trypanosomatids, though this remains speculative. Similarly, while PK9119 demonstrates proof-of-principle for SAS-6 inhibition, significant improvements in binding affinity and species specificity would be needed for in vivo applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C106-C108 and C111-C115 are explicitly speculative statements about potential mechanisms and future directions. While the structural and biochemical data supporting the Y215 closed state (C55-C65) and PK9119 inhibition (C77-C87) are solid, the biological relevance and therapeutic potential remain to be established. These represent hypotheses for future investigation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "94dd7327-a50a-44eb-b832-eb99045e48f7",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the biological importance of centrioles, cartwheels, SAS-6, and Trypanosomatids, as well as the state of knowledge prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C33 provide established background knowledge supported by appropriate citations to previous literature. These claims accurately represent the state of the field and provide necessary context for the current study. Claim C89 summarizes established knowledge about the cartwheel's role in centriole assembly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    },
+    {
+      "id": "94b7c74f-9c0a-488e-ba89-91049ebf5aa4",
+      "content_id": "b2c74244-140f-42d5-8b9c-6c51746aa745",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The N-terminal extensions of Trypanosomatid SAS-6 hindered crystallization and showed no electron density in crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 describe experimental observations during crystallization that are consistent with the methods and results presented. The removal of N-terminal extensions to facilitate crystallization is a standard approach, and the lack of electron density for remaining extension residues is a common observation for disordered regions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:26.547919Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5df5862a-a766-46f9-8181-9e5b9b98e4b4",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "0d7bdcf8-8e2a-4e87-9441-482b24a67c2b",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "d0c602b5-5ec2-4b33-abbb-96ba000212c9",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "d1ff3b3b-f94d-4c34-b260-022b4c904fb4",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "4f84c4b4-0e46-4d7a-ad50-b9c219c8c8de",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "b15dc228-d6f8-4fe2-a785-2a8ac21b6648",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "c2daeb20-35a4-400a-8286-082b5a87513c",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "3a6a652f-f0df-4aca-8dfe-ed7fb3b8df26",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "4c82dccc-14bf-485c-b2d7-832b1bda90a9",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "210591d0-b371-4d08-80a6-a34a66deb409",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "8128a728-04da-49d1-b2ae-be35df45b4ea",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "71dde413-9347-4d3f-8fd6-83ce1589fd86",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "bf5e045f-d1dd-436c-9380-238e61004c1a",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "5c641cee-9af4-4492-8989-9bce4dad43bf",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "dd59791b-beea-422b-8750-e68770075334",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "147b29a7-ec31-48e2-8fc9-426232b7886e",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "a1599d47-fa60-442f-be2d-f7b190e1b6a0",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "dfe009c8-8bd4-4de6-a3bb-f2b89ff865d7",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "c5e5350a-52df-4a8b-b3ec-868752be537d",
+      "result_id": "973eadb9-f9e0-4aee-9944-a9e2737f0a70"
+    },
+    {
+      "claim_id": "76ea4d56-ac94-4217-b537-0b655b9ef4ef",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "98291c05-9767-46d8-849c-ad689f512f1b",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "ee485cd3-dfdd-4956-88d5-592b7d13141f",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "61c96adc-ed7c-4362-9b2e-9c2afa1e685b",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "a7f23412-a6b6-4370-b512-c2bc6516c9e6",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "8158af78-b250-402d-a002-6d903f6a226e",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "1a185c53-0421-4f59-b64b-80fe2f7b92f2",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "66b562d9-125e-42da-8137-562c3c82cd28",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "bd24dbe7-3743-4465-81c1-1f6fde614720",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "df81675a-5c3d-444f-adf9-d192c046e993",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "697434fd-2cd9-4006-bf0a-a428dd7a8e39",
+      "result_id": "d4b96299-0917-4da7-8766-8885df061281"
+    },
+    {
+      "claim_id": "5d31ca31-dbdf-4d24-b098-d60fd5795e67",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "7f56da54-0ea1-475c-8ff0-a5ee8cc85819",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "44d07582-a6cf-4e42-8017-b7378c8a75a3",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "ac11cec2-e326-41ff-a60d-f779088f5ca8",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "f239376d-ea74-4397-adb7-e4a66361768f",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "9cf88feb-25c3-45b2-ae6f-9c27fac1c9c2",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "c0a106d6-3ee9-4ad5-b026-c45eae4bff0f",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "b64f435e-3c1d-4c83-901b-7e5b73f81e0f",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "f9a508a5-d36b-49cf-b321-f3c4c32f57a7",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "645a664f-f19b-40ec-890b-d0fa9a0c398b",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "e71e380a-72f0-4c85-a20a-a1dc9a799f24",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "881868eb-b8e8-4998-be62-aeef079d59ee",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "9adff322-20c4-446a-966c-e06658bc02e2",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "ff808c4a-33f6-4cba-911f-15f216908d43",
+      "result_id": "fd51f7db-b934-476a-934d-b6b93484a350"
+    },
+    {
+      "claim_id": "eeeb7b41-4ebd-4322-93ee-3804de7975ba",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "1b08b61d-7332-4c03-a566-1b5492963d57",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "70d6a750-a3d8-46d5-8227-e667a434935a",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "66420899-9a5a-4f13-b6d1-496f6f99f5dd",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "886fbaa2-c828-40c7-a8e6-5e6f174a49f6",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "dc0efd7b-56c7-4dc5-9691-092a186a46a9",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "bf0e3e47-83db-4f2c-8a2a-a61d10f91c9b",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "4b67a033-218c-44b4-b701-9b81b11208fe",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "c827ef1c-2e7c-4d13-8f23-df0ce66084e2",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "179f5f35-c07f-490b-9e16-b76d13fe8cb0",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "2aa3732e-fb81-4709-a025-09120a921f51",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "aafec177-b5a3-4ecb-92f8-7d6486d21adc",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "567b618d-f8c2-4bae-a826-0263f1bfaff0",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "d83e0762-7c8e-4759-a444-ad63e513a736",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "a2d50b8b-9cf3-4887-94f6-7b04906f9995",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "0b11a7f9-6c83-4bfc-a855-1c8bb33e8943",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "3b80a0cf-bb7d-41a1-8a6a-97a6f39483d7",
+      "result_id": "6a13e778-8ba8-443a-b77a-cd37ce6bc299"
+    },
+    {
+      "claim_id": "eca6f3b8-b696-4edc-9a83-da5bcdd6acbe",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "2ddd17d7-d8e1-402e-8830-792c91e79aa8",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "d952dd9c-36b4-48dd-8125-5be46755a346",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "4856d124-6056-48ee-b346-d98574779754",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "142c8fdf-a2e6-4c2b-bf89-69cef6775557",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "5f3557a6-af14-4ffc-9cf8-a4b599df4b31",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "d0b65147-d707-49c4-af80-df0c7671d59b",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "099bb9fa-4b92-4ccf-981a-564191fd0ddb",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "365e6a50-ec20-4d19-8cfe-554d43f441d7",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "179ce4f0-597f-4a3c-9e1d-47c2759ec97f",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "e5707124-1074-48b5-98d9-de2bbc6c335c",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "1fa9307d-fb85-45b8-a7dd-977d61fb703f",
+      "result_id": "3c7745fb-2f5c-4dac-834d-7785572b8276"
+    },
+    {
+      "claim_id": "f4747fd5-0bae-40f1-942b-809b4def1313",
+      "result_id": "989fccc8-29cb-4bec-bcea-79ace870dbc2"
+    },
+    {
+      "claim_id": "95df92ca-cafc-4198-9e94-88ac38aba1d2",
+      "result_id": "989fccc8-29cb-4bec-bcea-79ace870dbc2"
+    },
+    {
+      "claim_id": "082da98f-7591-4a77-9466-fe8327d93696",
+      "result_id": "989fccc8-29cb-4bec-bcea-79ace870dbc2"
+    },
+    {
+      "claim_id": "15b32508-4751-48f3-afd8-594c337296d5",
+      "result_id": "989fccc8-29cb-4bec-bcea-79ace870dbc2"
+    },
+    {
+      "claim_id": "83d98cf5-84b5-4428-bb81-9a256b53bbc2",
+      "result_id": "a2fe8835-5d83-41ba-9b78-39706f93ae1e"
+    },
+    {
+      "claim_id": "9f8f51fd-0ee1-4ab4-a8dd-72c88d5b0395",
+      "result_id": "a2fe8835-5d83-41ba-9b78-39706f93ae1e"
+    },
+    {
+      "claim_id": "5bc1824b-adb6-4e6c-be50-ee105118c1b1",
+      "result_id": "a2fe8835-5d83-41ba-9b78-39706f93ae1e"
+    },
+    {
+      "claim_id": "85ab958e-f6c0-4437-8555-484fec665628",
+      "result_id": "a2fe8835-5d83-41ba-9b78-39706f93ae1e"
+    },
+    {
+      "claim_id": "69b070a6-311e-4c25-b653-3f349e3119db",
+      "result_id": "a2fe8835-5d83-41ba-9b78-39706f93ae1e"
+    },
+    {
+      "claim_id": "1be02146-6045-4efc-9460-fba2850dc2fb",
+      "result_id": "a2fe8835-5d83-41ba-9b78-39706f93ae1e"
+    },
+    {
+      "claim_id": "50b46886-1868-4600-803e-2f849c233bf2",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "8e8e9e60-be5b-4fc9-87c8-0a7a879be84a",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "f7052f05-8d3f-4955-93f8-a64142baf03b",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "012247cc-99ab-4e54-b4d0-3adf76f13795",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "2b7d2983-b788-41e6-bef1-6e51d40fb461",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "191d7752-153c-4f3a-bed5-78a8f344109f",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "35c19e9d-ceac-4d72-b113-e9e32c196304",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "0f92a2de-3234-410a-a068-d01582425e9d",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "cb90a331-74b3-446c-9487-ecae1aa6208b",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "7cc74404-777e-4715-be00-96c205057cef",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "cedc1410-bb46-46fa-8508-1083e55f9950",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "030959a0-0b82-4f94-8233-7f043c90137f",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "86d9621f-8646-4f6f-a00c-5594a7527ef9",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "6539b25f-a7e4-49d0-b466-b3ae2361f58d",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "fa6c9d27-ed9e-42ef-bb6c-7b0c945e5cbd",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "d6ace26d-cd8a-4bb6-8ad0-c2511f0ab846",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "2837b8df-7949-4c76-9780-40cee639e0e8",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "950b3c38-5aa4-4c4b-aae4-c95a5bc2fdf3",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "d67585b4-3657-46a1-a859-b65dc42e8dde",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "69f624b5-7482-440c-a3e8-89d585f753ec",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "b8056f68-5c4a-4879-a18d-26795ae86838",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "81b0bf3f-82db-4f39-88bb-67f8dfd6500f",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "a74dcf8e-c5ce-4078-8924-28c217e46bc9",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "0e4d07c1-3480-4edd-a2d6-8eb40a5ee562",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "72514ec3-8bbb-44aa-b251-1c1bccbbf90a",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "317141d2-9d3d-4ebf-a852-2c16279e5498",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "36603419-1560-4061-b31d-43581a3926b2",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "6e5e3959-faba-49c6-a0eb-52064ca62aac",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "d317875d-9ec7-4839-b033-b12df5c163a5",
+      "result_id": "94dd7327-a50a-44eb-b832-eb99045e48f7"
+    },
+    {
+      "claim_id": "34b9ed1d-cb95-453f-a782-9ae7d3faeb26",
+      "result_id": "94b7c74f-9c0a-488e-ba89-91049ebf5aa4"
+    },
+    {
+      "claim_id": "25763c00-2efd-4a77-ac93-28c1d312e7fb",
+      "result_id": "94b7c74f-9c0a-488e-ba89-91049ebf5aa4"
+    }
+  ],
+  "comparisons": []
+}

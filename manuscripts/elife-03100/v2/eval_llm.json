@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establish that enteric fever is caused by S. Typhi and S. Paratyphi A, which cause clinically indistinguishable syndromes despite genetic and epidemiological differences, and that current diagnostic methods are inadequate with poor sensitivity and specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 are all supported by appropriate citations to prior literature and represent well-established background knowledge about enteric fever epidemiology, pathogenesis, and diagnostic challenges. These claims provide context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study analyzed 75 plasma samples (50 enteric fever patients and 25 controls) using GCxGC/TOFMS, identifying 988 metabolite peaks initially, with 695 retained after filtering for run order correlation and outlier removal, resulting in 94 samples for final analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 describe the study design and data processing pipeline with specific numbers reported. The methodology appears sound with appropriate quality control steps including outlier detection and removal of metabolites correlated with run order. Sample sizes are modest but reasonable for a discovery study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Unsupervised PCA analysis revealed obvious differences between metabolite profiles of controls and enteric fever patients, suggesting potential diagnostic value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 report PCA results with appropriate model parameters (R2X=0.437, Q2=0.255). The visual separation in Figure 2A supports the claim of obvious differences between controls and cases. However, the Q2 value of 0.255 indicates modest predictive power for the unsupervised model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Supervised OPLS-DA models demonstrated excellent discrimination between controls and each pathogen (Q2=0.82 for S. Typhi vs controls, Q2=0.81 for S. Paratyphi A vs controls, both p<10^-18), and modest but significant discrimination between the two pathogens (Q2=0.14, p=0.067).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 report OPLS-DA model performance with appropriate statistical validation. The high Q2 values and highly significant p-values for case-control comparisons are convincing. The S. Typhi vs S. Paratyphi A comparison shows weaker discrimination (Q2=0.14, p=0.067), which barely reaches significance and suggests limited ability to distinguish between the two serovars.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The study identified 306, 324, and 58 metabolite peaks distinguishing controls from S. Typhi, controls from S. Paratyphi A, and S. Typhi from S. Paratyphi A respectively, with 46 metabolites significantly distinguishing all three groups, of which only 12 could be annotated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 report the number of discriminatory metabolites identified through OPLS-DA modeling and statistical testing. The low annotation rate (12/46 = 26%) is a significant limitation that reduces biological interpretability and validation potential. The small number of metabolites (58) distinguishing the two pathogens is consistent with the weak Q2 value in C32.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Specific metabolites showed differential concentrations across groups: phenylalanine and phenyl-2-hydroxybutanoic acid were highest in S. Typhi samples, pipecolic acid was highest in S. Paratyphi A samples, with seven metabolites elevated in S. Typhi and five in S. Paratyphi A infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 report specific metabolite patterns confirmed by chromatographic data (Figure 4). The confirmation using raw chromatographic data strengthens these findings. However, the biological significance and reproducibility of these patterns require validation in independent cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The 46-metabolite OPLS-DA model showed high diagnostic performance with AUC values >0.9 for all case-control comparisons, while individual metabolites showed more modest performance (best identified metabolite: 2-phenyl-2-hydroxypropanoic acid with AUC=0.693 for distinguishing S. Typhi from S. Paratyphi A; phenylalanine with AUC=0.884-0.925 for distinguishing cases from controls).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 report ROC analysis results shown in Figure 5. The high AUC values for multi-metabolite models are impressive, but the modest performance of individual metabolites (especially for distinguishing between pathogens) suggests the diagnostic utility relies on complex metabolite patterns. Cross-validation was performed, which strengthens the findings, but external validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C78"
+    ],
+    "result": "A minimal panel of six identified metabolites (ethanolamine, gluconic acid, monosaccharide, phenylalanine, pipecolic acid, saccharide) achieved ROC values >0.8 for all pairwise comparisons and could accurately define the etiological agent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C78 report that a reduced 6-metabolite panel maintains good diagnostic performance (AUC>0.8). Figure 6 supports these findings. This is practically important as it suggests a simpler diagnostic test is feasible. However, the claim that this panel can 'accurately define the etiological agent' is somewhat overstated given the AUC of 0.796-0.801 for distinguishing S. Typhi from S. Paratyphi A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study provides biological interpretations for key discriminatory metabolites: 2,4-dihydroxybutanoic acid is linked to hypoxia and HIF-1 activation; phenylalanine is elevated in various infections and linked to nitric oxide synthase; pipecolic acid is involved in plant immunity and elevated in malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C61 provide biological context for identified metabolites based on literature. While the cited associations are valid, the mechanistic connection to enteric fever pathogenesis is speculative (note C53 explicitly states 'we surmise'). The interpretation that these metabolites reflect specific host-pathogen interactions in enteric fever requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Metabolite differences between S. Typhi and S. Paratyphi A are attributed to the presence of the Vi capsule in S. Typhi, which has anti-inflammatory properties: higher monosaccharide/saccharide in S. Typhi samples and higher ethanolamine in S. Paratyphi A samples support this interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C71 propose a mechanistic explanation for metabolite differences based on Vi capsule presence/absence. While the observed metabolite patterns (C67-C68) are data-supported and the Vi capsule properties (C66) are established, the causal link between Vi capsule and these specific metabolite patterns (C71) is inferential and requires experimental validation. The interpretation is biologically plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "This is the first application of metabolomics to enteric fever and the first use of GCxGC/TOFMS for infection biomarker discovery in human blood, with this technique offering superior resolution and metabolome coverage compared to standard GC/MS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 assert novelty and technical advantages. The novelty claims (C72-C73) appear reasonable given the literature search implied by 'to the best of our knowledge.' The technical advantages of GCxGC/TOFMS (C74-C75) are supported by citations and are consistent with established analytical chemistry principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study demonstrates that reproducible and serovar-specific metabolite biomarkers can be detected in plasma during enteric fever, identifying biologically plausible metabolites for disease detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 represent the main conclusions of the study. The data support that metabolite profiles can distinguish cases from controls and show some serovar specificity. However, 'reproducible' is only demonstrated through analytical replicates and cross-validation within this single cohort, not through independent validation. The biological plausibility is argued but not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The metabolomics method has potential for diagnosing other systemic bacterial infections beyond enteric fever.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is explicitly speculative about future applications. While the success in distinguishing enteric fever from controls and even between closely related serovars suggests broader applicability, this remains untested. The claim is reasonable as a hypothesis for future work but is not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

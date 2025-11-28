@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors identify an alternative dimer in the crystal structure of insulin-bound IR that is compatible with the inter-subunit disulfide bond and preserves the L2-Fn1:L2'-Fn1' interface present in unliganded IR, with an RMSD of 3.4 \u00c5 for 478 C\u03b1 atoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C64-C66 describe the identification and structural validation of an alternative dimer in the insulin-bound IR crystal structure. The structural analysis is based on existing crystal structure data (C3, C64), with quantitative measurements provided (C66: 3.4 \u00c5 RMSD). The dimer is compatible with known disulfide bonds (C64) and preserves key inter-subunit contacts (C65), providing a basis for comparing liganded and unliganded states (C4, C5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Ligand binding induces a ~50\u00b0 rotation of the L1-CR domains about a hinge between CR and L2, repositioning them away from the central axis, exposing insulin-binding residues on L1, and disrupting the L1:Fn2'-3' interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe ligand-induced conformational changes based on structural comparison of liganded and unliganded IR. The rotation is quantified (~50\u00b0, C69), the hinge position is identified and compared to EGFR (C68), and functional consequences are described (C70-C72). These claims are supported by structural data shown in Figures 2 and 3 and are consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The L1:Fn2'-3' interface in unliganded IR fixes the relative positions of the Fn2-3 tandems and stabilizes the ~120 \u00c5 separation of the Fn3 domains and adjacent TM regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe the structural role of the L1:Fn2'-3' interface in maintaining TM separation in the inactive state. This is an inference from structural analysis of the unliganded IR structure, with a specific distance measurement (120 \u00c5, C74). The inference is logical and consistent with the structural data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "IGF1R lacking the L1 domain (IGF1R \u0394L1) is constitutively phosphorylated, demonstrating that the L1 domain is essential for maintaining the inactive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 present experimental evidence that deletion of the L1 domain results in constitutive receptor phosphorylation. The data are shown in Figure 1C using Western blots with anti-phosphotyrosine antibodies. The conclusion (C78) logically follows from the observation that removing L1 leads to constitutive activity, supporting the hypothesis that L1 is required for autoinhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Truncated IGF1Rs lacking most or all of the ECD are constitutively phosphorylated in the absence of ligand, and a kinase-inactivating mutation eliminates this phosphorylation, demonstrating that the ECD plays an active role in keeping the receptor off but is not needed to activate the truncated receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present experimental evidence from ECD deletion studies. Western blot data (Figure 1D, Figure 1\u2014figure supplement 3) show constitutive phosphorylation of truncated receptors (C79), and a kinase-dead mutation eliminates this signal (C80), confirming it is autophosphorylation. The conclusions (C81-C82) are well-supported by these data and demonstrate the autoinhibitory role of the ECD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "FRET efficiency between IGF1R ECD-TM-fp donor-acceptor pairs increases twofold in the presence of ligand, indicating that the C-termini of the TMs move closer together upon ligand binding, and this is similar to the state when the L1:Fn2'-3' interface is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 present FRET data demonstrating ligand-dependent TM association. The twofold increase in FRET efficiency (C83) is shown in Figure 4A using spectrally resolved FRET in live cells. Similar results in vesicles (C85) and with the \u0394L1 variant (C86) support the conclusion that ligand binding brings TMs together (C84) and that this resembles the state when L1:Fn2'-3' is disrupted (C87). The assumption of random fluorophore orientation (C84) is reasonable and stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Insertion of progressively longer flexible linkers between the ECD and TM regions leads to increasing levels of basal receptor activity, supporting the hypothesis that the ECD inhibits activity by enforcing TM separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 present a functional test of the TM separation hypothesis. The experimental design (C88) is logical: if the ECD maintains TM separation to inhibit activity, then flexible linkers should release this constraint. The data (Figure 4B) show increasing basal activity with longer linkers (C89), supporting the hypothesis. This is a well-designed experiment that directly tests the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In molecular dynamics simulations, IGF1R TMs formed stable dimers in which the helices cross opposite the conserved proline, and also adopted stable monomeric conformations, occasionally with a kink at P911.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 describe MD simulation results. Four simulations of 12-36 \u03bcs were performed, and in two, stable TM dimers formed (C95, C96). The simulations also showed monomeric conformations (C97). The data are shown in Figure 5B and Figure 5\u2014figure supplement 3. The simulations are appropriately long for membrane protein dynamics, and the observation of both dimeric and monomeric states is consistent with a dynamic equilibrium.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "FRET efficiency of isolated IGF1R TMs increases as a function of concentration and exceeds both theoretical random proximity levels and a monomeric control, demonstrating an intrinsic propensity of IGF1R TMs to associate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 present quantitative imaging FRET data demonstrating TM dimerization. The concentration-dependent increase in FRET (C98) and comparison to theoretical random proximity and a monomeric control (C99) provide strong evidence for specific TM association (C100). The data are shown in Figure 5C and supplementary figures, and the experimental design with appropriate controls is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The FRET efficiency of isolated IGF1R TM-fp overlaps with that of IGF1R ECD-TM-fp in the presence of ligand, suggesting similar TM separations in liganded IGF1R and isolated TM dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 compare FRET efficiencies between isolated TMs and full-length receptor with ligand. The data (Figure 4\u2014figure supplement 5) show overlapping FRET efficiencies, supporting the inference that TM separation is similar in both contexts (C102). This provides important validation that the TM dimer observed in isolation is relevant to the ligand-activated state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Cysteine crosslinking experiments show that the H905C variant of IGF1R TM-icd forms disulfide-linked dimers, with lower dimerization for T898C and none for wild-type, demonstrating that TM-icds come together in a manner consistent with the MD TM dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 present cysteine crosslinking data validating the MD-predicted TM dimer. The H905 residues are predicted to be within 6 \u00c5 in the MD dimer (C103), and Western blots (Figure 5D) show disulfide-linked dimers for H905C (C104), less for T898C (C105), and none for wild-type (C106). The conclusion (C107) is well-supported by these data, which provide experimental validation of the computational prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "IGF1R-fl variants with single cysteine substitutions at positions 898 or 905 show high levels of ligand-independent phosphorylation, suggesting that IGF1R samples the active conformation in the absence of ligand and becomes trapped in the active state by disulfide bond formation, which requires transient opening of the L1:Fn2'-3' interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 present evidence that full-length IGF1R samples the active conformation even without ligand. Western blots (Figure 6A) show constitutive phosphorylation of H905C and T898C variants (C108), with less effect for Q895C (C109). The interpretation (C111) that receptors sample the active state and become trapped by disulfide formation is logical and supported by the structural constraints (C112) and the requirement for transient opening of the L1:Fn2'-3' interface (C113-C114). This is an important finding demonstrating conformational dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The ratio of H905C dimer to total monomer is the same for H905C and wild-type IGF1R on non-reducing SDS-PAGE, indicating the absence of appreciable inter-dimer disulfide formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 address whether the H905C cysteines form inter-dimer versus intra-dimer disulfides. Western blot analysis (Figure 6\u2014figure supplement 1) shows that the dimer:monomer ratio is unchanged (C115), ruling out inter-dimer crosslinking (C116). This control experiment is important for interpreting the constitutive activity data and supports the conclusion that intra-dimer TM association is responsible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The FRET efficiency of IGF1R ECD-TM-fp H905C in the absence of ligand matches that of native IGF1R ECD-TM-fp in the presence of ligand, showing that the H905C substitution leads to decreased TM separation in a conformation indistinguishable from liganded receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 use FRET to demonstrate that the H905C crosslink mimics the ligand-activated state. The FRET data (Figure 6B) show matching efficiencies (C120), supporting the conclusion that H905C forces TM association (C121) in a conformation identical to liganded receptor (C122). This provides strong evidence that TM association is the key conformational change induced by ligand binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Unphosphorylated IGF1R fragments show barely detectable activity, while phosphorylated forms show robust activity with similar kinetic parameters. The activities of phosphorylated IGF1R-fl, IGF1R-jmk, and IGF1R-icd are essentially equivalent, and ligand does not enhance the activity of phosphorylated IGF1R-fl, demonstrating that the C-tail, ECD, TMs, and ligand do not contribute to the activity of phosphorylated IGF1R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C138 present comprehensive enzymatic characterization of IGF1R variants. The data (Table 1) show minimal activity for unphosphorylated forms (C125-C126), with residual activity in IGF1R-fl likely due to incomplete dephosphorylation (C127-C128). Phosphorylated forms show robust activity (C129) with similar Km and kcat values (C130-C131). The juxtamembrane region increases activity 4-fold (C132), but the C-tail has no effect (C133). Critically, phosphorylated IGF1R-fl, -jmk, and -icd have equivalent activities (C134-C135), and ligand does not enhance phosphorylated IGF1R-fl activity (C137-C138). These data strongly support the conclusion that once phosphorylated, the kinase is fully active without requiring the ECD, TMs, or ligand (C136).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "The presence of IGF1 leads to a marked increase in the rate of autophosphorylation of phosphatase-treated IGF1R-fl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 presents direct evidence that ligand stimulates autophosphorylation. Western blot time course data (Figure 7B) show increased autophosphorylation rate in the presence of IGF1. This is a key result demonstrating that ligand regulates the autophosphorylation step rather than the intrinsic kinase activity of phosphorylated receptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "Analysis of nearly 300 unique lattice contacts in crystals of active and inactive IGF1R and IR kinases found that several bury >800 \u00c5\u00b2 but none appeared in multiple crystal forms or suggest a rationale for maintaining a stable active or inactive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 present a systematic analysis of kinase domain crystal contacts to search for physiologically relevant interactions. The analysis (Figure 8\u2014figure supplement 1) examined ~300 contacts, with several exceeding the 800 \u00c5\u00b2 threshold for biological interfaces (C140), but none were repeated or functionally suggestive (C141). This negative result is important for ruling out specific kinase-kinase interactions in regulating activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Surface mutagenesis of the IGF1R kinase domain shows that all variants have little phosphorylation without ligand, providing no evidence for autoinhibitory kinase interactions. Two clusters (C1 and C4) resulted in loss of ligand-dependent phosphorylation, but co-transfection did not restore activity, indicating they are unlikely to represent complementary surfaces of an asymmetric kinase dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 present systematic mutagenesis data testing for kinase-kinase interactions. Six clusters of surface mutations were tested (Figure 8A), with all showing low basal activity (C142-C143), ruling out autoinhibitory interactions. Two clusters (C1, C4) lost ligand-dependent activity (C144), but complementation failed (C145-C146), arguing against an EGFR-like asymmetric dimer. The experimental design is appropriate, though the caveat about reduced intrinsic activity (C147-C148) is noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "IGF1R-kin proteins bearing C1 or C4 mutations retained autophosphorylation and substrate kinase activities but at lower levels than wild-type, and it cannot be ruled out that this decreased intrinsic activity underlies the loss of ligand-dependent autophosphorylation observed in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C148 present a caveat to the interpretation of the C1 and C4 mutagenesis results. The purified mutant kinases show reduced activity (C147, Figure 8\u2014figure supplement 3), and the authors acknowledge that reduced intrinsic activity could explain the cellular phenotype (C148). This uncertainty is appropriately noted and prevents definitive conclusions about the role of these surfaces in activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The molecular mechanism for IR/IGF1R activation involves ECD-enforced separation of TMs maintaining the receptor in an inhibited state, and ligand binding relieves this inhibition by disrupting the L1:Fn2'-3' interaction, freeing the TMs to associate and allowing autophosphorylation of the kinase domains to proceed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 present the main mechanistic model integrating all the results. The model is supported by: (1) structural analysis showing the L1:Fn2'-3' interface stabilizes TM separation (C73-C74), (2) FRET data showing ligand-dependent TM association (C83-C87), (3) constitutive activity of ECD-truncated receptors (C79-C82), (4) linker insertion experiments (C88-C89), (5) TM dimerization propensity (C98-C100), (6) cysteine crosslinking (C104-C107, C108-C114), and (7) enzymatic data showing ligand stimulates autophosphorylation but not phosphorylated kinase activity (C125-C139). The model is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "IGF1R variants with P911L substitution or additional substitutions to residues surrounding P911 became phosphorylated in a ligand-dependent manner, suggesting P911 does not play a key role in mediating receptor activity and indicating lax constraints on TM sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 present mutagenesis data testing the role of the conserved proline P911. The data (Figure 5\u2014figure supplement 2) show that P911L and other TM mutations retain ligand-dependent activity (C92), supporting the conclusion that P911 is not critical (C93) and that TM sequence constraints are lax (C94). This is consistent with prior studies and suggests that specific TM sequence is not required for function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "The Fn2-3 domains must undergo a large movement upon ligand binding to accommodate TM association, and it is possible to model the Fn2-3 tandems so that Site 2 residues appose ligand and the ECD C-termini are compatible with TM dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 present structural modeling to reconcile the observed TM association with the need for Site 2 ligand contacts. The logical inference (C153) follows from the FRET data showing TM association. The modeling (C154, Figure 9B-D) demonstrates feasibility by assuming flexibility at the Fn1-Fn2 junction. While this is a model rather than experimental structure, it is a reasonable interpretation consistent with the data and provides a structural framework for understanding the complete activation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The most likely conduit of information between ligand-binding sites for negative cooperativity is through the \u03b1CTs, which are 30 \u00c5 farther apart in liganded than unliganded IR, and the altered position of \u03b1CT following binding of one ligand would restrict the reach of the opposite \u03b1CT, likely hindering assembly of the second binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 propose a mechanism for negative cooperativity based on structural analysis. The \u03b1CTs are connected by a disulfide bond (C156) and are 30 \u00c5 farther apart in liganded IR (C157), which is only possible because the disulfide was deleted in the crystallized fragment (C158). The inference that this restricts the opposite \u03b1CT and contributes to negative cooperativity (C159) is logical and consistent with the structural data, though it remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C172",
+      "C173"
+    ],
+    "result": "The absence of allosteric enhancement of phosphorylated IGF1R activity implies the absence of a stable kinase domain interaction in the active state, and surface mutagenesis demonstrates the absence of an EGFR-like asymmetric kinase dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C173 integrate enzymatic and mutagenesis data to conclude that IGF1R does not use an EGFR-like asymmetric kinase dimer for activation. The enzymatic data (C134-C138) show no allosteric enhancement by the ECD or ligand (C172), and the mutagenesis data (C142-C146) found no evidence for specific kinase-kinase interactions (C173). Together, these provide strong evidence against an EGFR-like mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "TM dimerization occurs upon ligand binding to IGF1R, which is consistent with previous studies showing coupling between ligand binding and association of IR ECD C-termini, restoration of high-affinity binding when soluble IR ECD C-termini are tethered, and activation of an IR ECD-EGFR TM/ICD chimera by insulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C184 integrate the current FRET and crosslinking data (C178) with prior studies to support TM dimerization upon activation. The cited prior work shows that tethering ECD C-termini restores high-affinity binding (C180-C181) and that IR ECD can activate EGFR TM/ICD (C183), both consistent with TM dimerization (C182, C184). This synthesis of current and prior data strengthens the TM dimerization model.",
+    "result_type": "MINOR"
+  }
+]

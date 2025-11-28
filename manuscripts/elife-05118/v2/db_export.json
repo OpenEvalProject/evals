@@ -1,0 +1,2687 @@
+{
+  "submission": {
+    "id": "bd28bc68-5933-4ccd-ac32-737271ee5594",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:34:44.683628Z",
+    "updated_at": "2025-11-28T22:34:44.683628Z"
+  },
+  "content": [
+    {
+      "id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "submission_id": "bd28bc68-5933-4ccd-ac32-737271ee5594",
+      "content_type": "manuscript",
+      "content_text": "# Synaptotagmin 1 directs repetitive release by coupling vesicle exocytosis to the Rab3 cycle\n\n## Authors\n\n- Yunsheng Cheng<sup>1</sup>\n- Jiaming Wang<sup>1</sup>\n- Yu Wang<sup>1</sup>\n- Mei Ding<sup>1</sup> \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Molecular Developmental Biology Institute of Genetics and Developmental Biology, Chinese Academy of Sciences Beijing China\n2. University of Chinese Academy of Sciences Beijing China\n3. Center for Excellence in Brain Science, Chinese Academy of Sciences Shanghai China\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn response to Ca2+ influx, a synapse needs to release neurotransmitters quickly while immediately preparing for repeat firing. How this harmonization is achieved is not known. In this study, we found that the Ca2+ sensor synaptotagmin 1 orchestrates the membrane association/disassociation cycle of Rab3, which functions in activity-dependent recruitment of synaptic vesicles. In the absence of Ca2+, synaptotagmin 1 binds to Rab3 GTPase activating protein (GAP) and inhibits the GTP hydrolysis of Rab3 protein. Rab3 GAP resides on synaptic vesicles, and synaptotagmin 1 is essential for the synaptic localization of Rab3 GAP. In the presence of Ca2+, synaptotagmin 1 releases Rab3 GAP and promotes membrane disassociation of Rab3. Without synaptotagmin 1, the tight coupling between vesicle exocytosis and Rab3 membrane disassociation is disrupted. We uncovered the long-sought molecular apparatus linking vesicle exocytosis to Rab3 cycling and we also revealed the important function of synaptotagmin 1 in repetitive synaptic vesicle release.\n\n## Introduction\n\nIn nerve terminals, neurotransmitters are packaged into synaptic vesicles (SVs) and released by Ca2+-induced exocytosis (Sudhof, 2004). Fast and precise neuronal reaction requires that SVs are clustered in front of the release site, the presynaptic active zone. SVs then dock at the active zone, where they are primed to adopt a competent \u201cready-for-fusion\u201d state. An action potential induces the opening of Ca2+ channels, and the rising Ca2+ concentration stimulates SV-plasma membrane fusion. The basic membrane fusion reaction is mediated by evolutionarily conserved soluble NSF attachment protein receptors (SNAREs) and related proteins like Munc13 and Munc18 (Weber et al., 1998; Sudhof, 2004; Brunger, 2005; Jahn and Scheller, 2006; Lang and Jahn, 2008; Jahn and Fasshauer, 2012). However, the Ca2+-sensing process that starts the SNARE engine is primarily carried out by the synaptotagmin family (Chapman, 2002; Jahn and Fasshauer, 2012). Through their C2 domains, synaptotagmins bind to Ca2+, thus triggering membrane fusion (Sudhof, 2004). After exocytosis, SVs undergo endocytosis and recycling and are refilled with neurotransmitters for repeated rounds of release.\n\nRab3 protein is highly enriched in the nervous system and is specifically localized on SVs (Fischer von Mollard et al., 1991; Fischer von Mollard et al., 1994; Geppert et al., 1994; Stahl et al., 1996). Like other Rabs, Rab3 cycles on and off its target membranes according to its GTP- or GDP-bound state. On the vesicles, the active GTP-bound form of Rab3 is complexed with effector proteins like rabphilin and RIM (Rab3-interacting molecule) (Shirataki et al., 1993; Li et al., 1994; Wang et al., 1997, 2000), thus facilitating the recruitment/docking of SVs (Nonet et al., 1997; Leenders et al., 2001; Tsuboi and Fukuda, 2006). Ca2+-induced exocytosis can trigger disassociation of Rab3 from SV membranes through the GTP hydrolysis process (Fischer von Mollard et al., 1991; Fischer von Mollard et al., 1994; Stahl et al., 1996), but the underlying mechanisms are not clear. The GTP-to-GDP conversion not only removes Rab3 from SVs, but also simultaneously dissociates Rab3 from its binding effectors, which disassembles the docking complex so that both Rab3 and Rab3 effectors can be recycled for the next round of release (Wang et al., 1997, 2000). Given their unique features, Rab3 and synaptotagmin have been considered as the Yin and Yang of membrane fusion, respectively (Geppert and S\u00fcdhof, 1998). However, the functional regulatory interaction between synaptotagmin 1 and Rab3 cycling has not been identified nor has the mechanism by which this interaction is coupled to fast and repetitive neurotransmitter release.\n\nHere, we found that synaptotagmin 1/SNT-1 in C. elegans is crucial for the SV association of RAB-3 protein. SNT-1 promotes the GTP-bound state of RAB-3 by inhibiting RAB-3 GAP. The catalytic subunit of RAB-3 GAP (RBG-1) localizes on SVs and directly binds to SNT-1. Ca2+ treatment disrupts the direct association between SNT-1 and RBG-1. In addition, Ca2+-binding activity of SNT-1 is essential for the dissociation of RAB-3 from SVs. Thus, our study reveals the pivotal dual role of synaptotagmin 1 in coupling SV exocytosis with the Rab3 membrane association and dissociation cycle.\n\n## Results\n\n### Search for components involved in RAB-3/SV association\n\nIn C. elegans motor neurons, RAB-3 fused with Green Fluorescent Protein (GFP) adopts a punctate pattern of localization along the length of the ventral and dorsal cords (Mahoney et al., 2006). This punctate RAB-3 pattern is similar to that of other SV proteins, including synaptobrevin and synaptotagmin (Nonet et al., 1993; Nonet, 1999; Zhen and Jin, 1999). A previous report also showed that most Rab3 protein is associated with SV membranes (Fischer von Mollard et al., 1990). In the absence of the RAB-3 GEF, AEX-3 (Iwasaki et al., 1997), GFP::RAB-3 no longer shows a punctate pattern and becomes diffusely distributed in neuron cell bodies and axons (Figure 1A). AEX-3 is responsible for converting RAB-3 protein from the membrane-dissociated GDP-bound form to the membrane-associated GTP-bound form (Figure 1C). Therefore, the punctate localization of RAB-3 in wild type likely represents the GTP-bound, SV membrane-associated form of RAB-3, while the diffuse GFP::RAB-3 signal may represent the dissociated GDP-RAB-3.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig1-v2.jpg)\n\n**Figure 1.:** (A) Punctate distribution of GFP::RAB-3 in C. elegans motor neurons in wild-type animals (top). The GFP::RAB-3 puncta become diffuse in aex-3, rep-1, hmgs-1, and snt-1 mutants (lower panels). Yellow arrows indicate the cell bodies along the ventral cord. A representative line-scanning image for each genotype is shown in the right panel. (B) Quantification of the synaptic enrichment in wild-type, aex-3, rep-1, hmgs-1, and snt-1 animals. Data are presented as mean \u00b1 SD; **p < 0.01. (C) Schematic representation of the RAB-3/SV association and dissociation cycle. Scale bar, 5 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Multiple snt-1 alleles show the diffuse GFP::RAB-3 phenotype. White arrows indicate the cell bodies. (B) GFP::RAB-3 expressed pan-neuronally under the control of the Prab-3 promoter displays punctate distribution. (C) GFP::RAB-3 is diffuse in all Prab-3-expressing cells. Red boxed areas are enlarged in panels underneath the image taken from a whole animal (B\u2032, B\u2033, B\u2034, C\u2032, C\u2033 and C\u2034). (D) The diffuse GFP::RAB-3 phenotype in snt-1 mutants is rescued by expressing wild-type snt-1 gene pan-neuronally using the Psnt-1 promoter or in DD, VD, and AS neurons using the Phmr-1 promoter. Scale bar, 5 \u00b5m.\n\nWe speculated that mutations in components required for Rab3/SV association may lead to a diffuse RAB-3::GFP phenotype similar to that in aex-3 animals. Hence, we conducted a genetic screen and isolated multiple mutants in which GFP::RAB-3 lost its punctate localization pattern. Through SNP mapping, complementation testing, and fosmid rescue, we cloned all of these mutations. Six of them (xd58, xd137, xd142, xd143, xd148, and xd149) turned out to be new alleles of aex-3. In addition, we obtained four rep-1 alleles (xd56, xd138, xd139, and xd140) and three hmgs-1 alleles (xd128, xd129, and xd145). rep-1 encodes the sole Rab escort protein (Rep) (Tanaka et al., 2008). Rep proteins bind newly synthesized Rab proteins and facilitate the addition of geranylgeranyl groups to Rabs (Seabra et al., 1992a, 1992b; Andres et al., 1993) (Figure 1C). HMGS-1 is orthologous to the human hydroxymethylglutaryl-CoA synthase (HMGS) which is required for synthesis of the geranylgeranyl moiety (Mehrabian et al., 1986; Shi and Ruvkun, 2012) (Figure 1C). Thus, both rep-1 and hmgs-1 are critical for RAB-3 membrane targeting. The diffuse GFP::RAB-3 phenotype in rep-1 and hmgs-1 mutants further suggested that the diffuse signal indeed comes from membrane-dissociated RAB-3 protein.\n\n### Synaptotagmin/SNT-1 is required for localization of RAB-3 on SVs\n\nIn the meantime, we hypothesized that the molecules controlling the RAB-3 cycle may be associated with SV cycling. Thus, we systematically examined SV cycle-related mutants. Interestingly, we found that in snt-1(md290) animals, which lack snt-1 function, the GFP::RAB-3 puncta disappeared and the GFP signal was diffusely distributed throughout the neuronal processes, similar to aex-3, rep-1, and hmgs-1 mutants (Figure 1A,B). The strong phenotypic similarity between snt-1 and other RAB-3/SV-association defective mutants suggests that SNT-1 plays an important role in RAB-3/SV localization.\n\nsnt-1 encodes the synaptotagmin 1 homologue in C. elegans (Nonet et al., 1993). Neuronal synaptotagmins function as Ca2+ sensors for synaptic exocytosis, but their role in Rab3 localization has not been revealed. To determine whether loss of snt-1 function indeed leads to the diffuse RAB-3 phenotype, we examined other snt-1 alleles. We found that the n2665, md220, md125, and md172 alleles of snt-1 all display a diffuse GFP::RAB-3 phenotype similar to md290 (Figure 1\u2014figure supplement 1A). Both the snt-1 and rab-3 genes are broadly expressed in the nervous system (Nonet et al., 1993, 1997). To determine whether snt-1 influences RAB-3 in all neurons, we examined RAB-3 localization with a pan-neuronal marker Prab-3::GFP::RAB-3. In wild-type animals, GFP::RAB-3 displays a punctate pattern, while in snt-1 mutants, GFP::RAB-3 is completely diffuse in neuronal processes, including the nerve ring, ventral cord, and dorsal cord regions (Figure 1\u2014figure supplement 1B,C). These data indicate that the effect of snt-1 on RAB-3 localization is widely preserved in the nervous system. In addition, the diffuse GFP::RAB-3 phenotype was fully rescued when wild-type snt-1 was introduced into mutant animals (Figure 1\u2014figure supplement 1D), suggesting that SNT-1 is indeed essential for localization of RAB-3 on SVs.\n\n### snt-1 affects RAB-3 localization through an SV-independent mechanism\n\nThe diffuse RAB-3 phenotype in snt-1 may be caused by failure of SV clustering at the synaptic terminal. Therefore, we examined the localization of another synaptic vesicle protein SNB-1. SNB-1 is the C. elegans synaptobrevin homologue (Nonet, 1999). In worm DD and VD motor neurons, SNB-1 is distributed evenly in punctate structures along neuronal processes, similar to RAB-3 (Figure 2A) (Zhen and Jin, 1999). In snt-1 animals, some of the SNB-1 puncta are enlarged, but the punctate distribution of SNB-1 is not altered (Figure 2A,B). This observation is consistent with recent findings (Yu et al., 2013), suggesting that SV clustering is probably not affected by snt-1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig2-v2.jpg)\n\n**Figure 2.:** (A) SNB-1::GFP puncta distribution in wild type and snt-1 mutants. (B) The synaptic enrichment of SNB-1::GFP puncta is indistinguishable in wild type and snt-1. Data are presented as mean \u00b1 SD; NS, not significant. In both wild type (C, C\u2032 and C\u2033) and snt-1 (D, D\u2032 and D\u2033), the SNB-1::GFP puncta are present in the synaptic area on the ventral cord, which is outside of the cell body (C\u2033 and D\u2033). In unc-104 (E, E\u2032 and E\u2033) or snt-1 unc-104 double mutants (F, F\u2032 and F\u2033), SNB-1::GFP accumulates in the cell bodies on the ventral cord (E\u2033 and F\u2033). (G) In wild type, GFP::RAB-3 is distributed in a punctate pattern in the pre-synaptic regions on the ventral cord (G\u201c). (H) GFP::RAB-3 is diffuse throughout the whole axon including both dorsal (H') and ventral (H\u2033) processes. (I) GFP::RAB-3 accumulates in ventral cell bodies (I\u2033). (J) In snt-1 unc-104 double mutants, GFP::RAB-3 is diffuse throughout the whole axon in both dorsal (J') and ventral (J\u2033) regions. Yellow boxes indicate part of the dorsal cord, which is enlarged in the lower left panels. Red boxes indicate part of the ventral cord, which is enlarged in the lower right panels (white arrows indicate DD cell bodies in the ventral cord). A schematic drawing of a DD neuron during the L1 stage is presented underneath the fluorescence images of each genotype, with the SNB-1::GFP or GFP::RAB-3 signal shown in green. Small green dots represent the pre-synaptic areas. Individual DD cell bodies are indicated as large ovals at the bottom right of each diagram. Scale bars, 5 \u00b5m.\n\nunc-104 encodes the cytosolic kinesin responsible for synaptic vesicle trafficking from cell bodies to nerve terminals (Hall and Hedgecock, 1991). In the absence of UNC-104 kinesin, few SVs are transported to synaptic termini, while neuron cell bodies have a surfeit of SVs. To further address whether the diffuse RAB-3 phenotype is indeed caused by the dissociation of RAB-3 from SVs in snt-1 mutants, we performed a serial mutant analysis utilizing both GFP::RAB-3 and SNB-1::GFP markers. Because the snt-1;unc-104 double mutant animals are arrested during larval development, the synaptic phenotypes were examined in newly hatched L1 animals (larval stage 1). In L1 animals, among DD, VD, and AS motor neurons, only DDs are born (Sulston, 1976; Sulston and Horvitz, 1977), and they form pre-synapses along the ventral cord. Thus, in wild-type L1 animals labeled by Punc-25::SNB-1::GFP, the GFP signal could only be detected along the ventral cord (Figure 2C,C\u2033) but not the dorsal cord (Figure 2C'). In snt-1 mutants, the SNB-1::GFP distribution is indistinguishable from wild type (Figure 2D,D', and 2D\u2033). In unc-104 single mutants, we found that SNB-1::GFP accumulated in cell bodies (Figure 2E,E\u2033, white arrow) and little GFP signal could be detected outside of cell bodies or on the dorsal cord (Figure 2E'), which is consistent with the role of UNC-104 in SV transport. In snt-1;unc-104 double mutants, the SNB-1::GFP signal accumulated in cell bodies (Figure 2F,F\u2033, white arrow) like in unc-104 single mutants, suggesting that further removal of SNT-1 in unc-104 mutant animals does not alter the dependence of SVs on UNC-104 for intracellular trafficking. Interestingly, the effect of snt-1 or snt-1 unc-104 mutations on RAB-3 and SNB-1 is quite different. As shown in Figure 2H,J, GFP::RAB-3 is still diffuse in cell bodies and axons in both snt-1 and snt-1 unc-104 animals, and GFP signal could be detected even in the non-synaptic dorsal cord region (Figure 2H' and 2J'). In contrast, in unc-104 animals, the RAB-3 puncta are retained within cell bodies, just like SNB-1 is in unc-104 mutants (Figure 2I,I\u2033). These data strongly support the notion that the diffuse phenotype of RAB-3 is not caused by the dispersion of SV clusters, but rather by the specific dissociation of RAB-3 from SV membranes.\n\n### SNT-1 promotes the GTP-bound form of RAB-3\n\nHow does mutation of snt-1 affect the SV membrane association of RAB-3? Previous studies showed that the localization of RAB-3 on SV membranes is tightly associated with its GTP-bound state (Zerial and McBride, 2001). Therefore, we tested whether the loss of RAB-3 from SVs in snt-1 mutants is caused by reduction of GTP-bound RAB-3. The active GTP-Rab3 binds to the RBD domain of its effector RIM, while the inactive GDP-Rab3 does not. Previous reports demonstrated that the RBD domain of mammalian RIM2 could bind to the worm GTP-RAB-3 (Wang et al., 1997; Mahoney et al., 2006). Thus, we performed pull-down assays to examine the GTP-RAB-3 level in vivo. In wild-type worm lysates, the active GTP-bound form of RAB-3 protein was efficiently pulled down by GST-RBD (Figure 3A). In contrast, the amount of GTP-RAB-3 pulled down by RIM2 RBD was significantly reduced in snt-1 lysates (Figure 3A,B). In the absence of RAB-3 GEF, the GDP-bound RAB-3 cannot be converted to the GTP-bound RAB-3. Indeed, in aex-3 animals, the amount of RAB-3 that can be pulled down by GST-RBD is also greatly decreased (Figure 3A,B). Thus snt-1, similar to aex-3, affects the level of GTP-bound RAB-3 in vivo.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig3-v2.jpg)\n\n**Figure 3.:** (A) A GST-fused RBD domain of RIM2 binds active GTP-RAB-3. The amount of GTP-RAB-3 pulled down by RBD is decreased in both aex-3 and snt-1 animals. (B) Quantification of the GTP-RAB-3 level in wild type, aex-3, and snt-1. Data are presented as mean \u00b1 SD; **p < 0.01. (C) The amount of GFP-RAB-3 in the cytosolic fraction is increased in snt-1 mutants. (D) Localization of GFP::RAB-27 puncta is affected by mutation of aex-3, but not by mutation of snt-1. The white arrows indicate the cell bodies. (E) Over-expression of aex-3 does not rescue the snt-1 mutant phenotype. Yellow arrows indicate the cell bodies. (F) The AEX-3::GFP level is unchanged in snt-1 mutants compared to wild type. Scale bars, 5 \u00b5m.\n\nGTP-RAB-3 is associated with SV membranes, while GDP-RAB-3 is diffused in the cytosol. Thus, we performed cell fractionation experiments to further examine the GTP or GDP status of RAB-3. In wild type, RAB-3 is highly enriched in membrane fractions (Figure 3C), which is consistent with the SV localization of GTP-RAB-3. In contrast, the RAB-3 protein distribution is shifted to the soluble fraction when snt-1 is removed, suggesting a cytosolic localization of RAB-3 in snt-1 mutants (Figure 3C). These data suggest that snt-1 indeed promotes the GTP-bound form of RAB-3.\n\n### SNT-1 promotes the GTP-RAB-3 level by inhibiting GTP hydrolysis\n\nHow does loss of function of snt-1 lead to the reduction of GTP RAB-3? One possibility is that SNT-1 may regulate the RAB-3 GTP-GDP cycle by promoting GEF activity. We performed the following experiments to test this possibility. Firstly, AEX-3 is the GEF molecule for both RAB-3 and RAB-27 (Mahoney et al., 2006). If snt-1 indeed affects AEX-3 activity, we would expect that the localization of RAB-27 on SVs will be affected by the absence of SNT-1. We made a GFP::RAB-27 reporter and expressed it in motor neurons in worms. The GFP::RAB-27 protein is enriched in synaptic regions and displays a punctate expression pattern similar to RAB-3 (Figure 3D). In aex-3 mutants, GFP::RAB-27 becomes diffuse, consistent with the role of AEX-3 as a GEF for RAB-27 (Figure 3D). In contrast, GFP::RAB-27 still displays a punctate distribution indistinguishable from wild type in snt-1 mutants (Figure 3D), suggesting that the GEF activity of AEX-3, at least for RAB-27, is not altered by mutation of snt-1. Second, if SNT-1 promotes AEX-3 GEF activity, we would expect that increasing the aex-3 expression level may rescue the diffuse RAB-3 phenotype in snt-1 mutants. However, no such rescue was observed (Figure 3E). Lastly, we examined the expression level of AEX-3 and found that it was indistinguishable in wild-type and snt-1 animals (Figure 3F). Together, these results suggest that it is unlikely that snt-1 regulates the GTP-RAB-3 level by promoting RAB-3 GEF activity.\n\nAlternatively, the decreased GTP-RAB-3 level may be caused by increased RAB-3 GTPase activity in snt-1 mutants. Rab3 GTPase activity is greatly facilitated by Rab3-specific GTPase-activating protein (GAP). Rab3 GAP is composed of the catalytic subunit Rab3GAP1 and the noncatalytic subunit Rab3GAP2. rbg-1 and rbg-2 encode Rab3GAP1 and Rab3GAP2, respectively in worms (Figure 4\u2014figure supplement 1A,B) (Fukui et al., 1997; Nagano et al., 1998). In the absence of Rab3 GAP, the RAB-3 synaptic enrichment is enhanced, which is consistent with the role of Rab3 GAP in assisting GTP hydrolysis (Figure 4\u2014figure supplement 1C,D). If RAB-3 GTP hydrolysis activity is indeed increased in snt-1 mutants, we would expect that loss of GAP function will suppress the snt-1 mutant phenotype. Indeed, in rbg-1;snt-1 double mutants, we found that the diffuse GFP::RAB-3 phenotype of snt-1 single mutants is significantly suppressed (Figure 4A,B). Furthermore, mutation of the rbg-2 gene also suppressed the diffuse RAB-3 phenotype in snt-1 mutants (Figure 4\u2014figure supplement 1E). In contrast, the diffuse GFP::RAB-3 signal caused by aex-3 mutation could not be suppressed by rbg-1 (Figure 4A,B). We next performed RIM2-RBD pull-down assays to test whether the GTP-RAB-3 level was restored in rbg-1;snt-1 mutants. In contrast to the greatly reduced GTP-RAB-3 level in snt-1 lysates, the amount of GTP-bound RAB-3 is significantly increased in rbg-1;snt-1 samples (Figure 4C). Taken together, these results suggest that snt-1 indeed regulate the RAB-3/SV association specifically by inhibiting RAB-3 GTP hydrolysis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig4-v2.jpg)\n\n**Figure 4.:** (A) The punctate distribution of GFP::RAB-3 is restored in rbg-1;snt-1 animals, while the aex-3 phenotype could not be suppressed by mutation of rbg-1. Yellow arrows indicate the cell bodies along the ventral cord. Scale bar, 5 \u00b5m. A representative line-scanning image for each genotype is shown in the right panel. (B) Quantification of the synaptic enrichment of GFP::RAB-3 signal in the genotypes shown in (A). Data are represented as mean \u00b1 SD. **p < 0.01; NS, not significant. (C) The amount of GTP-RAB-3 pulled down by RBD is increased in rbg-1;snt-1 animals compared to snt-1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic representation of the rbg-1(ok1660) deletion mutation. (B) Schematic representation of the rbg-2(ok3195) deletion mutation. Solid boxes indicate exons and thin lines indicate introns. The bar below the gene indicates the deleted region. (C) The enlarged GFP::RAB-3 puncta phenotype in rbg-1 mutants is rescued by expressing a wild-type copy of the rbg-1 gene. (D) Quantification of the synaptic enrichment of GFP::RAB-3 signal in the genotypes shown in (C). Data are represented as mean \u00b1 SD; **p < 0.01. (E) Loss of rbg-2 function suppresses the snt-1 mutant phenotype. White arrows indicate the cell bodies. (F) RAB-3 is co-precipitated with RBG-1. Scale bars, 5 \u00b5m.\n\n### Rab3GAP1/RBG-1 localizes on SVs\n\nAs the catalytic subunit of Rab3 GAP, RBG-1 can interact with RAB-3 (Figure 4\u2014figure supplement 1F). To understand how SNT-1 inhibits RAB-3 GTP hydrolysis, we examined the sub-cellular localization of RBG-1. We created a functional mCherry::RBG-1 construct and injected it into rbg-1 mutant animals. In wild-type animals, the mCherry::RBG-1 signal displayed a punctate expression pattern along the ventral and dorsal cords. Double staining further showed that the mCherry::RBG-1 puncta co-localized with the SV marker SNB-1::GFP (Figure 5C). Next, we tested whether the punctate localization of RBG-1 relies on the UNC-104-based intracellular transport system like other SV-associated proteins. We found that in unc-104 mutants, the mCherry::RBG-1 puncta no longer appeared in the putative synaptic region; instead they were retained in the cell bodies (Figure 5B). Together, the data above suggest that RBG-1 is localized on SVs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig5-v2.jpg)\n\n**Figure 5.:** (A and B) mCherry::RBG-1 has a punctate distribution in wild type (A) but accumulates in cell bodies (yellow arrows) in unc-104 mutants (B). (C) mCherry::RBG-1 (red) is co-localized with SNB-1::GFP puncta (green). (D) In snt-1 mutants, mCherry::RBG-1 loses its punctate localization and becomes diffuse in axons, while SNB-1::GFP retains its punctate pattern. (E) mCherry::RBG-1 retains its punctate distribution and is co-localized with SNB-1::GFP in rab-3 mutants. Scale bars, 5 \u00b5m.\n\n### SNT-1 is required for the SV localization of RBG-1\n\nSNT-1 resides on SVs and its function in RAB-3 localization is executed by RAB-3 GAP. Could the SV localization of RBG-1 be regulated by snt-1? We examined RBG-1 distribution in snt-1 animals and found that the RBG-1/SV co-localization is lost and mCherry::RBG-1 fluorescence becomes diffuse (Figure 5D). In contrast, SNB-1::GFP still retains its punctate expression pattern in snt-1 animals, similar to wild type (Figure 5D). Therefore, SNT-1 is required for the SV localization of RBG-1.\n\nRBG-1 binds to its substrate RAB-3 (Figure 4\u2014figure supplement 1E). Thus, we also tested whether the SV localization of RBG-1 is controlled by RAB-3. In rab-3(js49) mutants, we found that mCherry::RBG-1 retains its punctate expression and still co-localizes with SNB-1::GFP (Figure 5E), suggesting that the SV localization of RBG-1 does not rely on RAB-3 protein.\n\n### Rab3GAP1/RBG-1 binds to the C2B domain of SNT-1\n\nThe SNT-1-dependent SV association of RBG-1 suggests a direct association between SNT-1 and RBG-1. We co-expressed full-length RBG-1 and the cytosolic domain of SNT-1 (C2AB) in HEK293FT cells. After affinity purification, the RBG-1 protein was incubated with the SNT-1 C2AB fragment. In contrast to the mock-transfected sample, RBG-1 was effectively co-precipitated with the cytosolic region of SNT-1 (Figure 6A). The SNT-1 cytosolic portion was also co-precipitated by RBG-1 (Figure 6B). We next asked which domain of the SNT-1 cytosolic region is required for this binding. The cytosolic region of SNT-1 contains a C2A and a C2B motif. When the C2A domain was deleted, the remaining C2B motif retained the RBG-1 binding activity (Figure 6C). In contrast, when C2B was removed, the C2A domain alone could not bind to RBG-1 (Figure 6C). Therefore, the C2B domain is required for SNT-1 binding to RBG-1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig6-v2.jpg)\n\n**Figure 6.:** (A) RBG-1 is precipitated by the intracellular domain (C2AB) of SNT-1. (B) The SNT-1 intracellular domain is precipitated by RBG-1. (C) The C2B domain of SNT-1 binds to RBG-1. (D) SNT-1 without the C2B domain fails to rescue the snt-1 mutant phenotype. Yellow arrows indicate cell bodies. The schematic diagram shows the transmembrane (TM) and intracellular calcium-binding domains (C2A and C2B) of SNT-1. Scale bar, 5 \u00b5m.\n\nWe further investigated whether the function of SNT-1 in regulating the RAB-3/SV association is mediated through the C2B domain. In comparison with full-length SNT-1, which fully rescues the GFP::RAB-3 mis-localization defect in snt-1 mutants, we found that SNT-1 without the C2B domain (deltaC2B) had no rescue effect (Figure 6D). In contrast, when the C2A domain is removed (deltaC2A) from SNT-1, the remaining protein still possesses the rescue activity (Figure 6D). Together, these data suggest that the C2B domain is critical for SNT-1 function. SNT-1 lacking the trans-membrane domain (deltaTM) also failed to rescue the diffuse RAB-3 phenotype (Figure 6D), suggesting that the SV localization function of SNT-1 is required in addition to the C2B domain for regulating RAB-3/SV association in vivo.\n\n### Ca2+ treatment decreases the binding between SNT-1 and Rab3GAP1/RBG-1\n\nCa2+-mediated exocytosis activates the dissociation of Rab3 from the SV membrane (Fischer von Mollard et al., 1991; Fischer von Mollard et al., 1994). Could synaptotagmin 1, as the Ca2+ sensor for SV exocytosis, be the trigger to initiate the Rab3 SV dissociation process? We showed above that SNT-1 directly associates with Rab3GAP1/RBG-1. Therefore, we wondered whether the Ca2+ level could affect the binding of SNT-1 to RabGAP1/RBG-1, and whether the inhibition of RAB-3 GAP by SNT-1 is relieved by Ca2+ binding, thus allowing dissociation of RAB-3 from the SV during exocytosis. To test the ideas above, we asked whether the presence of Ca2+ disrupts the binding between SNT-1 and RBG-1. We purified RBG-1 and SNT-1 proteins and performed co-IP experiments with increasing concentrations of Ca2+. A Ca2+ concentration of 0.5 mM or 1 mM significantly compromised the RBG-1/SNT-1interaction (Figure 7A,B). Thus, upon Ca2+ binding, SNT-1 releases RBG-1.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig7-v2.jpg)\n\n**Figure 7.:** (A) Ca2+ treatment diminishes the binding between RBG-1 and the intracellular domain (C2AB) of SNT-1. (B) Quantification of the relative binding between RBG-1 and the C2AB domain upon Ca2+ treatment. (C) SNT-1 without Ca2+-binding sites (C2A*B*) still binds to RBG-1 in the presence of Ca2+. (D) Quantification of the relative binding between RBG-1 and the C2A*B* domain upon Ca2+ treatment. (E) Mutant SNT-1 proteins without Ca2+-binding activity stabilize RAB-3 on SVs. Ex snt-1, over-expression of SNT-1; Ex snt-1 C2A* and Ex snt-1 C2B*, over-expression of SNT-1 with mutant C2A domain or C2B domain, respectively; Ex snt-1 C2A*B*, over-expression of SNT-1 with mutant C2A and C2B domains. Scale bar, 5 \u00b5m. (F) Quantification of the synaptic enrichment in the genotypes shown in (E). (G) SNT-1 functions as a molecular switch controlling RAB-3/SV association and disassociation during SV exocytosis. Data are represented as mean \u00b1 SD. *p < 0.05; **p < 0.01; NS, not significant.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05118/elife-05118-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) The failure of RAB-3/SV dissociation caused by exocytosis mutants, including unc-2 and unc-13, is bypassed by mutation of snt-1. Yellow arrows indicate the cell bodies along the ventral cord. Scale bar, 5 \u00b5m. (B) Quantification of the synaptic enrichment in the genotypes shown in (A). Data are presented as mean \u00b1 SD. *p < 0.05; NS, not significant.\n\nNext, we asked whether SNT-1-RBG-1 binding is still affected by Ca2+ treatment if the Ca2+-binding sites are removed from SNT-1. The amino acids critical for Ca2+ binding in the C2A domain (D248 and D250) and the C2B domain (D383 and D385) were mutated, and the resulting SNT-1 mutant protein (C2A*B*) was purified and tested for its ability to bind RBG-1. We found that the RBG-1-binding capability of C2A*B* was high in the absence or presence of Ca2+ (Figure 7C,D), suggesting that the Ca2+-binding activity of SNT-1 is essential for attenuation of the SNT-1/RBG-1 interaction when Ca2+ is present.\n\n### Dissociation of RAB-3 from SVs relies on the Ca2+-binding activity of SNT-1\n\nCa2+ treatment decreases the binding between SNT-1 and RBG-1. Is the inhibition of RAB-3 GAP by SNT-1 alleviated when the Ca2+concentration rises? If so, SNT-1 that lacks Ca2+-binding capability will fail to release RAB-3 GAP during Ca2+ influx, and thus the dissociation of RAB-3 from SVs will be inhibited. To test this hypothesis, we analyzed the GFP::RAB-3 pattern in transgenic animals that express different mutant forms of SNT-1. The two amino acids necessary for Ca2+ binding in the C2A domain of SNT-1 are D248 and D250. We created the SNT-1 mutant C2A* by replacing these two aspartic acids with alanines and found that C2A* could rescue the GFP::RAB-3 mis-localization defect (Figure 7E). In addition to this rescue phenomenon, we noticed that the GFP::RAB-3 puncta were enlarged and the GFP signal was more enriched in the punctate regions in comparison to wild-type animals over-expressing snt-1 (Figure 7E,F). A similar GFP::RAB-3 enrichment effect was observed in worms expressing the C2B* mutant form of SNT-1, which contains a C2B domain that cannot bind Ca2+ (D383 and D385 were replaced with alanines) (Figure 7E,F). We further replaced the Ca2+-binding sites in both C2A and C2B (C2A*B*). When this construct was expressed, the GFP::RAB-3 signal was also increased in the punctate regions (Figure 7E,F).\n\nCould the enhanced GFP:RAB-3 signal in the puncta indeed reflect the failure of exocytosis? Previous studies suggest that RAB3 dissociation from SV membranes is inhibited when SV exocytosis is disrupted by blocking either Ca2+ influx or membrane fusion (Fischer von Mollard et al., 1991; Fischer von Mollard et al., 1994; Stahl et al., 1996). We examined two exocytosis mutants, unc-2 and unc-13. unc-2 encodes the alpha subunit of the voltage-gated Ca2+ channel (Schafer and Kenyon, 1995). In unc-2 mutants, we found that the GFP signal is significantly enriched within the punctate regions and the GFP::RAB-3 puncta are larger and brighter compared to wild type (Figure 7\u2014figure supplement 1A,B). unc-13 encodes the Munc13 homolog in worms and loss of function of unc-13 results in blockage of membrane fusion during SV exocytosis (Aravamudan et al., 1999; Richmond et al., 1999; Varoqueaux et al., 2002). We found that the GFP signal was enhanced in the punctate regions in unc-13 mutants, as in unc-2 mutants (Figure 7\u2014figure supplement 1A,B). Blocking SV exocytosis resulted in failure of RAB-3 to dissociate from SVs; thus the enlarged GFP::RAB-3 puncta indeed indicate the decreased dissociation of RAB-3 protein from SVs. Taken together, the data above indicate that the Ca2+-binding capability is essential for SNT-1 function in mediating the RAB-3 SV dissociation induced by Ca2+-triggered exocytosis.\n\nInterestingly, in unc-13;snt-1 or unc-2;snt-1 double mutants, the RAB-3::GFP signal is diffuse throughout whole neuronal cells (Figure 7\u2014figure supplement 1A,B), as seen in snt-1 single mutants. Because the diffuse RAB-3::GFP signal suggests a dissociation of RAB-3 from SV membranes, the above observation implies that in the absence of SNT-1, the dissociation of RAB-3 from SVs can occur even when Ca2+-induced exocytosis is blocked. As a consequence, the coupling between SV exocytosis and RAB-3 dissociation is disrupted when SNT-1 is missing. These data are consistent with the inhibition-of-inhibition role of SNT-1 on RAB-3/SV association. Together, these results suggest that SNT-1 plays a dual role in the RAB-3/SV cycle, inhibiting dissociation of RAB-3 from SVs during the resting state (no Ca2+ influx) and triggering dissociation of RAB-3 from SVs upon Ca2+ binding (Figure 7G).\n\n## Discussion\n\nAcute and precise neuronal activity requires precise coordination between the SV cycle and the Rab3 cycle. As the trigger of regulated vesicle secretion, synaptotagmin 1 is known to bind the membrane and the SNARE complex to give the final push for complete assembly of the SNARE complex for membrane fusion (Davletov and S\u00fcdhof, 1993; Chapman and Davis, 1998; Dai et al., 2007; Choi et al., 2010; Vrljic et al., 2010). Here, we revealed that SNT-1/synaptotagmin 1 functions as an on-and-off switch to regulate Rab3 membrane association, thus facilitating repeated release. Our study has many important implications.\n\nIn the resting state, Rab3 protein is associated with SVs in the GTP-bound form, and Rab3 GTP, together with its corresponding effectors, docks the vesicles at the active zone region (Sudhof, 2004). However, Rab3 GAP, the negative regulator of Rab3, is also enriched in the synaptic fraction and is localized on SVs (this study) (Oishi et al., 1998). How therefore is the active form of Rab3, and hence the proper docking complex, maintained when GAP is close by? Based upon our study, it is entirely possible that synaptotagmin 1 prevents the hydrolysis of Rab3 GTP by directly sequestering or inhibiting Rab3 GAP before Ca2+ influx. In fact, the SV localization of Rab3GAP1/RBG-1 is particularly interesting, given the fact that the Rab3 cycle must be spatially regulated so that Rab3 is kept in close proximity to SVs for repeated neurotransmitter release. Indeed, when synaptotagmin 1/SNT-1 binds Ca2+, the inhibition on RAB-3 GAP is alleviated, so the locally enriched Rab3 GAP can freely and quickly access GTP-Rab3 and hydrolyze Rab3 GTP to GDP. Together with the functional Ca2+switch, synaptotagmin 1 can therefore efficiently coordinate the Rab3 cycle with the SV cycle. The concentration of Ca2+ needed for exocytosis ranges from \u223c10 to 200 \u00b5M in the nerve terminals, so the Ca2+ concentration that is required to release RBG-1 from SNT-1 is relatively high (500 \u00b5M). However, it is known that the rather low affinity of synaptotagmin 1 for Ca2+ (Ubach et al., 1998; Fernandez et al., 2001) can be strongly affected by the presence of synaptotagmin-binding partners, especially membrane lipids (Chapman, 2002). Therefore, it will be interesting to test whether plasma membrane-enriched lipids such as PIP2 (Lee et al., 2010) can act synergistically with Ca2+ to regulate the binding of SNT-1 to RBG-1.\n\nAt the molecular level, synaptotagmin 1 is known to bind the plasma membrane and the SNARE complex in the presence of Ca2+ (Davletov and S\u00fcdhof, 1993; Chapman and Davis, 1998; Fernandez et al., 2001; Dai et al., 2007; Choi et al., 2010; Vrljic et al., 2010). The interaction of synaptotagmin with membranes and SNARE proteins has well-documented consequences, including creating local positive membrane curvature and displacing the clamping factor complexin from the SNARE complex (Martens et al., 2007; Hui et al., 2009). Combining these previous reports with data presented in this study, we think that synaptotagmin-Ca2+ may not only give the final push for complete assembly of the SNARE complex for membrane fusion, but also play a role in terminating vesicle docking by indirectly deactivating Rab3, thus facilitating repetitive transmitter release.\n\nAmong more than 60 Rabs in humans and mice, Rab3 and Rab27 seem to be specifically involved in stimulated secretion in a variety of secretory cells (Fukuda, 2008, 2013). Synaptotagmins have also evolved specifically to regulate secretion. Interestingly, the regulatory role of SNT-1 on RAB-3 does not extend to RAB-27, which is functionally closely related to RAB-3 (Mahoney et al., 2006). Simultaneous knockdown of Rab3 and Rab27 causes secretion defects more severe than single knockdown in worms and PC12 cells (Mahoney et al., 2006; Tsuboi and Fukuda, 2006). Both Rab27 and Rab3 are localized on SVs and can bind to RIM, thereby docking the vesicles (Wang et al., 1997; Fukuda, 2003). Rab3 and Rab27 share the same GEF, which is AEX-3 in worms and DENN/MADD in mammals (Levivier et al., 2001; Coppola et al., 2002; Mahoney et al., 2006). In contrast, Rab3 GAP serves as a specific GAP for Rab3 (Fukui et al., 1997; Nagano et al., 1998; Itoh and Fukuda, 2006). Here, SNT-1 apparently only affects the RAB-3 cycle and this action is mediated by inhibition of the Rab3-specific GAP. Therefore, although Rab3 and Rab27 play redundant roles in SV exocytosis, they can be differentially controlled through their specific regulators. We would like to point out that humans and worms have multiple synaptotagmins, and it remains to be determined whether any of the other synaptotagmins play a similar regulatory role on Rab27.\n\nRab3 GAP consists of the catalytic subunit Rab3GAP1 and the noncatalytic subunit Rab3GAP2 (Fukui et al., 1997; Nagano et al., 1998). Rab3GAP1 and Rab3GAP2 form a complex in vitro and co-immunoprecipitate in vivo (Nagano et al., 1998). Although Rab3GAP2 does not affect the in vitro GAP activity of Rab GAP1, it may act to stabilize, regulate, or localize Rab3GAP1 correctly in cells. The functional characteristics are consistent with their close biochemical interactions. Loss-of-function mutations in Rab3GAP1 and Rab3GAP2 produce clinically almost indistinguishable conditions, Warburg Micro syndrome and Martsolf syndrome, characterized by brain, eye, and endocrine abnormalities (Aligianis et al., 2005, 2006). We have now revealed that both Rab3GAP1/rbg-1 and Rab3GAP1/rbg-2 mutations can suppress the RAB-3 mis-localization phenotype in snt-1 mutants, implying that Rab3GAP does indeed function as a complex to participate in the SNT-1-mediated regulation of the RAB-3 cycle. However, we noticed that loss of function of rbg-2 alone leads to additional synaptic or axonal defects (data not shown) compared to loss of rab-3 or rbg-1. This suggests that RBG-2 may play roles in nervous system development other than forming the Rab3GAP complex with RBG-1 during SV exocytosis.\n\nThe GTP-bound active form of Rab promotes membrane trafficking by interacting with specific effectors. In contrast with Rab effectors that function in secretory vesicle trafficking, relatively little is known about the specific Rab GEFs and GAPs and how they are regulated during vesicle secretion. Evidence that the sub-cellular localization and activity of RAB-3 GAP can be regulated by synaptotagmin/SNT-1 strongly hints that regulators of Rabs could be subjects for active manipulation during various types of intracellular membrane trafficking. A recent intriguing study is in agreement with our notion. In the amoeba Dictyostelium discoideum, vacuolar Ca2+ release activates the Rab GAP CnrF, thus subsequently down-regulating Rab11a (Donato et al., 2013). Taken together, current data suggest a vital role of Ca2+ as the functional switch for regulated secretion processes. Because the key principles and regulatory components of different intracellular vesicle trafficking events are broadly conserved, the mechanism that we have uncovered is likely to represent a conserved mode of action.\n\nUnderstanding how the sequential activation of Rab GTPases is achieved during vesicle trafficking is a central theme of cell biology. This in turn raises the question of how regulatory Rab GEFs or Rab GAPs are activated in the right place and at the right time. Synaptotagmins act as the primary Ca2+-sensors in most forms of Ca2+-induced exocytosis, as exemplified by synaptic transmission. Our studies have proposed the elegant molecular machinery by which Rab GAP can be temporally and spatially regulated in response to acute cellular signals, so that correctly activated Rabs can perform their appropriate functions and allow vesicle fusion to occur in an orderly fashion.\n\n## Materials and methods\n\n### Worm strains and mutagenesis\n\nStrain maintenance and genetic manipulations were performed as described (Brenner, 1974). Strains used in this study are: LG I: EG2710 [unc-57(ok310)], CB450 [unc-13(e450)], VC2481 [rbg-2(ok3195)], CB47 [unc-11(e47)]. LGII: NM204 [snt-1(md290)], CB1265 [unc-104(e1265)], MT6977 [snt-1(n2665)], RM1606 [snt-1(md172)], RM1603 [snt-1(md125)], RM1620 [snt-1(md220)], NM791 [rab-3(js49)]. LGIII: XD1366 [rep-1(xd56)], NM1278 [rbf-1(js232)]. LGIV: EG3027 [unc-26(s1710)], CB169 [unc-31(e169)]. LGV: XD1925 [hmgs-1(xd145)], CB268 [unc-41 (e268)], NM467 [snb-1(md247)], RM956 [ric-4(md1088)]. LGX: XD1199 [aex-3(xd58)], RB1453 [rbg-1(ok1660)], CB81 [unc-18(e81)], CB55 [unc-2(e55)], CB102 [unc-10(e102)], CX51 [dyn-1(ky51)]. Additional strains are: XD2188 [xdEx1380; Paex-3::AEX-3::GFP], XD2702 [xdEx1214; Punc-25::mCHERRY::RBG-1], XD3132 [xdEx1461; Phmr-1b::SNT-1FL], XD3017 [xdEx1419; Phmr-1b::SNT-1 deltaTM], XD3134 [xdEx1463; Phmr-1b::SNT-1 deltaC2A], XD3034 [xdEx1398; Phmr-1b::SNT-1 deltaC2B], XD3032 [xdEx1396; Phmr-1b::SNT-1 C2A*], XD3033 [xdEx1397; Phmr-1b::SNT-1C2B*], XD3133 [xdEx1462; Phmr-1b::SNT-1C2A*B*]. Mutagenesis was carried out in the xdIs7 (Phmr-1b::GFP::RAB-3) strain treated with ethylmethane sulfonate. From 5000 genomes, 13 mutations were isolated. Subsequent genetic and molecular analysis revealed that we had isolated four alleles of rep-1(xd56, xd138, xd139, and xd142), six alleles of aex-3(xd58, xd60, xd137, xd143, xd148, and xd149), and three alleles of hmgs-1(xd128, xd129, and xd145). rep-1(xd138), rep-1(xd139), hmgs-1(xd128) and hmgs-1(xd129) animals are larval lethal. The rest of the identified mutants are fertile.\n\n### DNA constructs and transgenic animals\n\nPromoters, GFP, mCherry, and various cDNA or genomic DNA fragments were cloned into the deltapSM vector through standard procedures. Site-directed mutagenesis was performed using standard PCR-based methods. Transgenic animals were produced as previously described (Song et al., 2010). Integrated strains were obtained by UV irradiation. All integrated transgenic animals were out-crossed at least 3 times.\n\n### GTP-RAB-3 pull-down assay\n\nDNA fragments containing the RBD domains of rat RIM2 were inserted into the pGEX-4T-3 vector. Expression and purification of GST fusion proteins in E. coli were carried out according to standard procedures. Worms with different genotypes were collected and washed in M9 buffer. 800 \u00b5l of homogenizing buffer (50 mM Tris-Cl pH8.0, NaCl 150 mM, 0.5% sodium deoxycholate, 1% Triton-X 100) was added and samples were disrupted with a Dounce homogenizer (Cheng-He Company, Zhuhai, China) (Chen et al., 2010) on ice for 5 min. Debris was removed by centrifuging at 12,000 rpm for 10 min at 4\u00b0C. The amount of GFP-RAB-3 input in each experiment was equalized before the pull-down assay. The worm lysates were incubated for 4 hr at 4\u00b0C with GST-tagged RBD RIM2 coupled to glutathione-Sepharose 4B (GE Healthcare, USA). After washing three times, the GFP-RAB-3 level was analyzed by 10% SDS-PAGE followed by standard western blotting with an anti-GFP antibody (1:5000 dilution) (Santa Cruz Biotechnology).\n\n### Co-immunoprecipitation\n\nTo express proteins in HEK293FT cells, cDNA fragments were amplified and cloned into modified pcDNATM3.1/myc-HIS(\u2212) or pFLAG-CMV-2 vectors through standard procedures. HET293FT cells were cultured in DMEM medium supplemented with 12% FBS. Plasmid transfections were carried out using Lipofectamine 2000 (Invitrogen, USA). 24 hours after transfection, cells were harvested and lysed for 10 min at 4\u00b0C. After centrifugation, the supernatants were incubated with anti-FLAG or anti-myc beads at 4\u00b0C for 4 hr. Samples were resolved by standard immunoblotting techniques. For co-immunoprecipitation experiments with purified proteins, the immunoprecipitated samples were eluted with elution buffer (Thermal Scientific, USA) and neutralized with Tris buffer (pH 9.0). For GFP-tagged proteins, anti-GFP antibody (Abcam, USA) was incubated with the protein supernatant.\n\n### Cell fractionation\n\nWorms with different genotypes were collected and washed in M9 buffer. 500 \u00b5l of lysis buffer (250 mM sucrose, 50 mM Tris\u2013HCl with pH6.8, 1 mM EDTA) were added and worm samples were homogenized with a Dounce homogenizer (Cheng-He Company, Zhuhai, China) (Chen et al., 2010) on ice for 15 min. The nuclear pellet was removed by centrifuging at 3000 rpm for 10 min at 4\u00b0C. The supernatant was further centrifuged at 40,000 rpm for 1 hr. The new supernatant was collected as the cytosolic fraction. The pellet was further washed and centrifuged at 40,000 rpm for 45 min. All samples were mixed with 2xSDS loading buffer before 10% SDS-PAGE gel analysis. The GFP-RAB-3 and tubulin levels in each fraction were analyzed by standard western blotting procedures.\n\n### Microscopy and image analysis\n\nImages were captured using a Plan-Apochromat 40X/1.4 objective on an Olympus confocal microscope. All images were taken at the young adult stage unless specifically indicated. Images were analyzed with custom Image J software. Two main parameters were determined: puncta number (PN) and synaptic enrichment (SE) (Ch'ng et al., 2008). These were calculated from the punctal fluorescence (PF), which measures the signal intensity at the pre-synaptic specialization, and the inter-punctal fluorescence (IPF), which measures the signal intensity in axons between synapses. An individual punctum is defined when the peak PF/average peak IPF is \u22652. Synaptic enrichment is defined as total PF/total IPF within a 100-\u00b5m length of middle dorsal cord region. All data are shown as mean \u00b1 SD. Statistical analyses were performed with Student's t-test. For each genotype, more than 20 animals were imaged and analyzed.\n",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c481a87a-f926-44a9-b42b-8dacdad2fcdf",
+      "submission_id": "bd28bc68-5933-4ccd-ac32-737271ee5594",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Reinhard Jahn, Max Planck Institute for Biophysical Chemistry , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05118.013](https://doi.org/10.7554/eLife.05118.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cSynaptotagmin 1 directs repetitive release by coupling vesicle exocytosis to Rab3 cycle\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission. In principle, all reviewers considered your work as interesting but there are several conclusions that need to be substantiated in a revision. First, the notion that SNT inhibits Rab3-GAP needs more support. One approach would be to examine RBD RAB-3 pulldowns in snt-1; rbg-1 double mutants. This experiment is a better test for the hypothesis that SNT-1's effects on RAB-3/GTP levels are caused by a change in RBG-1 activity. Even better (if feasible) would be to carry out GAP assays in vitro.\n\nSecond, the reviewers questioned whether RAB-3 was cytosolic or plasma membrane associated in snt-1 mutants. If the diffuse RAB-3 is on the plasma membrane, that would not support the model for increased GAP activity. If RAB-3 is cytosolic, that would provide independent support for the altered GTP state (i.e. confirming the RBD pull down). For these reasons the reviewers request direct fractionation experiments (analyzing Rab3 levels in the membrane and soluble fractions) to solidify this key conclusion.\n\nThird, the sensitivity of the snt-1 and rab3 single mutants and the snt-1/rab3 double mutant to the inhibitor aldicarb should be tested. If the authors are correct, there should be no increased sensitivity of the double mutant.\n\nFourth, add an rbg-1 rescue experiment.\n\nFinally, some of the referees were concerned about the nonphysiologically high concentrations of calcium that are required to see the effect. This should be at least commented on by the authors.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cSynaptotagmin 1 directs repetitive release by coupling vesicle exocytosis to the Rab3 cycle\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Randy Schekman (Senior editor), a member of the Board of Reviewing Editors, and the two original referees. The manuscript has been improved but there was one minor issue raised by one of the referees that needs to be addressed before acceptance, as outlined below: \u201cThe methods state that worm extracts were prepared by dounce homogenization for the biochemistry experiments. I thought that worms are not well disrupted by dounce, and that one needs to use sonication, french press, or a microfluidizer. Could you check with the authors that the methods are correctly reported?\u201d\n",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e26c1ae5-ed69-40b2-abdf-855b882fa426",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C1",
+      "claim": "Synaptotagmin 1 orchestrates the membrane association/disassociation cycle of Rab3 in response to Ca2+ influx.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that the Ca2+ sensor synaptotagmin 1 orchestrates the membrane association/disassociation cycle of Rab3, which functions in activity-dependent recruitment of synaptic vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented throughout the manuscript showing the relationship between synaptotagmin 1 and Rab3 cycling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "dc79d43a-67fe-472d-8fd6-1288ffb62635",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C2",
+      "claim": "In the absence of Ca2+, synaptotagmin 1 binds to Rab3 GTPase activating protein (GAP) and inhibits the GTP hydrolysis of Rab3 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Ca2+, synaptotagmin 1 binds to Rab3 GTPase activating protein (GAP) and inhibits the GTP hydrolysis of Rab3 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation experiments and functional assays showing binding between synaptotagmin 1 and Rab3 GAP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "60184315-90a3-403a-9493-09ef831106f8",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C3",
+      "claim": "Rab3 GAP resides on synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab3 GAP resides on synaptic vesicles, and synaptotagmin 1 is essential for the synaptic localization of Rab3 GAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data showing mCherry::RBG-1 co-localization with synaptic vesicle markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "49adbdc6-cc5f-4d88-bf23-45871444d9c1",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C4",
+      "claim": "Synaptotagmin 1 is essential for the synaptic localization of Rab3 GAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab3 GAP resides on synaptic vesicles, and synaptotagmin 1 is essential for the synaptic localization of Rab3 GAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing that RBG-1 loses its punctate localization in snt-1 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "4028bf55-84fd-4396-9438-99f0eefe8e46",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C5",
+      "claim": "In the presence of Ca2+, synaptotagmin 1 releases Rab3 GAP and promotes membrane disassociation of Rab3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of Ca2+, synaptotagmin 1 releases Rab3 GAP and promotes membrane disassociation of Rab3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation experiments showing Ca2+-dependent disruption of SNT-1/RBG-1 binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "f11ddb22-2d6c-4124-a0db-8ba4bba8ad0b",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C6",
+      "claim": "Without synaptotagmin 1, the tight coupling between vesicle exocytosis and Rab3 membrane disassociation is disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "Without synaptotagmin 1, the tight coupling between vesicle exocytosis and Rab3 membrane disassociation is disrupted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genetic experiments showing that RAB-3 dissociates from SVs in snt-1 mutants even when exocytosis is blocked.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c6a5541d-8c4e-4e94-ab6e-29b01b0ca2c7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C7",
+      "claim": "Fast and precise neuronal reaction requires that SVs are clustered in front of the release site, the presynaptic active zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast and precise neuronal reaction requires that SVs are clustered in front of the release site, the presynaptic active zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws from established understanding of synaptic transmission.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8ba50636-ef29-4e24-923d-b64674f7d779",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C8",
+      "claim": "The basic membrane fusion reaction is mediated by evolutionarily conserved soluble NSF attachment protein receptors (SNAREs) and related proteins like Munc13 and Munc18.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic membrane fusion reaction is mediated by evolutionarily conserved soluble NSF attachment protein receptors (SNAREs) and related proteins like Munc13 and Munc18 (Weber et al., 1998; Sudhof, 2004; Brunger, 2005; Jahn and Scheller, 2006; Lang and Jahn, 2008; Jahn and Fasshauer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ac0a94e4-e95a-4eb7-8ea8-6862d48fc9fb",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C9",
+      "claim": "The Ca2+-sensing process that starts the SNARE engine is primarily carried out by the synaptotagmin family.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Ca2+-sensing process that starts the SNARE engine is primarily carried out by the synaptotagmin family (Chapman, 2002; Jahn and Fasshauer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "679978a4-2b5a-484b-893b-ae36e3a36852",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C10",
+      "claim": "Through their C2 domains, synaptotagmins bind to Ca2+, thus triggering membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Through their C2 domains, synaptotagmins bind to Ca2+, thus triggering membrane fusion (Sudhof, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "95bd4cfb-d09f-492d-b9b3-76a8fd0d1abf",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C11",
+      "claim": "Rab3 protein is highly enriched in the nervous system and is specifically localized on SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab3 protein is highly enriched in the nervous system and is specifically localized on SVs (Fischer von Mollard et al., 1991; Fischer von Mollard et al., 1994; Geppert et al., 1994; Stahl et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "649eb635-b5a9-4b26-b96c-ec650536f88d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C12",
+      "claim": "On the vesicles, the active GTP-bound form of Rab3 is complexed with effector proteins like rabphilin and RIM (Rab3-interacting molecule).",
+      "claim_type": "EXPLICIT",
+      "source": "On the vesicles, the active GTP-bound form of Rab3 is complexed with effector proteins like rabphilin and RIM (Rab3-interacting molecule) (Shirataki et al., 1993; Li et al., 1994; Wang et al., 1997, 2000), thus facilitating the recruitment/docking of SVs (Nonet et al., 1997; Leenders et al., 2001; Tsuboi and Fukuda, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "65a1e9b4-65ac-46f0-bb40-ba43f8b35bac",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C13",
+      "claim": "GTP-bound Rab3 facilitates the recruitment/docking of SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the vesicles, the active GTP-bound form of Rab3 is complexed with effector proteins like rabphilin and RIM (Rab3-interacting molecule) (Shirataki et al., 1993; Li et al., 1994; Wang et al., 1997, 2000), thus facilitating the recruitment/docking of SVs (Nonet et al., 1997; Leenders et al., 2001; Tsuboi and Fukuda, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8c1d6bee-ec23-4c24-a8db-80beb7c29c7c",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C14",
+      "claim": "Ca2+-induced exocytosis can trigger disassociation of Rab3 from SV membranes through the GTP hydrolysis process.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+-induced exocytosis can trigger disassociation of Rab3 from SV membranes through the GTP hydrolysis process (Fischer von Mollard et al., 1991; Fischer von Mollard et al., 1994; Stahl et al., 1996), but the underlying mechanisms are not clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "3e6be2bb-acb8-462e-bb2d-719f5b357479",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C15",
+      "claim": "The GTP-to-GDP conversion not only removes Rab3 from SVs, but also simultaneously dissociates Rab3 from its binding effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The GTP-to-GDP conversion not only removes Rab3 from SVs, but also simultaneously dissociates Rab3 from its binding effectors, which disassembles the docking complex so that both Rab3 and Rab3 effectors can be recycled for the next round of release (Wang et al., 1997, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "9fd02f29-df15-4f5f-8282-dafead47d29d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C16",
+      "claim": "Rab3 and synaptotagmin have been considered as the Yin and Yang of membrane fusion, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their unique features, Rab3 and synaptotagmin have been considered as the Yin and Yang of membrane fusion, respectively (Geppert and S\u00fcdhof, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "e8585998-2493-4012-bff6-229623aee288",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C17",
+      "claim": "SNT-1 in C. elegans is crucial for the SV association of RAB-3 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that synaptotagmin 1/SNT-1 in C. elegans is crucial for the SV association of RAB-3 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing diffuse RAB-3 localization in snt-1 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "38f3713d-1185-4f72-95c4-6104eff29edd",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C18",
+      "claim": "SNT-1 promotes the GTP-bound state of RAB-3 by inhibiting RAB-3 GAP.",
+      "claim_type": "EXPLICIT",
+      "source": "SNT-1 promotes the GTP-bound state of RAB-3 by inhibiting RAB-3 GAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pull-down assays and genetic suppression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "3b439614-b4af-49aa-8eda-f0e5012a4194",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C19",
+      "claim": "The catalytic subunit of RAB-3 GAP (RBG-1) localizes on SVs and directly binds to SNT-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic subunit of RAB-3 GAP (RBG-1) localizes on SVs and directly binds to SNT-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data and co-immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "e4580dcb-ac9b-4b11-8e64-e17b468a698d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C20",
+      "claim": "Ca2+ treatment disrupts the direct association between SNT-1 and RBG-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ treatment disrupts the direct association between SNT-1 and RBG-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation experiments with varying Ca2+ concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "d2b0c077-1942-408a-9e04-d436095d945f",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C21",
+      "claim": "Ca2+-binding activity of SNT-1 is essential for the dissociation of RAB-3 from SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ca2+-binding activity of SNT-1 is essential for the dissociation of RAB-3 from SVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experiments with Ca2+-binding mutants of SNT-1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a6f89a2d-7612-418e-a7ed-baf0004a32e1",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C22",
+      "claim": "In C. elegans motor neurons, RAB-3 fused with Green Fluorescent Protein (GFP) adopts a punctate pattern of localization along the length of the ventral and dorsal cords.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans motor neurons, RAB-3 fused with Green Fluorescent Protein (GFP) adopts a punctate pattern of localization along the length of the ventral and dorsal cords (Mahoney et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature and confirmed by microscopy data in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "3cbbcd68-70e9-4843-8c65-adc3edf8dd36",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C23",
+      "claim": "The punctate RAB-3 pattern is similar to that of other SV proteins, including synaptobrevin and synaptotagmin.",
+      "claim_type": "EXPLICIT",
+      "source": "This punctate RAB-3 pattern is similar to that of other SV proteins, including synaptobrevin and synaptotagmin (Nonet et al., 1993; Nonet, 1999; Zhen and Jin, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "3cc121f2-0a92-4072-af1b-3688a64e1108",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C24",
+      "claim": "Most Rab3 protein is associated with SV membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous report also showed that most Rab3 protein is associated with SV membranes (Fischer von Mollard et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ee9a3de5-ca21-475f-a0b7-ab9c502598b0",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C25",
+      "claim": "In the absence of the RAB-3 GEF, AEX-3, GFP::RAB-3 no longer shows a punctate pattern and becomes diffusely distributed in neuron cell bodies and axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the RAB-3 GEF, AEX-3 (Iwasaki et al., 1997), GFP::RAB-3 no longer shows a punctate pattern and becomes diffusely distributed in neuron cell bodies and axons (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 1A and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "bc1bb337-1616-4d51-99de-711931822f2e",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C26",
+      "claim": "AEX-3 is responsible for converting RAB-3 protein from the membrane-dissociated GDP-bound form to the membrane-associated GTP-bound form.",
+      "claim_type": "EXPLICIT",
+      "source": "AEX-3 is responsible for converting RAB-3 protein from the membrane-dissociated GDP-bound form to the membrane-associated GTP-bound form (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of GEF function and illustrated in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "88ec9307-c7da-4a46-8a92-6f1180b07508",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C27",
+      "claim": "The punctate localization of RAB-3 in wild type likely represents the GTP-bound, SV membrane-associated form of RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the punctate localization of RAB-3 in wild type likely represents the GTP-bound, SV membrane-associated form of RAB-3, while the diffuse GFP::RAB-3 signal may represent the dissociated GDP-RAB-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observations and established knowledge of Rab3 cycling.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8049aeed-1cb3-46d3-a41b-ccd6ad935555",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C28",
+      "claim": "The diffuse GFP::RAB-3 signal may represent the dissociated GDP-RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the punctate localization of RAB-3 in wild type likely represents the GTP-bound, SV membrane-associated form of RAB-3, while the diffuse GFP::RAB-3 signal may represent the dissociated GDP-RAB-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observations and established knowledge of Rab3 cycling.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "6e077557-4151-4966-bde8-0b38d64e07a5",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C29",
+      "claim": "In snt-1(md290) animals, which lack snt-1 function, the GFP::RAB-3 puncta disappeared and the GFP signal was diffusely distributed throughout the neuronal processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that in snt-1(md290) animals, which lack snt-1 function, the GFP::RAB-3 puncta disappeared and the GFP signal was diffusely distributed throughout the neuronal processes, similar to aex-3, rep-1, and hmgs-1 mutants (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "89fbc7eb-a16f-4cba-9a40-8a5adf1e740e",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C30",
+      "claim": "snt-1 encodes the synaptotagmin 1 homologue in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "snt-1 encodes the synaptotagmin 1 homologue in C. elegans (Nonet et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "9d72a159-3458-4a0f-9706-c9e0e835616d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C31",
+      "claim": "The n2665, md220, md125, and md172 alleles of snt-1 all display a diffuse GFP::RAB-3 phenotype similar to md290.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the n2665, md220, md125, and md172 alleles of snt-1 all display a diffuse GFP::RAB-3 phenotype similar to md290 (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "36892d14-4a37-4923-9b7f-99498e65e453",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C32",
+      "claim": "Both the snt-1 and rab-3 genes are broadly expressed in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the snt-1 and rab-3 genes are broadly expressed in the nervous system (Nonet et al., 1993, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "186a5619-2652-4e3b-8aaa-0daa6cbd9e54",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C33",
+      "claim": "In snt-1 mutants, GFP::RAB-3 is completely diffuse in neuronal processes, including the nerve ring, ventral cord, and dorsal cord regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type animals, GFP::RAB-3 displays a punctate pattern, while in snt-1 mutants, GFP::RAB-3 is completely diffuse in neuronal processes, including the nerve ring, ventral cord, and dorsal cord regions (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ac5b2923-4b27-4591-8158-27adaedffe09",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C34",
+      "claim": "The effect of snt-1 on RAB-3 localization is widely preserved in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the effect of snt-1 on RAB-3 localization is widely preserved in the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the pan-neuronal expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "cc9daf03-0be0-45df-81ea-84464566d193",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C35",
+      "claim": "The diffuse GFP::RAB-3 phenotype was fully rescued when wild-type snt-1 was introduced into mutant animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the diffuse GFP::RAB-3 phenotype was fully rescued when wild-type snt-1 was introduced into mutant animals (Figure 1\u2014figure supplement 1D), suggesting that SNT-1 is indeed essential for localization of RAB-3 on SVs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "3794d0e1-818a-4e1e-a189-835cb4f11ff4",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C36",
+      "claim": "SNT-1 is essential for localization of RAB-3 on SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the diffuse GFP::RAB-3 phenotype was fully rescued when wild-type snt-1 was introduced into mutant animals (Figure 1\u2014figure supplement 1D), suggesting that SNT-1 is indeed essential for localization of RAB-3 on SVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the rescue experiment data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "93cf2237-8526-4a68-87b2-3b7b608d1755",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C37",
+      "claim": "SNB-1 is the C. elegans synaptobrevin homologue.",
+      "claim_type": "EXPLICIT",
+      "source": "SNB-1 is the C. elegans synaptobrevin homologue (Nonet, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "d48e0a75-1574-41a3-be45-7b347b57261c",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C38",
+      "claim": "In worm DD and VD motor neurons, SNB-1 is distributed evenly in punctate structures along neuronal processes, similar to RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "In worm DD and VD motor neurons, SNB-1 is distributed evenly in punctate structures along neuronal processes, similar to RAB-3 (Figure 2A) (Zhen and Jin, 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data in Figure 2A and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "38cf77ef-9f06-4751-8844-cb584d4f3553",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C39",
+      "claim": "In snt-1 animals, some of the SNB-1 puncta are enlarged, but the punctate distribution of SNB-1 is not altered.",
+      "claim_type": "EXPLICIT",
+      "source": "In snt-1 animals, some of the SNB-1 puncta are enlarged, but the punctate distribution of SNB-1 is not altered (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "3fcbbc59-c3cd-4be3-8a7d-b5b6140b4874",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C40",
+      "claim": "SV clustering is probably not affected by snt-1.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with recent findings (Yu et al., 2013), suggesting that SV clustering is probably not affected by snt-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the SNB-1 localization data and supported by citation to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "5a12bc6f-0739-496f-94ac-d06d076f4bcf",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C41",
+      "claim": "unc-104 encodes the cytosolic kinesin responsible for synaptic vesicle trafficking from cell bodies to nerve terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "unc-104 encodes the cytosolic kinesin responsible for synaptic vesicle trafficking from cell bodies to nerve terminals (Hall and Hedgecock, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "4b3afc0e-e657-4c9e-a7a4-bcd21bc74001",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C42",
+      "claim": "In the absence of UNC-104 kinesin, few SVs are transported to synaptic termini, while neuron cell bodies have a surfeit of SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of UNC-104 kinesin, few SVs are transported to synaptic termini, while neuron cell bodies have a surfeit of SVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of UNC-104 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "65ad03fe-1fd5-4c82-9ce1-377bfbdb3800",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C43",
+      "claim": "In unc-104 single mutants, SNB-1::GFP accumulated in cell bodies and little GFP signal could be detected outside of cell bodies or on the dorsal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-104 single mutants, we found that SNB-1::GFP accumulated in cell bodies (Figure 2E,E\u2033, white arrow) and little GFP signal could be detected outside of cell bodies or on the dorsal cord (Figure 2E'), which is consistent with the role of UNC-104 in SV transport.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "f5e1f917-12fa-4400-b4da-7804d9761db9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C44",
+      "claim": "In snt-1;unc-104 double mutants, the SNB-1::GFP signal accumulated in cell bodies like in unc-104 single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In snt-1;unc-104 double mutants, the SNB-1::GFP signal accumulated in cell bodies (Figure 2F,F\u2033, white arrow) like in unc-104 single mutants, suggesting that further removal of SNT-1 in unc-104 mutant animals does not alter the dependence of SVs on UNC-104 for intracellular trafficking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "1431ff80-4939-4e5a-ba28-34cb860f5a5a",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C45",
+      "claim": "Further removal of SNT-1 in unc-104 mutant animals does not alter the dependence of SVs on UNC-104 for intracellular trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "In snt-1;unc-104 double mutants, the SNB-1::GFP signal accumulated in cell bodies (Figure 2F,F\u2033, white arrow) like in unc-104 single mutants, suggesting that further removal of SNT-1 in unc-104 mutant animals does not alter the dependence of SVs on UNC-104 for intracellular trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the double mutant analysis data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "cc434bcc-0e20-4366-949e-0bf7ce6884dc",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C46",
+      "claim": "GFP::RAB-3 is still diffuse in cell bodies and axons in both snt-1 and snt-1 unc-104 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2H,J, GFP::RAB-3 is still diffuse in cell bodies and axons in both snt-1 and snt-1 unc-104 animals, and GFP signal could be detected even in the non-synaptic dorsal cord region (Figure 2H' and 2J').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 2H,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "806b2129-bb4c-4361-8eae-9f7678b6d667",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C47",
+      "claim": "In unc-104 animals, the RAB-3 puncta are retained within cell bodies, just like SNB-1 is in unc-104 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in unc-104 animals, the RAB-3 puncta are retained within cell bodies, just like SNB-1 is in unc-104 mutants (Figure 2I,I\u2033).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "06d6be72-4d96-46c4-9980-0fe8d9d940e0",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C48",
+      "claim": "The diffuse phenotype of RAB-3 is not caused by the dispersion of SV clusters, but rather by the specific dissociation of RAB-3 from SV membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly support the notion that the diffuse phenotype of RAB-3 is not caused by the dispersion of SV clusters, but rather by the specific dissociation of RAB-3 from SV membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential effects on RAB-3 and SNB-1 in various mutant backgrounds.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "778284e9-0730-4744-bb15-de95f69c3da3",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C49",
+      "claim": "The localization of RAB-3 on SV membranes is tightly associated with its GTP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that the localization of RAB-3 on SV membranes is tightly associated with its GTP-bound state (Zerial and McBride, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "5f8046bc-5a98-4efe-858d-1876b5dedc91",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C50",
+      "claim": "The active GTP-Rab3 binds to the RBD domain of its effector RIM, while the inactive GDP-Rab3 does not.",
+      "claim_type": "EXPLICIT",
+      "source": "The active GTP-Rab3 binds to the RBD domain of its effector RIM, while the inactive GDP-Rab3 does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of Rab3-RIM interaction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "af2e89f5-3636-40ed-b8ad-ac0e1f124ab9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C51",
+      "claim": "The RBD domain of mammalian RIM2 could bind to the worm GTP-RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports demonstrated that the RBD domain of mammalian RIM2 could bind to the worm GTP-RAB-3 (Wang et al., 1997; Mahoney et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "6975e40c-0996-4306-a3d4-8f2d1ebeabf7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C52",
+      "claim": "In wild-type worm lysates, the active GTP-bound form of RAB-3 protein was efficiently pulled down by GST-RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type worm lysates, the active GTP-bound form of RAB-3 protein was efficiently pulled down by GST-RBD (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pull-down assay data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8843e93e-0fc8-43af-9a20-25ef695a1fe4",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C53",
+      "claim": "The amount of GTP-RAB-3 pulled down by RIM2 RBD was significantly reduced in snt-1 lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the amount of GTP-RAB-3 pulled down by RIM2 RBD was significantly reduced in snt-1 lysates (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pull-down assay data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "82f5fca7-c264-4f20-bc81-2e89c74baa05",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C54",
+      "claim": "In the absence of RAB-3 GEF, the GDP-bound RAB-3 cannot be converted to the GTP-bound RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of RAB-3 GEF, the GDP-bound RAB-3 cannot be converted to the GTP-bound RAB-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of GEF function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "dcd68746-cec2-48ca-8794-096f8b9ea772",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C55",
+      "claim": "In aex-3 animals, the amount of RAB-3 that can be pulled down by GST-RBD is greatly decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in aex-3 animals, the amount of RAB-3 that can be pulled down by GST-RBD is also greatly decreased (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pull-down assay data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "53aca193-0642-4a4e-bf14-96e26431153b",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C56",
+      "claim": "snt-1, similar to aex-3, affects the level of GTP-bound RAB-3 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus snt-1, similar to aex-3, affects the level of GTP-bound RAB-3 in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the pull-down assay results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "10601390-a12d-4e2e-b8f4-5bf36a5e66d7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C57",
+      "claim": "GTP-RAB-3 is associated with SV membranes, while GDP-RAB-3 is diffused in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "GTP-RAB-3 is associated with SV membranes, while GDP-RAB-3 is diffused in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of Rab3 cycling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "3739d9b7-379b-44bb-bc1d-bc86b446fd40",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C58",
+      "claim": "In wild type, RAB-3 is highly enriched in membrane fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type, RAB-3 is highly enriched in membrane fractions (Figure 3C), which is consistent with the SV localization of GTP-RAB-3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell fractionation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "150af912-92b2-4b6a-8f10-da1548b26068",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C59",
+      "claim": "The RAB-3 protein distribution is shifted to the soluble fraction when snt-1 is removed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the RAB-3 protein distribution is shifted to the soluble fraction when snt-1 is removed, suggesting a cytosolic localization of RAB-3 in snt-1 mutants (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell fractionation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "facc3155-734b-411a-87e3-8495e62a92af",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C60",
+      "claim": "snt-1 promotes the GTP-bound form of RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that snt-1 indeed promotes the GTP-bound form of RAB-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the fractionation and pull-down assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "dbcda82b-6e94-4985-9e53-6a783f53d39b",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C61",
+      "claim": "AEX-3 is the GEF molecule for both RAB-3 and RAB-27.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, AEX-3 is the GEF molecule for both RAB-3 and RAB-27 (Mahoney et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "5fce4c3c-471f-47c8-9678-a98e534aa893",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C62",
+      "claim": "GFP::RAB-27 is enriched in synaptic regions and displays a punctate expression pattern similar to RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFP::RAB-27 protein is enriched in synaptic regions and displays a punctate expression pattern similar to RAB-3 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c83d379b-41bc-48cf-a778-a833a85efdf7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C63",
+      "claim": "In aex-3 mutants, GFP::RAB-27 becomes diffuse.",
+      "claim_type": "EXPLICIT",
+      "source": "In aex-3 mutants, GFP::RAB-27 becomes diffuse, consistent with the role of AEX-3 as a GEF for RAB-27 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "d8f20e84-ba27-40e7-958d-dd420247b679",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C64",
+      "claim": "GFP::RAB-27 still displays a punctate distribution indistinguishable from wild type in snt-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GFP::RAB-27 still displays a punctate distribution indistinguishable from wild type in snt-1 mutants (Figure 3D), suggesting that the GEF activity of AEX-3, at least for RAB-27, is not altered by mutation of snt-1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c83a2a3d-b30f-4593-a6cc-601319651d9d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C65",
+      "claim": "The GEF activity of AEX-3, at least for RAB-27, is not altered by mutation of snt-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GFP::RAB-27 still displays a punctate distribution indistinguishable from wild type in snt-1 mutants (Figure 3D), suggesting that the GEF activity of AEX-3, at least for RAB-27, is not altered by mutation of snt-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the RAB-27 localization data in snt-1 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "23deb90b-79ac-4816-b542-e55002d22012",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C66",
+      "claim": "Increasing the aex-3 expression level does not rescue the diffuse RAB-3 phenotype in snt-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no such rescue was observed (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ef48a247-b8ee-49fa-993a-ad99998678c7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C67",
+      "claim": "The expression level of AEX-3 is indistinguishable in wild-type and snt-1 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we examined the expression level of AEX-3 and found that it was indistinguishable in wild-type and snt-1 animals (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c8b89cff-ab8c-41a6-922e-f1260d3440b7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C68",
+      "claim": "It is unlikely that snt-1 regulates the GTP-RAB-3 level by promoting RAB-3 GEF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that it is unlikely that snt-1 regulates the GTP-RAB-3 level by promoting RAB-3 GEF activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple lines of experimental evidence.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "758e13d3-a242-4b42-b2e2-d9bc29418173",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C69",
+      "claim": "Rab3 GTPase activity is greatly facilitated by Rab3-specific GTPase-activating protein (GAP).",
+      "claim_type": "EXPLICIT",
+      "source": "Rab3 GTPase activity is greatly facilitated by Rab3-specific GTPase-activating protein (GAP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of GAP function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "27870236-77d8-45fb-9f79-0c6034dcdfbe",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C71",
+      "claim": "rbg-1 and rbg-2 encode Rab3GAP1 and Rab3GAP2, respectively in worms.",
+      "claim_type": "EXPLICIT",
+      "source": "rbg-1 and rbg-2 encode Rab3GAP1 and Rab3GAP2, respectively in worms (Figure 4\u2014figure supplement 1A,B) (Fukui et al., 1997; Nagano et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior literature and illustrated in Figure 4\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "e88fc123-80ee-42cf-9c9b-0b985dd78bb0",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C72",
+      "claim": "In the absence of Rab3 GAP, the RAB-3 synaptic enrichment is enhanced.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Rab3 GAP, the RAB-3 synaptic enrichment is enhanced, which is consistent with the role of Rab3 GAP in assisting GTP hydrolysis (Figure 4\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 4\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "f6a0ba56-ea80-4bc6-8b4d-c879e6ac62e7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C73",
+      "claim": "In rbg-1;snt-1 double mutants, the diffuse GFP::RAB-3 phenotype of snt-1 single mutants is significantly suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in rbg-1;snt-1 double mutants, we found that the diffuse GFP::RAB-3 phenotype of snt-1 single mutants is significantly suppressed (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "2b5e75b0-46e8-4961-ae91-cdd695577ceb",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C74",
+      "claim": "Mutation of the rbg-2 gene also suppressed the diffuse RAB-3 phenotype in snt-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutation of the rbg-2 gene also suppressed the diffuse RAB-3 phenotype in snt-1 mutants (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "51ae0ca2-960c-4564-8074-2f8aae964f1a",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C75",
+      "claim": "The diffuse GFP::RAB-3 signal caused by aex-3 mutation could not be suppressed by rbg-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the diffuse GFP::RAB-3 signal caused by aex-3 mutation could not be suppressed by rbg-1 (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "708c7ac1-0a43-42ba-9f53-1bdb5dc0d3a9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C76",
+      "claim": "The amount of GTP-bound RAB-3 is significantly increased in rbg-1;snt-1 samples compared to snt-1 lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the greatly reduced GTP-RAB-3 level in snt-1 lysates, the amount of GTP-bound RAB-3 is significantly increased in rbg-1;snt-1 samples (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pull-down assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "fe6fa4f6-9926-4964-b93f-7ce6c292c9ae",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C77",
+      "claim": "snt-1 regulates the RAB-3/SV association specifically by inhibiting RAB-3 GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that snt-1 indeed regulate the RAB-3/SV association specifically by inhibiting RAB-3 GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the genetic suppression and biochemical data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "b1eb4349-50da-4f06-bda7-46f81be075d8",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C78",
+      "claim": "mCherry::RBG-1 signal displayed a punctate expression pattern along the ventral and dorsal cords in wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type animals, the mCherry::RBG-1 signal displayed a punctate expression pattern along the ventral and dorsal cords.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8498d5ad-edb1-4abc-b00d-e41fe2543a4d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C79",
+      "claim": "The mCherry::RBG-1 puncta co-localized with the SV marker SNB-1::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Double staining further showed that the mCherry::RBG-1 puncta co-localized with the SV marker SNB-1::GFP (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-localization microscopy data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a9e30360-939a-4537-a4bb-a7200bf49a05",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C80",
+      "claim": "In unc-104 mutants, the mCherry::RBG-1 puncta no longer appeared in the putative synaptic region; instead they were retained in the cell bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in unc-104 mutants, the mCherry::RBG-1 puncta no longer appeared in the putative synaptic region; instead they were retained in the cell bodies (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "cb881730-7e6e-4132-b2c0-1fe5e03100ea",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C81",
+      "claim": "RBG-1 is localized on SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the data above suggest that RBG-1 is localized on SVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the co-localization and unc-104 mutant data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "83c01c59-65b1-4d3d-b59a-b2c724a94417",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C82",
+      "claim": "In snt-1 animals, the RBG-1/SV co-localization is lost and mCherry::RBG-1 fluorescence becomes diffuse.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined RBG-1 distribution in snt-1 animals and found that the RBG-1/SV co-localization is lost and mCherry::RBG-1 fluorescence becomes diffuse (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8e121dff-5bb1-4ad7-9b24-42a1ba6bd800",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C83",
+      "claim": "SNT-1 is required for the SV localization of RBG-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, SNT-1 is required for the SV localization of RBG-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the RBG-1 localization data in snt-1 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "e86849e4-1b4c-486b-a939-ba3e757a8e75",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C84",
+      "claim": "RBG-1 binds to its substrate RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "RBG-1 binds to its substrate RAB-3 (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 4\u2014figure supplement 1E (note: the text references 1E but the figure shows 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a66af2df-c636-4ad3-b75f-640ee241189d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C85",
+      "claim": "In rab-3(js49) mutants, mCherry::RBG-1 retains its punctate expression and still co-localizes with SNB-1::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In rab-3(js49) mutants, we found that mCherry::RBG-1 retains its punctate expression and still co-localizes with SNB-1::GFP (Figure 5E), suggesting that the SV localization of RBG-1 does not rely on RAB-3 protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "bac72be4-50c4-41b7-bc0a-83c507e1706c",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C86",
+      "claim": "The SV localization of RBG-1 does not rely on RAB-3 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In rab-3(js49) mutants, we found that mCherry::RBG-1 retains its punctate expression and still co-localizes with SNB-1::GFP (Figure 5E), suggesting that the SV localization of RBG-1 does not rely on RAB-3 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the RBG-1 localization data in rab-3 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8c6dd78c-c62d-45ac-beeb-c5d28276a7e2",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C87",
+      "claim": "RBG-1 protein was effectively co-precipitated with the cytosolic region of SNT-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the mock-transfected sample, RBG-1 was effectively co-precipitated with the cytosolic region of SNT-1 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "485c4fe4-8142-4a99-ae68-599277e0414a",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C88",
+      "claim": "The SNT-1 cytosolic portion was co-precipitated by RBG-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNT-1 cytosolic portion was also co-precipitated by RBG-1 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ee13f184-7491-4237-81c0-4bfbf0529bd9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C89",
+      "claim": "When the C2A domain was deleted, the remaining C2B motif retained the RBG-1 binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "When the C2A domain was deleted, the remaining C2B motif retained the RBG-1 binding activity (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "649669fa-6ec8-4749-b7fb-7409502bac5f",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C90",
+      "claim": "When C2B was removed, the C2A domain alone could not bind to RBG-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when C2B was removed, the C2A domain alone could not bind to RBG-1 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "007474bf-7ff7-4757-90fa-b794797b5615",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C91",
+      "claim": "The C2B domain is required for SNT-1 binding to RBG-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the C2B domain is required for SNT-1 binding to RBG-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the domain deletion experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "08a16c03-08af-4cd3-94b0-cf997b548156",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C92",
+      "claim": "SNT-1 without the C2B domain (deltaC2B) had no rescue effect on the GFP::RAB-3 mis-localization defect in snt-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison with full-length SNT-1, which fully rescues the GFP::RAB-3 mis-localization defect in snt-1 mutants, we found that SNT-1 without the C2B domain (deltaC2B) had no rescue effect (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "9388f12e-bc6a-4629-8ccf-29f998262825",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C93",
+      "claim": "When the C2A domain is removed (deltaC2A) from SNT-1, the remaining protein still possesses the rescue activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the C2A domain is removed (deltaC2A) from SNT-1, the remaining protein still possesses the rescue activity (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "cb4279a9-0079-45c2-8774-59c882e42927",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C94",
+      "claim": "The C2B domain is critical for SNT-1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the C2B domain is critical for SNT-1 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the domain deletion and rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "3cea9c5e-c182-4d57-a1fa-9d974230fddd",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C95",
+      "claim": "SNT-1 lacking the trans-membrane domain (deltaTM) failed to rescue the diffuse RAB-3 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "SNT-1 lacking the trans-membrane domain (deltaTM) also failed to rescue the diffuse RAB-3 phenotype (Figure 6D), suggesting that the SV localization function of SNT-1 is required in addition to the C2B domain for regulating RAB-3/SV association in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a967a08b-9638-4d79-b4de-d0ed62df67fa",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C96",
+      "claim": "The SV localization function of SNT-1 is required in addition to the C2B domain for regulating RAB-3/SV association in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "SNT-1 lacking the trans-membrane domain (deltaTM) also failed to rescue the diffuse RAB-3 phenotype (Figure 6D), suggesting that the SV localization function of SNT-1 is required in addition to the C2B domain for regulating RAB-3/SV association in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the deltaTM rescue experiment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "49f29928-38e2-4c62-b966-f2915ca86dd0",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C97",
+      "claim": "Ca2+-mediated exocytosis activates the dissociation of Rab3 from the SV membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+-mediated exocytosis activates the dissociation of Rab3 from the SV membrane (Fischer von Mollard et al., 1991; Fischer von Mollard et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "8a32421f-dee5-447a-a328-a761e8829fcc",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C98",
+      "claim": "A Ca2+ concentration of 0.5 mM or 1 mM significantly compromised the RBG-1/SNT-1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "A Ca2+ concentration of 0.5 mM or 1 mM significantly compromised the RBG-1/SNT-1interaction (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data with Ca2+ treatment shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c7b0d6f2-3824-4eef-ab43-380777956717",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C99",
+      "claim": "Upon Ca2+ binding, SNT-1 releases RBG-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, upon Ca2+ binding, SNT-1 releases RBG-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the Ca2+-dependent disruption of binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a4a4e5b9-07c8-4e66-8590-1270e3fbcfc1",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C100",
+      "claim": "The RBG-1-binding capability of C2A*B* was high in the absence or presence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the RBG-1-binding capability of C2A*B* was high in the absence or presence of Ca2+ (Figure 7C,D), suggesting that the Ca2+-binding activity of SNT-1 is essential for attenuation of the SNT-1/RBG-1 interaction when Ca2+ is present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data with Ca2+-binding mutants shown in Figure 7C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "0172559c-2bbf-4222-bdc4-f2524075e2f7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C101",
+      "claim": "The Ca2+-binding activity of SNT-1 is essential for attenuation of the SNT-1/RBG-1 interaction when Ca2+ is present.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the RBG-1-binding capability of C2A*B* was high in the absence or presence of Ca2+ (Figure 7C,D), suggesting that the Ca2+-binding activity of SNT-1 is essential for attenuation of the SNT-1/RBG-1 interaction when Ca2+ is present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the Ca2+-binding mutant experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "10212e9f-61fb-4222-990e-9951a6a72ae3",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C102",
+      "claim": "The GFP::RAB-3 puncta were enlarged and the GFP signal was more enriched in the punctate regions in animals expressing C2A* compared to wild-type animals over-expressing snt-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this rescue phenomenon, we noticed that the GFP::RAB-3 puncta were enlarged and the GFP signal was more enriched in the punctate regions in comparison to wild-type animals over-expressing snt-1 (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 7E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a71077df-1d84-46f3-8b23-603a00641ba8",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C103",
+      "claim": "A similar GFP::RAB-3 enrichment effect was observed in worms expressing the C2B* mutant form of SNT-1.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar GFP::RAB-3 enrichment effect was observed in worms expressing the C2B* mutant form of SNT-1, which contains a C2B domain that cannot bind Ca2+ (D383 and D385 were replaced with alanines) (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 7E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "21d643bd-7a83-4d76-a15b-273bafa21e47",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C104",
+      "claim": "When the C2A*B* construct was expressed, the GFP::RAB-3 signal was also increased in the punctate regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We further replaced the Ca2+-binding sites in both C2A and C2B (C2A*B*). When this construct was expressed, the GFP::RAB-3 signal was also increased in the punctate regions (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 7E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c0b5faf5-c12b-40b5-8c9a-9eeee2697ce7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C105",
+      "claim": "RAB3 dissociation from SV membranes is inhibited when SV exocytosis is disrupted by blocking either Ca2+ influx or membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggest that RAB3 dissociation from SV membranes is inhibited when SV exocytosis is disrupted by blocking either Ca2+ influx or membrane fusion (Fischer von Mollard et al., 1991; Fischer von Mollard et al., 1994; Stahl et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "064984aa-6f1b-4298-999f-5a118db43826",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C106",
+      "claim": "unc-2 encodes the alpha subunit of the voltage-gated Ca2+ channel.",
+      "claim_type": "EXPLICIT",
+      "source": "unc-2 encodes the alpha subunit of the voltage-gated Ca2+ channel (Schafer and Kenyon, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c26dcf44-193c-4382-8e02-6d71014ffe8c",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C107",
+      "claim": "In unc-2 mutants, the GFP signal is significantly enriched within the punctate regions and the GFP::RAB-3 puncta are larger and brighter compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-2 mutants, we found that the GFP signal is significantly enriched within the punctate regions and the GFP::RAB-3 puncta are larger and brighter compared to wild type (Figure 7\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 7\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "afc968ba-1d83-4e4c-a046-f86d548a03df",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C108",
+      "claim": "unc-13 encodes the Munc13 homolog in worms and loss of function of unc-13 results in blockage of membrane fusion during SV exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "unc-13 encodes the Munc13 homolog in worms and loss of function of unc-13 results in blockage of membrane fusion during SV exocytosis (Aravamudan et al., 1999; Richmond et al., 1999; Varoqueaux et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ea08fa7b-ad87-459c-83c4-b01cecbe973b",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C109",
+      "claim": "The GFP signal was enhanced in the punctate regions in unc-13 mutants, as in unc-2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the GFP signal was enhanced in the punctate regions in unc-13 mutants, as in unc-2 mutants (Figure 7\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 7\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "4f96c59e-06f6-4dcf-92bb-226106d682d8",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C110",
+      "claim": "The enlarged GFP::RAB-3 puncta indicate the decreased dissociation of RAB-3 protein from SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking SV exocytosis resulted in failure of RAB-3 to dissociate from SVs; thus the enlarged GFP::RAB-3 puncta indeed indicate the decreased dissociation of RAB-3 protein from SVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the exocytosis mutant data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "43ab0745-f057-4386-99bf-00cd800bd090",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C111",
+      "claim": "The Ca2+-binding capability is essential for SNT-1 function in mediating the RAB-3 SV dissociation induced by Ca2+-triggered exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data above indicate that the Ca2+-binding capability is essential for SNT-1 function in mediating the RAB-3 SV dissociation induced by Ca2+-triggered exocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the Ca2+-binding mutant and exocytosis mutant data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ea2491ca-cd4f-4a33-b9c8-6321cbf326b4",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C112",
+      "claim": "In unc-13;snt-1 or unc-2;snt-1 double mutants, the RAB-3::GFP signal is diffuse throughout whole neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in unc-13;snt-1 or unc-2;snt-1 double mutants, the RAB-3::GFP signal is diffuse throughout whole neuronal cells (Figure 7\u2014figure supplement 1A,B), as seen in snt-1 single mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 7\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "4bf2a3ca-4bb7-47f1-9320-581e9dcfb41d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C113",
+      "claim": "In the absence of SNT-1, the dissociation of RAB-3 from SVs can occur even when Ca2+-induced exocytosis is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the diffuse RAB-3::GFP signal suggests a dissociation of RAB-3 from SV membranes, the above observation implies that in the absence of SNT-1, the dissociation of RAB-3 from SVs can occur even when Ca2+-induced exocytosis is blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the double mutant analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "e39af08f-145c-44cd-a429-2da9ad4dc8e9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C114",
+      "claim": "The coupling between SV exocytosis and RAB-3 dissociation is disrupted when SNT-1 is missing.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the coupling between SV exocytosis and RAB-3 dissociation is disrupted when SNT-1 is missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the double mutant analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "902919dd-e358-4e45-bf78-d9fed48c8837",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C115",
+      "claim": "SNT-1 plays a dual role in the RAB-3/SV cycle, inhibiting dissociation of RAB-3 from SVs during the resting state (no Ca2+ influx) and triggering dissociation of RAB-3 from SVs upon Ca2+ binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that SNT-1 plays a dual role in the RAB-3/SV cycle, inhibiting dissociation of RAB-3 from SVs during the resting state (no Ca2+ influx) and triggering dissociation of RAB-3 from SVs upon Ca2+ binding (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from all the experimental data and illustrated in Figure 7G.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "d03a4981-261f-41e2-a5e8-f6c7c5f2a46b",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C116",
+      "claim": "Synaptotagmin 1 is known to bind the membrane and the SNARE complex to give the final push for complete assembly of the SNARE complex for membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "As the trigger of regulated vesicle secretion, synaptotagmin 1 is known to bind the membrane and the SNARE complex to give the final push for complete assembly of the SNARE complex for membrane fusion (Davletov and S\u00fcdhof, 1993; Chapman and Davis, 1998; Dai et al., 2007; Choi et al., 2010; Vrljic et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "29cb8f64-17c9-4320-b922-0577272c6bc7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C117",
+      "claim": "In the resting state, Rab3 protein is associated with SVs in the GTP-bound form, and Rab3 GTP, together with its corresponding effectors, docks the vesicles at the active zone region.",
+      "claim_type": "EXPLICIT",
+      "source": "In the resting state, Rab3 protein is associated with SVs in the GTP-bound form, and Rab3 GTP, together with its corresponding effectors, docks the vesicles at the active zone region (Sudhof, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ce6b35ed-e064-4a80-9133-42a9129738eb",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C118",
+      "claim": "Rab3 GAP is enriched in the synaptic fraction and is localized on SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Rab3 GAP, the negative regulator of Rab3, is also enriched in the synaptic fraction and is localized on SVs (this study) (Oishi et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from this study and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "f6c28670-3356-40fe-ad6a-b69ec096680a",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C119",
+      "claim": "Synaptotagmin 1 prevents the hydrolysis of Rab3 GTP by directly sequestering or inhibiting Rab3 GAP before Ca2+ influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Based upon our study, it is entirely possible that synaptotagmin 1 prevents the hydrolysis of Rab3 GTP by directly sequestering or inhibiting Rab3 GAP before Ca2+ influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "f5bcea0b-ea4e-4a4c-9207-2f6ba350dfaa",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C120",
+      "claim": "The concentration of Ca2+ needed for exocytosis ranges from \u223c10 to 200 \u00b5M in the nerve terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of Ca2+ needed for exocytosis ranges from \u223c10 to 200 \u00b5M in the nerve terminals, so the Ca2+ concentration that is required to release RBG-1 from SNT-1 is relatively high (500 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of Ca2+ concentrations in synaptic transmission.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "7312c9a2-93b7-4331-af1c-73cff749e1c9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C121",
+      "claim": "The rather low affinity of synaptotagmin 1 for Ca2+ can be strongly affected by the presence of synaptotagmin-binding partners, especially membrane lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is known that the rather low affinity of synaptotagmin 1 for Ca2+ (Ubach et al., 1998; Fernandez et al., 2001) can be strongly affected by the presence of synaptotagmin-binding partners, especially membrane lipids (Chapman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "87343333-056a-4d8d-b6fc-4c9e84fe7e2e",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C122",
+      "claim": "Synaptotagmin 1 binds the plasma membrane and the SNARE complex in the presence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, synaptotagmin 1 is known to bind the plasma membrane and the SNARE complex in the presence of Ca2+ (Davletov and S\u00fcdhof, 1993; Chapman and Davis, 1998; Fernandez et al., 2001; Dai et al., 2007; Choi et al., 2010; Vrljic et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "83ec1268-00ee-4bf0-a7c7-8d7b08229b7a",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C123",
+      "claim": "The interaction of synaptotagmin with membranes and SNARE proteins creates local positive membrane curvature and displaces the clamping factor complexin from the SNARE complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction of synaptotagmin with membranes and SNARE proteins has well-documented consequences, including creating local positive membrane curvature and displacing the clamping factor complexin from the SNARE complex (Martens et al., 2007; Hui et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "9fa24143-9090-4abc-898a-b237ef9b0cb8",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C124",
+      "claim": "Synaptotagmin-Ca2+ may play a role in terminating vesicle docking by indirectly deactivating Rab3, thus facilitating repetitive transmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining these previous reports with data presented in this study, we think that synaptotagmin-Ca2+ may not only give the final push for complete assembly of the SNARE complex for membrane fusion, but also play a role in terminating vesicle docking by indirectly deactivating Rab3, thus facilitating repetitive transmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, integrating prior knowledge with the current findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "339ae8b5-84f3-4799-8e69-e3fd0a152393",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C125",
+      "claim": "Rab3 and Rab27 seem to be specifically involved in stimulated secretion in a variety of secretory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among more than 60 Rabs in humans and mice, Rab3 and Rab27 seem to be specifically involved in stimulated secretion in a variety of secretory cells (Fukuda, 2008, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "d435d6fd-da9d-4c74-93d3-310a141830c2",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C126",
+      "claim": "The regulatory role of SNT-1 on RAB-3 does not extend to RAB-27.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the regulatory role of SNT-1 on RAB-3 does not extend to RAB-27, which is functionally closely related to RAB-3 (Mahoney et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "e53eca0c-64c3-446f-b96e-db845bff40d1",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C127",
+      "claim": "Simultaneous knockdown of Rab3 and Rab27 causes secretion defects more severe than single knockdown in worms and PC12 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous knockdown of Rab3 and Rab27 causes secretion defects more severe than single knockdown in worms and PC12 cells (Mahoney et al., 2006; Tsuboi and Fukuda, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "d4f9575d-f82e-4139-b85d-126626fc16e9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C128",
+      "claim": "Both Rab27 and Rab3 are localized on SVs and can bind to RIM, thereby docking the vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Rab27 and Rab3 are localized on SVs and can bind to RIM, thereby docking the vesicles (Wang et al., 1997; Fukuda, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "242c12e0-8434-4908-8323-5a08bc3e8db7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C129",
+      "claim": "Rab3 and Rab27 share the same GEF, which is AEX-3 in worms and DENN/MADD in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab3 and Rab27 share the same GEF, which is AEX-3 in worms and DENN/MADD in mammals (Levivier et al., 2001; Coppola et al., 2002; Mahoney et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "f58ea86b-987e-43a8-aba4-0a119db7559a",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C130",
+      "claim": "Rab3 GAP serves as a specific GAP for Rab3.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Rab3 GAP serves as a specific GAP for Rab3 (Fukui et al., 1997; Nagano et al., 1998; Itoh and Fukuda, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "67495b37-54f1-4a56-bb5e-c4964f9c07d7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C131",
+      "claim": "Although Rab3 and Rab27 play redundant roles in SV exocytosis, they can be differentially controlled through their specific regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, although Rab3 and Rab27 play redundant roles in SV exocytosis, they can be differentially controlled through their specific regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential regulation of Rab3 and Rab27 by SNT-1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "66e88cd7-947c-42ec-b891-d396f02d2ae2",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C132",
+      "claim": "Rab3GAP1 and Rab3GAP2 form a complex in vitro and co-immunoprecipitate in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab3GAP1 and Rab3GAP2 form a complex in vitro and co-immunoprecipitate in vivo (Nagano et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "16b58279-b9a6-4fea-bc4f-5332b4c69bef",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C133",
+      "claim": "Rab3GAP2 may act to stabilize, regulate, or localize Rab3GAP1 correctly in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Rab3GAP2 does not affect the in vitro GAP activity of Rab GAP1, it may act to stabilize, regulate, or localize Rab3GAP1 correctly in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the known properties of Rab3GAP2.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "bc3951a7-690f-4a91-870a-264d7931dee8",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C134",
+      "claim": "Loss-of-function mutations in Rab3GAP1 and Rab3GAP2 produce clinically almost indistinguishable conditions, Warburg Micro syndrome and Martsolf syndrome, characterized by brain, eye, and endocrine abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in Rab3GAP1 and Rab3GAP2 produce clinically almost indistinguishable conditions, Warburg Micro syndrome and Martsolf syndrome, characterized by brain, eye, and endocrine abnormalities (Aligianis et al., 2005, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a09d3ee9-2a80-4f75-907c-3bec895085c5",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C135",
+      "claim": "Both Rab3GAP1/rbg-1 and Rab3GAP1/rbg-2 mutations can suppress the RAB-3 mis-localization phenotype in snt-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We have now revealed that both Rab3GAP1/rbg-1 and Rab3GAP1/rbg-2 mutations can suppress the RAB-3 mis-localization phenotype in snt-1 mutants, implying that Rab3GAP does indeed function as a complex to participate in the SNT-1-mediated regulation of the RAB-3 cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genetic suppression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "49bb6289-8227-4c8b-9112-3712958437e2",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C136",
+      "claim": "Rab3GAP functions as a complex to participate in the SNT-1-mediated regulation of the RAB-3 cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We have now revealed that both Rab3GAP1/rbg-1 and Rab3GAP1/rbg-2 mutations can suppress the RAB-3 mis-localization phenotype in snt-1 mutants, implying that Rab3GAP does indeed function as a complex to participate in the SNT-1-mediated regulation of the RAB-3 cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the genetic suppression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "7ee1fae7-ceee-400b-8cc8-2d79df283cb9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C137",
+      "claim": "Loss of function of rbg-2 alone leads to additional synaptic or axonal defects compared to loss of rab-3 or rbg-1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noticed that loss of function of rbg-2 alone leads to additional synaptic or axonal defects (data not shown) compared to loss of rab-3 or rbg-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "6c6f3d99-3f52-46f6-b78a-1b21f6df6763",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C138",
+      "claim": "RBG-2 may play roles in nervous system development other than forming the Rab3GAP complex with RBG-1 during SV exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that RBG-2 may play roles in nervous system development other than forming the Rab3GAP complex with RBG-1 during SV exocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the additional defects observed in rbg-2 mutants.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a5d5f73e-09e9-4543-97ce-66c896982a00",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C139",
+      "claim": "In the amoeba Dictyostelium discoideum, vacuolar Ca2+ release activates the Rab GAP CnrF, thus subsequently down-regulating Rab11a.",
+      "claim_type": "EXPLICIT",
+      "source": "In the amoeba Dictyostelium discoideum, vacuolar Ca2+ release activates the Rab GAP CnrF, thus subsequently down-regulating Rab11a (Donato et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ca5a3c5a-f619-4fab-9974-ff4845ceacd1",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C140",
+      "claim": "Ca2+ plays a vital role as the functional switch for regulated secretion processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, current data suggest a vital role of Ca2+ as the functional switch for regulated secretion processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the current study and prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c3fb3e51-0cb5-460c-9643-47a6e5d41798",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C141",
+      "claim": "The mechanism uncovered in this study is likely to represent a conserved mode of action.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the key principles and regulatory components of different intracellular vesicle trafficking events are broadly conserved, the mechanism that we have uncovered is likely to represent a conserved mode of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the conservation of vesicle trafficking mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "2b0ab04d-6c32-4596-bca7-321eb214b3c7",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "claim_id": "C142",
+      "claim": "Synaptotagmins act as the primary Ca2+-sensors in most forms of Ca2+-induced exocytosis, as exemplified by synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptotagmins act as the primary Ca2+-sensors in most forms of Ca2+-induced exocytosis, as exemplified by synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of synaptotagmin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SNT-1 (synaptotagmin 1) is essential for the localization of RAB-3 on synaptic vesicles in C. elegans. Multiple snt-1 mutant alleles show diffuse GFP::RAB-3 distribution throughout neuronal processes instead of the punctate pattern seen in wild-type animals. This effect is pan-neuronal and can be rescued by wild-type snt-1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C29-C36 collectively demonstrate that SNT-1 is required for RAB-3 localization on SVs through multiple independent alleles (C31), pan-neuronal expression analysis (C33), and genetic rescue experiments (C35). The microscopy data in Figures 1A-B and Figure 1\u2014figure supplement 1 provide strong visual and quantitative evidence supporting this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The diffuse RAB-3 phenotype in snt-1 mutants is caused by specific dissociation of RAB-3 from SV membranes rather than disruption of SV clustering. SNB-1 (synaptobrevin) maintains punctate localization in snt-1 mutants, and double mutant analysis with unc-104 shows differential effects on RAB-3 versus SNB-1 distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C48 provide compelling evidence through comparison of RAB-3 and SNB-1 localization patterns in various genetic backgrounds. The unc-104 double mutant analysis (C43-C47) is particularly informative, showing that RAB-3 remains diffuse in snt-1;unc-104 while SNB-1 accumulates in cell bodies. This differential behavior strongly supports the conclusion in C48 that RAB-3 dissociates from SVs rather than SVs being dispersed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "d19be51a-8049-42a1-9558-94e4b5c27bdd",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SNT-1 promotes the GTP-bound form of RAB-3. Pull-down assays using the RBD domain of RIM2 show significantly reduced GTP-RAB-3 levels in snt-1 mutants compared to wild-type. Cell fractionation experiments confirm that RAB-3 shifts from membrane to cytosolic fractions in snt-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C60 are well-supported by biochemical data. The GST-RBD pull-down assays (C52-C53, Figure 3A-B) provide direct measurement of GTP-RAB-3 levels, while cell fractionation (C58-C59, Figure 3C) confirms the membrane-to-cytosol shift. The comparison with aex-3 mutants (C55) provides an appropriate control showing similar effects when GEF activity is lost.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "4c402343-901c-4738-8784-1f60ed39d870",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SNT-1 does not regulate GTP-RAB-3 levels by promoting GEF activity. RAB-27 localization is unaffected in snt-1 mutants despite sharing the same GEF (AEX-3) as RAB-3. Overexpression of AEX-3 does not rescue the snt-1 phenotype, and AEX-3 expression levels are unchanged in snt-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C68 provide multiple lines of evidence ruling out GEF regulation. The RAB-27 control experiment (C62-C65, Figure 3D) is particularly strong, showing specificity for RAB-3. The overexpression (C66) and expression level (C67) experiments provide additional negative evidence. Together, these claims effectively eliminate the GEF hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "1df12be6-bd4b-4110-9805-539772423238",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SNT-1 regulates RAB-3/SV association by inhibiting RAB-3 GAP activity. Mutations in rbg-1 and rbg-2 (encoding Rab3GAP1 and Rab3GAP2) suppress the diffuse RAB-3 phenotype in snt-1 mutants and restore GTP-RAB-3 levels. This suppression is specific to snt-1 and does not occur in aex-3 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 demonstrate genetic suppression of the snt-1 phenotype by GAP mutations. The microscopy data (C73-C74, Figure 4A-B) and biochemical pull-down assays (C76, Figure 4C) provide strong convergent evidence. The specificity control showing no suppression of aex-3 by rbg-1 (C75) strengthens the conclusion that SNT-1 acts through GAP inhibition rather than through GEF activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "d5ec9087-5c41-4820-a193-a27a60466ac1",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RBG-1 (Rab3GAP1) localizes on synaptic vesicles and this localization requires SNT-1 but not RAB-3. mCherry::RBG-1 shows punctate distribution that co-localizes with SNB-1::GFP in wild-type animals, accumulates in cell bodies in unc-104 mutants, becomes diffuse in snt-1 mutants, but remains punctate in rab-3 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C86 are well-supported by microscopy data in Figure 5. The co-localization with SNB-1 (C79), unc-104 dependence (C80), snt-1 dependence (C82), and rab-3 independence (C85) provide a comprehensive characterization of RBG-1 localization. The conclusion that RBG-1 localizes on SVs (C81) and requires SNT-1 (C83) but not RAB-3 (C86) is logically sound based on the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "b6da414b-d316-4c55-a281-a2a4cb715a07",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RBG-1 directly binds to the C2B domain of SNT-1, and both the C2B domain and transmembrane domain of SNT-1 are required for its function in regulating RAB-3/SV association. Co-immunoprecipitation experiments show binding between RBG-1 and SNT-1 cytosolic region, with C2B being necessary and sufficient for binding. Domain deletion rescue experiments confirm functional requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C96 provide strong biochemical and genetic evidence for direct SNT-1/RBG-1 interaction. The co-IP experiments (C87-C90, Figure 6A-C) demonstrate direct binding and map the interaction to C2B. The rescue experiments (C92-C93, Figure 6D) functionally validate the domain requirements. The requirement for both C2B and the transmembrane domain (C95-C96) is logically consistent with a model requiring both binding and localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "65782356-6879-4b71-b2ea-cc97ff441e3d",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ca2+ treatment disrupts the SNT-1/RBG-1 interaction in a manner dependent on the Ca2+-binding activity of SNT-1. Co-immunoprecipitation experiments show that 0.5-1 mM Ca2+ significantly reduces RBG-1/SNT-1 binding, and this effect is abolished when Ca2+-binding sites in both C2A and C2B domains are mutated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C101 are supported by biochemical data in Figure 7A-D. The dose-dependent reduction in binding with Ca2+ (C98) and the loss of Ca2+ sensitivity in the C2A*B* mutant (C100) provide strong evidence for Ca2+-dependent regulation. However, the Ca2+ concentration required (0.5-1 mM) is higher than physiological levels at synapses, which the authors acknowledge in C120-C121.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "798a983c-16e6-49b5-ab96-bfb71ee3134c",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Ca2+-binding capability of SNT-1 is essential for mediating RAB-3 dissociation from SVs during Ca2+-triggered exocytosis. Expression of Ca2+-binding mutants of SNT-1 (C2A*, C2B*, or C2A*B*) leads to enlarged GFP::RAB-3 puncta, similar to the phenotype observed in exocytosis mutants (unc-2, unc-13) where RAB-3 dissociation is blocked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C111 provide convergent evidence from Ca2+-binding mutants and exocytosis mutants. The enlarged RAB-3 puncta in Ca2+-binding mutants (C102-C104, Figure 7E-F) phenocopy the exocytosis mutants (C107, C109), supporting the interpretation that Ca2+-binding is required for RAB-3 dissociation (C110-C111). The logic connecting these observations is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "83ee788c-01bd-4915-91b0-f5cf704ada40",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SNT-1 couples vesicle exocytosis to RAB-3 dissociation. In unc-13;snt-1 or unc-2;snt-1 double mutants, RAB-3 dissociates from SVs even when exocytosis is blocked, demonstrating that without SNT-1, the tight coupling between exocytosis and RAB-3 dissociation is disrupted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C114 and C6 are supported by double mutant analysis in Figure 7\u2014figure supplement 1A-B. The observation that RAB-3 becomes diffuse in double mutants where exocytosis is blocked (C112) logically supports the conclusion that SNT-1 couples these processes (C113-C114, C6). This is a key result demonstrating the functional significance of SNT-1's dual role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "1a815ea2-be3d-41ba-aaae-0d15fc706e70",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SNT-1 plays a dual role in the RAB-3/SV cycle: inhibiting RAB-3 dissociation during the resting state (no Ca2+) by binding and inhibiting Rab3 GAP, and triggering RAB-3 dissociation upon Ca2+ binding by releasing Rab3 GAP. Rab3 GAP resides on synaptic vesicles, and SNT-1 is essential for its synaptic localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 and C115 represent the central conclusions of the manuscript, integrating all the major findings. These claims are well-supported by the collective evidence from localization studies (C3-C4), biochemical binding assays (C2, C5), genetic suppression experiments, and functional analyses. The model in Figure 7G illustrates this dual role. The evidence is comprehensive and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "99c75203-4df9-4c86-a972-d0cacd9ad5b1",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In C. elegans motor neurons, GFP::RAB-3 displays a punctate localization pattern similar to other SV proteins, representing the GTP-bound, membrane-associated form. In aex-3 (GEF) mutants, GFP::RAB-3 becomes diffuse, likely representing GDP-RAB-3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 establish the baseline characterization of RAB-3 localization and the interpretation framework. The punctate pattern (C22-C23) is well-documented in prior literature and confirmed here. The interpretation that punctate = GTP-bound and diffuse = GDP-bound (C27-C28) is reasonable based on established Rab biology (C24, C26) and the aex-3 phenotype (C25).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "4ac5265e-9f0f-430f-aaa8-4e5544e0fc2e",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SNB-1 is the C. elegans synaptobrevin homologue and displays punctate distribution along neuronal processes similar to RAB-3 in wild-type animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are straightforward characterizations supported by prior literature (C37) and microscopy data in Figure 2A. These serve as important controls for the specificity of the snt-1 effect on RAB-3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "4fbf9e99-4caf-4d44-be9a-02eebb442cb4",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that synaptotagmin 1 prevents Rab3 GTP hydrolysis by sequestering or inhibiting Rab3 GAP before Ca2+ influx, and that synaptotagmin-Ca2+ may terminate vesicle docking by deactivating Rab3. They acknowledge that the Ca2+ concentration required in vitro is higher than physiological levels but note that synaptotagmin's Ca2+ affinity can be modulated by binding partners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C119-C124 are largely speculative (C119, C124) or represent discussion of caveats (C120-C121). While the speculation is reasonable given the data, these claims go beyond what is directly demonstrated. The Ca2+ concentration issue (C120) is a legitimate concern that the authors address by invoking potential modulation by lipids (C121), but this remains untested in their system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "a41c73b7-fde2-4141-943f-9db14c530873",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The regulatory role of SNT-1 on RAB-3 does not extend to RAB-27, despite both Rabs being involved in stimulated secretion and sharing the same GEF. Rab3 and Rab27 can be differentially controlled through their specific regulators, with Rab3 GAP being specific for Rab3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C125-C131 are supported by the RAB-27 localization data (C126, Figure 3D) and prior literature on Rab3/Rab27 biology (C125, C127-C130). The conclusion about differential regulation (C131) is logical given the specificity of Rab3 GAP for Rab3 (C130) and the lack of effect of snt-1 on RAB-27 (C126).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "ec854491-e26b-4302-bbd0-39bd0fa7469a",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Rab3GAP functions as a complex of Rab3GAP1 and Rab3GAP2 to participate in SNT-1-mediated regulation of the RAB-3 cycle. Both rbg-1 and rbg-2 mutations suppress the snt-1 phenotype. However, rbg-2 may have additional roles in nervous system development beyond forming the Rab3GAP complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C132-C138 are supported by genetic suppression data (C135) and prior literature on Rab3GAP complex formation (C132, C134). The observation about additional rbg-2 functions (C137-C138) is noted but not fully characterized ('data not shown'), making this a more tentative conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "c303e8c5-41fb-4e80-aea1-90f2c3933cf3",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose that Ca2+ plays a vital role as a functional switch for regulated secretion processes and that the mechanism uncovered represents a conserved mode of action, as synaptotagmins act as primary Ca2+-sensors in most forms of Ca2+-induced exocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C139-C142 are largely speculative or represent broader contextual statements. C139 cites a parallel example from Dictyostelium, C140 is a general conclusion, and C141-C142 discuss potential conservation. While reasonable, these claims extend beyond what is directly demonstrated in the current study and would require additional experiments in other systems to fully validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    },
+    {
+      "id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f",
+      "content_id": "1f2b4305-4722-40c4-a479-8222551a2745",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about synaptic vesicle biology, including the roles of SNAREs, synaptotagmin, and Rab3 in neurotransmitter release, vesicle docking, and the GTP/GDP cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C16, C116-C118 are background information supported by extensive prior literature (multiple citations provided). These establish the context for the current study but do not represent new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:34:44.683628Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e8585998-2493-4012-bff6-229623aee288",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "6e077557-4151-4966-bde8-0b38d64e07a5",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "89fbc7eb-a16f-4cba-9a40-8a5adf1e740e",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "9d72a159-3458-4a0f-9706-c9e0e835616d",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "36892d14-4a37-4923-9b7f-99498e65e453",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "186a5619-2652-4e3b-8aaa-0daa6cbd9e54",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "ac5b2923-4b27-4591-8158-27adaedffe09",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "cc9daf03-0be0-45df-81ea-84464566d193",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "3794d0e1-818a-4e1e-a189-835cb4f11ff4",
+      "result_id": "a8b7d568-ac01-40e5-b0bd-e8816c16071c"
+    },
+    {
+      "claim_id": "d48e0a75-1574-41a3-be45-7b347b57261c",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "38cf77ef-9f06-4751-8844-cb584d4f3553",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "3fcbbc59-c3cd-4be3-8a7d-b5b6140b4874",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "5a12bc6f-0739-496f-94ac-d06d076f4bcf",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "4b3afc0e-e657-4c9e-a7a4-bcd21bc74001",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "65ad03fe-1fd5-4c82-9ce1-377bfbdb3800",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "f5e1f917-12fa-4400-b4da-7804d9761db9",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "1431ff80-4939-4e5a-ba28-34cb860f5a5a",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "cc434bcc-0e20-4366-949e-0bf7ce6884dc",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "806b2129-bb4c-4361-8eae-9f7678b6d667",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "06d6be72-4d96-46c4-9980-0fe8d9d940e0",
+      "result_id": "0115b22a-fe8a-484e-be03-8848ee4bf0c9"
+    },
+    {
+      "claim_id": "778284e9-0730-4744-bb15-de95f69c3da3",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "5f8046bc-5a98-4efe-858d-1876b5dedc91",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "af2e89f5-3636-40ed-b8ad-ac0e1f124ab9",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "6975e40c-0996-4306-a3d4-8f2d1ebeabf7",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "8843e93e-0fc8-43af-9a20-25ef695a1fe4",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "82f5fca7-c264-4f20-bc81-2e89c74baa05",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "dcd68746-cec2-48ca-8794-096f8b9ea772",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "53aca193-0642-4a4e-bf14-96e26431153b",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "10601390-a12d-4e2e-b8f4-5bf36a5e66d7",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "3739d9b7-379b-44bb-bc1d-bc86b446fd40",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "150af912-92b2-4b6a-8f10-da1548b26068",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "facc3155-734b-411a-87e3-8495e62a92af",
+      "result_id": "d19be51a-8049-42a1-9558-94e4b5c27bdd"
+    },
+    {
+      "claim_id": "dbcda82b-6e94-4985-9e53-6a783f53d39b",
+      "result_id": "4c402343-901c-4738-8784-1f60ed39d870"
+    },
+    {
+      "claim_id": "5fce4c3c-471f-47c8-9678-a98e534aa893",
+      "result_id": "4c402343-901c-4738-8784-1f60ed39d870"
+    },
+    {
+      "claim_id": "c83d379b-41bc-48cf-a778-a833a85efdf7",
+      "result_id": "4c402343-901c-4738-8784-1f60ed39d870"
+    },
+    {
+      "claim_id": "d8f20e84-ba27-40e7-958d-dd420247b679",
+      "result_id": "4c402343-901c-4738-8784-1f60ed39d870"
+    },
+    {
+      "claim_id": "c83a2a3d-b30f-4593-a6cc-601319651d9d",
+      "result_id": "4c402343-901c-4738-8784-1f60ed39d870"
+    },
+    {
+      "claim_id": "23deb90b-79ac-4816-b542-e55002d22012",
+      "result_id": "4c402343-901c-4738-8784-1f60ed39d870"
+    },
+    {
+      "claim_id": "ef48a247-b8ee-49fa-993a-ad99998678c7",
+      "result_id": "4c402343-901c-4738-8784-1f60ed39d870"
+    },
+    {
+      "claim_id": "c8b89cff-ab8c-41a6-922e-f1260d3440b7",
+      "result_id": "4c402343-901c-4738-8784-1f60ed39d870"
+    },
+    {
+      "claim_id": "758e13d3-a242-4b42-b2e2-d9bc29418173",
+      "result_id": "1df12be6-bd4b-4110-9805-539772423238"
+    },
+    {
+      "claim_id": "27870236-77d8-45fb-9f79-0c6034dcdfbe",
+      "result_id": "1df12be6-bd4b-4110-9805-539772423238"
+    },
+    {
+      "claim_id": "e88fc123-80ee-42cf-9c9b-0b985dd78bb0",
+      "result_id": "1df12be6-bd4b-4110-9805-539772423238"
+    },
+    {
+      "claim_id": "f6a0ba56-ea80-4bc6-8b4d-c879e6ac62e7",
+      "result_id": "1df12be6-bd4b-4110-9805-539772423238"
+    },
+    {
+      "claim_id": "2b5e75b0-46e8-4961-ae91-cdd695577ceb",
+      "result_id": "1df12be6-bd4b-4110-9805-539772423238"
+    },
+    {
+      "claim_id": "51ae0ca2-960c-4564-8074-2f8aae964f1a",
+      "result_id": "1df12be6-bd4b-4110-9805-539772423238"
+    },
+    {
+      "claim_id": "708c7ac1-0a43-42ba-9f53-1bdb5dc0d3a9",
+      "result_id": "1df12be6-bd4b-4110-9805-539772423238"
+    },
+    {
+      "claim_id": "fe6fa4f6-9926-4964-b93f-7ce6c292c9ae",
+      "result_id": "1df12be6-bd4b-4110-9805-539772423238"
+    },
+    {
+      "claim_id": "b1eb4349-50da-4f06-bda7-46f81be075d8",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "8498d5ad-edb1-4abc-b00d-e41fe2543a4d",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "a9e30360-939a-4537-a4bb-a7200bf49a05",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "cb881730-7e6e-4132-b2c0-1fe5e03100ea",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "83c01c59-65b1-4d3d-b59a-b2c724a94417",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "8e121dff-5bb1-4ad7-9b24-42a1ba6bd800",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "e86849e4-1b4c-486b-a939-ba3e757a8e75",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "a66af2df-c636-4ad3-b75f-640ee241189d",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "bac72be4-50c4-41b7-bc0a-83c507e1706c",
+      "result_id": "d5ec9087-5c41-4820-a193-a27a60466ac1"
+    },
+    {
+      "claim_id": "8c6dd78c-c62d-45ac-beeb-c5d28276a7e2",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "485c4fe4-8142-4a99-ae68-599277e0414a",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "ee13f184-7491-4237-81c0-4bfbf0529bd9",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "649669fa-6ec8-4749-b7fb-7409502bac5f",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "007474bf-7ff7-4757-90fa-b794797b5615",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "08a16c03-08af-4cd3-94b0-cf997b548156",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "9388f12e-bc6a-4629-8ccf-29f998262825",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "cb4279a9-0079-45c2-8774-59c882e42927",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "3cea9c5e-c182-4d57-a1fa-9d974230fddd",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "a967a08b-9638-4d79-b4de-d0ed62df67fa",
+      "result_id": "b6da414b-d316-4c55-a281-a2a4cb715a07"
+    },
+    {
+      "claim_id": "49f29928-38e2-4c62-b966-f2915ca86dd0",
+      "result_id": "65782356-6879-4b71-b2ea-cc97ff441e3d"
+    },
+    {
+      "claim_id": "8a32421f-dee5-447a-a328-a761e8829fcc",
+      "result_id": "65782356-6879-4b71-b2ea-cc97ff441e3d"
+    },
+    {
+      "claim_id": "c7b0d6f2-3824-4eef-ab43-380777956717",
+      "result_id": "65782356-6879-4b71-b2ea-cc97ff441e3d"
+    },
+    {
+      "claim_id": "a4a4e5b9-07c8-4e66-8590-1270e3fbcfc1",
+      "result_id": "65782356-6879-4b71-b2ea-cc97ff441e3d"
+    },
+    {
+      "claim_id": "0172559c-2bbf-4222-bdc4-f2524075e2f7",
+      "result_id": "65782356-6879-4b71-b2ea-cc97ff441e3d"
+    },
+    {
+      "claim_id": "10212e9f-61fb-4222-990e-9951a6a72ae3",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "a71077df-1d84-46f3-8b23-603a00641ba8",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "21d643bd-7a83-4d76-a15b-273bafa21e47",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "c0b5faf5-c12b-40b5-8c9a-9eeee2697ce7",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "064984aa-6f1b-4298-999f-5a118db43826",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "c26dcf44-193c-4382-8e02-6d71014ffe8c",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "afc968ba-1d83-4e4c-a046-f86d548a03df",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "ea08fa7b-ad87-459c-83c4-b01cecbe973b",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "4f96c59e-06f6-4dcf-92bb-226106d682d8",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "43ab0745-f057-4386-99bf-00cd800bd090",
+      "result_id": "798a983c-16e6-49b5-ab96-bfb71ee3134c"
+    },
+    {
+      "claim_id": "ea2491ca-cd4f-4a33-b9c8-6321cbf326b4",
+      "result_id": "83ee788c-01bd-4915-91b0-f5cf704ada40"
+    },
+    {
+      "claim_id": "4bf2a3ca-4bb7-47f1-9320-581e9dcfb41d",
+      "result_id": "83ee788c-01bd-4915-91b0-f5cf704ada40"
+    },
+    {
+      "claim_id": "e39af08f-145c-44cd-a429-2da9ad4dc8e9",
+      "result_id": "83ee788c-01bd-4915-91b0-f5cf704ada40"
+    },
+    {
+      "claim_id": "f11ddb22-2d6c-4124-a0db-8ba4bba8ad0b",
+      "result_id": "83ee788c-01bd-4915-91b0-f5cf704ada40"
+    },
+    {
+      "claim_id": "e26c1ae5-ed69-40b2-abdf-855b882fa426",
+      "result_id": "1a815ea2-be3d-41ba-aaae-0d15fc706e70"
+    },
+    {
+      "claim_id": "dc79d43a-67fe-472d-8fd6-1288ffb62635",
+      "result_id": "1a815ea2-be3d-41ba-aaae-0d15fc706e70"
+    },
+    {
+      "claim_id": "60184315-90a3-403a-9493-09ef831106f8",
+      "result_id": "1a815ea2-be3d-41ba-aaae-0d15fc706e70"
+    },
+    {
+      "claim_id": "49adbdc6-cc5f-4d88-bf23-45871444d9c1",
+      "result_id": "1a815ea2-be3d-41ba-aaae-0d15fc706e70"
+    },
+    {
+      "claim_id": "4028bf55-84fd-4396-9438-99f0eefe8e46",
+      "result_id": "1a815ea2-be3d-41ba-aaae-0d15fc706e70"
+    },
+    {
+      "claim_id": "902919dd-e358-4e45-bf78-d9fed48c8837",
+      "result_id": "1a815ea2-be3d-41ba-aaae-0d15fc706e70"
+    },
+    {
+      "claim_id": "a6f89a2d-7612-418e-a7ed-baf0004a32e1",
+      "result_id": "99c75203-4df9-4c86-a972-d0cacd9ad5b1"
+    },
+    {
+      "claim_id": "3cbbcd68-70e9-4843-8c65-adc3edf8dd36",
+      "result_id": "99c75203-4df9-4c86-a972-d0cacd9ad5b1"
+    },
+    {
+      "claim_id": "3cc121f2-0a92-4072-af1b-3688a64e1108",
+      "result_id": "99c75203-4df9-4c86-a972-d0cacd9ad5b1"
+    },
+    {
+      "claim_id": "ee9a3de5-ca21-475f-a0b7-ab9c502598b0",
+      "result_id": "99c75203-4df9-4c86-a972-d0cacd9ad5b1"
+    },
+    {
+      "claim_id": "bc1bb337-1616-4d51-99de-711931822f2e",
+      "result_id": "99c75203-4df9-4c86-a972-d0cacd9ad5b1"
+    },
+    {
+      "claim_id": "88ec9307-c7da-4a46-8a92-6f1180b07508",
+      "result_id": "99c75203-4df9-4c86-a972-d0cacd9ad5b1"
+    },
+    {
+      "claim_id": "8049aeed-1cb3-46d3-a41b-ccd6ad935555",
+      "result_id": "99c75203-4df9-4c86-a972-d0cacd9ad5b1"
+    },
+    {
+      "claim_id": "93cf2237-8526-4a68-87b2-3b7b608d1755",
+      "result_id": "4ac5265e-9f0f-430f-aaa8-4e5544e0fc2e"
+    },
+    {
+      "claim_id": "d48e0a75-1574-41a3-be45-7b347b57261c",
+      "result_id": "4ac5265e-9f0f-430f-aaa8-4e5544e0fc2e"
+    },
+    {
+      "claim_id": "f6c28670-3356-40fe-ad6a-b69ec096680a",
+      "result_id": "4fbf9e99-4caf-4d44-be9a-02eebb442cb4"
+    },
+    {
+      "claim_id": "f5bcea0b-ea4e-4a4c-9207-2f6ba350dfaa",
+      "result_id": "4fbf9e99-4caf-4d44-be9a-02eebb442cb4"
+    },
+    {
+      "claim_id": "7312c9a2-93b7-4331-af1c-73cff749e1c9",
+      "result_id": "4fbf9e99-4caf-4d44-be9a-02eebb442cb4"
+    },
+    {
+      "claim_id": "87343333-056a-4d8d-b6fc-4c9e84fe7e2e",
+      "result_id": "4fbf9e99-4caf-4d44-be9a-02eebb442cb4"
+    },
+    {
+      "claim_id": "83ec1268-00ee-4bf0-a7c7-8d7b08229b7a",
+      "result_id": "4fbf9e99-4caf-4d44-be9a-02eebb442cb4"
+    },
+    {
+      "claim_id": "9fa24143-9090-4abc-898a-b237ef9b0cb8",
+      "result_id": "4fbf9e99-4caf-4d44-be9a-02eebb442cb4"
+    },
+    {
+      "claim_id": "339ae8b5-84f3-4799-8e69-e3fd0a152393",
+      "result_id": "a41c73b7-fde2-4141-943f-9db14c530873"
+    },
+    {
+      "claim_id": "d435d6fd-da9d-4c74-93d3-310a141830c2",
+      "result_id": "a41c73b7-fde2-4141-943f-9db14c530873"
+    },
+    {
+      "claim_id": "e53eca0c-64c3-446f-b96e-db845bff40d1",
+      "result_id": "a41c73b7-fde2-4141-943f-9db14c530873"
+    },
+    {
+      "claim_id": "d4f9575d-f82e-4139-b85d-126626fc16e9",
+      "result_id": "a41c73b7-fde2-4141-943f-9db14c530873"
+    },
+    {
+      "claim_id": "242c12e0-8434-4908-8323-5a08bc3e8db7",
+      "result_id": "a41c73b7-fde2-4141-943f-9db14c530873"
+    },
+    {
+      "claim_id": "f58ea86b-987e-43a8-aba4-0a119db7559a",
+      "result_id": "a41c73b7-fde2-4141-943f-9db14c530873"
+    },
+    {
+      "claim_id": "67495b37-54f1-4a56-bb5e-c4964f9c07d7",
+      "result_id": "a41c73b7-fde2-4141-943f-9db14c530873"
+    },
+    {
+      "claim_id": "66e88cd7-947c-42ec-b891-d396f02d2ae2",
+      "result_id": "ec854491-e26b-4302-bbd0-39bd0fa7469a"
+    },
+    {
+      "claim_id": "16b58279-b9a6-4fea-bc4f-5332b4c69bef",
+      "result_id": "ec854491-e26b-4302-bbd0-39bd0fa7469a"
+    },
+    {
+      "claim_id": "bc3951a7-690f-4a91-870a-264d7931dee8",
+      "result_id": "ec854491-e26b-4302-bbd0-39bd0fa7469a"
+    },
+    {
+      "claim_id": "a09d3ee9-2a80-4f75-907c-3bec895085c5",
+      "result_id": "ec854491-e26b-4302-bbd0-39bd0fa7469a"
+    },
+    {
+      "claim_id": "49bb6289-8227-4c8b-9112-3712958437e2",
+      "result_id": "ec854491-e26b-4302-bbd0-39bd0fa7469a"
+    },
+    {
+      "claim_id": "7ee1fae7-ceee-400b-8cc8-2d79df283cb9",
+      "result_id": "ec854491-e26b-4302-bbd0-39bd0fa7469a"
+    },
+    {
+      "claim_id": "6c6f3d99-3f52-46f6-b78a-1b21f6df6763",
+      "result_id": "ec854491-e26b-4302-bbd0-39bd0fa7469a"
+    },
+    {
+      "claim_id": "a5d5f73e-09e9-4543-97ce-66c896982a00",
+      "result_id": "c303e8c5-41fb-4e80-aea1-90f2c3933cf3"
+    },
+    {
+      "claim_id": "ca5a3c5a-f619-4fab-9974-ff4845ceacd1",
+      "result_id": "c303e8c5-41fb-4e80-aea1-90f2c3933cf3"
+    },
+    {
+      "claim_id": "c3fb3e51-0cb5-460c-9643-47a6e5d41798",
+      "result_id": "c303e8c5-41fb-4e80-aea1-90f2c3933cf3"
+    },
+    {
+      "claim_id": "2b0ab04d-6c32-4596-bca7-321eb214b3c7",
+      "result_id": "c303e8c5-41fb-4e80-aea1-90f2c3933cf3"
+    },
+    {
+      "claim_id": "c6a5541d-8c4e-4e94-ab6e-29b01b0ca2c7",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "8ba50636-ef29-4e24-923d-b64674f7d779",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "ac0a94e4-e95a-4eb7-8ea8-6862d48fc9fb",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "679978a4-2b5a-484b-893b-ae36e3a36852",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "95bd4cfb-d09f-492d-b9b3-76a8fd0d1abf",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "649eb635-b5a9-4b26-b96c-ec650536f88d",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "65a1e9b4-65ac-46f0-bb40-ba43f8b35bac",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "8c1d6bee-ec23-4c24-a8db-80beb7c29c7c",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "3e6be2bb-acb8-462e-bb2d-719f5b357479",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "9fd02f29-df15-4f5f-8282-dafead47d29d",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "d03a4981-261f-41e2-a5e8-f6c7c5f2a46b",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "29cb8f64-17c9-4320-b922-0577272c6bc7",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    },
+    {
+      "claim_id": "ce6b35ed-e064-4a80-9133-42a9129738eb",
+      "result_id": "05afcde0-bfa4-4d93-aafd-a5c9afa4d48f"
+    }
+  ],
+  "comparisons": []
+}

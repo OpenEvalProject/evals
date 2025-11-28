@@ -1,0 +1,1381 @@
+{
+  "submission": {
+    "id": "42857b3a-5b96-43d8-95e1-71177695ffee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:44:08.368724Z",
+    "updated_at": "2025-11-28T19:44:08.368724Z"
+  },
+  "content": [
+    {
+      "id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "submission_id": "42857b3a-5b96-43d8-95e1-71177695ffee",
+      "content_type": "manuscript",
+      "content_text": "# A Meier-Gorlin syndrome mutation in a conserved C-terminal helix of Orc6 impedes origin recognition complex formation\n\n## Authors\n\n- Franziska Bleichert<sup>1</sup>\n- Maxim Balasov<sup>3</sup>\n- Igor Chesnokov<sup>3</sup>\n- Eva Nogales<sup>2</sup>\n- Michael R Botchan<sup>2</sup> \u2020\n- James M Berger<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Miller Institute for Basic Research in Science University of California, Berkeley Berkeley United States\n2. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n3. Department of Biochemistry and Molecular Genetics University of Alabama at Birmingham School of Medicine Birmingham United States\n4. Life Sciences Division Lawrence Berkeley National Laboratory Berkeley United States\n5. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn eukaryotes, DNA replication requires the origin recognition complex (ORC), a six-subunit assembly that promotes replisome formation on chromosomal origins. Despite extant homology between certain subunits, the degree of structural and organizational overlap between budding yeast and metazoan ORC has been unclear. Using 3D electron microscopy, we determined the subunit organization of metazoan ORC, revealing that it adopts a global architecture very similar to the budding yeast complex. Bioinformatic analysis extends this conservation to Orc6, a subunit of somewhat enigmatic function. Unexpectedly, a mutation in the Orc6 C-terminus linked to Meier-Gorlin syndrome, a dwarfism disorder, impedes proper recruitment of Orc6 into ORC; biochemical studies reveal that this region of Orc6 associates with a previously uncharacterized domain of Orc3 and is required for ORC function and MCM2\u20137 loading in vivo. Together, our results suggest that Meier-Gorlin syndrome mutations in Orc6 impair the formation of ORC hexamers, interfering with appropriate ORC functions.\n\n## Introduction\n\nThe faithful inheritance of genetic information depends on the precise replication of DNA; errors such as under- or over-replication of DNA can lead to genetic instabilities, malignant transformation, or cell death (Klingseisen and Jackson, 2011; Abbas et al., 2013). In eukaryotes, replication initiation machineries are loaded onto DNA during the G1-phase of the cell cycle, \u2018licensing\u2019 origins of replication for subsequent replisome assembly in S-phase (Masai et al., 2010; Abbas et al., 2013). The eukaryotic initiator, ORC (origin recognition complex), performs a central role in this licensing reaction (Bell and Stillman, 1992), working with the loading factors Cdc6 and Cdt1 to recruit the MCM2\u20137 (minichromosome maintenance) replicative helicase into a pre-replicative complex (pre-RC) at replication origins (Liang et al., 1995; Cocker et al., 1996; Tanaka et al., 1997; Maiorano et al., 2000; Nishitani et al., 2000). The MCM complex is loaded onto double-stranded DNA as an inactive double-hexamer (Evrin et al., 2009; Remus et al., 2009; Gambus et al., 2011), and is activated only after origin firing in the subsequent S-phase to commence DNA replication (Vijayraghavan and Schwacha, 2012). How ORC accurately executes the replication initiation program, and how disregulation of ORC function is linked to chromosomal abnormalities and disease, constitute long-standing questions in the field.\n\nORC is a heterohexameric protein complex containing the subunits Orc1\u2013Orc6 (Bell and Stillman, 1992; Gavin et al., 1995; Gossen et al., 1995; Rowles et al., 1996; Moon et al., 1999; Vashee et al., 2001). The Orc1\u2013Orc5 subunits all contain AAA+ (ATPases associated with a variety of cellular activities) or AAA+-like domains (Neuwald et al., 1999; Iyer et al., 2004; Speck et al., 2005; Clarey et al., 2006), a subset of which use ATP binding and hydrolysis to support replicative helicase loading, DNA replication, and cell viability (Chesnokov et al., 2001; Bowers et al., 2004; Giordano-Coltart et al., 2005; Randell et al., 2006). How individual ORC subunits co-assemble with each other and the nature of the structural transitions that occur within ORC and other pre-RC components during nucleotide-dependent initiation steps are ill-defined, in part due to a paucity of structures for key ORC reaction states. Electron microscopy (EM) studies have provided medium-to-low resolution pictures of the general architecture of Saccharomyces cerevisiae and Drosophila ORC, and subunit positions within ORC further have been systematically mapped for the yeast complex (Speck et al., 2005; Clarey et al., 2006; Chen et al., 2008; Sun et al., 2012, 2013); however, poor similarity between the 3D reconstructions obtained for the different species, combined with conflicting biochemical data on ORC subunit interactions, have led to different models of subunit arrangement and DNA engagement for the two eukaryotic initiators (Vashee et al., 2001; Kneissl et al., 2003; Chen et al., 2007; Matsuda et al., 2007; Siddiqui and Stillman, 2007; Clarey et al., 2008; Li and Stillman, 2012; Sun et al., 2012). Whether these differences reflect true differences in structure, or potentially distinct functional states, remains unclear.\n\nRecently, mutations in genes encoding the pre-RC components Orc1, Orc4, Orc6, Cdc6, and Cdt1 have been linked to Meier-Gorlin syndrome (MGS), a rare genetic disorder characterized by primordial dwarfism, small ears and aplastic or hypoplastic patella (Guernsey et al., 2011; Bicknell et al., 2011a, b). Based on the fact that MGS mutations cluster in pre-RC components, it has been suggested that the clinical phenotype is caused by defects in DNA replication initiation (Guernsey et al., 2011; Bicknell et al., 2011a, b). Consistent with this interpretation, cells derived from MGS patients with mutations in Orc1 show reduced recruitment of ORC subunits and replicative helicase components to chromatin, and are compromised in their ability to replicate plasmid DNA (Bicknell et al., 2011b); recent work has also shown a link between origin licensing factors and non-replicative cellular processes, such as centrosome duplication and cilia formation, in MGS patient cells and in cells depleted of licensing proteins (Hossain and Stillman, 2012; Stiff et al., 2013). Most MGS mutations in Orc1 lie in the N-terminal domain, which is not part of the central core of ORC, and have been implicated interfering with Orc1\u2019s Cyclin E-CDK2 inhibitory function of centrosome duplication (Hossain and Stillman, 2012). By contrast, the means by which certain mutations in Orc4 and Orc6 result in an MGS phenotype has yet to be determined. Orc6 is particularly enigmatic in this regard: unlike Orc1\u2013Orc5, Orc6 is poorly conserved between budding yeast and metazoans, both in sequence and in aspects of its function (Lee and Bell, 1997; Chesnokov et al., 2001; Prasanth et al., 2002; Chesnokov et al., 2003; Semple et al., 2006; Balasov et al., 2007; Chen et al., 2007; Duncker et al., 2009; Bernal and Venkitaraman, 2011; Chen and Bell, 2011; Liu et al., 2011; Takara and Bell, 2011).\n\nHere we investigate the structural organization of Drosophila ORC (DmORC) and how Orc6 is recruited into this complex in metazoans. Using EM we find that apo-DmORC is conformationally heterogeneous, but that the non-hydrolysable nucleotide analog ATP\u03b3S locks the complex in a specific conformation that permitted the determination of its 3D structure to 22 \u00c5 resolution. Experimental localization of all subunits reveals that the subunit architecture of DmORC is preserved compared to S. cerevisiae ORC (ScORC), reconciling different models proposed previously for the two systems. Interestingly, sequence analyses show that this similarity extends to the domain structure of Orc6, suggesting analogous functions for Orc6 from yeast and metazoans. Consistent with this notion, we find that recruitment of Orc6 into ORC across multiple species is aided by the interaction of its C-terminus with a novel domain that resides between the AAA+-like and winged-helix domains of Orc3. Strikingly, a mutation found in patients with Meier-Gorlin syndrome maps to a highly-conserved C-terminal segment in Orc6, destabilizing the interaction of Drosophila and human Orc6 with both Orc3 alone and with the core Orc1\u20135 subcomplex. Orc6 transgenes containing mutations in the conserved C-terminal tail fail to incorporate into DmORC in vivo, and do not complement an orc6-null allele when introduced into flies. Taken together, these results suggest that the MGS mutation in Orc6 directly affects the integrity of ORC, and indicate that destabilization of ORC contributes to the pathogenesis of Meier-Gorlin syndrome caused by mutations in Orc6, ultimately interfering with pre-RC assembly and origin licensing.\n\n## Results\n\n### Improved resolution EM structure of Drosophila ORC\n\nEM reconstructions of S. cerevisiae ORC and Drosophila ORC have been determined previously (Speck et al., 2005; Clarey et al., 2006; Sun et al., 2012, 2013), and have allowed individual subunits to be localized in budding yeast ORC. Unfortunately, the modest resolution of these structures, together with the poor resemblance between the Drosophila and S. cerevisiae ORC models, have made it difficult to extrapolate the yeast subunit order into metazoan ORC (Speck et al., 2005; Clarey et al., 2006, 2008; Chen et al., 2008; Sun et al., 2012). To overcome this gap, we set out to improve the resolution of the Drosophila ORC model by negative-stain electron microscopy and to further map the complex\u2019s higher-order organization by subunit tagging and visualization.\n\nTo obtain samples for EM, we purified recombinant Drosophila ORC from insect cells (Figure 1\u2014figure supplement 1A). As previously observed, Drosophila ORC forms a stable, hexameric complex containing subunits Orc1\u2013Orc6 (Figure 1A, Figure 1\u2014figure supplement 1B) (Chesnokov et al., 1999, 2001). Examination of ORC by EM after negative staining showed a monodisperse population of particles, with no indication of complex instability at the low-nanomolar concentrations used for sample deposition onto EM grids (Figure 1\u2014figure supplement 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig1-v1.jpg)\n\n**Figure 1.:** (A) Coomassie-stained SDS-PAGE gel of purified recombinant Drosophila ORC used for EM studies. Molecular weight markers and ORC subunits are indicated. (B) Nucleotides have different effects on the conformation of ORC. Drosophila ORC was incubated with 1 mM ADP, ATP, AMPPNP or ATP\u03b3S and analyzed by electron microscopy and compared to apo-ORC. Representative 2D class averages are shown. (C) Single-particle EM reconstruction of Drosophila ORC corrected for the absolute hand of ORC.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Overview of recombinant expression and purification strategy used for ORC. (B) Analytical gel filtration chromatography of purified Drosophila ORC on a Superose 6 column demonstrates that Drosophila ORC elutes as a hexamer with the predicted molecular weight of \u223c390 kDa. Elution volume of the molecular weight markers thyroglobulin (670 kDa), \u03b3-globulin (158 kDa) and ovalbumin (44 kDa) are indicated above the UV trace. (C) Electron micrograph of negatively stained Drosophila ORC showing a monodisperse population of particles.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Previously-determined EM structure of Drosophila ORC (EMDB-1252) (Clarey et al., 2006). (B) Initial starting model used for projection-matching refinement obtained by low-pass filtration of the EM structure in (A) using a Butterworth filter with pass band at 200 \u00c5 and stop band at 100 \u00c5. (C) Refined Drosophila ORC EM structure determined in this study prior to hand determination and flipping (Figure 1C, Figure 1\u2014figure supplement 3). (D) Fourier shell correlation curve for reconstructed EM volume. The resolution at 0.5 FSC is \u223c22 \u00c5. (E) Euler angle distribution of particle images used for 3D reconstruction. The points in the hemisphere of the Euler space correspond to particle images assigned to a given reference image during projection-matching refinement, with the size of the point being proportional to the number of images assigned to a given reference. (F) Comparison of experimental 2D class averages with forward projection of final 3D EM volume demonstrates good matches between the experimental data and the 3D reconstruction.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The final refined Drosophila ORC EM volume shown in Figure 1\u2014figure supplement 2C was used in the freehand test using 0\u00b0 and +50\u00b0 tilt-pair images. The cross-correlation coefficients for the tilt transformations are plotted. The highest correlation is observed at a tilt angle of \u221250\u00b0 and not +50\u00b0, indicating the absolute hand of the reconstructed ORC volume in Figure 1\u2014figure supplement 2C is incorrect. Flipping the hand corrects the handedness of the model (Figure 1C).\n\nNucleotide binding and hydrolysis often generate significant conformational changes in oligomeric assemblies of AAA+ ATPases (Neuwald et al., 1999; Iyer et al., 2004), a behavior seen previously by EM for Drosophila ORC in the absence and presence of the non-hydrolysable ATP analog ATP\u03b3S (Clarey et al., 2006). However, the maximal obtainable resolution for these early EM reconstructions was relatively low (34 \u00c5 and 33 \u00c5 resolution, respectively), suggesting that conformational heterogeneity still existed within the ORC sample. To improve the resolution, we therefore tested whether different nucleotide analogs or increased concentrations of ATP\u03b3S could improve conformational uniformity (Figure 1B). Similar to prior observations (Clarey et al., 2006), 2D EM class averages of apo-ORC yielded crescent-shaped particles. Inclusion of 1 mM ATP, ADP or the non-hydrolysable ATP analog AMPPNP appeared similar to apo-ORC in 2D class averages (Figure 1B). However, the addition of 1 mM ATP\u03b3S revealed hitherto unobserved detailed features of ORC, indicating that ATP\u03b3S stabilizes interactions between subunits and traps ORC in a better defined conformational state. The ATP\u03b3S-dependent stabilization seen here proved more pronounced than that seen previously (Clarey et al., 2006), likely due to the higher concentration of nucleotide (1 mM vs 5 \u00b5M) used to ensure saturation of ORC with ATP\u03b3S. Such an effect of ATP\u03b3S on Drosophila ORC is somewhat similar to the nucleotide requirement observed for human ORC complex formation and stability (Ranjan and Gossen, 2006; Siddiqui and Stillman, 2007); based on this improved behavior, all subsequent EM studies of Drosophila ORC were performed in the presence of 1 mM ATP\u03b3S.\n\nThe more detailed features observed in 2D class averages of ATP\u03b3S-ORC suggested that it should be possible to obtain a 3D EM reconstruction of Drosophila ORC at a significantly improved resolution than was possible in earlier efforts. We therefore calculated a 3D EM reconstruction, using a low-pass filtered volume of the previously published Drosophila ORC EM structure as an initial starting model (Figure 1\u2014figure supplements 2A\u2013C). The structure was refined by iterative projection-matching to a resolution of 22 \u00c5 (as judged by the 0.5 Fourier shell correlation criterion) (Figure 1\u2014figure supplement 2D), yielding forward projections of the 3D structure in excellent agreement with our reference-free class averages (Figure 1\u2014figure supplement 2F). The resultant model contains contributions from a near-complete coverage of angular space (Figure 1\u2014figure supplement 2E), and showed significantly more detail than the previous Drosophila ORC EM structure (compare Figure 1\u2014figure supplement 2A,C).\n\nSince the handedness of ORC was not previously determined experimentally, we next collected tilt-pairs of ORC and subjected them to the Freehand test (Rosenthal and Henderson, 2003; Henderson et al., 2011). This analysis showed that the initially calculated ORC structure (shown in Figure 1\u2014figure supplement 2C) was of the incorrect absolute hand (Figure 1\u2014figure supplement 3), leading us to flip the hand of the EM volume for further analysis (Figure 1C). Taken together, our results indicate that nucleotide binding induces conformational changes within ORC that are propagated throughout the entire complex to stabilize a specific structural state.\n\n### Subunit architecture of Drosophila ORC\n\nWhile the higher resolution features of our new Drospohila EM model allowed us to delineate likely subunit borders, it still remained unknown which subunits might occupy different regions of the density. We therefore set out to localize individual subunits experimentally by EM, using purified recombinant ORC containing N-terminal MBP- and C-terminal GFP-tags on individual ORC subunits, respectively. Fusion proteins of subunits Orc1\u2013Orc5 were able to form stable hexameric ORC complexes (Figure 2\u2014figure supplement 1), allowing for the collection of electron micrographs, 2D classification, and 3D EM reconstructions. Comparison of class averages and 3D volumes of tagged ORC with those of untagged ORC revealed extra densities corresponding to the MBP- or GFP-tags, thus marking the positions of the tagged subunits (Figure 2A). We did not observe extra density for MBP when fused to the N-terminus of full-length Orc1 or Orc2, nor did we see GFP fused to the C-terminus of Orc2 and Orc4 (data not shown), suggesting these protein termini are flexible. However, after deletion of the N-terminal domains of Orc1 and Orc2 (which are predicted to contain disordered regions), density became visible for MBP (Figure 2A). During the subunit mapping process, we were unable to definitively distinguish Orc2 and Orc3 from each other, suggesting that the two subunits lie in close proximity within ORC. Collectively, our data indicate that the AAA+-like subunits Orc1\u2013Orc5 comprise the crescent-shaped core of ORC, in the order Orc1-Orc4-Orc5-Orc2/Orc3 (when starting at the lower left of the EM structure) (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig2-v1.jpg)\n\n**Figure 2.:** (A) Localization of AAA+ subunits Orc1\u2013Orc5 within ORC by EM. 2D class averages of ORC containing N-terminally MBP-tagged or C-terminally GFP-tagged Orc1\u20135 subunits are compared to representative averages of untagged ORC. Additional densities observed that can be attributed to MBP- or GFP-tags are noted by arrowheads and mark the position of the respective subunit within ORC. 3D EM reconstructions of MBP- or GFP-tagged ORCs further pinpoint the localization of Orc1\u2013Orc5 within ORC. With the exception of MBP\u2013Orc2\u0394N, MBP- or GFP-densities (highlighted in color) were also observed in 3D EM reconstructions of MBP- or GFP-tagged ORCs. No additional density was observed in 2D class averages for ORC containing N-terminally MBP-tagged full-length Orc1 and Orc2 nor for C-terminally GFP-tagged Orc2 and Orc4, indicating conformational flexibility of the tag (data not shown). NA\u2014this view was not observed in 2D class averages. (B) Surface coloring of the DmORC EM volume based on subunit localization. The asterisks marks density that likely contains a domain inserted between the AAA+-like domain and the winged helix domain in Orc3 (Figure 5).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The AAA+ subunits Orc1\u2013Orc5 were tagged at the N-terminus with MBP (M) or at the C-terminus with GFP (G) and the respective tagged ORC complexes purified. A Coomassie-stained SDS-PAGE gel of the complexes is shown. For each tagged complex, the tagged subunit is marked by an asterisk to the left of the lane. The N-terminal extensions in Drosophila Orc1 and Orc2 were deleted in MBP\u2013Orc1 and MBP\u2013Orc2.\n\nTo localize Orc6, we initially compared class averages of ORC lacking Orc6 (referred to as ORC1\u20135) with class averages of ORC containing Orc6 (simply referred to as ORC). Despite the reasonable molecular weight of Orc6 (29 kDa) and its stoichiometric presence in ORC purifications (Figure 3\u2014figure supplement 1), 2D EM class averages of ORC and ORC1\u20135 looked virtually identical, suggesting that Orc6 might be flexibly attached to the rest of the complex (Figure 3A). To investigate the position of Orc6 further, we fused MBP or GFP to the N- or C-terminus of Orc6, respectively. In class averages of ORC containing C-terminally GFP-tagged Orc6, extra density appeared near the upper left tip of ORC, close to the position of Orc2 and Orc3 (Figure 3A). We did not observe density with an N-terminal MBP\u2013Orc6 fusion, nor did we observe GFP density in 3D reconstructions (Figure 3A and data not shown). These data indicate that Orc6 is flexibly tethered to ORC, likely via an interaction with Orc2, Orc3, or both.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig3-v1.jpg)\n\n**Figure 3.:** (A) ORC containing N-terminally MBP-tagged Orc6 or C-terminally GFP-tagged Orc6 was purified and subjected to EM analysis. Representative 2D class averages are shown. Drosophila ORC with untagged Orc6 is shown for comparison. Additional density corresponding to the tag (arrowheads) is only observed for the Orc6-GFP and not for MBP\u2013Orc6. Class averages of ORC lacking Orc6 subunit reveal no difference density compared to ORC containing Orc6, indicating that Orc6 is flexibly tethered to ORC. (B) Drosophila Orc6 interacts with Orc3 but not with Orc2. MBP\u2013Orc2, MBP\u2013Orc3 and MBP\u2013Orc6 fusions were co-expressed in High5 cells with 6 \u00d7 His-tagged Orc2, Orc3 and Orc6 and subjected to pull-downs (PD) using amylose resin. Orc3 interacts with both Orc2 and Orc6, whereas no interaction is observed between Orc2 and Orc6 as assessed by SDS-PAGE and Coomassie staining. In addition, no interaction is observed between MBP alone and any of the ORC subunits. The asterisk denotes a degradation product of MBP\u2013Orc2. Western blot (WB) analysis of whole cell extracts for 6 \u00d7 His tagged subunits (lower panels) demonstrates that they are expressed as expected.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** ORC containing N-terminally MBP-tagged (M) Orc6, C-terminally GFP-tagged (G) Orc6, or the N-terminally MBP-tagged C-terminal domain of Orc6 (amino acids 187\u2013257) and ORC lacking the Orc6 subunit were purified. A Coomassie-stained SDS-PAGE gel of respective complexes is shown. Tagged Orc6 is marked by an asterisk to the left of the lane.\n\nThe localization pattern of Orc6 led us to hypothesize that we might be able to use it to determine the order of Orc2 and Orc3 in our EM volume by identifying Orc6\u2019s binding partner. Interactions between human and yeast Orc2, Orc3, and Orc6 have previously been investigated; however, conflicting results of subunit interactions have been reported (Vashee et al., 2001; Kneissl et al., 2003; Chen et al., 2007; Matsuda et al., 2007; Siddiqui and Stillman, 2007; Sun et al., 2012). Moreover, the interactions between the Drosophila proteins have not been tested. To identify the subunit that recruits Drosophila Orc6 into ORC, we performed pull-down assays from insect cells co-expressing pairwise combinations of Drosophila Orc2, Orc3, and Orc6, with one subunit containing an MBP-tag used as purification bait. As previously observed for both human and yeast proteins (Dhar et al., 2001; Vashee et al., 2001; Ranjan and Gossen, 2006; Matsuda et al., 2007), Drosophila Orc2 interacted with Orc3 (Figure 3B). This finding is consistent with our EM localization, which positioned these subunits within similar regions of ORC. Orc6, on the other hand, interacted only with Orc3 and not with Orc2 (Figure 3B). Since Orc6 appears to contact the subunit at the upper left end in the EM class averages, the Orc3\u2013Orc6 interaction allowed us to refine the subunit order of the core AAA+ subunits to Orc1-Orc4-Orc5-Orc2-Orc3 for Drosophila ORC (Figure 2B).\n\n### The C-terminus of Orc6 mediates its recruitment into ORC\n\nMetazoan Orc6 is composed of three domains: an N-terminal and middle domain, both of which have homology to the cyclin-box folds of transcription initiation factor IIB (referred to as TFIIB domain A and B), and a C-terminal region of unknown structure (Figure 4A, Figure 4\u2014figure supplement 1) (Chesnokov et al., 2003; Liu et al., 2011). The C-terminal domain of metazoan Orc6 has been thought to be mainly important for non-replicative functions of Orc6 in cytokinesis and daughter cell abscission, and in the case of Drosophila Orc6, the C-terminal domain also has been shown to interact with the septin Pnut (Prasanth et al., 2002; Chesnokov et al., 2003; Bernal and Venkitaraman, 2011). Surprisingly, however, we found that the C-terminal domain of Orc6 proved to be both essential and sufficient for Orc3 binding when co-expressed in insect cells (Figure 4B, Figure 4\u2014figure supplement 2A for controls). The necessity of the C-terminal domain was not limited to binary protein interactions, but was also observed either when all ORC subunits were co-expressed in insect cells (Figure 4\u2014figure supplement 2B), or when purified full-length or C-terminal truncated Orc6 proteins were mixed with ORC1\u20135 in vitro and subjected to pull-down assays (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of domain organization of Orc6 and of the N- and C-terminal deletion constructs of Orc6 used in this study. (B) The C-terminal domain (CTD) of Orc6 is essential and sufficient for the interaction of Orc6 with Orc3. His-tagged full-length Orc6 (1\u2013257) and Orc6 deletion constructs were co-expressed with MBP-tagged Orc3 in High5 cells and analyzed for interactions by pull-downs using amylose resin. Bound proteins were analyzed by SDS-PAGE and Coomassie-staining. Western blot analysis of whole cell extracts (lower panel) shows that C-terminally truncated Orc6 proteins are expressed at similar levels to full-length wild type Orc6. Despite the clear pull-down results for the N-terminally truncated Orc6 proteins, we were not able to detect two of the proteins (Orc6 147\u2013257 and 187\u2013257) in whole cell extracts, possibly due to expression levels too low to be detected with our Western blot conditions. (C and D) The C-terminal domain of Orc6 is essential and sufficient for recruitment of Orc6 into ORC. Purified ORC1\u20135 (lacking Orc6 subunit) was incubated in vitro with purified full-length Orc6, Orc6 lacking C-terminal residues (Orc6 1\u2013232, Orc6 1\u2013220 and Orc6 1\u2013200), and the isolated Orc6 C-terminal domain (Orc6 187\u2013257). Formation of ORC containing all six subunits was tested in pull-downs using (C) MBP-tagged Orc4 as bait and by (D) fluorescence anisotropy after N-terminally labeling Orc6 proteins with Alexa Fluor-488. C-terminal deletions of Orc6 abolish recruitment of Orc6 into ORC in vitro, whereas the C-terminal domain of Orc6 binds to ORC1\u20135 with nanomolar affinity. Binding data of full-length Orc6 and the Orc6 C-terminal domain (Orc6 187\u2013257) were fit to the quadratic equation describing single-site binding under ligand depletion. (E) The localization of the C-terminal domain of Orc6 is indistinguishable from the localization of full-length Orc6 within ORC. Purified ORC containing full-length Orc6-GFP or MBP\u2013Orc6 187\u2013257 was analyzed by negative stain EM. 2D image analysis revealed extra densities (arrow heads) in similar positions that correspond to GFP and MBP tags on the respective Orc6 constructs. Density corresponding to the affinity tag was observed in the 3D volume of ORC containing MBP\u2013Orc6 187\u2013257, further pinpointing the localization of Orc6 within ORC.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Orc6 protein sequences from representative eukaryotes and human transcription factor TFIIB (PDB code 1vol, chain A) (Nikolov et al., 1995) were aligned using MAFFT (Katoh et al., 2005; Katoh and Toh, 2008). Conserved domains and secondary structure elements as observed in the crystal structure of human TFIIB are outlined below the alignment. Amino acid residues in Drosophila melanogaster (Dm) Orc6 that demarcate truncations as well as the residue mutated in Meier-Gorlin syndrome (MGS) are indicated above the alignment. Accession numbers of Orc6 protein sequences used in the alignment can be found in the \u2018Materials and methods\u2019.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Orc6 proteins do not interact with MBP nor do they bind unspecifically to amylose beads. MBP and different Orc6 constructs were co-expressed in High5 cells and pull-downs (PD) were performed using amylose beads. Only MBP is recovered from beads. Western blots (WB) show that Orc6 proteins are expressed in insect cells. We were not able to detect Orc6 147\u2013257 and Orc6 187\u2013257 in Western blots of whole-cell lysates; however, the two proteins efficiently co-purified with MBP\u2013Orc3 (Figure 4B), MBP\u2013Orc3INS (Figure 5C), and ORC1\u20135 (panel B in this figure), indicating they are expressed. (B) The C-terminal domain of Orc6 is essential for hexameric ORC formation in insect cells. ORC subunits and Orc6 truncated proteins were co-expressed in insect cells and extracts were subjected to amylose pull-downs (PD) targeting MBP-tagged Orc1. Whereas N-terminal deletions of Orc6 co-purify with ORC1\u20135, C-terminal deletions of Orc6 abrogate the interaction with ORC1\u20135. The asterisk marks a protein contaminant. Coomassie-stained SDS-PAGE gels are shown in (A and B).\n\nTo rule out the possibility that our pull-downs might miss a potential weak interaction between ORC1\u20135 and Orc6 lacking the C-terminal domain, we performed equilibrium binding experiments using fluorescence anisotropy and fluorescently-labeled Orc6. Full-length Orc6 bound to ORC1\u20135 with apparent low-nanomolar affinity (Kd, app = 5.0 \u00b1 0.7 nM) (Figure 4D). Consistent with the pull-down results, C-terminally truncated Orc6 proteins did not bind ORC1\u20135 up to concentrations of 1 \u00b5M ORC1\u20135 (Figure 4D). In contrast, the C-terminal 71 amino acid residues of Orc6 bound to ORC1\u20135 with an affinity similar to that of full-length Orc6 (Kd, app = 4.8 \u00b1 0.6 nM). In addition, the Orc6 C-terminal region co-purified with ORC1\u20135 during several chromatography steps (Figure 3\u2014figure supplement 1, lane 5), and when examined by EM, an MBP-fusion of the C-terminal domain of Orc6 localized to the same region as full-length Orc6 in 2D class averages of ORC, indicating that Orc6 did not dissociate from ORC at concentrations used for EM (30 nM ORC) (Figure 4E). Collectively, these results demonstrate that Orc6 is recruited into ORC via interaction of its C-terminal domain with Orc3, and not through its TFIIB-like domains.\n\nWe next asked which region of Orc3 interacts with Orc6. In comparing Orc3 protein sequences from various eukaryotes with archaeal Orc1/Cdc6 proteins, we noticed that Orc3 contains an additional domain inserted between its AAA+-like and winged-helix domains that is not found in archaeal homologs (Figure 5A,B, Figure 5\u2014figure supplement 1). This insertion is conserved across eukaryotic Orc3 orthologs, varies in length from 70 amino acids in S. cerevisiae to 190 amino acids in Drosophila, and is not found in Orc1, Orc2, Orc4, or Orc5 (Figure 5\u2014figure supplement 1). Since this extra domain is specific to Orc3, we hypothesized that it might interact with Orc6, specifically with the Orc6 C-terminus. To test this premise, we co-expressed the Orc3 insertion as an MBP fusion protein with full-length or truncated Orc6 and performed pull-down experiments. The Orc3 insertion was able to interact with both full-length Orc6 and all N-terminal Orc6 truncations (Figure 5C). Conversely, truncating the C-terminus of Orc6 abolished the interaction with the Orc3 insertion. These results mirror our observations with both full-length Orc3 and with ORC1\u20135, and further demonstrate that the C-terminus of Orc6 helps to tether Orc6 to ORC. Moreover, whereas full-length Orc3 was able to interact with Orc2 in addition to Orc6, the Orc3 insertion was unable to do so, suggesting the Orc2\u2013Orc3 interaction is mediated through the two subunits\u2019 AAA+-like and/or winged-helix domains (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic domain organization of Orc3. (B) The position of the Orc3 insertion maps between the AAA+-like domain and the winged helix domain in the crystal structure of archaeal Orc1\u20131 (PDB code 2qby chain A) (Dueber et al., 2007). (C) The Orc3 insertion is sufficient for Orc6 binding. Drosophila Orc3 containing residues 371\u2013559 (Orc3INS) was co-expressed as an N-terminal MBP-fusion protein with His-tagged full-length and truncated versions of Drosophila Orc6 in High5 cells and their interaction probed by pull-downs using amylose resin. (D) The insertion in Orc3 does not interact with Orc2. N-terminal MBP-fusion proteins of Drosophila full-length Orc3 (Orc3FL), the Orc3 insertion (Orc3INS) or MBP alone were co-expressed with 6 \u00d7 His-tagged Drosophila Orc2 in High5 cells and subjected to amylose pull-downs. Coomassie-stained SDS-PAGE gels are shown in (C and D). Western blot analysis of whole-cell extract using an anti-His antibody (lower panels in C and D) demonstrates that lack of Orc2 or Orc6 pull-down is not due to lack of their expression. As in Figure 4B, we were not able to detect Orc6 147-257 and Orc6 187-257 in cell extracts despite being clearly visible in pull-downs, likely because of low expression levels.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Protein sequences of archaeal Orc1/Cdc6, various eukaryotic Orc3 proteins, and Drosophila melanogaster Orc1, Orc2, Orc4, and Orc5 were aligned using MAFFT (Katoh et al., 2005; Katoh and Toh, 2008). Secondary structural elements as seen in the crystal structure of archaeal Orc1\u20131 (PDB code 2qby, chain A) (Dueber et al., 2007) are shown below the alignment. Accession numbers for protein sequences can be found in the \u2018Materials and methods\u2019.\n\n### Conserved amino acids in the C-terminus of Orc6, including the tyrosine mutated in MGS patients, mediate Orc6 recruitment into ORC and are required for MCM2\u20137 loading onto chromatin\n\nAlthough the overall function of Orc6 has remained somewhat debatable, the subunit is one of the pre-RC components recently shown to be mutated in patients with Meier-Gorlin syndrome (MGS) (Bicknell et al., 2011a). Intriguingly, the MGS mutation in human Orc6 is a missense alteration that maps to the protein\u2019s C-terminal domain, changing a tyrosine at position 232 to serine. The tyrosine is located in a highly conserved, predicted helical element, and is itself highly conserved among eukaryotic Orc6 orthologs, including budding yeast (Figure 6A, Figure 4\u2014figure supplement 1). Since our findings show that the C-terminal domain of Orc6 is essential for the recruitment of Orc6 into Drosophila ORC, we hypothesized that the MGS mutation may interfere with this function. To test this assumption, we introduced the corresponding Y225S mutation into Drosophila Orc6 and asked whether it could affect either the binary Orc3\u2013Orc6 interaction or hexameric ORC formation. In addition, we included another mutant, W228A/K229A, which substitutes an invariant tryptophan close to Y225 and a highly conserved basic amino acid for alanine. Orc6-W228A/K229A is not able to rescue an Orc6 deletion in Drosophila to support viability in vivo, and cells bearing the two mutations showed reduced BrdU incorporation in brain neuroblasts, suggesting defects in DNA synthesis (Balasov et al., 2009). When co-expressed in insect cells with MBP\u2013Orc3, drastically reduced levels of Orc6-Y225S and no Orc6-W228A/K229A were pulled-down (Figure 6B). Similar results were obtained when the Orc3 insertion was used instead of full-length Orc3 (Figure 6\u2014figure supplement 1A). Interestingly, the Orc3\u2013Orc6 interaction was not stabilized by additional co-expression of Orc2, suggesting that Orc2 binding to Orc3 has no effect on the Orc3\u2013Orc6 interaction in Drosophila (Figure 6\u2014figure supplement 1B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig6-v1.jpg)\n\n**Figure 6.:** (A) The tyrosine mutated in Meier-Gorlin syndrome (MGS) is a well conserved residue and maps to the C-terminal domain of Orc6. A sequence LOGO (Workman et al., 2005) of the Orc6 C-terminus is shown. The amino acid residue corresponding to the human MGS mutation was mutated in Drosophila Orc6 (Y225S). (B) Mutations in the C-terminus of Drosophila Orc6, including the MGS mutation, reduce the affinity of Orc6 for Orc3. Wild-type (WT) Orc6, the Y225S mutant or the W228A/K229A double-mutant Orc6 were co-expressed with MBP\u2013Orc3 in High5 cells and tested for interaction with Orc3 by pull-down analysis using amylose beads and MBP\u2013Orc3 as bait. Coomassie-stained SDS-PAGE gels are shown for pull-downs and a Western blot (lower panel) is shown to confirm Orc6 expression in insect cells. (C and D) C-terminal mutations in Drosophila Orc6 interfere with recruitment of Orc6 into ORC in vitro. Wild-type Orc6, Orc6-Y225S and Orc6-W228A/K229A were purified and tested for association with ORC1\u20135 into heterohexameric ORC using pull-downs targeting MBP\u2013Orc4 (C) or by fluorescence anisotropy using N-terminally Alexa Fluor-488 labeled Orc6 (D).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A and B) Amylose pull-downs (PD) from High5 cells co-expressing His-tagged Orc6 wild type (WT) or Orc6 containing the MGS-like (Y225S) or WK (W228A/K229A) mutation with either (A) MBP\u2013Orc3INS or (B) MBP\u2013Orc3 and Orc2. The results show that both mutations in the Orc6 C-terminus interfere with Orc6 binding to the insertion in Orc3 and with recruitment of Orc6 into the Orc2-Orc3-Orc6 subcomplex. Expression of prey proteins was verified in Western blots (WB) of whole cell extract (lower panels). (C) The MGS-like mutation in the context of the Orc6 C-terminal domain (CTD) alone significantly reduces the affinity of the Orc6-CTD for ORC1\u20135. The results of fluorescence anisotropy experiments with fluorescently labeled wild-type and Y225S Orc6-CTD are shown.\n\nTo address whether the MGS-like mutation and the WK mutant affected hexameric ORC formation, we next tested whether purified wild-type or mutant Drosophila Orc6 could bind to purified ORC1\u20135 in vitro. Neither Orc6-Y225S nor Orc6-W228A/K229A bound to ORC1\u20135 in pull-down experiments (Figure 6C). Orc6-Y225S incorporation into ORC was also reduced when it was co-expressed with Orc1\u2013Orc5 subunits in insect cells (Figure 4\u2014figure supplement 2B, lane 8). In equilibrium-binding experiments using fluorescence anisotropy, Orc6-W228A/K229A showed no binding to ORC1\u20135 (Figure 6D). Orc6-Y225S was able to bind weakly to Orc1\u20135; however, the affinity was reduced at least 100-fold compared to wild type Orc6, and similar results were obtained for the MGS-like mutant when only the C-terminal domain of Orc6 was used in binding experiments (Figure 6\u2014figure supplement 1C). Together, these results show that highly conserved amino acid residues in the C-terminal domain of Drosophila Orc6, including the tyrosine mutated in human Orc6 in Meier-Gorlin syndrome, mediate the recruitment of Orc6 into ORC.\n\nIn flies, the Orc6 C-terminus is essential for viability, as GFP\u2013Orc6 transgenes containing mutations in the C-terminus are (in contrast to wild type GFP\u2013Orc6) unable to rescue an orc6-null allele (Balasov et al., 2009). Neuroblasts of such Orc6 mutant flies incorporate BrdU less efficiently than cells expressing wild-type Orc6, suggesting that they suffer from defects in DNA replication (Balasov et al., 2009). We re-investigated flies carrying these transgenes to test whether the previously observed phenotypes are due to defects in hexameric ORC formation in vivo, and to determine the physiologic consequences of our in vitro results. We expressed GFP\u2013Orc6 wild type, GFP\u2013Orc6 D224A/Y225A or GFP\u2013Orc6 W228A/K229A transgenes in flies and asked whether they associate with other ORC subunits in vivo. ORC was immunoprecipitated with an anti-Orc2 antibody from ovary extract and, as expected, immunoprecipitates were found to contain Orc3, Orc5, and GFP\u2013Orc6 wild type (Figure 7A). In contrast, the amounts of GFP\u2013Orc6 mutants that were immunoprecipitated were greatly reduced compared to wild type GFP\u2013Orc6, both in Western blots and when GFP absorbance was measured directly (Figure 7A,B). Thus, mutations in the conserved C-terminus of Orc6 result in a reduction of ORC hexamer formed both in vitro and in vivo.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig7-v1.jpg)\n\n**Figure 7.:** (A) Western immunoblotting analysis of ORC complexes precipitated using anti-Orc2 antibody from extracts isolated from fly ovaries expressing different GFP-tagged Orc6 mutant proteins: GFP\u2013Orc6 D224A/Y225A, GFP\u2013Orc6 W228A/K229A and GFP\u2013Orc6 WT (wild type). GFP\u2013Orc6 fusion proteins were detected with anti-GFP monoclonal antibody, while Orc3 and Orc5 subunits were detected using anti-Orc3 or anti-Orc5 antibodies. Ovary extract (In), supernatant after immunoprecipitations (S) and immunoprecipitated material (IP) are shown for each transgene. (B) Quantitation of immunoprecipitated GFP from ovary extracts containing different Orc6 mutants. The Y-axis shows fluorescence emission intensity. Mean and standard deviation from three independent experiments are plotted (p\u22640.05). (C) Chromatin association of Mcm4, a member of the MCM2\u20137 complex, is reduced in orc6-null fly larvae expressing Orc6 mutants. Brains of homozygous, orc6-null (orc635/orc635) or heterozygous (orc635/Cy) Drosophila larvae expressing GFP\u2013Orc6 transgenes were isolated and subjected to salt extraction to solubilize cellular proteins. Insoluble and chromatin associated proteins were pelleted by centrifugation and analyzed by Western blotting using Mcm4 polyclonal antibodies. Pnut was used as a loading control. Total brain extracts were also analyzed to ensure equal Mcm4 expression in larvae expressing Orc6 transgenes.\n\nThe reduced levels of hexameric ORC may be expected to lead to impaired pre-RC formation. To test this premise, we analyzed chromatin association of a member of the MCM2\u20137 complex, Mcm4, in Drosophila larval brains expressing either wild-type or mutant GFP\u2013Orc6 transgenes. After salt extraction of larval brain extracts, the amount of Mcm4 in the pellet fraction was greatly reduced when mutant transgenes were expressed as the sole source of Orc6 (orc635/orc635) compared to larval brains expressing the wild-type GFP\u2013Orc6 transgenes (Figure 7C). As expected, heterozygous larval brains, which express wild-type, endogenous Orc6, did not show a Mcm4 chromatin recruitment defect. Thus, conserved C-terminal residues of Orc6 are not only required for hexameric ORC formation but also for MCM loading onto chromatin, explaining the reduced DNA synthesis previously observed in mutant flies (Balasov et al., 2009).\n\nAlthough Orc6, including the C-terminal helix, is well conserved among metazoans, human Orc6 does not appear to tightly associate with human ORC1\u20135 (Dhar and Dutta, 2000; Dhar et al., 2001; Vashee et al., 2001; Giordano-Coltart et al., 2005; Ranjan and Gossen, 2006; Siddiqui and Stillman, 2007). We therefore set out to test whether the C-terminus of human Orc6 is also important for assembly of the subunit with the rest of human ORC and whether the Orc6 MGS mutation might affect this interaction. We purified recombinant human ORC1\u20135 from insect cells, incubated it with purified human Orc6 proteins in vitro, and assayed ORC hexamer formation by pull-downs targeting MBP-tagged Orc4 within ORC1\u20135. Although weaker than seen for Drosophila, we nonetheless clearly observed an interaction between wild-type Orc6 and human ORC1\u20135, particularly when an excess of Orc6 was used (Figure 8A). In contrast, human Orc6 containing the MGS mutation (Orc6-Y232S) did not bind appreciably to ORC1\u20135 (Figure 8A). Similar results were obtained when human ORC subunits were co-expressed in insect cells (Figure 8B). As seen here with the Drosophila protein, human Orc6 has been reported to interact with Orc3 (Figure 8C) (Vashee et al., 2001; Siddiqui and Stillman, 2007). Importantly, human Orc6 containing the MGS mutation could not bind Orc3 in either the absence or presence of Orc2 (Figure 8D). These data indicate that the Orc6 C-terminus is functionally conserved in metazoans, and that the amino acid mutated in MGS patients is critical for formation of a stable hexameric initiator complex.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig8-v1.jpg)\n\n**Figure 8.:** (A) Human wild-type (WT), but not MGS mutant (Y232S), Orc6 binds to human ORC1\u20135 in vitro. Purified Orc6 was incubated with recombinant ORC1\u20135 at either equimolar ratios or with a 10 \u00d7 excess of Orc6. Orc6 binding to ORC1\u20135 was analyzed by pull-downs using amylose beads that bind MBP\u2013Orc4. Contrary to wild-type Orc6, MGS-mutant Orc6 does not associate with ORC1\u20135, even when a 10-fold excess of Orc6 is used in binding reactions. (B) Human Orc6 containing the MGS mutation does not co-purify with human ORC1\u20135 when co-expressed in insect cells. High5 cells expressing human ORC1\u20135 and either Orc6-WT or Orc6-Y232S were used in pull-downs targeting MPB-Orc1. As a negative control, Orc6-WT or Orc6-Y232S were co-expressed with MBP. Only Orc6-WT is recovered from beads, and only when Orc1\u2013Orc5 are co-expressed. The presence of Orc6 was detected by Western blotting in both pull-downs (PD) and whole-cell extracts (lower panel). The asterisk marks degradation products of MBP\u2013Orc1. (C) Subunit interactions within the human Orc2-Orc3\u2013Orc6 subcomplex. MBP-tagged human ORC subunits were co-expressed in High5 cells with 6 \u00d7 His-tagged subunits in a pairwise manner and probed for interaction by amylose pull-downs. Interactions are observed between human Orc3 and Orc2 as well as between Orc3 and Orc6. As a control, 6 \u00d7 His-tagged subunits were co-expressed with MBP alone, and no interaction is observed with MBP. Western blots (lower panels) verified that all His-tagged subunits are present in whole cell extracts. (D) The MGS mutation in human Orc6 decreases the affinity of human Orc6 for human Orc3 and reduces Orc6 recruitment into the Orc2-Orc3-Orc6 subcomplex. Human ORC subunits were co-expressed in High5 cells as indicated and analyzed by amylose pull-downs for binding. The asterisk marks a degradation product of MBP\u2013Orc3. Western blot of cell lysate shows that wild-type and mutant Orc6 are expressed in insect cells at similar levels (lower panel). Coomassie-stained gels are shown for pull-downs in (A\u2013D). Orc6-Y232S always migrated slightly slower than wild-type Orc6 in SDS-PAGE gels. Mass spectrometry confirmed that the molecular weight of wild type and Y232 Orc6 are as expected based on their amino acid sequence.\n\n### Functional conservation of the Orc6 C-terminus between metazoans and yeast\n\nMetazoan and Schizosaccharomyces pombe Orc6 have been reported to share little sequence homology with S. cerevisiae Orc6, and unique functions have been reported for metazoan and budding yeast Orc6 (Chesnokov et al., 1999; Moon et al., 1999; Dhar and Dutta, 2000; Duncker et al., 2009). For example, metazoan but not budding yeast Orc6 binds DNA, while yeast Orc6 has been reported to bind Cdt1 (Balasov et al., 2007; Chen et al., 2007; Liu et al., 2011). This lack of similarity is surprising considering the generally high conservation of other licensing factors and the central role Orc6 is reported to play during replicative helicase loading in S. cerevisiae (Takara and Bell, 2011; Fernandez-Cid et al., 2013; Frigola et al., 2013). However, in the course of analyzing our sequence alignments of Orc6, we noticed that significant homology actually exists between metazoan, S. pombe, and S. cerevisiae Orc6 (Figure 4\u2014figure supplement 1). This homology includes both the TFIIB repeat domains and the conserved helix in the Orc6 C-terminal domain that harbors the MGS mutation, indicating that all of the functional domains present in metazoan Orc6 are conserved in budding yeast Orc6 (Figure 4\u2014figure supplement 1). However, in contrast to S. pombe and metazoan Orc6, budding yeast Orc6\u2014as well as related Saccharomycotina (Candida albicans) and Pezizomycotina (Aspergillus fumigatus and Neurospora crassa)\u2014contain an insertion of \u223c100\u2013200 amino acids between the two TFIIB-like helical domains, an addition that may have complicated former analyses (Figure 4\u2014figure supplement 1). This insertion contains phosphorylation sites for cyclin-dependent kinases, as well as an RXL motif reported to bind the cyclin Clb5, and has been implicated in contributing to the prevention of DNA re-replication (Nguyen et al., 2001; Wilmes et al., 2004; Chen and Bell, 2011).\n\nSince the C-terminal domain of metazoan Orc6 associates with ORC by binding to Orc3, we reasoned that the conservation of this region in budding yeast might extend to this interaction as well. Despite previous studies, the recruitment mechanism of S. cerevisiae Orc6 into ORC has been controversial. The C-terminal 62 amino acids of S. cerevisiae Orc6 have been shown to bind ORC1\u20135, likely through interaction with Orc3 or Orc5 (Chen et al., 2007). However, Orc6 has also been shown to bind Orc2 but not Orc3 or Orc5 (Sun et al., 2012). Hence, we investigated whether S. cerevisiae Orc6 could bind to Orc2 or Orc3, and whether a mutation of the conserved tyrosine, which corresponds to the MGS mutations in human Orc6, might affect this interaction. In pull-down experiments from insect cell lysate co-expressing pairwise combinations of budding yeast Orc2, Orc3, and Orc6, we observed a clear interaction between Orc2 and Orc3, and between Orc3 and Orc6 (Figure 9A). Orc2, when expressed without Orc3, was typically degraded, preventing an assessment of whether it efficiently bound Orc6 or not. We next tested whether a mutation of the conserved MGS tyrosine to serine (Y418S) could support the binding of S. cerevisiae Orc6 to Orc3 (the MGS tyrosine in S. cerevisiae Orc6 highlighted by our alignment differs from that proposed previously [Tyr277], due to a misalignment of the region in the original study [Bicknell et al., 2011a]). Strikingly, the MGS-like mutation in S. cerevisiae Orc6 abolished the interaction with Orc3 (Figure 9B). However, in contrast to what we observed with Drosophila and human proteins, the MGS-like mutation was not sufficient to prevent Orc6 binding to the Orc2\u2013Orc3 subcomplex or to ORC1\u20135 (Figure 9C,D). Because Orc6 has been previously reported to interact with Orc2 (Sun et al., 2012), our result suggests that S. cerevisiae Orc6 is cooperatively recruited into ORC through interaction with both Orc2 and Orc3. In agreement with this interpretation, Orc6 was still recruited into ORC lacking the Orc2 subunit, albeit at reduced levels, whereas Orc6 recruitment was completely lost in the absence of Orc3 (omission of Orc3 further led to concomitant loss of Orc2) (Figure 9E). Thus, unlike in metazoans, S. cerevisiae ORC appears to possess two Orc6 binding sites, one in Orc2 and one in Orc3. Although the interaction with Orc3 is mediated by the C-terminal domain of Orc6, it is not clear which domain is responsible for binding to Orc2. However, since the Orc2\u2013Orc6 interaction appears unique to S. cerevisiae (compare Figures 3B, 8 and 9), we propose this contact may be mediated by a yeast-specific domain inserted between the two TFIIB-like domains of Orc6, which may in turn bind to the non-conserved N-terminal domain of yeast Orc2 that has been implicated previously in Orc6 interactions (Sun et al., 2012). Consistent with our interpretation, an MGS-like mutation in yeast Orc6 supports yeast growth, whereas premature stop codons that result in C-terminally truncated Orc6 proteins do not (Figure 9\u2014figure supplement 1). Taken together, our results reconcile previously conflicting data regarding Orc6 recruitment into ORC and highlight the importance of the conserved C-terminal segment of Orc6 in the formation of the hexameric ORC assembly through Orc6 binding to Orc3. This interaction appears functionally relevant, as Orc6 C-terminal amino acid residues are required for yeast viablility (Figure 9\u2014figure supplement 1) (Chen and Bell, 2011), and yeast Cdt1 fused to the C-terminal domain of Orc6 alone is able to load MCM2\u20137 to replication origins in vitro (Chen et al., 2007).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig9-v1.jpg)\n\n**Figure 9.:** (A) S. cerevisiae Orc6 binds Orc3. His-tagged Orc2, Orc3 or Orc6 were co-expressed with MBP\u2013Orc2, MBP\u2013Orc3 or MBP only in High5 cells and cell extracts were subjected to pull-downs (PD) using amylose beads. Orc6 and Orc3, as well as Orc2 and Orc3, interact directly with each other. MBP\u2013Orc2 was very unstable when expressed without Orc3. The asterisk indicates a degradation product of either MBP\u2013Orc3 or Orc2. (B) An MGS-like mutation in the C-terminal domain of S. cerevisiae Orc3 abolishes binding of Orc6 to Orc3. Wild-type (WT) Orc6 or Orc6 containing a mutation corresponding to the MGS mutation in human Orc6 (Y418S) were co-expressed with either MBP\u2013Orc3 or MBP only in insect cells. Only wild-type S. cerevisiae Orc6, but not the Y418S mutant, bound to MBP\u2013Orc3 in amylose pull-downs. (C) The MGS-like mutation in S. cerevisiae Orc6 allows incorporation of Orc6 into the Orc2-Orc3-Orc6 subcomplex. Orc6-WT and Orc6-Y418S were co-expressed with untagged Orc2 and MBP\u2013Orc3 in High5 cells. In amylose pull-downs, a ternary complex containing Orc2, Orc3, and Orc6 was recovered for both Orc6-WT and Orc6-Y418S. Since Orc6-Y418S does not interact with Orc3 alone (panel B) this result suggests that a second binding site for Orc6 exists in S. cerevisiae Orc2 which is not sensitive to the MGS-like mutation in the C-terminal domain of Orc6. (D) The S. cerevisiae Orc3\u2013Orc6 interaction is not essential for hexameric ORC formation. S. cerevisiae ORC subunits were co-expressed in High5 cells with Orc6-WT or Orc6-Y418S and cell extracts were subjected to pull-downs (PD) using amylose beads binding to MBP\u2013Orc1. All six subunits co-purify with MBP\u2013Orc1. Due to the similar migration of Orc6 and Orc4/Orc5, bead-bound Orc6 was detected by Western blotting using anti-His antibody. No Orc6 was recovered in control pull-downs from cells expressing Orc6 and MBP. (E) At least two different binding sites recruit S. cerevisiae Orc6 into ORC. S. cerevisiae ORC subunits were co-expressed in insect cells to reconstitute ORC containing all six ORC subunits (-), ORC lacking Orc2 (no Orc2) and ORC lacking Orc3 (no Orc3). Amylose pull-downs targeting MBP\u2013Orc1 result in reduced Orc6 incorporation into ORC in the absence of Orc2, and no Orc6 is recovered when Orc3 is absent. Omission of Orc3 also resulted in loss of co-purification of Orc2. As in (D) Orc6 was detected by Western blotting (WB). Asterisks in (D and E) indicate a protein contaminant binding to amylose beads. In (A\u2013E) Coomassie-stained SDS-PAGE gels are shown for pull-downs and Western blots (WB) of whole cell extract verify that all His-tagged subunits were expressed.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (A) Schematic of Orc6 constructs tested for complementation. Orc6 lacking C-terminal amino acid residues was generated by introducing stop codons at the appropriate positions in the plasmid expressing Orc6. The results of the complementation analysis are summarized. (B) Complementation analysis of S. cerevisiae Orc6. Plasmids expressing no Orc6 (empty vector), Orc6 wild-type (WT) or mutated Orc6 as indicated were transformed into strain ySC166 carrying a degron fusion of the chromosomal copy of Orc6 (Chen et al., 2007). Transformants were selected for the plasmid in permissive growth conditions, and then replica-plated and grown in non-permissive conditions. The number of viable colonies is significantly reduced in cells expressing Orc6 lacking parts of the conserved C-terminal domain.\n\n## Discussion\n\nA majority of the components of the core DNA replication initiation machinery appear evolutionary conserved across eukaryotes, suggesting that structural and mechanistic aspects of replicative helicase loading are as well. In this study, we have investigated the architecture of metazoan ORC, with an emphasis on Orc6, which has been thought to play distinct roles during pre-RC assembly in S. cerevisiae compared to metazoans. We find that the C-terminal domain of Orc6 plays a critical and highly conserved function in localizing the subunit to the core ORC1\u20135 subcomplex in flies, humans and budding yeast. The significance of this association is emphasized by the fact that a mutation in this region of Orc6, which has been linked to the onset of Meier-Gorlin syndrome, abrogates formation of fully intact ORC hexamers, suggesting a molecular mechanism for reduced origin licensing in this subset of MGS patients.\n\n### Subunit architecture of metazoan ORC\n\n5 out of the 6 ORC subunits are well conserved between yeast and metazoans, predicting that substantial structural homology should exist between the respective ORC complexes (Duncker et al., 2009). However, this paradigm has been challenged by apparent differences in shape between previous ScORC and DmORC EM reconstructions; for example, ScORC forms a somewhat flattened crescent, whereas DmORC has a pronounced third dimension and adopts a more helical conformation (Speck et al., 2005; Clarey et al., 2006) (compare Figure 1\u2014figure supplement 2A, Figure 10A). These differences were too significant to allow the subunit order determined for ScORC to be mapped directly onto DmORC (Chen et al., 2008; Sun et al., 2012), an analysis complicated by the low-resolution nature of initial ORC EM models (Speck et al., 2005; Clarey et al., 2006, 2008).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/00882/elife-00882-fig10-v1.jpg)\n\n**Figure 10.:** (A) Different views of S. cerevisiae ORC (EMDB 1156, Speck et al., 2005) and the new Drosophila ORC structure (this study) are compared (a more recent, higher-resolution EM model of budding yeast ORC in isolation (Sun et al., 2012) has been not deposited into the EM database and so could not be used here). The localization of ORC subunits as reported for S. cerevisiae ORC (Chen et al., 2008; Sun et al., 2012) and Drosophila ORC (this study) are indicated. (B) Model for AAA+ subunit architecture and Orc6 recruitment in ScORC and DmORC. In contrast to Drosophila, yeast Orc6 also interacts with Orc2 (Sun et al., 2012). The MGS mutation in the C-terminal domain of Orc6 impedes binding of Orc6 to the Orc3 insertion and recruitment of Orc6 into metazoan ORC, likely resulting in reduced origin licensing. Numbers indicate the respective ORC subunit, \u2018Ins\u2019 the Orc3 insertion, and \u2018IIB\u2019 the TFIIB domains of Orc6.\n\nThe improved resolution EM structure of DmORC presented here, together with experimental mapping of the ORC subunits in the EM structure, provides the first organizational model for the architecture of metazoan ORC (Figure 10B). Characteristics observed in the current structure, but not in previous ones, include a more featured AAA+-ring and likely subunit borders (Figure 2B). Importantly, this new EM structure of ATP\u03b3S-bound DmORC is more similar to budding yeast ORC EM structure (Speck et al., 2005; Sun et al., 2012, 2013), although the fly complex displays more surface features and is thicker when viewed from the lateral edge of the AAA+ core (Figure 10A). Moreover, the AAA+ subunit order determined here for DmORC\u2014Orc1-Orc4-Orc5-Orc2\u2013Orc3\u2014agrees with that published for ScORC (Figure 10B). Although both the published budding yeast ORC structures and the current DmORC structure lack the resolution to unambiguously locate AAA+ and winged helix domains of the ORC subunits, they nonetheless demonstrate fundamental similarities in ORC structure from yeast to metazoans.\n\nOne notable difference we do observe between yeast ORC and DmORC is that Drosophila Orc6 is flexibly tethered to ORC through Orc3 and is hence invisible in the EM 3D structure (Figures 3A and 10B). By comparison, S. cerevisiae Orc6 has been reported to contribute more significantly to EM density of yeast ORC (Chen et al., 2008) and has been reported to bind to Orc2 and not Orc3 (Sun et al., 2012). Our pull-down data suggest that the more stable conformation seen for budding yeast Orc6 may be due to the existence of binding sites for the subunit on both Orc2 and Orc3 within ORC1\u20135, as opposed to just Orc3 in the Drosophila complex (Figure 9).\n\n### A replicative function for the conserved C-terminal helix in Drosophila Orc6\n\nIn Drosophila, Orc6 is an essential protein, with reduced Orc6 levels resulting in reduced DNA replication in both cell culture and flies (Chesnokov et al., 2003; Balasov et al., 2009). Replicative functions have been attributed to the N-terminal TFIIB-like region of Orc6, whereas the C-terminal domain is required for cytokinesis and interacts with the septin Pnut (Chesnokov et al., 2003; Balasov et al., 2007, 2009; Huijbregts et al., 2009). Our results here show that the C-terminus of Orc6 is also critical for DNA replication. Orc6 is a stable component of Drosophila ORC, and ORC lacking Orc6 cannot support DNA replication in vitro in ORC-depleted Drosophila extracts (Chesnokov et al., 2001). Since the C-terminus of Orc6 mediates the association of Orc6 with ORC (Figures 4\u20137), we predict that truncations or mutations abrogating this interaction should impair DNA replication. Indeed, the expression of C-terminally truncated or mutated Orc6 transgenes in orc6-null flies results in reduced levels of Mcm4 associated with chromatin (Figure 7C), consistent with reduced levels of replicative helicase loading. These observations may explain the previously described cell-cycle arrest in mitosis that coincides with broken and uncondensed chromosomes, as well as reduced BrdU incorporation in neuroblasts observed in these fly strains, suggesting DNA is underreplicated (Balasov et al., 2009). Moreover, Orc6 constructs lacking part of the C-terminal domain are compromised for initiating DNA replication in Drosophila extracts (Balasov et al., 2007). Our results provide a mechanistic explanation for these observations: since Orc6 contributes to recruitment of ORC to chromatin through the binding of its TFIIB-like domains to DNA (Balasov et al., 2007), loss of the interaction between Orc6 and ORC1\u20135 likely reduces the levels of chromatin-associated ORC and impairs ORC-dependent pre-RC assembly. The more moderate replicative phenotype of Orc6 mutations that affect Orc6 recruitment into ORC, compared to Orc6 mutations that affect the DNA binding activity of Orc6 (Balasov et al. 2007, 2009), suggests that Orc6 might make contacts with non-ORC pre-RC components that help recruit ORC to DNA during pre-RC assembly. Since a majority of ORC in fly ovary and embryo extracts is not bound to origins, we could not test if mutant Orc6 is recruited into the pre-RC with our assays.\n\n### A molecular link between an MGS mutation in Orc6 and impaired origin licensing\n\nOrc6 is one of several pre-RC components found mutated in Meier-Gorlin syndrome (MGS) patients. In certain MGS patients, compound heterozygous mutations inactivate one ORC6 allele and introduce a missense mutation in the other allele that substitutes serine for tyrosine in a conserved C-terminal helix of the Orc6 protein. We show that tyrosine-to-serine mutation reduces the affinity of Orc6 for the core ORC1\u20135 complex in both Drosophila and humans (Figures 6 and 8), a finding that would appear to implicate this subunit in the formation of the pre-RC. Interestingly, earlier observations have appeared inconsistent with such a role of Orc6 in some metazoans; for example, in contrast to the Drosophila system, Orc6 is only loosely or transiently associated with ORC1\u20135 in humans as well as in other metazoans, while in vitro DNA replication experiments using Xenopus extracts have suggested that Orc6 may not be required for DNA replication in this context (Chesnokov et al., 1999; Dhar and Dutta, 2000; Chesnokov et al., 2001; Dhar et al., 2001; Gillespie et al., 2001; Vashee et al., 2001, 2003; Giordano-Coltart et al., 2005; Ranjan and Gossen, 2006; Siddiqui and Stillman, 2007). Nevertheless, evidence is emerging that Orc6 is essential for DNA replication in these species as well. First, depletion of Orc6 in human cell lines causes licensing and DNA replication defects (Prasanth et al., 2002; Stiff et al., 2013). Second, human Orc6 is required in vitro for efficient DNA replication in Orc6-depleted Xenopus extracts (Liu et al., 2011); the initial discrepancies between the Drosophila system and other metazoan systems may reflect different extents of immunodepletion of Orc6 from Xenopus extracts due to the use of different antibodies. Third, tethering of human Orc6 to DNA in human cells creates a functional origin and recruits other factors of the licensing machinery (Thomae et al., 2011). Finally, immunodepletion of Orc6 from HeLa cell extracts impairs pre-RC assembly on plasmid DNA (Thomae et al., 2011).\n\nOur data lend credence to the idea that the MGS mutation identified in human Orc6 is hypomorphic, and that the diminished affinity of MGS mutant Orc6 for ORC1\u20135 compromises pre-RC formation. Consistent with this interpretation, we observe reduced but weak binding of a Drosophila Orc6 construct bearing the MGS mutation to either Orc3 or ORC1\u20135 in equilibrium binding experiments and pull-down assays (Figure 6B,D). Nonetheless, additional interactions of Orc6 with pre-RC components other than ORC subunits during origin licensing could also contribute to Orc6 incorporation into the pre-RC, explaining why the MGS mutation is not lethal in humans. In addition to its canonical function during replication initiation, metazoan Orc6 is also essential for cytokinesis (Prasanth et al., 2002; Chesnokov et al., 2003; Bernal and Venkitaraman, 2011), helps to control centrosome copy number and, along with other pre-RC components, appears to be essential for formation of primary cilia (Stiff et al., 2013). The C-terminal domain of Orc6 harboring the MGS mutation is important for cytokinetic function, both in Drosophila and humans (Chesnokov et al., 2003; Bernal and Venkitaraman, 2011). At this point it is not known whether the MGS mutation specficially impairs Orc6\u2019s role in cytokinesis, or whether the C-terminal domain of Orc6 is involved in regulating centrosome copy number and cilia formation in humans. In addition, it is not understood how the defects in origin licensing caused by other MGS mutations would feed back to ciliogenesis (Stiff et al., 2013). Nevertheless, given the fact that many independent mutations in different human ORC subunits, where some have been shown to affect replication functions directly, and hypomorphic mutations in the ATR replication check point protein lead to primordial dwarfism, it is hard to escape the inference that loss of ORC replication licensing functions are indeed epistatic to the MGS phenotype. Interestingly, MGS patients do not appear to have an increased predisposition to cancer, suggesting chromosome stability is not compromised (de Munnik et al., 2012a, b). How these observations are linked, how they relate to the phenotypes observed in MGS patients, and how specific MGS mutations intercept these processes will be important tasks for future studies.\n\n### Conserved domain organization in S. cerevisiae and metazoan Orc6\n\nS. cerevisiae Orc6 and metazoan Orc6 have been shown to perform distinct roles in initiating DNA replication: metazoan Orc6 binds DNA through its TFIIB-like domains and helps recruiting ORC to chromatin (Chesnokov et al., 2001; Balasov et al., 2007; Liu et al., 2011), while S. cerevisiae Orc6 does not bind DNA but has been shown to be directly essential for the loading step of the MCM double hexamer onto DNA (Lee and Bell, 1997; Balasov et al., 2007; Chen et al., 2007; Duncker et al., 2009; Evrin et al., 2009; Remus et al., 2009; Gambus et al., 2011; Liu et al., 2011; Takara and Bell, 2011; Fernandez-Cid et al., 2013; Frigola et al., 2013). Up to now, this difference has seemed consistent with the apparent lack of significant sequence homology between these proteins. However, we found that the C-terminal helix that is crucial for Orc6 association with metazoan ORC is actually highly conserved in S. cerevisiae Orc6, both in sequence and in function (Figure 4\u2014figure supplement 1, Figure 9). Moreover, we found that the sequence homology between metazoan and S. cerevisiae Orc6 extends to the TFIIB-like folds identified in metazoan Orc6 (Figure 4\u2014figure supplement 1). Interestingly, budding yeast Orc6 lacks multiple basic amino acids that are conserved in metazoan Orc6, resulting in a lower isoelectric point for its TFIIB domains (pI = 7.5) compared to the Drosophila protein (pI = 9.0). This difference in surface charge may explain the distinct DNA binding propensities of metazoan and S. cerevisiae Orc6 (Lee and Bell, 1997; Balasov et al., 2007; Chen et al., 2007; Liu et al., 2011). Nonetheless, because the TFIIB domains are preserved across eukaryotic Orc6 orthologs, it is tempting to speculate that these folds also play an important conserved function during origin licensing. While recent reports indicate that Orc6 may not be essential for MCM2\u20137 recruitment to origins, it is essential for loading of MCM double hexamers onto origin DNA (Fernandez-Cid et al., 2013; Frigola et al., 2013). The loading function of Orc6 may involve binding of Cdt1 or another pre-RC component through direct protein interactions, as has been reported for S. cerevisiae Orc6 and Cdt1 (Chen et al., 2007). Notably, of the two regions of Orc6 that were shown to independently interact with Cdt1, each contain one of the TFIIB-like domains identified here in yeast Orc6 (Chen et al., 2007), suggesting Cdt1 binding may be conserved in metazoan Orc6 as well. Along these lines, acquisition of the MGS mutation in human Orc6 would be predicted to reduce licensing capacity and MCM loading by impeding Orc6 recruitment into ORC and pre-replicative complex formation, respectively (Figure 10B). Future efforts using reconstituted systems will be needed to test these concepts further.\n\n## Materials and methods\n\n### Expression and purification of recombinant ORC\n\n#### Untagged Drosophila ORC for EM studies\n\nDrosophila ORC was recombinantly expressed in High5 cells using the baculovirus expression system. Individual ORC subunits were cloned into the pFastBac transfer vector (Invitrogen Life Technologies, Grand Island, NY) or a modified transfer vector containing ligation-independent cloning (LIC) sites. Drosophila Orc1 was cloned with an N-terminal 6 \u00d7 Histidine (6 \u00d7 His) tag and Drosophila Orc4 with an N-terminal maltose binding protein (MBP) tag, both followed by a tobacco etch virus (TEV) protease cleavage site. The remaining subunits, Orc2, Orc3, Orc4, and Orc6, contained no purification tag. All clones were verified by DNA sequencing to not contain missense or nonsense mutations.\n\nBacmids were generated from transfer vectors in DH10Bac cells and isolated according to Bac-to-Bac protocol (Invitrogen Life Technologies). Bacmid DNA was transfected into Sf9 cells using Cellfectin II (Invitrogen Life Technologies) to generate initial baculovirus stocks. Viruses were amplified for two generations in Sf9 cells to obtain high titer viruses expressing individual ORC subunits.\n\nFor purification of recombinant Drosophila ORC, 4 l of High5 cells in shaking culture were co-infected with high titer baculoviruses expressing the six different ORC subunits. In the case of ORC1\u20135, baculovirus expressing Orc6 was omitted. 48 hr post infection, High5 cells were harvested by centrifugation in a Beckman Avanti J-20 centrifuge at 202 \u00d7 g for 30 min. Cells were resuspended in 25 ml lysis buffer (50 mM Tris HCl pH 7.8, 50 mM imidazole pH 7.8, 300 mM KCl, 10% glycerol, 200 \u00b5M PMSF, 1 \u00b5g/ml leupeptin) per liter High5 cells and lysed by gentle sonication at 4\u00b0C. Lysate was clarified by centrifugation in a Sorvall RC-5B superspeed centrifuge at 38,724 \u00d7 g for 1 hr and subsequently precipitated with 0.78 M (NH4)2SO4 for 30 min on ice. After an additional centrifugation step at 38,724 \u00d7 g for 1 hr, the supernatant was filtered with a 1.2 \u00b5m Acrodisc syringe filter (PALL Life Sciences, Ann Arbor, MI). This clarified lysate was passed over a 5 ml HisTrap HP column (GE Healthcare Biosciences, Pittsburgh, PA), washed with 60 ml lysis buffer, and eluted with a 50\u2013250 mM imidazole gradient in elution buffer (50 mM Tris HCl pH 7.8, 300 mM KCl, 10% glycerol) over 30 ml. Eluted ORC was subsequently bound to a 20 ml amylose column (New England Biolabs, Ipswich, MA), washed with 50 ml wash buffer (50 mM Tris HCl pH 7.8, 300 mM KCl, 10% glycerol), and eluted with 30 ml elution buffer (50 mM Tris HCl pH 7.8, 300 mM KCl, 10% glycerol, 20 mM maltose). ORC containing fractions were pooled and 6 \u00d7 His- and MBP-tags on Orc1 and Orc4, respectively, were cleaved off overnight with TEV protease at 4\u00b0C. This typically resulted in complete cleavage as judged by a shift in migration of Orc4 during SDS-PAGE before and after TEV digest. Untagged ORC was then concentrated to \u223c 2 ml using Centriprep-30K concentrators (EMD Millipore, Billerica, MA) and further purified by gel filtration chromatography on a HiPrep 16/60 Sephacryl S-300 HR column (GE Healthcare Biosciences). The elution volume was consistent with the expected size of the ORC hexamer. Purified ORC was aliquoted, flash frozen in liquid nitrogen and stored at \u221280\u00b0C.\n\n#### Drosophila ORC containing localization tags for EM\n\nAll ORC subunits were cloned into LIC converted baculovirus transfer vectors fused to either an N-terminal MBP-tag followed by a TEV cleavage site or a C-terminal msfGFP-tag. For localization of Orc1, a tandem N-terminal 6 \u00d7 His-MBP-tag or a combination of N-terminal 6 \u00d7 His- and C-terminal msfGFP-tags were used to maintain the 6 \u00d7 His-tag on Orc1 for affinity purification. In the case of Orc1 and Orc2, additional N-terminal 6 \u00d7 His-MBP- and MBP-tagged constructs, respectively, were generated that lack non-conserved amino acid residues, that is amino acid residues 1\u2013449 for Orc1 and amino acid residues 1\u2013265 for Orc2. Bacmids and baculoviruses were generated as described for purification of untagged ORC.\n\nFor expression of MBP-tagged ORCs, 4 l of High5 cells were co-infected expressing 6 \u00d7 His-Orc1, one MBP-tagged subunit and respective untagged subunits. Expression and purification of ORC complexes were performed as described above with the exception of the TEV protease digestion. This step was omitted to keep the MBP-tag on ORC. GFP-tagged ORCs were expressed by co-infection of High5 cells with baculoviruses expressing 6 \u00d7 His-Orc1, MBP-Orc4, and respective GFP-tagged and untagged ORC subunits. In the case of ORC-Orc4-GFP, the MBP-tag used for purification was on Orc6. Expression and purification of ORC-GFP complexes were performed as described for untagged ORC, including the TEV cleavage step to remove 6 \u00d7 \u2212His- and MBP-tags from ORC.\n\n#### ORC1\u20135 for biochemistry\n\nIn vitro Orc6 binding experiments were performed with recombinant Drosophila ORC containing subunits Orc1\u2013Orc5 (referred to as ORC1\u20135). This complex was expressed by co-infecting 8 l of High5 cells with baculoviruses expressing 6 \u00d7 His-Orc1, MBP\u2013Orc4 as well as untagged Orc2, Orc3, and Orc5. Purification was performed as described for hexameric ORC except for two modifications: (1) reducing agents were added to purification buffers (1 mM \u03b2-mercaptoethanol during Nickel-affinity and 1 mM DTT during amylose affinity and gel filtration chromatography) and (2) the TEV cleavage step was omitted, leaving the 6 \u00d7 His- and MBP-tags on Orc1 and Orc4, respectively. Human ORC1\u20135 was expressed and purified analogously to Drosophila ORC1\u20135.\n\n### Purification of Orc6\n\nDrosophila and human Orc6 proteins were expressed in insect cells. Individual genes were cloned into LIC converted baculovirus transfer vectors adding an N-terminal 6 \u00d7 His-tag. N- and C-terminal truncations of Drosophila Orc6 (amino acids 94\u2013257, 147\u2013257, 187\u2013257, 1\u2013200, 1\u2013220, 1\u2013232) were generated by PCR amplification of specified regions and cloned as N-terminal 6 \u00d7 His-fusions into baculovirus transfer vectors by ligation-independent cloning. Point mutations in Orc6 were obtained by site-directed mutagenesis. All clones were verified by DNA sequencing. Bacmids and baculoviruses were generated as described above.\n\nFor purification of all human and Drosophila Orc6 proteins, 2 l of High5 cells were infected with baculoviruses expressing respective wild-type or mutant Orc6 proteins. After 48 hr, cells were harvested and lysate was prepared as described in detail above for Drosophila ORC. Briefly, cells were resuspended in 50 ml lysis buffer (50 mM Tris HCl pH 7.8, 50 mM imidazole pH 7.8, 600 mM KCl, 10% glycerol, 1 mM \u03b2-mercaptoethanol, 200 \u00b5M PMSF, 1 \u00b5g/ml leupeptin) and lysed by sonication. Lysate was clarified by centrifugation and a 0.78 M (NH4)2SO4 precipitation, followed by another centrifugation step. Subsequently, Orc6 was bound to a 5 ml HisTrap HP column (GE Healthcare Biosciences) and washed with 100 ml lysis buffer. Salt was reduced to 300 mM KCl by doing an additional wash with 50 ml buffer (50 mM Tris HCl pH 7.8, 50 mM imidazole pH 7.8, 300 mM KCl, 10% glycerol, 1 mM \u03b2-mercaptoethanol). Orc6 was eluted by increasing the imidazole concentration to 250 mM over 30 ml. Fractions containing Orc6 were pooled, concentrated and further purified by gel filtration chromatography on a HiPrep 16/60 Sephacryl S-200 HR column (GE Healthcare Biosciences).\n\n### Electron microscopy and image processing\n\n#### Sample preparation and data collection\n\nFor negative stain electron microscopy (EM), untagged Drosophila ORC was diluted to 30 nM in buffer containing 20 mM Tris HCl pH 7.8, 300 mM KCl, 5 mM MgCl2 and either no nucleotide or 1 mM ADP, ATP, AMPPNP or ATP\u03b3S. 4 \u00b5l of sample were adsorbed for 20 s to a glow discharged 400 mesh EM grid containing a continuous carbon film. Grids were stained with 2% uranly formate (wt/vol), slightly blotted from the side to remove excess stain and allowed to dry.\n\nORC was imaged in a Tecnai T12 BIOTWIN transmission electron microscope equipped with a LaB6 cathode and operated at 120 keV. Images were collected at a nominal magnification of 49,000 (2.18 \u00c5/pixel at the specimen level) with an electron dose of 20\u201330e\u2212/\u00c52 using a 4K \u00d7 4K TVIPS TemCam-F416 CCD camera and the Leginon software package (Suloway et al., 2005).\n\n#### Image processing\n\nInitial image processing steps up to the point of particle stack creation were performed in the Appion image processing environment (Lander et al., 2009). Initially, power spectra of micrographs were visually inspected and micrographs showing evidence of drift or significant astigmatism were excluded from further processing. CTF parameters of the micrographs were estimated using CTFFIND (Mindell and Grigorieff, 2003). Defocus values ranged from \u22120.4 to \u22121.2 \u00b5m. CTF correction included flipping of micrograph phases using SPIDER (Frank et al., 1996). Particles were automatically selected in a reference-free manner using a Difference of Gaussian (DoG) image transform particle picker (Voss et al., 2009). Particle stacks were extracted with an initial box size of 160 \u00d7 160 pixel and subsequently binned by a factor of two, resulting in a pixel size of 4.36 \u00c5/pixel. Particle images were normalized using the Ramp method in XMIPP, which included the removal of pixels with values 4.5\u03c3 above or below the mean (Sorzano et al., 2004; Scheres et al., 2008). Image outliers containing particle aggregates or precipitates were identified by sorting particle images within the stack based on general statistics parameters using the sort-by-statistics function in XMIPP and removed from the image stack. The resulting cleaned image stacks contained 35,000 particles for untagged Drosophila ORC in the presence of ATP\u03b3S and between 20,000 to 40,000 particles for data sets of ORC complexes in the presence of other nucleotides and for ORC containing EM localization tags in individual subunits.\n\n2D image analysis was performed by iterative alignment and classification of the particle images using the refine2d.py function in the EMAN software package, generating between 100\u2013200 classes for each complex (Ludtke et al., 1999). Class averages of untagged ORC indicated that ORC adopts a slightly preferred orientation on the carbon film. To increase the number of orientations for 3D reconstruction, we recorded additional micrographs at 30\u00b0 nominal stage tilt. Particles were automatically selected with DoG picker (Voss et al., 2009) and extracted using a 256 \u00d7 256 box size. CTF parameters of micrographs as well as tilt axes and tilt angles were estimated with CTFTILT and local defocus values for each particle were calculated based on the particle position in the micrograph and the CTFTILT estimates (Mindell and Grigorieff, 2003). Phases of particle images were corrected with SPIDER. After CTF correction, the box size was reduced to 160 \u00d7 160 pixel and particle images were binned by a factor of two, resulting in an image stack with a final box size of 80 \u00d7 80 (4.36 \u00c5/pixel) containing 35,000 particles. This stack was combined with the 0\u00b0 tilt data, yielding an image stack containing 70,000 particles which was used for further processing.\n\n3D volumes of ORC were reconstructed by iterative projection-matching refinement using SPIDER (Frank et al., 1996). As a starting model, we used the previous 34 \u00c5-resolution EM reconstruction of Drosophila ORC (EMDB-1252) (Clarey et al., 2006). To avoid model bias, the starting volume was low-pass filtered using a Butterworth filter with stop band and pass band of 100 \u00c5 and 200 \u00c5, respectively. Images of untilted and 30\u00b0 tilted particles were assigned Euler angles by comparison with reference projections and back-projected to obtain a new volume, which served as a reference during the next refinement iteration. The initial angular increment for projection-matching was 30\u00b0 and was decreased progressively to 8\u00b0 during the refinement. The data converged very quickly to a stable 3D volume of ORC with a resolution of 22 \u00c5 based on the 0.5 Fourier shell correlation (FSC) criterion.\n\n3D reconstructions of MBP- or GFP-tagged ORC were performed using the processing scheme above. The new, untagged ORC reconstruction low-pass filtered to \u223c50 \u00c5 with a Butterworth filter served as an initial starting model.\n\n#### Freehand test\n\nThe absolute hand of Drosophila ORC was determined using the Freehand test (Rosenthal and Henderson, 2003; Henderson et al., 2011). Tilt-pairs of untagged Drosophila ORC particles recorded at 0\u00b0 and 50\u00b0 nominal stage tilt were manually picked with XMIPP. 67 tilt-pairs were subjected to the fast-freehand test as implemented by John Rubinstein (Hospital for Sick Children, Toronto, Canada) and adapted by Michael Cianfrocco (University of California Berkeley, Berkeley) to use the EMAN2 and SPARX libraries for alignment of particles to model projections (Hohn et al., 2007; Tang et al., 2007). The agreement between the tilted particles and the model projections is described by a correlation coefficient that is plotted as a function of tilt axis and tilt angle. For ORC, a correlation peak was found at a tilt angle of \u221250\u00b0 instead of +50\u00b0, suggesting the hand of the calculated ORC EM volume was incorrect. For further interpretation of the ORC EM volume, the hand was inverted. As a control, an analogous freehand test was performed with the ribosome, the absolute hand of which is known. In the case of the ribosome, peak correlation was observed at the correct tilt angle and not the inverse, as is expected for the correct absolute hand. The ORC EM volume was deposited in the EM data bank (accession number EMD-2479).\n\n### In vitro binding experiments of Orc6 to ORC1\u20135\n\n#### In vitro pull-downs\n\nTo probe the interaction of Drosophila Orc6 with Drosophila ORC1\u20135, 100 pmol of the respective purified Orc6 protein and 100 pmol of purified ORC1\u20135 (or 100 pmol Orc6 alone in control reactions) were mixed in a total volume of 50 \u00b5l (final reaction buffer contains 50 mM Tris HCl pH 7.8, 300 mM KCl, 10% glycerol, 1 mM DTT) and incubated on ice for 1 hr. Reactions were added to 25 \u00b5l amylose beads (New England Biolabs) for 30 min to bind ORC1\u20135 via MBP\u2013Orc4. Amylose beads were washed three times with 1 ml of reaction buffer and bound proteins were eluted from beads with 20 \u00b5l reaction buffer containing 20 mM maltose. Eluted proteins were analyzed by SDS-Page and stained with Coomassie Brilliant Blue.\n\nTo test binding of wild-type and MGS mutant human Orc6 to human ORC1\u20135, 100 pmol ORC1\u20135 were incubated with either 100 pmol or 1 nmol of the respective Orc6 protein. Otherwise, conditions used for binding reactions and pull-downs were identical to those described for Drosophila proteins.\n\n#### Fluorescence anisotropy\n\nTo measure the effect of mutations or truncations of Orc6 on the affinity of Orc6 for ORC1\u20135, fluorescence anisotropy experiments were performed using Drosophila and human Orc6 proteins (wild type, truncations and point mutants), N-terminally labeled with Alexa Fluor 488 5-SDP ester (Invitrogen Life Technologies). For labeling, 200 \u00b5l of the respective Orc6 protein at \u223c10 mg/ml were dialyzed overnight into buffer containing 50 mM HEPES pH 7.5, 300 mM KCl, 10% glycerol, 1 mM DTT. Protein was then mixed with 0.5 mg of Alexa Fluor 488 5-SDP ester and incubated 1 hr at 4\u00b0C. The labeling reaction was stopped by the addition of 30 \u00b5l 1M lysine in buffer 50 mM Tris HCl pH 7.8, 300 mM KCl, 10% glycerol, 1 mM DTT. Free label was removed by buffer exchanging protein into 50 mM Tris HCl pH 7.8, 300 mM KCl, 10% glycerol, 1 mM DTT using Micro Bio Spin six columns (Biorad, Hercules, CA). Protein and dye absorbance were measured at 280 nm and 495 nm, respectively, and corrected protein and incorporated dye concentrations were calculated according to the manufacturer\u2019s instructions. Labeling efficiencies ranged from \u223c10% to \u223c50%.\n\nBinding reactions were performed in 80 \u00b5l reactions containing twofold serially diluted ORC1\u20135 ranging from 1 \u00b5M to 122 pM and 30 nM Alexa Fluor 488 labeled Orc6 in binding buffer (50 mM Tris HCl pH 7.8, 300 mM KCl, 5% glycerol, 1 mM DTT, 0.1 mg/ml BSA). After incubation on ice for 1 hr, 20 \u00b5l of each reaction were transferred into a 384-well plate (Corning Life Sciences, Tewksbury, MA) in triplicates and FP was measured in a Victor 3.5 multilabel plate reader (Perkin Elmer, Waltham, MA) with excitation and emission filters of 485 and 535 nm, respectively. Measured fluorescence polarization values were converted into anisotropy (FA) values and subsequently background-subtracted using a no-ORC1\u20135 control reaction (yields \u0394FA). Averages and standard deviations were calculated from three independent binding experiments and plotted as a function of ORC1\u20135 concentration. Data were fit to the explicit solution of the single-site binding equation by nonlinear regression analysis (Heyduk and Lee, 1990; Stein et al., 2001).\n\n### Pull-downs from insect cells\n\nTo probe interactions of ORC subunits in vivo when co-expressed in insect cells, 50 ml of High5 cells were co-infected with baculovirus expressing respective subunits. Bait subunits were tagged N-terminally with MBP and prey subunits tested for interaction with the bait were tagged with a 6 \u00d7 His tag at the N-terminus. This allowed us to ensure expression of the prey protein in whole cell extract by Western blotting. 2 days post infection, High5 cells were harvested by centrifugation at 1,000 \u00d7 g and were resuspended in 1.4 ml lysis buffer (50 mM Tris HCl pH 7.8, 300 mM KCl, 10% glycerol, 1 mM DTT, 200 \u00b5M PMSF, 1 \u00b5g/ml leupeptin). Cells were lysed by gentle sonication for 10 s and subsequently centrifuged at \u223c16,000 \u00d7 g for 30 min (NH4)2SO4 was added to a final concentration of 0.78 M to the lysate and samples were incubated on ice for 30 min. After an additional centrifugation at \u223c16,000 \u00d7 g for 30 min, the clarified lysate was added to 50 \u00b5l of Amylose beads (New England Biolabs) to bind MBP-tagged bait subunit. After 30 min incubation, beads were washed three times with 1 ml of lysis buffer. Bound proteins were eluted either by addition of 40 \u00b5l of 20 mM maltose in lysis buffer or by 40 \u00b5l of SDS loading dye. Eluted proteins were analyzed by SDS-PAGE and subsequent staining with Coomassie Brilliant Blue.\n\nTo confirm that 6 \u00d7 His-tagged prey proteins are expressed, whole cell extracts were analyzed by Western blotting. 100 \u00b5l of High5 cells were harvested and resuspended in 100 \u00b5l of SDS-loading buffer. Samples were boiled and 5 \u00b5l were loaded on an SDS-PAGE gel. After electrophoresis, proteins were transferred to Immobilon-PSQ membrane (EMD Millipore) using a Trans-Blot semi-dry electrophoretic transfer cell (Biorad). Membranes were probed for His-tagged proteins using a monoclonal anti-His antibody (GE Healthcare Biosciences) at a dilution of 1:10,000 in PBS-T containing 5% (wt/vol) nonfat milk. HRP-conjugated goat anti-mouse IgG (Pierce Thermo Fisher Scientific, Rockford, IL) was diluted 1:20,000 in PBS-T and used as a secondary antibody.\n\n### Immunoprecipitation of ORC from fly ovaries\n\nHeterozygous flies orc635/Cy, GFP-orc6-wt; orc635/Cy, GFP-orc6-W228A/K229A; orc635/Cy, GFP-orc6-D224A/Y225A contain endogenous orc6 deletion and GFP\u2013Orc6 fusion transposons in which designated amino acids were mutated to alanine. 10\u201312 freshly dissected ovaries were crushed with a glass homogenizer in 100 \u00b5l of high salt IP buffer (25 mM HEPES pH 7.6, 12.5 mM MgCl2, 100 mM KCl, 0.1 mM EDTA, 450 mM NaCl, 0.01% Triton X100) and extracted for 1 hr at 4\u00b0C with continuous rotation. Extracts were pre-cleared by centrifugation at 15,000 \u00d7 g for 15 min. Supernatant was diluted three times with regular IP buffer (25 mM HEPES 7.6, 12.5 mM MgCl2, 100 mM KCl, 0.1 mM EDTA, 0.01% Triton X100). Protein A-Sepharose (BioVision, Milpitas, CA) and rabbit polyclonal Orc2 antibodies were incubated with supernatant for 3 hr, washed three times with IP buffer (20\u201330 min) and diluted in 10 \u00b5l of IP buffer. Samples were boiled in loading buffer, separated in 10% SDS-polyacrylamide gels and transferred to Immobilon-P membrane (EMD Millipore). ORC subunits were detected by Western blotting with anti-GFP monoclonal antibody (Clontech Laboratories, Mountain View, CA) as well as anti-Orc3 or anti-Orc5 antibodies. In addition, GFP fluorescence of samples was directly measured immediately after washing. 100 \u00b5l were transferred into a 384-well plate and GFP fluorescence was detected on Multi-Mode Microplate Reader Synergy 2 (BioTek, Winooski, VT) with excitation filter 485/20, emission filter 528/20 and sensitivity 110. Data were normalized to orc635/Cy strain fluorescence emission intensity.\n\n### MCM2\u20137 chromatin association in Drosophila third instar larvae brains\n\nHomozygous (orc635/orc635, GFP-orc6-wt; orc635/orc635, GFP-orc6-W228A/K229A; orc635/orc635, GFP-orc6-D224A/Y225A) or heterozygous (orc635/Cy, GFP-orc6-wt; orc635/Cy, GFP-orc6-W228A/K229A; orc635/Cy, GFP-orc6-D224A/Y225A) third instar larvae were selected based on fluorescence of the Cy-YFP balancer. Brains were dissected and imaginal discs removed. Soluble fraction of MCM2\u20137 was extracted with 450 mM NaCl, 0.5% NP-40 in PBS buffer for 1 hr. Insoluble proteins were pelleted, the pellet washed three times, and pellets from 8\u201310 brains per lane were loaded onto an SDS-PAGE gel and Mcm4 detected by Western blotting with Mcm4 rabbit polyclonal antibodies.\n\n### Yeast Orc6 complementation analysis\n\nOrc6 was expressed in yeast under the control of its own promoter using plasmid pSPB66 (a kind gift from SP Bell). Point mutations and premature stop codons were introduced by site-directed mutagenesis and verified by DNA sequencing. The yeast Orc6 degron strain ySC166 (Chen et al., 2007) was transformed with pSPB66 or mutant derivatives and transformants were selected for the plasmid in permissive growth conditions (Cu2+, dextrose, 25\u00b0C). Subsequently, transformants were replica-plated and growth assessed in non-permissve conditions (no Cu2+, galactose, 37\u00b0C).\n\n### Multiple sequence alignment of Orc3 and Orc6\n\nMultiple protein sequence alignments were performed with MAFFT (Katoh et al., 2005; Katoh and Toh, 2008). Accession numbers used are as follows. Orc3 alignment with other eukaryotic ORC subunits and archaeal Orc1/Cdc6: Sulfolobus solfataricus Orc1\u20131 (PDB code 2qby, chain A), Sulfolobus solfataricus Orc1\u20132 (AAK41068), Sulfolobus solfataricus Orc1\u20133 (PDB code 2qby, chain B), Aeropyrum pernix Orc1 (PDB code 2v1u, chain A), A. pernix Orc2 (PDB code 1w5s), Pyrobaculum aerophilum Cdc6 (PDB code 1fnn; AAL62992), Pyrococcus furiousus Orc1 (AAL80141), Archeoglobus fulgidus Cdc6 (AAB90989), Drosophila melanogaster Orc1 (AAF59236), D. melanogaster Orc2 (AAF55006), D. melanogaster Orc4 (AAF47276), D. melanogaster Orc5 (AAC46956), S. cerevisiae Orc3 (AAB38249), C. albicans Orc3 (EAK93535), S. pombe Orc3 (AAF05949), N. crassa Orc3 (EAA36220), Arabidopsis thaliana Orc3 (AAT37463), Oryza sativa Orc3 (BAC56110), Homo sapiens Orc3 (AAT38109), Mus musculus Orc3 (NP_056639), X. tropicalis Orc3 (AAI35907), Danio rerio Orc3 (AAH45352), D. melanogaster Orc3 (AAF58411), Aedes aegypti Orc3 (EAT44270).\n\nAlignment of Orc6 protein sequences: S. cerevisiae (AAA21822), C. albicans (EAK99180), S. pombe (NP_596222), A. fumigatus (EDP49624), N. crassa (CAD37038), A. thaliana (AEE30748), O. sativa (EAZ40750), maize (ACG41692), soybean (ACU17985), H. sapiens (AAD32666), M. musculus (AAD32667), Rattus norvegicus (AAI01872), X. tropicalis (AAI35542), D. rerio (AAH56528), Branchiostoma floridae (EEN60699), Saccoglossus kowalevskii (XP_002740148), D. melanogaster (AAF58890),A. aegypti (EAT37789), Bombyx mori (ADD10142), Trichoplax adhaerens (EDV21277), Phytophthora infestans (EEY55501), Dictyostelium discoideum (EAL65038), Polysphondylium pallidum (EFA84700).\n",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "fb6b2ccf-ad0c-4913-8a91-39a0e3285a15",
+      "submission_id": "42857b3a-5b96-43d8-95e1-71177695ffee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Johannes Walter, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00882.023](https://doi.org/10.7554/eLife.00882.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA Meier-Gorlin syndrome mutation in a conserved C-terminal helix of Orc6 impedes origin recognition complex formation\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript describes the structural and molecular analysis of ORC function in Drosophila. The initial portion of the paper derives a higher resolution EM structure of Drosophila ORC and map the location of a number of ORC subunits on this structure. This structure helps to resolve previous observed differences between the yeast and Drosophila EM structure of ORC bringing helpful agreement between the structures. Using protein sequence analysis, the authors suggest that Orc6 has a similar structure across all eukaryotes (previously Orc6 from fungi was thought to be an outlier). More importantly, the authors find that the C-terminal domain of Orc6 binds to a Orc3 via an insertion between canonical AAA+ motifs that is specific to Orc3. Finally, the authors show that a previously identified Meier-Gorlin mutation in Orc6 interferes with this interaction using fly, human, or yeast proteins.\n\nThe strength of this manuscript is the identification of the primary interaction site between Orc6 and Orc1-5 and the observation that this is conserved in many (if not all) eukaryotic cells. The EM studies also help to bring together the structural studies of ORC performed in yeast and Drosophila cells, although they do not provide any major new insights. One significant weakness is the authors fail to clearly delineate what the defect is when they interfere with the Orc1-5/Orc6 interaction. There is no data in the paper addressing this issue and previous data from one of the authors assessing the function of a mutant that interferes with this interaction was assessed to cause defects in mitosis rather than replication. Despite this, the authors state strongly that the defect is in DNA replication but provide no data to support this conclusion (e.g., measure Mcm2-7 chromatin association). The authors point to reduced BrdU incorporation observed for the mutants in the previous studies as evidence in favor of this interpretation but do not explain why their previous reasoning focused on the arrest point was incorrect. One concern with these analyses overall is that they are looking at terminal phenotypes that could reflect defects in both activities since it is clear that Orc6 participates in both events. Given the data in hand, it would make more sense to be a little less focused on a replication defect.\n\nWhen the authors submit a revised manuscript, they must address the following points:\n\n1) They should provide further evidence for the molecular defect caused when binding of Orc6 to the rest of the complex is disrupted, or at the very least discuss the ambiguities remaining from their current analysis.\n\n2) In Figure 7A, the two mutants of Orc6 are expressed at lower levels than wild type (see input lanes), undermining the conclusion that they are defective for interaction with the ORC complex.\n\n3) Why did the authors make a double mutation (D224A/Y225A) for the functional analysis in flies (Table 1)? This is now no longer directly comparable to the MGS mutation.\n\n4) The MGS mutation (Y418S) should be tested for viability in budding yeast.\n\n5) The previous EM analysis of the Drosophila ORC complex reports two structures described as APO and ATP; however the latter was determined in the presence of only 5 \u03bcM ATP\u03b3S. Considering that the concentration of ATP in the cell is in the low mM range, one can assume that the structures (which are indeed very similar) are both in the APO form. The present structure can be safely considered to be the actual ATP-bound form. Is there anything to be learned regarding conformational changes upon ATP binding from comparing the two, despite the fact that the old structure is at lower resolution?\n\n6) No fitting of the archaeal crystal structure to the EM map is described. Has there been any attempt to do it, considering the potential help provided by the localization of the N/C-terminal tags?\n",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d77bc10c-929e-42ba-86de-99208d61c48d",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C1",
+      "claim": "Drosophila ORC forms a stable, hexameric complex containing subunits Orc1\u2013Orc6.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila ORC forms a stable, hexameric complex containing subunits Orc1\u2013Orc6 (Figure 1A, Figure 1\u2014figure supplement 1B) (Chesnokov et al., 1999, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1B, and by citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "585c171f-fc9e-4748-95e0-aa590d0e0f8e",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C2",
+      "claim": "Examination of ORC by EM after negative staining showed a monodisperse population of particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of ORC by EM after negative staining showed a monodisperse population of particles, with no indication of complex instability at the low-nanomolar concentrations used for sample deposition onto EM grids (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EM data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "91d10481-fe35-4be8-8a8b-20d5221fd534",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C3",
+      "claim": "The addition of 1 mM ATP\u03b3S stabilizes ORC in a better defined conformational state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the addition of 1 mM ATP\u03b3S revealed hitherto unobserved detailed features of ORC, indicating that ATP\u03b3S stabilizes interactions between subunits and traps ORC in a better defined conformational state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of 2D class averages with different nucleotides shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "33dffa80-b8f5-4dea-b931-581b86f12001",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C4",
+      "claim": "The 3D EM reconstruction of Drosophila ORC was refined to a resolution of 22 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure was refined by iterative projection-matching to a resolution of 22 \u00c5 (as judged by the 0.5 Fourier shell correlation criterion) (Figure 1\u2014figure supplement 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fourier shell correlation data shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "6848fce3-b2fb-4a54-9c45-09f48204dec8",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C5",
+      "claim": "The AAA+ subunits Orc1\u2013Orc5 comprise the crescent-shaped core of ORC in the order Orc1-Orc4-Orc5-Orc2/Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data indicate that the AAA+-like subunits Orc1\u2013Orc5 comprise the crescent-shaped core of ORC, in the order Orc1-Orc4-Orc5-Orc2/Orc3 (when starting at the lower left of the EM structure) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by subunit localization data shown in Figure 2A and summarized in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "0be8b9b7-fcb9-4dc8-94c7-fb28feb550fd",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C6",
+      "claim": "Orc6 is flexibly tethered to ORC through Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Orc6 is flexibly tethered to ORC, likely via an interaction with Orc2, Orc3, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from EM class averages showing no difference between ORC with and without Orc6, and from GFP-tagging experiments shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "3c163022-968d-4a2e-8070-622a691a4ab0",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C7",
+      "claim": "Drosophila Orc6 interacts with Orc3 but not with Orc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Orc6, on the other hand, interacted only with Orc3 and not with Orc2 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "61547c35-5a99-410f-ac9c-f99186ac3fea",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C8",
+      "claim": "The subunit order of the core AAA+ subunits in Drosophila ORC is Orc1-Orc4-Orc5-Orc2-Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Orc6 appears to contact the subunit at the upper left end in the EM class averages, the Orc3\u2013Orc6 interaction allowed us to refine the subunit order of the core AAA+ subunits to Orc1-Orc4-Orc5-Orc2-Orc3 for Drosophila ORC (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the Orc3-Orc6 interaction data combined with EM localization data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "32988d63-d0a3-4898-b036-a0ad926f8ae3",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C9",
+      "claim": "The C-terminal domain of Orc6 is essential and sufficient for Orc3 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, we found that the C-terminal domain of Orc6 proved to be both essential and sufficient for Orc3 binding when co-expressed in insect cells (Figure 4B, Figure 4\u2014figure supplement 2A for controls).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 4B and Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "7d321adb-f120-4d0b-872c-9aad1b902b97",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C10",
+      "claim": "Full-length Orc6 binds to ORC1\u20135 with apparent low-nanomolar affinity (Kd, app = 5.0 \u00b1 0.7 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length Orc6 bound to ORC1\u20135 with apparent low-nanomolar affinity (Kd, app = 5.0 \u00b1 0.7 nM) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorescence anisotropy binding data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "47db329a-0c05-48b2-9e31-dcba144339cd",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C11",
+      "claim": "C-terminally truncated Orc6 proteins do not bind ORC1\u20135 up to concentrations of 1 \u00b5M ORC1\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the pull-down results, C-terminally truncated Orc6 proteins did not bind ORC1\u20135 up to concentrations of 1 \u00b5M ORC1\u20135 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorescence anisotropy binding data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "ecb5feea-a965-4f5b-b6a1-0e61748a2ff5",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C12",
+      "claim": "The C-terminal 71 amino acid residues of Orc6 bind to ORC1\u20135 with an affinity similar to that of full-length Orc6 (Kd, app = 4.8 \u00b1 0.6 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the C-terminal 71 amino acid residues of Orc6 bound to ORC1\u20135 with an affinity similar to that of full-length Orc6 (Kd, app = 4.8 \u00b1 0.6 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence anisotropy binding data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "9ed6dd3b-7c82-4b10-b445-e58f47226fae",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C13",
+      "claim": "Orc3 contains an additional domain inserted between its AAA+-like and winged-helix domains that is not found in archaeal homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparing Orc3 protein sequences from various eukaryotes with archaeal Orc1/Cdc6 proteins, we noticed that Orc3 contains an additional domain inserted between its AAA+-like and winged-helix domains that is not found in archaeal homologs (Figure 5A,B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 5\u2014figure supplement 1 and structural mapping shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "c5ad8df3-072b-4b3b-ae4f-b19a4be3c702",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C14",
+      "claim": "The Orc3 insertion is conserved across eukaryotic Orc3 orthologs and varies in length from 70 amino acids in S. cerevisiae to 190 amino acids in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "This insertion is conserved across eukaryotic Orc3 orthologs, varies in length from 70 amino acids in S. cerevisiae to 190 amino acids in Drosophila, and is not found in Orc1, Orc2, Orc4, or Orc5 (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "fa0f7caa-306a-40aa-8218-821ad70305ed",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C15",
+      "claim": "The Orc3 insertion is sufficient for Orc6 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The Orc3 insertion was able to interact with both full-length Orc6 and all N-terminal Orc6 truncations (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "920cf13b-aef5-44b5-96d9-7d3a3d5e9810",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C16",
+      "claim": "Truncating the C-terminus of Orc6 abolishes the interaction with the Orc3 insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, truncating the C-terminus of Orc6 abolished the interaction with the Orc3 insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "fcf9d7ac-a799-4158-bf8b-7a98671b4365",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C17",
+      "claim": "The Orc3 insertion does not interact with Orc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, whereas full-length Orc3 was able to interact with Orc2 in addition to Orc6, the Orc3 insertion was unable to do so, suggesting the Orc2\u2013Orc3 interaction is mediated through the two subunits' AAA+-like and/or winged-helix domains (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "85460386-5dea-4d2f-a0ab-514d3de2fefd",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C18",
+      "claim": "The tyrosine mutated in human Orc6 in Meier-Gorlin syndrome is located in a highly conserved, predicted helical element in the C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the MGS mutation in human Orc6 is a missense alteration that maps to the protein's C-terminal domain, changing a tyrosine at position 232 to serine. The tyrosine is located in a highly conserved, predicted helical element, and is itself highly conserved among eukaryotic Orc6 orthologs, including budding yeast (Figure 6A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 4\u2014figure supplement 1 and sequence logo shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "f75e63e7-c509-4d81-a3e7-7723e908ff4b",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C19",
+      "claim": "The Drosophila Orc6 Y225S mutation (corresponding to the human MGS mutation) drastically reduces binding to Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "When co-expressed in insect cells with MBP\u2013Orc3, drastically reduced levels of Orc6-Y225S and no Orc6-W228A/K229A were pulled-down (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "c155e397-9a7d-442d-88bc-1003ec587d62",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C20",
+      "claim": "Neither Drosophila Orc6-Y225S nor Orc6-W228A/K229A bind to ORC1\u20135 in pull-down experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Orc6-Y225S nor Orc6-W228A/K229A bound to ORC1\u20135 in pull-down experiments (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "a1ef7975-350c-404f-a232-bf2ce24da9db",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C21",
+      "claim": "Drosophila Orc6-W228A/K229A shows no binding to ORC1\u20135 in fluorescence anisotropy experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Orc6-W228A/K229A showed no binding to ORC1\u20135 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorescence anisotropy data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "be9b67c0-d378-4d09-88cf-cfc1872075da",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C22",
+      "claim": "Drosophila Orc6-Y225S binds weakly to ORC1\u20135 with at least 100-fold reduced affinity compared to wild type Orc6.",
+      "claim_type": "EXPLICIT",
+      "source": "Orc6-Y225S was able to bind weakly to Orc1\u20135; however, the affinity was reduced at least 100-fold compared to wild type Orc6, and similar results were obtained for the MGS-like mutant when only the C-terminal domain of Orc6 was used in binding experiments (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorescence anisotropy data shown in Figure 6D and Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "941b0c7b-f1f0-4115-b0c6-8c61de06b01d",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C23",
+      "claim": "GFP\u2013Orc6 transgenes containing mutations in the C-terminus are unable to rescue an orc6-null allele in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In flies, the Orc6 C-terminus is essential for viability, as GFP\u2013Orc6 transgenes containing mutations in the C-terminus are (in contrast to wild type GFP\u2013Orc6) unable to rescue an orc6-null allele (Balasov et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work (Balasov et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "6bc14702-d2fa-4d3a-9f01-689fb6526a4b",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C24",
+      "claim": "Mutations in the conserved C-terminus of Orc6 result in reduced ORC hexamer formation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the amounts of GFP\u2013Orc6 mutants that were immunoprecipitated were greatly reduced compared to wild type GFP\u2013Orc6, both in Western blots and when GFP absorbance was measured directly (Figure 7A,B). Thus, mutations in the conserved C-terminus of Orc6 result in a reduction of ORC hexamer formed both in vitro and in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoprecipitation data shown in Figure 7A and quantification shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "16c20ea6-7f8f-4f15-b1e8-2a05e9848be2",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C25",
+      "claim": "Chromatin association of Mcm4 is reduced in orc6-null fly larvae expressing Orc6 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "After salt extraction of larval brain extracts, the amount of Mcm4 in the pellet fraction was greatly reduced when mutant transgenes were expressed as the sole source of Orc6 (orc635/orc635) compared to larval brains expressing the wild-type GFP\u2013Orc6 transgenes (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "57f2555d-1249-473b-be85-60817fe8dbbb",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C26",
+      "claim": "Conserved C-terminal residues of Orc6 are required for hexameric ORC formation and for MCM loading onto chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, conserved C-terminal residues of Orc6 are not only required for hexameric ORC formation but also for MCM loading onto chromatin, explaining the reduced DNA synthesis previously observed in mutant flies (Balasov et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the chromatin association data in Figure 7C and cited prior work (Balasov et al., 2009).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "7711b6d9-6dcc-459e-9414-022d58f24469",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C27",
+      "claim": "Wild-type human Orc6, but not MGS mutant (Y232S) Orc6, binds to human ORC1\u20135 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Although weaker than seen for Drosophila, we nonetheless clearly observed an interaction between wild-type Orc6 and human ORC1\u20135, particularly when an excess of Orc6 was used (Figure 8A). In contrast, human Orc6 containing the MGS mutation (Orc6-Y232S) did not bind appreciably to ORC1\u20135 (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "af48d6f6-773c-4f9e-90c4-6bdd453abc55",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C28",
+      "claim": "Human Orc6 containing the MGS mutation does not co-purify with human ORC1\u20135 when co-expressed in insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained when human ORC subunits were co-expressed in insect cells (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "390c1a88-9ada-459e-9c59-f9932631872e",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C29",
+      "claim": "Human Orc6 interacts with Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen here with the Drosophila protein, human Orc6 has been reported to interact with Orc3 (Figure 8C) (Vashee et al., 2001; Siddiqui and Stillman, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 8C and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "556bf796-0bdd-4178-8e6a-5529678f2f0f",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C30",
+      "claim": "Human Orc6 containing the MGS mutation cannot bind Orc3 in either the absence or presence of Orc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, human Orc6 containing the MGS mutation could not bind Orc3 in either the absence or presence of Orc2 (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "63137578-61dd-42fe-98bf-8c3b44456acd",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C31",
+      "claim": "The amino acid mutated in MGS patients is critical for formation of a stable hexameric initiator complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the Orc6 C-terminus is functionally conserved in metazoans, and that the amino acid mutated in MGS patients is critical for formation of a stable hexameric initiator complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the binding data for human and Drosophila Orc6 MGS mutants shown in Figures 6 and 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "a56bff0c-209b-451f-b1de-6bbf6b937b2d",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C32",
+      "claim": "Significant homology exists between metazoan, S. pombe, and S. cerevisiae Orc6.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the course of analyzing our sequence alignments of Orc6, we noticed that significant homology actually exists between metazoan, S. pombe, and S. cerevisiae Orc6 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "fb20c4c0-eddc-4e86-9166-89b01f3e1f0f",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C33",
+      "claim": "The homology between metazoan and S. cerevisiae Orc6 includes both the TFIIB repeat domains and the conserved helix in the Orc6 C-terminal domain that harbors the MGS mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This homology includes both the TFIIB repeat domains and the conserved helix in the Orc6 C-terminal domain that harbors the MGS mutation, indicating that all of the functional domains present in metazoan Orc6 are conserved in budding yeast Orc6 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "a6838d27-7fb4-4387-a2cf-7ddfee9acc80",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C34",
+      "claim": "Budding yeast Orc6 contains an insertion of \u223c100\u2013200 amino acids between the two TFIIB-like helical domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to S. pombe and metazoan Orc6, budding yeast Orc6\u2014as well as related Saccharomycotina (Candida albicans) and Pezizomycotina (Aspergillus fumigatus and Neurospora crassa)\u2014contain an insertion of \u223c100\u2013200 amino acids between the two TFIIB-like helical domains, an addition that may have complicated former analyses (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "cfa819ee-309d-4f04-a453-b806ba9a8c8a",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C35",
+      "claim": "S. cerevisiae Orc6 binds to Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "In pull-down experiments from insect cell lysate co-expressing pairwise combinations of budding yeast Orc2, Orc3, and Orc6, we observed a clear interaction between Orc2 and Orc3, and between Orc3 and Orc6 (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "96dc66bc-9497-4439-a35e-53f4d3d9fcf4",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C36",
+      "claim": "The MGS-like mutation (Y418S) in S. cerevisiae Orc6 abolishes the interaction with Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the MGS-like mutation in S. cerevisiae Orc6 abolished the interaction with Orc3 (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "b3eb455a-2c60-4581-a769-1b0efbe58a14",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C37",
+      "claim": "The MGS-like mutation in S. cerevisiae Orc6 is not sufficient to prevent Orc6 binding to the Orc2\u2013Orc3 subcomplex or to ORC1\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to what we observed with Drosophila and human proteins, the MGS-like mutation was not sufficient to prevent Orc6 binding to the Orc2\u2013Orc3 subcomplex or to ORC1\u20135 (Figure 9C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 9C and 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "289389aa-64fd-420c-b15f-24feb6607e8b",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C38",
+      "claim": "S. cerevisiae Orc6 is cooperatively recruited into ORC through interaction with both Orc2 and Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Orc6 has been previously reported to interact with Orc2 (Sun et al., 2012), our result suggests that S. cerevisiae Orc6 is cooperatively recruited into ORC through interaction with both Orc2 and Orc3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the pull-down data in Figure 9C and 9D, combined with citation to prior work (Sun et al., 2012).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "effd2c83-e53d-42c2-9510-0c48376bbfae",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C39",
+      "claim": "Orc6 was still recruited into ORC lacking the Orc2 subunit, albeit at reduced levels, whereas Orc6 recruitment was completely lost in the absence of Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this interpretation, Orc6 was still recruited into ORC lacking the Orc2 subunit, albeit at reduced levels, whereas Orc6 recruitment was completely lost in the absence of Orc3 (omission of Orc3 further led to concomitant loss of Orc2) (Figure 9E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 9E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "373f8282-556f-46b2-9cb7-80b7e1afc58b",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C40",
+      "claim": "An MGS-like mutation in yeast Orc6 supports yeast growth, whereas premature stop codons that result in C-terminally truncated Orc6 proteins do not.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our interpretation, an MGS-like mutation in yeast Orc6 supports yeast growth, whereas premature stop codons that result in C-terminally truncated Orc6 proteins do not (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by yeast complementation assay data shown in Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "7b54aba2-7a44-4048-9197-3c896e7bfdd5",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C42",
+      "claim": "Recruitment of Orc6 into ORC across multiple species is aided by the interaction of its C-terminus with a novel domain that resides between the AAA+-like and winged-helix domains of Orc3.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, we find that recruitment of Orc6 into ORC across multiple species is aided by the interaction of its C-terminus with a novel domain that resides between the AAA+-like and winged-helix domains of Orc3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down data shown in Figures 4, 5, 8, and 9, and by sequence analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "08fb266f-64fb-4a3c-85d4-28f70ea251a7",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C43",
+      "claim": "A mutation found in patients with Meier-Gorlin syndrome maps to a highly-conserved C-terminal segment in Orc6.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, a mutation found in patients with Meier-Gorlin syndrome maps to a highly-conserved C-terminal segment in Orc6, destabilizing the interaction of Drosophila and human Orc6 with both Orc3 alone and with the core Orc1\u20135 subcomplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment data in Figure 4\u2014figure supplement 1 and Figure 6A, and by binding data in Figures 6 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "3e05380b-93e0-472d-bbb6-05dee56e7344",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C44",
+      "claim": "Orc6 transgenes containing mutations in the conserved C-terminal tail fail to incorporate into DmORC in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Orc6 transgenes containing mutations in the conserved C-terminal tail fail to incorporate into DmORC in vivo, and do not complement an orc6-null allele when introduced into flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoprecipitation data in Figure 7A and 7B, and by citation to prior work (Balasov et al., 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "2844ef0e-550e-47be-8b8e-1011b0e97006",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C45",
+      "claim": "The MGS mutation in Orc6 directly affects the integrity of ORC.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the MGS mutation in Orc6 directly affects the integrity of ORC, and indicate that destabilization of ORC contributes to the pathogenesis of Meier-Gorlin syndrome caused by mutations in Orc6, ultimately interfering with pre-RC assembly and origin licensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined biochemical and in vivo data showing reduced ORC formation and MCM loading with MGS mutant Orc6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "234ff149-0f8e-434d-be3e-ebc2ff95ba52",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C46",
+      "claim": "The AAA+ subunit order determined for DmORC agrees with that published for ScORC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the AAA+ subunit order determined here for DmORC\u2014Orc1-Orc4-Orc5-Orc2\u2013Orc3\u2014agrees with that published for ScORC (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of subunit localization data shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "ca5e6efb-9166-44ae-b72c-a4d86d7c683d",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C47",
+      "claim": "Drosophila Orc6 is flexibly tethered to ORC through Orc3 and is invisible in the EM 3D structure.",
+      "claim_type": "EXPLICIT",
+      "source": "One notable difference we do observe between yeast ORC and DmORC is that Drosophila Orc6 is flexibly tethered to ORC through Orc3 and is hence invisible in the EM 3D structure (Figures 3A and 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EM data shown in Figure 3A and schematic in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "06a45654-898b-40cd-8405-39a6f3777541",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C48",
+      "claim": "S. cerevisiae Orc6 has been reported to contribute more significantly to EM density of yeast ORC.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, S. cerevisiae Orc6 has been reported to contribute more significantly to EM density of yeast ORC (Chen et al., 2008) and has been reported to bind to Orc2 and not Orc3 (Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "e9fd5bd7-03e9-40d1-a682-3fc8753c81e8",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C49",
+      "claim": "The more stable conformation seen for budding yeast Orc6 may be due to the existence of binding sites for the subunit on both Orc2 and Orc3 within ORC1\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "Our pull-down data suggest that the more stable conformation seen for budding yeast Orc6 may be due to the existence of binding sites for the subunit on both Orc2 and Orc3 within ORC1\u20135, as opposed to just Orc3 in the Drosophila complex (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from pull-down data shown in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "028f0ce1-ebe3-4d94-8792-ea3a5bbdc463",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C50",
+      "claim": "The C-terminal domain of metazoan Orc6 has been thought to be mainly important for non-replicative functions of Orc6 in cytokinesis and daughter cell abscission.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal domain of metazoan Orc6 has been thought to be mainly important for non-replicative functions of Orc6 in cytokinesis and daughter cell abscission, and in the case of Drosophila Orc6, the C-terminal domain also has been shown to interact with the septin Pnut (Prasanth et al., 2002; Chesnokov et al., 2003; Bernal and Venkitaraman, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "3b724a5a-afe1-4ada-b3bc-075a9ea7c773",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C51",
+      "claim": "The C-terminal domain of Orc6 is essential for Orc3 binding when co-expressed in insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, we found that the C-terminal domain of Orc6 proved to be both essential and sufficient for Orc3 binding when co-expressed in insect cells (Figure 4B, Figure 4\u2014figure supplement 2A for controls).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 4B and Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "66ebdfaf-f381-45ad-bc74-6b76a0685d4a",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C52",
+      "claim": "The necessity of the C-terminal domain for Orc6 binding was observed when all ORC subunits were co-expressed in insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The necessity of the C-terminal domain was not limited to binary protein interactions, but was also observed either when all ORC subunits were co-expressed in insect cells (Figure 4\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "4d74fd07-64cc-40e6-a983-c8ff8c42eddf",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C53",
+      "claim": "The necessity of the C-terminal domain for Orc6 binding was observed when purified full-length or C-terminal truncated Orc6 proteins were mixed with ORC1\u20135 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "or when purified full-length or C-terminal truncated Orc6 proteins were mixed with ORC1\u20135 in vitro and subjected to pull-down assays (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "6cc0f4fe-ac51-4330-85d5-44c83c66524f",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C54",
+      "claim": "The C-terminal domain of Orc6 is required for ORC function and MCM2\u20137 loading in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, a mutation in the Orc6 C-terminus linked to Meier-Gorlin syndrome, a dwarfism disorder, impedes proper recruitment of Orc6 into ORC; biochemical studies reveal that this region of Orc6 associates with a previously uncharacterized domain of Orc3 and is required for ORC function and MCM2\u20137 loading in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by biochemical data in Figures 4-6 and in vivo data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "d9544d28-2621-4a3c-8248-3f1c26aa9fa3",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C55",
+      "claim": "Meier-Gorlin syndrome mutations in Orc6 impair the formation of ORC hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that Meier-Gorlin syndrome mutations in Orc6 impair the formation of ORC hexamers, interfering with appropriate ORC functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined biochemical and in vivo data showing reduced ORC formation with MGS mutant Orc6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "39238622-cdb4-449a-9283-798a2a52e30f",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C56",
+      "claim": "ORC is a heterohexameric protein complex containing the subunits Orc1\u2013Orc6.",
+      "claim_type": "EXPLICIT",
+      "source": "ORC is a heterohexameric protein complex containing the subunits Orc1\u2013Orc6 (Bell and Stillman, 1992; Gavin et al., 1995; Gossen et al., 1995; Rowles et al., 1996; Moon et al., 1999; Vashee et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "0bb41f83-788f-4235-a8ce-37359b8f91f9",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C57",
+      "claim": "The Orc1\u2013Orc5 subunits all contain AAA+ or AAA+-like domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The Orc1\u2013Orc5 subunits all contain AAA+ (ATPases associated with a variety of cellular activities) or AAA+-like domains (Neuwald et al., 1999; Iyer et al., 2004; Speck et al., 2005; Clarey et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "faf6b295-889f-4612-9376-0be998d338d8",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C58",
+      "claim": "A subset of ORC subunits use ATP binding and hydrolysis to support replicative helicase loading, DNA replication, and cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "a subset of which use ATP binding and hydrolysis to support replicative helicase loading, DNA replication, and cell viability (Chesnokov et al., 2001; Bowers et al., 2004; Giordano-Coltart et al., 2005; Randell et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "7ef20634-a833-4d52-99ec-731c1dbd110a",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C59",
+      "claim": "Mutations in genes encoding the pre-RC components Orc1, Orc4, Orc6, Cdc6, and Cdt1 have been linked to Meier-Gorlin syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, mutations in genes encoding the pre-RC components Orc1, Orc4, Orc6, Cdc6, and Cdt1 have been linked to Meier-Gorlin syndrome (MGS), a rare genetic disorder characterized by primordial dwarfism, small ears and aplastic or hypoplastic patella (Guernsey et al., 2011; Bicknell et al., 2011a, b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "1b51f816-0a74-42ef-92e3-9be42067bd3a",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C60",
+      "claim": "It has been suggested that the clinical phenotype of Meier-Gorlin syndrome is caused by defects in DNA replication initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the fact that MGS mutations cluster in pre-RC components, it has been suggested that the clinical phenotype is caused by defects in DNA replication initiation (Guernsey et al., 2011; Bicknell et al., 2011a, b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work and inference from mutation clustering.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "c71eaba9-db74-45f6-b486-03c3faa53df3",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C61",
+      "claim": "Cells derived from MGS patients with mutations in Orc1 show reduced recruitment of ORC subunits and replicative helicase components to chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, cells derived from MGS patients with mutations in Orc1 show reduced recruitment of ORC subunits and replicative helicase components to chromatin, and are compromised in their ability to replicate plasmid DNA (Bicknell et al., 2011b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "82a82b44-c733-4d1c-bf1a-459514e1e9d6",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C62",
+      "claim": "Recent work has shown a link between origin licensing factors and non-replicative cellular processes, such as centrosome duplication and cilia formation, in MGS patient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "recent work has also shown a link between origin licensing factors and non-replicative cellular processes, such as centrosome duplication and cilia formation, in MGS patient cells and in cells depleted of licensing proteins (Hossain and Stillman, 2012; Stiff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "37f677b6-563a-4b04-b23d-f4855b70140a",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C63",
+      "claim": "Most MGS mutations in Orc1 lie in the N-terminal domain and have been implicated in interfering with Orc1's Cyclin E-CDK2 inhibitory function of centrosome duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "Most MGS mutations in Orc1 lie in the N-terminal domain, which is not part of the central core of ORC, and have been implicated interfering with Orc1's Cyclin E-CDK2 inhibitory function of centrosome duplication (Hossain and Stillman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "dacdcfa5-dded-4239-a02b-6e8fdeb87ead",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C64",
+      "claim": "Orc6 is poorly conserved between budding yeast and metazoans, both in sequence and in aspects of its function.",
+      "claim_type": "EXPLICIT",
+      "source": "Orc6 is particularly enigmatic in this regard: unlike Orc1\u2013Orc5, Orc6 is poorly conserved between budding yeast and metazoans, both in sequence and in aspects of its function (Lee and Bell, 1997; Chesnokov et al., 2001; Prasanth et al., 2002; Chesnokov et al., 2003; Semple et al., 2006; Balasov et al., 2007; Chen et al., 2007; Duncker et al., 2009; Bernal and Venkitaraman, 2011; Chen and Bell, 2011; Liu et al., 2011; Takara and Bell, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "e5be8bf2-729a-4cfa-9bd6-442c6c5194ba",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C65",
+      "claim": "Using EM, apo-DmORC is conformationally heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Using EM we find that apo-DmORC is conformationally heterogeneous",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 2D class averages shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "4cddb688-6b3b-4d6d-ac70-a570764f3286",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C66",
+      "claim": "The non-hydrolysable nucleotide analog ATP\u03b3S locks DmORC in a specific conformation that permitted the determination of its 3D structure to 22 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "but that the non-hydrolysable nucleotide analog ATP\u03b3S locks the complex in a specific conformation that permitted the determination of its 3D structure to 22 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 2D class averages in Figure 1B and 3D reconstruction in Figure 1C with resolution determination in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "9a17c0ea-77e2-4ff2-8faf-0df5f6a01010",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C67",
+      "claim": "Sequence analyses show that the similarity between yeast and metazoan ORC extends to the domain structure of Orc6.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, sequence analyses show that this similarity extends to the domain structure of Orc6, suggesting analogous functions for Orc6 from yeast and metazoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "e8684bbc-cd87-45d6-bd0b-b336266e3d59",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "claim_id": "C68",
+      "claim": "Destabilization of ORC contributes to the pathogenesis of Meier-Gorlin syndrome caused by mutations in Orc6.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the MGS mutation in Orc6 directly affects the integrity of ORC, and indicate that destabilization of ORC contributes to the pathogenesis of Meier-Gorlin syndrome caused by mutations in Orc6, ultimately interfering with pre-RC assembly and origin licensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined biochemical and in vivo data showing reduced ORC formation and MCM loading with MGS mutant Orc6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7575819f-1782-49ec-9f8e-493e78dc354c",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Drosophila ORC forms a stable hexameric complex that is conformationally heterogeneous in the apo state but stabilized by ATP\u03b3S, enabling determination of a 22 \u00c5 resolution EM structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C65, and C66 collectively demonstrate that Drosophila ORC is a stable hexamer (C1, C2) that exhibits conformational heterogeneity without nucleotide (C65) but is stabilized by ATP\u03b3S (C3, C66), allowing improved resolution EM reconstruction to 22 \u00c5 (C4). The data from Figure 1 and supplementary figures provide strong experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "f1bd37c5-4f17-4268-8d2e-6f37861be85d",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The AAA+ subunits of Drosophila ORC are arranged in the order Orc1-Orc4-Orc5-Orc2-Orc3, consistent with the subunit order in S. cerevisiae ORC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7, C8, and C46 establish the subunit order through EM localization experiments (Figure 2) and biochemical interaction data (Figure 3B). The Orc3-Orc6 interaction (C7) was used to distinguish Orc2 from Orc3 (C8), and the final order agrees with yeast ORC (C46).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "43283b73-be39-4587-a956-6b1840b4a8c2",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Orc6 is flexibly tethered to Drosophila ORC through Orc3 and is not visible in the 3D EM structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C47 are supported by EM class averages showing no difference between ORC with and without Orc6 (Figure 3A), and by GFP-tagging experiments that localize Orc6 near Orc3 but show flexibility. The data consistently indicate flexible tethering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "91650f6d-05e7-4c68-8b1b-21e3889e0ae8",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The C-terminal domain of Orc6 (residues 187-257) is both necessary and sufficient for binding to ORC1-5 with nanomolar affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 and C51-C53 demonstrate through multiple experimental approaches (pull-downs in Figures 4B-C, fluorescence anisotropy in Figure 4D, co-expression experiments in Figure 4\u2014figure supplement 2) that the C-terminal domain is essential and sufficient for Orc6 recruitment with Kd ~5 nM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "2ccd404c-3f8b-4fbf-893f-2115088dbbcf",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Orc3 contains a eukaryote-specific insertion domain between its AAA+ and winged-helix domains that is sufficient for binding the C-terminus of Orc6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 and C42 are supported by sequence alignments (Figure 5\u2014figure supplement 1) showing the Orc3 insertion is conserved in eukaryotes but absent in archaea, and by pull-down experiments (Figures 5C-D) demonstrating the insertion is sufficient for Orc6 binding but does not interact with Orc2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "24d589b5-396a-4dc5-803d-63ae1bead408",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Meier-Gorlin syndrome mutation Y225S in Drosophila Orc6 (corresponding to Y232S in human) drastically reduces binding to Orc3 and ORC1-5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 and C43 demonstrate that the MGS mutation maps to a highly conserved tyrosine (Figure 6A, Figure 4\u2014figure supplement 1) and reduces Orc6 binding to Orc3 and ORC1-5 by at least 100-fold (Figures 6B-D). The data consistently show impaired binding across multiple assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "0358d570-7d16-46a4-8d5f-8aabd67a8043",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mutations in the C-terminal domain of Orc6 reduce ORC hexamer formation in vivo and impair MCM2-7 loading onto chromatin in Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C44, and C54 are supported by immunoprecipitation data showing reduced mutant Orc6 incorporation into ORC (Figure 7A-B) and Western blots showing reduced chromatin-associated Mcm4 in mutant flies (Figure 7C). The in vivo data complement the in vitro binding studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "98061575-b720-4d78-b132-ddc911b6a1bf",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The MGS mutation Y232S in human Orc6 abolishes binding to human Orc3 and ORC1-5, demonstrating functional conservation of the Orc6 C-terminus in metazoans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 show that wild-type human Orc6 binds ORC1-5 and Orc3, but the MGS mutant does not (Figure 8A-D). The data demonstrate that the mechanism of Orc6 recruitment and the effect of the MGS mutation are conserved between Drosophila and humans.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "fc9c5c5f-e5e9-4739-87e5-e0a739fb7c3a",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sequence analysis reveals significant homology between metazoan and S. cerevisiae Orc6, including the TFIIB domains and the C-terminal helix harboring the MGS mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C67 are supported by sequence alignments (Figure 4\u2014figure supplement 1) showing conservation of functional domains across eukaryotic Orc6 proteins, including a yeast-specific insertion between TFIIB domains. This challenges previous assumptions about lack of conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "17d29016-c0ab-43d6-a010-491e6cda3b7c",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "S. cerevisiae Orc6 binds to both Orc2 and Orc3, with the MGS-like mutation Y418S abolishing Orc3 binding but not preventing overall ORC incorporation due to the additional Orc2 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 demonstrate through pull-down experiments (Figure 9A-E) that yeast Orc6 has dual binding sites on Orc2 and Orc3, explaining why the MGS-like mutation is viable in yeast (Figure 9\u2014figure supplement 1) but lethal when the C-terminus is truncated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "6cc2e6d3-7bb2-42a2-9b7c-a621d50f566c",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The MGS mutation in Orc6 directly affects ORC integrity and contributes to Meier-Gorlin syndrome pathogenesis by interfering with pre-RC assembly and origin licensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C55, and C68 represent the main conclusion integrating biochemical data showing reduced ORC formation (Figures 6-8) and in vivo data showing reduced MCM loading (Figure 7C). The inference that ORC destabilization contributes to MGS pathogenesis is well-supported by the combined evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "cff69dcb-1210-42d5-9108-071201637bc2",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "S. cerevisiae Orc6 contributes more significantly to EM density than Drosophila Orc6, likely due to dual binding sites on Orc2 and Orc3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C49 are supported by citations to prior work (C48) and by the pull-down data in Figure 9 showing dual binding sites in yeast (C49). The interpretation that dual binding sites stabilize yeast Orc6 is reasonable but somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "c0014710-7205-4d8b-8e88-bae723f93cda",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on ORC structure, function, and links to Meier-Gorlin syndrome from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C64 summarize established knowledge from prior work, supported by appropriate citations. These provide context for the current study but do not represent new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    },
+    {
+      "id": "10e635f7-8c37-4327-90d1-c432af36a891",
+      "content_id": "17caf2f1-296f-4a4d-8837-6ff221f3f9a6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work suggested the C-terminal domain of metazoan Orc6 is mainly important for non-replicative functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 accurately summarizes prior literature (supported by citations) that the authors' work challenges by showing the C-terminus is also critical for replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:08.368724Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d77bc10c-929e-42ba-86de-99208d61c48d",
+      "result_id": "7575819f-1782-49ec-9f8e-493e78dc354c"
+    },
+    {
+      "claim_id": "585c171f-fc9e-4748-95e0-aa590d0e0f8e",
+      "result_id": "7575819f-1782-49ec-9f8e-493e78dc354c"
+    },
+    {
+      "claim_id": "91d10481-fe35-4be8-8a8b-20d5221fd534",
+      "result_id": "7575819f-1782-49ec-9f8e-493e78dc354c"
+    },
+    {
+      "claim_id": "33dffa80-b8f5-4dea-b931-581b86f12001",
+      "result_id": "7575819f-1782-49ec-9f8e-493e78dc354c"
+    },
+    {
+      "claim_id": "e5be8bf2-729a-4cfa-9bd6-442c6c5194ba",
+      "result_id": "7575819f-1782-49ec-9f8e-493e78dc354c"
+    },
+    {
+      "claim_id": "4cddb688-6b3b-4d6d-ac70-a570764f3286",
+      "result_id": "7575819f-1782-49ec-9f8e-493e78dc354c"
+    },
+    {
+      "claim_id": "6848fce3-b2fb-4a54-9c45-09f48204dec8",
+      "result_id": "f1bd37c5-4f17-4268-8d2e-6f37861be85d"
+    },
+    {
+      "claim_id": "3c163022-968d-4a2e-8070-622a691a4ab0",
+      "result_id": "f1bd37c5-4f17-4268-8d2e-6f37861be85d"
+    },
+    {
+      "claim_id": "61547c35-5a99-410f-ac9c-f99186ac3fea",
+      "result_id": "f1bd37c5-4f17-4268-8d2e-6f37861be85d"
+    },
+    {
+      "claim_id": "234ff149-0f8e-434d-be3e-ebc2ff95ba52",
+      "result_id": "f1bd37c5-4f17-4268-8d2e-6f37861be85d"
+    },
+    {
+      "claim_id": "0be8b9b7-fcb9-4dc8-94c7-fb28feb550fd",
+      "result_id": "43283b73-be39-4587-a956-6b1840b4a8c2"
+    },
+    {
+      "claim_id": "ca5e6efb-9166-44ae-b72c-a4d86d7c683d",
+      "result_id": "43283b73-be39-4587-a956-6b1840b4a8c2"
+    },
+    {
+      "claim_id": "32988d63-d0a3-4898-b036-a0ad926f8ae3",
+      "result_id": "91650f6d-05e7-4c68-8b1b-21e3889e0ae8"
+    },
+    {
+      "claim_id": "7d321adb-f120-4d0b-872c-9aad1b902b97",
+      "result_id": "91650f6d-05e7-4c68-8b1b-21e3889e0ae8"
+    },
+    {
+      "claim_id": "47db329a-0c05-48b2-9e31-dcba144339cd",
+      "result_id": "91650f6d-05e7-4c68-8b1b-21e3889e0ae8"
+    },
+    {
+      "claim_id": "ecb5feea-a965-4f5b-b6a1-0e61748a2ff5",
+      "result_id": "91650f6d-05e7-4c68-8b1b-21e3889e0ae8"
+    },
+    {
+      "claim_id": "3b724a5a-afe1-4ada-b3bc-075a9ea7c773",
+      "result_id": "91650f6d-05e7-4c68-8b1b-21e3889e0ae8"
+    },
+    {
+      "claim_id": "66ebdfaf-f381-45ad-bc74-6b76a0685d4a",
+      "result_id": "91650f6d-05e7-4c68-8b1b-21e3889e0ae8"
+    },
+    {
+      "claim_id": "4d74fd07-64cc-40e6-a983-c8ff8c42eddf",
+      "result_id": "91650f6d-05e7-4c68-8b1b-21e3889e0ae8"
+    },
+    {
+      "claim_id": "9ed6dd3b-7c82-4b10-b445-e58f47226fae",
+      "result_id": "2ccd404c-3f8b-4fbf-893f-2115088dbbcf"
+    },
+    {
+      "claim_id": "c5ad8df3-072b-4b3b-ae4f-b19a4be3c702",
+      "result_id": "2ccd404c-3f8b-4fbf-893f-2115088dbbcf"
+    },
+    {
+      "claim_id": "fa0f7caa-306a-40aa-8218-821ad70305ed",
+      "result_id": "2ccd404c-3f8b-4fbf-893f-2115088dbbcf"
+    },
+    {
+      "claim_id": "920cf13b-aef5-44b5-96d9-7d3a3d5e9810",
+      "result_id": "2ccd404c-3f8b-4fbf-893f-2115088dbbcf"
+    },
+    {
+      "claim_id": "fcf9d7ac-a799-4158-bf8b-7a98671b4365",
+      "result_id": "2ccd404c-3f8b-4fbf-893f-2115088dbbcf"
+    },
+    {
+      "claim_id": "7b54aba2-7a44-4048-9197-3c896e7bfdd5",
+      "result_id": "2ccd404c-3f8b-4fbf-893f-2115088dbbcf"
+    },
+    {
+      "claim_id": "85460386-5dea-4d2f-a0ab-514d3de2fefd",
+      "result_id": "24d589b5-396a-4dc5-803d-63ae1bead408"
+    },
+    {
+      "claim_id": "f75e63e7-c509-4d81-a3e7-7723e908ff4b",
+      "result_id": "24d589b5-396a-4dc5-803d-63ae1bead408"
+    },
+    {
+      "claim_id": "c155e397-9a7d-442d-88bc-1003ec587d62",
+      "result_id": "24d589b5-396a-4dc5-803d-63ae1bead408"
+    },
+    {
+      "claim_id": "a1ef7975-350c-404f-a232-bf2ce24da9db",
+      "result_id": "24d589b5-396a-4dc5-803d-63ae1bead408"
+    },
+    {
+      "claim_id": "be9b67c0-d378-4d09-88cf-cfc1872075da",
+      "result_id": "24d589b5-396a-4dc5-803d-63ae1bead408"
+    },
+    {
+      "claim_id": "08fb266f-64fb-4a3c-85d4-28f70ea251a7",
+      "result_id": "24d589b5-396a-4dc5-803d-63ae1bead408"
+    },
+    {
+      "claim_id": "6bc14702-d2fa-4d3a-9f01-689fb6526a4b",
+      "result_id": "0358d570-7d16-46a4-8d5f-8aabd67a8043"
+    },
+    {
+      "claim_id": "16c20ea6-7f8f-4f15-b1e8-2a05e9848be2",
+      "result_id": "0358d570-7d16-46a4-8d5f-8aabd67a8043"
+    },
+    {
+      "claim_id": "57f2555d-1249-473b-be85-60817fe8dbbb",
+      "result_id": "0358d570-7d16-46a4-8d5f-8aabd67a8043"
+    },
+    {
+      "claim_id": "3e05380b-93e0-472d-bbb6-05dee56e7344",
+      "result_id": "0358d570-7d16-46a4-8d5f-8aabd67a8043"
+    },
+    {
+      "claim_id": "6cc0f4fe-ac51-4330-85d5-44c83c66524f",
+      "result_id": "0358d570-7d16-46a4-8d5f-8aabd67a8043"
+    },
+    {
+      "claim_id": "7711b6d9-6dcc-459e-9414-022d58f24469",
+      "result_id": "98061575-b720-4d78-b132-ddc911b6a1bf"
+    },
+    {
+      "claim_id": "af48d6f6-773c-4f9e-90c4-6bdd453abc55",
+      "result_id": "98061575-b720-4d78-b132-ddc911b6a1bf"
+    },
+    {
+      "claim_id": "390c1a88-9ada-459e-9c59-f9932631872e",
+      "result_id": "98061575-b720-4d78-b132-ddc911b6a1bf"
+    },
+    {
+      "claim_id": "556bf796-0bdd-4178-8e6a-5529678f2f0f",
+      "result_id": "98061575-b720-4d78-b132-ddc911b6a1bf"
+    },
+    {
+      "claim_id": "63137578-61dd-42fe-98bf-8c3b44456acd",
+      "result_id": "98061575-b720-4d78-b132-ddc911b6a1bf"
+    },
+    {
+      "claim_id": "a56bff0c-209b-451f-b1de-6bbf6b937b2d",
+      "result_id": "fc9c5c5f-e5e9-4739-87e5-e0a739fb7c3a"
+    },
+    {
+      "claim_id": "fb20c4c0-eddc-4e86-9166-89b01f3e1f0f",
+      "result_id": "fc9c5c5f-e5e9-4739-87e5-e0a739fb7c3a"
+    },
+    {
+      "claim_id": "a6838d27-7fb4-4387-a2cf-7ddfee9acc80",
+      "result_id": "fc9c5c5f-e5e9-4739-87e5-e0a739fb7c3a"
+    },
+    {
+      "claim_id": "9a17c0ea-77e2-4ff2-8faf-0df5f6a01010",
+      "result_id": "fc9c5c5f-e5e9-4739-87e5-e0a739fb7c3a"
+    },
+    {
+      "claim_id": "cfa819ee-309d-4f04-a453-b806ba9a8c8a",
+      "result_id": "17d29016-c0ab-43d6-a010-491e6cda3b7c"
+    },
+    {
+      "claim_id": "96dc66bc-9497-4439-a35e-53f4d3d9fcf4",
+      "result_id": "17d29016-c0ab-43d6-a010-491e6cda3b7c"
+    },
+    {
+      "claim_id": "b3eb455a-2c60-4581-a769-1b0efbe58a14",
+      "result_id": "17d29016-c0ab-43d6-a010-491e6cda3b7c"
+    },
+    {
+      "claim_id": "289389aa-64fd-420c-b15f-24feb6607e8b",
+      "result_id": "17d29016-c0ab-43d6-a010-491e6cda3b7c"
+    },
+    {
+      "claim_id": "effd2c83-e53d-42c2-9510-0c48376bbfae",
+      "result_id": "17d29016-c0ab-43d6-a010-491e6cda3b7c"
+    },
+    {
+      "claim_id": "373f8282-556f-46b2-9cb7-80b7e1afc58b",
+      "result_id": "17d29016-c0ab-43d6-a010-491e6cda3b7c"
+    },
+    {
+      "claim_id": "2844ef0e-550e-47be-8b8e-1011b0e97006",
+      "result_id": "6cc2e6d3-7bb2-42a2-9b7c-a621d50f566c"
+    },
+    {
+      "claim_id": "d9544d28-2621-4a3c-8248-3f1c26aa9fa3",
+      "result_id": "6cc2e6d3-7bb2-42a2-9b7c-a621d50f566c"
+    },
+    {
+      "claim_id": "e8684bbc-cd87-45d6-bd0b-b336266e3d59",
+      "result_id": "6cc2e6d3-7bb2-42a2-9b7c-a621d50f566c"
+    },
+    {
+      "claim_id": "06a45654-898b-40cd-8405-39a6f3777541",
+      "result_id": "cff69dcb-1210-42d5-9108-071201637bc2"
+    },
+    {
+      "claim_id": "e9fd5bd7-03e9-40d1-a682-3fc8753c81e8",
+      "result_id": "cff69dcb-1210-42d5-9108-071201637bc2"
+    },
+    {
+      "claim_id": "39238622-cdb4-449a-9283-798a2a52e30f",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "0bb41f83-788f-4235-a8ce-37359b8f91f9",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "faf6b295-889f-4612-9376-0be998d338d8",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "7ef20634-a833-4d52-99ec-731c1dbd110a",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "1b51f816-0a74-42ef-92e3-9be42067bd3a",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "c71eaba9-db74-45f6-b486-03c3faa53df3",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "82a82b44-c733-4d1c-bf1a-459514e1e9d6",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "37f677b6-563a-4b04-b23d-f4855b70140a",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "dacdcfa5-dded-4239-a02b-6e8fdeb87ead",
+      "result_id": "c0014710-7205-4d8b-8e88-bae723f93cda"
+    },
+    {
+      "claim_id": "028f0ce1-ebe3-4d94-8792-ea3a5bbdc463",
+      "result_id": "10e635f7-8c37-4327-90d1-c432af36a891"
+    }
+  ],
+  "comparisons": []
+}

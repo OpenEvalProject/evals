@@ -1,0 +1,490 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Quantitative proteomic analysis using SILAC and TMT-based mass spectrometry was performed on 12 disomic yeast strains, achieving ~70-80% coverage of verified ORFs. Protein levels of genes on duplicated chromosomes increased approximately twofold on average, with control experiments showing low noise (SD = 0.35 for SILAC, SD = 0.2 for TMT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 describe the experimental design, coverage, and quality control metrics for the proteomic analysis. The reported coverage (~70-80% of ORFs), average twofold increase in protein levels for duplicated genes, and low standard deviations in control experiments demonstrate robust technical execution. The use of two independent quantification methods (SILAC and TMT) provides orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Gene copy number increases lead to proportional increases in both mRNA and protein levels independent of growth conditions. However, while mRNA levels of duplicated genes fit a normal distribution with mean 1.9-fold increase (R\u00b2=0.99), protein levels show deviation from normal distribution (R\u00b2=0.96, skewness=-0.12), indicating that a statistically significant number of proteins do not scale proportionally with gene copy number despite mRNA doing so.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 establish the general scaling relationship between gene dosage and expression while identifying exceptions. The statistical analysis is rigorous, with high R\u00b2 values for mRNA distributions and quantitative assessment of deviation for protein distributions. The consistency across growth conditions and quantification methods (C16) strengthens the conclusion. The distinction between mRNA and protein scaling is well-supported by the distribution analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Using a stringent cutoff (log2 ratio \u22640.6, 3\u00d7SD), 550 proteins (~21% of detected ORFs) encoded by duplicated chromosomes were significantly attenuated in rich medium. Gene ontology analysis revealed significant enrichment for macromolecular complex components (369/550, p=5.1E-32), including all detected ribosomal subunits (113/550, p=6.2E-43). This enrichment was observed in every disome and reproduced in selective medium (295/486 attenuated proteins, p=2.7E-17), with 57% overlap (287 proteins) between conditions, of which 76% are complex subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 identify and characterize the attenuated protein population. The stringent statistical cutoff (3\u00d7SD), highly significant GO enrichment p-values, consistency across all 12 disomic strains, and reproducibility between growth conditions provide strong support. The 57% overlap between experiments and the high proportion of complex subunits (76%) among reproducibly attenuated proteins demonstrate robustness of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Protein attenuation occurs post-transcriptionally. Transcript levels of attenuated proteins showed twofold increases with no compensation, while ribosomal genes showed mean twofold mRNA increases but every ribosomal protein exhibited attenuation. Ribosomal footprinting analysis of disomes V and XVI showed that both attenuated and non-attenuated duplicated genes display similar increases in ribosomal footprints, indicating that dosage compensation is predominantly mediated by posttranslational mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 establish the mechanism of attenuation through multiple lines of evidence. The comparison of mRNA vs. protein levels (C23-C24) shows clear discordance. The ribosomal footprinting data (C25-C26) directly demonstrates that translation rates are similar for attenuated and non-attenuated proteins, ruling out translational control as the primary mechanism. The conclusion that posttranslational mechanisms predominate (C27) is well-supported, though the authors appropriately note they cannot exclude translational control for a small subset of genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Short-term inhibition of proteasome and vacuolar degradation (90-300s with MG132 and chloroquine) in disomes II and V revealed that attenuated proteins, enriched for complex subunits, show 4-20% increases in levels. Duplicated genes increased more than the rest of the genome, with attenuated proteins accounting for most increases, providing direct evidence for protein degradation as a mechanism for dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide direct experimental evidence for protein degradation as the mechanism of attenuation. The experimental design is sound: short time points (90-300s) minimize indirect effects, and the hypothesis (C29) that only rapidly degraded proteins with increased translation would show increases is logical. The observation that attenuated proteins show significant increases (4-20%) in such short timeframes (C34) strongly supports rapid degradation. The specificity for attenuated proteins (C33) and duplicated genes (C32) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Using a manually curated database of yeast protein complexes, more than half of complex subunits (469/923) were significantly attenuated in rich medium, with a mean ratio of 0.46 (1.4-fold) compared to the expected twofold increase. In contrast, proteins not in complexes showed little attenuation. Among 88 non-complex proteins attenuated in both growth conditions, no significant GO enrichment was found and 15/88 have unknown function. The analysis indicates that most proteome attenuation is caused by complex subunit attenuation and estimates that about half of all cellular complex proteins (469/923) are unstable and rapidly degraded unless they find binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 systematically characterize which proteins are attenuated. The use of a manually curated complex database (C36) provides reliable annotation. The quantitative analysis showing >50% of complex subunits attenuated (C37) with mean 1.4-fold increase vs. expected 2-fold (C38) is well-supported. The contrast with non-complex proteins (C39) strengthens the specificity. The small number of attenuated non-complex proteins (88) with no GO enrichment (C41) and unknown functions (C42) suggests these may be false positives or represent a minor mechanism. The estimate that ~50% of complex proteins are unstable (C44) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Analysis of 84 complexes (with \u22653 subunits quantified in both TMT and SILAC datasets) revealed that 42 complexes showed attenuation in almost every subunit (average log2 ratios \u22640.6), with ribosome and nucleosome among the most attenuated. With one exception (trehalose-6-phosphate synthase/phosphatase complex), every complex showed significant attenuation in at least one subunit (83/84). Nearly every complex also contains one or more stable subunits (ribosome and nucleosome being exceptions), suggesting that most complexes contain both unstable subunits and stable scaffold proteins. The degree of attenuation showed high correlation between growth conditions (Pearson r=0.62), indicating effects are independent of growth conditions and quantification technique.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 provide detailed characterization of complex-specific attenuation patterns. The analysis criteria (\u22653 subunits in both datasets) ensure robust quantification. The finding that 83/84 complexes have at least one attenuated subunit (C48) demonstrates the generality of the phenomenon. The identification of stable subunits in most complexes (C49) and specific examples (C50-C52) provide mechanistic insight. The high correlation between conditions (r=0.62, C54) demonstrates reproducibility. The proposed model of unstable subunits plus stable scaffolds (C53) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Western blot analysis of cells harboring plasmids with extra copies of ribosomal subunits RPL1B, RPL3, or RPL30 showed no increase in protein levels, while cells with extra copies of ARP5 or CDC28 (non-attenuated proteins) showed increased levels. This indicates that ribosomal protein attenuation is at least in part driven by protein instability rather than aneuploidy-induced cellular responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide critical evidence distinguishing intrinsic protein instability from aneuploidy-specific responses. The plasmid experiment is well-designed: expressing individual genes from plasmids in euploid cells isolates the effect of increased gene dosage from the broader cellular response to aneuploidy. The differential behavior of ribosomal proteins (no increase) vs. non-attenuated proteins (increase) demonstrates that attenuation is an intrinsic property of these proteins. However, the conclusion is appropriately qualified as 'at least in part' (C58), acknowledging that aneuploidy-induced responses may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Hierarchical clustering analysis identified a novel aneuploidy-associated protein signature (APS) consisting of 92 upregulated proteins present in all disomes but not in wild-type controls. GO enrichment revealed proteins associated with oxidative stress response (including thioredoxins, oxidoreductases, peroxiredoxins, and superoxide dismutase) and metabolic processes (amino acid biosynthesis, cellular bioenergetics). The APS intensity correlated with chromosome size (Pearson r=0.62), suggesting it is a direct consequence of cellular imbalances from the extra chromosome rather than specific gene dosage. The APS was also present in meiotically-derived aneuploid strains with similar correlation to chromosome size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 describe the identification and characterization of the APS. The clustering analysis with down-weighting of duplicated genes (C62) is methodologically sound for identifying shared responses. The absence in wild-type controls (C63) demonstrates specificity. The GO enrichment for oxidative stress and metabolic processes (C64-C67) is well-supported. The correlation with chromosome size (r=0.62, C68) and presence in meiotically-derived aneuploids (C70) support the interpretation that this is a general response to aneuploidy. The inference that it results from cellular imbalances rather than specific genes (C69) is reasonable given the correlation with chromosome size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The APS includes several upregulated proteins involved in protein quality control (Hsp90 regulators Sba1 and Hch1, peptide isomerases Cpr3/Fpr1/Fpr3, ubiquitination proteins Ubc1/Duf1/Rub1) and protein trafficking (Arc1, Sec53, Ric1, Vti1, Ykt6), consistent with increased flux through protein folding, trafficking, and turnover machinery. Proteasome subunit levels showed small but significant increases in almost every disomic strain independent of growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 identify specific upregulated proteins related to protein homeostasis. While GO enrichment for proteotoxic stress was not statistically significant, the identification of specific proteins involved in quality control (C71) and trafficking (C72) is data-driven. The interpretation that this reflects increased flux through protein homeostasis machinery (C73) is a reasonable inference. The increased proteasome levels (C74) provide additional support for enhanced protein degradation capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The APS is regulated posttranscriptionally, as corresponding mRNA transcripts for most upregulated proteins showed minimal changes. The APS signature was not detected in cells grown in synthetic medium, possibly because larger changes in gene and protein expression due to selective conditions mask its detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 establish the regulatory mechanism of the APS. The lack of mRNA changes (C75) despite protein upregulation clearly indicates posttranscriptional control (C76). The absence of APS in synthetic medium (C77) is an important observation, though the proposed explanation (masking by larger changes) is speculative. This limitation does not undermine the main finding but indicates the APS may be condition-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Most disomes show hypersensitivity to ROS-inducing agents (diamide 1mM or H2O2 3%), while cells harboring YACs with human or mouse DNA do not, indicating that extra yeast genes and their products are responsible. Basal intracellular ROS levels were higher in most disomes compared to wild-type, but not in YAC-containing cells. This indicates that aneuploidy disrupts cellular redox homeostasis leading to ROS accumulation, and aneuploid cells respond by maintaining higher protein levels of ROS scavengers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 provide multiple lines of evidence for elevated ROS in aneuploid cells. The hypersensitivity to ROS-inducing agents (C78) and elevated basal ROS levels (C81) are direct measurements. The YAC control experiments (C79, C82) are critical: they demonstrate that extra DNA alone is insufficient and that yeast gene products are required (C80), ruling out non-specific effects of DNA content. The conclusion that aneuploidy disrupts redox homeostasis (C83) and that cells respond by upregulating ROS scavengers (C84) is well-supported by the combination of ROS measurements and APS characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Gene expression and proteomic analysis of 12 disomic strains with UBP6 deletion (ubp6\u0394) achieved ~70-80% ORF coverage with strong mRNA-protein correlation. While non-duplicated genes showed normal distribution, duplicated genes fit two populations with one significantly attenuated. mRNA levels of duplicated genes showed ~twofold increases with no compensation. Importantly, UBP6 loss did not further attenuate dosage-compensated proteins (Pearson r=0.75 correlation with wild-type disomes), indicating UBP6 deletion does not significantly alter attenuation of macromolecular complex subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 establish that UBP6 deletion does not affect the primary mechanism of complex subunit attenuation. The experimental design parallels the initial characterization (C85-C86), enabling direct comparison. The key finding is the high correlation (r=0.75, C91) between complex subunit levels in disomes with and without UBP6, demonstrating that UBP6 is not involved in this attenuation mechanism (C92). The continued attenuation of duplicated genes (C89) despite normal mRNA levels (C90) confirms posttranslational control persists in ubp6\u0394 strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "All 12 disomes showed significant attenuation of upregulated proteins upon UBP6 loss, with minimal mRNA attenuation indicating posttranscriptional mediation. All disomes also showed significant increases of downregulated proteins, bringing levels closer to wild-type, though this effect impacted fewer proteins than upregulation. Protein attenuation upon UBP6 loss occurs in all aneuploid strains examined and affects both downregulated and (to a greater extent) upregulated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 demonstrate that UBP6 deletion has broad effects on the aneuploid proteome distinct from complex subunit attenuation. The universality across all 12 disomes (C93, C95, C97) demonstrates this is a general phenomenon. The posttranscriptional nature (C94) is well-established by the lack of mRNA changes. The differential effects on upregulated vs. downregulated proteins (C96, C98) suggest distinct mechanisms. The data support that UBP6 deletion affects stress-responsive proteins rather than complex subunits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Increased proteasomal degradation due to UBP6 loss could be responsible for downregulation of overexpressed genes. However, deletion of UBP6 in wild-type cells did not affect the half-life of six proteins (Fap7, Glc8, Bna5, Tma19, Trx1, Trx2) whose increased abundance in disomes is attenuated when UBP6 is deleted, suggesting the ubp6\u0394-mediated attenuation may be indirect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 address the mechanism of UBP6 effects. The proposal that increased degradation causes downregulation (C99) is reasonable given UBP6's known role in proteasome regulation. However, the half-life measurements (C100) showing no direct effect on six APS proteins in wild-type cells is important negative data. The conclusion that effects may be indirect (C101) is appropriately cautious. This suggests UBP6 deletion may work through intermediate factors or require the aneuploid context, but the mechanism remains incompletely understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The APS was significantly reduced in disomic strains lacking UBP6, with disome V (whose fitness is significantly improved by UBP6 deletion) showing the strongest reduction. The ESR was not significantly affected in ubp6\u0394 disomes, consistent with only 2 disomes (V and XI) showing significant fitness improvements in rich medium. Loss of UBP6 ameliorates protein responses associated with altered redox homeostasis and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 demonstrate that UBP6 deletion specifically affects the APS but not the ESR. The reduction of APS (C102) and correlation with fitness improvement (C103) suggest the APS contributes to aneuploidy-associated fitness defects. The lack of ESR effect (C104) and limited fitness improvement in rich medium (C105) are consistent with each other and with prior work. The conclusion that UBP6 loss ameliorates redox/metabolic responses (C106) is well-supported by the APS reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "UBP6 loss resulted in significant decrease in basal intracellular ROS levels in 12/13 disomic strains and suppressed the proliferation defect of 11/13 disomic strains at 37\u00b0C. UBP6 loss of function leads to lower intracellular ROS and ameliorates the APS in all disomic strains analyzed. This suppression is associated with fitness improvement in most disomic strains, particularly under proteotoxic stress conditions, suggesting that defects in redox homeostasis contribute to the proliferation defect of aneuploid strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 provide strong evidence that UBP6 deletion improves aneuploidy tolerance through effects on redox homeostasis. The ROS reduction in 12/13 strains (C107) and fitness improvement in 11/13 strains at 37\u00b0C (C108) demonstrate broad beneficial effects. The correlation between ROS reduction, APS amelioration, and fitness improvement (C109-C110) supports a causal relationship. The inference that redox defects contribute to aneuploidy-associated fitness defects (C111) is well-supported, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "In general, acquisition of an extra chromosome translates into proportional increases in protein levels. Eukaryotic cells do not appear to have evolved mechanisms to silence genes upon acquiring an extra autosome copy, leading to increased flux through transcription and translation machinery. However, comprehensive proteomic assessment reveals that ~20% of the proteome does not scale with gene copy number, with most attenuated proteins being members of multi-protein complexes. Attenuation is mediated by posttranslational mechanisms, mostly protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 synthesize the major findings into a coherent model. The general scaling of protein with gene dosage (C112) is well-established by the data. The lack of autosomal dosage compensation mechanisms (C113) is supported by the observation that most proteins do scale. The inference of increased transcription/translation flux (C114) is logical. The quantification that ~20% of proteins don't scale (C115) is data-driven. The identification of complex subunits as the primary attenuated population (C116) and posttranslational/degradation mechanism (C117) are strongly supported by multiple lines of evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The hypothesis that attenuated proteins only acquire stable folded states when incorporated into native complexes is proposed. Cells normally produce stoichiometric amounts of complex subunits, but approximately one-third of yeast genes encode complex subunits randomly scattered across the genome. Therefore, irrespective of which chromosome is duplicated, significant protein attenuation must occur. The ribosome exemplifies this: it consists of 79 unstable proteins (137 genes) consuming ~50% of RNA Pol II transcription, with genes distributed across most chromosomes (5-19 subunits per chromosome). Even a single excess chromosome leads to substantial increase in transcription and translation of individual subunits without upregulating total ribosome numbers, with the majority of excess subunits destined for degradation. This provides direct evidence that a major consequence of aneuploidy is increased burden on protein quality control pathways including protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C127 develop the mechanistic and biological implications of the findings. The hypothesis about protein folding (C118) is reasonable speculation based on the data. The citation of stoichiometric production (C119) and genomic distribution of complex genes (C120) provides context. The inference that attenuation must occur regardless of which chromosome is duplicated (C121) is logical given the random distribution. The ribosome example (C122-C125) effectively illustrates the magnitude of the problem. The conclusion that excess subunits are degraded (C126) and that this burdens protein quality control (C127) is well-supported by the degradation inhibition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Cells have evolved mechanisms facilitating complex assembly (co-transcriptional regulation, dedicated chaperones). Analysis indicates that the ribosome and nucleosome, two of the most stable and long-lived complexes, consist of subunits that may not exist long unless assembled. Most other complexes show a range of subunit stabilities. Remarkably, almost every complex analyzed contains at least one attenuated subunit, while most complexes (except ribosome and nucleosome) contain at least one stable subunit. The existence of unfolded/partially folded unstable subunits may provide free energy to drive complex formation, while stable scaffold proteins may be required for complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 synthesize the complex-level findings into a model of complex assembly. The observation that ribosome and nucleosome have all unstable subunits (C129) while most complexes have mixed stability (C130-C132) is well-supported by the data. The proposal that unstable subunits provide free energy for assembly (C133) and stable subunits serve as scaffolds (C134) are reasonable mechanistic hypotheses based on the data, though they remain to be directly tested. The model is consistent with known principles of protein folding and complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Aneuploidy hampers cellular proliferation and elicits gene expression responses associated with slow proliferation and stress, which affect proteome content. Paradoxically, the ESR includes downregulation of ribosomal protein genes leading to lower ribosome protein levels despite apparent increase in total translation. Ribosomal footprinting analyses showed no impairment in translation efficiency. The functional consequences of ribosome downregulation may be due to slower proliferation rates and may not affect translational capacity. However, increased translation and downregulation of ribosomal genes may explain increased sensitivities of aneuploid cells to drugs targeting translational machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 address the paradox of ribosome downregulation in the context of increased translation. The observation of ESR-driven ribosome downregulation (C137) despite increased translation (C138) is well-documented. The lack of translation efficiency impairment (C139) is supported by footprinting data. The interpretation that downregulation reflects slower proliferation rather than reduced capacity (C140) is reasonable speculation. The hypothesis about drug sensitivity (C141) is plausible but remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "A novel aneuploidy-specific protein expression signature (APS) consisting of 92 upregulated proteins involved in redox homeostasis and metabolism was identified in all disomes. The upregulation appears to occur in response to higher basal intracellular ROS levels. The source of elevated ROS is not known but disruption of protein homeostasis may be the culprit: increased protein translation, folding and turnover create high ATP demand leading to ROS accumulation; ER stress from increased protein folding could contribute; and altered metabolism due to upregulation of anabolic processes (amino acids, nucleotides, lipids) may alter redox homeostasis. The APS intensity strongly correlates with chromosome size, suggesting it is a direct consequence of acquiring extra genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C149 synthesize the APS findings and propose mechanisms for ROS elevation. The identification and characterization of the APS (C142) is well-supported. The inference that it responds to elevated ROS (C143) is reasonable given the protein identities. The acknowledgment that the ROS source is unknown (C144) is appropriately cautious. The proposed mechanisms (C145-C147) are plausible hypotheses based on known biology, though they remain speculative. The upregulation of anabolic proteins (C148) provides some support. The correlation with chromosome size (C149) supports the interpretation of a general response to aneuploidy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The APS is not associated with increases in corresponding mRNA levels, indicating posttranscriptional control. Several potential mechanisms could mediate this response. Increased translation could be one reason, but no detectable changes in translational efficiency of APS genes were found in disomes V or XVI, though more comprehensive analysis might reveal small changes. Alternatively, the APS may result from protein stabilization, consistent with observations in cells exposed to mild oxidative stress. Posttranslational modifications such as phosphorylation could mediate stabilization, and most APS proteins (76/92) have been shown to be ubiquitinated or phosphorylated. Because aneuploidy alters metabolism, metabolite-based modifications (acetylation/succinylation) could also play a role, with 34/92 APS proteins shown to be acetylated and/or succinylated in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C159 address the mechanism of APS upregulation but reach uncertain conclusions. The lack of mRNA changes (C150) clearly indicates posttranscriptional control. However, the proposed mechanisms remain speculative. The negative result for translational efficiency changes (C152) argues against translational control, though the caveat about more comprehensive analysis (C153) is appropriate. The protein stabilization hypothesis (C154) is plausible and supported by literature (C155), but direct evidence is lacking. The observations about posttranslational modifications (C157, C159) are correlative and don't establish causation. The mechanism remains to be determined, requiring additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Increased protein degradation mediated by UBP6 loss of function suppresses several aneuploidy-associated phenotypes. Protein attenuation upon UBP6 loss occurs independently of chromosome identity and affects both down and upregulated proteins (the latter to a greater extent). The mechanism may involve direct effects on protein degradation and/or indirect amelioration of protein responses by suppressing aneuploidy-associated phenotypes. Alternatively, UBP6 loss may directly increase degradation of transcriptional regulators, thereby affecting levels of both down and upregulated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 summarize the UBP6 deletion effects and propose mechanisms. The suppression of aneuploidy phenotypes (C160) and broad effects on the proteome (C161) are well-documented. The proposed mechanisms (C162-C163) are reasonable hypotheses but remain speculative. The data clearly show that UBP6 deletion has beneficial effects and alters the proteome, but the precise molecular mechanism requires further investigation. The claims are appropriately presented as hypotheses rather than established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "UBP6 loss suppresses temperature sensitivity in most disomic strains and suppresses the APS while reducing elevated basal ROS levels in most disomes. Importantly, attenuation of complex subunits was not increased, indicating UBP6 is not involved in their degradation. These findings suggest UBP6 substrates are enriched for proteins involved in stress responses. Whether the most attenuated proteins upon UBP6 loss are direct targets of Ubp6's deubiquitinating activity is not clear and requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C168 establish the specificity of UBP6 effects. The fitness improvement at high temperature (C164) and reduction of APS/ROS (C165) demonstrate beneficial effects. The critical negative result that complex subunit attenuation is not increased (C166) establishes that UBP6 acts through a different mechanism than the primary dosage compensation pathway. The inference that UBP6 targets stress response proteins (C167) is reasonable given the selective effects on the APS. The acknowledgment that direct targets remain to be identified (C168) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "UBP6 loss leads to clearance of protein aggregates in aneuploid cells, which could contribute to beneficial effects. Because protein aggregates sequester numerous proteins with essential cellular functions, their removal upon UBP6 loss may release sequestered proteins and could account for increases of downregulated proteins in disomes. Alternatively, protein aggregates may consist of metastable proteins as a consequence of impaired folding and/or chaperone activity, and attenuation in protein abundance mediated by UBP6 alleviates such stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 propose mechanisms linking UBP6 deletion to aggregate clearance and fitness improvement. The observation that UBP6 loss clears aggregates (C169) is supported by citation of prior work. The proposals that aggregate clearance releases sequestered proteins (C171) or that reduced protein abundance alleviates folding stress (C172) are reasonable hypotheses that could explain the beneficial effects. However, these remain speculative and require direct testing. The claims are appropriately presented as possibilities rather than established mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Aneuploidy leads to higher levels of intracellular ROS, which may in part be responsible for genomic instability observed in aneuploid cells. Consistent with this, aneuploid mouse embryonic fibroblasts and most cancer cells are characterized by high levels of reactive oxygen species. Unexpectedly, cells respond to increases in ROS by maintaining elevated levels of ROS scavenger proteins by posttranscriptional mechanisms. Quantification of the cancer proteome remains a formidable challenge but holds significant potential to reveal novel insights into mechanisms by which cancer cells thrive despite their unbalanced genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C177 place the findings in broader biological context. The observation of elevated ROS in aneuploid yeast (C173) is well-supported by the data. The proposal that this contributes to genomic instability (C174) is reasonable speculation supported by literature citation. The consistency with mammalian aneuploid cells and cancer (C175) strengthens the relevance. The observation of posttranscriptional ROS scavenger upregulation (C176) is a key finding. The discussion of cancer proteomics challenges and potential (C177) is appropriate forward-looking speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Attenuation of proteome changes and removal of protein aggregates significantly ameliorates the detrimental effects of aneuploidy. Aneuploidy causes Down syndrome and is thought to play an active role in neurodegenerative diseases. Targeting genes in the protein degradation pathway, such as UBP6, holds significant potential to ameliorate the detrimental consequences of aneuploidy in humans, opening the window for novel approaches to improve symptoms of Down patients and prevent or delay onset of Alzheimer's or Huntington's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C178-C181 discuss therapeutic implications. The observation that proteome attenuation and aggregate removal ameliorate aneuploidy effects in yeast (C178) is well-supported. The role of aneuploidy in Down syndrome and neurodegenerative diseases (C179) is supported by literature citation. However, the proposals that targeting UBP6 could be therapeutic for human aneuploidy-related conditions (C180-C181) are highly speculative. The yeast findings may not translate to human diseases, and no human data are presented. While these are reasonable directions for future research, they remain uncertain as therapeutic strategies.",
+    "result_type": "MINOR"
+  }
+]

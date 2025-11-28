@@ -1,0 +1,1636 @@
+{
+  "submission": {
+    "id": "f4ff0fdb-9d7b-4c4d-829e-34a8fa1b0d58",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:43:11.499151Z",
+    "updated_at": "2025-11-28T22:43:11.499151Z"
+  },
+  "content": [
+    {
+      "id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "submission_id": "f4ff0fdb-9d7b-4c4d-829e-34a8fa1b0d58",
+      "content_type": "manuscript",
+      "content_text": "# Enabling X-ray free electron laser crystallography for challenging biological systems from a limited number of crystals\n\n## Authors\n\n- Monarin Uervirojnangkoorn<sup>1</sup>\n- Oliver B Zeldin<sup>1</sup>\n- Artem Y Lyubimov<sup>1</sup>\n- Johan Hattne<sup>2</sup> ([ORCID: 0000-0002-8936-0912](https://orcid.org/0000-0002-8936-0912))\n- Aaron S Brewster<sup>3</sup>\n- Nicholas K Sauter<sup>3</sup>\n- Axel T Brunger<sup>1</sup> ([ORCID: 0000-0001-5121-2036](https://orcid.org/0000-0001-5121-2036)) \u2020\n- William I Weis<sup>1</sup> ([ORCID: 0000-0002-5583-6150](https://orcid.org/0000-0002-5583-6150)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Physiology Stanford University Stanford United States\n2. Janelia Research Campus Ashburn United States\n3. Physical Biosciences Division Lawrence Berkeley National Laboratory Berkeley United States\n4. Department of Neurology and Neurological Sciences Howard Hughes Medical Institute, Stanford University Stanford United States\n5. Department of Photon Science Stanford University Stanford United States\n6. Department of Structural Biology Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThere is considerable potential for X-ray free electron lasers (XFELs) to enable determination of macromolecular crystal structures that are difficult to solve using current synchrotron sources. Prior XFEL studies often involved the collection of thousands to millions of diffraction images, in part due to limitations of data processing methods. We implemented a data processing system based on classical post-refinement techniques, adapted to specific properties of XFEL diffraction data. When applied to XFEL data from three different proteins collected using various sample delivery systems and XFEL beam parameters, our method improved the quality of the diffraction data as well as the resulting refined atomic models and electron density maps. Moreover, the number of observations for a reflection necessary to assemble an accurate data set could be reduced to a few observations. These developments will help expand the applicability of XFEL crystallography to challenging biological systems, including cases where sample is limited.\n\n## Introduction\n\nRadiation damage often limits the resolution and accuracy of macromolecular crystal structures (Garman, 2010; Zeldin et al., 2013). Femtosecond X-ray free electron laser (XFEL) pulses enable the possibility of visualizing molecular structures before the onset of radiation damage, and allow the dynamics of chemical processes to be captured (Solem, 1986; Neutze et al., 2000). Thus, from the first XFEL operation at the Linac Coherent Light Source (LCLS) in 2009, there has been considerable effort dedicated to the development of methods to utilize this rapid succession of bright pulses for macromolecular crystallography, with the aim of obtaining damage-free, chemically accurate structures. Most of the structures reported from XFELs to date use a liquid jet to inject small crystals into the beam (DePonte et al., 2008; Sierra et al., 2012; Weierstall et al., 2014), but diffraction data have also been measured from crystals placed in the beam with a standard goniometer setup (Cohen et al., 2014; Hirata et al., 2014). In both cases, the illuminated volume diffracts before suffering damage by a single XFEL pulse. Because the crystal is effectively stationary during the 10\u201350 fs exposure, \u2018still\u2019 diffraction patterns are obtained, in contrast to standard diffraction data collection where the sample is rotated through a small angle during the exposure.\n\nExtracting accurate Bragg peak intensities from XFEL diffraction data is a substantial challenge. An XFEL data set comprises \u2018still\u2019 diffraction patterns generally containing only partially recorded reflections, typically from randomly oriented crystals. The full intensity then has to be estimated from the observed partial intensity observations. Most XFEL diffraction data processing approaches reported to date have approximated the full intensity by the so-called \u201cMonte Carlo\u201d method, in which thousands of partial intensity observations of a given reflection are summed and normalized by the number of observations, which assumes that these observations sample the full 3D Bragg volume. Because a single diffraction image\u2014in which each observed reflection samples only part of each reflection intensity\u2013contains much less information than a small continuous wedge of diffraction data (as used in conventional crystallography), this method requires a very large number of crystals to ensure convergence of the averaged partial reflection intensities to the full intensity value (Kirian et al., 2010). Moreover, shot-to-shot differences in pulse intensity and energy spectrum that arise from the self-amplified stimulated emission (SASE) process (Kondratenko and Saldin, 1979; Bonifacio et al., 1984), along with differences in illuminated crystal volume, mosaicity, and unit-cell dimensions, contribute to intensity variation of the equivalent reflections observed on different images. These differences are assumed to be averaged out by the Monte Carlo method (Hattne et al., 2014). Thus, accurate determination of these parameters for each diffraction image should, in principle, provide more accurate integrated intensities, and converge with fewer measurements. Furthermore, it is desirable to assemble a data set from as few diffraction images as possible, since the potential of XFELs has been limited by the very large amounts of sample required for the Monte Carlo method, compounded by severe limitations in the availability of beamtime.\n\nIn the 1970's, the Harrison and Rossmann groups developed \u2018post-refinement\u2019 methods (Rossmann et al., 1979; Winkler et al., 1979), in which the parameters that determine the location and volume of the Bragg peaks are \u2018post\u2019-refined against a reference set of fully recorded reflections following initial indexing and integration of rotation data. Accurate estimation of these parameters, including the unit-cell lengths and angles, crystal orientation, mosaic spread, and beam divergence enables accurate calculation of what fraction of the reflection intensity was recorded on the image, i.e., its \u2018partiality\u2019, which is then used to correct the measurement to its fully recorded equivalent. Applied to virus crystals, for which only a few images can typically be collected before radiation damage becomes significant, post-refinement made it possible to obtain high-quality diffraction data sets collected from many crystals (Rossmann et al., 1979; Winkler et al., 1979).\n\nThe implementation of post-refinement for XFEL diffraction data poses unique challenges. Firstly, since XFEL diffraction data generally do not contain fully recorded reflections, the initial scaling and merging of images is difficult. Secondly, since the XFEL diffraction images are stills rather than rotation data, different approaches are required for the correction of measurements to determine the full spot equivalent. Other schemes for implementing post-refinement of XFEL diffraction data have been described previously, but thus far they have been only applied to simulated XFEL data (White, 2014), and to pseudo-still images collected using monochromatic synchrotron radiation (Kabsch, 2014).\n\nWe have developed a new post-refinement procedure specifically designed for diffraction data from still images collected from crystals in random orientations. We implemented our method in a new computer program, prime (post-refinement and merging), that post-refines the parameters needed for calculating the partiality of reflections recorded on each still image. We describe here our method and demonstrate that post-refinement greatly improves the quality of the diffraction data from XFEL diffraction experiments with crystals of three different proteins. We show that our post-refinement procedure allows complete data sets to be extracted from a much smaller number of diffraction images than that necessary when using the Monte Carlo method. Thus, this development will help make XFEL crystallography accessible to many challenging problems in biology, including those for which sample quantity is a major limiting factor.\n\n## Results\n\n### Notation\n\nUnits are arbitrary unless specified in parenthesis.\n\nIobs, observed intensity.\n\nIref, reference intensity.\n\nw, weighting term (inverse variance of the observed intensity).\n\nG, function of linear scale (G0) and resolution-dependent (B) factors that scales the different diffraction images to the reference set.\n\nEoc, Ewald-offset correction function.\n\nrh, offset reciprocal-space distance from the center of the reflection to the Ewald sphere (\u00c5\u22121).\n\nrp, radius of the disc of intersection between the reciprocal lattice point and the Ewald sphere (\u00c5\u22121).\n\nrs, radius of the reciprocal lattice point (\u00c5\u22121).\n\n\u03b8x, \u03b8y, \u03b8z, crystal rotation angles (see Figure 1A; \u00b0).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig1-v2.jpg)\n\n**Figure 1.:** (A) A reciprocal lattice point intersects the Ewald sphere. The inset shows the coordinate system used in cctbx.xfel and prime. The vector S0 represents the direction of the incident beam (\u2013z-axis) and forms the radius of the Ewald sphere of length 1/\u03bb. The reciprocal lattice point i is expressed in reciprocal lab coordinates using Equation 5 as represented by the vector xi. The Ewald-offset distance, rh, is the difference between the distance from the Ewald-sphere center to the reciprocal lattice point (length of Si) and 1/\u03bb. The inset shows the definition of the crystal rotation axes; they are applied in the following order: \u03b8z, \u03b8y, \u03b8x. (B) Shown is the volume of a reciprocal lattice point with radius rs. The offset rh defines the Ewald-offset correction Eocarea, which is the ratio between the area intersecting the Ewald sphere, Ap, and the area at the center of the volume, As.\n\n\u03b30, parameter for Equation 3 (\u00c5\u22121).\n\n\u03b3e, energy spread and unit-cell variation (see Equation 3; \u00c5\u22121).\n\n\u03b3x and \u03b3y, beam divergence (see Equation 4; \u00c5\u22121).\n\n{uc}, unit-cell dimensions (a, b, c (\u00c5), \u03b1, \u03b2, and \u03b3 (\u00b0)).\n\nVc, reciprocal-lattice volume correction function (\u00c5\u22123).\n\nxobs and xcalc, observed and predicted spot positions on the detector (mm).\n\nx, position of the reciprocal lattice point (\u00c5\u22121).\n\nS, displacement vector from the center of the Ewald sphere to x (\u00c5\u22121).\n\nS0, incident beam vector with length 1/wavelength (\u00c5\u22121).\n\nO, orthogonalization matrix.\n\nR, rotation matrix.\n\nfL and fLN, Lorentzian function and its normalized counterpart.\n\n\u0393, full width at half maximum (FWHM) of the Lorentzian function.\n\n### Post-refinement overview\n\nPartiality can be modeled by describing the full reflection as a sphere (Figure 1A). In a still diffraction pattern, assuming a monochromatic photon source, the observed intensity Iobs,h for Miller index h is a thin slice through a three-dimensional reflection. To calculate partiality, we assume that the measurement is an areal (i.e., infinitely thin) sample of the volume (Figure 1B). The maximum partial intensity that can be recorded for a given reflection will occur when its center lies exactly on the Ewald sphere. By definition, the center of the reflection will be offset from the Ewald sphere by rh, and the corresponding disc will have a radius rp. The offset rh is determined by various experimental parameters, including the crystal orientation, unit-cell dimensions, and X-ray photon energy. The offset distance is used to calculate the Ewald offset correction, Eocarea, defined as the ratio between the areas defined by rp and rs (implemented as a smoothed correction function Eoch as defined in \u2018Materials and methods\u2019). The Ewald-offset corrected intensity is then converted to the full intensity in 3D by applying a volume correction factor, Vc.\n\nWe define the target Tpr for the post-refinement of a partiality and scaling model by:\n\n$$\nT_{pr}=\u2009\\sumhw_{h}(I_{obs,h}\u2212G(G_{0},B)Eoc_{h}(\\theta_{x},\u2009\\theta_{y},\u2009\\gamma_{0},\\gamma_{e},\\gamma_{x},\\gamma_{y},{uc})V_{c,h}^{\u22121}\u2009\\times\u2009I_{ref,h})^{2}\u2009\u2009,\n$$\n\nwhich minimizes the difference between the observed reflections Iobs and a scaled and Ewald-offset corrected full intensity \u2018reference set\u2019 Iref using a least-squares method. The sum is over all observed reflections with Miller indices h.\n\nIn alternate refinement cycles, we also minimize the deviations between predicted (xcalc) and observed (xobs) spot positions on the detector using a subset of strong spots as has been suggested previously (Hattne et al., 2014; Kabsch, 2014):\n\n$$\nT_{xy}=\\sumh(x_{obs}\u2212x_{calc})^{2}.\n$$\n\nSets of parameters associated with each diffraction image, i.e., G0, B, \u03b8x, \u03b8y, \u03b30, \u03b3e, \u03b3x, \u03b3y and the unit-cell constants, are iteratively refined in a series of \u2018microcycles\u2019 against the current reference set (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig2-v2.jpg)\n\n**Figure 2.:** The flowchart illustrates the iterative post-refinement protocol, broken up into \u2018microcycles\u2019 that refine groups of parameters iteratively (blue boxes), and \u2018macrocycles\u2019. At the beginning of first macrocycle, a reference diffraction data set is generated. At the end of each macrocycle, the reference diffraction data set is updated. Both the micro- and macrocycles terminate either when the refinement converges or when a user-specified maximum number of cycles is reached.\n\nProcedures for generating the initial reference set Iref(initial) are described below. After convergence of the microcycles, scaled full intensities are calculated from the observed partial intensities Iobs by multiplication of the inverse of the Ewald-offset correction and the scale factor G, along with the volume correction factor Vc. These scaled full reflections are then merged for each unique Miller index, taking into account estimated errors of the observed intensities, \u03c3(Iobs), and propagation of error estimates for the refined parameters. This merged and scaled set of full reflections is then used as the new reference set in the next round of post-refinement using the target functions (Equations 1 and 2, for details see \u2018Materials and methods\u2019). These \u2018macrocycles\u2019 are repeated until convergence is achieved, after which the merged and scaled set of full intensities is provided to the user.\n\nThe prime program controls post-refinement of specified parameters in a particular microcycle (Figure 2). One can refine all parameters together, or selectively refine groups of parameters iteratively, starting from (1) a linear scale factor and a B-factor, (2) crystal orientations, (3) crystal mosaicity, beam divergence, and spectral dispersion, and (4) unit-cell dimensions. Space-group-specific constraints are used to limit the number of free parameters for the unit-cell refinement. A particular microcycle is completed when the target functions converge or when a specified number of iterations is reached; the program then generates the new reference intensity set to replace the current reference set for the next macrocycle. Finally, the program exits and outputs the latest merged reflection set either when the macrocycles converge or when a user-specified maximum number of cycles has been reached.\n\n### Preparation of the observed intensities\n\nThe starting point for our post-refinement method is a set of indexed and integrated partial intensities, along with their estimated errors, obtained from still images. For this study, diffraction data and their estimated errors were obtained from the cctbx.xfel package (Sauter et al., 2013; Hattne et al., 2014), although in principle integrated diffraction data from any other program can be used. Observed intensities on the diffraction image were classified as \u2018spots\u2019 by the program Spotfinder (Zhang et al., 2006), which identifies Bragg spots by considering connected pixels with area and signal height greater than user-defined thresholds. By trial and error, we accepted reflections larger than 25 pixels with individual-pixel intensity more than 5 \u03c3 over background for myoglobin and hydrogenase (collected on a Rayonix MX325HE detector with pixel size of 0.08 mm and beam diameter [FWHM] of 50 \u03bcm). For thermolysin (collected on a Cornell-SLAC pixel array detector with pixel size of 0.1 mm and beam size of 2.25 \u03bcm2), where reflections are generally smaller, these values were 1 pixel and 5 \u03c3. A full list of parameters is available on the cctbx.xfel wiki (http://cci.lbl.gov/xfel). Separate resolution cutoffs for each image were applied by cctbx.xfel, at resolutions where the average I/\u03c3(I) fell below 0.5 (Hattne et al., 2014).\n\nPrior to post-refinement, the experimentally observed partial intensities need to be corrected by a polarization factor. The primary XFEL beam at LCLS is strongly polarized in the horizontal plane, and we calculate the correction factor as a function of the Bragg angle (\u03b8) and the angle $\u03d5$ between the sample reflection and the laboratory horizontal planes (Kahn et al., 1982; see \u2018Materials and methods\u2019). For a stationary crystal and a monochromatic beam, a Lorentz factor correction is not applicable; the spectral dispersion of the SASE beam (\u03b4E/E \u223c 3 \u00d7 10\u22123 for the data sets studied here) is accounted for by the \u03b3e term (see \u2018Materials and methods\u2019).\n\n### Generating the initial reference set and initial parameters\n\nAn essential step to initiate post-refinement is the generation of the initial reference set Iref (initial). This reference set has to be estimated from the available unmerged and unscaled partial reflection intensities after application of the polarization correction. For the results presented here, linear scale factors for each diffraction image were chosen to make the mean intensities of each diffraction image equal. Since this procedure can be affected by outliers in the observed intensities, we select a subset of reflections with user-specified resolution range and signal-to-noise ratio (I/\u03c3(I)) cutoffs. From this selection, we calculate the mean intensity on each diffraction image and then scale each image to make the mean intensity of all images equal. We correct the scaled observed reflections to their Ewald-offset corrected equivalents using the starting parameters, and then merge the observations, taking into account the experimental \u03c3(Iobs), to generate the initial reference set.\n\nThe initial values for crystal orientation, unit-cell dimensions, crystal-to-detector distance, and spot position on the detector were obtained from the refinement of these parameters by cctbx.xfel. The photon energy was that provided by the LCLS endstation system and is not refined. Initial values for the parameters of the reflection width model are described in the \u2018Materials and methods\u2019 section.\n\n### Definition and comparison of data processing schemes\n\nIn order to separately assess the effects of scaling, the Ewald offset correction (Equation 1), and post-refinement, we refer to three alternative schemes for processing the diffraction data sets: (1) \u2018Averaged merged\u2019, in which intensities were generated by averaging all observed partial intensities from equivalent reflections without Ewald-offset correction and scaling; (2) \u2018Mean-intensity partiality corrected\u2019, in which intensities were generated by scaling the reflections to the mean intensity and also applying the Ewald-offset correction determined from the initial parameters obtained from the indexing and integration program, followed by merging; and (3) \u2018Post-refined\u2019, in which intensities were from the final set of scaled and merged full reflections after the convergence of post-refinement. We note that although the \u2018averaged merged\u2019 process is similar to the original Monte Carlo method (Kirian et al., 2010), the integrated, unmerged partial intensities used in our tests were obtained from the program cctbx.xfel (Hattne et al., 2014), which also refines various parameters on an image-by-image basis (Sauter et al., 2014).\n\n### Quality assessment of post-refined data\n\nWe tested our post-refinement method on experimental XFEL diffraction data sets from three different crystallized proteins of known structure: myoglobin, hydrogenase, and thermolysin (Table 1). For quality assessment, we performed molecular replacement (MR) with Phaser (McCoy et al., 2007) using models with selected parts of the known structures omitted, followed by atomic model refinement with phenix.refine (Afonine et al., 2012), and inspection of (mFo-DFc) omit maps. We further used three different metrics: CC1/2, and the crystallographic Rwork and Rfree of the fully refined atomic model. We then compared changes in the three quality metrics between merged XFEL diffraction data sets after scaling, partiality correction, and post-refinement. We also investigated the effect of reducing the number of images used by randomly selecting a subset from the full set of diffraction images and repeating the entire post-refinement, merging, MR and refinement processes using this subset.\n\n**Table 1.**\n XFEL diffraction data sets used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Myoglobin</th>\n      <th>Clostridium pasteurianum hydrogenase</th>\n      <th>Thermolysin</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Space group</td>\n      <td>P6</td>\n      <td>P42212</td>\n      <td>P6122</td>\n    </tr>\n    <tr>\n      <td>Resolution used (\u00c5)</td>\n      <td>20.0\u20131.35</td>\n      <td>45.0\u20131.60</td>\n      <td>50.0\u20132.10</td>\n    </tr>\n    <tr>\n      <td>Unit cell dimensions (\u00c5)</td>\n      <td>a = b = 90.8, c = 45.6</td>\n      <td>a = b = 111.2, c = 103.8</td>\n      <td>a = b = 92.7, c = 130.5</td>\n    </tr>\n    <tr>\n      <td>No. of unique reflections</td>\n      <td>46,555</td>\n      <td>85,273</td>\n      <td>19,995</td>\n    </tr>\n    <tr>\n      <td>No. of images* indexed</td>\n      <td>757</td>\n      <td>177</td>\n      <td>12,692</td>\n    </tr>\n    <tr>\n      <td>No. of images with spots to resolution used</td>\n      <td>307</td>\n      <td>75</td>\n      <td>1957</td>\n    </tr>\n    <tr>\n      <td>Average no. of spots on an image (to resolution used)</td>\n      <td>1628</td>\n      <td>3640</td>\n      <td>352</td>\n    </tr>\n    <tr>\n      <td>Energy spectrum</td>\n      <td>SASE\u2020</td>\n      <td>SASE\u2020</td>\n      <td>SASE\u2020</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td>Rayonix MX325HE</td>\n      <td>Rayonix MX325HE</td>\n      <td>CSPAD\u2021</td>\n    </tr>\n    <tr>\n      <td>Sample delivery method</td>\n      <td>fixed target</td>\n      <td>fixed target</td>\n      <td>Electrospun jet</td>\n    </tr>\n  </tbody>\n</table>\n\n_*This is the number of images indexed using cctbx.xfel program, and in the case of thermolysin it is the number of images indexed for one of the two wavelengths.\u2020SASE: self-amplified spontaneous emission.\u2021CSPAD: Cornell-SLAC pixel array detector._\n\nDiffraction data for both myoglobin and hydrogenase were collected from frozen crystals mounted on a standard goniometer setup (Cohen et al., 2014), whereas the thermolysin data were collected using an electrospun liquid jet to inject nanocystals into a vacuum chamber (Sierra et al., 2012; Bogan, 2013). The completeness of each data set was better than 90% at the limiting resolution used in our tests (Tables 2, 3, 4). Each diffraction data set involved a different number of images due the differing diffraction quality of the crystals.\n\n**Table 2.**\n Statistics of post-refinement and atomic model refinement for myoglobin\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>No. images</td>\n      <td colspan=\"3\">100</td>\n      <td colspan=\"3\">757</td>\n    </tr>\n    <tr>\n      <td>Resolutiona (\u00c5)</td>\n      <td colspan=\"3\">20.0\u20131.35 (1.40\u20131.35)</td>\n      <td colspan=\"3\">20.0\u20131.35 (1.40\u20131.35)</td>\n    </tr>\n    <tr>\n      <td>Completenessa (%)</td>\n      <td colspan=\"3\">80.0 (22.2)</td>\n      <td colspan=\"3\">97.7 (79.8)</td>\n    </tr>\n    <tr>\n      <td>Average no. observations per unique hkla</td>\n      <td colspan=\"3\">4.0 (1.2)</td>\n      <td colspan=\"3\">25.7 (2.0)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Averaged-merged</td>\n      <td>Mean-scaled partiality corrected</td>\n      <td>Post-refined</td>\n      <td>Averaged merged</td>\n      <td>Mean-scaled partiality corrected</td>\n      <td>Post-refined</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Post-refinement parametersb</td>\n    </tr>\n    <tr>\n      <td>Linear scale factor G0</td>\n      <td>1.00 (0.00)</td>\n      <td>2.79 (5.02)</td>\n      <td>1.00 (1.04)</td>\n      <td>1.00 (0.00)</td>\n      <td>2.19 (3.83)</td>\n      <td>0.89 (1.07)</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>0.0 (0.0)</td>\n      <td>0.0 (0.0)</td>\n      <td>3.2 (7.8)</td>\n      <td>0.0 (0.0)</td>\n      <td>0.0 (0.0)</td>\n      <td>6.2 (8.3)</td>\n    </tr>\n    <tr>\n      <td>\u03b30 (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00135 (0.00028)</td>\n      <td>0.00128 (0.00022)</td>\n      <td>NA</td>\n      <td>0.00147 (0.00042)</td>\n      <td>0.00132 (0.00034)</td>\n    </tr>\n    <tr>\n      <td>\u03b3y (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00 (0.00)</td>\n      <td>0.00007 (0.00080)</td>\n      <td>NA</td>\n      <td>0.00 (0.00)</td>\n      <td>0.00007 (0.00009)</td>\n    </tr>\n    <tr>\n      <td>\u03b3x (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00 (0.00)</td>\n      <td>0.00010 (0.00011)</td>\n      <td>NA</td>\n      <td>0.00 (0.00)</td>\n      <td>0.00008 (0.00010)</td>\n    </tr>\n    <tr>\n      <td>\u03b3e (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00200 (0.00)</td>\n      <td>0.00344 (0.00266)</td>\n      <td>NA</td>\n      <td>0.00200 (0.00)</td>\n      <td>0.00423 (0.00323)</td>\n    </tr>\n    <tr>\n      <td>Unit cell</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a (\u212b):</td>\n      <td>90.4 (0.4)</td>\n      <td>90.4 (0.4)</td>\n      <td>90.5 (0.4)</td>\n      <td>90.4 (0.4)</td>\n      <td>90.4 (0.4)</td>\n      <td>90.5 (0.3)</td>\n    </tr>\n    <tr>\n      <td>c (\u212b)</td>\n      <td>45.3 (0.4)</td>\n      <td>45.3 (0.4)</td>\n      <td>45.3 (0.3)</td>\n      <td>45.3 (0.3)</td>\n      <td>45.3 (0.3)</td>\n      <td>45.3 (0.3)</td>\n    </tr>\n    <tr>\n      <td>Average Tpr Start/End</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>19.39 (7.68)/7.17 (3.38)</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>19.83 (7.54)/6.02 (2.59)</td>\n    </tr>\n    <tr>\n      <td>Average Txy (mm2) Start/End</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>169.74 (132.56)/132.02 (104.08)</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>170.66 (144.52)/133.42 (109.58)</td>\n    </tr>\n    <tr>\n      <td>CC1/2 (%)</td>\n      <td>81.3</td>\n      <td>79.6</td>\n      <td>86.5</td>\n      <td>91.8</td>\n      <td>95.7</td>\n      <td>98.2</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Molecular replacement scoresc</td>\n    </tr>\n    <tr>\n      <td>LLG</td>\n      <td>2837.</td>\n      <td>5043.</td>\n      <td>5291.</td>\n      <td>8264.</td>\n      <td>8364.</td>\n      <td>9320.</td>\n    </tr>\n    <tr>\n      <td>TFZ</td>\n      <td>10.5</td>\n      <td>13.0</td>\n      <td>13.4</td>\n      <td>13.7</td>\n      <td>13.8</td>\n      <td>14.0</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Structure-refinement parameters</td>\n    </tr>\n    <tr>\n      <td>R (%)</td>\n      <td>39.4</td>\n      <td>28.0</td>\n      <td>23.5</td>\n      <td>21.1</td>\n      <td>20.3</td>\n      <td>17.8</td>\n    </tr>\n    <tr>\n      <td>Rfree (%)</td>\n      <td>42.1</td>\n      <td>29.4</td>\n      <td>24.8</td>\n      <td>23.1</td>\n      <td>22.5</td>\n      <td>19.7</td>\n    </tr>\n    <tr>\n      <td>Bond r.m.s.d.</td>\n      <td>0.006</td>\n      <td>0.006</td>\n      <td>0.004</td>\n      <td>0.006</td>\n      <td>0.006</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Angle r.m.s.d.</td>\n      <td>1.14</td>\n      <td>0.98</td>\n      <td>0.79</td>\n      <td>1.03</td>\n      <td>1.35</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Ramachandran statistics</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>98.0</td>\n      <td>98.0</td>\n      <td>98.0</td>\n      <td>98.0</td>\n      <td>98.0</td>\n      <td>98.0</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.0</td>\n      <td>0.0</td>\n      <td>0.0</td>\n      <td>0.0</td>\n      <td>0.0</td>\n      <td>0.0</td>\n    </tr>\n  </tbody>\n</table>\n\n_aValues in parentheses correspond to highest resolution shell.bPost-refined parameters are shown as the mean value, with the standard deviation in parentheses.cMolecular replacement scores reported by Phaser (McCoy et al., 2007): log-likelihood gain (LLG) and translation function (TFZ)._\n\n**Table 3.**\n Statistics of post-refinement and atomic model refinement for hydrogenase\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>No. images</td>\n      <td colspan=\"2\">100</td>\n      <td colspan=\"2\">177</td>\n    </tr>\n    <tr>\n      <td>Resolutiona (\u00c5)</td>\n      <td colspan=\"2\">45.0\u20131.60 (1.66\u20131.60)</td>\n      <td colspan=\"2\">45.0\u20131.60 (1.66\u20131.60)</td>\n    </tr>\n    <tr>\n      <td>Completenessa (%)</td>\n      <td colspan=\"2\">83.0 (47.7)</td>\n      <td colspan=\"2\">91.2 (63.5)</td>\n    </tr>\n    <tr>\n      <td>Average no. observations per unique hkla</td>\n      <td colspan=\"2\">4.4 (1.7)</td>\n      <td colspan=\"2\">7.13 (2.3)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Averaged-merged</td>\n      <td>Post-refined</td>\n      <td>Averaged-merged</td>\n      <td>Post-refined</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Post-refinement parametersb</td>\n    </tr>\n    <tr>\n      <td>Linear scale factor G0</td>\n      <td>1.00 (0.00)</td>\n      <td>0.56 (1.27)</td>\n      <td>1.00 (0.00)</td>\n      <td>0.53 (1.22)</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>0.0 (0.0)</td>\n      <td>10.0 (7.0)</td>\n      <td>0.0 (0.0)</td>\n      <td>10.5 (6.9)</td>\n    </tr>\n    <tr>\n      <td>\u03b30 (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00132 (0.00042)</td>\n      <td>NA</td>\n      <td>0.00126 (0.00041)</td>\n    </tr>\n    <tr>\n      <td>\u03b3y (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00002 (0.00004)</td>\n      <td>NA</td>\n      <td>0.00002 (0.00004)</td>\n    </tr>\n    <tr>\n      <td>\u03b3x (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00008 (0.00009)</td>\n      <td>NA</td>\n      <td>0.00008 (0.00011)</td>\n    </tr>\n    <tr>\n      <td>\u03b3e (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00269 (0.00138)</td>\n      <td>NA</td>\n      <td>0.00288 (0.00160)</td>\n    </tr>\n    <tr>\n      <td>Unit cell</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a (\u212b):</td>\n      <td>110.1 (0.4)</td>\n      <td>110.4 (0.3)</td>\n      <td>110.1 (0.4)</td>\n      <td>110.3 (0.4)</td>\n    </tr>\n    <tr>\n      <td>c (\u212b)</td>\n      <td>103.1 (0.4)</td>\n      <td>103.1 (0.2)</td>\n      <td>103.0 (0.4)</td>\n      <td>103.0 (0.2)</td>\n    </tr>\n    <tr>\n      <td>Average Tpr Start/End</td>\n      <td>NA</td>\n      <td>28.20 (10.86)/5.92 (2.35)</td>\n      <td>NA</td>\n      <td>26.47 (12.70)/5.22 (2.72)</td>\n    </tr>\n    <tr>\n      <td>Average Txy (mm2) Start/End</td>\n      <td>NA</td>\n      <td>623.36 (314.57)/381.23 (198.44)</td>\n      <td>NA</td>\n      <td>564.30 (267.45)/372.28 (202.28)</td>\n    </tr>\n    <tr>\n      <td>CC1/2 (%)</td>\n      <td>62.0</td>\n      <td>77.3</td>\n      <td>71.7</td>\n      <td>84.8</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Molecular replacement scoresc</td>\n    </tr>\n    <tr>\n      <td>LLG</td>\n      <td>53,352.</td>\n      <td>9612.</td>\n      <td>7229.</td>\n      <td>11774.</td>\n    </tr>\n    <tr>\n      <td>TFZ</td>\n      <td>69.2</td>\n      <td>75.9</td>\n      <td>75.0</td>\n      <td>79.0</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Structure-refinement parameters</td>\n    </tr>\n    <tr>\n      <td>R (%)</td>\n      <td>33.4</td>\n      <td>25.3</td>\n      <td>29.1</td>\n      <td>22.0</td>\n    </tr>\n    <tr>\n      <td>Rfree (%)</td>\n      <td>36.7</td>\n      <td>28.9</td>\n      <td>31.3</td>\n      <td>25.0</td>\n    </tr>\n    <tr>\n      <td>Bond r.m.s.d.</td>\n      <td>0.006</td>\n      <td>0.007</td>\n      <td>0.007</td>\n      <td>0.007</td>\n    </tr>\n    <tr>\n      <td>Angle r.m.s.d.</td>\n      <td>1.43</td>\n      <td>1.50</td>\n      <td>1.68</td>\n      <td>1.97</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Ramachandran statistics</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>96.3</td>\n      <td>97.0</td>\n      <td>97.0</td>\n      <td>96.7</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.0</td>\n      <td>0.0</td>\n      <td>0.0</td>\n      <td>0.0</td>\n    </tr>\n  </tbody>\n</table>\n\n_aValues in parentheses correspond to highest resolution shell.bPost-refined parameters are shown as the mean value, with the standard deviation in parentheses.cMolecular replacement scores reported by Phaser (McCoy et al., 2007): log-likelihood gain (LLG) and translation function (TFZ)._\n\n**Table 4.**\n Statistics of post-refinement and atomic model refinement for thermolysin\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>No. images</td>\n      <td colspan=\"2\">2000</td>\n      <td colspan=\"2\">12,692</td>\n    </tr>\n    <tr>\n      <td>Resolutiona (\u00c5)</td>\n      <td colspan=\"2\">50.0\u20132.10 (2.18\u20132.10)</td>\n      <td colspan=\"2\">50.0\u20132.10 (2.18\u20132.10)</td>\n    </tr>\n    <tr>\n      <td>Completenessa (%)</td>\n      <td colspan=\"2\">81.3 (24.3)</td>\n      <td colspan=\"2\">96.5 (74.8)</td>\n    </tr>\n    <tr>\n      <td>Average no. observations per unique hkla</td>\n      <td colspan=\"2\">32.8 (1.2)</td>\n      <td colspan=\"2\">176.6 (2.4)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Averaged-merged</td>\n      <td>Post-refined</td>\n      <td>Averaged-merged</td>\n      <td>Post-refined</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Post-refinement parametersb</td>\n    </tr>\n    <tr>\n      <td>Linear scale factor G0</td>\n      <td>1.00 (0.00)</td>\n      <td>1.65 (1.66)</td>\n      <td>1.00 (0.00)</td>\n      <td>2.26 (75.12)</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>0.0 (0.0)</td>\n      <td>23.0 (33.8)</td>\n      <td>0.0 (0.0)</td>\n      <td>30.1 (59.8)</td>\n    </tr>\n    <tr>\n      <td>\u03b30 (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00052 (0.00040)</td>\n      <td>NA</td>\n      <td>0.00051 (0.00039)</td>\n    </tr>\n    <tr>\n      <td>\u03b3y (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00001 (0.00003)</td>\n      <td>NA</td>\n      <td>0.00001 (0.00003)</td>\n    </tr>\n    <tr>\n      <td>\u03b3x (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00002 (0.00004)</td>\n      <td>NA</td>\n      <td>0.00002 (0.00004)</td>\n    </tr>\n    <tr>\n      <td>\u03b3e (\u212b\u22121)</td>\n      <td>NA</td>\n      <td>0.00110 (0.00129)</td>\n      <td>NA</td>\n      <td>0.00103 (0.00128)</td>\n    </tr>\n    <tr>\n      <td>Unit cell</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a (\u212b):</td>\n      <td>92.9 (0.3)</td>\n      <td>92.9 (0.2)</td>\n      <td>92.9 (0.3)</td>\n      <td>92.9 (0.3)</td>\n    </tr>\n    <tr>\n      <td>c (\u212b)</td>\n      <td>130.5 (0.5)</td>\n      <td>130.4 (0.4)</td>\n      <td>130.5 (0.5)</td>\n      <td>130.4 (0.4)</td>\n    </tr>\n    <tr>\n      <td>Average Tpr Start/End</td>\n      <td>NA</td>\n      <td>1.15 (0.49)/0.55 (0.23)</td>\n      <td>NA</td>\n      <td>1.15 (0.52)/0.28 (0.13)</td>\n    </tr>\n    <tr>\n      <td>Average Txy (mm2) Start/End</td>\n      <td>NA</td>\n      <td>168.13 (117.29)/167.72 (106.14)</td>\n      <td>NA</td>\n      <td>169.01 (122.20)/170.00 (122.57)</td>\n    </tr>\n    <tr>\n      <td>CC1/2 (%)</td>\n      <td>77.7</td>\n      <td>93.5</td>\n      <td>94.3</td>\n      <td>98.8</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Molecular replacement scoresc</td>\n    </tr>\n    <tr>\n      <td>LLG</td>\n      <td>3590.</td>\n      <td>4491.</td>\n      <td>5477.</td>\n      <td>6022.</td>\n    </tr>\n    <tr>\n      <td>TFZ</td>\n      <td>8.9</td>\n      <td>9.7</td>\n      <td>24.1</td>\n      <td>24.6</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Structure-refinement parameters</td>\n    </tr>\n    <tr>\n      <td>R (%)</td>\n      <td>25.2</td>\n      <td>19.5</td>\n      <td>20.7</td>\n      <td>18.4</td>\n    </tr>\n    <tr>\n      <td>Rfree (%)</td>\n      <td>29.1</td>\n      <td>24.0</td>\n      <td>23.9</td>\n      <td>21.1</td>\n    </tr>\n    <tr>\n      <td>Bond r.m.s.d.</td>\n      <td>0.004</td>\n      <td>0.002</td>\n      <td>0.002</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Angle r.m.s.d.</td>\n      <td>0.75</td>\n      <td>0.58</td>\n      <td>0.59</td>\n      <td>0.62</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Ramachandran statistics</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>95.9</td>\n      <td>94.6</td>\n      <td>95.2</td>\n      <td>94.9</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.0</td>\n      <td>0.0</td>\n      <td>0.0</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>Zinc peak height</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Zn(1) (\u03c3)</td>\n      <td>14.0</td>\n      <td>16.0</td>\n      <td>14.3</td>\n      <td>20.9</td>\n    </tr>\n    <tr>\n      <td>Zn(2) (\u03c3)</td>\n      <td>3.6</td>\n      <td>5.1</td>\n      <td>7.7</td>\n      <td>7.1</td>\n    </tr>\n    <tr>\n      <td>Average peak height for calcium ions (\u03c3)</td>\n      <td>9.7</td>\n      <td>11.3</td>\n      <td>14.2</td>\n      <td>16.1</td>\n    </tr>\n  </tbody>\n</table>\n\n_aValues in parentheses correspond to highest resolution shell.bPost-refined parameters are shown as the mean value, with the standard deviation in parentheses.cMolecular replacement scores reported by Phaser (McCoy et al., 2007): log-likelihood gain (LLG) and translation function (TFZ)._\n\n### Myoglobin\n\nFor myoglobin, we used both an XFEL diffraction data set consisting of 757 diffraction images (Table 1) collected by the SSRL-SMB group using a goniometer-mounted fixed-target grid (Cohen et al., 2014), and a randomly selected subset of 100 diffraction images. The diffraction images were from crystals in random orientations, with a single still image collected from each crystal.\n\n#### Convergence of post-refinement\n\nConvergence properties for our post-refinement method for myoglobin are shown in Figures 3 and 4, and a representative example of the first macrocycle for a selected diffraction image is provided in Figure 3. The order of the three microcycle post-refinement iterations was: scale factors (SF\u2014Equation 17), crystal orientation (CO\u2014Equation 5), reciprocal spot size (RR\u2014Equations 3 and 4), and unit-cell dimensions (UC\u2014Equation 5). The partiality model target function Tpr (Equation 1) markedly decreased in the first microcycle and fully converged in the last microcycle. The spot position residual Txy (Equation 2), also decreased both during post-refinement of the crystal orientation and the unit-cell parameters.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig3-v2.jpg)\n\n**Figure 3.:** Shown are the values of the refined parameters and target functions during the first macrocycle of post-refinement for a representative diffraction image of the myoglobin XFEL diffraction data set. The iterative post-refinement included SF (scale factors), CO (crystal orientation), RR (reflection radius parameters), and UC (unit-cell dimensions) for three microcycles.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig4-v2.jpg)\n\n**Figure 4.:** The plots illustrate the convergence of post-refined parameters, target functions, and quality indicators during post-refinement over five macrocycles. A subset of 100 randomly selected diffraction images from the myoglobin XFEL diffraction data was used. For each specified target function and refined parameter, changes are plotted relative to the previous macrocycle, whereas the quality metric CC1/2 is shown as absolute numbers. The changes in post-refined parameters and target functions are shown as \u2018box plots\u2019. The bottom and top of the blue box are the first (Q1) and third (Q3) quartiles. The red line inside the box is the second quartile (Q2; median). The black horizontal lines extending vertically from the box indicate the range of the particular quantity at a 1.5 interquartile range (Q3\u2013Q1). The plus signs indicate any items beyond this range.\n\nFigure 5 shows the results for five macrocycles for post-refinement using the subset of 100 randomly selected still images of the myoglobin XFEL diffraction data set. The partiality model target function Tpr (Equation 1) continually decreased in the first three macrocycles. The average spot position residual Txy (Equation 2) decreased in the first cycle and converged in the next cycle. The quality metric CC1/2 also converged within the first three macrocycles.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig5-v2.jpg)\n\n**Figure 5.:** (A) Percent completeness and (B) average number of observations plotted as a function of resolution for the myoblogin XFEL diffraction data set consisting of all 757 diffraction images (Table 1) and a randomly selected subset of 100 diffraction images. (C) CC1/2 for the averaged merged, mean-intensity scaled with partiality correction, and post-refined myoglobin diffraction data sets consisting of 100 and 757 diffraction images.\n\nInaccuracies in the starting parameters obtained from indexing and integration of still images may limit the radius of convergence and the accuracy of the post-refined parameters. The sources of such errors will be the subject of future improvement in indexing and integration in cctbx.xfel. Nonetheless, for the systems studied here the post-refinements converged within 3\u20135 cycles.\n\n#### Improvements due to post-refinement\n\nFor the myoglobin diffraction data set using all 757 images (Table 2, Figure 6A,B), the CC1/2 value improved after post-refinement, especially for those reflections in the low-resolution shells (Figure 5C; Table 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig6-v2.jpg)\n\n**Figure 6.:** (A) Difference Fourier (mFo-DFc) omit maps around the heme group (which was omitted from molecular replacement and atomic model refinement) for the averaged merged, the mean-scaled partiality-corrected merged, and the post-refined myoglobin XFEL diffraction data sets consisting of all 757 diffraction images (Table 1) and a randomly selected subset of 100 diffraction images. The maps are contoured are at 2.5 \u03c3. (B) A plot of crystallographic Rwork and Rfree values vs resolution after atomic model refinement using the specified myoglobin diffraction data sets with inclusion of the heme group, SO4, and water molecules.\n\nOmit maps were used to compare the quality of the diffraction data processed with the different methods. Specifically, we omitted the heme group from the molecular replacement search model (PDB ID: 3U3E) and in subsequent atomic model refinement, and calculated mFo-DFc difference maps (Figure 6). The real-space correlation coefficient of the heme group to the difference maps calculated from the post-refined diffraction data sets is higher than that calculated from the corresponding averaged merged diffraction data sets using the same set of diffraction images (Figure 6A).\n\nAfter initial model refinement with the heme group omitted, we included the heme group and well-defined water molecules and completed the atomic model refinement. The post-refined diffraction data set produced the best Rfree and Rwork values, followed by the mean-scaled partiality corrected, with the averaged merged diffraction data sets yielding the poorest refinement statistics.\n\nOverall, comparison of the CC1/2 (Figure 5), omit map quality, and R values (Figure 6B) shows that post-refinement substantially improves scaling and correction of the diffraction data with respect to the mean-scaled partiality-corrected diffraction data set. Thus, post-refinement against the iteratively improved reference set is superior to methods that only consider each diffraction image individually, even when the reflections are scaled and corrected for partiality.\n\n#### 100 diffraction images are sufficient for myoglobin structure refinement\n\nGiven the significant improvements obtained by post-refining all available images, we tested whether accurate diffraction data and refined atomic models could be obtained using fewer diffraction images by post-refining the randomly selected subset of 100 myoglobin diffraction images. Since this subset is only 80% complete, the CC1/2 is poorer than that of the full diffraction data set consisting of 757 images, but it is nonetheless greatly improved relative to the corresponding non-post-refined diffraction data set (Figure 5). Moreover, the real-space correlation coefficient of the heme group with the difference map obtained with the post-refined 100 diffraction images is better than that calculated from the averaged merged diffraction data set using all the 757 diffraction images (Figure 6A), despite the higher completeness and CC1/2 value of the latter data set (Figure 5C). Thus, post-refinement both improves diffraction data quality for a given set of images and reduces the number of diffraction images required for structure determination and refinement from serial diffraction data.\n\n#### Comparison with a synchrotron data set\n\nWe also compared the post-refined XFEL difference map (using all 757 diffraction images) with that calculated from an isomorphous synchrotron data set and model (PDB ID: 1JW8, excluding reflections past 1.35 \u00c5 resolution to make the resolution of the diffraction data sets equivalent). The omit maps and real-space correlation coefficients for the heme group were of comparable quality (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig7-v2.jpg)\n\n**Figure 7.:** Difference Fourier (mFo-DFo) omit maps at 1.35 \u00c5 around the heme group (which was omitted from molecular replacement and model refinement), generated from (A) the synchrotron diffraction data and corresponding model with PDB ID 1JW8 (for comparison, all reflections past 1.35 \u00c5 resolution were excluded) and (B) the post-refined myoglobin XFEL diffraction data set using all 757 diffraction images (Table 1). The maps are contoured at 2.5 \u03c3.\n\n### Hydrogenase\n\nXFEL diffraction data for Clostridium pasteurianum hydrogenase were measured from eight crystals by the Peters (University of Montana) and SSRL-SMB groups using a goniometer-mounted fixed-target grid (Cohen et al., 2014). This experiment generated 177 diffraction images that could be merged to a completeness of 91%, with more than half of the diffraction images containing reflections to 1.6 \u00c5 (each diffraction image typically has approximately 3000 spots). We also used a randomly selected subset of 100 diffraction images to assess the effect of post-refinement on a smaller number of images.\n\nThe CC1/2 value improved significantly with post-refinement (Table 3). For quality assessment, the Fe-S cluster was omitted from both the molecular replacement search model (PDB ID 3C8Y) and subsequent atomic model refinement. The omit map densities for the post-refined diffraction data sets using the complete set of 177 diffraction images and the randomly selected subset of 100 diffraction images (83% complete) clearly show the entire Fe-S cluster whereas the densities using the averaged merged data sets are much poorer (Figure 8A). Upon atomic model refinement with the Fe-S clusters and water molecules included, the R and Rfree values for both post-refined data sets were significantly better than the averaged merged case (Figure 8B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig8-v2.jpg)\n\n**Figure 8.:** (A) Difference Fourier (mFo-DFc) omit maps of one of the four Fe-S clusters (which were omitted in molecular replacement and atomic model refinement) for the averaged merged and the post-refined hydrogenase XFEL diffraction data sets consisting of all 177 diffraction images (Table 1) and a randomly selected subset of 100 diffraction images. The maps are contoured at 3 \u03c3. (B) Crystallographic R and Rfree values vs resolution after atomic model refinement using the specified diffraction data sets with inclusion of the three Fe-S clusters and water molecules.\n\n### Thermolysin\n\nFor thermolysin, we tested the entire deposited XFEL diffraction data set consisting of 12,692 diffraction images (Table 1) (Hattne et al., 2014; the diffraction data are publicly archived in the Coherent X-ray Imaging Data Bank, accession ID 23, http://cxidb.org), as well as a randomly selected subset of 2000 diffraction images. In this experiment, the crystal-to-detector distance gave a maximum resolution of 2.6 \u00c5 at the edge and 2.1 \u00c5 at the corners of the detector. Thus, a large number of diffraction images were required to achieve reasonable completeness of the merged data set for reflections in the 2.1\u20142.6 \u00c5 resolution range.\n\nAs in the other two cases, post-refinement significantly improved the CC1/2 value (Table 4). For quality assessment, zinc and calcium ions were omitted from the thermolysin molecular replacement search model (PDB ID: 2TLI) and subsequent atomic model refinement. Post-refinement improved the peak heights of both the zinc and calcium ions (Table 4).\n\n#### Anomalous difference Fourier peak heights\n\nThe thermolysin diffraction data were collected at a photon energy just above the absorption edge of zinc, so we compared the anomalous signals with and without post-refinement. We used the same four diffraction data sets (i.e., averaged-merged, post-refined, with 2000 and 12,692 diffraction images, respectively), but processed them keeping Friedel mates separate. We refined the atomic model of thermolysin lacking zinc and calcium ions, and calculated anomalous difference Fourier maps (Figure 9). We observed two anomalous difference peaks near the active site above 3 \u03c3 using the post-refined data sets. In contrast, the second, smaller peak is not visible in the anomalous difference map using the \u2018averaged-merged\u2019 data set with 2000 images, and it had not been clearly visible in the previous data analysis of the thermolysin XFEL data set (PDB ID: 4OW3; Hattne et al., 2014). A previous thermolysin structure (PDB ID: 1LND; Holland et al., 1995) reported two zinc sites in the active site that correspond to the two anomalous-difference peaks observed with our post-refined data set. Although the crystallization condition used in our case did not have the high concentration (10 mM) of zinc used in the Holland et al. study, the second anomalous difference peak suggests the presence of this second zinc site.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig9-v2.jpg)\n\n**Figure 9.:** Anomalous difference Fourier maps for the averaged merged (A, C) or the post-refined (B, D) thermolysin XFEL diffraction data sets consisting of all 12,692 diffraction images (A, B\u2014Table 1) and a randomly selected subset of 2000 diffraction images (C, D). The anomalous difference Fourier maps were computed using phases from the thermolysin atomic model (but excluding zinc and calcium ions), refined separately against each diffraction data set. All maps are contoured at 3 \u03c3; the peak heights for the two zinc ions are indicated.\n\n#### Difference map reveals a bound dipeptide\n\nWhen the molecular replacement model of thermolysin was refined against the post-refined data, we observed a well-connected electron density feature in the mFo-DFc map near the active site. In contrast, in the deposited model refined against the original XFEL data (Hattne et al., 2014; PDB ID: 4OW3), weak density features in this region were interpreted as water molecules. We found several examples of deposited thermolysin structures that have a dipeptide in this region (e.g., PDB entry 2WHZ with Tyr\u2013Ile, PDB entry 2WI0 with Leu\u2013Trp, and PDB entry 8TLN with Val\u2013Lys). We interpreted the shape of the difference density as a Leu\u2013Lys dipeptide, superimposed its structure and calculated real-space correlation coefficients. The dipeptide had a higher real-space correlation coefficient (CC) with the maps calculated from the post-refined diffraction data than those calculated from the averaged merged diffraction data. The electron density for both post-refined diffraction data sets is also better connected than that of the averaged merged diffraction data set (Figure 10A). The Rwork and Rfree values of the refined complete model using the post-refined diffraction data are lower than those using the averaged merged data throughout the entire resolution range (Figure 10B).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig10-v2.jpg)\n\n**Figure 10.:** (A) Difference Fourier (mFo-DFc) maps revealing a Leu\u2013Lys dipeptide near the zinc site for the averaged merged and the post-refined thermolysin XFEL diffraction data sets consisting of all 12,692 diffraction images (Table 1) and a randomly selected subset of 2000 diffraction images, respectively. The maps are contoured at 3 \u03c3. (B) Crystallographic R and Rfree values vs resolution for the refinements after atomic model refinement using the specified diffraction data sets and with inclusion of two zincs, calcium ions, and the Leu\u2013Lys dipeptide.\n\n### Effect of completeness\n\nThe completeness of the merged data sets has a direct impact on the overall quality of the diffraction data set (CC1/2), quality of the electron density maps and the refined structures (Tables 2\u20134, and Figure 6). When completeness is high, adding more images to increase the multiplicity of observations has only a modest impact on the quality of the final refined structures using the post-refined diffraction data. For example, when subsets ranging from 2000 to 12,000 thermolysin diffraction images (all subsets 100% complete at 2.6 \u00c5) were post-refined the peak height in the omit map for the larger of the two anomalous sites (Figure 11C), the CC1/2 values, and the R values of the refined structures did not improve significantly when more than 8000 images were used.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig11-v2.jpg)\n\n**Figure 11.:** (A) Average number of observations per unique hkl. (B) CC1/2 for merged subsets using 2000\u201312,000 images (100% completeness for all subsets). (C) Peak height (\u03c3) in the omit map for the largest peak. (D) Rwork and Rfree after refining the thermolysin model without zinc and calcium ions against the corresponding post-refined diffraction data sets.\n\n## Discussion\n\nDiffraction data collection using conventional x-ray sources typically employs the rotation method, in which a single crystal is rotated through a contiguous set of angles, and the diffraction patterns are recorded on a 2-D detector. If a full data set can be collected from a single crystal without a prohibitive level of radiation damage, diffraction data processing is a well-established and reliable process. In contrast, processing of XFEL diffraction data, which are collected from crystals in random orientations as \u2018still\u2019 diffraction images, requires new methods and implementations such as those described here. Improved data collection and processing methods, particularly those that can significantly reduce the amount of sample needed to assemble a complete and accurate diffraction data set, are important for making XFELs useful for certain challenging investigations in structural biology.\n\nWe developed a post-refinement method for still diffraction images, such as those obtained at XFELs, and implemented it in new computer program, prime, that applies a least-squares minimization method to refine parameters as defined in our partiality model. Other post-refinement methods for XFEL diffraction data have been described recently (Kabsch, 2014; White, 2014), but our implementation differs from these reports. Kabsch uses a partiality model in which an Ewald offset correction is defined as a Gaussian function of angular distance from the Ewald sphere. White used the intersecting volume between the reflection and the limiting-energy Ewald spheres defined by the energy spectrum for the partiality calculation, and calculates the initial reference data set by averaging all observations without scaling. Neither report describes an application to experimental XFEL diffraction data, so we cannot compare these methods to the results presented here.\n\nWe have demonstrated here that our implementation of post-refinement substantially improves the quality of the diffraction data from three different XFEL experiments. Moreover, the resulting structures can be refined to significantly lower Rfree and R values, with electron density maps that reveal novel features more clearly, than those using non-post-refined XFEL data sets. A key feature of our method is that the parameters that define the diffracted spot are iteratively refined against the reference set. This approach is superior to methods that only consider each diffraction image individually. Moreover, our post-refinement procedure allows accurate diffraction data sets to be extracted from a much smaller number of images (average number of observations) than that necessary without post-refinement. Thus, this development will make XFEL crystallography accessible to many challenging problems in biology for which sample quantity is a major limiting factor.\n\nAt present, it is difficult to assess the relative quality of post-refined XFEL data studied here with conventional rotation data measured at a synchrotron. The comparison of myoglobin omit maps (Figure 7) suggests that the SR data are perhaps somewhat better, but more systematic studies will be needed to understand the relative merits of the different data sets. We suspect that rotation data would be better due to the ability to directly measure full reflections (at least by summation of partials) without modeling partiality, which is still a relatively crude process (see below). However, a comparison between still data sets measured at a synchrotron and an XFEL is needed to deconvolute the effect of rotation vs other differences between these sources.\n\nOur formulation of post-refinement employs the simplifying assumption that reflections are spherical volumes. More sophisticated models consider crystal mosaicity to have three components, each with a distinct effect on the reciprocal lattice point (Juers et al., 2007; Nave, 1998, 2014). First, the domain size (the average size of the coherently scattering mosaic blocks) produces reciprocal lattice points of constant, finite size: small domains produce large-sized spots, while large domains produce small spots, as there is an inverse (Fourier) relation between spot size and domain size. Second, unit-cell variation among domains produces reflections that are spheres whose radii increase with distance from the origin. In cctbx.xfel, mosaicity (modeled as isotropic parameter) and effective domain size are taken into account when predicting which reflections are in diffracting position prior to integration (Sauter et al., 2014; Sauter, 2015). Third, orientational spread among mosaic domains produces spots shaped like spherical caps. Each cap subtends a solid angle that depends on the magnitude of the spread. In addition, anisotropy in crystal mosaicity is not considered; this would require refining separate parameters along each lattice direction. Finally, the rugged energy spectrum that results from the SASE process of the XFEL is not yet considered in our current model. These issues will require future investigation.\n\n## Materials and methods\n\n### Partiality model\n\nThe observed intensity Ih(i) for observation i of Miller index h is a thin slice through a three-dimensional reflection. To calculate partiality, we assume that the measurement is an infinitely thin, circular sample of a spherical volume (Figure 1B). We assume a monochromatic beam as the starting point to define the Ewald offset correction Eocarea. The Eocarea of any reflection centered on the Ewald sphere is defined as 1; this position corresponds to the maximum partial intensity that could be measured for the reflection. The Eocarea for any other position is defined as a function of the normal distance from the Ewald sphere to the center of the reciprocal lattice point (the offset distance, rh), and of the reciprocal-lattice radius of the spot rs, which is a function of the crystal mosaicity and spectral dispersion (Figure 1B). The Eocarea can be described by the ratio of the observed area (Ap) with a radius rp to the Ewald-offset corrected area (As) with a radius rs (Figure 1B).\n\nThe SASE spectrum emitted by the XFEL is broad and varies from shot-to-shot (Zhu et al., 2012). To calculate the Ewald sphere, we set the wavelength to be the centroid of the SASE spectrum recorded with each shot. For XFEL data measured with a seeded beam (Amann et al., 2012), the spectrum is narrow and constant from shot-to-shot, and this single value can be used in this case.\n\nIn order to model spectral dispersion and the possible effects of asymmetric beam divergence, we adapt the rocking curve model described in Winkler et al. (1979). The four-parameter function used for the rocking curve is $r_{s}(\\gamma_{0},\u2009\\gamma_{e},\\gamma_{x},\u2009\\gamma_{y})=\u2009r_{s}(\\theta)+\u2009r_{s}(\\alpha),$ where the first term includes the contribution by spectral dispersion and the second term models beam anisotropy. Specifically,\n\n$$\nr_{s}(\\theta)=\\gamma_{0}+\\gamma_{e}\u2009tan\u2009\\theta,\n$$\n\nwhere \u03b30 is a parameter that is initially set to the r.m.s.d. of the Ewald offset calculated for all the reflections on a given image, \u03b3e represents the width of the energy spread and the unit-cell variation (the initial value of \u03b3e is calculated from the average energy spread), and \u03b8 is the Bragg angle. The second term is provided by:\n\n$$\nr_{s}(\\alpha)=[(\\gamma_{y}\u2009cos\u2009\\alpha)^{2}+(\\gamma_{x}\u2009sin\u2009\\alpha)^{2}]^{1/2},\n$$\n\nwhere \u03b1 is the azimuthal angle going from meridional (\u03b1 = 0) to equatorial (\u03b1 = \u03c0/2) . The values of \u03b3y and \u03b3x are initially set to 0.\n\nThe distribution of rh values for the myoglobin case with 757 images after post-refinement is shown in Figure 12. The parameters \u03b3e, \u03b3y, \u03b3x, \u03b30 are refined within a microcycle (Figure 2).\n\n![Figure 12.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig12-v2.jpg)\n\n**Figure 12.:** The histogram shows the distribution of rh calculated after post-refinement for myoglobin using 757 diffraction images. The number of observations after applying the reflection selection criteria for merging and outlier rejections for this 1.35 \u00c5 data set is 1,136,447 (\u223c96% of the total observed reflections). The standard deviation is 0.0016 1/\u00c5 or approximately 0.12\u00b0 (when calculated with the mean of the energy distribution).\n\n### Calculating the reciprocal lattice point offset\n\nThe crystal orientation is described in a right-handed coordinate system with the z-axis pointing to the source of the incident beam and the y-axis vertical (Figure 1A). We define the crystal orientation by rotations in the order \u03b8z, \u03b8y, \u03b8x about these axes. For each Miller index h(i), the reciprocal lattice point vector x(i) is obtained by applying orthogonalization and rotation matrixes O and R:\n\n$$\nx(i)=ROh(i),\n$$\n\nwhere\n\n$$\nx(i)=(x(i),\u2009y(i),\u2009z(i)),\n$$\n\n\n\n$$\nh(i)=(h(i),\u2009k(i),\u2009l(i)),\n$$\n\n\n\n$$\nO=(a^{\u2217}b^{\u2217}\u2009cos\u2009\\gamma^{\u2217}c^{\u2217}\u2009cos\u2009\\beta^{\u2217}0b^{\u2217}\u2009sin\u2009\\gamma^{\u2217}c^{\u2217}(cos\u2009\\alpha^{\u2217}\u2212\u2009cos\u2009\\gamma^{\u2217})/sin\u2009\\gamma^{\u2217}00c^{\u2217}\u2009cos(c^{\u2217},\u2009c)),\n$$\n\n\n\n$$\nR=R_{\\theta_{x}}R_{\\theta_{y}}R_{\\theta_{z}},\n$$\n\nwhere $R_{\\theta_{i}}$ is the rotation matrix for a rotation around the i-th axis, $a^{\u2217},\u2009b^{\u2217},\u2009c^{\u2217},\u2009\\alpha^{\u2217},\u2009\\beta^{\u2217},\u2009\\gamma^{\u2217}\u2009$ are the reciprocal unit-cell parameters, and $cos(c^{\u2217},\u2009c)=(1+2\u2009cos\u2009\\alpha^{\u2217}\u2009cos\u2009\\beta^{\u2217}\u2009cos\u2009\\gamma^{\u2217}\u2212cos^{2}\\alpha^{\u2217}\u2212cos^{2}\\beta^{\u2217}\u2212cos^{2}\\gamma^{\u2217})^{1/2}/sin\u2009\\gamma^{\u2217}$.\n\nAs shown in Figure 1A, the displacement to x(i) from the center of the Ewald sphere is given by:\n\n$$\nS(i)=\u2009x(i)+S_{0},\n$$\n\nwhere S0 = (0, 0, \u22121/\u03bb). The offset distance is thus the difference between the length of S(i) and the Ewald-sphere radius,\n\n$$\nr_{h}=\u2009|S(i)|\u22121/\\lambda.\n$$\n\n### The Ewald-offset correction function Eoc\n\nWe introduce a smooth approximation of the area ratio Eocarea (see \u2018Results\u2019) in order to circumvent the undefined first derivative when the ratio is zero. We use a Lorentzian function (fL) to model the radius as function of distance from the Ewald sphere:\n\n$$\nf_{L}=\u2009\\frac{1}{\\pi}\\frac{\\frac{1}{2}\u0393}{(r_{h})^{2}+(\\frac{1}{2}\u0393)^{2}}.\n$$\n\nThe function is normalized so that fL(rh = 0) = 1.0 when the reciprocal-lattice point is centered on the Ewald sphere, so that\n\n$$\nf_{Ln}=\u2009\\frac{\\pi\u0393}{2}f_{L}.\n$$\n\nWe then use the ratio of the observed area (Ap) with a radius rp to the Ewald-offset corrected area (As) with a radius rs (Figure 1B) that corresponds to the full width at half maximum (FWHM), \u0393, in the Lorentzian function. Using the Lorentzian function to describe the falloff in radius as we move away from the Ewald sphere makes the Eoc function differentiable at rh = rs. For the reciprocal lattice volume being bound by a sphere of radius rs centered on the reciprocal lattice point, the intersecting area of the volume is given by:\n\n$$\nA_{p}=\\pir_{p}^{2},\n$$\n\nwhere\n\n$$\nr_{p}=(r_{s}^{2}\u2212r_{h}^{2})^{1/2}.\n$$\n\nThe Eoc is then given by the ratio of this intersecting area to the area when this reflection is centered on the Ewald sphere (As),\n\n$$\nEoc_{area}=\\frac{A_{p}}{A_{s}}=\\frac{\\pir_{p}^{2}}{\\pir_{s}^{2}}=1\u2212\\frac{r_{h}^{2}}{r_{s}^{2}}.\n$$\n\nBy setting the FWHM of \u0393 proportional to the radius, rs, at half Eocarea,(12)Eocarea=1\u2212rh2rs2=0.5,(13)\u0393=rsat\u20090.5\u2009Eocarea=2rh,we arrive at the Ewald-offset correction function (Figure 13A)(14)Eoc=rs22rh2+rs2.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig13-v2.jpg)\n\n**Figure 13.:** (A) Ewald-offset correction Eoc (Equation 14) viewed as a function of the reciprocal-lattice radius (rs) and the offset distance (rh). (B) A slice through Eoc at rs = 0.003, comparing Eoc (Equation 14) and Eocarea (Equation 11).\n\nThe use of this Lorentzian approximation to derive the Eoc function vs an actual sphere function, Eocarea, is illustrated in Figure 13B.\n\n### Correction to full intensity\n\nTo adjust the observed still intensity to its equivalent at zero offset, we apply the Ewald-offset correction to the observed intensity,\n\n$$\nI_{Eoc,h}(i)=\\frac{I_{h}(i)}{Eoc_{h}(i)G_{m}},\n$$\n\nwhere Ih(i) is the observed partial intensity i of Miller index h on image m, Eoch(i) is the Ewald-offset correction, and Gm is a scale function for image m. We then convert this maximum partial intensity to a full intensity estimate by correcting for the volume of the spot, a factor of $\\frac{\\frac{4}{3}\\pir_{s}^{3}}{\\pir_{s}^{2}}\u2009=\\frac{4}{3}r_{s}$:\n\n$$\nI_{full,h}(i)=V_{c,h}(i)I_{Eoc,h}(i),\n$$\n\nwhere\n\n$$\nV_{c,h}(i)=\\frac{4}{3}r_{s,h}(i).\n$$\n\nNote that Ifull,h(i) will be on an arbitrary scale, and appropriate scaling methods may be applied to place the data on a quasi-absolute scale prior to structure determination and refinement, as is done for conventional rotation data.\n\n### Refinement of crystal orientation, reflection width, and unit-cell parameters\n\nWe refine image m by first minimizing the target function:\n\n$$\nT_{pr}=\\sum_{h}\\sum_{i}W_{h}(i)(I_{h}(i)\u2212G_{m}Eoc_{h}(i)V_{c,h}^{\u22121}(i)I_{h})^{2},\n$$\n\nwhere\n\n$$\n1/W_{h}(i)=\\sigma_{h}^{2}(i),\n$$\n\nand the scale function Gm comprises a linear scale factor G0 and a B-factor:\n\n$$\nG_{m}=G_{0,m}e^{\u22122B_{m}(sin\u2009\\theta_{h}(i)/\\lambda_{m})^{2}}.\n$$\n\nWe apply a spot position restraint as a second target function in subsequent steps during a microcycle using the x, y positions determined by the spot-finding step of data processing (Hattne et al., 2014; Kabsch, 2014).\n\n$$\nT_{xy}=\\sum_{h}\\sum_{i}(x_{h}^{obs}(i)\u2212x_{h}^{calc}(i))^{2},\n$$\n\nwhere $x_{h}^{obs}(i)$ and $x_{h}^{calc}(i)$ are the observed and calculated spot centroids, respectively.\n\nThe Levenberg\u2013Marquardt (LM) algorithm from the scipy python library (Oliphant, 2007), which is a combination of the gradient descent and the Gauss\u2013Newton iteration, is used to minimize the target function residuals. The refinement of the unit-cell parameters (a, b, c, \u03b1, \u03b2, \u03b3) takes crystal symmetry constraints into account to make the procedure more robust.\n\nAfter these iterative\u00a0refinement cycles are complete, we apply the refined parameters to the reflection intensities of each still, and then merge the same reduced Miller indices (from all stills) to obtain the zero-offset still intensities, which are used for the new reference intensity set (see next section).\n\n### Reflection selection criteria\n\nAt each step in a microcycle, the user can select reflections that are used for post-refinement of a parameter group using the following criteria: resolution range, signal strength (I/\u03c3(I)), and the Ewald offset correction value. In addition to these selection criteria, deviations from the target unit-cell dimensions (specified as a fraction of each dimension) can also be used in the merging step so that only diffraction patterns with acceptable unit-cell dimension values are included in the merged reflection set. Each post-refinement parameter group can have its own separate set of reflection selection criteria.\n\n### Merging procedure\n\nStarting from the observed intensities, we obtain the full-volume intensity, Ifull,h(i), from IEoc,h(i) by first applying the Ewald offset correction (Equation 15) and then the full-intensity correction (Equation 16). Prior to merging equivalent observations, we detect outliers using an iterative rejection scheme, discarding reflections with intensity more or less than a user-specified cutoff (3 \u03c3 default, where \u03c3 is defined as the standard deviation of the distribution of the full reflections Ifull,h). Finally, in order to obtain the merged reflection set, we calculate \u2329Ih\u232a from the intensity of reflections with the same reduced Miller indices using the sigma-weighted average:\n\n$$\n\u2329I_{h}\u232a=\\frac{\\sum_{i}W_{h}(i)I_{\u2009full,h}(i)}{\\sum_{i}W_{h}(i)},\n$$\n\nwhere\n\n$$\nW_{h}(i)=\\frac{1}{\\sigma^{2}(i)[I_{\u2009full,h}(i)]},\n$$\n\nand $\\sigma(i)[I_{\u2009full,h}(i)]$ is derived from the calculation of error:\n\n$$\n(\\frac{\u0394I_{full,h}(i)}{I_{full,h}(i)})^{2}=(\\frac{\u0394I_{h}(i)}{I_{h}(i)})^{2}+(\\frac{\u0394G}{G})^{2}+(\\frac{\u0394Eoc}{Eoc})^{2}.\n$$\n\nSince G is a function of G0 and B, and Eoc is a function of crystal orientation, mosaicity, and unit-cell parameters, the error estimates for G can be further calculated as:\n\n$$\n\u0394G^{2}=(\\frac{\\partialG}{\\partialG_{0}})^{2}\u0394G_{0}^{2}+(\\frac{\\partialG}{\\partialB})^{2}\u0394B^{2},\n$$\n\nand \u0394Eoc2 can be calculated similarly by summing all over products of partial derivatives and errors estimated for each parameter in the Eoc function (square root of the diagonal elements of the covariance matrix).\n\nWe use CC1/2 as a quality indicator for the diffraction data sets (Diederichs and Karplus, 2013). We calculate CC1/2 by randomly partitioning all (partial) intensity observations of a given reflection into two groups. We reject any reflections with fewer than four observations; for all other reflections, we merge the observations in each group using Equation 20. CC1/2 is then calculated as the correlation between these two independently merged diffraction data sets.\n\n### Partial derivatives of the diffraction parameters\n\nLet\n\n$$\ng=\\frac{1}{\\sigma}(I\u2212G_{0}e^{\u22122B(sin\u2009\\theta/\\lambda)^{2}}EocV_{c}^{\u22121}I),\n$$\n\nfor observed partial intensity i of miller index h.\n\n#### Scale factor, G0 and B.\n\nThe derivatives of function g with respect to G0:\n\n$$\n\\frac{\\partialg}{\\partialG_{0}}=\u2009\u2212\\frac{e^{\u22122B(sin\u2009\\theta/\\lambda)^{2}}EocI}{\\sigmaV_{c}}.\n$$\n\nThe derivatives of function g with respect to B:\n\n$$\n\\frac{\\partialg}{\\partialB}=\u2009\u2212\\frac{G_{0}EocI}{\\sigmaV_{c}}[2(\\frac{sin\u2009\\theta}{\\lambda})^{2}e^{\u22122B(sin\u2009\\theta/\\lambda)^{2}}].\n$$\n\n#### Crystal rotation angles (\u03b8x, \u03b8y, \u03b8z).\n\nAlthough three rotation angles \u03b8x, \u03b8y, \u03b8z can be refined, a rotation around the beam direction (z-axis) has no component on the reciprocal-lattice offset (rh) from the Ewald sphere\u2014therefore, the derivative with respect to \u03b8z is 0. The partial derivatives with respect to the remaining parameters can be derived in a similar way\u2014here, only the derivatives with respect to are \u03b8y given.\n\n$$\n\\frac{\\partialg}{\\partial\\theta_{y}}=\\frac{\\partialg}{\\partialEoc}\\frac{\\partialEoc}{\\partialr_{h}}\\frac{\\partialr_{h}}{\\partialx}\\frac{\\partialx}{\\partialR}\\frac{\\partialR}{\\partial\\theta_{y}},\n$$\n\nwhere\n\n$$\n\\frac{\\partialg}{\\partialEoc}=\u2009\\frac{\u2212G_{0}e^{\u22122B(sin\u2009\\theta/\\lambda)^{2}}I}{\\sigmaV_{c}},\n$$\n\n\n\n$$\n\\frac{\\partialEoc}{\\partialr_{h}}=\\frac{\u22124r_{h}r_{s}^{2}}{(2r_{h}^{2}+r_{s}^{2})^{2}},\n$$\n\n\n\n$$\n\\frac{\\partialr_{h}}{\\partialx}=\\frac{S}{|S|},\n$$\n\n\n\n$$\n\\frac{\\partialx}{\\partialR}=\\frac{\\partialR}{\\partial\\theta_{y}}Oh,\n$$\n\nand R is the rotation matrix of the still image. The derivatives of the g function (Equation 24) with respect to \u03b8x and the unit-cell parameters can be calculated by substituting the last partial derivatives of R with the appropriate ones.\n\n#### Unit-cell parameters (a,\u2009b,\u2009c,\u2009\u03b1,\u2009\u03b2,\u2009\u03b3)\n\nFor unit-cell parameters, constraints imposed by crystallographic space groups are applied during the refinement\u2014e.g., tetragonal systems only have two free parameters (a and c) since a = b and \u03b1 = \u03b2 = \u03b3 = 90. Other restraint conditions, such as allowable refinement limits of the unit-cell dimensions, can also be applied as a \u2018penalty terms\u2019 in the least-squares refinement. The partial derivatives with respect to each unit-cell parameter in reciprocal units (here, $a^{\u2217}$ is given and $a^{\u2217}=1/a$):\n\n$$\n\\frac{\\partialg}{\\partiala^{\u2217}}=\\frac{\\partialg}{\\partialEoc}\\frac{\\partialEoc}{\\partialr_{h}}\\frac{\\partialr_{h}}{\\partialx}\\frac{\\partialx}{\\partialO}\\frac{\\partialO}{\\partiala^{\u2217}},\n$$\n\nwhere $\\frac{\\partialg}{\\partialEoc}$, $\\frac{\\partialEoc}{\\partialr_{h}}$, and $\\frac{\\partialr_{h}}{\\partialx}$ are as derived in (2) and\n\n$$\n\\frac{\\partialx}{\\partialO}=R\\frac{\\partialO}{\\partiala^{\u2217}}h.\n$$\n\n#### Reflection radius, rs\n\nThe reflection radius that accommodates effects of crystal mosaicity and spectral dispersion, described by the four parameters, \u03b30, \u03b3y, \u03b3x, and \u03b3e, has following derivatives:\n\nFor $\\gamma_{y}$,\n\n$$\n\\frac{\\partialg}{\\partial\\gamma_{y}}=\\frac{\\partialg}{\\partialEoc}\\frac{\\partialEocV_{c}^{\u22121}}{\\partialr_{s}}\\frac{\\partialr_{s}}{\\partial\\gamma_{y}},\n$$\n\nwhere $\\frac{\\partialg}{\\partialEoc}$ is derived in (Equation 27) and\n\n$$\n\\frac{\\partialEocV_{c}^{\u22121}}{\\partialr_{s}}=\\frac{\u22123(r_{s}^{2}+2r_{h}^{2})}{4(r_{s}^{2}+2r_{h}^{2})^{2}},\n$$\n\n\n\n$$\n\\frac{\\partialr_{s}}{\\partial\\gamma_{y}}=\\frac{\\gamma_{y}\u2009cos^{2}\u2009\\alpha}{[(\\gamma_{y}\u2009cos\u2009\\alpha)^{2}+(\\gamma_{x}\u2009sin\u2009\\alpha)^{2}]^{1/2}}.\n$$\n\nFor \u03b3x and \u03b3e, the $\\frac{\\partialg}{\\partialp}$ and $\\frac{\\partialp}{\\partialr_{s}}$ are the same as derived for \u03b3y and\n\n$$\n\\frac{\\partialr_{s}}{\\partial\\gamma_{x}}=\\frac{\\gamma_{x}\u2009sin^{2}\u2009\\alpha}{[(\\gamma_{y}\u2009cos\u2009\\alpha)^{2}+(\\gamma_{x}\u2009sin\u2009\\alpha)^{2}]^{1/2}},\n$$\n\n\n\n$$\n\\frac{\\partialr_{s}}{\\partial\\gamma_{0}}=1,\n$$\n\n\n\n$$\n\\frac{\\partialr_{s}}{\\partial\\gamma_{e}}=tan\u2009\\theta.\n$$\n\n### Polarization correction\n\nThe XFEL beam is nearly 100% polarized in the horizontal direction. The optics at both the LCLS XPP and CXI stations do not introduce additional polarization. To account for the polarization of the primary beam, for a given reflection, we consider the angle \u03d5 between the sample reflection plane formed by the h vector and the -z-axis, and the laboratory horizontal (Figure 14).\n\n![Figure 14.](https://cdn.elifesciences.org/articles/05421/elife-05421-fig14-v2.jpg)\n\n**Figure 14.:** The diagram shows a reflection on a plane formed by its reciprocal-space vector and the -z-axis at angle $\u03d5$. This reflection is affected by the polarization of the incoming primary beam in both the horizontal (x) and vertical (y) directions.\n\nAs described in Kahn et al. (1982), the beam I0 incident on the sample crystal can be described in terms of two components, one parallel (\u03c3) and the other perpendicular (\u03c0) to the plane of reflection:\n\n$$\nI_{0}=I_{\\sigma}+I_{\\pi}.\n$$\n\nEach of these components is affected by the polarization of the primary beam in both the horizontal (x) and vertical (y) directions. Using fx and fy as the fractions horizontal and vertical in the laboratory frame (fx + fy = 1),\n\n$$\nI_{\\sigma}=(f_{x}\u2009cos^{2}\u2009\u03d5+f_{y}\u2009sin^{2}\u2009\u03d5)I_{0},\n$$\n\nand\n\n$$\nI_{\\pi}=(f_{x}\u2009sin^{2}\u2009\u03d5+f_{y}\u2009cos^{2}\u2009\u03d5)I_{0},\n$$\n\nwhere fx and fy are the polarization fractions in the x and y directions.\n\nAfter reflection, only I\u03c3 is attenuated:\n\n$$\nI\u2032=I\u2032_{\\pi}+\u2009I\u2032_{\\sigma}=\u2009|F|^{2}(I_{\\pi}+I_{\\sigma}\u2009cos^{2}2\\theta).\n$$\n\nBy substituting I\u03c3 and I\u03c0 from Equations 30 and 31 in Equation 32, we arrive at\n\n$$\nI\u2032=|F|^{2}[f_{x}(sin^{2}\u2009\u03d5+cos^{2}\u2009\u03d5\u2009cos^{2}2\\theta)+f_{y}(cos^{2}\u2009\u03d5+sin^{2}\u2009\u03d5\u2009cos^{2}2\\theta)]I_{0}\u2009,\n$$\n\nwhere the bracketed expression is P (Kahn et al., 1982).\n\n### Molecular replacement and atomic model refinement protocol\n\nTo ensure atomic model refinements against the various diffraction data sets were as comparable as possible, we used a standard semi-automated solution and refinement protocol. First, we performed molecular replacement phasing with known structures as search models (PDB ID 3U3E for myoglobin, 3C8Y for hydrogenase, and 2TLI for thermolysin) with all heteroatoms, water molecules, and ligands removed. Molecular replacement was carried out with Phaser (McCoy et al., 2007) using default settings, with r.m.s.d. set to 0.8. The resulting solutions were then refined using phenix.refine (Afonine et al., 2012) in two cycles. In the first cycle, we carried out rigid body refinement, positional (xyz) refinement with automatic correction of Asn, Gln and His sidechain orientations, and atomic displacement parameter (ADP) refinement. We then used the difference density maps for missing ligands and heteroatoms obtained from this cycle to calculate real-space correlation coefficients using phenix.get_cc_mtz_pdb from the PHENIX software suite (Adams et al., 2010) for myoglobin and thermolysin and the program \u2018Map Correlation\u2019 from the CCP4 software (Winn et al., 2011) for hydrogenase. These omit difference density maps are shown in Figures 6, 7, 8, 10. In the second cycle, all ligands and heteroatoms were placed in the difference density maps and combined with the refined structure from the first cycle using Coot (Emsley et al., 2010). The second cycle employed positional and ADP refinement with target weights optimization and water update was carried out with these complete models. The structures were validated by MolProbity (Chen et al., 2010). Final refinement statistics (Tables 2, 3, 4) were analyzed with phenix.polygon (Urzhumtseva et al., 2009) and found to be within acceptable range for other structures at similar resolutions. For the thermolysin structure obtained from anomalous diffraction data (processed keeping Friedel pairs separate), only one cycle of atomic model refinement was carried out. All figures were made in PyMOL (The PyMOL Molecular Graphics System, Version 1.5.0.4 Schr\u00f6dinger, LLC.).\n\n### Computer program\n\nThe computer program, prime, is implemented as a part of the cctbx computational crystallography toolbox (Grosse-Kunstleve et al., 2002). Download and installation instructions are available on the cctbx website (http://cctbx.sourceforge.net).\n\n### Note added at proof\n\nSubsequent to acceptance of this article, a paper was published by Ginn et al. (2015) describing an alternative method for orientation refinement as compared to the method of Sauter et al. (2014), and partiality estimation for each individual image, but without post-refinement.\n",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "4fd4ff03-d6a7-4038-a55f-1ff539cadcbd",
+      "submission_id": "f4ff0fdb-9d7b-4c4d-829e-34a8fa1b0d58",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Harrison, Harvard Medical School, Howard Hughes Medical Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05421.021](https://doi.org/10.7554/eLife.05421.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cEnabling X-ray Free Electron Laser Crystallography for Challenging Biological Systems from a Limited Number of Crystals\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom, Stephen Harrison, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript represents a substantial advance in the processing of XFEL diffraction data, through the introduction of postrefinement methods. Although it provides no direct comparison with other procedures (from Kabsch or White), data for the three test cases considered show considerably improved statistics. Moreover, the total number of frames required to compile a data set is very much smaller than with the so-called \u201cMonte Carlo\u201d method. The manuscript is well written and thorough (especially in the provision of equations in the Methods section). A possible, but forgivable, omission was the inclusion of a more challenging test case that could demonstrate a genuine increase in the effective resolution of a dataset from the new procedures.\n\nThe reviewers had the following modest concerns, questions and requests:\n\nA. Theory:1) Sphere model for Eoch. The basic idea of postrefinement is that the ratio of the intensity of a partially recorded reflection to its value in a properly corrected and scaled reference data set is a very sensitive measure of the orientation and unit-cell parameters of the crystal and of diffracting-range parameters such as mosaic spread, energy dispersion, and range of unit-cell parameters within the diffracting volume. Equations (1) and (2) summarize the application to XFEL stills, with Eoch as the critical function requiring definition and evaluation. The authors choose a sphere model for Eoc, which is reasonable for cases in which the diffracting range is dominated by energy dispersion and unit-cell variation. For a mosaic crystal with no variation in unit cell across the diffracting volume and mosaicity higher than the energy dispersion, the reciprocal-space shape of the diffraction spot will not be spherical; it will intersect the Ewald sphere as an arc, since the Bragg angle and hence the distance of any component of the spot from the origin of reciprocal space will be (ex hypothesi) invariant, while the range of azimuthal angles of the spot on the detector will depend on the mosaic spread (assumed to be non-zero). With cryopreserved crystals, the assumption that a combination of unit-cell variation and energy dispersion dominates is almost certainly a good one, but it may not hold for tiny crystals at ambient temperature in an injected beam. Anisotropy of some of the parameters may also make other shapes a better fit. The approach in the paper is, of course, generalizable to other shapes (with much \u201chairier\u201d expressions for Eoch and its derivatives). In any case, the authors should discuss the assumptions that go into the sphere approximation.\n\n2) Lorentz factor. A clear discussion of Lorentz factor is important, to give the paper full archival value as a complete treatment of the intensity correction problem. Formally, there is no Lorentz factor for a still. This statement is easy to prove using the \u201csinc\u201d formula given in Equation 1 of the cited article by Kirian et al. (2010). If two different relps lie precisely on the Ewald sphere, then the value of the sinc function is simply equal to the square of the number of unit cells, regardless of resolution or any other geometric factor. All that remains is the polarization (which is not a Lorentz factor) and the incident intensity, which is the same for every spot. The only terms that remain hkl-dependent are the structure factor F, and the solid angle subtended by a pixel. The latter has some semblance to a Lorentz factor, but disappears upon pixel integration if the detector is corrected to be spherical. The spreading out of the spot due to mosaic spread and spectral dispersion in reciprocal space could be considered a Lorentz factor, but in the context of the present work, this should be part of the \u201cpartiality\u201d.\n\nB. Questions:\n\n1) In the test cases, the data quality for the subset of images (e.g. 2,000 for thermolysin) is clearly lower than using the entire dataset. Is there any indication of convergence when considering data quality metrics vs the number of images included, or does inclusion of all images always give the best data?\n\n2) The Discussion section is relatively brief. Even with the improved processing, the data quality falls significantly short of what would be expected for conventional SR rotation data collection. Does the analysis provide any pointers to the remaining major sources of error?\n\n3) Figure 6 (myoglobin data): For the high resolution terms, post-refinement appears to make the data worse as judged by the R and Rfree metrics. Why?\n\n4) There are many fewer spots per image for thermolysin than for the other two datasets. What is the definition of a \u201cspot\u201d in this context?\n\n5) It is not clear if a separate resolution limit is applied to each image during the final merging step. Can this be clarified?\n\n6) Figure 9: What is the second peak that is clearly visible when all images are used? Perhaps it would be useful to quote the largest \u201cnoise\u201d peak as well as that for the Zn.\n\n7) Table 3: The hydrogenase data were collected with a seeded beam, and yet the term representing the energy dispersion \u03b3e is larger than that for thermolysin and almost as large as for the myoglobin data. Why?\n\nC. Request:\n\nThe paper should have a complete list of all the parameters and symbols in the equations and their definitions (as Acta Cryst may still do and certainly used to do). Many of the parameters (such as theta(x) and theta(y)) were defined only in the figures, and it might indeed clutter the text to define each of them immediately after their first appearance in equation (1).\n",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9a0eac10-1f47-4f79-bb60-0c408e76eb61",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C1",
+      "claim": "Radiation damage often limits the resolution and accuracy of macromolecular crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Radiation damage often limits the resolution and accuracy of macromolecular crystal structures (Garman, 2010; Zeldin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garman, 2010 and Zeldin et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "8e83e046-1574-4c13-bf12-bd6cc37ad369",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C2",
+      "claim": "Femtosecond X-ray free electron laser (XFEL) pulses enable the possibility of visualizing molecular structures before the onset of radiation damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Femtosecond X-ray free electron laser (XFEL) pulses enable the possibility of visualizing molecular structures before the onset of radiation damage, and allow the dynamics of chemical processes to be captured (Solem, 1986; Neutze et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Solem, 1986 and Neutze et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "168c4cf9-6aec-43be-a8bc-701e70f7d10f",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C3",
+      "claim": "Most XFEL structures reported to date use a liquid jet to inject small crystals into the beam.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the structures reported from XFELs to date use a liquid jet to inject small crystals into the beam (DePonte et al., 2008; Sierra et al., 2012; Weierstall et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to DePonte et al., 2008; Sierra et al., 2012; Weierstall et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "819dfc75-dfc8-48ae-8357-d06e3dbf876b",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C4",
+      "claim": "Diffraction data have been measured from crystals placed in the beam with a standard goniometer setup.",
+      "claim_type": "EXPLICIT",
+      "source": "but diffraction data have also been measured from crystals placed in the beam with a standard goniometer setup (Cohen et al., 2014; Hirata et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cohen et al., 2014 and Hirata et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "157905eb-5e30-4893-915a-bee159ea6a68",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C5",
+      "claim": "The crystal is effectively stationary during the 10\u201350 fs exposure in XFEL experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the crystal is effectively stationary during the 10\u201350 fs exposure, 'still' diffraction patterns are obtained",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the known properties of XFEL exposure times",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "718d7fb6-59ec-4549-9696-2609abdab66a",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C6",
+      "claim": "An XFEL data set comprises 'still' diffraction patterns generally containing only partially recorded reflections.",
+      "claim_type": "EXPLICIT",
+      "source": "An XFEL data set comprises 'still' diffraction patterns generally containing only partially recorded reflections, typically from randomly oriented crystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the nature of XFEL data collection described in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "fbafc985-b97a-453c-90ed-f7cb759042d0",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C7",
+      "claim": "Most XFEL diffraction data processing approaches have approximated the full intensity by the Monte Carlo method.",
+      "claim_type": "EXPLICIT",
+      "source": "Most XFEL diffraction data processing approaches reported to date have approximated the full intensity by the so-called \"Monte Carlo\" method, in which thousands of partial intensity observations of a given reflection are summed and normalized by the number of observations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the state of the field in XFEL data processing",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "d33ec13c-ec31-46de-a7a9-d8ccea86e197",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C8",
+      "claim": "The Monte Carlo method requires a very large number of crystals to ensure convergence of the averaged partial reflection intensities to the full intensity value.",
+      "claim_type": "EXPLICIT",
+      "source": "this method requires a very large number of crystals to ensure convergence of the averaged partial reflection intensities to the full intensity value (Kirian et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kirian et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "26ca217e-82ea-4868-92ac-1e7edbffc676",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C9",
+      "claim": "Shot-to-shot differences in pulse intensity and energy spectrum arise from the self-amplified stimulated emission (SASE) process.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, shot-to-shot differences in pulse intensity and energy spectrum that arise from the self-amplified stimulated emission (SASE) process (Kondratenko and Saldin, 1979; Bonifacio et al., 1984)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kondratenko and Saldin, 1979 and Bonifacio et al., 1984",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "acd7cfa7-0e51-4bb8-86d7-6117626dab5d",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C10",
+      "claim": "Post-refinement methods were developed in the 1970s by the Harrison and Rossmann groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 1970's, the Harrison and Rossmann groups developed 'post-refinement' methods (Rossmann et al., 1979; Winkler et al., 1979)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rossmann et al., 1979 and Winkler et al., 1979",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "be8ca34b-c8d8-423b-8bd4-4b9a743e0628",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C11",
+      "claim": "Post-refinement made it possible to obtain high-quality diffraction data sets collected from many virus crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to virus crystals, for which only a few images can typically be collected before radiation damage becomes significant, post-refinement made it possible to obtain high-quality diffraction data sets collected from many crystals (Rossmann et al., 1979; Winkler et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rossmann et al., 1979 and Winkler et al., 1979",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "d1e73d01-1db3-439b-8a0d-3815a8ad3402",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C12",
+      "claim": "Other schemes for implementing post-refinement of XFEL diffraction data have been described previously but only applied to simulated XFEL data.",
+      "claim_type": "EXPLICIT",
+      "source": "Other schemes for implementing post-refinement of XFEL diffraction data have been described previously, but thus far they have been only applied to simulated XFEL data (White, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "344f3d31-3f48-45a5-9b4e-489080e492df",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C13",
+      "claim": "Post-refinement has been applied to pseudo-still images collected using monochromatic synchrotron radiation.",
+      "claim_type": "EXPLICIT",
+      "source": "and to pseudo-still images collected using monochromatic synchrotron radiation (Kabsch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kabsch, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "fe207ecf-1607-4a4a-ac9d-8a35cda215ee",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C14",
+      "claim": "The authors developed a new post-refinement procedure specifically designed for diffraction data from still images collected from crystals in random orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a new post-refinement procedure specifically designed for diffraction data from still images collected from crystals in random orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the authors' work",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "c224cdca-58f3-404b-b947-c587055b63b6",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C15",
+      "claim": "The authors implemented their method in a new computer program called prime (post-refinement and merging).",
+      "claim_type": "EXPLICIT",
+      "source": "We implemented our method in a new computer program, prime (post-refinement and merging), that post-refines the parameters needed for calculating the partiality of reflections recorded on each still image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the authors' implementation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "fe6f4951-aae3-4133-997f-8268e6d287c4",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C16",
+      "claim": "Post-refinement greatly improves the quality of the diffraction data from XFEL diffraction experiments with crystals of three different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe here our method and demonstrate that post-refinement greatly improves the quality of the diffraction data from XFEL diffraction experiments with crystals of three different proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "4a649f48-f8b9-47d9-b455-39d3ca49bec4",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C17",
+      "claim": "The post-refinement procedure allows complete data sets to be extracted from a much smaller number of diffraction images than necessary when using the Monte Carlo method.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that our post-refinement procedure allows complete data sets to be extracted from a much smaller number of diffraction images than that necessary when using the Monte Carlo method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing different numbers of images",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "da6be8eb-7fb1-4bea-9c43-fbf1026a2c7f",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C18",
+      "claim": "The partiality model assumes that the measurement is an areal (infinitely thin) sample of the volume.",
+      "claim_type": "EXPLICIT",
+      "source": "To calculate partiality, we assume that the measurement is an areal (i.e., infinitely thin) sample of the volume (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of the model assumption with reference to Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "a7898c6a-844c-49a1-a06e-55fd35679e24",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C19",
+      "claim": "The maximum partial intensity that can be recorded for a given reflection occurs when its center lies exactly on the Ewald sphere.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum partial intensity that can be recorded for a given reflection will occur when its center lies exactly on the Ewald sphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the geometric relationship between reciprocal lattice points and the Ewald sphere",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "c25b028b-09d3-4737-a1d0-ddc54d087455",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C20",
+      "claim": "The Ewald offset correction is defined as 1 for any reflection centered on the Ewald sphere.",
+      "claim_type": "EXPLICIT",
+      "source": "The Eocarea of any reflection centered on the Ewald sphere is defined as 1; this position corresponds to the maximum partial intensity that could be measured for the reflection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the Ewald offset correction function",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "fb592890-93e9-462d-91ce-77d0dc7848e2",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C21",
+      "claim": "The SASE spectrum emitted by the XFEL is broad and varies from shot-to-shot.",
+      "claim_type": "EXPLICIT",
+      "source": "The SASE spectrum emitted by the XFEL is broad and varies from shot-to-shot (Zhu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhu et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "cfe07551-d77a-42ac-ba02-e1310808160e",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C28",
+      "claim": "Myoglobin diffraction data were collected from frozen crystals mounted on a standard goniometer setup.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffraction data for both myoglobin and hydrogenase were collected from frozen crystals mounted on a standard goniometer setup (Cohen et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen et al., 2014",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "ae51bc76-06f1-48ce-bb80-d70c51d6cb6c",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C29",
+      "claim": "Thermolysin data were collected using an electrospun liquid jet to inject nanocystals into a vacuum chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the thermolysin data were collected using an electrospun liquid jet to inject nanocystals into a vacuum chamber (Sierra et al., 2012; Bogan, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sierra et al., 2012 and Bogan, 2013",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "43cc74fd-8824-4a08-887b-2196a39ce29f",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C30",
+      "claim": "The partiality model target function Tpr markedly decreased in the first microcycle and fully converged in the last microcycle for myoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "The partiality model target function Tpr (Equation 1) markedly decreased in the first microcycle and fully converged in the last microcycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the convergence analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "106f5669-f17e-4c83-8f5f-a45f4302b20a",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C31",
+      "claim": "The spot position residual Txy decreased both during post-refinement of the crystal orientation and the unit-cell parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The spot position residual Txy (Equation 2), also decreased both during post-refinement of the crystal orientation and the unit-cell parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the convergence analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "94a6d55b-396a-4876-bcd4-ed8adbb1d65b",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C32",
+      "claim": "For myoglobin using all 757 images, the CC1/2 value improved after post-refinement, especially for reflections in the low-resolution shells.",
+      "claim_type": "EXPLICIT",
+      "source": "For the myoglobin diffraction data set using all 757 images (Table 2, Figure 6A,B), the CC1/2 value improved after post-refinement, especially for those reflections in the low-resolution shells (Figure 5C; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5C and Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "50be5700-237b-425c-90ee-048010b902c2",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C33",
+      "claim": "The real-space correlation coefficient of the heme group to the difference maps calculated from the post-refined diffraction data sets is higher than that calculated from the corresponding averaged merged diffraction data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The real-space correlation coefficient of the heme group to the difference maps calculated from the post-refined diffraction data sets is higher than that calculated from the corresponding averaged merged diffraction data sets using the same set of diffraction images (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "058512ac-95c9-4242-bc74-d2da23c7a104",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C34",
+      "claim": "The post-refined diffraction data set produced the best Rfree and Rwork values for myoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-refined diffraction data set produced the best Rfree and Rwork values, followed by the mean-scaled partiality corrected, with the averaged merged diffraction data sets yielding the poorest refinement statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by refinement statistics in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "e907426f-2759-4126-8f61-925611df7fea",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C35",
+      "claim": "Post-refinement is superior to methods that only consider each diffraction image individually.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, post-refinement against the iteratively improved reference set is superior to methods that only consider each diffraction image individually, even when the reflections are scaled and corrected for partiality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of different data processing methods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "2bcfb346-b437-4583-8fdf-70b65527f024",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C36",
+      "claim": "100 diffraction images are sufficient for myoglobin structure refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the significant improvements obtained by post-refining all available images, we tested whether accurate diffraction data and refined atomic models could be obtained using fewer diffraction images by post-refining the randomly selected subset of 100 myoglobin diffraction images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data using 100 images",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "a3310f8d-c766-4686-9a50-c4e4a44650a9",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C37",
+      "claim": "The real-space correlation coefficient of the heme group with the difference map obtained with the post-refined 100 diffraction images is better than that calculated from the averaged merged diffraction data set using all 757 diffraction images.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the real-space correlation coefficient of the heme group with the difference map obtained with the post-refined 100 diffraction images is better than that calculated from the averaged merged diffraction data set using all the 757 diffraction images (Figure 6A), despite the higher completeness and CC1/2 value of the latter data set (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 6A and Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "42cad3ec-4e4b-4d10-a407-d43b3443dba3",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C38",
+      "claim": "Post-refinement both improves diffraction data quality for a given set of images and reduces the number of diffraction images required for structure determination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, post-refinement both improves diffraction data quality for a given set of images and reduces the number of diffraction images required for structure determination and refinement from serial diffraction data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental comparisons",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "f9852b3d-ca37-4024-886b-62f571270cc7",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C39",
+      "claim": "The omit maps and real-space correlation coefficients for the heme group were of comparable quality between post-refined XFEL data and synchrotron data.",
+      "claim_type": "EXPLICIT",
+      "source": "The omit maps and real-space correlation coefficients for the heme group were of comparable quality (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "110a8bcd-0683-4e3a-b43f-6e51628b7a28",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C40",
+      "claim": "XFEL diffraction data for hydrogenase were measured from eight crystals using a goniometer-mounted fixed-target grid.",
+      "claim_type": "EXPLICIT",
+      "source": "XFEL diffraction data for Clostridium pasteurianum hydrogenase were measured from eight crystals by the Peters (University of Montana) and SSRL-SMB groups using a goniometer-mounted fixed-target grid (Cohen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen et al., 2014",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "acebbaf2-1ed8-4bc3-97da-676c6227d96a",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C41",
+      "claim": "The hydrogenase experiment generated 177 diffraction images that could be merged to a completeness of 91%.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment generated 177 diffraction images that could be merged to a completeness of 91%, with more than half of the diffraction images containing reflections to 1.6 \u00c5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the hydrogenase experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "213ab36a-465e-4892-860a-f0aefe7c864d",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C42",
+      "claim": "The CC1/2 value improved significantly with post-refinement for hydrogenase.",
+      "claim_type": "EXPLICIT",
+      "source": "The CC1/2 value improved significantly with post-refinement (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "1e42e346-c090-4b26-86e0-99817ddfd682",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C43",
+      "claim": "The omit map densities for the post-refined hydrogenase diffraction data sets clearly show the entire Fe-S cluster whereas the densities using the averaged merged data sets are much poorer.",
+      "claim_type": "EXPLICIT",
+      "source": "The omit map densities for the post-refined diffraction data sets using the complete set of 177 diffraction images and the randomly selected subset of 100 diffraction images (83% complete) clearly show the entire Fe-S cluster whereas the densities using the averaged merged data sets are much poorer (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 8A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "76089a15-1700-4e4b-8e1d-232603fcfd35",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C44",
+      "claim": "The R and Rfree values for both post-refined hydrogenase data sets were significantly better than the averaged merged case.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon atomic model refinement with the Fe-S clusters and water molecules included, the R and Rfree values for both post-refined data sets were significantly better than the averaged merged case (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "3b3cc489-f8eb-40f6-84bc-341f2e25aabf",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C45",
+      "claim": "The thermolysin diffraction data were collected at a photon energy just above the absorption edge of zinc.",
+      "claim_type": "EXPLICIT",
+      "source": "The thermolysin diffraction data were collected at a photon energy just above the absorption edge of zinc",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "32ed4d0a-2f8e-4ace-b380-f7261f140bb1",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C46",
+      "claim": "Post-refinement improved the peak heights of both the zinc and calcium ions in thermolysin.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-refinement improved the peak heights of both the zinc and calcium ions (Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "7ede753a-df30-478e-8628-4c21c1f42fb9",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C47",
+      "claim": "Two anomalous difference peaks near the active site above 3 \u03c3 were observed using the post-refined thermolysin data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed two anomalous difference peaks near the active site above 3 \u03c3 using the post-refined data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from anomalous difference Fourier maps",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "50de2c78-490c-4461-a31b-36b347299fc4",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C48",
+      "claim": "The second, smaller anomalous peak in thermolysin is not visible in the anomalous difference map using the 'averaged-merged' data set with 2000 images.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the second, smaller peak is not visible in the anomalous difference map using the 'averaged-merged' data set with 2000 images",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of anomalous difference maps",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "67cebe29-b138-420b-90c7-df801fa98cfb",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C49",
+      "claim": "The second anomalous peak had not been clearly visible in the previous data analysis of the thermolysin XFEL data set (PDB ID: 4OW3).",
+      "claim_type": "EXPLICIT",
+      "source": "and it had not been clearly visible in the previous data analysis of the thermolysin XFEL data set (PDB ID: 4OW3; Hattne et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previously published structure, supported by citation to Hattne et al., 2014",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "f670f49c-ae06-425d-8845-793faabaa0ca",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C50",
+      "claim": "A previous thermolysin structure (PDB ID: 1LND) reported two zinc sites in the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous thermolysin structure (PDB ID: 1LND; Holland et al., 1995) reported two zinc sites in the active site that correspond to the two anomalous-difference peaks observed with our post-refined data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Holland et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "faa6a77b-ea94-41a4-a593-9aece6492371",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C51",
+      "claim": "A Leu\u2013Lys dipeptide was observed in the electron density near the active site of thermolysin.",
+      "claim_type": "EXPLICIT",
+      "source": "When the molecular replacement model of thermolysin was refined against the post-refined data, we observed a well-connected electron density feature in the mFo-DFc map near the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from difference electron density maps",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "86b2915a-d14f-4338-835b-44f0b40be4c0",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C52",
+      "claim": "In the deposited thermolysin model (PDB ID: 4OW3), weak density features near the active site were interpreted as water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the deposited model refined against the original XFEL data (Hattne et al., 2014; PDB ID: 4OW3), weak density features in this region were interpreted as water molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previously published structure, supported by citation to Hattne et al., 2014",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "d8fd0caf-1a51-4e2a-bd39-3916c12ff9f9",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C53",
+      "claim": "The dipeptide had a higher real-space correlation coefficient with the maps calculated from the post-refined diffraction data than those calculated from the averaged merged diffraction data.",
+      "claim_type": "EXPLICIT",
+      "source": "The dipeptide had a higher real-space correlation coefficient (CC) with the maps calculated from the post-refined diffraction data than those calculated from the averaged merged diffraction data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of real-space correlation coefficients",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "6e3dc4cd-a3ec-4fd0-93bd-294b6f5b1b12",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C54",
+      "claim": "The electron density for both post-refined thermolysin diffraction data sets is better connected than that of the averaged merged diffraction data set.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron density for both post-refined diffraction data sets is also better connected than that of the averaged merged diffraction data set (Figure 10A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 10A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "0d6db8a0-e950-4ec4-8f26-3725ae373633",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C55",
+      "claim": "The Rwork and Rfree values of the refined complete thermolysin model using the post-refined diffraction data are lower than those using the averaged merged data throughout the entire resolution range.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rwork and Rfree values of the refined complete model using the post-refined diffraction data are lower than those using the averaged merged data throughout the entire resolution range (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 10B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "0912d749-3d8a-4edd-8be2-af5fc97cb482",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C56",
+      "claim": "When completeness is high, adding more images to increase the multiplicity of observations has only a modest impact on the quality of the final refined structures using the post-refined diffraction data.",
+      "claim_type": "EXPLICIT",
+      "source": "When completeness is high, adding more images to increase the multiplicity of observations has only a modest impact on the quality of the final refined structures using the post-refined diffraction data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from analysis of subsets with varying numbers of images",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "7e58b1c5-c38c-45a0-9b79-b9e83cbb8936",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C57",
+      "claim": "For thermolysin subsets ranging from 2000 to 12,000 diffraction images (all 100% complete at 2.6 \u00c5), the peak height in the omit map, CC1/2 values, and R values did not improve significantly when more than 8000 images were used.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when subsets ranging from 2000 to 12,000 thermolysin diffraction images (all subsets 100% complete at 2.6 \u00c5) were post-refined the peak height in the omit map for the larger of the two anomalous sites (Figure 11C), the CC1/2 values, and the R values of the refined structures did not improve significantly when more than 8000 images were used.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 11",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "9dac47da-68af-4935-9b7b-2c231a06648f",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C58",
+      "claim": "Processing of XFEL diffraction data requires new methods and implementations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, processing of XFEL diffraction data, which are collected from crystals in random orientations as 'still' diffraction images, requires new methods and implementations such as those described here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the need for new methods in XFEL crystallography",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "90fb52c8-c987-4076-9238-e52d061eec6e",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C59",
+      "claim": "Improved data collection and processing methods are important for making XFELs useful for challenging investigations in structural biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Improved data collection and processing methods, particularly those that can significantly reduce the amount of sample needed to assemble a complete and accurate diffraction data set, are important for making XFELs useful for certain challenging investigations in structural biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the importance of method development",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "fb3738a1-471b-4f77-9d6b-06ef4cff9475",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C60",
+      "claim": "The authors' implementation of post-refinement differs from that of Kabsch (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Kabsch uses a partiality model in which an Ewald offset correction is defined as a Gaussian function of angular distance from the Ewald sphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with Kabsch's method",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "cca34c58-301d-43ba-b489-7f0454589f27",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C61",
+      "claim": "The authors' implementation of post-refinement differs from that of White (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "White used the intersecting volume between the reflection and the limiting-energy Ewald spheres defined by the energy spectrum for the partiality calculation, and calculates the initial reference data set by averaging all observations without scaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with White's method",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "a1c2b080-c9a7-49a2-bdef-2e1fbf21b9cc",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C62",
+      "claim": "Neither Kabsch (2014) nor White (2014) describe an application to experimental XFEL diffraction data.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither report describes an application to experimental XFEL diffraction data, so we cannot compare these methods to the results presented here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the lack of experimental validation in previous reports",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "b9abd485-36e7-4b5d-b36f-c865fe39e2d0",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C63",
+      "claim": "The authors' implementation of post-refinement substantially improves the quality of the diffraction data from three different XFEL experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated here that our implementation of post-refinement substantially improves the quality of the diffraction data from three different XFEL experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "368bb51c-358a-4513-9c3b-cbe6ff188db7",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C64",
+      "claim": "The resulting structures can be refined to significantly lower Rfree and R values with electron density maps that reveal novel features more clearly than those using non-post-refined XFEL data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the resulting structures can be refined to significantly lower Rfree and R values, with electron density maps that reveal novel features more clearly, than those using non-post-refined XFEL data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "b23e2d6a-2d3c-4f97-bb07-ad115cdd09fc",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C65",
+      "claim": "A key feature of the authors' method is that the parameters that define the diffracted spot are iteratively refined against the reference set.",
+      "claim_type": "EXPLICIT",
+      "source": "A key feature of our method is that the parameters that define the diffracted spot are iteratively refined against the reference set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "e0bf22c0-368e-41a5-966a-ad615b101855",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C66",
+      "claim": "This development will make XFEL crystallography accessible to many challenging problems in biology for which sample quantity is a major limiting factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this development will make XFEL crystallography accessible to many challenging problems in biology for which sample quantity is a major limiting factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion about the impact of the method",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "393f7a44-34b7-4b53-8789-540d17e7521c",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C67",
+      "claim": "The comparison of myoglobin omit maps suggests that synchrotron data are perhaps somewhat better than XFEL data.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison of myoglobin omit maps (Figure 7) suggests that the SR data are perhaps somewhat better",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "8f0b553c-5dc0-40bd-a35a-f0f326fe66e4",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C68",
+      "claim": "Rotation data would likely be better than still data due to the ability to directly measure full reflections without modeling partiality.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that rotation data would be better due to the ability to directly measure full reflections (at least by summation of partials) without modeling partiality, which is still a relatively crude process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the relative merits of rotation vs still data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "bab9eed6-3a3b-4306-9056-3ecc41618613",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C69",
+      "claim": "The formulation of post-refinement employs the simplifying assumption that reflections are spherical volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our formulation of post-refinement employs the simplifying assumption that reflections are spherical volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "f810b3cb-38b2-4587-9aa6-b3f43bee71eb",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C70",
+      "claim": "Crystal mosaicity has three components, each with a distinct effect on the reciprocal lattice point.",
+      "claim_type": "EXPLICIT",
+      "source": "More sophisticated models consider crystal mosaicity to have three components, each with a distinct effect on the reciprocal lattice point (Juers et al., 2007; Nave, 1998, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Juers et al., 2007 and Nave, 1998, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "a338568a-b094-4e92-94e5-f9cdfcb8f1ca",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C71",
+      "claim": "Domain size produces reciprocal lattice points of constant, finite size.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the domain size (the average size of the coherently scattering mosaic blocks) produces reciprocal lattice points of constant, finite size: small domains produce large-sized spots, while large domains produce small spots, as there is an inverse (Fourier) relation between spot size and domain size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the relationship between domain size and spot size based on Fourier theory",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "eece297b-459f-44b1-b4cb-f99c8f5de109",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C72",
+      "claim": "Unit-cell variation among domains produces reflections that are spheres whose radii increase with distance from the origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, unit-cell variation among domains produces reflections that are spheres whose radii increase with distance from the origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the effect of unit-cell variation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "bb9edc7f-8935-46a2-aa60-2f73d560d985",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C73",
+      "claim": "In cctbx.xfel, mosaicity and effective domain size are taken into account when predicting which reflections are in diffracting position prior to integration.",
+      "claim_type": "EXPLICIT",
+      "source": "In cctbx.xfel, mosaicity (modeled as isotropic parameter) and effective domain size are taken into account when predicting which reflections are in diffracting position prior to integration (Sauter et al., 2014; Sauter, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sauter et al., 2014 and Sauter, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "6abbcd7b-2bdc-4a75-b3d7-49f178476039",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C74",
+      "claim": "Orientational spread among mosaic domains produces spots shaped like spherical caps.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, orientational spread among mosaic domains produces spots shaped like spherical caps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the effect of orientational spread",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "2049107a-0b38-4b2b-b667-a6b15b20c538",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C75",
+      "claim": "Anisotropy in crystal mosaicity is not considered in the current model.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, anisotropy in crystal mosaicity is not considered; this would require refining separate parameters along each lattice direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of the current model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "1723f767-cf6c-4e51-a5f5-40c1e0eda13d",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C76",
+      "claim": "The rugged energy spectrum that results from the SASE process of the XFEL is not yet considered in the current model.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the rugged energy spectrum that results from the SASE process of the XFEL is not yet considered in our current model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of the current model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "f1a6a63a-a139-464d-a1a5-8d3987d3d2e8",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C77",
+      "claim": "The XFEL beam at LCLS is strongly polarized in the horizontal plane.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary XFEL beam at LCLS is strongly polarized in the horizontal plane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of LCLS beam properties",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "66e498be-61cd-42ea-8f7a-4de1662c6ccf",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C78",
+      "claim": "For a stationary crystal and a monochromatic beam, a Lorentz factor correction is not applicable.",
+      "claim_type": "EXPLICIT",
+      "source": "For a stationary crystal and a monochromatic beam, a Lorentz factor correction is not applicable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on crystallographic theory for still diffraction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "f9e46d82-573d-4a7b-b724-b4333e96dfb5",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C79",
+      "claim": "The spectral dispersion of the SASE beam (\u03b4E/E \u223c 3 \u00d7 10\u22123) is accounted for by the \u03b3e term.",
+      "claim_type": "EXPLICIT",
+      "source": "the spectral dispersion of the SASE beam (\u03b4E/E \u223c 3 \u00d7 10\u22123 for the data sets studied here) is accounted for by the \u03b3e term",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of how spectral dispersion is modeled",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "3f94ba19-fa01-4dee-9213-fe9211739348",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C80",
+      "claim": "The computer program prime is implemented as a part of the cctbx computational crystallography toolbox.",
+      "claim_type": "EXPLICIT",
+      "source": "The computer program, prime, is implemented as a part of the cctbx computational crystallography toolbox (Grosse-Kunstleve et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grosse-Kunstleve et al., 2002",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "60d373f0-3832-478c-b473-6a7d5d3d1009",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C81",
+      "claim": "Molecular replacement was carried out with Phaser using default settings, with r.m.s.d. set to 0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular replacement was carried out with Phaser (McCoy et al., 2007) using default settings, with r.m.s.d. set to 0.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the molecular replacement protocol, supported by citation to McCoy et al., 2007",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "ce184e6f-57be-46fb-9bff-b163c8750a81",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "claim_id": "C82",
+      "claim": "The standard deviation of the Ewald offset distribution for myoglobin after post-refinement is 0.0016 1/\u00c5 or approximately 0.12\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard deviation is 0.0016 1/\u00c5 or approximately 0.12\u00b0 (when calculated with the mean of the energy distribution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from Figure 12 caption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4df83624-0443-403b-918b-fd183878ea6d",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a new post-refinement procedure (implemented in the program 'prime') specifically designed for XFEL still diffraction data from randomly oriented crystals. This method greatly improves diffraction data quality from three different proteins and allows complete data sets to be extracted from far fewer images than the Monte Carlo method requires.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 collectively establish the development and validation of the post-refinement method. The experimental data from three different proteins (myoglobin, hydrogenase, thermolysin) demonstrate improved data quality metrics (CC1/2, R-factors, electron density maps) and reduced image requirements, providing strong converging evidence for the method's effectiveness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "9bf03c03-0691-488a-a847-68b406e9a6af",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The partiality model assumes reflections are spherical volumes and that measurements are infinitely thin (areal) samples. The Ewald offset correction is defined as 1 when a reflection is centered on the Ewald sphere, corresponding to maximum partial intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C69 describe the fundamental assumptions of the partiality model. These are clearly stated theoretical assumptions with mathematical definitions provided in the Materials and methods section. The spherical volume assumption is acknowledged as a simplification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "c0227d83-3e29-4a31-9c7a-f71b6ad5b5f2",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For myoglobin, the partiality model target function (Tpr) markedly decreased in the first microcycle and fully converged in the last microcycle, while the spot position residual (Txy) decreased during post-refinement of crystal orientation and unit-cell parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 describe convergence behavior observed in Figure 3 for a representative myoglobin diffraction image. The data clearly show the described decreases in both target functions during the iterative refinement process.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "aeddb492-2760-434e-bf7b-8976af911767",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For myoglobin using all 757 images, post-refinement improved CC1/2 values (especially at low resolution), increased real-space correlation coefficients for the heme group in difference maps, and produced the best Rfree and Rwork values. Post-refinement against an iteratively improved reference set is superior to methods considering each image individually.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by quantitative data in Table 2, Figures 5C and 6A. Multiple independent quality metrics (CC1/2, real-space correlation, R-factors) consistently show improvement with post-refinement compared to averaged-merged and mean-scaled partiality-corrected methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "27c02463-595b-49b2-8566-41d3e9fe32fe",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Post-refinement of only 100 myoglobin diffraction images (80% complete) produced difference maps with better real-space correlation for the heme group than averaged-merged data from all 757 images (97.7% complete). Post-refinement both improves data quality for a given set of images and reduces the number of images required for structure determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 demonstrate a key practical advantage of the method. The comparison shown in Figure 6A and Table 2 provides direct evidence that post-refined data from 100 images outperforms non-post-refined data from 757 images by real-space correlation metrics, despite lower completeness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "e21046cc-42ff-4d95-b75c-c7863f69cebb",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Comparison of post-refined XFEL myoglobin data with synchrotron data showed comparable quality omit maps and real-space correlation coefficients for the heme group, though the authors suggest synchrotron data may be somewhat better.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C39 states comparable quality while C67 suggests synchrotron data are 'perhaps somewhat better.' Figure 7 shows similar map quality, but the authors' own assessment introduces uncertainty. The comparison is limited to one protein and lacks systematic evaluation across multiple metrics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "a5a785d4-e1c4-4d1d-a302-f1024831aca9",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For hydrogenase, 177 diffraction images from eight crystals were collected and merged to 91% completeness. Post-refinement significantly improved CC1/2 values, clearly revealed the entire Fe-S cluster in omit maps (whereas averaged-merged data showed much poorer density), and produced significantly better R and Rfree values. Similar improvements were seen with only 100 images (83% complete).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by data in Table 3 and Figure 8. The Fe-S cluster provides a clear structural feature for quality assessment, and the visual difference in omit map quality between post-refined and averaged-merged data is striking. Quantitative metrics (CC1/2, R-factors) corroborate the visual assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "3804642b-e63b-47b5-a563-0b4e21886e86",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Thermolysin diffraction data collected at the zinc absorption edge showed improved anomalous signal after post-refinement. Two anomalous difference peaks above 3\u03c3 were observed near the active site using post-refined data; the second, smaller peak was not visible in averaged-merged data with 2000 images and had not been clearly visible in previous analysis (PDB: 4OW3). These peaks correspond to two zinc sites reported in a previous structure (PDB: 1LND).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 describe improved anomalous signal detection. Figure 9 and Table 4 show clear improvements in peak heights. The identification of a second zinc site not visible in previous analysis demonstrates the practical value of the method. The correspondence with a previously reported structure (1LND) provides independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "a7156987-a1f6-46c5-a0e3-44995870381e",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A Leu-Lys dipeptide was observed in well-connected electron density near the thermolysin active site in post-refined data. In the previously deposited model (PDB: 4OW3), weak density in this region was interpreted as water molecules. The dipeptide had higher real-space correlation with post-refined maps than averaged-merged maps, and post-refined data produced lower Rwork and Rfree values throughout the resolution range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 describe identification of a structural feature missed in previous analysis. Figure 10 shows clear visual improvement in electron density connectivity. The comparison with the deposited structure and quantitative metrics (real-space correlation, R-factors) support the superior quality of post-refined data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "6bf42639-9cef-4165-aefd-b38f04fe67b7",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When completeness is high, adding more images to increase multiplicity has only modest impact on final structure quality using post-refined data. For thermolysin subsets from 2000-12,000 images (all 100% complete at 2.6 \u00c5), peak heights, CC1/2 values, and R values did not improve significantly beyond 8000 images.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by data in Figure 11. The plateau in quality metrics beyond 8000 images demonstrates diminishing returns with increased multiplicity when completeness is already high. This has important practical implications for data collection efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "5ccccafb-0206-4a5f-a4f4-7c2d14e7599f",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Radiation damage limits macromolecular structure quality, but femtosecond XFEL pulses enable visualization before damage onset. XFEL structures use liquid jet injection or goniometer setups, producing still diffraction patterns from effectively stationary crystals containing only partially recorded reflections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide background context supported by appropriate citations. These establish the motivation for XFEL crystallography and describe the nature of XFEL diffraction data. All claims are well-established in the field and properly referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "c324b3c3-bb6d-49ae-b07e-9f904e2e512d",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Most XFEL data processing approaches use the Monte Carlo method, which requires very large numbers of crystals to ensure convergence. Shot-to-shot differences in pulse intensity and energy spectrum arise from the SASE process and contribute to intensity variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 describe the state of XFEL data processing and its limitations, supported by appropriate citations. These claims establish the problem that the authors' method addresses and are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "c028f8d6-bfc6-422c-a102-cf38203510ba",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Post-refinement methods were developed in the 1970s for virus crystals and made it possible to obtain high-quality data from many crystals. Other post-refinement schemes for XFEL data have been described but only applied to simulated XFEL data or pseudo-still synchrotron images.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 provide historical context and position the current work relative to prior art. All claims are supported by appropriate citations. The distinction that previous XFEL post-refinement methods were not applied to experimental data is important for establishing novelty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "4d6931eb-51c6-45c4-b562-01c4c193324a",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors' implementation differs from Kabsch (2014) and White (2014) in the partiality model and initial reference set calculation. Neither previous report describes application to experimental XFEL data, preventing direct comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 distinguish the current method from previous approaches. The differences in methodology are clearly stated, and the lack of experimental validation in previous reports is accurately noted. This establishes the novelty of the experimental validation presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "350cebcf-9b67-4e47-9c22-c881162f9f74",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors' post-refinement implementation substantially improves diffraction data quality from three XFEL experiments, producing structures with significantly lower R-factors and clearer electron density maps. A key feature is iterative refinement against an improved reference set. This development will make XFEL crystallography accessible to problems where sample quantity is limiting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 summarize the demonstrated improvements, supported by extensive experimental data. Claim C66 is a forward-looking statement about impact that is reasonable given the demonstrated reduction in required sample, though it remains to be validated by future applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "61b23c7a-74e0-406d-9e13-0e2edabefca8",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The SASE spectrum is broad and varies shot-to-shot. Myoglobin and hydrogenase data were collected from frozen crystals on a goniometer setup, while thermolysin used an electrospun liquid jet for nanocrystal injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C28-C29 describe experimental conditions and XFEL beam properties. These are factual descriptions of the data collection methods, properly cited and consistent with the experimental details in Table 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "0b5f6348-6411-4c06-bcd1-c69214038cb0",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors suspect rotation data would be better than still data due to the ability to directly measure full reflections without modeling partiality, which is still a relatively crude process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 is explicitly speculative ('We suspect'). While the reasoning is sound, no experimental comparison between rotation and still XFEL data is provided. This remains an untested hypothesis that would require systematic comparison to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "196ffd4d-4705-4399-87ce-5388230c8437",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "More sophisticated models consider crystal mosaicity to have three components (domain size, unit-cell variation, orientational spread), each affecting reciprocal lattice points differently. The current model does not consider anisotropic mosaicity or the rugged SASE energy spectrum. In cctbx.xfel, mosaicity and domain size are considered during reflection prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76 describe limitations of the current model and acknowledge more sophisticated approaches. These are honest assessments of model simplifications, properly cited where appropriate. The acknowledgment of limitations is important for understanding the scope and potential improvements of the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "1591de58-4291-4bb5-9ec0-24209be055ef",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The XFEL beam at LCLS is strongly polarized horizontally. For stationary crystals with monochromatic beams, Lorentz factor correction is not applicable, but spectral dispersion (\u03b4E/E ~ 3\u00d710\u207b\u00b3) is accounted for by the \u03b3e term.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe technical aspects of the correction model. These are based on established crystallographic theory and LCLS beam properties. The treatment of polarization and spectral dispersion is appropriate for the experimental conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "fcbd7a8a-1488-4bb7-95f6-dae723e7b30f",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The program prime is implemented in cctbx. Molecular replacement used Phaser with default settings and r.m.s.d. of 0.8. The standard deviation of the Ewald offset distribution for myoglobin after post-refinement is 0.0016 \u00c5\u207b\u00b9 (approximately 0.12\u00b0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 provide implementation and methodological details. These are factual statements about software, protocols, and results. The Ewald offset distribution (C82, Figure 12) provides quantitative validation of the refinement convergence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    },
+    {
+      "id": "a3a1b8c8-75b1-4632-91d5-d5049c344188",
+      "content_id": "5b875b18-89a1-4a27-aa1d-ad423d38ce4e",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Processing XFEL still diffraction data from randomly oriented crystals requires new methods and implementations. Improved data collection and processing methods that reduce sample requirements are important for making XFELs useful for challenging structural biology investigations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are general statements about the need for method development in XFEL crystallography. These are well-supported by the context and challenges described throughout the manuscript. The importance of reducing sample requirements is demonstrated by the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:11.499151Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fe207ecf-1607-4a4a-ac9d-8a35cda215ee",
+      "result_id": "4df83624-0443-403b-918b-fd183878ea6d"
+    },
+    {
+      "claim_id": "c224cdca-58f3-404b-b947-c587055b63b6",
+      "result_id": "4df83624-0443-403b-918b-fd183878ea6d"
+    },
+    {
+      "claim_id": "fe6f4951-aae3-4133-997f-8268e6d287c4",
+      "result_id": "4df83624-0443-403b-918b-fd183878ea6d"
+    },
+    {
+      "claim_id": "4a649f48-f8b9-47d9-b455-39d3ca49bec4",
+      "result_id": "4df83624-0443-403b-918b-fd183878ea6d"
+    },
+    {
+      "claim_id": "da6be8eb-7fb1-4bea-9c43-fbf1026a2c7f",
+      "result_id": "9bf03c03-0691-488a-a847-68b406e9a6af"
+    },
+    {
+      "claim_id": "a7898c6a-844c-49a1-a06e-55fd35679e24",
+      "result_id": "9bf03c03-0691-488a-a847-68b406e9a6af"
+    },
+    {
+      "claim_id": "c25b028b-09d3-4737-a1d0-ddc54d087455",
+      "result_id": "9bf03c03-0691-488a-a847-68b406e9a6af"
+    },
+    {
+      "claim_id": "bab9eed6-3a3b-4306-9056-3ecc41618613",
+      "result_id": "9bf03c03-0691-488a-a847-68b406e9a6af"
+    },
+    {
+      "claim_id": "43cc74fd-8824-4a08-887b-2196a39ce29f",
+      "result_id": "c0227d83-3e29-4a31-9c7a-f71b6ad5b5f2"
+    },
+    {
+      "claim_id": "106f5669-f17e-4c83-8f5f-a45f4302b20a",
+      "result_id": "c0227d83-3e29-4a31-9c7a-f71b6ad5b5f2"
+    },
+    {
+      "claim_id": "94a6d55b-396a-4876-bcd4-ed8adbb1d65b",
+      "result_id": "aeddb492-2760-434e-bf7b-8976af911767"
+    },
+    {
+      "claim_id": "50be5700-237b-425c-90ee-048010b902c2",
+      "result_id": "aeddb492-2760-434e-bf7b-8976af911767"
+    },
+    {
+      "claim_id": "058512ac-95c9-4242-bc74-d2da23c7a104",
+      "result_id": "aeddb492-2760-434e-bf7b-8976af911767"
+    },
+    {
+      "claim_id": "e907426f-2759-4126-8f61-925611df7fea",
+      "result_id": "aeddb492-2760-434e-bf7b-8976af911767"
+    },
+    {
+      "claim_id": "2bcfb346-b437-4583-8fdf-70b65527f024",
+      "result_id": "27c02463-595b-49b2-8566-41d3e9fe32fe"
+    },
+    {
+      "claim_id": "a3310f8d-c766-4686-9a50-c4e4a44650a9",
+      "result_id": "27c02463-595b-49b2-8566-41d3e9fe32fe"
+    },
+    {
+      "claim_id": "42cad3ec-4e4b-4d10-a407-d43b3443dba3",
+      "result_id": "27c02463-595b-49b2-8566-41d3e9fe32fe"
+    },
+    {
+      "claim_id": "f9852b3d-ca37-4024-886b-62f571270cc7",
+      "result_id": "e21046cc-42ff-4d95-b75c-c7863f69cebb"
+    },
+    {
+      "claim_id": "393f7a44-34b7-4b53-8789-540d17e7521c",
+      "result_id": "e21046cc-42ff-4d95-b75c-c7863f69cebb"
+    },
+    {
+      "claim_id": "110a8bcd-0683-4e3a-b43f-6e51628b7a28",
+      "result_id": "a5a785d4-e1c4-4d1d-a302-f1024831aca9"
+    },
+    {
+      "claim_id": "acebbaf2-1ed8-4bc3-97da-676c6227d96a",
+      "result_id": "a5a785d4-e1c4-4d1d-a302-f1024831aca9"
+    },
+    {
+      "claim_id": "213ab36a-465e-4892-860a-f0aefe7c864d",
+      "result_id": "a5a785d4-e1c4-4d1d-a302-f1024831aca9"
+    },
+    {
+      "claim_id": "1e42e346-c090-4b26-86e0-99817ddfd682",
+      "result_id": "a5a785d4-e1c4-4d1d-a302-f1024831aca9"
+    },
+    {
+      "claim_id": "76089a15-1700-4e4b-8e1d-232603fcfd35",
+      "result_id": "a5a785d4-e1c4-4d1d-a302-f1024831aca9"
+    },
+    {
+      "claim_id": "3b3cc489-f8eb-40f6-84bc-341f2e25aabf",
+      "result_id": "3804642b-e63b-47b5-a563-0b4e21886e86"
+    },
+    {
+      "claim_id": "32ed4d0a-2f8e-4ace-b380-f7261f140bb1",
+      "result_id": "3804642b-e63b-47b5-a563-0b4e21886e86"
+    },
+    {
+      "claim_id": "7ede753a-df30-478e-8628-4c21c1f42fb9",
+      "result_id": "3804642b-e63b-47b5-a563-0b4e21886e86"
+    },
+    {
+      "claim_id": "50de2c78-490c-4461-a31b-36b347299fc4",
+      "result_id": "3804642b-e63b-47b5-a563-0b4e21886e86"
+    },
+    {
+      "claim_id": "67cebe29-b138-420b-90c7-df801fa98cfb",
+      "result_id": "3804642b-e63b-47b5-a563-0b4e21886e86"
+    },
+    {
+      "claim_id": "f670f49c-ae06-425d-8845-793faabaa0ca",
+      "result_id": "3804642b-e63b-47b5-a563-0b4e21886e86"
+    },
+    {
+      "claim_id": "faa6a77b-ea94-41a4-a593-9aece6492371",
+      "result_id": "a7156987-a1f6-46c5-a0e3-44995870381e"
+    },
+    {
+      "claim_id": "86b2915a-d14f-4338-835b-44f0b40be4c0",
+      "result_id": "a7156987-a1f6-46c5-a0e3-44995870381e"
+    },
+    {
+      "claim_id": "d8fd0caf-1a51-4e2a-bd39-3916c12ff9f9",
+      "result_id": "a7156987-a1f6-46c5-a0e3-44995870381e"
+    },
+    {
+      "claim_id": "6e3dc4cd-a3ec-4fd0-93bd-294b6f5b1b12",
+      "result_id": "a7156987-a1f6-46c5-a0e3-44995870381e"
+    },
+    {
+      "claim_id": "0d6db8a0-e950-4ec4-8f26-3725ae373633",
+      "result_id": "a7156987-a1f6-46c5-a0e3-44995870381e"
+    },
+    {
+      "claim_id": "0912d749-3d8a-4edd-8be2-af5fc97cb482",
+      "result_id": "6bf42639-9cef-4165-aefd-b38f04fe67b7"
+    },
+    {
+      "claim_id": "7e58b1c5-c38c-45a0-9b79-b9e83cbb8936",
+      "result_id": "6bf42639-9cef-4165-aefd-b38f04fe67b7"
+    },
+    {
+      "claim_id": "9a0eac10-1f47-4f79-bb60-0c408e76eb61",
+      "result_id": "5ccccafb-0206-4a5f-a4f4-7c2d14e7599f"
+    },
+    {
+      "claim_id": "8e83e046-1574-4c13-bf12-bd6cc37ad369",
+      "result_id": "5ccccafb-0206-4a5f-a4f4-7c2d14e7599f"
+    },
+    {
+      "claim_id": "168c4cf9-6aec-43be-a8bc-701e70f7d10f",
+      "result_id": "5ccccafb-0206-4a5f-a4f4-7c2d14e7599f"
+    },
+    {
+      "claim_id": "819dfc75-dfc8-48ae-8357-d06e3dbf876b",
+      "result_id": "5ccccafb-0206-4a5f-a4f4-7c2d14e7599f"
+    },
+    {
+      "claim_id": "157905eb-5e30-4893-915a-bee159ea6a68",
+      "result_id": "5ccccafb-0206-4a5f-a4f4-7c2d14e7599f"
+    },
+    {
+      "claim_id": "718d7fb6-59ec-4549-9696-2609abdab66a",
+      "result_id": "5ccccafb-0206-4a5f-a4f4-7c2d14e7599f"
+    },
+    {
+      "claim_id": "fbafc985-b97a-453c-90ed-f7cb759042d0",
+      "result_id": "c324b3c3-bb6d-49ae-b07e-9f904e2e512d"
+    },
+    {
+      "claim_id": "d33ec13c-ec31-46de-a7a9-d8ccea86e197",
+      "result_id": "c324b3c3-bb6d-49ae-b07e-9f904e2e512d"
+    },
+    {
+      "claim_id": "26ca217e-82ea-4868-92ac-1e7edbffc676",
+      "result_id": "c324b3c3-bb6d-49ae-b07e-9f904e2e512d"
+    },
+    {
+      "claim_id": "acd7cfa7-0e51-4bb8-86d7-6117626dab5d",
+      "result_id": "c028f8d6-bfc6-422c-a102-cf38203510ba"
+    },
+    {
+      "claim_id": "be8ca34b-c8d8-423b-8bd4-4b9a743e0628",
+      "result_id": "c028f8d6-bfc6-422c-a102-cf38203510ba"
+    },
+    {
+      "claim_id": "d1e73d01-1db3-439b-8a0d-3815a8ad3402",
+      "result_id": "c028f8d6-bfc6-422c-a102-cf38203510ba"
+    },
+    {
+      "claim_id": "344f3d31-3f48-45a5-9b4e-489080e492df",
+      "result_id": "c028f8d6-bfc6-422c-a102-cf38203510ba"
+    },
+    {
+      "claim_id": "fb3738a1-471b-4f77-9d6b-06ef4cff9475",
+      "result_id": "4d6931eb-51c6-45c4-b562-01c4c193324a"
+    },
+    {
+      "claim_id": "cca34c58-301d-43ba-b489-7f0454589f27",
+      "result_id": "4d6931eb-51c6-45c4-b562-01c4c193324a"
+    },
+    {
+      "claim_id": "a1c2b080-c9a7-49a2-bdef-2e1fbf21b9cc",
+      "result_id": "4d6931eb-51c6-45c4-b562-01c4c193324a"
+    },
+    {
+      "claim_id": "b9abd485-36e7-4b5d-b36f-c865fe39e2d0",
+      "result_id": "350cebcf-9b67-4e47-9c22-c881162f9f74"
+    },
+    {
+      "claim_id": "368bb51c-358a-4513-9c3b-cbe6ff188db7",
+      "result_id": "350cebcf-9b67-4e47-9c22-c881162f9f74"
+    },
+    {
+      "claim_id": "b23e2d6a-2d3c-4f97-bb07-ad115cdd09fc",
+      "result_id": "350cebcf-9b67-4e47-9c22-c881162f9f74"
+    },
+    {
+      "claim_id": "e0bf22c0-368e-41a5-966a-ad615b101855",
+      "result_id": "350cebcf-9b67-4e47-9c22-c881162f9f74"
+    },
+    {
+      "claim_id": "fb592890-93e9-462d-91ce-77d0dc7848e2",
+      "result_id": "61b23c7a-74e0-406d-9e13-0e2edabefca8"
+    },
+    {
+      "claim_id": "cfe07551-d77a-42ac-ba02-e1310808160e",
+      "result_id": "61b23c7a-74e0-406d-9e13-0e2edabefca8"
+    },
+    {
+      "claim_id": "ae51bc76-06f1-48ce-bb80-d70c51d6cb6c",
+      "result_id": "61b23c7a-74e0-406d-9e13-0e2edabefca8"
+    },
+    {
+      "claim_id": "8f0b553c-5dc0-40bd-a35a-f0f326fe66e4",
+      "result_id": "0b5f6348-6411-4c06-bcd1-c69214038cb0"
+    },
+    {
+      "claim_id": "f810b3cb-38b2-4587-9aa6-b3f43bee71eb",
+      "result_id": "196ffd4d-4705-4399-87ce-5388230c8437"
+    },
+    {
+      "claim_id": "a338568a-b094-4e92-94e5-f9cdfcb8f1ca",
+      "result_id": "196ffd4d-4705-4399-87ce-5388230c8437"
+    },
+    {
+      "claim_id": "eece297b-459f-44b1-b4cb-f99c8f5de109",
+      "result_id": "196ffd4d-4705-4399-87ce-5388230c8437"
+    },
+    {
+      "claim_id": "bb9edc7f-8935-46a2-aa60-2f73d560d985",
+      "result_id": "196ffd4d-4705-4399-87ce-5388230c8437"
+    },
+    {
+      "claim_id": "6abbcd7b-2bdc-4a75-b3d7-49f178476039",
+      "result_id": "196ffd4d-4705-4399-87ce-5388230c8437"
+    },
+    {
+      "claim_id": "2049107a-0b38-4b2b-b667-a6b15b20c538",
+      "result_id": "196ffd4d-4705-4399-87ce-5388230c8437"
+    },
+    {
+      "claim_id": "1723f767-cf6c-4e51-a5f5-40c1e0eda13d",
+      "result_id": "196ffd4d-4705-4399-87ce-5388230c8437"
+    },
+    {
+      "claim_id": "f1a6a63a-a139-464d-a1a5-8d3987d3d2e8",
+      "result_id": "1591de58-4291-4bb5-9ec0-24209be055ef"
+    },
+    {
+      "claim_id": "66e498be-61cd-42ea-8f7a-4de1662c6ccf",
+      "result_id": "1591de58-4291-4bb5-9ec0-24209be055ef"
+    },
+    {
+      "claim_id": "f9e46d82-573d-4a7b-b724-b4333e96dfb5",
+      "result_id": "1591de58-4291-4bb5-9ec0-24209be055ef"
+    },
+    {
+      "claim_id": "3f94ba19-fa01-4dee-9213-fe9211739348",
+      "result_id": "fcbd7a8a-1488-4bb7-95f6-dae723e7b30f"
+    },
+    {
+      "claim_id": "60d373f0-3832-478c-b473-6a7d5d3d1009",
+      "result_id": "fcbd7a8a-1488-4bb7-95f6-dae723e7b30f"
+    },
+    {
+      "claim_id": "ce184e6f-57be-46fb-9bff-b163c8750a81",
+      "result_id": "fcbd7a8a-1488-4bb7-95f6-dae723e7b30f"
+    },
+    {
+      "claim_id": "9dac47da-68af-4935-9b7b-2c231a06648f",
+      "result_id": "a3a1b8c8-75b1-4632-91d5-d5049c344188"
+    },
+    {
+      "claim_id": "90fb52c8-c987-4076-9238-e52d061eec6e",
+      "result_id": "a3a1b8c8-75b1-4632-91d5-d5049c344188"
+    }
+  ],
+  "comparisons": []
+}

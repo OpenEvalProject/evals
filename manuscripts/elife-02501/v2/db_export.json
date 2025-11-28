@@ -1,0 +1,2106 @@
+{
+  "submission": {
+    "id": "90979c46-7f40-45b1-86e6-49eb36b23d44",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:48:41.811112Z",
+    "updated_at": "2025-11-28T20:48:41.811112Z"
+  },
+  "content": [
+    {
+      "id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "submission_id": "90979c46-7f40-45b1-86e6-49eb36b23d44",
+      "content_type": "manuscript",
+      "content_text": "# Oxidation of cellular amino acid pools leads to cytotoxic mistranslation of the genetic code\n\n## Authors\n\n- Tammy J Bullwinkle<sup>1</sup>\n- Noah M Reynolds<sup>1</sup>\n- Medha Raina<sup>2</sup>\n- Adil Moghal<sup>2</sup>\n- Eleftheria Matsa<sup>1</sup>\n- Andrei Rajkovic<sup>2</sup>\n- Huseyin Kayadibi<sup>5</sup>\n- Farbod Fazlollahi<sup>5</sup>\n- Christopher Ryan<sup>5</sup>\n- Nathaniel Howitz<sup>6</sup>\n- Kym F Faull<sup>5</sup>\n- Beth A Lazazzera<sup>6</sup>\n- Michael Ibba<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Microbiology Ohio State University Columbus United States\n2. Center for RNA Biology, Ohio State University Columbus United States\n3. Ohio State Biochemistry Program Ohio State University Columbus United States\n4. Molecular, Cellular and Developmental Biology Program Ohio State University Columbus United States\n5. Pasarow Mass Spectrometry Laboratory Semel Institute for Neuroscience and Human Behavior, University of California Los Angeles United States\n6. Department of Microbiology, Immunology and Molecular Genetics University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAminoacyl-tRNA synthetases use a variety of mechanisms to ensure fidelity of the genetic code and ultimately select the correct amino acids to be used in protein synthesis. The physiological necessity of these quality control mechanisms in different environments remains unclear, as the cost vs benefit of accurate protein synthesis is difficult to predict. We show that in Escherichia coli, a non-coded amino acid produced through oxidative damage is a significant threat to the accuracy of protein synthesis and must be cleared by phenylalanine-tRNA synthetase in order to prevent cellular toxicity caused by mis-synthesized proteins. These findings demonstrate how stress can lead to the accumulation of non-canonical amino acids that must be excluded from the proteome in order to maintain cellular viability.\n\n## Introduction\n\nThe faithful translation of mRNA into the corresponding protein sequence is an essential step in gene expression. The accuracy of translation depends on the precise pairing of mRNA codons with their cognate aminoacyl-tRNAs, containing the corresponding anticodons, during ribosomal protein synthesis (Zaher and Green, 2009; Rodnina, 2012). Cognate amino acids are attached to their respective tRNAs by aminoacyl-tRNA synthetases (aaRSs), and the ability of these enzymes to distinguish between cognate and non-cognate substrates is a major determinant of the fidelity of the genetic code. AaRSs discriminate against near- and non-cognate tRNAs at levels compatible with typical translation error rates (\u223c10\u22124) due to the structural complexity and diversity observed between tRNA isoacceptors. AaRSs can less successfully discriminate against near-cognate amino acids, which may differ from the cognate substrate by as little as a single methyl or hydroxyl group. Errors during amino acid recognition do not usually compromise the accuracy of translation due to highly specific aaRS enzymes, and the widespread existence of editing mechanisms that proofread non-cognate amino acids. For example, phenylalanine tRNA synthetase (PheRS) edits mischarged Tyr-tRNAPhe at a hydrolytic editing site \u223c30 \u00c5 from the synthetic active site (Roy et al., 2004; Kotik-Kogan et al., 2005). PheRS editing provides a key checkpoint in quality control, as mischarged Tyr-tRNAPhe is readily delivered to the ribosome by EF-Tu where it can efficiently decode Phe codons as Tyr in the growing polypeptide chain, resulting in mistranslation (Ling et al., 2007b, 2009).\n\nDespite their role in accurately translating the genetic code, aaRS editing pathways are not conserved, and their activities have varying effects on cell viability (Bacher et al., 2005; Lee et al., 2006; Bacher and Schimmel, 2007; Bacher et al., 2007). Mycoplasma mobile, for example, tolerates relatively high error rates during translation and lacks PheRS editing function, as do other aaRSs in this organism (Li et al., 2011; Yadavalli and Ibba, 2013). Saccharomyces cerevisiae cytoplasmic PheRS (ScctPheRS) has a low Phe/Tyr specificity and is capable of editing, whereas the yeast mitochondrial enzyme (ScmtPheRS) completely lacks an editing domain, and instead relies on high Phe/Tyr specificity. Escherichia coli, in contrast, has retained both features and displays a high degree of Phe/Tyr specificity and robust editing activity (Reynolds et al., 2010). The range of divergent mechanisms used by different PheRSs to discriminate against non-cognate amino acids illustrates how the requirements for translation quality control vary with cellular physiology (Yadavalli and Ibba, 2013). Furthermore, given that editing by PheRS and other aaRSs is not essential for viability in yeast or E. coli, it is clear that the true roles of these quality control pathways remain to be fully elucidated (Reynolds et al., 2010).\n\nIn addition to the well-documented ability of aaRSs to edit tRNAs charged with genetically encoded near cognate amino acids, these same proofreading activities have been demonstrated to act on other non-canonical substrates. AaRSs are able to edit tRNAs misacylated with a range of amino acids not found in the genetic code such as homocysteine, norleucine, \u03b1-aminobutyrate and meta-tyrosine (m-Tyr), although the physiological relevance of these activities is unknown (reviewed in Yadavalli and Ibba, 2012). Both E. coli and Thermus thermophilus PheRS have been shown to edit m-Tyr, a metabolic byproduct formed by oxidation of phenylalanine following metal-catalyzed formation of hydroxyl radical species (Huggins et al., 1993; Stadtman and Levine, 2003; Klipcan et al., 2009). Certain species of fescue grasses (Festuca spp.) produce m-Tyr as a natural defense agent that appears in the proteomes of neighboring plants, and m-Tyr accumulation in the proteome of Chinese hamster ovary (CHO) cells has been proposed to have a cytotoxic effect on translation (Gurer-Orhan et al., 2006; Bertin et al., 2007). Taken together, these findings suggest that oxidative stress could potentially result in m-Tyr accumulation with the accompanying threat of cytotoxic mistranslation. Under such growth conditions, the ability of the cell to edit m-Tyr-tRNAPhe would be essential to maintain cellular viability. Here we show that bacterial PheRS is able to efficiently edit m-Tyr-tRNAPhe, and that this editing activity is essential for cellular growth and survival under both cytotoxic amino acid and oxidative stress conditions. Additionally, we show that PheRS editing in yeast provides only limited protection from m-Tyr, but instead is essential for protecting the cell from para-Tyr-tRNAPhe accumulation.\n\n## Results\n\n### PheRS editing is dispensable for E. coli and S. cerevisiae growth\n\nTo investigate the role of E. coli PheRS (EcPheRS) editing in vivo, a strain was constructed containing a point mutation (G318W) within pheT, which encodes the \u03b2 subunit of PheRS. Changes to residue \u03b2G318 hinder access to the editing site and thereby reduce EcPheRS posttransfer editing activity by more than 70-fold in vitro (Roy et al., 2004; Ling et al., 2007a). E. coli strain NP37, which encodes a temperature sensitive pheS allele, was used as the background strain in order to facilitate selection of recombinant strains (Kast et al., 1992). Cell-free extracts from non-temperature-sensitive NP37-derived strains with wild type pheT and pheT(G318W) alleles were prepared and their PheRS activities tested. Only the strain encoding wild type PheRS retained post\u2013transfer editing activity against p-Tyr-tRNAPhe (Figure 1A). Both strains showed identical levels of aminoacylation activity and growth at 37\u00b0C, indicating that the proofreading pathway is not required for growth under normal laboratory conditions. The role of PheRS editing was also investigated in S. cerevisiae by mutation of the chromosomal FRS1 gene, which encodes the \u03b2-subunit of cytoplasmic PheRS (ScctPheRS). Introduction in FRS1 of a mutation encoding the amino acid replacement D243A eliminated p-Tyr-tRNAPhe editing in vivo (Figure 1B; Reynolds et al., 2010) and had no effect on growth compared to wild type under standard conditions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig1-v2.jpg)\n\n**Figure 1.:** (A) Post\u2013transfer hydrolysis of [14C]- Tyr-tRNAPhe (1 \u00b5M) by cell-free extracts isolated from wild type (\u25cf) and pheT(G318W) (\u25a0) E. coli strains (140 mg/ml total protein concentration) or buffer (\u25b2) at 37\u00b0C. (B) Posttransfer editing activity of \u03b2D243A ctPheRS in S. cerevisiae. Reactions were performed at 37\u00b0C with 2 \u03bcM Tyr-tRNAPhe and S. cerevisiae wild type FRS1 or frs1-1 (D243A) cell-free extracts normalized to aminoacylation activity (Reynolds et al., 2010). Data points are the mean of at least three independent experiments, with errors bars representing \u00b11 SD.\n\n### PheRS editing specifies m-Tyr resistance in E. coli\n\nPhenotypic microarrays (Biolog) were used to compare the growth of E. coli pheT(G318W) to wild type under 1920 growth conditions, and no significant changes were observed in the absence of PheRS editing. Additional experiments to investigate possible roles for editing under a range of other conditions, including heat shock, cold shock, pH stress and aging, failed to reveal differences compared to wild type. Growth of these strains was also compared in media containing varying concentrations of near-cognate p-Tyr in order to test the limits of EcPheRS specificity in the absence of post\u2013transfer editing activity. Elevated concentrations of p-Tyr (>3 mM) did not affect the growth of E. coli pheT(G318W) compared to wild type (Figure 2A). Analysis of amino acid pools extracted from representative cells showed E. coli pheT(G318W) contained similar intracellular concentrations of p-Tyr and Phe as the wild type strain, indicating the pheT mutation has no effect on amino acid uptake (Table 1). In the absence of amino acid supplementation, the intracellular Phe:p-Tyr ratios were 1:1, and rose to 1:9 upon addition of p-Tyr. The growth of E. coli pheT(G318W) in the presence of m-Tyr, a non-proteinogenic amino acid previously shown to be a substrate for bacterial PheRS, was then investigated (Klipcan et al., 2009). Relative to wild type, growth of E. coli strain pheT(G318W) was inhibited in the presence of elevated intracellular concentrations of m-Tyr suggesting PheRS proofreading activity is needed to clear mischarged m-Tyr-tRNAPhe in vivo (Table 1; Figure 2B). Editing assays performed in vitro confirmed that, as with p-Tyr, post\u2013transfer editing of m-Tyr-tRNAPhe by PheRS is ablated by the G318W mutation (Figure 2\u2014figure supplement 1). The inhibitory effect of m-Tyr on growth in the absence of editing was also observed in E. coli mutants derived from strain MG1655 that, unlike the NP37 background, encodes an intact stringent response (Figure 2C). The pheT editing mutation was also constructed in the MG1655 background in order to confirm the m-Tyr growth phenotype was not specific to strains lacking the stringent response, where cells are unable to properly sense and respond to amino acid starvation. Growth of E. coli pheT(G318W) was also evaluated in the presence of ortho-tyrosine (o-Tyr) and 3,4-dihydroxy-L-phenylalanine (L-DOPA), oxidation products of Phe and p-Tyr, respectively (Maskos et al., 1992). Neither of these non-proteinogenic amino acids inhibited growth of wild type or the pheT(G318W) mutant E. coli strain (Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig2-v2.jpg)\n\n**Figure 2.:** Growth of E. coli pheT(G318W) strain (grey bars) relative to wild type (black bars) under increasing concentrations of L-p-Tyr (A) or D,L-m-Tyr (B) relative to Phe. Cultures were grown in M9 minimal media supplemented with amino acids expressed as a ratio of Phe:Tyr. A ratio of 1:1 corresponds to 3 \u00b5M of each amino acid. (C) Growth of PheRS editing deficient strain of E. coli in an MG1655 background in the presence of different tyrosine isomers at 37\u00b0C. Bars are the mean of three independent cultures, with errors bars representing \u00b1 SD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Hydrolysis of 0.1 \u00b5M E. coli p-Tyr-[32P]-tRNAPhe (dashed lines) or m-Tyr-[32P]-tRNAPhe (solid lines) in the presence of 10 nM wild type EcPheRS (\u25a0) G318W EcPheRS (=) or buffer (\u25b2) at 37\u00b0C. Data points are the mean of three independent experiments, with errors bars representing \u00b1 SD.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Growth of PheRS editing deficient E. coli at 37\u00b0C after 16 hr in M9 minimal media supplemented with increasing concentrations of (A) o-Tyr or (B) L-dopa. (C) Aminoacylation of [32P]-tRNAPhe with o-Tyr (=) or L-dopa (\u25a0) by E. coli G318W PheRS (1 \u00b5M). Bars are the mean of three independent cultures, with errors bars representing \u00b1 SD.\n\n**Table 1.**\n Amino acid pools in wild type and editing defective E. coli strains\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Supplement</th>\n      <th>m-Tyr (\u00b5M)*</th>\n      <th>p-Tyr (\u00b5M)</th>\n      <th>Phe (\u00b5M)</th>\n      <th>p-Tyr/Phe</th>\n      <th>m-Tyr/Phe</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wild type</td>\n      <td>+ m-Tyr</td>\n      <td>2.9 \u00b1 0.06</td>\n      <td>0.56 \u00b1 0.1</td>\n      <td>0.63 \u00b1 0.2</td>\n      <td>0.9 \u00b1 0.0</td>\n      <td>5 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>pheT(G318W)</td>\n      <td>+ m-Tyr</td>\n      <td>2.7 \u00b1 0.5</td>\n      <td>0.46 \u00b1 0.02</td>\n      <td>0.90 \u00b1 0.2</td>\n      <td>0.9 \u00b1 0.2</td>\n      <td>6 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>Wild type</td>\n      <td>+ p-Tyr</td>\n      <td>ND</td>\n      <td>11 \u00b1 4</td>\n      <td>0.91 \u00b1 0.1</td>\n      <td>12 \u00b1 4</td>\n      <td>ND\u2020</td>\n    </tr>\n    <tr>\n      <td>pheT(G318W)</td>\n      <td>+ p-Tyr</td>\n      <td>ND</td>\n      <td>8.9 \u00b1 0.4</td>\n      <td>0.93 \u00b1 0.1</td>\n      <td>9.7 \u00b1 1</td>\n      <td>ND</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Concentrations of intracellular Phe and Tyr isomers isolated from wild type and pheT(G318W) E. coli strains grown in M9 minimal media supplemented with either m-Tyr or p-Tyr.\u2020ND indicates concentrations were below the detectable limit (0.01 \u00b5M)._\n\nThe role of PheRS editing on yeast growth was tested under similar conditions to those examined for E. coli. While the editing deficient frs1-1 (D243A) yeast strain displayed no difference to wild type under heat shock or ethanol stress, it showed a pronounced defect in p-Tyr resistance. At elevated p-Tyr concentrations, growth of the frs1-1 (D243A) strain was restricted compared to wild type (Figure 3A), while the growth of both strains was more comparably inhibited by addition of m-Tyr (Figure 3B). These findings are in contrast to the responses of E. coli to tyrosine isomer stresses, consistent with the comparatively low Phe/p-Tyr amino acid specificity of the yeast enzyme and the previously observed inability of eukaryotic cytoplasmic PheRS to efficiently edit m-Tyr-tRNAPhe (Klipcan et al., 2009; Reynolds et al., 2010).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig3-v2.jpg)\n\n**Figure 3.:** Growth of yeast frs1-1 (D243A) strain (grey bars) relative to a wild type strain (black bars) under increasing concentrations of L-p-Tyr (A) or D,L-m-Tyr (B) relative to Phe. Cultures were grown in minimal media supplemented with amino acids expressed as a ratio of Phe:Tyr. A ratio of 1:1 corresponds to 3 \u00b5M of each amino acid. Data points are the mean of three independent cultures, with errors bars representing \u00b11 SD.\n\n### Bacterial and eukaryotic PheRSs have divergent tyrosine isomer specificities\n\nE. coli PheRS is able to edit preformed m-Tyr-tRNAPhe (Klipcan et al., 2009), and the loss of this activity in the G318W variant indicates that editing occurs at the site previously described for p-Tyr-tRNAPhe (Ling et al., 2007a; Figure 2\u2014figure supplement 1). Wild type EcPheRS did not stably charge tRNAPhe with either m- or p-Tyr, while G318W utilized both isomers for aminoacylation, with m-tyr being a more efficient substrate (Figure 4A,B). Under similar conditions, G318W PheRS was unable to utilize o-Tyr or L-DOPA for tRNAPhe aminoacylation, consistent with the absence of any growth phenotype of the pheT(G318W) strain in the presence of these tyrosine analogs (Figure 2\u2014figure supplement 2). As a substrate for T. thermophilus PheRS, L-DOPA has been shown to be 1500-fold less efficient than Phe (Moor et al., 2011). Examination of amino acid substrate specificity showed the catalytic efficiency (kcat/KM) for m-Tyr activation by EcPheRS to be 35-fold less than for Phe, in contrast to p-Tyr which is activated almost 3000-fold less efficiently than the cognate substrate (Table 2). The ability of EcPheRS to efficiently activate m-Tyr is consistent with the need for editing to maintain cellular viability during growth in the presence of this non-proteinogenic amino acid.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig4-v2.jpg)\n\n**Figure 4.:** tRNAPhe aminoacylation activities of (A) wild type and (B) G318W E. coli PheRS for 60 \u03bcM cognate Phe and non-cognate p- and m-Tyr substrates. Aminoacylation activities of (C) wild type cytoplasmic and (D) wild type mitochondrial S. cerevisiae PheRS for 100 \u03bcM cognate Phe and non-cognate p- and m-Tyr substrates. Data points are the mean of three independent experiments, with errors bars representing \u00b1 SD.\n\n**Table 2.**\n Steady-state kinetic constants for amino acid activation by PheRS from E. coli and S. cerevisiae cytoplasmic PheRS\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Phe</th>\n      <th></th>\n      <th></th>\n      <th>m-Tyr</th>\n      <th></th>\n      <th>p-Tyr</th>\n      <th colspan=\"2\">Specificity (kcat/KM/kcat/KM)</th>\n    </tr>\n    <tr>\n      <th>PheRS</th>\n      <th>KM (\u00b5M)</th>\n      <th>kcat (s\u22121)</th>\n      <th>kcat/KM (s\u22121/\u00b5M)</th>\n      <th>KM (\u00b5M)</th>\n      <th>kcat (s\u22121)</th>\n      <th>kcat/KM (s\u22121/\u00b5M)</th>\n      <th>kcat/KM (s\u22121/\u00b5M)</th>\n      <th>Phe/m-Tyr</th>\n      <th>Phe/p-Tyr</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E. coli</td>\n      <td>18 \u00b1 4</td>\n      <td>5.2 \u00b1 2</td>\n      <td>0.29</td>\n      <td>247 \u00b1 60</td>\n      <td>2.1 \u00b1 0.8</td>\n      <td>0.008</td>\n      <td>1.1 \u00d7 10-4</td>\n      <td>35</td>\n      <td>2650</td>\n    </tr>\n    <tr>\n      <td>Yeast ct</td>\n      <td>16 \u00b1 2</td>\n      <td>26 \u00b1 4</td>\n      <td>1.6</td>\n      <td>1150 \u00b1 230</td>\n      <td>26 \u00b1 4</td>\n      <td>0.023</td>\n      <td>0.014</td>\n      <td>71</td>\n      <td>120</td>\n    </tr>\n  </tbody>\n</table>\n\nIn contrast to the E. coli enzyme, wild type ScctPheRS efficiently utilizes m-Tyr for activation and aminoacylation of tRNAPhe. Charging of tRNAPhe with m-Tyr was seen at amino acid substrate concentrations where p-Tyr-tRNAPhe synthesis was not detected (Figure 4C; Table 2). The kcat/KM of m-Tyr activation by ScctPheRS is 71-fold lower than that of Phe, demonstrating relatively poor discrimination between the two amino acids (Table 2). In contrast to the E. coli enzyme, p-Tyr-tRNAPhe is a better substrate for post\u2013transfer editing by ScctPheRS relative to m-Tyr-tRNAPhe (Figure 5). These results provide a possible explanation for the toxic effects m-Tyr has on the wild type yeast strain (Figure 3B), although additional cytotoxic affects of m-Tyr outside of translation cannot be ruled out. Post\u2013transfer editing of m-Tyr-tRNAPhe by ScctPheRS provides some protection from m-Tyr\u2019s toxic affects as there is a difference in the growth of wild type vs the frs1-1(D243A) strain at high concentrations of m-Tyr (Figure 3B). The mitochondrial variant of yeast PheRS (ScmtPheRS), which naturally lacks Tyr-tRNAPhe post\u2013transfer editing activity (Roy et al., 2005), was also found to synthesize m-Tyr-tRNAPhe more efficiently than p-Tyr-tRNAPhe at similar tyrosine isomer concentrations (Figure 4D). The absence in yeast of appropriate quality control pathways in either the cytoplasm or mitochondria suggests that m-Tyr toxicity results from the accumulation of mischarged tRNAs in both compartments.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig5-v2.jpg)\n\n**Figure 5.:** Hydrolysis of 0.1 \u00b5M yeast (A) p-Tyr-[32P]-tRNAPhe or (B) m-Tyr-[32P]-tRNAPhe in the presence of 10 nM wild type ScctPheRS (\u25cf) D243A ScctPheRS (\u25a0) or buffer (\u25b2) at 37\u00b0C. Data points are the mean of three independent experiments, with errors bars representing \u00b1 SD.\n\n### m-Tyr is incorporated into the E. coli proteome at Phe codons\n\nThe correlation between E. coli PheRS-dependent m-Tyr toxicity in vivo and synthesis of m-Tyr-tRNAPhe in vitro strongly suggests that this mischarged tRNA is a substrate for ribosomal peptide synthesis. Dipeptide synthesis was monitored in vitro using m-Tyr-tRNAPhe:EF-Tu:GTP as a substrate for decoding of a ribosomal A site Phe (UUC) codon. Under these conditions similar levels of fMet-m-Tyr and fMet-Phe were synthesized, indicating a lack of discrimination against the non-proteinogenic amino acid at the A-site of E. coli ribosomes (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig6-v2.jpg)\n\n**Figure 6.:** (A) In vitro 70S ribosomal di-peptide synthesis with either Phe-tRNAPhe or m-Tyr-tRNAPhe (B) LC-MS/MS-MRM quantification of m-Tyr and Phe in protein hydrolysis isolated from E. coli expressed as molar ratio of m-Tyr to Phe. Wild type (Wt) and pheT(G318W) strains grown in M9 minimal media alone and supplemented with m-Tyr are shown. Error bars represent \u00b1 standard error of means.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Mass spectroscopy quantification of p-Tyr and Phe in protein hydrolysis isolated from E. coli expressed as molar ratio of p-tyr to Phe. Wild type and pheT(G318W) strains grown in in M9 minimal media alone and supplemented with p-Tyr are shown. Error bars represent \u00b1 standard error of means.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Aminoacylation of E. coli [32P]-tRNAPhe transcript (0.5 \u03bcM) with m-Tyr (1 mM) by E. coli TyrRS (50 nM) at 25\u00b0C.\n\nThe effect of m-Tyr on protein synthesis in vivo was investigated by analyzing the accumulation of the non-proteinogenic amino acid in the proteomes of wild type and E. coli pheT(G318W) cells. Cytosolic protein samples were isolated from m-Tyr treated E. coli cells and samples subjected to acid hydrolysis to generate individual amino acids. The resulting amino acid hydrolysate was analyzed by liquid chromatography tandem mass spectrometry with multiple reaction monitoring (LC-MS/MS-MRM). To validate peak assignments of the Tyr isomers, co-chromatography was performed with synthetic m-Tyr or o-Tyr added to proteome samples. Only one peak for each of the isomers was observed, validating the assignments. Some level of m-Tyr was found to be present in the proteomes of both wild type and phe(G318W) strains indicating incorporation could be occurring through more than one route. Comparison of proteome total amino acid levels between wild type and pheT(G318W) strains indicated a level of misincorporation of 1% m-Tyr at Phe codons due to the absence of PheRS editing (Figure 6B). In wild type proteins the fraction of m-Tyr compared to Phe is 0.015, increasing to 0.025 in samples isolated from the pheT(G318W) strain grown in the same conditions. This result indicates post\u2013transfer editing by PheRS provides protection of the E. coli proteome from misincorporation of m-Tyr at Phe codons. Quantification of p-Tyr relative to Phe in the protein samples isolated from cultures grown in the presence of 0.5 mM p-Tyr does not change between the wild type and pheT(G318W) strains indicating this protein amino acid is not significantly misincorporated at Phe codons, even in the absence of PheRS editing (Figure 6\u2014figure supplement 1). These analyses show a ratio of p-Tyr/Phe of 0.6, which correlates reasonably well with previous estimates of amino acid usage in E. coli (0.7, Jauregui et al., 2000).\n\nA detectable level of m-Tyr in the proteome of wild type E. coli suggests either this non-proteinogenic amino acid escapes PheRS editing, infiltrates the proteome by means other than misincorporation at Phe codons or is carried over during cytosolic protein preparation. To measure the approximate amount of carryover, wild type PheRS E. coli strain was grown in the presence of 0.5 mM o-Tyr, which is not a substrate for protein synthesis, and total protein samples were subjected to acid hydrolysis and LC-MS/MS-MRM. In these samples, traces of o-Tyr were detected, indicating that free amino acid carry over possibly contributes to some of the m-Tyr detected in the samples from the wild type strain grown in M9 minimal media supplemented with m-Tyr. Whether the m-Tyr seen in the proteome of E. coli containing PheRS editing is formed post-translationally or is incorporated during protein synthesis via another promiscuous tRNA synthetase in E. coli is unclear. Aminoacylation of tRNATyr with m-Tyr by E. coli TyrRS was detected in vitro, suggesting this synthetase may provide a route of m-Tyr incorporation even when PheRS editing is active (Figure 6\u2014figure supplement 2).\n\n### E. coli PheRS editing is required for growth under oxidative stress conditions\n\nReactive oxygen species (ROS) generated under oxidative stress via the Fenton reaction are capable of catalyzing the conversion of Phe to m-Tyr, which could potentially threaten the fidelity of protein synthesis in the absence of editing (Maskos et al., 1992; Stadtman and Levine, 2003). To investigate if oxidative stress conditions generate potentially toxic levels of m-Tyr in vivo, wild type and editing deficient E. coli were grown in the presence of H2O2 and FeSO4 (Fe2+) as a source of ROS. LC-MS/MS-MRM analyses showed that m-Tyr accumulated in the intracellular amino acid pools of ROS-treated cells (Figure 7A). In addition to m-Tyr, significant de novo o-Tyr accumulation was also observed following ROS treatment, although this is not expected to pose a threat to translation fidelity as it is not a substrate for PheRS (Figure 2\u2014figure supplement 2). E. coli lacking PheRS editing activity showed a reduction in growth relative to wild type when grown in media where ROS exposure increased, consistent with the accumulation of free m-Tyr and its subsequent utilization in protein synthesis (Figure 7B). Taken together, our data indicate that PheRS editing activity affords E. coli protection against the co-translational insertion of non-proteinogenic amino acids that accumulate during oxidative stress. Attempts to identify m-Tyr in the total protein hydrolysis samples under oxidative stress conditions revealed the presence of m-Tyr and o-Tyr in both the wild type and pheT(G318W) strains. Proper quantification of the levels of each amino acid in these samples was not possible as adequate resolution could not be achieved for the peaks corresponding to the different Tyr isomers in total protein samples prepared from H2O2 treated cells. These observations suggest posttranslational damage of Phe residues in protein by H2O2 treatment may also be partially responsible for the accumulation of hydroxylated Phe residues. In efforts to increase the misincorporation of m-Tyr into the proteome at Phe codons, higher levels of H2O2 were used, however this resulted in the death of both strains likely due to the other damaging effects of reactive oxygen species.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02501/elife-02501-fig7-v2.jpg)\n\n**Figure 7.:** (A) LC-MS/MS-MRM chromatograms for p-, m- and o-Tyr (m/z 182\u2192136 transition) extracted from cells grown in the absence (left) and presence (right) of H2O2 and FeSO4. (B) Growth of E. coli pheT(G318W) strain relative to wild type in M9 minimal media supplemented with 0.1 mM FeSO4 and increasing concentrations of H2O2. Bars are the mean of three independent cultures, with errors bars representing \u00b1 SD.\n\n## Discussion\n\n### Context dependent specificity and editing\n\nIt has long been proposed that the fidelity of aminoacyl-tRNA synthetases needs to be at or above 1 in 3,000, which is cited as an approximate overall level of error for protein synthesis (Loftfield and Vanderjagt, 1972). AaRS fidelity is achieved through discrimination at the aminoacylation site as well as through additional editing activities in some aaRSs. Protection against both p-Tyr and m-Tyr incorporation at Phe codons appears critical in E. coli as the PheRS enzyme maintains high active-site selectivity against p-Tyr as well as post\u2013transfer editing activity against m-Tyr-tRNAPhe. E. coli PheRS requires this editing activity to protect the proteome from toxic effects of the non-proteinogenic amino acid m-Tyr, which is poorly discriminated against by the active site of the enzyme. Examination of the structure of the catalytic active site provides clues as to why PheRS is unable to discriminate against all the Tyr isomers. Ala294 is primarily responsible for specificity against binding of para-substituted Phe analogs, while Gln174 and Glu210 help stabilize the hydroxyl of non-cognate m-Tyr at position 3 of the ring (E. coli numbering) (Klipcan et al., 2009). In the case of the cognate Phe substrate, Glu210 is also needed to hydrogen bond with the Phe amino group, ensuring correct orientation of the substrate for activation (Safro et al., 2005; Mermershtain et al., 2011). It is unlikely this enzyme selects against recognition of m-Tyr while still maintaining efficient activity for the cognate amino acid, therefore the maintenance of post\u2013transfer editing activity is critical for fidelity in E. coli. In eukaryotes, cytoplasmic PheRS editing is needed to protect the proteome from p-Tyr misincorporation. This finding concurs with the low Phe/p-Tyr specificity of the yeast cytoplasmic enzyme (Reynolds et al., 2010). It is unclear if protection from m-Tyr incorporation is achieved through editing as the yeast strain encoding wild type ctPheRS is sensitive to high concentrations of m-Tyr, mtPheRS efficiently aminoacylates m-Tyr onto tRNAPhe, and other eukaryotic proteomes are vulnerable to the use of this oxygen-damaged amino acid for translation (Gurer-Orhan et al., 2006). Taken together, these findings suggest that either m-Tyr accumulation is not a substantial threat in eukaryotes, or possibly that the incorporation of low amounts of this non-proteinogenic amino acid in certain proteomes confers some as yet unknown evolutionary benefits.\n\n### Non-proteinogenic amino acids as threats to translational integrity\n\nNaturally occurring non-proteinogenic amino acids occur widely in nature and are well-characterized by-products and/or intermediates of biosynthetic pathways (Richmond, 1962). The actual threats these non-canonical substrates pose to protein synthesis and cell viability is unknown, as is the role of aaRS quality control in protecting the proteome from such amino acids. The non-proteinogenic amino acid m-Tyr has been detected in several eukaryotic proteomes and is one of the products of canonical aromatic amino acid oxidation (Wells-Knecht et al., 1993; Pennathur et al., 2001). The presence of hydroxylated forms of tyrosine in proteomes has previously been attributed to post-translational damage to proteins by hydroxyl radical species, and is often used as a marker for tissue damage due to the oxidative conditions of aging and disease. It has also been shown that m-Tyr and other Tyr analogs, for example L-DOPA, are substrates for translation in some organisms and could potentially be incorporated directly during protein synthesis (Rodgers et al., 2002; Ozawa et al., 2005; Gurer-Orhan et al., 2006; Klipcan et al., 2009; Moor et al., 2011). Our results now reveal the role of E. coli PheRS editing for preventing the use of m-Tyr during protein synthesis, demonstrating the threat amino acid oxidation poses to the proper functioning of the bacterial translation machinery.\n\nIncorporation of m-Tyr into the proteome of E. coli at Phe codons is toxic to the cell, and in the absence of PheRS quality control this non-proteinogenic amino acid serves as an efficient substrate for translation. Other non-proteinogenic amino acids have also been shown to be potential threats to translation, such as \u03b1-aminobutyrate, which in the absence of ValRS editing is toxic at high concentrations, although the physiological conditions under which this non-protein amino acid might naturally accumulate to significant levels are unclear (Nangle et al., 2002). The robust editing activity maintained by E. coli PheRS to protect the proteome from m-Tyr demonstrates the significant threat such an amino acid poses when misincorporated at specific near-cognate codons. In contrast, the presence of m-Tyr in the proteome of wild type E. coli suggests misincorporation can also occur at Tyr codons but without cytotoxic sequelae. These findings suggest that the cellular effects of non-proteinogenic amino acid incorporation are codon-dependent. The cell does not have codons or tRNAs for m-Tyr, therefore any advantage or disadvantage this amino acid might provide to the proteome cannot easily be selected for, or against, at the level of the genetic code. The only selection against near-cognate non-proteinogenic amino acid use during translation can be made at the level of the synthetase or ternary complex formation with an elongation factor (Dale and Uhlenbeck, 2005). In E. coli, misincorporation of m-Tyr at Phe codons in the absence of PheRS quality control occurred at a frequency of 1% and had a significant impact on cellular viability and restricted growth. This contrasts with the effects of misincorporation of canonical amino acids, which have been shown to be tolerated at rates of up to 10% without inhibiting growth (Ruan et al., 2008). Taken together with earlier studies, our present findings now show that the misincorporation of non-proteinogenic amino acids presents a substantial challenge for protein synthesis quality control. This in turn suggests that many \u2018dispensable\u2019 editing functions, both in aaRSs and trans editing factors, may actually be essential for growth under conditions that lead to the accumulation of potentially toxic levels of non-proteinogenic amino acids.\n\n### Oxidative stress and translation quality control\n\nOxidation of amino acids by reactive species such as hydroxyl radical and superoxide anions results in limited alteration of amino acid structure, such as the addition of a hydroxyl group, creating potential in vivo substrates for tRNA misacylation. These damaged amino acids challenge the protein synthesis machinery, as for example in the case of L-DOPA, and leucine hydroxide, which have been shown to be incorporated into proteins in mouse cells (Rodgers et al., 2002; Ozawa et al., 2005). The formation of intracellular m-Tyr in E. coli under physiological conditions is possibly a result of cellular exposure to H2O2. Aerobic respiration results in elevated endogenous levels of H2O2, but bacterial cells are also exposed to ROS present in their environment. Uncharged H2O2 is able to penetrate the cell membrane and accumulate inside cells whenever H2O2 is present in the extracellular habitat. At physiological pH, H2O2 quickly oxidizes ferrous iron via the Fenton reaction, generating a hydroxyl radical that can react with nearby cellular targets (Rush et al., 1990). Accumulation of toxic levels of m-Tyr in the intracellular pools of E. coli occurs under experimental conditions that promote the formation of hydroxyl radicals, however this is not the major byproduct of Phe oxidation. The o-Tyr isomer is the more abundant hydroxylation product under ROS-generating conditions used here (Figure 7). However, there is no observed o-Tyr aminoacylation of tRNAPhe by wild type PheRS in vitro, or inhibition of cell growth, in the presence of this hydroxylated Phe substrate. These, and the corresponding biochemical data, indicate how E. coli PheRS has evolved to effectively discriminate against different Tyr isomers using a combination of substrate specificity (o-Tyr, p-Tyr) and editing activity (m-Tyr, p-Tyr). In contrast, yeast PheRS has mainly evolved specifically to discriminate for p-Tyr by editing, reflecting differences in the factors that drive selection of quality control mechanisms.\n\n## Materials and methods\n\n### Strains, plasmids, and general methods\n\nProteins and tRNAs were prepared essentially as described previously (Roy et al., 2005). Mutation of the E. coli PheRS gene in the pQE31-EcFRS expression plasmid was completed using standard polymerase chain reaction (PCR)-based site-directed mutagenesis as previously described (Ling et al., 2007b). Purification of His-tagged PheRS variants included dialysis against two changes of 25 mM Tris\u2013HCl pH 7.5, 100 mM KCl, 0.1 mM sodium pyrophosphate, 3 mM 2-mercaptoethanol, and 10% glycerol, in order to release any enzyme-bound adenylate. Dialysis against 25 mM Tris\u2013HCl pH 7.5, 100 mM KCl, 5 mM MgCl2, 3 mM 2-mercaptoethanol, and 10% glycerol was then performed followed by dialysis against this same buffer with 50% glycerol, flash frozen, and stored at \u221280\u00b0C. Active enzyme concentration was determined by active site titration as previously described (Ibba et al., 1994). Phenylalanine, L-p-tyrosine and D,L-m-tyrosine were purchased from Sigma-Aldrich (St. Louis, MO).\n\n### Construction of editing defective E. coli and yeast mutant strains\n\nThe editing deficient strain of E. coli, pheT(G318W), was constructed using established recombineering methods involving the lambda red/gam pKD46 plasmid (Datsenko and Wanner, 2000). The pheSts E. coli strain NP37, which contains a G98D mutation (Kast et al., 1992) was used as the parental strain to allowed for selection of recombination events within the region of the neighboring pheS and pheT genes. Site directed mutagenesis of the pQE31-EcFRS wt plasmid (Ling et al., 2007b) was used to construct pQE31-EcFRSG318W/V364V. Linear PCR products were amplified from this plasmid and introduced to the pKD46 containing NP37 parent strain via electroporation. Primers for PCR were as follows: p14 EcFRS: 5\u2032-AACCATGTCACATCTCGC and P16AS EcFRS: 5\u2032-CGTTGGTGATATCAATTACCGG. This linear DNA contains the wild type pheS gene to allow for colony selection at 42\u00b0C, the pheT gene containing a G318W mutation, and a silent V364V mutation that introduces a BamHI site for screening of colonies. Recombinant strains were confirmed with sequencing. A wild type pheS/pheT strain was also constructed in the same manner, but without changing the Gly residue at 318. The \u03bb-red recombineering system was used to introduce the pheT(G318W) mutation into the E. coli MG1655 background. Competent cells were prepared as previously described (Yu et al., 2000) of an MG1655 derivative containing pSIM6, a plasmid that carries the \u03bb-red system (Datta et al., 2006). These cells were transformed with a 70-mer oligonucleotide (5\u2032- CACAACAAGGCGCTGGCGATGGGAGGAATATT TTGGGGAGAGCATTCAGGCGTGAAT GACGAAACACAAA) that has several wobble mutations (underlined) on either side of the pheT(G318W) mutation (bolded). The wobble mutations serve to overwhelm the mismatch repair system (Costantino and Court, 2003). Positive clones were identified by colony PCR, with a primer that recognized the mutated sequence (5\u2032-AGGAATAT TTTGGGGAGAGCATTCA) and a reverse primer 500-bp distant (5\u2032-CCGATCAGGCGATCC AGTTTG), and subsequent DNA sequencing. One clone was chosen to serve as the intermediate strain and was subjected to a second round of recombineering, as indicated above, with an oligo (5\u2032CACAACAAGGCGCTGGCGATGGGCGGCATCTTCTGGGGCG AACACTC TGGCGTGAATGACGAAACACAAA) to remove the wobble mutations and leave solely the pheT(G318W) mutation. The intermediate strain was also transformed with an oligo (5\u2032-CACAACAAGGCGCTGGCGATGGGCGGCATCTTCGGTGGCGAACACTCTGGCGTGAATGACGAAACACAAA) that would revert the strain back to the wild type pheT sequence. This strain served as the wild type control strain in studies with the pheT(G318W) derivative of E. coli MG1655. Again, positive clones were screened by colony PCR (primer 5\u2032-CGGCATCTTCTGG GGCGAACACTCT for pheT(G318W) and primer 5\u2032-CGGCATCTTCGGTGGCGAACACTCT for wild type, both with the reverse primer indicated above) and DNA sequencing.\n\nStrains derived from S. cerevisiae W303 (MATa/MAT\u03b1, ade2-1, his3-11,15, leu2-3,112, trp1-1, ura3-1, can1-100) were used to construct chromosomal mutants of FRS1. A 2084 bp fragment of frs1-1, obtained through PCR of the plasmid pFL36-frs1-1 (Reynolds et al., 2010), was inserted into the integrative plasmid YIP5 (Struhl et al., 1979) at the EcoRI and NruI restriction sites by In-Fusion cloning (Clontech, Mountain View, CA), resulting in the plasmid YIP5-frs1-1. W303 (MATa/MAT\u03b1, ade2-1, his3-11,15, leu2-3,112, trp1-1, ura3-1, can1-100) was transformed with YIP5-frs1-1 and insertion of the plasmid was selected for by growth on complete supplement media minus uracil (CSM-Ura; Sunrise Science Products, San Diego, CA). Recombinant strains were grown in YPDA at 30\u00b0C, shaking at 300 rpm, for 24 hr, and plated on YPDA. Crossovers were selected for by replica plating onto media containing 5-flouroorotic acid (5-FOA). TRP1 prototroph strains were created through the PCR amplification of the TRP1 locus from S. cerevisiae strain BY4743 (MATa/MAT\u03b1, his3\u03941/his3\u03941, leu2\u03940/leu2\u03940, lys2\u03940/LYS2, MET15/met15\u03940, ura3\u03940/ura3\u03940) and the linear product used to transform the W303 (MATa/MAT\u03b1, ade2-1, his3-11,15, leu2-3,112, trp1-1, ura3-1, can1-100, FRS1/frs1-1,) strain. TRP1 recombinants were selected on synthetic complete minus tryptophan media. Haploids were obtained by sporulation, dissection onto YPDA, replica plated onto complete supplement media minus tryptophan, and tryptophan prototroph colonies selected. Haploids were screened for the presence of the frs1-1 mutation, resulting in the strains NR1 (MATa, ade2-1, his3-11,15, leu2-3,112, ura3-1, can1-100) and NR2 (MATa, ade2-1, his3-11,15, leu2-3,112, ura3-1, can1-100, frs1-1).\n\n### Growth assays\n\nSingle colonies of E. coli, wild type pheT or pheT(G318W), were picked from LB plates, resuspended in sterile water and used to inoculate liquid culture at an initial OD600 of 0.04. Cultures were grown in M9 media supplemented with glucose (2 g/l), thiamine (1 mg/l), MgSO4 (1 mM), CaCl2 (0.1 mM), and varying amounts of amino acids. Cultures were grown at 37\u00b0C in 250 \u00b5l volumes using 96-well plates for ease of titrating several amino acid concentrations. Phe was kept constant at 0.003 mM and L-Tyr or D,L-m-Tyr was varied from 0.003 mM to 3 mM. Optical densities at 600 nm (OD600) were read using a xMark Microplate Absorbance Spectrophotometer (Bio-Rad Laboratories, Hercules, CA) after 12\u201318 hr of growth. Growth curves were performed in supplemented M9 media containing none or 0.5 mM D,L-m-Tyr, and 100 ml cultures were grown at shaking at 37\u00b0C. Growth experiments in the presence of oxidative stress agents were also set up in 96-well plates in M9 minimal media containing 0.5 mM Phe, 0.1 mM FeSO4, and 2-4 mM H2O2. For all growth assays of the S. cerevisiae strains NR1 and NR2, cells were streaked on YPDA and incubated at 30\u00b0C. After approximately 72 hr single colonies were picked, resuspended in sterile water and used to inoculate liquid cultures to an initial OD600 of 0.01. Microtitre growth assays were completed by inoculating 150 \u03bcl of MM (Difco yeast nitrogen base without amino acids, 0.002% adenine, 0.002% uracil, 0.002% L-histidine, 0.01% L-leucine, and 2% glucose) + Phe:Tyr (where Phe was kept constant at 0.003 mM and Try was varied from 0.003 mM to 1.2 mM) in a 96 well microtitre plate. Plates were incubated at 30\u00b0C and growth was measured after 16 hr by OD600.\n\n### tRNA preparation and 32P labeling\n\nPurified native E. coli tRNAPhe was purchased from Chemical Block, Moscow, Russia. S. cerevisiae cytoplasmic and mitochondrial tRNAPhe were made from T7 runoff transcription as previously described (Roy et al., 2005; Yadavalli and Ibba, 2012). DNA template for tRNA transcription was generated from plasmids carrying tRNA genes (Sampson and Uhlenbeck, 1988) by PCR amplification and extended only to C75 to allow for 32P labeling of A76. After ethanol precipitation, tRNA transcripts were purified on denaturing 12% polyacrylamide gel and extracted by electrodialysis in 90 mM Tris-borate/2 mM ethylenediaminetetraacetic acid (EDTA) (pH 8.0). The tRNA was phenol and chloroform extracted, ethanol precipitated, dried and resuspended in diethylpyrocarbonate (DEPC)-treated ddH2O. Refolding was carried out by heating the tRNA at 70\u00b0C for 2 min, followed by the addition of 2 mM MgCl2 and slow cooling to room temperature. tRNAs were 32P-labeled at A76 essentially as described previously (Roy et al., 2005). For E. coli tRNAPhe the CCA-3\u2032-end was removed prior to labeling by treatment of 20 \u00b5M tRNA transcript with 100 \u00b5g/ml Crotalus atrox venom (Sigma-Aldrich) in a buffer containing 50 mM Na-Gly (pH 9.0) and 10 mM magnesium acetate. The reaction was incubated for 40 min at 21\u00b0C and phenol/chloroform extracted, ethanol precipitated, and desalted by gel filtration through a Sephadex G25 column (GE Healthcare Life Sciences, Pittsburgh, PA). The CCA-3\u2032-end of the tRNA was reconstituted and radiolabeled using E. coli tRNA terminal nucleotidyltransferase and [\u03b1-32P] ATP as described (Roy et al., 2005). Yeast cytoplasmic and mitochondrial tRNAPhe C75 transcripts were labeled the same way, however CTP was excluded from the reaction mix. Samples were treated with one volume of phenol, and the tRNA was phenol/chloroform extracted and gel filtered twice through a G25 column.\n\n### Aminoacylation and editing assays\n\nAminoacylation reactions were performed at 37\u00b0C in aminoacylation buffer (100 mM Na-Hepes pH 7.2, 30 mM KCl, 10 mM MgCl2, 10 mM DTT) with 8 mM ATP, 60 (E. coli) or 100 \u00b5M (S. cerevisiae) cold amino acid, 0.5 \u00b5M 32P-tRNA. PheRS (100 nM) was added to initiate the reactions. Aliquots were removed at designated time points, treated with an equal volume of 0.5 M sodium acetate pH 4.2 and incubated for 30 min at room temperature with S1 RNase (Promega, Fitchburg, WI). The free [\u03b1-32P]AMP and aminoacyl-[\u03b1-32P]AMP were separated by thin layer chromatography on polyethyleneimine cellulose (Sigma-Aldrich) in 100 mM ammonium acetate, 5% acetic acid and visualized as described previously (Wolfson and Uhlenbeck, 2002). Mischarging of E. coli tRNAPhe was performed at 37\u00b0C for 20 min in aminoacylation buffer with 8 mM ATP, 100 \u00b5M cold with L-p-Tyr or D,L-m-Tyr, 4 \u00b5M 32P-tRNA and 1 \u00b5M \u03b1A294G/\u03b2G318W PheRS (Roy et al., 2004). Reactions were stopped by the addition of 1 volume of phenol pH 4.5, and the aminoacylated tRNA was phenol/chloroform extracted and gel filtered twice through a G25 column pre-equilibrated with 5 mM sodium acetate pH 4.2. Editing assays were performed in aminoacylation buffer and contained 0.1 \u00b5M Tyr-[32P] tRNAPhe, and 10 nM G318W PheRS. Reactions were arrested at various time points and analyzed by TLC as described for the aminoacylation reactions (see above). Editing assays of the cell-free extracts were performed similarly, however mischarged [14C]Tyr-tRNAPhe was formed (Roy et al., 2005), and 1 \u00b5M was used in reactions containing aminoacylation buffer, 2 mM ATP, and cell free extract that was normalized for aminoacylation activity.\n\n### ATP/PPi exchange\n\nATP/PPi exchange assays were performed according to standard methods as previously described (Roy et al., 2004, 2005). Reactions were carried out at 37\u00b0C in a medium containing 100 mM Na-Hepes (pH 7.2), 30 mM KCl, 10 mM MgCl2, 2 mM NaF, 2 mM ATP, 2 mM [32P]PPi (2 cpm/pmol), varying amounts of Phe (1-200 \u00b5M) and D,L-m-Tyr (20\u20132000 \u00b5M), and 40 nM E. coli PheRS, 100-150 nM yeast cytosolic enzyme. After 1\u20131.3 min, 25 \u00b5l of the reaction were removed and added to a solution containing 1% charcoal, 5.6% HClO4, and 75 mM PPi. The charcoal-bound ATP was filtered through a 3 MM Whatman filter discs under vacuum and washed three times with 5 ml of water and once with 5 ml of ethanol. The filters were dried, and the radioactivity content was determined by liquid scintillation counting. We previously reported the activation specificity of Phe vs p-Tyr to be 7800 (Reynolds et al., 2010), however this discrepancy appears to be due to differences in enzyme-bound aminoacyl adenylate during protein purification affecting the measured active enzyme concentration. This problem was resolved here through extensive dialysis against PPi.\n\n### Dipeptide synthesis\n\nInitiation complexes (70S IC) were formed using tight coupled 70S ribosomes, [35S]fMet-tRNAfMet, Met\u2013Phe coding mRNA, and initiation factors essentially as described (Bullwinkle et al., 2013). Ternary complexes were formed using aminoacylated tRNAPhe and activated EF-Tu (Bullwinkle et al., 2013). Reactions were initiated by mixing 1 \u00b5M ternary complex with 0.1 \u00b5M 70S IC and incubated for 1 min at 21\u00b0C before quenching with 1/5th volume of 2 M KOH and 1 M H2O2. Quenched reactions were then incubated at 37\u00b0C for 20 min to deacylate tRNAPhe, and [35S]fMet-Phe dipeptides were separated from [35S]fMet by TLC on silica plates in buffer containing 1-butanol:acetic acid:H2O (4:1:1). TLC plates were then exposed and quantified by phosphor imaging.\n\n### Quantification of amino acid pools\n\nCultures were grown to late log phase in supplemented M9 media with or without 0.5 mM tyrosine in 5 ml volumes and harvested by vacuum filtration over a nylon filter followed by washing cells three times with 1 ml H2O. Cells and filters were then placed upside down in 0.5 ml extraction buffer (40% acetonitrile, 40% methanol) containing internal standards (100 pmol [U13C]Phe and 100 pmol [U13C]Tyr) at \u221220\u00b0C for 15 min. Metabolites were extracted as described (Crutchfield et al., 2010) and vacuumed dried. Samples were re-dissolved in water (50 \u00b5l), centrifuged (16,000\u00d7g, 5 min) and the supernatant transferred to LC injector vials. Aliquots of the supernatant (typically 5 \u00b5l) were injected onto a reverse phase HPLC column (Phenomenex Kinetex XB-C18, 2.1 \u00d7 100 mm, 1.7 \u03bcm particle size, 100 \u00c5 pore size) equilibrated in solvent A (water/formic acid, 100/0.1, vol/vol) and eluted (100 \u03bcl/min) with an increasing concentration of solvent B (acetonitrile/formic acid, 100/0.1, vol/vol; min/%B, 0/1, 5/1, 26/70, 27/1, and 35/1). The effluent from the column was directly connected to an electrospray ion source (Agilent Jet Stream, Agilent, Santa Clara, CA) attached to a triple quadrupole mass spectrometer (6460; Agilent) scanning in the multiple reaction monitoring mode with standard resolution settings (FWHM 0.7) using previously optimized conditions for the following transitions: Tyr, 182\u2192136; U13C-Tyr, 191\u2192144; Phe, 166\u2192120; U13C-Phe, 175\u2192128. With each batch of samples a series of standards was prepared with the same amount of internal standards and increasing amounts of Tyr and Phe (0, 0.1, 1, 10 and 100 pmol in 50 \u00b5l of water, in duplicate). Typical retention times for p-Tyr, m-Tyr, o-Tyr and Phe were 4.8, 6.6, 8.6 and 9.7 min, respectively. Peak areas were measured using instrument manufacturer supplied software (Agilent MassHunter). The amount of each analyte in each sample was determined by interpolation from the curves constructed from the standard samples (peak area Tyr or Phe/peak area U13C-Tyr or \u2013Phe against amount of Tyr or Phe).\n\n### Purification and LC-MS/MS-MRM of total protein hydrolysate\n\nE. coli cultures (100 ml), prepared in duplicate, were grown in M9 minimal media with or without 0.5 mM m-Tyr to exponential phase and harvested by centrifugation (6000\u00d7g, 10 min). Cell pellets were washed twice, resuspended in water, and lysed by sonication. To precipitate ribosomes and nucleic acids, streptomycin sulfate was added to a final concentration of 8 mg/ml (Cohen and Lichtenstein, 1960). Samples were incubated at 4\u00b0C for one hour, then centrifuged at 11,000\u00d7g for 5 min. Supernatants were collected and brought to 55% acetone by volume at 4\u00b0C for 1 hr. Precipitated material was pelleted at 11,000 g for 5 min. Supernatants were discarded and the pellets were washed twice with 60% acetone (ice cold). The pellets were then subjected to two methanol/chloroform extractions, vacuumed dried, and weighed. One set of samples was used for measurement of protein content (bicinchoninic assay, Thermo Scientific, Waltham, MA). After resuspending in water and addition of internal standards (U13C-Tyr and U13C-Phe, 100 pmol each), the other set of samples was subjected to acid hydrolysis (6 M HCl for 24 hr at 110\u00b0C). LC-MS/MS-MRM was performed on the hydrolysate as described above.\n",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "cc7fafa9-d284-4442-82ee-78acee217e33",
+      "submission_id": "90979c46-7f40-45b1-86e6-49eb36b23d44",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gisela Storz, National Institute of Child Health and Human Development , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02501.016](https://doi.org/10.7554/eLife.02501.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled 'Oxidation of cellular amino acid pools leads to cytotoxic mistranslation of the genetic code' for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and three reviewers.\n\nThe Reviewing editor has assembled the following comments to help you prepare a revised submission. All reviewers are enthusiastic about your study. One reviewer states: \u201cOverall, the experiments were well described and the results clear. Most importantly, the conceptual advance is significant and likely to be of interest to the broad readers of eLife.\u201d However, the reviewers feel two points need to be addressed before publication.\n\n1) All reviewers felt the most interesting results in the manuscript focused on the E. coli story and found the yeast story distracting. Thus the authors should simply refer to the differences with yeast throughout, vaguely, and instead focus instead on the very tidy E. coli story so that the reader can take away this simple and elegant message.\n\n2) The study would be strengthened if the authors could show that some m-Tyr indeed is incorporated to during oxidative stress since this is the main argument of the study. The reviewers understand that the low m-Tyr levels may present a challenge, but hope the experiment is do-able since data on m-Tyr incorporation into the proteome when cells are grown in m-Tyr are already provided.\n",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3c1e2e46-5c1c-45a2-819e-ab70ee66799a",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C1",
+      "claim": "Aminoacyl-tRNA synthetases use a variety of mechanisms to ensure fidelity of the genetic code and ultimately select the correct amino acids to be used in protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Aminoacyl-tRNA synthetases use a variety of mechanisms to ensure fidelity of the genetic code and ultimately select the correct amino acids to be used in protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established principle in molecular biology supported by extensive literature on aminoacyl-tRNA synthetases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "16954a2b-a239-46d6-80a3-1374a25b25db",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C2",
+      "claim": "In Escherichia coli, a non-coded amino acid produced through oxidative damage is a significant threat to the accuracy of protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in Escherichia coli, a non-coded amino acid produced through oxidative damage is a significant threat to the accuracy of protein synthesis and must be cleared by phenylalanine-tRNA synthetase in order to prevent cellular toxicity caused by mis-synthesized proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing growth inhibition and m-Tyr accumulation in editing-deficient strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "0c235db1-8dbd-4bc6-a622-30144fa56cbc",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C3",
+      "claim": "m-Tyr must be cleared by phenylalanine-tRNA synthetase in order to prevent cellular toxicity caused by mis-synthesized proteins in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in Escherichia coli, a non-coded amino acid produced through oxidative damage is a significant threat to the accuracy of protein synthesis and must be cleared by phenylalanine-tRNA synthetase in order to prevent cellular toxicity caused by mis-synthesized proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by growth assays showing that editing-deficient strains are sensitive to m-Tyr.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "ec74a31c-6aba-445a-8bd2-8a0f8a5deeb6",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C4",
+      "claim": "The accuracy of translation depends on the precise pairing of mRNA codons with their cognate aminoacyl-tRNAs during ribosomal protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of translation depends on the precise pairing of mRNA codons with their cognate aminoacyl-tRNAs, containing the corresponding anticodons, during ribosomal protein synthesis (Zaher and Green, 2009; Rodnina, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to established literature on translation fidelity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "2262b015-c7a4-4d14-91d6-af87b59ecf37",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C5",
+      "claim": "Cognate amino acids are attached to their respective tRNAs by aminoacyl-tRNA synthetases.",
+      "claim_type": "EXPLICIT",
+      "source": "Cognate amino acids are attached to their respective tRNAs by aminoacyl-tRNA synthetases (aaRSs), and the ability of these enzymes to distinguish between cognate and non-cognate substrates is a major determinant of the fidelity of the genetic code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of molecular biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "5b7fe17c-d7ff-485b-9b18-06d1699ed8bb",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C6",
+      "claim": "The ability of aminoacyl-tRNA synthetases to distinguish between cognate and non-cognate substrates is a major determinant of the fidelity of the genetic code.",
+      "claim_type": "EXPLICIT",
+      "source": "Cognate amino acids are attached to their respective tRNAs by aminoacyl-tRNA synthetases (aaRSs), and the ability of these enzymes to distinguish between cognate and non-cognate substrates is a major determinant of the fidelity of the genetic code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by general knowledge of translation fidelity mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "0ff70dae-8872-4c73-bb32-bc0865713a50",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C7",
+      "claim": "AaRSs discriminate against near- and non-cognate tRNAs at levels compatible with typical translation error rates (\u223c10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "AaRSs discriminate against near- and non-cognate tRNAs at levels compatible with typical translation error rates (\u223c10\u22124) due to the structural complexity and diversity observed between tRNA isoacceptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of translation error rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e5edae55-011f-46ec-892a-560fca0b6246",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C8",
+      "claim": "AaRSs can less successfully discriminate against near-cognate amino acids, which may differ from the cognate substrate by as little as a single methyl or hydroxyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "AaRSs can less successfully discriminate against near-cognate amino acids, which may differ from the cognate substrate by as little as a single methyl or hydroxyl group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known challenge in aminoacyl-tRNA synthetase specificity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "fc5434b6-3efc-4c13-9f5c-38702bd978ec",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C9",
+      "claim": "Phenylalanine tRNA synthetase (PheRS) edits mischarged Tyr-tRNAPhe at a hydrolytic editing site \u223c30 \u00c5 from the synthetic active site.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, phenylalanine tRNA synthetase (PheRS) edits mischarged Tyr-tRNAPhe at a hydrolytic editing site \u223c30 \u00c5 from the synthetic active site (Roy et al., 2004; Kotik-Kogan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "86f2f58e-b947-4af6-8b8e-04fefdf6afdc",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C10",
+      "claim": "Mischarged Tyr-tRNAPhe is readily delivered to the ribosome by EF-Tu where it can efficiently decode Phe codons as Tyr in the growing polypeptide chain, resulting in mistranslation.",
+      "claim_type": "EXPLICIT",
+      "source": "PheRS editing provides a key checkpoint in quality control, as mischarged Tyr-tRNAPhe is readily delivered to the ribosome by EF-Tu where it can efficiently decode Phe codons as Tyr in the growing polypeptide chain, resulting in mistranslation (Ling et al., 2007b, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "13949404-e3bb-454e-88d3-3c5fefe48d26",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C11",
+      "claim": "AaRS editing pathways are not conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their role in accurately translating the genetic code, aaRS editing pathways are not conserved, and their activities have varying effects on cell viability (Bacher et al., 2005; Lee et al., 2006; Bacher and Schimmel, 2007; Bacher et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations showing variability in editing across organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e8d0f711-a6e6-473c-8860-3ca4ef3bc9ec",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C12",
+      "claim": "Mycoplasma mobile tolerates relatively high error rates during translation and lacks PheRS editing function.",
+      "claim_type": "EXPLICIT",
+      "source": "Mycoplasma mobile, for example, tolerates relatively high error rates during translation and lacks PheRS editing function, as do other aaRSs in this organism (Li et al., 2011; Yadavalli and Ibba, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on Mycoplasma mobile.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "ea71c55a-21e8-4136-b0a2-a7a04797b9c4",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C13",
+      "claim": "Saccharomyces cerevisiae cytoplasmic PheRS has a low Phe/Tyr specificity and is capable of editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Saccharomyces cerevisiae cytoplasmic PheRS (ScctPheRS) has a low Phe/Tyr specificity and is capable of editing, whereas the yeast mitochondrial enzyme (ScmtPheRS) completely lacks an editing domain, and instead relies on high Phe/Tyr specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of yeast PheRS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "6352d71b-2333-47f4-a4bb-18714555b492",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C14",
+      "claim": "Yeast mitochondrial PheRS completely lacks an editing domain and instead relies on high Phe/Tyr specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Saccharomyces cerevisiae cytoplasmic PheRS (ScctPheRS) has a low Phe/Tyr specificity and is capable of editing, whereas the yeast mitochondrial enzyme (ScmtPheRS) completely lacks an editing domain, and instead relies on high Phe/Tyr specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of yeast mitochondrial PheRS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "7d5eac79-cdc6-4249-add9-2435dadd7de5",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C15",
+      "claim": "Escherichia coli PheRS displays a high degree of Phe/Tyr specificity and robust editing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Escherichia coli, in contrast, has retained both features and displays a high degree of Phe/Tyr specificity and robust editing activity (Reynolds et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b572e8fa-92c6-4780-8d22-ba02957ef37e",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C16",
+      "claim": "Editing by PheRS and other aaRSs is not essential for viability in yeast or E. coli under standard laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, given that editing by PheRS and other aaRSs is not essential for viability in yeast or E. coli, it is clear that the true roles of these quality control pathways remain to be fully elucidated (Reynolds et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and experimental observations in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "17deed34-86e3-4ba0-b38f-7cda174b9853",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C17",
+      "claim": "AaRSs are able to edit tRNAs misacylated with a range of amino acids not found in the genetic code such as homocysteine, norleucine, \u03b1-aminobutyrate and meta-tyrosine (m-Tyr).",
+      "claim_type": "EXPLICIT",
+      "source": "AaRSs are able to edit tRNAs misacylated with a range of amino acids not found in the genetic code such as homocysteine, norleucine, \u03b1-aminobutyrate and meta-tyrosine (m-Tyr), although the physiological relevance of these activities is unknown (reviewed in Yadavalli and Ibba, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a review citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "d9ed9871-b251-47eb-8e08-120d4b3abce7",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C18",
+      "claim": "Both E. coli and Thermus thermophilus PheRS have been shown to edit m-Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "Both E. coli and Thermus thermophilus PheRS have been shown to edit m-Tyr, a metabolic byproduct formed by oxidation of phenylalanine following metal-catalyzed formation of hydroxyl radical species (Huggins et al., 1993; Stadtman and Levine, 2003; Klipcan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "5e4480a9-0496-41d9-b9ad-df8ec50caf1e",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C19",
+      "claim": "m-Tyr is a metabolic byproduct formed by oxidation of phenylalanine following metal-catalyzed formation of hydroxyl radical species.",
+      "claim_type": "EXPLICIT",
+      "source": "Both E. coli and Thermus thermophilus PheRS have been shown to edit m-Tyr, a metabolic byproduct formed by oxidation of phenylalanine following metal-catalyzed formation of hydroxyl radical species (Huggins et al., 1993; Stadtman and Levine, 2003; Klipcan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on oxidative damage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "2274414e-1df2-4498-a2ea-fd65011c8f02",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C20",
+      "claim": "Certain species of fescue grasses (Festuca spp.) produce m-Tyr as a natural defense agent that appears in the proteomes of neighboring plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain species of fescue grasses (Festuca spp.) produce m-Tyr as a natural defense agent that appears in the proteomes of neighboring plants, and m-Tyr accumulation in the proteome of Chinese hamster ovary (CHO) cells has been proposed to have a cytotoxic effect on translation (Gurer-Orhan et al., 2006; Bertin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on fescue grasses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "15eeea81-cfe0-4e19-b24c-7d6818c924b4",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C21",
+      "claim": "m-Tyr accumulation in the proteome of Chinese hamster ovary (CHO) cells has been proposed to have a cytotoxic effect on translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain species of fescue grasses (Festuca spp.) produce m-Tyr as a natural defense agent that appears in the proteomes of neighboring plants, and m-Tyr accumulation in the proteome of Chinese hamster ovary (CHO) cells has been proposed to have a cytotoxic effect on translation (Gurer-Orhan et al., 2006; Bertin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on CHO cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "5779356c-8474-4bfd-a984-7670c665b62a",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C22",
+      "claim": "Bacterial PheRS is able to efficiently edit m-Tyr-tRNAPhe.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that bacterial PheRS is able to efficiently edit m-Tyr-tRNAPhe, and that this editing activity is essential for cellular growth and survival under both cytotoxic amino acid and oxidative stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vitro editing assays shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "2ec30661-ee58-4080-ab6c-aca780c5d0be",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C23",
+      "claim": "PheRS editing activity is essential for cellular growth and survival under both cytotoxic amino acid and oxidative stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that bacterial PheRS is able to efficiently edit m-Tyr-tRNAPhe, and that this editing activity is essential for cellular growth and survival under both cytotoxic amino acid and oxidative stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by growth assays under m-Tyr and oxidative stress conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "11ff9578-45bc-4c59-9708-81f653b73a3a",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C24",
+      "claim": "PheRS editing in yeast provides only limited protection from m-Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we show that PheRS editing in yeast provides only limited protection from m-Tyr, but instead is essential for protecting the cell from para-Tyr-tRNAPhe accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by yeast growth assays showing sensitivity to m-Tyr even in wild-type strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "20e60f77-dac3-4c3d-9e48-f8abae440789",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C25",
+      "claim": "PheRS editing in yeast is essential for protecting the cell from para-Tyr-tRNAPhe accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we show that PheRS editing in yeast provides only limited protection from m-Tyr, but instead is essential for protecting the cell from para-Tyr-tRNAPhe accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by yeast growth assays showing editing-deficient strains are sensitive to p-Tyr.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "864b7b87-f2ad-44d9-be2d-9e51c9aeebd0",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C26",
+      "claim": "The G318W mutation in E. coli PheRS reduces posttransfer editing activity by more than 70-fold in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes to residue \u03b2G318 hinder access to the editing site and thereby reduce EcPheRS posttransfer editing activity by more than 70-fold in vitro (Roy et al., 2004; Ling et al., 2007a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b44b59bf-53ac-4bca-b870-d997cd59666f",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C27",
+      "claim": "Only the E. coli strain encoding wild type PheRS retained post-transfer editing activity against p-Tyr-tRNAPhe.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the strain encoding wild type PheRS retained post\u2013transfer editing activity against p-Tyr-tRNAPhe (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the editing assay shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "7935a3fb-868b-4b40-88dc-3fa4626df1b9",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C28",
+      "claim": "E. coli strains with wild type pheT and pheT(G318W) alleles showed identical levels of aminoacylation activity and growth at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Both strains showed identical levels of aminoacylation activity and growth at 37\u00b0C, indicating that the proofreading pathway is not required for growth under normal laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations of growth and enzyme activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "c02c1d98-3b14-4b5e-b76d-52d82ef8b7ff",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C29",
+      "claim": "The proofreading pathway is not required for E. coli growth under normal laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Both strains showed identical levels of aminoacylation activity and growth at 37\u00b0C, indicating that the proofreading pathway is not required for growth under normal laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that editing-deficient strains grow normally under standard conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e5d12cee-49a0-4abd-82ec-1f0d6fce006a",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C30",
+      "claim": "The D243A mutation in S. cerevisiae FRS1 eliminated p-Tyr-tRNAPhe editing in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction in FRS1 of a mutation encoding the amino acid replacement D243A eliminated p-Tyr-tRNAPhe editing in vivo (Figure 1B; Reynolds et al., 2010) and had no effect on growth compared to wild type under standard conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the editing assay shown in Figure 1B and cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e429e55e-6945-4017-b610-5e44e2149934",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C31",
+      "claim": "The D243A mutation in S. cerevisiae FRS1 had no effect on growth compared to wild type under standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction in FRS1 of a mutation encoding the amino acid replacement D243A eliminated p-Tyr-tRNAPhe editing in vivo (Figure 1B; Reynolds et al., 2010) and had no effect on growth compared to wild type under standard conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental growth observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "dd11c561-323b-4774-b57c-829056a8dbad",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C32",
+      "claim": "Phenotypic microarrays revealed no significant changes in growth of E. coli pheT(G318W) compared to wild type under 1920 growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic microarrays (Biolog) were used to compare the growth of E. coli pheT(G318W) to wild type under 1920 growth conditions, and no significant changes were observed in the absence of PheRS editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental phenotypic microarray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "2125bccb-6dbb-40de-90d9-45f4c479b0f8",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C33",
+      "claim": "Elevated concentrations of p-Tyr (>3 mM) did not affect the growth of E. coli pheT(G318W) compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated concentrations of p-Tyr (>3 mM) did not affect the growth of E. coli pheT(G318W) compared to wild type (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the growth assay shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "273cb4ef-e900-45cf-a36c-9e088828a079",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C34",
+      "claim": "E. coli pheT(G318W) contained similar intracellular concentrations of p-Tyr and Phe as the wild type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of amino acid pools extracted from representative cells showed E. coli pheT(G318W) contained similar intracellular concentrations of p-Tyr and Phe as the wild type strain, indicating the pheT mutation has no effect on amino acid uptake (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by amino acid pool measurements shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "032b4f5d-6e10-4cca-ac84-9bed1d716817",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C35",
+      "claim": "The pheT mutation has no effect on amino acid uptake in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of amino acid pools extracted from representative cells showed E. coli pheT(G318W) contained similar intracellular concentrations of p-Tyr and Phe as the wild type strain, indicating the pheT mutation has no effect on amino acid uptake (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that intracellular amino acid concentrations are similar between strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e9074077-334e-4426-9b67-2b5249f09beb",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C36",
+      "claim": "Growth of E. coli strain pheT(G318W) was inhibited in the presence of elevated intracellular concentrations of m-Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to wild type, growth of E. coli strain pheT(G318W) was inhibited in the presence of elevated intracellular concentrations of m-Tyr suggesting PheRS proofreading activity is needed to clear mischarged m-Tyr-tRNAPhe in vivo (Table 1; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth assays shown in Figure 2B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "682e9016-78e2-4e27-874d-d1c4066f27c0",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C37",
+      "claim": "PheRS proofreading activity is needed to clear mischarged m-Tyr-tRNAPhe in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to wild type, growth of E. coli strain pheT(G318W) was inhibited in the presence of elevated intracellular concentrations of m-Tyr suggesting PheRS proofreading activity is needed to clear mischarged m-Tyr-tRNAPhe in vivo (Table 1; Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the growth inhibition of editing-deficient strains in the presence of m-Tyr.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "085a0b96-7951-467c-8767-f63eeec952c2",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C38",
+      "claim": "Post-transfer editing of m-Tyr-tRNAPhe by PheRS is ablated by the G318W mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Editing assays performed in vitro confirmed that, as with p-Tyr, post\u2013transfer editing of m-Tyr-tRNAPhe by PheRS is ablated by the G318W mutation (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro editing assays shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "67c8627a-891f-49c6-be8b-79579442bd99",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C39",
+      "claim": "The inhibitory effect of m-Tyr on growth in the absence of editing was also observed in E. coli mutants derived from strain MG1655.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory effect of m-Tyr on growth in the absence of editing was also observed in E. coli mutants derived from strain MG1655 that, unlike the NP37 background, encodes an intact stringent response (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth assays in the MG1655 background shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "14422608-d1f3-457f-8d6d-17550be6c279",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C40",
+      "claim": "Neither o-Tyr nor L-DOPA inhibited growth of wild type or the pheT(G318W) mutant E. coli strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth of E. coli pheT(G318W) was also evaluated in the presence of ortho-tyrosine (o-Tyr) and 3,4-dihydroxy-L-phenylalanine (L-DOPA), oxidation products of Phe and p-Tyr, respectively (Maskos et al., 1992). Neither of these non-proteinogenic amino acids inhibited growth of wild type or the pheT(G318W) mutant E. coli strain (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth assays shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "f9f2b61a-b319-4982-a14d-44267ff2f50a",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C41",
+      "claim": "The editing deficient frs1-1 (D243A) yeast strain showed a pronounced defect in p-Tyr resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "While the editing deficient frs1-1 (D243A) yeast strain displayed no difference to wild type under heat shock or ethanol stress, it showed a pronounced defect in p-Tyr resistance. At elevated p-Tyr concentrations, growth of the frs1-1 (D243A) strain was restricted compared to wild type (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "4501abd3-b92c-484c-8636-2657e6e5d909",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C42",
+      "claim": "The growth of both wild type and frs1-1 (D243A) yeast strains was comparably inhibited by addition of m-Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "while the growth of both strains was more comparably inhibited by addition of m-Tyr (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth assays shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "5eb82f2f-5aa1-402b-a201-5b0f2ead0b23",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C43",
+      "claim": "Wild type EcPheRS did not stably charge tRNAPhe with either m- or p-Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type EcPheRS did not stably charge tRNAPhe with either m- or p-Tyr, while G318W utilized both isomers for aminoacylation, with m-tyr being a more efficient substrate (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by aminoacylation assays shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "f8a61252-263f-4b8c-8cb2-8f7053571ae4",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C44",
+      "claim": "G318W EcPheRS utilized both m-Tyr and p-Tyr for aminoacylation, with m-Tyr being a more efficient substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type EcPheRS did not stably charge tRNAPhe with either m- or p-Tyr, while G318W utilized both isomers for aminoacylation, with m-tyr being a more efficient substrate (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by aminoacylation assays shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "5c495f59-6539-4bf4-a9b6-8d186548b61b",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C45",
+      "claim": "G318W PheRS was unable to utilize o-Tyr or L-DOPA for tRNAPhe aminoacylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Under similar conditions, G318W PheRS was unable to utilize o-Tyr or L-DOPA for tRNAPhe aminoacylation, consistent with the absence of any growth phenotype of the pheT(G318W) strain in the presence of these tyrosine analogs (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by aminoacylation assays shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b08533bf-1239-4d18-8cb9-49fe0054f8a9",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C46",
+      "claim": "The catalytic efficiency (kcat/KM) for m-Tyr activation by EcPheRS is 35-fold less than for Phe.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of amino acid substrate specificity showed the catalytic efficiency (kcat/KM) for m-Tyr activation by EcPheRS to be 35-fold less than for Phe, in contrast to p-Tyr which is activated almost 3000-fold less efficiently than the cognate substrate (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by kinetic data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "14e01fa3-f77d-4dfe-bc7d-39e4803b15f2",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C47",
+      "claim": "p-Tyr is activated almost 3000-fold less efficiently than Phe by EcPheRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of amino acid substrate specificity showed the catalytic efficiency (kcat/KM) for m-Tyr activation by EcPheRS to be 35-fold less than for Phe, in contrast to p-Tyr which is activated almost 3000-fold less efficiently than the cognate substrate (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by kinetic data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "66fb2990-589c-4a39-a709-bcc1e274565f",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C48",
+      "claim": "Wild type ScctPheRS efficiently utilizes m-Tyr for activation and aminoacylation of tRNAPhe.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the E. coli enzyme, wild type ScctPheRS efficiently utilizes m-Tyr for activation and aminoacylation of tRNAPhe. Charging of tRNAPhe with m-Tyr was seen at amino acid substrate concentrations where p-Tyr-tRNAPhe synthesis was not detected (Figure 4C; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by aminoacylation assays shown in Figure 4C and kinetic data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b2bdedd1-f561-4f3b-b106-d069abfd3df3",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C49",
+      "claim": "The kcat/KM of m-Tyr activation by ScctPheRS is 71-fold lower than that of Phe.",
+      "claim_type": "EXPLICIT",
+      "source": "The kcat/KM of m-Tyr activation by ScctPheRS is 71-fold lower than that of Phe, demonstrating relatively poor discrimination between the two amino acids (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by kinetic data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "1ba45419-a390-4991-ae84-374809a32e92",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C50",
+      "claim": "p-Tyr-tRNAPhe is a better substrate for post-transfer editing by ScctPheRS relative to m-Tyr-tRNAPhe.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the E. coli enzyme, p-Tyr-tRNAPhe is a better substrate for post\u2013transfer editing by ScctPheRS relative to m-Tyr-tRNAPhe (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by editing assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "9e2ae360-8e8a-4834-84af-8f6b1d6e17c4",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C51",
+      "claim": "The mitochondrial variant of yeast PheRS (ScmtPheRS) synthesizes m-Tyr-tRNAPhe more efficiently than p-Tyr-tRNAPhe at similar tyrosine isomer concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitochondrial variant of yeast PheRS (ScmtPheRS), which naturally lacks Tyr-tRNAPhe post\u2013transfer editing activity (Roy et al., 2005), was also found to synthesize m-Tyr-tRNAPhe more efficiently than p-Tyr-tRNAPhe at similar tyrosine isomer concentrations (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by aminoacylation assays shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "405697e4-5866-4815-9def-88e503f6b21a",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C52",
+      "claim": "Similar levels of fMet-m-Tyr and fMet-Phe were synthesized in vitro using m-Tyr-tRNAPhe:EF-Tu:GTP as a substrate for decoding of a ribosomal A site Phe (UUC) codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Dipeptide synthesis was monitored in vitro using m-Tyr-tRNAPhe:EF-Tu:GTP as a substrate for decoding of a ribosomal A site Phe (UUC) codon. Under these conditions similar levels of fMet-m-Tyr and fMet-Phe were synthesized, indicating a lack of discrimination against the non-proteinogenic amino acid at the A-site of E. coli ribosomes (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dipeptide synthesis assays shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e985a8f4-2e18-416f-b9f3-37a4133dd6ab",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C53",
+      "claim": "There is a lack of discrimination against m-Tyr at the A-site of E. coli ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions similar levels of fMet-m-Tyr and fMet-Phe were synthesized, indicating a lack of discrimination against the non-proteinogenic amino acid at the A-site of E. coli ribosomes (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that similar levels of dipeptides are formed with m-Tyr and Phe.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "2d0187f1-9195-461e-838e-3253ba698a2c",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C54",
+      "claim": "Comparison of proteome total amino acid levels between wild type and pheT(G318W) strains indicated a level of misincorporation of 1% m-Tyr at Phe codons due to the absence of PheRS editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of proteome total amino acid levels between wild type and pheT(G318W) strains indicated a level of misincorporation of 1% m-Tyr at Phe codons due to the absence of PheRS editing (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC-MS/MS-MRM analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "ec7c39c9-0fab-4632-a572-08d531899870",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C55",
+      "claim": "In wild type E. coli proteins the fraction of m-Tyr compared to Phe is 0.015, increasing to 0.025 in samples isolated from the pheT(G318W) strain grown in the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type proteins the fraction of m-Tyr compared to Phe is 0.015, increasing to 0.025 in samples isolated from the pheT(G318W) strain grown in the same conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS-MRM quantification of amino acids in protein hydrolysates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "c9c63793-3bc0-42eb-8437-e6696d5b3537",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C56",
+      "claim": "Post-transfer editing by PheRS provides protection of the E. coli proteome from misincorporation of m-Tyr at Phe codons.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates post\u2013transfer editing by PheRS provides protection of the E. coli proteome from misincorporation of m-Tyr at Phe codons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the increased m-Tyr/Phe ratio in editing-deficient strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "76b3d509-3cee-41cc-b8cd-9c73d2270125",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C57",
+      "claim": "Quantification of p-Tyr relative to Phe in protein samples does not change between the wild type and pheT(G318W) strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of p-Tyr relative to Phe in the protein samples isolated from cultures grown in the presence of 0.5 mM p-Tyr does not change between the wild type and pheT(G318W) strains indicating this protein amino acid is not significantly misincorporated at Phe codons, even in the absence of PheRS editing (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC-MS/MS-MRM analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "ba416b00-8521-4d23-aa37-e88b73cf9fee",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C58",
+      "claim": "p-Tyr is not significantly misincorporated at Phe codons, even in the absence of PheRS editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of p-Tyr relative to Phe in the protein samples isolated from cultures grown in the presence of 0.5 mM p-Tyr does not change between the wild type and pheT(G318W) strains indicating this protein amino acid is not significantly misincorporated at Phe codons, even in the absence of PheRS editing (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of change in p-Tyr/Phe ratio between strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "be56c636-eb6f-4e90-b4d5-4171107eb89c",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C59",
+      "claim": "Aminoacylation of tRNATyr with m-Tyr by E. coli TyrRS was detected in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Aminoacylation of tRNATyr with m-Tyr by E. coli TyrRS was detected in vitro, suggesting this synthetase may provide a route of m-Tyr incorporation even when PheRS editing is active (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by aminoacylation assays shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "d5bd848e-929b-4567-813b-af0ac5d56fe5",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C60",
+      "claim": "E. coli TyrRS may provide a route of m-Tyr incorporation even when PheRS editing is active.",
+      "claim_type": "EXPLICIT",
+      "source": "Aminoacylation of tRNATyr with m-Tyr by E. coli TyrRS was detected in vitro, suggesting this synthetase may provide a route of m-Tyr incorporation even when PheRS editing is active (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation that TyrRS can charge tRNATyr with m-Tyr.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "a9c38287-6bd7-4b40-aa13-f16e6fe4e081",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C61",
+      "claim": "Reactive oxygen species (ROS) generated under oxidative stress via the Fenton reaction are capable of catalyzing the conversion of Phe to m-Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactive oxygen species (ROS) generated under oxidative stress via the Fenton reaction are capable of catalyzing the conversion of Phe to m-Tyr, which could potentially threaten the fidelity of protein synthesis in the absence of editing (Maskos et al., 1992; Stadtman and Levine, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on oxidative damage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "f116fe1b-e82d-4026-bdb4-c297aaf55fca",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C62",
+      "claim": "m-Tyr accumulated in the intracellular amino acid pools of ROS-treated E. coli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "LC-MS/MS-MRM analyses showed that m-Tyr accumulated in the intracellular amino acid pools of ROS-treated cells (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC-MS/MS-MRM analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "8e3e853a-399f-484f-8e94-df766a884138",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C63",
+      "claim": "Significant de novo o-Tyr accumulation was observed following ROS treatment of E. coli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to m-Tyr, significant de novo o-Tyr accumulation was also observed following ROS treatment, although this is not expected to pose a threat to translation fidelity as it is not a substrate for PheRS (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC-MS/MS-MRM analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "207e4128-d939-43d1-8d09-a00d0124fa5d",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C64",
+      "claim": "o-Tyr is not expected to pose a threat to translation fidelity as it is not a substrate for PheRS.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to m-Tyr, significant de novo o-Tyr accumulation was also observed following ROS treatment, although this is not expected to pose a threat to translation fidelity as it is not a substrate for PheRS (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that o-Tyr does not inhibit growth and is not used by PheRS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "951f285c-65dd-421c-9a53-0e67ffc56767",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C65",
+      "claim": "E. coli lacking PheRS editing activity showed a reduction in growth relative to wild type when grown in media where ROS exposure increased.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli lacking PheRS editing activity showed a reduction in growth relative to wild type when grown in media where ROS exposure increased, consistent with the accumulation of free m-Tyr and its subsequent utilization in protein synthesis (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth assays under oxidative stress shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "7f7a1190-d8ab-448d-83a7-7265b342f894",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C66",
+      "claim": "PheRS editing activity affords E. coli protection against the co-translational insertion of non-proteinogenic amino acids that accumulate during oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicate that PheRS editing activity affords E. coli protection against the co-translational insertion of non-proteinogenic amino acids that accumulate during oxidative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of m-Tyr accumulation under oxidative stress and growth defects in editing-deficient strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "fca93f4c-79cd-4a53-96b1-4284aea2b8ef",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C67",
+      "claim": "The fidelity of aminoacyl-tRNA synthetases needs to be at or above 1 in 3,000, which is cited as an approximate overall level of error for protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been proposed that the fidelity of aminoacyl-tRNA synthetases needs to be at or above 1 in 3,000, which is cited as an approximate overall level of error for protein synthesis (Loftfield and Vanderjagt, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a classic study on translation fidelity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b72ca222-295c-4587-90e2-9fca6660caa0",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C68",
+      "claim": "Protection against both p-Tyr and m-Tyr incorporation at Phe codons appears critical in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Protection against both p-Tyr and m-Tyr incorporation at Phe codons appears critical in E. coli as the PheRS enzyme maintains high active-site selectivity against p-Tyr as well as post\u2013transfer editing activity against m-Tyr-tRNAPhe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of high specificity and editing activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "fe59c4ac-ad2b-4bc6-942c-e479c7649b04",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C69",
+      "claim": "E. coli PheRS requires editing activity to protect the proteome from toxic effects of the non-proteinogenic amino acid m-Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli PheRS requires this editing activity to protect the proteome from toxic effects of the non-proteinogenic amino acid m-Tyr, which is poorly discriminated against by the active site of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the growth defects and m-Tyr incorporation in editing-deficient strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "f7ce0a41-c396-42e2-8912-5199b72810b0",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C70",
+      "claim": "m-Tyr is poorly discriminated against by the active site of E. coli PheRS.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli PheRS requires this editing activity to protect the proteome from toxic effects of the non-proteinogenic amino acid m-Tyr, which is poorly discriminated against by the active site of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by kinetic data showing relatively efficient activation of m-Tyr.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "4888fc83-f35c-45b9-b186-e2e62f6caf46",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C71",
+      "claim": "Ala294 is primarily responsible for specificity against binding of para-substituted Phe analogs in E. coli PheRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Ala294 is primarily responsible for specificity against binding of para-substituted Phe analogs, while Gln174 and Glu210 help stabilize the hydroxyl of non-cognate m-Tyr at position 3 of the ring (E. coli numbering) (Klipcan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b8b00041-dbae-414d-94e3-6e2b21c63f4b",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C72",
+      "claim": "Gln174 and Glu210 help stabilize the hydroxyl of non-cognate m-Tyr at position 3 of the ring in E. coli PheRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Ala294 is primarily responsible for specificity against binding of para-substituted Phe analogs, while Gln174 and Glu210 help stabilize the hydroxyl of non-cognate m-Tyr at position 3 of the ring (E. coli numbering) (Klipcan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "595ae586-a64b-49c4-81a4-28f05779cd28",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C73",
+      "claim": "Glu210 is needed to hydrogen bond with the Phe amino group, ensuring correct orientation of the substrate for activation in E. coli PheRS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the cognate Phe substrate, Glu210 is also needed to hydrogen bond with the Phe amino group, ensuring correct orientation of the substrate for activation (Safro et al., 2005; Mermershtain et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "7a136b66-7119-48a2-905e-3840a8ace3df",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C74",
+      "claim": "It is unlikely E. coli PheRS can select against recognition of m-Tyr while still maintaining efficient activity for the cognate amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely this enzyme selects against recognition of m-Tyr while still maintaining efficient activity for the cognate amino acid, therefore the maintenance of post\u2013transfer editing activity is critical for fidelity in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural and kinetic considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "85ab27e3-89cb-4f41-868b-6ea16412b450",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C75",
+      "claim": "The maintenance of post-transfer editing activity is critical for fidelity in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely this enzyme selects against recognition of m-Tyr while still maintaining efficient activity for the cognate amino acid, therefore the maintenance of post\u2013transfer editing activity is critical for fidelity in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability to discriminate against m-Tyr at the active site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "952d671d-1076-47e0-96c9-7bb5502dd044",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C76",
+      "claim": "In eukaryotes, cytoplasmic PheRS editing is needed to protect the proteome from p-Tyr misincorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, cytoplasmic PheRS editing is needed to protect the proteome from p-Tyr misincorporation. This finding concurs with the low Phe/p-Tyr specificity of the yeast cytoplasmic enzyme (Reynolds et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the p-Tyr sensitivity of editing-deficient yeast strains.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "6a9aa717-1e70-487d-8bae-de7530354cca",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C77",
+      "claim": "The yeast strain encoding wild type ctPheRS is sensitive to high concentrations of m-Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear if protection from m-Tyr incorporation is achieved through editing as the yeast strain encoding wild type ctPheRS is sensitive to high concentrations of m-Tyr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by growth assays showing m-Tyr sensitivity in wild-type yeast.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "66dfb704-ef63-4313-b799-7d8140e20382",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C78",
+      "claim": "Naturally occurring non-proteinogenic amino acids occur widely in nature and are well-characterized by-products and/or intermediates of biosynthetic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally occurring non-proteinogenic amino acids occur widely in nature and are well-characterized by-products and/or intermediates of biosynthetic pathways (Richmond, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review on non-proteinogenic amino acids.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "a61c6128-6c18-4842-b90c-9bc1870662c9",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C79",
+      "claim": "The non-proteinogenic amino acid m-Tyr has been detected in several eukaryotic proteomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-proteinogenic amino acid m-Tyr has been detected in several eukaryotic proteomes and is one of the products of canonical aromatic amino acid oxidation (Wells-Knecht et al., 1993; Pennathur et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies detecting m-Tyr in proteomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "d65c3d2e-2188-490d-a31a-f208b8fd694e",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C80",
+      "claim": "m-Tyr is one of the products of canonical aromatic amino acid oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-proteinogenic amino acid m-Tyr has been detected in several eukaryotic proteomes and is one of the products of canonical aromatic amino acid oxidation (Wells-Knecht et al., 1993; Pennathur et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on oxidative damage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "bcf7d93a-8a38-4aa8-8b16-ea9c5569f9d2",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C81",
+      "claim": "The presence of hydroxylated forms of tyrosine in proteomes has previously been attributed to post-translational damage to proteins by hydroxyl radical species.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of hydroxylated forms of tyrosine in proteomes has previously been attributed to post-translational damage to proteins by hydroxyl radical species, and is often used as a marker for tissue damage due to the oxidative conditions of aging and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field of oxidative stress.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e4f47189-fbe2-421b-91e3-012f7dff5579",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C82",
+      "claim": "m-Tyr and other Tyr analogs are substrates for translation in some organisms and could potentially be incorporated directly during protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that m-Tyr and other Tyr analogs, for example L-DOPA, are substrates for translation in some organisms and could potentially be incorporated directly during protein synthesis (Rodgers et al., 2002; Ozawa et al., 2005; Gurer-Orhan et al., 2006; Klipcan et al., 2009; Moor et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on non-proteinogenic amino acid incorporation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "8c0ba722-19f4-458d-a61c-5532f0be8586",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C83",
+      "claim": "Incorporation of m-Tyr into the proteome of E. coli at Phe codons is toxic to the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of m-Tyr into the proteome of E. coli at Phe codons is toxic to the cell, and in the absence of PheRS quality control this non-proteinogenic amino acid serves as an efficient substrate for translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by growth inhibition and m-Tyr incorporation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "f7183030-cce7-4cc4-95bd-f5108c0ec859",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C84",
+      "claim": "In the absence of PheRS quality control, m-Tyr serves as an efficient substrate for translation in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of m-Tyr into the proteome of E. coli at Phe codons is toxic to the cell, and in the absence of PheRS quality control this non-proteinogenic amino acid serves as an efficient substrate for translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by aminoacylation and dipeptide synthesis assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "4dfc0aa7-c12b-4fef-849f-1535db43255c",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C85",
+      "claim": "\u03b1-aminobutyrate in the absence of ValRS editing is toxic at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Other non-proteinogenic amino acids have also been shown to be potential threats to translation, such as \u03b1-aminobutyrate, which in the absence of ValRS editing is toxic at high concentrations, although the physiological conditions under which this non-protein amino acid might naturally accumulate to significant levels are unclear (Nangle et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on ValRS editing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "008ed450-ae07-436d-a04b-bfb8a29efa94",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C86",
+      "claim": "The presence of m-Tyr in the proteome of wild type E. coli suggests misincorporation can also occur at Tyr codons but without cytotoxic sequelae.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the presence of m-Tyr in the proteome of wild type E. coli suggests misincorporation can also occur at Tyr codons but without cytotoxic sequelae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the detection of m-Tyr in wild-type proteomes and the lack of growth defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b014b415-c6d9-4dcd-95bf-095bb7127cfd",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C87",
+      "claim": "The cellular effects of non-proteinogenic amino acid incorporation are codon-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the cellular effects of non-proteinogenic amino acid incorporation are codon-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential toxicity of m-Tyr at Phe vs Tyr codons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "6f4ad933-2bb1-4d53-a266-4a84e6b0c877",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C88",
+      "claim": "Misincorporation of m-Tyr at Phe codons in the absence of PheRS quality control occurred at a frequency of 1% and had a significant impact on cellular viability and restricted growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, misincorporation of m-Tyr at Phe codons in the absence of PheRS quality control occurred at a frequency of 1% and had a significant impact on cellular viability and restricted growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by LC-MS/MS-MRM quantification and growth assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "5c06728a-b213-4f03-8945-c8f90e56e46e",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C89",
+      "claim": "Misincorporation of canonical amino acids has been shown to be tolerated at rates of up to 10% without inhibiting growth.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with the effects of misincorporation of canonical amino acids, which have been shown to be tolerated at rates of up to 10% without inhibiting growth (Ruan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on mistranslation tolerance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "aa291e05-6a6f-4ed4-b76a-d0e78971a5e4",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C90",
+      "claim": "The misincorporation of non-proteinogenic amino acids presents a substantial challenge for protein synthesis quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with earlier studies, our present findings now show that the misincorporation of non-proteinogenic amino acids presents a substantial challenge for protein synthesis quality control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of toxicity at low misincorporation rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b0e3b06d-4e2e-4cd1-afe2-0f2ec3747662",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C91",
+      "claim": "Many 'dispensable' editing functions may actually be essential for growth under conditions that lead to the accumulation of potentially toxic levels of non-proteinogenic amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn suggests that many 'dispensable' editing functions, both in aaRSs and trans editing factors, may actually be essential for growth under conditions that lead to the accumulation of potentially toxic levels of non-proteinogenic amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings that editing is essential under specific stress conditions.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b12d495a-4ac5-453a-8174-27b3ae86f4fd",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C92",
+      "claim": "Oxidation of amino acids by reactive species results in limited alteration of amino acid structure, such as the addition of a hydroxyl group, creating potential in vivo substrates for tRNA misacylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxidation of amino acids by reactive species such as hydroxyl radical and superoxide anions results in limited alteration of amino acid structure, such as the addition of a hydroxyl group, creating potential in vivo substrates for tRNA misacylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge of oxidative damage to amino acids.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "b16af815-0e62-407e-89da-3e86f1c15c72",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C93",
+      "claim": "L-DOPA and leucine hydroxide have been shown to be incorporated into proteins in mouse cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These damaged amino acids challenge the protein synthesis machinery, as for example in the case of L-DOPA, and leucine hydroxide, which have been shown to be incorporated into proteins in mouse cells (Rodgers et al., 2002; Ozawa et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on non-proteinogenic amino acid incorporation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "c7b5ac64-fcea-456d-881a-f36d0ce9f3b8",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C94",
+      "claim": "The formation of intracellular m-Tyr in E. coli under physiological conditions is possibly a result of cellular exposure to H2O2.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of intracellular m-Tyr in E. coli under physiological conditions is possibly a result of cellular exposure to H2O2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the known chemistry of oxidative damage.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "734839f5-60e3-4d8d-8eb9-75708c207828",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C95",
+      "claim": "Aerobic respiration results in elevated endogenous levels of H2O2.",
+      "claim_type": "EXPLICIT",
+      "source": "Aerobic respiration results in elevated endogenous levels of H2O2, but bacterial cells are also exposed to ROS present in their environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of cellular metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "a5ed1111-b26f-459d-ac82-922a6e1efc99",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C96",
+      "claim": "Uncharged H2O2 is able to penetrate the cell membrane and accumulate inside cells whenever H2O2 is present in the extracellular habitat.",
+      "claim_type": "EXPLICIT",
+      "source": "Uncharged H2O2 is able to penetrate the cell membrane and accumulate inside cells whenever H2O2 is present in the extracellular habitat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of H2O2 permeability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "4828ad98-0eb6-4718-bad6-7dc6875b536f",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C97",
+      "claim": "At physiological pH, H2O2 quickly oxidizes ferrous iron via the Fenton reaction, generating a hydroxyl radical that can react with nearby cellular targets.",
+      "claim_type": "EXPLICIT",
+      "source": "At physiological pH, H2O2 quickly oxidizes ferrous iron via the Fenton reaction, generating a hydroxyl radical that can react with nearby cellular targets (Rush et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on the Fenton reaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "502480af-7638-4f02-8cfe-c9d2fb16ffb4",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C98",
+      "claim": "Accumulation of toxic levels of m-Tyr in the intracellular pools of E. coli occurs under experimental conditions that promote the formation of hydroxyl radicals.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of toxic levels of m-Tyr in the intracellular pools of E. coli occurs under experimental conditions that promote the formation of hydroxyl radicals, however this is not the major byproduct of Phe oxidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by LC-MS/MS-MRM analysis of ROS-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "20cb0a0a-20c1-41eb-a0a0-80db054dcf03",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C99",
+      "claim": "The o-Tyr isomer is the more abundant hydroxylation product under ROS-generating conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The o-Tyr isomer is the more abundant hydroxylation product under ROS-generating conditions used here (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC-MS/MS-MRM analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "6b707b29-cc69-470b-b7d9-e475ad44594f",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C100",
+      "claim": "There is no observed o-Tyr aminoacylation of tRNAPhe by wild type PheRS in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no observed o-Tyr aminoacylation of tRNAPhe by wild type PheRS in vitro, or inhibition of cell growth, in the presence of this hydroxylated Phe substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by aminoacylation and growth assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "1e2e65b5-07fd-4291-88e1-6cb7d0c82335",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C101",
+      "claim": "E. coli PheRS has evolved to effectively discriminate against different Tyr isomers using a combination of substrate specificity (o-Tyr, p-Tyr) and editing activity (m-Tyr, p-Tyr).",
+      "claim_type": "EXPLICIT",
+      "source": "These, and the corresponding biochemical data, indicate how E. coli PheRS has evolved to effectively discriminate against different Tyr isomers using a combination of substrate specificity (o-Tyr, p-Tyr) and editing activity (m-Tyr, p-Tyr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined biochemical and growth data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "969d43b3-909e-4df7-a251-c4f4b2dc5815",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "claim_id": "C102",
+      "claim": "Yeast PheRS has mainly evolved specifically to discriminate for p-Tyr by editing.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, yeast PheRS has mainly evolved specifically to discriminate for p-Tyr by editing, reflecting differences in the factors that drive selection of quality control mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the yeast PheRS specificity and editing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7bd4515a-4361-42a1-a254-156ac7e3c8cf",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PheRS editing is dispensable for E. coli and S. cerevisiae growth under standard laboratory conditions. Both E. coli pheT(G318W) and yeast frs1-1(D243A) editing-deficient strains showed no growth defects compared to wild-type under normal conditions, and phenotypic microarrays revealed no significant changes across 1920 growth conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 demonstrate through multiple experimental approaches (editing assays, growth curves, phenotypic microarrays) that PheRS editing is not required for viability under standard laboratory conditions in both E. coli and yeast. The data consistently show that editing-deficient strains grow normally when not challenged with specific stressors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "7e3d1239-7645-4b5d-b79d-c71ddc6ecdc7",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "E. coli PheRS editing is not required for protection against p-Tyr toxicity. Elevated concentrations of p-Tyr (>3 mM) did not affect growth of editing-deficient strains, intracellular amino acid pools were similar between strains, and p-Tyr was not significantly misincorporated at Phe codons even in the absence of editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35, C57-C58 provide converging evidence from growth assays, amino acid pool measurements, and LC-MS/MS-MRM proteome analysis showing that p-Tyr does not pose a threat to E. coli even without PheRS editing. This is consistent with the high active-site specificity of E. coli PheRS against p-Tyr.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "4cd62a35-848c-45bd-a936-74377aaa54f6",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "E. coli PheRS editing is essential for protection against m-Tyr toxicity. Growth of editing-deficient strains was inhibited in the presence of elevated m-Tyr, and this effect was observed in multiple strain backgrounds (NP37 and MG1655). In vitro editing assays confirmed that the G318W mutation ablates m-Tyr-tRNAPhe editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 demonstrate through growth assays in multiple genetic backgrounds and in vitro editing assays that PheRS editing is specifically required to clear m-Tyr-tRNAPhe. The consistency across different strain backgrounds strengthens the conclusion that this is a general requirement in E. coli.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e8817ecd-c600-4b8b-9072-8736660ff538",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neither o-Tyr nor L-DOPA are substrates for E. coli PheRS or pose threats to translation fidelity. Growth assays showed no inhibition with these amino acids, and aminoacylation assays confirmed that G318W PheRS cannot utilize o-Tyr or L-DOPA for tRNAPhe charging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C45, C100 provide consistent evidence from both growth and biochemical assays that o-Tyr and L-DOPA are not recognized by PheRS and therefore do not threaten translation fidelity. This demonstrates the specificity of PheRS discrimination among different tyrosine isomers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "80549d9b-1798-4cac-b8e8-8a23d8144580",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Yeast PheRS editing provides limited protection from m-Tyr but is essential for protection against p-Tyr. The editing-deficient frs1-1(D243A) strain showed pronounced defects in p-Tyr resistance, while both wild-type and editing-deficient strains were comparably inhibited by m-Tyr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C24-C25 demonstrate through yeast growth assays that the role of PheRS editing differs between organisms. The data clearly show that yeast editing is optimized for p-Tyr rather than m-Tyr protection, contrasting with the E. coli system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "d5ff3885-e60b-40f6-a1c6-ddf818abe8bb",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "E. coli PheRS poorly discriminates against m-Tyr at the active site but effectively discriminates against p-Tyr. Wild-type EcPheRS did not stably charge tRNAPhe with either isomer, but G318W utilized both, with m-Tyr being more efficient. Kinetic analysis showed m-Tyr is activated only 35-fold less efficiently than Phe, while p-Tyr is activated 3000-fold less efficiently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C46-C47, C70 provide comprehensive kinetic and aminoacylation data demonstrating the differential specificity of E. coli PheRS against tyrosine isomers. The quantitative measurements support the conclusion that m-Tyr is poorly discriminated at the active site, necessitating editing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "eec42a58-6d10-4fe1-b9d4-26d1a3ce6222",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Yeast PheRS enzymes efficiently utilize m-Tyr for aminoacylation but have different editing preferences. Wild-type ScctPheRS efficiently charges tRNAPhe with m-Tyr (71-fold lower kcat/KM than Phe) and preferentially edits p-Tyr-tRNAPhe over m-Tyr-tRNAPhe. ScmtPheRS also synthesizes m-Tyr-tRNAPhe more efficiently than p-Tyr-tRNAPhe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 provide kinetic and aminoacylation data showing that yeast PheRS enzymes have evolved different substrate specificities and editing preferences compared to E. coli. The data consistently demonstrate poor discrimination against m-Tyr at the active site and preferential editing of p-Tyr.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "0a0009d0-793e-46a0-a10a-b3f835b5237b",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "E. coli ribosomes do not discriminate against m-Tyr-tRNAPhe during translation. In vitro dipeptide synthesis assays showed similar levels of fMet-m-Tyr and fMet-Phe formation when m-Tyr-tRNAPhe was used to decode Phe codons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 demonstrate through in vitro translation assays that once m-Tyr-tRNAPhe is formed, it is efficiently used by ribosomes. This supports the conclusion that PheRS editing is the critical quality control checkpoint for preventing m-Tyr incorporation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "55d4c238-0017-4e0c-be8f-b6062fe50922",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PheRS editing prevents misincorporation of m-Tyr at Phe codons in E. coli proteomes. LC-MS/MS-MRM analysis showed that the m-Tyr/Phe ratio increased from 0.015 in wild-type to 0.025 in editing-deficient strains, representing approximately 1% misincorporation at Phe codons, which significantly impacted cellular viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C88 provide direct proteomic evidence that PheRS editing protects against m-Tyr misincorporation. The quantitative LC-MS/MS-MRM data demonstrate measurable differences between wild-type and editing-deficient strains, linking biochemical activity to proteome composition and cellular phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "52367250-52b3-4307-8dd9-3ac2e011be94",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "E. coli TyrRS can aminoacylate tRNATyr with m-Tyr, potentially providing an alternative route for m-Tyr incorporation. The presence of m-Tyr in wild-type E. coli proteomes suggests misincorporation can occur at Tyr codons without cytotoxic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60, C86 suggest an alternative pathway for m-Tyr incorporation via TyrRS, but the evidence is limited to in vitro aminoacylation assays (C59) and inference from proteome analysis (C86). The physiological relevance and contribution of this pathway relative to contamination or post-translational modification is unclear. Additional experiments would be needed to definitively establish TyrRS-mediated m-Tyr incorporation at Tyr codons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "2c5ca90f-f133-4e50-99d3-955a20d5482c",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Oxidative stress via ROS treatment leads to accumulation of m-Tyr and o-Tyr in E. coli intracellular amino acid pools. LC-MS/MS-MRM analysis showed that both isomers accumulate under conditions promoting hydroxyl radical formation, with o-Tyr being the more abundant product.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63, C98-C99 provide direct analytical evidence from LC-MS/MS-MRM showing accumulation of hydroxylated phenylalanine products under oxidative stress. The data clearly demonstrate that ROS treatment generates these non-proteinogenic amino acids in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "024bf717-f6b4-48d7-acae-6b726f1a05b9",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PheRS editing is essential for E. coli growth and survival under oxidative stress conditions. Editing-deficient strains showed reduced growth when ROS exposure increased, consistent with m-Tyr accumulation and subsequent utilization in protein synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66, C23 demonstrate through growth assays under oxidative stress that PheRS editing provides protection under physiologically relevant stress conditions. This establishes the biological significance of editing activity beyond artificial amino acid supplementation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "5482df3b-5bda-4ed3-8f2c-e21087892f59",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "E. coli PheRS has evolved to discriminate against different Tyr isomers using a combination of substrate specificity (o-Tyr, p-Tyr) and editing activity (m-Tyr, p-Tyr). o-Tyr does not pose a threat to translation fidelity as it is not a substrate for PheRS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C101 synthesize the biochemical and growth data to show how E. coli PheRS employs complementary mechanisms for quality control. The inference is well-supported by the comprehensive characterization of PheRS specificity and editing against all three tyrosine isomers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "3c894415-261b-49d6-9cef-5764e5b09363",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Yeast cytoplasmic PheRS has evolved specifically to discriminate against p-Tyr by editing, reflecting different evolutionary pressures compared to E. coli. This editing is needed to protect the proteome from p-Tyr misincorporation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102, C76 are supported by the combined yeast growth, kinetic, and editing data showing that yeast PheRS has low Phe/p-Tyr specificity but robust p-Tyr editing. This contrasts with E. coli and demonstrates organism-specific evolution of quality control mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "57bdfc3a-7ee9-438d-9d1a-9e087401f6cf",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Structural features of E. coli PheRS active site explain its inability to discriminate against m-Tyr. Ala294 provides specificity against para-substituted analogs, while Gln174 and Glu210 stabilize m-Tyr. Glu210 is also required for cognate Phe binding, making it unlikely the enzyme can select against m-Tyr while maintaining activity for Phe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 provide structural rationalization for the biochemical observations, supported by citations to structural studies. The logic connecting active site architecture to substrate specificity and the necessity of editing is sound and consistent with the kinetic data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "13d91c32-20c8-4d29-95e5-9bef6e262bdd",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The cellular effects of non-proteinogenic amino acid incorporation are codon-dependent, and non-proteinogenic amino acids present a greater challenge than canonical amino acid misincorporation. m-Tyr misincorporation at 1% at Phe codons caused significant toxicity, while canonical amino acid misincorporation is tolerated at rates up to 10%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C89-C90 synthesize the findings to draw broader conclusions about translation quality control. The comparison to canonical amino acid misincorporation (C89, supported by citation) provides important context for the significance of the 1% m-Tyr misincorporation observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "70043ee2-989f-4740-8df6-6a889e51d1b6",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Many 'dispensable' editing functions may actually be essential for growth under conditions that lead to accumulation of potentially toxic levels of non-proteinogenic amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 represents a well-supported generalization from the specific findings. The demonstration that editing is dispensable under standard conditions but essential under oxidative stress or amino acid challenge directly supports this broader conclusion about the conditional essentiality of editing functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "c9d6f8af-a612-4097-b4ba-68346a1b236f",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims establishing the general principles of aminoacyl-tRNA synthetase function, editing mechanisms, conservation patterns, and the biochemistry of oxidative damage to amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C4-C21, C67, C78-C82, C85, C92-C93, C95-C97) represent established knowledge supported by citations to prior literature and general biochemical principles. They provide necessary context for interpreting the novel findings but are not themselves novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "469b54ec-4a50-498b-b430-e24de2a4f020",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Bacterial PheRS efficiently edits m-Tyr-tRNAPhe, and this editing activity is essential for cellular growth and survival under cytotoxic amino acid and oxidative stress conditions. m-Tyr produced through oxidative damage is a significant threat to translation accuracy in E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C2-C3 represent the central thesis of the manuscript, supported by the comprehensive set of biochemical, growth, and proteomic experiments described in the other claim groups. The evidence consistently demonstrates both the editing activity and its physiological necessity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "4ecbd0fe-dda1-4e80-9df7-464794986e23",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Protection against both p-Tyr and m-Tyr incorporation at Phe codons is critical in E. coli. E. coli PheRS maintains high active-site selectivity against p-Tyr and editing activity against m-Tyr. Incorporation of m-Tyr at Phe codons is toxic, and m-Tyr serves as an efficient substrate for translation in the absence of editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C83-C84 synthesize the biochemical and cellular data to explain the dual quality control strategy of E. coli PheRS. The evidence from kinetics, editing assays, growth experiments, and proteomics consistently supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "8a2b76d2-c729-4ee4-a934-0fd4d534fdb3",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Wild-type yeast encoding functional ctPheRS editing is sensitive to high concentrations of m-Tyr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is directly supported by the growth assay data in Figure 3B showing that wild-type yeast exhibits growth inhibition at high m-Tyr concentrations. This demonstrates that yeast PheRS editing does not provide effective protection against m-Tyr.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "e460eb32-235f-466b-bb51-93478cb9cd55",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The G318W mutation in E. coli PheRS reduces posttransfer editing activity by more than 70-fold in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by citations to previous biochemical studies (Roy et al., 2004; Ling et al., 2007a) that characterized this mutation. This provides the rationale for using this mutation to create editing-deficient strains.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    },
+    {
+      "id": "f96d2667-e191-43d7-87b3-fa85576dbf31",
+      "content_id": "6d4c1652-13b3-4b0e-909b-62665c61d63d",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "ROS generated via the Fenton reaction can catalyze conversion of Phe to m-Tyr, and the formation of intracellular m-Tyr in E. coli under physiological conditions is possibly a result of cellular exposure to H2O2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by citations to studies on oxidative damage. Claim C94 is a reasonable speculation based on known chemistry and the experimental demonstration that ROS treatment generates m-Tyr (C62). Together these establish the physiological relevance of m-Tyr formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:48:41.811112Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b44b59bf-53ac-4bca-b870-d997cd59666f",
+      "result_id": "7bd4515a-4361-42a1-a254-156ac7e3c8cf"
+    },
+    {
+      "claim_id": "7935a3fb-868b-4b40-88dc-3fa4626df1b9",
+      "result_id": "7bd4515a-4361-42a1-a254-156ac7e3c8cf"
+    },
+    {
+      "claim_id": "c02c1d98-3b14-4b5e-b76d-52d82ef8b7ff",
+      "result_id": "7bd4515a-4361-42a1-a254-156ac7e3c8cf"
+    },
+    {
+      "claim_id": "e5d12cee-49a0-4abd-82ec-1f0d6fce006a",
+      "result_id": "7bd4515a-4361-42a1-a254-156ac7e3c8cf"
+    },
+    {
+      "claim_id": "e429e55e-6945-4017-b610-5e44e2149934",
+      "result_id": "7bd4515a-4361-42a1-a254-156ac7e3c8cf"
+    },
+    {
+      "claim_id": "dd11c561-323b-4774-b57c-829056a8dbad",
+      "result_id": "7bd4515a-4361-42a1-a254-156ac7e3c8cf"
+    },
+    {
+      "claim_id": "2125bccb-6dbb-40de-90d9-45f4c479b0f8",
+      "result_id": "7e3d1239-7645-4b5d-b79d-c71ddc6ecdc7"
+    },
+    {
+      "claim_id": "273cb4ef-e900-45cf-a36c-9e088828a079",
+      "result_id": "7e3d1239-7645-4b5d-b79d-c71ddc6ecdc7"
+    },
+    {
+      "claim_id": "032b4f5d-6e10-4cca-ac84-9bed1d716817",
+      "result_id": "7e3d1239-7645-4b5d-b79d-c71ddc6ecdc7"
+    },
+    {
+      "claim_id": "76b3d509-3cee-41cc-b8cd-9c73d2270125",
+      "result_id": "7e3d1239-7645-4b5d-b79d-c71ddc6ecdc7"
+    },
+    {
+      "claim_id": "ba416b00-8521-4d23-aa37-e88b73cf9fee",
+      "result_id": "7e3d1239-7645-4b5d-b79d-c71ddc6ecdc7"
+    },
+    {
+      "claim_id": "e9074077-334e-4426-9b67-2b5249f09beb",
+      "result_id": "4cd62a35-848c-45bd-a936-74377aaa54f6"
+    },
+    {
+      "claim_id": "682e9016-78e2-4e27-874d-d1c4066f27c0",
+      "result_id": "4cd62a35-848c-45bd-a936-74377aaa54f6"
+    },
+    {
+      "claim_id": "085a0b96-7951-467c-8767-f63eeec952c2",
+      "result_id": "4cd62a35-848c-45bd-a936-74377aaa54f6"
+    },
+    {
+      "claim_id": "67c8627a-891f-49c6-be8b-79579442bd99",
+      "result_id": "4cd62a35-848c-45bd-a936-74377aaa54f6"
+    },
+    {
+      "claim_id": "14422608-d1f3-457f-8d6d-17550be6c279",
+      "result_id": "e8817ecd-c600-4b8b-9072-8736660ff538"
+    },
+    {
+      "claim_id": "5c495f59-6539-4bf4-a9b6-8d186548b61b",
+      "result_id": "e8817ecd-c600-4b8b-9072-8736660ff538"
+    },
+    {
+      "claim_id": "6b707b29-cc69-470b-b7d9-e475ad44594f",
+      "result_id": "e8817ecd-c600-4b8b-9072-8736660ff538"
+    },
+    {
+      "claim_id": "f9f2b61a-b319-4982-a14d-44267ff2f50a",
+      "result_id": "80549d9b-1798-4cac-b8e8-8a23d8144580"
+    },
+    {
+      "claim_id": "4501abd3-b92c-484c-8636-2657e6e5d909",
+      "result_id": "80549d9b-1798-4cac-b8e8-8a23d8144580"
+    },
+    {
+      "claim_id": "11ff9578-45bc-4c59-9708-81f653b73a3a",
+      "result_id": "80549d9b-1798-4cac-b8e8-8a23d8144580"
+    },
+    {
+      "claim_id": "20e60f77-dac3-4c3d-9e48-f8abae440789",
+      "result_id": "80549d9b-1798-4cac-b8e8-8a23d8144580"
+    },
+    {
+      "claim_id": "5eb82f2f-5aa1-402b-a201-5b0f2ead0b23",
+      "result_id": "d5ff3885-e60b-40f6-a1c6-ddf818abe8bb"
+    },
+    {
+      "claim_id": "f8a61252-263f-4b8c-8cb2-8f7053571ae4",
+      "result_id": "d5ff3885-e60b-40f6-a1c6-ddf818abe8bb"
+    },
+    {
+      "claim_id": "b08533bf-1239-4d18-8cb9-49fe0054f8a9",
+      "result_id": "d5ff3885-e60b-40f6-a1c6-ddf818abe8bb"
+    },
+    {
+      "claim_id": "14e01fa3-f77d-4dfe-bc7d-39e4803b15f2",
+      "result_id": "d5ff3885-e60b-40f6-a1c6-ddf818abe8bb"
+    },
+    {
+      "claim_id": "f7ce0a41-c396-42e2-8912-5199b72810b0",
+      "result_id": "d5ff3885-e60b-40f6-a1c6-ddf818abe8bb"
+    },
+    {
+      "claim_id": "66fb2990-589c-4a39-a709-bcc1e274565f",
+      "result_id": "eec42a58-6d10-4fe1-b9d4-26d1a3ce6222"
+    },
+    {
+      "claim_id": "b2bdedd1-f561-4f3b-b106-d069abfd3df3",
+      "result_id": "eec42a58-6d10-4fe1-b9d4-26d1a3ce6222"
+    },
+    {
+      "claim_id": "1ba45419-a390-4991-ae84-374809a32e92",
+      "result_id": "eec42a58-6d10-4fe1-b9d4-26d1a3ce6222"
+    },
+    {
+      "claim_id": "9e2ae360-8e8a-4834-84af-8f6b1d6e17c4",
+      "result_id": "eec42a58-6d10-4fe1-b9d4-26d1a3ce6222"
+    },
+    {
+      "claim_id": "405697e4-5866-4815-9def-88e503f6b21a",
+      "result_id": "0a0009d0-793e-46a0-a10a-b3f835b5237b"
+    },
+    {
+      "claim_id": "e985a8f4-2e18-416f-b9f3-37a4133dd6ab",
+      "result_id": "0a0009d0-793e-46a0-a10a-b3f835b5237b"
+    },
+    {
+      "claim_id": "2d0187f1-9195-461e-838e-3253ba698a2c",
+      "result_id": "55d4c238-0017-4e0c-be8f-b6062fe50922"
+    },
+    {
+      "claim_id": "ec7c39c9-0fab-4632-a572-08d531899870",
+      "result_id": "55d4c238-0017-4e0c-be8f-b6062fe50922"
+    },
+    {
+      "claim_id": "c9c63793-3bc0-42eb-8437-e6696d5b3537",
+      "result_id": "55d4c238-0017-4e0c-be8f-b6062fe50922"
+    },
+    {
+      "claim_id": "6f4ad933-2bb1-4d53-a266-4a84e6b0c877",
+      "result_id": "55d4c238-0017-4e0c-be8f-b6062fe50922"
+    },
+    {
+      "claim_id": "be56c636-eb6f-4e90-b4d5-4171107eb89c",
+      "result_id": "52367250-52b3-4307-8dd9-3ac2e011be94"
+    },
+    {
+      "claim_id": "d5bd848e-929b-4567-813b-af0ac5d56fe5",
+      "result_id": "52367250-52b3-4307-8dd9-3ac2e011be94"
+    },
+    {
+      "claim_id": "008ed450-ae07-436d-a04b-bfb8a29efa94",
+      "result_id": "52367250-52b3-4307-8dd9-3ac2e011be94"
+    },
+    {
+      "claim_id": "f116fe1b-e82d-4026-bdb4-c297aaf55fca",
+      "result_id": "2c5ca90f-f133-4e50-99d3-955a20d5482c"
+    },
+    {
+      "claim_id": "8e3e853a-399f-484f-8e94-df766a884138",
+      "result_id": "2c5ca90f-f133-4e50-99d3-955a20d5482c"
+    },
+    {
+      "claim_id": "502480af-7638-4f02-8cfe-c9d2fb16ffb4",
+      "result_id": "2c5ca90f-f133-4e50-99d3-955a20d5482c"
+    },
+    {
+      "claim_id": "20cb0a0a-20c1-41eb-a0a0-80db054dcf03",
+      "result_id": "2c5ca90f-f133-4e50-99d3-955a20d5482c"
+    },
+    {
+      "claim_id": "951f285c-65dd-421c-9a53-0e67ffc56767",
+      "result_id": "024bf717-f6b4-48d7-acae-6b726f1a05b9"
+    },
+    {
+      "claim_id": "7f7a1190-d8ab-448d-83a7-7265b342f894",
+      "result_id": "024bf717-f6b4-48d7-acae-6b726f1a05b9"
+    },
+    {
+      "claim_id": "2ec30661-ee58-4080-ab6c-aca780c5d0be",
+      "result_id": "024bf717-f6b4-48d7-acae-6b726f1a05b9"
+    },
+    {
+      "claim_id": "207e4128-d939-43d1-8d09-a00d0124fa5d",
+      "result_id": "5482df3b-5bda-4ed3-8f2c-e21087892f59"
+    },
+    {
+      "claim_id": "1e2e65b5-07fd-4291-88e1-6cb7d0c82335",
+      "result_id": "5482df3b-5bda-4ed3-8f2c-e21087892f59"
+    },
+    {
+      "claim_id": "969d43b3-909e-4df7-a251-c4f4b2dc5815",
+      "result_id": "3c894415-261b-49d6-9cef-5764e5b09363"
+    },
+    {
+      "claim_id": "952d671d-1076-47e0-96c9-7bb5502dd044",
+      "result_id": "3c894415-261b-49d6-9cef-5764e5b09363"
+    },
+    {
+      "claim_id": "4888fc83-f35c-45b9-b186-e2e62f6caf46",
+      "result_id": "57bdfc3a-7ee9-438d-9d1a-9e087401f6cf"
+    },
+    {
+      "claim_id": "b8b00041-dbae-414d-94e3-6e2b21c63f4b",
+      "result_id": "57bdfc3a-7ee9-438d-9d1a-9e087401f6cf"
+    },
+    {
+      "claim_id": "595ae586-a64b-49c4-81a4-28f05779cd28",
+      "result_id": "57bdfc3a-7ee9-438d-9d1a-9e087401f6cf"
+    },
+    {
+      "claim_id": "7a136b66-7119-48a2-905e-3840a8ace3df",
+      "result_id": "57bdfc3a-7ee9-438d-9d1a-9e087401f6cf"
+    },
+    {
+      "claim_id": "85ab27e3-89cb-4f41-868b-6ea16412b450",
+      "result_id": "57bdfc3a-7ee9-438d-9d1a-9e087401f6cf"
+    },
+    {
+      "claim_id": "b014b415-c6d9-4dcd-95bf-095bb7127cfd",
+      "result_id": "13d91c32-20c8-4d29-95e5-9bef6e262bdd"
+    },
+    {
+      "claim_id": "5c06728a-b213-4f03-8945-c8f90e56e46e",
+      "result_id": "13d91c32-20c8-4d29-95e5-9bef6e262bdd"
+    },
+    {
+      "claim_id": "aa291e05-6a6f-4ed4-b76a-d0e78971a5e4",
+      "result_id": "13d91c32-20c8-4d29-95e5-9bef6e262bdd"
+    },
+    {
+      "claim_id": "b0e3b06d-4e2e-4cd1-afe2-0f2ec3747662",
+      "result_id": "70043ee2-989f-4740-8df6-6a889e51d1b6"
+    },
+    {
+      "claim_id": "3c1e2e46-5c1c-45a2-819e-ab70ee66799a",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "ec74a31c-6aba-445a-8bd2-8a0f8a5deeb6",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "2262b015-c7a4-4d14-91d6-af87b59ecf37",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "5b7fe17c-d7ff-485b-9b18-06d1699ed8bb",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "0ff70dae-8872-4c73-bb32-bc0865713a50",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "e5edae55-011f-46ec-892a-560fca0b6246",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "fc5434b6-3efc-4c13-9f5c-38702bd978ec",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "86f2f58e-b947-4af6-8b8e-04fefdf6afdc",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "13949404-e3bb-454e-88d3-3c5fefe48d26",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "e8d0f711-a6e6-473c-8860-3ca4ef3bc9ec",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "ea71c55a-21e8-4136-b0a2-a7a04797b9c4",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "6352d71b-2333-47f4-a4bb-18714555b492",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "7d5eac79-cdc6-4249-add9-2435dadd7de5",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "b572e8fa-92c6-4780-8d22-ba02957ef37e",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "17deed34-86e3-4ba0-b38f-7cda174b9853",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "d9ed9871-b251-47eb-8e08-120d4b3abce7",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "5e4480a9-0496-41d9-b9ad-df8ec50caf1e",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "2274414e-1df2-4498-a2ea-fd65011c8f02",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "15eeea81-cfe0-4e19-b24c-7d6818c924b4",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "fca93f4c-79cd-4a53-96b1-4284aea2b8ef",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "66dfb704-ef63-4313-b799-7d8140e20382",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "a61c6128-6c18-4842-b90c-9bc1870662c9",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "d65c3d2e-2188-490d-a31a-f208b8fd694e",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "bcf7d93a-8a38-4aa8-8b16-ea9c5569f9d2",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "e4f47189-fbe2-421b-91e3-012f7dff5579",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "4dfc0aa7-c12b-4fef-849f-1535db43255c",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "b12d495a-4ac5-453a-8174-27b3ae86f4fd",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "b16af815-0e62-407e-89da-3e86f1c15c72",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "734839f5-60e3-4d8d-8eb9-75708c207828",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "a5ed1111-b26f-459d-ac82-922a6e1efc99",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "4828ad98-0eb6-4718-bad6-7dc6875b536f",
+      "result_id": "c9d6f8af-a612-4097-b4ba-68346a1b236f"
+    },
+    {
+      "claim_id": "5779356c-8474-4bfd-a984-7670c665b62a",
+      "result_id": "469b54ec-4a50-498b-b430-e24de2a4f020"
+    },
+    {
+      "claim_id": "16954a2b-a239-46d6-80a3-1374a25b25db",
+      "result_id": "469b54ec-4a50-498b-b430-e24de2a4f020"
+    },
+    {
+      "claim_id": "0c235db1-8dbd-4bc6-a622-30144fa56cbc",
+      "result_id": "469b54ec-4a50-498b-b430-e24de2a4f020"
+    },
+    {
+      "claim_id": "b72ca222-295c-4587-90e2-9fca6660caa0",
+      "result_id": "4ecbd0fe-dda1-4e80-9df7-464794986e23"
+    },
+    {
+      "claim_id": "fe59c4ac-ad2b-4bc6-942c-e479c7649b04",
+      "result_id": "4ecbd0fe-dda1-4e80-9df7-464794986e23"
+    },
+    {
+      "claim_id": "8c0ba722-19f4-458d-a61c-5532f0be8586",
+      "result_id": "4ecbd0fe-dda1-4e80-9df7-464794986e23"
+    },
+    {
+      "claim_id": "f7183030-cce7-4cc4-95bd-f5108c0ec859",
+      "result_id": "4ecbd0fe-dda1-4e80-9df7-464794986e23"
+    },
+    {
+      "claim_id": "6a9aa717-1e70-487d-8bae-de7530354cca",
+      "result_id": "8a2b76d2-c729-4ee4-a934-0fd4d534fdb3"
+    },
+    {
+      "claim_id": "864b7b87-f2ad-44d9-be2d-9e51c9aeebd0",
+      "result_id": "e460eb32-235f-466b-bb51-93478cb9cd55"
+    },
+    {
+      "claim_id": "a9c38287-6bd7-4b40-aa13-f16e6fe4e081",
+      "result_id": "f96d2667-e191-43d7-87b3-fa85576dbf31"
+    },
+    {
+      "claim_id": "c7b5ac64-fcea-456d-881a-f36d0ce9f3b8",
+      "result_id": "f96d2667-e191-43d7-87b3-fa85576dbf31"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1845 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Both Flavopiridol and Triptolide block transcription of more than 95% of genes in mouse ES cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Both inhibitors block transcription of more than 95% of genes, showing that pause escape, like initiation, is a ubiquitous and crucial step within the transcription cycle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by quantitative analysis of GRO-seq data showing 96% of genes decreased after Trp treatment and 95% decreased after FP treatment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Pause escape is a ubiquitous and crucial step within the transcription cycle.",
+    "claim_type": "EXPLICIT",
+    "source": "Both inhibitors block transcription of more than 95% of genes, showing that pause escape, like initiation, is a ubiquitous and crucial step within the transcription cycle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the observation that FP inhibition affects >95% of genes, similar to initiation inhibition.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Paused Pol II has a half-life of approximately 7 minutes at ~3200 genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, paused Pol II is relatively stable, as evidenced from half-life measurements at \u223c3200 genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from decay rates after Trp treatment using exponential decay model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Pol II elongation rates were measured at over 1000 genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, tracking the progression of Pol II after drug treatment establishes Pol II elongation rates at over 1000 genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Measured using Hidden Markov Model to track inhibition wave progression.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Pol II accelerates dramatically while transcribing through genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, Pol II accelerates dramatically while transcribing through genes, but slows at exons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Demonstrated by comparing early (0.5 kb/min), mid (1.8 kb/min), and late (2.4 kb/min) elongation rates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Pol II slows down at exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, Pol II accelerates dramatically while transcribing through genes, but slows at exons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by negative correlation between exon density and elongation rates, with delays of 23-37 seconds per exon.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "H3K79me2 has a positive effect on elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, intergenic variance in elongation rates is substantial, and is influenced by a positive effect of H3K79me2 and negative effects of exon density and CG content within genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Demonstrated through multivariate regression analysis showing H3K79me2 as an independent predictor of elongation rates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Exon density has a negative effect on elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, intergenic variance in elongation rates is substantial, and is influenced by a positive effect of H3K79me2 and negative effects of exon density and CG content within genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Shown by linear regression analysis demonstrating negative correlation between exon density and elongation rates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "CG content within genes has a negative effect on elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, intergenic variance in elongation rates is substantial, and is influenced by a positive effect of H3K79me2 and negative effects of exon density and CG content within genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Demonstrated by correlation analysis showing CG-rich 6-mer sequences associated with slower elongation rates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Approximately 30% of intergenic variation in elongation rates can be explained by exon density, CpG content, and H3K79me2.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, we are able to predict \u223c30% of the intergenic variation in elongation rates with just three features, exon density, CpG content and methylation, and H3K79me2, providing a first quantitative assessment of how elongation rates are affected by gene structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Determined through multivariate regression modeling of elongation rates against genomic features.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "P-TEFb is required for paused Pol II to escape into productive elongation.",
+    "claim_type": "EXPLICIT",
+    "source": "The escape of Pol II from the paused state into productive elongation can be rate-limiting, and is dependent on the positive elongation factor P-TEFb, which consists of the Cdk9 kinase and CyclinT1 (Marshall et al., 1996; Lis et al., 2000; Ni et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by cited literature and confirmed by FP inhibition experiments showing accumulation of paused Pol II.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "P-TEFb consists of the Cdk9 kinase and CyclinT1.",
+    "claim_type": "EXPLICIT",
+    "source": "The escape of Pol II from the paused state into productive elongation can be rate-limiting, and is dependent on the positive elongation factor P-TEFb, which consists of the Cdk9 kinase and CyclinT1 (Marshall et al., 1996; Lis et al., 2000; Ni et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Established scientific knowledge supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "P-TEFb phosphorylates the C-Terminal domain (CTD), DSIF, and NELF.",
+    "claim_type": "EXPLICIT",
+    "source": "P-TEFb is recruited directly or indirectly to the paused Pol II complex by transcription activators, where it phosphorylates the C-Terminal domain (CTD), as well as DSIF and NELF, transforming DSIF into a positive elongation factor and evicting NELF (Peterlin and Price, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Established mechanism supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Phosphorylation by P-TEFb transforms DSIF into a positive elongation factor and evicts NELF.",
+    "claim_type": "EXPLICIT",
+    "source": "P-TEFb is recruited directly or indirectly to the paused Pol II complex by transcription activators, where it phosphorylates the C-Terminal domain (CTD), as well as DSIF and NELF, transforming DSIF into a positive elongation factor and evicting NELF (Peterlin and Price, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Established mechanism supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Flavopiridol blocks P-TEFb kinase activity.",
+    "claim_type": "EXPLICIT",
+    "source": "P-TEFb appears to be both necessary and sufficient for paused Pol II escape into productive elongation; blocking P-TEFb kinase activity with the drug flavopiridol (FP) (Chao and Price, 2001) in Drosophila causes an increase of promoter proximal Pol II at the majority of genes (Henriques et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Established mechanism supported by citations and confirmed by experimental data.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Blocking P-TEFb kinase activity with flavopiridol causes an increase of promoter proximal Pol II at the majority of genes in Drosophila.",
+    "claim_type": "EXPLICIT",
+    "source": "P-TEFb appears to be both necessary and sufficient for paused Pol II escape into productive elongation; blocking P-TEFb kinase activity with the drug flavopiridol (FP) (Chao and Price, 2001) in Drosophila causes an increase of promoter proximal Pol II at the majority of genes (Henriques et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Henriques et al., 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Triptolide blocks TFIIH helicase activity and thereby transcription initiation.",
+    "claim_type": "EXPLICIT",
+    "source": "However, paused Pol II in Drosophila seems remarkably stable as shown by extensive kinetic and in vivo analysis at the Drosophila Hsp70 locus (Buckley et al., 2014) and by estimation of decay rates of over a dozen Drosophila genes by blocking TFIIH helicase activity, and thereby initiation, with the drug triptolide (Trp) (Henriques et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Established mechanism supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Paused Pol II in Drosophila is remarkably stable.",
+    "claim_type": "EXPLICIT",
+    "source": "However, paused Pol II in Drosophila seems remarkably stable as shown by extensive kinetic and in vivo analysis at the Drosophila Hsp70 locus (Buckley et al., 2014) and by estimation of decay rates of over a dozen Drosophila genes by blocking TFIIH helicase activity, and thereby initiation, with the drug triptolide (Trp) (Henriques et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to studies in Drosophila.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Promoter proximal pausing is a P-TEFb dependent and rate-limiting step during early elongation for many genes in mammals.",
+    "claim_type": "EXPLICIT",
+    "source": "In mammals, promoter proximal pausing also seems to be a P-TEFb dependent and rate-limiting step during early elongation for many genes (Core et al., 2008; Rahl et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to mammalian studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Genes without a peak of paused Pol II in one cell type may acquire pausing in another cell type.",
+    "claim_type": "EXPLICIT",
+    "source": "Expressed genes without a peak of paused Pol II in one cell type, may acquire pausing in another (Min et al., 2011), indicating that genes have the potential of becoming regulated by promoter proximal pausing even when a promoter proximal Pol II peak is absent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Min et al., 2011.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Genes have the potential of becoming regulated by promoter proximal pausing even when a promoter proximal Pol II peak is absent.",
+    "claim_type": "EXPLICIT",
+    "source": "Expressed genes without a peak of paused Pol II in one cell type, may acquire pausing in another (Min et al., 2011), indicating that genes have the potential of becoming regulated by promoter proximal pausing even when a promoter proximal Pol II peak is absent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the observation that pausing can be acquired in different cell types.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The rate of Pol II elongation has been proposed to influence co-transcriptional processes such as splicing.",
+    "claim_type": "EXPLICIT",
+    "source": "Downstream of the promoter proximal region, the rate of Pol II elongation has been proposed to influence (co-)transcriptional processes such as splicing (Howe et al., 2003; de la Mata et al., 2003; Shukla and Oberdoerffer, 2012), 3\u2032 end processing (Nag et al., 2007), termination (Hazelbaker et al., 2012), and overall levels of mRNA (Danko et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to relevant studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The rate of Pol II elongation has been proposed to influence 3\u2032 end processing.",
+    "claim_type": "EXPLICIT",
+    "source": "Downstream of the promoter proximal region, the rate of Pol II elongation has been proposed to influence (co-)transcriptional processes such as splicing (Howe et al., 2003; de la Mata et al., 2003; Shukla and Oberdoerffer, 2012), 3\u2032 end processing (Nag et al., 2007), termination (Hazelbaker et al., 2012), and overall levels of mRNA (Danko et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Nag et al., 2007.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The rate of Pol II elongation has been proposed to influence termination.",
+    "claim_type": "EXPLICIT",
+    "source": "Downstream of the promoter proximal region, the rate of Pol II elongation has been proposed to influence (co-)transcriptional processes such as splicing (Howe et al., 2003; de la Mata et al., 2003; Shukla and Oberdoerffer, 2012), 3\u2032 end processing (Nag et al., 2007), termination (Hazelbaker et al., 2012), and overall levels of mRNA (Danko et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Hazelbaker et al., 2012.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The rate of Pol II elongation has been proposed to influence overall levels of mRNA.",
+    "claim_type": "EXPLICIT",
+    "source": "Downstream of the promoter proximal region, the rate of Pol II elongation has been proposed to influence (co-)transcriptional processes such as splicing (Howe et al., 2003; de la Mata et al., 2003; Shukla and Oberdoerffer, 2012), 3\u2032 end processing (Nag et al., 2007), termination (Hazelbaker et al., 2012), and overall levels of mRNA (Danko et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Danko et al., 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Histone modifications are associated with exons and within the gene body.",
+    "claim_type": "EXPLICIT",
+    "source": "Genic features that could potentially influence elongation rates are often, but not exclusively, associated with exons. Examples are histone modifications around exons and within the gene body (Kolasinska-Zwierz et al., 2009; Schor et al., 2009; Schwartz et al., 2009; Kim et al., 2011; Saint-Andr\u00e9 et al., 2011; Schor et al., 2013), nucleosome occupancy (Schwartz et al., 2009; Tilgner et al., 2009), GC content of both intronic and exonic DNA (Schwartz et al., 2009; Amit et al., 2012), and DNA methylation (Maunakea et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to relevant studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Nucleosome occupancy is associated with exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Genic features that could potentially influence elongation rates are often, but not exclusively, associated with exons. Examples are histone modifications around exons and within the gene body (Kolasinska-Zwierz et al., 2009; Schor et al., 2009; Schwartz et al., 2009; Kim et al., 2011; Saint-Andr\u00e9 et al., 2011; Schor et al., 2013), nucleosome occupancy (Schwartz et al., 2009; Tilgner et al., 2009), GC content of both intronic and exonic DNA (Schwartz et al., 2009; Amit et al., 2012), and DNA methylation (Maunakea et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Schwartz et al., 2009 and Tilgner et al., 2009.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "GC content of both intronic and exonic DNA is associated with exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Genic features that could potentially influence elongation rates are often, but not exclusively, associated with exons. Examples are histone modifications around exons and within the gene body (Kolasinska-Zwierz et al., 2009; Schor et al., 2009; Schwartz et al., 2009; Kim et al., 2011; Saint-Andr\u00e9 et al., 2011; Schor et al., 2013), nucleosome occupancy (Schwartz et al., 2009; Tilgner et al., 2009), GC content of both intronic and exonic DNA (Schwartz et al., 2009; Amit et al., 2012), and DNA methylation (Maunakea et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Schwartz et al., 2009 and Amit et al., 2012.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "DNA methylation is associated with exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Genic features that could potentially influence elongation rates are often, but not exclusively, associated with exons. Examples are histone modifications around exons and within the gene body (Kolasinska-Zwierz et al., 2009; Schor et al., 2009; Schwartz et al., 2009; Kim et al., 2011; Saint-Andr\u00e9 et al., 2011; Schor et al., 2013), nucleosome occupancy (Schwartz et al., 2009; Tilgner et al., 2009), GC content of both intronic and exonic DNA (Schwartz et al., 2009; Amit et al., 2012), and DNA methylation (Maunakea et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Maunakea et al., 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Many exonic chromatin features have been implicated in regulation of splicing.",
+    "claim_type": "EXPLICIT",
+    "source": "Many exonic chromatin features have been implicated in regulation of splicing as well (Kolasinska-Zwierz et al., 2009; Schor et al., 2009; Shukla et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Pol II accumulates preferentially at spliced exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, Pol II has been shown to accumulate preferentially at spliced exons (Brodsky et al., 2005; Alexander et al., 2010; Chodavarapu et al., 2010; Kwak et al., 2013), leading to the hypothesis that reduction of Pol II elongation rate facilitates splice site recognition and spliceosome assembly, and thus, splicing of the associated intron (Shukla and Oberdoerffer, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Reduction of Pol II elongation rate facilitates splice site recognition and spliceosome assembly.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, Pol II has been shown to accumulate preferentially at spliced exons (Brodsky et al., 2005; Alexander et al., 2010; Chodavarapu et al., 2010; Kwak et al., 2013), leading to the hypothesis that reduction of Pol II elongation rate facilitates splice site recognition and spliceosome assembly, and thus, splicing of the associated intron (Shukla and Oberdoerffer, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on observations of Pol II accumulation at exons.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Transcription with a slow mutant of Pol II promotes alternative splicing in human and yeast cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, transcription with a slow mutant of Pol II promotes alternative splicing in human and yeast cells (Howe et al., 2003; de la Mata et al., 2003; de la Mata et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Three studies that directly measured elongation rates at multiple genes could not clearly demonstrate a correlation between exons and elongation rate.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite observations of Pol II accumulation at exons, three studies that directly measured elongation rates at multiple genes could not clearly demonstrate a correlation between exons and elongation rate (Singh and Padgett, 2009; Brody et al., 2011; Danko et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to three studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "In vitro studies clearly show the effect of nucleosomes and histone modifications on elongation rate.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, although in vitro studies clearly show the effect of nucleosomes and histone modifications on elongation rate (Orphanides et al., 1998; Hodges et al., 2009; Bintu et al., 2012), the in vivo consequences of chromatin on elongation rate are less understood, primarily because of the inability to measure elongation rates at many genes simultaneously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to in vitro studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Previous studies have measured elongation rates ranging from 1 to 4 kb/min at individual genes in various organisms.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies have measured elongation rates ranging from 1 to 4 kb/min at individual genes in various organisms (Ardehali and Lis, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to review article.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Elongation rates for over 160 genes were measured simultaneously by following the induction wave of Pol II after estradiol or TNF-alpha treatment.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, elongation rates for over 160 genes were measured simultaneously by following the induction wave of Pol II after estradiol or TNF-alpha treatment (Danko et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Danko et al., 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "A broad range of elongation rates occurs between and within cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, this study showed a broad range of elongation rates between and within cell types, suggesting that the control of elongation rate may be used to regulate transcription and co-transcriptional processes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Danko et al., 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "300 nM Flavopiridol was used to block pause escape in mES cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We isolated replicates of nuclei from untreated mESCs and cells treated for 2, 5, 12.5, 25 and 50 min with 300 nM FP, as well as nuclei treated for 12.5, 25, and 50 min with 500 nM Trp (Figure 1A) and performed GRO-seq with these nuclei (Figure 1\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Experimental design described in methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "500 nM Triptolide was used to block transcription initiation in mES cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We isolated replicates of nuclei from untreated mESCs and cells treated for 2, 5, 12.5, 25 and 50 min with 300 nM FP, as well as nuclei treated for 12.5, 25, and 50 min with 500 nM Trp (Figure 1A) and performed GRO-seq with these nuclei (Figure 1\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Experimental design described in methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Biological replicates of GRO-seq experiments correlated extremely well.",
+    "claim_type": "EXPLICIT",
+    "source": "Biological replicates correlated extremely well (Figure 1\u2014source data 2 and 3) and were combined for further analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in methods with reference to source data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Treated and control GRO-seq libraries were normalized to in vitro transcribed Arabidopsis thaliana RNAs added during the run-on.",
+    "claim_type": "EXPLICIT",
+    "source": "Because inhibition of P-TEFb and initiation were anticipated to have large genome-wide effects on Pol II transcription, we normalized treated and control libraries to in vitro transcribed Arabidopsis thaliana RNAs added during the run-on.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Normalization method described in results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "FP treatment causes an overall ~50% reduction of phosphorylation of bound Pol II at both Ser2 and Ser5.",
+    "claim_type": "EXPLICIT",
+    "source": "FP treatment causes an overall \u223c50% reduction of phosphorylation of bound Pol II at both Ser2 and Ser5.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by western blot analysis in Figure 1\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "After FP or Trp treatment the bound fraction of total Pol II was reduced to ~50 and 30%, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "After FP or Trp treatment the bound fraction of total Pol II was reduced to \u223c50 and 30%, respectively, while the free fraction was increased after treatment with FP, but not with Trp.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by western blot analysis in Figure 1\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The free fraction of Pol II was increased after treatment with FP, but not with Trp.",
+    "claim_type": "EXPLICIT",
+    "source": "After FP or Trp treatment the bound fraction of total Pol II was reduced to \u223c50 and 30%, respectively, while the free fraction was increased after treatment with FP, but not with Trp.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by western blot analysis in Figure 1\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Both FP and Trp work rapidly, as gene body density near the TSS approaches background levels within 12.5 min.",
+    "claim_type": "EXPLICIT",
+    "source": "Both drugs work rapidly, as gene body density near the TSS approaches background levels within 12.5 min.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observed in composite profiles and individual gene examples.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Elongating Pol II in the gene body is not affected by FP or Trp treatment downstream of the inhibition waves.",
+    "claim_type": "EXPLICIT",
+    "source": "Downstream of these inhibition waves, Pol II density levels remain equal throughout the time course, indicating that elongating Pol II in the gene body is not affected (Figure 1\u2014figure supplement 2A,B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown in Figure 1\u2014figure supplement 2A,B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Trp blocks transcription initiation and causes the time dependent clearing of Pol II from the promoter and gene body.",
+    "claim_type": "EXPLICIT",
+    "source": "These results confirm that Trp blocks transcription initiation and causes the time dependent clearing of Pol II from the promoter and gene body, while FP's prominent effect is to block escape from the pause, causing a time dependent gene body clearance but enhanced promoter proximal Pol II pausing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observed in GRO-seq data after drug treatment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "FP's prominent effect is to block escape from the pause, causing a time dependent gene body clearance but enhanced promoter proximal Pol II pausing.",
+    "claim_type": "EXPLICIT",
+    "source": "These results confirm that Trp blocks transcription initiation and causes the time dependent clearing of Pol II from the promoter and gene body, while FP's prominent effect is to block escape from the pause, causing a time dependent gene body clearance but enhanced promoter proximal Pol II pausing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observed in GRO-seq data after drug treatment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "96% of genes are significantly decreased after Trp treatment.",
+    "claim_type": "EXPLICIT",
+    "source": "Quantification of the decrease in read density directly downstream of the TSS shows that 96% of genes are significantly decreased after Trp treatment, while 95% of genes are decreased after FP treatment (Figure 2\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantified from GRO-seq data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "95% of genes are decreased after FP treatment.",
+    "claim_type": "EXPLICIT",
+    "source": "Quantification of the decrease in read density directly downstream of the TSS shows that 96% of genes are significantly decreased after Trp treatment, while 95% of genes are decreased after FP treatment (Figure 2\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantified from GRO-seq data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "P-TEFb-dependent Pol II entry into productive elongation is as universal a step in gene transcription as TFIIH helicase-dependent initiation.",
+    "claim_type": "EXPLICIT",
+    "source": "This demonstrates that P-TEFb-dependent Pol II entry into productive elongation is as universal a step in gene transcription as TFIIH helicase-dependent initiation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the observation that both FP and Trp affect >95% of genes.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The mean half-life of paused Pol II is 6.9 min.",
+    "claim_type": "EXPLICIT",
+    "source": "The mean half-life of Pol II is 6.9 min, in agreement with the decay rates measured in Drosophila (Henriques et al., 2013; Buckley et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from decay rate measurements after Trp treatment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Promoter proximal Pol II stability is comparable between species.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, promoter proximal Pol II stability is comparable between species and paused Pol II is relatively stable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from comparison of measured half-lives in mES cells with published Drosophila data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The Trp inhibition wave was less clearly defined than the FP wave.",
+    "claim_type": "EXPLICIT",
+    "source": "The Trp inhibition wave was less clearly defined than the FP wave, likely due to the fact that Pol II initiated and paused before Trp treatment will gradually escape after TFIIH inhibition, resulting in a less defined block of Pol II entry into the gene body (Figure 3A, Figure 3\u2014figure supplement 1B, see Med13l).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Observed in GRO-seq data and HMM analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "On average, Pol II travels about 100 kb during 50 min of FP treatment.",
+    "claim_type": "EXPLICIT",
+    "source": "On average, Pol II travels about 100 kb during 50 min of FP treatment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from HMM-derived transition points.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The average Pol II inhibition wave travels at identical rates after either Trp or FP treatment.",
+    "claim_type": "EXPLICIT",
+    "source": "The average Pol II inhibition wave travels at identical rates after either Trp or FP treatment, indicating that inhibition of P-TEFb or off-target effects of FP are unlikely to have significant effects on elongation rates downstream of the promoter proximal region (Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by comparison of transition points in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "141 early elongation rates (5-12.5 min) were measured with an average of 0.5 kb/min.",
+    "claim_type": "EXPLICIT",
+    "source": "We directly measured 141 early (5\u201312.5 min), 938 mid (12.5\u201325 min), and 245 late (25-50 min) elongation rates, with average elongation rates of 0.5, 1.8 and 2.4 kb/min respectively (Figure 3\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from HMM-derived transition points.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "938 mid elongation rates (12.5-25 min) were measured with an average of 1.8 kb/min.",
+    "claim_type": "EXPLICIT",
+    "source": "We directly measured 141 early (5\u201312.5 min), 938 mid (12.5\u201325 min), and 245 late (25-50 min) elongation rates, with average elongation rates of 0.5, 1.8 and 2.4 kb/min respectively (Figure 3\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from HMM-derived transition points.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "245 late elongation rates (25-50 min) were measured with an average of 2.4 kb/min.",
+    "claim_type": "EXPLICIT",
+    "source": "We directly measured 141 early (5\u201312.5 min), 938 mid (12.5\u201325 min), and 245 late (25-50 min) elongation rates, with average elongation rates of 0.5, 1.8 and 2.4 kb/min respectively (Figure 3\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from HMM-derived transition points.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The slope of the intronic density plots decreases as the directly measured elongation rates become faster.",
+    "claim_type": "EXPLICIT",
+    "source": "The slope of the intronic density plots of the quartiles decreases as the directly measured elongation rates become faster (Figure 3E, Figure 3\u2014figure supplement 2C, right), independently confirming the gene-to-gene variation in elongation rates.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by RNA-seq intronic gradient analysis in Figure 3E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The slope of intron read density as a function of distance to the 3\u2032 SS is higher in the upstream region compared to the downstream region within the same genes.",
+    "claim_type": "EXPLICIT",
+    "source": "The slope of intron read density as a function of distance to the 3\u2032 SS is higher in the upstream region compared to the downstream region (Figure 3F), indicative of slower elongation rates upstream in genes, and acceleration as Pol II travels within the gene body.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by RNA-seq intronic gradient analysis in Figure 3F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The acceleration of Pol II is not constant, but decreases as transcription proceeds.",
+    "claim_type": "EXPLICIT",
+    "source": "The acceleration is not constant, but decreases as transcription proceeds (Figure 3\u2014figure supplement 3B,C), suggesting that the Pol II elongation complex 'matures' and reaches its maximum speed while transcribing a gene.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by analysis of acceleration constants in Figure 3\u2014figure supplement 3B,C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Pausing negatively correlates with mid elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, pausing negatively correlates with mid elongation rates, while late elongation rates are not affected (Figure 3\u2014figure supplement 3D), suggesting that pausing delays the maturation of Pol II.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 3\u2014figure supplement 3D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Late elongation rates are not affected by pausing.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, pausing negatively correlates with mid elongation rates, while late elongation rates are not affected (Figure 3\u2014figure supplement 3D), suggesting that pausing delays the maturation of Pol II.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 3\u2014figure supplement 3D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Pol II Ser2 phosphorylation increases gradually within the gene body within the same region as the acceleration of the elongation complex.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, ChIP-seq composite profiles of total Pol II and of Ser5 or Ser2 phosphorylated CTD (Rahl et al., 2010) show that Pol II Ser2 phosphorylation, which is a product of P-TEFb activity and other kinases (Bartkowiak et al., 2010; Devaiah et al., 2012) and presumably coincides with the loss of NELF and DSIF pausing activity, increases gradually within the gene body within the same region as the acceleration of the elongation complex (Figure 3\u2014figure supplement 3E,F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by ChIP-seq analysis in Figure 3\u2014figure supplement 3E,F.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Pol II Ser2 phosphorylation is a product of P-TEFb activity and other kinases.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, ChIP-seq composite profiles of total Pol II and of Ser5 or Ser2 phosphorylated CTD (Rahl et al., 2010) show that Pol II Ser2 phosphorylation, which is a product of P-TEFb activity and other kinases (Bartkowiak et al., 2010; Devaiah et al., 2012) and presumably coincides with the loss of NELF and DSIF pausing activity, increases gradually within the gene body within the same region as the acceleration of the elongation complex (Figure 3\u2014figure supplement 3E,F).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Bartkowiak et al., 2010 and Devaiah et al., 2012.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The inverse of the elongation rate does not fall below the density plot in the gene body region where the rates are measured.",
+    "claim_type": "EXPLICIT",
+    "source": "On average, the inverse of the elongation rate (v\u22121) does not fall below the density plot (D) in the gene body region (Figure 4B) where the rates are measured (starting from the average 5 min transition point 2.3 kb downstream of TSS).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by comparison of v\u22121 and D in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The bulk of the change in Pol II density stems from the acceleration of stably elongating Pol II molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "This indicates that the bulk of the change in Pol II density stems from the acceleration of stably elongating Pol II molecules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the relationship between v\u22121 and D, and supported by simulation analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Pol II termination does not appear to have a global contribution to the amount of Pol II in the regions more downstream of 2\u20133 kb from the TSS.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, Pol II termination does not appear to have a global contribution to the amount of Pol II in the regions more downstream of 2\u20133 kb from the TSS.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from comparison of measured data with simulated models.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Genes that are relatively highly expressed show a log-log slope of 1.8 between mRNA level and GRO-seq density.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, genes that are relatively highly expressed show a slope of 1.8 indicating that mRNA level is not a simple function of GRO-seq density for these genes (Figure 4E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 4E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "There is a modest correlation between elongation rate and GRO-seq density.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed a modest correlation between elongation rate and GRO-seq (Figure 4F), indicating that highly active genes have faster elongation rates and produce more mRNA, in agreement with a previous analysis of a smaller set of inducible genes (Danko et al., 2013).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 4F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Highly active genes have faster elongation rates and produce more mRNA.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed a modest correlation between elongation rate and GRO-seq (Figure 4F), indicating that highly active genes have faster elongation rates and produce more mRNA, in agreement with a previous analysis of a smaller set of inducible genes (Danko et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from correlation between elongation rate and GRO-seq density.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Highly expressed genes display a log-log slope of 2.2 between mRNA-seq and GRO-seq.",
+    "claim_type": "EXPLICIT",
+    "source": "These highly expressed genes display a log\u2013log slope of 2.2 (Figure 4G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 4G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "When plotting production rates vs mRNA level, the slope is reduced to 1.6.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, when plotting the production rates, that is the mid elongation rates multiplied by the corresponding GRO-seq densities, vs mRNA level, the slope is reduced to 1.6 (Figure 4H), indicating that elongation rate can partially explain the divergence between Pol II density and the mRNA level at highly transcribed genes.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 4H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Elongation rate can partially explain the divergence between Pol II density and the mRNA level at highly transcribed genes.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, when plotting the production rates, that is the mid elongation rates multiplied by the corresponding GRO-seq densities, vs mRNA level, the slope is reduced to 1.6 (Figure 4H), indicating that elongation rate can partially explain the divergence between Pol II density and the mRNA level at highly transcribed genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the reduction in slope when accounting for elongation rates.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "H3K36me3 and CpG methylation were depleted over larger regions around the TSS in faster genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, H3K36me3 and CpG methylation were depleted over larger regions around the TSS in faster genes, while H3K4me1 and H3K79me2 were enriched in these same regions (Figure 5A, right).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by ChIP-seq density profiles in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "H3K4me1 and H3K79me2 were enriched in regions around the TSS in faster genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, H3K36me3 and CpG methylation were depleted over larger regions around the TSS in faster genes, while H3K4me1 and H3K79me2 were enriched in these same regions (Figure 5A, right).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by ChIP-seq density profiles in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "CpG methylation and H3K36me3 are enriched at exons.",
+    "claim_type": "EXPLICIT",
+    "source": "CpG methylation and H3K36me3 are enriched at exons, while H3K79me2 levels decrease upon encountering the second exon (Schwartz et al., 2009; Huff et al., 2010; Maunakea et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "H3K79me2 levels decrease upon encountering the second exon.",
+    "claim_type": "EXPLICIT",
+    "source": "CpG methylation and H3K36me3 are enriched at exons, while H3K79me2 levels decrease upon encountering the second exon (Schwartz et al., 2009; Huff et al., 2010; Maunakea et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The elongation complex tends to travel faster in genes with larger first introns.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we examined the correlation between elongation rate and the length of intron 1 (Figure 5A). Indeed, the elongation complex tends to travel faster in genes with larger first introns.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Addition of an exon within the early elongation rate region results in an average delay of 37 seconds.",
+    "claim_type": "EXPLICIT",
+    "source": "Addition of an exon within the three regions, in which early, mid, and late elongation rates were derived, results in average delays of 37, 31 or 23 s respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from linear regression of exon density vs elongation rate.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Addition of an exon within the mid elongation rate region results in an average delay of 31 seconds.",
+    "claim_type": "EXPLICIT",
+    "source": "Addition of an exon within the three regions, in which early, mid, and late elongation rates were derived, results in average delays of 37, 31 or 23 s respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from linear regression of exon density vs elongation rate.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Addition of an exon within the late elongation rate region results in an average delay of 23 seconds.",
+    "claim_type": "EXPLICIT",
+    "source": "Addition of an exon within the three regions, in which early, mid, and late elongation rates were derived, results in average delays of 37, 31 or 23 s respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from linear regression of exon density vs elongation rate.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The delay at exons is somewhat less in downstream regions of the gene body when Pol II is more fully phosphorylated.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the co-transcriptional delay of Pol II at exons is striking and might be linked to coupled splicing events. Interestingly, the delay is somewhat less in downstream regions of the gene body when Pol II is more fully phosphorylated (Figure 3\u2014figure supplement 3F) and is generally elongating faster (Figure 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from comparison of delays at different regions and correlation with Pol II phosphorylation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "There is a striking positive correlation between CG content at promoters (CpG islands) and downstream mid elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "We found a striking positive correlation between CG content at promoters, that is CpG islands, and the downstream mid elongation rates (Figure 5C, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 5C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Unmethylated CpG islands are often associated with broad transcription initiation.",
+    "claim_type": "EXPLICIT",
+    "source": "Unmethylated CpG islands are often associated with broad transcription initiation (Core et al., 2008), likely because CpG islands deter nucleosome binding (Ramirez-Carrozzi et al., 2009; Fenouil et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "CpG islands deter nucleosome binding.",
+    "claim_type": "EXPLICIT",
+    "source": "Unmethylated CpG islands are often associated with broad transcription initiation (Core et al., 2008), likely because CpG islands deter nucleosome binding (Ramirez-Carrozzi et al., 2009; Fenouil et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Nucleosomes can be barriers to Pol II elongation and cause transient pauses to delay the Pol II traversal.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, nucleosomes can be barriers to Pol II elongation and cause transient pauses to delay the Pol II traversal (Hodges et al., 2009; Bintu et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The nucleosome free region (NFR) is wider in genes with faster elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore we explored the nucleosome occupancy as a function of elongation rates, and found that the nucleosome free region (NFR) is wider in genes with faster elongation rates (Figure 5C, right); the fastest gene group is shifted approximately 2 nucleosomes downstream compared to the slowest genes.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by nucleosome occupancy analysis in Figure 5C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The fastest gene group is shifted approximately 2 nucleosomes downstream compared to the slowest genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore we explored the nucleosome occupancy as a function of elongation rates, and found that the nucleosome free region (NFR) is wider in genes with faster elongation rates (Figure 5C, right); the fastest gene group is shifted approximately 2 nucleosomes downstream compared to the slowest genes.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by nucleosome occupancy analysis in Figure 5C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "A more nucleosome-free promoter architecture correlates positively with elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "This shows that a more nucleosome-free promoter architecture correlates positively with elongation rates, and implicates an intrinsic component of Pol II rate is determined in the earliest stages of transcription.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the correlation between NFR width and elongation rates.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The top 20 6-mer sequences associated with slower elongation rates were enriched for repeats of CG dinucleotides.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the top 20 6-mer sequences associated with slower elongation rates were enriched for repeats of CG dinucleotides (Figure 5D, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by 6-mer sequence analysis in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "There is a modest negative correlation between CG density and elongation rates in individual genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, we found a modest negative correlation between the CG density and the elongation rates in individual genes (Figure 5\u2014figure supplement 1C), opposite of the effect CG content has at the promoter.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 5\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Elongation rate is positively related to the NFR and GC content at promoters.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, while elongation rates seems to be positively related to the NFR and GC content at promoters, elongation rate correlates negatively with CG content within the gene body (Figure 5D, right panel) and is unaffected by nucleosome occupancy (Figure 5\u2014figure supplement 1D).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Shown by correlation analyses in Figure 5C and 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Elongation rate correlates negatively with CG content within the gene body.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, while elongation rates seems to be positively related to the NFR and GC content at promoters, elongation rate correlates negatively with CG content within the gene body (Figure 5D, right panel) and is unaffected by nucleosome occupancy (Figure 5\u2014figure supplement 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by correlation analysis in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Elongation rate is unaffected by nucleosome occupancy in the gene body.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, while elongation rates seems to be positively related to the NFR and GC content at promoters, elongation rate correlates negatively with CG content within the gene body (Figure 5D, right panel) and is unaffected by nucleosome occupancy (Figure 5\u2014figure supplement 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by analysis in Figure 5\u2014figure supplement 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The negative effect of CG content on elongation rate is independent of exonic enrichment for CG content and nucleosomes.",
+    "claim_type": "EXPLICIT",
+    "source": "This negative effect also seems independent of exonic enrichment for CG content and nucleosomes (Schwartz et al., 2009; Tilgner et al., 2009), as we still observed the correlation between elongation rates and CG content in intronic regions (Figure 5\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Shown by analysis of intronic CG content in Figure 5\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The increased melting temperature of GC-rich DNA may explain the general reduction of elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "The increased melting temperature of GC-rich DNA may explain this general reduction of elongation rates (Nechaev et al., 2010), but the methylation status of the CG dinucleotides (Figure 5A) may also lead to differential regulation of Pol II elongation rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative explanation supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The methylation status of CG dinucleotides may lead to differential regulation of Pol II elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "The increased melting temperature of GC-rich DNA may explain this general reduction of elongation rates (Nechaev et al., 2010), but the methylation status of the CG dinucleotides (Figure 5A) may also lead to differential regulation of Pol II elongation rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative explanation based on observed correlations.",
+    "evidence_type": [
+      "DATA",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Exon density has the strongest correlation with elongation rates among all examined features.",
+    "claim_type": "EXPLICIT",
+    "source": "All of these features are significantly associated with the elongation rates, the exon density having the strongest correlation (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by multivariate regression analysis in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The correlation between elongation rates and intron 1 length can be explained almost entirely by exon density alone.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the correlation between elongation rates and intron 1 length, gene body H3K36me3, and H3K4me1 can be explained almost entirely by the exon density alone (Figure 6B), since they do not show correlation with the residual of the elongation rates after fitting to the exon density model (Figure 6\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by iterative regression analysis in Figure 6B and Figure 6\u2014figure supplement 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Gene body H3K79me2 and gene body CpG features cannot be explained mostly by exon density.",
+    "claim_type": "EXPLICIT",
+    "source": "However, gene body H3K79me2 and gene body CpG features cannot be explained mostly by exon density (Figure 6\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by iterative regression analysis in Figure 6\u2014figure supplement 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "H3K79me2 and CpG content have independent components from each other.",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, H3K79me2 and CpG content have independent components from each other, while CpG methylation is tightly associated with CpG content (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by iterative regression analysis in Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "CpG methylation is tightly associated with CpG content.",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, H3K79me2 and CpG content have independent components from each other, while CpG methylation is tightly associated with CpG content (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by iterative regression analysis in Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "CpG content, exon density, and H3K79me2 are the main modulators of elongation rate.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the multivariate model progressively explains more of the variances and shows better fits when CpG content, exon density, and H3K79me2 are combined to explain elongation rate (Figure 6C). Addition of more factors only slightly increases the variance explained by the model of elongation rates (Figure 6C, right panel), indicating that CpG content, exon density and H3K79me2 are the main modulators of elongation rate.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Shown by multivariate regression analysis in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "H3K79me2 is mostly enriched within exon and intron 1.",
+    "claim_type": "EXPLICIT",
+    "source": "While CpG content is likely to exert effects throughout the gene, H3K79me2 is mostly enriched within exon and intron 1, indicating that this histone modification is beneficial to elongation early in the gene, while the elongation complex is still accelerating.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from ChIP-seq profiles and correlation with elongation rates.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "H3K79me2 is beneficial to elongation early in the gene, while the elongation complex is still accelerating.",
+    "claim_type": "EXPLICIT",
+    "source": "While CpG content is likely to exert effects throughout the gene, H3K79me2 is mostly enriched within exon and intron 1, indicating that this histone modification is beneficial to elongation early in the gene, while the elongation complex is still accelerating.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the enrichment pattern of H3K79me2 and its correlation with elongation rates.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "All genes have the potential of being regulated at the promoter proximal pause site.",
+    "claim_type": "EXPLICIT",
+    "source": "We definitively show that all genes have the potential of being regulated at the promoter proximal pause site, as all initiated Pol II undergoes a P-TEFb dependent step of escape into productive elongation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the observation that >95% of genes are affected by FP treatment.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "The average half-life of paused Pol II is 7 min.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we find that the average half-life of paused Pol II is 7 min, indicating that Pol II pausing is remarkably stable, and not the consequence of fast, repeated rounds of initiation and termination.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from decay rate measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Pol II pausing is remarkably stable, and not the consequence of fast, repeated rounds of initiation and termination.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we find that the average half-life of paused Pol II is 7 min, indicating that Pol II pausing is remarkably stable, and not the consequence of fast, repeated rounds of initiation and termination.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the relatively long half-life of paused Pol II.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Elongation rates ranging from 0.5 to 4 kb/min were measured at ~1000 genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we measured elongation rates ranging from 0.5 to 4 kb/min at \u223c1000 genes and within different regions of genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Measured using HMM analysis of inhibition waves.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Not all active genes show signs of promoter proximal accumulation of paused Pol II in mES cells.",
+    "claim_type": "EXPLICIT",
+    "source": "However, not all active genes show signs of promoter proximal accumulation of paused Pol II in mES cells (Min et al., 2011, this study).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observed in GRO-seq data and supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The accumulation of paused Pol II depends on both the rate with which pause complex is formed (the transcription initiation rate) and its rate of escape to elongation.",
+    "claim_type": "EXPLICIT",
+    "source": "Clearly, this accumulation of Pol II depends on both the rate with which pause complex is formed (the transcription initiation rate) and its rate of escape to elongation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Logical inference from the kinetics of pausing.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Some transcription factors stimulate the formation of paused Pol II, others recruit P-TEFb directly or indirectly to facilitate the escape of paused Pol II, while others do both.",
+    "claim_type": "EXPLICIT",
+    "source": "Some transcription factors stimulate the formation of paused Pol II, others recruit P-TEFb directly or indirectly to facilitate the escape of paused Pol II, while others do both (Blau et al., 1996; Rahl et al., 2010; Danko et al., 2013; Li and Gilmour, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to relevant studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The balance of transcription factors at promoters, together with pausing factors that stabilize Pol II, determine the relative accumulation of paused Pol II.",
+    "claim_type": "EXPLICIT",
+    "source": "The balance of these factors at promoters, together with pausing factors that stabilize Pol II (Yamaguchi et al., 1999; Lee et al., 2008; Kwak et al., 2013) determine the relative accumulation paused Pol II.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the roles of various factors in pausing regulation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Stably-paused Pol II may help maintain accessibility of the promoter to regulatory factors that tune transcriptional output by changing the escape rate of paused Pol II into the body of the gene.",
+    "claim_type": "EXPLICIT",
+    "source": "This stably-paused Pol II may help maintain accessibility of the promoter to regulatory factors that tune transcriptional output by simply changing the escape rate of paused Pol II into the body of the gene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative explanation based on the stability of paused Pol II.",
+    "evidence_type": [
+      "DATA",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Heat shock increases the escape of paused Pol II into the gene body at the Drosophila Hsp70 locus without decreasing termination of paused Pol II.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, heat shock has recently been shown both optically and biochemically to increase the escape of paused Pol II into the gene body at the Drosophila Hsp70 locus without decreasing termination of paused Pol II, arguing against a role for termination in the regulation of the accumulation and escape of paused Pol II.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by recent studies (implied by 'recently been shown').",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "A small fraction of poorly expressed and weakly paused genes show a reduction in paused Pol II after FP treatment.",
+    "claim_type": "EXPLICIT",
+    "source": "However, a small fraction of poorly expressed and weakly paused genes show a reduction in paused Pol II after FP treatment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observed in GRO-seq data after FP treatment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Disruption of pausing dynamics by FP may feed back on transcription initiation and decrease the formation of paused Pol II for some genes.",
+    "claim_type": "EXPLICIT",
+    "source": "We speculate that transcription initiation, Pol II pausing, and escape into productive elongation are not necessarily uncoupled processes for all genes. Instead, disruption of pausing dynamics by FP may feed back on transcription initiation and decrease the formation of paused Pol II.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative explanation for the observed reduction in paused Pol II at some genes.",
+    "evidence_type": [
+      "DATA",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Depletion of Nelf can decrease expression of a subset of genes, indicative of a dependency of initiation on pausing.",
+    "claim_type": "EXPLICIT",
+    "source": "Depletion of Nelf can decrease expression of a subset of genes, indicative of a dependency of initiation on pausing, in this case through the maintenance of nucleosome free promoters by paused Pol II (Gilchrist et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Gilchrist et al., 2008.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "Core promoter elements appear to contribute to stronger and more promoter proximal pausing in Drosophila.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, precise mapping of Pol II reveals that core promoter elements appear to contribute to stronger and more promoter proximal pausing in Drosophila (Kwak et al., 2013; Venters and Pugh, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Kwak et al., 2013 and Venters and Pugh, 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The Pol II inhibition profile within gene bodies is remarkably similar after either FP or Trp drug treatment.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the specific inhibitors used in this manuscript inhibit either initiation or pause escape seemingly with few secondary effects, as the Pol II inhibition profile within gene bodies is remarkably similar after either drug treatment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observed by comparing GRO-seq profiles after FP and Trp treatment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Elongation rates derived after inhibition of P-TEFb were slightly lower compared to elongation rates derived after induction.",
+    "claim_type": "EXPLICIT",
+    "source": "Our elongation rates derived after inhibition of P-TEFb were slightly lower in comparison to the elongation rates derived after induction which may point to a model in which lagging Pol II pushes leading Pol II thereby increasing overall elongation rates (Saeki and Svejstrup, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison with published data from Danko et al., 2013.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "Lagging Pol II may push leading Pol II thereby increasing overall elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Our elongation rates derived after inhibition of P-TEFb were slightly lower in comparison to the elongation rates derived after induction which may point to a model in which lagging Pol II pushes leading Pol II thereby increasing overall elongation rates (Saeki and Svejstrup, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative explanation supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Mouse ESCs have high levels of DNA methylation.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, mouse ESCs have high levels of DNA methylation (Stadler et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Stadler et al., 2011.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "DNA methylation and CG content could partially explain the difference between mESC and differentiated cell line derived elongation rates.",
+    "claim_type": "EXPLICIT",
+    "source": "DNA methylation and CG content negatively influence elongation rate, and could partially explain the difference between mESC and differentiated cell line derived elongation rates (Danko et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative explanation based on observed correlations and comparison with published data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Repression of H3K79me2 has been observed to increase reprogramming efficiency of fibroblasts to iPSCs.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, repression of H3K79me2 has recently been observed to increase reprogramming efficiency of fibroblasts to iPSCs, by reducing expression of lineage specific genes in the first stages of reprogramming (Onder et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Onder et al., 2012.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Reprogramming efficiency by reducing H3K79me2 levels could be a result of elongation rate modulation.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore argue that reprogramming efficiency by reducing H3K79me2 levels could be a result of elongation rate modulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative explanation based on the positive effect of H3K79me2 on elongation rates.",
+    "evidence_type": [
+      "DATA",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "Mammalian genes of over 200 kb and twofold differences in elongation rates between genes are not uncommon.",
+    "claim_type": "EXPLICIT",
+    "source": "Mammalian genes of over 200 kb and twofold differences in elongation rates between genes are not uncommon, leading to variation in response time of mRNA production of an hour or more.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the measured elongation rates and gene lengths.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Variation in elongation rates can lead to variation in response time of mRNA production of an hour or more.",
+    "claim_type": "EXPLICIT",
+    "source": "Mammalian genes of over 200 kb and twofold differences in elongation rates between genes are not uncommon, leading to variation in response time of mRNA production of an hour or more.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from gene lengths and elongation rate differences.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "Timing of mRNA production can be very relevant in development and the stress response.",
+    "claim_type": "EXPLICIT",
+    "source": "This timing can be very relevant in development and the stress response (Thummel, 1992; Swinburne and Silver, 2008), and could not only be dependent on intron length, but also be regulated by elongation rate modulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations and inference from elongation rate variation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "Pol II slows down at each exon.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we show directly that exon density is the greatest predictor of elongation rates (Figure 6), strongly suggesting that Pol II slows down at each exon.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the strong negative correlation between exon density and elongation rates.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Exonic features such as CpG methylation, H3K36me3 and H3K4me1 could work synergistically to establish a transient slow down at exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Exonic features such as CpG methylation, H3K36me3 and H3K4me1 could work synergistically to establish a transient slow down at exons (Figure 6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative explanation based on observed correlations.",
+    "evidence_type": [
+      "DATA",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "Rates of elongation have been shown to influence splicing outcomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Although rates of elongation have been shown to influence splicing outcomes (Howe et al., 2003; de la Mata et al., 2003), the effects on specific genes, we suggest, will be governed by competing processes such as rates of splicing complex assembly, RNA secondary and tertiary structure formation, and regulatory factor binding.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to published studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "The observed slow down of transcription at exons supports the general view that Pol II elongation rates are coupled to splicing at all exons.",
+    "claim_type": "EXPLICIT",
+    "source": "While our data cannot on its own assess the outcomes on alternative splicing of such competing and cooperating processes, our observed slow down of transcription at exons supports the general view that Pol II elongation rates are coupled to splicing at all exons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the observed delay at exons.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  }
+]

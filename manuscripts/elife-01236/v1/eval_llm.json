@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "MM1.S cells treated with 20 nM bortezomib undergo rapid apoptosis with caspase activation at 6 hr and <10% viability by 12 hr. Total mRNA decreases markedly prior to cell death, while total RNA and protein levels remain relatively stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the experimental timeline and basic cellular responses. Figure 1B provides direct measurements of caspase activity, viability, total mRNA, RNA, and protein across time points with error bars (duplicate measurements). The kinetics are consistent with prior apoptosis literature cited (C4). This foundational result is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Analysis of 5680 well-expressed transcripts by mRNA-seq and ribosome profiling reveals that ribosome footprints generally track with transcript abundance. Unsupervised hierarchical clustering identifies five distinct clusters: Upreg (increased mRNA and footprints), Downreg (decreased mRNA and footprints), Stable (minimal changes), TE Up, and TE Down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 describe the clustering approach and major transcript groups. Figure 1C heat map clearly shows the five clusters with coordinated or divergent patterns of mRNA and footprint changes. The clustering methodology (unsupervised hierarchical with Spearman correlation) is appropriate. Figure 2A-B provide specific gene examples validating the Upreg/Downreg patterns. The general tracking of footprints with mRNA (C8) is visually evident in Figure 1C for most transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C22",
+      "C23",
+      "C43"
+    ],
+    "result": "Translational efficiency (TE), calculated as the ratio of ribosome footprint to mRNA-seq read density, reveals two clusters (TE Up and TE Down) with large changes in ribosome occupancy but minimal mRNA changes. These clusters show statistically significant TE distribution changes (p<0.0001, Mann-Whitney test) but mean TE changes generally do not exceed twofold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16, C22-C23, C43 establish translational regulation. The TE calculation method (C13) is standard and properly cited. Figure 2F demonstrates statistically significant TE distribution shifts for both clusters (p<0.0001), and Figure 2G shows mean TE changes remain modest (<2-fold). The inference of translational regulation (C16) is reasonable given stable mRNA with changing footprints, though alternative explanations (mRNA localization, stability of specific transcripts) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "ATF4 shows increased ribosome occupancy (~3-fold) without mRNA increase, consistent with known translational control via two uORFs during ER stress. An additional single-methionine uORF 22 nt from the 5' end shows strong footprint density of unclear significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C56-C59 characterize ATF4 regulation. Figure 2C and Figure 1\u2014figure supplement 3 show increased footprints without mRNA increase. Figure 3E displays footprint density across known uORFs and the novel single-Met uORF. Western blot (Figure 1\u2014figure supplement 2) confirms ATF4 protein increase. The known mechanism (C19, C56) is properly cited. The speculation about the single-Met uORF (C59) is appropriately cautious. This is a well-validated positive control for translational regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Cluster TE Up is enriched for XBP1-regulated genes (p=8.79\u00d710\u207b\u00b9\u2070), including ER transport machinery genes like SEC61B showing 1.5-2-fold increases in translation vs transcription. Most XBP1 targets show increased TE without mRNA increases, suggesting a parallel UPR mechanism favoring adaptation to cellular stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20, C31-C37 propose XBP1-independent translational control. The IPA enrichment (C31) and specific examples (C20, C36) are data-supported. However, the inference of a 'parallel UPR mechanism' (C37) is speculative. The slight XBP1s protein increase (C34, Figure 1\u2014figure supplement 2) could still drive transcription that's offset by global mRNA degradation. Alternative explanations (mRNA-specific stability, localized translation) are not tested. The 1.5-2-fold TE changes are modest and within the range of technical variation noted in Figure 1\u2014figure supplement 1 (~28% difference between replicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cluster TE Down includes ribosomal structural proteins and is enriched for eIF2 signaling pathway (p=2.35\u00d710\u207b\u00b9\u2077). The 5% of genes with highest baseline TE are enriched for mitochondrial dysfunction pathway (p=1.52\u00d710\u207b\u00b2\u2076), including cytochrome c oxidase and NADH dehydrogenase subunits, suggesting preferential translation of aerobic metabolism components at baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C38-C42 characterize TE Down and baseline TE patterns. Figure 2E shows RPL7A example, Figure 2\u2014figure supplement 1 shows additional ribosomal proteins, and Table 1 provides pathway enrichment statistics with highly significant p-values. The inference about aerobic metabolism preference (C42) is reasonable given the strong enrichment and specific gene composition. The pathway analysis methodology is standard.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Pathway analysis reveals Cluster Upreg is enriched for protein ubiquitination (p=1.50\u00d710\u207b\u00b3\u2074), degradation (p=9.63\u00d710\u207b\u2079), chaperones (p=4.15\u00d710\u207b\u00b9\u00b9), and hypoxic response (p=2.90\u00d710\u207b\u00b9\u2070). Cluster Downreg is enriched for cellular proliferation (p=3.61\u00d710\u207b\u00b9\u00b9) and DNA repair (p=3.81\u00d710\u207b\u2079). Canonical apoptosis genes show little change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 describe pathway enrichments. Table 1 provides all p-values from IPA analysis using Fisher's exact test. The highly significant p-values and biological coherence (stress response up, proliferation down) support the findings. Figure 1\u2014figure supplement 3 confirms minimal changes in apoptosis genes (C30). The pathway analysis is appropriate for the data type, though IPA's proprietary algorithms limit full reproducibility assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Metagene analysis shows strong ribosome occupancy peaks at 5' and 3' CDS ends with 3-nucleotide periodicity consistent with triplet codon structure. No large changes in footprint distribution or overall 5' UTR translation relative to CDS translation were observed across time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 validate ribosome profiling quality and assess global UTR translation. Figure 3A shows expected peaks and periodicity, properly cited to prior methodology (Ingolia 2009). The lack of global UTR translation changes (C48) is shown in Figure 3B distribution plots. These quality control analyses are appropriate and the data meet expected standards for ribosome profiling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "274 genes show >2-fold increased 5' UTR translation and 219 show decreased 5' UTR translation (\u22653 time points). Cluster Upreg is over-represented in the increased group (p=0.033, \u03c7\u00b2), while both Upreg and Downreg are over-represented in the decreased group (p=0.0006 and p=0.014). The increased group includes translation factors, ribosomal proteins, chaperones, and proteasomal subunits; the decreased group includes UBB, BAG3, and CYCS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 characterize differential UTR translation. The 2-fold threshold and 3-timepoint requirement (C49-C50) are reasonable criteria. Statistical analysis by \u03c7\u00b2 (C51-C52) is appropriate for categorical enrichment. Figure 3\u2014figure supplement 1 shows no UTR length bias (C53). The biological patterns (C54-C55) are supported by Table 1 pathway analysis and specific examples in Figures 3C-D. However, the functional significance of UTR translation changes remains unclear without validation of protein isoforms or regulatory peptides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cycloheximide-based ribosome profiling identifies uORF translation in DDIT3 (CHOP) and PPP1R15A (GADD34), consistent with known regulation. Novel apparent uORF translation is detected in DDIT4 (REDD1), TXNIP, and PPP1R15B, identified by increased 5' UTR read density with peaks at AUG/near-AUG codons bounded by stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C66 identify potential novel uORFs. The validation of known uORFs in CHOP and GADD34 (C62, Figure 3\u2014figure supplement 2) supports the approach. However, the authors acknowledge cycloheximide doesn't identify uORFs as precisely as harringtonine/lactimidomycin (C61), limiting confidence in novel uORF assignments. Figures 3F-H and Figure 3\u2014figure supplement 3 show footprint patterns consistent with uORF translation, but without initiation-specific profiling or functional validation (mutagenesis, reporter assays), these remain putative. The biological significance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "iTRAQ proteomics identifies 2686 proteins (2572 with corresponding mRNA/footprint data) showing significant overlap in abundance range with ribosome profiling. Despite large mRNA/footprint changes, the vast majority of proteins show no distinct abundance changes. Only 12 proteins (0.47%) show >50% increase, mostly stress response proteins (chaperones, protein degradation machinery) and ferritin light chain (FTL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 present the striking proteomics findings. Figure 4B heat map clearly shows stable protein levels despite mRNA/footprint changes. The 12 increased proteins (C72-C74, Figure 4C) are well-documented with biological coherence (stress response). The FTL finding (C74-C75) is supported by independent literature citation. Figure 4\u2014figure supplement 1 validates comparable coverage between techniques (C68). The lack of UTR translation changes in increased proteins (C76) is shown in Figure 4\u2014figure supplement 3. This is a key finding, though the interpretation requires the modeling analysis (see below).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Orthogonal validation by label-free SRM for 152 proteins shows strong correlation with iTRAQ (R=0.80). For increased proteins, SRM detects greater abundance changes than iTRAQ, consistent with known iTRAQ reporter ion suppression in complex samples. SRM data likely reflect true protein abundance changes more accurately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 validate iTRAQ findings. Figure 4E shows strong correlation (R=0.80) between methods. The observation that SRM shows greater changes for increased proteins (C80) is properly attributed to known iTRAQ limitations with appropriate citation (Ow 2009). The inference that SRM is more accurate (C81) is reasonable given the technical differences. This orthogonal validation substantially strengthens confidence in the proteomics results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Translation is significantly decreased before cell death (polysome analysis, Figure 5\u2014figure supplement 1). Despite PERK phosphorylation at early time points, eIF2\u03b1 phosphorylation actually decreases after bortezomib exposure, suggesting alternative drivers of translation inhibition. 4E-BP1 dephosphorylation occurs at 6 hr followed by caspase degradation. Proteolysis of initiation factors begins at 6 hr and accelerates during apoptosis. Global mRNA degradation deprives ribosomes of translation substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C92 characterize translation inhibition mechanisms. Figure 5A Western blots clearly show decreased eIF2\u03b1 phosphorylation (C85) and 4E-BP1 dephosphorylation/degradation (C88), contrasting with typical ER stress responses. Figure 5\u2014figure supplement 1 polysome profiles (C82) and Figure 6\u2014figure supplement 1 N-terminomics data (C90) support progressive translation shutdown. The inference of multiple mechanisms (C86, C92) is well-supported by converging evidence. However, the relative contributions of each mechanism are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Proteins are relatively stable during bortezomib-induced apoptosis due to: (1) near-complete proteasome inhibition at 20 nM bortezomib, (2) extensive caspase cleavage of proteasome subunits, and (3) limited endoproteolysis affecting <20% of proteins with stable domains indistinguishable from intact proteins by iTRAQ. mRNAs with different steady-state half-lives are rapidly degraded with similar kinetics during apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 explain protein stability. The proteasome inhibition (C93) and caspase cleavage (C94) are supported by proper citations and Figure 6\u2014figure supplement 1. The limited proteolysis (C95) and stable domains (C96) are cited to prior work from the same laboratory. The inference that iTRAQ reflects production rather than degradation (C97) is logical given these constraints. The mRNA degradation kinetics (C98) are properly cited. This reasoning is sound, though the assumption that all cleaved proteins remain detectable by iTRAQ could be tested with N-terminal peptide analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Absolute abundance estimates show median 11 mRNA copies and ~16,000 protein copies per MM1.S cell, similar to mouse NIH3T3 cells. Footprint read density correlates slightly better with protein abundance than mRNA (Figure 5\u2014figure supplement 2). Increased 5' UTR translation at baseline may correlate with decreased steady-state protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 establish absolute quantification. The methods for estimating mRNA (C99) and protein (C100) copies are properly cited to Schwanhausser 2011. Figure 5C shows distributions with medians matching prior work (C103-C105), validating the approach. The correlations (C101) are shown in Figure 5\u2014figure supplement 2. The UTR-protein relationship (C102) is interesting but weak (p=0.35 per figure legend), limiting interpretation. The absolute quantification enables the modeling but carries inherent uncertainties acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "A modified mass-action model incorporating global mRNA degradation fits protein abundance data for 13 transcripts by varying ksp (10-270 proteins/transcript/hr), consistent with prior work. The model explains why transcripts with relative increases don't produce protein: absolute transcript numbers remain stable as transcription and degradation offset. Proteins with low baseline abundance show more dramatic relative increases than high-abundance proteins for the same transcript fold-change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 present the quantitative model. Figure 5B shows the differential equations with proper citation. Figures 5D-E and Figure 5\u2014figure supplement 4 show good fits to both mRNA and protein data for the 13-gene subset. The fitted ksp values (C111) match prior literature. The model successfully explains the disconnect between relative mRNA and protein changes (C112-C113) and predicts baseline abundance effects (C114, Figure 5\u2014figure supplement 5). However, the model makes simplifying assumptions (uniform mRNA degradation, constant kdp, no translational regulation) that may not hold for all genes. Testing on a broader gene set would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The DegraBase contains >8000 cleavage sites including >1700 putative caspase substrates. Quantitative SRM monitoring of 252 proteolytic peptides (163 caspase, 89 non-caspase) reveals no enrichment of any transcript cluster among caspase substrates. Hierarchical clustering defines five kinetic groups from Fastest to Slowest/No Change. Most non-caspase cleavages appear in Slow/Slowest groups, suggesting they are consequences rather than drivers of apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C125 characterize proteolytic dynamics. The DegraBase (C115) is properly cited. Figure 6A shows no cluster enrichment among substrates (C117), supporting the inference that substrate targeting is independent of abundance changes (C118). Figure 6C heat map clearly shows the five kinetic groups (C123) with most non-caspase peptides in slow groups (C124). The inference about consequences vs. drivers (C125) is reasonable given the kinetics, though functional validation would strengthen this conclusion. The SRM approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "16 non-caspase peptides show rapid cleavage kinetics (Fastest/Faster/Mid groups) similar to caspases. None have tryptic-like cleavages (significant absence, p=0.005, Fisher's exact test) and only one is annotated in MEROPS. These peptides show preponderance of Pro (3), Gln (4), and Glu (4) at P1, inconsistent with known cathepsin/calpain specificities, suggesting uncharacterized proteases acting with caspase-like kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C134 identify novel proteolytic events. Table 2 lists the 16 peptides with P1 residues and statistical analysis (C134). The absence of tryptic cleavages is statistically significant. The P1 residue distribution (C131) and comparison to known protease specificities (C132) are properly referenced to MEROPS. The inference of uncharacterized proteases (C133) is reasonable but speculative\u2014alternative explanations (non-canonical caspase activity, protease activation cascades) aren't fully excluded. Protease identification would be needed to confirm this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Upstream regulator analysis identifies NRF2, HSF1, and PERK as key regulators of Cluster Upreg genes. HSF1 inhibition (KRIBB11) and PERK inhibition (GSK2606414) both sensitize MM1.S cells to bortezomib-induced death, with most robust effects at concentrations exceeding in vitro IC50. These results support that integrated systems-level data can inform chemotherapeutic combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C145 propose therapeutic targeting. The upstream regulator analysis (C137) is shown in Table 1. The combination experiments (C142-C143) show additive effects in Figures 7A-B. However, several concerns limit confidence: (1) only single concentrations tested at single time point (24 hr), (2) no dose-response curves, (3) concentrations exceed IC50 (C144) raising off-target concerns explicitly noted by authors, (4) no mechanism validation (e.g., target engagement assays, rescue experiments), (5) no replicates shown with statistical testing. The proof-of-concept is interesting but requires substantial additional validation before concluding these specific combinations are effective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Integrated analysis reveals myeloma cells initially struggle to adapt to bortezomib through translational control of stress-responsive proteins, but general translation inhibition coupled with mRNA degradation leads to minimal protein changes despite transcriptional increases. Cells ultimately succumb via caspase and uncharacterized non-caspase protease activation. This integrated approach provides global, in-depth view of apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C152 synthesize the major findings. These summary statements accurately reflect the supported results from the manuscript. The integration of multiple systems-level approaches (C152) is indeed a strength, providing converging evidence for the main conclusions. The key insights about translation inhibition (C147), protein stability (C148), translational regulation (C149), and proteolysis (C151) are all well-supported by the data. This represents a comprehensive characterization of the cellular response to chemotherapy-induced apoptosis.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1889 @@
+{
+  "submission": {
+    "id": "27c5bb27-bfdb-4e67-a6f4-b0a82f26f6d1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:41:41.951678Z",
+    "updated_at": "2025-11-28T19:41:41.951678Z"
+  },
+  "content": [
+    {
+      "id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "submission_id": "27c5bb27-bfdb-4e67-a6f4-b0a82f26f6d1",
+      "content_type": "manuscript",
+      "content_text": "# The antigenic switching network of Plasmodium falciparum and its implications for the immuno-epidemiology of malaria\n\n## Authors\n\n- Robert Noble<sup>1</sup>\n- Z\u00f3e Christodoulou<sup>2</sup>\n- Sue Kyes<sup>2</sup>\n- Robert Pinches<sup>2</sup>\n- Chris I Newbold<sup>2</sup> \u2020\n- Mario Recker<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Zoology University of Oxford Oxford United Kingdom\n2. Weatherall Institute of Molecular Medicine, John Radcliffe Hospital Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntigenic variation in the human malaria parasite Plasmodium falciparum involves sequential and mutually exclusive expression of members of the var multi-gene family and appears to follow a non-random pattern. In this study, using a detailed in vitro gene transcription analysis of the culture-adapted HB3 strain of P. falciparum, we show that antigenic switching is governed by a global activation hierarchy favouring short and highly diverse genes in central chromosomal location. Longer and more conserved genes, which have previously been associated with severe infection in immunologically naive hosts, are rarely activated, however, implying an in vivo fitness advantage possibly through adhesion-dependent survival rates. We further show that a gene\u2019s activation rate is positively associated sequence diversity, which could offer important new insights into the evolution and maintenance of antigenic diversity in P. falciparum malaria.\n\n## Introduction\n\nAcquired antibody-mediated immunity against Plasmodium falciparum is directed against the disease-causing, intra-erythrocytic life-stage of the parasite\u2019s life-cycle. Continual exposure to P. falciparum infection can lead to a form of semi-immunity, whereby protection against life-threatening disease is acquired after a few infections only (Gupta et al., 1999) whereas sterile and long-lasting immunity against infection is never achieved through natural exposure (Greenwood et al., 1987; Marsh, 1992; Tran et al., 2013). The process of natural acquired immunity therefore coincides with a transition from acute and severe infection in young children to asymptomatic carriage in older individuals (Marsh and Snow, 1997). At the core of this variable outcome of infection and poor development of immunity lies the major parasite virulence factor and variant antigen, P. falciparum erythrocyte membrane protein 1 (PfEMP1). Members of this family of proteins are expressed on the surface of infected red blood cells and are involved in the binding of parasitised cells to other host cells and tissues (for an overview see Kraemer and Smith, (2006)). The conferred binding phenotypes are believed to enhance parasite survival by avoiding splenic clearance (Boone and Watters, 1995; Buffet et al., 2009) and also contribute to malaria pathology through parasite sequestration in the deep vasculature (Ockenhouse et al., 1991; Pongponratn et al., 1991). Mutually exclusive transcriptional switching between PfEMP1 variants during the course of an infection thus affords the parasite an immune evasion strategy and a means to exploit different host tissues (Roberts et al., 1992; Smith et al., 1995).\n\nEach haploid parasite genome contains approximately 60 members of the var gene family (Gardner et al., 2002) encoding distinct PfEMP1 variants, with a high degree of divergence between the antigenic repertoires of any two parasites. The high diversity of var genes and var gene repertoires is predominantly generated and maintained by frequent recombination and gene conversion events (Deitsch et al., 1999; Ward et al., 1999; Freitas-Junior et al., 2000; Taylor et al., 2000; Kraemer et al., 2007; Frank et al., 2008), which has also resulted in a high degree of mosaicism within these genes (Ward et al., 1999; Taylor et al., 2000; Bull et al., 2008). The modular and highly polymorphic, extracellular portion of PfEMP1 is composed of a variable number of Duffy-binding-like domains (DBL; at least two and up to seven per gene) and cysteine-rich interdomain regions (CIDR; up to two per gene) (Kraemer et al., 2007). Despite the overall diversity of var genes at the sequence level, distinct associations with severe malaria have been identified for several such genes (Salanti et al., 2003; Jensen et al., 2004), with the involvement of var2csa in pregnancy-associated malaria being the clearest example to date (Salanti et al., 2004), as well as associations with particular DBL domains (Warimwe et al., 2009) and combinations of DBL and CIDR (Avril et al., 2012; Claessens et al., 2012; Lavstsen et al., 2012).\n\nVar genes can also be classified according to a conserved upstream promoter sequence into four types termed UpsA, UpsB, UpsC, and UpsE (Lavstsen et al., 2003). Of particular interest are the UpsA-type genes, which appear to have diverged from the other groups (Kraemer et al., 2007; Bull et al., 2008) and have been shown to be upregulated during severe infections in young hosts (Jensen et al., 2004; Bull et al., 2005; Kaestli et al., 2006; Kyriacou et al., 2006; Rottmann et al., 2006; Warimwe et al., 2009). As a possible consequence, acquisition of anti-PfEMP1 immunity appears to follow a particular order, with UpsA variants generally being the first to be broadly recognised in older children (Warimwe et al., 2009; Cham et al., 2010). Nevertheless, clear associations between the expression of particular genes or Ups-groups, host age and severity of disease are still missing and could in fact be strain- or location-specific. Understanding the underlying pattern of antigenic switching between var genes is therefore important to explain not only the mechanisms and dynamics of persistent infections but also the relationship between immune-mediated expression of particular PfEMP1 sub-types and infection outcomes.\n\nVarious studies have investigated var gene expression during natural or experimental infections (Peters et al., 2002; Lavstsen et al., 2005; Wunderlich et al., 2005; Blomqvist et al., 2010). However, as the diversity and order of PfEMP1 variants in the human host is influenced by immune responses and other host factors (Kyriacou et al., 2006; Warimwe et al., 2009), attempts to elucidate the underlying patterns of antigenic change and estimate related switching parameters are commonly based on in vitro cultured parasites in the absence of selection pressure. In this setting, Horrocks et al. (Horrocks et al., 2004) found that the rates at which var genes activate or deactivate are non-random, gene-specific and highly dissimilar. It has furthermore been suggested that var genes occupying subtelomeric loci tend to switch off faster than those positioned in central chromosomal regions (Frank et al., 2007), offering a possible explanation for the rapid decline in the transcription of subtelomeric genes in parasites during culture adaptation (Peters et al., 2007; Zhang et al., 2011). More recently, Recker et al. (2011) proposed that var gene transcriptional change involves a highly structured pathway that has evolved in response to a trade-off between the within-host and the between-host level fitness. However, most of these previous studies were limited in analytical depth due to restrictions in the number of variants considered and/or time points at which gene transcription levels were measured, and could therefore describe only small fragments of the whole switching network.\n\nIn this study, we used a novel approach to provide the first detailed characterisation of antigenic switching in the HB3 isolate of P. falciparum. We analysed pooled var gene transcription data from verified quantitative real time PCR measurements of a diverse set of clonal parasite cultures using a statistically rigorous method of parameter estimation. This revealed a global hierarchy in var gene activation favouring a highly diverse set of genes in central chromosomal locations. Our results further suggest a role of active gene transcription in the generation of antigenic diversity and will have important implications for understanding the age- and exposure-dependent pathology of P. falciparum malaria.\n\n## Results\n\n11 subclones of the lab-adapted HB3 isolate of P. falciparum were obtained by serial dilution of the parent culture. The clones were cultivated and transcript levels of 38 var genes measured by quantitative PCR, first at 29\u201333 parasite generations (8\u20139 weeks) after cloning and then at several time points over the following 60\u201379 generations in each culture (Table 1); a detailed description can be found in the \u2018Materials and methods\u2019 section. These 38 genes comprised almost all known functional HB3 var genes (Kraemer et al., 2007; Rowe et al., 2009) and one partial gene. The HB3 parent culture was also observed at seven time points. At the first observation, each of the 11 clones predominantly transcribed one of the nine different var genes, which were most likely the genes transcribed at the time of cloning. Importantly, these nine genes\u2014hereafter referred to as \u2018starter genes\u2019\u2014were representative of the var repertoire diversity in terms of chromosomal location and Ups type.\n\n**Table 1.**\n Parasite culture and RNA sampling information\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Culture</th>\n      <th>Starter gene</th>\n      <th>Observed generations</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>var11</td>\n      <td>29, 48, 59, 69, 89</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>var13</td>\n      <td>29, 48, 69, 89, 99, 108</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>var13</td>\n      <td>30, 49, 70, 90, 100, 109</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>var5</td>\n      <td>30, 39, 49, 60, 70, 90</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>var27</td>\n      <td>30, 49, 70, 90</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>var27</td>\n      <td>29, 38, 48, 69, 89</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>var28</td>\n      <td>33, 52, 63, 73, 93</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>var29</td>\n      <td>30, 49, 70, 80</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>var30</td>\n      <td>29, 48, 59, 69, 89</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>var31</td>\n      <td>29, 48, 59, 69, 89, 99, 108</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>var35</td>\n      <td>32, 51, 65, 72, 92</td>\n    </tr>\n    <tr>\n      <td>Parent</td>\n      <td>\u2013</td>\n      <td>0, 9, 19, 40, 60, 70, 79</td>\n    </tr>\n  </tbody>\n</table>\n\n### Var gene transcription dynamics\n\nThe proportional transcript levels of the different starter genes declined at notably different rates over the course of the experiment (Figure 1, Figure 1\u2014figure supplements 1 and 2). For example, the centrally located, UpsC starter gene var29 in culture #8 accounted for more than 90% of the total transcript level at the first measurement and remained the dominant variant over the following 60 generations. In contrast, the transcript level of the var35 starter gene of culture #11 (subtelomeric, UpsA promoter type) was already below 50% of the total transcript level at the point of the first observation (approximately 30 generations post cloning) and continued to decline during the time course of culture, to be eventually replaced by other genes as dominant transcripts. Similar patterns were seen in cultures #3 and #7, which both had centrally located, UpsC starter genes, whereas the remaining five starter genes showed intermediate rates of decline.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig1-v1.jpg)\n\n**Figure 1.:** The parasite cultures initially expressed a variety of dominant \u2018starter genes\u2019, which switched off at notably different rates. Nevertheless, most cultures converged towards high level transcription of two centrally located genes var27 and var29 (red and blue lines, respectively), whereas most other gene transcripts (grey lines) remained at relatively low levels.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The relative transcript levels of activated var genes were measured by qRT-PCR at various time points during in vitro culture for 11 clones with different starter genes, plus the parent culture. Columns one and two show the measured transcript levels at linear and logarithmic scale, respectively; columns three and four show the model fit. Error bars show approximate 95% confidence intervals estimated from qRT-PCR replicates.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The relative transcript levels of activated var genes were measured by qRT-PCR at various time points during in vitro culture for 11 clones with different starter genes, plus the parent culture. Columns one and two show the measured transcript levels at linear and logarithmic scale, respectively; columns three and four show the model fit. Error bars show approximate 95% confidence intervals estimated from qRT-PCR replicates.\n\nOf particular interest was the apparent convergence of most cultures towards high transcription of var27 and/or var29 (Figure 1, Figure 1\u2014figure supplements 1 and 2), which are both situated in central chromosomal location but have different promoter types (UpsB and UpsC, respectively). In light of the very different initial conditions, in terms of var gene transcription levels at which these cultures were established, this indicates that antigenic switching in P. falciparum might be governed by an activation hierarchy.\n\nTo fully understand the patterns of antigenic switching underlying the observed transcriptional changes in our parasite cultures, we estimated relevant switch parameters using a previously described Markov chain Monte Carlo (MCMC) method (Noble and Recker, 2012) (\u2018Materials and methods\u2019). We have previously proposed that var gene switching can be fully described dynamically by two sets of parameters (\u2018Materials and methods\u2019 and [Recker et al., 2011]). First, each gene i has an off-rate, $\\omega_{i}$, which is the per generation probability of switching from active to silenced. Second, each gene has a switch bias, $\\beta_{ij}$, which is the probability that when gene i switches off, gene j becomes activated. We applied our algorithm to the full 38-gene data set and separately to a reduced set of the 16 most transcribed genes, and both models generally gave good and similar fits between the data and predicted transcript levels (Figure 1\u2014figure supplements 1 and 2), with deviations resembling stochastic measurement errors.\n\nOur method provided estimated switch parameters for the entire var repertoire, which are illustrated in Figure 2 for the 16 most highly transcribed genes. Due to higher signal to noise ratios, parameter estimates of the starter genes (indicated in red) were more accurate and resulted in much narrower credible intervals, as indicated by less fuzzy rings that represent respective switch probabilities. As clearly demonstrated in Figure 2, there was wide distribution in switch biases and off-rates, and we next analysed for specific associations between these parameters and other gene characteristics.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig2-v1.jpg)\n\n**Figure 2.:** Parameter estimations for the 16 most transcribed var genes are represented as a switch matrix and an off-rate vector. The diameter of a circle in the ith row and jth column of the matrix is proportional to the switch bias $\\beta_{ij}$ from gene i to gene j, and the diameter of a circle in the off-rate vector is proportional to the rate $\\omega_{i}$ at which gene i becomes silenced. The fuzziness indicates uncertainty in the estimate, such that the darkness of each concentric ring is proportional to the likelihood that the parameter is within the corresponding range (Noble and Recker, 2012). Starter gene parameters, which are more precisely estimated, are in red, and genes are arranged from left to right, and top to bottom, in order of average transcript level.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Our method was able to estimate switching parameters not only for starter genes, which were initially transcribed in our cultures, but also for other var genes. To test the accuracy of the latter estimates, we used a cross-validation technique. For example, to generate an alternative set of parameter estimates for var29, we ran the MCMC algorithm without the data for culture #8, which began as a clone transcribing var29. The matrix shown here is a composite of estimates derived in this way. The similarity to Figure 2 confirms that our method was reliable.\n\n### Off-rate estimates suggest a role of chromosomal location, not promoter type\n\nEstimated off-rates ranged from 0.3% to more than 5% per generation, with a mean of approximately 2.9% (Table 2). Notably, the two most transcribed genes, var29 and var27 (both centrally located on chromosome 4), had exceptionally low off-rates of approximately 0.3% and 0.8%, respectively, whereas the other starter genes switched off at rates between 1.4% and 3.5% per generation. In general we found off-rates of centrally located genes to be significantly lower than of genes in subtelomeric regions (Welch\u2019s t = 3.3, p=0.002), as shown in Figure 3. This result remained significant (p=0.035) when we accounted for uncertainty in our estimates (\u2018Materials and methods\u2019).\n\n**Table 2.**\n Parameter estimates for the HB3 var repertoire with 95% credible intervals\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Location</th>\n      <th>Domains*</th>\n      <th>Ups</th>\n      <th>Off-rate (95% CI)</th>\n      <th>Activation bias (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>var29</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>C</td>\n      <td>0.3% (0.1, 0.5)</td>\n      <td>27% (22, 32)</td>\n    </tr>\n    <tr>\n      <td>var27</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>B</td>\n      <td>0.8% (0.5, 1.2)</td>\n      <td>23% (19, 28)</td>\n    </tr>\n    <tr>\n      <td>var35</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>C</td>\n      <td>3.3% (2.2, 4.7)</td>\n      <td>8.0% (5.8, 11)</td>\n    </tr>\n    <tr>\n      <td>var28</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>C</td>\n      <td>2.2% (1.4, 3.1)</td>\n      <td>6.9% (5.2, 9.1)</td>\n    </tr>\n    <tr>\n      <td>var32</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>C</td>\n      <td>4.7% (2.5, 5.9)</td>\n      <td>2.5% (1.5, 3.3)</td>\n    </tr>\n    <tr>\n      <td>var36</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>C</td>\n      <td>1.8% (0.2, 4.2)</td>\n      <td>2.5% (1.5, 4.1)</td>\n    </tr>\n    <tr>\n      <td>var31</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>C</td>\n      <td>1.4% (0.9, 2.0)</td>\n      <td>2.2% (1.7, 2.9)</td>\n    </tr>\n    <tr>\n      <td>var34</td>\n      <td>Central</td>\n      <td>6</td>\n      <td>C</td>\n      <td>1.3% (0.1, 3.4)</td>\n      <td>2.1% (1.4, 3.6)</td>\n    </tr>\n    <tr>\n      <td>var13</td>\n      <td>Subtelomeric</td>\n      <td>4</td>\n      <td>B</td>\n      <td>1.9% (1.5, 2.4)</td>\n      <td>2.1% (1.6, 2.8)</td>\n    </tr>\n    <tr>\n      <td>var30</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>C</td>\n      <td>1.9% (1.3, 2.7)</td>\n      <td>1.9% (1.4, 2.5)</td>\n    </tr>\n    <tr>\n      <td>var10</td>\n      <td>Subtelomeric</td>\n      <td>5</td>\n      <td>B</td>\n      <td>3.4% (1.1, 5.7)</td>\n      <td>1.7% (0.94, 2.7)</td>\n    </tr>\n    <tr>\n      <td>var17</td>\n      <td>Central</td>\n      <td>6</td>\n      <td>B</td>\n      <td>3.0% (0.8, 5.6)</td>\n      <td>1.7% (0.90, 2.8)</td>\n    </tr>\n    <tr>\n      <td>var24</td>\n      <td>Central</td>\n      <td>6</td>\n      <td>B</td>\n      <td>1.9% (0.1, 5.2)</td>\n      <td>1.6% (0.85, 3.1)</td>\n    </tr>\n    <tr>\n      <td>var7</td>\n      <td>Subtelomeric</td>\n      <td>7</td>\n      <td>B</td>\n      <td>2.2% (0.3, 5.1)</td>\n      <td>1.5% (0.83, 2.7)</td>\n    </tr>\n    <tr>\n      <td>var19</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>B</td>\n      <td>1.3% (0.1, 3.2)</td>\n      <td>1.4% (0.93, 2.5)</td>\n    </tr>\n    <tr>\n      <td>var26</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>B</td>\n      <td>1.5% (0.2, 3.4)</td>\n      <td>1.4% (0.90, 2.3)</td>\n    </tr>\n    <tr>\n      <td>var25</td>\n      <td>Central</td>\n      <td>6</td>\n      <td>B</td>\n      <td>2.7% (0.4, 5.6)</td>\n      <td>1.2% (0.60, 2.1)</td>\n    </tr>\n    <tr>\n      <td>var1csa</td>\n      <td>Subtelomeric</td>\n      <td>8</td>\n      <td>A</td>\n      <td>5.5% (4.4, 6.0)</td>\n      <td>1.2% (0.89, 1.5)</td>\n    </tr>\n    <tr>\n      <td>var33</td>\n      <td>Central</td>\n      <td>4</td>\n      <td>C</td>\n      <td>2.7% (0.5, 5.8)</td>\n      <td>1.1% (0.57, 1.9)</td>\n    </tr>\n    <tr>\n      <td>var16</td>\n      <td>Subtelomeric</td>\n      <td>4</td>\n      <td>B</td>\n      <td>2.8% (1.0, 5.3)</td>\n      <td>0.91% (0.52, 1.5)</td>\n    </tr>\n    <tr>\n      <td>var4</td>\n      <td>Subtelomeric</td>\n      <td>8</td>\n      <td>A</td>\n      <td>4.3% (2.1, 5.9)</td>\n      <td>0.86% (0.52, 1.3)</td>\n    </tr>\n    <tr>\n      <td>var14</td>\n      <td>Subtelomeric</td>\n      <td>4</td>\n      <td>B</td>\n      <td>4.0% (2.2, 5.9)</td>\n      <td>0.73% (0.45, 1.1)</td>\n    </tr>\n    <tr>\n      <td>var22</td>\n      <td>Central</td>\n      <td>7</td>\n      <td>B</td>\n      <td>1.9% (0.2, 5.1)</td>\n      <td>0.72% (0.42, 1.3)</td>\n    </tr>\n    <tr>\n      <td>var21</td>\n      <td>Central</td>\n      <td>7</td>\n      <td>B</td>\n      <td>4.7% (2.7, 5.9)</td>\n      <td>0.70% (0.46, 0.94)</td>\n    </tr>\n    <tr>\n      <td>var8</td>\n      <td>Subtelomeric</td>\n      <td>7</td>\n      <td>B</td>\n      <td>3.7% (1.8, 5.8)</td>\n      <td>0.66% (0.39, 1.0)</td>\n    </tr>\n    <tr>\n      <td>var11</td>\n      <td>Subtelomeric</td>\n      <td>5</td>\n      <td>B</td>\n      <td>1.5% (0.9, 2.2)</td>\n      <td>0.60% (0.45, 0.80)</td>\n    </tr>\n    <tr>\n      <td>var18</td>\n      <td>Subtelomeric</td>\n      <td>4</td>\n      <td>B</td>\n      <td>5.2% (3.8, 6.0)</td>\n      <td>0.60% (0.42, 0.79)</td>\n    </tr>\n    <tr>\n      <td>var5</td>\n      <td>Subtelomeric</td>\n      <td>6</td>\n      <td>A</td>\n      <td>3.5% (2.7, 4.3)</td>\n      <td>0.53% (0.39, 0.69)</td>\n    </tr>\n    <tr>\n      <td>var39p\u2020</td>\n      <td>Subtelomeric</td>\n      <td>2</td>\n      <td>B</td>\n      <td>4.7% (2.7, 6.0)</td>\n      <td>0.48% (0.30, 0.66)</td>\n    </tr>\n    <tr>\n      <td>var50\u03a8\u2021</td>\n      <td>Central</td>\n      <td>6</td>\n      <td>C</td>\n      <td>4.4% (2.0, 5.9)</td>\n      <td>0.46% (0.26, 0.67)</td>\n    </tr>\n    <tr>\n      <td>var23</td>\n      <td>Central</td>\n      <td>6</td>\n      <td>B</td>\n      <td>0.6% (0.0, 2.0)</td>\n      <td>0.38% (0.26, 0.55)</td>\n    </tr>\n    <tr>\n      <td>var9</td>\n      <td>Subtelomeric</td>\n      <td>6</td>\n      <td>B</td>\n      <td>2.8% (0.7, 5.3)</td>\n      <td>0.36% (0.20, 0.58)</td>\n    </tr>\n    <tr>\n      <td>var2csa</td>\n      <td>Subtelomeric</td>\n      <td>6</td>\n      <td>E</td>\n      <td>4.7% (2.3, 5.9)</td>\n      <td>0.28% (0.16, 0.40)</td>\n    </tr>\n    <tr>\n      <td>var2</td>\n      <td>Subtelomeric</td>\n      <td>6</td>\n      <td>A</td>\n      <td>1.4% (0.2, 4.2)</td>\n      <td>0.27% (0.17, 0.50)</td>\n    </tr>\n    <tr>\n      <td>var12</td>\n      <td>Subtelomeric</td>\n      <td>4</td>\n      <td>B</td>\n      <td>3.8% (1.5, 5.8)</td>\n      <td>0.26% (0.15, 0.40)</td>\n    </tr>\n    <tr>\n      <td>var20</td>\n      <td>Subtelomeric</td>\n      <td>4</td>\n      <td>B</td>\n      <td>4.1% (1.8, 5.9)</td>\n      <td>0.25% (0.14, 0.37)</td>\n    </tr>\n    <tr>\n      <td>var1</td>\n      <td>Subtelomeric</td>\n      <td>7</td>\n      <td>A</td>\n      <td>5.5% (4.2, 6.0)</td>\n      <td>0.024% (0.018, 0.031)</td>\n    </tr>\n    <tr>\n      <td>var6</td>\n      <td>Central</td>\n      <td>8</td>\n      <td>A</td>\n      <td>2.9% (0.4, 5.9)</td>\n      <td>0.018% (0.0086, 0.032)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Number of encoded DBL (Duffy binding-like) and CIDR (Cys rich inter-domain region).\u2020Partial gene.\u2021Psuedogene._\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig3-v1.jpg)\n\n**Figure 3.:** The estimated rates at which active var genes become silenced are significantly lower for centrally located var genes than for those in subtelomeric locations. There was no significant effect of upstream promoter type when differentially testing off-rates of genes in subtelomeric location (UpsA vs non-UpsA) or in central location (UpsB vs UpsC).\n\nPrevious studies reported that UpsA var genes from patient isolates were down-regulated faster than other var genes during adaptation to culture (Peters et al., 2007; Zhang et al., 2011). The HB3 repertoire contains seven UpsA genes, all but one of which are subtelomeric. We compared the off-rates of the subtelomeric UpsA genes with those of other subtelomeric genes and found no significant difference (Welch\u2019s t = 0.65, p=0.54; accounting for uncertainty p=0.55), as shown in Figure 3. Among centrally located genes we compared UpsB with UpsC and again found no significant difference (Figure 3; Welch\u2019s t = 0.44, p=0.44; accounting for uncertainty p=0.57). This lends support to a previous study suggesting that the rate at which transcriptionally active var genes become silenced is less dependent on promoter type than on chromosomal location (Frank et al., 2007).\n\n### Var gene switching is governed by an activation hierarchy\n\nIn each of our cultures, gene transcription levels spanned several orders of magnitude, and only a minority of genes were ever highly transcribed during the experiment. As mentioned earlier, despite the diversity of the starter genes, the relative transcript levels of the activated genes appeared to converge towards similar levels across all cultures (Figure 1, Figure 1\u2014figure supplements 1 and 2). To test the degree of similarity in gene activation, we excluded the nine starter genes and ranked the rest of the repertoire according to average transcript levels at later time points (more than 65 generations) for each culture. Pair-wise comparison showed that the ranking was highly correlated between the cultures (Spearman\u2019s \u03c1 > 0.8, p=10\u22125 for all pairs), suggesting that the outcome of antigenic switching in P. falciparum, or at least within the HB3 isolate, is largely governed by an activation hierarchy that is independent of the currently activated gene.\n\nConsistent with this hypothesis, the estimated switch biases between genes, $\\beta_{ij}$, were remarkably similar, so that $\\beta_{ij}\u2248\\beta_{kj}$ for each i, j and k. (Figure 2, Figure 2\u2014source data 1, Figure 2\u2014figure supplement 1). All genes were found to have high switch biases towards the same few genes, which explain the observed convergence in var transcription in our cultures. As expected, the highest biases across the repertoire were found towards var29 and var27, with some genes also frequently switching towards var35 and/or var28 (both UpsC-types in central chromosomal location).\n\nTo better describe the observed activation hierarchy, we used our MCMC method to estimate the average switch bias towards each gene, which we hereafter refer to as the gene\u2019s activation bias. That is, the activation bias of gene j is defined as the average of the switch biases \u03b2ij for all deactivating genes i. It can be understood as a gene specific, per switch activation probability and is therefore distinct from the previously defined on-rate (Horrocks et al., 2004), in that it is invariant to transcript levels. As shown in Table 2, there was a clear hierarchy in gene activation biases spanning over three orders of magnitude. The ranking also appeared to be non-random so that, for example, most genes within central chromosomal location were situated in the top half of the table. Analysing for possible associations with genetic attributes confirmed that activation biases of centrally located var genes are significantly higher than those of subtelomeric genes (Figure 4, Welch\u2019s t = 2.8, p=0.009; accounting for uncertainty p=0.011). In fact, of the highest four activation biases, three belonged to neighbouring genes on chromosome 4: var29, var27 and var28. Importantly, no significant and independent effect of promoter type was found, which again points towards a strong influence of chromosomal location on var gene activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig4-v1.jpg)\n\n**Figure 4.:** The mean activation bias is higher for centrally located var genes. Within the set of centrally located genes, those encoding only four binding domains have higher activation biases than longer genes. Together, short, central genes have activation biases \u2248 10 times higher than the rest of the repertoire.\n\nAdditionally, we considered whether gene architecture had an effect on the observed activation biases, as recent research suggests that gene length, in terms of the number of binding domains, is another important var gene characteristic besides chromosomal location and promoter type (Buckee and Recker, 2012). Grouping genes depending on whether they encoded only four domains (short genes) or more than four domains (long genes) showed that activation biases differed significantly depending on gene length (Figure 4, F = 9.7, p=0.004) as well as chromosomal location (F = 8.1, p=0.007) and the interaction of these two factors (F = 5.0, p=0.032). As such, central var genes encoding only four binding domains (also known as Type 1 var genes [Gardner et al., 2002]) had on average a 10 times higher activation bias than the rest of the repertoire. Results were similar when we accounted for uncertainty in our estimates (p=0.005, p=0.0096, p=0.037, respectively).\n\n### Var gene switching is influenced by the deactivating gene\n\nWe next tested explicitly whether the currently active gene has an influence on the direction of switching, that is if in general \u03b2ij\u2260\u03b2kj. We used an optimisation algorithm (\u2018Materials and methods\u2019) to fit two alternative models to the data for the 16 most highly transcribed var genes: (i) a general model including off-rates and individual switch biases (240 independent parameters), and (ii) a simpler model, in which all sets of switch biases were required to be identical, that is where \u03b2ij=\u03b2j for all i and j (31 independent parameters). A likelihood ratio test indicated that the model with individual switch biases was significantly more likely than the second model (F = 1.84, p<0.0001), confirming that antigenic switching in P. falciparum is not only controlled by an activation hierarchy but also influenced by the currently active gene. We again tested for associations with chromosomal location and promoter type (\u2018Materials and methods\u2019), which indicated that switch biases were higher between var genes with matching chromosomal locations than between differently located genes (Figure 5; Welch\u2019s t = 2.2, p=0.029), whereas no significant association was found between switch biases and matching Ups types or gene lengths. This result needs to be confirmed with larger data sets, however, as statistical significance was lost when we accounted for uncertainty in our parameter estimates.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig5-v1.jpg)\n\n**Figure 5.:** Antigenic switching between var genes is more frequent between genes with matching chromosomal locations, for example from central to central or from subtelomeric to subtelomeric. No significant associations between switch bias and matching Ups type or gene length are found.\n\n### Var gene sequences suggest a role of activation bias in antigenic evolution\n\nVar gene sequences can be described using a set of 628 conserved homology blocks, with an average length of 19 amino acids (Rask et al., 2010). Using homology blocks found only within the DBL1 and CIDR1 domains, which are present in all HB3 var genes except var1csa, var2csaA, var2csaB and the partial gene var39, we constructed a var gene homology network, in which edges between genes are defined and weighted by the number of shared homology blocks (Figure 6\u2014figure supplement 1). We then calculated the centrality of each gene within this network. This is a distance measure between all pairs of nodes (i.e., genes) and can therefore be used as a proxy for the relatedness of a gene to the rest of the repertoire. The inclusion of network centrality as an explanatory variable in the previous ANOVA model confirmed that the degree by which var genes share sequence blocks is positively correlated with activation bias, independently of chromosomal location and gene length (Figure 6A; F = 8.8, p=0.006 for the model comparison; accounting for uncertainty p=0.006).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig6-v1.jpg)\n\n**Figure 6.:** (A) Var gene activation biases are significantly correlated with each gene\u2019s relatedness to the rest of the HB3 repertoire, as measured by the gene\u2019s centrality within a shared homology block network, independently of chromosomal location or gene length. Trend lines show the fit of a linear regression model. (B) Simulation of var gene evolution by gene conversion, whereby homology blocks are swapped among pairs of genes chosen at random according to their activation biases, shows a similar correlation between the genes\u2019 activation biases and their relatedness to the rest of the repertoire. The red points show the outcome of one simulation, and the dashed line is the smoothed average of 50 runs. (C) Activation biases are negatively correlated with the gene\u2019s average domain sequence conservation, as a measure of population-level diversity, independently of chromosomal location and gene length. Trend lines show the fit of a linear regression model.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01074/elife-01074-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Each node represents a var gene, colour coded according to the chromosomal location and the number of binding domains. Node size indicates estimated activation bias. The strength of a connection between two nodes is proportional to the number of shared homology blocks in the DBL1 and CIDR1 domains. Stronger connections are shown thicker and darker, and the layout is force-directed.\n\nWe hypothesised that this could indicate a possible role of activation bias, or gene transcription, in var gene sequence evolution. Under the assumption that gene transcription facilitates recombination we would expect more frequently activated genes to share more sequence blocks with other genes, simply because they more often act as recombination sites. To test this we explicitly simulated gene conversion, in which pairs of genes were chosen at random, weighted by their activation bias and homology blocks copied between them (\u2018Materials and methods). As expected, we found a strong positive correlation between activation bias and our measure of relatedness in terms of network centrality (Figure 6B).\n\nUnder the same assumption we would also expect genes with higher activation biases to be overall more diverse. Indeed, using the average sequence conservation of all domains as a measure of population level diversity (Buckee and Recker, 2012), we again found this to be significantly and positively correlated, independently of chromosomal location and gene length (Figure 6C; F = 13.6, p=0.0009 for the model comparison; accounting for uncertainty p=0.0006), suggesting a role of active gene transcription in generating antigenic diversity in P. falciparum malaria.\n\n## Discussion\n\nSeveral studies have noted that var genes located near the centres of chromosomes tend to be more highly transcribed in vitro than those in subtelomeric location (Frank et al., 2007; Peters et al., 2007; Enderes et al., 2011; Zhang et al., 2011; Fastman et al., 2012), and it has been suggested that this might be due to low deactivation rates (Frank et al., 2007). In this study, we found that high transcription levels are confined to a subset of central genes that encode only four PfEMP1 binding domains (termed Type 1 var genes [Gardner et al., 2002]) and, importantly, are the result of high activation biases rather than low off-rates. That is, even though some of the most highly transcribed genes had very low off-rates, the total sum of other genes switching off with high bias towards these genes significantly outweighs the effect of off-rates. This is consistent with our previous study using artificial transcription data, which also showed that off-rates, at least within a biologically plausible range, can have only a modest effect on the total transcript levels within parasite populations (Noble and Recker, 2012).\n\nReanalysis of data from a recent study on the NF54 parasite strain by Fastman et al. (2012) supports these findings. Consistent with our results for HB3, centrally located var genes encoding only four binding domains were more highly transcribed than the rest of the repertoire (Welch\u2019s t = 2.3, p=0.02), with PF3D7_0809100, PF3D7_0421300 and PF3D7_0800100 being the most highly transcribed genes. According to our model, these are predicted to have high activation bias, and indeed, PF3D7_0809100 has previously been reported as the most transcribed var gene in NF54 bulk culture, whereas PF3D7_0421300 and PF3D7_0800100 were found to be the two genes most commonly activated by var gene switching in previous studies (Dzikowski et al., 2006; Frank et al., 2007; Enderes et al., 2011). Also in agreement with our results, NF54 gene transcription levels were positively correlated with relatedness to the rest of the repertoire in terms of shared DBL1 and CIDR1 homology blocks (Spearman\u2019s \u03c1 = 0.3, p=0.044).\n\nOur results further indicate that the direction of transcriptional switching between var genes depends not only on intrinsic activation biases but also on the particular preferences of each deactivating gene. Even though these variations were found to have only a modest effect on in vitro switching, they are expected to play a much greater role during infection, where factors such as immune responses and binding affinities can significantly alter the var gene expression profiles. Furthermore, the combination of an activation hierarchy and these specific variations could explain our previously proposed source-sink model underlying antigenic switching in P. falciparum (Recker et al., 2011), in which genes with high in-degrees, i.e., those most commonly switched to, correspond to the genes here identified as having high activation biases. Intriguingly, also, our results suggest that switch biases may be stronger between genes in similar chromosomal locations: central genes prefer to switch to other central genes, and subtelomeric genes prefer to switch to other subtelomeric genes. More data are needed to fully establish the factors influencing variation in switch biases, however, especially for less activated genes, where parameter estimations are more prone to uncertainties.\n\nDespite recent advances in elucidating the genetics and epigenetics of var gene activation and silencing, not much is known about how mutually exclusive switching between the 60 var genes is controlled at the molecular level. The discovery of intrinsic var gene activation biases and their associations with chromosomal locations and other genetic features could therefore have important implications for future studies. These factors are clearly correlated, however, and it is uncertain how they are linked by cause and effect. For example, in a recent study it was found that gene length is positively correlated with sequence conservation (Buckee and Recker, 2012), and long var genes are more often positioned in subtelomeric regions. Nevertheless, the correlation between activation bias and relatedness, which was found to be independent of chromosomal location, gene length and upstream promoter, suggests a role of gene transcription in facilitating recombination and therefore in generating and maintaining antigenic diversity in P. falciparum. Transcription-associated recombination has been observed in other eukaryotes and may result from increased accessibility to recombination proteins or from stalled replication forks (Prado and Aguilera, 2005; Gottipati and Helleday, 2009). Importantly, for P. falciparum this phenomenon could help to explain why different groups of var genes within the repertoire display very different levels of diversity within the population (Buckee et al., 2009; Buckee and Recker, 2012).\n\nIt is further possible that some var genes are under balancing selection, whereby the relative sequence conservation of longer genes could be due to optimised functionality, for example in terms of binding avidity and/or affinity. This assumption would also help to reconcile apparent contradictions between our observations and var gene transcription in vivo. That is, various in vivo studies have reported UpsA var genes to be over-expressed during infections in individuals with little previous exposure (Jensen et al., 2004; Bull et al., 2005; Lavstsen et al., 2005; Kyriacou et al., 2006; Warimwe et al., 2009), despite their low activation rates in vitro. Each var repertoire consists of a set of relatively long and conserved genes, such as those predominantly found with in the UpsA group, and another, short and diverse set of genes, such as those predominantly found within the UpsB and UpsC groups (Buckee and Recker, 2012). Under the assumption that more conserved genes have an in vivo survival advantage, possibly due to higher binding affinities (Avril et al., 2012; Claessens et al., 2012; Lavstsen et al., 2012), these variants will dominate early infections in naive hosts, regardless of activation rates. Their lower sequence diversity, however, will then lead to a more rapid acquisition of protective immunity, causing a transition towards the expression of more diverse variants, facilitated by their inherent activation biases. In light of this we would also speculate that the proposed order in which individuals acquire immunity (anti-UpsA followed by anti-UpsB/C), as well as the proposed associations between the expression of UpsA var genes and severe disease outcome, especially in young children, is less determined by the Ups group itself and is more a consequence of within-host selection of long, conserved genes, which are often but not exclusively found within the UpsA group.\n\nTogether, these results demonstrate how selection pressures operating on multiple ecological scales have shaped the phenotypic plasticity embodied within the antigenic repertoire of P. falciparum. Within this setup, var genes and the molecular mechanisms that underlie their sequential activation and silencing have co-evolved to allow the parasite to express the most advantageous phenotype in response to its current environment.\n\n## Materials and methods\n\n### Parasite culture and cDNA preparation\n\nParasites were cultured and sorbitol-synchronised using standard techniques (Trager and Jensen, 1976; Lambros and Vanderberg, 1979), and RNA was extracted from saponin lysed, mid-to-late ring stage parasites with Trizol as previously described (Kyes et al., 2000). For cDNA preparation, 5 \u03bcg RNA was treated in 20 \u03bcl reactions with TurboFree DNase (Ambion\u00ae; following manufacturer\u2019s recommendations except incubation was at 16\u00b0C for 40 min). All DNase treated RNA samples were tested by PCR with primers to fructose-bisphosphate aldolase (PF14_0425) (Salanti et al., 2003) to ensure complete removal of gDNA. Duplicate 20 \u03bcl reactions consisting of 6 \u03bcl RNA were reversed transcribed with 100 ng random hexamers (Invitrogen) and Bioscript reverse transcriptase (Bioline; following manufacturer\u2019s instructions) at 40\u00b0C for 40 min. The resulting cDNA was stored at \u221220\u00b0C in single-use aliquots and diluted 1:6 for real time PCR analysis. cDNA was synthesised in triplicate (84% of all data points) or duplicate, and real time PCR was done in duplicate for each primer pair on each cDNA.\n\n### Primer design and initial testing\n\nPrimers specific for the HB3 var exon 1 repertoire were optimised to meet several basic criteria: that they distinguished between the known var gene sequences within the HB3 genome; that they were specific for HB3 var genes with no cross-reactivity to 3D7 var genes (for future application to studies on 3D7 \u00d7 HB3 cross progeny); and that they reflected measurement of full-length var transcript. Primer pairs were designed using Primer3plus (Kraemer et al., 2007; Untergasser et al., 2007), with parameters manually set for product size range (100\u2013150 nt), primer length (20 nt), Tm (60\u00b0C), GC clamp (1 nt), salt correction formula and thermodynamic parameters (SantaLucia 1998); all other parameters were default settings (see Table 3 for primer sequences). To avoid general cross-detection of all var types, the first kilobase of exon 1 containing the conserved DBL\u03b1 domain was avoided. The final kilobase was also excluded to avoid sterile transcripts (Su et al., 1995; Kyes et al., 2007). Each primer pair was specific for a single gene except, unavoidably, the var3 primer pair and the two pairs designed to the highly similar copies of var2csa. Each HB3 primer pair was tested five times on gDNA; pairs that varied more than \u00b11.5 threshold cycles (Ct) values from the median or had efficiency value (Amplification) less than 1.85 were redesigned. Primer pairs that amplified 3D7 genomic DNA were discarded and redesigned so that they were specific for HB3 var genes only.\n\n**Table 3.**\n HB3 qPCR primers and cross-referenced var gene identifiers\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene name</th>\n      <th>Contig name</th>\n      <th>Broad locus name</th>\n      <th>F oligonucleotide</th>\n      <th>R oligonucleotide</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HB3 var16</td>\n      <td>HB3-1000-1</td>\n      <td>PFHG_03232.1</td>\n      <td>ccctgtccacaaccatcagc</td>\n      <td>cgtcgtcgtcatcagtgtcc</td>\n    </tr>\n    <tr>\n      <td>HB3 var1</td>\n      <td>HB3-1000-2</td>\n      <td>PFHG_03234.1</td>\n      <td>ccaaaggagaaggcaccacc</td>\n      <td>acctatggcacccctctcac</td>\n    </tr>\n    <tr>\n      <td>HB3 var12</td>\n      <td>HB3-1040</td>\n      <td>PFHG_03416.1</td>\n      <td>gatgctacaaccaccccacc</td>\n      <td>gtgttaccactcgcccactc</td>\n    </tr>\n    <tr>\n      <td>HB3 var27</td>\n      <td>HB3-1704_1</td>\n      <td>PFHG_03476.1</td>\n      <td>gctcccaaccaccacgttcc</td>\n      <td>gcttcctgctggtggctgtc</td>\n    </tr>\n    <tr>\n      <td>HB3 var28</td>\n      <td>HB3-1074-2</td>\n      <td>PFHG_03478.1</td>\n      <td>gatggcacaaaagttggcgg</td>\n      <td>tgttctgggtcgacctcctc</td>\n    </tr>\n    <tr>\n      <td>HB3 var29</td>\n      <td>HB3-1074-3</td>\n      <td>PFHG_03480.1</td>\n      <td>aagaagatggcgacgaaggc</td>\n      <td>tccggtgatccctcttctgg</td>\n    </tr>\n    <tr>\n      <td>HB3 var13</td>\n      <td>HB3-1107</td>\n      <td>PFHG_03516.1</td>\n      <td>tggtaaatgcaagggtgatacagg</td>\n      <td>tgcatcgttatcactcaccagc</td>\n    </tr>\n    <tr>\n      <td>HB3 var1csa</td>\n      <td>HB3-1108</td>\n      <td>PFHG_03521.1</td>\n      <td>cgcaatatgcaactaatgac</td>\n      <td>acttggcaatattctgaacg</td>\n    </tr>\n    <tr>\n      <td>HB3 var2</td>\n      <td>HB3-1210</td>\n      <td>PFHG_03840.1</td>\n      <td>cgaggacaccacggaggagg</td>\n      <td>ttggtgctgctggttgtggc</td>\n    </tr>\n    <tr>\n      <td>HB3 var5</td>\n      <td>HB3-1235</td>\n      <td>PFHG_03671.1</td>\n      <td>aggtctgctccttcagatgcgtg</td>\n      <td>tgttttccctaccatgacaaggatgcc</td>\n    </tr>\n    <tr>\n      <td>HB3 var36</td>\n      <td>HB3-1296</td>\n      <td>PFHG_04012.1</td>\n      <td>atggacaaatgatggtaagg</td>\n      <td>taggagtaggtgttgcgttc</td>\n    </tr>\n    <tr>\n      <td>HB3 var17</td>\n      <td>HB3-1296-2</td>\n      <td>PFHG_04014.1</td>\n      <td>agatggcgacaaaggccaag</td>\n      <td>ttgggtttggcaccactagc</td>\n    </tr>\n    <tr>\n      <td>HB3 var35</td>\n      <td>HB3-1296-3</td>\n      <td>PFHG_04015.1</td>\n      <td>aaacggaaaacctggcctcc</td>\n      <td>tcgtcttggcctttggcttc</td>\n    </tr>\n    <tr>\n      <td>HB3 var14</td>\n      <td>HB3-1308</td>\n      <td>PFHG_04035.1</td>\n      <td>ggtggtggtgccgatcccgcc</td>\n      <td>tgtgacgcctccgtcttagtggccc</td>\n    </tr>\n    <tr>\n      <td>HB3 var8</td>\n      <td>HB3-1334</td>\n      <td>PFHG_04081.1</td>\n      <td>ggcggtgtctgtattccacc</td>\n      <td>gctgcctcaccacctgttag</td>\n    </tr>\n    <tr>\n      <td>HB3 var9</td>\n      <td>HB3-1408</td>\n      <td>PFHG_04057.1</td>\n      <td>tgctatgacgtgtaatgcccc</td>\n      <td>acttacatgagtcccatctggtg</td>\n    </tr>\n    <tr>\n      <td>HB3 var32</td>\n      <td>HB3-1459</td>\n      <td>Fbadf</td>\n      <td>ggaaaccgcggtggactcac</td>\n      <td>acttgtgggtgctttggggc</td>\n    </tr>\n    <tr>\n      <td>HB3 var11</td>\n      <td>HB3-1499</td>\n      <td>PFHG_04491.1</td>\n      <td>attggatgatgcctgtcgcc</td>\n      <td>ggcacctggtttagtggtgg</td>\n    </tr>\n    <tr>\n      <td>HB3 var19</td>\n      <td>HB3-1514</td>\n      <td>PFHG_04620.1</td>\n      <td>aaactgacaatggccccgac</td>\n      <td>gttgttgagggggtcttcgg</td>\n    </tr>\n    <tr>\n      <td>HB3 var18</td>\n      <td>HB3-1523</td>\n      <td>PFHG_04593.1</td>\n      <td>gcggctcacccgacatcttc</td>\n      <td>gccgcctcgtcttcttcgtc</td>\n    </tr>\n    <tr>\n      <td>HB3 var10</td>\n      <td>HB3-1587</td>\n      <td>PFHG_04749.1</td>\n      <td>accactcgtgccaccacctc</td>\n      <td>gagtttgtacctggcaccccc</td>\n    </tr>\n    <tr>\n      <td>HB3 var7</td>\n      <td>HB3-1604-1</td>\n      <td>PFHG_04769.1</td>\n      <td>agcgagtggtactcaggagg</td>\n      <td>gatggaccacgagatgtgcc</td>\n    </tr>\n    <tr>\n      <td>HB3 var20</td>\n      <td>HB3-1604-2</td>\n      <td>PFHG_04770.1</td>\n      <td>acgaagaagacgatgccacc</td>\n      <td>gaagtcttcggagcgaccac</td>\n    </tr>\n    <tr>\n      <td>HB3 var4</td>\n      <td>HB3-1703</td>\n      <td>PFHG_04861.1</td>\n      <td>tggtgccaaagacccctccc</td>\n      <td>ggccactcgctgtgtctgtg</td>\n    </tr>\n    <tr>\n      <td>HB3 var2csaA</td>\n      <td>HB3-1727</td>\n      <td>PFHG_05046.1</td>\n      <td>gggggaaatgtggggtgccg</td>\n      <td>gggggataccccacactcattaccag</td>\n    </tr>\n    <tr>\n      <td>HB3 var3</td>\n      <td>HB3-1737</td>\n      <td>PFHG_05052.1</td>\n      <td>aaagtgcgaagcacctcccc</td>\n      <td>cgccactgcagggattagctg</td>\n    </tr>\n    <tr>\n      <td>HB3 var2csaB</td>\n      <td>HB3-1817</td>\n      <td>PFHG_05155.1</td>\n      <td>tggtacagctgatggtggtacttccg</td>\n      <td>tgtgcccgctttacggtttcg</td>\n    </tr>\n    <tr>\n      <td>HB3 var39p*</td>\n      <td>HB3-2007</td>\n      <td>efbe</td>\n      <td>agccattacgtgcgaagctgg</td>\n      <td>agcggcacatcggcatttttg</td>\n    </tr>\n    <tr>\n      <td>HB3 var34</td>\n      <td>HB3-209</td>\n      <td>PFHG_00592.1</td>\n      <td>agtggtgctgtagagccaaaagac</td>\n      <td>cctgcggcggtgctgtaagg</td>\n    </tr>\n    <tr>\n      <td>HB3 var23</td>\n      <td>HB3-699-1</td>\n      <td>PFHG_02272.1</td>\n      <td>gaaccccttgacgacgacac</td>\n      <td>ctcaacacacgtcaaaggcg</td>\n    </tr>\n    <tr>\n      <td>HB3 var30</td>\n      <td>HB3-699-2</td>\n      <td>PFHG_02273.1</td>\n      <td>aagacgacaaacctggcacc</td>\n      <td>gtcgttgcttttggcttcgg</td>\n    </tr>\n    <tr>\n      <td>HB3 var6</td>\n      <td>HB3-699-3</td>\n      <td>PFHG_02274.1</td>\n      <td>attcacagcactgaaagtcc</td>\n      <td>tcacaatcattaaaagcatcc</td>\n    </tr>\n    <tr>\n      <td>HB3 var26</td>\n      <td>HB3-699-4</td>\n      <td>PFHG_02276.1</td>\n      <td>aagcagctgatggaacggac</td>\n      <td>tggttgttgtgggtcttggc</td>\n    </tr>\n    <tr>\n      <td>HB3 var31</td>\n      <td>HB3-699-5</td>\n      <td>PFHG_02277.1</td>\n      <td>cgcgaagacgaaaacgtcac</td>\n      <td>gtttcatccggaccgtcctc</td>\n    </tr>\n    <tr>\n      <td>HB3 var50\u03a8\u2020</td>\n      <td>HB3-752-1</td>\n      <td>PFHG_02419.1</td>\n      <td>tggtaatgatgaagatgacg</td>\n      <td>gaattggcttcactttgttc</td>\n    </tr>\n    <tr>\n      <td>HB3 var24</td>\n      <td>HB3-752-2</td>\n      <td>PFHG_02421.1</td>\n      <td>gctcgctctttaccacccgc</td>\n      <td>ttccgtctcctccttcgccg</td>\n    </tr>\n    <tr>\n      <td>HB3 var25</td>\n      <td>HB3-752-3</td>\n      <td>PFHG_02423.1</td>\n      <td>agtggtgccaaaactgtcgg</td>\n      <td>accacaaaagtcgcttcccc</td>\n    </tr>\n    <tr>\n      <td>HB3 var22</td>\n      <td>HB3-752-4</td>\n      <td>PFHG_02425.1</td>\n      <td>ccaccacaaaacccctccag</td>\n      <td>tccgcttgtggttcgtcttc</td>\n    </tr>\n    <tr>\n      <td>HB3 var33</td>\n      <td>HB3-752-5</td>\n      <td>PFHG_02429.1</td>\n      <td>acagaaagttggacaggatg</td>\n      <td>atggttgttttgagaattgc</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Partial gene.\u2020Pseudogene._\n\n### qRT-PCR\n\nQuantitative real time PCR (qRT-PCR) reactions were prepared with a Corbett CAS1200 liquid handling system and run on a Corbett Rotor-Gene 6000. Each 10 \u03bcl reaction contained 1 \u03bcl template, 5 \u03bcl SensiMix SYBR (Bioline), 3 \u03bcl water and 1 \u03bcl primer mix (1.6 \u03bcM of each primer). The cycling conditions were as follows: hold, 95\u00b0C/10 min; 45 cycles (95\u00b0C/25 s, 58\u00b0C/25 s, 68\u00b0C/30 s); melt, 55\u00b0C\u221299\u00b0C. Amplicons were checked for a single product of the expected size by agarose gel electrophoresis. Melt analysis confirmed single products.\n\n### Data collection, processing and verification\n\nTranscription levels for each replicate were calculated by the comparative quantification method of Pfaffl (2001). Comparative quantification results are given as expression levels relative to a control (housekeeping) gene, seryl-tRNA synthetase (Seryl-tRNAF agctacctcagaacaaccattatgtgc, Seryl-tRNAR atcctttccatgtgcccctgc), which is arbitrarily set at 1.0. Minor differences in Take Off values between primer pairs were accounted for using a correction factor derived from five replicates on gDNA. Expression was determined using $A^{T.O.\u2212CF}$, where A is the average amplification, T.O. is the average Ct and CF is the correction factor. To express results relative to the control gene, the following formula was used: $A_{ref}^{TO\u2212CF}/A_{x}^{TO\u2212CF}$. Expression levels were converted to proportions before calculating geometric means of the replicates. Replicates were excluded as outliers (1.1%) if they deviated from the mean by a factor of more than 101.5 or had an amplification efficiency below 1.5 (most excluded measurements met both criteria).\n\nDominant var gene expression detected by qRT-PCR was verified as both full-length and dominant by northern blot analysis, comparing specific probes for each dominant gene vs a generic exon 2 probe (data not shown). The primer pairs for var genes 5, 11, 13, 27, 28, 29, 31 and 35 were thus verified as specific for detecting full-length transcripts. The var3 primer pair, which was known to also detect var5 and pseudogene var46, indicated dominant var3 alongside var5 in culture #4. However, we were unable to detect var3 expression by northern blot. As this sample was positive by northern blot probed with var5, and it was the only one with \u2018dominant\u2019 var3 expression by qRT-PCR, we discarded all var3 qRT-PCR data as ambiguous. We also discarded all the data from one of the two var2csaA/var2csaB primer pairs.\n\n### Parameter estimation\n\nFollowing Recker et al. (2011), we assumed that var transcription profiles can be described by a time-discrete model:\n\n$$\nv_{i,c,t+1}=(1\u2212\\omega_{i})v_{i,c,t}+\\sumj\\neqi\\omega_{j}\\beta_{ji}v_{j,c,t},\n$$\n\nwhere $v_{i,c,t}$ is the relative transcript level of variant i in culture c at time t, $\\omega_{i}$ is the variant specific off-rate and $\\beta_{ji}$ is the switch bias (probability of a switch) from variant j to variant i. We assumed a maximum off-rate of 6% per generation, which is consistent with previous studies and theory (Roberts et al., 1992; Horrocks et al., 2004; Frank et al., 2007; Recker et al., 2011).\n\nWe used a Markov chain Monte Carlo (MCMC) method to obtain posterior distributions of likely values for the switch biases and off-rates, using the pooled data from all observed cultures as input. For model comparisons we used a simulated annealing algorithm to find maximum likelihood parameter sets. These methods have previously been described in detail and tested using diverse artificial data sets (Noble and Recker, 2012). For some of our analyses it was desirable to use a model of reduced dimension. Previously we have shown that reliable parameter estimates can be obtained from data for the 16 most highly transcribed var genes (Noble and Recker, 2012), which in this case comprised the 9 starter genes and the 7 others with highest average transcript levels. These 16 genes together accounted, on average, for more than 92% of the sum of transcript levels in each culture (excluding the culture\u2019s starter gene), whereas none of the excluded genes accounted for more than 1%. To estimate activation biases, we modified the model so that the direction of switching was independent of the previously active gene (i.e., $\\beta_{ji}=\\beta_{ki}$ for all i, j and k).\n\nBefore conducting statistical tests, we transformed switch biases using the logit function $logit(x)=log(x/(1\u2212x))$ to map from the range (0,1) to the range $(\u2212\u221e,\u221e)$. Additionally, to account for uncertainty in our parameter estimates, we performed tests on the collected output of our MCMC method. This method samples from the posterior distribution, which means it selects numerous parameter sets such that the probability of each being chosen depends on how likely it is to explain the data. We performed our statistical tests on all the selected parameter sets and calculated mean p-values. We used the same parameter sets to obtain credible intervals for our estimates, as shown in Table 2.\n\n### Variation in switch biases\n\nWe found that all var genes had similar sets of switch biases, such that $\\beta_{ij}\u2248\\beta_{kj}$ for each i, j and k. A model comparison indicated that these sets were not identical but varied depending on the deactivating gene. To estimate these variations we took a subset of the MCMC switch bias estimates and standardised each set ${\\beta_{1j},\\beta_{2j},\u2026,\\beta_{nj}}$ by subtracting the mean and dividing by the standard deviation (after rescaling each set to compensate for $\\beta_{jj}=0$). Negative values then corresponded to biases that were smaller than average and positive values to those that were larger. We used the subset of switch biases from the 9 starter genes to the 25 most transcribed genes, omitting the diagonal terms.\n\n### Relatedness network\n\nWe constructed a network in which each node represented a gene and each edge was weighted by the number of shared variable DBL1 and CIDR1 homology blocks. Each gene\u2019s centrality within the network was calculated using a weighted closeness measure (Newman, 2001) implemented by the tnet package for R (Opsahl, 2009). We applied variance stabilising transformations to the data prior to analysis. Specifically, the centrality measure was rescaled and squared, and to each switch bias we applied the logit transformation, added five and then square-rooted the magnitude. These transformations made the data conform better to the assumptions of our statistical model; test results would have been more significant had we instead used the untransformed data.\n\n### Gene conversion model\n\nWe simulated gene conversion in a repertoire of 30 genes, each comprising 40 homology blocks, with 30 possible variants for each homology block. Genes were initially constructed of randomly chosen homology blocks and were assigned activation biases according to a geometric sequence. For 30,000 iterations, pairs of genes were selected at random, with the probability of selection being proportional to activation bias. A randomly chosen homology block was copied from the first of the chosen genes to replace the corresponding block in the second gene. Homology blocks in all genes also underwent random mutation at a rate 10 times lower than the gene conversion rate. We constructed a relatedness network and calculated centrality in the same way as for the HB3 data.\n\n### Initial conditions of the model\n\nOur switching model required a set of initial conditions. Assuming that each culture, excluding the parent, began with a single parasite and that populations expanded approximately fivefold per generation, we deduced that the first transcriptional switch most likely occurred, on average, two or three generations after cloning. Therefore we assumed that each of these cultures remained clonal for the first three generations. For the parent culture, we used the first observation as the initial condition. If a switch had occurred in one or more of the initially clonal cultures within the first few generations, when the population was very small, then our assumed initial conditions would be inaccurate. Therefore we also ran our algorithms using the first observations as the initial conditions for all cultures. The parameter estimates were highly consistent with those obtained using clonal initial conditions.\n\n### Cross-validation of parameter estimates\n\nThe simplest way to estimate switch biases and off-rates for a single var gene is to obtain a clone transcribing the gene, grow it in culture and analyse changes in transcript levels over time. A particular strength of our method was that it also estimated parameters for genes we did not clone. To assess the accuracy of results obtained in this way, we performed cross-validation by sequentially excluding data sets. For example, to derive alternative estimates for var29 we ran the MCMC algorithm without the data for culture #8 (which initially expressed var29), and to derive alternative estimates for var27 we excluded data for cultures #5 and #6. The results, shown in Figure 2\u2014figure supplement 1, confirmed our method\u2019s ability to estimate switch biases of non-starter genes with sufficient accuracy to determine the general switching pattern. Off-rate estimates were however not always accurate, especially for genes with very low transcript levels.\n\nWe used a similar method to test the accuracy of our method for estimating variations in switch biases. Cultures #2 and #3 initially expressed the same starter gene var13, and both cultures #5 and #6 initially expressed var27. By excluding the data from culture #2 we derived estimates for the var13 switch biases mostly dependent on the culture #3 data, and vice versa. Similarly we excluded data from each of cultures #5 and #6 to obtain two sets of estimates for the var27 switch biases. For each of the two different data sets we calculated the deviations from the mean switch biases and found these to be positively correlated (Pearson\u2019s \u03c1 = 0.43, p=0.015), confirming the validity of our method.\n\n### Validation of model assumptions\n\nOur likelihood function, used for parameter estimation and model comparisons, assumed that input data were subject to measurement errors following a log-normal distribution. We have previously shown that our MCMC algorithm reliably determines network structures when the measurement error distribution is log-normal (base 2) with standard deviation $\\sigma\\leq1$, and that \u03c3 can be reliably estimated using our simulated annealing algorithm (Noble and Recker, 2012). In the 16-gene model, $\\sigma\u22480.73$, which was well within the required range.\n\nTo test whether the measurement errors obeyed a log-normal distribution, we analysed the distribution of the deviations between the data and the simulated annealing output, after applying log transformations. The distribution for the 16-gene model was unimodal and only slightly asymmetrical (skewness 0.4) but was more peaked than a normal distribution (excess kurtosis 2.4), so that it somewhat resembled a Laplace distribution. We tried running the simulated annealing algorithm with an error function that assumed log-Laplace-distributed noise, and this made very little difference to the results. The deviations for the constrained 38-gene model were similarly distributed, excluding a very small minority of outliers.\n\nUnusually large deviations occurred at 13 of the 64 observed time points, 8 of which were between generations 48 and 52 and therefore belonged to the same round of measurements. Transcript levels deviated more for longer genes than for shorter genes, and northern blotting of the samples taken at the affected time points showed unusually low levels of long, for example var length, RNA, confirming that the cause was not PCR error but most likely an as yet unidentified artefact of RNA preparation. Excluding the 13 data points affected by this phenomenon made very little difference to our parameter estimates and statistical test results.\n\nAnalysis of the qRT-PCR replicates revealed that measurements of lower transcript levels had higher standard errors, but the average standard error increased only threefold for each 1000-fold difference in transcript level.\n\n### Growth rates\n\nIt has been suggested that var gene transcript levels in culture may be affected by small differences in parasite growth rates (Horrocks et al., 2004), although no evidence has been found to support this hypothesis. To test whether such differences might affect our estimates we added to our model an excess growth rate parameter $\u03d5_{i}$ for each gene i:\n\n$$\nv_{i,c,t+1}=(1\u2212\\omega_{i})(1+\u03d5_{i})v_{i,c,t}+\\sumj\\neqi\\omega_{j}\\beta_{ji}(1+\u03d5_{j})v_{j,c,t}.\n$$\n\nWhen we allowed growth rates to vary by up to 0.5% per generation (equivalent to approximately 50% over the duration of the experiment), the extended model was not significantly more likely than the model with only switch biases and off-rates. When we increased the upper bound on the excess growth rates to 1% per generation, the extended model became significantly more likely. However, such large differences in growth rates in vitro are biologically implausible and have never been observed. Importantly, the inclusion of growth rate differences had very little effect on our switch bias and off-rate estimates.\n",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "9280b055-9075-4d2e-b6ee-1c7f4970f818",
+      "submission_id": "27c5bb27-bfdb-4e67-a6f4-b0a82f26f6d1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mercedes Pascual, University of Michigan , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01074.017](https://doi.org/10.7554/eLife.01074.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u2018The antigenic switching network of Plasmodium falciparum and its implications for the immuno-epidemiology of malaria\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 3 reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis well written manuscript describes a thorough in vitro study of the var expression pattern in the Plasmodium falciparum HB3 laboratory strain. The authors study 11 clones for 98 to 108 generations of growth and assess transcription in each culture at 4\u20137 time points. The relative transcriptional signal (as a percentage of the total var gene transcriptional signal) was documented for every measurement and the resulting transcriptional profile was analyzed according to chromosomal position, promoter type, gene length, and sequence diversity. The authors find an expression hierarchy favoring centrally located var genes, as has previously been found in other parasite isolates. Specifically centromeric type 1 var are found to be highly expressed due to high activation rates. Furthermore it is noticed that frequently expressed var genes are more genetically diverse, leading the authors to suggest that var transcription facilitates generation of antigenic diversity.\n\nThe strength of this study lies mainly in the high quality dataset and the previously published modeling methodology applied to it, giving a detailed quantitative characterization of the var expression hierarchy.\n\nThe referees agree that all results are experimentally and statistically very solid. They raise a few major points that follow:\n\n1) One question that is not directly evaluated is that of low off-rates of UpsC genes. UpsC genes are generally located in central areas of chromosomes. Therefore this promoter type could potentially serve as a marker for central var genes in parasite isolates in which chromosomal position of individual var genes is not known. It would therefore be of great benefit to the field if the authors could use their data to ask the question if UpsC promoter off-rates are always very low. For example this data point could be added to the first part of Figure 2 (all genes) by indicating the promoter types of the central and subtelomeric var genes (central: UpsC, UpsB and Ups A; subtelomeric: Ups B and UpsA). The authors are in a unique position to ask this question and potentially could provide the field with guidance on how to assess central var gene transcriptional activity in field isolates.\n\n2) The effect of parameter estimation uncertainty on the findings should be clarified. The Discussion mentions that the local switch bias parameter estimates are uncertain (also shown with fuzziness in Figure 3). It must be possible to calculate the uncertainty of the activation-rate and off-rate parameters in Table 2, and these should be provided.\n\n3) Several of the findings based on the estimated parameters have p-values >=0.01 (e.g., Figures 2, 3, and 4). To determine if these findings are significant despite parameter estimation uncertainty, the effect of such uncertainty on these p-values should be calculated/discussed. Moreover, to give the reader an intuitive idea of the significance of the box plot figures, each box should be accompanied by the number of data points it represents (e.g., in Figure 2: UpsA [N=5]). A numeric matrix with the estimated switch bias parameters and uncertainties (Figure 3) should be made available as supplementary material.\n\n4) The central concept of activation rate should be introduced more clearly. The sentence \u201cThis finding led us to consider switch bias as the sum of two factors: a \u2018global activation rate\u2019, solely dependent on the gene to be activated, and a \u2018local bias\u2019, dependent on both the activated and the deactivated gene\u201d, can be interpreted as: switch bias = activation rate + local bias, where switch bias is the previously defined \u03b2j,i, and that this parameter is split in two. It took some time to gather from the remaining text that the activation rate is actually defined as the average switch bias towards a gene.\n\n5) The mentioning of a \u201cglobal activation hierarchy\u201d is unfortunate (especially in the Abstract) since it is ambiguous and suggests that the findings are valid for parasites worldwide, which is not necessarily the case since this study only concerns the HB3 isolate. The word \u201cglobal\u201d can be removed without subtracting essential meaning. Similarly, the words \u201cglobal\u201d and \u201clocal\u201d are not necessary when mentioning the parameters \u201cglobal activation rate\u201d and \u201clocal switch bias\u201d.\n",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3ae6f1a2-3232-4420-a356-d42e0ae8626a",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C1",
+      "claim": "11 subclones of the lab-adapted HB3 isolate of P. falciparum were obtained by serial dilution of the parent culture.",
+      "claim_type": "EXPLICIT",
+      "source": "11 subclones of the lab-adapted HB3 isolate of P. falciparum were obtained by serial dilution of the parent culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental procedure performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "902f13ea-ad91-445c-9004-b3630eeb823a",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C2",
+      "claim": "Transcript levels of 38 var genes were measured by quantitative PCR at 29\u201333 parasite generations after cloning and then at several time points over the following 60\u201379 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The clones were cultivated and transcript levels of 38 var genes measured by quantitative PCR, first at 29\u201333 parasite generations (8\u20139 weeks) after cloning and then at several time points over the following 60\u201379 generations in each culture (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental measurements performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "02b4b1a3-dc68-4bd0-92b4-f02590305346",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C3",
+      "claim": "The 38 genes measured comprised almost all known functional HB3 var genes and one partial gene.",
+      "claim_type": "EXPLICIT",
+      "source": "These 38 genes comprised almost all known functional HB3 var genes (Kraemer et al., 2007; Rowe et al., 2009) and one partial gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work characterizing HB3 var genes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "58b0b944-d281-4a90-a60c-941f1c55c48c",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C4",
+      "claim": "At the first observation, each of the 11 clones predominantly transcribed one of nine different var genes.",
+      "claim_type": "EXPLICIT",
+      "source": "At the first observation, each of the 11 clones predominantly transcribed one of the nine different var genes, which were most likely the genes transcribed at the time of cloning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "018e7459-408b-41a1-bf05-ead8b74df191",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C5",
+      "claim": "The nine starter genes were representative of the var repertoire diversity in terms of chromosomal location and Ups type.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these nine genes\u2014hereafter referred to as 'starter genes'\u2014were representative of the var repertoire diversity in terms of chromosomal location and Ups type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the starter genes based on their characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "896b7187-e7df-422e-b733-8201a4bd0da0",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C6",
+      "claim": "The centrally located, UpsC starter gene var29 in culture #8 accounted for more than 90% of the total transcript level at the first measurement and remained the dominant variant over the following 60 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the centrally located, UpsC starter gene var29 in culture #8 accounted for more than 90% of the total transcript level at the first measurement and remained the dominant variant over the following 60 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data for culture #8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "f11cce30-613b-46b0-b504-681e0c235771",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C7",
+      "claim": "The transcript level of the var35 starter gene of culture #11 (subtelomeric, UpsA promoter type) was already below 50% of the total transcript level at the first observation and continued to decline during the time course of culture.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the transcript level of the var35 starter gene of culture #11 (subtelomeric, UpsA promoter type) was already below 50% of the total transcript level at the point of the first observation (approximately 30 generations post cloning) and continued to decline during the time course of culture, to be eventually replaced by other genes as dominant transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data for culture #11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "d78c9685-7823-4098-a4db-0f88551ee625",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C8",
+      "claim": "Most cultures converged towards high transcription of var27 and/or var29.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest was the apparent convergence of most cultures towards high transcription of var27 and/or var29 (Figure 1, Figure 1\u2014figure supplements 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by both the text and the figures showing transcript levels over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "a473b892-fdc7-43bb-be90-0384546d53e7",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C9",
+      "claim": "var27 and var29 are both situated in central chromosomal location but have different promoter types (UpsB and UpsC, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "which are both situated in central chromosomal location but have different promoter types (UpsB and UpsC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the genetic features of these two genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "da01ec52-19ae-406a-9705-114cdcb3f6d2",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C10",
+      "claim": "The convergence of cultures towards var27 and var29 indicates that antigenic switching in P. falciparum might be governed by an activation hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of the very different initial conditions, in terms of var gene transcription levels at which these cultures were established, this indicates that antigenic switching in P. falciparum might be governed by an activation hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed convergence pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "0693a12a-b390-4dbf-994e-8c2014ed2f02",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C11",
+      "claim": "Var gene switching can be fully described dynamically by two sets of parameters: off-rates and switch biases.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously proposed that var gene switching can be fully described dynamically by two sets of parameters ('Materials and methods' and [Recker et al., 2011]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a previously published model by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "46efbf2d-0349-4152-9a87-3ce08aa25395",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C14",
+      "claim": "Both the 16-gene and 38-gene models gave good fits between the data and predicted transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied our algorithm to the full 38-gene data set and separately to a reduced set of the 16 most transcribed genes, and both models generally gave good and similar fits between the data and predicted transcript levels (Figure 1\u2014figure supplements 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the model fitting results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "8c5fcc97-e79b-4527-bbf4-d4850a330aa5",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C15",
+      "claim": "Parameter estimates of the starter genes were more accurate and resulted in much narrower credible intervals due to higher signal to noise ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to higher signal to noise ratios, parameter estimates of the starter genes (indicated in red) were more accurate and resulted in much narrower credible intervals, as indicated by less fuzzy rings that represent respective switch probabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the reliability of parameter estimates based on data quality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "85207544-9d9d-4874-98e7-c8b75b60fdfd",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C16",
+      "claim": "Estimated off-rates ranged from 0.3% to more than 5% per generation, with a mean of approximately 2.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated off-rates ranged from 0.3% to more than 5% per generation, with a mean of approximately 2.9% (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the estimated parameter values from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "abe3a3e2-6247-4834-a95e-7437c2178a09",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C17",
+      "claim": "var29 and var27 had exceptionally low off-rates of approximately 0.3% and 0.8%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the two most transcribed genes, var29 and var27 (both centrally located on chromosome 4), had exceptionally low off-rates of approximately 0.3% and 0.8%, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the parameter estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "1804ad65-808c-4c29-a533-4dcae8116154",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C18",
+      "claim": "The other starter genes switched off at rates between 1.4% and 3.5% per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the other starter genes switched off at rates between 1.4% and 3.5% per generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of estimated off-rates for other starter genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "f88c098b-ecf2-4ad8-9e8b-12fd65d1b811",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C19",
+      "claim": "Off-rates of centrally located genes are significantly lower than of genes in subtelomeric regions (Welch's t = 3.3, p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "In general we found off-rates of centrally located genes to be significantly lower than of genes in subtelomeric regions (Welch's t = 3.3, p=0.002), as shown in Figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from comparing off-rates between gene groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "f68e743a-c411-4d75-aab0-929c996148a3",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C20",
+      "claim": "The difference in off-rates between central and subtelomeric genes remained significant (p=0.035) when accounting for uncertainty in estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "This result remained significant (p=0.035) when we accounted for uncertainty in our estimates ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result after applying a more rigorous analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "8274ae6d-eba4-4b09-98f7-d6603a5856ce",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C21",
+      "claim": "There was no significant difference in off-rates between subtelomeric UpsA genes and other subtelomeric genes (Welch's t = 0.65, p=0.54).",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the off-rates of the subtelomeric UpsA genes with those of other subtelomeric genes and found no significant difference (Welch's t = 0.65, p=0.54; accounting for uncertainty p=0.55), as shown in Figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from comparing off-rates between UpsA and non-UpsA subtelomeric genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "8d1c1b9c-095f-4fae-804b-7e7ca7839b52",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C22",
+      "claim": "Among centrally located genes, there was no significant difference in off-rates between UpsB and UpsC genes (Welch's t = 0.44, p=0.44).",
+      "claim_type": "EXPLICIT",
+      "source": "Among centrally located genes we compared UpsB with UpsC and again found no significant difference (Figure 3; Welch's t = 0.44, p=0.44; accounting for uncertainty p=0.57).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from comparing off-rates between UpsB and UpsC central genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "4dc40a26-2f56-4c5a-8db3-6400f77bf17a",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C23",
+      "claim": "The rate at which transcriptionally active var genes become silenced is less dependent on promoter type than on chromosomal location.",
+      "claim_type": "EXPLICIT",
+      "source": "This lends support to a previous study suggesting that the rate at which transcriptionally active var genes become silenced is less dependent on promoter type than on chromosomal location (Frank et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the statistical analyses and supported by a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "64c7d060-4e18-4b06-abb1-21a59b4e03f4",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C24",
+      "claim": "Only a minority of genes were ever highly transcribed during the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In each of our cultures, gene transcription levels spanned several orders of magnitude, and only a minority of genes were ever highly transcribed during the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "3023535a-bc0c-4c50-877c-b2395443c9ac",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C25",
+      "claim": "The ranking of gene activation was highly correlated between cultures (Spearman's \u03c1 > 0.8, p=10\u22125 for all pairs).",
+      "claim_type": "EXPLICIT",
+      "source": "Pair-wise comparison showed that the ranking was highly correlated between the cultures (Spearman's \u03c1 > 0.8, p=10\u22125 for all pairs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from comparing gene rankings across cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "01199074-4a64-4222-aa7d-4b2a8fcc0a07",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C26",
+      "claim": "The outcome of antigenic switching in P. falciparum is largely governed by an activation hierarchy that is independent of the currently activated gene.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the outcome of antigenic switching in P. falciparum, or at least within the HB3 isolate, is largely governed by an activation hierarchy that is independent of the currently activated gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the correlation analysis of gene rankings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "49749b7a-1c1c-4dd8-8283-42b0a02bfd44",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C28",
+      "claim": "All genes were found to have high switch biases towards the same few genes.",
+      "claim_type": "EXPLICIT",
+      "source": "All genes were found to have high switch biases towards the same few genes, which explain the observed convergence in var transcription in our cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the switch bias parameter estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "be92e056-5c9e-490e-8765-23b418ab8831",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C29",
+      "claim": "The highest biases across the repertoire were found towards var29 and var27.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the highest biases across the repertoire were found towards var29 and var27, with some genes also frequently switching towards var35 and/or var28 (both UpsC-types in central chromosomal location).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the switch bias estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "79610961-9286-4722-9392-82034b6c973e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C30",
+      "claim": "There was a clear hierarchy in gene activation biases spanning over three orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 2, there was a clear hierarchy in gene activation biases spanning over three orders of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the estimated activation bias parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "1febf7d2-a48e-4f0c-bf0c-d00487a6278b",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C31",
+      "claim": "Activation biases of centrally located var genes are significantly higher than those of subtelomeric genes (Welch's t = 2.8, p=0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysing for possible associations with genetic attributes confirmed that activation biases of centrally located var genes are significantly higher than those of subtelomeric genes (Figure 4, Welch's t = 2.8, p=0.009; accounting for uncertainty p=0.011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from comparing activation biases between gene groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "3d21f876-73a2-45a6-91fc-195c45c317e4",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C32",
+      "claim": "Of the highest four activation biases, three belonged to neighbouring genes on chromosome 4: var29, var27 and var28.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, of the highest four activation biases, three belonged to neighbouring genes on chromosome 4: var29, var27 and var28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the activation bias estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "068328f0-18d4-4a4a-8b7a-227ba495f246",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C33",
+      "claim": "No significant and independent effect of promoter type on activation bias was found.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no significant and independent effect of promoter type was found, which again points towards a strong influence of chromosomal location on var gene activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from statistical analyses of activation biases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "cfa0fc3c-ffad-400a-a94d-8fab76c9010e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C34",
+      "claim": "Activation biases differed significantly depending on gene length (F = 9.7, p=0.004) as well as chromosomal location (F = 8.1, p=0.007) and the interaction of these two factors (F = 5.0, p=0.032).",
+      "claim_type": "EXPLICIT",
+      "source": "Grouping genes depending on whether they encoded only four domains (short genes) or more than four domains (long genes) showed that activation biases differed significantly depending on gene length (Figure 4, F = 9.7, p=0.004) as well as chromosomal location (F = 8.1, p=0.007) and the interaction of these two factors (F = 5.0, p=0.032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from ANOVA analysis of activation biases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "07f470f3-44a5-4ffa-8050-df2d3516670c",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C35",
+      "claim": "Central var genes encoding only four binding domains had on average a 10 times higher activation bias than the rest of the repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, central var genes encoding only four binding domains (also known as Type 1 var genes [Gardner et al., 2002]) had on average a 10 times higher activation bias than the rest of the repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the analysis of activation biases by gene characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "72526681-e15d-4f43-ac9d-508200ab7720",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C36",
+      "claim": "The model with individual switch biases was significantly more likely than the model where all sets of switch biases were identical (F = 1.84, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "A likelihood ratio test indicated that the model with individual switch biases was significantly more likely than the second model (F = 1.84, p<0.0001), confirming that antigenic switching in P. falciparum is not only controlled by an activation hierarchy but also influenced by the currently active gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "d5a102c1-faab-4b12-a9c6-5b5600e0ed43",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C37",
+      "claim": "Antigenic switching in P. falciparum is not only controlled by an activation hierarchy but also influenced by the currently active gene.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming that antigenic switching in P. falciparum is not only controlled by an activation hierarchy but also influenced by the currently active gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model comparison results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "c827e6ea-9842-41e3-a032-561596f74de8",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C38",
+      "claim": "Switch biases were higher between var genes with matching chromosomal locations than between differently located genes (Welch's t = 2.2, p=0.029).",
+      "claim_type": "EXPLICIT",
+      "source": "We again tested for associations with chromosomal location and promoter type ('Materials and methods'), which indicated that switch biases were higher between var genes with matching chromosomal locations than between differently located genes (Figure 5; Welch's t = 2.2, p=0.029)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from analyzing switch bias patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "7f360f4f-4697-4329-b3df-c8a7ebee9838",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C39",
+      "claim": "No significant association was found between switch biases and matching Ups types or gene lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas no significant association was found between switch biases and matching Ups types or gene lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from analyzing switch bias patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "f4ba59f2-de65-43d8-a3aa-eb19a6e15274",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C40",
+      "claim": "Statistical significance of the association between switch biases and matching chromosomal locations was lost when accounting for uncertainty in parameter estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "This result needs to be confirmed with larger data sets, however, as statistical significance was lost when we accounted for uncertainty in our parameter estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the statistical finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "0a23aba0-ad66-4b3b-af9d-1e1b8132ac91",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C41",
+      "claim": "The degree by which var genes share sequence blocks is positively correlated with activation bias, independently of chromosomal location and gene length (F = 8.8, p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "The inclusion of network centrality as an explanatory variable in the previous ANOVA model confirmed that the degree by which var genes share sequence blocks is positively correlated with activation bias, independently of chromosomal location and gene length (Figure 6A; F = 8.8, p=0.006 for the model comparison; accounting for uncertainty p=0.006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from analyzing the relationship between sequence similarity and activation bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "67f575b3-f5f3-42a5-97c9-d246351bc56f",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C42",
+      "claim": "Simulation of gene conversion, in which pairs of genes were chosen at random weighted by their activation bias, showed a strong positive correlation between activation bias and relatedness in terms of network centrality.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this we explicitly simulated gene conversion, in which pairs of genes were chosen at random, weighted by their activation bias and homology blocks copied between them ('Materials and methods). As expected, we found a strong positive correlation between activation bias and our measure of relatedness in terms of network centrality (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from a simulation study testing a hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "45875c4c-8df4-4fac-8d02-6779c293196a",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C43",
+      "claim": "Average sequence conservation of all domains is significantly and positively correlated with activation bias, independently of chromosomal location and gene length (F = 13.6, p=0.0009).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using the average sequence conservation of all domains as a measure of population level diversity (Buckee and Recker, 2012), we again found this to be significantly and positively correlated, independently of chromosomal location and gene length (Figure 6C; F = 13.6, p=0.0009 for the model comparison; accounting for uncertainty p=0.0006)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from analyzing the relationship between sequence conservation and activation bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "16ff9f1a-0683-4f46-9e4d-e792b5c4cf71",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C44",
+      "claim": "Active gene transcription plays a role in generating antigenic diversity in P. falciparum malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting a role of active gene transcription in generating antigenic diversity in P. falciparum malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the correlation between activation bias and sequence diversity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "932eb6c4-d076-4706-9498-f51f14b19ea0",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C45",
+      "claim": "Var genes located near the centres of chromosomes tend to be more highly transcribed in vitro than those in subtelomeric location.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have noted that var genes located near the centres of chromosomes tend to be more highly transcribed in vitro than those in subtelomeric location (Frank et al., 2007; Peters et al., 2007; Enderes et al., 2011; Zhang et al., 2011; Fastman et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "5e0f17e3-ecc3-4ddf-ac94-a875d8bcd677",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C46",
+      "claim": "High transcription levels are confined to a subset of central genes that encode only four PfEMP1 binding domains (Type 1 var genes).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that high transcription levels are confined to a subset of central genes that encode only four PfEMP1 binding domains (termed Type 1 var genes [Gardner et al., 2002])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "477b1391-b4cc-486c-81a0-d5de5e7ea479",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C47",
+      "claim": "High transcription levels are the result of high activation biases rather than low off-rates.",
+      "claim_type": "EXPLICIT",
+      "source": "and, importantly, are the result of high activation biases rather than low off-rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the parameter estimation and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "a0cf53cb-29da-4834-bc3d-0a7da92ef53f",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C48",
+      "claim": "Off-rates, at least within a biologically plausible range, can have only a modest effect on the total transcript levels within parasite populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our previous study using artificial transcription data, which also showed that off-rates, at least within a biologically plausible range, can have only a modest effect on the total transcript levels within parasite populations (Noble and Recker, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "a6fa980b-ab37-427d-bae2-07e7e562de19",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C49",
+      "claim": "In NF54, centrally located var genes encoding only four binding domains were more highly transcribed than the rest of the repertoire (Welch's t = 2.3, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Reanalysis of data from a recent study on the NF54 parasite strain by Fastman et al. (2012) supports these findings. Consistent with our results for HB3, centrally located var genes encoding only four binding domains were more highly transcribed than the rest of the repertoire (Welch's t = 2.3, p=0.02)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from reanalysis of published data from another strain.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "0939e89f-28f5-4af3-8fbc-e8e224f99656",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C50",
+      "claim": "In NF54, PF3D7_0809100, PF3D7_0421300 and PF3D7_0800100 were the most highly transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "with PF3D7_0809100, PF3D7_0421300 and PF3D7_0800100 being the most highly transcribed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from reanalysis of published NF54 data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "f4a7a094-1368-4bc6-980f-32b63286fd60",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C51",
+      "claim": "PF3D7_0809100 has previously been reported as the most transcribed var gene in NF54 bulk culture.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model, these are predicted to have high activation bias, and indeed, PF3D7_0809100 has previously been reported as the most transcribed var gene in NF54 bulk culture",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a previous finding in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "46339e96-ec14-4849-984f-f624edaa1c98",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C52",
+      "claim": "PF3D7_0421300 and PF3D7_0800100 were found to be the two genes most commonly activated by var gene switching in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas PF3D7_0421300 and PF3D7_0800100 were found to be the two genes most commonly activated by var gene switching in previous studies (Dzikowski et al., 2006; Frank et al., 2007; Enderes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "1a4b648f-765a-4d44-865a-1e14865640a5",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C53",
+      "claim": "In NF54, gene transcription levels were positively correlated with relatedness to the rest of the repertoire in terms of shared DBL1 and CIDR1 homology blocks (Spearman's \u03c1 = 0.3, p=0.044).",
+      "claim_type": "EXPLICIT",
+      "source": "Also in agreement with our results, NF54 gene transcription levels were positively correlated with relatedness to the rest of the repertoire in terms of shared DBL1 and CIDR1 homology blocks (Spearman's \u03c1 = 0.3, p=0.044).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from reanalysis of published NF54 data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "98545c0b-01e8-4819-8b8f-c28bd4b665a5",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C54",
+      "claim": "The direction of transcriptional switching between var genes depends not only on intrinsic activation biases but also on the particular preferences of each deactivating gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results further indicate that the direction of transcriptional switching between var genes depends not only on intrinsic activation biases but also on the particular preferences of each deactivating gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of switch biases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "90afc11c-6df0-497f-a725-e4d88450b0d2",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C55",
+      "claim": "Variations in switch biases are expected to play a much greater role during infection, where factors such as immune responses and binding affinities can significantly alter the var gene expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though these variations were found to have only a modest effect on in vitro switching, they are expected to play a much greater role during infection, where factors such as immune responses and binding affinities can significantly alter the var gene expression profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the in vivo relevance of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "1de36083-b237-4f85-ba2c-fa726d680996",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C56",
+      "claim": "The combination of an activation hierarchy and specific variations in switch biases could explain the previously proposed source-sink model underlying antigenic switching in P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the combination of an activation hierarchy and these specific variations could explain our previously proposed source-sink model underlying antigenic switching in P. falciparum (Recker et al., 2011), in which genes with high in-degrees, i.e., those most commonly switched to, correspond to the genes here identified as having high activation biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a connection drawn between current findings and a previous model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "3b1175ca-e55c-4c61-a1de-6c9a660fdeb4",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C57",
+      "claim": "The discovery of intrinsic var gene activation biases and their associations with chromosomal locations and other genetic features could have important implications for future studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of intrinsic var gene activation biases and their associations with chromosomal locations and other genetic features could therefore have important implications for future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential impact of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "afa34e8b-ef22-4624-8b6b-38647c79083a",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C58",
+      "claim": "Gene length is positively correlated with sequence conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in a recent study it was found that gene length is positively correlated with sequence conservation (Buckee and Recker, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a finding from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "5d6e9648-a2e9-418d-a04a-5223c4d68cbb",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C59",
+      "claim": "Long var genes are more often positioned in subtelomeric regions.",
+      "claim_type": "EXPLICIT",
+      "source": "and long var genes are more often positioned in subtelomeric regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a known characteristic of var genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "ea5bc10f-da3d-47d6-938e-cbe7b984c4d5",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C60",
+      "claim": "The correlation between activation bias and relatedness suggests a role of gene transcription in facilitating recombination and therefore in generating and maintaining antigenic diversity in P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the correlation between activation bias and relatedness, which was found to be independent of chromosomal location, gene length and upstream promoter, suggests a role of gene transcription in facilitating recombination and therefore in generating and maintaining antigenic diversity in P. falciparum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "732e650a-252d-42f0-a467-c187edcc9876",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C61",
+      "claim": "Transcription-associated recombination has been observed in other eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription-associated recombination has been observed in other eukaryotes and may result from increased accessibility to recombination proteins or from stalled replication forks (Prado and Aguilera, 2005; Gottipati and Helleday, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a phenomenon observed in other organisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "5fffc3f4-ba0a-438f-9d74-f32825a89f13",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C62",
+      "claim": "For P. falciparum, transcription-associated recombination could help to explain why different groups of var genes within the repertoire display very different levels of diversity within the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, for P. falciparum this phenomenon could help to explain why different groups of var genes within the repertoire display very different levels of diversity within the population (Buckee et al., 2009; Buckee and Recker, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis connecting transcription-associated recombination to observed diversity patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "e0dffcea-5535-4d5e-9ec8-23f56ccc5f99",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C63",
+      "claim": "Some var genes may be under balancing selection, whereby the relative sequence conservation of longer genes could be due to optimised functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "It is further possible that some var genes are under balancing selection, whereby the relative sequence conservation of longer genes could be due to optimised functionality, for example in terms of binding avidity and/or affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about evolutionary pressures on var genes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "e230f11b-8086-4928-b5dc-5b80d9d4101e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C64",
+      "claim": "Various in vivo studies have reported UpsA var genes to be over-expressed during infections in individuals with little previous exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, various in vivo studies have reported UpsA var genes to be over-expressed during infections in individuals with little previous exposure (Jensen et al., 2004; Bull et al., 2005; Lavstsen et al., 2005; Kyriacou et al., 2006; Warimwe et al., 2009), despite their low activation rates in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from multiple in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "8330c296-2277-45f3-91ca-c7d76244e67a",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C65",
+      "claim": "Each var repertoire consists of a set of relatively long and conserved genes, such as those predominantly found within the UpsA group, and another, short and diverse set of genes, such as those predominantly found within the UpsB and UpsC groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Each var repertoire consists of a set of relatively long and conserved genes, such as those predominantly found with in the UpsA group, and another, short and diverse set of genes, such as those predominantly found within the UpsB and UpsC groups (Buckee and Recker, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about var gene repertoire structure from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "2fbe3e9b-918b-48a1-8118-e82fadbeac3e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C66",
+      "claim": "Under the assumption that more conserved genes have an in vivo survival advantage, these variants will dominate early infections in naive hosts, regardless of activation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the assumption that more conserved genes have an in vivo survival advantage, possibly due to higher binding affinities (Avril et al., 2012; Claessens et al., 2012; Lavstsen et al., 2012), these variants will dominate early infections in naive hosts, regardless of activation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about in vivo selection based on gene characteristics.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "1b1d571e-da3f-4e82-a2dc-427f56daeba8",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C67",
+      "claim": "The lower sequence diversity of conserved genes will lead to a more rapid acquisition of protective immunity, causing a transition towards the expression of more diverse variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Their lower sequence diversity, however, will then lead to a more rapid acquisition of protective immunity, causing a transition towards the expression of more diverse variants, facilitated by their inherent activation biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the dynamics of immunity acquisition and variant expression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "382a5ef2-ced7-491d-a645-0ac0305fa82c",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C68",
+      "claim": "The proposed order in which individuals acquire immunity (anti-UpsA followed by anti-UpsB/C) is less determined by the Ups group itself and is more a consequence of within-host selection of long, conserved genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this we would also speculate that the proposed order in which individuals acquire immunity (anti-UpsA followed by anti-UpsB/C), as well as the proposed associations between the expression of UpsA var genes and severe disease outcome, especially in young children, is less determined by the Ups group itself and is more a consequence of within-host selection of long, conserved genes, which are often but not exclusively found within the UpsA group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanisms underlying immunity acquisition patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "46e96d75-6771-428e-84ea-c1084ae7abaf",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C69",
+      "claim": "Selection pressures operating on multiple ecological scales have shaped the phenotypic plasticity embodied within the antigenic repertoire of P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate how selection pressures operating on multiple ecological scales have shaped the phenotypic plasticity embodied within the antigenic repertoire of P. falciparum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad conclusion about the evolutionary forces shaping var gene diversity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "dcf81197-0174-48c2-8e77-57648f93c53f",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C70",
+      "claim": "Var genes and the molecular mechanisms that underlie their sequential activation and silencing have co-evolved to allow the parasite to express the most advantageous phenotype in response to its current environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this setup, var genes and the molecular mechanisms that underlie their sequential activation and silencing have co-evolved to allow the parasite to express the most advantageous phenotype in response to its current environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the adaptive significance of the var gene switching system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "6d9fb8ff-899f-4c73-8e7b-0f76de5f2505",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C71",
+      "claim": "Acquired antibody-mediated immunity against Plasmodium falciparum is directed against the disease-causing, intra-erythrocytic life-stage of the parasite's life-cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Acquired antibody-mediated immunity against Plasmodium falciparum is directed against the disease-causing, intra-erythrocytic life-stage of the parasite's life-cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about malaria immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "54e3de58-0919-4e05-8940-c60904a610af",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C72",
+      "claim": "Continual exposure to P. falciparum infection can lead to a form of semi-immunity, whereby protection against life-threatening disease is acquired after a few infections only.",
+      "claim_type": "EXPLICIT",
+      "source": "Continual exposure to P. falciparum infection can lead to a form of semi-immunity, whereby protection against life-threatening disease is acquired after a few infections only (Gupta et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about malaria immunity supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "4b0e630a-2ee2-479c-be7a-0647f3b7400c",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C73",
+      "claim": "Sterile and long-lasting immunity against infection is never achieved through natural exposure to P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas sterile and long-lasting immunity against infection is never achieved through natural exposure (Greenwood et al., 1987; Marsh, 1992; Tran et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about malaria immunity supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "f270eeac-ef0c-4ac8-87f4-a37a69773a32",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C74",
+      "claim": "The process of natural acquired immunity coincides with a transition from acute and severe infection in young children to asymptomatic carriage in older individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of natural acquired immunity therefore coincides with a transition from acute and severe infection in young children to asymptomatic carriage in older individuals (Marsh and Snow, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the age-dependent pattern of malaria immunity supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "c519b9f4-1f09-4176-a113-14b1062df748",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C75",
+      "claim": "P. falciparum erythrocyte membrane protein 1 (PfEMP1) is the major parasite virulence factor and variant antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "At the core of this variable outcome of infection and poor development of immunity lies the major parasite virulence factor and variant antigen, P. falciparum erythrocyte membrane protein 1 (PfEMP1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about PfEMP1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "18be836c-ec5e-4e04-b98e-0c633874d92e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C76",
+      "claim": "Members of the PfEMP1 family are expressed on the surface of infected red blood cells and are involved in the binding of parasitised cells to other host cells and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of this family of proteins are expressed on the surface of infected red blood cells and are involved in the binding of parasitised cells to other host cells and tissues (for an overview see Kraemer and Smith, (2006)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about PfEMP1 function supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "fd7184f4-bd85-47ca-a917-6de2fe938270",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C77",
+      "claim": "The binding phenotypes conferred by PfEMP1 are believed to enhance parasite survival by avoiding splenic clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "The conferred binding phenotypes are believed to enhance parasite survival by avoiding splenic clearance (Boone and Watters, 1995; Buffet et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about PfEMP1 function supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "bca924a2-9edb-4a9f-af70-90327e6fd80e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C78",
+      "claim": "PfEMP1 binding phenotypes contribute to malaria pathology through parasite sequestration in the deep vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "and also contribute to malaria pathology through parasite sequestration in the deep vasculature (Ockenhouse et al., 1991; Pongponratn et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about PfEMP1's role in pathology supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "0db43c8d-5be5-4ca9-8fc7-8a35cb252ae9",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C79",
+      "claim": "Mutually exclusive transcriptional switching between PfEMP1 variants during the course of an infection affords the parasite an immune evasion strategy and a means to exploit different host tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutually exclusive transcriptional switching between PfEMP1 variants during the course of an infection thus affords the parasite an immune evasion strategy and a means to exploit different host tissues (Roberts et al., 1992; Smith et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the function of var gene switching supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "73c296b5-6204-469f-8493-3f12b637d1b3",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C80",
+      "claim": "Each haploid parasite genome contains approximately 60 members of the var gene family encoding distinct PfEMP1 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Each haploid parasite genome contains approximately 60 members of the var gene family (Gardner et al., 2002) encoding distinct PfEMP1 variants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about var gene repertoire size supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "cecb21fd-d18f-4b25-b7a1-d23953fa84b7",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C81",
+      "claim": "There is a high degree of divergence between the antigenic repertoires of any two parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "with a high degree of divergence between the antigenic repertoires of any two parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about var gene diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "ea090302-7147-42aa-933f-28912c2c0149",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C82",
+      "claim": "The high diversity of var genes and var gene repertoires is predominantly generated and maintained by frequent recombination and gene conversion events.",
+      "claim_type": "EXPLICIT",
+      "source": "The high diversity of var genes and var gene repertoires is predominantly generated and maintained by frequent recombination and gene conversion events (Deitsch et al., 1999; Ward et al., 1999; Freitas-Junior et al., 2000; Taylor et al., 2000; Kraemer et al., 2007; Frank et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mechanisms generating var gene diversity supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "0659b86f-19ed-43d3-9946-a943fbe709a7",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C83",
+      "claim": "Recombination and gene conversion have resulted in a high degree of mosaicism within var genes.",
+      "claim_type": "EXPLICIT",
+      "source": "which has also resulted in a high degree of mosaicism within these genes (Ward et al., 1999; Taylor et al., 2000; Bull et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about var gene structure supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "e27fbae2-3700-40ff-a9da-4a712f98d95f",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C84",
+      "claim": "The modular and highly polymorphic, extracellular portion of PfEMP1 is composed of a variable number of Duffy-binding-like domains (DBL; at least two and up to seven per gene) and cysteine-rich interdomain regions (CIDR; up to two per gene).",
+      "claim_type": "EXPLICIT",
+      "source": "The modular and highly polymorphic, extracellular portion of PfEMP1 is composed of a variable number of Duffy-binding-like domains (DBL; at least two and up to seven per gene) and cysteine-rich interdomain regions (CIDR; up to two per gene) (Kraemer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about PfEMP1 structure supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "7ac54eb9-68dd-40d6-9910-98500ff0c3e9",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C85",
+      "claim": "Distinct associations with severe malaria have been identified for several var genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the overall diversity of var genes at the sequence level, distinct associations with severe malaria have been identified for several such genes (Salanti et al., 2003; Jensen et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about var gene associations with disease supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "c97e0d83-b90c-4581-aed2-0532608bbb14",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C86",
+      "claim": "The involvement of var2csa in pregnancy-associated malaria is the clearest example of a var gene association with severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "with the involvement of var2csa in pregnancy-associated malaria being the clearest example to date (Salanti et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a specific var gene association supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "1dd9d90e-5a90-4ac8-90b0-916e86bc3afc",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C87",
+      "claim": "Associations with severe malaria have been identified for particular DBL domains and combinations of DBL and CIDR.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as associations with particular DBL domains (Warimwe et al., 2009) and combinations of DBL and CIDR (Avril et al., 2012; Claessens et al., 2012; Lavstsen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about domain-level associations with disease supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "f319b7fe-fce1-4d8f-9ab2-4b43d4035e2f",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C88",
+      "claim": "Var genes can be classified according to a conserved upstream promoter sequence into four types termed UpsA, UpsB, UpsC, and UpsE.",
+      "claim_type": "EXPLICIT",
+      "source": "Var genes can also be classified according to a conserved upstream promoter sequence into four types termed UpsA, UpsB, UpsC, and UpsE (Lavstsen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about var gene classification supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "01d7fe43-e540-43fe-bf48-39c04fcda5bf",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C89",
+      "claim": "UpsA-type genes appear to have diverged from the other groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest are the UpsA-type genes, which appear to have diverged from the other groups (Kraemer et al., 2007; Bull et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about UpsA gene evolution supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "615bb587-0e42-4054-8675-be7fd10e4f08",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C90",
+      "claim": "UpsA-type genes have been shown to be upregulated during severe infections in young hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "and have been shown to be upregulated during severe infections in young hosts (Jensen et al., 2004; Bull et al., 2005; Kaestli et al., 2006; Kyriacou et al., 2006; Rottmann et al., 2006; Warimwe et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about UpsA gene expression in vivo supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "db847845-7fca-49b2-8b4f-7b7e62977abb",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C91",
+      "claim": "Acquisition of anti-PfEMP1 immunity appears to follow a particular order, with UpsA variants generally being the first to be broadly recognised in older children.",
+      "claim_type": "EXPLICIT",
+      "source": "As a possible consequence, acquisition of anti-PfEMP1 immunity appears to follow a particular order, with UpsA variants generally being the first to be broadly recognised in older children (Warimwe et al., 2009; Cham et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about immunity acquisition patterns supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "bf3c57c6-ba8d-44cf-a543-03e16be324d5",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C92",
+      "claim": "Clear associations between the expression of particular genes or Ups-groups, host age and severity of disease are still missing and could be strain- or location-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, clear associations between the expression of particular genes or Ups-groups, host age and severity of disease are still missing and could in fact be strain- or location-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gaps in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "3255e640-ae8e-412e-9795-6a2613f84ae6",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C93",
+      "claim": "Understanding the underlying pattern of antigenic switching between var genes is important to explain the mechanisms and dynamics of persistent infections and the relationship between immune-mediated expression of particular PfEMP1 sub-types and infection outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the underlying pattern of antigenic switching between var genes is therefore important to explain not only the mechanisms and dynamics of persistent infections but also the relationship between immune-mediated expression of particular PfEMP1 sub-types and infection outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of understanding var gene switching.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "c889cd50-1c13-44fc-a23e-76433b565c73",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C94",
+      "claim": "The diversity and order of PfEMP1 variants in the human host is influenced by immune responses and other host factors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the diversity and order of PfEMP1 variants in the human host is influenced by immune responses and other host factors (Kyriacou et al., 2006; Warimwe et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about factors affecting var gene expression in vivo supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "1201c4dd-8745-45c9-8ee0-aa60f02caa1b",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C95",
+      "claim": "Attempts to elucidate the underlying patterns of antigenic change and estimate related switching parameters are commonly based on in vitro cultured parasites in the absence of selection pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "attempts to elucidate the underlying patterns of antigenic change and estimate related switching parameters are commonly based on in vitro cultured parasites in the absence of selection pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the approach used in var gene switching studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "9565be06-d337-4e09-95fe-8ffedea9492b",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C96",
+      "claim": "Horrocks et al. found that the rates at which var genes activate or deactivate are non-random, gene-specific and highly dissimilar.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setting, Horrocks et al. (Horrocks et al., 2004) found that the rates at which var genes activate or deactivate are non-random, gene-specific and highly dissimilar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "3c484948-ea1f-4844-a6a8-d843e0d4122d",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C97",
+      "claim": "Var genes occupying subtelomeric loci tend to switch off faster than those positioned in central chromosomal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "It has furthermore been suggested that var genes occupying subtelomeric loci tend to switch off faster than those positioned in central chromosomal regions (Frank et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a finding from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "e3719742-c744-43ed-9622-e0127b0150d2",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C98",
+      "claim": "The rapid decline in the transcription of subtelomeric genes in parasites during culture adaptation may be explained by faster switch-off rates of subtelomeric genes.",
+      "claim_type": "EXPLICIT",
+      "source": "offering a possible explanation for the rapid decline in the transcription of subtelomeric genes in parasites during culture adaptation (Peters et al., 2007; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis connecting switch-off rates to observed culture adaptation patterns, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "6beee5f3-724b-4443-9573-7093a3f89b36",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C99",
+      "claim": "Recker et al. proposed that var gene transcriptional change involves a highly structured pathway that has evolved in response to a trade-off between the within-host and the between-host level fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Recker et al. (2011) proposed that var gene transcriptional change involves a highly structured pathway that has evolved in response to a trade-off between the within-host and the between-host level fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a model from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "db9e7773-f64a-4969-bd9e-83b18aac727c",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C100",
+      "claim": "Most previous studies on var gene switching were limited in analytical depth due to restrictions in the number of variants considered and/or time points at which gene transcription levels were measured.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most of these previous studies were limited in analytical depth due to restrictions in the number of variants considered and/or time points at which gene transcription levels were measured, and could therefore describe only small fragments of the whole switching network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "a99ce0fa-2a7c-40e6-a636-4f6777b09911",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C101",
+      "claim": "This study provides the first detailed characterisation of antigenic switching in the HB3 isolate of P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we used a novel approach to provide the first detailed characterisation of antigenic switching in the HB3 isolate of P. falciparum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty and scope of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "8d733fbe-a1ea-4b5f-870a-73e87b363faa",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C102",
+      "claim": "Antigenic switching is governed by a global activation hierarchy favouring short and highly diverse genes in central chromosomal location.",
+      "claim_type": "EXPLICIT",
+      "source": "using a detailed in vitro gene transcription analysis of the culture-adapted HB3 strain of P. falciparum, we show that antigenic switching is governed by a global activation hierarchy favouring short and highly diverse genes in central chromosomal location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "1dd9d618-47a5-449f-9747-26b075f04d1d",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C103",
+      "claim": "Longer and more conserved genes, which have previously been associated with severe infection in immunologically naive hosts, are rarely activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer and more conserved genes, which have previously been associated with severe infection in immunologically naive hosts, are rarely activated, however",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "cb263edf-abf1-4fc4-9ee1-587842ef4949",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C104",
+      "claim": "Longer and more conserved genes have an in vivo fitness advantage possibly through adhesion-dependent survival rates.",
+      "claim_type": "EXPLICIT",
+      "source": "implying an in vivo fitness advantage possibly through adhesion-dependent survival rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed in the abstract to explain the rare activation of long conserved genes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "68654c94-cf21-4280-aefa-43db50189ff6",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C105",
+      "claim": "A gene's activation rate is positively associated with sequence diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that a gene's activation rate is positively associated sequence diversity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "8d560fe8-3290-4dcd-9c80-f6d29b599aef",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "claim_id": "C106",
+      "claim": "The association between activation rate and sequence diversity could offer important new insights into the evolution and maintenance of antigenic diversity in P. falciparum malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "which could offer important new insights into the evolution and maintenance of antigenic diversity in P. falciparum malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9727a52f-7974-4699-8ddb-211b8456b6fd",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established 11 clonal parasite cultures from the HB3 isolate and measured transcript levels of 38 var genes (almost all functional HB3 var genes) at multiple time points over 60-79 generations. The nine 'starter genes' initially transcribed in these clones were representative of var repertoire diversity in terms of chromosomal location and Ups type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 describe the experimental design and initial observations. The methodology is clearly stated, the gene coverage is comprehensive and validated by citations (C3), and the diversity of starter genes (C5) provides a strong foundation for studying switching patterns. The experimental approach is sound and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "cfb79f05-76be-4cf8-ac24-7bdd925b212d",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Different starter genes showed markedly different rates of decline in transcript levels over time. Despite starting from diverse initial conditions, most cultures converged towards high transcription of var27 and/or var29 (both centrally located but with different promoter types), suggesting that antigenic switching is governed by an activation hierarchy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 present key observational data showing differential decline rates and convergence patterns. The specific examples (var29 remaining dominant in C6, var35 declining rapidly in C7) are supported by the data shown in figures. The inference of an activation hierarchy (C10) is reasonable given the convergence from diverse starting points, though it remains a hypothesis to be tested by subsequent modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "7490d2d2-f210-4970-97eb-76720a3cac24",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors applied a previously published MCMC-based parameter estimation method to model var gene switching using two parameters: off-rates and switch biases. Both 16-gene and 38-gene models provided good fits to the data, with parameter estimates for starter genes being more accurate due to higher signal-to-noise ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C14, and C15 describe the modeling approach and its performance. The method is based on prior work (C11), the model fits are visually confirmed in supplementary figures (C14), and the assessment of parameter accuracy (C15) is reasonable given the data quality differences between highly and lowly transcribed genes. The approach is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Estimated off-rates ranged from 0.3% to >5% per generation (mean ~2.9%), with var29 and var27 having exceptionally low off-rates. Off-rates of centrally located genes were significantly lower than subtelomeric genes (p=0.002, robust to uncertainty analysis p=0.035), but there was no significant effect of promoter type (UpsA vs non-UpsA, or UpsB vs UpsC) on off-rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 present parameter estimates and statistical analyses of off-rates. The statistical tests are appropriate (Welch's t-tests), significance is maintained after accounting for uncertainty (C20), and the conclusion that chromosomal location matters more than promoter type (C23) is well-supported by the data and consistent with prior work (Frank et al., 2007). The findings are robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "82fa4225-f935-4b28-b062-70e4ffb67a2e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Only a minority of genes were highly transcribed during the experiment. When starter genes were excluded and the remaining genes ranked by average transcript levels, the rankings were highly correlated between cultures (Spearman's \u03c1 > 0.8, p=10\u207b\u2075 for all pairs), indicating that antigenic switching is governed by an activation hierarchy independent of the currently activated gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 provide strong statistical evidence for an activation hierarchy. The high correlation coefficients and extremely low p-values (C25) across all culture pairs strongly support the conclusion that gene activation follows a consistent hierarchy (C26). The analysis appropriately excludes starter genes to avoid bias. This is a key finding of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All genes showed high switch biases towards the same few genes, particularly var29 and var27. Activation biases formed a clear hierarchy spanning three orders of magnitude. Central genes had significantly higher activation biases than subtelomeric genes (p=0.009), with no independent effect of promoter type. Gene length and chromosomal location both significantly affected activation bias (ANOVA), with central short genes (Type 1 var genes) having ~10-fold higher activation biases than the rest of the repertoire.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 describe the activation bias hierarchy and its genetic correlates. The statistical analyses are appropriate (t-tests, ANOVA), results are robust to uncertainty analysis, and the findings are internally consistent. The identification of central short genes as having the highest activation biases (C35) is a major finding. The statistical evidence is strong and the biological interpretation is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "4f3545c2-76a8-4d24-8555-f86194d4ea99",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A likelihood ratio test showed that a model with individual switch biases (where the currently active gene influences switching direction) was significantly more likely than a model with identical switch biases for all genes (F=1.84, p<0.0001), confirming that antigenic switching is controlled by both an activation hierarchy and the currently active gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 present a formal model comparison using an appropriate statistical test (likelihood ratio test). The significant p-value supports the conclusion that the currently active gene influences switching direction, beyond the global activation hierarchy. This adds nuance to the activation hierarchy model and is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "96805c2e-5978-4dac-9de7-1521d6fa166d",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Switch biases were higher between var genes with matching chromosomal locations than between differently located genes (p=0.029), with no significant association with matching Ups types or gene lengths. However, this result lost statistical significance when accounting for uncertainty in parameter estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C40 describe a potentially interesting pattern in switch biases, but the authors appropriately note that significance is lost with uncertainty analysis (C40). The result is suggestive but requires confirmation with larger datasets. The authors are appropriately cautious about this finding, making it uncertain rather than unsupported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "fe5f5ecd-a5d7-4792-b0ae-27c2a4d25da3",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The degree to which var genes share sequence blocks (network centrality) is positively correlated with activation bias, independent of chromosomal location and gene length (F=8.8, p=0.006). Simulation of gene conversion weighted by activation bias reproduced this correlation. Average sequence conservation is also positively correlated with activation bias (F=13.6, p=0.0009), suggesting a role for active gene transcription in generating antigenic diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 present a novel finding linking activation bias to sequence diversity. The statistical analyses are appropriate (ANOVA with multiple factors), the simulation (C42) provides mechanistic support for the hypothesis, and the correlation with sequence conservation (C43) provides independent confirmation. The conclusion about transcription facilitating diversity generation (C44) is a reasonable inference, though it remains a hypothesis requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "28ee234b-a6f8-477a-9b7c-1d0d4ad79843",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors found that high transcription levels are confined to central genes encoding only four PfEMP1 binding domains (Type 1 var genes) and result from high activation biases rather than low off-rates. This is consistent with previous observations of preferential central gene transcription in vitro and with prior modeling work showing off-rates have modest effects on transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 synthesize current findings with prior literature. The identification of Type 1 var genes as highly transcribed (C46) is supported by the data, and the attribution to activation bias rather than off-rates (C47) is a key mechanistic insight. The consistency with prior work (C45, C48) strengthens the conclusions. This is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "69bc410e-f1db-4107-8ad4-b8393821294b",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Reanalysis of published NF54 strain data showed that centrally located genes encoding four binding domains were more highly transcribed (p=0.02), with PF3D7_0809100, PF3D7_0421300, and PF3D7_0800100 being most highly transcribed. These genes were previously reported as highly transcribed or frequently activated. NF54 transcription levels were also positively correlated with sequence relatedness (Spearman's \u03c1=0.3, p=0.044).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 provide independent validation of the HB3 findings in a different parasite strain. The reanalysis is appropriate, the statistical tests are valid, and the consistency with prior reports (C51-C52) and with the sequence relatedness finding (C53) strengthens confidence in the generalizability of the results. This is strong supporting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "e23c3538-7e0d-4900-b5ed-e8fbde9a22be",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The direction of transcriptional switching depends on both intrinsic activation biases and the particular preferences of each deactivating gene. While variations in switch biases have modest effects in vitro, they are expected to play a greater role during infection where immune responses and binding affinities alter expression profiles. This could explain the previously proposed source-sink model of antigenic switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 integrate the findings on switch biases with broader implications. C54 is supported by the model comparison (C36-C37), C55 is a reasonable speculation about in vivo relevance, and C56 connects to prior theoretical work. The reasoning is sound, though C55 and C56 involve speculation about in vivo dynamics that cannot be directly tested with the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "329620b1-d857-4b2b-bef0-56c77c3639bc",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The correlation between activation bias and gene relatedness (independent of chromosomal location, gene length, and promoter type) suggests that gene transcription facilitates recombination, thereby generating and maintaining antigenic diversity. Transcription-associated recombination has been observed in other eukaryotes and could explain why different var gene groups display different levels of population diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 propose a mechanistic hypothesis linking transcription to diversity generation. The correlation is statistically robust (C41), the independence from confounding factors strengthens the inference (C60), and the phenomenon is known in other systems (C61). The hypothesis is plausible and testable, though it remains speculative for P. falciparum. The reasoning is sound and the conclusion appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "d0a0f5f2-9fc7-445a-9f02-7d437224f4dc",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that some var genes may be under balancing selection, with conserved genes having in vivo survival advantages (possibly through binding affinity) that cause them to dominate early infections in naive hosts despite low in vitro activation rates. Rapid immunity acquisition against conserved genes would then drive a transition to more diverse variants. The proposed order of immunity acquisition (anti-UpsA then anti-UpsB/C) may reflect selection of long conserved genes rather than Ups group per se.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C68 present an integrative hypothesis to reconcile in vitro and in vivo observations. The hypothesis is internally consistent and addresses the apparent contradiction between low in vitro activation of UpsA genes (C64) and their association with severe disease. However, these claims are largely speculative (C63, C66-C68 are explicitly speculative), and the in vivo dynamics cannot be directly tested with the current in vitro data. The hypothesis is plausible but requires validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "85024121-948e-436f-9418-0ed06e5f750e",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The results demonstrate how selection pressures operating on multiple ecological scales have shaped the phenotypic plasticity of the P. falciparum antigenic repertoire. Var genes and their switching mechanisms have co-evolved to allow the parasite to express the most advantageous phenotype in response to its current environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 present broad evolutionary conclusions synthesizing the findings. While these are high-level interpretations, they are reasonable inferences from the data showing structured switching patterns, associations with sequence diversity, and potential links between in vitro and in vivo selection. The conclusions are appropriately framed as interpretations rather than direct observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    },
+    {
+      "id": "b566cbdd-8d90-4641-b483-07d62028e27d",
+      "content_id": "77762cd0-544f-4d3f-9739-a8278bc97492",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study's main findings are that antigenic switching is governed by a global activation hierarchy favoring short, highly diverse genes in central chromosomal locations; longer conserved genes (associated with severe infection) are rarely activated, implying in vivo fitness advantages; and activation rate is positively associated with sequence diversity, offering insights into antigenic diversity evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C106 summarize the paper's main findings from the abstract. C102 is strongly supported by the activation bias and off-rate analyses; C103 is supported by the data; C104 is a reasonable hypothesis to explain the discrepancy between in vitro and in vivo observations; C105 is supported by the correlation analyses (C41, C43); and C106 appropriately frames the implications. These represent the core contributions of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:41.951678Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3ae6f1a2-3232-4420-a356-d42e0ae8626a",
+      "result_id": "9727a52f-7974-4699-8ddb-211b8456b6fd"
+    },
+    {
+      "claim_id": "902f13ea-ad91-445c-9004-b3630eeb823a",
+      "result_id": "9727a52f-7974-4699-8ddb-211b8456b6fd"
+    },
+    {
+      "claim_id": "02b4b1a3-dc68-4bd0-92b4-f02590305346",
+      "result_id": "9727a52f-7974-4699-8ddb-211b8456b6fd"
+    },
+    {
+      "claim_id": "58b0b944-d281-4a90-a60c-941f1c55c48c",
+      "result_id": "9727a52f-7974-4699-8ddb-211b8456b6fd"
+    },
+    {
+      "claim_id": "018e7459-408b-41a1-bf05-ead8b74df191",
+      "result_id": "9727a52f-7974-4699-8ddb-211b8456b6fd"
+    },
+    {
+      "claim_id": "896b7187-e7df-422e-b733-8201a4bd0da0",
+      "result_id": "cfb79f05-76be-4cf8-ac24-7bdd925b212d"
+    },
+    {
+      "claim_id": "f11cce30-613b-46b0-b504-681e0c235771",
+      "result_id": "cfb79f05-76be-4cf8-ac24-7bdd925b212d"
+    },
+    {
+      "claim_id": "d78c9685-7823-4098-a4db-0f88551ee625",
+      "result_id": "cfb79f05-76be-4cf8-ac24-7bdd925b212d"
+    },
+    {
+      "claim_id": "a473b892-fdc7-43bb-be90-0384546d53e7",
+      "result_id": "cfb79f05-76be-4cf8-ac24-7bdd925b212d"
+    },
+    {
+      "claim_id": "da01ec52-19ae-406a-9705-114cdcb3f6d2",
+      "result_id": "cfb79f05-76be-4cf8-ac24-7bdd925b212d"
+    },
+    {
+      "claim_id": "0693a12a-b390-4dbf-994e-8c2014ed2f02",
+      "result_id": "7490d2d2-f210-4970-97eb-76720a3cac24"
+    },
+    {
+      "claim_id": "46efbf2d-0349-4152-9a87-3ce08aa25395",
+      "result_id": "7490d2d2-f210-4970-97eb-76720a3cac24"
+    },
+    {
+      "claim_id": "8c5fcc97-e79b-4527-bbf4-d4850a330aa5",
+      "result_id": "7490d2d2-f210-4970-97eb-76720a3cac24"
+    },
+    {
+      "claim_id": "85207544-9d9d-4874-98e7-c8b75b60fdfd",
+      "result_id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431"
+    },
+    {
+      "claim_id": "abe3a3e2-6247-4834-a95e-7437c2178a09",
+      "result_id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431"
+    },
+    {
+      "claim_id": "1804ad65-808c-4c29-a533-4dcae8116154",
+      "result_id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431"
+    },
+    {
+      "claim_id": "f88c098b-ecf2-4ad8-9e8b-12fd65d1b811",
+      "result_id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431"
+    },
+    {
+      "claim_id": "f68e743a-c411-4d75-aab0-929c996148a3",
+      "result_id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431"
+    },
+    {
+      "claim_id": "8274ae6d-eba4-4b09-98f7-d6603a5856ce",
+      "result_id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431"
+    },
+    {
+      "claim_id": "8d1c1b9c-095f-4fae-804b-7e7ca7839b52",
+      "result_id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431"
+    },
+    {
+      "claim_id": "4dc40a26-2f56-4c5a-8db3-6400f77bf17a",
+      "result_id": "99171ecc-ff20-40a7-9ec2-b7383e1d6431"
+    },
+    {
+      "claim_id": "64c7d060-4e18-4b06-abb1-21a59b4e03f4",
+      "result_id": "82fa4225-f935-4b28-b062-70e4ffb67a2e"
+    },
+    {
+      "claim_id": "3023535a-bc0c-4c50-877c-b2395443c9ac",
+      "result_id": "82fa4225-f935-4b28-b062-70e4ffb67a2e"
+    },
+    {
+      "claim_id": "01199074-4a64-4222-aa7d-4b2a8fcc0a07",
+      "result_id": "82fa4225-f935-4b28-b062-70e4ffb67a2e"
+    },
+    {
+      "claim_id": "49749b7a-1c1c-4dd8-8283-42b0a02bfd44",
+      "result_id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e"
+    },
+    {
+      "claim_id": "be92e056-5c9e-490e-8765-23b418ab8831",
+      "result_id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e"
+    },
+    {
+      "claim_id": "79610961-9286-4722-9392-82034b6c973e",
+      "result_id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e"
+    },
+    {
+      "claim_id": "1febf7d2-a48e-4f0c-bf0c-d00487a6278b",
+      "result_id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e"
+    },
+    {
+      "claim_id": "3d21f876-73a2-45a6-91fc-195c45c317e4",
+      "result_id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e"
+    },
+    {
+      "claim_id": "068328f0-18d4-4a4a-8b7a-227ba495f246",
+      "result_id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e"
+    },
+    {
+      "claim_id": "cfa0fc3c-ffad-400a-a94d-8fab76c9010e",
+      "result_id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e"
+    },
+    {
+      "claim_id": "07f470f3-44a5-4ffa-8050-df2d3516670c",
+      "result_id": "88b9a6d9-26fc-45a9-961b-abaa78f1d08e"
+    },
+    {
+      "claim_id": "72526681-e15d-4f43-ac9d-508200ab7720",
+      "result_id": "4f3545c2-76a8-4d24-8555-f86194d4ea99"
+    },
+    {
+      "claim_id": "d5a102c1-faab-4b12-a9c6-5b5600e0ed43",
+      "result_id": "4f3545c2-76a8-4d24-8555-f86194d4ea99"
+    },
+    {
+      "claim_id": "c827e6ea-9842-41e3-a032-561596f74de8",
+      "result_id": "96805c2e-5978-4dac-9de7-1521d6fa166d"
+    },
+    {
+      "claim_id": "7f360f4f-4697-4329-b3df-c8a7ebee9838",
+      "result_id": "96805c2e-5978-4dac-9de7-1521d6fa166d"
+    },
+    {
+      "claim_id": "f4ba59f2-de65-43d8-a3aa-eb19a6e15274",
+      "result_id": "96805c2e-5978-4dac-9de7-1521d6fa166d"
+    },
+    {
+      "claim_id": "0a23aba0-ad66-4b3b-af9d-1e1b8132ac91",
+      "result_id": "fe5f5ecd-a5d7-4792-b0ae-27c2a4d25da3"
+    },
+    {
+      "claim_id": "67f575b3-f5f3-42a5-97c9-d246351bc56f",
+      "result_id": "fe5f5ecd-a5d7-4792-b0ae-27c2a4d25da3"
+    },
+    {
+      "claim_id": "45875c4c-8df4-4fac-8d02-6779c293196a",
+      "result_id": "fe5f5ecd-a5d7-4792-b0ae-27c2a4d25da3"
+    },
+    {
+      "claim_id": "16ff9f1a-0683-4f46-9e4d-e792b5c4cf71",
+      "result_id": "fe5f5ecd-a5d7-4792-b0ae-27c2a4d25da3"
+    },
+    {
+      "claim_id": "932eb6c4-d076-4706-9498-f51f14b19ea0",
+      "result_id": "28ee234b-a6f8-477a-9b7c-1d0d4ad79843"
+    },
+    {
+      "claim_id": "5e0f17e3-ecc3-4ddf-ac94-a875d8bcd677",
+      "result_id": "28ee234b-a6f8-477a-9b7c-1d0d4ad79843"
+    },
+    {
+      "claim_id": "477b1391-b4cc-486c-81a0-d5de5e7ea479",
+      "result_id": "28ee234b-a6f8-477a-9b7c-1d0d4ad79843"
+    },
+    {
+      "claim_id": "a0cf53cb-29da-4834-bc3d-0a7da92ef53f",
+      "result_id": "28ee234b-a6f8-477a-9b7c-1d0d4ad79843"
+    },
+    {
+      "claim_id": "a6fa980b-ab37-427d-bae2-07e7e562de19",
+      "result_id": "69bc410e-f1db-4107-8ad4-b8393821294b"
+    },
+    {
+      "claim_id": "0939e89f-28f5-4af3-8fbc-e8e224f99656",
+      "result_id": "69bc410e-f1db-4107-8ad4-b8393821294b"
+    },
+    {
+      "claim_id": "f4a7a094-1368-4bc6-980f-32b63286fd60",
+      "result_id": "69bc410e-f1db-4107-8ad4-b8393821294b"
+    },
+    {
+      "claim_id": "46339e96-ec14-4849-984f-f624edaa1c98",
+      "result_id": "69bc410e-f1db-4107-8ad4-b8393821294b"
+    },
+    {
+      "claim_id": "1a4b648f-765a-4d44-865a-1e14865640a5",
+      "result_id": "69bc410e-f1db-4107-8ad4-b8393821294b"
+    },
+    {
+      "claim_id": "98545c0b-01e8-4819-8b8f-c28bd4b665a5",
+      "result_id": "e23c3538-7e0d-4900-b5ed-e8fbde9a22be"
+    },
+    {
+      "claim_id": "90afc11c-6df0-497f-a725-e4d88450b0d2",
+      "result_id": "e23c3538-7e0d-4900-b5ed-e8fbde9a22be"
+    },
+    {
+      "claim_id": "1de36083-b237-4f85-ba2c-fa726d680996",
+      "result_id": "e23c3538-7e0d-4900-b5ed-e8fbde9a22be"
+    },
+    {
+      "claim_id": "ea5bc10f-da3d-47d6-938e-cbe7b984c4d5",
+      "result_id": "329620b1-d857-4b2b-bef0-56c77c3639bc"
+    },
+    {
+      "claim_id": "732e650a-252d-42f0-a467-c187edcc9876",
+      "result_id": "329620b1-d857-4b2b-bef0-56c77c3639bc"
+    },
+    {
+      "claim_id": "5fffc3f4-ba0a-438f-9d74-f32825a89f13",
+      "result_id": "329620b1-d857-4b2b-bef0-56c77c3639bc"
+    },
+    {
+      "claim_id": "e0dffcea-5535-4d5e-9ec8-23f56ccc5f99",
+      "result_id": "d0a0f5f2-9fc7-445a-9f02-7d437224f4dc"
+    },
+    {
+      "claim_id": "e230f11b-8086-4928-b5dc-5b80d9d4101e",
+      "result_id": "d0a0f5f2-9fc7-445a-9f02-7d437224f4dc"
+    },
+    {
+      "claim_id": "8330c296-2277-45f3-91ca-c7d76244e67a",
+      "result_id": "d0a0f5f2-9fc7-445a-9f02-7d437224f4dc"
+    },
+    {
+      "claim_id": "2fbe3e9b-918b-48a1-8118-e82fadbeac3e",
+      "result_id": "d0a0f5f2-9fc7-445a-9f02-7d437224f4dc"
+    },
+    {
+      "claim_id": "1b1d571e-da3f-4e82-a2dc-427f56daeba8",
+      "result_id": "d0a0f5f2-9fc7-445a-9f02-7d437224f4dc"
+    },
+    {
+      "claim_id": "382a5ef2-ced7-491d-a645-0ac0305fa82c",
+      "result_id": "d0a0f5f2-9fc7-445a-9f02-7d437224f4dc"
+    },
+    {
+      "claim_id": "46e96d75-6771-428e-84ea-c1084ae7abaf",
+      "result_id": "85024121-948e-436f-9418-0ed06e5f750e"
+    },
+    {
+      "claim_id": "dcf81197-0174-48c2-8e77-57648f93c53f",
+      "result_id": "85024121-948e-436f-9418-0ed06e5f750e"
+    },
+    {
+      "claim_id": "8d733fbe-a1ea-4b5f-870a-73e87b363faa",
+      "result_id": "b566cbdd-8d90-4641-b483-07d62028e27d"
+    },
+    {
+      "claim_id": "1dd9d618-47a5-449f-9747-26b075f04d1d",
+      "result_id": "b566cbdd-8d90-4641-b483-07d62028e27d"
+    },
+    {
+      "claim_id": "cb263edf-abf1-4fc4-9ee1-587842ef4949",
+      "result_id": "b566cbdd-8d90-4641-b483-07d62028e27d"
+    },
+    {
+      "claim_id": "68654c94-cf21-4280-aefa-43db50189ff6",
+      "result_id": "b566cbdd-8d90-4641-b483-07d62028e27d"
+    },
+    {
+      "claim_id": "8d560fe8-3290-4dcd-9c80-f6d29b599aef",
+      "result_id": "b566cbdd-8d90-4641-b483-07d62028e27d"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "dZIP13 is identified as the Drosophila orthologue of human ZIP13 based on sequence homology (45% identity, 58% similarity), phylogenetic clustering in the LIV-1 subfamily, and conserved structural features including eight transmembrane domains and the HEXXH metalloprotease motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging bioinformatic evidence from sequence alignment (C2, Figure 1A), phylogenetic analysis (C3, Figure 1B), and structural predictions (C4-C6) that collectively establish dZIP13 as the Drosophila orthologue of hZIP13. The data are appropriately sourced from established databases and cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C25",
+      "C26"
+    ],
+    "result": "Midgut-specific modulation of dZIP13 expression specifically alters whole-body iron levels without affecting zinc or copper, with knockdown reducing iron to ~50% and overexpression increasing iron levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C25-C26 are supported by ICP-MS measurements (Figures 2A, 3E, 3F) showing specific iron changes in both gut and whole-body compartments. The specificity for iron over zinc/copper is consistently demonstrated, and the effect is confirmed with different RNAi lines to rule out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15"
+    ],
+    "result": "Ubiquitous dZIP13 knockdown causes developmental arrest (~10% eclosion) that is specifically rescued by dietary iron supplementation (~75% eclosion), exacerbated by iron chelator BPS, and worsened by zinc addition (~0% eclosion), while wild-type flies are unaffected by these dietary manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C14-C15 present a coherent rescue experiment (Figure 2B-C) demonstrating iron-specific effects. The dramatic rescue by iron (C10), exacerbation by iron chelator (C11), and lack of effect in wild-type controls (C15) provide strong evidence that iron deficiency is the primary defect. The zinc effect (C12) is interpreted as competitive inhibition of iron absorption (C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Iron supplementation extends the median lifespan of dZIP13-RNAi flies from ~4 days to ~25 days, while zinc addition shortens lifespan to ~1 day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by lifespan data (Figure 2D) that parallel the eclosion results, providing additional evidence for iron-specific effects of dZIP13. The dramatic lifespan extension with iron supplementation reinforces the conclusion that iron deficiency is the primary defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "dZIP13 knockdown causes opposite effects on cytosolic iron in different compartments: increased cytosolic aconitase activity (~35% increase) in the gut indicating iron elevation, but decreased activity in the rest of the body indicating iron deficiency, with opposite effects in dZIP13-OE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 use aconitase activity as a validated iron indicator (C18, cited literature) to demonstrate compartment-specific iron redistribution (Figures 3A-B). The opposite effects in gut versus body-minus-gut provide key evidence for dZIP13's role in iron export from gut cells. However, aconitase activity can be affected by factors other than iron (e.g., oxidative stress), which the authors acknowledge but address with additional gene expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "dZIP13 knockdown causes ferritin upregulation and Malvolio downregulation in the gut, mimicking the gene expression pattern of iron-supplemented larvae, indicating cytosolic iron elevation in gut cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 use RT-PCR (Figures 3C-D) to show that dZIP13-RNAi gut cells exhibit a gene expression signature consistent with iron surplus (C23, established pattern), supporting the aconitase data. This provides independent molecular evidence for cytosolic iron accumulation in the gut when dZIP13 is knocked down.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "dZIP13 knockdown prevents ferric iron staining in the iron cell region and reduces ferritin iron loading, while overexpression increases staining in the iron cell region and ectopically in the anterior midgut, similar to high dietary iron conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 use ferric iron staining (Figure 4A-C) and native-PAGE (Figure 4C) to demonstrate that dZIP13 is required for iron loading into ferritin in the secretory pathway. The ectopic staining in dZIP13-OE (C33) paralleling high iron conditions (C34) provides additional evidence. The native-PAGE data (C36-C37) directly confirms poor iron loading in ferritin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "dZIP13 knockdown causes ectopic ferritin expression in anterior and posterior midguts and dramatically increases ferritin protein levels, while overexpression decreases ferritin levels, indicating a feedback response to altered iron distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 use GFP-tagged ferritin (Figure 4D) and Western blot (Figure 4E) to show that ferritin expression is induced when dZIP13 is knocked down, consistent with cytosolic iron accumulation triggering a compensatory response. The dramatic increase in ferritin protein (C40) despite poor iron loading (C36) supports the model of cytosolic iron accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Overexpressing dZIP13 partially rescues the eclosion defect (from <5% to ~30%) and iron deficiency caused by midgut-specific ferritin RNAi, demonstrating genetic interaction between dZIP13 and ferritin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate genetic interaction through rescue experiments (Figures 4F-G). The partial rescue of ferritin-RNAi phenotypes by dZIP13 overexpression provides strong evidence that dZIP13 and ferritin function in the same pathway. The rescue is partial, which is expected given that ferritin itself is still depleted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "dZIP13 localizes to ER/Golgi compartments in both mammalian Caco2 cells and Drosophila gut cells, with poor co-localization with endosome markers, as demonstrated by immunofluorescence with tagged and endogenous protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 use multiple approaches (myc-tagged in Caco2 cells C46, EGFP-tagged in flies C47, and antibody against endogenous protein C48) to consistently demonstrate ER/Golgi localization (Figure 5A-B). The poor endosome co-localization (C49, Figure 5C) helps narrow down the subcellular location. The consistency across different systems and tags strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Iron levels in isolated ER/Golgi are reduced in dZIP13-RNAi and increased in dZIP13-OE larvae, while zinc levels are marginally altered and negatively correlated with iron levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide direct biochemical evidence (Figure 5D) that dZIP13 affects iron levels in the ER/Golgi compartment. The dramatic iron changes with marginal zinc changes support iron as the primary substrate. However, the purity of the ER/Golgi preparation is acknowledged to contain some mitochondrial contamination (Figure 7\u2014figure supplements 1-2), which could affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Expression of dZIP13 in E. coli causes poor growth under normal conditions that is restored by iron supplementation, confers iron resistance, and reduces cellular iron levels in iron-rich medium, without significant zinc effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 use a heterologous E. coli system (Figure 6A-B) to demonstrate iron-specific effects. The iron-dependent growth rescue (C53) and reduced cellular iron in iron-rich conditions (C55) provide evidence for iron export activity. This is a clever use of a simpler system where dZIP13 would be expected to localize to the plasma membrane, though membrane localization is confirmed separately (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Radioisotope transport assays demonstrate that dZIP13 expressed in E. coli exports iron in a time-dependent, roughly linear manner, with dZIP13 localized to the bacterial membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide the most direct evidence for iron export activity using 55Fe radioisotope assays (Figure 7A-B). The time-course showing linear increase in exported iron (C57) and confirmation of membrane localization (C58) are critical for establishing dZIP13 as an iron exporter. This is the gold standard assay for demonstrating transporter activity, analogous to ferroportin studies (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Iron uptake into isolated ER/Golgi from dZIP13-OE larvae is significantly increased while uptake from dZIP13-RNAi larvae is decreased, with a linear time-dependent relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 use radioisotope assays with isolated ER/Golgi (Figure 7D) to directly demonstrate that dZIP13 mediates iron import into these organelles. The linear time-course (C60) and opposite effects of RNAi versus overexpression (C59) provide strong evidence. However, the ER/Golgi preparation contains some mitochondrial contamination (acknowledged in Figure 7\u2014figure supplements), which could complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Human ZIP13 shares highest homology with dZIP13, and when overexpressed in Drosophila, hZIP13 decreases aconitase activity, rescues dZIP13-RNAi eclosion rate from 40% to 75%, and doubles the lifespan of dZIP13-RNAi flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 demonstrate functional conservation between dZIP13 and hZIP13 through cross-species rescue experiments (Figure 8A-C). The ability of hZIP13 to rescue multiple dZIP13-RNAi phenotypes (aconitase activity, eclosion, lifespan) provides strong evidence that the two proteins are functional orthologues with conserved iron transport activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Despite being closely related to ZIP13 and localized to ER/Golgi, hZIP7 (a zinc importer) does not rescue dZIP13-RNAi defects or alter whole body aconitase activity when expressed in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide an important negative control (Figure 8A-C) showing that not all ER/Golgi-localized ZIP family members can substitute for ZIP13. This specificity argues against a general zinc import function and supports the unique iron export role of ZIP13. The phylogenetic relationship (C65) makes this a particularly informative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Ubiquitous dZIP13 knockdown causes retention of collagen IV (Vkg-GFP) in fat body cells that is rescued by iron supplementation, consistent with impaired function of iron-dependent lysyl hydroxylase required for collagen synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 connect dZIP13 function to collagen synthesis through Vkg-GFP retention experiments (Figure 8D-E). The iron-rescuable collagen defect (C71-C72) and the known iron requirement of lysyl hydroxylase (C73) provide a mechanistic link to SCD-EDS pathology. This extends the findings beyond iron homeostasis to a specific disease-relevant phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "dZIP13 is the functional Drosophila orthologue of hZIP13, and their functions are fundamentally different from other zinc importers including the closely related ZIP7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 represent synthesis conclusions based on the cumulative evidence from sequence homology (C1-C6), functional rescue by hZIP13 (C62-C64), and lack of rescue by hZIP7 (C67). The evidence collectively supports these conclusions, though they are inferences rather than direct experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "dZIP13 mediates iron export to the secretory pathway, representing the first ZIP family member reported to function as an iron exporter, as demonstrated by multiple lines of evidence including compartment-specific iron redistribution, ferritin loading defects, collagen secretion abnormalities, E. coli phenotypes, and direct radioisotope transport assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 and C112-C119 represent the central conclusion of the paper, supported by converging evidence from multiple experimental approaches: compartment-specific iron changes (C114), ferritin loading failure (C115), collagen defects (C116), E. coli phenotypes (C117-C118), and direct transport assays (C119). The breadth and consistency of evidence across different systems strongly supports this novel conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "ZIP13 proteins have a unique D-H swap in TM4 (DNFTHG vs HNFTDG in other ZIPs), and preliminary evidence suggests this variation is functionally important as switching these residues abolishes dZIP13 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is well-supported by sequence alignment (Figure 9), but C85 is explicitly described as 'preliminary evidence' without showing the actual data. While this is an interesting structural observation that could explain ZIP13's unique function, the functional importance requires more rigorous experimental validation before being considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C120"
+    ],
+    "result": "SCD-EDS, caused by ZIP13 mutations, is likely due to impaired iron transport to ER/Golgi rather than zinc defects, with the apparent normal lysyl/prolyl hydroxylase activities in patient cells potentially explained by iron supplementation in the enzymatic assays masking in vivo iron deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 and C120 reinterpret SCD-EDS pathogenesis based on the current findings. The explanation for normal enzyme activities in patient cells (C90-C92) is logical given that the assays require exogenous iron (C91). However, this remains an inference about human disease based on fly data, and direct testing in patient cells would strengthen the conclusion. The interpretation is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors argue that iron dyshomeostasis rather than zinc defects is the primary cause of SCD-EDS, based on their observation of dramatic iron changes but only marginal zinc changes in ER/Golgi when dZIP13 is knocked down, and the inability of hZIP7 to rescue dZIP13-RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 address conflicting hypotheses in the literature about SCD-EDS pathogenesis. The authors' data showing marginal zinc changes (C97) versus dramatic iron changes (C50), combined with the hZIP7 negative control (C67), support their interpretation (C98). However, this remains somewhat speculative regarding human disease, and the marginal zinc changes (C51, C97) are not completely absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "SCD-EDS patients do not show classical iron deficiency phenotypes, possibly because iron deficiency is localized to the secretory pathway while cytosolic and mitochondrial iron remain unaffected, suggesting iron dyshomeostasis involves a wider spectrum of abnormalities than previously recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 provide a reasonable explanation for why SCD-EDS doesn't present with typical iron deficiency symptoms. The compartment-specific iron deficiency model (C100) is consistent with the fly data showing cytosolic iron elevation in gut but ER/Golgi iron depletion. However, these are speculative inferences about human disease (C100 uses 'possible,' C101 uses 'would result') that would benefit from direct testing in patient samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C80",
+      "C81",
+      "C82",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Drosophila ferritin differs from mammalian ferritin in being localized to the secretory pathway rather than cytosol, playing a central role in dietary iron absorption by transporting iron through the secretory pathway, which necessitates higher iron flux through this pathway compared to mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 and C80-C82, C107-C109 establish the biological context that makes Drosophila particularly suitable for discovering dZIP13's function. These claims are well-supported by cited literature (Tang and Zhou 2013b; Nichol et al. 2002; Mandilaras et al. 2013) and provide important background for understanding why the iron export function was discovered in flies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Lysyl hydroxylase and prolyl 4-hydroxylases are ER-localized, iron-dependent enzymes critical for collagen synthesis, with Drosophila having a simpler collagen system (one type IV collagen encoded by Viking and Cg25C) compared to mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 provide established background on collagen synthesis and iron-dependent enzymes, supported by appropriate citations (Tuderman et al. 1977; Pirskanen et al. 1996; Myllyharju and Kivirikko 2004; Fessler and Fessler 1989). This contextualizes the collagen phenotypes observed with dZIP13 manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C83",
+      "C86"
+    ],
+    "result": "While some ZIP family members (ZIP14, ZIP8) can transport iron, they are broad-scope metal importers with unestablished in vivo roles in iron homeostasis; ZnT5 can mediate bidirectional zinc transport; and mutations in lysyl hydroxylase genes cause Bruck syndrome and Ehlers-Danlos type VI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C83, and C86 provide literature context supported by appropriate citations. These establish that: (1) other ZIPs can transport iron but with unclear physiological relevance (C78-C79), (2) bidirectional transport by metal transporters has precedent (C83), and (3) collagen synthesis defects cause related diseases (C86). These are accurately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Prior to this study, the intracellular iron transfer process was not well understood, and the identity of the iron transporter responsible for iron delivery to secretory compartments remained elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 accurately characterize the state of knowledge in the field prior to this work. This is a reasonable assessment of the literature gap that the study addresses, providing context for the significance of identifying dZIP13 as the secretory pathway iron transporter.",
+    "result_type": "MINOR"
+  }
+]

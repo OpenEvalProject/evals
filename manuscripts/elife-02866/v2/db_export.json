@@ -1,0 +1,2379 @@
+{
+  "submission": {
+    "id": "7cb4b345-4d12-46fe-b9da-13753cabe339",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:45:17.020924Z",
+    "updated_at": "2025-11-28T20:45:17.020924Z"
+  },
+  "content": [
+    {
+      "id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "submission_id": "7cb4b345-4d12-46fe-b9da-13753cabe339",
+      "content_type": "manuscript",
+      "content_text": "# Characterization of TSET, an ancient and widespread membrane trafficking complex\n\n## Authors\n\n- Jennifer Hirst<sup>1</sup> \u2020\n- Alexander Schlacht<sup>2</sup>\n- John P Norcott<sup>3</sup>\n- David Traynor<sup>4</sup>\n- Gareth Bloomfield<sup>4</sup>\n- Robin Antrobus<sup>1</sup>\n- Robert R Kay<sup>4</sup>\n- Joel B Dacks<sup>2</sup> \u2020\n- Margaret S Robinson<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Cambridge Institute for Medical Research University of Cambridge Cambridge United Kingdom\n2. Department of Cell Biology University of Alberta Edmonton Canada\n3. Department of Engineering University of Cambridge Cambridge United Kingdom\n4. Cell Biology MRC Laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe heterotetrameric AP and F-COPI complexes help to define the cellular map of modern eukaryotes. To search for related machinery, we developed a structure-based bioinformatics tool, and identified the core subunits of TSET, a 'missing link' between the APs and COPI. Studies in Dictyostelium indicate that TSET is a heterohexamer, with two associated scaffolding proteins. TSET is non-essential in Dictyostelium, but may act in plasma membrane turnover, and is essentially identical to the recently described TPLATE complex, TPC. However, whereas TPC was reported to be plant-specific, we can identify a full or partial complex in every eukaryotic supergroup. An evolutionary path can be deduced from the earliest origins of the heterotetramer/scaffold coat to its multiple manifestations in modern organisms, including the mammalian muniscins, descendants of the TSET medium subunits. Thus, we have uncovered the machinery for an ancient and widespread pathway, which provides new insights into early eukaryotic evolution.\n\n## Introduction\n\nThe evolution of eukaryotes some 2 billion years ago radically changed the biosphere, giving rise to nearly all visible life on Earth. Key to this transition was the ability to generate intracellular membrane compartments and the trafficking pathways that interconnect them, mediated in part by the heterotetrameric adaptor complexes, APs 1\u20135 and COPI (Dacks et al., 2008; Field and Dacks, 2009; Hirst et al., 2011; Koumandou et al., 2013). In mammals, APs 1 and 2 and COPI are essential for viability, while mutations in the other APs cause severe genetic disorders (Boehm and Bonifacino, 2002; Hirst et al., 2013). The AP and COPI complexes share a similar architecture, due to common ancestry predating the last eukaryotic common ancestor (LECA). All six complexes consist of two large subunits of \u223c100 kD, a medium subunit of \u223c50 kD, and a small subunit of \u223c20 kD (Figure 1A). Their function is to select cargo for packaging into transport vesicles, and together with membrane-deforming scaffolding proteins such as clathrin and the COPI B-subcomplex, they facilitate the trafficking of proteins and lipids between membrane compartments in the secretory and endocytic pathways. The recent discovery of the evolutionarily ancient AP-5 complex, found on late endosomes and lysosomes, added a new dimension to models of the endomembrane system, and raised the possibility that other undetected membrane-trafficking complexes might exist (Hirst et al., 2011). Therefore, we set out in search of additional members of the AP/COPI subunit families.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structures of the assembled complexes. All six complexes are heterotetramers; the individual subunits are called adaptins in the APs (e.g., \u03b3-adaptin) and COPs in COPI (e.g., \u03b3-COP). The two large subunits in each complex are structurally similar to each other. They are arranged with their N-terminal domains in the core of the complex, and these domains are usually (but not always) followed by a flexible linker and an appendage domain. The medium subunits consist of an N-terminal longin-related domain followed by a C-terminal \u03bc homology domain (MHD). The small subunits consist of a longin-related domain only. (B) Jpred secondary structure predictions of some of the known subunits (all from Homo sapiens), together with new family members from Dictyostelium discoideum (Dd) and Arabidopsis thaliana (At). See also Figure 1\u2014figure supplements 1\u20134, Figure 1\u2014source data 1, 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The lighter shading indicates where an orthologue was found either below the arbitrary cut-off, by using NCBI BLAST (see Figure 1\u2014figure supplement 3), or by searching a genomic database (e.g., AP-1 \u03bc1 |Naegr1|35900|, JGI). The new complex is called \u2018TSET\u2019.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig1-figsupp3-v2.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The orthologues were identified by reverse HHpred, except for those in italics, which were found by BLAST searching (NCBI) using closely related organisms. TTRAY1 and TTRAY2 were initially identified by proteomics in a complex with TSET, but could also have been predicted by reverse HHpred as closely related to \u03b2\u2032-COP using the PDB structure, 3mkq_A. In all other organisms TTRAY1 and TTRAY2 were identified by NCBI BLAST (italics). Note that orthologues of TSAUCER in P. patens, and TTRAY 2 in M. pusilla were identified in Phytozome, which is a genomic database hosted by Joint Genome Institute (JGI). Note orthologues of TCUP in D. purpureum and TSPOON in D. discoideum were identified by searching genomic sequences using closely related sequences, and have been manually appended in DictyBase. In these cases corresponding sequences are not at present found at NCBI. Whilst S. moellendorffii and V. vinifera were included in the reverse HHpred database, they were not included in the Coulson plot.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Reverse HHpred searches were initiated using the key words \u2018epsin\u2019 or \u2018ENTH\u2019. The PDB structures used were: 1eyh_A (Chain A, Crystal Structure Of The Epsin N-Terminal Homology (Enth) Domain At 1.56 Angstrom Resolution); 1inz_A (Chain A, Solution Structure Of The Epsin N-Terminal Homology (Enth) Domain Of Human Epsin); 1xgw_A (Chain A, The Crystal Structure Of Human Enthoprotin N-Terminal Domain); 3onk_A (Chain A, Yeast Ent3_enth Domain), and the output was assimilated in Excel as described for the adaptors. The identity of the hits was determined using NCBI BLAST searching. Note that all of the organisms that have lost AP-4 have also lost its binding partner, tepsin.\n\n## Results and discussion\n\n### The search for novel AP-related complexes\n\nBecause we were unable to find any promising candidates for new AP/COPI-related machinery using sequence-based searches, we developed a more sensitive tool, designed to search for structural similarity rather than sequence similarity. Using HHpred to analyse every protein in the RefSeq database from 15 organisms, covering a broad span of eukaryotic diversity, we built a \u2018reverse HHpred\u2019 database. This database contains potential homologues for >300,000 different proteins (http://reversehhpred.cimr.cam.ac.uk), and can be searched with structures from the Protein Data Bank (PDB). As proof of principle, we used this database to identify all four subunits of the AP-5 complex (Figure 1\u2014figure supplements 1 and 2; Figure 1\u2014source data 1, 2), even though in our previous study only the medium subunit was initially detectable by bioinformatics-based searching (Hirst et al., 2011).\n\nIn addition to known proteins, our reverse HHpred database revealed novel candidates for each of the four subunit families, with orthologues present in diverse eukaryotes including plants and Dictyostelium (Figure 1\u2014figure supplements 2\u20134, Figure 1\u2014source data 1, 2). Secondary structure predictions confirmed that the new family members have similar folds to their counterparts in the AP complexes and COPI (Figure 1B). Only one of these proteins had been characterised functionally: TPLATE (NP_186827.2), an Arabidopsis protein related to the AP \u03b2 subunits and \u03b2-COP, found in a microscopy-based screen for proteins involved in mitosis and localised to the cell plate (Van Damme et al., 2006; Van Damme et al., 2011). There is some variability between orthologous subunits in different organisms: for instance, Arabidopsis has added an SH3 domain to the C-terminal end of its \u2018\u03b3\u03b1\u03b4\u03b5\u03b6\u2019 large subunit, while Dictyostelium has lost the \u03bc homology domain (MHD) at the end of its medium subunit; and in general there seems to be much less selective pressure on these genes than on those encoding other AP/COPI family members (e.g., the AP-1 \u03b21 subunits are 58.01% identical in Dictyostelium and Arabidopsis, while the new \u03b2 family members are only 14.63% identical).\n\n### TSET: a new trafficking complex\n\nTo determine whether the four new candidate subunits identified in our searches actually form a complex, we transformed D. discoideum with a GFP-tagged version of its small (\u03c3-like) subunit (Figure 2A), and then used anti-GFP to immunoprecipitate the construct and any associated proteins from cell extracts (Figure 2B). Precipitates were analysed by mass spectrometry, yielding ten proteins considered to be specifically immunoprecipitated (Figure 2\u2014figure supplement 1a). Two of these were the small subunit itself and its GFP tag. Three others were the remaining candidate subunits: XP_639969.1 (the \u03b2-like subunit), XP_640471.1 (the \u03b3\u03b1\u03b4\u03b5\u03b6-like subunit), and XP_629998.1 (the \u03bc-like subunit), confirming their presence in a complex. Quantification by iBAQ indicated that these three proteins were present in the immunoprecipitate at approximately equimolar levels (Figure 2C, Figure 2\u2014figure supplement 1A), while the small subunit and GFP tag were in \u223c15-fold molar excess, probably due to overexpression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig2-v2.jpg)\n\n**Figure 2.:** (A) Western blots of axenic D. discoideum expressing either GFP-tagged small subunit (\u03c3-like) or free GFP, under the control of the Actin15 promoter, labelled with anti-GFP. The Ax2 parental cell strain was included as a control, and an antibody against the AP-2\u03b1 subunit was used to demonstrate that equivalent amounts of protein were loaded. (B) Coomassie blue-stained gel of GFP-tagged small subunit and associated proteins immunoprecipitated with anti-GFP. The GFP-tagged protein is indicated with a red asterix. (C) iBAQ ratios (an estimate of molar ratios) for the proteins that consistently coprecipitated with the GFP-tagged small subunit. All appear to be equimolar with each other, and the higher ratios for the small (\u03c3-like/TSPOON) subunit and GFP are likely to be a consequence of their overexpression, which we also saw in a repeat experiment in which we used the small subunit's own promoter (Figure 2\u2014figure supplement 1). (D) Predicted structure of the N-terminal portion of D. discoideum TTRAY1, shown as a ribbon diagram. (E) Stills from live cell imaging of cells expressing either TSPOON-GFP or free GFP, using TIRF microscopy. The punctate labelling in the TSPOON-GFP-expressing cells indicates that some of the construct is associated with the plasma membrane. See Videos 1 and 2. (F) Western blots of extracts from cells expressing either TSPOON-GFP or free GFP. The post-nuclear supernatants (PNS) were centrifuged at high speed to generate supernatant (cytosol) and pellet fractions. Equal protein loadings were probed with anti-GFP. Whereas the GFP was exclusively cytosolic, a substantial proportion of TSPOON-GFP fractionated into the membrane-containing pellet. (G) Mean generation time (MGT) for control (Ax2) and TSPOON knockout cells. The knockout cells grew slightly faster than the control. (H) Differentiation of the Ax2 control strain and two TSPOON knockout strains (1725 and 1727). All three strains produced fruiting bodies upon starvation. (I) Assay for fluid phase endocytosis. The control and knockout strains took up FITC-dextran at similar rates. (J) Assay for endocytosis of membrane, labelled with FM1-43, showing the time taken to internalise the entire surface area. The knockout strains took significantly longer than the control (*p<0.05; **p<0.01). See also Figure 2\u2014figure supplements 1 and 2, Figure 2; Videos 1 and 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) iBAQ ratios for the proteins that coprecipitated with TSPOON-GFP, normalized to the median abundance of all proteins across five experiments. ND = not detected. (B) Fluorescence and phase contrast micrographs of cells expressing GFP-tagged TSPOON under the control of its own promoter (Prom-TSPOON-GFP). The construct appears mainly cytosolic. (C) Homology modeling of TTRAYs from A. thaliana, D. discoideum, and N. gruberi, revealing two \u03b2-propeller domains followed by an \u03b1-solenoid. (D) Disruption of the TSPOON gene. PCR was used to amplify either the wild-type TSPOON gene (in Ax2) or the disrupted TSPOON gene. The resulting products were either left uncut (U) or digested with SmaI (S), which should not cut the wild-type gene, but should cleave the disrupted gene into three bands. Several clones are shown, including HM1725 (200/1 A1). (E) Spore viability after detergent treatment was used to test for integrity of the cellulosic spore and the ability to hatch in a timely manner. The control (Ax2) strain and the knockout (HM1725) strain both showed good viability. (F) Expansion rate of plaques on bacterial lawns. The rates for control (Ax2) and knockout (HM1725, 1727, and 1728) strains were similar initially, but by 2 days the control plaques were larger. (G) Micrographs of plaques from control and knockout strains.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig2-figsupp3-v2.jpg)\n\nInterestingly, two of the other proteins in the immunoprecipitate, also approximately equimolar to the three coprecipitating subunits, were XP_642289.1 and XP_637150.1. Both proteins are predicted to consist of two N-terminal \u03b2-propeller domains followed by an \u03b1-solenoid (Figure 2D, Figure 2\u2014figure supplement 1C). This type of architecture is found in several coat components, including clathrin heavy chain, SPG11 (associated with AP-5), the \u03b1-COP and \u03b2\u2032-COP subunits of the COPI coat (B-COPI), and the Sec31 subunit of the COPII coat (Devos et al., 2004). HHpred analyses show that the closest matches for both XP_642289.1 and XP_637150.1 are \u03b2'-COP, followed by \u03b1-COP. Probable orthologues of XP_642289.1 and XP_637150.1 can be found in other organisms that have the four core subunits (Figure 1\u2014figure supplement 4). Because proteins with this architecture often act as a coat for transport vesicles, we hypothesize that these proteins may provide a scaffold for the newly identified heterotetramer.\n\nThe other three proteins in the immunoprecipitate, secG and vacuolins A and B, appear to be less widespread taxonomically (Figure 2\u2014figure supplement 2 and 3), but are nonetheless suggestive of function. SecG is related to the plasma membrane- and endosome-associated ARNO/cytohesin family of Arf GEFs in animal cells (Shina et al., 2010), and also appears to be equimolar with the core complex. Vacuolins are members of the SPFH (stomatin-prohibitin-flotillin-HflC/K) superfamily. They have been shown to associate with the late vacuole just before exocytosis and also with the plasma membrane (Rauchenberger et al., 1997; Gotthardt et al., 2002), and to contribute to vacuole function (Jenne et al., 1998). However, the amounts of coprecipitating vacuolins were more variable, suggesting that they are less tightly associated with the complex (Figure 2\u2014figure supplement 1A). Thus, like TPLATE, both SecG and the vacuolins have been implicated in membrane traffic, acting at the plasma membrane and/or endosomal compartments.\n\nAs the \u03b2-like subunit is already named TPLATE, we propose similar nomenclature for the other three subunits of the heterotetramer, relating to their relative sizes: TSAUCER, TCUP, and TSPOON. For the two associated \u03b2-propeller/\u03b1-solenoid proteins, we propose TTRAY1 and TTRAY2, and for the conserved heterohexamer, we propose the name TSET.\n\n### Characterisation of the TSET complex in Dictyostelium\n\nOne of the key properties of coat proteins is their ability to cycle on and off membranes. Although by widefield fluorescence microscopy TSPOON-GFP looked diffuse and cytosolic (Figure 2\u2014figure supplement 1B), TIRF imaging showed a punctate pattern, especially in the cells with lower expression, indicating that some of the construct is associated with the plasma membrane (Figure 2E, Figure 2; Video 1). In contrast, free GFP appeared to be entirely cytosolic (Figure 2E, Figure 2; Video 2). In addition, high speed centrifugation of a post-nuclear supernatant showed a substantial amount of TSPOON-GFP coming down in the membrane-containing pellet, in contrast to free GFP, which was exclusively in the supernatant (Figure 2F). These findings indicate that like other coat proteins, the complex is transiently recruited onto a membrane (specifically, the plasma membrane) from a cytosolic pool.\n\n![Video 1.](https://cdn.elifesciences.org/articles/02866/elife-02866-media1.avi.jpg)\n\n**Video 1.:** TIRF microscopy of D. discoideum expressing TSPOON-GFP, expressed off its own promoter in TSPOON knockout cells. One frame was collected every second. Dynamic puncta can be seen, indicating that the construct forms patches at the plasma membrane.\n\n![Video 2.](https://cdn.elifesciences.org/articles/02866/elife-02866-media2.avi.jpg)\n\n**Video 2.:** TIRF microscopy of D. discoideum expressing free GFP, driven by the Actin15 promoter in TSPOON knockout cells. One frame was collected every second. The signal is diffuse and cytosolic.\n\nSilencing TPLATE in Arabidopsis produces a very severe phenotype, with impaired growth and differentiation, thought to be caused by defects in clathrin-mediated endocytosis (Van Damme et al., 2006; Van Damme et al., 2011). To investigate the function of TSET in Dictyostelium, we disrupted the TSPOON gene by replacing most of the coding sequence with a selectable marker (Figure 2\u2014figure supplement 1D). Surprisingly, the resulting knockout cells grew at least as fast a control axenic strain (Figure 2G shows the mean generation time); and differentiation also appeared normal, with fruiting bodies forming under appropriate stimuli (Figure 2H). Uptake of FITC-dextran, an assay for fluid phase endocytosis, was unimpaired in the TSPOON knockout cells (Figure 2I); however, uptake of FM1-43, a membrane marker, was slower than in the control (Figure 2J shows the time taken to internalise the entire surface area), indicating that TSET plays a role in plasma membrane turnover, consistent with studies on Arabidopsis. Nevertheless, it is clear that in contrast to Arabidopsis, Dictyostelium can thrive without a functional TSET complex.\n\nVery recently, the discoverers of TPLATE used tandem affinity purification to identify TPLATE binding partners, and found the Arabidopsis orthologues of the TSET components that we identified independently in the present study (Gadeyne et al., 2014). The Arabidopsis pulldowns did not contain any proteins resembling secG or the vacuolins, supporting our hypothesis that these proteins are add-ons to the core heterohexamer. However, Arabidopsis TSET is associated with two additional proteins containing EH domains, which we did not find in our Dictyostelium pulldowns. Some of the Arabidopsis pulldowns also brought down components of the machinery for clathrin-mediated endocytosis, including clathrin itself. Although we also found clathrin and associated proteins in our Dictyostelium immunoprecipitates, these proteins were equally abundant in control immunoprecipitates from non-GFP-expressing cells, indicating that they were contaminants. The differences in proteins that coprecipitate with TSET in the two organisms are probably a reflection of functional differences: TSET knockouts in Arabidopsis are lethal and knockdowns profoundly affect clathrin-mediated endocytosis, while TSET knockdowns in Dictyostelium produce a very mild phenotype.\n\n### TSET is ancient and widespread in eukaryotes\n\nWhen TPLATE was discovered in Arabidopsis, it was reported to be unique to plant species (Van Damme et al., 2006; Van Damme et al., 2011). Similarly, in the more recent Arabidopsis study, the authors concluded that the complex was plant-specific (Gadeyne et al., 2014). However, these conclusions were based on analyses of plants, yeast, and humans only. Our identification and characterization of homologues of all six subunits in Dictyostelium discoideum, as well as their presence in the excavate Naegleria gruberi, suggested that the evolutionary distribution was much more extensive. In depth homology searching identified orthologues in genomes from across the broad diversity of eukaryotes (Figure 3, Figure 3\u2014source data 1, Figure 3\u2014figure supplement 1), strongly suggesting that the complex was present prior to the LECA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig3-v2.jpg)\n\n**Figure 3.:** (A) Coulson plot showing the distribution of TSET in a diverse set of representative eukaryotes. Presence of the entire complex in at least four supergroups suggests its presence in the last eukaryotic common ancestor (LECA) with frequent secondary loss. Solid sectors indicate sequences identified and classified using BLAST and HMMer. Empty sectors indicate taxa in which no significant orthologues were identified. Filled sectors in the Holozoa and Fungi represent F-BAR domain-containing FCHo and Syp1, respectively. Taxon name abbreviations are inset. Names in bold indicate taxa with all six components. (B) Deduced evolutionary history of TSET as present in the LECA but independently lost multiple times, either partially or completely. See also Figure 3\u2014source data 1, Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** WC = with COPI; WOC = without COPI.\n\nAlthough TSET is clearly ancient, its relationship to the other heterotetrameric complexes was unclear from homology searching alone. Consequently, after analyses of the individual subunits (Figure 4\u2014figure supplements 1\u20137), we performed a phylogenetic analysis on the concatenated set of the four core subunits for direct comparison of TSET with the other AP and COPI complexes (Figure 4A, Figure 4\u2014figure supplement 8). This provided moderate support for TSET as a clade, but strong resolution excluding it from the APs and COPI, as well as backbone resolution between the heterotetramer clades. Thus, TSET is clearly an ancient component of the eukaryotic membrane-trafficking system, distinct from the known heterotetramers.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-v2.jpg)\n\n**Figure 4.:** (A) Simplified diagram of the concatenated tree for TSET, APs, and COPI, based on Figure 4\u2014figure supplement 8. Numbers indicate posterior probabilities for MrBayes and PhyloBayes and maxium-likelihood bootstrap values for PhyML and RAxML, in that order. (B) Schematic diagram of TSET. (C) Possible evolution of the three families of heterotetramers: TSET, APs, and COPI. We propose that the earliest ancestral complex was a likely a heterotrimer or a heterohexamer formed from two identical heterotrimers, containing large (red), small (yellow), and scaffolding (blue) subunits. All three of these proteins were composed of known ancient building blocks of the membrane-trafficking system (Vedovato et al., 2009): \u03b1-solenoid domains in both the large and scaffolding subunits; two \u03b2-propellers in the scaffolding subunit; and a longin domain forming the small subunit. The gene encoding the large subunit then duplicated and mutated to generate the two distinct types of large subunits (red and magenta), and the gene encoding the small subunit also duplicated and mutated (yellow and orange), with one of the two proteins (orange) acquiring a \u03bc homology domain (MHD) to form the ancestral heterotetramer, as proposed by Boehm and Bonifacino (12). However, the scaffolding subunit remained a homodimer. Upon diversification into three separate families, the scaffolding subunit duplicated independently in TSET and COPI, giving rise to TTRAY1 and TTRAY2 in TSET, and to \u03b1- and \u03b2\u2032-COP in COPI. COPI also acquired a new subunit, \u03b5-COP (purple). The scaffolding subunit may have been lost in the ancestral AP complex, as indicated in the diagram; however, AP-5 is tightly associated with two other proteins, SPG11 and SPG15, and the relationship of SPG11 and SPG15 to TTRAY/B-COPI remains unresolved, so it is possible that SPG11 and SPG15 are highly divergent descendants of the original scaffolding subunits. The other AP complexes are free heterotetramers when in the cytosol, but membrane-associated AP-1 and AP-2 interact with another scaffold, clathrin; and AP-3 has also been proposed to interact transiently with a protein with similar architecture, Vps41 (Rehling et al., 1999; Cabrera et al., 2010; Asensio et al., 2013). So far no scaffold has been proposed for AP-4. Although the order of emergence of TSET and COP relative to adaptins is unresolved, our most recent analyses indicate that, contrary to previous reports (Hirst et al., 2011), AP-5 diverged basally within the adaptin clade, followed by AP-3, AP-4, and APs 1 and 2, all prior to the LECA. This still suggests a primordial bridging of the secretory and phagocytic systems prior to emergence of a trans-Golgi network. The muniscins arose much later, in ancestral opisthokonts, from a translocation of the TSET MHD-encoding sequence to a position immediately downstream from an F-BAR domain-encoding sequence. Another translocation occurred in plants, where an SH3 domain-coding sequence was inserted at the 3\u2032 end of the TSAUCER-coding sequence. See also Figure 4\u2014figure supplements 1\u201310.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** In this and all other figure supplements to Figure 4, AP subunits are boxed in blue, F-COPI subunits are boxed in red, and subunits of TSET are boxed in yellow. Node support for critical nodes is shown. Numbers indicate Bayesian posterior probabilities (MrBayes) and bootstrap support from Maximum-likelihood analysis (RAxML). Support values for other nodes are denoted by symbols (see inset).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp3-v2.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp4-v2.jpg)\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp5-v2.jpg)\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp6-v2.jpg)\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp7-v2.jpg)\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp8-v2.jpg)\n\n**Figure 4\u2014figure supplement 8.:** Phylogenetic analysis of the heterotetrameric complexes: F-COPI (orange), TSET (purple), and AP (magenta, blue, red, green, and yellow for 5, 3, 1, 2, and 4, respectively), shows strong, weak, and moderate support for clades of each complex, respectively. Node support for critical nodes is shown. Numbers indicate Bayesian posterior probabilities (MrBayes and PhyloBayes) and bootstrap support from Maximum-likelihood analysis (PhyML and RAXML). Support values for other nodes are denoted by symbols (see inset).\n\n![Figure 4\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp9-v2.jpg)\n\n**Figure 4\u2014figure supplement 9.:** TTRAYs 1 and 2, and COPI \u03b1 and \u03b2\u2032, arose from separate gene duplications, indicating that the ancestral complex had only one such protein, although possibly present as two identical copies. Phylogenetic analysis of \u03b1- and \u03b2\u2032-COPI (red), and TTRAYs 1 and 2 (yellow), shows a well supported COPI clade excluding all of the TTRAY1 and 2 sequences, suggesting that the duplications giving rise to these proteins occurred independently, and the utilization of two different outer coat members occurred through convergent evolution. Node support for critical nodes is shown. Numbers indicate Bayesian posterior probabilities (MrBayes) and bootstrap support from Maximum-likelihood analysis (RAxML). Support values for other nodes are denoted by symbols (see inset).\n\n![Figure 4\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/02866/elife-02866-fig4-figsupp10-v2.jpg)\n\n**Figure 4\u2014figure supplement 10.:** 2V0O_A (Chain A, Fcho2 F-Bar Domain); 3 G9H_A (Chain A, Crystal Structure Of The C-Terminal Mu Homology Domain Of Syp1); 3G9G_A (Chain A, Crystal Structure Of The N-Terminal EfcF-Bar Domain Of Syp1).\n\nPhylogenetic analysis of the TTRAYs and their closest relatives, \u03b2\u2032-COP and \u03b1-COP (Figure 4\u2014figure supplement 9), showed that the paralogues are due to ancient duplications in the TSET and COPI families respectively, which occurred prior to the divergence of the LECA. Together, these findings imply that the ancestor of the TSET, COPI, and AP complexes was a heterohexamer rather than a heterotetramer, consisting of five different proteins, with the two scaffolding proteins present as two identical copies (Figure 4B,C). These scaffolding subunits then duplicated independently in COPI and TSET. The ancestral AP complex may have lost its original scaffolding subunits, although AP-5, the first AP to branch away, is closely associated with SPG11, a \u03b2-propeller + \u03b1-solenoid protein whose relationship to the TTRAYs and B-COPI is as yet unclear. None of the other APs has any closely associated proteins with this architecture, but AP-1 and AP-2 transiently interact with clathrin, and there may also be a transient association between AP-3 and another \u03b2-propeller + \u03b1-solenoid protein, Vps41 (Rehling et al., 1999; Cabrera et al., 2010; Asensio et al., 2013).\n\nAlthough TSET is deduced to have been present in LECA, the complex appears to have been entirely or partially lost in various lineages (Figure 3B). None of the subunits has a full orthologue in opisthokonts (animals and fungi), indicating secondary loss in the line leading to humans. However, the C-terminal domain of TCUP is homologous to the C-terminal domains of the muniscins, opisthokont-specific proteins (Gadeyne et al., 2014) (Figure 4\u2014figure supplement 10). This suggests that in opisthokonts, the TCUP gene retained its 3\u2032 end, which then combined with a new 5\u2032 end encoding an F-BAR domain to generate the muniscin family (Figure 4C). These include the vertebrate proteins FCHo1/2 and the yeast protein Syp1, important players in the endocytic pathway (Reider et al., 2009; Henne et al., 2010; Cocucci et al., 2012; Umasankar et al., 2012; Mayers et al., 2013). The muniscins constitute one of eight families of MHD proteins in humans, and the only family whose evolutionary origin was unexplained until now. The present study indicates not only that the muniscins are homologous to TCUP, but also that they are the sole surviving remnants of the full TSET complex that existed in our pre-opisthokont ancestors.\n\n### Conclusions\n\nTSET is the latest addition to a growing set of trafficking proteins that have ancient distributions, but are frequently lost (Schlacht et al., 2014), or in the case of TSET reduced perhaps with neofunctionalization (Figure 3). This is consistent with the uneven distribution of the individual components (in contrast to the all-or-nothing distribution of AP-5), the additional apparently lineage-specific binding partners in Dictyostelium, and the acquisition of extra domains (e.g., F-BAR in opisthokonts and SH3 in plants) adding lineage-specific function.\n\nStudies on the muniscins may help to explain the different phenotypes of TSET knockouts in Dictyostelium and Arabidopsis. Like Arabidopsis TSET, the muniscins interact with EH domain-containing proteins and participate in clathrin-mediated endocytosis (Reider et al., 2009; Henne et al., 2010; Cocucci et al., 2012; Umasankar et al., 2012; Mayers et al., 2013). Dictyostelium has lost its TCUP MHD, and it seems likely that concomitant with this loss, it also lost some of TSET's binding partners and functions. Nevertheless, we suspect that TSET may predate clathrin-mediated endocytosis, for two reasons. First, AP-1 and AP-2, the two AP complexes that function together with clathrin, are the most recent additions to the AP family (Figure 4A); and second, TSET already has its own \u03b2-propeller + \u03b1-solenoid scaffold, so it is not clear why it would need clathrin as well. Thus, the interaction between TSET and the clathrin pathway may have evolved considerably later than TSET itself, although still pre-LECA. It is tempting to speculate that TSET was part of the original endocytic machinery, which then became redundant in some organisms as the clathrin pathway took over.\n\nThus, our bioinformatics tool, reverse HHpred, is able to find novel homologues of known proteins, and could potentially be used to identify new players both in membrane traffic and in other pathways (Figure 1\u2014figure supplement 5). Using this tool, we were able to find the four core subunits of an ancient complex belonging to the same family as the APs and COPI. This ancient complex, TSET, is therefore both the answer to the question of the origin of the last set of MHD proteins in humans, and a major new piece of the puzzle to be incorporated alongside the other membrane-trafficking machinery, as we delve into the history of the eukaryotic cell.\n\n## Materials and methods\n\n### Construction of the \u2018reverse HHpred\u2019 database\n\nThe proteomes of various organisms (detailed in Figure 1\u2014figure supplement 2) were downloaded from the National Center for Biotechnology Information archives at ftp://ftp.ncbi.nih.gov/refseq/release/. The *.protein.faa.gz files obtained were then split into separate files, each containing one protein sequence. These were stored such that each directory contained information from only one species (the total number of protein \u2018faa\u2019 files searched for each organism were: Arabidopsis thaliana, 35270; Caenorhabditis elegans, 23903; Dictyostelium discoideum, 13262; Dictyostelium purpureum, 12399; Drosophila melanogaster, 22256; Giardia lamblia, 6502; Homo sapiens, 32977; Micromonas pusilla, 10269; Mus musculus, 29897; Naegleria gruberi , 15756; Physcomitrella patens, 35893; Saccharomyces cerevisiae, 5882; Schizosaccharomyces pombe, 5004; Selaginella moellendorffii, 31312; Vitis vinifera, 23492; Volvox carteri, 14429). The latest protein data bank (pdb70), which contains all publicly available 3D structures of proteins, was downloaded from the Gene Center Munich, Ludwig-Maximilians-Universit\u00e4t (LMU) Munich via their web site at: ftp://toolkit.lmb.uni-muenchen.de/pub/HHsearch/databases/hhsearch_dbs/. The linux rpm version 2.0.11 of the hhsuite software was downloaded from the same website at ftp://toolkit.lmb.uni-muenchen.de/pub/HH-suite/releases/. Each of the faa files was then compared to the pdb70 databank using the hhsearch program from the above suite. The files were tested using the default parameters. Once each protein sequence was tested, the output file was parsed and the hits were extracted and then inserted into a mysql database. The database is searchable by keywords in PDB entries, and therefore is limited to searches where the structure of a given domain structure has been solved. The database is accessible using the link http://reversehhpred.cimr.cam.ac.uk, and searches can be initiated using keywords. Should the link become unavailable, or if you are interested in hosting this yourself please email jpn25@cam.ac.uk for more information. A conceptually similar database, \u2018BackPhyre\u2019, has independently been generated, using Phyre (Kelley and Sternberg, 2009) rather than HHpred as a starting point to identify homologues of known proteins based on predicted structural similarities. Like reverse HHpred, BackPhyre is able to find three of the four TSET subunits in Arabidopsis; however, the only eukaryotes represented in BackPhyre are A. thaliana, D. melanogaster, H. sapiens, M. musculus, P. falciparum, and S. cerevisiae; and without additional organisms, such as D. discoideum and N. gruberi, we would not have been able to find the entire TSET complex.\n\n### Data assimilation\n\nThe large adaptor subunits share sequence and structure homology, as do the medium and small subunits. Therefore, we were able to combine searches for novel large subunits, or for medium/small subunits. Using the key words \u2018clathrin\u2019, \u2018adaptor\u2019, \u2018adapter\u2019, \u2018adaptin\u2019, \u2018AP1\u2019, \u2018AP2\u2019, \u2018AP3\u2019, \u2018AP4\u2019, we searched in PDB for solved structures of any large or medium/small subunit in a given organism (11 solved structures for the large subunits and six solved structures for the medium/small subunits were used to initiate searches [Figure 1\u2014figure supplement 1]). These structures span different domains found within the subunits. For each search, a list was output of any proteins found to contain structural homology. Included in this information are the precise amino acids encompassing the region of similarity, the probability score, and most importantly the \u2018result number\u2019. A protein with a \u2018result number\u2019 of \u20181\u2019 means that there was no other structure in the PDB database that it is more like. Since multiple structures for the various subunits were used, we could also factor in the number of times a particular protein was identified in a search (\u2018repeats\u2019). These parameters were used as key pieces of evidence to determine how likely a hit in these searches would be. Once the primary data were outputted, all other manipulations were performed in Excel. For the large subunits there were 11 data sets (the 11 structures used to search for homologues), and for the medium/small subunits there were six data sets. The data manipulation was standardised at this point, and the following steps performed to assimilate the data. The data sets were sorted by result number to preclude anything with a result number of >50 (this means that there are 49 other structures in the PDB database that this protein is more similar to). Duplicates, where a protein was identified in multiple searches, were removed with the highest ranking (in \u2018result\u2019 terms) kept, and the number of times it was identified recorded in a new column (\u2018repeats\u2019). The results were the ordered with the lowest \u2018Result number\u2019 and the highest \u2018Probability\u2019 to give a final list of proteins (Figure 1\u2014source data 1, 2). Generally only proteins with a \u2018Result number\u2019 <10, \u2018Probability\u2019 >50%, at least 100 amino acids of homology (\u2018thstt\u2019 to \u2018thend\u2019), and \u2018Repeats\u2019 at least two times were considered to be real hits. For ease of visualisation, only proteins with Result number <10 or \u2018Repeats\u2019 >2 are shown, and other proteins of interest (e.g., FCHo1, Syp1) with Result number <10 that did not fit the criteria listed above are greyed out. The \u2018IDs\u2019 have been deduced using NCBI BLAST searches, and have not been experimentally verified. Where the identity is ambiguous (such as the identity of a \u03b2-adaptin), a shared homology is suggested.\n\n### Dictyostelium: the search for TSPOON and TCUP\n\nWhile searching for genes encoding potential components of the complex in four dictyostelid genomes, we could find complete sets in Polysphondylium pallidum and Dictyostelium fasciculatum, but one component each was missing in the databases of predicted proteins of D. discoideum (\u03c3-like subunit) and D. purpureum (\u03bc-like subunit). We identified these genes by tblastn (Camacho et al., 2009), using the most closely related orthologous sequence as query and the chromosomal sequences as target. Gene models were created and refined using the Artemis tool (Carver et al., 2012). These two genes have been given the DictyBase IDs DDB_G0350235 (D. discoideum TSPOON) and DPU0040472 (D. purpureum TCUP) (www.dictybase.org).\n\n### Dictyostelium expression constructs\n\nThe \u03c3-like (TSPOON) coding sequence (CDS) was synthesised (GeneCust) with a BglII restriction site inserted at its 5\u2032 end, its stop codon removed, and a SpeI site inserted at its 3' end, then cloned into pBluescript KSII and sequenced. The CDS was then transferred into a derivative of pDM1005 (Veltman et al., 2009) as a BglII/SpeI fragment, placing GFP at the C terminus, with expression driven from the constitutive actin15 promoter, to generate plasmid pJH101. In addition, the TSPOON promoter and the first 105 bases of the CDS were amplified from Ax2 gemonic DNA by PCR, using primers (5\u2032TATCTCGAGCGTCTTCATCTTCACTATCATTTAATG-3\u2032) and (5\u2032-TAAAAGCTTTTCATATTCACTCTGTTTCTCGTC-3\u2032). The product was cut with XhoI/HindIII, and the 536-bp fragment cloned into the pBluescript KSII plasmid already containing the TSPOON CDS, via the XhoI site in the vector and the silent HindIII site introduced at nucleotide +97 of the TSPOON CDS during its synthesis. The resulting promoter-driven TSPOON CDS was removed by digestion with XhoI/SpeI and inserted into the corresponding sites of pDM323 and pDM450, resulting in expression constructs containing the TSPOON CDS with GFP fused at its C terminus and driven by its own promoter (pDT61 and pDT58 respectively).\n\n### Dictyostelium cell culture and transformation\n\nAll of the methods used for cell biological studies on Dictyostelium are described in detail at Bio-protocol (Hirst et al., 2015).\n\nD. discoideum Ax2-derived strains were grown and maintained in HL5 medium (Formedium) containing 200 \u00b5g/ml dihydrostreptomycin on tissue culture treated plastic dishes, or shaken at 180 rpm, at 22\u00b0C (Kay, 1987). Cells were transformed with expression constructs (30 \u00b5g/4 \u00d7 106 cells) by electroporation using previously described methods (Knecht and Pang, 1995). Transformants were selected and maintained in axenic medium supplemented with 60 \u00b5g/ml hygromycin (pDT58 and pJH101) and 20 \u00b5g/ml G418 (pDT61 and Actin15_GTP; Traynor and Kay, 2007). For the TSPOON knockout, 17.5 \u00b5g of the blasticidin disruption cassette, freed from pDT70 by digestion with ApaI and SacII, was added to 4 \u00d7 106 Ax2 cells before electroporation. Transformants were selected and maintained in HL5 medium containing 10 \u00b5g/ml blasicidin.\n\n### Dictyostelium microscopy and fractionation\n\nCells were transformed with GFP driven by the actin 15 promoter (A15_GFP; Traynor and Kay, 2007), or with TSPOON-GFP driven by either the actin 15 promoter (A15_TSPOON -GFP) or its own promoter (promoter_TSPOON-GFP). For microscopy, the cells were washed in KK2 (16.5 mM KH2PO4, 3.8 mM K2HPO4, 2 mM MgSO4) at 2 \u00d7 107/ml and then transferred into glass bottom dishes (MatTek, Ashland, MA) at 1 \u00d7 106/cm2. They were either imaged immediately (vegetative) or allowed to starve for a further 6\u20138 hr (developed) before imaging live on a Zeiss Axiovert 200 inverted microscope (Carl Zeiss, Jena, Germany) using a Zeiss Plan Achromat 63 \u00d7 oil immersion objective (numerical aperture 1.4), an OCRA-ER2 camera (Hamamatsu, Hamamatsu, Japan), and Improvision Openlab software (PerkinElmer, Waltham, MA). Various treatments including with or without starvation, fixation, pre-fixation saponin treatment did not reveal obvious membrane-associated labelling in cells expressing either promoter_TSPOON-GFP and A15_TSPOON expressing cells.\n\nFor TIRF microscopy, TSPOON-GFP was expressed in the TSPOON null cell lines HM1725 and HM1727 (see below), using the promoter_TSPOON-GFP plasmids pDT58 or pDT61. Transformants were selected and maintained in 30 \u00b5g/ml hygromycin (pDT58) or 10 \u00b5g/ml G418 (pDT61). As a control, free GFP was expressed in the null cells using the plasmid A15_GFP. Cells were harvested from tissue culture dishes when they formed a semi-confluent monoloyer and washed in KK2C (KK2 containing 0.1 mM CaCl2). Approximately 3 \u00d7 104 cells were added to 35-mm glass bottom (No.1.5 coverglass) microwell dishes (MatTek) containing 2.5 ml of KK2C. They were incubated at 22\u00b0C for 2 hr to allow residual fluorescence associated with ingested axenic medium to dissipate, and 20 min before imaging, the KK2C was with fresh KK2C, containing 50 \u00b5g/ml L-ascorbic acid as an antioxidant to reduce the effects of phototoxicity. Cells were visualised using a Nikon N-STORM microscope operating in the TIRF mode with a 100x lens (NA 1.49) and a zoom of 1.5x.\n\nFor fractionation, cells expressing A15_GFP or promoter_TSPOON-GFP were grown until they reached a density of 2\u20134 \u00d7 106/ml in selective media, and by microscopy >50% of cells were expressing GFP. Starting with a maximum of 8 \u00d7 108 cells, the cells were washed in KK2 buffer and then pelleted at 600 \u00d7 g for 3 min. The cells were resuspended in PBS with a protease inhibitor cocktail (Roche), lysed by 8 strokes of a motorized Potter\u2013Elvehjem homogenizer followed by 5 strokes through a 21-g needle, and centrifuged at 4100 \u00d7 g for 32 min to get rid of nuclei and unbroken cells. The postnuclear supernatant was then centrifuged at 50,000 rpm (135,700 \u00d7 g RCFmax) for 30 min in a TLA-110 rotor (Beckman Coulter) to recover the membrane pellet. The cytosolic supernatant and pellet were run on pre-cast NUPAGE 4\u201312% BisTris Gels (Novex) at equal protein loadings, and Western blots were probed with an antibody against GFP (Seaman et al., 2009).\n\n### Dictyostelium pulldowns and proteomics\n\nPulldowns were performed using Dictyostelium discoideum stably expressing TSPOON-GFP under a constitutive (A15_ TSPOON-GFP) and its own promoter (prom_TSPOON-GFP). Similar results were found with both cell lines regardless of the promoter. Non-transformed cells were used as a control. Cells were grown until they reached a density of 2\u20134 \u00d7 106/ml in selective media, and by microscopy >50% of cells were expressing GFP. Starting with a maximum of 8 \u00d7 108 cells, they were pelleted by centrifugation (600\u00d7g for 2 min) and washed twice in KK2 buffer before being resuspended at 2 \u00d7 107 cells/ml in KK2 buffer and starved for 4\u20136 hr at 22\u00b0C by shaking at 180 rpm. The cells were then pelleted at 600\u00d7g for 3 min and then lysed in 4 ml PBS 1% TX100 plus protease inhibitor cocktail tablet (Roche) for 10 min on ice, and then spun 20,000\u00d7g 15 min to get rid of debris and insoluble material. By protein assay the resulting lysate contained 10\u201315 mg total protein. The lysates were pre-cleared using PA-sepharose 30 min, and then immunoprecipitated using anti-GFP overnight with rotation at 4\u00b0C. PA-sepharose was added for 60 min and then the antibody complexes washed with PBS 1%TX100 followed by PBS before elution from beads with 100 mM Tris, 2% SDS 60\u00b0C for 10 min. The eluted proteins were precipitated with acetone overnight at \u221220\u00b0C, recovered by spinning 15,000\u00d7g 5 min and then resuspending in sample buffer. The samples were run on pre-cast NUPAGE 4\u201312% BisTris Gels (Novex), stained with SimplyBlue Safe Stain (Invitrogen) and then cut into 8 gel slices. Each gel slice was processed by filter-aided sample preparation solution digest, and the sample was analyzed by liquid chromatography\u2013tandem mass spectrometry in an Orbitrap mass spectrometer (Thermo Scientific; Waltham, MA) (Antrobus and Borner, 2011).\n\nProteins that came down in the non-transformed control were eliminated, as were any proteins with less than 5 identified peptides, proteins that did not consistently coimmunoprecipitate in three independent experiments, or proteins of very low abundance compared with the bait (i.e., molar ratios of <0.002). The remaining ten proteins were considered to be specifically immunoprecipitated. Normalized peptide intensities were used to estimate the relative abundance of the specific interactors (iBAQ method; Schwanh\u00e4usser et al., 2011). For each protein, the values from all five repeats were plotted, including the bait protein and GFP which are clearly overrepresented by overexpression. The relative abundances of proteins were normalized to the median abundance of all proteins across each experiment (i.e., median set to 1.0) and values were then log-transformed and plotted.\n\n### Dictyostelium gene disruption\n\nThe TSPOON disruption plasmid was constructed by inserting regions amplified by PCR from upstream and downstream of the TSPOON gene into both side of the blasticidin-resistance cassette in pLPBLP (Faix et al., 2004). The primer pair used to amplify the 5\u2032 region was TCP1 (5\u2032-ACTGGGCCCTGATGTTTACCTCTCTTTGGGTCATCCCATTCTATAC-3\u2032) with \u03c3-TCP2 (5\u2032-AAAAAGCTTTATTACCATTGTTATTGGTAATTAACAAACTATTGATC-3\u2032) and for the 3\u2032 homology TCP3 (5\u2032-A CCGCGGCCGCATAATTCAAAGAGGTCATTTAGATCAAGTTCAATTAG-3\u2032) with TCP4 (5\u2032-CCTCCGCGGCTTCAGGCATTGGTTCAACTTCTTGATTATTCTCAAC -3'). The PCR products were inserted as ApaI/HindIII and NotI/SacII fragments into the corresponding sites in pLPBLP, yielding pDT70.\n\nGrowth of control vs mutant strains was assayed in HL5 medium, by calculating the mean generation time, and on Klebsiella aerogenes bacterial lawns, by monitoring the expansion of a spot of 104 cells. Spore viability was also assayed, both with and without detergent treatment, by clonally diluting spores on bacterial lawns and counting the resultant plaques (Kay, 1982).\n\n### Endocytosis assays\n\nMembrane uptake was measured in real time at 22\u00b0C with 2 \u00d7 106 cells in 1 ml of KK2C containing 10 \u00b5M FM1-43 (Life Technologies). Briefly, a 2-ml fluorimeter cuvette containing 0.9 ml of KK2C plus 11 \u00b5M FM1-43 was placed in the fluorimeter (PerkinElmer LS50B) with stirring set on high. The uptake was initiated by the addition of 100 \u00b5l cells at 2 \u00d7 107/ml in KK2C and data collected every 1.2 s at an excitation of 470 nm (slit width 5 nm) and emission of 570 nm (slit width 10 nm) for up to 360 s. The uptake curves were biphasic and the data were normalized against the initial rise in fluorescence, when the cells were first added to the FM1-43, as this essentially corresponds to the dye incorporation into the plasma membrane only (Aguado-Velasco and Bretscher, 1999). The uptake rate was calculated from linear regression of the initial linear phase of the uptake using GraphPad Prism software. The surface area uptake time is 1/slope of the initial phase.\n\nFluid phase uptake was measured at 22\u00b0C using FITC-dextran 70 kDa (Sigma FD-70) by adding 2 mg/ml (final) to cells (1 \u00d7 107/ml) in filtered HL5 medium that was shaken at 180 rpm. Duplicate 0.5 ml samples were taken at each time point and diluted in 1 ml of ice-cold HL5 in a microcentrifuge tube held on iced water. Cells were pelleted, the supernatant aspirated, and the pellet washed twice by centrifugation in 1.5 ml ice-cold wash buffer (KK2C plus 0.5%wt/vol BSA) before being lysed in 1 ml of buffer [100 mM Tris\u2013HCl, 0.2% (vol/vol) Triton X-100, pH 8.6] and fluorescence then determined (excitation 490 nm, slit width 2.5 nm; emission 520 nm, slit width 10 nm). Data were normalized to protein content (Traynor and Kay, 2007).\n\n### Comparative genomics\n\nSequences from Arabidopsis thaliana, Dictyostelium discoideum, and Naegleria gruberi were obtained with our new reverse HHpred tool. These sequences were used to build HMMs for each subunit using HMMer v3.1b1 (http://hmmer.org). HMMs were used to search the protein databases for the organisms in Figure 3A (see Figure 3\u2014source data 1 for the location of each genomic database). Sequences identified as potential homologues were verified through reciprocal BLAST into the genomes of each of the original three sequences. Sequences were considered homologues if they retrieved the correct orthologue as the reciprocal best hit in at least one of the reference genomes, with an e-value at least two orders of magnitude better than the next best hit. New sequences were incorporated into the HMM prior to searching a new genome in order to increase the sensitivity and specificity of the HMM. Genomic protein databases were also searched by BLAST using the closest related organism with an identified sequence as the reference genome. Nucleotide databases (scaffolds or contigs) were also searched using tblastn to ensure that no sequences were missed resulting from incomplete protein databases. The distribution of TSET components is displayed in Coulson plot format using the Coulson plot generator v1.5 (Field et al., 2013).\n\n### Phylogenetic analysis\n\nIdentified sequences were combined with the adaptin and COPI sequences from Hirst et al. (2011) into subunit-specific data sets with the intention of concatenation. Data sets were aligned using MUSCLE v3.6 (Edgar, 2004) and masked and trimmed using Mesquite v2.75. Phylogenetic analysis was carried out using MrBayes v.3.2.2 (Ronquist and Huelsenbeck, 2003) and RAxML v7.6.3 (Stamatakis, 2006), hosted on the CIPRES web portal (Miller et al., 2010). MrBayes was run using a mixed model with the gamma parameter until convergence (splits frequencey of 0.1). RAxML was run under the LG + F + CAT model (Lartillot et al., 2009) and bootstrapped with 100 pseudoreplicates. The resulting trees were visualized using FigTree v1.4. Initial data sets were run and long branches were removed. Data sets were then re-aligned and re-run as above. Opisthokont adaptin and COPI sequences were also removed from all data sets except from the TCUP alignment. Data sets were realigned and new phylogenetic analyses were carried out. Remaining sequences were used for concatenation. Sequences were aligned and trimmed, as above, and concatenated using Geneious v7.0.6. Subsequent phylogenetic analysis was carried using PhyloBayes v3.3 (Lartillot et al., 2009) under the LG + CAT model until a splits frequency of 0.1 and 100 sampling points was achieved, and PhyML v3.0, with model testing carried out using ProtTest v3.3. MrBayes and RAxML were used as above. Raw phylogenetic trees were converted into figures using Adobe Illustrator CS4. The models of amino acid sequence evolution are provided in Figure 3\u2014figure supplement 1. The database identifiers of all sequences and their abbreviations and figure annotations are provided in Figure 3\u2014source data 1. All alignments are available in Supplementary file 1.\n\n### Homology modeling\n\nThe Phyre v2.0 web server (Kelley and Sternberg, 2009) was used to predict the 3D structures of each TTRAY from A. thaliana, D. discoideum, and N. gruberi. Default settings were used for structural predictions, and structures were visualized using MacPyMOL (www.pymol.org).\n",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "32c0cfaa-75f0-454f-a240-91e6965c4fc7",
+      "submission_id": "7cb4b345-4d12-46fe-b9da-13753cabe339",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- W James Nelson, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02866.032](https://doi.org/10.7554/eLife.02866.032)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTSET: an ancient and widespread trafficking complex\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript describes the characterization of new heterohexameric complex (TSET) from the slime mold Dictyostelium, with striking similarity to the AP and F-COPI adaptor complexes. Only using a clever 'reverse HHpred' strategy did the authors find the complex, since its sequence conservation is too weak for identification using more classical methods (Blast or the like). After biochemically characterizing the complex the authors go on with an in-depth phylogenetic analysis, which makes the clearest case yet that all APs, F-COPI, and TSET likely diverged from a common ancestor already present in LECA. This is a significant advance in our understanding of the evolution of eukaryotic life in general, and vesicle-mediated trafficking within the endomembrane system in particular. Importantly, this study also corrects the highly visible recently published misconception of a plant-specific adaptor complex (Gadeyne et al., Cell 2014).\n\nNeither of the reviewers had major concerns and both strongly recommended publication. The conclusions are based on rigorous experimental procedures and skilled phylogenetic and bioinformatic analysis. However, one of the reviewers raised two minor points that you should consider in the revised manuscript:\n\n1) The authors describe the 'reverse HHpred' method as novel; however, it appears to be conceptually very similar to the BackPhyre procedure, except that other proteomes are searched (http://www.sbg.bio.ic.ac.uk/phyre2/html/help.cgi?id=help/backphyre). The authors are encouraged to reword the relevant text passages about the 'novelty' of reverse HHpred accordingly or, better, compare and contrast with BackPhyre.\n\n2) The protocoatomer hypothesis as originally stated in Devos et al., 2004 posited that the NPC and vesicle coats are related because of the use of proteins with common architecture in all systems. Ten years later, with an enormous amount of new data, we know that the story is not quite so simple. The beta-propeller is one of the most common folds in eukaryotes, and alpha-solenoids are also found in many processes, often to generate large protein assemblies. It is still an open question to what extend these different coating systems have a common origin, since the assembly of the only very superficially similar 'protocoatomer' structures are drastically different in clathrin COPI, COPII, and the NPC. To support the main thrust of this paper, we think that invoking the overly simplistic protocoatomer hypothesis is rather misleading, thus we would suggest to take it out or only refer to it in the Discussion.\n",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "057f9d57-c7a3-4084-b67e-8129c7ef2d5b",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C1",
+      "claim": "The heterotetrameric AP and F-COPI complexes help to define the cellular map of modern eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterotetrameric AP and F-COPI complexes help to define the cellular map of modern eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract presenting established knowledge about AP and COPI complexes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "12c70215-dc9d-4967-807e-c0151fa2151d",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C2",
+      "claim": "TSET is a heterohexamer with two associated scaffolding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in Dictyostelium indicate that TSET is a heterohexamer, with two associated scaffolding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental studies in Dictyostelium described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "3989d193-3e4e-43b9-9d1a-c2cf67ff39b7",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C3",
+      "claim": "TSET is non-essential in Dictyostelium.",
+      "claim_type": "EXPLICIT",
+      "source": "TSET is non-essential in Dictyostelium, but may act in plasma membrane turnover",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knockout experiments showing viable cells without TSET.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "9060c886-1b08-4394-9ada-b0802574dc96",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C4",
+      "claim": "TSET may act in plasma membrane turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "TSET is non-essential in Dictyostelium, but may act in plasma membrane turnover",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FM1-43 uptake assays showing slower membrane internalization in knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ae79d626-35b0-4a7c-aa8b-d09263d5a6b0",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C5",
+      "claim": "TSET is essentially identical to the recently described TPLATE complex (TPC).",
+      "claim_type": "EXPLICIT",
+      "source": "and is essentially identical to the recently described TPLATE complex, TPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of subunit composition and structure between TSET and TPC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "e002f539-9cbc-4206-a544-dcf74d634c23",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C6",
+      "claim": "TPC was reported to be plant-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas TPC was reported to be plant-specific, we can identify a full or partial complex in every eukaryotic supergroup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references prior published reports about TPC distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "513bf73c-fbf9-4b86-ac1c-8c7813d6aec0",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C7",
+      "claim": "A full or partial TSET complex can be identified in every eukaryotic supergroup.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas TPC was reported to be plant-specific, we can identify a full or partial complex in every eukaryotic supergroup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatics searches across diverse eukaryotic genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "0a705941-38cb-4c06-8361-1289be03c3e4",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C8",
+      "claim": "Mammalian muniscins are descendants of the TSET medium subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "including the mammalian muniscins, descendants of the TSET medium subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic analysis and structural homology between muniscins and TCUP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "64f52ff4-5b24-4274-9cc1-b2cba687ec7c",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C9",
+      "claim": "The evolution of eukaryotes occurred approximately 2 billion years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of eukaryotes some 2 billion years ago radically changed the biosphere, giving rise to nearly all visible life on Earth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the timing of eukaryotic evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "f03278e2-3640-4ce1-ac31-b4f925a74e05",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C10",
+      "claim": "The ability to generate intracellular membrane compartments and trafficking pathways was key to the eukaryotic transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Key to this transition was the ability to generate intracellular membrane compartments and the trafficking pathways that interconnect them, mediated in part by the heterotetrameric adaptor complexes, APs 1\u20135 and COPI (Dacks et al., 2008; Field and Dacks, 2009; Hirst et al., 2011; Koumandou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on eukaryotic evolution and membrane trafficking.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "508c98be-ac11-4da5-a668-9cc4b3788e66",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C11",
+      "claim": "In mammals, APs 1 and 2 and COPI are essential for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, APs 1 and 2 and COPI are essential for viability, while mutations in the other APs cause severe genetic disorders (Boehm and Bonifacino, 2002; Hirst et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on AP complex function in mammals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "f0bdb610-720c-421a-b380-41d8451c841e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C12",
+      "claim": "Mutations in AP complexes other than AP-1, AP-2, and COPI cause severe genetic disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, APs 1 and 2 and COPI are essential for viability, while mutations in the other APs cause severe genetic disorders (Boehm and Bonifacino, 2002; Hirst et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on genetic disorders associated with AP complexes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "f0cca494-fc6b-4ea6-893a-94a25d6ec86f",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C13",
+      "claim": "The AP and COPI complexes share a similar architecture due to common ancestry predating the last eukaryotic common ancestor (LECA).",
+      "claim_type": "EXPLICIT",
+      "source": "The AP and COPI complexes share a similar architecture, due to common ancestry predating the last eukaryotic common ancestor (LECA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural and phylogenetic analyses showing evolutionary relationships.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "77ba83b7-fed4-4950-aebf-e41d59a68517",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C14",
+      "claim": "All six AP/COPI complexes consist of two large subunits of approximately 100 kD, a medium subunit of approximately 50 kD, and a small subunit of approximately 20 kD.",
+      "claim_type": "EXPLICIT",
+      "source": "All six complexes consist of two large subunits of \u223c100 kD, a medium subunit of \u223c50 kD, and a small subunit of \u223c20 kD (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established structural knowledge about AP/COPI complexes, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "fce33d82-cdc5-4cbd-b275-7a9950d4b85a",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C15",
+      "claim": "AP and COPI complexes function to select cargo for packaging into transport vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Their function is to select cargo for packaging into transport vesicles, and together with membrane-deforming scaffolding proteins such as clathrin and the COPI B-subcomplex, they facilitate the trafficking of proteins and lipids between membrane compartments in the secretory and endocytic pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of AP and COPI complexes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "e2be2bb8-fdd7-4662-b578-8e8deaf2d42a",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C16",
+      "claim": "AP-5 complex is found on late endosomes and lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent discovery of the evolutionarily ancient AP-5 complex, found on late endosomes and lysosomes, added a new dimension to models of the endomembrane system, and raised the possibility that other undetected membrane-trafficking complexes might exist (Hirst et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on AP-5 localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "fbe8d940-9362-4d71-805b-df59faffc460",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C17",
+      "claim": "The discovery of AP-5 raised the possibility that other undetected membrane-trafficking complexes might exist.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent discovery of the evolutionarily ancient AP-5 complex, found on late endosomes and lysosomes, added a new dimension to models of the endomembrane system, and raised the possibility that other undetected membrane-trafficking complexes might exist (Hirst et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the discovery of AP-5.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "18e880f9-ae30-4202-9082-07f545006055",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C18",
+      "claim": "TPLATE is an Arabidopsis protein related to the AP \u03b2 subunits and \u03b2-COP.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one of these proteins had been characterised functionally: TPLATE (NP_186827.2), an Arabidopsis protein related to the AP \u03b2 subunits and \u03b2-COP, found in a microscopy-based screen for proteins involved in mitosis and localised to the cell plate (Van Damme et al., 2006; Van Damme et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on TPLATE characterization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "e1e4b401-de2e-4b13-878d-019688a6ffa6",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C19",
+      "claim": "TPLATE was found in a microscopy-based screen for proteins involved in mitosis and localised to the cell plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one of these proteins had been characterised functionally: TPLATE (NP_186827.2), an Arabidopsis protein related to the AP \u03b2 subunits and \u03b2-COP, found in a microscopy-based screen for proteins involved in mitosis and localised to the cell plate (Van Damme et al., 2006; Van Damme et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on TPLATE discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "2c3afee4-99eb-48f1-a79c-f55fe03514d1",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C20",
+      "claim": "Arabidopsis has added an SH3 domain to the C-terminal end of its \u03b3\u03b1\u03b4\u03b5\u03b6 large subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "There is some variability between orthologous subunits in different organisms: for instance, Arabidopsis has added an SH3 domain to the C-terminal end of its '\u03b3\u03b1\u03b4\u03b5\u03b6' large subunit, while Dictyostelium has lost the \u03bc homology domain (MHD) at the end of its medium subunit",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the Arabidopsis TSET subunit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "7e67167e-b5c1-42f6-92df-a27da4810a7d",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C21",
+      "claim": "Dictyostelium has lost the \u03bc homology domain (MHD) at the end of its medium subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "There is some variability between orthologous subunits in different organisms: for instance, Arabidopsis has added an SH3 domain to the C-terminal end of its '\u03b3\u03b1\u03b4\u03b5\u03b6' large subunit, while Dictyostelium has lost the \u03bc homology domain (MHD) at the end of its medium subunit",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the Dictyostelium TSET subunit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "bc8f59eb-057d-470a-a371-4df7d1ebda3e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C22",
+      "claim": "There is much less selective pressure on TSET genes than on those encoding other AP/COPI family members.",
+      "claim_type": "EXPLICIT",
+      "source": "and in general there seems to be much less selective pressure on these genes than on those encoding other AP/COPI family members (e.g., the AP-1 \u03b21 subunits are 58.01% identical in Dictyostelium and Arabidopsis, while the new \u03b2 family members are only 14.63% identical).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from sequence identity comparisons between orthologues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "df4c205a-9282-44dc-86ce-ed9e78d2c6c7",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C23",
+      "claim": "The AP-1 \u03b21 subunits are 58.01% identical in Dictyostelium and Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "and in general there seems to be much less selective pressure on these genes than on those encoding other AP/COPI family members (e.g., the AP-1 \u03b21 subunits are 58.01% identical in Dictyostelium and Arabidopsis, while the new \u03b2 family members are only 14.63% identical).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "7d2ac002-4c46-4a6c-bdf0-587d371c2ae9",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C24",
+      "claim": "The TSET \u03b2 family members are only 14.63% identical in Dictyostelium and Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "and in general there seems to be much less selective pressure on these genes than on those encoding other AP/COPI family members (e.g., the AP-1 \u03b21 subunits are 58.01% identical in Dictyostelium and Arabidopsis, while the new \u03b2 family members are only 14.63% identical).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "2fe76d9b-fba8-47f5-bf5e-435932f141e8",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C25",
+      "claim": "Immunoprecipitation of GFP-tagged TSET small subunit from Dictyostelium yielded ten proteins considered to be specifically immunoprecipitated.",
+      "claim_type": "EXPLICIT",
+      "source": "Precipitates were analysed by mass spectrometry, yielding ten proteins considered to be specifically immunoprecipitated (Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mass spectrometry analysis of immunoprecipitates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "6ddccc0f-f153-4b72-b226-bd25167f8ab7",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C26",
+      "claim": "Three of the immunoprecipitated proteins were the remaining candidate TSET subunits: XP_639969.1 (\u03b2-like), XP_640471.1 (\u03b3\u03b1\u03b4\u03b5\u03b6-like), and XP_629998.1 (\u03bc-like).",
+      "claim_type": "EXPLICIT",
+      "source": "Three others were the remaining candidate subunits: XP_639969.1 (the \u03b2-like subunit), XP_640471.1 (the \u03b3\u03b1\u03b4\u03b5\u03b6-like subunit), and XP_629998.1 (the \u03bc-like subunit), confirming their presence in a complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mass spectrometry identification of coprecipitating proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "a085db3b-15a7-49aa-8eea-4ad20d9a6547",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C27",
+      "claim": "The three core TSET subunits (\u03b2-like, \u03b3\u03b1\u03b4\u03b5\u03b6-like, and \u03bc-like) were present in the immunoprecipitate at approximately equimolar levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification by iBAQ indicated that these three proteins were present in the immunoprecipitate at approximately equimolar levels (Figure 2C, Figure 2\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on iBAQ quantification of mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "9380a2f9-476f-4044-b3c6-dc98eee1ff27",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C28",
+      "claim": "The small subunit and GFP tag were in approximately 15-fold molar excess, probably due to overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "while the small subunit and GFP tag were in \u223c15-fold molar excess, probably due to overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on iBAQ quantification and inferred to be due to overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "70d784fb-2c2d-4549-bcf1-6468e7c51d9e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C29",
+      "claim": "XP_642289.1 and XP_637150.1 are predicted to consist of two N-terminal \u03b2-propeller domains followed by an \u03b1-solenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Both proteins are predicted to consist of two N-terminal \u03b2-propeller domains followed by an \u03b1-solenoid (Figure 2D, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural prediction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "e9d7bb97-6d88-4599-aabb-d065eaf0e87b",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C30",
+      "claim": "The architecture of two \u03b2-propeller domains followed by an \u03b1-solenoid is found in several coat components, including clathrin heavy chain, SPG11, \u03b1-COP, \u03b2\u2032-COP, and Sec31.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of architecture is found in several coat components, including clathrin heavy chain, SPG11 (associated with AP-5), the \u03b1-COP and \u03b2\u2032-COP subunits of the COPI coat (B-COPI), and the Sec31 subunit of the COPII coat (Devos et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about protein architecture in coat components, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "fccc3da1-6959-4a40-bbc4-aa497f2ddbc0",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C31",
+      "claim": "HHpred analyses show that the closest matches for both XP_642289.1 and XP_637150.1 are \u03b2'-COP, followed by \u03b1-COP.",
+      "claim_type": "EXPLICIT",
+      "source": "HHpred analyses show that the closest matches for both XP_642289.1 and XP_637150.1 are \u03b2'-COP, followed by \u03b1-COP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on HHpred bioinformatics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "1246ff84-126c-48a9-b070-9d80f8faa8fd",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C32",
+      "claim": "Probable orthologues of XP_642289.1 and XP_637150.1 can be found in other organisms that have the four core TSET subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Probable orthologues of XP_642289.1 and XP_637150.1 can be found in other organisms that have the four core subunits (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatics searches across multiple genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ee2a2c6f-57be-4fac-8181-974270367892",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C33",
+      "claim": "XP_642289.1 and XP_637150.1 may provide a scaffold for the newly identified heterotetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Because proteins with this architecture often act as a coat for transport vesicles, we hypothesize that these proteins may provide a scaffold for the newly identified heterotetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the known function of proteins with similar architecture.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "48d4f3ed-fca6-4591-8e92-917d023823c0",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C34",
+      "claim": "SecG is related to the plasma membrane- and endosome-associated ARNO/cytohesin family of Arf GEFs in animal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "SecG is related to the plasma membrane- and endosome-associated ARNO/cytohesin family of Arf GEFs in animal cells (Shina et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence homology analysis and cited literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "6c6e0949-9a70-4ca4-aa4e-701a1980a85b",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C35",
+      "claim": "SecG appears to be equimolar with the core TSET complex.",
+      "claim_type": "EXPLICIT",
+      "source": "and also appears to be equimolar with the core complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on iBAQ quantification of mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "a3d4ed9d-8f5c-42ae-90a9-801f53484786",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C36",
+      "claim": "Vacuolins have been shown to associate with the late vacuole just before exocytosis and also with the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "They have been shown to associate with the late vacuole just before exocytosis and also with the plasma membrane (Rauchenberger et al., 1997; Gotthardt et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on vacuolin localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "bb469eae-0290-445a-9fd5-161ef9a1d478",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C37",
+      "claim": "Vacuolins contribute to vacuole function.",
+      "claim_type": "EXPLICIT",
+      "source": "and to contribute to vacuole function (Jenne et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on vacuolin function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "8a9d91b0-d143-4aa7-8ac4-beaa8b90b6d7",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C38",
+      "claim": "The amounts of coprecipitating vacuolins were more variable, suggesting they are less tightly associated with the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the amounts of coprecipitating vacuolins were more variable, suggesting that they are less tightly associated with the complex (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from variability in mass spectrometry quantification data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "cb892afa-6f5b-4d99-a341-3db1b568efe1",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C39",
+      "claim": "TPLATE, SecG, and vacuolins have been implicated in membrane traffic, acting at the plasma membrane and/or endosomal compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, like TPLATE, both SecG and the vacuolins have been implicated in membrane traffic, acting at the plasma membrane and/or endosomal compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature about the functions of these proteins.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "58760844-7e95-41b3-a80a-3a6d69906709",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C40",
+      "claim": "The \u03b2-like subunit is named TPLATE.",
+      "claim_type": "EXPLICIT",
+      "source": "As the \u03b2-like subunit is already named TPLATE, we propose similar nomenclature for the other three subunits of the heterotetramer, relating to their relative sizes: TSAUCER, TCUP, and TSPOON.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established nomenclature from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "25862b53-5973-49d2-944b-231ee08ecd91",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C41",
+      "claim": "The nomenclature TSAUCER, TCUP, and TSPOON is proposed for the other three subunits of the heterotetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "As the \u03b2-like subunit is already named TPLATE, we propose similar nomenclature for the other three subunits of the heterotetramer, relating to their relative sizes: TSAUCER, TCUP, and TSPOON.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a naming proposal by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "8792a0d6-c08e-4058-93dc-944c4d342a3d",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C42",
+      "claim": "The nomenclature TTRAY1 and TTRAY2 is proposed for the two associated \u03b2-propeller/\u03b1-solenoid proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For the two associated \u03b2-propeller/\u03b1-solenoid proteins, we propose TTRAY1 and TTRAY2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a naming proposal by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "18492b7a-64f8-4034-bcf5-cac559706be5",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C43",
+      "claim": "The name TSET is proposed for the conserved heterohexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "and for the conserved heterohexamer, we propose the name TSET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a naming proposal by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ef5e0307-7b03-4457-8bfb-9b4495186a72",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C44",
+      "claim": "TIRF imaging showed a punctate pattern for TSPOON-GFP, indicating that some of the construct is associated with the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "TIRF imaging showed a punctate pattern, especially in the cells with lower expression, indicating that some of the construct is associated with the plasma membrane (Figure 2E, Figure 2; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on TIRF microscopy imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "1786d290-3af5-4077-89a1-5d2062ff37c7",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C45",
+      "claim": "Free GFP appeared to be entirely cytosolic by TIRF imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, free GFP appeared to be entirely cytosolic (Figure 2E, Figure 2; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on TIRF microscopy imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "af29b3e8-9fc2-4bf8-942d-366533793e8b",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C46",
+      "claim": "High speed centrifugation showed a substantial amount of TSPOON-GFP coming down in the membrane-containing pellet.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, high speed centrifugation of a post-nuclear supernatant showed a substantial amount of TSPOON-GFP coming down in the membrane-containing pellet, in contrast to free GFP, which was exclusively in the supernatant (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cell fractionation and Western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "230a0763-b86d-4ec7-86c9-354b3010d019",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C47",
+      "claim": "Free GFP was exclusively in the supernatant after high speed centrifugation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, high speed centrifugation of a post-nuclear supernatant showed a substantial amount of TSPOON-GFP coming down in the membrane-containing pellet, in contrast to free GFP, which was exclusively in the supernatant (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cell fractionation and Western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "7016c706-fa9c-41ab-a0a8-ddf7f29a50a6",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C48",
+      "claim": "Like other coat proteins, the TSET complex is transiently recruited onto a membrane from a cytosolic pool.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that like other coat proteins, the complex is transiently recruited onto a membrane (specifically, the plasma membrane) from a cytosolic pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from TIRF imaging and fractionation data showing both membrane-associated and cytosolic pools.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "1a26981d-9c17-4f32-91d7-a2f69a459318",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C49",
+      "claim": "Silencing TPLATE in Arabidopsis produces a very severe phenotype, with impaired growth and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing TPLATE in Arabidopsis produces a very severe phenotype, with impaired growth and differentiation, thought to be caused by defects in clathrin-mediated endocytosis (Van Damme et al., 2006; Van Damme et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on TPLATE knockdown in Arabidopsis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "27634f0f-0800-4c1b-b0ae-026865898d75",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C50",
+      "claim": "The severe phenotype of TPLATE silencing in Arabidopsis is thought to be caused by defects in clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing TPLATE in Arabidopsis produces a very severe phenotype, with impaired growth and differentiation, thought to be caused by defects in clathrin-mediated endocytosis (Van Damme et al., 2006; Van Damme et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from cited literature about the mechanism of TPLATE function.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "4b7f52a4-6549-4a38-9266-79067200925c",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C51",
+      "claim": "TSPOON knockout cells grew at least as fast as control axenic strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the resulting knockout cells grew at least as fast a control axenic strain (Figure 2G shows the mean generation time)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth rate measurements comparing knockout and control cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "004bc02e-0f83-4bef-bd1c-871c9416ea7a",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C52",
+      "claim": "Differentiation appeared normal in TSPOON knockout cells, with fruiting bodies forming under appropriate stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "and differentiation also appeared normal, with fruiting bodies forming under appropriate stimuli (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observation of fruiting body formation in knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "f17791f5-ff0d-4422-963a-5fe4892d5341",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C53",
+      "claim": "Uptake of FITC-dextran was unimpaired in the TSPOON knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake of FITC-dextran, an assay for fluid phase endocytosis, was unimpaired in the TSPOON knockout cells (Figure 2I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FITC-dextran uptake assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "a44a224e-e5be-4ad8-bb81-f2036a919ed4",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C54",
+      "claim": "Uptake of FM1-43 was slower in TSPOON knockout cells than in the control.",
+      "claim_type": "EXPLICIT",
+      "source": "however, uptake of FM1-43, a membrane marker, was slower than in the control (Figure 2J shows the time taken to internalise the entire surface area)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FM1-43 uptake assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "33f9d716-d957-4310-8828-79fc6cbaa64d",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C55",
+      "claim": "TSET plays a role in plasma membrane turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that TSET plays a role in plasma membrane turnover, consistent with studies on Arabidopsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FM1-43 uptake defect in knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "e2f38d01-f2d8-42c2-ac2a-af13f2d8805e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C56",
+      "claim": "In contrast to Arabidopsis, Dictyostelium can thrive without a functional TSET complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it is clear that in contrast to Arabidopsis, Dictyostelium can thrive without a functional TSET complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the mild phenotype of TSPOON knockout in Dictyostelium compared to severe phenotype in Arabidopsis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "d6f19a2c-db25-49b4-9385-d9954b9815f7",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C57",
+      "claim": "The discoverers of TPLATE used tandem affinity purification to identify TPLATE binding partners and found the Arabidopsis orthologues of the TSET components.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently, the discoverers of TPLATE used tandem affinity purification to identify TPLATE binding partners, and found the Arabidopsis orthologues of the TSET components that we identified independently in the present study (Gadeyne et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a cited recent publication by another group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "372a5aad-1250-41b6-b08b-63815afabbb3",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C58",
+      "claim": "The Arabidopsis pulldowns did not contain any proteins resembling secG or the vacuolins.",
+      "claim_type": "EXPLICIT",
+      "source": "The Arabidopsis pulldowns did not contain any proteins resembling secG or the vacuolins, supporting our hypothesis that these proteins are add-ons to the core heterohexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with data from cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "02d523a8-7582-4ded-84e7-e2acebef3c12",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C59",
+      "claim": "Arabidopsis TSET is associated with two additional proteins containing EH domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Arabidopsis TSET is associated with two additional proteins containing EH domains, which we did not find in our Dictyostelium pulldowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with data from cited literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "cb006159-1259-4ab7-b122-085b56c5b1dc",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C60",
+      "claim": "Some of the Arabidopsis pulldowns brought down components of the machinery for clathrin-mediated endocytosis, including clathrin itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the Arabidopsis pulldowns also brought down components of the machinery for clathrin-mediated endocytosis, including clathrin itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "7679cc48-a9bc-4a5a-b030-997353ead537",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C61",
+      "claim": "Clathrin and associated proteins found in Dictyostelium immunoprecipitates were equally abundant in control immunoprecipitates from non-GFP-expressing cells, indicating they were contaminants.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we also found clathrin and associated proteins in our Dictyostelium immunoprecipitates, these proteins were equally abundant in control immunoprecipitates from non-GFP-expressing cells, indicating that they were contaminants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of experimental and control immunoprecipitates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "bb5533da-3125-4c14-96c1-c08b721579db",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C62",
+      "claim": "The differences in proteins that coprecipitate with TSET in Dictyostelium and Arabidopsis are probably a reflection of functional differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in proteins that coprecipitate with TSET in the two organisms are probably a reflection of functional differences",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the different phenotypes of TSET knockouts in the two organisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "3055688b-452f-459f-827f-458a0a83fea6",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C63",
+      "claim": "TSET knockouts in Arabidopsis are lethal and knockdowns profoundly affect clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "TSET knockouts in Arabidopsis are lethal and knockdowns profoundly affect clathrin-mediated endocytosis, while TSET knockdowns in Dictyostelium produce a very mild phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature for Arabidopsis and experimental data for Dictyostelium.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "702c936a-fa01-4bf0-9560-cdcfa74cc316",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C64",
+      "claim": "TSET knockdowns in Dictyostelium produce a very mild phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "TSET knockouts in Arabidopsis are lethal and knockdowns profoundly affect clathrin-mediated endocytosis, while TSET knockdowns in Dictyostelium produce a very mild phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental characterization of TSPOON knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "175f7634-21a2-48c9-b5c4-6e986f077ff3",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C65",
+      "claim": "When TPLATE was discovered in Arabidopsis, it was reported to be unique to plant species.",
+      "claim_type": "EXPLICIT",
+      "source": "When TPLATE was discovered in Arabidopsis, it was reported to be unique to plant species (Van Damme et al., 2006; Van Damme et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature reporting TPLATE as plant-specific.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "20bfdb05-fad8-49e0-a171-cb5bdf93a992",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C66",
+      "claim": "In a recent Arabidopsis study, the authors concluded that the TSET complex was plant-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the more recent Arabidopsis study, the authors concluded that the complex was plant-specific (Gadeyne et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "72df5545-b8fa-4917-9f91-35d5bde816a3",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C67",
+      "claim": "The conclusions about plant-specificity were based on analyses of plants, yeast, and humans only.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these conclusions were based on analyses of plants, yeast, and humans only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of the limited taxonomic sampling in prior studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "49439175-22b0-4100-8db0-794fd5886c90",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C68",
+      "claim": "Identification of TSET homologues in Dictyostelium discoideum and Naegleria gruberi suggested that the evolutionary distribution was much more extensive.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification and characterization of homologues of all six subunits in Dictyostelium discoideum, as well as their presence in the excavate Naegleria gruberi, suggested that the evolutionary distribution was much more extensive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatics identification of TSET components in diverse organisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "40202f25-3777-475f-9525-8d3192e1b6ae",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C69",
+      "claim": "In depth homology searching identified orthologues in genomes from across the broad diversity of eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "In depth homology searching identified orthologues in genomes from across the broad diversity of eukaryotes (Figure 3, Figure 3\u2014source data 1, Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comprehensive bioinformatics searches across diverse eukaryotic genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "af3b0ae4-7ab2-4cf6-baca-4f449f20672f",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C70",
+      "claim": "The presence of the entire TSET complex in at least four supergroups strongly suggests its presence prior to the LECA.",
+      "claim_type": "EXPLICIT",
+      "source": "strongly suggesting that the complex was present prior to the LECA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the broad phylogenetic distribution of TSET across eukaryotic supergroups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "7f5a28b5-9ca1-4545-9eb9-6aef458c7032",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C71",
+      "claim": "TSET is clearly ancient and distinct from the known heterotetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TSET is clearly an ancient component of the eukaryotic membrane-trafficking system, distinct from the known heterotetramers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis showing TSET as a separate clade from APs and COPI.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "8049c66d-3c1e-475a-a152-b606286e2679",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C72",
+      "claim": "Phylogenetic analysis provided moderate support for TSET as a clade.",
+      "claim_type": "EXPLICIT",
+      "source": "This provided moderate support for TSET as a clade, but strong resolution excluding it from the APs and COPI, as well as backbone resolution between the heterotetramer clades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis of concatenated subunit sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "c1dc1d55-9556-4e6d-b542-645a3c245a44",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C73",
+      "claim": "Phylogenetic analysis provided strong resolution excluding TSET from the APs and COPI.",
+      "claim_type": "EXPLICIT",
+      "source": "This provided moderate support for TSET as a clade, but strong resolution excluding it from the APs and COPI, as well as backbone resolution between the heterotetramer clades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis of concatenated subunit sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "4baa8135-c28e-459e-bdfe-caf1acc3cc85",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C74",
+      "claim": "The earliest ancestral complex was likely a heterotrimer or a heterohexamer formed from two identical heterotrimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the earliest ancestral complex was a likely a heterotrimer or a heterohexamer formed from two identical heterotrimers, containing large (red), small (yellow), and scaffolding (blue) subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the evolutionary origin of the complex based on phylogenetic and structural data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "760b79cd-0c38-48ca-a76f-ca5e12c3e736",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C75",
+      "claim": "All three ancestral proteins were composed of known ancient building blocks of the membrane-trafficking system.",
+      "claim_type": "EXPLICIT",
+      "source": "All three of these proteins were composed of known ancient building blocks of the membrane-trafficking system (Vedovato et al., 2009): \u03b1-solenoid domains in both the large and scaffolding subunits; two \u03b2-propellers in the scaffolding subunit; and a longin domain forming the small subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis and cited literature on ancient protein domains.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "a57fd096-a664-4eb8-857d-d4d5198dad11",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C76",
+      "claim": "The gene encoding the large subunit duplicated and mutated to generate the two distinct types of large subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene encoding the large subunit then duplicated and mutated to generate the two distinct types of large subunits (red and magenta)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about evolutionary events based on phylogenetic analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ef4e6a5b-1531-42fc-90fe-46d197e88617",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C77",
+      "claim": "The gene encoding the small subunit duplicated and mutated, with one of the two proteins acquiring a \u03bc homology domain (MHD) to form the ancestral heterotetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "and the gene encoding the small subunit also duplicated and mutated (yellow and orange), with one of the two proteins (orange) acquiring a \u03bc homology domain (MHD) to form the ancestral heterotetramer, as proposed by Boehm and Bonifacino (12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about evolutionary events based on phylogenetic analysis and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "135b3681-b315-4f2e-88ef-27c5ba904e8b",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C78",
+      "claim": "The scaffolding subunit remained a homodimer in the ancestral complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the scaffolding subunit remained a homodimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from phylogenetic analysis showing independent duplications in TSET and COPI lineages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "d3bf5dd4-b8b9-441f-bbf3-213ec22cae96",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C79",
+      "claim": "Upon diversification into three separate families, the scaffolding subunit duplicated independently in TSET and COPI.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon diversification into three separate families, the scaffolding subunit duplicated independently in TSET and COPI, giving rise to TTRAY1 and TTRAY2 in TSET, and to \u03b1- and \u03b2\u2032-COP in COPI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis showing separate duplication events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ef63e6d0-38b0-4460-8a3d-5ff4ca6e2ba1",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C80",
+      "claim": "COPI acquired a new subunit, \u03b5-COP.",
+      "claim_type": "EXPLICIT",
+      "source": "COPI also acquired a new subunit, \u03b5-COP (purple).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative analysis of complex composition.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "859185c9-351f-4ddd-a4a3-f80ab2e29902",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C81",
+      "claim": "The ancestral AP complex may have lost its original scaffolding subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The scaffolding subunit may have been lost in the ancestral AP complex, as indicated in the diagram",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about evolutionary loss of scaffolding subunits in the AP lineage.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "514d893f-e1e6-4537-96a7-e5923e48d662",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C82",
+      "claim": "AP-5 is tightly associated with two other proteins, SPG11 and SPG15.",
+      "claim_type": "EXPLICIT",
+      "source": "however, AP-5 is tightly associated with two other proteins, SPG11 and SPG15",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about AP-5 complex composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "105279c7-fdb2-438b-9ec4-fa00fa74f741",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C83",
+      "claim": "The relationship of SPG11 and SPG15 to TTRAY/B-COPI remains unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "and the relationship of SPG11 and SPG15 to TTRAY/B-COPI remains unresolved",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges uncertainty about evolutionary relationships.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "4aff0d35-f7af-4cb3-a5a2-5be243a10e16",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C84",
+      "claim": "It is possible that SPG11 and SPG15 are highly divergent descendants of the original scaffolding subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "so it is possible that SPG11 and SPG15 are highly divergent descendants of the original scaffolding subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the evolutionary origin of SPG11 and SPG15.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "bba1a829-b6a9-41a1-b8a7-6f6870ba95b4",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C85",
+      "claim": "Membrane-associated AP-1 and AP-2 interact with clathrin.",
+      "claim_type": "EXPLICIT",
+      "source": "but membrane-associated AP-1 and AP-2 interact with another scaffold, clathrin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about AP-1 and AP-2 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "b8513216-dd9c-4ac6-ad39-ac9edd4b01f0",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C86",
+      "claim": "AP-3 has been proposed to interact transiently with Vps41.",
+      "claim_type": "EXPLICIT",
+      "source": "and AP-3 has also been proposed to interact transiently with a protein with similar architecture, Vps41 (Rehling et al., 1999; Cabrera et al., 2010; Asensio et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature proposing AP-3/Vps41 interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "bd9d8a0e-4c5f-4186-b933-1004e5abc0a5",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C87",
+      "claim": "No scaffold has been proposed for AP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "So far no scaffold has been proposed for AP-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding AP-4.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "053a3f14-4e32-4d7a-9c33-699b4900b5e0",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C88",
+      "claim": "AP-5 diverged basally within the adaptin clade, followed by AP-3, AP-4, and APs 1 and 2, all prior to the LECA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the order of emergence of TSET and COP relative to adaptins is unresolved, our most recent analyses indicate that, contrary to previous reports (Hirst et al., 2011), AP-5 diverged basally within the adaptin clade, followed by AP-3, AP-4, and APs 1 and 2, all prior to the LECA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis of AP complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "07dda09d-e352-4fa3-be7e-f02e4bcd2a6e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C89",
+      "claim": "The muniscins arose in ancestral opisthokonts from a translocation of the TSET MHD-encoding sequence to a position immediately downstream from an F-BAR domain-encoding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The muniscins arose much later, in ancestral opisthokonts, from a translocation of the TSET MHD-encoding sequence to a position immediately downstream from an F-BAR domain-encoding sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural and phylogenetic analysis of muniscins and TCUP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "f6f3a090-27b7-48d4-bba4-5f9142798881",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C90",
+      "claim": "In plants, an SH3 domain-coding sequence was inserted at the 3\u2032 end of the TSAUCER-coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Another translocation occurred in plants, where an SH3 domain-coding sequence was inserted at the 3\u2032 end of the TSAUCER-coding sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of plant TSAUCER.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "6df7a7f1-c35e-4961-a02a-96184fc950d2",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C91",
+      "claim": "The muniscins constitute one of eight families of MHD proteins in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The muniscins constitute one of eight families of MHD proteins in humans, and the only family whose evolutionary origin was unexplained until now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHD protein families in humans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "5ffd142d-dc47-494e-bc73-46629a469331",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C92",
+      "claim": "The muniscins are the only family of MHD proteins in humans whose evolutionary origin was unexplained until now.",
+      "claim_type": "EXPLICIT",
+      "source": "The muniscins constitute one of eight families of MHD proteins in humans, and the only family whose evolutionary origin was unexplained until now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the finding regarding muniscin origins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "e45cf219-8403-45ce-b110-592c3e13cfb5",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C93",
+      "claim": "The muniscins are homologous to TCUP.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study indicates not only that the muniscins are homologous to TCUP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural and phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "4f8e02f6-57da-41ca-8375-a69321eac67d",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C94",
+      "claim": "The muniscins are the sole surviving remnants of the full TSET complex that existed in pre-opisthokont ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "but also that they are the sole surviving remnants of the full TSET complex that existed in our pre-opisthokont ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of other TSET components in opisthokonts and the presence of muniscins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "b7a4120c-5db1-4ab0-9fbd-a90581c1c65f",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C95",
+      "claim": "TSET is the latest addition to a growing set of trafficking proteins that have ancient distributions but are frequently lost.",
+      "claim_type": "EXPLICIT",
+      "source": "TSET is the latest addition to a growing set of trafficking proteins that have ancient distributions, but are frequently lost (Schlacht et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the phylogenetic distribution pattern of TSET and cited literature on other trafficking proteins.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "719cbee9-fce1-4527-bac9-c55aea315be1",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C96",
+      "claim": "The uneven distribution of individual TSET components is consistent with frequent loss or reduction with neofunctionalization.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the uneven distribution of the individual components (in contrast to the all-or-nothing distribution of AP-5), the additional apparently lineage-specific binding partners in Dictyostelium, and the acquisition of extra domains (e.g., F-BAR in opisthokonts and SH3 in plants) adding lineage-specific function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparative genomic and functional data across organisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "cb69764a-2095-4f6e-a7bd-87b5774b606f",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C97",
+      "claim": "Studies on the muniscins may help to explain the different phenotypes of TSET knockouts in Dictyostelium and Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on the muniscins may help to explain the different phenotypes of TSET knockouts in Dictyostelium and Arabidopsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about how muniscin function relates to TSET function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "16b2f978-453f-4f7b-a8e7-add1806fe299",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C98",
+      "claim": "Like Arabidopsis TSET, the muniscins interact with EH domain-containing proteins and participate in clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Arabidopsis TSET, the muniscins interact with EH domain-containing proteins and participate in clathrin-mediated endocytosis (Reider et al., 2009; Henne et al., 2010; Cocucci et al., 2012; Umasankar et al., 2012; Mayers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited literature on muniscin function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "502a05c1-2976-4fc9-99d9-e2b94eb1f7f9",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C99",
+      "claim": "Dictyostelium has lost its TCUP MHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Dictyostelium has lost its TCUP MHD",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of Dictyostelium TCUP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ba9c4cd0-bb70-42b6-abdc-aeeda274778e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C100",
+      "claim": "Concomitant with the loss of TCUP MHD, Dictyostelium likely lost some of TSET's binding partners and functions.",
+      "claim_type": "EXPLICIT",
+      "source": "and it seems likely that concomitant with this loss, it also lost some of TSET's binding partners and functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural loss and the mild phenotype in Dictyostelium.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "7ad3f0f4-a619-4d33-baaa-e562a7eb2b7b",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C101",
+      "claim": "TSET may predate clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we suspect that TSET may predate clathrin-mediated endocytosis, for two reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on phylogenetic and functional considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "2c58f121-0971-4a9c-b63b-7d339671c50a",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C102",
+      "claim": "AP-1 and AP-2, the two AP complexes that function together with clathrin, are the most recent additions to the AP family.",
+      "claim_type": "EXPLICIT",
+      "source": "First, AP-1 and AP-2, the two AP complexes that function together with clathrin, are the most recent additions to the AP family (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis of AP complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "a466e362-1ebc-4b5e-9775-9e9996ff424d",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C103",
+      "claim": "TSET already has its own \u03b2-propeller + \u03b1-solenoid scaffold, so it is not clear why it would need clathrin as well.",
+      "claim_type": "EXPLICIT",
+      "source": "and second, TSET already has its own \u03b2-propeller + \u03b1-solenoid scaffold, so it is not clear why it would need clathrin as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument based on the structural composition of TSET.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "dfcac776-dbaf-48f3-a657-4cd9fa6f288c",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C104",
+      "claim": "The interaction between TSET and the clathrin pathway may have evolved considerably later than TSET itself, although still pre-LECA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the interaction between TSET and the clathrin pathway may have evolved considerably later than TSET itself, although still pre-LECA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the evolutionary timing of TSET-clathrin interactions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "775e175c-94a7-4887-a989-53931610d1b8",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C105",
+      "claim": "TSET was part of the original endocytic machinery, which then became redundant in some organisms as the clathrin pathway took over.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to speculate that TSET was part of the original endocytic machinery, which then became redundant in some organisms as the clathrin pathway took over.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the evolutionary role of TSET.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "b8b8b0a6-4750-4047-93fa-2ba5568a59f8",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C106",
+      "claim": "Reverse HHpred is able to find novel homologues of known proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our bioinformatics tool, reverse HHpred, is able to find novel homologues of known proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the successful identification of TSET components using this tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "adc30e53-74c1-403d-959e-48c93d7efcf2",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C107",
+      "claim": "Reverse HHpred could potentially be used to identify new players both in membrane traffic and in other pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "and could potentially be used to identify new players both in membrane traffic and in other pathways (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation about the broader applicability of the tool.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "51272803-984c-4b88-9ad5-7267ba654d3e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C108",
+      "claim": "TSET is both the answer to the question of the origin of the last set of MHD proteins in humans and a major new piece of the puzzle to be incorporated alongside the other membrane-trafficking machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "This ancient complex, TSET, is therefore both the answer to the question of the origin of the last set of MHD proteins in humans, and a major new piece of the puzzle to be incorporated alongside the other membrane-trafficking machinery, as we delve into the history of the eukaryotic cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the significance of the TSET discovery.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "bb4508b6-a851-4901-a679-c818a2c49d60",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C109",
+      "claim": "A reverse HHpred database was constructed containing potential homologues for >300,000 different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HHpred to analyse every protein in the RefSeq database from 15 organisms, covering a broad span of eukaryotic diversity, we built a 'reverse HHpred' database. This database contains potential homologues for >300,000 different proteins (http://reversehhpred.cimr.cam.ac.uk)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the construction and content of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "a2e1d9e0-0767-4b4b-9895-ab533342bdf4",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C110",
+      "claim": "The reverse HHpred database can be searched with structures from the Protein Data Bank (PDB).",
+      "claim_type": "EXPLICIT",
+      "source": "and can be searched with structures from the Protein Data Bank (PDB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functionality of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "0e56c83d-5712-42fe-b253-8d564665479e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C111",
+      "claim": "The reverse HHpred database was used to identify all four subunits of the AP-5 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof of principle, we used this database to identify all four subunits of the AP-5 complex (Figure 1\u2014figure supplements 1 and 2; Figure 1\u2014source data 1, 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the utility of the database as a proof of principle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "4bff04cb-72d3-417e-8441-217f8ab61da5",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C112",
+      "claim": "In the previous AP-5 study, only the medium subunit was initially detectable by bioinformatics-based searching.",
+      "claim_type": "EXPLICIT",
+      "source": "even though in our previous study only the medium subunit was initially detectable by bioinformatics-based searching (Hirst et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "e17bc071-65eb-41a6-9b86-71699a9e2ac7",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C113",
+      "claim": "Secondary structure predictions confirmed that the new TSET family members have similar folds to their counterparts in the AP complexes and COPI.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary structure predictions confirmed that the new family members have similar folds to their counterparts in the AP complexes and COPI (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational secondary structure prediction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "3ee1aa32-3507-486d-bf43-41ed9ace84ba",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C114",
+      "claim": "Phylogenetic analysis of the TTRAYs and their closest relatives showed that the paralogues are due to ancient duplications in the TSET and COPI families respectively, which occurred prior to the divergence of the LECA.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of the TTRAYs and their closest relatives, \u03b2\u2032-COP and \u03b1-COP (Figure 4\u2014figure supplement 9), showed that the paralogues are due to ancient duplications in the TSET and COPI families respectively, which occurred prior to the divergence of the LECA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis of TTRAY and B-COPI sequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "8c970e46-eed4-48d6-bfff-cfa605ee1f8f",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C115",
+      "claim": "The ancestor of the TSET, COPI, and AP complexes was a heterohexamer consisting of five different proteins, with the two scaffolding proteins present as two identical copies.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings imply that the ancestor of the TSET, COPI, and AP complexes was a heterohexamer rather than a heterotetramer, consisting of five different proteins, with the two scaffolding proteins present as two identical copies (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from phylogenetic analysis showing independent duplications of scaffolding subunits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "c7e89163-0e1d-485d-be6c-4dfda58670f4",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C116",
+      "claim": "The C-terminal domain of TCUP is homologous to the C-terminal domains of the muniscins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the C-terminal domain of TCUP is homologous to the C-terminal domains of the muniscins, opisthokont-specific proteins (Gadeyne et al., 2014) (Figure 4\u2014figure supplement 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural homology analysis and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ebe7813f-d37b-4bf9-a200-4740daa76b08",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C117",
+      "claim": "In opisthokonts, the TCUP gene retained its 3\u2032 end, which then combined with a new 5\u2032 end encoding an F-BAR domain to generate the muniscin family.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that in opisthokonts, the TCUP gene retained its 3\u2032 end, which then combined with a new 5\u2032 end encoding an F-BAR domain to generate the muniscin family (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural analysis showing F-BAR domain fused to MHD in muniscins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "5d02721a-5f4c-4394-9601-370687ec2710",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C118",
+      "claim": "The muniscins include the vertebrate proteins FCHo1/2 and the yeast protein Syp1.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the vertebrate proteins FCHo1/2 and the yeast protein Syp1, important players in the endocytic pathway (Reider et al., 2009; Henne et al., 2010; Cocucci et al., 2012; Umasankar et al., 2012; Mayers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about muniscin family members, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "0abe50dd-b583-485d-a66b-b3c001a2d67c",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "claim_id": "C119",
+      "claim": "FCHo1/2 and Syp1 are important players in the endocytic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the vertebrate proteins FCHo1/2 and the yeast protein Syp1, important players in the endocytic pathway (Reider et al., 2009; Henne et al., 2010; Cocucci et al., 2012; Umasankar et al., 2012; Mayers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on muniscin function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "44758d3c-f042-40be-9809-267d8bdfb6a1",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel bioinformatics tool called 'reverse HHpred' that searches for structural homology rather than sequence similarity. This database contains potential homologues for >300,000 proteins and can be searched with PDB structures. As proof of principle, it successfully identified all four subunits of the AP-5 complex, even though only the medium subunit was initially detectable in their previous study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C112 provide clear methodological details about the construction and validation of the reverse HHpred database. The proof-of-principle demonstration (C111) using AP-5 complex identification validates the tool's utility. The database construction, content, and functionality are well-documented with specific numbers and examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "6adc56a9-aa21-43cf-bf8c-0937c16896fc",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TSET is an ancient and widespread complex present across eukaryotic diversity. Comprehensive bioinformatics searches identified TSET orthologues in genomes from across the broad diversity of eukaryotes, with the entire complex present in at least four supergroups. Phylogenetic analysis provided strong resolution excluding TSET from the APs and COPI, establishing it as a distinct ancient component of the eukaryotic membrane-trafficking system present prior to LECA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C69-C73 are supported by comprehensive bioinformatics searches across diverse eukaryotic genomes (C69) and phylogenetic analysis (C72-C73). The presence in multiple supergroups (C70) provides strong evidence for LECA ancestry. The phylogenetic data showing TSET as distinct from APs and COPI is well-documented in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "2371f76c-8d09-45c7-aa31-e8934d07c5de",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TSET is a heterohexamer complex in Dictyostelium. Immunoprecipitation of GFP-tagged TSET small subunit followed by mass spectrometry identified ten specifically coprecipitating proteins, including the three remaining candidate TSET subunits (\u03b2-like, \u03b3\u03b1\u03b4\u03b5\u03b6-like, and \u03bc-like). Quantification by iBAQ showed these three core subunits were present at approximately equimolar levels, while the small subunit and GFP were in ~15-fold molar excess due to overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are well-supported by mass spectrometry data with quantitative iBAQ analysis. The identification of core subunits at equimolar ratios (C27) provides strong evidence for complex formation. The explanation for small subunit excess (C28) is reasonable given the overexpression system. Multiple experimental replicates strengthen the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "0aed4d93-a97c-4f3e-8adb-dbbcd326f62b",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two additional proteins (XP_642289.1 and XP_637150.1) coprecipitated with TSET core subunits and are predicted to consist of two N-terminal \u03b2-propeller domains followed by an \u03b1-solenoid. HHpred analyses show closest matches to \u03b2'-COP and \u03b1-COP. The authors hypothesize these proteins may provide a scaffold for the heterotetramer, based on the known function of proteins with similar architecture in vesicle coat formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by structural prediction analysis and HHpred bioinformatics (C31). The identification of orthologues in other organisms (C32) strengthens the finding. However, C33 is explicitly a hypothesis and lacks direct experimental validation of scaffolding function. The inference is reasonable but remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "1fc38af8-5fd9-471f-9037-10f704e15a5c",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TSET exhibits dynamic membrane association characteristic of coat proteins. TIRF imaging showed punctate TSPOON-GFP at the plasma membrane, while free GFP was entirely cytosolic. High-speed centrifugation demonstrated substantial TSPOON-GFP in the membrane-containing pellet, whereas free GFP was exclusively in the supernatant. These findings indicate TSET is transiently recruited to the plasma membrane from a cytosolic pool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by complementary microscopy (TIRF) and biochemical fractionation data. The comparison with free GFP controls (C45, C47) is appropriate. The inference about transient recruitment (C48) is well-supported by the combined evidence showing both membrane-associated and cytosolic pools.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TSET is non-essential in Dictyostelium but plays a role in plasma membrane turnover. TSPOON knockout cells grew at least as fast as control cells and showed normal differentiation with fruiting body formation. Fluid phase endocytosis (FITC-dextran uptake) was unimpaired, but membrane internalization (FM1-43 uptake) was significantly slower in knockout cells. This contrasts with Arabidopsis where TSET is essential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by multiple functional assays with appropriate controls. The growth rate measurements (C51), differentiation assays (C52), and endocytosis assays (C53-C54) provide comprehensive phenotypic characterization. The FM1-43 data (C54) with statistical significance supports the role in membrane turnover (C55). The comparison with Arabidopsis (C56) is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "1acbd49b-6418-487f-b020-ddcc9649e25e",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mammalian muniscins are descendants of TSET medium subunits and represent the sole surviving remnants of the full TSET complex in opisthokonts. The C-terminal domain of TCUP is homologous to muniscin C-terminal domains. In opisthokonts, the TCUP gene retained its 3' end encoding the MHD, which combined with a new 5' end encoding an F-BAR domain to generate the muniscin family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C93-C94, C116-C117 are supported by structural homology analysis and phylogenetic inference. The identification of TCUP-muniscin homology (C116) is based on structural analysis. The evolutionary scenario (C117, C89) is a reasonable inference from the domain architecture showing F-BAR fusion to MHD. The absence of other TSET components in opisthokonts supports C94.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "a9b82c21-4bbe-45d0-a7ff-d43b77cd14b2",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ancestor of TSET, COPI, and AP complexes was a heterohexamer rather than a heterotetramer. Phylogenetic analysis of TTRAYs and B-COPI showed that the paralogues arose from ancient duplications in the TSET and COPI families respectively, prior to LECA divergence. This implies the ancestral complex consisted of five different proteins with two scaffolding proteins present as identical copies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C115 are supported by phylogenetic analysis showing independent duplications of scaffolding subunits in TSET and COPI lineages (C79, C114). The inference about ancestral heterohexamer composition (C115) logically follows from the phylogenetic data. The timing prior to LECA (C114) is supported by the broad taxonomic distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "0325fa6e-9fc1-4d97-9b00-69179233547f",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose an evolutionary model where the earliest ancestral complex was a heterotrimer or heterohexamer formed from two identical heterotrimers, containing large, small, and scaffolding subunits composed of ancient building blocks (\u03b1-solenoid domains, \u03b2-propellers, longin domain). Gene duplications and mutations in large and small subunit genes, with acquisition of MHD by one small subunit, generated the ancestral heterotetramer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74, C76-C77 are explicitly speculative hypotheses about ancestral states. While C75 is supported by structural analysis and cited literature on ancient protein domains, the specific evolutionary events (duplications, mutations, domain acquisition) in C76-C77 are inferences not directly testable with the presented data. The model is plausible but lacks direct evidence for the proposed intermediate states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "3bccfd26-fa93-450b-a407-f96d81f7e830",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Three additional proteins coprecipitated with TSET: SecG (related to ARNO/cytohesin Arf GEFs, equimolar with core complex) and vacuolins A and B (SPFH family members associated with late vacuole and plasma membrane). Vacuolins showed more variable coprecipitation amounts, suggesting looser association. All three proteins have been implicated in membrane traffic at plasma membrane and/or endosomal compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by mass spectrometry data and cited literature. The identification of SecG and vacuolins (C34, C36-C37) is based on sequence homology and prior functional studies. The stoichiometry data (C35, C38) from iBAQ quantification supports the interpretation of differential binding. The functional implications (C39) are well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Independent studies in Arabidopsis identified the same TSET components but with different associated proteins. Arabidopsis TSET associates with EH domain-containing proteins and clathrin machinery, while Dictyostelium does not show these associations (clathrin was a contaminant). These differences likely reflect functional differences: TSET knockouts are lethal in Arabidopsis with profound effects on clathrin-mediated endocytosis, but produce only mild phenotypes in Dictyostelium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 are supported by comparison with cited literature (Gadeyne et al., 2014) and experimental data. The identification of clathrin as a contaminant in Dictyostelium (C61) is supported by control experiments. The correlation between associated proteins and phenotypic severity (C62-C64) is a reasonable inference supported by the experimental data and citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "3bef54b2-98b4-46fc-80af-2410d2be070c",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis indicates AP-5 diverged basally within the adaptin clade, followed by AP-3, AP-4, and APs 1 and 2, all prior to LECA. AP-1 and AP-2, which function with clathrin, are the most recent additions to the AP family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88 and C102 are supported by phylogenetic analysis presented in the figures. The branching order is clearly shown in the phylogenetic trees with support values. This represents a revision of prior understanding (C88 notes it contradicts previous reports), demonstrating the robustness of the new analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "cf51a122-7608-4ec1-86f4-94d11a3e0c16",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that TSET may predate clathrin-mediated endocytosis based on two observations: (1) AP-1 and AP-2 that function with clathrin are the most recent AP additions, and (2) TSET already has its own \u03b2-propeller + \u03b1-solenoid scaffold. They propose TSET was part of the original endocytic machinery that became redundant as the clathrin pathway evolved, with TSET-clathrin interactions evolving later but still pre-LECA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101, C103-C105 are explicitly speculative hypotheses. While the observations supporting the speculation (phylogenetic position of AP-1/2, presence of TSET scaffold) are valid, the evolutionary scenario is not directly testable with the presented data. The hypothesis is plausible and logically argued but lacks direct evidence for the proposed temporal sequence of events.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "950040c0-9fdd-4373-b9fe-e7e4e6144032",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TSET subunits show structural variability across organisms with less selective pressure than other AP/COPI family members. Arabidopsis added an SH3 domain to the C-terminus of TSAUCER, while Dictyostelium lost the MHD from its medium subunit. Sequence identity between Dictyostelium and Arabidopsis is much lower for TSET \u03b2 subunits (14.63%) compared to AP-1 \u03b21 subunits (58.01%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are supported by structural analysis and sequence comparison data. The specific sequence identity percentages (C23-C24) provide quantitative support for reduced selective pressure (C22). The domain additions/losses (C20-C21, C90) are documented by structural analysis. This variability contrasts with the conservation of other AP/COPI components.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "49995462-cc9d-4302-98c4-d2ce49897aa2",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TSET represents the latest addition to a growing set of trafficking proteins with ancient distributions but frequent loss. The uneven distribution of individual TSET components (contrasting with all-or-nothing distribution of AP-5), lineage-specific binding partners, and acquisition of extra domains (F-BAR in opisthokonts, SH3 in plants) are consistent with frequent loss or reduction with neofunctionalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 are supported by comparative genomic data showing patchy distribution of TSET components across eukaryotes (Figure 3) and documented lineage-specific features. The comparison with AP-5's all-or-nothing distribution provides a useful contrast. The pattern is consistent with cited literature on other trafficking proteins (Schlacht et al., 2014).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ec10d430-9002-4d39-90b5-c8f14dedf20d",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Studies on muniscins may help explain different TSET knockout phenotypes. Like Arabidopsis TSET, muniscins interact with EH domain proteins and participate in clathrin-mediated endocytosis. Dictyostelium has lost its TCUP MHD, likely resulting in loss of some TSET binding partners and functions, explaining the mild knockout phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C98 is supported by cited literature on muniscin function. However, C97 and C100 are speculative hypotheses connecting muniscin function to TSET phenotypes. While the loss of MHD in Dictyostelium (C99) is documented, the causal connection to phenotype severity (C100) is inferred rather than experimentally demonstrated. The hypothesis is plausible but requires additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "c155178e-0d79-4068-ac99-29985ea8050a",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on AP and COPI complexes and eukaryotic evolution. The heterotetrameric AP and COPI complexes are ancient components of the eukaryotic membrane-trafficking system, sharing similar architecture due to common ancestry predating LECA. These complexes are essential or cause severe disorders in mammals and function in cargo selection for vesicle transport. The discovery of AP-5 raised the possibility of additional undetected trafficking complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C17 represent established knowledge supported by multiple citations. These provide essential background context for the study. The structural information (C14), functional roles (C15), and evolutionary relationships (C13) are well-documented in the literature. The motivation for the study (C17) logically follows from the AP-5 discovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "d54c86b9-d898-4bc6-a794-9045252173c1",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "TPLATE was previously characterized as an Arabidopsis protein related to AP \u03b2 subunits and \u03b2-COP, found in a mitosis screen and localized to the cell plate. The authors propose nomenclature for the TSET complex: TPLATE (\u03b2-like), TSAUCER (\u03b3\u03b1\u03b4\u03b5\u03b6-like), TCUP (\u03bc-like), TSPOON (\u03c3-like) for the heterotetramer subunits; TTRAY1 and TTRAY2 for the scaffolding proteins; and TSET for the conserved heterohexamer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by cited literature on TPLATE discovery and characterization. Claims C40-C43 represent nomenclature proposals by the authors, which are reasonable and follow logical naming conventions based on relative sizes and structural relationships. The naming is clearly defined and consistently used throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "745cc4d5-2f1d-411c-8a33-f2c7e0439b6c",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior studies incorrectly concluded TPLATE/TPC was plant-specific based on limited taxonomic sampling. When TPLATE was discovered in Arabidopsis and in a recent study, authors concluded the complex was plant-specific. However, these conclusions were based on analyses of only plants, yeast, and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by citations to prior literature. The critique of limited taxonomic sampling (C67) is valid and represents a key contribution of the current study. The identification of TSET in diverse eukaryotes demonstrates the importance of comprehensive taxonomic sampling in evolutionary studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "fee1c72f-0924-49ba-a2d5-d8dfe1179e99",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "TSET is essentially identical to the recently described TPLATE complex (TPC), which was reported to be plant-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are supported by comparison of subunit composition and structure between TSET and TPC, and by citation of prior literature reporting TPC as plant-specific. The essential identity (C5) is demonstrated by the overlap in identified components between the current study and Gadeyne et al., 2014.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Evolutionary considerations for scaffolding subunits in different complexes. COPI acquired \u03b5-COP; the ancestral AP complex may have lost scaffolding subunits, though AP-5 associates with SPG11 and SPG15 (relationship to TTRAY/B-COPI unresolved, possibly highly divergent descendants). AP-1 and AP-2 interact with clathrin; AP-3 may interact with Vps41; no scaffold proposed for AP-4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C82, C85-C87 represent established knowledge supported by citations. Claims C81, C83-C84 acknowledge uncertainty about evolutionary relationships, which is appropriate given the divergence of these proteins. The speculation about SPG11/SPG15 origins (C84) is clearly marked as uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "63f69ff3-7874-4f73-98bf-79519bfda651",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The muniscins constitute one of eight families of MHD proteins in humans and were the only family whose evolutionary origin was unexplained until now. TSET is both the answer to the origin of the last set of MHD proteins in humans and a major new piece of the puzzle for understanding eukaryotic cell evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 represent established knowledge about MHD protein families with the novel contribution being the explanation of muniscin origins. Claim C108 is a summary statement about the significance of the findings, which is well-supported by the comprehensive data presented throughout the manuscript on TSET structure, function, distribution, and evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    },
+    {
+      "id": "ff378f8f-6ff0-42ea-818d-e85df1374cad",
+      "content_id": "03cc808e-4a41-4c0d-ae78-2d7ab1964e0f",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The reverse HHpred tool could potentially be used to identify new players in membrane traffic and other pathways. Secondary structure predictions confirmed that new TSET family members have similar folds to their counterparts in AP complexes and COPI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C113 is supported by computational secondary structure prediction analysis shown in Figure 1B. Claim C107 is a reasonable speculation about broader applicability of the tool, supported by its successful application to identify TSET components. The tool's utility is demonstrated but broader applications remain to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:45:17.020924Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bb4508b6-a851-4901-a679-c818a2c49d60",
+      "result_id": "44758d3c-f042-40be-9809-267d8bdfb6a1"
+    },
+    {
+      "claim_id": "a2e1d9e0-0767-4b4b-9895-ab533342bdf4",
+      "result_id": "44758d3c-f042-40be-9809-267d8bdfb6a1"
+    },
+    {
+      "claim_id": "0e56c83d-5712-42fe-b253-8d564665479e",
+      "result_id": "44758d3c-f042-40be-9809-267d8bdfb6a1"
+    },
+    {
+      "claim_id": "4bff04cb-72d3-417e-8441-217f8ab61da5",
+      "result_id": "44758d3c-f042-40be-9809-267d8bdfb6a1"
+    },
+    {
+      "claim_id": "b8b8b0a6-4750-4047-93fa-2ba5568a59f8",
+      "result_id": "44758d3c-f042-40be-9809-267d8bdfb6a1"
+    },
+    {
+      "claim_id": "513bf73c-fbf9-4b86-ac1c-8c7813d6aec0",
+      "result_id": "6adc56a9-aa21-43cf-bf8c-0937c16896fc"
+    },
+    {
+      "claim_id": "49439175-22b0-4100-8db0-794fd5886c90",
+      "result_id": "6adc56a9-aa21-43cf-bf8c-0937c16896fc"
+    },
+    {
+      "claim_id": "40202f25-3777-475f-9525-8d3192e1b6ae",
+      "result_id": "6adc56a9-aa21-43cf-bf8c-0937c16896fc"
+    },
+    {
+      "claim_id": "af3b0ae4-7ab2-4cf6-baca-4f449f20672f",
+      "result_id": "6adc56a9-aa21-43cf-bf8c-0937c16896fc"
+    },
+    {
+      "claim_id": "7f5a28b5-9ca1-4545-9eb9-6aef458c7032",
+      "result_id": "6adc56a9-aa21-43cf-bf8c-0937c16896fc"
+    },
+    {
+      "claim_id": "8049c66d-3c1e-475a-a152-b606286e2679",
+      "result_id": "6adc56a9-aa21-43cf-bf8c-0937c16896fc"
+    },
+    {
+      "claim_id": "c1dc1d55-9556-4e6d-b542-645a3c245a44",
+      "result_id": "6adc56a9-aa21-43cf-bf8c-0937c16896fc"
+    },
+    {
+      "claim_id": "2fe76d9b-fba8-47f5-bf5e-435932f141e8",
+      "result_id": "2371f76c-8d09-45c7-aa31-e8934d07c5de"
+    },
+    {
+      "claim_id": "6ddccc0f-f153-4b72-b226-bd25167f8ab7",
+      "result_id": "2371f76c-8d09-45c7-aa31-e8934d07c5de"
+    },
+    {
+      "claim_id": "a085db3b-15a7-49aa-8eea-4ad20d9a6547",
+      "result_id": "2371f76c-8d09-45c7-aa31-e8934d07c5de"
+    },
+    {
+      "claim_id": "9380a2f9-476f-4044-b3c6-dc98eee1ff27",
+      "result_id": "2371f76c-8d09-45c7-aa31-e8934d07c5de"
+    },
+    {
+      "claim_id": "12c70215-dc9d-4967-807e-c0151fa2151d",
+      "result_id": "2371f76c-8d09-45c7-aa31-e8934d07c5de"
+    },
+    {
+      "claim_id": "70d784fb-2c2d-4549-bcf1-6468e7c51d9e",
+      "result_id": "0aed4d93-a97c-4f3e-8adb-dbbcd326f62b"
+    },
+    {
+      "claim_id": "e9d7bb97-6d88-4599-aabb-d065eaf0e87b",
+      "result_id": "0aed4d93-a97c-4f3e-8adb-dbbcd326f62b"
+    },
+    {
+      "claim_id": "fccc3da1-6959-4a40-bbc4-aa497f2ddbc0",
+      "result_id": "0aed4d93-a97c-4f3e-8adb-dbbcd326f62b"
+    },
+    {
+      "claim_id": "1246ff84-126c-48a9-b070-9d80f8faa8fd",
+      "result_id": "0aed4d93-a97c-4f3e-8adb-dbbcd326f62b"
+    },
+    {
+      "claim_id": "ee2a2c6f-57be-4fac-8181-974270367892",
+      "result_id": "0aed4d93-a97c-4f3e-8adb-dbbcd326f62b"
+    },
+    {
+      "claim_id": "ef5e0307-7b03-4457-8bfb-9b4495186a72",
+      "result_id": "1fc38af8-5fd9-471f-9037-10f704e15a5c"
+    },
+    {
+      "claim_id": "1786d290-3af5-4077-89a1-5d2062ff37c7",
+      "result_id": "1fc38af8-5fd9-471f-9037-10f704e15a5c"
+    },
+    {
+      "claim_id": "af29b3e8-9fc2-4bf8-942d-366533793e8b",
+      "result_id": "1fc38af8-5fd9-471f-9037-10f704e15a5c"
+    },
+    {
+      "claim_id": "230a0763-b86d-4ec7-86c9-354b3010d019",
+      "result_id": "1fc38af8-5fd9-471f-9037-10f704e15a5c"
+    },
+    {
+      "claim_id": "7016c706-fa9c-41ab-a0a8-ddf7f29a50a6",
+      "result_id": "1fc38af8-5fd9-471f-9037-10f704e15a5c"
+    },
+    {
+      "claim_id": "4b7f52a4-6549-4a38-9266-79067200925c",
+      "result_id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9"
+    },
+    {
+      "claim_id": "004bc02e-0f83-4bef-bd1c-871c9416ea7a",
+      "result_id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9"
+    },
+    {
+      "claim_id": "f17791f5-ff0d-4422-963a-5fe4892d5341",
+      "result_id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9"
+    },
+    {
+      "claim_id": "a44a224e-e5be-4ad8-bb81-f2036a919ed4",
+      "result_id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9"
+    },
+    {
+      "claim_id": "33f9d716-d957-4310-8828-79fc6cbaa64d",
+      "result_id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9"
+    },
+    {
+      "claim_id": "3989d193-3e4e-43b9-9d1a-c2cf67ff39b7",
+      "result_id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9"
+    },
+    {
+      "claim_id": "9060c886-1b08-4394-9ada-b0802574dc96",
+      "result_id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9"
+    },
+    {
+      "claim_id": "e2f38d01-f2d8-42c2-ac2a-af13f2d8805e",
+      "result_id": "cd72f33b-ccac-4c31-9df5-462f3bf9dba9"
+    },
+    {
+      "claim_id": "0a705941-38cb-4c06-8361-1289be03c3e4",
+      "result_id": "1acbd49b-6418-487f-b020-ddcc9649e25e"
+    },
+    {
+      "claim_id": "e45cf219-8403-45ce-b110-592c3e13cfb5",
+      "result_id": "1acbd49b-6418-487f-b020-ddcc9649e25e"
+    },
+    {
+      "claim_id": "4f8e02f6-57da-41ca-8375-a69321eac67d",
+      "result_id": "1acbd49b-6418-487f-b020-ddcc9649e25e"
+    },
+    {
+      "claim_id": "07dda09d-e352-4fa3-be7e-f02e4bcd2a6e",
+      "result_id": "1acbd49b-6418-487f-b020-ddcc9649e25e"
+    },
+    {
+      "claim_id": "c7e89163-0e1d-485d-be6c-4dfda58670f4",
+      "result_id": "1acbd49b-6418-487f-b020-ddcc9649e25e"
+    },
+    {
+      "claim_id": "ebe7813f-d37b-4bf9-a200-4740daa76b08",
+      "result_id": "1acbd49b-6418-487f-b020-ddcc9649e25e"
+    },
+    {
+      "claim_id": "3ee1aa32-3507-486d-bf43-41ed9ace84ba",
+      "result_id": "a9b82c21-4bbe-45d0-a7ff-d43b77cd14b2"
+    },
+    {
+      "claim_id": "8c970e46-eed4-48d6-bfff-cfa605ee1f8f",
+      "result_id": "a9b82c21-4bbe-45d0-a7ff-d43b77cd14b2"
+    },
+    {
+      "claim_id": "135b3681-b315-4f2e-88ef-27c5ba904e8b",
+      "result_id": "a9b82c21-4bbe-45d0-a7ff-d43b77cd14b2"
+    },
+    {
+      "claim_id": "d3bf5dd4-b8b9-441f-bbf3-213ec22cae96",
+      "result_id": "a9b82c21-4bbe-45d0-a7ff-d43b77cd14b2"
+    },
+    {
+      "claim_id": "4baa8135-c28e-459e-bdfe-caf1acc3cc85",
+      "result_id": "0325fa6e-9fc1-4d97-9b00-69179233547f"
+    },
+    {
+      "claim_id": "760b79cd-0c38-48ca-a76f-ca5e12c3e736",
+      "result_id": "0325fa6e-9fc1-4d97-9b00-69179233547f"
+    },
+    {
+      "claim_id": "a57fd096-a664-4eb8-857d-d4d5198dad11",
+      "result_id": "0325fa6e-9fc1-4d97-9b00-69179233547f"
+    },
+    {
+      "claim_id": "ef4e6a5b-1531-42fc-90fe-46d197e88617",
+      "result_id": "0325fa6e-9fc1-4d97-9b00-69179233547f"
+    },
+    {
+      "claim_id": "48d4f3ed-fca6-4591-8e92-917d023823c0",
+      "result_id": "3bccfd26-fa93-450b-a407-f96d81f7e830"
+    },
+    {
+      "claim_id": "6c6e0949-9a70-4ca4-aa4e-701a1980a85b",
+      "result_id": "3bccfd26-fa93-450b-a407-f96d81f7e830"
+    },
+    {
+      "claim_id": "a3d4ed9d-8f5c-42ae-90a9-801f53484786",
+      "result_id": "3bccfd26-fa93-450b-a407-f96d81f7e830"
+    },
+    {
+      "claim_id": "bb469eae-0290-445a-9fd5-161ef9a1d478",
+      "result_id": "3bccfd26-fa93-450b-a407-f96d81f7e830"
+    },
+    {
+      "claim_id": "8a9d91b0-d143-4aa7-8ac4-beaa8b90b6d7",
+      "result_id": "3bccfd26-fa93-450b-a407-f96d81f7e830"
+    },
+    {
+      "claim_id": "cb892afa-6f5b-4d99-a341-3db1b568efe1",
+      "result_id": "3bccfd26-fa93-450b-a407-f96d81f7e830"
+    },
+    {
+      "claim_id": "d6f19a2c-db25-49b4-9385-d9954b9815f7",
+      "result_id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8"
+    },
+    {
+      "claim_id": "372a5aad-1250-41b6-b08b-63815afabbb3",
+      "result_id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8"
+    },
+    {
+      "claim_id": "02d523a8-7582-4ded-84e7-e2acebef3c12",
+      "result_id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8"
+    },
+    {
+      "claim_id": "cb006159-1259-4ab7-b122-085b56c5b1dc",
+      "result_id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8"
+    },
+    {
+      "claim_id": "7679cc48-a9bc-4a5a-b030-997353ead537",
+      "result_id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8"
+    },
+    {
+      "claim_id": "bb5533da-3125-4c14-96c1-c08b721579db",
+      "result_id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8"
+    },
+    {
+      "claim_id": "3055688b-452f-459f-827f-458a0a83fea6",
+      "result_id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8"
+    },
+    {
+      "claim_id": "702c936a-fa01-4bf0-9560-cdcfa74cc316",
+      "result_id": "bc5abb86-a62c-4df1-80dd-bb91b4c4f8d8"
+    },
+    {
+      "claim_id": "053a3f14-4e32-4d7a-9c33-699b4900b5e0",
+      "result_id": "3bef54b2-98b4-46fc-80af-2410d2be070c"
+    },
+    {
+      "claim_id": "2c58f121-0971-4a9c-b63b-7d339671c50a",
+      "result_id": "3bef54b2-98b4-46fc-80af-2410d2be070c"
+    },
+    {
+      "claim_id": "7ad3f0f4-a619-4d33-baaa-e562a7eb2b7b",
+      "result_id": "cf51a122-7608-4ec1-86f4-94d11a3e0c16"
+    },
+    {
+      "claim_id": "a466e362-1ebc-4b5e-9775-9e9996ff424d",
+      "result_id": "cf51a122-7608-4ec1-86f4-94d11a3e0c16"
+    },
+    {
+      "claim_id": "dfcac776-dbaf-48f3-a657-4cd9fa6f288c",
+      "result_id": "cf51a122-7608-4ec1-86f4-94d11a3e0c16"
+    },
+    {
+      "claim_id": "775e175c-94a7-4887-a989-53931610d1b8",
+      "result_id": "cf51a122-7608-4ec1-86f4-94d11a3e0c16"
+    },
+    {
+      "claim_id": "2c3afee4-99eb-48f1-a79c-f55fe03514d1",
+      "result_id": "950040c0-9fdd-4373-b9fe-e7e4e6144032"
+    },
+    {
+      "claim_id": "7e67167e-b5c1-42f6-92df-a27da4810a7d",
+      "result_id": "950040c0-9fdd-4373-b9fe-e7e4e6144032"
+    },
+    {
+      "claim_id": "bc8f59eb-057d-470a-a371-4df7d1ebda3e",
+      "result_id": "950040c0-9fdd-4373-b9fe-e7e4e6144032"
+    },
+    {
+      "claim_id": "df4c205a-9282-44dc-86ce-ed9e78d2c6c7",
+      "result_id": "950040c0-9fdd-4373-b9fe-e7e4e6144032"
+    },
+    {
+      "claim_id": "7d2ac002-4c46-4a6c-bdf0-587d371c2ae9",
+      "result_id": "950040c0-9fdd-4373-b9fe-e7e4e6144032"
+    },
+    {
+      "claim_id": "f6f3a090-27b7-48d4-bba4-5f9142798881",
+      "result_id": "950040c0-9fdd-4373-b9fe-e7e4e6144032"
+    },
+    {
+      "claim_id": "b7a4120c-5db1-4ab0-9fbd-a90581c1c65f",
+      "result_id": "49995462-cc9d-4302-98c4-d2ce49897aa2"
+    },
+    {
+      "claim_id": "719cbee9-fce1-4527-bac9-c55aea315be1",
+      "result_id": "49995462-cc9d-4302-98c4-d2ce49897aa2"
+    },
+    {
+      "claim_id": "cb69764a-2095-4f6e-a7bd-87b5774b606f",
+      "result_id": "ec10d430-9002-4d39-90b5-c8f14dedf20d"
+    },
+    {
+      "claim_id": "16b2f978-453f-4f7b-a8e7-add1806fe299",
+      "result_id": "ec10d430-9002-4d39-90b5-c8f14dedf20d"
+    },
+    {
+      "claim_id": "502a05c1-2976-4fc9-99d9-e2b94eb1f7f9",
+      "result_id": "ec10d430-9002-4d39-90b5-c8f14dedf20d"
+    },
+    {
+      "claim_id": "ba9c4cd0-bb70-42b6-abdc-aeeda274778e",
+      "result_id": "ec10d430-9002-4d39-90b5-c8f14dedf20d"
+    },
+    {
+      "claim_id": "057f9d57-c7a3-4084-b67e-8129c7ef2d5b",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "64f52ff4-5b24-4274-9cc1-b2cba687ec7c",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "f03278e2-3640-4ce1-ac31-b4f925a74e05",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "508c98be-ac11-4da5-a668-9cc4b3788e66",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "f0bdb610-720c-421a-b380-41d8451c841e",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "f0cca494-fc6b-4ea6-893a-94a25d6ec86f",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "77ba83b7-fed4-4950-aebf-e41d59a68517",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "fce33d82-cdc5-4cbd-b275-7a9950d4b85a",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "e2be2bb8-fdd7-4662-b578-8e8deaf2d42a",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "fbe8d940-9362-4d71-805b-df59faffc460",
+      "result_id": "c155178e-0d79-4068-ac99-29985ea8050a"
+    },
+    {
+      "claim_id": "18e880f9-ae30-4202-9082-07f545006055",
+      "result_id": "d54c86b9-d898-4bc6-a794-9045252173c1"
+    },
+    {
+      "claim_id": "e1e4b401-de2e-4b13-878d-019688a6ffa6",
+      "result_id": "d54c86b9-d898-4bc6-a794-9045252173c1"
+    },
+    {
+      "claim_id": "58760844-7e95-41b3-a80a-3a6d69906709",
+      "result_id": "d54c86b9-d898-4bc6-a794-9045252173c1"
+    },
+    {
+      "claim_id": "25862b53-5973-49d2-944b-231ee08ecd91",
+      "result_id": "d54c86b9-d898-4bc6-a794-9045252173c1"
+    },
+    {
+      "claim_id": "8792a0d6-c08e-4058-93dc-944c4d342a3d",
+      "result_id": "d54c86b9-d898-4bc6-a794-9045252173c1"
+    },
+    {
+      "claim_id": "18492b7a-64f8-4034-bcf5-cac559706be5",
+      "result_id": "d54c86b9-d898-4bc6-a794-9045252173c1"
+    },
+    {
+      "claim_id": "175f7634-21a2-48c9-b5c4-6e986f077ff3",
+      "result_id": "745cc4d5-2f1d-411c-8a33-f2c7e0439b6c"
+    },
+    {
+      "claim_id": "20bfdb05-fad8-49e0-a171-cb5bdf93a992",
+      "result_id": "745cc4d5-2f1d-411c-8a33-f2c7e0439b6c"
+    },
+    {
+      "claim_id": "72df5545-b8fa-4917-9f91-35d5bde816a3",
+      "result_id": "745cc4d5-2f1d-411c-8a33-f2c7e0439b6c"
+    },
+    {
+      "claim_id": "ae79d626-35b0-4a7c-aa8b-d09263d5a6b0",
+      "result_id": "fee1c72f-0924-49ba-a2d5-d8dfe1179e99"
+    },
+    {
+      "claim_id": "e002f539-9cbc-4206-a544-dcf74d634c23",
+      "result_id": "fee1c72f-0924-49ba-a2d5-d8dfe1179e99"
+    },
+    {
+      "claim_id": "ef63e6d0-38b0-4460-8a3d-5ff4ca6e2ba1",
+      "result_id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67"
+    },
+    {
+      "claim_id": "859185c9-351f-4ddd-a4a3-f80ab2e29902",
+      "result_id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67"
+    },
+    {
+      "claim_id": "514d893f-e1e6-4537-96a7-e5923e48d662",
+      "result_id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67"
+    },
+    {
+      "claim_id": "105279c7-fdb2-438b-9ec4-fa00fa74f741",
+      "result_id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67"
+    },
+    {
+      "claim_id": "4aff0d35-f7af-4cb3-a5a2-5be243a10e16",
+      "result_id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67"
+    },
+    {
+      "claim_id": "bba1a829-b6a9-41a1-b8a7-6f6870ba95b4",
+      "result_id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67"
+    },
+    {
+      "claim_id": "b8513216-dd9c-4ac6-ad39-ac9edd4b01f0",
+      "result_id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67"
+    },
+    {
+      "claim_id": "bd9d8a0e-4c5f-4186-b933-1004e5abc0a5",
+      "result_id": "3b87535f-8b9c-4f9b-aa0a-0db904153a67"
+    },
+    {
+      "claim_id": "6df7a7f1-c35e-4961-a02a-96184fc950d2",
+      "result_id": "63f69ff3-7874-4f73-98bf-79519bfda651"
+    },
+    {
+      "claim_id": "5ffd142d-dc47-494e-bc73-46629a469331",
+      "result_id": "63f69ff3-7874-4f73-98bf-79519bfda651"
+    },
+    {
+      "claim_id": "51272803-984c-4b88-9ad5-7267ba654d3e",
+      "result_id": "63f69ff3-7874-4f73-98bf-79519bfda651"
+    },
+    {
+      "claim_id": "adc30e53-74c1-403d-959e-48c93d7efcf2",
+      "result_id": "ff378f8f-6ff0-42ea-818d-e85df1374cad"
+    },
+    {
+      "claim_id": "e17bc071-65eb-41a6-9b86-71699a9e2ac7",
+      "result_id": "ff378f8f-6ff0-42ea-818d-e85df1374cad"
+    }
+  ],
+  "comparisons": []
+}

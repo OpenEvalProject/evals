@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Using interferometric scattering microscopy (iSCAT) with 20 nm gold labels attached to the N-terminus of myosin 5a, the authors achieved ~4 nm lateral localization precision at 1000 frames/s and observed discrete 74 nm steps. The labeling strategy did not interfere with the mechanochemical cycle, as verified by ATP-dependent velocity measurements that compared well with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 establish the experimental methodology and validate the approach. The 74 nm step size (C14) matches established knowledge (C5), the label does not perturb function (C15), and results agree with prior work (C16), providing strong validation of the technique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The detached myosin head occupies a transient state positioned approximately halfway between binding sites and offset by 40 nm perpendicular to the actin filament. From this position, the head repeatedly moves back and forth to the next actin binding site before firmly binding. This transient state represents a true potential energy minimum of the one-head-bound state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C20 collectively demonstrate the existence and characterization of the transient state through direct experimental observation. The 4 nm localization precision (C14) is sufficient to resolve the 40 nm offset (C18), and observations of leading head detachment occupying similar positions (C20) support the interpretation as a true energy minimum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Using the axial sensitivity of iSCAT contrast to label-surface distance, the authors determined that the myosin head lifts on average by 24 \u00b1 10 nm from its actin-bound position during the transient state, based on a 3.5% drop in iSCAT contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the iSCAT technique's sensitivity to axial position is well-established (C21-C23), the quantitative conversion from contrast change to height (C25) acknowledges significant uncertainty (\u00b110 nm) and notes that accurate calibration of phase contributions was not achieved. The measurement provides useful information but lacks the precision of the lateral measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C4",
+      "C61"
+    ],
+    "result": "Simultaneous tracking of both myosin heads using dual labeling (gold nanoparticle and quantum dot) revealed that transient states for both heads appear on the same side of the actin filament, demonstrating a symmetrical walking pattern where consecutive steps follow identical paths in a compass-like spinning motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C4, and C61 are mutually reinforcing and based on direct experimental observation using dual-labeling. The consistency across all recorded trajectories showing transient states on the same side (C26) strongly supports the symmetric walking model, distinguishing it from asymmetric alternatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C3"
+    ],
+    "result": "At 100 frames/s imaging speed with sub-nm lateral precision, the authors observed an AB transition during each 74 nm step involving a small (<10 nm) off-axis backward motion of the gold particle attached to the bound head, providing evidence for an \u00e5ngstrom-level structural transition in the motor domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 establish both the observation and the precision required to detect the AB transition. The sub-nm localization precision for immobilized particles (C29, \u03c3=0.91 nm) and the maintained precision for myosin-bound particles (C30, \u03c3=1.6\u00b10.3 nm) are sufficient to resolve the <10 nm transition (C28), supporting the claim of detecting \u00e5ngstrom-level structural changes (C3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Simultaneous tracking of head and tail positions revealed that both the large-scale 74 nm translocation and the smaller AB transition coincide with tail movement, indicating that the AB transition represents the power stroke of the attached head (pre- to post-power stroke transition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are based on simultaneous dual-channel tracking experiments. The correlation between head movements (both large and small scale) and tail displacement (C33) provides strong evidence that the AB transition corresponds to the power stroke (C34), though this is an inference from the correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C46"
+    ],
+    "result": "The AB transition magnitude increased systematically with label size (7.4\u00b13.2 nm for 20 nm, 9.5\u00b13.1 nm for 30 nm, and 11.5\u00b12.5 nm for 40 nm labels), indicating that the transition reports on a ~20\u00b0 rotation of the N-terminal domain rather than translation of the head along actin. The label amplifies an \u00e5ngstrom-scale structural change into a nanometer-scale motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C46 form a coherent argument supported by systematic experimental variation. The label-size dependence (C35) is inconsistent with head translation but consistent with rotational motion (C36). The geometric model yields specific parameters (C37: \u03b1=20\u00b0, x=1.7 nm) that are physically reasonable, and the interpretation that labels amplify small structural changes (C46) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C59"
+    ],
+    "result": "The AB transition direction and the transient state position are invariably aligned. Within individual trajectories, the transient state always appears on the same side of actin, with an overall preference for right-handed walking (66%) over left-handed walking (33%) across 351 traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C59 are based on direct experimental observations with sufficient sample size (351 traces). The consistent alignment (C38, C59) and the within-trajectory consistency (C40) are clearly stated observations, while the handedness preference (C39) is a statistical finding with adequate sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C62",
+      "C63"
+    ],
+    "result": "When myosin molecules switched between actin filaments, the transient state orientation remained on the same side 60% of the time and changed sides 40% of the time, indicating that transient state orientation is not an intrinsic molecular property but is determined upon binding to actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C63 are based on 102 filament-switching events, providing adequate statistical power. The observation that orientation can change (C41, C62) rules out the transient state position being an intrinsic molecular property, and the inference that orientation is determined upon binding (C63) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C53",
+      "C54"
+    ],
+    "result": "The transient state dwell time follows a single exponential distribution with a lifetime of 17.5\u00b10.6 ms, independent of ATP concentration. This lifetime agrees with previous optical trapping measurements of increased flexibility and correlates with the ensemble rate constant for weak-to-strong binding transition (47 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 report direct experimental measurements, while C53-C54 provide validation through comparison with prior work. The single exponential distribution (C42) and ATP independence (C43) are clearly stated findings. Agreement with previous studies (C53-C54) strengthens confidence in the measurements, though these comparisons rely on the accuracy of cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The dwell times of the A and B states were identical, demonstrating that the 20 nm gold particle attached to the N-terminus has no measurable effect on stepping kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide critical validation that the labeling strategy does not perturb the system under study. The comparison of dwell times for labeled versus unlabeled heads is an appropriate control, and the finding of no difference supports the validity of all other observations made with this labeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Analysis of 4,728 steps in 635 trajectories revealed no 64-10 nm sub-steps along actin. Myosin remains firmly bound to actin with both heads throughout the mechanochemical cycle except during the 74 nm step, with leading head detachment occurring in only ~3% of steps at 1 \u00b5M ATP, ~0.6% at 10 \u00b5M ATP, and none at saturating ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are based on a large dataset (4,728 steps) providing strong statistical power. The absence of sub-steps (C50) contradicts some prior fluorescence studies but is consistent with the authors' interpretation that previous observations may have been artifacts of lever-arm labeling. The rare leading head detachment (C52) is well-quantified and ATP-dependent as expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The transient state position (40 nm perpendicular and halfway along the filament) is inconsistent with purely rotational diffusion search. Instead, myosin side-steps in a combined twisting and leaning motion like a drawing compass, facilitated by a preferred ~105-115\u00b0 angle between lever arms that constrains the search to a one-dimensional arc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 present a mechanistic model based on the transient state position (C18) and structural considerations. The inconsistency with free rotational diffusion (C55) is supported by geometric arguments. The compass-like motion model (C58) is an inference that integrates the transient state observations with structural constraints from EM studies (C57), providing a coherent mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The AB transition cannot solely result from steric interaction between the label and lever arm, because the transition direction correlates with the transient state position (right vs. left-handed walking).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is a logical inference from the observation that AB transition direction correlates with transient state sidedness (C38, C59). If the AB transition were purely a steric artifact, it should be independent of walking handedness. This reasoning is sound and supports the interpretation that the AB transition reflects genuine structural dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The authors propose that twisting during the initial binding event of both heads to actin determines the directionality of subsequent stepping, with this initial torsional strain being repeatedly stored and released as the protein moves along actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is explicitly presented as a proposal/hypothesis based on the observation that both heads' transient states occur on the same side (C26, C40). While consistent with the data, this mechanistic explanation is speculative and lacks direct experimental validation. The authors appropriately frame this as a proposed mechanism rather than a demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Previous studies using gold labels or EM failed to observe the AB transition or N-terminal domain movement, likely due to different labeling strategies and lower spatial precision (>10 nm). The observed N-terminal rotation is consistent with molecular dynamics simulations of myosin 5a and myosin 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide context by comparing current results with prior work. The explanation for why previous studies missed the AB transition (C47) is reasonable given the methodological differences. Agreement with MD simulations (C49) provides independent support, though the authors appropriately note that EM studies (C48) did not detect these changes, highlighting the advantage of their approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The experimental methodology involved standard protein preparation techniques, site-specific biotinylation at the N-terminus using AviTag, labeling with streptavidin-conjugated gold nanoparticles (20-40 nm), and iSCAT imaging at 17.9 kW/cm\u00b2 incident power to achieve shot-noise-limited detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe standard methodological procedures that are adequately documented through citations and procedural descriptions. These are routine techniques in the field, and the level of detail provided is sufficient for reproducibility. The methods are appropriate for the experimental goals.",
+    "result_type": "MINOR"
+  }
+]

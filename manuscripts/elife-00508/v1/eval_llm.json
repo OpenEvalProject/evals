@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors established an imaging-based high-throughput screening platform using mESC monolayer cultures that reliably detects TH+ neurons with acceptable variation (CV<20% for 25/26 plates). Screening 2080 compounds yielded 26 primary hits (1.16%), of which 20 were non-toxic and non-autofluorescent, resulting in 2 validated hits (0.09% hit rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screening platform is well-validated with appropriate quality control metrics (C8), clear hit selection criteria (mean + 3 S.D.), and systematic filtering for cytotoxicity and autofluorescence (C9-C10). The low baseline TH+ neuron percentage (C5) and consistent neural progenitor marker expression (C6-C7) support assay robustness. The hit rate and validation process are clearly documented (C11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The screen identified two hit compounds: Dihydrodeoxygedunin (DOG), a known TrkB receptor agonist with neurotrophic activity, and selamectin. Both DOG and 7,8-dihydroxyflavone (DHF, another TrkB agonist) modestly increased TH+ cells in mESC cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of DOG validates the screening platform's ability to detect compounds with known neurotrophic activity (C12). The modest effect of both DOG and DHF (C13) is supported by Figure 2 data and serves as a positive control, though the magnitude of effect is limited compared to selamectin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Selamectin broadly increases neuronal differentiation from mESCs, significantly enhancing production of total neurons (NeuN+), TH+ neurons, 5-HT neurons (~7-fold increase), GABAergic neurons, Islet+ motor neurons, and Olig2+ oligodendrocytes. The increase in neuronal production occurs without reducing glial production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent immunostaining experiments with different neuronal markers (C14-C17, C20) demonstrate broad pro-neurogenic effects supported by Figure 3. The remarkably high 7-fold increase in 5-HT neurons (C18) suggests preferential activity (C19), though this remains speculative. The concurrent increase in both neurons and oligodendrocytes (C20-C21) is well-documented, though the inference that neurogenesis doesn't occur at the expense of gliogenesis requires caution as the temporal dynamics differ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Selamectin exhibits dose-dependent activity with EC50=293 nM and becomes toxic above 500 nM. Time-course analysis reveals that selamectin specifically acts during Stage 2 (Days 7-10, neural progenitor stage), with treatment during Stage 1 suppressing proliferation and treatment during Stage 3 showing no effect, indicating that selamectin's proneurogenic activity targets mESC-derived neural progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response relationship is well-characterized with appropriate curve fitting (C22, Figure 4A). The temporal specificity is rigorously demonstrated through systematic testing of different treatment windows (C24-C27, Figure 4B), providing strong evidence that selamectin acts on neural progenitors rather than undifferentiated ESCs or differentiating neurons (C28). The toxicity threshold (C23) is clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Through systematic pharmacological testing, the authors demonstrate that selamectin acts through GABAA receptors rather than its known invertebrate target (GluCl channels) or vertebrate glycine receptors. The GABAA receptor agonist muscimol and positive allosteric modulator chlordiazepoxide both show proneurogenic activity, with no additive effect when combined with selamectin. GABAA receptor antagonists (bicuculline, picrotoxin, pentylenetetrazol) block selamectin's effect, while the glycine receptor inhibitor strychnine does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological evidence is comprehensive and systematic. The lack of effect of taurine (glycine receptor agonist) rules out glycine receptors (C36-C37). The proneurogenic activity of muscimol across a wide concentration range (C40) and chlordiazepoxide (C41), combined with lack of additivity (C42-C43), strongly suggests a common GABAA receptor mechanism. The blocking experiments (C44-C47) provide compelling evidence, though the observation that GABAA antagonists alone have no effect (C44-C45) suggests endogenous GABA may not be present at sufficient levels, which is appropriately noted as speculative. The conclusion (C48) is well-supported by the pharmacological data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Genetic knockdown experiments using esiRNAs targeting GABAA receptor subunits demonstrate that the \u03b32 subunit (gabarg2) is specifically required for selamectin's proneurogenic activity. While esiRNAs targeting \u03b11, \u03b22, \u03b32, and \u03c0 subunits effectively reduced transcript levels, only \u03b32 knockdown abolished selamectin's effect on NeuN+ and TH+ neuron production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic approach provides strong complementary evidence to the pharmacology. The esiRNA knockdown efficiency is validated by qRT-PCR (C51, Figure 6B), and the specific requirement for \u03b32 is clearly demonstrated (C52, Figure 6C-H). The lack of effect from knocking down other subunits (C53) is appropriately interpreted with caution, acknowledging that incomplete knockdown or functional redundancy could explain these results. The conclusion that selamectin acts through \u03b32-containing GABAA receptors (C54) is well-supported by the combined pharmacological and genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Single-cell electrophysiological recordings of neural rosette cells and non-rosette cells reveal considerable heterogeneity in GABA and selamectin responsiveness. Among 77 neural rosette cells tested, 21% responded to GABA, 14.9% responded to both GABA and selamectin, and no cells responded only to selamectin. Similar heterogeneity was observed in non-rosette cells (37% GABA-responsive, 15.9% responsive to both). GABA-induced currents were sensitive to bicuculline, confirming GABAA receptor involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological characterization is rigorous with appropriate sample sizes (n=106-111 for rosettes, n=73-74 for non-rosettes) and well-documented passive membrane properties (C61-C66). The heterogeneity in responses (C67-C78) is clearly quantified and visualized (Figure 7D, H). The critical observation that no cells respond only to selamectin (C73, C78) supports the model that selamectin acts as a positive modulator of GABAA receptors rather than a direct agonist. The bicuculline sensitivity (C68) confirms GABAA receptor involvement, though incomplete blocking suggests additional receptor subtypes may be present. The conclusion about heterogeneity (C79) is well-supported and provides important context for understanding variable effects in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Mechanistic studies reveal that selamectin promotes neuronal differentiation by inducing cell cycle exit rather than altering proliferation rate. BrdU incorporation shows decreased proliferation in selamectin-treated cultures. qRT-PCR demonstrates increased expression of proneural genes (ascl1, neurod) and DA lineage genes (lmx1a, lmx1b, nurr1). Time-lapse clonal analysis shows no change in cell cycle length (DMSO: 25.61\u00b16.99 hr vs selamectin: 24\u00b16.53 hr) or clone size, but significant increases in NeuN+ and TH+ neurons and decreased Ki67+ progenitors within clones. Cell death (TUNEL) was unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic characterization is comprehensive and uses multiple complementary approaches. The BrdU data (C82) shows decreased proliferation, but the clonal analysis (C87-C89) clarifies that this is due to cell cycle exit rather than lengthened cell cycle, which is an important distinction. The increased expression of proneural and lineage-specific transcription factors (C83-C84) provides a molecular mechanism linking GABAA receptor activation to differentiation. The clonal fate analysis (C90-C92) provides the strongest evidence for increased cell cycle exit, showing more neurons and fewer Ki67+ cells within individual clones. The lack of change in cell death (C85-C86) rules out differential survival as a mechanism. The conclusion (C93) is well-supported by the integrated data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Selamectin's proneurogenic activity translates to human pluripotent stem cells. Treatment with selamectin (0.25-0.75 \u03bcM) significantly increased the percentage of total neurons (NeuN+), TH+ neurons, and 5-HT neurons in both H9 human embryonic stem cells and human induced pluripotent stem cells compared to DMSO controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translation to human PSCs is well-documented with appropriate dose-response testing (C94-C99, Figure 10). The effects are consistent across both hESCs and hiPSCs, and mirror the results observed in mESCs, including increases in multiple neuronal subtypes. This demonstrates that the mechanism is conserved between mouse and human systems, which is important for potential therapeutic applications. The statistical significance is clearly indicated for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In vivo validation in zebrafish embryos demonstrates that selamectin has proneurogenic activity during development. Treatment from 8 hpf to 22 hpf significantly increased HuC-GFP+ neurons in the midbrain cluster (p<0.001, n=20), and treatment from 8 hpf to 48 hpf significantly increased ventral forebrain TH+ dopaminergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo validation provides important evidence that selamectin's proneurogenic activity is not an artifact of cell culture conditions (C100-C102, Figure 11). The quantification is rigorous with appropriate sample sizes and statistical analysis (C101). The effects on both general neurogenesis (HuC-GFP+) and specific DA neurons (TH+) parallel the in vitro findings. The conclusion (C103) is well-supported, though it should be noted that the mechanism in zebrafish (e.g., specific GABAA receptor subtypes involved) was not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors propose an integrated mechanistic model: selamectin potentiates \u03b32-containing GABAA receptors in neural progenitors, causing Cl- outflow and depolarization due to elevated internal Cl- concentrations, leading to calcium influx and activation of proneural and lineage-specific transcription factors that promote cell cycle exit and terminal differentiation. This represents an evolutionarily conserved mechanism of activity-dependent neuronal fate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed model (C108-C110) integrates multiple lines of evidence: pharmacological and genetic identification of \u03b32-GABAA receptors, electrophysiological demonstration of depolarizing responses, increased transcription factor expression, and promotion of cell cycle exit. The model is consistent with established knowledge about high internal Cl- in progenitors causing depolarizing GABA responses (C55-C58) and the role of proneural transcription factors in promoting differentiation (C111). The heterogeneity observed in single-cell recordings (C106) provides a plausible explanation for context-dependent effects of GABA on neurogenesis (C107). The evolutionary conservation claim (C113) is supported by observations in both mESCs and Xenopus (C112), though direct mechanistic testing in other species is limited. The model is well-reasoned but remains partially speculative regarding the precise sequence of events from depolarization to transcription factor activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors contextualize their findings within the broader literature on GABA signaling in neurogenesis and discuss limitations and future directions. They note that the screen did not identify compounds specifically increasing DA neuron production, suggesting such compounds may be rare and require larger library screening. They speculate that identified compounds might have therapeutic potential for neurodevelopmental or neurodegenerative disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately places the work in context of prior literature on GABA's role in embryonic and adult neurogenesis (C114-C115). The acknowledgment that the screen did not identify DA-specific compounds (C116) is honest and appropriately interpreted as suggesting rarity of such compounds (C117) and need for larger screens (C118). The therapeutic speculation (C119) is appropriately tentative and represents reasonable future direction rather than overclaiming current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors provide background on mESC biology and neural differentiation, noting that mESCs can generate most cell types, neural induction requires FGF signaling and BMP/TGF-\u03b2 inhibition, and subsequent regional identity is regulated by morphogens and transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the field, appropriately cited to primary literature (C1-C4). They provide necessary context for the study but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors provide background on the relationship between invertebrate GluCl channels and vertebrate glycine receptors, noting phylogenetic orthology and that ivermectin can act as a glycine receptor agonist, with taurine activating glycine receptors during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately cited to prior literature (C33-C35) and provide important context for the pharmacological experiments testing whether selamectin acts through glycine receptors. This represents background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The authors cite prior literature suggesting avermectin can bind GABAA receptors in rat brain membranes and cerebellar neurons, and exhibits anticonvulsant action in mouse seizure models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately cited (C38-C39) and provide rationale for testing GABAA receptors as potential targets. This represents background knowledge that motivated the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

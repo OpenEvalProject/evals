@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors successfully adapted ribosome profiling to P. falciparum asexual blood stages, generating highly reproducible data across five developmental stages (rings, early trophozoites, late trophozoites, schizonts, and purified merozoites) with >92% unique mapping of 30 nt reads and high correlation between biological replicates (r = 0.94-0.99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C92 collectively demonstrate rigorous experimental design with appropriate controls, biological replicates, synchronization protocols, and computational methods. The high mapping efficiency (C23), reproducibility (C25), and strand specificity (C91-C92) validate the technical quality. The use of cycloheximide, monosome isolation, and parallel mRNA/ribosome profiling (C81-C83) follows established best practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C28",
+      "C29",
+      "C26",
+      "C27"
+    ],
+    "result": "Transcription and translation are tightly coupled during the P. falciparum IDC, with 77% of genes showing high correlation (r \u2265 0.7) between mRNA abundance and ribosome footprint density across all stages (r = 0.85-0.93), extending the transcriptional cascade to 3110 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C28, and C29 are well-supported by the data shown in Figures 2 and 3, with high Pearson correlations across all stages. The comparison with prior microarray data (C26) and extension of the transcriptome (C27) provide additional validation. The statistical measures are appropriate and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Only 8.3% (301 genes) of the transcriptome exhibits translational regulation, with 177 genes translationally up-regulated and 124 down-regulated. Translational efficiency distributions are comparable to other eukaryotes and remain stable properties of individual mRNAs across developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C32, and C33 are supported by the TE analysis in Figure 4, using a statistically justified threshold (\u00b12 SD). The comparison to other eukaryotes (C30) and observation that TE remains stable across stages (C33) are well-documented. The 10% figure in C20 is consistent with the 8.3% in C32 (301/3605 genes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Ribosome profiling identifies specific examples of translational regulation including pseudogenes (PfRh3, RESA2) producing truncated proteins, translationally silenced genes (IK1, EVP1), and validates that translationally down-regulated genes lack proteomic evidence while up-regulated genes show strong proteomic support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 provide multiple well-documented examples with supporting genomic sequencing data (C38), ribosome profiling patterns (C34, C40), and proteomic validation (C36, C41, C43, C44). The integration of ribosome profiling with genomic DNA sequencing for RESA2 (C38-C39) is particularly strong. The proteomic correlations (C43-C44) provide orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Translationally up-regulated genes are enriched for merozoite egress and invasion functions (73 genes, 41% of up-regulated genes), with peak mRNA in schizonts but peak translational efficiency in rings, and corresponding peptide detection in rings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe a coherent biological pattern supported by functional enrichment analysis (C46), temporal profiling (C47), and proteomic validation (C48). The observation that 70% of these genes have peak TE in rings despite peak mRNA in schizonts represents a novel finding with strong supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The HMM-based analysis defined 5' leaders and 3' UTRs for 3569 genes, revealing that 5' leaders are longer than 3' UTRs and that ribosome footprints are enriched in 5' leaders (9-23% of reads) compared to 3' UTRs (<1%), particularly in merozoites (23% in 5' leaders, 68% in CDS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by the HMM analysis and read distribution data in Figures 6-7. The systematic approach to defining UTR boundaries and the quantification of ribosome distribution are methodologically sound. The merozoite-specific enrichment in 5' leaders (C53, C55) is a notable finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Despite identifying 36,086 predicted uORFs, half of 5' leader ribosome density does not overlap with uORFs, and no significant correlation exists between uORF features and translational efficiency. Only two clear exceptions (var2csa and PFE1550w) show uORF-mediated translational repression, and 5' ribosome density can occur on leaders completely devoid of AUGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 systematically demonstrate that uORFs do not explain 5' ribosome density in P. falciparum, contrary to expectations from other organisms. The lack of correlation (C58), identification of specific exceptions (C59-C62), and examples without AUGs (C63) are well-documented in Figure 7 and supplements. This represents a significant mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "5' ribosome density (5'RD) is highest in rings and merozoites, moderately correlates with translational efficiency (r = 0.49-0.51), is enriched on translationally up-regulated genes and depleted on down-regulated genes, with 43% of up-regulated genes in rings showing high 5'RD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 describe the relationship between 5'RD and TE with appropriate statistical measures shown in Figure 8. The moderate correlation (C67) and enrichment patterns (C66, C68) are clearly documented. The authors appropriately note that correlation is moderate and exceptions exist, avoiding overinterpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "3' UTR ribosome occupancy is rare, with only 19 genes showing significant 3' UTR density. Of these, 14 show putative stop codon read-through with ribosome-like footprint distributions, while 3 genes show divergent footprint distributions suggesting non-ribosomal RNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by systematic analysis and footprint size distribution comparisons in Figure 9. The distinction between ribosome-derived and potentially non-ribosomal footprints (C72) based on size distributions is methodologically appropriate and demonstrates careful interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C93",
+      "C94"
+    ],
+    "result": "84 antisense transcripts were detected using strand-specific sequencing, with 63% emanating from neighboring gene UTRs. Antisense transcripts show no effect on cognate sense transcript abundance or translational efficiency, validated by RT-PCR for pfs16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76, C93-C94 are supported by the strand-specific library preparation (C91-C92), systematic analysis, and RT-PCR validation (C93). The finding that most antisense reads derive from neighboring UTRs (C75) and show no regulatory effect (C76) is clearly documented, though the authors appropriately note potential single-cell heterogeneity limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes prior knowledge about P. falciparum transcriptional cascades, post-transcriptional regulation mechanisms, and limitations of previous approaches including polysome profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 are background claims supported by appropriate citations to prior literature. These establish the context and rationale for the current study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  }
+]

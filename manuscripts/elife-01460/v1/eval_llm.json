@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C95",
+      "C96"
+    ],
+    "result": "BRAF-MEK-ERK signaling is necessary and sufficient for miR-146a upregulation. Deep sequencing identified miR-146a as the most upregulated miRNA by BRAFV600E. MEK inhibition reduces miR-146a expression, while constitutively active MEK increases it. BRAF and NRAS mutant melanoma cell lines show higher miR-146a levels compared to wild-type lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C38 provide converging evidence from deep sequencing, qRT-PCR, and pharmacological inhibition experiments demonstrating that BRAF-MEK-ERK signaling regulates miR-146a. The necessity is shown by MEK inhibitor experiments (C33), and sufficiency by constitutively active MEK (C35). Multiple cell types and experimental approaches support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C97",
+      "C98"
+    ],
+    "result": "MYC mediates BRAF-MEK-ERK-induced miR-146a transcription. The miR-146a promoter contains a MYC binding site. BRAFV600E increases MYC expression and phosphorylation, leading to MYC binding to the miR-146a promoter. MEK inhibition blocks this binding, and MYC knockdown reduces miR-146a levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 demonstrate the mechanistic link through bioinformatics prediction (C40), ChIP assays showing MYC binding (C42), and functional validation via shRNA knockdown (C44-C45). The MEK inhibitor experiments (C43) establish the pathway dependency. The evidence is internally consistent and uses multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C58"
+    ],
+    "result": "miR-146a promotes melanoma cell proliferation, colony formation, and tumor growth in vitro and in vivo. Overexpression increases these phenotypes while knockdown decreases them. The effects are dose-dependent and observed across multiple melanoma cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C48-C53 provide extensive functional validation through colony formation assays, soft-agar assays, and xenograft experiments. Both gain-of-function (overexpression) and loss-of-function (miRZip, antagomiR) approaches yield consistent results. The dose-dependent effect (C53) strengthens the causal relationship. Multiple cell lines were tested, enhancing generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C47",
+      "C112",
+      "C113"
+    ],
+    "result": "The pre-miR-146a/G variant (rs2910164) has greater oncogenic activity than pre-miR-146a/C due to more efficient processing yielding higher mature miR-146a levels. This results in stronger Notch activation and enhanced oncogenic phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C9-C10 demonstrate that pre-miR-146a/G produces more mature miR-146a and has greater oncogenic effects. The mechanism (more efficient processing, C113) is consistent with prior literature (C8). Multiple functional assays (colony formation, soft-agar, tumor growth, Notch reporter) show consistent differences between the two variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C70",
+      "C71"
+    ],
+    "result": "miR-146a directly targets NUMB mRNA in the coding region (not 3'-UTR) to downregulate NUMB expression and activate Notch signaling. TargetScan identified NUMB among 20 potential targets. Luciferase assays confirmed targeting of the coding region but not the 3'-UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 provide direct evidence for NUMB targeting through sequence analysis, luciferase reporter assays, and mutant rescue experiments. The specificity for the coding region (C63-C65) is well-demonstrated. The functional consequence (Notch activation, C71) is shown through reporter assays and target gene expression. The evidence is mechanistically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C105"
+    ],
+    "result": "NUMB downregulation and Notch activation are necessary for miR-146a's oncogenic effects. NUMB depletion phenocopies miR-146a overexpression. Expression of miR-146a-resistant NUMB (NUMB-MUT) blocks miR-146a's oncogenic effects. Simultaneous miR-146a inhibition and NUMB knockdown restores proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 provide strong mechanistic validation through multiple approaches: NUMB knockdown phenocopying miR-146a (C72-C74), ICN overexpression mimicking the effect (C75-C77), and rescue experiments with NUMB-MUT (C78-C80). The epistasis experiment (C81) is particularly compelling. The logic is sound and the experiments are well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C55"
+    ],
+    "result": "miR-146a is required for NRASQ61K-mediated transformation of MEL-ST melanocytes. While BRAFV600E alone is insufficient for transformation, NRASQ61K can transform these cells, and miR-146a inhibition substantially reduces this transforming ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 demonstrate that miR-146a is functionally important for NRAS-driven transformation through soft-agar and xenograft assays. Claim C55 provides important context showing BRAFV600E alone is insufficient. The experiments are well-controlled and consistent with the overall model. However, the mechanism of why NRAS but not BRAF transforms MEL-ST cells is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C114"
+    ],
+    "result": "During melanoma progression, pre-miR-146a/G becomes enriched relative to pre-miR-146a/C through C-to-G somatic mutation. Analysis of matched patient samples shows this enrichment from nevi to primary melanoma (4/10 cases) and from primary to metastatic melanoma (8/15 cases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 provide direct sequencing evidence from matched patient samples showing allelic shifts during progression. The frequencies (C89-C91) are substantial and the matched sample design is appropriate. However, the sequencing methodology (Sanger sequencing with 0.001-1% error rate) and the distinction between somatic mutation versus selection of pre-existing germline heterozygosity could be better clarified. The claim of somatic mutation (C12, C93) is inferred rather than directly proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C117"
+    ],
+    "result": "Combined inhibition of MEK (U0216) and Notch (DAPT) synergistically inhibits melanoma cell proliferation more effectively than either drug alone, suggesting a potential therapeutic strategy for BRAF/NRAS mutant melanomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 demonstrate synergistic effects of combined pathway inhibition through proliferation assays and pathway-specific readouts (ERK phosphorylation, Notch target genes). However, C117 is speculative about clinical application. The in vitro data support the concept, but lack of in vivo validation, dose-response analysis, and consideration of drug resistance mechanisms limit the strength of the therapeutic claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C120"
+    ],
+    "result": "Background claims about melanoma genetics and BRAF/NRAS mutations. These establish that BRAF and NRAS mutations occur in 60-70% of melanomas and activate downstream signaling pathways including MAPK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C18, C120 are well-established facts from the literature, properly cited. These provide appropriate context for the study. The slight discrepancy between 60% (C120) and 70% (C1, C14) likely reflects different studies/populations and is not problematic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C118"
+    ],
+    "result": "Background claims about Notch signaling in melanoma. Notch has essential roles in melanocyte biology, is reactivated in melanomas, and functions as an oncogene. NUMB is a known Notch repressor that is decreased in some cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26, C106-C110, C118 are properly cited from the literature and provide appropriate background for understanding the miR-146a/NUMB/Notch axis. These establish the biological plausibility of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C111"
+    ],
+    "result": "Background claims about miRNAs in cancer. miRNAs regulate mRNA stability/translation, can function as oncogenes or tumor suppressors, and are frequently dysregulated in cancer. MYC regulates multiple miRNAs including miR-17-92. miR-146a has context-dependent oncogenic or tumor suppressor functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C99-C104, C111 provide appropriate background on miRNA biology and precedent for the findings. All claims are properly cited. C104 specifically provides precedent for miR-146a targeting NUMB in a different cell type, strengthening the plausibility of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The findings are consistent with previous studies showing enrichment of pre-miR-146a/G and increased miR-146a expression during melanoma progression. Both MAPK and Notch pathways are pharmacologically targetable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 appropriately contextualize the findings within existing literature. C115 provides independent validation of the patient sample findings. C116 establishes the therapeutic relevance of the pathways studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Overall conclusion that miR-146a has a critical role in the initiation and progression of BRAF/NRAS-positive melanomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is the main conclusion, well-supported by the collective evidence from all experimental results. The term 'critical role' is justified by the functional experiments showing requirement for transformation and tumor growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "MEL-ST cells are immortalized melanocytes with basal BRAF-MEK-ERK signaling that can be transformed by single oncogenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 describes the cell model used, properly cited. This is important methodological context for interpreting the transformation experiments.",
+    "result_type": "MINOR"
+  }
+]

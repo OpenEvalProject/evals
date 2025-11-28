@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C60"
+    ],
+    "result": "Basket cell-Purkinje cell synapses exhibit fast synaptic transmission with short latency (1.20 \u00b1 0.03 ms at ~22\u00b0C and 0.47 \u00b1 0.02 ms at ~34\u00b0C) and high temporal precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C60 provide direct experimental measurements of synaptic latency at different temperatures with appropriate sample sizes (24 and 5 pairs). The measurements are consistent with fast synaptic transmission and are supported by data shown in Figure 1C,D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Transmitter release at basket cell-Purkinje cell synapses is selectively mediated by P/Q-type Ca2+ channels, as demonstrated by complete blockade with \u03c9-agatoxin IVa (1 \u00b5M) but no effect of \u03c9-conotoxin GVIa (1 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are well-supported by pharmacological experiments shown in Figure 1E-H. The selective blockade by P/Q-type channel blocker and lack of effect of N-type blocker provide clear evidence for the channel type mediating release. Appropriate controls and sample sizes are reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The amount of transmitter release at basket cell-Purkinje cell synapses is highly cooperative and steeply dependent on [Ca2+]o, with a power coefficient of 3.02 in the low-concentration limit and peak release rate changing by a factor of 34.4 when [Ca2+]o was varied from 0.7-4 mM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by systematic measurements across multiple [Ca2+]o conditions (Figure 2A,B) with appropriate sample sizes (5-11 pairs per condition). The power coefficient calculation and quantitative measurements are clearly reported and consistent with high cooperativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C36"
+    ],
+    "result": "The time course of release at basket cell-Purkinje cell synapses is independent of extracellular Ca2+ concentration, with half-duration remaining constant (p = 0.56) across [Ca2+]o ranging from 0.7-4 mM at ~22\u00b0C and at ~12\u00b0C (p = 0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C16, C17, and C36 collectively demonstrate [Ca2+]o independence of release kinetics through measurements at multiple temperatures and [Ca2+]o conditions. Statistical tests show no significant differences (p = 0.56 and p = 0.93), and the finding is replicated at different temperatures, strengthening the conclusion. Data are shown in Figure 2D,E and Figure 2\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C69"
+    ],
+    "result": "Computational modeling reveals that the [Ca2+]o dependence of the time course of release is substantially more prominent in loose (200 nm) than tight (20 nm) coupling regimes across various conditions, with coupling distance playing a key role in determining the shape of the TCR-peak release rate relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22, C24, and C69 are supported by comprehensive computational modeling shown in Figure 3 and Figure 3\u2014figure supplement 1. The model systematically explores different parameters (sensor rates, bouton diameters, buffer properties, coupling configurations) and consistently shows that coupling distance is the critical determinant of [Ca2+]o dependence. The modeling approach is well-described and uses established models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The fast Ca2+ chelator BAPTA is ~27-fold more effective than the slow chelator EGTA at suppressing transmitter release, with IC50 values of 0.6 mM for BAPTA and 16.0 mM for EGTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are supported by systematic concentration-effect experiments with appropriate sample sizes (14 pairs for BAPTA, 11 pairs for EGTA). The differential effectiveness of fast vs. slow chelators is clearly demonstrated in Figure 4A-E, and the IC50 values are derived from proper curve fitting. The experimental design includes recovery controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The coupling distance between Ca2+ channels and release sensors at basket cell-Purkinje cell synapses is 10-20 nm (11.4 nm for single-channel model, 13.9 nm for half-normal distribution, 10.1 nm for skewed-normal distribution), with minimal statistical errors (1.2 nm) and small systematic errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C35 are supported by fitting chelator concentration-effect data with linearized diffusion models. Multiple model variants were tested, bootstrap analysis assessed statistical errors, and sensitivity analysis evaluated systematic errors (Figure 4F-H). The convergence of estimates across different models and robustness to parameter variations strengthen the conclusion. However, the linearized model is an approximation that may introduce some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43"
+    ],
+    "result": "Tight coupling between Ca2+ channels and release sensors provides a mechanistic explanation for the [Ca2+]o independence of the time course of release, representing a key functional benefit of nanodomain coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42, and C43 integrate experimental findings (chelator experiments, temperature manipulations) with computational modeling to establish the mechanistic link between tight coupling and [Ca2+]o independence. The model predictions were tested experimentally (temperature effects), and the convergence of multiple lines of evidence supports this conclusion. This represents the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C70"
+    ],
+    "result": "The model prediction that slowing sensor rates should enhance [Ca2+]o dependence in microdomain but not nanodomain coupling was tested by lowering temperature, which had large effects on absolute TCR half-duration but did not change its [Ca2+]o independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, and C70 describe a prediction-testing cycle that strengthens the mechanistic interpretation. The model prediction (C40) is clearly stated, the experimental test (temperature manipulation) is appropriate, and the results (C41) support the nanodomain coupling hypothesis. Data are shown in Figure 2\u2014figure supplement 1 and Figure 3D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The [Ca2+]o independence of the time course of release is a general phenomenon characteristic for synaptic transmission in both peripheral and central nervous systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 extrapolates from findings at BC-PC synapses and previous work at the neuromuscular junction to make a broad generalization. While the current data support [Ca2+]o independence at BC-PC synapses and citations support it at the neuromuscular junction, the claim that this is a 'general phenomenon' across all synapses is not directly tested and may be overstated given that C5 notes this is 'less well established at central synapses.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Tight coupling is primarily used at synapses designed for fast, reliable transmission, and nanodomain coupling at BC-PC synapses may ensure constant timing of fast feedforward inhibition under physiological conditions where [Ca2+]o fluctuates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C44-C47 integrate the current findings with prior literature to propose functional significance. The hypothesis about coupling regimes (C38) is supported by multiple citations, BC-PC synapse properties (C39, C44) are well-documented, and physiological [Ca2+]o fluctuations (C45, C46) are established. The functional implication (C47) is a reasonable inference from the data, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Postsynaptic factors (receptor desensitization, saturation, GABA spillover) do not significantly affect TCR measurements, as demonstrated by similar half-duration in the presence (0.51 \u00b1 0.04 ms) vs. absence (0.47 \u00b1 0.02 ms) of TPMPA at 4 mM [Ca2+]o (p = 0.38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 addresses an important control experiment shown in Figure 2\u2014figure supplement 2. The use of low-affinity antagonist TPMPA to test for postsynaptic confounds is appropriate, and the lack of significant difference (p = 0.38) supports the validity of the TCR measurements. Sample sizes are adequate (6 pairs with TPMPA).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prior work established that transmitter release is Ca2+-dependent, the time course of release at the neuromuscular junction is [Ca2+]o-independent, tight coupling has been observed at several central synapses, and various explanations for [Ca2+]o independence have been proposed, but the role of tight coupling had not been directly examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C62-C68 accurately summarize prior literature with appropriate citations. These claims establish the context and rationale for the current study. The citations appear appropriate and the characterization of the literature gap (C66) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Experimental methods included paired recordings from 14-16 day old mice, with postsynaptic series resistance of 3.8 \u00b1 0.1 M\u03a9, appropriate quality control criteria, and recordings at multiple temperatures (11-13\u00b0C, 21-23\u00b0C, 32-35\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C107 describe methodological details that are clearly stated in the Materials and methods section. The experimental design includes appropriate controls, quality criteria (series resistance changes <2 M\u03a9, no rundown), and ethical compliance. The methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Computational modeling used established parameters for Ca2+ chelators, buffers, and channels, solved reaction-diffusion equations numerically, and adapted a previously published release sensor model from the calyx of Held with modifications to account for faster kinetics at BC-PC synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 and C83-C86, C113-C120 describe modeling parameters and approaches. Most parameters are well-constrained by literature (with appropriate citations) or reasonable assumptions. The modifications to the calyx of Held model (2-fold acceleration of rates, C86) are justified but represent an assumption that could affect quantitative predictions. The numerical methods are adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C61",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Data analysis methods included deconvolution to determine time course of release, appropriate statistical tests (Wilcoxon tests, Kruskal-Wallis), and filtering corrections, with quantal content of 10.4 \u00b1 1.8 at 2 mM [Ca2+]o.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C61, and C108-C112 describe analysis methods that are standard and appropriate for the data types. The deconvolution approach is well-established (with citations), statistical tests are appropriate for the data, and filtering corrections are properly applied. The quantal content measurement provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C87",
+      "C88"
+    ],
+    "result": "Additional experimental and analytical details include morphological consistency across 29 labeled cells, minimal IPSC rundown over 40 min, Hill equation fit parameters, bootstrap confidence intervals, and distributed sensor modeling with CV = 0.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 and C87-C88 provide supplementary details that support the robustness of the main findings. The morphological consistency (C71), recording stability (C72), and bootstrap analysis (C81-C82) strengthen confidence in the results. These are appropriate quality control and validation measures.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1405 @@
+{
+  "submission": {
+    "id": "4120bbea-3bb3-4424-86fe-2cd8f4780e60",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:00:51.900951Z",
+    "updated_at": "2025-11-28T22:00:51.900951Z"
+  },
+  "content": [
+    {
+      "id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "submission_id": "4120bbea-3bb3-4424-86fe-2cd8f4780e60",
+      "content_type": "manuscript",
+      "content_text": "# Registered report: Melanoma genome sequencing reveals frequent PREX2 mutations\n\n## Authors\n\n- Denise Chroscinski<sup>1</sup>\n- Darryl Sampey<sup>2</sup>\n- Alex Hewitt<sup>3</sup>\n\n### Affiliations\n\n1. Noble Life Sciences Gaithersburg United States\n2. BioFactura Frederick United States\n3. Department of Clinical Genetics University of Melbourne Melbourne Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012. This Registered Report describes the proposed replication plan of key experiments from \u2018Melanoma genome sequencing reveals frequent PREX2 mutations\u2019 by Berger and colleagues, published in Nature in 2012 (Berger et al., 2012). The key experiments that will be replicated are those reported in Figure 3B and Supplementary Figure S6. In these experiments, Berger and colleagues show that somatic PREX2 mutations identified through whole-genome sequencing of human melanoma can contribute to enhanced lethality of tumor xenografts in nude mice (Figure 3B, S6B, and S6C; Berger et al., 2012). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.\n\n## Introduction\n\nMelanoma is a highly aggressive tumor with poor prognosis in the metastatic stage. Based on their association with UV-induced DNA damage, melanomas are often hypermutated and considerable efforts have been made to sequence such tumors in order to better understand their molecular basis. Many well-known oncogenes are frequently involved in melanoma pathogenesis, including BRAF and NRAS, and significant work has been done to develop targeted kinase inhibitors against the protein products of these genes (Kunz, 2014). However, even with treatment, melanoma has an extremely high rate of recurrence; thus, there is great interest in identifying novel candidate genes that promote oncogenesis in melanoma, thereby providing additional therapeutic targets.\n\nOne such candidate is Phosphatidylinositol-3,4,5-trisphosphate RAC Exchanger 2 (PREX2), a 183-kDa protein known to inhibit PTEN phosphatase activity, stimulate PI3K signaling, and suspected to regulate the small GTPase RAC1 (Fine et al., 2009; Cerami et al., 2012). Using whole-genome sequencing of 25 metastatic tumors, Berger and colleagues identified PREX2 as being a highly mutated gene in melanoma. Apart from observing a large subset of BRAF and NRAS mutations, the authors found PREX2 to have a mutation frequency of approximately 14%, with 13 detected non-synonymous point mutations, including four nonsense truncation mutations (Berger et al., 2012). In order to demonstrate the biological relevance of specific PREX2 mutations, the authors created transformed melanocyte cell lines that stably expressed various mutated and truncated forms of PREX2. By using these cell lines to create tumor xenografts in nude mice, the authors showed that ectopic expression of mutant PREX2 accelerated tumor formation.\n\nBerger and colleagues chose to analyze six representative PREX2 mutations derived from their whole-genome sequencing screen. These variants included three truncation variants and three non-synonymous point mutations predicted to carry functional impact. These mutant PREX2 constructs were packaged into lentiviruses and transduced into TERT-immortalized human melanocytes engineered to express NRASG12D. Ectopic expression of various mutant PREX2 isoforms was confirmed by Western blot (Figure 6A). These experiments will be replicated in Protocols 1 and 2. Berger and colleagues next transplanted the melanocytic lines into immunodeficient mice alongside control melanocytes expressing either wild-type PREX2 or GFP (green fluorescent protein). They found that overexpression of all three truncated variants, as well as the point mutation G844D, significantly accelerated tumor growth in vivo, thus affirming the biological relevance of their genomic data (Figure 3B, S6B, and S6C). These key experiments, which support the hypothesis that mutant PREX2 promotes oncogenesis in melanoma, will be replicated in Protocol 3.\n\nThere is some debate over which mutations observed in various melanoma samples are biologically relevant, including PREX2. Potentially, mutational heterogeneity across tumor samples may contribute to false-positive findings (Lawrence et al., 2013). Various genome-wide screens have yielded conflicting results about which genes are frequently mutated in melanoma. Recently, mutated PREX2 was identified in both the primary tumor and in metastatic tumor tissue from a genomic analysis of a single melanoma patient (Turajlic et al., 2012). However, five studies failed to identify PREX2 in their genome-wide melanoma screens, including a meta-analysis study that analyzed hundreds of published datasets (Hodis et al., 2012; Krauthammer et al., 2012; Ni et al., 2013; Marzese et al., 2014; Xia et al., 2014). To date, there have been no replication attempts assessing the biological significance of PREX2 mutant isoforms in melanoma.\n\n## Materials and methods\n\nUnless otherwise noted, all protocol information was derived from the original paper, references from the original paper, or information obtained directly from the authors.\n\n### Protocol 1: generation of NRASG12D melanocyte cells expressing various mutated forms of PREX2\n\nThis protocol describes the generation of pMEL/hTERT/CDK4(R24C)/p53DD/NRASG12D (NRASG12D) melanocytes that stably express various mutated forms of PREX2. This protocol details the production of lentivirus for each mutated PREX2 isoform, as well as the viral transduction of melanocytes, and selection for stable-expressing lines using antibiotic resistance.\n\n#### Sampling\n\nOutline of experimental endpoints:At the end of this protocol, we will have generated NRASG12D melanocytes overexpressing the following protein products:GFP vector (control)WT PREX2 (control)PREX2 Q1430* (Truncation mutation)PREX2 G844D (Substitution mutation)\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GenElute Endotoxin-freePlasmid Maxiprep Kit</td>\n      <td>Reagent</td>\n      <td>Sigma</td>\n      <td>PLEX15-1KT</td>\n      <td>This kit replaces the Qiagen Endo-free Maxiprep kit used by the original authors</td>\n    </tr>\n    <tr>\n      <td>pMD2-Gag/Pol</td>\n      <td>Viral packaging vector</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>Reagent being provided by original authors</td>\n    </tr>\n    <tr>\n      <td>pMD2 VSVG</td>\n      <td>Viral packaging vector</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>Reagent being provided by original authors</td>\n    </tr>\n    <tr>\n      <td>RSV REV</td>\n      <td>Viral packaging vector</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>Reagent being provided by original authors</td>\n    </tr>\n    <tr>\n      <td>GFP</td>\n      <td>Expression construct</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>Reagent being provided by original authors</td>\n    </tr>\n    <tr>\n      <td>Wild-type PREX2</td>\n      <td>Expression construct</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>Reagent being provided by original authors</td>\n    </tr>\n    <tr>\n      <td>PREX2 Q1430*</td>\n      <td>Expression construct</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>Reagent being provided by original authors</td>\n    </tr>\n    <tr>\n      <td>PREX2 G844D</td>\n      <td>Expression construct</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>Reagent being provided by original authors</td>\n    </tr>\n    <tr>\n      <td>HEK293T cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-3216</td>\n      <td>Replaces original cells from Life Technologies</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes</td>\n      <td>Cell line</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>Reagent being provided by original authors</td>\n    </tr>\n    <tr>\n      <td>Sequencing primers</td>\n      <td>Oligos</td>\n      <td colspan=\"3\">Sequences provided by original authors; specific brand information will be left up to the discretion of the replicating lab and recorded later</td>\n    </tr>\n    <tr>\n      <td>Sequencing reagents</td>\n      <td>Reagent</td>\n      <td colspan=\"3\">Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>\n    </tr>\n    <tr>\n      <td>10 cm tissue culture dishes (plastic)</td>\n      <td>Labware</td>\n      <td>Corning (Sigma-Aldrich)</td>\n      <td>CLS430167</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>10 cm tissue culture dishes (glass)</td>\n      <td>Labware</td>\n      <td>Corning (Sigma-Aldrich)</td>\n      <td>CLS70165101</td>\n      <td>Additional reagent not used in original study</td>\n    </tr>\n    <tr>\n      <td>Fetal bovine serum (FBS)</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>F0392</td>\n      <td>Replaces Invitrogen cat. no. 26400-036 used in original study</td>\n    </tr>\n    <tr>\n      <td>Dulbecco's Modified Eagle's Medium (DMEM) \u2013 high glucose</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>D6429</td>\n      <td>Replaces Invitrogen cat. no. 11995-065 used in original study</td>\n    </tr>\n    <tr>\n      <td>Lipofectamine 2000</td>\n      <td>Transfection reagent</td>\n      <td>Life Technologies</td>\n      <td>52887</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>OptiMEM-1 reduced serum medium</td>\n      <td>Cell culture reagent</td>\n      <td>Life Technologies</td>\n      <td>31985-070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ham's F10 medium</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>N6908</td>\n      <td>Replaces Invitrogen cat. no. 11550-043 used in original study</td>\n    </tr>\n    <tr>\n      <td>Fetal bovine serum (FBS); heat inactivated</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>F4135</td>\n      <td>Replaces Invitrogen cat. no. 10082-147 used in original study</td>\n    </tr>\n    <tr>\n      <td>Penicillin\u2013Streptomycin solution (100x) stabilized</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>P4333</td>\n      <td>Replaces Invitrogen cat. no. 15140-122 used in original study</td>\n    </tr>\n    <tr>\n      <td>6 cm tissue culture dishes</td>\n      <td>Labware</td>\n      <td>Corning (Sigma-Aldrich)</td>\n      <td>CLS430166</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>Hexadimethrine bromide (Polybrene)</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>107689</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>Blasticidin S, hydrochloride</td>\n      <td>Antibiotic</td>\n      <td>EMD-Millipore</td>\n      <td>203350</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>TRI reagent</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>T9424</td>\n      <td>Additional reagent not used in original study</td>\n    </tr>\n    <tr>\n      <td>SuperScript III First-Strand Synthesis System</td>\n      <td>cDNA synthesis</td>\n      <td>Life Technologies</td>\n      <td>18080-051</td>\n      <td>Additional reagent not used in original study</td>\n    </tr>\n    <tr>\n      <td>Nuclease-Free Water (not DEPC treated)</td>\n      <td>Reagent</td>\n      <td>Life Technologies</td>\n      <td>AM9930</td>\n      <td>Additional reagent not used in original study</td>\n    </tr>\n    <tr>\n      <td>RNase AWAY (spray)</td>\n      <td>Reagent</td>\n      <td>Fisher</td>\n      <td>21-402-178</td>\n      <td>Additional reagent not used in original study</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\nNote: all cell lines will be sent for STR profiling and mycoplasma testing.Grow and prepare endotoxin-free plasmid constructs according to the manufacturer's protocol for the GenElute Endotoxin-free Plasmid Maxiprep Kit.A. Viral packaging vectors:i. pMD2-Gag/Pol (\u223c25 \u00b5g DNA needed for production of 4 viruses)ii. pMD2 VSVG (\u223c15 \u00b5g DNA needed for production of 4 viruses)iii. RSV REV (\u223c17 \u00b5g DNA needed for production of 4 viruses)B. PREX2 expression vectors:i. GFP vector (\u223c15 \u00b5g DNA needed for virus production)ii. WT PREX2 (\u223c15 \u00b5g DNA needed for virus production)iii. PREX2 Q1430* (\u223c15 \u00b5g DNA needed for virus production)iv. PREX2 G844D (\u223c15 \u00b5g DNA needed for virus production)Sequence PREX2 plasmids to confirm identity and run on gel to confirm vector integrity. Use the following sequencing primers:A. CMV forward: CGCAAATGGGCGGTAGGCGTGB. prex2a-1 forward: ACTGAAATGCTAATGTGTGGC. prex2a-2 forward: CCTTTTTACTCCAGTGATAAGAGATD. prex2a-3 forward: AGTACAGGCGGCCAACGAAGE. prex2a-4 forward: ATCACAACCATGGCGGCCCCTTF. prex2a-5 forward: GTAGGCTACTCCTGGCTCTTG. prex2a-6 forward: AGCTGCCTGTGCAAACACAGH. prex2a-7 reverse: GACTTCCTTCTGCTTGATATI. prex2a-8 reverse: TGCTGGTGAAGGAGGCGATGJ. prex2a-9 reverse: AGAGAATTTAGGCTGGTACAK. prex2a-10 reverse: ATCCCTTTTCTACCAACTTTL. prex2a-11 reverse: CTTGCTCCATTCCTAATTTTM. prex2a-12 reverse: CCTTCTCATGGTTACTACAATATTCN. V5 reverse: ACCGAGGAGAGGGTTAGGGATUsing the same primers as above, sequence the endogenous PREX2 gene from cDNA derived from untransfected pMEL/hTERT/CDK4(R24C)/p53DD/NRASG12D melanocytes.A. Melanocytes should be maintained in Ham's F10 medium supplemented with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37\u00b0C with 5% CO2.B. Isolate total RNA using TRI reagent, and generate cDNA as described in the manufacturer's protocol for SuperScript III cDNA synthesis kit, using OligoDT primers to enrich for mRNA.C. Use gene-specific primers to sequence the length of the PREX2 gene to determine endogenous mutational status.On Day 1 of viral production, plate 6 \u00d7 106 HEK293T cells in a 10 cm plate. Plate one 10-cm plate for each virus you wish to package (total of 4 plates needed).A. HEK293T cells should be maintained in DMEM supplemented with 10% FBS at 37\u00b0C with 5% CO2.B. Note: high titer lentivirus is best packaged in early passage, healthy 293T cells. Avoid continuous growth to/from confluence. Routinely split 293T when culture approaches 80% confluence.On Day 2, create the transfection master mix: (Tube #1)A. Create a master mix (for the number of transfections being conducted) of Lipofectamine and OptiMEM.i. Each transfection will require 30 \u00b5l of Lipofectamine diluted in 720 \u00b5l of OptiMEM. Allow mixture to incubate for 5 min at RT.For each virus, assemble DNA, packaging vectors, and OptiMEM in a 1.5 ml centrifuge tube (Tube #2)A. Plasmid DNA = 10.0 \u00b5gB. Packaging vectori. pMD2 Gag/Pol = 5.0 \u00b5gii. pRESREV = 2.5 \u00b5giii. pMD2 VSVG = 3.0 \u00b5gC. Bring volume to 750 \u00b5l with OptiMEM.Combine Tube #1 (Lipofectamine/OptiMEM) with Tube #2 (DNA/packaging vector/OptiMEM). After combining, mix by pipetting and allow the mixture to incubate for 20 min at RT.A. While incubating, \u2018gently\u2019 aspirate growth medium from HEK293T cells and pipette 8 ml of OptiMEM to each plate.B. Add 1.5 ml of transfection mixture to the plate (pipetting directly into the media) and place into the 37\u00b0C incubator.C. Allow minimum 6\u20138 hr for transfection. After transfection completion, remove OptiMEM media and refresh HEK293T plates with 10 ml of growth media (again pipetting gently onto the side of the plate).On Day 4 (48 hr post-transfection) and 5 (72 hr post-transfection), collect virus by removing medium and filtering through a 0.45-\u00b5m filter into a 50 ml conical tube. Pool fractions from both the days. After the two collections, there is a total of 20 ml of virus. Immediately after collection/filtration (for both time points), put the virus on ice and then transfer to 4\u00b0C for short-term or \u221280\u00b0C for long-term storage.Infect pMEL/hTERT/CDK4(R24C)/p53DD/NRASG12D melanocytes with virus to generate stable cells lines.A. Day 1: seed NRASG12D cells at 50% confluence in 6 cm plates.i. Melanocytes should be maintained in Ham's F10 medium supplemented with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37\u00b0C with 5% CO2.B. Day 2: remove media and replace with 3 ml of viral supernatant containing 8 \u00b5g/ml polybrene.i. Incubate cells for 24 hr.C. Day 3: remove viral media and replace with fresh growth media.D. Day 4: replace growth media with fresh media containing 5 \u00b5g/ml Blastocidin.E. Days 4\u20139: select cells for \u223c5 days, confirming that a plate of non-transduced NRASG12D cells is negatively selected in parallel.F. Day 9: remove Blastocidin media and expand cells into fresh growth media. Collect entire population of transduced cells for further analysis.\n\n#### Deliverables\n\nData to be collected:Sequencing information and gel-verification of PREX2 plasmids cloned into the pLenti6.3/V5 vectorMycoplasma testing of NRASG12D melanocytesSTR profile of NRASG12D melanocytesSample delivered for further analysis:NRASG12D melanocytes stably expressing PREX2 mutant isoforms for further analysis (Protocols 2 and 3).\n\n#### Confirmatory analysis plan\n\nStatistical analysis of the Replication Data:Not applicable.\n\n#### Known differences from the original study\n\nThis replication is only generating stable melanocyte lines for GFP, wild-type PREX2, PREX2 Q1430*, and PREX2 G844D. The original study also included several other PREX2 mutants, including PREX2 K278*, E824*, P948S, and G106E. This replication will include the additional step of sequencing the endogenous PREX2 gene in the NRASG12D melanocyte cell line to determine its mutational status. All known differences in reagents and supplies are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.\n\n#### Provisions for quality control\n\nThe cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure there is no contamination. PREX2 expression constructs obtained from the original authors will be verified for sequence identity and DNA integrity. The endogenous mutational status of PREX2 in NRASG12D melanocytes will be assessed. All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/jvpnw/).\n\n### Protocol 2: confirming ectopic expression of PREX2 mutant isoforms by Western blot\n\nThis protocol investigates the expression levels of mutant PREX2 isoforms in virally transduced NRASG12D melanocytes that were generated in Protocol 1. This protocol uses an anti-V5 antibody to recognize tagged forms of wild-type and mutant PREX2 (as well as the GFP control), thus verifying the successful lentiviral transduction of expression constructs and providing information about ectopic protein expression levels (as was demonstrated in Figure 6A). Membranes will also be probed with anti-\u03b1-tubulin to provide normalized values of relative protein expression. Three original cell lines produced by the original authors will also be included so that protein expression levels can be compared between the two studies.\n\n#### Sampling\n\nThe original data presented is qualitative and this prevents power calculations being performed a priori to determine sample size (number of biological replicates). Instead, we will be including three cell lines originally derived by the authors and analyzing these cell lines in parallel to the newly derived cell lines from Protocol 1.Three separate lysates will be prepared from each cell line:GFP vector stable NRASG12D cells (control)Previously generated PREX2 Q1430* stable NRASG12D cells (control from original study authors)Previously generated PREX2 G844D stable NRASG12D cells (control from original study authors)Previously generated WT PREX2 stable NRASG12D cells (control from original study authors)PREX2 WT stable NRASG12D cells (from Protocol 1)PREX2 Q1430* stable NRASG12D cells (from Protocol 1)PREX2 G844D stable NRASG12D cells (from Protocol 1)Blots will be probed with the following antibodies:1. Anti-V5 tag2. Anti-PREX23. Anti-alpha tubulin\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NRASG12D melanocytes expressing GFP</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Produced in Protocol 1</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing WT PREX2</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Produced in Protocol 1</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing PREX2 Q1430*</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Produced in Protocol 1</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing G844D</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Produced in Protocol 1</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing WT PREX2</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Obtained from original authors</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing PREX2 Q1430*</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Obtained from original authors</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing G844D</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Obtained from original authors</td>\n    </tr>\n    <tr>\n      <td>Ham\u2019s F10 medium</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>N6908</td>\n      <td>Replaces Invitrogen cat. no. 11550-043 used in original study</td>\n    </tr>\n    <tr>\n      <td>Fetal bovine serum (FBS); heat inactivated</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>F4135</td>\n      <td>Replaces Invitrogen cat. no. 10082-147 used in original study</td>\n    </tr>\n    <tr>\n      <td>Penicillin\u2013streptomycin solution (100x) stabilized</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>P4333</td>\n      <td>Replaces Invitrogen cat. no. 15140-122 used in original study</td>\n    </tr>\n    <tr>\n      <td>IGEPAL CA-630(NP-40 substitute)</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>I8896</td>\n      <td>Replaces US Biological cat. no. N3500 used in original study</td>\n    </tr>\n    <tr>\n      <td>Phenylmethanesulfonyl fluoride (PMSF)</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>78,830</td>\n      <td>Replaces Pierce cat. no. 36978 used in original study</td>\n    </tr>\n    <tr>\n      <td>Protease inhibitor cocktail (mammalian)</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>P8340</td>\n      <td>Replaces Roche cat. no. 11836153001 used in original study</td>\n    </tr>\n    <tr>\n      <td>Phosphatase inhibitor cocktail 2</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>P5726</td>\n      <td>Replaces Roche cat. no. 04906837001 used in original study</td>\n    </tr>\n    <tr>\n      <td>Coomassie (Bradford) Protein Assay Kit</td>\n      <td>Reagent</td>\n      <td>Thermo-Fisher (Pierce)</td>\n      <td>PI-23200</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>BCA Protein Assay Kit</td>\n      <td>Reagent</td>\n      <td>Thermo-Fisher (Pierce)</td>\n      <td>23227</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>10-cm tissue culture dishes</td>\n      <td>Labware</td>\n      <td>Corning (Sigma-Aldrich)</td>\n      <td>CLS430167</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>Novex 4-12% Tris-Glycine, Mini, 1.0 mm, 12-well</td>\n      <td>Reagent</td>\n      <td>Life Technologies</td>\n      <td>EC60352</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Novex Tris-Glycine SDS Running Buffer (10X)</td>\n      <td>Reagent</td>\n      <td>Life Technologies</td>\n      <td>LC2675</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>Novex Tris-Glycine SDS Sample Buffer (2X)</td>\n      <td>Reagent</td>\n      <td>Life Technologies</td>\n      <td>LC2676</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>NuPAGE\u00ae Sample Reducing Agent (10X)</td>\n      <td>Reagent</td>\n      <td>Life Technologies</td>\n      <td>NP0009</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>ECL DualVue Western Markers (15 to 150 kDa)</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>GERPN810</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>BLUEeye prestained protein ladder</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>94964</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>Nitrocellulose membrane</td>\n      <td>Reagent</td>\n      <td>BioRad</td>\n      <td>162-0113</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>Ponceau S solution</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>P7170</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>Mouse anti-V5 tag</td>\n      <td>Antibody</td>\n      <td>Invitrogen</td>\n      <td>451098</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mouse anti-\u03b1-tubulin, clone DM1A</td>\n      <td>Antibody</td>\n      <td>Sigma-Aldrich</td>\n      <td>T9026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mouse anti-PREX2</td>\n      <td>Antibody</td>\n      <td>Abcam</td>\n      <td>Ab169027</td>\n      <td>Additional reagent not used in original study</td>\n    </tr>\n    <tr>\n      <td>Horse anti-mouse IgG, HRP-linked antibody</td>\n      <td>Antibody</td>\n      <td>Cell Signaling Technologies (CST)</td>\n      <td>7076</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tris Buffered Saline (TBS)</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>T5912</td>\n      <td>Replaces Fisher cat. no. BP2471-1 used in original study</td>\n    </tr>\n    <tr>\n      <td>Tween 20</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>P1379</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>ECL Prime Western Blotting Detection Reagent</td>\n      <td>Reagent</td>\n      <td>Sigma-Aldrich (GE Healthcare)</td>\n      <td>GERPN2236</td>\n      <td>Replaces Pierce cat. no. 34075 used in original study</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\nMaintain NRASG12D melanocyte lines in Ham's F10 medium with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37\u00b0C with 5% CO2.Subculture the four cell lines onto three 10-cm plates each, for a total of 12 plates. These plates constitute replicates for each cell line for eventual quantitation of protein expression. Allow cells to grow to log phase.Place 10 cm plates of log-phase growing cells on ice. Use a cell-scraper to scrape cells (on ice) into a microcentrifuge tube. Add 250 \u00b5l of lysis buffer per 10 cm plate.A. Lysis buffer = 20 mM Tris\u2013HCl, pH 8.0, 150 mM NaCl, 2 mM EDTA, 1% NP40, 1 mM PMSF, 1\u00d7 protease inhibitor cocktail, and 1\u00d7 phosphatase inhibitor.B. Prepare three separate lysates for each cell line (one lysate scraped from each plate).Incubate cells in lysis buffer for 20 min at RT. Centrifuge lysate for 15 min at 14,000 rpm at 4\u00b0C. Transfer supernatant to a fresh tube, then add 2\u00d7 sample loading buffer containing reducing agent.Load lysate onto a pre-cast polyacrylamide 4\u201312% Tris\u2013glycine gel with molecular weight ladder.A. Quantify lysate total protein concentration.B. Load 30\u201350 \u00b5g of total protein per well.Perform electrophoresis in standard Tris\u2013glycine\u2013SDS running buffer.Transfer the gel onto a nitrocellulose membrane.A. Transfer buffer = 25 mM Tris\u2013HCl, 192 mM glycine, 20% methanol.B. Use standard wet-transfer for 1\u20132 hr; PREX2 is a relatively large protein (runs about 160 kDa).C. Following protein transfer, stain the membrane with Ponceau-S in order to detect protein levels. Scan image of stained membrane before washing.Block membrane in 5% milk in 1\u00d7 TBS with 0.1% Tween-20 (TBS-T) overnight at 4\u00b0C on an orbital shaker.Incubate membranes with primary antibody overnight at 4\u00b0C on an orbital shaker. Dilute primary antibodies in 5% bovine serum albumin in TBS-T containing 0.05% sodium azide.A. Mouse anti-V5; dilute at 1:5000.B. Mouse anti-PREX2; use at 1 \u00b5g/ml, according to the manufacturer's instructions.Wash membranes six times for 10 min each with TBS-T at room temperature (RT).Incubate membranes with secondary antibody for 40 min at RT on an orbital shaker. Dilute secondary antibody in 5% milk in TBS-T.A. Horse anti-mouse IgG; dilute at 1:2000Wash membranes six times for 10 min each with TBS-T at RT.Detect chemiluminescent signal with ECL Prime Western blotting detection reagent, according to the manufacturer's instructions.Strip blots for 15 min in 0.2 M NaOH, then wash membranes six times for 10 min each with TBS-T at RT.Block membranes in 5% milk in TBS-T for 1 hr at RT on an orbital shaker.Repeat steps 9\u201313 for anti-\u03b1-tubulin primary antibody. Dilute primary antibody at 1:5000. Use same secondary antibody (at same dilution) as above.Quantify density of bands and normalize against \u03b1-tubulin.\n\n#### Deliverables\n\nData to be collected:Images of probed membranes (full images with ladder)Scanned images of Ponceau-stained membranes, post-transferDensitometric analyses of normalized bands, presented in a bar graph showing standard deviation across replicates for each cell line\n\n#### Confirmatory analysis plan\n\nStatistical analysis of the Replication Data:Means and standard deviations will be computed across replicates for each cell line.We will perform a 2-way ANOVA (2 \u00d7 3 factorial analysis), comparing expression levels of the three PREX2 variants and the two cell-line cohorts (the originally-derived cell lines and the newly-derived cell lines from Protocol 1). This analysis will test two parameters: a) whether the original and replication values are different and b) if the three PREX2 variants are different. Because our hypothesis is that they are all the same, no individual follow-up tests are needed.\n\n#### Known differences from the original study\n\nThis replication is only analyzing protein expression from cell lines engineered to express GFP, wild-type PREX2, PREX2 Q1430*, and PREX2 G844D. The original study also included several other PREX2 mutants, including PREX2 K278*, E824*, P948S, and G106E. This replication includes an antibody probing for PREX2, so that we can better determine its endogenous expression level. Additionally, we are also testing protein expression in the original PREX2 cells lines derived by the original authors, so that we can compare expression levels between the original lines and the replication lines. All known differences in reagents and supplies are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.\n\n#### Provisions for quality control\n\nThe endogenous expression of PREX2 will be assessed in cell lines not overexpressing PREX2 variants. An image of Ponceau-stained membranes (post-transfer) will be included to verify successful protein transfer. All of the raw data, including the image files and quantified bands from the Western blot, will be uploaded to the project page on the OSF (https://osf.io/jvpnw/) and made publically available. This experiment is also the quality control for the other replication protocols as it assesses the levels of ectopic PREX2 variant expression in the utilized cell lines.\n\n### Protocol 3: generation of tumor xenografts expressing mutated forms of PREX2\n\nThis protocol assesses the propensity of ectopically expressed PREX2 mutations to accelerate tumor formation of immortalized human melanocytes in vivo. This protocol utilizes stably transfected NRASG12D human melanocyte lines that were previously generated and analyzed in Protocols 1 and 2. The melanocytic lines are transplanted into immunodeficient mice alongside control melanocytes expressing wild-type PREX2 or GFP (green fluorescent protein). Tumor growth is assessed for 16 weeks, and tumor-free survival is monitored, as depicted in Figure 3B, S6B. Further, confirmatory staining and analysis of tumor tissue will be completed, as depicted in Figure 6C.\n\n#### Sampling\n\nThese experiments will utilize 7, 8, or 14 mice per treatment group, for a total power of \u226580%.See Power calculations section for detailsOutline of experimental conditions:NCR-NUDE female mice injected subcutaneously with:GFP-vector stable NRASG12D melanocytes (control)\u25cb n = 14PREX2 WT stable NRASG12D melanocytes (control)\u25cb n = 7PREX2 Q1430* NRASG12D melanocytes\u25cb n = 8PREX2 G844D NRASG12D melanocytes\u25cb n = 14\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NRASG12D melanocytes expressing GFP</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Produced in Protocol 1</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing WT PREX2</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Produced in Protocol 1</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing PREX2 Q1430*</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Produced in Protocol 1</td>\n    </tr>\n    <tr>\n      <td>NRASG12D melanocytes expressing G844D</td>\n      <td>Cell line</td>\n      <td colspan=\"3\">Produced in Protocol 1</td>\n    </tr>\n    <tr>\n      <td>Ham\u2019s F10 medium</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>N6908</td>\n      <td>Replaces Invitrogen cat. no. 11550-043 used in original study</td>\n    </tr>\n    <tr>\n      <td>Hanks\u2019 balanced salt solution, with sodium bicarbonate, without phenol red, calcium chloride, and magnesium sulfate</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>H6648</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>Matrigel Matrix High Concentration (HC), phenol red-free</td>\n      <td>Cell culture reagent</td>\n      <td>Corning</td>\n      <td>354262</td>\n      <td>Original catalog number not specified</td>\n    </tr>\n    <tr>\n      <td>Fetal bovine serum (FBS); heat inactivated</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>F4135</td>\n      <td>Replaces Invitrogen cat. no. 10082-147 used in original study</td>\n    </tr>\n    <tr>\n      <td>Penicillin\u2013streptomycin solution (100x) stabilized</td>\n      <td>Cell culture reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>P4333</td>\n      <td>Replaces Invitrogen cat. no. 15140-122 used in original study</td>\n    </tr>\n    <tr>\n      <td>1 mL syringe; 26 G x 5/8 needle (single-use)</td>\n      <td>Labware</td>\n      <td>BD Biosciences</td>\n      <td>309597</td>\n      <td>Original brand not specified</td>\n    </tr>\n    <tr>\n      <td>NCR-NUDE mice(homozygous; NCRNU-F)</td>\n      <td>Mouse line</td>\n      <td>Taconic</td>\n      <td>NCRNU-F</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Carazzi\u2019s Haematoxylin</td>\n      <td>IHC Stain</td>\n      <td rowspan=\"3\" colspan=\"3\">Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>\n    </tr>\n    <tr>\n      <td>Eosin</td>\n      <td>IHC Stain</td>\n    </tr>\n    <tr>\n      <td>Permount</td>\n      <td>Mounting medium</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\nMaintain NRASG12D cell lines in Ham's F10 medium with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37\u00b0C with 5% CO2.Resuspend 1 \u00d7 106 cells in a 1:1 ratio of Matrigel and Hanks\u2019 balanced salt solution and keep on ice. The final injection volume should be 100 \u00b5l.Subcutaneously inject 1 \u00d7 106 cells with a 26-gauge needle and insulin syringe into 6- to 8-week old female NCR-NUDE mice.A. Mice were housed per IACUC regulations, in barrier housing with standard chow and 12 hr light/dark cycles.B. Anesthetize mice with isofluorane prior to injection.C. Inject mice subcutaneously on the flank.Monitor mice three times a week for tumor development for 16 weeks.A. Record date when visible tumor is detected.Measure tumor volume once weekly.A. Measure tumor in two directions with calipers. Calculate tumor volume as (length \u00d7 width2)/2.Track survival of mice for 16 weeks, recording dates of euthanasia.A. Sacrifice mice when tumor volume reaches 1.5 cm3 or if mice become moribund or cachectic.B. Sacrifice any surviving mice at the end of the study.Upon euthanasia, harvest and process tumor tissue for further analysis.A. Harvest one representative tumor per mouse group (total of 4 tumors).B. Fix tissues in 10% neutral buffered formalin for 24 hr.C. Dehydrate tissues through graded alcohols and clear in xylene.D. Infiltrate with, and then embed, tissues in paraffin and section into 5-\u00b5m sections.E. Mount sections onto positively charged slides.Stain tumor section with H&E (total: 1 stained section per tumor = 4 stained sections).A. Perform H&E staining by hand using the following procedure:i. Deparaffinize sections twice in xylene, then rehydrate through graded alcohols (95%, 70%, 50% ETOH) to water.ii. Stain sections with Carazzi's hematoxylin, then rinse slides in water.iii. Stain sections with eosin.iv. Dehydrate sections through graded alcohols (50%, 70%, 90%) and then place in xylene.v. Apply coverslips to slides with Permount and store slides at room temperature.Blindly image stained sections and have images blindly analyzed by a Board Certified Veterinary Pathologist to verify the tumor composition of the tissue sections.\n\n#### Data to be collected\n\nDeliverables:Mouse health records (age, time to tumor detection, tumor incidence, date of euthanasia, and cause of termination)Raw and calculated tumor volume measurements for each date/mouseKaplan\u2013Meier curves generated for tumor-free survival of each mouse lineImages of H&E stained tumor sections and pathology report. (compare to Figure 6C)Pathologist's report of tissue section evaluation\n\n#### Confirmatory analysis plan\n\nThis replication attempt will perform the statistical analyses listed below, compute the effects sizes, compare them against the reported effect size in the original paper, and use a meta-analytic approach to combine the original and replication effects, which will be presented as a Forest plot.Statistical analysis of the Replication Data:Comparison of Kaplan\u2013Meier survival curves tracking tumor incidence using Bonferroni\u2019s correction for multiple comparisons.The authors originally examined the Kaplan\u2013Meier curves for PREX2 mutants and compared the endpoint values of the mutant curves to the endpoint values of the wild-type PREX2 curve using an unpaired two-tailed t-test. We will replicate their t-tests but also compare the entire survival curves (each mutant curve vs both wild-type and GFP control) using the log-rank Mantel\u2013Cox test with Bonferroni\u2019s alpha correction, which we believe is a more appropriate statistical approach.Comparison of tumor growth ratesWe will measure tumor growth rates across all mouse cohorts over the length of the study. These data were collected but not reported or analyzed in the original study. We will plot growth curves for each treatment group and use area under the curve analysis to calculate the mean and std. error. We will then use the means, std. error, and n to perform a 1-way ANOVA. Further, we will perform corrected t-tests (Bonferroni correction) to perform pairwise comparisons between PREX2 mutants and either GFP or wild-type controls.\n\n#### Known differences from the original study\n\nThis replication is only generating and analyzing xenografts based on the stable melanocyte lines for GFP, wild-type PREX2, PREX2 Q1430*, and PREX2 G844D. The original study also generated and analyzed tumor xenografts using other PREX2 mutant-expressing melanocyte lines, including PREX2 K278*, E824*, P948S, and G106E. In order to sufficiently power all experiments and achieve the necessary number of events for Kaplan\u2013Meier analysis, the duration of this replication will be extended from 9 weeks in the original paper to 16 weeks in the replication. All known differences in reagents and supplies are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.\n\n#### Provisions for quality control\n\nThe genetic integrity, mycoplasma-free purity, and levels of exogenous expression of each NrasG12V melanocyte line used in this experiment have been previously validated in Protocols 1 and 2. All mice will be handled and housed in accordance with the Institutional Animal Care and Use Committee (IACUC). All data obtained from the experiment\u2014raw data, data analysis, control data, and quality control data\u2014will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/82nfe/)\n\n### Power calculations\n\n#### Protocol 3\n\n##### Summary of original data\n\n<table>\n  <thead>\n    <tr>\n      <th>Figure 3B. Kaplan\u2013Meier survival curves</th>\n      <th>Median survival</th>\n      <th>Hazards ratio [to WT]</th>\n      <th>Hazards ratio [to GFP]</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT PREX2</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>GFP</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>PREX2 Q1430*</td>\n      <td>5 weeks</td>\n      <td>0.08758</td>\n      <td>0.1243</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>PREX2 G844D</td>\n      <td>5 weeks</td>\n      <td>0.1296</td>\n      <td>0.1952</td>\n      <td>10</td>\n    </tr>\n  </tbody>\n</table>\n\nNote: Mantel\u2013Haenszel hazard ratios were generated in Graphpad Prism v. 6.0 following analysis of Kaplan\u2013Meier curves with the log-rank (Mantel\u2013Cox) test using the Mantel\u2013Haenszel method.\n\n##### Test family\n\nLog-rank (Mantel\u2013Cox) test with Bonferroni alpha correction for multiple comparisons\n\n##### Power calculations\n\nPerformed with the Sample Size Calculator hosted by the Clinical & Translational Science Institute (CTSI) at the University of California\u2013San Francisco (http://www.sample-size.net/sample-size-survival-analysis/) (Rubinstein et al., 1981; Schoenfeld, 1983)To account for multiple comparisons, a corrected alpha value of 0.0125 [0.05/4] was used in determining power calculations.\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Experiment duration</th>\n      <th>A Priori power</th>\n      <th>Total events needed (WT or GFP)</th>\n      <th>Estimated sample size (WT or GFP)</th>\n      <th>Total events needed (PREX2 mutants)</th>\n      <th>Estimated sample size (PREX2 mutant)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Q1430* vs WT</td>\n      <td>16 weeks</td>\n      <td>\u226580%</td>\n      <td>1</td>\n      <td>7</td>\n      <td>6</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>G844D vs WT</td>\n      <td>16 weeks</td>\n      <td>\u226580%</td>\n      <td>1</td>\n      <td>6</td>\n      <td>11</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Q1430* vs GFP</td>\n      <td>16 weeks</td>\n      <td>\u226580%</td>\n      <td>3</td>\n      <td>14</td>\n      <td>7</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>G844D vs GFP</td>\n      <td>16 weeks</td>\n      <td>\u226580%</td>\n      <td>4</td>\n      <td>14</td>\n      <td>12</td>\n      <td>14</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "599fcdc9-1505-4eb3-8363-cb53bcf4494c",
+      "submission_id": "4120bbea-3bb3-4424-86fe-2cd8f4780e60",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roger Davis, University of Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04180.002](https://doi.org/10.7554/eLife.04180.002)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cRegistered report: Melanoma genome sequencing reveals frequent PREX2 mutations\u201d for consideration at eLife. Your article has been favorably evaluated by Charles Sawyers (Senior editor) and 4 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThere are two main conclusions drawn in the Nature paper by Berger et al. First, PREX2 is identified as a frequently (14%) non-synonymously mutated gene in melanoma. Second, that ectopic expression of cancer-associated PREX2 proteins promote melanoma genesis in a xenograft assay in mice. This is an important study because the identification of driver (vs passenger) mutations in cancer is critical for understanding the mechanism of tumorigenesis.\n\nThe first conclusion is addressed by Chroscinski and colleagues in the literature summary. The authors note that validation of this conclusion is not supported by several studies, including meta-analysis. However, Chroscinski and colleagues state that two papers support the conclusion that PREX2 is frequently mutated in melanoma. This is not correct. Turajlic et al. do describe a PREX2 mutation, but the analysis is limited to a single patient, while Furney et al. only refer to PREX2 mutations described by Berger et al. Thus, these papers do not support the conclusion that PREX2 is frequently mutated in melanoma. It also appears to be significant that another study of melanoma exome sequencing by many of the same authors published 2 months after Berger et al. (Hodis et al.) does not appear to identify PREX2 as a frequently mutated gene. Together, these considerations do not provide support for the conclusion presented by Berger et al. that PREX2 is frequently mutated in melanoma. This needs to be more directly addressed by Chroscinski and colleagues: they should discuss statistical thresholds for calling mutations significant (e.g., MutSig) and examine PREX2 mutations in public cancer genome portals such as cBioPortal (MSK) or the Broad Tumor Portal algorithms (in addition to reporting on the negative studies).\n\nThe second conclusion (that is addressed by re-analysis by Chroscinski and colleagues) is important: that PREX2 is a driver mutation rather than a passenger mutation during melanoma formation. The proposed experimental design appears to replicate the original study. However, a number of issues were raised by the reviewers:\n\n1) The PREX2 mutations reported by Berger et al. are present throughout the PREX2 sequence. This is more consistent with passenger mutation than driver mutation. The restriction of the re-analysis to a limited number of mutations originally examined is therefore problematic. To document that the PREX2 mutations acts as drivers, it would be best to examine the same mutations that are reported in the original study, rather than a sub-set of these mutations.\n\n2) There are a number of problems with the original experimental design that complicate conclusions drawn from the xenograft study. Chroscinski and colleagues should be aware that: a) the genetic status of PREX2 in the cell line that is employed is unknown; b) the relative expression of endogneous PREX2 and ectopically expressed PREX2 is unknown; and c) it has previously been reported that WT PREX2 in a different cells (MCF10A) causes PTEN inhibition, activation of AKT, and increased proliferation (Fine et al. (2009) Science 325, 1261). These deficiencies in the design of the original study will influence the ability to draw sound conclusions from the study, but will be common between the original study and the replication study.\n\n3) Regarding the power calculations, the proposed power calculations take for granted survival and hazard numbers published in the original study. This is fine at this stage, however, we suggest the following improvements.\n\n(a) Cross-study variation should be taken into account to determine expected loos of power computed on published numbers, pre-data collection. This is hard to estimate, but papers by Giovanni Parmigiani and collaborators at the Dana Farber provide some estimates about cross-study variation that could be used for this purpose. The authors should budget some additional variability because of cross-study reproducibility, and increase the sample size on-the-fly, as they deem appropriate as deemed appropriate.\n\n(b) The final report on the replicated study should report the actual power of the tests, based on the standard deviations in the replicated study.\n",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "44250d5c-2d1d-4eb7-beef-1b6a627b63cd",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C1",
+      "claim": "The Reproducibility Project: Cancer Biology is conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a description of the project scope.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "df5b36a6-edf9-48b5-8d3e-f1085dff314c",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C2",
+      "claim": "Berger and colleagues identified PREX2 mutations through whole-genome sequencing of human melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "This Registered Report describes the proposed replication plan of key experiments from 'Melanoma genome sequencing reveals frequent PREX2 mutations' by Berger and colleagues, published in Nature in 2012 (Berger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript references the original study by Berger et al., 2012 that identified PREX2 mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "fad64949-015e-43ea-b309-9aeb4f7e4d5f",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C3",
+      "claim": "Somatic PREX2 mutations can contribute to enhanced lethality of tumor xenografts in nude mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, Berger and colleagues show that somatic PREX2 mutations identified through whole-genome sequencing of human melanoma can contribute to enhanced lethality of tumor xenografts in nude mice (Figure 3B, S6B, and S6C; Berger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the original Berger et al., 2012 study and references to specific figures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "6ebb27ac-34e7-42fa-8f5a-69e4e31db09e",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C4",
+      "claim": "Melanoma is a highly aggressive tumor with poor prognosis in the metastatic stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanoma is a highly aggressive tumor with poor prognosis in the metastatic stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about melanoma characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "7aaa6ca9-2dbb-4306-aa1b-5019de55e283",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C5",
+      "claim": "Melanomas are often hypermutated based on their association with UV-induced DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their association with UV-induced DNA damage, melanomas are often hypermutated and considerable efforts have been made to sequence such tumors in order to better understand their molecular basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established scientific knowledge about melanoma etiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "2243b84e-536b-41e7-8f86-e9c26e1e39a6",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C6",
+      "claim": "BRAF and NRAS are frequently involved in melanoma pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Many well-known oncogenes are frequently involved in melanoma pathogenesis, including BRAF and NRAS, and significant work has been done to develop targeted kinase inhibitors against the protein products of these genes (Kunz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kunz, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "146945dc-ccca-46d1-85c9-cfecb6fdcfb5",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C7",
+      "claim": "Targeted kinase inhibitors have been developed against BRAF and NRAS protein products.",
+      "claim_type": "EXPLICIT",
+      "source": "Many well-known oncogenes are frequently involved in melanoma pathogenesis, including BRAF and NRAS, and significant work has been done to develop targeted kinase inhibitors against the protein products of these genes (Kunz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kunz, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "f6f0097b-069f-4dac-b3ee-cd63393242b4",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C8",
+      "claim": "Melanoma has an extremely high rate of recurrence even with treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even with treatment, melanoma has an extremely high rate of recurrence; thus, there is great interest in identifying novel candidate genes that promote oncogenesis in melanoma, thereby providing additional therapeutic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established clinical knowledge about melanoma treatment outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "bc47006c-7f5b-4728-a889-ee9d6bf57f10",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C9",
+      "claim": "PREX2 is a 183-kDa protein.",
+      "claim_type": "EXPLICIT",
+      "source": "One such candidate is Phosphatidylinositol-3,4,5-trisphosphate RAC Exchanger 2 (PREX2), a 183-kDa protein known to inhibit PTEN phosphatase activity, stimulate PI3K signaling, and suspected to regulate the small GTPase RAC1 (Fine et al., 2009; Cerami et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fine et al., 2009 and Cerami et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "24f5612c-d074-4a28-a5f6-24397e819184",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C10",
+      "claim": "PREX2 is known to inhibit PTEN phosphatase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "One such candidate is Phosphatidylinositol-3,4,5-trisphosphate RAC Exchanger 2 (PREX2), a 183-kDa protein known to inhibit PTEN phosphatase activity, stimulate PI3K signaling, and suspected to regulate the small GTPase RAC1 (Fine et al., 2009; Cerami et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fine et al., 2009 and Cerami et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "054da9a9-9f99-4d6b-a01f-2fd31b372c72",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C11",
+      "claim": "PREX2 stimulates PI3K signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "One such candidate is Phosphatidylinositol-3,4,5-trisphosphate RAC Exchanger 2 (PREX2), a 183-kDa protein known to inhibit PTEN phosphatase activity, stimulate PI3K signaling, and suspected to regulate the small GTPase RAC1 (Fine et al., 2009; Cerami et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fine et al., 2009 and Cerami et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "2c4e4a9d-acdd-49db-b18a-8fc9ed887301",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C12",
+      "claim": "PREX2 is suspected to regulate the small GTPase RAC1.",
+      "claim_type": "EXPLICIT",
+      "source": "One such candidate is Phosphatidylinositol-3,4,5-trisphosphate RAC Exchanger 2 (PREX2), a 183-kDa protein known to inhibit PTEN phosphatase activity, stimulate PI3K signaling, and suspected to regulate the small GTPase RAC1 (Fine et al., 2009; Cerami et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fine et al., 2009 and Cerami et al., 2012, and the use of 'suspected' indicates this is speculative.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "6961066a-dba5-421c-9e8d-06b0bd0ea298",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C13",
+      "claim": "Berger and colleagues used whole-genome sequencing of 25 metastatic tumors to identify PREX2 as a highly mutated gene in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-genome sequencing of 25 metastatic tumors, Berger and colleagues identified PREX2 as being a highly mutated gene in melanoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and findings from the original Berger et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "c9174450-9eb8-4f5d-b977-c6741d7c2e4f",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C14",
+      "claim": "PREX2 has a mutation frequency of approximately 14% in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from observing a large subset of BRAF and NRAS mutations, the authors found PREX2 to have a mutation frequency of approximately 14%, with 13 detected non-synonymous point mutations, including four nonsense truncation mutations (Berger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data reported from the original Berger et al., 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "81b3dea3-32c5-4262-81f9-43e9481e5c09",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C15",
+      "claim": "Berger and colleagues detected 13 non-synonymous point mutations in PREX2, including four nonsense truncation mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from observing a large subset of BRAF and NRAS mutations, the authors found PREX2 to have a mutation frequency of approximately 14%, with 13 detected non-synonymous point mutations, including four nonsense truncation mutations (Berger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data reported from the original Berger et al., 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "895b6b2c-841c-4107-8892-5ab7c7f34f91",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C16",
+      "claim": "Ectopic expression of mutant PREX2 accelerated tumor formation in nude mice.",
+      "claim_type": "EXPLICIT",
+      "source": "By using these cell lines to create tumor xenografts in nude mice, the authors showed that ectopic expression of mutant PREX2 accelerated tumor formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from the original Berger et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "147ee6b4-f39e-4495-8ff6-1c05ef46d68f",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C17",
+      "claim": "Berger and colleagues analyzed six representative PREX2 mutations derived from their whole-genome sequencing screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Berger and colleagues chose to analyze six representative PREX2 mutations derived from their whole-genome sequencing screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "79138fab-b6be-4d81-8823-905ffe8e98e9",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C18",
+      "claim": "The six PREX2 variants analyzed included three truncation variants and three non-synonymous point mutations predicted to carry functional impact.",
+      "claim_type": "EXPLICIT",
+      "source": "These variants included three truncation variants and three non-synonymous point mutations predicted to carry functional impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the mutations studied in the original work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "2fc49941-4b16-45a2-aa91-cae9d0c52d78",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C19",
+      "claim": "Mutant PREX2 constructs were packaged into lentiviruses and transduced into TERT-immortalized human melanocytes engineered to express NRASG12D.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutant PREX2 constructs were packaged into lentiviruses and transduced into TERT-immortalized human melanocytes engineered to express NRASG12D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "e6c99dd9-5e85-4fb4-8786-164b06f3fdec",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C20",
+      "claim": "Ectopic expression of various mutant PREX2 isoforms was confirmed by Western blot in Figure 6A.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of various mutant PREX2 isoforms was confirmed by Western blot (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references data from the original study shown in Figure 6A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "17a2e94c-3130-4d8e-936b-317367a9c979",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C21",
+      "claim": "Overexpression of all three truncated PREX2 variants significantly accelerated tumor growth in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "They found that overexpression of all three truncated variants, as well as the point mutation G844D, significantly accelerated tumor growth in vivo, thus affirming the biological relevance of their genomic data (Figure 3B, S6B, and S6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from the original study shown in specific figures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "8c4da044-5a2f-4516-868a-6d65b880d4e0",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C22",
+      "claim": "Overexpression of the PREX2 point mutation G844D significantly accelerated tumor growth in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "They found that overexpression of all three truncated variants, as well as the point mutation G844D, significantly accelerated tumor growth in vivo, thus affirming the biological relevance of their genomic data (Figure 3B, S6B, and S6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from the original study shown in specific figures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "8bdbdc61-0ebc-4e86-935e-ffb6ed07933c",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C23",
+      "claim": "Mutational heterogeneity across tumor samples may contribute to false-positive findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially, mutational heterogeneity across tumor samples may contribute to false-positive findings (Lawrence et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lawrence et al., 2013 and uses 'potentially' indicating speculation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "d59d0f73-63f0-44dc-ab0e-a0b2b4e26803",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C24",
+      "claim": "Various genome-wide screens have yielded conflicting results about which genes are frequently mutated in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Various genome-wide screens have yielded conflicting results about which genes are frequently mutated in melanoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "a3927a2e-af1d-4b2c-9763-8445883ef2b0",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C25",
+      "claim": "Mutated PREX2 was identified in both the primary tumor and in metastatic tumor tissue from a genomic analysis of a single melanoma patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, mutated PREX2 was identified in both the primary tumor and in metastatic tumor tissue from a genomic analysis of a single melanoma patient (Turajlic et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Turajlic et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "026e8afc-408c-4ba5-939d-827dc6030455",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C26",
+      "claim": "Five studies failed to identify PREX2 in their genome-wide melanoma screens.",
+      "claim_type": "EXPLICIT",
+      "source": "However, five studies failed to identify PREX2 in their genome-wide melanoma screens, including a meta-analysis study that analyzed hundreds of published datasets (Hodis et al., 2012; Krauthammer et al., 2012; Ni et al., 2013; Marzese et al., 2014; Xia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to five different studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "a046a2dc-f002-48da-829f-caef251e2fd8",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C27",
+      "claim": "There have been no replication attempts assessing the biological significance of PREX2 mutant isoforms in melanoma to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there have been no replication attempts assessing the biological significance of PREX2 mutant isoforms in melanoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the literature at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "f80f974c-f951-43fe-aa99-9fdbbce495e3",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C28",
+      "claim": "High titer lentivirus is best packaged in early passage, healthy 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Note: high titer lentivirus is best packaged in early passage, healthy 293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established technical knowledge about lentivirus production.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "3bd0e3db-2c82-47cc-b9ec-b1318499ae3b",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C29",
+      "claim": "Continuous growth of 293T cells to/from confluence should be avoided for optimal lentivirus packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Avoid continuous growth to/from confluence. Routinely split 293T when culture approaches 80% confluence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established technical knowledge about cell culture practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "aefb2a25-0456-4984-af4e-6349106d59a5",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C30",
+      "claim": "PREX2 is a relatively large protein that runs at about 160 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Use standard wet-transfer for 1\u20132 hr; PREX2 is a relatively large protein (runs about 160 kDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is technical information about the protein's molecular weight on gels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "6989715e-5018-46e6-95a8-8fd1adb64970",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C31",
+      "claim": "The replication study will extend the duration from 9 weeks in the original paper to 16 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to sufficiently power all experiments and achieve the necessary number of events for Kaplan\u2013Meier analysis, the duration of this replication will be extended from 9 weeks in the original paper to 16 weeks in the replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated methodological difference in the replication protocol.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "1fb41b9c-4caf-4bb3-a371-d18a80fb67f6",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C32",
+      "claim": "The original study used 10 mice per treatment group for xenograft experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "WT PREX2\tN/A\tN/A\tN/A\t10\nGFP\tN/A\tN/A\tN/A\t10\nPREX2 Q1430*\t5 weeks\t0.08758\t0.1243\t10\nPREX2 G844D\t5 weeks\t0.1296\t0.1952\t10",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the original study shown in the power calculations table.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "a03e6afc-8f51-4de6-9cb0-cdb7128fab1b",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C33",
+      "claim": "PREX2 Q1430* xenografts had a median survival of 5 weeks in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "PREX2 Q1430*\t5 weeks\t0.08758\t0.1243\t10",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the original study shown in the power calculations table.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "1259ba1e-34a3-4ba2-ac39-de9197981691",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C34",
+      "claim": "PREX2 G844D xenografts had a median survival of 5 weeks in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "PREX2 G844D\t5 weeks\t0.1296\t0.1952\t10",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the original study shown in the power calculations table.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "03eeb395-b274-4a9b-99c5-f3558e767db5",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C35",
+      "claim": "The replication will use 7, 8, or 14 mice per treatment group to achieve \u226580% power.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments will utilize 7, 8, or 14 mice per treatment group, for a total power of \u226580%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the sampling section of Protocol 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "d81883a9-561a-4bfc-8f17-ef72e671fdc9",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C36",
+      "claim": "The replication will use 14 mice for GFP-vector stable NRASG12D melanocyte xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-vector stable NRASG12D melanocytes (control)\n\u25cb n = 14",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the experimental conditions outline.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "b9e8b945-b38d-4343-b48c-ef3da5ed92ee",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C37",
+      "claim": "The replication will use 7 mice for PREX2 WT stable NRASG12D melanocyte xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "PREX2 WT stable NRASG12D melanocytes (control)\n\u25cb n = 7",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the experimental conditions outline.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "78421af9-2432-48d2-b75b-58af1d925586",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C38",
+      "claim": "The replication will use 8 mice for PREX2 Q1430* NRASG12D melanocyte xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "PREX2 Q1430* NRASG12D melanocytes\n\u25cb n = 8",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the experimental conditions outline.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "81d6751d-9c1e-431f-8c9e-dc626a05bc82",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C39",
+      "claim": "The replication will use 14 mice for PREX2 G844D NRASG12D melanocyte xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "PREX2 G844D NRASG12D melanocytes\n\u25cb n = 14",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the experimental conditions outline.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "e4559de7-7cb0-4775-98e3-ee323a3e0919",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C40",
+      "claim": "A corrected alpha value of 0.0125 was used in determining power calculations to account for multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for multiple comparisons, a corrected alpha value of 0.0125 [0.05/4] was used in determining power calculations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the power calculations section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "95d5d281-2f73-4f21-b004-e972188f5157",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C41",
+      "claim": "The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "703cf5e5-2ac8-45d3-a186-af92ac9b2771",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C42",
+      "claim": "The results of the Reproducibility Project: Cancer Biology replications will be published by eLife.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "6ccdeccd-ecea-4163-b115-e8c6b984a74b",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C43",
+      "claim": "The replication will include three cell lines originally derived by the authors for comparison of protein expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Three original cell lines produced by the original authors will also be included so that protein expression levels can be compared between the two studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 2 sampling section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "56ce703d-9c47-4786-8044-0dd7fc5c2198",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C45",
+      "claim": "The replication will sequence the endogenous PREX2 gene in NRASG12D melanocytes to determine its mutational status.",
+      "claim_type": "EXPLICIT",
+      "source": "This replication will include the additional step of sequencing the endogenous PREX2 gene in the NRASG12D melanocyte cell line to determine its mutational status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known difference from the original study in Protocol 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "0670885d-c6d2-4582-98b1-b6219852b84f",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C46",
+      "claim": "All cell lines will be sent for STR profiling and mycoplasma testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Note: all cell lines will be sent for STR profiling and mycoplasma testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 1 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "93f7a161-bc4c-4eca-8849-d3d2960bdcac",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C47",
+      "claim": "Mice will be sacrificed when tumor volume reaches 1.5 cm3 or if mice become moribund or cachectic.",
+      "claim_type": "EXPLICIT",
+      "source": "Sacrifice mice when tumor volume reaches 1.5 cm3 or if mice become moribund or cachectic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "6e784748-5de0-4a79-b770-141bc0783beb",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C48",
+      "claim": "Tumor volume will be calculated as (length \u00d7 width2)/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Measure tumor in two directions with calipers. Calculate tumor volume as (length \u00d7 width2)/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "9953c910-5bac-4b7a-a620-a08988bd7fd6",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C49",
+      "claim": "The replication will inject 1 \u00d7 106 cells subcutaneously into 6- to 8-week old female NCR-NUDE mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcutaneously inject 1 \u00d7 106 cells with a 26-gauge needle and insulin syringe into 6- to 8-week old female NCR-NUDE mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "d8a731b6-48d8-4672-b420-e59caafd7c0a",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C50",
+      "claim": "Cells will be resuspended in a 1:1 ratio of Matrigel and Hanks' balanced salt solution for injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Resuspend 1 \u00d7 106 cells in a 1:1 ratio of Matrigel and Hanks' balanced salt solution and keep on ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "f5632547-f09e-46ee-b13c-92b744e27227",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C51",
+      "claim": "The final injection volume will be 100 \u00b5l.",
+      "claim_type": "EXPLICIT",
+      "source": "The final injection volume should be 100 \u00b5l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "bcd8317d-9723-4e20-99c0-3638b67200a0",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C52",
+      "claim": "Mice will be monitored three times a week for tumor development for 16 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitor mice three times a week for tumor development for 16 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "cec10fd9-4297-41e3-b886-ed1bdff84919",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C53",
+      "claim": "Tumor volume will be measured once weekly.",
+      "claim_type": "EXPLICIT",
+      "source": "Measure tumor volume once weekly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "d0e7c2de-a1b2-4178-92e1-b3c683dc51d5",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C54",
+      "claim": "One representative tumor per mouse group will be harvested for histological analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Harvest one representative tumor per mouse group (total of 4 tumors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "1914b331-a386-44d7-bf70-37b4bc6d3bfd",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C55",
+      "claim": "Tumor tissues will be fixed in 10% neutral buffered formalin for 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Fix tissues in 10% neutral buffered formalin for 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "dd76706d-1382-4bab-83aa-a62c05fe674e",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C56",
+      "claim": "Stained sections will be blindly imaged and analyzed by a Board Certified Veterinary Pathologist.",
+      "claim_type": "EXPLICIT",
+      "source": "Blindly image stained sections and have images blindly analyzed by a Board Certified Veterinary Pathologist to verify the tumor composition of the tissue sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 3 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "22d89120-eac8-44f9-9e8a-1be964b385d5",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C57",
+      "claim": "The replication will compare Kaplan-Meier survival curves using the log-rank Mantel-Cox test with Bonferroni's alpha correction.",
+      "claim_type": "EXPLICIT",
+      "source": "We will replicate their t-tests but also compare the entire survival curves (each mutant curve vs both wild-type and GFP control) using the log-rank Mantel\u2013Cox test with Bonferroni's alpha correction, which we believe is a more appropriate statistical approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "e5cea5bd-beed-4624-ab4a-f1f9400ef4be",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C58",
+      "claim": "The replication will measure tumor growth rates across all mouse cohorts over the length of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We will measure tumor growth rates across all mouse cohorts over the length of the study. These data were collected but not reported or analyzed in the original study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "1588392f-9a3a-4c37-b15b-12ee534a911c",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C59",
+      "claim": "Tumor growth rate data were collected but not reported or analyzed in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "We will measure tumor growth rates across all mouse cohorts over the length of the study. These data were collected but not reported or analyzed in the original study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "c820df77-ef7c-4269-b884-3d83f5c2cd09",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C60",
+      "claim": "The replication will use area under the curve analysis to calculate mean and standard error for tumor growth curves.",
+      "claim_type": "EXPLICIT",
+      "source": "We will plot growth curves for each treatment group and use area under the curve analysis to calculate the mean and std. error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "1ff71ceb-eb19-4c75-ab5c-e496a9b09bac",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C61",
+      "claim": "The replication will perform a 1-way ANOVA on tumor growth rate data.",
+      "claim_type": "EXPLICIT",
+      "source": "We will then use the means, std. error, and n to perform a 1-way ANOVA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "d78cab95-b934-4efa-84c2-490ce99476c5",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C62",
+      "claim": "The replication will perform corrected t-tests with Bonferroni correction for pairwise comparisons between PREX2 mutants and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we will perform corrected t-tests (Bonferroni correction) to perform pairwise comparisons between PREX2 mutants and either GFP or wild-type controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "4e62fed9-c20e-4414-9f64-c8643a46c943",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C63",
+      "claim": "The replication will perform a 2-way ANOVA comparing expression levels of the three PREX2 variants and the two cell-line cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "We will perform a 2-way ANOVA (2 \u00d7 3 factorial analysis), comparing expression levels of the three PREX2 variants and the two cell-line cohorts (the originally-derived cell lines and the newly-derived cell lines from Protocol 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "337f7efb-60f4-481f-adc7-4fd959c13ed1",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C64",
+      "claim": "The 2-way ANOVA will test whether the original and replication values are different and if the three PREX2 variants are different.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis will test two parameters: a) whether the original and replication values are different and b) if the three PREX2 variants are different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "80a184a9-dfb1-4385-b385-489e627e8a9d",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C65",
+      "claim": "The replication will use a meta-analytic approach to combine the original and replication effects, presented as a Forest plot.",
+      "claim_type": "EXPLICIT",
+      "source": "This replication attempt will perform the statistical analyses listed below, compute the effects sizes, compare them against the reported effect size in the original paper, and use a meta-analytic approach to combine the original and replication effects, which will be presented as a Forest plot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the confirmatory analysis plan for Protocol 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "a10ed9da-c16f-4afa-8417-076c89db7b95",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C66",
+      "claim": "All data obtained from the experiments will be made publicly available on the Open Science Framework.",
+      "claim_type": "EXPLICIT",
+      "source": "All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/jvpnw/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the provisions for quality control section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "87a90546-a4d5-4511-a19b-191e243e95fc",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C67",
+      "claim": "NRASG12D melanocytes should be maintained in Ham's F10 medium supplemented with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37\u00b0C with 5% CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanocytes should be maintained in Ham's F10 medium supplemented with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37\u00b0C with 5% CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the procedure sections of multiple protocols.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "649c5158-5701-46f1-9d5c-0a3285aee391",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C68",
+      "claim": "HEK293T cells should be maintained in DMEM supplemented with 10% FBS at 37\u00b0C with 5% CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293T cells should be maintained in DMEM supplemented with 10% FBS at 37\u00b0C with 5% CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Protocol 1 procedure section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "7b16c433-f73c-40e7-987b-883e24f98205",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C69",
+      "claim": "The original authors examined Kaplan-Meier curves and compared endpoint values using an unpaired two-tailed t-test.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors originally examined the Kaplan\u2013Meier curves for PREX2 mutants and compared the endpoint values of the mutant curves to the endpoint values of the wild-type PREX2 curve using an unpaired two-tailed t-test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical approach used in the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "85b88265-a828-4921-9700-93be50d57173",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "claim_id": "C70",
+      "claim": "The log-rank Mantel-Cox test with Bonferroni's alpha correction is a more appropriate statistical approach for comparing survival curves than comparing endpoint values with t-tests.",
+      "claim_type": "IMPLICIT",
+      "source": "We will replicate their t-tests but also compare the entire survival curves (each mutant curve vs both wild-type and GFP control) using the log-rank Mantel\u2013Cox test with Bonferroni's alpha correction, which we believe is a more appropriate statistical approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is implied by the statement 'which we believe is a more appropriate statistical approach.'",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "63d30b15-0a21-44cb-9387-c26a2485b2cc",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "This manuscript describes a registered report for the Reproducibility Project: Cancer Biology, which is replicating 50 cancer biology papers published between 2010-2012. The project is a collaboration between the Center for Open Science and Science Exchange, with results to be published by eLife.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C41, and C42 provide consistent information about the project structure and publication plan. These are straightforward descriptive claims about the project itself that are internally consistent and verifiable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "72e31cd1-bca6-4d9a-8f68-1322550758f3",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The original Berger et al. 2012 study identified PREX2 as a highly mutated gene in melanoma through whole-genome sequencing of 25 metastatic tumors, finding a ~14% mutation frequency with 13 non-synonymous mutations. The study demonstrated that ectopic expression of mutant PREX2 variants (three truncations and the G844D point mutation) significantly accelerated tumor growth in nude mouse xenografts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C13-C22 accurately describe findings from the original Berger et al. 2012 study as cited work. These claims are appropriately attributed to the original authors and reference specific figures. However, these represent prior work being replicated, not new results from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "e9cd89d5-88a8-4fc5-91f7-d903e1bd0873",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Melanoma is characterized as a highly aggressive tumor with poor prognosis in metastatic stages, often hypermutated due to UV-induced DNA damage. BRAF and NRAS are frequently involved in melanoma pathogenesis, with targeted kinase inhibitors developed against them, though melanoma has extremely high recurrence rates even with treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 represent established background knowledge about melanoma biology and treatment, appropriately cited (Kunz, 2014). These are well-accepted facts in the field that provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "6e009977-acbe-4482-82c4-112d06b991f8",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PREX2 is a 183-kDa protein known to inhibit PTEN phosphatase activity and stimulate PI3K signaling, and is suspected to regulate the small GTPase RAC1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 describe established biochemical properties of PREX2, appropriately cited (Fine et al., 2009; Cerami et al., 2012). The use of 'suspected' for RAC1 regulation (C12) appropriately indicates uncertainty. These provide necessary background on the protein being studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "cc8723a5-32da-4186-8809-a1d3b18cc97b",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "There is conflicting evidence about PREX2's role in melanoma across genome-wide screens. While one study identified mutated PREX2 in both primary and metastatic tissue from a single patient, five other studies failed to identify PREX2 in their screens. No replication attempts of PREX2's biological significance in melanoma existed prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 accurately describe the state of the literature regarding PREX2 in melanoma, with appropriate citations. This establishes the rationale for the replication study. The conflicting findings across studies are well-documented and provide important context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "1d148358-590b-47b1-9dad-5262a6e864c4",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The replication study extends the experimental duration from 9 to 16 weeks to achieve sufficient power for Kaplan-Meier analysis. Using power calculations with Bonferroni-corrected alpha (0.0125), the study will use 7-14 mice per group (compared to 10 in the original), based on the original study's median survival of 5 weeks for mutant xenografts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C40 describe the power analysis and sample size determination for the replication. The calculations appear appropriate, using hazard ratios from the original study and accounting for multiple comparisons. The extension to 16 weeks is justified to achieve adequate events for survival analysis. The varying sample sizes (7, 8, or 14) across groups reflect differences in expected effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "263e9455-e482-43cf-8064-3a5554a65653",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The replication includes additional quality control measures not in the original study: sequencing of endogenous PREX2 in NRASG12D melanocytes to determine mutational status, and STR profiling plus mycoplasma testing of all cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 describe important quality control additions to the replication protocol. These are appropriate measures to ensure cell line identity and purity, and to characterize the baseline mutational status of PREX2 in the cell line used. These improvements strengthen the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "d795274b-7744-4879-9f71-dd4a6e1298e4",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The replication will include three original cell lines from the authors for direct comparison of PREX2 variant expression levels between studies using 2-way ANOVA to test whether original and replication values differ and whether the three PREX2 variants differ from each other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C63-C64 describe a methodological strength: direct comparison with original cell lines using appropriate statistical analysis (2-way ANOVA). This factorial design allows assessment of both technical reproducibility (original vs. new lines) and biological consistency (variant differences).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "3de7a941-18ce-4e4c-bb0b-92d7208506a5",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The replication will use log-rank Mantel-Cox test with Bonferroni correction to compare entire survival curves, which the authors consider more appropriate than the original study's approach of comparing endpoint values with unpaired t-tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C69-C70 describe an important statistical improvement. The log-rank test is indeed more appropriate for comparing survival curves than endpoint t-tests, as it uses all time-point data rather than just final values. This represents a methodological enhancement over the original study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "894f3059-bb1d-46ce-a345-7420b9b6d91d",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The replication will analyze tumor growth rates across all cohorts using area under the curve analysis followed by 1-way ANOVA and Bonferroni-corrected pairwise t-tests. These data were collected but not reported in the original study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 describe additional analyses of tumor growth kinetics not performed in the original study. The statistical approach (AUC followed by ANOVA and corrected pairwise tests) is appropriate. This adds value by analyzing data that was collected but not reported originally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "94c46fe9-217f-4ffb-ab42-eed337732db6",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The replication will use meta-analytic approaches to combine original and replication effects presented as Forest plots, with all data made publicly available on the Open Science Framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 describe appropriate transparency and meta-analytic practices. Combining original and replication effects using meta-analysis and presenting as Forest plots is a rigorous approach to assess reproducibility. Public data sharing enhances transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Protocol 3 describes detailed xenograft procedures including injection of 1\u00d710^6 cells in Matrigel/HBSS into NCR-NUDE mice, monitoring for 16 weeks with weekly tumor measurements using caliper-based volume calculations, sacrifice criteria, and blinded histological analysis by a board-certified veterinary pathologist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C56 provide comprehensive methodological details for the xenograft experiments. The procedures are standard and appropriate, including proper controls, blinding for pathology analysis, and clear endpoints. The level of detail supports reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    },
+    {
+      "id": "26e1991e-ff26-436b-a4f5-8d79945b923d",
+      "content_id": "20df2d26-837b-4537-8bd5-0bc4f73898cc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The protocols include standard technical practices for lentivirus production (early passage 293T cells, avoiding confluence), cell culture conditions (specific media and supplements for each cell type), and Western blot procedures (accounting for PREX2's ~160 kDa size).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 and C67-C68 describe established technical knowledge and standard operating procedures. These are appropriate methodological details that support reproducibility, though they represent routine practices rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:51.900951Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "44250d5c-2d1d-4eb7-beef-1b6a627b63cd",
+      "result_id": "63d30b15-0a21-44cb-9387-c26a2485b2cc"
+    },
+    {
+      "claim_id": "95d5d281-2f73-4f21-b004-e972188f5157",
+      "result_id": "63d30b15-0a21-44cb-9387-c26a2485b2cc"
+    },
+    {
+      "claim_id": "703cf5e5-2ac8-45d3-a186-af92ac9b2771",
+      "result_id": "63d30b15-0a21-44cb-9387-c26a2485b2cc"
+    },
+    {
+      "claim_id": "df5b36a6-edf9-48b5-8d3e-f1085dff314c",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "fad64949-015e-43ea-b309-9aeb4f7e4d5f",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "6961066a-dba5-421c-9e8d-06b0bd0ea298",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "c9174450-9eb8-4f5d-b977-c6741d7c2e4f",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "81b3dea3-32c5-4262-81f9-43e9481e5c09",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "895b6b2c-841c-4107-8892-5ab7c7f34f91",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "147ee6b4-f39e-4495-8ff6-1c05ef46d68f",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "79138fab-b6be-4d81-8823-905ffe8e98e9",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "2fc49941-4b16-45a2-aa91-cae9d0c52d78",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "e6c99dd9-5e85-4fb4-8786-164b06f3fdec",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "17a2e94c-3130-4d8e-936b-317367a9c979",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "8c4da044-5a2f-4516-868a-6d65b880d4e0",
+      "result_id": "72e31cd1-bca6-4d9a-8f68-1322550758f3"
+    },
+    {
+      "claim_id": "6ebb27ac-34e7-42fa-8f5a-69e4e31db09e",
+      "result_id": "e9cd89d5-88a8-4fc5-91f7-d903e1bd0873"
+    },
+    {
+      "claim_id": "7aaa6ca9-2dbb-4306-aa1b-5019de55e283",
+      "result_id": "e9cd89d5-88a8-4fc5-91f7-d903e1bd0873"
+    },
+    {
+      "claim_id": "2243b84e-536b-41e7-8f86-e9c26e1e39a6",
+      "result_id": "e9cd89d5-88a8-4fc5-91f7-d903e1bd0873"
+    },
+    {
+      "claim_id": "146945dc-ccca-46d1-85c9-cfecb6fdcfb5",
+      "result_id": "e9cd89d5-88a8-4fc5-91f7-d903e1bd0873"
+    },
+    {
+      "claim_id": "f6f0097b-069f-4dac-b3ee-cd63393242b4",
+      "result_id": "e9cd89d5-88a8-4fc5-91f7-d903e1bd0873"
+    },
+    {
+      "claim_id": "bc47006c-7f5b-4728-a889-ee9d6bf57f10",
+      "result_id": "6e009977-acbe-4482-82c4-112d06b991f8"
+    },
+    {
+      "claim_id": "24f5612c-d074-4a28-a5f6-24397e819184",
+      "result_id": "6e009977-acbe-4482-82c4-112d06b991f8"
+    },
+    {
+      "claim_id": "054da9a9-9f99-4d6b-a01f-2fd31b372c72",
+      "result_id": "6e009977-acbe-4482-82c4-112d06b991f8"
+    },
+    {
+      "claim_id": "2c4e4a9d-acdd-49db-b18a-8fc9ed887301",
+      "result_id": "6e009977-acbe-4482-82c4-112d06b991f8"
+    },
+    {
+      "claim_id": "8bdbdc61-0ebc-4e86-935e-ffb6ed07933c",
+      "result_id": "cc8723a5-32da-4186-8809-a1d3b18cc97b"
+    },
+    {
+      "claim_id": "d59d0f73-63f0-44dc-ab0e-a0b2b4e26803",
+      "result_id": "cc8723a5-32da-4186-8809-a1d3b18cc97b"
+    },
+    {
+      "claim_id": "a3927a2e-af1d-4b2c-9763-8445883ef2b0",
+      "result_id": "cc8723a5-32da-4186-8809-a1d3b18cc97b"
+    },
+    {
+      "claim_id": "026e8afc-408c-4ba5-939d-827dc6030455",
+      "result_id": "cc8723a5-32da-4186-8809-a1d3b18cc97b"
+    },
+    {
+      "claim_id": "a046a2dc-f002-48da-829f-caef251e2fd8",
+      "result_id": "cc8723a5-32da-4186-8809-a1d3b18cc97b"
+    },
+    {
+      "claim_id": "6989715e-5018-46e6-95a8-8fd1adb64970",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "1fb41b9c-4caf-4bb3-a371-d18a80fb67f6",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "a03e6afc-8f51-4de6-9cb0-cdb7128fab1b",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "1259ba1e-34a3-4ba2-ac39-de9197981691",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "03eeb395-b274-4a9b-99c5-f3558e767db5",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "d81883a9-561a-4bfc-8f17-ef72e671fdc9",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "b9e8b945-b38d-4343-b48c-ef3da5ed92ee",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "78421af9-2432-48d2-b75b-58af1d925586",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "81d6751d-9c1e-431f-8c9e-dc626a05bc82",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "e4559de7-7cb0-4775-98e3-ee323a3e0919",
+      "result_id": "1d148358-590b-47b1-9dad-5262a6e864c4"
+    },
+    {
+      "claim_id": "56ce703d-9c47-4786-8044-0dd7fc5c2198",
+      "result_id": "263e9455-e482-43cf-8064-3a5554a65653"
+    },
+    {
+      "claim_id": "0670885d-c6d2-4582-98b1-b6219852b84f",
+      "result_id": "263e9455-e482-43cf-8064-3a5554a65653"
+    },
+    {
+      "claim_id": "6ccdeccd-ecea-4163-b115-e8c6b984a74b",
+      "result_id": "d795274b-7744-4879-9f71-dd4a6e1298e4"
+    },
+    {
+      "claim_id": "4e62fed9-c20e-4414-9f64-c8643a46c943",
+      "result_id": "d795274b-7744-4879-9f71-dd4a6e1298e4"
+    },
+    {
+      "claim_id": "337f7efb-60f4-481f-adc7-4fd959c13ed1",
+      "result_id": "d795274b-7744-4879-9f71-dd4a6e1298e4"
+    },
+    {
+      "claim_id": "22d89120-eac8-44f9-9e8a-1be964b385d5",
+      "result_id": "3de7a941-18ce-4e4c-bb0b-92d7208506a5"
+    },
+    {
+      "claim_id": "7b16c433-f73c-40e7-987b-883e24f98205",
+      "result_id": "3de7a941-18ce-4e4c-bb0b-92d7208506a5"
+    },
+    {
+      "claim_id": "85b88265-a828-4921-9700-93be50d57173",
+      "result_id": "3de7a941-18ce-4e4c-bb0b-92d7208506a5"
+    },
+    {
+      "claim_id": "e5cea5bd-beed-4624-ab4a-f1f9400ef4be",
+      "result_id": "894f3059-bb1d-46ce-a345-7420b9b6d91d"
+    },
+    {
+      "claim_id": "1588392f-9a3a-4c37-b15b-12ee534a911c",
+      "result_id": "894f3059-bb1d-46ce-a345-7420b9b6d91d"
+    },
+    {
+      "claim_id": "c820df77-ef7c-4269-b884-3d83f5c2cd09",
+      "result_id": "894f3059-bb1d-46ce-a345-7420b9b6d91d"
+    },
+    {
+      "claim_id": "1ff71ceb-eb19-4c75-ab5c-e496a9b09bac",
+      "result_id": "894f3059-bb1d-46ce-a345-7420b9b6d91d"
+    },
+    {
+      "claim_id": "d78cab95-b934-4efa-84c2-490ce99476c5",
+      "result_id": "894f3059-bb1d-46ce-a345-7420b9b6d91d"
+    },
+    {
+      "claim_id": "80a184a9-dfb1-4385-b385-489e627e8a9d",
+      "result_id": "94c46fe9-217f-4ffb-ab42-eed337732db6"
+    },
+    {
+      "claim_id": "a10ed9da-c16f-4afa-8417-076c89db7b95",
+      "result_id": "94c46fe9-217f-4ffb-ab42-eed337732db6"
+    },
+    {
+      "claim_id": "93f7a161-bc4c-4eca-8849-d3d2960bdcac",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "6e784748-5de0-4a79-b770-141bc0783beb",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "9953c910-5bac-4b7a-a620-a08988bd7fd6",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "d8a731b6-48d8-4672-b420-e59caafd7c0a",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "f5632547-f09e-46ee-b13c-92b744e27227",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "bcd8317d-9723-4e20-99c0-3638b67200a0",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "cec10fd9-4297-41e3-b886-ed1bdff84919",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "d0e7c2de-a1b2-4178-92e1-b3c683dc51d5",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "1914b331-a386-44d7-bf70-37b4bc6d3bfd",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "dd76706d-1382-4bab-83aa-a62c05fe674e",
+      "result_id": "c7e5cc12-d6bf-42e8-8198-4fb6b562582d"
+    },
+    {
+      "claim_id": "f80f974c-f951-43fe-aa99-9fdbbce495e3",
+      "result_id": "26e1991e-ff26-436b-a4f5-8d79945b923d"
+    },
+    {
+      "claim_id": "3bd0e3db-2c82-47cc-b9ec-b1318499ae3b",
+      "result_id": "26e1991e-ff26-436b-a4f5-8d79945b923d"
+    },
+    {
+      "claim_id": "aefb2a25-0456-4984-af4e-6349106d59a5",
+      "result_id": "26e1991e-ff26-436b-a4f5-8d79945b923d"
+    },
+    {
+      "claim_id": "87a90546-a4d5-4511-a19b-191e243e95fc",
+      "result_id": "26e1991e-ff26-436b-a4f5-8d79945b923d"
+    },
+    {
+      "claim_id": "649c5158-5701-46f1-9d5c-0a3285aee391",
+      "result_id": "26e1991e-ff26-436b-a4f5-8d79945b923d"
+    }
+  ],
+  "comparisons": []
+}

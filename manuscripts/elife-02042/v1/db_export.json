@@ -1,0 +1,2074 @@
+{
+  "submission": {
+    "id": "14f61420-6f66-4741-95da-4c23480286ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:26:18.214291Z",
+    "updated_at": "2025-11-28T20:26:18.214291Z"
+  },
+  "content": [
+    {
+      "id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "submission_id": "14f61420-6f66-4741-95da-4c23480286ff",
+      "content_type": "manuscript",
+      "content_text": "# The nucleosomal barrier to promoter escape by RNA polymerase II is overcome by the chromatin remodeler Chd1\n\n## Authors\n\n- Peter J Skene<sup>1</sup>\n- Aaron E Hernandez<sup>1</sup>\n- Mark Groudine<sup>1</sup>\n- Steven Henikoff<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Basic Sciences Division Fred Hutchinson Cancer Research Center Seattle United States\n2. Howard Hughes Medical Institute, Fred Hutchinson Cancer Research Center Seattle United States\n3. Department of Radiation Oncology University of Washington School of Medicine Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRNA polymerase II (PolII) transcribes RNA within a chromatin context, with nucleosomes acting as barriers to transcription. Despite these barriers, transcription through chromatin in vivo is highly efficient, suggesting the existence of factors that overcome this obstacle. To increase the resolution obtained by standard chromatin immunoprecipitation, we developed a novel strategy using micrococcal nuclease digestion of cross-linked chromatin. We find that the chromatin remodeler Chd1 is recruited to promoter proximal nucleosomes of genes undergoing active transcription, where Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover. The expression of a dominant negative form of Chd1 results in increased stalling of PolII past the entry site of the promoter proximal nucleosomes. We find that Chd1 evicts nucleosomes downstream of the promoter in order to overcome the nucleosomal barrier and enable PolII promoter escape, thus providing mechanistic insight into the role of Chd1 in transcription and pluripotency.\n\n## Introduction\n\nThe eukaryotic genome is packaged into chromatin, with the basic unit being a nucleosome, consisting of 147 base pairs (bp) of DNA wrapped around an octamer of histone proteins. Chromatin limits the accessibility of DNA-binding factors to the underlying DNA sequence and presents a strong physical barrier that must be overcome by RNA polymerase II (PolII) during transcription. In vitro experiments have shown that transcription initiation is the most affected and that elongation is also highly inefficient unless nucleosomes are destabilized (Lorch et al., 1987; Hodges et al., 2009; Jin et al., 2010; Bintu et al., 2012). Despite this barrier, in vivo elongation rates through chromatin are comparable to rates on naked DNA, indicating that the cell has evolved mechanisms to overcome this chromatin barrier (Li et al., 2007; Ardehali and Lis, 2009; Singh and Padgett, 2009; Petesch and Lis, 2012).\n\nThrough the combined action of PolII, elongation factors, nucleosome modifications and chromatin remodelers, the chromatin barrier to transcription is highly dynamic, with nucleosomal turnover correlating with gene expression (Deal et al., 2010). Nucleosomes are disrupted to allow efficient elongation and are reassembled in the wake of PolII to prevent cryptic initiation from intragenic sequences (Cheung et al., 2008; Petesch and Lis, 2008; Quan and Hartzog, 2010). In metazoans, PolII is often enriched immediately downstream of the transcription start site (TSS), raising the possibility that this is a significant barrier to promoter escape in the progression from transcriptional initiation to elongation, with an unknown mechanism by which this barrier is overcome (Guenther et al., 2007; Mavrich et al., 2008; Schones et al., 2008).\n\nAlthough the intrinsic structural preferences of DNA contribute substantially to nucleosome occupancy and positioning in vivo, this chromatin landscape is further manipulated by chromatin remodelers (Segal and Widom, 2009; Kaplan et al., 2010). Chromatin remodelers use the energy from ATP hydrolysis to evict, assemble, and slide nucleosomes in order to guide the proper nucleosome positioning at key sites, such as eukaryotic promoters, where they maintain the nucleosome-depleted region (NDR) and phased flanking nucleosomes (Hartley and Madhani, 2009; Gkikopoulos et al., 2011; Tolkunov et al., 2011). Chromatin remodelers share a common Snf2 helicase-like ATPase domain that is required for the disruption of histone\u2013DNA contacts (Hota and Bartholomew, 2011; Petty and Pillus, 2013). Furthermore, they can be separated into two groups based upon their requirement for extra-nucleosomal DNA. First, ISWI, INO80/SWR1 and CHD require extra-nucleosomal DNA to remodel nucleosomes, whereby they are primarily involved in nucleosome assembly and generating equally spaced arrays by binding to stretches of exposed DNA and shifting nucleosomes into the gap (Whitehouse et al., 2003; McKnight et al., 2011; Udugama et al., 2011). Second, SWI/SNF and RSC remodelers slide or evict nucleosomes irrespective of extra-nucleosomal DNA (Whitehouse et al., 1999; Lorch et al., 2011).The potential role of remodelers in overcoming the nucleosomal barrier has not been fully investigated.\n\nStudies in yeast have suggested the main role for the chromatin remodeler Chd1 to be within the gene body, where Chd1 reassembles and positions nucleosomes in order to prevent cryptic initiation (Cheung et al., 2008; Gkikopoulos et al., 2011; Radman-Livaja et al., 2012; Smolle et al., 2012; Zentner et al., 2013). However, the promoter chromatin architecture is different in metazoans, with the TSS embedded in the nucleosome-depleted region, raising the possibility that this differing chromatin landscape contributes to metazoan PolII accumulating to high levels ahead of the first nucleosome (Mavrich et al., 2008; Schones et al., 2008; Rahl et al., 2010). Here, we show that mammalian Chd1 controls nucleosome dynamics at actively transcribed genes. We find that Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover at the promoter and is required to allow efficient PolII promoter escape, with PolII becoming stalled in the absence of Chd1 activity. Stalling with the loss of Chd1 activity implies that Chd1 is required to overcome the nucleosomal barrier to allow transcription within a chromatin context. In contrast, in the gene body, Chd1 reassembles nucleosomes and suppresses histone turnover. Interestingly, mammalian Chd1 is required for pluripotency of embryonic stem (ES) cells by maintaining euchromatin and is also required for efficient reprogramming, suggesting that Chd1 plays a key role in mammalian cellular identity (Gaspar-Maia et al., 2009). Through both positively and negatively impacting histone dynamics, Chd1 plays roles in transcription and in regulating pluripotency and reprogramming.\n\n## Results\n\n### Chd1 is recruited to the promoter and its ATPase activity is required for binding to extend into the gene body\n\nTo study the role of mammalian Chd1, mouse embryonic fibroblasts (MEFs) were transfected with a transgene expressing FLAG-tagged wild-type mouse Chd1 or a mutant variant harboring the replacement of a conserved lysine to an arginine residue (K510R) in the ATP-binding site of the remodeler (Figure 1A). The K510R Chd1 mutation eliminates the catalytic activity without disrupting its ability to interact with other proteins, thereby generating a dominant negative (Corona et al., 2004). Mutation of this conserved lysine residue has been used to functionally investigate various chromatin remodelers including Brahma and ISWI in Drosophila (Figure 1A; Elfring et al., 1998; Deuring et al., 2000). In comparison to knocking down Chd1 expression, a dominant negative approach is less likely to enable redundant mechanisms to mask protein functions. Western analysis indicated that the FLAG-tagged proteins migrated at the expected size and were only moderately over-expressed relative to endogenous Chd1 in the MEFs (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the domain structure of the full-length mouse Chd1 (1-1711) used to generate the N-terminal FLAG-tagged construct. A region corresponding to the Chd1 ATP-binding pocket is shown below and aligned to various homologues from Saccharomyces cerevisiae and Drosophila melanogaster. The arrow indicates the conserved lysine residue mutated to form the dominant negative. (B) MEFs stably expressing either FLAG-tagged wild-type Chd1 or the dominant negative K510R were subjected to western analysis with a two-fold dilution series. Untransfected MEFs were used as a reference. (C) A representative genome browser snapshot of ChIP-seq data (all fragment lengths) indicating the high occupancy of PolII, wildtype-Chd1 and K510R-Chd1 at gene promoters. PolII distribution was determined in cells expressing wildtype-Chd1 using the N20 antibody. Normalized counts are indicated on the y-axis. (D) Chd1 binding to the 5\u2032 end of genes was determined by ChIP-seq. Here, all recovered DNA fragments, irrespective of length, were analyzed. Each row of the heatmap represents the binding pattern across the \u22120.5 kb to +2 kb region flanking the TSS. Genes were ranked by the level of PolII occupancy in the \u2212100 to +300 bp region, as measured by ChIP-seq in the MEFs expressing wildtype Chd1, using the N20 antibody that binds to the N-terminus of the largest subunit of PolII. (E) Analyzing only the short DNA fragments recovered (35\u201375 bp) allows precise mapping of Chd1, indicating that wildtype Chd1 binding tracks into the gene body, whereas K510R-Chd1 accumulates just downstream of the TSS. The genome-wide average is shown across the 4 kb encompassing the TSS.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Extraction efficiency of mammalian chromatin associated proteins is low using native conditions. Nuclei from cells expressing FLAG-tagged wildtype Chd1 were prepared by hypotonic lysis. A nuclear extract was prepared by MNase digestion to mononucleosomes, followed by needle extraction in a buffer containing either physiological or high salt concentration. The resulting soluble extract was tested for extraction efficiency compared to the total by fluorescent western blotting (Licor Odyssey). Extraction efficiency in percentage is indicated below. (B) Micrococcal nuclease digestion of cross-linked chromatin yields protected sub-nucleosomal particles. MNase digestion of cross-linked chromatin yields mono-nucleosomes, as expected from digestion of non-cross-linked chromatin, but also shorter fragments as indicated by agarose gel electrophoresis of the extracted DNA. A brief sonication pulse was used in order to efficiently solubilize and extract all FLAG-tagged Chd1 and histones. The sonication did not significantly affect the size distribution of DNA fragments, as measured by agarose gel electrophoresis. A typical input sample resolved by agarose gel electrophoresis is shown. (C) Limited sonication of cross-linked chromatin allows complete extraction of chromatin-associated proteins. Cells expressing FLAG-tagged wildtype Chd1 were cross-linked and digested with MNase as detailed. Sonication using a Branson Digital Sonifier was used to prepare a soluble extract, which was tested for extraction efficiency compared to the total by fluorescent western blotting (Licor Odyssey). Extraction efficiency in percentage is indicated below.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Size class comparison to show crosslinking of Chd1 to the promoter proximal nucleosomes. Mapped paired-end reads recovered from the ChIP-seq experiment were separated based on size and occupancy plotted from \u22121 kb to +2 kb surrounding the TSS as a percentage of the dynamic range. PolII ChIP-seq was performed in MEFs expressing wildtype Chd1. (B) K510R Chd1 is enriched at the promoter and depleted in the gene body relative to wildtype Chd1. Average normalized counts were calculated for the promoter region and the gene body and plotted as a percentage of wildtype Chd1. Statistical significance was determined using the two sample Kolmogorov\u2013Smirnov (KS) test. (C) To confirm that the high resolution mapping of PolII and Chd1 shows a similar trend irrespective of fragment size (Figure 1C), genes were ranked and split into quintiles based on PolII promoter occupancy (all fragment sizes; \u2212100 to +300 bp). Using only the short reads that were recovered (35\u201375 bp), averages for each quintile were plotted from \u22121 kb to +2 kb surrounding the TSS.\n\nFirst, we determined the genomic localization of Chd1 using chromatin immunoprecipitation in combination with high throughput sequencing (ChIP-seq). We found that under native conditions only 14% of Chd1 could be extracted (Figure 1\u2014figure supplement 1A). This led us to pursue a formaldehyde cross-linked ChIP strategy, which allows for harsher extraction conditions. Sonication is often used in ChIP to fragment the formaldehyde-cross-linked chromatin. This, however, only provides low resolution, as the fragment size is typically 100\u2013300 bp in comparison to the footprint of either PolII or Chd1, which is 35 bp and 20\u201345 bp respectively (Samkurashvili and Luse, 1996; Ryan et al., 2011). We therefore used Micrococcal nuclease (MNase) digestion of cross-linked chromatin to increase the resolution of ChIP-seq. MNase digests unprotected DNA, leaving DNA fragments corresponding to mono-nucleosomes and sub-nucleosomal fragments, presumably protected by proteins cross-linked to the extra-nucleosomal DNA (Figure 1\u2014figure supplement 1B). By using a modified Solexa library preparation protocol in combination with paired-end sequencing, we were able to map DNA fragments as small as \u223c35 bp (Henikoff et al., 2011). By using MNase to fragment the chromatin and minimal sonication we were able to achieve essentially complete extraction of chromatin and associated proteins, thereby overcoming a significant limitation of native ChIP (Figure 1\u2014figure supplement 1C). This technique is highly transferable, as it requires no special tool development and uses current sequencing technology.\n\nInitially analysis of all the recovered fragments was performed. As expected, wild-type Chd1 was recruited to the 5\u2032 end of genes, similar to what has been shown for endogenous Chd1 in mouse ES cells (Figure 1C,D; Gaspar-Maia et al., 2009). Furthermore, the dominant negative K510R-Chd1 showed a broadly similar chromatin recruitment pattern, consistent with the mutation not affecting interactions with recruiting factors. In addition, we found that the enrichment of Chd1 was primarily just downstream of the TSS, with recruitment correlating with PolII occupancy of the promoter, as measured in the MEFs expressing wild-type Chd1 (Figure 1D). PolII has previously been shown to crosslink to nucleosomes (Koerber et al., 2009). Therefore, mapping the DNA recovered by immunoprecipitation of these cross-linked PolII:nucleosome complexes will not identify the exact binding site of PolII on DNA. To precisely map the position of PolII and Chd1, we mapped 35\u201375 bp fragments, which more closely corresponds to the footprint of PolII and Chd1 (Figure 1\u2014figure supplement 2A). For PolII, there was a shift of the maximal occupancy towards the TSS, from +150 bp for all fragment sizes to a peak centered over the TSS, likely indicating that the larger fragments correspond to PolII crosslinked to the +1 nucleosome. Similarly, for both wild-type and K510R Chd1, larger size classes indicated Chd1 crosslinked to the well-positioned +1 nucleosome. Analysis of short fragments, however, indicated wild-type Chd1 was enriched over the beginning of the gene body with a steady decline from +500 bp. However, in the absence of ATPase activity, K510R-Chd1 density peaked downstream of the TSS at +60 bp, where it accumulated to higher levels than wild-type Chd1 and was depleted in the gene body (Figure 1E, Figure 1\u2014figure supplement 2B). To confirm that mapping of short fragments was similar to that of all fragments, genes were ranked by PolII promoter occupancy as determined from all fragment lengths and separated into quintiles (Figure 1\u2014figure supplement 2C). We find a correlation between Chd1 recruitment and PolII occupancy, as seen for all fragment lengths. Overall, this novel ChIP-seq strategy based on the MNase digestion of cross-linked chromatin and the mapping of short fragments allows precise mapping of the footprint of PolII and Chd1. We find that Chd1 binds just downstream of the TSS, correlates with PolII occupancy at the promoter and requires ATPase activity for the binding to extend into the gene body.\n\n### Chd1 activity is required to maintain nucleosome occupancy within the promoter region and the gene body\n\nChromatin remodelers are known to have a major role in the correct positioning and occupancy of nucleosomes (Gkikopoulos et al., 2011). Therefore we determined the nucleosome profile in cells expressing either wild-type or K510R Chd1 by mapping mono-nucleosome-sized fragments recovered from the sequencing of MNase digested, cross-linked chromatin. Cells expressing wild-type Chd1 display the classical metazoan nucleosome organization pattern, with a pronounced nucleosome depleted region (NDR) containing the TSS, flanked by well positioned nucleosomes, with the +1 nucleosome entry site \u223c50 bp downstream of the TSS (Figure 2A; Mavrich et al., 2008; Schones et al., 2008). In addition, the position of the +1 nucleosome corresponded to the level of PolII promoter occupancy, with the 5\u2032 edge progressively moving towards the TSS, to approximately +15 bp for genes with the lowest PolII occupancy, as previously indicated by ranking human nucleosome positions by steady-state RNA levels (Schones et al., 2008). The positioning of the nucleosomes was not affected by the loss of Chd1 activity, but the nucleosome occupancy was reduced both upstream and downstream of the TSS. In contrast to Saccharomyces cerevisiae, where deletion of Chd1 had no effect on the +1 nucleosome occupancy but only the surrounding nucleosomes, blocking Chd1 activity in MEFs affected promoter proximal nucleosomes including the +1 nucleosome (Gkikopoulos et al., 2011). In S. cerevisiae, the TSS is found just within the +1 nucleosome, thereby suggesting that pre-initiation complex formation requires loss of the +1 nucleosome (Rhee and Pugh, 2012). However, metazoans have a different promoter nuclear architecture with the TSS embedded in the nucleosome depleted region and the +1 nucleosome entry site \u223c50 bp downstream (Mavrich et al., 2008; Schones et al., 2008). Therefore, loss of the mammalian +1 nucleosome occupancy observed here likely reflects a unique role of mammalian Chd1 because of differences to S. cerevisiae in promoter architecture and perhaps the mechanism of transcription through the promoter proximal chromatin. Decreased nucleosome occupancy was also apparent throughout the gene body including upstream of the transcriptional end site (TES).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig2-v1.jpg)\n\n**Figure 2.:** Cross-linked chromatin was digested with MNase and the DNA fragments were subjected to paired-end sequencing. Mono-nucleosomal fragments (111\u2013140 bp) were aligned relative to the TSS or TES. (A) Average nucleosome profile for all genes. Genes were also ranked and split into quintiles based on PolII promoter occupancy (all fragment sizes; density within \u2212100 to +300 bp). The nucleosome map for the highest and lowest quintile is shown. (B) Nucleosome profiles for genes with either the highest or lowest quintile of wildtype-Chd1 binding (35\u201375 bp fragment sizes; density within 0 to +1 kb). Statistical significance was determined using the two sample Kolmogorov\u2013Smirnov (KS) test on the average number of normalized counts within 5 kb downstream of the TSS or upstream of TES. All groups were highly statistically significant (p<1 \u00d7 10\u22129; TES of genes with the highest Chd1 at the promoter was significant p<3 \u00d7 10\u22124) with the exception of the TSS and TES of genes with the lowest PolII density and the TSS of genes with the lowest Chd1 density which showed no significant change.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Cross-linked chromatin was digested with MNase and the DNA fragments were subjected to paired-end sequencing. Mono-nucleosomal fragments (111\u2013140 bp) were aligned relative to the TES. Nucleosome profiles for genes with either the highest (p<2 \u00d7 10\u221216) or lowest quintile (no significant difference) of wildtype-Chd1 binding within the last 3 kb of the gene body (35\u201375 bp fragment sizes). Statistical significance was determined using the two sample KS test on the average number of normalized counts within 5 kb upstream of the TES. (B) MEFs were transduced with either a lentivirus harboring a short hairpin RNA to Chd1 or an empty vector in order to knockdown expression of Chd1. Western analysis to confirm knockdown of endogenous Chd1. \u03b3-Tubulin was used as a loading control. Quantification revealed that 33% of the Chd1 protein remained after knockdown. (C) Upon knockdown of Chd1, nucleosome occupancy is reduced at both promoters and gene bodies. Nucleosome profiles were determined by MNase digestion and paired end sequencing. Mapped mono-nucleosomal fragments (111\u2013140 bp) were aligned relative to the TSS and TES. The average profile for all genes is shown, as well as for genes with the highest or lowest quintile of wildtype-Chd1 binding (35\u201375 bp fragment sizes; density within 0 to +1 kb). Statistical significance was determined using the two sample KS test on the average number of normalized counts within 5 kb downstream of the TSS or upstream of the TES. All pairwise comparisons were highly statistically significant (p<1 \u00d7 10\u22128) with the exception of those with the lowest Chd1 occupancy.\n\nThe decrease in nucleosome occupancy was most apparent at genes with the highest PolII levels at the promoter, as expected given that Chd1 occupancy correlates with PolII promoter occupancy, with no statistically significant change at genes with low PolII levels at the promoter (Figure 2A). Genes were ranked by wildtype-Chd1 binding within the beginning of the gene to more directly test the role of Chd1 in maintaining nucleosome occupancy (Figure 2B). Genes with the highest recruitment of Chd1 exhibited the most dramatic loss of nucleosomes at the promoter upon expression of K510R-Chd1, consistent with a direct role of Chd1. Additionally, genes with the lowest recruitment of wild-type Chd1 displayed a markedly different nucleosome landscape, with unphased nucleosomes and the absence of a pronounced NDR (Figure 2B). Despite this relatively flat profile at the TSS being insensitive to the expression of K510R-Chd1, it suggests that the \u2018open\u2019 and \u2018closed\u2019 promoter architecture, as defined by the existence of an NDR at the TSS, can be categorized based on recruitment of remodelers such as Chd1 (Cairns, 2009). The loss of nucleosome occupancy within the last 1 kb of the gene body was independent of the level of Chd1 recruitment to the promoter (Figure 2B). In contrast, the loss of nucleosome occupancy in the gene body correlated with level of Chd1 binding in the gene body (Figure 2\u2014figure supplement 1A). This indicates that Chd1 action within the distal part of the gene body is independent of its recruitment to the promoter.\n\nTo establish whether the effects of the K510R mutant can be mimicked by reduced levels of Chd1, endogenous levels of Chd1 were reduced using a short-hairpin RNA (Figure 2\u2014figure supplement 1B). Nucleosome occupancy was reduced at both the promoter and the gene body upon knockdown of Chd1, as seen with the expression of K510R-Chd1 (Figure 2\u2014figure supplement 1C). To determine the concordance between knockdown and expression of the dominant negative, genes were ranked by transgenic wild-type Chd1 occupancy. Genes with the highest Chd1 occupancy were most affected by knockdown, suggesting that knockdown of Chd1 phenocopied the expression of the dominant negative. Overall, loss of Chd1 activity resulted in reduced nucleosome occupancy at both the promoter and the gene body confirming that Chd1 is involved in defining the chromatin landscape.\n\n### Chd1 has opposing roles in regulating nucleosome turnover at the promoter and the gene body\n\nThe mapping of MNase-digested mono-nucleosomes provides information regarding steady-state nucleosome occupancy and positioning, but does not yield insight regarding nucleosome dynamics. We used CATCH-IT (covalent attachment of tags to capture histones and identify turnover) to measure nucleosome turnover (Deal et al., 2010). CATCH-IT involves the pulse labeling of newly synthesized proteins and the subsequent purification of newly assembled nucleosomes. Our results showed that histone turnover was most rapid at the nucleosomes flanking either side of the promoter and progressively decreased towards the gene body (Figure 3A). We observed marked changes in nucleosome turnover upon the expression of K510R-Chd1. First, nucleosome turnover was significantly reduced on either side of the TSS (Figure 3A). Second, nucleosome turnover was significantly increased within the gene body, evident from \u223c500 bp downstream of the TSS and also in the gene body upstream of the TES (Figure 3A,B, Figure 3\u2014figure supplement 1A). These results suggest opposing roles for Chd1 in regulating nucleosome turnover at the promoter and the gene body. We found that the role of Chd1 in regulating nucleosome turnover at the promoter and the gene body is independent of gene length (Figure 3\u2014figure supplement 1B). This is in contrast to yeast, where a previous study indicated Chd1 protects long genes from nucleosome replacement in the gene body (Radman-Livaja et al., 2012). In yeast, the magnitude of the effect on nucleosome turnover was approximately equivalent at the promoter and the gene body (Radman-Livaja et al., 2012; Smolle et al., 2012). However, we find that the primary action of mammalian Chd1 on driving nucleosome turnover is at the promoter, which might suggest a different function of Chd1 in mammals.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig3-v1.jpg)\n\n**Figure 3.:** Nucleosome turnover is decreased over the promoter but increased over the gene body. The genome-wide average nucleosome turnover was discerned using CATCH-IT at both the (A) TSS and (B) TES. (C) Nucleosome turnover correlates with elongating PolII density and is increased in cells expressing K510R-Chd1. Genes were ranked by the density of serine-2-phosphorylated PolII within the last 3 kb of the gene body. The average density of elongating PolII was calculated with a sliding window of 500 genes plotted against the average CATCH-IT signal within \u22123 to \u22120.5 kb relative to the TES (Pearson correlation coefficient >0.85). The difference for each window was calculated and is shown graphically below. (D) Chd1 is recruited to genes with actively elongating PolII. Genes were ranked as per (C) and plotted against the average ChIP-seq signal for FLAG-tagged wildtype Chd1 (35\u201375 bp fragment sizes) within the same region. (Pearson correlation coefficient >0.9).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Chd1 activity suppresses nucleosome turnover in the gene body. Nucleosome turnover is increased in the gene body in cells lacking Chd1 activity. Average CATCH-IT signal is plotted for the regions +1 to +3 kb relative to the TSS and \u22123 to \u22120.5 kb relative to the TES. Statistical significance was determined using a t-test. (B) The role of Chd1 on nucleosome turnover at the TSS and the gene body is independent of gene length. CATCH-IT signal was averaged at the promoter (left; \u2212150 bp to +150 bp relative to the TSS) or the gene body (right; \u22123 kb to \u22120.5 kb relative to the TES) and plotted as a function of gene length with a sliding window of 500 genes.\n\nWe found that nucleosome turnover in the gene body correlated with increasing levels of elongating PolII (Figure 3C). This is consistent with several studies suggesting that there is lower retention of the complete octamer at high transcriptional rates than at lower ones (Kireeva et al., 2002; Thiriet and Hayes, 2006; Bintu et al., 2011). Nevertheless, nucleosome turnover was highly variable at low levels of elongating PolII density, indicating that there is significant gene-to-gene variation in the mechanism of PolII transit through nucleosomes at low rates of transcription. Nucleosome turnover in the gene body was increased in cells expressing K510R-Chd1, with the increase approximately constant at all densities of elongating PolII, suggesting an equivalent contribution by Chd1 in the suppression of nucleosome turnover irrespective of transcription rate (Figure 3C; lower panel). We sought to further understand the nature of Chd1 action in the gene body by studying potential recruitment mechanisms. As previously discussed, the loss of nucleosome occupancy within the distal regions of the gene body did not scale with Chd1 recruitment to the promoter. This suggests separable Chd1 recruitment to the promoter and the gene body. We found that the level of both wildtype and K510R-Chd1 recruitment to the gene body positively correlated with elongating PolII density within the gene body (Figure 3D). Taken together, these observations suggest that occupancy of Chd1 at the promoter and the gene body correlates with the amount of PolII in the respective genomic compartments. The surprising lack of correlation between Chd1 occupancy and suppression of nucleosome turnover in the mutant suggests that Chd1 is not absolutely required for turnover at high transcription rates. Overall, these results suggest that Chd1 is recruited to actively transcribing chromatin where it is involved in the suppression of nucleosome turnover within the gene body.\n\n### Chd1 is responsible for most of PolII-directed nucleosome turnover around promoters\n\nIn contrast to nucleosome turnover at the gene body, nucleosome turnover at the promoter was decreased upon the expression of K510R-Chd1. We sought to determine if this reduction correlated with PolII promoter density given that both Chd1 occupancy and loss in nucleosome occupancy was most pronounced at genes with high PolII promoter density. Genes with higher levels of PolII displayed increased nucleosome turnover surrounding the TSS (Figure 4A), as might have been expected from the positive correlation between steady-state RNA levels and nucleosome turnover (Deal et al., 2010; Yang et al., 2013). Turnover outside of the promoter region remained high in the absence of Chd1 activity, but was markedly reduced within the promoter proximal region (\u2212350 to +350 bp) encompassing the \u22121 nucleosome, the TSS and the +1 and +2 nucleosomes (Figure 4A,B). We determined the average CATCH-IT signal within the promoter proximal region as a function of PolII occupancy (Figure 4C). At low to intermediate PolII densities, we found that cells expressing wildtype-Chd1 displayed a positive correlation between PolII density and nucleosome turnover, with turnover reaching a ceiling value at high levels of PolII. In contrast, expression of the dominant negative Chd1 resulted in the near-complete abrogation of turnover to basal levels for all levels of PolII occupancy. Knockdown of endogenous Chd1 resulted in a partial reduction in nucleosome turnover at the promoter (Figure 4\u2014figure supplement 1), consistent with either incomplete knockdown or redundant factors. The striking loss of nucleosome turnover in the K510R-Chd1 mutant suggests that Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover within the promoter proximal region. In summary, by analyzing nucleosome dynamics in combination with steady-state nucleosome occupancy, our results suggest that Chd1 is responsible for PolII-directed nucleosome turnover at promoters but suppresses nucleosome turnover within gene bodies. Despite these opposite actions of Chd1 in nucleosome turnover kinetics, we find that Chd1 is required to maintain net nucleosome occupancy both around the promoter and within the gene body.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig4-v1.jpg)\n\n**Figure 4.:** (A) CATCH-IT data represented as a heatmap for the \u00b11.5 kb surrounding the TSS. Genes were ranked by the level of PolII occupancy at the promoter (all fragment sizes; density within \u2212100 to +300 bp). (B) Nucleosome turnover is reduced over the promoter proximal region in cells expressing K510R-Chd1. The difference in CATCH-IT signal between cells expressing wildtype and K510R-Chd1 at the TSS \u00b1500 bp is plotted. The genome-wide average nucleosome occupancy is shown for reference for cells expressing wildtype-Chd1. (C) Chd1 is required for PolII-directed turnover at the promoter proximal region. Genes were ranked by PolII promoter density in cells expressing wildtype-Chd1 and plotted against the average CATCH-IT signal in the promoter proximal region with a sliding window of 600 genes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** MEFs were transduced with either a lentivirus harboring a short hairpin RNA to Chd1 or an empty vector in order to knockdown expression of Chd1. CATCH-IT was performed to measure nucleosome dynamics. Genes were ranked by PolII promoter density and plotted against the average CATCH-IT signal in the promoter proximal region with a sliding window of 600 genes.\n\n### Chd1 activity is required for efficient promoter escape by PolII\n\nPrevious work in yeast has not identified a clear link between the loss of Chd1 and the consequence on transcription. In fission yeast, approximately half of Chd1 ortholog bound promoters showed a change in nucleosomal occupancy, with the vast majority increasing histone H3 density upon loss of Chd1 and no significant change in gene expression (Walfridsson et al., 2007). In vitro analysis of the S. cerevisiae PHO5 gene promoter indicated that Chd1 was required to remove the +1 nucleosome, which occludes the TSS, but no robust change in gene expression was observed in vivo without the synergistic loss of the chromatin remodeler ISWI (Ehrensberger and Kornberg, 2011). To better interpret the transcriptional consequences of the alterations in mammalian chromatin architecture at the promoter, we established the changes in PolII distribution upon K510R-Chd1 expression by performing ChIP-seq with an antibody against the N-terminus of the largest subunit of PolII, which recognizes total PolII independent of phosphorylation (Figure 5A). The majority of PolII was bound to the promoter region, as expected given the prevalence of promoter proximal pausing in metazoans and consistent with the idea that promoter escape is a major barrier to productive elongation (Krumm et al., 1995; Rahl et al., 2010). This is in contrast to S. cerevisiae, where the majority of transcriptional control is at the level of PolII recruitment to the promoter, with a relatively even distribution of PolII across the gene (Stargell and Struhl, 1996; Robert et al., 2004; Rhee and Pugh, 2012). Unexpectedly, the expression of K510R-Chd1 resulted in increased PolII occupancy within the promoter region and was most apparent at genes with the highest PolII occupancy, suggesting a role for Chd1 in the distribution of PolII.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig5-v1.jpg)\n\n**Figure 5.:** Genome-wide distribution of PolII was determined using ChIP-seq with antibodies against (A) the N-terminus of Rpb1 to map total PolII and (B) PolII Ser2phos to map elongating PolII. The recovered short reads (35\u201375 bp) were mapped and the genome-wide average was plotted. Genes were also ranked and split into quintiles based on total PolII promoter occupancy in cells expressing wildtype-Chd1 (all fragment sizes; density within \u2212100 to +300 bp). The PolII distribution is shown for the highest and lowest quintiles. Statistical significance was determined using the KS test on the average counts within (A) \u2212100 to +300 bp and (B) +1 kb to +5 kb relative to the TSS. Differences between wt-Chd1 and K510R-Chd1 were significant (p<1 \u00d7 10\u22129) with the exception of elongating PolII density in genes the lowest promoter PolII occupancy. (C) The elongation rate within the gene body is unaffected by the expression of K510R-Chd1. The fold enrichment in PolII Ser2phos density within 1 kb genic windows was calculated relative to the average density within the first 5 kb of the gene. Error bars represent standard deviation.\n\nThe increased PolII occupancy at the promoter could be due to either increased recruitment of PolII to the promoter or alternatively decreased efficiency of promoter escape into the gene body. To distinguish these alternatives, we established the distribution of actively elongating PolII using an antibody that recognizes the serine-2-phosphorylated elongating form (PolII Ser2phos) (Figure 5B). The signal for PolII Ser2phos increased after the promoter region and continued into the gene body, as expected for elongating PolII. In cells expressing K510R-Chd1, the level of PolII Ser2phos was reduced throughout the gene body, with the effect most pronounced at the genes with highest level of PolII occupancy at the promoter, indicating a role of Chd1 in enabling promoter escape. Alternatively, Chd1 might be affecting the elongation rate within the gene body. To test this possibility, the distribution of PolII Ser2phos was normalized to the average density across the first 5 kb of the gene body (Figure 5C). We found no significant change in the distribution of elongating PolII, suggesting that Chd1 does not affect elongation rate in the gene body. Altogether, our results showed that Chd1 activity is required for efficient promoter escape by PolII and in its absence, PolII accumulates at the promoter with a concomitant decrease in the gene body.\n\n### Chd1 alleviates the nucleosome barrier to PolII transit at processive genes\n\nAs Chd1 modulates PolII release from promoters, we wondered whether this ATP-remodeling complex alleviates PolII stalling. Therefore, we calculated the stalling index in the presence of wild-type and mutant Chd1. We defined the stalling index as the ratio of total PolII density at the promoter (\u2212100 to +300 bp) relative to the density of PolII Ser2phos within the gene body (+1 to +5 kb) (Figure 6A, Figure 6\u2014figure supplement 1A). We found that, on average, cells expressing K510R-Chd1 had a two-fold increase in the stalling index in comparison to wildtype (Figure 6B). To determine if this increase in stalling predominantly occurred at stalled or processive genes, genes were ranked by increasing stalling index (Figure 6C). Cells expressing wild-type Chd1 displayed stalling indices spanning several orders of magnitude. Cells expressing K510R-Chd1 had a greatly reduced range of stalling indices, with an overall increase in stalling and the processive genes being most affected. This suggests that Chd1 enables PolII to escape from the promoter region to allow processive transcription.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic describing the calculation of the stalling index. The dark gray shading indicates the total PolII density at the promoter (\u2212100 to +300 bp) as calculated from the ChIP-seq data using the N20 antibody against the N-terminus of Rpb1 (black line). The light grey shading indicates the density of actively elongating PolII in the gene body (+1 to +5 kb or the end of the gene), calculated from the PolII Ser2phos ChIP-seq data (gray line). The stalling index is the ratio of these two values. (B) The stalling index is increased \u223ctwofold in cells expressing K510R-Chd1. Box plot comparing the distribution of stalling indices for all genes. Statistical significance was determined using the Kolmogorov\u2013Smirnov test. (C) Lack of Chd1 leads to increased PolII stalling, preferentially affecting genes with processive transcription. Genes were ranked by stalling index and plotted against the stalling index in cells expressing wildtype or K510R Chd1 with a sliding window of 200 genes. (D) Chd1 is preferentially recruited to the promoter region of genes with processive transcription compared to stalled genes. Wildtype-Chd1 binding profile across highly stalled and processive genes from the highest quintile of PolII promoter occupancy. (E) K510R-Chd1 accumulates near the dyad axis of the promoter proximal nucleosomes. The wildtype and K510R Chd1 binding profiles at these highly processive genes are shown. Nucleosome occupancy in cells expressing wildtype-Chd1 is shown for reference with gray ovals indicating the 147 bp of DNA protected by the nucleosomes. (F) PolII stalls in front of promoter proximal nucleosomes in the absence of Chd1 activity. PolII distribution at highly processive genes, as measured by ChIP-seq using the N20 antibody is shown. Nucleosome occupancy in cells expressing wildtype-Chd1 is shown for reference with gray ovals indicating the 147 bp of DNA protected by the nucleosomes.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Stalling index and traveling ratio are closely correlated. Genes were ranked by increasing stalling index in cells expressing wildtype-Chd1 and then the average stalling index was calculated with a 500-gene sliding window and plotted against the traveling ratio. The traveling ratio has previously been used to measure accumulation of PolII within the promoter region and is defined as the ratio of total PolII density at the promoter (\u221230 to +300 bp) relative to the total PolII density in the gene body. There is a potential concern with this metric: alternative promoters could cause a large peak of total PolII density within the gene body. The stalling index reduces this problem by using PolII Ser2phos density within the gene body (+1 to +5 kb). This graph shows that over a large numbers of genes the stalling index and traveling ratio are however closely correlated (Pearson correlation coefficient >0.85). (B) PolII density at the promoter (\u2212100 to +300 bp) in the MEFs expressing wildtype-Chd1. Boxplots were calculated for the top 500 stalled and processive genes as described in (C). (C) Boxplots comparing stalling indices for the different groups analyzed. From left to right: (1) all genes; (2) genes from the highest quintile of PolII promoter occupancy (all fragment sizes; density within \u2212100 to +300 bp); (3) top 500 stalled genes from this quintile; (4) top 500 processive genes from this quintile. Statistical significance was determined using the KS test.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Distinct nucleosome organization at processive and stalled genes. Cross-linked chromatin was digested with MNase and the DNA fragments were subjected to paired-end sequencing. Mono-nucleosomal fragments (111\u2013140 bp) were aligned relative to the TSS. MNase-seq for the highly stalled and processive genes from the highest quintile of PolII promoter occupancy. Statistical significance was determined using the two sample KS test on the average number of normalized counts within 5 kb downstream of the TSS: p<2 \u00d7 10\u221212. (B) Nucleosome turnover at the +1 is higher at processive genes than stalled genes. Average CATCH-IT signal is plotted for the regions 0 to +150 bp relative to TSS. Statistical significance was determined using a t-test.\n\nTo confirm that the main function of Chd1 is at processive genes, Chd1 binding to stalled or processive genes was addressed. As Chd1 binding scales with PolII density (Figure 1), only the genes in the highest quintile of PolII promoter occupancy were investigated to minimize the variation due to differences in PolII promoter occupancy. We found that processive genes showed a much higher Chd1 occupancy than stalled genes (Figure 6D), despite having a lower level of PolII density (Figure 6\u2014figure supplement 1B). In addition, the median stalling index was increased \u223ctwofold at these processive genes by the expression of K510R-Chd1, whereas these stalled genes were unaffected (Figure 6\u2014figure supplement 1C). This suggests that although Chd1 recruitment largely follows PolII occupancy at the promoter, there must be additional factors that are linked to processive elongation that influence Chd1 recruitment.\n\nThe Chd1-binding profile was plotted for processive genes over the promoter region to understand how Chd1 might be functioning to enable promoter clearance at processive genes (Figure 6E). Wildtype-Chd1 displayed a relatively even profile across the promoter, whereas K510R-Chd1 displayed peaks of binding near the dyad axis for each of the promoter proximal nucleosomes, with the peak of Chd1 \u223c50 bp inside of the leading edge of the +1 nucleosome. Binding at this position is consistent with in vitro studies, which suggest that chromatin remodelers initiate translocation on nucleosomal DNA at an internal position \u223c20 bp from the dyad at superhelical location 2 (Saha et al., 2005; Zofall et al., 2006). These peaks likely represent the sites of action of wildtype-Chd1 on its nucleosomal substrate, but through the expression of catalytically dead Chd1 we have been able to capture these normally transient interactions.\n\nRecent work in Drosophila indicated that at the more processive M1BP bound genes, PolII accumulated in front of the well-positioned +1 nucleosome (Li and Gilmour, 2013). In agreement with this, we find that processive genes have higher promoter proximal nucleosome occupancy and furthermore that +1 nucleosome turnover is higher at processive genes than stalled genes (Figure 6\u2014figure supplement 2A,B). This raised the possibility that the promoter proximal nucleosomes at processive genes are acting as dynamic barriers to transcription. We therefore sought to understand how PolII transits through the promoter proximal nucleosomes in the absence of functioning Chd1. The total PolII ChIP-seq profile was plotted over the promoter region of these highly processive genes, which become stalled following the expression of K510R-Chd1. In contrast to the relatively even profile for PolII in the cells expressing wildtype-Chd1, the absence of Chd1 activity resulted in clear peaks in the PolII distribution (Figure 6F). These peaks precede each of the promoter proximal nucleosomes and are shifted upstream relative to the sites of action of Chd1 at the nucleosomes, with PolII accumulating \u223c20 bp inside the entry site of the +1 nucleosome. This suggests that Chd1 functions at processive genes to remove the nucleosomal barrier ahead of PolII and in its absence PolII stalls in front of the now static promoter proximal nucleosomes leading to a reduced efficiency of promoter escape.\n\n## Discussion\n\nUsing a novel high resolution chromatin immunoprecipitation strategy, we report the key role of Chd1 in defining nucleosome dynamics during the transcription cycle (Figure 7A). We find that mammalian Chd1 is primarily recruited just downstream of the start site of PolII-bound genes. Through the expression of a dominant negative form of the chromatin remodeler Chd1, we have shown that Chd1 is responsible for the vast majority of nucleosome turnover at the promoter and is required for PolII promoter escape. Our analysis identifies promoter proximal nucleosomes as a barrier to PolII promoter escape and suggests how Chd1 overcomes this barrier. In addition, we find that Chd1 also functions in later stages of the transcription cycle, with Chd1 binding in the gene body correlating with elongating PolII density, where it suppresses nucleosome turnover and in its absence leads to decreased nucleosome occupancy.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02042/elife-02042-fig7-v1.jpg)\n\n**Figure 7.:** At the promoter of processive genes, Chd1 is recruited directly to the promoter proximal nucleosomes, where it is required for both eviction of existing histone octamers (green) and deposition of new octamers (red). In the absence of Chd1 activity, PolII stalls close to the leading edge of the nucleosome. In the gene body, Chd1 occupancy correlates with elongating PolII, where it reassembles histone octamers in cis behind the transiting PolII. The lack of Chd1 activity leads to increased deposition of new histone octamers through an unknown factor.\n\nThe role for Chd1 in gene bodies is consistent with in vitro studies indicating that Chd1 actively assembles chromatin and slides nucleosomes into ordered arrays (Lusser et al., 2005; Torigoe et al., 2013). In vivo, Chd1 is likely to function in reassembly of nucleosomes displaced during elongation. In the absence of Chd1 activity, reassembly is compromised, leading to the deposition of de novo synthesized nucleosomes, consistent with observations in yeast (Gkikopoulos et al., 2011; Hennig et al., 2012; Radman-Livaja et al., 2012; Smolle et al., 2012). The close correlation between Chd1 occupancy and elongating PolII density indicates a possible mechanism for the recruitment of Chd1, consistent with studies indicating that Chd1 associates with elongation factors including polymerase-associated factor (PAF1), DSIF and FACT (Simic et al., 2003). In vitro remodeling by Chd1 is dependent upon its C-terminal DNA binding domain interacting with extranucleosomal DNA and may also be required for efficient Chd1 recruitment (Kagalwala et al., 2004; Stockdale et al., 2006; McKnight et al., 2011). More specifically, the DNA immediately upstream of the nucleosome has been shown to be important for the initial stage of nucleosome movement in ISWI-type remodelers (Zofall et al., 2004). Single-molecule optical trap experiments suggest that PolII transcribes through a nucleosome by the in cis transfer of histones, particularly the H3:H4 tetramer, to DNA upstream of PolII via the formation of a transient DNA loop (Hodges et al., 2009; Kulaeva et al., 2009; Bintu et al., 2011). This might suggest that Chd1 is recruited to the gene body via the elongation complex and is then targeted to the nucleosome substrate via binding to the exposed DNA loop immediately adjacent to the histone octamer to facilitate the in cis transfer of histone octamers.\n\nChd1 is primarily found at the 5\u2032 end of PolII bound genes and is particularly enriched at genes undergoing processive transcription. By increasing the resolution of standard cross-linked ChIP-seq, we find that Chd1 binds within the leading edge of promoter proximal nucleosomes, where it is required for virtually all of PolII-directed nucleosome turnover at the promoter. Expression of K510R-Chd1 results in reduced steady-state nucleosome occupancy. Despite this, PolII was observed to accumulate just within the entry site of promoter proximal nucleosomes and a concomitant increase in the stalling index, indicative of an increase in the barrier to PolII promoter escape. This increased PolII stalling is consistent with the reduced nucleosome turnover at the promoter, indicating a more static chromatin structure forming a barrier to promoter escape. The increase in stalling occurs despite a decrease in steady-state nucleosome occupancy, highlighting the importance of kinetic measurements for chromatin structure. The apparent discrepancy of an increase in the barrier to PolII accompanying a decrease in steady-state nucleosomal occupancy can be most easily reconciled if Chd1 acts to evict the nucleosomes ahead of PolII transit and then reassemble nucleosomes in the wake of PolII. In the absence of Chd1, nucleosome eviction is likely to still occur as a result of transcription albeit at a lower rate, and the CATCH-IT analysis suggests de novo nucleosome deposition is greatly reduced, overall leading to the reduced steady-state nucleosome occupancy.\n\nThese opposing activities at the gene body and the promoter may perhaps be explained through differing mechanisms by which Chd1 engages with the nucleosomal substrate after the point of recruitment. As discussed, the assembly activity in the gene body is likely to be directed via the non-specific DNA binding domain interacting with extra-nucleosomal DNA. A recent in vitro study directly tethered yeast Chd1 to the nucleosomal substrate independent of the DNA binding domain and observed nucleosome sliding and eviction more typical of SWI/SNF-type remodelers (Patel et al., 2013). This suggests that the observed nucleosome eviction by Chd1 at the promoter is likely to reflect activity independent of the DNA binding domain, raising the question of how Chd1 engages with the nucleosomal substrate. The tandem chromodomains in human Chd1 have been shown to specifically interact with H3K4me3, whereas in S. cerevisiae, the chromodomains lack key tryptophan residues required for H3K4me3 binding (Flanagan et al., 2005; Sims et al., 2005). Therefore activity dependent on the chromodomains provides a tantalizing explanation for the role of mammalian Chd1 in nucleosome eviction at the promoter in contrast to yeast Chd1, where Chd1 does not affect occupancy of the +1 nucleosome (Gkikopoulos et al., 2011). This unique requirement for mammalian Chd1 to overcome the nucleosomal barrier to PolII at the promoter may reflect differences from yeast in both chromatin architecture and transcriptional regulation, with yeast having the TSS buried within the +1 nucleosome and primarily regulating transcription through recruitment (Robert et al., 2004; Rhee and Pugh, 2012).\n\nThese functions of mammalian Chd1 in defining nucleosome dynamics during transcription may explain phenomena associated with its loss. Given that the majority of post-translational modifications (PTMs) are found on either H3 or H4, the retention of the H3:H4 tetramer during transcription has been proposed to have a role in the maintenance of chromatin states throughout the genome (Kulaeva et al., 2009). This suggests that the increased histone turnover observed in the gene body in the absence of Chd1 activity could compromise epigenetic regulation, and might explain the observation that Chd1 is required for maintaining euchromatin in ES cells by preventing heterochromatin formation (Gaspar-Maia et al., 2009). In contrast, the Chd1 dependent turnover observed at the promoter would have the effect of removing histone \u2018memory\u2019 and might explain the requirement for Chd1 in reprogramming through the deposition of de novo histones at the promoter to allow the reactivation of pluripotency genes (Gaspar-Maia et al., 2009; Jullien et al., 2012; Skene and Henikoff, 2012). Given that doxorubicin, a commonly used anti-cancer drug, enhances nucleosome turnover, the identification of Chd1 in directing nucleosome turnover provides a mechanistic basis for its tumor suppressor role and may indicate the molecular basis for carcinogenesis in the absence of Chd1 (Huang et al., 2012; Liu et al., 2012; Yang et al., 2013). Overall, these observations point to a key role for Chd1 in regulating the mammalian transcriptional landscape.\n\n## Materials and methods\n\n### Constructs and cell lines\n\nImmortalized MEFs were transfected with a Piggybac expression vector with the CAG promoter driving N-terminal FLAG-tagged expression of Chd1 (40086932; Open Biosystems, Pittsburgh PA) and puromycin resistance. The K510R mutation was generated by site directed mutagenesis and verified by sequencing. MEFs were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) (#11965-092; Invitrogen, Grand Island NY) supplemented with 10% FBS, 1% penicillin-streptomycin at 37\u00b0C and puromycin (1.5 \u00b5g/ml). Knockdown of endogenous Chd1 was achieved using vectors as previously described (Gaspar-Maia et al., 2009).\n\n### Western blots\n\nWestern blots were performed under standard conditions using whole cell extracts and probed with the following antibodies: FLAG (M2 F1804; Sigma, St. Louis MO); Chd1 (39729; Active Motif, Carlsbad CA); \u03b3-Tubulin (ab11316; Abcam, Cambridge MA).\n\n### ChIP-seq\n\nChIP was performed as previously described (Schmiedeberg et al., 2009) with the following modifications. Chromatin fragmentation was achieved by adding MNase after cell lysis to produce predominantly mono-nucleosomes. Sonication (40 s; 30% amplitude; Branson digital sonifier) was used to ensure complete extraction of Chd1 and histone H3, as measured by western analysis. The following antibodies were used: FLAG (A2220; Sigma); N20 (sc-899; Santa Cruz, Dallas Tx); PolII Ser2phos (ab5095; Abcam). Libraries were prepared from the isolated DNA and sequenced on the Illumina HiSeq 2000 platform (Henikoff et al., 2011). Paired-end sequencing data were processed and aligned to the mm9 genome build using Bowtie and the distribution plotted around the 5\u2032 and 3\u2032 ends of genes as previously described (Henikoff et al., 2011).\n\n### CATCH-IT\n\nCATCH-IT was performed as described previously with the following modifications (Yang et al., 2013). Nuclei were isolated by hypotonic lysis of cells in ice-cold NE1 buffer (20 mM HEPES-KOH (pH 7.9), 10 mM KCl, 1 mM MgCl2, 0.1% Triton X-100, 1 mM DTT, 20% Glycerol) and then processed as previously described. Input and CATCH-IT DNAs were amplified using a whole-genome amplification kit (Sigma-Aldrich), followed by labeling using Cy3 and Cy5 heptamers according to the Roche Nimblegen labeling protocol. Labeled samples were hybridized together to mouse 2.1-million probe promoter arrays (Roche Nimblegen, Madison WI).\n\n## Accession numbers\n\nData have been submitted to the Gene Expression Omnibus under accession number GSE52349 (Skene et al., 2014).\n",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "61ea4bac-a1f3-4a7c-ab82-a62874d69dfd",
+      "submission_id": "14f61420-6f66-4741-95da-4c23480286ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaquin M Espinosa, HHMI/University of Colorado at Boulder , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02042.017](https://doi.org/10.7554/eLife.02042.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: although it is not typical of the review process at eLife, in this case the editors decided to include the reviews in their entirety for the authors\u2019 consideration as they prepared their revised submission.]\n\nThank you for sending your work entitled \u201cThe nucleosomal barrier to promoter escape by RNA Polymerase II is overcome by the chromatin remodeler Chd1\u201d for consideration at eLife. Your article has been evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nAs you will gather from the full reviews included below, there was a clear disparity in the initial assessment of your manuscript. Whereas Reviewers 1 and 2 observed the various strengths of your work and found it appropriate for publication in eLife, Reviewer 3 pointed out that several key observations into the role of Chd1 in nucleosome remodeling at distinct genomic locations described in your manuscript had been previously established in the literature. This led Reviewers 1 and 2 to re-review your manuscript to determine to what degree the novel aspects in your work constituted a significant advance in the field. After this process, Reviewers 1 and 2 agreed that overall the paper ranks as very good and that there is new information in the manuscript.\n\nUpon further discussion, we would like to encourage a resubmission of a revised manuscript that not only thoroughly addresses the technical and data interpretation concerns raised by Reviewer 3, but also is rewritten in a way that better emphasizes what was known and what is novel in this paper about the role of Chd1 in nucleosome position and exchange. We also encourage addition of any new available data that would further advance our understanding of the molecular mechanism of action of Chd1.\n\nReviewer 1:\n\nThe manuscript by Skene et al clearly demonstrates a key role for the nucleosome remodeler Chd1 in RNA polymerase II (RNAPII)-driven nucleosome turnover at gene promoters in vertebrate cells. Accordingly, Chd1 arises as a key regulator of RNAPII activity at the level of pausing and elongation. Given the widespread occurrence of RNAPII pausing in metazoans and the ever-increasing appreciation of RNAPII elongation control in regulation of gene expression, the current manuscript is deemed of high impact for the gene expression and chromatin fields.\n\nThe manuscript is beautifully written, the data is of high quality and generated with cutting-edge technology and the conclusions are fully supported by data. In my mind, the manuscript is meritorious for publication in eLife basically as it is.\n\nMy only minor concern is the creation of the RNAPII 'stalling index' in Figure 6, which is basically equivalent to the RNAPII 'pausing index' used by many reports in the literature. There is a minor technical difference in how Skene et al. calculated their index (i.e., using Ser2-phospho-RNAPII as denominator instead of total RNAPII) which I don't mind, but I don't think there is need to introduce 'stalling' here, I'll be happy with 'pausing'.\n\nReviewer 2:\n\nThe authors are experts in chromatin biology, and have developed several assays that enable different attributes of promoter chromatin to be analyzed. Here, they explore the impact of Chd1 remodeler on promoter chromatin. This issue has been addressed previously in ES cells at lower resolution, where promoter association was observed, with Chd1 loss leading to the acquisition of heterochromatin.\n\nThe paper starts with the application of methods developed in the Henikoff lab to examine both Chd1 and RNA PolII in MEFs. This involves the separate examination of larger and smaller fragments derived from limited MNase digestion of crosslinked chromatin, following chromatin IP (ChIP). The larger fragments represent linkage of the factor to nucleosomes, whereas the smaller represent the factor's footprint. Support is provided that smaller fragments with PolII better link to the TSS.\n\nFor Chd1, the authors examine both an epitope-tagged WT and a catalytic mutant. With both Chd1 derivatives, localization to the +1 nuc was observed, however the catalytic mutant showed additional occupancy of proximal downstream nucleosomes. This data was nicely done and described. The authors then explored the impact on nucleosome occupancy and positioning following expression of the dominant-negative Chd1 derivative. Here, they claim a loss in nucleosome occupancy without a change in positioning. I find the effect very small overall, even when PolII levels are considered, but much more clear in the case where the highest quintile of Chd1 occupancy is examined. The authors note a difference in impact here in MEFs on the +1 nuc, vs in budding yeast where no change is observed following Chd1 loss, which I found interesting. I also found the correlation of Chd1 with 'open' promoters interesting. The authors then apply an alternative shRNA approach to knock down Chd1, and observe similar (and even somewhat stronger) results.\n\nAs prior approaches provide steady-state measurements, the authors then apply the CATCH-IT technique to explore dynamics. First, they show that turnover is high at locations flanking the TSS. The authors then explore the impact of expression of the dominant negative. The authors emphasize a significant difference at the locations flanking the TSS, and in the gene body. However, this is really confined to the nucleosome directly on, or adjacent to, the TSS; here it is clear and interesting, however, regarding the gene body, I found the difference with the dominant negative apparent, but the scale/magnitude quite small.\n\nThe next section shows the promoter/TSS affect with the dominant negative scales with PolII to distinguish between increased recruitment vs lack of escape, relative distribution of elongating PolII, and (with additional work) showed support for a role in promoter escape. Stalling index analysis show increases with the catalytic mutant and a preference for processive genes, which correlated with wt Chd1 occupancy. I found this data quite interesting. I found the data showing the peak of dominant negative Chd1 occupancy 50 bp inside the nucleosome very interesting, and consistent with current models of DNA translocation. Likewise, the peaks of PolII preceding nucleosomes in the early gene body supports the authors interesting claim of utilizing Chd1 activity to help facilitate PolII passage and reassembly behind the polymerase.\n\nOverall, I found the work well designed, executed and interpreted, and I strongly support its publication.\n\nReviewer 3:\n\nThis manuscript investigates the role of Chd1 in transcription. Using MNase-seq, PolII ChIP-seq and CATCH-IT in MEF cells expressing WT or a dominant negative form of Chd1, the authors conclude that Chd1 is a factor required for the RNAP to overcome the barrier of the +1 nucleosome and relieve stalling of RNAP, whereas in the gene body it suppresses nucleosome turnover. There are some potentially good ideas in this manuscript, but the data do not significantly extend what we know from previous work and the data suffers from insufficiently rigorous analysis.\n\nThese results are similar to work from a number of labs (Workman, Tamkun, Hartzog, Rando, Kornberg), showing that Chd1 localizes at promoters and within gene bodies where it facilitates transcription by altering nucleosome occupancy and turnover/histone replacement, especially at highly active genes. In particular, the data is reminiscent of Radman-Livaja et al. (PLOS Genetics 2012), where it is shown in yeast that loss of Chd1 activity leads to slower turnover of nucleosomes over the promoter and faster turnover in gene bodies and near 3' ends.\n\nThe authors emphasize the idea that Chd1 does not remodel promoter nucleosomes in yeast, but I don't understand why (they cite a Science paper from the Owen-Hughes lab that focused on nucleosome positioning). In fact that paper showed lower nucleosome occupancy near promoters in remodeling deficient cells, in total agreement with the current manuscript. Furthermore, the Kornberg lab (Ehrensberger, PNAS 2011) has done nice work in S. cerevisiae showing that Chd1 is a promoter-specific chromatin remodeler, and work in S. pombe (Walfridsson et al, EMBO 2007) showed that Chd1 localized particularly to promoter regions where it helped remove nucleosomes near the transcription start site to enable transcription. Thus, I don't see significant novelty in the majority of conclusions presented and don't find compelling the suggested connection between Chd1 activity at promoters and the metazoan-specific phenomenon of promoter stalling of RNAP. On this point, the hypothesis that PolII is being blocked in Chd1 mutant cells by nucleosomes despite the overall occupancy of the +1 nucleosome being lower is not clear to me. I can see how PolII could be blocked by an increase in nucleosome occupancy or by more static nucleosomes, but i.e. not what is indicated by this data. What the authors show is reduced +1 occupancy and reduced +1 turnover, which is most simply explained by nucleosomes being removed and not efficiently replaced. There is no clear data that sheds light on how this lower occupancy or failure to re-assemble nucleosomes might inhibit PolII.\n\nMajor concerns:\n\n1) There are a number of cases where strong conclusions are drawn based on non-quantitative analysis of normalized group\u2013average profiles. Group averages can be dramatically shifted by a small subset of genes and are not a reliable way to draw generalizable conclusions about a population. In cases where the authors wish to say that Chd1 mutation 'increases' or 'decreases' signal, statistical evaluations should be performed and described clearly in the methods section. When the authors wish to say that two signals 'correlate' with each other, correlation analysis should be performed and Pearson/Spearman R squared or similar values should be presented.\n\n2) It is really hard to interpret the data on PolII ChIP in cells expressing the catalytically dead Chd1 mutant without knowing what the effects of blocking Chd1 activity are on gene expression. The authors should at the very least select some example genes where loss of Chd1 increases the PolII stalling index and measure the nascent RNA levels at that gene by run-on or RT-PCR of intronic regions. The interpretation of the authors is that PolII is being 'blocked' at the promoter by the presence of more stable nucleosomes, but without showing that there is actually less active elongation within the gene bodies, this conclusion is very weakly supported, especially in light of work in Drosophila that shows normal Ser2-P PolII (active elongation form) levels in Chd1 mutants (Armstrong and Tamkun labs).\n\n3) It is very surprising that the authors don't mention any of the considerable work done on the relationship between PolII and the +1 nucleosome in Drosophila. In particular, Dave Gilmour's recent EMBO paper clearly shows that there are different classes of genes that differ in the role of the +1 nucleosome. Genes with the most paused PolII lack a significant +1 nucleosome signal and are paused by separate factors (GAGA and NELF) whereas less stably paused, more processive genes have a strong +1 nucleosome signal that causes more transient pausing. Do the authors find something significantly different in the mammalian system? Can they show by heatmap the relationship between the level of pausing and the occupancy level or turnover of the +1 nucleosome and analyze this quantitatively to demonstrate better that the +1 nucleosome might be a static barrier to mammalian PolII?\n",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f9e1f146-59bf-495d-bd34-827895cb9187",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C1",
+      "claim": "RNA polymerase II transcribes RNA within a chromatin context, with nucleosomes acting as barriers to transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA polymerase II (PolII) transcribes RNA within a chromatin context, with nucleosomes acting as barriers to transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b3e059a6-85be-4e44-925a-261d57a9d140",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C2",
+      "claim": "Transcription through chromatin in vivo is highly efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these barriers, transcription through chromatin in vivo is highly efficient, suggesting the existence of factors that overcome this obstacle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation that motivates the research question.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f2a7eda3-ecf8-4e4f-972e-69f64edb6ca4",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C3",
+      "claim": "The chromatin remodeler Chd1 is recruited to promoter proximal nucleosomes of genes undergoing active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the chromatin remodeler Chd1 is recruited to promoter proximal nucleosomes of genes undergoing active transcription, where Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by ChIP-seq data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "bc2bcdd8-53d8-4902-87af-01a5850ff19a",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C4",
+      "claim": "Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover at promoter proximal nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the chromatin remodeler Chd1 is recruited to promoter proximal nucleosomes of genes undergoing active transcription, where Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by CATCH-IT data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "7234d6a0-8457-4d8a-98c9-59c3bb8db2d5",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C5",
+      "claim": "Expression of a dominant negative form of Chd1 results in increased stalling of PolII past the entry site of the promoter proximal nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of a dominant negative form of Chd1 results in increased stalling of PolII past the entry site of the promoter proximal nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by ChIP-seq data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "2a1948eb-30c4-417a-8e03-ebfab8cfee9e",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C6",
+      "claim": "Chd1 evicts nucleosomes downstream of the promoter to overcome the nucleosomal barrier and enable PolII promoter escape.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Chd1 evicts nucleosomes downstream of the promoter in order to overcome the nucleosomal barrier and enable PolII promoter escape, thus providing mechanistic insight into the role of Chd1 in transcription and pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the abstract and supported by multiple data types including nucleosome occupancy, turnover, and PolII distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "05fd7be3-b43f-4f9c-a5c2-30923c229da4",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C7",
+      "claim": "In vitro experiments have shown that transcription initiation is the most affected by chromatin and that elongation is also highly inefficient unless nucleosomes are destabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro experiments have shown that transcription initiation is the most affected and that elongation is also highly inefficient unless nucleosomes are destabilized (Lorch et al., 1987; Hodges et al., 2009; Jin et al., 2010; Bintu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b7c02535-b545-45a4-bdd3-0257bf2f7f33",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C8",
+      "claim": "In vivo elongation rates through chromatin are comparable to rates on naked DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this barrier, in vivo elongation rates through chromatin are comparable to rates on naked DNA, indicating that the cell has evolved mechanisms to overcome this chromatin barrier (Li et al., 2007; Ardehali and Lis, 2009; Singh and Padgett, 2009; Petesch and Lis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "8544ea99-6174-4071-88d5-f9b57ca58cce",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C9",
+      "claim": "Nucleosomal turnover correlates with gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the combined action of PolII, elongation factors, nucleosome modifications and chromatin remodelers, the chromatin barrier to transcription is highly dynamic, with nucleosomal turnover correlating with gene expression (Deal et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a797a8d7-4679-4a87-b6b0-dfb816339b88",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C10",
+      "claim": "Nucleosomes are disrupted to allow efficient elongation and are reassembled in the wake of PolII to prevent cryptic initiation from intragenic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes are disrupted to allow efficient elongation and are reassembled in the wake of PolII to prevent cryptic initiation from intragenic sequences (Cheung et al., 2008; Petesch and Lis, 2008; Quan and Hartzog, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "2d8a572d-1445-448a-91a2-376d227eaecd",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C11",
+      "claim": "In metazoans, PolII is often enriched immediately downstream of the transcription start site.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, PolII is often enriched immediately downstream of the transcription start site (TSS), raising the possibility that this is a significant barrier to promoter escape in the progression from transcriptional initiation to elongation, with an unknown mechanism by which this barrier is overcome (Guenther et al., 2007; Mavrich et al., 2008; Schones et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "5f65dd2b-3b59-4883-8ac4-b3c1a5e200d6",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C12",
+      "claim": "The intrinsic structural preferences of DNA contribute substantially to nucleosome occupancy and positioning in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the intrinsic structural preferences of DNA contribute substantially to nucleosome occupancy and positioning in vivo, this chromatin landscape is further manipulated by chromatin remodelers (Segal and Widom, 2009; Kaplan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "83915742-65b0-49ad-9e7b-5b87fcdd0f75",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C13",
+      "claim": "Chromatin remodelers use the energy from ATP hydrolysis to evict, assemble, and slide nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin remodelers use the energy from ATP hydrolysis to evict, assemble, and slide nucleosomes in order to guide the proper nucleosome positioning at key sites, such as eukaryotic promoters, where they maintain the nucleosome-depleted region (NDR) and phased flanking nucleosomes (Hartley and Madhani, 2009; Gkikopoulos et al., 2011; Tolkunov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a44e359f-97e7-47b0-92ba-9bee4f2d6eec",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C14",
+      "claim": "Chromatin remodelers share a common Snf2 helicase-like ATPase domain that is required for the disruption of histone\u2013DNA contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin remodelers share a common Snf2 helicase-like ATPase domain that is required for the disruption of histone\u2013DNA contacts (Hota and Bartholomew, 2011; Petty and Pillus, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "23e7d973-0aa1-4508-bede-35de84e2f7ff",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C15",
+      "claim": "ISWI, INO80/SWR1 and CHD require extra-nucleosomal DNA to remodel nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, they can be separated into two groups based upon their requirement for extra-nucleosomal DNA. First, ISWI, INO80/SWR1 and CHD require extra-nucleosomal DNA to remodel nucleosomes, whereby they are primarily involved in nucleosome assembly and generating equally spaced arrays by binding to stretches of exposed DNA and shifting nucleosomes into the gap (Whitehouse et al., 2003; McKnight et al., 2011; Udugama et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "cf486d68-c8c7-45c2-9def-82556ecd49bc",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C16",
+      "claim": "SWI/SNF and RSC remodelers slide or evict nucleosomes irrespective of extra-nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, SWI/SNF and RSC remodelers slide or evict nucleosomes irrespective of extra-nucleosomal DNA (Whitehouse et al., 1999; Lorch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a88f1f43-ca05-484f-b26b-0069617a4575",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C17",
+      "claim": "Studies in yeast have suggested the main role for the chromatin remodeler Chd1 to be within the gene body, where Chd1 reassembles and positions nucleosomes to prevent cryptic initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in yeast have suggested the main role for the chromatin remodeler Chd1 to be within the gene body, where Chd1 reassembles and positions nucleosomes in order to prevent cryptic initiation (Cheung et al., 2008; Gkikopoulos et al., 2011; Radman-Livaja et al., 2012; Smolle et al., 2012; Zentner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "ac22b653-16ce-4390-970e-4307c75d772b",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C18",
+      "claim": "The promoter chromatin architecture is different in metazoans, with the TSS embedded in the nucleosome-depleted region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the promoter chromatin architecture is different in metazoans, with the TSS embedded in the nucleosome-depleted region, raising the possibility that this differing chromatin landscape contributes to metazoan PolII accumulating to high levels ahead of the first nucleosome (Mavrich et al., 2008; Schones et al., 2008; Rahl et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "7515e8ac-1ece-449d-8747-44e255435244",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C19",
+      "claim": "Mammalian Chd1 controls nucleosome dynamics at actively transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that mammalian Chd1 controls nucleosome dynamics at actively transcribed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "50608140-8093-4f24-a235-9a7f1404e81a",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C20",
+      "claim": "Chd1 is required to allow efficient PolII promoter escape, with PolII becoming stalled in the absence of Chd1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover at the promoter and is required to allow efficient PolII promoter escape, with PolII becoming stalled in the absence of Chd1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "6759b117-252e-4494-8ac8-8a00456dce0a",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C21",
+      "claim": "In the gene body, Chd1 reassembles nucleosomes and suppresses histone turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the gene body, Chd1 reassembles nucleosomes and suppresses histone turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "219fbf44-7d56-438d-909f-2bcc1b0856eb",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C22",
+      "claim": "Mammalian Chd1 is required for pluripotency of embryonic stem cells by maintaining euchromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mammalian Chd1 is required for pluripotency of embryonic stem (ES) cells by maintaining euchromatin and is also required for efficient reprogramming, suggesting that Chd1 plays a key role in mammalian cellular identity (Gaspar-Maia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "cce02944-f66b-4955-8c54-25c132f8f1a7",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C23",
+      "claim": "Mammalian Chd1 is required for efficient reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mammalian Chd1 is required for pluripotency of embryonic stem (ES) cells by maintaining euchromatin and is also required for efficient reprogramming, suggesting that Chd1 plays a key role in mammalian cellular identity (Gaspar-Maia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "0452570b-7184-44c0-bac9-66b7e326de64",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C24",
+      "claim": "The K510R Chd1 mutation eliminates the catalytic activity without disrupting its ability to interact with other proteins, thereby generating a dominant negative.",
+      "claim_type": "EXPLICIT",
+      "source": "The K510R Chd1 mutation eliminates the catalytic activity without disrupting its ability to interact with other proteins, thereby generating a dominant negative (Corona et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "d6eda8fa-4904-4224-9fde-91dc1394dafe",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C25",
+      "claim": "Mutation of the conserved lysine residue has been used to functionally investigate various chromatin remodelers including Brahma and ISWI in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of this conserved lysine residue has been used to functionally investigate various chromatin remodelers including Brahma and ISWI in Drosophila (Figure 1A; Elfring et al., 1998; Deuring et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "1b29f2e8-f0ee-446c-876c-fbd3eef96588",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C26",
+      "claim": "FLAG-tagged Chd1 proteins were only moderately over-expressed relative to endogenous Chd1 in the MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Western analysis indicated that the FLAG-tagged proteins migrated at the expected size and were only moderately over-expressed relative to endogenous Chd1 in the MEFs (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "712c5d21-1e37-4da4-8f71-c251246b145a",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C27",
+      "claim": "Under native conditions only 14% of Chd1 could be extracted.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that under native conditions only 14% of Chd1 could be extracted (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by extraction efficiency data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b781b56d-97f8-4e45-b62f-1eedc7a8692d",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C28",
+      "claim": "MNase digests unprotected DNA, leaving DNA fragments corresponding to mono-nucleosomes and sub-nucleosomal fragments, presumably protected by proteins cross-linked to the extra-nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "MNase digests unprotected DNA, leaving DNA fragments corresponding to mono-nucleosomes and sub-nucleosomal fragments, presumably protected by proteins cross-linked to the extra-nucleosomal DNA (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel electrophoresis data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "3abca538-0c60-4de8-b3a8-d0de1234d767",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C29",
+      "claim": "By using MNase to fragment the chromatin and minimal sonication, essentially complete extraction of chromatin and associated proteins was achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "By using MNase to fragment the chromatin and minimal sonication we were able to achieve essentially complete extraction of chromatin and associated proteins, thereby overcoming a significant limitation of native ChIP (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by extraction efficiency data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "7325f5a7-7d12-47e1-baa9-94ffe0e80af1",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C30",
+      "claim": "Wild-type Chd1 was recruited to the 5\u2032 end of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially analysis of all the recovered fragments was performed. As expected, wild-type Chd1 was recruited to the 5\u2032 end of genes, similar to what has been shown for endogenous Chd1 in mouse ES cells (Figure 1C,D; Gaspar-Maia et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 1C,D and a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "3187420b-6926-44b8-80d6-b1356a29f736",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C31",
+      "claim": "The dominant negative K510R-Chd1 showed a broadly similar chromatin recruitment pattern to wild-type Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the dominant negative K510R-Chd1 showed a broadly similar chromatin recruitment pattern, consistent with the mutation not affecting interactions with recruiting factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b30aa50f-63ff-431b-b644-f17fb8e209b9",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C32",
+      "claim": "The enrichment of Chd1 was primarily just downstream of the TSS, with recruitment correlating with PolII occupancy of the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the enrichment of Chd1 was primarily just downstream of the TSS, with recruitment correlating with PolII occupancy of the promoter, as measured in the MEFs expressing wild-type Chd1 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "42990435-8185-4aeb-a868-5c58c3d6cdb1",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C33",
+      "claim": "PolII has previously been shown to crosslink to nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "PolII has previously been shown to crosslink to nucleosomes (Koerber et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "ee6b0214-1245-492a-a461-7834646fa3ad",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C34",
+      "claim": "For PolII, there was a shift of the maximal occupancy towards the TSS, from +150 bp for all fragment sizes to a peak centered over the TSS when analyzing short fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "For PolII, there was a shift of the maximal occupancy towards the TSS, from +150 bp for all fragment sizes to a peak centered over the TSS, likely indicating that the larger fragments correspond to PolII crosslinked to the +1 nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "9536eb31-b288-4515-8191-ac6ca418890a",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C35",
+      "claim": "Wild-type Chd1 was enriched over the beginning of the gene body with a steady decline from +500 bp when analyzing short fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of short fragments, however, indicated wild-type Chd1 was enriched over the beginning of the gene body with a steady decline from +500 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f0029460-f3b8-4a33-967a-3ed890515954",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C36",
+      "claim": "In the absence of ATPase activity, K510R-Chd1 density peaked downstream of the TSS at +60 bp, where it accumulated to higher levels than wild-type Chd1 and was depleted in the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the absence of ATPase activity, K510R-Chd1 density peaked downstream of the TSS at +60 bp, where it accumulated to higher levels than wild-type Chd1 and was depleted in the gene body (Figure 1E, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 1E and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "131ce52a-312b-4465-a91a-a60ade436cf2",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C37",
+      "claim": "Chd1 binds just downstream of the TSS, correlates with PolII occupancy at the promoter and requires ATPase activity for the binding to extend into the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this novel ChIP-seq strategy based on the MNase digestion of cross-linked chromatin and the mapping of short fragments allows precise mapping of the footprint of PolII and Chd1. We find that Chd1 binds just downstream of the TSS, correlates with PolII occupancy at the promoter and requires ATPase activity for the binding to extend into the gene body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings supported by ChIP-seq data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "ae4dbda1-bcfc-4e19-8cd7-ba7d1c703b83",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C38",
+      "claim": "Cells expressing wild-type Chd1 display the classical metazoan nucleosome organization pattern, with a pronounced nucleosome depleted region (NDR) containing the TSS, flanked by well positioned nucleosomes, with the +1 nucleosome entry site \u223c50 bp downstream of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing wild-type Chd1 display the classical metazoan nucleosome organization pattern, with a pronounced nucleosome depleted region (NDR) containing the TSS, flanked by well positioned nucleosomes, with the +1 nucleosome entry site \u223c50 bp downstream of the TSS (Figure 2A; Mavrich et al., 2008; Schones et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2A and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "4d8f7729-e77d-4d42-8ed2-c3817e6d7119",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C39",
+      "claim": "The position of the +1 nucleosome corresponded to the level of PolII promoter occupancy, with the 5\u2032 edge progressively moving towards the TSS, to approximately +15 bp for genes with the lowest PolII occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the position of the +1 nucleosome corresponded to the level of PolII promoter occupancy, with the 5\u2032 edge progressively moving towards the TSS, to approximately +15 bp for genes with the lowest PolII occupancy, as previously indicated by ranking human nucleosome positions by steady-state RNA levels (Schones et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2A and a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "051c472f-a3a0-4ef7-8a76-fc1fd1e388a1",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C40",
+      "claim": "The positioning of the nucleosomes was not affected by the loss of Chd1 activity, but the nucleosome occupancy was reduced both upstream and downstream of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "The positioning of the nucleosomes was not affected by the loss of Chd1 activity, but the nucleosome occupancy was reduced both upstream and downstream of the TSS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f81a0e7d-1caa-4d9f-b8dd-c89fa3c95035",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C41",
+      "claim": "In Saccharomyces cerevisiae, deletion of Chd1 had no effect on the +1 nucleosome occupancy but only the surrounding nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Saccharomyces cerevisiae, where deletion of Chd1 had no effect on the +1 nucleosome occupancy but only the surrounding nucleosomes, blocking Chd1 activity in MEFs affected promoter proximal nucleosomes including the +1 nucleosome (Gkikopoulos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "da3c806b-3242-4299-b9fb-6c001d2594de",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C42",
+      "claim": "In S. cerevisiae, the TSS is found just within the +1 nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, the TSS is found just within the +1 nucleosome, thereby suggesting that pre-initiation complex formation requires loss of the +1 nucleosome (Rhee and Pugh, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "602903d5-07a5-4b25-a1c5-47ccd2a192f5",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C43",
+      "claim": "Metazoans have a different promoter nuclear architecture with the TSS embedded in the nucleosome depleted region and the +1 nucleosome entry site \u223c50 bp downstream.",
+      "claim_type": "EXPLICIT",
+      "source": "However, metazoans have a different promoter nuclear architecture with the TSS embedded in the nucleosome depleted region and the +1 nucleosome entry site \u223c50 bp downstream (Mavrich et al., 2008; Schones et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "ab6ee342-18ca-4f94-8af4-f929059407e9",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C44",
+      "claim": "Decreased nucleosome occupancy was also apparent throughout the gene body including upstream of the transcriptional end site (TES) upon loss of Chd1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased nucleosome occupancy was also apparent throughout the gene body including upstream of the transcriptional end site (TES).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "6904eb6d-8c4a-4bde-a71c-db0aaa545875",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C45",
+      "claim": "The decrease in nucleosome occupancy was most apparent at genes with the highest PolII levels at the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in nucleosome occupancy was most apparent at genes with the highest PolII levels at the promoter, as expected given that Chd1 occupancy correlates with PolII promoter occupancy, with no statistically significant change at genes with low PolII levels at the promoter (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a2b64593-ae4d-45a7-ad9f-c3ae17ba8d59",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C46",
+      "claim": "Genes with the highest recruitment of Chd1 exhibited the most dramatic loss of nucleosomes at the promoter upon expression of K510R-Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with the highest recruitment of Chd1 exhibited the most dramatic loss of nucleosomes at the promoter upon expression of K510R-Chd1, consistent with a direct role of Chd1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "eb01cdc1-8e3a-46b6-b28f-d763e6c3a022",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C47",
+      "claim": "Genes with the lowest recruitment of wild-type Chd1 displayed a markedly different nucleosome landscape, with unphased nucleosomes and the absence of a pronounced NDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, genes with the lowest recruitment of wild-type Chd1 displayed a markedly different nucleosome landscape, with unphased nucleosomes and the absence of a pronounced NDR (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "3c1debae-47a3-4028-9212-f1bed73bb8f4",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C48",
+      "claim": "The loss of nucleosome occupancy within the last 1 kb of the gene body was independent of the level of Chd1 recruitment to the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of nucleosome occupancy within the last 1 kb of the gene body was independent of the level of Chd1 recruitment to the promoter (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a132695f-527a-40c8-9657-9392f959725e",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C49",
+      "claim": "The loss of nucleosome occupancy in the gene body correlated with level of Chd1 binding in the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the loss of nucleosome occupancy in the gene body correlated with level of Chd1 binding in the gene body (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "8734b92b-751a-409f-b722-ccbf053b1733",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C50",
+      "claim": "Nucleosome occupancy was reduced at both the promoter and the gene body upon knockdown of Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosome occupancy was reduced at both the promoter and the gene body upon knockdown of Chd1, as seen with the expression of K510R-Chd1 (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "2e6042d8-75bb-4a5f-997a-3e04d9369f1b",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C51",
+      "claim": "Histone turnover was most rapid at the nucleosomes flanking either side of the promoter and progressively decreased towards the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that histone turnover was most rapid at the nucleosomes flanking either side of the promoter and progressively decreased towards the gene body (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f0f7eb6a-de09-400b-8f6a-75e65fc1dac9",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C52",
+      "claim": "Nucleosome turnover was significantly reduced on either side of the TSS upon expression of K510R-Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed marked changes in nucleosome turnover upon the expression of K510R-Chd1. First, nucleosome turnover was significantly reduced on either side of the TSS (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "06b3f3b4-ec9a-4f3d-a407-c927bf68e236",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C53",
+      "claim": "Nucleosome turnover was significantly increased within the gene body upon expression of K510R-Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, nucleosome turnover was significantly increased within the gene body, evident from \u223c500 bp downstream of the TSS and also in the gene body upstream of the TES (Figure 3A,B, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 3A,B and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "9759ba7e-2e29-4ee0-af6d-2009fcaea852",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C54",
+      "claim": "The role of Chd1 in regulating nucleosome turnover at the promoter and the gene body is independent of gene length.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the role of Chd1 in regulating nucleosome turnover at the promoter and the gene body is independent of gene length (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "5e686026-09d0-498e-800f-d4ea344841a4",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C55",
+      "claim": "In yeast, a previous study indicated Chd1 protects long genes from nucleosome replacement in the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to yeast, where a previous study indicated Chd1 protects long genes from nucleosome replacement in the gene body (Radman-Livaja et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "9d993255-46ba-412c-acb5-b019c2ca358a",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C56",
+      "claim": "In yeast, the magnitude of the effect on nucleosome turnover was approximately equivalent at the promoter and the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the magnitude of the effect on nucleosome turnover was approximately equivalent at the promoter and the gene body (Radman-Livaja et al., 2012; Smolle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "4aa14926-77bf-4f41-8e9e-1294adb2f158",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C57",
+      "claim": "Nucleosome turnover in the gene body correlated with increasing levels of elongating PolII.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that nucleosome turnover in the gene body correlated with increasing levels of elongating PolII (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT and ChIP-seq data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "8ffbdf71-1d60-4829-860d-ee18cb6a2d04",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C58",
+      "claim": "There is lower retention of the complete octamer at high transcriptional rates than at lower ones.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with several studies suggesting that there is lower retention of the complete octamer at high transcriptional rates than at lower ones (Kireeva et al., 2002; Thiriet and Hayes, 2006; Bintu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f8ca9041-39ec-4901-9eac-022bd2fbbaa1",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C59",
+      "claim": "Nucleosome turnover in the gene body was increased in cells expressing K510R-Chd1, with the increase approximately constant at all densities of elongating PolII.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosome turnover in the gene body was increased in cells expressing K510R-Chd1, with the increase approximately constant at all densities of elongating PolII, suggesting an equivalent contribution by Chd1 in the suppression of nucleosome turnover irrespective of transcription rate (Figure 3C; lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "0cdaa1af-7b75-4794-b7fa-49fd17ef30f7",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C60",
+      "claim": "The level of both wildtype and K510R-Chd1 recruitment to the gene body positively correlated with elongating PolII density within the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the level of both wildtype and K510R-Chd1 recruitment to the gene body positively correlated with elongating PolII density within the gene body (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "612080d7-7dbb-46a6-9f99-3f05584efd5e",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C61",
+      "claim": "Genes with higher levels of PolII displayed increased nucleosome turnover surrounding the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with higher levels of PolII displayed increased nucleosome turnover surrounding the TSS (Figure 4A), as might have been expected from the positive correlation between steady-state RNA levels and nucleosome turnover (Deal et al., 2010; Yang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 4A and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "50cb9c06-6a24-4966-a770-37b7b8cab89a",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C62",
+      "claim": "Turnover outside of the promoter region remained high in the absence of Chd1 activity, but was markedly reduced within the promoter proximal region (\u2212350 to +350 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "Turnover outside of the promoter region remained high in the absence of Chd1 activity, but was markedly reduced within the promoter proximal region (\u2212350 to +350 bp) encompassing the \u22121 nucleosome, the TSS and the +1 and +2 nucleosomes (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "76dfe6db-8309-4a1e-899f-2b5f687d9d87",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C63",
+      "claim": "At low to intermediate PolII densities, cells expressing wildtype-Chd1 displayed a positive correlation between PolII density and nucleosome turnover, with turnover reaching a ceiling value at high levels of PolII.",
+      "claim_type": "EXPLICIT",
+      "source": "At low to intermediate PolII densities, we found that cells expressing wildtype-Chd1 displayed a positive correlation between PolII density and nucleosome turnover, with turnover reaching a ceiling value at high levels of PolII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "550e1064-c280-4ccd-95a5-bde1fc0db24e",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C64",
+      "claim": "Expression of the dominant negative Chd1 resulted in the near-complete abrogation of turnover to basal levels for all levels of PolII occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expression of the dominant negative Chd1 resulted in the near-complete abrogation of turnover to basal levels for all levels of PolII occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b58645eb-c23a-4a5d-91c7-9a828748afb8",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C65",
+      "claim": "Knockdown of endogenous Chd1 resulted in a partial reduction in nucleosome turnover at the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of endogenous Chd1 resulted in a partial reduction in nucleosome turnover at the promoter (Figure 4\u2014figure supplement 1), consistent with either incomplete knockdown or redundant factors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "ab566cdc-5906-4064-a270-18e6b930a75d",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C66",
+      "claim": "Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover within the promoter proximal region.",
+      "claim_type": "EXPLICIT",
+      "source": "The striking loss of nucleosome turnover in the K510R-Chd1 mutant suggests that Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover within the promoter proximal region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on CATCH-IT data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "d09e2f31-f9b3-4937-8683-b2c903a7bff1",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C67",
+      "claim": "In fission yeast, approximately half of Chd1 ortholog bound promoters showed a change in nucleosomal occupancy, with the vast majority increasing histone H3 density upon loss of Chd1 and no significant change in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, approximately half of Chd1 ortholog bound promoters showed a change in nucleosomal occupancy, with the vast majority increasing histone H3 density upon loss of Chd1 and no significant change in gene expression (Walfridsson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f0bf18f2-f8da-490a-b666-4843775815ee",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C68",
+      "claim": "In vitro analysis of the S. cerevisiae PHO5 gene promoter indicated that Chd1 was required to remove the +1 nucleosome, which occludes the TSS, but no robust change in gene expression was observed in vivo without the synergistic loss of the chromatin remodeler ISWI.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro analysis of the S. cerevisiae PHO5 gene promoter indicated that Chd1 was required to remove the +1 nucleosome, which occludes the TSS, but no robust change in gene expression was observed in vivo without the synergistic loss of the chromatin remodeler ISWI (Ehrensberger and Kornberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "d58c3bcf-1e87-458f-9f30-b6d6f5d70382",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C69",
+      "claim": "The majority of PolII was bound to the promoter region in MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of PolII was bound to the promoter region, as expected given the prevalence of promoter proximal pausing in metazoans and consistent with the idea that promoter escape is a major barrier to productive elongation (Krumm et al., 1995; Rahl et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5A and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "149b2551-6eb9-4fd1-8492-c6e8e741a7c2",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C70",
+      "claim": "In S. cerevisiae, the majority of transcriptional control is at the level of PolII recruitment to the promoter, with a relatively even distribution of PolII across the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to S. cerevisiae, where the majority of transcriptional control is at the level of PolII recruitment to the promoter, with a relatively even distribution of PolII across the gene (Stargell and Struhl, 1996; Robert et al., 2004; Rhee and Pugh, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "0a7f412b-7643-4822-b076-3f14d5acc5f2",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C71",
+      "claim": "The expression of K510R-Chd1 resulted in increased PolII occupancy within the promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the expression of K510R-Chd1 resulted in increased PolII occupancy within the promoter region and was most apparent at genes with the highest PolII occupancy, suggesting a role for Chd1 in the distribution of PolII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "671a1995-0662-4e85-9a07-d77895c264dd",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C72",
+      "claim": "In cells expressing K510R-Chd1, the level of PolII Ser2phos was reduced throughout the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing K510R-Chd1, the level of PolII Ser2phos was reduced throughout the gene body, with the effect most pronounced at the genes with highest level of PolII occupancy at the promoter, indicating a role of Chd1 in enabling promoter escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "824d58fe-30b3-43a5-b60d-065945934c76",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C73",
+      "claim": "Chd1 does not affect elongation rate in the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant change in the distribution of elongating PolII, suggesting that Chd1 does not affect elongation rate in the gene body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "49993a38-9d20-430c-a372-c4f75945d8d1",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C74",
+      "claim": "Chd1 activity is required for efficient promoter escape by PolII and in its absence, PolII accumulates at the promoter with a concomitant decrease in the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results showed that Chd1 activity is required for efficient promoter escape by PolII and in its absence, PolII accumulates at the promoter with a concomitant decrease in the gene body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on ChIP-seq data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b94cdb46-53ae-4229-af5c-c90ddadc5ea5",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C75",
+      "claim": "Cells expressing K510R-Chd1 had a two-fold increase in the stalling index in comparison to wildtype on average.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, on average, cells expressing K510R-Chd1 had a two-fold increase in the stalling index in comparison to wildtype (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of ChIP-seq data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f6e79023-4ada-4aaa-a0f8-65a6d4a57aba",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C76",
+      "claim": "Cells expressing K510R-Chd1 had a greatly reduced range of stalling indices, with an overall increase in stalling and the processive genes being most affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing K510R-Chd1 had a greatly reduced range of stalling indices, with an overall increase in stalling and the processive genes being most affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of ChIP-seq data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "7e574a6e-8d26-4ed0-a9ed-c0f2ec35d40d",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C77",
+      "claim": "Processive genes showed a much higher Chd1 occupancy than stalled genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that processive genes showed a much higher Chd1 occupancy than stalled genes (Figure 6D), despite having a lower level of PolII density (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 6D and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b984b05c-65b4-49ae-a474-88abf2e6a75e",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C78",
+      "claim": "The median stalling index was increased \u223ctwofold at processive genes by the expression of K510R-Chd1, whereas stalled genes were unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the median stalling index was increased \u223ctwofold at these processive genes by the expression of K510R-Chd1, whereas these stalled genes were unaffected (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of ChIP-seq data shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "23c650d2-4268-4cd6-97d5-b37e4945e7c7",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C79",
+      "claim": "Wildtype-Chd1 displayed a relatively even profile across the promoter at processive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Wildtype-Chd1 displayed a relatively even profile across the promoter, whereas K510R-Chd1 displayed peaks of binding near the dyad axis for each of the promoter proximal nucleosomes, with the peak of Chd1 \u223c50 bp inside of the leading edge of the +1 nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "9aa6497d-efe9-4df1-9100-6f6746466763",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C80",
+      "claim": "K510R-Chd1 displayed peaks of binding near the dyad axis for each of the promoter proximal nucleosomes, with the peak of Chd1 \u223c50 bp inside of the leading edge of the +1 nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Wildtype-Chd1 displayed a relatively even profile across the promoter, whereas K510R-Chd1 displayed peaks of binding near the dyad axis for each of the promoter proximal nucleosomes, with the peak of Chd1 \u223c50 bp inside of the leading edge of the +1 nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "c569da61-83cd-4e3f-ba32-9b4677941904",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C81",
+      "claim": "Chromatin remodelers initiate translocation on nucleosomal DNA at an internal position \u223c20 bp from the dyad at superhelical location 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding at this position is consistent with in vitro studies, which suggest that chromatin remodelers initiate translocation on nucleosomal DNA at an internal position \u223c20 bp from the dyad at superhelical location 2 (Saha et al., 2005; Zofall et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "4fe56da6-289c-4079-a95b-83cf7f154553",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C82",
+      "claim": "At the more processive M1BP bound genes in Drosophila, PolII accumulated in front of the well-positioned +1 nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in Drosophila indicated that at the more processive M1BP bound genes, PolII accumulated in front of the well-positioned +1 nucleosome (Li and Gilmour, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "4373e000-0226-4a11-9265-a835c0ec11ba",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C83",
+      "claim": "Processive genes have higher promoter proximal nucleosome occupancy than stalled genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, we find that processive genes have higher promoter proximal nucleosome occupancy and furthermore that +1 nucleosome turnover is higher at processive genes than stalled genes (Figure 6\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-seq and CATCH-IT data shown in Figure 6\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "c105d864-4110-48b8-b936-4a3cc86fe00a",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C84",
+      "claim": "+1 nucleosome turnover is higher at processive genes than stalled genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, we find that processive genes have higher promoter proximal nucleosome occupancy and furthermore that +1 nucleosome turnover is higher at processive genes than stalled genes (Figure 6\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CATCH-IT data shown in Figure 6\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "4cd6ff5e-ff43-45ab-bb24-1d0e449856b9",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C85",
+      "claim": "In the absence of Chd1 activity, PolII accumulates \u223c20 bp inside the entry site of the +1 nucleosome at processive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the relatively even profile for PolII in the cells expressing wildtype-Chd1, the absence of Chd1 activity resulted in clear peaks in the PolII distribution (Figure 6F). These peaks precede each of the promoter proximal nucleosomes and are shifted upstream relative to the sites of action of Chd1 at the nucleosomes, with PolII accumulating \u223c20 bp inside the entry site of the +1 nucleosome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a1e2edcc-dced-45d6-94ca-c78a228da526",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C86",
+      "claim": "Chd1 functions at processive genes to remove the nucleosomal barrier ahead of PolII and in its absence PolII stalls in front of the now static promoter proximal nucleosomes leading to a reduced efficiency of promoter escape.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Chd1 functions at processive genes to remove the nucleosomal barrier ahead of PolII and in its absence PolII stalls in front of the now static promoter proximal nucleosomes leading to a reduced efficiency of promoter escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on ChIP-seq data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a8b7161e-2787-442e-b33e-ec813fe3141c",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C87",
+      "claim": "Chd1 actively assembles chromatin and slides nucleosomes into ordered arrays in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The role for Chd1 in gene bodies is consistent with in vitro studies indicating that Chd1 actively assembles chromatin and slides nucleosomes into ordered arrays (Lusser et al., 2005; Torigoe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "878e0780-19a3-42ba-91f1-cf018d91c470",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C88",
+      "claim": "In vivo, Chd1 is likely to function in reassembly of nucleosomes displaced during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, Chd1 is likely to function in reassembly of nucleosomes displaced during elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on in vitro studies and the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "d1a823a7-5322-43bc-b266-cff4ca86a293",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C89",
+      "claim": "In the absence of Chd1 activity, reassembly is compromised, leading to the deposition of de novo synthesized nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Chd1 activity, reassembly is compromised, leading to the deposition of de novo synthesized nucleosomes, consistent with observations in yeast (Gkikopoulos et al., 2011; Hennig et al., 2012; Radman-Livaja et al., 2012; Smolle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citations to previous studies in yeast.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "19b8e643-3d46-48cd-917c-37f89f907c03",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C90",
+      "claim": "Chd1 associates with elongation factors including polymerase-associated factor (PAF1), DSIF and FACT.",
+      "claim_type": "EXPLICIT",
+      "source": "The close correlation between Chd1 occupancy and elongating PolII density indicates a possible mechanism for the recruitment of Chd1, consistent with studies indicating that Chd1 associates with elongation factors including polymerase-associated factor (PAF1), DSIF and FACT (Simic et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "5cc951e3-e144-4fcb-96aa-8418feffc0d5",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C91",
+      "claim": "In vitro remodeling by Chd1 is dependent upon its C-terminal DNA binding domain interacting with extranucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro remodeling by Chd1 is dependent upon its C-terminal DNA binding domain interacting with extranucleosomal DNA and may also be required for efficient Chd1 recruitment (Kagalwala et al., 2004; Stockdale et al., 2006; McKnight et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "92267589-9eb9-48d3-9859-987ef1e9e454",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C92",
+      "claim": "The DNA immediately upstream of the nucleosome has been shown to be important for the initial stage of nucleosome movement in ISWI-type remodelers.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, the DNA immediately upstream of the nucleosome has been shown to be important for the initial stage of nucleosome movement in ISWI-type remodelers (Zofall et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "4435c574-a1e6-4625-94bc-be8e82301bfa",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C93",
+      "claim": "Single-molecule optical trap experiments suggest that PolII transcribes through a nucleosome by the in cis transfer of histones, particularly the H3:H4 tetramer, to DNA upstream of PolII via the formation of a transient DNA loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule optical trap experiments suggest that PolII transcribes through a nucleosome by the in cis transfer of histones, particularly the H3:H4 tetramer, to DNA upstream of PolII via the formation of a transient DNA loop (Hodges et al., 2009; Kulaeva et al., 2009; Bintu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "15ca7ac3-71d3-42e5-be7e-1e301e55a1c9",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C94",
+      "claim": "Chd1 is recruited to the gene body via the elongation complex and is then targeted to the nucleosome substrate via binding to the exposed DNA loop immediately adjacent to the histone octamer to facilitate the in cis transfer of histone octamers.",
+      "claim_type": "IMPLICIT",
+      "source": "This might suggest that Chd1 is recruited to the gene body via the elongation complex and is then targeted to the nucleosome substrate via binding to the exposed DNA loop immediately adjacent to the histone octamer to facilitate the in cis transfer of histone octamers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed by the authors based on the data and previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a7a67b3e-b374-4a32-b16b-44cd7b83b10e",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C95",
+      "claim": "Chd1 is primarily found at the 5\u2032 end of PolII bound genes and is particularly enriched at genes undergoing processive transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Chd1 is primarily found at the 5\u2032 end of PolII bound genes and is particularly enriched at genes undergoing processive transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figures 1 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "e1dd1960-67e8-4a65-a084-9a932d42e99c",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C96",
+      "claim": "Chd1 binds within the leading edge of promoter proximal nucleosomes, where it is required for virtually all of PolII-directed nucleosome turnover at the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "By increasing the resolution of standard cross-linked ChIP-seq, we find that Chd1 binds within the leading edge of promoter proximal nucleosomes, where it is required for virtually all of PolII-directed nucleosome turnover at the promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and CATCH-IT data shown in Figures 1, 4, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a452b8bb-ae29-417b-a923-45a511e7074e",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C97",
+      "claim": "Expression of K510R-Chd1 results in reduced steady-state nucleosome occupancy at the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of K510R-Chd1 results in reduced steady-state nucleosome occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MNase-seq data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "ca3038ed-77dd-4400-a28c-4bf29673b041",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C98",
+      "claim": "PolII was observed to accumulate just within the entry site of promoter proximal nucleosomes upon expression of K510R-Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, PolII was observed to accumulate just within the entry site of promoter proximal nucleosomes and a concomitant increase in the stalling index, indicative of an increase in the barrier to PolII promoter escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "42c1d774-cdd8-43af-9bdc-8aff5531ceed",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C99",
+      "claim": "The increased PolII stalling is consistent with the reduced nucleosome turnover at the promoter, indicating a more static chromatin structure forming a barrier to promoter escape.",
+      "claim_type": "EXPLICIT",
+      "source": "This increased PolII stalling is consistent with the reduced nucleosome turnover at the promoter, indicating a more static chromatin structure forming a barrier to promoter escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the combined data from ChIP-seq and CATCH-IT experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "5af8a2b9-d778-4e31-9324-78377fe47974",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C100",
+      "claim": "Chd1 acts to evict the nucleosomes ahead of PolII transit and then reassemble nucleosomes in the wake of PolII.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent discrepancy of an increase in the barrier to PolII accompanying a decrease in steady-state nucleosomal occupancy can be most easily reconciled if Chd1 acts to evict the nucleosomes ahead of PolII transit and then reassemble nucleosomes in the wake of PolII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed by the authors to reconcile the observed data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "3df8c877-e402-43b3-9bd7-bca98aba3df2",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C101",
+      "claim": "In the absence of Chd1, nucleosome eviction is likely to still occur as a result of transcription albeit at a lower rate, and the CATCH-IT analysis suggests de novo nucleosome deposition is greatly reduced, overall leading to the reduced steady-state nucleosome occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Chd1, nucleosome eviction is likely to still occur as a result of transcription albeit at a lower rate, and the CATCH-IT analysis suggests de novo nucleosome deposition is greatly reduced, overall leading to the reduced steady-state nucleosome occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the CATCH-IT and MNase-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "03fc4dbb-db63-4c9c-89a1-e79607d648fc",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C102",
+      "claim": "A recent in vitro study directly tethered yeast Chd1 to the nucleosomal substrate independent of the DNA binding domain and observed nucleosome sliding and eviction more typical of SWI/SNF-type remodelers.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent in vitro study directly tethered yeast Chd1 to the nucleosomal substrate independent of the DNA binding domain and observed nucleosome sliding and eviction more typical of SWI/SNF-type remodelers (Patel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "1f5ad969-0639-4bc5-a8ad-839a53ba93fa",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C103",
+      "claim": "The tandem chromodomains in human Chd1 have been shown to specifically interact with H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "The tandem chromodomains in human Chd1 have been shown to specifically interact with H3K4me3, whereas in S. cerevisiae, the chromodomains lack key tryptophan residues required for H3K4me3 binding (Flanagan et al., 2005; Sims et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "d7736c9d-8505-4568-9ae7-bcc12c746d20",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C104",
+      "claim": "In S. cerevisiae, the chromodomains lack key tryptophan residues required for H3K4me3 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The tandem chromodomains in human Chd1 have been shown to specifically interact with H3K4me3, whereas in S. cerevisiae, the chromodomains lack key tryptophan residues required for H3K4me3 binding (Flanagan et al., 2005; Sims et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "7c040e78-8816-457c-ac72-1182d85de126",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C105",
+      "claim": "In yeast, Chd1 does not affect occupancy of the +1 nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore activity dependent on the chromodomains provides a tantalizing explanation for the role of mammalian Chd1 in nucleosome eviction at the promoter in contrast to yeast Chd1, where Chd1 does not affect occupancy of the +1 nucleosome (Gkikopoulos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "2a345800-a7aa-4868-a862-1fc0da5d9f5e",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C106",
+      "claim": "In yeast, the TSS is buried within the +1 nucleosome and transcription is primarily regulated through recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "This unique requirement for mammalian Chd1 to overcome the nucleosomal barrier to PolII at the promoter may reflect differences from yeast in both chromatin architecture and transcriptional regulation, with yeast having the TSS buried within the +1 nucleosome and primarily regulating transcription through recruitment (Robert et al., 2004; Rhee and Pugh, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "3714e86d-9c94-40f5-9dc1-f367fe8d9fa4",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C107",
+      "claim": "The majority of post-translational modifications (PTMs) are found on either H3 or H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the majority of post-translational modifications (PTMs) are found on either H3 or H4, the retention of the H3:H4 tetramer during transcription has been proposed to have a role in the maintenance of chromatin states throughout the genome (Kulaeva et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "377bcdeb-68c5-4b99-9970-a4d1491aeae7",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C108",
+      "claim": "The retention of the H3:H4 tetramer during transcription has been proposed to have a role in the maintenance of chromatin states throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the majority of post-translational modifications (PTMs) are found on either H3 or H4, the retention of the H3:H4 tetramer during transcription has been proposed to have a role in the maintenance of chromatin states throughout the genome (Kulaeva et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f0051fae-c132-477d-bfab-15e0747e78d3",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C109",
+      "claim": "The increased histone turnover observed in the gene body in the absence of Chd1 activity could compromise epigenetic regulation.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests that the increased histone turnover observed in the gene body in the absence of Chd1 activity could compromise epigenetic regulation, and might explain the observation that Chd1 is required for maintaining euchromatin in ES cells by preventing heterochromatin formation (Gaspar-Maia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the data and a citation to a previous study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "1122a146-dc30-4661-9b9d-91b1e6aa043b",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C110",
+      "claim": "Chd1 is required for maintaining euchromatin in ES cells by preventing heterochromatin formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the increased histone turnover observed in the gene body in the absence of Chd1 activity could compromise epigenetic regulation, and might explain the observation that Chd1 is required for maintaining euchromatin in ES cells by preventing heterochromatin formation (Gaspar-Maia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "45153fd2-6597-4278-8c48-f61a8a91021b",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C111",
+      "claim": "The Chd1 dependent turnover observed at the promoter would have the effect of removing histone 'memory'.",
+      "claim_type": "IMPLICIT",
+      "source": "In contrast, the Chd1 dependent turnover observed at the promoter would have the effect of removing histone 'memory' and might explain the requirement for Chd1 in reprogramming through the deposition of de novo histones at the promoter to allow the reactivation of pluripotency genes (Gaspar-Maia et al., 2009; Jullien et al., 2012; Skene and Henikoff, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the data and citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "e6d0a5a3-9f07-49d6-aa0d-e9b474267022",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C112",
+      "claim": "Chd1 is required for reprogramming through the deposition of de novo histones at the promoter to allow the reactivation of pluripotency genes.",
+      "claim_type": "IMPLICIT",
+      "source": "In contrast, the Chd1 dependent turnover observed at the promoter would have the effect of removing histone 'memory' and might explain the requirement for Chd1 in reprogramming through the deposition of de novo histones at the promoter to allow the reactivation of pluripotency genes (Gaspar-Maia et al., 2009; Jullien et al., 2012; Skene and Henikoff, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the data and citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "c2333038-dc92-46be-bf23-fb800e32cc72",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C113",
+      "claim": "Doxorubicin, a commonly used anti-cancer drug, enhances nucleosome turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that doxorubicin, a commonly used anti-cancer drug, enhances nucleosome turnover, the identification of Chd1 in directing nucleosome turnover provides a mechanistic basis for its tumor suppressor role and may indicate the molecular basis for carcinogenesis in the absence of Chd1 (Huang et al., 2012; Liu et al., 2012; Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "e7b7d493-a5c8-4c36-ab47-82595ddeb983",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "claim_id": "C114",
+      "claim": "Chd1 has a tumor suppressor role.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that doxorubicin, a commonly used anti-cancer drug, enhances nucleosome turnover, the identification of Chd1 in directing nucleosome turnover provides a mechanistic basis for its tumor suppressor role and may indicate the molecular basis for carcinogenesis in the absence of Chd1 (Huang et al., 2012; Liu et al., 2012; Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "43c0098d-aa25-4024-bbc2-bc368bebb92f",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The K510R mutation in Chd1 generates a catalytically inactive dominant negative that is moderately overexpressed in MEFs and does not disrupt protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 establish the dominant negative approach. C24 and C25 cite prior work validating this mutation strategy in other remodelers, and C26 provides Western blot evidence (Figure 1B) showing moderate overexpression. The approach is well-established and appropriately validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "9816f827-527d-4305-8d53-1b06a53b5bcb",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A novel MNase-based cross-linked ChIP-seq method achieves complete extraction of chromatin-associated proteins and high-resolution mapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 describe methodological development. C27 shows poor native extraction (14%), C28 describes MNase digestion producing sub-nucleosomal fragments, and C29 demonstrates complete extraction with the modified protocol (Figure 1\u2014figure supplement 1). This represents a significant technical advance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "a76e25cf-cabb-4f3a-aabe-2433ef97eadf",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chd1 is recruited to the 5' end of genes just downstream of the TSS, with recruitment correlating with PolII promoter occupancy, and requires ATPase activity to extend into the gene body.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C30-C32, and C37 describe Chd1 localization patterns supported by ChIP-seq data in Figure 1C-E. The correlation with PolII and differential distribution of wild-type versus K510R mutant are clearly demonstrated. High-resolution mapping using short fragments provides precise localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "66b50ae2-5c18-44db-b755-11aab47b0e08",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Wild-type Chd1 extends into the gene body while K510R-Chd1 accumulates at +60 bp downstream of the TSS and is depleted in the gene body.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 describe differential localization patterns supported by high-resolution ChIP-seq analysis of short fragments (Figure 1E, Figure 1\u2014figure supplement 2B). The accumulation of catalytically dead Chd1 at specific sites likely represents trapped intermediates, providing mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b77b1269-7485-4c07-9c50-d2d1ece214e5",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of Chd1 activity reduces nucleosome occupancy at promoters and gene bodies without affecting nucleosome positioning, with effects most pronounced at genes with high PolII levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40, C44-C45 describe nucleosome occupancy changes supported by MNase-seq data (Figure 2A). The preservation of positioning but loss of occupancy is clearly demonstrated, and the correlation with PolII levels is statistically significant. This distinguishes mammalian from yeast Chd1 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "44ab93de-a2af-4c4d-ab4a-8f9f328378a4",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Genes with highest Chd1 recruitment show the most dramatic nucleosome loss at promoters, while genes with lowest Chd1 have unphased nucleosomes and lack a pronounced NDR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 demonstrate gene-specific effects based on Chd1 occupancy (Figure 2B, Figure 2\u2014figure supplement 1A). The correlation between Chd1 binding and nucleosome landscape changes supports a direct role. The distinction between promoter and gene body effects suggests separable recruitment mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "2670375b-d9a8-4559-b349-5f523545bf31",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Knockdown of endogenous Chd1 phenocopies the K510R dominant negative, reducing nucleosome occupancy at promoters and gene bodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by MNase-seq data following shRNA knockdown (Figure 2\u2014figure supplement 1B-C). This validates that the dominant negative effects reflect loss of Chd1 function rather than off-target effects, though incomplete knockdown (33% remaining) limits the magnitude of effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "8b79f436-adbc-4493-9ed4-7539ff571708",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chd1 has opposing roles in nucleosome turnover: promoting turnover at promoters but suppressing it in gene bodies, independent of gene length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 describe CATCH-IT results (Figure 3A-B, Figure 3\u2014figure supplement 1A-B). The opposing effects at promoters versus gene bodies are clearly demonstrated and statistically significant. Independence from gene length distinguishes mammalian from yeast Chd1, though the mechanism underlying this difference is not explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "ecb31225-b95e-4d70-9922-0823a2a38dbc",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Nucleosome turnover in gene bodies correlates with elongating PolII density, and Chd1 suppresses turnover equally at all transcription rates, with Chd1 recruitment correlating with elongating PolII.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C59-C60 describe relationships between Chd1, PolII, and turnover in gene bodies (Figure 3C-D). The correlations are strong (Pearson >0.85-0.9) and the constant suppression by Chd1 across transcription rates is clearly shown. This suggests Chd1 acts as a general nucleosome reassembly factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "74abe74a-6153-439e-8b6d-97f0ae8eaaaa",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Chd1 is responsible for the vast majority of PolII-directed nucleosome turnover at promoters, with near-complete abrogation of turnover in the K510R mutant across all PolII occupancy levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64, C66 describe promoter turnover results from CATCH-IT (Figure 4A-C). The dramatic reduction in the promoter proximal region (-350 to +350 bp) and near-complete loss at all PolII levels strongly support the conclusion. However, C65 shows partial knockdown effects, suggesting possible redundancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "fe26193b-283d-497b-95dc-ca28a28c8415",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Knockdown of endogenous Chd1 results in partial reduction in nucleosome turnover at promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by CATCH-IT data (Figure 4\u2014figure supplement 1). The partial effect compared to the dominant negative could reflect incomplete knockdown (33% remaining) or redundant factors. This somewhat weakens the claim that Chd1 is solely responsible for promoter turnover.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "39aa16e8-8ca7-47e9-9bfd-fdebfd599aae",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Chd1 activity is required for efficient PolII promoter escape; in its absence, PolII accumulates at promoters with reduced elongating PolII in gene bodies, without affecting elongation rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C71-C74 describe PolII distribution changes from ChIP-seq (Figure 5A-C). The increased total PolII at promoters, decreased Ser2phos in gene bodies, and unchanged elongation rate distribution clearly support a promoter escape defect. This is a key mechanistic finding linking Chd1 to transcription.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "8bff7a7b-a0e1-45e4-8225-b9b1be633402",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Loss of Chd1 activity causes a two-fold increase in the stalling index genome-wide, with processive genes most affected while stalled genes remain unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76, C78 describe stalling index analysis (Figure 6B-C, Figure 6\u2014figure supplement 1C). The genome-wide increase and differential effects on processive versus stalled genes are statistically significant (p<2\u00d710^-16). This identifies the specific gene class where Chd1 functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "546f18cd-09d8-4c7d-9d5b-8313c37ef6bd",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Processive genes show much higher Chd1 occupancy than stalled genes despite having lower PolII density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is supported by ChIP-seq data (Figure 6D, Figure 6\u2014figure supplement 1B). This counterintuitive finding suggests additional factors beyond PolII density recruit Chd1 to processive genes, though these factors are not identified. This is an important observation requiring further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "ffa4be8c-4ec3-4485-b9a3-bd9ae341c5d9",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "K510R-Chd1 accumulates at peaks near the dyad axis of promoter proximal nucleosomes (~50 bp inside the +1 nucleosome leading edge), while wild-type Chd1 shows an even profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 describe high-resolution Chd1 binding patterns at processive genes (Figure 6E). The peaks in the mutant likely represent trapped intermediates revealing sites of action. The position is consistent with in vitro studies (C81), providing mechanistic insight into how Chd1 engages nucleosomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "5cbd1f85-b07c-4696-bf05-ff6799ec8cd5",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Processive genes have higher promoter proximal nucleosome occupancy and +1 nucleosome turnover than stalled genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by MNase-seq and CATCH-IT data (Figure 6\u2014figure supplement 2A-B). This establishes that processive genes have more dynamic nucleosomes at promoters, consistent with the barrier model. The statistical significance (p<2\u00d710^-5) is strong.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "5366dac5-f524-4df0-8ab6-3e580a91d2f1",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In the absence of Chd1 activity, PolII accumulates ~20 bp inside the +1 nucleosome entry site at processive genes, indicating Chd1 removes the nucleosomal barrier ahead of PolII.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 describe PolII stalling patterns (Figure 6F). The precise positioning of stalled PolII relative to nucleosomes and Chd1 binding sites provides strong evidence for the barrier removal model. This is the key mechanistic conclusion of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b8d2b20d-952d-4817-957c-241cbb10244d",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Chd1 functions in reassembly of nucleosomes displaced during elongation, possibly recruited via elongation factors and targeted to nucleosomes through DNA loops formed during PolII transit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89, C94 propose mechanistic models for gene body function. While C88-C89 are supported by in vitro studies (C87) and yeast data (citations), C94 is explicitly speculative. The correlation between Chd1 and elongating PolII (C60) supports recruitment via elongation factors, but direct evidence for the DNA loop model is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "f89a0de8-10c4-44af-9383-23d87495354c",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Chd1 evicts nucleosomes ahead of PolII transit and reassembles them in the wake, reconciling increased PolII stalling with decreased steady-state nucleosome occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 propose a model to reconcile the apparent paradox of increased stalling with decreased occupancy. The model is logical and consistent with all the data (turnover, occupancy, and PolII distribution), though it represents an inference rather than direct demonstration. The CATCH-IT data showing reduced de novo deposition supports this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "b95bc8aa-e753-4419-ac65-f99f30df7047",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Increased histone turnover in gene bodies without Chd1 could compromise epigenetic regulation, while Chd1-dependent turnover at promoters could enable reprogramming by removing histone memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109, C111-C112 are explicitly speculative interpretations linking the findings to ES cell phenotypes (C22-C23, C110). While the logic is reasonable and consistent with cited work, these represent hypotheses requiring direct testing. The connection between turnover patterns and cellular phenotypes is not demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    },
+    {
+      "id": "28c547ec-dd3f-4410-89aa-feb93e0a80ac",
+      "content_id": "ed10a037-c695-4291-bb91-ce64e2e763c2",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Human Chd1 chromodomains interact with H3K4me3 while yeast chromodomains lack key residues for this interaction, potentially explaining differential effects on +1 nucleosome occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 cite prior structural and functional studies. This provides a plausible molecular explanation for species differences in Chd1 function, though the connection is not directly tested here. The hypothesis is reasonable but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:18.214291Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0452570b-7184-44c0-bac9-66b7e326de64",
+      "result_id": "43c0098d-aa25-4024-bbc2-bc368bebb92f"
+    },
+    {
+      "claim_id": "d6eda8fa-4904-4224-9fde-91dc1394dafe",
+      "result_id": "43c0098d-aa25-4024-bbc2-bc368bebb92f"
+    },
+    {
+      "claim_id": "1b29f2e8-f0ee-446c-876c-fbd3eef96588",
+      "result_id": "43c0098d-aa25-4024-bbc2-bc368bebb92f"
+    },
+    {
+      "claim_id": "712c5d21-1e37-4da4-8f71-c251246b145a",
+      "result_id": "9816f827-527d-4305-8d53-1b06a53b5bcb"
+    },
+    {
+      "claim_id": "b781b56d-97f8-4e45-b62f-1eedc7a8692d",
+      "result_id": "9816f827-527d-4305-8d53-1b06a53b5bcb"
+    },
+    {
+      "claim_id": "3abca538-0c60-4de8-b3a8-d0de1234d767",
+      "result_id": "9816f827-527d-4305-8d53-1b06a53b5bcb"
+    },
+    {
+      "claim_id": "f2a7eda3-ecf8-4e4f-972e-69f64edb6ca4",
+      "result_id": "a76e25cf-cabb-4f3a-aabe-2433ef97eadf"
+    },
+    {
+      "claim_id": "7325f5a7-7d12-47e1-baa9-94ffe0e80af1",
+      "result_id": "a76e25cf-cabb-4f3a-aabe-2433ef97eadf"
+    },
+    {
+      "claim_id": "3187420b-6926-44b8-80d6-b1356a29f736",
+      "result_id": "a76e25cf-cabb-4f3a-aabe-2433ef97eadf"
+    },
+    {
+      "claim_id": "b30aa50f-63ff-431b-b644-f17fb8e209b9",
+      "result_id": "a76e25cf-cabb-4f3a-aabe-2433ef97eadf"
+    },
+    {
+      "claim_id": "131ce52a-312b-4465-a91a-a60ade436cf2",
+      "result_id": "a76e25cf-cabb-4f3a-aabe-2433ef97eadf"
+    },
+    {
+      "claim_id": "9536eb31-b288-4515-8191-ac6ca418890a",
+      "result_id": "66b50ae2-5c18-44db-b755-11aab47b0e08"
+    },
+    {
+      "claim_id": "f0029460-f3b8-4a33-967a-3ed890515954",
+      "result_id": "66b50ae2-5c18-44db-b755-11aab47b0e08"
+    },
+    {
+      "claim_id": "ae4dbda1-bcfc-4e19-8cd7-ba7d1c703b83",
+      "result_id": "b77b1269-7485-4c07-9c50-d2d1ece214e5"
+    },
+    {
+      "claim_id": "4d8f7729-e77d-4d42-8ed2-c3817e6d7119",
+      "result_id": "b77b1269-7485-4c07-9c50-d2d1ece214e5"
+    },
+    {
+      "claim_id": "051c472f-a3a0-4ef7-8a76-fc1fd1e388a1",
+      "result_id": "b77b1269-7485-4c07-9c50-d2d1ece214e5"
+    },
+    {
+      "claim_id": "ab6ee342-18ca-4f94-8af4-f929059407e9",
+      "result_id": "b77b1269-7485-4c07-9c50-d2d1ece214e5"
+    },
+    {
+      "claim_id": "6904eb6d-8c4a-4bde-a71c-db0aaa545875",
+      "result_id": "b77b1269-7485-4c07-9c50-d2d1ece214e5"
+    },
+    {
+      "claim_id": "a2b64593-ae4d-45a7-ad9f-c3ae17ba8d59",
+      "result_id": "44ab93de-a2af-4c4d-ab4a-8f9f328378a4"
+    },
+    {
+      "claim_id": "eb01cdc1-8e3a-46b6-b28f-d763e6c3a022",
+      "result_id": "44ab93de-a2af-4c4d-ab4a-8f9f328378a4"
+    },
+    {
+      "claim_id": "3c1debae-47a3-4028-9212-f1bed73bb8f4",
+      "result_id": "44ab93de-a2af-4c4d-ab4a-8f9f328378a4"
+    },
+    {
+      "claim_id": "a132695f-527a-40c8-9657-9392f959725e",
+      "result_id": "44ab93de-a2af-4c4d-ab4a-8f9f328378a4"
+    },
+    {
+      "claim_id": "8734b92b-751a-409f-b722-ccbf053b1733",
+      "result_id": "2670375b-d9a8-4559-b349-5f523545bf31"
+    },
+    {
+      "claim_id": "2e6042d8-75bb-4a5f-997a-3e04d9369f1b",
+      "result_id": "8b79f436-adbc-4493-9ed4-7539ff571708"
+    },
+    {
+      "claim_id": "f0f7eb6a-de09-400b-8f6a-75e65fc1dac9",
+      "result_id": "8b79f436-adbc-4493-9ed4-7539ff571708"
+    },
+    {
+      "claim_id": "06b3f3b4-ec9a-4f3d-a407-c927bf68e236",
+      "result_id": "8b79f436-adbc-4493-9ed4-7539ff571708"
+    },
+    {
+      "claim_id": "9759ba7e-2e29-4ee0-af6d-2009fcaea852",
+      "result_id": "8b79f436-adbc-4493-9ed4-7539ff571708"
+    },
+    {
+      "claim_id": "4aa14926-77bf-4f41-8e9e-1294adb2f158",
+      "result_id": "ecb31225-b95e-4d70-9922-0823a2a38dbc"
+    },
+    {
+      "claim_id": "f8ca9041-39ec-4901-9eac-022bd2fbbaa1",
+      "result_id": "ecb31225-b95e-4d70-9922-0823a2a38dbc"
+    },
+    {
+      "claim_id": "0cdaa1af-7b75-4794-b7fa-49fd17ef30f7",
+      "result_id": "ecb31225-b95e-4d70-9922-0823a2a38dbc"
+    },
+    {
+      "claim_id": "612080d7-7dbb-46a6-9f99-3f05584efd5e",
+      "result_id": "74abe74a-6153-439e-8b6d-97f0ae8eaaaa"
+    },
+    {
+      "claim_id": "50cb9c06-6a24-4966-a770-37b7b8cab89a",
+      "result_id": "74abe74a-6153-439e-8b6d-97f0ae8eaaaa"
+    },
+    {
+      "claim_id": "76dfe6db-8309-4a1e-899f-2b5f687d9d87",
+      "result_id": "74abe74a-6153-439e-8b6d-97f0ae8eaaaa"
+    },
+    {
+      "claim_id": "550e1064-c280-4ccd-95a5-bde1fc0db24e",
+      "result_id": "74abe74a-6153-439e-8b6d-97f0ae8eaaaa"
+    },
+    {
+      "claim_id": "ab566cdc-5906-4064-a270-18e6b930a75d",
+      "result_id": "74abe74a-6153-439e-8b6d-97f0ae8eaaaa"
+    },
+    {
+      "claim_id": "b58645eb-c23a-4a5d-91c7-9a828748afb8",
+      "result_id": "fe26193b-283d-497b-95dc-ca28a28c8415"
+    },
+    {
+      "claim_id": "d58c3bcf-1e87-458f-9f30-b6d6f5d70382",
+      "result_id": "39aa16e8-8ca7-47e9-9bfd-fdebfd599aae"
+    },
+    {
+      "claim_id": "0a7f412b-7643-4822-b076-3f14d5acc5f2",
+      "result_id": "39aa16e8-8ca7-47e9-9bfd-fdebfd599aae"
+    },
+    {
+      "claim_id": "671a1995-0662-4e85-9a07-d77895c264dd",
+      "result_id": "39aa16e8-8ca7-47e9-9bfd-fdebfd599aae"
+    },
+    {
+      "claim_id": "824d58fe-30b3-43a5-b60d-065945934c76",
+      "result_id": "39aa16e8-8ca7-47e9-9bfd-fdebfd599aae"
+    },
+    {
+      "claim_id": "49993a38-9d20-430c-a372-c4f75945d8d1",
+      "result_id": "39aa16e8-8ca7-47e9-9bfd-fdebfd599aae"
+    },
+    {
+      "claim_id": "b94cdb46-53ae-4229-af5c-c90ddadc5ea5",
+      "result_id": "8bff7a7b-a0e1-45e4-8225-b9b1be633402"
+    },
+    {
+      "claim_id": "f6e79023-4ada-4aaa-a0f8-65a6d4a57aba",
+      "result_id": "8bff7a7b-a0e1-45e4-8225-b9b1be633402"
+    },
+    {
+      "claim_id": "b984b05c-65b4-49ae-a474-88abf2e6a75e",
+      "result_id": "8bff7a7b-a0e1-45e4-8225-b9b1be633402"
+    },
+    {
+      "claim_id": "7e574a6e-8d26-4ed0-a9ed-c0f2ec35d40d",
+      "result_id": "546f18cd-09d8-4c7d-9d5b-8313c37ef6bd"
+    },
+    {
+      "claim_id": "23c650d2-4268-4cd6-97d5-b37e4945e7c7",
+      "result_id": "ffa4be8c-4ec3-4485-b9a3-bd9ae341c5d9"
+    },
+    {
+      "claim_id": "9aa6497d-efe9-4df1-9100-6f6746466763",
+      "result_id": "ffa4be8c-4ec3-4485-b9a3-bd9ae341c5d9"
+    },
+    {
+      "claim_id": "4373e000-0226-4a11-9265-a835c0ec11ba",
+      "result_id": "5cbd1f85-b07c-4696-bf05-ff6799ec8cd5"
+    },
+    {
+      "claim_id": "c105d864-4110-48b8-b936-4a3cc86fe00a",
+      "result_id": "5cbd1f85-b07c-4696-bf05-ff6799ec8cd5"
+    },
+    {
+      "claim_id": "4cd6ff5e-ff43-45ab-bb24-1d0e449856b9",
+      "result_id": "5366dac5-f524-4df0-8ab6-3e580a91d2f1"
+    },
+    {
+      "claim_id": "a1e2edcc-dced-45d6-94ca-c78a228da526",
+      "result_id": "5366dac5-f524-4df0-8ab6-3e580a91d2f1"
+    },
+    {
+      "claim_id": "878e0780-19a3-42ba-91f1-cf018d91c470",
+      "result_id": "b8d2b20d-952d-4817-957c-241cbb10244d"
+    },
+    {
+      "claim_id": "d1a823a7-5322-43bc-b266-cff4ca86a293",
+      "result_id": "b8d2b20d-952d-4817-957c-241cbb10244d"
+    },
+    {
+      "claim_id": "15ca7ac3-71d3-42e5-be7e-1e301e55a1c9",
+      "result_id": "b8d2b20d-952d-4817-957c-241cbb10244d"
+    },
+    {
+      "claim_id": "5af8a2b9-d778-4e31-9324-78377fe47974",
+      "result_id": "f89a0de8-10c4-44af-9383-23d87495354c"
+    },
+    {
+      "claim_id": "3df8c877-e402-43b3-9bd7-bca98aba3df2",
+      "result_id": "f89a0de8-10c4-44af-9383-23d87495354c"
+    },
+    {
+      "claim_id": "f0051fae-c132-477d-bfab-15e0747e78d3",
+      "result_id": "b95bc8aa-e753-4419-ac65-f99f30df7047"
+    },
+    {
+      "claim_id": "45153fd2-6597-4278-8c48-f61a8a91021b",
+      "result_id": "b95bc8aa-e753-4419-ac65-f99f30df7047"
+    },
+    {
+      "claim_id": "e6d0a5a3-9f07-49d6-aa0d-e9b474267022",
+      "result_id": "b95bc8aa-e753-4419-ac65-f99f30df7047"
+    },
+    {
+      "claim_id": "1f5ad969-0639-4bc5-a8ad-839a53ba93fa",
+      "result_id": "28c547ec-dd3f-4410-89aa-feb93e0a80ac"
+    },
+    {
+      "claim_id": "d7736c9d-8505-4568-9ae7-bcc12c746d20",
+      "result_id": "28c547ec-dd3f-4410-89aa-feb93e0a80ac"
+    },
+    {
+      "claim_id": "7c040e78-8816-457c-ac72-1182d85de126",
+      "result_id": "28c547ec-dd3f-4410-89aa-feb93e0a80ac"
+    }
+  ],
+  "comparisons": []
+}

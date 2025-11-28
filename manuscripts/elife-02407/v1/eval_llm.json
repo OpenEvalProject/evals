@@ -1,0 +1,490 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Both Flavopiridol (FP) and Triptolide (Trp) block transcription at more than 95% of genes in mouse ES cells, demonstrating that P-TEFb-dependent pause escape is as universal as TFIIH-dependent initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C50, C51 provide quantitative GRO-seq data showing 96% of genes decreased after Trp and 95% after FP treatment. C2 and C52 appropriately infer from this data that pause escape is a ubiquitous step in transcription. The experimental design with appropriate controls and normalization (C39-C42) supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C110",
+      "C111"
+    ],
+    "result": "Paused Pol II has a mean half-life of approximately 7 minutes at ~3200 genes, indicating remarkable stability and ruling out rapid termination-reinitiation cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C53, and C110 consistently report a ~7 min half-life calculated from decay rates after Trp treatment using exponential decay modeling. C54 appropriately compares this to Drosophila data. C111's inference that this stability excludes rapid termination cycles is reasonable given the relatively long half-life.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C112"
+    ],
+    "result": "Pol II elongation rates were measured at over 1000 genes using a Hidden Markov Model to track inhibition waves, yielding rates of 0.5 kb/min (early), 1.8 kb/min (mid), and 2.4 kb/min (late).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide specific numbers of measurements (141 early, 938 mid, 245 late) with corresponding average rates. The HMM methodology is described and validated through multiple approaches (C55-C57, C61-C62). Independent confirmation using RNA-seq intronic gradients (C61-C62) strengthens confidence in the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "Pol II accelerates dramatically as it transcribes through genes, with rates increasing from 0.5 kb/min early to 2.4 kb/min late, and this acceleration decreases as transcription proceeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 show progressive increase in elongation rates. C62 provides independent validation through RNA-seq intronic gradients showing steeper slopes upstream vs downstream. C63 demonstrates that acceleration is not constant but decreases over distance. Multiple independent lines of evidence (direct measurement, RNA-seq gradients, within-gene comparisons) converge on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C101",
+      "C133"
+    ],
+    "result": "Pol II slows down at exons, with delays of 23-37 seconds per exon depending on gene position, and exon density is the strongest predictor of elongation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide quantitative delays per exon from linear regression analysis. C101 establishes exon density as the strongest correlate among all features examined. C133 appropriately infers that Pol II slows at each exon based on the strong negative correlation. The delay decreasing in downstream regions (C85) is consistent with the acceleration model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C103",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "H3K79me2 has a positive effect on elongation rates, is enriched in the first exon and intron, and represents an independent predictor that cannot be explained by exon density alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C78 establish the positive correlation. C103 demonstrates through iterative regression that H3K79me2 effects are independent of exon density. C106 shows it's one of three main modulators in multivariate analysis. C107-C108 appropriately infer its role in early elongation based on its enrichment pattern. The statistical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C93",
+      "C94",
+      "C96",
+      "C98",
+      "C101",
+      "C106"
+    ],
+    "result": "CG content within genes has a negative effect on elongation rates, independent of exonic enrichment, with CG-rich 6-mers associated with slower rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 show enrichment of CG-rich sequences in slow genes. C96 and C98 demonstrate the effect persists in intronic regions, ruling out confounding by exonic features. C101 and C106 establish CG content as one of three main independent modulators through multivariate analysis. The evidence is consistent across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Approximately 30% of intergenic variation in elongation rates can be explained by three features: exon density, CpG content, and H3K79me2, which have independent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 states the overall predictive power. Claims C101-C106 describe the multivariate regression analysis establishing independence of the three main factors. The iterative regression approach (C102-C105) appropriately tests for independence. The 30% explained variance is reasonable for biological data and represents a substantial advance in understanding elongation rate determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Pausing negatively correlates with mid elongation rates but not late elongation rates, suggesting pausing delays Pol II maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 present correlation data showing differential effects on mid vs late rates. The inference that pausing delays maturation is reasonable given the acceleration model and the specific pattern of correlation. This is consistent with the broader model of Pol II maturation during elongation (C63, C66).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Pol II Ser2 phosphorylation increases gradually within the gene body in the same region as elongation complex acceleration, and is a product of P-TEFb and other kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 presents ChIP-seq data showing gradual increase in Ser2 phosphorylation correlating with acceleration. C67 correctly attributes Ser2 phosphorylation to P-TEFb and other kinases based on established literature. The correlation between phosphorylation and acceleration supports the maturation model, though causality is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The bulk of change in Pol II density stems from acceleration of stably elongating molecules rather than termination, as the inverse elongation rate does not fall below the density plot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 presents the key observation comparing v\u207b\u00b9 and D. C69 appropriately infers that acceleration rather than termination explains density changes. C70 concludes termination doesn't contribute globally beyond 2-3 kb from TSS. The simulation analysis described in methods and Figure 4 supplement provides additional support for distinguishing acceleration from termination models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Elongation rate partially explains the divergence between Pol II density and mRNA levels at highly transcribed genes, reducing the log-log slope from 2.2 to 1.6 when production rates are considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C74 establish the non-linear relationship between GRO-seq and mRNA-seq. C72-C73 show correlation between elongation rate and transcription. C75-C76 demonstrate that accounting for elongation rate reduces but doesn't eliminate the slope deviation. The analysis appropriately acknowledges that other factors (mRNA stability, processing) likely contribute to the remaining correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "CG content at promoters (CpG islands) positively correlates with downstream elongation rates, associated with wider nucleosome-free regions that are shifted ~2 nucleosomes downstream in faster genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 establishes the positive correlation at promoters (opposite to gene body effects). C87-C88 provide mechanistic context linking CpG islands to nucleosome depletion. C90-C91 quantify the NFR differences between fast and slow genes. C92's inference that promoter architecture influences elongation rates is reasonable, though the mechanism connecting promoter structure to downstream elongation remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The experimental approach using 300 nM FP and 500 nM Trp with GRO-seq produces rapid, specific effects on Pol II with minimal off-target effects, as evidenced by drug-specific changes in Pol II phosphorylation and distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe the experimental design with appropriate controls and normalization. C43-C45 show drug-specific effects on Pol II phosphorylation and chromatin binding consistent with known mechanisms. C46-C47 demonstrate rapid action with minimal effects on elongating Pol II downstream of inhibition waves. The biological replicates correlated well (C41), supporting reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C123"
+    ],
+    "result": "Trp blocks initiation causing time-dependent clearing of Pol II, while FP blocks pause escape causing gene body clearance but enhanced pausing, with remarkably similar inhibition profiles in gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 describe the distinct effects of each drug consistent with their known mechanisms. C123 notes the similar gene body profiles, supporting specificity of action. The visual data in Figures 1-2 clearly show the expected patterns. This validates the experimental approach and confirms the drugs work as intended with minimal off-target effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C57"
+    ],
+    "result": "The Trp inhibition wave is less clearly defined than the FP wave, but average transition points travel at identical rates after either treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 acknowledges a technical limitation with reasonable explanation (paused Pol II escaping after Trp treatment). C57 demonstrates that despite this, the measured rates are consistent between treatments, validating the approach. This strengthens confidence that the measurements reflect true elongation rates rather than drug-specific artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "RNA-seq intronic gradients independently confirm gene-to-gene variation in elongation rates and acceleration within genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe independent validation using RNA-seq intronic read patterns. The method is based on sound reasoning about co-transcriptional splicing kinetics. The concordance between direct GRO-seq measurements and RNA-seq gradients strengthens confidence in both the elongation rate measurements and the acceleration model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Not all active genes show promoter proximal Pol II accumulation, as accumulation depends on the balance between initiation rate, escape rate, and the activities of various transcription factors and pausing factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 presents the observation. C114 provides the logical framework for understanding pausing dynamics. C115-C116 cite literature showing different transcription factors have different effects on pausing and escape. The reasoning is sound and consistent with the kinetic model of pausing, though the specific factors determining accumulation at individual genes remain to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "A small fraction of poorly expressed, weakly paused genes show reduced paused Pol II after FP treatment, possibly due to feedback between pausing dynamics and initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 presents an observation that contradicts the main model. C120 offers a speculative explanation involving feedback between pausing and initiation. C121 cites one example from literature. While the observation is noted, the explanation remains speculative and the mechanism is unclear. This represents an interesting exception that warrants further investigation but doesn't undermine the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Elongation rates after P-TEFb inhibition are slightly lower than rates after induction, possibly due to lagging Pol II pushing leading Pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 notes a difference compared to published data. C125 offers a speculative mechanistic explanation. The comparison is confounded by different experimental approaches (inhibition vs induction) and potentially different cell types or conditions. The proposed mechanism is plausible but not tested. This represents an interesting hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "DNA methylation levels and H3K79me2 effects on elongation rates could explain differences between mESC and differentiated cells, and H3K79me2 repression during reprogramming could work through elongation rate modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126 and C128 cite literature on methylation levels and reprogramming. C127 and C129 offer speculative explanations connecting these observations to elongation rates. While the logic is reasonable, these are hypotheses rather than tested conclusions. The connections between elongation rates, gene expression, and cellular phenotypes remain to be directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Variation in elongation rates can lead to differences of an hour or more in mRNA production timing, which could be relevant for development and stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 make reasonable calculations based on measured elongation rates and known gene lengths. C132 appropriately cites literature on the importance of timing in development and stress. While the functional significance of elongation rate variation for timing is not directly tested, the calculations are sound and the hypothesis is well-supported by the data and literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The observed slowdown at exons supports coupling between Pol II elongation rates and splicing at all exons, though effects on alternative splicing outcomes remain to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 offers a speculative mechanism for exon-associated slowing. C135 cites literature showing elongation affects splicing. C136 appropriately concludes that the data support coupling while acknowledging limitations in assessing alternative splicing outcomes. The conclusion is measured and appropriate given the data, which demonstrate correlation but not causation or specific effects on splicing patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on P-TEFb, pausing mechanisms, and prior work in Drosophila and mammals establishing the regulatory importance of promoter-proximal pausing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C21) summarize established knowledge from the literature with appropriate citations. They provide necessary context for the current work. The citations appear appropriate and the summaries are consistent with the cited work. This represents accurate reporting of prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background on elongation rate effects on co-transcriptional processes, genomic features associated with elongation, and prior elongation rate measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C22-C38) summarize relevant prior work with appropriate citations. They establish the context for why measuring elongation rates at many genes simultaneously is important and what was previously known. The literature summary appears accurate and comprehensive. This represents appropriate contextualization of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Various chromatin marks show specific patterns relative to elongation rates and gene structure, with H3K36me3 and CpG methylation depleted in faster genes while H3K4me1 and H3K79me2 are enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 present ChIP-seq correlation data. C79-C80 cite literature on chromatin mark distributions. C81 shows correlation between first intron length and elongation rate. The correlations are clearly demonstrated, though the mechanistic connections and causal relationships remain to be fully established. The data support the correlations but don't definitively establish mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "Elongation rate shows opposite correlations with CG content at promoters (positive) versus gene bodies (negative), and is unaffected by nucleosome occupancy in gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 establish the contrasting effects of CG content at different locations. C97 notes lack of correlation with gene body nucleosome occupancy. C98 shows the gene body CG effect is independent of exonic features. The observations are well-supported, though the mechanistic basis for the opposite effects at promoters vs gene bodies remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The negative effect of GC-rich DNA on elongation rates may be explained by increased melting temperature or differential methylation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 offer speculative mechanistic explanations for the observed CG content effects. While the hypotheses are reasonable and C99 cites supporting literature, these remain untested explanations. The actual mechanism by which CG content affects elongation rates in vivo is not established by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Correlations between elongation rates and intron 1 length, H3K36me3, and H3K4me1 can be explained almost entirely by exon density alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 presents results from iterative regression analysis showing these features don't correlate with residuals after accounting for exon density. This is an appropriate statistical approach for identifying independent vs dependent predictors. The analysis supports the conclusion that these features don't have independent effects beyond their correlation with exon density.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "H3K79me2 and CpG content have independent components from each other, while CpG methylation is tightly associated with CpG content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 present results from iterative regression analysis establishing relationships between predictors. The statistical approach is appropriate for identifying independent vs correlated features. The finding that methylation is tightly linked to CpG content is expected, while the independence of H3K79me2 and CpG content is informative for understanding their separate contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C109",
+      "C117",
+      "C118",
+      "C122"
+    ],
+    "result": "Discussion of pausing regulation, stability, and the role of various factors in determining pausing dynamics and gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C109, C117, C118, C122) represent discussion and interpretation of the results in context of the literature. C109 appropriately summarizes the main finding about universal P-TEFb dependence. C117 offers a reasonable model for pausing function. C118 and C122 cite relevant literature. These represent appropriate interpretation and contextualization of the findings.",
+    "result_type": "MINOR"
+  }
+]

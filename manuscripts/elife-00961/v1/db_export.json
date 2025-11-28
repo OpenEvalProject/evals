@@ -1,0 +1,1810 @@
+{
+  "submission": {
+    "id": "3f44853a-8079-4839-95e9-d27ba818db53",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:43:17.804363Z",
+    "updated_at": "2025-11-28T19:43:17.804363Z"
+  },
+  "content": [
+    {
+      "id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "submission_id": "3f44853a-8079-4839-95e9-d27ba818db53",
+      "content_type": "manuscript",
+      "content_text": "# Phenotypic landscape inference reveals multiple evolutionary paths to C4 photosynthesis\n\n## Authors\n\n- Ben P Williams<sup>1</sup>\n- Iain G Johnston<sup>2</sup>\n- Sarah Covshoff<sup>1</sup>\n- Julian M Hibberd<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Plant Sciences University of Cambridge Cambridge United Kingdom\n2. Department of Mathematics Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nC4 photosynthesis has independently evolved from the ancestral C3 pathway in at least 60 plant lineages, but, as with other complex traits, how it evolved is unclear. Here we show that the polyphyletic appearance of C4 photosynthesis is associated with diverse and flexible evolutionary paths that group into four major trajectories. We conducted a meta-analysis of 18 lineages containing species that use C3, C4, or intermediate C3\u2013C4 forms of photosynthesis to parameterise a 16-dimensional phenotypic landscape. We then developed and experimentally verified a novel Bayesian approach based on a hidden Markov model that predicts how the C4 phenotype evolved. The alternative evolutionary histories underlying the appearance of C4 photosynthesis were determined by ancestral lineage and initial phenotypic alterations unrelated to photosynthesis. We conclude that the order of C4 trait acquisition is flexible and driven by non-photosynthetic drivers. This flexibility will have facilitated the convergent evolution of this complex trait.\n\n## Introduction\n\nThe convergent evolution of complex traits is surprisingly common, with examples including camera-like eyes of cephalopods, vertebrates, and cnidaria (Kozmik et al., 2008), mimicry in invertebrates and vertebrates (Santos et al., 2003; Wilson et al., 2012) and the different photosynthetic machineries of plants (Sage et al., 2011a). While the polyphyletic origin of simple traits (Hill et al., 2006; Steiner et al., 2009) is underpinned by flexibility in the underlying molecular mechanisms, the extent to which this applies to complex traits is less clear. C4 photosynthesis is both highly complex, involving alterations to leaf anatomy, cellular ultrastructure, and photosynthetic metabolism, and also convergent, being found in at least 60 independent lineages of angiosperms (Sage et al., 2011a). As the emergence of the entire C4 phenotype cannot be comprehensively explored experimentally, C4 photosynthesis is an ideal system for the mathematical modelling of complex trait evolution as transitions on an underlying phenotype landscape. Furthermore, understanding the evolutionary events that have generated C4 photosynthesis on many independent occasions has the potential to inform approaches being undertaken to engineer C4 photosynthesis into C3 crop species (Hibberd et al., 2008).\n\nThe C4 pathway is estimated to have first evolved between 32 and 25 million years ago (Christin et al., 2011b) in response to multiple ecological drivers, including decreasing atmospheric CO2 concentration (Vicentini et al., 2008). C4 species have since radiated to represent the most productive crops and native vegetation on the planet because modifications to their leaves increase the efficiency of photosynthesis in the sub-tropics and tropics (Edwards et al., 2010). In C4 plants, photosynthetic efficiency is improved compared with C3 species because significant alterations to leaf anatomy, cell biology and biochemistry lead to higher concentrations of CO2 around the primary carboxylase RuBisCO Slack and Hatch, 1967; Langdale, 2011). The morphology of C4 leaves is typically modified into so-called Kranz anatomy that consists of repeating units of vein, bundle sheath (BS) and mesophyll (M) cells (Hattersley, 1984; Langdale, 2011) (Figure 1\u2014figure supplement 1). Photosynthetic metabolism becomes modified and compartmentalised between the M and BS, with M cells lacking RuBisCO but instead containing high activities of the alternate carboxylase PEPC to generate C4 acids. The diffusion of these acids followed by their decarboxylation in BS cells around RuBisCO increases CO2 supply and therefore photosynthetic efficiency (Zhu et al., 2008). C4 acids are decarboxylated by at least one of three enzymes within BS cells: NADP- or NAD-dependent malic enzymes (NADP-ME or NAD-ME respectively), or phosphoenolpyruvate carboxykinase (PCK) (Hatch et al., 1975). Specific lineages of C4 species have typically been classified into one of three sub-types, based on the activity of these decarboxylases, as well as anatomical and cellular traits that consistently correlate with each other (Furbank, 2011).\n\nThe genetic mechanisms underlying the evolution of cell-specific gene expression associated with the separation of photosynthetic metabolism between M and BS cells involve both alterations to cis-elements and trans-acting factors (Akyildiz et al., 2007; Brown et al., 2011; Kajala et al., 2012; Williams et al., 2012). Phylogenetically independent lineages of C4 plants have co-opted homologous mechanisms to generate cell specificity (Brown et al., 2011) as well as the altered allosteric regulation of C4 enzymes (Christin et al., 2007) indicating that parallel evolution underpins at least part of the convergent C4 syndrome. However, while a substantial amount of work has addressed the molecular alterations that generate the biochemical differences between C3 and C4 plants (Williams et al., 2012) much less is known about the order and flexibility with which phenotypic traits important for C4 photosynthesis are acquired (Sage et al., 2012). Clues to this question exist in the form of C3\u2013C4 intermediates, species exhibiting characteristics of both C3 or C4 photosynthesis, such as the activity or localisation of C4 cycle enzymes (Hattersley and Stone, 1986), the possession of one or more anatomical or cellular adaptations associated with C4 photosynthesis (Moore et al., 1987), or combinations of both (e.g., Kennedy et al., 1980; Kotayeva et al., 2010). To address these unknown aspects of C4 evolutionary history, we combined the concept of considering evolutionary paths as stochastic processes on complex adaptive landscapes (Wright, 1932; Gavrilets, 1997) with the analysis of extant C3\u2013C4 intermediate species to develop a predictive model of how the full C4 phenotype evolved.\n\n## Results\n\n### A meta-analysis of photosynthetic phenotypes\n\nTo parameterise the phenotypic landscape underlying photosynthetic phenotypes, data was consolidated from 43 studies encompassing 18 C3, 18 C4, and 37 C3\u2013C4 intermediate species from 22 genera (Table 1). These C3\u2013C4 species are from 18 independent lineages likely representing 18 distinct evolutionary origins of C3\u2013C4 intermediacy (Sage et al., 2011a) (Figure 1\u2014figure supplement 2). These studies were used to quantify 16 biochemical, anatomical, and cellular characteristics associated with C4 photosynthesis (Figure 1\u2014source data 1). Principal components analysis (PCA) was performed to confirm the phenotypic intermediacy of the C3\u2013C4 species (Figure 1A). This result, the sister-group relationships of C3\u2013C4 species with congeneric C4 clades (McKown et al., 2005; Vogan et al., 2007; Christin et al., 2011a; Sage et al., 2011a; Khoshravesh et al., 2012) and the prevalence of extant C3\u2013C4 species in genera with the most recent origins of C4 photosynthesis (Christin et al., 2011b) all support the notion that C3\u2013C4 species represent phenotypic states through which transitions to C4 photosynthesis could occur. The combined traits of C3\u2013C4 intermediate species therefore represent samples from across the space of phenotypes connecting C3 to C4 photosynthesis (Figure 1B). Within our meta-analysis data, C3\u2013C4 phenotypes were available for 33 eudicot and 4 monocot species. 16 and 17 of these species have extant congeneric relatives performing NADP-ME or NAD-ME sub-type C4 photosynthesis respectively. No C3\u2013C4 relatives of PCK sub-type C4 species are known (Sage et al., 2011a). Our meta-analysis therefore encompassed a variety of taxonomic lineages, as well as representing close relatives of known phenotypic variants performing C4 photosynthesis.\n\n**Table 1.**\n Summary of C3\u2013C4 lineages assessed\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Family</th>\n      <th>Species</th>\n      <th>References*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Amaranthaceae</td>\n      <td>Alternanthera ficoides (C3\u2013C4)</td>\n      <td>Rajendrudu et al. (1986)</td>\n    </tr>\n    <tr>\n      <td>Alternanthera tenella (C3\u2013C4)</td>\n      <td>Devi and Raghavendra (1993)</td>\n    </tr>\n    <tr>\n      <td>Alternanthera pungens (C4)</td>\n      <td>Devi et al. (1995)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"20\">Asteraceae</td>\n      <td>Flaveria cronquistii (C3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Flavera pringlei (C3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Flaveria robusta (C3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Flaveria angustifolia (C3\u2013C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Flaveria anomala (C3\u2013C4)</td>\n      <td>Ku et al. (1983)</td>\n    </tr>\n    <tr>\n      <td>Flaveria chloraefolia (C3\u2013C4)</td>\n      <td>Holaday et al. (1984)</td>\n    </tr>\n    <tr>\n      <td>Flaveria floridana (C3\u2013C4)</td>\n      <td>Adams et al. (1986)</td>\n    </tr>\n    <tr>\n      <td>Flaveria linearis (C3\u2013C4)</td>\n      <td>Brown and Hattersley (1989)</td>\n    </tr>\n    <tr>\n      <td>Flaveria oppositifolia (C3\u2013C4)</td>\n      <td>Ku et al. (1991)</td>\n    </tr>\n    <tr>\n      <td>Flaveria ramosissima (C3\u2013C4)</td>\n      <td>Rosche et al. (1994)</td>\n    </tr>\n    <tr>\n      <td>Flaveria sonorensis (C3\u2013C4)</td>\n      <td>Casati et al. (1999)</td>\n    </tr>\n    <tr>\n      <td>Flaveria brownie (C3\u2013C4)</td>\n      <td>McKown et al. (2005)</td>\n    </tr>\n    <tr>\n      <td>Flaveria vaginata (C3\u2013C4)</td>\n      <td>McKown and Dengler (2007)</td>\n    </tr>\n    <tr>\n      <td>Flaveria pubescens (C3\u2013C4)</td>\n      <td>Gowik et al. (2011)</td>\n    </tr>\n    <tr>\n      <td>Flaveria australasica (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Flaveria bidentis (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Flaveria kochiana (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Flaveria trinervia (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Parthenium incanum (C3)</td>\n      <td>Moore et al. (1987)</td>\n    </tr>\n    <tr>\n      <td>Parthenium hysterophorus (C3\u2013C4)</td>\n      <td>Devi and Raghavendra (1993)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Boraginaceae</td>\n      <td>Heliotropium europaeum (C3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Heliotropium calcicola (C3)</td>\n      <td>Vogan et al. (2007)</td>\n    </tr>\n    <tr>\n      <td>Heliotropium convolvulaceum (C3\u2013C4)</td>\n      <td>Muhaidat et al. (2011)</td>\n    </tr>\n    <tr>\n      <td>Heliotropium greggii (C3\u2013C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Heliotropium polyphyllum (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">Brassicaceae</td>\n      <td>Moricandia foetida (C3)</td>\n      <td>Holaday et al. (1981)</td>\n    </tr>\n    <tr>\n      <td>Moricandia arvensis (C3\u2013C4)</td>\n      <td>Rawsthorne et al. (1988)</td>\n    </tr>\n    <tr>\n      <td>Moricandia spinosa (C3\u2013C4)</td>\n      <td>Beebe and Evert (1990)</td>\n    </tr>\n    <tr>\n      <td>Moricandia nitens (C3\u2013C4)</td>\n      <td>Rawsthorne et al. (1998)</td>\n    </tr>\n    <tr>\n      <td>Raphanus sativus (C3)</td>\n      <td>Ueno et al. (2003)</td>\n    </tr>\n    <tr>\n      <td>Diplotaxis muralis (C3\u2013C4)</td>\n      <td>Ueno et al. (2006)</td>\n    </tr>\n    <tr>\n      <td>Diplotaxis tenuifolia (C3\u2013C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Chenopodiaceae</td>\n      <td>Salsola oreophila (C3)</td>\n      <td>P\u2019yankov et al. (1997)</td>\n    </tr>\n    <tr>\n      <td>Salsola arbusculiformis (C3\u2013C4)</td>\n      <td>Voznesenskaya et al. (2001)</td>\n    </tr>\n    <tr>\n      <td>Salsola arbuscula (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Cleomaceae</td>\n      <td>Cleome spinosa (C3)</td>\n      <td>Voznesenskaya et al. (2007)</td>\n    </tr>\n    <tr>\n      <td>Cleome paradoxa (C3\u2013C4)</td>\n      <td>Koteyeva et al. (2010)</td>\n    </tr>\n    <tr>\n      <td>Cleome gynandra (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Cyperaceae</td>\n      <td>Eleocharis acuta (C3)</td>\n      <td>Bruhl and Perry (1995)</td>\n    </tr>\n    <tr>\n      <td>Eleocharis acicularis (C3\u2013C4)</td>\n      <td>Keeley (1999)</td>\n    </tr>\n    <tr>\n      <td>Eleocharis tetragona (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Euphorbiaceae</td>\n      <td>Euphorbia angusta (C3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Euphorbia acuta (C3\u2013C4)</td>\n      <td>Sage et al. (2011b)</td>\n    </tr>\n    <tr>\n      <td>Euphorbia lata (C3\u2013C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Euphorbia mesembryanthemifolia (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Molluginaceae</td>\n      <td>Mollugo tenella (C3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mollugo verticillata (C3\u2013C4)</td>\n      <td>Sayre et al. (1979)</td>\n    </tr>\n    <tr>\n      <td>Mollugo naudicalis (C3\u2013C4)</td>\n      <td>Kennedy et al. (1980)</td>\n    </tr>\n    <tr>\n      <td>Mollugo pentaphylla (C3\u2013C4)</td>\n      <td>Christin et al. (2011a)</td>\n    </tr>\n    <tr>\n      <td>Mollugo cerviana (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"15\">Poaceae</td>\n      <td>Avena sativa (C3)</td>\n      <td>Slack and Hatch (1967)</td>\n    </tr>\n    <tr>\n      <td>Neurachne tenuifolia (C3)</td>\n      <td>Hattersley and Stone (1986)</td>\n    </tr>\n    <tr>\n      <td>Neurachne minor (C3\u2013C4)</td>\n      <td>Brown and Hattersley (1989)</td>\n    </tr>\n    <tr>\n      <td>Neurachne munroi (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Panicum bisculatum (C3)</td>\n      <td>Goldstein et al. (1976)</td>\n    </tr>\n    <tr>\n      <td>Panicum hians (C3\u2013C4)</td>\n      <td>Ku et al. (1976)</td>\n    </tr>\n    <tr>\n      <td>Panicum milioides (C3\u2013C4)</td>\n      <td>Ku and Edwards (1978)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Panicum miliaceum (C4)</td>\n      <td>Rathnam and Chollet (1978)</td>\n    </tr>\n    <tr>\n      <td>Rathnam and Chollet (1979)</td>\n    </tr>\n    <tr>\n      <td>Holaday and Black (1981)</td>\n    </tr>\n    <tr>\n      <td>Hattersley (1984)</td>\n    </tr>\n    <tr>\n      <td>Saccharum officinarum (C4)</td>\n      <td>Slack and Hatch (1967)</td>\n    </tr>\n    <tr>\n      <td>Sorghum bicolor (C4)</td>\n      <td>Slack and Hatch (1967)</td>\n    </tr>\n    <tr>\n      <td>Triticum aestivum (C3)</td>\n      <td>Slack and Hatch (1967)</td>\n    </tr>\n    <tr>\n      <td>Zea mays (C4)</td>\n      <td>Slack and Hatch (1967)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Portulaceae</td>\n      <td>Sesuvium portulacastrum (C3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Portulaca cryptopetala (C3\u2013C4)</td>\n      <td>Voznesenskaya et al. (2010)</td>\n    </tr>\n    <tr>\n      <td>Portulaca oleracea (C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Scrophularaceae</td>\n      <td>Anticharis kaokoensis (C3)</td>\n      <td>Khoshravesh et al. (2012)</td>\n    </tr>\n    <tr>\n      <td>Anticharis ebracteata (C3\u2013C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Anticharis imbricate (C3\u2013C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Anticharis namibensis (C3\u2013C4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Anticharis glandulosa (C4)</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_The family, species, photosynthetic type and original study are listed. In total, 16 characteristics relating to C4 photosynthesis were extracted from 43 studies encompassing 18 C3, 18 C4, and 37 C3\u2013C4 intermediate species.*References apply to all species within each genus._\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig1-v1.jpg)\n\n**Figure 1.:** Principal component analysis (PCA) on data for the activity of five C4 cycle enzymes confirms the intermediacy of C3\u2013C4 species between C3 and C4 phenotype spaces (A). Each C4 trait was considered absent in C3 species and present in C4 species, with previously studied C3\u2013C4 intermediate species representing samples from across the phenotype space (B). With a dataset of 16 phenotypic traits, a 16-dimensional space was defined. (C) A 2D representation of 50 pathways across this space. The phenotypes of multiple C3\u2013C4 species were used to identify pathways compatible with individual species (e.g., Alternanthera ficoides [red nodes] and Parthenium hysterophorus [blue nodes]), and pathways compatible with the phenotypes of multiple species (purple nodes).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Plants using C4 photosynthesis possess a number of anatomical, cellular, and biochemical adaptations that distinguish them from C3 ancestors. These include decreased vein spacing (A) and enlarged bundle sheath (BS) cells, which lie adjacent to veins (B). Together, these adaptations decrease the ratio of mesophyll (M) to BS cell volume. C4 metabolism is generated by the increased abundance and M or BS-specific expression of multiple enzymes (shown in purple), which are expressed in both M and BS cells of C3 leaves. Abbreviations: ME\u2013Malic enzymes, RuBisCO\u2014Ribulose1-5,Bisphosphate Carboxylase Oxygenase, PEPC\u2013phosphoenolpyruvate carboxylase, PPDK\u2013pyruvate,orthophosphate dikinase.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A phylogeny of angiosperm orders is shown, based on the classification by the Angiosperm Phylogeny Group. The phylogenetic distribution of known two-celled C4 photosynthetic lineages are annotated, together with the distribution of C3-C4 lineages that we used in this study. The numbers of independent C3-C4, or C4 lineages present in each order are shown in parentheses.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Quantitative variables were assigned binary scores using two-data clustering techniques. Each panel depicts the assignation of presence (red squares) and absence (blue triangles) scores by the EM algorithm. Adjacent to the right are cladograms depicting the partitioning of the same values into clusters by hierarchical clustering. Red cladogram branches denote values partitioned into a different group to that assigned by EM. The variables depicted in each panel are PEPC activity (A), PPDK activity (B), C4 acid decarboxylase activity (C), RuBisCO activity (D), MDH activity (E), vein spacing (F), number of BS chloroplasts (G), BS chloroplast size (H).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** In this illustration, the phenotype consists of three traits, yielding a simple (hyper)cubic transition network. Simulated trajectories on this network evolve according to the weights of network edges (A). Probabilities were calculated from the signals emitted by simulated trajectories at intermediate nodes (B). Ensembles of trajectories were simulated to obtain probabilities from these signals for every possible evolutionary transition (C).\n\nWe defined each C4 trait as either being absent (0) or present (1). For quantitative traits the expectation-maximization (EM) algorithm and hierarchical clustering were used to impartially assign binary scores (Figure 1\u2014figure supplement 3). This generated a 16-bit string for each of the species (Figure 1\u2014source data 1), with a presence or absence score for each of the traits included in our meta-analysis. This defined a 16-dimensional phenotype space with 216 (65,536) nodes corresponding to all possible combinations of presence (1) and absence (0) scores for each characteristic.\n\n### A novel Bayesian approach for predicting evolutionary trajectories\n\nMany existing methods of inference for evolutionary trajectories rely on phylogenetic information or assumptions about the fitness landscape underlying evolutionary dynamics (Weinreich et al., 2005; Lobkovsky et al., 2011; Mooers and Heard, 2013). In convergent evolution, these properties are not always known, as convergent lineages may be genetically distant and associated with poor phylogenetic reconstructions. In addition, the selective pressures experienced by each may be different and dynamic. We therefore consider the convergent evolution of C4 fundamentally as the acquisition of the key phenotypic traits identified through our meta-analysis (Figure 1B). The process of acquisition of these traits can be pictured as a path on the 16-dimensional hypercube (Figure 1C), from the node labelled with all 0\u2019s (the C3 phenotype, with no C4 characteristics) to the node labelled with all 1\u2019s (the C4 phenotype, with all C4 characteristics).\n\nThe phenotypic landscape underlying the evolution of C4 photosynthesis was then modelled as a transition network, with weighted edges describing the probability of transitions occurring between two phenotypic states (two nodes on the hypercube, Figure 1\u2014figure supplement 4). Observed intermediate points were then used to constrain the structure of these phenotypic landscapes. To do this, we developed inferential machinery based on the framework of Hidden Markov Models (HMMs) (Rabiner, 1989) (Figure 1\u2014figure supplement 4) and simulated an ensemble of Markov chains on trial transition networks. Each of these chains represents a possible evolutionary pathway from C3 to C4, and passes through several intermediate phenotypic states. The likelihood of observing intermediate states with characteristics compatible with the biologically observed data on C3\u2013C4 intermediates was recorded for the set of paths supported on each trial network. A Bayesian MCMC procedure was used to sample from the set of networks most compatible with the meta-analysis dataset, and thus most likely to represent the underlying dynamics of C4 evolution. The order in which phenotypic characteristics were acquired was recorded for paths on each network compatible with the C3\u2013C4 species data, and posterior probability distributions (given uninformative priors) for the time-ordered acquisition of each C4 trait were generated. For further information and mathematical details, see \u2018Methods\u2019.\n\nTo model the evolutionary paths generating C4 without requiring additional dimensionality, we imposed that only one C4 trait may be acquired at a time, and loss of acquired C4 traits was forbidden. To test if we were nevertheless able to detect traits acquired simultaneously in evolution, we tested our approach on artificial positive control datasets containing intermediate nodes representing a stepwise evolutionary sequence of events (Figure 2A) and an evolutionary pathway in which four traits are acquired simultaneously at a time (Figure 2B). Our approach clearly assigned equal acquisition probabilities to traits whose timing was linked in the underlying dataset, even when 50% of the data was occluded (Figure 2B). These data are consistent with this approach detecting the simultaneous acquisition of traits in evolution, even though single-trait acquisitions are simulated.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig2-v1.jpg)\n\n**Figure 2.:** (A and B) Datasets were obtained from an artificially constructed diagonal dynamic matrix (A), and a diagonal matrix with linked timing of locus acquisitions (B). The single, diagonal evolutionary trajectory was clearly replicated in both examples, over a time-scale of 16 individual steps, or four coarse-grained quartiles. We subjected these artificial datasets to our inferential machinery with fully characterised artificial species, and with 50% of data occluded in order to replicate the proportion of missing data from our C3\u2013C4 dataset. (C) When applied to our meta-analysis of C3\u2013C4 data, predictions were generated for every trait missing from the biological dataset. We tested this predictive machinery by generating 29 artificial datasets, each missing one data point, and comparing the presence/absence of the trait as predicted by our approach with the experimental data from the original study. (D and E) Quantitative real-time PCR (qPCR) was used to verify the predicted phenotypes of four C3\u2013C4 species. The abundance RbcS (D) and MDH (E) transcripts were determined from six Flaveria species. White bars represent phenotypes already determined by other studies, grey bars those that were predicted by the model and asterisks denote intermediate species phenotypes correctly predicted by our approach (Error bars indicate SEM, N = 3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A probability for the presence of unobserved phenotypic characters was generated for every characteristic not yet studied in each of the C3\u2013C4 species included in this study. Red (upward triangles) predict a posterior mean probability of >0.75 for the presence of a C4 trait; blue (downward triangles) predict a posterior mean probability of <0.25. Darker triangles represent probabilities whose standard deviations (SD) are lower than 0.25. Yellow blocks correspond to known data: no symbol is present for traits for which presence and absence have an equal probability (0.25\u20130.75).\n\n### Verifying prediction accuracy\n\nThe presence and absence of unknown phenotypes were predicted by recording all phenotypes encountered along a set of simulated evolutionary trajectories that were compatible with the data from a given species (Figure 1\u2014figure supplement 4), and calculating the posterior distribution of the proportion of these phenotypes with the value 1 for the unknown trait. If the mean of this distribution was <25% or >75%, and that value fell outside one standard deviation of the mean, the missing trait was assigned a strong prediction of absence or presence. To comprehensively test the accuracy of our predictive machinery, we generated 29 occluded datasets, consisting of the original full dataset with one randomly chosen data point removed. The predicted phenotype of each missing trait was then compared with the known phenotype published in the original study. For 29 occluded traits 18 were strongly predicted to be present or absent, and the remaining 11 predictions were neutral. Of the 18 strongly predicted traits (i.e., <25% or >75% probability), 15 were correct, with only one false positive and two false negative predictions (Figure 2C). The approach therefore assigns neutral predictions much more frequently than false positive or false negative predictions, suggesting that its outputs are highly conservative, and thus unlikely to produce artefacts. Predictions were generated for phenotypes that have not yet been described in C3\u2013C4 species (Figure 2\u2014figure supplement 1). Quantitative real-time PCR experimentally verified a subset of these, relating to abundance of C4 enzymes not previously measured (Figure 2D\u2013E). We also found that the model was able to successfully infer evolutionary dynamics in artificially constructed datasets (Figure 2A\u2013B). Taken together, these prediction and verification studies illustrate that our approach robustly identifies key features of C4 evolution.\n\n### A high-resolution model for the evolutionary events generating C4\n\nThe posterior probability distributions for the acquisition time of each phenotypic trait were combined to produce an objective, computationally generated blueprint for the order of evolutionary events generating C4 photosynthesis (Figure 3). These results were consistent with previous work on subsets of C4 lineages that proposed the BS-specificity of GDC occurs prior to the evolution of C4 metabolism (Hylton et al., 1988; Rawsthorne et al., 1988; Devi et al., 1995; Sage et al., 2012), and loss of RuBisCO from M cells occurs late (Cheng et al., 1988; Khoshravesh et al., 2012), but also provided higher resolution insight into the order of events generating C4 metabolism. Alterations to leaf anatomy as well as cell-specificity and increased abundance of multiple C4 cycle enzymes were predicted to evolve prior to any alteration to the primary C3 and C4 photosynthetic enzymes RuBisCO and phosphoenolpyruvate carboxylase (PEPC) (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig3-v1.jpg)\n\n**Figure 3.:** EM-clustered data from C3\u2013C4 intermediate species were used to generate posterior probability distributions for the timing of the acquisition of C4 traits in sixteen evolutionary steps (A) or four quartiles (B). Circle diameter denotes the mean posterior probability of a trait being acquired at each step in C4 evolution (the Bayes estimator for the acquisition probability). Halos denote the standard deviation of the posterior. The 16 traits are ordered from left to right by their probability of being acquired early to late in C4 evolution. Abbreviations: bundle sheath (BS), glycine decarboxylase (GDC), chloroplasts (CPs), decarboxylase (Decarb.), pyruvate, orthophosphate dikinase (PPDK), malate dehydrogenase (MDH), phosphoenolpyruvate carboxylase (PEPC).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Traits were also assigned presence/absence scores by hierarchical clustering. Analysis of data partitioned by hierarchical clustering predicted a similar sequence of evolutionary events to that shown in Figure 3 (A). Direct comparison of posterior probabilities reveals a high degree of similarity between results from the data clustered by hierarchical clustering versus the EM algorithm (B). These results suggest our conclusions are not affected by the different methods of assigning binary scores to traits.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Two independent pairs of traits were randomly selected and deleted from the analysis. In both cases, removing two traits did not affect the predicted timing of the remaining 14 traits in the analysis (A and B). Furthermore, including two additional traits associated with C4 photosynthesis also did not alter the predicted timing of other traits (C). Together, these data suggest our results are robust to both the removal and addition of traits from the phenotype space. Abbreviations: bundle sheath (BS), glycine decarboxylase (GDC), chloroplasts (CPs), C4 acid decarboxylase (Decarb.), mitochondria (MitoC) pyruvate,orthophosphate dikinase (PPDK), malate dehydrogenase (MDH), phosphoenolpyruvate carboxylase (PEPC).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The extent to which C4 traits are linked in evolution was assessed by modelling C4 evolution from a start phenotype with one trait already acquired. Linked traits would have a high probability of being acquired in the next event. Artificially acquired traits are listed on the x-axis and the probability of each additional C4 trait being subsequently acquired (y-axis) is denoted in each pixel of the heat map. There is overall very low probability for multiple traits being linked in their acquisition in the evolution of C4.\n\nThere was also strong evidence for enlargement of BS cells as an early innovation in most C4 lineages (Figure 3), consistent with the suggestion that this was an ancestral state within C3 ancestors of C4 grass lineages and that this contributed to the high number of C4 origins within this family (Christin et al., 2013; Griffiths et al., 2013). The compartmentation of PEPC into M cells and its increased abundance compared with C3 leaves was predicted to occur at similar times, but for all other C4 enzymes the evolution of increased abundance and cellular compartmentation were clearly separated by the acquisition of other traits (Figure 3). This result is consistent with molecular analysis of genes encoding C4 enzymes that indicates cell-specificity and increased expression are mediated by different cis-elements (Akyildiz et al., 2007; Kajala et al., 2012; Wiludda et al., 2012).\n\nTwo approaches were taken to verify that these conclusions are robust and accurately reflect biological data. First, the analysis was repeated using scores for presence or absence of traits that were assigned by hierarchical clustering, as opposed to using the EM algorithm (Figure 3\u2014figure supplement 1A). Although hierarchical clustering generated differences in the scoring of a small number of traits, the predicted evolutionary trajectories were not affected, producing highly similar results (Figure 3\u2014figure supplement 1B). Second, we introduced structural changes to the phenotype space, by both adding and subtracting traits from the analysis (Figure 3\u2014figure supplement 2). Removing two independent pairs of traits from the analysis did not affect the predicted timing of the remaining 14 traits (Figure 3\u2014figure supplement 2A\u2013B). However, increased standard deviations were observed in some cases (e.g., for the probabilities of acquiring enlarged BS cells, or decreased vein spacing) likely a consequence of using fewer data. To test if the addition of data might also affect the results, we performed an analysis with two additional traits included (Figure 3\u2014figure supplement 2C). We selected two traits that have been widely observed in C3\u2013C4 species, the centripetal positioning of mitochondria and the centrifugal or centripetal position of chloroplasts within BS cells (Sage et al., 2012). Despite the widespread occurrence of these traits, their functional importance remains unclear (Sage et al., 2012). Consistent with observations made from several genera, we predict that these cellular alterations are acquired early in the evolution of C4 photosynthesis (Hylton et al., 1988; McKown and Dengler, 2007; Muhaidat et al., 2011; Sage et al., 2011b). Importantly, including these additional early traits in the analysis did not alter the predicted order of the original 16 traits. Together, these analyses did not alter our main conclusions, suggesting that they are robust.\n\n### The order of C4 trait evolution is flexible\n\nIn addition to the likely order of evolutionary events generating C4 photosynthesis, the number of molecular alterations required is also unknown. We therefore aimed to test if multiple traits were predicted to evolve with linked timing, and therefore likely mediated by a single underlying mechanism. To achieve this, we performed a contingency analysis by considering trajectories across phenotype space beginning with a given initial acquisition step. In this analysis, the starting genome had one of the 16 traits acquired and the rest absent, and the contingency of the subsequent trajectory upon the initial step was recorded. This approach was designed to test if acquiring one C4 trait increased the probability of subsequently acquiring other traits, thus detecting if the evolution of multiple traits is linked by underlying mechanisms. Inflexible linkage between multiple traits was detected in artificial positive control datasets (Figure 2B) but not in the C3\u2013C4 dataset (Figure 3\u2014figure supplement 3). This result suggests that the order of C4 trait acquisition is flexible. Multiple origins of C4 may therefore have been facilitated by this flexibility in the evolutionary pathways connecting C3 and C4 phenotypes.\n\n### C4 evolved via multiple distinct evolutionary trajectories\n\nOur Bayesian analysis strongly indicates that there are multiple evolutionary pathways by which C4 traits are acquired by all lineages of C4 plants. First, no single sequence of acquisitions was capable of producing intermediate phenotypes compatible with all observations (\u2018Methods\u2019). Second, several traits such as compartmentation of GDC into BS and the increased number of chloroplasts in the BS clearly displayed bimodal probability distributions for their acquisition (Figure 3). This bimodality is indicative of multiple distinct pathways to C4 photosynthesis that acquire traits at earlier or later times. To investigate factors underlying this bimodality, we inferred evolutionary pathways generating the C4 leaf using data from monocot and eudicot lineages, or from lineages using NAD malic enzyme (NAD\u2013ME) or NADP malic enzyme (NADP-ME) as their primary C4 acid decarboxylase. PCA on the entire set of inferred transition networks for monocot and dicot subsets revealed distinct separation (Figure 4A), suggesting that the topology of the evolutionary landscape surrounding C4 is largely different for these two anciently diverged taxa. Performing this PCA including networks that were inferred from the full data set (with both lineages) confirmed that this separation is a robust result and involves posterior variation on a comparable scale to that of the full set of possible networks (Figure 4\u2014figure supplement 1). Analysis of the posterior probabilities of the mean pathways representing either monocots or dicots revealed that this separation is the result of differences in the timing of events generating both anatomical and biochemical traits (Figure 4C). We propose that the ancient divergence of the monocot and eudicot clades constrained the evolution of C4 photosynthesis to broadly different evolutionary pathways in each.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig4-v1.jpg)\n\n**Figure 4.:** Principal component analysis (PCA) on the entire landscape of transition probabilities using only monocot and eudicot data (A) and data from NADP-ME and NAD-ME sub-type lineages (B) shows broad differences between the evolutionary pathways generating C4 in each taxon. Monocots and eudicots differ in the predicted timing of events generating C4 anatomy and biochemistry (C), whereas NADP-ME and NAD-ME lineages differ primarily in the evolution of decreased vein spacing and greater numbers of chloroplasts in BS cells (D).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00961/elife-00961-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** PCA was performed on sampled transition networks from the sets compatible with the overall dataset and each of the two subsets corresponding to different lineages: overall/monocot/eudicot (A) overall/NAD-ME/NADP-ME (B). In (A) the variation between monocot and eudicot lineages is observed to be preserved when the overall transition networks are included, and on a similar quantitative scale to the variation in the overall set, embedded mainly on the first principal axis. In (B) the variation is of a similar scale but less distinct, correlating more with the second principal axis.\n\nThere was more overlap between the landscapes generating NAD\u2013ME and NADP-ME species (Figure 4B), likely reflecting the convergent origins of NAD\u2013ME and NADP-ME sub-types (Furbank, 2011; Sage et al., 2011a). Despite the traditional definition of these lineages on the basis of biochemical differences, we detected differences in the timing of their anatomical evolution (Figure 4D). For example, in NAD\u2013ME lineages, increased vein density was predicted to be acquired early in C4 evolution, while in NADP-ME species this trait showed a broadly different trajectory (Figure 4D). The proliferation of chloroplasts in the BS was also acquired with different timings between the two sub-types. The alternative evolutionary pathways generating the NADP-ME and NAD\u2013ME subtypes were therefore defined by differences in the timing of anatomical and cellular traits that are predicted to precede the majority of biochemical alterations (Figure 3, Figure 4D). We therefore conclude that these distinct sub-types evolved as a consequence of alternative evolutionary histories in response to non-photosynthetic pressures. Furthermore, we propose that early evolutionary events determined the downstream phenotypes of C4 sub-types by restricting lineages to independent pathways across phenotype space.\n\n## Discussion\n\n### A novel Bayesian technique for inferring stochastic trajectories\n\nThe adaptive landscape metaphor has provided a powerful conceptual framework within which evolutionary transitions can be modelled (Gavrilets, 1997; Whibley et al., 2006; Lobkovsky et al., 2011). However, the majority of complex biological traits provide numerous challenges in utilising such an approach, including missing phenotypic data, incomplete phylogenetic information and in the case of convergent evolution, variable ancestral states. Here we report the development of a novel, predictive Bayesian approach that is able to infer likely evolutionary trajectories connecting phenotypes from sparsely sampled, highly stochastic data. With this model, we provided insights into the evolution of one of the most complex traits to have arisen in multiple lineages: C4 photosynthesis. However, as our approach is not dependent on detailed phylogenetic inference, we propose that it could be used to model the evolution of other complex traits, such as those in the fossil record, which are also currently limited by the fragmented nature of data available (Kidwell and Holland, 2002). Our approach is also not limited by the time-scale over which predicted trajectories occur. As a result, it may be useful in inferring pathways underlying stochastic processes occurring over much shorter timescales, such as disease or tumour progression, or the differentiation of cell types.\n\n### C4 evolution was initiated by non-photosynthetic drivers\n\nA central hypothesis for the ecological drivers of C4 evolution is that declining CO2 concentration in the Oligocene decreased the rate of carboxylation by RuBisCO, creating a strong pressure to evolve alternative photosynthetic strategies (Christin et al., 2008; Vicentini et al., 2008). According to this hypothesis, alterations to the localisation and abundance of the primary carboxylases PEPC and RuBisCO would be expected to occur early in the evolutionary trajectories generating C4. Conversely, our data suggest that alterations to anatomy and cell biology were predicted to precede the majority of biochemical alterations, and that other enzymes of the C4 pathway are recruited prior to PEPC and RuBisCO (Figure 3). These enzymes, such as PPDK and C4 acid decarboxylases, function in processes not related to photosynthesis within leaves of C3 plants (Aubry et al., 2011), so the early changes to abundance and localisation of these enzymes within C4 lineages may have been driven by non-photosynthetic pressures. A recent in silico study also predicts that changes to photorespiratory metabolism and GDC in BS cells evolved prior to the C4 pathway (Heckman et al., 2013). Our model predicts that BS-specificity of GDC was acquired early in C4 evolution for the majority of lineages. However, we also note that the predicted timing of GDC BS-specificity is bimodal in our analysis (Figure 3), and not predicted to be acquired early in monocot lineages (Figure 4C). These results suggest that this is not a feature of C4 evolution to have occurred repeatedly in all lineages.\n\nRecent evidence from physiological and ecological studies has identified a number of additional environmental pressures that may have driven the evolution and radiation of C4 lineages, including high evaporative demands (Osborne and Sack, 2012) and increased fire frequency (Edwards et al., 2010). Increased BS volume and vein density have been proposed as likely adaptations to improve leaf hydraulics under drought (Osborne and Sack, 2012; Griffiths et al. 2013), but nothing is known about how early recruitment of GDC, PPDK, and C4 acid decarboxylases (Figure 3) may relate to these pressures. A better understanding of the mechanisms underlying the recruitment of these enzymes (Brown et al., 2011; Kajala et al., 2012; Wiludda et al., 2012) may help identify the key molecular events facilitating C4 evolution.\n\nOur data also suggest that modifications to leaf development drove the evolution of diverse C4 sub-types. For example, we find that differences in the timing of events altering leaf vascular development and BS chloroplast division occur prior to the appearance of the alternative evolutionary pathways generating the NADP-ME and NAD-ME biochemical sub-types (Figure 4D). These traits are predicted to evolve prior to any alterations to the C4 acid decarboxylase enzymes that traditionally define these sub-types (Furbank, 2011). As an homologous mechanism has been shown to regulate the cell-specificity of gene expression in both NADP-ME and NAD-ME gene families in independent lineages (Brown et al., 2011), it is unlikely that mechanisms underlying the recruitment of these enzymes drove the evolution of distinct sub-types. We therefore conclude that these different sub-types evolved as a consequence of alternative evolutionary histories in leaf development, rather than biochemical or photosynthetic pressures. This may explain why differences in the carboxylation efficiency or photosynthetic performance of different C4 sub-types have never been detected (Furbank, 2011), making the adaptive significance of different decarboxylation mechanisms difficult to explain. Instead, we propose that early evolutionary events determined the downstream phenotypes of C4 sub-types by restricting lineages to independent pathways across phenotype space. The numerous differences in leaf development and cell biology between C4 sub-types (Furbank, 2011) may provide clues as to which developmental changes underlie subsequent differences in metabolic evolution.\n\n### Convergent evolution was facilitated by flexibility in evolutionary trajectories\n\nC4 photosynthesis provides an excellent example of how independent lineages with a wide range of ancestral phenotypes can converge upon similar complex traits. Several studies on more simple traits have demonstrated that convergence upon a phenotype can be specified by diverse genotypes, and thus non-homologous molecular mechanisms in independent lineages (Wittkopp et al., 2003; Hill et al., 2006; Steiner et al., 2009). Taken together, our data also indicate that flexibility in the viable series of evolutionary events has also facilitated the convergence of this highly complex trait. First, we show that at least four distinct evolutionary trajectories underlie the evolution of C4 lineages (Figure 4). Second, we find no evidence for inflexible linkage between the predicted timing of distinct C4 traits (Figure 3\u2014figure supplement 1). This diversity in viable pathways also helps explain why C4 has been accessible to such a wide variety of species and not limited to a smaller subset of the angiosperm phylogeny. A recent model for the evolution of the biochemistry associated with the C4 leaf also found that C4 photosynthesis was accessible from any surrounding point of a fitness landscape (Heckman et al., 2013). Our study of C4 anatomy, biochemistry, and cell biology also suggests the C4 phenotype is accessible from multiple trajectories. Encouragingly, the trajectories predicted by Heckman et al. (2013) were found to pass through phenotypes of C3\u2013C4 species, despite the fact that these species were not used to parameterise the evolutionary landscape. As different mechanisms generate increased abundance and cell-specificity for the majority C4 enzymes in independent C4 lineages (reviewed in Langdale, 2011; Williams et al., 2012), it is likely that mechanistic diversity underlies the multiple evolutionary pathways generating C4 photosynthesis and may be a key factor in facilitating the convergent evolution of complex traits. This may benefit efforts to recapitulate the acquisition of C4 photosynthesis through the genetic engineering of C3 species (Hibberd et al., 2008), expanding the molecular toolbox available to establish C4 traits in distinct phenotypic backgrounds.\n\n## Methods\n\n### Biological data from C4 intermediates\n\nData from eighteen C3, seventeen C4, and thirty-seven C3\u2013C4 species were consolidated from 43 studies that have examined the phenotypic characteristics of C3\u2013C4 species since their discovery in 1974 (Table 1). Values for sixteen of the most widely studied C3 characteristics were recorded for each intermediate species, as well as congeneric C3 and C4 relatives where available. The majority of data on enzyme abundance and the number and size of bundle sheath (BS) chloroplasts were obtained from studies employing the same methodology and were thus cross-comparable (e.g., Goldstein et al., 1976; Ku et al., 1976; Ku and Edwards, 1978; Sayre et al., 1979; Holaday et al., 1981; Holaday and Black, 1981; Ku et al., 1983; Adams et al., 1986; Rajendrudu et al., 1986; Ku et al., 1991; Devi and Raghavendra, 1993; Bruhl and Perry, 1995; Casati et al., 1999; Keeley, 1999). These cross-comparable quantitative data were partitioned into presence absence scores using two clustering techniques, the expectation-maximisation (EM) algorithm and hierarchical clustering (Figure 1\u2014figure supplement 3). EM clustering was performed using a one-dimensional mixture model with two assigned components (e.g., presence and absence clusters), allowing for variable variance between the two components of the model, and variable population size between the two components. Hierarchical clustering was performed using a complete-linkage agglomerative approach, partitioning clusters by maximum distance according to a Euclidean distance metric. This approach identifies clusters with common variance, thus contrasting with the clusters of variable variance identifiable by EM.\n\nFor quantitative data not comparable with other studies (e.g., Ku and Edwards, 1978; Rathnam and Chollet, 1978; Rathnam and Chollet, 1979; Holaday et al., 1984; Brown and Hattersley, 1989; Beebe and Evert, 1990; P\u2019yankov et al., 1997; Gowik et al., 2011), values obtained for intermediate species were scored as 1 or 0 if they were closer to the values for the respective C4 or C3 controls used in the original study. For qualitative abundance data from immunoblots (e.g., Rosche et al., 1994; Voznesenskaya et al., 2007; Voznesenskaya, 2010), relative band intensity was measured using ImageJ software (Abramoff et al., 2004) and abundance was scored as 1 or 0 if the band intensity value was closer to the C4 or C3 control respectively. For qualitative cell-specificity data from immunolocalisations (e.g. Voznesenskaya et al., 2001; Ueno et al., 2003, 2006; Muhaidat et al., 2011), a presence score was only assigned if the enzyme appeared completely absent from either mesophyll (M) or BS cells. We represent the phenotypic properties of each intermediate species as a string of L = 16 numbers (Figure 1\u2014source data 1). We will refer to these strings as phenotype strings of L loci, with each locus describing data on the corresponding phenotypic trait. In a given locus, 0 denotes the absence of a C4 trait, 1 denotes the presence of a C4 trait, and 2 denotes missing data.\n\n### Principal component analysis (PCA)\n\nPCA was performed on five variables for C4 cycle enzyme activity, with missing values estimated using the EM algorithm for PCA as described by Roweis (1998).\n\n### Model transition networks\n\nThe fundamental element underlying our analysis is a transition network P, consisting of a directed graph with 2L = 65,536 nodes, and the weight of the edge Pij denoting the probability of a transition occurring from node i to node j. Each node corresponds to a possible phenotype: we labeled nodes with labels li so that li was the binary representation of the phenotype at node i, and Pij takes on the specific meaning of the probability of a transition from phenotype li to phenotype lj. We made several restrictions on the structure of P. We allowed only transitions that change a given phenotype at one locus, so Pij = 0 if H (li,lj) \u2260 1, where H (b1,b2) is the Hamming distance between bitstrings b1 and b2. Transitions that changed loci with value 1 to value 0 (steps back towards the C3 state) were forbidden, so Pij = 0 if H (li,l0) > H (lj,l0), where l0 is the phenotypic string containing only zeroes. We assume that the possibility of events involving backwards steps, and multiple simultaneous trait acquisitions constitute second-order effects which will not strongly influence the inferred evolutionary dynamics.\n\n### Evolutionary trajectories\n\nGiven the transition network P, we modelled the evolutionary trajectories that may give rise to C4 photosynthesis through the picture of a discrete analogue to a Brownian bridge, that is as a stochastic process on P with constrained start and end positions (Revuz and Yor, 1999). We enforced the start state of the process to be $l_{C_{3}}\u2261l_{0}=0\u20260$ (the phenotype string of all zeroes) and the end state, through the imposed structure of P, to be $l_{C_{4}}\u2261l_{2^{L}\u22121}=1\u20261$ (the string of all ones). The dynamics of the process between these points consisted of L steps, with a phenotypic trait being acquired at each step, and a step from node i to node j occurring with probability Pij.\n\n### Sampling intermediates\n\nAs many evolutionary trajectories may lead to the acquisition of the required phenotypic traits, we considered an ensemble of evolutionary trajectories for each transition network. Each member of this ensemble is started at $l_{C_{3}}$ and allowed to step across the network according to probabilities P.\n\nTo compare the dynamics of a given transition network to the properties of observed biological intermediates, we pictured this ensemble of trajectories as a modification of a hidden Markov model (HMM [Rabiner, 1989]). At each timestep in each individual trajectory, the process may with some probability emit a signal to the observer, with that signal being simply li, the label of the node at which the process currently resides. Over an ensemble of trajectories, a set of randomly emitted signals is thus built up (Figure 1\u2014figure supplement 4).\n\nWe define a compatibility function between two strings as\n\n$$\nC(s,t)=\\prodi=1Lc(s_{i},t_{i})\n$$\n\n\n\n$$\nc(s_{i},t_{i})={1if\u00a0s_{i}=t_{i}\u00a0or\u00a0s_{i}=2\u00a0or\u00a0t_{i}=2;0otherwise.\n$$\n\nC(s,t) thus returns 1 if a signal comprising string s could be responsible for observation t once some of the loci within s have been obscured: signal s is compatible with observation t.\n\n### Likelihood of observing biological data\n\nWe wish to compute the likelihood of observing biological data B given a transition network P. Under our model, this likelihood is calculated by considering the compatibility of randomly emitted signals from processes supported by P with the observed data B. We write\n\n$$\nL(P|B)=\\prodi\\sumchains\u00a0x\\sumsignals\u00a0s\u2119_{chain}(x|P)\u2119_{emission}(s|x)C(s,B_{i})\n$$\n\nHere, $\u2119_{chain}(x|P)$ is the probability of specific trajectory x arising on network P, $\u2119_{emission}(s|x)$ is the probability that trajectory x emits signal s, and C(s,Bi) gives the compatibility of signal s with intermediate state Bi. The term within the product operator thus describes the probability that evolutionary dynamics on network P give rise to a signal that is compatible with species Bi, with the overall likelihood being the product of this probability over all observed species.\n\n### Simulation\n\nThe uniform and random nature of signal emission means that $\u2119_{emission}(s|x)$ is a constant if signal s can be emitted from trajectory x, and zero otherwise. Our simulation approach only produces signals which can be emitted from the trajectory under consideration, so $\u2119_{emission}(s|x)$ will always take the same constant value (which depends on the probability of signal emissions). As we will be considering ratios of network likelihoods and will not be concerned with absolute likelihoods we will ignore this term henceforth. For each network P we simulate an ensemble of Nchain trajectories and, for each node encountered throughout this ensemble, we record compatibilities with each of the biologically observed intermediates. We sum these compatibilities over the ensemble, obtaining $\\sum_{chains\u00a0x}\u2119_{chain}(x|P)C(s,B_{i})$. A network that does not encounter any node compatible with a particular intermediate will thus be assigned zero likelihood; networks that encounter compatible nodes many times will be assigned high likelihoods.\n\nFor each transition network, we simulated Nchain = 2 \u00d7 104 individual trajectories running from C3 to C4. This value was chosen after preliminary investigations to analyse the ability of trajectory ensembles to broadly sample available paths on networks.\n\n### Bayesian MCMC over compatible networks\n\nGiven uninformative prior knowledge about the evolutionary dynamics leading to C4 photosynthesis (specifically, our prior involves each possible transition from a given node being assigned equal probability), we aimed to build a posterior distribution over a suitable description of the evolutionary dynamics. We represented the dynamics supported on a network P through a matrix \u03c0, where \u03c0i,n describes the probability that acquisition of trait i occurs at the nth step in an evolutionary trajectory. The values of matrix \u03c0i,n were built up from sampling over the ensemble of trajectories simulated on P.\n\nWe used Bayesian MCMC to sample networks based on their associated likelihood values (Wasserman, 2004). At each iteration, we perturbed the transition probability of the current network P a small amount (see below) to yield a new trial network P\u2019. We calculated $L(P'|B)$ and accepted P as the new network if $\\frac{L(P'|B)}{L(P|B)}>r$, where r was taken from $U(0,1)$. For practical reasons we implemented this scheme using log-likelihoods.\n\nThe perturbations we applied to transition probabilities are Normally distributed in logarithmic space: for each edge wij we used $w'_{ij}=exp(lnw_{ij}+N(0,\\sigma^{2}))$. To show that this scheme obeys detailed balance, consider two states $A$ and $A'$, for simplicity described by a one-dimensional scalar quantity. Consider the proposed move from A when \u0394 is the result of the random draw. This proposal is $A\u2192A'$ if $A'=exp(lnA+\u0394)=Ae^{\u0394}$, implying that $A=A'e^{\u2212\u0394}$. The probability of proposing move $A\u2192A'$ is thus $N(x=\u0394|0,\\sigma^{2})$, and the probability of proposing $A\u2192A'$ is $N(x=\u2212\u0394|0,\\sigma^{2})$. By the symmetry of the Normal distribution, these two probabilities are equal.\n\nWe started each MCMC run with a randomly initialised transition matrix. We allowed 2 \u00d7 104 burn-in steps then sampled over a further 2 \u00d7 105 steps. The value \u03c3 = 0.1 was chosen for the perturbation kernel. These values were chosen through an initial investigation to analyse the convergence of MCMC runs under different parameterisations. We performed 40 MCMC runs for each experiment and confirmed that the resulting posterior distributions had converged and yielded consistent results.\n\n### Summary dynamics matrices\n\nWe report the posterior distributions $\u2119(\\pi_{i,n})$ inferred from sampling compatible networks as above. In the coarse-grained time representation, we use $\\pi_{i,n'}^{CG}=\u2119(\\sum^{\u200b}_{n=1+4(n'\u22121)}^{4n'}\\pi_{i,n})$, summing over sets of ordinals of size 4.\n\nWe used the transition network P, rather than a more coarse-grained representation of the evolutionary dynamics (e.g., the summary matrices \u03c0), as the fundamental element within our simulations so as not to discard possible details that would be lost in a coarse-grained approach \u2013 for example, the presence of multiple distinct pathways, which may be averaged over in a summary matrix.\n\n### Proofs of principle\n\nTo verify our approach, we constructed artificial data sets, consisting of sets of strings in which phenotypic traits were acquired in a single ordering. Specifically, \u03c0i,n = \u03b4i,n, so the first step always resulted in acquiring the first trait, and so on. To test the approach in a pleiotropic setting, where multiple traits were acquired simultaneously, we also constructed data sets where traits were acquired at only four timesteps, each corresponding to the simultaneous acquisition of four traits. We subjected these datasets to our inferential machinery with all data intact, and with 50% of data points occluded, to determine the sensitivity and robustness of our approach (Figure 2A\u2013B). The approach accurately determines the ordering of events in both the bare and occluded cases and assigns very similar posterior probability distributions to the ordering of those traits acquired simultaneously.\n\n### Comparing the evolution of multiple C4 sub-types\n\nTo compare the pathways generating C4 in monocots and eudicots, and in NADP-ME and NAD-ME sub-type lineages, we performed inference on two data sets: B1 and B2, each comprising phenotype measurements from one of the groups of interest. We reported the posteriors on the resulting summary dynamics $\u2119(\\pi_{i,n})$ as before, and for the principal components analysis (PCA) we sampled 103 summary dynamic matrices \u03c0i,n from the inferred posterior distribution during the Bayesian MCMC procedure, and performed PCA on these sampled matrices.\n\n### Predictions\n\nWhen a simulated chain encountered a phenotypic node compatible with a given biological intermediate, the values of traits corresponding to missing data in the biological data were recorded. These recorded values, sampled over the sampled set of networks, allowed us to place probabilities on the values of biologically unobserved traits inferred from the encounters of compatible dynamics with the corresponding phenotypic possibilities. For example, if 70% of paths on network P pass through point 101 and 30% pass through point 001, we infer a 70% probability that the missing trait in biological intermediate 201 takes the value 1. Predictions were presented if the inferred probability of a \u20181\u2019 value was >75% (predicting a \u20181\u2019) or <25% (predicting a \u20180\u2019). If one of these inequalities held and the limiting value fell outside one standard deviation of the inferred probability (i.e., for mean \u03bc and standard deviation \u03c3, \u03bc > 0.75 and \u03bc \u2212 \u03c3 > 0.75 [predicting a \u20181\u2019] or \u03bc > 0.25 and \u03bc + \u03c3 < 0.25 [predicting a \u20180\u2019]), the prediction was presented as \u2018strict\u2019.\n\n### Acquisition ordering and evidence against a single pathway\n\nWe used a dynamic programming approach to explore whether a deterministic sequence of events, with a trait Tn always being acquired at timestep n ($\\pi_{i,n}=\\delta_{T_{n},n}$), was compatible with the biological data. Performing an exhaustive search over sequences of single transitions that were compatible with the observed data, we identified several such sequences that accounted for all but one trait acquisition, but no single sequence exists that accounts for all the data.\n\n### Contingent trait acquisition\n\nTo explore the possibility of multiple traits being acquired simultaneously, we tracked acquisition probabilities for later traits given that a certain trait was acquired first. This tracking was performed over all sampled compatible networks, building up \u2018contingent\u2019 acquisition tables \u03b3 with the i, j th element given by $\u2119(\\pi_{j,2}|\\pi_{i,1}=1),\\neqi$. If a pair of traits i and j were acquired simultaneously, we would expect \u03b3ij and \u03b3ji to both be higher than expected in the non-contingent case (as j should always appear to be immediately acquired after i and vice versa).\n\n### Quantitative real-time PCR (qPCR)\n\nRNA was extracted from mature leaves of six Flaveria species as part of the One Thousand Plants Consortium (www.onekp.com), using the hot acid phenol protocol as described by Johnson et al. (2012) (protocol no. 12). cDNA was synthesised from 0.5 \u00b5g RNA using Superscript II (Life Technologies, Glasgow, U.K.) following manufacturer\u2019s instructions. An oligo dT primer (Roche, Basel, Switzerland) was used to selectively transcribe polyadenylated transcripts. To each RNA sample, 1 fmol GUS transcript was added for use as an exogenous control or \u2018RNA spike\u2019, against which measured transcript abundance was normalised as described by Smith et al. (2003).\n\nqPCR was performed as described by Bustin (2000) using the DNA-binding marker SYBR Green (Sigma Aldrich, St. Louis, MO) according to manufacturer\u2019s instructions. Primers were designed using cDNA sequences for Flaveria species available at Genbank (http://www.ncbi.nlm.nih.gov/genbank) and synthesised by Life Technologies. Amplification was performed using a Rotor-Gene Q instrument (Qiagen, Hilden, Germany), using the following cycling parameters: 94\u00b0C for 2 min, followed by 40 cycles at 94\u00b0C for 20 s, 60\u00b0C for 30 s, 72\u00b0C for 30 s, followed by a 5 min incubation at 72\u00b0C. Relative transcript abundance was calculated as described by Livak and Schmittgen (2001).\n",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "c98ac0cd-df65-4695-88ba-26a5a3b7f54a",
+      "submission_id": "3f44853a-8079-4839-95e9-d27ba818db53",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dominique Bergmann, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00961.018](https://doi.org/10.7554/eLife.00961.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cPhenotypic landscape inference reveals multiple evolutionary paths to C4 photosynthesis\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 2 reviewers, one of whom, Patrick Warren, has agreed to reveal his identity.\n\nThe Reviewing editor and the two reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript by Williams et al. describes a systematic analysis of traits associated with intermediate C3-C4 forms, and makes inferences on the likely evolutionary pathways from C3 to C4 photosynthesis. It is largely an in silico study, inferring the evolutionary dynamics within 16 traits that distinguish C3 and C4 plants. The 18 lineages fall into 4 classes within which the order of appearance of the traits is convergent. Furthermore, the model predicts that there is a strong preference for the order of appearance of traits, a feature the authors have validated by measuring some previously undetermined trait values (a proxy being the abundance of transcripts by qPCR).\n\nAlthough both reviewers noted that the work was predicated on the critical assumption that present day intermediate forms are representative of the evolutionary pathways, they found the work important from several angles. It suggests that the initial phenotypic directions were unrelated to photosynthetic drivers, and only later co-opted for a common end point. This is a valuable insight, and it seems to exemplify what could be a generic mechanism to explain convergent evolution of complex traits. The work shows just how far one can get with the systematic analysis of fragmented phenotype data, with a cross-disciplinary approach, even so far as to make verifiable predictions for missing trait data.\n\nWhile agreeing that overall the paper is ambitious, has an evolutionary message, is technically original and shows the predictive value of their approach, several substantive concerns were raised that that should be addressed in the revision:\n\n1) A strength of this work is that the conclusions emerge from an inference framework that is much more convincing than when traditional (qualitative and argumentative) approaches are used. Specifically, the methodology unveiled here is both quantitative and \u201cobjective\u201d. However, the authors need to be more explicit about the level of \u201cobjectiveness\u201d of their work. Indeed, they present a framework where choices had to be made and the reader cannot know whether attempts with other choices were less conclusive. To address this issue, the authors have to demonstrate that their conclusions are robust to choices made within their modeling framework. Two specific tests should be performed:\n\n1A) First, use a structural change to your framework: instead of the 16 traits you have selected, remove say 2 of these traits, and if possible include 2 others.\n\n1B) Second, you treat quantitative traits using EM and represent these by a binary value (presence vs absence). Sometimes the assignment will not be clear-cut; could you then use the other assignment (which is nearly as justified)? An even simpler approach would have been to simply put a threshold (common for all) bypassing any EM (you do this for some of your traits). Did you first try that but not succeed? It is okay to be honest about the potential weaknesses of the conclusions given that the data is limited.\n\n2) To be clear to a broad audience, please be explicit about how you define a plant \u2018lineage\u2019 as used in your analysis. Your text describes that you have analysed data from 18 lineages. Reference is made to \u2018taxonomic lineage\u2019 but in Table 1 there are 12 families and 22 genera, neither of which tallies with the number 18. Also, please double check the species numbers: Table 1 appears to list 73 species. In the text you refer to 18 C3, 17 C4, and 37 C3-C4 intermediates, which totals 72 species. So, is there an extra species listed in Table 1? Please check to make sure you (or the reviewers) didn't miscount. A graphical representation of the phylogeny for the species used in the analysis would be useful.\n",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4cb3753a-d8ac-49eb-85b5-ce3997fa748f",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C1",
+      "claim": "C4 photosynthesis has independently evolved from the ancestral C3 pathway in at least 60 plant lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "C4 photosynthesis has independently evolved from the ancestral C3 pathway in at least 60 plant lineages",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Sage et al., 2011a in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "f81d75e0-b324-46d4-afac-82b3804ff861",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C2",
+      "claim": "The polyphyletic appearance of C4 photosynthesis is associated with diverse and flexible evolutionary paths that group into four major trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "the polyphyletic appearance of C4 photosynthesis is associated with diverse and flexible evolutionary paths that group into four major trajectories",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the meta-analysis and modeling presented in the manuscript, supported by data from 18 lineages and Bayesian analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "a77f349a-1b61-49c1-9025-6f6ace06471e",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C3",
+      "claim": "A meta-analysis was conducted of 18 lineages containing species that use C3, C4, or intermediate C3\u2013C4 forms of photosynthesis to parameterise a 16-dimensional phenotypic landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted a meta-analysis of 18 lineages containing species that use C3, C4, or intermediate C3\u2013C4 forms of photosynthesis to parameterise a 16-dimensional phenotypic landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology and data collection from 43 studies encompassing 18 C3, 18 C4, and 37 C3\u2013C4 intermediate species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "c8eda0b6-1a72-4f23-9be5-aee6cc2d8d29",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C4",
+      "claim": "A novel Bayesian approach based on a hidden Markov model was developed and experimentally verified to predict how the C4 phenotype evolved.",
+      "claim_type": "EXPLICIT",
+      "source": "We then developed and experimentally verified a novel Bayesian approach based on a hidden Markov model that predicts how the C4 phenotype evolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the development of the HMM-based Bayesian approach and its experimental verification through qPCR experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "8e8f9698-7f31-4dc5-b50d-865d30e2acaa",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C5",
+      "claim": "The alternative evolutionary histories underlying the appearance of C4 photosynthesis were determined by ancestral lineage and initial phenotypic alterations unrelated to photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative evolutionary histories underlying the appearance of C4 photosynthesis were determined by ancestral lineage and initial phenotypic alterations unrelated to photosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the analysis showing different evolutionary trajectories for monocots vs. eudicots and NADP-ME vs. NAD-ME subtypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "963ab404-bab6-4e2e-be22-b5c201f71691",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C6",
+      "claim": "The order of C4 trait acquisition is flexible and driven by non-photosynthetic drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the order of C4 trait acquisition is flexible and driven by non-photosynthetic drivers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by the contingency analysis showing no inflexible linkage between traits and the finding that anatomical changes precede biochemical changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "d1a29dda-4e4c-44f7-babb-0e95f73e2322",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C7",
+      "claim": "This flexibility in evolutionary pathways will have facilitated the convergent evolution of C4 photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This flexibility will have facilitated the convergent evolution of this complex trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference drawn from the finding of multiple flexible evolutionary pathways.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "5ad0a88e-00c5-4aa8-8e18-98b44e66711e",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C8",
+      "claim": "The C4 pathway is estimated to have first evolved between 32 and 25 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The C4 pathway is estimated to have first evolved between 32 and 25 million years ago (Christin et al., 2011b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Christin et al., 2011b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "ca8729d3-bb72-4880-83f2-bb1fc4ef4609",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C9",
+      "claim": "C4 photosynthesis evolved in response to multiple ecological drivers, including decreasing atmospheric CO2 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The C4 pathway is estimated to have first evolved between 32 and 25 million years ago (Christin et al., 2011b) in response to multiple ecological drivers, including decreasing atmospheric CO2 concentration (Vicentini et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Vicentini et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "afdd3b81-3ec3-4d5a-aa8d-432ddcf9af44",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C10",
+      "claim": "In C4 plants, photosynthetic efficiency is improved compared with C3 species because modifications to leaves lead to higher concentrations of CO2 around RuBisCO.",
+      "claim_type": "EXPLICIT",
+      "source": "In C4 plants, photosynthetic efficiency is improved compared with C3 species because significant alterations to leaf anatomy, cell biology and biochemistry lead to higher concentrations of CO2 around the primary carboxylase RuBisCO Slack and Hatch, 1967; Langdale, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Slack and Hatch, 1967 and Langdale, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "415cfbc7-7cde-4cc2-ae48-e6eaf6002ffa",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C11",
+      "claim": "The morphology of C4 leaves is typically modified into Kranz anatomy that consists of repeating units of vein, bundle sheath (BS) and mesophyll (M) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology of C4 leaves is typically modified into so-called Kranz anatomy that consists of repeating units of vein, bundle sheath (BS) and mesophyll (M) cells (Hattersley, 1984; Langdale, 2011) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to Hattersley, 1984 and Langdale, 2011, and illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "80a9c39c-1b87-4d5b-8229-bad03ea266ea",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C12",
+      "claim": "In C4 plants, photosynthetic metabolism becomes modified and compartmentalised between the M and BS, with M cells lacking RuBisCO but containing high activities of PEPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Photosynthetic metabolism becomes modified and compartmentalised between the M and BS, with M cells lacking RuBisCO but instead containing high activities of the alternate carboxylase PEPC to generate C4 acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C4 photosynthesis supported by the general literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "43a4d0b7-d195-44bc-ab7f-bc3b30c33049",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C13",
+      "claim": "C4 acids are decarboxylated by at least one of three enzymes within BS cells: NADP-ME, NAD-ME, or PCK.",
+      "claim_type": "EXPLICIT",
+      "source": "C4 acids are decarboxylated by at least one of three enzymes within BS cells: NADP- or NAD-dependent malic enzymes (NADP-ME or NAD-ME respectively), or phosphoenolpyruvate carboxykinase (PCK) (Hatch et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Hatch et al., 1975.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "377e27a6-1066-41b8-a74b-fd2cbb55e121",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C14",
+      "claim": "Specific lineages of C4 species have typically been classified into one of three sub-types based on the activity of decarboxylases and anatomical and cellular traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific lineages of C4 species have typically been classified into one of three sub-types, based on the activity of these decarboxylases, as well as anatomical and cellular traits that consistently correlate with each other (Furbank, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Furbank, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "565c2e86-c756-4c12-a326-f359bb478680",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C15",
+      "claim": "The genetic mechanisms underlying the evolution of cell-specific gene expression in C4 plants involve both alterations to cis-elements and trans-acting factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic mechanisms underlying the evolution of cell-specific gene expression associated with the separation of photosynthetic metabolism between M and BS cells involve both alterations to cis-elements and trans-acting factors (Akyildiz et al., 2007; Brown et al., 2011; Kajala et al., 2012; Williams et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "9e4a7d57-89fd-4998-8bfb-0afaad99083c",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C16",
+      "claim": "Phylogenetically independent lineages of C4 plants have co-opted homologous mechanisms to generate cell specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetically independent lineages of C4 plants have co-opted homologous mechanisms to generate cell specificity (Brown et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Brown et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "55fcc593-fa49-4ed6-a0ec-fe4db74fd729",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C17",
+      "claim": "C3\u2013C4 intermediates are species exhibiting characteristics of both C3 or C4 photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Clues to this question exist in the form of C3\u2013C4 intermediates, species exhibiting characteristics of both C3 or C4 photosynthesis, such as the activity or localisation of C4 cycle enzymes (Hattersley and Stone, 1986), the possession of one or more anatomical or cellular adaptations associated with C4 photosynthesis (Moore et al., 1987), or combinations of both (e.g., Kennedy et al., 1980; Kotayeva et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies describing C3-C4 intermediates.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "f3173e64-6c54-4678-a359-d8e8860fa27b",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C18",
+      "claim": "Data was consolidated from 43 studies encompassing 18 C3, 18 C4, and 37 C3\u2013C4 intermediate species from 22 genera.",
+      "claim_type": "EXPLICIT",
+      "source": "To parameterise the phenotypic landscape underlying photosynthetic phenotypes, data was consolidated from 43 studies encompassing 18 C3, 18 C4, and 37 C3\u2013C4 intermediate species from 22 genera (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "822acb7e-f721-41c7-a532-0570d282c339",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C19",
+      "claim": "The C3\u2013C4 species are from 18 independent lineages likely representing 18 distinct evolutionary origins of C3\u2013C4 intermediacy.",
+      "claim_type": "EXPLICIT",
+      "source": "These C3\u2013C4 species are from 18 independent lineages likely representing 18 distinct evolutionary origins of C3\u2013C4 intermediacy (Sage et al., 2011a) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citation to Sage et al., 2011a and illustrated in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "1c3822d9-f782-4234-9aa6-89379199b31b",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C20",
+      "claim": "Principal components analysis confirmed the phenotypic intermediacy of the C3\u2013C4 species.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal components analysis (PCA) was performed to confirm the phenotypic intermediacy of the C3\u2013C4 species (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the PCA results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "ec64107b-4d55-4fdc-a309-0df024af7186",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C21",
+      "claim": "The sister-group relationships of C3\u2013C4 species with congeneric C4 clades support the notion that C3\u2013C4 species represent phenotypic states through which transitions to C4 photosynthesis could occur.",
+      "claim_type": "EXPLICIT",
+      "source": "This result, the sister-group relationships of C3\u2013C4 species with congeneric C4 clades (McKown et al., 2005; Vogan et al., 2007; Christin et al., 2011a; Sage et al., 2011a; Khoshravesh et al., 2012) and the prevalence of extant C3\u2013C4 species in genera with the most recent origins of C4 photosynthesis (Christin et al., 2011b) all support the notion that C3\u2013C4 species represent phenotypic states through which transitions to C4 photosynthesis could occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple phylogenetic studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "adeffc8c-56d5-4da5-aa80-7008f4d7920b",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C22",
+      "claim": "The combined traits of C3\u2013C4 intermediate species represent samples from across the space of phenotypes connecting C3 to C4 photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined traits of C3\u2013C4 intermediate species therefore represent samples from across the space of phenotypes connecting C3 to C4 photosynthesis (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical inference from the phylogenetic relationships and phenotypic data, illustrated in Figure 1B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "af471087-f643-4ef5-9539-8e2ec0b0e198",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C23",
+      "claim": "Within the meta-analysis data, C3\u2013C4 phenotypes were available for 33 eudicot and 4 monocot species.",
+      "claim_type": "EXPLICIT",
+      "source": "Within our meta-analysis data, C3\u2013C4 phenotypes were available for 33 eudicot and 4 monocot species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the taxonomic composition of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "38bf9afd-1091-4b15-9d5d-31a11824b79f",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C24",
+      "claim": "16 and 17 of the C3-C4 species have extant congeneric relatives performing NADP-ME or NAD-ME sub-type C4 photosynthesis respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "16 and 17 of these species have extant congeneric relatives performing NADP-ME or NAD-ME sub-type C4 photosynthesis respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phylogenetic relationships of the C3-C4 species in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "bf90486f-1bd1-46ce-a2ff-730733a34842",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C25",
+      "claim": "No C3\u2013C4 relatives of PCK sub-type C4 species are known.",
+      "claim_type": "EXPLICIT",
+      "source": "No C3\u2013C4 relatives of PCK sub-type C4 species are known (Sage et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Sage et al., 2011a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "de2a5a30-af41-4e79-b238-50de460dadab",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C26",
+      "claim": "The expectation-maximization (EM) algorithm and hierarchical clustering were used to impartially assign binary scores to quantitative traits.",
+      "claim_type": "EXPLICIT",
+      "source": "For quantitative traits the expectation-maximization (EM) algorithm and hierarchical clustering were used to impartially assign binary scores (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology used for data processing, illustrated in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "6272a4f6-c112-424b-8249-f44da4380aa3",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C27",
+      "claim": "A 16-dimensional phenotype space with 65,536 nodes was defined corresponding to all possible combinations of presence and absence scores for each characteristic.",
+      "claim_type": "EXPLICIT",
+      "source": "This defined a 16-dimensional phenotype space with 216 (65,536) nodes corresponding to all possible combinations of presence (1) and absence (0) scores for each characteristic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical structure of the phenotype space used in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "c671252f-554c-44cd-bac1-61beb1b91add",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C28",
+      "claim": "The phenotypic landscape underlying the evolution of C4 photosynthesis was modelled as a transition network with weighted edges describing the probability of transitions between phenotypic states.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypic landscape underlying the evolution of C4 photosynthesis was then modelled as a transition network, with weighted edges describing the probability of transitions occurring between two phenotypic states (two nodes on the hypercube, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the modeling approach used in the study, illustrated in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "4859df4f-3a21-4023-9272-9cb5534260ec",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C29",
+      "claim": "Inferential machinery based on Hidden Markov Models was developed to constrain the structure of phenotypic landscapes using observed intermediate points.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we developed inferential machinery based on the framework of Hidden Markov Models (HMMs) (Rabiner, 1989) (Figure 1\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the novel methodology developed in the study, with citation to the HMM framework.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "0deeae8b-c1de-4e8c-a3e8-cd1009ab1780",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C30",
+      "claim": "A Bayesian MCMC procedure was used to sample from the set of networks most compatible with the meta-analysis dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "A Bayesian MCMC procedure was used to sample from the set of networks most compatible with the meta-analysis dataset, and thus most likely to represent the underlying dynamics of C4 evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "e83cee05-360e-4bfc-8b86-19c0142bab9c",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C31",
+      "claim": "The model imposed that only one C4 trait may be acquired at a time, and loss of acquired C4 traits was forbidden.",
+      "claim_type": "EXPLICIT",
+      "source": "To model the evolutionary paths generating C4 without requiring additional dimensionality, we imposed that only one C4 trait may be acquired at a time, and loss of acquired C4 traits was forbidden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a constraint of the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "66f1aa6a-b641-442e-b5d6-41746602ed4e",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C32",
+      "claim": "The approach clearly assigned equal acquisition probabilities to traits whose timing was linked in the underlying dataset, even when 50% of the data was occluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach clearly assigned equal acquisition probabilities to traits whose timing was linked in the underlying dataset, even when 50% of the data was occluded (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the positive control test shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "5b71f1e5-4b1c-4b71-9db0-87327472b233",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C33",
+      "claim": "The approach is able to detect the simultaneous acquisition of traits in evolution, even though single-trait acquisitions are simulated.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with this approach detecting the simultaneous acquisition of traits in evolution, even though single-trait acquisitions are simulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the positive control tests.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "7e04dd94-6f64-42f5-aa08-5f1d160ddbd7",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C34",
+      "claim": "For 29 occluded traits, 18 were strongly predicted to be present or absent, and of these 18 strongly predicted traits, 15 were correct.",
+      "claim_type": "EXPLICIT",
+      "source": "For 29 occluded traits 18 were strongly predicted to be present or absent, and the remaining 11 predictions were neutral. Of the 18 strongly predicted traits (i.e., <25% or >75% probability), 15 were correct, with only one false positive and two false negative predictions (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the validation results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "25a6717d-a7f5-4475-8a53-9e44a874a8fc",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C35",
+      "claim": "The approach assigns neutral predictions much more frequently than false positive or false negative predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach therefore assigns neutral predictions much more frequently than false positive or false negative predictions, suggesting that its outputs are highly conservative, and thus unlikely to produce artefacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the validation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "bc492fd7-9cc7-4926-8aaa-1a4fc1c388a1",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C36",
+      "claim": "Quantitative real-time PCR experimentally verified a subset of predictions relating to abundance of C4 enzymes not previously measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative real-time PCR experimentally verified a subset of these, relating to abundance of C4 enzymes not previously measured (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental validation shown in Figure 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "045c9a3f-bd70-417c-92ee-a62ca6d35d6c",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C37",
+      "claim": "The results are consistent with previous work proposing that BS-specificity of GDC occurs prior to the evolution of C4 metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were consistent with previous work on subsets of C4 lineages that proposed the BS-specificity of GDC occurs prior to the evolution of C4 metabolism (Hylton et al., 1988; Rawsthorne et al., 1988; Devi et al., 1995; Sage et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "46fc5ed9-d77b-4d76-b5e2-b3a136bdd769",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C38",
+      "claim": "Loss of RuBisCO from M cells occurs late in C4 evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were consistent with previous work on subsets of C4 lineages that proposed the BS-specificity of GDC occurs prior to the evolution of C4 metabolism (Hylton et al., 1988; Rawsthorne et al., 1988; Devi et al., 1995; Sage et al., 2012), and loss of RuBisCO from M cells occurs late (Cheng et al., 1988; Khoshravesh et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies and confirmed by the model results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "9a184ba7-3f6f-41ff-a471-a32df4ec6865",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C39",
+      "claim": "Alterations to leaf anatomy and cell-specificity and increased abundance of multiple C4 cycle enzymes were predicted to evolve prior to any alteration to RuBisCO and PEPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations to leaf anatomy as well as cell-specificity and increased abundance of multiple C4 cycle enzymes were predicted to evolve prior to any alteration to the primary C3 and C4 photosynthetic enzymes RuBisCO and phosphoenolpyruvate carboxylase (PEPC) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the model shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "ba667551-f917-4b82-a625-87f63b50e807",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C40",
+      "claim": "There was strong evidence for enlargement of BS cells as an early innovation in most C4 lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also strong evidence for enlargement of BS cells as an early innovation in most C4 lineages (Figure 3), consistent with the suggestion that this was an ancestral state within C3 ancestors of C4 grass lineages and that this contributed to the high number of C4 origins within this family (Christin et al., 2013; Griffiths et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding from Figure 3 is consistent with cited studies on grass lineages.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "dc337c0b-1c2b-4632-8c4c-9e122b859c15",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C41",
+      "claim": "The compartmentation of PEPC into M cells and its increased abundance compared with C3 leaves was predicted to occur at similar times.",
+      "claim_type": "EXPLICIT",
+      "source": "The compartmentation of PEPC into M cells and its increased abundance compared with C3 leaves was predicted to occur at similar times, but for all other C4 enzymes the evolution of increased abundance and cellular compartmentation were clearly separated by the acquisition of other traits (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "a133bb32-b70e-4b33-86b2-71613bc72011",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C42",
+      "claim": "For all C4 enzymes except PEPC, the evolution of increased abundance and cellular compartmentation were clearly separated by the acquisition of other traits.",
+      "claim_type": "EXPLICIT",
+      "source": "The compartmentation of PEPC into M cells and its increased abundance compared with C3 leaves was predicted to occur at similar times, but for all other C4 enzymes the evolution of increased abundance and cellular compartmentation were clearly separated by the acquisition of other traits (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "462fe549-17f7-4cdb-921f-8ee6cd96c12f",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C43",
+      "claim": "The result that cell-specificity and increased expression are separated is consistent with molecular analysis showing these are mediated by different cis-elements.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with molecular analysis of genes encoding C4 enzymes that indicates cell-specificity and increased expression are mediated by different cis-elements (Akyildiz et al., 2007; Kajala et al., 2012; Wiludda et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to molecular studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "3a6a43cf-cc4b-4d4b-b99a-ea50a2bfbee2",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C44",
+      "claim": "Repeating the analysis using scores assigned by hierarchical clustering did not affect the predicted evolutionary trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the analysis was repeated using scores for presence or absence of traits that were assigned by hierarchical clustering, as opposed to using the EM algorithm (Figure 3\u2014figure supplement 1A). Although hierarchical clustering generated differences in the scoring of a small number of traits, the predicted evolutionary trajectories were not affected, producing highly similar results (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This robustness test is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "02bfe740-7731-4ea9-bf2c-b1ab111a9900",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C45",
+      "claim": "Removing two independent pairs of traits from the analysis did not affect the predicted timing of the remaining 14 traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing two independent pairs of traits from the analysis did not affect the predicted timing of the remaining 14 traits (Figure 3\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This robustness test is shown in Figure 3\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "39688368-8813-489b-96ca-fc974ec6a733",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C46",
+      "claim": "Including two additional traits associated with C4 photosynthesis did not alter the predicted timing of other traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, including two additional traits associated with C4 photosynthesis also did not alter the predicted timing of other traits (C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This robustness test is shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "38f09eb8-7d45-4196-906a-271752357bb6",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C47",
+      "claim": "The centripetal positioning of mitochondria and the centrifugal or centripetal position of chloroplasts within BS cells are predicted to be acquired early in the evolution of C4 photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with observations made from several genera, we predict that these cellular alterations are acquired early in the evolution of C4 photosynthesis (Hylton et al., 1988; McKown and Dengler, 2007; Muhaidat et al., 2011; Sage et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is consistent with cited observations from multiple genera.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "a9d7f8da-cb61-4611-8916-049808bbdd94",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C48",
+      "claim": "Inflexible linkage between multiple traits was detected in artificial positive control datasets but not in the C3\u2013C4 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Inflexible linkage between multiple traits was detected in artificial positive control datasets (Figure 2B) but not in the C3\u2013C4 dataset (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing results from positive controls (Figure 2B) with the biological data (Figure 3\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "6e91dd1a-09bf-4404-8157-51aff4d6ad7d",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C49",
+      "claim": "The order of C4 trait acquisition is flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the order of C4 trait acquisition is flexible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the contingency analysis showing no inflexible linkage between traits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "4f51e62c-5be8-4f86-8315-afe6483e2ead",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C50",
+      "claim": "Multiple origins of C4 may have been facilitated by flexibility in the evolutionary pathways connecting C3 and C4 phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple origins of C4 may therefore have been facilitated by this flexibility in the evolutionary pathways connecting C3 and C4 phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the finding of flexible trait acquisition order.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "c4ee6187-f65e-48d3-943b-23df406e51e8",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C51",
+      "claim": "No single sequence of acquisitions was capable of producing intermediate phenotypes compatible with all observations.",
+      "claim_type": "EXPLICIT",
+      "source": "First, no single sequence of acquisitions was capable of producing intermediate phenotypes compatible with all observations ('Methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the dynamic programming analysis described in Methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "a1c84365-a0e8-4f2c-9f39-87731c1b1f98",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C52",
+      "claim": "Several traits such as compartmentation of GDC into BS and the increased number of chloroplasts in the BS displayed bimodal probability distributions for their acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, several traits such as compartmentation of GDC into BS and the increased number of chloroplasts in the BS clearly displayed bimodal probability distributions for their acquisition (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the probability distributions in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "aaf4b80f-bdb3-4c63-81c8-ad3c08049b28",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C53",
+      "claim": "Bimodality in acquisition probabilities is indicative of multiple distinct pathways to C4 photosynthesis that acquire traits at earlier or later times.",
+      "claim_type": "EXPLICIT",
+      "source": "This bimodality is indicative of multiple distinct pathways to C4 photosynthesis that acquire traits at earlier or later times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the bimodal distributions observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "77ec1783-a8cb-49cb-bd2d-efc9a24b1ffb",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C54",
+      "claim": "PCA on the entire set of inferred transition networks for monocot and dicot subsets revealed distinct separation.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA on the entire set of inferred transition networks for monocot and dicot subsets revealed distinct separation (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the PCA plot in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "0a8fef3e-f46c-4731-aa85-d2a735d233d0",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C55",
+      "claim": "The topology of the evolutionary landscape surrounding C4 is largely different for monocots and eudicots.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA on the entire set of inferred transition networks for monocot and dicot subsets revealed distinct separation (Figure 4A), suggesting that the topology of the evolutionary landscape surrounding C4 is largely different for these two anciently diverged taxa.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the PCA results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "f37bef25-8138-48e6-ae03-73ca7560ee45",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C56",
+      "claim": "The separation between monocot and eudicot evolutionary landscapes is the result of differences in the timing of events generating both anatomical and biochemical traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the posterior probabilities of the mean pathways representing either monocots or dicots revealed that this separation is the result of differences in the timing of events generating both anatomical and biochemical traits (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the analysis presented in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "26e0d5df-f945-41c8-a07b-d1bb3b5b95d0",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C57",
+      "claim": "The ancient divergence of the monocot and eudicot clades constrained the evolution of C4 photosynthesis to broadly different evolutionary pathways in each.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the ancient divergence of the monocot and eudicot clades constrained the evolution of C4 photosynthesis to broadly different evolutionary pathways in each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation for the observed differences between monocot and eudicot pathways.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "9ddf1564-59e2-4bdf-9a75-beb264339100",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C58",
+      "claim": "There was more overlap between the landscapes generating NAD\u2013ME and NADP-ME species than between monocots and eudicots.",
+      "claim_type": "EXPLICIT",
+      "source": "There was more overlap between the landscapes generating NAD\u2013ME and NADP-ME species (Figure 4B), likely reflecting the convergent origins of NAD\u2013ME and NADP-ME sub-types (Furbank, 2011; Sage et al., 2011a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the PCA plot in Figure 4B and interpreted with reference to cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "b72e9ade-b344-40ff-80ea-0b6e0f1ae79c",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C59",
+      "claim": "In NAD\u2013ME lineages, increased vein density was predicted to be acquired early in C4 evolution, while in NADP-ME species this trait showed a broadly different trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in NAD\u2013ME lineages, increased vein density was predicted to be acquired early in C4 evolution, while in NADP-ME species this trait showed a broadly different trajectory (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the analysis presented in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "e3ebfc9f-35f8-4572-a3ac-366dc5ddbeb5",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C60",
+      "claim": "The proliferation of chloroplasts in the BS was acquired with different timings between the NAD-ME and NADP-ME sub-types.",
+      "claim_type": "EXPLICIT",
+      "source": "The proliferation of chloroplasts in the BS was also acquired with different timings between the two sub-types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of NAD-ME and NADP-ME lineages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "839298f4-a4c9-4233-abae-047a8a4fc7bd",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C61",
+      "claim": "The alternative evolutionary pathways generating the NADP-ME and NAD\u2013ME subtypes were defined by differences in the timing of anatomical and cellular traits that precede the majority of biochemical alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative evolutionary pathways generating the NADP-ME and NAD\u2013ME subtypes were therefore defined by differences in the timing of anatomical and cellular traits that are predicted to precede the majority of biochemical alterations (Figure 3, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the analysis shown in Figures 3 and 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "8c9e31cf-6c5e-4a55-92d4-35ac0ee7f805",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C62",
+      "claim": "Distinct C4 sub-types evolved as a consequence of alternative evolutionary histories in response to non-photosynthetic pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that these distinct sub-types evolved as a consequence of alternative evolutionary histories in response to non-photosynthetic pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the finding that anatomical differences precede biochemical differences between subtypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "60f282b4-b963-4d86-ae52-16a3c5aec1c6",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C63",
+      "claim": "Early evolutionary events determined the downstream phenotypes of C4 sub-types by restricting lineages to independent pathways across phenotype space.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we propose that early evolutionary events determined the downstream phenotypes of C4 sub-types by restricting lineages to independent pathways across phenotype space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism to explain the evolution of different C4 subtypes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "55e8737c-567c-4971-a910-ece0574bea5c",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C64",
+      "claim": "The novel Bayesian approach is not dependent on detailed phylogenetic inference.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as our approach is not dependent on detailed phylogenetic inference, we propose that it could be used to model the evolution of other complex traits, such as those in the fossil record, which are also currently limited by the fragmented nature of data available (Kidwell and Holland, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the developed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "7178e8b0-536f-4568-b52d-a7d25a51e53c",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C65",
+      "claim": "The approach could be used to model the evolution of other complex traits in the fossil record.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as our approach is not dependent on detailed phylogenetic inference, we propose that it could be used to model the evolution of other complex traits, such as those in the fossil record, which are also currently limited by the fragmented nature of data available (Kidwell and Holland, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the method with citation to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "dd7fe0e2-f86a-470a-956d-858bdcec9454",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C66",
+      "claim": "The approach may be useful in inferring pathways underlying stochastic processes occurring over shorter timescales, such as disease or tumour progression, or cell type differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is also not limited by the time-scale over which predicted trajectories occur. As a result, it may be useful in inferring pathways underlying stochastic processes occurring over much shorter timescales, such as disease or tumour progression, or the differentiation of cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "405bc0ac-b75b-4806-95cb-7965b25aeb94",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C67",
+      "claim": "According to the hypothesis that declining CO2 drove C4 evolution, alterations to PEPC and RuBisCO would be expected to occur early in the evolutionary trajectories generating C4.",
+      "claim_type": "EXPLICIT",
+      "source": "A central hypothesis for the ecological drivers of C4 evolution is that declining CO2 concentration in the Oligocene decreased the rate of carboxylation by RuBisCO, creating a strong pressure to evolve alternative photosynthetic strategies (Christin et al., 2008; Vicentini et al., 2008). According to this hypothesis, alterations to the localisation and abundance of the primary carboxylases PEPC and RuBisCO would be expected to occur early in the evolutionary trajectories generating C4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the cited hypothesis about CO2-driven evolution.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "118ac292-1842-4a91-9c60-11a885833721",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C68",
+      "claim": "The data suggest that alterations to anatomy and cell biology preceded the majority of biochemical alterations, contrary to the CO2-driven hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, our data suggest that alterations to anatomy and cell biology were predicted to precede the majority of biochemical alterations, and that other enzymes of the C4 pathway are recruited prior to PEPC and RuBisCO (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model shown in Figure 3 that contradicts the CO2-driven hypothesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "8cd9d0e1-4be0-460b-94d5-1d41ba03dd5f",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C69",
+      "claim": "Enzymes such as PPDK and C4 acid decarboxylases function in processes not related to photosynthesis within leaves of C3 plants.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes, such as PPDK and C4 acid decarboxylases, function in processes not related to photosynthesis within leaves of C3 plants (Aubry et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Aubry et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "c5b50e69-615e-4edb-9f71-9fe3eabc7dbb",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C70",
+      "claim": "The early changes to abundance and localisation of PPDK and C4 acid decarboxylases within C4 lineages may have been driven by non-photosynthetic pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes, such as PPDK and C4 acid decarboxylases, function in processes not related to photosynthesis within leaves of C3 plants (Aubry et al., 2011), so the early changes to abundance and localisation of these enzymes within C4 lineages may have been driven by non-photosynthetic pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation based on the finding that these enzymes are recruited early and have non-photosynthetic functions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "73a6845e-a689-4022-aa21-00082dced7d8",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C71",
+      "claim": "A recent in silico study predicts that changes to photorespiratory metabolism and GDC in BS cells evolved prior to the C4 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent in silico study also predicts that changes to photorespiratory metabolism and GDC in BS cells evolved prior to the C4 pathway (Heckman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Heckman et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "252c0bf5-c94b-4dbe-b29b-103ef6b4eedf",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C72",
+      "claim": "The model predicts that BS-specificity of GDC was acquired early in C4 evolution for the majority of lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that BS-specificity of GDC was acquired early in C4 evolution for the majority of lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "230becfa-4ba7-42f9-8a3f-791727c67523",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C73",
+      "claim": "The predicted timing of GDC BS-specificity is bimodal and not predicted to be acquired early in monocot lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also note that the predicted timing of GDC BS-specificity is bimodal in our analysis (Figure 3), and not predicted to be acquired early in monocot lineages (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the analysis presented in Figures 3 and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "ee54e780-9f37-4582-83c6-1559dfa2ac63",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C74",
+      "claim": "BS-specificity of GDC is not a feature of C4 evolution to have occurred repeatedly in all lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that this is not a feature of C4 evolution to have occurred repeatedly in all lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the bimodal distribution and differences between monocots and eudicots.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "d133e359-8b35-4772-ba0e-9b9af1b13215",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C75",
+      "claim": "Recent evidence has identified additional environmental pressures that may have driven C4 evolution, including high evaporative demands and increased fire frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence from physiological and ecological studies has identified a number of additional environmental pressures that may have driven the evolution and radiation of C4 lineages, including high evaporative demands (Osborne and Sack, 2012) and increased fire frequency (Edwards et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "e007b8f8-70d7-4855-bf05-5db6f5c5ed78",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C76",
+      "claim": "Increased BS volume and vein density have been proposed as likely adaptations to improve leaf hydraulics under drought.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased BS volume and vein density have been proposed as likely adaptations to improve leaf hydraulics under drought (Osborne and Sack, 2012; Griffiths et al. 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "650c37ac-1f5c-4e46-9d38-1c9610b02508",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C77",
+      "claim": "Differences in the timing of events altering leaf vascular development and BS chloroplast division occur prior to the appearance of the alternative evolutionary pathways generating the NADP-ME and NAD-ME biochemical sub-types.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we find that differences in the timing of events altering leaf vascular development and BS chloroplast division occur prior to the appearance of the alternative evolutionary pathways generating the NADP-ME and NAD-ME biochemical sub-types (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the analysis presented in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "18386f03-0ed7-44cd-ad2a-866c74f37668",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C78",
+      "claim": "These anatomical and cellular traits are predicted to evolve prior to any alterations to the C4 acid decarboxylase enzymes that traditionally define the NADP-ME and NAD-ME sub-types.",
+      "claim_type": "EXPLICIT",
+      "source": "These traits are predicted to evolve prior to any alterations to the C4 acid decarboxylase enzymes that traditionally define these sub-types (Furbank, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model with reference to the traditional classification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "c5f32aa5-17ad-4e87-9c0c-9e8d6a7d5948",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C79",
+      "claim": "An homologous mechanism has been shown to regulate the cell-specificity of gene expression in both NADP-ME and NAD-ME gene families in independent lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "As an homologous mechanism has been shown to regulate the cell-specificity of gene expression in both NADP-ME and NAD-ME gene families in independent lineages (Brown et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Brown et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "9f786c97-eb1f-497d-8d3c-7df03c336c09",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C80",
+      "claim": "It is unlikely that mechanisms underlying the recruitment of decarboxylase enzymes drove the evolution of distinct C4 sub-types.",
+      "claim_type": "EXPLICIT",
+      "source": "As an homologous mechanism has been shown to regulate the cell-specificity of gene expression in both NADP-ME and NAD-ME gene families in independent lineages (Brown et al., 2011), it is unlikely that mechanisms underlying the recruitment of these enzymes drove the evolution of distinct sub-types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the finding of homologous mechanisms and the timing of trait acquisition.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "3bb3a89e-9388-4926-9e46-2edf2bd73c84",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C81",
+      "claim": "Different C4 sub-types evolved as a consequence of alternative evolutionary histories in leaf development, rather than biochemical or photosynthetic pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that these different sub-types evolved as a consequence of alternative evolutionary histories in leaf development, rather than biochemical or photosynthetic pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the finding that anatomical differences precede biochemical differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "a8b2a535-6a1f-4056-85d1-56b7d2e6adb1",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C82",
+      "claim": "Differences in the carboxylation efficiency or photosynthetic performance of different C4 sub-types have never been detected.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain why differences in the carboxylation efficiency or photosynthetic performance of different C4 sub-types have never been detected (Furbank, 2011), making the adaptive significance of different decarboxylation mechanisms difficult to explain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Furbank, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "96c30458-574d-44e4-8565-43a192c427c4",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C83",
+      "claim": "At least four distinct evolutionary trajectories underlie the evolution of C4 lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that at least four distinct evolutionary trajectories underlie the evolution of C4 lineages (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the comparative analysis presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "6c006a5f-256d-4c76-a625-1956de634dd9",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C84",
+      "claim": "There is no evidence for inflexible linkage between the predicted timing of distinct C4 traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we find no evidence for inflexible linkage between the predicted timing of distinct C4 traits (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the contingency analysis presented in Figure 3\u2014figure supplement 3 (note: the text says supplement 1 but likely refers to supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "789daf55-3559-4263-9846-6129342cf89c",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C85",
+      "claim": "Diversity in viable pathways helps explain why C4 has been accessible to such a wide variety of species.",
+      "claim_type": "EXPLICIT",
+      "source": "This diversity in viable pathways also helps explain why C4 has been accessible to such a wide variety of species and not limited to a smaller subset of the angiosperm phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the finding of multiple flexible pathways.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "07e70052-12ae-4a2d-ad84-8158adb758c2",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C86",
+      "claim": "A recent model for the evolution of C4 biochemistry found that C4 photosynthesis was accessible from any surrounding point of a fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent model for the evolution of the biochemistry associated with the C4 leaf also found that C4 photosynthesis was accessible from any surrounding point of a fitness landscape (Heckman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Heckman et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "85a2e2ab-a11a-432c-9fb5-ddc6c5435df7",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C87",
+      "claim": "The trajectories predicted by Heckman et al. (2013) were found to pass through phenotypes of C3\u2013C4 species, despite these species not being used to parameterise the evolutionary landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouragingly, the trajectories predicted by Heckman et al. (2013) were found to pass through phenotypes of C3\u2013C4 species, despite the fact that these species were not used to parameterise the evolutionary landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a finding from Heckman et al., 2013 that supports the current study's conclusions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "bbebd336-1d91-4813-abcb-7e54e079de74",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C88",
+      "claim": "Different mechanisms generate increased abundance and cell-specificity for the majority of C4 enzymes in independent C4 lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "As different mechanisms generate increased abundance and cell-specificity for the majority C4 enzymes in independent C4 lineages (reviewed in Langdale, 2011; Williams et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "d40236a3-3c44-4139-b809-13d9a8366858",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C89",
+      "claim": "Mechanistic diversity likely underlies the multiple evolutionary pathways generating C4 photosynthesis and may be a key factor in facilitating the convergent evolution of complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "As different mechanisms generate increased abundance and cell-specificity for the majority C4 enzymes in independent C4 lineages (reviewed in Langdale, 2011; Williams et al., 2012), it is likely that mechanistic diversity underlies the multiple evolutionary pathways generating C4 photosynthesis and may be a key factor in facilitating the convergent evolution of complex traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation linking mechanistic diversity to pathway flexibility.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "22b619f5-8cd6-4fa2-a056-518c8a84b611",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "claim_id": "C90",
+      "claim": "The flexibility in evolutionary pathways may benefit efforts to recapitulate C4 photosynthesis through genetic engineering of C3 species.",
+      "claim_type": "EXPLICIT",
+      "source": "This may benefit efforts to recapitulate the acquisition of C4 photosynthesis through the genetic engineering of C3 species (Hibberd et al., 2008), expanding the molecular toolbox available to establish C4 traits in distinct phenotypic backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the findings with citation to relevant engineering efforts.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c82df209-14cf-4aa7-a197-8ac15b4125f9",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A meta-analysis was conducted consolidating data from 43 studies encompassing 18 C3, 18 C4, and 37 C3\u2013C4 intermediate species from 22 genera representing 18 independent lineages. The data were used to parameterize a 16-dimensional phenotypic landscape with 65,536 nodes, with quantitative traits assigned binary scores using EM algorithm and hierarchical clustering. PCA confirmed the phenotypic intermediacy of C3\u2013C4 species between C3 and C4 phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C20, C22-C27 collectively describe the meta-analysis methodology and data structure. The dataset composition is clearly documented in Table 1, the binary scoring methodology is illustrated in Figure 1\u2014figure supplement 3, and PCA results confirming intermediacy are shown in Figure 1A. The mathematical structure of the phenotype space (2^16 = 65,536 nodes) is correctly calculated and the phylogenetic relationships are supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "222e89d8-2ccb-4431-83e4-f75ad5df599f",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A novel Bayesian approach based on Hidden Markov Models was developed to model the phenotypic landscape as a transition network with weighted edges. The approach uses Bayesian MCMC to sample networks compatible with the meta-analysis dataset, imposing constraints that only one trait may be acquired at a time and trait loss is forbidden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C31 describe the novel computational methodology. The HMM framework is properly cited (Rabiner, 1989), the transition network structure is illustrated in Figure 1\u2014figure supplement 4, and the Methods section provides detailed mathematical formulation including the MCMC sampling procedure. The constraints are explicitly stated and justified as modeling assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "7f2dd66c-7211-4f61-8b8c-f74304384584",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Bayesian approach was validated using artificial datasets and experimental verification. The method correctly assigned equal acquisition probabilities to traits with linked timing even with 50% data occlusion, correctly predicted 15 of 18 strongly predicted traits from occluded biological data, and predictions were experimentally verified by qPCR for enzyme abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 describe validation results shown in Figure 2. The positive control tests (Figure 2A-B) demonstrate the method can detect simultaneous trait acquisition. The cross-validation with occluded data (Figure 2C) shows high accuracy (15/18 correct strong predictions, 83% accuracy). The qPCR experimental validation (Figure 2D-E) provides independent confirmation of model predictions. The conservative nature of predictions (11 neutral vs. 3 incorrect) supports reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "af8d7c9a-3339-43c6-b301-15efad96a0c0",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model predicts that alterations to leaf anatomy, cell-specificity, and increased abundance of C4 cycle enzymes evolved prior to alterations in RuBisCO and PEPC. BS cell enlargement was predicted as an early innovation, BS-specificity of GDC occurs early, and RuBisCO loss from M cells occurs late. For most C4 enzymes except PEPC, increased abundance and cellular compartmentation were temporally separated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 describe the main evolutionary trajectory findings shown in Figure 3. The temporal ordering is clearly depicted with posterior probability distributions. The findings are consistent with previous studies (properly cited: Hylton et al., 1988; Rawsthorne et al., 1988; Cheng et al., 1988; Khoshravesh et al., 2012) and with molecular studies showing different cis-elements mediate abundance vs. specificity (Akyildiz et al., 2007; Kajala et al., 2012). The separation of abundance and compartmentation for non-PEPC enzymes is a novel finding supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "1890c59c-8e75-4b08-bb0c-8168ec28b88c",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Robustness analyses demonstrated that the predicted evolutionary trajectories were not affected by using hierarchical clustering instead of EM algorithm for trait scoring, removing two independent pairs of traits, or adding two additional cellular traits (mitochondria and chloroplast positioning).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 describe robustness tests shown in Figure 3\u2014figure supplements 1-2. The comparison between EM and hierarchical clustering (Figure 3\u2014figure supplement 1B) shows highly similar results despite differences in trait scoring. The trait removal tests (Figure 3\u2014figure supplement 2A-B) and trait addition test (Figure 3\u2014figure supplement 2C) demonstrate that conclusions are robust to changes in the phenotype space structure. These sensitivity analyses strengthen confidence in the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "7ef4921f-4428-42be-b4c7-11ef051e9547",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The order of C4 trait acquisition is flexible, with no inflexible linkage detected between traits in the biological data (unlike positive controls). No single sequence of acquisitions was compatible with all observations, and several traits displayed bimodal probability distributions, indicating multiple distinct pathways to C4 photosynthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 describe the flexibility analysis. The contingency analysis (Figure 3\u2014figure supplement 3) shows no inflexible linkage in biological data, contrasting with positive controls (Figure 2B) where linkage was successfully detected. The bimodal distributions for traits like GDC compartmentation and BS chloroplast number (Figure 3) provide direct evidence for multiple pathways. The dynamic programming analysis confirming no single pathway fits all data is stated in Methods. These multiple lines of evidence converge on pathway flexibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "f669cdbe-12a8-42fa-84a8-cbd9c4183fbd",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "At least four distinct evolutionary trajectories underlie C4 evolution, with monocot and eudicot lineages showing distinct separation in PCA of inferred transition networks. The separation results from differences in timing of both anatomical and biochemical trait acquisition, suggesting ancestral lineage constrains evolutionary pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57, C83 describe the identification of multiple trajectories shown in Figure 4. The PCA separation between monocots and eudicots (Figure 4A) is clear and robust (confirmed in Figure 4\u2014figure supplement 1). The timing differences are shown in Figure 4C. However, C57 is labeled as speculation in the evidence, and the causal claim that 'ancient divergence constrained' evolution is an inference rather than directly demonstrated. The four trajectories (monocot/eudicot \u00d7 NADP-ME/NAD-ME) are supported by the comparative analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "2068505f-7816-475b-bf58-b165dff3a2cb",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NAD-ME and NADP-ME subtypes show more overlap than monocot/eudicot comparisons but differ in timing of anatomical traits. Vein density increases early in NAD-ME but not NADP-ME lineages, and BS chloroplast proliferation timing differs between subtypes. These anatomical differences precede biochemical alterations to decarboxylase enzymes that traditionally define the subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61, C77-C78 describe subtype-specific trajectories shown in Figure 4B and 4D. The PCA shows more overlap between NAD-ME and NADP-ME than between monocots and eudicots (Figure 4A vs 4B), consistent with convergent origins. The timing differences for vein density and chloroplast proliferation are clearly shown in Figure 4D. The finding that anatomical differences precede biochemical differences is a key result supported by the temporal ordering in the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "8264d44a-e237-40d9-b9bb-8c85a3319f7d",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Distinct C4 sub-types evolved as a consequence of alternative evolutionary histories in response to non-photosynthetic pressures rather than biochemical or photosynthetic pressures. Early evolutionary events determined downstream phenotypes by restricting lineages to independent pathways, and homologous mechanisms for decarboxylase recruitment make it unlikely these enzymes drove subtype evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63, C80-C81 present interpretations and conclusions about the drivers of subtype evolution. While the finding that anatomical changes precede biochemical changes is well-supported (C61, C77-C78), the causal claims about 'non-photosynthetic pressures' driving evolution (C62, C81) are inferences not directly tested. The argument about homologous mechanisms (C80, citing Brown et al., 2011) is logical but indirect. The claim that early events 'determined' downstream phenotypes (C63) is speculative. These are reasonable interpretations but lack direct experimental evidence for the proposed causal mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "300600e4-71f2-494a-bc3e-72c1ec3471b4",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The data contradict the CO2-driven hypothesis for C4 evolution, which predicts early alterations to PEPC and RuBisCO. Instead, anatomical and cellular changes preceded biochemical alterations, and enzymes like PPDK and decarboxylases (which have non-photosynthetic functions in C3 plants) were recruited early, suggesting non-photosynthetic drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 present an argument against the prevailing CO2-driven hypothesis. The CO2 hypothesis and its predictions are properly cited (Christin et al., 2008; Vicentini et al., 2008). The model results (Figure 3) clearly show anatomical changes precede PEPC and RuBisCO alterations, contradicting the hypothesis. The observation that early-recruited enzymes have non-photosynthetic functions in C3 plants (C69, citing Aubry et al., 2011) is factual. However, the inference that this indicates non-photosynthetic drivers (C70) is speculative, though reasonable given the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "ff3c7aa0-39ac-4a5d-8d34-a610569e9b74",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model predicts BS-specificity of GDC was acquired early in C4 evolution for most lineages, consistent with a recent in silico study. However, the timing is bimodal and not predicted to be early in monocot lineages, suggesting this is not a universal feature across all C4 lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 describe GDC evolution findings. The consistency with Heckman et al. (2013) is properly cited (C71). The bimodal distribution for GDC timing is visible in Figure 3 (C73), and the monocot-specific pattern is shown in Figure 4C. The conclusion that GDC BS-specificity is not universal (C74) follows logically from the bimodal distribution and lineage-specific differences. This nuanced finding adds complexity to previous models suggesting universal early GDC recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "caa2ee24-7b82-4fad-b5d7-a4df2e08c9de",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Recent evidence has identified additional environmental pressures beyond CO2 that may have driven C4 evolution, including high evaporative demands and increased fire frequency. Increased BS volume and vein density have been proposed as adaptations to improve leaf hydraulics under drought.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 cite recent literature on alternative ecological drivers (Osborne and Sack, 2012; Edwards et al., 2010; Griffiths et al., 2013). These are properly attributed to prior work and provide context for interpreting the finding that anatomical changes precede biochemical changes. The claims accurately represent the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "4dd38b38-3934-499a-a95d-29a9631a1c22",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Differences in carboxylation efficiency between C4 sub-types have never been detected, making adaptive significance of different decarboxylation mechanisms difficult to explain. The diversity in viable pathways helps explain C4 accessibility across diverse species. Mechanistic diversity in enzyme regulation likely underlies multiple evolutionary pathways and facilitates convergent evolution of complex traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C85-C89 synthesize findings with literature. The lack of performance differences between subtypes (C82) is properly cited (Furbank, 2011) and helps explain why anatomical rather than biochemical differences distinguish subtypes. The connection between pathway diversity and C4 accessibility (C85) is a logical inference from the flexibility findings. The consistency with Heckman et al. (2013) model (C86-C87) provides independent support. The link between mechanistic diversity and pathway flexibility (C88-C89) is reasonable but somewhat speculative, though supported by citations to reviews (Langdale, 2011; Williams et al., 2012).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "7983b85e-200f-47f4-a0ee-d570e62752ee",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The novel Bayesian approach is not dependent on detailed phylogenetic inference and could be applied to model evolution of other complex traits in the fossil record or stochastic processes over shorter timescales such as disease progression or cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 describe potential applications of the method. The independence from phylogenetic inference (C64) is a stated property of the method and is evident from the modeling approach which uses phenotypic data rather than phylogenetic trees. The proposed applications to fossil record (C65, citing Kidwell and Holland, 2002) and shorter timescale processes (C66) are reasonable extrapolations given the method's properties, though these remain untested hypotheses. These are appropriate forward-looking statements about method applicability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "e7526ef9-2a75-493f-80fd-485a3bda20e5",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The flexibility in evolutionary pathways may benefit efforts to engineer C4 photosynthesis into C3 species by expanding the molecular toolbox available to establish C4 traits in distinct phenotypic backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 proposes an application to C4 engineering efforts (citing Hibberd et al., 2008). This is a reasonable inference from the pathway flexibility findings\u2014if multiple routes to C4 exist in nature, engineering efforts need not follow a single prescribed path. However, this remains a speculative application that would require experimental validation. The claim is appropriately framed as a potential benefit rather than a demonstrated outcome.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establish that C4 photosynthesis evolved independently in at least 60 lineages starting 32-25 million years ago in response to ecological drivers including decreasing CO2. C4 plants have modified Kranz anatomy with compartmentalized metabolism between mesophyll and bundle sheath cells, with three biochemical subtypes based on decarboxylase enzymes. C3-C4 intermediates represent evolutionary transitional states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C17, C21 provide established background knowledge properly cited to the literature (Sage et al., 2011a; Christin et al., 2011b; Vicentini et al., 2008; Slack and Hatch, 1967; Langdale, 2011; Hattersley, 1984; Hatch et al., 1975; Furbank, 2011; Akyildiz et al., 2007; Brown et al., 2011; and others). These claims accurately represent the current understanding of C4 photosynthesis and provide necessary context for the study. The characterization of C3-C4 intermediates as transitional states (C21) is supported by phylogenetic evidence from multiple cited studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    },
+    {
+      "id": "4c768d7e-ae9b-4303-8399-f7b6d3f9a1eb",
+      "content_id": "524c70e0-1894-4eaf-92ec-119a46d2560c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The polyphyletic appearance of C4 photosynthesis is associated with diverse and flexible evolutionary paths grouping into four major trajectories. Alternative evolutionary histories were determined by ancestral lineage and initial phenotypic alterations unrelated to photosynthesis. The order of trait acquisition is flexible and driven by non-photosynthetic drivers, and this flexibility facilitated convergent evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C5-C7 represent the main conclusions of the study. The four trajectories (C2) are supported by the monocot/eudicot and NADP-ME/NAD-ME analyses (Figure 4). The role of ancestral lineage (C5) is demonstrated by the monocot/eudicot differences (Figure 4A, C). The flexibility in trait acquisition order (C6) is supported by the contingency analysis (Figure 3\u2014figure supplement 3) and absence of inflexible linkage. The claim about non-photosynthetic drivers (C6) is supported by the finding that anatomical changes precede biochemical changes (Figure 3). The inference that flexibility facilitated convergence (C7) is logical given the multiple pathways identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:17.804363Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a77f349a-1b61-49c1-9025-6f6ace06471e",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "f3173e64-6c54-4678-a359-d8e8860fa27b",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "822acb7e-f721-41c7-a532-0570d282c339",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "1c3822d9-f782-4234-9aa6-89379199b31b",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "adeffc8c-56d5-4da5-aa80-7008f4d7920b",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "af471087-f643-4ef5-9539-8e2ec0b0e198",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "38bf9afd-1091-4b15-9d5d-31a11824b79f",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "bf90486f-1bd1-46ce-a2ff-730733a34842",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "de2a5a30-af41-4e79-b238-50de460dadab",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "6272a4f6-c112-424b-8249-f44da4380aa3",
+      "result_id": "c82df209-14cf-4aa7-a197-8ac15b4125f9"
+    },
+    {
+      "claim_id": "c8eda0b6-1a72-4f23-9be5-aee6cc2d8d29",
+      "result_id": "222e89d8-2ccb-4431-83e4-f75ad5df599f"
+    },
+    {
+      "claim_id": "c671252f-554c-44cd-bac1-61beb1b91add",
+      "result_id": "222e89d8-2ccb-4431-83e4-f75ad5df599f"
+    },
+    {
+      "claim_id": "4859df4f-3a21-4023-9272-9cb5534260ec",
+      "result_id": "222e89d8-2ccb-4431-83e4-f75ad5df599f"
+    },
+    {
+      "claim_id": "0deeae8b-c1de-4e8c-a3e8-cd1009ab1780",
+      "result_id": "222e89d8-2ccb-4431-83e4-f75ad5df599f"
+    },
+    {
+      "claim_id": "e83cee05-360e-4bfc-8b86-19c0142bab9c",
+      "result_id": "222e89d8-2ccb-4431-83e4-f75ad5df599f"
+    },
+    {
+      "claim_id": "66f1aa6a-b641-442e-b5d6-41746602ed4e",
+      "result_id": "7f2dd66c-7211-4f61-8b8c-f74304384584"
+    },
+    {
+      "claim_id": "5b71f1e5-4b1c-4b71-9db0-87327472b233",
+      "result_id": "7f2dd66c-7211-4f61-8b8c-f74304384584"
+    },
+    {
+      "claim_id": "7e04dd94-6f64-42f5-aa08-5f1d160ddbd7",
+      "result_id": "7f2dd66c-7211-4f61-8b8c-f74304384584"
+    },
+    {
+      "claim_id": "25a6717d-a7f5-4475-8a53-9e44a874a8fc",
+      "result_id": "7f2dd66c-7211-4f61-8b8c-f74304384584"
+    },
+    {
+      "claim_id": "bc492fd7-9cc7-4926-8aaa-1a4fc1c388a1",
+      "result_id": "7f2dd66c-7211-4f61-8b8c-f74304384584"
+    },
+    {
+      "claim_id": "045c9a3f-bd70-417c-92ee-a62ca6d35d6c",
+      "result_id": "af8d7c9a-3339-43c6-b301-15efad96a0c0"
+    },
+    {
+      "claim_id": "46fc5ed9-d77b-4d76-b5e2-b3a136bdd769",
+      "result_id": "af8d7c9a-3339-43c6-b301-15efad96a0c0"
+    },
+    {
+      "claim_id": "9a184ba7-3f6f-41ff-a471-a32df4ec6865",
+      "result_id": "af8d7c9a-3339-43c6-b301-15efad96a0c0"
+    },
+    {
+      "claim_id": "ba667551-f917-4b82-a625-87f63b50e807",
+      "result_id": "af8d7c9a-3339-43c6-b301-15efad96a0c0"
+    },
+    {
+      "claim_id": "dc337c0b-1c2b-4632-8c4c-9e122b859c15",
+      "result_id": "af8d7c9a-3339-43c6-b301-15efad96a0c0"
+    },
+    {
+      "claim_id": "a133bb32-b70e-4b33-86b2-71613bc72011",
+      "result_id": "af8d7c9a-3339-43c6-b301-15efad96a0c0"
+    },
+    {
+      "claim_id": "462fe549-17f7-4cdb-921f-8ee6cd96c12f",
+      "result_id": "af8d7c9a-3339-43c6-b301-15efad96a0c0"
+    },
+    {
+      "claim_id": "3a6a43cf-cc4b-4d4b-b99a-ea50a2bfbee2",
+      "result_id": "1890c59c-8e75-4b08-bb0c-8168ec28b88c"
+    },
+    {
+      "claim_id": "02bfe740-7731-4ea9-bf2c-b1ab111a9900",
+      "result_id": "1890c59c-8e75-4b08-bb0c-8168ec28b88c"
+    },
+    {
+      "claim_id": "39688368-8813-489b-96ca-fc974ec6a733",
+      "result_id": "1890c59c-8e75-4b08-bb0c-8168ec28b88c"
+    },
+    {
+      "claim_id": "38f09eb8-7d45-4196-906a-271752357bb6",
+      "result_id": "1890c59c-8e75-4b08-bb0c-8168ec28b88c"
+    },
+    {
+      "claim_id": "a9d7f8da-cb61-4611-8916-049808bbdd94",
+      "result_id": "7ef4921f-4428-42be-b4c7-11ef051e9547"
+    },
+    {
+      "claim_id": "6e91dd1a-09bf-4404-8157-51aff4d6ad7d",
+      "result_id": "7ef4921f-4428-42be-b4c7-11ef051e9547"
+    },
+    {
+      "claim_id": "4f51e62c-5be8-4f86-8315-afe6483e2ead",
+      "result_id": "7ef4921f-4428-42be-b4c7-11ef051e9547"
+    },
+    {
+      "claim_id": "c4ee6187-f65e-48d3-943b-23df406e51e8",
+      "result_id": "7ef4921f-4428-42be-b4c7-11ef051e9547"
+    },
+    {
+      "claim_id": "a1c84365-a0e8-4f2c-9f39-87731c1b1f98",
+      "result_id": "7ef4921f-4428-42be-b4c7-11ef051e9547"
+    },
+    {
+      "claim_id": "aaf4b80f-bdb3-4c63-81c8-ad3c08049b28",
+      "result_id": "7ef4921f-4428-42be-b4c7-11ef051e9547"
+    },
+    {
+      "claim_id": "77ec1783-a8cb-49cb-bd2d-efc9a24b1ffb",
+      "result_id": "f669cdbe-12a8-42fa-84a8-cbd9c4183fbd"
+    },
+    {
+      "claim_id": "0a8fef3e-f46c-4731-aa85-d2a735d233d0",
+      "result_id": "f669cdbe-12a8-42fa-84a8-cbd9c4183fbd"
+    },
+    {
+      "claim_id": "f37bef25-8138-48e6-ae03-73ca7560ee45",
+      "result_id": "f669cdbe-12a8-42fa-84a8-cbd9c4183fbd"
+    },
+    {
+      "claim_id": "26e0d5df-f945-41c8-a07b-d1bb3b5b95d0",
+      "result_id": "f669cdbe-12a8-42fa-84a8-cbd9c4183fbd"
+    },
+    {
+      "claim_id": "96c30458-574d-44e4-8565-43a192c427c4",
+      "result_id": "f669cdbe-12a8-42fa-84a8-cbd9c4183fbd"
+    },
+    {
+      "claim_id": "9ddf1564-59e2-4bdf-9a75-beb264339100",
+      "result_id": "2068505f-7816-475b-bf58-b165dff3a2cb"
+    },
+    {
+      "claim_id": "b72e9ade-b344-40ff-80ea-0b6e0f1ae79c",
+      "result_id": "2068505f-7816-475b-bf58-b165dff3a2cb"
+    },
+    {
+      "claim_id": "e3ebfc9f-35f8-4572-a3ac-366dc5ddbeb5",
+      "result_id": "2068505f-7816-475b-bf58-b165dff3a2cb"
+    },
+    {
+      "claim_id": "839298f4-a4c9-4233-abae-047a8a4fc7bd",
+      "result_id": "2068505f-7816-475b-bf58-b165dff3a2cb"
+    },
+    {
+      "claim_id": "650c37ac-1f5c-4e46-9d38-1c9610b02508",
+      "result_id": "2068505f-7816-475b-bf58-b165dff3a2cb"
+    },
+    {
+      "claim_id": "18386f03-0ed7-44cd-ad2a-866c74f37668",
+      "result_id": "2068505f-7816-475b-bf58-b165dff3a2cb"
+    },
+    {
+      "claim_id": "8c9e31cf-6c5e-4a55-92d4-35ac0ee7f805",
+      "result_id": "8264d44a-e237-40d9-b9bb-8c85a3319f7d"
+    },
+    {
+      "claim_id": "60f282b4-b963-4d86-ae52-16a3c5aec1c6",
+      "result_id": "8264d44a-e237-40d9-b9bb-8c85a3319f7d"
+    },
+    {
+      "claim_id": "9f786c97-eb1f-497d-8d3c-7df03c336c09",
+      "result_id": "8264d44a-e237-40d9-b9bb-8c85a3319f7d"
+    },
+    {
+      "claim_id": "3bb3a89e-9388-4926-9e46-2edf2bd73c84",
+      "result_id": "8264d44a-e237-40d9-b9bb-8c85a3319f7d"
+    },
+    {
+      "claim_id": "405bc0ac-b75b-4806-95cb-7965b25aeb94",
+      "result_id": "300600e4-71f2-494a-bc3e-72c1ec3471b4"
+    },
+    {
+      "claim_id": "118ac292-1842-4a91-9c60-11a885833721",
+      "result_id": "300600e4-71f2-494a-bc3e-72c1ec3471b4"
+    },
+    {
+      "claim_id": "8cd9d0e1-4be0-460b-94d5-1d41ba03dd5f",
+      "result_id": "300600e4-71f2-494a-bc3e-72c1ec3471b4"
+    },
+    {
+      "claim_id": "c5b50e69-615e-4edb-9f71-9fe3eabc7dbb",
+      "result_id": "300600e4-71f2-494a-bc3e-72c1ec3471b4"
+    },
+    {
+      "claim_id": "73a6845e-a689-4022-aa21-00082dced7d8",
+      "result_id": "ff3c7aa0-39ac-4a5d-8d34-a610569e9b74"
+    },
+    {
+      "claim_id": "252c0bf5-c94b-4dbe-b29b-103ef6b4eedf",
+      "result_id": "ff3c7aa0-39ac-4a5d-8d34-a610569e9b74"
+    },
+    {
+      "claim_id": "230becfa-4ba7-42f9-8a3f-791727c67523",
+      "result_id": "ff3c7aa0-39ac-4a5d-8d34-a610569e9b74"
+    },
+    {
+      "claim_id": "ee54e780-9f37-4582-83c6-1559dfa2ac63",
+      "result_id": "ff3c7aa0-39ac-4a5d-8d34-a610569e9b74"
+    },
+    {
+      "claim_id": "d133e359-8b35-4772-ba0e-9b9af1b13215",
+      "result_id": "caa2ee24-7b82-4fad-b5d7-a4df2e08c9de"
+    },
+    {
+      "claim_id": "e007b8f8-70d7-4855-bf05-5db6f5c5ed78",
+      "result_id": "caa2ee24-7b82-4fad-b5d7-a4df2e08c9de"
+    },
+    {
+      "claim_id": "a8b2a535-6a1f-4056-85d1-56b7d2e6adb1",
+      "result_id": "4dd38b38-3934-499a-a95d-29a9631a1c22"
+    },
+    {
+      "claim_id": "789daf55-3559-4263-9846-6129342cf89c",
+      "result_id": "4dd38b38-3934-499a-a95d-29a9631a1c22"
+    },
+    {
+      "claim_id": "07e70052-12ae-4a2d-ad84-8158adb758c2",
+      "result_id": "4dd38b38-3934-499a-a95d-29a9631a1c22"
+    },
+    {
+      "claim_id": "85a2e2ab-a11a-432c-9fb5-ddc6c5435df7",
+      "result_id": "4dd38b38-3934-499a-a95d-29a9631a1c22"
+    },
+    {
+      "claim_id": "bbebd336-1d91-4813-abcb-7e54e079de74",
+      "result_id": "4dd38b38-3934-499a-a95d-29a9631a1c22"
+    },
+    {
+      "claim_id": "d40236a3-3c44-4139-b809-13d9a8366858",
+      "result_id": "4dd38b38-3934-499a-a95d-29a9631a1c22"
+    },
+    {
+      "claim_id": "55e8737c-567c-4971-a910-ece0574bea5c",
+      "result_id": "7983b85e-200f-47f4-a0ee-d570e62752ee"
+    },
+    {
+      "claim_id": "7178e8b0-536f-4568-b52d-a7d25a51e53c",
+      "result_id": "7983b85e-200f-47f4-a0ee-d570e62752ee"
+    },
+    {
+      "claim_id": "dd7fe0e2-f86a-470a-956d-858bdcec9454",
+      "result_id": "7983b85e-200f-47f4-a0ee-d570e62752ee"
+    },
+    {
+      "claim_id": "22b619f5-8cd6-4fa2-a056-518c8a84b611",
+      "result_id": "e7526ef9-2a75-493f-80fd-485a3bda20e5"
+    },
+    {
+      "claim_id": "4cb3753a-d8ac-49eb-85b5-ce3997fa748f",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "5ad0a88e-00c5-4aa8-8e18-98b44e66711e",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "ca8729d3-bb72-4880-83f2-bb1fc4ef4609",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "afdd3b81-3ec3-4d5a-aa8d-432ddcf9af44",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "415cfbc7-7cde-4cc2-ae48-e6eaf6002ffa",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "80a9c39c-1b87-4d5b-8229-bad03ea266ea",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "43a4d0b7-d195-44bc-ab7f-bc3b30c33049",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "377e27a6-1066-41b8-a74b-fd2cbb55e121",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "565c2e86-c756-4c12-a326-f359bb478680",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "9e4a7d57-89fd-4998-8bfb-0afaad99083c",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "55fcc593-fa49-4ed6-a0ec-fe4db74fd729",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "ec64107b-4d55-4fdc-a309-0df024af7186",
+      "result_id": "0d72b39b-9ab0-471e-88f2-b64b2b6bedff"
+    },
+    {
+      "claim_id": "f81d75e0-b324-46d4-afac-82b3804ff861",
+      "result_id": "4c768d7e-ae9b-4303-8399-f7b6d3f9a1eb"
+    },
+    {
+      "claim_id": "8e8f9698-7f31-4dc5-b50d-865d30e2acaa",
+      "result_id": "4c768d7e-ae9b-4303-8399-f7b6d3f9a1eb"
+    },
+    {
+      "claim_id": "963ab404-bab6-4e2e-be22-b5c201f71691",
+      "result_id": "4c768d7e-ae9b-4303-8399-f7b6d3f9a1eb"
+    },
+    {
+      "claim_id": "d1a29dda-4e4c-44f7-babb-0e95f73e2322",
+      "result_id": "4c768d7e-ae9b-4303-8399-f7b6d3f9a1eb"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,165 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Prior approaches to improving conference interactions include web-based technologies, virtual conferences, Twitter feedback, and random seating arrangements, with varying success across fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide appropriate context through citations to prior work (Ebner & Reinhardt 2009, Rigutto 2013, Briggs 2007, Picard 2009, Boyd 2009, Canning et al. 2013, Schall 2013) and describe an existing practice at Mathematisches Forschungsinstitut Oberwolfach. These establish the motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C65"
+    ],
+    "result": "A satellite meeting with 40 interdisciplinary delegates was organized, with pre-meeting survey data showing wide variation in methodological knowledge (1-26 methods known, mean=6.6\u00b14.4) and a connected collaboration network where only 51% of relationships were mutually reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C22 provide descriptive statistics from the meeting setup and survey. While the data are clearly reported, C21's claim of no gender effects lacks statistical test details and may be underpowered with only 13 females. C19's explanation for asymmetric collaboration reporting is speculative. C40's correlation analysis (r=0.38, p=0.015) doesn't address multiple testing concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The first speed dating session used a Maximum-Weight Perfect Matching algorithm to pair delegates based on weighted combination of acquaintance distance and knowledge similarity (\u03b1 parameter), optimizing for minimal overlap and maximal network distance while forbidding previous collaborators from pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C43 describe a well-defined algorithmic approach grounded in established combinatorial optimization theory (C38-C39 cite Edmonds 1965, Gabow & Tarjan 1991). The methodology is clearly specified with explicit definitions of metrics (C27-C29), parameter ranges (C31-C34), and constraints (C35). C43 appropriately acknowledges the greedy strategy limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Simulations across four \u03b1 values showed that average shortest path decreased rapidly regardless of \u03b1, while new knowledge gained increased with \u03b1, leading to selection of \u03b1=0.9 for implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe simulation-based parameter selection with clear results shown in Figure 4. The rationale for choosing \u03b1=0.9 is logical given the goal of maximizing knowledge transfer. However, the simulation assumes the greedy algorithm performs similarly to optimal solutions, which C43 acknowledges may not be true.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A second speed dating round matched delegates expert in specific methods with those wanting to learn them using a 'matching knowledge distance' metric, with >50% of respondents reporting this led to new collaborations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C54 describe the second round methodology and report positive outcomes. However, C54's claim relies on self-reported questionnaire data without specifying response rate, exact percentage, or definition of 'new collaboration.' The lack of objective metrics or follow-up data makes it difficult to assess the actual impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The implementation code is publicly available on GitHub, but the O(N\u00b3) computational complexity necessitates heuristic approaches for very large conferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 address reproducibility and scalability. C55 provides code availability, supporting reproducibility. C57's O(N\u00b3) complexity claim is consistent with cited algorithms (Gabow & Tarjan 1991), and C56 appropriately identifies the need for heuristics at scale. These are reasonable computational considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Post-meeting evaluation showed 87.5% (21/24) of respondents were enthusiastic about the approach, with 12 delegates reporting emerging collaborations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 report positive feedback but have significant limitations: only 24/40 delegates responded (60% response rate), creating potential response bias. The evaluation relies entirely on subjective self-reports without objective collaboration metrics, follow-up data, or comparison to control conditions. 'Emerging collaborations' is not operationally defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C60",
+      "C61"
+    ],
+    "result": "Future improvements could include optimizing across all rounds simultaneously rather than greedily, incorporating scientific seniority as a matching criterion, and customizing pairings based on individual delegate goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C60-C61 propose reasonable future directions based on identified limitations (C43's greedy strategy) and contextual considerations (meeting composition). These are appropriately framed as prospective work rather than validated improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The network-based speed dating approach addresses the challenge of promoting interactions between distant delegates at scientific meetings to facilitate interdisciplinary collaborations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 provide accurate high-level summary of the work's motivation and approach. C62 correctly identifies the challenge, C63 appropriately frames potential benefits as possibilities rather than proven outcomes, and C64 accurately describes the method. These claims are well-supported by the detailed methodology and results.",
+    "result_type": "MAJOR"
+  }
+]

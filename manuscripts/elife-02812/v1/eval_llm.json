@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C56",
+      "C100",
+      "C101"
+    ],
+    "result": "This study represents the first conclusive demonstration of resting state functional connectivity in the human spinal cord using ultra-high field (7 Tesla) fMRI. Prior to this work, only one equivocal report existed (Wei et al., 2010), and no substantiated reports of spinal cord resting state correlations had been published.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C56, C100, and C101 collectively establish the novelty of this work. The authors provide appropriate context by citing the single prior equivocal study (Wei et al., 2010) and clearly state this is the first conclusive demonstration. The experimental data presented throughout the manuscript (Figures 3-5) support this claim of first demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C44",
+      "C45",
+      "C58",
+      "C59"
+    ],
+    "result": "Robust functional connectivity was observed between left and right ventral (motor) horns and between left and right dorsal (sensory) horns in healthy volunteers, with ventral horn connectivity being the strongest and most robust. This was demonstrated at both single-subject and group levels (p < 0.01; corrected) across 22 healthy volunteers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C44, C45, C58, and C59 describe the primary findings with appropriate statistical support. The group-level analysis (Figure 5A) shows statistically significant correlations (p < 0.01; corrected) with proper Bonferroni correction. Single-subject examples (Figures 3-4) demonstrate reproducibility. The quantitative results (C41, C42) showing 67% and 37% of slices with significant correlations further support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Quantitative analysis across all 264 slices (12 slices/subject \u00d7 22 subjects) revealed that 67% of slices exhibited significant correlations between ventral horns, 37% between dorsal horns, but only approximately 20% between ventral-dorsal horn pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C43 provide specific quantitative results with clear denominators and percentages. The statistical threshold (z > 1.65; one-tailed, 95% confidence) is appropriate and clearly stated. These results are consistent with the group-level findings and support the conclusion that ventral-ventral and dorsal-dorsal connectivity is more robust than ventral-dorsal connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C61"
+    ],
+    "result": "No significant group-level correlations were observed between gray matter sub-regions other than ventral-ventral and dorsal-dorsal pairs, nor between spinal cord gray and white matter, suggesting that positive gray matter correlations are unlikely to be driven by spatially-correlated physiological noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, and C61 describe negative results that strengthen the interpretation of positive findings. The absence of gray-white matter correlations (p > 0.05) provides important evidence against physiological noise as the primary driver. This is further supported by supplementary analyses (C62) showing distinct correlation patterns within gray vs. white matter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Application of CSF and white matter regressors resulted in a 30% increase in median temporal signal-to-noise ratio (TSNR) across all subjects (from 29.3 to 38.1), demonstrating the importance of removing structured noise sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 provide quantitative evidence for the effectiveness of the preprocessing pipeline. The 30% TSNR improvement is substantial and well-documented. However, the interpretation (C34) relies on a citation (Xie et al., 2012) and the causal link between regressor application and TSNR improvement, while plausible, is not independently validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C64",
+      "C65"
+    ],
+    "result": "White matter correlations showed both positive correlations between dorsal white matter sub-regions and negative correlations between ventral and dorsal white matter, but these correlations were heavily influenced by preprocessing methodology and their nature remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C50 report statistically significant white matter correlations, but C64 and C65 acknowledge these are heavily influenced by preprocessing choices (as shown in supplementary analyses). The authors appropriately express uncertainty about the interpretation of negative correlations. While C51 provides context from brain literature, the biological meaning of spinal cord white matter correlations cannot be definitively established from this data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C62"
+    ],
+    "result": "Supplementary analyses across various preprocessing procedures confirmed that positive gray matter correlations are stable and robust, while white matter correlations change from positive to negative or non-significant after white matter regression. Positive correlations between dorsal white matter sub-regions remained consistent across preprocessing configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C62 describe critical control analyses shown in Figure 5 supplements. These analyses demonstrate that the main gray matter findings are not artifacts of preprocessing choices, which strengthens confidence in the primary results. The stability of gray matter correlations across multiple preprocessing permutations is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Z-scores between ventral horns were significantly higher than between dorsal horns (p < 0.01), potentially due to dorsal horns being narrower and more susceptible to artifacts, signal dropout affecting dorsal but not ventral horns in some slices, and possible variability from sampling different laminae within dorsal horns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 provides a statistically significant quantitative finding with appropriate statistical test (Wilcoxon signed rank test). Claims C69-C71 offer plausible explanations supported by observations in Figure 2 (C70) and anatomical knowledge. However, these explanations are speculative (C71 explicitly states this) and not directly tested. The result is supported but the mechanistic explanations remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C99",
+      "C103",
+      "C104"
+    ],
+    "result": "The study employed a rigorous methodological approach including a 7 Tesla scanner, custom 16-channel coil array, novel acquisition protocols, and a standardized 14-step preprocessing pipeline applied to 22 healthy volunteers to address technical challenges in spinal cord imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C99, C103, and C104 describe the methodological framework. The 14-step protocol is detailed in Materials and Methods, the hardware specifications are clearly stated, and the sample size (n=22) is adequate for group-level analysis. The methods are sufficiently described for the reported analyses, though full reproducibility would require access to the detailed protocol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The group analysis was constrained to within-slice connectivity rather than along the cord because incorporating longitudinal correlations would increase complexity by an order of magnitude, and some slices exhibited signal dropout artifacts that could confound interpretation of negative results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 transparently describe a methodological limitation and its justification. The decision to focus on within-slice analysis is reasonable given the complexity and artifacts noted. Claim C88 appropriately cautions against over-interpreting negative results. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Further investigations of within-subject reproducibility are needed, and reproducibility over months and years must be quantified before these techniques can be reliably used to study disease progression or aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C90 appropriately identify important future work needed for clinical translation. The study demonstrates between-subject reproducibility (n=22) but acknowledges the lack of within-subject longitudinal data. This is a reasonable limitation for a first demonstration study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C82",
+      "C84"
+    ],
+    "result": "The authors propose that resting state spinal cord functional connectivity may be translatable to clinical investigations of spinal cord injury, disease progression monitoring, and studying CNS diseases affecting motor/sensory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C82, and C84 are explicitly speculative proposals about future applications. While the proposals are reasonable given the brain resting state fMRI literature, no clinical data are presented in this study. The potential applications are plausible but undemonstrated, making this uncertain rather than supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "The study does not directly address the physiological origins of low-frequency BOLD fluctuations in the spinal cord, but proposes that brain and spinal cord fluctuations may share the same origin, potentially involving long-range connections between spinal cord and cerebral networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 appropriately acknowledges a limitation. Claims C95 and C96 are explicitly speculative hypotheses. While C92 provides context that even brain resting state origins remain debated after two decades, the proposed shared origin is reasonable but undemonstrated. This represents appropriate scientific speculation but lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript provides appropriate historical context for resting state fMRI, noting that BOLD fMRI is well-established for brain mapping, that Biswal et al. established resting state correlations in 1995, and that over 4000 papers have since documented resting state fMRI in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C11 accurately describe the historical development of fMRI and resting state methods with appropriate citations. These are well-established facts in the field and provide necessary context for the novelty of the spinal cord work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C97",
+      "C98"
+    ],
+    "result": "Previous failures to detect spinal cord resting state connectivity may reflect poor signal-to-noise ratio at conventional field strengths (1.5T and 3.0T), while ultra-high fields (7T and above) provide new opportunities for high-resolution spinal cord fMRI with increased BOLD sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C97, and C98 provide reasonable inferences based on established MRI physics principles. The advantages of higher field strength for SNR and BOLD contrast are well-documented in the literature. The slow development of spinal cord imaging at 7T is plausibly attributed to technical challenges and lack of specialized coils.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The 3D acquisition sequence with short echo time provides high-quality images with minimal signal dropout and geometric distortions, though artifacts from fat shift of the nerve root sleeve still affect the dorsal edge in some slices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 describe image quality characteristics visible in the figures (particularly Figure 2). The acknowledgment of residual artifacts (C107) demonstrates appropriate transparency. The image quality claims are supported by visual evidence in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Power spectrum analysis showed ventral gray matter exhibits 32% more power than white matter in the 0.015-0.075 Hz range, while dorsal gray matter exhibits only 5% more power. A large peak at ~0.75 Hz is likely due to physiological noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108 and C109 report quantitative results from supplementary power spectrum analyses (Figure 5 supplements). The interpretation of the 0.75 Hz peak as physiological noise (C109) is reasonable and is addressed by additional analyses with different filter bandwidths (Figure 5 supplements 3 and 5) showing results are not driven by this peak.",
+    "result_type": "MINOR"
+  }
+]

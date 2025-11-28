@@ -1,0 +1,2118 @@
+{
+  "submission": {
+    "id": "89122a02-5bdc-49a1-a656-a7ddb04cda4b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:35:52.583421Z",
+    "updated_at": "2025-11-28T20:35:52.583421Z"
+  },
+  "content": [
+    {
+      "id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "submission_id": "89122a02-5bdc-49a1-a656-a7ddb04cda4b",
+      "content_type": "manuscript",
+      "content_text": "# SETD2 is required for DNA double-strand break repair and activation of the p53-mediated checkpoint\n\n## Authors\n\n- S\u00edlvia Carvalho<sup>1</sup>\n- Alexandra C V\u00edtor<sup>1</sup>\n- Sreerama C Sridhara<sup>1</sup>\n- Filipa B Martins<sup>1</sup>\n- Ana C Raposo<sup>1</sup>\n- Joana MP Desterro<sup>1</sup>\n- Jo\u00e3o Ferreira<sup>1</sup>\n- S\u00e9rgio F de Almeida<sup>1</sup> ([ORCID: 0000-0002-7774-1355](https://orcid.org/0000-0002-7774-1355)) \u2020\n\n### Affiliations\n\n1. Instituto de Medicina Molecular, Faculdade de Medicina da Universidade de Lisboa Lisboa Portugal\n\n\u2020 Corresponding author\n\n## Abstract\n\nHistone modifications establish the chromatin states that coordinate the DNA damage response. In this study, we show that SETD2, the enzyme that trimethylates histone H3 lysine 36 (H3K36me3), is required for ATM activation upon DNA double-strand breaks (DSBs). Moreover, we find that SETD2 is necessary for homologous recombination repair of DSBs by promoting the formation of RAD51 presynaptic filaments. In agreement, SETD2-mutant clear cell renal cell carcinoma (ccRCC) cells displayed impaired DNA damage signaling. However, despite the persistence of DNA lesions, SETD2-deficient cells failed to activate p53, a master guardian of the genome rarely mutated in ccRCC and showed decreased cell survival after DNA damage. We propose that this novel SETD2-dependent role provides a chromatin bookmarking instrument that facilitates signaling and repair of DSBs. In ccRCC, loss of SETD2 may afford an alternative mechanism for the inactivation of the p53-mediated checkpoint without the need for additional genetic mutations in TP53.\n\n## Introduction\n\nDNA double-strand breaks (DSBs) are the most catastrophic form of DNA damage and pose great threat to genome stability. The major sensor of DSBs is ataxia telangiectasia mutated (ATM) kinase, which is critical for the initial steps of the DNA damage response (DDR). In response to DSBs, ATM phosphorylates and regulates the activity of several substrates involved in DNA repair, such as p53-binding protein 1 (53BP1) and histone H2AX (Matsuoka et al., 2007). To effectively repair a DSB, mammalian cells can choose from two different DDR pathways: nonhomologous end-joining (NHEJ) and homologous recombination (HR) (Chapman et al., 2012). During NHEJ, the broken DNA ends are blocked from 5\u2032 end resection and held in close proximity by the Ku70-Ku80 heterodimer (Ku) (Lieber, 2010). HR is initiated when the 5\u2032 DNA ends are resected by nucleases and helicases, generating two 3\u2032 single-stranded DNA overhangs coated with phosphorylated replication protein A (RPA) that drives the formation of a RAD51 filament prior to strand invasion (Chapman et al., 2012). In contrast to NHEJ, which promotes direct ligation of the DSB ends in an error-prone manner and is available throughout the cell cycle, HR employs homologous sequences available after DNA replication as templates for error-free DNA repair (San Filippo et al., 2008). Both pathways proceed through a cascade of events whereby DNA damage sensors, transducers, and effectors detect and rejoin the broken DNA ends (Harper and Elledge, 2007). All these events take place within the relatively restricted environment of chromatin, the nucleoprotein complex of histones and DNA assembled into nucleosomes. DNA damage challenges chromatin integrity by eliciting the destabilization and reorganization of its structure (Soria et al., 2012). Conversely, a strictly regulated set of post-translational modifications of the histones N-terminal tails regulates the recruitment and activation of DDR factors (Greenberg, 2011). The most studied response of histones to DNA damage is the phosphorylation of the histone variant H2AX, which serves as a molecular beacon that signals the presence of DNA damage (Rogakou et al., 1998). Phosphorylated H2AX (\u03b3H2AX) arises within minutes after DNA damage and has a key role in the recruitment of multiple DDR factors to the repair centers (Lukas et al., 2011). In addition to \u03b3H2AX, other histone modifications have been shown to play key roles during the DDR, illustrating the importance of a thorough characterization of the chromatin landscape of a DNA lesion. We have recently shown that the histone methyltransferase SETD2 (also termed KMT3 or HYPB), which is responsible for all H3K36 trimethylation, but not H3K36 mono- or dimethylation (Edmunds et al., 2008), acts as a determinant of chromatin integrity by regulating nucleosome dynamics during transcription (Carvalho et al., 2013). A role of H3K36me3 in maintaining chromatin integrity was recently disclosed by the finding that the DNA mismatch repair (MMR) protein MutS\u03b1 binds H3K36me3 and that SETD2 is necessary for human DNA MMR, a mechanism that corrects mismatches generated during DNA replication (Li et al., 2013). Nevertheless, whether SETD2 impinges on the cell's ability to cope with DNA DSBs is not yet known. In this study, we investigate the role of SETD2 on the cellular response to DNA DSBs. Our findings identify a novel role of this histone methyltransferase in rendering cells competent to repair DSBs. We demonstrate using powerful reporter assays that SETD2 is necessary for the DDR and that depletion of SETD2 impairs ATM activation and leads to delayed recruitment of 53BP1 to sites of DSBs. Our data further reveal that SETD2 is required for the recruitment of RAD51 to resected DNA 5\u2032 ends and SETD2-depleted cells show reduced homology-directed repair of DSBs.\n\nSETD2 mutations were recently found in several cancers, such as clear cell renal cell carcinoma (ccRCC) (Dalgliesh et al., 2010; Duns et al., 2010; Varela et al., 2011; Zhang et al., 2012; Fontebasso et al., 2013; Joseph et al., 2014). In ccRCC, the p53-mediated cell cycle checkpoint is frequently inactivated despite the fact that the TP53 tumor suppressor gene is rarely mutated (Gurova et al., 2004; Dalgliesh et al., 2010; Sato et al., 2013). This puzzling observation suggests that the p53 signaling in ccRCC might be repressed by an alternative mechanism. Herein, we further investigated whether the role of SETD2 in the DDR extends to the regulation of the p53-mediated checkpoint. We show that ccRCC cells carrying inactivating mutations on SETD2 phenocopy the impaired DDR observed in SETD2 RNAi-depleted human cells. Importantly, SETD2 inactivation severed the p53-dependent cell cycle checkpoint despite the persistence of unrepaired DNA lesions in ccRCC cells. We propose that this unprecedented role of SETD2 in the DDR constitutes a novel tumor suppressor mechanism that could explain the high frequency of SETD2 mutations found in several cancers and may provide an alternative mechanism for evasion of the p53-mediated checkpoint in TP53 wt ccRCC cells.\n\n## Results\n\n### SETD2 is necessary for the recruitment and activation of early DDR factors\n\nTo assay how SETD2 impinges on the cellular response to chemically induced DSBs, we monitored the DDR by measuring the dynamics of phosphorylation of the major DSB sensor ATM. Human Osteosarcoma (U2OS) cells were challenged with three different DNA-damaging agents: the topoisomerase II inhibitor etoposide, which is known to induce a large amount of DSBs (Burden et al., 1996) and the radiomimetic dsDNA-cleaving agents neocarzinostatin (NCS) (Goldberg, 1987) and phleomycin (Moore, 1988). We depleted SETD2 mRNA by RNA interference (RNAi) using three different synthetic small interfering RNA duplexes, which resulted in a global loss of the H3K36me3 histone mark that persisted throughout the entire chase periods following the DNA damage (Figure 1A\u2013C). As a control, we used the GL2 duplex, which targets firefly luciferase (Elbashir et al., 2001). In control cells, the levels of H3K36me3 remained constant during the DDR and were undistinguishable from those of undamaged cells, suggesting that this histone mark is not amplified following the DSBs (Figure 1A\u2013C). Analysis of the phosphorylation levels of ATM revealed that the DDR was promptly activated upon induction of DSBs with the three compounds (Figure 1). ATM phosphorylation (pATM) peaked at the early time points after each treatment in control cells (Figure 1A\u2013C). In contrast, SETD2-depleted cells revealed a significant impairment in DNA damage signaling as revealed by decreased pATM levels detected upon treatment with each of the three drugs (Figure 1A\u2013C). In agreement with impaired ATM activation, the phosphorylation levels of its downstream substrates H2AX and 53BP1 decreased in SETD2-depleted cells following treatment with NCS or, more appreciably, etoposide (Figure 1A,B). In DSBs induced by phleomycin, depletion of SETD2 had only a very mild impact on phosphorylation of 53BP1 or H2AX (Figure 1C) suggesting that either the remaining pATM is sufficient to transduce the DNA damage signaling or that alternative ATM-independent pathways operate in phleomycin-induced DSBs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig1-v2.jpg)\n\n**Figure 1.:** Control and SETD2 RNAi-depleted U2OS cells were challenged with etoposide (A), NCS (B) or phleomycin (C) and chased in fresh media during the indicated time points. Western blot analysis was performed with antibodies against the indicated proteins. Molecular weight markers (KDa) are shown on the left of each blot. Data are from one representative experiment of at least three independent experiments performed with similar results.\n\nTo directly visualize how does ablation of SETD2 impinge on 53BP1 nucleation at sites of DNA damage, we tracked 53BP1-GFP fusion proteins in live-cells upon induction of DSBs with a 405 nm laser (Figure 2A). In control cells, 53BP1-GFP was recruited to damaged chromatin within 2 min after laser micro-irradiation and was retained at the sites of damage during the 15 min of live-cell recording. In contrast, recruitment of 53BP1-GFP to irradiated chromatin was significantly delayed in SETD2-depleted cells (Figure 2A). Importantly, SETD2 RNAi had no appreciable effects on the total cellular levels of 53BP1-GFP (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig2-v2.jpg)\n\n**Figure 2.:** (A) 53BP1-GFP transfected U2OS cells were damaged by laser irradiation of the indicated nuclear region. The dynamics of 53BP1-GFP during the DNA damage response on control and SETD2-depleted cells was monitored by live cell imaging for 15 min after laser irradiation. One representative experiment from over 50 individual cells recorded is shown. (B) Control and SETD2 RNAi-depleted U2OS cells were transfected with a 53BP1-GFP expression plasmid. Western blot analysis was performed with antibodies against GFP (to detect 53BP1-GFP), H3K36me3, total histone H3, and \u03b1-tubulin. Molecular weight markers (KDa) are shown on the left. (C) SETD2-GFP transfected U2OS cells were lysed and processed for western blot with antibodies against GFP (to reveal SETD2-GFP), H3K36me3 and \u03b1-tubulin. Molecular weight markers (KDa) are shown on the left. (D) Live-cell images of SETD2-GFP dynamics were recorded upon laser-induced DNA damage of the indicated nuclear region of U2OS cells during 15 min (E) H3K36me3 was immunoprecipitated from MNase-digested U2OS cell extracts and each of the four nucleosomal histones was detected by immunoblotting of the SDS-PAGE resolved complexes. (F) Nuclear co-immunoprecipitations before and 6 hr after NCS treatment were performed on U2OS cells using the indicated antibodies (I.P.: 53BP1 and H3K36me3). The Input lane represents total cell lysates and (\u2212) denotes the negative control immunoprecipitation (beads only). Purified complexes were resolved by SDS-PAGE and blotted with antibodies against \u03b3H2AX or H3K36me3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** DNA was purified from MNase-digested samples and resolved on a 1.8% agarose gel. The length of the DNA fragments is indicated on the left.\n\nWe then investigated whether SETD2 is actively recruited to DSB sites. For that, we engineered a SETD2-GFP fusion protein and tracked it in live cells upon laser-induced DNA damage (Figure 2C,D). In agreement with the lack of fluctuations of the H3K36me3 levels following DSBs (Figure 1A), SETD2-GFP did not accumulate at the laser micro-irradiated regions (Figure 2D).\n\nSince we did not find any evidence for de novo histone H3K36 trimethylation during the DDR, we inspected if H3K36me3 is present at the nucleosomes adjacent to the sites of DSBs. In order to have single-nucleosome resolution, U2OS nuclei extracts were digested with micrococcal nuclease (MNase). Analysis of the MNase-digested extracts revealed that the majority of the DNA fragments were approximately 150 bp, which is consistent with the length of mono-nucleosomal DNA (Figure 2\u2014figure supplement 1). Furthermore, each of the four nucleosomal histones was detected in H3K36me3 pull downs, indicating that isolated nucleosomes remained intact (Figure 2E). 53BP1 and H3K36me3 were immunopurified from the mono-nucleosome preparations, and the complexes were immunobloted with antibodies against \u03b3H2AX and H3K36me3 (Figure 2F). In control (i.e., undamaged) cells, \u03b3H2AX was neither detected in the input sample (total cell lysates) nor in any of the two pull-downs (Figure 2F). Upon treatment with NCS a robust signal for \u03b3H2AX was observed in the input lane and in the samples immunopurified with antibodies against 53BP1 or H3K36me3, indicating the activation of the DDR (Figure 2F). These data reveal that both 53BP1 and H3K36me3 are present in the same nucleosomes that acquire \u03b3H2AX upon DNA damage. Moreover, 53BP1 was detected in complexes immunoprecipitated with the H3K36me3 antibody upon induction of DSBs (Figure 2F). This suggests that H3K36me3 decorates at least a fraction of the nucleosomes to which 53BP1 binds. Altogether, these findings further support the view that H3K36me3 contributes to the establishment of the chromatin state that coordinates the recruitment and activation of DDR factors, even though SETD2 is not actively recruited to DNA damage sites.\n\n### SETD2 is required for RAD51 recruitment during homologous recombination repair\n\nThe binding of 53BP1 to damaged chromatin tilts the balance between the DNA repair pathways towards NHEJ by preventing 5\u2032 end resection of the broken DNA ends (Bouwman et al., 2010; Bunting et al., 2010; Chapman et al., 2012). We therefore investigated whether SETD2 depletion favors DNA 5\u2032 end resection and repair of DSBs by HR. To this end, we quantified the DNA in the vicinity of a DSB created by the I-SceI nuclease using the DR-GFP reporter assay (Pierce et al., 1999; Moynahan and Jasin, 2010). Upon depletion of SETD2 by RNAi, the amount of DNA measured by quantitative real-time PCR at 250 bp, 300 bp, 350 bp and 2200 bp apart from the I-SceI site was only 53%, 62%, 57%, and 71%, respectively, of the DNA levels present in control cells (Figure 3A). These data reveal that ablation of SETD2 leads to persistent DNA 5\u2032 end resection of DSBs. In agreement, phosphorylation of RPA (pRPA), an event that is directly linked to efficient DNA 5\u2032 end resection (Sartori et al., 2007), was detected in SETD2-depleted cells within the first hour after DNA damage with NCS and reached equilibrium after 6 to 8 hr, when its levels were similar to control cells (Figure 3B). Following DNA damage, the recruitment of RPA to DNA repair centers is revealed by the formation of repair-associated foci, a process that can be visualized by immunofluorescence (Figure 3C). At 8 hr after NCS treatment, widespread RPA foci were observed in the nuclei of both control and SETD2 RNAi cells, suggesting that recruitment of RPA to DNA lesion sites is independent of SETD2 activity. As expected, RPA foci were visible only in cyclin A-positive cells that are in S or G2 phase of the cell cycle (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig3-v2.jpg)\n\n**Figure 3.:** (A) Direct measurement of DNA 5\u2032 end resection at the I-SceI site of the GFP gene in control and SETD2-depleted U2OS DR-GFP cells. The percentage of non-resected DNA at 250 bp, 300 bp, 350 bp, and 2200 bp from the I-SceI restriction site is shown. The percentage of DNA at each location was set to 100% in control cells. Means and standard deviations from five independent experiments using two distinct siRNAs targeting SETD2 are shown. (B) Control and SETD2 RNAi-depleted U2OS cells were challenged with NCS during 30 min and chased in fresh media during the indicated time points. Western blot analysis was performed with antibodies against pRPA and total RPA. Molecular weight markers (KDa) are shown on the left. (C) Immunofluorescence of control and SETD2 RNAi depleted U2OS cells before and 8 hr after NCS treatment was performed with antibodies against RPA and cyclin A. Dapi was added to the mounting medium to stain the DNA. Scale bars: 5 \u03bcm. The graph shows the percentage of cells with more than 20 RPA foci. A minimum of 400 cells on each of three independent experiments was scored.\n\nThe HR-mediated repair of DSBs requires the recruitment of different DNA-repair factors including BRCA1 to the site of damage. BRCA1 cooperates with Mre11\u2013Rad50\u2013Nbs1 (MRN) complex and C-terminal binding protein interacting protein (CtIP) to catalyze 5\u2032 to 3\u2032 DNA resection of the broken DNA ends (Chapman et al., 2012). Upon NCS treatment, abundant BRCA1 foci were formed in control and SETD2-depleted cells that stained positively for cyclin A (Figure 4A). This result is consistent with the SETD2-independent DNA 5\u2032 end resection and suggests that BRCA1 recruitment to DSBs is largely unaffected by SETD2 depletion (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig4-v2.jpg)\n\n**Figure 4.:** Immunofluorescence of control and SETD2 RNAi-depleted U2OS cells before and 8 hr after NCS treatment was performed with antibodies against BRCA1 (A) or RAD51 (B). Cyclin A staining was performed in parallel. Dapi was added to the mounting medium to stain the DNA. Scale bars: 5 \u03bcm. The graphs represent the average and standard deviations of the percentage of cells with BRCA1 or RAD51 foci after NCS treatment. A minimum of 500 cells from each of three individual experiments was scored for each experimental condition.\n\nBRCA1-mediated DNA 5\u2032 end resection and phosphorylation of RPA precede the formation of RAD51 filaments on the DNA single-stranded 3\u2032 overhangs that promote the search for homologous DNA sequences and strand exchange (Wyman and Kanaar, 2006). We then inspected the recruitment of RAD51 to broken DNA ends on control and SETD2-depleted cells. RAD51 foci were detected on cells that were in S or G2 phase, as revealed by the positive staining of cyclin A (Figure 4B). Notably, RAD51 was recruited to DSBs in a SETD2-dependent manner. Upon SETD2 RNAi-depletion, the percentage of U2OS cells with \u22655 foci at 8 hr and 24 hr post-NCS treatment (17% and 30%, respectively) was significantly reduced in comparison to control cells (36% and 46%) (Figure 4B). These data establish a presynaptic role of SETD2 that promotes the recruitment of RAD51 to resected DNA ends.\n\nTo directly evaluate the impact of this SETD2-dependent role on the efficiency of HR, we depleted SETD2 from U2OS cells stably expressing the DR-GFP reporter. The DR-GFP reporter allows homology-directed repair to be scored by flow cytometry owing to the correction of an inactive GFP gene through HR-dependent gene conversion (Figure 5) (Pierce et al., 1999; Moynahan and Jasin, 2010). Ectopic expression of I-SceI in DR-GFP reporter cells led to an average cutting efficiency of the I-SceI restriction site located on the inactive GFP gene of 35% (control cells) and 33% (SETD2 RNAi). In agreement with the impaired RAD51 recruitment, SETD2-depleted cells exhibited a strong reduction (\u223c50%) in HR without detectable differences in the cell cycle progression (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig5-v2.jpg)\n\n**Figure 5.:** (A) The efficiency of homologous recombination in control and SETD2 RNAi-depleted cells was investigated by measuring the fraction of GFP + cells in the U2OS DR-GFP reporter assay. Means and standard deviations from five independent experiments using two distinct siRNAs targeting SETD2 are shown. (B) Cell cycle progression of control and SETD2-depleted U2OS DR-GFP cells was obtained by flow cytometry analysis of propidium iodide staining.\n\n### ccRCC cells with SETD2 inactivating mutations display impaired DDR\n\nA high frequency of SETD2 mutations was recently disclosed in several cancers, of which clear cell renal cell carcinoma (ccRCC) shows the highest SETD2 mutation rate (Dalgliesh et al., 2010; Varela et al., 2011). Our present findings suggest that impaired DDR proficiency constitutes a hallmark of SETD2 mutant cancers and could reveal a novel mechanism through which SETD2 suppresses tumor development and growth. To further test this view, we inspected the DDR in ccRCC cell lines containing inactivating mutations in SETD2 that result in a strong reduction of H3K36me3 levels (Figure 6A) (Duns et al., 2010). Notably, induction of DSBs in the ccRCC cells resulted in activation of the DDR in a SETD2-dependent manner. Two different SETD2 wild-type (wt) cell lines (RCC-JW and Caki-2) responded to DNA damage with the rapid formation of \u03b3H2AX foci and ATM phosphorylation within the first 30 min of the DDR (Figure 6B\u2013D). In contrast, DNA repair was significantly impaired in two SETD2 mutant ccRCC cell lines (RCC-MF and RCC-FG2) as revealed by the lack of \u03b3H2AX foci and ATM phosphorylation upon induction of DSBs (Figure 6B\u2013D). These data recapitulate the phenotype of SETD2 RNAi-depleted U2OS cells and suggest that defects in the DDR are a hallmark of cancer cells with SETD2 mutations. We then attempted to perform a genetic complementation experiment with our SETD2-GFP transgene to rescue the SETD2 mutant phenotype. However, despite our efforts, we were not able to obtain a SETD2 mutant ccRCC cell population expressing the transgene. One possibility is that loss of SETD2 function in the mutant ccRCC cells feeds a cellular proliferation mechanism that if disrupted upon transfection of the wt SETD2-GFP decreases cell viability. Nevertheless, we consistently observed a similar phenotype of impaired DDR in 4 different ccRCC cell lines (RCC-ER; -FG2; -AB; -MF) carrying inactivating mutations in distinct regions of SETD2 (Duns et al., 2010). Amongst the SETD2 mutant cell lines, RCC-FG2 had the lowest levels of H3K36me3 and showed the strongest impairment in the DDR signaling as revealed by the lack of detectable pATM and \u03b3H2AX (Figure 6D). We shall note that RCC-JW cells carry a missense mutation on SETD2 exon 3, which does not interfere with the methyltransferase activity of the enzyme, and for this reason, we classified them as SETD2 wt (Figure 6C) (Duns et al., 2010). In fact, concerning the DDR, RCC-JW cells behaved equally to two additional SETD2 wt ccRCC cell lines (Caki-1 and Caki-2) that were also used on our experiments.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig6-v2.jpg)\n\n**Figure 6.:** The H3K36me3 levels of SETD2 wt and mutant ccRCC cells were inspected with an antibody against H3K36me3 by immunofluorescence (A). (B) Immunofluorescence of SETD2 wt and mutant ccRCC cells before and 30 min after etoposide treatment for 15 min was performed with an antibody against \u03b3H2AX. Dapi was added to the mounting medium to stain the DNA. Scale bars: 5 \u03bcm. (C and D) Two SETD2 wt (RCC-JW and Caki-2) and two SETD2 mutant (RCC-MF and RCC-FG2) cell lines were challenged with etoposide during 15 min and chased in fresh media during the indicated time points. Western blot analysis was performed with antibodies against the indicated proteins. Molecular weight markers (KDa) are shown on the left.\n\nTo investigate if alternative DDR pathways were able to efficiently repair the DSBs in the SETD2 mutant cells, we measured the kinetics of DNA repair in ccRCC cells using comet assays (Figure 7). Chemical induction of DSBs yielded a similar degree of DNA damage in both SETD2 wt and mutant ccRCC cells, as revealed by the comparable fraction of DNA that migrated away from the nuclei and was detected in the comets tails immediately after etoposide treatment (Figure 7). However, these cells differed in their ability to repair the chemically induced DSBs. The amount of fragmented DNA decreased 35% after 3 hr and 45% after 6 hr in the wt cells, which compared to a maximum of 27% reduction observed in mutant cells 6 hr after DNA damage (Figure 7). These results were recapitulated with an additional set of SETD2 wt and mutant ccRCC cells, which repaired 49% (Caki-2) and 31% (RCC-FG2) of the DNA damage in 6 hr (Figure 7\u2014figure supplement 1). These findings reveal that the impaired DDR observed in SETD2 mutant cells translates into a massive failure to repair DSBs, which is likely to impact severely on genomic stability and may sustain the tumorigenic phenotype.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig7-v2.jpg)\n\n**Figure 7.:** The amount of DNA damage immediately after induction of DSBs with etoposide and 3 and 6 hr after treatment was estimated by comet assay on SETD2 wt and mutant ccRCC cells. Graphs depict the % of DNA in the tail of each individual comet. The horizontal solid lines represent the mean and 95% confidence intervals. At least 70 individual comets were analyzed for each time point.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The amount of DNA damage 6 hr after etoposide treatment was estimated by comet assay on an additional pair of SETD2 wt (Caki-2) and mutant (RCC-FG2) cells. Graphs depict the % of DNA in the tail of each individual comet. The horizontal solid lines represent the mean and 95% confidence intervals.\n\n### Inactivation of SETD2 severs the p53-mediated checkpoint despite persistent DNA damage\n\nIn circumstances where DNA damage reaches an irreversible stage, specific cell cycle checkpoints are in place to prevent catastrophic cell cycle progression (Kastan and Bartek, 2004; Sperka et al., 2012). The DNA damage checkpoints employ sensor proteins, such as ATM, to detect DNA damage and to initiate signal transduction cascades that activate p53 and inactivate cyclin-dependent kinases causing inhibition of cell cycle progression (Sancar et al., 2004). The tumor suppressor p53 is a direct substrate of ATM kinase (Canman et al., 1998) and is a master effector of the DNA damage cell cycle checkpoints (Sperka et al., 2012). Under normal conditions, p53 protein levels are low owing to MDM2-mediated ubiquitylation and proteasomal degradation. Upon DNA damage, p53-phosphorylation inhibits its interaction with MDM2, resulting in p53 stabilization (Shieh et al., 1997; Banin et al., 1998). We therefore evaluated both p53 phosphorylation and its total protein levels in response to DNA damage. The two SETD2 wt ccRCC cell lines (RCC-JW and Caki-2) responded to DSBs with p53 phosphorylation and increased total p53 protein levels 2 hr after initiating the DDR (Figure 8A). In contrast, despite the persistent DNA damage caused by the impaired DDR, SETD2 mutant ccRCC cells (RCC-MF and RCC-FG2) evaded the cell cycle checkpoint as revealed by the low levels of p53 phosphorylation and unnoticeable change of its total protein levels (Figure 8A). Activation of the p53 checkpoint leads to increased gene expression levels of several downstream targets including CDKN1A, also known as p21 (Sperka et al., 2012). Indeed, p21 protein levels rose significantly 2 hr after DNA damage in SETD2 wt cells, but not in their mutant counterparts (Figure 8A). To exclude the contribution of SETD2-independent mechanisms due to the different genetic backgrounds of the SETD2 wt and mutant cells, we measured p53 checkpoint activation in SETD2 RNAi cells upon treatment with etoposide, NCS or phleomycin (Figure 8B\u2013D). SETD2 RNAi-depleted ccRCC cells phenocopied the severed p53 cell cycle checkpoint observed in SETD2 mutant ccRCC cells. In response to each of the three DNA-damaging agents, control cells increased the total levels of p53 and p21, whereas SETD2-depleted cells failed to activate p53 (Figure 8B\u2013D).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig8-v2.jpg)\n\n**Figure 8.:** (A) SETD2 wt and mutant ccRCC cells were challenged with etoposide during 15 min and chased in fresh media during the indicated time points. Western blot analysis was performed with antibodies against the proteins indicated on the right. SETD2 wt ccRCC cells were depleted for SETD2 by RNAi, treated with etoposide (B), NCS (C) or phleomycin (D) during the indicated periods of time and chased in fresh media. Western blot analysis was performed with antibodies against the proteins indicated on the right. Molecular weight markers (KDa) are shown on the left. Data are from one representative experiments of a total of three independent experiments performed with similar results.\n\nTo further examine whether SETD2 is necessary for DNA damage-induced cell-cycle checkpoints, we performed flow cytometry-based cell-cycle profiling analyses in control and SETD2 RNAi depleted U2OS cells. Cells were treated with phleomycin to activate G1/S and G2/M DNA damage checkpoints. After phleomycin treatment, 49% (8 hr) and 46% (12 hr) of control cells were arrested at G1 phase and 34% (8 hr) and 38% (12 hr) stayed in G2 phase (Figure 9A). In contrast, only 42% (8 hr) and 34% (12 hr) of cells were arrested in G1 phase, whereas 41% (8 hr) and 48% (12 hr) were at G2 phase upon SETD2 depletion. These results suggest that SETD2 depletion leads to a defective G1/S cell-cycle arrest, which is in agreement with the deficient activation of p53.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/02482/elife-02482-fig9-v2.jpg)\n\n**Figure 9.:** (A) Control and SETD2 RNAi-depleted cells were treated with 40 \u03bcM of phleomycin to induce cell-cycle checkpoints. Cells were harvested at 0, 8, or 12 hr after treatment, fixed and stained with propidium iodide, and analyzed by flow cytometry. Graphs show means and standard deviations of the percentage of cells at each phase of the cell cycle. Data are from four individual experiments. (B) Control and SETD2 RNAi-depleted cells were treated with phleomycin at indicated concentrations and clonogenic survival was measured 10 days after treatment. Means and standard deviations from 6 individual cell cultures treated with each drug concentration are shown.\n\nTo investigate whether SETD2 affects the cell survival rate in response to DNA damage, we depleted U2OS cells for SETD2 by RNAi and tested their capacity for clonogenic survival after phleomycin treatment (Figure 9B). 10 days after DNA damage, the colony-forming capacity of control cells was significantly higher than SETD2-depleted cells. This result suggests that SETD2 is a determinant of cell survival after DNA damage.\n\nCombined, these data point to a novel role of SETD2 that can explain the puzzling observation that ccRCC often evade the p53 cell-cycle checkpoint despite a very low frequency of TP53 mutations (Gurova et al., 2004; Dalgliesh et al., 2010; Sato et al., 2013).\n\n## Discussion\n\nIn this study, by focusing on the pathways that repair DSBs upon RNAi depletion of SETD2, we reveal that this histone methyltransferase is necessary for the DDR. We show that SETD2 is required for the activation of ATM following DNA damage. In agreement with the impaired ATM activation, spreading of \u03b3H2AX and 53BP1 phosphorylation was greatly compromised in SETD2-depleted cells treated with NCS or etoposide, but only marginally affected in DSBs induced by phleomycin. These findings suggest that the DNA damage signaling may follow multiple pathways with different requirements for H3K36me3 and can result in phosphorylation of H2AX and 53BP1 independently of ATM activation. In fact, ionizing radiation-induced H2AX phosphorylation and recruitment of 53BP1 to DSBs can be carried out by ATM and DNA-dependent protein kinase (DNA-PK) in a redundant manner (Stiff et al., 2004). Moreover, ataxia telangiectasia and Rad3-related protein (ATR) can also phosphorylate many of the ATM substrates, including H2AX (Ward and Chen, 2001).\n\n53BP1 nucleation at DNA-damaged chromatin plays an important role in favoring DNA repair by NHEJ (Bouwman et al., 2010; Bunting et al., 2010; Chapman et al., 2012). In agreement, we found that induction of DSBs resulted in a significant impairment of the 53BP1 recruitment and increased DNA 5\u2032 end resection in SETD2-depleted cells. However, the increased resection did not reflect increased efficiency of HR repair. Instead, persistent DNA 5\u2032 end resection is likely due to the roadblock in the HR pathway that is created by the failure of RAD51 binding to the single-stranded DNA. Indeed, this defect in presynaptic filament formation on the resected DNA resulted in a 50% reduction in the efficiency of gene conversion of the DR-GFP HR reporter. Exonuclease-mediated resection of DNA ends is known to promote phosphorylation of RPA and to orchestrate an ATM-to-ATR switch at DNA breaks (Shiotani and Zou, 2009). This switch in the main DNA damage sensor provides a reasonable explanation for the RPA phosphorylation and the proficient RPA recruitment to DSBs despite the impaired ATM activation in SETD2-depleted cells. Alternatively, ATM-independent RPA phosphorylation can also be achieved through the activity of DNA-PK (Shao et al., 1999; Anantha et al., 2007).\n\nLens-epithelium-derived growth factor p75 splice variant (LEDGF) is an H3K36me3-binding protein that promotes the HR repair of DSBs (Daugaard et al., 2012). Depletion of LEDGF impairs the recruitment of CtIP and the subsequent DNA 5\u2032 end resection of DSBs. While defects in LEDGF recruitment to DSBs may account for the impaired HR phenotype that we report in SETD2 deficient cells, our data supports an extended LEDGF-independent role of SETD2 in the repair of DSBs by HR. Our findings that DNA 5\u2032 end resection and RPA foci formation are not severely compromised in SETD2-depleted cells disclose a specific presynaptic role for SETD2 that is necessary for the recruitment of RAD51 to single-stranded DNA. One possibility is that H3K36me3 defines a local chromatin state that favors the recruitment of RAD51 to DSBs and successful HR repair. This could be achieved by the FACT histone chaperone upon recruitment to H3K36me3-marked nucleosomes (Carvalho et al., 2013). In agreement with this view, depletion of the FACT subunit SPT16 results in a major impairment of HR (Kari et al., 2011; Oliveira et al., 2014). FACT is required to recruit the ubiquitin ligase RNF20, which in turn facilitates RAD51 accumulation at DSBs (Oliveira et al., 2014). The view that changes in chromatin dynamics may affect RAD51 function is not completely unexpected as illustrated by the role of the histone acetyltransferase 1 (HAT1) in RAD51 during HR (Yang et al., 2013). HAT1 promotes acetylation of histone H4, as well as incorporation of histone variant H3.3 at DSBs and facilitates RAD51 recruitment and efficient HR repair. Nevertheless, the major impact of SETD2 on RNA polymerase II transcription and pre-mRNA processing that others and we have previously described (reviewed in de Almeida and Carmo-Fonseca, 2014) discloses the alternative possibility that the impaired formation of RAD51 filaments and HR may result from disrupted gene expression of key DNA repair factors. Hence, additional studies are needed to fully elucidate the mechanistic basis of the SETD2 impact on the DDR.\n\nUnlike all histone modifications found to promote the DDR, previous studies (Pei et al., 2011) and our data show no evidence of increased H3K36me3 levels at the DNA damage sites or of a DDR-dependent recruitment of SETD2 to DSBs. These findings disclose an unprecedented role for a histone-modifying enzyme in priming intact chromatin for the response to DNA damage. A model that emphasizes the regulation of the H3K36me3 accessibility as a major determinant of the DDR can be envisaged. According to this view, the conformational changes that occur after a DSB may cause exposure of H3K36me3 marks previously written by SETD2 in intact chromatin, for instance during transcription by RNA polymerase II or replication. In fact, a careful inspection of the nucleosome structure reveals that lysine 36 on the N-terminal tail of histone H3 does not protrude from the nucleosome core. Instead, this lysine is hidden by the DNA double strand that wraps the histone octameric core (Luger et al., 1997). This sheltered location was first described three decades ago, when Crane\u2013Robinson et al. investigated the accessibility of the histone-terminal domains to proteases. Their experiments revealed that while the first 26 N-terminal residues of histone H3 were greatly sensitive to trypsin digestion, H3K36 was resistant to the enzyme (Bohm et al., 1981). According to this \u2018break and access model\u2019 DNA damage exposes H3K36me3, which then contributes together with a set of well-defined histone modifications to the orchestration of the chromatin landscape that drives the initial recruitment and activation of DDR factors, such as ATM.\n\nThe role of H3K36me3 in promoting repair of DSBs by HR may be particularly relevant at coding regions, where the introduction of genomic aberrations is likely to have deleterious consequences. Therefore, in these regions the choice between error-prone NHEJ and the more reliable HR pathway is of utmost importance. In fact, most H3K36me3 is found at actively transcribed chromatin where it signals the recruitment of the histone chaperone FACT to reassemble nucleosomes in the wake of RNA polymerase II elongation (Carvalho et al., 2013). Should a DSB amputate a coding region, exposure of H3K36me3 previously deposited by SETD2 traveling with the transcriptional machinery may promote DNA repair by HR and would guarantee the integrity of the genetic information.\n\nFrom all cancers on which SETD2 mutations have been reported, ccRCC shows the highest mutation rate (Dalgliesh et al., 2010; Varela et al., 2011). Our present findings reveal that SETD2 mutant ccRCC cells have impaired DDR signaling which leads to inefficient repair of DNA damage. However, the p53-dependent cell cycle checkpoint is not activated in SETD2-deficient cells despite the persistence of DNA damage. Depletion of SETD2 abrogates p53 activation, and leads to eviction of the G1/S checkpoint upon DNA damage. In addition to the defects in the DNA damage signaling that we found in SETD2-depleted cells, which could extend to improper p53 activation, it is also possible that SETD2 impinges directly on p53 activity and activation of its downstream targets through direct protein\u2013protein interactions (Xie et al., 2008). Furthermore, in the absence of SETD2, the capacity for clonogenic survival following DNA damage is significantly reduced. These findings integrate SETD2 into the p53 regulatory network and provide a reasonable explanation for the intriguing observation that inactivation of this master regulator of cell cycle checkpoints in ccRCC is rarely caused by mutations in TP53 (Gurova et al., 2004; Dalgliesh et al., 2010; Sato et al., 2013).\n\nA plethora of recent studies have revealed that mutation rates and genomic instabilities in cancer are directly related to aberrant histone modifications and chromatin organization, underscoring the importance of the histone code in maintaining genome stability (Lukas et al., 2011; Papamichos-Chronakis and Peterson, 2013). CcRCC is an example of a cancer, where a high rate of genomic alterations occurs in parallel to inactivating mutations and deletions of histone modifiers, such as SETD2 (Cancer Genome Atlas Research, 2013; Sato et al., 2013). The present study provides a functional link between these two events extending our understanding of the impact of altered chromatin states on the mechanisms that maintain genome integrity. Although it is now evident that alterations in histone modifications are a hallmark of most cancers, it is still unclear whether these changes are drivers or passengers of tumorigenesis (Waldmann and Schneider, 2013). Our findings endorse the classification of SETD2 as a tumor suppressor and place inactivating mutations in this histone modifier at the peak of a harmful cascade of events that may ultimately drive malignant cell transformation and tumor development.\n\n## Materials and methods\n\n### Cell culture and drug treatments\n\nHuman osteosarcoma (U2OS) cells (ATCC) and the ccRCC cells RCC-JW, Caki-2, RCC-MF and RCC-FG2 (Duns et al., 2010) (Cell Line Services Eppelheim, Germany) were grown as monolayers in Dulbecco's modified Eagle medium\u2013DMEM (Invitrogen, Carlsbad, CA), supplemented with 10% (vol/vol) FBS, 1% (vol/vol) nonessential amino acids, 1% (vol/vol) L-glutamine, and 100U/ml penicillin-streptomycin, and maintained at 37\u00b0C in a humidified atmosphere containing 5% CO2. To induce DNA damage, cells were treated with 50 \u03bcM etoposide (Sigma, St Louis, MI) for 15 min, 250 ng/ml neocarzinostatin (NCS) (Sigma) for 30 min or 40 \u03bcM phleomycin (Sigma) for 30 min, washed and harvested immediately after the treatment and at the indicated time-points.\n\n### RNA interference\n\nSETD2 RNAi was achieved using three different synthetic siRNA duplexes targeting SETD2 (Eurogentec, Seraing, Belgium) (Carvalho et al., 2013). In each experiment, at least two different siRNAs were used resulting in similar knockdown efficiencies. siRNAs targeting the firefly luciferase (GL2) were used as controls (Eurogentec) (Elbashir et al., 2001). Cells were reverse transfected with 10 \u03bcM siRNAs using OptiMEM (Invitrogen) and Lipofectamine RNAiMAX (Invitrogen), according to the manufacturer's instructions. 24 hr after the first transfection, cells were re-transfected with the same siRNA duplexes and transfection reagents and harvested on the following day.\n\n### SETD2-GFP plasmid construction\n\nThe SETD2 cDNA was cloned into the pEGFP-C1 vector (Clontech, Mountain View, CA) in a ligation reaction containing two fragments. A fragment containing 5257 bp from the 3\u2032 end of SETD2 was obtained by digestion of pCR-XL-TOPO-SETD2 (clone 40125713; Thermo Scientific, Waltham, MA) with SpeI and PstI. A fragment containing the 5\u2032 end of SETD2 was obtained by PCR amplification of pCR-XL-TOPO-SETD2 using primers containing BglII and SpeI restriction sites. The PCR product was digested with BglII and SpeI restriction enzymes and purified. Both fragments were co-inserted in BglII/PstI digested pEGFP-C1 vector. This construct was confirmed by DNA sequencing.\n\n### Immunofluorescence\n\nU2OS cells grown on coverslips were fixed with 3.7% paraformaldehyde for 10 min at room temperature. The cells were then permeabilized with 0.5% Triton X-100/PBS for 10 min. Incubation with primary antibodies against \u03b3H2AX (phosphoSer139; 05\u2013636, Millipore, Billerica, MA), total RPA32 (ab2175; Abcam, Cambridge, UK), BRCA1 (sc-6954; Santa Cruz Biotechnology, Dallas, TX), RAD51 (ab213; Abcam), or cyclin A (sc-751; Santa Cruz Biotechnology) was followed by incubation with fluorochrome-conjugated (Alexa Fluor 488 and 594) antibodies (Jackson Immunoresearch, West Grove, PA). All the washing steps were done with PBS containing 0.05% (vol/vol) Tween 20. The samples were mounted in Vectashield (H-1000; Vector Laboratories, Burlingame, CA) with 4'-6-diamidino-2-phenylindole (Dapi) (09542; Sigma) to stain the DNA. A Zeiss LSM 710 (Carl Zeiss, Oberkochen, Germany) confocal microscope was used to visualize the cells with a 63x/1.4 oil immersion or a 40x objective.\n\n### Western blot\n\nWhole cell protein extracts were prepared by cell lysis with SDS-PAGE buffer (80 mM Tris-HCL pH 6.8, 16% glicerol, 4.5% SDS, 450 mM DTT, 0.01% bromophenol blue) with 200U/ml benzonase (Sigma) and 50 \u00b5M MgCl2 and boiling for 5 min. Equal amounts of protein extracts were resolved by SDS-polyacrylamide gel electrophoresis (SDS-PAGE) and transferred to a nitrocellulose membrane. Immunoblotting was performed with antibodies against the following proteins: H3K36me3 (ab9050; Abcam), histone H3 (ab1791; Abcam), phospho-53BP1 (phosphoSer1778; No.2675, Cell Signaling, Danvers, MA), phospho-ATM (phosphoS1981; No.200-301-400s, Rockland, Gilbertsville, PA), total ATM (PC116; Millipore), total RPA32 (ab2175; Abcam), phospho-RPA32 (phosphoSer4/Ser8; A300-245A, Bethyl, Montgomery, TX), \u03b1-Tubulin (T5168; Sigma); \u03b3H2AX (phosphoSer139; 05-636, Millipore); Histone H2B (ab1790; Abcam); GFP (11814460001; Roche, Basel, Switzerland); total p53 (sc-263; Santa Cruz); phospho-p53 (phosphoSer15; ab38497, Abcam); p21 (sc-397; Santa Cruz).\n\n### Laser-induced DNA damage\n\nLaser-induced DSBs were generated using a confocal microscope (LSM 510 Meta, Carl Zeiss) equipped with a 37\u00b0C heating chamber (Pecon, Erbach, Germany) and a 405 nm diode laser focused through a 63x/1.4 oil immersion objective. We performed one iteration at a laser output of 100%. To follow the dynamics of GFP-tagged 53BP1 (53BP1-GFP, a kind gift from Dr Jiri Lukas, Danish Cancer Society, Copenhagen, Denmark) or SETD2-GFP during the DDR, live-cell images were recorded during 15 min after laser-irradiation. Control or SETD2-depleted U2OS cells were transfected with expression plasmids for 53BP1-GFP or SETD2-GFP using Lipofectamine 2000 (Invitrogen) according to the manufacturers's protocol.\n\n### Nuclear co-immunoprecipitation\n\nBriefly, nuclear extracts and further MNase digestion was performed as described earlier (Carvalho et al., 2013) with minor changes. Cells were lysed in ice-cold NP-40 buffer (10 mM Tris\u2013HCl [pH 7.4], 10 mM NaCl, 3 mM MgCl2, 0.5% Nonidet P-40, 0.15 mM spermine, and 0.5 mM spermidine) and isolated nuclei were washed and resuspended in MNase digestion buffer (10 mM Tris\u2013HCl [pH 7.4], 15 mM NaCl, 60 mM KCl, 0.15 mM spermine, and 0.5 mM spermidine) and sonicated with a single pulse of 15 s at 50% intensity using a Soniprep 150 (Sanyo, Moriguchi, Japan). Nuclei were digested enzymatically with 60U MNase (Thermo Scientific) at 4\u00b0C for 60 min. MNase stop buffer (100 mM EDTA and 10 mM EGTA [pH 7.5]) was used to stop the reaction and samples were pre-cleared using Protein G Dynabeads (Life Technologies, Carlsbad, CA) at 4\u00b0C for 45 min. All buffers were supplemented with protease and phosphatase inhibitors (Roche). Samples were incubated with 3 \u03bcg of either anti-53BP1 (ab87097; Abcam) or anti-H3K36me3 (ab9050; Abcam) antibodies overnight at 4\u00b0C. The protein complexes were pulled down using Protein G Dynabeads, washed six times in IP buffer (200 mM NaCl, 16.7 mM Tris pH 8.1, 1.1% TritonX-100, 1.2 mM EDTA, 0.01% SDS) and resolved by SDS-PAGE before immunoblotting with antibodies against: \u03b3H2AX (phosphoSer139; 05-636, Milipore) and anti-H3K36me3 (ab9050; Abcam). 1/10th of the total cell lysate was used as input samples.\n\n### Homologous recombination reporter assay\n\nThe U2OS DR-GFP cells were a kind gift of Dr Maria Jasin from the Memorial Sloan-Kettering, USA. To assess HR efficiency, U2OS DR-GFP cells were seeded in a six-well plate and reverse transfected with the I-SceI expression plasmid (pCBA-SceI; 26477; Addgene, Cambridge, MA) using Lipofectamine 2000 (Invitrogen), according to the manufacturers's protocol. The cells were maintained for 24 hr at 37\u00b0C in a humidified atmosphere containing 5% CO2. After 24 hr, siRNAs targeting either firefly luciferase (GL2) or SETD2 were transfected using Lipofectamine RNAiMAX (Invitrogen). 48 hr after RNAi (and 72 hr after I-SceI transfection) cells were harvested and subjected to flow cytometry analysis (FACS Calibur; BD Biosciences, San Jose, CA) with a minimum of 20,000 events acquired. The enzyme cutting efficiency (35% on control cells and 33% on SETD2-depleted cells) was determined by real-time quantitative PCR (RT-qPCR) with primers flanking the I-SceI cleavage site on the GFP reporter gene. The amount of DNA was estimated as follows: 2^(Ct reference\u2013Ct sample), where Ct reference and Ct sample are mean threshold cycles of RT-qPCR done in duplicate from GAPDH (reference) and the DNA flanking the I-SceI site (sample). Non-transfected cells were used as a reference to calculate the percentage of cutting upon I-SceI transfection. Primers are detailed in Table 1. The percentage of GFP+ cells was estimated using FlowJo (TreeStar, Ashland, OR).\n\n**Table 1.**\n Sequence of primers used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene Name</th>\n      <th>Primer designation</th>\n      <th>Primer sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">I-SceI Flank</td>\n      <td>Flank_Fw</td>\n      <td>GAG CAG GAA CCT GAG GAG</td>\n    </tr>\n    <tr>\n      <td>Flank_Rv</td>\n      <td>GCC GTA GGT ATT ACC CTG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">I-SceI 250bp</td>\n      <td>250bp_Fw</td>\n      <td>CAT GCC CGA AGG CTA CGT</td>\n    </tr>\n    <tr>\n      <td>250bp_Rv</td>\n      <td>CGG CGC GGG TCT TGT A</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">I-SceI 300bp</td>\n      <td>300bp_Fw</td>\n      <td>CTT CTT CAA GGA CGA CGG C</td>\n    </tr>\n    <tr>\n      <td>300bp_Rv</td>\n      <td>GTA GTT GTA CTC CAG CTT GTG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">I-SceI 350bp</td>\n      <td>350bp_Fw</td>\n      <td>CTA CAG CTC CTG GGC AAC</td>\n    </tr>\n    <tr>\n      <td>350bp_Rv</td>\n      <td>CTT CGG CAC CTT TCT CTT C</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">I-SceI 2200bp</td>\n      <td>2200bp_Fw</td>\n      <td>CGC GAC GTC TGT CGA GAA G</td>\n    </tr>\n    <tr>\n      <td>2200bp_Rv</td>\n      <td>GCC GAT GCA AAG TGC CGA TA</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">GAPDH</td>\n      <td>GAPDH_Fw</td>\n      <td>GAA GGT GGA GGT CGG AGT C</td>\n    </tr>\n    <tr>\n      <td>GAPDH_Rv</td>\n      <td>GAA GAT GGT GAT GGG ATT TC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell cycle analysis and survival assays\n\nThe nuclear DNA content was estimated by flow cytometry analysis of cells stained with propidium iodide (PI). Briefly, cultured cells were collected by trypsinization and fixed by drop wise addition of ice-cold 50% ethanol with gentle vortexing. After placing the samples 24 hr on ice, RNase was added to a final concentration of 50 \u03bcg/ml and incubated for 30 min at 37\u00b0C. Following addition of PI (100 \u03bcg/ml), 80,000 events were acquired on a FACS Calibur (BD Biosciences) and the DNA content analyzed with FlowJo (TreeStar). For analysis of cell cycle checkpoints, control or SETD2-depleted U2OS cells were treated with 40 \u03bcM phleomycin for 30 min, washed and cultured in fresh medium for 8 and 12 hr before flow cytometry analysis of the cell cycle progression. For analysis of clonogenic survival, cells were reverse-transfected with SETD2 and control (GL2) siRNAs, seeded in 10-cm dishes (1000 cells/dish) and 2 days later treated for 30 min with phleomycin at various concentrations. Cells were then cultured for 10 days and individual colonies counted upon staining with crystal violet.\n\n### Direct measurement of DNA 5\u2032 end resection\n\nThe extent of DNA 5\u2032 end resection was analyzed by RT-qPCR analysis of the DNA surrounding the I-SceI site of the GFP gene integrated in the U2OS cells (U2OS DR-GFP reporter) transfected with the I-SceI expression plasmid. Primers flanking the I-SceI site and four regions located approximately 250 bp, 300 bp, 350 bp and 2200 bp away from this site were used. The housekeeping gene GAPDH was used as a genomic DNA control. RT-qPCR was performed in the ViiA Real Time PCR (Applied Biosystems, Foster City, CA) using Power SYBR Green PCR Master Mix (Applied Biosystems). The percentage of digestion was estimated as follows: 2^(Ct reference\u2013Ct sample), where Ct reference and Ct sample are mean threshold cycles of RT-qPCR done in duplicate on DNA samples from GAPDH (reference) and the DNA regions surrounding the I-SceI site (sample). The amount of DNA was corrected for the I-SceI digestion efficiency by normalizing the data against the amount of DNA flanking the restriction site. All primer sequences are presented in Table 1.\n\n### Comet assays\n\nDNA double-strand breaks in SETD2 wt or mutant ccRCC cells were detected by neutral comet assay using the CometAssay kit (Trevigen, Gaithersburg, MD) according to the manufacturer's instructions. A Zeiss Axiovert 200M (Carl Zeiss) microscope equipped with a 20x objective was used to visualize cells. The amount of DNA damage was estimated by measuring the percentage of fluorescence in the comet's tail using the CometScore analysis software.\n\n### Statistical analysis\n\nWhere indicated, data were subjected to a two-tailed Student's t-test to resolve statistical significance.\n",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "2d8cd81d-d149-4f56-adb7-4a8e76018aa1",
+      "submission_id": "89122a02-5bdc-49a1-a656-a7ddb04cda4b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaquin M Espinosa, Howard Hughes Medical Institute, University of Colorado , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02482.015](https://doi.org/10.7554/eLife.02482.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cSETD2 is required for DNA double-strand break repair and activation of the p53-mediated checkpoint\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this interesting paper, Carvalho et al report a novel role for the lysine methyl-transferase SETD2 in the DNA damage response (DDR). They demonstrate that SETD2 depletion impairs several key signaling events downstream of DNA double-stranded breaks, including phosphorylation of ATM, H2A.X and 53BP1, recruitment of 53BP1 to sites of DNA damage, and formation of Rad51 foci, but not RPA recruitment. Depletion of SETD2 also produces a defect in DNA repair via homologous recombination (HR) and a defect in p53 activation after DNA damage. These findings are also reproduced in clear cell renal carcinoma cell lines carrying SETD2 mutations. The reviewers found these findings to be of high impact and significant, because loss-of-function mutations in SETD2 have been recently documented in various malignancies, suggesting that SETD2 is a bona fide tumor suppressor. The findings in this report may explain, at least in part, how SETD2 suppresses tumor growth.\n\nHowever, the reviewers discussed how the mechanistic aspects of the paper could have been more developed. In particular, the reviewers noted the difficulty in dissecting direct effects (i.e., SETD2 acting at the sites of DNA damage via H3K36 methylation) versus indirect SETD2 action (i.e., via transcriptional effects). In the end, the reviewers agreed that the paper would merit publication in a high impact journal such as eLife by including additional experiments and controls that would significantly strengthen the main conclusions, even if further mechanistic insight was not provided.\n\nTherefore, the major concerns that will have to be addressed for this manuscript to be considered for publication are:\n\n1) A key conclusion in the manuscript, stated in the title, is that SETD2 is involved in the 'p53 activation checkpoint'. However, this is based merely on p53 and p21 Western blots. Although p53 and p21 levels are lower in SETD2 deficient cells, no work is performed on the checkpoint itself so the title of the figure is misleading and overstated. A direct measurement of the G1 checkpoint should be performed with and without SETD2 to strengthen this statement. Cells can be damaged with IR (or phleo, bleo if not available) followed by a time course using FACS analysis to measure DNA content and G1 arrested cells. siControl and siSETD2 cells can be compared to see if indeed depletion of SETD2 affects the p53-dependent checkpoint at the level of the cell cycle as reported by the authors. In addition, clonogenic DNA damage sensitivity assays with these agents would help show that these defects observed in SETD2 defective cells actually have some biological consequence. As a suggestion, Etoposide should not be used as this response is dependent on TOP2, which might be altered in SETD2 depleted cells. Although this could be interesting, the results would be indirect and these experiments are suggested to look at direct effects of SETD2 upon DNA damage on the p53 checkpoint (see point 2).\n\n2) Many of the key experiments inducing DNA double-stranded breaks were done with etoposide, a topoisomerase II inhibitor (such as phospho-H2AX formation). Since TOP2 is involved in transcription, it is important to repeat these experiments with other agents that cause double-stranded breaks by other mechanisms, such as neocarcinostatin (NCS), and ionizing radiation (IR, or a radiomimetic drug such as phleomycin or bleomycin). To what the degree the defects in DNA damage-induced signaling observed in SETD2-depleted cells can be reproduced with these other agents? More specifically, the reviewers would like to know if other signaling events, such as ATM, H2A.X, 53BP1 and p53 activation are also impaired in SETD2-depleted cells after treatment with these other agents.\n\n3) Figure 4A does not provide enough information for the results to be judged. Information about what time point this data represents and what the cutting efficiency is should be provided. Additionally, in Figure 4C, all cells show similar amounts of RPA after NCS. G1 cells should not show RPA similarly to S/G2 cells since NHEJ is the more prominent DNA repair pathway. Are all of these cells in S/G2? No cell cycle analysis beyond a FACS profile is provided and since resection, DNA repair and DNA damage signaling are regulated throughout the cell cycle, a more careful analysis is warranted. This can be accomplished by using Cyclin A staining in the IF analysis to indicate S/G2 cells and G1 cells that will lack Cyclin A staining. No information is provided for why RAD51, but not RPA, are defective in SETD2 deficient cells. Could the authors discuss a possible mechanism? LEDGF has been shown to bind transcription marks including H3K36me3 and be involved in DNA repair (Daugaard et al. NSMB, 2012) but how SETD2 relates to this work is not discussed. Can you detect defects in CTIP, BRCA1 and/or LEDGF recruitment to damage sites in the absence of SETD2? This data would allow a deeper understanding of what aspect of HR are regulated by SETD2.\n\n4) The immunofluorescence-based DNA damage assays such in Figure1B (\u03b3H2AX) and Figure3C (RPA) should be performed in a quantitative manner, similar to that of Figure 3D.\n\n5) The experiments attempted to address the if K36me3 is present at the nucleosomes adjacent to DSBs (Figure 2E) are problematic in several aspects:\n\na) To prepare mono-nucleosomes, the common nuclease of choice is MNase. However, the authors used DNase I, which efficiently cleave nucleosomal DNA at minor grooves, and Benzonase, which is even less proven enzyme to specifically digest linker DNA. More importantly, the nuclei DNA digestion pattern indicated a potential over-digestion (DNA fragment is smaller than 147bp), and there is no evidence that nucleosomes remain intact. This experiment should be repeated with MNase.\n\nb) H2A, H2B and H4 western should be included in nucleosome pull-down when H3 antibodies are used.\n\nc) In control cells (Left), when comparing IP to the input, K36me3 IP seems to put down K4me2 more efficiently than K36me3. This result would suggest that K4me2 co-occupies almost completely with K36me3, which is NOT consistent with numerous mass-spec studies and genome-wide analysis. The authors should elaborate on this result.\n\n6) To rule out indirect transcriptional effect caused by Setd2 knockdown, the authors settled to merely analyze the published RNA-seq data in Set2 depleted cells. However, this is not a correct analysis for this purpose. Gene expression comparison should have been done between WT and Setd2-KD cells under DNA damage induced conditions. This analysis should be done in WT and Setd2-KD cells under DNA damage induced conditions or removed from the manuscript entirely. If the authors decide to remove this section, they should acknowledge in the text the possibility of indirect SETD2 action via undefined transcriptional effects.\n\n7) The \u201cBreak & access model\u201d proposed by authors in the Discussion section makes no sense to the reviewer for the following reasons:\n\na) Recombinant Setd2 homologs in human, Drosophila, and yeast all show stronger activity toward nucleosomal substrates than histones; b) The works from the Briggs' lab (Du et al 2008 G&D and 2010 JBC) clearly showed that H2A surface is required for Set2-mediated K36me3; c) Based on the structure, the removal of H2A/H2B bears no influence on \u201cdisclose H3K36 substrates for Setd2-dependent trimethylation\u201d. Please modify the model to more accurately depict the results obtained and the current state of knowledge.\n\nExperiments using clear cell renal carcinoma cell lines involve only one of each wild type SETD2 versus mutant SETD2. Given that these cell lines are not isogenic, it is imperative to reproduce the key findings in Figures 5, 6 and 7 in at least one other pair of wild type and mutant SET2D.\n",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d5d8b2d8-f63b-4db0-bdf1-d217432c55b5",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C1",
+      "claim": "SETD2 is the enzyme that trimethylates histone H3 lysine 36 (H3K36me3).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that SETD2, the enzyme that trimethylates histone H3 lysine 36 (H3K36me3), is required for ATM activation upon DNA double-strand breaks (DSBs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by established scientific knowledge about SETD2 function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "a46b3a95-c26b-4512-ac16-8f806148aaed",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C2",
+      "claim": "SETD2 is required for ATM activation upon DNA double-strand breaks (DSBs).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that SETD2, the enzyme that trimethylates histone H3 lysine 36 (H3K36me3), is required for ATM activation upon DNA double-strand breaks (DSBs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "92acd947-5def-4279-953f-849c79bffd52",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C3",
+      "claim": "SETD2 is necessary for homologous recombination repair of DSBs by promoting the formation of RAD51 presynaptic filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that SETD2 is necessary for homologous recombination repair of DSBs by promoting the formation of RAD51 presynaptic filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract and supported by experimental data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "63e4fb2b-0832-4097-866e-cab6b0739339",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C4",
+      "claim": "SETD2-mutant clear cell renal cell carcinoma (ccRCC) cells displayed impaired DNA damage signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, SETD2-mutant clear cell renal cell carcinoma (ccRCC) cells displayed impaired DNA damage signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "a99a02d6-7cfa-460b-98cd-ca17d3373110",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C5",
+      "claim": "SETD2-deficient cells failed to activate p53 despite the persistence of DNA lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite the persistence of DNA lesions, SETD2-deficient cells failed to activate p53, a master guardian of the genome rarely mutated in ccRCC and showed decreased cell survival after DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract and supported by experimental data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "3bcdd7b1-0423-4db2-94c3-8660ae645f2e",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C6",
+      "claim": "SETD2-deficient cells showed decreased cell survival after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite the persistence of DNA lesions, SETD2-deficient cells failed to activate p53, a master guardian of the genome rarely mutated in ccRCC and showed decreased cell survival after DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "cec1eeca-ed01-41b2-942a-120d8c40ac81",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C7",
+      "claim": "Loss of SETD2 may afford an alternative mechanism for the inactivation of the p53-mediated checkpoint without the need for additional genetic mutations in TP53 in ccRCC.",
+      "claim_type": "EXPLICIT",
+      "source": "In ccRCC, loss of SETD2 may afford an alternative mechanism for the inactivation of the p53-mediated checkpoint without the need for additional genetic mutations in TP53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion stated in the abstract based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e81ef60c-e03b-438c-a093-72e916a6f077",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C8",
+      "claim": "DNA double-strand breaks (DSBs) are the most catastrophic form of DNA damage and pose great threat to genome stability.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA double-strand breaks (DSBs) are the most catastrophic form of DNA damage and pose great threat to genome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e862698e-31cc-4cb6-bfa8-d13befef1e25",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C9",
+      "claim": "ATM kinase is the major sensor of DSBs and is critical for the initial steps of the DNA damage response (DDR).",
+      "claim_type": "EXPLICIT",
+      "source": "The major sensor of DSBs is ataxia telangiectasia mutated (ATM) kinase, which is critical for the initial steps of the DNA damage response (DDR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "9b787775-17fc-4974-b33c-acc9b04ef960",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C10",
+      "claim": "ATM phosphorylates and regulates the activity of several substrates involved in DNA repair, such as p53-binding protein 1 (53BP1) and histone H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to DSBs, ATM phosphorylates and regulates the activity of several substrates involved in DNA repair, such as p53-binding protein 1 (53BP1) and histone H2AX (Matsuoka et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Matsuoka et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "0f126841-05ce-4806-babf-403204da2fb7",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C11",
+      "claim": "Mammalian cells can repair DSBs through two different DDR pathways: nonhomologous end-joining (NHEJ) and homologous recombination (HR).",
+      "claim_type": "EXPLICIT",
+      "source": "To effectively repair a DSB, mammalian cells can choose from two different DDR pathways: nonhomologous end-joining (NHEJ) and homologous recombination (HR) (Chapman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Chapman et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "af4364fb-d722-4428-83c8-94fee2fb5799",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C12",
+      "claim": "During NHEJ, the broken DNA ends are blocked from 5\u2032 end resection and held in close proximity by the Ku70-Ku80 heterodimer (Ku).",
+      "claim_type": "EXPLICIT",
+      "source": "During NHEJ, the broken DNA ends are blocked from 5\u2032 end resection and held in close proximity by the Ku70-Ku80 heterodimer (Ku) (Lieber, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Lieber, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "c47aeb8e-f510-4eb1-a5c7-7a9537954d08",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C13",
+      "claim": "HR is initiated when the 5\u2032 DNA ends are resected by nucleases and helicases, generating two 3\u2032 single-stranded DNA overhangs coated with phosphorylated replication protein A (RPA) that drives the formation of a RAD51 filament prior to strand invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "HR is initiated when the 5\u2032 DNA ends are resected by nucleases and helicases, generating two 3\u2032 single-stranded DNA overhangs coated with phosphorylated replication protein A (RPA) that drives the formation of a RAD51 filament prior to strand invasion (Chapman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Chapman et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "8081d809-2813-4c54-b348-ec46dca85150",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C14",
+      "claim": "NHEJ promotes direct ligation of the DSB ends in an error-prone manner and is available throughout the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to NHEJ, which promotes direct ligation of the DSB ends in an error-prone manner and is available throughout the cell cycle, HR employs homologous sequences available after DNA replication as templates for error-free DNA repair (San Filippo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to San Filippo et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "d41e4868-98d7-4193-be55-fa3ae2046234",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C15",
+      "claim": "HR employs homologous sequences available after DNA replication as templates for error-free DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to NHEJ, which promotes direct ligation of the DSB ends in an error-prone manner and is available throughout the cell cycle, HR employs homologous sequences available after DNA replication as templates for error-free DNA repair (San Filippo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to San Filippo et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "d0bbe701-c417-4877-afed-f4716f0e90a4",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C16",
+      "claim": "Phosphorylated H2AX (\u03b3H2AX) arises within minutes after DNA damage and has a key role in the recruitment of multiple DDR factors to the repair centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylated H2AX (\u03b3H2AX) arises within minutes after DNA damage and has a key role in the recruitment of multiple DDR factors to the repair centers (Lukas et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Lukas et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "f1a8d1c6-7b29-439e-af60-16256b19191f",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C17",
+      "claim": "SETD2 is responsible for all H3K36 trimethylation, but not H3K36 mono- or dimethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that the histone methyltransferase SETD2 (also termed KMT3 or HYPB), which is responsible for all H3K36 trimethylation, but not H3K36 mono- or dimethylation (Edmunds et al., 2008), acts as a determinant of chromatin integrity by regulating nucleosome dynamics during transcription (Carvalho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to Edmunds et al., 2008 and Carvalho et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "1d31b891-6296-4656-bf2d-dd2d1a90b660",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C18",
+      "claim": "SETD2 acts as a determinant of chromatin integrity by regulating nucleosome dynamics during transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that the histone methyltransferase SETD2 (also termed KMT3 or HYPB), which is responsible for all H3K36 trimethylation, but not H3K36 mono- or dimethylation (Edmunds et al., 2008), acts as a determinant of chromatin integrity by regulating nucleosome dynamics during transcription (Carvalho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Carvalho et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "7b36d455-8f2c-4b5e-aeec-cd527540ca5a",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C19",
+      "claim": "The DNA mismatch repair (MMR) protein MutS\u03b1 binds H3K36me3.",
+      "claim_type": "EXPLICIT",
+      "source": "A role of H3K36me3 in maintaining chromatin integrity was recently disclosed by the finding that the DNA mismatch repair (MMR) protein MutS\u03b1 binds H3K36me3 and that SETD2 is necessary for human DNA MMR, a mechanism that corrects mismatches generated during DNA replication (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Li et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "41e8b3cc-a7b5-4758-8343-1fba04d66993",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C20",
+      "claim": "SETD2 is necessary for human DNA MMR, a mechanism that corrects mismatches generated during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "A role of H3K36me3 in maintaining chromatin integrity was recently disclosed by the finding that the DNA mismatch repair (MMR) protein MutS\u03b1 binds H3K36me3 and that SETD2 is necessary for human DNA MMR, a mechanism that corrects mismatches generated during DNA replication (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Li et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "bf006aed-a22c-4fbc-b8fe-b9a5274f9a25",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C21",
+      "claim": "Depletion of SETD2 impairs ATM activation and leads to delayed recruitment of 53BP1 to sites of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate using powerful reporter assays that SETD2 is necessary for the DDR and that depletion of SETD2 impairs ATM activation and leads to delayed recruitment of 53BP1 to sites of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by experimental data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "15c89fd2-c95e-442f-8192-00403402d137",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C22",
+      "claim": "SETD2 is required for the recruitment of RAD51 to resected DNA 5\u2032 ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data further reveal that SETD2 is required for the recruitment of RAD51 to resected DNA 5\u2032 ends and SETD2-depleted cells show reduced homology-directed repair of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "13f7c7f3-4b1c-46e3-a12e-07c805a629c6",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C23",
+      "claim": "SETD2-depleted cells show reduced homology-directed repair of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data further reveal that SETD2 is required for the recruitment of RAD51 to resected DNA 5\u2032 ends and SETD2-depleted cells show reduced homology-directed repair of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "3e23c2c3-f666-4954-8f74-8b33380ab55e",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C24",
+      "claim": "SETD2 mutations were recently found in several cancers, such as clear cell renal cell carcinoma (ccRCC).",
+      "claim_type": "EXPLICIT",
+      "source": "SETD2 mutations were recently found in several cancers, such as clear cell renal cell carcinoma (ccRCC) (Dalgliesh et al., 2010; Duns et al., 2010; Varela et al., 2011; Zhang et al., 2012; Fontebasso et al., 2013; Joseph et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e3dd198e-79bc-4b16-8315-807b98d66569",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C25",
+      "claim": "In ccRCC, the p53-mediated cell cycle checkpoint is frequently inactivated despite the fact that the TP53 tumor suppressor gene is rarely mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "In ccRCC, the p53-mediated cell cycle checkpoint is frequently inactivated despite the fact that the TP53 tumor suppressor gene is rarely mutated (Gurova et al., 2004; Dalgliesh et al., 2010; Sato et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to Gurova et al., 2004; Dalgliesh et al., 2010; Sato et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e7313d64-52a3-4cfd-aa1a-329f58745bc3",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C26",
+      "claim": "ccRCC cells carrying inactivating mutations on SETD2 phenocopy the impaired DDR observed in SETD2 RNAi-depleted human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ccRCC cells carrying inactivating mutations on SETD2 phenocopy the impaired DDR observed in SETD2 RNAi-depleted human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "78867ba1-ad17-45f1-95b7-4ed55c9cd00c",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C27",
+      "claim": "SETD2 inactivation severed the p53-dependent cell cycle checkpoint despite the persistence of unrepaired DNA lesions in ccRCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, SETD2 inactivation severed the p53-dependent cell cycle checkpoint despite the persistence of unrepaired DNA lesions in ccRCC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by experimental data in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e4f8a783-0c85-411e-83a8-9f8e967e7f9f",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C28",
+      "claim": "Depletion of SETD2 mRNA by RNA interference (RNAi) using three different synthetic small interfering RNA duplexes resulted in a global loss of the H3K36me3 histone mark that persisted throughout the entire chase periods following the DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We depleted SETD2 mRNA by RNA interference (RNAi) using three different synthetic small interfering RNA duplexes, which resulted in a global loss of the H3K36me3 histone mark that persisted throughout the entire chase periods following the DNA damage (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "8fe58afe-2ce2-4682-8f59-18735b745394",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C29",
+      "claim": "In control cells, the levels of H3K36me3 remained constant during the DDR and were undistinguishable from those of undamaged cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In control cells, the levels of H3K36me3 remained constant during the DDR and were undistinguishable from those of undamaged cells, suggesting that this histone mark is not amplified following the DSBs (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "1148952c-9554-447f-99c6-c85778357525",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C30",
+      "claim": "H3K36me3 is not amplified following DSBs.",
+      "claim_type": "IMPLICIT",
+      "source": "In control cells, the levels of H3K36me3 remained constant during the DDR and were undistinguishable from those of undamaged cells, suggesting that this histone mark is not amplified following the DSBs (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that H3K36me3 levels remain constant during DDR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "1d23be0b-8f84-45cb-91da-9b85fd625c48",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C31",
+      "claim": "ATM phosphorylation (pATM) peaked at the early time points after etoposide, NCS, and phleomycin treatment in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ATM phosphorylation (pATM) peaked at the early time points after each treatment in control cells (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "12414f3a-7433-448d-b100-91bca9030670",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C32",
+      "claim": "SETD2-depleted cells revealed a significant impairment in DNA damage signaling as revealed by decreased pATM levels detected upon treatment with etoposide, NCS, and phleomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SETD2-depleted cells revealed a significant impairment in DNA damage signaling as revealed by decreased pATM levels detected upon treatment with each of the three drugs (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "545243ad-f3f7-41a3-bf3c-4d94a71de61d",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C33",
+      "claim": "The phosphorylation levels of H2AX and 53BP1 decreased in SETD2-depleted cells following treatment with NCS or etoposide.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with impaired ATM activation, the phosphorylation levels of its downstream substrates H2AX and 53BP1 decreased in SETD2-depleted cells following treatment with NCS or, more appreciably, etoposide (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "9841d453-ccbb-4f63-9253-dabf2c7f8cc7",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C34",
+      "claim": "Depletion of SETD2 had only a very mild impact on phosphorylation of 53BP1 or H2AX in DSBs induced by phleomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "In DSBs induced by phleomycin, depletion of SETD2 had only a very mild impact on phosphorylation of 53BP1 or H2AX (Figure 1C) suggesting that either the remaining pATM is sufficient to transduce the DNA damage signaling or that alternative ATM-independent pathways operate in phleomycin-induced DSBs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "45be322d-f3cd-4b62-a646-9c7195e2b3b2",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C35",
+      "claim": "Either the remaining pATM is sufficient to transduce the DNA damage signaling or alternative ATM-independent pathways operate in phleomycin-induced DSBs.",
+      "claim_type": "IMPLICIT",
+      "source": "In DSBs induced by phleomycin, depletion of SETD2 had only a very mild impact on phosphorylation of 53BP1 or H2AX (Figure 1C) suggesting that either the remaining pATM is sufficient to transduce the DNA damage signaling or that alternative ATM-independent pathways operate in phleomycin-induced DSBs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "5cb81774-4e4e-4692-87c2-9cb94d90b6a0",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C36",
+      "claim": "In control cells, 53BP1-GFP was recruited to damaged chromatin within 2 min after laser micro-irradiation and was retained at the sites of damage during the 15 min of live-cell recording.",
+      "claim_type": "EXPLICIT",
+      "source": "In control cells, 53BP1-GFP was recruited to damaged chromatin within 2 min after laser micro-irradiation and was retained at the sites of damage during the 15 min of live-cell recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "926d1254-018f-4645-88e2-8f98dd3d0ff2",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C37",
+      "claim": "Recruitment of 53BP1-GFP to irradiated chromatin was significantly delayed in SETD2-depleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, recruitment of 53BP1-GFP to irradiated chromatin was significantly delayed in SETD2-depleted cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "661f0f54-a1a7-497a-8141-a685b013a252",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C38",
+      "claim": "SETD2 RNAi had no appreciable effects on the total cellular levels of 53BP1-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, SETD2 RNAi had no appreciable effects on the total cellular levels of 53BP1-GFP (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "6717645e-fb67-4d1e-b796-50fdebfc1523",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C39",
+      "claim": "SETD2-GFP did not accumulate at the laser micro-irradiated regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the lack of fluctuations of the H3K36me3 levels following DSBs (Figure 1A), SETD2-GFP did not accumulate at the laser micro-irradiated regions (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "8976a465-7806-4226-9ebc-a3cde5b1faf7",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C40",
+      "claim": "Each of the four nucleosomal histones was detected in H3K36me3 pull downs, indicating that isolated nucleosomes remained intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, each of the four nucleosomal histones was detected in H3K36me3 pull downs, indicating that isolated nucleosomes remained intact (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e9e4fced-36e1-4eea-a7bf-c79342068014",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C41",
+      "claim": "In control (i.e., undamaged) cells, \u03b3H2AX was neither detected in the input sample (total cell lysates) nor in any of the two pull-downs (53BP1 and H3K36me3).",
+      "claim_type": "EXPLICIT",
+      "source": "In control (i.e., undamaged) cells, \u03b3H2AX was neither detected in the input sample (total cell lysates) nor in any of the two pull-downs (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "06745396-6c1c-4b20-8e5a-2bd21a072121",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C42",
+      "claim": "Upon treatment with NCS a robust signal for \u03b3H2AX was observed in the input lane and in the samples immunopurified with antibodies against 53BP1 or H3K36me3, indicating the activation of the DDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon treatment with NCS a robust signal for \u03b3H2AX was observed in the input lane and in the samples immunopurified with antibodies against 53BP1 or H3K36me3, indicating the activation of the DDR (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "96d9dd19-0145-4cfe-b875-45d2f1964ce2",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C43",
+      "claim": "Both 53BP1 and H3K36me3 are present in the same nucleosomes that acquire \u03b3H2AX upon DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "These data reveal that both 53BP1 and H3K36me3 are present in the same nucleosomes that acquire \u03b3H2AX upon DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the co-immunoprecipitation data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "c39beb4b-2e1a-4fad-a744-91b98edee1f6",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C44",
+      "claim": "53BP1 was detected in complexes immunoprecipitated with the H3K36me3 antibody upon induction of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 53BP1 was detected in complexes immunoprecipitated with the H3K36me3 antibody upon induction of DSBs (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "947c791d-62b7-4bb8-837e-1d83882875f0",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C45",
+      "claim": "H3K36me3 decorates at least a fraction of the nucleosomes to which 53BP1 binds.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests that H3K36me3 decorates at least a fraction of the nucleosomes to which 53BP1 binds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the co-immunoprecipitation data showing 53BP1 in H3K36me3 pull-downs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "4d1894d8-0c46-4f08-8af7-bf0ab491e362",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C46",
+      "claim": "H3K36me3 contributes to the establishment of the chromatin state that coordinates the recruitment and activation of DDR factors.",
+      "claim_type": "IMPLICIT",
+      "source": "Altogether, these findings further support the view that H3K36me3 contributes to the establishment of the chromatin state that coordinates the recruitment and activation of DDR factors, even though SETD2 is not actively recruited to DNA damage sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings presented in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "fd4fb0fb-f816-48d8-a600-fb3053d9904c",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C47",
+      "claim": "Upon depletion of SETD2 by RNAi, the amount of DNA measured by quantitative real-time PCR at 250 bp, 300 bp, 350 bp and 2200 bp apart from the I-SceI site was only 53%, 62%, 57%, and 71%, respectively, of the DNA levels present in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon depletion of SETD2 by RNAi, the amount of DNA measured by quantitative real-time PCR at 250 bp, 300 bp, 350 bp and 2200 bp apart from the I-SceI site was only 53%, 62%, 57%, and 71%, respectively, of the DNA levels present in control cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "4edba7a2-7e2c-4a72-81ea-65484c92661a",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C48",
+      "claim": "Ablation of SETD2 leads to persistent DNA 5\u2032 end resection of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data reveal that ablation of SETD2 leads to persistent DNA 5\u2032 end resection of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from the DNA resection data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "a16ca7aa-518a-4caf-b338-57f48cea3bb6",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C49",
+      "claim": "Phosphorylation of RPA (pRPA) was detected in SETD2-depleted cells within the first hour after DNA damage with NCS and reached equilibrium after 6 to 8 hr, when its levels were similar to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, phosphorylation of RPA (pRPA), an event that is directly linked to efficient DNA 5\u2032 end resection (Sartori et al., 2007), was detected in SETD2-depleted cells within the first hour after DNA damage with NCS and reached equilibrium after 6 to 8 hr, when its levels were similar to control cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "6ca0fa44-0b8f-42a7-b518-07700fc2e0cc",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C50",
+      "claim": "At 8 hr after NCS treatment, widespread RPA foci were observed in the nuclei of both control and SETD2 RNAi cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At 8 hr after NCS treatment, widespread RPA foci were observed in the nuclei of both control and SETD2 RNAi cells, suggesting that recruitment of RPA to DNA lesion sites is independent of SETD2 activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "7dfdd053-3ed7-47af-beb9-a37d6b7881f5",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C51",
+      "claim": "Recruitment of RPA to DNA lesion sites is independent of SETD2 activity.",
+      "claim_type": "IMPLICIT",
+      "source": "At 8 hr after NCS treatment, widespread RPA foci were observed in the nuclei of both control and SETD2 RNAi cells, suggesting that recruitment of RPA to DNA lesion sites is independent of SETD2 activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that RPA foci are present in both control and SETD2-depleted cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "d7645d62-de4e-47b0-a2f4-875c487d3b3a",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C52",
+      "claim": "RPA foci were visible only in cyclin A-positive cells that are in S or G2 phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, RPA foci were visible only in cyclin A-positive cells that are in S or G2 phase of the cell cycle (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "76d03093-84e4-49f0-8d02-7fb33a34658c",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C53",
+      "claim": "Upon NCS treatment, abundant BRCA1 foci were formed in control and SETD2-depleted cells that stained positively for cyclin A.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon NCS treatment, abundant BRCA1 foci were formed in control and SETD2-depleted cells that stained positively for cyclin A (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "53742542-882f-49e1-b6e4-21295bae2393",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C54",
+      "claim": "BRCA1 recruitment to DSBs is largely unaffected by SETD2 depletion.",
+      "claim_type": "IMPLICIT",
+      "source": "This result is consistent with the SETD2-independent DNA 5\u2032 end resection and suggests that BRCA1 recruitment to DSBs is largely unaffected by SETD2 depletion (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that BRCA1 foci are present in both control and SETD2-depleted cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "edc8ecb4-2bf2-41e0-b98b-d5931237bc01",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C55",
+      "claim": "RAD51 was recruited to DSBs in a SETD2-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, RAD51 was recruited to DSBs in a SETD2-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "caa7a4e1-149b-4886-9501-e8ecd23f8593",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C56",
+      "claim": "Upon SETD2 RNAi-depletion, the percentage of U2OS cells with \u22655 RAD51 foci at 8 hr and 24 hr post-NCS treatment (17% and 30%, respectively) was significantly reduced in comparison to control cells (36% and 46%).",
+      "claim_type": "EXPLICIT",
+      "source": "Upon SETD2 RNAi-depletion, the percentage of U2OS cells with \u22655 foci at 8 hr and 24 hr post-NCS treatment (17% and 30%, respectively) was significantly reduced in comparison to control cells (36% and 46%) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "3c6718cb-78b0-4ec3-8100-5124bce12571",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C57",
+      "claim": "SETD2 has a presynaptic role that promotes the recruitment of RAD51 to resected DNA ends.",
+      "claim_type": "IMPLICIT",
+      "source": "These data establish a presynaptic role of SETD2 that promotes the recruitment of RAD51 to resected DNA ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that RAD51 recruitment is impaired in SETD2-depleted cells despite normal DNA resection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "f4f1c615-7665-4806-bd92-14308fd51fbc",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C58",
+      "claim": "Ectopic expression of I-SceI in DR-GFP reporter cells led to an average cutting efficiency of the I-SceI restriction site located on the inactive GFP gene of 35% (control cells) and 33% (SETD2 RNAi).",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of I-SceI in DR-GFP reporter cells led to an average cutting efficiency of the I-SceI restriction site located on the inactive GFP gene of 35% (control cells) and 33% (SETD2 RNAi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and represents experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "31048d53-ba8b-452b-84fe-06c80c04da89",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C59",
+      "claim": "SETD2-depleted cells exhibited a strong reduction (\u223c50%) in HR without detectable differences in the cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the impaired RAD51 recruitment, SETD2-depleted cells exhibited a strong reduction (\u223c50%) in HR without detectable differences in the cell cycle progression (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "80e2eb7f-5e18-4ffc-b2eb-ed2b1d29a8c9",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C60",
+      "claim": "Induction of DSBs in the ccRCC cells resulted in activation of the DDR in a SETD2-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, induction of DSBs in the ccRCC cells resulted in activation of the DDR in a SETD2-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "3e39d355-e48f-4332-9638-e8c60e0c63ee",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C61",
+      "claim": "Two different SETD2 wild-type (wt) cell lines (RCC-JW and Caki-2) responded to DNA damage with the rapid formation of \u03b3H2AX foci and ATM phosphorylation within the first 30 min of the DDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Two different SETD2 wild-type (wt) cell lines (RCC-JW and Caki-2) responded to DNA damage with the rapid formation of \u03b3H2AX foci and ATM phosphorylation within the first 30 min of the DDR (Figure 6B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 6B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "2ae7a6aa-425e-4d21-9eac-c054e2b69941",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C62",
+      "claim": "DNA repair was significantly impaired in two SETD2 mutant ccRCC cell lines (RCC-MF and RCC-FG2) as revealed by the lack of \u03b3H2AX foci and ATM phosphorylation upon induction of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DNA repair was significantly impaired in two SETD2 mutant ccRCC cell lines (RCC-MF and RCC-FG2) as revealed by the lack of \u03b3H2AX foci and ATM phosphorylation upon induction of DSBs (Figure 6B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 6B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "7474961c-9bff-4a44-9be0-5ab21f5924e8",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C63",
+      "claim": "Defects in the DDR are a hallmark of cancer cells with SETD2 mutations.",
+      "claim_type": "IMPLICIT",
+      "source": "These data recapitulate the phenotype of SETD2 RNAi-depleted U2OS cells and suggest that defects in the DDR are a hallmark of cancer cells with SETD2 mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that multiple SETD2 mutant ccRCC cell lines show impaired DDR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "71e5e0fc-474a-4dbc-b1df-d9dd7650169c",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C64",
+      "claim": "RCC-FG2 had the lowest levels of H3K36me3 and showed the strongest impairment in the DDR signaling as revealed by the lack of detectable pATM and \u03b3H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the SETD2 mutant cell lines, RCC-FG2 had the lowest levels of H3K36me3 and showed the strongest impairment in the DDR signaling as revealed by the lack of detectable pATM and \u03b3H2AX (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "ce71385b-1d89-4bdb-b6f7-038e957a1fa3",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C65",
+      "claim": "Chemical induction of DSBs yielded a similar degree of DNA damage in both SETD2 wt and mutant ccRCC cells, as revealed by the comparable fraction of DNA that migrated away from the nuclei and was detected in the comets tails immediately after etoposide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical induction of DSBs yielded a similar degree of DNA damage in both SETD2 wt and mutant ccRCC cells, as revealed by the comparable fraction of DNA that migrated away from the nuclei and was detected in the comets tails immediately after etoposide treatment (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "703c17a8-e0b0-43f0-8a85-6ad58d1d132d",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C66",
+      "claim": "The amount of fragmented DNA decreased 35% after 3 hr and 45% after 6 hr in the wt cells, which compared to a maximum of 27% reduction observed in mutant cells 6 hr after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these cells differed in their ability to repair the chemically induced DSBs. The amount of fragmented DNA decreased 35% after 3 hr and 45% after 6 hr in the wt cells, which compared to a maximum of 27% reduction observed in mutant cells 6 hr after DNA damage (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "0e873f8e-f129-400c-a7c5-33b32396a530",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C67",
+      "claim": "The impaired DDR observed in SETD2 mutant cells translates into a massive failure to repair DSBs.",
+      "claim_type": "IMPLICIT",
+      "source": "These findings reveal that the impaired DDR observed in SETD2 mutant cells translates into a massive failure to repair DSBs, which is likely to impact severely on genomic stability and may sustain the tumorigenic phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comet assay data showing persistent DNA damage in SETD2 mutant cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "009b8026-49df-4c04-8a39-391b73864341",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C68",
+      "claim": "The failure to repair DSBs in SETD2 mutant cells is likely to impact severely on genomic stability and may sustain the tumorigenic phenotype.",
+      "claim_type": "IMPLICIT",
+      "source": "These findings reveal that the impaired DDR observed in SETD2 mutant cells translates into a massive failure to repair DSBs, which is likely to impact severely on genomic stability and may sustain the tumorigenic phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "6204524b-e4ed-4c37-8124-605a6a9f8e8e",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C69",
+      "claim": "The two SETD2 wt ccRCC cell lines (RCC-JW and Caki-2) responded to DSBs with p53 phosphorylation and increased total p53 protein levels 2 hr after initiating the DDR.",
+      "claim_type": "EXPLICIT",
+      "source": "The two SETD2 wt ccRCC cell lines (RCC-JW and Caki-2) responded to DSBs with p53 phosphorylation and increased total p53 protein levels 2 hr after initiating the DDR (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "f8f52cd1-772a-4b18-9ffb-59f2720aaebd",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C70",
+      "claim": "SETD2 mutant ccRCC cells (RCC-MF and RCC-FG2) evaded the cell cycle checkpoint as revealed by the low levels of p53 phosphorylation and unnoticeable change of its total protein levels despite the persistent DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, despite the persistent DNA damage caused by the impaired DDR, SETD2 mutant ccRCC cells (RCC-MF and RCC-FG2) evaded the cell cycle checkpoint as revealed by the low levels of p53 phosphorylation and unnoticeable change of its total protein levels (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "f5913be1-1163-4d53-9b5c-9120dbfe288e",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C71",
+      "claim": "p21 protein levels rose significantly 2 hr after DNA damage in SETD2 wt cells, but not in their mutant counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, p21 protein levels rose significantly 2 hr after DNA damage in SETD2 wt cells, but not in their mutant counterparts (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e81ff9ad-e2d0-4067-bf9f-22c68527733b",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C72",
+      "claim": "SETD2 RNAi-depleted ccRCC cells phenocopied the severed p53 cell cycle checkpoint observed in SETD2 mutant ccRCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "SETD2 RNAi-depleted ccRCC cells phenocopied the severed p53 cell cycle checkpoint observed in SETD2 mutant ccRCC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 8B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "2ddac589-83bf-4ff6-b5b4-933b2d48a9ec",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C73",
+      "claim": "In response to etoposide, NCS, and phleomycin, control cells increased the total levels of p53 and p21, whereas SETD2-depleted cells failed to activate p53.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to each of the three DNA-damaging agents, control cells increased the total levels of p53 and p21, whereas SETD2-depleted cells failed to activate p53 (Figure 8B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 8B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "2399382e-822e-411b-bba8-73d7579b8da8",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C74",
+      "claim": "After phleomycin treatment, 49% (8 hr) and 46% (12 hr) of control cells were arrested at G1 phase and 34% (8 hr) and 38% (12 hr) stayed in G2 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "After phleomycin treatment, 49% (8 hr) and 46% (12 hr) of control cells were arrested at G1 phase and 34% (8 hr) and 38% (12 hr) stayed in G2 phase (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e1e1b9ee-398b-4fd5-a689-de613b86cf50",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C75",
+      "claim": "Upon SETD2 depletion, only 42% (8 hr) and 34% (12 hr) of cells were arrested in G1 phase, whereas 41% (8 hr) and 48% (12 hr) were at G2 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 42% (8 hr) and 34% (12 hr) of cells were arrested in G1 phase, whereas 41% (8 hr) and 48% (12 hr) were at G2 phase upon SETD2 depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e71a4121-4faf-4c3f-a09b-ecca2ecaf65c",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C76",
+      "claim": "SETD2 depletion leads to a defective G1/S cell-cycle arrest.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggest that SETD2 depletion leads to a defective G1/S cell-cycle arrest, which is in agreement with the deficient activation of p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cell cycle analysis data showing reduced G1 arrest in SETD2-depleted cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "0fa164be-94a4-471c-bc07-dd5951680574",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C77",
+      "claim": "10 days after DNA damage, the colony-forming capacity of control cells was significantly higher than SETD2-depleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "10 days after DNA damage, the colony-forming capacity of control cells was significantly higher than SETD2-depleted cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by experimental data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "6c2f4d4a-7908-4bbc-8fdc-c459c51fde74",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C78",
+      "claim": "SETD2 is a determinant of cell survival after DNA damage.",
+      "claim_type": "IMPLICIT",
+      "source": "This result suggests that SETD2 is a determinant of cell survival after DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the clonogenic survival assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "8966bfdf-9fc9-4e59-a5e3-0ab292bb7650",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C79",
+      "claim": "Ionizing radiation-induced H2AX phosphorylation and recruitment of 53BP1 to DSBs can be carried out by ATM and DNA-dependent protein kinase (DNA-PK) in a redundant manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, ionizing radiation-induced H2AX phosphorylation and recruitment of 53BP1 to DSBs can be carried out by ATM and DNA-dependent protein kinase (DNA-PK) in a redundant manner (Stiff et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to Stiff et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "d59cf167-ce74-4f95-a4db-f1a0cf372474",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C80",
+      "claim": "Ataxia telangiectasia and Rad3-related protein (ATR) can also phosphorylate many of the ATM substrates, including H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ataxia telangiectasia and Rad3-related protein (ATR) can also phosphorylate many of the ATM substrates, including H2AX (Ward and Chen, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to Ward and Chen, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "ea70076f-66dd-4150-bddb-ca888543999f",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C81",
+      "claim": "Lens-epithelium-derived growth factor p75 splice variant (LEDGF) is an H3K36me3-binding protein that promotes the HR repair of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lens-epithelium-derived growth factor p75 splice variant (LEDGF) is an H3K36me3-binding protein that promotes the HR repair of DSBs (Daugaard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to Daugaard et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "cef1327e-79b8-41bf-b7e4-eda1232b33a0",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C82",
+      "claim": "Depletion of LEDGF impairs the recruitment of CtIP and the subsequent DNA 5\u2032 end resection of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of LEDGF impairs the recruitment of CtIP and the subsequent DNA 5\u2032 end resection of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and represents established knowledge from the cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "b3cb8e86-3cb6-4871-b20b-94dfabc57a75",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C83",
+      "claim": "The data supports an extended LEDGF-independent role of SETD2 in the repair of DSBs by HR.",
+      "claim_type": "IMPLICIT",
+      "source": "While defects in LEDGF recruitment to DSBs may account for the impaired HR phenotype that we report in SETD2 deficient cells, our data supports an extended LEDGF-independent role of SETD2 in the repair of DSBs by HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that DNA resection is not impaired in SETD2-depleted cells, unlike in LEDGF-depleted cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "acdcf207-ca44-4195-a063-53546c1115c9",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C84",
+      "claim": "H3K36me3 defines a local chromatin state that favors the recruitment of RAD51 to DSBs and successful HR repair.",
+      "claim_type": "IMPLICIT",
+      "source": "One possibility is that H3K36me3 defines a local chromatin state that favors the recruitment of RAD51 to DSBs and successful HR repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "ff93dd75-bf79-4ed5-a064-2fce3ed92db7",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C85",
+      "claim": "Depletion of the FACT subunit SPT16 results in a major impairment of HR.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this view, depletion of the FACT subunit SPT16 results in a major impairment of HR (Kari et al., 2011; Oliveira et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations to Kari et al., 2011 and Oliveira et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "13c81947-f4c6-4a47-adea-85458122b77b",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C86",
+      "claim": "FACT is required to recruit the ubiquitin ligase RNF20, which in turn facilitates RAD51 accumulation at DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "FACT is required to recruit the ubiquitin ligase RNF20, which in turn facilitates RAD51 accumulation at DSBs (Oliveira et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to Oliveira et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "f03c49e0-bc64-40ec-87c6-1239ce16b6cd",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C87",
+      "claim": "Histone acetyltransferase 1 (HAT1) promotes acetylation of histone H4, as well as incorporation of histone variant H3.3 at DSBs and facilitates RAD51 recruitment and efficient HR repair.",
+      "claim_type": "EXPLICIT",
+      "source": "The view that changes in chromatin dynamics may affect RAD51 function is not completely unexpected as illustrated by the role of the histone acetyltransferase 1 (HAT1) in RAD51 during HR (Yang et al., 2013). HAT1 promotes acetylation of histone H4, as well as incorporation of histone variant H3.3 at DSBs and facilitates RAD51 recruitment and efficient HR repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to Yang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "40af0580-82ee-48a6-8511-17f94662e8f4",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C88",
+      "claim": "The impaired formation of RAD51 filaments and HR may result from disrupted gene expression of key DNA repair factors due to SETD2's impact on RNA polymerase II transcription and pre-mRNA processing.",
+      "claim_type": "IMPLICIT",
+      "source": "Nevertheless, the major impact of SETD2 on RNA polymerase II transcription and pre-mRNA processing that others and we have previously described (reviewed in de Almeida and Carmo-Fonseca, 2014) discloses the alternative possibility that the impaired formation of RAD51 filaments and HR may result from disrupted gene expression of key DNA repair factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation mentioned in the discussion.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "ca986b0b-000f-45a2-894e-a509cbd94106",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C89",
+      "claim": "There is no evidence of increased H3K36me3 levels at the DNA damage sites or of a DDR-dependent recruitment of SETD2 to DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike all histone modifications found to promote the DDR, previous studies (Pei et al., 2011) and our data show no evidence of increased H3K36me3 levels at the DNA damage sites or of a DDR-dependent recruitment of SETD2 to DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the experimental data and a citation to Pei et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "5be73e35-e63b-4db5-b0d1-3a9870154f3d",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C90",
+      "claim": "SETD2 has an unprecedented role in priming intact chromatin for the response to DNA damage.",
+      "claim_type": "IMPLICIT",
+      "source": "These findings disclose an unprecedented role for a histone-modifying enzyme in priming intact chromatin for the response to DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that SETD2 is not recruited to damage sites but is still required for DDR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "9baf1d55-e157-4a99-a1d2-dac2f4a46ee9",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C91",
+      "claim": "Lysine 36 on the N-terminal tail of histone H3 does not protrude from the nucleosome core but is hidden by the DNA double strand that wraps the histone octameric core.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a careful inspection of the nucleosome structure reveals that lysine 36 on the N-terminal tail of histone H3 does not protrude from the nucleosome core. Instead, this lysine is hidden by the DNA double strand that wraps the histone octameric core (Luger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to Luger et al., 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "aedc5943-75c0-466e-ac8f-f74a3f27ced2",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C92",
+      "claim": "While the first 26 N-terminal residues of histone H3 were greatly sensitive to trypsin digestion, H3K36 was resistant to the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "This sheltered location was first described three decades ago, when Crane\u2013Robinson et al. investigated the accessibility of the histone-terminal domains to proteases. Their experiments revealed that while the first 26 N-terminal residues of histone H3 were greatly sensitive to trypsin digestion, H3K36 was resistant to the enzyme (Bohm et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to Bohm et al., 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "7fef133e-6eac-4f66-990a-24b26cda6522",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C93",
+      "claim": "According to the 'break and access model', DNA damage exposes H3K36me3, which then contributes together with a set of well-defined histone modifications to the orchestration of the chromatin landscape that drives the initial recruitment and activation of DDR factors, such as ATM.",
+      "claim_type": "IMPLICIT",
+      "source": "According to this 'break and access model' DNA damage exposes H3K36me3, which then contributes together with a set of well-defined histone modifications to the orchestration of the chromatin landscape that drives the initial recruitment and activation of DDR factors, such as ATM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed in the discussion to explain the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "72f4514c-cbb0-40ea-990b-b11966713050",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C94",
+      "claim": "Most H3K36me3 is found at actively transcribed chromatin where it signals the recruitment of the histone chaperone FACT to reassemble nucleosomes in the wake of RNA polymerase II elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, most H3K36me3 is found at actively transcribed chromatin where it signals the recruitment of the histone chaperone FACT to reassemble nucleosomes in the wake of RNA polymerase II elongation (Carvalho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation to Carvalho et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "6ced9f7f-fac7-4e1d-b097-8a51552b3c4c",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C95",
+      "claim": "Should a DSB amputate a coding region, exposure of H3K36me3 previously deposited by SETD2 traveling with the transcriptional machinery may promote DNA repair by HR and would guarantee the integrity of the genetic information.",
+      "claim_type": "IMPLICIT",
+      "source": "Should a DSB amputate a coding region, exposure of H3K36me3 previously deposited by SETD2 traveling with the transcriptional machinery may promote DNA repair by HR and would guarantee the integrity of the genetic information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the role of H3K36me3 in DNA repair at coding regions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "987347a8-d377-46dc-8b0e-91751e83420a",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C96",
+      "claim": "ccRCC shows the highest SETD2 mutation rate among all cancers on which SETD2 mutations have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "From all cancers on which SETD2 mutations have been reported, ccRCC shows the highest mutation rate (Dalgliesh et al., 2010; Varela et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations to Dalgliesh et al., 2010 and Varela et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "143eeb79-da03-44bb-87e7-1bc861c996f4",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C97",
+      "claim": "SETD2 mutant ccRCC cells have impaired DDR signaling which leads to inefficient repair of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our present findings reveal that SETD2 mutant ccRCC cells have impaired DDR signaling which leads to inefficient repair of DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by experimental data in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "ed13cac3-2817-4f3d-aa02-2a8a5597370d",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C98",
+      "claim": "The p53-dependent cell cycle checkpoint is not activated in SETD2-deficient cells despite the persistence of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the p53-dependent cell cycle checkpoint is not activated in SETD2-deficient cells despite the persistence of DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by experimental data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "62e28b62-585f-4473-8512-8a8b2eed9e94",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C99",
+      "claim": "Depletion of SETD2 abrogates p53 activation, and leads to eviction of the G1/S checkpoint upon DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of SETD2 abrogates p53 activation, and leads to eviction of the G1/S checkpoint upon DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by experimental data in Figures 8 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "b91302de-8ac8-4679-8f3c-98a099f5469d",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C100",
+      "claim": "SETD2 may impinge directly on p53 activity and activation of its downstream targets through direct protein\u2013protein interactions.",
+      "claim_type": "IMPLICIT",
+      "source": "In addition to the defects in the DNA damage signaling that we found in SETD2-depleted cells, which could extend to improper p53 activation, it is also possible that SETD2 impinges directly on p53 activity and activation of its downstream targets through direct protein\u2013protein interactions (Xie et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation mentioned in the discussion and supported by a citation to Xie et al., 2008.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "ba177205-442e-44e6-864e-b25782683815",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C101",
+      "claim": "In the absence of SETD2, the capacity for clonogenic survival following DNA damage is significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the absence of SETD2, the capacity for clonogenic survival following DNA damage is significantly reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by experimental data in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "3f3811e9-bd2f-4bbf-8856-6051721b4271",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C102",
+      "claim": "SETD2 integrates into the p53 regulatory network.",
+      "claim_type": "IMPLICIT",
+      "source": "These findings integrate SETD2 into the p53 regulatory network and provide a reasonable explanation for the intriguing observation that inactivation of this master regulator of cell cycle checkpoints in ccRCC is rarely caused by mutations in TP53 (Gurova et al., 2004; Dalgliesh et al., 2010; Sato et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings showing SETD2's role in p53 activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "3f50cb50-da35-45a4-b0c5-0936820b1feb",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C103",
+      "claim": "Mutation rates and genomic instabilities in cancer are directly related to aberrant histone modifications and chromatin organization.",
+      "claim_type": "EXPLICIT",
+      "source": "A plethora of recent studies have revealed that mutation rates and genomic instabilities in cancer are directly related to aberrant histone modifications and chromatin organization, underscoring the importance of the histone code in maintaining genome stability (Lukas et al., 2011; Papamichos-Chronakis and Peterson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations to Lukas et al., 2011 and Papamichos-Chronakis and Peterson, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "05c5fbda-7cf3-471b-a326-00cf745967ab",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C104",
+      "claim": "In ccRCC, a high rate of genomic alterations occurs in parallel to inactivating mutations and deletions of histone modifiers, such as SETD2.",
+      "claim_type": "EXPLICIT",
+      "source": "CcRCC is an example of a cancer, where a high rate of genomic alterations occurs in parallel to inactivating mutations and deletions of histone modifiers, such as SETD2 (Cancer Genome Atlas Research, 2013; Sato et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations to Cancer Genome Atlas Research, 2013 and Sato et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "ef6c0264-b28f-4ce3-b55e-d49339ab7b22",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C105",
+      "claim": "The findings endorse the classification of SETD2 as a tumor suppressor.",
+      "claim_type": "IMPLICIT",
+      "source": "Our findings endorse the classification of SETD2 as a tumor suppressor and place inactivating mutations in this histone modifier at the peak of a harmful cascade of events that may ultimately drive malignant cell transformation and tumor development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings showing SETD2's role in DNA repair and p53 activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "adcb932c-f2ae-45da-9bce-5db03f6ccac3",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "claim_id": "C106",
+      "claim": "Inactivating mutations in SETD2 may ultimately drive malignant cell transformation and tumor development.",
+      "claim_type": "IMPLICIT",
+      "source": "Our findings endorse the classification of SETD2 as a tumor suppressor and place inactivating mutations in this histone modifier at the peak of a harmful cascade of events that may ultimately drive malignant cell transformation and tumor development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SETD2 depletion impairs ATM activation and downstream signaling following DNA double-strand breaks induced by etoposide, NCS, and phleomycin. SETD2 RNAi resulted in global loss of H3K36me3 that persisted throughout the DDR, while H3K36me3 levels remained constant in control cells. SETD2-depleted cells showed decreased pATM levels and reduced phosphorylation of H2AX and 53BP1, with the effect varying by DNA-damaging agent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C21, C28-C35 are supported by Western blot data in Figure 1A-C showing reduced pATM, pH2AX, and p53BP1 in SETD2-depleted cells across multiple DNA-damaging agents. The data consistently demonstrate impaired ATM activation upon SETD2 depletion, though the magnitude of effect varies by agent (particularly phleomycin shows milder effects).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "53BP1 recruitment to laser-induced DNA damage sites is delayed in SETD2-depleted cells, while SETD2 itself is not recruited to damage sites. Co-immunoprecipitation experiments demonstrate that H3K36me3 and 53BP1 are present in the same nucleosomes that acquire \u03b3H2AX upon DNA damage, suggesting H3K36me3 contributes to establishing chromatin states that coordinate DDR factor recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C46 are supported by live-cell imaging data (Figure 2A) showing delayed 53BP1-GFP recruitment in SETD2-depleted cells, and co-immunoprecipitation data (Figure 2F) demonstrating that H3K36me3, 53BP1, and \u03b3H2AX co-localize in nucleosomes after DNA damage. The lack of SETD2-GFP accumulation at damage sites (Figure 2D) supports the novel finding that SETD2 primes chromatin without being actively recruited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "3190ea96-96ff-494e-a1a4-3080daf9b62a",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SETD2 depletion leads to persistent DNA 5' end resection at DSBs. Quantitative PCR measurements showed reduced DNA levels at multiple distances from the I-SceI cleavage site in SETD2-depleted cells. RPA phosphorylation and foci formation occurred normally in SETD2-depleted cells, suggesting RPA recruitment is independent of SETD2 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 are supported by qPCR data (Figure 3A) showing 47-53% reduction in DNA levels at various distances from the I-SceI site, Western blot data (Figure 3B) showing pRPA accumulation, and immunofluorescence (Figure 3C) showing comparable RPA foci in control and SETD2-depleted cells. The data consistently demonstrate increased DNA resection despite impaired ATM signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "0bd579ff-1872-4343-b295-47fdaf1948cb",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SETD2 is required for RAD51 recruitment to DSBs but not for BRCA1 recruitment. SETD2-depleted cells showed significantly reduced RAD51 foci formation (17% vs 36% at 8hr, 30% vs 46% at 24hr) while BRCA1 foci formation was unaffected, establishing a presynaptic role for SETD2 in promoting RAD51 recruitment to resected DNA ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by immunofluorescence data (Figures 4A-B) showing normal BRCA1 foci but significantly reduced RAD51 foci in SETD2-depleted cells. The statistical significance (p<0.0001) and consistency across time points support the conclusion that SETD2 has a specific role in RAD51 recruitment downstream of DNA resection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "0a790f33-1838-4147-be9b-16d0dacd89fc",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SETD2 depletion results in approximately 50% reduction in homologous recombination repair efficiency as measured by the DR-GFP reporter assay, without affecting cell cycle progression. This impairment is consistent with the defective RAD51 recruitment observed in SETD2-depleted cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22-C23, C58-C59 are supported by DR-GFP reporter data (Figure 5A) showing ~50% reduction in HR efficiency in SETD2-depleted cells with similar I-SceI cutting efficiency (35% vs 33%). Flow cytometry data (Figure 5B) confirms no cell cycle differences, ruling out this as a confounding factor. The magnitude and consistency of the effect support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "42a5f7c7-1ba6-4309-9ae8-f5ed9dc30be7",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SETD2-mutant ccRCC cell lines (RCC-MF and RCC-FG2) display impaired DNA damage response compared to SETD2 wild-type ccRCC cells (RCC-JW and Caki-2). Mutant cells showed lack of \u03b3H2AX foci and ATM phosphorylation upon DSB induction, phenocopying SETD2 RNAi-depleted cells and suggesting DDR defects are a hallmark of SETD2 mutations in cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26, C60-C64 are supported by immunofluorescence (Figure 6B) and Western blot data (Figures 6C-D) comparing SETD2 wt and mutant ccRCC cell lines. Multiple mutant cell lines consistently show impaired DDR, with RCC-FG2 (lowest H3K36me3) showing strongest impairment. The consistency across multiple independent cell lines with different SETD2 mutations strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "c448f201-25a7-4ea8-8b5a-fc3c548bda4a",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SETD2 mutant ccRCC cells show massive failure to repair DSBs despite similar initial DNA damage levels. Comet assays revealed that SETD2 wt cells repaired 45% of DNA damage by 6hr, while mutant cells repaired only 27%, indicating the impaired DDR translates into persistent unrepaired DNA lesions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by comet assay data (Figure 7) showing comparable initial damage but significantly different repair kinetics between SETD2 wt and mutant cells. The quantitative measurements and statistical significance (p<0.01, p<0.0001) support the conclusion. However, C68 regarding impact on genomic stability and tumorigenesis is speculative and not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SETD2-deficient cells fail to activate p53 and its downstream target p21 despite persistent DNA damage, resulting in evasion of the p53-mediated cell cycle checkpoint. This phenotype is observed in both SETD2 mutant ccRCC cells and SETD2 RNAi-depleted cells across multiple DNA-damaging agents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27, C69-C73, C98-C99 are supported by Western blot data (Figure 8A-D) showing lack of p53 phosphorylation and p21 induction in SETD2-deficient cells despite DNA damage. The consistency across mutant cell lines, RNAi-depleted cells, and multiple DNA-damaging agents provides strong support. The data directly demonstrate checkpoint evasion despite persistent DNA lesions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "64cb143b-3a11-4803-aeaf-2bd7a79e5be2",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SETD2 depletion leads to defective G1/S cell cycle arrest following DNA damage. Flow cytometry analysis showed reduced G1 arrest (42% vs 49% at 8hr, 34% vs 46% at 12hr) and increased G2 accumulation in SETD2-depleted cells compared to controls after phleomycin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are supported by flow cytometry data (Figure 9A) showing statistically significant differences in cell cycle distribution after DNA damage. The reduced G1 arrest is consistent with the impaired p53 activation observed in C69-C73. However, the differences are modest and the biological significance could be questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "0725193d-8906-42fb-8273-51d4bbc91f92",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SETD2 depletion significantly reduces clonogenic survival following DNA damage. Colony formation assays showed dose-dependent reduction in survival of SETD2-depleted cells compared to controls 10 days after phleomycin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C77-C78, C101 are supported by clonogenic survival data (Figure 9B) showing reduced colony formation in SETD2-depleted cells across multiple phleomycin concentrations. The data demonstrate functional consequences of SETD2 loss on cell survival after DNA damage, though the mechanism (checkpoint failure vs repair deficiency) is not definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "0b3b1352-3ab2-4e90-8b05-330ac3c1f475",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Loss of SETD2 may provide an alternative mechanism for inactivating the p53-mediated checkpoint in ccRCC without requiring TP53 mutations. The findings support classification of SETD2 as a tumor suppressor, with inactivating mutations potentially driving malignant transformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C25, C102, C105-C106 represent interpretations and speculations based on the experimental findings. While C25 correctly cites that p53 checkpoint is frequently inactivated in ccRCC despite rare TP53 mutations, and the data support SETD2's role in p53 activation, the causal link to tumorigenesis (C106) is speculative. The tumor suppressor classification (C105) is reasonable but requires additional functional validation beyond the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "a16c91cf-dceb-4f51-b3f4-5e5d36ff50df",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SETD2 is the enzyme responsible for all H3K36 trimethylation and acts as a determinant of chromatin integrity. Previous work established that SETD2 regulates nucleosome dynamics during transcription and is necessary for DNA mismatch repair through H3K36me3-dependent recruitment of MutS\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C17-C20 are background claims supported by established literature (Edmunds et al. 2008, Carvalho et al. 2013, Li et al. 2013) and confirmed by the current study's demonstration that SETD2 RNAi eliminates H3K36me3. These are well-established facts that provide context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "e12c3750-0f54-4def-9dc7-80b80b166ffb",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on DNA double-strand break repair pathways: DSBs are repaired through NHEJ (error-prone, available throughout cell cycle) or HR (error-free, requires homologous template). ATM is the major DSB sensor that phosphorylates substrates including H2AX and 53BP1. \u03b3H2AX recruits DDR factors to repair centers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 are established background knowledge supported by cited literature (Matsuoka et al. 2007, Chapman et al. 2012, Lieber 2010, San Filippo et al. 2008, Lukas et al. 2011). These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "7464c151-9b8d-44fc-a261-2166f33e0b20",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Alternative pathways for H2AX phosphorylation and 53BP1 recruitment exist (DNA-PK, ATR can compensate for ATM). LEDGF is an H3K36me3-binding protein that promotes HR repair through CtIP recruitment, but the data support an extended LEDGF-independent role for SETD2 in HR since DNA resection is not impaired in SETD2-depleted cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 combine cited literature (Stiff et al. 2004, Ward and Chen 2001, Daugaard et al. 2012) with interpretation of the current data. C83 is a reasonable inference since SETD2-depleted cells show increased DNA resection (unlike LEDGF-depleted cells) but impaired RAD51 recruitment, suggesting a distinct mechanism. The logic is sound though the LEDGF-independent mechanism is not fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "110c0a4b-48d5-40af-9e97-de70e66566ad",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Potential mechanisms for SETD2's role in RAD51 recruitment include: H3K36me3 defining chromatin states that favor RAD51 recruitment, possibly through FACT-mediated chromatin remodeling and RNF20 recruitment, or through effects on gene expression of DNA repair factors via SETD2's role in transcription and RNA processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C88 are speculative mechanistic interpretations supported by cited literature (Kari et al. 2011, Oliveira et al. 2014, Yang et al. 2013) but not directly tested in this study. While the cited connections to FACT and HAT1 are reasonable analogies, and SETD2's transcriptional role is established, these remain hypotheses requiring experimental validation. The authors appropriately present these as possibilities rather than conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "34e9dcb0-8de2-4044-b942-0746729b24ab",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SETD2 has an unprecedented role in priming intact chromatin for DNA damage response without being recruited to damage sites. The 'break and access model' proposes that H3K36 is normally hidden within the nucleosome core but becomes exposed upon DNA damage, allowing H3K36me3 to contribute to DDR factor recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 combine experimental observations (C89: no SETD2 recruitment or H3K36me3 increase at damage sites, supported by Figures 1-2 and Pei et al. 2011) with structural knowledge (C91-C92: H3K36 location in nucleosome, supported by Luger et al. 1997 and Bohm et al. 1981) to propose a novel model (C93). The model is speculative but logically consistent with the data and provides a mechanistic framework. The unprecedented nature of this priming role is a significant conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "2ca2c9c8-c17d-4dad-ab07-adffd6b23844",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "H3K36me3 is enriched at actively transcribed chromatin where it recruits FACT for nucleosome reassembly. The authors speculate that DSBs in coding regions would expose pre-existing H3K36me3 deposited during transcription, promoting HR repair to maintain genetic integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C94 is supported by cited literature (Carvalho et al. 2013) establishing H3K36me3 enrichment at transcribed regions. Claim C95 is speculative extrapolation about the functional significance of this distribution for DSB repair in coding regions. While logical, this hypothesis is not directly tested and represents future work rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "29220c46-e9dc-4602-928a-ec71fd6c8a65",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SETD2 mutations occur in multiple cancers with ccRCC showing the highest mutation rate. Mutation rates and genomic instability in cancer are linked to aberrant histone modifications. In ccRCC, high genomic alteration rates occur alongside SETD2 mutations, and the current findings reveal that SETD2 mutant ccRCC cells have impaired DDR leading to inefficient DNA repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C96-C97, C103-C104 combine established literature on SETD2 mutations in cancer (Dalgliesh et al. 2010, Varela et al. 2011, Cancer Genome Atlas 2013) with the current study's findings on DDR impairment in SETD2 mutant cells. The connection between SETD2 mutations and DDR defects is directly demonstrated (Figures 6-7), providing a functional link between the genetic and phenotypic observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    },
+    {
+      "id": "31df2aff-225a-492d-bae4-3c37ccf4f22d",
+      "content_id": "6d4bbb94-6f0a-4aa3-90b1-051a28ed6238",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "SETD2 may impinge directly on p53 activity through protein-protein interactions in addition to effects on DNA damage signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 is speculative, citing Xie et al. 2008 for potential direct SETD2-p53 interactions. While this is a reasonable alternative mechanism to explain the p53 activation defect, it is not tested in the current study. The impaired ATM activation provides a sufficient explanation for the p53 phenotype without requiring direct interactions, though both mechanisms could contribute.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:52.583421Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a46b3a95-c26b-4512-ac16-8f806148aaed",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "bf006aed-a22c-4fbc-b8fe-b9a5274f9a25",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "e4f8a783-0c85-411e-83a8-9f8e967e7f9f",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "8fe58afe-2ce2-4682-8f59-18735b745394",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "1148952c-9554-447f-99c6-c85778357525",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "1d23be0b-8f84-45cb-91da-9b85fd625c48",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "12414f3a-7433-448d-b100-91bca9030670",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "545243ad-f3f7-41a3-bf3c-4d94a71de61d",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "9841d453-ccbb-4f63-9253-dabf2c7f8cc7",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "45be322d-f3cd-4b62-a646-9c7195e2b3b2",
+      "result_id": "56b15ad3-ff6c-42e6-bd51-563d1977fa62"
+    },
+    {
+      "claim_id": "5cb81774-4e4e-4692-87c2-9cb94d90b6a0",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "926d1254-018f-4645-88e2-8f98dd3d0ff2",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "661f0f54-a1a7-497a-8141-a685b013a252",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "6717645e-fb67-4d1e-b796-50fdebfc1523",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "8976a465-7806-4226-9ebc-a3cde5b1faf7",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "e9e4fced-36e1-4eea-a7bf-c79342068014",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "06745396-6c1c-4b20-8e5a-2bd21a072121",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "96d9dd19-0145-4cfe-b875-45d2f1964ce2",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "c39beb4b-2e1a-4fad-a744-91b98edee1f6",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "947c791d-62b7-4bb8-837e-1d83882875f0",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "4d1894d8-0c46-4f08-8af7-bf0ab491e362",
+      "result_id": "7e22ecd3-6d26-4ab5-bfb4-63ad3af0748b"
+    },
+    {
+      "claim_id": "fd4fb0fb-f816-48d8-a600-fb3053d9904c",
+      "result_id": "3190ea96-96ff-494e-a1a4-3080daf9b62a"
+    },
+    {
+      "claim_id": "4edba7a2-7e2c-4a72-81ea-65484c92661a",
+      "result_id": "3190ea96-96ff-494e-a1a4-3080daf9b62a"
+    },
+    {
+      "claim_id": "a16ca7aa-518a-4caf-b338-57f48cea3bb6",
+      "result_id": "3190ea96-96ff-494e-a1a4-3080daf9b62a"
+    },
+    {
+      "claim_id": "6ca0fa44-0b8f-42a7-b518-07700fc2e0cc",
+      "result_id": "3190ea96-96ff-494e-a1a4-3080daf9b62a"
+    },
+    {
+      "claim_id": "7dfdd053-3ed7-47af-beb9-a37d6b7881f5",
+      "result_id": "3190ea96-96ff-494e-a1a4-3080daf9b62a"
+    },
+    {
+      "claim_id": "d7645d62-de4e-47b0-a2f4-875c487d3b3a",
+      "result_id": "3190ea96-96ff-494e-a1a4-3080daf9b62a"
+    },
+    {
+      "claim_id": "76d03093-84e4-49f0-8d02-7fb33a34658c",
+      "result_id": "0bd579ff-1872-4343-b295-47fdaf1948cb"
+    },
+    {
+      "claim_id": "53742542-882f-49e1-b6e4-21295bae2393",
+      "result_id": "0bd579ff-1872-4343-b295-47fdaf1948cb"
+    },
+    {
+      "claim_id": "edc8ecb4-2bf2-41e0-b98b-d5931237bc01",
+      "result_id": "0bd579ff-1872-4343-b295-47fdaf1948cb"
+    },
+    {
+      "claim_id": "caa7a4e1-149b-4886-9501-e8ecd23f8593",
+      "result_id": "0bd579ff-1872-4343-b295-47fdaf1948cb"
+    },
+    {
+      "claim_id": "3c6718cb-78b0-4ec3-8100-5124bce12571",
+      "result_id": "0bd579ff-1872-4343-b295-47fdaf1948cb"
+    },
+    {
+      "claim_id": "92acd947-5def-4279-953f-849c79bffd52",
+      "result_id": "0a790f33-1838-4147-be9b-16d0dacd89fc"
+    },
+    {
+      "claim_id": "15c89fd2-c95e-442f-8192-00403402d137",
+      "result_id": "0a790f33-1838-4147-be9b-16d0dacd89fc"
+    },
+    {
+      "claim_id": "13f7c7f3-4b1c-46e3-a12e-07c805a629c6",
+      "result_id": "0a790f33-1838-4147-be9b-16d0dacd89fc"
+    },
+    {
+      "claim_id": "f4f1c615-7665-4806-bd92-14308fd51fbc",
+      "result_id": "0a790f33-1838-4147-be9b-16d0dacd89fc"
+    },
+    {
+      "claim_id": "31048d53-ba8b-452b-84fe-06c80c04da89",
+      "result_id": "0a790f33-1838-4147-be9b-16d0dacd89fc"
+    },
+    {
+      "claim_id": "63e4fb2b-0832-4097-866e-cab6b0739339",
+      "result_id": "42a5f7c7-1ba6-4309-9ae8-f5ed9dc30be7"
+    },
+    {
+      "claim_id": "e7313d64-52a3-4cfd-aa1a-329f58745bc3",
+      "result_id": "42a5f7c7-1ba6-4309-9ae8-f5ed9dc30be7"
+    },
+    {
+      "claim_id": "80e2eb7f-5e18-4ffc-b2eb-ed2b1d29a8c9",
+      "result_id": "42a5f7c7-1ba6-4309-9ae8-f5ed9dc30be7"
+    },
+    {
+      "claim_id": "3e39d355-e48f-4332-9638-e8c60e0c63ee",
+      "result_id": "42a5f7c7-1ba6-4309-9ae8-f5ed9dc30be7"
+    },
+    {
+      "claim_id": "2ae7a6aa-425e-4d21-9eac-c054e2b69941",
+      "result_id": "42a5f7c7-1ba6-4309-9ae8-f5ed9dc30be7"
+    },
+    {
+      "claim_id": "7474961c-9bff-4a44-9be0-5ab21f5924e8",
+      "result_id": "42a5f7c7-1ba6-4309-9ae8-f5ed9dc30be7"
+    },
+    {
+      "claim_id": "71e5e0fc-474a-4dbc-b1df-d9dd7650169c",
+      "result_id": "42a5f7c7-1ba6-4309-9ae8-f5ed9dc30be7"
+    },
+    {
+      "claim_id": "ce71385b-1d89-4bdb-b6f7-038e957a1fa3",
+      "result_id": "c448f201-25a7-4ea8-8b5a-fc3c548bda4a"
+    },
+    {
+      "claim_id": "703c17a8-e0b0-43f0-8a85-6ad58d1d132d",
+      "result_id": "c448f201-25a7-4ea8-8b5a-fc3c548bda4a"
+    },
+    {
+      "claim_id": "0e873f8e-f129-400c-a7c5-33b32396a530",
+      "result_id": "c448f201-25a7-4ea8-8b5a-fc3c548bda4a"
+    },
+    {
+      "claim_id": "009b8026-49df-4c04-8a39-391b73864341",
+      "result_id": "c448f201-25a7-4ea8-8b5a-fc3c548bda4a"
+    },
+    {
+      "claim_id": "a99a02d6-7cfa-460b-98cd-ca17d3373110",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "78867ba1-ad17-45f1-95b7-4ed55c9cd00c",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "6204524b-e4ed-4c37-8124-605a6a9f8e8e",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "f8f52cd1-772a-4b18-9ffb-59f2720aaebd",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "f5913be1-1163-4d53-9b5c-9120dbfe288e",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "e81ff9ad-e2d0-4067-bf9f-22c68527733b",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "2ddac589-83bf-4ff6-b5b4-933b2d48a9ec",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "ed13cac3-2817-4f3d-aa02-2a8a5597370d",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "62e28b62-585f-4473-8512-8a8b2eed9e94",
+      "result_id": "d6990cfa-7a82-4268-9eda-50b71a1efc3f"
+    },
+    {
+      "claim_id": "2399382e-822e-411b-bba8-73d7579b8da8",
+      "result_id": "64cb143b-3a11-4803-aeaf-2bd7a79e5be2"
+    },
+    {
+      "claim_id": "e1e1b9ee-398b-4fd5-a689-de613b86cf50",
+      "result_id": "64cb143b-3a11-4803-aeaf-2bd7a79e5be2"
+    },
+    {
+      "claim_id": "e71a4121-4faf-4c3f-a09b-ecca2ecaf65c",
+      "result_id": "64cb143b-3a11-4803-aeaf-2bd7a79e5be2"
+    },
+    {
+      "claim_id": "3bcdd7b1-0423-4db2-94c3-8660ae645f2e",
+      "result_id": "0725193d-8906-42fb-8273-51d4bbc91f92"
+    },
+    {
+      "claim_id": "0fa164be-94a4-471c-bc07-dd5951680574",
+      "result_id": "0725193d-8906-42fb-8273-51d4bbc91f92"
+    },
+    {
+      "claim_id": "6c2f4d4a-7908-4bbc-8fdc-c459c51fde74",
+      "result_id": "0725193d-8906-42fb-8273-51d4bbc91f92"
+    },
+    {
+      "claim_id": "ba177205-442e-44e6-864e-b25782683815",
+      "result_id": "0725193d-8906-42fb-8273-51d4bbc91f92"
+    },
+    {
+      "claim_id": "cec1eeca-ed01-41b2-942a-120d8c40ac81",
+      "result_id": "0b3b1352-3ab2-4e90-8b05-330ac3c1f475"
+    },
+    {
+      "claim_id": "e3dd198e-79bc-4b16-8315-807b98d66569",
+      "result_id": "0b3b1352-3ab2-4e90-8b05-330ac3c1f475"
+    },
+    {
+      "claim_id": "3f3811e9-bd2f-4bbf-8856-6051721b4271",
+      "result_id": "0b3b1352-3ab2-4e90-8b05-330ac3c1f475"
+    },
+    {
+      "claim_id": "ef6c0264-b28f-4ce3-b55e-d49339ab7b22",
+      "result_id": "0b3b1352-3ab2-4e90-8b05-330ac3c1f475"
+    },
+    {
+      "claim_id": "adcb932c-f2ae-45da-9bce-5db03f6ccac3",
+      "result_id": "0b3b1352-3ab2-4e90-8b05-330ac3c1f475"
+    },
+    {
+      "claim_id": "d5d8b2d8-f63b-4db0-bdf1-d217432c55b5",
+      "result_id": "a16c91cf-dceb-4f51-b3f4-5e5d36ff50df"
+    },
+    {
+      "claim_id": "f1a8d1c6-7b29-439e-af60-16256b19191f",
+      "result_id": "a16c91cf-dceb-4f51-b3f4-5e5d36ff50df"
+    },
+    {
+      "claim_id": "1d31b891-6296-4656-bf2d-dd2d1a90b660",
+      "result_id": "a16c91cf-dceb-4f51-b3f4-5e5d36ff50df"
+    },
+    {
+      "claim_id": "7b36d455-8f2c-4b5e-aeec-cd527540ca5a",
+      "result_id": "a16c91cf-dceb-4f51-b3f4-5e5d36ff50df"
+    },
+    {
+      "claim_id": "41e8b3cc-a7b5-4758-8343-1fba04d66993",
+      "result_id": "a16c91cf-dceb-4f51-b3f4-5e5d36ff50df"
+    },
+    {
+      "claim_id": "e81ef60c-e03b-438c-a093-72e916a6f077",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "e862698e-31cc-4cb6-bfa8-d13befef1e25",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "9b787775-17fc-4974-b33c-acc9b04ef960",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "0f126841-05ce-4806-babf-403204da2fb7",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "af4364fb-d722-4428-83c8-94fee2fb5799",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "c47aeb8e-f510-4eb1-a5c7-7a9537954d08",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "8081d809-2813-4c54-b348-ec46dca85150",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "d41e4868-98d7-4193-be55-fa3ae2046234",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "d0bbe701-c417-4877-afed-f4716f0e90a4",
+      "result_id": "e12c3750-0f54-4def-9dc7-80b80b166ffb"
+    },
+    {
+      "claim_id": "8966bfdf-9fc9-4e59-a5e3-0ab292bb7650",
+      "result_id": "7464c151-9b8d-44fc-a261-2166f33e0b20"
+    },
+    {
+      "claim_id": "d59cf167-ce74-4f95-a4db-f1a0cf372474",
+      "result_id": "7464c151-9b8d-44fc-a261-2166f33e0b20"
+    },
+    {
+      "claim_id": "ea70076f-66dd-4150-bddb-ca888543999f",
+      "result_id": "7464c151-9b8d-44fc-a261-2166f33e0b20"
+    },
+    {
+      "claim_id": "cef1327e-79b8-41bf-b7e4-eda1232b33a0",
+      "result_id": "7464c151-9b8d-44fc-a261-2166f33e0b20"
+    },
+    {
+      "claim_id": "b3cb8e86-3cb6-4871-b20b-94dfabc57a75",
+      "result_id": "7464c151-9b8d-44fc-a261-2166f33e0b20"
+    },
+    {
+      "claim_id": "acdcf207-ca44-4195-a063-53546c1115c9",
+      "result_id": "110c0a4b-48d5-40af-9e97-de70e66566ad"
+    },
+    {
+      "claim_id": "ff93dd75-bf79-4ed5-a064-2fce3ed92db7",
+      "result_id": "110c0a4b-48d5-40af-9e97-de70e66566ad"
+    },
+    {
+      "claim_id": "13c81947-f4c6-4a47-adea-85458122b77b",
+      "result_id": "110c0a4b-48d5-40af-9e97-de70e66566ad"
+    },
+    {
+      "claim_id": "f03c49e0-bc64-40ec-87c6-1239ce16b6cd",
+      "result_id": "110c0a4b-48d5-40af-9e97-de70e66566ad"
+    },
+    {
+      "claim_id": "40af0580-82ee-48a6-8511-17f94662e8f4",
+      "result_id": "110c0a4b-48d5-40af-9e97-de70e66566ad"
+    },
+    {
+      "claim_id": "ca986b0b-000f-45a2-894e-a509cbd94106",
+      "result_id": "34e9dcb0-8de2-4044-b942-0746729b24ab"
+    },
+    {
+      "claim_id": "5be73e35-e63b-4db5-b0d1-3a9870154f3d",
+      "result_id": "34e9dcb0-8de2-4044-b942-0746729b24ab"
+    },
+    {
+      "claim_id": "9baf1d55-e157-4a99-a1d2-dac2f4a46ee9",
+      "result_id": "34e9dcb0-8de2-4044-b942-0746729b24ab"
+    },
+    {
+      "claim_id": "aedc5943-75c0-466e-ac8f-f74a3f27ced2",
+      "result_id": "34e9dcb0-8de2-4044-b942-0746729b24ab"
+    },
+    {
+      "claim_id": "7fef133e-6eac-4f66-990a-24b26cda6522",
+      "result_id": "34e9dcb0-8de2-4044-b942-0746729b24ab"
+    },
+    {
+      "claim_id": "72f4514c-cbb0-40ea-990b-b11966713050",
+      "result_id": "2ca2c9c8-c17d-4dad-ab07-adffd6b23844"
+    },
+    {
+      "claim_id": "6ced9f7f-fac7-4e1d-b097-8a51552b3c4c",
+      "result_id": "2ca2c9c8-c17d-4dad-ab07-adffd6b23844"
+    },
+    {
+      "claim_id": "3e23c2c3-f666-4954-8f74-8b33380ab55e",
+      "result_id": "29220c46-e9dc-4602-928a-ec71fd6c8a65"
+    },
+    {
+      "claim_id": "987347a8-d377-46dc-8b0e-91751e83420a",
+      "result_id": "29220c46-e9dc-4602-928a-ec71fd6c8a65"
+    },
+    {
+      "claim_id": "143eeb79-da03-44bb-87e7-1bc861c996f4",
+      "result_id": "29220c46-e9dc-4602-928a-ec71fd6c8a65"
+    },
+    {
+      "claim_id": "3f50cb50-da35-45a4-b0c5-0936820b1feb",
+      "result_id": "29220c46-e9dc-4602-928a-ec71fd6c8a65"
+    },
+    {
+      "claim_id": "05c5fbda-7cf3-471b-a326-00cf745967ab",
+      "result_id": "29220c46-e9dc-4602-928a-ec71fd6c8a65"
+    },
+    {
+      "claim_id": "b91302de-8ac8-4679-8f3c-98a099f5469d",
+      "result_id": "31df2aff-225a-492d-bae4-3c37ccf4f22d"
+    }
+  ],
+  "comparisons": []
+}

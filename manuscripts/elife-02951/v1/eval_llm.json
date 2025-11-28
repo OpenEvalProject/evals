@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Dusted Drosophila exhibit a stereotyped sequential grooming progression, cleaning body parts in the order: eyes > antennae > abdomen > wings > thorax, with gradual transitions characterized by return cleaning and cyclic alternations between body cleaning and leg rubbing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C25 collectively demonstrate the sequential nature of grooming through dust removal measurements (C18-C19, Figure 1D), behavioral ethograms (C21, Figure 1E), and transition probability analyses (C22, Figure 1G). The data show both the hierarchical progression and the non-deterministic nature with return cleaning, providing converging evidence for the sequential organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Grooming behavior is modular, with specific GAL4 lines driving independent activation of cleaning movements for individual body parts (head, abdomen, wings, legs) through dTrpA1 expression, though these neurons are sufficient but not necessary for grooming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C32 are well-supported by systematic GAL4 screening data (Figure 2) showing specific activation of cleaning modules. The sufficiency without necessity (C29-C30) is demonstrated through both activation and inhibition experiments, though the negative inhibition results rely on unpublished data which weakens this aspect slightly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Cleaning modules are organized into a suppression hierarchy (eyes > antennae > abdomen > wings > thorax) where hierarchically superior modules suppress inferior ones, as demonstrated by competition experiments where artificial activation of specific modules blocks cleaning of subordinate body parts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C45 are strongly supported by competition experiments (Figure 3B) showing that activated modules suppress downstream cleaning while allowing upstream cleaning to proceed. The bidirectional nature of suppression (C43-C44) and the match between suppression order and natural grooming sequence (C45) provide robust evidence for the hierarchical organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Sequential progression of grooming is mediated by dust-dependent sensory drive rather than activation chains, as flies released from artificial module activation resume cleaning at the next dirty body part in the hierarchy rather than triggering the next module directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C52 are supported by cooling experiments (Figure 3C, Figure 3\u2014figure supplement 3) showing that deactivation of one module does not trigger the next (C46-C47), but flies with specific dust patterns resume cleaning at appropriate hierarchical positions (C50-C51). This provides strong evidence against activation chain models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A computational model implementing parallel activation of cleaning modules with hierarchical suppression through either variable sensory gain or unidirectional lateral inhibition, combined with winner-take-all selection, successfully reproduces the observed grooming sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53-C65 are supported by computational modeling (Figure 4) showing that both sensory gain differences (C62, Figure 4C) and unidirectional inhibition (C63, Figure 4D) can generate sequential behavior, while no hierarchy produces random cleaning (C61, Figure 4B). The model successfully captures the key features of the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The hierarchical suppression model explains return cleaning behavior observed in wild-type flies, as modules with similar activation levels compete more equally, leading to frequent switching between cleaning modules as dust is progressively removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by model simulations (Figure 4B-D) showing that return cleaning emerges when activation levels become similar, either initially (C67-C68) or through progressive dust removal (C69-C70). This matches empirical observations (C71, Figure 1E), providing mechanistic insight into the non-deterministic aspects of grooming.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The computational model recapitulates two key experimental observations: constitutive activation of single modules (mimicking GAL4/dTrpA1 phenotypes) and hierarchical suppression in competition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 demonstrate model validation through reproducing experimental phenotypes. Constitutive activation (C72-C74, Figure 4E) and competition experiments (C75-C77, Figure 4F) are successfully simulated, showing close agreement between model predictions and experimental observations (C78).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Leg rubbing is integrated into the same suppression hierarchy as body cleaning modules, with cyclic alternations between body cleaning and leg rubbing explained by dust accumulation on legs during body cleaning followed by leg rubbing to remove that dust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 are supported by model simulations (Figure 5C-D) that reproduce cyclic transitions observed empirically (C87, Figure 5A). The mechanism of dust transfer to legs (C82-C84) provides a parsimonious explanation for the high transition probabilities between body cleaning and leg rubbing (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Experimental validation confirms that constitutively activated leg rubbing suppresses body cleaning modules but not eye cleaning, positioning leg rubbing high in the hierarchy but below eye cleaning, with weak suppression of abdominal cleaning suggesting near-equal hierarchical positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are supported by competition experiments using R17F11 GAL4 line (C91, Figure 5E). The differential suppression of body parts (C92, C94) provides evidence for leg rubbing's hierarchical position, though the interpretation of near-equal positions for hind leg rubbing and abdominal cleaning (C95) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The hierarchical suppression model successfully explains both sequential cleaning progression and cyclic transitions between leg rubbing and body cleaning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is a summary statement supported by the combined evidence from modeling (Figure 4, Figure 5) and experimental validation. This integrative claim is well-supported by the preceding results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C107",
+      "C144",
+      "C145"
+    ],
+    "result": "This work provides the first experimental demonstration of an innate motor sequence implemented by a parallel model with hierarchical suppression, previously proposed for learned human behaviors like typing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C107, C144-C145 represent the study's main conceptual contribution. The experimental evidence for hierarchical suppression (Figure 3) combined with computational modeling (Figure 4-5) provides strong support for parallel model implementation in an innate behavior, though the claim of being 'first' (C144) is difficult to verify definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Evidence argues against activation chain models as the primary mechanism for grooming sequences: local stimulation activates only single modules without triggering chains, and the gradual transitions with return cleaning are inconsistent with deterministic activation chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 present evidence against alternative models. The arguments are well-supported by experimental data (C46-C47, Figure 3\u2014figure supplement 3) and behavioral observations (C119-C120, Figure 1D-E), though the authors appropriately acknowledge that activation chains might mediate some aspects (C122).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Fly grooming exhibits all major features of parallel models: parallel activation through dust sensing, competition among modules, activity gradients through sensory gain or lateral inhibition, winner-take-all selection, and deletion through cleaning-mediated reduction of sensory drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C134 systematically map grooming features onto parallel model components. Each feature is supported by experimental evidence (parallel activation: C126-C127; competition: Figure 3; activity gradients: C130, Figure 4C-D; deletion: C133, Figure 4A), providing comprehensive support for the parallel model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Grooming demonstrates that parallel models can generate both sequential and cyclic transition dynamics through simple modifications (dust transfer to legs), showing the flexibility of parallel models to produce behaviors of increasing adaptive complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C140 extend the parallel model framework to explain cyclic dynamics. The mechanism of dust transfer (C137, Figure 5D) provides a simple modification that generates oscillatory behavior (C138), demonstrating model flexibility (C139-C140). This is well-supported by both modeling and experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The suppression hierarchy reflects inherent values placed on cleaning different body parts, with eye cleaning prioritized (likely for vision), followed by legs (necessary for cleaning), antennae (multiple sensory modalities), and abdomen (respiration through spiracles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C106 present functional interpretations of the hierarchical organization. While the hierarchy itself is well-established (C100), the specific functional explanations (C102-C105) are largely speculative inferences without direct experimental support. The reasoning is plausible but not empirically tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The experimental approach of acutely manipulating behavioral subcomponents through GAL4-targeted neural activation provides a general method for exploring the organization of complex motor behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C153 describe the methodological contribution. The successful application to grooming (C149-C151) demonstrates the approach's utility, and the suggestion for broader application (C153) is reasonable given the results, though remains speculative for other behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The behavioral model suggests specific circuit architectures to test, including unidirectional lateral inhibitory connections among cleaning modules or shared neural circuits that cannot drive multiple behaviors simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C160 outline predictions for future circuit-level studies. The predictions follow logically from the model (C156, Figure 4D) and are grounded in prior work (C157, C159), providing clear hypotheses for future experiments (C160). This represents appropriate speculation based on the behavioral findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The GAL4 lines likely target sensory neurons (mechanosensory bristles) or command-like neurons that are sufficient but not necessary for activating specific cleaning modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C172 speculate about the neural identity of targeted cells. While the sufficiency without necessity (C169) is experimentally demonstrated, the specific cell type proposals (C167, C170, C172) are speculative. The reasoning is sound but lacks direct experimental validation of cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "GAL4 expression patterns vary in cell numbers and types, with uncertainty about whether only specific subsets or many neurons in each pattern drive grooming; further refinement of expression patterns is needed to resolve this question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C179 acknowledge limitations in cellular resolution. The observation of varied expression patterns (C173, Figure 2\u2014figure supplement 2) is documented, and the discussion of alternative possibilities (C174-C178) with supporting examples is appropriate. The call for further refinement (C179) is a reasonable conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Hierarchical suppression may be a ubiquitous action selection mechanism that evolved for behavioral choice and was co-opted for sequential motor control, with potential common organizational features in underlying neural circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112, C146-C148 present broad evolutionary and mechanistic speculation. While the demonstration of hierarchical suppression in grooming is solid, the claims about ubiquity (C111), evolutionary origins (C112, C146), and common circuit features (C148) extend well beyond the data. These are interesting hypotheses but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The grooming model shares features with models of learned sequences like human typing, where parallel activation and hierarchical competition were inferred from letter transposition errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 draw parallels to prior work on human typing. The comparison is appropriate given the shared model features, and the historical context (C142-C143) is accurately cited. This contextualizes the findings within the broader literature on serial behavior.",
+    "result_type": "MINOR"
+  }
+]

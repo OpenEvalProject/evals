@@ -1,0 +1,1977 @@
+{
+  "submission": {
+    "id": "9beade53-1a8b-484f-a5d5-918f748c4292",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:51:55.001064Z",
+    "updated_at": "2025-11-28T19:51:55.001064Z"
+  },
+  "content": [
+    {
+      "id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "submission_id": "9beade53-1a8b-484f-a5d5-918f748c4292",
+      "content_type": "manuscript",
+      "content_text": "# Developmental lineage priming in Dictyostelium by heterogeneous Ras activation\n\n## Authors\n\n- Alex Chattwood<sup>1</sup>\n- Koki Nagayama<sup>1</sup>\n- Parvin Bolourani<sup>2</sup>\n- Lauren Harkin<sup>1</sup>\n- Marzieh Kamjoo<sup>1</sup>\n- Gerald Weeks<sup>2</sup>\n- Christopher RL Thompson<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Faculty of Life Sciences University of Manchester Manchester United Kingdom\n2. Department of Microbiology and Immunology University of British Columbia Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn cell culture, genetically identical cells often exhibit heterogeneous behavior, with only \u2018lineage primed\u2019 cells responding to differentiation inducing signals. It has recently been proposed that such heterogeneity exists during normal embryonic development to allow position independent patterning based on \u2018salt and pepper\u2019 differentiation and sorting out. However, the molecular basis of lineage priming and how it leads to reproducible cell type proportioning are poorly understood. To address this, we employed a novel forward genetic approach in the model organism Dictyostelium discoideum. These studies reveal that the Ras-GTPase regulator gefE is required for normal lineage priming and salt and pepper differentiation. This is because Ras-GTPase activity sets the intrinsic response threshold to lineage specific differentiation signals. Importantly, we show that although gefE expression is uniform, transcription of its target, rasD, is both heterogeneous and dynamic, thus providing a novel mechanism for heterogeneity generation and position-independent differentiation.\n\n## Introduction\n\nMulticellular development requires the stereotypical and robust restriction of pluripotent cells to specific lineages. In many cases, this is dependent on positional information, where the relative position of a cell within the embryo determines the nature or amount of instructive differentiation signals received. However, there are also a growing number of examples of position independent patterning (Kay and Thompson, 2009). In these, different cell types firstly arise scattered in a \u2018salt and pepper\u2019 fashion before sorting out. To understand this mechanism, it will be important to understand why some cells differentiate, whereas neighboring cells within the same environment do not. One possible clue comes from cell culture studies that have revealed that genetically identical populations of cells exhibit heterogeneous behavior (Chambers et al., 2007; Chang et al., 2008; Wu et al., 2009). When these cells receive identical doses of defined differentiation inducing signals, only a small fraction of \u2018lineage primed\u2019 cells actually respond. In this scenario, a higher inducer concentration increases the number of responding cells without affecting the magnitude of the response of individual cells. This suggests that cells exhibit different intrinsic response biases or discrete transcriptional activation thresholds to signals.\n\nThere is now evidence to support the idea that the mechanisms underlying heterogeneous responses observed in cell culture could in fact regulate differentiation and developmental patterning in multicellular organisms (Kaern et al., 2005). For example, in one of the earliest lineage choices made during mouse embryogenesis, cells of the inner cell mass (ICM) adopt either primitive endoderm (PrE) or epiblast (EPI) fates. This occurs in a position independent fashion with ICM cells exhibiting seemingly stochastic expression of PrE and EPI markers (Dietrich and Hiiragi, 2007; Plusa et al., 2008). It has been proposed that heterogeneity in responsiveness to differentiation inducing signals, such as the PrE inducer FGF, underlies this salt and pepper differentiation (Yamanaka et al., 2010). Crucially, in this model, it is not necessary for cells to receive different levels of FGF, only that they exhibit heterogeneity in their response thresholds to the signal. Finally, following this period of \u2018symmetry breaking\u2019, coherent tissues can emerge due to a process of sorting out. Sorting is likely caused by differential gene expression resulting in differential cell motility, which can be driven by chemotaxis or differential cell adhesion (with the elimination of misplaced cells also possible).\n\nPattern formation based on stochastic salt and pepper differentiation and sorting out is likely to be a fundamental and deeply conserved developmental patterning mechanism (Kay and Thompson, 2009). However, our knowledge of the underlying molecular mechanism, as to how heterogeneity affects responsiveness to differentiation signals, is still in its infancy. One route to understanding this phenomenon comes from the finding that initial cell fate choice and pattern formation in Dictyostelium discoideum, a genetically and biochemically tractable organism with a small number of easily recognizable cell types, is based on this mechanism (Thompson et al., 2004b). Upon starvation, Dictyostelium cells enter a developmental cycle that begins with the aggregation of several thousand cells to make a multicellular mound. Within the mound, cells differentiate intermingled into prestalk or prespore cells. After sorting out, the different cell types are organized into discrete tissues in the migratory slug. Prestalk cells occupy the anterior 25% of the slug, with anterior like cells also found scattered within the prespore zone. Upon culmination, prestalk cells undergo extensive rearrangements to populate distinct parts of the fruiting body, including the stalk and basal disc, as well as ancillary spore head supporting structures known as the upper and lower cup. Prestalk cells can further be subdivided into several major subtypes (pstA, pstO and pstB). Each cell type is defined largely by the pattern of expression of the classical prestalk specific transcripts ecmA and ecmB (Jermyn et al., 1989; Williams et al., 1989; Jermyn and Williams, 1991; Early et al., 1993), and by their position in the migratory slug and final fruiting body (Figure 1\u2014figure supplement 1).\n\nThere is now good evidence to suggest that heterogeneities during growth of Dictyostelium, such as nutritional status or cell cycle position, affect developmental fate (Leach et al., 1973; Gomer and Firtel, 1987; Thompson and Kay, 2000a; Chattwood and Thompson, 2011). Firstly, cells grown without glucose preferentially become stalk cells when mixed in chimeric development with glucose grown cells (Leach et al., 1973; Noce and Takeuchi, 1985; Blaschke et al., 1986). Importantly, when cells from different growth conditions are compared, a hierarchy of biases results, where cells can be \u2018stalky\u2019 in one mixture but \u2018sporey\u2019 in another (Leach et al., 1973; Thompson and Kay, 2000a). Therefore, growth history does not commit a cell to a given fate, but is instead context dependent and relative to the growth history of the entire population. Secondly, biases established during growth have been shown to affect the sensitivity of cells to differentiation signals experienced during development, such as the chlorinated alkyl phenone DIF-1 (hereafter termed DIF), which is primarily required for pstB cell differentiation, with a more minor role in pstO cell differentiation (Thompson and Kay, 2000b; Thompson et al., 2004a; Zhukovskaya et al., 2006; Huang et al., 2006b; Keller and Thompson, 2008; Saito et al., 2008). For example, \u2018stalky\u2019 biased cells are more sensitive to DIF in monolayer culture assays than \u2018sporey\u2019 biased cells (Thompson and Kay, 2000a; Kubohara et al., 2007). Finally, immediate-early gene responses to DIF exhibit all-or-none behavior, leading to population level heterogeneity (Stevense et al., 2010). This provides a basis for salt and pepper differentiation in vivo, where it is presumed all cells experience similar DIF concentrations.\n\nFrom these studies it is clear that in order to understand patterning by salt and pepper differentiation followed by sorting, it will first be important to understand why some cells respond to differentiation inducing signals whereas others do not. To address this, we have used a novel genetic approach to identify genes involved in lineage priming. Here we describe the characterization of one such gene, gefE, and show that its expression during growth is specifically required to determine the number of cells that respond to DIF, both in cell culture and in vivo. Finally, we show that although expression of gefE itself is not heterogeneous during growth, expression of its target, rasD, is both heterogeneous and dynamic. These studies thus establish how salt and pepper differentiation in response to a uniform diffusible signal can be achieved through the stochastic expression of a Ras gene, the activity of which in turn is dependent on a ubiquitously expressed regulatory Gef. These studies therefore provide key insights into the basis of gene regulatory networks that can underpin patterning during a poorly understood but fundamental mode of pattern formation.\n\n## Results\n\n### A genetic screen for modulators of lineage bias\n\nThe nutritional conditions under which cells are grown have previously been shown to bias lineage choice during Dictyostelium development (Leach et al., 1973; Thompson and Kay, 2000a). Consistent with these observations, we find that cells grown in the absence of glucose (G\u2212) produce significantly fewer spores than cells grown in the presence of glucose (G+) when developed together in chimera (Figure 1A). Importantly, our analysis of the patterning of cell types at the slug and fruiting body stages reveals that this is because G\u2212 cells are biased towards the DIF dependent pstO and pstB lineages (Figure 1B, Figure 1\u2014figure supplement 2). This is consistent with previous studies showing G\u2212 cells are more sensitive to DIF than G+ grown cells (Thompson and Kay, 2000a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig1-v1.jpg)\n\n**Figure 1.:** (A) G\u2212 cells produce fewer spores than G+ cells in chimeric development. GFP-labelled Ax3 wild type cells were grown in either G+ or G\u2212 conditions and mixed 10:90 with wild type G+ cells. GFP spores were quantified by counting. Dotted line indicates the percentage GFP spores expected if there is no fate bias. Error bars represent SEM, p<0.0001. (B) G\u2212 growth biases cells towards pstO and pstB cell fates. Diagram shows organisation of different cell types along the anterior-posterior axis of the Dictyostelium slug. Patterning of GFP-labelled (*) G+ (i) and G\u2212 (ii) cells when mixed at 10:90 ratio with G+ cells. The reciprocal pattern was observed when GFP-labelled G+ (iii) and G\u2212 (iv) were mixed at 10:90 ratio with G\u2212 cells. (C) Schematic diagram of the genetic selection. REMI mutant cells were grown in G\u2212 and mixed 10:90 with wild type G+ GFP cells. Chimeric fruiting bodies were harvested and spores returned to growth medium after each developmental cycle. Wild type cells were removed with Blasticidin. (D) Generation of gefE\u2212 mutants. REMI plasmid, pBSR1, inserted into 42 bp exon 1. RasGEF catalytic domain (blue) deleted by homologous recombination. (E) gefE\u2212 mutant cells produce more spores than Ax3 wild type cells after G\u2212 growth. RFP-labelled wild type cells were grown in G+ medium and mixed at a 50:50 ratio with unlabelled wild type or gefE\u2212 mutant cells grown in G\u2212. Number of unlabelled spores was quantified by counting. Error bars represent SEM, p<0.04. (F) Comparison of the patterning of GFP-labelled (*) wild type (i) or gefE\u2212 mutant (ii) cells grown in G\u2212 conditions when mixed at 10:90 ratio with unlabelled wild type G+ cells. AP axis in all slug images oriented from right-left with white bars showing regions of GFP enrichment.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Nomenclatures for parts of Dictyostelium slug (left) and fruiting body (right) are depicted. Yellow (prespore) cells eventually form sorus and red cells (pstA or AB) form stalk cells. Blue (pstO) and green (pstB) cells are the DIF dependent cell types which eventually form upper/lower cup and basal disc. ecmA promoter can be subdivided to pstA and O, and ecmB promoter to pstAB and pstB cell types.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) and culminants (B) 10% labelled G+ cells (upper panels) or G\u2212 cells (lower panels) mixed with 90% unlabelled G+ or G\u2212 cells. Closed arrows indicate enrichment of label, open arrows an absence. In each panel, the top row shows the control mix and is comparable to the image directly beneath. General patterning differences between G+ and G\u2212 cells (A\u2013D) are described in the main text and Figure 1. G+ cells labelled with ecmAO:lacZ occupy anterior-most pstA regions when mixed with G\u2212 cells (E and F). In the reciprocal mix, G\u2212 cells labelled with ecmAO:lacZ were absent from the tip and formed a collar in the pstO regions when mixed with unlabelled G+ cells (G and H). Expression of ecmB:lacZ was decreased in pstB regions of chimeras when labelled G+ cells were mixed with unlabelled G\u2212 mutant cells (I and J) and increased when labelled G\u2212 mutant cells were mixed with unlabelled G+ cells (K and L). Wild type cells labelled with pspA:lacZ occupy the prespore region when mixed with unlabelled G\u2212 cells (M and N). In the reciprocal mix, where G\u2212 cells labelled with pspA:lacZ were mixed with unlabelled G+ cells, expression was greatly reduced and restricted to the rear of the prespore compartment (O and P). The AP axis of all structures is aligned from right-left. Refer to Figure 1\u2014figure supplement 1 to link marker expression to cell type localization within slug or culminant.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Patterning phenotype of REMI mutant pools in chimera with wild type cells. 10% wild type GFP cells were mixed with 90% REMI mutant cells from each pool at each round of selection. The dark regions in each slug show the location of the REMI mutant cells. In Rd0, REMI mutant cells localize in the pstO and pstB regions. By Rd7, wild GFP cells are almost entirely absent from prespore compartment, especially in pool 2. In pool 1 (top row), REMI mutant cells are enriched in the collar and back until Rd3. By Rd6 and 7, wild type GFP cells are enriched in the anterior prestalk region, suggesting the REMI mutant cells are in the prespore population. (B) Proportion of REMI mutants identified by iPCR that mapped to exon 1 of gefE locus in each round of selection. (C) Measurements of growth rate of wild type and gefE\u2212 mutant cells in G+ or G\u2212 medium. (D) Measurement of spore hatching rate of wild type and gefE\u2212 mutant cells. The percentage of hatched spores was scored at the indicated times after spores were placed in growth medium. The cell density after 24 hr of induction was also measured, revealing that the faster hatching rate of gefE\u2212 mutant resulted in approximately twofold higher cell density after 24 hr. Error bars represent SEM.\n\nTo better understand this lineage bias, we took a genetic approach in which a REMI mutant library estimated to initially contain approximately 1000 individual blasticidin resistant clones was hatched from a frozen stock two times. Each replicate pool was then grown separately in G\u2212 medium and developed in chimera with G+ wild type cells (Figure 1C). After each round of development, chimeric spore heads were transferred into growth medium containing blasticidin, thus killing all wild type cells and only allowing mutant spores to grow. This provides a selective pressure to enrich for mutants that adopt the spore cell fate. The selection was repeated on each pool for seven rounds. The success of the selection was assessed qualitatively by examining the distribution of mutant and wild type cells in chimeric slugs. As expected, in initial rounds, G\u2212 grown mutant cells were enriched in the pstO and pstB populations. However, in later rounds the distribution of mutant cells changed with a clear enrichment within the prespore zone, suggesting that mutants defective in bias imposed by G\u2212 growth were becoming enriched (Figure 1\u2014figure supplement 3A).\n\nInverse PCR revealed the pool of cells in later rounds of each pool selection to be largely composed of clones in which the REMI plasmid had integrated into a small 5\u2032 42 bp exon within the gefE gene (Figure 1D, Figure 1\u2014figure supplement 3B). In one pool, gefE mutant cells were enriched by round 2, whereas in the second it was only strongly enriched by round 6. These differences could be due to the effects of random genetic drift caused by harvesting a finite number of spores after each round. Alternatively, it has recently been shown that when multiple clones are hatched and grown on bacteria, small differences in growth rate at the feeding edge can be amplified, leading to overrepresentation of some clones (Buttery et al., 2012).\n\nWe next performed a reconstruction experiment to verify that enrichment of gefE\u2212 mutant cells was due to being overrepresented in the spore population, rather than the mutation simply conferring advantages during other stages of the selection process. For this, because the catalytic domain of GefE is encoded by the larger 3\u2032 exon, we generated a mutant allele in which the catalytic domain was deleted (Figure 1D). For all subsequent studies, the catalytic domain disruption allele was used, but because both mutants exhibit identical phenotypes, both likely represent null alleles. Reconstruction experiments revealed no difference in the rate of growth of gefE\u2212 mutant cells in either G+ or G\u2212 medium, although gefE\u2212 mutant spores did, however, hatch at a faster rate than wild type spores, perhaps helping to explain the unexpectedly strong enrichment for this mutant within the pools (Figure 1\u2014figure supplements 3C,D). Most importantly, when wild type or gefE\u2212 mutant G\u2212 grown cells were developed in chimera with G+ wild type cells, mutant G\u2212 cells were significantly overrepresented in the spore population of chimeric fruiting bodies (Figure 1E, p<0.04), thus providing a simple explanation for the enrichment of this mutant in the genetic selection. This is because mutant G\u2212 cells do not show the strong overrepresentation in the collar and back populations of chimeric slugs seen when wild type G\u2212 cells are mixed with wild type G+ grown cells (Figure 1F).\n\n### gefE\u2212 mutant cells avoid DIF dependent prestalk cell fates\n\nGrowth in the absence of glucose specifically biases cells towards DIF dependent prestalk lineages. Because the gefE\u2212 mutant fails to respond to this G\u2212 growth bias, we next tested whether gefE gene disruption also resulted in specific defects in DIF dependent lineage bias. To test this, wild type and mutant cells were grown under identical growth conditions in the presence of glucose before mixing for chimeric development. Under these conditions, gefE\u2212 cells still formed more spores than wild type cells (Figure 2A, p<0.01). In chimeric slugs, labelled mutant cells were enriched in the prespore region and excluded from the DIF dependent pstB and pstO cell fates, whilst labelled wild type cells were localized in the pstB and pstO regions of the slug (Figure 2B, Figure 2\u2014figure supplement 1). Similar results were seen when cells were grown in the absence of glucose (Figure 2\u2014figure supplement 2). Finally, when GefE expression was driven by a strong constitutive promoter in wild type cells, cells expressing high gefE levels were found largely in the pstO and pstB regions of slugs and in the lower cup of fruiting bodies when mixed with wild type cells (Figure 2C). Together, these data suggest that expression of gefE is required for biasing cells to adopt DIF dependent pstO and pstB cell fates.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig2-v1.jpg)\n\n**Figure 2.:** (A) RFP-labelled AX3 wild type cells were mixed at a 50:50 ratio with unlabelled wild type or gefE\u2212 mutant cells. Both strains were grown in presence of glucose. Number of unlabelled spores quantified by counting. Dotted line indicates the percentage RFP spores expected if there is no fate bias. Error bars represent SEM, p<0.01. (B) Chimeras of 10% GFP-labelled (*) wild type or gefE\u2212 mutant cells mixed with 90% unlabelled wild type or gefE\u2212 mutant cells. AP axis in all slug images oriented from right-left with white bars showing regions of GFP enrichment. (C) Cells transfected with RFP control vector (a and b), or GefE-RFP fusion vector (c and d), under control of the constitutive actin promoter, mixed with unlabelled wild type cells at 20:80 ratio and observed during slug (a and c) and culminant (b and d) stages of development. Closed arrows indicate relative enrichment in reporter gene expression.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) and culminants (B) 10% labelled Ax3 wild type (upper panels) or gefE\u2212 mutant cells (lower panels) mixed with 90% unlabelled wild type or gefE\u2212 mutant cells. Closed arrows indicate enrichment of label, open arrows an absence. In each panel, the top row shows the control mix and is comparable to the image directly beneath. General patterning differences between wild type and gefE\u2212 mutant cells (A\u2013D) are described in the main text and Figure 2. Wild type cells labelled with ecmAO:lacZ were absent from the tip and formed a collar in the pstO regions when mixed with gefE\u2212 mutant cells (E and F). In the reciprocal mix, gefE\u2212 mutant cells labelled with ecmAO:lacZ occupied the anterior-most pstA regions when mixed with unlabelled wild type cells (G and H). Expression of ecmB:lacZ was increased in pstB regions of chimeras when labelled wild type cells were mixed with unlabelled gefE\u2212 mutant cells (I and J) and reduced when labelled gefE\u2212 mutant cells were mixed with unlabelled wild type cells (K and L). At culminant stage, ecmB expression is upregulated in pstA cells. Blue arrows in panel B highlight the tendency of wild type cells to avoid this fate (I and J) at the expense of gefE\u2212 mutant cells (K and L). Expression of pspA:lacZ was reduced and restricted to the prespore region when labelled wild type cells were mixed with unlabelled gefE\u2212 mutant cells (M and N). The reciprocal pattern was seen when labelled gefE\u2212 mutant cells were mixed with unlabelled wild type cells (O and P). The AP axis of all structures is aligned from right-left. Refer to Figure 1\u2014figure supplement 1 to link marker expression to cell type localization within slug or culminant.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** All cells were grown in absence of glucose. 10% GFP-labelled Ax3 wild type or gefE\u2212 mutant cells were then mixed with 90% wild type or gefE\u2212 mutant cells and developed to slug stage.\n\n### GefE regulates DIF dependent lineage bias\n\nGenes that affect cell fate choice can either affect lineage commitment or lineage bias. A lineage bias gene is one that is not required for cell fate commitment per se, but required for the relative probability of commitment to one fate over another. If the gefE gene is involved in lineage priming rather than commitment, an effect on development will not be observed if all cells in the population have the same bias (e.g., normal clonal development). We therefore examined cell fate choice and patterning of the gefE\u2212 mutant during clonal development, with all cells grown under identical conditions. Clonal development was found to be morphologically identical to that of the wild type. Furthermore, the number of prespore cells in gefE\u2212 mutant slugs was found to be the same as that observed in wild type slugs, and the total number of spores produced in terminal fruiting bodies was the same for the gefE\u2212 mutant as for the wild type (Figure 3A). There was also no defect in prestalk cell specific gene expression in slugs or fruiting bodies (Figure 3B). The only difference between the clonal development of the gefE\u2212 cells and the wild type was a slight, although reproducible, delay in the initiation of aggregation (data not shown). These results are, therefore, consistent with the gefE gene being involved in lineage priming rather than lineage commitment. Furthermore, if the gefE gene is involved in lineage priming, rather than commitment, then the bias of the gefE\u2212 cells to avoid a DIF dependent fate, that is observed when they are mixed with wild type cells, should be reversed when they are mixed with cells of a stronger bias. Consistent with this idea, the lineage bias of the gefE\u2212 mutant cells was found to be dependent on the growth history of the partner genotype. For example, gefE\u2212 mutant cells were strongly biased towards DIF dependent fates when grown in the G\u2212 medium and then mixed with mutant cells grown in G+ medium (Figure 3C). These experiments provide strong evidence that gefE\u2212 cells are totipotent and that GefE regulates context dependent/relative DIF dependent lineage bias rather than cell fate choice.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig3-v1.jpg)\n\n**Figure 3.:** (A) Quantification of prespore:prestalk ratio and total number of spores produced by Ax3 wild type and gefE\u2212 mutant at slug and fruiting body stages respectively. (B) Expression of prestalk markers ecmA and ecmB in clonal Ax3 wild type and gefE\u2212 mutant culminants. (C) Chimeras of 10% GFP-labelled (*) gefE\u2212 mutant cells grown in G+ or G\u2212 mixed with 90% unlabelled gefE\u2212 mutant cells grown in G+ or G\u2212 conditions. AP axis in all slug images oriented from right-left with white bars showing regions of GFP enrichment.\n\n### gefE\u2212 mutant cells are less sensitive to DIF\n\nG+ grown cells are less likely to adopt DIF dependent lineages than G\u2212 cells and G+ cells have been shown previously to be less sensitive to DIF than G\u2212 grown cells (Thompson and Kay, 2000a). Therefore, we next tested whether gefE\u2212 mutant cells also exhibit differences in DIF responsiveness when compared to wild type cells. We found that gefE\u2212 mutant cells make fewer stalk cells than wild type across a 1000-fold range of DIF concentrations in the cAMP removal monolayer assay but exhibit similar sensitivity to changes in DIF concentration (Figure 4A). Importantly, growth in the absence of glucose results in a similar increase in DIF sensitivity in both wild type and mutant cells (Figure 4A), thus suggesting that GefE is only required to set basal levels of DIF sensitivity. Similar results were seen when the effect of gefE disruption was observed on the expression of primary DIF target genes. In the first experiment, cells were transformed with ecmAO:lacZ or ecmB:lacZ reporter genes. DIF induced gene expression of these reporters was reduced in the gefE\u2212 mutant compared to wild type at all DIF concentrations, but showed a similar sensitivity to changes in DIF concentration (Figure 4B). A similar result was seen when endogenous ecmA and ecmB transcripts were measured in response to DIF induction (Figure 4C). Finally, we determined the effects of gefE disruption on an immediate-early DIF response. GATAc is a transcription factor that translocates to the nucleus minutes after DIF stimulation and is specifically required for DIF dependent pstB cell differentiation (Keller and Thompson, 2008). In gefE\u2212 mutant cells basal levels of nuclear GATAc were similar to wild type. Furthermore, when gefE\u2212 mutant cells were stimulated with DIF, the rate and duration of GATAc-GFP nuclear accumulation were largely unaffected. However, large differences were seen in the number of gefE\u2212 mutant cells that exhibit nuclear GATAc accumulation compared to wild type (Figure 4D). Together, these results suggest that gefE\u2212 cells are less sensitive to DIF than wild type cells, consistent with the idea that GefE biases cells towards DIF sensitive fates.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig4-v1.jpg)\n\n**Figure 4.:** (A) Quantification of stalk cell formation 22 hr after DIF induction. (B) Expression level of lacZ reporter gene fused to prestalk specific promoter of ecmA (left) or ecmB (right) 22 hr after DIF induction. (C) qPCR analysis of endogenous ecmA (left) or ecmB (right) transcript levels after 3 hr induction with 100 nM DIF. (D) Nuclear translocation of DIF-induced transcription factor, GATAc-GFP in response to 100 nM DIF.\n\n### gefE is required to set the DIF response threshold within individual cells\n\nThe above data demonstrate that gefE\u2212 mutant cells are less likely to respond to DIF. It has recently been shown that DIF induced transcription of the prestalk gene, ecmA only occurs once a cell intrinsic threshold is exceeded; increased DIF dose only results in a small change in target gene expression level in each cell, but a much larger increase in the number of cells that respond (Stevense et al., 2010). We, therefore, hypothesised that the reduced DIF responsiveness of the gefE\u2212 mutant was due to an increase in the threshold required to trigger a transcriptional response. To test this idea further, we developed a novel FACS based approach that permits ecmA expression levels to be measured in individual wild type or gefE\u2212 mutant cells in response to DIF. For this we replaced the endogenous copy of the ecmA gene with GFP (Figure 5A), and showed that GFP was expressed from the ecmA promoter in the same localization in slugs and fruiting bodies (Figure 5B) as has been previously described for ecmA-LacZ (Jermyn and Williams, 1991). As expected, in wild type controls, increasing DIF concentrations resulted in greater numbers of GFP expressing cells, with only a small change in GFP expression level per cell (Figure 5C,D). Most importantly, at all concentrations of DIF, the number of responding gefE\u2212 mutant cells was lower than wild type (Figure 5C,D). However, there was little difference in the level of ecmA:GFP expression between individual wild type or gefE\u2212 mutant responding cells (Figure 5C,D). Taken together, these data provide strong support for the idea that gefE regulates the cell-intrinsic threshold at which cells respond to DIF.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig5-v1.jpg)\n\n**Figure 5.:** (A) Replacement of the endogenous ecmA gene with GFP (B) prestalk specific expression of GFP knock-in strain at slug and culminant stages. (C) FACS analysis of Ax3 wild type and gefE\u2212 mutant GFP knock-in strains stimulated with 0.01\u2013100 nM DIF for 9 hr. Y-axis shows the number responders and X-axis the GFP expression level per cell. (D) Median GFP expression level of wild type and gefE\u2212 mutant populations stimulated with 0.01\u2013100 nM DIF.\n\n### GefE exerts its effects on cell type differentiation through RasD\n\nWe next sought to understand the molecular mechanism by which GefE affects lineage bias. As gefE is predicted to encode a RasGEF, whose primary function is to activate Ras proteins by catalyzing the exchange of GDP for GTP, it therefore seemed likely that GefE would exert its effects on DIF dependent lineage bias through Ras regulation. Although the Dictyostelium genome encodes 11 Ras proteins, only one, RasD, exhibits strong developmental expression (Reymond et al., 1984). Furthermore, we found that the level of both RasD expression and GTP bound activated RasD are significantly higher in cells grown in the absence of glucose (Figure 6A). Finally, GefE and RasD mutant cells have previously been shown to exhibit identical slug phototaxis defects (Wilkins et al., 2000, 2005), raising the possibility that RasD could be a target for GefE. To test this idea directly, we firstly compared the relative levels of RasD-GTP in wild type and mutant cells by Western blot, using a pull down assay and a specific antibody (Wilkins et al., 2000). In 12 hr developed cells, the level of activated RasD was significantly lower in gefE\u2212 mutant cells, although there was no difference in the total level of the RasD protein (Figure 6B). In addition, there was no corresponding decrease in the levels of activated RasG, RasB, RasC or Rap1 (data not shown). These results suggest that GefE is the predominant activator of RasD and is specific for RasD. We therefore next tested whether rasD\u2212 and gefE\u2212 mutants exhibit similar cell fate choice phenotypes. When labelled wild type cells were mixed with rasD\u2212 mutant cells, the labelled cells accumulated in the pstO and pstB populations and were underrepresented in the prespore population (Figure 6C, Figure 6\u2014figure supplement 1). Moreover, when RasD expression levels were elevated in wild type cells or cells were forced to express constitutively active rasD(G12T), these cells exhibited a strong localization towards the pstB region at the rear of slug and in the lower cup of fruiting bodies when mixed with wild type cells (Figure 6D). Importantly, unlike wild type cells, this effect was only observed in gefE\u2212 mutant cells which expressed constitutively active rasD(G12T). These findings thus suggest that RasD is normally converted to its GTP bound form upon activation by GefE and support the idea that GefE and RasD coordinate DIF dependent lineage bias.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig6-v1.jpg)\n\n**Figure 6.:** (A) Comparison of the levels of activated RasD-GTP and total RasD by Western blot in vegetative or 12 hr starved cells grown in the presence or absence of glucose. (B) Comparison of activated RasD-GTP and total RasD levels by Western blot in wild type Ax3, gefE\u2212 or rasD\u2212 cells. (C) GFP-labelled (*) Ax3 wild type cells mixed at 10:90 ratio with unlabelled Ax3 or rasD\u2212 mutant cells. Closed arrows show enrichment of wild type cells in pstO and pstB populations. Open arrows show reciprocal enrichment of rasD\u2212 cells. (D) RasD overexpression results in GefE dependent bias towards the pstO and pstB cell fates. 20% cells constitutively expressing RFP, RFP-RasD or RFP-RasD(G12T) were mixed with 80% unlabelled parental cells. When wild type Ax3 cells overexpress RFP-RasD or RFP-RasD(G12T) they become enriched in the pstO and pstB populations (arrows). Only gefE\u2212 cells that express constitutively activated RasD(G12T) are enriched in pstO and pstB populations (arrows).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** 10% Ax3 labelled wild type were mixed with 90% unlabelled rasD\u2212 mutant cells. The top row shows the control mix and is comparable to the image directly beneath. Closed arrows indicate enrichment of label, open arrows an absence. The AP axis of all slugs is aligned from right-left.\n\n### RasD expression is heterogeneous and dynamic in growing cells\n\nStudies of the behavior of gefE\u2212 and rasD\u2212 mutant cells during chimeric development and in cell culture suggest that the levels of activated RasD are critical to set the DIF response threshold within populations of cells. This suggested that heterogeneous activity of RasD within a growing population of cells could perhaps underpin the salt and pepper differentiation of DIF dependent lineages during normal development. Therefore, we next tested whether gefE or rasD gene expression was heterogeneous during growth. For this, gefE or rasD promoter sequences were used to drive RFP expression. Although gefE was found to be uniformly expressed in all cells during growth, rasD expression was highly heterogeneous (Figure 7A). The rasD promoter RFP reporter construct used here shows strong developmental regulation and drives prestalk cell specific expression at the slug and culminant stages (Figure 7\u2014figure supplement 1), consistent with previous reports using rasD:lacZ (Esch and Firtel, 1991; Jermyn and Williams, 1995) and observations of the endogenous transcripts (Maeda et al., 2003), validating its use as a measure of rasD promoter expression.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig7-v1.jpg)\n\n**Figure 7.:** (A) Dual promoter vectors used to drive constitutive GFP expression and gefE promoter (left) or rasD promoter (right) driven RFP expression. Cells growing in tissue culture plates were photographed with a fluorescence microscope on red channel (a and d), green channel (b and e) and both (c and f). (B) Ax3 cells transformed with rasD promoter vector were fractionated into RFP high and RFP low populations by FACS. These populations were mixed in a 5:95 ratio with unlabelled Ax3 cells. Cell fate choice was traced by constitutive expression of GFP at slug (a and b) and culminant (c and d) stages. White bars show regions of fewer GFP cells. (C) FACS sorted low or high rasD:RFP cells were cultured back in HL-5 medium. The ratio of RFP:GFP cells was scored over time.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01067/elife-01067-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Expression of rasD:RFP (\u2018text\u2019) in the prestalk populations of a clonal slug (left) and culminant (right). AP axis of both structures oriented top-bottom.\n\nWe next tested whether differences in rasD expression reflect differences in lineage bias. Firstly, we found that growth of cells in G\u2212 medium (conditions that increase the likelihood of DIF dependent lineage choice) resulted in a significant increase in the number of rasD:RFP expressing cells (73 \u00b1 3% to 89 \u00b1 5%) whereas no change was observed in gefE:RFP expressing cells. Secondly, growing rasD:RFP expressing cells were sorted by FACS based on their fluorescence and developed in chimera with wild type cells. Cells expressing lower levels of RasD were found to be less likely to differentiate as prestalk cells than prespore cells (Figure 7B). Surprisingly, however, cells expressing high rasD transcript levels can form both prespore and prestalk cells, as evidenced by their random distribution at both slug and culminant stages (Figure 7B). So, while there is an increased likelihood that high RasD cells will become prestalk cells compared to low RasD cells, they do not sort to pstO and pstB regions as might be expected. One likely explanation for this discrepancy is that the stability of the RFP protein may be different to endogenous RasD. For example, if RasD protein has a shorter half-life than RFP, then cells expressing RFP may no longer express RasD. These cells would thus not exhibit the expected prestalk bias and could differentiate as prespore cells.\n\nPopulation heterogeneity in gene expression, such as that observed for rasD expression, can be achieved if gene expression fluctuates stochastically or in response to other intrinsic or extrinsic factors (Raj and van Oudenaarden, 2008; Eldar and Elowitz, 2010). This often leads to the establishment of a dynamic equilibrium that allows populations to return to normal after perturbation or respond appropriately to environmental cues (Chang et al., 2008; Eldar and Elowitz, 2010). In order to test whether RasD behaves in this fashion, rasD high or rasD low expressing cells were purified by FACS and then regrown in culture. Each population quickly returned to its pre-sorted equilibrium (Figure 7C). It is interesting to note, however, that the low RasD expressing population exhibits slightly faster dynamics than the high RasD expressing population, thus supporting the idea that chimeric behavior may be affected by differences in RasD transcription/translation and RFP stability. Together these findings suggest that population heterogeneity is generated by dynamic rasD expression in vegetative cells and that extrinsic factors such as nutritional history affect the position of this dynamic equilibrium.\n\n## Discussion\n\nThe molecular mechanisms and gene regulatory networks controlling cell fate bias and lineage priming remain largely unknown. Our work, which identifies two bias genes, gefE and rasD, in Dictyostelium offers some insight. We find that transcription of rasD is heterogeneous in growing cells, whilst its activity is controlled by a ubiquitously expressed RasGEF, gefE. Expression of GefE is required to activate RasD in a subset of cells, which in turn sets the threshold at which these cells respond to the pstB/pstO differentiation inducer DIF.\n\n### Ras signaling and cell fate bias\n\nStudies on the possible role played by ras genes in Dictyostelium development have not been conclusive (Chubb and Insall, 2001). Initial studies carried out in cell lines expressing constitutively activated Ras(G12T) suggested Ras signaling played a key role in prestalk cell differentiation (Jaffer, 2000; Jaffer et al., 2001). When these cells were developed in chimera with wild type cells, they were shown to occupy the collar and back of slugs, consistent with our present findings using RasD(G12T) (Figure 6C). However, disruption of the gene encoding RasD, the major developmentally expressed Ras protein, was reported not to affect cell fate specification during clonal development (Wilkins et al., 2000). This led to the suggestion that observations with constitutively activated Ras could be an artifact or that lack of RasD could be compensated by upregulation of other Ras genes (Wilkins et al., 2000). We found that there was indeed compensatory upregulation of the highly related RasG protein during development in both rasD\u2212 and gefE\u2212 mutant backgrounds (data not shown) but that this did not affect lineage bias in chimeras with wild type cells. This suggests that GefE-mediated activation of RasD is uniquely important to confer lineage bias in Dictyostelium. Such bias can be viewed as giving some cells either a head start or handicap in a \u2018race\u2019 to adopt fates. Only a limited number of \u2018winning\u2019 cells will differentiate before feedback mechanisms restrict other cells from adopting this fate, a process akin to lateral inhibition. Indeed, an analogous form of cell competition has been observed during Drosophila development when a clone of slow growing mutant cells is surrounded by wild type cells (Levayer and Moreno, 2013; Vincent et al., 2013). In this case, slow growing mutant cells are often eliminated by the faster growing wild type cells, which overgrow and compensate for their absence (Simpson and Morata, 1981). Like cell fate bias, cell competition is thus based on measurements of relative fitness between neighboring cells. Consequently, disruption of competition or bias genes only results in subtle defects during when all developing cells are the same genotype, such as a delay in the timing of cell fate determination.\n\n### Heterogeneous Ras activation\n\nRas signaling has been the subject of intense study, with upstream and downstream components of Ras signaling pathways now well defined (Karnoub and Weinberg, 2008). However, we have less knowledge as to the possible importance of Ras regulation by transcriptional or post-translational control. Our studies using a reporter gene in which the rasD promoter drives RFP expression, reveals heterogeneous transcriptional activation of a ras gene within a population of growing Dictyostelium cells. Furthermore, this proportion increases when cells are transferred into medium lacking glucose. This indicates that there is a stochastic component to rasD gene expression that is influenced by external factors. In addition, when high or low rasD expressing cell populations are separated by FACS, they return to the pre-sorting equilibrium after a short period of growth. This suggests that cells freely transition between high and low rasD expressing subpopulations. Similar dynamic transcription has been observed in mammalian cell populations and is thought to represent slowly fluctuating transcriptomes that prime cell fate decisions both in the petri dish and during early embryogenesis (Chang et al., 2008; Silva and Smith, 2008; Kalmar et al., 2009; Canham et al., 2010; Abranches et al., 2013). Similarly, growing Dictyostelium cells expressing low levels of rasD transcripts are primed to become prespore cells during development, whilst RasD hyperactivation is sufficient to drive cells towards a prestalk cell fate. Surprisingly, however, we found that cells expressing high rasD:RFP transcript levels only exhibit a relatively weak prestalk preference. One interpretation of this finding is that if RasD protein has a shorter half life than RFP, then not all cells that express RFP would actually express RasD. Consequently, not all RFP expressing cells would exhibit a prestalk bias and may be free to differentiate as prespore cells, thus hindering experimental observation of their behavior. It is interesting to note, however, that similar observations of cell populations behaving more promiscuously in their lineage restriction than might be expected, have also been seen when fluorescent protein reporters are used in studies of the early mouse embryo and in embryonic stem cell cultures (Canham et al., 2010; Grabarek et al., 2012; Morgani et al., 2013). Most importantly, all these observations highlight the need for faithful real time reporters of gene expression, which will permit future studies of the regulation of RasD promoter activity, the molecular basis of transcriptional heterogeneity and lineage priming in general.\n\n### DIF sensitivity and cell fate bias\n\nImmediate-early DIF responses have been shown to be digital, with the number of responding cells being strongly affected by changes in DIF concentration, whereas the magnitude of the response in individual cells is largely unaffected (Stevense et al., 2010). This observation implies that (1) a response is only triggered once an internal threshold is exceeded and (2) the position of the threshold varies across a population. Work described in this report provides further support for this idea and gives mechanistic insight into how the DIF response threshold is set and, thus, how cell fate choice is regulated in vivo. Specifically, we find that GefE dependent heterogeneous RasD activation during the growth phase is required to set the normal DIF response threshold. However, several major questions emerge. For example, DIF is a developmental inducer that is present only after cells have been starved; yet the DIF response threshold is set (by RasD levels) before DIF exposure, in the growth phase. Indeed, heterogeneity in rasD expression is independent of DIF, as RasD expression is unaffected by DIF treatment (Jermyn et al., 1987 and data not shown). One clue to how this heterogeneity is generated comes from our observation that RasD protein levels are higher in cells grown in medium lacking glucose. This suggests that heterogeneity in metabolic state between cells may play a role in rasD regulation. However, other growth phase heterogeneities, including differences in cell cycle position (Gomer and Firtel, 1987; Araki et al., 1994; Thompson and Kay, 2000a), intracellular calcium concentration (Baskar et al., 2000; Azhar et al., 2001) and intracellular pH (Gross et al., 1983; Kubohara et al., 2007) have all also previously been shown to affect cell fate choice. However, the molecular basis underlying these heterogeneities, or whether they affect RasD expression, is currently unknown. It thus remains to be determined whether they are a cause or consequence of the observed differences in RasD levels. Furthermore, it is currently unknown how RasD activation affects the sensitivity of cells to DIF at the molecular level. Because gefE\u2212 and rasD\u2212 cells are capable of forming DIF dependent cell types during development and rasD transcription is not induced by DIF (Jermyn et al., 1987 and data not shown), these observations strongly suggest that RasD is not a central component of the DIF response pathway and that positive feedback through rasD transcriptional activation does not contribute to the binary switch. It thus appears that RasD only \u2018tunes\u2019 responses to DIF, rather than being integral to the DIF response per se. One clue to the molecular basis of this regulation, however, comes from the finding that the rapid (within 10 min) nuclear translocation of GATAc-GFP in response to DIF is affected in the gefE\u2212 mutant. Consequently, it seems likely that the tuning effects of RasD act during the immediate-early phase of the DIF response. However, to fully understand how this tuning of DIF sensitivity occurs will require a greater knowledge of the DIF signaling pathway itself, and crucially how each component is regulated (as all components represent potential RasD targets). For example, to date, only a small number of transcription factors and one protein kinase have been shown to be crucial for DIF signal transduction and responses (Fukuzawa et al., 2001; Thompson et al., 2004a; Zhukovskaya et al., 2006; Huang et al., 2006a; Keller and Thompson, 2008; Araki et al., 2012). However, the regulation of their activity is complex, requiring control by posttranslational modifications, as well as subcellular localization (Fukuzawa et al., 2001, 2003; Thompson et al., 2004a; Zhukovskaya et al., 2006; Huang et al., 2006a; Araki et al., 2008, 2012; Keller and Thompson, 2008). It is therefore possible that RasD alters the activity of specific protein kinases or transcription factors or hitherto unknown DIF signaling components, making them more likely to be DIF induced. In this way, because the DIF signaling pathway is intact in rasD\u2212 and gefE\u2212 mutant cells, they would still respond to DIF (albeit less efficiently than wild type) when given prolonged exposure to the signal. Finally, it is unclear to what extent inputs from different signaling pathways are also integrated to modulate the sensitivity of cells to DIF in response to nutritional bias, or other modulators of cell fate bias. Indeed, it is likely that the effects of nutrition are only partially explained by GefE activity. For example, when gefE\u2212 mutant cells are grown in the absence of glucose are compared to wild type cells grown in the presence of glucose, they do not produce as many spores in chimeric development. Furthermore, the Dictyostelium retinoblastoma ortholog, RblA, is a cell cycle regulated protein whose expression level during the growth phase is correlated with both DIF sensitivity and cell fate preference during development (MacWilliams et al., 2006). Interestingly, rblA\u2212 mutant cells display hypersensitivity to DIF and adopt collar and back cell fates when mixed with wild type cells in chimera, perhaps indicating a degree of antagonism between Ras and Retinoblastoma signaling. Similarly, knock out of the Glycogen Synthase Kinase 3 homolog, gskA, results in DIF hypersensitivity and the gskA\u2212 strain preferentially forms basal disc cells at the expense of spores when developed clonally (Harwood et al., 1995; Schilde et al., 2004). Such similarities, as well as clear phenotypic differences (data not shown), suggest this level of complexity allows the DIF signal to be integrated into multiple fate choices during development.\n\n### Dictyostelium as a model for lineage priming\n\nDevelopment in Dictyostelium is unusual, being based on aggregation of separate cells, rather than division of a fertilized egg. However, remarkable similarities are emerging between this evolutionarily ancient organism and the behavior of embryonic stem cell cultures, and indeed lineage specification in the early mouse embryo. (1) Salt and pepper differentiation of prestalk and prespore cells: During mouse embryogenesis, the PrE and EPI lineages arise from the ICM. Each lineage can be clearly defined at later stages through specific gene expression profiles, as well as their position within the blastocyst. However, at the earliest stages cells expressing PrE and EPI lineage markers are intermingled, with active sorting out observed at later stages (Dietrich and Hiiragi, 2007; Plusa et al., 2008; Yamanaka et al., 2010). (2) Dynamic expression of lineage priming/specific gene expression: observations in cell culture reveal expression of ICM cell fate markers such as Hex (Canham et al., 2010) and Nanog (Chambers et al., 2007; Kalmar et al., 2009b) is highly heterogeneous. When high or low level expressing cells are separated by FACS, the population structure returns to an equilibrium on time-scale of hours to days. Most importantly, differences in expression levels also correlate well with fate preferences in chimeric development (Canham et al., 2010). (3) Modulation of Ras activation affects lineage choice: although FGF activates multiple pathways, genetic studies indicate that the Grb2 > Sos (RasGEF) > Ras > Erk axis is the most important during differentiation of both ES cells and PrE (Chazaud et al., 2006; Lanner and Rossant, 2010). (4) Heterogeneous responses/thresholds to differentiation signals: FGF signaling is required for normal EPI/PrE differentiation (Yamanaka et al., 2010). However, it has recently been shown that salt and pepper expression pattern of EPI and PrE markers does not require FGF signaling (Kang et al., 2013). Rather, activation of this pathway is associated with exit from pluripotent state and commitment to the PrE fate. Finally when FGF levels are manipulated, the proportion of PrE:EPI cells correlates well with FGF levels, implying existence of cell intrinsic threshold to FGF (Yamanaka et al., 2010; Grabarek et al., 2012).\n\n### Understanding the molecular basis of lineage priming\n\nWhile it is clear that multicellular development requires extreme precision, there is a growing realization that key decisions are biased by heterogeneous behavior between equipotent cells. Population level variation in sensitivity to a global signal is one way to generate diversity. However, our understanding of the mechanistic basis of lineage priming is still in its infancy. One reason for this is that mutants in lineage priming genes may only show subtle defects during clonal development. Importantly, our study highlights that testing chimeric effects can uncover important regulatory roles for these genes. Due to the relative ease with which chimeric development can be assayed in Dictyostelium, it seems likely that studies in this model system will lead to a better understanding of how lineage biases are acquired and potentially how they might be manipulated to increase the efficiency of stem cell based therapeutics.\n\n## Materials and methods\n\n### Cell culture and development\n\nDictyostelium strains were cultured on lawns of Klebsiella aerogenes or in HL5 medium with (G+) or without (G\u2212) 86 mM glucose. Cells were grown in shaken suspension for 2\u20134 days for G\u2212 phenotypes. All cultures were maintained at log phase (1\u20134 \u00d7 106 cells/ml) during this period. Cells transformed by electroporation were selected with blasticidin (10 \u00b5g/ml) or G418 (20\u201340 \u00b5g/ml). For development, amoebae were washed with KK2 (16.1 mM KH2PO4, 3.7 mM K2HPO4) and deposited onto KK2 plates containing 1.5% purified agar (Oxoid) at a density of 3.5 \u00d7 106 amoebae/cm2. Plates were kept for 14\u201316 hr at 22\u00b0C in a dark, moist box then removed and allowed to complete development in the light.\n\n### Genetic selection for bias mutants\n\nREMI mutagenesis (Kuspa and Loomis, 1992) was performed as described in Parkinson et al., 2011. 25 individual transformations producing approximately 1000 mutant clones were pooled after 4 days growth in 10 \u00b5g/ml blasticidin. This library of clones was used to perform two selections in parallel. Mutant G\u2212 cells were mixed with GFP labelled wild type G+ cells at a 10:90 ratio and developed to the mature fruiting body stage. Spores were collected first into spore buffer (10 mM EDTA, 0.1% NP-40) and then into HL5 +86 mM glucose. After hatching, amoebae were incubated with 10 \u00b5g/ml blasticidin for 4 days to remove wild type cells and enrich for mutants. This selection was repeated for seven rounds. Mutant loci were identified by iPCR (Keim et al., 2004).\n\n### DIF assays\n\nStalk cell differentiation was quantified using the cAMP removal described in Thompson et al., 2004a. Expression of ecmA:lacZ and ecmB:lacZ reporter genes was induced by addition of 0.01\u2013100 nM DIF-1 and 50 \u00b5M cerulenin to stalk medium (10 mM MES, pH6.2, 1 mM CaCl2, 2 mM NaCl, 10 mM KCl, 200 \u03bcg/ml streptomycin sulphate) containing 5 mM cAMP. After 22 hr incubation at 22\u00b0C, levels of lacZ in cell lysates measured as described in Parkinson et al., 2011. Endogenous levels of ecmA and ecmB after 9 hr induction with 0.01\u2013100 nM DIF were measured by qPCR as described in Huang et al., 2006. Nuclear translocation of GATAc-GFP in response to 100 nM DIF was measured as described in Keller and Thompson, 2008.\n\nIndividual-cell responses to DIF quantified by knocking in a single copy of GFP at the endogenous ecmA locus. Cells were incubated in stalk medium + 5 mM cAMP for 9 hr. Then, another 200 \u00b5l dose of 200 mM cAMP was added with 0.01\u2013100 nM DIF. After a further 9 hr incubation, cells were resuspended in 1 ml KK2 and analysed on a Beckman Coulter Cyan ADP FACS machine.\n\n### RasD expression level and cell fate choice\n\nExponentially growing rasD:RFP promoter cells were subjected to FACS analysis. Cells expressing low levels of actin:GFP were removed and high and low RasD expressing cells were collected. Those cells were mixed with unlabelled wild type cells in a 5:95 ratio and developed in chimera. To measure dynamics of RasD expression, FACS sorted low or high rasD:RFP cells were returned to HL-5 medium. As the numbers of recovered cells was quite low, unlabelled wild type cells were added to ensure exponential growth. The number of RFP/GFP expressing cells was scored every 12 hr for 2 days.\n\n### Qualitative and quantitative observations of cell fate\n\nDevelopmental structures were observed under a Leica S6D dissection microscope or a Leica MZ16FA stereoscope. Whole-mount lacZ staining performed as described in Dingermann et al., 1989. For measurement of prespore:prestalk ratio, dissociated slug stage cells were disaggregated in KK2/20 mM EDTA with 21 G needle. Cells were then fixed and stained with prespore-specific anti-psv antibody as described in Forman and Garrod, 1977. For measurement of total spore number, 2 \u00d7 106 cells in 20 \u00b5l were spotted onto KK2 agar and incubated at 22\u00b0C in the dark for 2 days. Spores were harvested in KK2 with 0.1% NP40/20 mM EDTA and scored with a hemocytometer.\n\n### Knockout constructs\n\nThe gefE\u2212 mutant allele (Wilkins et al., 2005) was obtained from the Dictybase Stock Center. In this study, two additional gefE\u2212 mutant alleles were generated. To disrupt the catalytic domain, a 2.1 kb fragment of the gefE gene was amplified by PCR (5\u2032-GTAATGGCTCGAAAGTCCTTC and 5\u2032-TTAAGACTTAAAAGAATT) and cloned into the TOPO pcr2.1 vector. A floxed blasticidin resistance cassette derived from pLPBLP by Sma1 digestion was then inserted by blunt ligation at the endogenous Bst171 site in the catalytic domain of gefE. A second construct was made to delete a region of 855 bp from the catalytic domain. Two fragments of the gefE gene incorporating restriction sites were amplified by PCR (gefE_sal\u2013AGGCGTCGACCACCCTATAGTCCAGATAC, gefE_nco\u2013AGGCATCGGAATCTCTGTTGGATC, gefE_pst\u2013ATGCTGCAGCAGTTTCTGATCGACC, gefE_not\u2013ATAGCGGCCGCCGTTGATTATGAGCAT) and cloned into pLPBLP, one on each side of the floxed blasticidin. The rasD\u2212 mutant allele described in this paper was recreated with the pATW1 construct used to generate the original rasD\u2212 knockout (Wilkins et al., 2000).\n\n### Expression constructs\n\nFor constitutive reporter gene expression, pDM318 or pDM324 (Veltman et al., 2009) were used. For cell type specific expression studies pDd19 (pspA), pEcmAO-gal and pEcmB-gal vectors (Jermyn and Williams, 1991) were used. Reporter genes were cloned into these vectors as required. The complete 3.1 kb gefE coding sequence was amplified from wild type cDNA by designing primers (gefEF BamHI EEtag\u2013CCCGGATCCAAAATGGAATATATGCCAATGGAAATGGATCATACTGAGTGTAAC, gefER SpeI-AATTACTAGTAGACTTAAAAGAATTTAAAAG) and cloned into pDM324 with the appropriate restriction sites. The complete rasD gene was amplified from wild type gDNA by designing primers (rasDF BglII EEtag\u2013CCCAGATCTAAAATGGAATATATGCCAATGGAAACAGAATATAAATTAGTTATTGTAGG, rasDR SpeI\u2013CCCCACTAGTTAAAATTAAACATTGTTTTTTC) and cloned into pDM318 with the appropriate restriction sites. Using this vector as a template, primers were designed (G12TF\u2013GTTATTGTAGGTGGTACTGGTGTTGGTAAAAGTGC, and G12TR\u2013GCACTTTTACCAACACCAGTACCACCTACAATAAC) to generate the rasD(G12T) vector by PCR using a QuikChange I Site-Directed Mutagenesis Kit (Agilent Technologies, UK).\n\nFor gefE and rasD promoter studies, 900 bp or 700 bp of upstream sequence plus the first 7 or 13 codons, respectively, were amplified by designing primers (gefEpF XhoI\u2013AATTCTCGAGCAAAATTGATTGTAAAGCTGG, gefEpR BglII\u2013AATTAGATCTGTTACACTCAGTATGATCCAT, rasDpF XhoI\u2013ACTGCTCGAGTCTTATAATTTGGTTAAATCGATG, and rasDpR BglII\u2013AAAAGATCTACCACCACCACCTACAATAAC) and cloned into pDM324 with appropriate restriction sites. To ensure variation in RFP expression was specific to gefE or rasD promoters, actin promoter-driven GFP was cloned from pDM327 (Veltman et al., 2009) into NgoMIV site of each vector.\n\n### ecmA promoter: GFP knock-in\n\nFirst, the full length of GFP gene was amplified from pTX-GFP (Levi et al., 2000) by PCR (GFPf_SalI\u2013acgcGTCGACGGAACCAGTAAAGGAGAAGAAC and GFPr_stop_HindIII\u2013acgcAAGCTTTTATGCATCTCGAGTGGAACC) and cloned into SalI/HindIII sites of pLPBLP (Faix et al., 2004). Then, two 2000 bp fragments of the upstream sequence plus the first codon and the downstream sequence including the stop codon of the ecmA gene were amplified from wild type genomic DNA by designing primers (ecmA_up_F_KpnI acgcGGTACCATAGTCGATAATTTCATTACATCATC, ecmA_up_R_SalI acgcGTCGACCATTTTCAACGTTATAATTTTTAAAC, ecmA_down_F_PstI acgcCTGCAGTAAATAACTCTTTTTATTTAATTATATTTT, and ecmA_down_R_BamHI acgcGGATCCTACGTATTGAAATTCATCATCC). These PCR products were cloned into the GFP integrated pLPBLP with appropriate restriction sites. This construct was digested with KpnI/BamHI and electroporated into wild type or gefE\u2212 mutant cells to generate GFP knock-in recombinants.\n\n### Ras activation assay\n\nVegetative or 12 hr filter developed cells were washed three times in Bonner\u2019s salts (10 mM NaCl, 10 mM KCl, 2 mM CaCl2). Cells were lysed with 2 X lysis buffer (20 mM sodium phosphate, PH 7.2, 2% Triton X-100, 20% glycerol, 300 mM NaCl, 20 mM MgCl2, 2 mM EDTA, 2 mM Na3VO4, 10 mM NaF, containing two tablets of protease inhibitor [Roche Complete] per 50 ml buffer). 400 \u03bcg of protein was then incubated with 100 \u03bcg of GST-Byr2-RBD on glutathione-sepharose beads at 4\u00b0C for 1 hr (Bolourani et al., 2010). The glutathione-sepharose beads were harvested by centrifugation and washed three times in 1 X lysis buffer. 50 \u03bcl of 1 X SDS gel loading buffer was then added to the pelleted beads and the suspension boiled for 5 min. Samples were subjected to SDS-PAGE and Western blots probed with anti-RasD specific antibody.\n",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "da2ae18d-9480-4827-85be-af8536b08d10",
+      "submission_id": "9beade53-1a8b-484f-a5d5-918f748c4292",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Janet Rossant, University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01067.017](https://doi.org/10.7554/eLife.01067.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cDevelopmental lineage priming by heterogeneous Ras activation\u201d for consideration at eLife. Your article has been favorably peer reviewed by a Senior editor and two other reviewers.\n\nThe Senior editor and the other reviewers discussed their comments before we reached this decision, and the Senior editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers all agreed that this work has provided novel insights into the mechanisms whereby lineage segregation can arise in a seemingly homogeneous population of cells. The aggregating slime mold system provides an interesting model to explore this mechanism, which has relevance in many other developmental systems. Previous work established that differentiation towards stalk or spore cells could be biased by the past history of the cells \u2013 cell cycle position or growth with or without glucose \u2013 and that this bias was manifest as altered sensitivity to the morphogen DIF. However, there were no clues as to the molecular basis of the bias. Your use of a novel genetic screen to identify GefE (a RasGEF) as a key downstream component in the pathway has opened up new insights into to the role of Ras activation levels in establishing cell heterogeneity and lineage specification. The reviewers do have some major concerns that would need to be addressed, most likely by additional experimentation, before we could reconsider the article for publication in eLife.\n\n1) The selection for biased mutants is much more effective than expected. In Figure 1A around 20% of the input G-cells become spores (2% of 10%), and thus a mutant where all input cells become spores will only be enriched 5-fold per round of selection. If GefE- was present as 1/3000 of the input cells (according to the size of the REMI library) then after 2 rounds of selection it could maximally only comprise 0.8% of the population. Yet according to one of the figures it is nearly 40%. This could be explained in 2 ways: i) the REMI library was very heavily biased to GefE- cells; or ii) the selection does not work as expected. Perhaps spore germination in axenic medium is very asynchronous and GefE- cells are selected at the start of each cycle because they hatch quickly?\n\nThere should be an attempt to resolve this conundrum. For instance a reconstruction experiment to show how efficiently GefE- cells are selected; an idea of how complex the REMI library actually was (if possible) or whether repeat selections give different genes. Was GefE the only mutation isolated in the screen? Were multiple mutations in gefE isolated?\n\n2) The heterogeneity of the RasD reporter is very interesting, but the chimera data appears somewhat confusing. Is the high RasD population making spore cells? Figure 7B seems to indicate that the high RasD population is good at making everything, but the low RasD population is excluded from the pre-stalk. Does Dif affect the probability that a cell is RasD positive or the extent to which it expresses RasD? How does this fit in with the binary ecm switch?\n\n3) It was not clear why you think that variations in transcription of RasD could relate to cell fate, given that it is the levels of activated Ras that seem to relate to cell fate bias. Does this imply that RasD must be limiting in wild type cells and that it is converted to the ATP bound form upon translation? Perhaps this could be tested by Western blot? Or perhaps they could try over expressing RasD in wild type and GefE mutants, and assess the extent of rescue and levels of RasD-ATP? What happens to RasD protein levels? The authors seems to have a good antibody to RasD (not a given in this field) and so they could ask questions about protein levels: for instance whether cells sorted for high RasD expression actually have high RasD protein, or whether G- cells have more RasD than G+ cells.\n\n[Editors\u2019 note: the revised manuscript was re-reviewed, with the following revision requests.]\n\nThank you for resubmitting your work entitled \u201cDevelopmental lineage priming by heterogeneous Ras activation\u201d for further consideration at eLife. Your revised article has been favorably evaluated by a Senior editor and a member of the Board of Reviewing Editors. The manuscript has been improved and the reviewers favour publication. However, one reviewer has a remaining issue that should be addressed before acceptance, as outlined below:\n\nWith respect to the differences in the behavior of the RasD positive population the authors argue that the stability of the RFP explains the more promiscuous behavior of the RasD+ cells. This has also been observed in ESCs, as populations marked by fluorescent proteins have less defined functional activity. However, I am still a little confused about the dynamics of RasD response. The authors claim that RasD levels are DIF independent and this would be very interesting, but I am still confused as to what they think the mechanism is? They argue that RasD is only a part of early response, rather than the switch itself. How would this work? How does a RasD- cell respond to Dif? Perhaps they could clarify these issues further.\n",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9275584b-b1ed-4e6b-8244-8da213bb0a5d",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C1",
+      "claim": "Genetically identical cells in cell culture often exhibit heterogeneous behavior, with only 'lineage primed' cells responding to differentiation inducing signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In cell culture, genetically identical cells often exhibit heterogeneous behavior, with only 'lineage primed' cells responding to differentiation inducing signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on heterogeneous cell behavior in culture.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "3e2c7e3a-b3d8-4c96-9601-a982dc9dd1dc",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C2",
+      "claim": "Heterogeneity exists during normal embryonic development to allow position independent patterning based on 'salt and pepper' differentiation and sorting out.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been proposed that such heterogeneity exists during normal embryonic development to allow position independent patterning based on 'salt and pepper' differentiation and sorting out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal cited from recent literature about developmental patterning mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "9d710a85-64c1-4eb4-aea4-081a46f1f540",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C3",
+      "claim": "The Ras-GTPase regulator gefE is required for normal lineage priming and salt and pepper differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies reveal that the Ras-GTPase regulator gefE is required for normal lineage priming and salt and pepper differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the genetic studies described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "ab27166f-1c51-4578-8b5a-e969f4aec6f5",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C4",
+      "claim": "Ras-GTPase activity sets the intrinsic response threshold to lineage specific differentiation signals.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because Ras-GTPase activity sets the intrinsic response threshold to lineage specific differentiation signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion drawn from experimental data on gefE and RasD function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "6a6341f8-9d25-4af7-b1c8-aef1b5a7bfb1",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C5",
+      "claim": "gefE expression is uniform during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that although gefE expression is uniform, transcription of its target, rasD, is both heterogeneous and dynamic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by reporter gene expression data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "828e17eb-3fb0-41aa-b713-f0d0a33372c2",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C6",
+      "claim": "rasD transcription is both heterogeneous and dynamic.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that although gefE expression is uniform, transcription of its target, rasD, is both heterogeneous and dynamic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by reporter gene expression and FACS analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "0556f7da-48db-4a77-9230-4c8adbbf2552",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C7",
+      "claim": "Cells grown without glucose preferentially become stalk cells when mixed in chimeric development with glucose grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, cells grown without glucose preferentially become stalk cells when mixed in chimeric development with glucose grown cells (Leach et al., 1973; Noce and Takeuchi, 1985; Blaschke et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and confirmed by data in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "b7e6ab45-5a3c-4713-86b5-f384915e14bd",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C8",
+      "claim": "G\u2212 cells produce significantly fewer spores than G+ cells when developed together in chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, we find that cells grown in the absence of glucose (G\u2212) produce significantly fewer spores than cells grown in the presence of glucose (G+) when developed together in chimera (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative spore counting data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "34ee32a2-d749-47de-b298-c6dc86d342dc",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C9",
+      "claim": "G\u2212 cells are biased towards the DIF dependent pstO and pstB lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "our analysis of the patterning of cell types at the slug and fruiting body stages reveals that this is because G\u2212 cells are biased towards the DIF dependent pstO and pstB lineages (Figure 1B, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of cell type markers in chimeric slugs shown in Figure 1B and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "20249d06-9fdb-442e-907d-6e73ba192cd2",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C10",
+      "claim": "G\u2212 cells are more sensitive to DIF than G+ grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous studies showing G\u2212 cells are more sensitive to DIF than G+ grown cells (Thompson and Kay, 2000a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and confirmed by data in Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "3b49b5d8-ec35-4579-9994-b684eab4b6e9",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C11",
+      "claim": "The REMI mutant library initially contained approximately 1000 individual blasticidin resistant clones.",
+      "claim_type": "EXPLICIT",
+      "source": "a REMI mutant library estimated to initially contain approximately 1000 individual blasticidin resistant clones was hatched from a frozen stock two times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup for the genetic screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "ca7c7e21-1b43-4e40-a3f1-b0c56998debb",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C12",
+      "claim": "Inverse PCR revealed the pool of cells in later rounds to be largely composed of clones in which the REMI plasmid had integrated into a small 5\u2032 42 bp exon within the gefE gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Inverse PCR revealed the pool of cells in later rounds of each pool selection to be largely composed of clones in which the REMI plasmid had integrated into a small 5\u2032 42 bp exon within the gefE gene (Figure 1D, Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by iPCR data and shown in Figure 1D and Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "533cad03-6fd2-4256-ab5c-4fb831df7e88",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C13",
+      "claim": "There is no difference in the rate of growth of gefE\u2212 mutant cells in either G+ or G\u2212 medium compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstruction experiments revealed no difference in the rate of growth of gefE\u2212 mutant cells in either G+ or G\u2212 medium",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by growth rate measurements shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "30f39c4e-2de6-482a-a5b5-43411f433e6e",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C14",
+      "claim": "gefE\u2212 mutant spores hatch at a faster rate than wild type spores.",
+      "claim_type": "EXPLICIT",
+      "source": "although gefE\u2212 mutant spores did, however, hatch at a faster rate than wild type spores",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by spore hatching assays shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "ad8e3682-1611-41a5-b78c-628157127939",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C15",
+      "claim": "When wild type or gefE\u2212 mutant G\u2212 grown cells were developed in chimera with G+ wild type cells, mutant G\u2212 cells were significantly overrepresented in the spore population of chimeric fruiting bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, when wild type or gefE\u2212 mutant G\u2212 grown cells were developed in chimera with G+ wild type cells, mutant G\u2212 cells were significantly overrepresented in the spore population of chimeric fruiting bodies (Figure 1E, p<0.04)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative spore counting data shown in Figure 1E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "0d1872c5-7e3f-4700-af50-506215205894",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C16",
+      "claim": "Mutant G\u2212 cells do not show the strong overrepresentation in the collar and back populations of chimeric slugs seen when wild type G\u2212 cells are mixed with wild type G+ grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because mutant G\u2212 cells do not show the strong overrepresentation in the collar and back populations of chimeric slugs seen when wild type G\u2212 cells are mixed with wild type G+ grown cells (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of chimeric slugs shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "8c3eb671-461c-493f-9275-f9449bc4c58e",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C17",
+      "claim": "gefE\u2212 cells form more spores than wild type cells when both are grown under identical growth conditions in the presence of glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, wild type and mutant cells were grown under identical growth conditions in the presence of glucose before mixing for chimeric development. Under these conditions, gefE\u2212 cells still formed more spores than wild type cells (Figure 2A, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative spore counting data shown in Figure 2A with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "bfbde092-dcbc-47a3-93e1-04c1a8954f81",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C18",
+      "claim": "In chimeric slugs, labelled gefE\u2212 mutant cells were enriched in the prespore region and excluded from the DIF dependent pstB and pstO cell fates.",
+      "claim_type": "EXPLICIT",
+      "source": "In chimeric slugs, labelled mutant cells were enriched in the prespore region and excluded from the DIF dependent pstB and pstO cell fates, whilst labelled wild type cells were localized in the pstB and pstO regions of the slug (Figure 2B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of chimeric slugs shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "b50c86a1-d5d3-404d-87e0-85ac58f837c1",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C19",
+      "claim": "When GefE expression was driven by a strong constitutive promoter in wild type cells, cells expressing high gefE levels were found largely in the pstO and pstB regions of slugs and in the lower cup of fruiting bodies when mixed with wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when GefE expression was driven by a strong constitutive promoter in wild type cells, cells expressing high gefE levels were found largely in the pstO and pstB regions of slugs and in the lower cup of fruiting bodies when mixed with wild type cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of chimeric development shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "f55f6514-9c79-454d-8d07-8aad2ed27722",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C20",
+      "claim": "Expression of gefE is required for biasing cells to adopt DIF dependent pstO and pstB cell fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that expression of gefE is required for biasing cells to adopt DIF dependent pstO and pstB cell fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the chimeric development experiments shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "435122d5-4079-4465-9ef5-38c7af4b3bd6",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C21",
+      "claim": "Clonal development of gefE\u2212 mutant was morphologically identical to that of the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal development was found to be morphologically identical to that of the wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from clonal development experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "7763dd16-f2dd-451b-bc43-62a05bc34726",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C22",
+      "claim": "The number of prespore cells in gefE\u2212 mutant slugs was the same as that observed in wild type slugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the number of prespore cells in gefE\u2212 mutant slugs was found to be the same as that observed in wild type slugs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by quantification shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "fcf6c306-db52-4a9c-acea-0b5985c66f15",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C23",
+      "claim": "The total number of spores produced in terminal fruiting bodies was the same for the gefE\u2212 mutant as for the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "and the total number of spores produced in terminal fruiting bodies was the same for the gefE\u2212 mutant as for the wild type (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "f4bd98ce-6c55-4183-a35e-dd89e1a6a7a7",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C24",
+      "claim": "There was no defect in prestalk cell specific gene expression in gefE\u2212 mutant slugs or fruiting bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also no defect in prestalk cell specific gene expression in slugs or fruiting bodies (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of marker gene expression shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "92e62b25-f464-4109-82e6-f32ef3e4c275",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C25",
+      "claim": "The only difference between the clonal development of the gefE\u2212 cells and the wild type was a slight, although reproducible, delay in the initiation of aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "The only difference between the clonal development of the gefE\u2212 cells and the wild type was a slight, although reproducible, delay in the initiation of aggregation (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from clonal development experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "b1e47e49-5a67-4f77-afc6-6be422a7049e",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C26",
+      "claim": "The gefE gene is involved in lineage priming rather than lineage commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are, therefore, consistent with the gefE gene being involved in lineage priming rather than lineage commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that clonal development is normal but chimeric development shows biases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "9f4d9d1b-6220-49fc-a8f6-c37e0b6d7399",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C27",
+      "claim": "The lineage bias of the gefE\u2212 mutant cells is dependent on the growth history of the partner genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, the lineage bias of the gefE\u2212 mutant cells was found to be dependent on the growth history of the partner genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by chimeric development experiments shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "322cdf54-88d0-4700-ae92-b9b037244f18",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C28",
+      "claim": "gefE\u2212 mutant cells were strongly biased towards DIF dependent fates when grown in the G\u2212 medium and then mixed with mutant cells grown in G+ medium.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, gefE\u2212 mutant cells were strongly biased towards DIF dependent fates when grown in the G\u2212 medium and then mixed with mutant cells grown in G+ medium (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of chimeric slugs shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "55ff7a3d-5c3a-454a-9a9a-9e85f86effd9",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C29",
+      "claim": "gefE\u2212 cells are totipotent.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments provide strong evidence that gefE\u2212 cells are totipotent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that gefE\u2212 cells can form all cell types depending on context.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "7ccf1272-8a4a-4857-be2c-36917b0e52d8",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C30",
+      "claim": "GefE regulates context dependent/relative DIF dependent lineage bias rather than cell fate choice.",
+      "claim_type": "EXPLICIT",
+      "source": "and that GefE regulates context dependent/relative DIF dependent lineage bias rather than cell fate choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the totality of chimeric and clonal development experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "1311d434-5ad5-47a4-84be-33c158fbe932",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C31",
+      "claim": "gefE\u2212 mutant cells make fewer stalk cells than wild type across a 1000-fold range of DIF concentrations in the cAMP removal monolayer assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that gefE\u2212 mutant cells make fewer stalk cells than wild type across a 1000-fold range of DIF concentrations in the cAMP removal monolayer assay but exhibit similar sensitivity to changes in DIF concentration (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by stalk cell differentiation assays shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "f388c53f-1b4b-4a46-9c57-9a62bd99b62e",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C32",
+      "claim": "gefE\u2212 mutant cells exhibit similar sensitivity to changes in DIF concentration as wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that gefE\u2212 mutant cells make fewer stalk cells than wild type across a 1000-fold range of DIF concentrations in the cAMP removal monolayer assay but exhibit similar sensitivity to changes in DIF concentration (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the parallel dose-response curves in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "4ec06f07-4275-43a4-a05d-7064b6873066",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C33",
+      "claim": "Growth in the absence of glucose results in a similar increase in DIF sensitivity in both wild type and gefE\u2212 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, growth in the absence of glucose results in a similar increase in DIF sensitivity in both wild type and mutant cells (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing G+ and G\u2212 conditions in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "2386718f-9046-4ec2-9d08-b8e28aca0251",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C34",
+      "claim": "GefE is only required to set basal levels of DIF sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "thus suggesting that GefE is only required to set basal levels of DIF sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that gefE mutation shifts the dose-response curve but doesn't change its shape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "6e3c4b7b-21ff-4a3f-bbbb-079695bd9ef3",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C35",
+      "claim": "DIF induced gene expression of ecmAO:lacZ and ecmB:lacZ reporters was reduced in the gefE\u2212 mutant compared to wild type at all DIF concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first experiment, cells were transformed with ecmAO:lacZ or ecmB:lacZ reporter genes. DIF induced gene expression of these reporters was reduced in the gefE\u2212 mutant compared to wild type at all DIF concentrations, but showed a similar sensitivity to changes in DIF concentration (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by reporter gene expression assays shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "42182ba4-29ce-4ddc-8380-a15a53bad92f",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C36",
+      "claim": "Endogenous ecmA and ecmB transcript levels in response to DIF induction showed similar patterns in gefE\u2212 mutant as reporter genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result was seen when endogenous ecmA and ecmB transcripts were measured in response to DIF induction (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by qPCR data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "533b6803-be31-4a00-b8a7-ba4f354811dc",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C37",
+      "claim": "GATAc is a transcription factor that translocates to the nucleus minutes after DIF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "GATAc is a transcription factor that translocates to the nucleus minutes after DIF stimulation and is specifically required for DIF dependent pstB cell differentiation (Keller and Thompson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "61ba24f3-6bb0-491c-8f42-821ce30af9f2",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C38",
+      "claim": "In gefE\u2212 mutant cells basal levels of nuclear GATAc were similar to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "In gefE\u2212 mutant cells basal levels of nuclear GATAc were similar to wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from GATAc-GFP localization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "a93dfbac-4653-4c9d-b7b4-de7241741f2e",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C39",
+      "claim": "When gefE\u2212 mutant cells were stimulated with DIF, the rate and duration of GATAc-GFP nuclear accumulation were largely unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when gefE\u2212 mutant cells were stimulated with DIF, the rate and duration of GATAc-GFP nuclear accumulation were largely unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by time-course data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "14d55a7f-3263-4cb0-b872-c889e721437c",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C40",
+      "claim": "Large differences were seen in the number of gefE\u2212 mutant cells that exhibit nuclear GATAc accumulation compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, large differences were seen in the number of gefE\u2212 mutant cells that exhibit nuclear GATAc accumulation compared to wild type (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification of responding cells shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "72bc9556-ffd9-432d-9f32-50ddbcf4367a",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C41",
+      "claim": "gefE\u2212 cells are less sensitive to DIF than wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that gefE\u2212 cells are less sensitive to DIF than wild type cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple DIF response assays shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "e4947b98-e1a8-409c-9df8-4c40f597a3f0",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C42",
+      "claim": "GefE biases cells towards DIF sensitive fates.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the idea that GefE biases cells towards DIF sensitive fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the totality of DIF sensitivity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "ce614e0b-c59a-4a39-b905-42025e573a27",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C43",
+      "claim": "DIF induced transcription of the prestalk gene, ecmA only occurs once a cell intrinsic threshold is exceeded.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been shown that DIF induced transcription of the prestalk gene, ecmA only occurs once a cell intrinsic threshold is exceeded; increased DIF dose only results in a small change in target gene expression level in each cell, but a much larger increase in the number of cells that respond (Stevense et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "72fe9b1e-0c8d-49fa-b038-5daf7f860f7a",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C44",
+      "claim": "The reduced DIF responsiveness of the gefE\u2212 mutant is due to an increase in the threshold required to trigger a transcriptional response.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, hypothesised that the reduced DIF responsiveness of the gefE\u2212 mutant was due to an increase in the threshold required to trigger a transcriptional response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested by the experiments shown in Figure 5.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "ae1ab430-6363-4eda-94da-a5906b78c585",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C45",
+      "claim": "GFP was expressed from the ecmA promoter in the same localization in slugs and fruiting bodies as has been previously described for ecmA-LacZ.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we replaced the endogenous copy of the ecmA gene with GFP (Figure 5A), and showed that GFP was expressed from the ecmA promoter in the same localization in slugs and fruiting bodies (Figure 5B) as has been previously described for ecmA-LacZ (Jermyn and Williams, 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging shown in Figure 5B and comparison to cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "117a0879-8c18-4514-b07e-a8ba1ebbf6cb",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C46",
+      "claim": "In wild type controls, increasing DIF concentrations resulted in greater numbers of GFP expressing cells, with only a small change in GFP expression level per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in wild type controls, increasing DIF concentrations resulted in greater numbers of GFP expressing cells, with only a small change in GFP expression level per cell (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FACS analysis shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "c921125b-8004-4eb7-bfba-619df389d79c",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C47",
+      "claim": "At all concentrations of DIF, the number of responding gefE\u2212 mutant cells was lower than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, at all concentrations of DIF, the number of responding gefE\u2212 mutant cells was lower than wild type (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FACS analysis shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "1451e36e-58e1-4d82-b9aa-dbb841b56144",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C48",
+      "claim": "There was little difference in the level of ecmA:GFP expression between individual wild type or gefE\u2212 mutant responding cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was little difference in the level of ecmA:GFP expression between individual wild type or gefE\u2212 mutant responding cells (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FACS analysis shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "e3558141-8067-41b1-ad68-6bd291d6543c",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C49",
+      "claim": "gefE regulates the cell-intrinsic threshold at which cells respond to DIF.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data provide strong support for the idea that gefE regulates the cell-intrinsic threshold at which cells respond to DIF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the FACS analysis of individual cell responses shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "c1c2dda8-ceaa-4109-ac4c-3c8e6a9d8f57",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C50",
+      "claim": "gefE is predicted to encode a RasGEF.",
+      "claim_type": "EXPLICIT",
+      "source": "As gefE is predicted to encode a RasGEF, whose primary function is to activate Ras proteins by catalyzing the exchange of GDP for GTP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and known function of RasGEF domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "cce0f87b-a69a-48e2-a3d3-7931fcf5961b",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C51",
+      "claim": "The Dictyostelium genome encodes 11 Ras proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Dictyostelium genome encodes 11 Ras proteins, only one, RasD, exhibits strong developmental expression (Reymond et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "22eca802-b015-4cbb-864b-969c90b1f111",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C52",
+      "claim": "RasD exhibits strong developmental expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Dictyostelium genome encodes 11 Ras proteins, only one, RasD, exhibits strong developmental expression (Reymond et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "f95188e0-effb-4d7a-b713-e019813d4364",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C53",
+      "claim": "The level of both RasD expression and GTP bound activated RasD are significantly higher in cells grown in the absence of glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the level of both RasD expression and GTP bound activated RasD are significantly higher in cells grown in the absence of glucose (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "d0bb939e-be9e-46da-b613-fcb48a34c667",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C54",
+      "claim": "GefE and RasD mutant cells have previously been shown to exhibit identical slug phototaxis defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, GefE and RasD mutant cells have previously been shown to exhibit identical slug phototaxis defects (Wilkins et al., 2000, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "43463c7f-e311-4f80-a2d4-fc1a84e047b3",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C55",
+      "claim": "In 12 hr developed cells, the level of activated RasD was significantly lower in gefE\u2212 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In 12 hr developed cells, the level of activated RasD was significantly lower in gefE\u2212 mutant cells, although there was no difference in the total level of the RasD protein (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "48d1aa67-21c4-460e-b913-c2720284f5ae",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C56",
+      "claim": "There was no difference in the total level of the RasD protein between wild type and gefE\u2212 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In 12 hr developed cells, the level of activated RasD was significantly lower in gefE\u2212 mutant cells, although there was no difference in the total level of the RasD protein (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "792c2595-a2bf-43c3-a2d9-03492f31b29f",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C57",
+      "claim": "There was no corresponding decrease in the levels of activated RasG, RasB, RasC or Rap1 in gefE\u2212 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there was no corresponding decrease in the levels of activated RasG, RasB, RasC or Rap1 (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "7fc48af4-8452-4b73-ab96-9ea11a83bbeb",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C58",
+      "claim": "GefE is the predominant activator of RasD and is specific for RasD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that GefE is the predominant activator of RasD and is specific for RasD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the specificity of RasD activation defects in gefE\u2212 mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "0e96a5f5-c887-457d-a157-f37c3526bdc2",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C59",
+      "claim": "When labelled wild type cells were mixed with rasD\u2212 mutant cells, the labelled cells accumulated in the pstO and pstB populations and were underrepresented in the prespore population.",
+      "claim_type": "EXPLICIT",
+      "source": "When labelled wild type cells were mixed with rasD\u2212 mutant cells, the labelled cells accumulated in the pstO and pstB populations and were underrepresented in the prespore population (Figure 6C, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of chimeric slugs shown in Figure 6C and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "2891c675-1e58-4020-8942-15e8baaa1ccc",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C60",
+      "claim": "When RasD expression levels were elevated in wild type cells or cells were forced to express constitutively active rasD(G12T), these cells exhibited a strong localization towards the pstB region at the rear of slug and in the lower cup of fruiting bodies when mixed with wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when RasD expression levels were elevated in wild type cells or cells were forced to express constitutively active rasD(G12T), these cells exhibited a strong localization towards the pstB region at the rear of slug and in the lower cup of fruiting bodies when mixed with wild type cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of chimeric development shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "8ccfebf7-24f4-4df7-be67-4a5924be2e27",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C61",
+      "claim": "Unlike wild type cells, the effect of RasD overexpression on cell fate was only observed in gefE\u2212 mutant cells which expressed constitutively active rasD(G12T).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, unlike wild type cells, this effect was only observed in gefE\u2212 mutant cells which expressed constitutively active rasD(G12T).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing the effects of RasD and RasD(G12T) overexpression in wild type vs gefE\u2212 mutant backgrounds shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "74770642-b313-4458-bbf6-549283accbc9",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C62",
+      "claim": "RasD is normally converted to its GTP bound form upon activation by GefE.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings thus suggest that RasD is normally converted to its GTP bound form upon activation by GefE",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the biochemical and genetic data on GefE and RasD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "1cd89385-346f-4def-9d57-386dfe8b292a",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C63",
+      "claim": "GefE and RasD coordinate DIF dependent lineage bias.",
+      "claim_type": "EXPLICIT",
+      "source": "and support the idea that GefE and RasD coordinate DIF dependent lineage bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the totality of experiments on GefE and RasD function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "acf3bee1-b5b9-4f61-a042-33bf7551aaa3",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C64",
+      "claim": "gefE was found to be uniformly expressed in all cells during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, gefE or rasD promoter sequences were used to drive RFP expression. Although gefE was found to be uniformly expressed in all cells during growth, rasD expression was highly heterogeneous (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by reporter gene expression shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "0f91a01f-1827-46fb-9333-a066748839e6",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C65",
+      "claim": "rasD expression was highly heterogeneous during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, gefE or rasD promoter sequences were used to drive RFP expression. Although gefE was found to be uniformly expressed in all cells during growth, rasD expression was highly heterogeneous (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by reporter gene expression shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "b9c5b2fa-53a2-4f8d-b2a5-b87fa05d1021",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C66",
+      "claim": "The rasD promoter RFP reporter construct shows strong developmental regulation and drives prestalk cell specific expression at the slug and culminant stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The rasD promoter RFP reporter construct used here shows strong developmental regulation and drives prestalk cell specific expression at the slug and culminant stages (Figure 7\u2014figure supplement 1), consistent with previous reports using rasD:lacZ (Esch and Firtel, 1991; Jermyn and Williams, 1995) and observations of the endogenous transcripts (Maeda et al., 2003)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging shown in Figure 7\u2014figure supplement 1 and comparison to cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "e187b5f8-4a51-47f7-ad32-756c756c9c57",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C67",
+      "claim": "Growth of cells in G\u2212 medium resulted in a significant increase in the number of rasD:RFP expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we found that growth of cells in G\u2212 medium (conditions that increase the likelihood of DIF dependent lineage choice) resulted in a significant increase in the number of rasD:RFP expressing cells (73 \u00b1 3% to 89 \u00b1 5%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from reporter gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "9878449f-60b5-484a-b72e-00f7cd2548ba",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C68",
+      "claim": "No change in gefE:RFP expression was observed when cells were grown in G\u2212 medium.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas no change was observed in gefE:RFP expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from reporter gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "7659db27-ff91-4ee4-9602-04d840850c53",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C69",
+      "claim": "Cells expressing lower levels of RasD were found to be less likely to differentiate as prestalk cells than prespore cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, growing rasD:RFP expressing cells were sorted by FACS based on their fluorescence and developed in chimera with wild type cells. Cells expressing lower levels of RasD were found to be less likely to differentiate as prestalk cells than prespore cells (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FACS sorting and chimeric development shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "fba09598-e456-4bba-93d6-04d22fce7681",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C70",
+      "claim": "Cells expressing high rasD transcript levels can form both prespore and prestalk cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, cells expressing high rasD transcript levels can form both prespore and prestalk cells, as evidenced by their random distribution at both slug and culminant stages (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of chimeric development shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "9aa39a3d-085d-4052-94e3-7340b9e6237e",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C71",
+      "claim": "rasD high or rasD low expressing cells quickly returned to pre-sorted equilibrium when purified by FACS and regrown in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test whether RasD behaves in this fashion, rasD high or rasD low expressing cells were purified by FACS and then regrown in culture. Each population quickly returned to its pre-sorted equilibrium (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FACS analysis over time shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "8ca99e3a-0f68-4c0a-90cc-8e67ea3955cc",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C72",
+      "claim": "The low RasD expressing population exhibits slightly faster dynamics than the high RasD expressing population.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note, however, that the low RasD expressing population exhibits slightly faster dynamics than the high RasD expressing population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the dynamics data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "a0c6280c-2d59-4930-9845-76ab401b0eda",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C73",
+      "claim": "Population heterogeneity is generated by dynamic rasD expression in vegetative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these findings suggest that population heterogeneity is generated by dynamic rasD expression in vegetative cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the reporter gene expression and dynamics experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "5b12dad4-29cf-431e-8419-cfc6faa85aef",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C74",
+      "claim": "Extrinsic factors such as nutritional history affect the position of the dynamic equilibrium of rasD expression.",
+      "claim_type": "EXPLICIT",
+      "source": "and that extrinsic factors such as nutritional history affect the position of this dynamic equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that G\u2212 growth increases rasD expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "8777ca98-29fd-4541-9add-a267a56edd87",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C75",
+      "claim": "Transcription of rasD is heterogeneous in growing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that transcription of rasD is heterogeneous in growing cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by reporter gene expression shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "bd3804fc-b867-4f49-95bb-1f357e62f4a2",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C76",
+      "claim": "RasD activity is controlled by a ubiquitously expressed RasGEF, gefE.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst its activity is controlled by a ubiquitously expressed RasGEF, gefE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the uniform expression of gefE and its requirement for RasD activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "983a5a82-8109-44b5-b96a-462c578384ea",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C77",
+      "claim": "Expression of GefE is required to activate RasD in a subset of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of GefE is required to activate RasD in a subset of cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the reduced RasD-GTP levels in gefE\u2212 mutant and heterogeneous rasD expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "72b79707-fb41-456e-bd36-80f9d610808b",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C78",
+      "claim": "RasD activation sets the threshold at which cells respond to the pstB/pstO differentiation inducer DIF.",
+      "claim_type": "EXPLICIT",
+      "source": "which in turn sets the threshold at which these cells respond to the pstB/pstO differentiation inducer DIF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the DIF response threshold experiments shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "59186052-c651-4c59-a847-fbf4a2df67ad",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C79",
+      "claim": "Initial studies carried out in cell lines expressing constitutively activated Ras(G12T) suggested Ras signaling played a key role in prestalk cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial studies carried out in cell lines expressing constitutively activated Ras(G12T) suggested Ras signaling played a key role in prestalk cell differentiation (Jaffer, 2000; Jaffer et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "7114fa74-3a67-460c-a4f5-59ab4ac3e534",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C80",
+      "claim": "Disruption of the gene encoding RasD was reported not to affect cell fate specification during clonal development.",
+      "claim_type": "EXPLICIT",
+      "source": "However, disruption of the gene encoding RasD, the major developmentally expressed Ras protein, was reported not to affect cell fate specification during clonal development (Wilkins et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "07d7a993-6077-496d-9be1-74182c49494e",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C81",
+      "claim": "There was compensatory upregulation of the highly related RasG protein during development in both rasD\u2212 and gefE\u2212 mutant backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there was indeed compensatory upregulation of the highly related RasG protein during development in both rasD\u2212 and gefE\u2212 mutant backgrounds (data not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "fb108f0d-c18a-459c-bebd-83bae39f8fba",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C82",
+      "claim": "Compensatory upregulation of RasG did not affect lineage bias in chimeras with wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "but that this did not affect lineage bias in chimeras with wild type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from chimeric development experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "fd39491d-cb88-414c-a093-aeb4fe4572f9",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C83",
+      "claim": "GefE-mediated activation of RasD is uniquely important to confer lineage bias in Dictyostelium.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that GefE-mediated activation of RasD is uniquely important to confer lineage bias in Dictyostelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the specificity of GefE-RasD effects on lineage bias.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "a368ed77-c456-4fbb-b825-7d0a322442b7",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C84",
+      "claim": "Cells of the inner cell mass (ICM) adopt either primitive endoderm (PrE) or epiblast (EPI) fates in a position independent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in one of the earliest lineage choices made during mouse embryogenesis, cells of the inner cell mass (ICM) adopt either primitive endoderm (PrE) or epiblast (EPI) fates. This occurs in a position independent fashion with ICM cells exhibiting seemingly stochastic expression of PrE and EPI markers (Dietrich and Hiiragi, 2007; Plusa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on mouse development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "4a2d2dd6-c75a-4bc3-8175-0f3d6695a178",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C85",
+      "claim": "Heterogeneity in responsiveness to differentiation inducing signals, such as the PrE inducer FGF, underlies salt and pepper differentiation in the mouse ICM.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that heterogeneity in responsiveness to differentiation inducing signals, such as the PrE inducer FGF, underlies this salt and pepper differentiation (Yamanaka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work on mouse development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "3e1af07d-a7e7-4791-a41a-306c3c6228a8",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C86",
+      "claim": "Pattern formation based on stochastic salt and pepper differentiation and sorting out is likely to be a fundamental and deeply conserved developmental patterning mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Pattern formation based on stochastic salt and pepper differentiation and sorting out is likely to be a fundamental and deeply conserved developmental patterning mechanism (Kay and Thompson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and comparison across organisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "1c03ace1-b37d-4157-9279-dbff0b530f3a",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C87",
+      "claim": "Initial cell fate choice and pattern formation in Dictyostelium discoideum is based on salt and pepper differentiation and sorting out.",
+      "claim_type": "EXPLICIT",
+      "source": "One route to understanding this phenomenon comes from the finding that initial cell fate choice and pattern formation in Dictyostelium discoideum, a genetically and biochemically tractable organism with a small number of easily recognizable cell types, is based on this mechanism (Thompson et al., 2004b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "47b059a0-0577-4aaa-9265-7391b9c1d9a6",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C88",
+      "claim": "Upon starvation, Dictyostelium cells enter a developmental cycle that begins with the aggregation of several thousand cells to make a multicellular mound.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon starvation, Dictyostelium cells enter a developmental cycle that begins with the aggregation of several thousand cells to make a multicellular mound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Dictyostelium developmental cycle based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "d0f2bf14-580e-4c81-80f3-2f473926acfa",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C89",
+      "claim": "Within the mound, cells differentiate intermingled into prestalk or prespore cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the mound, cells differentiate intermingled into prestalk or prespore cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of Dictyostelium development based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "e3b4045a-592f-41b7-9eb7-cfa1bbbe1b0b",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C90",
+      "claim": "After sorting out, the different cell types are organized into discrete tissues in the migratory slug.",
+      "claim_type": "EXPLICIT",
+      "source": "After sorting out, the different cell types are organized into discrete tissues in the migratory slug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of Dictyostelium development based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "31aefb58-4e07-4aa6-9e6e-bbaf4fba477a",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C91",
+      "claim": "Prestalk cells occupy the anterior 25% of the slug.",
+      "claim_type": "EXPLICIT",
+      "source": "Prestalk cells occupy the anterior 25% of the slug, with anterior like cells also found scattered within the prespore zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of Dictyostelium slug organization based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "b2fb145b-75f4-4c60-83ce-8ba16cc9dc87",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C92",
+      "claim": "DIF is primarily required for pstB cell differentiation, with a more minor role in pstO cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, biases established during growth have been shown to affect the sensitivity of cells to differentiation signals experienced during development, such as the chlorinated alkyl phenone DIF-1 (hereafter termed DIF), which is primarily required for pstB cell differentiation, with a more minor role in pstO cell differentiation (Thompson and Kay, 2000b; Thompson et al., 2004a; Zhukovskaya et al., 2006; Huang et al., 2006b; Keller and Thompson, 2008; Saito et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "dd0529d0-d96c-45bd-a27f-d689dcc9488b",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C93",
+      "claim": "'Stalky' biased cells are more sensitive to DIF in monolayer culture assays than 'sporey' biased cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 'stalky' biased cells are more sensitive to DIF in monolayer culture assays than 'sporey' biased cells (Thompson and Kay, 2000a; Kubohara et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "3c343172-6202-4011-8e0c-4d4a32c98f53",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C94",
+      "claim": "Immediate-early gene responses to DIF exhibit all-or-none behavior, leading to population level heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, immediate-early gene responses to DIF exhibit all-or-none behavior, leading to population level heterogeneity (Stevense et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "16083e26-b9ce-4318-9a95-59f4e3782c2d",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C95",
+      "claim": "Dictyostelium strains were cultured on lawns of Klebsiella aerogenes or in HL5 medium with (G+) or without (G\u2212) 86 mM glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Dictyostelium strains were cultured on lawns of Klebsiella aerogenes or in HL5 medium with (G+) or without (G\u2212) 86 mM glucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell culture methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "9d599c0e-82f4-490a-a57e-79d3ba143954",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C96",
+      "claim": "Cells were grown in shaken suspension for 2\u20134 days for G\u2212 phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were grown in shaken suspension for 2\u20134 days for G\u2212 phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell culture methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "7b58af3a-e5a1-49f1-9779-cae5ac35f5e5",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "claim_id": "C97",
+      "claim": "Cells transformed by electroporation were selected with blasticidin (10 \u00b5g/ml) or G418 (20\u201340 \u00b5g/ml).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells transformed by electroporation were selected with blasticidin (10 \u00b5g/ml) or G418 (20\u201340 \u00b5g/ml).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the transformation and selection methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acccdad0-cd80-4989-a946-d81bd4fbc049",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Ras-GTPase regulator gefE is required for normal lineage priming and salt and pepper differentiation by setting the intrinsic response threshold to DIF-dependent differentiation signals. GefE regulates context-dependent/relative DIF-dependent lineage bias rather than cell fate commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C20, C26, and C30 collectively establish that gefE is required for lineage priming (not commitment) and that it functions by setting DIF response thresholds. The evidence from chimeric development (Figures 1-3) and clonal development (Figure 3A-B) strongly supports the distinction between priming and commitment, as gefE\u2212 mutants show normal clonal development but altered lineage bias in chimeras.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "892d1c2c-eb7b-481a-8cea-ea816b635ec8",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cells grown without glucose (G\u2212) are biased towards DIF-dependent pstO and pstB lineages and produce fewer spores in chimeric development. The gefE\u2212 mutant suppresses this glucose-dependent lineage bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 establish the glucose-dependent lineage bias with quantitative data (Figure 1A-B, p<0.0001). Claims C15-C16 demonstrate that gefE\u2212 mutation suppresses this bias (Figure 1E-F, p<0.04). The statistical significance and imaging data provide strong support for these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "d4837b47-6fe5-472b-9922-c0e38e48e639",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A genetic screen using REMI mutagenesis identified gefE as a regulator of lineage bias. The gefE\u2212 mutant shows no growth rate differences but exhibits faster spore hatching compared to wild type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 describe the genetic screen methodology and identification of gefE (Figure 1C-D, Figure 1\u2014figure supplement 3B). Claims C13-C14 characterize the mutant phenotype with quantitative data (Figure 1\u2014figure supplement 3C-D). The approach is sound and the characterization is thorough.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "6659c5f9-031d-4802-8395-9733dacd7108",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "gefE\u2212 mutant cells avoid DIF-dependent prestalk fates (pstO and pstB) and are enriched in prespore regions when grown under identical conditions and mixed with wild type cells. Overexpression of GefE drives cells toward DIF-dependent fates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 demonstrate the cell fate bias of gefE\u2212 mutants with quantitative spore counts (Figure 2A, p<0.01) and imaging data (Figure 2B-C, Figure 2\u2014figure supplements 1-2). The reciprocal experiment with GefE overexpression (C19) provides strong support for the conclusion in C20.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "gefE\u2212 mutant cells are totipotent and show normal clonal development with proper cell type proportions and gene expression. The only defect is a slight delay in aggregation initiation. This demonstrates that gefE regulates lineage priming rather than commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 establish normal clonal development with quantitative data (Figure 3A-B). Claims C26, C29, and C30 draw the appropriate conclusion that gefE affects priming not commitment. The logic is sound: if gefE were required for commitment, clonal development would be defective, but it is not.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "ecc4e1df-6762-4d5b-8c61-c22ef3042179",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The lineage bias of gefE\u2212 mutant cells is context-dependent and determined by the growth history of the partner genotype in chimeric development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 demonstrate that gefE\u2212 mutants can be biased toward DIF-dependent fates when mixed with gefE\u2212 cells grown in different conditions (Figure 3C). This provides strong evidence for the context-dependent nature of the bias and supports the priming model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "b53d0edd-a5cb-4ec1-82b5-f2f5b1150dcb",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "gefE\u2212 mutant cells are less sensitive to DIF than wild type cells across a 1000-fold concentration range, but exhibit similar sensitivity to changes in DIF concentration. GefE sets basal levels of DIF sensitivity and biases cells toward DIF-sensitive fates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 establish the DIF sensitivity phenotype with dose-response data (Figure 4A). The parallel dose-response curves support the interpretation that GefE sets basal sensitivity without affecting the response to concentration changes. Claims C41-C42 appropriately summarize the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "3d71c338-d12c-4fe1-b5ec-ca035a8abb81",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DIF-induced expression of prestalk genes (ecmA, ecmB) and nuclear translocation of the transcription factor GATAc are reduced in gefE\u2212 mutants. Fewer gefE\u2212 cells respond to DIF, but the rate and duration of GATAc translocation in responding cells are unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 demonstrate reduced DIF-induced gene expression with reporter assays and qPCR (Figure 4B-C). Claims C37-C40 show that fewer gefE\u2212 cells exhibit GATAc nuclear translocation, but the kinetics in responding cells are normal (Figure 4D). This supports a threshold model rather than a signaling defect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "3c573ba0-e050-492b-af82-f7398e7cc053",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "gefE regulates the cell-intrinsic threshold at which cells respond to DIF. Using an ecmA:GFP knock-in and FACS analysis, the authors show that gefE\u2212 mutants have fewer responding cells at all DIF concentrations, but responding cells express similar levels of ecmA:GFP as wild type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 establish the hypothesis based on prior work. Claims C45-C48 present the experimental test using a novel ecmA:GFP knock-in approach (Figure 5A-D). The FACS data clearly show fewer responding gefE\u2212 cells with similar per-cell expression levels, strongly supporting the threshold model in C49. This is a key mechanistic result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "GefE is the predominant and specific activator of RasD. RasD is the only Ras protein with strong developmental expression, and both RasD expression and RasD-GTP levels are higher in G\u2212 cells. In gefE\u2212 mutants, RasD-GTP levels are significantly reduced without affecting total RasD or other Ras proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 establish the rationale for focusing on RasD. Claims C55-C58 demonstrate the biochemical relationship between GefE and RasD with Western blot data (Figure 6A-B). The specificity for RasD (C57) and the lack of effect on total RasD levels (C56) strongly support the conclusion that GefE specifically activates RasD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "7c087a96-30bb-4217-8370-c330b63241ea",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RasD mutants phenocopy gefE mutants in chimeric development. Overexpression or constitutive activation of RasD drives cells toward DIF-dependent fates in a GefE-dependent manner. GefE and RasD coordinate DIF-dependent lineage bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 demonstrate the genetic relationship between GefE and RasD with chimeric development experiments (Figure 6C-D). The requirement for constitutively active RasD(G12T) to bypass gefE\u2212 (C61) strongly supports the model that GefE activates RasD. Claims C62-C63 appropriately conclude that GefE and RasD function together.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "bf08229f-f4c5-43fd-8c1e-96e4bed4304a",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "gefE expression is uniform during growth, while rasD expression is highly heterogeneous. Growth in G\u2212 medium increases the proportion of rasD-expressing cells without affecting gefE expression. The rasD promoter reporter shows appropriate developmental regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C64-C65 establish the differential expression patterns with reporter gene imaging (Figure 7A). Claim C66 validates the rasD reporter. Claims C67-C68 show that glucose affects rasD but not gefE expression. The imaging data clearly support these observations, providing a mechanism for heterogeneous lineage priming.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "ee60092f-9dad-4716-8960-aebda5f6765a",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cells expressing low levels of rasD are less likely to become prestalk cells. FACS-sorted rasD high and low populations return to equilibrium when regrown, indicating dynamic rasD expression. Nutritional history affects the position of this dynamic equilibrium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C72 present FACS sorting and fate-tracking experiments (Figure 7B-C). However, C70 notes that high rasD cells can form both cell types, which the authors attribute to potential differences in RasD and RFP protein stability. This caveat undermines the strength of the fate-tracking experiment. While C71-C72 show return to equilibrium (supporting dynamic expression), the interpretation of C69-C70 regarding fate bias is uncertain due to the reporter limitations acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "15cca00c-c6b6-4edf-a97d-51dcaf5fdac2",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Heterogeneous rasD transcription in growing cells, combined with ubiquitous GefE expression, generates a subset of cells with activated RasD. This RasD activation sets the threshold for DIF response and determines lineage bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 synthesize the major findings into a coherent model. The evidence from reporter gene expression (C75, Figure 7A), uniform gefE expression (C76, Figure 7A), reduced RasD-GTP in gefE\u2212 mutants (C77, Figure 6B), and DIF threshold experiments (C78, Figures 4-5) collectively support this model. This represents the key mechanistic insight of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "3124bc93-1cc3-46ac-b133-00978d073203",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous studies on Ras signaling in Dictyostelium development were inconclusive. The current work resolves this by showing that GefE-mediated activation of RasD is uniquely important for lineage bias, and that compensatory upregulation of RasG does not affect lineage bias in chimeras.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 accurately cite prior work. Claims C81-C82 address the compensation issue with data (stated but not shown). Claim C83 draws an appropriate conclusion. However, the lack of shown data for C81-C82 is a weakness. The conclusion is reasonable but would be stronger with the supporting data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "6ee846c9-b78f-4c17-8129-ec5b83d9ef43",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Heterogeneous cell behavior and lineage priming in cell culture may reflect mechanisms used during normal embryonic development. Salt and pepper differentiation followed by sorting out is proposed as a fundamental developmental patterning mechanism conserved from Dictyostelium to mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C84-C87 establish the broader context by citing relevant literature on heterogeneous cell behavior in culture and mouse development. The comparison between Dictyostelium and mouse ICM development (C84-C85) is well-supported by citations. Claim C86 appropriately frames the significance of studying this mechanism in Dictyostelium.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "0a95f7f9-8477-41ed-8e0f-6e2ef7b4922f",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Dictyostelium development involves salt and pepper differentiation of prestalk and prespore cells followed by sorting. DIF is required for pstB and pstO cell differentiation, and cells show heterogeneous sensitivity to DIF with all-or-none responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C94 provide essential background on Dictyostelium development and DIF signaling, supported by appropriate citations. This background is accurate and necessary for understanding the experimental system. These are established facts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "f52040be-d726-4909-a553-c8f14f0fa14d",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Cells grown without glucose preferentially become stalk cells and are more sensitive to DIF than glucose-grown cells, as established by previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C10 cite prior work and are confirmed by the current study's data (Figure 1, Figure 4A). This establishes the experimental foundation for the genetic screen. The citations are appropriate and the phenomenon is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    },
+    {
+      "id": "62735c4f-22ae-4a56-a26d-13d8ddb7e15a",
+      "content_id": "edf03dd9-3f47-4bee-9749-0b0d5e586968",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Dictyostelium strains were cultured in defined conditions with or without glucose, and transformants were selected with appropriate antibiotics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 describe standard methods that are clearly stated and appropriate for the experiments. These are routine procedures in Dictyostelium research and are adequately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:55.001064Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d710a85-64c1-4eb4-aea4-081a46f1f540",
+      "result_id": "acccdad0-cd80-4989-a946-d81bd4fbc049"
+    },
+    {
+      "claim_id": "ab27166f-1c51-4578-8b5a-e969f4aec6f5",
+      "result_id": "acccdad0-cd80-4989-a946-d81bd4fbc049"
+    },
+    {
+      "claim_id": "f55f6514-9c79-454d-8d07-8aad2ed27722",
+      "result_id": "acccdad0-cd80-4989-a946-d81bd4fbc049"
+    },
+    {
+      "claim_id": "b1e47e49-5a67-4f77-afc6-6be422a7049e",
+      "result_id": "acccdad0-cd80-4989-a946-d81bd4fbc049"
+    },
+    {
+      "claim_id": "7ccf1272-8a4a-4857-be2c-36917b0e52d8",
+      "result_id": "acccdad0-cd80-4989-a946-d81bd4fbc049"
+    },
+    {
+      "claim_id": "b7e6ab45-5a3c-4713-86b5-f384915e14bd",
+      "result_id": "892d1c2c-eb7b-481a-8cea-ea816b635ec8"
+    },
+    {
+      "claim_id": "34ee32a2-d749-47de-b298-c6dc86d342dc",
+      "result_id": "892d1c2c-eb7b-481a-8cea-ea816b635ec8"
+    },
+    {
+      "claim_id": "20249d06-9fdb-442e-907d-6e73ba192cd2",
+      "result_id": "892d1c2c-eb7b-481a-8cea-ea816b635ec8"
+    },
+    {
+      "claim_id": "ad8e3682-1611-41a5-b78c-628157127939",
+      "result_id": "892d1c2c-eb7b-481a-8cea-ea816b635ec8"
+    },
+    {
+      "claim_id": "0d1872c5-7e3f-4700-af50-506215205894",
+      "result_id": "892d1c2c-eb7b-481a-8cea-ea816b635ec8"
+    },
+    {
+      "claim_id": "3b49b5d8-ec35-4579-9994-b684eab4b6e9",
+      "result_id": "d4837b47-6fe5-472b-9922-c0e38e48e639"
+    },
+    {
+      "claim_id": "ca7c7e21-1b43-4e40-a3f1-b0c56998debb",
+      "result_id": "d4837b47-6fe5-472b-9922-c0e38e48e639"
+    },
+    {
+      "claim_id": "533cad03-6fd2-4256-ab5c-4fb831df7e88",
+      "result_id": "d4837b47-6fe5-472b-9922-c0e38e48e639"
+    },
+    {
+      "claim_id": "30f39c4e-2de6-482a-a5b5-43411f433e6e",
+      "result_id": "d4837b47-6fe5-472b-9922-c0e38e48e639"
+    },
+    {
+      "claim_id": "8c3eb671-461c-493f-9275-f9449bc4c58e",
+      "result_id": "6659c5f9-031d-4802-8395-9733dacd7108"
+    },
+    {
+      "claim_id": "bfbde092-dcbc-47a3-93e1-04c1a8954f81",
+      "result_id": "6659c5f9-031d-4802-8395-9733dacd7108"
+    },
+    {
+      "claim_id": "b50c86a1-d5d3-404d-87e0-85ac58f837c1",
+      "result_id": "6659c5f9-031d-4802-8395-9733dacd7108"
+    },
+    {
+      "claim_id": "f55f6514-9c79-454d-8d07-8aad2ed27722",
+      "result_id": "6659c5f9-031d-4802-8395-9733dacd7108"
+    },
+    {
+      "claim_id": "435122d5-4079-4465-9ef5-38c7af4b3bd6",
+      "result_id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455"
+    },
+    {
+      "claim_id": "7763dd16-f2dd-451b-bc43-62a05bc34726",
+      "result_id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455"
+    },
+    {
+      "claim_id": "fcf6c306-db52-4a9c-acea-0b5985c66f15",
+      "result_id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455"
+    },
+    {
+      "claim_id": "f4bd98ce-6c55-4183-a35e-dd89e1a6a7a7",
+      "result_id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455"
+    },
+    {
+      "claim_id": "92e62b25-f464-4109-82e6-f32ef3e4c275",
+      "result_id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455"
+    },
+    {
+      "claim_id": "b1e47e49-5a67-4f77-afc6-6be422a7049e",
+      "result_id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455"
+    },
+    {
+      "claim_id": "55ff7a3d-5c3a-454a-9a9a-9e85f86effd9",
+      "result_id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455"
+    },
+    {
+      "claim_id": "7ccf1272-8a4a-4857-be2c-36917b0e52d8",
+      "result_id": "5e5042ed-78c6-4de5-a45f-b37d96a0c455"
+    },
+    {
+      "claim_id": "9f4d9d1b-6220-49fc-a8f6-c37e0b6d7399",
+      "result_id": "ecc4e1df-6762-4d5b-8c61-c22ef3042179"
+    },
+    {
+      "claim_id": "322cdf54-88d0-4700-ae92-b9b037244f18",
+      "result_id": "ecc4e1df-6762-4d5b-8c61-c22ef3042179"
+    },
+    {
+      "claim_id": "1311d434-5ad5-47a4-84be-33c158fbe932",
+      "result_id": "b53d0edd-a5cb-4ec1-82b5-f2f5b1150dcb"
+    },
+    {
+      "claim_id": "f388c53f-1b4b-4a46-9c57-9a62bd99b62e",
+      "result_id": "b53d0edd-a5cb-4ec1-82b5-f2f5b1150dcb"
+    },
+    {
+      "claim_id": "4ec06f07-4275-43a4-a05d-7064b6873066",
+      "result_id": "b53d0edd-a5cb-4ec1-82b5-f2f5b1150dcb"
+    },
+    {
+      "claim_id": "2386718f-9046-4ec2-9d08-b8e28aca0251",
+      "result_id": "b53d0edd-a5cb-4ec1-82b5-f2f5b1150dcb"
+    },
+    {
+      "claim_id": "72bc9556-ffd9-432d-9f32-50ddbcf4367a",
+      "result_id": "b53d0edd-a5cb-4ec1-82b5-f2f5b1150dcb"
+    },
+    {
+      "claim_id": "e4947b98-e1a8-409c-9df8-4c40f597a3f0",
+      "result_id": "b53d0edd-a5cb-4ec1-82b5-f2f5b1150dcb"
+    },
+    {
+      "claim_id": "6e3c4b7b-21ff-4a3f-bbbb-079695bd9ef3",
+      "result_id": "3d71c338-d12c-4fe1-b5ec-ca035a8abb81"
+    },
+    {
+      "claim_id": "42182ba4-29ce-4ddc-8380-a15a53bad92f",
+      "result_id": "3d71c338-d12c-4fe1-b5ec-ca035a8abb81"
+    },
+    {
+      "claim_id": "533b6803-be31-4a00-b8a7-ba4f354811dc",
+      "result_id": "3d71c338-d12c-4fe1-b5ec-ca035a8abb81"
+    },
+    {
+      "claim_id": "61ba24f3-6bb0-491c-8f42-821ce30af9f2",
+      "result_id": "3d71c338-d12c-4fe1-b5ec-ca035a8abb81"
+    },
+    {
+      "claim_id": "a93dfbac-4653-4c9d-b7b4-de7241741f2e",
+      "result_id": "3d71c338-d12c-4fe1-b5ec-ca035a8abb81"
+    },
+    {
+      "claim_id": "14d55a7f-3263-4cb0-b872-c889e721437c",
+      "result_id": "3d71c338-d12c-4fe1-b5ec-ca035a8abb81"
+    },
+    {
+      "claim_id": "ce614e0b-c59a-4a39-b905-42025e573a27",
+      "result_id": "3c573ba0-e050-492b-af82-f7398e7cc053"
+    },
+    {
+      "claim_id": "72fe9b1e-0c8d-49fa-b038-5daf7f860f7a",
+      "result_id": "3c573ba0-e050-492b-af82-f7398e7cc053"
+    },
+    {
+      "claim_id": "ae1ab430-6363-4eda-94da-a5906b78c585",
+      "result_id": "3c573ba0-e050-492b-af82-f7398e7cc053"
+    },
+    {
+      "claim_id": "117a0879-8c18-4514-b07e-a8ba1ebbf6cb",
+      "result_id": "3c573ba0-e050-492b-af82-f7398e7cc053"
+    },
+    {
+      "claim_id": "c921125b-8004-4eb7-bfba-619df389d79c",
+      "result_id": "3c573ba0-e050-492b-af82-f7398e7cc053"
+    },
+    {
+      "claim_id": "1451e36e-58e1-4d82-b9aa-dbb841b56144",
+      "result_id": "3c573ba0-e050-492b-af82-f7398e7cc053"
+    },
+    {
+      "claim_id": "e3558141-8067-41b1-ad68-6bd291d6543c",
+      "result_id": "3c573ba0-e050-492b-af82-f7398e7cc053"
+    },
+    {
+      "claim_id": "c1c2dda8-ceaa-4109-ac4c-3c8e6a9d8f57",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "cce0f87b-a69a-48e2-a3d3-7931fcf5961b",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "22eca802-b015-4cbb-864b-969c90b1f111",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "f95188e0-effb-4d7a-b713-e019813d4364",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "d0bb939e-be9e-46da-b613-fcb48a34c667",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "43463c7f-e311-4f80-a2d4-fc1a84e047b3",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "48d1aa67-21c4-460e-b913-c2720284f5ae",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "792c2595-a2bf-43c3-a2d9-03492f31b29f",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "7fc48af4-8452-4b73-ab96-9ea11a83bbeb",
+      "result_id": "2b5bdc46-7442-4eb5-8d9b-8f68e4bdde75"
+    },
+    {
+      "claim_id": "0e96a5f5-c887-457d-a157-f37c3526bdc2",
+      "result_id": "7c087a96-30bb-4217-8370-c330b63241ea"
+    },
+    {
+      "claim_id": "2891c675-1e58-4020-8942-15e8baaa1ccc",
+      "result_id": "7c087a96-30bb-4217-8370-c330b63241ea"
+    },
+    {
+      "claim_id": "8ccfebf7-24f4-4df7-be67-4a5924be2e27",
+      "result_id": "7c087a96-30bb-4217-8370-c330b63241ea"
+    },
+    {
+      "claim_id": "74770642-b313-4458-bbf6-549283accbc9",
+      "result_id": "7c087a96-30bb-4217-8370-c330b63241ea"
+    },
+    {
+      "claim_id": "1cd89385-346f-4def-9d57-386dfe8b292a",
+      "result_id": "7c087a96-30bb-4217-8370-c330b63241ea"
+    },
+    {
+      "claim_id": "6a6341f8-9d25-4af7-b1c8-aef1b5a7bfb1",
+      "result_id": "bf08229f-f4c5-43fd-8c1e-96e4bed4304a"
+    },
+    {
+      "claim_id": "acf3bee1-b5b9-4f61-a042-33bf7551aaa3",
+      "result_id": "bf08229f-f4c5-43fd-8c1e-96e4bed4304a"
+    },
+    {
+      "claim_id": "0f91a01f-1827-46fb-9333-a066748839e6",
+      "result_id": "bf08229f-f4c5-43fd-8c1e-96e4bed4304a"
+    },
+    {
+      "claim_id": "b9c5b2fa-53a2-4f8d-b2a5-b87fa05d1021",
+      "result_id": "bf08229f-f4c5-43fd-8c1e-96e4bed4304a"
+    },
+    {
+      "claim_id": "e187b5f8-4a51-47f7-ad32-756c756c9c57",
+      "result_id": "bf08229f-f4c5-43fd-8c1e-96e4bed4304a"
+    },
+    {
+      "claim_id": "9878449f-60b5-484a-b72e-00f7cd2548ba",
+      "result_id": "bf08229f-f4c5-43fd-8c1e-96e4bed4304a"
+    },
+    {
+      "claim_id": "7659db27-ff91-4ee4-9602-04d840850c53",
+      "result_id": "ee60092f-9dad-4716-8960-aebda5f6765a"
+    },
+    {
+      "claim_id": "fba09598-e456-4bba-93d6-04d22fce7681",
+      "result_id": "ee60092f-9dad-4716-8960-aebda5f6765a"
+    },
+    {
+      "claim_id": "9aa39a3d-085d-4052-94e3-7340b9e6237e",
+      "result_id": "ee60092f-9dad-4716-8960-aebda5f6765a"
+    },
+    {
+      "claim_id": "8ca99e3a-0f68-4c0a-90cc-8e67ea3955cc",
+      "result_id": "ee60092f-9dad-4716-8960-aebda5f6765a"
+    },
+    {
+      "claim_id": "a0c6280c-2d59-4930-9845-76ab401b0eda",
+      "result_id": "ee60092f-9dad-4716-8960-aebda5f6765a"
+    },
+    {
+      "claim_id": "5b12dad4-29cf-431e-8419-cfc6faa85aef",
+      "result_id": "ee60092f-9dad-4716-8960-aebda5f6765a"
+    },
+    {
+      "claim_id": "8777ca98-29fd-4541-9add-a267a56edd87",
+      "result_id": "15cca00c-c6b6-4edf-a97d-51dcaf5fdac2"
+    },
+    {
+      "claim_id": "bd3804fc-b867-4f49-95bb-1f357e62f4a2",
+      "result_id": "15cca00c-c6b6-4edf-a97d-51dcaf5fdac2"
+    },
+    {
+      "claim_id": "983a5a82-8109-44b5-b96a-462c578384ea",
+      "result_id": "15cca00c-c6b6-4edf-a97d-51dcaf5fdac2"
+    },
+    {
+      "claim_id": "72b79707-fb41-456e-bd36-80f9d610808b",
+      "result_id": "15cca00c-c6b6-4edf-a97d-51dcaf5fdac2"
+    },
+    {
+      "claim_id": "59186052-c651-4c59-a847-fbf4a2df67ad",
+      "result_id": "3124bc93-1cc3-46ac-b133-00978d073203"
+    },
+    {
+      "claim_id": "7114fa74-3a67-460c-a4f5-59ab4ac3e534",
+      "result_id": "3124bc93-1cc3-46ac-b133-00978d073203"
+    },
+    {
+      "claim_id": "07d7a993-6077-496d-9be1-74182c49494e",
+      "result_id": "3124bc93-1cc3-46ac-b133-00978d073203"
+    },
+    {
+      "claim_id": "fb108f0d-c18a-459c-bebd-83bae39f8fba",
+      "result_id": "3124bc93-1cc3-46ac-b133-00978d073203"
+    },
+    {
+      "claim_id": "fd39491d-cb88-414c-a093-aeb4fe4572f9",
+      "result_id": "3124bc93-1cc3-46ac-b133-00978d073203"
+    },
+    {
+      "claim_id": "9275584b-b1ed-4e6b-8244-8da213bb0a5d",
+      "result_id": "6ee846c9-b78f-4c17-8129-ec5b83d9ef43"
+    },
+    {
+      "claim_id": "3e2c7e3a-b3d8-4c96-9601-a982dc9dd1dc",
+      "result_id": "6ee846c9-b78f-4c17-8129-ec5b83d9ef43"
+    },
+    {
+      "claim_id": "a368ed77-c456-4fbb-b825-7d0a322442b7",
+      "result_id": "6ee846c9-b78f-4c17-8129-ec5b83d9ef43"
+    },
+    {
+      "claim_id": "4a2d2dd6-c75a-4bc3-8175-0f3d6695a178",
+      "result_id": "6ee846c9-b78f-4c17-8129-ec5b83d9ef43"
+    },
+    {
+      "claim_id": "3e1af07d-a7e7-4791-a41a-306c3c6228a8",
+      "result_id": "6ee846c9-b78f-4c17-8129-ec5b83d9ef43"
+    },
+    {
+      "claim_id": "1c03ace1-b37d-4157-9279-dbff0b530f3a",
+      "result_id": "6ee846c9-b78f-4c17-8129-ec5b83d9ef43"
+    },
+    {
+      "claim_id": "47b059a0-0577-4aaa-9265-7391b9c1d9a6",
+      "result_id": "0a95f7f9-8477-41ed-8e0f-6e2ef7b4922f"
+    },
+    {
+      "claim_id": "d0f2bf14-580e-4c81-80f3-2f473926acfa",
+      "result_id": "0a95f7f9-8477-41ed-8e0f-6e2ef7b4922f"
+    },
+    {
+      "claim_id": "e3b4045a-592f-41b7-9eb7-cfa1bbbe1b0b",
+      "result_id": "0a95f7f9-8477-41ed-8e0f-6e2ef7b4922f"
+    },
+    {
+      "claim_id": "31aefb58-4e07-4aa6-9e6e-bbaf4fba477a",
+      "result_id": "0a95f7f9-8477-41ed-8e0f-6e2ef7b4922f"
+    },
+    {
+      "claim_id": "b2fb145b-75f4-4c60-83ce-8ba16cc9dc87",
+      "result_id": "0a95f7f9-8477-41ed-8e0f-6e2ef7b4922f"
+    },
+    {
+      "claim_id": "dd0529d0-d96c-45bd-a27f-d689dcc9488b",
+      "result_id": "0a95f7f9-8477-41ed-8e0f-6e2ef7b4922f"
+    },
+    {
+      "claim_id": "3c343172-6202-4011-8e0c-4d4a32c98f53",
+      "result_id": "0a95f7f9-8477-41ed-8e0f-6e2ef7b4922f"
+    },
+    {
+      "claim_id": "0556f7da-48db-4a77-9230-4c8adbbf2552",
+      "result_id": "f52040be-d726-4909-a553-c8f14f0fa14d"
+    },
+    {
+      "claim_id": "20249d06-9fdb-442e-907d-6e73ba192cd2",
+      "result_id": "f52040be-d726-4909-a553-c8f14f0fa14d"
+    },
+    {
+      "claim_id": "16083e26-b9ce-4318-9a95-59f4e3782c2d",
+      "result_id": "62735c4f-22ae-4a56-a26d-13d8ddb7e15a"
+    },
+    {
+      "claim_id": "9d599c0e-82f4-490a-a57e-79d3ba143954",
+      "result_id": "62735c4f-22ae-4a56-a26d-13d8ddb7e15a"
+    },
+    {
+      "claim_id": "7b58af3a-e5a1-49f1-9779-cae5ac35f5e5",
+      "result_id": "62735c4f-22ae-4a56-a26d-13d8ddb7e15a"
+    }
+  ],
+  "comparisons": []
+}

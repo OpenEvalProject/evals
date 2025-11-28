@@ -1,0 +1,1785 @@
+{
+  "submission": {
+    "id": "4c5a7f36-004e-447b-b941-c7fcc503ee87",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:28:17.434558Z",
+    "updated_at": "2025-11-28T20:28:17.434558Z"
+  },
+  "content": [
+    {
+      "id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "submission_id": "4c5a7f36-004e-447b-b941-c7fcc503ee87",
+      "content_type": "manuscript",
+      "content_text": "# Regulation of branching dynamics by axon-intrinsic asymmetries in Tyrosine Kinase Receptor signaling\n\n## Authors\n\n- Marlen Zsch\u00e4tzsch<sup>1</sup>\n- Carlos Oliva<sup>1</sup>\n- Marion Langen<sup>1</sup>\n- Natalie De Geest<sup>1</sup>\n- Mehmet Neset \u00d6zel<sup>5</sup>\n- W Ryan Williamson<sup>5</sup>\n- William C Lemon<sup>6</sup>\n- Alessia Soldano<sup>1</sup>\n- Sebastian Munck<sup>1</sup>\n- P Robin Hiesinger<sup>5</sup>\n- Natalia Sanchez-Soriano<sup>8</sup> \u2020\n- Bassem A Hassan<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Center for the Biology of Disease Vlaams Instituut voor Biotechnologie Leuven Belgium\n2. Center of Human Genetics University of Leuven School of Medicine Leuven Belgium\n3. Program in Molecular and Developmental Genetics Doctoral School for Biomedical Sciences, University of Leuven Group Biomedicine Leuven Belgium\n4. Program in Molecular and Cognitive Neuroscience Doctoral School for Biomedical Sciences, University of Leuven Group Biomedicine Leuven Belgium\n5. Department of Physiology and Green Center for Systems Biology University of Texas Southwestern Medical Center Dallas United States\n6. Janelia Farm Research Campus Howard Hughes Medical Institute Ashburn United States\n7. Bio Imaging Core Vlaams Instituut voor Biotechnologie (VIB) Leuven Belgium\n8. Department of Cellular and Molecular Physiology Institute of Translational Medicine, University of Liverpool Liverpool United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nAxonal branching allows a neuron to connect to several targets, increasing neuronal circuit complexity. While axonal branching is well described, the mechanisms that control it remain largely unknown. We find that in the Drosophila CNS branches develop through a process of excessive growth followed by pruning. In vivo high-resolution live imaging of developing brains as well as loss and gain of function experiments show that activation of Epidermal Growth Factor Receptor (EGFR) is necessary for branch dynamics and the final branching pattern. Live imaging also reveals that intrinsic asymmetry in EGFR localization regulates the balance between dynamic and static filopodia. Elimination of signaling asymmetry by either loss or gain of EGFR function results in reduced dynamics leading to excessive branch formation. In summary, we propose that the dynamic process of axon branch development is mediated by differential local distribution of signaling receptors.\n\n## Introduction\n\nThe establishment of functional neuronal networks relies on the correct incorporation of a neuron into a developing circuit. An extended neurite network enables a single neuron to process information from multiple input cells and to relay that information to a wide range of targets. Neurite formation during development is a dynamic process and therefore tight regulation seems necessary to achieve connection specificity. At earlier steps of circuit formation, axon guidance, an intensively investigated process, combines intrinsic factors and extracellular cues to form a trajectory towards the general target area (Williams et al., 2003; Schnorrer and Dickson, 2004; Kolodkin and Tessier-Lavigne, 2011; Pappu et al., 2011). Subsequently, the formation of precise axonal connections within the target area relies on the development of the correct number of axonal branches. Currently, the mechanisms regulating axonal branch number and accuracy are largely unknown and subject to much debate.\n\nIn mammals, a common mechanism to regulate axon branch number is excessive axonal outgrowth and exuberant branch formation during development followed by a refinement process called pruning (Low and Cheng, 2006). Pruning encompasses the removal of relatively short axon terminals and branch arbors innervating a common target area as seen in the mouse peripheral and central nervous systems (Sanes and Lichtman, 1999; Hashimoto et al., 2009). In addition, long axon collaterals innervating distant target areas occurring for example in corticospinal tract (CST) axons of layer V neurons can be eliminated (Weimann et al., 1999). Removal of short redundant or inappropriate branches occurs typically via retraction of short branches whereas longer tracts are eliminated primarily by degeneration (Luo and O\u2019Leary, 2005). A process involving features of both pruning mechanisms, termed axosome shedding, has been observed in mammals (Bishop et al., 2004).\n\nAn important question is how branch refinement is regulated. For a long time activity-dependent mechanisms were thought to be the major factor underlying regulation of pruning in the mammalian system (McLaughlin et al., 2003; Yu et al., 2004; Huberman et al., 2006; Hashimoto et al., 2009). However, several studies in various vertebrate systems suggest that this may not be universally true (Crowley and Katz, 2000; Bagri et al., 2003; Pfeiffenberger et al., 2006; Cang et al., 2008; Sun et al., 2011; Wei et al., 2011). Thus, although there is ample description of axonal branch refinement in vertebrate systems, much remains to be elucidated about the mechanisms underlying them.\n\nIn Drosophila deterministic genetic programs are thought to account for the stereotypic development of the vast majority of neuronal connections (Jefferis et al., 2001; Hiesinger et al., 2006). Nevertheless, a specialized form of pruning also occurs in Drosophila, namely the widely studied remodeling of insect networks during metamorphosis. In holometabolous insects, like the fruit fly, many cells need to accommodate two distinct morphological and behavioral states within a lifetime. In the nervous system neuronal arbors have to remodel extensively to allow the reiterative use of larval neuronal populations to form adult circuits. Interestingly, the molting hormone Ecdysone is not only necessary for body transformation but also for the regulation of remodeling events in the nervous system (Truman, 1990). This system resembles partially the emergence of an adult network from initial projections as seen in vertebrates in the visual and motor cortex (O\u2019Leary and Koester, 1993).\n\nIn this study, we focus on axonal branch refinement of the dorsal cluster neurons (DCNs) in the central nervous system (CNS) of Drosophila (Hassan et al., 2000). DCNs form only adult-specific neuronal projections and therefore unlike sensory neurons (Williams et al., 2006) and mushroom body neurons (Boulanger et al., 2011), DCN axons are not remodeled during metamorphosis. DCN axons innervate the optic lobes via an initial phase of long-range axonal growth and retraction steps, followed by the establishment of a stereotypic number of axonal branches by an unknown mechanism. In this work, we first describe that this wiring pattern is achieved through initially excessive axonal branch growth followed by refinement during brain development. Next, we show that the refinement process is regulated through local activation of EGFR signaling in part by EGF-secreting sensory axons. We find that EGFR shows intrinsic differential distribution between individual developing DCN axonal branches and that the appropriate level of signaling is required for proper axonal branching. Mechanistically, we find that, in this context, the EGFR acts via regulating actin cytoskeleton dynamics, and not the canonical mitogen activated kinase (MAPK) pathway. Finally, high-resolution 4D live imaging of pupal brain explants shows that inhibition of EGFR signaling causes a dramatic reduction in axonal branch dynamics leading to the failure of axonal branch pruning.\n\n## Results\n\n### Dorsal cluster neurons as a model to study axonal branch formation\n\nThe dorsal cluster neurons (DCNs) establish a complex neurite network in the Drosophila adult optic lobes. A small subset of neurons from this cluster extend their axons in the outer part of the optic lobe, the medulla (Me) (Srahna et al., 2006; Langen et al., 2013), where they form a stereotypic pattern of axonal branches (Figure 1A,B). This pattern can be readily visualized using the ato-Gal4 driver in combination with a UAS-driven marker of choice such as CD8-GFP. Flip-out single cell clones (Wong et al., 2002) reveal the branch pattern of an individual axon derived from a single neuron of the 12 medulla innervating DCNs (Figure 1C). False color labeling and tracing (Longair et al., 2011) of single DCN Me axons and their branches (Figure 1D) reveals that each axon generates 6\u20138 primary branches, with a mean of 7 branches. This stereotypic pattern is achieved by hot spots of branches extending in dorsal and ventral direction from each main axon shaft. The first main branch point is located at the border between lobula and Me with one or two branches. The next major branch point with often two branches is situated in Me layers M7\u2013M8 and in this location branches from distinct neighboring axons are often in close contact forming a grid-like pattern. The terminal set of up to four branches is distributed over the M1\u2013M3 layers and is more often intermingled with neighboring axon branches. In between the two most distal branch points intermediate branches occur occasionally. DCN branches never extend beyond the Me neuropil.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig1-v1.jpg)\n\n**Figure 1.:** (A) Dorsal cluster neurons, labeled with lacZ (red) using the atoGal4-14a driver, with its dendritic and axonal projections in the optic lobes of the CNS. Using the FLP-out system, an individual neuron is labeled with mCD8-GFP (green) within the background of the entire cluster. AtoGal4-14a is used in all the following experiments except when stated otherwise. (B) DCN axons, labeled with mCD8-GFP, form a stereotypic pattern of axonal branches within the medulla (Me) of the adult optic lobe. (C) Using the FLP-out system the axon and branches of an individual neuron are labeled with mCD8-GFP (green) within the background of the entire cluster labeled with lacZ (red). (D) False color labeling of one Me DCN axon with its main shaft (green) and branches (magenta) using a tracer tool. The scale bars represent 100 \u00b5m in (A) and 20 \u00b5m in (B\u2013D).\n\n### EGFR signaling regulates axon branch formation\n\nWe carried out a targeted screen using loss and gain of function transgenes for signal transduction and axon guidance receptors to identify pathways that might regulate axon branch development. We noted excessive branching in the adult DCNs using a dominant-negative construct of the EGFR. To validate these findings we first analyzed flies carrying a viable hypomorphic loss of function mutation for the receptor (EGFRT1). In this genetic background DCN axons show short ectopic branches (Figure 2A) highlighted using the tracing tool (Figure 2A\u2032). Since the proper development of the optic lobes depends on EGFR signaling (Huang et al., 1998), reduced EGFR signaling might indirectly influence DCN axon formation and morphology. To investigate whether the EGFR is required in the DCNs for axonal branch refinement, we sought to generate DCN MARCM EGFR-null clones (Lee and Luo, 1999), whereby EGFR function is removed at the time of neuronal birth. We obtained very few clones, suggesting that the EGFR may be required early during development for cell viability. The clones we did obtain showed ectopic branching defects, but also severe axon targeting phenotypes, suggesting that the EGFR is required early in DCN development and precluding further analysis of these clones (Figure 2\u2014figure supplement 1). To avoid these early defects, we used the ato-Gal4 driver, which is expressed in postmitotic DCNs after the initiation of axonal outgrowth (Srahna et al., 2006; Zheng et al., 2006; Langen et al., 2013), to express two different dominant negative alleles of the EGFR (uas-EGFRDN-A, Freeman, 1996; uas-EGFRDN-B, Buff et al., 1998) and EGFRRNAi (uas-EGFRRNAi, VDRC107130). In all three cases the DCNs show a significant increase of axon branches in the adult CNS. Compared to an average of 7 primary branches under wild type conditions, we observed a significant increase to 10.5 primary branches per axon in EGFRDN-A expressing DCNs (Figure 2B,B\u2032,E). Single cell clones in wild type (Figure 2F) and EGFRDN\u2212A background (Figure 2G) show the branch increase on single cell level. Expression of the second, weaker, EGFRDN allele (Urban et al., 2004) (EGFRDN-B) resulted in an increase to an average of 8.3 branches per axon (Figure 2C,C\u2032,E), and EGFR knock-down with RNAi leads to a similar increase to 8.5 branches per axon (Figure 2D,D\u2032,E). In the case of the EGFRDN-A axonal branches appear thin and spike-like suggesting that they are immature. Interestingly, inhibition of EGFR results not only in an increase of the average branch number, but also increases the variability in the branch numbers between individual axons (Figure 2\u2014figure supplement 3), even within the same individual brain, suggesting that EGFR signaling may regulate the accuracy and robustness of the branching process.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig2-v1.jpg)\n\n**Figure 2.:** (A) The homozygous hypomorphic allele EGFRT1 shows additional, short branches. (B\u2013D) Downregulation of the EGFR specifically in the DCNs results in an increase of adult branches via overexpression of (B) a dominant-negative form A (UAS-EGFRDN-A), (C) a dominant-negative form B (UAS-EGFRDN-B) and (D) a RNAi against EGFR (UAS-EGFRRNAi). (A\u2032\u2013D\u2032) Visualization of branches (purple) along a single main axon shaft (green) using the tracing tool reveals excessive branches of the aforementioned genotypes in (A\u2013D). (E) Quantification of adult primary branch numbers per axon for the genotypes shown in (B\u2013D) shows significant increase of branches. Control 6.96 \u00b1 1.34 (n = 60), EGFRDN-A 10.5 \u00b1 2.5 (n = 45, p<0.001) EGFRDN-B 8.3 \u00b1 1.46 (n = 40, p<0.001), EGFRRNAi 8.5 \u00b1 1.09 (n = 40, p<0.001). (F\u2013G) Adult Drosophila brain in which the neuropil is marked with DN-Cad (red). Flip out DCN clones are generated in control (F) and EGFRDN\u2212A (G) background. Error bars represent SEM. Non-parametric ANOVA Kruskal\u2013Wallis test. ***p<0.001. The scale bars represent 20 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Example of an adult Drosophila brain in which a single GFP-positive EGFR mutant DCN is generated using the MARCM technique. (A\u2032) High magnification of the axonal projection of the clone in (A) in the contralateral brain half. The scale bars represent 20 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The homozygous, hypomorphic allele Spiscp2 shows ectopic short branches. (A\u2032) Visualization of branches (purple) along a single main axon shaft (green), using the tracing tool. (B\u2013D) Co-innervation of DCN axon branches (green) and photoreceptor axons (anti-chaoptin, red) in the medulla at 36 hr APF (B), at 48 hr APF (C) and adult (D). (E) Vein-LacZ expression in unknown cells, probably glia, very close to the more proximal branches of the DCNs, suggesting that Vein may be the other ligand activating EGFR in the DCNs. (F\u2013G) No difference in branch number was observed after downregulation of Spi using UAS-SpiRNAi in the DCNs using the ato-Gal4-14a. (H\u2013I) Spi downregulation in photoreceptors using the GMR-Gal4 driver causes a significant increase in DCN branches whereby DCN axons are labeled with LexAop-myr-GFP driven by an IMAGO LexA knock-in into the atonal locus (atolexA). (J) Analysis of the RNAi experiment represented in (F\u2013I). Significant increase of DCN branch numbers occurs only after photoreceptor specific Spi downregulation. Control (atoGal4-14a>UAS-CD8-GFP) 5.6 \u00b1 1.1 (n = 12), SpiRNAi (atoGal4-14a>UAS-SpiRNAi) 5.9 \u00b1 1.1 (n = 12), control (GMR-Gal4>UAS-CD8-GFP) 5.42 \u00b1 0.9 (n = 12), SpiRNAi (GMR-Gal4>UAS-SpiRNAi) 7.17 \u00b1 2.17 (n = 12). Error bars represent SEM. t test. *p<0.05. The scale bars represent 20 \u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Inhibition of EGFR signalling in the DCNs increases both the average number and the variability of axonal branch numbers.\n\nActivation of the EGFR requires binding to its EGF ligands. To confirm that EGFR signaling regulates DCN axon branching, we first tested adult hypomorphic mutants for the EGFR ligand Spitz (Spi) whose role in optic lobe development is well described (reviewed in Salecker et al., 1998). Reduction of Spi activity results in ectopic short branches indistinguishable from those seen in EGFR hypomorphic mutants (Figure 2\u2014figure supplement 2A,A\u2032; compare to Figure 2A,A\u2032). To determine the source of the EGF signal that regulates DCN branch refinement, we considered two possibilities. First, DCN axons themselves might release an activating ligand to initiate an autocrine signaling mechanism, as seen in the p75-TNR axo-axonal competition of mouse and rat sympathetic axons innervating the eye (Singh et al., 2008). Second, neurons in the target neuropil might release EGF to regulate branch refinement. A subset of retinal photoreceptors known as R8 and R7 have axon terminals that innervate the medulla. Photoreceptors are known to secrete Spi to initiate a number of EGFR-dependent events in the developing optic lobes (Huang and Kunes, 1998; Huang et al., 1998; Yogev et al., 2010). We analyzed the coincidence of innervation of the medulla by R7 and R8 photoreceptor axons using the photoreceptor specific marker mAb 24B10 (Fujita et al., 1982). Overlap between DCN and R7/8 axons can be seen at different times during brain development and in the adult brain (Figure 2\u2014figure supplement 2B\u2013D).\n\nTo distinguish between the two models, we used SpiRNAi driven by either ato-Gal4 (DCNs) or GMR-Gal4 (photoreceptors) to down regulate Spi expression in the DCNs or photoreceptors, respectively. To visualize DCN branch formation while down regulating Spi specifically in the photoreceptors, we used the Gal4-independent LexA-based binary expression system (Lai and Lee, 2006). Specifically, we took advantage of the atoLexA IMAGO (Choi et al., 2009) knock-in allele we recently generated (Langen et al., 2013) and used it to drive LexAop-GFP expression in DCNs. Whereas we find no significant difference in branch number upon knock-down of Spi in the DCNs (Figure 2\u2014figure supplement 2F,G,J), Spi knock-down in photoreceptors causes a significant increase in DCN branches (Figure 2\u2014figure supplement 2H,I,J). In addition, to Spi release from photoreceptors, we observed cells expressing a reporter for the EGFR ligand Vein in close proximity to DCN axons (Figure 2\u2014figure supplement 2E), suggesting a second source of EGF within the brain. Taken together, these results show that EGFR signaling regulates DCN axonal branch development.\n\n### EGFR is required for developmental axon branch pruning\n\nIn theory, the adult branching pattern of DCN medulla axons can be established via one of at least two distinct mechanisms during development. On the one hand, accurate target innervation might proceed via the direct formation of the correct number of branches. Alternatively, the specificity of axonal branching might be the result of initial excessive outgrowth and exuberant branch formation during development followed by a refinement process to eliminate the majority of branches, as in refinement observed in mammalian visual map formation (Feldheim and O\u2019Leary, 2010), for example.\n\nTo distinguish between these two models, we characterized branching of wild type DCN axons at different time points after puparium formation (APF) during brain development. Between 36 hr and 54 hr APF DCN axons form extensive branches at multiple positions along the growing axon (Figure 3A\u2013C). Between 60 hr and 72 hr APF pruning begins to be evident (Figure 3D\u2013F\u2032). At 84 hr APF, the eventual adult branch pattern of 6\u20138 branches is apparent (Figure 3G) and little or no further pruning appears to occur beyond that point (Figure 3H,I). This developmental pattern is not an artifact of the expression of the membrane bound marker CD8-GFP, as two other intracellular axonal markers (nSyb-GFP and Syt-GFP) yield the same results (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013I) Axonal branch pattern at different pupal stages shows excessive branching at early to mid-pupal development. Successive refinement of exuberant branches can be observed between 60 hr and 96 hr (arrowhead, compare D\u2013H). Branch morphology at (A) 36 hr APF, (B and B\u2032) 48 hr APF, (C) 54 hr APF, (D) 60 hr APF, (E) 64 hr APF, (F and F\u2032) 72 hr APF, (G) 84 hr APF, (H) 96 hr APF and (I) adult stage. High magnification of branches is shown in B\u2032 and F\u2032. (J\u2013O) Axonal branch pattern at different pupal stages of EGFRDN expressing DCNs shows excessive branching at early to mid-pupal time points similar to wild type. Impaired refinement of exuberant branches can be observed between 60 hr and 96 hr (arrow, compare L\u2013O). Branch morphology at (J) 36 hr APF, (K and K\u2032) 48 hr APF, (L) 60 hr APF, (M and M\u2032) 72 hr APF, (N) 84 hr APF, (O) 96 hr APF. High magnification of branches is shown in K\u2032 and M\u2032. (P) Quantification of branches at the second branch point at 48 hr and 72 hr APF comparing control and EGFRDN using the Skeleton Analysis tool of ImageJ (\u2018Materials and methods\u2019). EGFR downregulation does not result in increased branches at 48 hr APF compared to control. Significant decrease of developmental branch numbers at 72 hr APF occurs due to refinement in control. No significant decrease in branch number was observed after EGFR downregulation between 48 hr and 72 hr APF. Compared to control more branches persist after EGFR downregulation at 72 hr APF. Control (48 hr APF) 49.33 \u00b1 9.87 (n = 18), control (72 hr APF) 22.75 \u00b1 9.1 (n = 18, p<0.01), EGFRDN (48 hr APF) 45.77 \u00b1 10.96 (n = 16), EGFRDN (72 hr APF) 37.3 \u00b1 3.83 (n = 14) (to control 72 hr APF, p<0.05). Error bars represent SEM. t test. *p<0.05; **p<0.01. The scale bars represent 20 \u00b5m except in B\u2032, K\u2032 and M\u2032 with 10 \u00b5m. (Q) Schematic representation of the role of EGFR signaling in DCN axonal branch formation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013F) DCN axon branches labeled with nSyb-GFP during pupal development at (A) 36 hr APF, (B) 48 hr APF, (C) 60 hr APF, (D) 72 hr APF, (E) 84 hr APF, (F) 96 hr APF. (G\u2013L) DCN axon branches labeled with nSyb-GFP during pupal development at (G) 36 hr APF, (H) 48 hr APF, (I) 60 hr APF, (J) 72 hr APF, (K) 84 hr APF, (L) 96 hr APF. The scale bars represent 20 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) DCN axon branching (green) of 2-days-old EGFRDN flies does not exceed the neuropil marked with DN-cadherin (red). (B) DCN axon branching (green) of aged EGFRDN flies at 18 days does not exceed the neuropil marked with DN-cadherin (red). The scale bars represent 20 \u00b5m.\n\nExcessive axonal branches in EGFR mutant adults may be the result either of increased branch growth or of failure of branch pruning. To distinguish between these two possibilities, we analyzed DCNs expressing EGFRDN during pupal development. Between 36 hr and 48 hr APF axon branching at the second branch point is similar to wild type (Figure 3J,K). An initial difference in branch phenotype can be observed at 60 hr APF and subsequently at 72 hr APF, the typical refinement seen in wild type is largely absent in the EGFRDN background (Figure 3L\u2013M\u2032). The failure to prune is evident at 84 hr and 96 hr APF (Figure 3N,O) where DCN axons show excessive axonal branches. To rule out developmental delay as a cause we examined 2-day vs 18-day-old EGFRDN flies. These flies are indistinguishable from 96 hr APF EGFRDN flies indicating no further branch refinement (Figure 3\u2014figure supplement 2). Finally, we quantified axonal branch pruning at 48 hr and 72 hr APF by counting the number of branch end-points at these two time points in wildtype and EGFRDN flies, respectively. While there is no significant difference between the two genotypes at 48 hr APF, quantification at 72 hr APF confirms the increased amount of branches in the EGFRDN background compared to wild type (Figure 3P). In addition, the significant decrease in branch number seen in wild type axons between 48 hr and 72 hr is not observed in the EGFRDN axons (Figure 3P). In summary, these data show that EGFR signaling is required to generate the correct number of axonal branches through the reduction of branch precursors formed during development (Figure 3Q).\n\n### Asymmetry of EGFR localization regulates differential filopodial dynamics\n\nTo gain insight into the role of EGFR during axonal branching, we turned to primary embryonic Drosophila neuronal culture (Prokop et al., 2011; Sanchez-Soriano et al., 2010). After 2 days in culture wildtype Drosophila primary neurons sprout on average \u223c2.5 primary axonal branches, whereas neurons expressing EGFRDN show a significant increase in branch number (Figure 4A\u2013C), suggesting that regulation of axonal branching by the EGFR is a process intrinsic to neurons and common to different neuronal subtypes. Axonal branches develop from dynamic filopodia that gets stabilized during the axonal branching process. We quantified the dynamics of filopodia under WT and EGFR loss of function conditions. We find that in growing wildtype neurons less than 10% of filopodia are static during the imaging time window of 3 min. In contrast, EGFRDN neurons have a significant increase in the percentage of static filopodia to \u223c30% (Figure 4D\u2013F). An increase in static filopodia may suggest that more of the transient protrusions are stabilized into branches. An indication of the maturation of filopodia into branches is the invasion of microtubules into axonal filopodia (Gallo, 2011). Accordingly, we find that EGFRDN induces an increase in microtubules invading axonal filopodia (Figure 4\u2014figure supplement 1). These data suggest that EGFR signaling regulates branch formation by controlling the dynamics of immature protrusions. To examine the localization of the EGFR in primary neurons, we cultured neurons from animals expressing C-terminally GFP-tagged EGFR (UAS-EGFRGFP) and performed live imaging experiments. We find that the EGFR is dynamically transported into and out of axonal branches and their filopodia (Figure 5A; Video 1, Video 2), with slightly, but significantly, higher levels in dynamic filopodia compared to static filopodia (Figure 5A\u2032,A\u2033, Figure 5\u2014figure supplement 1). In summary, our data indicate that EGFR is differentially localized to static vs dynamic filopodia and that its activity promotes dynamic filopodial behavior and consequent adjustment of branch number.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig4-v1.jpg)\n\n**Figure 4.:** (A and B) Branch formation in cultured primary Drosophila neurons (2 days). (B\u2013B\u2032) Overexpression of UAS-EGFRDN using the sca-Gal4 driver results in an increase of branches when compared to (A\u2013A\u2032) wild type (control). For the visualization of branches, neurons were stained with anti-tubulin (green) and phalloidin (magenta). (C) Quantification of primary branch numbers per axon shows significant increase of branches in UAS-EGFRDN neurons (control: 2.48 \u00b1 0.2 (n = 83); EGFRDN: 3.57 \u00b1 0.24; n = 74, p<0.001). (D\u2013E) Still images from videos of (D) wild type and (E) UAS-EGFRDN-expressing neurons. Overexpression of UAS-EGFRDN using the sca-Gal4 driver results in a decrease of filopodia dynamics in primary Drosophila neurons cultured for 6\u20138 hr. Different filopodia are marked by colored arrows and can be followed over time. (F) Quantification of static vs dynamic (extensions and retractions) behaviors shows a significant distribution change between wild type vs EGFRDN-expressing filopodia (control: static = 10, dynamic = 110; EGFRDN: static = 41, dynamic = 86, p<0.001). Error bars represent SEM. Mann\u2013Whitney test. ***p<0.001. The scale bars in (A\u2013B) represent 10 \u00b5m and in (D\u2013E) represent 3 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Filopodia containing microtubules in cultured primary Drosophila neurons (6 hr). (B) Overexpression of UAS-EGFRDN using the sca-Gal4 driver results in an increase of filopodia containing microtubules (arrowhead) when compared to (A) wild type (control). Neurons were stained with anti-tubulin (green) and phalloidin (magenta). (C) Quantification of filopodia containing microtubules, the percentage of filopodia with microtubules is increase in UAS-EGFRDN neurons (in percentages, control: 13 \u00b1 0.8 (n = 253); EGFRDN: 17 \u00b1 0.7; n = 239, p<0.001). Error bars represent SEM. Mann\u2013Whitney test. ***p<0.001. The scale bars in (A and B) represent 3 \u00b5m.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) UAS-EGFRGFP expressed with elav-Gal4 in wild type (A) and EGFRDN (B) primary Drosophila neurons. False color image displaying a heat map of an EGFRGFP-expressing growth cone. EGFRGFP expression in dynamic (A\u2032 and B\u2032) and static filopodia (A\u2033 and B\u2033) is followed over time in wild type (A\u2032 and A\u2033) and EGFRDN (B\u2032 and B\u2033). A\u2032 and B\u2032 each shows one filopodia growing and one retracting (C). To quantify EGFRGFP intensity in static vs dynamic filopodia in the absence (control) or presence of EGFRDN, we calculated the ratio of EGFRGFP in dynamic minus static filopodia (GFP maximal intensity of each dynamic phase minus the mean of GFP maximal intensity in static filopodia). The difference in EGFRGFP levels between dynamic filopodia and static filopodia are significantly reduced in the presence of EGFRDN (control dynamic-static: 0.1046 \u00b1 0.009, n=216; EGFRDN dynamic-static: 0.0349 \u00b1 0.0121, n=124, p<0.001). Error bars represent SEM. Mann\u2013-Whitney test. ***p<0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** UAS-EGFRGFP under control of sca-Gal4 is significantly higher expressed in dynamic filopodia compared to static filopodia in cultured wild-type neurons.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013B) Growth cones from primary Drosophila neurons expressing UAS-EGFRGFP with elav-Gal4. Neurons were inmunostained for the recycling endosomal marker Rab11 (A, B, A\u2034, B\u2034 in red), GFP (A\u2032, B\u2032, A\u2034, B\u2034 in green) and the early endosomal marker Rab5 (A\u2033, B\u2033, A\u2034, B\u2034 in blue). Note that a fraction of EGFR granules colocalises with Rab11 (arrows) or Rab5 (arrowheads). The scale bars in (A) represent 1 \u00b5m.\n\n![Video 1.](https://cdn.elifesciences.org/articles/01699/elife-01699-media1.mov.jpg)\n\n**Video 1.:** This video is related to Figure 5. Live imaging time-lapse video of axons from different primary neurons grown in culture for 4 days. UAS-EGFRGFP is expressed with elav-Gal4 driver. Images were collected every 4 s.\n\n![Video 2.](https://cdn.elifesciences.org/articles/01699/elife-01699-media2.mov.jpg)\n\n**Video 2.:** This video is related to Figure 5. Live imaging time-lapse video of axons from different primary neurons grown in culture for 4 days. UAS-EGFRGFP is expressed with elav-Gal4 driver. Images were collected every 4 s.\n\nWe wondered whether differential EGFR localization is itself dependent on EGFR signaling activity. To this end, we compared levels of EGFRGFP in filopodia of control vs EGFRDN neurons. We find that the difference in EGFRGFP levels between dynamic and static filopodia drops dramatically upon inhibition of EGFR signaling (Figure 5B,B\u2032,B\u2033,C). EGFR signaling depends on receptor endocytosis upon ligand binding (Haigler et al., 1979). Interestingly, EGFRGFP traffics actively all along the axonal shafts, branches and filopodia in cultured neurons (Video 3), and we find EGFR-GFP puncta partially co-localize with both Rab5 and Rab11, suggesting that EGFR is present on early and recycling endosomes (Figure 5\u2014figure supplement 2). These data indicate that recycling might lead to differential EGFR localization in filopodia. Because the EGFRDN used here can still bind ligand but fails to signal, one interesting possibility is that these dominant negative receptors may titrate ligand away from the functional receptor and thus inhibit not only signaling, but also internalization. To test the putative role of endocytosis in receptor dynamics, we live-imaged EGFRGFP localization in filopodia before and after inhibition of endocytosis using the Dynamin inhibitor Dyngo (Harper et al., 2011). In untreated wild type neurons, EGFRGFP levels vary between individual filopodia and within each filopodium over time (Figure 6A\u2013C). Upon inhibition of endocytosis, the overall levels of EGFRGFP in filopodia decrease and the fluctuation of EGFRGFP between and within filopodia is significantly reduced (Figure 6A\u2032\u2013C). This is accompanied by a dramatic reduction in filopodial dynamics (Figure 6D; Video 4), suggesting that receptor endocytosis and recycling regulates EGFR localization and dynamics in filopodia.\n\n![Video 3.](https://cdn.elifesciences.org/articles/01699/elife-01699-media3.mov.jpg)\n\n**Video 3.:** This video is related to Figure 5. Live imaging time-lapse video of axons from different primary neurons grown in culture for 4 days. UAS-EGFRGFP is expressed with elav-Gal4 driver. Images were collected every 4 s.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013A\u2032) UAS-EGFRGFP expressed with elav-Gal4 driver in primary Drosophila neurons. False color image displaying a heat map of an EGFRGFP-expressing growth cone before (A) and after (A\u2032) treatment with Dyngo. (B) Maximal intensity of EGFRGFP in filopodia within one neuron over time (2 min), before and after treatment (indicated by dotted line) with Dyngo. (C) Scatter plot from EGFRGFP maximal intensities from filopodia from 6 neurons, showing a significant decrease in levels after treatment with Dyngo (EGFRGFP maximal intensities in DMSO: 1.229 \u00b1 0.0074, n = 1403; EGFRGFP maximal intensities in Dyngo: 0.768 \u00b1 0.005, n = 1401, p<0.001). (D) Effect of Dyngo on filopodia dynamics. Quantification of static vs dynamic (extensions and retractions) behaviors of filopodia shows a significant distribution change between controls (EGFRGFP-expressing neurons in DMSO) and Dyngo-treated EGFRGFP-expressing neurons (control: static = 28, dynamic = 72; Dyngo treated: static = 66, dynamic = 32, p<0.001). Mann\u2013Whitney test. ***p<0.001.\n\n![Video 4.](https://cdn.elifesciences.org/articles/01699/elife-01699-media4.avi.jpg)\n\n**Video 4.:** This video is related to Figure 6. Video shows the side-by-side comparison of dynamic behavior of filopodia with and without Dyngo-4a (a dynamin inhibitor) treatment. The intensity of the EGFR-GFP signal is displayed in yellow. The outlines of the filopodia have been segmented by subsequently thresholding and outline detection of the fluorescent signal. To show the dynamic behavior of the filopodia in the time-lapse video, the outlines of the following two frames (4 and 8 s ahead of the current frames) are displayed in red and in blue respectively. The untreated filopodia move more than the Dyngo-4a treated ones.\n\n### EGFR signaling shows asymmetric localization and regulates differential filopodial dynamics in vivo\n\nNext, we asked if the EGFR is differentially localized and regulates branching dynamics in vivo. EGFR transcription (Schejter et al., 1986) and function in the Drosophila developing and adult brain have been documented, where it plays a role in neuronal survival (Botella et al., 2003) and sleep regulation (Foltenyi et al., 2007). However, attempts to detect the EGFR protein using immunohistochemistry have thus far failed, most likely due to very low expression levels. We attempted to circumvent this problem by generating a genomic rescue construct tagged at the C-terminal end with GFP, identical to the UAS-EGFRGFP used in our cell culture experiments. This construct rescues the embryonic lethality of EGFR null mutants to full adult viability with no visible defects. We examined the expression of genomic EGFRGFP during brain development and find that it is broadly expressed in the developing neuropil, especially the distal medulla (Figure 7\u2014figure supplement 1A), suggesting that EGFR signaling may be generally involved in the regulation of CNS connectivity. Indeed, inhibition of EGFR activity in the lateral neurons ventral (LNv) also causes excessive axonal branching (Figure 7\u2014figure supplement 1B). Unfortunately, expression levels of the genomic EGFRGFP transgene were too low to allow analysis at sub-cellular, single axon branch resolution. To examine subcellular EGFR distribution, we expressed UAS-EGFRGFP in the DCNs. In DCNs, EGFRGFP is detected in a punctate pattern in the cell bodies (Figure 7A,B, insets), along the axons and in axonal branches (Figure 7\u2014figure supplement 1C\u2013E). At \u223c56 hr APF, when extensive growth and pruning occur, EGFRGFP is unevenly distributed across different branches of the same axon (Figure 7A\u2013A\u2034) and we find no stereotypic pattern across different individual axons or individual brains (Figure 7\u2014figure supplement 1F). At \u223c72 hr APF, after significant pruning has occurred, EGFRGFP is distributed more uniformly across the remaining unrefined branches (Figure 7B\u2013B\u2034). Note that both wildtype-untagged EGFR and EGFRGFP do not change the DCN branching pattern (Figure 7\u2014figure supplement 4), hinting that asymmetric receptor signaling is governed by differential receptor distribution, rather than total receptor levels per se. In the LNv, EGFRGFP is expressed in cell bodies and low levels are present along the growing axons during development (Figure 7\u2014figure supplement 1G). In contrast, in adult LNv UAS-EGFRGFP becomes restricted to neuronal soma (Figure 7\u2014figure supplement 1G\u2032). Thus, remarkably, even overexpressed EGFRGFP is present at relatively low levels and shows regulated developmental localization in different neuronal populations in vivo.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013B) EGFR localization examined by expressing UAS-EGFRGFP (green) in the DCNs (red, UAS-cherryRFP) during pupal development at (A) 56 hr APF and (B) 72 hr APF. EGFRGFP expression was observed in a punctate pattern in the cell bodies (insets in A and B) and along the axonal branches (A and B). Images A/B and A\u2032/B\u2032 were subjected to thresholding and merged (A\u2034/B\u2034). Differential localization results in branches with (A\u2034, arrowheads) and without (A\u2034, arrows) EGFRGFP at 56 hr APF, whereas most if not all branches contain EGFRGFP at 72 hr APF (B\u2034, arrowheads). High magnification shows EGFR localization at branches at 56 hr APF (A2) and 72 hr APF (B2). (C) Z-stack projections from live imaging time-lapse videos of control axons at around 40 hr APF between t0 = 0 min (C1) and t2 = 10 min (C3) with 5-min intervals. (D) Z-stack projections from live imaging time-lapse videos of EGFRDN axons at around 40 hr APF between t0 = 0 min (D1) and t2 = 10 min (D3) with 5 min intervals. Arrows indicate branches being pruned while arrowheads point to growing branches. (E) Visualization of growth (green) and retraction (purple) events between t0 = 0 min (C1) and t1 = 5 min (C2) in control. (F) Visualization of growth (green) and retraction (purple) events between t1 = 5 min (D2) and t2 = 10 min (D3) in EGFRDN. (G) Quantification of growth and retraction dynamics at branches using the tracer tool shows significant decrease in branch lengths in EGFRDN compared to control. Control (growth) 7.75 \u00b1 2.65 (n = 8), EGFRDN (growth) 2.97 \u00b1 0.56 (n = 9, p<0.001). Control (retraction) 7.4 \u00b1 2.28 (n = 8), EGFRDN (retraction) 3 \u00b1 1.08 (n = 8, p<0.001). Horizontal lines represent the mean for each data set. t test. ***p<0.001. The scale bars represent 20 \u00b5m.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Expression of genomic EGFRGFP (green) during brain development at 48 hr APF and the neuropil marked with DN-cadherin (blue). (B) Axonal arbor of lateral neurons ventral (LNv) (green) in wild type and EGFRDN. (C\u2013E) EGFR localization by expressing UAS-EGFRGFP (green) in the adult DCNs (red, UAS-cherryRFP) in one brain hemisphere (C), in the cell bodies (D) and in the axonal branches (E). The scale bars represent 20 \u00b5m except in C with 100 \u00b5m. (F) EGFR localization by expressing UAS-EGFRGFP (green) in the DCNs (red, UAS-cherryRFP) of two different individual flies during pupal development at 56 hr APF. Differential localization results in branches with (arrowheads) and without (arrows) EGFR localization at 56 hr APF. The scale bars represent 20 \u00b5m. (G) EGFR localization examined by expressing UAS-EGFRGFP (green) in the LNvs (red, UAS-lacZ) at (G) larval stage (L3) and in (G\u2032) adult. The scale bar represents 60 \u00b5m.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) DCN branch morphology of a brain dissected from pupae at 48 hr APF and then cultured under standard conditions (\u2018Materials and methods\u2019) for 48 hr. Morphology of the neuropils has been visualized by nc82 staining (magenta). (B\u2013C) Axon branch morphology in the optic lobe of pupal brain dissected at 48 hr APF and cultured for (B) 24 hr and (C) 48 hr. (D) EGFR shows differential and dynamic localization in developing dorsal cluster neurons in vivo. UAS-CD8-RFP and UAS-EGFR-GFP were expressed with ato-Gal4 in wild-type Drosophila brains. Intact eye\u2013brain complexes were imaged live at 45% APF. Maximum projection images demonstrating a single DCN axon terminal from live imaging time-lapse videos at t = 0 min (left) t = 18 min (middle) and t = 46 min (right), for both channels (upper) and only EGFR channel (lower). Two directly opposing branches of the same DCN axon were followed over time. At t = 0 both branches have significant levels of EGFR signal (arrow and arrowhead). 18 min later upper (arrow) branch retains its EGFR signal while lower (arrowhead) branch demonstrates a significant decrease. 28 min later the lower branch demonstrates a slight increase in the signal while the upper branch almost completely loses it. Scale bars correspond to 5 \u00b5m in all images.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) Expression of UAS-EGFR-GFP in photoreceptor neurons at developing L3 eye disc using GMR-Gal4. (A\u2032) Expression of endogenous EGFR revealed by immunohistochemistry on developing Canton-S L3 eye disc. The scale bars represent 20 \u00b5m. (B\u2013D\u2032) EGFR-GFP overexpression in the wing produces increase in vein tissue. (B) Control bearing Dpp-Gal4, showing the wild-type vein pattern, (B\u2032) Zoom in of a ROI in (B). (C) Flies over-expressing wild-type-untagged EGFR in the wing using Dpp-Gal4 (along vein L3, black arrow) show a vein-specific increase in vein thickness (yellow arrow) and formation of ectopic veins (yellow arrowheads), (C\u2032) zoom in of a ROI in (C). (D) Flies expressing EGFR-GFP using Dpp-Gal4 produces similar phenotypes to wild type EGFR over-expression (yellow arrow and arrowhead), (D\u2032) zoom in of a ROI in (D).\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig7-figsupp4-v1.jpg)\n\n**Figure 7\u2014figure supplement 4.:** Quantification of the number of axonal branches in DCNs overexpressing untagged or GFP-tagged EGFR. Neither causes a significant increase in the average number of axonal branches.\n\nDCN branches develop and prune during pupal development when the brain is not easily accessible to live imaging. To overcome this limitation, we modified the protocol for long-term adult brain explant culture (Ayaz et al., 2008) to support long-term pupal brain culture. This protocol supports the morphologically normal development of Drosophila pupal brains (Figure 7\u2014figure supplement 2A\u2013C). We sought to probe the basis of the regulation of developmental branch pruning by the EGFR. To this end, we performed high-resolution 4D live imaging to analyze real-time DCN axon branch formation by pairing the brain explant culture technique with resonant confocal microscopy of the cultured brains in a closed perfusion chamber (Williamson and Hiesinger, 2010). Imaging of developing wild type pupal brains (40 hr\u201360 hr APF) shows that wildtype DCN axon branches are dynamic (Video 5). Branch growth and removal occurs within minutes and can span up to 11.5 \u03bcm within 5 min with an average of 7.5 \u03bcm during this period (Figure 7C1\u2013C3,E). Furthermore, wildtype branches behave differently from each other, as indicated by the spread of growth and retraction speeds of different branches (Figure 7G). In contrast, the growth dynamics in the EGFRDN expressing neurons are reduced in speed (Video 6). Growth and retraction processes of single branches are decreased to an average of 3 \u03bcm within 5 min and the dynamics show strikingly reduced variability between individual branches (Figure 7D1\u2013D3,F,G). We wondered whether we could exploit the new developing brain culture system to ask whether EGFR is dynamically trafficked within DCN branches in vivo as these branches grow and retract. To this end, we generated flies expressing both EGFR-GFP and a red fluorescent protein (td-Tomato) in the DCNs. Live imaging (Video 7) of pupal brains from these animals and analysis of still images form these videos (Figure 7\u2014figure supplement 2D) confirms that, like in primary neurons in culture, EGFR is trafficked dynamically as axons grows and retracts their branches in vivo; finally, it should be noted that EGFRGFP shows similar localization and activity to its wild type counterpart (Figure 7\u2014figure supplement 3), in agreement with the fact that the identically tagged genomic construct rescues the null mutant to full viability.\n\n![Video 5.](https://cdn.elifesciences.org/articles/01699/elife-01699-media5.mov.jpg)\n\n**Video 5.:** This video is related to Figure 7. Live imaging time-lapse videos of control axons at around 40hr APF. Corresponds to images presented in Figure 7C and quantified in Figure 7G. Images were collected every 5 min for 45 min.\n\n![Video 6.](https://cdn.elifesciences.org/articles/01699/elife-01699-media6.mov.jpg)\n\n**Video 6.:** This video is related to Figure 7. Live imaging time-lapse videos of EGFRDN axons at around 40hr APF. Corresponds to images presented in Figure 7D and quantified in Figure 7G. Images were collected every 5 min for 40 min.\n\n![Video 7.](https://cdn.elifesciences.org/articles/01699/elife-01699-media7.wmv.jpg)\n\n**Video 7.:** This video is related to Figure 7. EGFR shows differential and dynamic localization in developing dorsal cluster neurons in vivo. UAS-CD8-RFP and UAS-EGFR-GFP were expressed with ato-Gal4 in wildtype Drosophila brains. Intact eye\u2013brain complexes were imaged live at 45% APF. Maximum projection images demonstrating three DCN axon terminals in a time-lapse video of 3 hr with 2 min time intervals. Extension of the axons over time could be observed especially in the upper axon. All axons demonstrate rapid filopodial dynamics as well as changes in EGFR localization over time.\n\n### Asymmetric EGFR signaling is essential for axon branch pruning through regulating actin localization\n\nTo analyze downstream players of EGFR-dependent refinement we first focused on the canonical EGFR pathway. Activation of the MAPK cascade and transcriptional changes in the nucleus are main features of this pathway (Vivekanand and Rebay, 2006). A nuclear marker for active MAPK signaling is double phosphorylated ERK (dpERK). Despite the fact that we verify expression in developing L3 eye disc (Figure 8\u2014figure supplement 1A), we were not able to detect dpERK in developing DCN (Figure 8\u2014figure supplement 1B-B\u2033). One caveat is that activation of ERK might be difficult to detect due to low expression levels and timing issues. To further investigate if the canonical pathway is involved, we analyzed the effect of MAPK pathway genes (Vivekanand and Rebay, 2006) on DCN axon refinement. Expression of Ras1RNAi, Drk RNAi, a constitutively active form of ERK or a constitutively active form of Ras1 did not change the DCN branching pattern (Figure 8\u2014figure supplement 1C\u2013G). These results indicate that refinement occurs independently of the canonical EGFR pathway.\n\nThe fast growth and retraction rates of axonal branches in wildtype brains, altered growth dynamics upon EGFR inhibition and the well-established role for cytoskeletal proteins in branch formation (Gallo, 2011) together suggest that EGFR activation may act via cytoskeleton regulation in this case. We used actin-GFP (Verkhusha et al., 1999) and Utrophin-GFP (Rauzi and Lenne, 2011) expression in the DCNs to examine the distribution of total actin and filamentous actin (F-actin), respectively, in wild type vs EGFRDN backgrounds. The F-actin binding protein Utrophin (Galkin et al., 2002) was utilized to analyze the distribution of actin filaments in wildtype and EGFRDN axons. Utrophin-GFP reveals that F-actin is largely confined to the branches (Figure 8A\u2013A\u2034, arrowheads) with low levels of F-actin in the axon shafts (Figure 8A\u2034, arrow) of wildtype brains. In contrast, in DCNs expressing EGFRDN F-actin distribution appears weaker and more diffused over the axon shaft and axon branches (Figure 8B\u2013B\u2034, arrowheads). Similar to F-actin, total actin-GFP concentrates at the branch tips (Figure 8\u2014figure supplement 2A\u2013A\u2034, arrowheads) and little actin is present within the main axon shaft. In contrast, in EGFRDN DCNs total actin also accumulates in blebs along the entire length of the axons and their branches (Figure 8\u2014figure supplement 2B\u2013B\u2034, arrows). Axonal swellings have considerably lower F-actin accumulation (Figure 8B\u2034, asterisk) compared to total actin (Figure 8\u2014figure supplement 2B\u2034, asterisk) suggesting that in EGFRDN axons, monomeric actin is retained in axonal swellings along the axons, thus potentially inhibiting efficient actin polymerization dynamics at the branch tips.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig8-v1.jpg)\n\n**Figure 8.:** (A\u2013B) Utrophin (F-actin) localization in adult DCN (red, UAS-cherryRFP) by expressing UAS-utrophin-GFP (green) in (A) control and (B) EGFRDN. (A\u2034\u2013B\u2034) High magnification of the branch tips. Arrowheads show localization of Utrophin at the branch tips. Arrows show Utrophin localization along axon shafts. Asterisk in (B\u2034) shows weak Utrophin accumulation in axonal swellings. (C) Overexpression of a constitutively active form of EGFR (UAS-EGFRCA) results in increased branching in the adult DCN. (C\u2032) Visualization of branches (purple) along a single main axon shaft (green), using the tracing tool. (D) Quantification of adult primary branch numbers per axons shows significant increase of branches in EGFRCA compared to control. Control 6.96 \u00b1 1.34 (n = 60), EGFRCA 8.22 \u00b1 1.47 (n = 55, p<0.001). Error bars represent SEM. Mann\u2013Whitney test. ***p<0.001. (E\u2013H) Axonal branch pattern at different pupal stages shows excessive branching during mid-pupal development. Branch morphology at (E) 36 hr APF, (F) 48 hr APF, (G) 60 hr APF, and (H) 72 hr APF.(I\u2013I\u2032) Utrophin (F-actin) localization in adult DCN (red, UAS-cherryRFP, I\u2032) by expressing UAS-utrophin-GFP (green, I) in an EGFRCA background. (I\u2033) Merge of DCNs (red) and Utrophin (green). (I\u2034) High magnification of the branch tips. Arrowheads show localization of Utrophin at the branch tips. Arrowheads show localization of Utrophin at the branch tips. Arrows show Utrophin localization along axon shafts. The scale bars represent 20 \u00b5m.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Localization of phosphorylated ERK (dpERK, red) in developing eye discs as readout for activated EGFR pathway. (B) Absence of dpERK (red, B\u2032) at the DCN cell bodies (green, B) during pupal development. (B\u2033) Merge of DCNs (green) and dpERK (red). (C\u2013F) DCN branch pattern in neurons with genetically altered MAPK pathway activity by expression of (C) a constitutively active form of ERK (ERKCA), (D) Ras1RNAi, (E) a constitutively active form of Ras1 (Ras1CA) and (F) Drk RNAi. (G) Quantifications of the genotypes in (C\u2013F) do not reveal significant changes in DCN branch numbers compared to control. Control 6.96 \u00b1 1.34 (n = 60), ERKCA 7.43 \u00b1 1.07 (n = 30), Ras1RNAi 7.2 \u00b1 1.71 (n = 59), Ras1CA 7.07 \u00b1 1.44 (n = 14), DRKRNAi 7.36 \u00b1 1.22 (n = 14). Non-parametric ANOVA Kruskal\u2013Wallis test was not significant. The scale bars represent 20 \u00b5m.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A\u2013C) Actin localization in adult DCN (red, UAS-cherryRFP) by expressing UAS-Actin-GFP (green) in (A) control, (B) EGFRDN and (C) EGFRCA. (A\u2034\u2013B\u2034) High magnification of the branch tips. Arrowheads show localization of Actin at the branch tips. Arrows show actin localization along axon shafts. Asterisk in (B) shows total actin accumulation in axonal swellings. The scale bars represent 20 \u00b5m.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig8-figsupp3-v1.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (A\u2013A\u2032) Overexpression of UAS-EGFRCA using the sca-Gal4 driver in neurons cultured for 2 days results in an increase of branches when compared to wild type (compare to Figure 4A\u2013A\u2032). For the visualization of branches, neurons were stained with anti-tubulin (green) and phalloidin (magenta). (B) Quantification of primary branch numbers per axon shows significant increase of branches in UAS-EGFRCA neurons (control: 1 \u00b1 0.05 (n = 235); EGFRCA: 1.37 \u00b1 0.09; n = 120, p<0.01). Error bars represent SEM. Mann\u2013Whitney test. **p<0.01.\n\nOur data thus far suggest a model whereby dynamic localization of the EGFR results in differential signaling between developing filopodia and axonal branches. This enhances actin dynamics and results in the proper balance of branch growth and pruning. However, an alternative possibility is that EGFR signaling simply instructs branch retraction. Both models predict increased branch numbers when EGFR signaling is inhibited. However, if EGFR signaling instructs branch pruning, activated EGFR would result in reduced axonal branching. In contrast, if EGFR signaling asymmetry is indeed required for the correct number of DCN axonal branches, then constitutive activation of the EGFR should also result in increased axonal branching. To distinguish between the two models, we analyzed the effect of a constitutively active form (UAS-EGFRCA). In agreement with a differential local signaling model, EGFRCA induces a significant increase of DCN branches both in vitro (Figure 8\u2014figure supplement 3) and in vivo (Figure 8C\u2013D) similar to down regulation of EGFR signaling. Importantly, similar to loss of EGFR function, the increase in branch number induced by gain of EGFR function is also due to reduced pruning during development (Figure 8E\u2013H). Furthermore, in EGFRCA axons total actin and F-actin also distribute more uniformly across the axonal projection (Figure 8I\u2013I\u2034, Figure 8\u2014figure supplement 2C\u2013C\u2034, arrows), again suggesting reduction of efficient polymerization dynamics. In summary, EGFR signaling affects branch growth and retraction likely through the regulation of actin polymerization.\n\n## Discussion\n\nThe refinement of exuberant branches is a crucial step during the development of a neuronal network. In this work, we exploit an adult-specific model circuit, the dorsal cluster neurons, to study developmental neurite pruning processes in the CNS of Drosophila. DCN axons form a stereotyped number of branches innervating the medulla through initial excessive axon branch formation followed by a refinement process. Our data suggest a model (Figure 9) whereby uneven distribution of EGFR to developing DCN axonal branches is required to eliminate exuberant branches and help generate the correct adult connectivity pattern.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/01699/elife-01699-fig9-v1.jpg)\n\n**Figure 9.:** Local asymmetries in tyrosine kinase receptor activity in axonal branch, driven by differential distribution of active receptor molecules in filopodia, generate dynamical behavior and drive branch pruning. Gray dots represent EGFR puncta trafficked along the axon shaft (red) while yellow dots represent active EGFR puncta within branches (green).\n\nDuring mammalian development neurites are generally formed in excessive numbers and subsequently refined to form the mature circuit (Low and Cheng, 2006). This mechanism ensures that all targets are properly innervated, it enables further specification of connections by the target environment like neighboring neurons and glia (Stevens et al., 2007) and permits the removal of exuberant or mistargeted branches. Studying real-time events in the mammalian system involving CNS refinement is challenging. The Drosophila developing brain culture system used in this work combined with live imaging allows examination and manipulation of neuronal growth dynamics. Our data suggest that EGFR signaling, in part triggered by the co-innervation of the target neuropil by sensory neurons from the retina, is a crucial determinant of axonal branch refinement by the regulation of filopodial growth and retraction dynamics. Finally, we find that EGFR activity regulates actin polymerization dynamics at the branch tips. Consistent with this notion, we find that interfering with actin dynamics in vivo by inhibition of the small GTPase RhoA or constitutive activation of the actin filament severing protein Cofilin, is sufficient to cause ectopic axon branch formation in the DCNs (data not shown). EGFR expression has been observed in neurites of mammalian neurons (Gerecke et al., 2004; Chen et al., 2005) and knock-out of the EGFR in the mouse results in increased neurite branching in the skin (Maklad et al., 2009), suggesting that the mechanism we identify in the fly CNS may be more generally utilized.\n\nIn summary, we report evidence for the notion that differential branch signaling is a determinant of connection specificity. We show that intrinsically asymmetric EGFR localization and signaling is required for efficient branch pruning. Several lines of evidence support this conclusion. First, EGFR is asymmetrically localized in branches and filopodia both in vivo and in cultured primary neurons. Second, both inhibition and constitutive activation result in failure of axonal branch refinement. Third, overexpression of the wildtype receptor, which is differentially localized and trafficked, is not sufficient to produce a phenotype. This argues that receptor localization dynamics\u2014possibly mediated by endocytosis\u2014rather than total EGFR levels, is the cue for filopodial collapse and subsequent axonal branch pruning. What explains the link between regulation of dynamic behavior and the generation of a specific number of axonal branches? A hint to this comes from three observations. First, both loss and gain of EGFR function increase proportion of static filopodia from less than 10% to more than 30%, subsequently increasing the number of axonal branches. Second, this filopodial behavior correlates with small, but significant and highly dynamic differences in EGFR localization. Third, loss of EGFR signaling increases the variability in axon branch number. Based on these observations we propose that in wildtype neurons most dynamic filopodia collapse over time, resulting in continuous redistribution of EGFR among fewer and fewer remaining filopodia. This process stops usually when only one filopodium remains at a given branching point, and occasionally when EGFR happens to distribute equally between the last two filopodia. This probabilistic process does not require an additional mechanism of branch \u2018tagging and selection\u2019 and can explain both EGFR loss of function phenotypes: increased branch number and increased variability. What remains to be determined is the interaction between EGFR-dependent branch dynamics and the specificity of the spatial pattern of branches.\n\n## Materials and methods\n\n### Fly strains and genetic manipulation\n\nFly stocks were cultured on standard fly food. All experiments were performed in temperature-controlled incubators at 25\u00b0C or 28\u00b0C. The GAL4 driver lines used in this study are: ato-Gal4-14a (Hassan et al., 2000), sca-Gal4, elav-Gal4. The UAS-reporter stocks were the following: UAS-CD8-GFP, UAS-CD8-cherryRFP, UAS-LacZ, UAS-EGFRDN-A (gift from M Freeman), UAS-EGFRDN-B, UAS-EGFRRNAi (VDRC107130), UAS-SpiRNAi (TRiP, JF03322), UAS-EGFRCA, UAS-Utrophin-GFP (gift from T Lecuit), UAS-Moesin-GFP (Dutta et al., 2002), lexAop-myr-GFP, atolexA. Additional fly stocks and mutants used were: Canton-S, EGFRT1. For FLP-out system experiments yw, hs-FLP; UAS-FRT CD2, y FRT mCD8::GFP; atoGal4-14a, UAS-LacZ was crossed out to Canton-S or UAS-EGFRDN-A. atoLexA was created by knocking LexA into the ato locus to drive LexAop-myr-GFP expression.\n\n### Drosophila primary neuron cultures\n\nDrosophila primary neuron cultures were generated as described previously (Sanchez-Soriano et al., 2010; Prokop et al., 2011). In brief, stage 11 embryos (6\u20137 hr AEL at 25\u00b0C) were homogenised, treated for 5 min at 37\u00b0C with dispersion medium, washed and dissolved in Schneider\u2019s medium. Then, the aliquots were transferred to coverslips, kept as hanging drop cultures in airtight special culture chambers (Deak et al., 1980) for 6 hr or 4 days at 26\u00b0C. Live imaging of primary neurons was performed on a Delta Vision (RT) (Applied Precision, Issaquah, WA) restoration microscope using a (100 \u00d7 3 phase) objective and the (Sedat) filter set (Chroma Technology, Germany). The images were collected using a Coolsnap HQ (Photometrics, Tuscon, AZ) camera, image acquisition was through Softworx. For immunocytochemistry, cells were fixed (30\u2032 in 4% paraformaldehyde in 0.05 M phosphate buffer, pH 7.2), washed in PBS 0.1% Triton X-100 (PBT), then incubated with antisera diluted in PBT.\n\n### Inhibition of endocytosis and quantification\n\nTo inhibit endocytosis, cells were incubated for 6 min with 0.14 mM dynamin inhibitor Dyngo-4a (Abcam), diluted in Schneider\u2019s medium from stock solution in DMSO. For controls, equivalent concentrations of DMSO were diluted in Schneider\u2019s medium. The effect of the dynamin inhibitor Dyngo-4a on levels of EGFRGFP was quantified in FIJI, by measuring the maximal intensities at the distal ends of filopodia during 2 min before and after drug treatment. Previous to quantification, the background of acquired images was subtracted (atrous wavelet transform, scales 1\u20138 minus low pass image). The GFP intensity of each filopodia was normalized to the mean of maximal intensities of all filopodia within a cell before and after treatment.\n\n### Immunohistochemistry\n\nThe following primary antibodies were used in the in vivo experiments: rabbit anti-GFP (1:1000; Invitrogen), mouse anti-GFP (1:500; Invitrogen), mouse anti \u03b2-galactosidase (1:1000; Promega), rabbit anti \u03b2-galactosidase (1:1000; Cappel), mouse MAb 24B10 anti-Chaoptin (1:200; DSHB), rabbit anti-DsRed (1:500; Clontech), mouse anti-NC82 (1:100; DSHB), rat anti-DN cadherin (1:20; DHSB DN-EX#8). The following primary antibodies were used in the in vitro experiments: mouse anti-tubulin (1:1000; Sigma), goat anti-GFP (1:1000; Abcam). The incubation with the primary antibodies was followed by several washes in PBT (1 hr) and a final incubation with the appropriate fluorescent secondary antibodies (in vivo: Alexa 488, 555 or 647, Molecular Probes, 1:500, in vitro: FITC- or Cy3-conjugated affinity-purified secondary antibodies (donkey, 1:200 [Jackson ImmunoResearch])). In vitro filamentous actin was detected with TRITC-conjugated phalloidin (Sigma). After several washes in PBT the samples were mounted in vectashield.\n\n### Imaging\n\nConfocal stacks of fixed brains were made using Zeiss LSM 510 or Leica SP6 confocal microscopes. Neuronal cell culture imaging was conducted with an AxioCam camera mounted on an Olympus BX50WI microscope. DCN live imaging was conducted with a Leica SP6 resonance scanning confocal microsocope. In general, a confocal stack comprising the axonal projection of Dorsal Cluster Neurons (30\u201340 single projections) was recorded every 5 min. Resonance scanning allowed high scan speed with lower laser intensities and therefore ensures preservation of living tissue due to decreased photo-toxicity. Projection images were generated and further processed with ImageJ. For tracking of axon branches we have used the \u2018simple neurite tracer\u2019 a plugin for ImageJ from Mark Longair (Fiji, http://pacific.mpi-cbg.de).\n\n### Quantification of developmental branches\n\nImages of medulla axons were skeletonized and subsequently automatically analyzed using the \u2018Skeletonize3D\u2019 and \u2018AnalyzeSkeleton\u2019 free plugins for ImageJ/FIJI (freely downloadable from the FIJI website: URL: http://pacific.mpi-cbg.de/wiki/index.php/Fiji). Number of developmental branches is the number of end points from the skeleton.\n\n### Whole pupal brain culture system and live imaging\n\nStaged pupal brains were dissected in cold Schneider\u2019s Drosophila Medium (GIBCO) and transferred to the culture plate inserts and cultured according to the whole brain explant system described previously (Ayaz et al., 2008). After allowing the pupal brains to attach to the membrane of the culture plate insert for a minimum of 8 hr, the membrane was cut out of the plastic insert and carefully transferred to a closed confocal imaging perfusion chamber (Harvard IC30 confocal imaging chamber) connected to a peristaltic pump that slowly perfuses culture solution over the live tissue. A fast resonant scanning confocal microscope (Leica TCS SP5) with special high-aperture immersion lenses was used to allow three-dimensional recordings over time at faster frame rates which reduces phototoxicity. Live imaging was performed as previously described (Williamson and Hiesinger, 2010).\n\n### Quantification of live imaging\n\nFor tracking of growth and retraction dyamics we have used the \u2018simple neurite tracer\u2019 a plugin for ImageJ from Mark Longair (Fiji, http://pacific.mpi-cbg.de). We have traced dynamic axon branches by using the tip of an axon at time point t0 as starting point and the tip of the same axon at time point t1. The length of the resulting fragment represents the length of the growing or retracting axon.\n\n### Generation of UAS-EGFRGFP transgenic flies\n\nUAS-EGFRGFP was created by fusing the Drosophila egfr cDNA from the pUC13-DERII construct (Schejter et al., 1986) and eGFP cDNA (Clontech) from pStinger into pUAST-Attb vector (Genbank EF362409.1). Two Gly-Gly-Ser bridges (GGSGGS) have been introduced between the two open reading frames. Transgenic flies were created at GenetiVision Inc. (Houston, USA) using PhiC31-mediated transgenesis in the VK37 docking site (2L, 22A3) and in the VK31 docking site (3L, 62E1).\n\n### EGFRGFP measurements in cultured neurons\n\nLevels of EGFRGFP in static vs dynamic filopodia were quantified in FIJI, by drawing a box at the distal ends of filopodia and measuring the maximal intensities within. Only neurons with both static and dynamic filopodia were used for the analysis, and the GFP intensity of each filopodia was normalized to the mean of maximal intensities of all filopodia within a cell. For dynamic filopodia, measurements were taken during the first 8 s of the retraction or extension. For static filopodia, measurements were taken during 8 s at the middle of the recording period. These measurements were used to calculate the ratio of EGFRGFP in dynamic minus static filopodia (GFP maximal intensity of each dynamic phase minus the mean of GFP maximal intensity in static filopodia).\n\n### Statistical tests\n\nFor non-normally distributed samples the nonparametric ANOVA Kruskal\u2013Wallis test with Dunn\u2019s multiple comparisons for Figure 2E and the Mann\u2013Whitney test for Figure 8D was performed. Student\u2019s t test was used for Figures 3P and 7G. For neuronal culture experiments, the Mann\u2013Whitney test was used for Figure 4C,F, 5C and 6D.\n\n### Materials and methods for figure supplements and videos\n\n#### Fly strains and genetic manipulation\n\nThe additional GAL4 driver line was: GMR-Gal4 and Dpp-Gal4. The UAS-reporter stocks were the following: UAS-nSyb-GFP, UAS-Syt-GFP, UAS-ERKCA, UAS-Ras1CA, UAS-Ras1RNAi, UAS-DrkRNAi, UAS-Actin-GFP, UAS-EGFR. Additional fly stocks and mutants used were: Vein-lacZ (gift from I Miguel-Aliaga), EGFR1k35, Spiscp2.\n\nFor MARCM experiments (Lee and Luo, 1999) yw; hsflp, UAS-CD8-GFP; FRT42D Tub-Gal80/ CyO; atoGal4-14a/TM6c were used in conjunction with yw; FRT42D EGFR1k35/ CyO. The crosses were set up at 25\u00b0C and transferred every day. 2 to 4 days after egg laying the samples were heatshocked for 3 hr at 37\u00b0C and shifted back to 25\u00b0C until eclosion.\n\n#### Immunohistochemistry\n\nThe following primary antibodies were used in this study: rat anti-DN cadherin (1:20; DHSB DN-EX#8), rat anti-EGFR (1:1,000, from B Shilo), rabbit anti-dpERK (1:100; Cell Signaling), mouse anti-NC82 (1:100; DSHB), Rabbit anti Rab5 (1:500; Abcam), Rat anti Rab11 (Dollar et al., 2002, 1:500).\n\n#### Drosophila long-term pupal brain culture\n\nCulture medium was modified from Ayaz et al. (2008). The culture medium contained 5000 U/ml penicillin, 5 mg/ml streptomycin, 10% fetal bovine serum, 20 \u00b5g/ml insulin and 2 \u00b5g/ml of ecdysone in Schneider\u2019s Insect Medium. Pupal brains were dissected in room temperature culture medium and immediately placed in a sterile culture dish containing fresh medium. Brains remained undisturbed in the dark at 25\u00b0C throughout the culture period. At the end of the culture period the brains were rinsed briefly in PBS and then fixed in 2% paraformaldehyde for 1 hr followed by standard Immunohistochemistry.\n\n#### Live culture and imaging of EGFRGFP in DCNs\n\nIntact pupal eye\u2013brain complexes dissected from 45% APF Drosophila were cultured in a Schneider\u2019s based medium (Ayaz et al. 2008), immobilized in 0.4% agarose solution. Confocal stacks of DCN terminals were captured every 2 min using a Leica SP5 resonant scanner for 3 hr, with a 63X (NA = 1.3) glycerol objective. Images were deconvolved using Autoquant X3 (Media Cybernetics) and analyzed with Imaris 7.6 (Bitplane).\n",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "51405ca8-9e07-4d5b-a9bb-a574b4d6dc9d",
+      "submission_id": "4c5a7f36-004e-447b-b941-c7fcc503ee87",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Franck Polleux, Columbia University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01699.034](https://doi.org/10.7554/eLife.01699.034)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cRegulation of branching dynamics by axon-intrinsic asymmetries in Tyrosine Kinase Receptor signaling\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn the present study, Zchatzch and collaborators demonstrate a novel role for EGF receptor signaling in axon branching. Using Drosophila adult brain neurons as a model, the authors provide comprehensive evidence for the instrinsic role of EGFR in regulating terminal axon branching by controlling the dynamics of filopodia. This evidence is based on a comprehensive set of experimental approaches including genetic gain- and loss-of-function, single cell analysis and time-lapse microscopy using an innovative ex vivo preparation. Furthermore, the authors explore the downstream signaling pathway that might underlie this unconventional function for EGFR and demonstrate that it is not involving a 'canonical' set of tyrosine kinase receptor signaling (Ras-MAPK signaling). Finally, the authors explore the involvement of actin dynamics and show that EGFR signaling in axon branching involves a control of F-actin polymerization in axonal filopodia.\n\nThis article is clearly providing novel insights into the cellular and molecular mechanisms underlying axon branching in vivo, which is a highly significant aspect of brain wiring. Therefore, the significance of results is high. However, one reviewer raised a number of substantial concerns regarding some aspects of the work, focusing on: First, the loss and gain of function of EGFR causes the same effect in branching. It is true that there might be a way to interpret this, but the understanding of the downstream signaling events is not sufficient to validate the model. Second, endocytosis blockade led to a decrease of the receptor level. This is not intuitive and needs to be explored further. Third, the subcellular localization of EGFR is very interesting. However, the correlation between the presence of EGFR in vivo and the fate of branches is not established.\n\nTherefore, we would like to have the authors respond to the major comments listed below. If they can provide experimental evidence for most of the major points (with a strong priority for point 4 below), we will be happy to consider a revised version.\n\nMajor comments:\n\n1) Videos 1 and 2 seem to show very different modes of movements. In Video 1, it seems that vesicular transport can be seen. Video 2 shows a much more diffused staining pattern. The intensity changes in this video seem to be fluctuations instead of discrete vesicular movements.\n\n2) It is usually assumed that inhibition of endocytosis would lead to an increase in the level of receptors on the membrane. Figure 6 showed the opposite. First, is it known whether the EGFR is mostly on the surface or internal? The main limitation of using a simple EGFP fusion protein is that the authors cannot distinguish between surface receptor from internal stores present in endosomes/exosomes. Second, it is entirely possible that the authors are correct and some type of transcytosis (which requires endocytosis) is sending EGFR to the filopodia. Is there any redistribution of EGFR from the cell body or primary axon to the branches?\n\n3) In Figure 7, the authors use overexpressed EGFR-GFP to study the subcellular localization of EGFR. Does this construct cause there any effect on the branching phenotype? In the EGFRDN background, does the EGFR-GFP rescue the phenotype? This is of course trying to test if the EGFR-GFP construct is functional.\n\n4) The critical experiment is to understand the correlation of having strong EGFR-GFP puncta on a branch and whether they will be pruned in Figure 7. We did not get a clear answer whether that has been attempted or not from the text.\n\n5) In Figure 7C, both growth and retraction of neurites are severely affected by the DN construct. The effects on the growth of the neurite are inconsistent with the lack of outgrowth phenotype in the loss-of-function analyses, which challenges the relevance of this long-term culture system.\n\n6) It is puzzling that the gain-of-function EGFR causes the same phenotype as the loss-of-function. Although the authors have a way of thinking about this result, detailed analyses of the EGFRCA during the developmental course is necessary to test if the loss- and gain-of-function manipulation indeed has the same effects in growth and pruning.\n\n7) It is unclear what is the cellular source of EGF ligand(s). The results implicate that EGF ligand(s) could act in an 'axon-autonomous' way to control branching through filopodia through contacts between filopodia of adjacent axons. However, the authors never document where EGF ligand(s) are located. Are there expressed by the axons themselves or by adjacent cells or both? In situ hybridization for the ligand(s) such as Spitz might clarify this important point.\n",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e9eba611-75cc-48b8-857a-72cdaad9f99b",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C1",
+      "claim": "Dorsal cluster neurons (DCNs) form only adult-specific neuronal projections and are not remodeled during metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "DCNs form only adult-specific neuronal projections and therefore unlike sensory neurons (Williams et al., 2006) and mushroom body neurons (Boulanger et al., 2011), DCN axons are not remodeled during metamorphosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that DCN axons are not remodeled during metamorphosis, contrasting them with sensory neurons and mushroom body neurons, and provides citations to support this distinction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "d65ea585-4835-47d6-80dc-d572cc04bcbc",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C2",
+      "claim": "Each DCN axon generates 6-8 primary branches, with a mean of 7 branches.",
+      "claim_type": "EXPLICIT",
+      "source": "False color labeling and tracing (Longair et al., 2011) of single DCN Me axons and their branches (Figure 1D) reveals that each axon generates 6\u20138 primary branches, with a mean of 7 branches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data from tracing analysis of single DCN axons shown in Figure 1D, with citation to the tracing method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "e78a7a45-214c-479c-b9fa-71eaf9d6a4ea",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C3",
+      "claim": "The homozygous hypomorphic allele EGFRT1 shows additional short branches in DCN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this genetic background DCN axons show short ectopic branches (Figure 2A) highlighted using the tracing tool (Figure 2A\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by visual evidence in Figure 2A and 2A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "882058c7-2b91-4fd1-96d4-d2559f6e21a9",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C4",
+      "claim": "Expression of EGFRDN-A in DCNs results in a significant increase to 10.5 primary branches per axon compared to 7 in wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to an average of 7 primary branches under wild type conditions, we observed a significant increase to 10.5 primary branches per axon in EGFRDN-A expressing DCNs (Figure 2B,B\u2032,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with quantitative data and statistical significance, supported by Figure 2B, B', and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "7683529b-9a79-41de-b081-b0b6ec97fb72",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C5",
+      "claim": "Expression of EGFRDN-B results in an increase to an average of 8.3 branches per axon.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the second, weaker, EGFRDN allele (Urban et al., 2004) (EGFRDN-B) resulted in an increase to an average of 8.3 branches per axon (Figure 2C,C\u2032,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with quantitative data and citation to characterize the allele strength, supported by Figure 2C, C', and E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "1be15095-5bf7-4dc2-ace3-be784f301a38",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C6",
+      "claim": "EGFR knock-down with RNAi leads to an increase to 8.5 branches per axon.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR knock-down with RNAi leads to a similar increase to 8.5 branches per axon (Figure 2D,D\u2032,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with quantitative data supported by Figure 2D, D', and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "5b75c14e-ac13-4299-924a-3a5b618597db",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C7",
+      "claim": "Inhibition of EGFR increases both the average number and the variability of axonal branch numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, inhibition of EGFR results not only in an increase of the average branch number, but also increases the variability in the branch numbers between individual axons (Figure 2\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "f80e6eb7-b151-4a86-93c3-73a94d48a23d",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C8",
+      "claim": "Between 36 hr and 54 hr APF DCN axons form extensive branches at multiple positions along the growing axon.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 36 hr and 54 hr APF DCN axons form extensive branches at multiple positions along the growing axon (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 3A-C showing developmental time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "91d72ce5-6b3f-4e21-a708-a47ac93ffe60",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C9",
+      "claim": "Between 60 hr and 72 hr APF pruning begins to be evident in DCN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 60 hr and 72 hr APF pruning begins to be evident (Figure 3D\u2013F\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 3D-F' showing developmental time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "5d497c23-67c6-4e4e-9a1e-baa095e8c5ce",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C10",
+      "claim": "At 84 hr APF, the eventual adult branch pattern of 6-8 branches is apparent and little or no further pruning appears to occur beyond that point.",
+      "claim_type": "EXPLICIT",
+      "source": "At 84 hr APF, the eventual adult branch pattern of 6\u20138 branches is apparent (Figure 3G) and little or no further pruning appears to occur beyond that point (Figure 3H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 3G, H, and I showing developmental time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "986c2f8b-36e1-41d8-b3ed-56c985536b98",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C11",
+      "claim": "EGFR downregulation does not result in increased branches at 48 hr APF compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR downregulation does not result in increased branches at 48 hr APF compared to control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the text describing quantification results shown in Figure 3P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "42a0607f-7371-4345-8004-53eddf7d2de0",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C12",
+      "claim": "Significant decrease of developmental branch numbers at 72 hr APF occurs due to refinement in control.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant decrease of developmental branch numbers at 72 hr APF occurs due to refinement in control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the text describing quantification results shown in Figure 3P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "cd2f0985-65a5-4cfe-87ea-1213028aa310",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C13",
+      "claim": "No significant decrease in branch number was observed after EGFR downregulation between 48 hr and 72 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant decrease in branch number was observed after EGFR downregulation between 48 hr and 72 hr APF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the text describing quantification results shown in Figure 3P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "66c7a765-31db-4ee2-95ef-d46cae44f7e0",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C14",
+      "claim": "Compared to control, more branches persist after EGFR downregulation at 72 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control more branches persist after EGFR downregulation at 72 hr APF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the text describing quantification results shown in Figure 3P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "4247d791-c0a9-4eaf-befa-303b74a49287",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C15",
+      "claim": "EGFR signaling is required to generate the correct number of axonal branches through the reduction of branch precursors formed during development.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these data show that EGFR signaling is required to generate the correct number of axonal branches through the reduction of branch precursors formed during development (Figure 3Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated as a summary conclusion supported by the developmental data and illustrated in Figure 3Q.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a24a2e53-2688-4445-be65-c8be2d7c951f",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C16",
+      "claim": "Neurons expressing EGFRDN show a significant increase in branch number compared to wildtype in primary embryonic Drosophila neuronal culture.",
+      "claim_type": "EXPLICIT",
+      "source": "After 2 days in culture wildtype Drosophila primary neurons sprout on average \u223c2.5 primary axonal branches, whereas neurons expressing EGFRDN show a significant increase in branch number (Figure 4A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with quantitative data and supported by Figure 4A-C showing cultured neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "498c8c60-8a75-480c-8ee2-bbd206563cde",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C17",
+      "claim": "In growing wildtype neurons less than 10% of filopodia are static during the imaging time window of 3 min.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in growing wildtype neurons less than 10% of filopodia are static during the imaging time window of 3 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated with quantitative data from live imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "76e32b6e-acb6-40de-8b6c-0794b7f86660",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C18",
+      "claim": "EGFRDN neurons have a significant increase in the percentage of static filopodia to approximately 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, EGFRDN neurons have a significant increase in the percentage of static filopodia to \u223c30% (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with quantitative data and supported by Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a8a40391-e963-4fcc-bd1c-c15f290627b2",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C19",
+      "claim": "EGFRDN induces an increase in microtubules invading axonal filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we find that EGFRDN induces an increase in microtubules invading axonal filopodia (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a23518d8-4ab4-4f77-ac1b-6a030a654127",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C20",
+      "claim": "EGFR is dynamically transported into and out of axonal branches and their filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the EGFR is dynamically transported into and out of axonal branches and their filopodia (Figure 5A; Video 1, Video 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by live imaging data shown in Figure 5A and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "2aee8ff2-2f62-4bd1-99c4-8ae7b09802b0",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C21",
+      "claim": "EGFR levels are slightly but significantly higher in dynamic filopodia compared to static filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the EGFR is dynamically transported into and out of axonal branches and their filopodia (Figure 5A; Video 1, Video 2), with slightly, but significantly, higher levels in dynamic filopodia compared to static filopodia (Figure 5A\u2032,A\u2033, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with quantitative comparison and supported by Figure 5A', A'', and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "e4ce2eae-bbbc-44c9-b9c4-1d822627663e",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C22",
+      "claim": "The difference in EGFRGFP levels between dynamic and static filopodia drops dramatically upon inhibition of EGFR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the difference in EGFRGFP levels between dynamic and static filopodia drops dramatically upon inhibition of EGFR signaling (Figure 5B,B\u2032,B\u2033,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantitative data shown in Figure 5B, B', B'', and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "4d937eed-cef2-4dc9-8984-fbf148c50d6e",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C23",
+      "claim": "EGFR-GFP puncta partially co-localize with both Rab5 and Rab11, suggesting that EGFR is present on early and recycling endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, EGFRGFP traffics actively all along the axonal shafts, branches and filopodia in cultured neurons (Video 3), and we find EGFR-GFP puncta partially co-localize with both Rab5 and Rab11, suggesting that EGFR is present on early and recycling endosomes (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated based on co-localization data shown in Figure 5\u2014figure supplement 2 and Video 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "b64cc8be-c4cd-44de-8277-4992ac9ea62f",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C24",
+      "claim": "Upon inhibition of endocytosis, the overall levels of EGFRGFP in filopodia decrease and the fluctuation of EGFRGFP between and within filopodia is significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon inhibition of endocytosis, the overall levels of EGFRGFP in filopodia decrease and the fluctuation of EGFRGFP between and within filopodia is significantly reduced (Figure 6A\u2032\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantitative data shown in Figure 6A'-C after Dyngo treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "5d2321c5-d06d-4879-a3c3-ef7dbd2e33a3",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C25",
+      "claim": "Inhibition of endocytosis is accompanied by a dramatic reduction in filopodial dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This is accompanied by a dramatic reduction in filopodial dynamics (Figure 6D; Video 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantitative data shown in Figure 6D and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "ada9131c-68f9-452b-b112-7769323164f7",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C26",
+      "claim": "EGFRGFP is detected in a punctate pattern in the cell bodies, along the axons and in axonal branches of DCNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In DCNs, EGFRGFP is detected in a punctate pattern in the cell bodies (Figure 7A,B, insets), along the axons and in axonal branches (Figure 7\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 7A, B (insets) and Figure 7\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "2db31321-6f63-4746-b0ff-5f81aed1ba32",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C27",
+      "claim": "At approximately 56 hr APF, EGFRGFP is unevenly distributed across different branches of the same axon.",
+      "claim_type": "EXPLICIT",
+      "source": "At \u223c56 hr APF, when extensive growth and pruning occur, EGFRGFP is unevenly distributed across different branches of the same axon (Figure 7A\u2013A\u2034)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 7A-A'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a5a0282b-c263-4590-a960-37085437e64e",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C28",
+      "claim": "At approximately 72 hr APF, EGFRGFP is distributed more uniformly across the remaining unrefined branches.",
+      "claim_type": "EXPLICIT",
+      "source": "At \u223c72 hr APF, after significant pruning has occurred, EGFRGFP is distributed more uniformly across the remaining unrefined branches (Figure 7B\u2013B\u2034).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 7B-B'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "6189b232-d7b4-4d85-bc54-bb5223cd591c",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C29",
+      "claim": "Both wildtype-untagged EGFR and EGFRGFP do not change the DCN branching pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that both wildtype-untagged EGFR and EGFRGFP do not change the DCN branching pattern (Figure 7\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantification data shown in Figure 7\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "c050988d-fe2b-40d5-8499-473a29e45343",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C30",
+      "claim": "Wildtype DCN axon branches are dynamic, with branch growth and removal occurring within minutes and spanning up to 11.5 \u03bcm within 5 min with an average of 7.5 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging of developing wild type pupal brains (40 hr\u201360 hr APF) shows that wildtype DCN axon branches are dynamic (Video 5). Branch growth and removal occurs within minutes and can span up to 11.5 \u03bcm within 5 min with an average of 7.5 \u03bcm during this period (Figure 7C1\u2013C3,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with quantitative measurements and supported by Figure 7C1-C3, E and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a8889fe0-897e-43f2-b0c8-9acb5aaef847",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C31",
+      "claim": "In EGFRDN expressing neurons, growth dynamics are reduced in speed with growth and retraction processes decreased to an average of 3 \u03bcm within 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the growth dynamics in the EGFRDN expressing neurons are reduced in speed (Video 6). Growth and retraction processes of single branches are decreased to an average of 3 \u03bcm within 5 min and the dynamics show strikingly reduced variability between individual branches (Figure 7D1\u2013D3,F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated with quantitative measurements and supported by Figure 7D1-D3, F, G and Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "25d48e52-96ea-4fd4-8ac6-6c066d484015",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C32",
+      "claim": "EGFR is trafficked dynamically as axons grow and retract their branches in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Live imaging (Video 7) of pupal brains from these animals and analysis of still images form these videos (Figure 7\u2014figure supplement 2D) confirms that, like in primary neurons in culture, EGFR is trafficked dynamically as axons grows and retracts their branches in vivo",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by live imaging data shown in Video 7 and Figure 7\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "5256c490-5316-43f5-ba0f-8f94bf3ca30a",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C33",
+      "claim": "Expression of Ras1RNAi, Drk RNAi, a constitutively active form of ERK or a constitutively active form of Ras1 did not change the DCN branching pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Ras1RNAi, Drk RNAi, a constitutively active form of ERK or a constitutively active form of Ras1 did not change the DCN branching pattern (Figure 8\u2014figure supplement 1C\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data shown in Figure 8\u2014figure supplement 1C-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "2e0dcd39-94c5-4fd3-9f2d-0ea2263c9559",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C34",
+      "claim": "Refinement of DCN axon branches occurs independently of the canonical EGFR pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that refinement occurs independently of the canonical EGFR pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a conclusion based on the lack of effect of MAPK pathway manipulations on DCN branching.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "ec07e347-90af-4108-83c3-7a7347bae8ea",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C35",
+      "claim": "In wildtype DCNs, F-actin is largely confined to the branches with low levels in the axon shafts.",
+      "claim_type": "EXPLICIT",
+      "source": "Utrophin-GFP reveals that F-actin is largely confined to the branches (Figure 8A\u2013A\u2034, arrowheads) with low levels of F-actin in the axon shafts (Figure 8A\u2034, arrow) of wildtype brains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 8A-A'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "6c9fad2d-eae1-40c4-9f98-83d64b334f01",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C36",
+      "claim": "In DCNs expressing EGFRDN, F-actin distribution appears weaker and more diffused over the axon shaft and axon branches.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in DCNs expressing EGFRDN F-actin distribution appears weaker and more diffused over the axon shaft and axon branches (Figure 8B\u2013B\u2034, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 8B-B'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "67ce14cf-5a7f-4c95-896c-26051c56b939",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C37",
+      "claim": "In EGFRDN DCNs, total actin accumulates in blebs along the entire length of the axons and their branches.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in EGFRDN DCNs total actin also accumulates in blebs along the entire length of the axons and their branches (Figure 8\u2014figure supplement 2B\u2013B\u2034, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 8\u2014figure supplement 2B-B'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "2cdddf51-5437-4e04-b6ba-2bce53340e50",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C38",
+      "claim": "Overexpression of a constitutively active form of EGFR (EGFRCA) results in increased branching in the adult DCN.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between the two models, we analyzed the effect of a constitutively active form (UAS-EGFRCA). In agreement with a differential local signaling model, EGFRCA induces a significant increase of DCN branches both in vitro (Figure 8\u2014figure supplement 3) and in vivo (Figure 8C\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantitative data shown in Figure 8C-D and Figure 8\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "d957d3e1-c009-4cf4-8495-c48cd327507e",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C39",
+      "claim": "The increase in branch number induced by gain of EGFR function is due to reduced pruning during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, similar to loss of EGFR function, the increase in branch number induced by gain of EGFR function is also due to reduced pruning during development (Figure 8E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by developmental time course data shown in Figure 8E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "7b95f53f-9daa-4307-8854-f5338ea016ad",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C40",
+      "claim": "In EGFRCA axons, total actin and F-actin distribute more uniformly across the axonal projection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in EGFRCA axons total actin and F-actin also distribute more uniformly across the axonal projection (Figure 8I\u2013I\u2034, Figure 8\u2014figure supplement 2C\u2013C\u2034, arrows)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 8I-I''' and Figure 8\u2014figure supplement 2C-C'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "37af513f-7525-4452-b347-325ea58d89d3",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C41",
+      "claim": "EGFR signaling affects branch growth and retraction likely through the regulation of actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, EGFR signaling affects branch growth and retraction likely through the regulation of actin polymerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a summary conclusion based on the actin distribution data in different EGFR conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "4ea88ade-74f6-447e-9ce5-c43235fc6a3c",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C42",
+      "claim": "DCN axons form a stereotyped number of branches innervating the medulla through initial excessive axon branch formation followed by a refinement process.",
+      "claim_type": "EXPLICIT",
+      "source": "DCN axons form a stereotyped number of branches innervating the medulla through initial excessive axon branch formation followed by a refinement process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "4598f67c-4a86-4dd5-951b-5d9950528066",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C43",
+      "claim": "Uneven distribution of EGFR to developing DCN axonal branches is required to eliminate exuberant branches and help generate the correct adult connectivity pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest a model (Figure 9) whereby uneven distribution of EGFR to developing DCN axonal branches is required to eliminate exuberant branches and help generate the correct adult connectivity pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated as the main model proposed by the authors and illustrated in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a2a0be2a-c884-4385-95cf-a328d371b954",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C44",
+      "claim": "EGFR signaling, in part triggered by the co-innervation of the target neuropil by sensory neurons from the retina, is a crucial determinant of axonal branch refinement by the regulation of filopodial growth and retraction dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that EGFR signaling, in part triggered by the co-innervation of the target neuropil by sensory neurons from the retina, is a crucial determinant of axonal branch refinement by the regulation of filopodial growth and retraction dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the Discussion as a summary of the findings regarding the source and mechanism of EGFR signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "99741c62-c5f6-4514-812c-7a2801c28b76",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C45",
+      "claim": "EGFR activity regulates actin polymerization dynamics at the branch tips.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we find that EGFR activity regulates actin polymerization dynamics at the branch tips.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the Discussion as a summary of the findings regarding the mechanism of EGFR action.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "b5d940e7-36ed-4c30-94c8-9b754b4ceffc",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C46",
+      "claim": "Interfering with actin dynamics in vivo by inhibition of the small GTPase RhoA or constitutive activation of the actin filament severing protein Cofilin is sufficient to cause ectopic axon branch formation in the DCNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, we find that interfering with actin dynamics in vivo by inhibition of the small GTPase RhoA or constitutive activation of the actin filament severing protein Cofilin, is sufficient to cause ectopic axon branch formation in the DCNs (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated but noted as unpublished data (data not shown).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "f4c5b139-cf12-4e0f-8dff-c40dbb9dcae6",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C47",
+      "claim": "EGFR expression has been observed in neurites of mammalian neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR expression has been observed in neurites of mammalian neurons (Gerecke et al., 2004; Chen et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citations to mammalian studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "254b5326-15f7-49c6-becd-7749685f62b7",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C48",
+      "claim": "Knock-out of the EGFR in the mouse results in increased neurite branching in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "knock-out of the EGFR in the mouse results in increased neurite branching in the skin (Maklad et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated and supported by citation to a mouse study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "713b0a9e-963c-420d-abaf-4c7ce89ab833",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C49",
+      "claim": "The mechanism identified in the fly CNS may be more generally utilized in other systems.",
+      "claim_type": "IMPLICIT",
+      "source": "EGFR expression has been observed in neurites of mammalian neurons (Gerecke et al., 2004; Chen et al., 2005) and knock-out of the EGFR in the mouse results in increased neurite branching in the skin (Maklad et al., 2009), suggesting that the mechanism we identify in the fly CNS may be more generally utilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of fly and mammalian data, suggesting conservation of the mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "db8b1ae4-e2c2-4755-b8aa-3a90db2b2dba",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C50",
+      "claim": "Differential branch signaling is a determinant of connection specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we report evidence for the notion that differential branch signaling is a determinant of connection specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a summary conclusion in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "020eb8e4-a81c-4058-a48b-e4d40b24b5aa",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C51",
+      "claim": "Intrinsically asymmetric EGFR localization and signaling is required for efficient branch pruning.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that intrinsically asymmetric EGFR localization and signaling is required for efficient branch pruning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a summary conclusion in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "2aa7e65f-30cb-485f-b032-0962210d4824",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C52",
+      "claim": "Both inhibition and constitutive activation of EGFR result in failure of axonal branch refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, both inhibition and constitutive activation result in failure of axonal branch refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as evidence supporting the asymmetric signaling model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "8415778e-5afc-47c2-8717-96fca70f0c39",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C53",
+      "claim": "Overexpression of the wildtype EGFR receptor, which is differentially localized and trafficked, is not sufficient to produce a phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, overexpression of the wildtype receptor, which is differentially localized and trafficked, is not sufficient to produce a phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as evidence supporting the asymmetric signaling model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "0c8a3f59-0447-488c-a11f-3426acafe900",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C55",
+      "claim": "Both loss and gain of EGFR function increase proportion of static filopodia from less than 10% to more than 30%, subsequently increasing the number of axonal branches.",
+      "claim_type": "EXPLICIT",
+      "source": "First, both loss and gain of EGFR function increase proportion of static filopodia from less than 10% to more than 30%, subsequently increasing the number of axonal branches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as evidence linking filopodial dynamics to branch number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "9990069f-2653-4880-ae09-8549bf97092c",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C56",
+      "claim": "Filopodial behavior correlates with small, but significant and highly dynamic differences in EGFR localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, this filopodial behavior correlates with small, but significant and highly dynamic differences in EGFR localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as evidence linking EGFR localization to filopodial behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "b3a9a343-dac4-4a5f-99dc-b96aee50fb07",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C57",
+      "claim": "Loss of EGFR signaling increases the variability in axon branch number.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, loss of EGFR signaling increases the variability in axon branch number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as evidence supporting the probabilistic model of branch selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "224d6b60-7fca-4279-8c86-e3613ae33611",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C58",
+      "claim": "In wildtype neurons most dynamic filopodia collapse over time, resulting in continuous redistribution of EGFR among fewer and fewer remaining filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations we propose that in wildtype neurons most dynamic filopodia collapse over time, resulting in continuous redistribution of EGFR among fewer and fewer remaining filopodia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a proposed model based on the observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "ae6ff543-d3ab-4b8b-94f5-c997a1952a82",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C59",
+      "claim": "The probabilistic process of filopodial collapse stops usually when only one filopodium remains at a given branching point, and occasionally when EGFR happens to distribute equally between the last two filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "This process stops usually when only one filopodium remains at a given branching point, and occasionally when EGFR happens to distribute equally between the last two filopodia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as part of the proposed probabilistic model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "ccb0bc26-9da8-4342-b73c-95dbf91e8b11",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C60",
+      "claim": "The probabilistic process can explain both EGFR loss of function phenotypes: increased branch number and increased variability.",
+      "claim_type": "EXPLICIT",
+      "source": "This probabilistic process does not require an additional mechanism of branch 'tagging and selection' and can explain both EGFR loss of function phenotypes: increased branch number and increased variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as an explanation of the observed phenotypes based on the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "8bb78d87-41f2-4c51-8777-2898eea7f4e6",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C61",
+      "claim": "Reduction of Spi activity results in ectopic short branches indistinguishable from those seen in EGFR hypomorphic mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction of Spi activity results in ectopic short branches indistinguishable from those seen in EGFR hypomorphic mutants (Figure 2\u2014figure supplement 2A,A\u2032; compare to Figure 2A,A\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual comparison in Figure 2\u2014figure supplement 2A, A' and Figure 2A, A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "9b8701fe-6709-49a7-a2e7-2aaf88a70b16",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C62",
+      "claim": "Overlap between DCN and R7/8 photoreceptor axons can be seen at different times during brain development and in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap between DCN and R7/8 axons can be seen at different times during brain development and in the adult brain (Figure 2\u2014figure supplement 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 2\u2014figure supplement 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "1b3a76a3-aa20-46aa-845f-8f8398ef506c",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C63",
+      "claim": "No significant difference in branch number was found upon knock-down of Spi in the DCNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas we find no significant difference in branch number upon knock-down of Spi in the DCNs (Figure 2\u2014figure supplement 2F,G,J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantification data in Figure 2\u2014figure supplement 2F, G, J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "38957c75-738e-4b71-99a1-9dd1d09c73ab",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C64",
+      "claim": "Spi knock-down in photoreceptors causes a significant increase in DCN branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Spi knock-down in photoreceptors causes a significant increase in DCN branches (Figure 2\u2014figure supplement 2H,I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantification data in Figure 2\u2014figure supplement 2H, I, J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "d7f734b9-b631-43b2-b142-b0961ace1635",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C65",
+      "claim": "Cells expressing a reporter for the EGFR ligand Vein are in close proximity to DCN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, to Spi release from photoreceptors, we observed cells expressing a reporter for the EGFR ligand Vein in close proximity to DCN axons (Figure 2\u2014figure supplement 2E), suggesting a second source of EGF within the brain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 2\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a9ecb34a-21f2-4506-8128-722aa6e3460c",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C66",
+      "claim": "EGFR signaling regulates DCN axonal branch development.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that EGFR signaling regulates DCN axonal branch development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a summary conclusion based on the genetic and ligand manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "57836d2e-d00d-4c75-a520-08786226d739",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C67",
+      "claim": "The developmental pattern of DCN branching is not an artifact of the expression of the membrane bound marker CD8-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "This developmental pattern is not an artifact of the expression of the membrane bound marker CD8-GFP, as two other intracellular axonal markers (nSyb-GFP and Syt-GFP) yield the same results (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data using alternative markers shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "afc3286c-8c69-4355-bb60-ae9d57ff17a4",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C68",
+      "claim": "Regulation of axonal branching by the EGFR is a process intrinsic to neurons and common to different neuronal subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "After 2 days in culture wildtype Drosophila primary neurons sprout on average \u223c2.5 primary axonal branches, whereas neurons expressing EGFRDN show a significant increase in branch number (Figure 4A\u2013C), suggesting that regulation of axonal branching by the EGFR is a process intrinsic to neurons and common to different neuronal subtypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated as an inference from the primary neuron culture experiments shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "76fecf69-484e-49bb-a0b8-4a30e19bd432",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C69",
+      "claim": "EGFR signaling regulates branch formation by controlling the dynamics of immature protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that EGFR signaling regulates branch formation by controlling the dynamics of immature protrusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as an interpretation of the filopodial dynamics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "08160e98-3859-4637-be21-346989dc93a3",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C70",
+      "claim": "EGFR activity promotes dynamic filopodial behavior and consequent adjustment of branch number.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data indicate that EGFR is differentially localized to static vs dynamic filopodia and that its activity promotes dynamic filopodial behavior and consequent adjustment of branch number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a summary conclusion based on the EGFR localization and filopodial dynamics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a9074ce1-f9d1-42df-b0d6-56c3e78e24e1",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C71",
+      "claim": "Receptor endocytosis and recycling regulates EGFR localization and dynamics in filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "This is accompanied by a dramatic reduction in filopodial dynamics (Figure 6D; Video 4), suggesting that receptor endocytosis and recycling regulates EGFR localization and dynamics in filopodia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated as an interpretation of the Dyngo inhibition experiments shown in Figure 6D and Video 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "0b5cfd5b-32d1-4e77-b1d0-88c64766166b",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C72",
+      "claim": "Asymmetric receptor signaling is governed by differential receptor distribution, rather than total receptor levels per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that both wildtype-untagged EGFR and EGFRGFP do not change the DCN branching pattern (Figure 7\u2014figure supplement 4), hinting that asymmetric receptor signaling is governed by differential receptor distribution, rather than total receptor levels per se.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated as an interpretation of the overexpression data shown in Figure 7\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "993fa732-f461-48ba-846d-0d172e65f87e",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C73",
+      "claim": "Even overexpressed EGFRGFP is present at relatively low levels and shows regulated developmental localization in different neuronal populations in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, remarkably, even overexpressed EGFRGFP is present at relatively low levels and shows regulated developmental localization in different neuronal populations in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as an observation from the in vivo EGFR-GFP expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "773c7cef-57ac-4a8f-b67b-cc0eb20e92db",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C74",
+      "claim": "EGFRGFP shows similar localization and activity to its wild type counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "finally, it should be noted that EGFRGFP shows similar localization and activity to its wild type counterpart (Figure 7\u2014figure supplement 3), in agreement with the fact that the identically tagged genomic construct rescues the null mutant to full viability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by data in Figure 7\u2014figure supplement 3 and the rescue experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "ad7d0534-5225-4d8e-8bf7-3de92f26b546",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C75",
+      "claim": "The genomic EGFR-GFP rescue construct rescues the embryonic lethality of EGFR null mutants to full adult viability with no visible defects.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct rescues the embryonic lethality of EGFR null mutants to full adult viability with no visible defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a result of the genomic rescue experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "ab28da4e-aa3f-473b-b913-c97242f9fb7b",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C76",
+      "claim": "Genomic EGFRGFP is broadly expressed in the developing neuropil, especially the distal medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the expression of genomic EGFRGFP during brain development and find that it is broadly expressed in the developing neuropil, especially the distal medulla (Figure 7\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "0e76d803-d206-4fd1-9317-79cfb6eb994b",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C77",
+      "claim": "EGFR signaling may be generally involved in the regulation of CNS connectivity.",
+      "claim_type": "IMPLICIT",
+      "source": "We examined the expression of genomic EGFRGFP during brain development and find that it is broadly expressed in the developing neuropil, especially the distal medulla (Figure 7\u2014figure supplement 1A), suggesting that EGFR signaling may be generally involved in the regulation of CNS connectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the broad expression pattern of EGFR in the developing neuropil.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "9f79dd63-1521-4f1e-b91c-0f07617def90",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C78",
+      "claim": "Inhibition of EGFR activity in the lateral neurons ventral (LNv) causes excessive axonal branching.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inhibition of EGFR activity in the lateral neurons ventral (LNv) also causes excessive axonal branching (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "c28c42e5-3223-47e1-8d86-00bf7622d45d",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C79",
+      "claim": "There is no stereotypic pattern of EGFR-GFP distribution across different individual axons or individual brains at 56 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "At \u223c56 hr APF, when extensive growth and pruning occur, EGFRGFP is unevenly distributed across different branches of the same axon (Figure 7A\u2013A\u2034) and we find no stereotypic pattern across different individual axons or individual brains (Figure 7\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 7\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "3a953bef-5739-4fc8-a5cb-506d81d5619e",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C80",
+      "claim": "In adult LNv, UAS-EGFRGFP becomes restricted to neuronal soma.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in adult LNv UAS-EGFRGFP becomes restricted to neuronal soma (Figure 7\u2014figure supplement 1G\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 7\u2014figure supplement 1G'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "61d8f211-97af-4950-9b47-f71d99c3565e",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C81",
+      "claim": "The modified protocol for long-term pupal brain culture supports the morphologically normal development of Drosophila pupal brains.",
+      "claim_type": "EXPLICIT",
+      "source": "This protocol supports the morphologically normal development of Drosophila pupal brains (Figure 7\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 7\u2014figure supplement 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "cb4d54f3-4108-4a28-bea5-e3c22312c8b5",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C82",
+      "claim": "Wildtype branches behave differently from each other, as indicated by the spread of growth and retraction speeds of different branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, wildtype branches behave differently from each other, as indicated by the spread of growth and retraction speeds of different branches (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantification data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "48b20e14-6827-423b-a6c0-411fc6e38546",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C83",
+      "claim": "The dynamics in EGFRDN expressing neurons show strikingly reduced variability between individual branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth and retraction processes of single branches are decreased to an average of 3 \u03bcm within 5 min and the dynamics show strikingly reduced variability between individual branches (Figure 7D1\u2013D3,F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by quantification data shown in Figure 7D1-D3, F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "c85681a8-3bb2-4a0f-b58f-2088fce02608",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C84",
+      "claim": "dpERK was not detected in developing DCN despite being verified in developing L3 eye disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that we verify expression in developing L3 eye disc (Figure 8\u2014figure supplement 1A), we were not able to detect dpERK in developing DCN (Figure 8\u2014figure supplement 1B-B\u2033).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated and supported by visual evidence in Figure 8\u2014figure supplement 1A and B-B''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "c2b3b45e-05c6-44e7-8c99-8ccc892fbe42",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C85",
+      "claim": "In EGFRDN axons, monomeric actin is retained in axonal swellings along the axons, thus potentially inhibiting efficient actin polymerization dynamics at the branch tips.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonal swellings have considerably lower F-actin accumulation (Figure 8B\u2034, asterisk) compared to total actin (Figure 8\u2014figure supplement 2B\u2034, asterisk) suggesting that in EGFRDN axons, monomeric actin is retained in axonal swellings along the axons, thus potentially inhibiting efficient actin polymerization dynamics at the branch tips.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is explicitly stated as an interpretation of the differential actin distribution data shown in Figure 8B''' and Figure 8\u2014figure supplement 2B'''.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "1f7bc82b-1db8-40b2-9f4c-8038bff659ab",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "claim_id": "C86",
+      "claim": "In EGFRCA axons, total actin and F-actin distribution suggests reduction of efficient polymerization dynamics.",
+      "claim_type": "IMPLICIT",
+      "source": "Furthermore, in EGFRCA axons total actin and F-actin also distribute more uniformly across the axonal projection (Figure 8I\u2013I\u2034, Figure 8\u2014figure supplement 2C\u2013C\u2034, arrows), again suggesting reduction of efficient polymerization dynamics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the uniform distribution of actin in EGFRCA axons shown in Figure 8I-I''' and Figure 8\u2014figure supplement 2C-C'''.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "db912f83-d7c6-4bd3-a6bd-d15ab9b3384f",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DCN axons form adult-specific projections without metamorphic remodeling and establish a stereotypic pattern of 6-8 primary branches (mean 7) in the medulla.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are well-supported by direct observation and quantitative tracing data (Figure 1D). The contrast with remodeled neurons is appropriately cited, and the branch count is precisely quantified with clear methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "e8fcd20d-ce93-47e5-abc9-60643ca8fdce",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EGFR signaling regulates DCN axonal branch development, with loss of EGFR function causing increased branch numbers and variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 provide convergent evidence from multiple genetic approaches (hypomorphic allele, two dominant-negative constructs, RNAi) all showing increased branching. The dose-dependent effects (C4-C6) and increased variability (C7) strengthen the conclusion. C66 appropriately summarizes these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "d6223ec0-c672-434e-8599-7c93d2cf8b91",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EGFR ligand Spitz from photoreceptor neurons, rather than DCNs themselves, activates EGFR signaling to regulate DCN branching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 demonstrate the source of EGFR ligand through cell-type-specific knockdown experiments. The lack of effect from DCN-specific Spi knockdown (C63) versus significant effect from photoreceptor-specific knockdown (C64) provides strong evidence for the ligand source. Vein expression (C65) suggests additional complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "1a4c83a0-6a2d-421e-b575-e7dc35f5e9b2",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DCN axons develop through excessive branch formation between 36-54 hr APF followed by pruning between 60-84 hr APF to achieve the adult pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 provide a clear developmental timeline with visual evidence at multiple timepoints. C67 validates that this pattern is not an artifact of the marker used. The temporal progression is well-documented and reproducible with alternative markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "3a313ece-4f64-4d97-8bbd-f58b114477ff",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EGFR signaling is required for developmental branch pruning rather than initial branch formation, as EGFR inhibition does not affect branch numbers at 48 hr APF but prevents the normal reduction seen at 72 hr APF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 provide quantitative evidence distinguishing between effects on branch formation versus pruning. The lack of difference at 48 hr APF (C11) combined with failure to prune by 72 hr APF (C13-C14) strongly supports the pruning-specific role. C15 appropriately summarizes this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "1d6e770f-8cc2-41cd-b0c0-4f76e5bc2790",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EGFR regulation of axonal branching is intrinsic to neurons and common across neuronal subtypes, as demonstrated in primary embryonic Drosophila neuronal culture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C68 demonstrate that EGFR effects on branching occur in cultured primary neurons from mixed populations, suggesting a cell-autonomous and generalizable mechanism. The culture system removes extrinsic factors, supporting the intrinsic nature of the regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "4ebaffa3-f190-49ea-82bd-892866729f0b",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EGFR signaling regulates branch formation by controlling filopodial dynamics, with EGFR inhibition increasing static filopodia from <10% to ~30% and promoting microtubule invasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 provide quantitative measurements of filopodial dynamics with clear statistical significance. C19 links this to microtubule invasion, a known marker of branch stabilization. C69 appropriately interprets these findings as EGFR controlling immature protrusion dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "98bebf14-51f5-4ebb-adee-8f8591000a87",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EGFR is differentially localized to dynamic versus static filopodia, with slightly but significantly higher levels in dynamic filopodia, and this differential localization depends on EGFR signaling activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 demonstrate differential EGFR localization with live imaging and quantification. The small but significant difference (C21) and its dependence on EGFR activity (C22) support a feedback mechanism. C56 and C70 appropriately link localization to function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "ba4490c3-efad-49bb-93c7-d9cd3aadd6bf",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Receptor endocytosis and recycling regulate EGFR localization and dynamics in filopodia, as demonstrated by EGFR colocalization with Rab5/Rab11 and effects of dynamin inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 provide mechanistic insight through colocalization studies and pharmacological inhibition. The dramatic reduction in both EGFR levels and filopodial dynamics upon Dyngo treatment (C24-C25) strongly supports the role of endocytosis. C71 appropriately interprets these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "92e647c4-83d9-461f-ba6b-a2e29ce97873",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "EGFR-GFP shows dynamic developmental localization in DCN axons, with uneven distribution across branches at 56 hr APF during active pruning, becoming more uniform at 72 hr APF after pruning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 document EGFR localization in vivo at key developmental timepoints. The transition from uneven (C27) to uniform (C28) distribution correlates with the pruning process. C79 notes the lack of stereotypy, consistent with a dynamic process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "536efbaa-245b-4220-be7d-1a1cb8654f0b",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Overexpression of wildtype EGFR or EGFR-GFP does not alter DCN branching pattern, suggesting that asymmetric signaling depends on differential receptor distribution rather than total receptor levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C53, and C72 provide critical negative controls showing that simply increasing EGFR levels is insufficient to alter branching. This strongly supports the model that dynamic distribution, not absolute levels, drives the phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "3497f510-7020-47a0-a701-e393f6b77634",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Live imaging of developing pupal brains reveals that wildtype DCN branches are highly dynamic (7.5 \u03bcm average growth/retraction in 5 min) with variable behavior between branches, while EGFR inhibition reduces dynamics (3 \u03bcm average) and variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 provide quantitative measurements of branch dynamics in vivo using novel live imaging methodology. The reduced speed and variability in EGFRDN (C31, C83) directly link EGFR signaling to dynamic behavior. Statistical significance is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "e65794d3-500e-4167-8779-f745a2a6b63a",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A functional genomic EGFR-GFP construct rescues EGFR null mutants and shows dynamic trafficking in developing axons in vivo, validating the tagged receptor as a faithful reporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 demonstrate that EGFR-GFP is functionally equivalent to wildtype through complete rescue of lethality. C32 shows dynamic trafficking in vivo. C76 and C81 validate the expression pattern and culture system. These controls are essential for interpreting localization data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "83f00638-5162-46ea-b3d3-b1fc0c4de50b",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "DCN branch refinement occurs independently of the canonical EGFR-MAPK pathway, as manipulations of Ras1, Drk, and ERK do not affect branching, and dpERK is not detected in developing DCNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 test multiple components of the canonical pathway with consistent negative results. C84 provides additional evidence through lack of dpERK detection. While negative results require caution, the multiple independent approaches and positive controls strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "41190e83-28db-4c99-8569-965a517789e0",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "EGFR inhibition disrupts F-actin localization, causing diffuse distribution and accumulation of monomeric actin in axonal blebs, potentially inhibiting efficient actin polymerization at branch tips.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 document altered actin distribution in EGFRDN using both F-actin (Utrophin) and total actin markers. The differential accumulation in blebs (C37) versus branch tips supports the interpretation in C85 about disrupted polymerization dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "10dcfc6b-62b5-4cf1-ae23-12e53833d20b",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Constitutively active EGFR (EGFR-CA) also causes increased branching through reduced pruning and uniform actin distribution, demonstrating that both loss and gain of EGFR function disrupt branch refinement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 show that EGFR-CA phenocopies EGFR loss-of-function in branch number and actin distribution. C52 and C55 explicitly state this symmetry. This is critical evidence for the differential signaling model rather than a simple instructive model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "a0df9ad1-c75f-4675-a21a-da9bcc361c74",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "EGFR signaling affects branch growth and retraction through regulation of actin polymerization, with manipulation of actin regulators (RhoA, Cofilin) sufficient to cause ectopic branching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41 and C45 summarize the proposed mechanism linking EGFR to actin. However, C46 states critical supporting data as 'data not shown,' making it impossible to evaluate the sufficiency claims. The actin distribution data support a role but do not establish sufficiency without the unpublished experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "db9af63e-46e4-4d84-a15e-b6a8989e264c",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors propose a model where uneven EGFR distribution to developing axonal branches drives differential signaling that regulates filopodial dynamics and branch pruning to establish connection specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C50-C51 present the central model integrating multiple lines of evidence. The model is well-supported by the differential localization data, effects of both loss and gain of function, and correlation with dynamics. This represents the main conceptual advance of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "6a91da2f-d1c3-4c1a-aa89-b0be95d351e9",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors propose a probabilistic model where dynamic filopodia collapse over time with continuous EGFR redistribution, stopping when one filopodium remains or EGFR distributes equally, explaining both increased branch number and variability in EGFR mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C60 present a speculative mechanistic model. While the model is consistent with observations (C57), it is explicitly proposed rather than directly tested. The model makes testable predictions but lacks experimental validation beyond correlation with existing data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "0d809ac6-db14-4464-b13d-1b65b8839bfb",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The EGFR branching mechanism may be conserved in mammals, as EGFR is expressed in mammalian neurites and EGFR knockout in mice causes increased neurite branching in skin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 cite published mammalian studies showing similar phenomena. C49 appropriately suggests but does not overstate conservation. The comparative evidence is limited but appropriately presented as suggestive rather than definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    },
+    {
+      "id": "7911db4e-b223-4ad0-87c3-62e7e1523a23",
+      "content_id": "668cdfbb-645c-4d5f-90b5-ad14cf752757",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "EGFR-GFP shows regulated developmental localization in different neuronal populations, with broad expression in developing neuropil and developmental restriction in LNv neurons, suggesting general involvement in CNS connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C76-C78 document EGFR expression patterns across multiple neuronal types. C78 provides functional evidence in a second neuronal population (LNv). C80 shows developmental regulation. Together these support broader relevance beyond DCNs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:17.434558Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e9eba611-75cc-48b8-857a-72cdaad9f99b",
+      "result_id": "db912f83-d7c6-4bd3-a6bd-d15ab9b3384f"
+    },
+    {
+      "claim_id": "d65ea585-4835-47d6-80dc-d572cc04bcbc",
+      "result_id": "db912f83-d7c6-4bd3-a6bd-d15ab9b3384f"
+    },
+    {
+      "claim_id": "e78a7a45-214c-479c-b9fa-71eaf9d6a4ea",
+      "result_id": "e8fcd20d-ce93-47e5-abc9-60643ca8fdce"
+    },
+    {
+      "claim_id": "882058c7-2b91-4fd1-96d4-d2559f6e21a9",
+      "result_id": "e8fcd20d-ce93-47e5-abc9-60643ca8fdce"
+    },
+    {
+      "claim_id": "7683529b-9a79-41de-b081-b0b6ec97fb72",
+      "result_id": "e8fcd20d-ce93-47e5-abc9-60643ca8fdce"
+    },
+    {
+      "claim_id": "1be15095-5bf7-4dc2-ace3-be784f301a38",
+      "result_id": "e8fcd20d-ce93-47e5-abc9-60643ca8fdce"
+    },
+    {
+      "claim_id": "5b75c14e-ac13-4299-924a-3a5b618597db",
+      "result_id": "e8fcd20d-ce93-47e5-abc9-60643ca8fdce"
+    },
+    {
+      "claim_id": "a9ecb34a-21f2-4506-8128-722aa6e3460c",
+      "result_id": "e8fcd20d-ce93-47e5-abc9-60643ca8fdce"
+    },
+    {
+      "claim_id": "8bb78d87-41f2-4c51-8777-2898eea7f4e6",
+      "result_id": "d6223ec0-c672-434e-8599-7c93d2cf8b91"
+    },
+    {
+      "claim_id": "9b8701fe-6709-49a7-a2e7-2aaf88a70b16",
+      "result_id": "d6223ec0-c672-434e-8599-7c93d2cf8b91"
+    },
+    {
+      "claim_id": "1b3a76a3-aa20-46aa-845f-8f8398ef506c",
+      "result_id": "d6223ec0-c672-434e-8599-7c93d2cf8b91"
+    },
+    {
+      "claim_id": "38957c75-738e-4b71-99a1-9dd1d09c73ab",
+      "result_id": "d6223ec0-c672-434e-8599-7c93d2cf8b91"
+    },
+    {
+      "claim_id": "d7f734b9-b631-43b2-b142-b0961ace1635",
+      "result_id": "d6223ec0-c672-434e-8599-7c93d2cf8b91"
+    },
+    {
+      "claim_id": "f80e6eb7-b151-4a86-93c3-73a94d48a23d",
+      "result_id": "1a4c83a0-6a2d-421e-b575-e7dc35f5e9b2"
+    },
+    {
+      "claim_id": "91d72ce5-6b3f-4e21-a708-a47ac93ffe60",
+      "result_id": "1a4c83a0-6a2d-421e-b575-e7dc35f5e9b2"
+    },
+    {
+      "claim_id": "5d497c23-67c6-4e4e-9a1e-baa095e8c5ce",
+      "result_id": "1a4c83a0-6a2d-421e-b575-e7dc35f5e9b2"
+    },
+    {
+      "claim_id": "57836d2e-d00d-4c75-a520-08786226d739",
+      "result_id": "1a4c83a0-6a2d-421e-b575-e7dc35f5e9b2"
+    },
+    {
+      "claim_id": "986c2f8b-36e1-41d8-b3ed-56c985536b98",
+      "result_id": "3a313ece-4f64-4d97-8bbd-f58b114477ff"
+    },
+    {
+      "claim_id": "42a0607f-7371-4345-8004-53eddf7d2de0",
+      "result_id": "3a313ece-4f64-4d97-8bbd-f58b114477ff"
+    },
+    {
+      "claim_id": "cd2f0985-65a5-4cfe-87ea-1213028aa310",
+      "result_id": "3a313ece-4f64-4d97-8bbd-f58b114477ff"
+    },
+    {
+      "claim_id": "66c7a765-31db-4ee2-95ef-d46cae44f7e0",
+      "result_id": "3a313ece-4f64-4d97-8bbd-f58b114477ff"
+    },
+    {
+      "claim_id": "4247d791-c0a9-4eaf-befa-303b74a49287",
+      "result_id": "3a313ece-4f64-4d97-8bbd-f58b114477ff"
+    },
+    {
+      "claim_id": "a24a2e53-2688-4445-be65-c8be2d7c951f",
+      "result_id": "1d6e770f-8cc2-41cd-b0c0-4f76e5bc2790"
+    },
+    {
+      "claim_id": "afc3286c-8c69-4355-bb60-ae9d57ff17a4",
+      "result_id": "1d6e770f-8cc2-41cd-b0c0-4f76e5bc2790"
+    },
+    {
+      "claim_id": "498c8c60-8a75-480c-8ee2-bbd206563cde",
+      "result_id": "4ebaffa3-f190-49ea-82bd-892866729f0b"
+    },
+    {
+      "claim_id": "76e32b6e-acb6-40de-8b6c-0794b7f86660",
+      "result_id": "4ebaffa3-f190-49ea-82bd-892866729f0b"
+    },
+    {
+      "claim_id": "a8a40391-e963-4fcc-bd1c-c15f290627b2",
+      "result_id": "4ebaffa3-f190-49ea-82bd-892866729f0b"
+    },
+    {
+      "claim_id": "76fecf69-484e-49bb-a0b8-4a30e19bd432",
+      "result_id": "4ebaffa3-f190-49ea-82bd-892866729f0b"
+    },
+    {
+      "claim_id": "a23518d8-4ab4-4f77-ac1b-6a030a654127",
+      "result_id": "98bebf14-51f5-4ebb-adee-8f8591000a87"
+    },
+    {
+      "claim_id": "2aee8ff2-2f62-4bd1-99c4-8ae7b09802b0",
+      "result_id": "98bebf14-51f5-4ebb-adee-8f8591000a87"
+    },
+    {
+      "claim_id": "e4ce2eae-bbbc-44c9-b9c4-1d822627663e",
+      "result_id": "98bebf14-51f5-4ebb-adee-8f8591000a87"
+    },
+    {
+      "claim_id": "9990069f-2653-4880-ae09-8549bf97092c",
+      "result_id": "98bebf14-51f5-4ebb-adee-8f8591000a87"
+    },
+    {
+      "claim_id": "08160e98-3859-4637-be21-346989dc93a3",
+      "result_id": "98bebf14-51f5-4ebb-adee-8f8591000a87"
+    },
+    {
+      "claim_id": "4d937eed-cef2-4dc9-8984-fbf148c50d6e",
+      "result_id": "ba4490c3-efad-49bb-93c7-d9cd3aadd6bf"
+    },
+    {
+      "claim_id": "b64cc8be-c4cd-44de-8277-4992ac9ea62f",
+      "result_id": "ba4490c3-efad-49bb-93c7-d9cd3aadd6bf"
+    },
+    {
+      "claim_id": "5d2321c5-d06d-4879-a3c3-ef7dbd2e33a3",
+      "result_id": "ba4490c3-efad-49bb-93c7-d9cd3aadd6bf"
+    },
+    {
+      "claim_id": "a9074ce1-f9d1-42df-b0d6-56c3e78e24e1",
+      "result_id": "ba4490c3-efad-49bb-93c7-d9cd3aadd6bf"
+    },
+    {
+      "claim_id": "ada9131c-68f9-452b-b112-7769323164f7",
+      "result_id": "92e647c4-83d9-461f-ba6b-a2e29ce97873"
+    },
+    {
+      "claim_id": "2db31321-6f63-4746-b0ff-5f81aed1ba32",
+      "result_id": "92e647c4-83d9-461f-ba6b-a2e29ce97873"
+    },
+    {
+      "claim_id": "a5a0282b-c263-4590-a960-37085437e64e",
+      "result_id": "92e647c4-83d9-461f-ba6b-a2e29ce97873"
+    },
+    {
+      "claim_id": "c28c42e5-3223-47e1-8d86-00bf7622d45d",
+      "result_id": "92e647c4-83d9-461f-ba6b-a2e29ce97873"
+    },
+    {
+      "claim_id": "6189b232-d7b4-4d85-bc54-bb5223cd591c",
+      "result_id": "536efbaa-245b-4220-be7d-1a1cb8654f0b"
+    },
+    {
+      "claim_id": "8415778e-5afc-47c2-8717-96fca70f0c39",
+      "result_id": "536efbaa-245b-4220-be7d-1a1cb8654f0b"
+    },
+    {
+      "claim_id": "0b5cfd5b-32d1-4e77-b1d0-88c64766166b",
+      "result_id": "536efbaa-245b-4220-be7d-1a1cb8654f0b"
+    },
+    {
+      "claim_id": "c050988d-fe2b-40d5-8499-473a29e45343",
+      "result_id": "3497f510-7020-47a0-a701-e393f6b77634"
+    },
+    {
+      "claim_id": "a8889fe0-897e-43f2-b0c8-9acb5aaef847",
+      "result_id": "3497f510-7020-47a0-a701-e393f6b77634"
+    },
+    {
+      "claim_id": "cb4d54f3-4108-4a28-bea5-e3c22312c8b5",
+      "result_id": "3497f510-7020-47a0-a701-e393f6b77634"
+    },
+    {
+      "claim_id": "48b20e14-6827-423b-a6c0-411fc6e38546",
+      "result_id": "3497f510-7020-47a0-a701-e393f6b77634"
+    },
+    {
+      "claim_id": "25d48e52-96ea-4fd4-8ac6-6c066d484015",
+      "result_id": "e65794d3-500e-4167-8779-f745a2a6b63a"
+    },
+    {
+      "claim_id": "773c7cef-57ac-4a8f-b67b-cc0eb20e92db",
+      "result_id": "e65794d3-500e-4167-8779-f745a2a6b63a"
+    },
+    {
+      "claim_id": "ad7d0534-5225-4d8e-8bf7-3de92f26b546",
+      "result_id": "e65794d3-500e-4167-8779-f745a2a6b63a"
+    },
+    {
+      "claim_id": "ab28da4e-aa3f-473b-b913-c97242f9fb7b",
+      "result_id": "e65794d3-500e-4167-8779-f745a2a6b63a"
+    },
+    {
+      "claim_id": "61d8f211-97af-4950-9b47-f71d99c3565e",
+      "result_id": "e65794d3-500e-4167-8779-f745a2a6b63a"
+    },
+    {
+      "claim_id": "5256c490-5316-43f5-ba0f-8f94bf3ca30a",
+      "result_id": "83f00638-5162-46ea-b3d3-b1fc0c4de50b"
+    },
+    {
+      "claim_id": "2e0dcd39-94c5-4fd3-9f2d-0ea2263c9559",
+      "result_id": "83f00638-5162-46ea-b3d3-b1fc0c4de50b"
+    },
+    {
+      "claim_id": "c85681a8-3bb2-4a0f-b58f-2088fce02608",
+      "result_id": "83f00638-5162-46ea-b3d3-b1fc0c4de50b"
+    },
+    {
+      "claim_id": "ec07e347-90af-4108-83c3-7a7347bae8ea",
+      "result_id": "41190e83-28db-4c99-8569-965a517789e0"
+    },
+    {
+      "claim_id": "6c9fad2d-eae1-40c4-9f98-83d64b334f01",
+      "result_id": "41190e83-28db-4c99-8569-965a517789e0"
+    },
+    {
+      "claim_id": "67ce14cf-5a7f-4c95-896c-26051c56b939",
+      "result_id": "41190e83-28db-4c99-8569-965a517789e0"
+    },
+    {
+      "claim_id": "c2b3b45e-05c6-44e7-8c99-8ccc892fbe42",
+      "result_id": "41190e83-28db-4c99-8569-965a517789e0"
+    },
+    {
+      "claim_id": "2cdddf51-5437-4e04-b6ba-2bce53340e50",
+      "result_id": "10dcfc6b-62b5-4cf1-ae23-12e53833d20b"
+    },
+    {
+      "claim_id": "d957d3e1-c009-4cf4-8495-c48cd327507e",
+      "result_id": "10dcfc6b-62b5-4cf1-ae23-12e53833d20b"
+    },
+    {
+      "claim_id": "7b95f53f-9daa-4307-8854-f5338ea016ad",
+      "result_id": "10dcfc6b-62b5-4cf1-ae23-12e53833d20b"
+    },
+    {
+      "claim_id": "2aa7e65f-30cb-485f-b032-0962210d4824",
+      "result_id": "10dcfc6b-62b5-4cf1-ae23-12e53833d20b"
+    },
+    {
+      "claim_id": "0c8a3f59-0447-488c-a11f-3426acafe900",
+      "result_id": "10dcfc6b-62b5-4cf1-ae23-12e53833d20b"
+    },
+    {
+      "claim_id": "37af513f-7525-4452-b347-325ea58d89d3",
+      "result_id": "a0df9ad1-c75f-4675-a21a-da9bcc361c74"
+    },
+    {
+      "claim_id": "99741c62-c5f6-4514-812c-7a2801c28b76",
+      "result_id": "a0df9ad1-c75f-4675-a21a-da9bcc361c74"
+    },
+    {
+      "claim_id": "b5d940e7-36ed-4c30-94c8-9b754b4ceffc",
+      "result_id": "a0df9ad1-c75f-4675-a21a-da9bcc361c74"
+    },
+    {
+      "claim_id": "4ea88ade-74f6-447e-9ce5-c43235fc6a3c",
+      "result_id": "db9af63e-46e4-4d84-a15e-b6a8989e264c"
+    },
+    {
+      "claim_id": "4598f67c-4a86-4dd5-951b-5d9950528066",
+      "result_id": "db9af63e-46e4-4d84-a15e-b6a8989e264c"
+    },
+    {
+      "claim_id": "a2a0be2a-c884-4385-95cf-a328d371b954",
+      "result_id": "db9af63e-46e4-4d84-a15e-b6a8989e264c"
+    },
+    {
+      "claim_id": "db8b1ae4-e2c2-4755-b8aa-3a90db2b2dba",
+      "result_id": "db9af63e-46e4-4d84-a15e-b6a8989e264c"
+    },
+    {
+      "claim_id": "020eb8e4-a81c-4058-a48b-e4d40b24b5aa",
+      "result_id": "db9af63e-46e4-4d84-a15e-b6a8989e264c"
+    },
+    {
+      "claim_id": "b3a9a343-dac4-4a5f-99dc-b96aee50fb07",
+      "result_id": "6a91da2f-d1c3-4c1a-aa89-b0be95d351e9"
+    },
+    {
+      "claim_id": "224d6b60-7fca-4279-8c86-e3613ae33611",
+      "result_id": "6a91da2f-d1c3-4c1a-aa89-b0be95d351e9"
+    },
+    {
+      "claim_id": "ae6ff543-d3ab-4b8b-94f5-c997a1952a82",
+      "result_id": "6a91da2f-d1c3-4c1a-aa89-b0be95d351e9"
+    },
+    {
+      "claim_id": "ccb0bc26-9da8-4342-b73c-95dbf91e8b11",
+      "result_id": "6a91da2f-d1c3-4c1a-aa89-b0be95d351e9"
+    },
+    {
+      "claim_id": "f4c5b139-cf12-4e0f-8dff-c40dbb9dcae6",
+      "result_id": "0d809ac6-db14-4464-b13d-1b65b8839bfb"
+    },
+    {
+      "claim_id": "254b5326-15f7-49c6-becd-7749685f62b7",
+      "result_id": "0d809ac6-db14-4464-b13d-1b65b8839bfb"
+    },
+    {
+      "claim_id": "713b0a9e-963c-420d-abaf-4c7ce89ab833",
+      "result_id": "0d809ac6-db14-4464-b13d-1b65b8839bfb"
+    },
+    {
+      "claim_id": "993fa732-f461-48ba-846d-0d172e65f87e",
+      "result_id": "7911db4e-b223-4ad0-87c3-62e7e1523a23"
+    },
+    {
+      "claim_id": "0e76d803-d206-4fd1-9317-79cfb6eb994b",
+      "result_id": "7911db4e-b223-4ad0-87c3-62e7e1523a23"
+    },
+    {
+      "claim_id": "9f79dd63-1521-4f1e-b91c-0f07617def90",
+      "result_id": "7911db4e-b223-4ad0-87c3-62e7e1523a23"
+    },
+    {
+      "claim_id": "3a953bef-5739-4fc8-a5cb-506d81d5619e",
+      "result_id": "7911db4e-b223-4ad0-87c3-62e7e1523a23"
+    }
+  ],
+  "comparisons": []
+}

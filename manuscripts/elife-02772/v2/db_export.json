@@ -1,0 +1,1965 @@
+{
+  "submission": {
+    "id": "ba693b24-56d8-4457-8aaa-87badd63f66e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:59:03.254127Z",
+    "updated_at": "2025-11-28T20:59:03.254127Z"
+  },
+  "content": [
+    {
+      "id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "submission_id": "ba693b24-56d8-4457-8aaa-87badd63f66e",
+      "content_type": "manuscript",
+      "content_text": "# A comprehensive search for calcium binding sites critical for TMEM16A calcium-activated chloride channel activity\n\n## Authors\n\n- Jason Tien<sup>1</sup>\n- Christian J Peters<sup>1</sup>\n- Xiu Ming Wong<sup>2</sup>\n- Tong Cheng<sup>1</sup>\n- Yuh Nung Jan<sup>1</sup>\n- Lily Yeh Jan<sup>1</sup> \u2020\n- Huanghe Yang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Physiology University of California, San Francisco San Francisco United States\n2. Graduate Program in Chemistry and Chemical Biology University of California, San Francisco San Francisco United States\n3. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n4. Howard Hughes Medical Institute, University of California, San Fransisco San Fransisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTMEM16A forms calcium-activated chloride channels (CaCCs) that regulate physiological processes such as the secretions of airway epithelia and exocrine glands, the contraction of smooth muscles, and the excitability of neurons. Notwithstanding intense interest in the mechanism behind TMEM16A-CaCC calcium-dependent gating, comprehensive surveys to identify and characterize potential calcium sensors of this channel are still lacking. By aligning distantly related calcium-activated ion channels in the TMEM16 family and conducting systematic mutagenesis of all conserved acidic residues thought to be exposed to the cytoplasm, we identify four acidic amino acids as putative calcium-binding residues. Alterations of the charge, polarity, and size of amino acid side chains at these sites alter the ability of different divalent cations to activate the channel. Furthermore, TMEM16A mutant channels containing double cysteine substitutions at these residues are sensitive to the redox potential of the internal solution, providing evidence for their physical proximity and solvent accessibility.\n\n## Introduction\n\nTransmembrane proteins of the TMEM16 family include a number of calcium-dependent ion channels, such as the TMEM16A (Caputo et al., 2008; Schroeder et al., 2008; Yang et al., 2008b) and TMEM16B (Schroeder et al., 2008; St\u00f6hr et al., 2009) calcium-activated chloride channels (CaCCs) and the TMEM16F (Yang et al., 2012) small conductance calcium-activated nonselective cation (SCAN) channel. These proteins have been implicated in a wide range of physiological activities (Hartzell et al., 2009; Kunzelmann et al., 2011; Berg et al., 2012; Scudieri et al., 2012; Huang et al., 2012a) including the control of fluid secretion in epithelia (Romanenko et al., 2010; Huang et al., 2012b), the regulation of membrane excitability in neurons (Billig et al., 2011; Huang et al., 2012c), the scrambling of membrane lipids in platelets (Suzuki et al., 2010; Yang et al., 2012), and the metastasis of certain cancers (Katoh, 2003; Duvvuri et al., 2012). Despite their important physiological roles, the mechanism by which calcium activates these proteins is still extensively debated.\n\nBased on studies of calcium-activated potassium channels (KCas) (Maylie et al., 2004; Salkoff et al., 2006), two models have been proposed to account for the calcium sensitivity of TMEM16A-CaCC (Figure 1A). In one model resembling that of the small-conductance KCa (SK) channels (Xia et al., 1998; Schumacher et al., 2001), calcium ions interact with calmodulin (CaM), and the physical association of calmodulin with TMEM16A is required to transduce the free energy of ion\u2013protein interaction into movements of the channel gate (Tian et al., 2011; Vocke et al., 2013). In a second model similar to that of the large-conductance KCa (BK) channels (Schreiber and Salkoff, 1997; Shi et al., 2002; Xia et al., 2002; Wu et al., 2010; Yuan et al., 2010), calcium binds directly to TMEM16A, and this interaction drives channel activation (Yu et al., 2012, 2014; Terashima et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02772/elife-02772-fig1-v2.jpg)\n\n**Figure 1.:** (A) Two competing models to explain TMEM16A calcium sensitivity have been proposed. It is unclear whether calcium directly binds to TMEM16A-CaCCs (upper panel) or whether CaM is required to mediate the calcium sensitivity of the channel (lower panel). (B) Representative current traces of wildtype mouse TMEM16A-CaCC (mTMEM16A) recorded at +60 mV and \u221260 mV in response to various intracellular calcium concentrations using an inside-out patch clamp configuration. Table indicates the concentration of calcium used. (C) Calcium dose\u2013response of mTMEM16A channel at +60 mV and \u221260 mV. The smooth curves represent fits to the Hill equation (\u2018Materials and methods\u2019). (D) Loss-of-function CaM mutants (CaM12, CaM34, CaM1234) did not reduce the apparent calcium sensitivity of the endogenous TMEM16A (x16A) channel in Xenopus oocytes. n.s.: non-significant. (E) Application of monoclonal anti-CaM antibody CaM85 (2 \u03bcg/ml) to the cytosolic face of inside-out patches had no effect on the calcium sensitivity of endogenous Xenopus TMEM16A-CaCC. (F) Mutating residues reported by Vocke et al. (2013) to be in the CaM binding domain of mTMEM16A did not affect apparent TMEM16A-CaCC calcium sensitivity.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02772/elife-02772-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Acute application of 50 \u00b5M W7, a CaM antagonist, to the cytosolic face of the inside-out patches failed to inhibit endogenous Xenopus TMEM16A-CaCC currents. (B) Chronic incubation of Xenopus oocytes with W7 did not reduce the apparent calcium sensitivity of endogenous Xenopus TMEM16A-CaCC. (C and D) Barium, a divalent cation that is incapable of binding CaM, can robustly activate mouse TMEM16A-CaCC. (C) CaCC currents were recorded with voltage steps in +20 mV increments from \u221280 mV to +120 mV in isotonic 140 mM NaCl solutions. Both holding and repolarizing potentials were \u221280 mV. Dotted lines indicate the zero current level. (D) Barium dose\u2013response curves of wildtype mTMEM16A channel at +60 mV and \u221260 mV. Smooth curve represent fits to the Hill equation.\n\nIn this study, we performed a series of experiments designed to clarify the mechanism by which TMEM16A-CaCCs are gated by calcium. First, with multiple lines of evidence, we confirmed that CaM is not required for TMEM16A-CaCC activation. Then, we performed a comprehensive alanine mutagenesis screen of all highly conserved acidic residues in TMEM16A that are predicted to be accessible to the cytoplasm. Based on our measurements of these mutants' apparent calcium sensitivity in inside-out excised patches, we identify four acidic residues (including two acidic residues that were recently implicated in the calcium-dependent activation of TMEM16A-CaCCs [Yu et al., 2012]) that satisfy several criteria characteristic of calcium-binding sites. Substitution of each of these residues with various amino acids shifts the apparent sensitivity of TMEM16A-CaCC for different divalent cations, and cysteine residues at these sites can be cross-linked by oxidizing intracellular solutions. Our results thus demonstrate that direct binding of calcium to TMEM16A triggers channel activation independently of calmodulin, identify novel interaction sites between calcium ions and TMEM16A, and lay the groundwork for future studies examining the mechanism of calcium-dependent TMEM16 channel activation.\n\n## Results\n\n### Calmodulin is not required for calcium-dependent TMEM16A-CaCC activation\n\nWe began our study of TMEM16A-CaCC's calcium-dependent activation by testing whether CaM is required for channel activity. Reasoning that apparent calcium sensitivity is the most direct measurement of TMEM16A function, we recorded CaCC currents from GFP-tagged TMEM16A channels at fixed test potentials using an inside-out excised patch configuration. CaCC current amplitudes increased in a calcium-dependent manner until channels reach maximum open probability in our recordings (Figure 1B). By fitting the dose\u2013response curve to the Hill equation (Figure 1C), apparent calcium sensitivity was derived as the half maximal effective concentration (EC50) of calcium required for channel activation. With rapid application of internal solutions, this patch clamp protocol effectively minimized the effect of channel desensitization on our analysis of TMEM16A-CaCC apparent calcium sensitivity (Figure 1B). In addition, deriving the apparent calcium sensitivity from individual inside-out patches allowed us to control for variations in protein expression that complicate the interpretation of data derived from other electrophysiology configurations such as whole-cell patch clamp.\n\nSince overexpression of mutant CaM molecules whose EF hand calcium-binding motifs are destroyed has a dominant negative effect on the ability of SK channels to detect changes in intracellular calcium (Xia et al., 1998), we tested the effects of these CaM mutations on TMEM16A-CaCCs. We found that co-expression of mutant CaM molecules without functional calcium-binding sites in the N-terminal lobe (CaM12), C-terminal lobe (CaM34), or both lobes (CaM1234) did not reduce the apparent calcium sensitivity of the endogenous TMEM16A-CaCC in Xenopus oocytes (Figure 1D), in agreement with a recent study (Yu et al., 2014).\n\nBecause the failure of CaM mutants to reduce TMEM16A calcium sensitivity could conceivably be due to the inability of the mutant CaM molecules to sufficiently displace endogenous CaM from the putative TMEM16A-CaM complexes, we further clarified the role of CaM in TMEM16A-CaCC gating by conducting four additional experiments to manipulate the potential interaction between CaM and TMEM16A. First, we tried to sequester endogenous CaM molecules by directly applying anti-CaM antibodies to the cytoplasmic side of inside-out patches from Xenopus oocytes. In contrast to its potent inhibitory effect on CaM-dependent TRPV1 tachyphylaxis (Lishko et al., 2007), the CaM-antibody had no effect on TMEM16A-CaCC currents (Figure 1E). Second, we treated endogenous Xenopus TMEM16A channels with W7, a potent CaM antagonist that can prevent CaM from binding to its targets. We found that neither acute nor sustained applications of this drug disrupted the calcium sensitivity of TMEM16A channels (Figure 1\u2014figure supplement 1A,B). Third, consistent with previous reports (Xiao et al., 2011; Yuan et al., 2013; Ni et al., 2014), we found that barium, a divalent cation that cannot bind to CaM (Chao et al., 1984), can still potently activate TMEM16A channels in a dose-dependent manner (Figure 1\u2014figure supplement 1C,D). Fourth, mutating three residues (V310, Y314, and L319) that were recently reported to be necessary for CaM-TMEM16A interactions (Vocke et al., 2013) did not reduce the apparent calcium sensitivity of the mouse TMEM16A channel expressed in HEK 293 cells (Figure 1F). Similar to the results reported by Vocke et al. (2013), the current amplitudes of these mutant channels were much smaller compared to wildtype channels in our inside-out patch recordings (data not shown). However, the absence of any rightward shift in the dose\u2013response curves suggests that these residues do not contribute toward TMEM16A-CaCC calcium sensitivity.\n\nBecause we were unable to alter TMEM16A-CaCC activity by inhibiting CaM function, could activate TMEM16A-CaCCs with barium, and could not shift channel EC50 by mutating the putative CaM-TMEM16A binding interface, we conclude that CaM is not responsible for the calcium sensitivity of TMEM16A-CaCCs.\n\n### Alanine mutagenesis screen identifies five acidic residues that are important for the calcium-dependent activation of TMEM16A channels\n\nAfter excluding CaM as the calcium sensor for TMEM16A-CaCCs, we hypothesized that calcium might directly bind to TMEM16A itself. A recent study by Yu et al. (2012) found that mutations altering the charge at E698 and E701 (numbered E702 and E705 in the splice variant of TMEM16A used in their experiments) reduced the amplitude of whole-cell currents and altered channel activation and deactivation kinetics, suggesting that a ligand responsible for channel activation may interact with these sites. To test whether the apparent calcium sensitivities of E698Q and E701Q mutant channels are reduced, we measured their steady-state EC50 of calcium-dependent channel activation (Figure 2A,B). We found that their EC50s were shifted to much higher calcium concentrations compared to the EC50 of wildtype TMEM16A channels, suggesting that these two acidic residues might be important for a direct interaction between calcium ions and TMEM16A-CaCC.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02772/elife-02772-fig2-v2.jpg)\n\n**Figure 2.:** (A and B) Quantification of the apparent calcium sensitivity of E698Q and E701Q (Yu et al., 2012) mutant TMEM16A channels. (A) Representative current traces of E698Q and E701Q mutants in response to intracellular solutions with different calcium concentrations recorded at +60 mV. Table indicates the concentration of calcium used. (B) Calcium dose\u2013response curves of the mTMEM16A channels at +60 mV. Smooth curves represent fits to the Hill equation. (C) Sequence alignment of the calcium-activated TMEM16 channels. h16A, m16A, x16A, m16B, m16F and Fly16 are the human TMEM16A (Uniprot ID #Q5XXA6), mouse TMEM16A (Uniprot ID #Q8BHY3-2), Xenopus TMEM16A (Uniprot ID #B5SVV6), mouse TMEM16B (Uniprot ID #Q8CFW1), mouse TMEM16F (Uniprot ID #Q6P9J9) and Drosophila TMEM16 channels (Uniprot ID #Q86P24), respectively. Highly conserved acidic residues that are potentially exposed to the cytoplasm are highlighted in red. Some residues with conserved oxygen-containing side chains in m16F and Fly16 are highlighted in green. Putative transmembrane (TM) segments are highlighted in cyan. The controversial TM6 segments are highlighted in gray and labeled as TM6\u2032 and TM6\u2033, respectively. \u2018In\u2019 and \u2018Out\u2019 indicate the intracellular and extracellular side of the membrane, respectively.\n\nIn proteins, calcium ions tend to bind to the carboxylate moieties of acidic amino acid residues (Pidcock and Moore, 2001) and typically require six to eight coordinates (Dudev and Lim, 2003). For a comprehensive survey of putative calcium binding residues in TMEM16A, we identified 38 acidic residues (including E698 and E701) that are conserved in all known calcium-activated ion channels in the TMEM16 family (including a Drosophila calcium-activated chloride channel [Wong et al., 2013]) and that are hypothesized to be solvent accessible from the intracellular compartment (Figure 2C). We then systematically replaced each of these residues in the mouse TMEM16A channel with alanine and measured their apparent calcium sensitivity using inside-out patches excised from HEK 293 cells (Figure 3). We found that alanine substitutions at E698 and E701 greatly reduced the apparent calcium affinity of TMEM16A-CaCC (Figure 3), similar to the effects of glutamine substitutions at these residues (Figure 2A,B). Moreover, our screen identified three additional acidic residues (E650, E730, and D734) that were critical for the calcium sensitivity of TMEM16A channels (Figure 3). Similar to E698A and E701A, alanine mutations of these three acidic residues resulted in at least a 10-fold reduction of apparent calcium sensitivity. Interestingly, these five residues identified by our screen are confined to the region between the fifth and seventh putative transmembrane segments (Figure 2C) (Yu et al., 2012).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02772/elife-02772-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative current traces of the E650A, E698A, E701A, E730A and D734A mutant channels in response to different intracellular calcium solutions recorded at +60 mV. Table indicates the concentration of calcium used. (B) Calcium dose\u2013response curves of these mutant mTMEM16A channels at +60 mV. Smooth curves represent fits to the Hill equation. (C) Summary of apparent calcium sensitivity (EC50s) of all alanine mutants tested. Dotted line indicates a 10-fold increase in EC50 compared to wildtype channels.\n\n### Altering the side chains of E650, E698, E701, E730, and D734 differentially changes the calcium sensitivity of TMEM16A-CaCCs\n\nCalcium ions interact with different chemical moieties with different affinities depending on the coordination chemistry of the calcium ion (S\u00f3v\u00e1g\u00f3 and V\u00e1rnagy, 2013). In order to understand the role of E650, E698, E701, E730, and D734 in TMEM16A-calcium interactions, we replaced the side chains at each of these five potential calcium-binding residues with charge-neutralizing (Cys, Asn, or Gln), charge-reversing (Arg), and charge-conserving (Asp or Glu) groups and examined their effects on the apparent calcium sensitivity of TMEM16A channels (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02772/elife-02772-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013E) Calcium dose\u2013response curves of (A) E650, (B) E698, (C) E701, (D), E730, and (E) D734 mutant mTMEM16A channels at +60 mV. Smooth curves represent fits to the Hill equation. Maximum activity was constrained to 1 for these fittings. (F) Summary of apparent calcium sensitivity (EC50s) of mTMEM16A mutants. N.C.: no obvious CaCC current recorded. ***p<0.001.\n\nIntroduction of cysteine substitutions at these sites replaces the glutamate or aspartate side chain with a small, hydrophobic methyl sulfhydryl group. Understandably, these manipulations had effects comparable to those of alanine substitutions (Figure 3C) and reduced the apparent calcium sensitivity of the channel (Figure 4F).\n\nSimilarly, we reasoned that charge-reversing arginine substitutions of residues that coordinate calcium would have dramatic effects due to the introduction of a positively charged guanidinium group. Indeed, E698R, E701R, E730R and D734R were much less sensitive to internal calcium. Compared to wildtype (WT) channels (EC50: 1.0 \u00b1 0.1 \u03bcM), the EC50s of E698R and E701R were increased by several thousand-fold to 5.0 \u00b1 0.3 mM and 3.3 \u00b1 0.5 mM, respectively, while the effects of E730R were milder, increasing EC50 to 0.6 \u00b1 0.3 mM. The most substantial changes were caused by the D734R mutation, which elevated EC50 to such a great extent that 10 mM intracellular calcium, the highest concentration of calcium used in this study, was unable to activate the mutant channel. The lack of CaCC current in D734R mutants was not due to defects in protein expression or folding because cadmium ions could still robustly activate the channel (see below). In contrast, the arginine substitution in E650R mutants only produced a small reduction in calcium sensitivity (EC50: 6.5 \u00b1 0.8 \u00b5M), suggesting that the side chain at position 650 may not be directly involved in calcium coordination.\n\nBecause calcium ions tend to be coordinated by oxygen atoms, we also made several mutations to test the role of carboxylate and carbonyl moieties in TMEM16A-CaCC calcium sensitivity. First, we made charge-preserving mutations (Asp or Glu) that alter the length of the amino acid side chain without removing the carboxylate group. If carboxylate moieties are important for TMEM16A-calcium interaction, these mutations may partially preserve TMEM16A-CaCC calcium sensitivity even if the change in side chain length alters the position of the carboxylate group. Second, we made charge-neutralizing mutations (Asn or Gln) that remove the charge of the amino acid side chain without changing its size. If carbonyl groups are involved in calcium coordination, these mutations may maintain the orientation of the amino acid residue and preserve the interaction of their carbonyl groups with calcium ions.\n\nWe found that the shifts in EC50 caused by mutations at E698, E701, and D734 were consistent with these acidic residues playing a direct role in calcium coordination (Figure 4F). Charge-preserving mutations in E698D and E701D resulted in only a 3 to 10-fold increase in channel EC50 (3.3 \u00b1 0.9 \u00b5M and 10.4 \u00b1 3.4 \u00b5M, respectively), suggesting that side chain length at these two positions is not critical for calcium binding, while mutations in D734E shifted the EC50 by about 800-fold to 0.8 \u00b1 0.3 mM, suggesting that calcium binding may be sensitive to the precise spatial arrangement of the carboxylate group at this position. Although calcium activation was compromised by substituting the acidic residue with a longer side chain, D734E was still more sensitive to calcium than other mutants possessing substitutions at this residue (Figure 4E).\n\nIn addition, replacing these acidic residues with glutamine or asparagine also increased channel EC50, suggesting that the negatively-charged carboxylate group is important for calcium-binding. E698Q mutations resulted in a relatively small decrease in calcium sensitivity (EC50: 0.03 \u00b1 0.01 mM) while E701Q and D734N had larger effects (EC50: 2.9 \u00b1 0.3 mM and 2.3 \u00b1 0.3 mM, respectively). This data, combined with a dramatic loss of calcium sensitivity in mutants containing arginine, alanine or cysteine mutations at these three sites, supports the idea that side chain carboxylate groups at position E698, E701 and D734 might be directly involved in binding calcium.\n\nSimilarly, mutagenesis of E730 suggests that calcium ions may interact with this residue, although not necessarily with its side-chain carboxylate moiety (Figure 4D,F). In this case, charge-preserving aspartate mutations increased EC50 to 0.8 \u00b1 0.2 mM even though charge-neutralizing glutamine mutations only increased EC50 to 0.09 \u00b1 0.08 mM. Since channels bearing mutations that preserve the shape but not the charge of this acidic residue are more sensitive to calcium, it appears that TMEM16A-calcium interactions require the proper conformation of residues at this position, possibly to orient the carbonyl oxygen of the peptide backbone.\n\nThe effects of the charge or size-preserving mutations at E650 further support the notion that this residue may not be directly involved in binding calcium. In contrast to the mild effects of a charge-reversing arginine substitution (EC50: 6.5 \u00b1 0.8 \u03bcM), the charge-preserving aspartate and charge-neutralizing glutamine substitutions increased EC50 to 0.8 \u00b1 0.2 mM and 4.3 \u00b1 0.9 mM, respectively, suggesting that neither its carboxylate nor its carbonyl group is involved in calcium coordination. It thus seems likely that E650 might be involved in gating processes downstream of calcium binding while E698, E701, E730, and D734 may interact directly with calcium. This conclusion was reinforced by our study of the effects of E650 mutations on the sensitivity of mutant channels to other divalent cations such as strontium and cadmium (see below).\n\n### Mutations also alter channel sensitivity to other divalent cations\n\nCalcium binding sites often can coordinate other divalent cations that have similar chemical properties or ionic radii similar to those of calcium, such as strontium, barium, and cadmium. Characterizing the selectivity for other divalent cations can provide insight into the composition of a calcium binding site, as shown in previous studies of the cation binding sites involved in the activation of BK channels (Zeng et al., 2005; Zhou et al., 2012). To further test whether E650, E698, E701, E730, and D734 are involved in divalent cation coordination, we asked whether mutations of these residues also shift the EC50 of TMEM16A channel activation by strontium and cadmium ions. Strontium ions can robustly activate TMEM16A channels (Yuan et al., 2013; Ni et al., 2014) even though their ionic radius (1.13 \u00c5) is larger than that of calcium ions (0.99 \u00c5). Since both strontium and calcium are \u2018hard\u2019 metal ions that prefer coordination with oxygen-containing ligands such as carboxylates and are typically coordinated by six ligands (Rubin, 1963; Dudev and Lim, 2003), we would expect our various mutations to shift the EC50 of strontium and calcium activation in similar directions.\n\nIndeed, we found that the strontium-dependent activity of E698 and E701 mutants were similar to that of their calcium-dependent activity. Compared to the low micromolar strontium sensitivity (EC50: 7.7 \u00b1 0.3 \u03bcM) of wildtype channels (Figure 5A,B), alanine mutations at E698 and E701 increased the EC50 of channel activation by strontium to at least the hundred micromolar range (EC50: 750 \u00b1 70 \u03bcM and 7.6 \u00b1 1.0 mM, respectively). The strontium sensitivity of TMEM16A-CaCCs was drastically reduced by charge-reversing arginine mutations (EC50: >10 mM at both sites) and was partially preserved by charge-preserving aspartate or glutamate mutations (EC50: 70 \u00b1 20 \u03bcM and 90 \u00b1 10 \u03bcM, respectively) (Figure 5D\u2013H), confirming the importance of side chain charge in divalent cation coordination at these two sites.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02772/elife-02772-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative current trace of wildtype mTMEM16A in response to different intracellular strontium solutions recorded at +60 mV. Table indicates the concentration of strontium used. (B) Strontium dose\u2013response curve of wildtype mTMEM16A channels at +60 mV. (C\u2013G) Strontium dose\u2013response curves of the (C) E650, (D) E698, (E) E701, (F) E730, and (G) D734 mutant mTMEM16A channels at +60 mV. Smooth curves represent fits to the Hill equation. (H) Summary of apparent strontium sensitivity (EC50s) of mTMEM16A mutants. N.C.: no obvious CaCC current recorded. Upward arrows: estimated strontium EC50 >10 mM and cannot be reported with confidence. ***p<0.001.\n\nSimilarly, side chain charge appears to be important for strontium-dependent activation of D734 mutants. Although we were not able to accurately estimate the true EC50 of any D734 mutants because channel activity was too low to properly normalize current amplitude even at 10 mM strontium, it appears that charge-preserving glutamate mutants are more sensitive to strontium ions than alanine, cysteine, and arginine mutants, which were not activated by strontium at all (Figure 5H). The loss of channel activity in these constructs are not due to improper protein folding or export since these mutants can still be robustly activated by intracellular cadmium (Figure 6G,H). Consistent with our recordings of D734 mutant channels activated by calcium ions (Figure 4E), it appears that although glutamate is able to partially substitute for aspartate at this site, the side chain length as well as the charge of D734 is important for channel activation by hard divalent cations (Figure 5G\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02772/elife-02772-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative current trace of wildtype mTMEM16A in response to different intracellular cadmium solutions recorded at +60 mV. Table indicates the concentration of cadmium used. (B) Cadmium dose\u2013response curve of wildtype mTMEM16A channels at +60 mV. (C\u2013G) Cadmium dose\u2013response curves of the (C) E650, (D) E698, (E) E701, (F) E730, and (G) D734 mutant mTMEM16A channels at +60 mV. Smooth curves represent fits to the Hill equation. (H) Summary of apparent cadmium sensitivity (EC50s) of mTMEM16A mutants. Upward arrows: estimated cadmium EC50 >10 mM and cannot be reported with confidence. *p<0.05; **p<0.01; ***p<0.001.\n\n).\n\nSimilar to our observations of calcium-dependent channel activation (Figure 4D), TMEM16A\u2019s apparent EC50 for strontium activation seems to depend more on the physical conformation of the side chain than the presence of a carboxylate moiety at residue 730. Channels containing a charge-preserving aspartate mutation at E730 (EC50: 0.27 \u00b1 0.03 mM) are not much more sensitive to strontium than channels containing a charge-neutralizing alanine mutation (EC50: 0.44 \u00b1 0.10 mM) (Figure 5F). Channels containing the aspartate substitution (E730D) had the highest sensitivity for strontium out of the five mutations tested (Figure 5H) even though the same mutant channel had the lowest affinity for calcium (Figure 4F). It is conceivable that the smaller aspartate side chain at this position can accommodate the larger strontium ion more easily, supporting its direct interaction with these divalent cations.\n\nIn contrast to E698, E701, E730, and D734 that display features consistent with their direct interaction with calcium and strontium ions, the effects of the E650 mutations on channel activation by strontium (Figure 5C) further support the notion that E650 is not directly involved in metal ion binding, as indicated by their effects on calcium sensitivity (Figure 4A). Among all of the channels with mutations at residue 650 from which we could observe strontium-activated currents, the charge-reversing E650R mutant channel exhibited the highest sensitivity to strontium and was the only substitution at that site that yielded an EC50 for strontium below 10 mM. In contrast, arginine substitutions of E698 and E730 exhibited the lowest strontium sensitivity as compared to other mutations of these residues, and arginine substitutions of E701 and D734 raised EC50 for strontium beyond 10 mM (Figure 5H). This is further evidence that E650 probably plays an indirect role in channel activation by divalent cations and that its side chain is likely involved in an allosteric activation mechanism downstream of metal ion binding.\n\nIn addition to strontium, we also tested how mutations of these potential calcium binding residues affect the ability of cadmium to activate TMEM16A. Cadmium, with an ionic radius of 0.97 \u00c5 that is slightly smaller than that of strontium and calcium, is a divalent cation that is able to substitute for calcium and activate wildtype TMEM16A channels (Figure 6A,B). Unlike calcium and strontium ions, however, cadmium is a \u2018soft\u2019 ligand typically coordinated by only four residues (Dudev et al., 2006), and it prefers coordination by moieties containing nitrogen and sulfur atoms (Andersen, 1984; S\u00f3v\u00e1g\u00f3 and V\u00e1rnagy, 2013). Reasoning that the TMEM16A calcium-binding site is evolutionarily optimized for \u2018hard\u2019 ions like calcium, we hypothesized that the TMEM16A sensitivity for cadmium ions would be low and would not be greatly impacted by mutations that alter the charge of only one acidic residue in the calcium sensor.\n\nIndeed, cadmium (EC50: 940 \u00b1 80 \u03bcM) is much less effective than calcium (EC50: 1.0 \u00b1 0.1 \u03bcM) and strontium (EC50: 7.7 \u00b1 0.3 \u03bcM) at activating the wildtype TMEM16A channel (Figure 6A,B). TMEM16A channels were poorly activated by 100 \u03bcM cadmium even though it reaches its maximum open probability at 100 \u03bcM calcium (Figure 1C) and 100 \u03bcM strontium (Figure 5B). The charge-reversing E650R mutation caused a slight left-shift of the dose response curve of cadmium activation (Figure 6C), in contrast to the right-shift observed with the more conservative size-preserving E650Q mutation, further supporting the notion that this residue does not directly coordinate metal ions but rather works downstream of metal ion binding for channel activation. Although mutations of E698, E701, E730, and D734 shifted the EC50 of cadmium activation, the differences in EC50 between different mutants (Figure 6D\u2013G) were much smaller than those observed with calcium and strontium (Figure 4B\u2013E, Figure 5D\u2013G). It is worth noting that the EC50s for cadmium activation of TMEM16A channels containing charge-reversing or charge-neutralizing mutations of these acidic residues were all in the millimolar range, similar to those of wildtype channels and those with charge-preserving mutations (Figure 6H), suggesting that the binding of cadmium ions is not as sensitive as the binding of calcium or strontium ions to side chain perturbations of just one of these putative calcium binding residues. This may reflect the difference in coordination chemistry between the soft cadmium ion and the harder calcium and strontium ions.\n\nSince calcium, strontium, and cadmium activation of TMEM16A-CaCC are all affected by mutations of E698, E701, E730, and D734, it appears that all three divalent cations can interact with the same TMEM16A calcium sensor. Because the effects of each mutation are contingent on the divalent cation species used to activate the channel, it is likely that these sites directly alter the metal ion-binding pocket. In addition, because all of our mutations targeted residues on TMEM16A, our results lend further support to the notion that the TMEM16A polypeptide itself encodes the calcium sensor responsible for channel activation.\n\n### E698, E701, E730, and D734 are spatially clustered and exposed to the intracellular solution\n\nOur results implicating E698, E701, E730, and D734 as divalent cation coordinating residues in the TMEM16A calcium-sensing domain suggest that these acidic residues are exposed to the cytoplasm. However, due to the high hydrophobicity of the residues in the region between the putative transmembrane segments 5 and 7, current models of TMEM16A topology (Model A and Model B in Figure 7C) do not clearly predict their solvent-accessibility (Das et al., 2008; Yang et al., 2008b; Yu et al., 2012\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02772/elife-02772-fig7-v2.jpg)\n\n**Figure 7.:** (A) Representative traces of E701C/E730C, E701C, and E730C mTMEM16A mutants recorded under reducing (DTT) and oxidizing (H2O2) conditions. (B) Comparison of currents recorded in oxidizing conditions of mutants shown in A. When activated for long periods of time, TMEM16A-CaCCs exhibit a persistent decrease in activity, as previously described (Vocke et al., 2013). Current amplitudes were measured 60 s after the onset of perfusion and are normalized to currents recorded in reducing conditions. ***p<0.001. (C) Schematic illustrating the position of the putative calcium binding residues (E698, E701, E730 and D734) based on two previous membrane topological models (Model A and B) (Yang et al., 2008b; Yu et al., 2012) and our experimental data (Model C).\n\n). To confirm that these residues are accessible to internal calcium ions and to demonstrate the spatial proximity of these residues, we tested whether the activity of TMEM16A channels containing double cysteine mutations can be modulated by the redox potential of the internal solution.\n\nIn support of a TMEM16A topological model shown as Model C in Figure 7C where E698, E701, E730, and D734 are clustered together and facing the cytoplasm, the perfusion of internal solutions containing redox chemicals and 300 \u03bcM calcium altered the amplitude of chloride currents through channels containing an E701C/E730C double mutation but not those containing an E701C or an E730C single mutation. Channel activity in oxidizing conditions was significantly smaller than those recorded in reducing conditions, suggesting that formation of a disulfide bridge between E701C and E730C decreases TMEM16A-CaCC activation by calcium (Figure 7A,B). Thus, these residues appear to be spatially clustered at a cytoplasm-accessible site.\n\n## Discussion\n\nCalcium is the physiological stimulus that activates calcium-activated chloride channels (CaCCs). Studying how calcium activates the newly discovered TMEM16A-CaCC channel will help us understand its physiological functions. Thus far, the molecular nature of the TMEM16A calcium sensor has been under extensive debate. One theory asserts that a ubiquitous calcium sensing protein, calmodulin (CaM), is responsible for calcium activation of the CaCC (Tian et al., 2011; Vocke et al., 2013), resembling the mechanism of the small-conductance KCa (SK) channels. A competing theory asserts that calcium ions can directly bind to the channel itself without the involvement of CaM (Yu et al., 2012, 2014; Terashima et al., 2013), analogous to the mechanism of the large-conductance KCa (BK) channels. To settle this debate and to advance the molecular understanding of how calcium activates TMEM16A, we performed a comprehensive screen of evolutionarily conserved intracellular acidic residues in the TMEM16A protein and mapped its calcium sensor to a region between transmembrane segments 5 and 7. By manipulating the charge, size, and reactivity of these side chains, we characterized the mutant channels' sensitivity and selectivity for different divalent cations and showed that four critical acidic residues (E698, E701, E730, and D734) in this region are situated at a solvent-accessible site that likely interacts with calcium in the cytoplasm during channel activation.\n\nIn contrast to previous studies of TMEM16A calcium-dependent activation based on whole-cell recordings, we used the inside-out patch clamp to quantify the apparent calcium sensitivity (EC50) of the channel in this study. Monitoring channel opening in response to calcium applied to the inside-out patch and comparing channel EC50 values is a more direct measurement of calcium-dependent channel activation compared to the methods used in other studies (Jung et al., 2013; Terashima et al., 2013; Vocke et al., 2013). Although recent electrophysiological studies of TMEM16A-CaCCs using the whole-cell patch clamping configuration provided valuable insights toward understanding channel activation (Yu et al., 2012; Jung et al., 2013; Vocke et al., 2013), the difficulty in temporally and spatially controlling intracellular calcium concentrations inherent to the whole-cell patch clamp method renders the quantification of calcium sensitivity difficult. By using inside-out patch recordings to accurately assess channel sensitivity to divalent cations and exploiting differences in the coordination chemistry of hard and soft ligands to deduce the functional role of individual acidic residues, our study based on a mutagenesis screen of acidic residues provides a comprehensive survey of the potential high affinity calcium binding sites within the TMEM16A protein.\n\nOur study is in agreement with the conclusions of Terashima et al. (2013) and Yu et al. (2014) that calmodulin is not involved in the calcium-dependent activation of TMEM16A channels. Similar to these studies, we were unable to detect alterations of TMEM16A channel activity by manipulating calmodulin function. Moreover, mutations of four putative calcium binding residues E698, E701, E730, and D734 differentially shifted the EC50 of channel activation to different calcium concentrations depending on the size and charge of the amino acid side chains, suggesting that these residues are likely involved in binding calcium. Furthermore, the differences in the way these mutations affect channel sensitivity to the hard calcium and strontium ions and the softer cadmium ions suggest that these mutations directly impact channel\u2013ion interactions rather than acting via an allosteric mechanism. It remains possible that CaM may physically interact with TMEM16A channels under certain conditions as evidenced by previous biochemical studies (Jung et al., 2013; Vocke et al., 2013). Nevertheless, this interaction, if present, is not responsible for the calcium-dependent activation of TMEM16A-CaCC channels.\n\nIt seems likely that calcium directly binds to and activates TMEM16A-CaCC channels in a fashion reminiscent of the calcium activation mechanism of the large conductance, calcium-activated BK potassium channel, one of the most well-characterized calcium-activated ion channels. Both channels contain calcium binding sites that are composed of multiple intracellular acidic residues, and substitution mutagenesis studies of both channels reveal that side chain properties are critical to the binding of calcium and other metal ions such as strontium, barium, and cadmium. Removing carboxylate groups from side chains dramatically reduces or eliminates the ability of both channels to bind calcium, while preserving carboxylate groups with charge-conserving mutations tends to partially rescue calcium sensitivity.\n\nStructural and functional characterizations of BK channels over the past three decades have generated a wealth of information that provides valuable inspiration to the study of TMEM16A-CaCC channels. There are three distinct metal binding sites in the pore-forming subunit of BK channels (Schreiber and Salkoff, 1997; Shi et al., 2002; Xia et al., 2002). Two high affinity binding sites (micromolar) correspond to the calcium bowl in the RCK2 domain (Schreiber and Salkoff, 1997) and the acidic residue D367 in the RCK1 domain (Shi et al., 2002; Xia et al., 2002; Zhang et al., 2010), and a low affinity site (millimolar) that can nonspecifically bind various divalent cations corresponds to residues from the membrane spanning domain and the cytosolic RCK1 domain (Shi et al., 2002; Xia et al., 2002; Yang et al., 2008a). These three metal ion binding sites act relatively independently to activate BK channels as mutating any one of them has a minimal impact on the other two sites. Extensive mutagenesis along with characterization of divalent cation selectivity has elucidated the properties of the different metal ion binding sites (Zeng et al., 2005; Zhou et al., 2012). Micromolar calcium and strontium ions can activate the channel through both the calcium bowl and the RCK1 high affinity sites but not through the low affinity site. Micromolar cadmium only activates the channel via the RCK1 high affinity site; even 300 \u03bcM cadmium cannot act on the calcium bowl site to activate the channel. In contrast, 200 \u03bcM barium has no effect on the RCK1 site (Zhou et al., 2012). Instead, barium ions activate the channel through the calcium bowl site with five times lower affinity than calcium. On the other hand, millimolar concentrations of all these divalent cations can activate the channel through the low affinity metal ion binding site (Zeng et al., 2005).\n\nFor TMEM16A-CaCC, the apparent calcium (EC50: 1.0 \u00b1 0.1 \u03bcM) and strontium (EC50: 7.7 \u00b1 0.3 \u03bcM) sensitivities are similar to that of the high affinity cation binding sites in BK channels. However, the TMEM16A channel is much less sensitive to barium (EC50: 330 \u00b1 30 \u03bcM) and cadmium (EC50: 940 \u00b1 80 \u03bcM) than BK channels, which responds to 10 \u03bcM barium and cadmium via the calcium bowl and the RCK1 high affinity site, respectively. This difference suggests that the high affinity calcium binding site(s) in the TMEM16A channel might be less effective in binding barium and cadmium ions due to their less optimal coordination chemistry. Alternatively, barium and/or cadmium might activate the TMEM16A channel via an unknown low affinity cation binding site, which remains latent under physiological conditions. This scenario seems plausible as none of our high affinity site mutations abolishes cadmium activation (Figure 6H). The identity of this putative low affinity, nonselective cation binding site and its potential involvement in TMEM16A channel activation require further study.\n\nBy following up on our comprehensive alanine mutagenesis with multiple point mutations of the putative calcium binding residues and testing their effects on channel activation by different divalent cations, we were able to take advantage of the well-studied chemical properties of divalent cation coordination to analyze these putative calcium binding sites in detail. After these candidate acidic residues were positively identified, conservative mutations preserving either the negative charge (glutamate to aspartate or vice versa) or the approximate side chain volume (glutamate to glutamine, or aspartate to asparagine) were expected to have relatively minor effects on calcium coordination in actual binding sites, considering that either the electrostatic or steric side chain properties would be preserved under those conditions. Conversely, introduction of positively charged arginine side chain would have been expected to produce much more drastic effects. Indeed, this pattern was observed for four of the five acidic residues identified in the mutagenesis screen. The calcium sensitivity of E698, E701 and D734 was drastically reduced by arginine substitutions, in contrast to the milder effects caused by conservative substitutions. Mutations of E730 followed the same pattern consistent with a divalent ion binding site, though with generally less drastic effects. The E650R mutant, on the other hand, retained the highest sensitivity to calcium of all substitutions at that site, whereas conservative substitutions greatly impacted calcium sensitivity. These results suggest that E650 is unlikely to interact directly with a calcium ion, at least not in the same manner as those of the other four, and we have thus excluded it from our proposed model of the primary calcium interaction site (Figure 7C). Given the possibility that E650 may be involved in the transduction of conformational changes associated with calcium binding to trigger the channel's gating machinery, it will be important to further scrutinize its functional role in future studies.\n\nOur analyses using different divalent cations to activate various TMEM16A mutants are also consistent with the notion that E698, E701, E730 and D734, but not E650, are involved in direct interactions with strontium. Strontium is a divalent ion with chemical properties similar to calcium, as it has two electrons in its outer valence shell and is considered a \u2018hard\u2019 ligand (Rubin, 1963; Dudev and Lim, 2003). Although strontium has a slightly larger ionic radius than calcium, it has been shown previously to robustly activate TMEM16A channels (Yuan et al., 2013). The effects of side chain substitutions at those four sites on calcium and strontium sensitivity showed similar trends. In contrast, E650 mutants were generally insensitive to strontium activation, and the mutant displaying the highest sensitivity was again E650R, in keeping with our findings regarding calcium activation.\n\nIn addition to strontium, we also employed cadmium as an alternative TMEM16A activator. Cadmium is among the transition metals and acts as a \u2018soft\u2019 ligand, but has an ionic radius nearly identical to that of calcium (S\u00f3v\u00e1g\u00f3 and V\u00e1rnagy, 2013). Here, we found that while the wildtype channel was far less sensitive to cadmium ions than calcium ions, the apparent cadmium sensitivities of the mutant channels were insensitive to the side chain manipulations and remain in the submillimolar to millimolar range. In our view, there are at least two plausible explanations for this phenomenon. Firstly, as cadmium ions can be adequately coordinated by fewer negatively charged groups, alterations of just one of the interacting acidic residues may have less drastic effects on cadmium coordination. Alternately, as mentioned previously, it is possible that a second, lower affinity and/or less calcium-selective binding site may exist in the channel that can more readily bind cadmium following mutation in the higher affinity site identified in this study. At present, our results do not allow us to distinguish between these two possibilities, particularly as structural and functional studies of TMEM16A gating are still in their infancy. Nevertheless, the identification of residues forming a high affinity binding site, and our finding that cadmium can activate TMEM16A mutants rendered insensitive to calcium, provide key tools for the future study of channel gating processes downstream of TMEM16A\u2019s high affinity binding of divalent cations.\n\nUnlike the high affinity sites of BK channels that are located at the large cytosolic C-terminus (Salkoff et al., 2006), the high affinity calcium binding residues (E698, E701, E730, and D734) of the TMEM16A channels are between the putative transmembrane (TM) segments 5 and 7 (Figure 7C). This is consistent with recent findings (Yu et al., 2012; Scudieri et al., 2013) that the third intracellular loop (between TM6\u2032 and TM7, Figure 7C, Model B) is important for the calcium sensitivity of the TMEM16A and TMEM16B CaCC channels. Previous studies (Yang et al., 2008b; Yu et al., 2012) have proposed two different models of membrane topology for TMEM16A. The earlier model (Model A in Figure 7C) includes a long extracellular or reentrant loop between TM5 and TM6\u2033 (Yang et al., 2008b), while a subsequent model (Model B in Figure 7C) proposes that the peptide between TM5 and TM6\u2033 in Model A actually includes one transmembrane segment (TM6\u2032) (Yu et al., 2012). Our current study provides new insight into the membrane topology of this region by showing that residues 701 and 730 are accessible to the intracellular solvent and are in close proximity such that a disulfide bridge can form between E701C and E730C to impact calcium activation of the channel. This functional study implies that the hydrophobic region spanning 28 residues (including the putative TM6\u2033) between E701 and E730 likely forms a short reentrant loop (Model C in Figure 7C), bringing together these four acidic residues at both ends of this loop to coordinate calcium ions. Further structural information is needed to validate this model.\n\nIn summary, our comprehensive survey of evolutionarily conserved acidic residues has identified several critical residues in the TMEM16A-CaCC that are responsible for its activation by calcium. Our study provides further evidence that the TMEM16A-CaCC channel directly interacts with intracellular calcium without involving CaM. Interestingly, these putative calcium binding acidic residues are highly conserved among proteins in the TMEM16 family, some of which have been shown to be important in cellular processes ranging from mucus secretion (Huang et al., 2012b) to blood coagulation (Suzuki et al., 2010; Yang et al., 2012) in mammals and host defense in Drosophila (Wong et al., 2013). The identification of these evolutionarily conserved acidic residues that bind calcium in the TMEM16A-CaCC channel will contribute towards a general understanding of the molecular mechanisms of calcium-activated TMEM16 channels as well as their cellular functions in response to calcium signaling in various cell types and organisms.\n\n## Materials and methods\n\n### Molecular biology and cell culture\n\ncDNAs (Open Biosystems cDNA clones number 30547439, Uniprot identification number Q8BHY3-2) derived from mouse TMEM16A (mTMEM16A) were subcloned into the pEGFP-N1 vector (Clontech, Mountain View, CA) via standard molecular biology techniques. Our clone corresponds to the \u2018a\u2019 splice form identified in Caputo et al. (2008) and lacks alternative exons b, c, and d. Site-directed mutations were generated by PCR with Pfu Turbo DNA polymerase following the Quikchange protocol from Agilent. All mutants were verified by sequencing.\n\nHEK 293 cells were cultured in Dulbecco's Modified Eagle Medium (DMEM) supplemented with 4.5 g/l D-glucose, 110 mg/l sodium pyruvate, 584 mg/l L-glutamine, and 10% fetal bovine serum (FBS) and were transfected with Lipofectamine 2000 (Invitrogen, Carlsbad, CA), FuGENE 6 (Promega, Madison, MI), or X-tremeGENE (Roche, Switzerland) and cultured for 1\u20132 days before recording.\n\nFor some experiments testing the effects of calmodulin on channel function, endogenous CaCC currents were recorded from Xenopus oocytes without exogenously introducing TMEM16A. Female Xenopus laevis were purchased from Nasco (Fort Atkinson, MI). The procedures for harvesting oocytes and housing animals were approved by the UCSF Institutional Animal Care and Use Committee. The loss-of function calmodulin mutants were kindly provided by Dr John Adelman (Xia et al., 1998). Defolliculated oocytes were injected with 5\u2013100 ng cRNA and maintained at 17\u00b0C in ND96 (96 mM NaCl, 10 mM HEPES, 2 mM KCl, 1 mM MgCl2, pH 7.4) solution for 2\u20137 days before recording. The monoclonal anti-CaM antibody (CaM85) and the CaM antagonist W7 (N-(6-Aminohexyl)-5-chloro-1-naphthalenesulfonamide hydrochloride) were purchased from Invitrogen and Santa Cruz Biotech (Santa Cruz, CA), respectively. For chronic treatments of W7, Xenopus oocytes were incubated in ND96 supplemented with 50 \u03bcM W7 for 2\u20136 days before patch recording.\n\n### Electrophysiology\n\n24 hr following transfection, cells were transferred to our standard recording bath solution (described below) for inside-out patch clamp recording. Macroscopic currents were recorded from inside-out patches formed with borosilicate pipettes of 1\u20135 M\u03a9 resistance. Data were acquired using Axopatch 200-B and Axopatch 700-B patch-clamp amplifiers and pClamp10 software (Molecular Devices, Sunnyvale, CA). All experiments were performed at room temperature (22\u201324\u00b0C).\n\nUnless otherwise stated, all solutions used in this study were based on isotonic 140 mM NaCl. Both the basal extracellular solution and the zero calcium intracellular solution contained 140 mM NaCl, 5 mM EGTA, and 10 mM HEPES. Pipette (extracellular) solutions were supplemented with 1 mM MgCl2. Internal solutions with various calcium concentrations (<100 \u03bcM) were prepared with the pH-metric method (Tsien and Pozzan, 1989). Briefly, a \u2018high calcium\u2019 solution (140 mM NaCl, 5 mM Ca-EGTA, 10 mM HEPES) and a zero calcium intracellular solution were mixed in different ratios to give various calcium concentrations. The basal internal solution (without calcium buffer) contained 140 mM NaCl, and 10 mM HEPES. For solutions with [Ca2+]i \u2265 100 \u03bcM, CaCl2 was directly added to the basal internal solutions (without EGTA) and the free [Ca2+]i was measured with a Ca2+-sensitive electrode (Thermo Scientific, Waltham, MA). The pH of all solutions was titrated with N- methyl-D-glucamine (NMDG) or NaOH to 7.2.\n\nTo test channel activation by Sr2+ or Cd2+, inside-out patches were exposed to a series of Sr2+ or Cd2+-containing solutions prepared by serial dilution of a base solution containing 140 mM NaCl, 10 mM HEPES, and 10 mM SrCl2 or CdCl2 for a range of divalent concentrations from 10 \u03bcM to 10 mM. While most constructs required greater than 10 \u03bcM of either divalent to be activated, wildtype TMEM16A required solutions with lower [Sr2+]. As Sr2+ concentration cannot be accurately diluted below 10 \u03bcM, Sr2+-EDTA solutions were prepared based on the CaBuf divalent buffering prediction software created by Dr G Droogmans (Department of Physiology, KU Leuven, Leuven, Belgium). For some constructs, 10 mM cation was insufficient to fully activate the channel, and the EC50 could not be calculated with confidence and is not reported.\n\nFor experiments manipulating the redox potential of the internal solution, 10 mM H2O2 or 10 mM DTT (dithiothreitol) from Sigma (St. Louis, MO) was freshly added (\u22641 hr prior to use) to internal solutions containing either 0 \u03bcM or 300 \u03bcM free calcium.\n\n### Data analysis\n\nData analysis was performed with Clampfit 10 (Molecular Devices) and Origin 7.5 (OriginLab, Northampton, MA). Concentration dose\u2013response curves were fit to an equation of the form:\n\n$$\nI/I_{MAX}=\\frac{Amp}{1+(\\frac{K_{D}}{[C_{a}]})^{H}}\n$$\n\nwhere I denotes current, IMAX is the maximum current elicited by the highest concentration of divalent cation, Amp is the maximum value of I/IMAX at a given voltage, KD is the apparent dissociation constant, and H is the Hill coefficient. EC50 values were log-transformed for one-way ANOVA and were compared to wildtype values using Tukey's post-hoc test for significance. Values were considered significantly different if p<0.05. For some mutant channels whose cation sensitivity was greatly reduced, the current did not reach a plateau even as the cation concentration was raised to 10 mM. In these cases, the EC50 values derived from the dose response curves may underestimate the \u2018true\u2019 sensitivity of the mutant channels to these metal ions.\n",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "2d57559f-4d42-45d1-bcba-811a20ed8de2",
+      "submission_id": "ba693b24-56d8-4457-8aaa-87badd63f66e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02772.011](https://doi.org/10.7554/eLife.02772.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA comprehensive search for calcium binding sites critical for TMEM16A calcium-activated chloride channel activity\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom, Richard Aldrich, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis is an interesting and clearly written paper that provides new information regarding potential Ca2+ binding sites that regulate TMEM16 calcium-dependent Cl- channels. The approach is systematic, focusing solely on acidic residues that are conserved among a variety of TMEM16 isoforms. Some of the new results are somewhat confirmatory. First, results in Figure 1 extend previous work suggesting that CaM does not mediate Ca2+-dependent activation. Second, the present results confirm the role of E698 and E701 as potential Ca2+-sensing residues. However, particularly in regard to the importance of E698 and E701 (along with other residues), the present results are more extensive and rigorous, since the use of excised inside out patches allows definition of the Ca2+ dependence of activation in both WT and mutated constructs.\n\nThe authors argue that four of five glutamate/aspartate residues could directly contact divalent cations because of different mutation effects on the channel activation by \u2018hard\u2019 and \u2018soft\u2019 divalent cations. Finally, the channel with E701C/E730C double mutations is sensitive to oxidation/reduction (redox) while the channels with single mutation (E701C or E730C) are not, arguing that the two introduced cysteine residues may form a disulfide bond and that E701 and E730 are thus solvent accessible and close to each other.\n\nA limitation of the paper is that it seems to be largely descriptive, with little attempt to place the properties of this presumed \u2018binding site\u2019 within the context of other known Ca2+ binding sites, including \u2018non-traditional\u2019 sites. For some other presumed sites, some information regarding selectivity among different divalent cations is available, but this is not discussed. This topic and others that may require additional elaboration are mentioned below.\n\nThe results of alanine scanning revealed five acidic residues whose mutations significantly alter the EC50 of calcium activation. The authors exclude E650 as a potential residue in the divalent cation binding pocket, while suggesting E730 and E734 to be in direct contact with the activating divalent cations. The patterns of the mutation effects in various E730 and E734 mutants, like that of the E650 mutations, are not straightforward for making such a conclusion. A comparison of the strontium and cadmium activations in E650 mutants with those of E730 and E734 mutants may help strengthen the conclusion that E730 and E734 are in the cation-binding pocket while E650 is not.\n\nThe modification of the E701C/E730C double mutant by oxidation/reduction requires further characterization. Based on Figure 7A, it appears that the oxidation and reduction effects are instantaneous, or at least as fast as the current activation by 300 micromolar calcium. If the redox modulation, as suggested by the authors involves a disulfide bond, such fast oxidation and reduction rates seem unusual. Further evidence to strengthen that this redox modulation indeed involves a disulfide bond but is not simply an effect due to oxidation/reduction of both cysteines would be helpful. This clarification is important for the argument that E701 and E730 are spatially clustered.\n\nIn constructing dose-response curves, the divalent cation-activated currents are normalized to the current induced by the same divalent cation at 10 mM, which in many cases is not a saturating concentration, as judged from the current induced by the highest two concentrations. It is therefore not certain how accurate the reported EC50 values are (particularly in the experiments when cadmium is used as the activating ligand). This issue is important because the authors emphasize the different mutation effects on the EC50 values of the \u2019hard\u2019 and \u2018soft\u2019 metal cations.\n\nAlthough the authors provide concentration-response curves for Ca2+ (and other divalents) for all the examined constructs, it seems surprising that no comments were made about the apparent Hill coefficients for these curves. Although Hill coefficients are really only an empirical descriptor that relates to actual molecular events in only complicated ways, they can help guide thinking. In the present case, the concentration-responses exhibit features that seem rather surprising. First, some mutations, particularly those causing partial shifts in affinity, also change the apparent slope (i.e., Hill coefficient). Second, the mutations that cause the greatest loss of affinity seem to have apparent slopes more similar to WT. Third, except for the D734R construct, none of the mutations seem to completely abolish the activation effect of Ca2+ (or Sr2+ and Cd2+).\n\nSome further explanation is required. The change in slope seems difficult to explain in terms of a simple change in affinity of a single site on each subunit. One explanation might be that there are really multiple distinct divalent sensitive sites, and only when the higher-affinity site is weakened, does the second site become revealed. Of course, that would require that the net effect of both sites working together is not additive, in the WT construct. Might the similarity of the concentration-response curves for all of the most severe mutations (except E730?) suggest that some low affinity site unrelated to any of the sites examined is still present? For other potential Ca2+ binding site residues in other channels (MthK, BK) or even in CaM, is it the case that when key residues are mutated, Ca2+ can still be bound, but only at weaker affinity? It would seem important that these issues be raised and discussed and the results here be contrasted to some of these other cases.\n\nAnother omission: no attempt was made to place the \u2018selectivity\u2019 of the presumed site within the context of other known Ca2+ binding sites. It looks like the apparent affinities for activation by Cd2+ and Ba2+ are similar, but no comment is made on this. Furthermore, the Cd2+ and Ba2+ affinities appear not too much different from the sensitivity that persists to Ca2+ and Sr2+ after the strongest effective mutations at each of the important residues. Might this also suggest a very low affinity, non-selective divalent effect, perhaps not unusual in channels?\n",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1915b1f-4b1a-44a8-97de-7f2bb1c941dc",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C1",
+      "claim": "TMEM16A forms calcium-activated chloride channels (CaCCs) that regulate physiological processes such as the secretions of airway epithelia and exocrine glands, the contraction of smooth muscles, and the excitability of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM16A forms calcium-activated chloride channels (CaCCs) that regulate physiological processes such as the secretions of airway epithelia and exocrine glands, the contraction of smooth muscles, and the excitability of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge about TMEM16A function as stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "ebb54e20-77a1-431c-a439-6b3219dd63fb",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C2",
+      "claim": "Four acidic amino acids are putative calcium-binding residues in TMEM16A.",
+      "claim_type": "EXPLICIT",
+      "source": "By aligning distantly related calcium-activated ion channels in the TMEM16 family and conducting systematic mutagenesis of all conserved acidic residues thought to be exposed to the cytoplasm, we identify four acidic amino acids as putative calcium-binding residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from systematic mutagenesis and alignment studies described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "0049d250-b6d3-40fe-b161-63e215d4d819",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C3",
+      "claim": "Alterations of the charge, polarity, and size of amino acid side chains at the four identified sites alter the ability of different divalent cations to activate TMEM16A.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations of the charge, polarity, and size of amino acid side chains at these sites alter the ability of different divalent cations to activate the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "48918970-0761-4f25-a022-04db56adeaaf",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C4",
+      "claim": "TMEM16A mutant channels containing double cysteine substitutions at the identified residues are sensitive to the redox potential of the internal solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, TMEM16A mutant channels containing double cysteine substitutions at these residues are sensitive to the redox potential of the internal solution, providing evidence for their physical proximity and solvent accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from redox manipulation experiments described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "27db24c3-8ccc-4463-b8c7-e5ea90026e31",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C5",
+      "claim": "The sensitivity of TMEM16A mutant channels to redox potential provides evidence for the physical proximity and solvent accessibility of the identified residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, TMEM16A mutant channels containing double cysteine substitutions at these residues are sensitive to the redox potential of the internal solution, providing evidence for their physical proximity and solvent accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the redox sensitivity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "04cedbf7-59e8-4bc7-9420-db517a9a7249",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C6",
+      "claim": "TMEM16A and TMEM16B are calcium-activated chloride channels (CaCCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane proteins of the TMEM16 family include a number of calcium-dependent ion channels, such as the TMEM16A (Caputo et al., 2008; Schroeder et al., 2008; Yang et al., 2008b) and TMEM16B (Schroeder et al., 2008; St\u00f6hr et al., 2009) calcium-activated chloride channels (CaCCs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "43d757f7-8980-4658-9b8b-f13d0a820f4e",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C7",
+      "claim": "TMEM16F is a small conductance calcium-activated nonselective cation (SCAN) channel.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM16F (Yang et al., 2012) small conductance calcium-activated nonselective cation (SCAN) channel",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "f221ad13-eeb9-41cd-b2a3-246a11894bcc",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C8",
+      "claim": "TMEM16 proteins have been implicated in the control of fluid secretion in epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins have been implicated in a wide range of physiological activities (Hartzell et al., 2009; Kunzelmann et al., 2011; Berg et al., 2012; Scudieri et al., 2012; Huang et al., 2012a) including the control of fluid secretion in epithelia (Romanenko et al., 2010; Huang et al., 2012b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8345d1e7-89e7-409e-8567-5e1bc706eaa5",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C9",
+      "claim": "TMEM16 proteins have been implicated in the regulation of membrane excitability in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "the regulation of membrane excitability in neurons (Billig et al., 2011; Huang et al., 2012c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8f9197ce-f2de-4acf-a12b-7b20f572baa0",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C10",
+      "claim": "TMEM16 proteins have been implicated in the scrambling of membrane lipids in platelets.",
+      "claim_type": "EXPLICIT",
+      "source": "the scrambling of membrane lipids in platelets (Suzuki et al., 2010; Yang et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "0b62a7d2-eb86-4f81-939f-9c59f01dc25f",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C11",
+      "claim": "TMEM16 proteins have been implicated in the metastasis of certain cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "the metastasis of certain cancers (Katoh, 2003; Duvvuri et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "1d9f6f97-528c-4f7a-826e-0a1defc99d77",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C12",
+      "claim": "The mechanism by which calcium activates TMEM16 proteins is still extensively debated.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their important physiological roles, the mechanism by which calcium activates these proteins is still extensively debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "3a94154b-0944-40a1-8913-960dce74aa97",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C13",
+      "claim": "One proposed model for TMEM16A calcium sensitivity resembles that of small-conductance KCa (SK) channels, where calcium ions interact with calmodulin.",
+      "claim_type": "EXPLICIT",
+      "source": "In one model resembling that of the small-conductance KCa (SK) channels (Xia et al., 1998; Schumacher et al., 2001), calcium ions interact with calmodulin (CaM), and the physical association of calmodulin with TMEM16A is required to transduce the free energy of ion\u2013protein interaction into movements of the channel gate (Tian et al., 2011; Vocke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies proposing this model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "26cd453e-71a8-4e3a-9551-f9ec834d5fc6",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C14",
+      "claim": "A second proposed model for TMEM16A calcium sensitivity resembles that of large-conductance KCa (BK) channels, where calcium binds directly to the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In a second model similar to that of the large-conductance KCa (BK) channels (Schreiber and Salkoff, 1997; Shi et al., 2002; Xia et al., 2002; Wu et al., 2010; Yuan et al., 2010), calcium binds directly to TMEM16A, and this interaction drives channel activation (Yu et al., 2012, 2014; Terashima et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies proposing this model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "d67f3b4b-66ce-441f-b72e-59fe607affbe",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C15",
+      "claim": "Wildtype mouse TMEM16A-CaCC exhibits calcium-dependent activation with an EC50 of approximately 1.0 \u00b1 0.1 \u03bcM at +60 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to wildtype (WT) channels (EC50: 1.0 \u00b1 0.1 \u03bcM)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from inside-out patch clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "d8dcb917-1fd3-4c95-97ac-5125e81fb0e6",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C16",
+      "claim": "Co-expression of mutant CaM molecules without functional calcium-binding sites did not reduce the apparent calcium sensitivity of endogenous TMEM16A-CaCC in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that co-expression of mutant CaM molecules without functional calcium-binding sites in the N-terminal lobe (CaM12), C-terminal lobe (CaM34), or both lobes (CaM1234) did not reduce the apparent calcium sensitivity of the endogenous TMEM16A-CaCC in Xenopus oocytes (Figure 1D), in agreement with a recent study (Yu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "9bf39f78-80f9-43af-93af-6d27cf8bb6f9",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C17",
+      "claim": "Anti-CaM antibody applied to the cytoplasmic side of inside-out patches had no effect on TMEM16A-CaCC currents.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to its potent inhibitory effect on CaM-dependent TRPV1 tachyphylaxis (Lishko et al., 2007), the CaM-antibody had no effect on TMEM16A-CaCC currents (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "a0425235-836f-411f-ac29-4d1ef1ad83ca",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C18",
+      "claim": "Neither acute nor sustained applications of W7, a CaM antagonist, disrupted the calcium sensitivity of TMEM16A channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neither acute nor sustained applications of this drug disrupted the calcium sensitivity of TMEM16A channels (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "04d82d2b-9b4f-412c-857c-00b370117991",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C19",
+      "claim": "Barium, a divalent cation that cannot bind to CaM, can potently activate TMEM16A channels in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, consistent with previous reports (Xiao et al., 2011; Yuan et al., 2013; Ni et al., 2014), we found that barium, a divalent cation that cannot bind to CaM (Chao et al., 1984), can still potently activate TMEM16A channels in a dose-dependent manner (Figure 1\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C,D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "95c33f60-c035-4460-8aa1-3175aea0c34b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C20",
+      "claim": "Mutating residues V310, Y314, and L319 reported to be necessary for CaM-TMEM16A interactions did not reduce the apparent calcium sensitivity of mouse TMEM16A channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, mutating three residues (V310, Y314, and L319) that were recently reported to be necessary for CaM-TMEM16A interactions (Vocke et al., 2013) did not reduce the apparent calcium sensitivity of the mouse TMEM16A channel expressed in HEK 293 cells (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "59d4173d-708b-4d1c-b8f0-53d6855df14d",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C21",
+      "claim": "CaM is not responsible for the calcium sensitivity of TMEM16A-CaCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we were unable to alter TMEM16A-CaCC activity by inhibiting CaM function, could activate TMEM16A-CaCCs with barium, and could not shift channel EC50 by mutating the putative CaM-TMEM16A binding interface, we conclude that CaM is not responsible for the calcium sensitivity of TMEM16A-CaCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "124e45ba-a0ab-4b15-abdc-f493d1631148",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C22",
+      "claim": "E698Q and E701Q mutations greatly reduced the apparent calcium affinity of TMEM16A-CaCC.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that alanine substitutions at E698 and E701 greatly reduced the apparent calcium affinity of TMEM16A-CaCC (Figure 3), similar to the effects of glutamine substitutions at these residues (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "648afbc9-db2a-4490-8414-7d6d8ae94ac7",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C23",
+      "claim": "The alanine mutagenesis screen identified three additional acidic residues (E650, E730, and D734) that were critical for the calcium sensitivity of TMEM16A channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our screen identified three additional acidic residues (E650, E730, and D734) that were critical for the calcium sensitivity of TMEM16A channels (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "55d14fc6-1e7d-4c46-b607-f4362df27267",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C24",
+      "claim": "Alanine mutations of E650, E730, and D734 resulted in at least a 10-fold reduction of apparent calcium sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to E698A and E701A, alanine mutations of these three acidic residues resulted in at least a 10-fold reduction of apparent calcium sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the mutagenesis screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "79a43e9a-60dc-4f38-9a72-78bab4396be4",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C25",
+      "claim": "The five residues identified by the alanine mutagenesis screen are confined to the region between the fifth and seventh putative transmembrane segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these five residues identified by our screen are confined to the region between the fifth and seventh putative transmembrane segments (Figure 2C) (Yu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 2C and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "c21831f9-d973-4974-8f8d-662c2add2906",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C26",
+      "claim": "Cysteine substitutions at E650, E698, E701, E730, and D734 reduced the apparent calcium sensitivity of TMEM16A channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of cysteine substitutions at these sites replaces the glutamate or aspartate side chain with a small, hydrophobic methyl sulfhydryl group. Understandably, these manipulations had effects comparable to those of alanine substitutions (Figure 3C) and reduced the apparent calcium sensitivity of the channel (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3C and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "21b633e2-b0b2-46db-93ae-7b0f7a89f0b5",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C27",
+      "claim": "E698R and E701R mutations increased EC50 by several thousand-fold to 5.0 \u00b1 0.3 mM and 3.3 \u00b1 0.5 mM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to wildtype (WT) channels (EC50: 1.0 \u00b1 0.1 \u03bcM), the EC50s of E698R and E701R were increased by several thousand-fold to 5.0 \u00b1 0.3 mM and 3.3 \u00b1 0.5 mM, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "84ef69ff-4dbc-49da-bcd3-734bb9d85ba9",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C28",
+      "claim": "E730R mutation increased EC50 to 0.6 \u00b1 0.3 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "while the effects of E730R were milder, increasing EC50 to 0.6 \u00b1 0.3 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "5042c802-bb8b-40fd-a98b-3465b7896a81",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C29",
+      "claim": "D734R mutation elevated EC50 to such a great extent that 10 mM intracellular calcium was unable to activate the mutant channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The most substantial changes were caused by the D734R mutation, which elevated EC50 to such a great extent that 10 mM intracellular calcium, the highest concentration of calcium used in this study, was unable to activate the mutant channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "67ef7ade-7dcc-4cd4-914e-ab2b7d3cca8f",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C30",
+      "claim": "The lack of CaCC current in D734R mutants was not due to defects in protein expression or folding because cadmium ions could still robustly activate the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of CaCC current in D734R mutants was not due to defects in protein expression or folding because cadmium ions could still robustly activate the channel (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from cadmium activation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8b2f9eb8-a8ec-4925-8090-9b5283e1fd32",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C31",
+      "claim": "E650R mutation only produced a small reduction in calcium sensitivity (EC50: 6.5 \u00b1 0.8 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the arginine substitution in E650R mutants only produced a small reduction in calcium sensitivity (EC50: 6.5 \u00b1 0.8 \u00b5M), suggesting that the side chain at position 650 may not be directly involved in calcium coordination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "a9d5df89-253c-400f-9b54-bf74f92b0820",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C32",
+      "claim": "The side chain at position 650 may not be directly involved in calcium coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the arginine substitution in E650R mutants only produced a small reduction in calcium sensitivity (EC50: 6.5 \u00b1 0.8 \u00b5M), suggesting that the side chain at position 650 may not be directly involved in calcium coordination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "a3765171-9c26-4900-897c-4c0172a040fb",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C33",
+      "claim": "E698D and E701D mutations resulted in only a 3 to 10-fold increase in channel EC50 (3.3 \u00b1 0.9 \u00b5M and 10.4 \u00b1 3.4 \u00b5M, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Charge-preserving mutations in E698D and E701D resulted in only a 3 to 10-fold increase in channel EC50 (3.3 \u00b1 0.9 \u00b5M and 10.4 \u00b1 3.4 \u00b5M, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "6a8d2250-a2ac-4b8f-8548-974d18f71650",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C34",
+      "claim": "Side chain length at E698 and E701 is not critical for calcium binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Charge-preserving mutations in E698D and E701D resulted in only a 3 to 10-fold increase in channel EC50 (3.3 \u00b1 0.9 \u00b5M and 10.4 \u00b1 3.4 \u00b5M, respectively), suggesting that side chain length at these two positions is not critical for calcium binding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8d5739bb-a3bc-49bd-9ca2-1ff2f0afac1b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C35",
+      "claim": "D734E mutation shifted the EC50 by about 800-fold to 0.8 \u00b1 0.3 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "while mutations in D734E shifted the EC50 by about 800-fold to 0.8 \u00b1 0.3 mM, suggesting that calcium binding may be sensitive to the precise spatial arrangement of the carboxylate group at this position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "e0c3949a-917d-4115-a119-16d2c294be2a",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C36",
+      "claim": "Calcium binding may be sensitive to the precise spatial arrangement of the carboxylate group at position D734.",
+      "claim_type": "EXPLICIT",
+      "source": "while mutations in D734E shifted the EC50 by about 800-fold to 0.8 \u00b1 0.3 mM, suggesting that calcium binding may be sensitive to the precise spatial arrangement of the carboxylate group at this position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "0d8f95fe-4573-461f-a1e4-8ecadfdb366c",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C37",
+      "claim": "E698Q mutation resulted in a relatively small decrease in calcium sensitivity (EC50: 0.03 \u00b1 0.01 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "E698Q mutations resulted in a relatively small decrease in calcium sensitivity (EC50: 0.03 \u00b1 0.01 mM)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "db5dc92b-4b86-4ac4-a1ce-afee0c959f20",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C38",
+      "claim": "E701Q and D734N mutations had larger effects on calcium sensitivity (EC50: 2.9 \u00b1 0.3 mM and 2.3 \u00b1 0.3 mM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "while E701Q and D734N had larger effects (EC50: 2.9 \u00b1 0.3 mM and 2.3 \u00b1 0.3 mM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "f607dfb5-5722-42be-976d-64bfb990a73e",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C39",
+      "claim": "Side chain carboxylate groups at position E698, E701 and D734 might be directly involved in binding calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "This data, combined with a dramatic loss of calcium sensitivity in mutants containing arginine, alanine or cysteine mutations at these three sites, supports the idea that side chain carboxylate groups at position E698, E701 and D734 might be directly involved in binding calcium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from multiple mutagenesis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "3ac9cc30-e100-4649-a88a-a7e3add84ff3",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C40",
+      "claim": "Calcium ions may interact with E730, although not necessarily with its side-chain carboxylate moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, mutagenesis of E730 suggests that calcium ions may interact with this residue, although not necessarily with its side-chain carboxylate moiety (Figure 4D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from mutagenesis data shown in Figure 4D,F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "3d4eeb2a-1d6a-4edb-85e0-5a6f7acae9b1",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C41",
+      "claim": "E730D mutation increased EC50 to 0.8 \u00b1 0.2 mM while E730Q mutation only increased EC50 to 0.09 \u00b1 0.08 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, charge-preserving aspartate mutations increased EC50 to 0.8 \u00b1 0.2 mM even though charge-neutralizing glutamine mutations only increased EC50 to 0.09 \u00b1 0.08 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "b85c40f9-121f-42d5-a7a4-9518de342ec7",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C42",
+      "claim": "TMEM16A-calcium interactions require the proper conformation of residues at position E730, possibly to orient the carbonyl oxygen of the peptide backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "Since channels bearing mutations that preserve the shape but not the charge of this acidic residue are more sensitive to calcium, it appears that TMEM16A-calcium interactions require the proper conformation of residues at this position, possibly to orient the carbonyl oxygen of the peptide backbone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "4bee1ec1-36fa-4b69-96cc-8e7be6366780",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C43",
+      "claim": "E650D mutation increased EC50 to 0.8 \u00b1 0.2 mM and E650Q mutation increased EC50 to 4.3 \u00b1 0.9 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the mild effects of a charge-reversing arginine substitution (EC50: 6.5 \u00b1 0.8 \u03bcM), the charge-preserving aspartate and charge-neutralizing glutamine substitutions increased EC50 to 0.8 \u00b1 0.2 mM and 4.3 \u00b1 0.9 mM, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "3bae5eea-7b93-4a8e-af59-a95e16d54e6b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C44",
+      "claim": "Neither the carboxylate nor the carbonyl group of E650 is involved in calcium coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that neither its carboxylate nor its carbonyl group is involved in calcium coordination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "10b50d57-5af7-4131-862b-bfa5b23f51d6",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C45",
+      "claim": "E650 might be involved in gating processes downstream of calcium binding while E698, E701, E730, and D734 may interact directly with calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "It thus seems likely that E650 might be involved in gating processes downstream of calcium binding while E698, E701, E730, and D734 may interact directly with calcium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "ec3fc4dd-cf4d-4f77-80c8-f0f27e7ee076",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C46",
+      "claim": "Strontium ions can robustly activate TMEM16A channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Strontium ions can robustly activate TMEM16A channels (Yuan et al., 2013; Ni et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "2f87c6ac-da55-463e-81ce-32c54b47c6c4",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C47",
+      "claim": "Wildtype TMEM16A channels have a strontium sensitivity with EC50 of 7.7 \u00b1 0.3 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the low micromolar strontium sensitivity (EC50: 7.7 \u00b1 0.3 \u03bcM) of wildtype channels (Figure 5A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "4fdd1957-b074-48fd-903a-35bf7b8c7374",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C48",
+      "claim": "E698A and E701A mutations increased the EC50 of channel activation by strontium to at least the hundred micromolar range (EC50: 750 \u00b1 70 \u03bcM and 7.6 \u00b1 1.0 mM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "alanine mutations at E698 and E701 increased the EC50 of channel activation by strontium to at least the hundred micromolar range (EC50: 750 \u00b1 70 \u03bcM and 7.6 \u00b1 1.0 mM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from strontium activation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "e45f52ea-3ba4-4140-ac0b-93642d697397",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C49",
+      "claim": "The strontium sensitivity of TMEM16A-CaCCs was drastically reduced by charge-reversing arginine mutations at E698 and E701 (EC50: >10 mM at both sites).",
+      "claim_type": "EXPLICIT",
+      "source": "The strontium sensitivity of TMEM16A-CaCCs was drastically reduced by charge-reversing arginine mutations (EC50: >10 mM at both sites)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from strontium activation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "260a92b8-74c2-42d7-9532-fd39e8efed02",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C50",
+      "claim": "Strontium sensitivity was partially preserved by charge-preserving aspartate or glutamate mutations at E698 and E701 (EC50: 70 \u00b1 20 \u03bcM and 90 \u00b1 10 \u03bcM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "and was partially preserved by charge-preserving aspartate or glutamate mutations (EC50: 70 \u00b1 20 \u03bcM and 90 \u00b1 10 \u03bcM, respectively) (Figure 5D\u2013H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "6239ed2d-d86b-4fe8-b3b7-eaf9ac794b5b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C51",
+      "claim": "Side chain charge is important for divalent cation coordination at E698 and E701.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming the importance of side chain charge in divalent cation coordination at these two sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from strontium activation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "5bd0267a-7a44-4623-a09a-a0ae64414bba",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C52",
+      "claim": "Charge-preserving glutamate mutants of D734 are more sensitive to strontium ions than alanine, cysteine, and arginine mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we were not able to accurately estimate the true EC50 of any D734 mutants because channel activity was too low to properly normalize current amplitude even at 10 mM strontium, it appears that charge-preserving glutamate mutants are more sensitive to strontium ions than alanine, cysteine, and arginine mutants, which were not activated by strontium at all (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "5f6dbfae-1a0b-42f4-aceb-d38a21cb6427",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C53",
+      "claim": "D734 alanine, cysteine, and arginine mutants were not activated by strontium at all.",
+      "claim_type": "EXPLICIT",
+      "source": "it appears that charge-preserving glutamate mutants are more sensitive to strontium ions than alanine, cysteine, and arginine mutants, which were not activated by strontium at all (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "9de5cef6-381b-4e0d-bd5f-1e1582f67477",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C55",
+      "claim": "TMEM16A's apparent EC50 for strontium activation depends more on the physical conformation of the side chain than the presence of a carboxylate moiety at residue 730.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our observations of calcium-dependent channel activation (Figure 4D), TMEM16A's apparent EC50 for strontium activation seems to depend more on the physical conformation of the side chain than the presence of a carboxylate moiety at residue 730.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from strontium activation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "53fb7357-d66b-4358-be74-d327a87b46a5",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C56",
+      "claim": "E730D channels (EC50: 0.27 \u00b1 0.03 mM) are not much more sensitive to strontium than E730A channels (EC50: 0.44 \u00b1 0.10 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Channels containing a charge-preserving aspartate mutation at E730 (EC50: 0.27 \u00b1 0.03 mM) are not much more sensitive to strontium than channels containing a charge-neutralizing alanine mutation (EC50: 0.44 \u00b1 0.10 mM) (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "22e41e2d-e0db-4071-93a8-6c75c6dd6447",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C57",
+      "claim": "E730D mutant channel had the highest sensitivity for strontium out of the five mutations tested at that position.",
+      "claim_type": "EXPLICIT",
+      "source": "Channels containing the aspartate substitution (E730D) had the highest sensitivity for strontium out of the five mutations tested (Figure 5H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "6769d8dd-c953-40aa-aef4-af4536a0298d",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C58",
+      "claim": "E730D mutant channel had the lowest affinity for calcium among E730 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "even though the same mutant channel had the lowest affinity for calcium (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "ddff3815-f27d-412f-8285-9d1bf9fe2919",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C59",
+      "claim": "The smaller aspartate side chain at position E730 can accommodate the larger strontium ion more easily, supporting its direct interaction with these divalent cations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that the smaller aspartate side chain at this position can accommodate the larger strontium ion more easily, supporting its direct interaction with these divalent cations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the structural basis for the observed data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "c0c7d180-05f9-431b-9695-1412ff42b7b3",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C60",
+      "claim": "E650 is not directly involved in metal ion binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to E698, E701, E730, and D734 that display features consistent with their direct interaction with calcium and strontium ions, the effects of the E650 mutations on channel activation by strontium (Figure 5C) further support the notion that E650 is not directly involved in metal ion binding, as indicated by their effects on calcium sensitivity (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from strontium and calcium activation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "992ddeaa-6e0f-4793-972d-582e721f5115",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C61",
+      "claim": "E650R mutant channel exhibited the highest sensitivity to strontium among E650 mutants and was the only substitution at that site that yielded an EC50 for strontium below 10 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all of the channels with mutations at residue 650 from which we could observe strontium-activated currents, the charge-reversing E650R mutant channel exhibited the highest sensitivity to strontium and was the only substitution at that site that yielded an EC50 for strontium below 10 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from strontium activation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "69929726-6b7d-4286-9c06-382b68fdc33b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C62",
+      "claim": "Arginine substitutions of E698 and E730 exhibited the lowest strontium sensitivity as compared to other mutations of these residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, arginine substitutions of E698 and E730 exhibited the lowest strontium sensitivity as compared to other mutations of these residues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from strontium activation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "c5002341-a59f-45c9-a7c2-55b0c079e844",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C63",
+      "claim": "Arginine substitutions of E701 and D734 raised EC50 for strontium beyond 10 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "and arginine substitutions of E701 and D734 raised EC50 for strontium beyond 10 mM (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "fe45922d-ad23-430d-bc96-81de82584a92",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C64",
+      "claim": "E650 probably plays an indirect role in channel activation by divalent cations and its side chain is likely involved in an allosteric activation mechanism downstream of metal ion binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This is further evidence that E650 probably plays an indirect role in channel activation by divalent cations and that its side chain is likely involved in an allosteric activation mechanism downstream of metal ion binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from strontium activation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "d827a2b9-9474-42e9-8106-e2d46cba1b3a",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C65",
+      "claim": "Cadmium is a divalent cation that is able to substitute for calcium and activate wildtype TMEM16A channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Cadmium, with an ionic radius of 0.97 \u00c5 that is slightly smaller than that of strontium and calcium, is a divalent cation that is able to substitute for calcium and activate wildtype TMEM16A channels (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "f2655e89-af6d-4a76-a2fe-151a542319f4",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C66",
+      "claim": "Cadmium is a 'soft' ligand typically coordinated by only four residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike calcium and strontium ions, however, cadmium is a 'soft' ligand typically coordinated by only four residues (Dudev et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to established chemical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "67a19828-353a-4103-9ede-74dbdf2b44c1",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C67",
+      "claim": "Cadmium prefers coordination by moieties containing nitrogen and sulfur atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "and it prefers coordination by moieties containing nitrogen and sulfur atoms (Andersen, 1984; S\u00f3v\u00e1g\u00f3 and V\u00e1rnagy, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established chemical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "1894336c-c6c9-4f96-911c-1783ade1ed80",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C68",
+      "claim": "The TMEM16A calcium-binding site is evolutionarily optimized for 'hard' ions like calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Reasoning that the TMEM16A calcium-binding site is evolutionarily optimized for 'hard' ions like calcium, we hypothesized that the TMEM16A sensitivity for cadmium ions would be low and would not be greatly impacted by mutations that alter the charge of only one acidic residue in the calcium sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about evolutionary optimization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "9a6b229a-c815-4577-bc47-4e288a1e7bdf",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C69",
+      "claim": "Cadmium (EC50: 940 \u00b1 80 \u03bcM) is much less effective than calcium (EC50: 1.0 \u00b1 0.1 \u03bcM) and strontium (EC50: 7.7 \u00b1 0.3 \u03bcM) at activating the wildtype TMEM16A channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cadmium (EC50: 940 \u00b1 80 \u03bcM) is much less effective than calcium (EC50: 1.0 \u00b1 0.1 \u03bcM) and strontium (EC50: 7.7 \u00b1 0.3 \u03bcM) at activating the wildtype TMEM16A channel (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "32aa925e-5ecb-48ea-90c7-e4d50485bb29",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C70",
+      "claim": "TMEM16A channels were poorly activated by 100 \u03bcM cadmium even though it reaches its maximum open probability at 100 \u03bcM calcium and 100 \u03bcM strontium.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM16A channels were poorly activated by 100 \u03bcM cadmium even though it reaches its maximum open probability at 100 \u03bcM calcium (Figure 1C) and 100 \u03bcM strontium (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1C, 5B, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "c4df413d-a89d-42a9-8168-28e00fc270f3",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C71",
+      "claim": "E650R mutation caused a slight left-shift of the dose response curve of cadmium activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The charge-reversing E650R mutation caused a slight left-shift of the dose response curve of cadmium activation (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "c0bbf1d9-3a36-4352-8070-d56411d86fb1",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C72",
+      "claim": "Mutations of E698, E701, E730, and D734 shifted the EC50 of cadmium activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mutations of E698, E701, E730, and D734 shifted the EC50 of cadmium activation, the differences in EC50 between different mutants (Figure 6D\u2013G) were much smaller than those observed with calcium and strontium (Figure 4B\u2013E, Figure 5D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "784e4637-a2dd-410e-a3f6-72a394e2615c",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C73",
+      "claim": "The EC50s for cadmium activation of TMEM16A channels containing charge-reversing or charge-neutralizing mutations of E698, E701, E730, and D734 were all in the millimolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the EC50s for cadmium activation of TMEM16A channels containing charge-reversing or charge-neutralizing mutations of these acidic residues were all in the millimolar range, similar to those of wildtype channels and those with charge-preserving mutations (Figure 6H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "873bab7c-701f-456e-b600-d29abdd46f78",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C74",
+      "claim": "The binding of cadmium ions is not as sensitive as the binding of calcium or strontium ions to side chain perturbations of just one of the putative calcium binding residues.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the binding of cadmium ions is not as sensitive as the binding of calcium or strontium ions to side chain perturbations of just one of these putative calcium binding residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from cadmium activation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8c012d01-c45a-4de8-8f07-ae2a0bbb394a",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C75",
+      "claim": "The difference in sensitivity to mutations reflects the difference in coordination chemistry between the soft cadmium ion and the harder calcium and strontium ions.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect the difference in coordination chemistry between the soft cadmium ion and the harder calcium and strontium ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from chemical knowledge and experimental data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "2b433113-9f5c-4332-9cb7-11ffd7e2b2a9",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C76",
+      "claim": "Calcium, strontium, and cadmium activation of TMEM16A-CaCC are all affected by mutations of E698, E701, E730, and D734.",
+      "claim_type": "EXPLICIT",
+      "source": "Since calcium, strontium, and cadmium activation of TMEM16A-CaCC are all affected by mutations of E698, E701, E730, and D734, it appears that all three divalent cations can interact with the same TMEM16A calcium sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data with multiple divalent cations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "235ca64f-eb6b-4055-880c-b7189d2ae264",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C77",
+      "claim": "All three divalent cations (calcium, strontium, and cadmium) can interact with the same TMEM16A calcium sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "Since calcium, strontium, and cadmium activation of TMEM16A-CaCC are all affected by mutations of E698, E701, E730, and D734, it appears that all three divalent cations can interact with the same TMEM16A calcium sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data with multiple divalent cations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "2f50e76b-164a-4b1d-965a-4982faab2823",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C80",
+      "claim": "The TMEM16A polypeptide itself encodes the calcium sensor responsible for channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, because all of our mutations targeted residues on TMEM16A, our results lend further support to the notion that the TMEM16A polypeptide itself encodes the calcium sensor responsible for channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "e21a5146-4f15-4352-9147-c61110c4346b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C81",
+      "claim": "E698, E701, E730, and D734 are exposed to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results implicating E698, E701, E730, and D734 as divalent cation coordinating residues in the TMEM16A calcium-sensing domain suggest that these acidic residues are exposed to the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "629dec25-78b5-479a-988b-d5bf17f870ce",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C83",
+      "claim": "The activity of TMEM16A channels containing an E701C/E730C double mutation can be modulated by the redox potential of the internal solution.",
+      "claim_type": "EXPLICIT",
+      "source": "the perfusion of internal solutions containing redox chemicals and 300 \u03bcM calcium altered the amplitude of chloride currents through channels containing an E701C/E730C double mutation but not those containing an E701C or an E730C single mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from redox manipulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "988a0607-6fa2-4382-b46a-3e6b6eb0baa7",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C84",
+      "claim": "Channel activity of E701C/E730C double mutant in oxidizing conditions was significantly smaller than those recorded in reducing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Channel activity in oxidizing conditions was significantly smaller than those recorded in reducing conditions, suggesting that formation of a disulfide bridge between E701C and E730C decreases TMEM16A-CaCC activation by calcium (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8551b41d-1c8f-4313-ad1e-bd98ef48b53a",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C85",
+      "claim": "Formation of a disulfide bridge between E701C and E730C decreases TMEM16A-CaCC activation by calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Channel activity in oxidizing conditions was significantly smaller than those recorded in reducing conditions, suggesting that formation of a disulfide bridge between E701C and E730C decreases TMEM16A-CaCC activation by calcium (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from redox manipulation data shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8c916fc5-9eef-4ac6-a23b-69c0cad9cac1",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C86",
+      "claim": "E701 and E730 are spatially clustered at a cytoplasm-accessible site.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these residues appear to be spatially clustered at a cytoplasm-accessible site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the disulfide bridge formation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "9a76b566-ad21-4631-906e-858a0a595f55",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C87",
+      "claim": "Calmodulin is not responsible for calcium activation of TMEM16A-CaCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study is in agreement with the conclusions of Terashima et al. (2013) and Yu et al. (2014) that calmodulin is not involved in the calcium-dependent activation of TMEM16A channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "f6de0267-c35d-4049-aac9-81c6af25d9d2",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C88",
+      "claim": "Mutations of four putative calcium binding residues E698, E701, E730, and D734 differentially shifted the EC50 of channel activation to different calcium concentrations depending on the size and charge of the amino acid side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mutations of four putative calcium binding residues E698, E701, E730, and D734 differentially shifted the EC50 of channel activation to different calcium concentrations depending on the size and charge of the amino acid side chains, suggesting that these residues are likely involved in binding calcium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "dd334505-c537-4d1e-a65c-a43d6e30f77b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C89",
+      "claim": "E698, E701, E730, and D734 are likely involved in binding calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mutations of four putative calcium binding residues E698, E701, E730, and D734 differentially shifted the EC50 of channel activation to different calcium concentrations depending on the size and charge of the amino acid side chains, suggesting that these residues are likely involved in binding calcium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "42572bf6-f343-4cbe-96a3-e767643c7931",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C90",
+      "claim": "The differences in the way mutations affect channel sensitivity to hard calcium and strontium ions versus softer cadmium ions suggest that these mutations directly impact channel\u2013ion interactions rather than acting via an allosteric mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the differences in the way these mutations affect channel sensitivity to the hard calcium and strontium ions and the softer cadmium ions suggest that these mutations directly impact channel\u2013ion interactions rather than acting via an allosteric mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data with multiple divalent cations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "aa2de96c-f0b2-435e-9d9e-912103ff48fe",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C91",
+      "claim": "CaM may physically interact with TMEM16A channels under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains possible that CaM may physically interact with TMEM16A channels under certain conditions as evidenced by previous biochemical studies (Jung et al., 2013; Vocke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation and citations to previous biochemical studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "0a3eb814-38b1-43ce-aa66-83b6656ba9d0",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C92",
+      "claim": "The CaM-TMEM16A interaction, if present, is not responsible for the calcium-dependent activation of TMEM16A-CaCC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this interaction, if present, is not responsible for the calcium-dependent activation of TMEM16A-CaCC channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "ab25439b-5966-454a-bef1-18512ab0c8e6",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C93",
+      "claim": "Calcium directly binds to and activates TMEM16A-CaCC channels in a fashion reminiscent of the calcium activation mechanism of the BK potassium channel.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems likely that calcium directly binds to and activates TMEM16A-CaCC channels in a fashion reminiscent of the calcium activation mechanism of the large conductance, calcium-activated BK potassium channel, one of the most well-characterized calcium-activated ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from comparison with BK channels.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "f3d07d13-8e56-4f31-b41f-64384fcc14e4",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C94",
+      "claim": "Both TMEM16A and BK channels contain calcium binding sites that are composed of multiple intracellular acidic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Both channels contain calcium binding sites that are composed of multiple intracellular acidic residues, and substitution mutagenesis studies of both channels reveal that side chain properties are critical to the binding of calcium and other metal ions such as strontium, barium, and cadmium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of BK channels and experimental data from TMEM16A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "4ed20bcf-6121-48cc-9f63-65a556f13d68",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C95",
+      "claim": "Removing carboxylate groups from side chains dramatically reduces or eliminates the ability of both TMEM16A and BK channels to bind calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing carboxylate groups from side chains dramatically reduces or eliminates the ability of both channels to bind calcium, while preserving carboxylate groups with charge-conserving mutations tends to partially rescue calcium sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data from TMEM16A and knowledge of BK channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "b9f2b86a-69d6-489f-af87-76ce74acdb31",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C96",
+      "claim": "BK channels have three distinct metal binding sites in the pore-forming subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three distinct metal binding sites in the pore-forming subunit of BK channels (Schreiber and Salkoff, 1997; Shi et al., 2002; Xia et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies of BK channels.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "4b1babe1-d460-4119-883f-878084ba9a4f",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C97",
+      "claim": "The apparent calcium and strontium sensitivities of TMEM16A-CaCC are similar to that of the high affinity cation binding sites in BK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "For TMEM16A-CaCC, the apparent calcium (EC50: 1.0 \u00b1 0.1 \u03bcM) and strontium (EC50: 7.7 \u00b1 0.3 \u03bcM) sensitivities are similar to that of the high affinity cation binding sites in BK channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of experimental data with knowledge of BK channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "a949e50b-4f27-4d2d-8797-4c0a6c506951",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C98",
+      "claim": "The TMEM16A channel is much less sensitive to barium (EC50: 330 \u00b1 30 \u03bcM) and cadmium (EC50: 940 \u00b1 80 \u03bcM) than BK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the TMEM16A channel is much less sensitive to barium (EC50: 330 \u00b1 30 \u03bcM) and cadmium (EC50: 940 \u00b1 80 \u03bcM) than BK channels, which responds to 10 \u03bcM barium and cadmium via the calcium bowl and the RCK1 high affinity site, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of experimental data with knowledge of BK channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "3d338e2e-12ca-401c-b4f2-8075236799e4",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C99",
+      "claim": "The high affinity calcium binding site(s) in the TMEM16A channel might be less effective in binding barium and cadmium ions due to their less optimal coordination chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference suggests that the high affinity calcium binding site(s) in the TMEM16A channel might be less effective in binding barium and cadmium ions due to their less optimal coordination chemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the structural basis for the observed differences.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "1d3583d6-523a-449d-a253-7a06b2f2605a",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C100",
+      "claim": "Barium and/or cadmium might activate the TMEM16A channel via an unknown low affinity cation binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, barium and/or cadmium might activate the TMEM16A channel via an unknown low affinity cation binding site, which remains latent under physiological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about alternative mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "b9889171-1f36-44de-a490-23a36ee5627b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C101",
+      "claim": "None of the high affinity site mutations abolishes cadmium activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This scenario seems plausible as none of our high affinity site mutations abolishes cadmium activation (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8a9c4199-f0b6-4530-a856-f5ef7bf3a91d",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C102",
+      "claim": "The high affinity calcium binding residues of TMEM16A channels are between the putative transmembrane segments 5 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the high affinity sites of BK channels that are located at the large cytosolic C-terminus (Salkoff et al., 2006), the high affinity calcium binding residues (E698, E701, E730, and D734) of the TMEM16A channels are between the putative transmembrane (TM) segments 5 and 7 (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental data and comparison with BK channels.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "592e7bc4-03cd-493a-8b01-3d38ee5d3ff7",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C103",
+      "claim": "The third intracellular loop (between TM6\u2032 and TM7) is important for the calcium sensitivity of the TMEM16A and TMEM16B CaCC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with recent findings (Yu et al., 2012; Scudieri et al., 2013) that the third intracellular loop (between TM6\u2032 and TM7, Figure 7C, Model B) is important for the calcium sensitivity of the TMEM16A and TMEM16B CaCC channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "9027fc92-6669-42e6-a1d7-98f0e3887d1e",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C104",
+      "claim": "Residues 701 and 730 are accessible to the intracellular solvent and are in close proximity such that a disulfide bridge can form between E701C and E730C.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current study provides new insight into the membrane topology of this region by showing that residues 701 and 730 are accessible to the intracellular solvent and are in close proximity such that a disulfide bridge can form between E701C and E730C to impact calcium activation of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from disulfide bridge formation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "3dbc1ab6-02a1-4f16-b750-2e9452c1ff96",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C105",
+      "claim": "The hydrophobic region spanning 28 residues (including the putative TM6\u2033) between E701 and E730 likely forms a short reentrant loop.",
+      "claim_type": "EXPLICIT",
+      "source": "This functional study implies that the hydrophobic region spanning 28 residues (including the putative TM6\u2033) between E701 and E730 likely forms a short reentrant loop (Model C in Figure 7C), bringing together these four acidic residues at both ends of this loop to coordinate calcium ions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the disulfide bridge formation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8250c749-eedf-4b5c-ae4c-6d7910a4fd0a",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C106",
+      "claim": "The putative calcium binding acidic residues are highly conserved among proteins in the TMEM16 family.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these putative calcium binding acidic residues are highly conserved among proteins in the TMEM16 family, some of which have been shown to be important in cellular processes ranging from mucus secretion (Huang et al., 2012b) to blood coagulation (Suzuki et al., 2010; Yang et al., 2012) in mammals and host defense in Drosophila (Wong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence alignment data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "f0bfa72c-5a5e-4fae-bef7-e283954d92e7",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "claim_id": "C107",
+      "claim": "The identification of evolutionarily conserved acidic residues that bind calcium in TMEM16A-CaCC will contribute towards a general understanding of the molecular mechanisms of calcium-activated TMEM16 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of these evolutionarily conserved acidic residues that bind calcium in the TMEM16A-CaCC channel will contribute towards a general understanding of the molecular mechanisms of calcium-activated TMEM16 channels as well as their cellular functions in response to calcium signaling in various cell types and organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0996048a-bd18-4d93-b6b6-8b2577bc0687",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Calmodulin (CaM) is not required for calcium-dependent activation of TMEM16A channels. Multiple experimental approaches including co-expression of mutant CaM, anti-CaM antibody application, CaM antagonist treatment, barium activation, and mutation of putative CaM-binding residues all failed to alter TMEM16A calcium sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 provide converging experimental evidence from multiple independent approaches (mutant CaM, antibodies, pharmacological inhibition, barium activation, mutagenesis) that consistently show CaM is not required for TMEM16A activation. The experimental design is rigorous with appropriate controls (e.g., TRPV1 as positive control for CaM antibody). The conclusion (C21, C87, C92) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "8e6965ca-1e80-4ef6-9a41-00f44a3dd04d",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A comprehensive alanine mutagenesis screen of 38 conserved acidic residues identified five critical residues (E650, E698, E701, E730, D734) located between transmembrane segments 5 and 7 that are important for TMEM16A calcium sensitivity. Alanine mutations at these sites resulted in at least 10-fold reductions in apparent calcium affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 describe a systematic mutagenesis screen with clear quantitative criteria (\u226510-fold EC50 shift) for identifying critical residues. The approach is comprehensive (38 residues tested) and the results are presented with appropriate experimental data (Figures 2-3). The spatial clustering of identified residues (C25) adds biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "fdfc1914-4af1-466c-94cc-feb032132ce5",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Systematic substitution mutagenesis reveals that E698, E701, E730, and D734 likely directly coordinate calcium ions, while E650 plays an indirect role in channel gating. Charge-reversing mutations (to arginine) dramatically reduced calcium sensitivity (EC50 shifts of 1000-fold or greater), while charge-preserving mutations had milder effects. The differential effects of mutations preserving charge versus size suggest direct involvement of carboxylate groups in calcium binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C45 present a comprehensive mutagenesis analysis with multiple substitutions (Ala, Cys, Arg, Asp/Glu, Gln/Asn) at each position. The pattern of results is internally consistent: charge-reversing mutations have the most dramatic effects, charge-preserving mutations partially rescue function, and the effects differ systematically between residues. The inference that E698, E701, E730, D734 directly bind calcium while E650 acts indirectly (C39, C45, C89) is well-supported by the differential mutation effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutations at E698, E701, E730, and D734 alter TMEM16A sensitivity to strontium ions in patterns similar to calcium, confirming their role in divalent cation coordination. Charge-reversing arginine mutations drastically reduced strontium sensitivity (EC50 >10 mM), while charge-preserving mutations partially preserved function. E650 mutations showed opposite patterns, supporting its indirect role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C64 demonstrate that the same residues critical for calcium binding also affect strontium sensitivity in predictable ways based on coordination chemistry. The parallel effects with calcium (both are 'hard' ions) strengthen the conclusion of direct ion binding. The anomalous behavior of E650 (C60-C64) further supports its distinct, indirect role. The experimental data are comprehensive with dose-response curves for multiple mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cadmium, a 'soft' divalent cation, activates TMEM16A with much lower affinity than calcium or strontium (EC50 ~940 \u03bcM vs ~1 \u03bcM for calcium). Mutations at E698, E701, E730, and D734 had smaller effects on cadmium sensitivity compared to calcium/strontium, consistent with differences in coordination chemistry between soft and hard metal ions. All three cations appear to interact with the same binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C77 use cadmium as a chemical probe to test the nature of the binding site. The differential sensitivity to mutations (smaller effects for cadmium than calcium/strontium) is consistent with known coordination chemistry differences between soft and hard ions (C66-C67, C75). The conclusion that all three cations bind the same site (C76-C77) is supported by the observation that the same residues affect all three, though to different degrees. However, C68 is speculative and C99-C100 acknowledge alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "09c7b265-6ed8-4d81-a956-5982a67792a5",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Double cysteine mutants E701C/E730C are sensitive to redox potential, with oxidizing conditions reducing channel activity. This demonstrates that E701 and E730 are in close physical proximity and accessible to the intracellular solution, supporting their location at a cytoplasm-facing calcium binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 provide direct experimental evidence for spatial proximity through disulfide bridge formation. The redox sensitivity is specific to the double mutant (not single mutants), and the effect is reversible, supporting the interpretation. This biochemical approach complements the functional mutagenesis data and provides independent evidence for the proposed topology (C104).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "af524100-10c8-4d0e-b331-64e77f68ee1b",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The TMEM16A polypeptide itself encodes the calcium sensor, with E698, E701, E730, and D734 exposed to the cytoplasm and directly coordinating calcium ions. The differential effects of mutations on hard versus soft divalent cations indicate direct channel-ion interactions rather than allosteric mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 and C90 represent key mechanistic conclusions supported by the totality of the mutagenesis data. The argument that mutations directly affect ion binding (rather than acting allosterically) is strengthened by the differential effects on ions with different coordination chemistry (C90). The conclusion that the calcium sensor is intrinsic to TMEM16A (C80) is supported by the fact that all mutations target TMEM16A residues and the exclusion of CaM involvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "cc3dd421-5672-4d0a-aaf0-53cafc456bbd",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The high affinity calcium binding residues (E698, E701, E730, D734) are located between transmembrane segments 5 and 7. The functional data suggest that the hydrophobic region between E701 and E730 forms a short reentrant loop (Model C), bringing these residues together to coordinate calcium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 propose a topological model based on the functional data, particularly the disulfide bridge formation between E701C and E730C. The reentrant loop model (C105) is a reasonable inference from the proximity data, though it remains a model requiring structural validation. The location between TM5-7 (C102) is consistent with prior studies (C103) and the sequence alignment data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TMEM16A calcium activation mechanism resembles that of BK channels, with calcium directly binding to acidic residues in the channel protein. Both channels show similar patterns where removing carboxylate groups eliminates calcium binding while charge-preserving mutations partially rescue function. However, TMEM16A differs from BK in its lower sensitivity to barium and cadmium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C98 draw parallels between TMEM16A and the well-characterized BK channel. The comparison is appropriate given similar mutagenesis patterns (C94-C95) and provides useful context. However, the differences in barium/cadmium sensitivity (C98) are noted, and C99-C100 acknowledge that alternative explanations exist. The comparison strengthens the direct binding model but does not prove identical mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "e5c1b8e5-b008-4132-9e7f-0b1a2ccdc620",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The identified calcium-binding residues are highly conserved across the TMEM16 family, suggesting these findings may apply broadly to understanding calcium-activated TMEM16 channels and their diverse physiological functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 note the evolutionary conservation of the identified residues and speculate about broader implications. The conservation is supported by the sequence alignment (Figure 2C), and the speculation about general applicability (C107) is reasonable given the conservation. However, this remains a forward-looking claim requiring validation in other TMEM16 family members.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "4d47d27c-5ced-41e1-a01f-896cdba33915",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TMEM16A forms calcium-activated chloride channels with important physiological roles. The mechanism of calcium activation has been debated, with two competing models: one involving calmodulin (like SK channels) and another involving direct calcium binding (like BK channels).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C6-C14 provide background context from established literature. These are well-supported by citations and represent accepted knowledge in the field. They appropriately frame the scientific question addressed by the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    },
+    {
+      "id": "49672975-d211-4f5c-b6c6-802e155ddbff",
+      "content_id": "e76210bc-0119-4387-8742-27a8937e88fa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Wildtype mouse TMEM16A exhibits calcium-dependent activation with an EC50 of approximately 1.0 \u00b1 0.1 \u03bcM at +60 mV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 reports a key baseline measurement used throughout the study for comparison. The value is derived from inside-out patch clamp recordings with appropriate methodology. This serves as the reference point for evaluating mutant effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:59:03.254127Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d8dcb917-1fd3-4c95-97ac-5125e81fb0e6",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "9bf39f78-80f9-43af-93af-6d27cf8bb6f9",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "a0425235-836f-411f-ac29-4d1ef1ad83ca",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "04d82d2b-9b4f-412c-857c-00b370117991",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "95c33f60-c035-4460-8aa1-3175aea0c34b",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "59d4173d-708b-4d1c-b8f0-53d6855df14d",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "9a76b566-ad21-4631-906e-858a0a595f55",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "aa2de96c-f0b2-435e-9d9e-912103ff48fe",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "0a3eb814-38b1-43ce-aa66-83b6656ba9d0",
+      "result_id": "0996048a-bd18-4d93-b6b6-8b2577bc0687"
+    },
+    {
+      "claim_id": "ebb54e20-77a1-431c-a439-6b3219dd63fb",
+      "result_id": "8e6965ca-1e80-4ef6-9a41-00f44a3dd04d"
+    },
+    {
+      "claim_id": "124e45ba-a0ab-4b15-abdc-f493d1631148",
+      "result_id": "8e6965ca-1e80-4ef6-9a41-00f44a3dd04d"
+    },
+    {
+      "claim_id": "648afbc9-db2a-4490-8414-7d6d8ae94ac7",
+      "result_id": "8e6965ca-1e80-4ef6-9a41-00f44a3dd04d"
+    },
+    {
+      "claim_id": "55d14fc6-1e7d-4c46-b607-f4362df27267",
+      "result_id": "8e6965ca-1e80-4ef6-9a41-00f44a3dd04d"
+    },
+    {
+      "claim_id": "79a43e9a-60dc-4f38-9a72-78bab4396be4",
+      "result_id": "8e6965ca-1e80-4ef6-9a41-00f44a3dd04d"
+    },
+    {
+      "claim_id": "c21831f9-d973-4974-8f8d-662c2add2906",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "21b633e2-b0b2-46db-93ae-7b0f7a89f0b5",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "84ef69ff-4dbc-49da-bcd3-734bb9d85ba9",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "5042c802-bb8b-40fd-a98b-3465b7896a81",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "67ef7ade-7dcc-4cd4-914e-ab2b7d3cca8f",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "8b2f9eb8-a8ec-4925-8090-9b5283e1fd32",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "a9d5df89-253c-400f-9b54-bf74f92b0820",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "a3765171-9c26-4900-897c-4c0172a040fb",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "6a8d2250-a2ac-4b8f-8548-974d18f71650",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "8d5739bb-a3bc-49bd-9ca2-1ff2f0afac1b",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "e0c3949a-917d-4115-a119-16d2c294be2a",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "0d8f95fe-4573-461f-a1e4-8ecadfdb366c",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "db5dc92b-4b86-4ac4-a1ce-afee0c959f20",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "f607dfb5-5722-42be-976d-64bfb990a73e",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "3ac9cc30-e100-4649-a88a-a7e3add84ff3",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "3d4eeb2a-1d6a-4edb-85e0-5a6f7acae9b1",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "b85c40f9-121f-42d5-a7a4-9518de342ec7",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "4bee1ec1-36fa-4b69-96cc-8e7be6366780",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "3bae5eea-7b93-4a8e-af59-a95e16d54e6b",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "10b50d57-5af7-4131-862b-bfa5b23f51d6",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "f6de0267-c35d-4049-aac9-81c6af25d9d2",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "dd334505-c537-4d1e-a65c-a43d6e30f77b",
+      "result_id": "fdfc1914-4af1-466c-94cc-feb032132ce5"
+    },
+    {
+      "claim_id": "ec3fc4dd-cf4d-4f77-80c8-f0f27e7ee076",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "2f87c6ac-da55-463e-81ce-32c54b47c6c4",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "4fdd1957-b074-48fd-903a-35bf7b8c7374",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "e45f52ea-3ba4-4140-ac0b-93642d697397",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "260a92b8-74c2-42d7-9532-fd39e8efed02",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "6239ed2d-d86b-4fe8-b3b7-eaf9ac794b5b",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "5bd0267a-7a44-4623-a09a-a0ae64414bba",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "5f6dbfae-1a0b-42f4-aceb-d38a21cb6427",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "9de5cef6-381b-4e0d-bd5f-1e1582f67477",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "53fb7357-d66b-4358-be74-d327a87b46a5",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "22e41e2d-e0db-4071-93a8-6c75c6dd6447",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "6769d8dd-c953-40aa-aef4-af4536a0298d",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "ddff3815-f27d-412f-8285-9d1bf9fe2919",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "c0c7d180-05f9-431b-9695-1412ff42b7b3",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "992ddeaa-6e0f-4793-972d-582e721f5115",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "69929726-6b7d-4286-9c06-382b68fdc33b",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "c5002341-a59f-45c9-a7c2-55b0c079e844",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "fe45922d-ad23-430d-bc96-81de82584a92",
+      "result_id": "559771b0-79bd-40a9-9c3c-4c9ed23b9c03"
+    },
+    {
+      "claim_id": "d827a2b9-9474-42e9-8106-e2d46cba1b3a",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "f2655e89-af6d-4a76-a2fe-151a542319f4",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "67a19828-353a-4103-9ede-74dbdf2b44c1",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "1894336c-c6c9-4f96-911c-1783ade1ed80",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "9a6b229a-c815-4577-bc47-4e288a1e7bdf",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "32aa925e-5ecb-48ea-90c7-e4d50485bb29",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "c4df413d-a89d-42a9-8168-28e00fc270f3",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "c0bbf1d9-3a36-4352-8070-d56411d86fb1",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "784e4637-a2dd-410e-a3f6-72a394e2615c",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "873bab7c-701f-456e-b600-d29abdd46f78",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "8c012d01-c45a-4de8-8f07-ae2a0bbb394a",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "2b433113-9f5c-4332-9cb7-11ffd7e2b2a9",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "235ca64f-eb6b-4055-880c-b7189d2ae264",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "b9889171-1f36-44de-a490-23a36ee5627b",
+      "result_id": "e3eee3cb-b31e-4fae-b181-9d18b87bbe82"
+    },
+    {
+      "claim_id": "48918970-0761-4f25-a022-04db56adeaaf",
+      "result_id": "09c7b265-6ed8-4d81-a956-5982a67792a5"
+    },
+    {
+      "claim_id": "27db24c3-8ccc-4463-b8c7-e5ea90026e31",
+      "result_id": "09c7b265-6ed8-4d81-a956-5982a67792a5"
+    },
+    {
+      "claim_id": "629dec25-78b5-479a-988b-d5bf17f870ce",
+      "result_id": "09c7b265-6ed8-4d81-a956-5982a67792a5"
+    },
+    {
+      "claim_id": "988a0607-6fa2-4382-b46a-3e6b6eb0baa7",
+      "result_id": "09c7b265-6ed8-4d81-a956-5982a67792a5"
+    },
+    {
+      "claim_id": "8551b41d-1c8f-4313-ad1e-bd98ef48b53a",
+      "result_id": "09c7b265-6ed8-4d81-a956-5982a67792a5"
+    },
+    {
+      "claim_id": "8c916fc5-9eef-4ac6-a23b-69c0cad9cac1",
+      "result_id": "09c7b265-6ed8-4d81-a956-5982a67792a5"
+    },
+    {
+      "claim_id": "9027fc92-6669-42e6-a1d7-98f0e3887d1e",
+      "result_id": "09c7b265-6ed8-4d81-a956-5982a67792a5"
+    },
+    {
+      "claim_id": "2f50e76b-164a-4b1d-965a-4982faab2823",
+      "result_id": "af524100-10c8-4d0e-b331-64e77f68ee1b"
+    },
+    {
+      "claim_id": "e21a5146-4f15-4352-9147-c61110c4346b",
+      "result_id": "af524100-10c8-4d0e-b331-64e77f68ee1b"
+    },
+    {
+      "claim_id": "42572bf6-f343-4cbe-96a3-e767643c7931",
+      "result_id": "af524100-10c8-4d0e-b331-64e77f68ee1b"
+    },
+    {
+      "claim_id": "8a9c4199-f0b6-4530-a856-f5ef7bf3a91d",
+      "result_id": "cc3dd421-5672-4d0a-aaf0-53cafc456bbd"
+    },
+    {
+      "claim_id": "592e7bc4-03cd-493a-8b01-3d38ee5d3ff7",
+      "result_id": "cc3dd421-5672-4d0a-aaf0-53cafc456bbd"
+    },
+    {
+      "claim_id": "3dbc1ab6-02a1-4f16-b750-2e9452c1ff96",
+      "result_id": "cc3dd421-5672-4d0a-aaf0-53cafc456bbd"
+    },
+    {
+      "claim_id": "ab25439b-5966-454a-bef1-18512ab0c8e6",
+      "result_id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba"
+    },
+    {
+      "claim_id": "f3d07d13-8e56-4f31-b41f-64384fcc14e4",
+      "result_id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba"
+    },
+    {
+      "claim_id": "4ed20bcf-6121-48cc-9f63-65a556f13d68",
+      "result_id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba"
+    },
+    {
+      "claim_id": "b9f2b86a-69d6-489f-af87-76ce74acdb31",
+      "result_id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba"
+    },
+    {
+      "claim_id": "4b1babe1-d460-4119-883f-878084ba9a4f",
+      "result_id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba"
+    },
+    {
+      "claim_id": "a949e50b-4f27-4d2d-8797-4c0a6c506951",
+      "result_id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba"
+    },
+    {
+      "claim_id": "3d338e2e-12ca-401c-b4f2-8075236799e4",
+      "result_id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba"
+    },
+    {
+      "claim_id": "1d3583d6-523a-449d-a253-7a06b2f2605a",
+      "result_id": "fecb7ba9-bdca-4ed3-ba23-61492521ffba"
+    },
+    {
+      "claim_id": "8250c749-eedf-4b5c-ae4c-6d7910a4fd0a",
+      "result_id": "e5c1b8e5-b008-4132-9e7f-0b1a2ccdc620"
+    },
+    {
+      "claim_id": "f0bfa72c-5a5e-4fae-bef7-e283954d92e7",
+      "result_id": "e5c1b8e5-b008-4132-9e7f-0b1a2ccdc620"
+    },
+    {
+      "claim_id": "d1915b1f-4b1a-44a8-97de-7f2bb1c941dc",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "04cedbf7-59e8-4bc7-9420-db517a9a7249",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "43d757f7-8980-4658-9b8b-f13d0a820f4e",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "f221ad13-eeb9-41cd-b2a3-246a11894bcc",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "8345d1e7-89e7-409e-8567-5e1bc706eaa5",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "8f9197ce-f2de-4acf-a12b-7b20f572baa0",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "0b62a7d2-eb86-4f81-939f-9c59f01dc25f",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "1d9f6f97-528c-4f7a-826e-0a1defc99d77",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "3a94154b-0944-40a1-8913-960dce74aa97",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "26cd453e-71a8-4e3a-9551-f9ec834d5fc6",
+      "result_id": "4d47d27c-5ced-41e1-a01f-896cdba33915"
+    },
+    {
+      "claim_id": "d67f3b4b-66ce-441f-b72e-59fe607affbe",
+      "result_id": "49672975-d211-4f5c-b6c6-802e155ddbff"
+    }
+  ],
+  "comparisons": []
+}

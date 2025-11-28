@@ -1,0 +1,410 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Undead cells (apoptotic cells expressing p35) in the posterior compartment of Drosophila wing discs induce non-autonomous apoptosis in the anterior compartment at a distance. This is evidenced by punctate caspase-3 staining and TUNEL labeling in anterior cells, distinct from the diffuse caspase staining in undead cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 provide converging evidence from multiple markers (caspase-3 staining patterns, TUNEL) that distinguish genuine apoptosis in anterior cells from undead cells in the posterior compartment. The compartment boundary provides a clear spatial separation supporting long-range signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Non-autonomous apoptosis is not restricted to wing discs or specific compartments, occurring in haltere and leg discs but not eye-antennal discs. The phenomenon requires strong apoptotic stimuli and is not compartment-specific, as dorsal-ventral induction also occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 demonstrate generalizability across disc types with appropriate tissue-specific controls (C53-C54). The requirement for strong drivers (C57-C58) is empirically supported, though the mechanistic basis for threshold effects is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Dying cells in the anterior compartment are of anterior origin (express Ci-Gal4), confirming true non-autonomous apoptosis rather than migration of undead cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 use the Q/Gal4 dual expression system to definitively demonstrate that dying anterior cells express anterior markers, ruling out the alternative explanation of cell migration. This is a critical control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Non-autonomous apoptosis is not caused by size compensation, morphogenetic signaling, or developmental abnormalities. Reducing posterior compartment size via dMyc RNAi or downregulating Wg/Dpp does not prevent AiA, and temporal control experiments show AiA occurs even with normal disc morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide multiple independent control experiments addressing alternative mechanisms. The dMyc experiment (C63) is particularly strong as it directly tests size compensation. However, the Wg/Dpp experiments (C65) only test whether these specific mitogens mediate AiA, not whether other signals might.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Genuine apoptotic cells (expressing rpr or hid without p35) can induce non-autonomous apoptosis, though generally less prominently than undead cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 demonstrate that AiA is not an artifact of the undead cell system. The temporal control system (Gal80TS) is appropriate for maintaining larval viability. The variability noted in C71 suggests dose-dependence but lacks quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The JNK pathway is activated in dying anterior cells and is required for AiA. Loss of puckered (JNK phosphatase) increases AiA, while hep1 mutation completely blocks anterior apoptosis without affecting undead cell generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 provide genetic evidence for JNK involvement using both gain-of-function (puc mutant, C80) and loss-of-function (hep1, C82) approaches. The observation that undead cells persist in hep1 mutants (C83) is crucial for ruling out indirect effects. However, the puc-lacZ reporter may not fully capture JNK activity dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "JNK activity is specifically required in anterior cells for them to undergo AiA, as demonstrated by compartment-specific RNAi knockdown of basket (Drosophila JNK).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 use the Q/Gal4 system to achieve compartment-specific manipulation, demonstrating that JNK acts cell-autonomously in receiving cells. This is a well-controlled experiment that distinguishes signaling from responding cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Eiger (Drosophila TNF) is upregulated in undead cells and is the key signal for AiA. Eiger null mutants completely abolish non-autonomous apoptosis while maintaining undead cell characteristics (Wg signaling, caspase staining). Compartment-specific Eiger knockdown significantly reduces AiA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 provide strong genetic evidence using multiple eiger alleles (C91) and compartment-specific knockdown (C93). The observation that mitogenic signaling persists in eiger mutants (C92) demonstrates specificity. However, the mechanism of Eiger propagation remains unclear (acknowledged in C125).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In mouse hair follicles during catagen, TNF-\u03b1 is expressed specifically in apoptotic cells and is required for normal coordinated cell death. TNF-\u03b1 neutralization impairs HF cycle progression, reduces apoptosis, and causes loss of synchronicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 demonstrate specific TNF-\u03b1 localization to apoptotic cells. The neutralization experiments (C107-C112) show functional requirement with appropriate controls (IgG). However, the experiments don't definitively prove that TNF-\u03b1 mediates cell-to-cell propagation of apoptosis versus other roles in HF regression. The desynchronization (C110) is suggestive but not conclusive for AiA mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C119",
+      "C124",
+      "C129"
+    ],
+    "result": "AiA provides a conserved mechanism (Drosophila Eiger and mammalian TNF-\u03b1) to explain cohort behavior of dying cells in development and pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C119, C124, and C129 represent interpretive conclusions that extend beyond the direct experimental evidence. While the Drosophila data strongly support AiA, the mouse HF data (C124) are consistent with but don't definitively prove the same mechanism. The evolutionary conservation claim (C129) is speculative given differences in experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The undead cell system (p35 expression blocking effector caspases) allows persistent apoptotic cells that can be used to study apoptotic signaling, producing ectopic Wg expression and overgrown compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 describe the established undead cell methodology with appropriate citations (C34). The characterization of undead cells (high cleaved caspases, ectopic Wg) is consistent with prior literature and serves as a valid experimental tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Prior work by Milan et al. (1997) reported non-autonomous apoptosis attributed to size compensation, and dMyc regulates tissue growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 accurately cite prior work to establish context and rationale for control experiments. These are background claims appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The mouse hair follicle undergoes coordinated apoptosis during catagen (P16), making it an appropriate system to study physiological AiA. Apoptotic cells display characteristic morphology and cleaved caspase-3 staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 establish the HF system with appropriate citations and characterization. The timing (P16, C98) and markers (C100) are standard for studying HF catagen. This provides appropriate biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Eiger can activate JNK and induce cell death when overexpressed, but physiological roles for Eiger-induced death have been elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 accurately summarize prior literature on Eiger with appropriate citations, establishing the novelty of identifying a physiological role for Eiger in AiA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C127",
+      "C128"
+    ],
+    "result": "TNF signaling is required for HF cycling, but the cellular source of TNF-\u03b1 was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 and C127-C128 accurately cite prior work and identify a knowledge gap that the current study addresses. This establishes novelty for the TNF-\u03b1 localization findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on apoptosis: it is a programmed cell death process important for development and homeostasis. Dying cells produce find-me and eat-me signals, and recent work shows apoptotic cells can produce mitogenic signals (Wnt, Dpp/Bmps, Hh) involved in regeneration and tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21 provide standard background information appropriately supported by citations. These establish context for the novel finding that apoptotic cells can also produce pro-apoptotic signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Large groups of cells undergo coordinated death during development (e.g., tadpole tail, interdigital webbing, Drosophila morphogenesis, HF catagen) in a rapid and synchronized manner, but the mechanism for this cohort behavior is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 establish biological context with appropriate citations and identify the central question the manuscript addresses. Claim C30 accurately describes a knowledge gap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Pathological conditions involving extensive cell death (liver failure, viral infection, cardiac infarction, stroke, cachexia) are associated with patient mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide medical context with appropriate citations, establishing potential clinical relevance of understanding AiA mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C44",
+      "C121"
+    ],
+    "result": "The wing pouch regions showing non-autonomous apoptosis are more susceptible to apoptosis from various stimuli (X-irradiation, hid overexpression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C121 cite prior work to explain the spatial pattern of AiA. This provides context but doesn't fully explain why these specific regions are affected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Cells neighboring apoptotic cells downregulate Hippo pathway and activate Diap1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 cites prior work suggesting potential protective mechanisms that might limit AiA spread. This is discussed as a possible explanation for spatial patterns but not experimentally tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Summary of main findings: Apoptotic cells produce pro-apoptotic signals (not just proliferative signals), with Eiger/TNF activating JNK to induce non-autonomous apoptosis in Drosophila and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 summarize the main experimental findings of the paper. These are supported by the data presented, though C118 for mice is somewhat less definitive than the Drosophila work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Non-autonomous apoptosis occurs under diverse conditions: with undead cells or genuine apoptosis, with or without mitogenic signaling, and with or without compartment growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 accurately summarizes the range of experimental conditions tested, demonstrating robustness of the AiA phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "The mechanism of Eiger propagation remains unclear - it may diffuse directly or propagate through a JNK feed-forward loop as seen in wound healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C125, and C126 acknowledge limitations and propose alternative mechanisms. C126 cites relevant prior work on JNK propagation, but these remain untested hypotheses in the AiA context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Speculative discussion of AiA significance: potential roles in development, immunity (preventing viral spread), pathology (neurodegenerative diseases, cardiac infarction), and cancer (radiation bystander effects, tumor therapy, cell competition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C147 are explicitly speculative (many use \"may\"), proposing potential roles for AiA in various contexts. While these are reasonable hypotheses supported by citations to relevant literature, they lack direct experimental support and represent future research directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

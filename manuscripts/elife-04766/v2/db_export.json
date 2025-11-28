@@ -1,0 +1,1959 @@
+{
+  "submission": {
+    "id": "9fdee015-0d46-4a3f-94f3-29b71c8b78c5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:04:06.133942Z",
+    "updated_at": "2025-11-28T22:04:06.133942Z"
+  },
+  "content": [
+    {
+      "id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "submission_id": "9fdee015-0d46-4a3f-94f3-29b71c8b78c5",
+      "content_type": "manuscript",
+      "content_text": "# Enhanced homology-directed human genome engineering by controlled timing of CRISPR/Cas9 delivery\n\n## Authors\n\n- Steven Lin<sup>1</sup>\n- Brett T Staahl<sup>1</sup>\n- Ravi K Alla<sup>2</sup>\n- Jennifer A Doudna<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. Computational Genomics Resource Laboratory, QB3 University of California, Berkeley Berkeley United States\n3. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n4. Department of Chemistry University of California, Berkeley Berkeley United States\n5. Department of Chemistry Lawrence Berkeley National Laboratory Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe CRISPR/Cas9 system is a robust genome editing technology that works in human cells, animals and plants based on the RNA-programmed DNA cleaving activity of the Cas9 enzyme. Building on previous work (Jinek et al., 2013), we show here that new genetic information can be introduced site-specifically and with high efficiency by homology-directed repair (HDR) of Cas9-induced site-specific double-strand DNA breaks using timed delivery of Cas9-guide RNA ribonucleoprotein (RNP) complexes. Cas9 RNP-mediated HDR in HEK293T, human primary neonatal fibroblast and human embryonic stem cells was increased dramatically relative to experiments in unsynchronized cells, with rates of HDR up to 38% observed in HEK293T cells. Sequencing of on- and potential off-target sites showed that editing occurred with high fidelity, while cell mortality was minimized. This approach provides a simple and highly effective strategy for enhancing site-specific genome engineering in both transformed and primary human cells.\n\n## Introduction\n\nThe CRISPR-associated enzyme Cas9 enables site-specific genome engineering by introducing double-strand breaks (DSB) at guide RNA-specified chromosomal loci of interest (Cong et al., 2013; Jinek et al., 2013; Mali et al., 2013a). Cells repair DSBs using the non-homologous end joining (NHEJ) or homology-directed repair (HDR) pathways. The NHEJ pathway generates variable insertions or deletions (indels) at the DSB, while HDR employs homologous donor DNA sequences from sister chromatids, homologous chromosomes or exogenous DNA molecules to produce precise insertions, deletions or base substitutions at a DSB site or between two DSBs. Such precise modifications are desired for targeted genome engineering.\n\nAlthough cells have differing abilities to repair DSBs using NHEJ or HDR, the phase of the cell cycle largely governs the choice of pathway. NHEJ dominates DNA repair during G1, S and G2 phases, whereas HDR is restricted to late S and G2 phases when DNA replication is completed and sister chromatids are available to serve as repair templates (Heyer et al., 2010). Impediments to HDR include competition with NHEJ in S and G2 phases and specific down-regulation of HDR at M phase and early G1 to prevent telomere fusion (Orthwein et al., 2014). Although chemical or genetic interruption of the NHEJ pathway can favor HDR (Shrivastav et al., 2008), such manipulations can be difficult to employ, harmful to cells or both. Consequently, high cleavage activity of programmable nucleases does not necessarily correlate with efficient HDR-induced genome editing.\n\nHere we report a simple and robust approach that advances our previous findings (Jinek et al., 2013) to enhance HDR efficiency in human cells. This strategy combines well-established cell cycle synchronization techniques with direct nucleofection of pre-assembled Cas9 ribonucleoprotein (RNP) complexes to achieve controlled nuclease action at the phase of the cell cycle best for HDR (Figure 1A). HEK293T, human primary neonatal fibroblast and H9 human embryonic stem cells demonstrated robust HDR-mediated genome editing at levels up to 38% with no detected off-target editing. These results establish a superior approach to Cas9-mediated human genome engineering that enables efficient mutation, repair and tagging of endogenous loci in a rapid and predictable manner.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04766/elife-04766-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental schematic of timed delivery of Cas9-guide RNA ribonucleoprotein (RNP) into human cells for genome editing. (B) Chemical inhibitors used to arrest cells at specific phases of cell cycle included lovastatin (Lov), which blocks at early G1 and partially at G2/M phase; mimosine (Mim), aphidicolin (Aph), thymidine (Thy) and hydroxyurea (HU) which arrest cells at the G1-S border prior to onset of DNA replication; and nocodazole (Noc) which causes arrest at G2/M phase. (C) The homology-directed repair (HDR) donor DNA is a 183 nt ssODNA that is complementary to the target sequence (\u2212strand) and contains a 9 nt insertion (HindIII and SphI restriction sequences) at the cut site and a 9 nt deletion downstream of the cut site; these modifications are flanked by 85 nt and 55 nt asymmetrical homology arms at 5\u2032 and 3\u2032 ends, respectively. (D, E) PCR-based screening of cell cycle inhibitors for enhancement of Cas9-triggered total editing (TE) (D) and HDR (E) frequencies in HEK293T cells. For each inhibitor condition (color coded), two doses of Cas9 RNP, 30 and 100 \u03c1mol, were transfected with 100 \u03c1mol of HDR DNA template; control reactions (labeled as C) contained 100 \u03c1mol of Cas9 but no sgRNA. The TE frequency was measured using a T7 endonuclease I assay and analyzed using a formula described in \u2018Materials and Methods\u2019. The HDR frequency was determined directly by HindIII digestion, which specifically cleaved the newly integrated HindIII sequence, and calculated as the ratio of DNA product to DNA substrate. The % TE, % HDR and standard deviation (error bars) were calculated from three experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04766/elife-04766-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Bivariate cell cycle, BrdU (S-phase), 7-AAD (DNA content) FACS analysis reveals cells are arrested at different phases of cell cycle. Chemical inhibitors were used to arrest cells at specific phases of cell cycle. (A) Analysis of HEK293T cells with different cell cycle blocks and nocodazole released cells. (B) Analysis of human neonatal fibroblasts with different cell cycle blocks and aphidicolin released cells. (C) Analysis of H9 hES cells unsynchronized (unsync), nocodazole synchronzied (Noc) and nocodazole + aphidicolin sequential synchronized (Noc + Aph) at time of cell cycle block and transfection or 3 days after release. Alkaline phosphatase positive and normal ES colony morphology for all three conditions. ROCK apoptosis inhibitor (10 \u03bcM) was required for survival of synchronized H9 ESCs after release when cultured at low density in 6-well plates but not when cultured at high density in 96-well plates.\n\n## Results\n\nTo test whether S phase is optimal for HDR in HEK293T cells, six reversible chemical inhibitors were used in parallel experiments to synchronize HEK293T cells at G1, S and M phases of the cell cycle, followed by release prior to nucleofection with Cas9 RNP (Figure 1B, Figure 1\u2014figure supplement 1A). Immediately after release we prepared 30-\u03bcl nucleofection reactions containing 2 \u00d7 105 cells, Cas9 RNP with sgRNA targeting EMX1 gene and a 183-nucleotide single-stranded oligonucleotide DNA (ssODNA) HDR template (Figure 1C). After 24 hr, cells were analyzed for HDR (specifically, exogenous donor template mediated HDR) or total editing (TE, defined as the sum of all NHEJ and HDR events that give rise to indels) at the Cas9 cleavage site within EMX1, showing that both aphidicolin and nocodazole led to pronounced increases in Cas9-mediated editing frequencies (Figure 1D,E). The enhancement is more evident at lower Cas9 RNP concentration (30 \u03c1mol), improving HDR rates from \u223c9% in unsynchronized cells to \u223c14% with aphidicolin and \u223c20% with nocodazole (Figure 1E). The highest HDR frequency achieved was 31% with nocodazole synchronization and 100 \u03c1mol of Cas9 RNP. Importantly, 1 day after nocodazole release the synchronized cells were cycling like unsynchronized controls and appeared morphologically normal (Figure 1\u2014figure supplement 1A).\n\nNext we determined systematically the dosage effect of Cas9 RNPs and HDR templates on HDR efficiency in control and nocodazole synchronized cells. At the EMX1 locus, we tested three concentrations of Cas9 RNP (10, 30 and 100 \u03c1mol) in combination with three concentrations of HDR template (50, 100 and 200 \u03c1mol in Figure 1C). The overall frequencies of TE and HDR increased proportionally with increasing Cas9 RNP concentration (Figure 2A). Synchronization increased the TE frequency twofold at 10 \u03c1mol and 1.5-fold at 30 \u03c1mol Cas9 RNP, but the enhancement diminished at 100 \u03c1mol. The HDR frequency also increased dramatically with synchronization, especially at lower concentrations of Cas9 RNP, from undetectable to 9\u201315% at 10 \u03c1mol of Cas9 RNP, and from 6\u201312% to 22\u201328% at 30 \u03c1mol (Figure 2A). These results demonstrate that timed delivery of Cas9 RNP into M-phase synchronized HEK293T cells enhances HDR by several fold above the levels observed without synchronization.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04766/elife-04766-fig2-v2.jpg)\n\n**Figure 2.:** (A) The effect of nocodazole on the TE and HDR frequencies at EMX1 locus. HEK293T cells were synchronized at M phase with 200 ng/ml of nocodazole for 17 hr before nucleofection. To determine the optimal dosage, three concentrations of Cas9 RNP were assayed in combination with three doses of HDR template (Figure 1C). The TE frequencies at 10 \u03c1mol of Cas9 RNP in the unsynchronized cells were too low and therefore not determined (ND). (B) The effect of nocodazole on the TE and HDR frequencies at DYRK1 locus. The directionality of ssODNA HDR templates, either identical (+strand) or complementary (\u2212strand) to the target sequence, was examined. The PAM is highlighted in red, the target sequence in blue and the integrated HindIII site in green. (C) The effect of nocodazole on the TE and HDR frequencies at the CXCR4 locus. The HDR template is ssODNA complementary (\u2212strand) to the target sequence, and contains a HindIII restriction sequence flanked by 90 nt homology arms. Representative gels from two biological replicates are shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04766/elife-04766-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The genomic DNAs from Figure 2A,B experiments were analyzed for NHEJ and HDR frequencies, at the on-target and off-target sites, by deep sequencing. The TE frequency (indels/total reads) was determined at the EMX1 target, DYRK1 target and selected off-target loci as a function of Cas9 RNP dosage, (n = 1 representative experiment). The HDR frequency (HDR/total reads) represented specifically exogenous donor template-mediate HDR. The ratio of Cas9 RNP-induced DSB repaired by the HDR pathway was determined as the percentage of HDR/TE. The controls, which included the non-transfected cells and the cells transfected with only Cas9 protein but no sgRNA, showed no evidence of on- or off-target editing. (B) Representative sequences repaired by HDR and NHEJ at the EMX1 and DYRK1 loci. The Cas9 cleavage sites are marked by red triangles.\n\nTo test these effects at other genomic loci, we programmed Cas9 RNPs to target the DYRK1 gene, which is important for brain development, autism and Downs Syndrome (Arron et al., 2006; Fotaki et al., 2002; O'Roak et al., 2012). We assayed two ssODNA HDR templates spanning the same sequence but with different orientations: one identical to the target strand sequence (+strand) and the other its complement (\u2212strand) (Figure 2B). Both of these templates yielded comparable levels of HDR. Strikingly, nocodazole synchronization enhanced the TE frequencies more than twofold and HDR frequencies over sixfold at all doses of Cas9 RNP (Figure 2B). Moreover, nocodazole synchronization reduced the requirement for high Cas9 RNP concentrations, producing 5\u20136% HDR at 10 \u03c1mol of Cas9; 10-fold more Cas9 RNP was required to achieve the same HDR frequency in unsynchronized cells.\n\nWe also programmed Cas9 RNPs to target the CXCR4 gene, a chemokine receptor implicated in HIV entry (Feng et al., 1996) and cancer metastasis (Murphy, 2001). The HDR template used in these experiments was a ssODNA oriented complementary (\u2212strand) to the target strand, containing HindIII and BamHI restriction sites flanked by 90 nt homology arms. The enhancement in TE and HDR frequencies at CXCR4 was comparable to those observed for the DYRK1 target site (Figure 2C). The most significant increase was again observed at 10 and 30 \u03c1mol of Cas9 RNP, yielding nearly five and twofold increases, respectively. In this case, nocodazole synchronization yielded 27% HDR at 10 \u03c1mol of Cas9 RNP. A comparable level of HDR in the unsynchronized cells would require 100 \u03c1mol of RNP. Collectively, the results from EMX1, DYRK1 and CXCR4 loci demonstrate that nocodazole synchronization is a highly effective and broadly applicable method to enhance the TE and HDR frequencies in HEK293T cells.\n\nOff-target editing increases with increasing nucleic acid-based delivery of Cas9 (Fu et al., 2013; Hsu et al., 2013; Pattanayak et al., 2013; Mali et al., 2013b). We reasoned that the short-lived Cas9 RNP (Kim et al., 2014) and timed delivery would minimize off-target editing and that potential toxicity might be minimized by using lower RNP amounts. We compared the TE and HDR frequencies at the EMX1 and DYRK1 target loci to those occurring at the top two predicted off-target loci (Hsu et al., 2013) respectively by deep sequencing a representative biological replicate experiment from Figure 2A,B. Importantly, no off-target editing was detected above background levels under all conditions, and increasing RNP dosage had no effect on off-target editing. As shown in Figure 2\u2014figure supplement 1A, Supplementary file 1, the TE (indels/total reads) and HDR (HDR/total reads) frequencies at EMX1 and DYRK1 increased with RNP dosage in both cell conditions. Most importantly, there was no detectable HDR at the off-target loci. Overall, the TE and HDR frequencies detected by deep sequencing were comparable to our previous gel densitometry results (Figure 2A,B). The deep sequencing analysis also allowed us to determine the ratio of Cas9-induced DSBs being repaired by the NHEJ vs HDR pathway (HDR/TE reads). Although nocodazole synchronization increased the HDR/TE ratio by twofold at the EMX1 locus and fivefold at the DYRK1 locus, this ratio reached a maximum value of \u223c33% across all RNP doses, suggesting that the maximum capacity of the HDR machinery in HEK293T cells is to repair \u223c33% of DSBs. A panel of representative indels is shown in Figure 2\u2014figure supplement 1B.\n\nTo examine the length of HDR template homology sequences required for Cas9-mediated HDR, we tested four single-stranded and two double-stranded HDR templates for EMX1 bearing homology arms ranging from 30 to 250 nt in length (template 2\u20137 in Figure 3A). To avoid signal saturation and better distinguish the HDR frequencies of different templates, we reduced the Cas9 RNP and HDR template concentrations to 30 \u03c1mol and 50 \u03c1mol, respectively. As observed previously, nocodazole synchronization produced higher HDR frequencies than observed in the unsynchronized cells (Figure 3B). In addition to the unsynchronized and nocodazole synchronized conditions, we included a third condition in which aphidicolin, an S-phase blocker, was added to the nocodazole synchronized cells immediately after nucleofection. We hypothesized that the aphidicolin-blocked cells would show reduced HDR frequency due to the inability to enter S phase where HDR is thought to be most active. As expected, the aphidicolin block significantly reduced the HDR frequency, supporting the conclusion that cells need to proceed through S phase, and possibly G2 as well, for highly efficient HDR.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04766/elife-04766-fig3-v2.jpg)\n\n**Figure 3.:** (A) Segment of human EMX1 exon 3 shows the 20 nt target sequence (highlighted in blue), the TGG PAM region (in red) and the Cas9 cleavage site at three bases upstream from PAM. Seven HDR templates (color coded) were tested for HDR efficiency. Template 1 is as described in Figure 1C. Templates 2\u20137 contain HindIII and BamHI restriction sites that are flanked symmetrically by various lengths of homology arms, ranging from 30 nt to 250 nt. Templates 2\u20135 are ssODNA; templates 6\u20137 are PCR amplified double-stranded DNA (see \u2018Materials and methods\u2019). (B) HDR efficiency was tested under three cell conditions. In addition the unsynchronized and nocodazole synchronized conditions, the cells were synchronized with nocodazole prior to nucleofection, and immediately post nucleofection, a single dose of aphidicolin (2 \u03bcg/ml) was added to the growth media to prevent the transfected cells from proceeding into the S phase. The purpose was to test whether blocking passage through S phase reduces HDR efficiency, since the HDR pathway is thought to be most active during S phase. This one-time addition of aphidicolin is labeled as \u2018Aph block\u2019 in the third panel, as opposed to the standard aphidicolin synchronization procedure used elsewhere in the manuscript. Thirty \u03c1mol of Cas9 RNP and 50 \u03c1mol of HDR template were used in the nucleofection reaction; the control reaction (C) contained no HDR template. The mean % HDR and standard deviation (error bar) was determined by HindIII digestion from three experiments. Representative gels from PCR and HDR analyses are shown for each cell condition. Templates 6 and 7 produced unusual banding patterns, making quantitation of DNA bands less accurate (labeled by asterisk).\n\nDNA molecules with at least 60 nt of sequence homology flanking the Cas9 cleavage site were sufficient for highly efficient HDR of \u223c19% (Figure 3B). Further extension of the homology arms to 90 nt increased the HDR frequency only slightly (\u223c20\u201323%). Both (+) and (\u2212) template orientations were similarly effective, as also observed in the DYRK1 experiment. When double-stranded templates 6 and 7 were used, HDR frequencies were reduced to 7%. Moreover, unusual banding patterns in the HindIII HDR assay (Figure 3B) implied the presence of a concatemerized HDR template or non-specific recombination products, at least with short sequences as employed here.\n\nTo expand our findings on the cell cycle synchronization method to other cell types, we targeted the EMX1 gene in human primary neonatal fibroblasts (neoFB) and H9 human embryonic stem (hES) cells. These cell types are challenging to transfect and typically show low levels of homologous recombination. To determine the cell cycle phase that is optimal for HDR in neoFB cells, we used the same six chemical inhibitors to synchronize neoFB cells at G1, S and M phases of the cell cycle, followed by release prior to nucleofection with Cas9 RNP (Figure 4A). Cell cycle synchronization was confirmed by FACS analysis, and cells in all conditions appeared morphologically normal. Aphidicolin-synchronized cells progressed normally through the cell cycle following release from cell cycle block (Figure 1\u2014figure supplement 1B). In contrast to HEK293T cells, enhancement in TE and HDR frequencies was observed with aphidicolin and thymidine treatments, which synchronize the cells at S phase (Figure 4A). The TE frequencies were 17% and 13% with aphidicolin and thymidine respectively, as opposed to 5% in the unsynchronized condition. However, HDR frequency was very low across all conditions and was not detected in the unsynchronized cells. With aphidicolin synchronization, 0.6% and 1.3% HDR were detected at 30 and 100 \u03c1mol Cas9 RNP respectively.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04766/elife-04766-fig4-v2.jpg)\n\n**Figure 4.:** (A) Screening of cell cycle inhibitors for enhancement of TE and HDR frequencies in human primary neonatal fibroblast cells. For each inhibitor condition (color coded), two doses of Cas9 RNP, 30 and 100 \u03c1mol, were transfected with 100 \u03c1mol of HDR DNA template 4 from Figure 3A. A control reaction (labeled as C) contained 100 \u03c1mol of Cas9 but no sgRNA. The % TE and % HDR were analyzed similarly as with HEK293T cells. (B) Three conditions were tested using hES cells: unsynchronized, nocodazole synchronized and nocodazole-aphidicolin sequential synchronized. The cells were treated with nocodazole for 16 hr, washed to remove the drug and then treated with aphidicolin for 3 hr before nucleofection. 30 or 100 \u03c1mol of Cas9 RNP was co-transfected with 100 \u03c1mol of HDR template 4 from Figure 3A, and cultured at high density in 96-well plates in the presence or absence of ROCK apoptosis inhibitor (10 \u03bcM). For both experiments, representative gels from two biological replicates are shown. The contrast of the gel images was increased to show that no HDR was detected in other conditions.\n\nWe then tested hES cells in a similar experimental setup. Previous reports have shown \u223c20% NHEJ with transfection of Cas9 RNPs but didn't analyze HDR rates (Kim et al., 2014). Also, HDR frequencies are low with nucleic acid-based delivery of Cas9 (Hsu et al., 2013). Screening of chemical inhibitors showed that only nocodazole synchronization enhanced TE frequencies in hES cells to 9% at 30 \u03c1mol and 28\u201331% at 100 \u03c1mol Cas9 RNP; however, we did not detect HDR with the HDR template (\u2212) sense strand (Figure 4B). In light of these observations, we modified a protocol from Pauklin et al. (Pauklin and Vallier, 2013), in which the cells were treated with nocodazole for 16 hr, washed to remove the drug, and then treated with aphidicolin for 3 hr before nucleofection. Using this approach, we detected \u223c2% of HDR at 100 \u03c1mol Cas9 RNP (Figure 4B). Cell synchronization was confirmed by FACS analysis. 3 days after release from cell cycle synchronization the hES cell cycle behavior was indistinguishable from unsynchronized control cultures, with no apparent changes in colony morphology (Figure 1\u2014figure supplement 1C); all colonies expressed high levels of alkaline phosphatase, a marker for pluripotency (Figure 1\u2014figure supplement 1D). ROCK apoptosis inhibitor (10 \u03bcM) was required for survival of synchronized H9 ESCs after release when cultured at low density but not when cultured at high density. These results suggest that different cell types will have distinct requirements for synchronization to enhance Cas9 RNP-induced DNA repair. Also, it may be possible to find conditions that will enable even higher levels of HDR in neoFB and hES cells using Cas9 RNP delivery.\n\n## Discussion\n\nHere we report a simple and robust system to enhance genome engineering by HDR in human cells using cell cycle synchronization and timed delivery of Cas9 ribonucleoprotein complexes. Advantages of this approach include no detectable off-target editing, timed introduction of pre-assembled editing complexes into cells and simultaneous transfection of multiple Cas9 RNPs and donor DNAs. In addition, Cas9 RNP-mediated editing begins within 4 hr of delivery and is largely completed within 24 hr due to RNP degradation (Kim et al., 2014). Furthermore, higher cell viability has been observed following RNP transfection compared with DNA transfection (Kim et al., 2014; Zuris et al., 2014). These features enable robust levels of on-target editing while reducing off-target effects.\n\nUsing this system, we have maximized the efficiency of HDR such that \u223c33% of detected DSB repair events occur with homologous recombination of donor DNA. We chose the EMX1 target sequence to compare with published results using nucleic acid delivery, for which 10% HDR efficiency was reported in HEK293T cells (Ran et al., 2013). Our results are also significantly higher than reported rates of HDR in synchronized HCT116 cells using Transcription Activator-Like Effector Nucleases (TALENs) and higher than typically observed using nucleic acid-based delivery of Cas9 (Rivera-Torres et al., 2014). (Hsu et al., 2013). Further increase of HDR efficiency beyond 33% will likely require manipulation of the proteins involved in the HDR or NHEJ pathways (Humbert et al., 2012).\n\nIt is surprising that nocodazole treatment leads to higher HDR efficiency at reduced dosage of Cas9 RNPs. Nocodazole blocks cells at M phase when the DNA is fully replicated and the nuclear membrane is broken down. One explanation may be that delivery of Cas9 RNPs into a nocodazole-synchronized cell effectively targets two cells because they divide upon release. Another possibility is that once the nuclear envelope is broken down, Cas9 RNPs can gain easy access to the DNA. The resulting high HDR frequencies without off-target editing provide an important advance for generating scar-less genetic modifications, including epitope-tagged alleles, reporter genes, precise insertions and deletions and point mutations. Together these results expand the utility of CRISPR/Cas9-mediated genome engineering in human cells and provide a foundation for further advances using Cas9 RNP delivery methods.\n\n## Materials and methods\n\n### Cell lines and cell culture\n\nDMEM media, non-essential amino acid, penicillin-streptomycin, E8 media, DPBS and 0.05% trypsin were purchased from Life Technologies, Carlsbad, CA. HEK293T cells and human neonatal dermal fibroblasts (catalog #2310: ScienCell, Carlsbad, CA) were maintained in DMEM media supplemented with 10% fetal bovine serum, non-essential amino acid and penicillin-streptomycin. H9 human embryonic stem cells were maintained on Matrigel (Corning, Tewksbury, MA) in E8 media plus supplement (Life Technologies, Carlsbad, CA).\n\n### Cell cycle synchronization\n\nAphidicolin, hydroxyurea, lovastatin, mimosine, nocodazole and thymidine were purchased from Sigma\u2013Aldrich, St. Louis, MO. The synchronization protocols were modified from the following references (Adams and Lindsay, 1967; Harper, 2007; Jackman and O'Connor, 2001; Pauklin and Vallier, 2013). It is important to ensure cells are maintained at <70% confluency. HEK293T cells were seeded at low density, 3 \u00d7 106 cell density in a 10-cm culture dish and human primary neonatal fibroblasts seeded at 1.2 \u00d7 106 in a 15-cm dish 17 hr before transfection. Aphidicolin and thymidine require two sequential treatments to enrich cells arrested at the entry of S phase (Jackman and O'Connor, 2001). Cells were treated with aphidicolin (2 \u03bcg/ml) or thymidine (5 mM) for 17 hr, washed with media to remove the drugs, grown for 8 hr, and treated with a second dose of drugs for 17 hr. In the experiment in Figure 3B, third panel, a single dose of aphidicolin (2 \u03bcg/ml) was added to the nocodazole synchronized cells immediately after nucleofection. Hydroxyurea (2 mM), lovastatin (40 \u03bcM), mimosine (200 \u03bcM) and nocodazole (200 ng/ml) require only one treatment for 17 hr. Two synchronization conditions were tested in the human ES cell experiment as shown in Figure 4B. Human ES cells were cultured in 6 well dishes, split 1:10 3 days before adding nocodozole. The first condition was a simple nocodazole treatment for 16 hr. The second condition was modified from Pauklin and Vallier, 2013. The cells were treated with nocodazole for 16 hr, washed to remove the drug, and then treated with aphidicolin for 3 hr before nucleofection. We shortened the duration of aphidicolin treatment, because we noticed a substantial drop in cell viability at 10 hr. After transfection cells were either seeded at high density in a 96 well plate for analysis of editing or low density, 6-well plate, for imaging and long term growth.\n\n### Cell cycle analysis\n\nThe cell cycle analysis was performed using BD Biosciences (San Jose, CA) BrdU-FITC FACS kit, to determine the percent of cells in each phase of the cell cycle. HEK293T and H9 ES cells were incubated with BrdU for 45 min while Fibroblasts were incubated with BrdU for 2 hr. To determine the percent of cells in G2/M, DNA was stained with 7-AAD (7-aminoactinomycin D) and analyzed on a BD Fortessa Flow Cytometer.\n\n### Alkaline phosphatase staining\n\nFollowed Millipore (Billerica, MA) Alkaline Phosphatase detection kit protocol, Cat. No. SCR004.\n\n### Expression and purification of Cas9\n\nThe recombinant S. pyogenes Cas9 used in this study carries at C-terminus an HA tag and two nuclear localization signal peptides which facilitates transport across nuclear membrane. The protein was expressed with a N-terminal hexahistidine tag and maltose binding protein in E. coli Rosetta 2 cells (EMD Millipore, Billerica, MA) from plasmid pMJ915. The His tag and maltose binding protein were cleaved by TEV protease, and Cas9 was purified by the protocols described in Jinek et al., 2012. Cas9 was stored in 20 mM 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid (HEPES) at pH 7.5, 150 mM KCl, 10% glycerol, 1 mM tris(2-chloroethyl) phosphate (TCEP) at \u221280\u00b0C.\n\n### In vitro T7 transcription of sgRNA\n\nThe DNA template encoding for a T7 promoter, a 20 nt target sequence and an optimized sgRNA scaffold (Chen et al., 2013) was assembled from synthetic oligonucleotides (Integrated DNA technologies, San Diego, CA) by overlapping PCR. Briefly, for the EMX1 sgRNA template, the PCR reaction contains 20 nM premix of BS16 (5\u2032- TAA TAC GAC TCA CTA TAG GTC ACC TCC AAT GAC TAG GGG TTT AAG AGC TAT GCT GGA AAC AGC ATA GCA AGT TTA AAT AAG G -3\u2032) and BS6 (5\u2032- AAA AAA AGC ACC GAC TCG GTG CCA CTT TTT CAA GTT GAT AAC GGA CTA GCC TTA TTT AAA CTT GCT ATG CTG TTT CCA GC -3\u2032), 1 \u03bcM premix of T25 (5\u2032- TAA TAC GAC TCA CTA TAG -3\u2032) and BS7 (5\u2032- AAA AAA AGC ACC GAC TCG GTG C -3\u2032), 200 \u03bcM dNTP and Phusion Polymerase (NEB, Ipswich, MA) according to manufacturer's protocol. The thermocycler setting consisted of 30 cycles of 95\u00b0C for 10 s, 57\u00b0C for 10 s and 72\u00b0C for 10 s. The PCR product was extracted once with phenol:chloroform:isoamylalcohol and then once with chloroform, before isopropanol precipitation overnight at \u221220\u00b0C. The DNA pellet was washed three times with 70% ethanol, dried by vacuum and dissolved in DEPC-treated water. The DYRK1 sgRNA template was assembled from T25, BS6, BS7 and BS14 (5\u2032- TAA TAC GAC TCA CTA TAG GTT CCT TAA ATA AGA ACT TTG TTT AAG AGC TAT GCT GGA AAC AGC ATA GCA AGT TTA AAT AAG G -3\u2032). The CXCR4 sgRNA template was assembled from T25, SLKS3 (5\u2032- TAA TAC GAC TCA CTA TAG GAA GCG TGA TGA CAA AGA GGG TTT TAG AGC TAT GCT GGA AAC AGC ATA GCA AGT TAA AAT AAG G -3\u2032), SLKS1 (5\u2032- GCA CCG ACT CGG TGC CAC TTT TTC AAG TTG ATA ACG GAC TAG CCT TAT TTT AAC TTG CTA TGC TGT TTC CAG C -3\u2032) and SLKS2 (5\u2032- GCA CCG ACT CGG TGC CAC TTT TTC AAG -3\u2032).\n\nAn 100-\u03bcl T7 in vitro transcription reaction consisted of 30 mM Tris\u2013HCl (pH 8), 20 mM MgCl2, 0.01% Triton X-100, 2 mM spermidine, 10 mM fresh dithiothreitol, 5 mM of each ribonucleotide triphosphate, 100 \u03bcg/ml T7 Pol and 1 \u03bcM DNA template. The reaction was incubated at 37\u00b0C for 4 hr, and 5 units of RNase-free DNaseI (Promega, Madison, WI) was added to digest the DNA template 37\u00b0C for 1 hr. The reaction was quenched with 2xSTOP solution (95% deionized formamide, 0.05% bromophenol blue and 20 mM EDTA) at 60\u00b0C for 5 min. The RNA was purified by electrophoresis in 10% polyacrylamide gel containing 6 M urea. The RNA band was excised from the gel, grinded up in a 15-ml tube, and eluted with 5 vol of 300 mM sodium acetate (pH 5) overnight at 4\u00b0C. One equivalent of isopropanol was added to precipitate the RNA at \u221220\u00b0C. The RNA pellet was collected by centrifugation, washed three times with 70% ethanol, and dried by vacuum. To refold the sgRNA, the RNA pellet was first dissolved in 20 mM HEPES (pH 7.5), 150 mM KCl, 10% glycerol and 1 mM TCEP. The sgRNA was heated to 70\u00b0C for 5 min and cooled to room temperature. MgCl2 was added to a final concentration of 1 mM. The sgRNA was again heated to 50\u00b0C for 5 min, cooled to room temperature and kept on ice. The sgRNA concentration was determined by OD260nm using Nanodrop and adjusted to 100 \u03bcM using 20 mM HEPES (pH 7.5), 150 mM KCl, 10% glycerol, 1 mM TCEP and 1 mM MgCl2. The sgRNA was store at \u221280\u00b0C.\n\n### PCR assembly of HDR template 6 and 7\n\nDouble-stranded HDR template 6 and 7 were prepared by PCR amplification. Template 6 was PCR amplified from single-stranded template 5 (5\u2032- TGG CCA GGG AGT GGC CAG AGT CCA GCT TGG GCC CAC GCA GGG GCC TGG CCA GCA GCA AGC AGC ACT CTG CCC TCG TGG GTT TGT GGT TGC GGA TCC AAG CTT TTG GAG GTG ACA TCG ATG TCC TCC CCA TTG GCC TGC TTC GTG GCA ATG CGC CAC CGG TTG ATG TGA TGG GAG CCC TTC TTC TTC TGC TCG -3\u2032) using primer set (forward 5\u2032- CGA GCA GAA GAA GAA GGG CTC CCA TC -3\u2032 and reverse 5\u2032- TGG CCA GGG AGT GGC CAG AGT CC -3\u2032). The PCR reaction was performed using Phusion Polymerase according to manufacturer's protocol (NEB, Ipswich, MA). The thermocycler setting consisted of 30 cycles of 95\u00b0C for 20 s, 67\u00b0C for 10 s and 72\u00b0C for 20 s. The PCR product was extracted once with phenol:chloroform:isoamylalcohol and then once with chloroform, before isopropanol precipitation overnight at \u221220\u00b0C. The DNA pellet was washed three times with 70% ethanol, dried by vacuum and dissolved in water. The concentration was determined by Nanodrop (Thermo Fisher Scientific, Waltham, MA).\n\nTemplate 7 was assembled from two fragments (A and B) by overlapping PCR. Fragment A was PCR amplified from HEK293T genomic DNA using the primer set (forward 5\u2032- GCT CAG CCT GAG TGT TGA GGC CCC AGT GGC TGC TCT GG -3\u2032 and reverse 5\u2032- GTG GTT GCG GAT CCA AGC TTT TGG AGG TGA CAT CGA TGT CCT CCC CAT TGG C -3\u2032). Fragment B was amplified using the primer set (forward 5\u2032- CAC CTC CAA AAG CTT GGA TCC GCA ACC ACA AAC CCA CGA GGG CAG AGT GCT GCT TGC -3\u2032 and reverse 5\u2032- TGC GGT GGC GGG CGG GCC CGC CCA GGC AGG CAG GC -3\u2032). Both reaction were performed using Kapa Hot start high-fidelity polymerase (Kapa Biosystems, Wilmington, MA) in high GC buffer according to the manufacturer\u2019s protocol. The thermocycler setting consisted of one cycle of 95\u00b0C for 5 min, 30 cycles of 98\u00b0C for 20 s, 67\u00b0C for 10 s and 72\u00b0C for 20 s, and one cycle of 72\u00b0C for 1 min.\n\n### Cas9 RNP assembly and nucleofection\n\nCas9 RNP was prepared immediately before experiment by incubating with sgRNA at 1:1.2 molar ratio in 20 mM HEPES (pH 7.5), 150 mM KCl, 1 mM MgCl2, 10% glycerol and 1 mM TCEP at 37\u00b0C for 10 min. HDR template was then added to the RNP mixture. Cells were dissociated by 0.05% trypsin, spun down by centrifugation at 400\u00d7g for 3 min, and washed once with DPBS. Nucleofection of HEK293T cells was performed using Lonza (Allendale, NJ) SF cell- kits and program CM130 in an Amaxa 96-well Shuttle system. The human neoFB were transfected with Lonza P2 kit and program CA137. The hES cells were transfected with P3 primary cell kit and program CB150. Each nucleofection reaction consisted of approximately 2 \u00d7 105 cells in 20 \u03bcl of nucleofection reagent and mixed with 10 \u03bcl of RNP:DNA. After electroporation, 100 \u03bcl of growth media was added to the well to transfer the cells to tissue culture plates. The cells were incubated at 37\u00b0C for 24 hr, the media was removed by aspiration, and 100 \u03bcl of Quick Extraction solution (Epicentre, Madison, WI) was added to lyse the cells and extract the genomic DNA. The cell lysate was incubated at 65\u00b0C for 20 min and then 95\u00b0C for 20 min, and stored at \u221220\u00b0C. The concentration of genomic DNA was determined by NanoDrop (Thermo Fisher Scientific, Waltham, MA).\n\n### PCR amplification of target region\n\nA 640 nt region of EMX1 and DYRK1 loci, containing the target site, were PCR amplified using the following primer sets. For EMX1: forward 5\u2032- GCC ATC CCC TTC TGT GAA TGT TAG AC -3\u2032 and 5\u2032- GGA GAT TGG AGA CAC GGA GAG CAG -3\u2032. For DYRK1: forward 5\u2032- GAG GAG CTG GTC TGT TGG AGA AGT C -3\u2032 and reverse 5\u2032- CCC AAT CCA TAA TCC CAC GTT GCA TG -3\u2032. A 903 nt region of CXCR4 locus was amplified using primer set: 5\u2032- AGA GGA GTT AGC CAA GAT GTG ACT TTG AAA CC -3\u2032 and 5\u2032- GGA CAG GAT GAC AAT ACC AGG CAG GAT AAG GCC -3\u2032. These primers were designed to avoid amplifying the HDR templates by annealing outside of the homology arms. The PCR reaction was performed using 200 ng of genomic DNA and Kapa Hot start high-fidelity polymerase (Kapa Biosystems, Wilmington, MA) in high GC buffer according to the manufacturer\u2019s protocol. The thermocycler setting consisted of one cycle of 95\u00b0C for 5 min, 30 cycles of 98\u00b0C for 20 s, 62\u00b0C for 15 s and 72\u00b0C for 30 s, and one cycle of 72\u00b0C for 1 min. The PCR products were analyzed on 2% agarose gel containing SYBR Safe (Life Technologies, Carlsbad, CA). The concentration of PCR DNA was quantitated based on the band intensity relative to a DNA standard using the software Image Lab (Bio-Rad, Hercules, CA). About 200 ng of PCR DNA was used for T7 endonuclease I and HindIII analyses.\n\n### Analysis of %TE by T7 endonuclease I assay\n\nThe percentage of Cas9 induced TE was determined by T7 endonuclease I assay. T7 endonuclease I recognizes and cleaves mismatched heteroduplex DNA which arises from hybridization of wild-type and mutant DNA strands. The hybridization reaction contained 200 ng of PCR DNA in KAPA high GC buffer and 50 mM KCl, and was performed on a thermocycler with the following setting: 95\u00b0C, 10 min, 95\u201385\u00b0C at \u22122\u00b0C/sec, 85\u00b0C for 1 min, 85\u201375\u00b0C at \u22122\u00b0C/sec, 75\u00b0C for 1 min, 75\u201365\u00b0C at \u22122\u00b0C/sec, 65\u00b0C for 1 min, 65\u201355\u00b0C at \u22122\u00b0C/sec, 55\u00b0C for 1 min, 55\u201345\u00b0C at \u22122\u00b0C/sec, 45\u00b0C for 1 min, 45\u201335\u00b0C at \u22122\u00b0C/sec, 35\u00b0C for 1 min, 35\u201325\u00b0C at \u22122\u00b0C/sec, 25\u00b0C for 1 min, and hold at 4\u00b0C. Buffer 2 and 5 units of T7 endonuclease I (NEB, Ipswich, MA) were added to digest the re-annealed DNA. After 1 hr of incubation at 37\u00b0C, the reaction was quenched with one volume of gel loading dye (50 mM Tris pH 8.5, 50 mM EDTA, 1% SDS, 50% glycerol and 0.01% bromophenol blue) at 70\u00b0C for 10 min. The product was resolved on 2% agarose gel containing SYBR gold (Life technologies, Carlsbad, CA). The DNA band intensity was quantitated using Image Lab. The TE frequency was measured using a T7 endonuclease I assay and calculated using the following equation (1 \u2212 (1 \u2212 (b + c / a + b + c))1/2 ) \u00d7 100, where \u2018a\u2019 is the band intensity of DNA substrate and \u2018b\u2019 and \u2018c\u2019 are the cleavage products (Ran et al., 2013). Using this formula is necessary, because upon re-annealing, one duplex of mutant DNA can produce two duplexes of mutant:wild-type hybrid, doubling the actual TE frequency.\n\n### Analysis of HDR by HindIII restriction digestion\n\nHindIII directly cleaves PCR DNA containing the newly integrated HindIII restriction sequence as the result of successful HDR. The reaction consisted of 200 ng of PCR DNA and 10 units of HindIII High Fidelity in CutSmart Buffer (NEB, Ipswich, MA). After 2 hr of incubation at 37\u00b0C, the reaction was quenched with one volume of gel loading dye at 70\u00b0C for 10 min. The product was resolved on 2% agarose gel containing SYBR gold (Life technologies, Carlsbad, CA). The band intensity was quantitated using Image Lab. The percentage of HDR was calculated using the following equation (b + c / a + b + c) \u00d7 100, where \u2018a\u2019 is the band intensity of DNA substrate and \u2018b\u2019 and \u2018c\u2019 are the cleavage products.\n\n### Deep sequencing analysis of on-target and off-target sites\n\nThe genomic region flanking the CRISPR target site for each gene was amplified by 2-step PCR method using primers listed in Supplementary file 1. First, the genomic DNA from the edited and control samples was isolated and PCR amplified 15 cycles using Kapa Hot start high-fidelity polymerase (Kapa Biosystems, Wilmington, MA) according to the manufacturer's protocol. The resulting amplicons were purified by AMPure beads to remove primers and subjected to five cycles of PCR to attach Illumina P5 adapters as well as unique sample-specific barcodes followed by bead purification. Berkeley Sequencing facility performed the AMPure bead cleanup. Barcoded and purified DNA samples were quantified by Qubit 2.0 Fluorometer (Life Technologies, Carlsbad, CA), size analyzed by BioAnalyzer, quantified by qPCR and pooled in an equimolar ratio. Sequencing libraries were sequenced with the Illumina MiSeq Personal Sequencer (Life Technologies, Carlsbad, CA).\n\nAmplicon sequencing data were analyzed as described below. The 300-bp paired end MiSeq raw reads were de-multiplexed using Illumina MiSeq Reporter software. This generated sample specific paired end raw read files (R1 and R2 fastq files). Adapter and windowed adaptive quality trimming was performed on the raw reads (using Trim Galore). Reads containing bases with a PHRED quality score of less than 30 were removed. R1 and reverse complemented R2 reads were then merged into sample specific fasta file. Smith Waterman alignments (EMBOSS Water) were performed for each sample reads against the corresponding 53 nucleotide reference locus. These 53 nt for each locus included the 23 nt target sequence with 15 nt flanking sequences. Alignments were filtered to assess presence of indels and homologous recombination. Reads were considered to have indels if their alignments were at least 53 nt long and had any gaps. Reads were considered non-indels if their alignments were at least 53 nucleotides long without any gaps. TE frequency was calculated as 100 x #indel reads/(#indel reads + #non-indel reads). Reads were considered to have homologous recombination if alignments were at least 53 nucleotides long and had a AAGCTTGCTAGC insertion for the EMX1 loci (both on and off target) and a GCTAGCAAGCTT insertion for the DYRK1 loci (both on and off target). HDR frequency was calculated as either 100 x #HDR reads/(#indel reads + #non-indel reads). Deep sequencing data is available at the NCBI Sequence Read Archive (SRA, BioProject: 269153).\n",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c2f7a7f8-d56a-45c7-b4a8-3914562f997b",
+      "submission_id": "9fdee015-0d46-4a3f-94f3-29b71c8b78c5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04766.009](https://doi.org/10.7554/eLife.04766.009)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cEnhanced homology-directed human genome engineering by controlled timing of CRISPR/Cas9 delivery\u201d for consideration at eLife. Your article has been favorably evaluated by Detlef Weigel (Senior editor) and 2 reviewers, whose detailed comments are attached at the bottom of this email. All three discussed their comments before we reached this decision. The following comments will help you prepare a revised submission.\n\nWhile an effect of the cell cycle on gene targeting has been shown before, this is the first such demonstration for the CRISPR/Cas9 system, and the overall agreement was that it is an important extension of your previous study that will be of great utility to the community at large. Before we can accept the paper for publication, we ask that you specifically address the following three major concerns:\n\n1) Characterize in more detail the effects of the cell cycle inhibitors on HEK293T and H9 ES cells, and of nucleofection versus DNA transfection.\n\n2) Preferably add information on other cell lines (or clearly state caveat that different optimization might be needed for each cell line, including nucleofection efficiencies).\n\n3) Demonstrate the superiority of the method over the conventional approach by targeting additional sites in the genome.\n\nReviewer #1:\n\nThe CRISPR/Cas9 system is by now a widely used system for site-directed genome editing. Upon site directed cleavage by an RNA-guided CRISPR/Cas9 protein a double strand break (DSB) is introduced. The DSB can be sealed either by error-prone non-homologous end joining (NHEJ) or homology-directed repair (HDR). Typically NHEJ is strongly favored in cells and thus integration of desired DNA into a given genome location by HDR is difficult to achieve. Accordingly, people have tried in the past to identify experimental parameters that can be modified to increase HDR efficiency.\n\nThe article under review is very well written and the figures are well designed and clear. However, the Results section of this article contains many numbers. Maybe the authors can identify sections where they can make general statements rather than only listing all data points. The text in its current form is hard to read due to the excessive listing of data.\n\nThe manuscript under review focused on optimization of the experimental parameters of CRISPR/Cas9-mediated genome editing in human cells to achieve higher HDR frequencies. The authors take advantage of the fact that the ratio of HDR versus NHEJ differs in different cell cycles. They use a set of chemicals that induce arrest within defined cell cycles. As mentioned by the authors, this idea has been used before in combination with TAL-effector based nucleases (TALENs) (Rivera-Torres , 2014, PLoS ONE 9: e96483). However, it seems that TALENs work is less efficient in combination with cell-cycle arresting chemicals as CRISPR/Cas9 nucleases. The judgment of the authors seems correct. Yet, the fact remains that the conceptual idea is not novel but has been published before.\n\nIn addition to the use of cell-cycle arresting chemicals, the authors tested other experimental parameters (e.g. concentration of CRISPR/Cas9, guide RNA and length of the HDR repair template) to improve HDR efficiency. In their studies, they identify various parameters like the CRISPR/Cas9 concentration, which significantly improve HDR efficiency. They also provide data indicating that experimental conditions that improve HDR do not cause increased off-target activity. I believe that the identified experimental conditions will be of use for the huge community of scientists that want to use the CRISPR/Cas9 system for HDR in human cells. Yet, while the improvements are typically significant they remain in most cases marginal. Furthermore, the authors did not test if the used chemicals will have non-desirable side-effects (e.g. high overall mutation rate, increased cell-death frequencies, etc.). I assume the cellular consequences that are linked to the use of these chemicals are in many cases known and thus should be tested experimentally. It should be straightforward to test at least the effect on viability of treated cells. I am convinced that these studies would increase the value of the studies.\n\nI believe the article will be of use to a broad community. Yet, the article provides no fundamental or novel mechanistical insights, and even the central idea of using cell-cycle arresting chemicals is not conceptually novel. In sum, a useful article for applied biotech but no news for fundamental biology.\n\nReviewer #2:\n\nThe CRISPR/Cas9 system is rapidly revolutionizing the field of genome engineering, allowing researchers to manipulate both coding and non-coding genomic sequences at will in a constantly growing number of biological systems. This system creates double-strand breaks (DSBs) at target loci, which can be repaired through one of two cellular mechanisms: non-homologous end joining (NHEJ) or homology-directed repair (HDR). The ability of a cell to repair a DSB generated by Cas9 through HDR-mediated incorporation of exogenous DNA templates has recently been exploited to engineer several modifications to endogenous loci, such as novel knock-in alleles, point mutations and fluorescent tags, among others. However, the frequency of NHEJ is usually higher than HDR due to the fact that NHEJ does not require any homologous or exogenous DNA molecules to repair the DSB. Therefore, developing experimental methods that increase the frequency of HDR is important in order for this technology to fulfill its full potential in various laboratory studies as well as in clinical applications.\n\nLin et al. have addressed whether cell cycle synchronization might affect the relative use of these two repair pathways in an effort to define conditions that lead to more efficient HDR. The authors tested whether reversible treatment of cells with drugs reported to arrest cells in the S and late G2 cell cycle phases could increase the rate of HDR when combined with timed delivery of Cas9-sgRNA ribonucleoprotein complexes (RNPs) and various exogenous DNA templates. Using six pharmacological agents and further narrowing the list down to two (nocodazole, which is reported to block cells at late G2/M phase, and aphidicolin, which blocks cells at S phase), the authors convincingly demonstrate that these treatments, coupled with timed delivery of Cas9 RNPs and exogenous DNA templates, significantly increased the rate of HDR across two loci in two different cell types. Importantly, they also convincingly demonstrate that off-target editing is negligible using this approach.\n\nThis is a significant extension of this groups previous efforts aimed at establishing the CRISPR/Cas9 genome editing system in mammalian cells for inducing both NHEJ and HDR at specific genomic loci (Jinek et al., 2013). The ability to increase the rate of HDR through cell synchronization coupled with timed delivery of Cas9 RNPs will undoubtedly have a significant impact in the field of genome editing, particularly for applications aimed at engineering specific mutations of interest into a variety of cell types, such as human ES and iPS cells.\n\nMajor comments:\n\n1) The key observation here is that cells treated and released from different chemical inhibitors of cell cycle progression undergo increased CRISPR/Cas9-mediated HDR compared to untreated cells. While this is clearly shown, the cell cycle effects that are associated with this treatment are not well characterized. Although the drugs employed are commonly used in the field, it is important to characterize them in the particular cell lines studied. The authors show cell cycle analysis in of HEK293T cells in Figure 1\u2013figure supplement 1. However, for both nocodazole and aphidicolin treatment, the data appear to show significant 2n as well as 4n peaks. Thus, it is unclear what cell cycle phase might be associated with the increased HDR observed following release from these treatments. Regarding the experiments with H9 human ES cells, in which a combination of nocodazole and aphidicolin was used, there is no cell cycle analysis shown at all. It will be important to address both of these issues prior to publication.\n\n2) With the exception of the experiments presented in Figure 2C using the H9 cells, most of the experiments were carried out with HEK293T cells, which are readily transfectable with nucleofection methods. Importantly, the rate of HDR reported was significantly lower in drug-treated H9 cells compared to drug-treated HEK293T cells. Moreover, induction of HDR in ES cells required a modification of the protocol to incorporate a 16-hour pulse of nocodazole followed by a 3-hour pulse of aphidicolin before Cas9 RNP nucleofection. One wonders how generalizable these methods will be to other cell types. Therefore, the manuscript would be strengthened with the addition of analysis of a panel of cell lines.\n\n3) The authors should establish the baseline nucleofection efficiencies for the different cell lines tested. This will help clarify whether nucleofection efficiency many be a contributing factor in the difference seen between HEK293T cells and H9 cells.\n\n4) It is unclear whether the other cell cycle inhibitors besides nocodazole shown in Figure 1\u2013figure supplement 1 were tested in ES cells. Minimally, this point should be clarified. If they were not tested, is there a reason why not?\n\n5) Given the interest in targeting efficiencies as a function of target loci, it would be useful to extend this study to more than the two loci tested here.\n\n6) In Figure 3B, the authors show that adding aphidicolin following release from a nocodazole block reduced HDR efficiency in HEK293T cells, suggesting that S-phase entry may be required for efficient HRD-mediated repair. They should show that this combined treatment actually did block S-phase entry in these experiments, especially given the odd cell cycle profiles shown in Figure 1\u2013figure supplement 1. Also, how does this conclusion jibe with the increased efficiency of HDR in ES cells treated with this same combination when compared with nocodazole alone?\n\n7) The authors argue in the Discussion that their approach of nucleofection of Cas9 RNPs leads to higher cell viability than DNA transfection-based methods. However, no data is shown to support this claim.\n",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "061a27ac-901c-4ae5-9fde-df7ddc310866",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C1",
+      "claim": "The CRISPR/Cas9 system is a robust genome editing technology that works in human cells, animals and plants based on the RNA-programmed DNA cleaving activity of the Cas9 enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR/Cas9 system is a robust genome editing technology that works in human cells, animals and plants based on the RNA-programmed DNA cleaving activity of the Cas9 enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about CRISPR/Cas9 technology that draws from established scientific knowledge and consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "9fc8ca99-61ee-421e-a4bb-0c80346363e4",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C2",
+      "claim": "New genetic information can be introduced site-specifically and with high efficiency by homology-directed repair (HDR) of Cas9-induced site-specific double-strand DNA breaks using timed delivery of Cas9-guide RNA ribonucleoprotein (RNP) complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on previous work (Jinek et al., 2013), we show here that new genetic information can be introduced site-specifically and with high efficiency by homology-directed repair (HDR) of Cas9-induced site-specific double-strand DNA breaks using timed delivery of Cas9-guide RNA ribonucleoprotein (RNP) complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript and builds on cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "52b6fee9-b739-4428-8d74-d72e20688cbe",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C3",
+      "claim": "Cas9 RNP-mediated HDR in HEK293T, human primary neonatal fibroblast and human embryonic stem cells was increased dramatically relative to experiments in unsynchronized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 RNP-mediated HDR in HEK293T, human primary neonatal fibroblast and human embryonic stem cells was increased dramatically relative to experiments in unsynchronized cells, with rates of HDR up to 38% observed in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental data presented in the manuscript showing HDR rates in different cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "b6b3b8ec-0314-4ead-8474-9bf101eecc03",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C4",
+      "claim": "Rates of HDR up to 38% were observed in HEK293T cells using timed delivery of Cas9 RNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 RNP-mediated HDR in HEK293T, human primary neonatal fibroblast and human embryonic stem cells was increased dramatically relative to experiments in unsynchronized cells, with rates of HDR up to 38% observed in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specific quantitative result is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "06d97c5f-3606-42e9-a8dd-97080239042b",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C5",
+      "claim": "Sequencing of on- and potential off-target sites showed that editing occurred with high fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing of on- and potential off-target sites showed that editing occurred with high fidelity, while cell mortality was minimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by deep sequencing data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "42e31228-ca77-437e-a101-343ac5cf8b99",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C6",
+      "claim": "Cell mortality was minimized using the timed delivery approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing of on- and potential off-target sites showed that editing occurred with high fidelity, while cell mortality was minimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by observations of cell viability and morphology described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "734f2e3b-61fd-4fd1-acda-b062f4c681c6",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C7",
+      "claim": "The approach provides a simple and highly effective strategy for enhancing site-specific genome engineering in both transformed and primary human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach provides a simple and highly effective strategy for enhancing site-specific genome engineering in both transformed and primary human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental results showing enhanced HDR in multiple cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "ce073dfd-b948-477c-beac-a60d65489cb6",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C8",
+      "claim": "Cas9 enables site-specific genome engineering by introducing double-strand breaks (DSB) at guide RNA-specified chromosomal loci of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR-associated enzyme Cas9 enables site-specific genome engineering by introducing double-strand breaks (DSB) at guide RNA-specified chromosomal loci of interest (Cong et al., 2013; Jinek et al., 2013; Mali et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c1a6cf3c-9ef5-41ed-9068-58dd4ed800ce",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C9",
+      "claim": "Cells repair DSBs using the non-homologous end joining (NHEJ) or homology-directed repair (HDR) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells repair DSBs using the non-homologous end joining (NHEJ) or homology-directed repair (HDR) pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about DNA repair mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "6c1cb40a-ade0-444d-b8e8-610bbbb71008",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C10",
+      "claim": "The NHEJ pathway generates variable insertions or deletions (indels) at the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "The NHEJ pathway generates variable insertions or deletions (indels) at the DSB, while HDR employs homologous donor DNA sequences from sister chromatids, homologous chromosomes or exogenous DNA molecules to produce precise insertions, deletions or base substitutions at a DSB site or between two DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the NHEJ DNA repair pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "471c8a20-c9d0-4749-9655-8d69fcf9e423",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C11",
+      "claim": "HDR employs homologous donor DNA sequences from sister chromatids, homologous chromosomes or exogenous DNA molecules to produce precise insertions, deletions or base substitutions at a DSB site or between two DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "The NHEJ pathway generates variable insertions or deletions (indels) at the DSB, while HDR employs homologous donor DNA sequences from sister chromatids, homologous chromosomes or exogenous DNA molecules to produce precise insertions, deletions or base substitutions at a DSB site or between two DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the HDR DNA repair pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "d1aa2ae4-11ef-498f-9bfe-7f0ec1eba6a2",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C12",
+      "claim": "The phase of the cell cycle largely governs the choice of DNA repair pathway between NHEJ and HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Although cells have differing abilities to repair DSBs using NHEJ or HDR, the phase of the cell cycle largely governs the choice of pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cell cycle regulation of DNA repair pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "99a3f967-16fd-496c-a308-cfbeeb0a8e02",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C13",
+      "claim": "NHEJ dominates DNA repair during G1, S and G2 phases.",
+      "claim_type": "EXPLICIT",
+      "source": "NHEJ dominates DNA repair during G1, S and G2 phases, whereas HDR is restricted to late S and G2 phases when DNA replication is completed and sister chromatids are available to serve as repair templates (Heyer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "630d08fe-f04e-49e0-ad54-467fbd6fc718",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C14",
+      "claim": "HDR is restricted to late S and G2 phases when DNA replication is completed and sister chromatids are available to serve as repair templates.",
+      "claim_type": "EXPLICIT",
+      "source": "NHEJ dominates DNA repair during G1, S and G2 phases, whereas HDR is restricted to late S and G2 phases when DNA replication is completed and sister chromatids are available to serve as repair templates (Heyer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "dba1431d-7549-4aaf-8b20-5c6fd1def83d",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C15",
+      "claim": "HDR is specifically down-regulated at M phase and early G1 to prevent telomere fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Impediments to HDR include competition with NHEJ in S and G2 phases and specific down-regulation of HDR at M phase and early G1 to prevent telomere fusion (Orthwein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "f715487a-4f7a-41e8-9f38-437b1f3286f2",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C16",
+      "claim": "Chemical or genetic interruption of the NHEJ pathway can favor HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Although chemical or genetic interruption of the NHEJ pathway can favor HDR (Shrivastav et al., 2008), such manipulations can be difficult to employ, harmful to cells or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "5aeb7bc2-4cef-4d28-afab-03a0371e1dd5",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C17",
+      "claim": "Chemical or genetic interruption of the NHEJ pathway can be difficult to employ, harmful to cells or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Although chemical or genetic interruption of the NHEJ pathway can favor HDR (Shrivastav et al., 2008), such manipulations can be difficult to employ, harmful to cells or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited work and general knowledge.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "7d75866c-eeae-4786-9ac4-cd432d7c1647",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C18",
+      "claim": "High cleavage activity of programmable nucleases does not necessarily correlate with efficient HDR-induced genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, high cleavage activity of programmable nucleases does not necessarily correlate with efficient HDR-induced genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discussion of NHEJ/HDR competition and pathway choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "eac8af2c-2ae5-4dc3-a9e3-afa06c70528d",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C19",
+      "claim": "The strategy combines well-established cell cycle synchronization techniques with direct nucleofection of pre-assembled Cas9 ribonucleoprotein (RNP) complexes to achieve controlled nuclease action at the phase of the cell cycle best for HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy combines well-established cell cycle synchronization techniques with direct nucleofection of pre-assembled Cas9 ribonucleoprotein (RNP) complexes to achieve controlled nuclease action at the phase of the cell cycle best for HDR (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "b7335c9b-7bd4-4140-82c8-f78598e4f4d8",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C20",
+      "claim": "HEK293T, human primary neonatal fibroblast and H9 human embryonic stem cells demonstrated robust HDR-mediated genome editing at levels up to 38% with no detected off-target editing.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293T, human primary neonatal fibroblast and H9 human embryonic stem cells demonstrated robust HDR-mediated genome editing at levels up to 38% with no detected off-target editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including deep sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c4df9f24-7230-4581-b0ff-f59a317032d1",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C21",
+      "claim": "The approach enables efficient mutation, repair and tagging of endogenous loci in a rapid and predictable manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results establish a superior approach to Cas9-mediated human genome engineering that enables efficient mutation, repair and tagging of endogenous loci in a rapid and predictable manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results demonstrating high HDR efficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "07f354e4-41d3-430a-9059-f56ced45b2f8",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C22",
+      "claim": "Lovastatin blocks cells at early G1 and partially at G2/M phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical inhibitors used to arrest cells at specific phases of cell cycle included lovastatin (Lov), which blocks at early G1 and partially at G2/M phase; mimosine (Mim), aphidicolin (Aph), thymidine (Thy) and hydroxyurea (HU) which arrest cells at the G1-S border prior to onset of DNA replication; and nocodazole (Noc) which causes arrest at G2/M phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about cell cycle inhibitors and confirmed by FACS analysis shown in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "830dfc2a-2bb9-4173-8ad5-69aa0e6dd242",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C23",
+      "claim": "Mimosine, aphidicolin, thymidine and hydroxyurea arrest cells at the G1-S border prior to onset of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical inhibitors used to arrest cells at specific phases of cell cycle included lovastatin (Lov), which blocks at early G1 and partially at G2/M phase; mimosine (Mim), aphidicolin (Aph), thymidine (Thy) and hydroxyurea (HU) which arrest cells at the G1-S border prior to onset of DNA replication; and nocodazole (Noc) which causes arrest at G2/M phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about cell cycle inhibitors and confirmed by FACS analysis shown in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "f406f5bc-0ea8-4dbb-ae8c-da5586b06476",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C24",
+      "claim": "Nocodazole causes arrest at G2/M phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical inhibitors used to arrest cells at specific phases of cell cycle included lovastatin (Lov), which blocks at early G1 and partially at G2/M phase; mimosine (Mim), aphidicolin (Aph), thymidine (Thy) and hydroxyurea (HU) which arrest cells at the G1-S border prior to onset of DNA replication; and nocodazole (Noc) which causes arrest at G2/M phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about cell cycle inhibitors and confirmed by FACS analysis shown in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c8a78e48-498a-4f38-8166-baf526a41afc",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C25",
+      "claim": "Both aphidicolin and nocodazole led to pronounced increases in Cas9-mediated editing frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "After 24 hr, cells were analyzed for HDR (specifically, exogenous donor template mediated HDR) or total editing (TE, defined as the sum of all NHEJ and HDR events that give rise to indels) at the Cas9 cleavage site within EMX1, showing that both aphidicolin and nocodazole led to pronounced increases in Cas9-mediated editing frequencies (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "6fa9cc26-2e84-4e97-90a2-949076fbfa0b",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C26",
+      "claim": "The enhancement in editing is more evident at lower Cas9 RNP concentration (30 \u03c1mol).",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancement is more evident at lower Cas9 RNP concentration (30 \u03c1mol), improving HDR rates from \u223c9% in unsynchronized cells to \u223c14% with aphidicolin and \u223c20% with nocodazole (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c09bb85d-97b2-4c16-b39c-3ea583d5faa7",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C27",
+      "claim": "Aphidicolin improved HDR rates from \u223c9% in unsynchronized cells to \u223c14% at 30 \u03c1mol Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancement is more evident at lower Cas9 RNP concentration (30 \u03c1mol), improving HDR rates from \u223c9% in unsynchronized cells to \u223c14% with aphidicolin and \u223c20% with nocodazole (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "7df41d8c-12ad-4b87-8714-98e46ee88bb3",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C28",
+      "claim": "Nocodazole improved HDR rates from \u223c9% in unsynchronized cells to \u223c20% at 30 \u03c1mol Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancement is more evident at lower Cas9 RNP concentration (30 \u03c1mol), improving HDR rates from \u223c9% in unsynchronized cells to \u223c14% with aphidicolin and \u223c20% with nocodazole (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "530f143d-81f1-449c-9d5e-dd66fb9b18b6",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C29",
+      "claim": "The highest HDR frequency achieved was 31% with nocodazole synchronization and 100 \u03c1mol of Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest HDR frequency achieved was 31% with nocodazole synchronization and 100 \u03c1mol of Cas9 RNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "2cfb29e4-a42e-44fd-af1b-6600dcfc77dc",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C30",
+      "claim": "1 day after nocodazole release the synchronized cells were cycling like unsynchronized controls and appeared morphologically normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 1 day after nocodazole release the synchronized cells were cycling like unsynchronized controls and appeared morphologically normal (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FACS analysis and microscopy shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c13af215-df3f-434a-b64c-1084f0761210",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C31",
+      "claim": "The overall frequencies of TE and HDR increased proportionally with increasing Cas9 RNP concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall frequencies of TE and HDR increased proportionally with increasing Cas9 RNP concentration (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "d39bc8db-412d-43a5-ac17-cd1706ae6e3e",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C32",
+      "claim": "Synchronization increased the TE frequency twofold at 10 \u03c1mol and 1.5-fold at 30 \u03c1mol Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronization increased the TE frequency twofold at 10 \u03c1mol and 1.5-fold at 30 \u03c1mol Cas9 RNP, but the enhancement diminished at 100 \u03c1mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "9fb0f10b-f1de-4c32-91ee-79009d32735f",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C33",
+      "claim": "The enhancement in TE frequency diminished at 100 \u03c1mol Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronization increased the TE frequency twofold at 10 \u03c1mol and 1.5-fold at 30 \u03c1mol Cas9 RNP, but the enhancement diminished at 100 \u03c1mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "a5d1baf2-90ec-43fd-a55a-1ba9966d0496",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C34",
+      "claim": "The HDR frequency increased dramatically with synchronization, especially at lower concentrations of Cas9 RNP, from undetectable to 9\u201315% at 10 \u03c1mol of Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "The HDR frequency also increased dramatically with synchronization, especially at lower concentrations of Cas9 RNP, from undetectable to 9\u201315% at 10 \u03c1mol of Cas9 RNP, and from 6\u201312% to 22\u201328% at 30 \u03c1mol (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "289b08c8-dfbf-43db-a81d-bf30f69e57fd",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C35",
+      "claim": "The HDR frequency increased from 6\u201312% to 22\u201328% at 30 \u03c1mol Cas9 RNP with synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "The HDR frequency also increased dramatically with synchronization, especially at lower concentrations of Cas9 RNP, from undetectable to 9\u201315% at 10 \u03c1mol of Cas9 RNP, and from 6\u201312% to 22\u201328% at 30 \u03c1mol (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "bbb1e650-2c88-4b96-b1ea-94553a671032",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C36",
+      "claim": "Timed delivery of Cas9 RNP into M-phase synchronized HEK293T cells enhances HDR by several fold above the levels observed without synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that timed delivery of Cas9 RNP into M-phase synchronized HEK293T cells enhances HDR by several fold above the levels observed without synchronization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing increased HDR with nocodazole synchronization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "b78573ed-3c02-426b-977f-34055e9b33cd",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C37",
+      "claim": "Both (+) and (\u2212) strand orientations of ssODNA HDR templates yielded comparable levels of HDR at the DYRK1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We assayed two ssODNA HDR templates spanning the same sequence but with different orientations: one identical to the target strand sequence (+strand) and the other its complement (\u2212strand) (Figure 2B). Both of these templates yielded comparable levels of HDR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "b1e527da-3422-45ea-b4d2-0ee7e5891fe0",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C38",
+      "claim": "Nocodazole synchronization enhanced the TE frequencies more than twofold at all doses of Cas9 RNP at the DYRK1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, nocodazole synchronization enhanced the TE frequencies more than twofold and HDR frequencies over sixfold at all doses of Cas9 RNP (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "ac539c92-c89f-44ec-adef-570f0116cf74",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C39",
+      "claim": "Nocodazole synchronization enhanced HDR frequencies over sixfold at all doses of Cas9 RNP at the DYRK1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, nocodazole synchronization enhanced the TE frequencies more than twofold and HDR frequencies over sixfold at all doses of Cas9 RNP (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "b6b8557e-806d-47c4-bd99-b59c58793aa8",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C40",
+      "claim": "Nocodazole synchronization reduced the requirement for high Cas9 RNP concentrations, producing 5\u20136% HDR at 10 \u03c1mol of Cas9 at the DYRK1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, nocodazole synchronization reduced the requirement for high Cas9 RNP concentrations, producing 5\u20136% HDR at 10 \u03c1mol of Cas9; 10-fold more Cas9 RNP was required to achieve the same HDR frequency in unsynchronized cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "9ec9594d-d351-43ad-bce3-da660fdd2104",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C41",
+      "claim": "10-fold more Cas9 RNP was required to achieve the same HDR frequency in unsynchronized cells compared to nocodazole synchronized cells at the DYRK1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, nocodazole synchronization reduced the requirement for high Cas9 RNP concentrations, producing 5\u20136% HDR at 10 \u03c1mol of Cas9; 10-fold more Cas9 RNP was required to achieve the same HDR frequency in unsynchronized cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data comparing synchronized and unsynchronized conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "2432989b-ab55-48db-936f-0ed241b10430",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C42",
+      "claim": "CXCR4 is a chemokine receptor implicated in HIV entry.",
+      "claim_type": "EXPLICIT",
+      "source": "We also programmed Cas9 RNPs to target the CXCR4 gene, a chemokine receptor implicated in HIV entry (Feng et al., 1996) and cancer metastasis (Murphy, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "94903cf6-e55d-406b-8f3e-a240a7d5e4de",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C43",
+      "claim": "CXCR4 is implicated in cancer metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We also programmed Cas9 RNPs to target the CXCR4 gene, a chemokine receptor implicated in HIV entry (Feng et al., 1996) and cancer metastasis (Murphy, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "1459d7f5-e66c-4128-84ad-dda94a4923af",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C44",
+      "claim": "The enhancement in TE and HDR frequencies at CXCR4 was comparable to those observed for the DYRK1 target site.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancement in TE and HDR frequencies at CXCR4 was comparable to those observed for the DYRK1 target site (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "67787ad9-0109-450f-bb99-52435ceffd47",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C45",
+      "claim": "Nocodazole synchronization yielded 27% HDR at 10 \u03c1mol of Cas9 RNP at the CXCR4 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, nocodazole synchronization yielded 27% HDR at 10 \u03c1mol of Cas9 RNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c00f0b4b-56f0-48ae-b1bd-1321acd7c930",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C46",
+      "claim": "A comparable level of HDR in the unsynchronized cells would require 100 \u03c1mol of RNP at the CXCR4 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparable level of HDR in the unsynchronized cells would require 100 \u03c1mol of RNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data comparing synchronized and unsynchronized conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "6cfe767d-02ca-4eed-a017-3e1d4e61d148",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C47",
+      "claim": "Nocodazole synchronization is a highly effective and broadly applicable method to enhance the TE and HDR frequencies in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the results from EMX1, DYRK1 and CXCR4 loci demonstrate that nocodazole synchronization is a highly effective and broadly applicable method to enhance the TE and HDR frequencies in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data at multiple loci.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "f1fcb7cf-d4be-49fb-9520-c3e6d5c8f79c",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C48",
+      "claim": "Off-target editing increases with increasing nucleic acid-based delivery of Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Off-target editing increases with increasing nucleic acid-based delivery of Cas9 (Fu et al., 2013; Hsu et al., 2013; Pattanayak et al., 2013; Mali et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "bd97da61-1e67-4133-b418-58dd4ab322d3",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C49",
+      "claim": "Cas9 RNP is short-lived.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the short-lived Cas9 RNP (Kim et al., 2014) and timed delivery would minimize off-target editing and that potential toxicity might be minimized by using lower RNP amounts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "5819951b-c031-4d94-a125-dd87c44a9b30",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C50",
+      "claim": "No off-target editing was detected above background levels under all conditions tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no off-target editing was detected above background levels under all conditions, and increasing RNP dosage had no effect on off-target editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by deep sequencing data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "3e8b30db-74dd-4bce-a824-f8f2729282f4",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C51",
+      "claim": "Increasing RNP dosage had no effect on off-target editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no off-target editing was detected above background levels under all conditions, and increasing RNP dosage had no effect on off-target editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by deep sequencing data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "446f12c1-65f4-4c30-b73e-da9c2544980c",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C52",
+      "claim": "The TE and HDR frequencies detected by deep sequencing were comparable to gel densitometry results.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the TE and HDR frequencies detected by deep sequencing were comparable to our previous gel densitometry results (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of deep sequencing data with gel-based assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "bde95160-b853-4ffd-877c-b036010b00c0",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C53",
+      "claim": "There was no detectable HDR at the off-target loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, there was no detectable HDR at the off-target loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by deep sequencing data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "031ae79d-0d70-403e-9bad-0d394dc143a4",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C54",
+      "claim": "Nocodazole synchronization increased the HDR/TE ratio by twofold at the EMX1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although nocodazole synchronization increased the HDR/TE ratio by twofold at the EMX1 locus and fivefold at the DYRK1 locus, this ratio reached a maximum value of \u223c33% across all RNP doses, suggesting that the maximum capacity of the HDR machinery in HEK293T cells is to repair \u223c33% of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by deep sequencing data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "5d0d9460-5aac-41a6-b3e2-c0fb57d8a2ea",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C55",
+      "claim": "Nocodazole synchronization increased the HDR/TE ratio by fivefold at the DYRK1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although nocodazole synchronization increased the HDR/TE ratio by twofold at the EMX1 locus and fivefold at the DYRK1 locus, this ratio reached a maximum value of \u223c33% across all RNP doses, suggesting that the maximum capacity of the HDR machinery in HEK293T cells is to repair \u223c33% of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by deep sequencing data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "62c955de-fb1a-4d24-bc76-80c39ec1bc7b",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C56",
+      "claim": "The HDR/TE ratio reached a maximum value of \u223c33% across all RNP doses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although nocodazole synchronization increased the HDR/TE ratio by twofold at the EMX1 locus and fivefold at the DYRK1 locus, this ratio reached a maximum value of \u223c33% across all RNP doses, suggesting that the maximum capacity of the HDR machinery in HEK293T cells is to repair \u223c33% of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by deep sequencing data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "acb11b3a-4552-4b41-ac1a-d85cc18c1206",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C57",
+      "claim": "The maximum capacity of the HDR machinery in HEK293T cells is to repair \u223c33% of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although nocodazole synchronization increased the HDR/TE ratio by twofold at the EMX1 locus and fivefold at the DYRK1 locus, this ratio reached a maximum value of \u223c33% across all RNP doses, suggesting that the maximum capacity of the HDR machinery in HEK293T cells is to repair \u223c33% of DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the HDR/TE ratio plateaus at ~33%.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "075adbe7-2fee-4725-b136-6f50bf635d30",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C58",
+      "claim": "Nocodazole synchronization produced higher HDR frequencies than observed in the unsynchronized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed previously, nocodazole synchronization produced higher HDR frequencies than observed in the unsynchronized cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "87b4bbed-cc25-45cc-8e35-0ea5684e5d5a",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C59",
+      "claim": "The aphidicolin block significantly reduced the HDR frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the aphidicolin block significantly reduced the HDR frequency, supporting the conclusion that cells need to proceed through S phase, and possibly G2 as well, for highly efficient HDR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "36b16173-cf64-4733-86f7-35b8a006b919",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C60",
+      "claim": "Cells need to proceed through S phase, and possibly G2 as well, for highly efficient HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the aphidicolin block significantly reduced the HDR frequency, supporting the conclusion that cells need to proceed through S phase, and possibly G2 as well, for highly efficient HDR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that blocking S phase entry reduces HDR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "b24471cb-608f-4978-b70f-2295efe5b9ff",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C61",
+      "claim": "DNA molecules with at least 60 nt of sequence homology flanking the Cas9 cleavage site were sufficient for highly efficient HDR of \u223c19%.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA molecules with at least 60 nt of sequence homology flanking the Cas9 cleavage site were sufficient for highly efficient HDR of \u223c19% (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "59cbb9d7-f210-45d8-8687-e9817bd66c2f",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C62",
+      "claim": "Further extension of the homology arms to 90 nt increased the HDR frequency only slightly (\u223c20\u201323%).",
+      "claim_type": "EXPLICIT",
+      "source": "Further extension of the homology arms to 90 nt increased the HDR frequency only slightly (\u223c20\u201323%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "50dce4fc-d5f7-46b7-8ee0-2fdcfe31b83d",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C63",
+      "claim": "Both (+) and (\u2212) template orientations were similarly effective.",
+      "claim_type": "EXPLICIT",
+      "source": "Both (+) and (\u2212) template orientations were similarly effective, as also observed in the DYRK1 experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "05653c03-f72f-4a33-9b37-aaad91a70ed6",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C64",
+      "claim": "When double-stranded templates 6 and 7 were used, HDR frequencies were reduced to 7%.",
+      "claim_type": "EXPLICIT",
+      "source": "When double-stranded templates 6 and 7 were used, HDR frequencies were reduced to 7%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "9748715e-1d71-4ca8-a52a-37e97dfa448a",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C65",
+      "claim": "Double-stranded templates produced unusual banding patterns in the HindIII HDR assay implying the presence of a concatemerized HDR template or non-specific recombination products.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, unusual banding patterns in the HindIII HDR assay (Figure 3B) implied the presence of a concatemerized HDR template or non-specific recombination products, at least with short sequences as employed here.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the unusual banding patterns observed in the gel.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "cdbad5e5-e046-4819-ac20-a1a556b81b24",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C66",
+      "claim": "Human primary neonatal fibroblasts and H9 human embryonic stem cells are challenging to transfect and typically show low levels of homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "To expand our findings on the cell cycle synchronization method to other cell types, we targeted the EMX1 gene in human primary neonatal fibroblasts (neoFB) and H9 human embryonic stem (hES) cells. These cell types are challenging to transfect and typically show low levels of homologous recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these cell types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "82507721-fe92-4eba-a9de-e9ebee089973",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C67",
+      "claim": "In neoFB cells, enhancement in TE and HDR frequencies was observed with aphidicolin and thymidine treatments, which synchronize the cells at S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to HEK293T cells, enhancement in TE and HDR frequencies was observed with aphidicolin and thymidine treatments, which synchronize the cells at S phase (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "278a6bf5-b870-4b3b-8109-4e4b8db802dc",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C68",
+      "claim": "The TE frequencies in neoFB cells were 17% and 13% with aphidicolin and thymidine respectively, as opposed to 5% in the unsynchronized condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The TE frequencies were 17% and 13% with aphidicolin and thymidine respectively, as opposed to 5% in the unsynchronized condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c7454090-b607-422d-b3f8-b0012c46d01f",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C69",
+      "claim": "HDR frequency was very low across all conditions in neoFB cells and was not detected in the unsynchronized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, HDR frequency was very low across all conditions and was not detected in the unsynchronized cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "523b9183-50b9-47db-bce9-bfde9174bcf6",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C70",
+      "claim": "With aphidicolin synchronization, 0.6% and 1.3% HDR were detected at 30 and 100 \u03c1mol Cas9 RNP respectively in neoFB cells.",
+      "claim_type": "EXPLICIT",
+      "source": "With aphidicolin synchronization, 0.6% and 1.3% HDR were detected at 30 and 100 \u03c1mol Cas9 RNP respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "934bf924-79a0-42d2-a410-cd0648c1aeaa",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C71",
+      "claim": "Previous reports have shown \u223c20% NHEJ with transfection of Cas9 RNPs in hES cells but didn't analyze HDR rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports have shown \u223c20% NHEJ with transfection of Cas9 RNPs but didn't analyze HDR rates (Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "07423e48-5c19-4a55-b32a-e695e44f8ac6",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C72",
+      "claim": "HDR frequencies are low with nucleic acid-based delivery of Cas9 in hES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, HDR frequencies are low with nucleic acid-based delivery of Cas9 (Hsu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "14bca290-65fd-42cf-80d3-5913c0063970",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C73",
+      "claim": "Only nocodazole synchronization enhanced TE frequencies in hES cells to 9% at 30 \u03c1mol and 28\u201331% at 100 \u03c1mol Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening of chemical inhibitors showed that only nocodazole synchronization enhanced TE frequencies in hES cells to 9% at 30 \u03c1mol and 28\u201331% at 100 \u03c1mol Cas9 RNP; however, we did not detect HDR with the HDR template (\u2212) sense strand (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "69deebb5-61c1-4b51-85c3-3e0389836a71",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C74",
+      "claim": "HDR was not detected with the HDR template (\u2212) sense strand in hES cells with nocodazole synchronization alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening of chemical inhibitors showed that only nocodazole synchronization enhanced TE frequencies in hES cells to 9% at 30 \u03c1mol and 28\u201331% at 100 \u03c1mol Cas9 RNP; however, we did not detect HDR with the HDR template (\u2212) sense strand (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "a45e2355-bcdf-40bf-a44d-b7a036f5703d",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C75",
+      "claim": "Using nocodazole-aphidicolin sequential synchronization, \u223c2% of HDR was detected at 100 \u03c1mol Cas9 RNP in hES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we detected \u223c2% of HDR at 100 \u03c1mol Cas9 RNP (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "ba689169-52ba-4ad0-98ec-f2a07731137f",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C76",
+      "claim": "3 days after release from cell cycle synchronization the hES cell cycle behavior was indistinguishable from unsynchronized control cultures, with no apparent changes in colony morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "3 days after release from cell cycle synchronization the hES cell cycle behavior was indistinguishable from unsynchronized control cultures, with no apparent changes in colony morphology (Figure 1\u2014figure supplement 1C); all colonies expressed high levels of alkaline phosphatase, a marker for pluripotency (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FACS analysis and microscopy shown in Figure 1\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "9ebcfd84-eadf-4f61-8afa-0730e2f58425",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C77",
+      "claim": "All hES colonies expressed high levels of alkaline phosphatase, a marker for pluripotency, after cell cycle synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "3 days after release from cell cycle synchronization the hES cell cycle behavior was indistinguishable from unsynchronized control cultures, with no apparent changes in colony morphology (Figure 1\u2014figure supplement 1C); all colonies expressed high levels of alkaline phosphatase, a marker for pluripotency (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by alkaline phosphatase staining shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "5894bae3-0541-420c-8390-e2eb6d70a99c",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C78",
+      "claim": "ROCK apoptosis inhibitor (10 \u03bcM) was required for survival of synchronized H9 ESCs after release when cultured at low density but not when cultured at high density.",
+      "claim_type": "EXPLICIT",
+      "source": "ROCK apoptosis inhibitor (10 \u03bcM) was required for survival of synchronized H9 ESCs after release when cultured at low density but not when cultured at high density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "6ab949cd-2344-480a-9257-224b17d2622b",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C79",
+      "claim": "Different cell types will have distinct requirements for synchronization to enhance Cas9 RNP-induced DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that different cell types will have distinct requirements for synchronization to enhance Cas9 RNP-induced DNA repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the different optimal synchronization conditions observed for HEK293T, neoFB, and hES cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "6a1ad3b1-2c06-43a2-b56e-93da8256ea2a",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C80",
+      "claim": "It may be possible to find conditions that will enable even higher levels of HDR in neoFB and hES cells using Cas9 RNP delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, it may be possible to find conditions that will enable even higher levels of HDR in neoFB and hES cells using Cas9 RNP delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the results obtained.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "f3554a6e-ce04-4d03-85aa-bb6ea516764c",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C81",
+      "claim": "The approach has no detectable off-target editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Advantages of this approach include no detectable off-target editing, timed introduction of pre-assembled editing complexes into cells and simultaneous transfection of multiple Cas9 RNPs and donor DNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by deep sequencing data showing no off-target editing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "8002c5d2-e999-4c43-b2c3-03400e4c6cbf",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C82",
+      "claim": "The approach allows timed introduction of pre-assembled editing complexes into cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Advantages of this approach include no detectable off-target editing, timed introduction of pre-assembled editing complexes into cells and simultaneous transfection of multiple Cas9 RNPs and donor DNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "df42be0c-2695-4283-a4bf-82ed8292c602",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C83",
+      "claim": "The approach allows simultaneous transfection of multiple Cas9 RNPs and donor DNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Advantages of this approach include no detectable off-target editing, timed introduction of pre-assembled editing complexes into cells and simultaneous transfection of multiple Cas9 RNPs and donor DNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "ab969a9f-1fdd-4442-9c3a-76e58715b717",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C84",
+      "claim": "Cas9 RNP-mediated editing begins within 4 hr of delivery and is largely completed within 24 hr due to RNP degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Cas9 RNP-mediated editing begins within 4 hr of delivery and is largely completed within 24 hr due to RNP degradation (Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "809e67b9-fd93-4daa-889a-74a5714bcbe3",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C85",
+      "claim": "Higher cell viability has been observed following RNP transfection compared with DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, higher cell viability has been observed following RNP transfection compared with DNA transfection (Kim et al., 2014; Zuris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "fc6419db-969e-472a-bfb8-f642ef2acca6",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C86",
+      "claim": "The system maximized the efficiency of HDR such that \u223c33% of detected DSB repair events occur with homologous recombination of donor DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this system, we have maximized the efficiency of HDR such that \u223c33% of detected DSB repair events occur with homologous recombination of donor DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by deep sequencing data showing the HDR/TE ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "042d3e2a-768a-4302-991e-e7b2ae14d677",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C87",
+      "claim": "10% HDR efficiency was reported in HEK293T cells at the EMX1 target using nucleic acid delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose the EMX1 target sequence to compare with published results using nucleic acid delivery, for which 10% HDR efficiency was reported in HEK293T cells (Ran et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "c3c19266-1590-4dbe-b4d0-f0cecc764ff8",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C88",
+      "claim": "The results are significantly higher than reported rates of HDR in synchronized HCT116 cells using TALENs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are also significantly higher than reported rates of HDR in synchronized HCT116 cells using Transcription Activator-Like Effector Nucleases (TALENs) and higher than typically observed using nucleic acid-based delivery of Cas9 (Rivera-Torres et al., 2014). (Hsu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "7a4048a6-dba8-4c02-b566-5e5d23df15ce",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C89",
+      "claim": "Further increase of HDR efficiency beyond 33% will likely require manipulation of the proteins involved in the HDR or NHEJ pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Further increase of HDR efficiency beyond 33% will likely require manipulation of the proteins involved in the HDR or NHEJ pathways (Humbert et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed plateau in HDR/TE ratio.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "e0b616f0-f4ed-4a3d-84bc-1d4ffae4e8ac",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C90",
+      "claim": "Nocodazole blocks cells at M phase when the DNA is fully replicated and the nuclear membrane is broken down.",
+      "claim_type": "EXPLICIT",
+      "source": "Nocodazole blocks cells at M phase when the DNA is fully replicated and the nuclear membrane is broken down.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nocodazole and M phase.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "1f39a60c-ab0a-4c1b-9ba0-ee612f236105",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C91",
+      "claim": "Delivery of Cas9 RNPs into a nocodazole-synchronized cell effectively targets two cells because they divide upon release.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation may be that delivery of Cas9 RNPs into a nocodazole-synchronized cell effectively targets two cells because they divide upon release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of enhanced HDR.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "e6d37c29-abf3-4887-baa9-b277020e415c",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C92",
+      "claim": "Once the nuclear envelope is broken down, Cas9 RNPs can gain easy access to the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that once the nuclear envelope is broken down, Cas9 RNPs can gain easy access to the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of enhanced HDR.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "04243955-bb86-4dbe-831c-1f351e2d7f0e",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C93",
+      "claim": "The high HDR frequencies without off-target editing provide an important advance for generating scar-less genetic modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting high HDR frequencies without off-target editing provide an important advance for generating scar-less genetic modifications, including epitope-tagged alleles, reporter genes, precise insertions and deletions and point mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing high HDR and no off-target editing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "eb31608a-6ae4-442a-9c44-edfec42c68df",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C94",
+      "claim": "The results expand the utility of CRISPR/Cas9-mediated genome engineering in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results expand the utility of CRISPR/Cas9-mediated genome engineering in human cells and provide a foundation for further advances using Cas9 RNP delivery methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results demonstrating enhanced HDR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "7fef935f-efa3-42ba-9c23-42b6fce4c12b",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C95",
+      "claim": "The results provide a foundation for further advances using Cas9 RNP delivery methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results expand the utility of CRISPR/Cas9-mediated genome engineering in human cells and provide a foundation for further advances using Cas9 RNP delivery methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and their implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "3b81ae82-8060-4ee1-a109-e1cb2b1c0aad",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C96",
+      "claim": "DYRK1 is important for brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "To test these effects at other genomic loci, we programmed Cas9 RNPs to target the DYRK1 gene, which is important for brain development, autism and Downs Syndrome (Arron et al., 2006; Fotaki et al., 2002; O'Roak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "d0b4257e-15bf-46fa-a612-56a558ab724f",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C97",
+      "claim": "DYRK1 is important for autism.",
+      "claim_type": "EXPLICIT",
+      "source": "To test these effects at other genomic loci, we programmed Cas9 RNPs to target the DYRK1 gene, which is important for brain development, autism and Downs Syndrome (Arron et al., 2006; Fotaki et al., 2002; O'Roak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "438aa880-62f0-4829-9dc6-0e9050e4f9c5",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C98",
+      "claim": "DYRK1 is important for Downs Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "To test these effects at other genomic loci, we programmed Cas9 RNPs to target the DYRK1 gene, which is important for brain development, autism and Downs Syndrome (Arron et al., 2006; Fotaki et al., 2002; O'Roak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "0224b98d-e185-46aa-81b6-1c25f6d8ebe1",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C99",
+      "claim": "The recombinant S. pyogenes Cas9 used in this study carries at C-terminus an HA tag and two nuclear localization signal peptides which facilitates transport across nuclear membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombinant S. pyogenes Cas9 used in this study carries at C-terminus an HA tag and two nuclear localization signal peptides which facilitates transport across nuclear membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Cas9 protein construct used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "365cc478-4520-498b-8279-63022485e592",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C100",
+      "claim": "The protein was expressed with a N-terminal hexahistidine tag and maltose binding protein in E. coli Rosetta 2 cells from plasmid pMJ915.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein was expressed with a N-terminal hexahistidine tag and maltose binding protein in E. coli Rosetta 2 cells (EMD Millipore, Billerica, MA) from plasmid pMJ915.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the protein expression method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "d20c087e-cbb6-4e74-948d-89e21cefcb2f",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "claim_id": "C101",
+      "claim": "Alkaline phosphatase is a marker for pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "3 days after release from cell cycle synchronization the hES cell cycle behavior was indistinguishable from unsynchronized control cultures, with no apparent changes in colony morphology (Figure 1\u2014figure supplement 1C); all colonies expressed high levels of alkaline phosphatase, a marker for pluripotency (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about alkaline phosphatase as a pluripotency marker.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Timed delivery of Cas9 RNP complexes into cell cycle-synchronized HEK293T cells dramatically enhances HDR efficiency. Nocodazole synchronization at M phase increased HDR rates from ~9% to ~20% at 30 pmol Cas9 RNP, with maximum rates reaching 31-38% at higher RNP concentrations. The enhancement was most pronounced at lower Cas9 RNP concentrations and cells recovered normal morphology and cycling after synchronization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C36 provide converging experimental evidence from multiple assays (T7 endonuclease I, HindIII digestion, FACS analysis) showing consistent enhancement of HDR with nocodazole synchronization across different Cas9 RNP concentrations. The data in Figures 1D-E and 2A demonstrate dose-dependent effects with appropriate controls, and cell viability/morphology data (C30) confirms the approach is not overtly toxic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The enhancement of HDR by nocodazole synchronization is broadly applicable across multiple genomic loci. At DYRK1 and CXCR4 loci, nocodazole synchronization enhanced TE frequencies more than twofold and HDR frequencies over sixfold, with both (+) and (\u2212) strand ssODNA templates showing comparable efficiency. The approach reduced the requirement for high Cas9 RNP concentrations by approximately 10-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C47 demonstrate reproducibility across three independent genomic loci (EMX1, DYRK1, CXCR4) with consistent enhancement patterns shown in Figures 2B-C. The quantitative data showing 5-6% HDR at 10 pmol with synchronization versus requiring 100 pmol without synchronization provides strong evidence for the 10-fold reduction in RNP requirements (C40-C41, C45-C46).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "3e74697e-bc70-48d1-a2c2-6fdfb8bc6241",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Deep sequencing analysis of on-target and predicted off-target sites revealed no detectable off-target editing above background levels under all tested conditions, including with increasing RNP dosage. The deep sequencing results were consistent with gel-based densitometry measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by deep sequencing data presented in Figure 2\u2014figure supplement 1A and Supplementary file 1. The analysis examined the top two predicted off-target sites for both EMX1 and DYRK1, with no detectable off-target HDR or editing events. The consistency between deep sequencing and gel-based methods (C52) validates the quantification approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "3b5fe58a-189b-4543-a7f6-7c044988e4fc",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The HDR/TE ratio reached a maximum of approximately 33% across all RNP doses in HEK293T cells, suggesting this represents the maximum capacity of the HDR machinery to repair DSBs in these cells. Nocodazole synchronization increased the HDR/TE ratio by twofold at EMX1 and fivefold at DYRK1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by deep sequencing analysis showing the HDR/TE ratio plateaus at ~33% regardless of RNP concentration (Figure 2\u2014figure supplement 1A). However, the inference that this represents the \"maximum capacity\" of HDR machinery (C57) is somewhat speculative, as other factors (template availability, kinetics, competing pathways) could also explain the plateau. The data support the observation but the mechanistic interpretation requires caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optimization experiments revealed that DNA templates with at least 60 nt of homology flanking the Cas9 cleavage site are sufficient for highly efficient HDR (~19%), with minimal additional benefit from extending to 90 nt (~20-23%). Single-stranded templates in both orientations were similarly effective, while double-stranded templates showed reduced efficiency (7%) and produced unusual banding patterns suggesting concatemerization or non-specific recombination. Blocking S phase progression with aphidicolin significantly reduced HDR frequency, supporting the requirement for cells to proceed through S/G2 phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C65 are supported by systematic testing of seven different HDR templates shown in Figure 3A-B. The homology arm length optimization (C61-C62), strand orientation comparison (C63), and double-stranded template results (C64-C65) are all directly demonstrated. The aphidicolin block experiment (C59) provides functional evidence for the S/G2 phase requirement (C60), though the inference about G2 involvement remains somewhat uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell cycle synchronization requirements differ across cell types. In human primary neonatal fibroblasts, aphidicolin and thymidine (S phase synchronization) enhanced TE frequencies to 13-17% but HDR remained very low (0.6-1.3%). In H9 human embryonic stem cells, only nocodazole synchronization enhanced TE frequencies (9-31%), but HDR required sequential nocodazole-aphidicolin treatment to achieve ~2% efficiency. Synchronized hES cells maintained normal morphology, cell cycle progression, and pluripotency markers after release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C79 are supported by experimental data in Figures 4A-B and Figure 1\u2014figure supplement 1B-D. The cell-type-specific differences in optimal synchronization conditions are clearly demonstrated, though the HDR efficiencies in primary fibroblasts and hES cells are substantially lower than in HEK293T cells. The maintenance of pluripotency (C76-C77) is confirmed by alkaline phosphatase staining and FACS analysis. The conclusion about cell-type-specific requirements (C79) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "28e54d74-faef-4b20-988e-eec68cbcaead",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Six chemical inhibitors were characterized for their ability to arrest cells at specific cell cycle phases: lovastatin (early G1 and partially G2/M), mimosine/aphidicolin/thymidine/hydroxyurea (G1-S border), and nocodazole (G2/M phase).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe established properties of cell cycle inhibitors confirmed by FACS analysis shown in Figure 1\u2014figure supplement 1A-C. The cell cycle arrest patterns are consistent with known mechanisms of these drugs and are validated by BrdU/7-AAD staining in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The timed delivery approach provides a simple, highly effective strategy for site-specific genome engineering that enables efficient mutation, repair, and tagging of endogenous loci. The method offers advantages including timed introduction of pre-assembled complexes, simultaneous transfection of multiple RNPs, rapid editing kinetics (4-24 hours), higher cell viability compared to DNA transfection, and high HDR frequencies without off-target editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C21, C82-C85, C93-C95 represent summary conclusions supported by the collective experimental data. The advantages listed (C82-C85) are either demonstrated in the manuscript (timed delivery, no off-target editing) or supported by citations to prior work (C84-C85). The broader conclusions about expanding utility (C94-C95) are reasonable inferences from the demonstrated improvements in HDR efficiency across multiple cell types and loci.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "8e3af0f6-84ca-4118-8799-7dd56bb772dc",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The achieved HDR efficiencies (up to 38%) significantly exceed previously reported rates using nucleic acid-based Cas9 delivery (10% in HEK293T cells) and TALEN-based approaches in synchronized cells. Further increases beyond the observed ~33% HDR/TE ratio will likely require manipulation of HDR or NHEJ pathway proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 make comparisons to cited prior work that are verifiable from the references provided. The speculation about future improvements (C89) is reasonable given the observed plateau in HDR/TE ratio, though it remains a hypothesis rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "dfbae299-bdd5-4487-9bde-976ac644d027",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge claims about CRISPR/Cas9 technology, DNA repair pathways (NHEJ and HDR), cell cycle regulation of repair pathway choice, and biological functions of targeted genes (CXCR4, DYRK1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C18, C42-C43, C48-C49, C90, C96-C98, C101 represent established scientific knowledge supported by appropriate citations to prior literature. These provide necessary context for the experimental work but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "5b8ec249-0fe6-4c80-8aa9-eafd9b5ada23",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior reports showed ~20% NHEJ with Cas9 RNP transfection in hES cells without analyzing HDR rates, and HDR frequencies are generally low with nucleic acid-based Cas9 delivery in these cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 accurately cite prior work (Kim et al., 2014; Hsu et al., 2013) to establish the baseline performance in hES cells, providing context for the improvements demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "a778ac32-131e-4d62-a3f3-bf544dc72a99",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Speculative mechanistic explanations for enhanced HDR with nocodazole synchronization, including the possibility that RNP delivery to M-phase cells effectively targets two daughter cells upon division, or that nuclear envelope breakdown facilitates RNP access to DNA. The authors also speculate that higher HDR levels may be achievable in primary fibroblasts and hES cells with further optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80, C91-C92 are explicitly presented as speculation or possibilities rather than demonstrated mechanisms. While these are reasonable hypotheses consistent with the data, they lack direct experimental validation. The manuscript appropriately presents these as potential explanations requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "2d63b29c-2b0d-4022-8be8-5cfc8660000d",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details describing the Cas9 protein construct used in experiments, including C-terminal HA tag and nuclear localization signals, and N-terminal hexahistidine tag and maltose binding protein for expression and purification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 provide technical details about the Cas9 construct and expression system used in the experiments. These are straightforward methodological descriptions that are adequately documented in the Materials and Methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    },
+    {
+      "id": "a77fae46-d025-4c83-a630-7712d62e9425",
+      "content_id": "2ed8f9f5-16fb-453d-b43a-31166865be72",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "High-fidelity editing with minimized cell mortality using the timed delivery approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are supported by deep sequencing data showing no off-target editing (C5) and observations of normal cell morphology and cycling behavior after synchronization (C6, supported by C30, C76). However, the manuscript does not provide quantitative cell viability/mortality data, relying instead on morphological assessment and functional recovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:06.133942Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9fc8ca99-61ee-421e-a4bb-0c80346363e4",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "52b6fee9-b739-4428-8d74-d72e20688cbe",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "b6b3b8ec-0314-4ead-8474-9bf101eecc03",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "eac8af2c-2ae5-4dc3-a9e3-afa06c70528d",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "b7335c9b-7bd4-4140-82c8-f78598e4f4d8",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "c8a78e48-498a-4f38-8166-baf526a41afc",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "6fa9cc26-2e84-4e97-90a2-949076fbfa0b",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "c09bb85d-97b2-4c16-b39c-3ea583d5faa7",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "7df41d8c-12ad-4b87-8714-98e46ee88bb3",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "530f143d-81f1-449c-9d5e-dd66fb9b18b6",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "2cfb29e4-a42e-44fd-af1b-6600dcfc77dc",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "c13af215-df3f-434a-b64c-1084f0761210",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "d39bc8db-412d-43a5-ac17-cd1706ae6e3e",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "9fb0f10b-f1de-4c32-91ee-79009d32735f",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "a5d1baf2-90ec-43fd-a55a-1ba9966d0496",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "289b08c8-dfbf-43db-a81d-bf30f69e57fd",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "bbb1e650-2c88-4b96-b1ea-94553a671032",
+      "result_id": "18bb4922-688e-4cd9-a26f-e5aaff85c45a"
+    },
+    {
+      "claim_id": "b78573ed-3c02-426b-977f-34055e9b33cd",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "b1e527da-3422-45ea-b4d2-0ee7e5891fe0",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "ac539c92-c89f-44ec-adef-570f0116cf74",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "b6b8557e-806d-47c4-bd99-b59c58793aa8",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "9ec9594d-d351-43ad-bce3-da660fdd2104",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "1459d7f5-e66c-4128-84ad-dda94a4923af",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "67787ad9-0109-450f-bb99-52435ceffd47",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "c00f0b4b-56f0-48ae-b1bd-1321acd7c930",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "6cfe767d-02ca-4eed-a017-3e1d4e61d148",
+      "result_id": "5c2993f9-bdf5-44b1-88ee-8b937b8f8e29"
+    },
+    {
+      "claim_id": "5819951b-c031-4d94-a125-dd87c44a9b30",
+      "result_id": "3e74697e-bc70-48d1-a2c2-6fdfb8bc6241"
+    },
+    {
+      "claim_id": "3e8b30db-74dd-4bce-a824-f8f2729282f4",
+      "result_id": "3e74697e-bc70-48d1-a2c2-6fdfb8bc6241"
+    },
+    {
+      "claim_id": "446f12c1-65f4-4c30-b73e-da9c2544980c",
+      "result_id": "3e74697e-bc70-48d1-a2c2-6fdfb8bc6241"
+    },
+    {
+      "claim_id": "bde95160-b853-4ffd-877c-b036010b00c0",
+      "result_id": "3e74697e-bc70-48d1-a2c2-6fdfb8bc6241"
+    },
+    {
+      "claim_id": "f3554a6e-ce04-4d03-85aa-bb6ea516764c",
+      "result_id": "3e74697e-bc70-48d1-a2c2-6fdfb8bc6241"
+    },
+    {
+      "claim_id": "031ae79d-0d70-403e-9bad-0d394dc143a4",
+      "result_id": "3b5fe58a-189b-4543-a7f6-7c044988e4fc"
+    },
+    {
+      "claim_id": "5d0d9460-5aac-41a6-b3e2-c0fb57d8a2ea",
+      "result_id": "3b5fe58a-189b-4543-a7f6-7c044988e4fc"
+    },
+    {
+      "claim_id": "62c955de-fb1a-4d24-bc76-80c39ec1bc7b",
+      "result_id": "3b5fe58a-189b-4543-a7f6-7c044988e4fc"
+    },
+    {
+      "claim_id": "acb11b3a-4552-4b41-ac1a-d85cc18c1206",
+      "result_id": "3b5fe58a-189b-4543-a7f6-7c044988e4fc"
+    },
+    {
+      "claim_id": "fc6419db-969e-472a-bfb8-f642ef2acca6",
+      "result_id": "3b5fe58a-189b-4543-a7f6-7c044988e4fc"
+    },
+    {
+      "claim_id": "075adbe7-2fee-4725-b136-6f50bf635d30",
+      "result_id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e"
+    },
+    {
+      "claim_id": "87b4bbed-cc25-45cc-8e35-0ea5684e5d5a",
+      "result_id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e"
+    },
+    {
+      "claim_id": "36b16173-cf64-4733-86f7-35b8a006b919",
+      "result_id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e"
+    },
+    {
+      "claim_id": "b24471cb-608f-4978-b70f-2295efe5b9ff",
+      "result_id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e"
+    },
+    {
+      "claim_id": "59cbb9d7-f210-45d8-8687-e9817bd66c2f",
+      "result_id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e"
+    },
+    {
+      "claim_id": "50dce4fc-d5f7-46b7-8ee0-2fdcfe31b83d",
+      "result_id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e"
+    },
+    {
+      "claim_id": "05653c03-f72f-4a33-9b37-aaad91a70ed6",
+      "result_id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e"
+    },
+    {
+      "claim_id": "9748715e-1d71-4ca8-a52a-37e97dfa448a",
+      "result_id": "fe20f5f6-16f1-4efe-b56f-e8f6e84fbe2e"
+    },
+    {
+      "claim_id": "82507721-fe92-4eba-a9de-e9ebee089973",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "278a6bf5-b870-4b3b-8109-4e4b8db802dc",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "c7454090-b607-422d-b3f8-b0012c46d01f",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "523b9183-50b9-47db-bce9-bfde9174bcf6",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "14bca290-65fd-42cf-80d3-5913c0063970",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "69deebb5-61c1-4b51-85c3-3e0389836a71",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "a45e2355-bcdf-40bf-a44d-b7a036f5703d",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "ba689169-52ba-4ad0-98ec-f2a07731137f",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "9ebcfd84-eadf-4f61-8afa-0730e2f58425",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "5894bae3-0541-420c-8390-e2eb6d70a99c",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "6ab949cd-2344-480a-9257-224b17d2622b",
+      "result_id": "8f21566e-b94c-4309-85a9-fca2ed2ae1f1"
+    },
+    {
+      "claim_id": "07f354e4-41d3-430a-9059-f56ced45b2f8",
+      "result_id": "28e54d74-faef-4b20-988e-eec68cbcaead"
+    },
+    {
+      "claim_id": "830dfc2a-2bb9-4173-8ad5-69aa0e6dd242",
+      "result_id": "28e54d74-faef-4b20-988e-eec68cbcaead"
+    },
+    {
+      "claim_id": "f406f5bc-0ea8-4dbb-ae8c-da5586b06476",
+      "result_id": "28e54d74-faef-4b20-988e-eec68cbcaead"
+    },
+    {
+      "claim_id": "734f2e3b-61fd-4fd1-acda-b062f4c681c6",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "c4df9f24-7230-4581-b0ff-f59a317032d1",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "8002c5d2-e999-4c43-b2c3-03400e4c6cbf",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "df42be0c-2695-4283-a4bf-82ed8292c602",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "ab969a9f-1fdd-4442-9c3a-76e58715b717",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "809e67b9-fd93-4daa-889a-74a5714bcbe3",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "04243955-bb86-4dbe-831c-1f351e2d7f0e",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "eb31608a-6ae4-442a-9c44-edfec42c68df",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "7fef935f-efa3-42ba-9c23-42b6fce4c12b",
+      "result_id": "b62dc37f-c167-4f37-8033-0835dfe2f1e0"
+    },
+    {
+      "claim_id": "042d3e2a-768a-4302-991e-e7b2ae14d677",
+      "result_id": "8e3af0f6-84ca-4118-8799-7dd56bb772dc"
+    },
+    {
+      "claim_id": "c3c19266-1590-4dbe-b4d0-f0cecc764ff8",
+      "result_id": "8e3af0f6-84ca-4118-8799-7dd56bb772dc"
+    },
+    {
+      "claim_id": "7a4048a6-dba8-4c02-b566-5e5d23df15ce",
+      "result_id": "8e3af0f6-84ca-4118-8799-7dd56bb772dc"
+    },
+    {
+      "claim_id": "061a27ac-901c-4ae5-9fde-df7ddc310866",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "ce073dfd-b948-477c-beac-a60d65489cb6",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "c1a6cf3c-9ef5-41ed-9068-58dd4ed800ce",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "6c1cb40a-ade0-444d-b8e8-610bbbb71008",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "471c8a20-c9d0-4749-9655-8d69fcf9e423",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "d1aa2ae4-11ef-498f-9bfe-7f0ec1eba6a2",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "99a3f967-16fd-496c-a308-cfbeeb0a8e02",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "630d08fe-f04e-49e0-ad54-467fbd6fc718",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "dba1431d-7549-4aaf-8b20-5c6fd1def83d",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "f715487a-4f7a-41e8-9f38-437b1f3286f2",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "5aeb7bc2-4cef-4d28-afab-03a0371e1dd5",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "7d75866c-eeae-4786-9ac4-cd432d7c1647",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "2432989b-ab55-48db-936f-0ed241b10430",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "94903cf6-e55d-406b-8f3e-a240a7d5e4de",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "f1fcb7cf-d4be-49fb-9520-c3e6d5c8f79c",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "bd97da61-1e67-4133-b418-58dd4ab322d3",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "e0b616f0-f4ed-4a3d-84bc-1d4ffae4e8ac",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "3b81ae82-8060-4ee1-a109-e1cb2b1c0aad",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "d0b4257e-15bf-46fa-a612-56a558ab724f",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "438aa880-62f0-4829-9dc6-0e9050e4f9c5",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "d20c087e-cbb6-4e74-948d-89e21cefcb2f",
+      "result_id": "dfbae299-bdd5-4487-9bde-976ac644d027"
+    },
+    {
+      "claim_id": "934bf924-79a0-42d2-a410-cd0648c1aeaa",
+      "result_id": "5b8ec249-0fe6-4c80-8aa9-eafd9b5ada23"
+    },
+    {
+      "claim_id": "07423e48-5c19-4a55-b32a-e695e44f8ac6",
+      "result_id": "5b8ec249-0fe6-4c80-8aa9-eafd9b5ada23"
+    },
+    {
+      "claim_id": "6a1ad3b1-2c06-43a2-b56e-93da8256ea2a",
+      "result_id": "a778ac32-131e-4d62-a3f3-bf544dc72a99"
+    },
+    {
+      "claim_id": "1f39a60c-ab0a-4c1b-9ba0-ee612f236105",
+      "result_id": "a778ac32-131e-4d62-a3f3-bf544dc72a99"
+    },
+    {
+      "claim_id": "e6d37c29-abf3-4887-baa9-b277020e415c",
+      "result_id": "a778ac32-131e-4d62-a3f3-bf544dc72a99"
+    },
+    {
+      "claim_id": "0224b98d-e185-46aa-81b6-1c25f6d8ebe1",
+      "result_id": "2d63b29c-2b0d-4022-8be8-5cfc8660000d"
+    },
+    {
+      "claim_id": "365cc478-4520-498b-8279-63022485e592",
+      "result_id": "2d63b29c-2b0d-4022-8be8-5cfc8660000d"
+    },
+    {
+      "claim_id": "06d97c5f-3606-42e9-a8dd-97080239042b",
+      "result_id": "a77fae46-d025-4c83-a630-7712d62e9425"
+    },
+    {
+      "claim_id": "42e31228-ca77-437e-a101-343ac5cf8b99",
+      "result_id": "a77fae46-d025-4c83-a630-7712d62e9425"
+    }
+  ],
+  "comparisons": []
+}

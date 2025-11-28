@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors collected soil samples from five continents and multiple biomes, extracted DNA, amplified AD and KS domains using degenerate primers, and sequenced 185 samples using 454 pyrosequencing. The dataset was processed using quality filtering, chimera removal, and clustered into OTUs at 5% sequence distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 and C76-C84 describe a comprehensive and well-documented sampling and sequencing methodology. The methods are appropriately cited, include technical details (primer sequences, software versions, parameters), and describe standard quality control procedures. The approach is sound for amplicon-based diversity surveys.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Despite obtaining millions of reads yielding Chao1 estimates exceeding 350,000 OTUs for each domain, rarefaction analysis indicates that the sequence space of AD and KS domains has not been saturated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by Figure 1A,C showing rarefaction curves that do not plateau. The Chao1 diversity estimates and the non-saturating curves provide clear evidence that additional sampling would reveal more diversity. This is a standard interpretation of rarefaction analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Most samples show small Jaccard distances (<3%), indicating large differences in biosynthetic gene composition. The strongest biosynthetic relationships are observed between geographically proximal samples rather than between similar biomes in different locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C34 are well-supported by Figure 1B,D,E,F showing Jaccard distance analyses and network plots. The data clearly demonstrate that geographic proximity is a stronger predictor of biosynthetic similarity than biome type at the global scale. The 3% threshold analysis provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C70"
+    ],
+    "result": "Geographic distance and biome type both correlate with biosynthetic diversity in soil environments. While geography dominates at global scales, biome type becomes important at local scales, as demonstrated by Brazilian and New Mexican examples where samples from the same biome cluster together even when geographically proximal to different biomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C37-C45, C70 are supported by comprehensive analyses in Figure 1. The Brazilian (Figure 1G) and New Mexican (Figure 1H) case studies provide clear examples of biome effects at local scales. The threshold analysis (3% vs 10% shared OTUs) effectively demonstrates the hierarchical nature of geographic and biome effects. The statistical approach using Jaccard distances is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C87",
+      "C88"
+    ],
+    "result": "Limited inter-sample relationships in the Eastern hemisphere are explained by greater geographic distances between samples. South African samples collected in close proximity show similar Jaccard metrics to Western hemisphere proximal samples. Proximity controls validate that closely related samples group together in the analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C87-C88 provide important validation and interpretation of sampling effects. The proximity controls (samples ~10m apart) demonstrate methodological validity. The Eastern hemisphere explanation is reasonable given the sampling design, though this represents a limitation. The South African exception supports the geographic distance hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C89",
+      "C90"
+    ],
+    "result": "Most AD and KS sequences from environmental DNA are distantly related to characterized gene clusters, limiting precise predictions. However, the eSNaPD algorithm can assign sequences with high similarity to known clusters, predicting the presence of congener-encoding gene clusters. The algorithm uses a 10^-45 e-value threshold and has been validated for congener recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50, C89-C90 accurately describe the capabilities and limitations of the eSNaPD approach. The e-value threshold is specified, and prior validation studies are cited (C90). The distinction between distant sequences (limiting prediction) and similar sequences (enabling prediction) is appropriately made. This provides important context for interpreting the hotspot analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60"
+    ],
+    "result": "eSNaPD analysis identifies two types of biomedically relevant hotspots: 'specific gene cluster hotspots' enriched for single congener-encoding clusters (showing local, regional, or global patterns), and 'gene cluster family hotspots' containing multiple diverse OTUs mapping to target molecule families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51-C56, C59-C60 are supported by Figure 2A,B showing clear examples of both hotspot types. The read abundance analysis (Figure 2A) and OTU diversity analysis (Figure 2B) use complementary approaches to identify hotspots. The examples (epoxomycin, oocydin, tiacumicinB, glycopeptides, nocardicin, rifamycin, bleomycin, daptomycin) demonstrate different spatial patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C61",
+      "C66"
+    ],
+    "result": "Hotspots are predicted to be enriched for bacteria encoding congeners of target metabolites, potentially simplifying discovery of new congeners and representing productive starting points for future natural product discovery efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C58, C61, C66 are speculative predictions about the utility of hotspots for future discovery. While the logic is sound (hotspots should be enriched for target clusters), these claims require experimental validation through actual discovery efforts. The predictions are reasonable but remain untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "Biosynthetic domain sequence tags serve as metrics for both specific targets and general biosynthetic diversity. Only 5-10% of sequences can be assigned by eSNaPD, so samples with the most unique OTUs likely contain the most diverse novel gene clusters. Diversity varies nearly 10-fold between environments, with Atlantic forest and Desert samples being most diverse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C67-C68 are supported by Figure 2C showing normalized OTU diversity across samples. The 5-10% assignment rate (C64) provides important context for why unassigned OTU diversity is a useful metric. The ~10-fold variation and identification of Atlantic forest and Desert as most diverse are clearly shown in the data. The rarefaction normalization to 5000 reads is appropriate for fair comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C71",
+      "C72"
+    ],
+    "result": "Most microbiomes encode largely distinct collections of bacterial secondary metabolites. Variations in biosynthetic gene content are expected to correlate with small-molecule producing capabilities, implying that geographically distinct soil microbiomes encode orthogonal, largely unexplored collections of natural products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C71-C72 represent reasonable inferences from the observed biosynthetic diversity patterns. The low Jaccard distances support distinct metabolite collections (C3). The gene-to-metabolite correlation (C71) is a well-established principle in natural products biology. The conclusion about orthogonal collections (C72) logically follows from the geographic and biome effects demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes context by citing that bacterial genome sequencing reveals untapped biosynthetic potential, soil bacteria produce important pharmaceuticals, traditional monoculture approaches access only a small fraction of biosynthetic diversity, and metagenomic methods enable study of this 'biosynthetic dark matter' through amplicon sequencing of conserved domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C20 provide well-cited background establishing the rationale for the study. These claims draw on established knowledge in the field with appropriate citations (Cragg and Newman 2013, Rappe and Giovannoni 2003, Torsvik et al. 1990/1998, Bentley et al. 2002, Ikeda et al. 2003, Dewick 2002, etc.). The logic connecting uncultured diversity, limited expression, and the need for metagenomic approaches is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C69",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "This study represents the first global examination of NRPS AD and PKS KS domain diversity in soil environments. The work represents a starting point for a global natural products atlas to guide future discovery, with microbial biosynthetic dark matter likely holding enormous biomedical potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C69, C73-C75 appropriately frame the novelty and significance of the work. The claim of 'first global examination' (C18) appears justified given the scope (185 samples, 5 continents). The forward-looking statements (C73-C75) are appropriately speculative about future applications while being grounded in the demonstrated capabilities of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C91",
+      "C92"
+    ],
+    "result": "Ecological distances were calculated using Jaccard metrics and geographic distances using great circle distance. NRPS/PKS clusters typically have multiple domains, and hits to all domains in a cluster were aggregated in analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C91-C92 describe appropriate analytical methods with proper citations. The Jaccard metric is standard for ecological distance, great circle distance is appropriate for geographic calculations, and aggregating hits across multiple domains in a cluster is a reasonable approach given the modular nature of NRPS/PKS systems.",
+    "result_type": "MINOR"
+  }
+]

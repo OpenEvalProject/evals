@@ -1,0 +1,1591 @@
+{
+  "submission": {
+    "id": "94d64ef7-6531-4e3b-9a95-01a92ce38779",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:41:57.760875Z",
+    "updated_at": "2025-11-28T19:41:57.760875Z"
+  },
+  "content": [
+    {
+      "id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "submission_id": "94d64ef7-6531-4e3b-9a95-01a92ce38779",
+      "content_type": "manuscript",
+      "content_text": "# Complete dissection of transcription elongation reveals slow translocation of RNA polymerase II in a linear ratchet mechanism\n\n## Authors\n\n- Manchuta Dangkulwanich<sup>1</sup>\n- Toyotaka Ishibashi<sup>1</sup>\n- Shixin Liu<sup>1</sup>\n- Maria L Kireeva<sup>5</sup>\n- Lucyna Lubkowska<sup>5</sup>\n- Mikhail Kashlev<sup>5</sup>\n- Carlos J Bustamante<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Jason L Choy Laboratory of Single-Molecule Biophysics University of California, Berkeley Berkeley United States\n2. Department of Chemistry University of California, Berkeley Berkeley United States\n3. California Institute for Quantitative Biosciences University of California, Berkeley Berkeley United States\n4. Department of Physics Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n5. Gene Regulation and Chromosome Biology Laboratory Center for Cancer Research\u2013National Cancer Institute Frederick United States\n6. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n7. Physical Biosciences Division Lawrence Berkeley National Laboratory Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring transcription elongation, RNA polymerase has been assumed to attain equilibrium between pre- and post-translocated states rapidly relative to the subsequent catalysis. Under this assumption, recent single-molecule studies proposed a branched Brownian ratchet mechanism that necessitates a putative secondary nucleotide binding site on the enzyme. By challenging individual yeast RNA polymerase II with a nucleosomal barrier, we separately measured the forward and reverse translocation rates. Surprisingly, we found that the forward translocation rate is comparable to the catalysis rate. This finding reveals a linear, non-branched ratchet mechanism for the nucleotide addition cycle in which translocation is one of the rate-limiting steps. We further determined all the major on- and off-pathway kinetic parameters in the elongation cycle. The resulting translocation energy landscape shows that the off-pathway states are favored thermodynamically but not kinetically over the on-pathway states, conferring the enzyme its propensity to pause and furnishing the physical basis for transcriptional regulation.\n\n## Introduction\n\nTranscription constitutes the first and a central regulatory step for gene expression (Greive and von Hippel, 2005; Coulon et al., 2013). During the process of RNA synthesis, RNA polymerase (RNAP) converts the energy from chemical catalysis of the nucleoside triphosphate (NTP) into mechanical translocation along the DNA template. Two classes of mechanisms have been offered to describe the mechanochemical coupling of transcription elongation. The first class, known as the \u2018power stroke\u2019 mechanism, suggests that the forward translocation of RNAP is directly driven by a chemical step such as the release of the pyrophosphate (PPi) (Yin and Steitz, 2004). The second class, known as the \u2018Brownian ratchet\u2019 mechanism, postulates that the polymerase oscillates back and forth on the DNA template between a pre- and a post-translocated state at the beginning of each nucleotide addition cycle, and that such thermally-driven motions are rectified to the post-translocated state by the incorporation of the incoming NTP (Guajardo and Sousa, 1997). After extensive structural and biochemical investigations, it is now generally thought that multi-subunit RNAPs, including bacterial and eukaryotic enzymes, function through the Brownian ratchet mechanism (Komissarova and Kashlev, 1997a; Bai et al., 2004; Bar-Nahum et al., 2005; Brueckner and Cramer, 2008). This mechanism received further support from single-molecule studies, which followed the dynamics of individual transcription elongation complexes (TECs) (Abbondanzieri et al., 2005; Bai et al., 2007; Larson et al., 2012). Nonetheless, in order to explain the relationship between the elongation velocity and the external force applied to RNAP obtained from single-molecule experiments, the classical linear ratchet mechanism (Figure 1) had to be modified such that the incoming NTP must also bind to the pre-translocated TEC (Figure 1\u2014figure supplement 1) (Abbondanzieri et al., 2005; Larson et al., 2012). In the pre-translocated TEC, the primary nucleotide binding site is occupied by the 3\u2032-end of the nascent transcript. Thus, the branched Brownian ratchet scheme necessarily requires a secondary NTP binding site on the enzyme. However, the precise location of this secondary site and the mechanism by which the NTP is transferred to the primary site remain poorly defined.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig1-v1.jpg)\n\n**Figure 1.:** The nucleotide addition phase and the pausing phase are colored in green and blue, respectively. At the beginning of a nucleotide addition cycle, the transcription elongation complex (TEC) with a transcript length of n thermally fluctuates between the pre-translocated state (TECn,0) and the post-translocated state (TECn,1) with a forward rate constant k1 and a reverse rate constant k\u22121. After translocation, the incoming NTP binds to the active site with a binding rate constant k2 and a dissociation rate constant k\u22122. NTP binding is followed by NTP sequestration, bond formation, and PPi release, which are collectively described by a single catalysis rate constant k3 in our study. Upon the release of the PPi, TEC is reset to the pre-translocated state (TECn+1,0) and ready for the next nucleotide addition cycle. From the pre-translocated state, the polymerase can also enter the off-pathway pausing phase by backtracking. The pausing kinetics are determined by the backward stepping rate constants kbn and forward stepping rate constants kfn. The inset shows cartoon configurations of the TEC in a pre-translocated and a post-translocated state.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** This kinetic model, proposed by Larson et al. (Larson et al., 2012), allows NTP to bind to the TEC both before and after translocation, postulating a secondary nucleotide binding site for NTP binding to the pre-translocated TEC (TECn,0). Additionally, the model assumes rapid forward and reverse translocation of the polymerase and hence describes the translocation step simply with an equilibrium constant K\u03b4.\n\nPausing is an off-pathway process that plays crucial roles in the regulation of transcription elongation (Landick, 2006; Nudler, 2012). In one view of the mechanisms of transcriptional pausing, RNAP first enters an elemental pause state (Herbert et al., 2006; Toulokhonov et al., 2007; Sydow et al., 2009), whose structural evidence was recently presented in bacterial RNAP (Weixlbaumer et al., 2013). However, similar evidence is lacking for eukaryotic polymerases. These elemental pauses can be subsequently stabilized into longer-lived pauses by the formation of a hairpin structure in the nascent RNA transcript or by RNAP backtracking (Artsimovitch and Landick, 2000; Herbert et al., 2008). The backtracking process is caused by upstream movements of the polymerase, displacing the 3\u2032-end of the nascent RNA away from the active site into the secondary channel of the enzyme (Nudler et al., 1997; Komissarova and Kashlev, 1997b). An alternative view poses that most pauses are attributed to backtracking, which can be described as a one-dimensional random walk of the enzyme along the DNA template (Galburt et al., 2007; Mejia et al., 2008; Depken et al., 2009; Hodges et al., 2009). RNA synthesis resumes when the polymerase diffusively realigns its active site with the 3\u2032-end of the transcript.\n\nBoth the nucleotide addition phase and the pausing phase are closely regulated by conserved structural motifs near the active center of the polymerase, namely the bridge helix and the trigger loop (TL) (Bar-Nahum et al., 2005; Wang et al., 2006; Vassylyev et al., 2007; Brueckner and Cramer, 2008; Kaplan et al., 2008; Tan et al., 2008). In order to understand the mechanism of transcription and its regulation, it is important to achieve a detailed description of both on- and off-pathway kinetics of the elongation reaction. Previous efforts to dissect the kinetic scheme of transcription elongation have assumed that the forward and reverse translocation steps of the Brownian ratchet occur in rapid equilibrium relative to the chemical steps in the nucleotide addition cycle (Guajardo and Sousa, 1997; Bai et al., 2004; Abbondanzieri et al., 2005; Tadigotla et al., 2006). However, the assumption of fast translocation equilibrium has never been experimentally validated. In fact, recent studies suggested that the translocation step may be partially rate-limiting for the nucleotide addition cycle, which gives rise to the heterogeneous elongation rates at different template positions (Nedialkov et al., 2003; Kireeva et al., 2010; Maoil\u00e9idigh et al., 2011; Malinen et al., 2012; Nedialkov et al., 2012; Imashimizu et al., 2013).\n\nIn this work, we sought to achieve a comprehensive kinetic characterization of transcription elongation without making any assumption about the rate-limiting mechanism of the reaction. We used an optical tweezers assay to follow the transcription trajectories of single yeast RNA polymerase II (Pol II) molecules under a variety of conditions, including varying NTP concentrations, assisting and opposing applied forces, and different tracks (bare and nucleosomal DNA). In vivo, eukaryotic DNA is organized around histone octamers to form nucleosomes, which impose physical barriers to transcription elongation. We have previously demonstrated that a transcribing Pol II cannot actively unravel a wrapped nucleosome. Instead, the polymerase pauses and waits until the local nucleosomal DNA spontaneously unwraps and permits Pol II to advance (Hodges et al., 2009; Bintu et al., 2012). Here we used the nucleosomal barrier as a tool to specifically perturb forward translocation of a transcribing Pol II and separately measured the forward and reverse translocation rates. Surprisingly, we found that the forward translocation rate is of the same order of magnitude as the catalysis rate, in contradiction to previous assumptions of fast translocation. This finding reveals that translocation and catalysis together constitute the rate-limiting steps in the nucleotide addition cycle. As a consequence, we were able to rationalize the observed force\u2013velocity relationship of the enzyme with a linear Brownian ratchet scheme in which the incoming NTP only binds to the post-translocated TEC, thus reconciling bulk and single-molecule data and arriving at a unifying view of the transcription elongation process. We further obtained all the major kinetic parameters in the nucleotide addition phase and the pausing phase of the elongation cycle. The energy landscape for transcription elongation derived from these parameters shows that: (i) the enzyme thermodynamically favors the pre-translocated state to the post-translocated state; (ii) entry into the 1-basepair (bp) backtracked state is easier than into further backtracked states; and (iii) from the pre-translocated state, the enzyme thermodynamically favors the backtracked states, but kinetically favors forward translocation. We also applied this analysis to a TL mutant Pol II, Rpb1-E1103G (Malagon et al., 2006), to quantitatively elucidate the roles of the TL in transcription elongation. Our results indicate that the conformational transitions of the TL control enzyme translocation, catalysis, and pausing, rendering it a vital target element for transcriptional regulation.\n\n## Results\n\n### NTP concentration dependence of elongation velocity and pausing frequency\n\nThe Brownian ratchet kinetic scheme for the nucleotide addition cycle of transcription elongation (Figure 1) can be simplified to: \n\n$$\nTEC_{n,0}\u21c4k_{\u22121}k_{1}TEC_{n,1}\u21c4k_{\u22122}k_{2}[NTP]TEC_{n,1\u22c5NTP}\u2192k_{3}TEC_{n+1,0}\n$$\n\nwhere k1 and k\u22121 are the forward and reverse translocation rate constants, k2 and k\u22122 are the NTP binding and dissociation rate constants, and k3 is the combined catalysis rate constant that includes NTP sequestration, bond formation, and PPi release. Because of the large equilibrium constant of transcription elongation and the very low PPi concentration (1 \u03bcM) in the buffer, k3 was considered essentially irreversible (Erie et al., 1992). Using the concept of net rate constants (Cleland, 1975), we can replace the reversible rate constants between two adjacent states with a single net rate constant and re-write the above scheme as:\n\n$$\nTEC_{n,0}\u2192k_{1}^{net}TEC_{n,1}\u2192k_{2}^{net}TEC_{n,1\u22c5NTP}\u2192k_{3}TEC_{n+1,0}\n$$\n\n$k_{1}^{net}$ and $k_{2}^{net}$ are the net rate constants for translocation and NTP binding, respectively, which are given by:\n\n$$\nk_{2}^{net}=k_{2}[NTP]\u22c5\\frac{k_{3}}{k_{\u22122}+k_{3}}\n$$\n\n\n\n$$\nk_{1}^{net}=k_{1}\u22c5\\frac{k_{2}^{net}}{k_{\u22121}+k_{2}^{net}}=\\frac{k_{1}k_{2}k_{3}[NTP]}{k_{\u22121}(k_{\u22122}+k_{3})+k_{2}k_{3}[NTP]}\n$$\n\nThe time the enzyme takes to finish one nucleotide addition cycle (\u03c4) equals the step size of the polymerase (d = 1 nt) divided by the pause-free velocity (v), and also equals the sum of the inverse of each net rate:\n\n$$\n\\tau=\\frac{d}{v}=\\frac{1}{k_{1}^{net}}+\\frac{1}{k_{2}^{net}}+\\frac{1}{k_{3}}\n$$\n\nPlugging Equations 1 and 2 into Equation 3 yields the following expression for the pause-free velocity:\n\n$$\nv=\\frac{k_{1}k_{3}}{k_{1}+k_{3}}\u22c5\\frac{[NTP]}{\\frac{(k_{1}+k_{\u22121})\u22c5(k_{\u22122}+k_{3})}{(k_{1}+k_{3})\u22c5k_{2}}+[NTP]}\u22c5d\n$$\n\nWe note that this expression is more general than those shown in previous studies (Abbondanzieri et al., 2005; Bai et al., 2007), as it is derived without assuming local equilibration of translocation and NTP binding. In particular, we describe the kinetics of the translocation step with k1 and k\u22121, instead of a single equilibrium constant K\u03b4 = k\u22121/k1. Such treatment is a prerequisite to explicitly determine the forward and reverse translocation rates. Equation 4 can be simplified to the Michaelis\u2013Menten equation form:\n\n$$\nv=\\frac{V_{max}[NTP]}{K_{M}+[NTP]}\n$$\n\nwhere $V_{max}=\\frac{k_{1}k_{3}}{k_{1}+k_{3}}\u22c5d$, and $K_{M}=\\frac{k_{1}+k_{\u22121}}{k_{1}+k_{3}}\u22c5\\frac{k_{\u22122}+k_{3}}{k_{2}}$.\n\nWe followed the transcriptional dynamics of individual Pol II molecules with a dual-trap optical tweezers instrument. One laser trap holds a polystyrene bead attached to a stalled Pol II molecule, while the other trap holds another bead attached to the upstream DNA template (assisting force geometry; Figure 2A) or to the downstream template (opposing force geometry, not shown). Upon addition of NTP, transcription restarts, resulting in a change of the DNA tether length and thereby a variation of the force applied to Pol II. Single-molecule transcription trajectories were collected at a range of NTP concentrations (35 \u03bcM\u20132 mM) (Figure 2B,C). The relationship between pause-free velocity (v) and [NTP] for the wild-type enzyme fits well to Equation 5, with Vmax = 25 \u00b1 3 nt/s and KM = 39 \u00b1 12 \u03bcM (errors are SEM) (Figure 2D, gray line). We also examined the dynamics of the E1103G mutant Pol II, which is known to transcribe DNA at a faster overall velocity than the wild-type (Figure 2B,C) (Malagon et al., 2006; Kireeva et al., 2008). We found that the maximum pause-free velocity of the mutant is \u223c1.5-fold higher than that of the wild-type, with Vmax = 38 \u00b1 5 nt/s and KM = 62 \u00b1 15 \u03bcM (Figure 2D, blue line).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig2-v1.jpg)\n\n**Figure 2.:** (A) Experimental setup for the single-molecule transcription assay. Each of the two optical traps holds a 2.1-\u03bcm polystyrene bead. Biotinylated Pol II is attached to the streptavidin (SA) bead. The upstream DNA is attached to the antibody (AD) bead via the digoxigenin\u2013antidigoxigenin linkage. The black arrow indicates the direction of transcription. A nucleosome can be loaded on the downstream DNA as shown. (B) Example transcription trajectories of the wild-type Pol II at 50 \u03bcM NTP on bare DNA, 1 mM NTP on bare DNA, and 1 mM NTP in the presence of a nucleosome. The nucleosome positioning sequence (NPS) is represented by the yellow shaded region. (C) Example transcription trajectories of the E1103G mutant Pol II under various conditions. (D) Pause-free velocities of the wild-type (black) and mutant Pol II (blue) at various NTP concentrations. Dashed lines are fits to the Michaelis\u2013Menten equation (Equation 3; R2 = 0.80 for the wild-type; R2 = 0.85 for mutant). (E) The apparent pause densities (\u03c1pause) of the wild-type Pol II at different NTP concentrations are plotted against the corresponding pause-free velocities (v). (F) \u03c1pause\u2013v relationship for the mutant enzyme. Error bars represent standard error of the mean (SEM).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Dashed lines are theoretical fits of the experimental data to the one-dimensional diffusion model for backtracking (Equation 8).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The transcription reactions were carried out in 40 mM KCl and quenched with EDTA after 1, 2, 5, and 20 min incubation with 1 mM NTPs.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The experiment was carried out in 40, 150, 300, 450 mM of KCl. The transcription reactions were quenched with EDTA after 10 min incubation with 1 mM NTPs. The run-off length is 612 nt. The nucleosomal dyad is located at nucleotide position 407. The arrows indicate the salt condition used in the single-molecule experiments (300 mM KCl).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The experiments were conducted at 1 mM NTP concentration. The yellow shade indicates the extended NPS region (\u2212115 bp to +85 bp relative to the dyad). The arrow on the top axis marks the position of the dyad. The same DNA sequence was used in the bulk and single-molecule assays. Both assays show the most predominant pausing about 20 bp before the dyad, consistent with previous results (Bondarenko et al., 2006).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig2-figsupp5-v1.jpg)\n\nAs shown in the example trajectories (Figure 2B,C), transcription elongation is punctuated by pauses of various durations. Pause density, \u03c1pause, is defined as the average number of pauses per bp of template transcribed. As the concentration of NTP goes up, the pause-free velocity increases and the apparent \u03c1pause, which counts pauses lasting longer than 1 s, decreases (Figure 2E). The same trend was also observed for the mutant Pol II (Figure 2F). The inverse relationship between v and \u03c1pause indicates that elongation and pausing are in kinetic competition and that pausing occurs prior to NTP binding (Artsimovitch and Landick, 2000; Davenport et al., 2000; Forde et al., 2002; Landick, 2006; Mejia et al., 2008). Note that pausing has also been observed to occur after NTP binding at certain sequences for Escherichia coli RNAP; however, yeast Pol II does not seem to employ such mechanism (Kireeva and Kashlev, 2009). The pause-free velocities and apparent pause densities at various NTP concentrations are summarized in Table 1.\n\n**Table 1.**\n Summary of pause-free velocities and apparent pause densities measured at various NTP concentrations\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Pol II</th>\n      <th>[NTP] (\u03bcM)</th>\n      <th>N</th>\n      <th>Pause-free velocity (nt/s)</th>\n      <th>Apparent pause density (bp\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"7\">wild-type</td>\n      <td>35</td>\n      <td>10</td>\n      <td>12.4 \u00b1 0.7</td>\n      <td>0.0721 \u00b1 0.0099</td>\n    </tr>\n    <tr>\n      <td>50</td>\n      <td>11</td>\n      <td>11.6 \u00b1 1.1</td>\n      <td>0.0526 \u00b1 0.0086</td>\n    </tr>\n    <tr>\n      <td>75</td>\n      <td>9</td>\n      <td>17.8 \u00b1 1.2</td>\n      <td>0.0358 \u00b1 0.0079</td>\n    </tr>\n    <tr>\n      <td>100</td>\n      <td>13</td>\n      <td>15.7 \u00b1 1.4</td>\n      <td>0.0326 \u00b1 0.0077</td>\n    </tr>\n    <tr>\n      <td>200</td>\n      <td>17</td>\n      <td>21.0 \u00b1 2.4</td>\n      <td>0.0184 \u00b1 0.0046</td>\n    </tr>\n    <tr>\n      <td>1000</td>\n      <td>44</td>\n      <td>24.7 \u00b1 1.8</td>\n      <td>0.0156 \u00b1 0.0031</td>\n    </tr>\n    <tr>\n      <td>2000</td>\n      <td>9</td>\n      <td>26.7 \u00b1 4.3</td>\n      <td>0.0188 \u00b1 0.0076</td>\n    </tr>\n    <tr>\n      <td rowspan=\"8\">E1103G</td>\n      <td>35</td>\n      <td>10</td>\n      <td>16.1 \u00b1 0.9</td>\n      <td>0.0374 \u00b1 0.0055</td>\n    </tr>\n    <tr>\n      <td>50</td>\n      <td>13</td>\n      <td>15.2 \u00b1 1.0</td>\n      <td>0.0266 \u00b1 0.0055</td>\n    </tr>\n    <tr>\n      <td>75</td>\n      <td>13</td>\n      <td>18.9 \u00b1 1.5</td>\n      <td>0.0290 \u00b1 0.0069</td>\n    </tr>\n    <tr>\n      <td>100</td>\n      <td>13</td>\n      <td>24.2 \u00b1 1.7</td>\n      <td>0.0106 \u00b1 0.0036</td>\n    </tr>\n    <tr>\n      <td>200</td>\n      <td>13</td>\n      <td>27.4 \u00b1 3.9</td>\n      <td>0.0100 \u00b1 0.0027</td>\n    </tr>\n    <tr>\n      <td>400</td>\n      <td>10</td>\n      <td>35.6 \u00b1 1.9</td>\n      <td>0.0094 \u00b1 0.0062</td>\n    </tr>\n    <tr>\n      <td>1000</td>\n      <td>96</td>\n      <td>37.6 \u00b1 4.9</td>\n      <td>0.0051 \u00b1 0.0008</td>\n    </tr>\n    <tr>\n      <td>2000</td>\n      <td>15</td>\n      <td>42.1 \u00b1 4.9</td>\n      <td>0.0083 \u00b1 0.0011</td>\n    </tr>\n  </tbody>\n</table>\n\n_Data are shown as mean \u00b1 SEM. The apparent pause densities are determined by counting pauses that last between 1 s and 120 s. N is the number of single-molecule transcription trajectories at each condition._\n\n### Determine the stepping rates during a backtracked pause\n\nBacktracking is a major mechanism for transcriptional pauses. We have previously modeled backtracking as a one-dimensional random walk of the enzyme along the DNA template (Hodges et al., 2009). In this model, Pol II diffuses back and forth on DNA with a forward stepping rate constant kf and a backward stepping rate constant kb during a backtracked pause. These rate constants are dependent on the applied force (F, which is positive for assisting forces and negative for opposing forces) according to:\n\n$$\nk_{f}=k_{0}e^{F\u22c5\u0394/k_{B}T}\n$$\n\n\n\n$$\nk_{b}=k_{0}e^{\u2212F\u22c5(1\u2212\u0394)/k_{B}T}\n$$\n\nwhere k0 is the intrinsic zero-force stepping rate constant of Pol II diffusing along DNA during backtracking, \u0394 is the distance to the transition state for each step (taken to be 0.5 bp, or 0.17 nm), kB is the Boltzmann constant, and T is the temperature (kBT = 4.11 pN\u00b7nm at 25\u00baC). The probability density of pause durations, \u03c8(t), is equivalent to the distribution of first-passage times for a particle diffusing on a one-dimensional lattice to return to the origin (Depken et al., 2009), and is given by:\n\n$$\n\u03c8(t)=\\sqrt{\\frac{k_{f}}{k_{b}}}\\frac{exp[\u2212(k_{f}+k_{b})t]}{t}I_{1}(2t\\sqrt{k_{f}k_{b}})\n$$\n\nwhere I1 is the modified Bessel function of the first kind. We fit the distribution of pause durations for the wild-type enzyme on bare DNA to this model and extracted a characteristic k0 of 1.3 \u00b1 0.3 s\u22121 (Figure 2\u2014figure supplement 1, gray dashed line). Using the values of k0 and the applied force in our experiment (6.5 pN), we calculated kf and kb to be 1.7 \u00b1 0.4 s\u22121 and 1.0 \u00b1 0.3 s\u22121, respectively (Equations 6 and 7).\n\n### Pausing properties on nucleosomal DNA\n\nNext, we investigated the transcriptional dynamics of Pol II through the nucleosome by loading a histone octamer on the 601 nucleosome positioning sequence (NPS) (Lowary and Widom, 1998) (Figure 2B,C, Figure 2\u2014figure supplements 2\u20135). The wild-type enzyme displays a two-fold increase in the apparent pause density upon encountering the nucleosome (Table 2). The mean pause duration on nucleosomal DNA is significantly longer than that on bare DNA (Table 2; Figure 2\u2014figure supplement 1). Similarly, the mutant Pol II displays higher pause density and longer pause duration in the presence of a nucleosome (Table 2).\n\n**Table 2.**\n Apparent pause densities and mean pause durations on bare DNA and nucleosomal DNA in the extended NPS region\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Pol II</th>\n      <th>DNA template</th>\n      <th>N</th>\n      <th>Apparent pause density (bp\u22121)</th>\n      <th>Mean pause duration (s)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">wild-type</td>\n      <td>Bare</td>\n      <td>38</td>\n      <td>0.0153 \u00b1 0.0041</td>\n      <td>3.9 \u00b1 0.6</td>\n    </tr>\n    <tr>\n      <td>Nucleosomal</td>\n      <td>94</td>\n      <td>0.0280 \u00b1 0.0036</td>\n      <td>9.4 \u00b1 0.8</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">E1103G</td>\n      <td>Bare</td>\n      <td>85</td>\n      <td>0.0046 \u00b1 0.0015</td>\n      <td>3.9 \u00b1 0.5</td>\n    </tr>\n    <tr>\n      <td>Nucleosomal</td>\n      <td>64</td>\n      <td>0.0202 \u00b1 0.0050</td>\n      <td>7.6 \u00b1 1.0</td>\n    </tr>\n  </tbody>\n</table>\n\n_Data are shown as mean \u00b1 SEM. The extended NPS region spans \u2212115 nt to+85 nt relative to the nucleosomal dyad._\n\nIt has been shown that the nucleosomal DNA can spontaneously unwrap and rewrap around the histones (Li et al., 2005; Koopmans et al., 2008; Voltz et al., 2012). The increased pause duration of Pol II on nucleosomal DNA can be explained by rewrapping of the DNA downstream of a backtracked Pol II, which prevents the polymerase from diffusing back to the 3\u2032-end of the nascent RNA to resume transcription (Hodges et al., 2009; Bintu et al., 2012). Because one bp of nucleosomal DNA fluctuates much faster (>1000 s\u22121; see \u2018Materials and methods\u2019 for the derivation) than Pol II stepping (\u223c1 s\u22121), the nucleosomal DNA in front of the polymerase reaches wrapping/unwrapping equilibrium between each backtracking step. It follows that the pause durations on nucleosomal DNA can be drawn from the same distribution as on bare DNA, except that the effective forward stepping rate is reduced by a factor, \u03b3u, corresponding to the fraction of time the local nucleosomal DNA is unwrapped (Hodges et al., 2009), that is $k_{f(nucl)}=\\gamma_{u}\u22c5k_{f}$. The backward stepping rate kb is not affected by the nucleosome, because little histone transfer occurs in our experimental geometry where the DNA template is under tension (Hodges et al., 2009; Bintu et al., 2011) and therefore the polymerase does not encounter any roadblock when it diffuses backward. The distribution of pause durations for wild-type Pol II on nucleosomal DNA can be correctly fit by this model with a \u03b3u value of 0.6 \u00b1 0.2 (Figure 2\u2014figure supplement 1, red dashed line).\n\n### Determine the rates of forward translocation and catalysis by comparing pause-free velocities on nucleosomal DNA and bare DNA\n\nHaving understood the effect of the nucleosomal barrier on the pausing dynamics, we then turned our attention to its effect on the on-pathway elongation kinetics. Interestingly, we found that the nucleosome also delays the transcribing enzyme by modulating its pause-free velocity. As the wild-type Pol II transcribes through nucleosomal DNA at saturating [NTP], its mean pause-free velocity decreases by 14% from 26.9 \u00b1 0.8 nt/s to 23.2 \u00b1 0.6 nt/s (Figure 3A). The mutant Pol II is even more dramatically slowed down by the nucleosome, with its mean pause-free velocity reduced by 35% from 39.8 \u00b1 0.6 nt/s to 26.0 \u00b1 0.7 nt/s (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig3-v1.jpg)\n\n**Figure 3.:** (A) Pause-free velocities of the wild-type Pol II on bare DNA (black) and nucleosomal DNA (red) are plotted as a function of the transcript length. The nucleosomal dyad position corresponds to a transcript length of 407 nt. The extended NPS region (\u2212115 nt to +85 nt relative to the nucleosomal dyad) is highlighted in yellow. The arrow on the top axis marks the position of the dyad. (B) Pause-free velocities of the E1103G mutant Pol II on bare DNA (blue) and nucleosomal DNA (green) are plotted as a function of the transcript length. These experiments were conducted at 1 mM NTP. Note that after the polymerase exits the nucleosome, the velocity does not return to the same level of that on bare DNA. This observation could be rationalized if the nucleosome rolls along the DNA and remains ahead of the transcribing polymerase in a fraction of the traces. Error bars are SEM.\n\nWe have previously shown that a transcribing Pol II cannot actively open a wrapped nucleosome; instead, the enzyme passively waits for the DNA immediately in front of it to spontaneously unwrap and then translocates forward through a locally unwrapped nucleosome (Hodges et al., 2009). Since the fluctuations of local nucleosomal DNA occur orders of magnitude faster than the translocations of Pol II during backtracking, we assume that they are also much faster than the on-pathway translocation steps of Pol II. Under this assumption, local DNA reaches wrapping/unwrapping equilibrium before Pol II makes a translocation step and the forward translocation rate (k1) is effectively reduced by the fraction of time the local nucleosomal DNA is unwrapped (\u03b3u). The reverse translocation rate (k\u22121) is unlikely to be affected, again due to the lack of a roadblock against reverse translocation. Thus, according to Equation 5, the maximum pause-free velocity for nucleosomal DNA transcription is: \n\n$$\nV_{max(nucl)}=\\frac{\\gamma_{u}\u22c5k_{1}\u22c5k_{3}}{(\\gamma_{u}\u22c5k_{1})+k_{3}}\u22c5d\n$$\n\nIn comparison, the maximum pause-free velocity for bare DNA transcription is:\n\n$$\nV_{max}=\\frac{k_{1}k_{3}}{k_{1}+k_{3}}\u22c5d\n$$\n\nUsing an optimal \u03b3u value of 0.6, we solved Equations 9 and 10 and obtained k1 = 112 \u00b1 30 s\u22121 (indeed much slower than local DNA wrapping/unwrapping) and k3 = 35 \u00b1 3 s\u22121 for the wild-type. Importantly, these values show that the forward translocation rate is only three times faster than the catalysis rate and, therefore, has a significant contribution to the overall elongation velocity. For the mutant Pol II, translocation becomes even slower than catalysis (k1 = 50 \u00b1 4 s\u22121 and k3 = 195 \u00b1 65 s\u22121). The mutant\u2019s higher k3 compensates for its lower k1, rendering its overall velocity faster than that of the wild type. We note that these numbers were extracted by using the average values of the pause-free velocity and \u03b3u over the whole nucleosomal region. Such a simplifying treatment is based on the observations that both the pause-free velocity (Figure 3) and the local DNA wrapping equilibrium (Bintu et al., 2012) do not change substantially along the NPS.\n\n### The first backtracking step is distinct from subsequent steps\n\nThe pause density, \u03c1pause, is governed by the kinetic competition between pause entry and elongation. Previously, an overall elongation rate, which includes translocation, NTP binding, and catalysis, was used in the expression for \u03c1pause (Herbert et al., 2006; Hodges et al., 2009; Zhou et al., 2011). A more accurate treatment is to use the elementary rate constant in the elongation pathway directly connected to pausing, which is the net rate constant for forward translocation, $k_{1}^{net}$ (Figure 1; Equation 2):\n\n$$\n\u03c1_{pause}=\\frac{k_{b1}}{k_{b1}+k_{1}^{net}}=\\frac{k_{b1}}{k_{b1}+\\frac{[NTP]}{\\frac{k_{\u22121}(k_{\u22122}+k_{3})}{k_{2}k_{3}}+[NTP]}\u22c5k_{1}}\n$$\n\nwhere kb1 is the rate constant of entering the 1-bp backtracked pausing state. At saturating NTP concentrations ([NTP]>>k\u22121(k\u22122+k3)/(k2k3)), $k_{1}^{net}$ becomes equivalent to k1. Hence\n\n$$\n\u03c1_{pause(sat)}=\\frac{k_{b1}}{k_{b1}+k_{1}}\n$$\n\nwhere \u03c1pause(sat) is the pause density at saturating NTP concentration. In order to obtain a true pause density, the apparent \u03c1pause needs to be corrected to include pauses shorter than 1 s that are missed by our pause detection algorithm. After such a correction (\u2018Materials and methods\u2019), the total \u03c1pause(sat) is 0.045 \u00b1 0.012 bp\u22121. Solving Equation 12 yields kb1 = 5.3 \u00b1 2.0 s\u22121. This value is approximately five times larger than subsequent backward stepping rates, which are force-biased stepping rates obtained from Equation 7 (kbn = 1.0 \u00b1 0.3 s\u22121, n\u22652). The difference between kb1 and kbn indicates that the first backtracking transition is easier to make than subsequent backtracking transitions. Using this value of kb1, along with the value of \u03b3u obtained above, we can predict a nucleosomal pause density of 0.035 \u00b1 0.015 bp\u22121 for pauses longer than 1 s, which agrees with the experimental measurement (Table 2).\n\nWe then compared the pausing kinetics between the wild-type and the mutant enzymes. Interestingly, on bare DNA, the mutation only affects the distribution of pauses that are shorter than 2 s (Figure 4A, p=0.003, Kolmogorov-Smirnov test). In contrast, the distributions of longer pauses are indistinguishable between the mutant and the wild-type Pol II (Figure 4\u2014figure supplement 1, p=0.9). It is possible to rationalize this observation if the mutation selectively influences the kinetics of the first backtracking step (kb1 and/or kf1) without affecting subsequent backtracking steps, given that pauses of short durations involve small backtracking excursions and that entering the 1-bp backtracked state is distinct from entering longer backtracked ones (kb1 is different from kbn, n\u22652). The first backward stepping rate (kb1) only influences the pause density but not the pause duration, while the first forward stepping rate (kf1) does affect the pause duration. Specifically, the increase in short pauses can be explained if the mutation increases kf1 and accelerates the return from a pause to active elongation. Indeed, Monte Carlo kinetic simulations show that setting kf1 to be larger than 4 s\u22121\u20142.4-fold higher than the wild-type value (1.7 \u00b1 0.4 s\u22121; Equation 6)\u2014can reproduce the experimentally observed pause duration distributions for the mutant Pol II on bare DNA (Figure 4A, blue dashed line) and nucleosomal DNA (Figure 4B, green dashed line, and Figure 4\u2014figure supplement 2). Moreover, by comparing the experimentally measured and simulated pause densities using different kb1 values, we can set a lower bound for the mutant\u2019s kb1 to be 2.8 s\u22121.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig4-v1.jpg)\n\n**Figure 4.:** (A) Cumulative distributions of the pause durations on bare DNA for the wild-type Pol II (black solid line) and the mutant enzyme (blue solid line). The wild-type curve is fit to the one-dimensional random walk model for backtracked pausing (gray dashed line). The blue dashed line represents the simulated pause duration distribution for the mutant enzyme, using a kf1 value of 4 s\u22121. (B) Cumulative distributions of the pause durations in the nucleosome region for the wild-type enzyme (red solid line) and the mutant enzyme (green solid line). The wild-type curve is fit to the one-dimensional diffusion model for backtracked pausing, using a \u03b3u value of 0.6 (red dashed line). The green dashed line is the simulated pause duration distribution for nucleosomal DNA transcription by the mutant enzyme, using a kf1 value of 4 s\u22121.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The curves for the wild-type and the E1103G mutant Pol II are statistically indistinguishable (P = 0.9, Kolmogorov-Smirnov test).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The square of the difference between the experimental and simulated data is plotted as a function of kf1 used in the simulation.\n\nTaken together, we have shown that the rate of entering the 1-bp backtracked state is higher than those of entering further backtracked states, and that the E1103G mutation modulates the transition kinetics between the 1-bp backtracked state and the pre-translocated state. Until now, kf1 and kb1 have been assumed to be identical with the other stepping rates during backtracking (kfn and kbn, n\u22652) (Galburt et al., 2007; Hodges et al., 2009; Bintu et al., 2012). Our data here suggest that the first backtracking step should be treated differently, consistent with published structural data (Wang et al., 2009; Cheung and Cramer, 2011) (see \u2018Discussion\u2019).\n\n### Determine the rate of reverse translocation\n\nWe have determined the rates of forward translocation (k1) and catalysis (k3) in the nucleotide addition cycle and shown that they are comparable. What remains unknown is the reverse translocation rate k\u22121, which may also affect the elongation velocity under sub-saturating NTP conditions (Equation 4). To determine k\u22121, we examined the pause densities measured at various NTP concentrations. Equation 11 can be re-written as:(13)\u03c1pause=kb1kb1+[NTP]k\u22121Kk3+[NTP]\u22c5k1where K = (k\u22122+k3)/k2. The total \u03c1pause as a function of [NTP] fits well to Equation 13 (Figure 5A,B). Using the values of k1, k3, and kb1 determined above, we obtained k\u22121K equal to (4.7 \u00b1 0.5) \u00d7 103 \u00b5M\u00b7s\u22121 and (2.5 \u00b1 0.4) \u00d7 104 \u00b5M\u00b7s\u22121 for the wild-type and the mutant enzymes, respectively.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig5-v1.jpg)\n\n**Figure 5.:** (A) The total pause density for the wild-type Pol II (black circles) is plotted against the NTP concentration. The gray dashed line is the fit to Equation 13 (R2 = 0.93). (B) \u03c1pause\u2013[NTP] relationship (blue squares) for the mutant Pol II is fit to Equation 13 (blue dashed line, R2 = 0.89).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The apparent pause densities obtained experimentally for the E1103G Pol II are plotted against the NTP concentration (blue squares). Simulated pause densities using a K value of 1, 20, 40, 100, and 200 \u03bcM are shown in blue, purple, red, orange, and green dashed lines, respectively. The simulated curve starts to deviate from the experimental data once K exceeds 100 \u03bcM.\n\nWe then revisited the relationship between the pause-free velocity and [NTP] (Figure 2D), which follows Michaelis\u2013Menten kinetics. According to Equation 5, the Michaelis constant KM is expressed as:\n\n$$\nK_{M}=\\frac{k_{1}+k_{\u22121}}{k_{1}+k_{3}}\u22c5\\frac{k_{\u22122}+k_{3}}{k_{2}}=\\frac{k_{1}+k_{\u22121}}{k_{1}+k_{3}}\u22c5K\n$$\n\nPlugging the values of KM, k1, k3, and k\u22121K into Equation 14 yields the values of K and k\u22121 for the wild-type Pol II: K = 9.2 \u00b5M and k\u22121 = 510 s\u22121. We could further calculate the translocation equilibrium constant, K\u03b4 = [pre-translocated]/[post-translocated] = k\u22121/k1 = 4.6. This result indicates that the enzyme favors the pre-translocated state to the post-translocated one, in agreement with most previous reports (Bar-Nahum et al., 2005; Bai et al., 2007; Kireeva et al., 2008; Maoileidigh et al., 2011). For the mutant enzyme, we could set an upper bound of K to be 100 \u00b5M and a lower bound of k\u22121 to be 210 s\u22121 (Figure 5\u2014figure supplement 1). Assuming that the mutant shares a similar K value with the wild-type, we calculated k\u22121 to be \u223c2700 s\u22121 and K\u03b4 to be \u223c54 for the mutant Pol II (see \u2018Materials and methods\u2019 for a discussion of this assumption).\n\n### Force\u2013velocity relationship\n\nA central piece of evidence previously used to favor a branched kinetic scheme (Figure 1\u2014figure supplement 1) over a simpler linear scheme (Figure 1) for the nucleotide addition cycle is the relationship between the pause-free velocity (v) and the applied force (F) (Abbondanzieri et al., 2005; Larson et al., 2012). However, in those studies, translocation was assumed to be in rapid equilibrium relative to catalysis. Having explicitly determined the translocation rates (k\u00b11) and found that the forward translocation rate (k1) is comparable to the catalysis rate (k3), we went on to examine whether a linear kinetic scheme (Figure 1) is sufficient to explain the F\u2013v relationship, which for such scheme can be expressed as:\n\n$$\nv(F)=\\frac{k_{1}(F)\u22c5k_{3}}{k_{1}(F)+k_{3}}\u22c5\\frac{[NTP]}{\\frac{(k_{1}(F)+k_{\u22121}(F))\u22c5K}{k_{1}(F)+k_{3}}+[NTP]}\u22c5d\n$$\n\nWe assume that only the translocation transitions in the nucleotide addition cycle are force-sensitive and that the translocation rates depend on force according to the Boltzmann-type equation: k1(F)=k1(0)\u22c5eF\u03b4/kBT, and k\u22121(F)=k\u22121(0)\u22c5e\u2212F\u22c5(1\u2212\u03b4)/kBT, where \u03b4 is the distance to the transition state for forward translocation, the only unknown variable left in Equation 15. We measured the pause-free velocity at different applied forces for both wild-type and mutant enzymes and obtained values in good agreement with previously published single-molecule data (Larson et al., 2012) (Figure 6A,B). The velocity of the wild-type enzyme shows a weak but detectable dependence on force, while the velocity of the mutant displays a much stronger force dependence. The F\u2013v plots can be fit well to Equation 15 with \u03b4 of 0.46 \u00b1 0.09 bp for the wild-type (Figure 6A) and 0.24 \u00b1 0.05 bp for the mutant (Figure 6B). Therefore, it is indeed possible to explain the observed force\u2013velocity relationship of transcription elongation with a classic, non-branched Brownian ratchet mechanism, in which NTP binding occurs after translocation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig6-v1.jpg)\n\n**Figure 6.:** (A) The pause-free velocity of the wild-type Pol II is plotted against the applied force. Experimental data in the present study are shown in solid squares (error bars indicate SEM). Open triangles represent data from a previously published single-molecule study (Larson et al., 2012). The combined data are fit to the force-velocity relationship predicted by a linear Brownian ratchet model (dashed line), yielding a characteristic distance to the transition state \u03b4 = 0.46 \u00b1 0.09 bp (error is SEM, R2 = 0.88). Positive and negative force values indicate assisting and opposing forces, respectively. (B) The force-velocity relationship for the mutant Pol II. \u03b4 = 0.24 \u00b1 0.05 bp for the mutant (R2 = 0.85).\n\n## Discussion\n\n### Rate-limiting steps in the Brownian ratchet mechanism\n\nRNAP transcribes DNA through a multi-step kinetic pathway. The rate-limiting nature of the various steps in the nucleotide addition cycle has so far remained largely conjectural. Almost all the existing kinetic studies of transcription elongation relied on the major assumption that translocation and NTP binding follow rapid equilibrium kinetics. As a result, the catalytic step occurring after NTP binding has been assigned to be rate-limiting of the overall elongation reaction.\n\nThe linear Brownian ratchet mechanism that assumes fast translocation equilibrium predicts that, as the NTP concentration increases, the force-sensitivity of the elongation velocity decreases and eventually vanishes, because the enzyme spends less time in the load-sensitive translocation steps. However, the F\u2013v relationships of the enzyme obtained from optical tweezers studies have shown significant dependence of elongation velocity on external force even at saturating NTP concentrations (Abbondanzieri et al., 2005; Bai et al., 2007; Larson et al., 2012), in contradiction to the above prediction. To account for this discrepancy, a modified, branched ratchet model was proposed in which the NTP must also bind to a secondary site on the polymerase in the pre-translocated configuration. Although the existence of such additional binding site may be rationalized by the downstream allosteric site (Holmes and Erie, 2003; Gong et al., 2005), the \u2018E\u2019 site or pre-insertion site (Westover et al., 2004; Temiakov et al., 2005), or the tilted hybrid structure (Cheung et al., 2011), whether it constitutes a significant pathway in the elongation reaction and how it is related to the primary nucleotide binding pathway remain obscure. More importantly, the branched model neglects the possibility that the translocation steps may not be as fast as assumed.\n\nIn this study, we tested this possibility of slow translocation by placing a nucleosome in the path of the transcribing polymerase and directly determining the rates of forward and reverse translocation. Our analyses show that the forward translocation rate is in fact within the same order of magnitude as the catalysis rate. For the wild-type Pol II, k1 is only 2.5 times higher than k3 (Figure 7A; Table 3). For the E1103G mutant, k1 even becomes the slowest step in the nucleotide addition cycle (Table 3). Hence, the translocation step is one of the rate-limiting transitions during transcription elongation. Translocation and catalysis together control the overall elongation velocity. These findings naturally explain the observed F\u2013v relationship: because the enzyme always spends a considerable amount of time in the force-sensitive pre-translocated state even at high [NTP], we should always expect a force-dependence of the velocity. Moreover, a lower k1 renders the velocity more sensitive to force, consistent with the experimental observation that the mutant Pol II shows a steeper F\u2013v curve than the wild-type (Figure 6A,B). Therefore, our results demonstrate that a linear ratchet model can explain the transcriptional kinetics of Pol II and that it is not necessary to invoke a conceptually more complicated branched model, as long as the constraint of fast translocation equilibrium is relieved. Note that although our data argue against rapid oscillation of the ratchet, they still support the notion that the enzyme is able to spontaneously diffuse along the DNA between the pre- and post-translocated states, as suggested by the Brownian ratchet mechanism.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig7-v1.jpg)\n\n**Figure 7.:** (A) A comprehensive kinetic characterization of the nucleotide addition phase (highlighted in green) and the pausing phase (highlighted in blue) for transcription by the wild-type Pol II. Inside the yellow box are the transitions affected by the nucleosomal barrier. (B) The schematic translocation free energy landscape at a given RNA length for the wild-type Pol II (solid black) and the E1103G Pol II (dashed cyan). The on-pathway elongation is highlighted in green and the off-pathway pausing is highlighted in blue.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00971/elife-00971-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The ribbons represent the minimal energy paths of the nucleotide addition cycle (green) and the off-pathway processes (blue). The nomenclature for the TECs (e.g., n,1) is the same as that used in Figure 7. Chemical and mechanical transitions are shown in two orthogonal axes. Mechanical perturbations, such as force, affect the mechanical transitions of the enzyme by tilting the landscape around the chemical axis to a first approximation, while chemical perturbations, such as [NTP] and [PPi], rotate the landscape around the mechanical axis, again to a first approximation. Two-dimensional projections on the grids highlight the relative free energy of each state.\n\n**Table 3.**\n Summary of kinetic parameters measured in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>Wild-type Pol II</th>\n      <th>E1103G Pol II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>k1 (s\u22121)</td>\n      <td>88 \u00b1 23</td>\n      <td>44 \u00b1 4</td>\n    </tr>\n    <tr>\n      <td>k\u22121 (s\u22121)</td>\n      <td>\u223c680</td>\n      <td>\u223c4.1 \u00d7 103</td>\n    </tr>\n    <tr>\n      <td>K\u03b4 = k\u22121/k1</td>\n      <td>\u223c7.7</td>\n      <td>\u223c92</td>\n    </tr>\n    <tr>\n      <td>K = (k\u22122+k3)/k2 (\u03bcM)</td>\n      <td>\u223c9.2</td>\n      <td>\u223c9.2</td>\n    </tr>\n    <tr>\n      <td>k3 (s\u22121)</td>\n      <td>35 \u00b1 3</td>\n      <td>195 \u00b1 65</td>\n    </tr>\n    <tr>\n      <td>kb1 (s\u22121)</td>\n      <td>6.9 \u00b1 2.6</td>\n      <td>\u223c3.7*</td>\n    </tr>\n    <tr>\n      <td>kf1 (s\u22121)</td>\n      <td>1.3 \u00b1 0.3</td>\n      <td>\u223c3.1*</td>\n    </tr>\n    <tr>\n      <td>kbn (s\u22121), n \u2265 2</td>\n      <td>1.3 \u00b1 0.3</td>\n      <td>1.3 \u00b1 0.3</td>\n    </tr>\n    <tr>\n      <td>kfn (s\u22121), n \u2265 2</td>\n      <td>1.3 \u00b1 0.3</td>\n      <td>1.3 \u00b1 0.3</td>\n    </tr>\n  </tbody>\n</table>\n\n_The values reported in the text were measured at 6.5 pN of applied assisting force and are normalized to zero force here. The italicized numbers indicate the parameters that are altered by the E1103G mutation. The asterisks indicate lower bounds of the corresponding values._\n\nWe extracted the values of k1 and k3 by comparing the maximum pause-free velocities on bare DNA and nucleosomal DNA (Equations 9 and 10). In principle, k1 and k3 can also be determined by examining Vmax as a function of applied force:\n\n$$\nV_{max}(F)=\\frac{k_{1}(F)\u22c5k_{3}}{k_{1}(F)+k_{3}}\u22c5d\n$$\n\nwhere $k_{1}(F)=k_{1}(0)\u22c5e^{F\\delta/k_{B}T}$. Using our data and the previously published data (Larson et al., 2012) collected at saturating [NTP] (1 mM) and various forces (Figure 6), we fit the Vmax\u2013F dependence to Equation 16 and obtained the values of k1 = 87 \u00b1 61 s\u22121, k3 = 33 \u00b1 8 s\u22121, and \u03b4 = 0.64 \u00b1 0.58 bp for the wild-type Pol II, and k1 = 65 \u00b1 37 s\u22121, k3 = 62 \u00b1 32 s\u22121, and \u03b4 = 0.64 \u00b1 0.50 bp for the mutant Pol II. Thus, the same qualitative conclusion that both translocation and catalysis are rate-limiting for the elongation reaction can be drawn from this alternative approach. Compared to the approach of using the nucleosomal barrier as a tool to determine k1 and k3, fitting the Vmax\u2013F relationship involves one additional free parameter (\u03b4) and the values are less constrained (larger errors). In the future, it is worthwhile to use either of these two approaches or both to test whether prokaryotic transcription also employs a linear ratchet mechanism.\n\n### The energy landscape for transcription elongation\n\nWith the same transcript length, RNAP is able to move back and forth on the DNA template, forming different TEC configurations (Figure 7A,B). Each translocation state corresponds to a local energy minimum (Yager and von Hippel, 1991; Bai et al., 2004; Tadigotla et al., 2006). Transitions between the pre- and post-translocated states, together with NTP binding and catalysis, constitute the active elongation pathway (Figure 7\u2014figure supplement 1, green). The enzyme can also enter the pausing pathway by transiting from the pre-translocated state to the backtracked states (Figure 7\u2014figure supplement 1, blue). The hyper-translocated states, in which the enzyme undergoes further forward translocation beyond 1 bp, are energetically unfavorable. The rate constants extracted from our single-molecule experiments translate into a free energy landscape for Pol II\u2019s mechanical translocations and chemical transitions (Figure 7B, Figure 7\u2014figure supplement 1; \u2018Materials and methods\u2019), which reveals many detailed features of the kinetics of Pol II transcription.\n\nFirst, the staircase shape formed by the energy minima of post-translocated, pre-translocated, and 1-bp backtracked states shows that the off-pathway backtracked states are thermodynamically more stable than the on-pathway states (Figure 7B). This feature confers the enzyme its propensity to enter the pausing pathway, which is the central mechanism for various types of transcriptional control, such as arrest, proofreading, co-transcriptional RNA folding, and recruitment of regulators.\n\nSecond, the energy barrier from the pre-translocated to the 1-bp backtracked state is 2.5 kBT higher than the barrier from the pre-translocated to the post-translocated state, causing k1 to be more than 10 times faster than kb1. Thus, at the beginning of each nucleotide addition cycle, the pre-translocated TEC favors the catalysis-competent post-translocated state kinetically over the 1-bp backtracked state, even though it is thermodynamically more favorable to move in the opposite direction. This property ensures that pausing only occurs sporadically so that the transcript can be synthesized within a reasonable amount of time. In addition, the barriers between neighboring backtracked states are also relatively high, preventing the enzyme from backtracking too far, which could lead to transcriptional arrest.\n\nThird, the first backtracking step appears to be unique from further backtracking steps in two aspects. Kinetically, entering the 1-bp backtracked state is easier than entering subsequent backtracked states, as reflected by the difference between kb1 and kbn (n\u22652). Such a difference is supported by structural data: the structure of an arrested Pol II complex suggests that backtracking beyond 1 bp is disfavored as it is sterically hindered by a \u2018gating\u2019 tyrosine (Rpb2-Y769) (Cheung and Cramer, 2011). Thermodynamically, transiting from the pre-translocated state to the 1-bp backtracked state is favorable, while backtracking for more steps yields no additional energetic benefit. This result can also find structural support: the first backtracked nucleotide is stabilized by a binding pocket formed by several Pol II residues, whereas the second or third backtracked nucleotide makes no additional contact to the enzyme (Wang et al., 2009).\n\nThus, our model depicts an enzyme with a delicate balance between active elongation and inactive pausing (von Hippel and Pasman, 2002). This model can serve as a framework to study the effects of DNA sequence and nascent RNA structure on transcriptional dynamics (Bai et al., 2004; Tadigotla et al., 2006; Zamft et al., 2012). Moreover, this model may improve our understanding of the control of transcription fidelity. The 1-bp backtracked state is closely associated with the proofreading process of Pol II, as the enzyme in this location preferentially cleaves the 3\u2032 dinucleotide of the RNA containing the mismatched base, empting the active site for NTP binding (Wang et al., 2009). It is possible that nucleotide misincorporation slows down forward translocation, thereby promoting the entry to the pausing pathway and the removal of the dinucleotide.\n\nIt is worth noting that we cannot definitively rule out the alternative scenario in which the first unique pausing state corresponds to a non-backtracked intermediate. Nonetheless, no evidence has been found for the universal occurrence of such an intermediate in Pol II transcription. The interpretation that most pauses in Pol II transcription are caused by enzyme backtracking is more parsimonious, especially given the corroborating structural data mentioned above.\n\n### Roles of the TL element in transcriptional regulation\n\nThe kinetic characterization of the E1103G mutant Pol II reveals that this TL mutation results in many modifications to the enzyme dynamics (Table 3). Between the pre-translocated state and the post-translocated state, the mutant is significantly more biased toward the former than the wild type (Figure 7B). This property, together with its lower forward translocation rate, renders the mutant\u2019s elongation velocity more sensitive to perturbations of its forward translocation, such as an externally applied force (Figure 6B) or the presence of a nucleosomal barrier (Figure 3B). It has been shown that the inter-conversion between pre- and post-translocated states involves the transitions of the TL between an open conformation and a wedged conformation (Brueckner and Cramer, 2008). It is plausible that the mutation modulates the enzyme\u2019s translocation kinetics by altering the rates of transition between these two conformations.\n\nFurthermore, our analyses lead to the conclusion that the faster overall elongation velocity of the mutant is due to its much greater catalysis rate despite a slower translocation step. The increase of the catalysis rate is most likely due to a faster NTP sequestration step induced by the closure of the TL (Kireeva et al., 2008). The lack of hydrogen bonding between T1095 and the mutated E1103 residue may destabilize the open state of the TL and speed up its closure (Walmacq et al., 2012).\n\nThe E1103G mutation also affects the pausing kinetics. Specifically, a decrease in the activation energy required to return from the first backtracked state to the pre-translocated state accelerates the recovery from a pause (Figure 7B). Consequently, the mutant populates the 1-bp backtracked state less than the wild-type. This property might affect the overall fidelity of transcription. It has been previously shown that E1103G mutation strongly promotes incorporation of non-cognate NMP and mismatch extension (Kaplan et al., 2008; Kireeva et al., 2008). The destabilization of the 1-bp backtracked state relative to the pre-translocated state in the E1103G mutant, established in this work, is consistent with its efficient mismatch extension and suggests that this mutation might also confer a defect in proofreading activity.\n\nTogether, our results suggest that the dynamics of TL are involved in multiple phases of transcription elongation, including translocation, catalysis, and pausing. In vivo, various transcription factors and small molecules can directly manipulate the TL dynamics and regulate transcription elongation. For example, transcription factor IIS (TFIIS) stimulates the endonuclease activity of Pol II by replacing the TL with its zinc finger domain, and thus, rescues transcription elongation by creating a new 3\u2032-end of the transcript at Pol II\u2019s active site (Kettenberger et al., 2003). In fact, the viability of yeast cells expressing only the E1103G mutant Pol II is strictly dependent on TFIIS (Malagon et al., 2006). It is interesting to investigate how these trans-acting factors modify the rate-limiting mechanism and detailed kinetics of the elongation reaction. Finally, the elementary rate constants extracted from our analyses should provide a reference frame for future computational studies aiming to fully describe the molecular trajectory of a transcribing polymerase.\n\n## Materials and methods\n\n### Proteins and DNA preparation\n\nBiotinylated wild-type and E1103G S. cerevisae Pol II (unphosphorylated C-terminal domain) were purified as previously described (Kireeva et al., 2005). The 3-kb DNA handle was prepared by PCR from Lambda DNA (NEB, Ipswich, MA) using a digoxigenin-labeled primer. The 574-bp DNA template was prepared by PCR from a modified pUC19 plasmid (Zhang et al., 2006) containing the 601 nucleosome positioning sequence (NPS) (Lowary and Widom, 1998). Each histone protein was recombinantly expressed and purified from E. coli, reconstituted to octamers (Wittmeyer et al., 2004), and loaded on the NPS-containing DNA using salt gradient dialysis (Th\u00e5str\u00f6m et al., 2004).\n\n### Assembly of transcription elongation complexes\n\nThe transcription elongation complexes (TECs) were assembled by annealing a 9-nt RNA primer (IDT, Coralville, IA) to a 93-nt template DNA, incubating the hybrid with a biotinylated Pol II, and subsequently annealing a 96-nt complementary DNA using previously published sequences and procedures (Hodges et al., 2009). The TEC was walked to a stall site by addition of ATP, CTP and GTP. In the assisting force geometry, the downstream end of the stalled TEC was ligated to the 574-bp DNA containing the 601 NPS (with or without a preloaded nucleosome), while its upstream end was ligated to the 3-kb DNA handle. In the opposing force geometry, the downstream end of the TEC was ligated to a 4-kb DNA amplified from Lambda DNA (Zamft et al., 2012). The complexes were incubated with 2.1-\u03bcm streptavidin-coated beads (Spherotech, Lake Forest, IL), and DNA tethers were formed in a dual-trap optical tweezers instrument by attaching the digoxigenin-labeled DNA handle to a 2.1-\u03bcm anti-digoxigenin IgG-coated bead. In the assisting force geometry, Pol II and its upstream DNA were under tension, while no external force was applied to the downstream nucleosome (Figure 2A). The tension in the upstream DNA prevented intra-nucleosomal loop transfer and thus ensured that the nucleosome was always ahead of the transcribing polymerase. Transcription was restarted in optical tweezers by addition of NTPs (Thermo Fisher Scientific, Waltham, MA). The transcription buffer contains 20 mM Tris-HCl (pH 7.9), 5 mM MgCl2, 10 \u03bcM ZnCl2, 1 mM \u03b2-mercaptoethanol, 1 \u03bcM pyrophosphate, 300 mM KCl, and NTPs ranging from 35 \u03bcM to 2 mM each.\n\n### Data collection and analysis\n\nPosition data were recorded at 2 kHz, averaged and decimated to 50 Hz, and filtered using a second-order Savitzky-Golay filter with a time constant of 1 s. The contour length of the DNA was calculated from the extension and force using the worm-like-chain formula of DNA elasticity (Bustamante et al., 1994) with a persistent length of 30 nm. This value of persistent length was obtained from pulling 3-kb DNA in our transcription buffer (data not shown). To alleviate calibration error and improve positional accuracy, single-molecule transcription traces that passed 85% of the template were aligned using both the stall site and the expected run-off length (Bintu et al., 2012). Shorter traces were also proportionally extended based on the average error from the run-off traces. To identify pauses, we computed the dwell time of Pol II at each nucleotide position. Pauses were identified from dwell times that were longer the average dwell time by at least a factor of two. Due to the limited spatial resolution, we joined pauses that were separated by 3 bp or fewer into a single continuous pause. Pauses longer than 1 s are most likely caused by backtracking (Maoileidigh et al., 2011) and were counted. Pause-free velocities were calculated from time derivatives of the filtered position data, with a threshold of 2 nt/s to remove pauses. All curve fittings were performed by non-linear regression of the means weighted by the inverse of the variance.\n\n### Monte Carlo simulation\n\nFrom an elongation-competent state, Pol II can either elongate by 1 nt with the net forward translocation rate $k_{1}^{net}$ and incorporate an NMP to the RNA transcript, or enter a backtracked pause by 1 nt. During a pause, Pol II diffuses forward and backward with force-biased rate constants kf and kb, respectively. For each condition, we simulated 100 trajectories and extracted the pause durations and densities to compare with the experimentally measured values.\n\n### Estimation of the timescale of local nucleosomal DNA fluctuations\n\nFluorescence correlation spectroscopy and fluorescence resonance energy transfer experiments showed that the first 20\u201330 bp of DNA at the nucleosome ends spontaneously unwrap and rewrap on the histone surface every 10\u2013250 ms (Li et al., 2005; Koopmans et al., 2008). The timescale of the 1-bp DNA fluctuations has not been directly reported but can be estimated from the experimental results above for longer DNA fluctuations. Assuming the wrapping/unwrapping kinetics is uniform along the DNA, we can model the unwrapping of a 25-bp DNA segment as:\n\n$$\n0\u21c4k_{w}k_{u}1\u21c4k_{w}k_{u}2\u21c4k_{w}k_{u}3\u2026\u21c4k_{w}k_{u}24\u2192k_{u}25\n$$\n\nwhere ku and kw are the local unwrapping and wrapping rate constants of each basepair, respectively. Since the local wrapping equilibrium constant has been shown to be close to 1 (Hodges et al., 2009; Bintu et al., 2012), we further approximate ku and kw with a single value k:\n\n$$\n0\u21c4kk1\u21c4kk2\u21c4kk3\u2026\u21c4kk24\u2192k25\n$$\n\nA net rate constant can substitute for each pair of forward and reverse rate constants (Cleland, 1975):\n\n$$\n0\u2192k_{0\u21921}^{net}1\u2192k_{1\u21922}^{net}2\u2192k_{2\u21923}^{net}3\u2026\u2192k_{23\u219224}^{net}24\u2192k_{24\u219225}^{net}25\n$$\n\nThe net rate constants are given by:\n\n$$\nk_{24\u219225}^{net}=kk_{23\u219224}^{net}=k\u22c5\\frac{k_{24\u219225}^{net}}{k_{24\u219225}^{net}+k}=\\frac{k}{2}k_{22\u219223}^{net}=k\u22c5\\frac{k_{23\u219224}^{net}}{k_{23\u219224}^{net}+k}=\\frac{k}{3}\n$$\n\n\n\n$$\n\u22ee\n$$\n\n\n\n$$\nk_{1\u21922}^{net}=k\u22c5\\frac{k_{2\u21923}^{net}}{k_{2\u21923}^{net}+k}=\\frac{k}{24}k_{0\u21921}^{net}=k\u22c5\\frac{k_{1\u21922}^{net}}{k_{1\u21922}^{net}+k}=\\frac{k}{25}\n$$\n\nThe time required for unwrapping 25 bp of DNA equals the total time of unwrapping each bp of DNA:\n\n$$\n\\tau_{0\u219225}=\\frac{1}{k_{0\u21921}^{net}}+\\frac{1}{k_{1\u21922}^{net}}+\u2026+\\frac{1}{k_{24\u219225}^{net}}=\\frac{325}{k}\u2248(10\u2212250)ms\n$$\n\nThus, the time for 1-bp DNA to unwrap from the nucleosome is expected to be less than 1 ms:\n\n$$\n\\tau_{0\u21921}=\\frac{1}{k}<1ms\n$$\n\nIn the same way, we can also show that the 1-bp DNA rewrapping occurs on a similar timescale (\u03c41\u21920 < 1 ms). In addition, molecular dynamics simulations also suggested that the local nucleosomal DNA fluctuates very fast (ns\u2013\u00b5s timescale) (Voltz et al., 2012). Therefore, we assume that the 1 bp of DNA in front of the polymerase unwraps and rewraps much faster than the translocation of the enzyme.\n\n### Correction for undercounted short pauses\n\nExperimentally we only counted pauses with lifetimes between 1 s and 120 s. The total pause density \u03c1pause, total is given by:\n\n$$\n\u03c1_{pause,total}=\\frac{k_{b}}{k_{b}+k_{1}^{net}}=\\frac{\u03c1_{pause,1<t<120}}{\\int1120\u03c8(t)dt}\n$$\n\nThe correction factor can be solved analytically to be 2.9 for the wild-type Pol II. For the mutant enzyme, the values of kf1 and kb1 are different from those for the wild-type (Table 3). We simulated transcriptional pauses using the lower bounds of kf1 and kb1 and obtained a correction factor of \u223c7 for the mutant Pol II.\n\n### Estimation of the value of K for the mutant Pol II\n\nThe value of K for the mutant Pol II (Kmutant) cannot be constrained by Equation 14 due to the relatively large experimental error. We took a different approach to constrain Kmutant by simulating the \u03c1pause\u2013[NTP] relationship with varying Kmutant values and then comparing it to the experimental data (Figure 5\u2014figure supplement 1). We found that the simulated curve substantially deviates from the experimental curve when Kmutant becomes larger than 100 \u00b5M. Hence, we set the upper bound of Kmutant to be 100 \u00b5M. Using the k\u22121K value of (2.5 \u00b1 0.4) \u00d7 104 \u00b5M\u00b7s\u22121 obtained from Equation 13, we set the lower bound of k\u22121 for the mutant to be 210 s\u22121. The notion that the NTP dissociation rate is much faster than the catalysis rate (k\u22122 >> k3) has been widely used in the kinetic studies of RNA and DNA polymerases, and is supported by biochemical evidence (Rhodes and Chamberlin, 1974; Johnson, 1993; Foster et al., 2001; Bai et al., 2004; Maoil\u00e9idigh et al., 2011). It follows from this notion that K = (k\u22122+k3)/k2 \u2248 k\u22122/k2. Thus, K becomes virtually identical to KD, the NTP dissociation constant. Because the mutated residue (Glu1103) is located distal from the NTP-interacting part of TL (Wang et al., 2006) and the E1103G mutation affects TL closure and NTP sequestration after the initial docking step (Kireeva et al., 2008), the NTP binding/dissociation kinetics are unlikely to be markedly affected by the mutation. Therefore, it is reasonable to assume that the wild-type and the mutant enzymes share similar KD values (\u223c9.2 \u00b5M). Under this assumption, we could estimate the k\u22121 value for the mutant to be \u223c2700 s\u22121.\n\n### Construction of the energy landscape\n\nThe free energy difference (\u0394\u0394G) between two neighboring translocation states was computed using the forward and reverse rate constants between these states (k+ and k\u2212):\n\n$$\n\u0394\u0394G=\u2212k_{B}T\u22c5ln(\\frac{k_{\u2212}}{k_{+}})\n$$\n\nThe height of the activation energy barrier (\u0394G\u2020) was calculated according to the Arrhenius equation:\n\n$$\nk=A\u22c5exp(\u2212\u0394G^{\u2020}/k_{B}T)\n$$\n\nwhere k is the corresponding rate constant and A is the pre-exponential factor. In this study, for illustration purposes, we made a simplifying assumption that all reaction steps share the same pre-exponential factor. A was calculated using the stepping rate constant during backtracking k0 = 1.3 s\u22121 and the barrier height between neighboring backtracked states \u0394Gb\u2020. We assumed that one DNA\u2013RNA hybrid basepair and one DNA\u2013DNA basepair in the transcription bubble must be broken before any other bonds are formed and that no other interactions contribute to the barrier (Tadigotla et al., 2006). Using the available free energy data for basepairing (Sugimoto et al., 1996; Wu et al., 2002), we estimated \u0394Gb\u2020 to be \u223c8.5 kBT, which translates to an Arrhenius pre-factor of \u223c6.4 \u00d7 103 s\u22121. The catalysis step is essentially irreversible in our experimental condition. The free energy drop after each nucleotide addition cycle is arbitrarily set to be 10 kBT.\n",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "8ea0d2d0-7baa-4d2f-a9e5-c2c439e25503",
+      "submission_id": "94d64ef7-6531-4e3b-9a95-01a92ce38779",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Xiaowei Zhuang, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00971.023](https://doi.org/10.7554/eLife.00971.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cComplete dissection of transcription elongation reveals slow translocation of Pol II in a linear ratchet mechanism\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAll three reviewers find your work of significant interest and high quality. By measuring the transcription kinetics on bare and nucleosomal DNA, this single-molecule force study dissected the transcription elongation pathway, determined each individual rate constant on the pathway, and mapped out the energy landscape for transcription elongation and backtracking. Instead of assuming that the reversible transition between pre- and post-translocated states of the nucleotide addition cycle occurs much faster than the subsequent catalysis steps, this study found that the forward translocation rate is comparable to the catalysis rate. The results suggest that a linear Brownian Ratchet Model can explain the measured behavior of transcription elongation kinetics. The reviewers feel that the findings in this work are important, the experimental design is elegant, and that the data are of high quality.\n\nThe reviewers have the following concerns regarding the use of the nucleosome barrier as a tool to separately measure the forward and reverse translocation rates. Pol II interactions with a nucleosome are rather complex and hence could complicate the interpretation of data here. One of the key assumptions is that the local nucleosomal DNA fluctuations (wrapping and unwrapping) are faster than Pol II forward translocation. Is this assumption valid for the present study, which uses nucleosomes with the 601 sequence and involves predominant transcriptional pauses close to the nucleosomal dyad? What is the evidence that wrapping/unwrapping kinetics near the dyad of the 601 nucleosome is faster than Pol II translocation? How do the different interaction strengths at different sites of the nucleosome affect the results in this work? Is it possible to obtain the same conclusion using a simpler system without involving nucleosomes? For example, the application of force can also perturb the energy landscape. k1, k3, and \u03b4 may be obtained by examining Vmax as a function of force. This approach removes the need for Equation 4 and may potentially remove the need for using nucleosomes. Given the importance of the nucleosome barrier as an experimental tool in the work, the advantages and requirements of using this system should be more clearly explained and justified in the main text.\n\nThe reviewers also feel that the manuscript is written in a very concise and dense manner. It is not easy to follow, especially for non-experts. Give that eLife has a broad audience, we suggest that you expand the manuscript to make it easier to read and understand. In particular, the derivations of various kinetic rate constants from experimentally measured quantities are nontrivial and the manuscript often relied on citations of previous papers rather than explaining clearly the rationale of how these rate constants are derived. The manuscript should be made more self-sufficient.\n",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5bf1bf07-c0be-4773-96aa-1287f87aefe6",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C1",
+      "claim": "During transcription elongation, RNA polymerase has been assumed to attain equilibrium between pre- and post-translocated states rapidly relative to the subsequent catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "During transcription elongation, RNA polymerase has been assumed to attain equilibrium between pre- and post-translocated states rapidly relative to the subsequent catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a previously held assumption that the study challenges.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "ce756284-83b5-49d6-bb81-0dd0497c5912",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C2",
+      "claim": "Recent single-molecule studies proposed a branched Brownian ratchet mechanism that necessitates a putative secondary nucleotide binding site on the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this assumption, recent single-molecule studies proposed a branched Brownian ratchet mechanism that necessitates a putative secondary nucleotide binding site on the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior single-molecule studies and their proposed mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "f9ede10b-b5b5-4312-b895-aa39c04e22c5",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C3",
+      "claim": "The forward translocation rate is comparable to the catalysis rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that the forward translocation rate is comparable to the catalysis rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental measurements throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "e294d3f1-ddb2-4018-872b-d08a78b97fe6",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C4",
+      "claim": "Translocation is one of the rate-limiting steps in the nucleotide addition cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding reveals a linear, non-branched ratchet mechanism for the nucleotide addition cycle in which translocation is one of the rate-limiting steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental finding that forward translocation rate is comparable to catalysis rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "49f30159-613d-4d99-8827-60ef56f7e44d",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C5",
+      "claim": "The off-pathway states are favored thermodynamically but not kinetically over the on-pathway states.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting translocation energy landscape shows that the off-pathway states are favored thermodynamically but not kinetically over the on-pathway states, conferring the enzyme its propensity to pause and furnishing the physical basis for transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the energy landscape constructed from measured kinetic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "9fb1734f-7e3c-424e-baef-c3893db7a5d2",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C6",
+      "claim": "Multi-subunit RNAPs, including bacterial and eukaryotic enzymes, function through the Brownian ratchet mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "After extensive structural and biochemical investigations, it is now generally thought that multi-subunit RNAPs, including bacterial and eukaryotic enzymes, function through the Brownian ratchet mechanism (Komissarova and Kashlev, 1997a; Bai et al., 2004; Bar-Nahum et al., 2005; Brueckner and Cramer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "979d0511-0413-46eb-b6ee-95ade722d62e",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C7",
+      "claim": "The classical linear ratchet mechanism had to be modified such that the incoming NTP must also bind to the pre-translocated TEC to explain the relationship between elongation velocity and external force.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, in order to explain the relationship between the elongation velocity and the external force applied to RNAP obtained from single-molecule experiments, the classical linear ratchet mechanism (Figure 1) had to be modified such that the incoming NTP must also bind to the pre-translocated TEC (Figure 1\u2014figure supplement 1) (Abbondanzieri et al., 2005; Larson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modification to the classical model proposed in previous single-molecule studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "28efa2f5-0503-4a85-876e-00c560929d43",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C8",
+      "claim": "The branched Brownian ratchet scheme necessarily requires a secondary NTP binding site on the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pre-translocated TEC, the primary nucleotide binding site is occupied by the 3\u2032-end of the nascent transcript. Thus, the branched Brownian ratchet scheme necessarily requires a secondary NTP binding site on the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the structure of the pre-translocated state and the requirements of the branched model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "2259d349-0078-4b9d-b9e2-742d47611640",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C9",
+      "claim": "The precise location of the secondary NTP binding site and the mechanism by which the NTP is transferred to the primary site remain poorly defined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the precise location of this secondary site and the mechanism by which the NTP is transferred to the primary site remain poorly defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current understanding of the branched model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "524ac8f6-e504-486f-af05-fc2404b9c343",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C10",
+      "claim": "A transcribing Pol II cannot actively unravel a wrapped nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that a transcribing Pol II cannot actively unravel a wrapped nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references prior work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "e6e63649-3bf9-4e0d-8e35-9a32630501b0",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C11",
+      "claim": "The polymerase pauses and waits until the local nucleosomal DNA spontaneously unwraps and permits Pol II to advance.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the polymerase pauses and waits until the local nucleosomal DNA spontaneously unwraps and permits Pol II to advance (Hodges et al., 2009; Bintu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of nucleosome traversal based on prior studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "295c92b4-9e4b-418a-95c7-d79feeadcceb",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C12",
+      "claim": "The maximum pause-free velocity of the E1103G mutant is approximately 1.5-fold higher than that of the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the maximum pause-free velocity of the mutant is \u223c1.5-fold higher than that of the wild-type, with Vmax = 38 \u00b1 5 nt/s and KM = 62 \u00b1 15 \u03bcM (Figure 2D, blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "c97373f5-c8ed-490d-86b3-78f53284c3c7",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C13",
+      "claim": "For wild-type Pol II, Vmax = 25 \u00b1 3 nt/s and KM = 39 \u00b1 12 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between pause-free velocity (v) and [NTP] for the wild-type enzyme fits well to Equation 5, with Vmax = 25 \u00b1 3 nt/s and KM = 39 \u00b1 12 \u03bcM (errors are SEM) (Figure 2D, gray line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured parameter from fitting experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "b8edb3c0-8bd5-4e7d-90fd-34050745d5dd",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C14",
+      "claim": "As the concentration of NTP goes up, the pause-free velocity increases and the apparent pause density decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "As the concentration of NTP goes up, the pause-free velocity increases and the apparent \u03c1pause, which counts pauses lasting longer than 1 s, decreases (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observed trend in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "a20a2797-2adb-4bf1-9528-76e67e3938db",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C15",
+      "claim": "The inverse relationship between velocity and pause density indicates that elongation and pausing are in kinetic competition and that pausing occurs prior to NTP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse relationship between v and \u03c1pause indicates that elongation and pausing are in kinetic competition and that pausing occurs prior to NTP binding (Artsimovitch and Landick, 2000; Davenport et al., 2000; Forde et al., 2002; Landick, 2006; Mejia et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed relationship, supported by citations to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "d7f6ea84-d398-43d6-a350-0c1fbf1550fb",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C16",
+      "claim": "The characteristic k0 for wild-type enzyme on bare DNA is 1.3 \u00b1 0.3 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit the distribution of pause durations for the wild-type enzyme on bare DNA to this model and extracted a characteristic k0 of 1.3 \u00b1 0.3 s\u22121 (Figure 2\u2014figure supplement 1, gray dashed line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a parameter extracted from fitting pause duration distributions to a diffusion model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "1b047e7b-0d7c-4630-b35e-44f666c7783b",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C17",
+      "claim": "Using the values of k0 and the applied force in the experiment (6.5 pN), kf and kb were calculated to be 1.7 \u00b1 0.4 s\u22121 and 1.0 \u00b1 0.3 s\u22121, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the values of k0 and the applied force in our experiment (6.5 pN), we calculated kf and kb to be 1.7 \u00b1 0.4 s\u22121 and 1.0 \u00b1 0.3 s\u22121, respectively (Equations 6 and 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These values are calculated from the measured k0 using force-dependent equations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "727abd19-0e5f-482b-94cc-d8858ff204cf",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C18",
+      "claim": "The wild-type enzyme displays a two-fold increase in the apparent pause density upon encountering the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The wild-type enzyme displays a two-fold increase in the apparent pause density upon encountering the nucleosome (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "b15ea328-d80b-40af-8ab8-55c7d3e4e459",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C19",
+      "claim": "The mean pause duration on nucleosomal DNA is significantly longer than that on bare DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean pause duration on nucleosomal DNA is significantly longer than that on bare DNA (Table 2; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of measured pause durations under different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "eb4d5ca7-2ab8-4acf-9d57-7e9888f19455",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C20",
+      "claim": "One bp of nucleosomal DNA fluctuates much faster (>1000 s\u22121) than Pol II stepping (\u223c1 s\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "Because one bp of nucleosomal DNA fluctuates much faster (>1000 s\u22121; see 'Materials and methods' for the derivation) than Pol II stepping (\u223c1 s\u22121), the nucleosomal DNA in front of the polymerase reaches wrapping/unwrapping equilibrium between each backtracking step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from calculations in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "3eeb9463-45a8-40c2-af02-bcbc24bbc785",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C21",
+      "claim": "The distribution of pause durations for wild-type Pol II on nucleosomal DNA can be correctly fit by the model with a \u03b3u value of 0.6 \u00b1 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of pause durations for wild-type Pol II on nucleosomal DNA can be correctly fit by this model with a \u03b3u value of 0.6 \u00b1 0.2 (Figure 2\u2014figure supplement 1, red dashed line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a parameter obtained from fitting experimental data to a model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "81f5ef98-a6c1-4b42-acdf-bc5a7af41c3f",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C22",
+      "claim": "As the wild-type Pol II transcribes through nucleosomal DNA at saturating [NTP], its mean pause-free velocity decreases by 14% from 26.9 \u00b1 0.8 nt/s to 23.2 \u00b1 0.6 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that the nucleosome also delays the transcribing enzyme by modulating its pause-free velocity. As the wild-type Pol II transcribes through nucleosomal DNA at saturating [NTP], its mean pause-free velocity decreases by 14% from 26.9 \u00b1 0.8 nt/s to 23.2 \u00b1 0.6 nt/s (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "3b9e41b5-9ae0-4265-85a5-52e2063959ec",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C23",
+      "claim": "The mutant Pol II is slowed down by the nucleosome by 35%, with its mean pause-free velocity reduced from 39.8 \u00b1 0.6 nt/s to 26.0 \u00b1 0.7 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant Pol II is even more dramatically slowed down by the nucleosome, with its mean pause-free velocity reduced by 35% from 39.8 \u00b1 0.6 nt/s to 26.0 \u00b1 0.7 nt/s (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "fd9c133e-025c-42d0-9edf-b88b84aa30ed",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C24",
+      "claim": "For wild-type Pol II, k1 = 112 \u00b1 30 s\u22121 and k3 = 35 \u00b1 3 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an optimal \u03b3u value of 0.6, we solved Equations 9 and 10 and obtained k1 = 112 \u00b1 30 s\u22121 (indeed much slower than local DNA wrapping/unwrapping) and k3 = 35 \u00b1 3 s\u22121 for the wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These values are calculated by solving equations using measured parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "884361af-7914-4342-9934-4461848227de",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C25",
+      "claim": "The forward translocation rate is only three times faster than the catalysis rate for wild-type Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these values show that the forward translocation rate is only three times faster than the catalysis rate and, therefore, has a significant contribution to the overall elongation velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calculated values of k1 and k3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "0555aa80-71f2-437f-b902-d8d891c96cfd",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C26",
+      "claim": "For the mutant Pol II, translocation becomes even slower than catalysis (k1 = 50 \u00b1 4 s\u22121 and k3 = 195 \u00b1 65 s\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "For the mutant Pol II, translocation becomes even slower than catalysis (k1 = 50 \u00b1 4 s\u22121 and k3 = 195 \u00b1 65 s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are calculated kinetic parameters for the mutant enzyme.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "378c3061-d113-43f8-8e66-34540eb2a267",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C27",
+      "claim": "The mutant's higher k3 compensates for its lower k1, rendering its overall velocity faster than that of the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant's higher k3 compensates for its lower k1, rendering its overall velocity faster than that of the wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of how the kinetic parameters relate to the observed velocities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "359939a0-170f-4572-b91d-2090431897bb",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C28",
+      "claim": "The total \u03c1pause(sat) is 0.045 \u00b1 0.012 bp\u22121 after correction for pauses shorter than 1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "After such a correction ('Materials and methods'), the total \u03c1pause(sat) is 0.045 \u00b1 0.012 bp\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a corrected value derived from experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "76fd55df-5d87-43bf-95fa-3ac5d8c5f958",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C29",
+      "claim": "kb1 = 5.3 \u00b1 2.0 s\u22121 for wild-type Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "Solving Equation 12 yields kb1 = 5.3 \u00b1 2.0 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This value is calculated from the corrected pause density using an equation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "8468ddca-3edc-44ae-9101-6754a164b662",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C30",
+      "claim": "kb1 is approximately five times larger than subsequent backward stepping rates (kbn = 1.0 \u00b1 0.3 s\u22121, n\u22652).",
+      "claim_type": "EXPLICIT",
+      "source": "This value is approximately five times larger than subsequent backward stepping rates, which are force-biased stepping rates obtained from Equation 7 (kbn = 1.0 \u00b1 0.3 s\u22121, n\u22652).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of calculated rate constants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "974e3f67-dfac-4f39-af5d-87563e1dd467",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C31",
+      "claim": "The difference between kb1 and kbn indicates that the first backtracking transition is easier to make than subsequent backtracking transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between kb1 and kbn indicates that the first backtracking transition is easier to make than subsequent backtracking transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the difference in rate constants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "ad099cbf-783a-423d-a92d-d9d511162158",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C32",
+      "claim": "On bare DNA, the E1103G mutation only affects the distribution of pauses that are shorter than 2 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, on bare DNA, the mutation only affects the distribution of pauses that are shorter than 2 s (Figure 4A, p=0.003, Kolmogorov-Smirnov test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical observation from comparing pause duration distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "fa8d0161-bce2-4719-9b0a-91ce704ca0f2",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C33",
+      "claim": "The distributions of longer pauses are indistinguishable between the mutant and the wild-type Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the distributions of longer pauses are indistinguishable between the mutant and the wild-type Pol II (Figure 4\u2014figure supplement 1, p=0.9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of pause duration distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "7472cd7d-5324-429b-a5ea-6417cf68a7a3",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C34",
+      "claim": "Monte Carlo kinetic simulations show that setting kf1 to be larger than 4 s\u22121 can reproduce the experimentally observed pause duration distributions for the mutant Pol II on bare DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Monte Carlo kinetic simulations show that setting kf1 to be larger than 4 s\u22121\u20142.4-fold higher than the wild-type value (1.7 \u00b1 0.4 s\u22121; Equation 6)\u2014can reproduce the experimentally observed pause duration distributions for the mutant Pol II on bare DNA (Figure 4A, blue dashed line) and nucleosomal DNA (Figure 4B, green dashed line, and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from computational simulations that match experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "020b97db-b968-4fa9-87e6-9816300c484c",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C35",
+      "claim": "A lower bound for the mutant's kb1 is 2.8 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, by comparing the experimentally measured and simulated pause densities using different kb1 values, we can set a lower bound for the mutant's kb1 to be 2.8 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a constraint derived from comparing experimental and simulated data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "7aeac58e-e9d0-4359-a467-b954e1ed02b6",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C36",
+      "claim": "For wild-type Pol II, k\u22121K equals (4.7 \u00b1 0.5) \u00d7 10\u00b3 \u00b5M\u00b7s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the values of k1, k3, and kb1 determined above, we obtained k\u22121K equal to (4.7 \u00b1 0.5) \u00d7 103 \u00b5M\u00b7s\u22121 and (2.5 \u00b1 0.4) \u00d7 104 \u00b5M\u00b7s\u22121 for the wild-type and the mutant enzymes, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This value is obtained by fitting experimental data to an equation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "4c46983e-6c8c-4ff6-b0bc-0e6675dbcd75",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C37",
+      "claim": "For mutant Pol II, k\u22121K equals (2.5 \u00b1 0.4) \u00d7 10\u2074 \u00b5M\u00b7s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the values of k1, k3, and kb1 determined above, we obtained k\u22121K equal to (4.7 \u00b1 0.5) \u00d7 103 \u00b5M\u00b7s\u22121 and (2.5 \u00b1 0.4) \u00d7 104 \u00b5M\u00b7s\u22121 for the wild-type and the mutant enzymes, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This value is obtained by fitting experimental data to an equation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "bb943253-2852-4603-b4b6-2882579a3256",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C38",
+      "claim": "For wild-type Pol II, K = 9.2 \u00b5M and k\u22121 = 510 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Plugging the values of KM, k1, k3, and k\u22121K into Equation 14 yields the values of K and k\u22121 for the wild-type Pol II: K = 9.2 \u00b5M and k\u22121 = 510 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These values are calculated from previously determined parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "878635da-bd8e-46a5-8419-5ca6d65d2ebd",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C39",
+      "claim": "The translocation equilibrium constant K\u03b4 = k\u22121/k1 = 4.6 for wild-type Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "We could further calculate the translocation equilibrium constant, K\u03b4 = [pre-translocated]/[post-translocated] = k\u22121/k1 = 4.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the ratio of measured rate constants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "8433bd9e-9178-4086-ba99-99b7df15b5ac",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C40",
+      "claim": "The enzyme favors the pre-translocated state to the post-translocated one.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the enzyme favors the pre-translocated state to the post-translocated one, in agreement with most previous reports (Bar-Nahum et al., 2005; Bai et al., 2007; Kireeva et al., 2008; Maoileidigh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the calculated K\u03b4 value and is consistent with prior literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "fc25079e-f763-4194-8b18-50f7b06b1f39",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C41",
+      "claim": "For the mutant enzyme, an upper bound of K is 100 \u00b5M and a lower bound of k\u22121 is 210 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mutant enzyme, we could set an upper bound of K to be 100 \u00b5M and a lower bound of k\u22121 to be 210 s\u22121 (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These bounds are determined by comparing simulations with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "d093812a-0622-494a-899e-d9e7eb73a58b",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C42",
+      "claim": "Assuming that the mutant shares a similar K value with the wild-type, k\u22121 is calculated to be \u223c2700 s\u22121 and K\u03b4 to be \u223c54 for the mutant Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the mutant shares a similar K value with the wild-type, we calculated k\u22121 to be \u223c2700 s\u22121 and K\u03b4 to be \u223c54 for the mutant Pol II (see 'Materials and methods' for a discussion of this assumption).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These values are calculated under a specific assumption about K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "0efb1914-d575-44b8-889f-81b1bf3c4ce4",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C43",
+      "claim": "The F\u2013v plots can be fit well to Equation 15 with \u03b4 of 0.46 \u00b1 0.09 bp for the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "The F\u2013v plots can be fit well to Equation 15 with \u03b4 of 0.46 \u00b1 0.09 bp for the wild-type (Figure 6A) and 0.24 \u00b1 0.05 bp for the mutant (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a parameter obtained from fitting force-velocity data to a model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "660a5f1b-7a76-4754-8f1d-1c42b73564ef",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C44",
+      "claim": "The F\u2013v plots can be fit well to Equation 15 with \u03b4 of 0.24 \u00b1 0.05 bp for the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The F\u2013v plots can be fit well to Equation 15 with \u03b4 of 0.46 \u00b1 0.09 bp for the wild-type (Figure 6A) and 0.24 \u00b1 0.05 bp for the mutant (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a parameter obtained from fitting force-velocity data to a model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "e900c86a-2a28-4309-a536-696359d8dc5c",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C45",
+      "claim": "It is possible to explain the observed force\u2013velocity relationship of transcription elongation with a classic, non-branched Brownian ratchet mechanism, in which NTP binding occurs after translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is indeed possible to explain the observed force\u2013velocity relationship of transcription elongation with a classic, non-branched Brownian ratchet mechanism, in which NTP binding occurs after translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the successful fitting of the force-velocity data to a linear ratchet model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "c0effd21-1e3a-4506-9895-406a4e9e2fde",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C46",
+      "claim": "For the wild-type Pol II, k1 is only 2.5 times higher than k3.",
+      "claim_type": "EXPLICIT",
+      "source": "For the wild-type Pol II, k1 is only 2.5 times higher than k3 (Figure 7A; Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of measured kinetic parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "5ba04c0c-daaa-4600-80db-0e8736f1026f",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C47",
+      "claim": "For the E1103G mutant, k1 becomes the slowest step in the nucleotide addition cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "For the E1103G mutant, k1 even becomes the slowest step in the nucleotide addition cycle (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of measured kinetic parameters for the mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "b3fdd2d1-ee62-4c4a-a4f8-31eafc0ca4a5",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C48",
+      "claim": "The translocation step is one of the rate-limiting transitions during transcription elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the translocation step is one of the rate-limiting transitions during transcription elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the measured kinetic parameters showing k1 is comparable to k3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "0e11dd87-c633-42b1-b2ed-4aa7e84a3b19",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C49",
+      "claim": "Translocation and catalysis together control the overall elongation velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Translocation and catalysis together control the overall elongation velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the finding that both steps have comparable rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "97ffdeb9-9b7f-468f-846c-864db8db4038",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C50",
+      "claim": "A lower k1 renders the velocity more sensitive to force.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a lower k1 renders the velocity more sensitive to force, consistent with the experimental observation that the mutant Pol II shows a steeper F\u2013v curve than the wild-type (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation that explains the observed difference in force-velocity curves between wild-type and mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "6a445659-57f8-4d97-855e-ffa99fd05004",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C51",
+      "claim": "The enzyme thermodynamically favors the pre-translocated state to the post-translocated state.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy landscape for transcription elongation derived from these parameters shows that: (i) the enzyme thermodynamically favors the pre-translocated state to the post-translocated state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the energy landscape constructed from measured kinetic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "3c1d4ce1-e4d9-48d8-a492-d0612d61d2f2",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C52",
+      "claim": "Entry into the 1-basepair backtracked state is easier than into further backtracked states.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) entry into the 1-basepair (bp) backtracked state is easier than into further backtracked states",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the comparison of kb1 and kbn values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "1ad4b673-86e9-43c3-8560-afca9c6ef165",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C53",
+      "claim": "From the pre-translocated state, the enzyme thermodynamically favors the backtracked states, but kinetically favors forward translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) from the pre-translocated state, the enzyme thermodynamically favors the backtracked states, but kinetically favors forward translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the energy landscape showing thermodynamic vs kinetic preferences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "a74a68c3-96ed-47e4-8685-fe13cdc3ef81",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C54",
+      "claim": "The conformational transitions of the TL control enzyme translocation, catalysis, and pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the conformational transitions of the TL control enzyme translocation, catalysis, and pausing, rendering it a vital target element for transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the analysis of the E1103G mutant effects on multiple kinetic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "004902e3-6b59-42de-9faa-1c2890592490",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C55",
+      "claim": "The off-pathway backtracked states are thermodynamically more stable than the on-pathway states.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the staircase shape formed by the energy minima of post-translocated, pre-translocated, and 1-bp backtracked states shows that the off-pathway backtracked states are thermodynamically more stable than the on-pathway states (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the energy landscape constructed from kinetic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "237d7e47-dcd0-466b-bd9b-bc815d7959b6",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C56",
+      "claim": "The energy barrier from the pre-translocated to the 1-bp backtracked state is 2.5 kBT higher than the barrier from the pre-translocated to the post-translocated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the energy barrier from the pre-translocated to the 1-bp backtracked state is 2.5 kBT higher than the barrier from the pre-translocated to the post-translocated state, causing k1 to be more than 10 times faster than kb1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the measured rate constants using the Arrhenius equation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "86f5a1f5-d05f-4480-a186-b17ba54684b2",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C57",
+      "claim": "At the beginning of each nucleotide addition cycle, the pre-translocated TEC favors the catalysis-competent post-translocated state kinetically over the 1-bp backtracked state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at the beginning of each nucleotide addition cycle, the pre-translocated TEC favors the catalysis-competent post-translocated state kinetically over the 1-bp backtracked state, even though it is thermodynamically more favorable to move in the opposite direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the kinetic and thermodynamic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "5fae0234-0417-46a9-a07f-32c14893e750",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C58",
+      "claim": "Entering the 1-bp backtracked state is easier than entering subsequent backtracked states.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetically, entering the 1-bp backtracked state is easier than entering subsequent backtracked states, as reflected by the difference between kb1 and kbn (n\u22652).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the measured difference in rate constants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "6cd81900-ea21-41c1-899d-44821624d640",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C59",
+      "claim": "Backtracking beyond 1 bp is disfavored as it is sterically hindered by a 'gating' tyrosine (Rpb2-Y769).",
+      "claim_type": "EXPLICIT",
+      "source": "Such a difference is supported by structural data: the structure of an arrested Pol II complex suggests that backtracking beyond 1 bp is disfavored as it is sterically hindered by a 'gating' tyrosine (Rpb2-Y769) (Cheung and Cramer, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural interpretation is supported by a citation to prior structural work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "a5c83f7a-b8bd-4218-ab39-b1070dceb482",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C60",
+      "claim": "Transiting from the pre-translocated state to the 1-bp backtracked state is thermodynamically favorable.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermodynamically, transiting from the pre-translocated state to the 1-bp backtracked state is favorable, while backtracking for more steps yields no additional energetic benefit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the energy landscape constructed from kinetic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "e9cc4dc0-e31e-4c95-b6cd-5df0473bda51",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C61",
+      "claim": "The first backtracked nucleotide is stabilized by a binding pocket formed by several Pol II residues, whereas the second or third backtracked nucleotide makes no additional contact to the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "This result can also find structural support: the first backtracked nucleotide is stabilized by a binding pocket formed by several Pol II residues, whereas the second or third backtracked nucleotide makes no additional contact to the enzyme (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural interpretation is supported by a citation to prior structural work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "220ad710-66f1-4d8e-8362-ae5c86dd5a8b",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C62",
+      "claim": "The 1-bp backtracked state is closely associated with the proofreading process of Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this model may improve our understanding of the control of transcription fidelity. The 1-bp backtracked state is closely associated with the proofreading process of Pol II, as the enzyme in this location preferentially cleaves the 3\u2032 dinucleotide of the RNA containing the mismatched base, empting the active site for NTP binding (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior structural and biochemical understanding of the proofreading mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "41f2d5bb-ef42-4ded-9899-89aef6d6d816",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C63",
+      "claim": "Nucleotide misincorporation may slow down forward translocation, thereby promoting the entry to the pausing pathway and the removal of the dinucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that nucleotide misincorporation slows down forward translocation, thereby promoting the entry to the pausing pathway and the removal of the dinucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about how misincorporation might affect kinetics.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "3f092025-d486-48a4-b732-d2ea39a5845f",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C64",
+      "claim": "The E1103G mutation results in the mutant being significantly more biased toward the pre-translocated state than the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Between the pre-translocated state and the post-translocated state, the mutant is significantly more biased toward the former than the wild type (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the calculated K\u03b4 values for wild-type and mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "ea483314-ba97-4f2b-bbac-ec134d192522",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C65",
+      "claim": "The mutation modulates the enzyme's translocation kinetics by altering the rates of transition between the open and wedged conformations of the TL.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the inter-conversion between pre- and post-translocated states involves the transitions of the TL between an open conformation and a wedged conformation (Brueckner and Cramer, 2008). It is plausible that the mutation modulates the enzyme's translocation kinetics by altering the rates of transition between these two conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a plausible mechanistic interpretation based on prior structural knowledge.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "e1747b66-d417-46da-bfcc-2ada6df72a9f",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C66",
+      "claim": "The faster overall elongation velocity of the mutant is due to its much greater catalysis rate despite a slower translocation step.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our analyses lead to the conclusion that the faster overall elongation velocity of the mutant is due to its much greater catalysis rate despite a slower translocation step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparing the kinetic parameters of wild-type and mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "90baa6f9-6ac3-4f17-acce-bdf545d95824",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C67",
+      "claim": "The increase of the catalysis rate is most likely due to a faster NTP sequestration step induced by the closure of the TL.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of the catalysis rate is most likely due to a faster NTP sequestration step induced by the closure of the TL (Kireeva et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic interpretation is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "0c572bf9-075c-4c59-94ca-0327b5879dba",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C68",
+      "claim": "The lack of hydrogen bonding between T1095 and the mutated E1103 residue may destabilize the open state of the TL and speed up its closure.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of hydrogen bonding between T1095 and the mutated E1103 residue may destabilize the open state of the TL and speed up its closure (Walmacq et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "40849998-67e7-42a1-bbb4-dd429a2c7d1b",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C69",
+      "claim": "A decrease in the activation energy required to return from the first backtracked state to the pre-translocated state accelerates the recovery from a pause in the E1103G mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a decrease in the activation energy required to return from the first backtracked state to the pre-translocated state accelerates the recovery from a pause (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the energy landscape and kinetic parameters for the mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "c8aace48-290a-4fc8-957c-4df39fb3cf4c",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C70",
+      "claim": "The mutant populates the 1-bp backtracked state less than the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the mutant populates the 1-bp backtracked state less than the wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the altered kinetics in the mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "d7c59beb-e60c-48fc-b175-ce429778534c",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C71",
+      "claim": "E1103G mutation strongly promotes incorporation of non-cognate NMP and mismatch extension.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that E1103G mutation strongly promotes incorporation of non-cognate NMP and mismatch extension (Kaplan et al., 2008; Kireeva et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "cd1f3748-e133-461c-bcd7-209f5c6d8fa9",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C72",
+      "claim": "The destabilization of the 1-bp backtracked state relative to the pre-translocated state in the E1103G mutant is consistent with its efficient mismatch extension.",
+      "claim_type": "EXPLICIT",
+      "source": "The destabilization of the 1-bp backtracked state relative to the pre-translocated state in the E1103G mutant, established in this work, is consistent with its efficient mismatch extension and suggests that this mutation might also confer a defect in proofreading activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the measured kinetic changes to functional consequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "91a419f3-6130-4be6-b377-46a25a01197b",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C73",
+      "claim": "The dynamics of TL are involved in multiple phases of transcription elongation, including translocation, catalysis, and pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that the dynamics of TL are involved in multiple phases of transcription elongation, including translocation, catalysis, and pausing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the analysis of the E1103G mutant effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "082381dd-f298-4699-aa4b-d85ce3e42137",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C74",
+      "claim": "TFIIS stimulates the endonuclease activity of Pol II by replacing the TL with its zinc finger domain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, transcription factor IIS (TFIIS) stimulates the endonuclease activity of Pol II by replacing the TL with its zinc finger domain, and thus, rescues transcription elongation by creating a new 3\u2032-end of the transcript at Pol II's active site (Kettenberger et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known mechanism from prior structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "7a4c5268-9d78-4a7e-a920-0209253b290a",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "claim_id": "C75",
+      "claim": "The viability of yeast cells expressing only the E1103G mutant Pol II is strictly dependent on TFIIS.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the viability of yeast cells expressing only the E1103G mutant Pol II is strictly dependent on TFIIS (Malagon et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f129cb6-f42e-4020-83b8-8ca6e0c9ec7b",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work assumed rapid translocation equilibrium and proposed a branched Brownian ratchet mechanism requiring a secondary NTP binding site, but the location and mechanism of this site remain poorly defined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7, C8, and C9 accurately describe prior assumptions and models in the field, supported by appropriate citations. These claims establish the context and motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The forward translocation rate is comparable to the catalysis rate, making translocation one of the rate-limiting steps in the nucleotide addition cycle. For wild-type Pol II, k1 is only 2.5-3 times higher than k3, and for the E1103G mutant, k1 becomes the slowest step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C24-C26, and C46-C49 present the central finding of the study. The values are derived from comparing pause-free velocities on bare vs. nucleosomal DNA (C22-C23) using Equations 9-10, with \u03b3u=0.6 from C21. The mathematical framework is sound and the conclusion that translocation is rate-limiting is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "99dcfd37-1352-41ca-8f33-3a93093056d6",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A linear, non-branched Brownian ratchet mechanism (where NTP binding occurs after translocation) can explain the observed force-velocity relationship without requiring a secondary NTP binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 and C50 demonstrate that the force-velocity data fit well to Equation 15 (a linear ratchet model) with \u03b4 values of 0.46\u00b10.09 bp (wild-type) and 0.24\u00b10.05 bp (mutant). This successfully reconciles previous single-molecule observations with a simpler linear mechanism, eliminating the need for the branched model proposed in prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "9d0ffc8b-fbb0-4b1e-bf1f-dedac1dbd057",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pause-free velocity follows Michaelis-Menten kinetics with respect to NTP concentration, with Vmax=25\u00b13 nt/s and KM=39\u00b112 \u03bcM for wild-type, and Vmax=38\u00b15 nt/s and KM=62\u00b115 \u03bcM for E1103G mutant. Velocity and pause density show an inverse relationship, indicating kinetic competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 present well-supported kinetic measurements. The Michaelis-Menten fits (C13, C12) are appropriate for the data shown in Figure 2D, and the inverse relationship between velocity and pause density (C14, C15) is consistent with pausing occurring before NTP binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "31bdd12b-de37-42d7-9ef1-5113e4230fd1",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Backtracking kinetics on bare DNA are characterized by k0=1.3\u00b10.3 s\u207b\u00b9, yielding kf=1.7\u00b10.4 s\u207b\u00b9 and kb=1.0\u00b10.3 s\u207b\u00b9 at 6.5 pN. Nucleosomal DNA fluctuations (>1000 s\u207b\u00b9) are much faster than Pol II stepping, and pause durations on nucleosomal DNA fit a model with \u03b3u=0.6\u00b10.2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, C20, and C21 are well-supported. The k0 value is extracted from fitting pause duration distributions (Figure 2\u2014figure supplement 1), and the calculation of kf and kb using Equations 6-7 is mathematically sound. The estimate of nucleosomal DNA fluctuation rates (C20) is derived in Materials and methods and is reasonable. The \u03b3u value (C21) successfully fits the nucleosomal pause duration data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "16e5c81a-ae9d-40df-85d8-73fe156c7aad",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nucleosomes increase pause density two-fold and significantly extend pause duration for wild-type Pol II. Nucleosomes also reduce pause-free velocity by 14% for wild-type (from 26.9\u00b10.8 to 23.2\u00b10.6 nt/s) and 35% for E1103G mutant (from 39.8\u00b10.6 to 26.0\u00b10.7 nt/s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, C22, and C23 present quantitative measurements of nucleosome effects on transcription. The data are clearly shown in Table 2 and Figure 3, with appropriate statistical measures (SEM). The larger effect on the mutant (C23) is consistent with its slower k1 value.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "172c144a-b981-4dc7-8b20-ab67bf464e19",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The first backtracking step is distinct from subsequent steps. After correcting for short pauses, kb1=5.3\u00b12.0 s\u207b\u00b9, which is approximately five times larger than kbn=1.0\u00b10.3 s\u207b\u00b9 (n\u22652), indicating that entering the 1-bp backtracked state is easier than entering further backtracked states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 and C58 are well-supported. The corrected pause density (C28) accounts for detection limitations, and kb1 is calculated from Equation 12. The five-fold difference between kb1 and kbn is statistically significant and mechanistically important, distinguishing the first backtracking step from subsequent ones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "85d97fae-91c7-4662-8d8c-7f73daeeddd8",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The E1103G mutation selectively affects short pauses (<2 s) on bare DNA (p=0.003) but not longer pauses (p=0.9). Monte Carlo simulations show that kf1>4 s\u207b\u00b9 (2.4-fold higher than wild-type) reproduces the mutant's pause duration distributions, with a lower bound for kb1 of 2.8 s\u207b\u00b9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 present a careful analysis of the mutation's effect on pausing. The statistical tests (Kolmogorov-Smirnov) are appropriate, and the Monte Carlo simulations (C34) provide mechanistic insight. The constraint on kb1 (C35) is derived from comparing experimental and simulated pause densities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "6d5f7c11-e598-4bd0-8e98-5552658e72d1",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For wild-type Pol II, k\u208b\u2081K=(4.7\u00b10.5)\u00d710\u00b3 \u03bcM\u00b7s\u207b\u00b9, yielding K=9.2 \u03bcM, k\u208b\u2081=510 s\u207b\u00b9, and K\u03b4=4.6, indicating the enzyme favors the pre-translocated state over the post-translocated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 present a coherent set of kinetic parameters derived from fitting pause density vs. NTP concentration (Equation 13) and combining with KM values. The conclusion that the enzyme favors the pre-translocated state (K\u03b4=4.6) is consistent with prior literature (C40 cites supporting references).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "eee1118c-f186-49d1-ade9-d64a3f7cabfc",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For the E1103G mutant, an upper bound of K is 100 \u03bcM and a lower bound of k\u208b\u2081 is 210 s\u207b\u00b9. Assuming similar K to wild-type, k\u208b\u2081\u22482700 s\u207b\u00b9 and K\u03b4\u224854.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C42 involve bounds and assumptions rather than direct measurements. The upper bound on K (C41) is determined by simulation comparison (Figure 5\u2014figure supplement 1), which is reasonable. However, the assumption that the mutant shares a similar K value with wild-type (C42) is explicitly acknowledged as an assumption in the Materials and methods, introducing uncertainty. The mutation is distant from the NTP binding site, making the assumption plausible but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The energy landscape reveals that: (i) the enzyme thermodynamically favors the pre-translocated state over the post-translocated state; (ii) entry into the 1-bp backtracked state is easier than into further backtracked states; (iii) from the pre-translocated state, the enzyme thermodynamically favors backtracked states but kinetically favors forward translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51-C53, C55-C57, and C60 describe the energy landscape constructed from the measured kinetic parameters. The landscape is derived using standard thermodynamic relationships (\u0394\u0394G = -kBT\u00b7ln(k\u208b/k\u208a)) and the Arrhenius equation. The three key features are well-supported by the rate constants: K\u03b4>1 supports (i), kb1>kbn supports (ii), and k1>kb1 despite thermodynamic favorability of backtracking supports (iii).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "f23a2fed-1131-460a-9d84-f86132023f19",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Structural data support the kinetic findings: backtracking beyond 1 bp is sterically hindered by a gating tyrosine (Rpb2-Y769), and the first backtracked nucleotide is stabilized by a binding pocket while subsequent nucleotides make no additional contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C61 appropriately cite structural studies (Cheung and Cramer, 2011; Wang et al., 2009) that provide independent support for the kinetic observations. The structural interpretations are consistent with the measured differences between kb1 and kbn.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "10c36dae-ef41-4827-9d63-d679a2fd7016",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The 1-bp backtracked state is associated with proofreading, and nucleotide misincorporation may slow forward translocation, promoting entry to the pausing pathway and dinucleotide removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is supported by citation to prior work (Wang et al., 2009) establishing the role of the 1-bp backtracked state in proofreading. However, claim C63 is explicitly speculative ('It is possible that...'), proposing a hypothesis about how misincorporation might affect kinetics without experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "120730ce-9f9d-400e-819e-b9a20e544225",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The E1103G mutation increases bias toward the pre-translocated state (K\u03b4\u224854 vs. 4.6 for wild-type), likely by altering TL conformational dynamics. The mutant's faster velocity is due to increased catalysis rate (k3=195\u00b165 s\u207b\u00b9 vs. 35\u00b13 s\u207b\u00b9) despite slower translocation, possibly through faster TL closure and NTP sequestration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 present a coherent mechanistic interpretation of the mutation's effects. The increased K\u03b4 (C64) is calculated from measured rate constants. The mechanistic explanations (C65, C67, C68) are plausible and supported by citations to prior structural and biochemical work, though some aspects remain speculative (C65, C68 use 'plausible' and 'may').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "c48cfb45-8f03-4074-9da6-92ca04865ab6",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The E1103G mutation decreases the activation energy for returning from the 1-bp backtracked state, reducing its population. This destabilization is consistent with the mutation's known promotion of mismatch extension and suggests a proofreading defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 connect the measured kinetic changes to functional consequences. The decreased activation energy (C69) is derived from the energy landscape (Figure 7B). The connection to mismatch extension (C71-C72) appropriately cites prior work (Kaplan et al., 2008; Kireeva et al., 2008) and makes a reasonable inference about proofreading defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "edc307a9-ba09-433c-a51d-bb9a43e2a42c",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The conformational transitions of the trigger loop control enzyme translocation, catalysis, and pausing, making it a vital target for transcriptional regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C73 present a summary conclusion from the E1103G mutant analysis. The conclusion is well-supported by the comprehensive effects of the mutation on multiple kinetic parameters (k1, k3, kb1, kf1), demonstrating the TL's central role in multiple phases of elongation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "0b28dc2d-e3ab-48ad-b4ec-1a5958f3cce2",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "TFIIS stimulates Pol II endonuclease activity by replacing the TL with its zinc finger domain, and yeast cells expressing only E1103G Pol II are strictly dependent on TFIIS for viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C75 cite prior work (Kettenberger et al., 2003; Malagon et al., 2006) to provide context for the TL's regulatory importance. These are accurate representations of published findings that support the broader significance of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "cf05a7ce-56e5-47c5-809c-02ffcdf481f3",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Multi-subunit RNAPs function through the Brownian ratchet mechanism. Pol II cannot actively unravel wrapped nucleosomes but instead pauses until local DNA spontaneously unwraps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C10, and C11 accurately cite prior work establishing the Brownian ratchet mechanism and the authors' previous findings on nucleosome traversal. These provide essential background for the current study's approach of using nucleosomes as a tool to measure translocation rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    },
+    {
+      "id": "fcd9c1d5-f795-4ec7-8f20-19e4df337cbd",
+      "content_id": "65a75af0-71b8-49df-a43c-74b6293ab2dc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The E1103G mutant's higher k3 compensates for its lower k1, rendering its overall velocity faster than wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 correctly interprets how the kinetic parameters (k1=50\u00b14 s\u207b\u00b9, k3=195\u00b165 s\u207b\u00b9 for mutant vs. k1=112\u00b130 s\u207b\u00b9, k3=35\u00b13 s\u207b\u00b9 for wild-type) combine according to Vmax=(k1\u00b7k3)/(k1+k3)\u00b7d to produce the observed velocity difference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:57.760875Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5bf1bf07-c0be-4773-96aa-1287f87aefe6",
+      "result_id": "9f129cb6-f42e-4020-83b8-8ca6e0c9ec7b"
+    },
+    {
+      "claim_id": "ce756284-83b5-49d6-bb81-0dd0497c5912",
+      "result_id": "9f129cb6-f42e-4020-83b8-8ca6e0c9ec7b"
+    },
+    {
+      "claim_id": "979d0511-0413-46eb-b6ee-95ade722d62e",
+      "result_id": "9f129cb6-f42e-4020-83b8-8ca6e0c9ec7b"
+    },
+    {
+      "claim_id": "28efa2f5-0503-4a85-876e-00c560929d43",
+      "result_id": "9f129cb6-f42e-4020-83b8-8ca6e0c9ec7b"
+    },
+    {
+      "claim_id": "2259d349-0078-4b9d-b9e2-742d47611640",
+      "result_id": "9f129cb6-f42e-4020-83b8-8ca6e0c9ec7b"
+    },
+    {
+      "claim_id": "f9ede10b-b5b5-4312-b895-aa39c04e22c5",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "e294d3f1-ddb2-4018-872b-d08a78b97fe6",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "fd9c133e-025c-42d0-9edf-b88b84aa30ed",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "884361af-7914-4342-9934-4461848227de",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "0555aa80-71f2-437f-b902-d8d891c96cfd",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "c0effd21-1e3a-4506-9895-406a4e9e2fde",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "5ba04c0c-daaa-4600-80db-0e8736f1026f",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "b3fdd2d1-ee62-4c4a-a4f8-31eafc0ca4a5",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "0e11dd87-c633-42b1-b2ed-4aa7e84a3b19",
+      "result_id": "4f9a5455-5ff3-4cce-a6d7-d07d59034255"
+    },
+    {
+      "claim_id": "e900c86a-2a28-4309-a536-696359d8dc5c",
+      "result_id": "99dcfd37-1352-41ca-8f33-3a93093056d6"
+    },
+    {
+      "claim_id": "0efb1914-d575-44b8-889f-81b1bf3c4ce4",
+      "result_id": "99dcfd37-1352-41ca-8f33-3a93093056d6"
+    },
+    {
+      "claim_id": "660a5f1b-7a76-4754-8f1d-1c42b73564ef",
+      "result_id": "99dcfd37-1352-41ca-8f33-3a93093056d6"
+    },
+    {
+      "claim_id": "97ffdeb9-9b7f-468f-846c-864db8db4038",
+      "result_id": "99dcfd37-1352-41ca-8f33-3a93093056d6"
+    },
+    {
+      "claim_id": "295c92b4-9e4b-418a-95c7-d79feeadcceb",
+      "result_id": "9d0ffc8b-fbb0-4b1e-bf1f-dedac1dbd057"
+    },
+    {
+      "claim_id": "c97373f5-c8ed-490d-86b3-78f53284c3c7",
+      "result_id": "9d0ffc8b-fbb0-4b1e-bf1f-dedac1dbd057"
+    },
+    {
+      "claim_id": "b8edb3c0-8bd5-4e7d-90fd-34050745d5dd",
+      "result_id": "9d0ffc8b-fbb0-4b1e-bf1f-dedac1dbd057"
+    },
+    {
+      "claim_id": "a20a2797-2adb-4bf1-9528-76e67e3938db",
+      "result_id": "9d0ffc8b-fbb0-4b1e-bf1f-dedac1dbd057"
+    },
+    {
+      "claim_id": "d7f6ea84-d398-43d6-a350-0c1fbf1550fb",
+      "result_id": "31bdd12b-de37-42d7-9ef1-5113e4230fd1"
+    },
+    {
+      "claim_id": "1b047e7b-0d7c-4630-b35e-44f666c7783b",
+      "result_id": "31bdd12b-de37-42d7-9ef1-5113e4230fd1"
+    },
+    {
+      "claim_id": "eb4d5ca7-2ab8-4acf-9d57-7e9888f19455",
+      "result_id": "31bdd12b-de37-42d7-9ef1-5113e4230fd1"
+    },
+    {
+      "claim_id": "3eeb9463-45a8-40c2-af02-bcbc24bbc785",
+      "result_id": "31bdd12b-de37-42d7-9ef1-5113e4230fd1"
+    },
+    {
+      "claim_id": "727abd19-0e5f-482b-94cc-d8858ff204cf",
+      "result_id": "16e5c81a-ae9d-40df-85d8-73fe156c7aad"
+    },
+    {
+      "claim_id": "b15ea328-d80b-40af-8ab8-55c7d3e4e459",
+      "result_id": "16e5c81a-ae9d-40df-85d8-73fe156c7aad"
+    },
+    {
+      "claim_id": "81f5ef98-a6c1-4b42-acdf-bc5a7af41c3f",
+      "result_id": "16e5c81a-ae9d-40df-85d8-73fe156c7aad"
+    },
+    {
+      "claim_id": "3b9e41b5-9ae0-4265-85a5-52e2063959ec",
+      "result_id": "16e5c81a-ae9d-40df-85d8-73fe156c7aad"
+    },
+    {
+      "claim_id": "359939a0-170f-4572-b91d-2090431897bb",
+      "result_id": "172c144a-b981-4dc7-8b20-ab67bf464e19"
+    },
+    {
+      "claim_id": "76fd55df-5d87-43bf-95fa-3ac5d8c5f958",
+      "result_id": "172c144a-b981-4dc7-8b20-ab67bf464e19"
+    },
+    {
+      "claim_id": "8468ddca-3edc-44ae-9101-6754a164b662",
+      "result_id": "172c144a-b981-4dc7-8b20-ab67bf464e19"
+    },
+    {
+      "claim_id": "974e3f67-dfac-4f39-af5d-87563e1dd467",
+      "result_id": "172c144a-b981-4dc7-8b20-ab67bf464e19"
+    },
+    {
+      "claim_id": "5fae0234-0417-46a9-a07f-32c14893e750",
+      "result_id": "172c144a-b981-4dc7-8b20-ab67bf464e19"
+    },
+    {
+      "claim_id": "ad099cbf-783a-423d-a92d-d9d511162158",
+      "result_id": "85d97fae-91c7-4662-8d8c-7f73daeeddd8"
+    },
+    {
+      "claim_id": "fa8d0161-bce2-4719-9b0a-91ce704ca0f2",
+      "result_id": "85d97fae-91c7-4662-8d8c-7f73daeeddd8"
+    },
+    {
+      "claim_id": "7472cd7d-5324-429b-a5ea-6417cf68a7a3",
+      "result_id": "85d97fae-91c7-4662-8d8c-7f73daeeddd8"
+    },
+    {
+      "claim_id": "020b97db-b968-4fa9-87e6-9816300c484c",
+      "result_id": "85d97fae-91c7-4662-8d8c-7f73daeeddd8"
+    },
+    {
+      "claim_id": "7aeac58e-e9d0-4359-a467-b954e1ed02b6",
+      "result_id": "6d5f7c11-e598-4bd0-8e98-5552658e72d1"
+    },
+    {
+      "claim_id": "4c46983e-6c8c-4ff6-b0bc-0e6675dbcd75",
+      "result_id": "6d5f7c11-e598-4bd0-8e98-5552658e72d1"
+    },
+    {
+      "claim_id": "bb943253-2852-4603-b4b6-2882579a3256",
+      "result_id": "6d5f7c11-e598-4bd0-8e98-5552658e72d1"
+    },
+    {
+      "claim_id": "878635da-bd8e-46a5-8419-5ca6d65d2ebd",
+      "result_id": "6d5f7c11-e598-4bd0-8e98-5552658e72d1"
+    },
+    {
+      "claim_id": "8433bd9e-9178-4086-ba99-99b7df15b5ac",
+      "result_id": "6d5f7c11-e598-4bd0-8e98-5552658e72d1"
+    },
+    {
+      "claim_id": "fc25079e-f763-4194-8b18-50f7b06b1f39",
+      "result_id": "eee1118c-f186-49d1-ade9-d64a3f7cabfc"
+    },
+    {
+      "claim_id": "d093812a-0622-494a-899e-d9e7eb73a58b",
+      "result_id": "eee1118c-f186-49d1-ade9-d64a3f7cabfc"
+    },
+    {
+      "claim_id": "49f30159-613d-4d99-8827-60ef56f7e44d",
+      "result_id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2"
+    },
+    {
+      "claim_id": "6a445659-57f8-4d97-855e-ffa99fd05004",
+      "result_id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2"
+    },
+    {
+      "claim_id": "3c1d4ce1-e4d9-48d8-a492-d0612d61d2f2",
+      "result_id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2"
+    },
+    {
+      "claim_id": "1ad4b673-86e9-43c3-8560-afca9c6ef165",
+      "result_id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2"
+    },
+    {
+      "claim_id": "004902e3-6b59-42de-9faa-1c2890592490",
+      "result_id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2"
+    },
+    {
+      "claim_id": "237d7e47-dcd0-466b-bd9b-bc815d7959b6",
+      "result_id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2"
+    },
+    {
+      "claim_id": "86f5a1f5-d05f-4480-a186-b17ba54684b2",
+      "result_id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2"
+    },
+    {
+      "claim_id": "a5c83f7a-b8bd-4218-ab39-b1070dceb482",
+      "result_id": "152c66ec-ac70-42d4-9743-00dc9f6c32e2"
+    },
+    {
+      "claim_id": "6cd81900-ea21-41c1-899d-44821624d640",
+      "result_id": "f23a2fed-1131-460a-9d84-f86132023f19"
+    },
+    {
+      "claim_id": "e9cc4dc0-e31e-4c95-b6cd-5df0473bda51",
+      "result_id": "f23a2fed-1131-460a-9d84-f86132023f19"
+    },
+    {
+      "claim_id": "220ad710-66f1-4d8e-8362-ae5c86dd5a8b",
+      "result_id": "10c36dae-ef41-4827-9d63-d679a2fd7016"
+    },
+    {
+      "claim_id": "41f2d5bb-ef42-4ded-9899-89aef6d6d816",
+      "result_id": "10c36dae-ef41-4827-9d63-d679a2fd7016"
+    },
+    {
+      "claim_id": "3f092025-d486-48a4-b732-d2ea39a5845f",
+      "result_id": "120730ce-9f9d-400e-819e-b9a20e544225"
+    },
+    {
+      "claim_id": "ea483314-ba97-4f2b-bbac-ec134d192522",
+      "result_id": "120730ce-9f9d-400e-819e-b9a20e544225"
+    },
+    {
+      "claim_id": "e1747b66-d417-46da-bfcc-2ada6df72a9f",
+      "result_id": "120730ce-9f9d-400e-819e-b9a20e544225"
+    },
+    {
+      "claim_id": "90baa6f9-6ac3-4f17-acce-bdf545d95824",
+      "result_id": "120730ce-9f9d-400e-819e-b9a20e544225"
+    },
+    {
+      "claim_id": "0c572bf9-075c-4c59-94ca-0327b5879dba",
+      "result_id": "120730ce-9f9d-400e-819e-b9a20e544225"
+    },
+    {
+      "claim_id": "40849998-67e7-42a1-bbb4-dd429a2c7d1b",
+      "result_id": "c48cfb45-8f03-4074-9da6-92ca04865ab6"
+    },
+    {
+      "claim_id": "c8aace48-290a-4fc8-957c-4df39fb3cf4c",
+      "result_id": "c48cfb45-8f03-4074-9da6-92ca04865ab6"
+    },
+    {
+      "claim_id": "d7c59beb-e60c-48fc-b175-ce429778534c",
+      "result_id": "c48cfb45-8f03-4074-9da6-92ca04865ab6"
+    },
+    {
+      "claim_id": "cd1f3748-e133-461c-bcd7-209f5c6d8fa9",
+      "result_id": "c48cfb45-8f03-4074-9da6-92ca04865ab6"
+    },
+    {
+      "claim_id": "a74a68c3-96ed-47e4-8685-fe13cdc3ef81",
+      "result_id": "edc307a9-ba09-433c-a51d-bb9a43e2a42c"
+    },
+    {
+      "claim_id": "91a419f3-6130-4be6-b377-46a25a01197b",
+      "result_id": "edc307a9-ba09-433c-a51d-bb9a43e2a42c"
+    },
+    {
+      "claim_id": "082381dd-f298-4699-aa4b-d85ce3e42137",
+      "result_id": "0b28dc2d-e3ab-48ad-b4ec-1a5958f3cce2"
+    },
+    {
+      "claim_id": "7a4c5268-9d78-4a7e-a920-0209253b290a",
+      "result_id": "0b28dc2d-e3ab-48ad-b4ec-1a5958f3cce2"
+    },
+    {
+      "claim_id": "9fb1734f-7e3c-424e-baef-c3893db7a5d2",
+      "result_id": "cf05a7ce-56e5-47c5-809c-02ffcdf481f3"
+    },
+    {
+      "claim_id": "524ac8f6-e504-486f-af05-fc2404b9c343",
+      "result_id": "cf05a7ce-56e5-47c5-809c-02ffcdf481f3"
+    },
+    {
+      "claim_id": "e6e63649-3bf9-4e0d-8e35-9a32630501b0",
+      "result_id": "cf05a7ce-56e5-47c5-809c-02ffcdf481f3"
+    },
+    {
+      "claim_id": "378c3061-d113-43f8-8e66-34540eb2a267",
+      "result_id": "fcd9c1d5-f795-4ec7-8f20-19e4df337cbd"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors developed a novel automated tracking system for monitoring groups of four mice in a semi-natural arena over extended periods. The system uses fluorescent dyes and UVA illumination to track individual mice at 25 fps over 4 consecutive nights (12 hours/night), achieving 99.6% tracking accuracy validated against human labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 and C94-C98 collectively describe a well-validated experimental system with clear technical specifications. The 99.6% accuracy (C98) provides strong validation, and the methodological details are sufficiently described for reproducibility. The system represents a solid technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Individual mice showed distinct spatial preferences within the arena, with power-law distributions of continuous time spent at locations that were consistent across individuals despite their different location preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by data visualizations in Figures 1D-F. The power-law behavior (C26-C27) is a quantitative observation from the data, though the manuscript does not provide statistical tests for the power-law fit or alternative distribution comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Group behavior shows strong correlations that contract the configuration space: only ~2000 of 10,000 possible states occurred (vs. 4000 predicted by independence). Pairwise information between mice is low (<5%), but knowing three mice's locations provides 25% information about the fourth, showing highly synergistic interactions that exceed the sum of pairwise information by more than double.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 present a coherent picture of synergistic group interactions supported by Figure 2. The information-theoretic analysis is mathematically sound and the synergy result (C33) is clearly demonstrated. The 75% individuality (C35) follows logically from the 25% group information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C82",
+      "C83"
+    ],
+    "result": "Pairwise models capture only 57.2% \u00b1 10.2% of group correlations, while third-order models explain 92.8% \u00b1 2.9% of correlations and perform nearly as well as fourth-order models. This demonstrates that third-order interactions are necessary and sufficient to capture group behavior in four-mouse groups, with third-order interactions contributing nearly one-third of total correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C52, C82-C83 form the core finding of the paper, supported by rigorous maximum entropy modeling with cross-validation (C46). The quantitative results are consistent across claims and supported by Figure 3. The mathematical framework is appropriate and the conclusion that third-order interactions are necessary is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Maximum entropy models provide a mathematically unique and parsimonious framework for constructing minimal models of group behavior based on different orders of dependencies. These models have been successfully applied to various biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe the methodological framework, which is well-established in the literature (supported by citations). The mathematical properties (uniqueness, parsimony) are correct statements about maximum entropy models. This provides solid theoretical foundation for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The parameters of maximum entropy models can be interpreted as functional (statistical) rather than physical interactions. A regularized third-order model identifies sparse interaction maps dominated by negative interactions, suggesting competition as a dominant social force. Physical limitations do not primarily shape group configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 and C88-C93 describe the interpretation of model parameters and interaction maps shown in Figure 4. The distinction between functional and physical interactions (C54, C88) is appropriately cautious. The observation of predominantly negative interactions (C56, C91) is data-driven, though the interpretation as competition (C92) is speculative and appropriately hedged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Environmental complexity during adolescence significantly affects adult group behavior. CE mice showed more individual behavior with weaker group correlations (74.6% \u00b1 2.5% pairwise vs. 61.9% \u00b1 2.4% in SE), virtually no fourth-order interactions, and less synergistic information. SE groups showed progressive 'socialization' over 4 days that was absent in CE groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C61-C74 present a comprehensive comparison between SE and CE groups supported by Figure 5. The quantitative differences are clearly stated with error estimates. The temporal dynamics (C63-C66) add an important dimension. However, the manuscript does not report statistical tests comparing SE vs. CE groups, which would strengthen the claims of 'significant' differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Current studies of mammalian social behavior focus on pairs under artificial conditions, but groups may exhibit emergent features that cannot be inferred from studying individuals or pairs. Individual traits may be particularly important in smaller groups of mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C15 establish the motivation and context for the study, supported by appropriate citations. These are accurate characterizations of the field that justify the research direction. The claim about emergent features (C15) is supported by the experimental findings presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C60",
+      "C75",
+      "C76",
+      "C77",
+      "C81"
+    ],
+    "result": "Various animal groups (insects, fish, birds, humans) exhibit coherent collective behavior. Mice are ideal model organisms for studying social behavior, though current methodologies focus mainly on dyadic interactions. Environmental factors affect mouse social organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C60, C75-C77, and C81 provide background context supported by appropriate citations. These are accurate summaries of prior work that establish the broader scientific context. The characterization of current methodological limitations (C77) appropriately motivates the technical development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The tracking system enables automatic tracking with high spatiotemporal resolution in semi-natural environments over long periods while maintaining individual identities. It offers higher spatial and temporal resolution than RFID-based systems, though with more limited scalability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 accurately describe the capabilities and trade-offs of the tracking system. The comparison to RFID systems (C79-C80) is fair and acknowledges both advantages and limitations. This is supported by the technical validation (C98) and demonstrated performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Three-quarters of location uncertainty comes from individual mouse behavior. The dominance of higher-order interactions in mice contrasts with other biological networks studied with maximum entropy models, where pairwise interactions typically dominate, especially in small networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 highlight the novelty of the findings by comparing to prior work. The 75% individuality (C84) follows from the information analysis. The contrast with other biological systems (C86-C87) is appropriately supported by citations and emphasizes the unique nature of the mouse group behavior findings.",
+    "result_type": "MAJOR"
+  }
+]

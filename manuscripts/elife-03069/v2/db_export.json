@@ -1,0 +1,1802 @@
+{
+  "submission": {
+    "id": "7d0b3f35-b0b5-4595-b9c8-055a9eb8a74f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:07:48.415836Z",
+    "updated_at": "2025-11-28T21:07:48.415836Z"
+  },
+  "content": [
+    {
+      "id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "submission_id": "7d0b3f35-b0b5-4595-b9c8-055a9eb8a74f",
+      "content_type": "manuscript",
+      "content_text": "# A tethered delivery mechanism explains the catalytic action of a microtubule polymerase\n\n## Authors\n\n- Pelin Ayaz<sup>1</sup>\n- Sarah Munyoki<sup>1</sup>\n- Elisabeth A Geyer<sup>1</sup>\n- Felipe-Andr\u00e9s Piedra<sup>1</sup>\n- Emily S Vu<sup>1</sup>\n- Raquel Bromberg<sup>1</sup>\n- Zbyszek Otwinowski<sup>1</sup>\n- Nick V Grishin<sup>1</sup>\n- Chad A Brautigam<sup>1</sup>\n- Luke M Rice<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biophysics UT Southwestern Medical Center Dallas United States\n2. Department of Biochemistry UT Southwestern Medical Center Dallas United States\n3. Howard Hughes Medical Institute, UT Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nStu2p/XMAP215 proteins are essential microtubule polymerases that use multiple \u03b1\u03b2-tubulin-interacting TOG domains to bind microtubule plus ends and catalyze fast microtubule growth. We report here the structure of the TOG2 domain from Stu2p bound to yeast \u03b1\u03b2-tubulin. Like TOG1, TOG2 binds selectively to a fully \u2018curved\u2019 conformation of \u03b1\u03b2-tubulin, incompatible with a microtubule lattice. We also show that TOG1-TOG2 binds non-cooperatively to two \u03b1\u03b2-tubulins. Preferential interactions between TOGs and fully curved \u03b1\u03b2-tubulin that cannot exist elsewhere in the microtubule explain how these polymerases localize to the extreme microtubule end. We propose that these polymerases promote elongation because their linked TOG domains concentrate unpolymerized \u03b1\u03b2-tubulin near curved subunits already bound at the microtubule end. This tethering model can explain catalyst-like behavior and also predicts that the polymerase action changes the configuration of the microtubule end.\n\n## Introduction\n\nMicrotubules are dynamic polymers of \u03b1\u03b2-tubulin that have critical roles in chromosome segregation and intracellular organization (reviewed in Desai and Mitchison, 1997). The polymerization dynamics of microtubules are regulated by multiple cellular factors. Evolutionarily conserved proteins in the Stu2p/XMAP215 family (Gard and Kirschner, 1987; Ohkura et al., 1988; Wang and Huffaker, 1997) regulate microtubule dynamics by promoting fast microtubule elongation. These essential proteins use multiple \u03b1\u03b2-tubulin binding tumor overexpressed gene (TOG) domains to selectively recognize the growing microtubule end and promote its elongation (Al-Bassam et al., 2006; Brouhard et al., 2008; Widlund et al., 2011; Al-Bassam et al., 2012).\n\nA significant advance in understanding occurred with a landmark study of XMAP215 in which in vitro reconstitution assays demonstrated that the polymerase affected the rate of microtubule elongation without affecting the apparent equilibrium (Brouhard et al., 2008). This and other observations (e.g., Shirasu-Hiza et al., 2003; van Breugel et al., 2003) formed the basis for describing XMAP215 as a catalyst for microtubule elongation. Catalytic action in turn led to the concept that TOG-containing polymerases might stabilize an otherwise rate-limiting intermediate along the polymerization pathway (Brouhard et al., 2008). However, an understanding of mechanism has been limited because the nature of this intermediate, and how TOG domains might selectively promote it, remained unclear.\n\nA recent study from our group revealed that the TOG1 domain from Stu2p binds preferentially to a \u2018curved\u2019 conformation of \u03b1\u03b2-tubulin that cannot be incorporated into the body of the microtubule (Ayaz et al., 2012). Our study also showed that a TOG1-TOG2 construct could bind two \u03b1\u03b2-tubulins (Ayaz et al., 2012). This latter observation suggested that two TOG domains might cooperate to stabilize an \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin interface, and consequently that cooperative binding to \u03b1\u03b2-tubulin might contribute to polymerase activity. Our study did not determine how the polymerase recognizes the extreme microtubule end, but we speculated based on apparent biochemical differences between the TOG1 and TOG2 domains (Al-Bassam et al., 2006; Ayaz et al., 2012) that selective interactions between TOG2 and a different, end-specific conformation of \u03b1\u03b2-tubulin might be important.\n\nIn the present study we sought to gain insight into the mechanism of end recognition by determining the conformation of \u03b1\u03b2-tubulin recognized by TOG2 and by testing whether cooperative TOG:\u03b1\u03b2-tubulin interactions contributed to polymerase activity. We first determined the crystal structure of a TOG2:\u03b1\u03b2-tubulin complex. This structure reveals that TOG2 binds to the same curved conformation of \u03b1\u03b2-tubulin that TOG1 does. Our biochemical experiments underscore this structural similarity by demonstrating that the two TOG domains have comparable affinities for \u03b1\u03b2-tubulin, with KD \u223c100 nM. Next, we used analytical ultracentrifugation to show that in TOG1-TOG2 the two linked TOG domains bind non-cooperatively to two \u03b1\u03b2-tubulins. Non-cooperative binding indicates that TOG1-TOG2 does not stabilize an \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin interface. Together with biochemical and genetic experiments, our results lead to a model that explains how the polymerase activity can emerge from the action of two tethered TOG domains that each bind independently to a conformation of \u03b1\u03b2-tubulin that is incompatible with the microtubule lattice. We propose that the polymerase activity arises because linked TOG domains selectively increase the effective concentration of \u03b1\u03b2-tubulin near weakly bound, curved \u03b1\u03b2-tubulins already on the microtubule end. A computational realization of this model supports our proposal by recapitulating catalyst-like behavior. The model further suggests that the polymerase achieves its effect in part by transiently altering the configuration of the growing end.\n\n## Results and discussion\n\n### TOG2, like TOG1, binds curved \u03b1\u03b2-tubulin\n\nWe previously showed that the TOG1 domain from Stu2p binds preferentially to a curved conformation of \u03b1\u03b2-tubulin (Ayaz et al., 2012). However, TOG1 is dispensable for the plus-end binding of Stu2p (Al-Bassam et al., 2006), and because of apparent differences in the biochemical behavior of TOG1 and TOG2 (Al-Bassam et al., 2006; Ayaz et al., 2012) we speculated that TOG2 might bind to a different, lattice-induced conformation of \u03b1\u03b2-tubulin (Ayaz et al., 2012). We solved the crystal structure of a TOG2:\u03b1\u03b2-tubulin complex (Figure 1) to resolve this ambiguity. The structure was determined by molecular replacement from crystals that diffracted anisotropically to a minimum Bragg spacing of 2.8 \u00c5 (Table 1). The final model has good geometry (Table 1; Molprobity [Chen et al., 2010] clash score 1.79; 95.6% favored residues in Ramachandran plot) and has been refined to an Rfree of 0.259 (Rwork = 0.217).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structure of the TOG2:\u03b1\u03b2-tubulin complex (TOG2: slate, \u03b1-tubulin: pink, \u03b2-tubulin: green), with the important binding residues W341 and R519 represented as spheres. The semi-transparent gray cartoon shows the previously observed binding mode of TOG1, with its binding residues W23 and R200 depicted as spheres. (B) Close-up of the TOG2:\u03b1\u03b2-tubulin interface, colored as in A, and showing in spheres important interacting residues based on an earlier study. (C) Structural superposition of \u03b1\u03b2-tubulin-bound (slate) and unbound (gray) TOG2 (PDB 2QK1). The two structures of TOG2 show only small local deviations, arguing against any significant conformational change associated with \u03b1\u03b2-tubulin binding. (D) Structural superposition of the \u03b1\u03b2-tubulin conformations in the TOG2 (colored) and TOG1 (gray) complexes. In both complexes \u03b1\u03b2-tubulin adopts very similar curved conformations. (E) Structural superposition of TOG2-bound \u03b1\u03b2-tubulin (colored) and the straight conformation of \u03b1\u03b2-tubulin (PDB 1JFF, gray), showing the \u223c13\u00b0 rotation of \u03b2-tubulin relative to \u03b1-tubulin that is characteristic of the curved conformation.\n\n**Table 1.**\n Data collection and refinement statistics\n\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Data collection</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>C2</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>111.91, 89.57, 135.51</td>\n    </tr>\n    <tr>\n      <td>\u03b2 (\u00b0)</td>\n      <td>112.31</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50.0\u20132.81 (2.92\u20132.81)*</td>\n    </tr>\n    <tr>\n      <td>Rsym</td>\n      <td>0.143 (0.924)</td>\n    </tr>\n    <tr>\n      <td>&lt;I&gt;/&lt;\u03c3I&gt;</td>\n      <td>9.6 (1.1)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-value (\u00c5)</td>\n      <td>48.9</td>\n    </tr>\n    <tr>\n      <td>Anisotropy (\u00c5) relative  to best direction (001)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u0394B in (100) direction, \u0394B  in (010) direction</td>\n      <td>+29.95, +8.38</td>\n    </tr>\n    <tr>\n      <td>CC1/2 in high resolution shell</td>\n      <td>0.542</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>98.2 (91.3)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>4.1 (3.2)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>2.81</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>26,235</td>\n    </tr>\n    <tr>\n      <td>Completeness(%)</td>\n      <td>86.5\u2020 (35.3)</td>\n    </tr>\n    <tr>\n      <td>Rwork/ Rfree (%)</td>\n      <td>21.8/25.9 (33.0/41.3)</td>\n    </tr>\n    <tr>\n      <td>Maximum likelihood estimated  coordinate error (\u00c5)</td>\n      <td>0.42</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td>8524</td>\n    </tr>\n    <tr>\n      <td>Protein (non-hydrogen)</td>\n      <td>8437</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>66</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td>B-factors</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>44.7</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>52.0</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>27.3</td>\n    </tr>\n    <tr>\n      <td>Rms deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>Ramanchandran plot</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>95.0</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>4.25</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0.75</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>Molprobity clash score</td>\n      <td>1.5</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Highest resolution shell is shown in parenthesis.\u2020The data were corrected for anisotropy in HKL2000. This treatment eliminated weak reflections and reduced the completeness of the data used for refinement compared to the completeness reported for data collection._\n\nThe structure of the TOG2:\u03b1\u03b2-tubulin complex is remarkably similar to that of the TOG1:\u03b1\u03b2-tubulin complex (Figure 1; Ayaz et al., 2012). Conserved residues like W341 and R519 on the tubulin-binding surface of TOG2 make very similar contacts with \u03b1\u03b2-tubulin as their equivalents in TOG1 (W23 and R200, respectively) (Figure 1A,B). The structure of TOG2 bound to \u03b1\u03b2-tubulin superimposes with the structure of \u2018free\u2019 TOG2 (Slep and Vale, 2007) with 0.7 \u00c5 rmsd over 237 C\u03b1 atoms (Figure 1C). Because the TOG2 domains pack differently in the \u2018bound\u2019 and \u2018free\u2019 crystals, the similarity in structure suggests that these TOG domains are rigid modules that do not change conformation when they bind \u03b1\u03b2-tubulin. Even though the structure reported here was obtained from a new crystal form, the conformation of \u03b1\u03b2-tubulin in complex with TOG2 is nearly identical to that seen for TOG1-bound \u03b1\u03b2-tubulin (Figure 1D) (12.3\u00b0 of curvature in the TOG2 complex vs 13.1\u00b0 in the TOG1 complex), and is characteristically distinct from the straight conformation of \u03b1\u03b2-tubulin (1\u00b0 of curvature by our measure) (L\u00f6we et al., 2001; Figure 1E). Underscoring this similarity, individual tubulin chains between the TOG1 and TOG2 complexes superimpose on each other with 0.4 \u00c5 rmsd over C\u03b1 atoms. Thus, both TOG1 and TOG2 bind preferentially to the same, curved conformation of \u03b1\u03b2-tubulin. By extension, other TOGs in this family probably also bind to curved \u03b1\u03b2-tubulin.\n\nThe shared preference of TOG1 and TOG2 for curved \u03b1\u03b2-tubulin has implications for the mechanism of end recognition. Because TOG:\u03b1\u03b2-tubulin interactions are required for plus-end localization of Stu2p/XMAP215 polymerases (Al-Bassam et al., 2006), preferential binding of TOGs to curved \u03b1\u03b2-tubulin suggests that curved \u03b1\u03b2-tubulin itself is the distinctive end-specific feature the polymerase recognizes. In contrast, other plus-end tracking proteins like Eb1 recognize lattice-specific features and consequently show \u2018comet-like\u2019 localization that extends into the microtubule body (Nakamura et al., 2012; Maurer et al., 2014). By invoking binding to an epitope that cannot exist in the body of the microtubule, our model explains how Stu2p/XMAP215 polymerases localize to the extreme microtubule end (Nakamura et al., 2012; Maurer et al., 2014).\n\nThe shared preference for fully curved \u03b1\u03b2-tubulin also poses an apparent paradox, because it indicates that the polymerase is constructed from \u2018parts\u2019 that bind most strongly to a conformation of \u03b1\u03b2-tubulin that cannot exist in the microtubule lattice. We explore and propose a resolution for this apparent contradiction in later sections.\n\n### TOG1 and TOG2 each bind \u03b1\u03b2-tubulin with comparable affinity\n\nTo determine if the structural similarity between the TOG1 and TOG2 complexes with \u03b1\u03b2-tubulin extends to a biochemical similarity, we measured the affinity of TOG:\u03b1\u03b2-tubulin interactions. Previously we had used polymerization-blocked \u03b1\u03b2-tubulin mutants (Johnson et al., 2011) for TOG binding assays. To eliminate the possibility that blocking mutations and/or fluorescent labeling might mask or alter \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin interactions, we developed a label-free assay in which polymerization-competent \u03b1\u03b2-tubulin could be used. Analytical ultracentrifugation monitored by absorbance at 230 nm (A230) allowed us to work at concentrations of \u03b1\u03b2-tubulin at which higher-order oligomers of \u03b1\u03b2-tubulin were nearly undetectable (Figure 2A). Indeed, at \u03b1\u03b2-tubulin concentrations ranging from 0.08 to 1 \u03bcM there is a single dominant peak at 5.8 S with only 1.7 and 2.8% of the material sedimenting faster at the lowest and highest concentration tested. This uniform sedimentation behavior made it possible for us to use analytical ultracentrifugation as a quantitative binding assay.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig2-v2.jpg)\n\n**Figure 2.:** (A) Sedimentation velocity analytical ultracentrifugation of polymerization competent yeast \u03b1\u03b2-tubulin does not show signs of self-association between 80 nM and 1 \u03bcM concentration. The main plot shows c(s) distributions for a range of \u03b1\u03b2-tubulin concentration. The inset shows that the s20,w is not increasing with \u03b1\u03b2-tubulin concentration. Data points are color coded to match the c(s) distribution for that concentration. c(s), signal population as a function of s; s20,w, sedimentation coefficient standardized to pure water and 20\u00b0C. (B) Analysis of TOG1:\u03b1\u03b2-tubulin interactions by sedimentation velocity. The main plot shows c(s) distributions (color coded by concentration) for seven concentrations of TOG1 (44 nM\u20134.5 \u03bcM) titrated into 0.35 \u03bcM \u03b1\u03b2-tubulin. The inset shows the fit (gray line) of a 1:1 binding isotherm to the signal average sfast (dots colored to match the c(s) distribution for that concentration of TOG1) resulting in a dissociation constant of 70 nM. (C) Analysis of TOG2:\u03b1\u03b2-tubulin interactions by sedimentation velocity. Plots are as described in (B). The fitted dissociation constant is 160 nM.\n\nWe measured the affinity of TOG1 and TOG2 for \u03b1\u03b2-tubulin by separately titrating variable amounts of each TOG domain into a constant amount of \u03b1\u03b2-tubulin and analyzing the resulting sedimentation behavior (Figure 2B,C). We fit the concentration-dependent sedimentation profiles using single-site binding isotherms (Dam and Schuck, 2005; Figure 2B,C). The fits indicate that both TOG domains form relatively tight, 1:1 complexes with \u03b1\u03b2-tubulin: TOG1 binds with KD = 70 nM and TOG2 binds with KD = 160 nM. The KD for the TOG2:\u03b1\u03b2-tubulin complex reported here is consistent with our prior measurement using fluorescence anisotropy and polymerization blocked \u03b1\u03b2-tubulin (Ayaz et al., 2012). Thus, in addition to a shared preference for the same curved conformation of \u03b1\u03b2-tubulin, TOG1 and TOG2 also bind \u03b1\u03b2-tubulin with comparable affinities. From both a biochemical and a structural perspective, the TOG1 and TOG2 domains are remarkably similar to each other.\n\n### TOG1-TOG2 binds noncooperatively to two \u03b1\u03b2-tubulins\n\nWhen present together in a TOG1-TOG2 construct, each of the TOG domains can engage its own \u03b1\u03b2-tubulin (Ayaz et al., 2012). We speculated that the two TOG-bound \u03b1\u03b2-tubulins might also interact with each other, and that this cooperativity might make important contributions to polymerase function (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cartoons illustrating three different possible arrangements of a TOG1-TOG2:(\u03b1\u03b2)2 complex: independent (left) denotes that an \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin interface does not provide additional stability to the complex, cooperative (right) denotes that an \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin interface (either longitudinal or lateral) provides additional stability to the complex. Predicted sedimentation coefficients (calculated using HYDROPRO [Garc\u00eda De La Torre et al., 2000]) are indicated. \u03b1\u03b2-tubulin is represented in pink and green, TOG1-TOG2 in shades of blue. (B) Sedimentation behavior of a TOG1-TOG2:(\u03b1\u03b2)1 complex by sedimentation velocity AUC using two different mutations (W314A and R519A) that impair TOG2:\u03b1\u03b2-tubulin interactions. The \u2018one tubulin\u2019 complex sediments at 7.1 S. (C) Placing limits on the sedimentation behavior of a TOG1-TOG2:(\u03b1\u03b2)2 complex by sedimentation velocity AUC. At \u223c5 molar equivalents of \u03b1\u03b2-tubulin to TOG1-TOG2, the resulting complex sediments at 9.1 S. The inset shows the predicted fraction of TOG1-TOG2 engaged in \u2018two \u03b1\u03b2-tubulin complex\u2019 under different assumptions about cooperativity. (D) Concentration dependence of TOG1-TOG2:\u03b1\u03b2-tubulin interactions. Seven concentrations of TOG1-TOG2 were mixed with 0.3 \u03bcM \u03b1\u03b2-tubulin and analyzed by sedimentation velocity AUC. Red dots indicate the signal-weighted sw values for the seven runs. The blue and pink swaths show the predicted behavior for TOG1 and TOG2 binding \u03b1\u03b2-tubulin with 10-fold positive or negative cooperativity, respectively, and assuming the sedimentation coefficient of TOG1-TOG2:(\u03b1\u03b2)2 falls in the range 9.1\u201310.9 S (see text). The gold swath shows the predicted behavior for noncooperatively binding TOGs using the same range of sedimentation coefficient for TOG1-TOG2:(\u03b1\u03b2)2. The data are not consistent with cooperative binding of TOG1-TOG2 to two \u03b1\u03b2-tubulins. Instead, they are much better described by independently binding TOG domains.\n\nWe used analytical ultracentrifugation to determine if cooperative interactions stabilized the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex. First, using mutations on TOG1-TOG2 that disrupt the slightly weaker TOG2:\u03b1\u03b2-tubulin interactions, we determined that TOG1-TOG2 bound to a single \u03b1\u03b2-tubulin sediments at 7.1 S (Figure 3B). Next, using a mixture in which \u03b1\u03b2-tubulin was superstoichiometric with respect to TOG1-TOG2 (Figure 3C), we observed a larger species sedimenting at 9.1 S. This value places a lower limit on the sedimentation coefficient for the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex (Figure 3C, inset) that is consistent with hydrodynamic calculations (Garc\u00eda De La Torre et al., 2000) using extended models in which the two \u03b1\u03b2-tubulins do not contact each other and the TOG domains are separated by varying distances. Hydrodynamic calculations predict that compact models containing longitudinally or laterally of \u03b1\u03b2-tubulins should sediment around 10.5\u201310.9 S (Figure 3A,C). Knowledge about the sedimentation behavior of the one and two tubulin complexes allowed us to analyze a titration of TOG1-TOG2 into \u03b1\u03b2-tubulin under different assumptions about cooperativity (Figure 3D). The resulting signal weighted average sedimentation coefficients are not consistent with models that assume even modest 10-fold positive or negative cooperativity (Figure 3D). Instead, the data are much better described by a model in which each TOG domain in TOG1-TOG2 interacts independently with its \u03b1\u03b2-tubulin (the best fit was obtained from a model invoking less than twofold negative cooperativity, not shown). Noncooperative binding contradicts our initial expectation and indicates that \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin contacts do not provide additional stability to the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex.\n\nThe lack of positive cooperativity stabilizing the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex is striking because in this complex the two bound \u03b1\u03b2-tubulins are physically constrained to occupy a relatively small volume and therefore are effectively at quite high concentration relative to each other. Indeed, allowing 55 \u00c5 for the length of each TOG domain and assuming that the \u223c75 amino acid linker is flexible and can maximally span 220 \u00c5 we estimate that the two TOG1-TOG2-bound \u03b1\u03b2-tubulins are minimally at an effective concentration of roughly 200 \u03bcM, likely higher because the linker will rarely be fully extended. This effective concentration of TOG1-TOG2-bound \u03b1\u03b2-tubulin is in the range of current estimates for the longitudinal KD for \u03b1\u03b2-tubulins (e.g., Gardner et al., 2011). Observing non-cooperative binding therefore suggests that some property of the TOG1-TOG2 linker antagonizes or counterbalances longitudinal interactions between \u03b1\u03b2-tubulins (see below for experiments concerning the linker sequence). Our data do not rule out that linked TOG domains might stabilize lateral interactions between \u03b1\u03b2-tubulins because these lateral interactions are thought to be much weaker (only molar affinity [Gardner et al., 2011]): even at effective \u03b1\u03b2-tubulin concentrations approaching 1 mM a weak interface like this would not be populated and therefore would contribute little additional stability to the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex. Whatever the underlying mechanism, the unexpected observation that the two linked TOG domains behave as independent \u03b1\u03b2-tubulin binding modules places significant constraints on biochemical models for the mechanism of these polymerases.\n\n### Two TOG domains are required for Stu2p function, but they do not have to be different\n\nStu2/XMAP215 family polymerases contain at least two different TOG domains. This property might indicate that the two domains have different functional specialization, but the structural and biochemical similarity of TOG1 and TOG2 (described above) does not seem consistent with separation of function. To investigate if different TOG domains are required for polymerase function we constructed a \u2018TOG-swapped\u2019 and other variants of Stu2p and assayed their ability to rescue the conditional depletion of endogenous Stu2p using a previously described assay (Kosco et al., 2001; Al-Bassam et al., 2006; Ayaz et al., 2012).\n\nWe first performed rescue assays using a \u2018full-length\u2019 Stu2p construct that retains the ability to dimerize and thus that contains two identical TOG1-TOG2 segments linked through the coiled-coil dimerization interface. A construct (TOG2-TOG2) in which TOG1 was replaced by a second copy of TOG2 rescued as well as did the wild-type (TOG1-TOG2) (Figure 4A). We also tried to replace TOG2 with a second copy of TOG1, but control experiments indicated that this variant was not stable (data not shown) and we have not yet pursued it further. Instead, we used site-directed mutagenesis as an alternate way to ablate the \u03b1\u03b2-tubulin binding activity of TOG1 or TOG2. Constructs in which either TOG was impaired for \u03b1\u03b2-tubulin binding (TOG1(R200A)-TOG2 or TOG1-TOG2(R519A)) also gave full rescue (Figure 4A). Ablating the function of individual TOGs is not without functional consequences under more stringent conditions, because these same constructs do show compromised rescue under conditions of microtubule stress (Ayaz et al., 2012). These data indicate that under normal conditions, the polymerase can function with only TOG1 or only TOG2 domains. Thus, having different TOG domains does not appear to be essential for polymerase function.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig4-v2.jpg)\n\n**Figure 4.:** (A) Yeast carrying plasmid-based rescue constructs coding for dimerization-competent variants of Stu2p were plated at serial dilutions on media that was unmodified (control) or that contained 500 \u03bcM CuSO4 (to deplete endogenous Stu2p; see text). All constructs, including those with debilitated TOG1 or TOG2 domains, showed full rescue. TOG domains are shown in blue, and the basic region in red. The coiled-coil is cartooned as a zipper. (B) As in A but using rescue constructs that are dimerization-impaired because the coiled-coil dimerization domain was deleted. In this more stringent background insults to either TOG domain abolished rescue activity. Replacing TOG1 with a second copy of TOG2 does not have adverse effects.\n\nUsing dimeric rescue constructs did not allow us to test Stu2p variants that contained only a single functional TOG domain of either kind. We therefore introduced the same mutations into a previously characterized dimerization-impaired variant of Stu2p in which the coiled-coil dimerization element had been deleted (Stu2p-\u0394cc) (Al-Bassam et al., 2006; Figure 4B). Consistent with prior observations (Al-Bassam et al., 2006), dimerization impaired Stu2p only partially compensated for the depletion of endogenous Stu2p. Even in this sensitized background, however, we found that as long as there were two functional TOG domains they did not need to be different. Stu2p(TOG2-TOG2)-\u0394cc showed rescue efficiency very similar to that of Stu2p(TOG1-TOG2)-\u0394cc (Figure 4B). Dimerization impaired variants of Stu2p in which TOG1 or TOG2 was defective for \u03b1\u03b2-tubulin binding did not show any rescue activity (Figure 4B), consistent with a prior in vitro study of XMAP215 that demonstrated a requirement for at least two TOG domains (Widlund et al., 2011). More importantly, the ability of TOG2 to substitute for TOG1 in this more stringent, dimerization-impaired background strengthens the conclusion that the polymerase does not require different TOG domains for its function.\n\n### Stu2p function tolerates substantial variation in the sequence linking two TOG domains\n\nThe dimeric Stu2p(TOG1-TOG2(R519A)) and Stu2p(TOG1(R200A)-TOG2) variants rescued the depletion of endogenous Stu2p in spite of the fact that the two functioning TOG domains were linked through the coiled-coil dimerization segment (and in the case of TOG1-TOG2(R519A) with a defective TOG domain in the linking sequence). This result suggested that how two TOG domains were linked was relatively unimportant, as long as they were linked. To explore this more systematically we determined how randomizing and/or shortening the TOG1-TOG2 linker in dimerization impaired Stu2p affected its rescue activity.\n\nTo test if the primary sequence of the TOG1-TOG2 linker was important for function, we prepared two variants of Stu2p\u0394cc in which the order of the central 65 amino acids of the TOG1-TOG2 linker (residues 252\u2013316) was randomized (Figure 5A). This \u2018shuffling\u2019 strategy preserves the overall amino acid composition but should disrupt any local features specific to the natural sequence. Both shuffled linkers gave rescue activity nearly indistinguishable from the wild-type linker (Figure 5A), consistent with the robust rescue activity of alternatively linked functional TOGs in dimeric Stu2p(TOG1-TOG2(R519A)) and Stu2p(TOG1(R200A)-TOG2) (Figure 4A). Thus, the sequence linking the two functional TOG domains tolerates significant variation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig5-v2.jpg)\n\n**Figure 5.:** Rescue assays were performed as in Figure 4, using dimerization-impaired rescue constructs. (A) Stu2p variants with \u2018shuffled\u2019 (randomized) linker sequences rescue the depletion of endogenous Stu2p comparably to those with the natural linker. (B) Stu2p function is substantially abolished when the TOG1-TOG2 linker is truncated by 60 amino acids. Smaller truncations only show slightly compromised rescue activity. (C) Histogram illustrating the distribution of TOG1-TOG2 linker lengths in \u223c300 orthologs. The distribution shows that the linker length can vary but has a minimum tolerable length of \u223c40 amino acids.\n\nWe also made a series of internal deletions in the TOG1-TOG2 linker to determine if shortening the linker affected rescue activity. Deleting 14 amino acids had little effect on rescue activity (Figure 5B). Rescue activity was mildly compromised by deletions of 22, 32, 40, and 50 amino acids (Figure 5B). Deleting 60 amino acids from the TOG1-TOG2 linker substantially abolished rescue activity (Figure 5B). These data suggest that Stu2p function is compromised when the sequence linking two TOG domains becomes too short. To examine the question of linker length more generally, we analyzed the distribution of TOG1-TOG2 linker length in \u223c300 Stu2p/XMAP215 orthologs. This analysis showed that linker lengths below \u223c40 amino acids occur very rarely (Figure 5C), supporting the notion that there is a minimal linker length below which polymerase function is compromised.\n\n### A simple \u2018tethering\u2019 mechanism\n\nAny model for the polymerase function must recapitulate the catalyst-like properties documented previously (Brouhard et al., 2008) while also accounting for the seemingly paradoxical observation that both TOG1 and TOG2 from Stu2p bind preferentially to a curved conformation of \u03b1\u03b2-tubulin that cannot exist in the body of the microtubule. A good model must likewise be consistent with the lack of detectable positive cooperativity stabilizing the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex, and should not require different TOG domains or a non-spacer-like role for the sequence linking the two TOG domains.\n\nIn Figure 6 we cartoon a simple \u2018tethering\u2019 mechanism that incorporates these new constraints, using a minimal \u2018two TOG\u2019 polymerase (Widlund et al., 2011) to simplify the representation. The central elements of this model are: (i) plus-end localization of the polymerase occurs by a TOG domain binding to curved \u03b1\u03b2-tubulin at the microtubule end; (ii) full curvature of \u03b1\u03b2-tubulin at the microtubule end requires that it not have any lateral neighbors; (iii) \u03b1\u03b2-tubulin bound to the other TOG domain is physically tethered to the microtubule end and therefore associates with it more frequently. When not engaged with \u03b1\u03b2-tubulin at the microtubule end, we assume based on results from others (Brouhard et al., 2008) that the polymerase diffuses on the microtubule lattice by virtue of its basic domain, thereby rapidly \u2018searching\u2019 for another curved \u03b1\u03b2-tubulin.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig6-v2.jpg)\n\n**Figure 6.:** The model posits that MT plus-end recognition occurs through TOG-mediated recognition of curved (black outline, \u2018kinked\u2019 \u03b1\u03b2-tubulin cartoon), not straight (gray outlines), \u03b1\u03b2-tubulin on the MT end, and that the linked TOG domains (blue; the basic region is indicated in red) serve to \u2018tether\u2019 an unpolymerized \u03b1\u03b2-tubulin to the MT end. Polymerase activity is predicted to arise because increasing the effective concentration of \u03b1\u03b2-tubulin near the MT end should also increase the rate of \u03b1\u03b2-tubulin:MT encounters.\n\n### An implicit kinetic model for the polymerase recapitulates observed aspects of polymerase activity\n\nCan this tethered delivery model recapitulate the catalyst-like action of these polymerases? To address this question, we took advantage of a kinetic model for microtubule assembly that we have been developing as part of other ongoing work.\n\nOur model for microtubule elongation is very similar to (and was inspired by) one previously developed by Odde and Cassimeris (VanBuren et al., 2002). Alternative and more complicated models exist (e.g., VanBuren et al., 2005; Margolin et al., 2012), but this relatively simple one captures the essence of the biochemistry\u2014that the microtubule end presents a mix of high and low affinity binding sites, depending on neighbor context\u2013in a reasonable way and using a small number of adjustable parameters (\u2018Materials and methods\u2019). Our model simulates microtubule polymerization one subunit association or dissociation at a time using kinetic Monte Carlo simulations on a two-dimensional lattice with staggered periodic boundary conditions to mimic the cylindrical structure of a 13 protofilament microtubule (Figure 7A). Because XMAP215 has been shown to promote the elongation of microtubules in the presence of a hydrolysis resistant GTP analog (Brouhard et al., 2008), we performed \u2018GTP-only\u2019 simulations (no GTP hydrolysis) to simplify the behavior by eliminating catastrophe. We performed a manual grid search of longitudinal and corner interactions (in the model these interactions are the dominant contributors to growth rate) to identify parameters that reproduced experimentally observed microtubule growth rates. To validate our program, we first fit the same experimental data (Walker et al., 1988) as did Odde and Cassimeris (VanBuren et al., 2002), obtaining similar parameters (Figure 7\u2014figure supplement 1). Other measurements of microtubule dynamics (e.g., Mitchison and Kirschner, 1984; Drechsel et al., 1992; Hyman et al., 1992; Brouhard et al., 2008; Gardner et al., 2011]) have shown much lower critical concentrations than the Walker et al. data (Walker et al., 1988) do, so we also searched for parameters to approximate the growth rates observed in the presence of GMPCPP (Brouhard et al., 2008; Gardner et al., 2011). This procedure identified a different set of parameters (Figure 7C; VanBuren et al., 2002). These models provide a starting point for exploring potential polymerase mechanisms.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig7-v2.jpg)\n\n**Figure 7.:** We developed a kinetic model for microtubule elongation and altered it to explore models for the polymerase. (A) Cartoon of the cylindrical microtubule (left; pink and green spheres represent \u03b1- and \u03b2-tubulin, respectively) alongside a two-dimensional representation of the MT lattice (gray boxes, right; the darker boxes represent the microtubule \u2018seed\u2019 used to template elongation in our simulations). (B) The model parameterizes all six possible neighbor states for \u03b1\u03b2-tubulin in the lattice, but the two that dominate the elongation behavior are the longitudinal (top left) and corner (top right) interactions. (C) A grid search identified parameters capable of recapitulating the concentration dependence of microtubule elongation rates in the presence of GMPCPP. The black line summarizes the trend from experimental observations (Brouhard et al., 2008; Gardner et al., 2011); red dots represent the results from our simulations. Using a kon of 4 \u00d7 106 M\u22121s\u22121, we obtained a good match to observed growth rates from KDlong = 8 mM and KDcorner = 33 nM. (D) (left) Cartoon illustrating the tethering model, with the polymerase (TOG domains in blue, basic region in red) localized to a curved \u03b1\u03b2-tubulin bound at the MT end by pure longitudinal association, (middle) simulated growth rates obtained at increasing association rates for the tethered \u03b1\u03b2-tubulin. Enhanced trapping of longitudinally-associated \u03b1\u03b2-tubulin through the tethering effect shows catalyst-like activity: growth rates and apparent on-rate constant (slope) both change significantly but the apparent equilibrium for growth (x-intercept) does not. (right) Plot of fold increase in growth rate vs the fold increase in tethered \u03b1\u03b2-tubulin association rate, using values at 0.5 \u03bcM \u03b1\u03b2-tubulin concentration as a reference (black dots; the black line shows the fit of a hyperbolic curve to the growth rates). The model for the polymerase gives a relatively modest change in growth rates compared to the fold-increase in tethered association rate. Simulations with progressively stronger (dark green: 1.7 mM; light green, 0.35 mM) longitudinal interactions show higher maximal polymerase activity. The polymerase activity is related to the population of longitudinally-associated \u03b1\u03b2-tubulin at the MT end. (E) Examining an alternative tethering model in which the polymerase promotes incorporation at a \u2018corner\u2019 site. This model yields much greater stimulation of elongation (middle) because there is always at least one corner site at the microtubule end. The predicted response also does not appear to saturate with increased tethering effect (right, linear fit). This alternative model does not describe the polymerase action because it fails to produce catalyst-like output.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) A grid search identified parameters capable of recapitulating the concentration dependence of microtubule elongation rates measured by Walker et al. (1988). The black line summarizes the trend from experimental observations; red dots represent the results from our simulations. Using a kon of 4 \u00d7 106 M\u22121s\u22121, we obtained a good match to observed growth rates from KDlong = 3 mM and KDcorner = 4 \u03bcM. These parameters are similar to those obtained by Odde and Cassimeris using a similar model trained on the same data (VanBuren et al., 2005). Using kon of 2 \u00d7 106 M\u22121s\u22121 or 6 \u00d7 106 M\u22121s\u22121 yielded longitudinal affinities of 0.4 and 18 mM, respectively. (B) (left) Cartoon illustrating the tethering model, with the polymerase (TOG domains in blue, basic region in red) localized to a curved \u03b1\u03b2-tubulin bound at the MT end by pure longitudinal association, (middle) simulated growth rates obtained at increasing association rates for the tethered \u03b1\u03b2-tubulin. Enhanced trapping of longitudinally-associated \u03b1\u03b2-tubulin through the tethering effect shows catalyst-like activity: growth rates and apparent on-rate constant (slope) both change significantly but the apparent equilibrium for growth (x-intercept) does not. (right) Plot of fold increase in growth rate vs the fold increase in tethered \u03b1\u03b2-tubulin association rate, using values at 10 \u03bcM \u03b1\u03b2-tubulin concentration as a reference (black dots; the black line shows the fit of a hyperbolic curve to the growth rates). The model for the polymerase gives a relatively modest change in growth rates compared to the fold-increase in tethered association rate. Simulations with stronger (purple: 0.4 mM) or weaker (light green, 18 mM) longitudinal interactions show higher or lower maximal polymerase activity. Thus, the polymerase activity is related to the population of longitudinally-associated \u03b1\u03b2-tubulin at the MT end. (C) Examining an alternative tethering model in which the polymerase promotes incorporation at a \u2018corner\u2019 site. This model yields much greater stimulation of elongation (middle) because there is always at least one corner site at the microtubule end. The predicted response also does not appear to saturate with increased tethering effect (right, linear fit). This alternative model does not describe the polymerase action because it fails to produce catalyst-like output.\n\nAn explicit model for the polymerase requires too many adjustable parameters to be feasible at this time. To address the question \u2018can tethering give catalyst-like activity\u2019, we made a number of simplifying assumptions to create an implicit representation of polymerase action that isolates the \u2018tethered delivery\u2019 steps while ignoring other aspects of polymerase function and biochemistry. We assumed that every curved, longitudinally-bound \u2018singleton\u2019 \u03b1\u03b2-tubulin at the MT end is engaged by one TOG domain of a polymerase (Figure 7D, left panel). This assumption provides end-localized polymerase in the model without having to parameterize/describe its diffusive movement on the microtubule lattice (this movement is mediated by the basic domain, which is required for polymerase function), or if it arrives at the microtubule end with its TOGs pre-loaded with \u03b1\u03b2-tubulin (XMAP215 has been observed to carry \u03b1\u03b2-tubulin while diffusing on the lattice). To mimic the tethering-induced local increase in \u03b1\u03b2-tubulin concentration, in the model we accelerated the rate of \u03b1\u03b2-tubulin association to the site neighboring the polymerase-bound singleton (Figure 7D, arrow). We do not assume that the linker is directing the tethered subunit to a particular site\u2013separate simulations showed that accelerating the rate of \u03b1\u03b2-tubulin association on top of the polymerase-bound singleton had no effect on growth rates (data not shown). We also assumed that when the polymerase bound singleton acquired a lateral neighbor it became straight (Rice et al., 2008; Buey et al., 2006), and that this straightening was linked to TOG disengagement (Ayaz et al., 2012).\n\nTo explore if enhanced trapping of singleton \u03b1\u03b2-tubulins could recapitulate catalyst-like activity, we simulated microtubule elongation rates using a range of accelerated tethered association rates. In reality, the tethered association rate is likely to be more or less constant, with maximal polymerase activity instead determined by the degree to which it saturates its binding sites on the plus end. Varying the tethered association rate provides a way to mimic this \u2018saturation\u2019 effect without having to model it explicitly. Strikingly, the simulated microtubule elongation rates increase with the tethered \u03b1\u03b2-tubulin association rate while the apparent equilibrium constant for elongation (x-intercept) remains approximately constant (Figure 7D, middle; Figure 7\u2014figure supplement 1). Affecting the rate but not the apparent equilibrium indicates that tethering-enhanced associative trapping of weakly-bound singletons can recapitulate the essence of catalyst-like activity. The increase in simulated growth rate (less than 10-fold) is significantly less than the maximal increase in tethered \u03b1\u03b2-tubulin association rate we explored (Figure 7D, right; Figure 7\u2014figure supplement 1). Thus, in addition to capturing catalyst-like action, our simple model also shows the modest overall stimulation that is characteristic of these polymerases.\n\n### Relationship between microtubule end structure and polymerase activity\n\nWhy did the model only stimulate elongation modestly, as the polymerases do? We speculated that because longitudinally associated \u03b1\u03b2-tubulin is weakly/transiently bound at the microtubule end (\u223cmM affinity in our fitted parameters and those of comparable models (VanBuren et al., 2002; Gardner et al., 2011); this compares to working concentrations of \u03b1\u03b2-tubulin that are typically at most 20 \u03bcM), the low population and lifetime of this \u2018substrate\u2019 was limiting the activity obtainable in our model.\n\nWe probed the linkage between \u2018substrate scarcity\u2019 and polymerase activity in two ways. We first created an alternative model in which the polymerase accelerated delivery of \u03b1\u03b2-tubulin adjacent to higher affinity and much longer-lived \u2018corner\u2019 (longitudinal + lateral interactions) sites, at least one of which is always present at the microtubule end (Figure 7E, left). In this alternative model the simulated elongation rates increase linearly with the increased effective concentration (Figure 7E, right), yielding much stronger stimulation that also lacks catalyst-like characteristics (Figure 7E, middle). This result is consistent with the idea that catalyst-like activity is related to the low affinity/lifetime of the end-bound singleton substrate. To explore this implication more directly we obtained parameter sets with higher affinity longitudinal interactions by using different assumed values of kon. As observed previously (VanBuren et al., 2002), these alternative parameterizations can approximate the experimental rates of (uncatalyzed) microtubule elongation by compensating for faster/slower kon with weaker/stronger longitudinal affinity (but retaining the same \u2018corner\u2019 [longitudinal + lateral] affinity). We observed in simulations that stronger longitudinal affinity gave higher maximal polymerase activity (Figure 7D, right; see also Figure 7\u2014figure supplement 1). These results support the notion that the polymerase activity in our model is related to the population/lifetime of longitudinally-associated \u03b1\u03b2-tubulin singleton at the microtubule end.\n\nThe tethering model suggests a plausible transition state/collision complex that limits the rate of microtubule polymerization in the absence of a polymerase (Figure 8). The idea is that at the MT end, longitudinally-bound \u03b1\u03b2-tubulins tend to dissociate much faster than the rate at which unpolymerized \u03b1\u03b2-tubulins associate at neighboring sites. Accordingly, most of the \u2018singleton\u2019-type associations are unproductive for elongation, and the MT grows primarily by additions into \u2018corner\u2019 sites. In the model we propose, Stu2p/XMAP215 polymerases enhance elongation by selectively concentrating \u03b1\u03b2-tubulin near singleton sites, thereby specifically promoting their associative trapping. We propose that the \u2018trapping complex\u2019\u2014two side-by-side \u03b1\u03b2-tubulins without additional neighbors to either side\u2013may be the transition state. In our model the polymerase catalyzes formation of this \u2018side-by-side\u2019 state by selectively concentrating (tethering) the reactants that lead to it. Associative trapping of singletons also \u2018roughens\u2019 the microtubule end through the creation of additional, longer-lived \u2018corner\u2019 sites. By virtue of having more favorable sites of interaction, these rougher microtubule ends can transiently capture unpolymerized subunits more efficiently and independently of the polymerase, through \u2018filling in\u2019 (a contribution from filling-in was anticipated previously [Brouhard et al., 2008]).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/03069/elife-03069-fig8-v2.jpg)\n\n**Figure 8.:** The microtubule end has multiple sites where \u03b1\u03b2-tubulin can associate, but elongation is largely dominated by additions into the few, high-affinity \u2018corner\u2019 sites (left panel) because pure longitudinal associations are weak. By preferentially recognizing curved \u03b1\u03b2-tubulin with one of its TOG domains, the polymerase (TOG domains in blue, basic region in red) can selectively localize to these \u2018unproductive\u2019 binding sites (second from left). The tethering action greatly enhances the rate at which these weakly bound subunits are trapped by neighboring association of another \u03b1\u03b2-tubulin (middle two panels). Polymerization-induced straightening of \u03b1\u03b2-tubulin releases the polymerase for another round of catalysis (right).\n\nBecause our model does not explicitly represent the polymerase, it cannot explain the molecular mechanisms underlying processive action. Perhaps basic-domain mediated rapid diffusion on the microtubule lattice, as has been measured for XMAP215 (Brouhard et al., 2008), is sufficient for the liberated polymerase to engage a newly added \u03b1\u03b2-tubulin.\n\nIn summary, we propose that Stu2p/XMAP215 polymerases localize to the plus end by virtue of preferential interactions between TOG domains and curved \u03b1\u03b2-tubulin. Our proposal is consistent with the view that curved, GTP-bound \u03b1\u03b2-tubulin is an on-pathway polymerization intermediate (e.g., Buey et al., 2006; Rice et al., 2008; Nawrotek et al., 2011). It also explains the need for at least two TOG domains (Widlund et al., 2011) because one TOG is required to bind curved \u03b1\u03b2-tubulin on the microtubule and another linked TOG is required for tethering an unpolymerized \u03b1\u03b2-tubulin. In this model, side-by-side trapping and the release of TOG domains will be linked because of the polymerization-associated conformational changes that occur in \u03b1\u03b2-tubulin. The model provides a simple molecular explanation for the catalytic-like action of the polymerase, recapitulates the modest maximal stimulation, and rationalizes how a polymerase can be built from domains that bind preferentially to a microtubule-incompatible conformation of \u03b1\u03b2-tubulin.\n\n## Materials and methods\n\n### Plasmids and their construction\n\nPlasmids to express TOG2 and wild-type or polymerization-blocked yeast \u03b1\u03b2-tubulin have been described previously (Johnson et al., 2011; Ayaz et al., 2012) and were used without further modification. Some plasmids (to express \u2018full-length\u2019 Stu2p and its R200 and R519 mutants) for the rescue assay were also previously described (Ayaz et al., 2012). \u2018Dimerization-impaired\u2019 plasmids were constructed using mutagenesis primers to delete the region that codes for the coiled-coil dimerization element (corresponding to amino acids 658\u2013761). These primers contained two regions that were complementary to the coding sequences just upstream and downstream of the deleted region. \u2018Linker truncation\u2019 plasmids were constructed using a similar strategy to remove increasingly large sections from the middle of the sequence linking TOG1 to TOG2 (deleted regions are: \u039414:273-286; \u039422:277-298; \u039432:273-304; \u039440:257-296; \u039450:251-300; \u039460:251-310). The \u2018linker shuffled\u2019 and \u2018TOG swapped\u2019 plasmids were made using GeneArt seamless cloning (Invitrogen, Carslbad, CA). Shuffled linkers were inserted starting from synthetic, codon-optimized cDNA (IDT, Coralville, IA), so we also prepared a codon optimized natural linker sequence to control for possible effects on expression levels. DNA coding for shuffled versions of the 65 central amino acids (residues 252\u2013316) of the TOG1-TOG2 linker was obtained from IDT and amplified using primers to append flanking nucleotides of wild-type upstream and downstream flanking sequence. The parent plasmid, excluding the region coding for the to-be-replaced linker sequence, was amplified in a separate reaction. The two products were mixed, incubated, and transformed according to the manufacturer's instructions. A similar strategy was used to replace TOG1 (residues 11\u2013245) with a second copy of TOG2 (residues 318\u2013560). The entire coding region of all plasmids was verified by DNA sequencing.\n\n### Protein expression and purification\n\nThe TOG1(1\u2013317), TOG2(318\u2013560), and TOG1-TOG2(1\u2013560) were expressed in bacteria with C-terminal His6 tags and purified using Ni-affinity and ion exchange chromatography (Ayaz et al., 2012). Wild-type or polymerization-blocked yeast \u03b1\u03b2-tubulin (\u03b2:T175R,V179R) were overexpressed in Saccharomyces cerevisiae (Johnson et al., 2011). All proteins were purified as previously described (Johnson et al., 2011; Ayaz et al., 2012).\n\n### Crystallization, data collection, and structure determination\n\nFor crystallization, pure polymerization blocked yeast \u03b1\u03b2-tubulin (\u03b2:T175R,V179R) and TOG2 domain were dialyzed into RB150 (25 mM Tris pH 7.5, 150 mM NaCl, 1 mM MgCl2, 1 mM EGTA) and then mixed at equimolar stoichiometry. One tenth volume of 2 M L-proline was added before concentrating the protein using 30 kDa cutoff Amicon Ultra concentrators. When the desired concentration was reached (\u223c2\u20133 mg/ml), GTP was added from a 100 mM stock to achieve a final concentration of 1 mM. Sparse-matrix crystallization screening (typically mixing protein with precipitants at 1:1 and 2:1 protein:reservoir ratios, using 200 nl of reservoir solution) was performed using a Phoenix DT Drop Setter (Rigaku, The Woodlands, TX). Needle- and blade-like crystals were obtained in multiple PEG-containing conditions, and these hits were optimized using finer screens. The crystal used for data collection was grown from 25% (vol/vol) PEG 3350, 0.25 M (NH4)2SO4, 0.1 M MES pH 6.1). For harvesting, cryoprotectant (reservoir solution supplemented with 100 mM NaCl and 40% [vol/vol] glycerol) was added directly to the drop before looping crystals for freezing in liquid nitrogen in liquid nitrogen.\n\nDiffraction data were collected at Argonne National Laboratory using APS beamline 19ID using remote data collection. Diffraction data were processed using HKL2000 (Otwinowski and Minor, 1997). Crystals adopt space group C2 with one complex in the asymmetric unit. The diffraction was anisotropic (Table 1). We used 2.81 \u00c5 as the high-resolution cut-off to avoid excessive loss of completeness.\n\nAll crystallographic calculations after diffraction data processing were performed using Phenix (Adams et al., 2010). Phases were obtained by molecular replacement, using as search models the yeast \u03b1- and \u03b2-tubulin chains from PDB 4FFB (Ayaz et al., 2012) with GTP removed, and the structure of TOG2 from Stu2p (PDB 2QK1 [Slep and Vale, 2007]). Model building was performed in Coot (Emsley et al., 2010). Disordered regions were removed, and GTP and new sidechains were manually placed where the electron density indicated that was appropriate. The model was refined conservatively, and based on the behavior of Rfree and other indicators we decided that a combination of TLS with two grouped B-factors for each residue represented an optimal strategy. We also ran tests to optimize the relative weighting of the X-ray and chemical restraints, consistently observing that optimal results (low Rfree and low Rfree-Rwork) were obtained when the covalent geometry was tightly restrained to ideal values.\n\n### Analytical ultracentrifugation\n\nSamples for analytical ultracentrifugation (TOG1, TOG2, TOG1-TOG2, and polymerization-competent yeast \u03b1\u03b2-tubulin) were dialyzed into RB100 (25 mM Tris pH 7.5, 1 mM MgCl2, 1 mM EGTA, 100 mM NaCl) containing 20 \u03bcM GTP. Samples were mixed and incubated at 4\u00b0C for at least one hour prior to the experiment. All analytical ultracentrifugation experiments were carried out in an Optima XL-I centrifuge using an An50-Ti rotor (Beckman\u2013Coulter, Brea, CA). Approximately 390 \u03bcl of each sample were placed in charcoal-filled, dual-sector Epon centerpieces. Sedimentation (rotor speed: 50,000 rpm) was monitored using absorbance optics, and centrifugation was conducted at 20\u00b0C after the centrifugation rotor and cells had equilibrated at that temperature for at least 2.5 hr. Protein partial-specific volumes, buffer viscosities, and buffer densities were calculated using SEDNTERP (Laue et al., 1992).\n\nThe c(s) distributions were generated using SEDFIT (Schuck, 2000; Schuck et al., 2002). Isotherms for TOG1, TOG2, and TOG1-TOG2 binding to \u03b1\u03b2-tubulin were assembled by importing c(s) distributions into GUSSI (available at http://biophysics.swmed.edu/MBR/software.html) and integrating them to obtain the weighted-average sedimentation coefficients as a function of TOG concentration. These isotherms were exported to SEDPHAT (Dam and Schuck, 2005) for evaluation. For the binding of TOG1 and TOG2 to \u03b1\u03b2-tubulin, a simple bimolecular binding model was used. For the binding of TOG1-TOG2 to \u03b1\u03b2-tubulin, a two-site binding model (i.e., two \u03b1\u03b2-tubulins binding to one TOG1-TOG2) with two microscopic association constants was used. Quantities measured in separate experiments (s-values of the individual components, s-values of TOG1-TOG2:(\u03b1\u03b2-tubulin)1, and the association constants derived with the single-domain TOG constructs) were treated as fixed parameters. We used a range of possible s-values for the TOG1-TOG2:(\u03b1\u03b2-tubulin)2, informed by different assumptions about cooperativity as shown in Figure 5C and by hydrodynamic calculations (Garc\u00eda De La Torre et al., 2000). To calculate sedimentation coefficients, we first prepared compact \u2018longitudinal\u2019 and \u2018lateral\u2019 models by docking the TOG1 and TOG2 complexes onto the \u03b1\u03b2-tubulins in the stathmin complex (pdb 1SA0 [Ravelli et al., 2004]) and a section of microtubule (coordinates provided by Ken Downing, Lawrence Berkeley lab), respectively. Extended models were generated by translating one TOG complex relative to the other. To calculate coordinates for the linker, we used the Modeller (Sali and Blundell, 1993) plugin to UCSF Chimera (Pettersen et al., 2004), calculating five different linker traces for each model in an attempt to capture some of the likely variability. Each resulting model was passed to HYDROPRO (Garc\u00eda De La Torre et al., 2000), and sedimentation coefficients were calculated using a solvent density of 0.99823 g/ml and otherwise default settings.\n\n### Genetic rescue assays\n\nThe genetic rescue assays were adapted from Al-Bassam et al. (2006) and performed as previously described (Ayaz et al., 2012). The parent strain was CUY1147\u0394LEU2 (CUY1147 (Kosco et al., 2001) in which the LEU2 gene was replaced with a marker coding for G418 resistance). This strain expresses a tagged version of Stu2p that is selectively degraded upon exposure to copper. The parent plasmid was pWP70 (Wang and Huffaker, 1997), a CEN plasmid that expresses (non-degradable) HA-tagged Stu2p from its endogenous promoter. For rescue assays CUY1147\u0394LEU2 transformed with rescue plasmid or empty vector was grown overnight in CSM-Leu media, normalized to A600 = 1, and plated at serial 10-fold dilutions onto CSM-Leu plates with or without 500 \u03bcM CuSO4. Plates were incubated at 30\u00b0C or room temperature and imaged after several days.\n\n### Evolutionary analysis of linker length\n\nTo collect a large number of TOG-domain containing sequences, we performed psiblast (Altschul et al., 1997) (non-redundant [nr] database, with e-value = 0.005 over three iterations) on amino acid sequences from TOG domains of known structure: the TOG1 and TOG2 domains from Stu2p (S. cerevisiae), the TOG2 domain from XMAP215 (Xenopus laevis) (Slep and Vale, 2007), and the TOG3 domain from Zyg9 (Caenorhabditis elegans) (Al-Bassam et al., 2007). The full protein sequences for all hits from each of the four runs were combined and identical hits were removed. They were then clustered using CLANS (Frickey and Lupas, 2004) (default parameters) over 130 iterations. The Stu2 cluster was extracted and aligned using mafft (Katoh and Standley, 2013) and passed to Jalview (Waterhouse et al., 2009). Proteins that were missing residues in highly conserved regions of TOG1 and TOG2, in particular in the boundaries adjacent to the start and end of the linker, were manually pruned. Based on the structures, we defined the boundaries for the end of TOG1 and beginning of TOG2 as K243 and L319, respectively. A linker for a given protein was measured counting these boundary residues and all residues in between. To reduce \u2018overcounting\u2019 artifacts, before making the histogram we thinned the set of sequences using the \u2018remove redundancy\u2019 (threshold = 0.99) feature of Jalview.\n\n### Kinetic model\n\nWe wrote a computer program to perform kinetic Monte Carlo simulations of microtubule elongation. We implemented an algorithm similar to one described previously (VanBuren et al., 2002). In the program, the microtubule lattice is represented by a two dimensional lattice with a staggered periodic boundary condition to mimic the cylindrical microtubule structure. A 5 \u00d7 13 section of the lattice was designated as a \u2018seed\u2019 and considered to be permanently occupied. The program simulates microtubule elongation one biochemical reaction (in this case subunit addition or dissociation, GTP hydrolysis is ignored) at a time. A lattice site is considered available for subunit addition if it is empty and a neighboring site is occupied. The rate of subunit addition into any available site is given by kon*[\u03b1\u03b2-tubulin]. Occupied sites (excepting the seed) are considered available for dissociation, with the rate of dissociation given by kon*KD where KD is the affinity of interaction, which is determined by the neighbor state (number and type of lattice contacts) and obtained from longitudinal and corner affinities through thermodynamic coupling (Erickson and Pantaloni, 1981; VanBuren et al., 2002). Simulations begin with only 13 possible events, each on an association onto the end of a protofilament. Possible events are stored in an indexed priority queue, sorted by their \u2018execution times\u2019 (Gibson and Bruck, 2000). Execution times are determined by first sampling a random number x between 0 and 1, and then calculating the time as \u2212(1/rate)*ln(x), where rate gives the appropriate first- or pseudo-first order rate constant. At each step the event with the shortest execution time is implemented, the simulation time is advanced accordingly, and the list of possible events and their associated rates is updated to account for changes in subunit neighbor state. To obtain the length (in \u03bcm) of a simulated microtubule at a given time, we divide the number of subunits by 1625, the number of \u03b1\u03b2-tubulin subunits in 1 \u03bcm of microtubule.\n\nTo model our proposed mechanism for polymerase action, we accelerated the rate at which unpolymerized subunits add adjacent to longitudinally associated \u2018singletons\u2019 at the microtubule end (or next to more tightly bound \u2018corner\u2019 subunits) (Figure 7). This acceleration mimics a \u2018tethering\u2019 effect. Control experiments showed that accelerating the rate for adding on top of a longitudinally-associated singleton had negligible effect (not shown). To keep the model as simple as possible, we did not account for any potential stabilization of TOG-bound singletons at the microtubule end.\n",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "04c54db7-9928-45b9-a387-894c1376a124",
+      "submission_id": "7d0b3f35-b0b5-4595-b9c8-055a9eb8a74f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Harrison, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03069.013](https://doi.org/10.7554/eLife.03069.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA tethered delivery mechanism explains the catalytic action of a microtubule polymerase\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and 4 reviewers, one of whom, Steve Harrison, is a member of our Board of Reviewing Editors, and one of whom, William Hancock, has agreed to reveal his identity.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript reports the structure of \u03b1\u03b2-tubulin-bound Stu2 TOG2 and shows that the tubulin heterodimer is in the \u201ccurved\u201d configuration, like the tubulin bound to TOG1. Further experiments show that tubulin binding to two linked domains is not cooperative. A series of experiments with \u201cdesigned\u201d Stu2 fragments then shows that any two TOGs on one molecule (either monomer or dimer) will give nearly normal catalytic activity. The authors find a minimum linker length for full activity of about 40 residues (consistent with the ca.300 TOG-TOG sequences in the database); the linker sequence is irrelevant. The manuscript then goes on to suggest a specific model for polymerization and to report results of simulations that embody the model. The notion is that one of the two required TOGs binds an \u03b1\u03b2-tubulin that has associated longitudinally with the end of a MT, rather than at a \u201ccorner\u201d, where the helical array creates lateral as well as longitudinal contacts. The former contact is, of course, weaker than the latter, but the model postulates that the high local concentration of \u03b1\u03b2-tubulin created by the relatively weakly bound heterodimer on the second TOG domain (or presumably on any of the additional ones in a dimer or in a many-TOG monomer) promotes addition adjacent to the first heterodimer. Lateral contacts then enforce a straight conformation for both, releasing the catalyst and stabilizing the added pair as part of the growing end.\n\nThe reviewers agreed that the experimental data are sound and that they impose interesting constraints on the mechanism of polymerization. We invite a revision that attends to the following questions and reservations.\n\n1) The authors used HYDROPRO for the prediction of the sedimentation coefficients of the extended and laterally and longitudinally associated tubulin subunits with Stu2. As this information was used to interpret the AUC binding experiments of TOG1-TOG2 with tubulin using different assumption about cooperativity, the authors should provide more details about the exact way these calculations were performed. In this context, it is a bit surprising that the sedimentation coefficients for the two putative laterally and longitudinally arranged tubulin subunits in complexes with Stu2 are similar. Do the authors have an explanation for this similarity?\n\n2) Modeling. The reviewers found the explanation of the rationale for the model \u2013 and even its specific details \u2013 hard to follow, although there was agreement that the model is interesting and plausible enough to be included. Because the data will stand, even if future work alters the model, the authors might want consider moving the entire model description and outcome into the Discussion, or in some other way underscore the distinction. A revision of the manuscript should in any case respond to the following points:\n\na) The authors considered only one possible mode of action, in which one TOG domain of Stu2 binds to a tubulin subunit at the distal end of a microtubule while the other TOG domain binds to soluble tubulin. Moreover, they did not consider the role of the basic microtubule binding domain, which is well known to be crucial for the XMAP215 polymerase activity. They should explain why they simplified their system to such a degree and why they did not consider additional possibilities.\n\nb) The model assumes that when a singleton tubulin adds, Stu2p instantaneously binds to it. Brouhard et al. measured D=0.3 \u00b5m2/s for XMAP215, which means it would take 13 \u00b5sec to diffuse 8 nm. That seems pretty fast. But singletons also dissociate very rapidly. For kon=4 x 106 M-1s-1 and 8 mM KD of longitudinal affinity used by Ayez, koff = 3.2 x 104 s-1, meaning that singletons have a 30 \u00b5sec residence time if not stabilized. So it is likely that some singletons will not have a bound Stu2p, and association is not actually instantaneous. This effect will not fundamentally change the model performance \u2013 it is one of degree, and it will be diminished with stronger longitudinal associations simulated in Figure 7 \u2013 but the authors should comment.\n\nc) The model assumes that the second TOG domain will come with an attached tubulin. If the model were that one TOG domain binds the singleton tubulin and then the second binds a free tubulin, that would be a problem \u2013 even with a 107 M-1s-1 on-rate and 1 \u00b5M tubulin concentration, the wait would be 100 \u00b5sec (longer than the association time of the singleton). Earlier in the paper, the authors find the Kd for tubulin binding to the TOG domains to be 100nM. That means that at 1\u00b5M free tubulin, 90% of TOG domains will have tubulin bound. So the assumption that the second TOG comes with a bound tubulin seems valid. One corollary, however, is that with \u00b5M free tubulin concentrations in solution, the TOG domains should all have a bound tubulin when the Stu2p is diffusing on the microtubule, held there by its basic domain, and the singleton will also be delivered by the Stu2p in most cases. It would have to be, because less than 10% of the Stu2p diffusing on the microtubule will have a free site that can bind the singleton. This point doesn't really change the model behavior, but it does give a picture of tubulin-bound TOGs diffusing on the microtubule that isn't conveyed in the paper. (See also comment a above).\n\nd) The corner model, which is not consistent with the data, is a nice control. It was, however, difficult to clarify the differences between the two models \u2013 in both of them there is a \u201ccorner effect\u201d, but one is with a curved singleton and the second is with a straight and stabilized subunit. The authors could do some work to clarify this difference.\n\ne) The y-axis of the growth rate plots in Figure 7 are in units \u00b5m/\u00b5M-min. Unless the reviewers are missing something, the units should be \u00b5m/min. When measuring the slope, the concentration comes in, but that's a different calculation.\n",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d6aa1863-3529-417b-b34f-293f8650e5b8",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C1",
+      "claim": "Stu2p/XMAP215 proteins are essential microtubule polymerases that use multiple \u03b1\u03b2-tubulin-interacting TOG domains to bind microtubule plus ends and catalyze fast microtubule growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Stu2p/XMAP215 proteins are essential microtubule polymerases that use multiple \u03b1\u03b2-tubulin-interacting TOG domains to bind microtubule plus ends and catalyze fast microtubule growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement in the abstract that draws from established knowledge about these proteins and is supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "d1d572bd-e3c2-4e9b-b0aa-fe4ae330177a",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C2",
+      "claim": "TOG2 binds selectively to a fully 'curved' conformation of \u03b1\u03b2-tubulin, incompatible with a microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Like TOG1, TOG2 binds selectively to a fully 'curved' conformation of \u03b1\u03b2-tubulin, incompatible with a microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structure determination of TOG2:\u03b1\u03b2-tubulin complex presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "52694482-c6b9-4f12-8952-02391c6bd6fb",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C3",
+      "claim": "TOG1-TOG2 binds non-cooperatively to two \u03b1\u03b2-tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that TOG1-TOG2 binds non-cooperatively to two \u03b1\u03b2-tubulins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analytical ultracentrifugation experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "12224ccd-0f83-4996-a08c-c086929222fe",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C4",
+      "claim": "Preferential interactions between TOGs and fully curved \u03b1\u03b2-tubulin that cannot exist elsewhere in the microtubule explain how these polymerases localize to the extreme microtubule end.",
+      "claim_type": "EXPLICIT",
+      "source": "Preferential interactions between TOGs and fully curved \u03b1\u03b2-tubulin that cannot exist elsewhere in the microtubule explain how these polymerases localize to the extreme microtubule end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "dc432280-76e4-45d6-904c-589d9c369665",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C5",
+      "claim": "The polymerase action changes the configuration of the microtubule end.",
+      "claim_type": "EXPLICIT",
+      "source": "This tethering model can explain catalyst-like behavior and also predicts that the polymerase action changes the configuration of the microtubule end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "63cf9f3f-dd7f-4f36-a02a-68cc89f156fc",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C6",
+      "claim": "Microtubules are dynamic polymers of \u03b1\u03b2-tubulin that have critical roles in chromosome segregation and intracellular organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules are dynamic polymers of \u03b1\u03b2-tubulin that have critical roles in chromosome segregation and intracellular organization (reviewed in Desai and Mitchison, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by a citation to a review article.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "439874fc-0a3f-4c81-83a3-a209b9e0485b",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C7",
+      "claim": "Evolutionarily conserved proteins in the Stu2p/XMAP215 family regulate microtubule dynamics by promoting fast microtubule elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionarily conserved proteins in the Stu2p/XMAP215 family (Gard and Kirschner, 1987; Ohkura et al., 1988; Wang and Huffaker, 1997) regulate microtubule dynamics by promoting fast microtubule elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "3b743d52-687c-49c1-9d5f-4c9420ea5f9d",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C8",
+      "claim": "XMAP215 affects the rate of microtubule elongation without affecting the apparent equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant advance in understanding occurred with a landmark study of XMAP215 in which in vitro reconstitution assays demonstrated that the polymerase affected the rate of microtubule elongation without affecting the apparent equilibrium (Brouhard et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Brouhard et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "bbd68948-f1eb-4e55-851c-040c7f430410",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C9",
+      "claim": "XMAP215 can be described as a catalyst for microtubule elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "This and other observations (e.g., Shirasu-Hiza et al., 2003; van Breugel et al., 2003) formed the basis for describing XMAP215 as a catalyst for microtubule elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "a3f3c2ee-0d18-4fb1-94a8-5c0f1d5230da",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C10",
+      "claim": "TOG1 domain from Stu2p binds preferentially to a 'curved' conformation of \u03b1\u03b2-tubulin that cannot be incorporated into the body of the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study from our group revealed that the TOG1 domain from Stu2p binds preferentially to a 'curved' conformation of \u03b1\u03b2-tubulin that cannot be incorporated into the body of the microtubule (Ayaz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work from the same group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "78e940e2-65fb-4660-933c-e935a05ea7c0",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C11",
+      "claim": "A TOG1-TOG2 construct can bind two \u03b1\u03b2-tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also showed that a TOG1-TOG2 construct could bind two \u03b1\u03b2-tubulins (Ayaz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work from the same group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "c10f841f-45ce-40b0-91b3-2af072f763f1",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C12",
+      "claim": "The crystal structure of TOG2:\u03b1\u03b2-tubulin complex was determined by molecular replacement from crystals that diffracted anisotropically to a minimum Bragg spacing of 2.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure was determined by molecular replacement from crystals that diffracted anisotropically to a minimum Bragg spacing of 2.8 \u00c5 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data from the crystallography experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "9e10884c-ecf5-4bed-8bd3-49afcdfd2cbc",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C13",
+      "claim": "The final model of TOG2:\u03b1\u03b2-tubulin complex has good geometry with a Molprobity clash score of 1.79 and 95.6% favored residues in Ramachandran plot.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model has good geometry (Table 1; Molprobity [Chen et al., 2010] clash score 1.79; 95.6% favored residues in Ramachandran plot) and has been refined to an Rfree of 0.259 (Rwork = 0.217).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of crystallographic refinement statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "34d7b096-a222-4ff0-aa3f-1baf11baf4f0",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C14",
+      "claim": "Conserved residues W341 and R519 on the tubulin-binding surface of TOG2 make very similar contacts with \u03b1\u03b2-tubulin as their equivalents in TOG1 (W23 and R200, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved residues like W341 and R519 on the tubulin-binding surface of TOG2 make very similar contacts with \u03b1\u03b2-tubulin as their equivalents in TOG1 (W23 and R200, respectively) (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "f0db9196-c4d1-4998-9d50-573aded63b86",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C15",
+      "claim": "The structure of TOG2 bound to \u03b1\u03b2-tubulin superimposes with the structure of 'free' TOG2 with 0.7 \u00c5 rmsd over 237 C\u03b1 atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of TOG2 bound to \u03b1\u03b2-tubulin superimposes with the structure of 'free' TOG2 (Slep and Vale, 2007) with 0.7 \u00c5 rmsd over 237 C\u03b1 atoms (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "66ce6b56-d1bd-4d92-ba37-0357367d80ec",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C16",
+      "claim": "TOG domains are rigid modules that do not change conformation when they bind \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the TOG2 domains pack differently in the 'bound' and 'free' crystals, the similarity in structure suggests that these TOG domains are rigid modules that do not change conformation when they bind \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural comparison data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "4cf6cb77-4c9a-4b91-af9b-01ffa12ce9f5",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C17",
+      "claim": "The conformation of \u03b1\u03b2-tubulin in complex with TOG2 is nearly identical to that seen for TOG1-bound \u03b1\u03b2-tubulin (12.3\u00b0 of curvature in the TOG2 complex vs 13.1\u00b0 in the TOG1 complex).",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the structure reported here was obtained from a new crystal form, the conformation of \u03b1\u03b2-tubulin in complex with TOG2 is nearly identical to that seen for TOG1-bound \u03b1\u03b2-tubulin (Figure 1D) (12.3\u00b0 of curvature in the TOG2 complex vs 13.1\u00b0 in the TOG1 complex), and is characteristically distinct from the straight conformation of \u03b1\u03b2-tubulin (1\u00b0 of curvature by our measure) (L\u00f6we et al., 2001; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "70942102-958e-4eb3-a0fb-5b11aaf4d766",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C18",
+      "claim": "Individual tubulin chains between the TOG1 and TOG2 complexes superimpose on each other with 0.4 \u00c5 rmsd over C\u03b1 atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Underscoring this similarity, individual tubulin chains between the TOG1 and TOG2 complexes superimpose on each other with 0.4 \u00c5 rmsd over C\u03b1 atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "da1760e1-8535-4568-8c64-eecea35854f0",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C19",
+      "claim": "Both TOG1 and TOG2 bind preferentially to the same, curved conformation of \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both TOG1 and TOG2 bind preferentially to the same, curved conformation of \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "b73194e9-4157-4942-9986-e30a103a9da3",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C20",
+      "claim": "Other TOGs in this family probably also bind to curved \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "By extension, other TOGs in this family probably also bind to curved \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the similarity observed between TOG1 and TOG2.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "840f420f-f583-4229-b1d4-0731f49b981d",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C21",
+      "claim": "TOG:\u03b1\u03b2-tubulin interactions are required for plus-end localization of Stu2p/XMAP215 polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TOG:\u03b1\u03b2-tubulin interactions are required for plus-end localization of Stu2p/XMAP215 polymerases (Al-Bassam et al., 2006), preferential binding of TOGs to curved \u03b1\u03b2-tubulin suggests that curved \u03b1\u03b2-tubulin itself is the distinctive end-specific feature the polymerase recognizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "7df06415-eb8d-4c2c-bad1-069b1ce22976",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C22",
+      "claim": "Curved \u03b1\u03b2-tubulin itself is the distinctive end-specific feature the polymerase recognizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TOG:\u03b1\u03b2-tubulin interactions are required for plus-end localization of Stu2p/XMAP215 polymerases (Al-Bassam et al., 2006), preferential binding of TOGs to curved \u03b1\u03b2-tubulin suggests that curved \u03b1\u03b2-tubulin itself is the distinctive end-specific feature the polymerase recognizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data and prior knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "1e60749f-7f49-4c54-91d2-02460fd86fac",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C23",
+      "claim": "Other plus-end tracking proteins like Eb1 recognize lattice-specific features and consequently show 'comet-like' localization that extends into the microtubule body.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, other plus-end tracking proteins like Eb1 recognize lattice-specific features and consequently show 'comet-like' localization that extends into the microtubule body (Nakamura et al., 2012; Maurer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "fb664643-de25-4cf8-8f2f-976b20868ed0",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C24",
+      "claim": "At \u03b1\u03b2-tubulin concentrations ranging from 0.08 to 1 \u03bcM there is a single dominant peak at 5.8 S with only 1.7 and 2.8% of the material sedimenting faster at the lowest and highest concentration tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, at \u03b1\u03b2-tubulin concentrations ranging from 0.08 to 1 \u03bcM there is a single dominant peak at 5.8 S with only 1.7 and 2.8% of the material sedimenting faster at the lowest and highest concentration tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "e51b390d-b1c8-49f3-9d77-189c5d858ce6",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C25",
+      "claim": "TOG1 binds \u03b1\u03b2-tubulin with KD = 70 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The fits indicate that both TOG domains form relatively tight, 1:1 complexes with \u03b1\u03b2-tubulin: TOG1 binds with KD = 70 nM and TOG2 binds with KD = 160 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of binding affinity measurements from analytical ultracentrifugation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "9e6586c2-f206-44f9-9b96-a3bbed9a410f",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C26",
+      "claim": "TOG2 binds \u03b1\u03b2-tubulin with KD = 160 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The fits indicate that both TOG domains form relatively tight, 1:1 complexes with \u03b1\u03b2-tubulin: TOG1 binds with KD = 70 nM and TOG2 binds with KD = 160 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of binding affinity measurements from analytical ultracentrifugation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "c343482e-d1ca-4cbf-869f-a98d811db7a3",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C27",
+      "claim": "Both TOG domains form relatively tight, 1:1 complexes with \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The fits indicate that both TOG domains form relatively tight, 1:1 complexes with \u03b1\u03b2-tubulin: TOG1 binds with KD = 70 nM and TOG2 binds with KD = 160 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of binding stoichiometry from analytical ultracentrifugation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "996f91c0-dc37-42b1-93ff-1ef9da4766a3",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C28",
+      "claim": "The KD for the TOG2:\u03b1\u03b2-tubulin complex is consistent with prior measurement using fluorescence anisotropy and polymerization blocked \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The KD for the TOG2:\u03b1\u03b2-tubulin complex reported here is consistent with our prior measurement using fluorescence anisotropy and polymerization blocked \u03b1\u03b2-tubulin (Ayaz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior data from the same group.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "3419e1b7-fa53-4abd-bd9c-d9e437e3881b",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C29",
+      "claim": "TOG1 and TOG2 domains are remarkably similar to each other from both a biochemical and a structural perspective.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to a shared preference for the same curved conformation of \u03b1\u03b2-tubulin, TOG1 and TOG2 also bind \u03b1\u03b2-tubulin with comparable affinities. From both a biochemical and a structural perspective, the TOG1 and TOG2 domains are remarkably similar to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the structural and biochemical data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "23c9753b-6658-4fc1-90cb-5959dee25b6c",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C30",
+      "claim": "TOG1-TOG2 bound to a single \u03b1\u03b2-tubulin sediments at 7.1 S.",
+      "claim_type": "EXPLICIT",
+      "source": "First, using mutations on TOG1-TOG2 that disrupt the slightly weaker TOG2:\u03b1\u03b2-tubulin interactions, we determined that TOG1-TOG2 bound to a single \u03b1\u03b2-tubulin sediments at 7.1 S (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "bf041e83-4b2d-4907-b7eb-2b4e3d3c4de5",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C31",
+      "claim": "Using a mixture in which \u03b1\u03b2-tubulin was superstoichiometric with respect to TOG1-TOG2, a larger species sedimenting at 9.1 S was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, using a mixture in which \u03b1\u03b2-tubulin was superstoichiometric with respect to TOG1-TOG2 (Figure 3C), we observed a larger species sedimenting at 9.1 S.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "0e427ecc-6b91-42f7-b12b-3592c6761f98",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C32",
+      "claim": "The data are not consistent with models that assume even modest 10-fold positive or negative cooperativity.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting signal weighted average sedimentation coefficients are not consistent with models that assume even modest 10-fold positive or negative cooperativity (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an analysis of the analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "9f38d9c5-314c-43d1-af10-1e0d2f8c5e75",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C33",
+      "claim": "The data are much better described by a model in which each TOG domain in TOG1-TOG2 interacts independently with its \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the data are much better described by a model in which each TOG domain in TOG1-TOG2 interacts independently with its \u03b1\u03b2-tubulin (the best fit was obtained from a model invoking less than twofold negative cooperativity, not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of the analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "8010d23e-ffdc-4055-8907-c91946d7992f",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C34",
+      "claim": "Noncooperative binding indicates that \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin contacts do not provide additional stability to the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Noncooperative binding contradicts our initial expectation and indicates that \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin contacts do not provide additional stability to the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the analytical ultracentrifugation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "5bca6616-03fb-497e-98fa-017afe02a61b",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C35",
+      "claim": "The two TOG1-TOG2-bound \u03b1\u03b2-tubulins are minimally at an effective concentration of roughly 200 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, allowing 55 \u00c5 for the length of each TOG domain and assuming that the \u223c75 amino acid linker is flexible and can maximally span 220 \u00c5 we estimate that the two TOG1-TOG2-bound \u03b1\u03b2-tubulins are minimally at an effective concentration of roughly 200 \u03bcM, likely higher because the linker will rarely be fully extended.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on structural dimensions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "87310017-c893-48d4-b3a4-799c0e1b8ecf",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C36",
+      "claim": "Observing non-cooperative binding suggests that some property of the TOG1-TOG2 linker antagonizes or counterbalances longitudinal interactions between \u03b1\u03b2-tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "Observing non-cooperative binding therefore suggests that some property of the TOG1-TOG2 linker antagonizes or counterbalances longitudinal interactions between \u03b1\u03b2-tubulins (see below for experiments concerning the linker sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the analytical ultracentrifugation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "5e4b9349-209a-44fe-8bd4-503a7820e638",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C37",
+      "claim": "A construct (TOG2-TOG2) in which TOG1 was replaced by a second copy of TOG2 rescued as well as did the wild-type (TOG1-TOG2).",
+      "claim_type": "EXPLICIT",
+      "source": "A construct (TOG2-TOG2) in which TOG1 was replaced by a second copy of TOG2 rescued as well as did the wild-type (TOG1-TOG2) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "28345fe1-1425-443e-b43e-8caaba787a43",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C38",
+      "claim": "Constructs in which either TOG was impaired for \u03b1\u03b2-tubulin binding (TOG1(R200A)-TOG2 or TOG1-TOG2(R519A)) gave full rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "Constructs in which either TOG was impaired for \u03b1\u03b2-tubulin binding (TOG1(R200A)-TOG2 or TOG1-TOG2(R519A)) also gave full rescue (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "5f235124-7567-4d3c-a05c-84835201d203",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C39",
+      "claim": "Under normal conditions, the polymerase can function with only TOG1 or only TOG2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that under normal conditions, the polymerase can function with only TOG1 or only TOG2 domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the genetic rescue assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "9a58dde3-a842-4f18-9194-81cb0d7bb94e",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C40",
+      "claim": "Having different TOG domains does not appear to be essential for polymerase function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, having different TOG domains does not appear to be essential for polymerase function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the genetic rescue assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "b9638111-7feb-4d22-a731-df4267c21eb5",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C41",
+      "claim": "Stu2p(TOG2-TOG2)-\u0394cc showed rescue efficiency very similar to that of Stu2p(TOG1-TOG2)-\u0394cc.",
+      "claim_type": "EXPLICIT",
+      "source": "Stu2p(TOG2-TOG2)-\u0394cc showed rescue efficiency very similar to that of Stu2p(TOG1-TOG2)-\u0394cc (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "1b335464-e254-45cc-b785-8d1ca575dc74",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C42",
+      "claim": "Dimerization impaired variants of Stu2p in which TOG1 or TOG2 was defective for \u03b1\u03b2-tubulin binding did not show any rescue activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimerization impaired variants of Stu2p in which TOG1 or TOG2 was defective for \u03b1\u03b2-tubulin binding did not show any rescue activity (Figure 4B), consistent with a prior in vitro study of XMAP215 that demonstrated a requirement for at least two TOG domains (Widlund et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "d9b2140f-8b3c-4e46-a050-8e73e72c68aa",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C43",
+      "claim": "XMAP215 requires at least two TOG domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimerization impaired variants of Stu2p in which TOG1 or TOG2 was defective for \u03b1\u03b2-tubulin binding did not show any rescue activity (Figure 4B), consistent with a prior in vitro study of XMAP215 that demonstrated a requirement for at least two TOG domains (Widlund et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "d2749d8b-f025-4c72-8e54-30c96649b3cf",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C44",
+      "claim": "Both shuffled linkers gave rescue activity nearly indistinguishable from the wild-type linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Both shuffled linkers gave rescue activity nearly indistinguishable from the wild-type linker (Figure 5A), consistent with the robust rescue activity of alternatively linked functional TOGs in dimeric Stu2p(TOG1-TOG2(R519A)) and Stu2p(TOG1(R200A)-TOG2) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "357d3102-6ee5-410e-b966-03b67a68f19a",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C45",
+      "claim": "The sequence linking the two functional TOG domains tolerates significant variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the sequence linking the two functional TOG domains tolerates significant variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the genetic rescue assay data with shuffled linkers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "9867bf46-f3b4-4a44-99c1-e0ffd07164ec",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C46",
+      "claim": "Deleting 14 amino acids from the TOG1-TOG2 linker had little effect on rescue activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting 14 amino acids had little effect on rescue activity (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "d674a60b-573b-44c9-89f3-ed4e6b00e823",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C47",
+      "claim": "Rescue activity was mildly compromised by deletions of 22, 32, 40, and 50 amino acids from the TOG1-TOG2 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue activity was mildly compromised by deletions of 22, 32, 40, and 50 amino acids (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "cf52325c-3037-45c3-9327-7f3bca3c4621",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C48",
+      "claim": "Deleting 60 amino acids from the TOG1-TOG2 linker substantially abolished rescue activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting 60 amino acids from the TOG1-TOG2 linker substantially abolished rescue activity (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "279b4722-b424-4464-ae16-72952da5f7fc",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C49",
+      "claim": "Stu2p function is compromised when the sequence linking two TOG domains becomes too short.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Stu2p function is compromised when the sequence linking two TOG domains becomes too short.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the genetic rescue assay data with linker deletions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "7d9aef6a-a16f-4f72-937d-ce09cb90fb4b",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C50",
+      "claim": "Linker lengths below \u223c40 amino acids occur very rarely in \u223c300 Stu2p/XMAP215 orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that linker lengths below \u223c40 amino acids occur very rarely (Figure 5C), supporting the notion that there is a minimal linker length below which polymerase function is compromised.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of evolutionary analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "9d4b4e67-2978-47a6-91c7-7e59945f533c",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C51",
+      "claim": "There is a minimal linker length below which polymerase function is compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that linker lengths below \u223c40 amino acids occur very rarely (Figure 5C), supporting the notion that there is a minimal linker length below which polymerase function is compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the evolutionary analysis and genetic rescue assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "3fefa041-f197-44d1-9068-63997f38ce84",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C52",
+      "claim": "Plus-end localization of the polymerase occurs by a TOG domain binding to curved \u03b1\u03b2-tubulin at the microtubule end.",
+      "claim_type": "EXPLICIT",
+      "source": "The central elements of this model are: (i) plus-end localization of the polymerase occurs by a TOG domain binding to curved \u03b1\u03b2-tubulin at the microtubule end;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a component of the proposed tethering model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "3ed73a42-9aa8-4859-822b-7903379255de",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C53",
+      "claim": "Full curvature of \u03b1\u03b2-tubulin at the microtubule end requires that it not have any lateral neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) full curvature of \u03b1\u03b2-tubulin at the microtubule end requires that it not have any lateral neighbors;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a component of the proposed tethering model based on structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "94d8c738-838c-47fd-8eeb-800ecbeffafe",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C54",
+      "claim": "\u03b1\u03b2-tubulin bound to the other TOG domain is physically tethered to the microtubule end and therefore associates with it more frequently.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) \u03b1\u03b2-tubulin bound to the other TOG domain is physically tethered to the microtubule end and therefore associates with it more frequently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a component of the proposed tethering model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "fbd5a0af-9260-4b74-b5db-77249c9748b3",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C55",
+      "claim": "When not engaged with \u03b1\u03b2-tubulin at the microtubule end, the polymerase diffuses on the microtubule lattice by virtue of its basic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "When not engaged with \u03b1\u03b2-tubulin at the microtubule end, we assume based on results from others (Brouhard et al., 2008) that the polymerase diffuses on the microtubule lattice by virtue of its basic domain, thereby rapidly 'searching' for another curved \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption in the model based on prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "cfd1412e-dbef-4753-accf-6a830aec97a7",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C56",
+      "claim": "XMAP215 has been shown to promote the elongation of microtubules in the presence of a hydrolysis resistant GTP analog.",
+      "claim_type": "EXPLICIT",
+      "source": "Because XMAP215 has been shown to promote the elongation of microtubules in the presence of a hydrolysis resistant GTP analog (Brouhard et al., 2008), we performed 'GTP-only' simulations (no GTP hydrolysis) to simplify the behavior by eliminating catastrophe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "d86a89b2-ecd9-447d-9865-2fe82a123273",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C57",
+      "claim": "Enhanced trapping of longitudinally-associated \u03b1\u03b2-tubulin through the tethering effect shows catalyst-like activity: growth rates and apparent on-rate constant (slope) both change significantly but the apparent equilibrium for growth (x-intercept) does not.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced trapping of longitudinally-associated \u03b1\u03b2-tubulin through the tethering effect shows catalyst-like activity: growth rates and apparent on-rate constant (slope) both change significantly but the apparent equilibrium for growth (x-intercept) does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "3767ea5a-3784-4908-8ccc-2ff954ce1e54",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C58",
+      "claim": "Tethering-enhanced associative trapping of weakly-bound singletons can recapitulate the essence of catalyst-like activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Affecting the rate but not the apparent equilibrium indicates that tethering-enhanced associative trapping of weakly-bound singletons can recapitulate the essence of catalyst-like activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "c4b55e0e-cd4c-4c20-b855-f237197c2728",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C59",
+      "claim": "The simple model shows the modest overall stimulation that is characteristic of these polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to capturing catalyst-like action, our simple model also shows the modest overall stimulation that is characteristic of these polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "5022cbb9-4cba-4882-b72c-bd6e51001d49",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C60",
+      "claim": "The low population and lifetime of longitudinally associated \u03b1\u03b2-tubulin substrate was limiting the activity obtainable in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculated that because longitudinally associated \u03b1\u03b2-tubulin is weakly/transiently bound at the microtubule end (\u223cmM affinity in our fitted parameters and those of comparable models (VanBuren et al., 2002; Gardner et al., 2011); this compares to working concentrations of \u03b1\u03b2-tubulin that are typically at most 20 \u03bcM), the low population and lifetime of this 'substrate' was limiting the activity obtainable in our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the simulation results and prior work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "e39fa70a-281d-41bd-aa27-18f46100d099",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C61",
+      "claim": "Stronger longitudinal affinity gave higher maximal polymerase activity in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed in simulations that stronger longitudinal affinity gave higher maximal polymerase activity (Figure 7D, right; see also Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "c50f8826-b971-487b-adfa-700417730f9a",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C62",
+      "claim": "The polymerase activity in the model is related to the population/lifetime of longitudinally-associated \u03b1\u03b2-tubulin singleton at the microtubule end.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that the polymerase activity in our model is related to the population/lifetime of longitudinally-associated \u03b1\u03b2-tubulin singleton at the microtubule end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "ecc4558c-2502-40d2-a811-3bca0e46b892",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C63",
+      "claim": "At the MT end, longitudinally-bound \u03b1\u03b2-tubulins tend to dissociate much faster than the rate at which unpolymerized \u03b1\u03b2-tubulins associate at neighboring sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The idea is that at the MT end, longitudinally-bound \u03b1\u03b2-tubulins tend to dissociate much faster than the rate at which unpolymerized \u03b1\u03b2-tubulins associate at neighboring sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a component of the proposed mechanism based on the model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "f0ba1711-b614-475d-a185-60d1ea930273",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C64",
+      "claim": "Most of the 'singleton'-type associations are unproductive for elongation, and the MT grows primarily by additions into 'corner' sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, most of the 'singleton'-type associations are unproductive for elongation, and the MT grows primarily by additions into 'corner' sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a component of the proposed mechanism based on the model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "73de5bc1-6dd1-44a0-8ba2-4cbbde486f0d",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C65",
+      "claim": "Stu2p/XMAP215 polymerases enhance elongation by selectively concentrating \u03b1\u03b2-tubulin near singleton sites, thereby specifically promoting their associative trapping.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model we propose, Stu2p/XMAP215 polymerases enhance elongation by selectively concentrating \u03b1\u03b2-tubulin near singleton sites, thereby specifically promoting their associative trapping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the core of the proposed tethering mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "0e0d094a-fbd0-448c-8a85-ee00054282d1",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C66",
+      "claim": "The 'trapping complex'\u2014two side-by-side \u03b1\u03b2-tubulins without additional neighbors to either side\u2013may be the transition state.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the 'trapping complex'\u2014two side-by-side \u03b1\u03b2-tubulins without additional neighbors to either side\u2013may be the transition state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "1a57c769-eec7-4f00-93a1-475dacc66abc",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C67",
+      "claim": "The polymerase catalyzes formation of the 'side-by-side' state by selectively concentrating (tethering) the reactants that lead to it.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model the polymerase catalyzes formation of this 'side-by-side' state by selectively concentrating (tethering) the reactants that lead to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a component of the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "dcdfaee1-eb5b-4519-b130-11a91a67b86f",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C68",
+      "claim": "Associative trapping of singletons 'roughens' the microtubule end through the creation of additional, longer-lived 'corner' sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Associative trapping of singletons also 'roughens' the microtubule end through the creation of additional, longer-lived 'corner' sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "e59501ab-91e4-408b-b740-ba4048f57897",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C69",
+      "claim": "Rougher microtubule ends can transiently capture unpolymerized subunits more efficiently and independently of the polymerase, through 'filling in'.",
+      "claim_type": "EXPLICIT",
+      "source": "By virtue of having more favorable sites of interaction, these rougher microtubule ends can transiently capture unpolymerized subunits more efficiently and independently of the polymerase, through 'filling in' (a contribution from filling-in was anticipated previously [Brouhard et al., 2008]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the proposed mechanism, with support from prior work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "cf1491b6-e2d7-4ac8-9e96-47437531c18f",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C70",
+      "claim": "Stu2p/XMAP215 polymerases localize to the plus end by virtue of preferential interactions between TOG domains and curved \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we propose that Stu2p/XMAP215 polymerases localize to the plus end by virtue of preferential interactions between TOG domains and curved \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the proposed mechanism based on the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "96746a7f-673c-4962-a687-6c014a34eb33",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C71",
+      "claim": "The proposal is consistent with the view that curved, GTP-bound \u03b1\u03b2-tubulin is an on-pathway polymerization intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proposal is consistent with the view that curved, GTP-bound \u03b1\u03b2-tubulin is an on-pathway polymerization intermediate (e.g., Buey et al., 2006; Rice et al., 2008; Nawrotek et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "f884b37a-974b-48c3-a158-7e469ccf9abd",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C72",
+      "claim": "At least two TOG domains are needed because one TOG is required to bind curved \u03b1\u03b2-tubulin on the microtubule and another linked TOG is required for tethering an unpolymerized \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "It also explains the need for at least two TOG domains (Widlund et al., 2011) because one TOG is required to bind curved \u03b1\u03b2-tubulin on the microtubule and another linked TOG is required for tethering an unpolymerized \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the proposed mechanism and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "57fa5314-3f0f-4730-b08a-8f830acdc674",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C73",
+      "claim": "Side-by-side trapping and the release of TOG domains will be linked because of the polymerization-associated conformational changes that occur in \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, side-by-side trapping and the release of TOG domains will be linked because of the polymerization-associated conformational changes that occur in \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "4eae8b87-27d4-461f-ac8b-0467519ae4fa",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C74",
+      "claim": "The model provides a simple molecular explanation for the catalytic-like action of the polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "The model provides a simple molecular explanation for the catalytic-like action of the polymerase, recapitulates the modest maximal stimulation, and rationalizes how a polymerase can be built from domains that bind preferentially to a microtubule-incompatible conformation of \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the explanatory power of the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "986841ae-2edd-4314-a9ec-5b89e159c73e",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C75",
+      "claim": "The model recapitulates the modest maximal stimulation characteristic of these polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "The model provides a simple molecular explanation for the catalytic-like action of the polymerase, recapitulates the modest maximal stimulation, and rationalizes how a polymerase can be built from domains that bind preferentially to a microtubule-incompatible conformation of \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the explanatory power of the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "316c48c4-fe33-46d1-ab3e-4e57f35474a6",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C76",
+      "claim": "The model rationalizes how a polymerase can be built from domains that bind preferentially to a microtubule-incompatible conformation of \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The model provides a simple molecular explanation for the catalytic-like action of the polymerase, recapitulates the modest maximal stimulation, and rationalizes how a polymerase can be built from domains that bind preferentially to a microtubule-incompatible conformation of \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the explanatory power of the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "cd8cb807-0a80-4294-a1f9-691acbf54ce3",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C77",
+      "claim": "TOG1 is dispensable for the plus-end binding of Stu2p.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TOG1 is dispensable for the plus-end binding of Stu2p (Al-Bassam et al., 2006), and because of apparent differences in the biochemical behavior of TOG1 and TOG2 (Al-Bassam et al., 2006; Ayaz et al., 2012) we speculated that TOG2 might bind to a different, lattice-induced conformation of \u03b1\u03b2-tubulin (Ayaz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "8e211a13-b4dd-431c-a8c7-16cc8e49ac24",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C78",
+      "claim": "The crystal structure of TOG2:\u03b1\u03b2-tubulin complex was obtained from crystals grown from 25% (vol/vol) PEG 3350, 0.25 M (NH4)2SO4, 0.1 M MES pH 6.1.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal used for data collection was grown from 25% (vol/vol) PEG 3350, 0.25 M (NH4)2SO4, 0.1 M MES pH 6.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of crystallization conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "3919a4e1-939e-46fd-a292-6fb0f5a26fc5",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C79",
+      "claim": "Crystals of TOG2:\u03b1\u03b2-tubulin complex adopt space group C2 with one complex in the asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals adopt space group C2 with one complex in the asymmetric unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "de94cd2a-c1fb-47dc-adea-63e2c2f0cb9c",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C80",
+      "claim": "The two TOG1-TOG2-bound \u03b1\u03b2-tubulins are at an effective concentration in the range of current estimates for the longitudinal KD for \u03b1\u03b2-tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "This effective concentration of TOG1-TOG2-bound \u03b1\u03b2-tubulin is in the range of current estimates for the longitudinal KD for \u03b1\u03b2-tubulins (e.g., Gardner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "0de6eb9b-4208-499b-8e85-1bd0bc201c6c",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C81",
+      "claim": "Linked TOG domains might stabilize lateral interactions between \u03b1\u03b2-tubulins, but these lateral interactions are thought to be much weaker (only molar affinity).",
+      "claim_type": "EXPLICIT",
+      "source": "Our data do not rule out that linked TOG domains might stabilize lateral interactions between \u03b1\u03b2-tubulins because these lateral interactions are thought to be much weaker (only molar affinity [Gardner et al., 2011]): even at effective \u03b1\u03b2-tubulin concentrations approaching 1 mM a weak interface like this would not be populated and therefore would contribute little additional stability to the TOG1-TOG2:(\u03b1\u03b2-tubulin)2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on prior work and the data presented.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "b0921ecd-98e6-49ee-8d1f-bff670c2b0b5",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C82",
+      "claim": "The observation that the two linked TOG domains behave as independent \u03b1\u03b2-tubulin binding modules places significant constraints on biochemical models for the mechanism of these polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the underlying mechanism, the unexpected observation that the two linked TOG domains behave as independent \u03b1\u03b2-tubulin binding modules places significant constraints on biochemical models for the mechanism of these polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the analytical ultracentrifugation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "96379f4a-8baa-4e57-849e-33115c2d2a94",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C83",
+      "claim": "Stu2/XMAP215 family polymerases contain at least two different TOG domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Stu2/XMAP215 family polymerases contain at least two different TOG domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "4a516105-6807-4ee4-814d-123ab149bd78",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C84",
+      "claim": "Ablating the function of individual TOGs shows compromised rescue under conditions of microtubule stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablating the function of individual TOGs is not without functional consequences under more stringent conditions, because these same constructs do show compromised rescue under conditions of microtubule stress (Ayaz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work from the same group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "5ff8e337-637f-4ebf-827d-375befae9bc5",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C85",
+      "claim": "Dimerization impaired Stu2p only partially compensated for the depletion of endogenous Stu2p.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior observations (Al-Bassam et al., 2006), dimerization impaired Stu2p only partially compensated for the depletion of endogenous Stu2p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of genetic rescue assay data, consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "0c4fb03d-e30c-4e1f-b780-5645b7240e55",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C86",
+      "claim": "The ability of TOG2 to substitute for TOG1 in the dimerization-impaired background strengthens the conclusion that the polymerase does not require different TOG domains for its function.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the ability of TOG2 to substitute for TOG1 in this more stringent, dimerization-impaired background strengthens the conclusion that the polymerase does not require different TOG domains for its function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the genetic rescue assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "edd5fc58-eee0-4ca3-b76d-76ea06b06f5a",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C87",
+      "claim": "The dimeric Stu2p(TOG1-TOG2(R519A)) and Stu2p(TOG1(R200A)-TOG2) variants rescued the depletion of endogenous Stu2p in spite of the fact that the two functioning TOG domains were linked through the coiled-coil dimerization segment.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric Stu2p(TOG1-TOG2(R519A)) and Stu2p(TOG1(R200A)-TOG2) variants rescued the depletion of endogenous Stu2p in spite of the fact that the two functioning TOG domains were linked through the coiled-coil dimerization segment (and in the case of TOG1-TOG2(R519A) with a defective TOG domain in the linking sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of genetic rescue assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "239c1186-1caf-4bdf-80b4-22046d7c515b",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C88",
+      "claim": "How two TOG domains are linked is relatively unimportant, as long as they are linked.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggested that how two TOG domains were linked was relatively unimportant, as long as they were linked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the genetic rescue assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "dc9ea4e8-9793-4328-a79c-b80e4b3c91d4",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C89",
+      "claim": "The 'shuffling' strategy preserves the overall amino acid composition but should disrupt any local features specific to the natural sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'shuffling' strategy preserves the overall amino acid composition but should disrupt any local features specific to the natural sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "655f93d6-8655-42f7-8f81-8a54ad546f0a",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C90",
+      "claim": "XMAP215 has been observed to carry \u03b1\u03b2-tubulin while diffusing on the lattice.",
+      "claim_type": "IMPLICIT",
+      "source": "This assumption provides end-localized polymerase in the model without having to parameterize/describe its diffusive movement on the microtubule lattice (this movement is mediated by the basic domain, which is required for polymerase function), or if it arrives at the microtubule end with its TOGs pre-loaded with \u03b1\u03b2-tubulin (XMAP215 has been observed to carry \u03b1\u03b2-tubulin while diffusing on the lattice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is mentioned as established knowledge without a specific citation in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "45865030-09e2-4a01-aa74-bce790d9f928",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C91",
+      "claim": "The basic domain is required for polymerase function.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption provides end-localized polymerase in the model without having to parameterize/describe its diffusive movement on the microtubule lattice (this movement is mediated by the basic domain, which is required for polymerase function), or if it arrives at the microtubule end with its TOGs pre-loaded with \u03b1\u03b2-tubulin (XMAP215 has been observed to carry \u03b1\u03b2-tubulin while diffusing on the lattice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "91ed6166-6233-471a-99ea-b5a9f1d75da4",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "claim_id": "C92",
+      "claim": "The model assumes that when the polymerase bound singleton acquired a lateral neighbor it became straight, and that this straightening was linked to TOG disengagement.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assumed that when the polymerase bound singleton acquired a lateral neighbor it became straight (Rice et al., 2008; Buey et al., 2006), and that this straightening was linked to TOG disengagement (Ayaz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption in the model based on prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0831031-8ad7-4838-a404-6c9b0e8cffed",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of TOG2 bound to \u03b1\u03b2-tubulin reveals that TOG2, like TOG1, binds selectively to a fully curved conformation of \u03b1\u03b2-tubulin that is incompatible with the microtubule lattice. The structure shows conserved binding residues making similar contacts as in TOG1, and TOG2 remains structurally rigid upon binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystallographic data (C12, C13, C78, C79) meet quality standards with good geometry and refinement statistics. Quantitative structural comparisons (C14-C18) demonstrate that TOG2 binds curved \u03b1\u03b2-tubulin (12.3\u00b0 curvature) nearly identically to TOG1 (13.1\u00b0 curvature), with low RMSD values supporting structural similarity. The conclusion (C19) is well-supported by the presented structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "1dfa054b-3f47-4a23-a206-6bcda723fd5d",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TOG1 and TOG2 bind \u03b1\u03b2-tubulin with comparable affinities (KD = 70 nM and 160 nM, respectively) in 1:1 stoichiometry, demonstrating biochemical similarity between the two domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The analytical ultracentrifugation experiments (C24-C27) provide direct measurements of binding affinities using polymerization-competent tubulin. The KD values are internally consistent and agree with prior measurements using different methods (C28). The data support the conclusion that TOG1 and TOG2 are biochemically similar (C29).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "f041c493-0b8d-4da5-92de-e1be1b314f39",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TOG1-TOG2 binds non-cooperatively to two \u03b1\u03b2-tubulins, indicating that \u03b1\u03b2-tubulin:\u03b1\u03b2-tubulin contacts do not provide additional stability to the complex despite the high effective concentration of tethered tubulins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The analytical ultracentrifugation data (C30-C33) directly demonstrate non-cooperative binding by showing that observed sedimentation behavior is inconsistent with cooperative models but matches independent binding. The calculation of effective concentration (C35) and comparison to known KD values (C80) strengthen the surprising nature of this finding. The conclusion (C34, C82) is well-justified by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "2b82a0cb-0da6-481f-abad-072dd085c0d9",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two TOG domains are required for Stu2p function, but they do not need to be different. TOG2 can functionally substitute for TOG1 in both dimerization-competent and dimerization-impaired backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic rescue assays (C37-C42, C85, C87) systematically test various TOG domain configurations and demonstrate that TOG2-TOG2 constructs rescue as well as wild-type TOG1-TOG2. The experiments control for dimerization state and show that single functional TOG domains are insufficient (C42). The conclusions (C39, C40, C86) are well-supported by the rescue data, though the authors appropriately note that individual TOG ablation has consequences under stress conditions (C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The sequence linking TOG1 and TOG2 tolerates significant variation, including randomization, but there is a minimal functional linker length of approximately 40 amino acids below which polymerase function is compromised.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic rescue experiments with shuffled linkers (C44, C89) and systematic deletions (C46-C48) provide clear functional data. The evolutionary analysis (C50) independently supports the minimal length requirement. The conclusions (C45, C49, C51, C88) are well-justified by converging evidence from functional assays and evolutionary conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "85d0ce5f-3762-4a2d-a1f7-df154b991c39",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Preferential interactions between TOG domains and fully curved \u03b1\u03b2-tubulin explain how Stu2p/XMAP215 polymerases localize specifically to the extreme microtubule end, as this curved conformation cannot exist elsewhere in the microtubule.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mechanistic inference (C4, C22, C70) is well-supported by the structural data showing TOG preference for curved tubulin and prior work establishing that TOG:tubulin interactions are required for plus-end localization (C21). The contrast with other plus-end tracking proteins (C23) strengthens the argument. The logic connecting curved tubulin binding to end-specific localization is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "8097ced4-41d0-4d84-8929-616bc6c0c7af",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A computational tethering model demonstrates that linked TOG domains can produce catalyst-like activity by selectively concentrating \u03b1\u03b2-tubulin near weakly-bound curved tubulins at the microtubule end, recapitulating both the rate enhancement and modest stimulation characteristic of these polymerases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The kinetic Monte Carlo simulations (C57-C59, C61) successfully recapitulate key experimental observations: catalyst-like behavior (affecting rate but not equilibrium) and modest stimulation. The model is based on reasonable assumptions (C52-C55) supported by prior work (C56). The relationship between longitudinal affinity and polymerase activity (C61-C62) provides mechanistic insight. The model's explanatory power (C74-C76) is demonstrated by its ability to account for multiple experimental constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "f5e32409-cdd7-4d13-9861-02ec77d23af4",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The tethering model predicts that polymerase action changes the microtubule end configuration by promoting associative trapping of singleton tubulins, creating a rougher end with more corner sites and a proposed side-by-side transition state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are predictions and speculative proposals (C5, C66, C67, C68, C73) from the computational model rather than experimentally validated findings. While the predictions are logical extensions of the model (C63-C64) and one aspect has prior support (C69), they require experimental validation. The model provides a framework for understanding mechanism but these specific predictions about end configuration changes remain to be tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "29be3e72-f83d-4198-9b1f-caea39181659",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model explains why at least two TOG domains are required: one to bind curved \u03b1\u03b2-tubulin on the microtubule and another to tether unpolymerized \u03b1\u03b2-tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mechanistic explanation (C72) integrates the structural findings (TOG preference for curved tubulin), biochemical data (non-cooperative binding), genetic data (requirement for two TOG domains from C42-C43), and the tethering model. The logic is internally consistent and accounts for multiple experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "0b61efc2-1a32-4dfa-9486-f901f0deb62b",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Other TOG domains in the Stu2p/XMAP215 family probably also bind curved \u03b1\u03b2-tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a reasonable extrapolation from the observed similarity between TOG1 and TOG2, but it remains speculative without direct structural or biochemical evidence for other TOG domains. The inference is logical but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "d8bf4f8f-c68a-4eb1-a157-472d5edddb16",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model suggests that linked TOG domains might stabilize lateral but not longitudinal tubulin-tubulin interactions, though lateral interactions are too weak to detect in the binding experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative interpretations (C60, C81) attempting to explain why cooperativity was not observed. The reasoning about lateral interaction weakness is based on literature values, but the actual contribution of lateral interactions to the TOG1-TOG2 complex remains untested. This represents a limitation of the current data rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    },
+    {
+      "id": "851cddef-1b78-4526-bb96-a25f55ea1917",
+      "content_id": "917ead60-0f7a-4c2e-8c62-3795b2f2e7f4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establish that Stu2p/XMAP215 proteins are microtubule polymerases with catalyst-like properties, TOG1 binds curved tubulin, and various mechanistic features have been previously characterized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from prior work, appropriately cited throughout. They provide necessary context for interpreting the current findings but are not novel results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:48.415836Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d1d572bd-e3c2-4e9b-b0aa-fe4ae330177a",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "c10f841f-45ce-40b0-91b3-2af072f763f1",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "9e10884c-ecf5-4bed-8bd3-49afcdfd2cbc",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "34d7b096-a222-4ff0-aa3f-1baf11baf4f0",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "f0db9196-c4d1-4998-9d50-573aded63b86",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "66ce6b56-d1bd-4d92-ba37-0357367d80ec",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "4cf6cb77-4c9a-4b91-af9b-01ffa12ce9f5",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "70942102-958e-4eb3-a0fb-5b11aaf4d766",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "da1760e1-8535-4568-8c64-eecea35854f0",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "8e211a13-b4dd-431c-a8c7-16cc8e49ac24",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "3919a4e1-939e-46fd-a292-6fb0f5a26fc5",
+      "result_id": "e0831031-8ad7-4838-a404-6c9b0e8cffed"
+    },
+    {
+      "claim_id": "fb664643-de25-4cf8-8f2f-976b20868ed0",
+      "result_id": "1dfa054b-3f47-4a23-a206-6bcda723fd5d"
+    },
+    {
+      "claim_id": "e51b390d-b1c8-49f3-9d77-189c5d858ce6",
+      "result_id": "1dfa054b-3f47-4a23-a206-6bcda723fd5d"
+    },
+    {
+      "claim_id": "9e6586c2-f206-44f9-9b96-a3bbed9a410f",
+      "result_id": "1dfa054b-3f47-4a23-a206-6bcda723fd5d"
+    },
+    {
+      "claim_id": "c343482e-d1ca-4cbf-869f-a98d811db7a3",
+      "result_id": "1dfa054b-3f47-4a23-a206-6bcda723fd5d"
+    },
+    {
+      "claim_id": "996f91c0-dc37-42b1-93ff-1ef9da4766a3",
+      "result_id": "1dfa054b-3f47-4a23-a206-6bcda723fd5d"
+    },
+    {
+      "claim_id": "3419e1b7-fa53-4abd-bd9c-d9e437e3881b",
+      "result_id": "1dfa054b-3f47-4a23-a206-6bcda723fd5d"
+    },
+    {
+      "claim_id": "52694482-c6b9-4f12-8952-02391c6bd6fb",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "23c9753b-6658-4fc1-90cb-5959dee25b6c",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "bf041e83-4b2d-4907-b7eb-2b4e3d3c4de5",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "0e427ecc-6b91-42f7-b12b-3592c6761f98",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "9f38d9c5-314c-43d1-af10-1e0d2f8c5e75",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "8010d23e-ffdc-4055-8907-c91946d7992f",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "5bca6616-03fb-497e-98fa-017afe02a61b",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "87310017-c893-48d4-b3a4-799c0e1b8ecf",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "de94cd2a-c1fb-47dc-adea-63e2c2f0cb9c",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "b0921ecd-98e6-49ee-8d1f-bff670c2b0b5",
+      "result_id": "f041c493-0b8d-4da5-92de-e1be1b314f39"
+    },
+    {
+      "claim_id": "5e4b9349-209a-44fe-8bd4-503a7820e638",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "28345fe1-1425-443e-b43e-8caaba787a43",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "5f235124-7567-4d3c-a05c-84835201d203",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "9a58dde3-a842-4f18-9194-81cb0d7bb94e",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "b9638111-7feb-4d22-a731-df4267c21eb5",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "1b335464-e254-45cc-b785-8d1ca575dc74",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "96379f4a-8baa-4e57-849e-33115c2d2a94",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "4a516105-6807-4ee4-814d-123ab149bd78",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "5ff8e337-637f-4ebf-827d-375befae9bc5",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "0c4fb03d-e30c-4e1f-b780-5645b7240e55",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "edd5fc58-eee0-4ca3-b76d-76ea06b06f5a",
+      "result_id": "2b82a0cb-0da6-481f-abad-072dd085c0d9"
+    },
+    {
+      "claim_id": "d2749d8b-f025-4c72-8e54-30c96649b3cf",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "357d3102-6ee5-410e-b966-03b67a68f19a",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "9867bf46-f3b4-4a44-99c1-e0ffd07164ec",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "d674a60b-573b-44c9-89f3-ed4e6b00e823",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "cf52325c-3037-45c3-9327-7f3bca3c4621",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "279b4722-b424-4464-ae16-72952da5f7fc",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "7d9aef6a-a16f-4f72-937d-ce09cb90fb4b",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "9d4b4e67-2978-47a6-91c7-7e59945f533c",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "edd5fc58-eee0-4ca3-b76d-76ea06b06f5a",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "239c1186-1caf-4bdf-80b4-22046d7c515b",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "dc9ea4e8-9793-4328-a79c-b80e4b3c91d4",
+      "result_id": "d370db0e-f3b4-41a1-bd4a-67fae928bfc7"
+    },
+    {
+      "claim_id": "12224ccd-0f83-4996-a08c-c086929222fe",
+      "result_id": "85d0ce5f-3762-4a2d-a1f7-df154b991c39"
+    },
+    {
+      "claim_id": "840f420f-f583-4229-b1d4-0731f49b981d",
+      "result_id": "85d0ce5f-3762-4a2d-a1f7-df154b991c39"
+    },
+    {
+      "claim_id": "7df06415-eb8d-4c2c-bad1-069b1ce22976",
+      "result_id": "85d0ce5f-3762-4a2d-a1f7-df154b991c39"
+    },
+    {
+      "claim_id": "1e60749f-7f49-4c54-91d2-02460fd86fac",
+      "result_id": "85d0ce5f-3762-4a2d-a1f7-df154b991c39"
+    },
+    {
+      "claim_id": "cf1491b6-e2d7-4ac8-9e96-47437531c18f",
+      "result_id": "85d0ce5f-3762-4a2d-a1f7-df154b991c39"
+    },
+    {
+      "claim_id": "3fefa041-f197-44d1-9068-63997f38ce84",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "3ed73a42-9aa8-4859-822b-7903379255de",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "94d8c738-838c-47fd-8eeb-800ecbeffafe",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "fbd5a0af-9260-4b74-b5db-77249c9748b3",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "cfd1412e-dbef-4753-accf-6a830aec97a7",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "d86a89b2-ecd9-447d-9865-2fe82a123273",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "3767ea5a-3784-4908-8ccc-2ff954ce1e54",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "c4b55e0e-cd4c-4c20-b855-f237197c2728",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "e39fa70a-281d-41bd-aa27-18f46100d099",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "c50f8826-b971-487b-adfa-700417730f9a",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "73de5bc1-6dd1-44a0-8ba2-4cbbde486f0d",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "4eae8b87-27d4-461f-ac8b-0467519ae4fa",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "986841ae-2edd-4314-a9ec-5b89e159c73e",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "316c48c4-fe33-46d1-ab3e-4e57f35474a6",
+      "result_id": "8097ced4-41d0-4d84-8929-616bc6c0c7af"
+    },
+    {
+      "claim_id": "dc432280-76e4-45d6-904c-589d9c369665",
+      "result_id": "f5e32409-cdd7-4d13-9861-02ec77d23af4"
+    },
+    {
+      "claim_id": "ecc4558c-2502-40d2-a811-3bca0e46b892",
+      "result_id": "f5e32409-cdd7-4d13-9861-02ec77d23af4"
+    },
+    {
+      "claim_id": "f0ba1711-b614-475d-a185-60d1ea930273",
+      "result_id": "f5e32409-cdd7-4d13-9861-02ec77d23af4"
+    },
+    {
+      "claim_id": "0e0d094a-fbd0-448c-8a85-ee00054282d1",
+      "result_id": "f5e32409-cdd7-4d13-9861-02ec77d23af4"
+    },
+    {
+      "claim_id": "1a57c769-eec7-4f00-93a1-475dacc66abc",
+      "result_id": "f5e32409-cdd7-4d13-9861-02ec77d23af4"
+    },
+    {
+      "claim_id": "dcdfaee1-eb5b-4519-b130-11a91a67b86f",
+      "result_id": "f5e32409-cdd7-4d13-9861-02ec77d23af4"
+    },
+    {
+      "claim_id": "e59501ab-91e4-408b-b740-ba4048f57897",
+      "result_id": "f5e32409-cdd7-4d13-9861-02ec77d23af4"
+    },
+    {
+      "claim_id": "57fa5314-3f0f-4730-b08a-8f830acdc674",
+      "result_id": "f5e32409-cdd7-4d13-9861-02ec77d23af4"
+    },
+    {
+      "claim_id": "f884b37a-974b-48c3-a158-7e469ccf9abd",
+      "result_id": "29be3e72-f83d-4198-9b1f-caea39181659"
+    },
+    {
+      "claim_id": "b73194e9-4157-4942-9986-e30a103a9da3",
+      "result_id": "0b61efc2-1a32-4dfa-9486-f901f0deb62b"
+    },
+    {
+      "claim_id": "5022cbb9-4cba-4882-b72c-bd6e51001d49",
+      "result_id": "d8bf4f8f-c68a-4eb1-a157-472d5edddb16"
+    },
+    {
+      "claim_id": "0de6eb9b-4208-499b-8e85-1bd0bc201c6c",
+      "result_id": "d8bf4f8f-c68a-4eb1-a157-472d5edddb16"
+    },
+    {
+      "claim_id": "d6aa1863-3529-417b-b34f-293f8650e5b8",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "63cf9f3f-dd7f-4f36-a02a-68cc89f156fc",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "439874fc-0a3f-4c81-83a3-a209b9e0485b",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "3b743d52-687c-49c1-9d5f-4c9420ea5f9d",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "bbd68948-f1eb-4e55-851c-040c7f430410",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "a3f3c2ee-0d18-4fb1-94a8-5c0f1d5230da",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "78e940e2-65fb-4660-933c-e935a05ea7c0",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "840f420f-f583-4229-b1d4-0731f49b981d",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "1e60749f-7f49-4c54-91d2-02460fd86fac",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "d9b2140f-8b3c-4e46-a050-8e73e72c68aa",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "96746a7f-673c-4962-a687-6c014a34eb33",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "cd8cb807-0a80-4294-a1f9-691acbf54ce3",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "96379f4a-8baa-4e57-849e-33115c2d2a94",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "4a516105-6807-4ee4-814d-123ab149bd78",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "655f93d6-8655-42f7-8f81-8a54ad546f0a",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "45865030-09e2-4a01-aa74-bce790d9f928",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    },
+    {
+      "claim_id": "91ed6166-6233-471a-99ea-b5a9f1d75da4",
+      "result_id": "851cddef-1b78-4526-bb96-a25f55ea1917"
+    }
+  ],
+  "comparisons": []
+}

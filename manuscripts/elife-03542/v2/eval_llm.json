@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "The authors demonstrate that independent rate and phase coding in CA1 neurons, without synaptic coordination between cells, is sufficient to generate theta sequences and population activity. This independent coding produces a traveling wave model where a fast-moving phasic component propagates through a slower rate-coded envelope, generating emergent population theta oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C11-C16 collectively establish through modeling and simulation that independent coding generates traveling waves with dual timescales and emergent theta rhythms (Figures 2-3). Claims C83-C84, C86 synthesize these findings into the core conclusion. The mathematical framework is internally consistent and the model successfully reproduces key experimental features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C91"
+    ],
+    "result": "The independent coding model predicts that temporal delays between cells depend on running speed through a compression factor, and that models with fixed temporal delays cannot maintain proper theta sequences across varying speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide analytical derivations showing compression factor depends on speed and fixed-delay models fail (supported by mathematical analysis in Supplementary materials). Claim C91 synthesizes this as evidence against fixed-delay models. The mathematical reasoning is sound and distinguishes this model from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Reanalysis of peer prediction methods accounting for directional phase fields and velocity modulation shows that independent coding, not coordinated assemblies, explains CA1 population activity. When applied to experimental data, peer information does not improve prediction beyond single-cell properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C38 form a comprehensive reanalysis correcting methodological issues in prior work (Harris et al. 2003). The analysis demonstrates that directional phase fields (C24-C28) and velocity modulation (C31) account for apparent peer dependencies. Experimental validation (C34-C37, Figure 4, Table 1) shows only 32% of cells benefit from peer prediction vs 84% for coordinated coding simulations, strongly supporting independent coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The independent coding model accounts for experimentally observed changes in sequence path length with running speed by assuming phase locking increases with speed, consistent with observed increases in LFP theta amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 show that while constant phase locking underpredicts experimental data (C40), velocity-dependent phase locking matches Maurer et al. 2012 data (C41, Figure 5A-B). This prediction (C42) is consistent with known LFP amplitude changes and provides a novel testable hypothesis. The decoded propagation speed matches experimental data (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A corrected shuffling analysis shows that the Foster and Wilson (2007) test does not distinguish independent from coordinated coding. When properly implemented, the test detects coordination with 81% power but finds no evidence for coordination in experimental CA1 data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 identify a methodological flaw in the original shuffling procedure (Figure 5\u2014supplement 2A-B). Claims C47-C49 show the corrected test has good statistical power (81%) and fails to detect coordination in experimental data (p=0.28), consistent with independent coding in 74% of simulated datasets. This provides strong negative evidence against coordinated assemblies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The analysis of lap-by-lap firing rate covariations (Dragoi and Buzs\u00e1ki 2006) artificially separates homogeneous independent populations into apparently dependent and independent cell pairs, with dependent pairs showing closer spatial proximity due to sampling bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate through simulation that the Dragoi and Buzs\u00e1ki analysis produces similar fractions of 'dependent' pairs (~33%) in independent coding models as in experimental data, with spatial biases (p=1.8\u00d710\u207b\u00b9\u2076). This shows the analysis does not validly test for coordination. However, the authors note they could not fully reproduce the temporal lag analysis due to insufficient methodological details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The Bayesian decoding analysis of Gupta et al. (2012) produces similar decoded trajectories and ahead/behind length relationships in simulated data with or without theta sequences, indicating these results do not constrain models of theta activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 show that both rate-only (k=0) and realistic phase coding (k=0.5) produce similar decoded properties matching experimental data (Figure 6C-D). The inverse relationship between ahead/behind lengths emerges without theta sequences, demonstrating the decoding method is insensitive to the presence of theta activity. This is a strong negative result showing these data cannot distinguish coding models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Linear phase coding with fixed phase lags severely constrains global remapping, allowing only affine transformations to preserve theta sequences. Coordinated assembly models show degraded phase precession and firing rates after remapping, contradicting experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 show coordinated coding fails after remapping (Figure 7\u2014supplement 1), with decreased firing rates contradicting experimental data (C62, Karlsson & Frank 2008). Claims C63-C69 provide mathematical analysis showing linear phase coding permits only affine remappings (translation, scaling, rotation, reflection) to maintain sequences. Since CA1 shows non-affine remapping (C68), this argues against both coordinated assemblies and fixed-delay models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Sigmoidal phase coding, where phase precession occurs only within firing fields, enables arbitrary global remapping while maintaining theta sequences. This model makes distinct predictions about membrane potential oscillations and phase lag dynamics that distinguish it from linear phase coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 establish that sigmoidal coding allows arbitrary remapping (Figure 8G) while maintaining sequences within environments (C74). Claims C77-C82 provide testable predictions: MPO frequency should increase only inside place fields (C79, consistent with Harvey et al. 2009), phase lags should be dynamic (C80-C81), and directional sequences emerge without explicit directional input (C82). The model is mathematically coherent and addresses the remapping constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C106"
+    ],
+    "result": "Independent coding provides functional advantages including flexible remapping across multiple environments, robustness to perturbations, and multiplexing of spatial with non-spatial information, potentially maximizing representational capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C87-C89, C106 propose functional advantages of independent coding. While C85 is demonstrated through the modeling work, claims C87-C89 and C106 are largely speculative (evidence_type: SPECULATION, INFERENCE). C88 cites Zugaro et al. 2005 for robustness, but the other advantages lack direct experimental validation. These represent plausible hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Assembly coordination in the coordinated coding model stabilizes sequential activity patterns and amplifies theta oscillations through asymmetric excitation and feedback inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 describe properties of the coordinated assembly model used for comparison (Figure 3\u2014supplement 1). The model successfully generates more robust sequences than independent coding with identical single-cell properties. This serves as an appropriate benchmark for testing whether experimental data require coordination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The optimal ~20 ms timescale for peer prediction in both experimental data and the independent coding model reflects common phase locking to theta rhythm rather than gamma coordination or intrinsic membrane properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 reinterpret the 20 ms peer prediction timescale (Harris et al. 2003) as arising from theta phase locking in the independent model (Figure 4D). The model reproduces this timescale without gamma oscillations or membrane time constants, providing a parsimonious alternative explanation. This is well-supported by the modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C90"
+    ],
+    "result": "Affine transformations are consistent with remapping in grid modules but not CA1, suggesting grid modules may use single phase charts while CA1 requires more flexible mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C90 note consistency between affine remapping constraints and grid module behavior (Fyhn et al. 2007), contrasting with CA1's more flexible remapping. This is a logical inference from the mathematical analysis and cited experimental data, though it represents a secondary observation rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The independent coding model applies to theta sequences during navigation and wheel running but cannot account for sharp-wave ripple sequences, suggesting state-dependent assembly mechanisms in CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 acknowledge limitations of the model. C94 correctly notes that SWR sequences lack the rate fields and theta oscillations required by the independent coding framework. C95 proposes state-dependent mechanisms as a speculative resolution. This represents appropriate scoping of the model's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The independent coding model can account for effects of cannabinoids and optogenetic manipulations through changes in phase fields, phase locking, or spike counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C97 propose how the model might explain pharmacological and optogenetic manipulations. C96 cites Robbe & Buzs\u00e1ki 2009 for cannabinoid effects, but C97's explanations for optogenetic results (Royer et al. 2012) are speculative parameter adjustments without validation. These represent plausible but untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The independent coding model is consistent with inheritance of phase precession from upstream circuits but argues against inheritance of coordinated sequences from CA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 discuss implications for mechanisms of phase precession. C98 correctly notes the model argues against theta-timescale synaptic coordination. C99-C100 address inheritance from upstream areas (Jaramillo et al. 2014), arguing against coordinated sequence inheritance while remaining agnostic about phase precession mechanisms. This is a logically sound interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Feedback inhibition in CA1 may actively decorrelate inputs from CA3's recurrent collaterals to generate an independent population code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 propose a mechanism for how CA1 might achieve independent coding despite correlated CA3 inputs. C101 correctly cites anatomical evidence (Miles & Wong 1986, Le Duigou et al. 2014). C102-C103 cite theoretical work on decorrelation but this remains speculative for CA1. This is a plausible hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Independent population codes provide advantages for downstream decoding by presenting stereotyped correlational patterns, while additional correlations would reduce information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 propose computational advantages of independent coding for downstream areas. C105 cites Zohary et al. 1994 for information loss with correlations, but C104's claim about decoding advantages is speculative. These represent theoretical predictions about information processing that lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6"
+    ],
+    "result": "Hippocampal place cells encode past, current, and future locations through phase precession, where spike phase advances relative to theta as animals traverse place fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C6 describe established properties of hippocampal place cells from prior literature (O'Keefe & Recce 1993, Figure 1A-B). These are well-documented phenomena that provide the empirical foundation for the study. This is background knowledge rather than a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C17"
+    ],
+    "result": "Place cells show trial-to-trial variability in phase precession, modulation by non-spatial factors, and LFP theta frequency is relatively insensitive to running speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C17 cite established experimental observations (multiple references) that inform model design. These are well-documented phenomena from prior work that constrain the modeling approach. This represents background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2439 @@
+{
+  "submission": {
+    "id": "8ee34a72-29cb-4e2e-b9ee-53c884da90dc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:31:05.166695Z",
+    "updated_at": "2025-11-28T21:31:05.166695Z"
+  },
+  "content": [
+    {
+      "id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "submission_id": "8ee34a72-29cb-4e2e-b9ee-53c884da90dc",
+      "content_type": "manuscript",
+      "content_text": "# FGF14 modulates resurgent sodium current in mouse cerebellar Purkinje neurons\n\n## Authors\n\n- Haidun Yan<sup>1</sup>\n- Juan L Pablo<sup>2</sup>\n- Chaojian Wang<sup>1</sup>\n- Geoffrey S Pitt<sup>1</sup> ([ORCID: 0000-0003-2246-0289](https://orcid.org/0000-0003-2246-0289)) \u2020\n\n### Affiliations\n\n1. Department of Medicine Duke University Medical Center Durham United States\n2. Ion Channel Research Unit Duke University Medical Center Durham United States\n3. Department of Neurobiology Duke University Medical Center Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRapid firing of cerebellar Purkinje neurons is facilitated in part by a voltage-gated Na+ (NaV) \u2018resurgent\u2019 current, which allows renewed Na+ influx during membrane repolarization. Resurgent current results from unbinding of a blocking particle that competes with normal channel inactivation. The underlying molecular components contributing to resurgent current have not been fully identified. In this study, we show that the NaV channel auxiliary subunit FGF14 \u2018b\u2019 isoform, a locus for inherited spinocerebellar ataxias, controls resurgent current and repetitive firing in Purkinje neurons. FGF14 knockdown biased NaV channels towards the inactivated state by decreasing channel availability, diminishing the \u2018late\u2019 NaV current, and accelerating channel inactivation rate, thereby reducing resurgent current and repetitive spiking. Critical for these effects was both the alternatively spliced FGF14b N-terminus and direct interaction between FGF14b and the NaV C-terminus. Together, these data suggest that the FGF14b N-terminus is a potent regulator of resurgent NaV current in cerebellar Purkinje neurons.\n\n## Introduction\n\nCerebellar Purkinje neurons, which provide the sole output from the cerebellar cortex, display a repetitive firing behavior driven by voltage-gated Na+ channels (NaV channels). Fast repetitive firing in Purkinje neurons is promoted by unusual characteristics associated with NaV channel inactivation, whereby channels recover unusually rapidly from inactivation and in doing so pass a \u2018resurgent\u2019 sodium current, which helps drive the cell to fire a subsequent action potential. The molecular components underlying the peculiar properties of NaV channels in Purkinje neurons have not been definitively identified.\n\nSeveral features of NaV currents in cerebellar Purkinje neurons, however, set them apart from NaV currents recorded in other neurons. First, more than half of the NaV current in Purkinje neurons is carried by NaV1.6, an isoform for which inactivation is less complete compared to other NaV channels (Raman et al., 1997). Examination of NaV currents in cerebellar Purkinje neurons from Scn8a\u2212/\u2212 mice showed that, compared to the other resident NaV channels, the Scn8a-encoded NaV1.6 channels have a relatively large \u2018late\u2019 (non-inactivating) component and NaV1.6 channels have increased availability (depolarized V1/2 for steady-state inactivation). Second, NaV channels in cerebellar Purkinje neurons display an unusual transient re-opening during repolarization, which is identified as \u2018resurgent\u2019 NaV current (Raman and Bean, 1997). This resurgent current derives from an unblocking of open channels by a peptide moiety that can be eliminated by the intracellular application of trypsin or chymotrypsin proteases into the cytoplasm (Grieco et al., 2005). The blocking particle acts only on open channels and competes with the inactivation process to prevent channels from entering an absorbed, inactivated state. During action potential repolarization, unblocking of these channels then allows Na+ influx that can initiate a subsequent action potential (Khaliq et al., 2003). Since the NaV current in Purkinje neurons carried by NaV1.6 is relatively resistant to inactivation, it is particularly susceptible to open block by the peptide moiety. Why NaV1.6 channels in cerebellar Purkinje neurons are relatively resistant to inactivation, however, is unknown.\n\nHere, we focused on the role of the ion channel regulator FGF14, which is enriched in cerebellar granule and Purkinje neurons (Wang et al., 2002). FGF14 is one of four fibroblast growth factor homologous factors (FHFs), members of the fibroblast growth factor (FGF) superfamily sharing a FGF-like core but having extended N- and C-termini not found in other FGFs. Individual FHFs undergo alternative splicing that generates distinct N-termini, none of which contain a signal sequence (Smallwood et al., 1996; Munoz-Sanjuan et al., 2000). Thus, unlike other FGFs they are not secreted and do not function as growth factors (Smallwood et al., 1996). Instead, FHFs remain intracellular and modulate various ion channels. FHFs can bind directly to the cytoplasmic C-terminal domains (CTDs) of NaV channels (Liu et al., 2001) and regulate NaV channel function (Lou et al., 2005). Further, FGF14 is a potent regulator of both NaV1.1 and NaV1.6 (Lou et al., 2005; Laezza et al., 2009), the two dominant NaV channels in cerebellar Purkinje neurons (Raman et al., 1997; Kalume et al., 2007). FHFs also regulate voltage-gated Ca2+ channels through a mechanism that does not appear to involve a direct interaction (Hennessey et al., 2013; Yan et al., 2013). An ataxia phenotype in Fgf14\u2212/\u2212 mice highlights the role of FGF14 in cerebellar physiology and the development of spinocerebellar ataxia type 27 (SCA27) in patients with either FGF14 haploinsufficiency or a dominant negative FGF14 mutation (Wang et al., 2002; van Swieten et al., 2003; Dalski et al., 2005) underscores the role of FGF14 in disease.\n\nUsing shRNA knockdown of endogenous FGF14 in cultured cerebellar Purkinje neurons and replacement with informative mutants that blocked binding of FGF14 to NaV CTDs and eliminated the FGF14 extended N-terminus, we found that FGF14, and especially the N-terminus of the FGF14b isoform exerts specific kinetic effects on cerebellar NaV channels that support repetitive firing and therefore provides new information on the pathophysiology of SCA27.\n\n## Results\n\nTo test whether FGF14 was a contributor to regulation of NaV current in cerebellar Purkinje neurons, we first confirmed its expression in cerebellum and demonstrated that FGF14 co-immunoprecipitates with NaV1.6 channels in mouse cerebellar lysates (Figure 1A). Although FGF14 was previously shown to co-immunoprecipitate with NaV1.6 in a heterologous expression system (Laezza et al., 2009), co-immunoprecipitation between FGF14 and NaV1.6 channels has not been reported from brain.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig1-v2.jpg)\n\n**Figure 1.:** (A) Co-immunoprecipitation (IP) of NaV1.6 by FGF14 from mouse cerebellum and immunoblot (IB) with the indicated antibodies. Mw markers are indicated on right. Arrowheads indicate NaV1.6 (top panel) and FGF14 (bottom panel). Intense signal in bottom panel below the FGF14 signal is immunoglobulin light chain. (B) Current\u2013voltage relationships (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with Scrambled control shRNA (Scrambled), FGF14 shRNA (shRNA), or FGF14 shRNA plus the shRNA-resistant FGF14bWT (shRNA/FGF14WT). The number of neurons tested, N, is in parentheses. Inset shows schematic of voltage protocol.\n\nTo evaluate the consequences of FGF14 haploinsufficiency in SCA27, we used a previously validated shRNA (Yan et al., 2013) to knockdown endogenous FGF14 in cultured cerebellar Purkinje neurons. Knockdown of FGF14 did not affect NaV current density compared to the NaV current density recorded in neurons transfected with a control shRNA (Figure 1B). Because knockout of Fgf14 reduced spiking activity (Goldfarb et al., 2007) but NaV current density was unaffected in Fgf14 knockout or knockdown, we hypothesized that the absence of FGF14 must affect NaV kinetic properties in ways that prevent repetitive firing. We therefore examined NaV kinetic properties in more detail.\n\nVoltage dependence of activation was unaffected by FGF14 knockdown (Figure 2A), but the V1/2 of steady-state inactivation was shifted about \u221210 mV, thereby decreasing channel availability (Figure 2B and Table 1). When we co-expressed a FGF14b cDNA with synonymous substitutions rendering it resistant to the FGF14 shRNA (FGF14bWT), the V1/2 of steady-state inactivation was restored to the control voltage; activation was unaffected (Figure 2A\u2013B and Table 1). The \u2018rescue\u2019 of steady-state inactivation by expression of the shRNA-insensitive FGF14 provided additional demonstration of the specificity of our shRNA targeting strategy (and see similar rescue for additional parameters below). In addition to the decreased channel availability, we observed that FGF14 knockdown accelerated inactivation kinetics (Figure 2C\u2013D). FGF14 knockdown also reduced the late NaV current (Figure 2E\u2013F). Thus, by several different kinetic measures, FGF14 knockdown in cerebellar Purkinje neurons biased the endogenous NaV channels towards entering the inactivated state. We anticipated, therefore, that FGF14 knockdown should reduce NaV resurgent current amplitude, a key feature that allows cerebellar Purkinje neurons to fire repetitively. Indeed, the amplitude of the resurgent NaV current (Figure 2G\u2013J) was markedly diminished using a well-established protocol to elicit NaV resurgent current (Raman and Bean, 1997). As with the other kinetic properties of NaV currents (above), co-expression of FGF14bWT in the presence of the shRNA provided a complete rescue (Figure 2G\u2013J). While FGF14 knockdown reduced the amplitude of resurgent NaV current, it did not significantly affect the time to peak (Figure 2K).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig2-v2.jpg)\n\n**Figure 2.:** (A and B) Voltage-dependence of NaV channel activation and steady-state inactivation in cerebellar Purkinje neurons transfected with Scrambled control shRNA (Scrambled), FGF14 shRNA (shRNA), or FGF14 shRNA plus the shRNA-resistant FGF14bWT (shRNA/FGF14WT). The number of neurons tested, N, is in parentheses. Inset shows schematic of voltage protocol. (C) Exemplar normalized NaV current traces elicited with a step depolarization to 0 mV from a holding potential of \u221290 mV and an exemplar single exponential fit (for Scrambled) for the time constant (\u03c4) of inactivation (dotted line). (D) \u03c4 of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. **p < 0.01. (E) Exemplar normalized TTX-sensitive late NaV currents at \u221220 mV (measured at 150 ms, arrowhead) from a holding potential of \u221290 mV. (F) Amplitude of late NaV current as a % of peak (transient) NaV current. The number of neurons tested, N, is in parentheses. **p < 0.01. (G) Voltage-clamp protocol and exemplar TTX-sensitive resurgent NaV currents recorded from cerebellar Purkinje neurons transfected with Scrambled control shRNA. The transient current has been clipped. (H) Current\u2013voltage relationship of NaV resurgent currents. The number of neurons tested, N, is in parentheses. **p < 0.01. (I) Overlay of NaV resurgent currents for the indicated conditions recorded with the indicated voltage protocol. The transient current has been clipped. (J) Ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at \u221210 mV). The number of neurons tested, N, is in parentheses. **p < 0.01. (K) Time to peak of NaV resurgent current over a broad range of voltages. The number of neurons tested, N, is in parentheses. **p < 0.01.\n\n**Table 1.**\n NaV current activation and inactivation parameters in cerebellar Purkinje neurons\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Activation</th>\n      <th colspan=\"3\">Inactivation</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>V1/2 (mV)</th>\n      <th>K</th>\n      <th>n</th>\n      <th>V1/2 (mV)</th>\n      <th>K</th>\n      <th>n</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Scrambled</td>\n      <td>\u221234.4 \u00b1 1.5</td>\n      <td>4.0 \u00b1 0.3</td>\n      <td>21</td>\n      <td>\u221249.7 \u00b1 1.2</td>\n      <td>4.2 \u00b1 0.1</td>\n      <td>19</td>\n    </tr>\n    <tr>\n      <td>shRNA</td>\n      <td>\u221235.0 \u00b1 1.9</td>\n      <td>4.3 \u00b1 0.5</td>\n      <td>22</td>\n      <td>\u221259.0 \u00b1 1.2**</td>\n      <td>4.7 \u00b1 0.2</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>shRNA/FGF14bWT</td>\n      <td>\u221235.5 \u00b1 1.5</td>\n      <td>3.9 \u00b1 0.3</td>\n      <td>14</td>\n      <td>\u221252.0 \u00b1 0.9</td>\n      <td>5.2 \u00b1 0.3</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>shRNA/FGF14RA</td>\n      <td>\u221233.2 \u00b1 1.5</td>\n      <td>3.5 \u00b1 0.2</td>\n      <td>12</td>\n      <td>\u221250.9 \u00b1 1.4</td>\n      <td>4.4 \u00b1 0.3</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>FGF14bWT</td>\n      <td>\u221233.1 \u00b1 1.4</td>\n      <td>4.5 \u00b1 0.5</td>\n      <td>14</td>\n      <td>\u221250.6 \u00b1 1.3</td>\n      <td>4.9 \u00b1 0.3</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>FGF14\u2206NT</td>\n      <td>\u221233.9 \u00b1 2.0</td>\n      <td>3.9 \u00b1 0.5</td>\n      <td>14</td>\n      <td>\u221259.1 \u00b1 0.8**</td>\n      <td>4.7 \u00b1 0.3</td>\n      <td>15</td>\n    </tr>\n  </tbody>\n</table>\n\n_Mean \u00b1 s.e.m. (n), **p < 0.01 compared to Scrambled control._\n\nTo determine how FGF14 regulates NaV kinetics and NaV resurgent current, we turned our focus to the FGF14 N-terminus. The alternatively spliced N-termini of various FHFs have been shown to exert specific effects on NaV currents (Lou et al., 2005; Rush et al., 2006), including the regulation of inactivation kinetics (Laezza et al., 2009; Dover et al., 2010), but the role of the FGF14 N-termini have not been investigated in cerebellar Purkinje neurons. FGF14b is the predominant FGF14 splice variant expressed in brain (Wang et al., 2000, 2011) and the FGF14 splice variant found in the cytoplasm; FGF14a is localized to the nucleus (Wang et al., 2000). To test the specific roles of the FGF14b N-terminus, we expressed a FGF14 in which the N-terminus was deleted (FGF14\u0394NT). Because the interaction site for the NaV CTD on FHFs lies within the conserved core domain (Wang et al., 2012), deletion of the N-terminus does not affect interaction with the NaV CTD. Thus, the FGF14\u0394NT exerts a dominant negative effect by competing with endogenous FGF14 for interaction with the NaV CTD (Figure 3A). Current density (Figure 3B) and the V1/2 of activation (Figure 3C and Table 1) were unaffected. However, expression of FGF14\u0394NT shifted the V1/2 of steady-state inactivation about \u221210 mV (Figure 3C), accelerated kinetics of inactivation (Figure 3D), reduced the late NaV current (Figure 3E), and diminished resurgent current (Figure 3F) to a degree similar to or even greater than shRNA knockdown. FGF14\u0394NT diminished resurgent NaV current even more effectively than shRNA knockdown of FGF14. As a control, we overexpressed the FGF14bWT that had rescued the parameters affected by shRNA knockdown (Figure 1). Overexpression of FGF14bWT here was without effect (Figure 3 and Table 1). Not only did this serve as a control for FGF14\u0394NT, but these data suggest that endogenous FGF14b is saturating. These data also suggest that FGF14b's main regulatory component for Purkinje neuron NaV currents lies within the FGF14b N-terminus.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of endogenous wild type (WT) FGF14 binding to the C-terminus of the NaV1.6 \u03b1 subunit (top) and magnified schematic of the expressed FGF14\u0394NT preventing binding of the WT FGF14 (in box). (B) Current\u2013voltage relationships (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with FGF14bWT or FGF14\u0394NT. The number of neurons tested, N, is in parentheses. The current\u2013voltage relationship for Scrambled control shRNA (from Figure 1) is shown for comparison. (C) Voltage dependence of NaV channel activation and steady-state inactivation in cerebellar Purkinje neurons transfected with FGF14bWT or FGF14\u0394NT. The number of neurons tested, N, is in parentheses. The curves for Scrambled control shRNA (from Figure 1) are shown for comparison. (D) \u03c4 of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. (E) Exemplar normalized TTX-sensitive late NaV currents at \u221220 mV (measured at 150 ms, arrowhead) from a holding potential of \u221290 mV. The number of neurons tested, N, is in parentheses. **p < 0.01. (F) Overlay of NaV resurgent currents recorded from cerebellar Purkinje neurons transfected with FGF14\u0394NT or FGF14bWT and ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at \u221210 mV). The number of neurons tested, N, is in parentheses. The average for FGF14 shRNA knockdown (Figure 1) is shown for comparison. **p < 0.01.\n\nThe dominant negative effect exerted by FGF14\u0394NT as it replaced the endogenous FGF14 on the NaV CTD implied that although FGF14 regulates NaV current through its N-terminus, it may require that FGF14 be in direct interaction with the channel. To test this hypothesis specifically, we designed a FGF14b that was unable to bind to the channel CTD and examined whether expression of this mutant could restore the diminished resurgent current resulting from shRNA knockdown of FGF14. Structural determination of a ternary complex containing FGF13, the NaV1.5 CTD, and calmodulin had identified key amino acids on the conserved FHF interaction surface that participated in the interaction with the conserved NaV CTD surface (Wang et al., 2012). We focused on a highly conserved Arg in the FHF core domain (Arg57 in FGF13U, equivalent to Arg117 in FGF14b), which inserts into a deep pocket on the NaV1.5 CTD binding surface (Figure 4A). We therefore generated the homologous R117A mutant (FGF14bR/A) in the FGF14b shRNA-resistant cDNA background and tested whether FGF14bR/A could bind to the intact NaV1.6. Although immunoprecipitation of FGF14bWT from lysates of HEK293 cells transfected with FGF14bWT and NaV1.6 showed co-immunoprecipitation of NaV1.6, the mutant FGF14bR/A was unable to co-immunoprecipitate NaV1.6 (Figure 4B). Thus, mutation of R117A in FGF14b prevents interaction with NaV1.6. We therefore transfected the shRNA-resistant FGF14bR/A (or the shRNA-resistant FGF14bWT) along with the FGF14 shRNA into cultured cerebellar Purkinje neurons to determine the effect of FGF14 interaction with NaV1.6 on NaV currents. Expression of FGF14bR/A after shRNA knockdown of endogenous FGF14 had no effect on NaV current density (Figure 4C). In contrast to the rescue afforded by FGF14bWT, FGF14bR/A did not rescue the key parameters that lead to increased inactivation observed after FGF14 shRNA. NaV late current and the time constant of inactivation were not different from shRNA (Figure 4D\u2013F). Consistent with these findings, we observed the expected reduction in resurgent NaV current (Figure 4G\u2013H). Thus, the FGF14 N-terminus must exert its key effects through FGF14's direct interaction with the NaV C-terminus.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig4-v2.jpg)\n\n**Figure 4.:** (A) Surface representation of the crystal structure of a ternary complex containing the NaV1.5 C-terminus domain (CTD, green), FGF13 (yellow), and calmodulin (purple); the interaction surfaces are colored gray (PDB ID: 4DCK). The critical R57 in FGF13 (equivalent to R117 in FGF14) is indicated in red, as is its binding pocket on the NaV1.5 CTD. (B) Co-immunoprecipitation (IP) of NaV1.6 and FGF14bWT or FGF14bR/A expressed in HEK293 cells, showing that the FGF14bR/A is unable to interact with the intact NaV1.6. Immunoblots (IB) were performed with the indicated antibodies. (C) Current\u2013voltage relationship (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with FGF14bR/A. The number of neurons tested, N, is in parentheses. The current\u2013voltage relationship for FGF14 knockdown (shRNA) and knockdown rescued with shRNA-insensitive FGF14bWT (shRNA/FGF14bWT) from Figure 1 are shown for comparison. (D) \u03c4 of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. (E) Exemplar normalized TTX-sensitive late NaV currents at \u221220 mV (measured at 150 ms, arrowhead) from a holding potential of \u221290 mV and (F) amplitude of late NaV current as a % of peak (transient) NaV current. The number of neurons tested, N, is in parentheses. Averages for shRNA and for shRNA/FGF14bWT (see Figure 1) are shown for comparison. (G) Overlay of NaV resurgent currents recorded from cerebellar Purkinje neurons transfected with FGF14bR/A or FGF14bWT and (H) ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at \u221210 mV). The number of neurons tested, N, is in parentheses. The average for FGF14 shRNA knockdown (Figure 1) is shown for comparison. **p < 0.01.\n\nBecause the absence of the FGF14 or its N-terminus accelerated NaV channel inactivation, diminished late current, and decreased resurgent current, we anticipated that the resultant bias towards NaV inactivation would adversely affect excitability in cerebellar Purkinje neurons. We tested this hypothesis by determining the effects of the FGF14 and its N-terminus on action potential threshold and on the number of action potentials evoked with depolarizing current injections in current-clamp mode. Under our culture conditions (\u226414 days in vitro), we found that 8\u201310% of cerebellar Purkinje neurons exhibit spontaneous action potentials (firing rate 5\u201320 Hz) with regular and irregular patterns. When neurons were cultured for extended periods (>20 days in vitro), we observed that \u223c50% of Purkinje neurons spontaneously fired\u2014more similar to acutely isolated Purkinje neurons (Raman and Bean, 1999) and cultured Purkinje neurons (Gruol and Franklin, 1987). These data suggest that spontaneous activity depends upon the maturity of the neurons in culture. Because of the difficulty in achieving voltage clamp on Purkinje neurons \u226514 days in vitro, our voltage-clamp experiments were performed on the younger cells (Figures 2\u20134). Thus, we continued with immature neurons for these experiments, and focused on measuring evoked action potentials rather than spontaneous action potentials. Single action potentials were evoked by a 10-ms current injection with 5-pA increments to determine the current threshold to initiate an action potential. Figure 5A\u2013B and Table 2 show that FGF14 knockdown and expression of the dominant negative FGF14b\u0394NT markedly increased the current threshold to produce an action potential; other action potential parameters were not affected. Rescue of FGF14 knockdown by co-expression of FGF14bWT restored the current threshold to control levels. Rescue with the non-interacting FGF14bR/A did not. We also analyzed the number of actions evoked during 600 ms current injection over a wide range of current amplitudes. The number of action potentials evoked was significantly larger in control (scrambled shRNA) neurons than in neurons transfected with FGF14 shRNA. Rescue with FGF14bWT, but not FGF14bR/A, restored the number of evoked action potentials to control levels. Expression of the dominant negative FGF14b\u0394NT reduced the number of evoked action potentials to the level observed after FGF14 knockdown (Figure 5C\u2013D). Thus, as observed for the individual NaV channel kinetic parameters, FGF14b, and its N-terminus specifically, is a critical regulator of neuronal firing and intrinsic membrane properties.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig5-v2.jpg)\n\n**Figure 5.:** (A) Overlay of single action potentials evoked with a 10 ms current injection (current amplitude shown in parentheses). (B) Current threshold to induce action potentials for the indicated conditions. **p < 0.01. The number of neurons tested, N, is in parentheses. Additional summary data are presented in Table 2. (C) Example evoked action potentials for the indicated treatments at two separate current injection amplitudes (shown in insets). The resting membrane potential is indicated. (D) The number of evoked action potentials for the indicated amplitude of current injection. The number of neurons tested, N, is in parentheses.\n\n**Table 2.**\n Intrinsic membrane properties and single action potential (AP) characteristics measured in cerebellar Purkinje neurons\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Scrambled</th>\n      <th>shRNA</th>\n      <th>shRNA/FGF14bWT</th>\n      <th>shRNA/FGF14bRA</th>\n      <th>FGF14\u2206NT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Input resistance (M\u03a9)</td>\n      <td>221.8 \u00b1 15.8 (7)</td>\n      <td>238.0 \u00b1 49.5 (11)</td>\n      <td>266.6 \u00b1 24.5 (11)</td>\n      <td>225.9 \u00b1 10.8 (6)</td>\n      <td>269.5 \u00b1 30.2 (6)</td>\n    </tr>\n    <tr>\n      <td>Resting membrane potential (mV)</td>\n      <td>\u221254.5 \u00b1 1.3 (21)</td>\n      <td>\u221255.8 \u00b1 1.2 (19)</td>\n      <td>\u221254.4 \u00b1 1.0 (16)</td>\n      <td>\u221255.4 \u00b1 0.7 (10)</td>\n      <td>\u221254.9 \u00b1 1.4 (11)</td>\n    </tr>\n    <tr>\n      <td>Current threshold (pA)</td>\n      <td>77.8 \u00b1 6.4 (21)</td>\n      <td>142.1 \u00b1 18.5 (19)**</td>\n      <td>78.8 \u00b1 10.4 (16)</td>\n      <td>170.5 \u00b1 16.7 (10)**</td>\n      <td>191.0 \u00b1 22.1 (11)**</td>\n    </tr>\n    <tr>\n      <td>AP threshold (mV)</td>\n      <td>\u221235.6 \u00b1 1.0 (21)</td>\n      <td>\u221232.8 \u00b1 1.2 (19)</td>\n      <td>\u221234.5 \u00b1 0.8 (16)</td>\n      <td>\u221232.8 \u00b1 1.4 (10)</td>\n      <td>\u221232.7 \u00b1 0.8 (11)</td>\n    </tr>\n    <tr>\n      <td>AP amplitude (mV)</td>\n      <td>78.8 \u00b1 3.2 (21)</td>\n      <td>77.5 \u00b1 2.8 (19)</td>\n      <td>78.9 \u00b1 4.5 (16)</td>\n      <td>79.1 \u00b1 4.3 (10)</td>\n      <td>73.1 \u00b1 4.7 (11)</td>\n    </tr>\n    <tr>\n      <td>AP duration (ms)</td>\n      <td>2.3 \u00b1 0.2 (21)</td>\n      <td>2.0 \u00b1 0.1 (19)</td>\n      <td>2.2 \u00b1 0.1 (16)</td>\n      <td>1.8 \u00b1 0.1 (10)</td>\n      <td>2.1 \u00b1 0.3 (11)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Mean \u00b1 s.e.m. (n), **p < 0.01 compared to Scrambled control._\n\n## Discussion\n\nAlthough FGF14 haploinsufficiency is associated with spinocerebellar ataxia (Dalski et al., 2005) and intrinsic excitability of cerebellar Purkinje neurons is reduced in Fgf14\u2212/\u2212 mice (Shakkottai et al., 2009), the detailed multifactorial molecular mechanisms by which FGF14 affects neuronal excitability were not previously known. We had found that FGF14 knockdown in cerebellar granule neurons reduced presynaptic voltage-gated Ca2+ currents and thereby affected neurotransmission at the cerebellar granule neuron to Purkinje neuron synapse (Yan et al., 2013). Here, we found that FGF14b in cerebellar Purkinje neurons affects multiple kinetic parameters of NaV channels, thereby reducing the resurgent NaV current that underlies repetitive firing. Together, the accelerated inactivation, reduced channel availability, and decreased late current observed after FGF14 knockdown bias NaV channels to the inactivated state. Thus, the blocking particle that competes with the inactivation gate for open NaV channels is disadvantaged. Consequently, the resurgent current, and the resulting ability to support repetitive firing in Purkinje neurons, is reduced as we observed. Thus, our data show that an essential regulatory feature of FGF14 in cerebellar Purkinje neurons is to slow NaV channel inactivation in order to foster resurgent current.\n\nResurgent current results from the actions on NaV1.6 of a putative blocking particle, which is thought to be the cytoplasmic C-terminal peptide of the NaV auxiliary NaV\u03b24 subunit (Grieco et al., 2005). Nevertheless, the actions of NaV\u03b24 are not sufficient to generate resurgent NaV current (Chen et al., 2008; Aman et al., 2009), suggesting that other components of the NaV channel complex may be necessary for proper regulation of resurgent NaV current in cerebellar Purkinje neurons. Here, our knockdown experiments and expression of the dominant negative FGF14b\u0394NT show that FGF14b, and specifically its N-terminus, strongly influence resurgent NaV current. FGF14 knockdown caused a \u223c60% reduction. Expression of FGF14\u0394NT was even more efficient, resulting in a \u223c85% reduction, perhaps because overexpression of FGF14\u0394NT was more efficient in replacing endogenous FGF14b than shRNA knockdown was in eliminating endogenous FGF14b. Thus, FGF14 may cooperate with NaV\u03b24 to generate resurgent current, perhaps by biasing NaV1.6 channels towards inactivation and thereby disadvantaging the blocking particle. Our results examining effects on total NaV current must be assessed in the context of FGF14 effects not only on NaV1.6 channels but also on NaV1.1 channel, the other major source of NaV currents in cerebellar Purkinje neurons (Kalume et al., 2007). Those NaV channels are also influence by FGF14 (Lou et al., 2005). Thus, the effects on resurgent current that we attribute to FGF14 may result from FGF14's overall influence of NaV channel kinetics within Purkinje neurons.\n\nOur results may also provide some insight into the more variable phenotypes and decreased penetrance in spinocerebellar ataxia patients with FGF14 haploinsufficiency (Dalski et al., 2005; Coebergh et al., 2013) vs patients with a FGF14 mutation (FGF14bF150S) found in a large Dutch spinocerebellar ataxia kindred (van Swieten et al., 2003). Studies in hippocampal neurons suggest that the FGF14bF150S mutant exerts a dominant negative mechanism in which the axon initial segment is depleted of NaV channels and NaV current density is reduced (Laezza et al., 2007). Here, we found no effect on NaV current density in cerebellar Purkinje neurons after FGF14 knockdown. A reduction in NaV current density (with the FGF14bF150S mutation) compared to an effect solely on NaV channel kinetics (with FGF14 haploinsufficiency) may explain the higher penetrance and decreased phenotypic variability in patients with the FGF14bF150S mutation.\n\nAn important aspect of this study examining effects on NaV channel kinetics was that our analyses were performed in Purkinje neurons. Studying FHFs in their native cellular context appears to be crucial for defining their specific roles. Previous investigations of FGF14-dependent regulation of neuronal NaV channels in heterologous expression systems led to different conclusions from experiments in neurons. For example, expression of NaV1.6 and FGF14bWT in ND7/23 cells almost eliminated NaV current density (Laezza et al., 2009) while overexpression of FGF14bWT in hippocampal neurons increased NaV current density (Laezza et al., 2007). Similarly, expression of FGF14\u0394NT in ND7/23 cells increased current density, while here we observed that FGF14\u0394NT expression in cerebellar Purkinje neurons exerted dominant-negative effects upon NaV channel kinetics, but no consequences for NaV current density. While the etiology of the different results in neurons compared to heterologous expression systems is not known, we speculate that additional regulatory factors present in neurons are necessary for physiologic regulation of NaV channels by FHFs. Indeed, we have observed similarly disparate results for the related FGF13 and the cardiac NaV1.5 channel. In HEK293 cells, FGF13 co-expression reduces NaV1.5 current density (not shown), but we showed that the role FGF13 in cardiomyocytes is to increase NaV current density (Wang et al., 2011; Hennessey et al., 2013).\n\nFinally, our data also provide information about possible consequences of FGF14 overexpression, hypothesized as pathologic in rare cases. Some patients with spinocerebellar ataxia, but not controls, harbor synonymous variants in FGF14. These variants encode a more frequently used codon than the wild type sequence, leading to the hypothesis that patients with these variants would overexpress FGF14 as a cause of disease (Dalski et al., 2005). We found, however, that overexpression of FGF14bWT did not affect current density or any of the measured NaV kinetic properties (Figure 3 and Table 1). Thus, if these variants identified in spinocerebellar ataxia patients are truly associated with disease, our data suggest mechanisms other than FGF14 overexpression.\n\nIn summary, these data add to a growing appreciation of physiologic and pathophysiologic roles for FHFs in neurons. In the case of spinocerebellar ataxia, our data suggest that FGF14 is a critical regulator of the ability of cerebellar Purkinje neuron NaV channels to support resurgent NaV current and thereby allow Purkinje neurons to fire repetitively. Thus, we provide a molecular understanding for the observation that FGF14 regulates Purkinje neuron intrinsic excitability (Shakkottai et al., 2009). In combination with our data showing that FGF14 also regulates presynaptic voltage-gated Ca2+ channels at the cerebellar granule cell to Purkinje cell synapse, these data pinpoint several specific mechanisms by which mutations in FGF14 underlie spinocerebellar ataxia.\n\n## Materials and methods\n\n### Primary cerebellar neuron culture and transfection\n\nThis study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved Institutional Animal Care and Use Committee (IACUC) of Duke University (protocol #A292-13-11). Primary dissociated cerebellar neurons were cultured as previously described (Yan et al., 2013) with some modifications. Briefly, primary cultures were prepared from P6-P8 C57BL6 mice. Cerebella were excised, dissected on ice, digested with 0.25% trypsin for 10 min at 37\u00b0C with Dulbecco's Modified Eagle's Medium (DMEM, Sigma, St. Louis, MO), and dissociated into single cells by gentle trituration. The cells were seeded onto coverslips coated with 50 \u03bcg/ml poly-D-lysine (Sigma) and 25 \u03bcg/ml laminin (Sigma) at a density of 2.5\u20133.0 \u00d7 105 cells/coverslip in DMEM supplemented with 10% heat-inactivated fetal bovine serum (FBS). The neurons were maintained in a humidified incubator in 5% CO2 at 37\u00b0C. After 15\u201316 hr, the medium was replaced with Basal Medium Eagle (BME, Sigma) supplemented with 2% B27 (Invitrogen), 5% FBS, 25 \u03bcM uridine, 70 \u03bcM 5-fluorodeoxyuridine, and 20 mM KCl. Neurons were transiently transfected at 4 days in vitro with 1 \u03bcg plasmid DNA and/or shRNA plasmids per coverslip with calcium phosphate. Experiments were performed 8\u201310 days after transfection (12\u201314 days in vitro). To achieve good voltage control, all recordings were performed in neurons cultured no longer than 14 days in vitro.\n\n### shRNA and cDNA construction\n\nshRNAs targeted to FGF14 were designed with Invitrogen's RNAi Designer as previously described (Yan et al., 2013) and the sequences were cloned into pLVTHM (Addgene). After evaluating several candidates, we found that the most effective shRNA sequence was 5\u2032 CGCGTGGAGGCAAACCAGTCAACAAGTGCATTCAAGAGATGCACTTGTTGACTGGTTTGC CTCCTTTTTTAT 3\u2032, which was used for the experiments described here. The scrambled shRNA which bears no homology to genes in the rodent genome (Wang et al., 2011) has the sequence: 5\u2032-CGCGTGACCCTTAGTTTATACCTATTCAAGAGATAGGTATAAACTAAGGGTCTTTTTTAT-3\u2032. FGF14 rescue and overexpression experiments were performed with FGF14 constructs (either full-length or with the N-terminus truncated) cloned into pcDNA3.1 also containing tdTomato. Mutagenesis to obtain FGF14bR/A was performed using QuikChange (Agilent). All plasmids were verified by sequencing.\n\n### Electrophysiological recordings\n\nPurkinje neurons were identified by their characteristic teardrop morphology and large size. Whole-cell NaV currents and membrane voltage were recorded at 23\u201325\u00b0C using an EPC 10 USB patch amplifier (HEKA Elektronik). The signal was filtered at 2.9 Hz and digitized at 20 Hz. NaV currents were recorded with an extracellular solution containing (in mM) 124 NaCl, 20 TEA-Cl (tetraethylammonium Chloride), 5 HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid), 10 glucose, 0.3 CdCl2, 2 BaCl2, and 4-AP (4-aminopyridine). NaOH was added to achieve pH 7.3 (300\u2013310 mOsm). Borosilicate glass patch pipettes (resistances within 3\u20134 M\u03a9) were filled with the following internal solution (in mM): 125 CsF, 10 NaCl, 10 HEPES, 15 TEA-Cl, 1.1 ethylene glycol tetraacetic acid (EGTA), and 0.5 Na-guanosine-5\u2032-triphosphate (Na-GTP), pH adjusted to 7.3 with CsOH (290\u2013300 mOsm). Tetrodotoxin (TTX)-sensitive NaV currents were isolated by subtraction of recordings performed in 1 \u03bcM TTX from the control recordings. Series resistance was compensated >70%. Current-clamp recordings were performed after obtaining seal resistances >1.2 G\u03a9. The internal solution was (in mM) 130 K-gluconate, 5 NaCl, 2 MgCl2, 10 HEPES, 4 Mg-ATP, 0.5 Na-GTP, 0.2 EGTA, and 10 phosphocreatine. KOH was used to obtain pH 7.3 (290\u2013300 mOsm). The external solution was (in mM) 140 NaCl, 5 KCl, 2 CaCl2, 1 MgCl2, 5 HEPES, and 10 glucose, pH adjusted to 7.3 with NaOH. Resting membrane potential was directly measured in current-clamp mode after membrane rupture and only cells with a resting membrane potential more negative than \u221250 mV were studied. The liquid junction potential was not corrected. Input resistance was determined from membrane voltage deflection, evoked by 600-ms hyperpolarizing current injections (0 to \u2212300 pA in steps of 50 pA) and calculated from the measured slope. Single action potentials were elicited by 10 ms depolarizing current injections with 5-pA increments. All drugs were from Sigma Aldrich, except for TTX (Abcam Biochemicals).\n\n### Protocols and data analysis\n\nData analysis was performed using FitMaster (HEKA), Excel (Microsoft), and Origin software. All averaged data are presented as mean \u00b1 SEM. Statistical significance was determined using Student's t or one-way ANOVA tests. Calculated p values of \u22640.05 were accepted as evidence of statistically significant differences. For current amplitude, neurons were held at \u221290 mV and transient NaV current was elicited by depolarizing pulses of 20 ms from \u221290 mV to +55 mV in 5-mV increments. Current density was obtained by normalizing peak NaV current to membrane capacitance. Resurgent NaV current was evoked with repolarizing steps from +20 mV to a range of voltages between \u221280 mV and +5 mV in 5-mV increments for a 200-ms test pulse after 15 ms conditioning steps. NaV activation curves were obtained by transforming current data to conductance (G), with the equation G = INa/(Em \u2212 Erev), where: INa is the peak current; Em is the membrane potential; and Erev is the reversal potential of INa; and fitted with a Boltzmann equation of the form: G = Gmax/[1 + exp(V1/2 \u2212 V)/k], where Gmax is the extrapolated maximum Na+ conductance, V is the test voltage, V1/2 is the half-activation voltage, and k is the slope factor. For NaV steady-state inactivation, a voltage step to \u221220 mV for 20 ms was applied from a holding potential of \u221290 mV to preferentially activate INa after pre-pulse conditioning voltage steps of 300 ms in duration (ranging from \u221290 to +20 mV) in 5-mV increments. Steady-state inactivation curves were constructed by plotting the normalized peak current amplitude elicited during the test pulse as a function of the conditioning pre-pulse. A Boltzmann relationship, I/Imax = (1 + exp((V \u2212 V1/2)/k))\u22121 was used to fit the data where Imax is current elicited by the test pulse after a \u221290-mV prepulse; V1/2 is half-inactivation voltage; k is the slope. Late NaV current was measured at 150 ms during a 200 ms depolarizing pulse to \u221220 mV. The rate of decay of the transient NaV current (\u03c4) was obtained from a single exponential function, I(t) = INa exp (\u2212t/\u03c4)+ ISS, where I(t) is the amplitude of the current at time t; ISS is the steady-state current during a single voltage step.\n\nIn current clamp, action potential amplitude was measured as the peak voltage with respect to the baseline 10 ms before the peak of the action potential. The action potential duration was evaluated at half-amplitude. Evoked action potentials were elicited by injecting a depolarizing current from 0 pA to 300 pA for 600 ms duration with 10-pA increments.\n\n### Immunoprecipitation and Western blotting\n\nCerebella were isolated from two 5-week-old C57BL/6J mice and homogenized with a mortar and pestle in 8 ml of lysis buffer composed of 150 mM NaCl, 50 mM Tris-Cl, 1% Triton, and 1% sodium deoxycholate. Lysate was incubated on ice for 2 hr, passed through a 20g needle 20 times, and rocked end over end for 30 min at 4\u00b0C. The lysate was cleared of insoluble material by centrifugation at 4000 rcf at 4\u00b0C for 30 min followed by a second centrifugation at 17,100 rcf at 4\u00b0C for 10 min. The lysate was preincubated with 30 \u03bcl of Protein A/G (Santa Cruz Biotechnology) beads for 2 hr at 4\u00b0C. The beads were gently spun down at 0.4 rcf for 1 min to separate them from the lysate, which was then incubated with 20 \u03bcg of either anti-FGF14 (NeuroMab) or non-immune mouse IgG (Santa Cruz Biotechnology) overnight at 4\u00b0C. In order to immunoprecipitate protein complexes, 30 \u03bcl of Protein A/G beads were added and incubated with the lysate for 2 hr. Beads were then washed three times with lysis buffer followed by elution in 2\u00d7 LDS Sample Buffer (Novex NuPage) plus 10 mM dithiothreiotol. Protein samples were run on 8\u201316% Tris-glycine SDS page gels and transferred to PVDF membranes. Primary antibodies used were rabbit polyclonal anti Nav1.6 from Millipore (1:200), anti-\u03b2-tubulin from Sigma (1:1000) as a loading control, and rabbit polyclonal anti-FGF14 (1:200), which was a kind gift from the Ornitz lab (Washington University, St. Louis). HEK293T cells on 100-mm plates were transfected with Lipofectamine 2000 (Invitrogen) when cells were at \u223c60% confluency with 9 \u03bcg of NaV1.6 and 3 \u03bcg of FGF14bWT or FGF14bR/A. Cells were washed with ice-cold PBS 60 hr after transfection, and cell lysates were prepared with the addition of lysis buffer containing 150 mm NaCl, 50 mm Tris\u2013HCl, pH 7.5, 1% Triton with protease inhibitor (Roche). The pelleted cells were pipetted up and down 20 times with lysis buffer, incubated at 4\u00b0C for 1 hr and then centrifuged at 16,000\u00d7g for 10 min at 4\u00b0C. Immunoprecipitation was performed on 2 mg of lysate with 2 \u03bcg of anti-FGF14 antibody (Neuromab). The samples were rocked gently at 4\u00b0C for 1 hr followed by addition of 30 \u03bcl of protein A/G-agarose slurry. The samples were rotated overnight at 4\u00b0C and microcentrifuged at 7000 rpm for 2 min. After washing with lysis buffer three times, 40 \u03bcl of loading buffer was added to the pellet, and protein was eluted from the beads by heating at 70\u00b0C for 20 min. The samples were subjected to NuPAGE 8\u201316% Bis-Tris gels (Invitrogen). The proteins were transferred to nitrocellulose membranes and subsequently immunoblotted with the anti-FGF14, anti-pan NaV antibody, and anti-tubulin antibody.\n",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "f7a5485a-6808-4866-8ab0-acd031ec2d3e",
+      "submission_id": "8ee34a72-29cb-4e2e-b9ee-53c884da90dc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Vollum Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04193.010](https://doi.org/10.7554/eLife.04193.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cFGF14 Modulates Resurgent Sodium Current in Mouse Cerebellar Purkinje Neurons\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers as well as Gary Westbrook, a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and following comments were assembled to help you prepare a revised submission. As you will see the reviewers thought the data was convincing in showing that the intracellular protein FGF14, which has previously been shown to interact with sodium channels, regulates the ability of the channels to generate \u201cresurgent\u201d sodium current, an unusual kinetic behavior of sodium channels linked to rapid firing, whereby sodium current flows during recovery from inactivation. The experiments are based on combined shRNA and dominant negative protein experiments using a preparation of cultured Purkinje neurons. This is a powerful combination of molecular tools and physiological function. The implication of FGF14 in resurgent current is of considerable significance, especially because mutations affecting FGF14 are implicated in some human spinocerebellar ataxias.\n\nThe strength of this manuscript is the clear presentation of the functional effects of FGF-14 on sodium currents in Purkinje neurons in Figures 1-5. These studies are not a dramatic conceptual advance, but the analysis presented here is more comprehensive and carefully documented than previous work and significantly increases our understanding of FGF-14 effects. The weakness of this manuscript is the interpretation of the regulatory effects observed in molecular terms. As the authors acknowledge, the molecular components required for resurgent sodium current remain unknown, and the molecular mechanism of generation of resurgent current is not substantially advanced by the work presented here. Specifically, no evidence was presented to support the authors' proposal that FGF14 serves as a blocking particle and thus the discussion of the molecular mechanism throughout the manuscript (Abstract, Introduction, Figure 6 and Discussion) should be removed as commented below.\n\nMajor points:\n\n1) These experiments were done in cultured Purkinje neurons but no information is given about (Raman et al., 1997) the extent to which their activity resembles that of Purkinje neurons in other preparations (acutely isolated, slice, in vivo) (Raman and Bean, 1997) the age of the cultures (DIV) or (Grieco et al., 2005) what efforts were made to achieve good voltage control, which is expected to be difficult in a culture preparation with big currents and axons. The culture preparation is necessary to do these experiments, but addressing these points is important because the data suggest that the cultured neurons do not fire spontaneously (Methods, \u201conly cells with a resting membrane potential more negative than -50 mV were studied\u201d; no indication of holding current to keep cells silent; no spikes evident before steps in current clamp records. Note the extracellular solution for recording spikes is also not reported), and if the authors wish to make a case that FGF14 affects Purkinje cell firing the link to the more physiological condition should be made.\n\n2) The resurgent current seems to rise very rapidly (and looks generally different from that in acutely isolated cells) although that might just be the time base. What was the time to peak of the resurgent current? It would be helpful to illustrate the kinetics of resurgent currents a wider range of potentials to use as comparison to acutely isolated cells on which many earlier experiments are done. Even if there are differences between the acute and cultured preparations, it would be worth cataloguing systematically.\n\n3) Abstract:\n\n\u201cThese data suggest that the FGF14b N-terminus may serve as a blocking particle and/or cooperate with NaVbeta 4...\u201d and Discussion as noted. There are no data on open channel block in this manuscript and this conclusion is unsupported. The data show nicely that reduction of functional FGF14 favors inactivation. Because any modulation that favors inactivation will reduce resurgent current, the observed reduction in peak resurgent current is predicted, though still worth documenting. The Results are presented quite clearly, but in the second paragraph of the Discussion the authors surprisingly and unnecessarily extrapolate to the suggestion that FGF14 is itself a blocker or forms part of a blocking complex. The existing data have no direct relationship to this conclusion, and actually seem to argue against the need to invoke this idea for the following reasons:\n\na) Losing FGF14 function speeds current decay at depolarized potentials, rather than slowing current decay at depolarized potentials, which is what would be expected if open channel block is directly disrupted (Khaliq et al. 2003, J Neurosci note also that these were the effects of trypsin and chymotrypsin in Grieco et al. 2005, Neuron, when the blocker was removed by proteolysis, although the authors argue that FGF14 might be a blocker because of trypsin sites).\n\nb) Loss of FGF14 reduces resurgent current but doesn't seem to change its kinetics, which might be expected if the interaction of the blocking particle with the channels is itself altered.\n\nIf the authors want to investigate whether FGF14 can block Na channels, they should simply test whether the N-terminus can make a resurgent current in channels that don't have a native blocker. In the absence of some kind of direct evidence of block, the arguments based on whether the protein has lysines or trypsin sites, etc. are unconvincing and irrelevant. Most importantly, the discussion of FGF14 as a blocker is incidental to the line of the paper and could be cut with no loss to the manuscript.\n\n4) Abstract:\n\na) \u201cCerebellar Purkinje neurons fire repetitive action potentials because of a voltage-gated Na+ (NaV) \u201dresurgent\u201c current\u201d That is maybe overstating the role of resurgent sodium current. There are neurons withour resurgent current that can still fire repetitively. Something like \u201cRapid firing of cerebellar Purkinje neurons is facilitated by voltage-gated Na+ (NaV) \u201dresurgent\u201c current...\u201d would be more accurate.\n\nb) \u201cResurgent current results from unbinding of a blocking particle that previously terminated Na+ influx through the channel and simultaneously prevented channel inactivation.\u201d This might be clearer as \u201cResurgent current results from unbinding of a blocking particle that competes with normal channel inactivation.\u201d\n\n5) Introduction:\n\na) \u201cCerebellar Purkinje neurons, which provide the sole cerebellar output signal...\u201d. Not true. A correct statement would be \u201cCerebellar Purkinje neurons, which provide the sole output from the cerebellar cortex....\u201d (not the cerebellum as a whole).\n\nb) \u201cThis is an unusual behavior because, after initially opening, NaV channels in most neurons rapidly enter an inactivated state. This diminishes their ability to reopen quickly that defines the repetitive firing seen in Purkinje neurons.\u201d This was a little clumsy. Something like \u201cFast repetitive firing in Purkinje neurons is promoted by unusual characteristics associated with sodium channel inactivation, whereby channels recover unusually rapidly from inactivation and in doing so pass a 'resurgent' sodium current, which helps drive the cell to fire a subsequent action potential.\u201d\n\nc)\u201cFirst, more than half of the NaV current in Purkinje neurons is carried by NaV1.6, an isoform that is particularly reluctant to enter the inactivated state (Raman et al., 1997).\u201d This is a little misleading (because inactivation is still 95-99% complete) . Something like \u201c..an isoform for which inactivation is somewhat less complete compared to others\u201d would be better.\n\n6) \u201cAlthough this result appears to contrast with a report that resurgent NaV current was unaffected by the absence of FGF14 in cerebellar granule neurons (Dalski et al., 2005), the protocol employed in that study was markedly different. Instead of measuring resurgent current, it evaluated channel recovery from inactivation.\u201d\n\nThis is incorrect. Table 1 from Neuron 55(3):449-463 shows statistics for voltage clamp measurements of resurgent sodium current. However, as the measurements were in cerebellar granule cells, there is no real conflict. Also, the measurements reported were for resurgent current at -85 mV, which in the present results Figure 2H showed much less change than at -40 mV where resurgent current is maximal.\n\n7) \u201cFGF14 is expressed in the hippocampus (Aman et al., 2009), but resurgent NaV current is not observed in hippocampal neurons unless an exogenous blocking particle is added through the patch pipette (Grieco et al., 2005).\u201d\n\nThis is true for CA3 pyramidal neurons but not CA1 pyramidal neurons, which do express resurgent sodium current (Royeck M, Horstmann MT, Remy S, Reitze M, Yaari Y, Beck H. Role of axonal NaV1.6 sodium channels in action potential initiation of CA1 pyramidal neurons. J Neurophysiol. 2008 100:2361-80.)\n\n8) Table 1 includes several non-standard or ambiguous measurement parameters that are not defined in Methods, namely \u201cAP rise time\u201d, \u201cAP decay time\u201d, and \u201cAP integral\u201d. Because these do not change and are not referred to, they should be deleted or Methods should define how they were measured. (\u201cAP rise time\u201d is especially ambiguous and hard to interpret, because it is longer than AP duration.)\n\n9) The authors write as though Purkinje neurons express only Nav1.6 channels. In fact, previous work suggests the presence of other sodium channels as well. For example, specific immunostaining and gene knockout indicate that Nav1.1 channels are present and constitute a significant fraction of sodium current in the cell bodies of dissociated Purkinje neurons (Kalume et al., J Neurosci, 2007). The presence of multiple sodium channel types in Purkinje neurons complicates all of the quantitative interpretations of the results presented here because it is unknown whether FHF-14 affects all of the sodium channels types that may be present in the same way.\n\n10) Figure 4A, B. Why are interactions of Nav1.5 and FHF-13 reported here? These results should be replaced with experiments on Nav1.6 and FHF-14, which form the primary focus of this manuscript.\n\n11) Figure 6. The molecular model developed in Figure 6 and the Discussion is highly speculative. There is no experimental basis for the interaction between the Navbeta4 subunit and FGF14 depicted in Figure 6, and indeed the role of Navbeta4 as a blocking protein has yet to be demonstrated for Purkinje cells. Similarly, the authors indicate that FHF-14 also is unable to generate resurgent sodium current when co-expressed with sodium channels, so there is no experimental basis for its proposed role as a blocking particle that generates resurgent sodium current either. If the authors wish to propose this molecular mechanism, they need to show that co-expression of Navbeta4, FHF-14, or both can generate resurgent sodium current in a cell type in which none is observed before co-expression.\n\n12) The authors base much of the impact of their manuscript on elucidating the molecular mechanism of resurgent sodium current. However, as developed in the points above, their work does not directly address this problem. The authors need to re-orient the Abstract and Discussion and provide a more persuasive presentation of the importance of their findings for the physiology of Purkinje neurons and the pathophysiological effects of spinocerebellar ataxia mutations in FHF-14. The discussion of the molecular role of FHF-14 and Navbeta4 should be greatly reduced in favor of consideration of the potential impact of regulation by FHF-14 in the physiological function and pathophysiology of Purkinje neurons.\n",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7934cb1b-e178-4f59-ae37-2662d47b813b",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C1",
+      "claim": "FGF14 co-immunoprecipitates with NaV1.6 channels in mouse cerebellar lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Although FGF14 was previously shown to co-immunoprecipitate with NaV1.6 in a heterologous expression system (Laezza et al., 2009), co-immunoprecipitation between FGF14 and NaV1.6 channels has not been reported from brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A demonstrating co-immunoprecipitation from mouse cerebellum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "dbea8235-0e37-4158-8135-a9f034fa2e48",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C2",
+      "claim": "FGF14 knockdown does not affect NaV current density in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of FGF14 did not affect NaV current density compared to the NaV current density recorded in neurons transfected with a control shRNA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B comparing current-voltage relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "ded04efd-8da1-4f4d-b42f-2efcd1a92dcb",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C3",
+      "claim": "FGF14 knockdown does not affect voltage dependence of NaV channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage dependence of activation was unaffected by FGF14 knockdown (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "59317ca0-fffa-41ee-8f6d-7df87b7bc2b0",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C4",
+      "claim": "FGF14 knockdown shifts the V1/2 of steady-state inactivation by about \u221210 mV, thereby decreasing channel availability.",
+      "claim_type": "EXPLICIT",
+      "source": "but the V1/2 of steady-state inactivation was shifted about \u221210 mV, thereby decreasing channel availability (Figure 2B and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "58a881a1-08df-4f95-b918-8b0c6337e895",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C5",
+      "claim": "Co-expression of shRNA-resistant FGF14bWT restores the V1/2 of steady-state inactivation to control voltage after FGF14 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "When we co-expressed a FGF14b cDNA with synonymous substitutions rendering it resistant to the FGF14 shRNA (FGF14bWT), the V1/2 of steady-state inactivation was restored to the control voltage; activation was unaffected (Figure 2A\u2013B and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A-B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "7664d70e-d1b4-4799-9dce-e5de10a84f67",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C6",
+      "claim": "FGF14 knockdown accelerates NaV channel inactivation kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the decreased channel availability, we observed that FGF14 knockdown accelerated inactivation kinetics (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "3171c474-207e-4e37-a865-0b32111b276a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C7",
+      "claim": "FGF14 knockdown reduces the late NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 knockdown also reduced the late NaV current (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "26623a5d-5b6b-4a94-83be-df5e268f6bfe",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C8",
+      "claim": "FGF14 knockdown biases endogenous NaV channels towards entering the inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by several different kinetic measures, FGF14 knockdown in cerebellar Purkinje neurons biased the endogenous NaV channels towards entering the inactivated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple experimental observations including decreased channel availability, accelerated inactivation kinetics, and reduced late current.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "8a6b2e63-32b7-477f-a33f-c82da23580ad",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C9",
+      "claim": "FGF14 knockdown markedly diminishes the amplitude of resurgent NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the amplitude of the resurgent NaV current (Figure 2G\u2013J) was markedly diminished using a well-established protocol to elicit NaV resurgent current (Raman and Bean, 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G-J and cites an established protocol.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b5f87ff6-e934-470f-be94-91876ce57118",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C10",
+      "claim": "Co-expression of FGF14bWT provides complete rescue of resurgent NaV current after FGF14 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the other kinetic properties of NaV currents (above), co-expression of FGF14bWT in the presence of the shRNA provided a complete rescue (Figure 2G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b0787fc6-a44b-4f83-9174-5ea0f71c2047",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C11",
+      "claim": "FGF14 knockdown does not significantly affect the time to peak of resurgent NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "While FGF14 knockdown reduced the amplitude of resurgent NaV current, it did not significantly affect the time to peak (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "04614749-8504-4e38-ab88-ecb0a09c20da",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C12",
+      "claim": "FGF14b is the predominant FGF14 splice variant expressed in brain.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14b is the predominant FGF14 splice variant expressed in brain (Wang et al., 2000, 2011) and the FGF14 splice variant found in the cytoplasm; FGF14a is localized to the nucleus (Wang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "0cc1386d-b4b6-4a62-a22a-4c4c274b441e",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C13",
+      "claim": "FGF14a is localized to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14b is the predominant FGF14 splice variant expressed in brain (Wang et al., 2000, 2011) and the FGF14 splice variant found in the cytoplasm; FGF14a is localized to the nucleus (Wang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "3f75ed99-5437-4e6b-8cb4-8aa60fe516f1",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C14",
+      "claim": "Deletion of the FGF14 N-terminus does not affect interaction with the NaV CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the interaction site for the NaV CTD on FHFs lies within the conserved core domain (Wang et al., 2012), deletion of the N-terminus does not affect interaction with the NaV CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge from a cited study about the interaction site location.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b716d1fc-c9d8-4a6b-8ca0-c9a17f07a59d",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C15",
+      "claim": "FGF14\u0394NT exerts a dominant negative effect by competing with endogenous FGF14 for interaction with the NaV CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the FGF14\u0394NT exerts a dominant negative effect by competing with endogenous FGF14 for interaction with the NaV CTD (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the knowledge that deletion of N-terminus does not affect CTD binding and experimental design shown in Figure 3A.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9d91f461-9850-4a4f-873c-93f2f98e835f",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C16",
+      "claim": "Expression of FGF14\u0394NT does not affect NaV current density.",
+      "claim_type": "EXPLICIT",
+      "source": "Current density (Figure 3B) and the V1/2 of activation (Figure 3C and Table 1) were unaffected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "4b705a0e-38c7-4c96-a5bf-ae7bb053a7b6",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C17",
+      "claim": "Expression of FGF14\u0394NT does not affect the V1/2 of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Current density (Figure 3B) and the V1/2 of activation (Figure 3C and Table 1) were unaffected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b1897464-a421-4b65-98f8-4af0b42434ec",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C18",
+      "claim": "Expression of FGF14\u0394NT shifts the V1/2 of steady-state inactivation about \u221210 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "However, expression of FGF14\u0394NT shifted the V1/2 of steady-state inactivation about \u221210 mV (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "66fc5b7f-ab6b-47a0-8d5a-d7ebc208e9f6",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C19",
+      "claim": "Expression of FGF14\u0394NT accelerates kinetics of inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, expression of FGF14\u0394NT shifted the V1/2 of steady-state inactivation about \u221210 mV (Figure 3C), accelerated kinetics of inactivation (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "967e1195-f66e-4a0d-85aa-486dff54b597",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C20",
+      "claim": "Expression of FGF14\u0394NT reduces the late NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "However, expression of FGF14\u0394NT shifted the V1/2 of steady-state inactivation about \u221210 mV (Figure 3C), accelerated kinetics of inactivation (Figure 3D), reduced the late NaV current (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "a0dba221-ac66-4fd4-a4ad-5bb5a4d6012c",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C21",
+      "claim": "Expression of FGF14\u0394NT diminishes resurgent current.",
+      "claim_type": "EXPLICIT",
+      "source": "However, expression of FGF14\u0394NT shifted the V1/2 of steady-state inactivation about \u221210 mV (Figure 3C), accelerated kinetics of inactivation (Figure 3D), reduced the late NaV current (Figure 3E), and diminished resurgent current (Figure 3F) to a degree similar to or even greater than shRNA knockdown.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "23484853-4de7-497d-9963-a8ecc30fa983",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C22",
+      "claim": "FGF14\u0394NT diminishes resurgent NaV current more effectively than shRNA knockdown of FGF14.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14\u0394NT diminished resurgent NaV current even more effectively than shRNA knockdown of FGF14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of experimental data from Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "e8046bb5-5e60-494f-8394-4e4e88c56114",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C23",
+      "claim": "Overexpression of FGF14bWT has no effect on NaV channel parameters in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of FGF14bWT here was without effect (Figure 3 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "6b4c2595-e67a-4c25-bf7a-54c109634ad4",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C24",
+      "claim": "Endogenous FGF14b is saturating in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only did this serve as a control for FGF14\u0394NT, but these data suggest that endogenous FGF14b is saturating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that overexpression of FGF14bWT has no effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "1d5e4cf4-b91c-4820-9f93-ba72eb67c265",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C25",
+      "claim": "FGF14b's main regulatory component for Purkinje neuron NaV currents lies within the FGF14b N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "These data also suggest that FGF14b's main regulatory component for Purkinje neuron NaV currents lies within the FGF14b N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the dominant negative effects of FGF14\u0394NT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "e9d6871f-45fc-4d4e-ba4e-04a844b8dc42",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C26",
+      "claim": "Arg57 in FGF13 (equivalent to Arg117 in FGF14b) inserts into a deep pocket on the NaV1.5 CTD binding surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on a highly conserved Arg in the FHF core domain (Arg57 in FGF13U, equivalent to Arg117 in FGF14b), which inserts into a deep pocket on the NaV1.5 CTD binding surface (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on structural data from a cited study and shown in Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "4dfbe421-56bf-4752-8699-6514bbc8e34a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C27",
+      "claim": "The FGF14bR/A mutant is unable to co-immunoprecipitate NaV1.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Although immunoprecipitation of FGF14bWT from lysates of HEK293 cells transfected with FGF14bWT and NaV1.6 showed co-immunoprecipitation of NaV1.6, the mutant FGF14bR/A was unable to co-immunoprecipitate NaV1.6 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "8f17337f-c87c-4c10-bbf6-4ca46a8174d2",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C28",
+      "claim": "Mutation of R117A in FGF14b prevents interaction with NaV1.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mutation of R117A in FGF14b prevents interaction with NaV1.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the co-immunoprecipitation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9614095f-bac7-4dcf-addd-703c0a7362b6",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C29",
+      "claim": "Expression of FGF14bR/A after shRNA knockdown of endogenous FGF14 has no effect on NaV current density.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of FGF14bR/A after shRNA knockdown of endogenous FGF14 had no effect on NaV current density (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "7702d92c-2d7f-4127-94ea-f118f0dd18dd",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C30",
+      "claim": "FGF14bR/A does not rescue NaV late current after FGF14 shRNA knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the rescue afforded by FGF14bWT, FGF14bR/A did not rescue the key parameters that lead to increased inactivation observed after FGF14 shRNA. NaV late current and the time constant of inactivation were not different from shRNA (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "d82b6f3c-653f-4dbf-bb42-25eeed472ddf",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C31",
+      "claim": "FGF14bR/A does not rescue the time constant of inactivation after FGF14 shRNA knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the rescue afforded by FGF14bWT, FGF14bR/A did not rescue the key parameters that lead to increased inactivation observed after FGF14 shRNA. NaV late current and the time constant of inactivation were not different from shRNA (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "7f71edd4-e726-4b81-8e55-ae9073c62d69",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C32",
+      "claim": "FGF14bR/A does not rescue resurgent NaV current after FGF14 shRNA knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, we observed the expected reduction in resurgent NaV current (Figure 4G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "2c564e55-639a-49ff-a7fa-f644404e54be",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C33",
+      "claim": "The FGF14 N-terminus must exert its key effects through FGF14's direct interaction with the NaV C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the FGF14 N-terminus must exert its key effects through FGF14's direct interaction with the NaV C-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that FGF14bR/A, which cannot bind NaV channels, fails to rescue the effects of FGF14 knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "7a529b80-7b9a-400b-9472-46d81b6c4171",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C34",
+      "claim": "FGF14 knockdown markedly increases the current threshold to produce an action potential in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5A\u2013B and Table 2 show that FGF14 knockdown and expression of the dominant negative FGF14b\u0394NT markedly increased the current threshold to produce an action potential; other action potential parameters were not affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A-B and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9119a585-acb7-432d-a1ad-50ca9fd4df4e",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C35",
+      "claim": "Expression of the dominant negative FGF14b\u0394NT markedly increases the current threshold to produce an action potential in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5A\u2013B and Table 2 show that FGF14 knockdown and expression of the dominant negative FGF14b\u0394NT markedly increased the current threshold to produce an action potential; other action potential parameters were not affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A-B and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "d5ccb5be-500a-40e7-a0c1-f06b9dac349b",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C36",
+      "claim": "FGF14 knockdown and expression of FGF14b\u0394NT do not affect other action potential parameters besides current threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5A\u2013B and Table 2 show that FGF14 knockdown and expression of the dominant negative FGF14b\u0394NT markedly increased the current threshold to produce an action potential; other action potential parameters were not affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A-B and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "cf7a1c75-aa87-42b2-ba58-ed45c45d6119",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C37",
+      "claim": "Co-expression of FGF14bWT restores the current threshold to control levels after FGF14 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue of FGF14 knockdown by co-expression of FGF14bWT restored the current threshold to control levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A-B and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "3e70bf7c-7c0f-464a-9fc9-d70523688655",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C38",
+      "claim": "FGF14bR/A does not restore the current threshold to control levels after FGF14 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue with the non-interacting FGF14bR/A did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A-B and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "c291b444-cb53-41bf-84a9-2be06db293ec",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C39",
+      "claim": "The number of action potentials evoked during 600 ms current injection is significantly larger in control neurons than in neurons transfected with FGF14 shRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the number of actions evoked during 600 ms current injection over a wide range of current amplitudes. The number of action potentials evoked was significantly larger in control (scrambled shRNA) neurons than in neurons transfected with FGF14 shRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "6c8a1396-6b85-4c3b-a722-8f9c4f97708e",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C40",
+      "claim": "Co-expression of FGF14bWT restores the number of evoked action potentials to control levels after FGF14 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue with FGF14bWT, but not FGF14bR/A, restored the number of evoked action potentials to control levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "74733b83-3550-47cf-99be-e2b05043c354",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C41",
+      "claim": "FGF14bR/A does not restore the number of evoked action potentials to control levels after FGF14 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue with FGF14bWT, but not FGF14bR/A, restored the number of evoked action potentials to control levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "05fc11bb-d554-490d-bcdd-44a0696deeb6",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C42",
+      "claim": "Expression of the dominant negative FGF14b\u0394NT reduces the number of evoked action potentials to the level observed after FGF14 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the dominant negative FGF14b\u0394NT reduced the number of evoked action potentials to the level observed after FGF14 knockdown (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "5a55730f-ec3b-4f0a-b715-b00144743186",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C43",
+      "claim": "FGF14b and its N-terminus specifically is a critical regulator of neuronal firing and intrinsic membrane properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as observed for the individual NaV channel kinetic parameters, FGF14b, and its N-terminus specifically, is a critical regulator of neuronal firing and intrinsic membrane properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined experimental observations on action potential threshold and evoked action potentials.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9a87b3a4-f8bb-4efe-a164-7054900096b8",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C44",
+      "claim": "Rapid firing of cerebellar Purkinje neurons is facilitated in part by a voltage-gated Na+ (NaV) 'resurgent' current.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid firing of cerebellar Purkinje neurons is facilitated in part by a voltage-gated Na+ (NaV) 'resurgent' current, which allows renewed Na+ influx during membrane repolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about cerebellar Purkinje neuron physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "65a84907-d3d0-40b5-adb8-7154d6a43866",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C45",
+      "claim": "Resurgent current allows renewed Na+ influx during membrane repolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid firing of cerebellar Purkinje neurons is facilitated in part by a voltage-gated Na+ (NaV) 'resurgent' current, which allows renewed Na+ influx during membrane repolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about resurgent current.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "3d2ee38b-35c3-4eec-8e2a-c5c27b0c03ba",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C46",
+      "claim": "Resurgent current results from unbinding of a blocking particle that competes with normal channel inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Resurgent current results from unbinding of a blocking particle that competes with normal channel inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the mechanism of resurgent current.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "a159e551-4e29-4c5d-abf0-17aec1e9e3dd",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C47",
+      "claim": "FGF14 'b' isoform is a locus for inherited spinocerebellar ataxias.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that the NaV channel auxiliary subunit FGF14 'b' isoform, a locus for inherited spinocerebellar ataxias, controls resurgent current and repetitive firing in Purkinje neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about FGF14 and spinocerebellar ataxias.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "43016d31-b514-47d8-b53c-78f688cfe258",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C48",
+      "claim": "FGF14 controls resurgent current in Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that the NaV channel auxiliary subunit FGF14 'b' isoform, a locus for inherited spinocerebellar ataxias, controls resurgent current and repetitive firing in Purkinje neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "ac16f0db-414a-40ac-9531-ccf686d54939",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C49",
+      "claim": "FGF14 controls repetitive firing in Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that the NaV channel auxiliary subunit FGF14 'b' isoform, a locus for inherited spinocerebellar ataxias, controls resurgent current and repetitive firing in Purkinje neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "0d13eb1c-c535-4d9c-931f-bfd9d7472451",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C50",
+      "claim": "FGF14 knockdown decreases channel availability.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 knockdown biased NaV channels towards the inactivated state by decreasing channel availability, diminishing the 'late' NaV current, and accelerating channel inactivation rate, thereby reducing resurgent current and repetitive spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "5d730cd4-6533-4a5d-9b94-06f5cc57cac6",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C51",
+      "claim": "FGF14 knockdown diminishes the 'late' NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 knockdown biased NaV channels towards the inactivated state by decreasing channel availability, diminishing the 'late' NaV current, and accelerating channel inactivation rate, thereby reducing resurgent current and repetitive spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "8778bf6e-4117-4c09-bb6c-cb03b8be34a6",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C52",
+      "claim": "FGF14 knockdown accelerates channel inactivation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 knockdown biased NaV channels towards the inactivated state by decreasing channel availability, diminishing the 'late' NaV current, and accelerating channel inactivation rate, thereby reducing resurgent current and repetitive spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "4a1bf42c-5725-4ed6-be50-6efbbeaf0315",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C53",
+      "claim": "FGF14 knockdown reduces resurgent current.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 knockdown biased NaV channels towards the inactivated state by decreasing channel availability, diminishing the 'late' NaV current, and accelerating channel inactivation rate, thereby reducing resurgent current and repetitive spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "bec46451-c576-4611-b6bc-78a88763ab40",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C54",
+      "claim": "FGF14 knockdown reduces repetitive spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 knockdown biased NaV channels towards the inactivated state by decreasing channel availability, diminishing the 'late' NaV current, and accelerating channel inactivation rate, thereby reducing resurgent current and repetitive spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "27d25ed1-0159-451b-8d1b-1d0fe4502fda",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C55",
+      "claim": "Both the alternatively spliced FGF14b N-terminus and direct interaction between FGF14b and the NaV C-terminus are critical for FGF14's effects on NaV channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Critical for these effects was both the alternatively spliced FGF14b N-terminus and direct interaction between FGF14b and the NaV C-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "344dd337-4b05-4946-9ec9-686e9e150a3a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C56",
+      "claim": "The FGF14b N-terminus is a potent regulator of resurgent NaV current in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the FGF14b N-terminus is a potent regulator of resurgent NaV current in cerebellar Purkinje neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined experimental observations throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "7ccb94f3-1c79-4ee3-b7d0-91efec39fc17",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C57",
+      "claim": "Cerebellar Purkinje neurons provide the sole output from the cerebellar cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebellar Purkinje neurons, which provide the sole output from the cerebellar cortex, display a repetitive firing behavior driven by voltage-gated Na+ channels (NaV channels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established neuroanatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "723d8a96-65f9-47aa-8fcb-bd15dfd83c7f",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C58",
+      "claim": "Cerebellar Purkinje neurons display a repetitive firing behavior driven by voltage-gated Na+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebellar Purkinje neurons, which provide the sole output from the cerebellar cortex, display a repetitive firing behavior driven by voltage-gated Na+ channels (NaV channels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Purkinje neuron physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "4377e180-b534-4086-8590-247812bf1122",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C59",
+      "claim": "Fast repetitive firing in Purkinje neurons is promoted by unusual characteristics associated with NaV channel inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast repetitive firing in Purkinje neurons is promoted by unusual characteristics associated with NaV channel inactivation, whereby channels recover unusually rapidly from inactivation and in doing so pass a 'resurgent' sodium current, which helps drive the cell to fire a subsequent action potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Purkinje neuron physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "6a14e3b1-1a3f-4a3f-9663-bebff7b6b928",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C60",
+      "claim": "NaV channels in Purkinje neurons recover unusually rapidly from inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast repetitive firing in Purkinje neurons is promoted by unusual characteristics associated with NaV channel inactivation, whereby channels recover unusually rapidly from inactivation and in doing so pass a 'resurgent' sodium current, which helps drive the cell to fire a subsequent action potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Purkinje neuron NaV channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "15626f54-a5d4-4837-b440-c237348f54f6",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C61",
+      "claim": "Resurgent sodium current helps drive Purkinje neurons to fire a subsequent action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast repetitive firing in Purkinje neurons is promoted by unusual characteristics associated with NaV channel inactivation, whereby channels recover unusually rapidly from inactivation and in doing so pass a 'resurgent' sodium current, which helps drive the cell to fire a subsequent action potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the function of resurgent current.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "35c1e755-d8e9-4962-b8d9-24a53d7ff305",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C62",
+      "claim": "More than half of the NaV current in Purkinje neurons is carried by NaV1.6.",
+      "claim_type": "EXPLICIT",
+      "source": "First, more than half of the NaV current in Purkinje neurons is carried by NaV1.6, an isoform for which inactivation is less complete compared to other NaV channels (Raman et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "8eb7a1aa-fe9b-4f55-8f98-ed75ce67dbab",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C63",
+      "claim": "NaV1.6 inactivation is less complete compared to other NaV channels.",
+      "claim_type": "EXPLICIT",
+      "source": "First, more than half of the NaV current in Purkinje neurons is carried by NaV1.6, an isoform for which inactivation is less complete compared to other NaV channels (Raman et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "7107e76c-000d-475c-ba11-5ccdda04a52e",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C64",
+      "claim": "Scn8a-encoded NaV1.6 channels have a relatively large 'late' (non-inactivating) component compared to other resident NaV channels in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of NaV currents in cerebellar Purkinje neurons from Scn8a\u2212/\u2212 mice showed that, compared to the other resident NaV channels, the Scn8a-encoded NaV1.6 channels have a relatively large 'late' (non-inactivating) component and NaV1.6 channels have increased availability (depolarized V1/2 for steady-state inactivation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from studies in Scn8a knockout mice.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "77ad20e7-bc49-4289-a269-aae9fb3ec6be",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C65",
+      "claim": "NaV1.6 channels have increased availability (depolarized V1/2 for steady-state inactivation) compared to other resident NaV channels in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of NaV currents in cerebellar Purkinje neurons from Scn8a\u2212/\u2212 mice showed that, compared to the other resident NaV channels, the Scn8a-encoded NaV1.6 channels have a relatively large 'late' (non-inactivating) component and NaV1.6 channels have increased availability (depolarized V1/2 for steady-state inactivation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from studies in Scn8a knockout mice.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "7589d922-f76c-45c5-be97-3191fcf64653",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C66",
+      "claim": "NaV channels in cerebellar Purkinje neurons display an unusual transient re-opening during repolarization, which is identified as 'resurgent' NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, NaV channels in cerebellar Purkinje neurons display an unusual transient re-opening during repolarization, which is identified as 'resurgent' NaV current (Raman and Bean, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "c772a030-7217-441b-bfe4-142a0a86812c",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C67",
+      "claim": "Resurgent current derives from an unblocking of open channels by a peptide moiety that can be eliminated by the intracellular application of trypsin or chymotrypsin proteases into the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "This resurgent current derives from an unblocking of open channels by a peptide moiety that can be eliminated by the intracellular application of trypsin or chymotrypsin proteases into the cytoplasm (Grieco et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "5b0fdf8b-d0f2-431f-affc-8f1b7df2373a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C68",
+      "claim": "The blocking particle acts only on open channels and competes with the inactivation process to prevent channels from entering an absorbed, inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "The blocking particle acts only on open channels and competes with the inactivation process to prevent channels from entering an absorbed, inactivated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the mechanism of resurgent current.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "01396dd8-f55b-445b-a258-74e09159dfe1",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C69",
+      "claim": "During action potential repolarization, unblocking of channels allows Na+ influx that can initiate a subsequent action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "During action potential repolarization, unblocking of these channels then allows Na+ influx that can initiate a subsequent action potential (Khaliq et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "4aa600bc-d0d1-4fb9-a6fd-fe26cd7896cb",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C70",
+      "claim": "The NaV current in Purkinje neurons carried by NaV1.6 is relatively resistant to inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the NaV current in Purkinje neurons carried by NaV1.6 is relatively resistant to inactivation, it is particularly susceptible to open block by the peptide moiety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about NaV1.6 properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "0c36c6a8-4c5f-4899-9173-2774fe0fdf8e",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C71",
+      "claim": "NaV1.6 is particularly susceptible to open block by the peptide moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the NaV current in Purkinje neurons carried by NaV1.6 is relatively resistant to inactivation, it is particularly susceptible to open block by the peptide moiety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the property that NaV1.6 is resistant to inactivation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "4e26de8e-e6ae-4e51-bc9d-29c281f43d38",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C72",
+      "claim": "FGF14 is enriched in cerebellar granule and Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we focused on the role of the ion channel regulator FGF14, which is enriched in cerebellar granule and Purkinje neurons (Wang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "e6dd5bd7-9151-4d58-8d67-cbe576c4538c",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C73",
+      "claim": "FGF14 is one of four fibroblast growth factor homologous factors (FHFs).",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 is one of four fibroblast growth factor homologous factors (FHFs), members of the fibroblast growth factor (FGF) superfamily sharing a FGF-like core but having extended N- and C-termini not found in other FGFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about FHF family members.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "95af23ae-508f-4979-a067-b12e3a7643fc",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C74",
+      "claim": "FHFs are members of the fibroblast growth factor (FGF) superfamily sharing a FGF-like core but having extended N- and C-termini not found in other FGFs.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 is one of four fibroblast growth factor homologous factors (FHFs), members of the fibroblast growth factor (FGF) superfamily sharing a FGF-like core but having extended N- and C-termini not found in other FGFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about FHF structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "3bdd6855-5f67-4592-a96f-96244eb73bb1",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C75",
+      "claim": "Individual FHFs undergo alternative splicing that generates distinct N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual FHFs undergo alternative splicing that generates distinct N-termini, none of which contain a signal sequence (Smallwood et al., 1996; Munoz-Sanjuan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b93c7396-dd16-40a9-8763-661209c4387a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C76",
+      "claim": "FHF N-termini do not contain a signal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual FHFs undergo alternative splicing that generates distinct N-termini, none of which contain a signal sequence (Smallwood et al., 1996; Munoz-Sanjuan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "8ed79cdf-bbcf-4832-9655-ca57d6a239b2",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C77",
+      "claim": "Unlike other FGFs, FHFs are not secreted and do not function as growth factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, unlike other FGFs they are not secreted and do not function as growth factors (Smallwood et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b994bb03-1a04-4360-8f05-3b7f4ee4a3c5",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C78",
+      "claim": "FHFs remain intracellular and modulate various ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, FHFs remain intracellular and modulate various ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about FHF function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "8d32f7a5-3c3a-494e-a5d6-2a65193bb52d",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C79",
+      "claim": "FHFs can bind directly to the cytoplasmic C-terminal domains (CTDs) of NaV channels.",
+      "claim_type": "EXPLICIT",
+      "source": "FHFs can bind directly to the cytoplasmic C-terminal domains (CTDs) of NaV channels (Liu et al., 2001) and regulate NaV channel function (Lou et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "10c8447a-1b7b-49ce-899d-3351505071f2",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C80",
+      "claim": "FHFs regulate NaV channel function.",
+      "claim_type": "EXPLICIT",
+      "source": "FHFs can bind directly to the cytoplasmic C-terminal domains (CTDs) of NaV channels (Liu et al., 2001) and regulate NaV channel function (Lou et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "4261abab-5272-4df8-8be3-84305974ed59",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C81",
+      "claim": "FGF14 is a potent regulator of both NaV1.1 and NaV1.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, FGF14 is a potent regulator of both NaV1.1 and NaV1.6 (Lou et al., 2005; Laezza et al., 2009), the two dominant NaV channels in cerebellar Purkinje neurons (Raman et al., 1997; Kalume et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "38b9275a-fd6a-402b-b039-c13ccec1bd9b",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C82",
+      "claim": "NaV1.1 and NaV1.6 are the two dominant NaV channels in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, FGF14 is a potent regulator of both NaV1.1 and NaV1.6 (Lou et al., 2005; Laezza et al., 2009), the two dominant NaV channels in cerebellar Purkinje neurons (Raman et al., 1997; Kalume et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "49291475-51ea-4fba-86f4-0b6c3d4a5220",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C83",
+      "claim": "FHFs regulate voltage-gated Ca2+ channels through a mechanism that does not appear to involve a direct interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "FHFs also regulate voltage-gated Ca2+ channels through a mechanism that does not appear to involve a direct interaction (Hennessey et al., 2013; Yan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "22aa986e-3f3d-42fc-ba1d-9173a1a3eca4",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C84",
+      "claim": "Fgf14\u2212/\u2212 mice have an ataxia phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "An ataxia phenotype in Fgf14\u2212/\u2212 mice highlights the role of FGF14 in cerebellar physiology and the development of spinocerebellar ataxia type 27 (SCA27) in patients with either FGF14 haploinsufficiency or a dominant negative FGF14 mutation (Wang et al., 2002; van Swieten et al., 2003; Dalski et al., 2005) underscores the role of FGF14 in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "38fd822c-7b76-4d9a-ad14-9dc8c4e85cf7",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C85",
+      "claim": "Spinocerebellar ataxia type 27 (SCA27) develops in patients with either FGF14 haploinsufficiency or a dominant negative FGF14 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "An ataxia phenotype in Fgf14\u2212/\u2212 mice highlights the role of FGF14 in cerebellar physiology and the development of spinocerebellar ataxia type 27 (SCA27) in patients with either FGF14 haploinsufficiency or a dominant negative FGF14 mutation (Wang et al., 2002; van Swieten et al., 2003; Dalski et al., 2005) underscores the role of FGF14 in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "3b6349ae-7f49-4b22-b57d-380006f58a48",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C86",
+      "claim": "The accelerated inactivation, reduced channel availability, and decreased late current observed after FGF14 knockdown bias NaV channels to the inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the accelerated inactivation, reduced channel availability, and decreased late current observed after FGF14 knockdown bias NaV channels to the inactivated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "13097986-18f1-4190-8aef-78c6d9105892",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C87",
+      "claim": "The blocking particle that competes with the inactivation gate for open NaV channels is disadvantaged when channels are biased to the inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the blocking particle that competes with the inactivation gate for open NaV channels is disadvantaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the understanding of resurgent current mechanism and the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "c050b20e-202d-4574-860c-ca80c8a2f883",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C88",
+      "claim": "An essential regulatory feature of FGF14 in cerebellar Purkinje neurons is to slow NaV channel inactivation in order to foster resurgent current.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data show that an essential regulatory feature of FGF14 in cerebellar Purkinje neurons is to slow NaV channel inactivation in order to foster resurgent current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined experimental observations throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "299e31c6-89c8-4c29-8faa-bb1281a0357c",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C89",
+      "claim": "Resurgent current results from the actions on NaV1.6 of a putative blocking particle, which is thought to be the cytoplasmic C-terminal peptide of the NaV auxiliary NaV\u03b24 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Resurgent current results from the actions on NaV1.6 of a putative blocking particle, which is thought to be the cytoplasmic C-terminal peptide of the NaV auxiliary NaV\u03b24 subunit (Grieco et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "fb8aee16-b0c5-4418-b3f0-5b6e7dfcc101",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C90",
+      "claim": "The actions of NaV\u03b24 are not sufficient to generate resurgent NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the actions of NaV\u03b24 are not sufficient to generate resurgent NaV current (Chen et al., 2008; Aman et al., 2009), suggesting that other components of the NaV channel complex may be necessary for proper regulation of resurgent NaV current in cerebellar Purkinje neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "f1d6830f-7785-4d25-9d20-3e7c30467814",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C91",
+      "claim": "Other components of the NaV channel complex may be necessary for proper regulation of resurgent NaV current in cerebellar Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the actions of NaV\u03b24 are not sufficient to generate resurgent NaV current (Chen et al., 2008; Aman et al., 2009), suggesting that other components of the NaV channel complex may be necessary for proper regulation of resurgent NaV current in cerebellar Purkinje neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that NaV\u03b24 alone is not sufficient.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "2cabff10-e4e6-474c-8e14-c3da8389a9c8",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C92",
+      "claim": "FGF14b and specifically its N-terminus strongly influence resurgent NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our knockdown experiments and expression of the dominant negative FGF14b\u0394NT show that FGF14b, and specifically its N-terminus, strongly influence resurgent NaV current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "2451df91-f752-4447-a7cc-c602754503d5",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C93",
+      "claim": "FGF14 knockdown causes a \u223c60% reduction in resurgent current.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF14 knockdown caused a \u223c60% reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "cb34d64d-f3bb-4c76-bd10-3cb074324c0a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C94",
+      "claim": "Expression of FGF14\u0394NT results in a \u223c85% reduction in resurgent current.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of FGF14\u0394NT was even more efficient, resulting in a \u223c85% reduction, perhaps because overexpression of FGF14\u0394NT was more efficient in replacing endogenous FGF14b than shRNA knockdown was in eliminating endogenous FGF14b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "32577910-a3d7-4bbd-af0e-28647e9b00c4",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C95",
+      "claim": "Overexpression of FGF14\u0394NT may be more efficient in replacing endogenous FGF14b than shRNA knockdown is in eliminating endogenous FGF14b.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of FGF14\u0394NT was even more efficient, resulting in a \u223c85% reduction, perhaps because overexpression of FGF14\u0394NT was more efficient in replacing endogenous FGF14b than shRNA knockdown was in eliminating endogenous FGF14b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning to explain the observed difference in reduction efficiency.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "0d3fb68a-9fa4-4875-89b0-ba60e4876a1e",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C96",
+      "claim": "FGF14 may cooperate with NaV\u03b24 to generate resurgent current.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, FGF14 may cooperate with NaV\u03b24 to generate resurgent current, perhaps by biasing NaV1.6 channels towards inactivation and thereby disadvantaging the blocking particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "ce2beceb-dd39-4035-a1a2-48754a0f4e27",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C97",
+      "claim": "FGF14 may bias NaV1.6 channels away from inactivation and thereby advantage the blocking particle.",
+      "claim_type": "IMPLICIT",
+      "source": "Thus, FGF14 may cooperate with NaV\u03b24 to generate resurgent current, perhaps by biasing NaV1.6 channels towards inactivation and thereby disadvantaging the blocking particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that FGF14 knockdown biases channels toward inactivation, implying that FGF14 presence biases away from inactivation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "a9e3ec87-863e-46e0-80a0-f083f55c309b",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C98",
+      "claim": "The effects on resurgent current attributed to FGF14 may result from FGF14's overall influence on NaV channel kinetics within Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the effects on resurgent current that we attribute to FGF14 may result from FGF14's overall influence of NaV channel kinetics within Purkinje neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning acknowledging that effects are on total NaV current from both NaV1.6 and NaV1.1.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "84667ed4-9d95-484e-8414-2661ccc555e6",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C99",
+      "claim": "Spinocerebellar ataxia patients with FGF14 haploinsufficiency have more variable phenotypes and decreased penetrance compared to patients with the FGF14bF150S mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results may also provide some insight into the more variable phenotypes and decreased penetrance in spinocerebellar ataxia patients with FGF14 haploinsufficiency (Dalski et al., 2005; Coebergh et al., 2013) vs patients with a FGF14 mutation (FGF14bF150S) found in a large Dutch spinocerebellar ataxia kindred (van Swieten et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "2d65bafd-2f61-41c6-8b44-7e9d82b7d92a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C100",
+      "claim": "The FGF14bF150S mutant exerts a dominant negative mechanism in which the axon initial segment is depleted of NaV channels and NaV current density is reduced in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in hippocampal neurons suggest that the FGF14bF150S mutant exerts a dominant negative mechanism in which the axon initial segment is depleted of NaV channels and NaV current density is reduced (Laezza et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9aaf9b24-e740-4609-898d-33ede7685193",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C101",
+      "claim": "A reduction in NaV current density (with the FGF14bF150S mutation) compared to an effect solely on NaV channel kinetics (with FGF14 haploinsufficiency) may explain the higher penetrance and decreased phenotypic variability in patients with the FGF14bF150S mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in NaV current density (with the FGF14bF150S mutation) compared to an effect solely on NaV channel kinetics (with FGF14 haploinsufficiency) may explain the higher penetrance and decreased phenotypic variability in patients with the FGF14bF150S mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the experimental observations and clinical data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9a1574b9-04ab-42e4-b709-e38776005c61",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C102",
+      "claim": "Studying FHFs in their native cellular context is crucial for defining their specific roles.",
+      "claim_type": "EXPLICIT",
+      "source": "An important aspect of this study examining effects on NaV channel kinetics was that our analyses were performed in Purkinje neurons. Studying FHFs in their native cellular context appears to be crucial for defining their specific roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of different results in neurons versus heterologous systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "eb9d0d4c-aeef-4562-830d-531f1bcf8b90",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C103",
+      "claim": "Expression of NaV1.6 and FGF14bWT in ND7/23 cells almost eliminates NaV current density.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, expression of NaV1.6 and FGF14bWT in ND7/23 cells almost eliminated NaV current density (Laezza et al., 2009) while overexpression of FGF14bWT in hippocampal neurons increased NaV current density (Laezza et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "783aae3f-9e5b-4411-a369-7576fcd8bca5",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C104",
+      "claim": "Overexpression of FGF14bWT in hippocampal neurons increases NaV current density.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, expression of NaV1.6 and FGF14bWT in ND7/23 cells almost eliminated NaV current density (Laezza et al., 2009) while overexpression of FGF14bWT in hippocampal neurons increased NaV current density (Laezza et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "60c56cc3-25e0-4c4e-aa36-354b5b94349e",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C105",
+      "claim": "Expression of FGF14\u0394NT in ND7/23 cells increases current density.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, expression of FGF14\u0394NT in ND7/23 cells increased current density, while here we observed that FGF14\u0394NT expression in cerebellar Purkinje neurons exerted dominant-negative effects upon NaV channel kinetics, but no consequences for NaV current density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with previous studies in heterologous systems.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "d56499b4-867e-47d3-bd56-4e35fb054c45",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C106",
+      "claim": "Additional regulatory factors present in neurons may be necessary for physiologic regulation of NaV channels by FHFs.",
+      "claim_type": "EXPLICIT",
+      "source": "While the etiology of the different results in neurons compared to heterologous expression systems is not known, we speculate that additional regulatory factors present in neurons are necessary for physiologic regulation of NaV channels by FHFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning to explain differences between neurons and heterologous systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b8664466-affc-44c2-b27a-9a23e167f988",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C107",
+      "claim": "FGF13 co-expression reduces NaV1.5 current density in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we have observed similarly disparate results for the related FGF13 and the cardiac NaV1.5 channel. In HEK293 cells, FGF13 co-expression reduces NaV1.5 current density (not shown), but we showed that the role FGF13 in cardiomyocytes is to increase NaV current density (Wang et al., 2011; Hennessey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on unpublished observations by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "2f5eb59c-a8f8-44bd-a226-b5af6a7aef77",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C108",
+      "claim": "The role of FGF13 in cardiomyocytes is to increase NaV current density.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we have observed similarly disparate results for the related FGF13 and the cardiac NaV1.5 channel. In HEK293 cells, FGF13 co-expression reduces NaV1.5 current density (not shown), but we showed that the role FGF13 in cardiomyocytes is to increase NaV current density (Wang et al., 2011; Hennessey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "d116cd51-a40b-44bd-b605-a87689c6aac5",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C109",
+      "claim": "Some patients with spinocerebellar ataxia, but not controls, harbor synonymous variants in FGF14.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our data also provide information about possible consequences of FGF14 overexpression, hypothesized as pathologic in rare cases. Some patients with spinocerebellar ataxia, but not controls, harbor synonymous variants in FGF14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established clinical observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "d6e53196-8ad4-438e-8921-d939bd4abc9a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C110",
+      "claim": "Synonymous variants in FGF14 found in some spinocerebellar ataxia patients encode a more frequently used codon than the wild type sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "These variants encode a more frequently used codon than the wild type sequence, leading to the hypothesis that patients with these variants would overexpress FGF14 as a cause of disease (Dalski et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "49c836fe-efd6-4379-b73f-de42a2377304",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C111",
+      "claim": "It has been hypothesized that patients with synonymous FGF14 variants would overexpress FGF14 as a cause of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These variants encode a more frequently used codon than the wild type sequence, leading to the hypothesis that patients with these variants would overexpress FGF14 as a cause of disease (Dalski et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study presenting this hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "80079706-cd95-4bff-bad5-9b5c81f44fd9",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C112",
+      "claim": "If synonymous FGF14 variants identified in spinocerebellar ataxia patients are truly associated with disease, mechanisms other than FGF14 overexpression are suggested.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if these variants identified in spinocerebellar ataxia patients are truly associated with disease, our data suggest mechanisms other than FGF14 overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that FGF14bWT overexpression has no effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "7cc70174-b667-4642-a7f7-956a1c0720d4",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C113",
+      "claim": "FGF14 is a critical regulator of the ability of cerebellar Purkinje neuron NaV channels to support resurgent NaV current.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these data add to a growing appreciation of physiologic and pathophysiologic roles for FHFs in neurons. In the case of spinocerebellar ataxia, our data suggest that FGF14 is a critical regulator of the ability of cerebellar Purkinje neuron NaV channels to support resurgent NaV current and thereby allow Purkinje neurons to fire repetitively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "870944ef-ae95-4902-92b7-74ad1b4a9b61",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C114",
+      "claim": "FGF14 allows Purkinje neurons to fire repetitively.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these data add to a growing appreciation of physiologic and pathophysiologic roles for FHFs in neurons. In the case of spinocerebellar ataxia, our data suggest that FGF14 is a critical regulator of the ability of cerebellar Purkinje neuron NaV channels to support resurgent NaV current and thereby allow Purkinje neurons to fire repetitively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9112e1aa-50ab-4622-b411-38bbce7973fe",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C115",
+      "claim": "The study provides a molecular understanding for the observation that FGF14 regulates Purkinje neuron intrinsic excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we provide a molecular understanding for the observation that FGF14 regulates Purkinje neuron intrinsic excitability (Shakkottai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined experimental observations and cites a previous study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9fc1fbba-6a6b-46da-adc8-217ba1ef5b52",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C116",
+      "claim": "FGF14 regulates presynaptic voltage-gated Ca2+ channels at the cerebellar granule cell to Purkinje cell synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with our data showing that FGF14 also regulates presynaptic voltage-gated Ca2+ channels at the cerebellar granule cell to Purkinje cell synapse, these data pinpoint several specific mechanisms by which mutations in FGF14 underlie spinocerebellar ataxia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "6eba499c-6275-4938-8ee5-e1c5a6add7b4",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C117",
+      "claim": "The data pinpoint several specific mechanisms by which mutations in FGF14 underlie spinocerebellar ataxia.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with our data showing that FGF14 also regulates presynaptic voltage-gated Ca2+ channels at the cerebellar granule cell to Purkinje cell synapse, these data pinpoint several specific mechanisms by which mutations in FGF14 underlie spinocerebellar ataxia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined experimental observations in this and previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "6eec9f0f-601a-48c2-81c2-bd64a2c22b1c",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C118",
+      "claim": "8\u201310% of cerebellar Purkinje neurons cultured for \u226414 days in vitro exhibit spontaneous action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our culture conditions (\u226414 days in vitro), we found that 8\u201310% of cerebellar Purkinje neurons exhibit spontaneous action potentials (firing rate 5\u201320 Hz) with regular and irregular patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "49738a8c-6202-4cc0-8dcb-6a5396d0cffe",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C119",
+      "claim": "Spontaneous action potentials in cultured Purkinje neurons (\u226414 days in vitro) have a firing rate of 5\u201320 Hz with regular and irregular patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our culture conditions (\u226414 days in vitro), we found that 8\u201310% of cerebellar Purkinje neurons exhibit spontaneous action potentials (firing rate 5\u201320 Hz) with regular and irregular patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "6d693261-5a64-467e-83c2-9d971fa8f138",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C120",
+      "claim": "\u223c50% of Purkinje neurons cultured for >20 days in vitro spontaneously fire.",
+      "claim_type": "EXPLICIT",
+      "source": "When neurons were cultured for extended periods (>20 days in vitro), we observed that \u223c50% of Purkinje neurons spontaneously fired\u2014more similar to acutely isolated Purkinje neurons (Raman and Bean, 1999) and cultured Purkinje neurons (Gruol and Franklin, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "a33e0216-23e5-4f00-b608-fffaf84b134b",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "claim_id": "C121",
+      "claim": "Spontaneous activity in cultured Purkinje neurons depends upon the maturity of the neurons in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that spontaneous activity depends upon the maturity of the neurons in culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that older cultures have more spontaneously firing neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "336daddc-03d1-4cb7-8a6f-cdfd8cd8bafd",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FGF14 co-immunoprecipitates with NaV1.6 channels in mouse cerebellar lysates, demonstrating their interaction in native brain tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is supported by experimental co-immunoprecipitation data shown in Figure 1A from mouse cerebellum. This extends previous heterologous expression system findings to native tissue, providing strong evidence for the interaction in physiological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "faf7353b-06a4-466a-9d03-1ff4dbd106c2",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FGF14 knockdown or manipulation does not affect NaV current density or voltage dependence of activation in cerebellar Purkinje neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C16, C17, C23, and C29 consistently demonstrate through multiple experimental conditions (shRNA knockdown, FGF14\u0394NT expression, FGF14bWT overexpression, FGF14bR/A expression) that current density and activation parameters remain unchanged. The data from Figures 1B, 2A, 3B-C, 4C and Table 1 provide robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "bfafee2d-ac1e-467d-9bba-f9bd0a328c36",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FGF14 knockdown or N-terminus deletion shifts the V1/2 of steady-state inactivation by approximately \u221210 mV, decreasing channel availability, and this effect is rescued by co-expression of FGF14bWT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, and C18 are well-supported by experimental data in Figures 2B, 3C and Table 1. The consistent ~\u221210 mV shift across different manipulations (shRNA knockdown and FGF14\u0394NT) and successful rescue with FGF14bWT provides strong evidence for this specific regulatory effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "8fc2636d-dd3b-4427-a864-02e028eab921",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FGF14 knockdown or N-terminus deletion accelerates NaV channel inactivation kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C19, C31, and C52 are supported by experimental data shown in Figures 2C-D, 3D, and 4D-F. The consistent acceleration of inactivation kinetics across multiple experimental conditions and the failure of FGF14bR/A to rescue this effect strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b0872e3b-c7e2-4fcf-ae62-e2a7cdf42ec5",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FGF14 knockdown or N-terminus deletion reduces the late NaV current.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C20, C30, and C51 are supported by experimental data in Figures 2E-F, 3E, and 4D-F. The reduction in late current is consistently observed across different manipulations and the failure of FGF14bR/A to rescue this effect provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "1c95d2a6-b026-46a4-8203-5a403815fd63",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FGF14 knockdown biases endogenous NaV channels towards entering the inactivated state through multiple kinetic mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C50, and C86 represent integrative conclusions drawn from multiple experimental observations (C4, C6, C7). The inference that these combined effects bias channels toward inactivation is logically sound and well-supported by the data showing decreased availability, accelerated inactivation, and reduced late current.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FGF14 knockdown markedly diminishes resurgent NaV current amplitude (~60% reduction), with FGF14\u0394NT being even more effective (~85% reduction), while time to peak is unaffected. Co-expression of FGF14bWT provides complete rescue, but FGF14bR/A does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11, C21-C22, C32, C53, C93-C94 are well-supported by experimental data in Figures 2G-K, 3F, and 4G-H. The quantitative measurements of resurgent current reduction, the differential effects of various constructs, and the rescue experiments provide strong converging evidence. The use of an established protocol (Raman and Bean, 1997) adds methodological rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "15455ecb-8205-4596-8f58-767867391b41",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FGF14b is the predominant FGF14 splice variant expressed in brain and is found in the cytoplasm, while FGF14a is localized to the nucleus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C13 are supported by citations to previous studies (Wang et al., 2000, 2011). While these are not new findings from this manuscript, they provide important context for the experimental design focusing on FGF14b.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9728bd2f-0e16-4da7-82d6-413d088e3067",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Deletion of the FGF14 N-terminus does not affect interaction with the NaV CTD, allowing FGF14\u0394NT to exert a dominant negative effect by competing with endogenous FGF14.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C15 are supported by citation to structural data (Wang et al., 2012) showing the interaction site is in the core domain, and by the experimental design and results shown in Figure 3A. The dominant negative mechanism is a reasonable inference from the structural knowledge and experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "3826a8f1-6f3f-4d24-bf4e-a58037d7909c",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Endogenous FGF14b is saturating in cerebellar Purkinje neurons, and FGF14b's main regulatory component for NaV currents lies within the N-terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C25 are inferred from the observation that FGF14bWT overexpression has no effect (C23) while FGF14\u0394NT has strong dominant negative effects. This is a reasonable inference, though it assumes no other limiting factors. The conclusion about the N-terminus being the main regulatory component is well-supported by the dominant negative experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "6f401afb-f138-417e-a727-274011ac7f2b",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Arg117 in FGF14b (equivalent to Arg57 in FGF13) is critical for interaction with NaV1.6, as demonstrated by the inability of the FGF14bR/A mutant to co-immunoprecipitate NaV1.6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by structural data from a cited study (Figure 4A) and experimental co-immunoprecipitation data (Figure 4B). The rational design of the mutation based on structural information and the clear loss of interaction in the co-IP experiment provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "71eeedac-9f0e-42f6-bc3d-72a7b652f0d9",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The FGF14 N-terminus must exert its key effects through FGF14's direct interaction with the NaV C-terminus, as both the N-terminus and direct binding are critical for FGF14's effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C55 are well-supported by the combined results from the FGF14\u0394NT experiments (showing N-terminus importance) and FGF14bR/A experiments (showing binding requirement). The failure of FGF14bR/A to rescue any of the kinetic parameters altered by FGF14 knockdown provides strong evidence that direct binding is necessary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "b440f1f7-6453-4ff9-a18a-fcd5fa25ca16",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FGF14 knockdown and FGF14\u0394NT expression markedly increase the current threshold to produce action potentials in cerebellar Purkinje neurons without affecting other action potential parameters. FGF14bWT but not FGF14bR/A rescues this effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by experimental data in Figure 5A-B and Table 2. The specific effect on current threshold without affecting other AP parameters, and the differential rescue by FGF14bWT vs FGF14bR/A, provide strong evidence for a specific functional consequence of FGF14 regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "5c962824-99fd-480e-8dc8-9d74545427ba",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "FGF14 knockdown and FGF14\u0394NT expression significantly reduce the number of evoked action potentials during prolonged current injection. FGF14bWT but not FGF14bR/A rescues this effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C54 are supported by experimental data in Figure 5C-D. The consistent reduction in repetitive firing across different manipulations and the differential rescue effects provide strong evidence for FGF14's role in supporting repetitive firing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FGF14b, and specifically its N-terminus, is a critical regulator of resurgent NaV current, neuronal firing, and intrinsic membrane properties in cerebellar Purkinje neurons, with an essential regulatory feature being to slow NaV channel inactivation to foster resurgent current.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C48-C49, C56, C88, C92, C113-C114 represent the main conclusions of the study, integrating findings from all experimental approaches. These conclusions are well-supported by the comprehensive data on channel kinetics, resurgent current, and neuronal excitability. The mechanistic insight about slowing inactivation is a reasonable inference from the combined observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "dec21af5-8aa1-475f-a211-8b760330ea4d",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The blocking particle that generates resurgent current is disadvantaged when channels are biased to the inactivated state, implying that FGF14 presence biases channels away from inactivation to advantage the blocking particle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87 and C97 represent mechanistic inferences about how FGF14 affects resurgent current generation. These are reasonable inferences based on the established mechanism of resurgent current (blocking particle competing with inactivation) and the experimental observations showing that FGF14 knockdown biases channels toward inactivation and reduces resurgent current.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "208f6792-f603-44b0-9232-02ffff865e7f",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "FGF14\u0394NT may be more efficient than shRNA in replacing endogenous FGF14b, FGF14 may cooperate with NaV\u03b24 to generate resurgent current, and effects on resurgent current may result from FGF14's overall influence on NaV channel kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95, C96, and C98 are explicitly speculative (\"perhaps,\" \"may\") and represent possible explanations for observations rather than demonstrated findings. While these are reasonable hypotheses, they lack direct experimental support and would require additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "f6f18bc6-720a-4b87-9837-f6640e18849f",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Differences in phenotypic variability and penetrance between FGF14 haploinsufficiency and FGF14bF150S mutation in spinocerebellar ataxia patients may be explained by differential effects on current density versus channel kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C101 attempt to explain clinical observations based on the current findings. While C99 is supported by citations to clinical studies, C100 is based on a single citation about hippocampal neurons, and C101 is speculative (\"may explain\"). The extrapolation from Purkinje neurons to clinical phenotypes requires caution, as the FGF14bF150S mutation was not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "a4643638-65c6-4550-a58a-dcff1a4cd0bc",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Studying FHFs in their native cellular context is crucial for defining their specific roles, as heterologous expression systems produce different results than neurons, possibly due to additional regulatory factors present in neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C106 are supported by citations to previous studies showing disparate results in heterologous systems versus neurons. The inference that native context is important is reasonable, though the speculation about additional regulatory factors (C106) lacks direct evidence. This represents an important methodological consideration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "9f3110fd-e6e0-4997-ac05-6dba2edaa3fd",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "FGF13 shows similar context-dependent effects, reducing NaV1.5 current density in HEK293 cells but increasing it in cardiomyocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C107 is based on unpublished observations (\"not shown\"), which cannot be evaluated. Claim C108 is supported by citations. While this parallel example supports the general principle of context-dependence, the lack of published data for the HEK293 cell observation weakens the comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "0b96d0dd-0184-44dc-8df6-3bebd08a588b",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "If synonymous FGF14 variants found in some spinocerebellar ataxia patients are truly disease-associated, mechanisms other than FGF14 overexpression are suggested, as FGF14bWT overexpression has no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C111 are supported by citations to clinical and genetic studies. Claim C112 is a reasonable inference from the observation that FGF14bWT overexpression has no effect (C23). However, the conditional nature (\"if... truly associated\") and the limitation that synonymous variants might affect other properties (RNA stability, splicing) beyond protein levels should be noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "5c9d238b-911f-4b8f-bd15-ef0ee1b2713a",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The study provides molecular understanding for FGF14's regulation of Purkinje neuron intrinsic excitability and, combined with effects on presynaptic Ca2+ channels, pinpoints mechanisms underlying spinocerebellar ataxia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115 and C117 are reasonable integrative conclusions supported by the comprehensive experimental data. Claim C116 references previous work by the authors on Ca2+ channel regulation. The combination of postsynaptic (current study) and presynaptic (previous work) mechanisms provides a more complete picture of FGF14's role in cerebellar function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "72635599-64f8-4a00-a056-04d566d00a60",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Spontaneous firing activity in cultured cerebellar Purkinje neurons depends on neuronal maturity, with 8-10% of neurons firing at \u226414 days in vitro and ~50% firing at >20 days in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C121 are supported by experimental observations and citations to previous studies. This provides important context for the experimental design choice to use younger neurons for voltage-clamp experiments. The inference about maturity-dependence (C121) is reasonable based on the temporal correlation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    },
+    {
+      "id": "d446f282-43bc-4015-a949-68e335b73530",
+      "content_id": "e7f01bbb-a1fd-45ed-934a-fd20f4bc4c2b",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Background knowledge claims about Purkinje neuron physiology, NaV channels, resurgent current mechanisms, FHF family characteristics, and disease associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C44-C46, C57-C85, C89-C91) represent established knowledge from the literature, supported by appropriate citations. They provide essential context for understanding the experimental work but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:31:05.166695Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7934cb1b-e178-4f59-ae37-2662d47b813b",
+      "result_id": "336daddc-03d1-4cb7-8a6f-cdfd8cd8bafd"
+    },
+    {
+      "claim_id": "dbea8235-0e37-4158-8135-a9f034fa2e48",
+      "result_id": "faf7353b-06a4-466a-9d03-1ff4dbd106c2"
+    },
+    {
+      "claim_id": "ded04efd-8da1-4f4d-b42f-2efcd1a92dcb",
+      "result_id": "faf7353b-06a4-466a-9d03-1ff4dbd106c2"
+    },
+    {
+      "claim_id": "9d91f461-9850-4a4f-873c-93f2f98e835f",
+      "result_id": "faf7353b-06a4-466a-9d03-1ff4dbd106c2"
+    },
+    {
+      "claim_id": "4b705a0e-38c7-4c96-a5bf-ae7bb053a7b6",
+      "result_id": "faf7353b-06a4-466a-9d03-1ff4dbd106c2"
+    },
+    {
+      "claim_id": "e8046bb5-5e60-494f-8394-4e4e88c56114",
+      "result_id": "faf7353b-06a4-466a-9d03-1ff4dbd106c2"
+    },
+    {
+      "claim_id": "9614095f-bac7-4dcf-addd-703c0a7362b6",
+      "result_id": "faf7353b-06a4-466a-9d03-1ff4dbd106c2"
+    },
+    {
+      "claim_id": "59317ca0-fffa-41ee-8f6d-7df87b7bc2b0",
+      "result_id": "bfafee2d-ac1e-467d-9bba-f9bd0a328c36"
+    },
+    {
+      "claim_id": "58a881a1-08df-4f95-b918-8b0c6337e895",
+      "result_id": "bfafee2d-ac1e-467d-9bba-f9bd0a328c36"
+    },
+    {
+      "claim_id": "b1897464-a421-4b65-98f8-4af0b42434ec",
+      "result_id": "bfafee2d-ac1e-467d-9bba-f9bd0a328c36"
+    },
+    {
+      "claim_id": "7664d70e-d1b4-4799-9dce-e5de10a84f67",
+      "result_id": "8fc2636d-dd3b-4427-a864-02e028eab921"
+    },
+    {
+      "claim_id": "66fc5b7f-ab6b-47a0-8d5a-d7ebc208e9f6",
+      "result_id": "8fc2636d-dd3b-4427-a864-02e028eab921"
+    },
+    {
+      "claim_id": "d82b6f3c-653f-4dbf-bb42-25eeed472ddf",
+      "result_id": "8fc2636d-dd3b-4427-a864-02e028eab921"
+    },
+    {
+      "claim_id": "8778bf6e-4117-4c09-bb6c-cb03b8be34a6",
+      "result_id": "8fc2636d-dd3b-4427-a864-02e028eab921"
+    },
+    {
+      "claim_id": "3171c474-207e-4e37-a865-0b32111b276a",
+      "result_id": "b0872e3b-c7e2-4fcf-ae62-e2a7cdf42ec5"
+    },
+    {
+      "claim_id": "967e1195-f66e-4a0d-85aa-486dff54b597",
+      "result_id": "b0872e3b-c7e2-4fcf-ae62-e2a7cdf42ec5"
+    },
+    {
+      "claim_id": "7702d92c-2d7f-4127-94ea-f118f0dd18dd",
+      "result_id": "b0872e3b-c7e2-4fcf-ae62-e2a7cdf42ec5"
+    },
+    {
+      "claim_id": "5d730cd4-6533-4a5d-9b94-06f5cc57cac6",
+      "result_id": "b0872e3b-c7e2-4fcf-ae62-e2a7cdf42ec5"
+    },
+    {
+      "claim_id": "26623a5d-5b6b-4a94-83be-df5e268f6bfe",
+      "result_id": "1c95d2a6-b026-46a4-8203-5a403815fd63"
+    },
+    {
+      "claim_id": "0d13eb1c-c535-4d9c-931f-bfd9d7472451",
+      "result_id": "1c95d2a6-b026-46a4-8203-5a403815fd63"
+    },
+    {
+      "claim_id": "3b6349ae-7f49-4b22-b57d-380006f58a48",
+      "result_id": "1c95d2a6-b026-46a4-8203-5a403815fd63"
+    },
+    {
+      "claim_id": "8a6b2e63-32b7-477f-a33f-c82da23580ad",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "b5f87ff6-e934-470f-be94-91876ce57118",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "b0787fc6-a44b-4f83-9174-5ea0f71c2047",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "a0dba221-ac66-4fd4-a4ad-5bb5a4d6012c",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "23484853-4de7-497d-9963-a8ecc30fa983",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "7f71edd4-e726-4b81-8e55-ae9073c62d69",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "4a1bf42c-5725-4ed6-be50-6efbbeaf0315",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "2451df91-f752-4447-a7cc-c602754503d5",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "cb34d64d-f3bb-4c76-bd10-3cb074324c0a",
+      "result_id": "22c5dcf0-c2d5-4e88-bdad-11bf67888877"
+    },
+    {
+      "claim_id": "04614749-8504-4e38-ab88-ecb0a09c20da",
+      "result_id": "15455ecb-8205-4596-8f58-767867391b41"
+    },
+    {
+      "claim_id": "0cc1386d-b4b6-4a62-a22a-4c4c274b441e",
+      "result_id": "15455ecb-8205-4596-8f58-767867391b41"
+    },
+    {
+      "claim_id": "3f75ed99-5437-4e6b-8cb4-8aa60fe516f1",
+      "result_id": "9728bd2f-0e16-4da7-82d6-413d088e3067"
+    },
+    {
+      "claim_id": "b716d1fc-c9d8-4a6b-8ca0-c9a17f07a59d",
+      "result_id": "9728bd2f-0e16-4da7-82d6-413d088e3067"
+    },
+    {
+      "claim_id": "6b4c2595-e67a-4c25-bf7a-54c109634ad4",
+      "result_id": "3826a8f1-6f3f-4d24-bf4e-a58037d7909c"
+    },
+    {
+      "claim_id": "1d5e4cf4-b91c-4820-9f93-ba72eb67c265",
+      "result_id": "3826a8f1-6f3f-4d24-bf4e-a58037d7909c"
+    },
+    {
+      "claim_id": "e9d6871f-45fc-4d4e-ba4e-04a844b8dc42",
+      "result_id": "6f401afb-f138-417e-a727-274011ac7f2b"
+    },
+    {
+      "claim_id": "4dfbe421-56bf-4752-8699-6514bbc8e34a",
+      "result_id": "6f401afb-f138-417e-a727-274011ac7f2b"
+    },
+    {
+      "claim_id": "8f17337f-c87c-4c10-bbf6-4ca46a8174d2",
+      "result_id": "6f401afb-f138-417e-a727-274011ac7f2b"
+    },
+    {
+      "claim_id": "2c564e55-639a-49ff-a7fa-f644404e54be",
+      "result_id": "71eeedac-9f0e-42f6-bc3d-72a7b652f0d9"
+    },
+    {
+      "claim_id": "27d25ed1-0159-451b-8d1b-1d0fe4502fda",
+      "result_id": "71eeedac-9f0e-42f6-bc3d-72a7b652f0d9"
+    },
+    {
+      "claim_id": "7a529b80-7b9a-400b-9472-46d81b6c4171",
+      "result_id": "b440f1f7-6453-4ff9-a18a-fcd5fa25ca16"
+    },
+    {
+      "claim_id": "9119a585-acb7-432d-a1ad-50ca9fd4df4e",
+      "result_id": "b440f1f7-6453-4ff9-a18a-fcd5fa25ca16"
+    },
+    {
+      "claim_id": "d5ccb5be-500a-40e7-a0c1-f06b9dac349b",
+      "result_id": "b440f1f7-6453-4ff9-a18a-fcd5fa25ca16"
+    },
+    {
+      "claim_id": "cf7a1c75-aa87-42b2-ba58-ed45c45d6119",
+      "result_id": "b440f1f7-6453-4ff9-a18a-fcd5fa25ca16"
+    },
+    {
+      "claim_id": "3e70bf7c-7c0f-464a-9fc9-d70523688655",
+      "result_id": "b440f1f7-6453-4ff9-a18a-fcd5fa25ca16"
+    },
+    {
+      "claim_id": "c291b444-cb53-41bf-84a9-2be06db293ec",
+      "result_id": "5c962824-99fd-480e-8dc8-9d74545427ba"
+    },
+    {
+      "claim_id": "6c8a1396-6b85-4c3b-a722-8f9c4f97708e",
+      "result_id": "5c962824-99fd-480e-8dc8-9d74545427ba"
+    },
+    {
+      "claim_id": "74733b83-3550-47cf-99be-e2b05043c354",
+      "result_id": "5c962824-99fd-480e-8dc8-9d74545427ba"
+    },
+    {
+      "claim_id": "05fc11bb-d554-490d-bcdd-44a0696deeb6",
+      "result_id": "5c962824-99fd-480e-8dc8-9d74545427ba"
+    },
+    {
+      "claim_id": "bec46451-c576-4611-b6bc-78a88763ab40",
+      "result_id": "5c962824-99fd-480e-8dc8-9d74545427ba"
+    },
+    {
+      "claim_id": "5a55730f-ec3b-4f0a-b715-b00144743186",
+      "result_id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49"
+    },
+    {
+      "claim_id": "43016d31-b514-47d8-b53c-78f688cfe258",
+      "result_id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49"
+    },
+    {
+      "claim_id": "ac16f0db-414a-40ac-9531-ccf686d54939",
+      "result_id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49"
+    },
+    {
+      "claim_id": "344dd337-4b05-4946-9ec9-686e9e150a3a",
+      "result_id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49"
+    },
+    {
+      "claim_id": "c050b20e-202d-4574-860c-ca80c8a2f883",
+      "result_id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49"
+    },
+    {
+      "claim_id": "2cabff10-e4e6-474c-8e14-c3da8389a9c8",
+      "result_id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49"
+    },
+    {
+      "claim_id": "7cc70174-b667-4642-a7f7-956a1c0720d4",
+      "result_id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49"
+    },
+    {
+      "claim_id": "870944ef-ae95-4902-92b7-74ad1b4a9b61",
+      "result_id": "5d70bf83-3654-45ff-a8c4-5aa81e851a49"
+    },
+    {
+      "claim_id": "13097986-18f1-4190-8aef-78c6d9105892",
+      "result_id": "dec21af5-8aa1-475f-a211-8b760330ea4d"
+    },
+    {
+      "claim_id": "ce2beceb-dd39-4035-a1a2-48754a0f4e27",
+      "result_id": "dec21af5-8aa1-475f-a211-8b760330ea4d"
+    },
+    {
+      "claim_id": "32577910-a3d7-4bbd-af0e-28647e9b00c4",
+      "result_id": "208f6792-f603-44b0-9232-02ffff865e7f"
+    },
+    {
+      "claim_id": "0d3fb68a-9fa4-4875-89b0-ba60e4876a1e",
+      "result_id": "208f6792-f603-44b0-9232-02ffff865e7f"
+    },
+    {
+      "claim_id": "a9e3ec87-863e-46e0-80a0-f083f55c309b",
+      "result_id": "208f6792-f603-44b0-9232-02ffff865e7f"
+    },
+    {
+      "claim_id": "84667ed4-9d95-484e-8414-2661ccc555e6",
+      "result_id": "f6f18bc6-720a-4b87-9837-f6640e18849f"
+    },
+    {
+      "claim_id": "2d65bafd-2f61-41c6-8b44-7e9d82b7d92a",
+      "result_id": "f6f18bc6-720a-4b87-9837-f6640e18849f"
+    },
+    {
+      "claim_id": "9aaf9b24-e740-4609-898d-33ede7685193",
+      "result_id": "f6f18bc6-720a-4b87-9837-f6640e18849f"
+    },
+    {
+      "claim_id": "9a1574b9-04ab-42e4-b709-e38776005c61",
+      "result_id": "a4643638-65c6-4550-a58a-dcff1a4cd0bc"
+    },
+    {
+      "claim_id": "eb9d0d4c-aeef-4562-830d-531f1bcf8b90",
+      "result_id": "a4643638-65c6-4550-a58a-dcff1a4cd0bc"
+    },
+    {
+      "claim_id": "783aae3f-9e5b-4411-a369-7576fcd8bca5",
+      "result_id": "a4643638-65c6-4550-a58a-dcff1a4cd0bc"
+    },
+    {
+      "claim_id": "60c56cc3-25e0-4c4e-aa36-354b5b94349e",
+      "result_id": "a4643638-65c6-4550-a58a-dcff1a4cd0bc"
+    },
+    {
+      "claim_id": "d56499b4-867e-47d3-bd56-4e35fb054c45",
+      "result_id": "a4643638-65c6-4550-a58a-dcff1a4cd0bc"
+    },
+    {
+      "claim_id": "b8664466-affc-44c2-b27a-9a23e167f988",
+      "result_id": "9f3110fd-e6e0-4997-ac05-6dba2edaa3fd"
+    },
+    {
+      "claim_id": "2f5eb59c-a8f8-44bd-a226-b5af6a7aef77",
+      "result_id": "9f3110fd-e6e0-4997-ac05-6dba2edaa3fd"
+    },
+    {
+      "claim_id": "d116cd51-a40b-44bd-b605-a87689c6aac5",
+      "result_id": "0b96d0dd-0184-44dc-8df6-3bebd08a588b"
+    },
+    {
+      "claim_id": "d6e53196-8ad4-438e-8921-d939bd4abc9a",
+      "result_id": "0b96d0dd-0184-44dc-8df6-3bebd08a588b"
+    },
+    {
+      "claim_id": "49c836fe-efd6-4379-b73f-de42a2377304",
+      "result_id": "0b96d0dd-0184-44dc-8df6-3bebd08a588b"
+    },
+    {
+      "claim_id": "80079706-cd95-4bff-bad5-9b5c81f44fd9",
+      "result_id": "0b96d0dd-0184-44dc-8df6-3bebd08a588b"
+    },
+    {
+      "claim_id": "9112e1aa-50ab-4622-b411-38bbce7973fe",
+      "result_id": "5c9d238b-911f-4b8f-bd15-ef0ee1b2713a"
+    },
+    {
+      "claim_id": "9fc1fbba-6a6b-46da-adc8-217ba1ef5b52",
+      "result_id": "5c9d238b-911f-4b8f-bd15-ef0ee1b2713a"
+    },
+    {
+      "claim_id": "6eba499c-6275-4938-8ee5-e1c5a6add7b4",
+      "result_id": "5c9d238b-911f-4b8f-bd15-ef0ee1b2713a"
+    },
+    {
+      "claim_id": "6eec9f0f-601a-48c2-81c2-bd64a2c22b1c",
+      "result_id": "72635599-64f8-4a00-a056-04d566d00a60"
+    },
+    {
+      "claim_id": "49738a8c-6202-4cc0-8dcb-6a5396d0cffe",
+      "result_id": "72635599-64f8-4a00-a056-04d566d00a60"
+    },
+    {
+      "claim_id": "6d693261-5a64-467e-83c2-9d971fa8f138",
+      "result_id": "72635599-64f8-4a00-a056-04d566d00a60"
+    },
+    {
+      "claim_id": "a33e0216-23e5-4f00-b608-fffaf84b134b",
+      "result_id": "72635599-64f8-4a00-a056-04d566d00a60"
+    },
+    {
+      "claim_id": "9a87b3a4-f8bb-4efe-a164-7054900096b8",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "65a84907-d3d0-40b5-adb8-7154d6a43866",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "3d2ee38b-35c3-4eec-8e2a-c5c27b0c03ba",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "7ccb94f3-1c79-4ee3-b7d0-91efec39fc17",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "723d8a96-65f9-47aa-8fcb-bd15dfd83c7f",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "4377e180-b534-4086-8590-247812bf1122",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "6a14e3b1-1a3f-4a3f-9663-bebff7b6b928",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "15626f54-a5d4-4837-b440-c237348f54f6",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "35c1e755-d8e9-4962-b8d9-24a53d7ff305",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "8eb7a1aa-fe9b-4f55-8f98-ed75ce67dbab",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "7107e76c-000d-475c-ba11-5ccdda04a52e",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "77ad20e7-bc49-4289-a269-aae9fb3ec6be",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "7589d922-f76c-45c5-be97-3191fcf64653",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "c772a030-7217-441b-bfe4-142a0a86812c",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "5b0fdf8b-d0f2-431f-affc-8f1b7df2373a",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "01396dd8-f55b-445b-a258-74e09159dfe1",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "4aa600bc-d0d1-4fb9-a6fd-fe26cd7896cb",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "0c36c6a8-4c5f-4899-9173-2774fe0fdf8e",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "4e26de8e-e6ae-4e51-bc9d-29c281f43d38",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "e6dd5bd7-9151-4d58-8d67-cbe576c4538c",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "95af23ae-508f-4979-a067-b12e3a7643fc",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "3bdd6855-5f67-4592-a96f-96244eb73bb1",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "b93c7396-dd16-40a9-8763-661209c4387a",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "8ed79cdf-bbcf-4832-9655-ca57d6a239b2",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "b994bb03-1a04-4360-8f05-3b7f4ee4a3c5",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "8d32f7a5-3c3a-494e-a5d6-2a65193bb52d",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "10c8447a-1b7b-49ce-899d-3351505071f2",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "4261abab-5272-4df8-8be3-84305974ed59",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "38b9275a-fd6a-402b-b039-c13ccec1bd9b",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "49291475-51ea-4fba-86f4-0b6c3d4a5220",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "22aa986e-3f3d-42fc-ba1d-9173a1a3eca4",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "38fd822c-7b76-4d9a-ad14-9dc8c4e85cf7",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "299e31c6-89c8-4c29-8faa-bb1281a0357c",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "fb8aee16-b0c5-4418-b3f0-5b6e7dfcc101",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    },
+    {
+      "claim_id": "f1d6830f-7785-4d25-9d20-3e7c30467814",
+      "result_id": "d446f282-43bc-4015-a949-68e335b73530"
+    }
+  ],
+  "comparisons": []
+}

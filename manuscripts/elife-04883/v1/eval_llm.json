@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Hausp is identified as a novel Cry1-interacting protein that preferentially binds Cry1 over Cry2 through the divergent Cry1 C-terminus. Mass spectrometry identified Hausp as the most enriched protein in Cry1 complexes, and co-immunoprecipitation experiments confirmed this specific interaction, demonstrating that the Cry1 C-terminus is both necessary and sufficient for strong Hausp binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from mass spectrometry (C1), endogenous co-IP (C2), comparative binding studies (C3), and domain mapping experiments (C4). The data consistently demonstrate Hausp as a specific Cry1-interacting partner with the C-terminus mediating this interaction. The experimental approaches are complementary and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Hausp expression shows no circadian rhythm or tissue specificity, but the Hausp-Cry1 interaction is compartmentalized, occurring preferentially in the nucleus despite both proteins being more abundant in the cytoplasm. This nuclear-enriched interaction is independent of circadian phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by qPCR, immunoblot, and fractionation data (Figure 1 supplements 1-2, Figure 1C). The observation that interaction strength differs from protein abundance suggests regulated binding rather than simple mass action, which is biologically plausible for a deubiquitinase-substrate relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Hausp stabilizes nuclear Cry1 by catalyzing deubiquitination. Genetic depletion or pharmacological inhibition of Hausp decreases nuclear Cry1 protein levels, recombinant Hausp can deubiquitinate Cry1 in vitro, and Cry1 from Hausp-depleted cells shows increased ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 provide multiple lines of evidence supporting Hausp's role as a Cry1 deubiquitinase: loss-of-function (C8), pharmacological inhibition (C9), in vitro enzymatic activity (C10), and increased substrate ubiquitination upon Hausp depletion (C11). The convergence of genetic, pharmacological, biochemical, and cell-based approaches strongly supports this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Hausp activity regulates circadian period length. Both genetic depletion and pharmacological inhibition of Hausp increase circadian period in multiple cell systems, with combined AMPK activation and Hausp inhibition producing synergistic period lengthening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 demonstrate functional consequences of Hausp activity on circadian rhythms using complementary genetic (C12) and pharmacological (C13) approaches in different cell systems. The synergistic effect with AMPK (C14) is consistent with both pathways destabilizing Cry1, though the mechanistic interpretation is somewhat speculative. The data support the core finding that Hausp regulates period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "DNA damage differentially regulates Cry1 and Cry2 stability through Hausp. DNA damage increases the Cry1-Hausp interaction and transiently stabilizes Cry1 in a Hausp-dependent manner, while simultaneously destabilizing Cry2. These effects occur independently for each cryptochrome paralog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 demonstrate DNA damage-induced differential regulation of Cry1 and Cry2. The data show increased Cry1-Hausp interaction (C15), Cry1 stabilization (C16), Cry2 destabilization (C17), independence of these effects (C18), and Hausp requirement for Cry1 stabilization (C19). The use of single knockout cells (C18) is a critical control demonstrating independent regulation. The temporal dynamics and compartmentalization are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Hausp is required for DNA damage-induced circadian phase shifts. While DNA damage causes phase shifts in control cells, these shifts are greatly diminished in Hausp-deficient fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 connect Hausp function to circadian clock resetting by DNA damage. C20 confirms the phenomenon (with literature support), and C21 demonstrates Hausp requirement using genetic depletion. The luciferase monitoring data (Figures 3D-F) provide clear evidence of reduced phase shifts in Hausp-depleted cells. This functionally links Hausp-mediated Cry1 stabilization to clock resetting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "DNA damage induces phosphorylation of Cry1 on C-terminal SQ motifs, particularly S588, which regulates Hausp interaction. Hausp S18 dephosphorylation and Cry1 phosphorylation on SQ sites (especially S588) both contribute to increased Cry1-Hausp association following DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 describe the phosphorylation events regulating Cry1-Hausp interaction. The data show Hausp S18 mutations affect binding (C22-C23), Cry1/2 interact with DNA damage-activated kinases (C24), Cry1 is rapidly phosphorylated on SQ motifs after damage (C25-C26), these sites are in the C-terminus (C27), S588 is a key site (C28-C29). The use of phospho-specific antibodies, mutagenesis, and time-course experiments provides strong support. However, the relative contributions of different phosphorylation sites remain incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Phosphorylation of Cry1 S588 differentially regulates interactions with Hausp and Fbxl3. The S588D phosphomimetic mutation increases Hausp binding while decreasing Fbxl3 binding. Prolonged DNA damage increases Cry1 and especially Cry2 interaction with Fbxl3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 demonstrate that Cry1 phosphorylation acts as a molecular switch between stabilizing (Hausp) and degradative (Fbxl3) pathways. The S588D mutation data (C30, C32) provide clear evidence for opposing effects on these interactions. The observation of increased Fbxl3 binding after prolonged damage (C31) explains the transient nature of Cry1 stabilization. The data are internally consistent and mechanistically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Cry1 and Cry2 differentially regulate the transcriptional response to DNA damage. Loss of Cry1 enhances while loss of Cry2 suppresses induction of damage-responsive genes like p21. Both cryptochromes bind chromatin near DNA damage-responsive and DNA repair genes, and their loss alters expression of these genes following damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 demonstrate that Cry1 and Cry2 play opposing roles in regulating DNA damage-responsive transcription. The qPCR data (C33-C34, C37) show clear genotype-dependent differences in gene expression. ChIP-seq data (C35-C36) support direct chromatin association. The use of multiple genes and time points strengthens the conclusions. However, the mechanisms by which Cry1/2 regulate these genes (direct vs. indirect) remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Cry2-deficient cells and mice show evidence of genomic instability. Cry2\u2212/\u2212 and double knockout fibroblasts accumulate DNA damage (53BP1 foci), and Cry2\u2212/\u2212 mice show reduced viability in breeding studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide cellular (C38) and organismal (C39) evidence for Cry2's role in maintaining genomic integrity. The 53BP1 foci data are quantitative and use appropriate controls. The breeding data show statistically significant deviation from Mendelian ratios specifically for Cry2\u2212/\u2212 genotype. While reduced viability could have multiple causes, it is consistent with the DNA damage accumulation phenotype. The convergence of cellular and organismal phenotypes strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C65",
+      "C71"
+    ],
+    "result": "Circadian rhythmicity per se is insufficient for genome protection; specific clock components, particularly Cry2, are required. Cry2\u2212/\u2212 cells maintain robust rhythms but accumulate DNA damage, indicating that Cry2 function rather than rhythmicity itself protects genomic integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C65, and C71 make the important conceptual point that rhythmicity and genome protection are separable functions. The observation that Cry2\u2212/\u2212 cells are rhythmic (C40, citing Khan et al. 2012) yet accumulate damage distinguishes the requirement for specific clock components from general rhythmicity. This addresses a key question in the field and is well-supported by the data, though it relies partially on cited literature for the rhythmicity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C69",
+      "C72",
+      "C73"
+    ],
+    "result": "Cry1 and Cry2 serve as a regulatory node linking circadian clocks to DNA damage responses through coordinated but opposing stability changes. DNA damage stimulates Cry1 phosphorylation and Hausp-mediated deubiquitination (stabilizing Cry1) while increasing Cry2-Fbxl3 interaction (destabilizing Cry2), thereby increasing the Cry1/Cry2 ratio and enabling transient activation of damage-responsive gene networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C69, C72-C73 represent the major integrative conclusions of the study. These summary claims are well-supported by the collective evidence from multiple experimental approaches throughout the manuscript. The model of inverse Cry1/Cry2 stability regulation enabling transient transcriptional responses is consistent with all the data presented. The mechanistic details (phosphorylation, deubiquitination, E3 ligase interactions) and functional consequences (transcriptional changes, phase shifts, DNA damage accumulation) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C70"
+    ],
+    "result": "Cry1 and Cry2 play non-redundant, opposing roles in the DNA damage response. Cry1\u2212/\u2212 cells show enhanced transcriptional responses to genotoxic stress while Cry2\u2212/\u2212 cells show blunted responses, and together they protect genomic integrity through coordinated transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C70 emphasize the non-redundant functions of Cry1 and Cry2. The transcriptional data clearly show opposite effects of Cry1 vs. Cry2 loss on damage-responsive gene expression. This is a key finding that challenges models treating Cry1 and Cry2 as functionally redundant. The data support this conclusion, though the molecular mechanisms underlying these opposing effects require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Cry1 and Cry2 associate with numerous RNA binding and processing factors, suggesting a potential role in mRNA processing regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 identify an interesting observation from the mass spectrometry data but acknowledge this is not the study's focus. While the proteomic data support the association (C66), the functional significance (C67) is speculative. No experiments test whether Cry1/2 actually regulate mRNA processing. This represents a hypothesis-generating observation rather than a tested conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C68"
+    ],
+    "result": "Mammalian cryptochromes evolved from photolyase DNA repair enzymes and retain structural features including DNA binding surfaces and the ability to bind damaged DNA, though they have lost catalytic photolyase activity. The C-termini distinguish species-specific functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 and C68 provide evolutionary and structural context, all supported by cited literature. These are well-established facts in the field rather than novel findings of this study. They provide important background for interpreting the results showing Cry involvement in DNA damage responses. The claims are accurate representations of the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Background on Hausp and cryptochrome biology from prior literature. Hausp deubiquitinates p53 and Mdm2/MdmX with DNA damage-regulated affinity; Hausp knockout is lethal; cryptochrome stability determines circadian period; AMPK phosphorylation destabilizes Cry1; Cry1/2 regulate metabolism and inflammation; and Cry-deficient mice show altered responses to genotoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C56 summarize relevant prior work from cited literature. These provide essential context for the current study but are not novel findings. The authors accurately represent the cited work. These claims establish the foundation for the current study's hypotheses and interpretations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1930 @@
+{
+  "submission": {
+    "id": "6451a83b-6ed1-4fd7-81a8-c4df174d7be4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:30:04.653572Z",
+    "updated_at": "2025-11-28T20:30:04.653572Z"
+  },
+  "content": [
+    {
+      "id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "submission_id": "6451a83b-6ed1-4fd7-81a8-c4df174d7be4",
+      "content_type": "manuscript",
+      "content_text": "# A gene horizontally transferred from bacteria protects arthropods from host plant cyanide poisoning\n\n## Authors\n\n- Nicky Wybouw<sup>1</sup>\n- Wannes Dermauw<sup>1</sup>\n- Luc Tirry<sup>1</sup>\n- Christian Stevens<sup>2</sup>\n- Miodrag Grbi\u0107<sup>3</sup>\n- Ren\u00e9 Feyereisen<sup>5</sup>\n- Thomas Van Leeuwen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratory of Agrozoology, Department of Crop Protection, Faculty of Bioscience Engineering Ghent University Ghent Belgium\n2. SynBioC Research Group, Department of Sustainable Organic Chemistry and Technology, Faculty of Bioscience Engineering Ghent University Ghent Belgium\n3. Department of Biology University of Western Ontario London Canada\n4. Instituto de Ciencias de la Vid y el Vino Logro\u00f1o Spain\n5. Institut National de la Recherche Agronomique Centre National de la Recherche Scientifique and Universit\u00e9 de Nice Sophia Antipolis Nice France\n6. Institute for Biodiversity and Ecosystem Dynamics University of Amsterdam Amsterdam Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nCyanogenic glucosides are among the most widespread defense chemicals of plants. Upon plant tissue disruption, these glucosides are hydrolyzed to a reactive hydroxynitrile that releases toxic hydrogen cyanide (HCN). Yet many mite and lepidopteran species can thrive on plants defended by cyanogenic glucosides. The nature of the enzyme known to detoxify HCN to \u03b2-cyanoalanine in arthropods has remained enigmatic. Here we identify this enzyme by transcriptome analysis and functional expression. Phylogenetic analysis showed that the gene is a member of the cysteine synthase family horizontally transferred from bacteria to phytophagous mites and Lepidoptera. The recombinant mite enzyme had both \u03b2-cyanoalanine synthase and cysteine synthase activity but enzyme kinetics showed that cyanide detoxification activity was strongly favored. Our results therefore suggest that an ancient horizontal transfer of a gene originally involved in sulfur amino acid biosynthesis in bacteria was co-opted by herbivorous arthropods to detoxify plant produced cyanide.\n\n## Introduction\n\nPlants have developed a remarkable diversity of chemical defenses to deter herbivores from feeding. Cyanogenesis is one of the most ancient and widespread of these defenses, and more than 2500 plant species are known to synthesize cyanogenic glucosides and cyanolipids as phytoanticipins (constitutive defense compounds present in the plant prior to herbivore attack). Upon tissue disruption by herbivore feeding, cyanogenic glucosides are degraded by the plant \u03b2-glucosidases and \u03b1-hydroxynitrile lyases, which results in the release of toxic hydrogen cyanide (HCN) and other toxic products such as their aglycones (Gleadow and Woodrow, 2002; Poulton, 1990; Spencer, 1988; Zagrobelny et al., 2004; Figure 1). The released cyanide is a potent inhibitor of the mitochondrial respiratory chain and has a disruptive effect on various metabolic pathways (Solomonson, 1981), thus providing a broad defense against generalist herbivores.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig1-v2.jpg)\n\n**Figure 1.:** The two reactions catalyzed by the gene product of the Tu-CAS gene are marked by an orange background and are indicated by CYS and CAS. CAS detoxifies cyanide by incorporation into cysteine forming \u03b2-cyanoalanine, which can be further metabolized by nitrilases. CYS catalyzes the second step of the cysteine synthesis pathway in bacteria and plants, after serine is converted to O-acetylserine.\n\nIn their arms race with plants, arthropods have evolved several mechanisms to overcome plant cyanogenesis. A well-documented case of co-evolution is found in insect lepidopteran specialists that sequester the ingested cyanogenic glucosides in their own defense against predators. Remarkably, cyanogenic compounds have become so crucial for some species such as burnet moths (Zygaenidae) that they not only sequester, but also synthesize these compounds de novo by convergent evolution of the biosynthetic pathways (Jensen et al., 2011). Next to sequestration, other mechanisms have evolved to cope with the toxic effects of HCN, such as avoiding the ingestion of cyanogenic compounds or detoxifying HCN upon plant release (Despres et al., 2007). In animals, HCN is thought to be detoxified by two main pathways. The enzyme rhodanese converts cyanide into thiocyanate, but this biochemical reaction is not very common and thought to be inefficient (Beesley et al., 1985; Davis and Nahrstedt, 1985; Long and Brattsten, 1982). Alternatively, the conversion of HCN and cysteine into \u03b2-cyanoalanine and sulfide has been suggested as the main detoxification pathway in arthropods (Figure 1). This is supported by several biochemical surveys showing a correlation between \u03b2-cyanoalanine synthesis and HCN exposure in lepidopteran species tolerant to HCN (Meyers and Ahmad, 1991; Stauber et al., 2012). However, the enzyme that catalyzes this crucial reaction in arthropods has not been identified to date. The conversion of HCN into \u03b2-cyanoalanine by an enzyme called \u03b2-cyanoalanine synthase (CAS) has been best studied in bacteria and plants that need to protect themselves from HCN during the synthesis of cyanogenic glucosides or ethylene. The enzymes responsible for CAS activity also have cysteine synthase activity (CYS) and are referred to as CYS or CAS depending on their substrate specificity. CYS catalyzes the conversion of O-acetylserine into cysteine, an essential final step in the cysteine biosynthesis pathway unique for plants and bacteria (Bonner et al., 2005). Animals synthesize cysteine by a different pathway and use related enzymes such as cystathionine-\u03b2-synthase (CBS) and cystathionine-\u03b3-lyase (CGL), which form together with CAS and CYS a group of pyridoxal-5\u2032-phosphate dependent enzymes (Finkelstein et al., 1988; Figure 1). Here we identify the enzyme responsible for detoxification of cyanide to \u03b2-cyanoalanine in a spider mite and show that this enzyme is horizontally acquired from bacteria and is also widely distributed in Lepidoptera.\n\n## Results\n\n### Transcriptional response of the spider mite Tetranychus urticae to a cyanogenic host plant\n\nIn order to gain a better insight into arthropod defenses against plant cyanogenesis, we used the two-spotted spider mite T. urticae as a generalist herbivore model in a host plant adaptation experiment. This species is one of the most polyphagous arthropod pests known to date, and feeds on more than 1100 plant species from more than 140 plant families, including many cyanogenic plants (Grbic et al., 2011). We transferred a spider mite strain reared on acyanogenic bean plants (Phaseolus vulgaris) to a cultivar of Phaseolus lunatus containing high levels of well characterized cyanogenic glucosides such as linamarin and lotaustralin (Ballhorn et al., 2006; Jones, 1998; Wybouw et al., 2012) and allowed the strain to adapt to this host plant for more than 30 generations. Gene expression differences between mites feeding on P. vulgaris and on P. lunatus were then determined using genome-wide microarrays (Dermauw et al., 2013).\n\nIn contrast to the broad response previously detected after host plant changes from Fabaceae to Solanaceae and Brassicaceae (Grbic et al., 2011; Dermauw et al., 2013), only a limited set of 28 genes (absolute fold change \u22652, Benjamini-Hochberg corrected p-value <0.05) was found differentially expressed between the parental and adapted lines (Supplementary file 1). Within this small set of genes, 18 had an increased expression in the adapted line, while 10 exhibited a lower expression. The most differentially expressed genes after transfer to cyanogenic lima bean encode closely related, small cytoplasmic proteins of unknown function. They were also seen in the transcriptional response after transfer to tomato suggesting that these genes could be part of a broad general stress response of T. urticae (Dermauw et al., 2013). Among the genes with an increased expression were three cytochrome P450 genes, known to respond readily to host plant changes (Grbic et al., 2011; Dermauw et al., 2013). Moreover, we identified a gene (tetur10g01570, Tu-CAS) encoding a predicted cytosolic protein with high similarity to bacterial cysteine synthases (Conserved Domain Database (CDD): COG0031). The reported microarray data have been deposited at the Gene Expression Omnibus (Wybouw et al., 2013).\n\n### Phylogeny of Tu-CAS and evidence for a bacterial origin by horizontal transfer\n\nWithin chelicerates, we only detected close homologues of Tu-CAS in two closely related tetranychid mites. By sequencing PCR amplicons (see below, this section) and a tBLASTn-search in a published transcriptome (Liu et al., 2011), CAS genes were identified in Tetranychus evansi and Panonychus citri, respectively. A tBLASTn-search in published genomes of mesostigmatid mites and of ticks (Metastigmata) did not reveal homologues (Supplementary file 2). Broadening the search to arthropods by tBLASTn-searches in NCBI databases and additional arthropod genome portals (Supplementary file 2), we only detected close homologues of Tu-CAS in lepidopteran genomes (Bombyx mori, Danaus plexippus, Heliconius melpomene, Manduca sexta and Plutella xylostella) (Figure 2). On average, Tu-CAS showed 75% similarity with lepidopteran protein sequences, and genes encoding these proteins were intronless in both mites and insects. By searching additional NCBI EST-databases and published lepidopteran transcriptomes, a total of 20 (complete and partial) homologous sequences were identified in arthropods.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig2-v2.jpg)\n\n**Figure 2.:** The fungal CYS, metazoan and fungal CBS as well as the plant, oomycete and nematode CYS and CAS sequences are marked with a different color. The two branches of nematode sequences, marked as cysl-1 and cysl-2, include the sequences coded by the two genes previously characterized in C. elegans (Budde and Roth, 2011). The CYS and CAS groups within Plantae represent plant protein sequences with CYS and CAS activity, respectively (Yamaguchi et al., 2000). The asterisk represents a CYS sequence of the mealybug P. citri acquired by horizontal gene transfer from its endosymbiont (Husnik et al., 2013). Panel B: Detailed view of the bacterial CYS sequences showing the embedded sequences of tetranychid mites and Lepidoptera. In both panels support values of only important nodes are shown. The scale bar represents 0.5 and 0.2 substitutions per site in panel A and panel B, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Residue numbering is shown for the G. max CAS sequence (Yi et al., 2012). The five residues forming an active site loop are marked by asterisks. The amino acid and pyridoxal-5\u2032-phosphate binding sites are indicated by a green and a blue background respectively, while the Schiff base Lys is indicated by a red background (Bonner et al., 2005; Yi et al., 2012). The unique 9 amino acid insertion seen in arthropod enzymes and their closest bacterial homologues is highlighted in orange. The three residues that convert G. max CYS into CAS by creating a triple mutant (Yi et al., 2012) are shown in red.\n\nA phylogenetic reconstruction of these arthropod proteins with CYS, CAS and CBS enzymes of plants, fungi, oomycetes, bacteria and Metazoa indicated that these homologous arthropod sequences might be monophyletic. They were embedded with high node support within bacterial cysteine synthase sequences, indicative of a horizontal gene transfer (Figure 2). The most closely related sequences are from bacteria that belong to the \u03b1- and \u03b2-Proteobacteria, two of which are Methylobacterium species, free-living epiphytic bacteria known to establish endophytic colonies. These species are reported to be transferred from the plant to phytophagous insects and to survive inside arthropod hosts (Kutschera, 2007; Rampelotti-Ferreira et al., 2010), facilitating a potential horizontal gene transfer. Alternatively, Proteobacteria are known endosymbionts of arthropods and often reside in the reproductive organs for vertical transmission to following generations (Wernegreen, 2002). Because of this intimate relationship, successful horizontal gene transfer is more likely to occur (Hotopp, 2011). The mite and insect sequences formed a branch in bacterial cysteine synthase enzymes, some of which have documented dual CYS and CAS activities (Omura et al., 2003) (Figure 2). The arthropod protein sequences and their closest bacterial homologues shared a unique 9 amino acid insertion not present in cysteine synthases of other organisms, but the residues known to be crucial for substrate and cofactor binding in plants and bacteria showed conservation (Bonner et al., 2005; Yi et al., 2012). The lysine residue (Lys95, Glycine max CAS numbering, Yi et al., 2012) that forms a Schiff base linkage to the cofactor pyridoxal-5\u2032-phosphate was also conserved in arthropods (Figure 2\u2014figure supplement 1).\n\nTo exclude the possibility that the Tu-CAS sequence was derived from contaminating bacterial DNA, we examined its position in the T. urticae genome into more detail. Tu-CAS is located on a 3 Mb large scaffold (scaffold 10) and is flanked by typical eukaryotic genes, tetur10g01550 and tetur10g01580. Both genes contain introns with splice sites confirmed by EST or RNA-seq data (Grbic et al., 2011, GenBank: LIBEST_025606, Figure 3). Tetur10g01580 encodes a nudix hydrolase (CDD: cl00447) highly similar to other arthropod nudix hydrolases (BLASTp hits with E-value <1e\u221245). To rule out that the linkage of Tu-CAS to these spliced genes is a genome assembly artefact, we took several independent genomic approaches. First, we remapped the T. urticae Sanger reads used for the genome assembly of the London strain of T. urticae (Grbic et al., 2011) and examined the Illumina read coverage of the Tu-CAS region in two re-sequenced strains (EtoxR and Montpellier) that are geographically distinct from the London strain (Grbic et al., 2011; Van Leeuwen et al., 2012). Neither Sanger nor Illumina-reads revealed any inconsistencies in the Tu-CAS region in any of these strains (Figure 3). Second, using a PCR approach, we amplified a 6 kb genomic region bracketing Tu-CAS with the surrounding spliced genes (tetur10g01550 and tetur10g01580, Figure 4, Figure 4\u2014figure supplement 1). Using a similar strategy we also amplified a 6 kb region in the closely related spider mite T. evansi (Figure 4, Figure 4\u2014figure supplement 1) and a nucleotide dot plot between the amplified region of these two species showed clear synteny and the absence of discontinuity around the CAS gene (Figure 4). This would not be expected by bacterial contamination of either genome. Last, gene compositions of T. urticae and bacteria were analyzed by determining both the GC-content at the synonymous third codon position (GC3) and the overall GC-content (GC) of the genes to look if amelioration occurred. Amelioration is the process by which the DNA composition of the newly acquired gene becomes homogenized to match the composition of the recipient genome (all genes in the recipient genome are subject to the same mutational processes) (Lawrence and Ochman, 1997). Indeed, the GC/GC3 content of Tu-CAS was most similar to the GC/GC3 content of genes from the T. urticae genome, and quite distinct from the GC/GC3 content of genes (including the CYS/CAS genes) from the three annotated bacterial genomes in the closest sister clade to the apparent monophyletic arthropod clade (Figure 5). Taken together, these data provide strong evidence that Tu-CAS is a sequence integrated in the genome of T. urticae and does not represent bacterial contamination. Sequence data is available at Genbank (accession numbers: KF981736 and KF981737).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig3-v2.jpg)\n\n**Figure 3.:** Gene models of Tu-CAS and its neighboring genes are depicted as follows: blue and red rectangles represent coding sequences and untranslated regions, respectively, while introns are shown as dashed lines. (+) and (\u2212) represent the forward and reverse strand, respectively. Underneath the gene models, indicated in green, are the length and position of amplicons obtained by PCR (Figure 4). Next, an alignment of paired-end Sanger reads (and corresponding coverage plot) with the T. urticae genome of the London strain is displayed. Paired-end Sanger reads for which both reads are mapped in or extend nearby the indicated region are denoted by thin lines to show pair connections (shown are all paired-end Sanger reads that were produced from 2.5, 8.5, and 35.5 kb libraries used for assembly of the T. urticae genome [Grbic et al., 2011]). The Sanger reads coverage plot is followed by coverage plots of Illumina-reads from genomic DNA sequencing of the Montpellier and EtoxR strain of T. urticae (Grbic et al., 2011; Van Leeuwen et al., 2012). The coverage plot at the bottom shows Illumina RNA-seq read coverage produced from adult T. urticae polyA selected RNA (Grbic et al., 2011). Numbers between brackets represent the sequence depth.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig4-v2.jpg)\n\n**Figure 4.:** The dot-plot was constructed with 95% identity in a 21 bp window, with the T. evansi and the T. urticae amplified region on the y- and x-axis, respectively. From the T. urticae region, the gene models and their genomic positions on the 10th scaffold are specified below the x-axis. The (+) and (\u2212) signs represent the forward and reverse strand, respectively. Blue and black bars indicate exons and introns respectively, while the untranslated regions are depicted as red bars.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** \u03bb: lambda DNA, digested with Pstl; A: tetur10g01550\u2014tetur10g01570 fragment in T. urticae; B: tetur10g01570\u2014tetur10g01580 fragment in T. urticae; C; tetur10g01550\u2014tetur10g01570 fragment in T. evansi; D: tetur10g01570\u2014tetur10g01580 fragment in T. evansi. Primers used for the amplification of the fragments are listed in Supplementary file 4.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig5-v2.jpg)\n\n**Figure 5.:** The GC/GC3 contents of the T. urticae genome and the three annotated bacterial genomes of bacteria residing in the sister clade closest to the apparent monophyletic arthropod clade (Figure 2) are shown. The GC/GC3 content of the specific CYS/CAS gene of each organism (T. urticae in red, bacteria in blue) is highlighted.\n\n### Biochemical characterization of Tu-CAS\n\nIn order to functionally test whether arthropod enzymes are active and still able to catalyze both reactions after horizontal gene transfer, we recombinantly expressed Tu-CAS in Escherichia coli and obtained mg quantities after affinity purification. Subsequent biochemical assays confirmed that Tu-CAS catalyzes both reactions (Figure 6). In order to determine which of the two reactions (cysteine synthesis, CYS and \u03b2-cyanoalanine synthesis, CAS) was favored by the Tu-CAS enzyme, we calculated the ratio of the specificity constants for each reaction. The specificity constant kcat/Km defines, at any concentration, the specificity of an enzyme for a particular substrate. The CAS/CYS ratio of the specificity constants was 33.7, showing that CAS activity was strongly favored over CYS activity (Table 1). (The ratio was calculated from the respective values of Vmax/Km, as kcat = Vmax/[E] and as the reactions were measured with the same enzyme preparation.) This preferred CAS activity is typical of known plant CAS enzymes and clearly different from CYS enzymes (Table 1; Yamaguchi et al., 2000; Wada et al., 2004; Bogicevic et al., 2012; Yi et al., 2012). Enzymatic activity was dependent on pyridoxal-5\u2032-phosphate as a cofactor, and the substrate-dependent formation of \u03b2-cyanoalanine was further confirmed by thin layer chromatography (TLC) and LC-MS (Figure 7).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig6-v2.jpg)\n\n**Table 1.**\n Specificity constants for the two activities of CYS-like enzymes (cysteine synthase, CYS and \u03b2-cyanoalanine synthase, CAS)\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">CAS reaction</th>\n      <th colspan=\"3\">CYS reaction</th>\n      <th>CAS/CYS</th>\n    </tr>\n    <tr>\n      <th>Activity (s\u22121)</th>\n      <th>Km (mM)</th>\n      <th>Specificity constant (mM\u22121. s\u22121)</th>\n      <th>Activity (s\u22121)</th>\n      <th>Km (mM)</th>\n      <th>Specificity constant (mM\u22121. s\u22121)</th>\n      <th>Ratio of specificity constants</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Tetranychus urticae CAS</td>\n      <td>2.135*</td>\n      <td>0.312</td>\n      <td>6.84\u2020</td>\n      <td>0.646*</td>\n      <td>3.17</td>\n      <td>0.203\u2020</td>\n      <td>33.7</td>\n    </tr>\n    <tr>\n      <td>Arabidopsis thaliana CAS</td>\n      <td>2.66</td>\n      <td>0.14</td>\n      <td>19</td>\n      <td>2.0</td>\n      <td>8.03</td>\n      <td>0.250</td>\n      <td>76</td>\n    </tr>\n    <tr>\n      <td>Glycine max CAS</td>\n      <td>38.9</td>\n      <td>0.81</td>\n      <td>48</td>\n      <td>1.82</td>\n      <td>8.87</td>\n      <td>0.205</td>\n      <td>234</td>\n    </tr>\n    <tr>\n      <td>Glycine max CYS</td>\n      <td>0.21</td>\n      <td>0.30</td>\n      <td>0.7</td>\n      <td>57.5</td>\n      <td>3.6</td>\n      <td>15.97</td>\n      <td>0.044</td>\n    </tr>\n    <tr>\n      <td>Corynebacterium glutamaticum CYS</td>\n      <td>n.d</td>\n      <td>n.d</td>\n      <td>\u2013</td>\n      <td>435*</td>\n      <td>7</td>\n      <td>62\u2020</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Lactobacillus casei CYS</td>\n      <td>n.d</td>\n      <td>n.d</td>\n      <td>\u2013</td>\n      <td>89*</td>\n      <td>0.6</td>\n      <td>148\u2020</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n_n.d.: not determined.*data as Vmax in \u00b5mol.min\u22121mg\u22121.\u2020data as Vmax/Km in \u00b5mol.min\u22121mg\u22121mM\u22121. CAS activity was measured with cysteine as substrate while CYS activity was measured with O-acetylserine as substrate. Data for the plants A. thaliana and G. max were obtained in Yamaguchi et al. (2000) and Yi et al. (2012), respectively, while data for the bacteria C. glutamaticum and L. casei were retrieved from Wada et al. (2004) and Bogicevic et al. (2012), respectively._\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02365/elife-02365-fig7-v2.jpg)\n\n**Figure 7.:** Controls; C1: no cysteine control, C2: no cyanide control, C3: no enzyme control. Time course 0\u201360 min after adding 3.75 \u00b5g of recombinant Tu-CAS. Standards; BCA: 5 \u00b5g \u03b2-cyanoalanine, CST: 5 \u00b5g cysteine. Panel B: LC-MS identification of \u03b2-cyanoalanine as a reaction product of Tu-CAS. The enzymatically produced \u03b2-cyanoalanine was scraped from silica plates after TLC separation of reaction mixtures, and was analyzed by LC-MS. \u03b2-cyanoalanine was identified in the reaction mixture on the basis of a similar elution time on LC and the characteristic ion of m/z = 113 which is [M-H]- as compared to the standard. (The base peak in panel B2 at m/z = 141 is a contaminant from the silica gel [2SiO +2H2O + OH\u2212].) B1: total ion current (TIC) chromatogram and mass spectrum of the \u03b2-cyanoalanine standard, B2: TIC chromatogram and mass spectrum of Tu-CAS reaction mixture after separation on TLC.\n\nThe very high sequence similarity between Tu-CAS and the lepidopteran proteins strongly suggests that the lepidopteran proteins can catalyze the same two reactions (cyanide detoxification and cysteine synthesis) and that these proteins are responsible for the known wide occurrence of CAS activity in lepidopteran species (Witthohn and Naumann, 1987; Meyers and Ahmad, 1991; Stauber et al., 2012).\n\n## Discussion\n\nIn arthropods, the ability to detoxify HCN plays a crucial ecological role and is thought to have allowed the exploitation of cyanogenic plants by circumventing the toxic effects of HCN. We have shown here that the two-spotted spider mite increases transcript levels of a horizontally transferred \u03b2-cyanoalanine synthase upon adaptation on cyanogenic bean. Phylogenetic evidence alone does not constitute strong evidence for horizontal gene transfer (HGT), because in the absence of introns in the sequence, a contamination of the mite genome sequence with a sequence from a bacterial symbiont or commensal cannot be excluded. However, the results of mite genomic analysis, codon amelioration, synteny and genomic PCR, combined with the phylogenetic evidence, unambiguously prove that T. urticae CAS has a bacterial origin and was laterally transferred and incorporated into the mite genome prior to the divergence in the Tetranychidae. A homologous lateral gene transfer has also occurred in Lepidoptera (Figure 2) raising the question of the time and number of HGT events needed to explain the phylogenetic pattern of distribution of the CYS/CAS genes. Several hypotheses can be discussed. (a) A single HGT to a common ancestor of mites and insects, followed by selective losses resulting in the present phylogenetic distribution. The broad sampling of arthropod species that revealed the absence of any CYS/CAS-like sequence (even as a distant recognizable trace) argues against the origin of the gene in the common ancestor of tetranychid mites and Lepidoptera, followed by multiple independent losses. These losses would have to be numerous: seven in the hexapods (Trichoptera, Diptera, Hymenoptera, Coleoptera/Strepsiptera, Hemiptera/Heteroptera/Thysanoptera/Phthiraptera, Orthoptera, Odonata/Ephemeroptera) and six further in other arthropods (Copepoda/Branchiopoda, Myriapoda, Aranea, Scorpiones, Metastigmata and Mesostigmata). This figure of 13 losses is an absolute minimum that implies that the loss occurred each time at the origin of the lineage, that is before any speciation beyond the point of coalescence. A loss later in the history of each lineage would rapidly increase the total number of losses. We strongly believe that this hypothesis is not parsimonious, and therefore that there was no CYS/CAS gene in the common ancestor of mites and Lepidoptera. (b) Alternatively, two HGT events might have occurred (one to a mite ancestor, one to a lepidopteran ancestor) or (c) a single HGT from a donor bacterial species, followed by a transfer between a mite and a lepidopteran. These two hypotheses are impossible to distinguish based on the topology of the tree (Figure 2). The sampling of bacterial species phylogenetically close to the presumed donor species is too shallow at present. The apparent monophyly of the arthropod CAS gene may be due to the fact that both the mite and the insect gene came from very closely related bacteria, but these bacteria are not represented in the tree. A future survey of Proteobacteria likely to be associated with arthropods (directly or through a plant host) may resolve this question by finding several potential bacterial donor species that would invalidate the apparent monophyly (i.e., split the tree at the point of arthropod coalescence). The transfer from a lepidopteran to mite is improbable, because the mite sequence would branch with the closest relative to the lepidopteran donor, rather than being basal. Conversely, we cannot exclude the transfer from a mite to a lepidopteran, as sampling within the Prostigmata is extremely limited. We therefore favor hypothesis (b), with a very old transfer to an ancestral lepidopteran, and a second transfer to an ancestral mite. Current sampling of mite species is insufficient to give a good estimate of time, but we note the absence of a CAS enzyme in Mesostigmata (typically parasitic and predatory mites) and Metastigmata (ticks), and transfer is likely to have occurred after the split of Prostigmata in the Lower Devonian about 400 MYA (Dabert et al., 2010). The hypothesis of multiple transfers is also compatible with the presence of a CYS-like sequence in the mealybug Planococcus citri, apparently derived from its endosymbiont (Husnik et al., 2013). In that case, the phylogenetic tree clearly distinguishes the HGT event from that under study here.\n\nIn Lepidoptera, the CAS gene was subsequently duplicated in H. melpomene and D. plexippus that have 3 and 2 copies of the gene, respectively (Sun et al., 2013). The importance of the laterally acquired gene for HCN detoxification in those species was not previously apparent. These species of Papilionoidea, like burnet moths, not only thrive on cyanogenic plants, but have themselves evolved the ability to synthesize cyanogenic compounds de novo (Jensen et al., 2011) that now have crucial functions in their life history. Cyanogenesis serves in predator defense by releasing HCN, but also stores reduced nitrogen that can be mobilized for chitin synthesis, and plays a role in mate choice by determining the attractiveness of nuptial gifts from male to female partners (Zagrobelny et al., 2007). Our results support the early idea that CAS activity is needed for the exploitation of cyanogenic glucosides in insects (Meyers and Ahmad, 1991; Witthohn and Naumann, 1987; Zagrobelny et al., 2008) whether they are sequestered from the plant, or synthesized de novo. Higher \u03b2-cyanoalanine synthase activity in Spodoptera eridania than in Trichoplusia ni is related to higher cyanide tolerance (Meyers and Ahmad, 1991), and this enzyme activity is widespread in Lepidoptera (Witthohn and Naumann, 1987).\n\nMoreover, it was recently shown that specialist pierid butterflies that feed on Brassicales, release equimolar concentrations of HCN upon metabolism of benzylglucosinolates, turning the \u2018mustard oil bomb\u2019 into a \u2018cyanide bomb\u2019 (Stauber et al., 2012). When Pieris rapae feeds on a cyanogenic (dhurrin-containing) plant that this species does not normally consume, an increased production of \u03b2-cyanoalanine and thiocyanate is observed, thus implicating both a CAS and a rhodanese activity (Stauber et al., 2012). It was therefore proposed that the ability of P. rapae to metabolize HCN allowed the primary host transfer from Fabales to Brassicales (Stauber et al., 2012). The gene for either CAS or rhodanese has not been identified in arthropods before, and their respective role in detoxification of HCN is not formally demonstrated. There is no close homologue of the known rhodanese (thiosulfate sulfurtransferase) gene in T. urticae or in Lepidoptera. However, we identified Tu-CAS and functionally demonstrated that the enzyme it encodes converts HCN to \u03b2-cyanoalanine in vitro. Such evidence is difficult to obtain in vivo with mites, as it would be difficult to exclude the possibility that a plant or a bacterial enzyme rather than the mite enzyme catalyzes the reaction in vivo. We argue that the presence of the same gene in lepidopteran species that display this activity in vivo (Meyers and Ahmad, 1991; Stauber et al., 2012) is strong evidence for the function of the laterally transferred CAS gene. It will be of great interest to confirm that the homologous CAS genes of Lepidoptera that we identified indeed encode a \u03b2-cyanoalanine synthase, and to provide evidence of its protective role against HCN poisoning.\n\nNext to the detoxification function, the CYS activity acquired after horizontal gene transfer may also have enhanced the sulfur amino acid economy of mites and lepidopterans (Figure 1). To date, nematodes were the only animal species thought to synthesize cysteine independently from methionine by CYS activity (Budde and Roth, 2011). However, nematode CYS sequences grouped with plants and oomycetes, clearly outside the arthropod-bacterial clade, suggestive of a different origin of CYS between metazoan subgroups (Figure 2). Duplications of cys genes were observed in nematodes, and indeed genetic evidence suggests that in Caenorhabditis elegans cyanide resistance is conferred by the cysl-2 gene, probably encoding an enzyme with CAS activity while cysl-1 is a classical cysteine synthase gene (Budde and Roth, 2011). The acquisition of an alternative cysteine biosynthesis route fits into previously documented horizontal gene transfers in T. urticae that include a cobalamin-independent methionine synthase gene, genes for carotenoid biosynthesis, as well as laterally acquired genes that likewise respond to host plant change such as intradiol ring-cleavage dioxygenases and a cyanase gene (Grbic et al., 2011; Wybouw et al., 2012; Dermauw et al., 2013). The latter encodes an enzyme that decomposes cyanate (CNO\u2212), a bacterial or photochemical decomposition product of cyanide, to carbon dioxide and ammonia (Wybouw et al., 2012). This enzyme may serve as a second line of spider mite defense against cyanogenic plants, or alternatively may have a regulatory function in the amino acid and pyrimidine metabolism as previously suggested (Wybouw et al., 2012). For a polyphagous herbivore, horizontal gene transfer might play an important role in gaining independence from the varying plant nutrients and defense compounds. It remains unclear which reaction (CAS/CYS) of Tu-CAS provides the strongest adaptive advantage, but the CYS activity might be one of the reasons why these horizontally transferred genes have been retained in organisms that are at present not living on cyanogenic plants.\n\nIn conclusion, a horizontal gene transfer from a bacterial ancestor underlies the exploitation of cyanogenic host plants in some arthropod lineages and made the subsequent evolution of a convergent pathway for synthesis of cyanogenic glucosides possible, as shown in burnet moths (Jensen et al., 2011).\n\n## Material and methods\n\n### Mite strains and host plants\n\nThe London strain of T. urticae (Grbic et al., 2011) was maintained on acyanogenic P. vulgaris L. cv \u2018Prelude\u2019. The strain London-CYANO originated from this population and was transferred to cyanogenic P. lunatus as previously described (Wybouw et al., 2012). Before the start of experiments the cyanogenic potential of both plant species was determined, confirming the acyanogenic nature of P. vulgaris and revealing high levels of cyanogenic precursors produced in the P. lunatus cultivar (Wybouw et al., 2012). For this study, young adult female mites were collected for gene-expression analysis 35 generations after the initial host shift. The T. evansi strain was maintained in the laboratory on Solanum lycopersicum L. cv \u2018Moneymaker\u2019 as previously described (Wybouw et al., 2012). All strains were maintained in climatically controlled rooms at 26\u00b0C, 60% RH and 16:8 hr light:dark photoperiod.\n\n### Transcriptional response of T. urticae to a cyanogenic host plant\n\nTotal RNA samples were isolated with the RNeasy minikit (Qiagen, Belgium) and were subsequently treated with DNase (Turbo DNA-free kit, Ambion, Belgium). RNA was extracted from 100\u2013120 young adult female mites in four replicates. Cy5- or Cy3-labeled cRNA was produced using the Low Input Quick Amp Labeling Kit (Agilent Technologies, Belgium) as previously described (Dermauw et al., 2013). Microarray hybridization and scanning procedures were performed as previously described (Dermauw et al., 2013), using the GE2_107_Sep09 protocol. The data was transferred to GeneSpring GX 11.0 software (Agilent Technologies) for statistical analyis. Probes were flag filtered (only probes that had flag-value \u2018present\u2019 in 50% of all replicates were retained) and linked to T. urticae genes using the \u2018Create New Gene-Level Experiment\u2019 option. Differentially expressed genes were identified by a Student's t test with the cutoff for Fold Change (FC) and corrected p-value (Benjamini-Hochberg correction) set at 2 and 0.05, respectively. The array design is accessible under the GEO-platform format GPL16890 (Wybouw et al., 2013).\n\n### Phylogenetic reconstruction\n\nA full-length Tu-CAS (tetur10g01570) homologue was retrieved in T. evansi by sequencing PCR products bracketing the CAS gene with neighboring genes (Supplementary file 4). Additional Tu-CAS homologues were identified by conducting BLASTp and/or tBLASTn searches in NCBI, UniProt, P. citri transcriptome (Liu et al., 2011) and diverse arthropod genome portals (Supplementary file 2) using Tu-CAS as query. As several best BLAST-hits (E-value \u22641e\u221290) included members of the order Lepidoptera, transcriptome databases from Lepidoptera not included in the NCBI database were also mined for Tu-CAS homologues (Supplementary file 3). This approach yielded 35 arthropod and bacterial protein sequences, which according to the Conserved Domain Database all contained a motif typical for cysteine synthases (COG0031) (Marchler-Bauer et al., 2011). This dataset was further complemented with cysteine synthase M (cysM) protein sequences from bacteria and cysteine synthase protein sequences from fungi, Chromalveolata, plants, nematodes, and Planococcus citri and its three best BLASTp hits, harboring a cysteine synthase CDD motif (COG0031 or PLN2565). Finally, a diverse set of cystathionine-\u03b2-synthase protein sequences, related to cysteine synthases and also belonging to the group of pyrodixal-5\u2032-phosphate dependent \u03b2-substituted alanine synthases were added as an outgoup.\n\nThe final dataset contained 90 protein sequences. Accession numbers of protein sequences, their trivial name, CDD classification (Marchler-Bauer et al., 2011) and cellular localization (Horton et al., 2007) are listed in Supplementary file 3. Protein sequences were aligned with MUSCLE (Edgar, 2004) using default settings. Model selection was done with ProtTest 2.4 and according to the Akaike information criterion the model LG+I+G was optimal for phylogenetic analysis (Abascal et al., 2005). A maximum-likelihood analysis was performed using Treefinder (Jobb et al., 2004) with edge-support calculated by 1000 pseudoreplicates (LR-ELW). Resulting trees were midpoint rooted prior to further analysis (Hess and De Moraes Russo, 2007). Phylogenetic trees were visualized and edited using MEGA5 (Tamura et al., 2011) and CorelDraw X6 (Corel inc., UK), respectively.\n\n### Incorporation of Tu-CAS in the spider mite genome\n\nPaired-end T. urticae Sanger reads (available in the Trace Archive at the NCBI website, http://www.ncbi.nlm.nih.gov/Traces/home/) were remapped to the T. urticae genome (Grbic et al., 2011) using Bowtie 2.1.0 (Langmead et al., 2009) and the preset parameter option \u2018\u2013very-sensitive\u2019. Resulting SAM files were converted into BAM files using SAMtools (Li et al., 2009). Illumina-reads from genomic DNA sequencing of the London, Montpellier and EtoxR strains of T. urticae and Illumina RNA-seq reads from adult T. urticae polyA selected RNA were mapped as previously described (Grbic et al., 2011; Van Leeuwen et al., 2012). Read alignments and coverage were visualized with IGV 2.3 (Thorvaldsdottir et al., 2013) using the most recent T. urticae genome annotation (\u2018Tetur_gff3_20130708\u2019, accessible at http://bioinformatics.psb.ugent.be/orcae/-overview/Tetur); for display, Sanger reads were arranged in Adobe Illustrator CS5 while maintaining alignment coordinates.\n\nGenomic DNA was collected from T. evansi and T. urticae by phenol-chloroform extraction (Van Leeuwen et al., 2008). Primer pairs were designed to amplify a genomic region of Tu-CAS and adjacent genes on either the 5\u2032 or the 3\u2032 end on the 10th scaffold of the T. urticae genome (Supplementary file 4). The Expand Long Range PCR kit (Roche, Belgium) was used to conduct PCR, and fragments were sequenced with primers listed in Supplementary file 4. Some primer pairs designed on the T. urticae genome sequence also successfully amplified genomic fragments of T. evansi (Supplementary file 4). The resulting fragments were sequenced by primer walking (Supplementary file 4). A nucleotide dot-blot between the two spider mite species was constructed using the MEGALIGN program of DNASTAR software, allowing 5% mismatch in a 21 bp window. We analyzed overall GC contents and at the third codon position (GC3) of whole coding nucleotide sequences using UGENE (Okonechnikov et al., 2012) of all coding sequences of T. urticae and Achromobacter xylosoxidans, Methylobacterium radiotolerans and Methylobacterium sp. GXF4. These three bacterial genomes were selected based on our phylogenetic analysis as the closest fully annotated bacterial genomes to the arthropod clade (Figure 2).\n\n### Recombinant expression of Tu-CAS and enzyme activity assays\n\nRecombinant Tu-CAS was produced by the GenScript Corporation (Piscataway, NJ, USA). After codon optimization of the Tu-CAS coding sequence (Supplementary file 5), an E3 expression vector was used to transform E. coli cells. The transformed cells were cultured in 3 l LB. Using a Ni2+-column, the N-His-tagged Tu-CAS protein was purified from the supernatant. After sample sterilization via a 0.22 \u00b5m filter, the recombinant protein was stored in a buffer containing: 50 mM Tris, 150 mM NaCl, 2 mM DTT, 10% glycerol at a pH of 8.0 and finally kept at \u221280\u00b0C. The concentration and purity of the recombinant protein sample was determined respectively by a Bradford protein assay (Bradford, 1976) and a densitometric analysis of a Coomassie Blue-stained SDS-PAGE gel.\n\nChemicals for the activity assays were purchased from Sigma\u2013Aldrich (Belgium), except \u03b2-cyanoalanine, which was acquired from VWR, Cayman Chemical. All reactions were carried out in gastight 7 ml vials with a screw cap having a PTFE/rubber septum (Supelco\u2013Sigma\u2013Aldrich, Belgium). Reagents were added to the reaction volumes using gastight syringes (Hamilton, series 1700, Gastight, 1750RN, VWR Belgium). Prior to measuring enzyme activity, recombinant Tu-CAS was incubated at 30\u00b0C for 10 min in the appropriate reaction buffer containing 500 \u00b5M pyridoxal-5\u2032-phosphate. For measuring CAS activity, reactions were executed in a 0.2 M Tris buffer at pH 8.5. The CAS activity assay was a modification of the method of Hendrickson (Hendrickson and Conn, 1969). The standard reaction was started with 0.5 ml of 0.01 M cysteine, 0.5 ml of 0.01 M sodium cyanide and 1.5 \u00b5g recombinant Tu-CAS. All CAS assays were performed at 37\u00b0C on a mechanical shaker. CAS activity was quantified by spectrophotometrically measuring the H2S formed at 650 nm (PowerWavex340, BioTek Instruments Inc., Winooski, VT, USA) by the method of Siegel (Siegel, 1965). The CYS activity assay was based on Lunn et al., 1990 using 0.5 \u00b5g recombinant Tu-CAS per reaction. Standard substrate concentrations were 10 mM and 2 mM for O-acetylserine and sodium sulfide, respectively. The reaction product cysteine was quantified by measuring the absorbance at 560 nm by the method of Gaitonde (Gaitonde, 1967). For both activity assays, the spontaneous formation of the measured reaction product and its potential presence in protein preparations was corrected by respectively non-enzyme controls and zero time point controls. Each experimental assay condition was analyzed using three independent and three technical replicates. Kinetic data was fitted to the Hill equation, from which the Km and Vmax values for O-acetylserine and cysteine were calculated for respectively the CYS and CAS reaction.\n\n### Identification of \u03b2-cyanoalanine by TLC and LC-MS\n\nRecombinant Tu-CAS was incubated at 30\u00b0C for 10 min in a 1 mM phosphate buffer containing 500 \u00b5M pyridoxal-5\u2032-phosphate. The standard reaction was executed in a 320 \u00b5l reaction volume at 37\u00b0C on a mechanical shaker in 1 mM phosphate buffer pH 8.5, with 80 \u00b5l of 7.5 mM cysteine and 80 \u00b5l of 15 mM sodium cyanide. Each reaction was started by adding 3.75 \u00b5g of recombinant protein and was terminated by snap freezing at different time points. No-substrate and no-enzyme controls were included in the analysis. Reaction mixtures were defrosted at 4\u00b0C and a 20 \u00b5l aliquot was spotted on a thin-layer chromatograph (HPTLC Silica gel 60 F254, Merck, Darmstadt Germany) and run with a mobile phase of (ethanol/28% ammonium hydroxide/water) with a (18/1/4) ratio. Five \u00b5g of \u03b2-cyanoalanine and cysteine were spotted as standards. After drying, the TLC plate was treated with a ninhydrin solution (20 g ninhydrin in 600 ml ethanol) for amino-acid visualization. In this validated TLC set-up (Yoshikawa et al., 2000), cysteine and \u03b2-cyanoalanine can be identified both by color and relative mobility (Rf-value). \u03b2-cyanoalanine consistently displayed a blue-green color with a Rf value of around 0.8. In contrast, cysteine colored red and exhibited a consistent different Rf value.\n\nThe identification of \u03b2-cyanoalanine as a blue spot at 0.8 Rf was further confirmed by LC-MS analysis. After TLC separation, the zone around 0.8 Rf was scrapped from the TLC plate. After scrapping, the plate was colored as described above to confirm that the correct blue/green zone was collected. The collected silica was mixed with 200 \u00b5l ddH2O, vortexed and centrifuged at 21000\u00d7g for 5 min. The supernatant was collected and directly analyzed using an Agilent 1100 Series LC-MSD with a diode array detector operating at 220 nm. The column oven was programmed at 35\u00b0C using a Phenomenex Luna 5u column (particle size) C18(2), 100A (pore size) with a column size of 250 \u00d7 3.0 mm. A gradient elution program driven by a quarternary pump was used at a flow rate of 0.5 ml/min (injection volume: 20 \u00b5l). The acetonitrile/water gradient used was 0\u20132 min (5% acetonitrile); 2\u201317 min (5\u2013100% acetonitrile); 17\u201322 min (100% acetonitrile); 22\u201324.5 min (100\u20135% acetonitrile); 24.5\u201327 min (5% acetonitrile). The mass spectrometer was operated using the SCAN mode in the electrospray ionization mode. The analyzing sector contained a quadrupole analyzer and an electron multiplier detector.\n",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "01afcb48-b709-4642-8be2-35cb737eedba",
+      "submission_id": "6451a83b-6ed1-4fd7-81a8-c4df174d7be4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joerg Bohlmann, University of British Columbia , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02365.018](https://doi.org/10.7554/eLife.02365.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA gene horizontally transferred from bacteria protects arthropods from host plant cyanide poisoning\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors, and one of whom, S\u00f8ren Bak, has agreed to reveal his identity.\n\nThe Reviewing editor and the other reviewers discussed their comments before reaching this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission:\n\nYour paper describes new evidence that supports a scenario of horizontal transfer of a gene encoding CAS/CYS activity from bacteria to T. urticae. The horizontally transferred gene has a proposed role in T. uritcae's detoxification of cyanide exposure from host plants. In general the external reviewers and the Reviewing editor found much that they liked about this work and recognized its novelty and relevance for a broad scientific audience. The paper appears to be important for our general understanding of the evolution of certain arthropods to colonize host plants that contain cyanogenic glucosides, and might lead to new genomics-enabled discoveries in other systems of plant-arthropod interactions. The paper is well written and easy to follow. The reviewers and the Reviewing editor found the paper convincing in its documentation of a CAS/CYS gene of likely bacterial origin integrated into the T. urticae genome. The biochemical characterization of the encoded T. urticae CAS/CYS enzyme also appears to be solid, although some additional data are requested to substantiate conclusions of product formation and enzyme kinetic properties (please see below). The reviewers and the Reviewing editor commented on a lack of discussion (or lack of data) to explain the phylogenetic pattern of a limited appearance of the CYS/CAS gene in T. urticae and only a relatively small number of Lepidoptera as presented in Figure 2. At the least, the Discussion of the paper needs to be substantially revised with a plausible explanation for this observation (please see below). However, if this important question regarding the phylogeny cannot be resolved with a new Discussion, additional data mining or generation of additional supporting data would be required to fill this critical gap in an otherwise interesting story.\n\nMajor issues to address:\n\n1) To allow the reader to assess enzyme kinetic properties, the KM and kcat values must be shown in Table 1. Vmax values shown in one of the figures are not very informative.\n\n2) The text says that products of CAS activity, beta-cyanoalanine, were identified by TLC and LC-MS. The authors refer to Figure 9 for these results. However, Figure 9 only shows TLC data, which may not be sufficiently informative. To support statements of product identification, the LC-MS results must be shown for enzyme products and the authentic standard.\n\n3) While the results appear to be generally sound, the reviewers and the Reviewing editor did not find a convincing explanation of the phylogenetic distribution of the described horizontally transferred CAS/CYS gene in T. urticae and only a few Lepidoptera. This point requires a better discussion and potentially additional data to support or explain the phylogenic pattern of distribution of the CAS/CYS gene.\n\nThe phylogenies in Figure 2 suggest that the horizontally transferred gene in the mite and the insects identified share a common ancestor. This is not discussed sufficiently in the text. The fact that this gene is apparently only found in 18 arthropods (of all of those with substantial sequences in public databases) would suggest either a loss of such a gene in most arthropods lineages or more than one independent horizontal gene transfer event in T. urticae and the Lepidoptera.\n\nAlthough the authors indicate they looked at several insect species for this gene, they do not describe the extent of their search. Did they examine the genomic data available outside of Lepidoptera (e.g., in Coleoptera, Hymenoptera, and Diptera)? Between insects and arachnids, a common ancestor to this gene might suggest that it was introduced prior to the divergence of insects and arachnids, and therefore may be present (or vestiges thereof) in other insect species. Are there any? If not, does this suggest two separate horizontal gene transfer events? This in silico analysis, and an analysis of the predicted transfer event date based on divergence of the orthologous sequences, would add additional insight into this manuscript.\n\nAfter addressing the above questions, the authors should discuss the alternative scenarios of a single vs. multiple horizontal gene transfer event(s) to explain the phylogeny described in Figure 2 and make a well-supported conclusion to this point.\n",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b6c4f5fe-1788-437e-90ef-546b8df8bb82",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C1",
+      "claim": "Cyanogenic glucosides are among the most widespread defense chemicals of plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanogenic glucosides are among the most widespread defense chemicals of plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about plant defense chemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a480e41a-1ec8-4456-ae0d-367d999c9e11",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C2",
+      "claim": "Upon plant tissue disruption, cyanogenic glucosides are hydrolyzed to a reactive hydroxynitrile that releases toxic hydrogen cyanide (HCN).",
+      "claim_type": "EXPLICIT",
+      "source": "Upon plant tissue disruption, these glucosides are hydrolyzed to a reactive hydroxynitrile that releases toxic hydrogen cyanide (HCN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of cyanogenic glucoside activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "dcddd5f1-88c9-467b-a1f2-08c733673f63",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C3",
+      "claim": "Many mite and lepidopteran species can thrive on plants defended by cyanogenic glucosides.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet many mite and lepidopteran species can thrive on plants defended by cyanogenic glucosides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge about herbivore-plant interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a3e62a3f-cf05-4356-888f-3a2ff2743d54",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C4",
+      "claim": "The enzyme that detoxifies HCN to \u03b2-cyanoalanine in arthropods has remained enigmatic.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of the enzyme known to detoxify HCN to \u03b2-cyanoalanine in arthropods has remained enigmatic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the state of knowledge prior to this study, based on existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "33a537ec-63d3-4375-a962-e86e0d13588c",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C5",
+      "claim": "The gene encoding the HCN detoxification enzyme is a member of the cysteine synthase family horizontally transferred from bacteria to phytophagous mites and Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis showed that the gene is a member of the cysteine synthase family horizontally transferred from bacteria to phytophagous mites and Lepidoptera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis presented in the manuscript (Figure 2) and multiple lines of genomic evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "9d91a6ea-8e0a-49e3-9974-5ac6078dc80f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C6",
+      "claim": "The recombinant mite enzyme had both \u03b2-cyanoalanine synthase and cysteine synthase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombinant mite enzyme had both \u03b2-cyanoalanine synthase and cysteine synthase activity but enzyme kinetics showed that cyanide detoxification activity was strongly favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental enzyme activity assays shown in Figure 6 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "d1264c41-e8e5-4dad-b6bb-ff6ee6add4b2",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C7",
+      "claim": "Enzyme kinetics showed that cyanide detoxification activity was strongly favored over cysteine synthase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombinant mite enzyme had both \u03b2-cyanoalanine synthase and cysteine synthase activity but enzyme kinetics showed that cyanide detoxification activity was strongly favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the specificity constant ratio (CAS/CYS = 33.7) shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "b8e1d42f-ac25-42db-bb63-3a76daeb821b",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C8",
+      "claim": "An ancient horizontal transfer of a gene originally involved in sulfur amino acid biosynthesis in bacteria was co-opted by herbivorous arthropods to detoxify plant produced cyanide.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results therefore suggest that an ancient horizontal transfer of a gene originally involved in sulfur amino acid biosynthesis in bacteria was co-opted by herbivorous arthropods to detoxify plant produced cyanide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on phylogenetic analysis, enzyme activity data, and evolutionary reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "91fa1ee7-af73-4f57-a28d-5a0c7d84160b",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C9",
+      "claim": "More than 2500 plant species are known to synthesize cyanogenic glucosides and cyanolipids as phytoanticipins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanogenesis is one of the most ancient and widespread of these defenses, and more than 2500 plant species are known to synthesize cyanogenic glucosides and cyanolipids as phytoanticipins (constitutive defense compounds present in the plant prior to herbivore attack).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, as indicated by the context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "f685bd48-b9a7-4a90-996d-39fe4f99e3cb",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C10",
+      "claim": "Upon tissue disruption by herbivore feeding, cyanogenic glucosides are degraded by plant \u03b2-glucosidases and \u03b1-hydroxynitrile lyases, resulting in the release of toxic hydrogen cyanide (HCN) and other toxic products such as their aglycones.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon tissue disruption by herbivore feeding, cyanogenic glucosides are degraded by the plant \u03b2-glucosidases and \u03b1-hydroxynitrile lyases, which results in the release of toxic hydrogen cyanide (HCN) and other toxic products such as their aglycones (Gleadow and Woodrow, 2002; Poulton, 1990; Spencer, 1988; Zagrobelny et al., 2004; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous literature and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "69bc0df5-1dcc-4fad-b819-ce78f693f159",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C11",
+      "claim": "Released cyanide is a potent inhibitor of the mitochondrial respiratory chain.",
+      "claim_type": "EXPLICIT",
+      "source": "The released cyanide is a potent inhibitor of the mitochondrial respiratory chain and has a disruptive effect on various metabolic pathways (Solomonson, 1981), thus providing a broad defense against generalist herbivores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "415d149a-2408-429f-9f62-1e20d6baa2fa",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C12",
+      "claim": "Cyanide has a disruptive effect on various metabolic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The released cyanide is a potent inhibitor of the mitochondrial respiratory chain and has a disruptive effect on various metabolic pathways (Solomonson, 1981), thus providing a broad defense against generalist herbivores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "009507ca-6213-4028-8d8b-ce7e6a78dbda",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C13",
+      "claim": "Cyanide provides a broad defense against generalist herbivores.",
+      "claim_type": "EXPLICIT",
+      "source": "The released cyanide is a potent inhibitor of the mitochondrial respiratory chain and has a disruptive effect on various metabolic pathways (Solomonson, 1981), thus providing a broad defense against generalist herbivores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the toxic properties of cyanide and established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "7899dd95-94ff-4792-99d0-1ed03f793c67",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C14",
+      "claim": "Arthropods have evolved several mechanisms to overcome plant cyanogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In their arms race with plants, arthropods have evolved several mechanisms to overcome plant cyanogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about plant-herbivore coevolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "37ca880c-c328-43c6-9b34-98239926efcf",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C15",
+      "claim": "Insect lepidopteran specialists sequester ingested cyanogenic glucosides in their own defense against predators.",
+      "claim_type": "EXPLICIT",
+      "source": "A well-documented case of co-evolution is found in insect lepidopteran specialists that sequester the ingested cyanogenic glucosides in their own defense against predators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about lepidopteran defense strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "267db68b-8cd9-47e7-b41f-8c13fc1ebbf6",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C16",
+      "claim": "Some species such as burnet moths (Zygaenidae) not only sequester, but also synthesize cyanogenic compounds de novo by convergent evolution of the biosynthetic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, cyanogenic compounds have become so crucial for some species such as burnet moths (Zygaenidae) that they not only sequester, but also synthesize these compounds de novo by convergent evolution of the biosynthetic pathways (Jensen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jensen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "1c0123e0-0d74-4d08-a096-8b2c50bace47",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C17",
+      "claim": "In animals, HCN is thought to be detoxified by two main pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals, HCN is thought to be detoxified by two main pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cyanide detoxification in animals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "cf320cdb-c73b-4e28-a02b-c708800707d4",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C18",
+      "claim": "The enzyme rhodanese converts cyanide into thiocyanate, but this biochemical reaction is not very common and thought to be inefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "The enzyme rhodanese converts cyanide into thiocyanate, but this biochemical reaction is not very common and thought to be inefficient (Beesley et al., 1985; Davis and Nahrstedt, 1985; Long and Brattsten, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "d09339d7-3904-4a3d-ae4c-0ddf4fd168ee",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C19",
+      "claim": "The conversion of HCN and cysteine into \u03b2-cyanoalanine and sulfide has been suggested as the main detoxification pathway in arthropods.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the conversion of HCN and cysteine into \u03b2-cyanoalanine and sulfide has been suggested as the main detoxification pathway in arthropods (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "33e74a4a-ca1c-489d-832e-ba5ba58e149d",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C20",
+      "claim": "Several biochemical surveys show a correlation between \u03b2-cyanoalanine synthesis and HCN exposure in lepidopteran species tolerant to HCN.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by several biochemical surveys showing a correlation between \u03b2-cyanoalanine synthesis and HCN exposure in lepidopteran species tolerant to HCN (Meyers and Ahmad, 1991; Stauber et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "b40e5cc0-fb19-40db-9f93-33cbdcbc2d4d",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C21",
+      "claim": "The enzyme that catalyzes the conversion of HCN into \u03b2-cyanoalanine in arthropods has not been identified prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the enzyme that catalyzes this crucial reaction in arthropods has not been identified to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the state of knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "5c34a125-a629-4034-b34f-230d2ea53649",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C22",
+      "claim": "The conversion of HCN into \u03b2-cyanoalanine by an enzyme called \u03b2-cyanoalanine synthase (CAS) has been best studied in bacteria and plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The conversion of HCN into \u03b2-cyanoalanine by an enzyme called \u03b2-cyanoalanine synthase (CAS) has been best studied in bacteria and plants that need to protect themselves from HCN during the synthesis of cyanogenic glucosides or ethylene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CAS enzymes in bacteria and plants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "0c8b27e7-feb6-4cc7-a9b4-4ee12782f0af",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C23",
+      "claim": "Enzymes responsible for CAS activity also have cysteine synthase activity (CYS).",
+      "claim_type": "EXPLICIT",
+      "source": "The enzymes responsible for CAS activity also have cysteine synthase activity (CYS) and are referred to as CYS or CAS depending on their substrate specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the dual activity of these enzymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "cde4bda1-575b-4772-9abf-15f5a9da2760",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C24",
+      "claim": "CYS catalyzes the conversion of O-acetylserine into cysteine, an essential final step in the cysteine biosynthesis pathway unique for plants and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "CYS catalyzes the conversion of O-acetylserine into cysteine, an essential final step in the cysteine biosynthesis pathway unique for plants and bacteria (Bonner et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a2bf73d9-32c9-4341-87a6-e65cdee9ebe6",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C25",
+      "claim": "Animals synthesize cysteine by a different pathway and use related enzymes such as cystathionine-\u03b2-synthase (CBS) and cystathionine-\u03b3-lyase (CGL).",
+      "claim_type": "EXPLICIT",
+      "source": "Animals synthesize cysteine by a different pathway and use related enzymes such as cystathionine-\u03b2-synthase (CBS) and cystathionine-\u03b3-lyase (CGL), which form together with CAS and CYS a group of pyridoxal-5\u2032-phosphate dependent enzymes (Finkelstein et al., 1988; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by a citation and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "e73751ec-9168-4d71-9522-df6c8a8a384c",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C26",
+      "claim": "Tetranychus urticae is one of the most polyphagous arthropod pests known to date.",
+      "claim_type": "EXPLICIT",
+      "source": "This species is one of the most polyphagous arthropod pests known to date, and feeds on more than 1100 plant species from more than 140 plant families, including many cyanogenic plants (Grbic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "67e76603-7a94-4afd-9341-3f110e5fad3c",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C27",
+      "claim": "Tetranychus urticae feeds on more than 1100 plant species from more than 140 plant families, including many cyanogenic plants.",
+      "claim_type": "EXPLICIT",
+      "source": "This species is one of the most polyphagous arthropod pests known to date, and feeds on more than 1100 plant species from more than 140 plant families, including many cyanogenic plants (Grbic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "19e9b797-9a80-4357-9ef7-5d3e227af040",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C28",
+      "claim": "A spider mite strain was transferred from acyanogenic bean plants (Phaseolus vulgaris) to a cultivar of Phaseolus lunatus containing high levels of cyanogenic glucosides and allowed to adapt for more than 30 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "We transferred a spider mite strain reared on acyanogenic bean plants (Phaseolus vulgaris) to a cultivar of Phaseolus lunatus containing high levels of well characterized cyanogenic glucosides such as linamarin and lotaustralin (Ballhorn et al., 2006; Jones, 1998; Wybouw et al., 2012) and allowed the strain to adapt to this host plant for more than 30 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "d94a0c12-e41e-4855-95bf-a3b0b8a621f8",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C29",
+      "claim": "Phaseolus lunatus contains high levels of well characterized cyanogenic glucosides such as linamarin and lotaustralin.",
+      "claim_type": "EXPLICIT",
+      "source": "We transferred a spider mite strain reared on acyanogenic bean plants (Phaseolus vulgaris) to a cultivar of Phaseolus lunatus containing high levels of well characterized cyanogenic glucosides such as linamarin and lotaustralin (Ballhorn et al., 2006; Jones, 1998; Wybouw et al., 2012) and allowed the strain to adapt to this host plant for more than 30 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "fd8c7476-508f-4cba-852f-d17bb0cbbb5c",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C30",
+      "claim": "Only a limited set of 28 genes was found differentially expressed between the parental and adapted lines (absolute fold change \u22652, Benjamini-Hochberg corrected p-value <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the broad response previously detected after host plant changes from Fabaceae to Solanaceae and Brassicaceae (Grbic et al., 2011; Dermauw et al., 2013), only a limited set of 28 genes (absolute fold change \u22652, Benjamini-Hochberg corrected p-value <0.05) was found differentially expressed between the parental and adapted lines (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by microarray data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "d712dfe8-04be-45cc-a72c-ec0643f8f2f8",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C31",
+      "claim": "Within the differentially expressed genes, 18 had an increased expression in the adapted line, while 10 exhibited a lower expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this small set of genes, 18 had an increased expression in the adapted line, while 10 exhibited a lower expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on microarray data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "1756d69d-cfae-4c67-a1c6-12e9967990eb",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C32",
+      "claim": "The most differentially expressed genes after transfer to cyanogenic lima bean encode closely related, small cytoplasmic proteins of unknown function.",
+      "claim_type": "EXPLICIT",
+      "source": "The most differentially expressed genes after transfer to cyanogenic lima bean encode closely related, small cytoplasmic proteins of unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of microarray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "1a7861cd-27d2-475f-9cb9-79803f3c3a68",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C33",
+      "claim": "Among the genes with increased expression were three cytochrome P450 genes, known to respond readily to host plant changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the genes with an increased expression were three cytochrome P450 genes, known to respond readily to host plant changes (Grbic et al., 2011; Dermauw et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on microarray data and supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "b94cc694-47a6-47a7-bab9-3a6587e73c7d",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C34",
+      "claim": "A gene (tetur10g01570, Tu-CAS) encoding a predicted cytosolic protein with high similarity to bacterial cysteine synthases was identified among genes with increased expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we identified a gene (tetur10g01570, Tu-CAS) encoding a predicted cytosolic protein with high similarity to bacterial cysteine synthases (Conserved Domain Database (CDD): COG0031).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on microarray data and sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "39f411a9-aa04-42c6-a849-9ee5e64729b0",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C35",
+      "claim": "Close homologues of Tu-CAS were only detected in two closely related tetranychid mites within chelicerates.",
+      "claim_type": "EXPLICIT",
+      "source": "Within chelicerates, we only detected close homologues of Tu-CAS in two closely related tetranychid mites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence searches in genomic and transcriptomic databases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "6604b549-ab46-42d5-993c-4790174076d6",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C36",
+      "claim": "CAS genes were identified in Tetranychus evansi and Panonychus citri.",
+      "claim_type": "EXPLICIT",
+      "source": "By sequencing PCR amplicons (see below, this section) and a tBLASTn-search in a published transcriptome (Liu et al., 2011), CAS genes were identified in Tetranychus evansi and Panonychus citri, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PCR sequencing and database searches.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "8a796e25-bf90-4588-96ad-fe3681214baa",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C37",
+      "claim": "A tBLASTn-search in published genomes of mesostigmatid mites and of ticks (Metastigmata) did not reveal homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "A tBLASTn-search in published genomes of mesostigmatid mites and of ticks (Metastigmata) did not reveal homologues (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "5fc21fa3-f31a-40a6-8dfe-dc91a7eeaea1",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C38",
+      "claim": "Close homologues of Tu-CAS were detected in lepidopteran genomes (Bombyx mori, Danaus plexippus, Heliconius melpomene, Manduca sexta and Plutella xylostella).",
+      "claim_type": "EXPLICIT",
+      "source": "Broadening the search to arthropods by tBLASTn-searches in NCBI databases and additional arthropod genome portals (Supplementary file 2), we only detected close homologues of Tu-CAS in lepidopteran genomes (Bombyx mori, Danaus plexippus, Heliconius melpomene, Manduca sexta and Plutella xylostella) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on database searches and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "ac8eae02-c822-46f3-9cfe-ff73197854af",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C39",
+      "claim": "Tu-CAS showed on average 75% similarity with lepidopteran protein sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, Tu-CAS showed 75% similarity with lepidopteran protein sequences, and genes encoding these proteins were intronless in both mites and insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "b993d765-5363-4072-8efc-4ad47e3a7a73",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C40",
+      "claim": "Genes encoding CAS proteins were intronless in both mites and insects.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, Tu-CAS showed 75% similarity with lepidopteran protein sequences, and genes encoding these proteins were intronless in both mites and insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "1bfc452f-4503-454d-8e98-cca9748d89c7",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C41",
+      "claim": "A total of 20 (complete and partial) homologous sequences were identified in arthropods by searching additional NCBI EST-databases and published lepidopteran transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "By searching additional NCBI EST-databases and published lepidopteran transcriptomes, a total of 20 (complete and partial) homologous sequences were identified in arthropods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "19c34440-2a2e-4f89-a474-fa50e27ffab6",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C42",
+      "claim": "Phylogenetic reconstruction indicated that arthropod CAS homologous sequences might be monophyletic and were embedded with high node support within bacterial cysteine synthase sequences, indicative of a horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "A phylogenetic reconstruction of these arthropod proteins with CYS, CAS and CBS enzymes of plants, fungi, oomycetes, bacteria and Metazoa indicated that these homologous arthropod sequences might be monophyletic. They were embedded with high node support within bacterial cysteine synthase sequences, indicative of a horizontal gene transfer (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "7d7c571a-460d-4173-bfab-1e781667d21f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C43",
+      "claim": "The most closely related sequences to arthropod CAS are from bacteria that belong to the \u03b1- and \u03b2-Proteobacteria, two of which are Methylobacterium species.",
+      "claim_type": "EXPLICIT",
+      "source": "The most closely related sequences are from bacteria that belong to the \u03b1- and \u03b2-Proteobacteria, two of which are Methylobacterium species, free-living epiphytic bacteria known to establish endophytic colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "37de0d96-f3c8-465d-ad67-dac28d55138c",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C44",
+      "claim": "Methylobacterium species are free-living epiphytic bacteria known to establish endophytic colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "The most closely related sequences are from bacteria that belong to the \u03b1- and \u03b2-Proteobacteria, two of which are Methylobacterium species, free-living epiphytic bacteria known to establish endophytic colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Methylobacterium species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "40197e92-6872-4a57-b534-9581a92efb93",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C45",
+      "claim": "Methylobacterium species are reported to be transferred from the plant to phytophagous insects and to survive inside arthropod hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "These species are reported to be transferred from the plant to phytophagous insects and to survive inside arthropod hosts (Kutschera, 2007; Rampelotti-Ferreira et al., 2010), facilitating a potential horizontal gene transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "f715c3c2-19bb-4292-8d81-6c5d606b3da3",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C46",
+      "claim": "The transfer of Methylobacterium from plants to insects facilitates a potential horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "These species are reported to be transferred from the plant to phytophagous insects and to survive inside arthropod hosts (Kutschera, 2007; Rampelotti-Ferreira et al., 2010), facilitating a potential horizontal gene transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biology of Methylobacterium and HGT mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a9043d9b-ef85-4a12-83b4-172c35d0a7ec",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C47",
+      "claim": "Proteobacteria are known endosymbionts of arthropods and often reside in the reproductive organs for vertical transmission to following generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, Proteobacteria are known endosymbionts of arthropods and often reside in the reproductive organs for vertical transmission to following generations (Wernegreen, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "989a0a67-6eb7-459e-9cbf-8cebbd4a12b0",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C48",
+      "claim": "The intimate relationship between Proteobacteria and arthropods makes successful horizontal gene transfer more likely to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this intimate relationship, successful horizontal gene transfer is more likely to occur (Hotopp, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work on HGT mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "f9d26ad2-e67b-450f-8e53-162eb523a8b5",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C49",
+      "claim": "The mite and insect CAS sequences formed a branch in bacterial cysteine synthase enzymes, some of which have documented dual CYS and CAS activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The mite and insect sequences formed a branch in bacterial cysteine synthase enzymes, some of which have documented dual CYS and CAS activities (Omura et al., 2003) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "8a4d1397-22f6-4fd3-8d78-db0c0bc9b5dd",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C50",
+      "claim": "The arthropod protein sequences and their closest bacterial homologues shared a unique 9 amino acid insertion not present in cysteine synthases of other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The arthropod protein sequences and their closest bacterial homologues shared a unique 9 amino acid insertion not present in cysteine synthases of other organisms, but the residues known to be crucial for substrate and cofactor binding in plants and bacteria showed conservation (Bonner et al., 2005; Yi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "4238fd86-ff56-40b0-8485-bf22a5b1a4aa",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C51",
+      "claim": "The residues known to be crucial for substrate and cofactor binding in plants and bacteria showed conservation in arthropod CAS sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The arthropod protein sequences and their closest bacterial homologues shared a unique 9 amino acid insertion not present in cysteine synthases of other organisms, but the residues known to be crucial for substrate and cofactor binding in plants and bacteria showed conservation (Bonner et al., 2005; Yi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "523b0822-ceab-4c1f-8f6b-1d6da2d00643",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C52",
+      "claim": "The lysine residue (Lys95) that forms a Schiff base linkage to the cofactor pyridoxal-5\u2032-phosphate was conserved in arthropods.",
+      "claim_type": "EXPLICIT",
+      "source": "The lysine residue (Lys95, Glycine max CAS numbering, Yi et al., 2012) that forms a Schiff base linkage to the cofactor pyridoxal-5\u2032-phosphate was also conserved in arthropods (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "7982c554-268f-4e92-b33f-0e4ba91b92a2",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C53",
+      "claim": "Tu-CAS is located on a 3 Mb large scaffold (scaffold 10) and is flanked by typical eukaryotic genes, tetur10g01550 and tetur10g01580.",
+      "claim_type": "EXPLICIT",
+      "source": "Tu-CAS is located on a 3 Mb large scaffold (scaffold 10) and is flanked by typical eukaryotic genes, tetur10g01550 and tetur10g01580.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "ce417b6c-b916-4f33-98bf-36e5b11861a1",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C54",
+      "claim": "Both genes flanking Tu-CAS (tetur10g01550 and tetur10g01580) contain introns with splice sites confirmed by EST or RNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genes contain introns with splice sites confirmed by EST or RNA-seq data (Grbic et al., 2011, GenBank: LIBEST_025606, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic and transcriptomic data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a368b91b-f8fa-4bad-908a-783fba650c3c",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C55",
+      "claim": "Tetur10g01580 encodes a nudix hydrolase highly similar to other arthropod nudix hydrolases.",
+      "claim_type": "EXPLICIT",
+      "source": "Tetur10g01580 encodes a nudix hydrolase (CDD: cl00447) highly similar to other arthropod nudix hydrolases (BLASTp hits with E-value <1e\u221245).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence similarity searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "cdadbdbc-c053-4dcc-999f-328897b24a2d",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C56",
+      "claim": "Remapping of T. urticae Sanger reads and examination of Illumina read coverage in two re-sequenced strains revealed no inconsistencies in the Tu-CAS region.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we remapped the T. urticae Sanger reads used for the genome assembly of the London strain of T. urticae (Grbic et al., 2011) and examined the Illumina read coverage of the Tu-CAS region in two re-sequenced strains (EtoxR and Montpellier) that are geographically distinct from the London strain (Grbic et al., 2011; Van Leeuwen et al., 2012). Neither Sanger nor Illumina-reads revealed any inconsistencies in the Tu-CAS region in any of these strains (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic read mapping analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "fa53dbf7-1892-4c11-bf6b-7662c9ecc257",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C57",
+      "claim": "A 6 kb genomic region bracketing Tu-CAS with the surrounding spliced genes was amplified using a PCR approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, using a PCR approach, we amplified a 6 kb genomic region bracketing Tu-CAS with the surrounding spliced genes (tetur10g01550 and tetur10g01580, Figure 4, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figures 4 and 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a39d326f-29ad-4fa7-9d18-0d55d09594cf",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C58",
+      "claim": "A 6 kb region was amplified in the closely related spider mite T. evansi using a similar strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a similar strategy we also amplified a 6 kb region in the closely related spider mite T. evansi (Figure 4, Figure 4\u2014figure supplement 1) and a nucleotide dot plot between the amplified region of these two species showed clear synteny and the absence of discontinuity around the CAS gene (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figures 4 and 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "7dda4d9b-c021-4659-831a-0a0578b44297",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C59",
+      "claim": "A nucleotide dot plot between the amplified regions of T. urticae and T. evansi showed clear synteny and the absence of discontinuity around the CAS gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a similar strategy we also amplified a 6 kb region in the closely related spider mite T. evansi (Figure 4, Figure 4\u2014figure supplement 1) and a nucleotide dot plot between the amplified region of these two species showed clear synteny and the absence of discontinuity around the CAS gene (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative genomic analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "33141a75-9821-4f98-8913-0867ba0c2063",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C60",
+      "claim": "The GC/GC3 content of Tu-CAS was most similar to the GC/GC3 content of genes from the T. urticae genome, and quite distinct from the GC/GC3 content of genes from the three annotated bacterial genomes in the closest sister clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the GC/GC3 content of Tu-CAS was most similar to the GC/GC3 content of genes from the T. urticae genome, and quite distinct from the GC/GC3 content of genes (including the CYS/CAS genes) from the three annotated bacterial genomes in the closest sister clade to the apparent monophyletic arthropod clade (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on codon usage analysis shown in Figure 5, indicating amelioration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "dc4443e9-a4d0-4b46-9c11-ede21cf20b1c",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C61",
+      "claim": "Tu-CAS is a sequence integrated in the genome of T. urticae and does not represent bacterial contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data provide strong evidence that Tu-CAS is a sequence integrated in the genome of T. urticae and does not represent bacterial contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of genomic evidence (read mapping, PCR, synteny, amelioration).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "4735d16a-c6b4-4297-b0de-3faa40b3f580",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C62",
+      "claim": "Recombinantly expressed Tu-CAS in E. coli was obtained in mg quantities after affinity purification.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to functionally test whether arthropod enzymes are active and still able to catalyze both reactions after horizontal gene transfer, we recombinantly expressed Tu-CAS in Escherichia coli and obtained mg quantities after affinity purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach for protein production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "bada6f85-6284-4a97-8752-5df51a004381",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C63",
+      "claim": "Biochemical assays confirmed that Tu-CAS catalyzes both CYS and CAS reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent biochemical assays confirmed that Tu-CAS catalyzes both reactions (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on enzyme activity assays shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "fd7bd3b6-5fbb-422b-ad45-051f9ac50a07",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C64",
+      "claim": "The CAS/CYS ratio of the specificity constants was 33.7, showing that CAS activity was strongly favored over CYS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAS/CYS ratio of the specificity constants was 33.7, showing that CAS activity was strongly favored over CYS activity (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on enzyme kinetics data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "94119ce4-d89e-4dab-a020-ca71330bb38f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C65",
+      "claim": "The preferred CAS activity of Tu-CAS is typical of known plant CAS enzymes and clearly different from CYS enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "This preferred CAS activity is typical of known plant CAS enzymes and clearly different from CYS enzymes (Table 1; Yamaguchi et al., 2000; Wada et al., 2004; Bogicevic et al., 2012; Yi et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of enzyme kinetics data in Table 1 with literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "5975c6bf-bc82-41e9-971e-b4e773daa34f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C66",
+      "claim": "Enzymatic activity of Tu-CAS was dependent on pyridoxal-5\u2032-phosphate as a cofactor.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymatic activity was dependent on pyridoxal-5\u2032-phosphate as a cofactor, and the substrate-dependent formation of \u03b2-cyanoalanine was further confirmed by thin layer chromatography (TLC) and LC-MS (Figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on enzyme activity assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "52a662a1-c6d1-45c7-8412-1fc0dd8be1b0",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C67",
+      "claim": "The substrate-dependent formation of \u03b2-cyanoalanine was confirmed by thin layer chromatography (TLC) and LC-MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymatic activity was dependent on pyridoxal-5\u2032-phosphate as a cofactor, and the substrate-dependent formation of \u03b2-cyanoalanine was further confirmed by thin layer chromatography (TLC) and LC-MS (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analytical chemistry data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "3d994825-fb6b-4d12-a296-123005c60a4b",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C68",
+      "claim": "The very high sequence similarity between Tu-CAS and the lepidopteran proteins strongly suggests that the lepidopteran proteins can catalyze the same two reactions (cyanide detoxification and cysteine synthesis).",
+      "claim_type": "EXPLICIT",
+      "source": "The very high sequence similarity between Tu-CAS and the lepidopteran proteins strongly suggests that the lepidopteran proteins can catalyze the same two reactions (cyanide detoxification and cysteine synthesis) and that these proteins are responsible for the known wide occurrence of CAS activity in lepidopteran species (Witthohn and Naumann, 1987; Meyers and Ahmad, 1991; Stauber et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence similarity and known CAS activity in Lepidoptera.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "418884d8-3d28-4a12-a3c0-3eb6763c143f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C69",
+      "claim": "The lepidopteran CAS proteins are responsible for the known wide occurrence of CAS activity in lepidopteran species.",
+      "claim_type": "EXPLICIT",
+      "source": "The very high sequence similarity between Tu-CAS and the lepidopteran proteins strongly suggests that the lepidopteran proteins can catalyze the same two reactions (cyanide detoxification and cysteine synthesis) and that these proteins are responsible for the known wide occurrence of CAS activity in lepidopteran species (Witthohn and Naumann, 1987; Meyers and Ahmad, 1991; Stauber et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence similarity and literature on CAS activity in Lepidoptera.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "b73f5178-8d64-4987-9dc1-92c710b1a34e",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C70",
+      "claim": "The ability to detoxify HCN plays a crucial ecological role in arthropods and is thought to have allowed the exploitation of cyanogenic plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In arthropods, the ability to detoxify HCN plays a crucial ecological role and is thought to have allowed the exploitation of cyanogenic plants by circumventing the toxic effects of HCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on ecological and evolutionary reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "27511178-5c55-4638-95f4-628a1d020940",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C71",
+      "claim": "The two-spotted spider mite increases transcript levels of a horizontally transferred \u03b2-cyanoalanine synthase upon adaptation on cyanogenic bean.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown here that the two-spotted spider mite increases transcript levels of a horizontally transferred \u03b2-cyanoalanine synthase upon adaptation on cyanogenic bean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on microarray data showing differential expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "59014fbb-dbf5-4af2-91f0-9b465f695b78",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C72",
+      "claim": "Phylogenetic evidence alone does not constitute strong evidence for horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic evidence alone does not constitute strong evidence for horizontal gene transfer (HGT), because in the absence of introns in the sequence, a contamination of the mite genome sequence with a sequence from a bacterial symbiont or commensal cannot be excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of phylogenetic evidence for HGT.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "79078c7a-8e33-4136-9fc4-048d99653b45",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C73",
+      "claim": "The results of mite genomic analysis, codon amelioration, synteny and genomic PCR, combined with the phylogenetic evidence, unambiguously prove that T. urticae CAS has a bacterial origin and was laterally transferred and incorporated into the mite genome prior to the divergence in the Tetranychidae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the results of mite genomic analysis, codon amelioration, synteny and genomic PCR, combined with the phylogenetic evidence, unambiguously prove that T. urticae CAS has a bacterial origin and was laterally transferred and incorporated into the mite genome prior to the divergence in the Tetranychidae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of evidence presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "7dc0f2f1-0f0a-4653-a5d6-728a0c57552a",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C74",
+      "claim": "A homologous lateral gene transfer has also occurred in Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "A homologous lateral gene transfer has also occurred in Lepidoptera (Figure 2) raising the question of the time and number of HGT events needed to explain the phylogenetic pattern of distribution of the CYS/CAS genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "199d4f4b-c66f-487c-8e05-13d279782bf2",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C75",
+      "claim": "The hypothesis of a single HGT to a common ancestor of mites and insects, followed by selective losses, is not parsimonious due to the numerous losses that would be required.",
+      "claim_type": "EXPLICIT",
+      "source": "The broad sampling of arthropod species that revealed the absence of any CYS/CAS-like sequence (even as a distant recognizable trace) argues against the origin of the gene in the common ancestor of tetranychid mites and Lepidoptera, followed by multiple independent losses. These losses would have to be numerous: seven in the hexapods (Trichoptera, Diptera, Hymenoptera, Coleoptera/Strepsiptera, Hemiptera/Heteroptera/Thysanoptera/Phthiraptera, Orthoptera, Odonata/Ephemeroptera) and six further in other arthropods (Copepoda/Branchiopoda, Myriapoda, Aranea, Scorpiones, Metastigmata and Mesostigmata). This figure of 13 losses is an absolute minimum that implies that the loss occurred each time at the origin of the lineage, that is before any speciation beyond the point of coalescence. A loss later in the history of each lineage would rapidly increase the total number of losses. We strongly believe that this hypothesis is not parsimonious, and therefore that there was no CYS/CAS gene in the common ancestor of mites and Lepidoptera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on phylogenetic reasoning and parsimony analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "0223c473-be9d-4858-a83b-e4acbd0d5a9f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C76",
+      "claim": "Two HGT events might have occurred (one to a mite ancestor, one to a lepidopteran ancestor) or a single HGT from a donor bacterial species, followed by a transfer between a mite and a lepidopteran.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) Alternatively, two HGT events might have occurred (one to a mite ancestor, one to a lepidopteran ancestor) or (c) a single HGT from a donor bacterial species, followed by a transfer between a mite and a lepidopteran.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are alternative hypotheses proposed based on phylogenetic analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "b3fc4ebe-e94b-40ad-be40-e0efa345e64a",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C77",
+      "claim": "The apparent monophyly of the arthropod CAS gene may be due to the fact that both the mite and the insect gene came from very closely related bacteria not represented in the phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent monophyly of the arthropod CAS gene may be due to the fact that both the mite and the insect gene came from very closely related bacteria, but these bacteria are not represented in the tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the phylogenetic pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "f245b4c0-1aa2-4497-bcdb-883119307ce2",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C78",
+      "claim": "The transfer from a lepidopteran to mite is improbable, because the mite sequence would branch with the closest relative to the lepidopteran donor, rather than being basal.",
+      "claim_type": "EXPLICIT",
+      "source": "The transfer from a lepidopteran to mite is improbable, because the mite sequence would branch with the closest relative to the lepidopteran donor, rather than being basal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on phylogenetic reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "354c8aea-4cc7-4e9b-aa27-202dc1d6d2a9",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C79",
+      "claim": "The authors favor the hypothesis of two HGT events, with a very old transfer to an ancestral lepidopteran, and a second transfer to an ancestral mite.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore favor hypothesis (b), with a very old transfer to an ancestral lepidopteran, and a second transfer to an ancestral mite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' preferred hypothesis based on the available evidence.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "025747a7-154a-43d5-8e05-e2bc04e5461a",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C80",
+      "claim": "The absence of a CAS enzyme in Mesostigmata (typically parasitic and predatory mites) and Metastigmata (ticks) suggests transfer occurred after the split of Prostigmata in the Lower Devonian about 400 MYA.",
+      "claim_type": "EXPLICIT",
+      "source": "Current sampling of mite species is insufficient to give a good estimate of time, but we note the absence of a CAS enzyme in Mesostigmata (typically parasitic and predatory mites) and Metastigmata (ticks), and transfer is likely to have occurred after the split of Prostigmata in the Lower Devonian about 400 MYA (Dabert et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on phylogenetic distribution and timing, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "bf45ba24-07f1-4ca2-83e1-ef42ab3365a1",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C81",
+      "claim": "The hypothesis of multiple transfers is compatible with the presence of a CYS-like sequence in the mealybug Planococcus citri, apparently derived from its endosymbiont.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothesis of multiple transfers is also compatible with the presence of a CYS-like sequence in the mealybug Planococcus citri, apparently derived from its endosymbiont (Husnik et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to another study showing a separate HGT event.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "87d9caaf-7f6e-44cd-9a5e-8fb4fdef7c5b",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C82",
+      "claim": "In Lepidoptera, the CAS gene was subsequently duplicated in H. melpomene and D. plexippus that have 3 and 2 copies of the gene, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In Lepidoptera, the CAS gene was subsequently duplicated in H. melpomene and D. plexippus that have 3 and 2 copies of the gene, respectively (Sun et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic data supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "5fccd060-c671-42cb-9760-cb15ff7886fb",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C83",
+      "claim": "Species of Papilionoidea, like burnet moths, not only thrive on cyanogenic plants, but have themselves evolved the ability to synthesize cyanogenic compounds de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "These species of Papilionoidea, like burnet moths, not only thrive on cyanogenic plants, but have themselves evolved the ability to synthesize cyanogenic compounds de novo (Jensen et al., 2011) that now have crucial functions in their life history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "ae049389-7c4a-45c7-85a6-a53a3f4d1a1e",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C84",
+      "claim": "Cyanogenesis serves in predator defense by releasing HCN in Papilionoidea.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanogenesis serves in predator defense by releasing HCN, but also stores reduced nitrogen that can be mobilized for chitin synthesis, and plays a role in mate choice by determining the attractiveness of nuptial gifts from male to female partners (Zagrobelny et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "c231d406-fd1a-4748-81aa-2c9123d670ee",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C85",
+      "claim": "Cyanogenesis stores reduced nitrogen that can be mobilized for chitin synthesis in Papilionoidea.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanogenesis serves in predator defense by releasing HCN, but also stores reduced nitrogen that can be mobilized for chitin synthesis, and plays a role in mate choice by determining the attractiveness of nuptial gifts from male to female partners (Zagrobelny et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a887005a-1017-40fc-acd8-e7435f5c990e",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C86",
+      "claim": "Cyanogenesis plays a role in mate choice by determining the attractiveness of nuptial gifts from male to female partners in Papilionoidea.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanogenesis serves in predator defense by releasing HCN, but also stores reduced nitrogen that can be mobilized for chitin synthesis, and plays a role in mate choice by determining the attractiveness of nuptial gifts from male to female partners (Zagrobelny et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "020614a1-6ab7-46eb-8205-aac81ff0c33d",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C87",
+      "claim": "The results support the early idea that CAS activity is needed for the exploitation of cyanogenic glucosides in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support the early idea that CAS activity is needed for the exploitation of cyanogenic glucosides in insects (Meyers and Ahmad, 1991; Witthohn and Naumann, 1987; Zagrobelny et al., 2008) whether they are sequestered from the plant, or synthesized de novo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings and supported by citations to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "75161934-74f2-4996-8ba4-0057b016e7bd",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C88",
+      "claim": "Higher \u03b2-cyanoalanine synthase activity in Spodoptera eridania than in Trichoplusia ni is related to higher cyanide tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher \u03b2-cyanoalanine synthase activity in Spodoptera eridania than in Trichoplusia ni is related to higher cyanide tolerance (Meyers and Ahmad, 1991), and this enzyme activity is widespread in Lepidoptera (Witthohn and Naumann, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a35e688e-4d28-4452-97db-1c7981b55c53",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C89",
+      "claim": "\u03b2-cyanoalanine synthase enzyme activity is widespread in Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher \u03b2-cyanoalanine synthase activity in Spodoptera eridania than in Trichoplusia ni is related to higher cyanide tolerance (Meyers and Ahmad, 1991), and this enzyme activity is widespread in Lepidoptera (Witthohn and Naumann, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a9062440-1f01-4be5-b995-6f1c568ef650",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C90",
+      "claim": "Specialist pierid butterflies that feed on Brassicales release equimolar concentrations of HCN upon metabolism of benzylglucosinolates, turning the 'mustard oil bomb' into a 'cyanide bomb'.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it was recently shown that specialist pierid butterflies that feed on Brassicales, release equimolar concentrations of HCN upon metabolism of benzylglucosinolates, turning the 'mustard oil bomb' into a 'cyanide bomb' (Stauber et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "272f46b6-44c9-4849-8075-1247c2b7563b",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C91",
+      "claim": "When Pieris rapae feeds on a cyanogenic (dhurrin-containing) plant that this species does not normally consume, an increased production of \u03b2-cyanoalanine and thiocyanate is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When Pieris rapae feeds on a cyanogenic (dhurrin-containing) plant that this species does not normally consume, an increased production of \u03b2-cyanoalanine and thiocyanate is observed, thus implicating both a CAS and a rhodanese activity (Stauber et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "e51668f4-f9bb-47e4-9123-5df9e2fc928f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C92",
+      "claim": "It was proposed that the ability of P. rapae to metabolize HCN allowed the primary host transfer from Fabales to Brassicales.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore proposed that the ability of P. rapae to metabolize HCN allowed the primary host transfer from Fabales to Brassicales (Stauber et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from previous work supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "dbf38f87-1e52-441e-a961-4ae38158bc16",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C93",
+      "claim": "The gene for either CAS or rhodanese has not been identified in arthropods before this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene for either CAS or rhodanese has not been identified in arthropods before, and their respective role in detoxification of HCN is not formally demonstrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the state of knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "4ac7c20d-970c-439b-857f-0536dd261590",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C94",
+      "claim": "There is no close homologue of the known rhodanese (thiosulfate sulfurtransferase) gene in T. urticae or in Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no close homologue of the known rhodanese (thiosulfate sulfurtransferase) gene in T. urticae or in Lepidoptera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "c6ef677f-d5b9-44b3-bf48-6f2ff7730c22",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C95",
+      "claim": "The presence of the same CAS gene in lepidopteran species that display CAS activity in vivo is strong evidence for the function of the laterally transferred CAS gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that the presence of the same gene in lepidopteran species that display this activity in vivo (Meyers and Ahmad, 1991; Stauber et al., 2012) is strong evidence for the function of the laterally transferred CAS gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the presence of the gene and known enzyme activity in Lepidoptera.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "09c6f453-9c08-431e-ae8b-c5119cca4f35",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C96",
+      "claim": "The CYS activity acquired after horizontal gene transfer may have enhanced the sulfur amino acid economy of mites and lepidopterans.",
+      "claim_type": "EXPLICIT",
+      "source": "Next to the detoxification function, the CYS activity acquired after horizontal gene transfer may also have enhanced the sulfur amino acid economy of mites and lepidopterans (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation about an additional benefit of the HGT.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "7fe32ac7-2759-416d-8efd-6e0c180cc91a",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C97",
+      "claim": "Nematodes were thought to be the only animal species to synthesize cysteine independently from methionine by CYS activity prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, nematodes were the only animal species thought to synthesize cysteine independently from methionine by CYS activity (Budde and Roth, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "7734125e-18db-443a-8e5e-5f6db2cb68f8",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C98",
+      "claim": "Nematode CYS sequences grouped with plants and oomycetes, clearly outside the arthropod-bacterial clade, suggestive of a different origin of CYS between metazoan subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nematode CYS sequences grouped with plants and oomycetes, clearly outside the arthropod-bacterial clade, suggestive of a different origin of CYS between metazoan subgroups (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "3e928633-c87a-4495-9024-2d60b3892e62",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C99",
+      "claim": "In Caenorhabditis elegans, cyanide resistance is conferred by the cysl-2 gene, probably encoding an enzyme with CAS activity while cysl-1 is a classical cysteine synthase gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Duplications of cys genes were observed in nematodes, and indeed genetic evidence suggests that in Caenorhabditis elegans cyanide resistance is conferred by the cysl-2 gene, probably encoding an enzyme with CAS activity while cysl-1 is a classical cysteine synthase gene (Budde and Roth, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "61891368-c1a5-4eaa-98dc-12029ce9a66f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C100",
+      "claim": "The acquisition of an alternative cysteine biosynthesis route fits into previously documented horizontal gene transfers in T. urticae.",
+      "claim_type": "EXPLICIT",
+      "source": "The acquisition of an alternative cysteine biosynthesis route fits into previously documented horizontal gene transfers in T. urticae that include a cobalamin-independent methionine synthase gene, genes for carotenoid biosynthesis, as well as laterally acquired genes that likewise respond to host plant change such as intradiol ring-cleavage dioxygenases and a cyanase gene (Grbic et al., 2011; Wybouw et al., 2012; Dermauw et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with other known HGT events, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "ec5c92f4-171c-42cd-835a-2be1d86fd219",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C101",
+      "claim": "T. urticae has previously acquired genes by horizontal gene transfer including a cobalamin-independent methionine synthase gene, genes for carotenoid biosynthesis, intradiol ring-cleavage dioxygenases and a cyanase gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The acquisition of an alternative cysteine biosynthesis route fits into previously documented horizontal gene transfers in T. urticae that include a cobalamin-independent methionine synthase gene, genes for carotenoid biosynthesis, as well as laterally acquired genes that likewise respond to host plant change such as intradiol ring-cleavage dioxygenases and a cyanase gene (Grbic et al., 2011; Wybouw et al., 2012; Dermauw et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "568c26fb-10c0-4048-a242-5d27cb996df3",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C102",
+      "claim": "The cyanase gene encodes an enzyme that decomposes cyanate (CNO\u2212), a bacterial or photochemical decomposition product of cyanide, to carbon dioxide and ammonia.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter encodes an enzyme that decomposes cyanate (CNO\u2212), a bacterial or photochemical decomposition product of cyanide, to carbon dioxide and ammonia (Wybouw et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a8324217-8116-4a19-aa3f-145d1c10244b",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C103",
+      "claim": "The cyanase enzyme may serve as a second line of spider mite defense against cyanogenic plants, or alternatively may have a regulatory function in the amino acid and pyrimidine metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "This enzyme may serve as a second line of spider mite defense against cyanogenic plants, or alternatively may have a regulatory function in the amino acid and pyrimidine metabolism as previously suggested (Wybouw et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the function of the cyanase enzyme, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "516ff1f5-1e97-46c9-a6ac-da8efb992573",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C104",
+      "claim": "For a polyphagous herbivore, horizontal gene transfer might play an important role in gaining independence from the varying plant nutrients and defense compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "For a polyphagous herbivore, horizontal gene transfer might play an important role in gaining independence from the varying plant nutrients and defense compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the broader significance of HGT for polyphagous herbivores.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "e581c831-8c14-4693-9547-ffe431225353",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C105",
+      "claim": "It remains unclear which reaction (CAS/CYS) of Tu-CAS provides the strongest adaptive advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains unclear which reaction (CAS/CYS) of Tu-CAS provides the strongest adaptive advantage, but the CYS activity might be one of the reasons why these horizontally transferred genes have been retained in organisms that are at present not living on cyanogenic plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges uncertainty about the relative importance of the two enzyme activities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "3998faf8-fea0-41dc-8ca2-a56a3f0836e0",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C106",
+      "claim": "The CYS activity might be one of the reasons why these horizontally transferred genes have been retained in organisms that are at present not living on cyanogenic plants.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains unclear which reaction (CAS/CYS) of Tu-CAS provides the strongest adaptive advantage, but the CYS activity might be one of the reasons why these horizontally transferred genes have been retained in organisms that are at present not living on cyanogenic plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the evolutionary retention of the gene.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "a918dfa7-b347-4de6-82a5-20bda8b0ab6d",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C107",
+      "claim": "A horizontal gene transfer from a bacterial ancestor underlies the exploitation of cyanogenic host plants in some arthropod lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, a horizontal gene transfer from a bacterial ancestor underlies the exploitation of cyanogenic host plants in some arthropod lineages and made the subsequent evolution of a convergent pathway for synthesis of cyanogenic glucosides possible, as shown in burnet moths (Jensen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "2b2da539-d074-4ac6-b2fc-1b23a26278eb",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "claim_id": "C108",
+      "claim": "The horizontal gene transfer made the subsequent evolution of a convergent pathway for synthesis of cyanogenic glucosides possible, as shown in burnet moths.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, a horizontal gene transfer from a bacterial ancestor underlies the exploitation of cyanogenic host plants in some arthropod lineages and made the subsequent evolution of a convergent pathway for synthesis of cyanogenic glucosides possible, as shown in burnet moths (Jensen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the evolutionary consequences of the HGT, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ddd86dcc-9df6-4755-900d-ab6164f0773e",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Spider mites adapted to cyanogenic lima bean for >30 generations showed limited transcriptional changes (28 differentially expressed genes), including upregulation of Tu-CAS, a gene encoding a protein with high similarity to bacterial cysteine synthases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design is clearly described (C28-C29), microarray analysis with appropriate statistical thresholds was performed (C30), and the identification of Tu-CAS among upregulated genes is supported by sequence analysis (C34). The limited transcriptional response contrasts with broader responses to other host plants, strengthening the specificity of the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "c1b70f12-67d5-4785-9d04-1add9620157b",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis reveals that Tu-CAS homologues are restricted to tetranychid mites and Lepidoptera within arthropods, and these sequences are embedded within bacterial cysteine synthase sequences with high node support, indicating horizontal gene transfer from \u03b1- and \u03b2-Proteobacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The phylogenetic analysis (C42, Figure 2) is based on comprehensive database searches across arthropods (C35-C41) and shows clear embedding of arthropod sequences within bacterial clades with high bootstrap support. The restricted phylogenetic distribution (C35, C37) and closest bacterial relatives identified (C43) provide strong evidence for HGT rather than vertical inheritance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "f25852da-aa56-41cc-970a-8a858a73ef7f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Arthropod CAS sequences share a unique 9 amino acid insertion with their closest bacterial homologues, while conserving residues crucial for substrate and cofactor binding, including the catalytic lysine residue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Sequence alignment analysis (Figure 2\u2014figure supplement 1) demonstrates both the unique insertion shared between arthropods and specific bacteria (C50) and conservation of functionally important residues (C51-C52). This pattern supports common ancestry while indicating functional constraint.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "1693e6a6-22bd-4881-8a4b-1960479394bc",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple lines of genomic evidence demonstrate that Tu-CAS is integrated into the T. urticae genome rather than representing bacterial contamination: genomic location flanked by typical eukaryotic genes with confirmed introns, consistent read coverage across multiple strains, PCR amplification with synteny to T. evansi, and amelioration of GC content to match the host genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors provide comprehensive evidence addressing the critical alternative hypothesis of contamination. Genomic context (C53-C55), read mapping from multiple strains (C56), PCR validation with synteny (C57-C59), and codon usage amelioration (C60) collectively provide strong support that Tu-CAS is genuinely integrated into the mite genome (C61). This multi-pronged approach is rigorous and appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "ba1e2471-a767-4889-b266-933181d7a59a",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Recombinant Tu-CAS exhibits both cysteine synthase and \u03b2-cyanoalanine synthase activities, with enzyme kinetics strongly favoring cyanide detoxification (CAS/CYS specificity constant ratio of 33.7), similar to plant CAS enzymes and distinct from bacterial CYS enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Biochemical characterization is thorough, with enzyme activity assays (C63, Figure 6), kinetic parameters (C64, Table 1), comparison to known enzymes (C65), cofactor dependence (C66), and product confirmation by TLC and LC-MS (C67). The specificity constant ratio provides quantitative evidence for functional specialization toward cyanide detoxification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The combined phylogenetic, genomic, and amelioration evidence unambiguously demonstrates bacterial origin and lateral transfer of CAS to tetranychid mites prior to their divergence (~400 MYA) and to Lepidoptera, with the authors favoring two independent HGT events over a single ancient transfer with multiple losses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge that phylogenetic evidence alone is insufficient (C72) but demonstrate that multiple lines of evidence together prove HGT (C73). The parsimony argument against a single ancient HGT with 13+ losses is well-reasoned (C75), and the preferred hypothesis of two independent transfers (C79) is justified, though alternative scenarios are appropriately discussed (C76-C78). The timing estimate (C80) is reasonable based on phylogenetic distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "98edbcf8-bc0f-4e84-85ad-276cccc83e68",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The high sequence similarity between Tu-CAS and lepidopteran CAS proteins, combined with known CAS activity in lepidopteran species, provides strong evidence that lepidopteran homologues are responsible for the widespread \u03b2-cyanoalanine synthase activity documented in Lepidoptera.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The inference is reasonable given 75% sequence similarity (C39), conservation of catalytic residues, and documented CAS activity in lepidopteran species (C68-C69, C88-C89). While direct biochemical characterization of lepidopteran enzymes would strengthen the claim, the convergence of sequence and biochemical evidence from the literature provides strong support (C95).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "6267754c-71d0-4c2c-a944-66ac846054be",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "An ancient horizontal gene transfer of a bacterial cysteine synthase gene was co-opted by herbivorous arthropods for cyanide detoxification, enabling exploitation of cyanogenic plants and potentially facilitating subsequent evolution of de novo cyanogenic compound synthesis in some lepidopteran lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion integrates multiple results: HGT from bacteria (C5, C73), functional co-option for detoxification (C8, C63-C65), upregulation on cyanogenic plants (C71), ecological significance (C70, C87), and evolutionary implications (C107-C108). The evidence chain is strong, though the link to evolution of de novo synthesis (C108) is more speculative and based on prior literature rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "3544b547-2e07-414a-9a4b-32398ee1cd7a",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In some Lepidoptera (H. melpomene, D. plexippus), the CAS gene underwent subsequent duplication, and in Papilionoidea, cyanogenic compounds evolved multiple functions including predator defense, nitrogen storage, and mate choice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Gene duplication is supported by genomic data (C82), and the multiple functions of cyanogenesis in Papilionoidea (C83-C86) are established by cited literature. This result contextualizes the evolutionary trajectory following HGT but relies primarily on prior work rather than new data from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "2bc16d5c-4c8c-4f3e-9ef3-4fd5777fe0ed",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The dual CYS/CAS activity may have enhanced sulfur amino acid economy in arthropods, providing an alternative cysteine biosynthesis pathway previously thought unique to nematodes among animals, which may explain retention of the gene in species not currently feeding on cyanogenic plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the dual activity is demonstrated (C63-C64), the adaptive significance of CYS activity (C96, C106) remains speculative. The authors appropriately acknowledge uncertainty (C105). The comparison to nematodes (C97-C99) is interesting but the different phylogenetic origin (C98) suggests independent evolution. This hypothesis requires functional validation in vivo to determine whether CYS activity provides significant fitness benefits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "d72ee541-809f-4581-8727-3a4e71a8017e",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior studies documented widespread CAS activity in Lepidoptera, correlation with cyanide tolerance, and production of \u03b2-cyanoalanine when feeding on cyanogenic or glucosinolate-containing plants, but the genes responsible had not been identified before this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result summarizes established knowledge from the literature (C88-C92) and correctly identifies the knowledge gap (C93-C94) that this study addresses. The absence of rhodanese homologues (C94) strengthens the case for CAS as the primary detoxification mechanism. This contextualizes the significance of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    },
+    {
+      "id": "b80442b6-f8b5-4e78-a531-9698b5ec460a",
+      "content_id": "2824d78a-6b61-48f3-ac70-eebfddb08025",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The acquisition of CAS fits into a broader pattern of horizontal gene transfers in T. urticae affecting metabolism and plant defense responses, including genes for methionine synthesis, carotenoid biosynthesis, and a cyanase gene that may provide secondary cyanide defense.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The pattern of multiple HGT events in T. urticae (C101) is supported by cited prior work. The cyanase gene function (C102) is established, though its role as secondary defense or metabolic regulation (C103) remains speculative. The broader significance for polyphagous herbivores (C104) is a reasonable inference but requires further testing across species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:04.653572Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "19e9b797-9a80-4357-9ef7-5d3e227af040",
+      "result_id": "ddd86dcc-9df6-4755-900d-ab6164f0773e"
+    },
+    {
+      "claim_id": "d94a0c12-e41e-4855-95bf-a3b0b8a621f8",
+      "result_id": "ddd86dcc-9df6-4755-900d-ab6164f0773e"
+    },
+    {
+      "claim_id": "fd8c7476-508f-4cba-852f-d17bb0cbbb5c",
+      "result_id": "ddd86dcc-9df6-4755-900d-ab6164f0773e"
+    },
+    {
+      "claim_id": "d712dfe8-04be-45cc-a72c-ec0643f8f2f8",
+      "result_id": "ddd86dcc-9df6-4755-900d-ab6164f0773e"
+    },
+    {
+      "claim_id": "1756d69d-cfae-4c67-a1c6-12e9967990eb",
+      "result_id": "ddd86dcc-9df6-4755-900d-ab6164f0773e"
+    },
+    {
+      "claim_id": "1a7861cd-27d2-475f-9cb9-79803f3c3a68",
+      "result_id": "ddd86dcc-9df6-4755-900d-ab6164f0773e"
+    },
+    {
+      "claim_id": "b94cc694-47a6-47a7-bab9-3a6587e73c7d",
+      "result_id": "ddd86dcc-9df6-4755-900d-ab6164f0773e"
+    },
+    {
+      "claim_id": "39f411a9-aa04-42c6-a849-9ee5e64729b0",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "6604b549-ab46-42d5-993c-4790174076d6",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "8a796e25-bf90-4588-96ad-fe3681214baa",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "5fc21fa3-f31a-40a6-8dfe-dc91a7eeaea1",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "ac8eae02-c822-46f3-9cfe-ff73197854af",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "b993d765-5363-4072-8efc-4ad47e3a7a73",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "1bfc452f-4503-454d-8e98-cca9748d89c7",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "19c34440-2a2e-4f89-a474-fa50e27ffab6",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "7d7c571a-460d-4173-bfab-1e781667d21f",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "f9d26ad2-e67b-450f-8e53-162eb523a8b5",
+      "result_id": "c1b70f12-67d5-4785-9d04-1add9620157b"
+    },
+    {
+      "claim_id": "8a4d1397-22f6-4fd3-8d78-db0c0bc9b5dd",
+      "result_id": "f25852da-aa56-41cc-970a-8a858a73ef7f"
+    },
+    {
+      "claim_id": "4238fd86-ff56-40b0-8485-bf22a5b1a4aa",
+      "result_id": "f25852da-aa56-41cc-970a-8a858a73ef7f"
+    },
+    {
+      "claim_id": "523b0822-ceab-4c1f-8f6b-1d6da2d00643",
+      "result_id": "f25852da-aa56-41cc-970a-8a858a73ef7f"
+    },
+    {
+      "claim_id": "7982c554-268f-4e92-b33f-0e4ba91b92a2",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "ce417b6c-b916-4f33-98bf-36e5b11861a1",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "a368b91b-f8fa-4bad-908a-783fba650c3c",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "cdadbdbc-c053-4dcc-999f-328897b24a2d",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "fa53dbf7-1892-4c11-bf6b-7662c9ecc257",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "a39d326f-29ad-4fa7-9d18-0d55d09594cf",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "7dda4d9b-c021-4659-831a-0a0578b44297",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "33141a75-9821-4f98-8913-0867ba0c2063",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "dc4443e9-a4d0-4b46-9c11-ede21cf20b1c",
+      "result_id": "1693e6a6-22bd-4881-8a4b-1960479394bc"
+    },
+    {
+      "claim_id": "4735d16a-c6b4-4297-b0de-3faa40b3f580",
+      "result_id": "ba1e2471-a767-4889-b266-933181d7a59a"
+    },
+    {
+      "claim_id": "bada6f85-6284-4a97-8752-5df51a004381",
+      "result_id": "ba1e2471-a767-4889-b266-933181d7a59a"
+    },
+    {
+      "claim_id": "fd7bd3b6-5fbb-422b-ad45-051f9ac50a07",
+      "result_id": "ba1e2471-a767-4889-b266-933181d7a59a"
+    },
+    {
+      "claim_id": "94119ce4-d89e-4dab-a020-ca71330bb38f",
+      "result_id": "ba1e2471-a767-4889-b266-933181d7a59a"
+    },
+    {
+      "claim_id": "5975c6bf-bc82-41e9-971e-b4e773daa34f",
+      "result_id": "ba1e2471-a767-4889-b266-933181d7a59a"
+    },
+    {
+      "claim_id": "52a662a1-c6d1-45c7-8412-1fc0dd8be1b0",
+      "result_id": "ba1e2471-a767-4889-b266-933181d7a59a"
+    },
+    {
+      "claim_id": "59014fbb-dbf5-4af2-91f0-9b465f695b78",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "79078c7a-8e33-4136-9fc4-048d99653b45",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "7dc0f2f1-0f0a-4653-a5d6-728a0c57552a",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "199d4f4b-c66f-487c-8e05-13d279782bf2",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "0223c473-be9d-4858-a83b-e4acbd0d5a9f",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "b3fc4ebe-e94b-40ad-be40-e0efa345e64a",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "f245b4c0-1aa2-4497-bcdb-883119307ce2",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "354c8aea-4cc7-4e9b-aa27-202dc1d6d2a9",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "025747a7-154a-43d5-8e05-e2bc04e5461a",
+      "result_id": "3ec5c54e-c8d8-4970-a9b2-0df0139b002f"
+    },
+    {
+      "claim_id": "3d994825-fb6b-4d12-a296-123005c60a4b",
+      "result_id": "98edbcf8-bc0f-4e84-85ad-276cccc83e68"
+    },
+    {
+      "claim_id": "418884d8-3d28-4a12-a3c0-3eb6763c143f",
+      "result_id": "98edbcf8-bc0f-4e84-85ad-276cccc83e68"
+    },
+    {
+      "claim_id": "c6ef677f-d5b9-44b3-bf48-6f2ff7730c22",
+      "result_id": "98edbcf8-bc0f-4e84-85ad-276cccc83e68"
+    },
+    {
+      "claim_id": "33a537ec-63d3-4375-a962-e86e0d13588c",
+      "result_id": "6267754c-71d0-4c2c-a944-66ac846054be"
+    },
+    {
+      "claim_id": "b8e1d42f-ac25-42db-bb63-3a76daeb821b",
+      "result_id": "6267754c-71d0-4c2c-a944-66ac846054be"
+    },
+    {
+      "claim_id": "b73f5178-8d64-4987-9dc1-92c710b1a34e",
+      "result_id": "6267754c-71d0-4c2c-a944-66ac846054be"
+    },
+    {
+      "claim_id": "27511178-5c55-4638-95f4-628a1d020940",
+      "result_id": "6267754c-71d0-4c2c-a944-66ac846054be"
+    },
+    {
+      "claim_id": "020614a1-6ab7-46eb-8205-aac81ff0c33d",
+      "result_id": "6267754c-71d0-4c2c-a944-66ac846054be"
+    },
+    {
+      "claim_id": "a918dfa7-b347-4de6-82a5-20bda8b0ab6d",
+      "result_id": "6267754c-71d0-4c2c-a944-66ac846054be"
+    },
+    {
+      "claim_id": "2b2da539-d074-4ac6-b2fc-1b23a26278eb",
+      "result_id": "6267754c-71d0-4c2c-a944-66ac846054be"
+    },
+    {
+      "claim_id": "87d9caaf-7f6e-44cd-9a5e-8fb4fdef7c5b",
+      "result_id": "3544b547-2e07-414a-9a4b-32398ee1cd7a"
+    },
+    {
+      "claim_id": "5fccd060-c671-42cb-9760-cb15ff7886fb",
+      "result_id": "3544b547-2e07-414a-9a4b-32398ee1cd7a"
+    },
+    {
+      "claim_id": "ae049389-7c4a-45c7-85a6-a53a3f4d1a1e",
+      "result_id": "3544b547-2e07-414a-9a4b-32398ee1cd7a"
+    },
+    {
+      "claim_id": "c231d406-fd1a-4748-81aa-2c9123d670ee",
+      "result_id": "3544b547-2e07-414a-9a4b-32398ee1cd7a"
+    },
+    {
+      "claim_id": "a887005a-1017-40fc-acd8-e7435f5c990e",
+      "result_id": "3544b547-2e07-414a-9a4b-32398ee1cd7a"
+    },
+    {
+      "claim_id": "09c6f453-9c08-431e-ae8b-c5119cca4f35",
+      "result_id": "2bc16d5c-4c8c-4f3e-9ef3-4fd5777fe0ed"
+    },
+    {
+      "claim_id": "7fe32ac7-2759-416d-8efd-6e0c180cc91a",
+      "result_id": "2bc16d5c-4c8c-4f3e-9ef3-4fd5777fe0ed"
+    },
+    {
+      "claim_id": "7734125e-18db-443a-8e5e-5f6db2cb68f8",
+      "result_id": "2bc16d5c-4c8c-4f3e-9ef3-4fd5777fe0ed"
+    },
+    {
+      "claim_id": "3e928633-c87a-4495-9024-2d60b3892e62",
+      "result_id": "2bc16d5c-4c8c-4f3e-9ef3-4fd5777fe0ed"
+    },
+    {
+      "claim_id": "61891368-c1a5-4eaa-98dc-12029ce9a66f",
+      "result_id": "2bc16d5c-4c8c-4f3e-9ef3-4fd5777fe0ed"
+    },
+    {
+      "claim_id": "e581c831-8c14-4693-9547-ffe431225353",
+      "result_id": "2bc16d5c-4c8c-4f3e-9ef3-4fd5777fe0ed"
+    },
+    {
+      "claim_id": "3998faf8-fea0-41dc-8ca2-a56a3f0836e0",
+      "result_id": "2bc16d5c-4c8c-4f3e-9ef3-4fd5777fe0ed"
+    },
+    {
+      "claim_id": "75161934-74f2-4996-8ba4-0057b016e7bd",
+      "result_id": "d72ee541-809f-4581-8727-3a4e71a8017e"
+    },
+    {
+      "claim_id": "a35e688e-4d28-4452-97db-1c7981b55c53",
+      "result_id": "d72ee541-809f-4581-8727-3a4e71a8017e"
+    },
+    {
+      "claim_id": "a9062440-1f01-4be5-b995-6f1c568ef650",
+      "result_id": "d72ee541-809f-4581-8727-3a4e71a8017e"
+    },
+    {
+      "claim_id": "272f46b6-44c9-4849-8075-1247c2b7563b",
+      "result_id": "d72ee541-809f-4581-8727-3a4e71a8017e"
+    },
+    {
+      "claim_id": "e51668f4-f9bb-47e4-9123-5df9e2fc928f",
+      "result_id": "d72ee541-809f-4581-8727-3a4e71a8017e"
+    },
+    {
+      "claim_id": "dbf38f87-1e52-441e-a961-4ae38158bc16",
+      "result_id": "d72ee541-809f-4581-8727-3a4e71a8017e"
+    },
+    {
+      "claim_id": "4ac7c20d-970c-439b-857f-0536dd261590",
+      "result_id": "d72ee541-809f-4581-8727-3a4e71a8017e"
+    },
+    {
+      "claim_id": "ec5c92f4-171c-42cd-835a-2be1d86fd219",
+      "result_id": "b80442b6-f8b5-4e78-a531-9698b5ec460a"
+    },
+    {
+      "claim_id": "568c26fb-10c0-4048-a242-5d27cb996df3",
+      "result_id": "b80442b6-f8b5-4e78-a531-9698b5ec460a"
+    },
+    {
+      "claim_id": "a8324217-8116-4a19-aa3f-145d1c10244b",
+      "result_id": "b80442b6-f8b5-4e78-a531-9698b5ec460a"
+    },
+    {
+      "claim_id": "516ff1f5-1e97-46c9-a6ac-da8efb992573",
+      "result_id": "b80442b6-f8b5-4e78-a531-9698b5ec460a"
+    }
+  ],
+  "comparisons": []
+}

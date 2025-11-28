@@ -1,0 +1,1777 @@
+{
+  "submission": {
+    "id": "19c8a63d-3260-470d-9152-a465f80cd8e2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:59:57.862469Z",
+    "updated_at": "2025-11-28T19:59:57.862469Z"
+  },
+  "content": [
+    {
+      "id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "submission_id": "19c8a63d-3260-470d-9152-a465f80cd8e2",
+      "content_type": "manuscript",
+      "content_text": "# PI3K/Akt1 signalling specifies foregut precursors by generating regionalized extra-cellular matrix\n\n## Authors\n\n- S Nahuel Villegas<sup>1</sup>\n- Michaela Rothov\u00e1<sup>2</sup>\n- Martin E Barrios-Llerena<sup>3</sup>\n- Maria Pulina<sup>4</sup>\n- Anna-Katerina Hadjantonakis<sup>4</sup>\n- Thierry Le Bihan<sup>3</sup>\n- Sophie Astrof<sup>5</sup>\n- Joshua M Brickman<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institute for Stem Cell Research, MRC Centre for Regenerative Medicine University of Edinburgh Edinburgh United Kingdom\n2. The Danish Stem Cell Center (DanStem) University of Copenhagen Copenhagen Denmark\n3. Centre for Synthetic and Systems Biology (SynthSys) University of Edinburgh Edinburgh United Kingdom\n4. Developmental Biology Program Sloan-Kettering Institute New York United States\n5. Center for Translational Medicine Jefferson Medical College Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring embryonic development signalling pathways act repeatedly in different contexts to pattern the emerging germ layers. Understanding how these different responses are regulated is a central question for developmental biology. In this study, we used mouse embryonic stem cell (mESC) differentiation to uncover a new mechanism for PI3K signalling that is required for endoderm specification. We found that PI3K signalling promotes the transition from na\u00efve endoderm precursors into committed anterior endoderm. PI3K promoted commitment via an atypical activity that delimited epithelial-to-mesenchymal transition (EMT). Akt1 transduced this activity via modifications to the extracellular matrix (ECM) and appropriate ECM could itself induce anterior endodermal identity in the absence of PI3K signalling. PI3K/Akt1-modified ECM contained low levels of Fibronectin (Fn1) and we found that Fn1 dose was key to specifying anterior endodermal identity in vivo and in vitro. Thus, localized PI3K activity affects ECM composition and ECM in turn patterns the endoderm.\n\n## Introduction\n\nUnderstanding the mechanisms regulating axis formation in vertebrate development has been one of the central questions in modern developmental biology. It involves the activity of a number of conserved signal transduction pathways. However, the complex set of morphological rearrangements that occur during gastrulation make it difficult to uncouple the role of specific signals in mediating cell migration from those acting directly on cell specification (Villegas et al., 2010). Embryonic stem cell (ESC) differentiation offers a tractable in vitro model, which can be used to complement the analysis of embryos. ESCs are karyotypically normal, self-renewing and pluripotent cell lines derived from the mammalian blastocyst that can be driven to differentiate toward all the three germ layers. Adherent ESC differentiation models, therefore, allow direct access to mechanisms regulating cell fate decisions in a stable defined environment. The inductive activity of specific signalling pathways can be tested on isolated progenitor populations, allowing the deciphering of specific target cells and paracrine interactions (Murry and Keller, 2008).\n\nThe specification of visceral organs is intricately linked to the establishment of positional identity and begins with the formation of the endoderm germ layer. Endoderm progenitors will give rise to the entire digestive track in addition to thymus, thyroid, liver, pancreas, lungs, gallbladder as well as the extra-embryonic component of the visceral yolk sac. Therefore, understanding the basis for endoderm induction is the first step in attempting directed differentiation to organ cell types. In mammals, endoderm induction occurs in two waves. The first occurs at implantation and leads to the formation of the extra-embryonic visceral endoderm and the second occurs during gastrulation. During gastrulation, the precursors of the definitive endoderm emerge from the anterior region of a transient embryonic processing centre known as the primitive streak (PS) (Zorn and Wells, 2009). These precursors will either push away, or intercalate into, the visceral endoderm that surrounds the embryo proper (Kwon et al., 2008; Burtscher and Lickert, 2009). The first endoderm to emerge from the PS region is the anterior definitive endoderm (ADE) or prospective foregut. These cells move forward along the midline of the embryo to convey anterior information to the emerging neural axis and eventually give rise to the liver, pancreas and other derivatives of the foregut (Zorn and Wells, 2009). ADE induction is dependent on a network of specific transcription factors downstream of Wnt and high levels of Nodal related TGF-beta signalling. However, as this emerging endodermal signalling centre moves forward during gastrulation, it starts to express antagonists of both these signals, protecting the anterior neural ectoderm from the mesoderm inducing properties of these pathways (Tam and Loebel, 2007).\n\nIn addition to Nodal and Wnt signalling, we have recently uncovered an additional requirement for Fibroblast Growth Factor (FGF) signalling in endoderm and ADE specification (Morrison et al., 2008). FGF signalling is also required to induce the morphological rearrangements that are normally associated with gastrulation and endoderm migration (Yamaguchi et al., 1994), including the induction of an epithelial to mesenchymal transition (EMT) that enables the beginning of cell migration. EMT and cell migration are also regulated by the substrate upon which cells adhere, the extra-cellular matrix (ECM) (Hynes, 2009). For example, PS formation can be inhibited on the anterior side of the embryo as a consequence of the visceral endoderm depositing ECM components that block cell migration (Egea et al., 2008) and FGF signalling has been linked to visceral endoderm-dependent deposition of basement membrane components in ESC differentiation (Villegas et al., 2010). However, while these studies link FGF signalling to ECM composition and cell migration, they do not address how ECM could be involved in patterning the embryonic axis or induction of specific cell types during ESC differentiation.\n\nIn this study, we resolve the ability of FGF signalling to induce both endoderm and morphogenetic movements. We uncoupled the signalling downstream of the FGF receptor using an in vitro mESC based model for endoderm induction. We found that endodermal patterning by FGF was dependent on a PI3K/Akt1 activity that temporally restricts EMT. This unexpected PI3K/Akt1 activity, which we show is required both in vivo and in vitro, is transduced via a modification to ECM composition, which in itself, promotes cell type specification. Using liquid chromatography and mass spectrometry (LC-MS), we further identified ECM components and found that Fibronectin (Fn1) levels were an essential determinant of the ECM-dependent endoderm patterning activity. Taken together, our findings link anterior-posterior (A\u2013P) patterning of the endoderm to EMT and uncover a novel ECM-based mechanism for the activity of PI3K/Akt1 signalling during germ layer specification.\n\n## Results\n\n### A specific requirement for PI3K during anterior induction within the endoderm\n\nTo address the basis of the requirement for FGF during endoderm differentiation and anterior specification, we applied several small molecule inhibitors to a defined adherent mESC endoderm differentiation model (Figure 1A; Livigni et al., 2009). Differentiation conditions are shown in Figure 1A and the medium used is defined in \u2018Materials and methods\u2019 section. We used BMP4 together with modest doses of the Nodal-like TGF-beta Activin A, to promote the differentiation of mESCs to epiblast-like cells, followed by the further differentiation of epiblast towards PS and endoderm in the presence of FGF and Activin A. Through the use of this staged differentiation protocol we have been able to generate committed ADE from ESCs more efficiently (Morrison et al., 2008). We monitored the formation of ADE, anterior primitive streak (APS) and endoderm in general, using either single or combinatorial fluorescent reporter ESC lines generated by gene targeting. These included the fluorescent reporter gene RedStar under the transcriptional control of the early anterior endoderm marker Hhex (HRS) (Figure 1\u2014figure supplement 1A) and a GFP under the control of the Goosecoid (Gsc) locus, a marker of PS and APS (Figure 1\u2014figure supplement 1A,B). For additional resolution of ESC differentiation to endoderm we used the cell surface marker, Cxcr4 (Morrison et al., 2008). ADE was identified as either double positive for Hhex and Cxcr4 (H+C+) or Hhex and Gsc (H+Gsc+). Differentiation of these reporter lines was assessed by quantitative RT-PCR (q-RT-PCR) (Figure 1\u2014figure supplement 1C), which confirmed that these cells pass through the in vitro equivalents of specific developmental stages, including PS, APS (or mesendoderm), and ADE, thereby recapitulating in vivo development. Based on these data, we designated the specification phase leading up to PS specification as phase 1 and the stage of subsequent mesoderm and endoderm segregation as phase 2 (Figure 1A). The transition between phase 1 and 2 is marked by the appearance of Gsc-GFP cells during day 3.0\u20133.5 of ESC differentiation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of ESC differentiation towards ADE. PrE: primitive ectoderm, PS: primitive streak, APS: anterior primitive streak, ADE: anterior definitive endoderm. (B) Fluorescence and brightfield images of HRS ADE cultures generated in the absence or presence of LY. LY was present throughout phase 2. (C) ADE (H+C+), but not Cxcr4+ mesendoderm (H\u2212C+) was impaired by LY treatment. Gates were set using parental E14 Tg2A (E14) cells without fluorescent reporters. Hereinafter, LY treatment refers 10 \u03bcM at d3.5 and 20 \u03bcM at d4.5 onwards. For some of the experiments described in this paper the base media SFO3 was substituted by ADEM with identical results.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A and B) Schematic showing the strategy used in the construction of the HRS/Gsc-GFP dual reporter cell line. (A) is adapted from Figure 1 in Morrison et al., 2008. (C) Response of key lineage markers by q-RT-PCR in our defined culture system confirms that ADE differentiation in vitro recapitulates the in vivo developmental program of gene expression. The expression of the pluripotency markers Oct4 and Nanog decreased as differentiation proceeded. Mesendoderm markers T and Mixl1 peaked between phase 1 and 2 of differentiation and their expression was down-regulated as markers of anterior endoderm (ADE), Hhex, Lefty1 and Fzd5 were up-regulated. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained for ESC.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Flow cytometry on differentiating HRS/Gsc-GFP cells showing the effect of specific MAPK inhibitors on both mesendoderm differentiation and ADE emergence (d6). Inhibitors were added during phase 2 of differentiation. (B) Q-RT-PCR showing the response of mesoderm and endoderm markers to MAPK signalling inhibition in endoderm differentiation. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained for ESC. (C) Fluorescence microscopy on differentiating HRS cells (d6) showing a failure in ADE specification in the presence of MAPK inhibitors. (D) Morphology and gene expression in response to inhibition of p38 with the SP inhibitor. Hhex-IRES-Venus differentiating cells, reporting low levels of Hhex (Canham et al., 2010), showed broad Hhex/Venus expression when cultures were exposed to SP during ADE differentiation. Cell morphology was different from that observed in normal conditions and cells also co-expressed the pluripotency marker Oct4. (E) A blockade to ERK and p38 MAPK signalling during the phase 1 of differentiation disrupted the formation of mesendodermal intermediates. Treatment with PD03 led to the generation of tightly packed ESC-like colonies surrounded by large flat cells, whereas SB treatment produced highly homogeneous non-mesendodermal cells.\n\nApplication of inhibitors of MEK- (PD0325901\u2013PD032\u2212), JNK (SP600125\u2013SP\u2212), p38 (SB239063\u2013SB\u2212), and PI3K (LY249002\u2013LY\u2212) during phase 2 of differentiation all resulted in an inhibition of ADE specification (Figure 1C, Figure 1\u2014figure supplement 2A\u2013C). However, while inhibition of different MAPKs (with PD032, SP and SB) also resulted in a dramatic reduction in mesendodermal and pan-endodermal, Hhex\u2212Cxcr4+ (H\u2212C+) populations, only PI3K inhibition with LY had a specific effect on induction of ADE (Figure 1B,C). While each of these kinases were required for ADE specification at a certain level, some Hhex+ cells were observed in SP treated cultures, although endodermal gene expression was reduced (Figure 1\u2014figure supplement 2B) and these cells co-express the ESC marker Oct4 (Figure 1\u2014figure supplement 2D). Thus, all these kinases were required broadly for ESC differentiation towards mesoderm and endoderm, but only PI3K appeared specific to the transition between mesendoderm and committed ADE. To confirm that these signalling requirements were specific to phase 2, we also examined the effects of these inhibitors in phase 1. Inhibition of either JNK or PI3K was highly toxic, leading to extensive cell death, even at low concentrations (Supplementary file 1). Inhibition of MEK resulted in ESC-like colonies that maintained Nanog expression (Figure 1\u2014figure supplement 2B,E) consistent with a requirement for MEK signalling during early ESC differentiation (Kunath et al., 2007; Stavridis et al., 2007; Ying et al., 2008). Suppression of p38 signalling with SB also blocked differentiation toward APS derivatives, although SB was not able to support ESC-like phenotypes (Figure 1\u2014figure supplement 2E).\n\nGene expression analysed by q-RT-PCR also indicated that PI3K signalling was essential for anterior endoderm specification. We found that the expression of pan-endodermal markers Sox17, Foxa2 and Gsc were enhanced by PI3K inhibition, while induction of all ADE specific gene expression (Hhex, Cer1, Lefty1, Sfrp5 and Fzd5) was repressed (Figure 2A). The loss of Hhex expression in the absence of PI3K signalling within the Sox17+/Foxa2+ progenitor population was confirmed by immunocytochemistry (IC) (Figure 2B and data not shown). Taken together these findings suggest that PI3K is required after PS stages for the acquisition of anterior positional identity in the endoderm and, when it is suppressed, cells acquire an earlier more na\u00efve or potentially posterior endodermal state.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig2-v1.jpg)\n\n**Figure 2.:** (A) Differential regulation of ADE, pan-endoderm and pluripotency markers as a result of LY treatment. Q-RT-PCR showing relative gene expression for ESC, endodermal and ADE markers in ESC differentiation towards endoderm. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are shown relative to ESC expression level. ESCs were differentiated to ADE using the protocol described in Figure 1 in the presence or absence of LY. (B) Treatment with LY impaired HRS but not Sox17 expression. Fluorescence images showing HRS expression and Sox17 antibody staining at day 6 of differentiation. (C) Phosphorylation of Akt1 in ESC differentiation. Western blot showing phosphorylation of Akt1 during a time course for endoderm differentiation toward ADE (upper panel) and its dephosphorylation after the addition of 20 \u00b5M LY at different time points (middle panel, h; hours, top and bottom panel, d; days). Total ERK was used as loading control.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Flow cytometry showing Annexin V staining of Gsc- and Gsc+ differentiating ESCs. At the time of LY application (Day 3) some apoptosis is apparent in the Gsc- population. Caspase inhibitor Z-VAD-FMK (10 \u00b5M) was used to inhibit apoptosis. (B) Flow cytometry at day 6 showing ADE induction and that cell death inhibition does not rescue the LY mediated block to ADE induction. High dose of LY (50 \u00b5M) led to extensive cell death during differentiation and therefore no data were available at this time point. (C) Quantification of flow cytometry for each day of differentiation in both Gsc- and (D) Gsc+ differentiating cells.\n\nWe confirmed that PI3K was active during normal endoderm differentiation based on the phosphorylation of its main target, Akt1 (pAkt1). pAkt1 was down-regulated just as cells enter phase 1, but levels were rapidly restored at day 2 of differentiation, and maintained throughout the endodermal differentiation (Figure 2C, upper panel). LY rapidly suppressed Akt1 phosphorylation and while pAkt1 levels exhibited a slight recovery 6 hr after LY addition, they remained low throughout differentiation (Figure 2C, middle and bottom panel).\n\nAs phosphorylation of Akt1 is required for cell survival, we asked if the phenotype of LY was driven by selective death of ADE precursor cells. Doses of LY that completely suppressed pAkt1 (50 \u03bcM) resulted in extensive cell death (Figure 2, Figure 2\u2014figure supplement 1B, Supplementary file 1), while medium doses (20 \u03bcM) lead to a transient increase in apoptosis in Gsc\u2212, but not Gsc+ populations of day 3 cultures as judged by Annexin V staining (Figure 2, Figure 2\u2014figure supplement 1A,C,D). However, by day 4, LY had no effect on survival of either Gsc\u2212 or Gsc+ cells (Figure 2\u2014figure supplement 1C,D). To further confirm that LY was not blocking ADE induction through the selective cell death of a precursor population, we inhibited apoptosis with Z-VAD-FMK, a specific caspase inhibitor. The addition of this inhibitor to LY containing cultures eliminated the transient increase in apoptosis observed in the Gsc\u2212 population, but produced no rescue of the ADE induction (Figure 2, Figure 2\u2014figure supplement 1B).\n\n### PI3K inhibition prevents endoderm from exiting a na\u00efve endoderm state\n\nWe found that PI3K was required early during endoderm specification for the eventual induction of anterior cell types. Figure 3A shows the induction of ADE at day 7, in cultures exposed to LY for different periods of time, and demonstrates that PI3K was essential between days 3 and 5 of differentiation. Thus, the induction of ADE was dependent on the action of PI3K early during phase 2. During this phase of differentiation two populations of Gsc-GFP expressing cells (Gsclow and Gschigh) become apparent. We found that Hhex+ ADE cells were always Gschigh suggesting they arose specifically from the earlier GschighHhex\u2212 population. We also found that this Gschigh population was diminished in the presence of LY while the Gsclow population was considerably expanded (Figure 3\u2014figure supplement 1A,B). Thus, PI3K was required in early PS precursors to generate Gschigh cells that can later give rise to Hhex+ ADE. When LY-treated cells were released from the PI3K block and cultured for an additional 3 days in phase 2 differentiation conditions, we observed a complete recovery of Hhex induction, suggesting that in the absence of PI3K cells fail to progress in differentiation, but they were maintained in a less differentiated endodermal na\u00efve state (Figure 3B). To better characterize this LY-dependent na\u00efve state we assessed a panel of markers by q-RT-PCR and IC. Alongside the high levels of endodermal markers previously observed (Sox17, Foxa2) in LY-treated cultures, they also showed expression of early primitive streak markers such as Mixl1 and Cdh2, but not mesodermal specific gene expression (Meox1, Meox2, Mesp1, Mesp2, Isl1, Gata1) (Figure 3\u2014figure supplement 1C and data not shown). While these cultures expressed high level of PS gene expression, this appears to be predominantly endoderm as 90% of the Gsc+ cells in these LY-treated cultures co-expressed Sox17 (Figure 3\u2014figure supplement 1D,E). These cells also do not up-regulate the expression of posterior (Cdx2), or visceral (Hnf4a, Dab2) endoderm markers. Taken together, these data indicate that blocking PI3K signalling retains endodermal cells in a na\u00efve state.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig3-v1.jpg)\n\n**Figure 3.:** (A) PI3K is essential during endoderm segregation. Time course for endoderm differentiation analysed by flow cytometry on the HRS/Gsc-GFP cells showing a requirement for PI3K signalling during days 3\u20135 of ADE differentiation. Cells were differentiated under normal conditions or treated with LY for different periods of time. The period of LY treatment is stated for each graph and ADE induction was assessed at day 7 of differentiation. Gates were set with parental E14s as in Figure 1. (B) Cells exposed to LY during d3\u20136 could be returned to normal differentiation to generate ADE. Flow cytometry showing the emergence of the Hhex+/Gsc+ ADE after LY-treated na\u00efve endoderm was returned to normal differentiation for a further 3 days. Gates were set as in A. (C) Hepatic differentiation of ADE and na\u00efve endoderm. Immunostaining for AFP and Hnf4a on differentiated cells showing the formation of hepatocyte progenitors. ADE (control-upper panel), cells differentiated in LY (middle panel) and ADE generated from LY-treated na\u00efve cells (lower panel) were subjected to hepatocyte differentiation. LY-treated cells showed reduced differentiation efficiency, whereas both ADE and recovered LY-treated ADE efficiently generated hepatocytes.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Histograms based on flow cytometry showing that while the Gsc-GFP cell number is increased by LY treatment, the population is shifted to a lower level of Gsc expression (Gsclow). (B) Fluorescence imaging of HRS/GscGFP differentiating cultures showing clusters of cells with Gschigh expression (pre-ADE) (upper panel) that are eliminated when PI3K is inhibited. Cultures treated with LY failed to form ordered epithelial junctions and showed uniform Gsclow expression (lower panel). (C) Q-RT-PCR showing markers of posterior, visceral endoderm and mesoderm/PS in LY-treated cultures. Meox1&2 (mesoderm) transcripts were not detected. (D) Fluorescence images of the Gsclow population stained for Sox17 in cultures differentiated in the presence of LY. The majority of these cultures co-expressed the endodermal marker Sox17 alongside low levels of Gsc-GFP. (E) Quantification of cell types found in LY differentiating cultures similar to those depicted in C and D, at day 6 of differentiation. (F) Pdx-1 immunostaining (pancreatic progenitor marker) showing expression in further differentiation of ADE cultures. ADE (upper panel) and LY-treated cells (lower panel) were subjected to further pancreatic differentiation and stained for Pdx-1. LY-cells showed significantly reduced differentiation efficiency compared to ADE.\n\nTo further confirm that the LY-mediated block to differentiation maintained a true functional na\u00efve state, we tested the capacity of these cells for further differentiation towards hepatocyte or Pdx1 positive pancreatic progenitors (Morrison et al., 2008). While ADE cells progressed efficiently into both lineages, LY-treated cells failed to differentiate efficiently (Figure 3C, Figure 3\u2014figure supplement 1F). However, when LY-treated na\u00efve cells were returned to normal differentiation for 3 days prior to subjecting them to hepatocyte differentiation, they performed as normal Hhex positive ADE cultures, efficiently generating Hnf4a/AFP positive hepatocyte progenitors (Figure 3C). Endodermal cultures were also subjected to intestinal differentiation (Spence et al., 2011), but we were unable to generate intestinal spheres from either ADE or LY-treated cells (data not shown). This may indicate that specific posterior pre-patterning of na\u00efve endoderm is required. Taken together, these experiments suggest that the cells produced by PI3K/Akt1 inhibition are non-regionalized endoderm (na\u00efve) that retains the ability to give rise to specific endodermal domains when returned to normal differentiation.\n\n### PI3K acts to enhance and maintain epithelialization in the forming endoderm\n\nWe found that the Gsclow population generated in the presence of LY failed to make cell\u2013cell contacts and no longer maintained the epithelial morphology normally observed at this early stage of endoderm differentiation (Figure 3\u2014figure supplement 1B,D, bright field). Importantly, normal up-regulation of E-cadherin was not observed and residual E-cadherin was not localized to cell\u2013cell junctions, while the pro-EMT transcription factor Snai1 was up-regulated (Figure 4A,B). These observations indicated that in the absence of PI3K signalling, na\u00efve endoderm precursor cells remained in an extended EMT-like process, instead of forming an organized epithelium.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig4-v1.jpg)\n\n**Figure 4.:** (A) PI3K activity is necessary to maintain epithelial integrity in endoderm differentiation. Immunofluorescense images showing strong expression of the epithelial marker E-cadherin during ADE specification. Addition of LY during phase 2 resulted in a reduction of E-cadherin levels and disappearance of E-cadherin from cell\u2013cell junctions. (B) Q-RT-PCR showing a failure in E-cadherin transcriptional up-regulation as well as the up-regulation of its repressor and EMT inducer, Snai1, in LY-treated cultures. Transcript levels were normalised as described in Figure 2A. Control: ADE differentiation protocol. (C and D) Normal differentiating HRS/Gsc-GFP cells were sorted by flow cytometry based on Gsc levels at day 4.5 of ADE differentiation. (C) Western blots showing Akt1 phosphorylation in different fractions of differentiating ESC. pAkt1 was localized to the Gschigh population. Total ERK was used as loading control. (D) Q-RT-PCR showing lineage markers in sorted cells. The Gschigh/Akt1high population coincides with the Sox17 positive emergent endoderm. (E) Inhibition of PI3K during phase 2 alters the identity of the Gsclow population. Q-RT-PCR showing the mesoderm and endoderm markers T and Sox17. Transcript levels for D and E were normalised as described in Figure 2A.\n\nSince differentiating populations of ESC showed heterogeneous expression of Gsc, we investigated whether Akt1 was preferentially activated in a particular population. Figure 4C shows that pAkt1 levels were significantly higher in the Gschigh cells sorted from differentiating ESCs at the time at which Gschigh and Gsclow states could first be distinguished (day 4.5). Q-RT-PCR analysis on the different fractions also indicated that the GschighpAkt1high population was endodermal (Sox17+), whereas the GsclowpAkt1low population formed under control conditions was still mesendodermal (Brachyury+) (T+) (Figure 4D). As the GschighpAkt1high population is lost upon LY addition, this indicates that anterior endoderm generation would appear to require the activation of Akt1. The Gsclow population formed in the presence of LY was also distinct from the Gsclow population formed under control conditions. Gsclow-LY treated cells expressed high levels of Sox17 whereas T expression was reduced (Figure 4E). Thus, while LY may promote an EMT-like state, it is not promoting mesodermal, but rather na\u00efve mesenchyme-like endodermal state.\n\n### Akt1 activation is sufficient to induce anterior endodermal identity\n\nWe uncoupled Akt1 activation from PI3K signalling by using an Akt1 fusion to the oestrogen receptor, Myr-Akt1-mER (Kohn et al., 1998), that placed activated and myristoylated Akt1 under the control of the oestrogen analogue 4-hydroxy-tamoxifen (Tam) (Figure 5\u2014figure supplement 1A,B). The Myr-Akt1-mER fusion protein was constitutively induced in HRS cells and its expression was visualized based on GFP expression from an internal ribosomal entry site (IRES) (Myr-Akt1-mER-IRES-GFP/HRS) (Akt1-GFP-HRS) (Figure 5\u2014figure supplement 1A\u2013C). In this cell line, we found that Tam stimulated Akt1 activation rescued ADE generation in the presence of LY. This ability of pAkt1 to support ADE specification was observed both by flow cytometry (Figure 5A) and by q-RT-PCR (Figure 5C). ADE markers (Hhex, Sfrp5, Fzd5) were induced robustly in response to Tam, alongside the rescue of ADE epithelial morphology, even in the presence of LY (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig5-v1.jpg)\n\n**Figure 5.:** (A) ADE induction is rescued by Akt1 activation. Flow cytometry on Akt1-GFP-HRS differentiating cells showing that induction of Akt1 with Tamoxifen (Tam) rescues HRS expression. (B) Fluorescence microscopy showing Akt1-GFP-HRS differentiating cultures in presence of LY and Tam. HRS expression and ADE epithelial morphology were both rescued. (C) Q-RT-PCR showing rescue of ADE marker expression in LY-treated cultures by Tam-induced Akt1 expression. Transcript levels were normalised as described in Figure 2A. (D) Flow cytometry showing cell non-autonomous rescue of mixed Akt1-GFP-HRS and HRS differentiating co-cultures treated with Tam and/or LY. Akt1-GFP-HRS cells can be distinguished based on GFP expression (X-axis). HRS expression (Y-axis) was rescued in both Akt1-GFP-HRS expressing and non-expressing cells.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic showing Akt1-GFP-HRS cell line. HRS cells were modified to express a myristoylated fusion protein that includes the activated form of Akt1 fused to a mutant version of the ligand binding domain of the murine oestrogen receptor (mER). This mutant ligand binding domain recognizes 4-Hydroxy-tamoxifen (Tam) in place of oestrogen and places Akt1 under the control of Tam. (B) Western blot showing endogenous and conditional transgenic Akt1 expression in response to Tam and LY treatment. Differentiating cells were harvested on d4, 1 hr after Tam/LY treatment. (C) Flow cytometry showing uniform expression of the Akt1 containing transgene in Akt1-GFP-HRS cells during endoderm differentiation. Akt1-GFP-HRS cells were compared to HRS on day 6 of differentiation. (D) Western Blot confirming the Tam-induced expression of the Akt1 trangene in the GFP+ fraction of mixed HRS and Akt1-GFP-HRS co-cultures following cell sorting by flow cytometry based on GFP. Endogenous pAKT1 expression was observed in control conditions and was blocked by LY treatment. Cells were sorted based on GFP expression 6 hr after LY and Tam+LY (T/LY) treatments. (E) Quantification of the rescue of ADE induction as assessed by flow cytometry in Figure 5D. The experiments were performed by mixing HRS cells with Akt1-GFP-HRS cells (1:1), differentiating in the presence of LY and Tam, and assessing HRS expression in the different GFP populations at day 6. Blue columns represent the percentage of HRS expressing cells in the GFP\u2212 fraction (non-Akt1 expressing cells). Red columns represent the GFP+ fraction (Akt1 expressing cells). Treatments are stated below each set of columns. For normalization, HRS expression in control mixed cultures was taken as 100% for each fraction. Quantification of the non-cell autonomous effect of Tam was obtained by the ratio between HRS+GFP\u2212/GFP\u2212, while similar quantification of the cell-autonomous effect was obtained by the ratio between HRS+GFP+/GFP+, and compared to the control. LY decreased HRS expression in both GFP\u2212 (14.76% +/\u2212 8.12) and GFP+ (21.68% +/\u2212 7.26) fractions, whereas in Tam/LY treated cultures rescue of HRS expression was observed in both GFP\u2212 (65.95% +/\u2212 21.87), and GFP+ (81.66% +/\u2212 14.03) fractions, (n = 4).\n\n### Akt1 signalling acts cell non-autonomously to specify anterior endoderm\n\nAs the Akt1-GFP-HRS cells contained a constitutive GFP reporter, we mixed Akt1-GFP-HRS expressing cells with unmodified HRS ESCs, and assessed the induction of endoderm in the presence of LY, in both the Akt1 expressing and non-expressing populations (Figure 5\u2014figure supplement 1D). We found that the stimulation of Akt1 by Tam administration rescued the block to ADE induction in both Akt1 expressing and non-expressing cells (Figure 5D, Figure 5\u2014figure supplement 1E), indicating cell autonomous and non-autonomous rescue of the LY phenotype. However, based on a time course for induction of gene expression in sorted Akt1-GFP+ and Akt1-GFP\u2212 populations (+/\u2212 Ly, +/\u2212 Tam), it appeared that Akt1 also had cell autonomous effects on Snai1 and Sox17 transcription (Figure 6\u2014figure supplement 1A).\n\n### pAkt1 supports ADE induction via the generation of a specific ECM\n\nTo identify the factors downstream of pAkt1 that mediate non-autonomous ADE induction, we tested the ability of supernatants produced during normal differentiation to rescue ADE generation in LY-treated cultures, but failed to observe any effect (data not shown), suggesting that these factors might not readily diffuse. We therefore tested the hypothesis that the ADE inducing activity downstream of Akt1 might be the result of specific Akt1-dependent ECM proteins. We reasoned that if the role of Akt1 in anterior patterning is conducted by the production of a specific ECM, then if we expose differentiating cells to the action of an ECM generated under normal conditions, pAkt1 would no longer be necessary for ADE induction. To do so, we prepared ECM from untreated differentiating ESC cultures (ECM1) or from cultures treated with LY (ECM2). These ECM preparations were then tested for their ability to induce or rescue endoderm differentiation in the presence of LY (Figure 6B). HRS-Gsc-GFP cells were differentiated to the APS GFP+ stage (Figure 1A), collected, re-plated onto the different matrices or gelatine (Figure 6A) and differentiated in the presence or absence of LY. Figure 6B shows that ECM1, but not ECM2, could support ADE differentiation in the presence of LY. Moreover, ECM1 not only restored anterior induction, but the combination of LY and ECM1 enhanced anterior endoderm specification, such that these cultures were almost 60% ADE (Figure 6B). These data suggest that the capacity of LY to enhance Sox17+Foxa2+ expression was harnessed by ECM1, which was able to convert the Sox17+Foxa2+ na\u00efve population into Hhex+ prospective foregut (Figure 6C). Cells plated on ECM1 in the presence of LY displayed epithelial morphology, enhanced E-cadherin and reduced Snai1 expression (Figure 6D, Figure 6\u2014figure supplement 1B). While treatment of differentiating cultures with LY resulted in a loss of expression of the tight junction and polarity markers, ZO-1 and aPKC, organized expression of these was restored within 12 hr of plating onto ECM1 (Figure 6\u2014figure supplement 1C). Cells plated on ECM2 in the presence of LY did not generate ADE or form an organized epithelium (Figure 6\u2014figure supplement 1B). To exclude the possibility that Akt1 activation was somehow stimulated by re-plating on these ECMs, despite the block to PI3K signalling, we assessed Akt1 activation after re-plating and observed no rescue of the LY-mediated block to Akt1 phosphorylation (Figure 6\u2014figure supplement 1D). Thus, ECM1 has the capacity to redirect the LY-mediated enhancement of Sox17/Foxa2 expression through an Akt1 independent pathway and convert the majority of the culture to properly patterned anterior endoderm. These data suggest that ECM1 together with LY could be used to enhance physiological ESC differentiation toward foregut (Figure 6B, middle panel).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic showing the experimental strategy designed to test the role of ECM in supporting ADE specification. ECM1 and ECM2 were produced by differentiating cells in the absence or presence of LY respectively. Matrices were obtained by removing differentiated cells from day 6 cultures. (B) ADE generation assessed by flow cytometry on differentiating cells exposed to LY. ADE induction was rescued and enhanced when cells were re-plated onto ECM1. APS-like cells re-plated on either ECM2 or gelatine failed to counteract LY-induced phenotypes. (C) Q-RT-PCR analysis showing rescue of ADE markers in differentiating cells re-plated onto ECM1 and simultaneously treated with LY. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained for ESC. (D) Q-RT-PCR showing the regulation of EMT markers by ECM1. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained in control conditions.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) A time course for induction of Snai1 and Sox17 by Akt1. Q-RT-PCR on mixed HRS and Akt1-GFP-HRS co-cultures (+/\u2212 Ly, +/\u2212 Tam) that were sorted based on GFP and analysed at the indicated times. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained for ESC. (B) Phase contrast image showing APS cells re-plated onto ECM1 and 2. On ECM1 cells formed epithelial clusters in the presence of LY, whereas cells plated onto ECM2 retained a mesenchymal-like morphology in the presence of LY. (C) Cell\u2013cell contacts and localization of the tight junction marker, ZO-1, and the polarity marker, aPKC, were severely affected by LY treatment, but were unaffected in APS cells exposed to LY and plated onto ECM1. IC showing expression of aPKC and ZO-1 12 hr after plating on indicated ECMs. (D) Western blots showing activation of Akt1 in cells plated on different substrates with or without LY. Re-plating onto ECM1 did not prevent Akt1 dephosphorylation by LY.\n\n### PI3K/Akt1 regulates fibronectin levels to specify endodermal identity\n\nGene expression profiling data (Morrison et al., 2008) suggested that components of the matrisome were up-regulated in ADE compared to ESC (Figure 7\u2014source data 1), including a number of ECM proteases that proved to be PI3K-dependent (Figure 7\u2014figure supplement 1A). To provide a better picture of PI3K/Akt1-dependent changes in the ECM that might be induced by post translational modification, we used mass spectrometry coupled to liquid chromatography (LC-MS) to define PI3K-dependent differences between ECM1 and ECM2. Details of ECM extraction and LC-MS methodologies can be found in \u2018Material and methods.\u2019 Specific proteins enriched in ECM1 include two heparan sulphates proteoglycans (HSPG), Perlecan and Col18a1; two HSPG regulators Sulf1 and Cyr61; the metalloprotease Adamts15, the anterior endoderm associated diffusible factors Nodal and Lefty1; and the endoderm/epithelial associated cytokeratines Krt8, Krt18 and Krt19 (Figure 7A, Figure 7\u2014source data 2,3). While a number of these proteins are not canonical matrix proteins, they are generally associated with integrin signalling and tight junction formation. Interestingly, Fibronectin (Fn1), a promoter of EMT and migration, was highly enriched in ECM2 as was the PS associated diffusible factor Fgf8 (Figure 7A, Figure 7\u2014source data 2,3). Analysis by q-RT-PCR confirmed that Fn1 expression was transcriptionally regulated by PI3K/Akt1 signalling (Figure 7B), and that the induction of Fn1 expression was a cell autonomous response to Akt1 activation (Figure 7\u2014figure supplement 1B). Moreover, the addition of Fn1 to differentiating ESC cultures, either through re-plating of PS stage cultures onto Fn1-coated dishes (data not shown) or through direct addition to phase 2 differentiation (Figure 7C) abolished the induction of ADE specific transcription. As Fn1 is known to signal through Akt1 (Khwaja et al., 1997), and Akt1 is involved in ADE specification, we asked whether exogenous Fn1 resulted in Akt1 activation during normal endoderm differentiation. Figure 7D shows that Fn1 did not stimulate Akt1 phosphorylation, but it actually inhibited it (Figure 7D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig7-v1.jpg)\n\n**Figure 7.:** (A) Different compositions of ECM1 and ECM2 as determined by mass spectrophotometry. Significantly over-represented peptides (blue dots) or evenly represented peptides (red dots) in the ECM1 (left side), and ECM2 (right side) are shown in the volcano plot. Relevant peptides are indicated. (B) Q-RT-PCR showing the regulation of Fn1 expression as a result of PI3K inhibition (d6). (C) Q-RT-PCR analysis showing inhibition of ADE gene expression when Fn1 was added to the culture media. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained in ESC (B) and in control conditions with no exogenous Fn1 (C). (D) Fn1 inhibits Akt1 activation. Western blots showing inhibition of Akt1 phosphorylation by Fn1 during ESC differentiation. Tubulin was used as loading control.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Q-RT-PCR showing a time course for metalloprotease transcription during endoderm differentiation in the presence and absence of LY. Metalloproteases belonging to the matrisome identified based on transcriptomics of the different differentiating endoderm populations (Morrison et al., 2008). Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained for ESC. (B) Q-RT-PCR sorted mixed population (HRS and Akt1-GFP-HRS) in a time course experiment (+/\u2212 Ly, +/\u2212 Tam) showing that Fn1 expression is Akt1 dependent. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained for ESC.\n\n### PI3K/Akt1-dependent anterior specification and Fn1 expression in vivo\n\nA number of ECM components identified by LC-MS were also screened by q-RT-PCR in different dissected regions of E7.5 embryos (Figure 8\u2014figure supplement 1A). ECM1 components showed expression in the endoderm (Figure 8\u2014figure supplement 1B and data not shown), as well as anterior enrichment (Figure 8\u2014figure supplement 1C and data not shown). Importantly, we found that Fn1 was both highly expressed in the endoderm (Figure 8\u2014figure supplement 1B) and robustly enriched in the posterior region of these embryos (Figure 8A,C\u2013E), consistent with a role in promoting na\u00efve endoderm. To address whether endoderm regionalization and Fn1 expression were regulated in vivo by PI3K/Akt1, E6.5 embryos (initiation of gastrulation) were dissected and cultured ex-utero in the presence or absence of LY. Gene expression analysis in individual cultured embryos was assessed in response to inhibition of PI3K by LY. We observed enhanced expression of Fn1 and Snai1, slight increases in Sox17 and Foxa2, and a reciprocal reduction in Cer1 and Lefty1 (Figure 8B). Consistent with these observations, immunohistochemistry (IHC) showed that embryos cultured in the presence of LY exhibit enhanced Fn1 expression (Figure 8C,D) and a complete loss of Cer1+ ADE (Figure 8\u2014figure supplement 1D).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig8-v1.jpg)\n\n**Figure 8.:** (A) Q-RT-PCR showing differential expression of Fn1 in vivo. Individual E7.5 mouse embryos were bi-dissected into anterior and posterior halves, and Lefty1 and T expression were used as a control for bi-dissection efficiency. Transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained in the anterior region. (B) Fn1 is regulated by PI3K in vivo. Q-RT-PCR on single embryos dissected at E6.5 and cultured ex-vivo for 24 hr in the presence or absence of LY. Wild-type (WT) embryos were dissected at E7.5 and used as control. Embryos treated with LY exhibited a failure in the expression of anterior markers, and up-regulation of Snai1 and Fn1, similar to that observed in vitro. Error bars represent the standard deviation between embryos (*>0.05; **>0.01; ***>0.001). Both in A and B the transcript levels were normalised to the Tbp value obtained for each sample. Normalised values are related to the level obtained in the anterior region (A) and in E7.5 wild-type embryos (B). (C) Immunohistochemistry (IHC) on sectioned embryos showing higher levels Fn1 on the posterior side of E7.5 wild-type embryos (left) and increased expression of Fn1 in embryos dissected at E6.5 and cultured ex-vivo during 24 hr in the presence of LY (right). (D) Images analysis on the areas highlighted in (C) indicating differential expression of Fn1 along the A\u2013P axis in WT embryos (I, II), and increased expression of Fn1 in embryos cultured ex vivo in the presence of LY (III, IV) (n = 4, ***>0.001). (E) IHC on E7.5 embryos showing differential expression of Fn1 along the anterior\u2013posterior axis and anterior expression of Cer1. In Fn1\u2212/\u2212 embryos the Cer1 domain is significantly expanded. Embryos are shown in frontal and in lateral view (anterior to the left). (F) IHC on WT and mutant embryos (dorsal view) showed an expanded Foxa2 expression domain at E7.75, and defects in gut folding and in the formation of the anterior intestinal portal (AIP) at E8.0. Arrowhead points to the node and arrows the foregut.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) To analyse the in vivo regional expression of the ECM components detected by LC-MS, the endoderm layer was dissected away from the epiblast in E7.5 embryos. Schematic showing the details of the dissections used in Figure 8A and Figure 8\u2014figure supplement 1B,C. (B and C) Q-RT-PCR showing differential expression levels of ECM components in the epiblast vs endoderm (B), and in the anterior vs posterior embryonic region (C). Hhex, Lefty1 and T expression were used to validate the efficacy of individual germ layer and A\u2013P dissections. (D) IHC in ex-vivo gastrulating cultured embryos. Embryos collected at E6.5 exposed for 24 hr to LY showed an impairment in Cer1 expression.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Image analysis measuring the intensity of Cer1 expression across A\u2013P axis in WT and Fn1\u2212/\u2212 E7.5 embryos. (B) IHC on Fn1\u2212/\u2212 E7.5 embryos showed Cer1 expression is expanded alongside enhanced posterior Foxa2 expression. Embryos are shown in a lateral view. (C) Image analysis measuring the intensity of Foxa2 expression across A-P axis in WT and Fn1\u2212/\u2212 E7.5 embryos. (D) IHC on WT and Itga5\u2212/\u2212 E7.5 embryos showing a similar expansion of the Cer1 domain. Embryos are shown in a lateral view. (E) In situ hybridization on E7.5 Itga5\u2212/\u2212 mutants showing Cer1 RNA expression is also expanded.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig8-figsupp3-v1.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (A) Lateral view of WT and Fn1\u2212/\u2212 E7.5 embryos after in situ hybridization showing expanded domain of Foxa2 RNA expression. (B) Expanded Foxa2 expression becomes more apparent as the foregut begins to form at E7.75 in the Itga5\u2212/\u2212 mutants. In situ hybridisation showing Foxa2 expression at E7.75 and E8.0 in WT and mutant embryos. (C) IHC on WT and Fn1\u2212/\u2212 E7.5 embryos showing the relationship between Cer1, Sox17 and Fn1. Sox17 expression is reduced in the prospective foregut domain in WT embryos, similar to the graded expression observed for Fn1. Sox17 expression in the Fn1\u2212/\u2212 embryos showed decreased intensity and more homogeneous distribution alongside the expansion of Cer1. Embryos are shown in a lateral view.\n\nAnalysis of wild-type (WT) embryos at E7.5 indicated that Fn1 protein was non-uniformly distributed along the A-P axis, with relatively low expression in the prospective foregut region where Cer1 was expressed (Figure 8A,C\u2013E). We therefore assessed the requirement of Fn1 during endoderm specification by examining the endoderm of embryos homozygous for a null mutation in the Fn1 locus (Fn1\u2212/\u2212) (George et al., 1993). In Fn1\u2212/\u2212 embryos, the domain of Cer1 expression was expanded toward the posterior-proximal side of the embryo within the domain of Foxa2 expression (Figure 8E, Figure 8\u2014figure supplement 2A\u2013C). We also assessed the protein expression of the pan-endoderm marker Sox17 and found that like Fn1, Sox17 was expressed at lower levels in the Cer1 positive foregut region. In Fn1 mutants, this region of Sox17low was expanded across the embryo alongside Cer1 (Figure 8\u2014figure supplement 3C) and consistent with the increase in Sox17 transcript that we have observed in LY-treated embryos. Moreover, while there are a number of integrins that bind to Fn1, integrin Itga5 is thought to mediate Fn1 functions during early embryogenesis and we found that Itga5\u2212/\u2212 mutant embryos (Yang et al., 1993) also exhibited an expanded domain of Cer1 expression (Figure 8\u2014figure supplement 2D,E). As the Fn1 and Itga5 phenotypes are known to be background dependent, we confirmed that we could observe expansion of the anterior endoderm domain in both C57BL/6J (Figure 8E, Figure 8\u2014figure supplement 2B,D) and 129S4 mice strains (Figure 8\u2014figure supplement 2E).\n\nConsistent with the expansion of Cer1 in these mutants, further foregut morphogenesis was also defective and there was evidence of an expansion in the prospective foregut. In Fn1 and Itga5 null embryos: the foregut did not fold into a tube and remained as a flat field of Foxa2+ cells (Figure 8F, Figure 8\u2014figure supplement 3B). This domain of Foxa2+ cells remained enlarged compared to control embryos and this was particularly apparent early in foregut morphogenesis (E7.75) (Figure 8F, Figure 8\u2014figure supplement 3A,B).\n\n## Discussion\n\nWe have defined a novel ECM-dependent mechanism that can explain the diverse developmental outcomes induced by a single signalling pathway. Thus, a requirement for FGF signalling in endoderm induction is based on a non-canonical activity downstream of PI3K/Akt1 signalling. PI3K/Akt1 acts during positional specification in the endoderm, by regulating the deposition of regionalized ECM with patterning activity (Figure 9). One essential component of this activity is Fn1. This observation led to the identification of PI3K/Akt1-dependent graded Fn1 expression within the developing embryo with the capacity to differentially regulate the timing of endoderm differentiation and establish positional identity.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00806/elife-00806-fig9-v1.jpg)\n\n**Figure 9.:** Schematic illustration of the proposed role played by PI3K/Akt1 signalling in positional identity within the endoderm. Cells in PS region are in the process of generating mesoderm and endoderm (mesendoderm). At the anterior end of the PS, high levels of pAkt1 regulate proper epithelialization and anterior endoderm specification through the production of a unique ECM low in Fn1. Low levels of PI3K/Akt1 led to the production of an Fn1-enriched ECM that favours na\u00efve endoderm generation.\n\nMesendoderm induction is associated with specific levels of Nodal, Wnt and FGF signalling, but is also accompanied by morphogenetic rearrangements that result in changes in a cell\u2019s immediate environment. These cellular movements, the ECM that cells move on and the signals they are exposed to during their migration all contribute to the patterning of the embryonic endoderm (Arnold and Robertson, 2009). The non-canonical ECM-dependent pathway downstream of PI3K described here provides an explanation for the diversity of cellular responses that can be achieved through the activation of pAkt1. PI3K/Akt1 signalling has been extensively associated with the induction of EMT (Larue and Bellacosa, 2005) rather than its suppression. However, in the context described here, Akt1 modifies the ECM to drive cell\u2013cell contact and either induce or preserve epithelial identity. Thus, high levels of PI3K activity ensure that Fn1 levels remain low and that EMT is suppressed. The involvement of an ECM intermediate also provides context for an endoderm specific role for FGF signalling. FGF receptor activation is essential for ESC differentiation towards multiple lineages and leads to Grb2 and SHP2 recruitment, activating both PI3K and MAPK signalling pathways (Kouhara et al., 1997; Xu et al., 1998; Villegas et al., 2010). These pathways have been associated with mesoderm induction, EMT and cell migration during gastrulation (Casey et al., 1998; Rodaway et al., 1999; Ciruna and Rossant, 2001; Mizoguchi et al., 2006; Poulain et al., 2006). In endoderm, where FGF signalling is required, but does not induce EMT (Morrison et al., 2008; Hansson et al., 2009), the signalling is contextualized and rendered distinct as a result of the activity of this pathway in remodelling the ECM. PI3K activity in the visceral endoderm of embryoid body differentiation (Li et al., 2001) has also been associated with the production of ECM required to support the epithelialization of the epiblast (Jeanes et al., 2009).\n\nWhile the activity of PI3K/Akt1 is generally associated with induction of EMT, activation of this pathway has also been associated with a block to EMT in human ESCs (Singh et al., 2012). In this context, Akt1 activation supports human ESC self-renewal by inhibiting Raf/Mek/Erk and canonical Wnt signalling, which in turn may also promote EMT, although it is not clear whether this route takes place in vivo during early endoderm differentiation or how comparable the mouse and human ESC differentiation models are. Accordingly, the transient reduction in pAkt1 we observed at the beginning of differentiation may be coupled to early activation of the ERK and Wnt pathways as cells become prepared for mesoderm and endoderm induction. However, prior to the appearance of endoderm gene expression, differentiating ESCs contained high levels of pAkt1 and this appeared essential for the deposition of the correct, Fn1low regionalized ECM. That cells rapidly down-regulate Snai1 upon re-plating suggests that the ECM-dependent pathway described here allows rapid modifications to differentiation as cells become exposed to a new environment.\n\nThe basement membrane produced during endoderm differentiation is complex and proteomic analysis supports the association of the ECM with functional cell membrane components in a matrisome (Hynes and Naba, 2011). How do these elements impact on the key signalling events regulating lineage specification? Several elements of this matrisome are directly involved in Fn1 signalling and exogenous Fn1 can alter ECM activity. Genetic studies indicate that Fn1-integrin interactions are essential for axial extension of the mesendoderm (Yang et al., 1999; Davidson et al., 2006; Marsden and DeSimone, 2003). However, Fn1 is not required for gastrulation and specific endodermal patterning defects have not been previously reported. The Fn1 and Itga5 null mutants are both embryonic lethal and die by E10.5 due to cardiovascular problems, posterior truncations, and kinking of the neural tube among others defects (George et al., 1993; Yang et al., 1993). We observed higher levels of Fn1 in the posterior region of gastrulation stage embryos and the region where the nascent foregut moves into was uniquely low in Fn1. In Fn1\u2212/\u2212 embryos, the region of Cer1 positive ADE is expanded, suggesting that the deposition of Fn1 may help to restrict the prospective foregut domain as it migrates up from the distal end of the embryo. Consistent with this observation, the foregut did not fold into a tube and remained as a flat field of expanded Foxa2+ cells in Fn1\u2212/\u2212 embryos, indicating that the regulation of Fn1 deposition helps delineate and form the prospective foregut. We also observed a similar inverse correlation between the expression of Sox17 and Cer1, indicating that Sox17 is expressed at higher levels in Fn1 rich regions of the endoderm. This is consistent with our in vivo and in vitro data, which show significantly higher levels of Sox17 expression in na\u00efve endoderm that was generated in response to inhibition of PI3K.\n\nIn addition to Fn1, we identified additional potential determinants that could interact with Fn1 in modulating ECM activity. Two out of the three main Heparan Sulphate-bearing species, Perlecan and Col18a1 (Halfter et al., 1998) were expressed at high levels in ECM1. Knock down of these two HSPG\u2019s have been shown to impair endoderm differentiation in vitro (Higuchi et al., 2010). Potentially, this HSPG-bearing ECM could be acting in conjunction with low levels of Fn1 to modulate growth factor bioavailability, and operate as a platform for cytokine signalling. As the cytokines we added exogenously to the cultures were not found in either ECMs, we think it is unlikely that this explains the full activity of these ECMs in vitro. However, we did find that ECM1 contained Nodal and Lefty1, whereas ECM2 contained Fgf8 (Figure 7A, Figure 7\u2014source data 2,3). It has been suggested that specific modifications in the ECM are required for Nodal transport within the embryo (Oki et al., 2007; Marjoram and Wright, 2011). Moreover, the inclusion of Nodal, Lefty1 and Fgf8 within these matrices fits with the locus of their extracellular activity in vivo. Our observation that these cytokines appear specifically embedded in the ECM suggests that the mechanism by which these proteins function in vivo involves association with ECM proteins (Hynes, 2009).\n\nDespite widespread attempts to use ESC differentiation towards endodermal derivatives, the production of fully functional differentiated cell types has not been particularly successful. Part of the explanation for this lack of success may lie in the inability to pattern the correct intermediates. The observation that inhibition of PI3K leads to enhanced Sox17 and Foxa2 expression (McLean et al., 2007) has been used in ESC differentiation protocols to generate endoderm derivatives. Our data suggest that these cells are less efficient in further differentiation to derivatives of the ventral foregut such as pancreatic or hepatic progenitors. Based on both molecular and functional analysis of these endoderm cells they appear to be na\u00efve endoderm, similar to the mesenchymal cell type that emerges from the primitive streak and intercalates into the visceral endoderm layer (Kwon et al., 2008; Burtscher and Lickert, 2009) to form the hindgut. These Sox17high mesenchyme-like cells that arise from the primitive streak region of the embryo exist only transiently in vivo, and while we show that prolonged and enhanced induction of this state in vitro may be reversed by reintroducing cells back into normal differentiation, the direct onward differentiation of these cells may have deleterious effects on their capacity to form functional cell types in vitro. Interestingly, while these cells become epithelialized as they intercalate in the visceral endoderm, their levels of Sox17 remain high throughout gastrulation, suggesting that a na\u00efve endoderm state could extend beyond the initial EMT event.\n\nAs ECM1 is able to pattern differentiating cells to anterior fate, it suggests that it may be possible to use it in combination with the LY-dependent enhancement of na\u00efve endoderm to efficiently generate high levels of foregut in vitro. Our finding that ECM is an essential downstream signalling response required for generation of positional identity in vitro indicates that the presence of appropriate ECM may be as important as the dose and identity of the cytokines used in directing context dependent signalling responses during ESC differentiation.\n\n## Materials and methods\n\n### Cell culture\n\nMouse ESC cultures and ADE differentiation in adherent monolayer were performed according to Livigni et al. (2009) except that in some cases SFO3 media was replaced by ADEM (see below). Re-plating of APS-like cells was done by differentiating the HRS/Gsc-GFP ESC until Gsc-GFP expression became apparent (to day 3\u20133.5). The media was collected, centrifuged at 3000 rpm for 8 min and mixed with freshly prepared media in ratio 1:1 (new:old). The APS-like cells were detached with Accutase (Sigma), 5 min at 37\u00b0C, washed with the collected media, resuspended in 1:1 media, and re-plated onto different substrates.\n\nFor the induction of pancreatic progenitor cells, ADE and LY-cells in N2B27 media supplemented with 10 ng/ml FGF4, 2 mM all-trans retinoic acid, and 0.25 mM KAAD cyclopamine (Toronto Research Chemicals). Hepatocyte differentiation was as described in Gouon-Evans et al. (2006), except N2B27 that was used as the base media at all stages and Activin A was not included, whereas BMP4, FGF2, and VEGF were included.\n\nADEM (Anterior definitive endoderm media) preparation: 50% DMEM/F12 no Glutamine (Invitrogen, UK), 50% RPMI1640 no Glutamine (Invitrogen, UK), 2 mM L-Glutamine (Invitrogen, UK), 10 mM HEPES (Invitrogen), 0.5 \u03bcg/ml Cholesterol (Sigma-Aldrich, Denmark), 80 \u03bcM Ethanolamine (Sigma-Aldrich, Denmark), 10 \u03bcg/ml Cytidine (Sigma-Aldrich, Denmark). Filter sterilize. 2 \u00b5g/ml Apo-transferrin (Sigma-Aldrich, Denmark), 2 ng/ml Na Selenite (Sigma-Aldrich, Denmark). Just before use add: 0.1 \u03bcM 2-ME (Sigma-Aldrich, Denmark), 0.1% BSA (Invitrogen, UK), 0.5 \u00b5g/ml human recombinant insulin (Sigma-Aldrich, Denmark). Media must be kept at 4\u00b0C and used within 1 month.\n\n### ECM isolation and collection\n\nDifferentiated ADE cells were detached with 2 mM EDTA, 37\u00b0C, 8\u201312 min. The remaining ECM was washed with PBS and either used immediately or preserved in 70% EtOH, \u221220\u00b0C.\n\n### Inhibitor manipulation\n\nDoses and timing of inhibitor usage are described in Supplementary file 1.\n\nTo determine the window of PI3K activity during phase 2 of ADE differentiation LY (LY294002; Promega, UK) was added for periods of 24 hr (d3\u20134, d4\u20135; d5\u20136, d6\u20137), 48 hr (d3\u20135, d4\u20136, d5\u20137), 72 hr (d3\u20136, d4\u20137), or 96 hr (d3\u20137). ADE generation was assessed by flow cytometry based on HRS/Gsc-GFP expression. LY was used at a concentration of 10 \u00b5M during d3\u20134 and at 20 \u00b5M from d4. 20\u201350 \u00b5M LY was used for experiments assessing apoptosis from d3-d6.\n\nFor co-culture experiments, HRS and Akt1-GFP-HRS ESC were mixed in a 1:1 ratio. 0.5 \u00b5M Tam was added 15 min before LY addition at day 3.\n\nFor ex-vivo gastrula cultures, embryos were dissected at E6.5 and cultured in 25, 50, or 75 \u00b5M LY for 24 hr. 25 \u00b5M and showed no morphological or differences in housekeeping gene transcription compared to untreated embryos. While 50 \u00b5M LY showed a significant difference compared to untreated embryos, 50 and 75 \u00b5M LY gave similar results (Data not shown), and 50 \u00b5M LY was therefore used for further experiments.\n\nApoptosis inhibitor (Z-VAD-FMK; Santa Cruz, USA; 10 \u00b5M) was added at d3\u20136. The effects of LY or Z-VAD-FMK addition were analysed by immunostaining with the apoptotic marker Annexin-V Alexa647 (Invitrogen, UK) followed by flow cytometry analysis (as described below).\n\n### Flow cytometry and cell sorting\n\nCells were trypsinized and stained with Topro3-iodide or DAPI (Invitrogen, UK) to exclude dead cells from the analysis. FITC-conjugated rat anti-CD184 (Cxcr4) was purchased from BD PharMingen (UK), cells were analysed using a Becton Dickinson FACS Aria II or III cell sorter and a Becton Dickinson LSR Fortessa.\n\n### Gene expression analysis\n\nTotal RNA was prepared from a minimum of 1 \u00d7 104 cells using Trizol reagent (Invitrogen) and 1 \u00b5g of RNA was used as a template for cDNA synthesis using Superscript III (Invitrogen, UK). Real-time RT-PCR was performed using a LightCycler 480 (Roche) and LightCycler 480 SYBR Green 1 Master or UPL Assay (Roche). Primers and PCR conditions are listed in Supplementary file 3.\n\n### Immunostaining\n\nMonolayer differentiated cells were washed in PBS; fixed in 4% paraformaldehyde (PFA) for 10 min; 1M Glycine, pH 7,4 was used for 10 min to block residual PFA, and cells were permeabilized by washing in PBS supplemented with 0.1% Triton X (PBST). The fixed cells were blocked in 1% Bovine serum albumin (Sigma-Aldrich, Denmark) and 3% appropriate serum in PBST for 1 hr at room temperature (RT).\n\nFor whole mount IHC, embryos were dissected in ice-cold M2 media and transferred to cold 4% PFA, overnight (O/N). The embryos were dehydrated in methanol series (25, 50, 75, 100%, in PBS), bleached with 5% H2O2 for 1 hr, rehydrated, blocked with 3% of the appropriate serum in PBST, incubated with primary antibody (in PBST at 4\u00b0C, O/N), washed in PBST 3 \u00d7 15 min, 5 \u00d7 1 hr, incubated with secondary antibody for 2 hr, RT, washed in PBST 3 \u00d7 15 min, 5 \u00d7 1 hr. For confocal imaging embryos were placed in microscope slides mounted with Vectastain/DAPI (Vector Labs) and gently covered with glass cover slips with vaseline drops in the corners to avoid embryo squashing.\n\nFor cryo-sectioned embryos and IHC, whole-mount embryos were dissected and fixed as above and allowed to sink in 15% sucrose in PBS, 2 hr at 4\u00b0C, then incubated in 15% sucrose/7% gelatine/PBS at 37\u00b0C, assembled in an aluminium mould, frozen in liquid nitrogen, and cut into 10 \u03bcm sections on a Cryostat (Leica). Both transverse and sagittal sections were the same thickness and were counterstained with DAPI. Sections were collected on Poly-Lysine microscope slides (VWR International), air-dried for 30 min to 1 hr, and stored at \u221220\u00b0C until use. Immunocytochemistry was performed essentially as described above for cells. A list of antibodies and conditions used is provided in Supplementary file 2.\n\n### Western blots\n\nCells were lysed in lysis buffer (1% Triton X-100, 150 mM NaCl, 10 mM Tris_HCl, at pH 7.4, 1 mM EDTA, 1 mM EGTA, containing 2 mM NaF, 1 mM sodium orthovanadate, 10 \u03bcg/ml leupeptin, 10 \u03bcg/ml pepstatin,10 \u03bcg/ml aprotinin, and 1 mM Pefabloc). Equal amounts of protein lysates were loaded and separated by SDS-PAGE and followed by western blotting. A list of antibodies used is provided in Supplementary file 2.\n\n### Imaging\n\nWhole-mount embryos (E7.5) were photographed on an AZ100 Multizoom microscope (Nikon) with DIC optics and standard epifluorescence using an EXI-BLU-R-F-M-14 camera (QImaging, Canada) and Volocity software (Improvision). For higher resolution, DMIRE2 inverted confocal (Leica) microscope was used. For confocal imaging, a series of 5 \u03bcm optical sections were taken and deconvolved with Volocity or equivalent software according to the instructions of the manufacturer.\n\n### Embryo dissection and culturing\n\nFor A\u2013P expression analysis, E7.5 embryos were dissected out of decidua in ice-cold M2 media (Sigma), and bisected into anterior and posterior halves with glass needles after removal of the extraembryonic tissues. Individual halves were prepared for RNA isolation with Trizol reagent (Invitrogen). For endoderm dissection, E7.5 embryos were dissected as stated before and the embryonic fragments were incubated for 10\u201315 min at 4\u00b0C in a solution of 0.5% trypsin and 2.5% pancreatin in PBS. The embryos were drawn into a hand-pulled glass pipette with a diameter slightly smaller than the fragment to peel away the endoderm and separate it from the epiblast. Both fragments were recovered and prepared for RNA isolation. For embryo culture, E6.5 mouse embryos were dissected as stated above, but leaving the ectoplacental cone intact and removing only Reichart\u2019s membrane. The embryos were cultured in 1:1 rat serum/GMEM media (1 ml per embryo) supplemented with 200 mM L-glutamine/100 mM sodium pyruvate (Millipore, UK), 25 U/Ml Penicillin/25 \u00b5g/Ml Streptomycin, treated or not with 50 \u03bcM LY, in rotating wheel incubator at 37\u00b0C, 5% CO2. After 24 hr, the embryos were collected and fixed with 4% PFA for IHC or prepared for RNA isolation. The embryos from the same litter (WT) were dissected at E7.5 and used as wild-type controls. T-test was used to analyse the relationship between groups. WT, n = 12; C, n = 10; LY, n = 9; p values: *p<0.05, **p<0.01, or ***p<0.001.\n\n### LC-MS analysis\n\nFor ECM analysis samples were obtained and prepared according to an adaptation from Turoverova et al. (2009). Briefly, cells were removed by 2 mM EDTA (500 \u03bcl per 35 mm well), 37\u00b0C, 8\u201312 min, without shaking, and the cell detachment was controlled by eye. The solution was gently aspirated and residual cells and debris removed by 1\u00d7PBS wash/aspiration. Then the wells were covered with 800 ml 5% acetic acid, 4\u00b0C, ON. The wells were scrapped, the solution collected, and the wells covered with extraction buffer: 125 mM tris-HCL, pH 6.8, 1% SDS, 20 mM DDT, 10% glycerol, 0.05 mM PSMF, protease inhibitor cocktail (Santa Cruz Biotech, USA), and placed at 37\u00b0C, on a shaking platform incubator, 2 \u00d7 1 hr. Proteins were scrapped, collected and combined with the acetic acid fraction, and precipitated using methanol:chloroform. Briefly, equal volumes of protein extract and methanol were mixed together with one quarter of volume of chloroform. The mixture was centrifuged at 9000\u00d7g for 1 min and the upper phase was removed. At least 3 volumes of methanol was added to the lower phase and interphase with precipitated protein, mixed and centrifuged at 9000\u00d7g for 2 min. The pellets were allowed to air dry before solubilisation. Protein concentration was measured using the Amido Black Protein Assay (Dieckmann-Schuppert and Schnittler, 1997).\n\nProteins were dissolved in 200 \u03bcl of HEPES buffer (200 mM HEPES, pH 8.0 containing 0.1% of RapiGest SF) (Waters Corp., UK). Protein sample was reduced in 5 mM THP for 30 min at 37\u00b0C, and cysteines were alkylated in 10 mM iodoacetamide at RT in the dark for 30 min. Trypsin (modified, sequencing grade, Roche) was added to the sample at a ratio of 1:50 enzyme/protein, and allowed to digest overnight at 37\u00b0C. After tryptic digestion, formic acid was added to 2% final concentration to stop the reaction, and samples were then incubated at 37\u00b0C for an additional 4 hr. The samples were centrifuged for 30 min at 10,000\u00d7g to remove insoluble material and filtered with a 0.2 \u03bcm cartridge (Varian, UK). Filtered peptides were dried by a Speed Vac, and stored at \u221220\u00b0C.\n\nCapillary-HPLC-MSMS analysis was performed on an on-line micro-pump (1200 binary HPLC system, Agilent, UK) coupled to a hybrid LTQ-Orbitrap XL instrument (Thermo-Fisher, UK). The LTQ was controlled through Xcalibur 2.0.7 and LTQ Orbitrap XL MS2.4SPI. HPLC-MS methods have been described previously (Le Bihan et al., 2010). Samples were reconstituted in 10 \u00b5l loading buffer before injection, and analysed on a 2 hr gradient for data dependant analysis.\n\nAs a control, pure gelatine was treated and analysed using the same procedure. Figure 7\u2014source data 2 also shows the results for gelatine MS-LC analysis.\n\n### Data analysis\n\nLC-MS Label-free quantification was performed using Progenesis 2.6 (Nonlinear Dynamics, UK). The number of Features was reduced to only MSMS peaks with a charge of 2, 3, or 4+ and the five most intense MSMS spectra per \u2018Feature\u2019 were kept. The generated MGF files were searched using MASCOT Versions 2.3 (Matrix Science Ltd, UK) against a mouse plus contaminant proteins IPI database with 55413 sequences downloaded from www.ebi.ac.uk (version v3.42). Variable methionine oxidation, STY phosphorylation, protein N-terminal acetylation and fixed cysteine carbamidomethylation were used in all searches. Precursor mass tolerance was set to 7 ppm and MSMS tolerance to 0.4 amu. The significance threshold (p) was set below 0.05 (MudPIT scoring in Mascot). The list of proteins and quantitation are reported in Supplemental Information. Q values for false discovery rate control based on p value generated by Progenesis software were calculated from a R package (Storey and Tibshirani, 2003). A similar approach to Hartmann et al. (2009) in terms of threshold choice was used in this study. Hierarchical clustering was performed using Genesis (Sturn et al., 2002) with an average linkage clustering.\n",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "be5e47ba-3242-4933-8a3d-779cd8324502",
+      "submission_id": "19c8a63d-3260-470d-9152-a465f80cd8e2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Janet Rossant, University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00806.028](https://doi.org/10.7554/eLife.00806.028)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cPI3K/Akt1 signalling specifies foregut precursors by generating regionalized extra-cellular matrix\u201d for consideration at eLife. Your article has been favorably evaluated by 3 reviewers, one of whom is Senior editor Janet Rossant.\n\nThe Senior editor and the other reviewers discussed their comments before we reached this decision, and the Senior editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers all agreed that this paper adds significant new information to our understanding of early endoderm patterning in ES cells and the embryo. They have some areas of concern that would need to be addressed before the paper can be accepted for publication, as listed below. The two most important relate to the alternate fates adopted after Ly treatment and a further elucidation of the relationship between the phenotype of Fn-/- embryos and the effects described here on endoderm patterning.\n\n1) It is stated that treatment with LY produces cells that are either more posterior endoderm-like, or more like undetermined early endoderm. Which is actually the case? How can this be distinguished? It is an important point, because it could be that LY treatment just blocks further differentiation of all endoderm, rather than specifically blocking anterior endoderm formation. A more careful analysis of the alternative fates adopted would be useful.\n\n2) It is also stated that high levels of LY caused cell death, which is perhaps not unexpected given the fact that Akt signaling is often associated with cell survival. How do the authors distinguish between effects on cell differentiation and cell survival in their system, in both ES cells and embryos? Is there significant cell death in ES cells and embryos treated with the dose of LY that seems to block ADE formation?\n\n3) The data presented on the Fn-/- embryos is intriguing but limited. They show expansion of the Cer1-expressing domain, consistent with their hypothesis that low levels of Fn are associated with ADE formation. However, they do not follow this further to determine whether there is any effect on actual foregut formation.\n\n4) The phenotypes of Fn-/- embryos have been reported to be very variable dependent on genetic background, and so it is important to understand the overall phenotype seen in their particular mutant strain.\n\n5) In the discussion, they state that there is no gastrulation phenotype in Fn mutants, and yet they are actually reporting such a phenotype with the Cer1 expansion. Clearly a further analysis of the effect of the Fn mutation on gastrulation, mesoderm and endoderm formation is called for.\n\n6) Despite their emphasis in the results on FN being the key determinant of the patterning of the endoderm, in the discussion they seem less sure and talk about the complexities of the ECM differences. This part needs some clarification.\n",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b3472a4-aa2f-453b-bb20-c35ba44c762b",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C1",
+      "claim": "PI3K signalling promotes the transition from na\u00efve endoderm precursors into committed anterior endoderm",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PI3K signalling promotes the transition from na\u00efve endoderm precursors into committed anterior endoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript showing that PI3K inhibition blocks anterior endoderm formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "f4ea47a2-62d5-4fa0-b3dc-96cd523e2f49",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C2",
+      "claim": "PI3K promoted commitment via an atypical activity that delimited epithelial-to-mesenchymal transition (EMT)",
+      "claim_type": "EXPLICIT",
+      "source": "PI3K promoted commitment via an atypical activity that delimited epithelial-to-mesenchymal transition (EMT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data showing that PI3K inhibition leads to loss of epithelial markers and increased EMT markers (Figure 4A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "5e64b3b9-53a1-4a59-80cc-10501b4bd597",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C3",
+      "claim": "Akt1 transduced PI3K activity via modifications to the extracellular matrix (ECM)",
+      "claim_type": "EXPLICIT",
+      "source": "Akt1 transduced this activity via modifications to the extracellular matrix (ECM) and appropriate ECM could itself induce anterior endodermal identity in the absence of PI3K signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing that ECM produced under normal conditions (ECM1) can rescue anterior endoderm formation in the presence of PI3K inhibitor (Figure 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "c6d92a09-de8b-4675-8a35-47310c40b2d7",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C4",
+      "claim": "Appropriate ECM could itself induce anterior endodermal identity in the absence of PI3K signalling",
+      "claim_type": "EXPLICIT",
+      "source": "Akt1 transduced this activity via modifications to the extracellular matrix (ECM) and appropriate ECM could itself induce anterior endodermal identity in the absence of PI3K signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments where cells plated on ECM1 in the presence of LY (PI3K inhibitor) still form anterior endoderm (Figure 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "93370ecc-16f0-4b92-a590-630345c855c5",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C5",
+      "claim": "PI3K/Akt1-modified ECM contained low levels of Fibronectin (Fn1)",
+      "claim_type": "EXPLICIT",
+      "source": "PI3K/Akt1-modified ECM contained low levels of Fibronectin (Fn1) and we found that Fn1 dose was key to specifying anterior endodermal identity in vivo and in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by LC-MS analysis showing Fn1 enrichment in ECM2 (produced with PI3K inhibition) compared to ECM1 (Figure 7A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "2f8b4960-8462-429c-a9a6-c215b4614cdb",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C6",
+      "claim": "Fn1 dose was key to specifying anterior endodermal identity in vivo and in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "PI3K/Akt1-modified ECM contained low levels of Fibronectin (Fn1) and we found that Fn1 dose was key to specifying anterior endodermal identity in vivo and in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that exogenous Fn1 blocks anterior endoderm formation (Figure 7C) and Fn1 null embryos show expanded anterior endoderm domain (Figure 8E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "8b529ba2-f77d-4106-9a84-a7589862e3fb",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C7",
+      "claim": "Localized PI3K activity affects ECM composition and ECM in turn patterns the endoderm",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, localized PI3K activity affects ECM composition and ECM in turn patterns the endoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by multiple experiments showing PI3K-dependent ECM changes and ECM-dependent endoderm patterning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "f7ce3cab-82e9-4312-925d-96d09aaf1ddb",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C8",
+      "claim": "PI3K inhibition with LY had a specific effect on induction of ADE but not on mesendodermal populations",
+      "claim_type": "EXPLICIT",
+      "source": "However, while inhibition of different MAPKs (with PD032, SP and SB) also resulted in a dramatic reduction in mesendodermal and pan-endodermal, Hhex\u2212Cxcr4+ (H\u2212C+) populations, only PI3K inhibition with LY had a specific effect on induction of ADE (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry data in Figure 1C showing that LY treatment specifically reduces Hhex+Cxcr4+ (ADE) population while maintaining Hhex-Cxcr4+ (mesendoderm) population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "f41f6cf6-0323-49bb-b318-6e6ba2561912",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C9",
+      "claim": "PI3K inhibition leads to enhanced expression of pan-endodermal markers Sox17, Foxa2 and Gsc",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of pan-endodermal markers Sox17, Foxa2 and Gsc were enhanced by PI3K inhibition, while induction of all ADE specific gene expression (Hhex, Cer1, Lefty1, Sfrp5 and Fzd5) was repressed (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by q-RT-PCR data in Figure 2A demonstrating increased expression of these markers in LY-treated cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "99a5436b-c57c-4a35-8507-36a22c1c7025",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C10",
+      "claim": "PI3K inhibition represses induction of all ADE specific gene expression including Hhex, Cer1, Lefty1, Sfrp5 and Fzd5",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of pan-endodermal markers Sox17, Foxa2 and Gsc were enhanced by PI3K inhibition, while induction of all ADE specific gene expression (Hhex, Cer1, Lefty1, Sfrp5 and Fzd5) was repressed (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by q-RT-PCR data in Figure 2A showing reduced expression of these ADE markers in LY-treated cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "ac7ded9e-a59b-44ec-a96e-76e31a4c2bef",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C11",
+      "claim": "pAkt1 was down-regulated as cells enter phase 1 but levels were rapidly restored at day 2 of differentiation",
+      "claim_type": "EXPLICIT",
+      "source": "pAkt1 was down-regulated just as cells enter phase 1, but levels were rapidly restored at day 2 of differentiation, and maintained throughout the endodermal differentiation (Figure 2C, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Western blot analysis in Figure 2C demonstrating the temporal pattern of Akt1 phosphorylation during differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "2f11b5d1-4c82-4238-ba4b-7080c194ec05",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C12",
+      "claim": "LY rapidly suppressed Akt1 phosphorylation",
+      "claim_type": "EXPLICIT",
+      "source": "LY rapidly suppressed Akt1 phosphorylation and while pAkt1 levels exhibited a slight recovery 6 hr after LY addition, they remained low throughout differentiation (Figure 2C, middle and bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot data in Figure 2C showing loss of pAkt1 signal after LY treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "0ebc0dc7-e492-49b3-bda7-b52a8f94c0d1",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C13",
+      "claim": "PI3K was essential between days 3 and 5 of differentiation for ADE induction",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3A shows the induction of ADE at day 7, in cultures exposed to LY for different periods of time, and demonstrates that PI3K was essential between days 3 and 5 of differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by time course experiments in Figure 3A where LY treatment during days 3-5 blocks ADE formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "5b586dcf-d37e-40cd-980e-d7fdbc8805ac",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C14",
+      "claim": "Hhex+ ADE cells were always Gschigh suggesting they arose specifically from the earlier GschighHhex\u2212 population",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Hhex+ ADE cells were always Gschigh suggesting they arose specifically from the earlier GschighHhex\u2212 population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on flow cytometry analysis showing correlation between Gsc expression levels and Hhex expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "53e4637c-57bb-4e8d-8e73-1b85679d02b2",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C15",
+      "claim": "The Gschigh population was diminished in the presence of LY while the Gsclow population was considerably expanded",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that this Gschigh population was diminished in the presence of LY while the Gsclow population was considerably expanded (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry and imaging data in Figure 3\u2014figure supplement 1A,B showing shift in Gsc expression levels with LY treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "fe971768-02f7-4133-9eba-c494894e6e34",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C16",
+      "claim": "When LY-treated cells were released from the PI3K block and cultured for an additional 3 days, there was a complete recovery of Hhex induction",
+      "claim_type": "EXPLICIT",
+      "source": "When LY-treated cells were released from the PI3K block and cultured for an additional 3 days in phase 2 differentiation conditions, we observed a complete recovery of Hhex induction, suggesting that in the absence of PI3K cells fail to progress in differentiation, but they were maintained in a less differentiated endodermal na\u00efve state (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by flow cytometry data in Figure 3B demonstrating rescue of Hhex expression after LY removal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "a284fd38-1c03-42b8-9cc2-b3b6a556cccf",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C17",
+      "claim": "In the absence of PI3K cells fail to progress in differentiation but are maintained in a less differentiated endodermal na\u00efve state",
+      "claim_type": "EXPLICIT",
+      "source": "When LY-treated cells were released from the PI3K block and cultured for an additional 3 days in phase 2 differentiation conditions, we observed a complete recovery of Hhex induction, suggesting that in the absence of PI3K cells fail to progress in differentiation, but they were maintained in a less differentiated endodermal na\u00efve state (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the reversibility of the LY phenotype shown in Figure 3B and supported by marker expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "7cee6fd0-9328-4c7e-9a24-77d0bcb45be7",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C18",
+      "claim": "LY-treated cultures expressed high levels of early primitive streak markers such as Mixl1 and Cdh2 but not mesodermal specific gene expression",
+      "claim_type": "EXPLICIT",
+      "source": "Alongside the high levels of endodermal markers previously observed (Sox17, Foxa2) in LY-treated cultures, they also showed expression of early primitive streak markers such as Mixl1 and Cdh2, but not mesodermal specific gene expression (Meox1, Meox2, Mesp1, Mesp2, Isl1, Gata1) (Figure 3\u2014figure supplement 1C and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by q-RT-PCR data in Figure 3\u2014figure supplement 1C showing expression patterns of these markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "1ca1b465-a95a-4f3f-a6be-121551e835ca",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C19",
+      "claim": "90% of the Gsc+ cells in LY-treated cultures co-expressed Sox17",
+      "claim_type": "EXPLICIT",
+      "source": "While these cultures expressed high level of PS gene expression, this appears to be predominantly endoderm as 90% of the Gsc+ cells in these LY-treated cultures co-expressed Sox17 (Figure 3\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunostaining and quantification in Figure 3\u2014figure supplement 1D,E demonstrating co-expression of these markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "88cb9fed-c718-4305-81d8-6c0679dbae76",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C20",
+      "claim": "LY-treated cells do not up-regulate the expression of posterior (Cdx2) or visceral (Hnf4a, Dab2) endoderm markers",
+      "claim_type": "EXPLICIT",
+      "source": "These cells also do not up-regulate the expression of posterior (Cdx2), or visceral (Hnf4a, Dab2) endoderm markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on gene expression analysis, though specific data is referenced as 'data not shown'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "30726ed3-b7d5-4957-b9fc-9f48a558419c",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C21",
+      "claim": "ADE cells progressed efficiently into hepatocyte and Pdx1 positive pancreatic progenitor lineages",
+      "claim_type": "EXPLICIT",
+      "source": "While ADE cells progressed efficiently into both lineages, LY-treated cells failed to differentiate efficiently (Figure 3C, Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining for hepatocyte markers (Figure 3C) and pancreatic markers (Figure 3\u2014figure supplement 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "8e60a6c8-679a-4c12-8420-fce3a4a2666c",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C22",
+      "claim": "LY-treated cells failed to differentiate efficiently into hepatocyte or pancreatic progenitors",
+      "claim_type": "EXPLICIT",
+      "source": "While ADE cells progressed efficiently into both lineages, LY-treated cells failed to differentiate efficiently (Figure 3C, Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by reduced expression of differentiation markers in LY-treated cells compared to control ADE (Figure 3C, Figure 3\u2014figure supplement 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "e0f44c63-95be-4a76-b0bb-77dbd37f4ffb",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C23",
+      "claim": "When LY-treated na\u00efve cells were returned to normal differentiation for 3 days prior to hepatocyte differentiation, they performed as normal Hhex positive ADE cultures",
+      "claim_type": "EXPLICIT",
+      "source": "However, when LY-treated na\u00efve cells were returned to normal differentiation for 3 days prior to subjecting them to hepatocyte differentiation, they performed as normal Hhex positive ADE cultures, efficiently generating Hnf4a/AFP positive hepatocyte progenitors (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining in Figure 3C showing efficient hepatocyte marker expression in recovered cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "85f98085-96fa-4abc-a670-090f6e8d0d84",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C24",
+      "claim": "The Gsclow population generated in the presence of LY failed to make cell\u2013cell contacts and no longer maintained epithelial morphology",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Gsclow population generated in the presence of LY failed to make cell\u2013cell contacts and no longer maintained the epithelial morphology normally observed at this early stage of endoderm differentiation (Figure 3\u2014figure supplement 1B,D, bright field).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by brightfield microscopy images in Figure 3\u2014figure supplement 1B,D demonstrating loss of epithelial organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "c901eb81-5508-4c74-96d0-1ed915536843",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C25",
+      "claim": "Normal up-regulation of E-cadherin was not observed in LY-treated cultures and residual E-cadherin was not localized to cell\u2013cell junctions",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, normal up-regulation of E-cadherin was not observed and residual E-cadherin was not localized to cell\u2013cell junctions, while the pro-EMT transcription factor Snai1 was up-regulated (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence (Figure 4A) and q-RT-PCR (Figure 4B) showing altered E-cadherin expression and localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "e1c0c6de-63d6-4762-8782-7117d5ada9d8",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C26",
+      "claim": "The pro-EMT transcription factor Snai1 was up-regulated in LY-treated cultures",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, normal up-regulation of E-cadherin was not observed and residual E-cadherin was not localized to cell\u2013cell junctions, while the pro-EMT transcription factor Snai1 was up-regulated (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by q-RT-PCR data in Figure 4B demonstrating increased Snai1 expression with LY treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "29eba498-8d90-4bed-adf9-a6f834f673ad",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C27",
+      "claim": "In the absence of PI3K signalling, na\u00efve endoderm precursor cells remained in an extended EMT-like process instead of forming an organized epithelium",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicated that in the absence of PI3K signalling, na\u00efve endoderm precursor cells remained in an extended EMT-like process, instead of forming an organized epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of loss of epithelial markers, increased EMT markers, and altered morphology in LY-treated cultures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "53c1847d-d957-4e40-b64a-eaf8e7f9bc55",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C28",
+      "claim": "pAkt1 levels were significantly higher in the Gschigh cells sorted from differentiating ESCs at day 4.5",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4C shows that pAkt1 levels were significantly higher in the Gschigh cells sorted from differentiating ESCs at the time at which Gschigh and Gsclow states could first be distinguished (day 4.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot analysis in Figure 4C showing differential pAkt1 levels in sorted cell populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "ba9d057e-c897-42b7-96ed-e3324bf7fb25",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C29",
+      "claim": "The GschighpAkt1high population was endodermal (Sox17+) whereas the GsclowpAkt1low population was mesendodermal (Brachyury+)",
+      "claim_type": "EXPLICIT",
+      "source": "Q-RT-PCR analysis on the different fractions also indicated that the GschighpAkt1high population was endodermal (Sox17+), whereas the GsclowpAkt1low population formed under control conditions was still mesendodermal (Brachyury+) (T+) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by q-RT-PCR data in Figure 4D demonstrating differential marker expression in sorted populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "d95136ea-7fe1-4b1e-b184-03dbf49a7fa5",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C30",
+      "claim": "The Gsclow population formed in the presence of LY expressed high levels of Sox17 whereas T expression was reduced",
+      "claim_type": "EXPLICIT",
+      "source": "The Gsclow population formed in the presence of LY was also distinct from the Gsclow population formed under control conditions. Gsclow-LY treated cells expressed high levels of Sox17 whereas T expression was reduced (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by q-RT-PCR data in Figure 4E showing marker expression in LY-treated Gsclow cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "d3df77e3-0022-44a6-8a41-bba391b9e14f",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C31",
+      "claim": "Tam stimulated Akt1 activation rescued ADE generation in the presence of LY",
+      "claim_type": "EXPLICIT",
+      "source": "In this cell line, we found that Tam stimulated Akt1 activation rescued ADE generation in the presence of LY. This ability of pAkt1 to support ADE specification was observed both by flow cytometry (Figure 5A) and by q-RT-PCR (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry (Figure 5A) and q-RT-PCR (Figure 5C) showing restoration of ADE markers with Tam treatment in LY-treated cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "63a59eae-c25d-4876-8190-31715726b0db",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C32",
+      "claim": "ADE markers (Hhex, Sfrp5, Fzd5) were induced robustly in response to Tam alongside rescue of ADE epithelial morphology even in the presence of LY",
+      "claim_type": "EXPLICIT",
+      "source": "ADE markers (Hhex, Sfrp5, Fzd5) were induced robustly in response to Tam, alongside the rescue of ADE epithelial morphology, even in the presence of LY (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by fluorescence microscopy (Figure 5B) and q-RT-PCR data demonstrating marker expression and morphology rescue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "a94b961d-13bc-44e7-967b-71f3143cfadf",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C33",
+      "claim": "Stimulation of Akt1 by Tam administration rescued the block to ADE induction in both Akt1 expressing and non-expressing cells",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the stimulation of Akt1 by Tam administration rescued the block to ADE induction in both Akt1 expressing and non-expressing cells (Figure 5D, Figure 5\u2014figure supplement 1E), indicating cell autonomous and non-autonomous rescue of the LY phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry analysis of mixed cultures in Figure 5D showing rescue in both GFP+ and GFP- populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "cd13adbe-9248-475b-8378-0a3a90b35302",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C34",
+      "claim": "Akt1 had cell autonomous effects on Snai1 and Sox17 transcription",
+      "claim_type": "EXPLICIT",
+      "source": "However, based on a time course for induction of gene expression in sorted Akt1-GFP+ and Akt1-GFP\u2212 populations (+/\u2212 Ly, +/\u2212 Tam), it appeared that Akt1 also had cell autonomous effects on Snai1 and Sox17 transcription (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by q-RT-PCR analysis of sorted populations in Figure 6\u2014figure supplement 1A demonstrating differential gene expression responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "a6bb50f5-0b56-42f0-921c-b4a987f8edc6",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C35",
+      "claim": "ECM1 but not ECM2 could support ADE differentiation in the presence of LY",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6B shows that ECM1, but not ECM2, could support ADE differentiation in the presence of LY.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry data in Figure 6B showing ADE formation on ECM1 but not ECM2 in the presence of LY.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "2128dbe4-4f28-4cd0-883d-cc07c4bfa87a",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C36",
+      "claim": "ECM1 not only restored anterior induction but the combination of LY and ECM1 enhanced anterior endoderm specification such that cultures were almost 60% ADE",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ECM1 not only restored anterior induction, but the combination of LY and ECM1 enhanced anterior endoderm specification, such that these cultures were almost 60% ADE (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by flow cytometry data in Figure 6B demonstrating high percentage of ADE in ECM1+LY condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "4920811a-0575-4c6c-9dcc-dfa8bbd7c808",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C37",
+      "claim": "The capacity of LY to enhance Sox17+Foxa2+ expression was harnessed by ECM1 which converted the Sox17+Foxa2+ na\u00efve population into Hhex+ prospective foregut",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the capacity of LY to enhance Sox17+Foxa2+ expression was harnessed by ECM1, which was able to convert the Sox17+Foxa2+ na\u00efve population into Hhex+ prospective foregut (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the combined effects of LY and ECM1 shown in Figure 6B,C demonstrating enhanced ADE formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "9aa26a58-8292-4913-9291-387e3b39525b",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C38",
+      "claim": "Cells plated on ECM1 in the presence of LY displayed epithelial morphology, enhanced E-cadherin and reduced Snai1 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Cells plated on ECM1 in the presence of LY displayed epithelial morphology, enhanced E-cadherin and reduced Snai1 expression (Figure 6D, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by morphological analysis and q-RT-PCR data in Figure 6D and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "5775f332-b8b6-4bee-abdf-bb50178ac8a5",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C39",
+      "claim": "Treatment of differentiating cultures with LY resulted in loss of expression of tight junction marker ZO-1 and polarity marker aPKC",
+      "claim_type": "EXPLICIT",
+      "source": "While treatment of differentiating cultures with LY resulted in a loss of expression of the tight junction and polarity markers, ZO-1 and aPKC, organized expression of these was restored within 12 hr of plating onto ECM1 (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunocytochemistry in Figure 6\u2014figure supplement 1C demonstrating loss and restoration of these markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "32510e2c-c779-4117-9be0-4c8eb4f14eb5",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C40",
+      "claim": "Organized expression of ZO-1 and aPKC was restored within 12 hr of plating onto ECM1",
+      "claim_type": "EXPLICIT",
+      "source": "While treatment of differentiating cultures with LY resulted in a loss of expression of the tight junction and polarity markers, ZO-1 and aPKC, organized expression of these was restored within 12 hr of plating onto ECM1 (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunocytochemistry in Figure 6\u2014figure supplement 1C showing restoration of marker localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "5a1fbea7-b7e1-4ac3-bbab-5d97bfe6fe68",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C41",
+      "claim": "Re-plating onto ECM1 did not rescue the LY-mediated block to Akt1 phosphorylation",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude the possibility that Akt1 activation was somehow stimulated by re-plating on these ECMs, despite the block to PI3K signalling, we assessed Akt1 activation after re-plating and observed no rescue of the LY-mediated block to Akt1 phosphorylation (Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot analysis in Figure 6\u2014figure supplement 1D showing continued absence of pAkt1 on ECM1 with LY.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "49a3467e-00ef-4960-8226-276809b8c3b9",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C42",
+      "claim": "ECM1 has the capacity to redirect the LY-mediated enhancement of Sox17/Foxa2 expression through an Akt1 independent pathway",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ECM1 has the capacity to redirect the LY-mediated enhancement of Sox17/Foxa2 expression through an Akt1 independent pathway and convert the majority of the culture to properly patterned anterior endoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ECM1 rescues ADE formation without restoring Akt1 phosphorylation (Figure 6\u2014figure supplement 1D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "249696ea-2c50-4e8d-8f3e-f70f1b2a6ce6",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C43",
+      "claim": "ECM1 together with LY could be used to enhance physiological ESC differentiation toward foregut",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that ECM1 together with LY could be used to enhance physiological ESC differentiation toward foregut (Figure 6B, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is suggested based on the enhanced ADE formation observed with ECM1+LY treatment shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "3a2aea42-2da1-45c1-a3f5-2ac4dcc46008",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C44",
+      "claim": "Specific proteins enriched in ECM1 include two heparan sulphates proteoglycans (HSPG), Perlecan and Col18a1",
+      "claim_type": "EXPLICIT",
+      "source": "Specific proteins enriched in ECM1 include two heparan sulphates proteoglycans (HSPG), Perlecan and Col18a1; two HSPG regulators Sulf1 and Cyr61; the metalloprotease Adamts15, the anterior endoderm associated diffusible factors Nodal and Lefty1; and the endoderm/epithelial associated cytokeratines Krt8, Krt18 and Krt19 (Figure 7A, Figure 7\u2014source data 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS analysis shown in Figure 7A and detailed in source data files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "1126ab6d-53e2-4f39-85cf-ca845197d5b5",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C45",
+      "claim": "ECM1 is enriched in HSPG regulators Sulf1 and Cyr61",
+      "claim_type": "EXPLICIT",
+      "source": "Specific proteins enriched in ECM1 include two heparan sulphates proteoglycans (HSPG), Perlecan and Col18a1; two HSPG regulators Sulf1 and Cyr61; the metalloprotease Adamts15, the anterior endoderm associated diffusible factors Nodal and Lefty1; and the endoderm/epithelial associated cytokeratines Krt8, Krt18 and Krt19 (Figure 7A, Figure 7\u2014source data 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS analysis shown in Figure 7A and detailed in source data files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "bec01656-6de3-4127-8603-50d17a948292",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C46",
+      "claim": "ECM1 is enriched in the metalloprotease Adamts15",
+      "claim_type": "EXPLICIT",
+      "source": "Specific proteins enriched in ECM1 include two heparan sulphates proteoglycans (HSPG), Perlecan and Col18a1; two HSPG regulators Sulf1 and Cyr61; the metalloprotease Adamts15, the anterior endoderm associated diffusible factors Nodal and Lefty1; and the endoderm/epithelial associated cytokeratines Krt8, Krt18 and Krt19 (Figure 7A, Figure 7\u2014source data 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS analysis shown in Figure 7A and detailed in source data files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "9e7e15a2-1125-4daf-9b01-451b07585834",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C47",
+      "claim": "ECM1 contains the anterior endoderm associated diffusible factors Nodal and Lefty1",
+      "claim_type": "EXPLICIT",
+      "source": "Specific proteins enriched in ECM1 include two heparan sulphates proteoglycans (HSPG), Perlecan and Col18a1; two HSPG regulators Sulf1 and Cyr61; the metalloprotease Adamts15, the anterior endoderm associated diffusible factors Nodal and Lefty1; and the endoderm/epithelial associated cytokeratines Krt8, Krt18 and Krt19 (Figure 7A, Figure 7\u2014source data 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS analysis shown in Figure 7A and detailed in source data files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "695f661b-7ecf-41cf-94b3-dff6768e4853",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C48",
+      "claim": "ECM1 contains the endoderm/epithelial associated cytokeratines Krt8, Krt18 and Krt19",
+      "claim_type": "EXPLICIT",
+      "source": "Specific proteins enriched in ECM1 include two heparan sulphates proteoglycans (HSPG), Perlecan and Col18a1; two HSPG regulators Sulf1 and Cyr61; the metalloprotease Adamts15, the anterior endoderm associated diffusible factors Nodal and Lefty1; and the endoderm/epithelial associated cytokeratines Krt8, Krt18 and Krt19 (Figure 7A, Figure 7\u2014source data 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS analysis shown in Figure 7A and detailed in source data files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "e6e8aaec-a31d-4adf-a973-7d310d620c3b",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C49",
+      "claim": "Fibronectin (Fn1), a promoter of EMT and migration, was highly enriched in ECM2",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Fibronectin (Fn1), a promoter of EMT and migration, was highly enriched in ECM2 as was the PS associated diffusible factor Fgf8 (Figure 7A, Figure 7\u2014source data 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS analysis shown in Figure 7A and detailed in source data files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "0ca0f7dc-ef5b-4a80-b056-099d4ef6b210",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C50",
+      "claim": "The PS associated diffusible factor Fgf8 was highly enriched in ECM2",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Fibronectin (Fn1), a promoter of EMT and migration, was highly enriched in ECM2 as was the PS associated diffusible factor Fgf8 (Figure 7A, Figure 7\u2014source data 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS analysis shown in Figure 7A and detailed in source data files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "bc01566e-32de-4f70-83d4-e7e939525e83",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C51",
+      "claim": "Fn1 expression was transcriptionally regulated by PI3K/Akt1 signalling",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis by q-RT-PCR confirmed that Fn1 expression was transcriptionally regulated by PI3K/Akt1 signalling (Figure 7B), and that the induction of Fn1 expression was a cell autonomous response to Akt1 activation (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by q-RT-PCR data in Figure 7B showing differential Fn1 expression with PI3K inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "b84e27e0-993b-4592-afc7-d3c033b094ee",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C52",
+      "claim": "The induction of Fn1 expression was a cell autonomous response to Akt1 activation",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis by q-RT-PCR confirmed that Fn1 expression was transcriptionally regulated by PI3K/Akt1 signalling (Figure 7B), and that the induction of Fn1 expression was a cell autonomous response to Akt1 activation (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by q-RT-PCR analysis of sorted Akt1-expressing and non-expressing cells in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "23cedcef-52ae-416f-9eec-a7b2a0375ee4",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C53",
+      "claim": "Addition of Fn1 to differentiating ESC cultures abolished the induction of ADE specific transcription",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the addition of Fn1 to differentiating ESC cultures, either through re-plating of PS stage cultures onto Fn1-coated dishes (data not shown) or through direct addition to phase 2 differentiation (Figure 7C) abolished the induction of ADE specific transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by q-RT-PCR data in Figure 7C showing loss of ADE marker expression with Fn1 addition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "eaeda562-7d46-4283-8987-13a3b5a7838b",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C54",
+      "claim": "Fn1 did not stimulate Akt1 phosphorylation but actually inhibited it",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7D shows that Fn1 did not stimulate Akt1 phosphorylation, but it actually inhibited it (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot analysis in Figure 7D showing reduced pAkt1 levels with Fn1 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "70be4dc4-811e-435d-a7e3-0732a547579d",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C55",
+      "claim": "Fn1 was highly expressed in the endoderm of E7.5 embryos",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that Fn1 was both highly expressed in the endoderm (Figure 8\u2014figure supplement 1B) and robustly enriched in the posterior region of these embryos (Figure 8A,C\u2013E), consistent with a role in promoting na\u00efve endoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by q-RT-PCR analysis of dissected embryo regions in Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "a77be2ec-bc4b-44a2-b759-b123218631d2",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C56",
+      "claim": "Fn1 was robustly enriched in the posterior region of E7.5 embryos",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that Fn1 was both highly expressed in the endoderm (Figure 8\u2014figure supplement 1B) and robustly enriched in the posterior region of these embryos (Figure 8A,C\u2013E), consistent with a role in promoting na\u00efve endoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by q-RT-PCR (Figure 8A) and immunohistochemistry (Figure 8C-E) showing differential Fn1 expression along the A-P axis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "78818083-5d1d-49c1-8055-c0d61fb826eb",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C57",
+      "claim": "Embryos cultured in the presence of LY exhibit enhanced Fn1 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, immunohistochemistry (IHC) showed that embryos cultured in the presence of LY exhibit enhanced Fn1 expression (Figure 8C,D) and a complete loss of Cer1+ ADE (Figure 8\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunohistochemistry in Figure 8C,D showing increased Fn1 staining in LY-treated embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "8bd1688c-8f2f-457d-bfcc-51b434b11a8f",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C58",
+      "claim": "Embryos cultured in the presence of LY show a complete loss of Cer1+ ADE",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, immunohistochemistry (IHC) showed that embryos cultured in the presence of LY exhibit enhanced Fn1 expression (Figure 8C,D) and a complete loss of Cer1+ ADE (Figure 8\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunohistochemistry in Figure 8\u2014figure supplement 1D demonstrating absence of Cer1 expression in LY-treated embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "9d8c2cb6-9269-4d00-9bac-b93390155849",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C59",
+      "claim": "Fn1 protein was non-uniformly distributed along the A-P axis of wild-type E7.5 embryos with relatively low expression in the prospective foregut region where Cer1 was expressed",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of wild-type (WT) embryos at E7.5 indicated that Fn1 protein was non-uniformly distributed along the A-P axis, with relatively low expression in the prospective foregut region where Cer1 was expressed (Figure 8A,C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunohistochemistry in Figure 8C-E showing inverse correlation between Fn1 and Cer1 expression domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "04f494c2-44d2-442a-939d-c5d731e8f063",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C60",
+      "claim": "In Fn1\u2212/\u2212 embryos, the domain of Cer1 expression was expanded toward the posterior-proximal side of the embryo within the domain of Foxa2 expression",
+      "claim_type": "EXPLICIT",
+      "source": "In Fn1\u2212/\u2212 embryos, the domain of Cer1 expression was expanded toward the posterior-proximal side of the embryo within the domain of Foxa2 expression (Figure 8E, Figure 8\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunohistochemistry in Figure 8E and Figure 8\u2014figure supplement 2A-C showing expanded Cer1 domain in mutant embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "09ae60bb-d87a-4fb0-b9bc-d6225134cd87",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C61",
+      "claim": "Sox17 was expressed at lower levels in the Cer1 positive foregut region",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed the protein expression of the pan-endoderm marker Sox17 and found that like Fn1, Sox17 was expressed at lower levels in the Cer1 positive foregut region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunohistochemistry analysis comparing Sox17 and Cer1 expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "cea998fb-a397-487b-bd14-7b04c8e2c423",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C62",
+      "claim": "In Fn1 mutants, the region of Sox17low was expanded across the embryo alongside Cer1",
+      "claim_type": "EXPLICIT",
+      "source": "In Fn1 mutants, this region of Sox17low was expanded across the embryo alongside Cer1 (Figure 8\u2014figure supplement 3C) and consistent with the increase in Sox17 transcript that we have observed in LY-treated embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunohistochemistry in Figure 8\u2014figure supplement 3C demonstrating expanded Sox17low domain in Fn1 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "a21bd959-2eea-4dcb-ba93-f074f8e90450",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C63",
+      "claim": "Itga5\u2212/\u2212 mutant embryos exhibited an expanded domain of Cer1 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while there are a number of integrins that bind to Fn1, integrin Itga5 is thought to mediate Fn1 functions during early embryogenesis and we found that Itga5\u2212/\u2212 mutant embryos (Yang et al., 1993) also exhibited an expanded domain of Cer1 expression (Figure 8\u2014figure supplement 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunohistochemistry and in situ hybridization in Figure 8\u2014figure supplement 2D,E showing expanded Cer1 in Itga5 mutants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "f923da2a-1b6f-47c2-bd72-006537e7ed02",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C64",
+      "claim": "In Fn1 and Itga5 null embryos the foregut did not fold into a tube and remained as a flat field of Foxa2+ cells",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the expansion of Cer1 in these mutants, further foregut morphogenesis was also defective and there was evidence of an expansion in the prospective foregut. In Fn1 and Itga5 null embryos: the foregut did not fold into a tube and remained as a flat field of Foxa2+ cells (Figure 8F, Figure 8\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunohistochemistry and in situ hybridization in Figure 8F and Figure 8\u2014figure supplement 3B showing foregut morphology defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "6dce954d-e8c5-4d01-a8f6-73e0f5ba05af",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C65",
+      "claim": "The domain of Foxa2+ cells remained enlarged in Fn1 and Itga5 null embryos compared to control embryos, particularly apparent early in foregut morphogenesis (E7.75)",
+      "claim_type": "EXPLICIT",
+      "source": "This domain of Foxa2+ cells remained enlarged compared to control embryos and this was particularly apparent early in foregut morphogenesis (E7.75) (Figure 8F, Figure 8\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by in situ hybridization in Figure 8F and Figure 8\u2014figure supplement 3A,B demonstrating expanded Foxa2 domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "e5b8f9bf-9e06-4ac0-a0ef-158bf03ae6c6",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C66",
+      "claim": "FGF signalling has been linked to visceral endoderm-dependent deposition of basement membrane components in ESC differentiation",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PS formation can be inhibited on the anterior side of the embryo as a consequence of the visceral endoderm depositing ECM components that block cell migration (Egea et al., 2008) and FGF signalling has been linked to visceral endoderm-dependent deposition of basement membrane components in ESC differentiation (Villegas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Villegas et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "8b481924-6835-420c-a323-247cef1503d9",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C67",
+      "claim": "PS formation can be inhibited on the anterior side of the embryo as a consequence of the visceral endoderm depositing ECM components that block cell migration",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PS formation can be inhibited on the anterior side of the embryo as a consequence of the visceral endoderm depositing ECM components that block cell migration (Egea et al., 2008) and FGF signalling has been linked to visceral endoderm-dependent deposition of basement membrane components in ESC differentiation (Villegas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Egea et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "3fa301b8-533f-4cd8-98c3-d12e5db5f70e",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C68",
+      "claim": "Integrin Itga5 is thought to mediate Fn1 functions during early embryogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while there are a number of integrins that bind to Fn1, integrin Itga5 is thought to mediate Fn1 functions during early embryogenesis and we found that Itga5\u2212/\u2212 mutant embryos (Yang et al., 1993) also exhibited an expanded domain of Cer1 expression (Figure 8\u2014figure supplement 2D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field and supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "5c5dddb5-2069-4438-853b-4590038f64d1",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C69",
+      "claim": "Fn1-integrin interactions are essential for axial extension of the mesendoderm",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies indicate that Fn1-integrin interactions are essential for axial extension of the mesendoderm (Yang et al., 1999; Davidson et al., 2006; Marsden and DeSimone, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "0d97d504-fd7b-4256-bc54-826ce148e341",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C70",
+      "claim": "Fn1 is not required for gastrulation",
+      "claim_type": "EXPLICIT",
+      "source": "However, Fn1 is not required for gastrulation and specific endodermal patterning defects have not been previously reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on existing knowledge from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "d263ff10-5734-4c3e-8e3d-51feea42027f",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C71",
+      "claim": "The Fn1 and Itga5 null mutants are both embryonic lethal and die by E10.5 due to cardiovascular problems, posterior truncations, and kinking of the neural tube",
+      "claim_type": "EXPLICIT",
+      "source": "The Fn1 and Itga5 null mutants are both embryonic lethal and die by E10.5 due to cardiovascular problems, posterior truncations, and kinking of the neural tube among others defects (George et al., 1993; Yang et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "34122116-266e-46ba-b0fb-8baded025cc6",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C72",
+      "claim": "PI3K/Akt1 signalling has been extensively associated with the induction of EMT rather than its suppression",
+      "claim_type": "EXPLICIT",
+      "source": "PI3K/Akt1 signalling has been extensively associated with the induction of EMT (Larue and Bellacosa, 2005) rather than its suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in the field supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "f0198061-a360-4689-97d5-97374cd9cf9b",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C73",
+      "claim": "FGF receptor activation is essential for ESC differentiation towards multiple lineages and leads to Grb2 and SHP2 recruitment, activating both PI3K and MAPK signalling pathways",
+      "claim_type": "EXPLICIT",
+      "source": "FGF receptor activation is essential for ESC differentiation towards multiple lineages and leads to Grb2 and SHP2 recruitment, activating both PI3K and MAPK signalling pathways (Kouhara et al., 1997; Xu et al., 1998; Villegas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on FGF signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "b58163ef-3fda-4f9a-b48e-d9295d750dc4",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C74",
+      "claim": "MAPK pathways have been associated with mesoderm induction, EMT and cell migration during gastrulation",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways have been associated with mesoderm induction, EMT and cell migration during gastrulation (Casey et al., 1998; Rodaway et al., 1999; Ciruna and Rossant, 2001; Mizoguchi et al., 2006; Poulain et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "c045a228-2417-4808-b2db-bab9779f8984",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C75",
+      "claim": "In endoderm, FGF signalling is required but does not induce EMT",
+      "claim_type": "EXPLICIT",
+      "source": "In endoderm, where FGF signalling is required, but does not induce EMT (Morrison et al., 2008; Hansson et al., 2009), the signalling is contextualized and rendered distinct as a result of the activity of this pathway in remodelling the ECM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on FGF signaling in endoderm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "53d3c973-e948-4e19-a9d5-e64d5fab38f9",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C76",
+      "claim": "PI3K activity in the visceral endoderm of embryoid body differentiation has been associated with the production of ECM required to support the epithelialization of the epiblast",
+      "claim_type": "EXPLICIT",
+      "source": "PI3K activity in the visceral endoderm of embryoid body differentiation (Li et al., 2001) has also been associated with the production of ECM required to support the epithelialization of the epiblast (Jeanes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "6db604df-02b0-498e-b638-0968639cc81d",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C77",
+      "claim": "Activation of PI3K/Akt1 pathway has been associated with a block to EMT in human ESCs",
+      "claim_type": "EXPLICIT",
+      "source": "While the activity of PI3K/Akt1 is generally associated with induction of EMT, activation of this pathway has also been associated with a block to EMT in human ESCs (Singh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study on human ESCs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "707fd9b5-a649-415a-9d26-55bf3469b099",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C78",
+      "claim": "In human ESCs, Akt1 activation supports self-renewal by inhibiting Raf/Mek/Erk and canonical Wnt signalling",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, Akt1 activation supports human ESC self-renewal by inhibiting Raf/Mek/Erk and canonical Wnt signalling, which in turn may also promote EMT, although it is not clear whether this route takes place in vivo during early endoderm differentiation or how comparable the mouse and human ESC differentiation models are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous work cited (Singh et al., 2012) but with caveats about applicability.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "71daedae-b608-4cc8-a673-b306cd3dea50",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C79",
+      "claim": "Knock down of Perlecan and Col18a1 HSPGs impairs endoderm differentiation in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "Knock down of these two HSPG's have been shown to impair endoderm differentiation in vitro (Higuchi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "2ed1a650-2342-49b7-bf99-9aa04a55d96d",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C80",
+      "claim": "Specific modifications in the ECM are required for Nodal transport within the embryo",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that specific modifications in the ECM are required for Nodal transport within the embryo (Oki et al., 2007; Marjoram and Wright, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on Nodal signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "2ddc18e8-0db1-4af6-a52b-9aacd13505c6",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "claim_id": "C81",
+      "claim": "Inhibition of PI3K leads to enhanced Sox17 and Foxa2 expression",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that inhibition of PI3K leads to enhanced Sox17 and Foxa2 expression (McLean et al., 2007) has been used in ESC differentiation protocols to generate endoderm derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5902e8bc-2fd0-49f9-af0f-eb286af4c974",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PI3K inhibition specifically blocks anterior definitive endoderm (ADE) formation while enhancing pan-endodermal markers and maintaining mesendoderm populations. LY treatment specifically reduces Hhex+Cxcr4+ (ADE) populations while maintaining Hhex-Cxcr4+ (mesendoderm) populations, and enhances expression of Sox17, Foxa2, and Gsc while repressing ADE-specific markers (Hhex, Cer1, Lefty1, Sfrp5, Fzd5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are well-supported by flow cytometry (Figure 1C) and q-RT-PCR data (Figure 2A) showing specific effects of PI3K inhibition on ADE versus mesendoderm populations and differential regulation of marker genes. The data clearly demonstrate the specificity of PI3K requirement for anterior endoderm specification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "8f1d8574-7a39-4cec-9b9c-778f7cf38541",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Akt1 phosphorylation is dynamically regulated during endoderm differentiation and is rapidly suppressed by PI3K inhibition. pAkt1 is down-regulated as cells enter phase 1, restored at day 2, and maintained throughout differentiation, while LY treatment rapidly and persistently suppresses pAkt1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 are supported by Western blot analysis in Figure 2C showing temporal patterns of Akt1 phosphorylation during normal differentiation and the effect of LY treatment. The data clearly demonstrate PI3K-dependent regulation of Akt1 activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "e34c9a3c-858d-454a-b0ec-df7f9230868b",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PI3K activity is essential during days 3-5 of differentiation for ADE induction, with Hhex+ ADE cells arising from a Gschigh population that is diminished by PI3K inhibition. The Gschigh population is reduced while the Gsclow population expands in the presence of LY.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 are supported by time-course experiments (Figure 3A) and flow cytometry/imaging data (Figure 3\u2014figure supplement 1A,B) demonstrating the critical window for PI3K activity and the relationship between Gsc expression levels and ADE formation. The data establish a clear temporal and population-specific requirement for PI3K.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "e3621791-b0ba-4b06-9be6-657366b9da3d",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PI3K inhibition maintains cells in a reversible na\u00efve endodermal state rather than causing irreversible differentiation block. LY-treated cells show complete recovery of Hhex induction when released from PI3K inhibition, suggesting they are maintained in a less differentiated but competent state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by flow cytometry data (Figure 3B) showing rescue of Hhex expression after LY removal and by marker expression analysis demonstrating the na\u00efve endoderm character. The reversibility of the phenotype is strong evidence for a developmental arrest rather than cell death or misdifferentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "45264944-0295-40dc-8b3e-079a77c13b5c",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LY-treated cultures express early primitive streak markers (Mixl1, Cdh2) and endodermal markers (Sox17, Foxa2) but not mesodermal, posterior, or visceral endoderm markers. 90% of Gsc+ cells co-express Sox17, indicating predominantly endodermal identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by q-RT-PCR (Figure 3\u2014figure supplement 1C) and immunostaining data (Figure 3\u2014figure supplement 1D,E). However, C20 relies on 'data not shown' which weakens the evidence. The overall characterization of the na\u00efve endoderm state is well-supported by the available data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "eaa1901c-8f72-4257-8527-b7077cd6eb11",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LY-treated na\u00efve endoderm cells have reduced differentiation capacity to hepatocyte and pancreatic progenitors, but this capacity is restored when cells are returned to normal differentiation prior to lineage specification. ADE cells efficiently generate hepatocyte and pancreatic progenitors, while LY-treated cells fail to differentiate efficiently unless first rescued.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by immunostaining data (Figure 3C, Figure 3\u2014figure supplement 1F) demonstrating differential expression of lineage markers. The rescue experiment (C23) provides strong evidence that the na\u00efve state is functionally reversible and that proper anterior endoderm specification is required for efficient further differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "58c33169-aeed-4580-bcb6-6b68254c6be2",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PI3K inhibition prevents epithelialization and promotes an EMT-like state in endoderm precursors. LY-treated cells fail to maintain epithelial morphology, show reduced E-cadherin expression and mislocalization, and exhibit increased Snai1 expression, indicating that PI3K signaling is required to suppress EMT during endoderm specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are well-supported by microscopy (Figure 3\u2014figure supplement 1B,D), immunofluorescence (Figure 4A), and q-RT-PCR data (Figure 4B) showing loss of epithelial characteristics and increased EMT markers. This represents a novel and unexpected role for PI3K/Akt1 in suppressing rather than promoting EMT.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "bc70f84b-b62b-48e9-84b0-f7bfc28140e8",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "pAkt1 levels are higher in Gschigh endodermal cells compared to Gsclow mesendodermal cells, and PI3K inhibition alters the identity of the Gsclow population. The GschighpAkt1high population is endodermal (Sox17+) while the GsclowpAkt1low population is mesendodermal (Brachyury+), and LY treatment produces a distinct Gsclow population with high Sox17 and reduced Brachyury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by Western blot analysis of sorted populations (Figure 4C) and q-RT-PCR data (Figure 4D,E) demonstrating differential pAkt1 levels and marker expression. The data establish a clear correlation between Akt1 activation and endodermal versus mesendodermal identity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "dccd202c-a0af-4a61-9fa7-311a05c45c7e",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Tamoxifen-induced Akt1 activation rescues ADE generation in the presence of PI3K inhibition. Tam treatment restores ADE markers (Hhex, Sfrp5, Fzd5) and epithelial morphology even when PI3K is inhibited with LY.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by flow cytometry (Figure 5A), microscopy (Figure 5B), and q-RT-PCR data (Figure 5C) demonstrating rescue of ADE specification by Akt1 activation. This is a key experiment establishing Akt1 as the critical downstream effector of PI3K in this context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "a4c81c90-2e6b-4be3-89d8-e0a312c62d51",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Akt1 activation rescues ADE induction through both cell-autonomous and non-autonomous mechanisms. Tam-induced Akt1 expression rescues ADE formation in both Akt1-expressing and non-expressing cells in mixed cultures, though Akt1 also has cell-autonomous effects on Snai1 and Sox17 transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by flow cytometry of mixed cultures (Figure 5D, Figure 5\u2014figure supplement 1E) and time-course q-RT-PCR of sorted populations (Figure 6\u2014figure supplement 1A). The data demonstrate both autonomous and non-autonomous effects, suggesting ECM-mediated signaling as a mechanism for the non-autonomous effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "e39cd73a-960a-4787-ba15-47bc4920c44e",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ECM produced under normal conditions (ECM1) but not under PI3K inhibition (ECM2) can support ADE differentiation in the presence of LY, and the combination of ECM1 and LY enhances anterior endoderm specification to ~60% ADE. ECM1 converts the Sox17+Foxa2+ na\u00efve population generated by LY into Hhex+ prospective foregut.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by flow cytometry data (Figure 6B) and q-RT-PCR (Figure 6C) demonstrating ECM-dependent rescue and enhancement of ADE formation. This is a critical result establishing ECM as a key downstream effector of PI3K/Akt1 signaling in endoderm patterning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "7ae77522-a58b-4436-a2bd-9c1657a0cc3c",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ECM1 restores epithelial characteristics to LY-treated cells. Cells plated on ECM1 in the presence of LY display epithelial morphology, enhanced E-cadherin, reduced Snai1, and restored expression of tight junction (ZO-1) and polarity (aPKC) markers within 12 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by morphological analysis, q-RT-PCR (Figure 6D, Figure 6\u2014figure supplement 1B), and immunocytochemistry (Figure 6\u2014figure supplement 1C) demonstrating rapid restoration of epithelial characteristics. The data show that ECM1 can overcome the EMT-promoting effects of PI3K inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "236a8499-4929-4a30-a6b3-3e53228e9bae",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ECM1 rescues ADE formation through an Akt1-independent pathway. Re-plating onto ECM1 does not restore Akt1 phosphorylation in the presence of LY, indicating that ECM1 acts downstream or parallel to Akt1 to redirect Sox17/Foxa2 expression toward anterior endoderm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by Western blot analysis (Figure 6\u2014figure supplement 1D) showing continued absence of pAkt1 on ECM1 with LY treatment. This is an important control demonstrating that ECM1 does not simply reactivate PI3K/Akt1 signaling but acts through an alternative mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "41ec7f9e-0106-4831-8b51-9867dcd3a4cb",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ECM1 is enriched in specific proteins including heparan sulfate proteoglycans (Perlecan, Col18a1), HSPG regulators (Sulf1, Cyr61), metalloprotease Adamts15, anterior endoderm factors (Nodal, Lefty1), and cytokeratins (Krt8, Krt18, Krt19) as determined by LC-MS analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 are supported by LC-MS analysis (Figure 7A, source data files). The proteomic characterization provides molecular insight into ECM composition, though the functional significance of individual components is not fully established in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "9786814e-e839-4ef7-baed-e14da79f52e5",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "ECM2 (produced under PI3K inhibition) is highly enriched in Fibronectin (Fn1) and Fgf8 compared to ECM1. LC-MS analysis shows differential enrichment of these proteins in ECM produced with versus without PI3K inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by LC-MS analysis (Figure 7A, source data files) showing differential protein composition between ECM1 and ECM2. The enrichment of Fn1 in ECM2 is a key finding that leads to subsequent functional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "09f42352-28aa-4fbe-bd62-5bc1502fef23",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Fn1 expression is transcriptionally regulated by PI3K/Akt1 signaling in a cell-autonomous manner. q-RT-PCR confirms that Fn1 expression is regulated by PI3K/Akt1, and analysis of sorted Akt1-expressing versus non-expressing cells shows that Fn1 induction is a cell-autonomous response to Akt1 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by q-RT-PCR data (Figure 7B, Figure 7\u2014figure supplement 1B) demonstrating PI3K/Akt1-dependent regulation of Fn1 transcription. The cell-autonomous nature of the response is established by analysis of sorted populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "8c9671ab-21f6-4909-9dac-163f951c7e2d",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Exogenous Fn1 blocks ADE specification and inhibits Akt1 phosphorylation. Addition of Fn1 to differentiating cultures abolishes ADE-specific gene expression, and Fn1 treatment reduces rather than increases pAkt1 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by q-RT-PCR (Figure 7C) and Western blot data (Figure 7D) demonstrating the inhibitory effects of Fn1 on ADE formation and Akt1 activation. This establishes Fn1 as a negative regulator of anterior endoderm specification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "1fe5c462-5b9e-4f2f-9509-a507023ecbd8",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Fn1 is highly expressed in the endoderm and enriched in the posterior region of E7.5 embryos. q-RT-PCR and immunohistochemistry demonstrate differential Fn1 expression along the anterior-posterior axis with higher levels posteriorly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by q-RT-PCR of dissected embryo regions (Figure 8A, Figure 8\u2014figure supplement 1B) and immunohistochemistry (Figure 8C-E) showing graded Fn1 expression. This establishes the in vivo relevance of Fn1 in endoderm patterning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "7c93886c-8934-41cc-8490-8355bd01b9db",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Ex vivo embryo culture with PI3K inhibitor enhances Fn1 expression and eliminates Cer1+ ADE. Embryos cultured in the presence of LY show increased Fn1 staining and complete loss of anterior endoderm markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by immunohistochemistry (Figure 8C,D, Figure 8\u2014figure supplement 1D) and q-RT-PCR (Figure 8B) of ex vivo cultured embryos. This demonstrates that the in vitro findings are recapitulated in embryos, though ex vivo culture has limitations compared to in vivo development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "d539c9a3-7ded-4cd6-a482-9052b6c3e2d4",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Fn1 shows graded expression along the A-P axis with low levels in the Cer1+ foregut region, and Fn1 null embryos show expanded Cer1 expression domain. Wild-type embryos show inverse correlation between Fn1 and Cer1 expression, while Fn1-/- embryos exhibit expanded anterior endoderm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by immunohistochemistry (Figure 8C-E, Figure 8\u2014figure supplement 2A-C) demonstrating the spatial relationship between Fn1 and Cer1 expression in wild-type and mutant embryos. This provides strong genetic evidence for Fn1's role in restricting anterior endoderm domain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "2464925e-eb8c-4dca-a5e1-fd93fb45ac3a",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Sox17 expression is lower in the Cer1+ foregut region and this Sox17low domain is expanded in Fn1 mutants. Immunohistochemistry shows that Sox17, like Fn1, is expressed at lower levels anteriorly, and this pattern is altered in Fn1-/- embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by immunohistochemistry (Figure 8\u2014figure supplement 3C) showing Sox17 expression patterns in wild-type and Fn1 mutant embryos. This provides additional evidence for Fn1's role in endoderm patterning, though the relationship between Sox17 levels and anterior identity is complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "5c2cbde1-2d0d-4d3d-bba3-3aeca578e215",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Itga5 null embryos phenocopy Fn1 mutants with expanded Cer1 domain and foregut morphogenesis defects. Itga5-/- embryos show expanded anterior endoderm, failure of foregut tube formation, and enlarged Foxa2+ domain, particularly at E7.75.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by immunohistochemistry and in situ hybridization (Figure 8F, Figure 8\u2014figure supplement 2D,E, Figure 8\u2014figure supplement 3A,B) demonstrating similar phenotypes in Fn1 and Itga5 mutants. This provides genetic evidence that Fn1 signals through Itga5 integrin during endoderm patterning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "9030ee45-51b3-4cd5-8066-3d5307940398",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "PI3K/Akt1 signaling specifies anterior endoderm by modifying ECM composition, particularly by regulating Fn1 levels. PI3K promotes the transition from na\u00efve to committed anterior endoderm via an atypical activity that limits EMT, Akt1 transduces this through ECM modifications, and appropriate ECM (low in Fn1) can induce anterior endoderm identity independent of PI3K signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 represent the main conclusions of the paper and are supported by the comprehensive set of in vitro and in vivo experiments described above. The data establish a novel ECM-mediated mechanism for PI3K/Akt1 function in developmental patterning, with Fn1 as a key regulated component. The integration of cell culture, genetic, and biochemical approaches provides strong support for this model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "097f6463-8d3b-481b-97d3-5a7264ce7fdd",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "ECM1 together with LY could be used to enhance ESC differentiation toward foregut for biotechnology applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C43 is speculative and based on the observation of enhanced ADE formation with ECM1+LY (Figure 6B). While the data show proof-of-principle, practical application would require additional optimization, scalability testing, and validation of functional properties of the derived cells. This represents a promising direction but requires further work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    },
+    {
+      "id": "ad9d746c-2739-4d8b-825c-7d35ad095af1",
+      "content_id": "3cb63a6c-2788-4341-ab33-9c7cca9c4e2c",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within existing literature on ECM, FGF signaling, PI3K/Akt1 function, and endoderm development through multiple citations to prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C81 represent citations to and statements about prior work. These are appropriately referenced and provide context for the current findings. The authors correctly note that their findings represent a novel, atypical role for PI3K/Akt1 in suppressing rather than promoting EMT, which contrasts with much of the existing literature (C72).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:59:57.862469Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f7ce3cab-82e9-4312-925d-96d09aaf1ddb",
+      "result_id": "5902e8bc-2fd0-49f9-af0f-eb286af4c974"
+    },
+    {
+      "claim_id": "f41f6cf6-0323-49bb-b318-6e6ba2561912",
+      "result_id": "5902e8bc-2fd0-49f9-af0f-eb286af4c974"
+    },
+    {
+      "claim_id": "99a5436b-c57c-4a35-8507-36a22c1c7025",
+      "result_id": "5902e8bc-2fd0-49f9-af0f-eb286af4c974"
+    },
+    {
+      "claim_id": "ac7ded9e-a59b-44ec-a96e-76e31a4c2bef",
+      "result_id": "8f1d8574-7a39-4cec-9b9c-778f7cf38541"
+    },
+    {
+      "claim_id": "2f11b5d1-4c82-4238-ba4b-7080c194ec05",
+      "result_id": "8f1d8574-7a39-4cec-9b9c-778f7cf38541"
+    },
+    {
+      "claim_id": "0ebc0dc7-e492-49b3-bda7-b52a8f94c0d1",
+      "result_id": "e34c9a3c-858d-454a-b0ec-df7f9230868b"
+    },
+    {
+      "claim_id": "5b586dcf-d37e-40cd-980e-d7fdbc8805ac",
+      "result_id": "e34c9a3c-858d-454a-b0ec-df7f9230868b"
+    },
+    {
+      "claim_id": "53e4637c-57bb-4e8d-8e73-1b85679d02b2",
+      "result_id": "e34c9a3c-858d-454a-b0ec-df7f9230868b"
+    },
+    {
+      "claim_id": "fe971768-02f7-4133-9eba-c494894e6e34",
+      "result_id": "e3621791-b0ba-4b06-9be6-657366b9da3d"
+    },
+    {
+      "claim_id": "a284fd38-1c03-42b8-9cc2-b3b6a556cccf",
+      "result_id": "e3621791-b0ba-4b06-9be6-657366b9da3d"
+    },
+    {
+      "claim_id": "7cee6fd0-9328-4c7e-9a24-77d0bcb45be7",
+      "result_id": "45264944-0295-40dc-8b3e-079a77c13b5c"
+    },
+    {
+      "claim_id": "1ca1b465-a95a-4f3f-a6be-121551e835ca",
+      "result_id": "45264944-0295-40dc-8b3e-079a77c13b5c"
+    },
+    {
+      "claim_id": "88cb9fed-c718-4305-81d8-6c0679dbae76",
+      "result_id": "45264944-0295-40dc-8b3e-079a77c13b5c"
+    },
+    {
+      "claim_id": "30726ed3-b7d5-4957-b9fc-9f48a558419c",
+      "result_id": "eaa1901c-8f72-4257-8527-b7077cd6eb11"
+    },
+    {
+      "claim_id": "8e60a6c8-679a-4c12-8420-fce3a4a2666c",
+      "result_id": "eaa1901c-8f72-4257-8527-b7077cd6eb11"
+    },
+    {
+      "claim_id": "e0f44c63-95be-4a76-b0bb-77dbd37f4ffb",
+      "result_id": "eaa1901c-8f72-4257-8527-b7077cd6eb11"
+    },
+    {
+      "claim_id": "85f98085-96fa-4abc-a670-090f6e8d0d84",
+      "result_id": "58c33169-aeed-4580-bcb6-6b68254c6be2"
+    },
+    {
+      "claim_id": "c901eb81-5508-4c74-96d0-1ed915536843",
+      "result_id": "58c33169-aeed-4580-bcb6-6b68254c6be2"
+    },
+    {
+      "claim_id": "e1c0c6de-63d6-4762-8782-7117d5ada9d8",
+      "result_id": "58c33169-aeed-4580-bcb6-6b68254c6be2"
+    },
+    {
+      "claim_id": "29eba498-8d90-4bed-adf9-a6f834f673ad",
+      "result_id": "58c33169-aeed-4580-bcb6-6b68254c6be2"
+    },
+    {
+      "claim_id": "53c1847d-d957-4e40-b64a-eaf8e7f9bc55",
+      "result_id": "bc70f84b-b62b-48e9-84b0-f7bfc28140e8"
+    },
+    {
+      "claim_id": "ba9d057e-c897-42b7-96ed-e3324bf7fb25",
+      "result_id": "bc70f84b-b62b-48e9-84b0-f7bfc28140e8"
+    },
+    {
+      "claim_id": "d95136ea-7fe1-4b1e-b184-03dbf49a7fa5",
+      "result_id": "bc70f84b-b62b-48e9-84b0-f7bfc28140e8"
+    },
+    {
+      "claim_id": "d3df77e3-0022-44a6-8a41-bba391b9e14f",
+      "result_id": "dccd202c-a0af-4a61-9fa7-311a05c45c7e"
+    },
+    {
+      "claim_id": "63a59eae-c25d-4876-8190-31715726b0db",
+      "result_id": "dccd202c-a0af-4a61-9fa7-311a05c45c7e"
+    },
+    {
+      "claim_id": "a94b961d-13bc-44e7-967b-71f3143cfadf",
+      "result_id": "a4c81c90-2e6b-4be3-89d8-e0a312c62d51"
+    },
+    {
+      "claim_id": "cd13adbe-9248-475b-8378-0a3a90b35302",
+      "result_id": "a4c81c90-2e6b-4be3-89d8-e0a312c62d51"
+    },
+    {
+      "claim_id": "a6bb50f5-0b56-42f0-921c-b4a987f8edc6",
+      "result_id": "e39cd73a-960a-4787-ba15-47bc4920c44e"
+    },
+    {
+      "claim_id": "2128dbe4-4f28-4cd0-883d-cc07c4bfa87a",
+      "result_id": "e39cd73a-960a-4787-ba15-47bc4920c44e"
+    },
+    {
+      "claim_id": "4920811a-0575-4c6c-9dcc-dfa8bbd7c808",
+      "result_id": "e39cd73a-960a-4787-ba15-47bc4920c44e"
+    },
+    {
+      "claim_id": "9aa26a58-8292-4913-9291-387e3b39525b",
+      "result_id": "7ae77522-a58b-4436-a2bd-9c1657a0cc3c"
+    },
+    {
+      "claim_id": "5775f332-b8b6-4bee-abdf-bb50178ac8a5",
+      "result_id": "7ae77522-a58b-4436-a2bd-9c1657a0cc3c"
+    },
+    {
+      "claim_id": "32510e2c-c779-4117-9be0-4c8eb4f14eb5",
+      "result_id": "7ae77522-a58b-4436-a2bd-9c1657a0cc3c"
+    },
+    {
+      "claim_id": "5a1fbea7-b7e1-4ac3-bbab-5d97bfe6fe68",
+      "result_id": "236a8499-4929-4a30-a6b3-3e53228e9bae"
+    },
+    {
+      "claim_id": "49a3467e-00ef-4960-8226-276809b8c3b9",
+      "result_id": "236a8499-4929-4a30-a6b3-3e53228e9bae"
+    },
+    {
+      "claim_id": "3a2aea42-2da1-45c1-a3f5-2ac4dcc46008",
+      "result_id": "41ec7f9e-0106-4831-8b51-9867dcd3a4cb"
+    },
+    {
+      "claim_id": "1126ab6d-53e2-4f39-85cf-ca845197d5b5",
+      "result_id": "41ec7f9e-0106-4831-8b51-9867dcd3a4cb"
+    },
+    {
+      "claim_id": "bec01656-6de3-4127-8603-50d17a948292",
+      "result_id": "41ec7f9e-0106-4831-8b51-9867dcd3a4cb"
+    },
+    {
+      "claim_id": "9e7e15a2-1125-4daf-9b01-451b07585834",
+      "result_id": "41ec7f9e-0106-4831-8b51-9867dcd3a4cb"
+    },
+    {
+      "claim_id": "695f661b-7ecf-41cf-94b3-dff6768e4853",
+      "result_id": "41ec7f9e-0106-4831-8b51-9867dcd3a4cb"
+    },
+    {
+      "claim_id": "e6e8aaec-a31d-4adf-a973-7d310d620c3b",
+      "result_id": "9786814e-e839-4ef7-baed-e14da79f52e5"
+    },
+    {
+      "claim_id": "0ca0f7dc-ef5b-4a80-b056-099d4ef6b210",
+      "result_id": "9786814e-e839-4ef7-baed-e14da79f52e5"
+    },
+    {
+      "claim_id": "bc01566e-32de-4f70-83d4-e7e939525e83",
+      "result_id": "09f42352-28aa-4fbe-bd62-5bc1502fef23"
+    },
+    {
+      "claim_id": "b84e27e0-993b-4592-afc7-d3c033b094ee",
+      "result_id": "09f42352-28aa-4fbe-bd62-5bc1502fef23"
+    },
+    {
+      "claim_id": "23cedcef-52ae-416f-9eec-a7b2a0375ee4",
+      "result_id": "8c9671ab-21f6-4909-9dac-163f951c7e2d"
+    },
+    {
+      "claim_id": "eaeda562-7d46-4283-8987-13a3b5a7838b",
+      "result_id": "8c9671ab-21f6-4909-9dac-163f951c7e2d"
+    },
+    {
+      "claim_id": "70be4dc4-811e-435d-a7e3-0732a547579d",
+      "result_id": "1fe5c462-5b9e-4f2f-9509-a507023ecbd8"
+    },
+    {
+      "claim_id": "a77be2ec-bc4b-44a2-b759-b123218631d2",
+      "result_id": "1fe5c462-5b9e-4f2f-9509-a507023ecbd8"
+    },
+    {
+      "claim_id": "78818083-5d1d-49c1-8055-c0d61fb826eb",
+      "result_id": "7c93886c-8934-41cc-8490-8355bd01b9db"
+    },
+    {
+      "claim_id": "8bd1688c-8f2f-457d-bfcc-51b434b11a8f",
+      "result_id": "7c93886c-8934-41cc-8490-8355bd01b9db"
+    },
+    {
+      "claim_id": "9d8c2cb6-9269-4d00-9bac-b93390155849",
+      "result_id": "d539c9a3-7ded-4cd6-a482-9052b6c3e2d4"
+    },
+    {
+      "claim_id": "04f494c2-44d2-442a-939d-c5d731e8f063",
+      "result_id": "d539c9a3-7ded-4cd6-a482-9052b6c3e2d4"
+    },
+    {
+      "claim_id": "09ae60bb-d87a-4fb0-b9bc-d6225134cd87",
+      "result_id": "2464925e-eb8c-4dca-a5e1-fd93fb45ac3a"
+    },
+    {
+      "claim_id": "cea998fb-a397-487b-bd14-7b04c8e2c423",
+      "result_id": "2464925e-eb8c-4dca-a5e1-fd93fb45ac3a"
+    },
+    {
+      "claim_id": "a21bd959-2eea-4dcb-ba93-f074f8e90450",
+      "result_id": "5c2cbde1-2d0d-4d3d-bba3-3aeca578e215"
+    },
+    {
+      "claim_id": "f923da2a-1b6f-47c2-bd72-006537e7ed02",
+      "result_id": "5c2cbde1-2d0d-4d3d-bba3-3aeca578e215"
+    },
+    {
+      "claim_id": "6dce954d-e8c5-4d01-a8f6-73e0f5ba05af",
+      "result_id": "5c2cbde1-2d0d-4d3d-bba3-3aeca578e215"
+    },
+    {
+      "claim_id": "6b3472a4-aa2f-453b-bb20-c35ba44c762b",
+      "result_id": "9030ee45-51b3-4cd5-8066-3d5307940398"
+    },
+    {
+      "claim_id": "f4ea47a2-62d5-4fa0-b3dc-96cd523e2f49",
+      "result_id": "9030ee45-51b3-4cd5-8066-3d5307940398"
+    },
+    {
+      "claim_id": "5e64b3b9-53a1-4a59-80cc-10501b4bd597",
+      "result_id": "9030ee45-51b3-4cd5-8066-3d5307940398"
+    },
+    {
+      "claim_id": "c6d92a09-de8b-4675-8a35-47310c40b2d7",
+      "result_id": "9030ee45-51b3-4cd5-8066-3d5307940398"
+    },
+    {
+      "claim_id": "93370ecc-16f0-4b92-a590-630345c855c5",
+      "result_id": "9030ee45-51b3-4cd5-8066-3d5307940398"
+    },
+    {
+      "claim_id": "2f8b4960-8462-429c-a9a6-c215b4614cdb",
+      "result_id": "9030ee45-51b3-4cd5-8066-3d5307940398"
+    },
+    {
+      "claim_id": "8b529ba2-f77d-4106-9a84-a7589862e3fb",
+      "result_id": "9030ee45-51b3-4cd5-8066-3d5307940398"
+    },
+    {
+      "claim_id": "249696ea-2c50-4e8d-8f3e-f70f1b2a6ce6",
+      "result_id": "097f6463-8d3b-481b-97d3-5a7264ce7fdd"
+    },
+    {
+      "claim_id": "e5b8f9bf-9e06-4ac0-a0ef-158bf03ae6c6",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "8b481924-6835-420c-a323-247cef1503d9",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "3fa301b8-533f-4cd8-98c3-d12e5db5f70e",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "5c5dddb5-2069-4438-853b-4590038f64d1",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "0d97d504-fd7b-4256-bc54-826ce148e341",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "d263ff10-5734-4c3e-8e3d-51feea42027f",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "34122116-266e-46ba-b0fb-8baded025cc6",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "f0198061-a360-4689-97d5-97374cd9cf9b",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "b58163ef-3fda-4f9a-b48e-d9295d750dc4",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "c045a228-2417-4808-b2db-bab9779f8984",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "53d3c973-e948-4e19-a9d5-e64d5fab38f9",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "6db604df-02b0-498e-b638-0968639cc81d",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "707fd9b5-a649-415a-9d26-55bf3469b099",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "71daedae-b608-4cc8-a673-b306cd3dea50",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "2ed1a650-2342-49b7-bf99-9aa04a55d96d",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    },
+    {
+      "claim_id": "2ddc18e8-0db1-4af6-a52b-9aacd13505c6",
+      "result_id": "ad9d746c-2739-4d8b-825c-7d35ad095af1"
+    }
+  ],
+  "comparisons": []
+}

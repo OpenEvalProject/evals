@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors developed and applied a Hidden Markov Model (HMM) methodology to identify transient brain states from MEG data. The HMM was applied to band-limited amplitude envelopes (4-30 Hz) from source-reconstructed MEG data collected from 9 subjects (10 minutes each), with data temporally concatenated across subjects and reduced to 40 principal components before inferring an 8-state model using variational Bayes inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C9-C11, C66-C74) are well-documented with detailed descriptions of data acquisition, preprocessing, source reconstruction, and HMM inference procedures. The experimental design (C15-C16) is clearly stated with appropriate sample size and data duration for resting-state analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The HMM identified 8 brain states with spatial topographies corresponding to known resting-state networks, including a default mode network state (State 1, lacking posterior cingulate/precuneus), visual network states (States 2, 6, 8), sensorimotor network (State 3), lateralized temporal states (States 4, 5), and a parietal state with decreased activity (State 7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C17-C23 are directly supported by spatial correlation maps shown in Figure 2 and quantitative spatial correspondence with fMRI RSNs (Figure 2\u2014figure supplement 2, showing correlations of 0.28-0.44). The absence of PCC in the DMN state (C18) is explicitly noted and visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The identified HMM states have short lifetimes of 100-200 ms, which are two orders of magnitude faster than previously reported timescales for resting-state networks (<0.1 Hz, corresponding to >10 seconds). All states were represented across all subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are well-supported by temporal characterization data in Figure 3, showing state time courses (3A), life time distributions (3C), and fractional occupancy across subjects (3E). The comparison to prior literature (C26) is appropriately cited (Cordes et al., 2001) and the magnitude difference is accurately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C45"
+    ],
+    "result": "Within-network functional connectivity is underpinned by neuronal dynamics fluctuating at 200-400 ms timescales, as demonstrated by fractional occupancy analysis showing peak correlations at these window widths. Control analyses with low-pass filtered data confirmed these fast dynamics are not artifacts, as surrogate data with added noise showed longer timescales (~1 s) consistent with the filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C45 are strongly supported by Figure 4 showing peak correlations at 200-400 ms windows. The critical control experiments (C31-C34) in Figure 4\u2014figure supplement 1 demonstrate that low-pass filtering increases state lifetimes to ~1 s, and adding noise to filtered data does not recreate the fast dynamics, validating that the observed fast fluctuations are genuine coordinated network activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C14"
+    ],
+    "result": "The default mode network (State 1) and putative dorsal attention network (State 7) show antagonistic behavior, with strong anticorrelation in fractional occupancy time courses and very low transition probabilities between these states. This suggests the anticorrelation may arise from an inability to transition directly between these transient states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are directly supported by quantitative data in Figure 5A (fractional occupancy anticorrelation) and 5B (low transition probabilities). The interpretation linking MEG states to BOLD networks (C35, C37) is appropriately grounded in prior literature (Mantini et al., 2007). However, C39 is explicitly marked as speculative by the authors ('intriguing possibility'), which is appropriately cautious given the correlational nature of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Periods of high envelope correlation between DMN nodes are associated with increased fractional occupancy of the DMN state, with positive correlations (shown in Figure 6C) for all inter- and intra-hemispheric node pairs. This demonstrates that RSNs identified by conventional methods may derive from discrete transient epochs representing only a small fraction of total recording time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are well-supported by the sliding window analysis in Figure 6, showing temporal correspondence between envelope correlation and state fractional occupancy. The broader interpretation (C44) is appropriately supported by both the current data and consistent with cited prior work (Liu and Duyn, 2013; de Pasquale et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Model order selection analysis revealed that free energy increases monotonically up to K=15 states, suggesting the Bayes-optimal model may require more states. However, varying states from 4-14 did not change prominent RSN-like topographies but resulted in splitting into shorter-lived events (mean lifetimes decreasing from 230 ms at K=4 to 140 ms at K=15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C75-C77 are directly supported by systematic model order analysis shown in Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1. The authors appropriately acknowledge the limitation that Bayesian model selection does not provide a clear optimal number of states, and their choice of K=8 is justified as a pragmatic balance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The posterior cingulate cortex (PCC) is notably absent from the identified DMN state. The authors discuss multiple explanations: the PCC may act as a functional hub active across multiple states, MEG may be relatively insensitive to this deeper source, or this may reflect genuine differences between MEG and fMRI network characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the absence of PCC is clearly documented (C18), the explanations offered (C46, C51) are explicitly speculative. The cited evidence (C47-C50) shows mixed findings in the literature regarding PCC hub properties in MEG versus fMRI. Without additional analyses (e.g., examining PCC activity across all states, depth sensitivity simulations), the reason for PCC absence remains unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The HMM approach differs from EEG microstate analysis by explicitly modeling temporal dynamics to find predictably repeating states and exploiting MEG's superior spatial resolution through source-space analysis. The results suggest ICA-derived RSNs may derive from the transient time-varying behavior captured by HMM states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological distinctions (C55-C56) are clearly articulated and valid. The interpretation linking HMM states to ICA RSNs (C57) is appropriately cautious ('consistent with the idea') and supported by the spatial similarity shown in Figure 2\u2014figure supplement 2. The comparison to EEG microstates (C52-C54) accurately represents prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors propose that slow fluctuations in band-limited amplitude correlations underlying MEG RSNs may capture similar physiological phenomena as fast HMM states but through different temporal filters, potentially reflecting scale-free dynamics spanning hundreds of milliseconds to tens of seconds. This organization through transient coordination patterns may provide flexibility for cognitive processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C58-C59 appropriately cite supporting literature, the proposed relationship between fast and slow timescales (C60) is explicitly speculative. The compatibility with computational models (C64) is supported by appropriate citations, but the functional interpretation (C65) remains hypothetical. The manuscript does not provide direct evidence linking the observed fast dynamics to cognitive flexibility or task performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The group concatenation approach assumes anatomical correspondence between subjects, meaning individuals share common spatial patterns and temporal dynamics of state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 accurately describes a key assumption and limitation of the group concatenation methodology. The authors appropriately acknowledge this constraint while noting that Figure 3E demonstrates all states are present in all subjects, providing some validation of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims establishing that resting-state networks have been identified in fMRI, have functional/clinical significance, possess an electrophysiological basis measurable with MEG/EEG, exhibit temporal variability on seconds-to-tens-of-seconds timescales, but should theoretically coordinate on sub-second timescales to support cognitive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are appropriately supported by multiple citations to established literature. These background claims accurately represent prior knowledge and provide appropriate context for the study's motivation. The citations are relevant and the characterizations of prior findings appear accurate.",
+    "result_type": "MINOR"
+  }
+]

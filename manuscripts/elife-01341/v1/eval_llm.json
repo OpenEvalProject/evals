@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Mafb expression in spiral ganglion neurons (SGNs) follows a specific temporal and spatial pattern during development. Mafb transcription begins around E13.5 in the basal-middle cochlea, with protein first detected at E15.5, becoming nuclear by E16.5, peaking at P6, then translocating to the cytoplasm by P10. Expression is restricted to SGNs (not vestibular ganglion neurons) and coincides with the period of auditory synaptogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are well-supported by multiple complementary techniques including in situ hybridization (C1), immunostaining at multiple developmental stages (C2-C9), and Western blot (C5-C8). The temporal expression pattern is documented with appropriate controls and the SGN-specific expression is confirmed. The correlation with synaptogenesis timing is supported by both the authors' data and cited literature (C10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The Mafbflox conditional allele is functional and produces null mutants with expected phenotypes when recombined with germline Cre. These mutants lack Mafb protein and exhibit perinatal lethality with respiratory, renal, and inner ear defects matching previously published null mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by Western blot showing complete loss of Mafb protein (C11, Figure 2C) and phenotypic characterization matching published mutants (C12, Figure 2D-F). The validation against known null phenotypes provides strong evidence that the conditional allele functions as intended.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Early deletion of Mafb using Foxg1-Cre does not affect inner ear morphogenesis or SGN neurite organization, indicating Mafb is not required for these early developmental processes. However, these mutants die at birth, preventing analysis of later functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by morphological analysis (C13, Figure 3C-D), neurofilament staining (C15, Figure 3E-F), and observation of perinatal lethality (C16). The conclusion that Mafb is not required for early inner ear development (C14) is appropriately inferred from the normal morphology and is consistent with cited literature suggesting the inner ear phenotype in null mutants is secondary to hindbrain defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Conditional deletion of Mafb using Neurog1-Cre (MafbCKO) results in near-complete loss of Mafb by P5 while allowing survival to adulthood. Early SGN development, including neurogenesis, process organization, and cell density, proceeds normally in these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are well-supported by immunostaining and Western blot confirming Mafb loss (C17-C18, Figure 3G-I), observation of adult survival (C19), and quantitative analysis of SGN density and morphology (C20, Figure 3J-N). The conclusion that Mafb is not required for initial SGN production or differentiation (C21) is appropriately inferred from the combined results of both Cre drivers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "MafbCKO mutants exhibit severe defects in postsynaptic differentiation at ribbon synapses. While SGN terminals still contact IHCs, they fail to develop normal postsynaptic densities (PSDs), as evidenced by reduced GluR2 clustering, absence of clear PSDs by electron microscopy, and secondary effects on presynaptic ribbon development including reduced CtBP2 intensity and ribbon number. These defects are apparent from the earliest stages of synaptogenesis (P3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are strongly supported by multiple complementary approaches: electron microscopy showing SGN-IHC contact but absent PSDs (C22, C24, Figure 4E-F), immunofluorescence quantification of GluR2 and CtBP2 (C23, C25-C26, Figure 4B,K,L), and temporal analysis showing early onset (C27, Figure 4\u2014supplement 1D'). The conclusion that Mafb mutant SGNs fail to elaborate specialized PSDs (C28) is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The early synaptic defects in MafbCKO mutants result in severe disruption of mature synaptic connectivity, with approximately 50% reduction in GluR2 puncta and 30% reduction in ribbon number at P15. Many ribbons lack corresponding postsynaptic GluR2 puncta, indicating unpaired or orphaned ribbons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by quantitative immunofluorescence analysis (C29-C30, Figure 4G-H', K-L, Table 1) and 3D reconstruction showing unpaired ribbons (C31, Figure 4I-J). The quantification includes appropriate sample sizes and statistical analysis. The persistence of defects into maturity demonstrates long-term consequences of the early PSD differentiation failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The synaptic defects in MafbCKO mutants are not due to reduced transcription of PSD components (GluR2 and PSD95 mRNA levels are normal) or abnormal efferent innervation. Mafb acts cell-autonomously in SGN afferents to specify postsynaptic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by in situ hybridization showing normal transcript levels (C32, Figure 4\u2014supplement 2), immunostaining showing normal efferent innervation (C33, Figure 4\u2014supplement 3), and the use of SGN-specific Cre drivers (C34). The conclusion of cell-autonomous action is appropriately inferred from the Neurog1-Cre specificity data (Figure 3\u2014supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MafbCKO mice exhibit impaired auditory function with elevated ABR thresholds (~10 dB SPL increase across most frequencies) but normal DPOAEs, indicating the hearing deficit is due to reduced SGN activation rather than hair cell dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are well-supported by comprehensive ABR recordings across multiple frequencies (C35-C36, Figure 5A-B, n=16 per group) with appropriate statistical analysis, and DPOAE measurements showing normal hair cell function (C37, Figure 5C). The inference that the deficit is due to reduced SGN activation (C38) is logically sound given normal DPOAEs but elevated ABR thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MafbCKO mice show delayed and diminished Wave I of the ABR, with increased latency and significantly reduced amplitude (35% reduction at 16 kHz, 80 dB) across multiple frequencies and intensities, indicating impaired synchronization and reduced activation of the auditory nerve along the entire cochlea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by detailed ABR waveform analysis (C39-C40, Figure 5D-G, Figure 5\u2014supplement 1) with appropriate statistical testing across multiple stimulus parameters. The quantification of amplitude reduction (C41) is clearly stated and the conclusion about cochlea-wide effects (C42) is supported by the frequency range tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "MafbCKO SGNs exhibit normal intrinsic electrophysiological properties at P3, including voltage-dependent potassium and sodium currents, current-voltage relationships, action potential firing, and action potential parameters (resting potential, threshold, latency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are well-supported by comprehensive whole-cell patch-clamp recordings in voltage-clamp and current-clamp modes (Figure 6A-D). Sample sizes are adequate (n=5-11 per group) and multiple parameters are assessed. The conclusion that intrinsic membrane and firing properties are unaltered (C48) is appropriately inferred from the multiple measurements showing no significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The elevated ABR thresholds and reduced auditory nerve synchronization in MafbCKO mice are direct consequences of the synaptic defects rather than intrinsic SGN dysfunction. SGN firing properties develop normally independent of Mafb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are appropriately inferred from the combination of severe synaptic defects (Claims C22-C31), impaired auditory responses (Claims C35-C42), and normal SGN electrophysiology (Claims C43-C48). The logic is sound: since SGN intrinsic properties are normal but synapses are defective, the functional deficit must arise from the synaptic defect. This represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Premature expression of Mafb in MafbCE mice (by E12.5, ~3 days early) accelerates postsynaptic differentiation without affecting gross cochlear wiring. AMPA receptors cluster earlier with dramatically increased GluR2 and PSD95 staining intensity at P6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by immunostaining showing early Mafb expression (C51, Figure 7B-C'), normal neurofilament staining (C52, Figure 7\u2014supplement 1A-B), and quantification of increased GluR2 and PSD95 clustering (C53-C55, Figure 7D-F, Figure 7\u2014supplement 1C-D). The conclusion that Mafb enhances postsynaptic differentiation (C56) is appropriately inferred from the gain-of-function phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mafb overexpression in MafbCE mice causes precocious basolateral localization of presynaptic ribbons, with significantly shorter nearest-neighbor distances at P6 (1.83 vs 2.06 \u03bcm, p<0.0001), indicating accelerated synapse development with earlier confinement of ribbons to the IHC basal pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by immunostaining showing more confined CtBP2 distribution (C57, Figure 7D'-E') and rigorous 3D quantification of ribbon spacing (C58, Figure 7I, n=407-428 ribbons). The conclusion that overexpression accelerates synapse development (C59) is appropriately inferred from the combined postsynaptic and presynaptic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Despite accelerated early synapse development, MafbCE mice show normal ribbon and GluR2 puncta numbers at P15 with unchanged ribbon distribution, indicating that synaptic pruning and refinement are controlled by Mafb-independent pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by quantification showing no difference in synapse numbers at P15 (C60, Figure 7F-G, Table 1) and normal ribbon distribution (C61, Figure 7I, p=0.63). The inference that pruning is controlled by independent pathways (C62) is reasonable given that early acceleration does not affect final synapse number, though this remains somewhat speculative without direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MafbCE SGNs exhibit normal electrophysiological properties, and Mafb expression is sufficient to initiate synapse development without disrupting synaptic pruning or other SGN functions. However, most MafbCE mice die at ~3 weeks of age, preventing hearing assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by electrophysiological recordings (C63, Figure 6), observation of lethality (C64), and the combined evidence from accelerated development with normal pruning and electrophysiology (C65). The conclusion about sufficiency (C65) is appropriately inferred from the gain-of-function data, though the lethality limits full functional assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Gata3CKO mutants show strongly reduced Mafb protein levels and significantly decreased GluR2 and CtBP2 puncta at P15. The synaptic loss is more severe than in MafbCKO animals, consistent with Gata3's broader effects on SGN development including neurite outgrowth, axon guidance, and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by immunostaining showing reduced Mafb (C66, Figure 8B'), quantification of synaptic markers (C67, Figure 8E,E',G, Table 1), and comparison with MafbCKO data (C68). The interpretation that more severe loss reflects Gata3's broader functions is appropriately supported by cited literature on Gata3 mutant phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Restoration of Mafb in Gata3CKO mutants (Gata3CKO;MafbCE) is sufficient to substantially rescue the synaptic defect, with ~80% increase in GluR2 puncta and ~50% increase in ribbon number compared to Gata3CKO alone. This rescue is SGN-autonomous and demonstrates that Gata3 and Mafb are key players in a transcriptional cascade controlling SGN-specific features critical for hearing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are strongly supported by immunostaining showing Mafb restoration (C69, Figure 8C,C'), quantification of synaptic rescue (C70, Figure 8G, Table 1), demonstration of SGN-autonomy using Neurog1-Cre (C71, Figure 8\u2014supplement 1), and the combined genetic epistasis data (C72). This represents a key result establishing the Gata3\u2192Mafb regulatory relationship and Mafb's sufficiency for synapse formation even in a compromised developmental context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mafb plays a highly specific role with dramatic effects on postsynaptic differentiation without affecting other SGN functions. Mafb can restore synapses even in the severely disrupted Gata3 mutant background and acts downstream of Gata3 to ensure formation of specialized ribbon synapses. Mafb is a potent regulator of SGN terminal differentiation within the broader Gata3 transcriptional network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 represent appropriate synthesis of the major findings: specific synaptic effects without other defects (C73, supported by Claims C43-C50), rescue capability (C74, supported by Claims C69-C71), position in Gata3 pathway (C75, supported by Claims C66-C72), and overall significance (C76). These conclusions are well-supported by the comprehensive experimental evidence, though C76's mention of 'offering a potent molecular entry point for designing new treatments' is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Gata3 is required for Mafb expression in SGNs, and Mafb is sufficient to rescue synapses in Gata3CKO mutants. Mafb provides a new example of a transcription factor that can direct postsynaptic differentiation in a cell-type specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by loss of Mafb in Gata3CKO (C77, Figure 8B'), rescue experiments (C78, Figure 8F-G), and the combined evidence of SGN-specific expression and function (C79). The characterization as a 'new example' (C79) is appropriate given the limited prior examples of transcription factors directing postsynaptic differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MafA and c-Maf are highly expressed in SGNs and play important roles in dorsal root ganglia neuron differentiation, suggesting there may be a 'Maf code' for SGN terminal differentiation with each factor directing different features required for mature function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is supported by cited microarray data and unpublished observations, and C81 is supported by cited literature. However, C82 is explicitly speculative ('may be a Maf code') and lacks direct experimental evidence in SGNs. While the speculation is reasonable given the expression data and DRG precedent, it remains a hypothesis requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Mafb expression timing and functional properties are consistent with a terminal selector role: it is expressed late in differentiation just before functional synapses appear, is both necessary and sufficient for acquiring the ability to receive IHC information, and persists in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85, and C86 are supported by the temporal expression data (C83, Claims C1-C10), loss- and gain-of-function experiments (C85, Claims C22-C65), and expression in adults (C86, Claims C8, C96). Claim C84 is appropriately speculative ('may activate') as direct target genes have not been identified. The terminal selector hypothesis is well-supported by the available evidence, though definitive proof would require identification of direct targets and demonstration of ongoing requirement in adults.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The absence of Mafb from vestibular ganglion neurons (which also form ribbon synapses) suggests different transcription factors control postsynaptic differentiation in SGNs versus VGNs. Mafb may play similar roles in other neuronal populations where it is expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by the SGN-specific expression data (C9) and represents a logical inference about cell-type specificity. Claim C88 is appropriately speculative ('could play a similar role') and is supported by the principle established in SGNs, though it lacks direct experimental evidence in other neuronal types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Mafb is expressed in other specific neuronal populations including cochlear nucleus bushy cells, subsets of cortical interneurons, and rhythmogenic neurons in the pre-B\u00f6tzinger complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by cited literature. These claims establish the broader expression pattern of Mafb in the nervous system, providing context for potential additional functions beyond SGNs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Acoustic overexposure causes early synapse loss followed by slow SGN degeneration and eventual hearing loss. Stimulation of Mafb might encourage damaged neurons to re-establish IHC connections without interfering with other SGN functions. Mafb is present in adult cochlea cytoplasm, and drugs enhancing its nuclear translocation might offer new deafness treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are supported by established knowledge and cited literature. Claim C96 is supported by stated observations. However, claims C94, C95, and C97 are explicitly speculative ('might be sufficient', 'implies', 'might offer') and lack experimental validation. While the speculation is reasonable given Mafb's role in synapse formation and its presence in adults, these therapeutic implications require substantial future work including demonstration of Mafb's ability to promote synapse regeneration in damaged cochleae.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Functional dopaminergic and spinal motor neurons can be directly generated from somatic cells by ectopic expression of lineage-specific transcription factors, suggesting similar approaches might be possible for SGN regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by cited literature. This provides context for potential future therapeutic applications of the Gata3-Mafb pathway, though the application to SGNs remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Background on SGN and ribbon synapse development: SGN neurogenesis occurs in a base-to-apex gradient with most neurons exiting the cell cycle by E12.5 and projecting to the organ of Corti by E15.5. Ribbon synapses develop perinatally with ribbons initially distributed throughout IHC cytoplasm then localizing basally. SGN terminals elaborate PSDs with GluR2/R3 clustering. Ribbon number peaks in the first postnatal week then declines to adult levels by P12. Pre- and postsynaptic development are tightly coordinated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C108 are supported by cited literature and represent established knowledge in the field. These claims provide essential developmental context for interpreting the Mafb expression pattern and mutant phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Background on Gata3 in SGN development: Gata3 is expressed in SGNs from their earliest identification and maintained throughout differentiation. Gata3 deletion severely disrupts cochlear wiring and causes SGNs to fail to express auditory-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by cited literature and provide essential context for understanding Mafb's position in the Gata3 transcriptional network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Background on Mafb: Mafb belongs to the large Maf transcription factor family that activates cell-type specific terminal differentiation programs. Mafb was identified as the kreisler mutation causing hindbrain and inner ear defects. Mafb is required in the pre-B\u00f6tzinger complex for respiratory function, with null mutants dying from central apnea at birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 are supported by cited literature and established knowledge. These claims provide essential background on Mafb's known functions and the rationale for studying it in SGNs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Background on auditory system function: SGNs encode all acoustic information and transmit it via specialized ribbon synapses with high temporal precision. Ribbon synapses contain electron-dense ribbons that tether readily releasable vesicles enabling fast glutamate release. SGNs respond rapidly due to large PSDs with abundant AMPA receptors. Auditory synaptopathies underlie several forms of hearing loss, and ribbon synapses are vulnerable to acoustic overexposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 are supported by cited literature and represent established knowledge about auditory system function and pathology. These claims provide essential context for the significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

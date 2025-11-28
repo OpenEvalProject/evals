@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "MscL from Mycobacterium tuberculosis has been crystallized in the closed state, revealing a pentameric structure with each subunit containing one cytoplasmic \u03b1-helix and two transmembrane \u03b1-helices (TM1 and TM2) joined by a periplasmic loop, but the open form has not been crystallized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C18, C19, C20, and C21 are well-supported by citations to prior crystallography work (Chang et al., 1998) and are consistent with established knowledge in the field. The structural details are corroborated by Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior ensemble measurements and electrophysiological experiments established that the open pore diameter is >25 \u00c5, but the exact size and opening mechanism (helix-tilt vs. barrel-stave) remained unclear due to limitations of EPR and ensemble FRET techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C24-C26 accurately summarize the state of prior knowledge and are supported by appropriate citations to prior work. The limitations of prior techniques (EPR, ensemble FRET) are correctly identified and provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Two predominant models exist for MscL opening: the barrel-stave model (TM1 moves while TM2 remains stationary) and the helix-tilt model (both TM1 and TM2 swing away from the pore with tilting), with recent evidence favoring the helix-tilt model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 accurately describe the two competing models and are supported by appropriate citations to prior work. The description is consistent with Figure 2 and provides necessary background for the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C71",
+      "C72"
+    ],
+    "result": "MscL channels were reconstituted in liposomes with fluorescent labels (AF488 and AF568), immobilized via biotin-avidin interaction, and opened using 25% LPC, representing the first application of smFRET to liposome-reconstituted membrane proteins with more than three monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C45-C51 describe the experimental methodology in detail. The approach is well-documented in the methods section and supported by Figure 1D-E. The novelty claim (C36) is reasonable given the pentameric nature of MscL. The use of 5% labeled channels with 95% unlabeled (C71-C72) reduces inter-molecular FRET compared to prior ensemble experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "smFRET measurements of M42C showed three FRET efficiency peaks (E = 0.1, 0.28, 0.63) in the absence of LPC, with the highest peak (E \u22480.6) diminishing and the lowest peak (E \u22480.1) increasing upon addition of 25% LPC, indicating channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 describe the FRET measurements for M42C and are supported by Figure 3A-C. The photobleaching analysis (C52-C54) ensures single donor-acceptor pairs. The leakage coefficient (C55) and correction factor (C56) are experimentally determined. The sample sizes (C57-C58) are adequate (428 and 577 traces). The observation that the highest peak does not completely disappear (C62) is consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Immobilization of liposomes via biotin-neutravidin interaction results in high membrane tension (~30-40 kBT), causing some MscL channels to open spontaneously, explaining the presence of three FRET peaks in the absence of LPC; increasing BPE from 2% to 16% decreased the variance between \u00b1LPC samples by 98%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide a mechanistic explanation for the three-peak observation and are supported by citations to prior theoretical and experimental work on liposome immobilization. The control experiment (C67) varying BPE concentration provides strong support for the hypothesis, as shown in Figure 3D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C74"
+    ],
+    "result": "The middle FRET peak (E = 0.28) likely represents an overlap of Rn (open) and Rf (closed) due to limited FRET resolution; therefore, the highest FRET efficiency was used for distance calculations, and maximum likelihood estimation was employed for peak fitting to avoid binning artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 and C74 describe methodological choices that are justified by geometric calculations and prior work. The use of highest FRET efficiency (C69) is a reasonable approach given the resolution limitations. The use of MLE (C74) is appropriate for avoiding binning bias. The explanation for the middle peak (C68) is supported by calculations based on the crystal structure and prior estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83"
+    ],
+    "result": "The F\u00f6rster radius (R0) was experimentally determined for each mutant by measuring quantum yield and orientation factor; fluorophores are mixtures of 5' and 6' isomers with <5% size difference, and anisotropy measurements show \u03ba\u00b2 is close to 2/3 for most residues (e.g., R0 = 5.5\u00b10.4 nm for M42C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 and C83 describe careful characterization of the FRET system. The measurements are detailed in Figure 5 and Table 2. The low anisotropy (<0.2) supports the assumption that \u03ba\u00b2 \u2248 2/3. The isomer analysis (C76-C77) addresses a potential concern about probe heterogeneity. The experimental determination of R0 for each mutant is a strength of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The change in apparent distances equals the change in true distances if probe size does not change upon channel opening (\u0394rp = 0), which is a reasonable assumption because no chemical reactions occur and anisotropy measurements show probes are not significantly constrained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 address a critical issue in converting FRET measurements to structural information. The assumption \u0394rp = 0 is justified by the reasoning provided (no chemical reactions, low anisotropy). This allows the authors to focus on distance changes rather than absolute distances, which is a sound approach given the finite size of the fluorophores (~1.7 nm).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C82",
+      "C84",
+      "C86",
+      "C87",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "smFRET measurements of six residues (M42C, A27C, I25C on TM1; Y75C, Q80C, V82C on TM2) revealed that both TM1 and TM2 swing away from the pore center upon opening, with the top of each helix moving further than the bottom (1.4 vs 1.2 nm for TM1; 2.0 vs 1.4 nm for TM2), providing the first direct, model-free observation of helix tilting and strongly supporting the helix-tilt model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C82-C101 represent the core experimental findings. The measurements are detailed in Tables 2-3 and Figure 4. The observation that both helices move away from the pore (C97) and that the top moves further than the bottom (C99) provides direct evidence for tilting. The claim of being the first direct observation (C100-C101) is justified given prior work relied on ensemble measurements or indirect methods. The consistency between closely spaced residues (A27C and I25C; Q80C and V82C) supports measurement accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "smFRET measurements show \u0394D = 2.8 nm for M42C, larger than ensemble FRET (1.6 nm), and consistent measurements for I25C (2.4 nm) and A27C (2.5 nm), whereas ensemble FRET gave inconsistent values (0.2 nm and 2.9 nm respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 compare the current results to prior ensemble FRET measurements. The smFRET values are larger and more consistent than ensemble FRET, demonstrating the advantage of the single-molecule approach. The comparison is supported by citations to prior work (Corry et al., 2005b, 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The conductance of mutants agrees with MscL pentamers, though \u226430% hexamers may be present in DDM; simulations show hexamers mainly broaden peaks rather than shift centers, and would increase calculated pore size by ~7.5% (30% hexamers) to 17.6% (100% hexamers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 address the potential concern about oligomeric state. The conductance measurements (C91, Figure 4\u2014figure supplement 3C) support pentamers. The simulation analysis (C93, Figure 4\u2014figure supplement 3A-B) quantifies the effect of hexamers. The calculations (C94-C95) show the impact on pore size would be modest. This is a thorough treatment of an important potential confound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C110"
+    ],
+    "result": "Labeled channels were confirmed functional by ensemble FRET (observing peak shifts) and patch-clamp measurements (observing pressure-induced opening); specifically, the I25C mutation does not affect gating parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C110 address the concern that fluorophore labeling might affect channel function. The functional validation is shown in Figure 6 and supported by citations to prior work. The specific validation of I25C (C110) is important because this residue is used for pore size determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C41",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C118"
+    ],
+    "result": "The MscL channel opens via the helix-tilt model with the open pore reaching 2.8 nm in diameter, determined from the movement of residue I25C (\u0394r = 1.2 nm, \u0394D = 2.4 nm) combined with the closed state pore diameter (0.4 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C41, and C111-C114 represent the primary conclusions about opening mechanism and pore size. The helix-tilt conclusion (C7, C118) is strongly supported by the observation that both TM1 and TM2 move away from the pore with tilting. The pore size determination (C8, C114) is based on direct measurement of I25C movement, which is at the gating region and does not affect channel function. The calculation (\u03a6open = \u03a6close + \u0394D = 0.4 + 2.4 = 2.8 nm) is straightforward and agrees with prior estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C42",
+      "C43",
+      "C44",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C115",
+      "C119"
+    ],
+    "result": "A molecular dynamics model of the open state was developed using distance-constrained MD simulations (NAMD 2.9) based on all smFRET measurements; the model satisfies all distance constraints, confirms the helix-tilt mechanism with TM1 tilting ~27\u00b0 and TM2 tilting ~19\u00b0, shows the pore is mainly lined by TM1, and yields a pore diameter of 2.7-2.8 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C42-C44, and C102-C109 describe the computational modeling. The model is based on all smFRET measurements (C103), unlike prior work that used only a subset of data (C105). The model satisfies all distance constraints (C42, C104) and is shown in Figure 7. The tilting angles (C108-C109) and pore size (C115, C119) are consistent with the experimental measurements. The use of distance constraints with secondary structure and symmetry restraints is appropriate, though the authors acknowledge limitations regarding subtle structural changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "This is the first application of smFRET to liposome-reconstituted membrane proteins with more than three monomers, observing channels in lipid bilayers rather than detergents; the helix-tilt conclusion is independent of oligomeric state, though the exact pore diameter would be 3.0 nm (30% hexamers) to 3.3 nm (100% hexamers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 and C120-C122 summarize the methodological advance and address the hexamer issue. The novelty claim (C116) is reasonable. The advantage of studying channels in lipid bilayers (C120) is valid, as detergents can affect oligomeric state. The statement that the helix-tilt conclusion is independent of oligomeric state is correct, as both pentamers and hexamers would show the same qualitative behavior. The adjusted pore sizes (C121-C122) still agree with prior estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C22",
+      "C23"
+    ],
+    "result": "Mechanosensitive channels are essential in eukaryotes and prokaryotes; in bacteria, MscL acts as a 'safety valve' opening at ~10 mN/m to form a large nonselective pore (~3 nS conductance) permeable to ions and osmolytes, with TM1 and TM2 primarily responsible for gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 and C22-C23 provide background on mechanosensitive channels and MscL. All claims are supported by appropriate citations to prior literature and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study focused on closed and fully open states (achieved by adding LPC); future work could use smFRET with simultaneous patch-clamping to probe sub-conducting states and the sequence of domain movements during opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 accurately describe the scope of the current study. Claims C125-C126 suggest reasonable future directions but are speculative. The limitation to two states (closed and fully open) is acknowledged.",
+    "result_type": "MINOR"
+  }
+]

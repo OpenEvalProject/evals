@@ -1,0 +1,1368 @@
+{
+  "submission": {
+    "id": "854350da-0886-4171-98a2-af46f4a859f6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:52:37.173131Z",
+    "updated_at": "2025-11-28T21:52:37.173131Z"
+  },
+  "content": [
+    {
+      "id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "submission_id": "854350da-0886-4171-98a2-af46f4a859f6",
+      "content_type": "manuscript",
+      "content_text": "# High-resolution structures of kinesin on microtubules provide a basis for nucleotide-gated force-generation\n\n## Authors\n\n- Zhiguo Shang<sup>1</sup>\n- Kaifeng Zhou<sup>1</sup>\n- Chen Xu<sup>2</sup>\n- Roseann Csencsits<sup>3</sup>\n- Jared C Cochran<sup>4</sup>\n- Charles V Sindelar<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Biophysics and Biochemistry Yale University New Haven United States\n2. Department of Biology Brandeis University Waltham United States\n3. Life Sciences Division Lawrence Berkeley National Laboratory Berkeley United States\n4. Department of Molecular and Cellular Biochemistry Indiana University Bloomington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicrotubule-based transport by the kinesin motors, powered by ATP hydrolysis, is essential for a wide range of vital processes in eukaryotes. We obtained insight into this process by developing atomic models for no-nucleotide and ATP states of the monomeric kinesin motor domain on microtubules from cryo-EM reconstructions at 5\u20136 \u00c5 resolution. By comparing these models with existing X-ray structures of ADP-bound kinesin, we infer a mechanistic scheme in which microtubule attachment, mediated by a universally conserved \u2018linchpin\u2019 residue in kinesin (N255), triggers a clamshell opening of the nucleotide cleft and accompanying release of ADP. Binding of ATP re-closes the cleft in a manner that tightly couples to translocation of cargo, via kinesin's \u2018neck linker\u2019 element. These structural transitions are reminiscent of the analogous nucleotide-exchange steps in the myosin and F1-ATPase motors and inform how the two heads of a kinesin dimer \u2018gate\u2019 each other to promote coordinated stepping along microtubules.\n\n## Introduction\n\nConventional kinesin is the founding member of a superfamily of molecular motors that use the energy of ATP hydrolysis to transport cargo along microtubules, serving essential roles in a wide variety of cellular processes, most notably mitosis and neuronal transport. More than 20 different members of the kinesin superfamily are identified with mitosis alone, underscoring the motor's fundamental importance in the cellular life cycle (Rath and Kozielski, 2012). Given the important role of this motor protein in health and disease, and particularly its growing prominence as a therapeutic drug target (Rath and Kozielski, 2012), it is of considerable interest to understand the basic structural and functional features of this motor in molecular detail.\n\nConventional kinesin (kinesin-1) dimerizes via an extended stalk domain that forms a coiled coil (Figure 1A), so that the two catalytic motor domains are situated at one end of the coiled-coil, while cargo-binding domains are found at the opposite end. During active motility, the dimerized motor domains take alternating, eight nanometer steps toward the microtubule plus end, tracking along single protofilaments (Gennerich and Vale, 2009). Underlying this behavior, each motor domain cycles between conformations that are strongly attached to the microtubule (no-nucleotide and ATP-bound) and ones that are weakly attached (ADP-bound). Additionally, binding of ATP during the microtubule-attached phase of the motor domain causes a structural element called the neck linker (Figure 1A) to dock along the side of the motor domain in the plus end direction (Rice et al., 1999). The neck linker connects the C-terminus of the motor domain to the stalk, so that docking is accompanied by translocation of the cargo and the partner in the direction of travel. These nucleotide-dependent behaviors are thought to operate together to drive motility and force production.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of a stepping kinesin dimer on a microtubule protofilament. (B) Cross-sections of the reconstructed co-complexes of no-nucleotide kinesin (left) and ADP\u2022Al\u2022Fx (right) with the microtubule, running parallel to a tubulin protofilament. Fourier Shell Correlation curves and other diagnostic information related to 3D refinement and reconstruction are found in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A), (B) FSC curves for our 3D reconstructions of microtubules decorated by no-nucleotide and ADP\u2022Al\u2022Fx bound kinesin (respectively). These show signal nearly to the Nyquist frequency, dropping below the 0.143 threshold (1) in the 5\u20136 \u00c5 range. Bold lines correspond to reconstructions in which motion correction was only applied to the initial images. Thin lines reflect a gain of 0.5\u20131 \u00c5 in resolution that was achieved by dividing each box segment into three sub-averages of five video frames each, and then separately refining the position and Euler angles of the three sub-averages. (C) Representative image of the ADP\u2022Al\u2022Fx sample, after motion correction. (D) Post-processed diagnostic image for a 14-protofilament microtubule similar to that shown in (C), depicting the filament in a longitudinally compressed form. Each visible 8 nm repeat (marked with black arrows) corresponds to \u223c8 repeats in the original filament image that have been averaged together, yielding an 8-fold shortened image with improved signal-to-noise ratio. Note that the contrast has been inverted in this image compared with (C). (E) Diffraction pattern obtained by straightening the microtubule imaged in (D) using in-plane orientation parameters obtained from the final cycle of reference alignment. Thon rings are visible to beyond 8 \u00c5 resolution in all directions. Possibly due to thick ice, Thon rings were rarely if ever observed to extend beyond \u223c6 \u00c5 resolution, despite the combination of high-voltage instrument and direct electron detectors used in the current work. (F) Example of alpha-helical density from tubulin where helical pitch (arrows) can be resolved. (G) Example of beta-sheet density where individual strands are partially resolved (arrows).\n\nThe key structural transitions that underlie kinesin's stepping behavior remain uncertain. Kinesin possesses a Walker-type active site architecture, in which one important structural element (the P-loop) coordinates the nucleotide alpha- and beta-phosphates, while two \u2018switch\u2019 loops serve as nucleotide response elements (Kull et al., 1996; Sablin et al., 1996). It has long been suspected that these switch loops act as \u2018gamma phosphate sensors\u2019, transitioning from \u2018open\u2019 to \u2018closed\u2019 conformations in response to ATP. In this type of scheme, closure of the switch loops would propagate across the motor domain via a series of linked allosteric rearrangements in order to dock the neck linker to the motor domain. Moreover, because the switch II loop is N-terminally adjacent to one of kinesin's microtubule-interacting subdomains, sometimes called the switch II cluster, it was further proposed that kinesin could use the same gamma phosphate-sensing mechanism in order to control its microtubule affinity (Vale and Milligan, 2000; Kikkawa et al., 2001). Owing to more recent structural findings, however, the preceding ideas are increasingly regarded as incomplete or even incorrect (Sindelar, 2011). A major barrier to further progress in elucidating kinesin's mechanism has been the inability of cryo-EM methods to much exceed nanometer resolution with kinesin-microtubule complexes (Sindelar, 2011), making it difficult or impossible to determine which crystal structures of kinesin (if any) correspond to the motor's functionally relevant, microtubule-attached states.\n\nRecently, a series of X-ray crystal structures of kinesin have been solved in the presence of ATP analogs that are thought to closely resemble kinesin's ATP state on microtubules; these include not only two structures of kinesin solved in the absence of protein co-factors (Parke et al., 2010; Chang et al., 2013), but also a structure of kinesin co-complexed with a dimer of tubulin (Gigant et al., 2013). However, it has remained unclear how closely these structures resemble the corresponding state of kinesin when bound to its physiological substrate (an intact microtubule), and structure models for other nucleotide states of microtubule-attached kinesin have remained elusive. These issues have left open the possibility that one or more of kinesin's vital functions may be governed by allosteric pathways not envisioned in the gamma phosphate sensor scheme, possibly involving twisting of the motor's central beta sheet (Hirose et al., 2006; Kull and Endow, 2013; Arora et al., 2014). Of particular importance is whether switch loop closure is triggered by ATP binding (as in the gamma phosphate sensor scheme) or by some other event, which would allow ATP binding to have a distinct function.\n\nThe coordination that occurs between two heads in a kinesin dimer is even more challenging to explain with existing structural models. Recent single-molecule optical trapping studies of kinesin dimers are most consistent with a model in which the leading head of a stepping dimer has substantially reduced nucleotide affinity compared with the trailing head (Guydosh and Block, 2006; Clancy et al., 2011). Related to this observation, it was also shown that the nucleotide affinity of the kinesin motor domain depends on the direction of a load externally applied to the neck linker (Uemura and Ishiwata, 2003). These lines of evidence indicate that kinesin's neck linker may serve as a control lever, \u2018gating\u2019 the affinity for nucleotide depending on whether it points forward (as in a trailing head) or backward (as in a leading head) (Asenjo et al., 2003; Gennerich and Vale, 2009). However, the precise nature of this and other proposed gating functions remains under debate (Shastry and Hancock, 2010) and, similar to the monomer mechanism itself, there is little consensus on the structural basis of any type of gating mechanism in dimeric kinesin (Sindelar, 2011).\n\nTo address these questions, we exploited recent advances in cryo-EM methodology to obtain structure models of the kinesin motor domain complexed with microtubules in the absence of nucleotide and following binding of the non-hydrolyzable transition state analog, ADP\u2022Al\u2022Fx. Analysis of these structures leads us to infer that kinesin's switch loops, controlled by microtubules, serve as a nucleotide exchange factor while ATP binding docks the neck linker via a clamshell distortion of the active-site nucleotide cleft. The corresponding allosteric pathways deduced from our structures are distinct from prior proposals that originated from X-ray structures of free kinesin or from lower-resolution cryo-EM reconstructions, including a very recent study where the reported resolution was in the \u223c6\u20137 \u00c5 range (Atherton et al., 2014). Moreover, the resulting mechanistic model for the kinesin monomer can be used to explain key aspects of \u2018gating\u2019 between heads of a stepping kinesin dimer and provides a paradigm for future study of other motor proteins such as dynein and myosin, where atomic structures of the motor-filament complex have not yet been determined.\n\n## Results\n\n### High-resolution reconstructions of the kinesin-microtubule complex\n\nIn order to clarify the mechanism of kinesin's microtubule-attached cycle, we solved high-resolution cryo-EM reconstructions of the human monomeric kinesin motor domain (K349) attached to the microtubule in two different chemical states (Figure 1B), representing the motor before and after ATP binding (no-nucleotide and in the presence of ADP\u2022aluminum fluoride (ADP\u2022Al\u2022Fx)). Through the application of recent advances in instrumentation and image processing, including the use of a high-speed electron-counting detector and algorithms to correct for beam-induced sample motion (Li et al., 2013) (See \u2018Materials and methods\u2019), we were able to obtain a resolution of \u223c5\u20136 \u00c5 in both of these maps (Figure 1\u2014figure supplement 1A,B), a significant increase over previous studies of the kinesin-microtubule complex (Sindelar, 2011; Atherton et al., 2014; Goulet et al., 2014). In some regions of the maps, the pitch of \u03b1-helices was resolved as were individual beta strands, indicating a resolution of at least 5 \u00c5 (Figure 1\u2014figure supplement 1F,G). Features in the kinesin region of the map, however, appear to be limited to \u223c6 \u00c5 resolution, probably due to distortions of the helical lattice that could not be corrected by our image-processing algorithms. Hence, we filtered our maps to remove all signal beyond 6 \u00c5 resolution before proceeding with the analysis described below. Even after this filtering, both of our cryo-EM maps resolved all beta sheets, alpha helices, and many loops in both kinesin and tubulin as discrete entities. In particular, the paths of the motor's three principal microtubule-binding loops (L8, L11, L12) were directly resolved (Figure 2), which substantially aided further analysis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig2-v3.jpg)\n\n**Figure 2.:** Nucleotide cleft closure is coupled, via rotation of the N-terminal subdomain, to opening of a \u2018docking cleft\u2019 on the opposite side of the motor domain and accompanying docking of the neck linker (A), (B), (D), (E) two different slices of density perpendicular to the microtubule axis, detailing the N-terminal and upper domains (respectively). Microtubule contacts are denoted by colored arrowheads. (C), (F) Side view of motor domain facing the nucleotide active site. Thin colored cylinders in panels D\u2013F depict rotational axes that describe re-orientations of the N-terminal domain (blue) and upper domain (magenta) compared with the no-nucleotide state. Atomic models superposed on these maps in this and the following figures were derived from our cryo-EM data by molecular dynamics flexible fitting simulations as described in the text (see Videos 1\u20133 and Figure 2\u2014figure supplements 1\u20133).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B), Backbone RMSD values as a function of time, measured separately for tubulin and kinesin against the starting model, for MDFF simulations of the no-nucleotide and ATP states of kinesin (respectively). The bold black line indicates the corresponding value of the EM potential scaling factor (\u03be), which follows a linear ramp function (See \u2018Materials and methods\u2019). Time points selected to represent the fitted complex (with minimal over-refinement artifacts) are indicated by dashed lines. (C\u2013D), Backbone RMSD values in follow-up simulations starting with the selected structures in (A) and (B), respectively, where the cryo-EM potential was turned off but the coordinates of tubulin were restrained in the \u2018straight\u2019 conformation (see \u2018Materials and methods\u2019).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Overview of the kinesin-microtubule complex, highlighting the region selected for the close-ups in panels (B)\u2013(D). Four charged residues from kinesin's microtubule binding regions are labeled. The hydrogen-bonding geometry for R278 (loop L12) is extremely poor and R161 has no interaction partners in the 4HNA starting model (B), likely due to resolution limitations and anisotropy in the X-ray data. In both the no-nucleotide and ATP simulations (C and D, respectively), these residues stably interact with complementary charge partners in tubulin and/or adjacent residues of kinesin.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** These loop motions account for differences in cryo-EM density features for this loop seen in Figure 2C,F. These simulations were restarted from the endpoint of the corresponding MDFF simulations, but with the cryo-EM energy term turned off (see \u2018Materials and methods\u2019). The kinesin structure in these simulations exhibits substantially larger conformational fluctuations when compared to the MDFF simulations (not shown), indicating that addition of the cryo-EM energy term substantially restricts breathing movements that ordinarily occur at the simulated temperature (300 K). (A) Four representative conformations in the trajectory of unrestrained no-nucleotide kinesin, revealing that loop L9 can flap away from the nucleotide pocket when the gamma phosphate is absent. (B) Four representative conformations from the ATP-bound kinesin trajectory, reflecting the fact that L9 is stably engaged with the gamma-phosphate and is unable to fluctuate greatly.\n\n### Binding of ATP analog induces a clamshell closure of the nucleotide cleft, accompanied by neck linker docking\n\nComparison of our no-nucleotide and ATP-state maps reveals that binding of the ATP analog causes an articulated conformational change in the kinesin domain that involves the concerted motion of three relatively well-defined subdomains (Figure 2). Two of these subdomains result from dividing the central beta sheet at the junction between the beta strands anchoring the P-loop and the switch II loop (beta-3 and beta-7, respectively). The third subdomain, sometimes called the switch II cluster, contains kinesin's principle microtubule interaction elements including the switch II helix and C-terminally adjacent loop L12 (Woehlke et al., 1997). Because these three subdomains are closely analogous to subdomains that were previously identified in the myosin motor protein, known as the upper 50kD, lower 50kD, and N-terminal subdomains (Sweeney and Houdusse, 2010), we have adopted a similar naming convention in current work.\n\nConsistent with earlier cryo-EM observations (Kikkawa et al., 2001; Kikkawa and Hirokawa, 2006; Sindelar and Downing, 2010), the lower subdomain remains largely fixed on the microtubule surface in our maps (rotation of less than 5\u00b0). In contrast, the N-terminal subdomain makes a \u223c22\u00b0 seesaw-like motion atop the lower subdomain (compare Figure 2A,B to Figure 2D,E) in response to binding of the ATP. This action carries the neck linker attachment site (at the C-terminus of helix alpha 6) up and away from the lower subdomain, concomitantly forming a cavity and delivering the neck linker into it. Correspondingly, in the ATP analog state, we observed density consistent with a docked conformation of the neck linker, extending towards the microtubule plus end (Figure 1B; Figure 2A,B), while in the no-nucleotide state the neck linker was evidently disordered (Figure 1B; Figure 2D,E), consistent with previous observations (Rice et al., 1999; Sindelar and Downing, 2007, 2010). Thus, seesaw movement by the N-terminal subdomain couples ATP binding to docking of the neck linker, in agreement with the conclusions of several previous cryo-EM studies that visualized nucleotide-induced transitions of kinesin at lower resolution (Kikkawa and Hirokawa, 2006; Sindelar and Downing, 2007, 2010; Peters et al., 2010; Goulet et al., 2014).\n\nIn contrast to previous analyses of these structural states of kinesin, however, our data reveal that the seesaw movement identified for the N-terminal subdomain does not extend to the other half of the beta sheet (the upper subdomain). Rigid-body fitting experiments using fragments of kinesin X-ray structures indicate that the upper subdomain rotates by much less (\u223c11\u00b0) than the N-terminal subdomain (Figure 2D,E). Moreover, these fitting experiments indicate that the upper subdomain rotates about an axis that runs directly through the active site, thus predicting that the switch loops (which are anchored in the upper subdomain) would remain largely fixed in space proximal to the switch II helix as the upper subdomain rotates (Figure 2E,F). Related to this observation, we discovered a striking resemblance in the conformation of the switch II loop before and after binding of the ATP analog (Figure 2C,F; Figure 3). Both of our maps exhibit a contact between the switch II loop and switch II helix, coinciding with a pair of hydrogen bonds formed between the backbone of E236 and the side chain of N255 (respectively) in X-ray structures of kinesin's ATP analog-bound state (Parke et al., 2010; Chang et al., 2013; Gigant et al., 2013) (Figure 3A,B). Proximal to this contact, our maps resolve another contact between the switch II helix and the microtubule surface, corresponding to a hydrogen bond between N255 and M413 of alpha tubulin in the kinesin\u2013tubulin co-complex structure (Gigant et al., 2013). Thus, our maps indicate that the upper and lower domains are pinned down against the microtubule surface by a three-way interaction between the switch II loop, the switch II helix and alpha tubulin during the ATP binding transition.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig3-v3.jpg)\n\n**Figure 3.:** Shown is an enlarged, cutaway view of the active site (rectangular region indicated in Figure 2C,F). Density features that define the nucleotide cleft, corresponding to the switch II loop and the P-loop, are indicated by \u2018SwII\u2019 and \u2018P\u2019 (respectively) in panel A. Hollow and solid wedges denote open and closed states (respectively) of the nucleotide and polymer clefts. Panels A\u2013B show isosurface renderings our cryo-EM maps, while panels C\u2013D show synthetic density maps generated from X-ray structures of our identical kinesin construct in its ADP-bound state, filtered to a similar resolution (6 \u00c5) as the experimental maps in panels A\u2013B. Figure 3\u2014figure supplemental 1 shows the corresponding features for synthetic 6 \u00c5-resolution maps generated from our atomic models, as well as for two additional ADP-bound crystal structures of kinesin.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The view is the same as in Figure 3. Panels (A\u2013B) were generated from the final atomic models for these maps generated by our MDFF simulation protocol, while panels (C\u2013D) were rendered from the listed PDB coordinates.\n\nA striking difference between our cryo-EM maps, however, is a distinct upward displacement of the P-loop away from the switch II loop in our no-nucleotide map. This movement appears to be a direct consequence of the 22\u00b0 rotation made by the N-terminal subdomain, to which the P-loop is anchored; the rotation translates the P-loop site \u223c4 \u00c5 away from the microtubule surface. Consistent with this interpretation, while the P-loop forms a visible contact with the switch II loop in our ATP analog map (Figure 3B), a gap appears between these elements in the no-nucleotide map (Figure 3A). In contrast, the P-loop and switch II loop maintain very close contact in ADP-bound X-ray structures of kinesin (Figure 3C,D and Figure 3\u2014figure supplement 1C,D). At the same time, however, the switch II loop fails to make close contact with the switch II helix in the ADP-bound X-ray structures (Figure 3C,D and Figure 3\u2014figure supplement 1C,D). Thus, kinesin's tightly microtubule-attached states (Figure 3, top panels) are distinguished from the weakly attaching, ADP-bound states (Figure 3, bottom panels) by the presence of a gap between the switch II helix and the switch II loop; correspondingly, we will refer to this feature as the \u2018polymer cleft\u2019. Similarly, the presence of a gap between the P-loop and the switch II loop correlates with the absence of bound nucleotide; we will therefore refer to this latter feature as the \u2018nucleotide cleft\u2019. In the microtubule-attached states captured by our cryo-EM maps, the closed polymer cleft holds the upper and lower subdomains together while ATP binding initiates a clamshell-like action between the N-terminal domain and upper/lower subdomain assembly to close the nucleotide cleft.\n\n### Deriving atomic models for the kinesin-microtubule complex\n\nWe used the MDFF package (Trabuco et al., 2008) to develop an atomic model for our ATP analog map, starting with the crystal structure of the same chemical state of the same kinesin construct co-complexed with a tubulin dimer (Gigant et al., 2013). This calculation employed an all-atom representation with an explicit solvation model, combined with a novel, customized steering potential derived from our cryo-EM maps (See \u2018Materials and methods\u2019 and Figure 2\u2014figure supplement 1). In the resulting structure model, the principle conformational change observed is a straightening of the tubulin subunits from the conformation seen in 4HNA in order to accommodate the microtubule lattice (Video 1). Despite this change in tubulin, the conformation of kinesin is well conserved (1.08 \u00c5 backbone RMSD with the 4HNA structure for residues 9\u2013333). Some differences with the 4HNA structure are evident at the kinesin-microtubule interface of our simulations (Figure 2\u2014figure supplement 2), but these involve non-conserved side chains that re-orient to form more favorable contacts during the equilibration phase of the simulation (where the backbone conformations of kinesin and tubulin were placed under a strong harmonic constraint, prior to application of the EM steering potential). The MDFF calculation thus indicates that the conformation of kinesin visualized in the 4HNA structure is largely conserved when tubulin is incorporated into the microtubule lattice.\n\n![Video 1.](https://cdn.elifesciences.org/articles/04686/elife-04686-media1.mov.jpg)\n\n**Video 1.:** A ribbon diagram of the molecular structure is superimposed on a semitransparent isosurface of the EM density map, filtered to 6 \u00c5 resolution. The video runs from the beginning of the MDFF simulation up to t = 1.2 ns (corresponding to the selected final model). The second half of the video plays the same transition backward. Coordinates were extracted at 50 ps intervals from the simulation trajectory. To aid in viewing, the depicted coordinate trajectory was smoothed using a 5-frame sliding window, using the \u2018smoothmd.py\u2019 script available from the UCSF Chimera web site (http://plato.cgl.ucsf.edu/trac/chimera/attachment/wiki/Scripts/smoothMD.py).\n\nWe repeated the above MDFF procedure to obtain a structure model for the no-nucleotide cryo-EM map. To match the chemical and structural features identified in this latter map, we removed ATP and magnesium from the active site of the 4HNA structure and deleted residues 321\u2013349 of the neck linker, for which density in the map was weak or absent. In effect, this simulation protocol is designed to reverse the isomerization induced by ATP binding in microtubule-attached kinesin, yielding a detailed prediction for the conformation of kinesin in the absence of nucleotide (Video 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/04686/elife-04686-media2.mov.jpg)\n\n### Opening the nucleotide cleft disrupts the nucleotide binding site\n\nThe atomic models derived by the above procedure recapitulate the three-subdomain articulated movement identified by our rigid-body fitting analysis, and moreover, provide a detailed molecular explanation for the observed features at the active site. Remarkably, the switch loops remain \u2018closed\u2019 in an identical hydrogen-bonding network in our structural models for both nucleotide states. The hydrogen bond partners in this network, which are shared by the 4HNA starting model, extend beyond the switch loops and include not only a universally conserved salt bridge between R203 (switch I) and E236 (switch II), but also several universally conserved residues in the switch II helix (E250, N255) and L7 from the upper subdomain (Y138) (Figure 4, middle and lower panels). These interactions thus lock the upper and lower subdomains together, defining the closed state of the polymer cleft; the same network also locks the lower domain against the surface of alpha tubulin via a conserved hydrogen bond between N255 and the backbone of M413 from alpha tubulin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig4-v3.jpg)\n\n**Figure 4.:** No-nucleotide and ATP-bound models of the kinesin-microtubule complex (this work) are depicted in panels A,D,G and B,E,H (respectively). A pair of X-ray crystal structures of the ADP-bound kinesin K349 construct (PDB ID: 1BG2, 1MKJ, which have undocked and docked neck linkers, respectively) are superposed in C, F and I. Panels G\u2013I show rotated views of the structures, presenting the view from the microtubule interior looking outward at the kinesin interface. Universally conserved residues involved in the depicted structural transitions are rendered as ball and stick figures, and hydrogen bonds are depicted as solid green lines. Hollow and solid wedges denote open and closed states (respectively) of the nucleotide cleft and the polymer cleft, while the star in panels F and I indicates the site of predicted steric clashes between the switch II helix and alpha tubulin. For comparison, views of the active sites of the F1-ATPase and myosin motors in no-nucleotide and ATP analog-bound states, corresponding to panels A and B, are shown in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Changes in the hydrogen-bonding pattern between P-loop and switch II residues between in these motors closely match the changes predicted by our molecular dynamics models of kinesin's no-nucleotide and ATP states. Both of these other motors also undergo substantial distortions in the supporting beta-sheet conformation that accompany the P-loop movement. (A\u2013B) Active site of the subunit of bovine mitochondrial F1-ATPase in no-nucleotide and ADP\u2022Al\u2022Fx states, respectively, from a crystal structure of the inhibited (\u03b1\u03b2)3-\u03b3 co-complex (PDB ID: 1H8E) c-d. Active site of the myosin V motor domain from X-ray structures solved in the absence and presence of ADP\u2022Al\u2022Bex (PDB ID's 1W8J and 1W7J, respectively). Viewing orientations of the structure pairs in top and bottom panels are generated by aligning the backbone atoms in the beta-strand residues N-terminal to the switch II aspartic acid (D256 and D437, respectively).\n\nWhile switch loops are thus stably maintained in a closed arrangement in these structure models, we observed a functionally significant rearrangement of the P-loop that accompanies opening of the nucleotide cleft, for the nucleotide-free model. As the P-loop pulls away from the switch loops, a bifurcated hydrogen bond breaks up between T92 at the base of the P-loop and S202/D231 in switches I and II (Figure 4A,B and Video 3). This action substantially perturbs the magnesium binding site, which is primarily formed by T92. A second residue in the P-loop affected by its translation away from the switch loops is K91, which normally coordinates the nucleotide alpha- and beta-phosphate groups. In the nucleotide-free structure, K91 breaks two hydrogen bonds with a pair of backbone carbonyl oxygens within the interior of the P-loop and swivels around to interact with D231 in switch II, replacing the hydrogen bond this latter residue formerly made with T92. In doing so, K91 loses its ability to coordinate the nucleotide alpha- and beta-phosphates. The resulting side chain configuration within the active site of our nucleotide-free kinesin model is strikingly similar to what is seen in X-ray structures of nucleotide-free F1-ATPase and myosin motors, which possess homologous active-site architectures (Figure 4\u2014figure supplement 1). Thus, opening of the nucleotide cleft in our no-nucleotide model specifically disrupts the coordination of both nucleotide phosphate and magnesium within the P-loop.\n\n![Video 3.](https://cdn.elifesciences.org/articles/04686/elife-04686-media3.mov.jpg)\n\n**Video 3.:** Hydrogen bonds formed at the beginning and endpoints of the simulation are depicted with green lines. Note that in this video the position and orientation of the outer surface of tubulin (helices H11-H12) is held fixed. In order to facilitate looping presentations of the video, the second half of the video presents the same frames of the MDFF trajectory but in reverse order.\n\n### Open states of the polymer cleft prevent kinesin from achieving a favorable binding orientation on the microtubule surface\n\nIn order to identify the basis for microtubule-affinity regulation of kinesin by ADP and vice versa, we compared our structures of microtubule-attached kinesin with two X-ray structures (PDB ID's 1MKJ, 1BG2) of the same construct in an ADP-bound, weakly attaching state (Kull et al., 1996; Sindelar et al., 2002). The relative arrangements of the upper and lower domains in the 1BG2 and 1MKJ structures, corresponding to undocked and docked states of the neck linker, closely align with our no-nucleotide and ATP state kinesin models (respectively). We discovered, however, that both the 1BG2 and 1MKJ structures are prohibited from assuming favorable binding orientations on the microtubule surface due to the conformation of residue N255. As illustrated in Figure 4D\u2013F, the N-terminal coils of the switch II helix are unwound in both ADP-bound structures. Consequently, the peptide backbone at residue N255 would point directly at the H11\u2013H12 loop of alpha tubulin, generating a substantial steric overlap (Figure 4F,I). Thus, the 1BG2 and 1MKJ conformations appear incapable of strong microtubule attachment, consistent with the weak experimentally observed microtubule affinity of kinesin's ADP state (Rosenfeld et al., 1996).\n\nFurther comparison of our structure models to other atomic structures of ADP-bound kinesin (Figure 5) consistently demonstrates a clash between alpha tubulin and residue N255 (and/or adjacent residues in the switch II helix), for the ADP-state structures. While ADP-state crystal structures of kinesin are largely similar in their active-site features to the 1BG2 and 1MKJ structures, some of these exhibit an alpha-helical conformation for N255 and adjacent residues that N-terminally extends the switch II helix. However, as illustrated in Figure 5B, when these latter conformations of kinesin are placed in a tight-binding orientation on the microtubule (as defined by our no-nucleotide or ATP state models), the N-terminus of the switch II helix projects downward into the microtubule surface, introducing a clash between N255 and the H11-H12 loop of alpha tubulin. A recently solved \u2018near-rigor\u2019 conformation of the KIF14 motor (PDB 4OZQ) (Arora et al., 2014), found in a state that binds ADP but not magnesium, partially repairs the clash in Figure 5B by re-orienting the switch II helix to nearly the identical position (relative to the upper domain) as seen in our no-nucleotide model (Figure 5C). This reorientation of the switch II helix is accompanied by inward movement of the universally conserved R591 side chain (equivalent to R190 in our construct) from loop L7, apparently dislodging S489 from D638 (equivalent to T92 and D231, respectively) to disrupt magnesium coordination (Arora et al., 2014), thus partially mimicking changes observed at the active site of our no-nucleotide structure. However, the side chain of N662 in the 4OZQ structure (equivalent to N255) projects downward toward the microtubule surface, introducing a steric clash with alpha tubulin.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig5-v3.jpg)\n\n**Figure 5.:** (A) X-ray structure of Mg\u2022ADP-bound K349 kinesin (PDB ID 1BG2). (B) X-ray structure of Mg\u2022ADP-bound KIF1A kinesin (PDB ID: 1I5S). (C) X-ray structure of \u2018near rigor\u2019, ADP-bound KIF14 kinesin (PDB ID: 4OZQ) (D) No-nucleotide kinesin-microtubule complex (this work). Structures in panels A\u2013C are aligned with the no-nucleotide K349 model in panel D by strand b7 of the central beta sheet, which connects to the switch II loop; this alignment approximately maintains the orientation of the upper subdomain, thus preserving a contact between L8 within this subdomain and alpha tubulin (see Figure 2). In panels A\u2013C, predicted steric clashes between alpha tubulin and residues corresponding to I254 and/or N255 (K349 numbering) are marked with a red star.\n\nFurther comparison of the 4OZQ structure to our no-nucleotide model (Figure 5D) reveals that, while the overall arrangement of the N-terminal, upper, and lower subdomains is nearly identical, reorientation of N255 in the no-nucleotide structure is accompanied by striking shift of the switch II loop toward this residue and away from the P-loop. This shift opens the nucleotide cleft and closes the polymer cleft (See also Figure 3\u2014figure supplement 1D) and allows the switch II loop to assume its closed conformation that simultaneously interacts with N255 as well as R203 from switch I. The conformation of the N255 side chain that accompanies closure of the switch II loop is highly constrained by a pair of hydrogen bonds to the backbone of E236, aligning N255 in order to interact with M413 of alpha tubulin (Figure 4G,H). Thus, closure of the polymer cleft in our no-nucleotide model appears to be closely linked to favorable microtubule interactions by N255. Conversely, as indicated in Figure 4F,I and Figure 5A\u2013C, the open arrangement of the polymer cleft in kinesin's ADP states is evidently inconsistent with tight microtubule attachment, owing to steric interference of N255 and neighboring residues.\n\n### Closure of the nucleotide cleft is coupled to distortion of the peptide backbone\n\nPreviously, it has been speculated that release of nucleotide in kinesin may be linked to twisting of the central beta sheet (Gigant et al., 2013; Kull and Endow, 2013; Arora et al., 2014). In contrast to this expectation, however, we discovered that the degree of end-to-end twisting in both our no-nucleotide model as well as the previously reported \u2018rigor-like\u2019 ADP complex of KIF14 falls within the range observed in other X-ray structures of ADP-bound kinesin (Videos 4\u20136). However, we identified another mode of distortion in our kinesin models, analogous to the action of an archery bow (Figure 6 and Videos 7,8), that would couple strong nucleotide binding to elastic strain in the peptide backbone. In the conformation, we identify as \u2018relaxed\u2019, corresponding to the no-nucleotide state, the P-loop withdraws from the switch II loop to open the nucleotide cleft. In order for the P-loop to move back toward switch II and close the nucleotide cleft, the N-terminus of alpha 2 (to which the P-loop attaches) must move with it. However, because the C-terminus of alpha 2 is covalently connected to the opposite end of the beta sheet, movement of the P-loop therefore stretches alpha 2 across the motor domain, simultaneously deforming the plus end tip of the beta sheet (Figure 6A,B,D,E, Figure 6\u2014figure supplement 1A,B and Videos 7 and 8) as well as the path of alpha 2 itself (Figure 6C).\n\n![Video 4.](https://cdn.elifesciences.org/articles/04686/elife-04686-media4.mov.jpg)\n\n**Video 4.:** Structures in this and all subsequent videos are aligned by residues 226\u2013231 of our kinesin model, as in Figure 6A. The video cycles sequentially through the ADP structures in order of increasing twist: frame 1, ADP-bound K349 (PDB ID:1MKJ); frame 2, ADP-bound KIF1A (PDB ID:1I5S); frame 3, ADP-bound K349 (1BG2); frame 4, ADP-bound KAR3 (PDB ID:1F9T); frame 5, ADP-bound Eg5 (PDB ID:1II6).\n\n![Video 5.](https://cdn.elifesciences.org/articles/04686/elife-04686-media5.mov.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/04686/elife-04686-media6.mov.jpg)\n\n**Video 6.:** The starting structure is that of KIF14. The hydrogen bond network between residues T87 and E236 (K349 numbering), which defines a closed state of the nucleotide cleft, is depicted and the involved side chains rendered as stick figures.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig6-v3.jpg)\n\n**Figure 6.:** Similar comparisons of additional structural states of kinesin are shown in Figure 6\u2014figure supplement 1 and Videos 4\u20138. (A) Flexing of the beta sheet coupled with motion of alpha 2 in comparisons of no-nucleotide and ATP-bound conformations of microtubule-attached kinesin (this work). Structures are aligned by central region of the beta strand adjoining the switch II loop (residues 226\u2013231). (B) Comparison of no-nucleotide and ADP-bound (1MKJ) structures of kinesin, aligned as in panel A. (C) Comparison of no-nucleotide (current work), ADP-bound (1BG2 and 1MKJ), and ATP-bound (current work) states of the K349 kinesin construct aligned by their P-loops, revealing nucleotide-dependent flexing of helix alpha 2. (D), (E) Rotated views of panel A and B, respectively, highlighting distortion in the beta sheet proximal to the P-loop. (F) Cartoon depicting the inferred energy storage mechanism, by analogy to stringing an archery bow. The strain appears to be magnified by a cluster of conserved side chains (I107, I108, L229, I81; see panel A) that separate alpha 2 and the beta sheet midway along the interface between these elements.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A), (B) Comparison between our no-nucleotide K349 structure and a \u2018rigor-like\u2019 (ADP-bound) conformation of KIF14 (PDB ID: 4OZQ). Compare with Figure 6A,B,D,E. (C\u2013F) Comparison of the orientation of helix \u03b12 relative to the P-loop, for various crystalized states of kinesin. All alignments in these panels are performed relative to the backbone atoms of residues 85\u201392 (the P-loop) in our no-nucleotide structure (shown in (C)). The 4OZQ structure is shown in (D). In (E), five representative structures of ADP\u2022Mg-complexed kinesin are superposed (PDB ID's: 1BG2, 1MKJ,1I5S, 1II6, 1F9V); in (F), our ATP state model is depicted along with the three currently available X-ray structures of kinesin in which the switch loops are fully closed (all co-bound with ATP analogs) (PDB ID's: 3HQD, 3ZFC, 4HNA).\n\n![Video 7.](https://cdn.elifesciences.org/articles/04686/elife-04686-media7.mov.jpg)\n\n**Video 7.:** Compare with Figure 6A,D.\n\n![Video 8.](https://cdn.elifesciences.org/articles/04686/elife-04686-media8.mov.jpg)\n\n**Video 8.:** Compare with Figure 6B,E.\n\nComparison of kinesin's active site in various nucleotide states indicates that there are two ways to keep the nucleotide cleft closed, depending on the conformation of the switch loops. If the switch loops are open, corresponding to kinesin's detached ADP states, the switch II loop and the P-loop can interact closely with each other, which would secure the closed conformation of the nucleotide cleft (Figure 4F). Alternatively, when the switch loops are closed, closure of the nucleotide cleft is mainly supported by the gamma phosphate group of ATP itself, which introduces a bridge between the P-loop and the switch II loop that would hold these elements together (Figure 4E). In this way, our structure models indicate that tight ADP binding would be an inherent property of detached kinesin, where the switch loops are free to adopt an open conformation. However, closure of the switch loops (as accompanies microtubule attachment in our structure models) eliminates the ability of switch II to latch onto the P-loop, which would thus allow the nucleotide cleft to relax into its open conformation unless gamma phosphate is present.\n\n### The N255K point mutation causes loss of orientational stability on microtubules\n\nThe preceding analysis has indicated that residue N255 in kinesin plays a key role in the motor's microtubule response pathway. In effect, this site appears to act as a \u2018linchpin\u2019 that links closure of kinesin's switch loops to interactions at a single site on alpha tubulin (See Figure 4D\u2013F). A lysine point mutation at the N255 site was previously shown to eliminate coupling between microtubule attachment and motor nucleotide state, allowing kinesin to bind tightly to the microtubule in all nucleotide states (Song and Endow, 1998; Yun et al., 2001; Auerbach and Johnson, 2005). Moreover, the microtubule-stimulated ADP release rate for this point mutant is severely attenuated, falling to only slightly above the basal level (Auerbach and Johnson, 2005) (Figure 7A,B). Based on the structure models presented here, we hypothesized that the N255K mutation uncouples nucleotide- and microtubule-binding functions in kinesin by compromising the ability of this residue to bridge between alpha tubulin and the backbone of E236 (see Figure 4D,E), so eliminating communication between the microtubule and the switch loops.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig7-v3.jpg)\n\n**Figure 7.:** (A), (B) Microtubule-stimulated ADP release kinetics measurements for the N255K mutant of our K349 construct. Shown in (A) are individual time traces, while (B) plots the fitted rate constants as a function of microtubule concentration. The extrapolated maximum rate for microtubule-stimulated ADP release was kmax = 0.26 \u00b1 0.04 s\u22121, with an apparent microtubule dissociation constant of K0.5 = 21.3 \u00b1 6.3 \u03bc\u039c. (C\u2013E) Cryo-EM reconstructions of microtubules decorated with wild-type K349 (Sindelar and Downing, 2010) and the N255K mutant. For the wild-type structure in (C), the ADP state was selected for viewing purposes but all nucleotide states have similar features at this resolution. Maps from reconstructions of 14-protofilament microtubules are shown; features in the corresponding 13-protofilament reconstructions were very similar (results not shown). All maps are low-pass filtered to 18 \u00c5 resolution, corresponding the estimated resolution of the N255K reconstructions. Supporting information describing cryo-EM analysis and 3D reconstruction of the N255K samples are shown in Figure 7\u2014figure supplement 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013D) Compressed alignments (similar to Figure 1\u2014figure supplement 1D) of representative single microtubules under various decoration conditions. A summation of the power spectra for every selected microtubule of the corresponding condition is shown to the right of each compressed microtubule image. All micrographs were collected under similar imaging conditions (magnification, voltage, defocus, etc), using the same equipment (FEI TF20 electron microscope equipped with a Gatan US4000 CCD camera). For comparison, analysis of an undecorated microtubule data set is shown in (A). A green arrow indicates the location of the 80 \u00c5 layer line in these power spectra, present only in the cases where there is motor decoration. Compared with the wild-type K349 construct (panel (B)), the N255K mutant (panels (C), (D)) binds to microtubules but the 80 \u00c5 layer line due to motor binding is significantly weaker. The weaker 80 \u00c5 diffraction signal is indicative of poor ordering and/or occupancy of the attached motor heads. (E\u2013H), images formed by summing aligned box segments corresponding to the samples in (A\u2013D). Visible density for kinesin in these summations (green arrows) indicates that the N255K construct decorates microtubules with similar efficiency as the wild-type construct, despite weaker 80 \u00c5 diffraction by the mutant. This observation was supported by the ability of the N255K mutant to co-sediment with microtubules even in the ADP condition (see \u2018Materials and methods\u2019). Therefore, weak 80 \u00c5 diffraction in (C) and (D) must originate from heterogeneity in conformation of the bound motor heads rather than low occupancy, consistent with the reconstructions shown in Figure 4 of the main text. (I) Image of a microtubule decorated by the N255K construct (ADP condition). While obviously decorated, the microtubule has a shaggy appearance uncharacteristic of decoration by wild-type kinesin. (J) Example of a morphologically disrupted microtubule, frequently seen in cryo-EM specimens of microtubules decorated by the N255K construct. The disrupted microtubules were excluded from data sets used for image processing and 3D reconstruction.\n\nCryo-EM analysis of the ADP and ATP analog-bound states of the N255K point mutant of our construct support this hypothesis, revealing two previously unidentified binding modes of kinesin in which the motor domain attaches tightly to the microtubule but is rotationally mobile (Figure 7C\u2013E and Figure 7\u2014figure supplement 1). The corresponding 3D maps did not refine to high resolution, presumably due to mobility of the kinesin heads. However, density for the motor domains in the N255K maps clearly indicates that a wild-type binding orientation is not achieved in either case. In the ADP-state map, the microtubule contact at site 255 appears to be attenuated or disordered (Figure 7D, right panel), while in the AMPPNP map the wild-type microtubule contact of loop L12 is absent but a contact is evident at the 255 site (Figure 7E, right panel). Thus, in neither nucleotide state is the N255K construct able to form all three wild-type microtubule contacts.\n\nThese results indicate that the specific bridging role of N255 between the switch II loop and N413 of alpha tubulin (see Figure 4), which likely cannot be sustained by the N255K mutation, is not required for tight microtubule attachment. On the other hand, the N255K mutant appears to be incapable of maintaining a fixed orientation on the microtubule surface. We therefore propose that N255 acts as a conformational specificity selector, forcing the switch loops to close once kinesin contacts the microtubule. While the K255 substitution lacks the appropriate geometry to fulfill this selector role, the amino group of K255 would likely form non-specific interactions with the negatively charged microtubule surface. Presumably, flexibility in the resulting contact allows the N255K mutant to maintain affinity for microtubules even when the switch loops are open. However, failure of this mutant to close the switch loops under these conditions would lead to the loss of microtubule-stimulated ADP release and catalysis, consistent with experimental measurements.\n\n## Discussion\n\nThe current work demonstrates that, while existing models of kinesin's ATP state on microtubules appear to be quite accurate (Parke et al., 2010; Sindelar and Downing, 2010; Chang et al., 2013; Gigant et al., 2013), the motor's nucleotide-free conformation exhibits a closed conformation of the switch loops that was not previously anticipated. This feature has lead to the identification of a novel allosteric pathway mediated by the \u2018linchpin\u2019 residue N255. The mechanism we propose can be summarized as follows (Figure 8). Upon encountering the microtubule, alpha tubulin engages N255 in order to stabilize the closed conformation of the switch loops. Here, the primary consequence of switch loop closure is to revise the mechanical linkages between kinesin's upper subdomain and the other two subdomains. In the detached ADP state of the motor, the upper subdomain forms a semi-rigid junction with the N-terminal subdomain (Figure 8B, top panels), via interactions between the open switch II loop and the P-loop. However, upon microtubule attachment the upper domain trades this junction for a new one with the lower subdomain, mediated by the closed switch loops (Figure 8B, bottom panels). The functional consequences of this change in subdomain connectivity are twofold. First, disengagement of the N-terminal subdomain from the upper subdomain allows the nucleotide cleft to relax into its open state and release ADP. Second, fixing the upper and lower subdomains together introduces a well-defined allosteric pathway between the neck linker and the nucleotide cleft, so that closure of the nucleotide cleft by ATP becomes energetically coupled to docking of the neck linker.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04686/elife-04686-fig8-v3.jpg)\n\n**Figure 8.:** (A) Abstracted cartoon that depicts kinesin's three principal subdomains and other key structural elements, including the \u2018linchpin\u2019 residue N255 (circle) and the neck linker (disordered state depicted as dashed yellow lines). (B) Schematic reaction depicting four principal structural intermediates in the ATPase cycle of monomeric kinesin. States of the nucleotide, polymer, and docking clefts are indicated. (C) Alternating cleft model for processive stepping by dimeric kinesin.\n\nAn important distinction between the current scheme and earlier proposals for the kinesin ATPase cycle regards the structure of the nucleotide pocket. It is commonly proposed that ATP binding in kinesin would trigger a substantial rearrangement (or \u2018closure\u2019) of the universally conserved core segments of the switch I and II loops (DLAGSE, residues 231\u2013236 and SSRSH, residues 201\u2013205, respectively), accompanied by the formation of a catalytically activating salt bridge between E236 and R203 in switch I (Sablin et al., 1996; Vale and Milligan, 2000; Kull and Endow, 2013). The current results, however, suggest that these rearrangements are largely complete upon microtubule attachment even prior to ATP binding (Figure 4) and serve as an allosteric trigger for ADP release by detaching the switch II loop from the P-loop (Figure 5). Despite these rearrangements by switch I and switch II, the resulting no-nucleotide conformation of kinesin fails to attain its catalytically competent conformation, owing to relaxation of the nucleotide cleft into its \u2018open\u2019 state in which the P-loop withdraws from the switch loops. Only following ATP binding, when the nucleotide cleft re-closes, does kinesin attain its catalytically active configuration. These features of our structure models imply that the primary functional role of switch loop closure in kinesin is not to sense the gamma phosphate as was widely thought, but rather to dissociate ADP.\n\nThe behavior of the switch loops we infer for kinesin may be contrasted with that of the G proteins. In G proteins, binding of GTP typically transitions the switch loops from extended (and often partially disordered) conformations to ones that tightly coordinate the gamma phosphate, in order to modulate the binding affinity of various allosteric partner proteins (Vetter and Wittinghofer, 2001; Wittinghofer and Vetter, 2011). This behavior appears to be partially conserved in our microtubule-complexed models of kinesin, as reflected by a \u2018pincer-like\u2019 closure of loops L9 and L11 that contain switch I and switch II (respectively) and increased ordering of loop L9 that accompanies the ATP binding step (see Figure 3C,F and also Figure 2\u2014figure supplement 3A,B). However, these changes in L9 and L11 are mainly limited to the non-conserved segments peripheral to the core switch loops and appear to have limited functional importance (see below), while the conserved switch regions remain locked in place via microtubule interactions of the N255 \u2018linchpin\u2019 residue (Figure 4). Hence, in kinesin the switch loops appear to play a more passive role in gamma-phosphate sensing than in G proteins. Instead, our data indicate that the major allosteric transition triggered by ATP binding is closure of kinesin's nucleotide cleft, accompanied by large-scale distortion of the peptide backbone including the central beta sheet. This latter mode of gamma-phosphate sensing, while not evident in the mechanism of G proteins, is characteristic of numerous other families of ATPase motors that utilize Walker motifs; these families include the ATP synthases (Menz et al., 2001), RNA and DNA helicases (Yang, 2010), as well as myosin (see below). The emergent theme of active site cleft closure in these diverse motor protein families may reflect the need to couple the energy of nucleotide binding and/or hydrolysis to large-scale domain motions necessary for mechanical energy transduction.\n\nThe structure models presented here contrast with a newly published cryo-EM study of the kinesin-microtubule complex by Atherton et al. (2014). The structure models presented in that study are superficially similar to the ones identified in the current work, in that a \u2018closed\u2019 conformation of the switch loops was also identified in both no-nucleotide and ATP analog-bound states. However, the no-nucleotide conformation proposed by Atherton et al. seems to exhibit neither an open nucleotide cleft (as defined in the current work) nor twisting between the N-terminal and upper subdomains, both of which are signature traits of our no-nucleotide model. Consequently, the mechanistic scheme proposed by Atherton et al. is starkly different from the one summarized in Figure 8B. For example, in contrast to the ADP release mechanism proposed here, Atherton et al. suggest that closure of the switch I loop triggers ADP release by loosening interactions between this loop and a \u2018cap\u2019 of structured water molecules that coordinate the active-site magnesium cation (Nitta et al., 2008; Atherton et al., 2014). Notably, however, interactions between the switch I loop and the water cap are quite variable in X-ray structures of ADP-bound kinesin and are usually indirect, mediated by at least one other water molecule. It is therefore not obvious that these kinds of interactions would be sufficiently specific to account for the substantial loss of ADP affinity that occurs with microtubule attachment (Hackney, 1988).\n\nThe transition that accompanies ATP binding in the Atherton et al. models is similarly distinct from the one described here. Atherton et al. propose that ATP binding actuates seesaw-like tilting of kinesin's central beta sheet via a pincer-like movement of the switch I loop and switch II loops toward each other. In our models, however, the switch loops mainly serve to anchor the lower half of the nucleotide cleft in place against the microtubule surface (via the closed hydrogen bond network, anchored by the N255 linchpin residue), while seesaw-like motion by the upper half of the nucleotide cleft (composed of the N-terminal subdomain) translates the P-loop down towards the switch loops. In our models, therefore, pincer-like motion of L9 and L11 can be likened to the action of a baseball glove: these loops come towards each other in order to \u2018catch\u2019 the gamma phosphate as the P-loop delivers ATP into them.\n\nSeveral factors may underlie the disparities between the structures presented by Atherton et al. and ours, which appear to be mainly limited to the no-nucleotide state of kinesin. The improved resolution of the cryo-EM maps presented here (5\u20136 \u00c5 vs 6\u20137 \u00c5 in the Atherton et al. study) allows us to resolve the distinctive hooked shape of the P-loop in the no-nucleotide map, precisely defining its position with respect to the switch II loop and thus contributing to our identification of an open conformation of the nucleotide cleft (compare Figure 3 and Figure 3\u2014figure supplement 1 of the current work with Figure 2 in Atherton et al.). Moreover, the simulation method used here to develop all-atom models places more emphasis on a chemically realistic simulation potential, by incorporating explicitly represented solvent molecules and keeping the magnitude of the perturbing cryo-EM potential as small as possible (See \u2018Materials and methods\u2019). In contrast, Atherton et al. subdivided their starting models into smaller fragments, fit these as rigid bodies into their cryo-EM maps, and subsequently performed simulated annealing with an implicit solvent model. It therefore seems likely that lower resolution, different refinement methods, and also the use of additional a priori assumptions (i.e., fragment selection for the rigid-body fitting) in the methods of the Atherton et al. study may have impeded their identification of an open arrangement of the nucleotide cleft, in their no-nucleotide model.\n\n### The connection between internal strain and nucleotide binding\n\nIt has increasingly been proposed that kinesin may harness the energy of twisting in its central beta sheet in some fashion during the ATPase cycle (Hirose et al., 2006; Kull and Endow, 2013; Arora et al., 2014). Speculations in this regard have mainly focused on the possibility, by analogy to myosin, that release of nucleotide initiates a much larger end-to-end twist in the sheet than is observed in comparisons of nucleotide-bound X-ray structures of the motor (Gigant et al., 2013; Kull and Endow, 2013; Arora et al., 2014). However, it has remained unclear how such twisting would relate to the complex interplay of affinities between kinesin and microtubules, ADP and ATP. The structure models derived in the current study indicate that in kinesin, the energy of nucleotide binding is captured by a related but distinct mode of distortion in the peptide backbone, involving coordinated rearrangements of the beta sheet and alpha 2 (Figure 7). As we have shown, this distortion is coupled with closure of the nucleotide cleft and can evidently be stabilized either by interactions between the P-loop and the open switch II loop (ADP state; Figure 4F and Video 8), or between the gamma phosphate and the closed switch loops (ATP state; Figure 4E and Video 7). This mechanism would thus allow microtubules to regulate kinesin's affinities for ADP and ATP by modulating the conformation of the switch loops, yielding an elegant structural basis for kinesin's nucleotide-binding behavior on and off microtubules.\n\n### Structural basis for uncoupling of microtubule-activated functions by point mutations\n\nA number of sites in the kinesin fold have been identified that uncouple the motor's nucleotide affinity from its microtubule affinity, but the structural basis of the uncoupling has remained unclear. The nucleotide-exchange mechanism proposed here predicts that the uncoupling mutations in the kinesin's switch regions would have differential effects on the kinetics of ADP release, depending on the nature of the affected site. For example, due to its apparent role in stabilizing the nucleotide cleft in the detached motor (see Figure 4F), perturbation of the E236 site would be expected to produce a comparatively large effect in kinesin's detached state, by destabilizing closure of the nucleotide cleft and increasing the ADP off rate. In contrast, mutation at the N255 site is not expected to produce a large effect in the detached motor but is expected to drastically attenuate microtubule-stimulated ADP release by compromising the \u2018linchpin\u2019 function of this residue. Both of these predictions are supported by kinetics measurements reported here and elsewhere, which reveal that the N255K mutation reduces the rate of microtubule-stimulated ADP release by up to 1000-fold, to near basal levels (Auerbach and Johnson, 2005) (Figure 7A,B), while the E236A mutation increases the ADP off-rate of detached kinesin by 100-fold (Rice et al., 1999) but does not significantly alter the rate of microtubule-stimulated ADP release. X-ray studies of the corresponding point mutants in KAR3 kinesin, co-complexed with ADP and magnesium, also support our interpretation. The structure of the KAR3 E631A mutant (equivalent to E236A) confirms that the mutated side chain can no longer interact strongly with the P-loop (Yun et al., 2001), supplying an explanation for the increased ADP off rate in the detached state of this mutant. In contrast, the structure of KAR3 N650K (equivalent to N255K) was found to be essentially identical to that of wild-type ADP complex (Yun et al., 2001), consistent with our proposal that the dominant functional effect originates in the microtubule complex rather than the detached state, for this latter mutant.\n\n### \u2018Alternating cleft\u2019 model for processive movement by dimeric kinesins\n\nThe scheme in Figure 8 also provides a framework for understanding how gating can be achieved between the motor domains of dimeric kinesin (Figure 8C). When both heads are attached to the microtubule in their tight-binding states, the neck linker of the trailing head is constrained in an arrangement that favors docking, thus tending to keep the docking cleft open (Figure 8C, state 1). In contrast, the neck linker in the leading head is kept out of its docking cleft, thus favoring closure of the cleft. Thus, in the trailing head, tight coupling between the docking cleft and the nucleotide cleft (generated by the closed conformation of the switch loops) keeps the nucleotide cleft closed. Meanwhile, the same coupling pathway keeps the nucleotide cleft open in the leading head\u2014weakening the nucleotide affinity and thus disfavoring the binding and/or hydrolysis of ATP.\n\nFollowing hydrolysis and phosphate release in the trailing head (Figure 8C, state 2), however, strain generated at the active site in this head will no longer be supported by the nucleotide. At this point in the cycle, it appears that the neck linker would serve an important role as an allosteric modulator. If the neck linker were to be undocked following phosphate release, the trailing head would be free to revert to its previous conformation in the ATPase cycle (Figure 8B, lower left) and release ADP. However, if a forward step has occurred as depicted in states 1\u20132, the neck linker in the trailing head will continue to be held in a docked conformation and the only recourse to relieve strain at the active site is to open the switch loops, hence opening the polymer cleft. The resulting ADP state of the trailing head thus favors tight nucleotide binding and weak microtubule affinity-promoting detachment from (and discouraging subsequent reattachment to) the trailing microtubule site (Figure 8C, state 3). Importantly, binding of ATP in the leading head at this point in the cycle (Figure 8C, step 4) promotes a forward step by the trailing head through docking of the neck linker but does not prevent a backward step because neck linker docking is only weakly supported in the motor's ATP state (Rice et al., 2003). Thus, the properties just described for the ADP-bound trailing head are likely critical in preventing back-stepping, which is a key determinant of efficient and rapid motility.\n\nOther structural schemes have been proposed in order to account for differences in nucleotide-binding and other properties between the leading and trailing heads of kinesin (Hirokawa et al., 2009; Sindelar, 2011). In such schemes the conformation of the neck linker was mainly thought to affect the nucleotide affinity by triggering rearrangement of the switch loops. However, our structural data do not support this type of mechanism, instead indicating that the switch loops are held in a closed conformation by the microtubule in both leading and trailing heads providing the basis for the gating scheme in Figure 8C.\n\n### Insights on the relationship between the mechanisms of kinesin and myosin\n\nThe mechanism inferred here for kinesin reveals new parallels with the myosin molecular motor, which appears to be ancestrally related to kinesin (Kull et al., 1998) and shares very similar nucleotide-sensing \u2018switch\u2019 motifs (Kull et al., 1996; Sablin et al., 1996). While the structural basis of myosin's filament-attached power stroke is not well understood, it has been proposed that the corresponding lever-arm movement is coupled to progressive relaxation of the central beta sheet (corresponding to increasing degrees of twist) that would accompany catalysis and/or product release (Coureux et al., 2004). This proposal mirrors the sequence of events we infer for kinesin, where the magnitude of the peptide backbone distortion appears to be greatest in the ATP state, less for the ADP states, and least of all for the no-nucleotide conformation (Figure 6C and Figure 6\u2014figure supplement 1C-F). A recent modeling study has also suggested that interactions with actin could lock myosin's switch I and switch II loops stably together while the P-loop moves with respect to them during the filament-attached power stroke (Preller and Holmes, 2013); this behavior would be directly analogous to the behavior of microtubule-attached kinesin in the currently proposed scheme.\n\nAn important functional difference between myosin and kinesin, however, is that these motors attach and detach from their partner filaments at different points in the ATPase cycle. In this light, it is worth noting that the \u2018linchpin\u2019 N255 residue in kinesin is conserved in myosin, but interacts natively with a conserved tyrosine found within the lower 50kD domain of myosin itself, rather than interacting with the filament as occurs with kinesin. Consequently, in myosin this asparagine holds the switch II loop near its \u2018closed\u2019 conformation even in the absence of actin, which could help explain why myosin, unlike kinesin, shows strong catalytic activity even in the absence of its partner filament (Geeves and Holmes, 2005). We anticipate that future studies of both kinesin and myosin will shed more light on the relationship between these intriguing molecular machines.\n\n### Note added in proof\n\nConcurrently with the current work, an X-ray crystal structure of no-nucleotide kinesin in complex with a non-polymerized tubulin dimer has been published (Cao et al., 2014). The structure of no-nucleotide kinesin reported in the X-ray study is in excellent agreement with model presented here (backbone RMSD for all visible residues is 1.28\u00c5). Accordingly, the detailed interactions of kinesin and tubulin seen in the X-ray structure appear to be fully consistent with the models and mechanism presented in the current work.\n\n## Materials and methods\n\n### Protein expression and purification\n\nThe wild-type, monomeric human K349 construct was bacterially expressed and purified as described (Kull et al., 1996), and 15% (wt/vol) sucrose was added before snap freezing in liquid nitrogen and storing at \u221280\u00b0C. A plasmid for the mutant N255K construct was generated from the wild-type plasmid using the QuikChange site-directed mutagenesis kit (Agilent Technologies; Santa Clara, CA). Thawed K349 (either wild-type or N255K) was exchanged into EM buffer (25 mM PIPES, 25 mM KCl, 1 mM EGTA, 1 mM DTT) using three rounds of dilution and concentration in a Microcon ultracentrifugal filter (EMD Millipore; Billerica, MA). Microtubule batches were grown from 250 \u00b5g of lyophilized bovine brain tubulin (Cytoskeleton; Denver, CO), resuspended in 25 \u00b5l EM buffer and clarified (Beckman TLA 120.2, 100K RPM, 4\u00b0C) prior to incubation at 37\u00b0C. Taxol (2 mM in DMSO) was added to equimolar levels with tubulin after 10 min of incubation. Following \u223c45 min of polymerization, microtubules were brought to room temperature and a \u223ctwofold excess of K349 was added prior to pelleting through a glycerol cushion (50 \u00b5l of EM buffer + 60% glycerol wt/vol + 200 \u00b5M taxol) in order to remove unbound motor and unpolymerized tubulin (20 min, Beckman TLA 120.2, 50K RPM, 24\u00b0C). The motor\u2013microtubule complex was resuspended in \u223c10 \u00b5l of EM buffer plus 200 \u00b5M taxol.\n\n### Mant-ADP release measurements\n\nStopped-flow measurements were performed at 298 K using an SF-300X (Indiana University) stopped-flow apparatus (KinTek Corp.; Austin, TX) equipped with a Xenon arc lamp (Hamamatsu; Japan). Kinetics of the interaction of mant-ADP with kinesin was measured by equilibrating a kinesin\u00b7mant-ADP (1:1) complex followed by rapid mixing with a high concentration of MgATP or varying MT concentrations plus MgATP to chase the mant-ADP from the active site as described (Sadhu and Taylor, 1992). Mant fluorescence was monitored over time, Iex,max = 356 nm, Iem,max = 448 nm (400 nm long-pass filter).\n\n### Cryo-EM sample preparation\n\nSamples were plunge-frozen in liquid ethane, using Quantifoil holey carbon grids with 1 \u00b5m hole diameter, 1.5 \u00b5m spacing (Quantifoil Micro Tools GmbH; Germany). In order to optimize motor decoration on the microtubules, glow discharge was not applied to the grids and samples were diluted \u223c5\u201310\u00d7 into distilled water (0.35 \u00b5l sample plus 3 \u00b5l d(H2O)) on a piece of Parafilm prior to grid application, in order to compensate for evaporation that occurs prior to contact with liquid ethane (Sindelar and Downing, 2007). For the ADP, AMPPNP, and ADP\u2022Al\u2022Fx conditions, the grid droplet mixture was supplemented by 2 mM nucleotide (2 mM ATP + 2 mM AlCl3 + 10 mM NaF for the latter condition). Following our previously published protocol (Sindelar and Downing, 2007), most of the initially applied buffer on the grids was wicked away by touching the grid edgewise with a piece of filter paper (Whatman). The grids were then blotted completely, and after a 0.5\u20131 s delay, immersed into liquid ethane using a home-built plunge-freezing apparatus. Consistent with our prior experience (Sindelar and Downing, 2007), failure to dilute the sample buffer \u223c5\u201310\u00d7 prior to plunge freezing led to poor and/or inconsistent kinesin decoration of the microtubules.\n\n### Data collection and image processing\n\nMicrographs of the microtubules decorated by the wild-type K349 construct were collected using the SerialEM package to collect data semi-automatically on 300 kV FEG-equipped electron microscopes (FEI F30 for the no-nucleotide data set, FEI Titan for the ADP\u2022Al\u2022Fx data set), using K2 direct electron detecting cameras (Gatan; Pleasanton, CA) in video mode. For bare microtubules, and microtubules decorated by the N255K construct, micrographs were collected using a TF-20 FEG-equipped instrument and a Gatan US4000 CCD detector. In all cases, the defocus was systematically varied from approximately 1 to 2.5 \u00b5M through the course of the data collection. The total dose was \u223c15 electrons/Angstrom squared, distributed over 15 or 16 video frames. The no-nucleotide data set was collected at \u223c13K magnification using the camera's super-resolution mode and subsequently binned 2\u00d7, yielding 4K by 4K image dimensions with an effective pixel size of 1.99 \u00c5. The ADP\u2022Al\u2022Fx data set was collected at approximately the same magnification as the no-nucleotide data set but in regular counting mode, resulting in 4K by 4K images with an effective pixel size of 2.097 \u00c5.\n\nAfter performing drift analysis (Li et al., 2013), whole-image video frames were aligned and averaged (K2 data only) before manually selecting overlapping boxed segments corresponding to individual microtubules. Defocuses and astigmatism parameters were estimated using the CTFFIND3 program (Mindell and Grigorieff, 2003). Single-particle analysis and 3D reconstruction was then performed as described (Sindelar and Downing, 2010), with some modifications. Initial reference models were generated by applying a parametric model of the microtubule (Chr\u00e9tien and Wade, 1991) to PDB models of the no-nucleotide kinesin-microtubule complex (Sindelar and Downing, 2007), converting the atomic coordinates to EM density using the SPIDER package (Frank et al., 1996), and applying a low-pass filter with a 20 \u00c5 cutoff frequency. Multi-reference analysis performed using a range of different microtubule assemblies (12\u201315 protofilaments) established that 14-protofilament microtubules outnumbered 13-protofilament by approximately 3:1, with only marginal populations of other symmetry forms. Based on this determination, the 13- and 14-protofilament sub-populations were separately selected for further analysis.\n\nInitial estimates of the in-plane rotation of individual segments were made using the Radon transform, as described (Li et al., 2002). Automated scripts using the SPIDER package (Frank et al., 1996) were used for semi-exhaustive searching of XY shifts and Euler angles (out-of-plane tilt range: +/\u221215\u00b0). Reference alignment was used to determine the position of the microtubule seam on a per-microtubule basis as described (Sindelar and Downing, 2007), as was the filament polarity, and then every segment was subjected to local refinement using the established seam orientation and polarity. Evidently due to disorder in the N255K kinesin head orientations, the correlation scores used to identify the seam orientation were far noisier for this mutant. Following initial refinement of the Euler angles and shifts for each box, the estimated position of each 8 nm repeat of the microtubule was mapped back onto the micrograph and a new stack of boxes was extracted for a final round of SPIDER refinement. Thus, the final data set included exactly one box for each 8 nm repeat identified in the selected microtubules. Subsequent structure refinement and 3D reconstruction was performed using the FREALIGN package (Grigorieff, 2007) with specific modifications for helical image processing (Alushin et al., 2010).\n\nFor the FREALIGN refinements, four rounds of refinement and reconstruction were initially performed, using successively higher resolution cutoffs for the refinement target (20 \u00c5, 15 \u00c5, 12 \u00c5, 10 \u00c5). For each reconstruction, 13- or 14-fold pseudo-helical symmetry was applied in order to transform all imaged asymmetric subunits onto a single \u2018good\u2019 protofilament, as previously described (Sindelar and Downing, 2007). Helical parameters were derived from the corresponding, canonical microtubule form (Chr\u00e9tien and Wade, 1991) but adapted for the measured axial repeat distance in our data sets. The reconstructed \u2018good\u2019 protofilament (along with the remainder of the reconstruction) was subsequently replicated and transformed 13 or 14 times using the same symmetry parameters in order to generate protofilament models for the entire microtubule. The transformed \u2018good\u2019 protofilaments were subsequently selected by complementary wedge-shaped masks and summed in order to obtain the final asymmetric microtubule model. To reduce the influence of solvent noise in the refinement, a tight mask around the protein density was generated from a thresholded low-resolution version of the current map, and then smoothed with a soft Gaussian filter (\u223c10 \u00c5 half-width). This mask was then applied to the reconstructed volume prior to the next round of refinement. The same mask was employed for FSC calculations.\n\nOnce the FREALIGN steps were completed, the resulting 3D map was then filtered to 20 \u00c5 and fed back into the SPIDER/FREALIGN pipeline, in order to reduce errors related to seam identification, polarity, and local searches. This additional step was omitted from the refinement of the N255K mutants. Following the second cycle of SPIDER/FREALIGN analysis, FSC calculations indicated that the resolution of the wild-type reconstructions was approximately 6 \u00c5 (0.143 criterion; Figure 1\u2014figure supplement 1A,B), and no signs of higher-resolution features were apparent. We then subdivided the aligned video frames corresponding to each micrograph into summed groups of three (5 frames each), and re-extracted a new FREALIGN image stack from these sub-frames, resulting in a threefold larger number of stacked images. We then performed four more rounds of FREALIGN analysis with the new stack, using Euler angles and shifts determined previously as starting parameters. The resulting reconstructions resolved individual beta strands and alpha helical pitch in some portions of the map (Figure 1\u2014figure supplement 1F,G), although as noted in the main text the kinesin density was more poorly resolved and there was evidence of anisotropic blurring in the tubulin density (results not shown). The final resolution, obtained through FSC comparison of reconstructed half-data set volumes after applying a soft mask, was \u223c5 \u00c5 (0.143 criterion) for both nucleotide states (Figure 1\u2014figure supplement 1A,B). For the final no-nucleotide reconstruction, a total of 10,029 8 nm repeats were used, for a total of \u223c140000 asymmetric units (14 protofilaments). A total of 2394 8 nm repeats, for a total of \u223c33,600 asymmetric units, were used for the final ADP\u2022Al\u2022Fx reconstruction (14 protofilaments).\n\n### Molecular dynamics flexible fitting calculations\n\nIn order to derive an atomic model for the microtubule complex of ATP-bound kinesin, we subjected the coordinates of tubulin and kinesin from the 4HNA structure to a hybrid all-atom molecular dynamics method (MDFF) in which cryo-EM density contributes a force field term (steering potential) designed to guide the simulation toward the experimentally observed structure (Trabuco et al., 2008). Version 1.91 of NAMD was used for all molecular dynamics calculations (Phillips et al., 2005). We used an explicit solvation model (TIP3P), because conformational instabilities were observed in trial simulations that used a less expensive continuum solvent model. All simulations were run using periodic boundary conditions, but no attempt was made to model the longitudinal or lateral interfaces of tubulin. While this omission likely produced artifacts near the boundaries between the simulated tubulin heterodimer and neighboring tubulin subunits, these boundaries are remote from the motor\u2013microtubule interface. Moreover, the EM steering potential used in these simulations conformation strongly clamps the conformation of tubulin. Thus, our simulation setup is expected to minimize or eliminate the propagation of any boundary artifacts toward kinesin and its interface with tubulin, which is the focus of the current study.\n\nTo complete the starting model, twenty water molecules were manually placed within the kinesin nucleotide pocket at sites corresponding to crystallographic waters identified in a high-resolution (1.7 \u00c5) X-ray structure of KIF4 kinesin co-complexed with AMPPNP (Chang et al., 2013). Hydrogen atoms were added to protein atoms and crystallographic water molecules using the \u2018guesscoord\u2019 command from the NAMD package (Phillips et al., 2005). The system was then placed in a TIP3P water box of dimensions 125 \u00d7 125 \u00d7 95 \u00c5, and sodium and chloride ions were randomly added to this water box to a concentration of 50 \u03bcM, at a ratio that neutralized the charge of the system. After energy minimization (600 steps), the system was subjected to a three-phase equilibration, in which protein atoms were initially subjected to positional restraints that were then progressively released.\n\nThe equilibration simulations were performed in the NPT ensemble, using a Nose\u0301\u2013Hoover Langevin piston with a target pressure of 1 atm, a decay period of 200 fs and a time constant of 100 fs. The temperature was maintained at 310 K using a Langevin temperature bath with a time constant of 5 ps\u22121. In the first equilibration phase, which ran for 50 ps, all protein and ligand atoms were restrained by a 20 kcal/mol/\u00c5 harmonic potential; the second equilibration step restrained protein backbone atoms only and the nucleotide ribose rings (50 ps); and the final step removed all harmonic constraints and was run for 600 ps. For all simulations, the CHARMM27 force field was used, with long-distance electrostatic interactions computed by the particle-mesh Ewald method and a non-bonded cutoff distance of 10 \u00c5. Force field terms for GDP and GTP were adapted from ADP and ATP, respectively.\n\nFollowing equilibration, we performed MDFF simulations, but with substantial modifications in order to reduce the possibility of overfitting, which has been shown to be a significant concern with this method (Bai et al., 2013). Importantly, we limited the influence of the EM steering potential to include only protein backbone atoms and nucleotide ligands. Thus, side chain atoms in our MDFF simulations are subjected exclusively to physics-based force field terms, which is reasonable because side chains were not visualized in our maps. Related to this point, as noted in the main text, a low-pass filter was used to remove signal beyond 6 \u00c5 resolution in the cryo-EM map, in order to reduce the level of contaminating noise prior to generating the EM steering potential. Limiting the EM steering potential to backbone atoms tends to moderate the contribution of the EM term in the simulated energy function, thus compensating for the limited number of experimental constraints available from our cryo-EM maps.\n\n### Convergence of the fitted structures within the MDFF trajectories\n\nIn conventional applications of MDFF, the EM steering potential is introduced as a step function after an initial equilibration period, and the relative strength of the potential (compared with the physics-based terms in the molecular dynamics force field) is described by an adjustable parameter, \u03be, whose magnitude must be empirically determined. If the value of \u03be is too low, it will not force a conformational transition within an achievable amount of simulation time; on the other hand, if the value is too high the molecular conformation becomes distorted (\u2018overfitting\u2019). However, a quantitative method for choosing an appropriate value for the \u03be parameter has not been presented. To address this problem, we developed a modified MDFF protocol in which the value of \u03be follows a linear ramp function, starting at zero and slowly increasing over the course of 10 nanoseconds. We then monitored the system for convergence by calculating the root mean squared deviation between the coordinates of the fitted structure and the starting model (Figure 2\u2014figure supplement 1).\n\nThe resulting simulation trajectory exhibits a rapid conformational transition that occurs within the first 2 nanoseconds of the simulation, corresponding to relatively low values of the GSCALE parameter (GSCALE <0.15, compared with the \u2018typical\u2019 recommended value of 0.3 [Trabuco et al., 2008]). The RMSD signal was dominated by a large conformational change in tubulin, increasing to over 2.5 \u00c5 by the 2 ns time point (Figure 2\u2014figure supplement 1B). This initial transition is followed by a gradual increase in the reported backbone RMSD values in both kinesin and tubulin that continues to the end of the simulation (GSCALE = 1.0). Inspection of the simulation trajectory reveals that the initial transition mainly consists of a straightening of the tubulin subunits from the conformation seen in 4HNA in order to accommodate the microtubule lattice. This transition is essentially complete after 1 ns of simulation time (see Video 1). In contrast to tubulin, the conformation of kinesin is largely unaffected during the first 2 ns of the MDFF simulation, and the backbone RMSD values (kinesin only) remain at approximately 1.0 \u00c5 with respect to the starting conformation for this period.\n\nSubsequent to the first 2 ns of the MDFF simulation, the protein backbone progressively becomes disrupted beyond a level that can be justified by observable features in our EM density maps. A prominent example is loop L9 from kinesin, which encloses the nucleotide pocket and includes the switch I motif. In the starting model, a network of hydrogen bonds supports the structure of this loop; however, by the end of the simulation many of these interactions are lost as the loop is increasingly \u2018squeezed\u2019 into the corresponding density feature (results not shown). We note that the path of the protein backbone is not directly resolved this region of our density map, which means that the corresponding EM potential tends to uniformly pull backbone atoms toward the center of the loop feature (where density values are highest), and thus away from their true path. Disruption of L9 (and other secondary structure elements) in the latter parts of the ATP-state MDFF simulation is therefore likely due to over-fitting as the EM steering term increasingly predominates over the other energy terms in the simulated potential. We also note that the conformation of kinesin's N-terminal segment (residues 1\u20138), termed the neck cover strand (Khalil et al., 2008), is unstable even in early time points of the MDFF simulation, possibly due to weak density for both this element as well as the neck linker in the cryo-EM map. Limited occupancy of the docked neck linker is in fact expected under the experimental conditions used here (Rice et al., 2003). In order to minimize the presence of over-fitting artifacts in our final structure model, we selected an early time point (t = 1.2 ns) that immediately follows the initial transition, in order to represent the ATP-bound kinesin-microtubule complex (Figure 2\u2014figure supplement 1B).\n\nThe stability of the resulting structure model was investigated using a follow-up simulation in which the EM steering potential was turned off but the conformation of tubulin was subjected to harmonic positional restraints (20 kcal/mol/\u00c5) in order to maintain the straight conformation of tubulin found in the microtubule lattice. Only residues 1\u2013380 of alpha and beta tubulin were included in the restraint potential, thus excluding the kinesin-binding regions (helices H11-H12). As shown in Figure 2\u2014figure supplement 1D, the conformation of kinesin was relatively stable over the course of the 2 ns time period investigated, maintaining a backbone RMSD of \u223c1 \u00c5 from the starting structure. Signature hydrogen-bond interactions of the closed switch loop network (Y138, R203, E236, E250, N255) were maintained throughout this simulation, with the notable exception of the conserved salt bridge between R203 and E236, conserved in all X-ray structures where the switch loops are closed, which dissociated partway through the simulation (results not shown). This effect was also seen in unconstrained simulations of the 4HNA crystallographic model (results not shown), indicating a possible deficiency in the CHARMM27 energy function and/or initial structure model used here.\n\n### MDFF model for no-nucleotide kinesin\n\nIn order to obtain an atomic model for kinesin's no-nucleotide state on microtubules, we repeated the above simulation protocol but replaced the target function with one derived from the no-nucleotide cryo-EM map. After modifying the 4HNA coordinates as described in the main text (deletion of neck-linker residues and ATP), we equilibrated this system to allow water into the newly vacated nucleotide pocket, and then introduced an cryo-EM steering potential (linear ramp over 10 ns, as was done for the ATP state model) in order to bias the coordinates toward the conformation observed in our no-nucleotide map.\n\nSimilar to the ATP state trajectory, we observed a rapid conformational transition in the early phase of the MDFF simulation that was essentially complete by 1 ns (GSCALE = 0.2) (see Video 2). The behavior of tubulin in this trajectory, as reflected by the backbone RMSD from the starting structure, was also very similar to that seen in the ATP trajectory. The backbone RMSD values for kinesin, however, were much greater in the no-nucleotide trajectory, reflecting a significant conformational rearrangement. As described in the main text (Figure 3), the primary structural changes in kinesin were twisting of the N-terminal, upper, and lower subdomains with respect to each other, followed by separation of the P-loop from the switch II loop and attendant reorientation of the K91 side chain. The subdomain twisting movement was completed somewhat before the P-loop fully separated from the switch II loop, resulting in elongation of the P-loop as well as distortion of the closed switch loop network prior to the separation. After these elements had separated, however, they both \u2018snapped\u2019 back to conformations that resembled those seen in the starting model (Video 3). Similar to the behavior of tubulin in our simulations of both nucleotide states, the kinesin transition was largely complete by 1 ns, as reflected by the backbone RMSD from the starting structure (Figure 2\u2014figure supplement 1A) as well as the observed interactions in the atomic model itself (Video 3). As with the ATP-state model, we therefore sought to avoid overfitting artifacts by selecting a trajectory frame immediately following the rapid transition (t = 1.4 ns) to represent the conformation of no-nucleotide, microtubule-complexed kinesin found in our maps. Generally, the agreement between the resulting atomic model and the cryo-EM map is excellent. The only obvious discrepancy between the map and the model is found in the vicinity of residues \u223c195\u2013200 at the tip of L9, which forms part of the switch I response element. In this region, a substantial reduction in the average density of the no-nucleotide cryo-EM map indicates the presence of disorder. Consistent with this interpretation, we observed a corresponding increase in conformational fluctuations at the tip of L9 in a follow-up molecular dynamics simulation where the cryo-EM potential was turned off (See below), while the remainder of the active site remained firmly locked in place (Figure 2\u2014figure supplement 3A).\n\nWe used the selected model from our no-nucleotide MDFF simulation to perform a 2 ns follow-up simulation where the EM steering potential was eliminated and the tubulin coordinates harmonically constrained, mirroring the protocol used for the ATP-state (above). This trajectory maintained the entire network of closed switch loop hydrogen bonds (Y138, R203, E236, E250, N255) found in the starting structure, including the salt bridge between R203 and E236; the active-site salt bridge formed between K91 and D231 in the starting model were also maintained throughout the trajectory (results not shown). These observations indicate that the no-nucleotide structure identified by our flexible fitting experiments is at least transiently stable. However, in this follow-up simulation kinesin exhibited substantially more flexibility (\u223c1.5 \u00c5 RMSD) compared with the corresponding ATP-state trajectory (compare Figure 2\u2014figure supplement 1C,D). This effect could be a consequence of the open conformation of the nucleotide cleft, and loss of attendant interactions between the switch II and the P-loop, seen in the no-nucleotide state structure.\n\n### Molecular Graphics\n\nAll figures and videos were rendered with UCSF Chimera (Pettersen et al., 2004).\n\n### Accession codes\n\nCryo-EM maps and coordinates for no-nucleotide and ADP\u2022Al\u2022Fx states of the kinesin-microtubule have been deposited in the EMDB (accession codes 6187 and 6188, respectively) and PDB (ID codes 3J8X and 3J8Y, respectively).\n",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "bf403a22-f7ea-4627-9538-9e48783dbe14",
+      "submission_id": "854350da-0886-4171-98a2-af46f4a859f6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anthony A Hyman, Max Planck Institute of Molecular Cell Biology and Genetics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04686.027](https://doi.org/10.7554/eLife.04686.027)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cHigh-resolution structures of the kinesin-microtubule complex reveal the basis of nucleotide-gated force generation\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor), a Reviewing editor, and 2 reviewers.\n\nAs you can see below, both reviewers are positive about your work, and I enclose their reviews for your consideration. Before agreeing to final publication, we would like you to address the point 2 of reviewer 1 by modifying the Discussion.\n\nReviewer #1:\n\nThis work confirms the results of the recent Moores' paper at somewhat higher resolution and goes on to provide some interesting new insights into the nucleotide-dependent interaction of kinesin-1 with MTs. The data are excellent but I think the text can be improved; shorter would surely be better.\n\n1) It is a significant achievement to have obtained 6A resolution in the kinesin subunits, which are notoriously mobile relative to the MT. Thus the crystal structure of ATP-kinesin complexed with a tubulin heterodimer has now been proved to adequately represent kinesin bound to a MT. This suggests that the crystal structure of apo-kinesin complexed with tubulin will be equally relevant and avoid the daunting task of pushing the EM data to even higher resolution.\n\n2) I am not convinced by the claim that kinesin has diverged from the basic G protein mechanism. The loops around the empty active site may well be firmly closed in the frozen state that is being observed but they are probably free to open and close due to thermal fluctuations at working temperatures. Obviously, this freedom is lost when tilting of the domain clamps the surfaces together and the site becomes truly closed. Presumably the domain is free to tilt except when ATP is present, holding the surfaces together or when the neck linker is wedged in position.\n\n3) The clashing of N255 is interesting whatever one's thoughts about the mechanism.\n\n4) The discussion about how the dimer is coordinated is very convincing.\n\nReviewer #2:\n\nThis paper presents results of a cryo-electron microscopy study of kinesin-decorated microtubules in two nucleotide states. It advances our understanding of the mechanics of kinesin by providing improved data on the conformations in these states and insights on the transitions between them. This paper follows the recent publication of a closely related study by Atherton et al. in eLife a few weeks ago. These papers used essentially the same techniques and reach nearly the same resolution, which sets the limit to how much can be interpreted from the EM data. This is an incremental improvement in resolution over previously published results, but in both cases new features and mechanisms can be identified from the resultant density maps and differences among them. The nominal resolution in Atherton et al is reported as 6-7 \u00c5 and in the current work 5-6 \u00c5. Although both sets of density maps were filtered to around 6 \u00c5, and the maps are presented at different threshold levels, it does appear that Shang et al do have sufficiently better resolution to justify their confidence in interpreting some important loop conformations. The authors were also able to do a more extensive fitting of atomic models based on their maps. The two papers do come to some of the same conclusions, but differ in significant ways with regard to the loops and the core beta sheet, and these differences have substantial impact of mechanistic models. Shang et al suggests a more complicated domain structure than has been seen before, with identification of a \u201cpolymer cleft\u201d in the microtubule interface region. The beta sheet appears to be strained rather than just twisted, which may relate to the mystery of where the energy of ATP hydrolysis goes. Perhaps most importantly, the new maps indicate that movement of the P-loop is more significant than opening or closing of the switch-I/switch-II region for nucleotide binding and release.\n\nAltogether this is a substantive and interesting advance that appears to answer a number of puzzles about kinesin's action. The conclusions are well supported by the experimental results, which include mutation of the critical N255 residue as well as application of molecular dynamics in building the atomic models. The instability of the simulations over long times could be a concern, but does not bother me in the present context. The correspondence with myosin activity in this paper extends ideas presented earlier by Dr. Sindelar and provides further support for the functional models presented here, although further work at higher resolution will be required to validate these proposals. In terms of validation tests suggested recently by Henderson and others, I am comfortable that this work meets standards of acceptance.\n",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eba6b03a-58ef-44ae-a6a0-756ec9ee0575",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C1",
+      "claim": "Cryo-EM reconstructions of no-nucleotide and ATP analog-bound kinesin-microtubule complexes were obtained at 5-6 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the application of recent advances in instrumentation and image processing, including the use of a high-speed electron-counting detector and algorithms to correct for beam-induced sample motion (Li et al., 2013) (See 'Materials and methods'), we were able to obtain a resolution of \u223c5\u20136 \u00c5 in both of these maps (Figure 1\u2014figure supplement 1A,B), a significant increase over previous studies of the kinesin-microtubule complex (Sindelar, 2011; Atherton et al., 2014; Goulet et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is directly stated and supported by FSC curves shown in Figure 1\u2014figure supplement 1A,B, which are experimental measurements from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "552e221b-ca65-4361-8e64-97a05fab2326",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C2",
+      "claim": "In some regions of the cryo-EM maps, the pitch of \u03b1-helices was resolved as were individual beta strands, indicating a resolution of at least 5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In some regions of the maps, the pitch of \u03b1-helices was resolved as were individual beta strands, indicating a resolution of at least 5 \u00c5 (Figure 1\u2014figure supplement 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual features in the density maps shown in Figure 1\u2014figure supplement 1F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "d3fc393e-f7a5-42c6-9923-e8b2cb711da1",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C3",
+      "claim": "Binding of ATP analog causes the N-terminal subdomain to make a ~22\u00b0 seesaw-like motion atop the lower subdomain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the N-terminal subdomain makes a \u223c22\u00b0 seesaw-like motion atop the lower subdomain (compare Figure 2A,B to Figure 2D,E) in response to binding of the ATP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The motion is quantified from comparison of the two cryo-EM structures shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "733d62a5-b507-42b4-aae0-88f38788d886",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C4",
+      "claim": "In the ATP analog state, density consistent with a docked conformation of the neck linker extending towards the microtubule plus end was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, in the ATP analog state, we observed density consistent with a docked conformation of the neck linker, extending towards the microtubule plus end (Figure 1B; Figure 2A,B), while in the no-nucleotide state the neck linker was evidently disordered (Figure 1B; Figure 2D,E), consistent with previous observations (Rice et al., 1999; Sindelar and Downing, 2007, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is directly from the cryo-EM density maps shown in Figure 1B and Figure 2A,B, and is consistent with prior published observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "2e6e57d9-b09c-459b-aca1-a9a0ead3ff56",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C5",
+      "claim": "In the no-nucleotide state, the neck linker was disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, in the ATP analog state, we observed density consistent with a docked conformation of the neck linker, extending towards the microtubule plus end (Figure 1B; Figure 2A,B), while in the no-nucleotide state the neck linker was evidently disordered (Figure 1B; Figure 2D,E), consistent with previous observations (Rice et al., 1999; Sindelar and Downing, 2007, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is from the cryo-EM density maps and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "1575424d-7404-40d1-83c4-ffff74bbe61c",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C6",
+      "claim": "The upper subdomain rotates by ~11\u00b0 in response to ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Rigid-body fitting experiments using fragments of kinesin X-ray structures indicate that the upper subdomain rotates by much less (\u223c11\u00b0) than the N-terminal subdomain (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The rotation angle is determined from rigid-body fitting experiments using the cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "8f31cfe9-cd71-4c59-8ee2-25d5f1a71e21",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C7",
+      "claim": "Both no-nucleotide and ATP analog-bound cryo-EM maps exhibit a contact between the switch II loop and switch II helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Related to this observation, we discovered a striking resemblance in the conformation of the switch II loop before and after binding of the ATP analog (Figure 2C,F; Figure 3). Both of our maps exhibit a contact between the switch II loop and switch II helix, coinciding with a pair of hydrogen bonds formed between the backbone of E236 and the side chain of N255 (respectively) in X-ray structures of kinesin's ATP analog-bound state (Parke et al., 2010; Chang et al., 2013; Gigant et al., 2013) (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The contact is observed in both cryo-EM maps and corresponds to hydrogen bonds seen in X-ray structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "f100f508-026c-4139-93b8-d850e96615da",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C8",
+      "claim": "The cryo-EM maps resolve a contact between the switch II helix and the microtubule surface, corresponding to a hydrogen bond between N255 and M413 of alpha tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Proximal to this contact, our maps resolve another contact between the switch II helix and the microtubule surface, corresponding to a hydrogen bond between N255 and M413 of alpha tubulin in the kinesin\u2013tubulin co-complex structure (Gigant et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The contact is resolved in the cryo-EM maps and corresponds to a hydrogen bond in the X-ray structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "f6506ecd-c5a2-4a41-b4f4-258878336fd4",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C9",
+      "claim": "In the no-nucleotide map, there is a distinct upward displacement of the P-loop away from the switch II loop.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking difference between our cryo-EM maps, however, is a distinct upward displacement of the P-loop away from the switch II loop in our no-nucleotide map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The displacement is observed by comparing the two cryo-EM maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "5cd056d4-0881-48ab-8f72-669bde71ba2c",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C10",
+      "claim": "The P-loop displacement appears to be a direct consequence of the 22\u00b0 rotation made by the N-terminal subdomain.",
+      "claim_type": "EXPLICIT",
+      "source": "This movement appears to be a direct consequence of the 22\u00b0 rotation made by the N-terminal subdomain, to which the P-loop is anchored; the rotation translates the P-loop site \u223c4 \u00c5 away from the microtubule surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The interpretation is based on the structural relationship between the N-terminal subdomain rotation and P-loop position observed in the cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "f0b1ab6f-e66f-414f-8943-c1d1c77d394a",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C11",
+      "claim": "The P-loop forms a visible contact with the switch II loop in the ATP analog map.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, while the P-loop forms a visible contact with the switch II loop in our ATP analog map (Figure 3B), a gap appears between these elements in the no-nucleotide map (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The contact is visible in the cryo-EM density shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "d1144fac-00ce-4db3-9321-f9467defe798",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C12",
+      "claim": "A gap appears between the P-loop and switch II loop in the no-nucleotide map.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, while the P-loop forms a visible contact with the switch II loop in our ATP analog map (Figure 3B), a gap appears between these elements in the no-nucleotide map (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The gap is visible in the cryo-EM density shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "36a86423-c519-4040-aa45-967269352118",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C13",
+      "claim": "In ADP-bound X-ray structures of kinesin, the P-loop and switch II loop maintain very close contact.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the P-loop and switch II loop maintain very close contact in ADP-bound X-ray structures of kinesin (Figure 3C,D and Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is from X-ray crystal structures shown in the figures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "c669f635-26ca-435a-89ad-ea4d59011457",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C14",
+      "claim": "In ADP-bound X-ray structures, the switch II loop fails to make close contact with the switch II helix.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, however, the switch II loop fails to make close contact with the switch II helix in the ADP-bound X-ray structures (Figure 3C,D and Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is from X-ray crystal structures shown in the figures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "9d8192f1-77ee-426a-a96c-5c887db9b5b2",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C15",
+      "claim": "The conformation of kinesin visualized in the 4HNA structure is largely conserved when tubulin is incorporated into the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The MDFF calculation thus indicates that the conformation of kinesin visualized in the 4HNA structure is largely conserved when tubulin is incorporated into the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on MDFF simulations that show only 1.08 \u00c5 backbone RMSD between the fitted structure and 4HNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "81e1e374-f8bc-4792-999e-9688d2ba2365",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C16",
+      "claim": "The switch loops remain 'closed' in an identical hydrogen-bonding network in both no-nucleotide and ATP states.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the switch loops remain 'closed' in an identical hydrogen-bonding network in our structural models for both nucleotide states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation is from the atomic models derived from MDFF simulations of both cryo-EM maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "bed8c064-3a75-464f-a821-77297b961b6c",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C17",
+      "claim": "The hydrogen bond network that maintains closed switch loops includes a universally conserved salt bridge between R203 (switch I) and E236 (switch II).",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrogen bond partners in this network, which are shared by the 4HNA starting model, extend beyond the switch loops and include not only a universally conserved salt bridge between R203 (switch I) and E236 (switch II), but also several universally conserved residues in the switch II helix (E250, N255) and L7 from the upper subdomain (Y138) (Figure 4, middle and lower panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The hydrogen bond network is identified in the atomic models shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "fd7a3262-a74b-4a64-be4c-2be99e1b3752",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C18",
+      "claim": "Opening of the nucleotide cleft in the no-nucleotide model breaks a bifurcated hydrogen bond between T92 at the base of the P-loop and S202/D231 in switches I and II.",
+      "claim_type": "EXPLICIT",
+      "source": "As the P-loop pulls away from the switch loops, a bifurcated hydrogen bond breaks up between T92 at the base of the P-loop and S202/D231 in switches I and II (Figure 4A,B and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The hydrogen bond breaking is observed in the MDFF simulation trajectory shown in Video 3 and Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "ef1bf97a-df8a-425f-a749-5a4b7b662b1f",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C19",
+      "claim": "In the nucleotide-free structure, K91 breaks two hydrogen bonds with backbone carbonyl oxygens within the P-loop and swivels to interact with D231 in switch II.",
+      "claim_type": "EXPLICIT",
+      "source": "In the nucleotide-free structure, K91 breaks two hydrogen bonds with a pair of backbone carbonyl oxygens within the interior of the P-loop and swivels around to interact with D231 in switch II, replacing the hydrogen bond this latter residue formerly made with T92.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conformational change is observed in the no-nucleotide atomic model derived from MDFF.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "1d3b2d18-02f3-4ff0-a311-b106b51dd3c2",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C20",
+      "claim": "The side chain configuration within the active site of the nucleotide-free kinesin model is strikingly similar to nucleotide-free F1-ATPase and myosin motors.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting side chain configuration within the active site of our nucleotide-free kinesin model is strikingly similar to what is seen in X-ray structures of nucleotide-free F1-ATPase and myosin motors, which possess homologous active-site architectures (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The similarity is demonstrated by comparison with X-ray structures shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "97be368d-520d-4ad9-b967-1f4a0490440e",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C21",
+      "claim": "Both ADP-bound X-ray structures (1BG2 and 1MKJ) are prohibited from assuming favorable binding orientations on the microtubule surface due to the conformation of residue N255.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered, however, that both the 1BG2 and 1MKJ structures are prohibited from assuming favorable binding orientations on the microtubule surface due to the conformation of residue N255.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on structural comparison between ADP-bound X-ray structures and the microtubule-bound cryo-EM structures.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "935755b6-14d4-4453-b009-b36929143aed",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C22",
+      "claim": "The N-terminal coils of the switch II helix are unwound in both ADP-bound structures (1BG2 and 1MKJ).",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 4D\u2013F, the N-terminal coils of the switch II helix are unwound in both ADP-bound structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is from X-ray structures shown in Figure 4D-F.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "a83e588a-2f15-4f45-add4-6ec05e237c31",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C23",
+      "claim": "In ADP-bound structures, the peptide backbone at residue N255 would point directly at the H11\u2013H12 loop of alpha tubulin, generating a substantial steric overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the peptide backbone at residue N255 would point directly at the H11\u2013H12 loop of alpha tubulin, generating a substantial steric overlap (Figure 4F,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The steric clash is identified by modeling ADP-bound structures onto the microtubule surface as defined by the cryo-EM structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "d93fca51-7b9a-4339-a07f-af6c77a4ed5f",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C24",
+      "claim": "The 1BG2 and 1MKJ conformations appear incapable of strong microtubule attachment, consistent with the weak experimentally observed microtubule affinity of kinesin's ADP state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the 1BG2 and 1MKJ conformations appear incapable of strong microtubule attachment, consistent with the weak experimentally observed microtubule affinity of kinesin's ADP state (Rosenfeld et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The interpretation is based on structural analysis and is consistent with experimental measurements from the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "2f7a38f5-73d8-4818-bef1-e7972e1971b9",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C25",
+      "claim": "The degree of end-to-end twisting in the no-nucleotide model falls within the range observed in other X-ray structures of ADP-bound kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this expectation, however, we discovered that the degree of end-to-end twisting in both our no-nucleotide model as well as the previously reported 'rigor-like' ADP complex of KIF14 falls within the range observed in other X-ray structures of ADP-bound kinesin (Videos 4\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The comparison is made between the no-nucleotide model and multiple X-ray structures shown in Videos 4-6.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "409b939d-2467-4883-bb22-c176f592dcea",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C26",
+      "claim": "ATP binding causes closure of the nucleotide cleft which is coupled to elastic strain in the peptide backbone, analogous to the action of an archery bow.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we identified another mode of distortion in our kinesin models, analogous to the action of an archery bow (Figure 6 and Videos 7,8), that would couple strong nucleotide binding to elastic strain in the peptide backbone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The distortion mode is identified by comparing the no-nucleotide and ATP-bound models shown in Figure 6 and Videos 7-8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "3039ce4a-bf61-45b3-9f02-a434c068090e",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C27",
+      "claim": "The N255K mutation reduces the rate of microtubule-stimulated ADP release by up to 1000-fold, to near basal levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these predictions are supported by kinetics measurements reported here and elsewhere, which reveal that the N255K mutation reduces the rate of microtubule-stimulated ADP release by up to 1000-fold, to near basal levels (Auerbach and Johnson, 2005) (Figure 7A,B), while the E236A mutation increases the ADP off-rate of detached kinesin by 100-fold (Rice et al., 1999) but does not significantly alter the rate of microtubule-stimulated ADP release.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by kinetics measurements shown in Figure 7A,B and cited from Auerbach and Johnson, 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "e0eb3230-a357-4e6e-93b4-744eb4268982",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C28",
+      "claim": "The E236A mutation increases the ADP off-rate of detached kinesin by 100-fold but does not significantly alter the rate of microtubule-stimulated ADP release.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these predictions are supported by kinetics measurements reported here and elsewhere, which reveal that the N255K mutation reduces the rate of microtubule-stimulated ADP release by up to 1000-fold, to near basal levels (Auerbach and Johnson, 2005) (Figure 7A,B), while the E236A mutation increases the ADP off-rate of detached kinesin by 100-fold (Rice et al., 1999) but does not significantly alter the rate of microtubule-stimulated ADP release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by kinetics measurements cited from Rice et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "2e8b2de8-9405-474d-bda4-c65534154c48",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C29",
+      "claim": "Cryo-EM analysis of the N255K mutant reveals two previously unidentified binding modes in which the motor domain attaches tightly to the microtubule but is rotationally mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM analysis of the ADP and ATP analog-bound states of the N255K point mutant of our construct support this hypothesis, revealing two previously unidentified binding modes of kinesin in which the motor domain attaches tightly to the microtubule but is rotationally mobile (Figure 7C\u2013E and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The binding modes are observed in cryo-EM reconstructions shown in Figure 7C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "c23c2861-99f8-4a3c-9a0d-d141bb60dac6",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C30",
+      "claim": "In the ADP-state map of N255K, the microtubule contact at site 255 appears to be attenuated or disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ADP-state map, the microtubule contact at site 255 appears to be attenuated or disordered (Figure 7D, right panel), while in the AMPPNP map the wild-type microtubule contact of loop L12 is absent but a contact is evident at the 255 site (Figure 7E, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is from the cryo-EM reconstruction shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "77cc76e7-d2ca-45d9-baab-faf6f8a449b3",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C31",
+      "claim": "In the AMPPNP map of N255K, the wild-type microtubule contact of loop L12 is absent but a contact is evident at the 255 site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ADP-state map, the microtubule contact at site 255 appears to be attenuated or disordered (Figure 7D, right panel), while in the AMPPNP map the wild-type microtubule contact of loop L12 is absent but a contact is evident at the 255 site (Figure 7E, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The observation is from the cryo-EM reconstruction shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "1304d29c-b4d4-4b12-a24b-dbae10f66dc3",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C32",
+      "claim": "In neither nucleotide state is the N255K construct able to form all three wild-type microtubule contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in neither nucleotide state is the N255K construct able to form all three wild-type microtubule contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on analysis of the cryo-EM reconstructions of N255K in both nucleotide states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "ac32c09d-203f-4c5f-9c34-4923403d0324",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C33",
+      "claim": "Microtubule attachment, mediated by the universally conserved 'linchpin' residue N255, triggers a clamshell opening of the nucleotide cleft and accompanying release of ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing these models with existing X-ray structures of ADP-bound kinesin, we infer a mechanistic scheme in which microtubule attachment, mediated by a universally conserved 'linchpin' residue in kinesin (N255), triggers a clamshell opening of the nucleotide cleft and accompanying release of ADP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The mechanistic scheme is inferred from comparison of the cryo-EM models with X-ray structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "81278f37-0f9c-41d2-a86d-a990615915ce",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C34",
+      "claim": "Binding of ATP re-closes the nucleotide cleft in a manner that tightly couples to translocation of cargo via kinesin's 'neck linker' element.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of ATP re-closes the cleft in a manner that tightly couples to translocation of cargo, via kinesin's 'neck linker' element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The coupling mechanism is inferred from the structural transitions observed in the cryo-EM models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "27f6e624-7a55-4f1c-8843-bcccfb1fba46",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C35",
+      "claim": "The structural transitions in kinesin are reminiscent of the analogous nucleotide-exchange steps in the myosin and F1-ATPase motors.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural transitions are reminiscent of the analogous nucleotide-exchange steps in the myosin and F1-ATPase motors and inform how the two heads of a kinesin dimer 'gate' each other to promote coordinated stepping along microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The comparison is based on structural similarities with other motor proteins.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "941be8b3-1097-4c8f-bc51-6c109f045781",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C36",
+      "claim": "Conventional kinesin is the founding member of a superfamily of molecular motors that use ATP hydrolysis energy to transport cargo along microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional kinesin is the founding member of a superfamily of molecular motors that use the energy of ATP hydrolysis to transport cargo along microtubules, serving essential roles in a wide variety of cellular processes, most notably mitosis and neuronal transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about kinesin's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "bb4c57be-c84a-4919-a44b-19be7c1b949f",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C37",
+      "claim": "More than 20 different members of the kinesin superfamily are identified with mitosis alone.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 20 different members of the kinesin superfamily are identified with mitosis alone, underscoring the motor's fundamental importance in the cellular life cycle (Rath and Kozielski, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Rath and Kozielski, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "72f773ac-7a25-4d28-bc30-10824b20a7b6",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C38",
+      "claim": "During active motility, the dimerized motor domains of kinesin-1 take alternating, eight nanometer steps toward the microtubule plus end, tracking along single protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "During active motility, the dimerized motor domains take alternating, eight nanometer steps toward the microtubule plus end, tracking along single protofilaments (Gennerich and Vale, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Gennerich and Vale, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "e2cc9ad7-8320-486d-a073-606460735b61",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C39",
+      "claim": "Each kinesin motor domain cycles between conformations that are strongly attached to the microtubule (no-nucleotide and ATP-bound) and ones that are weakly attached (ADP-bound).",
+      "claim_type": "EXPLICIT",
+      "source": "Underlying this behavior, each motor domain cycles between conformations that are strongly attached to the microtubule (no-nucleotide and ATP-bound) and ones that are weakly attached (ADP-bound).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about kinesin's mechanochemical cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "f29371bf-1024-4448-9afd-86b7557d984f",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C40",
+      "claim": "Binding of ATP during the microtubule-attached phase causes the neck linker to dock along the side of the motor domain in the plus end direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, binding of ATP during the microtubule-attached phase of the motor domain causes a structural element called the neck linker (Figure 1A) to dock along the side of the motor domain in the plus end direction (Rice et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Rice et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "4c6aa751-4df0-4c9f-aa0f-2df204dd993e",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C41",
+      "claim": "Neck linker docking is accompanied by translocation of the cargo and the partner head in the direction of travel.",
+      "claim_type": "EXPLICIT",
+      "source": "The neck linker connects the C-terminus of the motor domain to the stalk, so that docking is accompanied by translocation of the cargo and the partner in the direction of travel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural connection between the neck linker and the stalk.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "a74ff2bc-d362-44d5-8716-c211ba79380c",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C42",
+      "claim": "14-protofilament microtubules outnumbered 13-protofilament by approximately 3:1 in the cryo-EM samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-reference analysis performed using a range of different microtubule assemblies (12\u201315 protofilaments) established that 14-protofilament microtubules outnumbered 13-protofilament by approximately 3:1, with only marginal populations of other symmetry forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The ratio is determined from multi-reference analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "979b0291-5e1e-47b4-995e-2744ba5860ff",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C43",
+      "claim": "The final no-nucleotide reconstruction used a total of 10,029 8 nm repeats, for a total of ~140,000 asymmetric units (14 protofilaments).",
+      "claim_type": "EXPLICIT",
+      "source": "For the final no-nucleotide reconstruction, a total of 10,029 8 nm repeats were used, for a total of \u223c140000 asymmetric units (14 protofilaments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data used in the reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "eaee17bd-bbc3-45fe-a099-21cd09b0c6b0",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C44",
+      "claim": "The final ADP\u2022Al\u2022Fx reconstruction used a total of 2,394 8 nm repeats, for a total of ~33,600 asymmetric units (14 protofilaments).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 2394 8 nm repeats, for a total of \u223c33,600 asymmetric units, were used for the final ADP\u2022Al\u2022Fx reconstruction (14 protofilaments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data used in the reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "55f14724-8363-41ce-a945-6a66f350f5e6",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C45",
+      "claim": "The extrapolated maximum rate for microtubule-stimulated ADP release for N255K was kmax = 0.26 \u00b1 0.04 s\u22121, with an apparent microtubule dissociation constant of K0.5 = 21.3 \u00b1 6.3 \u03bc\u039c.",
+      "claim_type": "EXPLICIT",
+      "source": "The extrapolated maximum rate for microtubule-stimulated ADP release was kmax = 0.26 \u00b1 0.04 s\u22121, with an apparent microtubule dissociation constant of K0.5 = 21.3 \u00b1 6.3 \u03bc\u039c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are measured kinetic parameters from stopped-flow experiments shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "e0607046-0b78-41ed-9337-b3342cadff63",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C46",
+      "claim": "N255 acts as a 'linchpin' that links closure of kinesin's switch loops to interactions at a single site on alpha tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The preceding analysis has indicated that residue N255 in kinesin plays a key role in the motor's microtubule response pathway. In effect, this site appears to act as a 'linchpin' that links closure of kinesin's switch loops to interactions at a single site on alpha tubulin (See Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The linchpin role is inferred from structural analysis shown in Figure 4D-F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "de237327-8378-444c-a349-70aa42c9d521",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C47",
+      "claim": "The N255K mutant is incapable of maintaining a fixed orientation on the microtubule surface.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the N255K mutant appears to be incapable of maintaining a fixed orientation on the microtubule surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on cryo-EM analysis showing rotational mobility of the N255K mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "0b0c1e76-3186-4452-9491-6baeb3666665",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C48",
+      "claim": "Flexibility in the N255K-microtubule contact allows the mutant to maintain affinity for microtubules even when the switch loops are open.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably, flexibility in the resulting contact allows the N255K mutant to maintain affinity for microtubules even when the switch loops are open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the structural and kinetic data for the N255K mutant.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "a0b3b904-74f5-40a8-afcc-0ccca1e7e3fd",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C49",
+      "claim": "Failure of the N255K mutant to close the switch loops leads to loss of microtubule-stimulated ADP release and catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, failure of this mutant to close the switch loops under these conditions would lead to the loss of microtubule-stimulated ADP release and catalysis, consistent with experimental measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The interpretation is consistent with the kinetic measurements shown in Figure 7A,B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "68262105-3f92-4b20-99a1-30eb245c51a1",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C50",
+      "claim": "Upon microtubule encounter, alpha tubulin engages N255 to stabilize the closed conformation of the switch loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon encountering the microtubule, alpha tubulin engages N255 in order to stabilize the closed conformation of the switch loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model inferred from the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "878711b8-4c1d-4ac5-8c9c-ff66169e97a2",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C51",
+      "claim": "The primary consequence of switch loop closure is to revise the mechanical linkages between kinesin's upper subdomain and the other two subdomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the primary consequence of switch loop closure is to revise the mechanical linkages between kinesin's upper subdomain and the other two subdomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model inferred from the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "f72ec527-375f-45b2-9172-6969f6b43ca2",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C52",
+      "claim": "In the detached ADP state, the upper subdomain forms a semi-rigid junction with the N-terminal subdomain via interactions between the open switch II loop and the P-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "In the detached ADP state of the motor, the upper subdomain forms a semi-rigid junction with the N-terminal subdomain (Figure 8B, top panels), via interactions between the open switch II loop and the P-loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the mechanistic model shown in Figure 8B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "30d863a3-ba9f-4efa-9e31-379f65957072",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C53",
+      "claim": "Upon microtubule attachment, the upper domain trades its junction with the N-terminal subdomain for a new one with the lower subdomain, mediated by the closed switch loops.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon microtubule attachment the upper domain trades this junction for a new one with the lower subdomain, mediated by the closed switch loops (Figure 8B, bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the mechanistic model shown in Figure 8B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "929d2088-e6e0-4585-b57d-77b86a3d2498",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C54",
+      "claim": "Disengagement of the N-terminal subdomain from the upper subdomain allows the nucleotide cleft to relax into its open state and release ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "First, disengagement of the N-terminal subdomain from the upper subdomain allows the nucleotide cleft to relax into its open state and release ADP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model inferred from the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "76b6b0a9-3625-4d43-8ff2-307c0cf25f8f",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C55",
+      "claim": "Fixing the upper and lower subdomains together introduces a well-defined allosteric pathway between the neck linker and the nucleotide cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, fixing the upper and lower subdomains together introduces a well-defined allosteric pathway between the neck linker and the nucleotide cleft, so that closure of the nucleotide cleft by ATP becomes energetically coupled to docking of the neck linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model inferred from the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "4eeb6e5d-5b14-4bbb-ba33-85957123e42d",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C56",
+      "claim": "The structure models contrast with a newly published cryo-EM study by Atherton et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "The structure models presented here contrast with a newly published cryo-EM study of the kinesin-microtubule complex by Atherton et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison with another published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "605242fd-67d5-4038-9990-60f16c5bc31f",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C57",
+      "claim": "The no-nucleotide conformation proposed by Atherton et al. exhibits neither an open nucleotide cleft nor twisting between the N-terminal and upper subdomains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the no-nucleotide conformation proposed by Atherton et al. seems to exhibit neither an open nucleotide cleft (as defined in the current work) nor twisting between the N-terminal and upper subdomains, both of which are signature traits of our no-nucleotide model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with the Atherton et al. study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "3bd7c2e2-47f6-40bd-82b2-d0a613e8fe39",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C58",
+      "claim": "The mechanistic scheme proposed by Atherton et al. is starkly different from the one presented in this work.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the mechanistic scheme proposed by Atherton et al. is starkly different from the one summarized in Figure 8B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with the Atherton et al. study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "e27dff7c-9b59-47a5-9f28-839257ea92a6",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C59",
+      "claim": "The improved resolution of the cryo-EM maps (5-6 \u00c5 vs 6-7 \u00c5 in Atherton et al.) allows resolution of the distinctive hooked shape of the P-loop in the no-nucleotide map.",
+      "claim_type": "EXPLICIT",
+      "source": "The improved resolution of the cryo-EM maps presented here (5\u20136 \u00c5 vs 6\u20137 \u00c5 in the Atherton et al. study) allows us to resolve the distinctive hooked shape of the P-loop in the no-nucleotide map, precisely defining its position with respect to the switch II loop and thus contributing to our identification of an open conformation of the nucleotide cleft (compare Figure 3 and Figure 3\u2014figure supplement 1 of the current work with Figure 2 in Atherton et al.).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of resolution and features between the two studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "e6c81e5a-5689-4972-94d2-3c378c97ed43",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C60",
+      "claim": "The simulation method used here places more emphasis on a chemically realistic simulation potential by incorporating explicitly represented solvent molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the simulation method used here to develop all-atom models places more emphasis on a chemically realistic simulation potential, by incorporating explicitly represented solvent molecules and keeping the magnitude of the perturbing cryo-EM potential as small as possible (See 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the current work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "92783f0c-530c-4efd-8d0c-9faf008132dc",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C61",
+      "claim": "Lower resolution, different refinement methods, and additional a priori assumptions in Atherton et al. may have impeded their identification of an open arrangement of the nucleotide cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore seems likely that lower resolution, different refinement methods, and also the use of additional a priori assumptions (i.e., fragment selection for the rigid-body fitting) in the methods of the Atherton et al. study may have impeded their identification of an open arrangement of the nucleotide cleft, in their no-nucleotide model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation comparing methodologies between studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "8e1a11ee-0242-4557-b490-97e22bc310c6",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C62",
+      "claim": "The mechanism inferred for kinesin reveals new parallels with the myosin molecular motor.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism inferred here for kinesin reveals new parallels with the myosin molecular motor, which appears to be ancestrally related to kinesin (Kull et al., 1998) and shares very similar nucleotide-sensing 'switch' motifs (Kull et al., 1996; Sablin et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The parallel is based on structural comparison and is supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "b398d4b2-ac52-4e4e-bbab-35f5b40ea13d",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C63",
+      "claim": "In myosin, the 'linchpin' asparagine residue interacts natively with a conserved tyrosine within the lower 50kD domain of myosin itself, rather than with the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "In this light, it is worth noting that the 'linchpin' N255 residue in kinesin is conserved in myosin, but interacts natively with a conserved tyrosine found within the lower 50kD domain of myosin itself, rather than interacting with the filament as occurs with kinesin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on structural knowledge of myosin.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "cf25baf5-05f6-4b2b-97b3-89e7b37f1fe2",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C64",
+      "claim": "In myosin, the linchpin asparagine holds the switch II loop near its 'closed' conformation even in the absence of actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in myosin this asparagine holds the switch II loop near its 'closed' conformation even in the absence of actin, which could help explain why myosin, unlike kinesin, shows strong catalytic activity even in the absence of its partner filament (Geeves and Holmes, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural comparison with myosin and is supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "0a88e2c7-3b8b-4a61-8546-b5c169f8e8b7",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C65",
+      "claim": "An X-ray crystal structure of no-nucleotide kinesin in complex with a non-polymerized tubulin dimer published concurrently is in excellent agreement with the model presented here (backbone RMSD 1.28\u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently with the current work, an X-ray crystal structure of no-nucleotide kinesin in complex with a non-polymerized tubulin dimer has been published (Cao et al., 2014). The structure of no-nucleotide kinesin reported in the X-ray study is in excellent agreement with model presented here (backbone RMSD for all visible residues is 1.28\u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The agreement is based on comparison with the Cao et al. 2014 X-ray structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "31ffa1c2-e5e4-4b12-94c9-1d37d5244432",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "claim_id": "C66",
+      "claim": "The detailed interactions of kinesin and tubulin seen in the Cao et al. X-ray structure are fully consistent with the models and mechanism presented in the current work.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the detailed interactions of kinesin and tubulin seen in the X-ray structure appear to be fully consistent with the models and mechanism presented in the current work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with the Cao et al. 2014 X-ray structure.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0a7e585f-5081-4c96-9e65-4fd56af9b446",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High-resolution cryo-EM reconstructions of kinesin-microtubule complexes were obtained at 5-6 \u00c5 resolution for both no-nucleotide and ATP analog-bound states, with sufficient quality to resolve secondary structure features including \u03b1-helical pitch and individual \u03b2-strands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are directly supported by FSC curves (Figure 1\u2014figure supplement 1A,B) and visual inspection of density maps showing resolved secondary structure features. The sample sizes (C43: ~140,000 asymmetric units; C44: ~33,600 asymmetric units) are substantial and appropriate for achieving the reported resolution. The resolution represents a significant improvement over prior studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "64045ee2-e4cb-4e9a-9d7b-6afe7c33eef1",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ATP binding induces a ~22\u00b0 seesaw-like rotation of the N-terminal subdomain and an ~11\u00b0 rotation of the upper subdomain, coupled with neck linker docking in the ATP state and neck linker disorder in the no-nucleotide state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 are supported by direct observation in cryo-EM density maps (Figure 2) and rigid-body fitting experiments. The neck linker conformational changes (C4, C5) are consistent with previous observations (Rice et al., 1999; Sindelar and Downing, 2007, 2010). The quantified rotation angles are derived from structural comparison and fitting experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "4c816491-3d42-42b4-a3cd-64db40c346a9",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both no-nucleotide and ATP analog-bound states exhibit a closed polymer cleft with contact between the switch II loop and switch II helix, but differ in the nucleotide cleft: the P-loop is displaced ~4 \u00c5 away from the switch II loop in the no-nucleotide state, creating a gap, while it forms visible contact in the ATP state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 are directly supported by cryo-EM density features visible in Figure 3. The contacts and gaps are clearly resolved in the maps. The P-loop displacement (C9, C10) is mechanistically linked to the N-terminal subdomain rotation (C3), providing internal consistency. The observations are corroborated by comparison with X-ray structures (C7, C8).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "768fb389-80b7-44c8-9bed-85d2a12972e8",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ADP-bound X-ray structures (1BG2, 1MKJ) show closed nucleotide clefts but open polymer clefts, and are incompatible with tight microtubule binding due to steric clashes at residue N255, consistent with the weak microtubule affinity of kinesin's ADP state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 are supported by direct observation in X-ray structures (Figure 3C,D). Claims C21-C24 are based on structural modeling that identifies steric clashes when ADP-bound structures are positioned on the microtubule surface (Figure 4F,I, Figure 5A-C). The interpretation is consistent with experimental measurements of weak microtubule affinity in the ADP state (Rosenfeld et al., 1996).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "a33af879-f3de-47a7-b217-afbb85ff767f",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MDFF simulations reveal that switch loops remain closed in both no-nucleotide and ATP states via a conserved hydrogen bond network, but opening of the nucleotide cleft in the no-nucleotide state disrupts the P-loop coordination of nucleotide and magnesium, producing an active site configuration similar to nucleotide-free F1-ATPase and myosin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 are supported by MDFF simulations with explicit solvation (Figure 2\u2014figure supplement 1, Videos 1-3) and structural analysis (Figure 4). The simulations show reasonable convergence and stability in follow-up simulations without EM steering potential (Figure 2\u2014figure supplement 1C,D). The similarity to F1-ATPase and myosin (C20) is demonstrated by structural comparison (Figure 4\u2014figure supplement 1). However, the R203-E236 salt bridge showed instability in some simulations, suggesting potential force field limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "94e23038-7210-47f9-b85e-268bcee306f1",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The no-nucleotide model does not exhibit increased end-to-end twisting of the central \u03b2-sheet compared to ADP-bound structures, but instead shows a distinct 'archery bow' distortion mode where ATP binding causes elastic strain in the peptide backbone coupled to nucleotide cleft closure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by comparison with multiple X-ray structures (Videos 4-6, Figure 6\u2014figure supplement 1). Claim C26 is supported by structural analysis showing coordinated distortion of the \u03b2-sheet and helix \u03b12 (Figure 6, Videos 7-8). The proposed mechanism provides an alternative to previous twisting models and is consistent with the observed structural transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "806c05c2-b931-4400-b2da-ae154b1953f2",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The N255K mutation reduces microtubule-stimulated ADP release by ~1000-fold (kmax = 0.26 \u00b1 0.04 s\u207b\u00b9) and produces rotationally mobile binding modes where the mutant cannot form all three wild-type microtubule contacts, while the E236A mutation increases detached ADP off-rate by 100-fold without affecting microtubule-stimulated release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by kinetics measurements (Figure 7A,B) and literature citations. Claims C29-C32 are supported by cryo-EM reconstructions of the N255K mutant (Figure 7C-E, Figure 7\u2014figure supplement 1), though these maps are lower resolution due to conformational heterogeneity. The kinetic parameters (C45) are directly measured. The differential effects of N255K and E236A mutations are consistent with the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "81a93604-a476-4816-8fff-c681fc254faa",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The proposed mechanistic model posits that N255 acts as a 'linchpin' linking microtubule attachment to switch loop closure, which revises mechanical linkages between subdomains: microtubule binding closes the polymer cleft and opens the nucleotide cleft to release ADP, while ATP binding re-closes the nucleotide cleft and couples to neck linker docking via an allosteric pathway through the fixed upper and lower subdomains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 and C46-C55 constitute the core mechanistic model inferred from the structural data. The model is well-supported by the cryo-EM structures (C1-C12), MDFF simulations (C15-C20), mutational analysis (C27-C32), and comparison with ADP-bound structures (C21-C24). The linchpin role of N255 (C46) is supported by structural analysis (Figure 4D-F) and mutational data. The model provides a coherent explanation for the observed structural transitions and functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "beefce97-96b4-4fb6-86ca-b14e4a72cf25",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The current structures contrast with the Atherton et al. (2014) study, which did not identify an open nucleotide cleft or subdomain twisting in the no-nucleotide state, likely due to lower resolution (6-7 \u00c5 vs 5-6 \u00c5), different refinement methods, and additional a priori assumptions in their analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 provide a critical comparison with concurrent work. The differences are attributed to methodological factors: improved resolution (C59), explicit solvation in MDFF (C60), and different fitting approaches (C61). While claim C61 is somewhat speculative, the comparison is fair and the methodological differences are clearly documented. The improved resolution allowing visualization of P-loop features (C59) is supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "f6ccfd55-e8ec-44d3-b406-d0236d41db6b",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The structural transitions in kinesin are reminiscent of myosin and F1-ATPase, revealing new parallels where the conserved 'linchpin' asparagine in myosin interacts with an internal tyrosine rather than the filament, potentially explaining why myosin shows strong catalytic activity without its partner filament.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C62-C64 draw mechanistic parallels with other motor proteins. The similarities in active site rearrangements are supported by structural comparison (Figure 4\u2014figure supplement 1). The differences in linchpin interactions (C63-C64) are based on structural knowledge and provide a plausible explanation for functional differences between kinesin and myosin, supported by citation (Geeves and Holmes, 2005).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "d2e18448-292d-40d4-9dda-0a832932aaa9",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A concurrently published X-ray crystal structure of no-nucleotide kinesin complexed with tubulin dimer (Cao et al., 2014) shows excellent agreement with the current model (backbone RMSD 1.28 \u00c5) and is fully consistent with the proposed mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 provide independent validation of the no-nucleotide structure from an X-ray crystallography study. The low RMSD (1.28 \u00c5) indicates excellent agreement between the cryo-EM-derived model and the X-ray structure, strengthening confidence in the structural findings. This represents strong orthogonal validation of the key structural features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "5c312487-c577-4f65-b785-759bfee134f8",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information establishes that kinesin is a superfamily of ATP-driven microtubule motors with >20 members involved in mitosis, that dimeric kinesin-1 takes alternating 8 nm steps along protofilaments, cycling between strong (no-nucleotide, ATP) and weak (ADP) microtubule-binding states, with ATP binding causing neck linker docking and cargo translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 provide established background knowledge supported by appropriate citations (Rath and Kozielski, 2012; Gennerich and Vale, 2009; Rice et al., 1999). These are well-established facts in the field and provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "982d4241-7cd5-4f18-9813-fc07bbe7c87b",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multi-reference analysis of cryo-EM data established that 14-protofilament microtubules outnumbered 13-protofilament by approximately 3:1 in the samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is a straightforward methodological observation from multi-reference analysis of the cryo-EM data. This information is important for understanding the sample composition and reconstruction strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    },
+    {
+      "id": "5c5a6a86-ed70-4416-86fb-4f366e4c44d8",
+      "content_id": "139b230e-44da-4aaf-87a0-dfd3ff3abc9b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The N255K mutant is incapable of maintaining a fixed orientation on the microtubule surface, with flexibility in the mutant-microtubule contact allowing affinity maintenance even with open switch loops, but failure to close switch loops leads to loss of microtubule-stimulated ADP release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 interpret the N255K mutant data. Claim C47 is supported by cryo-EM showing rotational mobility. Claim C48 is somewhat speculative but reasonable given the structural and kinetic data. Claim C49 is consistent with the kinetic measurements (C27, C45). The interpretation is logical and consistent with the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:52:37.173131Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eba6b03a-58ef-44ae-a6a0-756ec9ee0575",
+      "result_id": "0a7e585f-5081-4c96-9e65-4fd56af9b446"
+    },
+    {
+      "claim_id": "552e221b-ca65-4361-8e64-97a05fab2326",
+      "result_id": "0a7e585f-5081-4c96-9e65-4fd56af9b446"
+    },
+    {
+      "claim_id": "979b0291-5e1e-47b4-995e-2744ba5860ff",
+      "result_id": "0a7e585f-5081-4c96-9e65-4fd56af9b446"
+    },
+    {
+      "claim_id": "eaee17bd-bbc3-45fe-a099-21cd09b0c6b0",
+      "result_id": "0a7e585f-5081-4c96-9e65-4fd56af9b446"
+    },
+    {
+      "claim_id": "d3fc393e-f7a5-42c6-9923-e8b2cb711da1",
+      "result_id": "64045ee2-e4cb-4e9a-9d7b-6afe7c33eef1"
+    },
+    {
+      "claim_id": "733d62a5-b507-42b4-aae0-88f38788d886",
+      "result_id": "64045ee2-e4cb-4e9a-9d7b-6afe7c33eef1"
+    },
+    {
+      "claim_id": "2e6e57d9-b09c-459b-aca1-a9a0ead3ff56",
+      "result_id": "64045ee2-e4cb-4e9a-9d7b-6afe7c33eef1"
+    },
+    {
+      "claim_id": "1575424d-7404-40d1-83c4-ffff74bbe61c",
+      "result_id": "64045ee2-e4cb-4e9a-9d7b-6afe7c33eef1"
+    },
+    {
+      "claim_id": "8f31cfe9-cd71-4c59-8ee2-25d5f1a71e21",
+      "result_id": "4c816491-3d42-42b4-a3cd-64db40c346a9"
+    },
+    {
+      "claim_id": "f100f508-026c-4139-93b8-d850e96615da",
+      "result_id": "4c816491-3d42-42b4-a3cd-64db40c346a9"
+    },
+    {
+      "claim_id": "f6506ecd-c5a2-4a41-b4f4-258878336fd4",
+      "result_id": "4c816491-3d42-42b4-a3cd-64db40c346a9"
+    },
+    {
+      "claim_id": "5cd056d4-0881-48ab-8f72-669bde71ba2c",
+      "result_id": "4c816491-3d42-42b4-a3cd-64db40c346a9"
+    },
+    {
+      "claim_id": "f0b1ab6f-e66f-414f-8943-c1d1c77d394a",
+      "result_id": "4c816491-3d42-42b4-a3cd-64db40c346a9"
+    },
+    {
+      "claim_id": "d1144fac-00ce-4db3-9321-f9467defe798",
+      "result_id": "4c816491-3d42-42b4-a3cd-64db40c346a9"
+    },
+    {
+      "claim_id": "36a86423-c519-4040-aa45-967269352118",
+      "result_id": "768fb389-80b7-44c8-9bed-85d2a12972e8"
+    },
+    {
+      "claim_id": "c669f635-26ca-435a-89ad-ea4d59011457",
+      "result_id": "768fb389-80b7-44c8-9bed-85d2a12972e8"
+    },
+    {
+      "claim_id": "97be368d-520d-4ad9-b967-1f4a0490440e",
+      "result_id": "768fb389-80b7-44c8-9bed-85d2a12972e8"
+    },
+    {
+      "claim_id": "935755b6-14d4-4453-b009-b36929143aed",
+      "result_id": "768fb389-80b7-44c8-9bed-85d2a12972e8"
+    },
+    {
+      "claim_id": "a83e588a-2f15-4f45-add4-6ec05e237c31",
+      "result_id": "768fb389-80b7-44c8-9bed-85d2a12972e8"
+    },
+    {
+      "claim_id": "d93fca51-7b9a-4339-a07f-af6c77a4ed5f",
+      "result_id": "768fb389-80b7-44c8-9bed-85d2a12972e8"
+    },
+    {
+      "claim_id": "9d8192f1-77ee-426a-a96c-5c887db9b5b2",
+      "result_id": "a33af879-f3de-47a7-b217-afbb85ff767f"
+    },
+    {
+      "claim_id": "81e1e374-f8bc-4792-999e-9688d2ba2365",
+      "result_id": "a33af879-f3de-47a7-b217-afbb85ff767f"
+    },
+    {
+      "claim_id": "bed8c064-3a75-464f-a821-77297b961b6c",
+      "result_id": "a33af879-f3de-47a7-b217-afbb85ff767f"
+    },
+    {
+      "claim_id": "fd7a3262-a74b-4a64-be4c-2be99e1b3752",
+      "result_id": "a33af879-f3de-47a7-b217-afbb85ff767f"
+    },
+    {
+      "claim_id": "ef1bf97a-df8a-425f-a749-5a4b7b662b1f",
+      "result_id": "a33af879-f3de-47a7-b217-afbb85ff767f"
+    },
+    {
+      "claim_id": "1d3b2d18-02f3-4ff0-a311-b106b51dd3c2",
+      "result_id": "a33af879-f3de-47a7-b217-afbb85ff767f"
+    },
+    {
+      "claim_id": "2f7a38f5-73d8-4818-bef1-e7972e1971b9",
+      "result_id": "94e23038-7210-47f9-b85e-268bcee306f1"
+    },
+    {
+      "claim_id": "409b939d-2467-4883-bb22-c176f592dcea",
+      "result_id": "94e23038-7210-47f9-b85e-268bcee306f1"
+    },
+    {
+      "claim_id": "3039ce4a-bf61-45b3-9f02-a434c068090e",
+      "result_id": "806c05c2-b931-4400-b2da-ae154b1953f2"
+    },
+    {
+      "claim_id": "e0eb3230-a357-4e6e-93b4-744eb4268982",
+      "result_id": "806c05c2-b931-4400-b2da-ae154b1953f2"
+    },
+    {
+      "claim_id": "2e8b2de8-9405-474d-bda4-c65534154c48",
+      "result_id": "806c05c2-b931-4400-b2da-ae154b1953f2"
+    },
+    {
+      "claim_id": "c23c2861-99f8-4a3c-9a0d-d141bb60dac6",
+      "result_id": "806c05c2-b931-4400-b2da-ae154b1953f2"
+    },
+    {
+      "claim_id": "77cc76e7-d2ca-45d9-baab-faf6f8a449b3",
+      "result_id": "806c05c2-b931-4400-b2da-ae154b1953f2"
+    },
+    {
+      "claim_id": "1304d29c-b4d4-4b12-a24b-dbae10f66dc3",
+      "result_id": "806c05c2-b931-4400-b2da-ae154b1953f2"
+    },
+    {
+      "claim_id": "55f14724-8363-41ce-a945-6a66f350f5e6",
+      "result_id": "806c05c2-b931-4400-b2da-ae154b1953f2"
+    },
+    {
+      "claim_id": "ac32c09d-203f-4c5f-9c34-4923403d0324",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "81278f37-0f9c-41d2-a86d-a990615915ce",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "e0607046-0b78-41ed-9337-b3342cadff63",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "68262105-3f92-4b20-99a1-30eb245c51a1",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "878711b8-4c1d-4ac5-8c9c-ff66169e97a2",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "f72ec527-375f-45b2-9172-6969f6b43ca2",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "30d863a3-ba9f-4efa-9e31-379f65957072",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "929d2088-e6e0-4585-b57d-77b86a3d2498",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "76b6b0a9-3625-4d43-8ff2-307c0cf25f8f",
+      "result_id": "81a93604-a476-4816-8fff-c681fc254faa"
+    },
+    {
+      "claim_id": "4eeb6e5d-5b14-4bbb-ba33-85957123e42d",
+      "result_id": "beefce97-96b4-4fb6-86ca-b14e4a72cf25"
+    },
+    {
+      "claim_id": "605242fd-67d5-4038-9990-60f16c5bc31f",
+      "result_id": "beefce97-96b4-4fb6-86ca-b14e4a72cf25"
+    },
+    {
+      "claim_id": "3bd7c2e2-47f6-40bd-82b2-d0a613e8fe39",
+      "result_id": "beefce97-96b4-4fb6-86ca-b14e4a72cf25"
+    },
+    {
+      "claim_id": "e27dff7c-9b59-47a5-9f28-839257ea92a6",
+      "result_id": "beefce97-96b4-4fb6-86ca-b14e4a72cf25"
+    },
+    {
+      "claim_id": "e6c81e5a-5689-4972-94d2-3c378c97ed43",
+      "result_id": "beefce97-96b4-4fb6-86ca-b14e4a72cf25"
+    },
+    {
+      "claim_id": "92783f0c-530c-4efd-8d0c-9faf008132dc",
+      "result_id": "beefce97-96b4-4fb6-86ca-b14e4a72cf25"
+    },
+    {
+      "claim_id": "27f6e624-7a55-4f1c-8843-bcccfb1fba46",
+      "result_id": "f6ccfd55-e8ec-44d3-b406-d0236d41db6b"
+    },
+    {
+      "claim_id": "8e1a11ee-0242-4557-b490-97e22bc310c6",
+      "result_id": "f6ccfd55-e8ec-44d3-b406-d0236d41db6b"
+    },
+    {
+      "claim_id": "b398d4b2-ac52-4e4e-bbab-35f5b40ea13d",
+      "result_id": "f6ccfd55-e8ec-44d3-b406-d0236d41db6b"
+    },
+    {
+      "claim_id": "cf25baf5-05f6-4b2b-97b3-89e7b37f1fe2",
+      "result_id": "f6ccfd55-e8ec-44d3-b406-d0236d41db6b"
+    },
+    {
+      "claim_id": "0a88e2c7-3b8b-4a61-8546-b5c169f8e8b7",
+      "result_id": "d2e18448-292d-40d4-9dda-0a832932aaa9"
+    },
+    {
+      "claim_id": "31ffa1c2-e5e4-4b12-94c9-1d37d5244432",
+      "result_id": "d2e18448-292d-40d4-9dda-0a832932aaa9"
+    },
+    {
+      "claim_id": "941be8b3-1097-4c8f-bc51-6c109f045781",
+      "result_id": "5c312487-c577-4f65-b785-759bfee134f8"
+    },
+    {
+      "claim_id": "bb4c57be-c84a-4919-a44b-19be7c1b949f",
+      "result_id": "5c312487-c577-4f65-b785-759bfee134f8"
+    },
+    {
+      "claim_id": "72f773ac-7a25-4d28-bc30-10824b20a7b6",
+      "result_id": "5c312487-c577-4f65-b785-759bfee134f8"
+    },
+    {
+      "claim_id": "e2cc9ad7-8320-486d-a073-606460735b61",
+      "result_id": "5c312487-c577-4f65-b785-759bfee134f8"
+    },
+    {
+      "claim_id": "f29371bf-1024-4448-9afd-86b7557d984f",
+      "result_id": "5c312487-c577-4f65-b785-759bfee134f8"
+    },
+    {
+      "claim_id": "4c6aa751-4df0-4c9f-aa0f-2df204dd993e",
+      "result_id": "5c312487-c577-4f65-b785-759bfee134f8"
+    },
+    {
+      "claim_id": "a74ff2bc-d362-44d5-8716-c211ba79380c",
+      "result_id": "982d4241-7cd5-4f18-9813-fc07bbe7c87b"
+    },
+    {
+      "claim_id": "de237327-8378-444c-a349-70aa42c9d521",
+      "result_id": "5c5a6a86-ed70-4416-86fb-4f366e4c44d8"
+    },
+    {
+      "claim_id": "0b0c1e76-3186-4452-9491-6baeb3666665",
+      "result_id": "5c5a6a86-ed70-4416-86fb-4f366e4c44d8"
+    },
+    {
+      "claim_id": "a0b3b904-74f5-40a8-afcc-0ccca1e7e3fd",
+      "result_id": "5c5a6a86-ed70-4416-86fb-4f366e4c44d8"
+    }
+  ],
+  "comparisons": []
+}

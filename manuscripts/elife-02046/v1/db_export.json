@@ -1,0 +1,2018 @@
+{
+  "submission": {
+    "id": "b4ac2b1d-a25f-4076-91f9-38648ffa81a7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:10:13.730817Z",
+    "updated_at": "2025-11-28T20:10:13.730817Z"
+  },
+  "content": [
+    {
+      "id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "submission_id": "b4ac2b1d-a25f-4076-91f9-38648ffa81a7",
+      "content_type": "manuscript",
+      "content_text": "# Essential role of lncRNA binding for WDR5 maintenance of active chromatin and embryonic stem cell pluripotency\n\n## Authors\n\n- Yul W Yang<sup>1</sup>\n- Ryan A Flynn<sup>1</sup>\n- Yong Chen<sup>3</sup>\n- Kun Qu<sup>1</sup>\n- Bingbing Wan<sup>3</sup>\n- Kevin C Wang<sup>1</sup>\n- Ming Lei<sup>3</sup>\n- Howard Y Chang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States\n2. Program in Epithelial Biology Stanford University School of Medicine Stanford United States\n3. Department of Biological Chemistry University of Michigan Ann Arbor United States\n4. Howard Hughes Medical Institute, University of Michigan Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe WDR5 subunit of the MLL complex enforces active chromatin and can bind RNA; the relationship between these two activities is unclear. Here we identify a RNA binding pocket on WDR5, and discover a WDR5 mutant (F266A) that selectively abrogates RNA binding without affecting MLL complex assembly or catalytic activity. Complementation in ESCs shows that WDR5 F266A mutant is unable to accumulate on chromatin, and is defective in gene activation, maintenance of histone H3 lysine 4 trimethylation, and ESC self renewal. We identify a family of ESC messenger and lncRNAs that interact with wild type WDR5 but not F266A mutant, including several lncRNAs known to be important for ESC gene expression. These results suggest that specific RNAs are integral inputs into the WDR5-MLL complex for maintenance of the active chromatin state and embryonic stem cell fates.\n\n## Introduction\n\nAn orchestra of chromatin readers, writers, and erasers act on diverse covalent histone modifications to establish particular cell fates (Rando and Chang, 2009). By maintaining such histone modifications through cell divisions, the cell state can then be epigenetically transferred from generation to generation, eventually establishing tissues and complex organisms. Histones are modified by large protein complexes with multiple coenzymes that modulate and regulate catalytic activity, thus allowing fine regulation of histone marks.\n\nHistone H3 lysine 4 trimethylation (H3K4me3) is a mark of transcriptionally active chromatin, generated through the catalytic activity of the MLL family of proteins. The MLL family of H3K4 methylases are evolutionarily conserved (known as COMPASS in yeast and trithorax in Drosophila) (Smith et al., 2011), and MLL translocations are an important cause of human leukemias (Meyer et al., 2009). Members of the MLL family encode single SET domain-containing H3K4 methylases, and are associated with WDR5, Ash2L, RbBP5, and additional proteins to regulate activity. Of the various cofactors that regulate MLL activity, WDR5 is a particularly important multifunctional adaptor protein that can discriminate posttranslational modifications on histone tails, as well as bind to the MLL complex to regulate gene activation (Wysocka et al., 2005; Migliori et al., 2012). WDR5 is particularly important for mammalian embryonic stem cell (ESC) self renewal and maintenance of active chromatin for pluripotency genes, and WDR5 is required for efficient generation of induced pluripotent stem cells from differentiated somatic cells (Ang et al., 2011; Li et al., 2012).\n\nWDR5 has recently been shown to bind individual long noncoding RNAs (lncRNAs) (Wang et al., 2011; Gomez et al., 2013). LncRNAs are capped, spliced, polyadenylated RNA transcripts ranging from several hundred to kilobases in length (Derrien et al., 2012; Rinn and Chang, 2012). Specific lncRNAs bind repressive or activating chromatin modification complexes, and localize these activities to specific gene loci (reviewed by Wang and Chang (2011)). For example, the lncRNA XIST binds the Polycomb Repressive Complex 2 (PRC2) to cause histone H3 lysine 27 trimethylation and silence the X chromosome for dosage compensation in females (Morey and Avner, 2011). As another example, the lncRNA HOTAIR acts as a molecular scaffold, binding both PRC2 and the H3K4 demethylase LSD1 complex to silence hundreds of loci throughout the genome (Rinn et al., 2007; Gupta et al., 2010; Tsai et al., 2010; Chu et al., 2011). Additional lncRNAs can bind to messenger RNAs to control their decay via interaction with the Staufen 1 protein (Gong and Maquat, 2011; Kretz et al., 2013).\n\nIn contrast, several lncRNAs bind to WDR5 to facilitate H3K4me3 and epigenetic activation. HOTTIP is an enhancer-like lncRNA of the human HOXA locus that coordinates expression of HOXA9 to HOXA13, which are important for distal identity (Wang et al., 2011). HOTTIP RNA directly binds to the WDR5 protein to recruit the MLL H3K4 methylase complex to maintain H3K4me3. In addition, recent research has shown that the NeST lncRNA also binds WDR5 to upregulate IFN-\u03b3 expression through H3K4me3 (Gomez et al., 2013), suggesting the existence of multiple different enhancing lncRNAs that function via WDR5 interactions. Many enhancers and promoters often produce lncRNAs, and some of these lncRNAs have enhancer-like functions in the activation of nearby genes by binding the Mediator complex (Kim et al., 2010; Orom et al., 2010; Hung et al., 2011; Rada-Iglesias et al., 2011; Lai et al., 2013). Currently, it is believed that lncRNAs function by guiding localization of chromatin modification machinery as simple scaffolds. However, like coenzymes that modulate protein activity, it is possible that lncRNAs may affect protein function more directly.\n\nTo examine the roles of RNA binding on WDR5 functionality, here we identify a RNA binding site on WDR5, and characterized its function in vitro and in vivo. Inability to bind RNAs does not affect MLL complex formation or catalytic activity in vitro. However, ability to bind RNAs is crucial for WDR5 function in cells. We find that WDR5 binds over a thousand endogenous RNAs and that RNA binding is essential for WDR5 maintenance of ESC pluripotency. Inability to bind RNAs greatly reduced duration of WDR5 protein and its occupancy on chromatin, impaired global H3K4me3 levels, and reduced expression of genes required for embryonic stem cell state. Overall, these results suggest an unexpected role for RNA binding in regulating the lifespan of epigenetic fates.\n\n## Results\n\n### Discovering the lncRNA binding interface on WDR5\n\nTo determine the lncRNA binding site, we performed alanine scanning mutagenesis of WDR5, guided by its crystal structure (Trievel and Shilatifard, 2009; Odho et al., 2010; Avdic et al., 2011) (Figure 1A,B). WDR5 is a barrel-shaped protein with several charged clefts on its surface, several of which are known to mediate protein\u2013protein interactions with MLL, histone H3 tail, or RbBP5 (Figure 1A, Figure 1\u2014figure supplement 1A,B). We generated 19 WDR5 point mutants, expressed them in Escherichia coli as GST-fusion proteins, and purified them to homogeneity (Figure 1\u2014figure supplement 1C). Four out of 19 mutants significantly reduced the ability to retrieve HOTTIP lncRNA in vitro: Y228A, L240A, K250A, and F266A. These WDR5 mutations defined a cleft between blades 5 and 6, partially encompassing the same surface previously described to bind RbBP5 amino acids 371\u2013381 (Odho et al., 2010; Avdic et al., 2011). Thus, a focal binding site defines the interaction between WDR5 and HOTTIP. To confirm that HOTTIP and RbBP5 bind to the same or overlapping sites on WDR5, we pre-incubated wild type GST-WDR5 with an excess of RbBP5 peptide (amino acids 371\u2013381) or control H3K4me3 peptide (amino acids 1\u201320), and then assayed for HOTTIP binding (Figure 1C). Whereas addition of H3K4me3 peptide had no effect, pre-incubation with RbBP5 peptide prevented HOTTIP binding to WDR5, thus confirming the shared binding cleft.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02046/elife-02046-fig1-v1.jpg)\n\n**Figure 1.:** (A) Crystal structure of WDR5 (PDB:3P4F, visualized with PyMol) reveal that mutations abrogating HOTTIP RNA binding align along a cleft between blades 5 and 6, opposite the H3K4/MLL binding site. This binding surface overlaps the site for RbBP5. Top: schematic of tested and HOTTIP binding mutations. Bottom: magnification of HOTTIP binding cleft. Yellow: MLL peptide. Blue: RbBP5 peptide. (B) qRT-PCR results of indicated GST-WDR5 mutants tested by in vitro assay for binding to HOTTIP RNA or control Histone 1H2BG RNA. (C) RbBP5 peptide competition assay indicates that RbBP5 amino acids 371\u2013381 can fully inhibit HOTTIP binding to WDR5. Wild type data same as in Figure 1B. (D) Average fold pulldown of full length HOTTIP by cell-based native RNA immunoprecipitation of select WDR5 mutants. Top: qRT-PCR results of RNA immunoprecipitation of FLAG-WDR5 mutants. All values are normalized to input, then to FLAG pulldown of wild type and positive control D107A. Negative RNA controls (U1, HOTAIR) and reaction without reverse transcription (-RT) show minimal enrichment (Figure 1\u2014figure supplement 1, data not shown). Bottom: representative western blots of immunoprecipitations.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02046/elife-02046-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) Electrostatic surface contouring of the WDR5 crystal structure (PDB:3P4F, visualized with PyMol) reveal that mutations abrogating HOTTIP RNA binding de_ne an electropositively charged region. Orange: WDR5 residues important for HOTTIP binding. Cyan: MLL peptide. Grey: RbBP5 peptide. (C) Silver stain of post-assay glutathione-bound GST-WDR5 mutants indicates no protein degradation or loading bias occurred during in vitro binding assay. (D) Average levels of input HOTTIP RNA for cell-based native RNA immunoprecipitation assays of WDR5 mutants by qRT-PCR, relative to GAPDH. (E) Average fold pulldown of HOTAIR or U1 control RNAs by cell-based native RNA immunoprecipitation of WDR5, demonstrating no enrichment compared with IgG control.\n\nTo verify the lncRNA binding site in living cells, we conducted in vivo RNA immunoprecipitation (RIP) experiments with select WDR5 mutants in 293T cells (Figure 1D). Whereas the D107A and R181A mutations caused little effect on RbBP5 binding compared with wild type (\u223c95%), the K250 mutation reduced RbBP5 binding (\u223c62.5%) as previously described (Odho et al., 2010; Avdic et al., 2011). Furthermore, the F266A mutation actually increased RbBP5 binding (\u223c120%), suggesting that loss of binding to HOTTIP increases the ability to bind RbBP5. Consistent with the direct in vitro binding assay, both K250A and F266A mutations fully abrogated WDR5 binding to HOTTIP in vivo. In contrast, mutations at D107A and R181A showed minimal effects on WDR5-HOTTIP interactions. K250A and F266A did not affect the accumulation of HOTTIP lncRNA (Figure 1\u2014figure supplement 1D), and both negative controls U1 and HOTAIR did not enrich binding to WDR5 (Figure 1\u2014figure supplement 1E). Taken together, the in vitro and in vivo analyses demonstrate that HOTTIP RNA binds WDR5 through a specific binding pocket.\n\n### A selective mutant reveals the importance of lncRNA binding on WDR5-mediated gene activation\n\nTo pinpoint the functional consequences of a selective lncRNA-binding mutation of WDR5, we further analyzed WDR5 F266A. In contrast to the other HOTTIP binding mutations, WDR5 F266A is defective in lncRNA binding in vitro and in vivo, but without any defects in binding MLL complex subunits RbBP5 or MLL1 in immunoprecipitation experiments (Figure 1D). We reasoned that the F266A mutation offered an experimental strategy to isolate the requirement of lncRNA binding for WDR5 function.\n\nTo confirm the lncRNA selectivity of the F266A mutation, we examined its effects on MLL complex structure and catalytic activity in vitro. As seen by isothermal calorimetry, the F266A mutation minimally affects the affinity of WDR5 for RbBP5, MLL1, or H3 peptides, in contrast to the Y228A mutation (RbBP5 binding defective) or D107A mutation (MLL1 and H3 binding defective) (Figure 2A). This was further confirmed using GST protein pull down assays, in which GST-WDR5 F266A displays no deficits in binding RbBP5, Ash2L, and MLL1 purified proteins (Figure 2B). Finally, in contrast to the MLL1/H3 or RbBP5 binding mutants, the F266A mutation did not significantly decrease in vitro MLL1 complex methylase activity compared to wild type (Figure 2C). Thus, the F266A mutation appears to singularly affect lncRNA binding, without altering MLL complex structure or catalytic activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02046/elife-02046-fig2-v1.jpg)\n\n**Figure 2.:** (A) WDR5 binding affinity to RbBP5, MLL1, or H3 peptides by isothermal calorimetry. ND, not detectable. (B) WDR5 F266A does not have decreased binding to RbBP5, Ash2L and MLL1SET domain proteins in GST protein pull down assays. (C) WDR5 F266A does not affect histone methylase activity of the MLL1 complex. (D) GAL4-WDR5 F266 is defective in activating luciferase expression, as seen in luciferase titration tests.\n\nTo test the effects of the F266A mutation on gene activation in cells, we transfected increasing amounts of plasmids encoding GAL4-WDR5 WT or GAL4-WDR5 F266A to activate luciferase reporter gene expression (Figure 2D), as previously described (Wysocka et al., 2005). Surprisingly, WDR5 F266A demonstrated a severe defect in luciferase gene activation, requiring >100-fold transfected plasmid compared with wild type to achieve similar reporter gene activity. Thus, even though the WDR5 F266A mutation can bind the full MLL complex and does not affect catalytic activity, the inability to bind lncRNAs strongly compromises WDR5 function in activating gene expression by reporter gene assay.\n\n### lncRNA binding to WDR5 is essential for protein stability and H3K4 trimethylation in embryonic stem cells\n\nWDR5 has been recently shown to be required to maintain H3K4 trimethylation (H3K4me3) in mouse embryonic stem cell (ESC) genes for pluripotency and self renewal (Ang et al., 2011). To test whether WDR5 requires lncRNA binding for physiologic activity, we created \u2018rescue\u2019 complementation ESC lines that replace endogenous mouse WDR5 with either wild type human WDR5 or F266A mutant WDR5 (Figure 3A). ESCs were infected by lentiviruses containing two tandem gene expression cassettes (Ang et al., 2011). The first cassette constitutively expresses a highly efficient shRNA to repress endogenous mouse WDR5. WDR5 deficiency is rescued by the second cassette, in which human WDR5 wild type (WT) or human WDR5 F266A linked to GFP is expressed under control of a doxycycline (dox)-inducible promoter. In the presence of dox, the ability of WDR5 mutant to support ESC self renewal can be compared; upon dox withdrawal, the half-life of the mutant protein and its regulatory impact are further revealed.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02046/elife-02046-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of lentiviral vectors, modified from (Ang et al., 2011). (B) Western blot demonstrating successful mouse WDR5 knockdown. (C) qRT-PCR results demonstrating equal RNA expression of human WDR5 WT and WDR5 F266A. (D) Western blot of WDR5 WT and WDR5 F266A protein expression, also with 4 days after doxycycline removal. (E) WDR5 F266A is defective in nuclear accumulation, compared with WDR5 WT. (F) WDR5 F266A reduces chromatin association, as seen in chromatin isolation experiments. (G) WDR5 F266A mutation decreases protein stability in the nucleus after doxycycline withdrawal. Both WDR5 WT and WDR5 F266A are similarly unstable in the cytoplasmic fraction.\n\nGFP+ cells were sorted using consistent fluorescence parameters, cultured for 4 days in the presence (+dox) and absence (\u2212dox) of doxycycline, and then analyzed by western blot and qRT-PCR. As expected, both cell lines demonstrated similar knockdown of endogenous mouse WDR5 (Figure 3B), with equal transcription of exogenous human WDR5 RNA (Figure 3C). Unexpectedly, more human WDR5 WT protein was present when compared with human WDR5 F266A (Figure 3D). In WDR5 WT ESCs, promoter shutoff of WDR5 resulted in \u223c50% reduction of H3K4me3 (Lanes 1 and 2), as previously reported (Ang et al., 2011). Interestingly, ESCs harboring WDR5 F266A displayed a similar global 50% reduction of H3K4me3 (Lane 3), although WDR5 F266A protein was expressed at lower levels. In addition, promoter shutoff of WDR5 F266A caused a drastic >80% reduction of H3K4me3 levels (Lanes 3 and 4). Thus, WDR5 F266A exhibits a striking inability to maintain global H3K4me3 levels.\n\nWe more closely examined the subcellular localization of WDR5 WT and WDR5 F266A, and found that WDR5 F266A was depleted in both nuclear (Figure 3E) and chromatin fractions (Figure 3F). The alteration in cellular distribution of WDR5 F266A can be explained by differential stability in nuclear vs cytoplasmic pools, or alternatively, by a role of F266 in directly controlling nuclear localization. We believe that the former is the correct explanation based on the fact that fusion of F266A to a strong nuclear localization signal (GAL4 DNA binding domain) did not rescue its function (Figure 2D).\n\nTo further assess WDR5 protein stability directly, we conducted pulse chase experiments using doxycycline withdrawal to shutoff FLAG-hWDR5 transcription, and followed the fate of pre-existing WDR5 WT or F266A protein in the nucleus and cytoplasm (Figure 3G). We found that in the cytoplasm, both WDR5 WT and F266A have equally short half-lives of less than 12 hr. In contrast, nuclear WDR5 WT persists for up to 24 hr, but WDR5 F266A is turned over at least 12 hr sooner (Figure 3G). Thus, ability to bind lncRNAs appears to be essential for WDR5 protein stability, suggesting a RNA-mediated post-translational regulation of WDR5.\n\n### Over 1000 ESC RNAs bind WDR5\n\nOur in vitro and in vivo data characterizing the WDR5 F266A mutant suggest that RNA binding is an important aspect of WDR5\u2019s cellular function, however currently only two RNAs have been identified as WDR5 partners. To close this gap, we identified WDR5\u2013bound RNAs in the ESC transcriptome. We tested UV-crosslinking with PAR-CLIP, but found that WDR5-RNA interactions have poor inherent UV crosslinking ability. We also found that standard RNA immunoprecipitation (RIP) with FLAG epitope gave substantial background that hampered data interpretation. We then turned to RNA:protein immunoprecipitation in tandem (RIPiT), a method designed to identify RNA targets of RBP complexes with poor UV linking capacity (Singh et al., 2013). Specifically, we fused tandem FLAG and hemagglutinin (HA) tags to wild type WDR5 or the F266A mutant. We established ESC lines expressing FLAG-HA tagged version of WT and F266A WDR5 at near endogenous expression levels, and FPLC analysis confirmed that both tandem-tagged WDR5 proteins quantitatively formed equivalent MLL-WDR5 protein complexes with endogenous subunits (Figure 4\u2014figure supplement 1A,B).\n\nWe performed RIPiT-seq with tandem immunopurified FLAG-HA-tagged WDR5 from formaldehyde crosslinked ESCs. To afford high stringency to the data, we searched for RNAs that were enriched in the WDR5 WT but not in the mock infected or WDR5 F266A datasets. WDR5 WT, but not F266A or control, is associated with 1434 RNAs, comprised of mRNAs, lncRNAs, pri-miRNAs, and snoRNAs (Figure 4A,B). Thus, a family of ESC RNAs bind WDR5 through the same surface as HOTTIP enhancer-like RNA that act in other cell types, dramatically expanding the known RNA targets of WDR5. WDR5 binds to 23 previously identified ESC lncRNAs (Guttman et al., 2011; Ulitsky et al., 2011; Ng et al., 2012; Sheik Mohamed et al., 2010). Importantly, six lncRNA partners of WDR5 have been shown to be required for ESC pluripotency or differentiation when individually depleted by shRNAs (Figure 4B, lncRNAs with ESC phenotype in orange) (Guttman et al., 2011). Prior protein interaction surveys with repressive chromatin modification complexes had failed to identify partners for these lncRNAs except lincRNA-1592 (Guttman et al., 2011), and their interaction with WDR5-MLL provides an explanation for their functions in ESC biology.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02046/elife-02046-fig4-v1.jpg)\n\n**Figure 4.:** (A) WDR5 RIPiT-seq retrieves diverse class of RNAs. (B) 1434 RNAs bind to wild type WDR5 but not F266A mutant or vector control. Each column is a RIPiT-seq experiment; each row is a transcript. Red indicates enrichment over input and WDR5 F266A mutant. Known ESC lncRNAs are listed; those with known functions in ESC pluripotency or differentiation are highlighted in orange. Two lincRNA loci that are both bound by WDR5 on chromatin and generate lincRNAs that bind WDR5 are highlighted in orange bold font. (C) Overlap of genes retrieved by WDR5 RIPiT-seq vs ChIPseq. (D) Metagene analysis of WDR5 ChIP-seq signal in the indicated classes of genes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02046/elife-02046-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Western blot analysis of individually isolated ESC clones. antiWDR5 blotting reveals the total expression level of WDR5 in mock, FH-WDR5 wild type, and FH-WDR5 F266A mutant ESCs. The FH tag adds \u223c8 kDa to WDR5, resulting in the observed shift, where as the F266A sees no shift because the construct is N-terminally shorter. Orange boxes are draw around clones that were isolated and used in the RIPiT experiments due to their near endogenous expression level. (B) FPLC analysis of the selected wild type and F266A FH-WDR5 clones. Each fraction was subjected to western blot analysis for HA (tagged protein), WDR5, Ash2L, and RbBP5. Orange boxes appear around the endogenous large molecular weight MLL complex, where the majority of the tagged FH-WDR5 constructs elute.\n\nPrevious reports of RNA-WDR5 interaction suggest the possibility for both cis-acting tethering and trans-acting mechanisms (Wang et al., 2011; Gomez et al., 2013). To investigate whether and how these mechanisms are utilized genome-wide, we compared RNA interactors of WDR5 identified by RIPiT-seq vs chromatin occupancy sites of WDR5 identified by ChIP-seq. Ang et al. (2011) reported 9303 genes that are bound by WDR5 and other trithorax group proteins in ESCs with high confidence, and 590 of these loci produced RNAs that physically interacts with WDR5 (Figure 4C). Restricting the analysis to the top quintile of WDR5-bound promoters still showed very limited overlap (100 out of 1849 promoters produce RNAs that also bind WDR5). Plotting average WDR5 ChIP-seq signal at ChIP-seq only or genes with both ChIP-seq and RIPiT-seq signal revealed that their WDR5 binding profiles are indistinguishable, highlighting the value of the RIPiT data set to reveal RNA involvement (Figure 4D). In contrast, the class of genes with RIPiT signal only had substantially lower WDR5 chromatin occupancy at their promoters (Figure 4D); one or more of these RNAs may be decoys that remove WDR5 from cognate loci.\n\nThe RNAs that both bind to WDR5 and have strong WDR5 ChIP-seq signal at their promoters are candidates for additional cis regulators of WDR5 recruitment. Two such lncRNAs, lincRNA-1552 and lincRNA-1592, were shown to previously impact ESC biology, and lincRNA-1552 is a key node in the pluripotency gene regulatory network. Depletion of lincRNA-1552 led to mis-expression of \u223c100 mRNAs including Nanog and Pou5f1, and the promoter of linc-1552 is bound by Pou5f1, Klf4, Nanog, Zfx, n-Myc, and c-Myc (Guttman et al., 2011), suggesting a positive feedback loop has been described for other ESC lncRNAs (Sheik Mohamed et al., 2010). Further, the expression of linc-1552 is repressed by retinoic acid-induced ESC differentiation (Guttman et al., 2011). This example highlights of how WDR5 can interact with a lincRNA important to ESC core transcription factor circuitry to control ESC pluripotency. Additionally, a previously reported screen in ESCs identified 901 protein-coding genes important for ESC pluripotency, and 23 of the corresponding mRNAs were enriched in WDR5 RIPiT-seq, including Myc and Bmp4 mRNAs (Ivanova et al., 2006) (Supplementary file 1). Our results also imply many ESC promoters can recruit WDR5 by mechanisms independent of RNA, consistent with other reports (Ang et al., 2011; Jiang et al., 2011). The discovery of many RNAs that bind WDR5 but not at its cognate genomic loci suggests that some WDR5-binding RNAs do not bind WDR5 as nascent transcripts, but only interact with WDR5 at a later stage of maturation and possibly for action in trans. Thus, WDR5 binds over 1400 endogenous RNAs in ESCs with potential for both cis and trans chromatin regulation.\n\n### RNA binding to WDR5 is essential for maintenance of embryonic stem cell fate\n\nLoss of RNA binding also impacts the ability of WDR5 to promote ESC self-renewal. (Figure 5A,B). In WDR5 WT ESCs, promoter shut-off caused a \u223c50% reduction in the number of alkaline phosphatase-positive colonies, a specific indicator of ESC state. Notably, F266A WDR5 ESCs grown in the presence of doxycycline displayed a similar \u223c50% reduction in colony number. By morphology, both WDR5 WT ESCs\u2013dox and WDR5 F266A ESCs +dox formed similar small, partially differentiated colonies. Doxycycline withdrawal in WDR5 F266A ESCs caused a >90% reduction in number of colonies, with the majority of cells forming clusters of fully differentiated alkaline phosphatase-negative cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02046/elife-02046-fig5-v1.jpg)\n\n**Figure 5.:** (A and B) Alkaline phosphatase staining and morphology of ESC colonies after 6 days growth in conditions specified. WDR5 F266A demonstrates reduced alkaline phosphatase positive colonies with increased differentiation compared with wild type. (A) Representative wells and colony morphology. Scale bar represents 200 \u03bcm. (B) Quantitation of colonies per well. (C) Microarray data reveal that both WDR5 F266A +dox and WDR5 WT \u2212dox displayed loss of self renewal genes. WDR5 F266A +dox further demonstrates increased expression of ectodermal and mesodermal markers. Mixl1 is a mesendoderm marker indicative of potential for both endoderm and mesoderm. (D and E) qRT-PCR validation of (D) reduced expression of ESC pluripotency genes and (E) ectopic expression of differentiation genes with either WDR5 F266A expression or shutoff of WDR5 WT. qRT-PCR values were first normalized to the housekeeping gene beta-actin, then normalized to WT. Mean +/\u2212 SD are shown.\n\nWDR5 directly binds to the chromatin of key genes required for in ESC self renewal (Ang et al., 2011). Genome-wide expression profiling further confirmed that WDR5 F266A was unable to sustain the gene expression program associated with ESC self-renewal and pluripotency, and instead allowed ectopic expression of genes indicative of ectodermal and mesodermal lineages (Figure 5C). Validation of microarray results by qRT-PCR further demonstrated that ESCs expressing WDR5 F266A had significantly reduced mRNA levels of pluripotency regulators Pou5f1, Nanog, Sox2, and Esrrb, but upregulation of differentiation markers Cdx2, Fgf5, and Nestin (Figure 5D,E).\n\n## Discussion\n\n### Identification of a WDR5-RNA interface\n\nGuided by the crystal structure and comprehensive mutagenesis, we identified the lncRNA binding cleft in WDR5. WDR5 is a multifunctional adaptor protein that can interact with multiple subunits of the MLL complex, such as MLL itself and RbBP5, as well as with regulators and substrates of the complex, such as HOTTIP and histone H3 arginine 2 symmetric demethylation (H3R2me2s) (Migliori et al., 2012). The MLL and H3R2me2s share the same binding pocket, and we found that HOTTIP and RbBP5 share a distinct binding pocket. While Pou5f1 has been reported to bind WDR5, we found no difference in the WDR5 F266A lncRNA binding mutant for its interaction with Pou5f1 (data not shown). Nonetheless, these multitudes of interactions suggest that molecular arrangements in this complex may be dynamic and intricate.\n\nBy strategic structure-guided mutagenesis, we identified WDR5 F266A as a mutant that has a specific defect in binding the lncRNA HOTTIP, but does not impact interactions with MLL1, RbBP5, or Ash2L. More importantly, the F266A mutation does not diminish MLL1 complex catalytic activity in vitro. Thus, although HOTTIP and RbBP5 share an overlapping binding pocket, the specific residues required for binding appear fundamentally different. This result is not surprising, given the electrostatic and three dimensional structure differences between peptides vs RNAs. The WDR5 F266A mutant is largely deficient in gene activation in cells, suggesting that direct lncRNA-protein interactions are important for WDR5 function in vivo.\n\n### Requirement of a RNA-binding interface in WDR5 for gene activation in ESC self renewal\n\nWe replaced endogenous WDR5 in mouse ESCs with a RNA binding mutant, WDR5 F266A, and found that the RNA binding interface is critical for the accumulation of nuclear and chromatin WDR5. These results suggest that in addition to their roles in recruiting protein complexes to specific genomic loci, lncRNA binding may also regulate the longevity of their interacting protein complexes (Figure 6). When able to bind RNAs, wild type WDR5 displays a long nuclear and chromatin half-life, thus allowing formation of the MLL1 complex for H3K4me3 and gene activation of ESC pluripotency genes. However, when unable to bind RNAs, WDR5 mutant is rapidly turned over, causing loss of H3K4me3 and reduced expression of pluripotency genes. Thus, RNA binding may directly or indirectly regulate protein turnover for epigenetic regulation. It is possible that WDR5 protein that is not properly complexed or localized on chromatin are degraded by default, or WDR5 degradation may be a regulated mechanism (Nakagawa and Xiong, 2011). In our study, ability to bind RNAs extends WDR5 protein half-life by an additional 12 hr to approximately 24 hr, which starts to approach the time scale of an entire cell division cycle (especially in ESCs). With the extended protein longevity, lncRNAs may then regulate protein occupancy on chromatin during cellular maintenance, as well as aid in transmission of epigenetic regulators across cell generations. In this manner, lncRNAs may play crucial roles in regulating the multigenerational transmission of epigenetic proteins required for maintenance of cell state.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02046/elife-02046-fig6-v1.jpg)\n\n**Figure 6.:** Expressed lncRNAs bind the WDR5 protein to increase protein stabilization on chromatin, which facilitates MLL complex assembly and methyltransferase activity for target gene activation. Without lncRNA binding, WDR5 fails to associate effectively with chromatin and is rapidly degraded.\n\nGiven the dynamic regulation of nucleosome/chromatin mark turnover, protein stability also greatly affects the epigenetic landscape within the cell. Nucleosomes are turned over in a dynamic and regulated fashion at specific genomic loci (Dion et al., 2007; Mito et al., 2007; Deal et al., 2010), and histone tails can be proteolyzed during differentiation to erase prior histone modifications (Duncan et al., 2008). In our example, the loss of stabilized WDR5 leads to an inability to maintain global H3K4me3 level, loss of expression of pluripotency regulators, and loss of ESC self renewal. Interestingly, the impact of F266A mutation on H3K4me3 level is modest in steady state conditions, but becomes quite striking with transcriptional shutoff of WDR5. We interpret these results to indicate that WDR5 stability is important for the robustness of the active chromatin state, exemplified by H3K4me3. In the absence of stabilized WDR5, H3K4me3 becomes much more sensitive to fluctuations in the transcriptional levels of WDR5 and likely other subunits of the MLL complex. Thus, these results reveal a new facet for RNA regulation in the connection between protein half-lives and the temporal transmission of epigenetic information via chromatin.\n\n### A family of RNA partners for WDR5-MLL complex\n\nRIPiT-seq reveals nearly 1500 cellular RNAs in ESCs that are associated with WDR5 complex in a manner dependent on the WDR5 RNA binding pocket. These results support and substantially broaden the scope of RNAs that may impact WDR5\u2019s function, including many lncRNAs and mRNAs that collectively may equal the copy number of WDR5 protein. The WDR5 F266A lncRNA-binding deficient mutant provides an ideal reagent to act as nonbinding control in the systematic genome-wide identification of functional WDR5-binding RNAs. Our data find that some of the recent discovered lncRNAs important for ESC self-renewal and pluripotency are associated with WDR5 (Guttman et al., 2011; Chakraborty et al., 2012), including five lncRNAs with ESC phenotypes that do not bind repressive chromatin complexes. However, there are numerous additional RNAs that have not been characterized with respect to cell fate control or chromatin function, and thus suggest additional layers of regulation at the level of lncRNAs. Comparative analysis of genomic locations of WDR5 occupancy and WDR5 RNA binding suggest configurations that are compatible with both cis or trans regulation. Studies of other chromatin modification complexes have shown that a single complex (e.g., PRC2) can interact with thousands of RNAs, each of which can regulate a subset of genes targeted by the complex (Khalil et al., 2009; Zhao et al., 2010). Additionally, promiscuous binding of RNAs may allow PRC2 and other silencing factors to survey the genome and distinguish transcribed vs non-transcribed regions (Davidovich et al., 2013; Di Ruscio et al., 2013; Kaneko et al., 2013). A similar model likely applies to MLL and other gene activating complexes as well. The MLL complex possesses multiple components with RNA-binding capabilities. While WDR5 binds HOTTIP, NeST, and many other RNAs as shown here (Wang et al., 2011; Gomez et al., 2013), MLL1 itself also has domains that bind RNAs in specific and nonspecific fashions (Krajewski et al., 2005; Bertani et al., 2011). Cyp33, an allosteric regulator of MLL, also contains a RNA recognition motif, and its regulation of MLL can be controlled in an RNA-dependent manner (Hom et al., 2010; Wang et al., 2010). The presence of multiple RNA interaction domains suggests intimate and potentially multiple roles for RNAs in the control of H3K4me3 and programming active chromatin.\n\n## Materials and methods\n\n### Cell lines, antibodies, and vectors\n\nHEK293T/17 cells were obtained from the American Type Culture Collection (ATCC). The HEK293T 5XUAS-Luciferase cell line has been previously described (Wysocka et al., 2005). V6.5 mouse embryonic stem cells were grown on 0.2% gelatinized plates in Knockout DMEM supplemented with 15% FBS, 1% Glutamax (35050; Invitrogen, Carlsbad, CA), 1% nonessential amino acids, 1% Pen/Strep, 0.2% \u03b2-mercaptoethanol, LIF (ESGRO1107; 1:10000; Millipore, Billerica, MA), and 2 \u00b5g/ml doxycycline (D9891; Sigma, St. Louis, MO). To maintain consistent levels of doxycycline, media was changed every 2 days. Antibodies used were: anti-FLAG-M2 (F1804; Sigma, St. Louis, MO), anti-\u03b2 actin (ab8227; Abcam, Cambridge, MA), anti-RbBP5 (A300-109A; Bethyl, Montgomery, TX), anti-H3K4me3 (ab8580; Abcam, Cambridge, MA), anti-\u03b2 tubulin (ab6046; Abcam, Cambridge, MA), anti-H3 (ab1791; Abcam, Cambridge, MA), anti-WDR5 (07-706; Millipore, Billerica, MA), and anti-HA (MMS-101P; Covance, Princeton, NJ). All immunoprecipitations were conducted using anti-FLAG-M2 (A2220; Sigma, St. Louis, MO) or mouse IgG (A0919; Sigma, St. Louis, MO) agarose beads. Unless noted, all expression vectors were cloned into pcDNA3 or pcDNA3.1 + backbones.\n\n### qRT-PCR primers:\n\nHottip (F:CCTAAAGCCACGCTTCTTTG, R:TGCAGGCTGGAGATCCTACT)Hist1h2bg (F:GGCATCATGAATTCCTTCGT, R:GCTTGTTGTAGTGGGCCAGA)Hotair (F:GGTAGAAAAAGCAACCACGAAGC, R:ACATAAACCTCTGTCTGTGAGTGCC)Flag-Wdr5 (F:GACTACAAAGACGATGACGACAA, R:TCCCAGCTTGTGACCAGATA)Gapdh (F:AGGTGGAGGAGTGGGTGTCGCTGTT, R:CCGGGAAACTGTGGCGTGATGG)Rnu1 (F:ATACTTACCTGGCAGGGGAG, R:CAGGGGGAAAGCGCGAACGCA)Actb (F:GCTGTATTCCCCTCCATCGTG, R:CACGGTTGGCCTTAGGGTTCAG)Esrrb (F:GGGTAGAGCCCACTTGTTCA, R:AGGTAGCCTGGGTTTTTGCT)Cdx2 (F:CCTGCGACAAGGGCTTGTTTAG, R:TCCCGACTTCCCTTCACCATAC)Fgf5 (F:AAAGTCAATGGCTCCCACGAA,R:GGCACTTGCATGGAGTTTTCC)Gata6 (F:ACAGCCCACTTCTGTGTTCCC, R:GTGGGTTGGTCACGTGGTACAG)Hand1 (F:GCGTCAGTACCCTGATGCCTTC, R:AAAGAGGAGGTAAGAGGACGGAAG)Nanog (F:TGGTCCCCACAGTTTGCCTAGTTC, R:CAGGTCTTCAGAGGAAGGGCGA)Nestin (F: AGGCGCTGGAACAGAGATT, R: TTCCAGGATCTGAGCGATCT)Pou5f1 (F:GTGGAGGAAGCCGACAACAATGA, R:CAAGCTGATTGGCGATGTGAG)Sox2 (F:CAGGAGAACCCCAAGATGCACAA, R:AATCCGGGTGCTCCTTCATGTG)\n\n### In vitro GST pulldown and competition\n\nGST pulldown and competition assays were performed as previously described, with modifications (Wang et al., 2011). GST-tagged WDR5 wild type, mutants, and GST control proteins were expressed and purified from E. coli as previously described (Smith and Johnson, 1988). GST proteins were bound to glutathione sepharose 4B (Amersham/GE Healthcare, Pittsburgh, PA), blocked with 0.2 mg/ml BSA (Ambion, Carlsbad, CA) in 2X binding buffer (40 mM HEPES pH 7.6, 200 mM KCl) at 4\u00b0C for 1 hr. For peptide competition assays, indicated peptides (Elim Biopharmaceuticals) were also added. 0.04 mg/ml heparin (H3149; 1:1; Sigma, St. Louis, MO) was added to further block nonspecific RNA binding. Protein-bound beads were then incubated with folded T7-transcribed HOTTIP or histone 1H2BG mRNA for 45 min (T7; Promega, Madison, WI). Beads were washed twice with PB200 (20 mM HEPES pH 7.6, 200 mM KCl, 0.05% NP-40) and once with DEPC-treated water to remove detergents. After resuspension in water, beads were directly used in qRT-PCR reactions to determine RNA levels. To confirm lack of degradation, bead-bound proteins were analyzed by Silver Stain Plus (Bio-Rad, Hercules, CA).\n\n### Native RNA immunoprecipitation (RIP)\n\nNative cell-based RNA immunoprecipitation was performed as previously described with modifications (Dignam et al., 1983). 293T cells were transfected with pcDNA3.1+FLAG-WDR5 and RNA expression plasmid. After 48\u201372 hr, cells were harvested by scraping in cold PBS, spun down, and pellets were then snap frozen in liquid nitrogen and stored at \u221280\u00b0C. Cells were resuspended in Buffer A (10 mM HEPES pH 7.5, 1.5 mM MgCl2, 10 mM KCl, 0.5 mM DTT, 1.0 mM PMSF, supplemented with RNaseOUT [1:100; Invitrogen, Carlsbad, CA]), and cell membranes were lysed with 0.25% NP-40. After centrifugation, resulting nuclei were further lysed in Buffer C (20 mM HEPES pH 7.5, 10% glycerol, 0.42M KCl, 4 mM MgCl2, 0.5 mM DTT, 1.0 mM PMSF supplemented with RNaseOUT [1:100]). Resulting whole cell lysates were immunoprecipitatied with mouse anti-FLAG-M2 or control mouse IgG agarose beads, and washed four times with wash buffer (50 mM Tris\u2013HCl pH 7.9, 10% glycerol, 100 mM KCl, 5 mM MgCl2, 10 mM \u03b2-mercaptoethanol, 0.1% NP-40). To confirm immunoprecipitation, FLAG peptide-eluted protein-RNA complexes were analyzed by western blot. Coimmunoprecipitated RNA was extracted using Trizol LS (Life Technologies, Carlsbad, CA) and Qiagen RNeasy columns, treated with TURBO DNAfree, and then analyzed by qRT-PCR (Brilliant II Sybr Green). Resulting values were defined as fraction of input, then normalized to the positive control sample.\n\n### Formaldehyde crosslinked RIPiT-seq\n\nRIPiT-seq was performed large as described previously (Singh et al., 2013) with the following modifications. ESCs were fixed for 15 min with 1% formaldehyde in 1xPBS at 25\u00b0C. The reaction was stopped by added 1/10th the volume of 1.25M Glycine. For a typical RIPiT-seq experiment chromatin was prepared from \u223c1 \u00d7 107 cells by thawing previously crosslinked ESC pellets and resuspending in 880 \u03bcl of Nuclear Lysis Buffer (50 mM Tris\u2013HCl pH 7, 10 mM EDTA, 1% SDS) supplemented with fresh Protease Inhibitor Cocktail (Roche, Indianapolis, IN), 10 mM PMSF, and RNaseOUT (1:100). Chromatin was sheared in a Covaris E220 ultrasonicator to a size of 200\u2013500 bp. The first IP was performed with 50 \u03bcl of FLAG-M2 agarose slurry (Sigma, St. Louis, MO) for 4 hr at 4\u00b0C on rotation. Samples were washed one time 1 ml in series at 4\u00b0C for 5 min each with the following buffers: High Stringency Buffer (15 mM Tris\u2013HCl pH 7, 5 mM EDTA pH 8, 2.5 mM EGTA pH 8, 1% Triton-X100, 1% Sodium Deoxycholate, 120 mM NaCl, 25 mM KCl), High Salt Buffer (15 mM Tris\u2013HCl pH 7, 5 mM EDTA pH 8, 2.5 mM EGTA pH 8, 1% Triton-X100, 1% Sodium Deoxycholate, 1M NaCl) and NT2 Buffer (50 mM Tris\u2013HCl pH 7, 150 mM NaCl, 1 mM MgCl2, 0.0005% NP-40). Captured FH-WDR5 complexes were then eluted from the FLAG-M2 agarose by incubating each sample in 500 \u03bcl of FLAG Elution Buffer (50 mM Tris\u2013HCl pH 7.5, 250 mM NaCl, 0.5% NP-40, 0.1% Sodium Deoxycholate) and 0.5 \u03bcg/ml FLAG Peptide (PAN Facility, Stanford University) for 25 min at 4\u00b0C on rotation. The FLAG elution was repeated once, achieving a total elution volume of 1 ml. FH-WDR5 complexes were then captured by adding 10 \u03bcl HA-agarose slurry (Pierce) to each sample for 1 hr at 4\u00b0C on rotation. The samples were then washed as previously done on the FLAG-M2 beads. After washing each sample was resuspended in 100 \u03bcl of ProteinaseK Buffer (10 mM Tris\u2013HCl pH 7, 100 mM NaCl, 1 mM EDTA pH 8, 0.5% SDS) and 5 \u03bcl of ProteinaseK (Ambion, Carlsbad, CA) for 45 min at 50\u00b0C in a Thermomixer (Eppendorf, Hauppauge, NY) at 1000 rpm. After ProteinaseK treatment 500 \u03bcl of Trizol LS (Qiagen, Venlo, Limburg) was added to each sample, vortexed for 10 s, and incubated at 25\u00b0C for 5 min. Total RNA was recovered from each sample with the miRNeasy kit (Qiagen, Venlo, Limburg) following the manufacturer\u2019s instructions, treated with TURBO-DNAfree (Ambion, Carlsbad, CA), and repurified with the miRNeasy kit. The Ovation v2 Kit (NuGEN, San Carlos, CA) was used according to the manufactures instructions to produce dsDNA from the purified RNA enriched by the RIPiT. DNA isolated from the Ovation v2 Kit was then used in the NEBNext ChIP-Seq Library Prep Master Mix Set for Illumina Kit (NEB, Ipswich, MA) following the manufactures instructions to produce barcoded deep sequencing libraries. Library PCR material was quality checked and quantified on an Agilent BioAnalyzer 2100 and samples were sequenced with a run type of 1 \u00d7 50 bp on an Illumina HiSeq 2500 machine.\n\n### RIPiT-seq data processing and analysis\n\nSequencing reads were mapped to the mouse genome (mm9 assembly) using TopHat (version 1.1.3) (Trapnell et al., 2009). Each sample generated 13.6 to 51.1 million mapped sequences, recorded in BAM/SAM format. A non-redundant mm9 transcriptome was assembled from UCSC RefSeq genes, UCSC genes, and predictions from (Ulitsky et al., 2011) and (Guttman et al., 2011). Gene expression in the form of log2d RPKM was calculated using a self-developed script. An enrichment score of each gene in each sample was defined as the fold change of log2d RPKM between the pull down sample vs its corresponding input. A gene was defined enriched in wide-type WDR5 pull down if the minimum enrichment score of this gene in both wide-type replicates is greater than 0 and greater than the maximum of that in empty vector and mutated samples. There were 1434 enriched genes, whose enriched score were clustered using Cluster and plotted in Treeview. WDR5 ChIPseq peaks were downloaded from Ang et al. (2011), and genes whose promoter region (2 kb upstream and 1 kb downstream of its TSS) overlaps with any WDR5 ChIPseq peak were defined as WDR5 bounded genes. Overlay of WDR5 bounded genes with WDR5 RIPseq enriched genes was shown and p value of the significance was estimated using Fisher\u2019s Exact test. RIPiT data are available at Gene Expression Omnibus under the accession number GSE53035.\n\n### Isothermal titration calorimetry\n\nThe Kd values of the WDR5-RbBP5330\u2013381, WDR5-MLL13762\u20133802, WDR5-H31\u201310 were determined by a ITC200 calorimeter (MicroCal) in buffer 25 mM Tris, 150 mM NaCl, pH 8.0. The latter components were used as titrants. The concentration of macromolecule solution is 60\u2013100 \u00b5M and the concentration of titrant is 600\u20131000 \u00b5M. ITC data were analyzed and fit using Origin 7 (OriginLab).\n\n### GST protein pull-down assays\n\n40 \u00b5g GST-fused WDR5 (WT or mutants) mixed with MLL1SET, Ash2L, RbBP5 were incubated with 10 \u00b5l glutathione-Sepharose 4B beads for 2 hr at 4\u00b0C. After extensive wash, the bound protein were eluted in 50 mM Tris\u2013HCl, pH 8.0, 300 mM NaCl, 15 mM reduced glutathione. The input samples and eluted samples were loaded on 12% SDS-PAGE and Coomassie stained.\n\n### Histone methylase activity assay and SAM binding assay\n\nReactions were carried out at room temperature for 1 hr in the presence of [3H]-SAM (S-adenosyl-L- [methyl-3H] methionine) as previously described (Cao et al., 2010). 0.25 mM unmodified H3K4 peptides (10 mer:ARTKQTARKS) was used as substrate. 0.5 \u00b5M of WDR5, RbBP5, Ash2L and MLL1SET proteins were used. Each assay was performed in triplicate.\n\n### Luciferase assay\n\npCMX-GAL4-WDR5 and pRL Renilla Luciferase plasmid were transfected into HEK293T 5XUAS-Luciferase cells using Lipofectamine 2000. 40\u201348 hr after transfection, cells were harvested and analyzed using the Dual-Luciferase Reporter Assay System (Promega, Madison, WI). Luciferase readings were normalized to Renilla readings.\n\n### Establishment of FLAG-tagged WDR5 rescue ESCs\n\nLentiviral constructs were generated that that constitutively knock down mouse WDR5 while allowing expression of a doxycycline-inducible human WDR5. The rescue vector pLKO.tre (Ang et al., 2011) was modified by replacing the shRNA-immune mouse WDR5-cDNA with either wild type or F266A mutated human WDR5. The resulting pLKO vectors and rtTA (from Marius Wernig, Stanford University) constructs were cotransfected with packaging plasmids (pLKO: second generation pCMV-dR8.2 dvpr and pCMV-VSVG| rTta: third generation pMDLg/pRRE, pCMV-VSVG, pRSV-Rev) into 293T cells using Lipofectamine 2000 (Invitrogen, Carlsbad, CA). After 16 hr, media was changed. Viruses were harvested after 48 and 72 hr, pooled, and then clarified by centrifugation. Viruses were concentrated using Lenti-X concentrator, incubated with 8 \u00b5g/ml polybrene (Sigma H9268, St. Louis, MO) and then used to infect V6.5 ESCs. GFP+ cells were sorted (Stanford Shared FACS Facility) and then cultured as described above. For RNA analysis, 5000 GFP+ cells were plated in media with or without doxycycline, and then harvested after 6 days. For qRT-PCR analysis, resulting values were normalized to control \u03b2 actin levels, and then normalized to WT+dox.\n\n### Establishment of FLAG-HA-tagged WDR5 wild type and F266A ESCs\n\nLentiviral constructs were generated that contained either no cDNA, N-terminally FLAG-HA tagged WT WDR5 (human), or N-terminally FLAG-HA tagged WDR5 F266A (human) mutant. The F266A mutant construct has a 20 amino acid N-terminal truncation, which does not affect in vivo function or MLL complex formation. The parent vector was N103 (kind gift from Dr Jerry Crabtree Lab) and contains a puromycin resistance cassette. The resulting modified N103 vectors were reverse transfected with packaging plasmids MD2G and PSPAX2 (kind gift from Dr Jerry Crabtree Lab) into 293T cells using FuGENE HD (Promega, Madison, WI) according to the manufactures protocol. After 16 hr, media was changed. Viruses were harvested after 48 and 72 hr, pooled, and then clarified by centrifugation. Viruses were concentrated using Lenti-X concentrator, incubated with 8 \u00b5g/ml polybrene (H9268; Sigma, St. Louis, MO) and then used to infect V6.5 ESCs. Two days after infection clones with successful integration were selected by added 1 \u00b5g/ml Puromycin to ESC media. ESC colonies were screened for expression of the FH-WDR5 constructs and only clones with near endogenous levels of the FH-WDR5 or FH-WDR5-F266A proteins were selected.\n\n### Fast performance liquid chromatography analysis of FH-WDR5 ESCs\n\nAfter isolation and expansion of clonal populations of ESCs with near endogenous levels of FH-tagged wild type or F266A mutant WDR5 nuclei were isolated as described above. Nuclei were lysed in 300 \u03bcl of FPLC Buffer (50 mM Tris\u2013HCl pH 7.5, 250 mM NaCl, 10% glycerol, and 0.1% NP-40). The lysates were loaded onto a HiPrep Sephacryl S-500 HR Gel Filtration Column (GE Healthcare Life Sciences, Pittsburgh, PA) using a Pharmacia Biotech FPLC pump system. Fractions (330 \u03bcl per fraction) were collected on ice and then subjected to SDS-PAGE and western blot analysis.\n\n### Embryonic stem cell fractionation\n\nESCs were fractionated as previously described (Tee et al., 2010), with modifications. To isolate nuclei and cytoplasm, Pellets were lysed in nuclei isolation buffer (NIB: 10 mM Tris pH 7.5, 60 mM KCl, 15 mM NaCl, 1.5 mM MgCl2, 1 mM CaCl2, 250 mM Sucrose, 10% glycerol, and 0.1% NP-40). Lysates were centrifuged at low speed to separate cytoplasm (supernatant) from nuclei (pellet). Cells were washed once with NIB without NP-40, resuspended in NIB without NP-40, and treated with Turbo DNase (Ambion, Carlsbad, CA). EDTA was added to a final concentration of 10 mM to neutralize the DNase. After centrifugation, the resulting washed pellet was resuspended in NIB, and NaCl was added to a final concentration of 500 mM to lyse the nuclei.\n\nFor chromatin isolation, cells were lysed with cytoskeleton buffer (CSK: 10 mM PIPES KOH pH 7, 100 mM NaCl, 300 mM sucrose, 3 mM MgCl2, 0.5% Triton X-100), centrifuged, and the resulting pellet was washed twice more with CSK buffer. The washed pellet was resuspended in CSK buffer, and treated with Turbo DNase to release chromatin-bound proteins.\n\n### Alkaline phosphatase staining\n\nFor colony forming assays, FLAG-tagged WDR5 rescue v6.5 ESCs were counted by flow cytometer, as well as hemocytometer, and 250 cells were plated onto 12 well plates with full media with or without doxycycline. After 6 days, cells were fixed with 1:1 methanol:acetone, then stained using Vector Blue (Vector Laboratories, Burlingame, CA) per the manufacturer\u2019s instructions.\n\n### Microarray analysis\n\ncDNA was synthesized, labeled, and hybridized to Affymetrix Mouse 430 2.0 arrays in biologic duplicates (Stanford Protein and Nucleic Acid Facility). Arrays were normalized by robust multi-array average (RMA) using justRMA package in R, and probes that had an expression value greater than 50 in at least one sample were defined as expressed probes. For each expressed probe, its expressions were log2ed, and the gene expression was defined as the average expression of all the expressed probes that attached to this gene. Differential expression was performed using significance analysis of microarrays (SAM) 3.0 (Tusher et al., 2001) with a false discovery rate less than 5%, an average fold change \u22652 in any compared groups. Heatmaps show mean-centered gene expression, based on previously described expression patterns (Ang et al., 2011). Microarray data are available at Gene Expression Omnibus under the accession number GSE36513.\n",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "8981a464-f080-4c36-96d9-30d35b521f97",
+      "submission_id": "b4ac2b1d-a25f-4076-91f9-38648ffa81a7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fiona Watt, King's College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02046.012](https://doi.org/10.7554/eLife.02046.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The decision letter after peer review and the authors\u2019 response are shown below.]\n\nThank you for choosing to send your work entitled \u201cEssential role of lncRNA binding for WDR5 maintenance of active chromatin and embryonic stem cell pluripotency\u201d for consideration at eLife. Your full submission has been evaluated by a Senior editor, a Reviewing editor, and two peer reviewers, and this decision letter is based on discussions between the reviewers. We consider your work to be of potential importance but feel that you would have to make substantial changes to the manuscript before it could be acceptable for publication. We aim to publish articles with a single round of revision that would typically be accomplished within two months. We are not convinced that you will be able to deal with the criticisms during that time-frame but we are offering you the opportunity to inform us whether it is possible. If you are unable to revise the manuscript appropriately the manuscript will have to be rejected.\n\nWe would offer you the option of resubmitting if you can provide a reasonable response to the three major concerns below with a set of simple additional experiments that can be completed in a reasonable time frame.\n\nYou and your co-workers investigate WDR5, a protein previously demonstrated to bind the lncRNAs HOTTIP and NEST in differentiated cells. Using complementation to replace Wdr5 with wildtype or mutant human WDR5 in mESCs, you show that WDR5 F266A mutation in the lncRNA-binding pocket renders WDR5 unable to maintain stem cell pluripotency and global H3K4Me3 patterns. LncRNAs have been a highlight of post-genomic biology. This work is a timely contribution to understanding lncRNAs, considering that many lncRNA papers are descriptive expression surveys, with few interrogating lncRNA-protein interactions, let alone such interactions\u2019 cellular functions.\n\n1) However, you did not pursue WDR5 wildtype versus mutant interactions with known WDR5 lncRNA targets, such as HOTTIP, in cells where WDR5 co-occurs with its known targets, for example fibroblasts. Instead, you chose stem cells, which do not express WDR5-interacting lncRNAs. Although functional lncRNAs in pluripotency and differentiation are known (Sheik Mohamed et al., RNA 16: 324-337, 2010), you did not perform WDR5 RIPseq. You should attempt WDR5 RIP-qRTPCR to test for known ES lncRNAs as interactors, then confirm whether any interactions are mediated by the residues implicated in the HOTTIP binding.\n\n2) The paper does not demonstrate a WDR5-lncRNA interaction essential to stemness. By the your own admission, \u201cAs HOTTIP and NeST RNAs are not expressed in ESCs, our results ... imply the existence of other ESC lncRNAs that stabilize WDR5.\u201d Any resubmission should show rather than imply these lncRNAs\u2019 existence, and test whether they interact with WDR5 in a manner abolished by F266A.\n\n3) The effect of F266A is presented in terms of global H3K4Me3 signatures and expression level differences of multiple cellular state defining factors. This is potentially at odds with the target-specific lncRNA action model, where PRC2-interacting lncRNAs regulate well-defined sets of targets for each RNA, rather than cause global chromatin remodeling.\n",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d0eb1318-3b7f-42e1-b5d3-176ce556dc67",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C1",
+      "claim": "WDR5 is a subunit of the MLL complex that enforces active chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The WDR5 subunit of the MLL complex enforces active chromatin and can bind RNA; the relationship between these two activities is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background information about WDR5's known functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "c4a85a43-aecf-430e-af25-bb119b311202",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C2",
+      "claim": "WDR5 can bind RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The WDR5 subunit of the MLL complex enforces active chromatin and can bind RNA; the relationship between these two activities is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about WDR5.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "a45fecc2-f18a-45ad-bfc6-9678a236b78b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C3",
+      "claim": "A RNA binding pocket exists on WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we identify a RNA binding pocket on WDR5, and discover a WDR5 mutant (F266A) that selectively abrogates RNA binding without affecting MLL complex assembly or catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "9e2ef4ef-3c6f-40cc-b0ce-c30a51a1c9e4",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C4",
+      "claim": "WDR5 F266A mutant selectively abrogates RNA binding without affecting MLL complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we identify a RNA binding pocket on WDR5, and discover a WDR5 mutant (F266A) that selectively abrogates RNA binding without affecting MLL complex assembly or catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data including immunoprecipitation and binding assays shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "623a90bc-0cc8-4f22-85d3-303837ae00f4",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C5",
+      "claim": "WDR5 F266A mutant does not affect MLL complex catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we identify a RNA binding pocket on WDR5, and discover a WDR5 mutant (F266A) that selectively abrogates RNA binding without affecting MLL complex assembly or catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histone methylase activity assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "f682047e-3760-49da-bbf6-5a502a9c148b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C6",
+      "claim": "WDR5 F266A mutant is unable to accumulate on chromatin in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation in ESCs shows that WDR5 F266A mutant is unable to accumulate on chromatin, and is defective in gene activation, maintenance of histone H3 lysine 4 trimethylation, and ESC self renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chromatin isolation experiments shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "fa37674f-3570-4553-8c4e-233c7a75d33f",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C7",
+      "claim": "WDR5 F266A mutant is defective in gene activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation in ESCs shows that WDR5 F266A mutant is unable to accumulate on chromatin, and is defective in gene activation, maintenance of histone H3 lysine 4 trimethylation, and ESC self renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase assay data in Figure 2D and microarray data in Figure 5C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "84f61d97-2043-4c8e-84cc-e9c2f06100c3",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C8",
+      "claim": "WDR5 F266A mutant is defective in maintenance of histone H3 lysine 4 trimethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation in ESCs shows that WDR5 F266A mutant is unable to accumulate on chromatin, and is defective in gene activation, maintenance of histone H3 lysine 4 trimethylation, and ESC self renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data showing reduced H3K4me3 levels in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "7198fcd5-21b2-48f6-998c-7fc70123affb",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C9",
+      "claim": "WDR5 F266A mutant is defective in ESC self renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation in ESCs shows that WDR5 F266A mutant is unable to accumulate on chromatin, and is defective in gene activation, maintenance of histone H3 lysine 4 trimethylation, and ESC self renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by alkaline phosphatase staining and colony formation assays shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "ec93ff90-3cce-4743-a30c-3f9df7d20924",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C10",
+      "claim": "A family of ESC messenger and lncRNAs interact with wild type WDR5 but not F266A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify a family of ESC messenger and lncRNAs that interact with wild type WDR5 but not F266A mutant, including several lncRNAs known to be important for ESC gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIPiT-seq data showing 1434 RNAs that bind WDR5 WT but not F266A, as shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "40e18f9c-4eaf-4107-8561-ef7e39022c71",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C11",
+      "claim": "Several lncRNAs that interact with WDR5 are known to be important for ESC gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify a family of ESC messenger and lncRNAs that interact with wild type WDR5 but not F266A mutant, including several lncRNAs known to be important for ESC gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies (Guttman et al., 2011) and RIPiT-seq data in Figure 4B showing lncRNAs with ESC phenotypes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "f137d9c5-a1a7-4bf6-8b44-3bc24a353c38",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C12",
+      "claim": "Specific RNAs are integral inputs into the WDR5-MLL complex for maintenance of the active chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that specific RNAs are integral inputs into the WDR5-MLL complex for maintenance of the active chromatin state and embryonic stem cell fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that RNA binding is required for WDR5 function in maintaining H3K4me3 and ESC state.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "d76115db-f6dc-4aad-b96d-0779c22772b9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C13",
+      "claim": "Specific RNAs are integral inputs into the WDR5-MLL complex for maintenance of embryonic stem cell fates.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that specific RNAs are integral inputs into the WDR5-MLL complex for maintenance of the active chromatin state and embryonic stem cell fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that RNA binding is required for WDR5 function in ESC self-renewal.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "b03a87a9-4305-468b-b551-7c799db3c6f6",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C14",
+      "claim": "Histone H3 lysine 4 trimethylation (H3K4me3) is a mark of transcriptionally active chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone H3 lysine 4 trimethylation (H3K4me3) is a mark of transcriptionally active chromatin, generated through the catalytic activity of the MLL family of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about histone modifications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "6d8784fd-1a0c-48ce-8429-70634ab977e9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C15",
+      "claim": "H3K4me3 is generated through the catalytic activity of the MLL family of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone H3 lysine 4 trimethylation (H3K4me3) is a mark of transcriptionally active chromatin, generated through the catalytic activity of the MLL family of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the MLL family function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "29a05ba6-aadb-405c-ba06-053c88418b35",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C16",
+      "claim": "The MLL family of H3K4 methylases are evolutionarily conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The MLL family of H3K4 methylases are evolutionarily conserved (known as COMPASS in yeast and trithorax in Drosophila) (Smith et al., 2011), and MLL translocations are an important cause of human leukemias (Meyer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Smith et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "aa33a63d-9745-4ebf-aeb7-13ddc59c4fce",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C17",
+      "claim": "MLL is known as COMPASS in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The MLL family of H3K4 methylases are evolutionarily conserved (known as COMPASS in yeast and trithorax in Drosophila) (Smith et al., 2011), and MLL translocations are an important cause of human leukemias (Meyer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Smith et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "4dd83213-d629-46df-a0c6-69152d206bab",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C18",
+      "claim": "MLL is known as trithorax in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "The MLL family of H3K4 methylases are evolutionarily conserved (known as COMPASS in yeast and trithorax in Drosophila) (Smith et al., 2011), and MLL translocations are an important cause of human leukemias (Meyer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Smith et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "dc027063-0997-448d-954e-ffc72022123f",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C19",
+      "claim": "MLL translocations are an important cause of human leukemias.",
+      "claim_type": "EXPLICIT",
+      "source": "The MLL family of H3K4 methylases are evolutionarily conserved (known as COMPASS in yeast and trithorax in Drosophila) (Smith et al., 2011), and MLL translocations are an important cause of human leukemias (Meyer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Meyer et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "6634e503-877c-4732-9c15-1fecd408576c",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C20",
+      "claim": "Members of the MLL family are associated with WDR5, Ash2L, RbBP5, and additional proteins to regulate activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the MLL family encode single SET domain-containing H3K4 methylases, and are associated with WDR5, Ash2L, RbBP5, and additional proteins to regulate activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MLL complex composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "f5617d92-d3ad-4ef8-9803-afb847a4bee6",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C21",
+      "claim": "WDR5 is a multifunctional adaptor protein that can discriminate posttranslational modifications on histone tails.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the various cofactors that regulate MLL activity, WDR5 is a particularly important multifunctional adaptor protein that can discriminate posttranslational modifications on histone tails, as well as bind to the MLL complex to regulate gene activation (Wysocka et al., 2005; Migliori et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wysocka et al., 2005 and Migliori et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "d4f3b5f5-3484-46f2-bc7f-ed577b44a74b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C22",
+      "claim": "WDR5 can bind to the MLL complex to regulate gene activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the various cofactors that regulate MLL activity, WDR5 is a particularly important multifunctional adaptor protein that can discriminate posttranslational modifications on histone tails, as well as bind to the MLL complex to regulate gene activation (Wysocka et al., 2005; Migliori et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wysocka et al., 2005 and Migliori et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "e573c0c7-7155-4b60-9e9a-078fd717d96a",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C23",
+      "claim": "WDR5 is particularly important for mammalian embryonic stem cell (ESC) self renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "WDR5 is particularly important for mammalian embryonic stem cell (ESC) self renewal and maintenance of active chromatin for pluripotency genes, and WDR5 is required for efficient generation of induced pluripotent stem cells from differentiated somatic cells (Ang et al., 2011; Li et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ang et al., 2011 and Li et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "bac18e83-8e4f-43e9-8410-09e297da69a3",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C24",
+      "claim": "WDR5 is important for maintenance of active chromatin for pluripotency genes.",
+      "claim_type": "EXPLICIT",
+      "source": "WDR5 is particularly important for mammalian embryonic stem cell (ESC) self renewal and maintenance of active chromatin for pluripotency genes, and WDR5 is required for efficient generation of induced pluripotent stem cells from differentiated somatic cells (Ang et al., 2011; Li et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ang et al., 2011 and Li et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "4d0b77f8-e93f-4c12-97f3-757cf56093f7",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C25",
+      "claim": "WDR5 is required for efficient generation of induced pluripotent stem cells from differentiated somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "WDR5 is particularly important for mammalian embryonic stem cell (ESC) self renewal and maintenance of active chromatin for pluripotency genes, and WDR5 is required for efficient generation of induced pluripotent stem cells from differentiated somatic cells (Ang et al., 2011; Li et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ang et al., 2011 and Li et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "c71f3844-ef0b-4dfd-afbc-51231ca8d9ed",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C26",
+      "claim": "WDR5 has been shown to bind individual long noncoding RNAs (lncRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "WDR5 has recently been shown to bind individual long noncoding RNAs (lncRNAs) (Wang et al., 2011; Gomez et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2011 and Gomez et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "df0c1eb1-99d8-4b98-9053-1d7826e30e5a",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C27",
+      "claim": "LncRNAs are capped, spliced, polyadenylated RNA transcripts ranging from several hundred to kilobases in length.",
+      "claim_type": "EXPLICIT",
+      "source": "LncRNAs are capped, spliced, polyadenylated RNA transcripts ranging from several hundred to kilobases in length (Derrien et al., 2012; Rinn and Chang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Derrien et al., 2012 and Rinn and Chang, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "3cd71679-c49a-461c-ba6a-a41f7601963e",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C28",
+      "claim": "The lncRNA XIST binds the Polycomb Repressive Complex 2 (PRC2) to cause histone H3 lysine 27 trimethylation and silence the X chromosome for dosage compensation in females.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the lncRNA XIST binds the Polycomb Repressive Complex 2 (PRC2) to cause histone H3 lysine 27 trimethylation and silence the X chromosome for dosage compensation in females (Morey and Avner, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Morey and Avner, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "e30f9ce0-0993-4229-a8e5-66147865f1b8",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C29",
+      "claim": "The lncRNA HOTAIR acts as a molecular scaffold, binding both PRC2 and the H3K4 demethylase LSD1 complex to silence hundreds of loci throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "As another example, the lncRNA HOTAIR acts as a molecular scaffold, binding both PRC2 and the H3K4 demethylase LSD1 complex to silence hundreds of loci throughout the genome (Rinn et al., 2007; Gupta et al., 2010; Tsai et al., 2010; Chu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rinn et al., 2007; Gupta et al., 2010; Tsai et al., 2010; Chu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "292bcc3a-aed4-40cc-87e4-02a8560c8e1e",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C30",
+      "claim": "HOTTIP is an enhancer-like lncRNA of the human HOXA locus that coordinates expression of HOXA9 to HOXA13.",
+      "claim_type": "EXPLICIT",
+      "source": "HOTTIP is an enhancer-like lncRNA of the human HOXA locus that coordinates expression of HOXA9 to HOXA13, which are important for distal identity (Wang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "5b6e127a-2562-4632-a1e0-619388cce8a8",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C31",
+      "claim": "HOTTIP RNA directly binds to the WDR5 protein to recruit the MLL H3K4 methylase complex to maintain H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "HOTTIP RNA directly binds to the WDR5 protein to recruit the MLL H3K4 methylase complex to maintain H3K4me3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2011 in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "2933e984-ebe9-4aa4-bd91-f0532653c050",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C32",
+      "claim": "The NeST lncRNA binds WDR5 to upregulate IFN-\u03b3 expression through H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent research has shown that the NeST lncRNA also binds WDR5 to upregulate IFN-\u03b3 expression through H3K4me3 (Gomez et al., 2013), suggesting the existence of multiple different enhancing lncRNAs that function via WDR5 interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gomez et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "7df53882-83c5-4f67-8f89-f8c37e022257",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C33",
+      "claim": "Four out of 19 WDR5 mutants significantly reduced the ability to retrieve HOTTIP lncRNA in vitro: Y228A, L240A, K250A, and F266A.",
+      "claim_type": "EXPLICIT",
+      "source": "Four out of 19 mutants significantly reduced the ability to retrieve HOTTIP lncRNA in vitro: Y228A, L240A, K250A, and F266A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "cc0983ff-c1f2-45af-b275-f8a96a84659d",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C34",
+      "claim": "The WDR5 mutations that reduce HOTTIP binding define a cleft between blades 5 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "These WDR5 mutations defined a cleft between blades 5 and 6, partially encompassing the same surface previously described to bind RbBP5 amino acids 371\u2013381 (Odho et al., 2010; Avdic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and citations to Odho et al., 2010 and Avdic et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "83438f7d-f34e-47d0-bf64-1c3a714c02c5",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C35",
+      "claim": "The HOTTIP binding site on WDR5 partially overlaps with the RbBP5 binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "These WDR5 mutations defined a cleft between blades 5 and 6, partially encompassing the same surface previously described to bind RbBP5 amino acids 371\u2013381 (Odho et al., 2010; Avdic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and citations to Odho et al., 2010 and Avdic et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "a33532a0-d60c-4194-a529-631ba0469e7b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C36",
+      "claim": "Pre-incubation with RbBP5 peptide prevents HOTTIP binding to WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas addition of H3K4me3 peptide had no effect, pre-incubation with RbBP5 peptide prevented HOTTIP binding to WDR5, thus confirming the shared binding cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competition assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "e9a6077c-ae7b-49d3-adb4-670ff9eea47a",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C37",
+      "claim": "Addition of H3K4me3 peptide has no effect on HOTTIP binding to WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas addition of H3K4me3 peptide had no effect, pre-incubation with RbBP5 peptide prevented HOTTIP binding to WDR5, thus confirming the shared binding cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competition assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "3b058bbf-2bc9-4d25-8f18-af76978e4dee",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C38",
+      "claim": "K250A and F266A mutations fully abrogated WDR5 binding to HOTTIP in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the direct in vitro binding assay, both K250A and F266A mutations fully abrogated WDR5 binding to HOTTIP in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA immunoprecipitation data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "4cafd6c8-77ec-4fae-807e-fc17253f03ec",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C39",
+      "claim": "D107A and R181A mutations showed minimal effects on WDR5-HOTTIP interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mutations at D107A and R181A showed minimal effects on WDR5-HOTTIP interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA immunoprecipitation data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "77c8ab46-684f-48fa-8096-e71d16b45d8f",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C40",
+      "claim": "The K250 mutation reduced RbBP5 binding to approximately 62.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the D107A and R181A mutations caused little effect on RbBP5 binding compared with wild type (\u223c95%), the K250 mutation reduced RbBP5 binding (\u223c62.5%) as previously described (Odho et al., 2010; Avdic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to Odho et al., 2010 and Avdic et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "5476d8a2-768f-42a4-a5b0-d4ec3022e50f",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C41",
+      "claim": "The F266A mutation increased RbBP5 binding to approximately 120%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the F266A mutation actually increased RbBP5 binding (\u223c120%), suggesting that loss of binding to HOTTIP increases the ability to bind RbBP5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "a68d6077-e837-4094-b5f8-2322d97f6c84",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C42",
+      "claim": "Loss of HOTTIP binding increases WDR5's ability to bind RbBP5.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the F266A mutation actually increased RbBP5 binding (\u223c120%), suggesting that loss of binding to HOTTIP increases the ability to bind RbBP5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that F266A mutation increases RbBP5 binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "8cc31ed0-f7ff-44e2-aeaf-63e46fcf22ad",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C43",
+      "claim": "The F266A mutation minimally affects the affinity of WDR5 for RbBP5, MLL1, or H3 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen by isothermal calorimetry, the F266A mutation minimally affects the affinity of WDR5 for RbBP5, MLL1, or H3 peptides, in contrast to the Y228A mutation (RbBP5 binding defective) or D107A mutation (MLL1 and H3 binding defective) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by isothermal calorimetry data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "8b5ad300-08fe-4f89-8499-8af28fb8bd7a",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C44",
+      "claim": "GST-WDR5 F266A displays no deficits in binding RbBP5, Ash2L, and MLL1 purified proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This was further confirmed using GST protein pull down assays, in which GST-WDR5 F266A displays no deficits in binding RbBP5, Ash2L, and MLL1 purified proteins (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GST pull down assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "d510c516-f2df-4dec-ab62-735a55e10106",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C45",
+      "claim": "The F266A mutation did not significantly decrease in vitro MLL1 complex methylase activity compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in contrast to the MLL1/H3 or RbBP5 binding mutants, the F266A mutation did not significantly decrease in vitro MLL1 complex methylase activity compared to wild type (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histone methylase activity assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "388c5f2e-b520-463e-a7fc-0963f98bc4b9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C46",
+      "claim": "WDR5 F266A demonstrated a severe defect in luciferase gene activation, requiring >100-fold transfected plasmid compared with wild type to achieve similar reporter gene activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, WDR5 F266A demonstrated a severe defect in luciferase gene activation, requiring >100-fold transfected plasmid compared with wild type to achieve similar reporter gene activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "aa9c1c27-b649-4287-828f-00afeb94bd2a",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C47",
+      "claim": "WDR5 is required to maintain H3K4 trimethylation (H3K4me3) in mouse embryonic stem cell (ESC) genes for pluripotency and self renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "WDR5 has been recently shown to be required to maintain H3K4 trimethylation (H3K4me3) in mouse embryonic stem cell (ESC) genes for pluripotency and self renewal (Ang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "861c8b05-cbee-4f1a-981b-145aab8f351a",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C48",
+      "claim": "In WDR5 WT ESCs, promoter shutoff of WDR5 resulted in approximately 50% reduction of H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "In WDR5 WT ESCs, promoter shutoff of WDR5 resulted in \u223c50% reduction of H3K4me3 (Lanes 1 and 2), as previously reported (Ang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3D and citation to Ang et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "d0ef3b3d-5d52-4465-9c2f-20b6c0db4bac",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C49",
+      "claim": "ESCs harboring WDR5 F266A displayed a 50% reduction of H3K4me3 compared to wild type with doxycycline.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ESCs harboring WDR5 F266A displayed a similar global 50% reduction of H3K4me3 (Lane 3), although WDR5 F266A protein was expressed at lower levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "61ee370c-707e-4839-8ece-27304e46b8cf",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C50",
+      "claim": "Promoter shutoff of WDR5 F266A caused a >80% reduction of H3K4me3 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, promoter shutoff of WDR5 F266A caused a drastic >80% reduction of H3K4me3 levels (Lanes 3 and 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "4e25f575-1e8a-40f1-b09c-9f1a1ff8e241",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C51",
+      "claim": "WDR5 F266A was depleted in both nuclear and chromatin fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "We more closely examined the subcellular localization of WDR5 WT and WDR5 F266A, and found that WDR5 F266A was depleted in both nuclear (Figure 3E) and chromatin fractions (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fractionation experiments shown in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "5ca9ca53-9383-45de-994c-06329c91055d",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C52",
+      "claim": "In the cytoplasm, both WDR5 WT and F266A have equally short half-lives of less than 12 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in the cytoplasm, both WDR5 WT and F266A have equally short half-lives of less than 12 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pulse chase experiment data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "e915fdb6-2c9c-461d-aabf-d0e838070e49",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C53",
+      "claim": "Nuclear WDR5 WT persists for up to 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, nuclear WDR5 WT persists for up to 24 hr, but WDR5 F266A is turned over at least 12 hr sooner (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pulse chase experiment data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "a0a45863-162d-48ab-8291-0db2f3e01800",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C54",
+      "claim": "Nuclear WDR5 F266A is turned over at least 12 hr sooner than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, nuclear WDR5 WT persists for up to 24 hr, but WDR5 F266A is turned over at least 12 hr sooner (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pulse chase experiment data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "3a32996c-1030-4470-abbe-71ae26f27b13",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C55",
+      "claim": "Ability to bind lncRNAs is essential for WDR5 protein stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ability to bind lncRNAs appears to be essential for WDR5 protein stability, suggesting a RNA-mediated post-translational regulation of WDR5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pulse chase experiments showing differential stability of WT vs F266A mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "7f11baa0-608d-425f-80ae-c48e6a7a16cc",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C56",
+      "claim": "RNA binding mediates post-translational regulation of WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ability to bind lncRNAs appears to be essential for WDR5 protein stability, suggesting a RNA-mediated post-translational regulation of WDR5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that RNA binding affects WDR5 protein stability.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "34028e80-36d8-4008-a7ba-649a9facd1ba",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C57",
+      "claim": "WDR5 WT is associated with 1434 RNAs, comprised of mRNAs, lncRNAs, pri-miRNAs, and snoRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "WDR5 WT, but not F266A or control, is associated with 1434 RNAs, comprised of mRNAs, lncRNAs, pri-miRNAs, and snoRNAs (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIPiT-seq data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "3d56b102-a3c4-4ada-9a97-e3fe71d6fa43",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C58",
+      "claim": "WDR5 binds to 23 previously identified ESC lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "WDR5 binds to 23 previously identified ESC lncRNAs (Guttman et al., 2011; Ulitsky et al., 2011; Ng et al., 2012; Sheik Mohamed et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIPiT-seq data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "832d0071-6961-4d98-b195-aabd4fbc607c",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C59",
+      "claim": "Six lncRNA partners of WDR5 have been shown to be required for ESC pluripotency or differentiation when individually depleted by shRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, six lncRNA partners of WDR5 have been shown to be required for ESC pluripotency or differentiation when individually depleted by shRNAs (Figure 4B, lncRNAs with ESC phenotype in orange) (Guttman et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Guttman et al., 2011 and RIPiT-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "9688f689-a01e-4277-b886-3110d05a6fb6",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C60",
+      "claim": "590 genes bound by WDR5 on chromatin produce RNAs that physically interact with WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Ang et al. (2011) reported 9303 genes that are bound by WDR5 and other trithorax group proteins in ESCs with high confidence, and 590 of these loci produced RNAs that physically interacts with WDR5 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of RIPiT-seq and ChIP-seq data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "1a241b1c-2bfa-4959-91a1-9de9b2f34ee2",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C61",
+      "claim": "Depletion of lincRNA-1552 led to mis-expression of approximately 100 mRNAs including Nanog and Pou5f1.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of lincRNA-1552 led to mis-expression of \u223c100 mRNAs including Nanog and Pou5f1, and the promoter of linc-1552 is bound by Pou5f1, Klf4, Nanog, Zfx, n-Myc, and c-Myc (Guttman et al., 2011), suggesting a positive feedback loop has been described for other ESC lncRNAs (Sheik Mohamed et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guttman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "36a8d109-4f30-4c9f-9fa2-97553a1f4163",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C62",
+      "claim": "The promoter of linc-1552 is bound by Pou5f1, Klf4, Nanog, Zfx, n-Myc, and c-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of lincRNA-1552 led to mis-expression of \u223c100 mRNAs including Nanog and Pou5f1, and the promoter of linc-1552 is bound by Pou5f1, Klf4, Nanog, Zfx, n-Myc, and c-Myc (Guttman et al., 2011), suggesting a positive feedback loop has been described for other ESC lncRNAs (Sheik Mohamed et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guttman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "56ad0e8f-b792-438b-91e2-99533174a6f9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C63",
+      "claim": "The expression of linc-1552 is repressed by retinoic acid-induced ESC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the expression of linc-1552 is repressed by retinoic acid-induced ESC differentiation (Guttman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guttman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "157da44e-361c-4283-a7c9-c4d127413a58",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C64",
+      "claim": "A previous screen in ESCs identified 901 protein-coding genes important for ESC pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a previously reported screen in ESCs identified 901 protein-coding genes important for ESC pluripotency, and 23 of the corresponding mRNAs were enriched in WDR5 RIPiT-seq, including Myc and Bmp4 mRNAs (Ivanova et al., 2006) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ivanova et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "44bcc034-83b0-49cb-9693-75795307dc0c",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C65",
+      "claim": "23 mRNAs from genes important for ESC pluripotency were enriched in WDR5 RIPiT-seq, including Myc and Bmp4 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a previously reported screen in ESCs identified 901 protein-coding genes important for ESC pluripotency, and 23 of the corresponding mRNAs were enriched in WDR5 RIPiT-seq, including Myc and Bmp4 mRNAs (Ivanova et al., 2006) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIPiT-seq data and citation to Ivanova et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "854b1b79-e9d3-4894-a808-35dac74a672e",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C66",
+      "claim": "In WDR5 WT ESCs, promoter shut-off caused a approximately 50% reduction in the number of alkaline phosphatase-positive colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In WDR5 WT ESCs, promoter shut-off caused a \u223c50% reduction in the number of alkaline phosphatase-positive colonies, a specific indicator of ESC state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by alkaline phosphatase staining data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "c2ce3fa1-2a6d-4f42-a5ca-028756a5102e",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C67",
+      "claim": "F266A WDR5 ESCs grown in the presence of doxycycline displayed a approximately 50% reduction in colony number compared to WT with doxycycline.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, F266A WDR5 ESCs grown in the presence of doxycycline displayed a similar \u223c50% reduction in colony number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by alkaline phosphatase staining data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "3eb76313-5b9d-4850-ba6b-f0d6723ab193",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C68",
+      "claim": "Doxycycline withdrawal in WDR5 F266A ESCs caused a >90% reduction in number of colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Doxycycline withdrawal in WDR5 F266A ESCs caused a >90% reduction in number of colonies, with the majority of cells forming clusters of fully differentiated alkaline phosphatase-negative cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by alkaline phosphatase staining data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "15dbbe4d-247f-41cc-9b07-71e71714c225",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C69",
+      "claim": "ESCs expressing WDR5 F266A had significantly reduced mRNA levels of pluripotency regulators Pou5f1, Nanog, Sox2, and Esrrb.",
+      "claim_type": "EXPLICIT",
+      "source": "Validation of microarray results by qRT-PCR further demonstrated that ESCs expressing WDR5 F266A had significantly reduced mRNA levels of pluripotency regulators Pou5f1, Nanog, Sox2, and Esrrb, but upregulation of differentiation markers Cdx2, Fgf5, and Nestin (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "91e34b96-29cd-460e-87b7-308a4acca2b9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C70",
+      "claim": "ESCs expressing WDR5 F266A showed upregulation of differentiation markers Cdx2, Fgf5, and Nestin.",
+      "claim_type": "EXPLICIT",
+      "source": "Validation of microarray results by qRT-PCR further demonstrated that ESCs expressing WDR5 F266A had significantly reduced mRNA levels of pluripotency regulators Pou5f1, Nanog, Sox2, and Esrrb, but upregulation of differentiation markers Cdx2, Fgf5, and Nestin (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "6ca247b0-4ffa-4246-ad12-9b6fe1ffa495",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C71",
+      "claim": "WDR5 F266A was unable to sustain the gene expression program associated with ESC self-renewal and pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide expression profiling further confirmed that WDR5 F266A was unable to sustain the gene expression program associated with ESC self-renewal and pluripotency, and instead allowed ectopic expression of genes indicative of ectodermal and mesodermal lineages (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microarray data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "57ffc63c-1769-4c2b-91b2-756627370fb3",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C72",
+      "claim": "WDR5 F266A allowed ectopic expression of genes indicative of ectodermal and mesodermal lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide expression profiling further confirmed that WDR5 F266A was unable to sustain the gene expression program associated with ESC self-renewal and pluripotency, and instead allowed ectopic expression of genes indicative of ectodermal and mesodermal lineages (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microarray data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "87d642cc-3438-4ceb-b821-5ee11cf686a9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C73",
+      "claim": "Ability to bind RNAs extends WDR5 protein half-life by an additional 12 hr to approximately 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, ability to bind RNAs extends WDR5 protein half-life by an additional 12 hr to approximately 24 hr, which starts to approach the time scale of an entire cell division cycle (especially in ESCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pulse chase experiments shown in Figure 3G.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "ca299ef9-0588-418e-bf7c-640917c5ac04",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C74",
+      "claim": "LncRNAs may regulate protein occupancy on chromatin during cellular maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "With the extended protein longevity, lncRNAs may then regulate protein occupancy on chromatin during cellular maintenance, as well as aid in transmission of epigenetic regulators across cell generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed effects of RNA binding on WDR5 stability.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "928053e9-4ce1-4d3d-bcb1-d12aef040c30",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C75",
+      "claim": "LncRNAs may aid in transmission of epigenetic regulators across cell generations.",
+      "claim_type": "EXPLICIT",
+      "source": "With the extended protein longevity, lncRNAs may then regulate protein occupancy on chromatin during cellular maintenance, as well as aid in transmission of epigenetic regulators across cell generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed effects of RNA binding on WDR5 stability.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "e9e283b6-f96e-4eb9-94dd-f62b1084f0ca",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C76",
+      "claim": "LncRNAs may play crucial roles in regulating the multigenerational transmission of epigenetic proteins required for maintenance of cell state.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manner, lncRNAs may play crucial roles in regulating the multigenerational transmission of epigenetic proteins required for maintenance of cell state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed effects of RNA binding on WDR5 stability and function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "e330eb94-cf82-492f-bb06-c5e5a3067e5b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C77",
+      "claim": "The loss of stabilized WDR5 leads to an inability to maintain global H3K4me3 level.",
+      "claim_type": "EXPLICIT",
+      "source": "In our example, the loss of stabilized WDR5 leads to an inability to maintain global H3K4me3 level, loss of expression of pluripotency regulators, and loss of ESC self renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data showing reduced H3K4me3 in F266A mutant ESCs (Figure 3D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "90d5b85b-4404-46c8-b5d1-ed01a254c0d9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C78",
+      "claim": "The loss of stabilized WDR5 leads to loss of expression of pluripotency regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "In our example, the loss of stabilized WDR5 leads to an inability to maintain global H3K4me3 level, loss of expression of pluripotency regulators, and loss of ESC self renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qRT-PCR and microarray data showing reduced expression of pluripotency genes (Figure 5C-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "2f843e02-93ca-45fe-91bf-91186bb7619b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C79",
+      "claim": "The loss of stabilized WDR5 leads to loss of ESC self renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "In our example, the loss of stabilized WDR5 leads to an inability to maintain global H3K4me3 level, loss of expression of pluripotency regulators, and loss of ESC self renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by colony formation assays showing reduced ESC colonies (Figure 5A-B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "28425514-792f-4ea2-8f50-3fae9bdf1805",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C80",
+      "claim": "The impact of F266A mutation on H3K4me3 level is modest in steady state conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the impact of F266A mutation on H3K4me3 level is modest in steady state conditions, but becomes quite striking with transcriptional shutoff of WDR5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data in Figure 3D comparing F266A +dox vs -dox conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "536322e5-e526-4249-9501-f7d530a81769",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C81",
+      "claim": "The impact of F266A mutation on H3K4me3 level becomes striking with transcriptional shutoff of WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the impact of F266A mutation on H3K4me3 level is modest in steady state conditions, but becomes quite striking with transcriptional shutoff of WDR5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data in Figure 3D showing >80% reduction in H3K4me3 with F266A -dox.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "433614a7-a558-4e44-8421-8ae97f0b9e0d",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C82",
+      "claim": "WDR5 stability is important for the robustness of the active chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these results to indicate that WDR5 stability is important for the robustness of the active chromatin state, exemplified by H3K4me3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results showing differential effects of F266A mutation under different conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "a90b78b5-828e-4b05-88c7-7af6e56e8adc",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C83",
+      "claim": "In the absence of stabilized WDR5, H3K4me3 becomes much more sensitive to fluctuations in the transcriptional levels of WDR5 and likely other subunits of the MLL complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of stabilized WDR5, H3K4me3 becomes much more sensitive to fluctuations in the transcriptional levels of WDR5 and likely other subunits of the MLL complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results showing greater H3K4me3 loss with F266A upon doxycycline withdrawal.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "fc1b59cb-63cc-4ad9-b159-8c935ce7758d",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C84",
+      "claim": "Some of the recently discovered lncRNAs important for ESC self-renewal and pluripotency are associated with WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data find that some of the recent discovered lncRNAs important for ESC self-renewal and pluripotency are associated with WDR5 (Guttman et al., 2011; Chakraborty et al., 2012), including five lncRNAs with ESC phenotypes that do not bind repressive chromatin complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIPiT-seq data and citations to Guttman et al., 2011 and Chakraborty et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "feeff3f7-8c1a-4cf1-8fe9-8eade9a965d0",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C85",
+      "claim": "Five lncRNAs with ESC phenotypes that do not bind repressive chromatin complexes are associated with WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data find that some of the recent discovered lncRNAs important for ESC self-renewal and pluripotency are associated with WDR5 (Guttman et al., 2011; Chakraborty et al., 2012), including five lncRNAs with ESC phenotypes that do not bind repressive chromatin complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIPiT-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "58fea05a-576b-4a6b-adfe-7708cdcfac36",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C86",
+      "claim": "A single chromatin modification complex (e.g., PRC2) can interact with thousands of RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of other chromatin modification complexes have shown that a single complex (e.g., PRC2) can interact with thousands of RNAs, each of which can regulate a subset of genes targeted by the complex (Khalil et al., 2009; Zhao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Khalil et al., 2009 and Zhao et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "689ac2fa-844f-4fcd-ba93-e4235b83abd0",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C87",
+      "claim": "Promiscuous binding of RNAs may allow PRC2 and other silencing factors to survey the genome and distinguish transcribed vs non-transcribed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, promiscuous binding of RNAs may allow PRC2 and other silencing factors to survey the genome and distinguish transcribed vs non-transcribed regions (Davidovich et al., 2013; Di Ruscio et al., 2013; Kaneko et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Davidovich et al., 2013; Di Ruscio et al., 2013; Kaneko et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "18dae904-6a9d-4c89-a6e2-7b65da0bf019",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C88",
+      "claim": "MLL1 has domains that bind RNAs in specific and nonspecific fashions.",
+      "claim_type": "EXPLICIT",
+      "source": "While WDR5 binds HOTTIP, NeST, and many other RNAs as shown here (Wang et al., 2011; Gomez et al., 2013), MLL1 itself also has domains that bind RNAs in specific and nonspecific fashions (Krajewski et al., 2005; Bertani et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Krajewski et al., 2005 and Bertani et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "1824a9c8-5c44-40ab-942d-a0169993c29f",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C89",
+      "claim": "Cyp33 is an allosteric regulator of MLL.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyp33, an allosteric regulator of MLL, also contains a RNA recognition motif, and its regulation of MLL can be controlled in an RNA-dependent manner (Hom et al., 2010; Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hom et al., 2010 and Wang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "20473558-ee88-4363-9402-6a75e21252d9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C90",
+      "claim": "Cyp33 contains a RNA recognition motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyp33, an allosteric regulator of MLL, also contains a RNA recognition motif, and its regulation of MLL can be controlled in an RNA-dependent manner (Hom et al., 2010; Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hom et al., 2010 and Wang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "c46a6cae-a1ad-4864-80e8-b86fd9bf9c78",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C91",
+      "claim": "Cyp33's regulation of MLL can be controlled in an RNA-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyp33, an allosteric regulator of MLL, also contains a RNA recognition motif, and its regulation of MLL can be controlled in an RNA-dependent manner (Hom et al., 2010; Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hom et al., 2010 and Wang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "d17c0ceb-1071-4a0d-92a2-7238a623af4b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C92",
+      "claim": "The presence of multiple RNA interaction domains in the MLL complex suggests intimate and potentially multiple roles for RNAs in the control of H3K4me3 and programming active chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of multiple RNA interaction domains suggests intimate and potentially multiple roles for RNAs in the control of H3K4me3 and programming active chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observation that multiple MLL complex components can bind RNA.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "4117ffa7-0518-423a-93e8-9b1589c968f4",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C93",
+      "claim": "Mutations Y228A, L240A, K250A, and F266A define a cleft between blades 5 and 6 of WDR5.",
+      "claim_type": "IMPLICIT",
+      "source": "These WDR5 mutations defined a cleft between blades 5 and 6, partially encompassing the same surface previously described to bind RbBP5 amino acids 371\u2013381 (Odho et al., 2010; Avdic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis of the mutations that affect HOTTIP binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "011fa58b-ad98-455f-ad8d-453154d23daf",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C94",
+      "claim": "HOTTIP and RbBP5 share an overlapping binding pocket on WDR5.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that HOTTIP and RbBP5 bind to the same or overlapping sites on WDR5, we pre-incubated wild type GST-WDR5 with an excess of RbBP5 peptide (amino acids 371\u2013381) or control H3K4me3 peptide (amino acids 1\u201320), and then assayed for HOTTIP binding (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by competition assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "c0f2bd65-c340-4267-b92e-388ba422204a",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C95",
+      "claim": "WDR5 is a barrel-shaped protein with several charged clefts on its surface.",
+      "claim_type": "EXPLICIT",
+      "source": "WDR5 is a barrel-shaped protein with several charged clefts on its surface, several of which are known to mediate protein\u2013protein interactions with MLL, histone H3 tail, or RbBP5 (Figure 1A, Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on crystal structure analysis referenced in the text.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "35dea81b-51ec-4e90-a5a8-56944526d7bf",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C96",
+      "claim": "Tandem-tagged WDR5 WT and F266A proteins quantitatively formed equivalent MLL-WDR5 protein complexes with endogenous subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We established ESC lines expressing FLAG-HA tagged version of WT and F266A WDR5 at near endogenous expression levels, and FPLC analysis confirmed that both tandem-tagged WDR5 proteins quantitatively formed equivalent MLL-WDR5 protein complexes with endogenous subunits (Figure 4\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FPLC analysis data shown in Figure 4\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "ae52b6f5-a58c-46b9-aeed-368dc1b81b88",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C97",
+      "claim": "WDR5 binds over 1400 endogenous RNAs in ESCs with potential for both cis and trans chromatin regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, WDR5 binds over 1400 endogenous RNAs in ESCs with potential for both cis and trans chromatin regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the RIPiT-seq data and comparison with ChIP-seq data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "bf8c1d5f-e144-4c63-a5bd-31cb11cd4d5e",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C98",
+      "claim": "Some WDR5-binding RNAs do not bind WDR5 as nascent transcripts, but only interact with WDR5 at a later stage of maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of many RNAs that bind WDR5 but not at its cognate genomic loci suggests that some WDR5-binding RNAs do not bind WDR5 as nascent transcripts, but only interact with WDR5 at a later stage of maturation and possibly for action in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that many WDR5-binding RNAs are not at genomic loci where WDR5 is bound.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "d947eb3d-9d29-43e8-a499-80f951a81b73",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C99",
+      "claim": "Some WDR5-binding RNAs may act in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of many RNAs that bind WDR5 but not at its cognate genomic loci suggests that some WDR5-binding RNAs do not bind WDR5 as nascent transcripts, but only interact with WDR5 at a later stage of maturation and possibly for action in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that many WDR5-binding RNAs are not at genomic loci where WDR5 is bound.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "c0a438a4-cd13-4c8f-9212-a193b799e3b9",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C100",
+      "claim": "Many ESC promoters can recruit WDR5 by mechanisms independent of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also imply many ESC promoters can recruit WDR5 by mechanisms independent of RNA, consistent with other reports (Ang et al., 2011; Jiang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that many WDR5 ChIP-seq peaks do not correspond to WDR5-binding RNAs, and is supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "ac54dcaf-e0f7-4f76-874f-aacac2f0e43b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C101",
+      "claim": "RNA binding to WDR5 increases protein stabilization on chromatin.",
+      "claim_type": "IMPLICIT",
+      "source": "Expressed lncRNAs bind the WDR5 protein to increase protein stabilization on chromatin, which facilitates MLL complex assembly and methyltransferase activity for target gene activation.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is depicted in the model shown in Figure 6 and is inferred from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "8575b028-2912-4e91-b351-9193765d4e12",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "claim_id": "C102",
+      "claim": "Without lncRNA binding, WDR5 fails to associate effectively with chromatin and is rapidly degraded.",
+      "claim_type": "IMPLICIT",
+      "source": "Without lncRNA binding, WDR5 fails to associate effectively with chromatin and is rapidly degraded.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is depicted in the model shown in Figure 6 and is supported by the experimental data on F266A mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9e9dace0-bf7b-4be3-9e78-90a53edb977b",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identified a specific RNA binding pocket on WDR5 through structure-guided mutagenesis. Four mutations (Y228A, L240A, K250A, F266A) significantly reduced HOTTIP lncRNA binding in vitro, defining a cleft between blades 5 and 6 that partially overlaps with the RbBP5 binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C33, C34, C35, and C93 are well-supported by systematic mutagenesis data (Figure 1B), structural analysis, and competition assays (Figure 1C). The identification of the RNA binding pocket is based on comprehensive experimental evidence including in vitro binding assays and structural modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "8cc4582c-503f-4446-b296-3cc9a523bf24",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HOTTIP and RbBP5 share an overlapping binding pocket on WDR5, as demonstrated by peptide competition experiments where RbBP5 peptide blocks HOTTIP binding but H3K4me3 peptide does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C37, and C94 are supported by competition assay data (Figure 1C) showing selective inhibition of HOTTIP binding by RbBP5 peptide. This provides direct evidence for overlapping binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "7df93993-ded0-40b0-8a0f-5c07475accd4",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The F266A mutation selectively abrogates RNA binding without affecting MLL complex assembly. In vivo, both K250A and F266A mutations fully abrogated HOTTIP binding, while F266A actually increased RbBP5 binding to ~120%, suggesting competitive binding between RNA and RbBP5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38-C42 are supported by RNA immunoprecipitation data (Figure 1D) showing differential effects of mutations on HOTTIP vs RbBP5 binding. The F266A mutant shows selective loss of RNA binding while maintaining or enhancing protein-protein interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "5b262298-6f36-4563-890c-29a5e8bba1ae",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The F266A mutation does not affect WDR5's affinity for MLL complex components (RbBP5, MLL1, Ash2L, H3 peptides) or the in vitro catalytic activity of the MLL1 complex, as demonstrated by isothermal calorimetry, GST pull-down assays, and histone methylase activity assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 and C5 are well-supported by multiple orthogonal biochemical assays (Figures 2A-C) including ITC, GST pull-downs, and methylase activity assays. The data consistently show that F266A selectively affects RNA binding without compromising protein-protein interactions or enzymatic activity in vitro.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "cd05b51a-d6f1-46fb-9a76-e96f56dfc9e5",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Despite normal in vitro activity, WDR5 F266A is severely defective in gene activation in cells, requiring >100-fold more plasmid than wild-type to achieve similar luciferase reporter activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C7 are supported by luciferase assay data (Figure 2D) showing dramatic functional impairment of F266A in cellular gene activation despite normal biochemical activity. This reveals a critical disconnect between in vitro and in vivo function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "3b728f01-88d4-4a87-9ee5-3fd7a76da060",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA binding is essential for WDR5 protein stability and nuclear/chromatin localization. WDR5 F266A is depleted in nuclear and chromatin fractions and has reduced nuclear half-life (~12 hr vs ~24 hr for WT), while cytoplasmic stability is unaffected. RNA binding extends WDR5 nuclear half-life by approximately 12 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 and C73 are supported by fractionation experiments (Figures 3E-F) and pulse-chase analysis (Figure 3G) showing differential stability of WT vs F266A in nuclear vs cytoplasmic compartments. The data clearly demonstrate RNA-dependent regulation of WDR5 protein stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "WDR5 F266A is unable to maintain H3K4me3 levels in ESCs. While F266A shows ~50% reduction in H3K4me3 in steady state (similar to WT), promoter shutoff causes >80% reduction in H3K4me3 with F266A compared to ~50% with WT, indicating that RNA binding is critical for robustness of the active chromatin state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C8, C48-C50, C77, C80-C83 are supported by western blot data (Figure 3D) showing differential H3K4me3 maintenance under steady-state vs stress conditions. The data reveal that RNA binding stabilizes WDR5 function and makes H3K4me3 less sensitive to fluctuations in WDR5 levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "016babaf-da6f-4ba1-82f5-641d0abd1944",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "WDR5 binds over 1400 endogenous RNAs in ESCs (mRNAs, lncRNAs, pri-miRNAs, snoRNAs) in a F266A-sensitive manner, including 23 previously identified ESC lncRNAs. Six of these lncRNA partners are required for ESC pluripotency or differentiation, suggesting both cis and trans regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C57-C59, and C97 are supported by RIPiT-seq data (Figure 4A-B) using the F266A mutant as a negative control. The identification of 1434 RNAs that bind WT but not F266A provides genome-wide validation of the RNA binding pocket and reveals extensive RNA-WDR5 interactions in ESCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "22451ef0-80bd-468f-8325-d0cd07629a2f",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparison of WDR5 RIPiT-seq and ChIP-seq data reveals that 590 genes bound by WDR5 on chromatin also produce RNAs that bind WDR5, while many WDR5-binding RNAs are not at WDR5 chromatin binding sites. This suggests both cis-acting (nascent transcript binding) and trans-acting mechanisms, and that many ESC promoters can recruit WDR5 independently of RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C98-C100 are supported by integrated analysis of RIPiT-seq and ChIP-seq data (Figure 4C-D). The limited overlap between RNA binding and chromatin occupancy provides evidence for multiple modes of WDR5 recruitment and function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "89d53693-dbac-49a0-b426-1ad848820655",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "WDR5 F266A is defective in ESC self-renewal. F266A ESCs show ~50% reduction in alkaline phosphatase-positive colonies with doxycycline (similar to WT without doxycycline), but >90% reduction upon doxycycline withdrawal, with cells forming differentiated alkaline phosphatase-negative clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C66-C68, and C79 are supported by alkaline phosphatase staining and colony formation assays (Figure 5A-B). The data show progressive loss of ESC self-renewal capacity with F266A mutation, particularly under stress conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "978cbfbd-b768-4154-b1cb-0fd2938854c2",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "WDR5 F266A fails to maintain the ESC gene expression program. ESCs expressing F266A show reduced expression of pluripotency regulators (Pou5f1, Nanog, Sox2, Esrrb) and increased expression of differentiation markers (Cdx2, Fgf5, Nestin), with ectopic activation of ectodermal and mesodermal lineage genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 and C78 are supported by qRT-PCR validation (Figure 5D-E) and genome-wide microarray analysis (Figure 5C). The data demonstrate that RNA binding is essential for WDR5's role in maintaining ESC identity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "6d0eb117-81fa-41e0-aa7d-aa02e9bff9e5",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors conclude that specific RNAs are integral inputs into the WDR5-MLL complex for maintenance of active chromatin and ESC fates. RNA binding increases WDR5 protein stabilization on chromatin, facilitating MLL complex function, while loss of RNA binding leads to rapid WDR5 degradation and chromatin dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 and C101-C102 represent the main conclusions drawn from the collective experimental data. The model is well-supported by the convergence of multiple lines of evidence showing that RNA binding is required for WDR5 stability, chromatin association, H3K4me3 maintenance, and ESC self-renewal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "efb60517-5cfb-4226-9393-a75a762a17fe",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that lncRNAs may regulate protein occupancy on chromatin during cellular maintenance and aid in multigenerational transmission of epigenetic regulators. They suggest that multiple RNA interaction domains in the MLL complex indicate potentially multiple roles for RNAs in controlling H3K4me3 and active chromatin programming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C76 and C92 are speculative interpretations based on the observed effects of RNA binding on WDR5 stability. While the speculation is reasonable given the ~24 hr half-life approaching cell cycle time, these claims about multigenerational transmission and broader roles for RNA are not directly tested and require additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about WDR5, MLL complex, H3K4me3, lncRNAs, and their roles in chromatin regulation and ESC biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C14-C32, and C47 represent established knowledge from the literature, supported by appropriate citations. These provide necessary context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "918608be-ffd7-482d-bdb9-45201e7788aa",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion of how the findings relate to prior work on lncRNA-chromatin complex interactions, including comparisons to PRC2 and noting that multiple MLL complex components have RNA-binding capabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C91 contextualize the findings within the broader literature on RNA-protein interactions in chromatin regulation. These are appropriately supported by citations and help interpret the significance of the WDR5-RNA interaction data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "36177b98-0a73-4ab7-b953-76a9c98de0a8",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Specific examples of WDR5-binding lncRNAs and mRNAs with known roles in ESC biology, including lincRNA-1552 which regulates ~100 mRNAs including Nanog and Pou5f1, and 23 mRNAs from genes important for ESC pluripotency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by integration of RIPiT-seq data with prior functional studies (citations to Guttman et al., 2011 and Ivanova et al., 2006). These provide specific examples validating the functional relevance of WDR5-RNA interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    },
+    {
+      "id": "62c974ac-b5a8-4c4a-a90c-4f8a60cfc700",
+      "content_id": "6fc2be82-5cb7-4e4d-b03e-b0aaa212fa2e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Technical validation claims: WDR5 is a barrel-shaped protein with charged clefts, and tandem-tagged WDR5 WT and F266A form equivalent MLL complexes with endogenous subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 are supported by structural data and FPLC analysis (Figure 4\u2014figure supplement 1A,B). These validate the experimental system and confirm that the F266A mutation does not disrupt complex formation in cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:13.730817Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a45fecc2-f18a-45ad-bfc6-9678a236b78b",
+      "result_id": "9e9dace0-bf7b-4be3-9e78-90a53edb977b"
+    },
+    {
+      "claim_id": "7df53882-83c5-4f67-8f89-f8c37e022257",
+      "result_id": "9e9dace0-bf7b-4be3-9e78-90a53edb977b"
+    },
+    {
+      "claim_id": "cc0983ff-c1f2-45af-b275-f8a96a84659d",
+      "result_id": "9e9dace0-bf7b-4be3-9e78-90a53edb977b"
+    },
+    {
+      "claim_id": "83438f7d-f34e-47d0-bf64-1c3a714c02c5",
+      "result_id": "9e9dace0-bf7b-4be3-9e78-90a53edb977b"
+    },
+    {
+      "claim_id": "4117ffa7-0518-423a-93e8-9b1589c968f4",
+      "result_id": "9e9dace0-bf7b-4be3-9e78-90a53edb977b"
+    },
+    {
+      "claim_id": "a33532a0-d60c-4194-a529-631ba0469e7b",
+      "result_id": "8cc4582c-503f-4446-b296-3cc9a523bf24"
+    },
+    {
+      "claim_id": "e9a6077c-ae7b-49d3-adb4-670ff9eea47a",
+      "result_id": "8cc4582c-503f-4446-b296-3cc9a523bf24"
+    },
+    {
+      "claim_id": "011fa58b-ad98-455f-ad8d-453154d23daf",
+      "result_id": "8cc4582c-503f-4446-b296-3cc9a523bf24"
+    },
+    {
+      "claim_id": "9e2ef4ef-3c6f-40cc-b0ce-c30a51a1c9e4",
+      "result_id": "7df93993-ded0-40b0-8a0f-5c07475accd4"
+    },
+    {
+      "claim_id": "3b058bbf-2bc9-4d25-8f18-af76978e4dee",
+      "result_id": "7df93993-ded0-40b0-8a0f-5c07475accd4"
+    },
+    {
+      "claim_id": "4cafd6c8-77ec-4fae-807e-fc17253f03ec",
+      "result_id": "7df93993-ded0-40b0-8a0f-5c07475accd4"
+    },
+    {
+      "claim_id": "77c8ab46-684f-48fa-8096-e71d16b45d8f",
+      "result_id": "7df93993-ded0-40b0-8a0f-5c07475accd4"
+    },
+    {
+      "claim_id": "5476d8a2-768f-42a4-a5b0-d4ec3022e50f",
+      "result_id": "7df93993-ded0-40b0-8a0f-5c07475accd4"
+    },
+    {
+      "claim_id": "a68d6077-e837-4094-b5f8-2322d97f6c84",
+      "result_id": "7df93993-ded0-40b0-8a0f-5c07475accd4"
+    },
+    {
+      "claim_id": "8cc31ed0-f7ff-44e2-aeaf-63e46fcf22ad",
+      "result_id": "5b262298-6f36-4563-890c-29a5e8bba1ae"
+    },
+    {
+      "claim_id": "8b5ad300-08fe-4f89-8499-8af28fb8bd7a",
+      "result_id": "5b262298-6f36-4563-890c-29a5e8bba1ae"
+    },
+    {
+      "claim_id": "d510c516-f2df-4dec-ab62-735a55e10106",
+      "result_id": "5b262298-6f36-4563-890c-29a5e8bba1ae"
+    },
+    {
+      "claim_id": "623a90bc-0cc8-4f22-85d3-303837ae00f4",
+      "result_id": "5b262298-6f36-4563-890c-29a5e8bba1ae"
+    },
+    {
+      "claim_id": "388c5f2e-b520-463e-a7fc-0963f98bc4b9",
+      "result_id": "cd05b51a-d6f1-46fb-9a76-e96f56dfc9e5"
+    },
+    {
+      "claim_id": "fa37674f-3570-4553-8c4e-233c7a75d33f",
+      "result_id": "cd05b51a-d6f1-46fb-9a76-e96f56dfc9e5"
+    },
+    {
+      "claim_id": "4e25f575-1e8a-40f1-b09c-9f1a1ff8e241",
+      "result_id": "3b728f01-88d4-4a87-9ee5-3fd7a76da060"
+    },
+    {
+      "claim_id": "5ca9ca53-9383-45de-994c-06329c91055d",
+      "result_id": "3b728f01-88d4-4a87-9ee5-3fd7a76da060"
+    },
+    {
+      "claim_id": "e915fdb6-2c9c-461d-aabf-d0e838070e49",
+      "result_id": "3b728f01-88d4-4a87-9ee5-3fd7a76da060"
+    },
+    {
+      "claim_id": "a0a45863-162d-48ab-8291-0db2f3e01800",
+      "result_id": "3b728f01-88d4-4a87-9ee5-3fd7a76da060"
+    },
+    {
+      "claim_id": "3a32996c-1030-4470-abbe-71ae26f27b13",
+      "result_id": "3b728f01-88d4-4a87-9ee5-3fd7a76da060"
+    },
+    {
+      "claim_id": "7f11baa0-608d-425f-80ae-c48e6a7a16cc",
+      "result_id": "3b728f01-88d4-4a87-9ee5-3fd7a76da060"
+    },
+    {
+      "claim_id": "87d642cc-3438-4ceb-b821-5ee11cf686a9",
+      "result_id": "3b728f01-88d4-4a87-9ee5-3fd7a76da060"
+    },
+    {
+      "claim_id": "f682047e-3760-49da-bbf6-5a502a9c148b",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "861c8b05-cbee-4f1a-981b-145aab8f351a",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "d0ef3b3d-5d52-4465-9c2f-20b6c0db4bac",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "61ee370c-707e-4839-8ece-27304e46b8cf",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "84f61d97-2043-4c8e-84cc-e9c2f06100c3",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "e330eb94-cf82-492f-bb06-c5e5a3067e5b",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "28425514-792f-4ea2-8f50-3fae9bdf1805",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "536322e5-e526-4249-9501-f7d530a81769",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "433614a7-a558-4e44-8421-8ae97f0b9e0d",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "a90b78b5-828e-4b05-88c7-7af6e56e8adc",
+      "result_id": "c513d58a-998a-4c1c-bf94-dea6e191e5cb"
+    },
+    {
+      "claim_id": "ec93ff90-3cce-4743-a30c-3f9df7d20924",
+      "result_id": "016babaf-da6f-4ba1-82f5-641d0abd1944"
+    },
+    {
+      "claim_id": "34028e80-36d8-4008-a7ba-649a9facd1ba",
+      "result_id": "016babaf-da6f-4ba1-82f5-641d0abd1944"
+    },
+    {
+      "claim_id": "3d56b102-a3c4-4ada-9a97-e3fe71d6fa43",
+      "result_id": "016babaf-da6f-4ba1-82f5-641d0abd1944"
+    },
+    {
+      "claim_id": "832d0071-6961-4d98-b195-aabd4fbc607c",
+      "result_id": "016babaf-da6f-4ba1-82f5-641d0abd1944"
+    },
+    {
+      "claim_id": "ae52b6f5-a58c-46b9-aeed-368dc1b81b88",
+      "result_id": "016babaf-da6f-4ba1-82f5-641d0abd1944"
+    },
+    {
+      "claim_id": "9688f689-a01e-4277-b886-3110d05a6fb6",
+      "result_id": "22451ef0-80bd-468f-8325-d0cd07629a2f"
+    },
+    {
+      "claim_id": "bf8c1d5f-e144-4c63-a5bd-31cb11cd4d5e",
+      "result_id": "22451ef0-80bd-468f-8325-d0cd07629a2f"
+    },
+    {
+      "claim_id": "d947eb3d-9d29-43e8-a499-80f951a81b73",
+      "result_id": "22451ef0-80bd-468f-8325-d0cd07629a2f"
+    },
+    {
+      "claim_id": "c0a438a4-cd13-4c8f-9212-a193b799e3b9",
+      "result_id": "22451ef0-80bd-468f-8325-d0cd07629a2f"
+    },
+    {
+      "claim_id": "7198fcd5-21b2-48f6-998c-7fc70123affb",
+      "result_id": "89d53693-dbac-49a0-b426-1ad848820655"
+    },
+    {
+      "claim_id": "854b1b79-e9d3-4894-a808-35dac74a672e",
+      "result_id": "89d53693-dbac-49a0-b426-1ad848820655"
+    },
+    {
+      "claim_id": "c2ce3fa1-2a6d-4f42-a5ca-028756a5102e",
+      "result_id": "89d53693-dbac-49a0-b426-1ad848820655"
+    },
+    {
+      "claim_id": "3eb76313-5b9d-4850-ba6b-f0d6723ab193",
+      "result_id": "89d53693-dbac-49a0-b426-1ad848820655"
+    },
+    {
+      "claim_id": "2f843e02-93ca-45fe-91bf-91186bb7619b",
+      "result_id": "89d53693-dbac-49a0-b426-1ad848820655"
+    },
+    {
+      "claim_id": "15dbbe4d-247f-41cc-9b07-71e71714c225",
+      "result_id": "978cbfbd-b768-4154-b1cb-0fd2938854c2"
+    },
+    {
+      "claim_id": "91e34b96-29cd-460e-87b7-308a4acca2b9",
+      "result_id": "978cbfbd-b768-4154-b1cb-0fd2938854c2"
+    },
+    {
+      "claim_id": "6ca247b0-4ffa-4246-ad12-9b6fe1ffa495",
+      "result_id": "978cbfbd-b768-4154-b1cb-0fd2938854c2"
+    },
+    {
+      "claim_id": "57ffc63c-1769-4c2b-91b2-756627370fb3",
+      "result_id": "978cbfbd-b768-4154-b1cb-0fd2938854c2"
+    },
+    {
+      "claim_id": "90d5b85b-4404-46c8-b5d1-ed01a254c0d9",
+      "result_id": "978cbfbd-b768-4154-b1cb-0fd2938854c2"
+    },
+    {
+      "claim_id": "f137d9c5-a1a7-4bf6-8b44-3bc24a353c38",
+      "result_id": "6d0eb117-81fa-41e0-aa7d-aa02e9bff9e5"
+    },
+    {
+      "claim_id": "d76115db-f6dc-4aad-b96d-0779c22772b9",
+      "result_id": "6d0eb117-81fa-41e0-aa7d-aa02e9bff9e5"
+    },
+    {
+      "claim_id": "ac54dcaf-e0f7-4f76-874f-aacac2f0e43b",
+      "result_id": "6d0eb117-81fa-41e0-aa7d-aa02e9bff9e5"
+    },
+    {
+      "claim_id": "8575b028-2912-4e91-b351-9193765d4e12",
+      "result_id": "6d0eb117-81fa-41e0-aa7d-aa02e9bff9e5"
+    },
+    {
+      "claim_id": "ca299ef9-0588-418e-bf7c-640917c5ac04",
+      "result_id": "efb60517-5cfb-4226-9393-a75a762a17fe"
+    },
+    {
+      "claim_id": "928053e9-4ce1-4d3d-bcb1-d12aef040c30",
+      "result_id": "efb60517-5cfb-4226-9393-a75a762a17fe"
+    },
+    {
+      "claim_id": "e9e283b6-f96e-4eb9-94dd-f62b1084f0ca",
+      "result_id": "efb60517-5cfb-4226-9393-a75a762a17fe"
+    },
+    {
+      "claim_id": "d17c0ceb-1071-4a0d-92a2-7238a623af4b",
+      "result_id": "efb60517-5cfb-4226-9393-a75a762a17fe"
+    },
+    {
+      "claim_id": "d0eb1318-3b7f-42e1-b5d3-176ce556dc67",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "c4a85a43-aecf-430e-af25-bb119b311202",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "b03a87a9-4305-468b-b551-7c799db3c6f6",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "6d8784fd-1a0c-48ce-8429-70634ab977e9",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "29a05ba6-aadb-405c-ba06-053c88418b35",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "aa33a63d-9745-4ebf-aeb7-13ddc59c4fce",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "4dd83213-d629-46df-a0c6-69152d206bab",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "dc027063-0997-448d-954e-ffc72022123f",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "6634e503-877c-4732-9c15-1fecd408576c",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "f5617d92-d3ad-4ef8-9803-afb847a4bee6",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "d4f3b5f5-3484-46f2-bc7f-ed577b44a74b",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "e573c0c7-7155-4b60-9e9a-078fd717d96a",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "bac18e83-8e4f-43e9-8410-09e297da69a3",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "4d0b77f8-e93f-4c12-97f3-757cf56093f7",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "c71f3844-ef0b-4dfd-afbc-51231ca8d9ed",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "df0c1eb1-99d8-4b98-9053-1d7826e30e5a",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "3cd71679-c49a-461c-ba6a-a41f7601963e",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "e30f9ce0-0993-4229-a8e5-66147865f1b8",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "292bcc3a-aed4-40cc-87e4-02a8560c8e1e",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "5b6e127a-2562-4632-a1e0-619388cce8a8",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "2933e984-ebe9-4aa4-bd91-f0532653c050",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "aa9c1c27-b649-4287-828f-00afeb94bd2a",
+      "result_id": "e58fed4c-cc01-4e85-84b0-44bbbb773b13"
+    },
+    {
+      "claim_id": "fc1b59cb-63cc-4ad9-b159-8c935ce7758d",
+      "result_id": "918608be-ffd7-482d-bdb9-45201e7788aa"
+    },
+    {
+      "claim_id": "feeff3f7-8c1a-4cf1-8fe9-8eade9a965d0",
+      "result_id": "918608be-ffd7-482d-bdb9-45201e7788aa"
+    },
+    {
+      "claim_id": "58fea05a-576b-4a6b-adfe-7708cdcfac36",
+      "result_id": "918608be-ffd7-482d-bdb9-45201e7788aa"
+    },
+    {
+      "claim_id": "689ac2fa-844f-4fcd-ba93-e4235b83abd0",
+      "result_id": "918608be-ffd7-482d-bdb9-45201e7788aa"
+    },
+    {
+      "claim_id": "18dae904-6a9d-4c89-a6e2-7b65da0bf019",
+      "result_id": "918608be-ffd7-482d-bdb9-45201e7788aa"
+    },
+    {
+      "claim_id": "1824a9c8-5c44-40ab-942d-a0169993c29f",
+      "result_id": "918608be-ffd7-482d-bdb9-45201e7788aa"
+    },
+    {
+      "claim_id": "20473558-ee88-4363-9402-6a75e21252d9",
+      "result_id": "918608be-ffd7-482d-bdb9-45201e7788aa"
+    },
+    {
+      "claim_id": "c46a6cae-a1ad-4864-80e8-b86fd9bf9c78",
+      "result_id": "918608be-ffd7-482d-bdb9-45201e7788aa"
+    },
+    {
+      "claim_id": "1a241b1c-2bfa-4959-91a1-9de9b2f34ee2",
+      "result_id": "36177b98-0a73-4ab7-b953-76a9c98de0a8"
+    },
+    {
+      "claim_id": "36a8d109-4f30-4c9f-9fa2-97553a1f4163",
+      "result_id": "36177b98-0a73-4ab7-b953-76a9c98de0a8"
+    },
+    {
+      "claim_id": "56ad0e8f-b792-438b-91e2-99533174a6f9",
+      "result_id": "36177b98-0a73-4ab7-b953-76a9c98de0a8"
+    },
+    {
+      "claim_id": "157da44e-361c-4283-a7c9-c4d127413a58",
+      "result_id": "36177b98-0a73-4ab7-b953-76a9c98de0a8"
+    },
+    {
+      "claim_id": "44bcc034-83b0-49cb-9693-75795307dc0c",
+      "result_id": "36177b98-0a73-4ab7-b953-76a9c98de0a8"
+    },
+    {
+      "claim_id": "c0f2bd65-c340-4267-b92e-388ba422204a",
+      "result_id": "62c974ac-b5a8-4c4a-a90c-4f8a60cfc700"
+    },
+    {
+      "claim_id": "35dea81b-51ec-4e90-a5a8-56944526d7bf",
+      "result_id": "62c974ac-b5a8-4c4a-a90c-4f8a60cfc700"
+    }
+  ],
+  "comparisons": []
+}

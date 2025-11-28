@@ -1,0 +1,2453 @@
+{
+  "submission": {
+    "id": "e4cb55b7-e5e5-49bf-8025-298d0a667e8a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:01:31.649327Z",
+    "updated_at": "2025-11-28T21:01:31.649327Z"
+  },
+  "content": [
+    {
+      "id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "submission_id": "e4cb55b7-e5e5-49bf-8025-298d0a667e8a",
+      "content_type": "manuscript",
+      "content_text": "# Core promoter factor TAF9B regulates neuronal gene expression\n\n## Authors\n\n- Francisco J Herrera<sup>1</sup> \u2020\n- Teppei Yamaguchi<sup>1</sup>\n- Henk Roelink<sup>1</sup>\n- Robert Tjian<sup>1</sup>\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n3. CIRM Center of Excellence, Li Ka Shing Center For Biomedical and Health Sciences, University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEmerging evidence points to an unexpected diversification of core promoter recognition complexes that serve as important regulators of cell-type specific gene transcription. Here, we report that the orphan TBP-associated factor TAF9B is selectively up-regulated upon in vitro motor neuron differentiation, and is required for the transcriptional induction of specific neuronal genes, while dispensable for global gene expression in murine ES cells. TAF9B binds to both promoters and distal enhancers of neuronal genes, partially co-localizing at binding sites of OLIG2, a key activator of motor neuron differentiation. Surprisingly, in this neuronal context TAF9B becomes preferentially associated with PCAF rather than the canonical TFIID complex. Analysis of dissected spinal column from Taf9b KO mice confirmed that TAF9B also regulates neuronal gene transcription in vivo. Our findings suggest that alternative core promoter complexes may provide a key mechanism to lock in and maintain specific transcriptional programs in terminally differentiated cell types.\n\n## Introduction\n\nSequence-specific transcription factors are essential for directing cellular differentiation and identity. These factors play key roles in establishing gene expression patterns that dictate cell-type specific functions and characteristics. Cellular reprogramming and de-differentiation leading to the formation of induced pluripotent stem cells offer dramatic examples of how targeted expression of particular sets of transcription factors can control cell fate (reviewed by Graf, 2011). Sequence-specific transcription factors work in concert with a cohort of co-activator complexes and core promoter recognition factors to execute transcriptional activation. These core promoter factors often called \u2018basal\u2019 or \u2018general\u2019 transcription factors have traditionally been considered invariant and universally required for the expression of all protein-coding genes. However, recent studies suggest that at least some components of this large and diverse group of factors necessary to form the transcriptional pre-initiation complex (PIC) can exhibit both promoter and enhancer targeting activities that are cell-type specific. This specificity depends on the variegated composition of the components in the PIC (reviewed in D'Alessio et al., 2009; Goodrich and Tjian, 2010; M\u00fcller et al., 2010).\n\nThe first evidence of tissue-specific functions of core PIC factors came from studies of TAF (TBP-associated factors) subunits in the core promoter recognition factor TFIID. A paralog of TAF4, called TAF4B, was found to control oocyte-specific activation of transcription in mouse ovaries (Freiman et al., 2001). In Drosophila, a group of five TAF paralogs (No hitter/TAF4; Cannonball/TAF5; Meiois I arrest/TAF6; Spermatocyte arrest/TAF8; and Ryan express/TAF12) all play specific roles in spermatogenesis (Hiller et al., 2004; Chen et al., 2005). Similarly, another orphan TAF, TAF7L, cooperates with TBP-related factor 2 (TRF2) to regulate spermatogenesis in mice (Cheng et al., 2007; Zhou et al., 2013a). Tissue-specific functions of TAF7L were also found in adipocytes where it acts in conjunction with PPAR\u03b3 to control the transcription necessary for adipogenesis (Zhou et al., 2013b). In mouse embryonic stem (ES) cells, TAF3 pairs up with CTCF to drive the expression of endoderm specific genes while in myoblasts TAF3 works with TRF3 in the differentiation of myotubes (Deato and Tjian, 2007; Liu et al., 2011). Collectively these experiments suggest that combinations of different subunits of the multi-protein core promoter factors can be enlisted to participate in gene- and tissue-specific regulatory functions. Thus, mouse ES cells and other progenitor cells very likely have quite different requirements for such factors compared to terminally differentiated mature cell-types. Dissecting the various diversified mechanisms that control gene transcription in terminally differentiated cells should contribute to our still rudimentary understanding of the gene regulatory processes that modulate homeostasis in somatic cells and those that could lead to degeneration of adult tissue in disease states. A more detailed analysis of these critical molecular mechanisms may also help improve new strategies to achieve efficient cellular reprogramming and stem cell differentiation.\n\nDespite emerging evidence for unexpected activities carried out by core promoter factors in various cellular differentiation pathways, little was known about their potential involvement in the formation of neurons during embryogenesis. In this study we explore whether TAFs or other core promoter recognition factors become engaged in neuronal specific functions to regulate the expression of neuronal genes. To address this question we used an in vitro differentiation protocol to induce murine ES cells to form spinal cord motor neurons (MN), which control muscle movement. Loss of motor neurons gives rise to devastating diseases, including amyotrophic lateral sclerosis (ALS) (reviewed by Robberecht and Philips, 2013). Consequently, motor neurons have been the focus of intense study and several key classical sequence-specific DNA-binding transcription factors regulating the expression of motor neuron-specific genes have been identified (reviewed by di Sanguinetto et al., 2008; Kanning et al., 2010). However, there was scant information regarding the role, if any, of core promoter factors in directing the network of gene transcription necessary to form neurons. In this report, we have combined genomics, biochemical assays, and gene knockout strategies to dissect the transcriptional mechanism used to generate motor neurons from murine ES cells in vitro as well as to uncover novel in vivo neuronal-specific changes in core promoter factor involvement and previously undetected co-activator functions.\n\n## Results\n\n### TAF9B is up-regulated upon neuronal differentiation\n\nTo examine whether the expression of various components of the core promoter recognition complex changes upon neuronal differentiation, we induced ES cells to form motor neurons using retinoic acid (RA) and the smoothened agonist SAG as described previously (Wichterle et al., 2002). We confirmed the generation of motor neurons in embryoid bodies (EBs) by immunostaining for motor neuron-specific markers LHX3 and ISL1/2 (Figure 1A) as well as by RNA-seq analysis (Figure 1\u2014figure supplement 1A). To obtain enriched populations of motor neurons, we differentiated a murine ES cell line containing a motor neuron-specific promoter (Mnx1) fused to GFP as a means of isolating post-mitotic motor neurons present in these EBs (Figure 1B, Figure 1\u2014figure supplement 1B; Wichterle et al., 2002). Using this highly enriched motor neuron cell population, we compared the mRNA expression levels of genes coding for canonical TAF subunits in TFIID as well as various TAF paralogs (Figure 1C). As seen in other differentiated cell types, several TAFs are down-regulated upon motor neuron differentiation (Figure 1; Deato and Tjian, 2007; D'Alessio et al., 2011; Zhou et al., 2013b; Guermah et al., 2003). Intriguingly, one TAF paralog (Taf9b) was significantly up-regulated in GFP expressing (GFP+) motor neurons but not in the GFP negative (GFP\u2212) cells (Figure 1C). We confirmed that the up-regulation of TAF9B and down-regulation of several other TAFs occur at the level of both mRNA and protein (Figure 1D), and follows the kinetics of post-mitotic neuronal marker Tubb3 but not the progenitor cell markers Pax6 and Olig2 (Figure 1\u2014figure supplement 1C). We next dissected spinal cord tissue from newborn mice and performed RNA-seq to measure in vivo Taf expression levels and compare them to those observed for mouse ES cells in culture. As expected, most Taf subunits of TFIID in newborn spinal cord are expressed at lower levels than in mouse ES cells, while Taf9b is up-regulated more than 10-fold, consistent with the results obtained with the in vitro differentiated motor neurons (Figure 1E). Notably, changes in the expression levels of Tafs in newborn spinal cord are more pronounced than what we observed for the in vitro differentiated motor neurons. We also found that many components of the PIC and selected co-activators were down-regulated upon neuronal differentiation (Figure 1\u2014figure supplement 1D and 1E). These results strongly suggest that induction of TAF9B upon neuronal differentiation is specific and distinct from regulated expression of most other subunits of the PIC.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig1-v1.jpg)\n\n**Figure 1.:** (A) Mouse embryonic stem (ES) cells were differentiated into motor neurons (MN) using embryoid body cultures (EB-MN) for 6 days and immunostained with MN markers ISL1/2 and LHX3, and neuronal marker TUJ1. (B) Mouse ES cells containing a MN-specific GFP marker were used to isolate GFP expressing (GFP+) MN cells and to monitor induction of MN under different sonic hedgehog (SHH) concentrations. (C) TAF expression levels were measured by qRT-PCR in GFP+ and GFP negative (GFP\u2212) cells sorted from EB-MN differentiated for 6 days and compared to the levels observed in undifferentiated ES cells. Bars show mean \u00b1 SD of three biological replicates. (D) Western blot analysis of ES cells and EB-MN differentiated for 6 and 8 days detecting TAFs, the neuronal marker TUBB3, the ES cell marker OCT4, and ACTB. (E) RNA-seq analysis of TAF expression comparing mouse ES cells and mouse newborn spinal cord tissue. Bars show FPKM values of spinal cord tissue relative to FPKM values of ES cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Gene expression levels detected by RNA-seq analysis comparing mouse ES cells and EB-MN cells differentiated for 6 days. Fold inductions are shown as log2 fold change between EB-MN and ES cells. (B) Mouse ES cells containing a MN-specific GFP marker were used to isolate GFP expressing (GFP+) and GFP negative (GFP\u2212) cells and qRT-PCR analysis was done to compare levels of induction of neuronal markers Tubb3, Mnx1, and Isl1 in both populations. Bars show mean \u00b1 SD of three biological replicates. (C) qRT-PCR analysis detecting Taf9b, neuronal marker Tubb3, and progenitor markers Pax6 and Olig2 in mouse ES cells differentiated into EB-MN in the presence of SAG and Notch inhibitor DAPT (\u2018Materials and methods\u2019). Graphs represent mean \u00b1 SD of three biological replicates. (D) RNA-seq analysis comparing the expression levels of components of the core promoter machinery between mouse ES cells and newborn spinal cord tissue. Data points show FPKM values of spinal cord tissue relative to FPKM values of ES cells. MEDs = mediator subunits, GTFs = General transcription factors subunits (TFIIA-TFIIH, not including TFIID). (E) RNA-seq analysis comparing the expression levels of the components of the SAGA and ATAC complexes between mouse ES cell and newborn spinal cord tissue.\n\n### TAF9B is dispensable for global gene expression in mouse ES cells\n\nTo test the function of TAF9B in mouse ES cells and during motor neuron differentiation, we used Taf9b knock-out (KO) ES cells generated by the trans-NIH Knock-Out Mouse Project (KOMP). In these cells, all protein-coding exons of Taf9b have been replaced with the LacZ-Neo cassette (Figure 2A). As expected, the induction of Taf9b upon motor neuron differentiation was detected only in wild type (WT) cells but not in Taf9b KO cells (Figure 2B,C). We found that Taf9b KO cells have a normal mouse ES cell morphology and can be grown in the presence of LIF without displaying any obvious cell growth or cell cycle defects (Figure 2D and data not shown). To determine the role of TAF9B in regulating transcription in murine ES cells, we performed RNA-seq analysis to compare global gene expression patterns in WT and Taf9b KO cells. The results show that TAF9B is largely dispensable for global gene expression with only a small number of genes deregulated under these conditions (Figure 2E). Interestingly, whereas the core TAF components of TFIID have recently been reported to be critical for murine ES cell pluripotency and in controlling genes such as Pou5f1, Nanog and Klf4 (Pijnappel et al., 2013), the absence of TAF9B did not affect expression of pluripotency markers (Figure 2E,F). These results suggest that, unlike other TAFs present in the canonical TFIID complex, TAF9B is dispensable for global gene expression and pluripotency of murine ES cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig2-v1.jpg)\n\n**Figure 2.:** (A) In Taf9b KO murine ES cells a LacZ-Neo cassette replaces all protein coding exons of Taf9b gene on the X chromosome. (B) qRT-PCR of in vitro differentiated EB-MN for 6 and 8 days detecting the expression of Taf9b in WT and Taf9b KO cells. Bars show mean \u00b1 SEM of three biological replicates. (C) Western blot analysis of in vitro differentiated EB-MN for 6 and 8 days detecting the expression of TAF9B in WT and Taf9b KO cells. (D) Cell cycle profile of WT and Taf9b KO ES cells based on BrdU incorporation. Graph represents average values of two independent biological duplicates. (E) RNA-seq analysis of WT and Taf9b KO ES cells grown in undifferentiated conditions. Scatter plot represents FPKM values for genes expressed in WT and Taf9b KO cells. Red dots are genes whose expression is affected more than twofold with p-values <0.05. Gray dots represent genes not changing more than the selected cutoff. (F) qRT-PCR analysis of the ES cell markers Pou5f1 and Nanog in WT and Taf9b KO ES cells grown in undifferentiated conditions. Bars show mean \u00b1 SEM of three biological replicates.\n\n### TAF9B is required for efficient differentiation of motor neurons\n\nWe next tested whether TAF9B is required for efficient in vitro motor neuron differentiation. ES cells were differentiated as described previously and motor neuron markers Isl1, Mnx1, and Lhx3 were measured by qRT-PCR. We observed a significant reduction in all motor neuron markers in Taf9b KO cells upon differentiation (Figure 3A). Immunostaining for motor neuron marker ISL1/2 as well as western blot analysis for TUBB3 further confirmed that motor neuron differentiation was compromised in Taf9b KO cells (Figure 3B,C). We next measured the down-regulation of ES specific markers Pou5f1 and Nanog upon differentiation and found that Taf9b KO cells failed to efficiently down-regulate these ES cell markers (Figure 3A). Immunostaining of OCT4 and NANOG confirmed that a fraction of cells in these neuralized EBs derived from Taf9b KO cells continue to express pluripotency markers, whereas few or no cells expressing OCT4 and NANOG were detected in WT cells (Figure 3B). Consistent with the maintenance of an undifferentiated state, a higher number of dividing cells persisted in Taf9b KO EBs as determined by the marker for cellular proliferation Ki67 (Figure 3B). We also found an increase in apoptosis in Taf9b KO cells compared to WT controls during early stages of differentiation (Figure 3D). These differences in apoptosis were particularly prominent at day 4 when progenitor cells are most enriched. This is consistent with previous observations implicating TAF9B in cell survival and control of apoptosis in human HeLa cells (Chen and Manley, 2003; Frontini et al., 2005). Taken in aggregate, our findings suggest that TAF9B is required for the efficient in vitro differentiation of murine ES cells into motor neurons, and that the absence of TAF9B causes the persistent expression of pluripotency markers under differentiation conditions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig3-v1.jpg)\n\n**Figure 3.:** (A) qRT-PCR analysis for the MN markers (Mnx1, Lhx3, Isl1) and ES cell markers (Pou5f1 and Nanog) in WT and Taf9b KO cells differentiated for 6 days. Values are relative to undifferentiated ES cells. Bars show mean \u00b1 SEM of three biological replicates. (B) WT and Taf9b KO EB-MN, differentiated for 6 days, were immunostained using antibodies against MN marker ISL1/2, ES cell markers OCT4 and NANOG, and cellular proliferation marker Ki67. (C) Western blot analysis of WT and Taf9b KO EB-MN samples differentiated for 6 and 8 days detecting neuronal marker TUBB3 and ACTB. (D) Apoptosis levels were determined using an annexin V based assay in WT and Taf9b KO cells at different time points during MN differentiation. Graph shows mean \u00b1 SEM for the ratio of Taf9b KO to WT cells in three biological replicates.\n\n### Efficient induction of neuronal genes requires TAF9B\n\nTo obtain a more comprehensive view of the role of TAF9B during motor neuron differentiation, we performed RNA-seq analysis at regular intervals during in vitro motor neuron differentiation of WT and Taf9b KO ES cells. We found that as motor neuron differentiation progressed there was a concomitant increase in the number of genes deregulated by the loss of TAF9B (Figure 4A). Striking deregulation of genes in Taf9b KO cells was observed at the time point at which progenitor cells are most enriched in these cultures (day 4). Genes known to be important for neuronal progenitor identity such as Olig2, Pax6, Sox1, Nkx6-1, Nkx6-2, Gli1, and genes controlled by the Notch signaling pathway were among the most down-regulated by the loss of TAF9B (Figure 4B, Figure 4\u2014figure supplement 1A). Gene ontology (GO) terms analysis of down-regulated genes showed categories such as neuron differentiation and anterior/posterior pattern formation among the most enriched terms (Figure 4\u2014figure supplement 1B). Among up-regulated genes we found genes involved in apoptosis (Supplementary file 1), which is consistent with the increase in apoptosis levels we observed in Taf9b KO cells at this time point. By day 6, when post-mitotic motor neurons are normally present in these cultures, approximately 10% of all expressed genes were down-regulated and another 10% were up-regulated in Taf9b KO cells. This finding suggests that TAF9B is specifically required for the appropriate expression of a subset of genes, rather than for global gene expression in these differentiated EBs. The most significant GO term categories of genes down-regulated by the loss of TAF9B in this time point included genes involved in neuron differentiation, axogenesis, and neuron projection (Figure 4C). Moreover, the specific motor neuron markers Lhx3, Lhx4, Isl1, Mnx1, and pan-neuronal marker Tubb3 were among the most down-regulated genes in Taf9b KO cells (Figure 4B). In contrast, genes up-regulated in Taf9b KO cells were enriched in categories such as vascular development, stem cell maintenance, and other non-neuronal developmental categories (Figure 4C). Contrary to the large number of genes deregulated in neuralized EB samples, we found that samples differentiated for 2 days have a relatively small number of genes affected in Taf9b KO cells. Interestingly, genes involved in differentiation were still found among these early down-regulated genes (Supplementary file 1). These results indicate that TAF9B controls the expression of specific genes required at least for the in vitro differentiation of murine ES cells into motor neurons.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig4-v1.jpg)\n\n**Figure 4.:** (A) RNA-seq analysis of WT and Taf9b KO cells at different time points during EB-MN differentiation. Scatter plots represent FPKM values for genes expressed in WT and Taf9b KO cells. Red dots are genes whose expression is affected more than twofold with p-values <0.05. Gray dots represent genes not changing more than the selected cutoff. (B) Selected genes from RNA-seq analysis are shown as log2 fold change between Taf9b KO and WT cells. Examples are given for key genes expressed in ES cells, progenitor cells, and motor neurons. (C) GO term analysis of genes affected by the loss of TAF9B in RNA-seq analysis of EB-MN differentiated for 6 days. Lists show the top eight GO term Biological Process categories obtained ranked by p-value.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) qRT-PCR analysis of progenitor markers (Sox1, Pax6, Nkx6-2) during differentiation of WT and Taf9b KO ES cells into EB-MN. qRT-PCR analysis of MN markers (Isl1, Mnx1, Lhx3) and ES cell markers (Pou5f1, Nanog) from Figure 3 as well as Krt18 are shown as full time course. Graphs show mean \u00b1 SEM of three biological replicates. (B) GO term analysis of genes affected by the loss of TAF9B in RNA-seq analysis of EB-MN differentiated for 4 days. Lists show the top eight GO term Biological Process categories obtained ranked by p-value.\n\n### TAF9B binds promoters and distal regions of neuronal genes\n\nTo determine whether TAF9B acts directly to regulate neuronal genes we mapped its binding sites genome-wide by ChIP-seq. Because most TAFs are expected to bind to promoters as part of TFIID in the PIC, we compared ChIP-seq peaks of TAF9B with those of RNA POL2. Approximately a third of all detected TAF9B binding regions overlapped with RNA POL2 occupancy (TAF9B-POL2) and mapped generally near transcription start sites (TSS) of protein coding genes (Figure 5A, Figure 5\u2014figure supplement 1B,C). However, TAF9B peaks located at TSS were not enriched at promoters of neuronal specific genes (Figure 5B). Intriguingly, approximately two thirds of all TAF9B binding regions showed little or no overlap with regions of high RNA POL2 occupancy (TAF9B-only) and were generally located distal to annotated TSS (Figure 5A, Figure 5\u2014figure supplement 1B, 1C). Importantly, genes with TAF9B bound to regions distal to their TSS were significantly enriched in neuronal genes categories, including GO terms such as midbrain-hindbrain boundary development, rostrocaudal neural tube patterning and dorsal spinal cord development (Figure 5B). Several of the most down-regulated genes in the absence of TAF9B detected by RNA-seq (e.g., Neurog2 and Lhx4) were associated with TAF9B distal binding sites (Figure 5\u2014figure supplement 1A,E). Moreover, genes bearing distal TAF9B peaks (e.g., 500\u20135000 bp from TSS) showed a higher percentage of genes down-regulated in Taf9b KO neuralized EBs than control gene sets (Figure 5\u2014figure supplement 1D). Collectively, these results suggest that distal TAF9B binding sites are likely functional regulatory elements controlling neuronal genes. We subsequently compared the binding sites of TAF9B to the binding sites of OLIG2, a key transcriptional activator involved in motor neuron differentiation mapped previously (Mazzoni et al., 2011). We found co-localization between TAF9B and OLIG2 at both the TAF9B distal peaks and at the TAF9B TSS peaks, suggesting that TAF9B and OLIG2 act in concert at a subset of neuronal genes to regulate gene expression during motor neuron development (Figure 5C). The incomplete overlap of TAF9B and OLIG2 peaks may in part represent intrinsic differences between progenitor cells and post-mitotic neurons, since the OLIG2 binding was performed with neuralized EBs enriched for progenitor cells while TAF9B mapping was done with EBs enriched for post-mitotic motor neurons. In addition, it is likely that TAF9B co-localizes with activators other than OLIG2 in this developmental pathway.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig5-v1.jpg)\n\n**Figure 5.:** (A) ChIP-seq analysis of TAF9B and RNA POL2 binding sites in EB-MN samples differentiated for 8 days. TAF9B and RNA POL2 ChIP-seq peaks examples are given for Tubb3 and Hes6 genes. (B) List of top GO terms Biological Process of genes associated to TAF9B distal peaks and TAF9B peaks at annotated transcription start sites (TSS) ranked by p-value. Association of ChIP-seq peak to annotated genes and GO analysis was performed using GREAT. (C) Co-localization of TAF9B distal peaks and TAF9B peaks at TSS with OLIG2 ChIP-seq peaks in EB-MN samples.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) TAF9B, OLIG2, HOXC9 and RNA POL2 ChIP-seq peaks examples are given for Tubb3, Mnx1, Ngn2 and Hes6 genes. (B) Total numbers of peaks obtained by MACS in each ChIP-seq category. (C) ChIP-seq analysis of TAF9B and RNA POL2 binding sites in EB-MN samples relative to their distance to annotated transcription start sites (TSS) performed using GREAT. (D) Percentage of genes affected more than twofold in the absence of TAF9B as determined by RNA-seq analysis in Taf9b KO EB-MN differentiated for 6 days. Genes are grouped in different categories depending on the distance of the TAF9B peaks from their TSS. Genes associated to TAF9B-only peaks were used for the analysis. A gene list randomly generated was used as control. (E) Representative ChIP-qPCR analysis of TAF9B and RNA POL2 of selected loci identified by ChIP-seq. D = distal region, P = proximal promoter, NC = negative control. Bars represent mean \u00b1 SD of three replicates.\n\n### TAF9B is associated with a PCAF-containing complex\n\nSome TAFs are known to be part of not only the TFIID complex but also the SAGA complex (Spt-Ada-Gcn5-acetyltransferase), which can mediate histone acetylation and deubiquitination (reviewed by Spedale et al., 2012). In human HeLa cells, TAF9B had previously been reported to be a component of both the TFIID and SAGA complexes (Frontini et al., 2005). To test whether TAF9B in mouse neurons is primarily associated with TFIID or SAGA-like complexes, we performed co-immunoprecipitation (co-IP) experiments with antibodies against TAF9B using in vitro differentiated motor neurons. We observed little detectable association of TAF9B with TAF4 and TAF7, core components of the TFIID complex, while TBP antibodies co-IP'ed those TFIID components efficiently. In contrast, we observed an association between TAF9B and PCAF, a histone acetyltransferase present in the mammalian SAGA complex (Figure 6A). Immunoprecipitations of 293T cells transfected with flag-tagged versions of TAF9B or TAF9 confirmed that these IPs are specific for TAF9B and not the closely related TAF9 subunit (Figure 6B). We also performed TAF9B co-IP experiments on dissected spinal column tissue samples from WT and Taf9b KO newborn mice, confirming that the interactions between TAF9B and PCAF occur in vivo (Figure 6C). Thus, TAF9B primarily associates with PCAF likely in a SAGA-like complex rather than the canonical TFIID in murine neurons.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig6-v1.jpg)\n\n**Figure 6.:** (A) TAF9B and TBP were immunoprecipitated from EB-MN cells differentiated for 8 days and co-immunoprecipitated proteins analyzed by western blotting using antibodies against the TFIID subunits TAF4 and TAF7, and the histone acetyltransferase PCAF. (B) 293T cells were transfected with pCMV-3xFLAG-TAF9B or -TAF9, immunoprecipitated with TAF9B antibodies, and analyzed by western blotting using anti-Flag antibodies. (C) TAF9B was immunoprecipitated from spinal column extracts from WT and Taf9b KO newborn mice and co-immunoprecipitated proteins were analyzed by western blotting detecting TAF4, TBP and PCAF.\n\n### TAF9B controls neuronal gene expression in vivo\n\nTo test the in vivo role of TAF9B during neuronal development, we generated a KO mouse using the Taf9b KO ES cells obtained from KOMP (Figure 7\u2014figure supplement 1A). Taf9b KO mice were viable and fertile, though the number of pups and birth weights were reduced in Taf9b KO matings compared to WT controls (Figure 7\u2014figure supplement 1C). As expected, spinal cord isolated from newborn KO animals did not express TAF9B (Figure 7A,B, Figure 7\u2014figure supplement 1D). Given that Taf9b KO cells in vitro showed clear de-regulation of genes in both progenitor cells and post-mitotic motor neurons (Figure 4), we surmised that loss of TAF9B in vivo may affect not only motor neuron formation but perhaps also proper differentiation of other cell types present in the spinal cord. To test whether neuronal gene expression in vivo is specifically affected in the absence of TAF9B, we carried out RNA-seq analysis to compare whole lumbar spinal column tissue dissected from newborn WT and KO littermates (Figure 7C). Our data indicate that genes down-regulated in the absence of TAF9B are enriched for neuronal genes including gene categories such as neuron projection, synapse and axonogenesis (Figure 7D). Among the down-regulated genes identified by RNA-seq were neuronal genes such as Map1b, L1cam, Nefm, Nefh, and Isl2. Gene expression analysis by qRT-PCR of lumbar spinal column tissues confirmed that those neuronal genes are consistently down-regulated in KO compared to WT littermate controls (Figure 7E). Several different markers of specific neuronal populations, as well as the general marker Tubb3, were also affected in the absence of TAF9B, suggesting a global defect in neuronal gene expression in the spinal cord (Figure 7\u2014figure supplement 1E; Supplementary file 2). These results are also consistent with a global reduction in neuronal tissue compared to surrounding non-neuronal tissue in the dissected spinal column preparations. Our data suggest that the observed pan-neuronal down-regulation and loss of neuronal tissue may be due to problems in the control of gene expression that coordinates the precise differentiation of progenitor cells during neuronal development. These in vivo results taken together with our in vitro differentiation studies strongly support the notion that TAF9B is specifically required for the regulation of neuronal genes during neuronal development in the spinal cord.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig7-v1.jpg)\n\n**Figure 7.:** (A) Western blot analysis of spinal cord tissue from WT and Taf9b KO newborn mice detecting TAF9B and ACTB as control. (B) Spinal cord tissue from WT and Taf9b KO newborn mice were dissected and analyzed by qRT-PCR for Taf9b expression. Graph shows mean \u00b1 SEM of three biological replicates. (C) RNA-seq analysis of dissected lumbar spinal column tissue from WT and Taf9b KO newborn mice. Scatter plot represents FPKM values of genes expressed in WT and Taf9b KO samples. Red dots are genes whose expression is affected more than twofold with p-values <0.05. Gray dots represent genes not changing more than the selected cutoff. (D) GO term analysis of genes affected by the loss of TAF9B in RNA-seq analysis. List shows the top eight GO term Biological Process categories obtained ranked by p-value. (E) Gene expression analysis by qRT-PCR of lumbar spinal columns tissues of newborn mice. Graphs represent mean \u00b1 SEM of littermate comparisons (WT n = 6, KO n = 8).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02559/elife-02559-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Taf9b KO ES cells were used to generate a Taf9b chimeric mouse which was subsequently mated with WT to test for germline transmission and obtain Taf9b heterozygous mice. (B) Representative PCR-based DNA genotyping of Taf9b KO mice. Primers are described in Supplementary file 3. (C) Number of pups and weight of newborn mice from WT \u00d7 WT and KO \u00d7 KO matings. (D) RNA-seq data of spinal cord sample for Taf9b locus in WT and Taf9b KO animals. (E) Gene expression analysis by qRT-PCR of lumbar spinal columns tissues of newborn mice. Graphs represent mean \u00b1 SEM of littermate comparisons (WT n = 6, KO n = 8).\n\n## Discussion\n\nThe control of tissue-specific gene expression has been largely attributed to the combinatorial action of transcriptional activators and repressors. These regulatory factors are thought to interact in concert with a highly conserved and prototypic set of core promoter recognition proteins and co-activators that form the PIC at gene promoters. However, this model has been challenged by different studies demonstrating changes that occur in the core promoter machinery in a tissue-specific manner (reviewed by D'Alessio et al., 2009; Goodrich and Tjian, 2010). Despite the emerging roles that these core promoter components play in regulating cell-type specific gene expression, relatively little was known about possible changes that may occur in the composition of core promoter factors during neuronal differentiation. In this study, we screened for changes in the expression of core promoter factors including TAFs, general transcript factors (GTFs), and mediator subunits (MEDs) upon neuronal differentiation. We found that most of the components in the mammalian PIC are expressed at relatively low levels in dissected spinal cord tissue compared to ES cells. Likewise, we observed down-regulation of several of these core promoter recognition components during in vitro differentiation of murine ES cells into motor neurons. By contrast, one orphan TAF, TAF9B, becomes highly up-regulated during motor neuron formation. Using a loss-of-function approach, we found that TAF9B is required for the efficient expression of neuronal genes upon in vitro motor neuron differentiation. Importantly, we found that TAF9B is dispensable for global gene expression in undifferentiated ES cells in contrast to the critical role that other TAFs in TFIID play in these cells (Pijnappel et al., 2013). Using ChIP-seq, we found that TAF9B binds promoter and distal regulatory regions of neuronal genes co-localizing in a subset of regions with OLIG2, a key regulator of motor neuron differentiation. Strikingly, Taf9b KO mice showed defects in the expression of neuronal genes examined by transcriptome analysis of whole spinal column tissues. Importantly, the mechanism by which TAF9B mediates neuronal-specific transcription programs is unlike all previous TAF involvement in cell specific function: rather than operating through TFIID or distal enhancer complexes (Freiman et al., 2001; Liu et al., 2011; Zhou et al., 2013b), it associates with a SAGA/PCAF co-activator complex.\n\nOur results and those of several other studies probing tissue-specific activities of core promoter factors and co-activators suggest a model in which changes in these complexes are integral to the transcriptional program leading to terminal differentiation. Different cell types employ distinct combinations of activators that must engage in specific protein\u2013protein interactions with core promoter factors. We speculate that rather than existing as a static complex awaiting recruitment by these transcription factors, core promoter complexes themselves must undergo compositional changes using cell type-specific components such as TAF9B. These alternative promoter complexes expand the diversity and number of possible protein\u2013protein transactions necessary to achieve proper fine-tuned control of gene expression. Furthermore, we speculate that such diversified core machineries might provide a mechanism to help lock down and maintain the functions and identity of differentiated cell types. We imagine that in a given cell type, if the silencing of an undesirable activator or repressor is imperfect, their specific interacting partners in the targeted core machinery may nevertheless not be present, thus serving as a fail safe mechanism to prevent unscheduled alterations in programs of gene transcription. We suspect that such core promoter complex dependent control and maintenance of cell identity would likely be accompanied by activator selectivity and integrated with changes in chromatin structure and other layers of regulation that must work coordinately to keep expression patterns stable yet responsive to different stimuli in terminally differentiated cells. We anticipate that further analysis of adult neuronal cell-types as well as other differentiated somatic cells will bring new insights regarding the use of alternative core machineries that regulate gene expression in normal and disease states.\n\nTo start addressing these questions in the context of tissues in vivo, we generated Taf9b KO mice. We found that mice lacking TAF9B are viable, indicating that this orphan TAF is either not critical for normal development of cell-types other than neurons or its function is partly redundant with the closely related TAF9 homolog. We established that indeed Taf9 is highly expressed in both mouse ES cells and neurons (as detected by RNA-seq). It is possible that TAF9 partially compensates for the loss of TAF9B thus blunting further global gene expression defects in Taf9b KO cells. In human HeLa and chicken DT40 cells partially redundant functions have been observed for these paralogs (Chen and Manley, 2003; Frontini et al., 2005). It will be interesting to test whether Taf9 KO mouse are viable and whether the double KO of these two related genes (Taf9 and Taf9b) results in more pronounced phenotypes. No Taf9 KO mice have been reported to date. Taf4b and Taf7l KO mice are also viable, but unlike Taf9b KO mice, they are infertile (Freiman et al., 2001; Falender, 2005; Zhou et al., 2013a). Our results suggest that TAF9B is not critical for gametogenesis, in contrast to what has been observed for these two other orphan TAFs. Instead, our results point to a model where TAF9B is involved in the activation of neuronal genes by binding to distal and promoter proximal DNA regulatory elements associated with the histone acetyltransferase PCAF that, like its paralog GCN5, are subunits of the SAGA/STAGA/TFTC complex. This complex contains several TAFs shared with TFIID including TAF6, TAF9, TAF5, TAF10, TAF12, and a de-ubiquitinase (DUB) module that removes ubiquitin from histone H2B (reviewed by Spedale et al., 2012; Weake and Workman, 2012). Because TAFs are structural components of both SAGA and TFIID complexes, it is possible that TAF9B is affecting the competitive recruitment or activity of a SAGA-like complex in place of TFIID.\n\nAmong the genes affected by the loss of TAF9B are several targets of the Notch- and Shh-signaling pathway, both known to play key roles in neuronal development (reviewed by Louvi and Artavanis-Tsakonas, 2006; Jessell, 2000). Interestingly, several lines of evidence connect the activation of Notch dependent genes with the PCAF-containing complex providing a potential link between PCAF, TAF9B, and activation of these genes. For example, PCAF has been shown to cooperate with another co-activator protein, p300, in Notch intracellular domain-dependent transcription assays using chromatin templates in vitro, as well as in transfection/reporter assays (Kurooka and Honjo, 2000; Wallberg et al., 2002). Other components of the SAGA complex have been linked to the specific control of gene expression in cells of the central nervous system. Mutations in two subunits of the Drosophila DUB complex, Nonstop and Sgf11, lead to defects in neural development in the optic lobe (Weake et al., 2008). In mice, mutations in the HAT domain of GCN5 result in defects in cranial neural tube closure and embryonic lethality (Bu et al., 2007). In humans, mutations in the DUB subunit ATXN7 are associated with the development of spinocerebellar ataxia type 7, a disease characterized by the loss of motor control as well as retinal defects (reviewed by Koutelou et al., 2010). Interestingly, we observed that Taf9b KO mice display defects in eye development including microphthalmia and cataracts-like phenotypes albeit with modest penetrance (data not shown). The type of neuronal-specific role performed by TAF9B is reminiscent of the cell-type specific roles of particular subunits of the ATP-dependent chromatin remodeling complex BAF. This complex undergoes changes in composition upon neuronal differentiation as specific BAF subunits are incorporated in neuronal progenitors cells as well as in post-mitotic neurons (Olave et al., 2002; Lessard et al., 2007).\n\nIn this study, we have focused on characterizing the molecular phenotypes and have documented defects in gene regulation due to the absence of TAF9B during in vitro differentiation of motor neurons and in vivo in spinal column tissues. It is also possible that the down-regulation of neuronal genes observed in whole spinal column tissues in Taf9b KO mice may represent a specific loss of neuronal tissue relative to the surrounding vertebrae due perhaps to defects in neuronal progenitor cells during embryonic development. In future experiments, we hope to address the extent of potential neurological defects in Taf9b KO mice, including deficits in motor skills as well as other potential neurological defects due to the role that TAF9B may be playing in other neuronal populations besides motor neurons. Preliminary experiments using Taf9b KO mice carrying the LacZ reporter gene suggest that Taf9b is highly expressed in the developing hypothalamus at mid-gestation (data now shown). In a recent study describing neuronal activity-dependent ribosome profiling in the adult mouse hypothalamus (Knight et al., 2012), Taf9b can be identified in the genomic data set as highly expressed in this tissue compared to several other TAFs. Moreover, the levels of Taf9b mRNA associated with ribosomes increased when neurons in the hypothalamus were activated, while several other TAFs were expressed at low levels or not enriched in a neuronal activity-dependent manner. These results suggest that TAF9B may be involved in setting up transcriptional responses in at least certain neuronal circuits in the hypothalamus. In the future, it will be interesting to directly test the role of TAF9B in the adult hypothalamus and to extend the analysis to other adult neuronal types.\n\n## Materials and methods\n\n### Cell culture\n\nMurine embryonic stem cells were grown in embryoMAX DMEM (EMD Millipore, Billerica, MA) supplemented with LIF and 15% FBS. Cells were differentiated into embryoid bodies enriched in motor neurons (EB-MN) as described previously (Wichterle et al., 2002). 2 \u00d7 105 cells/ml were incubated in differentiation media (25% embryoMAX DMEM, 25% F12 media, 25% neurobasal media, 1x B27 supplement, 1.5 mM L-glutamine and 0.1 mM \u03b2-mercaptoethanol) supplemented with 1 \u03bcM retinoic acid and 0.8 \u03bcM smoothened agonist SAG (N-Methyl-N\u2032-[3-pyridinylbenzyl]-N\u2032-[3-chlorobenzo{b}thiophene-2-carbonyl]-1,4-diaminocyclohexane, VWR, Radnor, PA) for up to 8 days. Samples were collected at different times as indicated. SHH conditioned media was generated by transfecting 293T cells with a vector expressing Shh-N and used when noted. The Notch signaling pathway inhibitor DAPT (N-[N-{3,5-difluorophen- acetyl}-l-alanyl]-S-phenylglycine t-butyl ester, Tocris Bioscience, United Kingdom) was added when noted to deplete progenitor cells and enrich for post-mitotic neurons in the culture (Crawford and Roelink, 2007). The Taf9b KO mouse ES cells (Taf9btm1(KOMP)Vlcg) were generated by the trans-NIH Knock-Out Mouse Project (KOMP) and obtained from the KOMP Repository (www.komp.org). NIH grants to Velocigene at Regeneron Inc (U01HG004085) and the CSD Consortium (U01HG004080) funded the generation of gene-targeted ES cells for 8500 genes in the KOMP Program and archived and distributed by the KOMP Repository at UC Davis and CHORI (U42RR024244). We confirmed the described deletion by DNA sequencing (data not shown). Since the Taf9b gene is located in the X chromosome this male KO ES cells are a complete null for this gene. JM8 WT murine ES cells are from the same genetic background as Taf9b KO ES cells (C57BL/6). JM8 and Taf9b KO ES cells were grown on MEF feeder layers inactivated with mitomycin C (Sigma-Aldrich, St. Louis, MO). Murine ES cells carrying a GFP reporter under Mnx1 promoter (HBG3) were described previously (Wichterle et al., 2002).\n\n### qRT-PCR\n\nTotal RNA was isolated using RNeasy kit (Qiagen, Germany) and cDNA was generated using Superscript III RT system using manufacture's instructions (Life Technologies, Carlsbad, CA). Primers used in these assays are described in Supplementary file 3. Relative expression levels in in vitro time course differentiation experiments were normalized to total RNA. Relative levels of expression of spinal column tissues were normalized to Gapdh. PCR reactions were performed using SYBR Green PCR Master Mix according to the manufacturer's instructions in an ABI 7300 real time PCR machine (Applied Biosystems, Grand Island, NY).\n\n### Vector, plasmids and transfections\n\nTaf9b and Taf9 cDNAs were obtained from Open Biosystems clones (TAF9B clone ID#30468965, TAF9 clone ID#5006430) and cloned into p3xFLAG-CMV-10 vector to obtain p3xFLAG-CMV-TAF9B and -TAF9. Plasmids were transfected into 293T cells by lipofectamine 2000 (Life Technologies). Cells were collected 48 hr after transfection.\n\n### Co-Immunoprecipitations\n\nTransfected 293T cells were lysed and the protein concentration was measured by the Bradford method. EB-MN differentiated for 8 days were collected and nuclear extract was prepared as previously described (Pugh, 1995). Spinal column tissues were dissected from newborn mice, immediately frozen in liquid nitrogen, and stored at \u221280\u00b0C. Tissue samples were ground into powder in liquid nitrogen and cell lysis buffer was added to extract proteins. After centrifugation, the protein concentration was measured by the Bradford method. Indicated antibodies were mixed with protein A sepharose (GE Healthcare life science, Pittsburgh, PA) or protein G Dynabeads (Life technologies) for 1 hr at 4\u00b0C. Protein extracts (1 mg) were mixed with the antibodies/beads complexes for overnight at 4\u00b0C on a rotating wheel. The beads were washed three times with washing buffer containing 300 mM KCl and 0.05% NP-40 and once with washing buffer containing 100 mM KCl. Samples were boiled in SDS loading buffer for 5 min and analyzed by Western blotting using indicated antibodies.\n\n### Western blots and immunostainings\n\nWestern blots were performed using whole cell extracts and SDS-PAGE. Immunostainings of EB-MN were performed after fixing samples in 4% paraformaldehyde for 30 min at room temperature. Antibodies were incubated in PBS, 0.1% Triton X-100 and washed three times with PBS, 0.1% Triton X-100 for 10 min each time.\n\n### Antibodies\n\nAntibodies used are anti-TBP (cat#51841; Abcam, Cambridge, Massachusetts), anti-TAF4 (cat#612054; BD Biosciences, San Jose, CA), anti-TAF7 (cat#H00006879-M01; Abnova, Taiwan), anti-TAF9B (cat#A303-810A; #G2306 and Bethyl Laboratories, Montgomery, TX), anti-TAF10 (Santa Cruz cat#102125), anti-OCT4 (Santa Cruz cat#8628, Dallas, Texas), anti-TUBB3 (cat#MMS435P; Covance, Princeton, New Jersey), anti-ACTB (cat#A2228; Sigma-Aldrich), anti-RNA POL2 (8WG16; Clone), anti-PCAF (cat#13124; Santa Cruz), anti-ISL1/2 (Gift from the Jessell Lab, Columbia University), anti-NANOG (cat#A300-397A; Bethyl Laboratories), anti-Ki67 (cat#16667; Abcam), anti-FLAG (cat#F3165; Sigma-Aldrich) and Rabbit IgG control (cat#46540; Abcam). TAF9B antibodies #G2306 were produced by injecting a peptide corresponding to residues 226\u2013245 of TAF9B into rabbit by OpenBiosystems (GE Healthcare). Antiserum was tested for specificity using extracts from 293T cells transfected with p3xFLAG-CMV-TAF9B and -TAF9.\n\n### Cell cycle and apoptosis assays\n\nCell cycle was measured using BrdU Flow kit following manufacturer's instructions (cat#552598; BD Biosciences). Apoptosis was measured using PE annexin V apoptosis detection kit following manufacturer's instructions (cat#559763; BD Biosciences).\n\n### RNA-seq\n\nTotal RNA was isolated from cells or tissue extracts using RNeasy Kit (Qiagen) and 1.5 \u03bcg of total RNA was used to prepared Poly-A RNA-seq libraries following Illumina protocols. Samples were sequenced using Illumina Sequencers at the QB3 Vincent J Coates Genomics Sequencing Laboratory, UC Berkeley. Sequenced reads were mapped against RefSeq genes using TopHat (Trapnell et al., 2009) and differentially expressed genes were determined using Cuffdiff (Trapnell et al., 2010). Genes expressed more than 1 FPKM and with >twofold difference and p-value < 0.05 as calculated by Cuffdiff were considered as differentially expressed for scatter plots representations and for GO term analysis using DAVID Bioinformatic resources (Huang et al., 2009).\n\n### Chromatin IP and ChIP-seq\n\nChIP-seq was performed using 1 mg of chromatin for each IP reaction using antibodies against TAF9B (#G2306), RNA POL2 (8WG16), and IgG control with EB-MN differentiated for 8 days. EB-MN samples were fixed with 0.5% formaldehyde for 10 min at room temperature and ChIPs were performed as described previously (Liu et al., 2011; Zhou et al., 2013b). ChIP-qPCR experiments were performed using EB-MN samples differentiated for 6\u20138 days. ChIP-seq libraries were prepared following Illumina protocols and sequenced at the QB3 Vincent J Coates Genomics Sequencing Laboratory, UC Berkeley. Reads were mapped to UCSC version mm9 using Bowtie (Langmead et al., 2009). ChIP-seq peaks were determined using MACS (Zhang et al., 2008) and significant peaks were associated to genes using GREAT default parameters (McLean et al., 2010).\n\n### Mouse Taf9b KO\n\nAll animal experiments were performed in strict accordance with the recommendations in the guide for the care and use of laboratory animals of the National Institutes of Health and following the animal use protocol (#R007) approved by the Animal Care and Use Committee (ACUC) of the University of California, Berkeley. Taf9b KO mouse was generated in the UC Berkeley transgenic facility by injecting Taf9b KO murine ES cells (TAF9btm1(KOMP)Vlcg) into albino C57BL/6 background (C57BL/6J-Tyrc-2J) and chimeric mice were obtained. Taf9b heterozygous animals were backcrossed to WT C57BL/6 mice to obtain Taf9b heterozygous mice without the albino phenotype (Tyrc-2J). Mice were genotyped by PCR using primers detecting WT and KO sequences. Primers sequences are available in Supplementary file 3.\n",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f470ae6b-f216-48bb-93df-fb4cde722abd",
+      "submission_id": "e4cb55b7-e5e5-49bf-8025-298d0a667e8a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Robb Krumlauf, Stowers Institute for Medical Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02559.017](https://doi.org/10.7554/eLife.02559.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCore promoter factor TAF9B regulates neuronal gene expression\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom, Robb Krumlauf, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIt is the composite view of the reviewers that the work by Herrera et al. is in line with the mounting evidence that some of the so called \u201cgeneral transcription factors\u201d regulate cell specific gene expression in addition to their roles in general transcription. The authors report here that the TBP-related factor TAF9B is strongly and selectively induced upon motor neuron differentiation, and is required for the expression of a subset of neuronal-lineage genes. Taf9b mutant ESCs do not show a gross perturbation in their gene expression profile but neuronal gene marker transcription is selectively disrupted and their ability to be differentiated into MN is compromised. In agreement with the central hypothesis of this work, ChIP-seq analysis reveals that Taf9b associates with not only proximal elements but also to distal presumptive regulatory regions that are engaged by the sequence and lineage specific transcription factor Olig2. Moreover, Taf9b associates poorly with Taf4 and Taf7 but strongly with PCAF. Gene expression analysis of the spinal cord of Taf9b mutant mice reveals an altered expression profile where some genes expressed in neurons are down-regulated. Overall, the identification of TAF9B as a lineage-specific transcriptional regulator important for neuronal differentiation in cell culture and mice is an important contribution. There will clearly be strong interest in TAF9B going forward as a modulator/regulator of ESC differentiation and potentially also in hypothalamus function, for which this paper will be an important resource.\n\nThere are, however, some concerns that need to be addressed. One major issue is that the central message of the manuscript is stated as the \u201cCore promoter factor TAF9B regulates neuronal gene expression\u201d. The authors clearly demonstrate that in RA/Shh induced MN differentiation in ESCs is impaired. Figures 3 and 4 suggest that ESCs do not transition well into early stages of neuronal differentiation (i.e., lack of Sox1 and Pax6 induction and retention of Oct4 expression). However, this general neuronal differentiation phenotype conflicts slightly with the mutant phenotype in mice. Based on the data presented in Figure 7, rather than affecting general neuronal differentiation it is equally plausible that Taf9b is required for the differentiation of some specific neuronal fates during spinal cord development. To formally test and explore this idea the authors could easily take advantage of the existing RNA-seq data for control and mutant spinal cord tissue to examine the expression of several known genes expressed in different neuronal populations of the spinal cord (PMID:21729788). They might even consider following that with expression studies in spinal cord sections of some of these markers. Considering this possibility will not only consolidate the message, but it will make the case even stronger: the \u201cgeneral transcription factor\u201d Taf9b is required for the differentiation of specific neuronal types.\n\nMinor points to consider are:\n\n1) Specific gene targets strongly regulated by Taf9B are identified in this study (Mnx1, Lhx3, Lhx4, Isl1, Tubb3). However only very limited ChIP-Seq data is provided for specific genes (Ccnc and Calm1), which are distinct from those shown to be dependent on TAF9B. Please show the occupancy of TAF9B on the former set of neuronal genes, and also include markers to indicate the size of the genomic region and genes. Is transcription of Ccnc and Calm1 dependent on TAF9B?\n\n2) Occupancy of TAF9B is compared with that of RNAPII (POL2), but these are active genes so why is POL2 predominantly only at the TSS rather than distributed through the gene?\n\n3) In the graph at the far right in Figure 5B, the fragment sizes used are different lengths (i.e., 0 to 5kB versus 50-500kB), and makes it appear that TAF9B is spread out everywhere along the gene with relatively equal frequency, whereas this does not appear to be the case in the examples shown. Showing examples from the Mnx1, Lhx3, etc genes should clarify this point.\n\n4) The biochemical evidence that TAF9B associates with PCAF and not TFIID is clear, but there's no functional evidence that the association is relevant. Is PCAF required for the neuronal genes, and/or is there a strong association of TAF9B with PCAF in the ChIP-Seq? The colocalization with Oligo2 is only at 23% of sites, with the majority of TAF9B sites not in association with either POL2 or OLIG2. Presumably the association with PCAF would be stronger. Does PCAF complex levels change upon RA differentiation of the mESC cells to neuronal cell fate? If the association is required, then the PCAF levels may also rise in day 6 differentiation cultures.\n\n5) Due to the possible role of TAF9B on late stages of MN differentiation, and the misregulation of several \u201cpatterning\u201d and \u201caxon guidance\u201d genes based on GO terms, it could be informative to compare TAF9B with Hoxc9 binding. Hoxc9 controls patterning and the MN axon guidance in the thoracic spinal cord (PMID:20826310). The authors might consider exploring whether there is a correlation with Hoxc9, which could strengthen the concept of TAF9B binding with sequence-specific transcription factors to control CNS patterning.\n",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "96d8587c-11ed-4d97-ae03-c25b97517494",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C1",
+      "claim": "TAF9B is selectively up-regulated upon in vitro motor neuron differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that the orphan TBP-associated factor TAF9B is selectively up-regulated upon in vitro motor neuron differentiation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qRT-PCR and Western blot data showing increased TAF9B expression during motor neuron differentiation (Figure 1C, 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "6d0c56f5-e023-48ba-8bb3-74f6072a83d1",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C2",
+      "claim": "TAF9B is required for the transcriptional induction of specific neuronal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that the orphan TBP-associated factor TAF9B is selectively up-regulated upon in vitro motor neuron differentiation, and is required for the transcriptional induction of specific neuronal genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq analysis showing down-regulation of neuronal genes in Taf9b KO cells (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8318c434-eb62-43a5-942d-29b5fba6ae27",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C3",
+      "claim": "TAF9B is dispensable for global gene expression in murine ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that the orphan TBP-associated factor TAF9B is selectively up-regulated upon in vitro motor neuron differentiation, and is required for the transcriptional induction of specific neuronal genes, while dispensable for global gene expression in murine ES cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq analysis showing only a small number of genes deregulated in Taf9b KO ES cells (Figure 2E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "77de81ad-1b49-4106-9e4b-a1428b517c23",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C4",
+      "claim": "TAF9B binds to both promoters and distal enhancers of neuronal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "TAF9B binds to both promoters and distal enhancers of neuronal genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data showing TAF9B binding at TSS and distal regions (Figure 5A, Figure 5\u2014figure supplement 1B, 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "d71bc689-4bdc-4d6a-8da3-babd49be8b6b",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C5",
+      "claim": "TAF9B partially co-localizes at binding sites of OLIG2.",
+      "claim_type": "EXPLICIT",
+      "source": "TAF9B binds to both promoters and distal enhancers of neuronal genes, partially co-localizing at binding sites of OLIG2, a key activator of motor neuron differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq analysis showing overlap between TAF9B and OLIG2 binding sites (Figure 5C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "19085e50-7924-45ad-b8b7-c4d11c2c15e1",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C6",
+      "claim": "OLIG2 is a key activator of motor neuron differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "TAF9B binds to both promoters and distal enhancers of neuronal genes, partially co-localizing at binding sites of OLIG2, a key activator of motor neuron differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "d6370625-3fcb-4892-ba73-59a6d140075e",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C7",
+      "claim": "In the neuronal context, TAF9B becomes preferentially associated with PCAF rather than the canonical TFIID complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in this neuronal context TAF9B becomes preferentially associated with PCAF rather than the canonical TFIID complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by co-immunoprecipitation experiments showing TAF9B association with PCAF but not with TFIID components TAF4 and TAF7 (Figure 6A, 6C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f9bcf9f7-81a1-43d4-8be1-d15798305bbd",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C8",
+      "claim": "TAF9B regulates neuronal gene transcription in vivo in dissected spinal column from Taf9b KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of dissected spinal column from Taf9b KO mice confirmed that TAF9B also regulates neuronal gene transcription in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq analysis of spinal column tissue showing down-regulation of neuronal genes in Taf9b KO mice (Figure 7C, 7D, 7E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "409bf051-e908-4ea5-ab61-0f829af3a06d",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C9",
+      "claim": "Alternative core promoter complexes may provide a key mechanism to lock in and maintain specific transcriptional programs in terminally differentiated cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that alternative core promoter complexes may provide a key mechanism to lock in and maintain specific transcriptional programs in terminally differentiated cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the findings about TAF9B function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "09c7d472-e5c9-4237-9106-ebfcea3c762e",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C10",
+      "claim": "Sequence-specific transcription factors are essential for directing cellular differentiation and identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence-specific transcription factors are essential for directing cellular differentiation and identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "9aafc6be-a2de-4e4b-8966-9e5799925265",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C11",
+      "claim": "Sequence-specific transcription factors play key roles in establishing gene expression patterns that dictate cell-type specific functions and characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "These factors play key roles in establishing gene expression patterns that dictate cell-type specific functions and characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "e75bc7bd-b0f4-46ac-8008-92e0e7a684c0",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C12",
+      "claim": "Targeted expression of particular sets of transcription factors can control cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular reprogramming and de-differentiation leading to the formation of induced pluripotent stem cells offer dramatic examples of how targeted expression of particular sets of transcription factors can control cell fate (reviewed by Graf, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Graf, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a19e3bb8-3d89-4924-a146-0c8e2a333254",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C13",
+      "claim": "Core promoter factors have traditionally been considered invariant and universally required for the expression of all protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These core promoter factors often called 'basal' or 'general' transcription factors have traditionally been considered invariant and universally required for the expression of all protein-coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "590e3bc7-9304-4c9f-a677-d99eac7509f9",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C14",
+      "claim": "Some components of the pre-initiation complex can exhibit both promoter and enhancer targeting activities that are cell-type specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies suggest that at least some components of this large and diverse group of factors necessary to form the transcriptional pre-initiation complex (PIC) can exhibit both promoter and enhancer targeting activities that are cell-type specific. This specificity depends on the variegated composition of the components in the PIC (reviewed in D'Alessio et al., 2009; Goodrich and Tjian, 2010; M\u00fcller et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to D'Alessio et al., 2009; Goodrich and Tjian, 2010; M\u00fcller et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8d06539a-a98e-49fc-abed-416ceec65bdd",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C15",
+      "claim": "TAF4B controls oocyte-specific activation of transcription in mouse ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "A paralog of TAF4, called TAF4B, was found to control oocyte-specific activation of transcription in mouse ovaries (Freiman et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Freiman et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "ea60eec1-2950-4fb8-aa31-c3ee3c305968",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C16",
+      "claim": "In Drosophila, five TAF paralogs (No hitter/TAF4; Cannonball/TAF5; Meiois I arrest/TAF6; Spermatocyte arrest/TAF8; and Ryan express/TAF12) all play specific roles in spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, a group of five TAF paralogs (No hitter/TAF4; Cannonball/TAF5; Meiois I arrest/TAF6; Spermatocyte arrest/TAF8; and Ryan express/TAF12) all play specific roles in spermatogenesis (Hiller et al., 2004; Chen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hiller et al., 2004; Chen et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8a8e3fef-7bea-493d-95fb-3d99c729aa29",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C17",
+      "claim": "TAF7L cooperates with TRF2 to regulate spermatogenesis in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, another orphan TAF, TAF7L, cooperates with TBP-related factor 2 (TRF2) to regulate spermatogenesis in mice (Cheng et al., 2007; Zhou et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cheng et al., 2007; Zhou et al., 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "e9faf836-2046-4a3f-ace7-5eb89fe8fa26",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C18",
+      "claim": "TAF7L acts in conjunction with PPAR\u03b3 to control the transcription necessary for adipogenesis in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-specific functions of TAF7L were also found in adipocytes where it acts in conjunction with PPAR\u03b3 to control the transcription necessary for adipogenesis (Zhou et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhou et al., 2013b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "fbe3c509-49ef-461b-a74a-27e773b25115",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C19",
+      "claim": "In mouse embryonic stem cells, TAF3 pairs up with CTCF to drive the expression of endoderm specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse embryonic stem (ES) cells, TAF3 pairs up with CTCF to drive the expression of endoderm specific genes while in myoblasts TAF3 works with TRF3 in the differentiation of myotubes (Deato and Tjian, 2007; Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Deato and Tjian, 2007; Liu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "c79d9f99-9615-4ea7-8d8d-fdc8fbf63595",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C20",
+      "claim": "In myoblasts, TAF3 works with TRF3 in the differentiation of myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse embryonic stem (ES) cells, TAF3 pairs up with CTCF to drive the expression of endoderm specific genes while in myoblasts TAF3 works with TRF3 in the differentiation of myotubes (Deato and Tjian, 2007; Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Deato and Tjian, 2007; Liu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "18cf9c51-13f8-4755-bf75-0f695ed2bc08",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C21",
+      "claim": "Loss of motor neurons gives rise to devastating diseases, including amyotrophic lateral sclerosis (ALS).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of motor neurons gives rise to devastating diseases, including amyotrophic lateral sclerosis (ALS) (reviewed by Robberecht and Philips, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Robberecht and Philips, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "1b4691b7-8e80-41c8-ad53-c383ad121e4c",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C22",
+      "claim": "Several key classical sequence-specific DNA-binding transcription factors regulating the expression of motor neuron-specific genes have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, motor neurons have been the focus of intense study and several key classical sequence-specific DNA-binding transcription factors regulating the expression of motor neuron-specific genes have been identified (reviewed by di Sanguinetto et al., 2008; Kanning et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to di Sanguinetto et al., 2008; Kanning et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8b1369da-397f-4ee9-a540-6f8a3a5365cc",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C23",
+      "claim": "Taf9b was significantly up-regulated in GFP expressing (GFP+) motor neurons but not in the GFP negative (GFP\u2212) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, one TAF paralog (Taf9b) was significantly up-regulated in GFP expressing (GFP+) motor neurons but not in the GFP negative (GFP\u2212) cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "80d6bb70-6939-4c48-b731-82f48bc1798f",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C24",
+      "claim": "The up-regulation of TAF9B and down-regulation of several other TAFs occur at the level of both mRNA and protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the up-regulation of TAF9B and down-regulation of several other TAFs occur at the level of both mRNA and protein (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "cbf83562-16ba-42ee-8c21-d7a98a5ebef2",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C25",
+      "claim": "TAF9B expression follows the kinetics of post-mitotic neuronal marker Tubb3 but not the progenitor cell markers Pax6 and Olig2.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the up-regulation of TAF9B and down-regulation of several other TAFs occur at the level of both mRNA and protein (Figure 1D), and follows the kinetics of post-mitotic neuronal marker Tubb3 but not the progenitor cell markers Pax6 and Olig2 (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "9779861c-efa6-4873-87ec-d4641a188453",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C26",
+      "claim": "Most Taf subunits of TFIID in newborn spinal cord are expressed at lower levels than in mouse ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, most Taf subunits of TFIID in newborn spinal cord are expressed at lower levels than in mouse ES cells, while Taf9b is up-regulated more than 10-fold, consistent with the results obtained with the in vitro differentiated motor neurons (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a52b1407-fe07-463a-b83d-b7b623fa13e2",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C27",
+      "claim": "Taf9b is up-regulated more than 10-fold in newborn spinal cord compared to mouse ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, most Taf subunits of TFIID in newborn spinal cord are expressed at lower levels than in mouse ES cells, while Taf9b is up-regulated more than 10-fold, consistent with the results obtained with the in vitro differentiated motor neurons (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "dcff6a96-294c-4240-95f6-1b4d8ea41ce9",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C29",
+      "claim": "Many components of the PIC and selected co-activators were down-regulated upon neuronal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that many components of the PIC and selected co-activators were down-regulated upon neuronal differentiation (Figure 1\u2014figure supplement 1D and 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1\u2014figure supplement 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f2104e42-1e05-44d6-9801-0f32bcbf0546",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C30",
+      "claim": "Induction of TAF9B upon neuronal differentiation is specific and distinct from regulated expression of most other subunits of the PIC.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that induction of TAF9B upon neuronal differentiation is specific and distinct from regulated expression of most other subunits of the PIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential expression patterns observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "77ca6482-1107-46a0-8baf-82e4587fe787",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C31",
+      "claim": "In Taf9b KO ES cells, all protein-coding exons of Taf9b have been replaced with the LacZ-Neo cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cells, all protein-coding exons of Taf9b have been replaced with the LacZ-Neo cassette (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the genetic modification made to generate the KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "1128c02c-5cb6-48d4-826c-3a2733d5e682",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C32",
+      "claim": "The induction of Taf9b upon motor neuron differentiation was detected only in wild type (WT) cells but not in Taf9b KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the induction of Taf9b upon motor neuron differentiation was detected only in wild type (WT) cells but not in Taf9b KO cells (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR and Western blot data shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "11f8bdfa-b38f-4543-a7bc-247a1b0ca6ba",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C33",
+      "claim": "Taf9b KO cells have a normal mouse ES cell morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Taf9b KO cells have a normal mouse ES cell morphology and can be grown in the presence of LIF without displaying any obvious cell growth or cell cycle defects (Figure 2D and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological observation and cell cycle analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "dfc7cf60-f492-42b0-9545-3bb1de578e33",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C34",
+      "claim": "Taf9b KO cells can be grown in the presence of LIF without displaying any obvious cell growth or cell cycle defects.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Taf9b KO cells have a normal mouse ES cell morphology and can be grown in the presence of LIF without displaying any obvious cell growth or cell cycle defects (Figure 2D and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell cycle analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a545975f-d84b-4a5c-b387-0f46636cc6a6",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C35",
+      "claim": "TAF9B is largely dispensable for global gene expression in murine ES cells with only a small number of genes deregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that TAF9B is largely dispensable for global gene expression with only a small number of genes deregulated under these conditions (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "85ad93c0-bd3a-4b0b-b336-86b18c1c0152",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C36",
+      "claim": "Core TAF components of TFIID are critical for murine ES cell pluripotency and in controlling genes such as Pou5f1, Nanog and Klf4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas the core TAF components of TFIID have recently been reported to be critical for murine ES cell pluripotency and in controlling genes such as Pou5f1, Nanog and Klf4 (Pijnappel et al., 2013), the absence of TAF9B did not affect expression of pluripotency markers (Figure 2E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pijnappel et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f6bd6ac5-0cd4-41ce-b1cd-612c8c13c58a",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C37",
+      "claim": "The absence of TAF9B did not affect expression of pluripotency markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas the core TAF components of TFIID have recently been reported to be critical for murine ES cell pluripotency and in controlling genes such as Pou5f1, Nanog and Klf4 (Pijnappel et al., 2013), the absence of TAF9B did not affect expression of pluripotency markers (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq and qRT-PCR data shown in Figure 2E and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f2fad7a9-336f-477d-b85a-c9476ef2ad1e",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C38",
+      "claim": "Unlike other TAFs present in the canonical TFIID complex, TAF9B is dispensable for global gene expression and pluripotency of murine ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that, unlike other TAFs present in the canonical TFIID complex, TAF9B is dispensable for global gene expression and pluripotency of murine ES cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the RNA-seq and qRT-PCR data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "64d808d8-2f23-48c9-a119-706275913e87",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C39",
+      "claim": "A significant reduction in motor neuron markers Isl1, Mnx1, and Lhx3 was observed in Taf9b KO cells upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant reduction in all motor neuron markers in Taf9b KO cells upon differentiation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "b6b7d644-f05b-49ea-b873-3b63d87ac0c6",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C40",
+      "claim": "Motor neuron differentiation was compromised in Taf9b KO cells as confirmed by immunostaining for ISL1/2 and western blot for TUBB3.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for motor neuron marker ISL1/2 as well as western blot analysis for TUBB3 further confirmed that motor neuron differentiation was compromised in Taf9b KO cells (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining and Western blot data shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a2003978-705d-4b06-a964-9330cd8ae738",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C41",
+      "claim": "Taf9b KO cells failed to efficiently down-regulate ES cell markers Pou5f1 and Nanog upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We next measured the down-regulation of ES specific markers Pou5f1 and Nanog upon differentiation and found that Taf9b KO cells failed to efficiently down-regulate these ES cell markers (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "b9f08eea-ab49-47ba-91ed-32011cb6f2d6",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C42",
+      "claim": "A fraction of cells in neuralized EBs derived from Taf9b KO cells continue to express pluripotency markers OCT4 and NANOG, whereas few or no cells expressing OCT4 and NANOG were detected in WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining of OCT4 and NANOG confirmed that a fraction of cells in these neuralized EBs derived from Taf9b KO cells continue to express pluripotency markers, whereas few or no cells expressing OCT4 and NANOG were detected in WT cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "3b2e4162-5f06-4dd5-bd4c-26edfe24a52f",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C43",
+      "claim": "A higher number of dividing cells persisted in Taf9b KO EBs as determined by the marker for cellular proliferation Ki67.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the maintenance of an undifferentiated state, a higher number of dividing cells persisted in Taf9b KO EBs as determined by the marker for cellular proliferation Ki67 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "673b5988-8b9b-4dc1-ab32-a6b3f4209045",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C44",
+      "claim": "An increase in apoptosis was found in Taf9b KO cells compared to WT controls during early stages of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found an increase in apoptosis in Taf9b KO cells compared to WT controls during early stages of differentiation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by apoptosis assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "c518646b-46f9-4499-b055-9de9115bd545",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C45",
+      "claim": "Differences in apoptosis were particularly prominent at day 4 when progenitor cells are most enriched.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in apoptosis were particularly prominent at day 4 when progenitor cells are most enriched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the apoptosis assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "1ae726a2-19e8-48ba-801f-a8d56d97fc40",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C46",
+      "claim": "TAF9B has been implicated in cell survival and control of apoptosis in human HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous observations implicating TAF9B in cell survival and control of apoptosis in human HeLa cells (Chen and Manley, 2003; Frontini et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen and Manley, 2003; Frontini et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "22939a55-f6a9-4dc4-bf4b-ca9fb5673cc7",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C47",
+      "claim": "TAF9B is required for the efficient in vitro differentiation of murine ES cells into motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken in aggregate, our findings suggest that TAF9B is required for the efficient in vitro differentiation of murine ES cells into motor neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differentiation defects observed in Taf9b KO cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "ca4c9f54-1652-431b-b2be-5713c883fbfa",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C48",
+      "claim": "The absence of TAF9B causes the persistent expression of pluripotency markers under differentiation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken in aggregate, our findings suggest that TAF9B is required for the efficient in vitro differentiation of murine ES cells into motor neurons, and that the absence of TAF9B causes the persistent expression of pluripotency markers under differentiation conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of continued OCT4 and NANOG expression in Taf9b KO cells during differentiation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "e6b1185c-a1c4-440a-bd39-57f20b8c72a6",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C49",
+      "claim": "As motor neuron differentiation progressed there was a concomitant increase in the number of genes deregulated by the loss of TAF9B.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that as motor neuron differentiation progressed there was a concomitant increase in the number of genes deregulated by the loss of TAF9B (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "551f2ef2-d1a5-4918-9e6e-de4459484c6f",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C50",
+      "claim": "Striking deregulation of genes in Taf9b KO cells was observed at day 4 when progenitor cells are most enriched in these cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Striking deregulation of genes in Taf9b KO cells was observed at the time point at which progenitor cells are most enriched in these cultures (day 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "9f4c0a77-2e04-459f-9210-5510b4771f01",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C51",
+      "claim": "Genes important for neuronal progenitor identity such as Olig2, Pax6, Sox1, Nkx6-1, Nkx6-2, Gli1, and genes controlled by the Notch signaling pathway were among the most down-regulated by the loss of TAF9B.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes known to be important for neuronal progenitor identity such as Olig2, Pax6, Sox1, Nkx6-1, Nkx6-2, Gli1, and genes controlled by the Notch signaling pathway were among the most down-regulated by the loss of TAF9B (Figure 4B, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4B and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8f6e2d38-3f56-4dbb-b84d-602fbe27dfed",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C52",
+      "claim": "Gene ontology terms analysis of down-regulated genes showed categories such as neuron differentiation and anterior/posterior pattern formation among the most enriched terms.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) terms analysis of down-regulated genes showed categories such as neuron differentiation and anterior/posterior pattern formation among the most enriched terms (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO term analysis shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "bae1473e-b8e3-4851-9976-8bab205ac057",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C53",
+      "claim": "Among up-regulated genes in Taf9b KO cells at day 4 were genes involved in apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Among up-regulated genes we found genes involved in apoptosis (Supplementary file 1), which is consistent with the increase in apoptosis levels we observed in Taf9b KO cells at this time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "1e7e0c10-c833-4c94-8fd7-c6e33eae6a61",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C54",
+      "claim": "By day 6, approximately 10% of all expressed genes were down-regulated and another 10% were up-regulated in Taf9b KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By day 6, when post-mitotic motor neurons are normally present in these cultures, approximately 10% of all expressed genes were down-regulated and another 10% were up-regulated in Taf9b KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f1cbe449-f9e4-45c0-a9e1-24a07d315fed",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C55",
+      "claim": "TAF9B is specifically required for the appropriate expression of a subset of genes, rather than for global gene expression in differentiated EBs.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that TAF9B is specifically required for the appropriate expression of a subset of genes, rather than for global gene expression in these differentiated EBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the RNA-seq data showing selective gene deregulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "ed4a9088-a8b3-4d97-aa13-e9231ffac36d",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C56",
+      "claim": "The most significant GO term categories of genes down-regulated by the loss of TAF9B at day 6 included genes involved in neuron differentiation, axogenesis, and neuron projection.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant GO term categories of genes down-regulated by the loss of TAF9B in this time point included genes involved in neuron differentiation, axogenesis, and neuron projection (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO term analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a44ad19f-95e8-4891-8fc1-aeb0e7166775",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C57",
+      "claim": "Specific motor neuron markers Lhx3, Lhx4, Isl1, Mnx1, and pan-neuronal marker Tubb3 were among the most down-regulated genes in Taf9b KO cells at day 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the specific motor neuron markers Lhx3, Lhx4, Isl1, Mnx1, and pan-neuronal marker Tubb3 were among the most down-regulated genes in Taf9b KO cells (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "c8ff29ea-31d4-4801-a9a7-f655f18dcc6e",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C58",
+      "claim": "Genes up-regulated in Taf9b KO cells at day 6 were enriched in categories such as vascular development, stem cell maintenance, and other non-neuronal developmental categories.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, genes up-regulated in Taf9b KO cells were enriched in categories such as vascular development, stem cell maintenance, and other non-neuronal developmental categories (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO term analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "125ef94a-953d-4489-b511-04f1c4e1cdcb",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C59",
+      "claim": "Samples differentiated for 2 days have a relatively small number of genes affected in Taf9b KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the large number of genes deregulated in neuralized EB samples, we found that samples differentiated for 2 days have a relatively small number of genes affected in Taf9b KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "3a9b279d-ff91-4d1c-84b9-79ee725d4948",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C60",
+      "claim": "Genes involved in differentiation were found among early down-regulated genes at day 2 in Taf9b KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, genes involved in differentiation were still found among these early down-regulated genes (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "1ce87667-e155-4472-8cea-aaf153b366d3",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C61",
+      "claim": "TAF9B controls the expression of specific genes required for the in vitro differentiation of murine ES cells into motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that TAF9B controls the expression of specific genes required at least for the in vitro differentiation of murine ES cells into motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the RNA-seq data showing gene deregulation during differentiation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "681d1f6f-a633-4377-9ab5-82161a3f8b11",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C62",
+      "claim": "Approximately a third of all detected TAF9B binding regions overlapped with RNA POL2 occupancy (TAF9B-POL2) and mapped generally near transcription start sites (TSS) of protein coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately a third of all detected TAF9B binding regions overlapped with RNA POL2 occupancy (TAF9B-POL2) and mapped generally near transcription start sites (TSS) of protein coding genes (Figure 5A, Figure 5\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 5A and Figure 5\u2014figure supplement 1B, 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "49581057-214c-4d80-ab6e-2e666d70da95",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C63",
+      "claim": "TAF9B peaks located at TSS were not enriched at promoters of neuronal specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TAF9B peaks located at TSS were not enriched at promoters of neuronal specific genes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO term analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a39f104e-cbd8-4d91-92f0-0e011df2a277",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C64",
+      "claim": "Approximately two thirds of all TAF9B binding regions showed little or no overlap with regions of high RNA POL2 occupancy (TAF9B-only) and were generally located distal to annotated TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, approximately two thirds of all TAF9B binding regions showed little or no overlap with regions of high RNA POL2 occupancy (TAF9B-only) and were generally located distal to annotated TSS (Figure 5A, Figure 5\u2014figure supplement 1B, 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 5A and Figure 5\u2014figure supplement 1B, 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "b021477f-6e86-4965-a93f-4410014d9ac8",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C65",
+      "claim": "Genes with TAF9B bound to regions distal to their TSS were significantly enriched in neuronal genes categories, including GO terms such as midbrain-hindbrain boundary development, rostrocaudal neural tube patterning and dorsal spinal cord development.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, genes with TAF9B bound to regions distal to their TSS were significantly enriched in neuronal genes categories, including GO terms such as midbrain-hindbrain boundary development, rostrocaudal neural tube patterning and dorsal spinal cord development (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO term analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "2e6cbbde-ef13-412f-b52a-42856bda0b71",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C66",
+      "claim": "Several of the most down-regulated genes in the absence of TAF9B detected by RNA-seq (e.g., Neurog2 and Lhx4) were associated with TAF9B distal binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of the most down-regulated genes in the absence of TAF9B detected by RNA-seq (e.g., Neurog2 and Lhx4) were associated with TAF9B distal binding sites (Figure 5\u2014figure supplement 1A,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 5\u2014figure supplement 1A and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "ffe8524a-f572-44f9-bcc4-d53b39074309",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C67",
+      "claim": "Genes bearing distal TAF9B peaks (e.g., 500\u20135000 bp from TSS) showed a higher percentage of genes down-regulated in Taf9b KO neuralized EBs than control gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, genes bearing distal TAF9B peaks (e.g., 500\u20135000 bp from TSS) showed a higher percentage of genes down-regulated in Taf9b KO neuralized EBs than control gene sets (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "805c0187-6b43-454c-a294-960848443855",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C68",
+      "claim": "Distal TAF9B binding sites are likely functional regulatory elements controlling neuronal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that distal TAF9B binding sites are likely functional regulatory elements controlling neuronal genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ChIP-seq and RNA-seq data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f267376f-1e3c-4fd9-8534-b50e17f6b195",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C69",
+      "claim": "Co-localization between TAF9B and OLIG2 was found at both the TAF9B distal peaks and at the TAF9B TSS peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found co-localization between TAF9B and OLIG2 at both the TAF9B distal peaks and at the TAF9B TSS peaks, suggesting that TAF9B and OLIG2 act in concert at a subset of neuronal genes to regulate gene expression during motor neuron development (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "84fedbe4-01c7-4f11-9426-5e659783cbfb",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C70",
+      "claim": "TAF9B and OLIG2 act in concert at a subset of neuronal genes to regulate gene expression during motor neuron development.",
+      "claim_type": "EXPLICIT",
+      "source": "We found co-localization between TAF9B and OLIG2 at both the TAF9B distal peaks and at the TAF9B TSS peaks, suggesting that TAF9B and OLIG2 act in concert at a subset of neuronal genes to regulate gene expression during motor neuron development (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the co-localization data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "872cc6e7-3dd2-4449-8cd6-0094f93c0df7",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C71",
+      "claim": "The incomplete overlap of TAF9B and OLIG2 peaks may in part represent intrinsic differences between progenitor cells and post-mitotic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The incomplete overlap of TAF9B and OLIG2 peaks may in part represent intrinsic differences between progenitor cells and post-mitotic neurons, since the OLIG2 binding was performed with neuralized EBs enriched for progenitor cells while TAF9B mapping was done with EBs enriched for post-mitotic motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the incomplete overlap.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "23d6622d-1525-4e11-bc6b-827fd6668df8",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C72",
+      "claim": "It is likely that TAF9B co-localizes with activators other than OLIG2 in the motor neuron developmental pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is likely that TAF9B co-localizes with activators other than OLIG2 in this developmental pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the incomplete overlap with OLIG2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "c6e6d80c-91e5-42b2-aed4-d59eae692000",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C73",
+      "claim": "Little detectable association of TAF9B with TAF4 and TAF7, core components of the TFIID complex, was observed in in vitro differentiated motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed little detectable association of TAF9B with TAF4 and TAF7, core components of the TFIID complex, while TBP antibodies co-IP'ed those TFIID components efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "140db7b0-0742-4c34-9507-f12d59119dff",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C74",
+      "claim": "TBP antibodies co-immunoprecipitated TAF4 and TAF7 efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed little detectable association of TAF9B with TAF4 and TAF7, core components of the TFIID complex, while TBP antibodies co-IP'ed those TFIID components efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8b64c5ea-6763-4810-b12b-87dfc022659d",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C75",
+      "claim": "An association between TAF9B and PCAF was observed in in vitro differentiated motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed an association between TAF9B and PCAF, a histone acetyltransferase present in the mammalian SAGA complex (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "9dc3423b-b8ec-4bbc-ae81-7b2b6617be3c",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C76",
+      "claim": "PCAF is a histone acetyltransferase present in the mammalian SAGA complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed an association between TAF9B and PCAF, a histone acetyltransferase present in the mammalian SAGA complex (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "affcdb4e-9121-48f7-a2ba-abe5a98b88b8",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C77",
+      "claim": "Immunoprecipitations of 293T cells transfected with flag-tagged versions of TAF9B or TAF9 confirmed that the IPs are specific for TAF9B and not the closely related TAF9 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitations of 293T cells transfected with flag-tagged versions of TAF9B or TAF9 confirmed that these IPs are specific for TAF9B and not the closely related TAF9 subunit (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoprecipitation data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "ef7e4bfe-8bae-431e-9ae8-b6faa8821c4a",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C78",
+      "claim": "The interactions between TAF9B and PCAF occur in vivo in dissected spinal column tissue samples from WT and Taf9b KO newborn mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed TAF9B co-IP experiments on dissected spinal column tissue samples from WT and Taf9b KO newborn mice, confirming that the interactions between TAF9B and PCAF occur in vivo (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "3a2781ff-dfbb-4feb-860c-92457fadc77f",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C79",
+      "claim": "TAF9B primarily associates with PCAF likely in a SAGA-like complex rather than the canonical TFIID in murine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TAF9B primarily associates with PCAF likely in a SAGA-like complex rather than the canonical TFIID in murine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the co-immunoprecipitation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "6e4cd642-96ea-42b4-86cc-5d62e32ebff1",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C80",
+      "claim": "Taf9b KO mice are viable and fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "Taf9b KO mice were viable and fertile, though the number of pups and birth weights were reduced in Taf9b KO matings compared to WT controls (Figure 7\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observation of the generated mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "3e015237-f5ed-4fbe-b194-bfa14e035bfa",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C81",
+      "claim": "The number of pups and birth weights were reduced in Taf9b KO matings compared to WT controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Taf9b KO mice were viable and fertile, though the number of pups and birth weights were reduced in Taf9b KO matings compared to WT controls (Figure 7\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a8ddea6d-f032-40bf-8e6b-14ff57c4beff",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C82",
+      "claim": "Spinal cord isolated from newborn KO animals did not express TAF9B.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, spinal cord isolated from newborn KO animals did not express TAF9B (Figure 7A,B, Figure 7\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot and qRT-PCR data shown in Figure 7A, 7B, and Figure 7\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "d62d413e-e4d5-41ef-9229-714b68135d85",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C83",
+      "claim": "Loss of TAF9B in vivo may affect not only motor neuron formation but perhaps also proper differentiation of other cell types present in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Taf9b KO cells in vitro showed clear de-regulation of genes in both progenitor cells and post-mitotic motor neurons (Figure 4), we surmised that loss of TAF9B in vivo may affect not only motor neuron formation but perhaps also proper differentiation of other cell types present in the spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the in vitro data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "7ecc1f45-6999-400d-b420-53b9954bd77b",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C84",
+      "claim": "Genes down-regulated in the absence of TAF9B in vivo are enriched for neuronal genes including gene categories such as neuron projection, synapse and axonogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that genes down-regulated in the absence of TAF9B are enriched for neuronal genes including gene categories such as neuron projection, synapse and axonogenesis (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO term analysis shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "b426760d-a2dd-43fc-8b29-f3d26c7bffd9",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C85",
+      "claim": "Among the down-regulated genes identified by RNA-seq in vivo were neuronal genes such as Map1b, L1cam, Nefm, Nefh, and Isl2.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the down-regulated genes identified by RNA-seq were neuronal genes such as Map1b, L1cam, Nefm, Nefh, and Isl2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "82d99e03-ed8e-4f64-a1ee-b5cfd4718182",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C86",
+      "claim": "Gene expression analysis by qRT-PCR of lumbar spinal column tissues confirmed that neuronal genes are consistently down-regulated in KO compared to WT littermate controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression analysis by qRT-PCR of lumbar spinal column tissues confirmed that those neuronal genes are consistently down-regulated in KO compared to WT littermate controls (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "94108c26-27fc-4f4e-938a-774de67df46e",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C87",
+      "claim": "Several different markers of specific neuronal populations, as well as the general marker Tubb3, were affected in the absence of TAF9B.",
+      "claim_type": "EXPLICIT",
+      "source": "Several different markers of specific neuronal populations, as well as the general marker Tubb3, were also affected in the absence of TAF9B, suggesting a global defect in neuronal gene expression in the spinal cord (Figure 7\u2014figure supplement 1E; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 7\u2014figure supplement 1E and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "bd214335-5329-4e0e-8064-ba24128064bb",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C88",
+      "claim": "The absence of TAF9B suggests a global defect in neuronal gene expression in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Several different markers of specific neuronal populations, as well as the general marker Tubb3, were also affected in the absence of TAF9B, suggesting a global defect in neuronal gene expression in the spinal cord (Figure 7\u2014figure supplement 1E; Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the qRT-PCR data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "d6faabde-3266-4b8c-a2c1-06e64b2df315",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C89",
+      "claim": "The observed pan-neuronal down-regulation and loss of neuronal tissue may be due to problems in the control of gene expression that coordinates the precise differentiation of progenitor cells during neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the observed pan-neuronal down-regulation and loss of neuronal tissue may be due to problems in the control of gene expression that coordinates the precise differentiation of progenitor cells during neuronal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "53496047-802a-4f31-a5a5-09d87f348f3d",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C90",
+      "claim": "TAF9B is specifically required for the regulation of neuronal genes during neuronal development in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "These in vivo results taken together with our in vitro differentiation studies strongly support the notion that TAF9B is specifically required for the regulation of neuronal genes during neuronal development in the spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on both in vitro and in vivo data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "dc7f7a1d-66ff-48ce-bfb2-2ff31de41fa9",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C91",
+      "claim": "Changes in core promoter complexes are integral to the transcriptional program leading to terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results and those of several other studies probing tissue-specific activities of core promoter factors and co-activators suggest a model in which changes in these complexes are integral to the transcriptional program leading to terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model based on the findings and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "46d8f9af-308a-4b1e-b335-fed00b9ef429",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C92",
+      "claim": "Core promoter complexes themselves must undergo compositional changes using cell type-specific components such as TAF9B.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that rather than existing as a static complex awaiting recruitment by these transcription factors, core promoter complexes themselves must undergo compositional changes using cell type-specific components such as TAF9B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f926410e-fdfe-450c-b906-d9726a7e6300",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C93",
+      "claim": "Alternative promoter complexes expand the diversity and number of possible protein\u2013protein transactions necessary to achieve proper fine-tuned control of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These alternative promoter complexes expand the diversity and number of possible protein\u2013protein transactions necessary to achieve proper fine-tuned control of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "aef664b7-9945-43c7-9161-78085d16f835",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C94",
+      "claim": "Diversified core machineries might provide a mechanism to help lock down and maintain the functions and identity of differentiated cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we speculate that such diversified core machineries might provide a mechanism to help lock down and maintain the functions and identity of differentiated cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "af527a50-c9e0-40d2-bfab-0e6f79d28da6",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C95",
+      "claim": "Taf9 is highly expressed in both mouse ES cells and neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We established that indeed Taf9 is highly expressed in both mouse ES cells and neurons (as detected by RNA-seq).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f6882733-e6a0-4839-a439-7b22bfce0bfa",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C96",
+      "claim": "It is possible that TAF9 partially compensates for the loss of TAF9B thus blunting further global gene expression defects in Taf9b KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that TAF9 partially compensates for the loss of TAF9B thus blunting further global gene expression defects in Taf9b KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "3a0124ce-8985-4eb1-8d09-21ccee3fcb3d",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C97",
+      "claim": "In human HeLa and chicken DT40 cells partially redundant functions have been observed for TAF9B and TAF9 paralogs.",
+      "claim_type": "EXPLICIT",
+      "source": "In human HeLa and chicken DT40 cells partially redundant functions have been observed for these paralogs (Chen and Manley, 2003; Frontini et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen and Manley, 2003; Frontini et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f62d6b3e-4186-4c9c-a1e7-253e1ed28f1e",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C98",
+      "claim": "Taf4b and Taf7l KO mice are viable but infertile.",
+      "claim_type": "EXPLICIT",
+      "source": "Taf4b and Taf7l KO mice are also viable, but unlike Taf9b KO mice, they are infertile (Freiman et al., 2001; Falender, 2005; Zhou et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Freiman et al., 2001; Falender, 2005; Zhou et al., 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "ed078112-9325-4cf5-85be-1b9f9b1ba681",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C99",
+      "claim": "TAF9B is not critical for gametogenesis, in contrast to TAF4B and TAF7L.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that TAF9B is not critical for gametogenesis, in contrast to what has been observed for these two other orphan TAFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the viability and fertility of Taf9b KO mice.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "954ebedb-290e-44dc-b5bf-e7d8faf52df1",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C100",
+      "claim": "TAF9B is involved in the activation of neuronal genes by binding to distal and promoter proximal DNA regulatory elements associated with the histone acetyltransferase PCAF.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our results point to a model where TAF9B is involved in the activation of neuronal genes by binding to distal and promoter proximal DNA regulatory elements associated with the histone acetyltransferase PCAF that, like its paralog GCN5, are subunits of the SAGA/STAGA/TFTC complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ChIP-seq and co-IP data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "4f3eda73-dad0-4db0-982c-20f2d8405b9a",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C101",
+      "claim": "PCAF, like its paralog GCN5, is a subunit of the SAGA/STAGA/TFTC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our results point to a model where TAF9B is involved in the activation of neuronal genes by binding to distal and promoter proximal DNA regulatory elements associated with the histone acetyltransferase PCAF that, like its paralog GCN5, are subunits of the SAGA/STAGA/TFTC complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "7dd1d791-41b0-49c4-9be8-30fca0543f68",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C102",
+      "claim": "The SAGA complex contains several TAFs shared with TFIID including TAF6, TAF9, TAF5, TAF10, TAF12, and a de-ubiquitinase (DUB) module that removes ubiquitin from histone H2B.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex contains several TAFs shared with TFIID including TAF6, TAF9, TAF5, TAF10, TAF12, and a de-ubiquitinase (DUB) module that removes ubiquitin from histone H2B (reviewed by Spedale et al., 2012; Weake and Workman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Spedale et al., 2012; Weake and Workman, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "e3634a99-4bfd-40cb-8331-c9fa2dd44bb9",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C103",
+      "claim": "It is possible that TAF9B is affecting the competitive recruitment or activity of a SAGA-like complex in place of TFIID.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TAFs are structural components of both SAGA and TFIID complexes, it is possible that TAF9B is affecting the competitive recruitment or activity of a SAGA-like complex in place of TFIID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "5ce65f3c-c0de-4e02-8a44-c9488c09107c",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C104",
+      "claim": "Among the genes affected by the loss of TAF9B are several targets of the Notch- and Shh-signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the genes affected by the loss of TAF9B are several targets of the Notch- and Shh-signaling pathway, both known to play key roles in neuronal development (reviewed by Louvi and Artavanis-Tsakonas, 2006; Jessell, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis and supported by citations to Louvi and Artavanis-Tsakonas, 2006; Jessell, 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "3aa3ac06-7394-423b-b584-d56f2fd01b3d",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C105",
+      "claim": "Notch- and Shh-signaling pathways are known to play key roles in neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the genes affected by the loss of TAF9B are several targets of the Notch- and Shh-signaling pathway, both known to play key roles in neuronal development (reviewed by Louvi and Artavanis-Tsakonas, 2006; Jessell, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Louvi and Artavanis-Tsakonas, 2006; Jessell, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "5535a5d4-031a-4c5e-9b5f-21d57630b07f",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C106",
+      "claim": "PCAF has been shown to cooperate with p300 in Notch intracellular domain-dependent transcription assays using chromatin templates in vitro, as well as in transfection/reporter assays.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PCAF has been shown to cooperate with another co-activator protein, p300, in Notch intracellular domain-dependent transcription assays using chromatin templates in vitro, as well as in transfection/reporter assays (Kurooka and Honjo, 2000; Wallberg et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kurooka and Honjo, 2000; Wallberg et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "07ad5fb9-b031-4571-b1ab-19f05e537658",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C107",
+      "claim": "Mutations in two subunits of the Drosophila DUB complex, Nonstop and Sgf11, lead to defects in neural development in the optic lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in two subunits of the Drosophila DUB complex, Nonstop and Sgf11, lead to defects in neural development in the optic lobe (Weake et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Weake et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "935d79a0-b3d0-4b37-a9f8-8286ee4bcdea",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C108",
+      "claim": "In mice, mutations in the HAT domain of GCN5 result in defects in cranial neural tube closure and embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, mutations in the HAT domain of GCN5 result in defects in cranial neural tube closure and embryonic lethality (Bu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bu et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "3cb436fb-756e-4095-b6eb-b6263f245897",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C109",
+      "claim": "In humans, mutations in the DUB subunit ATXN7 are associated with the development of spinocerebellar ataxia type 7, a disease characterized by the loss of motor control as well as retinal defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, mutations in the DUB subunit ATXN7 are associated with the development of spinocerebellar ataxia type 7, a disease characterized by the loss of motor control as well as retinal defects (reviewed by Koutelou et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Koutelou et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "53190d46-c130-4df6-82cb-0bd664402df4",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C110",
+      "claim": "Taf9b KO mice display defects in eye development including microphthalmia and cataracts-like phenotypes albeit with modest penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that Taf9b KO mice display defects in eye development including microphthalmia and cataracts-like phenotypes albeit with modest penetrance (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observation of the mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "5f731978-632f-42ac-a51f-2051938b5f5d",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C111",
+      "claim": "The type of neuronal-specific role performed by TAF9B is reminiscent of the cell-type specific roles of particular subunits of the ATP-dependent chromatin remodeling complex BAF.",
+      "claim_type": "EXPLICIT",
+      "source": "The type of neuronal-specific role performed by TAF9B is reminiscent of the cell-type specific roles of particular subunits of the ATP-dependent chromatin remodeling complex BAF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement drawing parallels to other known systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "d00ba62e-ff74-45d0-a71b-8026f964520f",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C112",
+      "claim": "The BAF complex undergoes changes in composition upon neuronal differentiation as specific BAF subunits are incorporated in neuronal progenitors cells as well as in post-mitotic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex undergoes changes in composition upon neuronal differentiation as specific BAF subunits are incorporated in neuronal progenitors cells as well as in post-mitotic neurons (Olave et al., 2002; Lessard et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Olave et al., 2002; Lessard et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "4a97795b-b16e-4fd0-b5e4-a31e701a840b",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C113",
+      "claim": "The down-regulation of neuronal genes observed in whole spinal column tissues in Taf9b KO mice may represent a specific loss of neuronal tissue relative to the surrounding vertebrae due to defects in neuronal progenitor cells during embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that the down-regulation of neuronal genes observed in whole spinal column tissues in Taf9b KO mice may represent a specific loss of neuronal tissue relative to the surrounding vertebrae due perhaps to defects in neuronal progenitor cells during embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation for the observed data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "2041ba80-4763-4cd3-8f6f-30b787b3e2e5",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C114",
+      "claim": "Preliminary experiments using Taf9b KO mice carrying the LacZ reporter gene suggest that Taf9b is highly expressed in the developing hypothalamus at mid-gestation.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary experiments using Taf9b KO mice carrying the LacZ reporter gene suggest that Taf9b is highly expressed in the developing hypothalamus at mid-gestation (data now shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on preliminary experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "eff02b2e-1d44-4644-96b7-d624ce069ea9",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C115",
+      "claim": "In a study describing neuronal activity-dependent ribosome profiling in the adult mouse hypothalamus, Taf9b can be identified as highly expressed in this tissue compared to several other TAFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study describing neuronal activity-dependent ribosome profiling in the adult mouse hypothalamus (Knight et al., 2012), Taf9b can be identified in the genomic data set as highly expressed in this tissue compared to several other TAFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of data from Knight et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "f5cb0351-14ec-4ba4-8166-480c687f3270",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C116",
+      "claim": "The levels of Taf9b mRNA associated with ribosomes increased when neurons in the hypothalamus were activated, while several other TAFs were expressed at low levels or not enriched in a neuronal activity-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the levels of Taf9b mRNA associated with ribosomes increased when neurons in the hypothalamus were activated, while several other TAFs were expressed at low levels or not enriched in a neuronal activity-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of data from Knight et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "c563815e-d2b9-4b2d-9805-b464087d916a",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C117",
+      "claim": "TAF9B may be involved in setting up transcriptional responses in at least certain neuronal circuits in the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that TAF9B may be involved in setting up transcriptional responses in at least certain neuronal circuits in the hypothalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the ribosome profiling data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "22a142d4-8e54-4778-858f-32441c6da495",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C118",
+      "claim": "Mouse embryonic stem cells were differentiated into motor neurons using retinoic acid (RA) and the smoothened agonist SAG.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether the expression of various components of the core promoter recognition complex changes upon neuronal differentiation, we induced ES cells to form motor neurons using retinoic acid (RA) and the smoothened agonist SAG as described previously (Wichterle et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used, supported by citation to Wichterle et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a20d7432-4f43-460d-b329-0c712858cdd8",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C119",
+      "claim": "The generation of motor neurons in embryoid bodies (EBs) was confirmed by immunostaining for motor neuron-specific markers LHX3 and ISL1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the generation of motor neurons in embryoid bodies (EBs) by immunostaining for motor neuron-specific markers LHX3 and ISL1/2 (Figure 1A) as well as by RNA-seq analysis (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "5be3e798-51f8-4567-a635-1b04352f0de6",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C120",
+      "claim": "The generation of motor neurons in embryoid bodies (EBs) was confirmed by RNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the generation of motor neurons in embryoid bodies (EBs) by immunostaining for motor neuron-specific markers LHX3 and ISL1/2 (Figure 1A) as well as by RNA-seq analysis (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "862d055c-4b0b-4aaa-aa25-b69c8299bd8f",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C121",
+      "claim": "Several TAFs are down-regulated upon motor neuron differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in other differentiated cell types, several TAFs are down-regulated upon motor neuron differentiation (Figure 1; Deato and Tjian, 2007; D'Alessio et al., 2011; Zhou et al., 2013b; Guermah et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1 and citations to Deato and Tjian, 2007; D'Alessio et al., 2011; Zhou et al., 2013b; Guermah et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "effa9446-f6cb-4591-a989-bdd38b82e6ed",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C122",
+      "claim": "In human HeLa cells, TAF9B had previously been reported to be a component of both the TFIID and SAGA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In human HeLa cells, TAF9B had previously been reported to be a component of both the TFIID and SAGA complexes (Frontini et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Frontini et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "ea8726f1-3f63-47c9-ab8f-2753f452c061",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C123",
+      "claim": "The Taf9b KO mouse ES cells (Taf9btm1(KOMP)Vlcg) were generated by the trans-NIH Knock-Out Mouse Project (KOMP).",
+      "claim_type": "EXPLICIT",
+      "source": "The Taf9b KO mouse ES cells (Taf9btm1(KOMP)Vlcg) were generated by the trans-NIH Knock-Out Mouse Project (KOMP) and obtained from the KOMP Repository (www.komp.org).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "a6dd9a71-57b5-4534-950e-00ce0cb6a611",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "claim_id": "C124",
+      "claim": "The Taf9b gene is located on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the Taf9b gene is located in the X chromosome this male KO ES cells are a complete null for this gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as factual information about the gene location.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "09033859-9054-48b1-9c66-a532a78eb044",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TAF9B is selectively up-regulated during motor neuron differentiation both in vitro and in vivo. The up-regulation occurs at both mRNA and protein levels, follows the kinetics of post-mitotic neuronal markers, and is specific compared to other TAF subunits which are generally down-regulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C23-C27 provide converging evidence from multiple experimental approaches (qRT-PCR, Western blot, RNA-seq) showing TAF9B up-regulation in differentiated motor neurons both in vitro (GFP+ cells) and in vivo (newborn spinal cord). The temporal expression pattern and specificity relative to other TAFs strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "733cdba2-3217-4611-ab48-538e24ae75b9",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TAF9B is dispensable for global gene expression and pluripotency in undifferentiated murine ES cells. Taf9b KO ES cells show normal morphology, growth, and cell cycle, with only a small number of genes deregulated and no effect on pluripotency markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C33-C35, C37-C38 are supported by RNA-seq data (Figure 2E) showing minimal gene deregulation, qRT-PCR data (Figure 2F) showing maintained pluripotency marker expression, and cell cycle analysis (Figure 2D) showing normal proliferation. This contrasts TAF9B with core TFIID TAFs (C36) and establishes its specialized rather than general function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TAF9B is required for efficient motor neuron differentiation in vitro. Loss of TAF9B results in reduced motor neuron marker expression, persistent pluripotency marker expression, increased proliferation, and compromised differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C39-C43, C47-C48 are supported by multiple lines of evidence including qRT-PCR (Figure 3A), immunostaining (Figure 3B), and Western blot (Figure 3C) showing reduced motor neuron markers and persistent pluripotency markers in Taf9b KO cells. The phenotype is consistent across multiple assays and time points.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "7cc9a08e-a828-40ea-a531-5060d5952757",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of TAF9B leads to increased apoptosis during early stages of motor neuron differentiation, particularly at day 4 when progenitor cells are enriched. This is consistent with up-regulation of apoptosis-related genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45, C53 are supported by apoptosis assay data (Figure 3D) showing increased apoptosis in Taf9b KO cells at day 4, and RNA-seq data showing up-regulation of apoptosis genes. The timing coincides with progenitor cell enrichment, suggesting a role in progenitor cell survival. Citation to prior work (C46) provides additional context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TAF9B controls the expression of specific genes required for motor neuron differentiation in a stage-dependent manner. Gene deregulation increases progressively during differentiation, with progenitor genes affected at day 4 and motor neuron-specific genes affected at day 6, while only ~10% of genes are affected at each stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C61 are supported by comprehensive RNA-seq analysis (Figure 4) showing progressive gene deregulation during differentiation. GO term analysis confirms enrichment for neuronal categories in down-regulated genes and non-neuronal categories in up-regulated genes. The stage-specific effects and limited scope of deregulation support a specialized rather than global role for TAF9B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TAF9B binds to both promoter-proximal and distal regulatory regions genome-wide. Approximately one-third of TAF9B peaks overlap with RNA POL2 at TSS, while two-thirds are distal to TSS. Distal TAF9B binding sites are enriched at neuronal genes and correlate with gene down-regulation in Taf9b KO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C62-C68 are supported by ChIP-seq data (Figure 5A, Figure 5\u2014figure supplement 1) showing distinct TAF9B binding patterns. GO term analysis (Figure 5B) confirms neuronal gene enrichment at distal sites. The correlation between distal TAF9B binding and gene down-regulation (Figure 5\u2014figure supplement 1D) supports functional relevance of these binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "ef004a49-56ac-46e5-9d08-aa63b9ee09cd",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TAF9B partially co-localizes with OLIG2 at both promoter-proximal and distal binding sites, suggesting coordinated action in regulating neuronal gene expression. The incomplete overlap may reflect differences between progenitor and post-mitotic neurons or involvement of additional transcription factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C69-C70 are supported by ChIP-seq overlap analysis (Figure 5C) showing co-localization at both TSS and distal sites. Claims C71-C72 provide reasonable speculative explanations for incomplete overlap based on experimental design differences. The co-localization with a key motor neuron transcription factor strengthens the case for TAF9B's role in neuronal differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8dd799c4-44d5-4c9c-8fe1-958853c095bc",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In differentiated motor neurons, TAF9B preferentially associates with PCAF rather than canonical TFIID components (TAF4, TAF7). This association occurs both in vitro and in vivo, suggesting TAF9B functions in a SAGA-like complex rather than TFIID in the neuronal context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C73-C75, C77-C79 are supported by co-immunoprecipitation experiments in differentiated motor neurons (Figure 6A), specificity controls in transfected cells (Figure 6B), and in vivo validation in spinal cord tissue (Figure 6C). The consistent lack of TFIID association and presence of PCAF association across multiple experimental systems strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "7900201b-b127-4fd3-aa05-926110bba465",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TAF9B regulates neuronal gene expression in vivo. Taf9b KO mice are viable and fertile but show reduced litter size and birth weight. RNA-seq and qRT-PCR analysis of spinal column tissue reveals down-regulation of neuronal genes enriched in categories such as neuron projection, synapse, and axonogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C80-C82, C84-C88, C90 are supported by in vivo data including Western blot and qRT-PCR confirming loss of TAF9B expression (Figure 7A-B), RNA-seq showing neuronal gene down-regulation (Figure 7C), GO term analysis (Figure 7D), and qRT-PCR validation (Figure 7E, Figure 7\u2014figure supplement 1E). The consistency between in vitro and in vivo findings strengthens the overall conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "d85b1b68-b2a2-4891-b6c2-51317339de0c",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that alternative core promoter complexes, exemplified by TAF9B-containing complexes, may provide a mechanism to establish and maintain specific transcriptional programs in terminally differentiated cell types through diversified protein-protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C91-C94 represent speculative interpretations and models based on the experimental findings. While the data support TAF9B's specialized role in neuronal differentiation and its association with PCAF rather than TFIID, the broader mechanistic model about 'locking in' cell identity requires additional experimental validation. The speculation is reasonable but not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "6a911f9f-aab4-452d-b417-b43183397f91",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TAF9 is highly expressed in both ES cells and neurons, potentially providing partial functional redundancy with TAF9B. Unlike TAF4B and TAF7L which are essential for fertility, TAF9B is not critical for gametogenesis as Taf9b KO mice are fertile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 is supported by RNA-seq data. Claim C96 is reasonable speculation based on the viable phenotype and known redundancy in other systems (C97, supported by citations). Claims C98-C99 are supported by comparison to published data on other TAF paralogs and the observed fertility of Taf9b KO mice (C80).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "dea36d4c-ccd8-49e6-8ba7-4e2418ee2811",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TAF9B functions by binding to promoter-proximal and distal regulatory elements in association with PCAF, a component of SAGA/STAGA/TFTC complexes. This may involve competitive recruitment of SAGA-like complexes in place of TFIID at neuronal genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C102 integrate ChIP-seq data (binding sites) with co-IP data (PCAF association) and established knowledge about SAGA complex composition (supported by citations). Claim C103 is reasonable speculation based on the data showing TAF9B association with PCAF but not TFIID components. The model is consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "c8806459-1ede-41a5-a658-2f026bc70d30",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TAF9B-regulated genes include targets of Notch and Shh signaling pathways, which are critical for neuronal development. PCAF has been shown to cooperate with p300 in Notch-dependent transcription, and mutations in SAGA complex components cause neurological defects in multiple organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C109 are supported by RNA-seq data analysis and extensive citations to prior literature. This contextualizes the TAF9B findings within established signaling pathways and provides mechanistic connections to known developmental processes. The convergence of multiple lines of evidence from different organisms strengthens the biological significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "40d1ee99-7b2f-4942-9c51-12aa10e29ae9",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Preliminary evidence suggests TAF9B may function in other neuronal populations beyond motor neurons, including the hypothalamus where it is highly expressed and shows activity-dependent regulation. TAF9B may be involved in transcriptional responses in hypothalamic neuronal circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C110, C114 are based on preliminary unpublished observations. Claims C115-C116 are based on analysis of published ribosome profiling data (Knight et al., 2012). Claim C117 is speculation based on this analysis. While suggestive, these findings require direct experimental validation and represent future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "403e14b6-e022-42c3-9609-5fccf370671b",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Many components of the pre-initiation complex (PIC) and co-activators are down-regulated upon neuronal differentiation, making TAF9B's up-regulation specific and distinct from the general pattern of PIC component expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30, C121 are supported by RNA-seq data (Figure 1\u2014figure supplement 1D-E) and citations to prior work showing similar patterns in other differentiated cell types. This establishes the context for TAF9B's unique up-regulation and supports its specialized function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "11875061-17ff-4816-930d-c46feffd5ace",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that the observed neuronal gene down-regulation in Taf9b KO spinal cord may result from defects in progenitor cell differentiation during development, potentially leading to loss of neuronal tissue relative to surrounding non-neuronal tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83, C89, C113 are speculative interpretations of the in vivo RNA-seq data. While the in vitro data (C49-C51) show clear progenitor defects, the in vivo data from whole spinal column tissue cannot distinguish between transcriptional defects in existing neurons versus loss of neuronal tissue. Additional experiments (e.g., cell counting, histology) would be needed to resolve this.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8db90137-562c-4bd7-894f-8093338d1a44",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The neuronal-specific role of TAF9B is analogous to cell-type specific roles of BAF chromatin remodeling complex subunits, which undergo compositional changes during neuronal differentiation with specific subunits incorporated in progenitors and post-mitotic neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C112 draw a valid parallel to another well-characterized system (supported by citations to Olave et al., 2002; Lessard et al., 2007). This comparison helps contextualize TAF9B's function within a broader framework of cell-type specific chromatin regulatory mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "46a3c727-1cdb-4575-a41d-003e86c3f192",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The motor neuron differentiation protocol using retinoic acid and SAG successfully generates motor neurons as confirmed by immunostaining for motor neuron markers (LHX3, ISL1/2) and RNA-seq analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C120 describe validated methodology supported by immunostaining (Figure 1A) and RNA-seq data (Figure 1\u2014figure supplement 1A). The protocol is based on established methods (Wichterle et al., 2002) and provides the foundation for all subsequent differentiation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "58978e3c-3d95-48f5-9455-d48b3f0c6d23",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The Taf9b KO ES cells were generated by KOMP with all protein-coding exons replaced by a LacZ-Neo cassette. Since Taf9b is X-linked, male KO ES cells are complete nulls, and loss of TAF9B expression was confirmed by qRT-PCR and Western blot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32, C123-C124 describe the genetic modification and validation of the KO cells. The X-linkage (C124) is factual, the KOMP source (C123) is documented, and loss of expression (C32) is confirmed by qRT-PCR and Western blot (Figure 2B-C). This establishes the validity of the KO model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    },
+    {
+      "id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683",
+      "content_id": "fc3022b6-55a0-4be8-a66c-d0c1207c242f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on transcription factor roles in differentiation, tissue-specific functions of TAF paralogs, motor neuron biology, and SAGA complex composition, supported by numerous citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C22, C36, C46, C76, C97-C98, C101-C102, C105-C109, C122 represent established knowledge from prior literature, appropriately cited. These provide essential context for interpreting the novel TAF9B findings and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:01:31.649327Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "96d8587c-11ed-4d97-ae03-c25b97517494",
+      "result_id": "09033859-9054-48b1-9c66-a532a78eb044"
+    },
+    {
+      "claim_id": "8b1369da-397f-4ee9-a540-6f8a3a5365cc",
+      "result_id": "09033859-9054-48b1-9c66-a532a78eb044"
+    },
+    {
+      "claim_id": "80d6bb70-6939-4c48-b731-82f48bc1798f",
+      "result_id": "09033859-9054-48b1-9c66-a532a78eb044"
+    },
+    {
+      "claim_id": "cbf83562-16ba-42ee-8c21-d7a98a5ebef2",
+      "result_id": "09033859-9054-48b1-9c66-a532a78eb044"
+    },
+    {
+      "claim_id": "9779861c-efa6-4873-87ec-d4641a188453",
+      "result_id": "09033859-9054-48b1-9c66-a532a78eb044"
+    },
+    {
+      "claim_id": "a52b1407-fe07-463a-b83d-b7b623fa13e2",
+      "result_id": "09033859-9054-48b1-9c66-a532a78eb044"
+    },
+    {
+      "claim_id": "8318c434-eb62-43a5-942d-29b5fba6ae27",
+      "result_id": "733cdba2-3217-4611-ab48-538e24ae75b9"
+    },
+    {
+      "claim_id": "a545975f-d84b-4a5c-b387-0f46636cc6a6",
+      "result_id": "733cdba2-3217-4611-ab48-538e24ae75b9"
+    },
+    {
+      "claim_id": "f6bd6ac5-0cd4-41ce-b1cd-612c8c13c58a",
+      "result_id": "733cdba2-3217-4611-ab48-538e24ae75b9"
+    },
+    {
+      "claim_id": "f2fad7a9-336f-477d-b85a-c9476ef2ad1e",
+      "result_id": "733cdba2-3217-4611-ab48-538e24ae75b9"
+    },
+    {
+      "claim_id": "11f8bdfa-b38f-4543-a7bc-247a1b0ca6ba",
+      "result_id": "733cdba2-3217-4611-ab48-538e24ae75b9"
+    },
+    {
+      "claim_id": "dfc7cf60-f492-42b0-9545-3bb1de578e33",
+      "result_id": "733cdba2-3217-4611-ab48-538e24ae75b9"
+    },
+    {
+      "claim_id": "6d0c56f5-e023-48ba-8bb3-74f6072a83d1",
+      "result_id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d"
+    },
+    {
+      "claim_id": "64d808d8-2f23-48c9-a119-706275913e87",
+      "result_id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d"
+    },
+    {
+      "claim_id": "b6b7d644-f05b-49ea-b873-3b63d87ac0c6",
+      "result_id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d"
+    },
+    {
+      "claim_id": "a2003978-705d-4b06-a964-9330cd8ae738",
+      "result_id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d"
+    },
+    {
+      "claim_id": "b9f08eea-ab49-47ba-91ed-32011cb6f2d6",
+      "result_id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d"
+    },
+    {
+      "claim_id": "3b2e4162-5f06-4dd5-bd4c-26edfe24a52f",
+      "result_id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d"
+    },
+    {
+      "claim_id": "22939a55-f6a9-4dc4-bf4b-ca9fb5673cc7",
+      "result_id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d"
+    },
+    {
+      "claim_id": "ca4c9f54-1652-431b-b2be-5713c883fbfa",
+      "result_id": "91c193b3-379e-4c99-9dd0-f91cedcefe0d"
+    },
+    {
+      "claim_id": "673b5988-8b9b-4dc1-ab32-a6b3f4209045",
+      "result_id": "7cc9a08e-a828-40ea-a531-5060d5952757"
+    },
+    {
+      "claim_id": "c518646b-46f9-4499-b055-9de9115bd545",
+      "result_id": "7cc9a08e-a828-40ea-a531-5060d5952757"
+    },
+    {
+      "claim_id": "bae1473e-b8e3-4851-9976-8bab205ac057",
+      "result_id": "7cc9a08e-a828-40ea-a531-5060d5952757"
+    },
+    {
+      "claim_id": "e6b1185c-a1c4-440a-bd39-57f20b8c72a6",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "551f2ef2-d1a5-4918-9e6e-de4459484c6f",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "9f4c0a77-2e04-459f-9210-5510b4771f01",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "8f6e2d38-3f56-4dbb-b84d-602fbe27dfed",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "1e7e0c10-c833-4c94-8fd7-c6e33eae6a61",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "f1cbe449-f9e4-45c0-a9e1-24a07d315fed",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "ed4a9088-a8b3-4d97-aa13-e9231ffac36d",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "a44ad19f-95e8-4891-8fc1-aeb0e7166775",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "c8ff29ea-31d4-4801-a9a7-f655f18dcc6e",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "125ef94a-953d-4489-b511-04f1c4e1cdcb",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "3a9b279d-ff91-4d1c-84b9-79ee725d4948",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "1ce87667-e155-4472-8cea-aaf153b366d3",
+      "result_id": "466e3ac6-efe5-4a54-ab53-b14bd671f8cd"
+    },
+    {
+      "claim_id": "77de81ad-1b49-4106-9e4b-a1428b517c23",
+      "result_id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238"
+    },
+    {
+      "claim_id": "681d1f6f-a633-4377-9ab5-82161a3f8b11",
+      "result_id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238"
+    },
+    {
+      "claim_id": "49581057-214c-4d80-ab6e-2e666d70da95",
+      "result_id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238"
+    },
+    {
+      "claim_id": "a39f104e-cbd8-4d91-92f0-0e011df2a277",
+      "result_id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238"
+    },
+    {
+      "claim_id": "b021477f-6e86-4965-a93f-4410014d9ac8",
+      "result_id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238"
+    },
+    {
+      "claim_id": "2e6cbbde-ef13-412f-b52a-42856bda0b71",
+      "result_id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238"
+    },
+    {
+      "claim_id": "ffe8524a-f572-44f9-bcc4-d53b39074309",
+      "result_id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238"
+    },
+    {
+      "claim_id": "805c0187-6b43-454c-a294-960848443855",
+      "result_id": "2d0c9938-9ba8-4f20-b31b-3e545e2e7238"
+    },
+    {
+      "claim_id": "d71bc689-4bdc-4d6a-8da3-babd49be8b6b",
+      "result_id": "ef004a49-56ac-46e5-9d08-aa63b9ee09cd"
+    },
+    {
+      "claim_id": "f267376f-1e3c-4fd9-8534-b50e17f6b195",
+      "result_id": "ef004a49-56ac-46e5-9d08-aa63b9ee09cd"
+    },
+    {
+      "claim_id": "84fedbe4-01c7-4f11-9426-5e659783cbfb",
+      "result_id": "ef004a49-56ac-46e5-9d08-aa63b9ee09cd"
+    },
+    {
+      "claim_id": "872cc6e7-3dd2-4449-8cd6-0094f93c0df7",
+      "result_id": "ef004a49-56ac-46e5-9d08-aa63b9ee09cd"
+    },
+    {
+      "claim_id": "23d6622d-1525-4e11-bc6b-827fd6668df8",
+      "result_id": "ef004a49-56ac-46e5-9d08-aa63b9ee09cd"
+    },
+    {
+      "claim_id": "d6370625-3fcb-4892-ba73-59a6d140075e",
+      "result_id": "8dd799c4-44d5-4c9c-8fe1-958853c095bc"
+    },
+    {
+      "claim_id": "c6e6d80c-91e5-42b2-aed4-d59eae692000",
+      "result_id": "8dd799c4-44d5-4c9c-8fe1-958853c095bc"
+    },
+    {
+      "claim_id": "140db7b0-0742-4c34-9507-f12d59119dff",
+      "result_id": "8dd799c4-44d5-4c9c-8fe1-958853c095bc"
+    },
+    {
+      "claim_id": "8b64c5ea-6763-4810-b12b-87dfc022659d",
+      "result_id": "8dd799c4-44d5-4c9c-8fe1-958853c095bc"
+    },
+    {
+      "claim_id": "affcdb4e-9121-48f7-a2ba-abe5a98b88b8",
+      "result_id": "8dd799c4-44d5-4c9c-8fe1-958853c095bc"
+    },
+    {
+      "claim_id": "ef7e4bfe-8bae-431e-9ae8-b6faa8821c4a",
+      "result_id": "8dd799c4-44d5-4c9c-8fe1-958853c095bc"
+    },
+    {
+      "claim_id": "3a2781ff-dfbb-4feb-860c-92457fadc77f",
+      "result_id": "8dd799c4-44d5-4c9c-8fe1-958853c095bc"
+    },
+    {
+      "claim_id": "f9bcf9f7-81a1-43d4-8be1-d15798305bbd",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "6e4cd642-96ea-42b4-86cc-5d62e32ebff1",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "3e015237-f5ed-4fbe-b194-bfa14e035bfa",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "a8ddea6d-f032-40bf-8e6b-14ff57c4beff",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "7ecc1f45-6999-400d-b420-53b9954bd77b",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "b426760d-a2dd-43fc-8b29-f3d26c7bffd9",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "82d99e03-ed8e-4f64-a1ee-b5cfd4718182",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "94108c26-27fc-4f4e-938a-774de67df46e",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "bd214335-5329-4e0e-8064-ba24128064bb",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "53496047-802a-4f31-a5a5-09d87f348f3d",
+      "result_id": "7900201b-b127-4fd3-aa05-926110bba465"
+    },
+    {
+      "claim_id": "409bf051-e908-4ea5-ab61-0f829af3a06d",
+      "result_id": "d85b1b68-b2a2-4891-b6c2-51317339de0c"
+    },
+    {
+      "claim_id": "dc7f7a1d-66ff-48ce-bfb2-2ff31de41fa9",
+      "result_id": "d85b1b68-b2a2-4891-b6c2-51317339de0c"
+    },
+    {
+      "claim_id": "46d8f9af-308a-4b1e-b335-fed00b9ef429",
+      "result_id": "d85b1b68-b2a2-4891-b6c2-51317339de0c"
+    },
+    {
+      "claim_id": "f926410e-fdfe-450c-b906-d9726a7e6300",
+      "result_id": "d85b1b68-b2a2-4891-b6c2-51317339de0c"
+    },
+    {
+      "claim_id": "aef664b7-9945-43c7-9161-78085d16f835",
+      "result_id": "d85b1b68-b2a2-4891-b6c2-51317339de0c"
+    },
+    {
+      "claim_id": "af527a50-c9e0-40d2-bfab-0e6f79d28da6",
+      "result_id": "6a911f9f-aab4-452d-b417-b43183397f91"
+    },
+    {
+      "claim_id": "f6882733-e6a0-4839-a439-7b22bfce0bfa",
+      "result_id": "6a911f9f-aab4-452d-b417-b43183397f91"
+    },
+    {
+      "claim_id": "3a0124ce-8985-4eb1-8d09-21ccee3fcb3d",
+      "result_id": "6a911f9f-aab4-452d-b417-b43183397f91"
+    },
+    {
+      "claim_id": "f62d6b3e-4186-4c9c-a1e7-253e1ed28f1e",
+      "result_id": "6a911f9f-aab4-452d-b417-b43183397f91"
+    },
+    {
+      "claim_id": "ed078112-9325-4cf5-85be-1b9f9b1ba681",
+      "result_id": "6a911f9f-aab4-452d-b417-b43183397f91"
+    },
+    {
+      "claim_id": "954ebedb-290e-44dc-b5bf-e7d8faf52df1",
+      "result_id": "dea36d4c-ccd8-49e6-8ba7-4e2418ee2811"
+    },
+    {
+      "claim_id": "4f3eda73-dad0-4db0-982c-20f2d8405b9a",
+      "result_id": "dea36d4c-ccd8-49e6-8ba7-4e2418ee2811"
+    },
+    {
+      "claim_id": "7dd1d791-41b0-49c4-9be8-30fca0543f68",
+      "result_id": "dea36d4c-ccd8-49e6-8ba7-4e2418ee2811"
+    },
+    {
+      "claim_id": "e3634a99-4bfd-40cb-8331-c9fa2dd44bb9",
+      "result_id": "dea36d4c-ccd8-49e6-8ba7-4e2418ee2811"
+    },
+    {
+      "claim_id": "5ce65f3c-c0de-4e02-8a44-c9488c09107c",
+      "result_id": "c8806459-1ede-41a5-a658-2f026bc70d30"
+    },
+    {
+      "claim_id": "3aa3ac06-7394-423b-b584-d56f2fd01b3d",
+      "result_id": "c8806459-1ede-41a5-a658-2f026bc70d30"
+    },
+    {
+      "claim_id": "5535a5d4-031a-4c5e-9b5f-21d57630b07f",
+      "result_id": "c8806459-1ede-41a5-a658-2f026bc70d30"
+    },
+    {
+      "claim_id": "07ad5fb9-b031-4571-b1ab-19f05e537658",
+      "result_id": "c8806459-1ede-41a5-a658-2f026bc70d30"
+    },
+    {
+      "claim_id": "935d79a0-b3d0-4b37-a9f8-8286ee4bcdea",
+      "result_id": "c8806459-1ede-41a5-a658-2f026bc70d30"
+    },
+    {
+      "claim_id": "3cb436fb-756e-4095-b6eb-b6263f245897",
+      "result_id": "c8806459-1ede-41a5-a658-2f026bc70d30"
+    },
+    {
+      "claim_id": "53190d46-c130-4df6-82cb-0bd664402df4",
+      "result_id": "40d1ee99-7b2f-4942-9c51-12aa10e29ae9"
+    },
+    {
+      "claim_id": "2041ba80-4763-4cd3-8f6f-30b787b3e2e5",
+      "result_id": "40d1ee99-7b2f-4942-9c51-12aa10e29ae9"
+    },
+    {
+      "claim_id": "eff02b2e-1d44-4644-96b7-d624ce069ea9",
+      "result_id": "40d1ee99-7b2f-4942-9c51-12aa10e29ae9"
+    },
+    {
+      "claim_id": "f5cb0351-14ec-4ba4-8166-480c687f3270",
+      "result_id": "40d1ee99-7b2f-4942-9c51-12aa10e29ae9"
+    },
+    {
+      "claim_id": "c563815e-d2b9-4b2d-9805-b464087d916a",
+      "result_id": "40d1ee99-7b2f-4942-9c51-12aa10e29ae9"
+    },
+    {
+      "claim_id": "dcff6a96-294c-4240-95f6-1b4d8ea41ce9",
+      "result_id": "403e14b6-e022-42c3-9609-5fccf370671b"
+    },
+    {
+      "claim_id": "f2104e42-1e05-44d6-9801-0f32bcbf0546",
+      "result_id": "403e14b6-e022-42c3-9609-5fccf370671b"
+    },
+    {
+      "claim_id": "862d055c-4b0b-4aaa-aa25-b69c8299bd8f",
+      "result_id": "403e14b6-e022-42c3-9609-5fccf370671b"
+    },
+    {
+      "claim_id": "d62d413e-e4d5-41ef-9229-714b68135d85",
+      "result_id": "11875061-17ff-4816-930d-c46feffd5ace"
+    },
+    {
+      "claim_id": "d6faabde-3266-4b8c-a2c1-06e64b2df315",
+      "result_id": "11875061-17ff-4816-930d-c46feffd5ace"
+    },
+    {
+      "claim_id": "4a97795b-b16e-4fd0-b5e4-a31e701a840b",
+      "result_id": "11875061-17ff-4816-930d-c46feffd5ace"
+    },
+    {
+      "claim_id": "5f731978-632f-42ac-a51f-2051938b5f5d",
+      "result_id": "8db90137-562c-4bd7-894f-8093338d1a44"
+    },
+    {
+      "claim_id": "d00ba62e-ff74-45d0-a71b-8026f964520f",
+      "result_id": "8db90137-562c-4bd7-894f-8093338d1a44"
+    },
+    {
+      "claim_id": "22a142d4-8e54-4778-858f-32441c6da495",
+      "result_id": "46a3c727-1cdb-4575-a41d-003e86c3f192"
+    },
+    {
+      "claim_id": "a20d7432-4f43-460d-b329-0c712858cdd8",
+      "result_id": "46a3c727-1cdb-4575-a41d-003e86c3f192"
+    },
+    {
+      "claim_id": "5be3e798-51f8-4567-a635-1b04352f0de6",
+      "result_id": "46a3c727-1cdb-4575-a41d-003e86c3f192"
+    },
+    {
+      "claim_id": "77ca6482-1107-46a0-8baf-82e4587fe787",
+      "result_id": "58978e3c-3d95-48f5-9455-d48b3f0c6d23"
+    },
+    {
+      "claim_id": "1128c02c-5cb6-48d4-826c-3a2733d5e682",
+      "result_id": "58978e3c-3d95-48f5-9455-d48b3f0c6d23"
+    },
+    {
+      "claim_id": "ea8726f1-3f63-47c9-ab8f-2753f452c061",
+      "result_id": "58978e3c-3d95-48f5-9455-d48b3f0c6d23"
+    },
+    {
+      "claim_id": "a6dd9a71-57b5-4534-950e-00ce0cb6a611",
+      "result_id": "58978e3c-3d95-48f5-9455-d48b3f0c6d23"
+    },
+    {
+      "claim_id": "09c7d472-e5c9-4237-9106-ebfcea3c762e",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "9aafc6be-a2de-4e4b-8966-9e5799925265",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "e75bc7bd-b0f4-46ac-8008-92e0e7a684c0",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "a19e3bb8-3d89-4924-a146-0c8e2a333254",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "590e3bc7-9304-4c9f-a677-d99eac7509f9",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "8d06539a-a98e-49fc-abed-416ceec65bdd",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "ea60eec1-2950-4fb8-aa31-c3ee3c305968",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "8a8e3fef-7bea-493d-95fb-3d99c729aa29",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "e9faf836-2046-4a3f-ace7-5eb89fe8fa26",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "fbe3c509-49ef-461b-a74a-27e773b25115",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "c79d9f99-9615-4ea7-8d8d-fdc8fbf63595",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "18cf9c51-13f8-4755-bf75-0f695ed2bc08",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "1b4691b7-8e80-41c8-ad53-c383ad121e4c",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "85ad93c0-bd3a-4b0b-b336-86b18c1c0152",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "1ae726a2-19e8-48ba-801f-a8d56d97fc40",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "9dc3423b-b8ec-4bbc-ae81-7b2b6617be3c",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "3a0124ce-8985-4eb1-8d09-21ccee3fcb3d",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "f62d6b3e-4186-4c9c-a1e7-253e1ed28f1e",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "4f3eda73-dad0-4db0-982c-20f2d8405b9a",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "7dd1d791-41b0-49c4-9be8-30fca0543f68",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "3aa3ac06-7394-423b-b584-d56f2fd01b3d",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "5535a5d4-031a-4c5e-9b5f-21d57630b07f",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "07ad5fb9-b031-4571-b1ab-19f05e537658",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "935d79a0-b3d0-4b37-a9f8-8286ee4bcdea",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "3cb436fb-756e-4095-b6eb-b6263f245897",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    },
+    {
+      "claim_id": "effa9446-f6cb-4591-a989-bdd38b82e6ed",
+      "result_id": "8b7afcfa-9609-4c5b-adc6-49b501e3f683"
+    }
+  ],
+  "comparisons": []
+}

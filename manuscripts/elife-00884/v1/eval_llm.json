@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes foundational knowledge about Arp2/3 complex function, stating that it is a branched actin filament nucleator that mediates assembly of branched networks by nucleating daughter filaments from mother filaments, and that when isolated it is inactive, requiring binding to preformed filaments and NPF association for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C13, C14, and C15 are well-established facts about Arp2/3 complex function, supported by citations to prior literature (Goley and Welch 2006, Rotty et al. 2013, Pollard 2007, Achard et al. 2010). These are foundational knowledge claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C47"
+    ],
+    "result": "The manuscript identifies a knowledge gap: cellular actin networks contain multiple NPFs from both type I and type II classes with non-redundant roles, but the mechanism by which they coordinately regulate Arp2/3 complex is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C18, C19, C20, and C47 establish the scientific rationale for the study by identifying a gap in understanding. These are supported by citations to prior literature (Galletta et al. 2008, Yamaguchi et al. 2005, Ayala et al. 2008) and represent the motivation for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cortactin synergizes with N-WASP to potently activate Arp2/3 complex. The concentration dependence follows a hyperbolic trend with half-maximal synergy at 72 nM cortactin, and saturating cortactin increases polymerization rate 3.5-3.8-fold over GST-VCA alone. Cortactin does not inhibit Arp2/3 complex at any concentration tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C41, C42, C48-C52 are supported by experimental data in Figure 2 showing pyrene actin polymerization assays and TIRF microscopy. The quantitative measurements of synergy (72 nM half-maximal, 3.5-3.8-fold activation) are derived from curve fitting of experimental data. The lack of inhibition contradicts a prior report (Siton et al. 2011) but is supported by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mathematical modeling and experimental data demonstrate that actin filament recruitment cannot fully account for cortactin-mediated synergy. While increasing filament side binding sites increases polymerization rate in simulations, it cannot account for the dramatic rate increases observed experimentally with cortactin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63 are supported by mathematical modeling (Figure 3) that tests the filament recruitment hypothesis. The model fits experimental data well (residual sum of squares 1.3\u00d710\u207b\u00b9\u00b9) and the optimized knuc value (0.0038 s\u207b\u00b9) is consistent with prior single-molecule studies. However, uncertainty in kfil_on limits the ability to completely eliminate filament recruitment at the minimum threshold on rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C134",
+      "C135"
+    ],
+    "result": "The N-terminal acidic region (NtA) of cortactin is sufficient for synergy with GST-VCA, demonstrating that actin filament binding repeats are not required for synergy. At saturation, NtA is as potent as full-length cortactin (3.8-fold activation), but requires 110-fold higher concentration (11 \u00b5M vs 72 nM) for half-maximal synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C134, C135 are supported by experimental data in Figure 3E showing that NtA alone can synergize with GST-VCA. This directly tests and refutes the filament recruitment model. The quantitative measurements of concentration dependence and maximal activation are derived from curve fitting of experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "N-WASP must be dimerized for potent synergy with cortactin. Saturating cortactin enhances GST-VCA or LZ-VCA activation 3.7-fold, but only weakly influences monomeric VCA (1.5-fold). The difference is due to oligomerization state rather than GST artifact, as LZ-VCA behaves identically to GST-VCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C68-C75 are supported by experimental data in Figure 4 comparing monomeric VCA, GST-VCA, LZ-VCA, and VVCA. The use of LZ-VCA as a control eliminates concerns about GST artifacts. The data clearly show that dimerization is required for potent synergy, though the mechanism is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "VVCA, which contains tandem V regions and can recruit two actin monomers, is not synergistic with cortactin at any concentration, demonstrating that the ability to recruit two actin monomers using one NPF binding site is not sufficient for synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 are supported by experimental data in Figure 4 showing that VVCA does not synergize with cortactin. This result helps rule out a specific mechanistic hypothesis about how dimerization enables synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The manuscript proposes an obligatory displacement model in which cortactin displaces N-WASP from nascent branches as a prerequisite for nucleation. This model is based on observations that VCA is a better activator than GST-VCA at saturation, WASP dissociates before daughter filament elongation, and the V region may block the barbed end of actin monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C78-C82 describe the central mechanistic model proposed in the manuscript. The model is supported by multiple lines of evidence including kinetic data (C79), prior single-molecule studies (C80), and structural data (C81). However, C78 and C82 are hypotheses that require further experimental validation beyond the observations cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C124"
+    ],
+    "result": "Mutational analysis supports the obligatory displacement model. The R442A mutation in VCA decreases actin affinity 20-fold and increases maximal polymerization rate 2.5-fold, while reducing synergy with cortactin 2-fold. The E455R mutation does not affect actin monomer binding but decreases maximal polymerization rate and increases synergy with cortactin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C83-C89, C124 are supported by experimental data in Figure 5 showing effects of VCA mutations on activation kinetics and synergy. The R442A data support the model that weakening VCA-actin interactions accelerates nucleation. The E455R data suggest context-dependent interactions at the nascent branch junction. The mutational strategy is well-designed to test the displacement model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Single-molecule TIRF microscopy reveals that cortactin binds statically to actin filaments (does not diffuse along filaments) with an off rate of 0.050 s\u207b\u00b9 from filament sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C91-C93 are supported by single-molecule TIRF data in Figure 6. The static binding is clearly demonstrated by kymograph analysis (Figure 6B), and the off rate is determined from lifetime analysis of 191 molecules. The data quality appears good with single-step photobleaching controls (Figure 6\u2014supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Cortactin specifically targets branch junctions with ~300-fold higher affinity than filament sides (17 nM vs 5.2 \u00b5M). This is accomplished through a ~160-fold increase in on rate (2.0\u00d710\u2076 M\u207b\u00b9s\u207b\u00b9 for junctions vs 1.2\u00d710\u2074 M\u207b\u00b9s\u207b\u00b9 for sides) and a ~2-fold decrease in off rate (0.034 s\u207b\u00b9 vs 0.063 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C94-C101 are supported by single-molecule TIRF data in Figure 7. The preferential binding to junctions is striking: 30% of tracked molecules bound to junctions despite junctions representing only 0.13% of binding sites. The affinity calculations assume excess ligand conditions, which the authors verify through detailed calculations in Materials and Methods. The kinetic parameters are internally consistent (KD = koff/kon).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Single-molecule TIRF microscopy during active branching shows that cortactin remains bound to branch junctions after nucleation (average lifetime 62 s post-nucleation vs 6.5 s pre-nucleation). Cortactin binds existing branch junctions with similar lifetime during active branching (29.5 s) as with preformed branches (29.1 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 are supported by single-molecule TIRF data in Figure 8 showing 66 instances where cortactin bound before nucleation and remained bound after. The lifetime measurements are quantitative and support the obligatory displacement model prediction that cortactin remains at junctions during nucleation. The authors acknowledge limitations in resolving newly formed daughter filaments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C120"
+    ],
+    "result": "Single-molecule TIRF microscopy shows that the NtA fragment can directly engage Arp2/3 complex at nascent branch junctions during nucleation and does not block daughter filament elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108, C109, C120 are supported by single-molecule TIRF data in Figure 8D and Video 6 showing labeled NtA at branch junctions during nucleation. This directly tests a key prediction of the obligatory displacement model and is consistent with bulk assays showing NtA does not inhibit nucleation at high concentrations (Figure 3E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Mathematical modeling shows that the obligatory displacement model fits experimental data well. The optimized displacement activation rate (kdis = 0.036 s\u207b\u00b9) is 10-fold higher than the activation rate without cortactin (knuc = 0.0038 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by mathematical modeling results in Figure 9B-C. The model incorporates rate constants measured from single-molecule experiments and fits pyrene actin polymerization time courses well. The 10-fold increase in activation rate with cortactin is consistent with the observed 3.5-3.8-fold increase in polymerization rate. The authors acknowledge limitations in precision due to model simplifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C113",
+      "C114",
+      "C115",
+      "C139"
+    ],
+    "result": "Mathematical modeling demonstrates that the recycling displacement model cannot account for synergy because only 3.8% of GST-VCA is sequestered at branch junctions at the end of reactions, so recycling cannot significantly increase free GST-VCA concentration to enhance nucleation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C113-C115, C139 are supported by mathematical modeling in Figure 9E showing that the recycling model fails to fit experimental data. The analysis directly tests and refutes the recycling model proposed by Siton et al. 2011. The conclusion that cortactin directly influences nucleation at nascent junctions (rather than indirectly through recycling) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The obligatory displacement model proposes that GST-VCA, actin monomers, and Arp2/3 complex assemble at filament sides to form nascent branch junctions; cortactin targets these junctions through multivalent interactions; NtA competes with CA at the Arp3 binding site; and release of CA accelerates GST-VCA release to allow nucleation while cortactin remains bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119, C121-C123 describe the detailed mechanistic model. The model is consistent with prior structural and biochemical data (C118, C122, C123 cite Weaver et al. 2002, Padrick et al. 2008, Cai et al. 2008, Egile et al. 2005, Uruno et al. 2003) and with the experimental data presented in the manuscript. However, some aspects remain hypothetical and would benefit from additional direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The manuscript proposes that VCA release before elongation may prevent strong membrane tethering of growing actin networks, and that cortactin may regulate network-substrate connections by stimulating NPF release. This is supported by prior studies showing VCA release precedes elongation and that increased NPF-junction connections decrease bead motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C130 are largely speculative hypotheses about the functional significance of the obligatory displacement mechanism in vivo. While C125 and C127 cite prior experimental support, C126, C128, and C130 are hypotheses that require direct experimental testing. The ideas are plausible and well-reasoned but not directly demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The on rate of cortactin for filament sides (12,100 M\u207b\u00b9s\u207b\u00b9) is 200-2000-fold slower than most actin filament binding proteins, possibly because binding requires a conformational change in filaments. For the NtA construct, synergy must occur through nascent branch targeting, suggesting this is the dominant pathway for full-length cortactin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by comparison of measured kinetics with prior literature and by the NtA experimental data. The slow on rate is unusual and the conformational change hypothesis (C132) is reasonable given prior EM data (Pant et al. 2006), though it remains speculative. The conclusion about nascent branch targeting being dominant (C133) is well-supported by the NtA data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Cortactin can weakly activate Arp2/3 complex on its own, and this intrinsic activity (unlike synergy) requires the filament binding repeats. Filament recruitment may explain this weak intrinsic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by citations to prior literature (Weed et al. 2000, Uruno et al. 2001) and by the experimental data showing NtA is sufficient for synergy but full-length cortactin is required for intrinsic activity. The filament recruitment hypothesis (C138) for intrinsic activity is reasonable but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Cortactin dynamically stabilizes branch junctions through repeated binding and dissociation. The average lifetime of cortactin at junctions (29.2 s) is much shorter than branch lifetime (8-27 min), but high affinity (KD = 17 nM) ensures cortactin rebinds many times during branch lifetime. In cells, competition with disassembly factors may be more important than intrinsic stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 integrate the kinetic measurements with prior literature on branch stability and cellular dynamics. The concept of dynamic stabilization (C145) is well-supported by the measured kinetics. The comparison with in vivo dynamics (C146, C147) and the hypothesis about competition with disassembly factors (C148) are reasonable interpretations supported by citations, though C148 remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C90"
+    ],
+    "result": "The manuscript provides extensive background on NPF classification, domain structure, and prior knowledge about cortactin and WASP/N-WASP function, including their co-localization in cellular branched networks and competition for Arp3 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C21-C46, C90 are background knowledge claims supported by citations to prior literature. These establish the scientific context for the study and are well-documented in the field. They are appropriately cited and accurately represent prior work.",
+    "result_type": "MINOR"
+  }
+]

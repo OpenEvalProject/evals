@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors developed a method to detect HIV-1 RTC/PIC by co-localizing EdU-labeled nascent viral cDNA with IN.eGFP in infected cells. The method uses aphidicolin to suppress nuclear DNA synthesis, allowing detection of cytoplasmic EdU signals. Validation with EFV (reverse transcriptase inhibitor) dramatically reduced co-localizing objects, confirming specificity. Super-resolution microscopy validated co-localization at high precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C80 collectively establish a robust method for detecting productive HIV-1 replication complexes. The approach is validated through multiple lines of evidence: (1) EFV treatment specifically blocks EdU/IN.eGFP co-localization (C78-C79), (2) super-resolution microscopy confirms co-localization (C73), (3) control experiments demonstrate detection sensitivity (C77), and (4) the IN.eGFP fusion protein is properly incorporated and functional (C61-C63). The use of APC to reduce nuclear EdU signal is well-justified and validated (C64-C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C169"
+    ],
+    "result": "RTC/PIC accumulate in HeLa-derived cells between 2-4 hours post-infection, with detection in almost half of cells at 2 hr and significant increases at 3 and 4 hr. No significant additional accumulation occurs after 4 hr. This timing is consistent with PCR-based detection of reverse transcription products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 and C169 describe the kinetics of RTC/PIC formation supported by data in Figure 2. The temporal progression is clearly documented with statistical analysis (Mann-Whitney test), and the results are consistent with independent PCR-based measurements from cited literature (C169). The data provide clear evidence for the time course of reverse transcription in this cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C51",
+      "C52",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C187",
+      "C188"
+    ],
+    "result": "In HeLa-derived cells, approximately 95% of cytoplasmic RTC/PIC are positive for CA and NC proteins, while only 6% are positive for MA. CA association is independent of subcellular localization. Super-resolution microscopy measured average diameters of ~155 nm for CA and ~133 nm for IN.mEos3.2 signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C51-C52, C88-C98, C187-C188 are well-supported by quantitative immunofluorescence data (Figure 3) and super-resolution microscopy (Figure 4). The analysis of >100 RTC/PIC per condition provides statistical robustness. The finding that CA remains associated with cytoplasmic RTC/PIC regardless of location (C187-C188) argues against gradual uncoating during trafficking. The super-resolution measurements provide precise structural information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In HeLa-derived cells, CA is lost from nuclear PIC (absent in 23 of 24 nuclear PICs analyzed). RTC/PIC at the nuclear pore retain CA, suggesting CA is lost at or shortly after nuclear entry. This is consistent with CA interactions with nucleoporins 153 and 358.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C103-C107 are supported by microscopy data (Figure 4B-C) showing clear CA signals on perinuclear RTC/PIC but absence from nuclear PIC. The interpretation that CA is lost at the nuclear pore (C105) is reasonable given the data, though alternative explanations exist (rapid removal after import). The consistency with nucleoporin interactions (C106) from cited literature strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "In primary human macrophages, only 44% of cytoplasmic RTC/PIC are CA-positive, with the proportion decreasing over time (50% at 24 hr, 30% at 48 hr). In contrast, 97% of nuclear PIC are CA-positive, suggesting nuclear import of intact or remodeled capsids in MDM. Nuclear PIC accumulate between 24-48 hr post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C108-C168 describe dramatically different CA dynamics in MDM compared to HeLa cells, supported by data from 567 MDM across 8 donors (Table 1, Figure 7). The finding that nuclear PIC retain CA while cytoplasmic RTC/PIC lose it over time (C161-C162) is well-documented. The observation of CA-positive nuclear PIC and CA-negative cytoplasmic RTC/PIC in the same cell (C110) provides strong evidence for the interpretation. However, the conclusion about nuclear import of capsids (C111, C168) is an inference that, while reasonable, represents a significant departure from current models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose that CA-negative cytoplasmic RTC/PIC in MDM represent dead-end products rather than precursors to nuclear PIC, as they contain exposed cDNA that may trigger innate immune responses. The capsid or capsid-derived structure remains intact during reverse transcription and nuclear import in MDM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C116 represent interpretations and speculations about the fate of CA-negative cytoplasmic RTC/PIC in MDM. While the observation that nuclear PIC are CA-positive and cytoplasmic RTC/PIC are often CA-negative is well-supported, the conclusion that CA-negative complexes are dead-end products (C112) is speculative. The proposal that these expose cDNA to sensors (C113-C114) is reasonable but not directly tested. The overall model (C116) is a significant inference requiring additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "PF74 exhibits a bimodal mechanism: at low concentrations (~2 \u03bcM), it blocks nuclear import without affecting reverse transcription or RTC/PIC formation; at high concentrations (10 \u03bcM), it blocks reverse transcription. At 2.7 \u03bcM, PF74 abolishes 2-LTR circle formation despite normal late RT products, indicating a nuclear import defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C123-C142 are well-supported by multiple complementary assays: microscopy-based RTC/PIC detection (Figure 5B), qPCR for RT products and 2-LTR circles (Figure 5C), and infectivity assays (Figure 5A). The bimodal mechanism is clearly demonstrated with appropriate controls (EFV, EVG). The finding that 2 \u03bcM PF74 blocks infection without affecting RT or RTC/PIC formation (C129-C131) is particularly striking and well-documented. Statistical analysis supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "PF74 at low concentrations competitively inhibits CPSF6 binding to the viral capsid. In TNPO3 knock-down cells with increased cytoplasmic CPSF6, 87% of RTC/PIC are CPSF6-positive, but treatment with 2 \u03bcM PF74 reduces this to 18%, providing direct evidence for competitive inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C152 are supported by clever experimental design using TNPO3 knock-down to increase cytoplasmic CPSF6 levels (C147-C148), allowing better detection of CPSF6-RTC/PIC association. The dramatic reduction from 87% to 18% CPSF6-positive RTC/PIC upon PF74 treatment (C149-C150) provides strong evidence for competitive inhibition. The interpretation is consistent with structural data from cited literature (C143) showing PF74 binds the same pocket as CPSF6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C172",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The imaging method operates at near single-molecule sensitivity (1-2 dye molecules per confocal volume) and can detect nascent cDNA from vector genomes as small as 3.7 kb, suggesting potential for detecting short reverse transcription products. The method allows identification of individual RTC/PIC in the physiological environment of infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172, C175-C178 describe the sensitivity and capabilities of the method, supported by control experiments (Figure 1\u2014figure supplement 6). The detection of 3.7 kb and 5.4 kb vector genomes (C177) demonstrates sensitivity, though the inference about detecting short RT products in abortive infections (C178) is more speculative. The advantage over bulk PCR methods (C172) is clear and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "The newly developed system is ideally suited for studying retroviral post-entry events and host factor roles. The findings challenge current hypotheses about HIV-1 replication, particularly regarding capsid retention in nuclear PIC of macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C201-C204 represent conclusions about the utility and impact of the method. These are well-supported by the demonstrated capabilities of the system and the novel findings, particularly the unexpected CA retention in nuclear PIC of MDM (C202). The statement about future applications (C203-C204) is reasonable given the method's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors speculate that lack of CA signal on nuclear PIC in HeLa cells may indicate capsid loss at the nuclear pore before import, or more rapid CA removal after import compared to MDM. CA-negative nuclear PIC in MDM (detected only at 48 hr) may reflect a later stage after nuclear entry, as the capsid likely must be removed before integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C122 are speculations about mechanisms that could explain the observed differences between cell types. While the observations are solid (C121-C122), the mechanistic interpretations (C117-C118) are not directly tested. The speculation about capsid removal before integration (C119-C120) is reasonable but lacks direct evidence. These represent hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C179"
+    ],
+    "result": "RTC/PIC formation in MDM is slower than in HeLa cells, with accumulation over time consistent with previous PCR results. Nuclear PIC accumulate between 24-48 hr in MDM. The gradual accumulation may reflect asynchronous entry and slow minus-strand cDNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171, C179 describe kinetics in MDM supported by data in Table 1. The consistency with previous PCR results (C170) strengthens the findings. The interpretation about asynchronous entry and slow synthesis (C179) is reasonable speculation supported by cited literature, though not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C173",
+      "C174"
+    ],
+    "result": "EdU is incorporated in place of thymidine in viral cDNA, with a maximum of 5588 EdU molecules expected for the entire double-stranded HIV-1 (NL4-3) cDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C174 are straightforward calculations based on the known genome sequence and EdU incorporation mechanism. The calculation is correct and provides context for understanding detection sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "MA, as a membrane-associated protein, is expected to separate from the capsid upon fusion, though some previous studies reported residual MA on RTC. The bulk of MA appears lost from RTC/PIC, though immunofluorescence cannot rule out presence of some MA molecules. NC is a nucleic acid-binding protein that coats viral RNA, and NC mutations affect integration. NC association with RTC/PIC may not be surprising, though NC was not detected in some previous biochemical fractionation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C186 provide context for interpreting the MA and NC results. The expectation about MA (C180) is reasonable based on its membrane association, and the observation of minimal MA on RTC/PIC (C183) is consistent with this. The discussion of NC (C184-C186) appropriately contextualizes the finding within previous literature. The acknowledgment of detection limitations (C182) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Previous studies reported time-dependent loss of CA from cytoplasmic Vpr-positive structures in HeLa/HOS cells infected with VSV-G pseudotyped VLPs, suggesting gradual uncoating. However, this may have been due to epitope inaccessibility from conformational changes or host protein binding, especially since monoclonal antibodies were used. Entry pathway differences (VSV-G pseudotypes vs. native entry) may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 appropriately discuss how the current findings relate to previous literature. The alternative explanations for previous observations (C101-C102) are reasonable speculations that highlight important methodological differences (polyclonal vs. monoclonal antibodies, entry pathways). This contextualizes why the current results may differ from some previous reports.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "PF74 binds a groove in the CA N-terminal domain and has been proposed to induce premature uncoating. PF74 interferes with CPSF6 and Nup153 binding, which have overlapping binding sites on the CA hexamer that are lost upon disassembly. At limiting concentrations, PF74 likely acts as a competitive inhibitor of host factor binding on intact capsid. Saturating concentrations may cause capsid dissociation, but this is not the primary mode of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C197 integrate the current findings with structural and biochemical data from cited literature. The interpretation that PF74 acts as a competitive inhibitor at low concentrations (C195) is well-supported by the experimental data. The speculation about high-concentration effects (C196) and the conclusion about primary mechanism (C197) are reasonable based on the dose-response data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "Many host proteins (Trim5\u03b1, cyclophilin A, CPSF6, MX-2, TNPO3, nucleoporins) have been implicated in early HIV-1 post-entry stages in a CA-dependent manner. CA mutations affecting these interactions are available and show differential effects on infectivity depending on host cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C200 summarize relevant background from cited review articles. These provide appropriate context for the significance of the findings and potential future applications of the method.",
+    "result_type": "MINOR"
+  }
+]

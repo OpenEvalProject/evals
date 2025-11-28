@@ -1,0 +1,2307 @@
+{
+  "submission": {
+    "id": "b6bfb959-be3a-458f-b4ee-c17fb0aa072c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:45:53.783494Z",
+    "updated_at": "2025-11-28T19:45:53.783494Z"
+  },
+  "content": [
+    {
+      "id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "submission_id": "b6bfb959-be3a-458f-b4ee-c17fb0aa072c",
+      "content_type": "manuscript",
+      "content_text": "# Expanding the olfactory code by in silico decoding of odor-receptor chemical space\n\n## Authors\n\n- Sean Michael Boyle<sup>1</sup>\n- Shane McInally<sup>2</sup>\n- Anandasankar Ray<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Genetics, Genomics, and Bioinformatics Program University of California, Riverside Riverside United States\n2. Department of Entomology University of California, Riverside Riverside United States\n3. Institute of Integrative Genome Biology University of California, Riverside Riverside United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCoding of information in the peripheral olfactory system depends on two fundamental factors: interaction of individual odors with subsets of the odorant receptor repertoire and mode of signaling that an individual receptor-odor interaction elicits, activation or inhibition. We develop a cheminformatics pipeline that predicts receptor\u2013odorant interactions from a large collection of chemical structures (>240,000) for receptors that have been tested to a smaller panel of odorants (\u223c100). Using a computational approach, we first identify shared structural features from known ligands of individual receptors. We then use these features to screen in silico new candidate ligands from >240,000 potential volatiles for several Odorant receptors (Ors) in the Drosophila antenna. Functional experiments from 9 Ors support a high success rate (\u223c71%) for the screen, resulting in identification of numerous new activators and inhibitors. Such computational prediction of receptor\u2013odor interactions has the potential to enable systems level analysis of olfactory receptor repertoires in organisms.\n\n## Introduction\n\nThe peripheral olfactory system is unparalleled in its ability to detect and discriminate amongst an extremely large number of volatile compounds in the environment. To detect this wide variety of volatiles, most organisms have evolved large families of receptor genes that typically encode 7-transmembrane proteins expressed in the olfactory neurons (Buck and Axel, 1991; Clyne et al., 1999; de Bruyne and Baker, 2008; Vosshall et al., 1999; Dahanukar et al., 2005). Each volatile chemical in the environment is thought to interact with a specific subset of odorant receptors depending upon odor structure and binding sites on the receptor. This precise detection and coding of odors by the peripheral olfactory neurons are subsequently processed, transformed and integrated in the central nervous system to generate specific behavioral responses that are critical for survival such as finding food, finding mates, avoiding predators etc (van der Goes van Naters and Carlson, 2006).\n\nCurrently there are two major rate-limiting steps in analysis of peripheral coding in olfaction: a very small proportion of chemical space can be systematically tested for its activity on odorant receptors and a very small fraction of the numerous odorant receptors have been tested for responses (Araneda et al., 2000; Hallem et al., 2004; Hallem and Carlson, 2006; Pelz et al., 2006; Kreher et al., 2008; Saito et al., 2009; Mathew et al., 2013). The challenges for overcoming the rate-limiting steps are enormous. First, volatile chemical space is immense, more than 2000 odors in the environment have been catalogued from a small fraction of plant sources alone (Knudsen et al., 2006). Second, the complete three-dimensional structures of the 7-transmembrane odorant receptor proteins have not yet been determined and modeling of protein\u2013odor interactions and sophisticated virtual screening methods are not yet possible except in rare instances (Triballeau et al., 2008). In the decade since the first systematic study of 47 odorants on the Drosophila antenna in 2001 (de Bruyne et al., 2001), additional studies have only identified a total of \u223c250 novel activating odors (de Bruyne et al., 1999; de Bruyne et al., 2001; Dobritsa et al., 2003; Goldman et al., 2005; Hallem et al., 2004; Hallem and Carlson, 2006; Kreher et al., 2005, 2008; Kwon et al., 2007; Pelz et al., 2006; Stensmyr et al., 2003; Turner and Ray, 2009; van Naters and Carlson, 2007; Yao et al., 2005; Schmuker et al., 2007), which have been assembled and compared in an online database (Galizia et al., 2010).\n\nHere we overcome this challenge by designing a chemical-informatics platform that is effective and fast. In order to do so we focused our attention on one of the most comprehensive quantitative data sets available, where measurements of responses of 24 Drosophila odorant receptors to a panel of 109 odorants are known that provides a rich resource for structure-activity type analyses (Hallem and Carlson, 2006). We devised a method to identify molecular structural properties that are shared amongst the activating odorants for each receptor. We then utilize information about these shared molecular features of active odorants, that are presumably required for binding to a receptor, to perform in silico screens on a chemical space of >240,000 chemicals, including a large collection of naturally occurring and biologically important odors, and identify the top 500 hits for each of the odorant receptors (Ors). We then use single-unit electrophysiology to validate a subset of predictions for 9 Ors in vivo and find that our method met an overall success rate of \u223c71% in identifying novel ligands. This approach is specific since testing shows a low (10%) rate of finding ligands while using non-predicted odors. This approach allows us to create a computationally predicted peripheral coding map of a large chemical space, which substantially improves our ability to predict and investigate peripheral olfactory coding and provides a powerful tool for the discovery of novel ligands for Ors, some of which may be ecologically important or useful for behavior modification.\n\n## Results\n\n### Analysis of odorant structure\n\nSince the structure of receptor protein complexes is not known, we analyzed receptor\u2013odor interactions by applying the \u2018similarity property principle\u2019, which reasons that structurally similar molecules (e.g., activating odorants) are more likely to have similar properties (Hendrickson, 1991; Martin et al., 2002). Although this general approach has been useful in the area of pharmaceuticals (Martin et al., 2002; Keiser et al., 2009), receptor\u2013odor analysis presents significant additional challenges. Not only are odorant molecules generally smaller in size than pharmaceuticals (average MW of known odors \u223cthreefold less than FDA approved pharmaceuticals [Wishart et al., 2008]) and therefore offer fewer structural features for differentiation, they are also detected by the receptors with specificity at extremely low concentrations in the volatile phase (Hallem and Carlson, 2006; Kreher et al., 2008). Additionally, odorant receptors are differentially tuned and can sometimes appear not to follow distinct structural rules: odors that look structurally different can strongly activate the same receptor, while odors that appear very similar may have very different levels of activity (Hallem and Carlson, 2006). For example, while hexanal and \u03b3-octalactone are structurally very different, they both strongly activate Or85b (Hallem and Carlson, 2006). Alternatively, while hexanal and pentanal are structurally very similar, they have very different activities against Or85b (Hallem and Carlson, 2006).\n\n### General measures of odorant similarity\n\nSimilarity in chemical structure can be described and measured quantitatively using multiple approaches, however a single method may not be ideal for every single application (Maldonado et al., 2006). In order to test whether non-optimized approaches would be able to identify similarities in shape of known activators we compared four different approaches: Cerius2 (Accelrys Software Inc), Dragon (Talete), Maximum-Common-Substructure (MCS) (Cao et al., 2008b), and atom-pair (AP) (Carhart et al., 1985; Cao et al., 2008a). Cerius2 and Dragon represent collections of 200 and 3224 molecular descriptors, respectively, that calculates values for a broad range of chemical properties such as molecular weight, functional group counts, and in the case of Dragon, three-dimensional relationships within molecules. The AP method compares shortest path distances between all atom pairs in a molecule. Lastly, MCS identifies the largest two-dimensional substructure that exists between two compounds. Using each of these approaches, we computed distances between 109 odors that had previously been tested against 24 Ors from Drosophila melanogaster (Hallem and Carlson, 2006). These represent most of the Or genes expressed in the Drosophila antenna (Hallem and Carlson, 2006). Upon comparison, we find that none of the four methods were vastly superior and that each method varied in the ability to group known activating odorants \u2018actives\u2019 close together in distance as measured for each Or using a method called accumulative-percentage-of-actives (APoA)(Chen and Reynolds, 2002) (\u2018Materials and methods\u2019 and Figure 1\u2014figure supplement 1) and value of the area-under-the-curve (AUC). Ultimately, Dragon and Cerius2, which utilize a large number of diverse molecular descriptor values to describe each odor structure, performed better than AP or MCS, suggesting that a more diverse set of descriptors is better at explaining Or activity than two-dimensional measures alone (Figure 1B). Atom-Pair and MCS were subsequently ignored from further development.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01120/elife-01120-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the cheminfomatics pipeline used to identify novel ligands from a larger chemical space. (B) Plot of mean APoA values for 19 Drosophila Ors calculated using various methods including a previously identified set (Haddad et al., 2008). (C) Receiver-operating-characteristic curve (ROC) representing computational validation of ligand predictive ability of the Or-optimization approach. (D) Hierarchical cluster analysis of the 109 odorants of the training set using Or-specific optimized descriptor sets to calculate distances in chemical space for odorant receptors with strong activators (green), and odorant receptors with no strong activators (yellow).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01120/elife-01120-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Plots of the mean APoA values obtained from various molecular descriptor methods demonstrates that optimized descriptor subsets generate highest values. Previous = 32 Dragon descriptors selected in Haddad et al. (2008). Molecular descriptor methods were compared using the 109 compounds that were previously tested in (Hallem and Carlson, 2006).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01120/elife-01120-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Hierarchical cluster identical to Figure 1D. Known odorant activity scale is indicated using independent color gradient scales. Horizontal black bars underneath cluster indicate part of active cluster, a subset of which were used to generate pharmacophores using the Ligand Scout program (shown underneath each Or in two orientations). Yellow = hydrophobic region, red = Hydrogen-bond acceptor, green/red = Hydrogen-bond donor or acceptor depending upon pH.\n\n### Identification of unique subsets of optimized descriptors for each Drosophila Or\n\nIndividual Ors respond to distinct subsets of ligands with some degree of overlap (Hallem and Carlson, 2006; Kreher et al., 2008). We reasoned that rather than using entire Dragon or Cerius2 descriptor sets, which likely includes a number of measurements for features irrelevant for ligand-binding to an individual Or, judiciously selecting subsets of molecular descriptors suited to cluster activators for an individual receptor may be more effective at defining an Or-specific chemical space. To test this hypothesis, we used a Sequential-Forward-Selection (SFS) method to incrementally create unique optimized descriptor subsets for each Or from an initial combined set of 3424 descriptors from Dragon and Cerius2 (Whitney, 1971) (\u2018Materials and methods\u2019; Figure 1A). This optimization-based analysis was performed on the 19 Ors from the dataset with known activating odors, excluding Or82a, since it has but a single known strong activator (Hallem and Carlson, 2006).\n\nNot surprisingly, the composition of the optimized descriptor sets varied greatly between Ors, as on average only 13% of descriptors are shared between Ors (Table 1; Supplementary file 1A). Molecular descriptors can be categorized from 0 to 3 dimensions. Zero-dimensional (0-D) descriptors define features that can be viewed as not directly being shape dependent, such as molecular weight or vapor pressure. On the other end of the scale, three-dimensional (3-D) descriptors define features of molecules in three-dimensional space, such as the distance between two atoms of an odor molecule. Interestingly, we find an overwhelming preference for three-dimensional and two-dimensional descriptors compared to one-dimensional and zero-dimensional descriptors, suggesting that structural shape features are more important for receptor\u2013odor interactions (Table 1; Supplementary file 1A). We find that Or-optimized descriptor sets were far superior at grouping together activating odors from the training set when compared to the non-optimized methods (Dragon, Cerius2, MCS, AP) and a previously identified collection of descriptors that were identified without receptor-specific optimization (Haddad et al., 2008) (Figure 1B, Figure 1\u2014figure supplement 1).\n\n**Table 1.**\n Optimized molecular descriptor set compositions\n\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Descriptor class type counts for all Ors</td>\n    </tr>\n    <tr>\n      <td>GETAWAY descriptors</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td>3D-MoRSE descriptors</td>\n      <td>66</td>\n    </tr>\n    <tr>\n      <td>2D autocorrelations</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>Edge adjacency indices</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>2D binary fingerprints</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>Functional group counts</td>\n      <td>43</td>\n    </tr>\n    <tr>\n      <td>Atom-centred fragments</td>\n      <td>37</td>\n    </tr>\n    <tr>\n      <td>WHIM descriptors</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>Topological charge indices</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>Atomtypes (Cerius2)</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Burden eigenvalues</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Molecular properties</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Topological descriptors</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>Geometrical descriptors</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>2D frequency fingerprints</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>RDF descriptors</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Walk and path counts</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Connectivity indices</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Information indices</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Topological (Cerius2)</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Constitutional descriptors</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Structural (Cerius2)</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Randic molecular profiles</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Optimized descriptor analysis</td>\n    </tr>\n    <tr>\n      <td>Average descriptor overlap between Ors</td>\n      <td>13%</td>\n    </tr>\n    <tr>\n      <td>Average number of descriptors per Or</td>\n      <td>29.9</td>\n    </tr>\n    <tr>\n      <td>Average number 3D descriptors per Or</td>\n      <td>10.8</td>\n    </tr>\n    <tr>\n      <td>Average number 2D descriptors per Or</td>\n      <td>12.2</td>\n    </tr>\n    <tr>\n      <td>Average number 1D descriptors per Or</td>\n      <td>6.6</td>\n    </tr>\n    <tr>\n      <td>Average number 0D descriptors per Or</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Descriptor dimensionality counts</td>\n    </tr>\n    <tr>\n      <td>Number three dimensional descriptors</td>\n      <td>205</td>\n    </tr>\n    <tr>\n      <td>Number two dimensional descriptors</td>\n      <td>232</td>\n    </tr>\n    <tr>\n      <td>Number one dimensional descriptors</td>\n      <td>126</td>\n    </tr>\n    <tr>\n      <td>Number zero dimensional descriptors</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Descriptor Origin</td>\n    </tr>\n    <tr>\n      <td>Number Dragon descriptors</td>\n      <td>539</td>\n    </tr>\n    <tr>\n      <td>Number Cerius descriptors</td>\n      <td>29</td>\n    </tr>\n  </tbody>\n</table>\n\n_Breakdowns of the molecular descriptor class type, dimensionality, origin, and average overlap for all optimized molecular descriptors selected for each Or._\n\n### Computational validation of optimized descriptor sets\n\nIn order to validate the predictive ability of the Or-optimized method, we performed five independent trials of fivefold cross-validations followed by a Receiver-Operating-Characteristic (ROC) analysis, an established computational approach (Hastie et al., 2001; Tan et al., 2006) (\u2018Materials and methods\u2019). Briefly, this involved withholding 20% of the 109 previously tested odors for a receptor. Descriptors were optimized using the remaining 80% odors for training, and ligand-predictions were subsequently performed on the 20% of odors that were withheld. This operation was repeated five times for each receptor, each time selecting a different 20% as withheld from the training set. The entire fivefold operation was repeated five times for each receptor and a mean ROC curve representing the prediction accuracy determined. This analysis was possible for 12 Ors which had >6 known ligands that activated >100 spikes/s. The Area-Under-Curve (AUC) value (0.815) is very promising and suggests that the Or-optimized descriptor sets are effective at predicting novel ligands (Figure 1C).\n\nIn addition to performing the fivefold cross-validation, we also clustered the 109 training odors independently for each Or, using distances calculated from the previously determined receptor specific descriptor sets we identified. As expected, we find that activating odorants cluster tightly together for each Or (Figure 1D) and activating odors of an Or have shared sub-structures and shared pharmacophore features (Figure 1\u2014figure supplement 2). In a few cases, such as for Or35a and Or98a, not all the highly activating compounds are clustered, suggesting the possibility of multiple or flexible binding sites, or imperfect selection of descriptors. Four of the Ors (Or2a, Or23a, Or43a and Or85f) have few known activators, none of which activate the receptors at >150 spikes/s, however our descriptor optimization approach is still able to cluster each of the few weak activators together (Figure 1D).\n\n### High-throughput in silico screening of odorant receptors\n\nSince Or-optimized descriptor sets can efficiently group strong activators in chemical space, we used them to rank untested compounds according to their distance from known activators for specific Ors. We assembled a natural odor library, which contains 3197 naturally occurring odors, and a library derived from Pubchem (Bolton et al., 2008), which contains >240,000 compounds with similar molecular weights and atom type compositions to known volatiles (\u2018Materials and methods\u2019). We then systematically screened both libraries using the optimized descriptor sets of 19 D. melanogaster Ors in silico. We identify the top 500 (0.2%) hits from this vast chemical library for each Or, the top \u223c100 of which are reported in Supplementary file 1B.\n\n### Electrophysiological validation of in silico screen and identification of agonists\n\nTo validate our in silico screen, we obtained a large number of untested odorants belonging to the top 500 predicted ligands for nine different Ors (141 total interactions tested; \u223c11\u201323/Or) that were available from commercial sources at high purity and reasonable prices. The nine receptors were selected on the basis of previous functional mapping studies that enable us to unambiguously identify the antennal olfactory receptor neurons (ORNs) they are housed in (Hallem et al., 2004; Couto et al., 2005). We systematically tested each predicted receptor\u2013odor combination using single-unit electrophysiology to record from the ORNs to which these 9 Ors have been previously mapped (Hallem et al., 2004; Couto et al., 2005). We find that a majority of the predicted ligands evoked responses from the target ORNs; \u223c71% evoked either activation (>50 spikes/s above the spontaneous activity) or inhibition (>50% reduction in spontaneous activity [reverse agonist activity]) (Table 2). These cutoffs were selected based on the study from which the training set was obtained and has been used in other studies in the past that use this type of recordings (Hallem and Carlson, 2006; Kreher et al., 2008). Interestingly, the mean vapor pressure of activating odors (11.84 Torr) is 7.5 times higher than of inactive odors (1.58 Torr), raising the possibility that some inactive odors may not be volatilized and delivered at adequate levels to the ORNs. Additionally, we find that \u223c13% of the predicted compounds we tested showed an inhibitory effect on baseline activity of the respective neuron (Table 2). These inhibitors were identified by virtue of structural similarity to known activators suggesting that they may bind to similar sites on the receptor. Thus as an additional benefit our approach may provide a method to identify inhibitors as well. Such inhibitors would not only provide important tools to investigate mechanisms of odorant receptor inhibition but could also be used in blocking specific odor-mediated behaviors. Consistent with our observations three of the receptor\u2013odor interactions had been previously identified independently as well, Or22a (Pelz et al., 2006), and Or49b (Hallem et al., 2004). The electrophysiological analysis provides the most important validation of our Or-optimized descriptor-based in silico screen.\n\n**Table 2.**\n Predicted receptor\u2013odor interactions validated as highly accurate using electrophysiology\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Classification</th>\n      <th>Or7a</th>\n      <th>Or10a</th>\n      <th>Or22a</th>\n      <th>Or47a</th>\n      <th>Or49b</th>\n      <th>Or59b</th>\n      <th>Or85a</th>\n      <th>Or85b</th>\n      <th>Or98a</th>\n      <th>Total</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ligands (%)</td>\n      <td>88</td>\n      <td>31</td>\n      <td>86</td>\n      <td>39</td>\n      <td>27</td>\n      <td>91</td>\n      <td>92</td>\n      <td>87</td>\n      <td>100</td>\n      <td>71</td>\n    </tr>\n    <tr>\n      <td>Agonists (&gt;50 spikes/s) (%)</td>\n      <td>63</td>\n      <td>31</td>\n      <td>81</td>\n      <td>33</td>\n      <td>18</td>\n      <td>64</td>\n      <td>69</td>\n      <td>70</td>\n      <td>92</td>\n      <td>58</td>\n    </tr>\n    <tr>\n      <td>Agonists (&gt;100 spikes/s) (%)</td>\n      <td>31</td>\n      <td>13</td>\n      <td>62</td>\n      <td>11</td>\n      <td>9</td>\n      <td>45</td>\n      <td>48</td>\n      <td>48</td>\n      <td>67</td>\n      <td>37</td>\n    </tr>\n    <tr>\n      <td>Inverse agonists (%)</td>\n      <td>25</td>\n      <td>0</td>\n      <td>5</td>\n      <td>6</td>\n      <td>9</td>\n      <td>25</td>\n      <td>23</td>\n      <td>17</td>\n      <td>8</td>\n      <td>13</td>\n    </tr>\n  </tbody>\n</table>\n\n_Summary of prediction accuracy percentages obtained by electrophysiology validation. Ligands = Agonists (\u226550 spikes/s) + Inverse agonists (>50% reduction from baseline activity)._\n\n### Odor response spectra of individual Ors\n\nSince we systematically analyzed responses of a large number of new odorants individually, we were able to characterize the odor-response spectra of several antennal ORN classes to these new ligands (Figure 2A). New activators are reported for every receptor, and inhibitors are identified for several. Ligand predictions for 2 of the 3 receptors that do not perform as well are Or10a and Or49b that detect aromatic compounds. Their poor performance is explained by the lack of aromatic ligands in the initial training set (13/109) odorants. We find that a >85% of the predicted ligands activate odorant receptors Or7a, Or22a, Or59b, Or85a, Or85b, and Or98a (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01120/elife-01120-fig2-v1.jpg)\n\n**Figure 2.:** Mean increase in response of neurons to 0.5-s stimulus of indicated odors (10\u22122 dilution) predicted for each associated Or. Dashed lines indicate the activator threshold (50 spikes/s). \u0394H: Or85b (ab3B) = flies lack expression of Or22a in neighboring neuron, thus all observed neuron activation is unambiguously caused by Or85b. N = 3, error bars = s.e.m.\n\n### Specificity of in silico predicted ligands\n\nWe rigorously examined the rate of false negative predictions for each Or by systematically testing newly identified ligands of each Or against the other non-target receptors using electrophysiology. Of 504 non-target receptor\u2013odor interactions tested, we found that only 10% evoked a response >50 spikes/s and 3.7% evoked a response >100 spikes/s (Figure 3A). This represents a high degree of specificity, especially considering that the Or-optimized descriptor method did not incorporate any additional computational screening to rule out non-target activators. Additionally, when we plot the percentage of odors that validated as activators when tested using electrophysiology (considering both predicted and non-target receptor\u2013odor interactions), we find that activity is strongly related to predicted odor ranking (Figure 3B). Odors which rank closest to known activators for each Or, particularly within the top 500 hits, are far more likely to be activators than odors further away, and there is a drastic drop-off in activating odors present beyond the 1000 rank. We see the same trend if we plot mean activity of odors for the same ranking divisions. Highly ranked odors have a far higher mean activity than distantly ranked odors.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01120/elife-01120-fig3-v1.jpg)\n\n**Figure 3.:** (A) Plot of activity (Top) for electrophysiologically tested receptor-odor interactions. (Bottom) Plot indicating locations of predicted receptor-odor combinations (green) and same odorants tested in non-target receptor-odor combinations (gray). (B) Plot of percentage of activating odors (>50 spikes/s) considering all activating or inactive odors (>0 spikes/s) across ranking bins for all odors tested using electrophysiology.\n\n### Relationship between descriptor sets and Or sequence and activity\n\nSince receptor-optimized descriptor sets and the predicted ligand space they define are a function of shared molecular features that a receptor may employ to recognize ligands, we were now in a position to determine how these characteristics correlate with receptor properties such as their known-activity profiles and amino acid sequences. We used hierarchical cluster analysis to create trees that represent the various receptors based on: shared descriptors selected; known activity-based relationships (Hallem and Carlson, 2006); degree of overlap of predicted ligands; and amino acid sequence (Figure 4A; \u2018Materials and methods\u2019). We found that the maximum overlap in Or relationships is retained between the descriptor and the activity trees, and the descriptor and the cross activity trees with 11 out of 24 Ors present in subgroups that are common in both cases. However, only two subgroups (yellow and grey) are conserved across the three trees. The largest shared overlap existing in the descriptor tree suggests that the Or-optimized descriptors link the known and the predicted receptor\u2013odor interactions and that our analysis may expand upon odorant receptor activity relationships beyond those previously known from the training data. We also found that the phylogenetic tree has fewer relationships conserved with each of the trees, consistent with previous observations (Hallem et al., 2004) supporting the idea that, while the most conserved amino acid residues in the Ors provide the structure of the tree, they do not correlate strongly with ligand specificity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01120/elife-01120-fig4-v1.jpg)\n\n**Figure 4.:** (A) Hierarchical clusters created from Euclidean distance values between Drosophila Ors calculated using: (left to right) shared optimized descriptors; known activity to training set odors (Hallem and Carlson, 2006); overlap across top 500 predicted ligands; and Phylogenic tree of receptors (Hallem and Carlson, 2006). Sub clusters shaded with colors or bars. (B) Frequency distribution of compounds from the >240K library within the top 15% distance from highest active plotted to generate predicted breadth of tuning curves. Green arrows indicate relative distance of the furthest known activating compound determined by electrophysiology.\n\n### Analysis of breadth of predictions for each Or in chemical space\n\nCoding of odors in a large volatile space (>240,000) by a receptor repertoire is virtually impossible to determine experimentally. However, based on the Or-optimized descriptor sets we computationally derived prediction frequency distributions for each of the Drosophila Ors in this large chemical space (Figure 4B). As expected, we find substantial variation in the distribution frequency of predicted ligands across different receptors. The predicted response profiles support previous observations made with smaller odor panels that the olfactory system can potentially detect thousands of volatile chemicals, many of which the organism may never have encountered in its chemical environment. Plant volatiles constituted a large portion of compounds that are predicted to be ligands for Drosophila Ors. To further analyze odor source representation, we classified odors that belong to top 500 prediction lists according to their source, if known, and find that Ors are not specialized for odors from a single source (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01120/elife-01120-fig5-v1.jpg)\n\n**Figure 5.:** (A) (Left) The numbers of compounds present in the collected volatile library according to source. (Right) The numbers and sources of predicted ligands for the 19 Drosophila odor receptors/neurons within the top 500 predicted compounds. (B) Comparison of plots for percentage of receptors that are: (top left) activated by percentage of known odors from training set (Hallem and Carlson, 2006); (bottom left) predicted to be activated by Natural compound library; (top right) predicted to be activated from >240K library; and (bottom right) activated by ligands for 10 shared Ors in this study vs activated by comparable actives previously tested (Hallem and Carlson, 2006).\n\n### Across-receptor activation patterns in Drosophila\n\nTo study the ensemble activation patterns of odors predicted across all Ors, we analyzed the across-receptor activation patterns of the 3197 known compounds for nine receptors (Or7a, 10a, 22a, 47a, 49b, 59b, 85a, 85b, 98a). Surprisingly, we find that only 25% of compounds from the \u2018natural\u2019 odor library found in the top 500 predictions for each Or are predicted to activate multiple Ors (Figure 5B, lower left panel). If we consider compounds from the Pubchem library in the top 500 predicted activators for each receptor, we observe further reduction in the proportion of across-receptor activating compounds (Figure 5B, upper right). Consistent with this prediction we find that cross-activation by ligands functionally evaluated in this study for nine receptors is lower than that reported previously using ligands of comparable strength for the same nine receptors (Hallem and Carlson, 2006) (Figure 5B, lower right panel). These data suggest that a number of natural odors may be detected by a few receptors, particularly at low concentrations.\n\n## Discussion\n\nA primary element of the olfactory code is information about odor identity, represented by the characteristic interaction of an odor with the ensemble of olfactory receptors in the nose. Here we report an in silico approach to systematically identify ligands from a vast chemical space for a large number of Ors expressed in the antenna of Drosophila. We demonstrate that our predictions are accurate using two different validation approaches\u2014computational validations and functional validation using electrophysiology. There is a strong correlation between ranks of predicted ligands to electrophysiological activity.\n\nObtaining and testing odors using traditional methods is time and cost intensive. Electrophysiology and calcium imaging are consuming processes that require not only a great deal of time to perform, but also the purchase of each odor to be physically tested. Moreover, large plate-based combinatorial chemical libraries, which are commonly implemented in drug discovery in the pharmaceutical industry, are not available for volatile odor libraries at reasonable costs. Since Drosophila is a premier model for understanding neurobiology of olfaction, several laboratories over the last 12 years have together screened \u223c250 odors, activities of which have been and compiled into a valuable database that standardizes across studies (Galizia et al., 2010). In this study we screen >240,000 chemicals and predict >10,000 new ligands which represents a substantial expansion of the known peripheral olfactory code for this important model organism and provides a system-level view of odor detection (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01120/elife-01120-fig6-v1.jpg)\n\n**Figure 6.:** (A) Expansion of the peripheral olfactory code in this study: large increase in numbers of identified activators and inhibitors. The different sized circles represent the approximate ratio of numbers of previously known ligands (top circles), predicted ligands based on a cutoff of the top 500 predicted compounds per receptor and corrected to the validation success rate (lower, diffuse circles). (B) Drosophila receptor\u2013odor network. Each known interaction (>50 spikes/s) from this and previous studies (Hallem and Carlson, 2006) is linked by a purple edge. Predicted receptor\u2013odor network (top 500 hits) are linked by light-grey edges. All compounds are represented as small black circles and Ors are represented as large colored circles matching the colors used in (Figure 4A).\n\nThe predicted ligands and prediction method will increase the speed of receptor\u2013odor decoding and allow for interpretation of data at a large scale that is difficult to achieve. This could help answer questions such as breadth of receptor tuning, investigating responses to odorants from natural sources, and evolution of odor coding across a receptor repertoire. Additionally, using chemical informatics, it becomes possible to infer and prioritize for testing the network of odorant receptors that are activated from complex odor blends without the expensive and time consuming process of purchasing and testing all possible odors and receptor combinations (Figure 6B).\n\nInterestingly, our attempts to identify molecular descriptors that would differentiate agonists from inverse agonists were not successful with this data set. This could be due to several reasons: an insufficient number of inverse agonists amongst the training odors, or the inverse agonists may act via the same binding sites as agonists and share many of the same structural features of the activating odors making them difficult to distinguish. We feel that this remains an important challenge to be overcome in the future with improved computational approaches or larger odor training sets.\n\nA similar, yet much smaller, analysis applied chemical informatics on Drosophila olfactory neuron activities to 47 odorants and screened ligands from 21 untested compounds in Drosophila (Schmuker et al., 2007). Although this study had a relatively modest success rate of \u223c25% at predicting untested odorants as activators (by applying the same 50 spikes/s threshold for comparison), it also highlighted that structure-based ligand prediction is a viable method for further development. In another interesting analysis a Quantitative Structure Activity Relationship (QSAR) model was applied to describe odor-activity for Drosophila Ors. Using cheminformatics, important amino acid residues were identified using information from orthologous Or sequences identifying potential odor-binding regions, which was postulated to be 15 angstroms deep and 6 angstroms wide (Guo and Kim, 2010). These studies, along with ours, suggests that computational approaches could have great utility in study of sensory receptors. It will also be very interesting to use our method for making ligand predictions for the structurally distinct receptors such as olfactory ionotropic glutamate receptors (IRs), and gustatory receptors (Grs) in insects, and olfactory and taste GPCRs in vertebrates.\n\nOur approach is conservative and designed to search for novel odors that share structural features from a previously tested odor panel. Odor molecules are limited in size as well, and may offer a limited scaffold such that novel isofunctional chemotype identification may not be as prevalent as has been seen in other examples of scaffold-hopping (Schneider et al., 2006). However while compounds that share similar values for the optimized descriptors do have structural similarity for selected parts of the molecule, it does not mean that they are not structurally different in other parts of the molecule. In the future, application of machine learning approaches, such as Support Vector Machines (SVMs) to the receptor-optimized molecular descriptor sets, may be useful to further increase the predictive ability. Additionally, we could replace our SFS approach with sequential floating search techniques, which allows for removal, as well as addition, of descriptors in the growing optimized list.\n\nOur predictions suggest that a number of odorants at low concentrations may be detected by only a few receptors. In the current model of combinatorial coding emphasis is placed on the notion that combinations of several odorant receptors detect the majority of volatile chemicals, with the exception of pheromones and CO2. One possible explanation for this disparity could be that our predictions are fundamentally conservative in nature because we focus only on structurally similar ligands and 7-transmembrane heteromeric receptors may also contain additional unexplored binding sites. Another possibility is that previously tested subsets of odors were potentially selected on the basis of strong responses in electroantennograms and behavior assays, which could bias selection of cross-activating odors. In fact, complex fruit odor blends activate fewer Ors than the number activated by individual odorants at comparable concentrations using electrophysiology (Hallem and Carlson, 2006) and Calcium imaging (Semmelhack and Wang, 2009). The architecture of the olfactory code therefore appears to integrate two different models. On the one hand, most odors are detected by a few Ors from the repertoire, which may enhance the specificity of the olfactory system for detection of a large number of odors. On the other hand, 15\u201320% of odors are predicted to activate several Ors (up to 50%) at the same time, which may serve to aid the olfactory of the system in discriminating between fine concentration changes of important stimuli by having Ors tuned to low and high concentrations such as shown for Or42a and Or42b (Kreher et al., 2008).\n\nBy identifying a large number of new ligands for each odorant receptor, we can also begin to systematically compare the ligand tuning profiles for each in the endogenous neurons vs the \u2018empty neuron\u2019 decoder system. If clear differences were identified, it could enable the identification of underlying reasons such as differences in levels of receptor expression in the neurons, or presence of different odorant binding proteins (OBPs) in the sensillum lymph.\n\nThis cheminformatics pipeline can also be applied for system-level analysis of other insects whose receptors and ORNs have been decoded such as mosquitoes (Carey et al., 2010), and vertebrates such as mice and humans (Saito et al., 2009). The search for novel insect repellents and attractants for species that transmit disease and destroy crops can be greatly assisted by a rational prioritization using such a cheminformatics approach.\n\n## Materials and methods\n\n### Virtual odor compound library\n\nWe assembled a subset of 3197 volatile compounds from annotated origins including plants (Knudsen et al., 2006), insects (El-Sayed, 2009), humans, and a fragrance collection (Sigma-Aldrich, 2007) that may have additional fruit and floral volatiles (Zeng et al., 1991; Cork and Park, 1996; Zeng et al., 1996; Meijerink et al., 2000; Curran et al., 2005; Knudsen et al., 2006; Gallagher et al., 2008; Logan et al., 2008). We also assembled a subset of 241,150 odors from Pubchem, which have similar characteristics to known odor molecules. Compounds met a criteria of MW <200 and only being composed of the following atoms (C, O, N, H, I, Cl, S, F).\n\n### Calculation of 3D conformations\n\nThe three-dimensional structures were predicted for compounds through use of the Omega2 software package (Bostrom et al., 2003; Hawkins et al., 2010). The Omega2 software package identified the lowest energy 3D conformer for each compound in our Pubchem and Natural compound libraries were stored for use in molecular descriptor calculation.\n\n### Calculation of molecular descriptors\n\nCommercially available software packages Cerius2, Accelrys (200 idescriptors) and Dragon, Talete (3224 descriptors) were used to calculate molecular descriptors from three-dimensional molecular structures. Descriptor values were normalized across compounds to standard scores by subtracting the mean value for each descriptor type and dividing by the standard deviation. Molecular descriptors that did not show variation in values across the compounds were removed. Maximum Common Substructures were determined using an existing algorithm (Cao et al., 2008b). Atom Pairs were computed from the version implemented in ChemmineR (Cao et al., 2008a).\n\n### Classification of active compounds\n\nSince we were interested in identifying descriptors which best described activating compounds, we needed to first determine which compounds to classify as \u2018active\u2019 based on their electrophysiology activity for the receptor being studied. All of the training odors were clustered using hierarchical clustering by activity individually for each Or. The resulting tree can then be then be used to select the branch containing the majority of activating odors (>50 spikes/s). The activity threshold therefore was set as the lowest spike/s activity of any odor present in the selected branch.\n\n### Determination of Or-optimized descriptor subsets\n\nA compound-by-compound activity distance matrix was calculated using training odor activity data for each of the Ors (Hallem and Carlson, 2006). A separate compound-by-compound descriptor distance matrix was calculated using the 3424 descriptor values for training odors calculated by Dragon and Cerius2. Activating compounds for each Or were identified individually through activity thresholds, as described above. The correlation between the compound-by-compound activity (CbCA) and compound-by-compound descriptor distance matrices were compared for each actively classified compound, considering their distances to all other compounds. The goal was to identify molecular descriptors that best correlated with activity. To achieve this we applied a sequential forward selection (SFS) approach to identify optimal descriptors for each Or (Whitney, 1971). The SFS functioned by iteratively building a list of molecular descriptors for a single Or by maximally increasing the correlation between the CbCA and CbCD matrices. In the first iteration the values for each single molecular descriptor were used to create CbCD matrices. The rows corresponding to activating compounds were compared to the same rows of the CbCA matrix by correlation. The descriptor which best described the activity (results in the highest correlation between descriptor and activity) was retained. In the second iteration the best single descriptor was combined with all possible descriptors and correlations are calculated again, resulting in a best two-descriptor combination. The process was continued in this fashion to iteratively search for additional descriptors with each iteration aiming to further increases in correlation values. In this manner, the size of the optimized descriptor set increases by one in each iteration, as the best descriptor set from the previous step is combined with all possible descriptors to find the next best descriptor. This process is halted when all possible descriptor additions in an iteration fails to improve the correlation value from the previous step. Molecular descriptors can be selected multiple times for each Or, effectively creating weights for descriptors, as a descriptor that was selected twice will have double the importance when predicting activity of the odor libraries. This whole process is run independently for each Or resulting in unique descriptor sets that are optimized for each Or.\n\n### Calculation of accumulative percentage of actives (APoA)\n\nThe accumulative percentage of actives is calculated for each descriptor set individually as previously described (Chen and Reynolds, 2002). Compounds are ranked according to their distance from each known activator using the Or-optimized descriptor values as distances, resulting in one set of ranked compound distances from each activating odor. Moving down the list for each of these rankings, ratios are calculated for the number of activating compounds observed divided by the total number of compounds inspected, or the APoA. APoA values are averaged across all activating compound rankings for each receptor, creating a single set of mean values representing the APoA for a single Or and descriptor set. Using this approach, ApoA mean values are calculated for each of the 24 Ors separately for each descriptor set used, including Or-optimized sets, all Dragon descriptors, all Cerius2 descriptors, Atom Pair, and Maximum Common Substructure. The area-under-the-curve (AUC) scores were calculated by approximation of the integral under each plotted APoA line.\n\n### Clustering Ors by most common descriptors\n\nThe first 20 descriptors selected by our optimized descriptor selection algorithm for each Or were used to create an identity matrix. Each row representing an Or and column value specifying the presence of absence of a specific descriptor. This matrix was then converted into an Or-by-Or Euclidean distance matrix and clustered using hierarchical clustering and complete linkage.\n\n### Clustering compounds by activity of Or\n\nThe responses of each of the Ors that had previously been tested against a panel of compounds were converted into an Or-by-Or Euclidean distance matrix (Hallem and Carlson, 2006). Ors were clustered using hierarchical clustering and complete linkage. Specifically, this was achieved by creating a compound-by-compound distance matrix using the differences in activity between compounds tested on a singe Or. Hierarchical clustering using each Or distance matrix and then identifying the sub cluster which contained the most compounds.\n\n### Clustering Ors by predicted ligand space\n\nPercentages of overlapping predictions within the top 500 predicted compounds were calculated pair-wise for all Ors. Euclidean distances were calculated from the similarity between Ors.\n\n### Calculation of Or prediction distribution frequencies\n\nInitially, all extreme outliers were removed from the dataset for each Or. On average 5.82 compounds were removed for each Or, resulting in a mean dataset reduction of 0.0024%. Next, all compounds whose distance was >3 standard deviations from the strongest activating compound were removed to reduce outliers. Distribution frequencies were produced for each Or. All compound distances were converted into a percentage of the most distant compound for each Or. Frequencies of compounds in the top 15% were plotted.\n\n### Or-ligand interaction map\n\nThe Or-ligand interaction map was developed using Cytoscape (Shannon et al., 2003). Each predicted Or-ligand interaction from the top 500 predicted ligands for all of the Ors listed were used to calculate the map. All predicted interactions are labeled in purple. In addition all interactions identified in this study and the previous study (Hallem and Carlson, 2006) were included and labeled in gray. All compounds are represented as small black circles and Ors are represented as large colored circles. Or names are provided on the upper right corner of each Or.\n\n### Computational validation of Drosophila receptor\u2013odor predictions\n\nWe performed five independent fivefold cross-validations. For each independent validation the dataset was divided into five equal sized partitions containing roughly 22 compounds each. During each run, one of the partitions is selected for testing, and the remaining four sets are used for training. The training process is repeated five times with each unique odorant set being used as the test set exactly once. For every training iteration, a unique set of descriptors was calculated from the training compound set. These descriptors were then used to calculate distances of the test set compounds to the closest activating compound, exactly as we use to predict ligands in our ligand discovery pipeline. Once test set compounds have been ranked by distance from closest to furthest to a known activating in the training set, a receiver operating characteristics (ROC) analysis is used to analyze the performance of our computational ligand prediction approach. Using ROC we were able to determine our predictive ability for the 12 receptors. This validation could be performed only on receptors for which sufficient training odors had previously been identified. We consider this to consist of at least one very strongly activating known odor (>150 spikes/s) and at least five strongly activating odors (>100 spikes/s), thus allowing for at least one activating odor for each of the five test sets in the cross-validation (DmOr7a, DmOr9a, DmOr10a, DmOr22a, DmOr35a, DmOr43b, DmOr12, DmOr59b, DmOr67a, DmOr67c, DmOr85b, DmOr98a). Test set validations for all 12 Ors were combined and a single ROC curve representing an average across all Ors was plotted (Figure 1C).\n\n### Electrophysiology\n\nExtracellular single-sensillum electrophysiology was performed as before (Dobritsa et al., 2003; Hallem and Carlson, 2006; de Bruyne et al., 2001) with a few modifications. Diagnostic odorants were used to distinguish individual classes of ORNs in sensilla (ab1-ab7) and therefore unequivocally identify the target Or expressing ORN for testing (de Bruyne et al., 2001; Hallem et al., 2004). 50 \u03bcl odor at 10\u22122 dilution in paraffin oil was applied to cotton wool plugged odor cartridge. Due to variability in temporal kinetics of response across various odors, the counting window was shortened to 250 ms from the start of odor stimulus.\n",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "7cd10fb6-1fce-48fe-984a-2298fd0ad030",
+      "submission_id": "b6bfb959-be3a-458f-b4ee-c17fb0aa072c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Liqun Luo, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01120.014](https://doi.org/10.7554/eLife.01120.014)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cExpanding the olfactory code by in silico decoding of odor-receptor chemical space\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript by Boyle et al. describes the use of a computational approach to identify new receptor-odor pairs for Drosophila based on analysis of a previously published small pool of known agonists and antagonists on a panel of 19 Drosophila odorant receptors. The achievements include: 1) by validating 71% of the 141 experimentally tested odor-receptor pairs, the authors expanded the existing dataset by a significant amount (it would be useful for the authors to determine the precise number and add to the revised text); 2) the 19 Ors \u00d7 top 500 odorants matrix could constitute a much larger odor-receptor pairs that have a good chance to be authentic; 3) the same method can in principle be applied to other organisms, after experimentally determining a reasonably rich matrix of receptor-odor pairs. Overall the manuscript is of high technical quality. We would therefore like to invite the authors to revise the manuscript by addressing the following specific critiques.\n\n1) The authors should make more explicit the limitations of the study in the Abstract and conclusions; their current summary creates false expectation. First, they can only predict more ligands based on receptors that have already been experimentally tested against a large number of ligands. Second, they predicted ligands for only 19 Ors; although technically it may constitute the \u201cmajority\u201d of ORNs that utilize Ors, it is certainly not a \u201cmajority\u201d of \u223c50 ORN types in adult Drosophila (as a significant fraction of ORNs utilize Irs). Third, the validated 71% came from only 9 Ors; it is unclear whether this can be generalized to the other untested Or classes. Fourth, there is no evidence that any of the agonists or antagonists identified in silico are better (higher affinity) or more likely to be the true biologically relevant ligands for these receptors than those identified in small chemical libraries based on ecologically reasoning (i.e., the training set).\n\n2) The use of the optimized descriptor sets need to be defined more explicitly. In Table 1 what are the numbers given for each descriptor? If these are classes of descriptors then how many descriptors from the original set of over 3,000 are actually being used, and what are they? And how do they appear to be relevant to odor quality? One of the issues with the similar analysis performed by Haddad was that the descriptors (there determined by a PCA analysis) seemed to have little obvious relevance to odor quality. Is the optimized method presented here an improvement on that? The description of the SFS approach does not provide any detail as to how each incremental descriptor was chosen to grow the set. Was this done by a purely statistical or machine learning method or did the investigators use some intuition regarding the likelihood of the descriptor to be relevant to odor character?\n\n3) Regarding the paragraph \u2018Producing a systems level view of receptor activity for the Drosophila antenna\u2019, either this very intriguing analysis should go in the Discussion or a deeper analysis is required for the reader. The network drawn in Figure 6A is impossible to interpret. The authors might choose a natural blend, or even an artificial one, and show us the network for that particular group of odors. That would be clearer and more useful, especially if it shows something new or unexpected. Showing all the interactions creates an attractive graphic, but not one that is informative.\n\n4) The authors should provide more raw data from their analyses.\n",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ca4aa2b2-08b4-4edd-9628-c42129df05cd",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C1",
+      "claim": "Coding of information in the peripheral olfactory system depends on interaction of individual odors with subsets of the odorant receptor repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "Coding of information in the peripheral olfactory system depends on two fundamental factors: interaction of individual odors with subsets of the odorant receptor repertoire and mode of signaling that an individual receptor-odor interaction elicits, activation or inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental principle in the abstract without specific experimental data provided in this sentence, drawing on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "b8623f6f-e7f3-4ffa-98ef-8c90acd4288b",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C2",
+      "claim": "Coding of information in the peripheral olfactory system depends on mode of signaling that an individual receptor-odor interaction elicits (activation or inhibition).",
+      "claim_type": "EXPLICIT",
+      "source": "Coding of information in the peripheral olfactory system depends on two fundamental factors: interaction of individual odors with subsets of the odorant receptor repertoire and mode of signaling that an individual receptor-odor interaction elicits, activation or inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental principle in the abstract without specific experimental data provided in this sentence, drawing on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "81c2f006-edd1-4ffb-8df2-df4cfea89999",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C3",
+      "claim": "A cheminformatics pipeline can predict receptor-odorant interactions from a large collection of chemical structures (>240,000) for receptors tested to a smaller panel of odorants (~100).",
+      "claim_type": "EXPLICIT",
+      "source": "We develop a cheminformatics pipeline that predicts receptor\u2013odorant interactions from a large collection of chemical structures (>240,000) for receptors that have been tested to a smaller panel of odorants (\u223c100).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the development and application of the computational method to a specific dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "a12bdbb7-9864-4494-9005-bd66bbc0a9e9",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C4",
+      "claim": "The computational approach identifies shared structural features from known ligands of individual receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a computational approach, we first identify shared structural features from known ligands of individual receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "0cb92737-8226-48ff-a910-50d73e180300",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C5",
+      "claim": "The computational approach screens in silico new candidate ligands from >240,000 potential volatiles for several Odorant receptors (Ors) in the Drosophila antenna.",
+      "claim_type": "EXPLICIT",
+      "source": "We then use these features to screen in silico new candidate ligands from >240,000 potential volatiles for several Odorant receptors (Ors) in the Drosophila antenna.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the screening methodology and scale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "47a53c4a-8a03-4af9-90f3-065dc64d8d87",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C6",
+      "claim": "Functional experiments from 9 Ors support a high success rate (~71%) for the computational screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional experiments from 9 Ors support a high success rate (\u223c71%) for the screen, resulting in identification of numerous new activators and inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports experimental validation results with a specific success rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "a44477f3-8bb0-48d0-8c78-16d0bd063979",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C7",
+      "claim": "The computational screen resulted in identification of numerous new activators and inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional experiments from 9 Ors support a high success rate (\u223c71%) for the screen, resulting in identification of numerous new activators and inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports the outcomes of the experimental validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "1f4ae3a5-e3eb-4abe-9e7e-194170c4644b",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C8",
+      "claim": "Most organisms have evolved large families of receptor genes that typically encode 7-transmembrane proteins expressed in the olfactory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To detect this wide variety of volatiles, most organisms have evolved large families of receptor genes that typically encode 7-transmembrane proteins expressed in the olfactory neurons (Buck and Axel, 1991; Clyne et al., 1999; de Bruyne and Baker, 2008; Vosshall et al., 1999; Dahanukar et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "31f4f491-da02-44c5-acbc-81d736da064e",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C9",
+      "claim": "Each volatile chemical in the environment is thought to interact with a specific subset of odorant receptors depending upon odor structure and binding sites on the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Each volatile chemical in the environment is thought to interact with a specific subset of odorant receptors depending upon odor structure and binding sites on the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical principle based on established understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f050b766-a5aa-47c2-9c6f-6f0ff9952002",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C10",
+      "claim": "Precise detection and coding of odors by peripheral olfactory neurons are subsequently processed, transformed and integrated in the central nervous system to generate specific behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This precise detection and coding of odors by the peripheral olfactory neurons are subsequently processed, transformed and integrated in the central nervous system to generate specific behavioral responses that are critical for survival such as finding food, finding mates, avoiding predators etc (van der Goes van Naters and Carlson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "b95633d4-da07-4c50-a7a6-c4d140b7f55b",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C11",
+      "claim": "A very small proportion of chemical space can be systematically tested for its activity on odorant receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently there are two major rate-limiting steps in analysis of peripheral coding in olfaction: a very small proportion of chemical space can be systematically tested for its activity on odorant receptors and a very small fraction of the numerous odorant receptors have been tested for responses (Araneda et al., 2000; Hallem et al., 2004; Hallem and Carlson, 2006; Pelz et al., 2006; Kreher et al., 2008; Saito et al., 2009; Mathew et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "5393fa3a-38a8-4a21-b687-746939a79c91",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C12",
+      "claim": "A very small fraction of the numerous odorant receptors have been tested for responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently there are two major rate-limiting steps in analysis of peripheral coding in olfaction: a very small proportion of chemical space can be systematically tested for its activity on odorant receptors and a very small fraction of the numerous odorant receptors have been tested for responses (Araneda et al., 2000; Hallem et al., 2004; Hallem and Carlson, 2006; Pelz et al., 2006; Kreher et al., 2008; Saito et al., 2009; Mathew et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "0456eba6-62c7-40e8-ab8f-56ef9991b3d8",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C13",
+      "claim": "More than 2000 odors in the environment have been catalogued from a small fraction of plant sources alone.",
+      "claim_type": "EXPLICIT",
+      "source": "First, volatile chemical space is immense, more than 2000 odors in the environment have been catalogued from a small fraction of plant sources alone (Knudsen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a cataloguing study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "847fa9bd-580d-4f29-8dd1-5687ff998484",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C14",
+      "claim": "The complete three-dimensional structures of the 7-transmembrane odorant receptor proteins have not yet been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the complete three-dimensional structures of the 7-transmembrane odorant receptor proteins have not yet been determined and modeling of protein\u2013odor interactions and sophisticated virtual screening methods are not yet possible except in rare instances (Triballeau et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current limitation in the field, with a citation noting rare exceptions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "fbd7785d-37d9-4128-af11-5550a4e3959a",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C15",
+      "claim": "Modeling of protein-odor interactions and sophisticated virtual screening methods are not yet possible except in rare instances.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the complete three-dimensional structures of the 7-transmembrane odorant receptor proteins have not yet been determined and modeling of protein\u2013odor interactions and sophisticated virtual screening methods are not yet possible except in rare instances (Triballeau et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current limitation in the field, with a citation noting rare exceptions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "eecc6a73-db13-4b5d-aac0-4763453dec70",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C16",
+      "claim": "In the decade since the first systematic study of 47 odorants on the Drosophila antenna in 2001, additional studies have only identified a total of ~250 novel activating odors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the decade since the first systematic study of 47 odorants on the Drosophila antenna in 2001 (de Bruyne et al., 2001), additional studies have only identified a total of \u223c250 novel activating odors (de Bruyne et al., 1999; de Bruyne et al., 2001; Dobritsa et al., 2003; Goldman et al., 2005; Hallem et al., 2004; Hallem and Carlson, 2006; Kreher et al., 2005, 2008; Kwon et al., 2007; Pelz et al., 2006; Stensmyr et al., 2003; Turner and Ray, 2009; van Naters and Carlson, 2007; Yao et al., 2005; Schmuker et al., 2007), which have been assembled and compared in an online database (Galizia et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes the state of the field with multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "2564de1c-3b1e-4468-96e9-cebd927942fd",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C17",
+      "claim": "The study focused on measurements of responses of 24 Drosophila odorant receptors to a panel of 109 odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to do so we focused our attention on one of the most comprehensive quantitative data sets available, where measurements of responses of 24 Drosophila odorant receptors to a panel of 109 odorants are known that provides a rich resource for structure-activity type analyses (Hallem and Carlson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the study, citing the source.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "26a765dc-a20c-4988-a384-7b6143da0b32",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C18",
+      "claim": "The method identifies molecular structural properties that are shared amongst the activating odorants for each receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "We devised a method to identify molecular structural properties that are shared amongst the activating odorants for each receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "ab279fae-f1a6-4e84-b40f-09df011f1cda",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C19",
+      "claim": "The method performs in silico screens on a chemical space of >240,000 chemicals and identifies the top 500 hits for each of the odorant receptors (Ors).",
+      "claim_type": "EXPLICIT",
+      "source": "We then utilize information about these shared molecular features of active odorants, that are presumably required for binding to a receptor, to perform in silico screens on a chemical space of >240,000 chemicals, including a large collection of naturally occurring and biologically important odors, and identify the top 500 hits for each of the odorant receptors (Ors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the screening methodology and scale used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "453ed067-67ef-4eae-9b70-fa556a818dc0",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C20",
+      "claim": "Single-unit electrophysiology validation of predictions for 9 Ors in vivo found that the method met an overall success rate of ~71% in identifying novel ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "We then use single-unit electrophysiology to validate a subset of predictions for 9 Ors in vivo and find that our method met an overall success rate of \u223c71% in identifying novel ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the experimental validation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "81358f18-96f5-4eb0-bf6e-ec3ce48a1a4e",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C21",
+      "claim": "Testing non-predicted odors shows a low (10%) rate of finding ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach is specific since testing shows a low (10%) rate of finding ligands while using non-predicted odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the specificity control results from experimental testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "3c14dd60-17f9-44f7-a3ae-d97a6980b164",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C22",
+      "claim": "The 'similarity property principle' reasons that structurally similar molecules (e.g., activating odorants) are more likely to have similar properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the structure of receptor protein complexes is not known, we analyzed receptor\u2013odor interactions by applying the 'similarity property principle', which reasons that structurally similar molecules (e.g., activating odorants) are more likely to have similar properties (Hendrickson, 1991; Martin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a principle from the literature that was applied in the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "5d22680a-d7cf-49ce-beac-328d1d0b4a7f",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C23",
+      "claim": "The similarity property principle has been useful in the area of pharmaceuticals.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this general approach has been useful in the area of pharmaceuticals (Martin et al., 2002; Keiser et al., 2009), receptor\u2013odor analysis presents significant additional challenges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to pharmaceutical applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "66a53fac-5c43-4956-be93-afa7082bfa23",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C24",
+      "claim": "Odorant molecules are generally smaller in size than pharmaceuticals (average MW of known odors ~threefold less than FDA approved pharmaceuticals).",
+      "claim_type": "EXPLICIT",
+      "source": "Not only are odorant molecules generally smaller in size than pharmaceuticals (average MW of known odors \u223cthreefold less than FDA approved pharmaceuticals [Wishart et al., 2008]) and therefore offer fewer structural features for differentiation, they are also detected by the receptors with specificity at extremely low concentrations in the volatile phase (Hallem and Carlson, 2006; Kreher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by a citation to a pharmaceutical database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "65b663a1-5ec8-45f7-9c14-a55b1597b23d",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C25",
+      "claim": "Odorant molecules offer fewer structural features for differentiation than pharmaceuticals.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only are odorant molecules generally smaller in size than pharmaceuticals (average MW of known odors \u223cthreefold less than FDA approved pharmaceuticals [Wishart et al., 2008]) and therefore offer fewer structural features for differentiation, they are also detected by the receptors with specificity at extremely low concentrations in the volatile phase (Hallem and Carlson, 2006; Kreher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the smaller size of odorant molecules.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "baf32177-b4b1-4520-ae6f-2e41e550d436",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C26",
+      "claim": "Odorant molecules are detected by the receptors with specificity at extremely low concentrations in the volatile phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only are odorant molecules generally smaller in size than pharmaceuticals (average MW of known odors \u223cthreefold less than FDA approved pharmaceuticals [Wishart et al., 2008]) and therefore offer fewer structural features for differentiation, they are also detected by the receptors with specificity at extremely low concentrations in the volatile phase (Hallem and Carlson, 2006; Kreher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "aaff16de-cfd2-4d22-b960-210382a793e9",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C27",
+      "claim": "Hexanal and \u03b3-octalactone are structurally very different but both strongly activate Or85b.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while hexanal and \u03b3-octalactone are structurally very different, they both strongly activate Or85b (Hallem and Carlson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This example is supported by a citation to previous experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "7de6330c-175c-4855-8142-c9638f22bb80",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C28",
+      "claim": "Hexanal and pentanal are structurally very similar but have very different activities against Or85b.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, while hexanal and pentanal are structurally very similar, they have very different activities against Or85b (Hallem and Carlson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This example is supported by a citation to previous experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "9a705a18-40a1-40f0-b362-b0de6883cd69",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C29",
+      "claim": "Four different approaches were tested to measure similarity in chemical structure: Cerius2, Dragon, Maximum-Common-Substructure (MCS), and atom-pair (AP).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test whether non-optimized approaches would be able to identify similarities in shape of known activators we compared four different approaches: Cerius2 (Accelrys Software Inc), Dragon (Talete), Maximum-Common-Substructure (MCS) (Cao et al., 2008b), and atom-pair (AP) (Carhart et al., 1985; Cao et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods compared in the study, with citations to the sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "1e5ae935-ff8f-4738-95ca-8c3ed6db6afc",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C30",
+      "claim": "Cerius2 represents a collection of 200 molecular descriptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerius2 and Dragon represent collections of 200 and 3224 molecular descriptors, respectively, that calculates values for a broad range of chemical properties such as molecular weight, functional group counts, and in the case of Dragon, three-dimensional relationships within molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the Cerius2 method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "8fe1a27d-1deb-4437-8fa7-619302382d1c",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C31",
+      "claim": "Dragon represents a collection of 3224 molecular descriptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerius2 and Dragon represent collections of 200 and 3224 molecular descriptors, respectively, that calculates values for a broad range of chemical properties such as molecular weight, functional group counts, and in the case of Dragon, three-dimensional relationships within molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the Dragon method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "e4abb39f-757e-494f-849e-5daf890a59e3",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C32",
+      "claim": "The AP method compares shortest path distances between all atom pairs in a molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The AP method compares shortest path distances between all atom pairs in a molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the AP method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "ac558176-17e6-4b94-a86d-8e70336ee542",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C33",
+      "claim": "MCS identifies the largest two-dimensional substructure that exists between two compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, MCS identifies the largest two-dimensional substructure that exists between two compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the MCS method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "45f6abfe-646b-4fbf-ac09-fa2af468ef88",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C34",
+      "claim": "None of the four methods (Cerius2, Dragon, MCS, AP) were vastly superior at grouping known activating odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon comparison, we find that none of the four methods were vastly superior and that each method varied in the ability to group known activating odorants 'actives' close together in distance as measured for each Or using a method called accumulative-percentage-of-actives (APoA)(Chen and Reynolds, 2002) ('Materials and methods' and Figure 1\u2014figure supplement 1) and value of the area-under-the-curve (AUC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of comparing different methods, referencing a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "eb53160f-3dac-4263-bb45-4d3ab5b6bb85",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C35",
+      "claim": "Dragon and Cerius2 performed better than AP or MCS at grouping activating odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, Dragon and Cerius2, which utilize a large number of diverse molecular descriptor values to describe each odor structure, performed better than AP or MCS, suggesting that a more diverse set of descriptors is better at explaining Or activity than two-dimensional measures alone (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports comparative results with reference to a figure showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "0bca552a-53ad-4a1b-b72c-dad528a5886c",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C36",
+      "claim": "A more diverse set of descriptors is better at explaining Or activity than two-dimensional measures alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, Dragon and Cerius2, which utilize a large number of diverse molecular descriptor values to describe each odor structure, performed better than AP or MCS, suggesting that a more diverse set of descriptors is better at explaining Or activity than two-dimensional measures alone (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparative performance of different descriptor methods.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "baf54c6a-9907-4fc9-8d95-50d989ec48de",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C37",
+      "claim": "Individual Ors respond to distinct subsets of ligands with some degree of overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual Ors respond to distinct subsets of ligands with some degree of overlap (Hallem and Carlson, 2006; Kreher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "ee245594-aa45-4148-ac48-676fd9b0d218",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C38",
+      "claim": "Sequential-Forward-Selection (SFS) method was used to incrementally create unique optimized descriptor subsets for each Or from an initial combined set of 3424 descriptors from Dragon and Cerius2.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we used a Sequential-Forward-Selection (SFS) method to incrementally create unique optimized descriptor subsets for each Or from an initial combined set of 3424 descriptors from Dragon and Cerius2 (Whitney, 1971) ('Materials and methods'; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology used in the study, with a citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "0d2b1fe7-8e75-45c8-b0c1-9c8794821f7d",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C39",
+      "claim": "The optimization-based analysis was performed on 19 Ors from the dataset with known activating odors, excluding Or82a.",
+      "claim_type": "EXPLICIT",
+      "source": "This optimization-based analysis was performed on the 19 Ors from the dataset with known activating odors, excluding Or82a, since it has but a single known strong activator (Hallem and Carlson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the analysis with justification and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "e07eba1b-5043-4259-b64d-3c9a94e0257b",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C40",
+      "claim": "Or82a has but a single known strong activator.",
+      "claim_type": "EXPLICIT",
+      "source": "This optimization-based analysis was performed on the 19 Ors from the dataset with known activating odors, excluding Or82a, since it has but a single known strong activator (Hallem and Carlson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the reason for excluding Or82a, with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "751dc8c5-fd9b-41a6-b26b-38939f59bba2",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C41",
+      "claim": "The composition of the optimized descriptor sets varied greatly between Ors, with on average only 13% of descriptors shared between Ors.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, the composition of the optimized descriptor sets varied greatly between Ors, as on average only 13% of descriptors are shared between Ors (Table 1; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the results of the optimization analysis, referencing a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "59b52e54-d74f-4f7a-ae90-f073b5106e60",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C42",
+      "claim": "There is an overwhelming preference for three-dimensional and two-dimensional descriptors compared to one-dimensional and zero-dimensional descriptors in the optimized sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find an overwhelming preference for three-dimensional and two-dimensional descriptors compared to one-dimensional and zero-dimensional descriptors, suggesting that structural shape features are more important for receptor\u2013odor interactions (Table 1; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the analysis of descriptor types, referencing a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "7d3c294b-738d-482c-8a01-a5228faa108e",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C43",
+      "claim": "Structural shape features are more important for receptor-odor interactions than other features.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find an overwhelming preference for three-dimensional and two-dimensional descriptors compared to one-dimensional and zero-dimensional descriptors, suggesting that structural shape features are more important for receptor\u2013odor interactions (Table 1; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the preference for 3D and 2D descriptors in the optimized sets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "eac4d5c1-c3e0-4d9c-8f89-04d63118871e",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C44",
+      "claim": "Or-optimized descriptor sets were far superior at grouping together activating odors from the training set when compared to non-optimized methods and a previously identified collection of descriptors.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Or-optimized descriptor sets were far superior at grouping together activating odors from the training set when compared to the non-optimized methods (Dragon, Cerius2, MCS, AP) and a previously identified collection of descriptors that were identified without receptor-specific optimization (Haddad et al., 2008) (Figure 1B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports comparative results with references to figures showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "7373bc76-7a55-416d-acbc-c104d227f24d",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C45",
+      "claim": "Fivefold cross-validations followed by ROC analysis were performed to validate the predictive ability of the Or-optimized method.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to validate the predictive ability of the Or-optimized method, we performed five independent trials of fivefold cross-validations followed by a Receiver-Operating-Characteristic (ROC) analysis, an established computational approach (Hastie et al., 2001; Tan et al., 2006) ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation methodology used, with citations to established methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "493a0974-95b9-422f-9427-a479e9257c78",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C46",
+      "claim": "The Area-Under-Curve (AUC) value of 0.815 from the ROC analysis is very promising and suggests that the Or-optimized descriptor sets are effective at predicting novel ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The Area-Under-Curve (AUC) value (0.815) is very promising and suggests that the Or-optimized descriptor sets are effective at predicting novel ligands (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the validation results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "e03001de-7102-4247-87ed-1bb2262d3e46",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C47",
+      "claim": "Activating odorants cluster tightly together for each Or when using receptor specific descriptor sets.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we find that activating odorants cluster tightly together for each Or (Figure 1D) and activating odors of an Or have shared sub-structures and shared pharmacophore features (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports clustering results with references to figures showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "98b9dcca-6e7c-4400-88d7-5961cf8e97fb",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C48",
+      "claim": "Activating odors of an Or have shared sub-structures and shared pharmacophore features.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we find that activating odorants cluster tightly together for each Or (Figure 1D) and activating odors of an Or have shared sub-structures and shared pharmacophore features (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports structural analysis results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "26c285e5-6f4a-4388-b605-b50737504b5c",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C49",
+      "claim": "For Or35a and Or98a, not all the highly activating compounds are clustered, suggesting the possibility of multiple or flexible binding sites, or imperfect selection of descriptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In a few cases, such as for Or35a and Or98a, not all the highly activating compounds are clustered, suggesting the possibility of multiple or flexible binding sites, or imperfect selection of descriptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the clustering results for specific receptors.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "57d6b75d-6d76-47fa-8577-c5bbedffeccc",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C50",
+      "claim": "Four Ors (Or2a, Or23a, Or43a and Or85f) have few known activators, none of which activate the receptors at >150 spikes/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the Ors (Or2a, Or23a, Or43a and Or85f) have few known activators, none of which activate the receptors at >150 spikes/s, however our descriptor optimization approach is still able to cluster each of the few weak activators together (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the characteristics of specific receptors and clustering results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "fc6c7759-b39f-4878-a135-6a3a1f344c70",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C51",
+      "claim": "The descriptor optimization approach is able to cluster weak activators together for Or2a, Or23a, Or43a and Or85f.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the Ors (Or2a, Or23a, Or43a and Or85f) have few known activators, none of which activate the receptors at >150 spikes/s, however our descriptor optimization approach is still able to cluster each of the few weak activators together (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the performance of the method on receptors with weak activators.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f80a04f4-0c23-4f70-bf29-e0da49a62468",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C52",
+      "claim": "A natural odor library containing 3197 naturally occurring odors was assembled.",
+      "claim_type": "EXPLICIT",
+      "source": "We assembled a natural odor library, which contains 3197 naturally occurring odors, and a library derived from Pubchem (Bolton et al., 2008), which contains >240,000 compounds with similar molecular weights and atom type compositions to known volatiles ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the chemical libraries used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "d40f2c32-8ddc-426a-a313-b011fb3ced79",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C53",
+      "claim": "A library derived from Pubchem containing >240,000 compounds with similar molecular weights and atom type compositions to known volatiles was assembled.",
+      "claim_type": "EXPLICIT",
+      "source": "We assembled a natural odor library, which contains 3197 naturally occurring odors, and a library derived from Pubchem (Bolton et al., 2008), which contains >240,000 compounds with similar molecular weights and atom type compositions to known volatiles ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the chemical libraries used in the study, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "2762be56-5181-418a-abec-4828ce8d7318",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C54",
+      "claim": "Both libraries were systematically screened using the optimized descriptor sets of 19 D. melanogaster Ors in silico.",
+      "claim_type": "EXPLICIT",
+      "source": "We then systematically screened both libraries using the optimized descriptor sets of 19 D. melanogaster Ors in silico.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the screening methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "559fb19d-fefc-4806-8043-e2a7591c46e9",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C55",
+      "claim": "The top 500 (0.2%) hits from the chemical library were identified for each Or.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify the top 500 (0.2%) hits from this vast chemical library for each Or, the top \u223c100 of which are reported in Supplementary file 1B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the output of the screening process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "ca95e3c1-b77a-437a-843a-aa80377b75e5",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C56",
+      "claim": "141 total receptor-odor interactions were tested (~11-23 per Or) for nine different Ors using electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate our in silico screen, we obtained a large number of untested odorants belonging to the top 500 predicted ligands for nine different Ors (141 total interactions tested; \u223c11\u201323/Or) that were available from commercial sources at high purity and reasonable prices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the experimental validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "97e60ddf-a0f4-4906-a307-6bae290d8836",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C57",
+      "claim": "The nine receptors were selected on the basis of previous functional mapping studies that enable unambiguous identification of the antennal olfactory receptor neurons (ORNs) they are housed in.",
+      "claim_type": "EXPLICIT",
+      "source": "The nine receptors were selected on the basis of previous functional mapping studies that enable us to unambiguously identify the antennal olfactory receptor neurons (ORNs) they are housed in (Hallem et al., 2004; Couto et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the selection criteria for receptors tested, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "9eeab821-c770-4edf-8e4e-2b0393c0a000",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C58",
+      "claim": "~71% of the predicted ligands evoked either activation (>50 spikes/s above the spontaneous activity) or inhibition (>50% reduction in spontaneous activity).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that a majority of the predicted ligands evoked responses from the target ORNs; \u223c71% evoked either activation (>50 spikes/s above the spontaneous activity) or inhibition (>50% reduction in spontaneous activity [reverse agonist activity]) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the experimental validation results with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "3c6ca6ec-faff-4f8d-8941-908af1a472ad",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C59",
+      "claim": "The cutoffs for activation and inhibition were selected based on the study from which the training set was obtained and has been used in other studies in the past.",
+      "claim_type": "EXPLICIT",
+      "source": "These cutoffs were selected based on the study from which the training set was obtained and has been used in other studies in the past that use this type of recordings (Hallem and Carlson, 2006; Kreher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the thresholds used, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "9f688f41-0b45-427f-85d5-f56db0236499",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C60",
+      "claim": "The mean vapor pressure of activating odors (11.84 Torr) is 7.5 times higher than of inactive odors (1.58 Torr).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mean vapor pressure of activating odors (11.84 Torr) is 7.5 times higher than of inactive odors (1.58 Torr), raising the possibility that some inactive odors may not be volatilized and delivered at adequate levels to the ORNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a quantitative comparison of vapor pressures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "59589638-941e-462d-a4af-e69c2a886522",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C61",
+      "claim": "Some inactive odors may not be volatilized and delivered at adequate levels to the ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mean vapor pressure of activating odors (11.84 Torr) is 7.5 times higher than of inactive odors (1.58 Torr), raising the possibility that some inactive odors may not be volatilized and delivered at adequate levels to the ORNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the vapor pressure difference.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "db576c9d-b55c-4bb3-8635-52177d95df79",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C62",
+      "claim": "~13% of the predicted compounds tested showed an inhibitory effect on baseline activity of the respective neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we find that \u223c13% of the predicted compounds we tested showed an inhibitory effect on baseline activity of the respective neuron (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports experimental results with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "5f00218c-1ceb-439a-ab43-9bc0f2c22193",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C63",
+      "claim": "Inhibitors were identified by virtue of structural similarity to known activators suggesting that they may bind to similar sites on the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "These inhibitors were identified by virtue of structural similarity to known activators suggesting that they may bind to similar sites on the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism of inhibitor identification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "6072efe0-0b2d-4213-9a85-ad3ee4887748",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C64",
+      "claim": "Three of the receptor-odor interactions had been previously identified independently as well: Or22a and Or49b.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observations three of the receptor\u2013odor interactions had been previously identified independently as well, Or22a (Pelz et al., 2006), and Or49b (Hallem et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports validation by comparison with previous studies, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "04591fa5-e77d-4cd0-86bd-6d1e64d57d0a",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C65",
+      "claim": "New activators are reported for every receptor tested.",
+      "claim_type": "EXPLICIT",
+      "source": "New activators are reported for every receptor, and inhibitors are identified for several.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the experimental findings across all tested receptors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f04bfed1-491d-4d4d-82d5-6101d5cd7df5",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C66",
+      "claim": "Inhibitors are identified for several receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "New activators are reported for every receptor, and inhibitors are identified for several.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the experimental findings across all tested receptors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "2f3ffaca-6d39-49be-8658-4b09bf7c7b1f",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C67",
+      "claim": "Or10a and Or49b that detect aromatic compounds do not perform as well in ligand prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligand predictions for 2 of the 3 receptors that do not perform as well are Or10a and Or49b that detect aromatic compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the performance of specific receptors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "10360c00-29ab-4962-bfff-d5904eef34c4",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C68",
+      "claim": "The poor performance of Or10a and Or49b is explained by the lack of aromatic ligands in the initial training set (13/109 odorants).",
+      "claim_type": "EXPLICIT",
+      "source": "Their poor performance is explained by the lack of aromatic ligands in the initial training set (13/109) odorants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides an explanation for the poor performance based on training set composition.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "6b951bf1-e128-4c48-ab5e-aeb57bf38d23",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C69",
+      "claim": ">85% of the predicted ligands activate odorant receptors Or7a, Or22a, Or59b, Or85a, Or85b, and Or98a.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that a >85% of the predicted ligands activate odorant receptors Or7a, Or22a, Or59b, Or85a, Or85b, and Or98a (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the success rate for specific receptors with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "7b92bdb2-3a8e-4906-912a-3c8c0a222678",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C70",
+      "claim": "Of 504 non-target receptor-odor interactions tested, only 10% evoked a response >50 spikes/s and 3.7% evoked a response >100 spikes/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 504 non-target receptor\u2013odor interactions tested, we found that only 10% evoked a response >50 spikes/s and 3.7% evoked a response >100 spikes/s (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the specificity testing results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "452923f9-1cb4-4e3d-8f61-bb9df414e6fd",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C71",
+      "claim": "The Or-optimized descriptor method shows a high degree of specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents a high degree of specificity, especially considering that the Or-optimized descriptor method did not incorporate any additional computational screening to rule out non-target activators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the specificity testing results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "8b54f9ff-1ce2-4a67-96d5-2d6a384c2e1e",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C72",
+      "claim": "Activity is strongly related to predicted odor ranking.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, when we plot the percentage of odors that validated as activators when tested using electrophysiology (considering both predicted and non-target receptor\u2013odor interactions), we find that activity is strongly related to predicted odor ranking (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the relationship between ranking and activity with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "d931cf53-7a6a-4b5e-ba91-452ffb3e642b",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C73",
+      "claim": "Odors which rank closest to known activators for each Or, particularly within the top 500 hits, are far more likely to be activators than odors further away.",
+      "claim_type": "EXPLICIT",
+      "source": "Odors which rank closest to known activators for each Or, particularly within the top 500 hits, are far more likely to be activators than odors further away, and there is a drastic drop-off in activating odors present beyond the 1000 rank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the relationship between ranking and likelihood of activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "53358686-faaf-476f-800b-74866e8ed6d1",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C74",
+      "claim": "There is a drastic drop-off in activating odors present beyond the 1000 rank.",
+      "claim_type": "EXPLICIT",
+      "source": "Odors which rank closest to known activators for each Or, particularly within the top 500 hits, are far more likely to be activators than odors further away, and there is a drastic drop-off in activating odors present beyond the 1000 rank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the relationship between ranking and likelihood of activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "bca3b53a-a4a9-46b5-a1df-54ebbee6b0df",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C75",
+      "claim": "Highly ranked odors have a far higher mean activity than distantly ranked odors.",
+      "claim_type": "EXPLICIT",
+      "source": "We see the same trend if we plot mean activity of odors for the same ranking divisions. Highly ranked odors have a far higher mean activity than distantly ranked odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the relationship between ranking and mean activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "d78ce249-e2ed-4d77-b294-24acd0f69ae5",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C76",
+      "claim": "The maximum overlap in Or relationships is retained between the descriptor and the activity trees, and the descriptor and the cross activity trees with 11 out of 24 Ors present in subgroups that are common in both cases.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the maximum overlap in Or relationships is retained between the descriptor and the activity trees, and the descriptor and the cross activity trees with 11 out of 24 Ors present in subgroups that are common in both cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of hierarchical cluster analysis comparing different trees.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "fe754da7-03fe-4696-8bb7-47b37047f0de",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C77",
+      "claim": "Only two subgroups (yellow and grey) are conserved across the three trees (descriptor, activity, and cross activity).",
+      "claim_type": "EXPLICIT",
+      "source": "However, only two subgroups (yellow and grey) are conserved across the three trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of hierarchical cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "0be47507-f4a6-44f3-940c-51e9ecc7335f",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C78",
+      "claim": "The largest shared overlap existing in the descriptor tree suggests that the Or-optimized descriptors link the known and the predicted receptor-odor interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest shared overlap existing in the descriptor tree suggests that the Or-optimized descriptors link the known and the predicted receptor\u2013odor interactions and that our analysis may expand upon odorant receptor activity relationships beyond those previously known from the training data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the cluster analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "147057f1-cf49-46b5-a327-e7151e96f872",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C79",
+      "claim": "The analysis may expand upon odorant receptor activity relationships beyond those previously known from the training data.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest shared overlap existing in the descriptor tree suggests that the Or-optimized descriptors link the known and the predicted receptor\u2013odor interactions and that our analysis may expand upon odorant receptor activity relationships beyond those previously known from the training data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the cluster analysis results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "8e9dd3fc-885e-4d7f-b519-804a74492d44",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C80",
+      "claim": "The phylogenetic tree has fewer relationships conserved with each of the trees, consistent with previous observations.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the phylogenetic tree has fewer relationships conserved with each of the trees, consistent with previous observations (Hallem et al., 2004) supporting the idea that, while the most conserved amino acid residues in the Ors provide the structure of the tree, they do not correlate strongly with ligand specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of phylogenetic comparison with a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "018b1e26-0078-45f0-a365-dd9e21d3106e",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C81",
+      "claim": "While the most conserved amino acid residues in the Ors provide the structure of the phylogenetic tree, they do not correlate strongly with ligand specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the phylogenetic tree has fewer relationships conserved with each of the trees, consistent with previous observations (Hallem et al., 2004) supporting the idea that, while the most conserved amino acid residues in the Ors provide the structure of the tree, they do not correlate strongly with ligand specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by the phylogenetic analysis and previous observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "a8279909-69ca-4e82-a6b9-d7604f673f25",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C82",
+      "claim": "There is substantial variation in the distribution frequency of predicted ligands across different receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we find substantial variation in the distribution frequency of predicted ligands across different receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of analyzing prediction frequency distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f97773c3-e598-4f58-af53-60d6c27db862",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C83",
+      "claim": "The predicted response profiles support previous observations made with smaller odor panels that the olfactory system can potentially detect thousands of volatile chemicals, many of which the organism may never have encountered in its chemical environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted response profiles support previous observations made with smaller odor panels that the olfactory system can potentially detect thousands of volatile chemicals, many of which the organism may never have encountered in its chemical environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the prediction results in the context of previous observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "8c5c6aae-081a-458c-9871-0e89aee1eb9f",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C84",
+      "claim": "Plant volatiles constituted a large portion of compounds that are predicted to be ligands for Drosophila Ors.",
+      "claim_type": "EXPLICIT",
+      "source": "Plant volatiles constituted a large portion of compounds that are predicted to be ligands for Drosophila Ors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the source composition of predicted ligands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "264e5e9a-73e3-4170-b648-5f37dc546370",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C85",
+      "claim": "Ors are not specialized for odors from a single source.",
+      "claim_type": "EXPLICIT",
+      "source": "To further analyze odor source representation, we classified odors that belong to top 500 prediction lists according to their source, if known, and find that Ors are not specialized for odors from a single source (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the results of source classification analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "9885fb07-fd8a-47e0-9e1f-9f969b4df199",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C86",
+      "claim": "Only 25% of compounds from the 'natural' odor library found in the top 500 predictions for each Or are predicted to activate multiple Ors.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we find that only 25% of compounds from the 'natural' odor library found in the top 500 predictions for each Or are predicted to activate multiple Ors (Figure 5B, lower left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the results of across-receptor activation pattern analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "267b8ab0-1aba-4554-88ec-972046ede788",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C87",
+      "claim": "Considering compounds from the Pubchem library in the top 500 predicted activators for each receptor, there is further reduction in the proportion of across-receptor activating compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "If we consider compounds from the Pubchem library in the top 500 predicted activators for each receptor, we observe further reduction in the proportion of across-receptor activating compounds (Figure 5B, upper right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the results of across-receptor activation pattern analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "93da98f3-5345-4e15-bf71-d8bf59269006",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C88",
+      "claim": "Cross-activation by ligands functionally evaluated in this study for nine receptors is lower than that reported previously using ligands of comparable strength for the same nine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction we find that cross-activation by ligands functionally evaluated in this study for nine receptors is lower than that reported previously using ligands of comparable strength for the same nine receptors (Hallem and Carlson, 2006) (Figure 5B, lower right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a comparison with previous data, with a citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "550ef5b7-77f3-4121-8338-e9cd42df2fa9",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C89",
+      "claim": "A number of natural odors may be detected by a few receptors, particularly at low concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that a number of natural odors may be detected by a few receptors, particularly at low concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the across-receptor activation pattern results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "50f1b5c7-7a3b-4af8-a3f9-eba4d031d5ed",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C90",
+      "claim": "There is a strong correlation between ranks of predicted ligands to electrophysiological activity.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a strong correlation between ranks of predicted ligands to electrophysiological activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding from the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "cb01c25f-6295-49c5-89a5-9cdd41c89acc",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C91",
+      "claim": "In this study, >240,000 chemicals were screened and >10,000 new ligands were predicted.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we screen >240,000 chemicals and predict >10,000 new ligands which represents a substantial expansion of the known peripheral olfactory code for this important model organism and provides a system-level view of odor detection (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This summarizes the scale of the screening and prediction results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "d23df347-ca5f-4dbd-9a7e-0e5df80cf7ec",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C92",
+      "claim": "The study represents a substantial expansion of the known peripheral olfactory code for Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we screen >240,000 chemicals and predict >10,000 new ligands which represents a substantial expansion of the known peripheral olfactory code for this important model organism and provides a system-level view of odor detection (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the significance of the results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "3a263617-82c9-4c0d-b54a-6b1a9b641831",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C93",
+      "claim": "The study provides a system-level view of odor detection.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we screen >240,000 chemicals and predict >10,000 new ligands which represents a substantial expansion of the known peripheral olfactory code for this important model organism and provides a system-level view of odor detection (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the significance of the results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "bf92eca8-689b-4a45-a709-d1035f6e2721",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C94",
+      "claim": "Attempts to identify molecular descriptors that would differentiate agonists from inverse agonists were not successful with this data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our attempts to identify molecular descriptors that would differentiate agonists from inverse agonists were not successful with this data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a limitation of the current approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f4fcb77d-ace6-4714-b9d8-9e4e29f8ad1f",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C95",
+      "claim": "The inability to differentiate agonists from inverse agonists could be due to an insufficient number of inverse agonists amongst the training odors.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to several reasons: an insufficient number of inverse agonists amongst the training odors, or the inverse agonists may act via the same binding sites as agonists and share many of the same structural features of the activating odors making them difficult to distinguish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the limitation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "8dad3cd3-78ea-4748-b9b7-5fcbb429403c",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C96",
+      "claim": "The inverse agonists may act via the same binding sites as agonists and share many of the same structural features of the activating odors making them difficult to distinguish.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to several reasons: an insufficient number of inverse agonists amongst the training odors, or the inverse agonists may act via the same binding sites as agonists and share many of the same structural features of the activating odors making them difficult to distinguish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the limitation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "eab7f989-ec1f-4fb5-ac00-df15b2aca5f3",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C97",
+      "claim": "A previous study applied chemical informatics on Drosophila olfactory neuron activities to 47 odorants and screened ligands from 21 untested compounds in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar, yet much smaller, analysis applied chemical informatics on Drosophila olfactory neuron activities to 47 odorants and screened ligands from 21 untested compounds in Drosophila (Schmuker et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a previous related study with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f730e1e8-92b0-48cc-adff-0dfcd4026fb0",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C98",
+      "claim": "The previous study had a relatively modest success rate of ~25% at predicting untested odorants as activators.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this study had a relatively modest success rate of \u223c25% at predicting untested odorants as activators (by applying the same 50 spikes/s threshold for comparison), it also highlighted that structure-based ligand prediction is a viable method for further development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the success rate of a previous study for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "5e832d14-d029-4ff6-858a-18f8230ed793",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C99",
+      "claim": "The previous study highlighted that structure-based ligand prediction is a viable method for further development.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this study had a relatively modest success rate of \u223c25% at predicting untested odorants as activators (by applying the same 50 spikes/s threshold for comparison), it also highlighted that structure-based ligand prediction is a viable method for further development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the significance of a previous study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "451284cc-672c-4e02-beaa-7c27ba144508",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C100",
+      "claim": "A QSAR model was applied to describe odor-activity for Drosophila Ors, identifying important amino acid residues using information from orthologous Or sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In another interesting analysis a Quantitative Structure Activity Relationship (QSAR) model was applied to describe odor-activity for Drosophila Ors. Using cheminformatics, important amino acid residues were identified using information from orthologous Or sequences identifying potential odor-binding regions, which was postulated to be 15 angstroms deep and 6 angstroms wide (Guo and Kim, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another previous related study with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "a443d2ef-4e31-4520-889d-222681f36eae",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C101",
+      "claim": "Potential odor-binding regions were postulated to be 15 angstroms deep and 6 angstroms wide.",
+      "claim_type": "EXPLICIT",
+      "source": "In another interesting analysis a Quantitative Structure Activity Relationship (QSAR) model was applied to describe odor-activity for Drosophila Ors. Using cheminformatics, important amino acid residues were identified using information from orthologous Or sequences identifying potential odor-binding regions, which was postulated to be 15 angstroms deep and 6 angstroms wide (Guo and Kim, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a finding from a previous study with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "556368df-a32d-40c0-8edb-0468809622ff",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C102",
+      "claim": "Computational approaches could have great utility in study of sensory receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies, along with ours, suggests that computational approaches could have great utility in study of sensory receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the collective significance of multiple studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "889becf0-0d7f-493c-a680-e95812bd862c",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C103",
+      "claim": "The approach is conservative and designed to search for novel odors that share structural features from a previously tested odor panel.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is conservative and designed to search for novel odors that share structural features from a previously tested odor panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f8b6c5ed-4e5c-4cca-91cc-9d36231e593a",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C104",
+      "claim": "Odor molecules are limited in size and may offer a limited scaffold such that novel isofunctional chemotype identification may not be as prevalent as has been seen in other examples of scaffold-hopping.",
+      "claim_type": "EXPLICIT",
+      "source": "Odor molecules are limited in size as well, and may offer a limited scaffold such that novel isofunctional chemotype identification may not be as prevalent as has been seen in other examples of scaffold-hopping (Schneider et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative limitation of the approach with a citation to scaffold-hopping examples.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f7a3237a-a1d9-42d1-b7ec-29e4bcce2c53",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C105",
+      "claim": "While compounds that share similar values for the optimized descriptors do have structural similarity for selected parts of the molecule, it does not mean that they are not structurally different in other parts of the molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "However while compounds that share similar values for the optimized descriptors do have structural similarity for selected parts of the molecule, it does not mean that they are not structurally different in other parts of the molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies the nature of structural similarity identified by the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "ae8f2634-f602-4b58-9294-47152aaea422",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C106",
+      "claim": "Application of machine learning approaches, such as Support Vector Machines (SVMs) to the receptor-optimized molecular descriptor sets, may be useful to further increase the predictive ability.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, application of machine learning approaches, such as Support Vector Machines (SVMs) to the receptor-optimized molecular descriptor sets, may be useful to further increase the predictive ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "5849ed02-a686-4468-8501-c0b34712b5d3",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C107",
+      "claim": "The SFS approach could be replaced with sequential floating search techniques, which allows for removal, as well as addition, of descriptors in the growing optimized list.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we could replace our SFS approach with sequential floating search techniques, which allows for removal, as well as addition, of descriptors in the growing optimized list.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "ca78a261-ddec-44b1-856b-b18e2abd4f27",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C108",
+      "claim": "The predictions suggest that a number of odorants at low concentrations may be detected by only a few receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our predictions suggest that a number of odorants at low concentrations may be detected by only a few receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the prediction results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "f0398e95-ef18-4655-9fae-b50c3889bc9f",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C109",
+      "claim": "One possible explanation for the disparity between predictions and the combinatorial coding model could be that predictions are fundamentally conservative in nature because they focus only on structurally similar ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this disparity could be that our predictions are fundamentally conservative in nature because we focus only on structurally similar ligands and 7-transmembrane heteromeric receptors may also contain additional unexplored binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "3cfce36f-9756-40c5-87a5-54a50bd4add2",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C110",
+      "claim": "7-transmembrane heteromeric receptors may also contain additional unexplored binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this disparity could be that our predictions are fundamentally conservative in nature because we focus only on structurally similar ligands and 7-transmembrane heteromeric receptors may also contain additional unexplored binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "2958106a-a62a-4467-99e6-bb25db872e37",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C111",
+      "claim": "Previously tested subsets of odors were potentially selected on the basis of strong responses in electroantennograms and behavior assays, which could bias selection of cross-activating odors.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that previously tested subsets of odors were potentially selected on the basis of strong responses in electroantennograms and behavior assays, which could bias selection of cross-activating odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "09362118-5560-48a2-9d0a-c3eea7ec83c6",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C112",
+      "claim": "Complex fruit odor blends activate fewer Ors than the number activated by individual odorants at comparable concentrations using electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, complex fruit odor blends activate fewer Ors than the number activated by individual odorants at comparable concentrations using electrophysiology (Hallem and Carlson, 2006) and Calcium imaging (Semmelhack and Wang, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "ddc7140e-ceb9-4d32-a7dc-e95a2623b218",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C113",
+      "claim": "Complex fruit odor blends activate fewer Ors than the number activated by individual odorants at comparable concentrations using Calcium imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, complex fruit odor blends activate fewer Ors than the number activated by individual odorants at comparable concentrations using electrophysiology (Hallem and Carlson, 2006) and Calcium imaging (Semmelhack and Wang, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "e445afa8-ec34-4a75-a174-c5a8d1bcdafd",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C114",
+      "claim": "Most odors are detected by a few Ors from the repertoire, which may enhance the specificity of the olfactory system for detection of a large number of odors.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, most odors are detected by a few Ors from the repertoire, which may enhance the specificity of the olfactory system for detection of a large number of odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the architecture of the olfactory code.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "1fbd1dd7-90c7-402c-ae2b-9371331982f8",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C115",
+      "claim": "15-20% of odors are predicted to activate several Ors (up to 50%) at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, 15\u201320% of odors are predicted to activate several Ors (up to 50%) at the same time, which may serve to aid the olfactory of the system in discriminating between fine concentration changes of important stimuli by having Ors tuned to low and high concentrations such as shown for Or42a and Or42b (Kreher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a prediction result with a citation to an example.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "64a3a1e6-61d5-48b0-8d0e-9559ed3ca09e",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C116",
+      "claim": "Cross-activation by multiple Ors may serve to aid the olfactory system in discriminating between fine concentration changes of important stimuli by having Ors tuned to low and high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, 15\u201320% of odors are predicted to activate several Ors (up to 50%) at the same time, which may serve to aid the olfactory of the system in discriminating between fine concentration changes of important stimuli by having Ors tuned to low and high concentrations such as shown for Or42a and Or42b (Kreher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional significance of cross-activation, with a citation to an example.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "a19d45e1-d64f-4a81-937a-598258b60189",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C117",
+      "claim": "The cheminformatics pipeline can be applied for system-level analysis of other insects whose receptors and ORNs have been decoded such as mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "This cheminformatics pipeline can also be applied for system-level analysis of other insects whose receptors and ORNs have been decoded such as mosquitoes (Carey et al., 2010), and vertebrates such as mice and humans (Saito et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the applicability of the method to other organisms, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "82d7179d-56c0-45cf-a26c-200273023f2b",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C118",
+      "claim": "The cheminformatics pipeline can be applied for system-level analysis of vertebrates such as mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This cheminformatics pipeline can also be applied for system-level analysis of other insects whose receptors and ORNs have been decoded such as mosquitoes (Carey et al., 2010), and vertebrates such as mice and humans (Saito et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the applicability of the method to other organisms, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "4ee71c38-412a-4524-bdeb-661cceb934a2",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "claim_id": "C119",
+      "claim": "The search for novel insect repellents and attractants for species that transmit disease and destroy crops can be greatly assisted by a rational prioritization using such a cheminformatics approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The search for novel insect repellents and attractants for species that transmit disease and destroy crops can be greatly assisted by a rational prioritization using such a cheminformatics approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the practical applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a cheminformatics pipeline using receptor-optimized molecular descriptors to predict ligands for Drosophila odorant receptors. The method uses Sequential-Forward-Selection to identify unique optimized descriptor subsets for each receptor from 3424 combined Dragon and Cerius2 descriptors, then screens >240,000 compounds to identify top 500 predicted ligands per receptor. Optimized descriptor sets showed superior performance compared to non-optimized methods (Dragon, Cerius2, MCS, AP), with preference for 3D and 2D descriptors over 1D and 0D descriptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C55 collectively describe a well-documented computational methodology with clear performance comparisons. The optimization approach (C38, C41-C44) shows measurable improvements over baseline methods (C34-C36), supported by Figure 1B. The preference for 3D/2D descriptors (C42-C43) is data-driven from Table 1. The screening scale (C52-C55) is explicitly stated and the chemical libraries are well-defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "484e11ff-4818-4b2a-a62c-87a4e26b8417",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational validation using five independent trials of fivefold cross-validation followed by ROC analysis yielded an AUC of 0.815, demonstrating the predictive ability of the Or-optimized descriptor method for 12 receptors with sufficient training data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 describe a rigorous computational validation using established methods (ROC analysis, cross-validation). The AUC value of 0.815 is reported with reference to Figure 1C. The validation was appropriately limited to 12 receptors with adequate training data (>1 very strong activator and >5 strong activators), showing methodological rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "7961a38f-d5af-42c7-8453-9daab51c45b0",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hierarchical clustering analysis using receptor-specific optimized descriptor sets shows that activating odorants cluster tightly together for each receptor and share sub-structures and pharmacophore features. The method successfully clusters even weak activators for receptors with limited training data (Or2a, Or23a, Or43a, Or85f), though some receptors (Or35a, Or98a) show incomplete clustering of highly activating compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 report clustering analysis results supported by Figures 1D and Figure 1\u2014figure supplement 2. The observation of incomplete clustering for Or35a and Or98a (C49) is appropriately acknowledged with speculative explanations. The ability to cluster weak activators (C50-C51) demonstrates robustness of the method even with limited training data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Experimental validation using single-unit electrophysiology on 141 predicted receptor-odor interactions across 9 receptors achieved ~71% success rate in identifying ligands (activators or inhibitors). The method identified new activators for every receptor tested and inhibitors for several receptors (~13% of tested compounds). Success rates varied by receptor, with >85% success for Or7a, Or22a, Or59b, Or85a, Or85b, and Or98a, but lower performance for aromatic-detecting receptors Or10a and Or49b due to limited aromatic compounds in the training set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C69 report comprehensive electrophysiological validation with clear success metrics supported by Table 2 and Figure 2A. The 71% overall success rate is well-documented across 141 interactions. The explanation for poor performance of Or10a and Or49b (C67-C68) based on training set composition (13/109 aromatic compounds) is logical and data-driven. Three interactions were independently validated by previous studies (C64), providing external confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "4506b9b7-045a-4087-88a6-eaa07372c76f",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Specificity testing of 504 non-target receptor-odor interactions showed only 10% evoked responses >50 spikes/s and 3.7% >100 spikes/s, demonstrating high specificity. Activity strongly correlates with predicted odor ranking, with top 500 hits showing far higher likelihood of activation and mean activity than distantly ranked odors, with drastic drop-off beyond rank 1000.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C70-C75 report rigorous specificity testing supported by Figure 3A-B. The low false positive rate (10% at >50 spikes/s threshold) demonstrates specificity. The correlation between ranking and activity (C72-C75) provides strong validation that the distance metric is meaningful. The large number of non-target interactions tested (504) provides statistical power for the specificity assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "526b19ca-0f4f-4646-be99-ffa54375c148",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mean vapor pressure of activating odors (11.84 Torr) is 7.5 times higher than inactive odors (1.58 Torr), suggesting some inactive predictions may result from inadequate volatilization and delivery to ORNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 reports a quantitative observation, but C61's interpretation is speculative. While the vapor pressure difference is substantial and could explain some false negatives, no direct experimental validation (e.g., testing at higher concentrations or with different delivery methods) was performed to confirm this hypothesis. This represents a plausible but unvalidated explanation for prediction failures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "5b2934e1-d586-4403-a33a-b70d8d65f2f5",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inhibitors were identified by structural similarity to known activators, suggesting they may bind to similar receptor sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is an inference about mechanism without direct experimental validation. While the observation that inhibitors are structurally similar to activators is data-supported (C62), the conclusion about binding sites is speculative. No binding studies, mutagenesis, or competition assays were performed to validate this mechanism. The claim is plausible but requires additional experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "688f653f-6757-461d-9e13-88c1e84ee1f6",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Hierarchical cluster analysis comparing descriptor-based, activity-based, cross-prediction, and phylogenetic trees shows maximum overlap (11/24 Ors) between descriptor and activity trees, with only two subgroups conserved across all three non-phylogenetic trees. The phylogenetic tree shows fewer conserved relationships, consistent with previous observations that conserved amino acid residues do not strongly correlate with ligand specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 report systematic comparison of receptor relationships using different metrics, supported by Figure 4A. The observation that descriptor-based clustering best captures both known and predicted activity relationships (C78) is data-driven. The phylogenetic analysis (C80-C81) is consistent with cited previous work (Hallem et al., 2004), providing external validation. However, C79 is somewhat speculative about expanding beyond training data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "9880baf6-954a-4f07-981f-f09518831a68",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of predicted ligand distributions shows substantial variation across receptors, with plant volatiles constituting a large portion of predicted ligands. Receptors are not specialized for odors from a single source, and predictions support that the olfactory system can detect thousands of volatile chemicals, many never encountered in the organism's environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 report analysis of prediction patterns supported by Figures 4B and 5A. The source diversity analysis (C84-C85) is data-driven from the natural compound library composition. Claim C83 appropriately contextualizes predictions within previous observations, though it extends beyond direct experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "aaceb24c-ef5c-4c54-bcd8-bdc8a7709ec4",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Analysis of across-receptor activation patterns reveals that only 25% of natural compounds in top 500 predictions activate multiple receptors, with further reduction for Pubchem library compounds. Cross-activation by experimentally validated ligands is lower than previously reported for comparable ligands, suggesting many natural odors may be detected by few receptors, particularly at low concentrations, which may enhance olfactory system specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89, C108, and C114 report across-receptor activation analysis supported by Figure 5B. The comparison with previous data (C88, citing Hallem and Carlson 2006) provides validation. However, the interpretation about low-concentration detection (C89, C108) and enhanced specificity (C114) extends beyond direct experimental evidence, as concentration-dependent responses were not systematically tested. The claims are data-supported but interpretations are somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "8e9ec600-0def-433e-90cc-fe5dbfb7b793",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study screened >240,000 chemicals and predicted >10,000 new ligands, representing a substantial expansion of the peripheral olfactory code for Drosophila and providing a system-level view of odor detection. Strong correlation exists between predicted ligand ranks and electrophysiological activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 summarize the scale and significance of the work, supported by Figure 6A and the experimental validation data. The screening scale (C91) is well-documented. The correlation between ranking and activity (C90) is supported by Figure 3B. Claims C92-C93 about substantial expansion and system-level view are reasonable interpretations given the ~40-fold increase in tested chemical space compared to previous decade of work (C16).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "a13904d5-ca2d-45df-b008-0cce55db2254",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Attempts to identify molecular descriptors differentiating agonists from inverse agonists were unsuccessful, possibly due to insufficient inverse agonists in training data or because inverse agonists may act via the same binding sites as agonists and share structural features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 reports a negative result honestly. Claims C95-C96 provide speculative explanations for this limitation. While the explanations are plausible, they remain untested hypotheses. The acknowledgment of this limitation is appropriate and demonstrates scientific rigor in reporting both successes and failures of the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "7bec858e-2d86-4476-ac41-2e2907d80058",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous computational studies on Drosophila olfaction achieved ~25% success rate with 47 odorants and 21 tested compounds (Schmuker et al., 2007), and QSAR modeling identified potential odor-binding regions 15 angstroms deep and 6 angstroms wide (Guo and Kim, 2010). These studies collectively suggest computational approaches have great utility for studying sensory receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C102 accurately cite and contextualize previous work. The comparison with Schmuker et al. (2007) showing ~25% vs current ~71% success rate demonstrates clear improvement. The citations appear accurate and the interpretation (C102) about utility of computational approaches is reasonable given the collective evidence. This provides appropriate context for the current work's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "9b6d267f-8af9-45a4-9647-42483917bd87",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The approach is conservative, designed to identify structurally similar ligands, which may limit novel chemotype identification. Compounds sharing similar descriptor values have structural similarity in selected molecular regions but may differ elsewhere. Future improvements could include machine learning approaches (SVMs) or sequential floating search techniques. The conservative nature and potential for additional unexplored binding sites may explain disparities with combinatorial coding models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C111 provide honest assessment of methodological limitations and future directions. The acknowledgment that the method is conservative (C103) and may miss novel chemotypes (C104) is appropriate. The suggestions for improvement (C106-C107) are reasonable. The speculative explanations for observed patterns (C109-C111) are clearly marked as possibilities rather than conclusions. This demonstrates good scientific practice in discussing limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "ed6d9706-ba1d-44c0-8133-c345b2c5b751",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "15-20% of odors are predicted to activate several receptors (up to 50%) simultaneously, which may aid the olfactory system in discriminating fine concentration changes by having receptors tuned to different concentration ranges, as demonstrated for Or42a and Or42b.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C116 report prediction results with functional interpretation. The 15-20% cross-activation rate is data-supported. The interpretation about concentration discrimination (C116) is reasonable and supported by citation to Kreher et al. (2008) showing Or42a/Or42b example. However, this functional interpretation extends beyond direct experimental validation in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "d5bc031d-eb59-4b1a-b4a6-3784f85a2e53",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The cheminformatics pipeline can potentially be applied to other insects (mosquitoes) and vertebrates (mice, humans) whose receptors have been decoded, and could assist in rational prioritization for discovering insect repellents and attractants for disease vectors and crop pests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C117-C119 are speculative about future applications without experimental validation in other species. While the citations (Carey et al., 2010; Saito et al., 2009) establish that receptor data exists for these organisms, no actual application or validation of the method in these systems is presented. The potential utility is plausible but remains untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    },
+    {
+      "id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5",
+      "content_id": "46adbdda-cc0f-423b-b51c-5513d23433d2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establish that olfactory coding depends on receptor-odor interactions and signaling modes, that organisms have evolved large receptor families, and that current approaches face major limitations in systematically testing chemical space. The similarity property principle from pharmaceutical applications was adapted for olfactory receptors despite challenges from smaller odorant size and detection at low volatile concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C16, C22-C28, C37, C40, C112-C113 provide background context well-supported by appropriate citations. These establish the scientific foundation and rationale for the study. The citations appear accurate and the characterization of field limitations (C11-C16) provides clear motivation. The challenges specific to odorant analysis (C24-C28) are well-documented with examples and citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:53.783494Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "81c2f006-edd1-4ffb-8df2-df4cfea89999",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "a12bdbb7-9864-4494-9005-bd66bbc0a9e9",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "0cb92737-8226-48ff-a910-50d73e180300",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "26a765dc-a20c-4988-a384-7b6143da0b32",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "ab279fae-f1a6-4e84-b40f-09df011f1cda",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "9a705a18-40a1-40f0-b362-b0de6883cd69",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "1e5ae935-ff8f-4738-95ca-8c3ed6db6afc",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "8fe1a27d-1deb-4437-8fa7-619302382d1c",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "e4abb39f-757e-494f-849e-5daf890a59e3",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "ac558176-17e6-4b94-a86d-8e70336ee542",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "45f6abfe-646b-4fbf-ac09-fa2af468ef88",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "eb53160f-3dac-4263-bb45-4d3ab5b6bb85",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "0bca552a-53ad-4a1b-b72c-dad528a5886c",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "ee245594-aa45-4148-ac48-676fd9b0d218",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "0d2b1fe7-8e75-45c8-b0c1-9c8794821f7d",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "751dc8c5-fd9b-41a6-b26b-38939f59bba2",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "59b52e54-d74f-4f7a-ae90-f073b5106e60",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "7d3c294b-738d-482c-8a01-a5228faa108e",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "eac4d5c1-c3e0-4d9c-8f89-04d63118871e",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "f80a04f4-0c23-4f70-bf29-e0da49a62468",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "d40f2c32-8ddc-426a-a313-b011fb3ced79",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "2762be56-5181-418a-abec-4828ce8d7318",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "559fb19d-fefc-4806-8043-e2a7591c46e9",
+      "result_id": "e6e85e57-a525-4aa8-b12d-e60837bcb5f5"
+    },
+    {
+      "claim_id": "7373bc76-7a55-416d-acbc-c104d227f24d",
+      "result_id": "484e11ff-4818-4b2a-a62c-87a4e26b8417"
+    },
+    {
+      "claim_id": "493a0974-95b9-422f-9427-a479e9257c78",
+      "result_id": "484e11ff-4818-4b2a-a62c-87a4e26b8417"
+    },
+    {
+      "claim_id": "e03001de-7102-4247-87ed-1bb2262d3e46",
+      "result_id": "7961a38f-d5af-42c7-8453-9daab51c45b0"
+    },
+    {
+      "claim_id": "98b9dcca-6e7c-4400-88d7-5961cf8e97fb",
+      "result_id": "7961a38f-d5af-42c7-8453-9daab51c45b0"
+    },
+    {
+      "claim_id": "26c285e5-6f4a-4388-b605-b50737504b5c",
+      "result_id": "7961a38f-d5af-42c7-8453-9daab51c45b0"
+    },
+    {
+      "claim_id": "57d6b75d-6d76-47fa-8577-c5bbedffeccc",
+      "result_id": "7961a38f-d5af-42c7-8453-9daab51c45b0"
+    },
+    {
+      "claim_id": "fc6c7759-b39f-4878-a135-6a3a1f344c70",
+      "result_id": "7961a38f-d5af-42c7-8453-9daab51c45b0"
+    },
+    {
+      "claim_id": "47a53c4a-8a03-4af9-90f3-065dc64d8d87",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "a44477f3-8bb0-48d0-8c78-16d0bd063979",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "453ed067-67ef-4eae-9b70-fa556a818dc0",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "ca95e3c1-b77a-437a-843a-aa80377b75e5",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "97e60ddf-a0f4-4906-a307-6bae290d8836",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "9eeab821-c770-4edf-8e4e-2b0393c0a000",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "3c6ca6ec-faff-4f8d-8941-908af1a472ad",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "db576c9d-b55c-4bb3-8635-52177d95df79",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "6072efe0-0b2d-4213-9a85-ad3ee4887748",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "04591fa5-e77d-4cd0-86bd-6d1e64d57d0a",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "f04bfed1-491d-4d4d-82d5-6101d5cd7df5",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "2f3ffaca-6d39-49be-8658-4b09bf7c7b1f",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "10360c00-29ab-4962-bfff-d5904eef34c4",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "6b951bf1-e128-4c48-ab5e-aeb57bf38d23",
+      "result_id": "40f91e9e-9df1-4a5e-9aaf-dd9527fbce6e"
+    },
+    {
+      "claim_id": "81358f18-96f5-4eb0-bf6e-ec3ce48a1a4e",
+      "result_id": "4506b9b7-045a-4087-88a6-eaa07372c76f"
+    },
+    {
+      "claim_id": "7b92bdb2-3a8e-4906-912a-3c8c0a222678",
+      "result_id": "4506b9b7-045a-4087-88a6-eaa07372c76f"
+    },
+    {
+      "claim_id": "452923f9-1cb4-4e3d-8f61-bb9df414e6fd",
+      "result_id": "4506b9b7-045a-4087-88a6-eaa07372c76f"
+    },
+    {
+      "claim_id": "8b54f9ff-1ce2-4a67-96d5-2d6a384c2e1e",
+      "result_id": "4506b9b7-045a-4087-88a6-eaa07372c76f"
+    },
+    {
+      "claim_id": "d931cf53-7a6a-4b5e-ba91-452ffb3e642b",
+      "result_id": "4506b9b7-045a-4087-88a6-eaa07372c76f"
+    },
+    {
+      "claim_id": "53358686-faaf-476f-800b-74866e8ed6d1",
+      "result_id": "4506b9b7-045a-4087-88a6-eaa07372c76f"
+    },
+    {
+      "claim_id": "bca3b53a-a4a9-46b5-a1df-54ebbee6b0df",
+      "result_id": "4506b9b7-045a-4087-88a6-eaa07372c76f"
+    },
+    {
+      "claim_id": "9f688f41-0b45-427f-85d5-f56db0236499",
+      "result_id": "526b19ca-0f4f-4646-be99-ffa54375c148"
+    },
+    {
+      "claim_id": "59589638-941e-462d-a4af-e69c2a886522",
+      "result_id": "526b19ca-0f4f-4646-be99-ffa54375c148"
+    },
+    {
+      "claim_id": "5f00218c-1ceb-439a-ab43-9bc0f2c22193",
+      "result_id": "5b2934e1-d586-4403-a33a-b70d8d65f2f5"
+    },
+    {
+      "claim_id": "d78ce249-e2ed-4d77-b294-24acd0f69ae5",
+      "result_id": "688f653f-6757-461d-9e13-88c1e84ee1f6"
+    },
+    {
+      "claim_id": "fe754da7-03fe-4696-8bb7-47b37047f0de",
+      "result_id": "688f653f-6757-461d-9e13-88c1e84ee1f6"
+    },
+    {
+      "claim_id": "0be47507-f4a6-44f3-940c-51e9ecc7335f",
+      "result_id": "688f653f-6757-461d-9e13-88c1e84ee1f6"
+    },
+    {
+      "claim_id": "147057f1-cf49-46b5-a327-e7151e96f872",
+      "result_id": "688f653f-6757-461d-9e13-88c1e84ee1f6"
+    },
+    {
+      "claim_id": "8e9dd3fc-885e-4d7f-b519-804a74492d44",
+      "result_id": "688f653f-6757-461d-9e13-88c1e84ee1f6"
+    },
+    {
+      "claim_id": "018b1e26-0078-45f0-a365-dd9e21d3106e",
+      "result_id": "688f653f-6757-461d-9e13-88c1e84ee1f6"
+    },
+    {
+      "claim_id": "a8279909-69ca-4e82-a6b9-d7604f673f25",
+      "result_id": "9880baf6-954a-4f07-981f-f09518831a68"
+    },
+    {
+      "claim_id": "f97773c3-e598-4f58-af53-60d6c27db862",
+      "result_id": "9880baf6-954a-4f07-981f-f09518831a68"
+    },
+    {
+      "claim_id": "8c5c6aae-081a-458c-9871-0e89aee1eb9f",
+      "result_id": "9880baf6-954a-4f07-981f-f09518831a68"
+    },
+    {
+      "claim_id": "264e5e9a-73e3-4170-b648-5f37dc546370",
+      "result_id": "9880baf6-954a-4f07-981f-f09518831a68"
+    },
+    {
+      "claim_id": "9885fb07-fd8a-47e0-9e1f-9f969b4df199",
+      "result_id": "aaceb24c-ef5c-4c54-bcd8-bdc8a7709ec4"
+    },
+    {
+      "claim_id": "267b8ab0-1aba-4554-88ec-972046ede788",
+      "result_id": "aaceb24c-ef5c-4c54-bcd8-bdc8a7709ec4"
+    },
+    {
+      "claim_id": "93da98f3-5345-4e15-bf71-d8bf59269006",
+      "result_id": "aaceb24c-ef5c-4c54-bcd8-bdc8a7709ec4"
+    },
+    {
+      "claim_id": "550ef5b7-77f3-4121-8338-e9cd42df2fa9",
+      "result_id": "aaceb24c-ef5c-4c54-bcd8-bdc8a7709ec4"
+    },
+    {
+      "claim_id": "ca78a261-ddec-44b1-856b-b18e2abd4f27",
+      "result_id": "aaceb24c-ef5c-4c54-bcd8-bdc8a7709ec4"
+    },
+    {
+      "claim_id": "e445afa8-ec34-4a75-a174-c5a8d1bcdafd",
+      "result_id": "aaceb24c-ef5c-4c54-bcd8-bdc8a7709ec4"
+    },
+    {
+      "claim_id": "50f1b5c7-7a3b-4af8-a3f9-eba4d031d5ed",
+      "result_id": "8e9ec600-0def-433e-90cc-fe5dbfb7b793"
+    },
+    {
+      "claim_id": "cb01c25f-6295-49c5-89a5-9cdd41c89acc",
+      "result_id": "8e9ec600-0def-433e-90cc-fe5dbfb7b793"
+    },
+    {
+      "claim_id": "d23df347-ca5f-4dbd-9a7e-0e5df80cf7ec",
+      "result_id": "8e9ec600-0def-433e-90cc-fe5dbfb7b793"
+    },
+    {
+      "claim_id": "3a263617-82c9-4c0d-b54a-6b1a9b641831",
+      "result_id": "8e9ec600-0def-433e-90cc-fe5dbfb7b793"
+    },
+    {
+      "claim_id": "bf92eca8-689b-4a45-a709-d1035f6e2721",
+      "result_id": "a13904d5-ca2d-45df-b008-0cce55db2254"
+    },
+    {
+      "claim_id": "f4fcb77d-ace6-4714-b9d8-9e4e29f8ad1f",
+      "result_id": "a13904d5-ca2d-45df-b008-0cce55db2254"
+    },
+    {
+      "claim_id": "8dad3cd3-78ea-4748-b9b7-5fcbb429403c",
+      "result_id": "a13904d5-ca2d-45df-b008-0cce55db2254"
+    },
+    {
+      "claim_id": "eab7f989-ec1f-4fb5-ac00-df15b2aca5f3",
+      "result_id": "7bec858e-2d86-4476-ac41-2e2907d80058"
+    },
+    {
+      "claim_id": "f730e1e8-92b0-48cc-adff-0dfcd4026fb0",
+      "result_id": "7bec858e-2d86-4476-ac41-2e2907d80058"
+    },
+    {
+      "claim_id": "5e832d14-d029-4ff6-858a-18f8230ed793",
+      "result_id": "7bec858e-2d86-4476-ac41-2e2907d80058"
+    },
+    {
+      "claim_id": "451284cc-672c-4e02-beaa-7c27ba144508",
+      "result_id": "7bec858e-2d86-4476-ac41-2e2907d80058"
+    },
+    {
+      "claim_id": "a443d2ef-4e31-4520-889d-222681f36eae",
+      "result_id": "7bec858e-2d86-4476-ac41-2e2907d80058"
+    },
+    {
+      "claim_id": "556368df-a32d-40c0-8edb-0468809622ff",
+      "result_id": "7bec858e-2d86-4476-ac41-2e2907d80058"
+    },
+    {
+      "claim_id": "889becf0-0d7f-493c-a680-e95812bd862c",
+      "result_id": "9b6d267f-8af9-45a4-9647-42483917bd87"
+    },
+    {
+      "claim_id": "f8b6c5ed-4e5c-4cca-91cc-9d36231e593a",
+      "result_id": "9b6d267f-8af9-45a4-9647-42483917bd87"
+    },
+    {
+      "claim_id": "f7a3237a-a1d9-42d1-b7ec-29e4bcce2c53",
+      "result_id": "9b6d267f-8af9-45a4-9647-42483917bd87"
+    },
+    {
+      "claim_id": "ae8f2634-f602-4b58-9294-47152aaea422",
+      "result_id": "9b6d267f-8af9-45a4-9647-42483917bd87"
+    },
+    {
+      "claim_id": "5849ed02-a686-4468-8501-c0b34712b5d3",
+      "result_id": "9b6d267f-8af9-45a4-9647-42483917bd87"
+    },
+    {
+      "claim_id": "f0398e95-ef18-4655-9fae-b50c3889bc9f",
+      "result_id": "9b6d267f-8af9-45a4-9647-42483917bd87"
+    },
+    {
+      "claim_id": "3cfce36f-9756-40c5-87a5-54a50bd4add2",
+      "result_id": "9b6d267f-8af9-45a4-9647-42483917bd87"
+    },
+    {
+      "claim_id": "2958106a-a62a-4467-99e6-bb25db872e37",
+      "result_id": "9b6d267f-8af9-45a4-9647-42483917bd87"
+    },
+    {
+      "claim_id": "1fbd1dd7-90c7-402c-ae2b-9371331982f8",
+      "result_id": "ed6d9706-ba1d-44c0-8133-c345b2c5b751"
+    },
+    {
+      "claim_id": "64a3a1e6-61d5-48b0-8d0e-9559ed3ca09e",
+      "result_id": "ed6d9706-ba1d-44c0-8133-c345b2c5b751"
+    },
+    {
+      "claim_id": "a19d45e1-d64f-4a81-937a-598258b60189",
+      "result_id": "d5bc031d-eb59-4b1a-b4a6-3784f85a2e53"
+    },
+    {
+      "claim_id": "82d7179d-56c0-45cf-a26c-200273023f2b",
+      "result_id": "d5bc031d-eb59-4b1a-b4a6-3784f85a2e53"
+    },
+    {
+      "claim_id": "4ee71c38-412a-4524-bdeb-661cceb934a2",
+      "result_id": "d5bc031d-eb59-4b1a-b4a6-3784f85a2e53"
+    },
+    {
+      "claim_id": "ca4aa2b2-08b4-4edd-9628-c42129df05cd",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "b8623f6f-e7f3-4ffa-98ef-8c90acd4288b",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "1f4ae3a5-e3eb-4abe-9e7e-194170c4644b",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "31f4f491-da02-44c5-acbc-81d736da064e",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "f050b766-a5aa-47c2-9c6f-6f0ff9952002",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "b95633d4-da07-4c50-a7a6-c4d140b7f55b",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "5393fa3a-38a8-4a21-b687-746939a79c91",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "0456eba6-62c7-40e8-ab8f-56ef9991b3d8",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "847fa9bd-580d-4f29-8dd1-5687ff998484",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "fbd7785d-37d9-4128-af11-5550a4e3959a",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "eecc6a73-db13-4b5d-aac0-4763453dec70",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "3c14dd60-17f9-44f7-a3ae-d97a6980b164",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "5d22680a-d7cf-49ce-beac-328d1d0b4a7f",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "66a53fac-5c43-4956-be93-afa7082bfa23",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "65b663a1-5ec8-45f7-9c14-a55b1597b23d",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "baf32177-b4b1-4520-ae6f-2e41e550d436",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "aaff16de-cfd2-4d22-b960-210382a793e9",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "7de6330c-175c-4855-8142-c9638f22bb80",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "baf54c6a-9907-4fc9-8d95-50d989ec48de",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "e07eba1b-5043-4259-b64d-3c9a94e0257b",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "09362118-5560-48a2-9d0a-c3eea7ec83c6",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    },
+    {
+      "claim_id": "ddc7140e-ceb9-4d32-a7dc-e95a2623b218",
+      "result_id": "16b8565f-23fd-4e96-b11b-3742d4d2d4f5"
+    }
+  ],
+  "comparisons": []
+}

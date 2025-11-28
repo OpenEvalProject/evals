@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C64",
+      "C65"
+    ],
+    "result": "The CLASPI approach was adapted to identify histone decrotonylases by converting weak enzyme-PTM interactions into covalent linkages through photo-crosslinking. Using this method with H3K4Cr probes, Sirt1, Sirt2, and Sirt3 were identified as selective binders, with Sirt3 showing the highest affinity (Kd=25.1 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 and C64-C65 collectively demonstrate successful application of CLASPI to identify decrotonylases. The experimental design includes appropriate controls (probe C vs probe 1), dual filtering (selectivity and affinity), and validation through multiple orthogonal methods (SILAC-MS, in vitro crosslinking, competition assays, ITC). The IC50 (32.3 \u03bcM) and Kd (25.1 \u03bcM) values are consistent, supporting the reliability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C40"
+    ],
+    "result": "The crystal structure of Sirt3 in complex with H3K4Cr peptide (2.95 \u00c5 resolution) reveals that Phe180 forms a \u03c0-\u03c0 stacking interaction (3.6 \u00c5 distance) with the crotonyl group. This phenylalanine is conserved in Sirt1-3 but not in Sirt4-7, explaining the selective recognition of crotonylated lysine by these three sirtuins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32 and C40 provide strong structural evidence for the molecular basis of Kcr recognition. The 2.95 \u00c5 resolution is adequate for identifying key interactions. The \u03c0-\u03c0 stacking distance of 3.6 \u00c5 is within the expected range (3.3-3.8 \u00c5). The sequence conservation analysis (C30) directly correlates with the CLASPI results (C31), providing independent validation. The structure is deposited in PDB (4V1C), enabling verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Sirt1-3 catalyze NAD-dependent decrotonylation of histone peptides in vitro through the same mechanism as deacetylation. Sirt3 shows substrate selectivity (kcat/Km = 783 s\u207b\u00b9M\u207b\u00b9 for H3K4Cr), and the F180L mutation reduces decrotonylase activity 40-fold while affecting deacetylase activity only 2-fold, confirming the critical role of \u03c0-\u03c0 stacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C47 demonstrate decrotonylase activity through multiple lines of evidence: NAD dependence (C33), detection of O-Cr-ADPR product (C35), loss of activity with H248Y mutation (C36), and kinetic characterization (C34). The F180L mutant data (C44-C47) provides strong evidence for the \u03c0-\u03c0 interaction's specificity, as the differential effect on decrotonylation vs deacetylation rules out general structural disruption. The substrate selectivity (C38-C39) is supported by both activity and binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Sirt3, but not Sirt1 or Sirt2, regulates cellular histone crotonylation levels. Sirt3 knockdown causes accumulation of global histone Kcr and H3K4Cr without affecting H3K4Ac or H3K4Me3 levels. Full-length Sirt3 is present in the nucleus of HeLa cells, enabling it to function as a histone decrotonylase in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C58 establish Sirt3 as an endogenous histone decrotonylase. The siRNA knockdown experiments (C50-C54) show selective effects on Kcr but not Kac or K4Me3, demonstrating specificity. Nuclear localization of full-length Sirt3 (C57) is demonstrated by both immunofluorescence and Western blot with an N-terminal antibody. The lack of effect from Sirt1/2 knockdown (C50) is consistent with their lower affinity for H3K4Cr. However, the cellular experiments are limited to one cell line and one knockdown approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C81",
+      "C82"
+    ],
+    "result": "Sirt3 regulates histone Kcr levels and gene transcription at specific genomic loci. Sirt3 knockdown increases Kcr levels at 5 of 7 tested gene loci and upregulates transcription of three genes (Ptk2, Tshz3, Wapal), suggesting Sirt3 may repress gene expression by erasing Kcr marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C63 and C81-C82 suggest a link between Sirt3-mediated decrotonylation and gene regulation, but the evidence is limited. The ChIP-qPCR (C60) and RT-qPCR (C62) data show correlation but not causation. Only 3 of 5 genes with increased Kcr show transcriptional changes, and 2 genes (Brip1, Zfat) show increased Kcr without transcriptional effects (C87). The mechanistic interpretation (C63, C82) is speculative. The analysis is limited to 7 genes in one cell line, and genome-wide studies are acknowledged as needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study reconciles discrepancies with prior work by Denu and colleagues, showing that Sirt3 has robust decrotonylase activity against H3K9Cr peptides, contrary to their findings. The discrepancy may be due to different peptide sequences used (residues 5-13 vs 1-15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C75 address an important discrepancy with prior literature. While C74 demonstrates Sirt3 activity against H3K9Cr, the explanation for the discrepancy (C75) is speculative. The sequence-dependent activity (C38) supports this possibility, but direct comparison using both peptide sequences would be needed to definitively resolve the discrepancy. The different assay methods (radioactive TLC vs LC-MS) could also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The discovery of decrotonylase activity in Sirt1-3 broadens the landscape of PTMs targeted by sirtuins and addresses a key knowledge gap regarding enzymes that regulate histone crotonylation. The CLASPI approach may be applicable to identifying erasers of other PTMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C66-C72 place the findings in context of prior knowledge and future directions. C2 accurately describes the knowledge gap that motivated the study. C67-C70 correctly cite established knowledge about sirtuin substrate diversity. C71-C72 are reasonable inferences about the significance of the findings. C66 is a speculative but reasonable suggestion for future applications, appropriately qualified with 'anticipate'.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establish the importance of histone PTMs in gene regulation and summarize prior work on histone crotonylation and potential decrotonylases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 provide accurate background information supported by appropriate citations. These claims establish the biological context and prior state of knowledge. C12 includes speculation ('suggesting it is likely') but is appropriately qualified. C13-C14 accurately describe prior work on decrotonylases, which the current study builds upon and extends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Discussion claims provide context about sirtuin localization, histone modification site-specificity, and potential explanations for observations where increased Kcr did not correlate with transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 and C83-C85 accurately cite established knowledge about sirtuin localization and histone modification functions. C86-C87 provide reasonable speculation to explain why some genes with elevated Kcr did not show transcriptional changes, appropriately qualified as possibilities. These claims demonstrate appropriate interpretation of results in light of existing knowledge.",
+    "result_type": "MINOR"
+  }
+]

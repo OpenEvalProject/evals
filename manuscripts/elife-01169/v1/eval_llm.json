@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Microorganisms cooperate by producing diffusible public goods that benefit other cells, often at a metabolic cost to the producer. Examples include invertase production in S. cerevisiae, iron-scavenging molecules, biofilm-forming agents, and antibiotic resistance factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 establish the biological context for microbial public goods cooperation through multiple cited experimental examples (C9-C14) and quantitative data (C16). The claims are well-supported by established literature and provide appropriate motivation for the theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Previous theoretical work on spatial structure and cooperation has focused on pairwise interactions or used relatedness parameters rather than explicit spatial models of diffusible public goods, creating a gap that the current work addresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C25 accurately characterize prior work through appropriate citations and identify a legitimate gap in the literature. The assessment that previous models obscure the roles of colony geometry and diffusion (C25) is a reasonable inference supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Microbial colonies exhibit geometry-dependent spatial arrangements: spherical organisms like S. cerevisiae form hexagonal lattice-like structures in 2D, while rod-shaped organisms like E. coli form different arrangements. These can be modeled using weighted graphs with different edge structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are well-supported by microscopy images (Figures 1A-B) showing actual colony structures and by the graph representations (Figures 1C-D). The modeling assumptions are reasonable simplifications of observed biological structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The success of cooperation depends on a simple condition: b/c > 1/(\u03d5\u2080 + \u03d5\u2081), where \u03d5\u2080 is the fraction of public good retained by the producer and \u03d5\u2081 is the average fraction retained by each neighbor. This condition holds across various graph structures and diffusion processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34, C37-C40 present the main theoretical result with mathematical derivation detailed in Materials and Methods. The condition is derived using generating function analysis and coalescing random walks, with appropriate mathematical rigor. Figure 3A demonstrates the relationship across multiple graph structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Theoretical predictions are confirmed by simulations on a 15\u00d715 periodic triangular lattice with uniform edge weights and cost c = 5%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by Figure 3B, which shows agreement between theoretical predictions and simulation results with statistical significance (p<0.05). The simulation provides appropriate validation of the theoretical model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C56"
+    ],
+    "result": "Cooperation is favored under conditions of small diffusion rates, low colony dimensionality, and small decay rates of the public good. Decay always hinders cooperation because the critical b/c ratio increases sublinearly with \u03bb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C42-C45, C56 are supported by mathematical analysis and Figure 3. The decay analysis (C42) is mathematically derived in Materials and Methods, showing that decay reduces both \u03bb and b by factor 1/(1+d). Figure 3C illustrates how decay shifts favorable conditions to unfavorable ones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Three qualitative regimes exist for diffusible public goods: for \u03bb\u226a1, benefits are retained by producer (cooperation when b/c>1); for \u03bb\u226b1, goods are shared indiscriminately (cooperation only if essential); between these extremes, spatial arrangement is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 describe limiting behaviors derived from the main theoretical result (Equation 2). These are logical consequences of the mathematical model and are illustrated in Figure 3A showing the transition between regimes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C80",
+      "C83",
+      "C85"
+    ],
+    "result": "For S. cerevisiae monosaccharide hydrolysis, \u03bb is estimated to be approximately 3, corresponding to a diffusion length of ~10 \u03bcm (~3 cell lengths), placing this system in the critical regime where colony geometry strongly affects cooperation success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C80, C83, C85 provide a specific application to S. cerevisiae. The calculation uses cited experimental parameters (C80) and reasonable assumptions (C85) to estimate \u03bb~3. The calculation methodology is detailed in Materials and Methods and appears sound, though it relies on several approximations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The model predicts that cooperation advantage decreases with colony dimensionality (3D vs 2D) and increases with environmental viscosity or public goods utilization rate (both decrease \u03bb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are testable predictions derived from the theoretical model. Figure 3A shows the dimensionality effect. The predictions follow logically from the relationship between \u03bb and cooperation success established in the main result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The model explains divergent experimental results on viscosity effects: K\u00fcmmerli et al. found viscosity promoted cooperation in P. aeruginosa (diffusion decreased), while Le Gac and Doebeli found no effect in E. coli (diffusion remained high). The difference is attributable to diffusion rate changes captured by \u03bb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide a retrospective explanation of published experimental results using the current model. The interpretation (C59-C62) is reasonable and consistent with the model's predictions, though it would be strengthened by quantitative estimates of \u03bb in both systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The model's predictions extend to heterotypic cooperation (as in Momeni et al. 2013 with S. cerevisiae metabolite exchange), because heterotypic cooperation entails second-order homotypic cooperation where benefits indirectly aid cells of the same type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 connect the homotypic model to heterotypic cooperation through a reasonable conceptual argument (C68-C69). The cited experimental results (C67) are consistent with model predictions, though the authors appropriately note that heterotypic cooperation is not explicitly incorporated in their model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model can represent behavior spread on social networks with social multiplier effects. Actions become more likely to spread as the multiplier increases and can spread even with net cost to the actor on non-well-mixed networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 present an alternative interpretation of the model for social networks. The mathematical mapping (b = b\u2080/(1-m), \u03bb = m/(1-m)) is provided, and Figure 4 illustrates the predictions. This is a valid extension of the model to a different domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "For a state with only cell i as cooperator, the relationship (1+\u03bb)\u03d5\u2080 = 1 + \u03bb\u03d5\u2081 holds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is a mathematical identity derived from the stationary distribution equation (Equation 1) for the special case of a single cooperator. This is a correct mathematical derivation used in subsequent analysis.",
+    "result_type": "MINOR"
+  }
+]

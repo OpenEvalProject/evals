@@ -1,0 +1,1532 @@
+{
+  "submission": {
+    "id": "aa97975e-ce51-47ff-b6b0-5d61cd61d2ba",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:43:15.686942Z",
+    "updated_at": "2025-11-28T19:43:15.686942Z"
+  },
+  "content": [
+    {
+      "id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "submission_id": "aa97975e-ce51-47ff-b6b0-5d61cd61d2ba",
+      "content_type": "manuscript",
+      "content_text": "# Inter-Golgi transport mediated by COPI-containing vesicles carrying small cargoes\n\n## Authors\n\n- Patrina A Pellett<sup>1</sup>\n- Felix Dietrich<sup>1</sup>\n- J\u00f6rg Bewersdorf<sup>1</sup>\n- James E Rothman<sup>1</sup> \u2020\n- Gr\u00e9gory Lavieu<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell Biology Yale University School of Medicine New Haven United States\n2. Department of Chemistry Yale University New Haven United States\n3. Department of Mathematics Technische Universit\u00e4t M\u00fcnchen Garching Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nA core prediction of the vesicular transport model is that COPI vesicles are responsible for trafficking anterograde cargoes forward. In this study, we test this prediction by examining the properties and requirements of inter-Golgi transport within fused cells, which requires mobile carriers in order for exchange of constituents to occur. We report that both small soluble and membrane-bound secretory cargo and exogenous Golgi resident glycosyl-transferases are exchanged between separated Golgi. Large soluble aggregates, which traverse individual stacks, do not transfer between Golgi, implying that small cargoes (which can fit in a typical transport vesicle) are transported by a different mechanism. Super-resolution microscopy reveals that the carriers of both anterograde and retrograde cargoes are the size of COPI vesicles, contain coatomer, and functionally require ARF1 and coatomer for transport. The data suggest that COPI vesicles traffic both small secretory cargo and steady-state Golgi resident enzymes among stacked cisternae that are stationary.\n\n## Introduction\n\nThe Golgi apparatus is a central feature of the secretory pathway in all eukaryotic cells. In higher eukaryotes, the Golgi stack consists of four to six flattened cisternae, which contain a series of glycosyl-transferases and other resident membrane proteins. These are localized in the order of their function in distinct steady-state distributions along the axis between the cis (entry) and the trans (exit) face, as a result of a dynamic equilibrium resulting from a balance of anterograde (ER \u2192 cis \u2192 trans) and retrograde (trans \u2192 cis and Golgi \u2192 ER) flows. Proteins secreted from the cell, as well as constituents of the plasma membrane and a broad variety of membrane-enclosed compartments pass through the ER\u2013Golgi system in the anterograde direction, diverging only as they depart the Golgi stack at its trans face (also termed the TGN). During this anterograde passage they are typically glycosylated in a step-wise fashion as they encounter the responsible enzymes (Emr et al., 2009; Klumperman, 2011).\n\nThere are two broadly opposing alternative mechanisms (with many variations) to explain anterograde transport (cis \u2192 trans) across the Golgi (Emr et al., 2009; Rothman, 2010): (1) mobile cisternae (also termed cisternal progression), in which the cisterna themselves move from cis \u2192 trans, being continuously remodeled by retrograde flow of resident enzymes in the process (Mironov et al., 2001; Losev et al., 2006; Matsuura-Tokita et al., 2006). (2) The vesicular transport model, in which cisterna are viewed as static and the anterograde cargo must then be mobile, moving forward from cisterna-to-cisterna by a carrier mechanism. COPI-coated vesicles are the principal candidates for anterograde carriers, as they form and fuse copiously throughout the Golgi stack, and many contain anterograde cargo (Balch et al., 1984b; Rothman and Wieland, 1996; Orci et al., 1997; Rothman, 2010). COPI vesicles are known to carry retrograde cargo from Golgi to ER (Letourneur et al., 1994; Emr et al., 2009). However, dynamic tubular connections between cisternae have also been proposed (Trucco et al., 2004).\n\nIn this study, we seek to gain insight into how small anterograde (and retrograde) directed cargoes traverse stacked Golgi. We also test core predictions of the COPI vesicular model for anterograde transport among static cisternae. For these purposes we have employed a simple assay for inter-Golgi transport within fused cells, which requires mobile carriers in order for exchange of Golgi constituents to occur.\n\nOver 25 years ago, long before dynamic imaging in live cells with GFP tags was possible, we reported the surprising finding that VSV-encoded G protein is capable of rapid exchange between two different Golgi populations within fused cells (Rothman et al., 1984a, b). These results recapitulated a previous discovery made in cell-free extracts (Fries and Rothman, 1980; Balch et al., 1984a), which later allowed the identification of key vesicle transport machinery (such as coatomer, NSF, and SNAREs) needed for inter-Golgi transport (Malhotra et al., 1988; Waters et al., 1991; Serafini et al., 1991a, b).\n\nAlthough the data generated with this biochemical approach strongly indicated that VSV-G containing COPI vesicles were employed in anterograde transport in the Golgi (Orci et al., 1989), this interpretation was debated (Mellman and Simons, 1992; Pelham, 1994) because the role of COPI vesicles in retrograde transport was subsequently uncovered (Letourneur et al., 1994), and the then available data on inter-Golgi traffic could not rule out that Golgi glycosyl-transferases are also transported between Golgi and could contribute an unknown portion of the assay signals (Love et al., 1998; Walter et al., 1998). Other groups used a cell fusion assay to observe the behavior of fluorescently labeled Golgi markers, but were only able to do so hours after fusion had taken place, when the Golgi were already reassembled at the center of the newly-formed poly-karyons (Ho et al., 1990; Deng et al., 1992).\n\nHere, we have reinvestigated inter-Golgi transport with much more precise and penetrating tools of modern cell and molecular biology and optics, and find that both small anterograde cargo and Golgi resident glycosyl-transferases are briskly exchanged. Large soluble aggregates, which traverse the stack, do not transfer between Golgi, implying that small cargo (which can fit in a typical transport vesicle) are transported by a different mechanism. Super-resolution microscopy and live cell imaging reveal that the carriers of both anterograde and retrograde cargo are the size of COPI vesicles, contain coatomer, and are Arf1-dependent.\n\n## Results\n\n### Exogenous Golgi resident membrane proteins traffic between Golgi in fused cells\n\nTo assess inter-Golgi exchange in real time we fused two populations of HeLa cells, one containing GFP tagged galactosyltransferase (GT-GFP) with a second containing RFP tagged sialyltransferase (ST-RFP) (Schaub et al., 2006) (Figure 1). The cells were separately transfected, combined and allowed to spread as a mixed population on a cover slip. At the steady state in HeLa cells, GT and ST have partially overlapping distributions in Golgi cisternae (Rabouille et al., 1995; Schaub et al., 2006). GT is localized in the trans Golgi cisternae, while ST is localized in the trans and trans-most/TGN cisternae. The cell population containing GT-GFP was also transfected with VSV-G protein to enable us to trigger cell\u2013cell fusion with a brief acidic exposure (Florkiewicz and Rose, 1984). Following pH 5 exposure, the fused cells were immediately monitored by confocal video-microscopy, enabling us to record the time dependence of exchange of these markers between the Golgi populations in the fused cells from the onset of fusion. Importantly, all the experiments were performed at 20\u00b0C and in the presence of cycloheximide (unless mentioned otherwise), to block new synthesis of GT-GFP and ST-RFP in the ER during the experiment and to block exit of these markers from the Golgi while enabling transport in the Golgi to proceed (Matlin and Simons, 1983). Each Golgi area remains tightly associated with its original nucleus for at least 2 hr, longer than the maximum time course of the exchange experiments.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig1-v1.jpg)\n\n**Figure 1.:** HeLa cells co-expressing a GFP-labeled Golgi localized protein and VSV-G are mixed with HeLa cells expressing a RFP-labeled Golgi localized protein. Cell fusion is triggered by acidic exposure of cell surface targeted VSV-G. Cycloheximide was added 1 hr prior to fusing the cells and during the imaging procedure, to prevent de novo protein synthesis. Golgi-content mixing is assessed by live imaging confocal imaging, visualization and characterization of the putative transport intermediates are assessed by STED microscopy.\n\nWe observed that the Golgi originally containing the GT-GFP marker progressively acquired the ST-RFP marker (Figure 2, Golgi 3 and 4), the average fluorescence intensity of such Golgi areas increasing by a factor 10.2 \u00b1 3.7 (n = 5) at 30 min post-fusion at 20\u00b0C. Reciprocally, the initially red-labeled Golgi areas acquired the GT-GFP marker (Figure 2, Golgi 1 and 2) with a 12.1 \u00b1 6.1 (n = 5) fold increase at 30 min post-fusion. An interesting case arises in a polykaryon when a GT-GFP transfected cell fuses with an ST-RFP transfected cell and a third cell that failed to be transfected with either marker (Figure 2, Golgi 5). Here, the initially non-fluorescent Golgi simultaneously acquires markers from both red and green Golgi. Altogether, these initial studies establish that some exogenous resident Golgi enzymes traffic between separate Golgi populations in fused cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig2-v1.jpg)\n\n**Figure 2.:** HeLa cells expressing either GT-GFP and VSV-G, or ST-RFP were mixed and fused by acidic exposure (1 min, pH 5) and then monitored by confocal video-microscopy at 20\u00b0C. Cells were treated with CHX (100 \u03bcg/ml) 2 hr prior to fusion and during the imaging. Graphs show fluorescence intensity of markers within Golgi 2, 4, and 5 over time. Results are representative of three independent experiments.\n\nMost proteins require about 10\u201320 min to fully traverse the Golgi stack at 37\u00b0C, and this process is expected to be several fold slower at 20\u00b0C. Therefore, the time course of exchange between Golgi, remarkably enough, seems to be similar to that for transit of a Golgi stack in a single cell. Moderate rate differences and variations in this exchange can be expected due to the variability of Golgi numbers per polykaryon as well as to their respective distances to each other.\n\n### Rapid traffic of anterograde-directed cargo between Golgi in fused cells\n\nAfter establishing our assay with Golgi resident enzymes, we evaluated transport of model anterograde soluble and membrane cargo proteins. We specifically chose model proteins whose aggregation state could be readily controlled, allowing us to test the cargo size dependence of the exchange mechanism. To control the size of a chimeric anterograde cargo, we took advantage of a well-established drug-dependent aggregation system (Rivera et al., 2000). We tested both a soluble cargo (hGH) and a transmembrane cargo (CD8lumenal), each of which also contained four repeats of a self-aggregation domain (FM) and a fluorescent protein tag. The drug AP21998 maintains these proteins in the monomeric state; removal of AP21998 triggers reversible aggregation (Volchuk et al., 2000). Both the soluble and the membrane-attached version behave as bona fide anterograde cargo, moving rapidly from ER through Golgi to cell surface (Volchuk et al., 2000; Lavieu et al., 2013). However, the soluble and membrane-attached aggregates behave differently. Whereas soluble aggregates of FM4-hGH traverse the Golgi stack, aggregated CD8lumenal morphologically \u2018staples\u2019 Golgi cisternal membranes and remains static in the centers of Golgi cisternae (Lavieu et al., 2013).\n\nConfocal video-microscopy of fused cells revealed that the green-labeled CD8lumenal was transported to the originally red-labeled acceptor Golgi in the presence of the AP21998 disaggregating drug (Figure 3A, Golgi 1), with an average of 12.9 \u00b1 6.5 (n = 4) fold increase at 30 min post-fusion. Monomeric soluble cargo (hGH) also exchanged at similar rate (Figure 3B, Golgi 1). This showed that exchange is not limited to resident Golgi proteins and suggests that exchange of anterograde cargo can occur during the process of anterograde transport, at least in fused cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig3-v1.jpg)\n\n**Figure 3.:** (A) HeLa cells expressing either ssGFP-FM4-CD8 or ST-RFP (+VSV-G) were mixed and fused. Before fusion, cells were incubated at 20\u00b0C for 2 hr in the presence of CHX (100 \u03bcg/ml) and AP21998 (500 nM) to trigger the release of the cargo from the ER and its accumulation in the Golgi. Both drugs were maintained during the imaging. For the study of the aggregated cargo (staples), AP21988 was removed 30 min before fusion, and cells were imaged in an AP21988-depleted medium at 20\u00b0C. Graphs show quantification of both markers over time for Golgi 1 and 2. Results are representative of three independent experiments. (B) HeLa cells expressing either ssDsred-FM4-hGH or GT-GFP (+VSV-G) were mixed and fused. As for (A) AP21988 was removed to trigger the formation of soluble aggregates within the Golgi. Graphs show quantification of both markers over time for Golgi 1 to 4. Results are representative of two independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** HeLa cell expressing GT-GFP (+VSV-G) and ST-RFP were mixed and fused. When required, nocodazole (2.10\u22123 \u03bcg/ml) was added 2 hr before the fusion and was maintained during the time course of the experiment. Upper panel, fixed cell fixed 1 hr post-fusion. Lower panel, live imaging of inter-Golgi exchange in nocodazole-treated poly-karyon.\n\n### Aggregation of cargo prevents inter-Golgi traffic\n\nThe removal of AP21998 to trigger aggregation of cargo in the Golgi completely abolished the inter-Golgi transport of the membrane-bound cargo CD8lumenal (Figure 3A, Golgi 2), with a 0.9 \u00b1 0.3 (n = 3) fold increase at 30 min post-fusion. Similarly, aggregated soluble FM4-hGH was not exchanged efficiently with GT-GFP labeled acceptor Golgi (Figure 3B, Golgi 4).\n\nThese results are important because they speak to the mechanism of transport between Golgi. Because re-aggregated CD8lumenal permanently resides in the Golgi membranes (Lavieu et al., 2013) and is not transported between Golgi areas, we can rule out that the traffic process somehow results from fragments of Golgi stacks (or entire mini-stacks) that detach by fission from one Golgi area and travel to another nucleus to join its Golgi area. The movement of Golgi mini-stacks over the required distances (approximately 5\u201350 \u03bcm) would be expected to be very slow without motor-based motility. We have extensively tested for the possible requirements of microtubules, which do not appear to be required (Figure 3\u2014figure supplement 1).\n\nSurprisingly, since they are rapidly transported within a single Golgi stack, large-soluble cargo aggregates that concentrate in the dilated rims of cisternae (Volchuk et al., 2000) \u2018are not\u2019 transported between separated Golgi (Figure 3B, lower panel). This suggests that the (unknown) carriers of small cargo are mobile and capable of traveling a long distance, whereas the \u2018carriers\u2019 of large aggregates of soluble cargo are less mobile.\n\n### The ER is not a significant source of transferred protein\n\nWe performed all the experiments in the presence of the protein synthesis inhibitor cycloheximide to block production of new GFP-tagged cargo and to allow the ER to be drained of the vast majority of GFP-tagged cargo present before cells were fused. Nonetheless, in theory some of the cargo or resident protein transported to an exogenous Golgi could have originated from a small amount remaining in the ER, reflecting the established process of ER \u2192 Golgi rather than the novel process of Golgi \u2192 Golgi transport.\n\nTo place rigorous limits on this possibility we performed photo-bleaching experiments. In one approach, we measured the fluorescence recovery of photo-bleached Golgi within single or fused cells treated with H89, a kinase inhibitor that prevents ER export (Aridor and Balch, 2000). In single cells, we anticipate the absence of recovery of photo-bleached Golgi in presence of H89. Within fused cells, we reasoned that H89 should abolish the fluorescence recovery of photo-bleached Golgi only if the ER is the main source of cargo. As described above, one population of cells expressing the GFP-tagged anterograde cargo and a second population containing a RFP-tagged resident protein were mixed and fused in the presence of AP21998 (to maintain the FM-linked cargo in a monomeric state) to allow inter-Golgi exchange of both markers. 30 min post-fusion, the fused cells were treated with H89 for 15 min before and during the FRAP of Golgi of fused cells (Figure 4, Golgi 2). The average recovery at 30 min after-photo-bleaching was 34 \u00b1 9.9% (n = 5). As a control, in the same population of cells that had not in fact fused (Figure 4, Golgi 1) no significant recovery was measured (7.2 \u00b1 6.5%, [n = 4]), validating that ER \u2192 Golgi is abolished under H89 treatment. It is known that H89 also inhibits PKD (Jamora et al., 1999) and prevents exit from the TGN (Muniz et al., 1996). This broad spectrum of action of H89, which blocks ER \u2192 Golgi as well as TGN \u2192 PM, also suggests that inter-Golgi transport occurs exclusively between cis/medial/trans cisternae of separated Golgi.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig4-v1.jpg)\n\n**Figure 4.:** (A) FRAP performed on Golgi within fused or single cells treated with H89 (50 \u03bcM). Top panel, Golgi 1 (green) from a single cell and Golgi 2 (green and red) from fused cells 30 min post-fusion in presence of CHX and AP21988 at 20\u00b0C. Lower panel, 15 min after the H89 treatment (t = 0 min), Golgi 1 and 2 were photobleached and the fluorescence recovery was monitored by confocal video-microscopy. The graph shows the fluorescence intensity over time of the GFP marker within fused cells (di- or polykaryons) or single cells treated with H89. The values are the mean of three to five independent experiments. (B) Sar1H79G does not inhibit inter-Golgi transport of anterograde cargo. HeLa cells expressing either ssDsRed-FM4-CD8 (+VSVG) or YFP-SarH79 G were mixed and fused. Before fusion, cells were incubated at 20\u00b0C for 2 hr in the presence of CHX (100 \u03bcg/ml) and AP21998 (500 nM) to trigger the release of the cargo from the ER and its accumulation in the Golgi. Graphs show quantification of ssDsRed-FM4-CD8 over time at both donor (Golgi 1) and acceptor (Golgi 2) compartments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** HeLa cells expressing (A) Rab7-GFP (+VSV-G) or ssDsRed-FM4-CD8 (+VSV-G), (B) ssGFP-FM4-CD8 (+VSV-G) or Rab5A-RFP (+VSV-G), (C) ssGFP-FM4-CD8 (+VSV-G) or ssDsRed-FM4-CD8 (+VSV-G), were incubated at 20\u00b0C in the presence of AP21998 and CHX for 2 hr, fused and fixed after 15 min. Cells were imaged and the Pearson's correlation was measured for each fused cell using Volocity. (D) Box plots showing the distributions of the calculated Pearson's coefficient for experimental conditions described in A\u2013D. Rab7-GFP and ssDsRed-Fm4-CD8 = 12, ssGFP-FM4-CD8 and Rab5A-RFP n+10, ssGFP-FM4-GFP and ssDsRed-FM4-CD8 n = 36, ssGFP-FM4-CD8 and COPI n = 42. Fused outlined in white, nuclei in blue. Red box shows zoom area in lower right of overlay. Scale bar = 10 \u03bcm, zoom scale bar = 2 \u03bcm.\n\nFinally, to rule out any involvement of the ER, we tested if a Sar1 dominant mutant (Sar1H79G, a GTP-locked mutant) had any effect on inter-Golgi transport of disaggregated CD8. Although this mutant inhibits ER \u2192 Golgi transport and triggers the retention of Golgi resident enzymes within the ER (Ward et al., 2001), Golgi matrix proteins remain associated with membranes within the peri-nuclear area (Ward et al., 2001). This area could serve as an acceptor compartment during inter-Golgi exchange in the cell\u2013cell fusion assay. We fused YFP-Sar1H79G with cells expressing disaggregated-DsRed-CD8 (+VSVG) accumulated in the Golgi (using the 20\u00b0C temperature block). DsRed-CD8, initially labeling the donor Golgi (Golgi 1, Figure 4B) progressively labeled the peri-nuclear area (presumably the Golgi remnant) of the acceptor cell that initially expressed the Sar1 mutant. The rate of the fluorescence increase in the acceptor cell was not significantly different from the one reported in the previous experiments performed in the absence of the Sar1 mutant (Figure 3), and was directly proportional to the decrease of the fluorescence at the donor Golgi, as expected if the donor Golgi is the only source of fluorescence within a freshly formed dikaryons. Note that the Sar1 mutant spreading into the dikaryons showed a peri-nuclear labeling reinforcement (Figure 4B, arrow) consistent with the localization (near the cis-Golgi/ERGIC) previously reported for Sar1 and GFP-Sar1H79 G (Kuge et al., 1994; Venditti et al., 2012).\n\nWe concluded that the contribution of ER (if any) during the inter-Golgi transport assay could only be minor.\n\nAnother possibility is that inter-Golgi transport of anterograde cargo is mediated via indirect transit through the endosomal pathway. To assess this possibility, we evaluated within fused cells the degree of co-localization between the anterograde cargo and early/late endosomal markers. When cell expressing small GFP-CD8lumenal were fused for 15 min with cells expressing the early ensosomal marker Rab5A-RFP, no co-localization was observed by confocal microscopy, the two signals being clearly separated even when observed at high magnification (Figure 4\u2014figure supplement 1A, red inset). Similarly, the late endosomal marker Rab7-GFP was clearly distinguishable from DsRed\u2013CD8lumenal. (Figure 4\u2014figure supplement 1B). As a positive control, fused cells expressing DsRed\u2013CD8 and GFP\u2013CD8lumenal showed a strong co-localization of both signals (Figure 4\u2014figure supplement 1C). When quantified, the average Pearson\u2019s coefficient for the positive control was >0.8, whereas the coefficient for both endosomal markers samples were <0.4, synonymous of poor to no co-localization. These results suggest that endosomes are not involved in inter-Golgi trafficking.\n\n### Transient transport intermediates pass between Golgi populations\n\nIn order to establish the existence of putative transport intermediates carrying markers between Golgi populations during the exchange process, we performed two types of photo-bleaching experiments in fused cells expressing disaggregated CD8lumenal accumulated in the Golgi.\n\nIn the first type of experiment, photo-bleaching served to lower the cytoplasmic background during exchange allowing the presumed intermediates to be imaged in transit between two Golgi areas. To simplify the analysis, we chose only heterokaryons containing only two cells including the (initially non-fluorescent) acceptor Golgi. At 30 min post-fusion, the entire volume of the heterokaryon was photo-bleached, sparing only its donor Golgi. Thus, the unbleached donor Golgi (Figure 5A, Golgi 1) is the only potential source of fluorescent cargo for trafficking to the acceptor Golgi. As exchange continues, the fluorescence of the donor Golgi should decrease and the fluorescence of the acceptor Golgi should correspondingly increase. During this process transport intermediates carrying the fluorescent cargo between the two Golgi, if such exist, should in principle be present in between the two Golgi areas.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig5-v1.jpg)\n\n**Figure 5.:** (A) 30 min post fusion, the entire volume a dikaryon (ER and acceptor Golgi 2) was photobleached except for the Golgi 1 that remains the only source of fluorescence. Small diffusing fluorescent dots (gray arrow heads) were observed throughout the cytoplasm of fused cells. The graph shows the intensity of both Golgi (acceptor in blue and donor in red). Values are the mean of three independent experiments. (B) Cells expressing ssGFP-FM4-CD8 and ST-RFP (+VSV-G) were incubated at 20\u00b0C for 2 hr in the presence of CHX (100 \u00b5g/ml) and AP21998 (500 nM) to trigger the release of the cargo from the ER and its accumulation in the Golgi. Both drugs were maintained during the imaging. (1) Cells were fused and imaged 30 min post fusion. (2) Entire cell volume (Inter-Golgi space) was bleached, except the two Golgi and was allowed to (3) recover for 30 min. (4) Donor and acceptor Golgis were bleached (dashed white boxes) and allowed to (5) recover for 30 min. Red box indicates zoom area (ssGFP-FM4-CD8 in green and ST-RFP in red). Images are representative of three independent experiments. Images displayed are single slices of z-stacks (21 one \u00b5m slices) acquired. LUTs displayed below each grayscale image. Graph, quantification of total fluorescence intensity in region outside of the Golgis (blue line) and in Golgi areas (red line). These values represent the mean of three independent experiments. Fluorescence intensity for each timepoint was calculated over entire z-stack.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cells expressing either ssGFP-FM4-CD8 or ARF1Q71L\u2013DsRed (+VSV-G) were incubated at 20\u00b0C for 2 hr in the presence of CHX (100 \u00b5g/ml) and AP21998 (500 nM) to trigger the release of the cargo from the ER and its accumulation in the Golgi. Both drugs were maintained during the imaging. (1) Cells were fused and imaged 30 min post fusion. CD8-GFP remained at the Golgi 2 and 3 (donor Golgi) whereas ARF1 bound each Golgi within the polykaryon (including Golgi 1, the theoretical acceptor Golgi for the cargo). (2) Entire cell volume (Inter-Golgi space) was bleached, except the two Golgi and was allowed to (3) recover for 30 min. (4) Donor and acceptor Golgis were bleached (dashed white boxes) and allowed to (5) recover for 30 min. Graph shows quantification of total fluorescence intensity in region outside of the Golgis (blue line) and in Golgi areas (red line) compare to control (when ARF1 mutant is absent). Fluorescence intensity for each timepoint was calculated over entire z-stack.\n\n30 min after the photo-bleaching, a 23.9 \u00b1 6.4% (n = 3) fluorescence recovery of the pre-bleaching fluorescence was observed at the acceptor Golgi (consistent with the 34% previously measured in the H89-treated fused cells) accompanied by a 24.8 \u00b1 9.03% (n = 3) decrease in fluorescence of the donor Golgi. This independently confirms that the donor Golgi is a sufficient source for inter-Golgi exchange and established the pre-conditions to look for transport intermediates.\n\nIn fact, during the exchange period we readily observed numerous fluorescent \u201cdots\u201d present in the intervening cytoplasm (Figure 5A, gray arrows). We estimate that there may be as many as \u223c20,000 of such dots per heterokaryon over 30 min considering that we monitored \u223c6 dots/frame (with 1 frame/5 s over 30 min, in a 500 nm focal plane within HeLa cells that are \u223c5 \u03bcm thick). These particles were not easily distinguishable above background fluorescence when the inter-Golgi assay was performed without prior photo-bleaching, probably because the background signal was is too high.\n\nTo further test if fluorescently-labeled cargo present in the dots is a bona fide intermediate that contain cargo in transit and if they carry sufficient fluorescent cargo to account for the bulk of exchanged cargo, we performed a sequential \u2018double FRAP\u2019 experiment. This was performed by spinning-disk microscopy to track all the fluorescent objects within the entire volume of a dikaryon. First, 30 min post-fusion, we photo-bleached the entire volume of the fused cell (including the ER and the diffusing fluorescent dots [Figure 5B panel 2]) except the two Golgi, which remained the only source of fluorescence. As described above, fluorescent dots that emanated from the Golgi rapidly appeared, increased in number and spread throughout the cytoplasm, resulting in an increase of the fluorescence intensity measured in the inter-Golgi space (Figure 5B panel 3, Graph). Then, after a 30 min recovery period, a second photo-bleaching was performed on the two Golgi (panel 4), the only source of fluorescence being now exclusively provided by the freshly formed cytoplasmic dots. We reasoned that if these fluorescent dots are truly the transport intermediates, then they should be able to repopulate the photo-bleached Golgi. After 30 min recovery, the gain of fluorescence observed at the Golgi (+56 \u00b1 14% of the total fluorescence initially emanating from the dots before the second photo-bleaching) was very similar to the loss (\u221263 \u00b1 14%) of the fluorescence intensity monitored in the inter-Golgi space (and emanating from the dots) (Graph, Figure 5B). The subtle difference (around 7%) between the loss (in the Golgi inter-space) of and the gain (at the Golgi) of fluorescence that suggests a loss of fluorescent material during the experiment, could be fairly attributed to moderate photo-bleaching that usually occurs during the time course of our imaging. Note that in these experiments, ST-RFP was coexpressed with GFP\u2013CD8lumenal, and allowed for rigorous identification of the Golgi area and to measure the GFP fluorescence recovery (Figure 5B, red squares).\n\nThese results strongly suggest that the Golgi-derived small fluorescent dots are the diffusible transport intermediates responsible for the inter-Golgi transport.\n\n### Inter-Golgi transport is ARF1 and \u03b5\u2212COP dependent\n\nOne possibility is that the small diffusible transport intermediates, which we visualize by confocal microscopy as fluorescent dots, are COPI vesicles, which are known to copiously bud from Golgi membranes and contain both anterograde and retrograde cargoes. The small GTPase ARF1 promotes vesicle budding from various donor membranes, including Golgi membranes (Serafini et al., 1991a; Bremser et al., 1999). To test the possible requirement of ARF1 in inter-Golgi transport, we introduced into the fused cell a dominant-interfering mutant of ARF1 (ARF1Q71L) that can bind but not hydrolyze GTP, thereby accumulating coated COPI vesicles (Tanigawa et al., 1993). To do this we included a third cell population expressing the DsRed\u2013ARF1Q71L mutant, with cells co-expressing VSV-G and GT-CFP and cells expressing GT-YFP.\n\nAfter this three-way fusion, confocal video-microcopy revealed that ARF1Q71L\u2013DsRed spread effectively throughout the polykaryons and localized to exogenous Golgi membranes (Figure 6A, Golgi 1 and 2). However, inter-Golgi exchange of yellow and cyan-labeled GT no longer took place. Each marker remained within its parental Golgi even 1 hr after fusion. This suggests that the GTPase activity of ARF1 is required for inter-Golgi exchange of resident Golgi proteins.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig6-v1.jpg)\n\n**Figure 6.:** (A) Mixed and fused HeLa cells expressing GT-CFP (+VSV-G), GT-YFP (+VSV-G) or ARF1Q71L\u2013DsRed, in presence of CHX. Graphs show the fluorescence intensity over time for each fluorescent marker within Golgi 1 and 2. Results are representative of two independent experiments. (B) Mixed and fused HeLa cells expressing either ssGFP-FM4-CD8 (+VSV-G) or ARF1Q71L\u2013DsRed in the presence of AP21988 and CHX at 20\u00b0C. The graphs show the fluorescence intensity overtime of each marker for each Golgi. Results are representative of three different experiments. (C) Mixed and fused WT-CHO cells or LdlF-CHO cells expressing GT-GFP or ST-RFP (+VSV-G), in presence of CHX. After fusion, cells were incubated at 39\u00b0C for 15 or 60 min, fixed, and monitored by confocal microscopy. Graph shows the relative Pearson\u2019s correlation coefficients for each cells type at each time point. Values are the mean of three independent experiments, with 10\u201315 polykaryons being analyzed for each condition. Pictures are representative of three experiments and illustrate cells at 1-hr post fusion.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Mixed and fused HeLa cells expressing either ssDsRed-FM4-CD8 (+VSV-G) or ARF1WT-GFP in the presence of AP21988 and CHX at 20\u00b0C. The graphs show the fluorescence intensity overtime of each marker for each Golgi.\n\nTo test the possible ARF1 dependence of inter-Golgi transport of anterograde cargo, we mixed and fused two cell populations, one expressing the disaggregated GFP\u2013CD8lumenal cargo within their Golgi, the other expressing DsRed\u2013ARF1Q71L. Once again, the ARF1 mutant diffused throughout the polykaryon and bound to the exogenous Golgi membranes (Figure 6B, Golgi 1) and prevented inter-Golgi transport of this small anterograde cargo, which remained in its original Golgi. Remarkably, when the ARF1 mutant is replaced with ARF1WT, inter-Golgi transport of the cargo is unaltered (Figure 6\u2014figure supplement 1), demonstrating that the transport inhibition was specific to ARF1 mutant.\n\nTo test if the dots (transport intermediates) are ARF GTPase-dependent, we performed sequential double FRAP experiments in a heterokaryon resulting from the fusion between cells containing disaggregated GFP\u2013CD8lumenal cargo accumulated in the Golgi and cells that contained DsRed\u2013ARF1Q71L (Figure 5\u2014figure supplement 1). As shown above (Figure 6), GFP\u2013CD8 remained at the donor Golgi 30 min\u2013post fusion, whereas the ARF1 mutant decorated each Golgi of the polykaryon. After the first photo-bleaching, virtually none of the GFP-fluorescent dots that were normally observed (Figure 5B) could be visualized when ARF1-GTP locked mutant was present (Figure 5\u2014figure supplement 1). Consistent with this lack of repopulation of transport intermediates in the inter-Golgi zone, the GFP-fluorescence recovery in that zone was less than 5% of the recovery measured in polykaryons lacking the ARF1 mutant (Figure 5B and Figure 5\u2014figure supplement 1). As expected, and consistent with the absence of production of transport intermediates, no significant GFP-fluorescence recovery was observed after the second round of photo-bleaching at the Golgi area (Figure 5\u2014figure supplement 1). Because of the lack of resolution, we do not know if in the presence of the ARF1-locked mutant, transport intermediates were actually produced but remained in the vicinity of the donor Golgi in a coated form, or if the ARF1 mutant prevented complete formation of COPI vesicles. In any case, this result suggests that the GTPase activity of ARF1 involved in the formation of COPI vesicles is required for generation of diffusible transport intermediates that are responsible for inter-Golgi exchange.\n\nTo test the possible requirement for coatomer, we examined inter-Golgi exchange of Golgi resident proteins (ST-RFP and GT-GFP) at the restrictive temperature of 39\u00b0C within fused wild-type CHO cells (WT) or Ldl-F mutant cells, a well characterized mutant that is thermo-sensitive for the \u03b5\u2212COP subunit of the coatomer (Guo et al., 1994). This process could not be monitored in real time at this temperature, because our microscope was not equipped with an appropriate temperature-controlled chamber. Therefore, cells were fixed 15 min and 60 min after fusion to determine if inter-Golgi exchange had occurred. To estimate the degree of colocalization of the two Golgi markers, we calculated the Pearson\u2019s coefficient for each picture (Figure 6C). At 60 min post-fusion, the average Pearson\u2019s coefficient in fused WT cells was 0.69 \u00b1 0.11 (n = 30), indicative of strong co-localization. In contrast, in fused mutant Ldl-F cells, the negative value of the Pearson\u2019s coefficient (\u22120.29 \u00b1 0.09 [n = 30]) illustrated the absence of significant co-localization, indicating that \u03b5-COP is required for the inter-Golgi transport of resident proteins.\n\nAll the previous experiments with the anterograde cargo were performed using a 20\u00b0C temperature block to retain the cargo within the Golgi. Unfortunately, this is not possible in the mutant CHO cells if we wish to retain the restriction on coatomer function to test for a requirement. When analogous experiments were performed with the CHO cells to assess the requirement of the coatomer, the 39\u00b0C temperature shift of course triggers rapid exit of the anterograde cargo from the Golgi to the plasma membrane. Therefore, we could not perform a suitable control to rigorously validate the absence of inter-Golgi transport of anterograde cargo.\n\nOur results show that inter-Golgi transport requires both ARF1 and COPI, suggesting that COPI vesicles are the transport intermediates.\n\n### Inter-Golgi transport intermediates are the size of COPI vesicles and contain coatomer\n\nTo further test the possibility that the putative carriers are COPI vesicles, we used STED microscopy to pinpoint their size and their content at \u223c80 nm resolution (Pellett et al., 2011). In these experiments we used a primary monoclonal antibody against \u03b2-COP and a secondary antibody coupled to the STED compatible dye, ATTO647, to identify the putative COPI coated carrier. We fused donor cells that expressed both a tagged resident protein (ST-RFP) and small anterograde membrane cargo (GFP\u2013CD8lumenal in presence of AP21998) with untransfected acceptor cells. 15 min after fusion, when the markers were in mid-transit to the acceptor Golgi, we fixed the samples and performed immunofluorescence against \u03b2-COP to label COPI containing membranes. This results in labeling of the Golgi itself and the dots/putative carriers (Figure 7 and Figure 7\u2014figure supplement 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig7-v1.jpg)\n\n**Figure 7.:** (A) In vitro prepared COPI vesicles labeled with Alexa488 were attached to glass coverslips. Immunofluorescence against COPI was performed, and samples were imaged by both confocal and STED microscopy. The size of COPI vesicles was determined by STED microscopy using a custom Matlab routine by fitting to a 2D Lorenztian function and confocal images were fit to a 2D Gaussian function. Graph, size distribution of 64 in vitro COPI vesicles fit with a 2D Lorentzian function. The mean is 114 nm. (B) HeLa cells expressing ssGFP-FM4-CD8, ST-RFP and VSV-G were incubated at 20\u00b0C in the presence of AP21998 and CHX for 2 hr, fused, and fixed after 30 min. Immunofluorescence was performed against \u03b2-COP to label all the Golgi related structures. COPI like transport intermediates imaged by STED microscopy were identified based on size and the contents were evaluated. Numbered boxes illustrating types of cargo containing COPI like intermediates. Red squares, different objects at low and high magnification. The sizes of the intermediates were determined using a 2D Lorentzian function. Graph (C) shows the size distribution of 179 carriers fit with a 2D Lorentzian function, The mean is 128 nm. Graph (D) shows the distribution of COPI spots positive for either ssGFP-FM4-CD8 cargo or ST-RFP, or both (gray columns). As a positive control we used cells co-expressing ssRFP-FM4-CD8 instead of ST-RFP (white columns). Control: 48 cells, 138 spots analyzed; Experimental: 31 cells, 179 spots analyzed. Results are representative of two independent experiments, each one being duplicated.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Cells expressing CD8-GFP-FM4, ST-RFP and VSV-G were incubated at 20\u00b0C in the presence of AP21998 and CHX for 2 hr, fused, and fixed after 30 min. Immunofluorescence was performed against \u03b2-COP to label all the Golgi related structures. The CD8-GFP-FM4/\u03b2-COP and ST-RFP/\u03b2-COP co-localizations are highlighted with a white mask generated with ImageJ. Red squares, different objects at low and high magnification. Results are representative of three different experiments. (B) Cells expressing CD8-GFP-FM4, ST RFP and VSV-G were incubated at 20\u00b0C in presence of AP21998 for 2 hr, fused and fixed 30 min after. Immunofluorescence was performed against sec31 to label COPII related structures (COPII vesicle and ER exit sites). The CD8-GFP-FM4/sec31 and ST-RFP/sec31 co-localizations are highlighted with a white mask generated with ImageJ. Due to the resolution limit, the ER exit sites that are at the vicinity of the Golgi appear as co-localizing with the Golgi. However, virtually none of the small particles carrying the cargoes, which are distant from the donor Golgi, were positive for sec31. The red squares illustrated the different objects at low and high magnification. Results are representative of two different experiments.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Vesicles and tubules with different dimensions simulated in a set of different 3D orientations to represent an isotropic distribution (supplementary method section). Pictures illustrate the object according to their different 3D orientation. For both in vitro COPI vesicles and intracellular COPI objects (imaged in Figure 7), the size was determined by STED microscopy using a custom Matlab routine by fitting to a 2D Lorenztian function and the radial symmetry (major/minus axis ratio) was calculated to assess the degree of symmetry of the objects. The simulated objects were analyzed with the same custom-written MATLAB routine used for the experimental data.\n\nAs a standard for comparison with the fluorescent dots found between Golgi, we measured the size of in vitro COPI vesicles by STED microscopy. We determined their mean diameter (Figure 7A) to be 114 \u00b1 11 nm n = 64, consistent with the outer diameter reported from electron microscopy (Orci et al., 1986). We then measured the size of the \u03b2-COP positive transport intermediates (dots) within fused cells by STED microscopy (Figure 7B). The mean size of the dots containing COPI was 126 \u00b1 15 nm, n = 181, and approximately the same size as the in vitro vesicles. Note that the vast majority (around 90%) of the dots containing either the anterograde cargo or the Golgi resident enzymes were negative for the COPI staining, consistent with the predictions of the vesicular model. Interestingly these uncoated structures showed a slightly reduced diameter 105 \u00b1 13 nm, n=60, which may reflect the absence of coatomer. Analysis of the shape (defined as the length of the major axis/length of the minor axis) of the transport intermediates and the in vitro carriers revealed similar radial symmetry (Figure 7\u2014figure supplement 2). However, according to our 3D modeling, both the in vivo putative transport intermediates and the in vitro COPI vesicles were not as symmetrical as modeled vesicles (Figure 7\u2014figure supplement 2). This could be attributed to variation generated by the length and the spatial orientation of the antibodies (both primary and secondary) that bound heterogeneously to the coatomer. This subtle asymmetry fit with a recent high-resolution 3D study of in vitro COPI vesicles, which showed variable shapes of the vesicles, as well as a non-homogenous surface distribution of the coatomer (Faini et al., 2012). Finally, our shape analysis and 3D modeling clearly establish that the COPI positive transport intermediates are not long tubules (30 nm \u00d7 300 nm), which show a significantly higher degree of asymmetry. However, it is impossible to rule out from such modeling that the carrier is a hypothetical, partially COPI coated small tubule. With a resolution of 80 nm, a 30 nm diameter tubule that is 150 nm long is indistinguishable from a 110 nm vesicle (as confirmed by simulations of STED images of vesicles and tubules; Figure 7\u2014figure supplement 2).\n\nAre the anterograde cargo and the resident protein cargo present in the same or different COPI vesicles? Quantification using size filtering based on the in vitro COPI vesicles results (size < 150 nm) showed the following heterogeneous distribution when GFP\u2013CD8lumenal was co-expressed with ST-RFP (Figure 7B): 66 \u00b1 20% of the COPI-positive objects carried the anterograde cargo alone, 20 \u00b1 11% carried the retrograde cargo alone and 15 \u00b1 8 % carried both (Figure 7B), consistent with the three populations observed by confocal microscopy (Figure 7\u2014figure supplement 1). When the same anterograde cargoes tagged with either green or red fluorophores were co-expressed, 87 \u00b1 3% of the objects carried both cargoes, as expected for a co-localization positive control. None of the dots (again, containing one or both markers) could be stained with an antibody to the COPII coat subunit SEC31 (Figure 7\u2014figure supplement 1), yet again ruling out again any involvement of ER export.\n\nOur inter-Golgi transport assay has two main limitations.\n\nFirst, all the experiments presented in this study were performed at 20\u00b0C, and one could argue that this non-physiological temperature could create missorting because of accumulation of over-expressed cargo at the TGN. This so-called 20\u00b0C block has never been reported to prevent intra-Golgi trafficking (neither anterograde or retrograde). Instead it has been shown that 20\u00b0C slows-down the trafficking, and results in retaining a large portion of the anterograde cargo within the trans-Golgi, with a significant amount remaining in the upstream cisternae that could serve as a back-up for inter-transport (Van Deurs et al., 1988). However, to rule out that our results were reflecting non-specific sorting of the anterograde cargo at the TGN, we co-expressed the anterograde cargo with a dominant interfering mutant of the protein-Kinase D (PKD(DI)), known to block the TGN exit of anterograde cargo (Baron and Malhotra, 2002; Figure 8C). Cells expressing CD8-GFP and PKD(DI) were pre-incubated at 37\u00b0C for 15 min in the presence of AP91988 and CHX, to allow for Golgi targeting of the cargo. As expected, we did not observe any leak to the PM. These cells were fused with other cells expressing DsRed-tagged resident enzyme and PKD(DI), and the inter-Golgi transport was recorded at 32\u00b0C for 1 hr. The anterograde cargo was efficiently transported to the acceptor Golgi (Figure 8A, Golgi 1 and Graph) that originally contained only the resident enzyme. Note that 1 hr post-fusion, cells were fixed and processed for immunofluorescence against GST-PKD(DI) to rigorously assess for the presence of the PKD mutant within the very same polykarion (Figure 8B). This result suggests that inter-Golgi transport is not due to a missorting of over-expressed cargo at the TGN.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01296/elife-01296-fig8-v1.jpg)\n\n**Figure 8.:** (A) HeLa cells expressing ss-GFP-FM4-CD8 and GST-PKD(DI) were mixed and fused with cells expressing ST-RFP, GST-PKD(DI) and VSV-G. Prior to fusion, cells were incubated at 37\u00b0C for 15 min in the presence of the disaggregating drug and CHX. Cells were monitored by video confocal microscopy at 32\u00b0C in the presence of the disaggregating drug and CHX. Graphs show quantification of both markers over time for Golgi 1. Results are representative of two independent experiments. (B) 1 hr post-fusion, cells were fixed and prepared for immunofluorescence against GST to assess the presence of the PKD(DI). Note that the confocal micrograph showed the very same field of cells (shown in A) after fixation. (C) PKD(DI) inhibits plasma membrane targeting of ss-GFP-FM4-CD8. HeLa cells expressing ss-GFP-FM4-CD8 alone (upper panel) or with GST-PKD(DI) (lower panel) were incubated for 1 hr at 37\u00b0C in the presence of the disaggregating drug. Non-permeabilized cells were incubated on ice and incubated with an anti-GFP antibody (detected with a secondary antibody labeled with Alexa-546) to assess for cell surface exposure of ss-GFP-FM4-CD8. Then, cells were fixed, permeabilized and processed for immunofluorescecne against GST (using a secondary antibody labeled with Atto-647).\n\nThe second limitation is the over-expression of the cargoes. It is possible that we artificially increased the probability of loading the highly concentrated cargo within the carriers. For instance, the excess of anterograde cargo localized in the trans-Golgi may now be transported to the cis-Golgi of the acceptor Golgi through a retrograde pathway. On the other hand, over-expression of the resident enzymes may alter their proper localization, resulting now in an anterograde transport of these resident proteins when they are in large excess. We cannot rule out that these phenomena happened to some extent in our assay. However, if these assumptions are correct, the two types of cargo should always be carried within the same transport intermediates when the cargoes are released from the same donor Golgi. Our results clearly establish that this in not the case (Figure 7B). Another interpretation would be to consider that the inter-Golgi transport intermediates would be COPI vesicles, which contain exclusively anterograde cargo in \u223c60% of the cases. \u223c20% would be COPI vesicles containing only Golgi resident enzymes that are retrograde-directed, needed in any model to maintain the steady-state distribution of resident Golgi enzymes in a dynamic equilibrium. It is tempting to suggest that the \u223c20% of COPI vesicles containing both anterograde cargo and resident enzymes would be anterograde-directed, contributing to the steady-state distribution of resident enzymes by forward flow. As is often the case, the truth may lie in between these two most extreme interpretations.\n\n## Discussion\n\nThis report describes a study specifically intended to test the predictions of the vesicular transport model. Our reasoning was that only mobile carriers, such as COPI vesicles, should be able to travel the long distance between well-separated Golgi of fused cells. Our results clearly establish that only small cargoes (anterograde or resident proteins) are exchanged, showing that inter-Golgi carriers are capable of size-filtration, and that small cargo transport must utilize a distributive mechanism different from the mechanism used by large soluble aggregates. More than half of the carriers exclusively contained anterograde cargo, suggesting sub-populations of COPI vesicles as previously documented by immuno-EM (Orci et al., 1997).\n\nBecause the imaged carriers contained coatomer, are indistinguishable in size from authentic COPI vesicles, and require both coatomer and ARF1 to function, the simplest interpretation is that the bulk of inter-Golgi transport of small cargo is mediated by COPI vesicles. Certainly, the double photo-bleaching experiments show that the bulk of the cargo flux between Golgi is mediated by fluorescent \u2018dots\u2019 that function as carriers. However, we cannot strictly rule out that the genetic effects of ARF1 and \u03b5\u2212COP mutations on inter-Golgi transport are somehow an indirect coincidence or that the carrier is some kind of very short tubule that is partially coated and capable of fission (at one Golgi) and fusion (at another). Correlative electron microscope imaging of the fluorescent dots, including immunolabeling of coatomer, would theoretically be needed to address this distinction, which is probably semantic in any case since many COPI vesicles have uncoated portions (Faini et al., 2012). Because the dots/COPI vesicles are highly dilute in cytoplasm, the rarity of finding such vesicles in single EM sections together with the inherent inefficiency of immunolabeling at the EM level, makes such an effort quixotic at best. Although we cannot completely rule out the possibility that exogenous glycosyltransferases exceed the capacity of the Golgi retention machinery and thus begin to behave like soluble cargoes, the relative abundance of COPI containing carriers harboring Golgi resident glycosyltransferase (\u223c40% of the total) suggests that these proteins are engaged in a dynamic equilibrium of anterograde and retrograde flow to maintain their differential steady-state cis-trans distributions. Their presence in transport vesicles is a required feature of the mobile cisterna model, as incorporated in the concept of cisternal \u2018maturation\u2019 (Glick and Malhotra, 1998), but may also be important for establishing and maintaining their cis-trans distributions by bi-directional transport (Pelham and Rothman, 2000) among static cisternae. We note that previous reports on the prevalence of glycosyl-transferases in COPI vesicles have yielded variable results (Orci et al., 2000; Martinez-Menarguez et al., 2001; Cosson et al., 2002).\n\nThe present results naturally suggest that transport of small cargo is bi-directional and mediated by COPI-coated vesicles. The data suggest that COPI vesicles traffic both secretory cargo and steady-state Golgi resident enzymes among stacked cisternae that are stationary over many hours in non-dividing cells. Further, they suggest that large soluble cargo are transported across the Golgi by a specialized mechanism that involves carriers which remain closely linked to the stack as the progress across it. While these inferences are as strong as current imaging technology permits, super-resolution methods are rapidly advancing and it will be important to further test these models as it becomes possible to visualize the content and movements of individual carriers in real time in living cells.\n\n## Materials and methods\n\n### Plasmids\n\nGT-GFP and ST-RFP were a gift from J Roher (Schaub et al., 2006). The VSV-G-encoding vector was provided by JK Rose (Florkiewicz and Rose, 1984). ss-GFP-FM4-CD8 (CD8lumenal)was generated by sequential insertion of GFP and CD8 encoding sequences into a pC4-FM4 backbone vector (ARIAD), using XbaI/SpeI compatibility, and BamH1 restriction site. CD8-GFP was amplified from pC4-CD8-GFP as previously described (Lavieu et al., 2010). ss-DsRed-FM4-hGH was created by adding DsRed into pC4S1-FM4-FCS-hGH (ARIAD) using XbaI/SpeI compatibility. ARF1Q71L was cleaved from ARF1Q71L\u2013GFP, a gift from G Romero (Vasudevan et al., 1998) and inserted into a mDsRed vector (Clontech). GST tagged PKD-(DI) was a gift from Vivek Malhotra. GT-CFP and GT-YFP and YFP-Sar1H79 G (Quintero et al., 2010) were a gift from C Giraudo. RAb5A-RFP and RAb7-GFP were a gift from P De Camilli.\n\n### Cell culture and transfection\n\nHeLa cells were maintained at 37\u00b0C in 5% CO2 in DMEM (Gibco, Grand Island, NY) supplemented with 10% FBS (Gibco). CHO cells were maintained at 34\u00b0C in 5% CO2 in F-12 Glutamax (Gibco) supplemented with 10% FBS. Cells were transfected using lipofectamine 2000 (Invitrogen, Grand Island, NY) as recommended by the manufacturer. When cells were co-transfected (VSV-G/other fluorescent-tagged protein), we used a 3/1 ratio.\n\n### Cell fusion\n\nCells were plated at 6 \u00d7 104 (HeLa) or 1 \u00d7 105 (CHO) cells/well in 24-well plates. Cells were transfected with the plasmids of interest for 6 hr. Transfection media was removed, and cells were washed with complete culture media prior to being detached (trypsin 0.05% 2 min) and mixed overnight in glass bottom microwell dishes (HeLa cells), or on coverslips coated with collagen type I (CHO cells).\n\n2 hr before fusion, HeLa cells were incubated at 20\u00b0C in HBSS (Gibco) supplemented with 10% FBS and 100 \u03bcg/ml CHX (Sigma, St. Louis, MO) (imaging media). CHO cells were kept in F12 media containing 10% FBS and 100 \u03bcg/ml CHX. For live imaging, HeLa cells were incubated on the stage of the microscope for 1 min in 37\u00b0C pre-warmed fusion buffer (10 mM Na2HPO4, 10 mM NaH2PO4, 150 mM NaCl, 10 mM 2-(Nmorpholino) ethanesulfonic acid [MES], 10 mM N-2-hydroxyethylpiperazine-N9-2-ethanesulfonic acid [HEPES], pH 5). Subsequently, the fusion buffer was replaced by the imaging media. CHO cells were incubated 1 min at 37\u00b0C in the fusion buffer before being incubated at 39\u00b0C with pre-warmed complete F12 media. Unless mentioned otherwise, all the experiments were performed in the presence of 100 \u03bcg/ml CHX at 20\u00b0C.\n\n### Immunofluorescence and confocal microscopy\n\nHeLa cells expressing CD8-GFP-FM4, ST-RFP, and VSV-G were fused with untransfected cells. Cells were fixed with PFA 4%, permeabilized with 0.1% Triton X100, and incubated with an anti-\u03b2\u2212COP antibody (1/1000, EAGE clone, rabbit) or an anti-hsec31 antibody (1/1000, rabbit; Shugrue et al., 1999), and an anti-rabbit Alexa-633 conjugated secondary antibody (1/2000; Invitrogen). GST antibody was purchase from Abcam, Cambridge, MA. Cells were then processed for confocal microscopy imaging, which was performed in multi-tracking mode on either a Zeiss LSM510 or a Zeiss LSM510 META. Images were analyzed using Zeiss LSM510 software or using ImageJ (co-localization finder plugin).\n\n### Immunofluorescence and STED microscopy\n\nCells were fixed with 4% paraformaldehyde for 15 min at room temperature, permeabilized for 3 min with 0.3% NP40 and 0.05% Triton-X, blocked with 10% normal goat serum for 1 hr at room temperature and incubated with primary antibodies overnight at 4\u00b0C. Cells were incubated with secondary antibodies for 1 hr at room temperature and mounted in mowiol. All antibodies were used at a 1:1000 dilution: \u03b1-COPI, CM1A10, \u03b1-RFP rabbit polyclonal (Invitrogen); \u03b1-mouse ATTO647N (Active Motif, Carlsbad, CA) and \u03b1-rabbit Alexa543 (Invitrogen). STED images were obtained using a commercial Leica TCS STED microscope (Pellett et al., 2011).\n\n### Size measurement method\n\nThe size of in vitro COPI vesicles were measured using a custom MATLAB routine by fitting STED images to a 2D Lorenztian function and confocal data to a 2D Gaussian function.\n\n### Co-localization method\n\nFor each channel, 100 background regions of interest were randomly selected A normal distribution of the brightest pixel in each ROI was created and the mean and standard deviation was calculated. A thresholding value of the mean plus one standard deviation was used as a cutoff. Using Volocity, COPI positive transport intermediates were identified based on the size data from in vitro generated COPI vesicles. Intermediates identified were evaluated for the presence of GFP or RFP signal above the calculated thresholding value. Only intermediates positive for another marker were included in the STED image simulations.\n\nWe simulated vesicles of 110-nm diameter and tubules of 30 nm diameter and 80, 110, 150 and 300 nm lengths on a three-dimensional grid of 2003 cubic voxels of 5 nm size with the software Imspector (written by Dr Andreas Schoenle, Max Planck Institute for Biophysical Chemistry, Goettingen). All structures were assumed to be surface-labeled, that is to carry signal only on a shell defined by the delimiters of the structures \u00b15 nm. The tubules were simulated in a set of different orientations to represent an isotropic distribution. Given that the size of the organelles is significantly smaller than the axial resolution of our STED microscope (maximum 300 nm vs \u223c700 nm), the rotated structures were projected into the focal plane before convolving them with a radially symmetric Lorentzian-shaped STED PSF with 80 nm full-width at half maximum which matches to the experimental performance of the used STED microscope. Poisson-distributed background and signal shot noise was applied and adjusted to experimentally observed signal-to-noise levels creating 150 structures of each shape. This data was analyzed with the same custom-written MATLAB routine used for the experimental data analysis.\n",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "7d3e6ac4-406a-4af6-86e1-41135c6182bb",
+      "submission_id": "aa97975e-ce51-47ff-b6b0-5d61cd61d2ba",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vivek Malhotra, Center for Genomic Regulation , Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01296.017](https://doi.org/10.7554/eLife.01296.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: the authors performed additional work to address the concerns raised in the first round of peer review, shown below, and submitted again for further consideration.]\n\nThank you for sending your manuscript entitled \u201cInter-Golgi Transport Mediated by COPI-containing Vesicles Carrying Small Anterograde Cargo and Golgi Resident Enzymes\u201d for consideration at eLife. Your article has been reviewed by 3 experts, one of whom is a member of our Board of Reviewing Editors. The reviewers were impressed with the development of a new approach to address the ongoing controversy on the mechanism of cargo transport across the Golgi stack. Your light microscopy based analysis suggests the potential involvement of COPI or related carriers in the anterograde transport of cargo. However, the reviewers felt the data was not conclusive to merit publication at this time. The reviewers had two major concerns:\n\n1) The data are derived from the experiments performed at 20\u00b0C. This is non-physiological and could create missorting because of accumulation of over-expressed cargo at the TGN. You will have to find a way out of this situation and perform the experiments at 32\u201337\u00b0C.\n\n2) The data do not rule out the possibility that the intermediates (COPI carriers?) being visualized are en route to or from another donor or acceptor compartment.\n\nWe realize that addressing these two issues experimentally will require considerable effort. But until the identity of the visualized vesicles is determined, we feel your manuscript is currently not suitable for further consideration at eLife.\n",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aa941806-c663-42ef-93e9-068669e5d115",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C1",
+      "claim": "GT-GFP labeled Golgi progressively acquired ST-RFP marker with an average fluorescence intensity increase of 10.2 \u00b1 3.7 (n = 5) at 30 min post-fusion at 20\u00b0C",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the Golgi originally containing the GT-GFP marker progressively acquired the ST-RFP marker (Figure 2, Golgi 3 and 4), the average fluorescence intensity of such Golgi areas increasing by a factor 10.2 \u00b1 3.7 (n = 5) at 30 min post-fusion at 20\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement of fluorescence intensity in fused cells expressing GT-GFP and ST-RFP markers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "7958f62f-d396-4196-9420-ec8a829f5c96",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C2",
+      "claim": "ST-RFP labeled Golgi acquired GT-GFP marker with a 12.1 \u00b1 6.1 (n = 5) fold increase at 30 min post-fusion",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocally, the initially red-labeled Golgi areas acquired the GT-GFP marker (Figure 2, Golgi 1 and 2) with a 12.1 \u00b1 6.1 (n = 5) fold increase at 30 min post-fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement of fluorescence intensity in fused cells showing reciprocal exchange",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "07a59b45-21c7-45de-9e2d-483628ff08a8",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C3",
+      "claim": "Exogenous resident Golgi enzymes traffic between separate Golgi populations in fused cells",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these initial studies establish that some exogenous resident Golgi enzymes traffic between separate Golgi populations in fused cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed exchange of GT-GFP and ST-RFP markers between different Golgi in fused cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "727b3893-e5c0-45ca-afed-9308fc4106a9",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C4",
+      "claim": "The time course of exchange between Golgi is similar to that for transit of a Golgi stack in a single cell",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the time course of exchange between Golgi, remarkably enough, seems to be similar to that for transit of a Golgi stack in a single cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of observed exchange rates with known transit times through Golgi stacks",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "618413a9-bbb0-4107-9590-8b012ade5aa5",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C5",
+      "claim": "Monomeric CD8lumenal was transported to acceptor Golgi with an average of 12.9 \u00b1 6.5 (n = 4) fold increase at 30 min post-fusion in the presence of AP21998",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal video-microscopy of fused cells revealed that the green-labeled CD8lumenal was transported to the originally red-labeled acceptor Golgi in the presence of the AP21998 disaggregating drug (Figure 3A, Golgi 1), with an average of 12.9 \u00b1 6.5 (n = 4) fold increase at 30 min post-fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative fluorescence measurements in fused cells with disaggregated cargo",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "3c1ca8ff-ab15-4091-b29e-1c125ea94e43",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C6",
+      "claim": "Monomeric soluble cargo (hGH) exchanged at similar rate to monomeric membrane cargo",
+      "claim_type": "EXPLICIT",
+      "source": "Monomeric soluble cargo (hGH) also exchanged at similar rate (Figure 3B, Golgi 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of exchange rates between different cargo types",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "a37415aa-9796-421a-bf64-baa8c943be5e",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C7",
+      "claim": "Exchange of anterograde cargo can occur during the process of anterograde transport in fused cells",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that exchange is not limited to resident Golgi proteins and suggests that exchange of anterograde cargo can occur during the process of anterograde transport, at least in fused cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of anterograde cargo exchange between Golgi in fused cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "8f07ec16-328f-4257-92a3-6ca6a58a34b0",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C8",
+      "claim": "Aggregation of CD8lumenal completely abolished inter-Golgi transport with a 0.9 \u00b1 0.3 (n = 3) fold increase at 30 min post-fusion",
+      "claim_type": "EXPLICIT",
+      "source": "The removal of AP21998 to trigger aggregation of cargo in the Golgi completely abolished the inter-Golgi transport of the membrane-bound cargo CD8lumenal (Figure 3A, Golgi 2), with a 0.9 \u00b1 0.3 (n = 3) fold increase at 30 min post-fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement showing lack of fluorescence increase when cargo is aggregated",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "caceb59a-825c-4782-99bb-ef7adf8aef51",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C9",
+      "claim": "Aggregated soluble FM4-hGH was not exchanged efficiently with GT-GFP labeled acceptor Golgi",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, aggregated soluble FM4-hGH was not exchanged efficiently with GT-GFP labeled acceptor Golgi (Figure 3B, Golgi 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of lack of exchange when soluble cargo is aggregated",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "c6dd7fda-0cda-4c6c-97fd-8813098751f7",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C10",
+      "claim": "The traffic process does not result from fragments of Golgi stacks that detach and travel to another nucleus",
+      "claim_type": "EXPLICIT",
+      "source": "Because re-aggregated CD8lumenal permanently resides in the Golgi membranes (Lavieu et al., 2013) and is not transported between Golgi areas, we can rule out that the traffic process somehow results from fragments of Golgi stacks (or entire mini-stacks) that detach by fission from one Golgi area and travel to another nucleus to join its Golgi area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Aggregated membrane cargo remains static and is not transported, ruling out Golgi fragment movement",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "724c5c74-10df-4e35-9b8b-83ea042e263b",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C11",
+      "claim": "Large-soluble cargo aggregates are not transported between separated Golgi",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, since they are rapidly transported within a single Golgi stack, large-soluble cargo aggregates that concentrate in the dilated rims of cisternae (Volchuk et al., 2000) 'are not' transported between separated Golgi (Figure 3B, lower panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation that large soluble aggregates do not exchange between Golgi despite being transported within single stacks",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "84233640-1a63-47e2-97ab-8de56d77c1d7",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C12",
+      "claim": "The carriers of small cargo are mobile and capable of traveling a long distance, whereas the carriers of large aggregates of soluble cargo are less mobile",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the (unknown) carriers of small cargo are mobile and capable of traveling a long distance, whereas the 'carriers' of large aggregates of soluble cargo are less mobile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Differential transport behavior between small and large cargo",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "ee7f798f-da5e-4b04-ae55-794c23f76dcd",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C13",
+      "claim": "Microtubules do not appear to be required for inter-Golgi transport",
+      "claim_type": "EXPLICIT",
+      "source": "We have extensively tested for the possible requirements of microtubules, which do not appear to be required (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental testing with nocodazole treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "feb5929d-11ce-4c43-9664-dd6b25cfc304",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C14",
+      "claim": "In fused cells treated with H89, photo-bleached Golgi showed an average recovery of 34 \u00b1 9.9% (n = 5) at 30 min after photo-bleaching",
+      "claim_type": "EXPLICIT",
+      "source": "30 min post-fusion, the fused cells were treated with H89 for 15 min before and during the FRAP of Golgi of fused cells (Figure 4, Golgi 2). The average recovery at 30 min after-photo-bleaching was 34 \u00b1 9.9% (n = 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP measurements in H89-treated fused cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "dc799375-ea68-40cf-b1f1-a9b79a383ca7",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C15",
+      "claim": "In single cells treated with H89, no significant recovery was measured (7.2 \u00b1 6.5%, n = 4)",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, in the same population of cells that had not in fact fused (Figure 4, Golgi 1) no significant recovery was measured (7.2 \u00b1 6.5%, [n = 4]), validating that ER \u2192 Golgi is abolished under H89 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP measurements in H89-treated single cells as control",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "729f5417-dde0-4ec5-89e0-aed03f838320",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C16",
+      "claim": "H89 blocks ER \u2192 Golgi as well as TGN \u2192 PM transport",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that H89 also inhibits PKD (Jamora et al., 1999) and prevents exit from the TGN (Muniz et al., 1996). This broad spectrum of action of H89, which blocks ER \u2192 Golgi as well as TGN \u2192 PM, also suggests that inter-Golgi transport occurs exclusively between cis/medial/trans cisternae of separated Golgi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known effects of H89 from literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "3d76d8bd-7b68-46d6-83a3-7116419a3275",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C17",
+      "claim": "Sar1H79G dominant mutant did not inhibit inter-Golgi transport of disaggregated CD8",
+      "claim_type": "EXPLICIT",
+      "source": "Although this mutant inhibits ER \u2192 Golgi transport and triggers the retention of Golgi resident enzymes within the ER (Ward et al., 2001), Golgi matrix proteins remain associated with membranes within the peri-nuclear area (Ward et al., 2001). This area could serve as an acceptor compartment during inter-Golgi exchange in the cell\u2013cell fusion assay. We fused YFP-Sar1H79G with cells expressing disaggregated-DsRed-CD8 (+VSVG) accumulated in the Golgi (using the 20\u00b0C temperature block). DsRed-CD8, initially labeling the donor Golgi (Golgi 1, Figure 4B) progressively labeled the peri-nuclear area (presumably the Golgi remnant) of the acceptor cell that initially expressed the Sar1 mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of cargo transport in presence of Sar1H79G mutant",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "27a7b66b-e0fb-4837-b043-43285b62cca1",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C18",
+      "claim": "The rate of fluorescence increase in the acceptor cell with Sar1 mutant was not significantly different from experiments without the Sar1 mutant",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of the fluorescence increase in the acceptor cell was not significantly different from the one reported in the previous experiments performed in the absence of the Sar1 mutant (Figure 3), and was directly proportional to the decrease of the fluorescence at the donor Golgi, as expected if the donor Golgi is the only source of fluorescence within a freshly formed dikaryons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of transport rates with and without Sar1 mutant",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "8b6d967a-9bd0-4841-8d94-6f7f028ea5c1",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C19",
+      "claim": "The contribution of ER during the inter-Golgi transport assay could only be minor",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the contribution of ER (if any) during the inter-Golgi transport assay could only be minor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from H89 and Sar1 mutant experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "35d2a2c8-da1b-49f5-bf2d-062581b8710e",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C20",
+      "claim": "The anterograde cargo CD8lumenal showed no co-localization with early endosomal marker Rab5A-RFP",
+      "claim_type": "EXPLICIT",
+      "source": "When cell expressing small GFP-CD8lumenal were fused for 15 min with cells expressing the early ensosomal marker Rab5A-RFP, no co-localization was observed by confocal microscopy, the two signals being clearly separated even when observed at high magnification (Figure 4\u2014figure supplement 1A, red inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confocal microscopy imaging of fused cells with endosomal markers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "c8f7633d-d573-448d-8095-313e9058d809",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C21",
+      "claim": "The late endosomal marker Rab7-GFP was clearly distinguishable from DsRed\u2013CD8lumenal",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the late endosomal marker Rab7-GFP was clearly distinguishable from DsRed\u2013CD8lumenal. (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confocal microscopy imaging showing lack of co-localization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "5d88f8b7-d803-418d-a671-12000f7a66f2",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C22",
+      "claim": "The average Pearson's coefficient for CD8-GFP and CD8-RFP positive control was >0.8",
+      "claim_type": "EXPLICIT",
+      "source": "When quantified, the average Pearson's coefficient for the positive control was >0.8, whereas the coefficient for both endosomal markers samples were <0.4, synonymous of poor to no co-localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative co-localization analysis using Pearson's coefficient",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "0a9ebdc4-d376-46b2-8492-1a15c3649632",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C23",
+      "claim": "Endosomes are not involved in inter-Golgi trafficking",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that endosomes are not involved in inter-Golgi trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Lack of co-localization between cargo and endosomal markers",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "cd5acf6b-ef7f-4aee-99fd-24c2e105e696",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C24",
+      "claim": "After photo-bleaching the entire heterokaryon except the donor Golgi, a 23.9 \u00b1 6.4% (n = 3) fluorescence recovery was observed at the acceptor Golgi 30 min later",
+      "claim_type": "EXPLICIT",
+      "source": "30 min after the photo-bleaching, a 23.9 \u00b1 6.4% (n = 3) fluorescence recovery of the pre-bleaching fluorescence was observed at the acceptor Golgi (consistent with the 34% previously measured in the H89-treated fused cells) accompanied by a 24.8 \u00b1 9.03% (n = 3) decrease in fluorescence of the donor Golgi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP measurements in photo-bleached heterokaryons",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "caa63ca6-429e-4843-b03b-9bdf99fb4953",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C25",
+      "claim": "The donor Golgi is a sufficient source for inter-Golgi exchange",
+      "claim_type": "EXPLICIT",
+      "source": "This independently confirms that the donor Golgi is a sufficient source for inter-Golgi exchange and established the pre-conditions to look for transport intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Photo-bleaching experiment showing recovery from single donor Golgi",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "93b3d0a9-0945-41ad-b399-e22d9dad818c",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C26",
+      "claim": "There may be as many as ~20,000 fluorescent dots per heterokaryon over 30 min",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that there may be as many as \u223c20,000 of such dots per heterokaryon over 30 min considering that we monitored \u223c6 dots/frame (with 1 frame/5 s over 30 min, in a 500 nm focal plane within HeLa cells that are \u223c5 \u03bcm thick).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation based on observed dot frequency in imaging",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "a41db08f-11e2-4645-982f-2fcf79582512",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C27",
+      "claim": "In double FRAP experiments, the gain of fluorescence at the Golgi (+56 \u00b1 14%) was similar to the loss of fluorescence in the inter-Golgi space (\u221263 \u00b1 14%)",
+      "claim_type": "EXPLICIT",
+      "source": "After 30 min recovery, the gain of fluorescence observed at the Golgi (+56 \u00b1 14% of the total fluorescence initially emanating from the dots before the second photo-bleaching) was very similar to the loss (\u221263 \u00b1 14%) of the fluorescence intensity monitored in the inter-Golgi space (and emanating from the dots) (Graph, Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative fluorescence measurements in double FRAP experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "3a42b14d-33ca-4d0a-95ff-b66c4f9a0da6",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C28",
+      "claim": "The Golgi-derived small fluorescent dots are the diffusible transport intermediates responsible for inter-Golgi transport",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that the Golgi-derived small fluorescent dots are the diffusible transport intermediates responsible for the inter-Golgi transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Double FRAP experiments showing dots can repopulate Golgi",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "8f0ac419-6d9e-44b6-9df1-c782ed21226e",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C29",
+      "claim": "ARF1Q71L spread throughout polykaryons and localized to exogenous Golgi membranes",
+      "claim_type": "EXPLICIT",
+      "source": "After this three-way fusion, confocal video-microcopy revealed that ARF1Q71L\u2013DsRed spread effectively throughout the polykaryons and localized to exogenous Golgi membranes (Figure 6A, Golgi 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Confocal microscopy observation of ARF1Q71L distribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "29ccc24b-b31e-4fea-b2b0-a36d5dd7aef4",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C30",
+      "claim": "In the presence of ARF1Q71L, inter-Golgi exchange of yellow and cyan-labeled GT no longer took place",
+      "claim_type": "EXPLICIT",
+      "source": "However, inter-Golgi exchange of yellow and cyan-labeled GT no longer took place. Each marker remained within its parental Golgi even 1 hr after fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of lack of marker exchange in presence of ARF1Q71L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "97c11968-9a4d-4228-a192-09b18f6dcb30",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C31",
+      "claim": "The GTPase activity of ARF1 is required for inter-Golgi exchange of resident Golgi proteins",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the GTPase activity of ARF1 is required for inter-Golgi exchange of resident Golgi proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inhibition of exchange by GTP-locked ARF1 mutant",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "aaca9da7-e257-48f8-89a8-a4ebc1dedce0",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C32",
+      "claim": "ARF1Q71L prevented inter-Golgi transport of small anterograde cargo",
+      "claim_type": "EXPLICIT",
+      "source": "Once again, the ARF1 mutant diffused throughout the polykaryon and bound to the exogenous Golgi membranes (Figure 6B, Golgi 1) and prevented inter-Golgi transport of this small anterograde cargo, which remained in its original Golgi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of cargo retention in presence of ARF1Q71L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "26e12ce5-e217-4554-83d5-9c5526982827",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C33",
+      "claim": "When ARF1 mutant is replaced with ARF1WT, inter-Golgi transport of the cargo is unaltered",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, when the ARF1 mutant is replaced with ARF1WT, inter-Golgi transport of the cargo is unaltered (Figure 6\u2014figure supplement 1), demonstrating that the transport inhibition was specific to ARF1 mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiment with wild-type ARF1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "83b39bad-5788-4927-8d7a-7fd40da0f13c",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C34",
+      "claim": "In the presence of ARF1-GTP locked mutant, GFP-fluorescence recovery in the inter-Golgi zone was less than 5% of the recovery measured in polykaryons lacking the ARF1 mutant",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this lack of repopulation of transport intermediates in the inter-Golgi zone, the GFP-fluorescence recovery in that zone was less than 5% of the recovery measured in polykaryons lacking the ARF1 mutant (Figure 5B and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of fluorescence recovery with and without ARF1 mutant",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "ac7b2500-a73b-45f6-a53d-ed54288e7277",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C35",
+      "claim": "The GTPase activity of ARF1 involved in the formation of COPI vesicles is required for generation of diffusible transport intermediates responsible for inter-Golgi exchange",
+      "claim_type": "EXPLICIT",
+      "source": "In any case, this result suggests that the GTPase activity of ARF1 involved in the formation of COPI vesicles is required for generation of diffusible transport intermediates that are responsible for inter-Golgi exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from ARF1 mutant experiments showing lack of transport intermediate formation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "7b318f04-8994-45ef-b136-f13fde9f26e1",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C36",
+      "claim": "At 60 min post-fusion, the average Pearson's coefficient in fused WT CHO cells was 0.69 \u00b1 0.11 (n = 30)",
+      "claim_type": "EXPLICIT",
+      "source": "At 60 min post-fusion, the average Pearson's coefficient in fused WT cells was 0.69 \u00b1 0.11 (n = 30), indicative of strong co-localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative co-localization analysis in wild-type CHO cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "e4acd4ce-7140-4197-9eb2-d8741f745faf",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C37",
+      "claim": "In fused mutant Ldl-F cells, the Pearson's coefficient was \u22120.29 \u00b1 0.09 (n = 30)",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in fused mutant Ldl-F cells, the negative value of the Pearson's coefficient (\u22120.29 \u00b1 0.09 [n = 30]) illustrated the absence of significant co-localization, indicating that \u03b5-COP is required for the inter-Golgi transport of resident proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative co-localization analysis in \u03b5-COP mutant cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "69cdd848-0f3e-45e7-a3a3-ca5b4605c6f9",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C38",
+      "claim": "\u03b5-COP is required for the inter-Golgi transport of resident proteins",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in fused mutant Ldl-F cells, the negative value of the Pearson's coefficient (\u22120.29 \u00b1 0.09 [n = 30]) illustrated the absence of significant co-localization, indicating that \u03b5-COP is required for the inter-Golgi transport of resident proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Lack of co-localization in \u03b5-COP mutant cells at restrictive temperature",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "3cdccd54-7bfa-448c-b72c-72ddc363e895",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C39",
+      "claim": "Inter-Golgi transport requires both ARF1 and COPI",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that inter-Golgi transport requires both ARF1 and COPI, suggesting that COPI vesicles are the transport intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from ARF1 and \u03b5-COP mutant experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "15999558-b7da-4c4a-bba2-8e85b8eddbbb",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C40",
+      "claim": "The mean diameter of in vitro COPI vesicles measured by STED microscopy is 114 \u00b1 11 nm (n = 64)",
+      "claim_type": "EXPLICIT",
+      "source": "We determined their mean diameter (Figure 7A) to be 114 \u00b1 11 nm n = 64, consistent with the outer diameter reported from electron microscopy (Orci et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "STED microscopy measurements of in vitro COPI vesicles",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "0e9c3a2f-7d5a-4baf-9302-d02dcaad91b5",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C41",
+      "claim": "The mean size of \u03b2-COP positive transport intermediates within fused cells measured by STED microscopy is 126 \u00b1 15 nm (n = 181)",
+      "claim_type": "EXPLICIT",
+      "source": "The mean size of the dots containing COPI was 126 \u00b1 15 nm, n = 181, and approximately the same size as the in vitro vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "STED microscopy measurements of intracellular COPI-positive structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "9a876fc5-38f2-4158-adc8-3fa2d9235c63",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C42",
+      "claim": "The vast majority (around 90%) of the dots containing either the anterograde cargo or the Golgi resident enzymes were negative for COPI staining",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the vast majority (around 90%) of the dots containing either the anterograde cargo or the Golgi resident enzymes were negative for the COPI staining, consistent with the predictions of the vesicular model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantification of COPI staining in cargo-containing dots",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "6fc36e1e-6bfa-4ef6-a229-f1cab0ed72cf",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C43",
+      "claim": "Uncoated structures showed a slightly reduced diameter of 105 \u00b1 13 nm (n=60)",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly these uncoated structures showed a slightly reduced diameter 105 \u00b1 13 nm, n=60, which may reflect the absence of coatomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "STED microscopy measurements of uncoated structures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "9e9db9f8-fd33-41af-bf46-6650ed250695",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C44",
+      "claim": "66 \u00b1 20% of COPI-positive objects carried anterograde cargo alone when GFP\u2013CD8lumenal was co-expressed with ST-RFP",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification using size filtering based on the in vitro COPI vesicles results (size < 150 nm) showed the following heterogeneous distribution when GFP\u2013CD8lumenal was co-expressed with ST-RFP (Figure 7B): 66 \u00b1 20% of the COPI-positive objects carried the anterograde cargo alone, 20 \u00b1 11% carried the retrograde cargo alone and 15 \u00b1 8 % carried both (Figure 7B), consistent with the three populations observed by confocal microscopy (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis of cargo content in COPI-positive structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "91bf6c01-c1e1-476d-b6b6-544e96816de9",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C45",
+      "claim": "20 \u00b1 11% of COPI-positive objects carried retrograde cargo alone",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification using size filtering based on the in vitro COPI vesicles results (size < 150 nm) showed the following heterogeneous distribution when GFP\u2013CD8lumenal was co-expressed with ST-RFP (Figure 7B): 66 \u00b1 20% of the COPI-positive objects carried the anterograde cargo alone, 20 \u00b1 11% carried the retrograde cargo alone and 15 \u00b1 8 % carried both (Figure 7B), consistent with the three populations observed by confocal microscopy (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis of cargo content in COPI-positive structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "4450d2df-7e90-42f0-bd2b-cc02d8328bc9",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C46",
+      "claim": "15 \u00b1 8% of COPI-positive objects carried both anterograde and retrograde cargo",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification using size filtering based on the in vitro COPI vesicles results (size < 150 nm) showed the following heterogeneous distribution when GFP\u2013CD8lumenal was co-expressed with ST-RFP (Figure 7B): 66 \u00b1 20% of the COPI-positive objects carried the anterograde cargo alone, 20 \u00b1 11% carried the retrograde cargo alone and 15 \u00b1 8 % carried both (Figure 7B), consistent with the three populations observed by confocal microscopy (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis of cargo content in COPI-positive structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "8d330d2c-292f-44ac-8aa6-a477e3d0730c",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C47",
+      "claim": "When the same anterograde cargoes tagged with either green or red fluorophores were co-expressed, 87 \u00b1 3% of the objects carried both cargoes",
+      "claim_type": "EXPLICIT",
+      "source": "When the same anterograde cargoes tagged with either green or red fluorophores were co-expressed, 87 \u00b1 3% of the objects carried both cargoes, as expected for a co-localization positive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Positive control experiment with dual-labeled cargo",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "60abeb89-36e8-487a-9e55-2fd33bc55743",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C48",
+      "claim": "None of the dots could be stained with an antibody to the COPII coat subunit SEC31",
+      "claim_type": "EXPLICIT",
+      "source": "None of the dots (again, containing one or both markers) could be stained with an antibody to the COPII coat subunit SEC31 (Figure 7\u2014figure supplement 1), yet again ruling out again any involvement of ER export.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence staining with SEC31 antibody",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "ce3a8769-76b7-4536-80a0-8d379ae502da",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C49",
+      "claim": "The 20\u00b0C block has never been reported to prevent intra-Golgi trafficking",
+      "claim_type": "EXPLICIT",
+      "source": "This so-called 20\u00b0C block has never been reported to prevent intra-Golgi trafficking (neither anterograde or retrograde).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature knowledge about 20\u00b0C temperature block effects",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "b1ef0aa5-b53f-4d80-8039-9caf0e460a2e",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C50",
+      "claim": "20\u00b0C slows-down the trafficking and results in retaining a large portion of the anterograde cargo within the trans-Golgi",
+      "claim_type": "EXPLICIT",
+      "source": "Instead it has been shown that 20\u00b0C slows-down the trafficking, and results in retaining a large portion of the anterograde cargo within the trans-Golgi, with a significant amount remaining in the upstream cisternae that could serve as a back-up for inter-transport (Van Deurs et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citation about effects of 20\u00b0C on trafficking",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "d2c0d337-52f6-4dba-84a3-37fabfdb3592",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C51",
+      "claim": "PKD(DI) blocks TGN exit of anterograde cargo",
+      "claim_type": "EXPLICIT",
+      "source": "However, to rule out that our results were reflecting non-specific sorting of the anterograde cargo at the TGN, we co-expressed the anterograde cargo with a dominant interfering mutant of the protein-Kinase D (PKD(DI)), known to block the TGN exit of anterograde cargo (Baron and Malhotra, 2002; Figure 8C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citation about PKD(DI) function",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "a29a582e-e2fc-46cf-9185-c7c63b3d479c",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C52",
+      "claim": "Anterograde cargo was efficiently transported to the acceptor Golgi in the presence of PKD(DI)",
+      "claim_type": "EXPLICIT",
+      "source": "These cells were fused with other cells expressing DsRed-tagged resident enzyme and PKD(DI), and the inter-Golgi transport was recorded at 32\u00b0C for 1 hr. The anterograde cargo was efficiently transported to the acceptor Golgi (Figure 8A, Golgi 1 and Graph) that originally contained only the resident enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of cargo transport in presence of PKD(DI)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "6e3033a1-b0e0-47d8-b2b8-bace1fdb0f7e",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C53",
+      "claim": "Inter-Golgi transport is not due to missorting of over-expressed cargo at the TGN",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that inter-Golgi transport is not due to a missorting of over-expressed cargo at the TGN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from PKD(DI) experiments showing transport despite TGN block",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "96d02791-5c96-493b-bae9-f65581d77bfd",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C54",
+      "claim": "Only small cargoes (anterograde or resident proteins) are exchanged between Golgi",
+      "claim_type": "EXPLICIT",
+      "source": "Our results clearly establish that only small cargoes (anterograde or resident proteins) are exchanged, showing that inter-Golgi carriers are capable of size-filtration, and that small cargo transport must utilize a distributive mechanism different from the mechanism used by large soluble aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Differential transport of small vs large cargo",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "984f762e-7ca2-4c40-93d8-0b6cbd5b8ff1",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C55",
+      "claim": "Inter-Golgi carriers are capable of size-filtration",
+      "claim_type": "EXPLICIT",
+      "source": "Our results clearly establish that only small cargoes (anterograde or resident proteins) are exchanged, showing that inter-Golgi carriers are capable of size-filtration, and that small cargo transport must utilize a distributive mechanism different from the mechanism used by large soluble aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation that only small cargo is transported between Golgi",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "b52cc0b4-2b06-45fd-9ce6-8c2a0fcc5c5e",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C56",
+      "claim": "More than half of the carriers exclusively contained anterograde cargo",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of the carriers exclusively contained anterograde cargo, suggesting sub-populations of COPI vesicles as previously documented by immuno-EM (Orci et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantification of cargo content in carriers",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "293a5825-bf0c-4869-b84f-4a0d9600fa90",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C57",
+      "claim": "The bulk of inter-Golgi transport of small cargo is mediated by COPI vesicles",
+      "claim_type": "EXPLICIT",
+      "source": "Because the imaged carriers contained coatomer, are indistinguishable in size from authentic COPI vesicles, and require both coatomer and ARF1 to function, the simplest interpretation is that the bulk of inter-Golgi transport of small cargo is mediated by COPI vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple lines of evidence including size, coatomer content, and ARF1/coatomer requirement",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "ec2b581e-ebb9-422b-9944-b7b12a469916",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C58",
+      "claim": "The double photo-bleaching experiments show that the bulk of the cargo flux between Golgi is mediated by fluorescent 'dots' that function as carriers",
+      "claim_type": "EXPLICIT",
+      "source": "Certainly, the double photo-bleaching experiments show that the bulk of the cargo flux between Golgi is mediated by fluorescent 'dots' that function as carriers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Double FRAP experiments showing dots repopulate Golgi",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "7d0246a5-ed58-47ff-b2a0-fb4e9d2b2295",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C59",
+      "claim": "The relative abundance of COPI containing carriers harboring Golgi resident glycosyltransferase is ~40% of the total",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot completely rule out the possibility that exogenous glycosyltransferases exceed the capacity of the Golgi retention machinery and thus begin to behave like soluble cargoes, the relative abundance of COPI containing carriers harboring Golgi resident glycosyltransferase (\u223c40% of the total) suggests that these proteins are engaged in a dynamic equilibrium of anterograde and retrograde flow to maintain their differential steady-state cis-trans distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantification of COPI carriers containing glycosyltransferases",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "279cd741-6615-443a-a758-c084fc763e9f",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C60",
+      "claim": "Transport of small cargo is bi-directional and mediated by COPI-coated vesicles",
+      "claim_type": "EXPLICIT",
+      "source": "The present results naturally suggest that transport of small cargo is bi-directional and mediated by COPI-coated vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of both anterograde and retrograde cargo in COPI vesicles",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "08543eaf-cf72-4e86-93ad-4f7e834f5123",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C61",
+      "claim": "COPI vesicles traffic both secretory cargo and steady-state Golgi resident enzymes among stacked cisternae that are stationary over many hours in non-dividing cells",
+      "claim_type": "EXPLICIT",
+      "source": "The data suggest that COPI vesicles traffic both secretory cargo and steady-state Golgi resident enzymes among stacked cisternae that are stationary over many hours in non-dividing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple experimental observations of cargo exchange and Golgi stability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "2c278ac3-031d-4282-867f-cb087327c823",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C62",
+      "claim": "Large soluble cargo are transported across the Golgi by a specialized mechanism that involves carriers which remain closely linked to the stack",
+      "claim_type": "EXPLICIT",
+      "source": "Further, they suggest that large soluble cargo are transported across the Golgi by a specialized mechanism that involves carriers which remain closely linked to the stack as the progress across it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation that large aggregates traverse single stacks but not between Golgi",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "216ba47c-7c44-499d-8a77-e33c861118ca",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C63",
+      "claim": "VSV-G protein is capable of rapid exchange between two different Golgi populations within fused cells",
+      "claim_type": "EXPLICIT",
+      "source": "Over 25 years ago, long before dynamic imaging in live cells with GFP tags was possible, we reported the surprising finding that VSV-encoded G protein is capable of rapid exchange between two different Golgi populations within fused cells (Rothman et al., 1984a, b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical citation of previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "66aa1ab2-b360-447e-86e0-e3c766005eae",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C64",
+      "claim": "The Golgi apparatus consists of four to six flattened cisternae in higher eukaryotes",
+      "claim_type": "EXPLICIT",
+      "source": "In higher eukaryotes, the Golgi stack consists of four to six flattened cisternae, which contain a series of glycosyl-transferases and other resident membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about Golgi structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "2a5b23e1-54e9-44d0-b359-05cafe9bb53d",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C65",
+      "claim": "Golgi resident proteins are localized in the order of their function in distinct steady-state distributions along the cis-trans axis",
+      "claim_type": "EXPLICIT",
+      "source": "These are localized in the order of their function in distinct steady-state distributions along the axis between the cis (entry) and the trans (exit) face, as a result of a dynamic equilibrium resulting from a balance of anterograde (ER \u2192 cis \u2192 trans) and retrograde (trans \u2192 cis and Golgi \u2192 ER) flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about Golgi organization",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "38a128f3-efdc-4653-bf9b-0048c049ef66",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C66",
+      "claim": "COPI-coated vesicles are the principal candidates for anterograde carriers",
+      "claim_type": "EXPLICIT",
+      "source": "COPI-coated vesicles are the principal candidates for anterograde carriers, as they form and fuse copiously throughout the Golgi stack, and many contain anterograde cargo (Balch et al., 1984b; Rothman and Wieland, 1996; Orci et al., 1997; Rothman, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citations about COPI vesicle properties",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "bcd6efd2-79fd-4507-b9fc-b0c2b03b05ab",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C67",
+      "claim": "COPI vesicles are known to carry retrograde cargo from Golgi to ER",
+      "claim_type": "EXPLICIT",
+      "source": "COPI vesicles are known to carry retrograde cargo from Golgi to ER (Letourneur et al., 1994; Emr et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citations about COPI vesicle function",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "6b90a9d6-d013-4263-9bef-31dca4c27032",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C68",
+      "claim": "GT is localized in the trans Golgi cisternae at steady state in HeLa cells",
+      "claim_type": "EXPLICIT",
+      "source": "At the steady state in HeLa cells, GT and ST have partially overlapping distributions in Golgi cisternae (Rabouille et al., 1995; Schaub et al., 2006). GT is localized in the trans Golgi cisternae, while ST is localized in the trans and trans-most/TGN cisternae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citations about glycosyltransferase localization",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "bea6ebeb-1909-4385-a1fa-7eb199a818b5",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C69",
+      "claim": "ST is localized in the trans and trans-most/TGN cisternae at steady state in HeLa cells",
+      "claim_type": "EXPLICIT",
+      "source": "At the steady state in HeLa cells, GT and ST have partially overlapping distributions in Golgi cisternae (Rabouille et al., 1995; Schaub et al., 2006). GT is localized in the trans Golgi cisternae, while ST is localized in the trans and trans-most/TGN cisternae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citations about glycosyltransferase localization",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "8ef450bd-0c23-4b5a-af5f-f81d176f2887",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C70",
+      "claim": "Each Golgi area remains tightly associated with its original nucleus for at least 2 hr",
+      "claim_type": "EXPLICIT",
+      "source": "Each Golgi area remains tightly associated with its original nucleus for at least 2 hr, longer than the maximum time course of the exchange experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of Golgi-nucleus association in fused cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "ddff012d-80af-4d59-ba2c-722c9990c88a",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C71",
+      "claim": "Most proteins require about 10\u201320 min to fully traverse the Golgi stack at 37\u00b0C",
+      "claim_type": "EXPLICIT",
+      "source": "Most proteins require about 10\u201320 min to fully traverse the Golgi stack at 37\u00b0C, and this process is expected to be several fold slower at 20\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about Golgi transit times",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "8d9aeeff-2587-4092-9e5d-1626c1840458",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C72",
+      "claim": "Both soluble and membrane-attached FM4 cargo behave as bona fide anterograde cargo, moving rapidly from ER through Golgi to cell surface",
+      "claim_type": "EXPLICIT",
+      "source": "Both the soluble and the membrane-attached version behave as bona fide anterograde cargo, moving rapidly from ER through Golgi to cell surface (Volchuk et al., 2000; Lavieu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citations about FM4 cargo behavior",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "a1b1e961-611d-4302-ae79-184a654c54d7",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C73",
+      "claim": "Soluble aggregates of FM4-hGH traverse the Golgi stack",
+      "claim_type": "EXPLICIT",
+      "source": "However, the soluble and membrane-attached aggregates behave differently. Whereas soluble aggregates of FM4-hGH traverse the Golgi stack, aggregated CD8lumenal morphologically 'staples' Golgi cisternal membranes and remains static in the centers of Golgi cisternae (Lavieu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citation about aggregate behavior",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "658c5af3-87f0-4e6a-a12f-d9cbfec82ab0",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "claim_id": "C74",
+      "claim": "Aggregated CD8lumenal morphologically 'staples' Golgi cisternal membranes and remains static in the centers of Golgi cisternae",
+      "claim_type": "EXPLICIT",
+      "source": "However, the soluble and membrane-attached aggregates behave differently. Whereas soluble aggregates of FM4-hGH traverse the Golgi stack, aggregated CD8lumenal morphologically 'staples' Golgi cisternal membranes and remains static in the centers of Golgi cisternae (Lavieu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Literature citation about aggregate behavior",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9b0585e7-89ea-4433-9af7-9fbe7d979b05",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Exogenous Golgi resident enzymes (GT-GFP and ST-RFP) traffic bidirectionally between separate Golgi populations in fused cells, with 10-12 fold fluorescence increases at 30 min post-fusion at 20\u00b0C. The time course of this inter-Golgi exchange is similar to transit times through a single Golgi stack.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide quantitative fluorescence measurements (C1, C2) showing reciprocal exchange of Golgi markers between separated Golgi in fused cells, establishing that resident enzymes traffic between Golgi (C3). The comparison to known transit times (C4) is reasonable given the measured kinetics. The data are internally consistent and supported by appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "e6f55763-e0a7-451e-af37-d6effe70add1",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Monomeric anterograde cargo (both membrane-bound CD8lumenal and soluble hGH) exchanges between Golgi in fused cells at rates similar to resident proteins, with ~13-fold increases at 30 min post-fusion in the presence of disaggregating drug.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 demonstrate that anterograde cargo exchange is not limited to resident proteins. Quantitative measurements (C5, C6) show similar exchange rates for different cargo types, and the inference that exchange occurs during anterograde transport (C7) is reasonable given the experimental design with temperature block and cycloheximide treatment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "edf0e742-bc37-4f7d-9c83-c19bcc19b6d0",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Aggregation of cargo completely abolishes inter-Golgi transport for both membrane-bound and soluble cargo. Large soluble aggregates that traverse single Golgi stacks are not transported between separated Golgi, indicating size-dependent transport mechanisms and ruling out Golgi fragment movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 provide strong evidence for size-dependent transport. The quantitative data showing no exchange of aggregated cargo (C8, C9) combined with the observation that large aggregates traverse single stacks but not between Golgi (C11) supports the conclusion that carriers are size-selective (C12). The logic ruling out Golgi fragment movement (C10) is sound given that aggregated membrane cargo remains static.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "5c767777-de0b-48c3-8062-7f8e77bba2c6",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Microtubules are not required for inter-Golgi transport based on nocodazole treatment experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 is supported by experimental data with nocodazole treatment shown in supplementary figures. However, the claim would be strengthened by quantitative data on the extent of microtubule depolymerization achieved and the efficiency of transport under these conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "240d13c4-012e-4cb3-95ad-4e88afd30943",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ER is not a significant source of transferred protein during inter-Golgi transport, as demonstrated by FRAP experiments with H89 treatment (showing 34% recovery in fused cells vs 7% in single cells) and lack of inhibition by Sar1H79G mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 provide multiple lines of evidence ruling out ER contribution. The H89 FRAP experiments (C14, C15) with appropriate controls, combined with the Sar1 mutant experiments (C17, C18) showing no effect on transport rates, strongly support the conclusion (C19). The known effects of H89 (C16) further support that transport occurs between Golgi cisternae.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "3d7cf902-7d2d-4360-8939-73dde7f84d42",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Endosomes are not involved in inter-Golgi trafficking, as demonstrated by lack of co-localization between anterograde cargo and early (Rab5A) or late (Rab7) endosomal markers (Pearson coefficients <0.4 vs >0.8 for positive control).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 provide quantitative co-localization analysis with appropriate positive controls (C22) showing clear separation of cargo from endosomal markers (C20, C21). The Pearson coefficient values provide objective support for the conclusion (C23). The experimental design is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "c5cccae0-f40f-4632-b9dc-5f5fd7f7af80",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Photo-bleaching experiments demonstrate that the donor Golgi is a sufficient source for inter-Golgi exchange, with ~24% fluorescence recovery at acceptor Golgi and corresponding decrease at donor Golgi. Approximately 20,000 fluorescent dots per heterokaryon are estimated over 30 min.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 provide FRAP data showing balanced fluorescence transfer between donor and acceptor Golgi (C24), supporting the conclusion that donor Golgi is sufficient (C25). The estimation of dot numbers (C26) is based on reasonable extrapolation from imaging parameters, though this is an indirect calculation with inherent uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "23401b15-324e-49b2-bd89-5c4aa7801e46",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Double FRAP experiments demonstrate that Golgi-derived fluorescent dots are the diffusible transport intermediates responsible for inter-Golgi transport, with fluorescence gain at Golgi (+56\u00b114%) matching loss in inter-Golgi space (-63\u00b114%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 provide elegant double FRAP experiments showing that dots can repopulate bleached Golgi with quantitative mass balance (C27). This strongly supports the conclusion that dots are bona fide transport intermediates (C28). The experimental design directly tests the hypothesis and the quantitative agreement is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "1b42ca0e-f1e1-4905-a6a6-dbb02d3e9349",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ARF1 GTPase activity is required for inter-Golgi transport, as the GTP-locked mutant ARF1Q71L completely blocks exchange of both resident proteins and anterograde cargo, prevents formation of transport intermediates (<5% recovery vs control), while wild-type ARF1 has no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 provide comprehensive evidence for ARF1 requirement. The mutant blocks transport of both resident enzymes (C30, C31) and cargo (C32), with appropriate wild-type control (C33). The double FRAP experiments (C34) showing lack of intermediate formation provide mechanistic insight. The conclusion (C35) is well-supported, though the specific role in COPI vesicle formation is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "88ccd5cc-0292-4a5a-bcdd-bcfebe19904e",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "\u03b5-COP (coatomer subunit) is required for inter-Golgi transport of resident proteins, as demonstrated by temperature-sensitive Ldl-F CHO cells showing no co-localization at restrictive temperature (Pearson coefficient -0.29\u00b10.09) versus strong co-localization in wild-type cells (0.69\u00b10.11).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 provide quantitative co-localization data in a genetic system (temperature-sensitive mutant) showing clear requirement for \u03b5-COP (C37, C38). Combined with ARF1 requirement, this supports the conclusion that both ARF1 and COPI are required (C39). However, the authors note they could not test anterograde cargo due to technical limitations at 39\u00b0C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "06ba7936-d8d2-40cc-8cd2-e3c9d2ffc3ff",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "STED microscopy reveals that \u03b2-COP positive transport intermediates in fused cells have a mean diameter of 126\u00b115 nm (n=181), similar to in vitro COPI vesicles (114\u00b111 nm, n=64). The majority (~90%) of cargo-containing dots are COPI-negative, while uncoated structures are slightly smaller (105\u00b113 nm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 provide super-resolution microscopy measurements showing size similarity between in vitro and in vivo COPI structures (C40, C41). The observation that most cargo dots lack COPI coating (C42) is consistent with vesicular transport models where coats are transient. The size difference for uncoated structures (C43) is reasonable. The measurements are technically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "464d7d46-b93c-48cd-9fa2-2910449f1a1f",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "COPI-positive objects show heterogeneous cargo distribution: 66\u00b120% carry anterograde cargo alone, 20\u00b111% carry retrograde cargo alone, and 15\u00b18% carry both. Positive control with dual-labeled cargo shows 87\u00b13% co-localization. None of the dots stain for COPII marker SEC31.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 provide quantitative analysis of cargo content in COPI vesicles showing heterogeneous populations. The positive control (C47) validates the methodology. The lack of SEC31 staining (C48) rules out COPII involvement. However, the large error bars (especially for C44) indicate substantial variability, and the size filtering approach (<150 nm) may introduce selection bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "322d81ad-2a12-447a-8f8c-0ad8821896e5",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Inter-Golgi transport is not due to missorting at the TGN, as anterograde cargo is efficiently transported to acceptor Golgi even in the presence of PKD(DI) mutant that blocks TGN exit. The 20\u00b0C block slows but does not prevent intra-Golgi trafficking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 address potential artifacts of the experimental system. The PKD(DI) experiment (C51, C52) provides evidence against TGN missorting (C53). The literature-based claims about 20\u00b0C effects (C49, C50) are appropriately cited. However, the experiments were performed at non-physiological temperature (20\u00b0C) which remains a limitation despite these controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "4679c7e0-3277-4121-98c9-31398024e312",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The bulk of inter-Golgi transport of small cargo is mediated by COPI vesicles, which are capable of size-filtration. More than half of carriers exclusively contain anterograde cargo, and double FRAP experiments show that fluorescent dots mediate the bulk of cargo flux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 synthesize multiple lines of evidence: size-dependent transport (C54, C55), cargo distribution (C56), and functional demonstration via FRAP (C58). The conclusion that COPI vesicles mediate transport (C57) is the simplest interpretation given size, coatomer content, and ARF1/COPI requirements, though the authors acknowledge they cannot completely rule out alternative carriers like short tubules.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "f15854f1-dd5b-467e-be9d-fe7cca1cc93f",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "COPI vesicles traffic both secretory cargo and Golgi resident enzymes bidirectionally among stationary cisternae, with ~40% of COPI carriers containing glycosyltransferases. Large soluble cargo use a specialized mechanism with carriers linked to the stack.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 present the major conclusions of the study. The quantification of glycosyltransferase-containing COPI carriers (C59) supports bidirectional transport (C60). The conclusion about stationary cisternae (C61) is supported by the observation that Golgi remain associated with nuclei. The distinction for large cargo (C62) is well-supported by the aggregation experiments. These represent the key mechanistic insights.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    },
+    {
+      "id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c",
+      "content_id": "e8598346-839c-4bb2-954c-49b1851215fa",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background and methodological context claims establishing prior knowledge about VSV-G exchange, Golgi structure, COPI vesicle properties, marker localizations, experimental conditions, and cargo behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C74 provide essential background information and methodological context. These are primarily literature-based claims (C63-C69, C71-C74) or experimental observations (C70) that establish the foundation for the study. They are appropriately cited and consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:43:15.686942Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa941806-c663-42ef-93e9-068669e5d115",
+      "result_id": "9b0585e7-89ea-4433-9af7-9fbe7d979b05"
+    },
+    {
+      "claim_id": "7958f62f-d396-4196-9420-ec8a829f5c96",
+      "result_id": "9b0585e7-89ea-4433-9af7-9fbe7d979b05"
+    },
+    {
+      "claim_id": "07a59b45-21c7-45de-9e2d-483628ff08a8",
+      "result_id": "9b0585e7-89ea-4433-9af7-9fbe7d979b05"
+    },
+    {
+      "claim_id": "727b3893-e5c0-45ca-afed-9308fc4106a9",
+      "result_id": "9b0585e7-89ea-4433-9af7-9fbe7d979b05"
+    },
+    {
+      "claim_id": "618413a9-bbb0-4107-9590-8b012ade5aa5",
+      "result_id": "e6f55763-e0a7-451e-af37-d6effe70add1"
+    },
+    {
+      "claim_id": "3c1ca8ff-ab15-4091-b29e-1c125ea94e43",
+      "result_id": "e6f55763-e0a7-451e-af37-d6effe70add1"
+    },
+    {
+      "claim_id": "a37415aa-9796-421a-bf64-baa8c943be5e",
+      "result_id": "e6f55763-e0a7-451e-af37-d6effe70add1"
+    },
+    {
+      "claim_id": "8f07ec16-328f-4257-92a3-6ca6a58a34b0",
+      "result_id": "edf0e742-bc37-4f7d-9c83-c19bcc19b6d0"
+    },
+    {
+      "claim_id": "caceb59a-825c-4782-99bb-ef7adf8aef51",
+      "result_id": "edf0e742-bc37-4f7d-9c83-c19bcc19b6d0"
+    },
+    {
+      "claim_id": "c6dd7fda-0cda-4c6c-97fd-8813098751f7",
+      "result_id": "edf0e742-bc37-4f7d-9c83-c19bcc19b6d0"
+    },
+    {
+      "claim_id": "724c5c74-10df-4e35-9b8b-83ea042e263b",
+      "result_id": "edf0e742-bc37-4f7d-9c83-c19bcc19b6d0"
+    },
+    {
+      "claim_id": "84233640-1a63-47e2-97ab-8de56d77c1d7",
+      "result_id": "edf0e742-bc37-4f7d-9c83-c19bcc19b6d0"
+    },
+    {
+      "claim_id": "ee7f798f-da5e-4b04-ae55-794c23f76dcd",
+      "result_id": "5c767777-de0b-48c3-8062-7f8e77bba2c6"
+    },
+    {
+      "claim_id": "feb5929d-11ce-4c43-9664-dd6b25cfc304",
+      "result_id": "240d13c4-012e-4cb3-95ad-4e88afd30943"
+    },
+    {
+      "claim_id": "dc799375-ea68-40cf-b1f1-a9b79a383ca7",
+      "result_id": "240d13c4-012e-4cb3-95ad-4e88afd30943"
+    },
+    {
+      "claim_id": "729f5417-dde0-4ec5-89e0-aed03f838320",
+      "result_id": "240d13c4-012e-4cb3-95ad-4e88afd30943"
+    },
+    {
+      "claim_id": "3d76d8bd-7b68-46d6-83a3-7116419a3275",
+      "result_id": "240d13c4-012e-4cb3-95ad-4e88afd30943"
+    },
+    {
+      "claim_id": "27a7b66b-e0fb-4837-b043-43285b62cca1",
+      "result_id": "240d13c4-012e-4cb3-95ad-4e88afd30943"
+    },
+    {
+      "claim_id": "8b6d967a-9bd0-4841-8d94-6f7f028ea5c1",
+      "result_id": "240d13c4-012e-4cb3-95ad-4e88afd30943"
+    },
+    {
+      "claim_id": "35d2a2c8-da1b-49f5-bf2d-062581b8710e",
+      "result_id": "3d7cf902-7d2d-4360-8939-73dde7f84d42"
+    },
+    {
+      "claim_id": "c8f7633d-d573-448d-8095-313e9058d809",
+      "result_id": "3d7cf902-7d2d-4360-8939-73dde7f84d42"
+    },
+    {
+      "claim_id": "5d88f8b7-d803-418d-a671-12000f7a66f2",
+      "result_id": "3d7cf902-7d2d-4360-8939-73dde7f84d42"
+    },
+    {
+      "claim_id": "0a9ebdc4-d376-46b2-8492-1a15c3649632",
+      "result_id": "3d7cf902-7d2d-4360-8939-73dde7f84d42"
+    },
+    {
+      "claim_id": "cd5acf6b-ef7f-4aee-99fd-24c2e105e696",
+      "result_id": "c5cccae0-f40f-4632-b9dc-5f5fd7f7af80"
+    },
+    {
+      "claim_id": "caa63ca6-429e-4843-b03b-9bdf99fb4953",
+      "result_id": "c5cccae0-f40f-4632-b9dc-5f5fd7f7af80"
+    },
+    {
+      "claim_id": "93b3d0a9-0945-41ad-b399-e22d9dad818c",
+      "result_id": "c5cccae0-f40f-4632-b9dc-5f5fd7f7af80"
+    },
+    {
+      "claim_id": "a41db08f-11e2-4645-982f-2fcf79582512",
+      "result_id": "23401b15-324e-49b2-bd89-5c4aa7801e46"
+    },
+    {
+      "claim_id": "3a42b14d-33ca-4d0a-95ff-b66c4f9a0da6",
+      "result_id": "23401b15-324e-49b2-bd89-5c4aa7801e46"
+    },
+    {
+      "claim_id": "8f0ac419-6d9e-44b6-9df1-c782ed21226e",
+      "result_id": "1b42ca0e-f1e1-4905-a6a6-dbb02d3e9349"
+    },
+    {
+      "claim_id": "29ccc24b-b31e-4fea-b2b0-a36d5dd7aef4",
+      "result_id": "1b42ca0e-f1e1-4905-a6a6-dbb02d3e9349"
+    },
+    {
+      "claim_id": "97c11968-9a4d-4228-a192-09b18f6dcb30",
+      "result_id": "1b42ca0e-f1e1-4905-a6a6-dbb02d3e9349"
+    },
+    {
+      "claim_id": "aaca9da7-e257-48f8-89a8-a4ebc1dedce0",
+      "result_id": "1b42ca0e-f1e1-4905-a6a6-dbb02d3e9349"
+    },
+    {
+      "claim_id": "26e12ce5-e217-4554-83d5-9c5526982827",
+      "result_id": "1b42ca0e-f1e1-4905-a6a6-dbb02d3e9349"
+    },
+    {
+      "claim_id": "83b39bad-5788-4927-8d7a-7fd40da0f13c",
+      "result_id": "1b42ca0e-f1e1-4905-a6a6-dbb02d3e9349"
+    },
+    {
+      "claim_id": "ac7b2500-a73b-45f6-a53d-ed54288e7277",
+      "result_id": "1b42ca0e-f1e1-4905-a6a6-dbb02d3e9349"
+    },
+    {
+      "claim_id": "7b318f04-8994-45ef-b136-f13fde9f26e1",
+      "result_id": "88ccd5cc-0292-4a5a-bcdd-bcfebe19904e"
+    },
+    {
+      "claim_id": "e4acd4ce-7140-4197-9eb2-d8741f745faf",
+      "result_id": "88ccd5cc-0292-4a5a-bcdd-bcfebe19904e"
+    },
+    {
+      "claim_id": "69cdd848-0f3e-45e7-a3a3-ca5b4605c6f9",
+      "result_id": "88ccd5cc-0292-4a5a-bcdd-bcfebe19904e"
+    },
+    {
+      "claim_id": "3cdccd54-7bfa-448c-b72c-72ddc363e895",
+      "result_id": "88ccd5cc-0292-4a5a-bcdd-bcfebe19904e"
+    },
+    {
+      "claim_id": "15999558-b7da-4c4a-bba2-8e85b8eddbbb",
+      "result_id": "06ba7936-d8d2-40cc-8cd2-e3c9d2ffc3ff"
+    },
+    {
+      "claim_id": "0e9c3a2f-7d5a-4baf-9302-d02dcaad91b5",
+      "result_id": "06ba7936-d8d2-40cc-8cd2-e3c9d2ffc3ff"
+    },
+    {
+      "claim_id": "9a876fc5-38f2-4158-adc8-3fa2d9235c63",
+      "result_id": "06ba7936-d8d2-40cc-8cd2-e3c9d2ffc3ff"
+    },
+    {
+      "claim_id": "6fc36e1e-6bfa-4ef6-a229-f1cab0ed72cf",
+      "result_id": "06ba7936-d8d2-40cc-8cd2-e3c9d2ffc3ff"
+    },
+    {
+      "claim_id": "9e9db9f8-fd33-41af-bf46-6650ed250695",
+      "result_id": "464d7d46-b93c-48cd-9fa2-2910449f1a1f"
+    },
+    {
+      "claim_id": "91bf6c01-c1e1-476d-b6b6-544e96816de9",
+      "result_id": "464d7d46-b93c-48cd-9fa2-2910449f1a1f"
+    },
+    {
+      "claim_id": "4450d2df-7e90-42f0-bd2b-cc02d8328bc9",
+      "result_id": "464d7d46-b93c-48cd-9fa2-2910449f1a1f"
+    },
+    {
+      "claim_id": "8d330d2c-292f-44ac-8aa6-a477e3d0730c",
+      "result_id": "464d7d46-b93c-48cd-9fa2-2910449f1a1f"
+    },
+    {
+      "claim_id": "60abeb89-36e8-487a-9e55-2fd33bc55743",
+      "result_id": "464d7d46-b93c-48cd-9fa2-2910449f1a1f"
+    },
+    {
+      "claim_id": "ce3a8769-76b7-4536-80a0-8d379ae502da",
+      "result_id": "322d81ad-2a12-447a-8f8c-0ad8821896e5"
+    },
+    {
+      "claim_id": "b1ef0aa5-b53f-4d80-8039-9caf0e460a2e",
+      "result_id": "322d81ad-2a12-447a-8f8c-0ad8821896e5"
+    },
+    {
+      "claim_id": "d2c0d337-52f6-4dba-84a3-37fabfdb3592",
+      "result_id": "322d81ad-2a12-447a-8f8c-0ad8821896e5"
+    },
+    {
+      "claim_id": "a29a582e-e2fc-46cf-9185-c7c63b3d479c",
+      "result_id": "322d81ad-2a12-447a-8f8c-0ad8821896e5"
+    },
+    {
+      "claim_id": "6e3033a1-b0e0-47d8-b2b8-bace1fdb0f7e",
+      "result_id": "322d81ad-2a12-447a-8f8c-0ad8821896e5"
+    },
+    {
+      "claim_id": "96d02791-5c96-493b-bae9-f65581d77bfd",
+      "result_id": "4679c7e0-3277-4121-98c9-31398024e312"
+    },
+    {
+      "claim_id": "984f762e-7ca2-4c40-93d8-0b6cbd5b8ff1",
+      "result_id": "4679c7e0-3277-4121-98c9-31398024e312"
+    },
+    {
+      "claim_id": "b52cc0b4-2b06-45fd-9ce6-8c2a0fcc5c5e",
+      "result_id": "4679c7e0-3277-4121-98c9-31398024e312"
+    },
+    {
+      "claim_id": "293a5825-bf0c-4869-b84f-4a0d9600fa90",
+      "result_id": "4679c7e0-3277-4121-98c9-31398024e312"
+    },
+    {
+      "claim_id": "ec2b581e-ebb9-422b-9944-b7b12a469916",
+      "result_id": "4679c7e0-3277-4121-98c9-31398024e312"
+    },
+    {
+      "claim_id": "7d0246a5-ed58-47ff-b2a0-fb4e9d2b2295",
+      "result_id": "f15854f1-dd5b-467e-be9d-fe7cca1cc93f"
+    },
+    {
+      "claim_id": "279cd741-6615-443a-a758-c084fc763e9f",
+      "result_id": "f15854f1-dd5b-467e-be9d-fe7cca1cc93f"
+    },
+    {
+      "claim_id": "08543eaf-cf72-4e86-93ad-4f7e834f5123",
+      "result_id": "f15854f1-dd5b-467e-be9d-fe7cca1cc93f"
+    },
+    {
+      "claim_id": "2c278ac3-031d-4282-867f-cb087327c823",
+      "result_id": "f15854f1-dd5b-467e-be9d-fe7cca1cc93f"
+    },
+    {
+      "claim_id": "216ba47c-7c44-499d-8a77-e33c861118ca",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "66aa1ab2-b360-447e-86e0-e3c766005eae",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "2a5b23e1-54e9-44d0-b359-05cafe9bb53d",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "38a128f3-efdc-4653-bf9b-0048c049ef66",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "bcd6efd2-79fd-4507-b9fc-b0c2b03b05ab",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "6b90a9d6-d013-4263-9bef-31dca4c27032",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "bea6ebeb-1909-4385-a1fa-7eb199a818b5",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "8ef450bd-0c23-4b5a-af5f-f81d176f2887",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "ddff012d-80af-4d59-ba2c-722c9990c88a",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "8d9aeeff-2587-4092-9e5d-1626c1840458",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "a1b1e961-611d-4302-ae79-184a654c54d7",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    },
+    {
+      "claim_id": "658c5af3-87f0-4e6a-a12f-d9cbfec82ab0",
+      "result_id": "33618b28-4bf1-4b3d-a3b3-fd2446ab052c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1596 @@
+{
+  "submission": {
+    "id": "25d1bba8-7e4f-42b4-8fd2-f7c000946ed4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:06:20.811064Z",
+    "updated_at": "2025-11-28T20:06:20.811064Z"
+  },
+  "content": [
+    {
+      "id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "submission_id": "25d1bba8-7e4f-42b4-8fd2-f7c000946ed4",
+      "content_type": "manuscript",
+      "content_text": "# Shugoshin biases chromosomes for biorientation through condensin recruitment to the pericentromere\n\n## Authors\n\n- Kitty F Verzijlbergen<sup>1</sup>\n- Olga O Nerusheva<sup>1</sup>\n- David Kelly<sup>1</sup>\n- Alastair Kerr<sup>1</sup>\n- Dean Clift<sup>1</sup>\n- Flavia de Lima Alves<sup>1</sup>\n- Juri Rappsilber<sup>1</sup>\n- Adele L Marston<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Wellcome Trust Centre for Cell Biology, Institute of Cell Biology University of Edinburgh Edinburgh United Kingdom\n2. Department of Biotechnology Institute of Bioanalytics, Technische Universit\u00e4t Berlin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo protect against aneuploidy, chromosomes must attach to microtubules from opposite poles (\u2018biorientation\u2019) prior to their segregation during mitosis. Biorientation relies on the correction of erroneous attachments by the aurora B kinase, which destabilizes kinetochore-microtubule attachments that lack tension. Incorrect attachments are also avoided because sister kinetochores are intrinsically biased towards capture by microtubules from opposite poles. Here, we show that shugoshin acts as a pericentromeric adaptor that plays dual roles in biorientation in budding yeast. Shugoshin maintains the aurora B kinase at kinetochores that lack tension, thereby engaging the error correction machinery. Shugoshin also recruits the chromosome-organizing complex, condensin, to the pericentromere. Pericentromeric condensin biases sister kinetochores towards capture by microtubules from opposite poles. Our findings uncover the molecular basis of the bias to sister kinetochore capture and expose shugoshin as a pericentromeric hub controlling chromosome biorientation.\n\n## Introduction\n\nThe accurate segregation of chromosomes during mitosis relies on the capture of newly duplicated sister chromatids by microtubules emanating from opposite poles. This is possible because on each chromosome a multi-subunit kinetochore assembles on a region of DNA, known as a centromere, to mediate attachment to microtubules. The proper attachment of sister kinetochores to opposite poles, called biorientation, generates tension owing to sister chromatid cohesion (Tanaka, 2010). Sister kinetochores are inherently biased towards capture by microtubules from opposite poles, yet how this is achieved is not known (Indjeian and Murray, 2007). Kinetochore geometry is thought to position microtubule binding sites in a \u2018back-to-back\u2019 orientation during mitosis and this has been hypothesized to contribute to biorientation (Hauf and Watanabe, 2004). Where erroneous tension-less attachments do occur, they are destabilized by the aurora B kinase, providing a further opportunity for biorientation to be established (Tanaka, 2010). Shugoshin proteins are localized to the region surrounding the centromere, known as the pericentromere, and have a conserved, yet poorly understood, function in biorientation (Indjeian et al., 2005; Huang et al., 2007; Kiburz et al., 2008; Guti\u00e9rrez-Caballero et al., 2012). In fission yeast, frogs, and human cells, shugoshins enable biorientation, at least in part, through recruitment of the chromosome passenger complex (CPC) containing aurora B to the pericentromere (Kawashima et al., 2007; Vanoosthuyse et al., 2007; Kelly et al., 2010; Tsukahara et al., 2010; Wang et al., 2010; Yamagishi et al., 2010; Rivera et al., 2012). Shugoshins also have a more defined role in protecting pericentromeric cohesin from premature loss during meiosis and mammalian mitosis; a function attributed to the recruitment of a specific form of the protein phosphatase 2A (PP2A) to the pericentromere (Katis et al., 2004; Kitajima et al., 2004, 2006; Marston et al., 2004; Rabitsch et al., 2004; Riedel et al., 2006; Tang et al., 2006; Xu et al., 2009).\n\nThough fundamental for accurate chromosome segregation, the role of shugoshin in biorientation has remained unclear. Budding yeast has a single shugoshin, Sgo1, which protects pericentromeric cohesin during meiosis but does not regulate cohesion during mitosis (Katis et al., 2004; Kitajima et al., 2004; Marston et al., 2004; Indjeian et al., 2005; Kiburz et al., 2008). We have exploited this system to investigate the sister kinetochore biorientation function of Sgo1, independently of effects on cohesion. Our analysis leads us to the unanticipated discovery that shugoshin collaborates with the chromosome-organising complex, condensin, in chromosome biorientation. Moreover, we provide the first molecular insight into how sister kinetochores are biased towards capture by microtubules from opposite, rather than the same, pole.\n\n## Results\n\n### Shugoshin is important for chromosome biorientation\n\nTo investigate the role of Sgo1 in biorientation we analyzed sgo1 null cells (sgo1\u0394) together with three missense mutants: sgo1-100, sgo1-700 and sgo1-3A. The sgo1-3A mutant was engineered to disrupt the binding site for PP2A-Rts1 (Xu et al., 2009) whereas sgo1-100 and sgo1-700 were isolated in a screen due to their inability to sense a lack of tension (Indjeian et al., 2005). All three mutants and sgo1\u0394 cells have previously been reported to affect biorientation after microtubule perturbation (Fernius and Hardwick, 2007; Indjeian et al., 2005; Indjeian and Murray, 2007; Xu et al., 2009). The Sgo1-3A protein retains its pericentromeric localization (Xu et al., 2009; Figure 1A). Though the kinetics of cell cycle entry in sgo1-100 and sgo1-700 mutants is similar to that of wild-type cells (Figure 1\u2014figure supplement 1), Sgo1-100 and Sgo1-700 show only residual initial centromeric recruitment (Figure 1B) and are absent from the pericentromeres of cells arrested in mitosis with microtubule-depolymerizing drugs (Figure 1A). We compared the ability of these Sgo1 mutants to establish bipolar attachments at metaphase after entering the cell cycle in the absence of microtubules. We used strains with spindle pole bodies (SPBs) labeled with tdTomato (SPC42-tdTomato), the centromere of chromosome IV labeled with GFP (CEN4-GFP) and with CDC20 under control of the methionione-repressible promoter (pMET-CDC20), to enable metaphase arrest by addition of methionine. All strains were released from a G1 arrest into nocodazole- and methionine-containing medium to depolymerize microtubules and induce a metaphase arrest before nocodazole was washed out to allow metaphase spindle formation (Figure 1C). Under these conditions, initial kinetochore-microtubule attachments are frequently erroneous because they occur before spindle pole bodies have migrated apart, leading to a strong reliance on the error correction process driven by Aurora B. We measured the efficiency of biorientation by scoring the splitting of CEN4-GFP signals once metaphase spindles reform after nocodazole washout. The sgo1-100, sgo1-700 and sgo1-3A mutants showed a similar delay and lower maximum level of biorientation that was not as pronounced as in sgo1\u0394 cells (Figure 1D,E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig1-v1.jpg)\n\n**Figure 1.:** (A) Sgo1-3A, but not Sgo1-100 or Sgo1-700 are maintained at the centromere in cells arrested in mitosis by treatment with nocodazole. Cells carrying SGO1-6HA (AM906), SGO1-100-6HA (AM6956), SGO1-700-6HA (AM6957), SGO1-3A-6HA (AM10011) and a no tag control (AM1176) were arrested in mitosis by treating with nocodozole for 3 hr. Cells were harvested for anti-HA ChIP and the levels of each Sgo1 protein at CEN4 were analyzed by qPCR. The mean of three independent experiments is shown with error bars representing standard error. (B) Sgo1-100 and Sgo1-700 proteins are initially recruited to centromeres but fail to be maintained there. Strains as in (A) were arrested in G1 by treatment with alpha factor. Samples were extracted for analysis by anti-HA ChIP at 15 min intervals after release from G1. The levels of Sgo1-6HA at CEN4 at the indicated times after release from G1 are shown for a representative experiment. (C\u2013E) SGO1 mutants are impaired in biorientation. Wild-type (AM4643), sgo1-100 (AM8924), sgo1-700 (AM8925), sgo1-3A (AM8923) and sgo1\u0394 (AM6117) cells carrying SPB (Spc42-tdTomato) and CEN4 (CEN4-GFP) markers were released from a G1 arrest into medium containing nocodazole (to depolymerize microtubules) and methionine (to deplete CDC20). After 3 hr, nocodazole was washed out, and the number of GFP dots was scored in the metaphase-arrested cells as shown in the schematic diagram (C). (D) Representative images of cells with one and two GFP dots are shown. (E) The percentage of visibly separated centromeres was determined at the indicated intervals after nocodazole washout (t = 0). Error bars indicate range (n = 2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Strains as in Figure 1A were released from G1 as described in Figure 1B and DNA content was measured at the indicated times by FACS.\n\n### Sgo1 does not promote biorientation through PP2A-Rts1 recruitment to centromeres\n\nThe sgo1-3A mutation disrupts the interaction between Sgo1 and PP2A-Rts1 (Figure 2A), which is important for the protection of centromeric cohesion during meiosis (Xu et al., 2009). Although the cohesin complex is properly associated with chromosomes in sgo1\u0394 cells during mitosis and cohesion is not affected (Indjeian et al., 2005; Kiburz et al., 2005; see below), PP2A-Rts1 could perform additional functions in biorientation. Rts1 enrichment at the centromere during metaphase is virtually abolished in sgo1\u0394, sgo1-3A and sgo1-100, and modestly reduced in sgo1-700 cells (Figure 2B), even though Sgo1-100 and Sgo1-700 proteins retain the ability to associate with Rts1 (Figure 2A). However, the biorientation defect of the sgo1 mutants cannot be caused by a failure to recruit Rts1 to centromeres because rts1\u0394 cells achieved biorientation with indistinguishable efficiency to wild-type cells (Figure 2C). Therefore, PP2A-Rts1 is not required for sister kinetochore biorientation and the sgo1-3A mutation must disrupt functions of Sgo1 other than its association with PP2A-Rts1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig2-v1.jpg)\n\n**Figure 2.:** (A) Sgo1-100 and Sgo1-700, but not Sgo1-3A, associate with Rts1. Cells carrying RTS1-9MYC and SGO1-SZZ(TAP) (AM9144), sgo1-100-SZZ(TAP) (AM9272), sgo1-700-SZZ(TAP) (AM9142), sgo1-3A-SZZ(TAP) (AM9145) or no TAP (AM4721) were arrested in nocodazole for 2 hr and treated with the cross-linking reagent dithiobis(succunimidylpropionate) (DSP) before extract preparation as described in \u2018Materials and methods\u2019. Extracts were incubated with IgG-coupled beads and immunoprecipitates analyzed with the indicated antibodies. (B) Sgo1 mutants affect the centromeric localization of Rts1. Wild-type (AM8895), sgo1-100 (AM9439), sgo1-700 (AM9323), sgo1-3A (AM9293) and sgo1\u0394 (AM9624) cells carrying RTS1-3PK, as well as a no tag control (AM1176), were treated with nocodazole for 3 hr before harvesting for anti-PK ChIP. The mean level of Rts1-3PK enrichment at CEN4 from three experimental repeats, determined by qPCR, is shown with bars indicating standard error (*p<0.05, paired t test). (C) Sister kinetochore biorientation after microtubule depolymerization was measured in wild-type (AM4643) and rts1\u0394 (AM5823) cells as in Figure 1 (C). The mean of three experimental repeats with error bars representing standard deviation are shown.\n\n### Sgo1 ensures the maintenance of aurora B at centromeres\n\nIn other systems, shugoshins are known to affect the association of the chromosomal passenger complex (CPC) containing aurora B kinase with centromeres (Kawashima et al., 2007; Vanoosthuyse et al., 2007; Yu and Koshland, 2007; Kelly et al., 2010; Tsukahara et al., 2010; Wang et al., 2010; Yamagishi et al., 2010; Rivera et al., 2012). Budding yeast Sgo1 similarly associates with aurora B (called Ipl1) (Figure 3A). Conditional inactivation of Sgo1 using the auxin-inducible degron (aid) system (Nishimura et al., 2009; Figure 3B) revealed that Sgo1 is not required for the initial recruitment of Ipl1 to centromeres but is important for its maintenance (Figure 3C,D). Indeed, in Sgo1-aid cells arrested in metaphase by treatment with nocodazole, Ipl1 was absent from CEN4 (Figure 3D). Early Ipl1 centromere localization also does not require Alk1 and Alk2 (Figure 3\u2014figure supplement 1), the homologs of Haspin kinase, which is important for centromeric CPC localization in fission yeast and mammals (Kelly et al., 2010; Wang et al., 2010; Yamagishi et al., 2010). The recruitment of Ipl1 early in the cell cycle may instead be due to association with the Ndc10/Cbf3 kinetochore protein that is known to recruit the CPC to centromeres (Yoon and Carbon, 1999; Cho and Harrison, 2012). Sgo1-independent Ipl1 localization early in the cell cycle (Figure 3C) can explain why Ipl1, but not Sgo1, is essential for biorientation in an unperturbed cell cycle, though Ipl1 inhibition and deletion of SGO1 similarly impair biorientation after microtubule depolymerization (Figure 1E, Figure 3\u2014figure supplement 2; Biggins et al., 1999; Tanaka et al., 2002; Indjeian et al., 2005; Indjeian and Murray, 2007). The Ipl1-Sgo1 interaction (Figure 3A) and centromeric localization of Ipl1 (Figure 3E) were also similarly decreased in nocodazole-treated sgo1-100, sgo1-700 and sgo1-3A mutants, which likely contributes to the biorientation defects of these mutants.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig3-v1.jpg)\n\n**Figure 3.:** (A) Ipl1/aurora B co-immunoprecipitates with Sgo1. Cells producing SZZ(TAP)-tagged Sgo1 (AM8975), Sgo1-100 (AM8971), Sgo1-700 (AM8969), Sgo1-3A (AM8973) or no TAP (AM3513) and carrying IPL1-6HA were treated with nocodazole for 2 hr before cross-linking with DSP. Extracts were prepared as described in \u2018Materials and methods\u2019, incubated with IgG-coupled beads and immunoprecipitates were analyzed by immunoblot using the indicated antibodies. (B) Degradation of Sgo1 using the auxin-inducible degron system. Representative anti-Sgo1 immunoblot for the experiments in (C and D) showing that NAA treatment leads to Sgo1 degradation. Anti-Pgk1 immunoblot is shown as a loading control. See below for experimental conditions. (C) Ipl1 is initially recruited to centromeres in the absence of Sgo1. Wild-type (AM3513) and SGO1-aid (AM9619) cells carrying IPL1-6HA were released from a G1 block in the presence of auxin (NAA) and samples harvested at 15 min intervals for measurement of Ipl1-6HA levels by anti-HA ChIP-qPCR. Also shown is a G1 sample from cells lacking IPL1-6HA (AM1176; no tag). The percentages of metaphase and anaphase spindles after anti-tubulin immunoflurescence were scored as a marker of cell cycle progression and anti-Sgo1 immunoblot confirmed Sgo1-aid degradation (shown in B). A representative experiment is shown from a total of three repeats. (D) Wild-type (AM3513) and SGO1-aid (AM9619) cells carrying IPL1-6HA together with a no tag control were arrested in G1 by alpha factor treatment and then released into medium containing NAA and nocodazole for 3 hr before harvesting for ChIP. Levels of Ipl1-6HA were determined at CEN4 and a pericentromeric site (PERICEN4) by qPCR and the mean of three experimental repeats is shown with bars representing standard error (*p<0.05, paired t test). (E) Ipl1-6HA levels at CEN4 measured by anti-HA ChIP-qPCR in wild type (AM3513), sgo1-100 (AM9090), sgo1-700 (AM9082) and sgo1-3A (AM9076) after treating directly with nocodazole for 3 hr are shown, together with a no tag (AM1176) control, treated in the same way. The mean of three independent repeats is shown with bars representing standard error (*p<0.05, paired t test). Note that levels of Ipl1-6HA at CEN4 were consistently higher in experiments where cells were directly treated with nocodazole, compared to those treated upon release from G1 (compare E with D). Presumably those cells in the population that are already in mitosis upon nocodazole addition experience an extended arrest during which Ipl1 is continually recruited.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Wild-type (AM3513), alk1\u0394 alk2\u0394 (AM10612) and alk1\u0394 alk2\u0394 SGO1-aid (AM10393) cells carrying IPl1-6HA as well as a no tag control (AM1176) were arrested in G1 by treatment with alpha factor. Samples were extracted for anti-HA ChIP at the indicated intervals after release from G1. The levels of Ipl1-6HA at CEN4 were measured by ChIP-qPCR.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Biorientation assay showing CEN4-GFP separation in wild-type (AM4643) and ipl1-as (AM10374) cells carrying SPB (SPC42-tdTomato) markers. Cells were released from G1 into nocodazole and NAPP1, before nocodazole was washed out and GFP foci were scored in the metaphase-arrested cells as in Figure 1C.\n\n### Sgo1 associates with condensin and recruits it to the pericentromere\n\nAs an unbiased approach to isolate binding partners that might contribute to biorientation we purified Sgo1 from cycling cells or cells arrested in mitosis by microtubule perturbation (using a cold-sensitive tubulin mutant; tub2-401 [Huffaker et al., 1988]). To increase the probability of capturing transient interactions, we pre-treated cells with the cross-linking agent dithiobis(succunimidylpropionate) (DSP) before preparing extracts and immune-precipitating Sgo1-TAP. Associated proteins were identified by mass spectrometry (Figure 4A,B; Supplementary file 1). Although subunits of PP2A co-purified with Sgo1, we did not detect peptides of the CPC. Interestingly, we identified four out of five subunits of the condensin complex co-purifying with Sgo1 (Figure 4A,B; Supplementary file 1). Co-immunoprecipitation of the Ycs4 and Brn1 subunits of condensin (Figure 4C) with Sgo1-TAP confirmed the Sgo1-condensin interaction (Figure 4D,E). We confirmed that the Sgo1-Ycs4 interaction is not dependent on either DNA or the pre-treatment of cells with cross-linking agent (Figure 4\u2014figure supplement 1). This suggests that Sgo1 and condensin form a complex independently of their association with the pericentromeric chromatin. Therefore, Sgo1 associates with three protein complexes during mitosis: PP2A, CPC, and condensin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig4-v1.jpg)\n\n**Figure 4.:** (A and B) Condensin and PP2A co-purify with Sgo1. Sgo1 was purified from wild-type or protease-deficient cells that were (A) cycling or (B) arrested in mitosis using the cold-sensitive tubulin allele tub2-401 as described in \u2018Materials and methods\u2019. Comparable strains lacking TAP were used as a control for non-specific association with the beads. All cells were treated with the cross-linker, DSP, before harvesting and preparing extracts as described in \u2018Materials and methods\u2019. Extracts were incubated with IgG-coupled beads and immunoprecipitates were visualized on silver-stained SDS-PAGE gels. The table shows the number of peptides of subunits of the PP2A and condensin complexes that were identified in the Sgo1-TAP purifications after mass spectrometry. The full list of identified proteins is given in Supplementary file 1. Strains used in (A) were AM7509 (SGO1-SZZ(TAP), AM1176 (no tag), AM8226 (protease-deficient, SGO1-SZZ(TAP) and AM8184 (protease-deficient, no tag). Strains used in (B) were AM8456 (tub2-401 SGO1-SZZ(TAP), AM2730 (tub2-401, no tag), AM8455 (protease-deficient, tub2-401 SGO1-SZZ(TAP) and AM8259 (protease-deficient, tub401 no tag. (C) A schematic diagram illustrating the composition of budding yeast condensin is shown. (D and E) Cells carrying either YCS4-6HA (AM9138) (D) or BRN1-6HA (AM9266) (E) and SGO1-SZZ(TAP) or no TAP (AM5705 and AM5708) were arrested in nocodazole for 2 hr before treating with DSP. Extracts were incubated with IgG-coupled beads and immunoprecipitates were analyzed with the indicated antibodies by immunoblot. (F\u2013H) Sgo1 is required for Brn1 association with the pericentromere. The genome-wide localization of Brn1-6HA was determined in wild-type (AM5708) and sgo1\u0394 (AM8834) cells by anti-HA ChIP followed by high throughput sequencing (ChIP-Seq) after arresting in mitosis by treating with nocodazole for 3 hr. (F) Brn1 enrichment along chromosome V along with a magnification of a 50 kb region including the centromere is shown. The number of reads at each position was normalized to the total number of reads for each sample (RPM: reads per million) and shown in the Integrated Genome Viewer from the Broad Institute (Robinson et al., 2011). (G) The number of reads at coordinates corresponding to the rDNA region on chromosome XII is shown for wild-type and sgo1\u0394 anti-HA ChIP samples normalized to the total number of reads for each sample. Brn1 enrichment at the rDNA is similar in wild-type and sgo1\u0394 cells. (H) Brn1 enrichment in a 50 kb domain surrounding all 16 budding yeast centromeres is shown for wild-type and sgo1\u0394 cells. For both wild type and sgo1\u0394, the ratio of the local maximum in a 100 bp window for ChIP sample/input is calculated at the indicated distance from the centromere for all 16 chromosomes. Box plot of maximum count value for 100 bp windows for 25 kb on both sides of each centromere is shown to give a composite view of all 16 pericentromeres. (I and J) Recruitment of Brn1 to centromeres occurs coincident with, and is dependent on, Sgo1. Wild-type cells carrying SGO1-9MYC and BRN1-6HA (AM9622) as well as sgo1\u0394 cells (AM8834) carrying BRN1-6HA were arrested in G1 using alpha factor. Samples were extracted at 15 min intervals after release from G1 for anti-HA and anti-Myc ChIP and tubulin immunofluorescence. (I) The levels of Brn1-6HA and Sgo1-9Myc at CEN4 were measured at the indicated timepoints by anti-HA and anti-Myc ChIP-qPCR, respectively. Also shown is a G1 sample from cells lacking BRN1-6HA (no tag; AM1176). (J) The percentages of metaphase and anaphase spindles after anti-tubulin immunofluorescence were scored as a marker of cell cycle progression. Shown is a representative experiment from three repeats. (K) Schematic diagram illustrating the protein complexes (PP2A, condensin, CPC) recruited to the pericentromere by shugoshin.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cells carrying YCS4-6HA and SGO1-SZZ(TAP) (AM9138) or no TAP (AM5705) were arrested in mitosis by treatment with nocodazole for 2 hr. Cultures were either harvested and directly drop-frozen (\u2212DSP) or treated with DSP prior to drop freezing (+DSP) as described in \u2018Materials and methods\u2019. Extracts were either treated with 25 U of the DNA degrading agent, benzonase (+benzonase) and rotated at room temperature or held on ice (\u2212benzonase) for 30 min. All samples were incubated with IgG-coupled beads and analyzed by immunoblot with the indicated antibodies.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** This is the same analysis as in Figure 3H, except that only unique reads are included (therefore eliminating duplicate samples generated during the PCR amplification step). Both methods of analysis lead to the conclusion that Brn1 levels in the pericentromere are greatly reduced in sgo1\u0394 cells. Note that the centromeric peak may be an artifact as centromeric sequences were over-represented in the sgo1\u0394 sample compared to wild type (where they were under-represented compared to the rest of the genome). Potentially, altered pericentromeric structure in sgo1\u0394 cells could enable more efficient recovery of these sequences during the purification procedure.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Brn1 enrichment in a 20 kb region surrounding all 16 individual centromeres in wild type and sgo1\u0394 cells is shown for the experiment described in Figure 4F\u2013H. All reads were included in this analysis.\n\nCondensin complexes structurally organize chromosomes and enable their efficient segregation, though how they do so remains unclear (Cuylen and Haering, 2011; Hirano, 2012). In budding yeast, condensin is most highly enriched in the rDNA and at each pericentromere (D\u2019Ambrosio et al., 2008). Condensin recruitment to the rDNA depends on monopolin (Csm1/Lrs4) (D\u2019Ambrosio et al., 2008). Fission yeast monopolin (Pcs1/Mde4) recruits condensin to centromeres where it prevents merotely (attachment of a single kinetochore to microtubules from both poles) (Gregan et al., 2007; Tada et al., 2011), unlike budding yeast condensin which is recruited to centromeres independently of monopolin subunit Lrs4 (Brito et al., 2010). How condensin is recruited to the pericentromere remains unknown. To test whether the pericentromeric localization of condensin depends on Sgo1 we examined the association of the Brn1 condensin subunit genome wide using chromatin immunoprecipitation followed by high throughput sequencing (ChIP-seq) in wild-type and sgo1\u0394 cells arrested in mitosis by treatment with nocodazole. Although the pattern of reads along chromosome arms and mapping to the rDNA was similar in wild-type and sgo1\u0394 cells (Figure 4F,G), we observed a clear reduction in pericentromeric levels of Brn1 in sgo1\u0394 cells, although peaks of variable height remained at some, but not all core centromeres (Figure 4H, Figure 4\u2014figure supplement 2, 3). Consideration of all 16 centromeres collectively revealed that in wild-type cells, condensin is enriched on average throughout an approximately 15 kb domain on either side of the centromere and that this enrichment is lost in sgo1\u0394 cells (Figure 4H). We conclude that Sgo1 is required for condensin association throughout the pericentromere.\n\nSgo1 is absent in G1 and produced only upon cell cycle entry (Marston et al., 2004). Although condensin is present in G1 cells and localized to the nucleolus, it begins to co-localize with kinetochores only upon cell cycle entry (Bachellier-Bassi et al., 2008). We found that recruitment of condensin to a centromere-proximal site occurs coincidently with, and depends on, Sgo1 (Figure 4I,J). Therefore, in addition to controlling the centromere localization of PP2A-Rts1 and the CPC, Sgo1 recruits condensin to the pericentromere (Figure 4K).\n\n### Hierarchical assembly of pericentromeric factors\n\nLike condensin and shugoshin (D\u2032Ambrosio et al., 2008; Kiburz et al., 2005; Figure 4), cohesin is highly enriched throughout the pericentromere (Glynn et al., 2004; Lengronne et al., 2004; Weber et al., 2004). What is the relationship between cohesin, condensin, and shugoshin? Although shugoshins play important roles in regulating the timing of cohesion loss during meiosis and mammalian mitosis (see Clift and Marston, 2011; Guti\u00e9rrez-Caballero et al., 2012 for reviews), this is not the case in budding yeast mitosis. Budding yeast sgo1 mutants are not defective in cohesion (Indjeian and Murray, 2005; Marston et al., 2004) and cohesin is normally localized to chromosomes (Kiburz et al., 2005). We confirmed the proper association of cohesin in sgo1\u0394 cells arrested in mitosis by ChIP-Seq of its HA-tagged Scc1 subunit (Figure 5A,B). The profile of Scc1 association along chromosome V (Figure 5A) and surrounding all 16 budding yeast centromeres in sgo1\u0394 cells (Figure 5B, Figure 5\u2014figure supplement 1) is indistinguishable from that of wild-type cells. ChIP-qPCR analysis confirmed that the levels of Scc1 cohesin subunit are similar at two tested centromeres in wild-type and sgo1\u0394 cells (Figure 5\u2014figure supplement 2). We conclude that Sgo1 is not required for cohesin localization at centromeres, pericentromeres or along chromosomes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig5-v1.jpg)\n\n**Figure 5.:** Wild-type (AM1145) and sgo1\u0394 (AM1474) cells carrying SCC1-6HA were arrested in mitosis by treatment with nocodazole for 3 hr. Samples were harvested, anti-HA ChIP was performed and both input and IP samples were sequenced for both strains. (A) Scc1-6HA enrichment along chromosome V along with a magnification of a 50 kb region including the centromere is shown. The number of reads at each position were normalized to the total number of reads for each sample and displayed using the Integrated Genome Viewer from the Broad Institute (Robinson et al., 2011). (B) Box plot of maximum count value for 100 bp windows for 25 kb on both sides of each centromere is shown to give a composite view of all 16 pericentromeres. All reads are included. (C) Schematic diagram indicating hierarchy of factors required for condensin association with the pericentromere.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Scc1 enrichment in a 20 kb region surrounding all 16 individual centromeres in wild type and sgo1\u0394 cells is shown from the experiment in Figure 5. All reads were included in this analysis.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Wild type and sgo1\u0394 cells were treated as described in Figure 5 except that ChIP samples were analyzed by qPCR using primer sets at CEN4, CEN5 and a site in the pericentromere of chromosome IV. The mean of three independent experiments is shown with bars indicating standard error.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Wild type (AM906) and pMET-SCC1 (AM6673) strains carrying SGO1-6HA together with no tag wild type (AM1176) and pMET-SCC1 controls (AM1599) were arrested in G1 using alpha factor in the presence of methionine (to deplete Scc1). Strains were released into medium containing nocodazole and methionine for 3 hr and levels of Sgo1-6HA at the indicated sites were measured by ChIP-qPCR.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Wild type (AM5708), SCC2-aid (AM8918), chl4\u0394 (AM8885), iml3\u0394 (AM5710) and lrs4\u0394 (AM9766) strains carrying BRN1-6HA, as well as a no tag control (AM1176) were treated with nocodazole and NAA (to degrade Scc2-aid) for 3 hr before harvesting for ChIP and measuring the levels of Brn1-6HA at CEN4 by ChIP-qPCR.\n\nConversely, we found that cohesin, and factors required for its loading, are required for the proper association of Sgo1 with the centromere and pericentromere (Figure 5, Figure 5\u2014figure supplements 3 and 4). Depletion of the Scc1 subunit of cohesin led to a great reduction in the pericentromeric levels of Sgo1 with only low levels remaining at the centromere itself (Figure 5\u2014figure supplement 3). These findings suggest that cohesin promotes Sgo1 association with the pericentromere, which, in turn, recruits condensin, implying an indirect role for cohesin in localizing condensin (through Sgo1) (Figure 5C). Consistent with this idea, proper Brn1 association with the centromere in mitosis requires both the Scc2 protein that is required for cohesin loading onto chromosomes and subunits of the kinetochore (Iml3/Chl4) that target Scc2 to centromeres (Ciosk et al., 2000; Fernius et al., 2013; D\u2032Ambrosio et al., 2008; Ng et al., 2009; Figure 5\u2014figure supplement 4), However, unlike in fission yeast, the monopolin subunit Lrs4 is not required for Brn1 association with the centromere (Brito et al., 2010; Figure 5\u2014figure supplement 4). Overall, we suggest a hierarchy of assembly in which the combined effects of Bub1 kinase and cohesin concentrate shugoshin in the pericentromere, which in turn recruits condensin (Fernius and Hardwick, 2007; Kawashima et al., 2010; Yamagishi et al., 2010; 2008) (Figure 5C).\n\n### Sgo1 is sufficient for condensin recruitment\n\nNext, we asked whether Sgo1 was sufficient to recruit condensin to chromosomes. Overproduction of Sgo1, which is known to enable its association with chromosome arms and delay cells in metaphase (Clift et al., 2009; Figure 6A) led to increased levels of condensin at centromere, pericentromere and chromosome arm sites (Figure 6B). SGO1 overexpression also increased Brn1 association with the centromere and pericentromere in cells arrested in mitosis by nocodazole treatment (Figure 6\u2014figure supplement 1), indicating that increased enrichment of Brn1 in SGO1-overexpressing cells was not purely a consequence of the metaphase arrest. As a more direct test of the ability of Sgo1 to bring condensin to chromosomes, we produced a Sgo1-GFP-TetR fusion protein in cells carrying tetO repeats integrated on a chromosomal arm. In the absence, but not the presence of doxycycline, Sgo1-GFP-TetR is expected to bind to the ectopic site and recruit its binding partners (Figure 6C). Indeed we found that tethered Sgo1-GFP-TetR efficiently recruited the condensin subunit Brn1, the PP2A subunit, Rts1, and to a lesser extent the CPC subunit, Ipl1 to a site directly adjacent to the tetOs (Figure 6D,F; \u223c50 bp R ectopic site), although centromeric levels were not affected (Figure 6E,G). The recruitment of these proteins to a site \u223c800 bp to the left of the tethering site was much less efficient (Figure 6D,F), suggesting that recruitment occurs through direct binding to Sgo1, rather than an effect of Sgo1 on the surrounding chromatin. Taken together, these results show that Sgo1 is both necessary and sufficient for condensin recruitment.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig6-v1.jpg)\n\n**Figure 6.:** (A and B) Sgo1 overproduction leads to increased levels of Brn1 on chromosomes. Cells carrying BRN1-6HA and that were otherwise wild type (AM5708) or carrying pGAL-SGO1 (AM10859) integrated an ectopic locus, were arrested in G1 in rich medium containing raffinose and adenine using alpha factor (YEP + R + A). After 2 hr 30 min, galactose (2%) was added to induce SGO1 overexpression and 30 min later, cells were released from G1. Samples were collected at the indicated times after release from G1 for analysis of cell cycle progression by scoring spindle morphology after anti-tubulin immunofluorescence (A) or for measurement of Brn1 levels by anti-HA ChIP-qPCR (B). Sites analyzed were at CEN4, a pericentromeric site or a chromosomal arm site on chromosome IV. A representative experiment from a total of three independent repeats is shown. (C\u2013G) Tethered Sgo1 at an ectopic site recruits Brn1, Rts1 and Ipl1. (C) Schematic diagram showing the expected effects of doxycycline at the ectopic site and at CEN4, as well as the locations of primer sets used for qPCR (yellow stars). Primer sets used were \u223c800 bp left of the tethering site, \u223c50 bp right of the tethering site and at CEN4. (D\u2013G) Strains carrying Sgo1-TetR-GFP and tetOs integrated at the HIS3 locus were arrested in nocodazole for 3 hr either in the presence (+DOX) or absence (\u2212DOX) of doxycycline and harvested for ChIP-qPCR. (D and E) Anti-HA ChIP was performed on SGO1-TetR-GFP HIS3::tetOs strains carrying either BRN1-6HA (AM9847), IPL1-6HA (AM9940) or no tag (AM9655) and levels of Brn1-6HA and Ipl1-6HA were measured by qPCR at the indicated sites adjacent to the ectopic site (D) or at CEN4 (E). (F and G) Anti-PK ChIP was performed on SGO1-TetR-GFP HIS3::tetOs strains carrying Rts1-3PK (AM9783) or no tag (AM9655) and levels of Rts1-3PK were measured by qPCR at the indicated sites adjacent to the ectopic site (F) or at CEN4 (G). In (D\u2013G), the mean of three or four experimental repeats is shown with bars representing standard error (*p<0.05, unpaired t test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Strains AM5708 (BRN1-6HA), AM10859 (BRN1-6HA pGAL-SGO1) were pre-cultured in YEP + R + Ade medium before supplementing with nocodazole and galactose (2 hr) for 3 hr and then harvesting for anti-HA ChIP. The levels of Brn1-6HA were measured at the indicated sites by qPCR.\n\n### Pericentromeric condensin contributes to error correction, independently of aurora B recruitment\n\nBiorientation is achieved both because of a bias for sister kinetochores to be captured by microtubules from opposite poles and owing to error correction which destabilizes mono-oriented kinetochores, allowing a further opportunity for biorientation to occur (Tanaka, 2010). We tested the requirement of condensin for error correction using a conditional degron version of its Ycs5 subunit by monitoring CEN4-GFP separation in metaphase-arrested cells after microtubule depolymerization (Figure 1C). In cells where degradation of condensin\u2019s Ycs5 subunit (YCS5-aid) was induced, CEN4-GFP separation was delayed compared to wild-type cells, albeit not to the extent of sgo1\u0394 cells (Figure 7A), suggesting that condensin facilitates biorientation. To further test whether the error correction process operates normally we developed a live cell microfluidics assay to allow biorientation to be observed directly as microtubules were allowed to reform (Figure 7B,C; Videos 1 and 2). Overall, as expected, and consistent with a biorientation defect, the number of frames in which cells with split CEN4-GFP foci were observed was reduced in cells lacking SGO1, where IPL1 was inhibited (ipl1-as with NAPP1) or Ycs5 was degraded (Ycs5-aid with NAA) compared to wild-type cells (Figure 7D). However, the distance between separated CEN4-GFP foci was comparable in all strains, suggesting that kinetochore-microtubule attachments, spindle tension, and cohesion are all functional and only the orientation of attachment is defective in sgo1\u0394, YCS5-aid and ipl1-as cells (Figure 7E). Furthermore, consistent with a failure to properly biorient chromosomes, unseparated CEN4-GFP tended to be closer to the SPB in sgo1\u0394, YCS5-aid and ipl1-as cells than in wild-type cells (Figure 7\u2014figure supplement 1). We used the switch between one or two CEN4-GFP foci as a measure of kinetochore reorientation during error correction (Figure 7F). The average frequency of switching between 1 and 2 GFP foci was significantly reduced in sgo1\u0394 and ipl1-as cells, as expected (Figure 7F). We further observed a more modest reduction in switching in YCS5-aid cells, indicating that condensin contributes to proper error correction (Figure 7F). The role of condensin in error correction cannot be to localize Ipl1, as we found that Ipl1 maintenance at kinetochores requires Sgo1 (Figure 3D), but not Ycs5 (Figure 7G). Rather, we speculate that condensin shapes the pericentromere to place sister kinetochores in a rigid back-to-back orientation that provides the framework for tension-sensing.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig7-v1.jpg)\n\n**Figure 7.:** (A) Sister kinetochore biorientation is defective after nocodazole washout in cells lacking condensin. Strains carrying SPB (Spc42-tdTomato) and CEN4 (CEN4-GFP) markers were released from a G1 arrest into nocodazole and arrested in metaphase by CDC20 depletion. After 3 hr, nocodazole was washed out (t = 0) and CEN4-GFP separation scored at the indicated intervals as shown in Figure 1C. Error bars represent standard deviation (wild type and YCS5-aid; n = 3) or range (sgo1\u0394; n = 2; reproduced from Figure 1E). A representative anti-aid immunoblot is shown to confirm Ycs5 degradation upon NAA addition. Samples were taken in G1 (\u2212NAA) and 120 min after release (+NAA). Anti-Kar2 immunoblot is shown as a loading control. (B\u2013F) Condensin contributes to efficient error correction. (B) Scheme of the live single-cell microfluidics experiment. Wild-type (AM4643), sgo1\u0394 (AM6117), YCS5-aid (AM9038) and ipl1-as (AM10374) cells carrying CEN4 (CEN4-GFP) and SPB markers (SPC42-tdTomato) were released from a G1 arrest into nocodazole, NAA and NAPP1 and arrested in metaphase by CDC20 depletion. After 30 min, nocodazole was washed out. When the majority of cells had 2 SPBs (\u223c1 hr 30 min later), we began imaging and a total of 21 frames were grabbed at approximately 74 s intervals. (C) Representative images for wild type and ipl1-as are shown. Numbers indicate time (s) each frame was grabbed and asterisks indicate a change in GFP dot number compared to the previous frame. (D) The overall percentage of separated CEN4-GFP foci was determined for cells with two visible SPBs from all frames combined. (E) The distance between CEN4-GFP foci was measured in cells with separated foci. Box boundaries represent the upper and lower quartiles, respectively. The red cross indicates the mean, the horizontal line indicates the median and error bars show the maximum and minimum values observed. n = 396 (wild type), 108 (sgo1\u0394), 267 (YCS5-aid) and 154 (ipl1-as). (F) The observed frequency of switching between one and two GFP foci was calculated for cells with 2 SPBs. A student t test was used to obtain p values. (G) Ycs5 is not required for Ipl1 association with the centromere. The levels of 6HA-tagged Ipl1 in wild-type (AM3513) and YCS5-aid (AM10334) cells, grown in the presence of NAA and nocodazole for 3 hr, were measured at CEN4 by anti-HA ChIP-qPCR and compared to a no tag control (AM1176). The mean of three independent experiments is shown with bars representing standard error. This is the same experiment as shown in Figure 3D and the wild-type data is reproduced for comparison.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The distance from CEN4-GFP to the nearest SPC42-tdTomato focus was measured for cells with just one visible CEN4-GFP foci from the experiment shown in Figure 7C\u2013F. The fraction of cells with a CEN4-GFP to SPB distance greater or less than the median value for wild type (0.865 mm) is plotted for wild type, sgo1\u0394, YCS5-aid and ipl1-as cells. p values were obtained using a chi square test.\n\n![Video 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-media1.avi.jpg)\n\n**Video 1.:** The video corresponds to the image gallery in Figure 5C (upper panel).\n\n![Video 2.](https://cdn.elifesciences.org/articles/01374/elife-01374-media2.avi.jpg)\n\n**Video 2.:** The video corresponds to the image gallery in Figure 5C (lower panel).\n\n### Shugoshin and pericentromeric condensin bias sister kinetochores to capture by microtubules from opposite poles\n\nAlthough it has been recognized that sister kinetochores are intrinsically biased towards capture by microtubules from opposite poles (Indjeian and Murray, 2007), the factors required were not identified. The molecular basis of the bias towards sister kinetochore biorientation has therefore remained unknown. If our hypothesis that condensin creates a preferred pericentromeric framework upon which the error correction machinery can act is correct, we reasoned that condensin could also impose a bias on kinetochores to biorient. When SPBs are allowed to separate before microtubules attach to sister kinetochores, they tend to biorient normally, even when error correction is impaired (Indjeian and Murray, 2007). To test the requirement of shugoshin and condensin for sister kinetochore bias, we allowed cells to progress from G1 into the cell cycle for 1.5 hr to allow SPB separation, before treating the cells with nocodazole for 30 min. Subsequently, nocodazole was washed out and we simultaneously began filming (Figure 8A). We recorded the percentage of cells with separated SPBs at the start of filming that separated CEN4-GFP foci at least once during the observation period (approximately 30 min) (Figure 8B,C; Videos 3 and 4). Similar numbers of wild-type and ipl1-as cells achieved sister centromere separation, indicating that the error correction process is not required to bias sister kinetochores towards biorientation (Figure 8B). However, remarkably, the frequency of separated CEN4-GFP foci was reduced about two-fold in sgo1\u0394 and YCS5-aid cells, as compared to wild-type cells (Figure 8B). This indicates that in the absence of shugoshin or pericentromeric condensin, the bias to sister kinetochore biorientation is lost. We conclude that both shugoshin and condensin impose a bias on sister kinetochores to biorient and that this is independent of error correction by Aurora B (Ipl1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig8-v1.jpg)\n\n**Figure 8.:** (A\u2013C) Condensin and Sgo1, but not Ipl1, are required to bias sister kinetochores towards biorientation. (A) Scheme of the microfluidics assay to test sister kinetochore bias. Wild-type, sgo1\u0394, YCS5-aid and ipl1-as cells as in Figure 5B were released from a G1 arrest into NAA and NAPP1 and arrested in metaphase by CDC20 depletion. SPBs were allowed to separate for 1 hr 30 min before cells were treated with nocodazole for an additional 30 min. After 2 hr total, nocodazole was washed out and frames were grabbed at approximately 94 s intervals for a total of 21 frames. (B) The percentage of cells that separated CEN4-GFP foci at least once during the observation period is shown for the indicated strains. p values indicate significance (chi-square test). (C) Representative images of wild-type and YCS5-aid cells are shown. Time of image acquisition (s) is shown. The asterisk indicates the first time GFP foci are separated.\n\n![Video 3.](https://cdn.elifesciences.org/articles/01374/elife-01374-media3.avi.jpg)\n\n**Video 3.:** The video corresponds to the image gallery in Figure 6C (upper panel).\n\n![Video 4.](https://cdn.elifesciences.org/articles/01374/elife-01374-media4.avi.jpg)\n\n**Video 4.:** The video corresponds to the image gallery in Figure 6C (lower panel).\n\n### The bias towards sister kinetochore biorientation relies on the shugoshin-condensin interaction\n\nShugoshins are emerging as factors that define a hub at the pericentromere that integrates the functions of multiple protein complexes to ensure the accuracy of chromosome segregation (Figure 9A) (Rattani et al., 2013). To explore the relationship between shugoshin and its binding partners further, we asked whether the Sgo1-100, Sgo1-700 and Sgo1-3A proteins retain their interaction with condensin. We found that Sgo1-700 failed to associate with Brn1, whereas Sgo1-100 and Sgo1-3A retained Brn1 association (Figure 9B). Analysis of Brn1 association with representative centromere-proximal and chromosomal arm sites by ChIP-qPCR revealed that only the sgo1-3A mutant, and not the sgo1-100 or sgo1-700 mutants maintained Brn1 localization at the pericentromere in cells arrested in mitosis by nocodazole treatment (Figure 9C). However, in both sgo1-100 and sgo1-700 mutant cells progressing from G1 into the cell cycle, Brn1-6HA retained a partial ability to associate with the centromere and pericentromere, though only in the case of the sgo1-100 did this occur in a timely manner (Figure 9\u2014figure supplement 1). As both the Sgo1-100 and Sgo1-700 proteins themselves fail to be maintained at the centromere (Figure 1B), these observations are difficult to interpret. As a more direct test of the ability of the mutant proteins to recruit condensin, we fused Sgo1-100, Sgo1-700, and Sgo1-3A to tetR and artificially tethered them to tetO arrays located adjacent to CEN4 in cells that otherwise lacked SGO1 (Figure 9D\u2013F). Tethering of Sgo1-tetR-GFP, Sgo1-100-tetR-GFP, or Sgo1-3A-tetR-GFP, all significantly increased Brn1-6HA levels at CEN4 compared to a no tag control (Figure 9E). In contrast, and consistent with our finding that Brn1 fails to co-immunoprecipitate with Sgo1-700 (Figure 9B), tethering of Sgo1-700-tetR-GFP did not significantly enrich Brn1-6HA at the same site, though it was produced to similar levels as the Sgo1-100-tetR-GFP protein (Figure 9D,E). Despite the ability of Sgo1-100-tetR-GFP and Sgo1-3A-tetR-GFP fusion proteins to recruit Brn1 to the tethering site at CEN4, only the wild-type Sgo1-tetR-GFP fusion protein was able to partially rescue the segregation of chromosome IV after release from a nocodazole arrest (Figure 9\u2014figure supplement 2). This is anticipated as none of the mutant proteins are expected to enable proper Ipl1 association with the centromere (Figure 3E). We conclude that Sgo1-100 and Sgo1-3A are able to associate with, and recruit, condensin, whereas Sgo1-700 loses this interaction.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig9-v1.jpg)\n\n**Figure 9.:** (A) Schematic diagram showing Sgo1-associated complexes and their functions at the pericentromere. (B) Sgo1-100 and Sgo1-3A, but not Sgo1-700, retain association with Brn1. Cells carrying BRN1-6HA and SGO1-SZZ(TAP) (AM9266), SGO1-100-SZZ(TAP) (AM9149), SGO1-700-SZZ(TAP) (AM9264), SGO1-3A-SZZ(TAP) (AM9262) or no TAP (AM5708) were arrested in nocodazole for 2 hr before treating with the cross-linker DSP. Prepared extracts were incubated with IgG-coupled beads and immunoprecipitates analyzed by immunoblotting with the indicated antibodies. (C) Brn1 is maintained at the centromere in metaphase-arrested sgo1-3A, but not sgo1-100 or sgo1-700 cells. Wild-type (AM5708), sgo1\u0394 (AM8834), sgo1-100 (AM9442), sgo1-700 (AM9291) and sgo1-3A (AM9276) cells carrying BRN1-6HA as well as a no tag control (AM1176) were arrested in nocodazole for 2 hr before harvesting for anti-HA ChIP. The levels of Brn1-6HA were measured at the indicated sites by qPCR. (D\u2013F) Tethered Sgo1, Sgo1-100 or Sgo1-3A, but not Sgo1-700 can enrich Brn1-6HA at CEN4 in otherwise sgo1\u0394 cells. SGO1-tetR-GFP (AM14012), sgo1-100-tetR-GFP (AM13902), sgo1-700-tetR-GFP (AM13907), and sgo1-3A-tetR-GFP (AM13904) were introduced into cells carrying tetOs integrated at CEN4, producing Brn1-6HA and with SGO1 deleted from its endogenous locus. A strain carrying just tetOs integrated at CEN4 but otherwise wild type was used as a no tag control (AM11060). All strains were arrested in mitosis by treatment with nocodazole for 3 hr before harvesting for ChIP and immunoblotting. (D) Schematic diagram of the tethering locus. (E) Levels of Brn1 recruited adjacent to the tethering site (CEN4) when the indicated proteins are fused to TetR-GFP, as measured by ChIP-qPCR. The mean of four independent repeats is shown except for sgo1-3A-tetR-GFP where six repeats are included. Error bars are standard error, significance was calculated using the student t test (*p<0.05). (F) Total cellular levels of the Sgo1-tetR-GFP fusion proteins, Brn1-6HA and Pgk1 (loading control) were analyzed by immunoblot using the indicated antibodies. (G) The bias to sister kinetochore biorientation is absent in sgo1-700 cells. Wild-type (AM4643), sgo1-100 (AM8924), sgo1-700 (AM8925) and sgo1-3A (AM8923) cells were released from G1 and treated with nocodazole after SPB separation as in Figure 7A. The percentage of cells that separated CEN4-GFP foci at least once during the observation period is shown for the indicated strains. p values indicate significance (chi-square test).\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (A and B) Condensin is at least partially recruited to the centromere after release from G1 in sgo1-100 cells. Wild-type (AM5708), sgo1-100 (AM9442) and sgo1-700 (AM9291) cells carrying BRN1-6HA were arrested in G1 using alpha factor. Samples were extracted for anti-HA ChIP-qPCR at the indicated levels for analysis of Brn1 association with CEN4 (A) and the pericentromere of chromosome IV (B).\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig9-figsupp2-v1.jpg)\n\n**Figure 9\u2014figure supplement 2.:** Diploid cells carrying tetR-tdTomato and SGO1-tetR-GFP (AM14005), sgo1-100-tetR-GFP (AM14006), sgo1-700-tetR-GFP (AM14007), sgo1-3A-tetR-GFP (AM14008) or no Sgo1-TetR fusion (AM14009), with tetOs integrated at CEN4 and with SGO1 deleted from its endogenous locus were treated with nocodazole to depolymerize microtubules and arrest cells in mitosis. Nocodazole was washed out, allowing microtubules to reform and, 60 min later, the position of CEN4-tdTomato foci was scored in the anaphase cells after chromosome segregation. At least 100 cells were scored from each of two experimental repeats with error bars representing the range, except for the sgo1-3A-tetR-GFP strain, where results are shown from a single experiment.\n\nThis finding allowed us to test a prediction: if Sgo1-dependent deposition of condensin at the pericentromere is critical for biasing sister kinetochores towards biorientation, then Sgo1-700, which fails to bind to or recruit condensin to the pericentromere (Figure 9B\u2013E) should lack the sister kinetochore bias. In contrast, Sgo1-3A, which recruits condensin to the pericentromere (Figure 9B,C), and Sgo1-100, which retains at least a partial ability to deposit condensin at the pericentromere (Figure 9F, Figure 9\u2014figure supplement 1), should enable some degree of sister kinetochore bias. In accordance with these predictions, our live cell assay revealed that only the sgo1-700 mutant was significantly defective in the sister kinetochore bias (Figure 9G). We conclude that condensin recruitment by Sgo1 biases sister kinetochores towards biorientation.\n\n## Discussion\n\nOur findings have demonstrated that Sgo1 plays a central role in promoting biorientation, through at least two separate mechanisms. Sgo1 enables error correction by retention of Ipl1 (aurora B) at the centromere. Sgo1 separately recruits condensin to the pericentromere, which both imposes a bias on sister kinetochores to biorient and enables effective error correction.\n\nOur findings provide the first molecular explanation for the bias to sister kinetochore biorientation. Interestingly, Indjeian and Murray (2007) demonstrated the existence of a bias to sister kinetochore biorientation in the sgo1-100 mutant, which is defective in the error correction process (Indjeian et al., 2005). Consistent with this study, we confirmed that the sgo1-100 mutant retains this bias to sister kinetochore biorientation (Figure 9G). Through analysis of both the sgo1-700 and sgo1\u0394 mutants we have, nevertheless uncovered a role for Sgo1 in biasing sister kinetochores towards biorientation. Moreover, our data provide a molecular explanation for the loss of sister kinetochore bias in sgo1-700 and sgo1\u0394 cells: that is the inability to associate with and recruit condensin to centromeres. In contrast, sgo1-100 and sgo1-3A cells, which can enable condensin recruitment to centromeres are proficient in the bias to sister kinetochore biorientation.\n\nCondensin is a cohesin-related complex that can form a ring-like structure and has been proposed to organize chromosomes by bringing distant chromosomal sequences together (Cuylen and Haering, 2011; Cuylen et al., 2011; Hirano, 2012). The mechanism by which condensin is loaded onto and subsequently maintained on chromosomes is largely unknown. Here, we have identified shugoshin as an important determinant of condensin association with the pericentromere. Indeed, the pericentromeres and rDNA appear to be the predominant, if not the only sites of condensin association with chromosomes in mitosis. Our findings have also suggested a hierarchy of assembly at the pericentromere. In contrast to the idea that the Scc2/4 cohesin-loader complex loads condensin directly (D\u2019Ambrosio et al., 2006), we propose that Scc2/4 indirectly affects condensin localization through loading cohesin, which we show is required for the pericentromeric association of Sgo1. In support of this idea, only cohesin and not condensin subunits were identified in Scc2/4 immunoprecipiates (Fernius et al., 2013). Furthermore, since Shugoshin relies on cohesin for its association with the pericentromere (Kiburz et al., 2005; Yamagishi et al., 2008; Figure 5), the importance of cohesin in defining kinetochore geometry (Sakuno et al., 2009) could be to enable proper condensin association with chromosomes by recruiting shugoshin to the pericentromere. How might condensin shape a favorable pericentromeric geometry? While the molecular function of condensin is not well understood, condensin is known to alter the structural properties of centromeres that affect their dynamic behavior (Ribeiro et al., 2009; Stephens et al., 2011). We propose that condensin organizes the pericentromeric chromatin to provide a structural integrity to the pericentromere that enables it to adopt a \u2018back-to-back\u2019 geometry that orients sister kinetochores in opposite directions, thereby favoring their biorientation (Figure 10). Although our data indicate that condensin is important to increase the efficiency of biorientation, we do not believe that it is essential for this process in budding yeast, provided that error correction machinery is intact. However, budding yeast centromeres are relatively simple and only a single microtubule contacts each kinetochore (Winey et al., 1995) increasing the probability that correct attachments can be made by chance. This is not the case for organisms with more complex centromeres where it is likely that kinetochore geometry plays a major role in ensuring sister kinetochore biorientation is achieved.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/01374/elife-01374-fig10-v1.jpg)\n\n**Figure 10.:** Shugoshin ensures sister kinetochore biorientation through two mechanisms. First, early in the cell cycle, shugoshin mediates the enrichment of condensin within the pericentromere. We propose that condensin enables the pericentromere to adopt a geometry that favors the capture of sister kinetochores by microtubules from opposite poles, thereby biasing them to biorient. Second, shugoshin maintains aurora B at the pericentromere for those kinetochores that fail to biorient and come under tension. Aurora B destabillizes these tension-less attachments, thereby providing a further chance to for sister kinetochores to make the appropriate, tension-generating attachments. We suggest that condensin facilitates this \u2018error correction\u2019 process by conferring a rigid structure to the pericentromere upon which aurora B can act.\n\nIn addition to influencing pericentromeric structure through condensin, shugoshins also confer distinct properties to pericentromeric cohesin through PP2A, both in meiosis and mammalian mitosis, as well as influence kinetochore\u2013microtubule interactions through aurora B. Shugoshins are therefore emerging as functional hubs that define the pericentromere, allowing it to perform specialized functions that are key for the fidelity of chromosome segregation.\n\n## Materials and methods\n\n### Yeast strains\n\nStrains used in this work are listed in Supplementary file 2A. All yeast strains were derivatives of W303 except the protease-deficient strain, JB811, used for TAP pulldowns. The sgo1-100 and sgo1-700 alleles were described in Indjeian et al. (2005), the sgo1-3A allele was described in Xu et al. (2009) and sgo1\u0394 was described in Clift et al. (2009). A PCR-based approach was used to tag Sgo1 with SZZ(TAP); Ipl1, Brn1 and Ycs4 with 6HA; and Rts1 with 3Pk or 9Myc (Longtine et al., 1998; Knop et al., 1999). Auxin-inducible degron versions of Sgo1 and Ycs5 were constructed as described by Nishimura et al. (2009). To generate a strain carrying Sgo1-TetR-GFP, SGO1 was cloned upstream of tetR-GFP in p128(TetR-GFP) (Michaelis et al., 1997) to generate plasmid AMp769 which was integrated at the LEU2 locus after EcoRV digestion. TetR-GFP fusions to Sgo1-100, Sgo1-700 or Sgo1-3A were generated by PCR amplication of these alleles from the genomic locus and replacement of SGO1 in AMp769 (sgo1-700, sgo1-3A) or by site-directed mutagenesis using the Quikchange kit (Agilent Technologies, Santa Clara, CA). Ipl1-as5 was described in Pinsky et al. (2006). pMET-CDC20 was described in Fernius and Marston (2009). The CEN4-GFP label (CEN4-tetOs::URA3 leu2::TetR-GFP::LEU2) was described in He et al. (2000); Tanaka (2010) and SPC42-tdTomato was described in Fernius and Hardwick (2007).\n\n### Growth conditions\n\nNocodazole was used at 15 \u03bcg/ml and re-added to 7.5 \u03bcg/ml every 1 hr. NAA (synthetic auxin) was used at 500 \u03bcM and readded to 250 \u03bcM every 45 min. Methionine was used at 8 mM and re-added to 4 mM every 45 min. NAPP1 (to inhibit ipl1-as) was used at 50 \u03bcm and doxycycline was used at 5 \u03bcg/ml.\n\n### Chromatin immunoprecipitation\n\nChIP was performed as described using anti-HA 12CA5, anti-Myc 9E10 or anti-Pk(V5) antibody (Fernius et al., 2013). Primers used for qPCR analysis are given in Supplementary file 2B. qPCR was performed in a 20 \u03bcl Express SYBR GreenER (Life Technologies, Carlsbad, CA) reaction using a Lightcycler machine (Roche, Switzerland). To calculate ChIP enrichment/input, \u0394CT was calculated according to: \u0394CT = (CT(ChIP) \u2212 [CT(Input)\u2212 logE (Input dilution factor)]) where E represents the specific primer efficiency value. Enrichment/ input value was obtained from the following formula: E^\u2212\u0394CT. qPCR was performed in triplicate, typically for each of three or more independent experimental repeats. Error bars represent standard error. For ChIP-Seq, purified chromatin was recovered using a PCR purification kit (Qiagen, Netherlands) followed by drying in a speedvac. Samples were sequenced on a HiSeq2000 instrument (Illumina, San Diego, CA) by the EMBL Core Genomics Facility (Heidelberg, Germany). The summary of data obtained is given in Supplementary file 2C.\n\n### Analysis of ChIP-Seq data\n\nScripts, data files and workflows used to create the ChIP-Seq data can be found on the github repository: https://github.com/AlastairKerr/Marston2013. Single reads were mapped using BWA (Version: 0.6.1-r104) (Li and Durbin, 2010) to the sacCer3 reference genome and were processed with samtools (Li et al., 2009) to remove duplicated reads for parallel analysis. The region of chrXII containing rDNA (451400 bp to 490600 bp) was removed and studied separately using bedtools (version v2.16.2) (Quinlan and Hall, 2010). As this region is highly repetitive and contained a high density of reads, duplicate reads were not removed for this analysis as it would not be possible to differentiate duplicate reads from independent fragments. All data shown are normalized to the number of mapped reads per million total mapped reads [RPM]. Total mapped reads were calculated after any processing was done for rDNA or duplicate read removal.\n\nDuring the amplification step prior to sequencing, multiple identical reads will be generated. Due to the low yield of total DNA precipitating with Brn1-6HA in sgo1\u0394 cells, we were concerned that the small number of precipitating sequences would be biased for amplification. To avoid this problem, we removed PCR replicates from our analysis. However, since this would also remove bona fide identical sequences from our dataset, we simultaneously analyzed the data with these reads present and compared the two data sets where all 16 centromeres were considered together. To do this, 100 bp windows were examined that extended 25 kb in each direction of every centromere, and a local maximum of the number of mapped reads was taken. The comparison of this data with and without PCR replicates included can be seen in Figure 3H (unfiltered data) and Figure 4\u2014figure supplement 2 (PCR replicates removed). Both approaches led to very similar conclusions, therefore for all other data presented we used the unfiltered data.\n\n### TAP pulldowns and mass spectrometry\n\nTo grow cells for purification of Sgo1 from cycling cells, 4 L of YPDA culture were inoculated to OD600 = 0.2 and grown at room temperature for 6 hr. Cells were harvested by centrifugation and the cell pellet was resuspended in 2 \u03bcM of dithiobis(succunimidylpropionate) (DSP; Proteochem, Loves Park, IL) crosslinker for 30 min at room temperature before cell pellets were drop-frozen in liquid nitrogen as described by Fernius et al. (2013). To purify Sgo1 from cells arrested in mitosis using the cold-sensitive tub2-401 allele, 4 L of media was inoculated to OD600 = 0.02, grown at 30\u00b0C for 8 hr with shaking and then the temperature was reduced to 18\u00b0C for 7 hr to induce the arrest before holding the cells at 4\u00b0C for up to 5 hr before harvesting, crosslinking, and freezing as described above. Pulldowns and mass spectrometry were performed as described in Fernius et al. (2013).\n\n### Co-immunoprecipitation, western blotting, immunofluorescence, and FACS\n\nFor co-immunoprecipitation of TAP-tagged Sgo1, 200 ml of nocodazole-treated culture was harvested and either firstly cross-linked using DSP as described in Fernius et al. (2013), or directly drop-frozen in liquid nitrogen. Frozen pellets were ground in a pestle and mortar for 5 min. Ground lysates, prepared as in Fernius et al. (2013), were incubated with 1 mg of IgG-coupled dynabeads for 1.5 hr at 4\u00b0C. For the DNAase treated samples in Figure 4\u2014figure supplement 1, benzonase (25U) was added to the extracts before incubating at room temperature for 30 min before proceeding with immunoprecipitation. Protein complexes were eluted from the beads by addition of 30 \u03bcl of sample buffer and loaded onto polyacrylamide gels.\n\nWestern immunoblot was performed as described in Clift et al. (2009) and visualized by detection of chemiluminesence on autoradiograms except for the data shown in Figure 9E where proteins were visualized using a fluorophore-conjugated antibody and the Odyssey system (Li-Cor, Lincoln, NE). Mouse anti-aid (CosmoBio, Japan), anti-HA11, and anti-Myc antibodies were all used at a dilution of 1:1000. Mouse anti-Pgk1 antibodies were used at a dilution of 1:5000. Rabbit anti-Sgo1 (a kind gift of Adam Rudner, Ottawa Institute of Systems Biology, Canada), anti-GFP (a kind gift of Eric Schirmer, University of Edinburgh) and anti-Pgk1 antibodies were used at a dilution of 1:5000. Rabbit anti-Kar2 antibodies (laboratory stock) were used at a dilution of 1:5000.\n\nIndirect immunofluorescence and FACS were performed as described in Clift et al. (2009) and Fernius and Marston (2009), respectively.\n\n### Biorientation assay\n\nCells carrying pMET-CDC20, CEN4-GFP and SPC42-tdTomato were arrested in G1 using alpha factor (4 \u03bcg/ml) in minimal medium lacking methionine (SD/-met) at room temperature for 3 hr. Alpha factor was washed out and cells were released from the G1 arrest into rich medium containing methionine and nocodazole (YPDA + Met + NOC) plus the appropriate drugs (NAPP1, NAA). Methionine represses pMET-CDC20 expression, resulting in a metaphase arrest and nocodazole depolymerizes microtubules. After 3 hr, a sample was extracted (t = 0) and nocodazole was washed out by filtering in the presence of methionine and cultures were released into YPDA + Met to allow spindles to reform while maintaining the metaphase arrest. Samples were taken at 20 min intervals. Samples were fixed in 3.7% formaldehyde for 10 min, before washing in PBS and resuspending in DAPI for microscopy. Samples with two separated SPC42-tdTomato foci were scored as containing one or two CEN4-GFP foci. Typically 200, and at least 100, cells were scored for each timepoint.\n\n### Microfluidics and image analysis\n\nFor live cell imaging, cells were loaded onto the Onix Microfluidic Perfusion system (CellAsic, Hayward, CA) and visualized using a Deltavision Elite (Applied Precision, Issaquah, WA) coupled to a Cascade 2 EMCCD camera with temperature control to 30\u00b0C. Frames were grabbed at the indicated intervals and images were processed in ImagePro software (Media Cybernetics, Rockville, MD).\n\nFor image analysis, a custom-written macro was developed in ImagePro software (Media Cybernetics), details of which are available upon request. In brief, yeast are selected from a reference DIC image taken at each time point. The yeast are automatically thresholded and the centre pixel from each red and green spot is then calculated. The distances between the spots can then be calculated and the measurements output to a text file for analysis using microsoft excel. Measurements of inter-centromere distance and distance from CEN4-GFP dot to nearest Spc42-tdTomato were obtained using this automated system.\n\n### Error correction assay using microfludics\n\nTo test the efficiency of error correction, cells carrying CEN4 (CEN4-GFP) and SPB (SPC42-tdTomato) markers together with CDC20 under control of a methionine-repressible promoter (pMET-CDC20) were arrested in G1 using alpha factor and then loaded onto the microfluidic chamber. Cells were released in the chamber into medium containing nocodazole (to depolymerize microtubules) and methionine (to deplete CDC20 and induce a metaphase arrest) for 30 min. The addition of nocodazole to G1 cells prevents SPB separation because this requires microtubules. Therefore, under these conditions, microtubules do not separate which leads to a high rate of monoorientation once microtubules are allowed to reform. This leads to a strong reliance on the error correction machinery to establish biorientation (Indjeian and Murray, 2007). After 30 min, nocodazole was washed out, all the time maintaining the CDC20 arrest by inclusion of methionine in the media. After 90% of cells had 2 SPBs (typically 1.5 hr), we began imaging at \u223c74s intervals for a total of 21 frames.\n\nFor determination of the overall ability of strains to biorient in Figure 2D all cells in each frame where two SPB foci were detected by the software were scored for the presence of either one or two CEN4-GFP foci. The total percentage of cells with two SPB foci that contained two GFP foci was calculated for all frames for each strain. The number of cell images analyzed was 1116 (wild type), 697 (sgo1\u0394), 1251 (YCS5-aid) and 968 (ipl1-as). To m\n\nAs a measure of the efficacy of the error correction machinery, we determined the ability of cells to switch between one and two visible CEN4-GFP foci. Cells in which two SPB foci were detected for at least four consecutive frames were scored for the number of times that the number of CEN4-GFP foci changed from one to two or vice-versa for the frames in which two SPBs were consecutively visible. The \u2018switching rate\u2019 was calculated by dividing the number of times a cell alternated between one and two CEN4-GFP foci by the total time in which two SPB foci were consecutively visible. The average switching rate was determined for all cells in which two SPB foci were detected for at least four consecutive frames. In Figure 2F, we analyzed 92 wild-type cells (971 frames), 55 sgo1\u0394 cells (551 frames), 102 YCS5-aid cells (1046 frames) and 86 ipl1-as cells (748 frames).\n\n### Sister kinetochore bias assay using microfludics\n\nTo test the bias on sister kinetochores to biorient, cells carrying CEN4 (CEN4-GFP) and SPB (SPC42-tdTomato) markers together with CDC20 under control of a methionine-repressible promoter (pMET-CDC20) were arrested in G1 using alpha factor and then released into medium containing methionine to deplete CDC20 and induce a metaphase arrest. Cells were loaded onto the microfluidics chamber and after approximately 1.5 hr, when around 90% of cells had 2 SPBs, cells were treated with YPDA containing nocodazole for 30 min. After 30 min, nocodazole was washed out after which cells were immediately imaged every \u223c94 s for a total of 21 frames. We scored the percentage of cells in which separated GFP dots were observed at least once during the observation period.\n",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "fc3f0e14-df37-4256-9b77-98e298e5e985",
+      "submission_id": "25d1bba8-7e4f-42b4-8fd2-f7c000946ed4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Pines, The Gurdon Institute , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01374.033](https://doi.org/10.7554/eLife.01374.033)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cShugoshin biases chromosomes for biorientation through condensin recruitment to the pericentromere\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this study the authors have investigated how sister kinetochores in budding yeast are biased towards biorientation. The authors have found that the Shuoshin protein (Sgo1) is important to promote biorientation through two mechanisms: through binding to the chromosome passenger complex, and through a newly identified association with the condensin complex. The authors show that Sgo1 is able to recruit condensin to centromeres or to ectopic sites. The authors identify a mutation in Sgo1 that perturbs binding to condensin and that this association is important for subsequent biorientation. The authors conclude that condensin is required to form a rigid back-to-back structure such that sister kinetochores are biased towards microtubule capture from opposite spindle poles.\n\nOverall this is an interesting study that reveals new insights into how budding yeast chromosomes biorent, and uncover a new role for condensin in centromere and kinetochore behaviour.\n\nThere are, however, a number of substantive concerns that preclude publication in its present form. In particular, the conclusion that condensin recruitment alters kinetochore geometry to promote orientation towards opposite poles requires further supporting evidence. Moreover, the authors themselves do not appear to be certain whether there is a direct link between Sgo1 and condensin recruitment. They argue that Sgo1 is sufficient for condensin targeting to the pericentromere by over-expressing Sgo1 and measuring Brn1 accumulation. However, they previously state that Sgo1's effect on condensin is indirect, mediated through Scc2/4 (cohesin). There are also concerns regarding the validity of the approach the authors use to measure bi-orientation and the presentation of the ChIP analyses. The latter prevents a critical evaluation of the data quality and missing information will need to be added.\n\nConcerns to be addressed:\n\n1) The evidence for a direct interaction between Sgo1 and condensin is limited. Only a small number (especially considering the large size of all five condensin subunits) of condensin peptides can be identified in the mass-spec analysis of Sgo1 purifications. In fact, the highest scoring condensin subunit (by numbers of found peptides; Ycg1) ranks number 137 in the list of proteins identified (see supplemental Excel file). Moreover, only a minute fraction of condensin (less than 0.01%? See Figures 3 D and E) can be detected by Western blotting in Sgo1 immunoprecipitations. Since both Sgo1 and condensin are enriched at centromeres, it is very likely that a small amount of condensin co-precipitates with Sgo1 because both proteins are bound to the same stretch of chromatin. In addition, the authors add amine-reactive crosslinkers to the cell extracts in both experiments (a fact they should mention at least in the figure legends and not only in the methods section), which will result in the formation of protein-chromatin crosslinks. The authors will need to repeat the pull-down experiments after DNase digestion and in the absence of crosslinker in order to rule out these concerns.\n\nA second argument for a role of Sgo1 in condensin loading is that centromeric condensin levels increase upon Sgo1 overexpression. The increase in condensin binding could, however, result from the delay in anaphase onset caused by Sgo1 overexpression. Would condensin levels remain unchanged if anaphase onset were delayed by other means?\n\nEctopic recruitment of condensin by Sgo1 fused to TetR seems rather inefficient, with a two-fold enrichment (and considerable variation?). The authors should at least test whether ectopic recruitment can be measured at both sides of the TetO repeats. Yet a much better test whether condensin recruitment by Sgo1 is significant would be to employ the TetO-TetR approach to tether to centromeres an Sgo1 mutant that can otherwise not bind (e.g., Sgo1-100 or Sgo1-700) and assay whether this restores condensin levels and chromosome bi-orientation.\n\nAn explanation for the altered binding profiles of condensin measured by ChIP-seq might be changes in cohesin accumulation at centromeres in the Sgo1 mutants. The authors need to check by ChIP-qPCR (and ideally also ChIP-seq) whether cohesin levels at centromeres are affected in the Sgo1 mutant.\n\n2) The authors monitor the splitting of a sister centromere pair as a measure for sister chromatid bi-orientation (Figures 1A-C,F, 5A, Figure 3\u2013figure supplement 2). The reduction of sister centromere splitting observed in the Sgo1 and condensin mutants could, however, equally well result from an increase in centromeric sister chromatid cohesion. An increase in centromeric cohesion would prevent splitting of bi-oriented sister chromatids.\n\nOne possibility to distinguish whether chromatid pairs have attached to spindle microtubules from only one spindle pole or whether chromatids have bi-oriented but their centromeres cannot separate would be to score centromere-spindle pole body (SPB) distances in the live cell microscopy assay (Figures 5B-F). If centromeres were bi-oriented but merely failed to split, they should be positioned at equal distances to both SPBs. If sister centromeres failed to bi-orient, they should frequently be found close to one SPB. Alternatively, the authors could release cells from the Cdc20 arrest and allow them to enter anaphase, then score whether sister centromeres segregate to one pole or to opposite poles (see Indjeian and Murray, CurBiol 2007).\n\nThe data in Figures 6 and 7 show a mild, real defect in biorientation but don't specifically address the of kineteochore geometry. The authors should either perform further experiments to support their hypothesis or confine their \u201cgeometric bias\u201d to speculation in the Discussion.\n\n3) Most of the graphs that represent the results from ChIP-qPCR experiments (Figures 1A, E, 2C, D, 5G, 7C, Figure 5\u2013figure supplement 3) lack information that is essential to evaluate the data. What do the column plots represent? Do they show mean values, and if yes, from how many PCR runs and how many independent immunoprecipitation experiments? What do the error bars represent? The legend for Figures 4D-F is missing completely.\n\nTaking into account the possible variability between individual ChIP-qPCR experiments, careful statistical analysis will be required to evaluate the significance of the observed differences. For example, the values measured at CEN4 for the same wild-type strain (AM3513) in two independent Ipl1 HA-ChIP experiments vary 4-fold (compare Figures 2C and D), calling into question whether the 2-fold reduction in ChIP signals in the Sgo1 mutants (Figure 2D) is significant. Similarly, the ChIP signal at CEN4 measured for the Sgo1-100 mutant in G1 phase is more than 2-fold higher than the signal for wildtype Sgo1 (Figure 1B). Is the 4-fold increase in Sgo1 ChIP signals during mitosis (e.g., 2-fold when compared to the Sgo1-100 mutant) then still significant?\n",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ceb12cb6-7946-46ea-905b-248771b1ebe0",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C1",
+      "claim": "Biorientation relies on the correction of erroneous attachments by the aurora B kinase, which destabilizes kinetochore-microtubule attachments that lack tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Biorientation relies on the correction of erroneous attachments by the aurora B kinase, which destabilizes kinetochore-microtubule attachments that lack tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the role of aurora B kinase in chromosome biorientation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "6e38a01d-bb82-46ee-acbf-1ef40859845a",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C2",
+      "claim": "Sister kinetochores are intrinsically biased towards capture by microtubules from opposite poles.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorrect attachments are also avoided because sister kinetochores are intrinsically biased towards capture by microtubules from opposite poles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, as referenced by citation to Indjeian and Murray, 2007.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "03e38fa4-029f-4a23-a791-80bbd4279af1",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C3",
+      "claim": "Shugoshin maintains the aurora B kinase at kinetochores that lack tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Shugoshin maintains the aurora B kinase at kinetochores that lack tension, thereby engaging the error correction machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "bbf7748b-772d-4ee7-b681-3b2bffe7790a",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C4",
+      "claim": "Shugoshin recruits the chromosome-organizing complex, condensin, to the pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Shugoshin also recruits the chromosome-organizing complex, condensin, to the pericentromere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "9fa8aa84-0282-47cf-9012-268e8b57d4e2",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C5",
+      "claim": "Pericentromeric condensin biases sister kinetochores towards capture by microtubules from opposite poles.",
+      "claim_type": "EXPLICIT",
+      "source": "Pericentromeric condensin biases sister kinetochores towards capture by microtubules from opposite poles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "591a6d7b-c92f-40ad-bf68-bfe4a4182a3b",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C6",
+      "claim": "The sgo1-100, sgo1-700 and sgo1-3A mutants showed a delay and lower maximum level of biorientation compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The sgo1-100, sgo1-700 and sgo1-3A mutants showed a similar delay and lower maximum level of biorientation that was not as pronounced as in sgo1\u0394 cells (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "d93a57da-ae4b-4a72-9a91-669723f247b0",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C7",
+      "claim": "The sgo1-3A mutation disrupts the binding site for PP2A-Rts1.",
+      "claim_type": "EXPLICIT",
+      "source": "The sgo1-3A mutant was engineered to disrupt the binding site for PP2A-Rts1 (Xu et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "3f980661-aaee-45a9-8a11-be1e29919309",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C8",
+      "claim": "Sgo1-3A protein retains its pericentromeric localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sgo1-3A protein retains its pericentromeric localization (Xu et al., 2009; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Xu et al., 2009 and experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "5b24b754-a2d0-4a2a-9f73-868cde11b87b",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C9",
+      "claim": "Sgo1-100 and Sgo1-700 show only residual initial centromeric recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the kinetics of cell cycle entry in sgo1-100 and sgo1-700 mutants is similar to that of wild-type cells (Figure 1\u2014figure supplement 1), Sgo1-100 and Sgo1-700 show only residual initial centromeric recruitment (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "6adaa341-465a-4ae9-bd33-ba8240800a86",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C10",
+      "claim": "Sgo1-100 and Sgo1-700 are absent from the pericentromeres of cells arrested in mitosis with microtubule-depolymerizing drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sgo1-100 and Sgo1-700 show only residual initial centromeric recruitment (Figure 1B) and are absent from the pericentromeres of cells arrested in mitosis with microtubule-depolymerizing drugs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "3638de16-4ddc-436a-86bc-6fc5d6f2f66b",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C11",
+      "claim": "The sgo1-3A mutation disrupts the interaction between Sgo1 and PP2A-Rts1.",
+      "claim_type": "EXPLICIT",
+      "source": "The sgo1-3A mutation disrupts the interaction between Sgo1 and PP2A-Rts1 (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "091662b5-b739-4a2e-8641-43a166e1c82e",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C12",
+      "claim": "Rts1 enrichment at the centromere during metaphase is virtually abolished in sgo1\u0394, sgo1-3A and sgo1-100 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rts1 enrichment at the centromere during metaphase is virtually abolished in sgo1\u0394, sgo1-3A and sgo1-100, and modestly reduced in sgo1-700 cells (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "888e9cfc-1c0e-4471-af6d-22d8bec81e82",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C13",
+      "claim": "Sgo1-100 and Sgo1-700 proteins retain the ability to associate with Rts1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rts1 enrichment at the centromere during metaphase is virtually abolished in sgo1\u0394, sgo1-3A and sgo1-100, and modestly reduced in sgo1-700 cells (Figure 2B), even though Sgo1-100 and Sgo1-700 proteins retain the ability to associate with Rts1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "d74f2ed9-9e99-419d-96f2-6f710686b330",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C14",
+      "claim": "rts1\u0394 cells achieved biorientation with indistinguishable efficiency to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the biorientation defect of the sgo1 mutants cannot be caused by a failure to recruit Rts1 to centromeres because rts1\u0394 cells achieved biorientation with indistinguishable efficiency to wild-type cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "cc232013-c7cf-4b06-882b-0fed0f37494e",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C15",
+      "claim": "PP2A-Rts1 is not required for sister kinetochore biorientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PP2A-Rts1 is not required for sister kinetochore biorientation and the sgo1-3A mutation must disrupt functions of Sgo1 other than its association with PP2A-Rts1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that rts1\u0394 cells have normal biorientation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "aa0f6629-a27a-4f3a-bc02-136a0531e240",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C16",
+      "claim": "Budding yeast Sgo1 associates with aurora B (called Ipl1).",
+      "claim_type": "EXPLICIT",
+      "source": "Budding yeast Sgo1 similarly associates with aurora B (called Ipl1) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "eeb3e811-8799-4cf1-aae3-df2b74610520",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C17",
+      "claim": "Sgo1 is not required for the initial recruitment of Ipl1 to centromeres but is important for its maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional inactivation of Sgo1 using the auxin-inducible degron (aid) system (Nishimura et al., 2009; Figure 3B) revealed that Sgo1 is not required for the initial recruitment of Ipl1 to centromeres but is important for its maintenance (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "f735c88b-7903-4158-8dab-6be06cb8b4f6",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C18",
+      "claim": "In Sgo1-aid cells arrested in metaphase by treatment with nocodazole, Ipl1 was absent from CEN4.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in Sgo1-aid cells arrested in metaphase by treatment with nocodazole, Ipl1 was absent from CEN4 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "30abf26a-875f-4920-803a-c89d45aab7ee",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C19",
+      "claim": "Early Ipl1 centromere localization does not require Alk1 and Alk2.",
+      "claim_type": "EXPLICIT",
+      "source": "Early Ipl1 centromere localization also does not require Alk1 and Alk2 (Figure 3\u2014figure supplement 1), the homologs of Haspin kinase, which is important for centromeric CPC localization in fission yeast and mammals (Kelly et al., 2010; Wang et al., 2010; Yamagishi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1 and citations to other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "01548be5-9338-44d1-aec4-04f78d712ca5",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C20",
+      "claim": "The Ipl1-Sgo1 interaction and centromeric localization of Ipl1 were similarly decreased in nocodazole-treated sgo1-100, sgo1-700 and sgo1-3A mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ipl1-Sgo1 interaction (Figure 3A) and centromeric localization of Ipl1 (Figure 3E) were also similarly decreased in nocodazole-treated sgo1-100, sgo1-700 and sgo1-3A mutants, which likely contributes to the biorientation defects of these mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "3e59c281-5378-402f-9e89-6d02d526c6fa",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C21",
+      "claim": "Four out of five subunits of the condensin complex co-purified with Sgo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we identified four out of five subunits of the condensin complex co-purifying with Sgo1 (Figure 4A,B; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A,B and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "92129dcd-30b6-4ffc-9755-618a822ecd8e",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C22",
+      "claim": "Co-immunoprecipitation of the Ycs4 and Brn1 subunits of condensin with Sgo1-TAP confirmed the Sgo1-condensin interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-immunoprecipitation of the Ycs4 and Brn1 subunits of condensin (Figure 4C) with Sgo1-TAP confirmed the Sgo1-condensin interaction (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "5920156a-9ba6-48fc-8957-852744a768ac",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C23",
+      "claim": "The Sgo1-Ycs4 interaction is not dependent on either DNA or the pre-treatment of cells with cross-linking agent.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the Sgo1-Ycs4 interaction is not dependent on either DNA or the pre-treatment of cells with cross-linking agent (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "3652e1dd-9276-4608-b8fb-697e71970967",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C24",
+      "claim": "Sgo1 and condensin form a complex independently of their association with the pericentromeric chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Sgo1 and condensin form a complex independently of their association with the pericentromeric chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that the Sgo1-Ycs4 interaction is not dependent on DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "75d7edbb-ea14-4fbb-b8a7-02084b319d60",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C25",
+      "claim": "Sgo1 associates with three protein complexes during mitosis: PP2A, CPC, and condensin.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Sgo1 associates with three protein complexes during mitosis: PP2A, CPC, and condensin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "69cdf078-f2bb-42f9-afd6-5b9f4539f952",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C26",
+      "claim": "In budding yeast, condensin is most highly enriched in the rDNA and at each pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, condensin is most highly enriched in the rDNA and at each pericentromere (D'Ambrosio et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to D'Ambrosio et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "14c0f545-c09f-4c11-9e93-2782587802d0",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C27",
+      "claim": "Condensin recruitment to the rDNA depends on monopolin (Csm1/Lrs4).",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin recruitment to the rDNA depends on monopolin (Csm1/Lrs4) (D'Ambrosio et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to D'Ambrosio et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "ab56e60c-ff58-4e9c-801f-df8ce332b795",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C28",
+      "claim": "Fission yeast monopolin (Pcs1/Mde4) recruits condensin to centromeres where it prevents merotely.",
+      "claim_type": "EXPLICIT",
+      "source": "Fission yeast monopolin (Pcs1/Mde4) recruits condensin to centromeres where it prevents merotely (attachment of a single kinetochore to microtubules from both poles) (Gregan et al., 2007; Tada et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gregan et al., 2007 and Tada et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "377854ba-7374-42b4-98eb-cc0b4c41ea6b",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C29",
+      "claim": "Budding yeast condensin is recruited to centromeres independently of monopolin subunit Lrs4.",
+      "claim_type": "EXPLICIT",
+      "source": "Fission yeast monopolin (Pcs1/Mde4) recruits condensin to centromeres where it prevents merotely (attachment of a single kinetochore to microtubules from both poles) (Gregan et al., 2007; Tada et al., 2011), unlike budding yeast condensin which is recruited to centromeres independently of monopolin subunit Lrs4 (Brito et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Brito et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "4283a5bc-f164-469a-9441-385ff74e9a32",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C30",
+      "claim": "There was a clear reduction in pericentromeric levels of Brn1 in sgo1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the pattern of reads along chromosome arms and mapping to the rDNA was similar in wild-type and sgo1\u0394 cells (Figure 4F,G), we observed a clear reduction in pericentromeric levels of Brn1 in sgo1\u0394 cells, although peaks of variable height remained at some, but not all core centromeres (Figure 4H, Figure 4\u2014figure supplement 2, 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4F,G,H and Figure 4\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "7850dd43-7d7c-4923-8506-36ed04068895",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C31",
+      "claim": "In wild-type cells, condensin is enriched on average throughout an approximately 15 kb domain on either side of the centromere and this enrichment is lost in sgo1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consideration of all 16 centromeres collectively revealed that in wild-type cells, condensin is enriched on average throughout an approximately 15 kb domain on either side of the centromere and that this enrichment is lost in sgo1\u0394 cells (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "9f9fccec-b8c8-43f6-97a4-2b0021110420",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C32",
+      "claim": "Sgo1 is required for condensin association throughout the pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Sgo1 is required for condensin association throughout the pericentromere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing reduced Brn1 levels in sgo1\u0394 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "7380d4d9-6f37-4473-840d-0ddc9c1ab720",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C33",
+      "claim": "Recruitment of condensin to a centromere-proximal site occurs coincidently with, and depends on, Sgo1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that recruitment of condensin to a centromere-proximal site occurs coincidently with, and depends on, Sgo1 (Figure 4I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "ff0db224-c009-4e0a-b33b-d75bd9392406",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C34",
+      "claim": "Sgo1 recruits condensin to the pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in addition to controlling the centromere localization of PP2A-Rts1 and the CPC, Sgo1 recruits condensin to the pericentromere (Figure 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the experimental findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "c551df26-3cb8-46dd-b5b9-2ab0d54980c1",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C35",
+      "claim": "Budding yeast sgo1 mutants are not defective in cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Budding yeast sgo1 mutants are not defective in cohesion (Indjeian and Murray, 2005; Marston et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Indjeian and Murray, 2005 and Marston et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "5de90c9c-3e8a-405c-ac90-c75eccbeca25",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C36",
+      "claim": "Cohesin is normally localized to chromosomes in budding yeast sgo1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Budding yeast sgo1 mutants are not defective in cohesion (Indjeian and Murray, 2005; Marston et al., 2004) and cohesin is normally localized to chromosomes (Kiburz et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kiburz et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "1dc06a12-f765-4a72-8373-4b207b4183b0",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C37",
+      "claim": "The profile of Scc1 association along chromosome V and surrounding all 16 budding yeast centromeres in sgo1\u0394 cells is indistinguishable from that of wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The profile of Scc1 association along chromosome V (Figure 5A) and surrounding all 16 budding yeast centromeres in sgo1\u0394 cells (Figure 5B, Figure 5\u2014figure supplement 1) is indistinguishable from that of wild-type cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A,B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "74d46396-0ee7-486c-8fa5-ec5bc76a2b66",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C38",
+      "claim": "Sgo1 is not required for cohesin localization at centromeres, pericentromeres or along chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Sgo1 is not required for cohesin localization at centromeres, pericentromeres or along chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing normal Scc1 levels in sgo1\u0394 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "c8efb563-01b4-4b3a-bda5-48b999851415",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C39",
+      "claim": "Cohesin and factors required for its loading are required for the proper association of Sgo1 with the centromere and pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we found that cohesin, and factors required for its loading, are required for the proper association of Sgo1 with the centromere and pericentromere (Figure 5, Figure 5\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5 and Figure 5\u2014figure supplements 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "38aa2d7a-7e23-47c2-9c1f-32e775d325a2",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C40",
+      "claim": "Depletion of the Scc1 subunit of cohesin led to a great reduction in the pericentromeric levels of Sgo1 with only low levels remaining at the centromere itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of the Scc1 subunit of cohesin led to a great reduction in the pericentromeric levels of Sgo1 with only low levels remaining at the centromere itself (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "8df77a4b-d0bc-487b-8c3a-0e9c10c0235e",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C41",
+      "claim": "Cohesin promotes Sgo1 association with the pericentromere, which, in turn, recruits condensin, implying an indirect role for cohesin in localizing condensin (through Sgo1).",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that cohesin promotes Sgo1 association with the pericentromere, which, in turn, recruits condensin, implying an indirect role for cohesin in localizing condensin (through Sgo1) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data showing that cohesin is required for Sgo1 localization and Sgo1 is required for condensin localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "5a8a271f-43da-49da-b3de-27f01bd0937a",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C42",
+      "claim": "Proper Brn1 association with the centromere in mitosis requires both the Scc2 protein that is required for cohesin loading onto chromosomes and subunits of the kinetochore (Iml3/Chl4) that target Scc2 to centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, proper Brn1 association with the centromere in mitosis requires both the Scc2 protein that is required for cohesin loading onto chromosomes and subunits of the kinetochore (Iml3/Chl4) that target Scc2 to centromeres (Ciosk et al., 2000; Fernius et al., 2013; D\u2032Ambrosio et al., 2008; Ng et al., 2009; Figure 5\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 4 and citations to other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "e29f7ae9-33b6-4498-93c6-fde8e4b18028",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C43",
+      "claim": "Unlike in fission yeast, the monopolin subunit Lrs4 is not required for Brn1 association with the centromere in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike in fission yeast, the monopolin subunit Lrs4 is not required for Brn1 association with the centromere (Brito et al., 2010; Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 4 and citation to Brito et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "9aad731a-aa99-4613-a99b-0fdf9bd6c451",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C44",
+      "claim": "There is a hierarchy of assembly in which the combined effects of Bub1 kinase and cohesin concentrate shugoshin in the pericentromere, which in turn recruits condensin.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we suggest a hierarchy of assembly in which the combined effects of Bub1 kinase and cohesin concentrate shugoshin in the pericentromere, which in turn recruits condensin (Fernius and Hardwick, 2007; Kawashima et al., 2010; Yamagishi et al., 2010; 2008) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings and supported by citations to other studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "b0f34b9f-5d8f-4733-9486-3ddc2d9b73f0",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C45",
+      "claim": "Overproduction of Sgo1 led to increased levels of condensin at centromere, pericentromere and chromosome arm sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Overproduction of Sgo1, which is known to enable its association with chromosome arms and delay cells in metaphase (Clift et al., 2009; Figure 6A) led to increased levels of condensin at centromere, pericentromere and chromosome arm sites (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "ebd2d025-cfd6-44c4-8288-cc7c68d8983c",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C46",
+      "claim": "SGO1 overexpression increased Brn1 association with the centromere and pericentromere in cells arrested in mitosis by nocodazole treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "SGO1 overexpression also increased Brn1 association with the centromere and pericentromere in cells arrested in mitosis by nocodazole treatment (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "26c4329e-ab9e-4fb8-bb48-b3071089a2f0",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C47",
+      "claim": "Tethered Sgo1-GFP-TetR efficiently recruited the condensin subunit Brn1, the PP2A subunit, Rts1, and to a lesser extent the CPC subunit, Ipl1 to a site directly adjacent to the tetOs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed we found that tethered Sgo1-GFP-TetR efficiently recruited the condensin subunit Brn1, the PP2A subunit, Rts1, and to a lesser extent the CPC subunit, Ipl1 to a site directly adjacent to the tetOs (Figure 6D,F; \u223c50 bp R ectopic site), although centromeric levels were not affected (Figure 6E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D,E,F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "bc03b5d9-9ffa-47d6-a35b-631752066826",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C48",
+      "claim": "Sgo1 is both necessary and sufficient for condensin recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that Sgo1 is both necessary and sufficient for condensin recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that Sgo1 deletion reduces condensin levels and Sgo1 overexpression or tethering increases condensin levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "299b0b7a-35f7-411d-b8e3-44ac9346a683",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C49",
+      "claim": "In cells where degradation of condensin's Ycs5 subunit (YCS5-aid) was induced, CEN4-GFP separation was delayed compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells where degradation of condensin's Ycs5 subunit (YCS5-aid) was induced, CEN4-GFP separation was delayed compared to wild-type cells, albeit not to the extent of sgo1\u0394 cells (Figure 7A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "6c811a6e-c665-413b-b2ca-6309370765d8",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C50",
+      "claim": "Condensin facilitates biorientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells where degradation of condensin's Ycs5 subunit (YCS5-aid) was induced, CEN4-GFP separation was delayed compared to wild-type cells, albeit not to the extent of sgo1\u0394 cells (Figure 7A), suggesting that condensin facilitates biorientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing delayed biorientation in YCS5-aid cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "4db52c57-cf3a-4b44-bfbb-8aa0e75472fc",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C51",
+      "claim": "The number of frames in which cells with split CEN4-GFP foci were observed was reduced in cells lacking SGO1, where IPL1 was inhibited (ipl1-as with NAPP1) or Ycs5 was degraded (Ycs5-aid with NAA) compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, as expected, and consistent with a biorientation defect, the number of frames in which cells with split CEN4-GFP foci were observed was reduced in cells lacking SGO1, where IPL1 was inhibited (ipl1-as with NAPP1) or Ycs5 was degraded (Ycs5-aid with NAA) compared to wild-type cells (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "819e3a37-cb13-4625-9e32-9757f3aa96ed",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C52",
+      "claim": "The distance between separated CEN4-GFP foci was comparable in all strains, suggesting that kinetochore-microtubule attachments, spindle tension, and cohesion are all functional and only the orientation of attachment is defective in sgo1\u0394, YCS5-aid and ipl1-as cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the distance between separated CEN4-GFP foci was comparable in all strains, suggesting that kinetochore-microtubule attachments, spindle tension, and cohesion are all functional and only the orientation of attachment is defective in sgo1\u0394, YCS5-aid and ipl1-as cells (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7E and inferred from the observation that the distance between separated foci is normal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "0332e853-4f32-4450-ac46-17fafc256ac4",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C53",
+      "claim": "The average frequency of switching between 1 and 2 GFP foci was significantly reduced in sgo1\u0394 and ipl1-as cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The average frequency of switching between 1 and 2 GFP foci was significantly reduced in sgo1\u0394 and ipl1-as cells, as expected (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "f5efe4a9-f3e5-41e8-9722-1722d21a406f",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C54",
+      "claim": "A more modest reduction in switching was observed in YCS5-aid cells, indicating that condensin contributes to proper error correction.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observed a more modest reduction in switching in YCS5-aid cells, indicating that condensin contributes to proper error correction (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "7aae55a0-2e6b-4bc0-903d-ee5ff3a29a99",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C55",
+      "claim": "The role of condensin in error correction cannot be to localize Ipl1, as Ipl1 maintenance at kinetochores requires Sgo1 but not Ycs5.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of condensin in error correction cannot be to localize Ipl1, as we found that Ipl1 maintenance at kinetochores requires Sgo1 (Figure 3D), but not Ycs5 (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D and Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "47f2c058-174b-47f3-9bb1-c31232cc355f",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C56",
+      "claim": "Condensin shapes the pericentromere to place sister kinetochores in a rigid back-to-back orientation that provides the framework for tension-sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, we speculate that condensin shapes the pericentromere to place sister kinetochores in a rigid back-to-back orientation that provides the framework for tension-sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed to explain the role of condensin in error correction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "96b8633f-0acc-4ea1-aef1-7280f60a9a17",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C57",
+      "claim": "Similar numbers of wild-type and ipl1-as cells achieved sister centromere separation, indicating that the error correction process is not required to bias sister kinetochores towards biorientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar numbers of wild-type and ipl1-as cells achieved sister centromere separation, indicating that the error correction process is not required to bias sister kinetochores towards biorientation (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "470e1941-dbf8-48c3-b051-0e5ec4bf3c42",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C58",
+      "claim": "The frequency of separated CEN4-GFP foci was reduced about two-fold in sgo1\u0394 and YCS5-aid cells, as compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, remarkably, the frequency of separated CEN4-GFP foci was reduced about two-fold in sgo1\u0394 and YCS5-aid cells, as compared to wild-type cells (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "d1aa3d12-b9e8-4fa5-b70c-5205a74a78f8",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C59",
+      "claim": "In the absence of shugoshin or pericentromeric condensin, the bias to sister kinetochore biorientation is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that in the absence of shugoshin or pericentromeric condensin, the bias to sister kinetochore biorientation is lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing reduced biorientation in sgo1\u0394 and YCS5-aid cells when SPBs are separated before microtubule attachment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "d3abf4cf-27d8-4c6f-9a89-a793d6ceba0c",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C60",
+      "claim": "Both shugoshin and condensin impose a bias on sister kinetochores to biorient and this is independent of error correction by Aurora B (Ipl1).",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that both shugoshin and condensin impose a bias on sister kinetochores to biorient and that this is independent of error correction by Aurora B (Ipl1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that sgo1\u0394 and YCS5-aid cells have reduced biorientation bias, while ipl1-as cells do not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "39a62153-1fdb-4578-a019-e742ec4b2b43",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C61",
+      "claim": "Sgo1-700 failed to associate with Brn1, whereas Sgo1-100 and Sgo1-3A retained Brn1 association.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sgo1-700 failed to associate with Brn1, whereas Sgo1-100 and Sgo1-3A retained Brn1 association (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "66267506-84b4-4bf9-a088-71b774560a98",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C62",
+      "claim": "Only the sgo1-3A mutant, and not the sgo1-100 or sgo1-700 mutants maintained Brn1 localization at the pericentromere in cells arrested in mitosis by nocodazole treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Brn1 association with representative centromere-proximal and chromosomal arm sites by ChIP-qPCR revealed that only the sgo1-3A mutant, and not the sgo1-100 or sgo1-700 mutants maintained Brn1 localization at the pericentromere in cells arrested in mitosis by nocodazole treatment (Figure 9C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "8cdc71b4-6baa-4427-85dc-56b1a62a8fd5",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C63",
+      "claim": "Tethering of Sgo1-tetR-GFP, Sgo1-100-tetR-GFP, or Sgo1-3A-tetR-GFP, all significantly increased Brn1-6HA levels at CEN4 compared to a no tag control.",
+      "claim_type": "EXPLICIT",
+      "source": "Tethering of Sgo1-tetR-GFP, Sgo1-100-tetR-GFP, or Sgo1-3A-tetR-GFP, all significantly increased Brn1-6HA levels at CEN4 compared to a no tag control (Figure 9E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "2bc34c62-dae7-4946-86d7-cd58743c303b",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C64",
+      "claim": "Tethering of Sgo1-700-tetR-GFP did not significantly enrich Brn1-6HA at CEN4.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, and consistent with our finding that Brn1 fails to co-immunoprecipitate with Sgo1-700 (Figure 9B), tethering of Sgo1-700-tetR-GFP did not significantly enrich Brn1-6HA at the same site, though it was produced to similar levels as the Sgo1-100-tetR-GFP protein (Figure 9D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "19dca4f7-4084-41f1-9113-a5812385b852",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C65",
+      "claim": "Sgo1-100 and Sgo1-3A are able to associate with, and recruit, condensin, whereas Sgo1-700 loses this interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Sgo1-100 and Sgo1-3A are able to associate with, and recruit, condensin, whereas Sgo1-700 loses this interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing differential ability of Sgo1 mutants to interact with and recruit condensin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "10bca46e-dc7e-4d61-b858-6a0e6281c954",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C66",
+      "claim": "Only the sgo1-700 mutant was significantly defective in the sister kinetochore bias.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with these predictions, our live cell assay revealed that only the sgo1-700 mutant was significantly defective in the sister kinetochore bias (Figure 9G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "e0fc4f6a-4dd4-474e-88a0-0f4135e378a9",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C67",
+      "claim": "Condensin recruitment by Sgo1 biases sister kinetochores towards biorientation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that condensin recruitment by Sgo1 biases sister kinetochores towards biorientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that sgo1-700, which cannot recruit condensin, is defective in the sister kinetochore bias.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "495f1734-a0a7-4771-84c9-13eeff07202c",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C68",
+      "claim": "Sgo1 plays a central role in promoting biorientation, through at least two separate mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings have demonstrated that Sgo1 plays a central role in promoting biorientation, through at least two separate mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "c10865f1-ebff-4a5b-bcbb-e2689f91f231",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C69",
+      "claim": "Sgo1 enables error correction by retention of Ipl1 (aurora B) at the centromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Sgo1 enables error correction by retention of Ipl1 (aurora B) at the centromere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of one of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "c532c28e-e7cc-4f58-b0dc-8d534b6e5a27",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C70",
+      "claim": "Sgo1 separately recruits condensin to the pericentromere, which both imposes a bias on sister kinetochores to biorient and enables effective error correction.",
+      "claim_type": "EXPLICIT",
+      "source": "Sgo1 separately recruits condensin to the pericentromere, which both imposes a bias on sister kinetochores to biorient and enables effective error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of one of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "63fc34e7-9978-4377-a457-61806923ce0e",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C71",
+      "claim": "Condensin is a cohesin-related complex that can form a ring-like structure and has been proposed to organize chromosomes by bringing distant chromosomal sequences together.",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin is a cohesin-related complex that can form a ring-like structure and has been proposed to organize chromosomes by bringing distant chromosomal sequences together (Cuylen and Haering, 2011; Cuylen et al., 2011; Hirano, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about condensin, supported by citations to other studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "6575718c-ce7d-4dca-9345-cf846537e829",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C72",
+      "claim": "Shugoshin is an important determinant of condensin association with the pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have identified shugoshin as an important determinant of condensin association with the pericentromere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of one of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "d0d2c9b9-c510-4297-b553-923ce4c75d93",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C73",
+      "claim": "Cohesin is important in defining kinetochore geometry because it enables proper condensin association with chromosomes by recruiting shugoshin to the pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since Shugoshin relies on cohesin for its association with the pericentromere (Kiburz et al., 2005; Yamagishi et al., 2008; Figure 5), the importance of cohesin in defining kinetochore geometry (Sakuno et al., 2009) could be to enable proper condensin association with chromosomes by recruiting shugoshin to the pericentromere.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental findings and supported by citations to other studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "3538dca1-86e9-4a0f-bc81-7b9460bf1c02",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C74",
+      "claim": "Condensin organizes the pericentromeric chromatin to provide a structural integrity to the pericentromere that enables it to adopt a 'back-to-back' geometry that orients sister kinetochores in opposite directions, thereby favoring their biorientation.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that condensin organizes the pericentromeric chromatin to provide a structural integrity to the pericentromere that enables it to adopt a 'back-to-back' geometry that orients sister kinetochores in opposite directions, thereby favoring their biorientation (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed to explain the role of condensin in biorientation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "3eddce8b-f299-4497-bf0c-f8a5954a93ae",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C75",
+      "claim": "Condensin is not essential for biorientation in budding yeast, provided that error correction machinery is intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our data indicate that condensin is important to increase the efficiency of biorientation, we do not believe that it is essential for this process in budding yeast, provided that error correction machinery is intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that condensin mutants have reduced but not absent biorientation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "673596e2-54ab-4fa8-ac35-cd597a0d0a32",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C76",
+      "claim": "Budding yeast centromeres are relatively simple and only a single microtubule contacts each kinetochore.",
+      "claim_type": "EXPLICIT",
+      "source": "However, budding yeast centromeres are relatively simple and only a single microtubule contacts each kinetochore (Winey et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about budding yeast centromeres, supported by citation to Winey et al., 1995.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "e153b221-ae88-4bcb-8a54-dbaf4227b694",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C77",
+      "claim": "In organisms with more complex centromeres, kinetochore geometry likely plays a major role in ensuring sister kinetochore biorientation is achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not the case for organisms with more complex centromeres where it is likely that kinetochore geometry plays a major role in ensuring sister kinetochore biorientation is achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings in budding yeast and knowledge about more complex centromeres.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "ffaeb948-2dc2-4e50-947a-074408fa3870",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "claim_id": "C78",
+      "claim": "Shugoshins are emerging as functional hubs that define the pericentromere, allowing it to perform specialized functions that are key for the fidelity of chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Shugoshins are therefore emerging as functional hubs that define the pericentromere, allowing it to perform specialized functions that are key for the fidelity of chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the broader implications of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7247f5f4-2f2d-4e9b-a178-8c8009dce2ad",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sgo1-100 and Sgo1-700 mutants show reduced pericentromeric localization and delayed biorientation compared to wild-type cells, though not as severe as sgo1\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C9, and C10 are supported by experimental data in Figure 1. The biorientation assay (C6) and ChIP data (C9, C10) consistently demonstrate that Sgo1-100 and Sgo1-700 have reduced centromeric recruitment and impaired biorientation function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "0e0ad4e5-f739-45e3-b816-a737f5f9be9f",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The sgo1-3A mutation disrupts PP2A-Rts1 binding and centromeric localization, but PP2A-Rts1 is not required for biorientation, indicating Sgo1 has PP2A-independent functions in biorientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C15 form a logical chain supported by co-IP data (C11, C13), ChIP data (C12), and functional assays (C14). The conclusion that PP2A-Rts1 is dispensable for biorientation (C15) is well-supported by the observation that rts1\u0394 cells biorient normally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "e6c6f688-4d6e-4831-b576-84fb30999b4b",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sgo1 is required for maintenance, but not initial recruitment, of Ipl1/aurora B at centromeres, thereby enabling error correction during biorientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 are supported by co-IP (C16), auxin-degron experiments (C17-C18), and genetic analysis (C19-C20) shown in Figure 3. The temporal requirement for Sgo1 in Ipl1 maintenance is clearly demonstrated, supporting the conclusion in C3 and C69.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "1d04ef51-277d-4b9c-8a7b-662e1f3f9d9a",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sgo1 physically associates with condensin independently of DNA, forming a complex with PP2A, CPC, and condensin during mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are supported by mass spectrometry (C21), co-IP experiments (C22), and DNase treatment controls (C23) shown in Figure 4A-E and supplements. The DNA-independence of the interaction (C23) strengthens the conclusion that this is a direct protein-protein interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "9071673e-3593-4445-84c6-7b20492fd75d",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sgo1 recruits condensin to the pericentromere, as demonstrated by ChIP-seq showing reduced pericentromeric condensin in sgo1\u0394 cells and coincident recruitment kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are strongly supported by ChIP-seq data (Figure 4F-H) showing ~15 kb pericentromeric enrichment of condensin that is lost in sgo1\u0394 cells. Time-course experiments (C33) demonstrate coincident recruitment. Background claims C26-C29 provide appropriate context from prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "298fd4b6-744c-42c1-9ccb-acb03d38e63f",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sgo1 is not required for cohesin localization to chromosomes during mitosis in budding yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by ChIP-seq data (Figure 5A-B) showing indistinguishable Scc1 profiles in wild-type and sgo1\u0394 cells. This is consistent with prior literature (C35-C36) and distinguishes budding yeast mitosis from meiosis and mammalian mitosis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "5489759a-91fe-40b8-8263-32294fae93d2",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A hierarchy exists where cohesin and Bub1 kinase recruit Sgo1 to the pericentromere, which in turn recruits condensin, establishing an assembly pathway independent of monopolin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by ChIP experiments showing Sgo1 dependence on cohesin (C39-C40, Figure 5 supplements) and condensin dependence on Scc2/kinetochore factors but not Lrs4 (C42-C43, Figure 5 supplement 4). The hierarchical model (C44) is a reasonable inference from these data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "53cee14e-416f-41a2-99de-0332ec04dbc2",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sgo1 is both necessary and sufficient for condensin recruitment, as demonstrated by overexpression and tethering experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by complementary gain-of-function experiments: Sgo1 overexpression increases condensin levels (C45-C46, Figure 6A-B), and tethered Sgo1 recruits condensin to ectopic sites (C47, Figure 6D-G). Together with loss-of-function data, this establishes sufficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "ef852256-2e01-4d85-b437-601e5e3791c8",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Condensin contributes to error correction independently of Ipl1 localization, as shown by reduced switching frequency in YCS5-aid cells despite normal Ipl1 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 are supported by microfluidics experiments (Figure 7) showing delayed biorientation (C49-C51), normal inter-kinetochore distances (C52), and reduced switching in YCS5-aid cells (C54). The independence from Ipl1 localization (C55) is demonstrated by ChIP (Figure 7G).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "265f52dd-13b8-4fec-a53e-d9556dede134",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Condensin shapes the pericentromere to place sister kinetochores in a rigid back-to-back orientation for tension-sensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is explicitly labeled as speculation in the manuscript. While consistent with the data, direct structural evidence for the proposed 'back-to-back' geometry is not provided. This is a reasonable model but requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "441fc1c4-e999-4610-8a77-58758d20ba79",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Shugoshin and condensin impose a bias on sister kinetochores to biorient that is independent of aurora B-mediated error correction, as demonstrated by reduced biorientation in sgo1\u0394 and YCS5-aid but not ipl1-as cells when SPBs separate before microtubule attachment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 are strongly supported by the microfluidics bias assay (Figure 8) showing that sgo1\u0394 and YCS5-aid, but not ipl1-as, cells have reduced biorientation when error correction is bypassed. This provides the first molecular explanation for the sister kinetochore bias and supports the major conclusions C5, C67, and C70.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "cd4b5acb-210b-4a0d-a880-572d3f21c508",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Sgo1-700 loses the ability to interact with and recruit condensin, and is specifically defective in the sister kinetochore bias, while Sgo1-100 and Sgo1-3A retain condensin interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 are supported by co-IP (C61, Figure 9B), ChIP (C62, Figure 9C), tethering experiments (C63-C64, Figure 9E), and the bias assay (C66, Figure 9G). The differential behavior of the mutants provides strong evidence linking condensin recruitment to the biorientation bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "9d04a3b5-5b6d-4522-b4a2-6b56db7f4239",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sgo1 promotes biorientation through two mechanisms: maintaining Ipl1 at centromeres for error correction and recruiting condensin to bias sister kinetochores toward biorientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 represent the main conclusions of the study, which are well-supported by the collective evidence from multiple experimental approaches including genetics, biochemistry, ChIP-seq, and live-cell imaging. The two mechanisms are clearly distinguished and validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "48de7559-9194-4b00-b434-91b7dd8d00c0",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cohesin's role in kinetochore geometry may be to enable condensin association via Sgo1 recruitment, and condensin organizes pericentromeric chromatin to create a 'back-to-back' geometry favoring biorientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C73 is a reasonable inference from the hierarchical assembly data, but C74 is explicitly a proposed model lacking direct structural evidence. While consistent with all observations, the specific 'back-to-back' geometry and mechanism of condensin action require further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "fa254798-0708-42c4-bfd5-9be8861be855",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Condensin is not essential for biorientation in budding yeast with intact error correction, but may be more critical in organisms with complex centromeres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by the observation that condensin mutants show reduced but not absent biorientation. Claims C76-C77 provide appropriate context about budding yeast centromere simplicity and speculation about more complex systems, which is reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    },
+    {
+      "id": "b019e0bd-40f5-4dcb-983a-b0c3e869676c",
+      "content_id": "0194f97b-26ab-4cca-8107-1492a48358d3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Shugoshins function as pericentromeric hubs integrating multiple protein complexes for accurate chromosome segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is a well-supported synthesis of the findings showing Sgo1 interactions with PP2A, CPC, and condensin, each contributing to different aspects of chromosome segregation fidelity. This represents a conceptual advance in understanding shugoshin function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:06:20.811064Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "591a6d7b-c92f-40ad-bf68-bfe4a4182a3b",
+      "result_id": "7247f5f4-2f2d-4e9b-a178-8c8009dce2ad"
+    },
+    {
+      "claim_id": "5b24b754-a2d0-4a2a-9f73-868cde11b87b",
+      "result_id": "7247f5f4-2f2d-4e9b-a178-8c8009dce2ad"
+    },
+    {
+      "claim_id": "6adaa341-465a-4ae9-bd33-ba8240800a86",
+      "result_id": "7247f5f4-2f2d-4e9b-a178-8c8009dce2ad"
+    },
+    {
+      "claim_id": "d93a57da-ae4b-4a72-9a91-669723f247b0",
+      "result_id": "0e0ad4e5-f739-45e3-b816-a737f5f9be9f"
+    },
+    {
+      "claim_id": "3f980661-aaee-45a9-8a11-be1e29919309",
+      "result_id": "0e0ad4e5-f739-45e3-b816-a737f5f9be9f"
+    },
+    {
+      "claim_id": "3638de16-4ddc-436a-86bc-6fc5d6f2f66b",
+      "result_id": "0e0ad4e5-f739-45e3-b816-a737f5f9be9f"
+    },
+    {
+      "claim_id": "091662b5-b739-4a2e-8641-43a166e1c82e",
+      "result_id": "0e0ad4e5-f739-45e3-b816-a737f5f9be9f"
+    },
+    {
+      "claim_id": "888e9cfc-1c0e-4471-af6d-22d8bec81e82",
+      "result_id": "0e0ad4e5-f739-45e3-b816-a737f5f9be9f"
+    },
+    {
+      "claim_id": "d74f2ed9-9e99-419d-96f2-6f710686b330",
+      "result_id": "0e0ad4e5-f739-45e3-b816-a737f5f9be9f"
+    },
+    {
+      "claim_id": "cc232013-c7cf-4b06-882b-0fed0f37494e",
+      "result_id": "0e0ad4e5-f739-45e3-b816-a737f5f9be9f"
+    },
+    {
+      "claim_id": "aa0f6629-a27a-4f3a-bc02-136a0531e240",
+      "result_id": "e6c6f688-4d6e-4831-b576-84fb30999b4b"
+    },
+    {
+      "claim_id": "eeb3e811-8799-4cf1-aae3-df2b74610520",
+      "result_id": "e6c6f688-4d6e-4831-b576-84fb30999b4b"
+    },
+    {
+      "claim_id": "f735c88b-7903-4158-8dab-6be06cb8b4f6",
+      "result_id": "e6c6f688-4d6e-4831-b576-84fb30999b4b"
+    },
+    {
+      "claim_id": "30abf26a-875f-4920-803a-c89d45aab7ee",
+      "result_id": "e6c6f688-4d6e-4831-b576-84fb30999b4b"
+    },
+    {
+      "claim_id": "01548be5-9338-44d1-aec4-04f78d712ca5",
+      "result_id": "e6c6f688-4d6e-4831-b576-84fb30999b4b"
+    },
+    {
+      "claim_id": "03e38fa4-029f-4a23-a791-80bbd4279af1",
+      "result_id": "e6c6f688-4d6e-4831-b576-84fb30999b4b"
+    },
+    {
+      "claim_id": "c10865f1-ebff-4a5b-bcbb-e2689f91f231",
+      "result_id": "e6c6f688-4d6e-4831-b576-84fb30999b4b"
+    },
+    {
+      "claim_id": "3e59c281-5378-402f-9e89-6d02d526c6fa",
+      "result_id": "1d04ef51-277d-4b9c-8a7b-662e1f3f9d9a"
+    },
+    {
+      "claim_id": "92129dcd-30b6-4ffc-9755-618a822ecd8e",
+      "result_id": "1d04ef51-277d-4b9c-8a7b-662e1f3f9d9a"
+    },
+    {
+      "claim_id": "5920156a-9ba6-48fc-8957-852744a768ac",
+      "result_id": "1d04ef51-277d-4b9c-8a7b-662e1f3f9d9a"
+    },
+    {
+      "claim_id": "3652e1dd-9276-4608-b8fb-697e71970967",
+      "result_id": "1d04ef51-277d-4b9c-8a7b-662e1f3f9d9a"
+    },
+    {
+      "claim_id": "75d7edbb-ea14-4fbb-b8a7-02084b319d60",
+      "result_id": "1d04ef51-277d-4b9c-8a7b-662e1f3f9d9a"
+    },
+    {
+      "claim_id": "69cdf078-f2bb-42f9-afd6-5b9f4539f952",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "14c0f545-c09f-4c11-9e93-2782587802d0",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "ab56e60c-ff58-4e9c-801f-df8ce332b795",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "377854ba-7374-42b4-98eb-cc0b4c41ea6b",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "4283a5bc-f164-469a-9441-385ff74e9a32",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "7850dd43-7d7c-4923-8506-36ed04068895",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "9f9fccec-b8c8-43f6-97a4-2b0021110420",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "7380d4d9-6f37-4473-840d-0ddc9c1ab720",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "ff0db224-c009-4e0a-b33b-d75bd9392406",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "bbf7748b-772d-4ee7-b681-3b2bffe7790a",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "6575718c-ce7d-4dca-9345-cf846537e829",
+      "result_id": "9071673e-3593-4445-84c6-7b20492fd75d"
+    },
+    {
+      "claim_id": "c551df26-3cb8-46dd-b5b9-2ab0d54980c1",
+      "result_id": "298fd4b6-744c-42c1-9ccb-acb03d38e63f"
+    },
+    {
+      "claim_id": "5de90c9c-3e8a-405c-ac90-c75eccbeca25",
+      "result_id": "298fd4b6-744c-42c1-9ccb-acb03d38e63f"
+    },
+    {
+      "claim_id": "1dc06a12-f765-4a72-8373-4b207b4183b0",
+      "result_id": "298fd4b6-744c-42c1-9ccb-acb03d38e63f"
+    },
+    {
+      "claim_id": "74d46396-0ee7-486c-8fa5-ec5bc76a2b66",
+      "result_id": "298fd4b6-744c-42c1-9ccb-acb03d38e63f"
+    },
+    {
+      "claim_id": "c8efb563-01b4-4b3a-bda5-48b999851415",
+      "result_id": "5489759a-91fe-40b8-8263-32294fae93d2"
+    },
+    {
+      "claim_id": "38aa2d7a-7e23-47c2-9c1f-32e775d325a2",
+      "result_id": "5489759a-91fe-40b8-8263-32294fae93d2"
+    },
+    {
+      "claim_id": "8df77a4b-d0bc-487b-8c3a-0e9c10c0235e",
+      "result_id": "5489759a-91fe-40b8-8263-32294fae93d2"
+    },
+    {
+      "claim_id": "5a8a271f-43da-49da-b3de-27f01bd0937a",
+      "result_id": "5489759a-91fe-40b8-8263-32294fae93d2"
+    },
+    {
+      "claim_id": "e29f7ae9-33b6-4498-93c6-fde8e4b18028",
+      "result_id": "5489759a-91fe-40b8-8263-32294fae93d2"
+    },
+    {
+      "claim_id": "9aad731a-aa99-4613-a99b-0fdf9bd6c451",
+      "result_id": "5489759a-91fe-40b8-8263-32294fae93d2"
+    },
+    {
+      "claim_id": "b0f34b9f-5d8f-4733-9486-3ddc2d9b73f0",
+      "result_id": "53cee14e-416f-41a2-99de-0332ec04dbc2"
+    },
+    {
+      "claim_id": "ebd2d025-cfd6-44c4-8288-cc7c68d8983c",
+      "result_id": "53cee14e-416f-41a2-99de-0332ec04dbc2"
+    },
+    {
+      "claim_id": "26c4329e-ab9e-4fb8-bb48-b3071089a2f0",
+      "result_id": "53cee14e-416f-41a2-99de-0332ec04dbc2"
+    },
+    {
+      "claim_id": "bc03b5d9-9ffa-47d6-a35b-631752066826",
+      "result_id": "53cee14e-416f-41a2-99de-0332ec04dbc2"
+    },
+    {
+      "claim_id": "299b0b7a-35f7-411d-b8e3-44ac9346a683",
+      "result_id": "ef852256-2e01-4d85-b437-601e5e3791c8"
+    },
+    {
+      "claim_id": "6c811a6e-c665-413b-b2ca-6309370765d8",
+      "result_id": "ef852256-2e01-4d85-b437-601e5e3791c8"
+    },
+    {
+      "claim_id": "4db52c57-cf3a-4b44-bfbb-8aa0e75472fc",
+      "result_id": "ef852256-2e01-4d85-b437-601e5e3791c8"
+    },
+    {
+      "claim_id": "819e3a37-cb13-4625-9e32-9757f3aa96ed",
+      "result_id": "ef852256-2e01-4d85-b437-601e5e3791c8"
+    },
+    {
+      "claim_id": "0332e853-4f32-4450-ac46-17fafc256ac4",
+      "result_id": "ef852256-2e01-4d85-b437-601e5e3791c8"
+    },
+    {
+      "claim_id": "f5efe4a9-f3e5-41e8-9722-1722d21a406f",
+      "result_id": "ef852256-2e01-4d85-b437-601e5e3791c8"
+    },
+    {
+      "claim_id": "7aae55a0-2e6b-4bc0-903d-ee5ff3a29a99",
+      "result_id": "ef852256-2e01-4d85-b437-601e5e3791c8"
+    },
+    {
+      "claim_id": "47f2c058-174b-47f3-9bb1-c31232cc355f",
+      "result_id": "265f52dd-13b8-4fec-a53e-d9556dede134"
+    },
+    {
+      "claim_id": "96b8633f-0acc-4ea1-aef1-7280f60a9a17",
+      "result_id": "441fc1c4-e999-4610-8a77-58758d20ba79"
+    },
+    {
+      "claim_id": "470e1941-dbf8-48c3-b051-0e5ec4bf3c42",
+      "result_id": "441fc1c4-e999-4610-8a77-58758d20ba79"
+    },
+    {
+      "claim_id": "d1aa3d12-b9e8-4fa5-b70c-5205a74a78f8",
+      "result_id": "441fc1c4-e999-4610-8a77-58758d20ba79"
+    },
+    {
+      "claim_id": "d3abf4cf-27d8-4c6f-9a89-a793d6ceba0c",
+      "result_id": "441fc1c4-e999-4610-8a77-58758d20ba79"
+    },
+    {
+      "claim_id": "9fa8aa84-0282-47cf-9012-268e8b57d4e2",
+      "result_id": "441fc1c4-e999-4610-8a77-58758d20ba79"
+    },
+    {
+      "claim_id": "e0fc4f6a-4dd4-474e-88a0-0f4135e378a9",
+      "result_id": "441fc1c4-e999-4610-8a77-58758d20ba79"
+    },
+    {
+      "claim_id": "c532c28e-e7cc-4f58-b0dc-8d534b6e5a27",
+      "result_id": "441fc1c4-e999-4610-8a77-58758d20ba79"
+    },
+    {
+      "claim_id": "39a62153-1fdb-4578-a019-e742ec4b2b43",
+      "result_id": "cd4b5acb-210b-4a0d-a880-572d3f21c508"
+    },
+    {
+      "claim_id": "66267506-84b4-4bf9-a088-71b774560a98",
+      "result_id": "cd4b5acb-210b-4a0d-a880-572d3f21c508"
+    },
+    {
+      "claim_id": "8cdc71b4-6baa-4427-85dc-56b1a62a8fd5",
+      "result_id": "cd4b5acb-210b-4a0d-a880-572d3f21c508"
+    },
+    {
+      "claim_id": "2bc34c62-dae7-4946-86d7-cd58743c303b",
+      "result_id": "cd4b5acb-210b-4a0d-a880-572d3f21c508"
+    },
+    {
+      "claim_id": "19dca4f7-4084-41f1-9113-a5812385b852",
+      "result_id": "cd4b5acb-210b-4a0d-a880-572d3f21c508"
+    },
+    {
+      "claim_id": "10bca46e-dc7e-4d61-b858-6a0e6281c954",
+      "result_id": "cd4b5acb-210b-4a0d-a880-572d3f21c508"
+    },
+    {
+      "claim_id": "495f1734-a0a7-4771-84c9-13eeff07202c",
+      "result_id": "9d04a3b5-5b6d-4522-b4a2-6b56db7f4239"
+    },
+    {
+      "claim_id": "c10865f1-ebff-4a5b-bcbb-e2689f91f231",
+      "result_id": "9d04a3b5-5b6d-4522-b4a2-6b56db7f4239"
+    },
+    {
+      "claim_id": "c532c28e-e7cc-4f58-b0dc-8d534b6e5a27",
+      "result_id": "9d04a3b5-5b6d-4522-b4a2-6b56db7f4239"
+    },
+    {
+      "claim_id": "d0d2c9b9-c510-4297-b553-923ce4c75d93",
+      "result_id": "48de7559-9194-4b00-b434-91b7dd8d00c0"
+    },
+    {
+      "claim_id": "3538dca1-86e9-4a0f-bc81-7b9460bf1c02",
+      "result_id": "48de7559-9194-4b00-b434-91b7dd8d00c0"
+    },
+    {
+      "claim_id": "3eddce8b-f299-4497-bf0c-f8a5954a93ae",
+      "result_id": "fa254798-0708-42c4-bfd5-9be8861be855"
+    },
+    {
+      "claim_id": "673596e2-54ab-4fa8-ac35-cd597a0d0a32",
+      "result_id": "fa254798-0708-42c4-bfd5-9be8861be855"
+    },
+    {
+      "claim_id": "e153b221-ae88-4bcb-8a54-dbaf4227b694",
+      "result_id": "fa254798-0708-42c4-bfd5-9be8861be855"
+    },
+    {
+      "claim_id": "ffaeb948-2dc2-4e50-947a-074408fa3870",
+      "result_id": "b019e0bd-40f5-4dcb-983a-b0c3e869676c"
+    }
+  ],
+  "comparisons": []
+}

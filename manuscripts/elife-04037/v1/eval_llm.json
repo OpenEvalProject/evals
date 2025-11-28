@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "The Reproducibility Project: Cancer Biology is replicating 50 cancer biology papers published between 2010 and 2012.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a straightforward description of the project scope stated in the abstract. This is a factual statement about the project itself rather than a scientific finding requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "RTK inhibitor resistance can be acquired through multiple mechanisms including mutations blocking drug action/uptake, genetic amplification of downstream targets, and engagement of parallel RTK signaling pathways from the tumor microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 describe established mechanisms of RTK inhibitor resistance supported by multiple citations to prior literature (Mok et al., 2009; Camidge et al., 2014; Chen and Fu, 2011; Garrett and Arteaga, 2011; Sequist et al., 2011; Gainor and Shaw, 2013; Yang, 2013). These represent well-documented background knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Wilson et al. demonstrated that growth factor ligands (FGF, NRG1, HGF) can bypass RTK inhibitor sensitivity by reactivating downstream signaling pathways in three cancer cell line models, and that blocking the bypassing ligand receptors with secondary kinase inhibitors restores sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C8-C13 describe findings from Wilson et al., 2012, properly cited with specific figure references (Figure 2A, 2B, 2C). These are accurate summaries of prior published work being replicated, not new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Multiple independent studies have confirmed that growth factor ligands can bypass RTK inhibitor sensitivity through parallel signaling pathways, with findings similar to Wilson et al. in different cell line models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 cite multiple independent studies (Straussman et al., 2012; Harbinski et al., 2012; Welti et al., 2011; Montero-Conde et al., 2013; Nakagawa et al., 2012; Nakade et al., 2014) that corroborate the Wilson findings in different experimental systems. This provides strong convergent evidence from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The cell lines used in the replication study are characterized as: A204 (PDGFR amplified rhabdomyosarcoma), M14 (BRAF-mutated melanoma), and KHM-3S (EGFR-mutated small cell lung cancer). The MDA-MB-435 cell line has been shown to be mislabeled and is identical to M14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide standard cell line characterizations stated in the manuscript. Claim C23 regarding MDA-MB-435 mislabeling is supported by three independent citations (Rae et al., 2007; Chambers, 2009; Holliday and Speirs, 2011), representing established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Positive control experiments are expected to show that FGF causes ERK1/2 phosphorylation in HL60 cells, NRG1 causes HER3 phosphorylation in MCF7 cells, and HGF causes MET phosphorylation in HEK293 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe expected outcomes for positive control experiments based on established knowledge of growth factor signaling. These are appropriate controls to validate ligand activity, though the manuscript does not present actual data from these experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In A204 cells, FGF induces resistance to sunitinib (IC50 increases from 0.05 \u03bcM to 2.5 \u03bcM), and PD173074 blocks this resistance, restoring sensitivity (IC50 returns to 0.025 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C31 present IC50 values approximated from Wilson et al. Figure 2B images. The manuscript states 'The original data presented is qualitative, and the authors were unable to share the raw data values.' Extracting quantitative values from qualitative images introduces measurement uncertainty. The conclusions (C30-C31) are inferences from these approximated values without statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In M14 cells, NRG1 induces partial resistance to PLX4032 (IC50 increases from 0.1 \u03bcM to 0.2 \u03bcM), and lapatinib blocks this resistance, restoring sensitivity (IC50 returns to 0.1 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C36 present IC50 values approximated from Wilson et al. Figure 2B images without access to raw data. The 2-fold change in IC50 with NRG1 is modest and described as 'partial resistance.' Without error estimates or statistical testing, the significance of this change is uncertain. The restoration of sensitivity by lapatinib appears complete based on the approximated values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In KHM-3S cells, HGF induces strong resistance to erlotinib (IC50 increases from 0.5 \u03bcM to >10 \u03bcM), and crizotinib blocks this resistance, restoring sensitivity (IC50 returns to 0.3 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C41 present IC50 values approximated from Wilson et al. Figure 2B images. The >20-fold increase in IC50 with HGF represents a strong resistance effect. However, these are approximated values from qualitative images without raw data or error estimates. The restoration by crizotinib appears nearly complete (0.3 \u03bcM vs 0.5 \u03bcM baseline).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C54",
+      "C58",
+      "C59"
+    ],
+    "result": "In A204 cells, FGF activates pFRS2 and pERK in the presence of sunitinib, and PD173074 blocks this activation. Densitometric analysis shows pFRS2 increases from 1.473 to 8.069 with FGF and returns to 1.013 with PD173074; pERK increases from 1.952 to 5.350 with FGF and returns to 0.369 with PD173074.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C59 present densitometric quantification of Western blots from Wilson et al. Figure 2C using Image Studio Lite software. While the analysis method is specified, the manuscript states 'The original data presented is qualitative' and no replicates or error estimates are provided. Single-point densitometry from published images is subject to image quality limitations and cannot assess variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C72",
+      "C73"
+    ],
+    "result": "In M14 cells, NRG1 activates pHER3 and pAKT in the presence of PLX4032, and lapatinib blocks this activation. Densitometric analysis shows pHER3 increases from 0.3667 to 3.9447 with NRG1 and returns to 1.0666 with lapatinib; pAKT increases from 1.8645 to 11.211 with NRG1 and returns to 1.7863 with lapatinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C73 present densitometric quantification of Western blots from Wilson et al. Figure 2C. The pHER3 and pAKT activation by NRG1 shows substantial increases (>10-fold for pHER3, ~6-fold for pAKT), and lapatinib appears to block these increases. However, these are single measurements from published images without replicates or statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C86",
+      "C90",
+      "C91"
+    ],
+    "result": "In KHM-3S cells, HGF activates pMET and pERK in the presence of erlotinib, and crizotinib blocks this activation. Densitometric analysis shows pMET increases from 1.098 to 11.66 with HGF and returns to 1.095 with crizotinib; pERK increases from 0.18 to 0.979 with HGF and returns to 0.085 with crizotinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C91 present densitometric quantification of Western blots from Wilson et al. Figure 2C. The pMET activation by HGF shows a strong increase (~10-fold), and crizotinib completely blocks this. The pERK changes are more modest. These are single measurements from published images without replicates, error estimates, or statistical testing.",
+    "result_type": "MAJOR"
+  }
+]

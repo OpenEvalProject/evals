@@ -1,0 +1,2049 @@
+{
+  "submission": {
+    "id": "fc7927b9-1039-4e02-9119-5e10d5feacb6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:13:10.130180Z",
+    "updated_at": "2025-11-28T21:13:10.130180Z"
+  },
+  "content": [
+    {
+      "id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "submission_id": "fc7927b9-1039-4e02-9119-5e10d5feacb6",
+      "content_type": "manuscript",
+      "content_text": "# The transcription factor NRSF contributes to epileptogenesis by selective repression of a subset of target genes\n\n## Authors\n\n- Shawn McClelland<sup>1</sup>\n- Gary P Brennan<sup>1</sup>\n- Celine Dub\u00e9<sup>1</sup>\n- Seeta Rajpara<sup>1</sup>\n- Shruti Iyer<sup>1</sup>\n- Cristina Richichi<sup>1</sup>\n- Christophe Bernard<sup>3</sup>\n- Tallie Z Baram<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Anatomy and Neurobiology University of California, Irvine Irvine United States\n2. Department of Pediatrics University of California, Irvine Irvine United States\n3. Laboratoire Epilepsie et Cognition Institut National de la Sant\u00e9 et de la Recherche M\u00e9dicale Marseille France\n4. Department of Neurology University of California, Irvine Irvine United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mechanisms generating epileptic neuronal networks following insults such as severe seizures are unknown. We have previously shown that interfering with the function of the neuron-restrictive silencer factor (NRSF/REST), an important transcription factor that influences neuronal phenotype, attenuated development of this disorder. In this study, we found that epilepsy-provoking seizures increased the low NRSF levels in mature hippocampus several fold yet surprisingly, provoked repression of only a subset (\u223c10%) of potential NRSF target genes. Accordingly, the repressed gene-set was rescued when NRSF binding to chromatin was blocked. Unexpectedly, genes selectively repressed by NRSF had mid-range binding frequencies to the repressor, a property that rendered them sensitive to moderate fluctuations of NRSF levels. Genes selectively regulated by NRSF during epileptogenesis coded for ion channels, receptors, and other crucial contributors to neuronal function. Thus, dynamic, selective regulation of NRSF target genes may play a role in influencing neuronal properties in pathological and physiological contexts.\n\n## Introduction\n\nEpileptic networks arise via numerous mechanisms (Pitk\u00e4nen et al., 2011; Vezzani et al., 2011; Kim et al., 2012; Hildebrand et al., 2013; Rowley and Patel, 2013). Changes in neuronal properties and resulting alterations of network behavior constitute one of the important mechanisms of epileptogenesis (Yaari and Beck, 2002; Noam et al., 2011; Goldberg and Coulter, 2013). Neuronal properties may change because of genetic mutations in crucial neuronal genes (Meisler and O'Brien, 2012; Oliva et al., 2012; Kingwell, 2013; Papale et al., 2013) or from insult-related alterations of gene expression that affect the levels and function of their products. Whereas altered expression of individual ion channels (Brewster et al., 2002; Khirug et al., 2010; Poolos, 2012; van Loo et al., 2012; Maslarova et al., 2013; Shah et al., 2013), neurotransmitter receptors (Gonzalez et al., 2013; Rojas and Dingledine, 2013), and other cellular components (Zeng et al., 2009; Maroso et al., 2011; Jimenez-Mateos et al., 2012; Liu et al., 2013) have been extensively reported, the nature and mechanisms of the orchestration of these gene expression changes remain unknown: do epilepsy-provoking insults regulate individual genes via distinct cellular pathways? Alternatively, are there clusters of genes that are co-regulated based on specific common properties, and whose altered expression contributes to the generation of \u2018epileptic neurons\u2019? (Brooks-Kayal et al., 2009; McClelland et al., 2011b; Kobow and Bl\u00fcmcke, 2012; Roopra et al., 2012; van Loo et al., 2012). These questions are critical for the understanding and future prevention of certain epilepsies.\n\nGene expression is dynamically regulated throughout life and influences neuronal phenotype and behavior (Bale et al., 2010; Robison and Nestler, 2011; Sweatt, 2013). This dynamic regulation is mediated by transcriptional enhancers and repressors that bind to specific sequences of target genes and modify their expression (Ballas et al., 2005; Kohyama et al., 2008; Hwang et al., 2010). The repressor neuron-restrictive silencer factor (NRSF/ REST) functions by binding a DNA sequence called neuron-restrictive silencer element (NRSE) to mediate long-term, cell-specific gene repression (Schoenherr and Anderson, 1995) via complex interactions with co-repressors such as mSin3 and Co-Rest (Chen et al., 1998; Andres et al., 1999; Naruse et al., 1999; Roopra et al., 2001; Wood et al., 2003; Belyaev et al., 2004; Kuwabara et al., 2004; Mortazavi et al., 2006; Johnson et al., 2007; Abrajano et al., 2009). NRSF is highly expressed in non-neuronal tissues where it represses neuronal genes (Ballas and Mandel, 2005) and has important roles in neurogenesis and neuronal differentation within the brain (Hsieh et al., 2004; Singh et al., 2008; Westbrook et al., 2008; Mandel et al., 2011; Aoki et al., 2012; Ernsberger, 2012; Kok et al., 2012; Rodenas-Ruano et al., 2012).\n\nNRSF levels are low in mature hippocampus where \u223c600 expressed genes contain NRSEs and are thus potentially regulated by the repressor. Hippocampal NRSF expression increases several-fold following seizures (Palm et al., 1998; Garriga-Canut et al., 2006; McClelland et al., 2011a) and following other insults that promote epilepsy (Calderone et al., 2003; Noh et al., 2012; Kaneko et al., 2014). We found that blocking NRSF function attenuated the epileptic phenotype induced by severe seizures (McClelland et al., 2011a). However, it is unclear \u2018how\u2019 augmented NRSF levels promote selective neuronal phenotypic changes that provoke epilepsy. In this study, we used large-scale transcriptome arrays, qPCR validation, chromatin immunoprecipitation (ChIP), and gene set enrichment analysis (GSEA) to examine the basis of NRSF-dependent gene expression changes during epileptogenesis. Surprisingly, a twofold to threefold increase of NRSF levels, induced by epilepsy-provoking seizures, led to repression of only a subset of potentially regulated genes, and these were rescued by interfering with NRSF function. Unexpectedly, genes found to be regulated by NRSF were characterized by mid-range NRSF-binding probabilities during the naive state. This moderate baseline binding enabled a significant increase of NRSF binding to these genes upon modest increases in NRSF tissue levels. NRSF-regulated hippocampal genes included ion channels, receptors, calcium-related molecules, and other transcription factors that govern neuronal function and plasticity, suggesting that their repression might contribute to the pathogenesis of epilepsy.\n\n## Results\n\n### NRSE-containing genes are preferentially repressed by seizure-provoked increase of hippocampal NRSF levels\n\nNRSF mRNA and protein expression in mature hippocampus were increased following long seizures induced by systemic administration of the glutamate receptor agonist, kainic acid (KA) (Figure 1A,B). The direct dependence of increased NRSF expression on network activity (seizures) was tested by examining NRSF levels in vitro, using organotypic hippocampal slice cultures, where most potential confounders were excluded. KA provoked seizure-like electrophysiological events in the hippocampal slice (Richichi et al., 2008) and led a to time-dependent increase of NRSF mRNA and protein levels (Figure 1C,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01267/elife-01267-fig1-v1.jpg)\n\n**Figure 1.:** (A) Time-course of NRSF mRNA expression levels following KA-induced seizures, n = 4/group. (B) Representative western blot image of NRSF protein levels in control (ctrl) animals and animals at 72 hr and 1 week post KA-induced seizures. Quantification of NRSF protein levels using optical density measurements (ctrl 1.96 \u00b1 0.18, n = 6; KA+72hr 6.75 \u00b1 0.54, n = 3; KA+1 week: 5.42 \u00b1 0.36, n = 3). (C and D) In situ hybridization and quantification of NRSF mRNA in organotypic hippocampal slice cultures which had undergone KA-induced seizure-like events. Quantification of mRNA in pyramidal cell layer was performed in control cultures as well as cultures 4 hr, 12 hr, 24 hr, and 1 week following seizure-like events in CA1 and CA3 region of the hippocampus, n = 4\u20138/group, *p<0.05.\n\nBecause cellular plasticity often derives from large-scale changes in gene expression (Robison and Nestler, 2011), we examined for such large-scale expression changes here using a microarray analysis. We initially screened the microarray data for candidate genes whose expression was repressed following KA-induced seizures and examined whether these genes contained functional NRSEs. Expression of 12,996 genes was detected in the CA1 region of the rat hippocampus of which 371 (2.8%) contained NRSE sites (Johnson et al., 2007). 470 genes whose expression was significantly repressed by KA-induced seizures were identified by this initial candidate gene analysis that employed routine statistical significance (Subramanian et al., 2005; Yukhananov and Kissin, 2008; Borg et al., 2010; Oberbauer et al., 2010; Stark et al., 2010). Of these, 39 (8.3%) contained NRSF binding sites (Figure 2A). The significant enrichment in the fraction of NRSE-containing genes in the repressed vs total gene population (8.3% vs 2.8%) indicated that NRSF-regulated genes were preferentially repressed by epilepsy-provoking network hyperactivity (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01267/elife-01267-fig2-v1.jpg)\n\n**Figure 2.:** (A) Heat map representing genes with repressed mRNA expression levels in two representative samples from hippocampi derived from control (Ctrl) and from hippocampi from KA-seizures-experiencing rats. Expression levels are represented by color using a scale from 50% to 150% of expression, where yellow is the highest and blue is the lowest. (B) Relative abundance of NRSF target genes among total detected genes vs those repressed by KA-seizures.\n\n### Only a subset of NRSE-containing genes are regulated by NRSF in mature hippocampus\n\nWhereas 371 of the detected hippocampal genes contained an NRSE and were therefore potential NRSF targets, only 39 of these were repressed by KA-induced seizures when NRSF levels increased twofold to threefold. To examine if the correlation between NRSF levels and the repression of this subset (\u223c10%) of NRSE-containing genes was causal, we employed a decoy oligonucleotide strategy to block NRSF binding to the NRSE sequences of genomic DNA (Akhtar et al., 1991; Szklarczyk and Kaczmarek, 1995; Gilar et al., 1998; Soldati et al., 2011; Sedaghat et al., 2013). We generated oligodeoxynucleotides (ODNs) comprised of the NRSF binding sequence (NRSE), modified their backbone for stability and infused them into the brain. These ODNs acted as \u2018decoys\u2019, binding to cellular NRSF and inhibiting its ability to bind to target genes (Figure 3A) (McClelland et al., 2011a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01267/elife-01267-fig3-v1.jpg)\n\n**Figure 3.:** (A) A schematic illustrating the mechanism of action of NRSF following a seizure-induced increase and the decoy oligodeoxynucleotide (ODN) intervention strategy with the expected outcome. (B) A heat map representation of the changes in mRNA expression levels of genes that contain a putative NRSE site that were down-regulated 48 hr after KA-induced seizures. Heat map compares representative samples from two hippocampi, from each of four experimental conditions: 'controls' receiving random ODNs (n = 4); \u2018controls\u2019 receiving NRSE ODNs (n = 4); \u2018KA-seizures\u2019, rats sustaining KA induced seizure activity and receiving random ODNs (n = 3); \u2018KA-seizures + NRSE-ODN\u2019, rats sustaining KA-induced seizure activity and receiving NRSE-ODNs (n = 4). Samples and genes are plotted using hierarchical clustering using Euclidean distance and average linkage. Expression level is depicted by color using a scale from 50% to 150% of expression, where yellow is the highest and blue is the lowest. (C) Independent analysis of gene expression using qPCR. Several genes that were both repressed by seizure activity and rescued by interference with NRSF function were tested (Glra2, Myo5B, Stmn2), and results analyzed using two way ANOVA. Myo5B F(1,18) = 9.35, p = 0.007; Glra2 F(1,17) = 46.89, p = 0.0001; Stmn2 F(1,18) = 1.97, p = 0.047, n = 4/group.\n\nConsistent with the low baseline levels of NRSF in naive hippocampus, preventing the binding of the repressor to target genes had little effects on the expression of most of the 39 genes (compare \u201crandom ODN\u201d and NRSE\u2013ODN columns in the control brain, left side of Figure 3B). Of the 39 NRSE-containing genes that were repressed by seizures in the presence of random ODNs, (depicted in blue in Figure 3B) the majority (28) were no longer significantly repressed when NRSF binding to target genes was inhibited (compare the [KA-seizures + NRSE ODN] group to either of the control groups; Figure 3B). These microarray data supported the idea that in mature hippocampus a twofold to threefold change in NRSF levels influenced the expression of only a subset of putative NRSF target genes and this repression required binding of NRSF to the chromatin. To examine the validity of the microarray data supporting this observation, we performed qPCR on a subset of genes to confirm both their seizure-induced repression as well as their \u2018rescue\u2019 by NRSE-ODN administration (Figure 3C).\n\n### Physical binding of NRSF co-varies with tissue levels specifically at genes that are regulated by the repressor\n\nWe next examined the microarray data by performing qPCR analysis of a subset of NRSE-containing genes that were found to be repressed on the array and a second subset of genes whose expression was not altered on the array following KA-seizures (Figure 4A,B). These qPCR analyses revealed excellent correlation with the microarray and both methods distinguished between the NRSE-containing genes that were or were not repressed by seizures.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01267/elife-01267-fig4-v1.jpg)\n\n**Figure 4.:** (A) A selection of NRSE containing genes (Atp2b, Crhr2, Ep300, Hcn2, Kcnh2, P2xr5, Pcsk1, Xpo6) whose expression was unchanged according to the microarray following KA-seizures were measured using qPCR to validate the microarray n = 4/group. (B) qPCR measurement of a selection of the NRSE containing genes (Calb1, Glra2, Grin2a, Hcn1, Kcnc2, Klf9, Lrp11, Myo5b, Stmn2) whose expression was down-regulated following KA-seizures and rescued by NRSE-ODNs n = 4/group, p*<0.05.\n\nTo probe the basis of the differential regulation of these two gene groups, we compared the binding of NRSF to the repressed and non-repressed genes in both the naive hippocampus and following KA-seizures. Figure 5A depicts the relative binding of NRSF to 13 genes that are presented in the order of increasing NRSF binding in the naive hippocampus. Genes repressed by the seizures are shown in green. Figure 5B shows the relative binding of NRSF to the same genes in hippocampi taken from rats undergoing seizures. For each of these genes, we calculated the increment in NRSF binding after the seizures (when NRSF levels are increased) relative to the naive state (Figure 5C). As apparent in this figure, (a) genes repressed by seizure-induced increases of NRSF levels were those that had a large increment in NRSF binding. In addition, (b) this increment arose on the background of moderate binding levels in the naive state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01267/elife-01267-fig5-v1.jpg)\n\n**Figure 5.:** (A) NRSF binding (expressed as percent of input) to selected NRSE-containing genes in naive hippocampus with genes whose expression is repressed by seizure-induced NRSF increase represented in green, genes where NRSF occupancy was low are depicted in white, while genes where NRSF binding was abundant are depicted in black. (B) NRSF occupancy (percent input) at the same gene set in the hippocampus 48 hr following KA-induced seizures. (C) Graphical depiction of the changes (Delta) in NRSF occupancy at NRSE-containing gene sets comparing occupancy following KA-induced seizures to occupancy in the naive state. Genes whose expression was repressed are represented in green, n = 4\u20136/group, p*<0.05.\n\nSpecifically, the effects of seizure-induced increase of NRSF levels on NRSF binding to the chromatin correlated with the degree of repressor binding in the naive state: binding of NRSF to certain genes (Ep300, Hcn2, P2xr5, Xpo6) was modest and did not increase significantly upon seizure-induced increase of NRSF levels (white columns of Figure 5A\u2013C). NRSF binding was very robust at NRSE sites of other genes (Atp2b, Crhr2, Htr1a, Pcsk1), and the degree of binding was relatively independent of NRSF tissue levels (black columns of Figure 5A\u2013C). In contrast, seizure-induced increase of NRSF levels markedly augmented NRSF binding to genes such as Calb1, Glra2, Grin2A, Hcn1, and Kcnc2, where binding was moderate in the naive hippocampus. The latter set of genes was those preferentially repressed by NRSF in mature hippocampus (Figure 4B and Figure 5C).\n\n### A potential \u2018dynamic range\u2019 of repressor binding might enable gene regulation by moderate fluctuations of NRSF levels\n\nAs shown above, only a subset of NRSE-containing genes in mature hippocampus was repressed by seizure-dependent increase of hippocampal NRSF levels and \u2018rescued\u2019 when NRSF binding was prevented. Interestingly, this sub-population of putative NRSF target genes had moderate repressor binding in the naive state which increased markedly after seizures. This led us to propose a simple model to explain these findings. According to the model (Figure 6), in genes with very low binding to NRSF, a moderate increase of NRSF levels would not alter repressor binding appreciably. Similarly, in genes with high binding frequency to NRSF, NRSEs would likely be occupied even by the low NRSF levels in the naive hippocampus. Increased NRSF levels would be unlikely to augment occupancy or promote suppression of these genes. In contrast, when NRSF binding is \u2018mid-range\u2019, then relatively small fluctuation of NRSF levels would result in major changes of repressor binding and gene repression.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01267/elife-01267-fig6-v1.jpg)\n\n**Figure 6.:** A graphical representation of our proposed hypothesis based on our observations that only a subset of NRSE-containing genes are functionally repressed by seizure-induced increases in NRSF levels and that these genes appear to have moderate NRSF binding in the naive brain.\n\nWe sought to refute or support this broad supposition by examining available information about binding frequencies of NRSF to a large gene set. A comprehensive analysis of NRSF binding probabilities has been reported, based on ChIP-sequencing data (ChIP-Seq) (Johnson et al., 2007). The published binding frequencies were derived from a cell line, and it is likely that several cell- and tissue-specific parameters influence NRSF binding to the chromatin (Lawinger et al., 2000; Zuccato et al., 2007; Gillies et al., 2011; Lov\u00e9n et al., 2013; Whyte et al., 2013). Cognizant of these potential caveats, we simply employed the data set to estimate broadly the binding frequencies of NRSE-containing genes to NRSF. We partitioned these putative NRSF target genes into 8 sets (bins) based on their NRSF binding-frequency rank (Figure 7A). We then partitioned (binned) all hippocampal NRSE-containing genes that were detectable in the transcriptome arrays into 8 sets based on their predicted NRSF binding-frequency rank using the Johnson data set.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01267/elife-01267-fig7-v1.jpg)\n\n**Figure 7.:** (A) Diagram illustrating sets of genes that were binned according to binding frequency based on Johnson et al., 2007. Gene sets were numbered in increasing order of their NRSF binding frequencies. Mid-range NRSF-binding frequencies are in green. (B and C) A binding frequency metric was established for each NRSF-binding gene based on the number of ChIP-Seq reads from published data (Johnson et al., 2007). The distribution of (B) all microarray-detectable NRSF-binding genes was compared to the distribution of (C) genes regulated by seizure-dependent NRSF changes, that is, those genes significantly repressed by network hyperactivity and rescued by NRSE\u2013ODN treatment. Presented are scatter dot plots, with median with interquartile ranges. Below them are regression fit histogram plots. (D) Comparing microarray data from control rats to that of rats experiencing KA-seizures (both with scrambled ODN), using GSEA, illustrates that three gene-sets were significantly enriched in the control rats (repressed in the seizure + scrambled-ODN rats) and these fell in the mid-frequency category (see Table 1 for numeric values).\n\nWe compared the binding frequency distribution of all of the hippocampal NRSE-containing genes to that of the subset of genes that were functionally regulated by NRSF (Figure 7B). In the overall population of NRSE-containing hippocampal genes, binding frequencies ranged from 19 to 5544 (mean 279; median 153; standard deviation 429). In contrast, NRSF-binding scores of the genes that were functionally regulated by NRSF ranged from 27 to 663 (mean 214; median 172; standard deviation 166). Whereas the frequency medians of all NRSE-containing hippocampal genes and NRSF-regulated NRSE-containing genes were not significantly different (Mann\u2013Whitney p = 0.86), the scatter plots and regression-fit histograms demonstrated that the gene population regulated by NRSF in the context of epileptogenesis was more tightly clustered and had distinct distribution properties. Skewness was 6.5 in all detected NRSE-containing genes vs 1.2 in the regulated genes; Kurtosis was 66 in all of the genes and 0.98 in the regulated genes. Notably, whereas NRSF-binding distribution of the total NRSE-containing hippocampal gene population was exceedingly different from normal (all: Kolmogorov\u2013Smirnov test p < 0.0001, D'Agostino and Pearson omnibus normality test p < 0.0001), the distribution pattern of the regulated gene population was much closer to normal (Kolmogorov\u2013Smirnov test p > 0.10, D'Agostino and Pearson omnibus normality test p = 0.012). Together, these clustering patterns suggest that the population of NRSF-regulated hippocampal genes is distinct and characterized by a relatively narrow, normally-distributed range of NRSF-binding frequencies.\n\nTo further test this idea, we analyzed the array data using gene set enrichment analysis (GSEA, MIT Broad Institute) (Mootha et al., 2003; Subramanian et al., 2005). GSEA is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two experimental groups. Comparison of the control group to the seizures group for each binned gene set as described above resulted in a graphic representation depicting the GSEA-normalized Enrichment Scores (NES), obtained from the Broad Institute's molecular signature database (MSigDB), for each set of partitioned NRSE-containing genes (Figure 7D). The GSEA graphs are shown in Figure 8, and the analysis parameters, including false discovery rate [FDR] and family-wise error rates [FWER] are found in Table 1. The expression of three of these \u2018bins\u2019 (gene sets partitioned by binding frequency) was significantly enriched in the control group (i.e., repressed in the seizure group) when compared to the levels of enrichment of gene sets composed of random permutations of genes (FWER *p < 0.05). Notably, the three significantly enriched gene-sets were not composed of genes with the highest NRSF binding frequency; rather, they consisted of genes between the 37.5th and 75th binding frequency rank percentile (Figure 7D; Table 1; Figure 8). In addition, when binding-frequency binned GSEA was used to compare the control group to the KA-seizure group receiving the NRSE\u2013ODN treatment (i.e., with blocked NRSF function), the three binned gene sets were no longer significantly different from those in the control group (Table 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01267/elife-01267-fig8-v1.jpg)\n\n**Figure 8.:** These genes have been classified (\u2018binned\u2019) into eight groups by increasing order of their NRSF binding frequency rank percentile. Hence, these genes might be categorized as low-binding frequency (A\u2013C), mid-binding frequency (D\u2013F), and high-binding frequency (G\u2013H). Each graph shows enrichment plots comparing gene expression in KA-seizures vs controls in the presence of random ODNs. Please see Table 1, top, for the numeric values and parameters of the analyses.\n\n**Table 1.**\n Gene-set enrichment analyses focusing on NRSF\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene set name</th>\n      <th>NES</th>\n      <th>NOM p-val</th>\n      <th>FDR q-val</th>\n      <th>FWER p-val</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ctrl vs Activity (both with scrambled ODN)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NRSF(0-12.5)(19-44)</td>\n      <td>1.1449</td>\n      <td>0.2891</td>\n      <td>0.3824</td>\n      <td>0.8710</td>\n    </tr>\n    <tr>\n      <td>NRSF(12.5-25)(45-66)</td>\n      <td>1.2296</td>\n      <td>0.5170</td>\n      <td>0.5150</td>\n      <td>0.9870</td>\n    </tr>\n    <tr>\n      <td>NRSF(25-37.5)(67-99)</td>\n      <td>1.1865</td>\n      <td>0.2140</td>\n      <td>0.2020</td>\n      <td>0.2940</td>\n    </tr>\n    <tr>\n      <td>NRSF(37.5-50)(100-151)</td>\n      <td>1.6817</td>\n      <td>0.0102</td>\n      <td>0.0212</td>\n      <td>0.0160</td>\n    </tr>\n    <tr>\n      <td>NRSF(50-62.5)(153-221)</td>\n      <td>1.6487</td>\n      <td>0.0258</td>\n      <td>0.0175</td>\n      <td>0.0210</td>\n    </tr>\n    <tr>\n      <td>NRSF(62.5-75)(223-341)</td>\n      <td>2.0243</td>\n      <td>0.0000</td>\n      <td>0.0000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <td>NRSF(75-87.5)(348-533)</td>\n      <td>1.1396</td>\n      <td>0.2777</td>\n      <td>0.5563</td>\n      <td>0.8600</td>\n    </tr>\n    <tr>\n      <td>NRSF(87.5-100)(535-5544)</td>\n      <td>0.9720</td>\n      <td>0.1868</td>\n      <td>0.7621</td>\n      <td>0.7200</td>\n    </tr>\n    <tr>\n      <td>Ctrl vs Activity (both with NRSE-ODN)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NRSF(0-12.5)(19-44)</td>\n      <td>1.1485</td>\n      <td>0.2634</td>\n      <td>0.3881</td>\n      <td>0.6590</td>\n    </tr>\n    <tr>\n      <td>NRSF(12.5-25)(45-66)</td>\n      <td>1.1842</td>\n      <td>0.2000</td>\n      <td>0.2071</td>\n      <td>0.6050</td>\n    </tr>\n    <tr>\n      <td>NRSF(25-37.5)(67-99)</td>\n      <td>1.3069</td>\n      <td>0.1165</td>\n      <td>0.1323</td>\n      <td>0.3540</td>\n    </tr>\n    <tr>\n      <td>NRSF(37.5-50)(100-151)</td>\n      <td>1.4666</td>\n      <td>0.0458</td>\n      <td>0.0646</td>\n      <td>0.1450</td>\n    </tr>\n    <tr>\n      <td>NRSF(50-62.5)(153-221)</td>\n      <td>1.4762</td>\n      <td>0.0270</td>\n      <td>0.0880</td>\n      <td>0.1300</td>\n    </tr>\n    <tr>\n      <td>NRSF(62.5-75)(223-341)</td>\n      <td>1.5241</td>\n      <td>0.0294</td>\n      <td>0.1276</td>\n      <td>0.0970</td>\n    </tr>\n    <tr>\n      <td>NRSF(75-87.5)(348-533)</td>\n      <td>1.2320</td>\n      <td>0.4121</td>\n      <td>0.4184</td>\n      <td>0.8400</td>\n    </tr>\n    <tr>\n      <td>NRSF(87.5-100)(535-5544)</td>\n      <td>1.0232</td>\n      <td>0.1824</td>\n      <td>0.5207</td>\n      <td>0.5190</td>\n    </tr>\n  </tbody>\n</table>\n\n_NRSF is significantly enriched in gene sets with moderate binding probability even after false discovery corrections (FDR q-val), when the control and activity groups are compared (top; in bold). When the function of NRSF is blocked, that is, when comparison groups are the control and seizure-activity groups both treated with the NRSE-ODN, NRSF target gene-sets the bins (gene-sets) with moderate binding-frequencies are no longer enriched among differentially expressed genes._\n\n### Genes regulated by NRSF are key molecules that contribute to neuronal properties\n\nTo better identify genes regulated by moderate fluctuations of NRSF in mature hippocampus, we followed the screen of microarray data for candidate genes with further analyses to control for false discovery (type I error). This approach uncovered genes that were significantly different in the (seizure + random-ODN) hippocampi vs the other groups (Table 2; p < 0.05, one-way ANOVA, Benjamini\u2013Hochberg FDR p < 0.25). Genes that were both repressed by the seizures and \u2018rescued\u2019 by blocking NRSF\u2013NRSE interactions encoded primarily molecules that are well-known to contribute to neuronal function and plasticity. These included ion channels and their accessory subunits, neurotransmitter receptors, genes involved in calcium-mediated cellular cascades, and phospho-enzymes (Table 2). Several of these genes encode for transcription factors (e.g., Kruppel-like factor 9 [Klf9]), or proteins involved in signaling cascades that might influence downstream gene expression (Grin2A, PKC, Nell1), suggesting that they might mediate secondary (indirect) effects of NRSF. Notably, this NRSF-regulated gene set is crucial in influencing the function of both individual neurons (Garriga-Canut et al., 2006) and neuronal network behavior. Their importance is supported by the fact that preventing their repression attenuated seizure-provoked neuroplasticity that promoted epilepsy (McClelland et al., 2011a).\n\n**Table 2.**\n Candidate list of seizure-dependent NRSF regulated genes\n\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"5\">Ion channels, accessory subunits or receptors</td>\n    </tr>\n    <tr>\n      <td>HCN1</td>\n      <td>hyperpolarization-activated cyclic nucleotide-gated channel 1 (Hcn1)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td>\u2021</td>\n    </tr>\n    <tr>\n      <td>LRP11</td>\n      <td>low density lipoprotein receptor-related protein 11</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td>\u2021</td>\n    </tr>\n    <tr>\n      <td>KCNC2</td>\n      <td>potassium voltage gated channel, Shaw-related subfamily, member 2</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td>\u2021</td>\n    </tr>\n    <tr>\n      <td>KCNIP2</td>\n      <td>Kv channel-interacting protein 2 (Kcnip2), transcript variant a</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BAI2</td>\n      <td>brain-specific angiogenesis inhibitor 2 (predicted)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SCN3B</td>\n      <td>sodium channel, voltage-gated, type III, beta (Scn3b)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SLC12A5</td>\n      <td>solute carrier family 12 member 5 (Slc12a5), (KCC2)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GRIN2A</td>\n      <td>Glutamate receptor, ionotropic, N-methyl D-aspartate 2A (Grin2a)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>KCNC1</td>\n      <td>K voltage gated channel, Shaw-related subfamily, member 1, transcript 2 (Kcnc1)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GLRA2</td>\n      <td>glycine receptor, alpha 2 (Glra2)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NTRK3</td>\n      <td>neurotrophic tyrosine kinase, receptor, type 3 (Ntrk3)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Calcium-mediated cellular cascades</td>\n    </tr>\n    <tr>\n      <td>CADPS</td>\n      <td>Ca++-dependent secretion activator (Cadps)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td>\u2021</td>\n    </tr>\n    <tr>\n      <td>CALB1</td>\n      <td>calbindin 1 (Calb1)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HPCA</td>\n      <td>hippocalcin (Hpca)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CABP7</td>\n      <td>calcium binding protein 7 (Cabp7)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MYO5B</td>\n      <td>myosin Vb (Myo5b)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CAMKV</td>\n      <td>CaM kinase-like vesicle-associated (Camkv)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Phosphoenzymes</td>\n    </tr>\n    <tr>\n      <td>GNAO1</td>\n      <td>guanine nucleotide binding protein, alpha O (Gnao1)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td>\u2021</td>\n    </tr>\n    <tr>\n      <td>PRKCG</td>\n      <td>protein kinase C, gamma (Prkcg)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PRKCB1</td>\n      <td>protein kinase C, beta 1 (Prkcb1)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NELL1</td>\n      <td>NEL-like 1 (chicken) (Nell1)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Others</td>\n    </tr>\n    <tr>\n      <td>KLF9</td>\n      <td>Kruppel-like factor 9 (Klf9)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td>\u2021</td>\n    </tr>\n    <tr>\n      <td>STMN2</td>\n      <td>stathmin-like 2 (Stmn2)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>OLFM3</td>\n      <td>olfactomedin 3 (Olfm3)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ICA1</td>\n      <td>islet cell autoantigen 1 (Ica1)</td>\n      <td>*</td>\n      <td>\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>STMN3</td>\n      <td>stathmin-like 3 (Stmn3)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>OLFM1</td>\n      <td>olfactomedin 1 (Olfm1)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NXPH1</td>\n      <td>neurexophilin 1 (Nxph1)</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Genes were designated as \u2018NRSE-containing\u2019 based on NRSF ChIP-sequencing data from previous studies (Johnson et al., 2007). For inclusion in the initial list of candidate genes for NRSF regulation, genes were considered significantly repressed if their expression was reduced by more than 20% after KA-induced seizures (p < 0.05). Genes considered \u2018rescued\u2019 were significantly repressed after seizures but not significantly repressed after ODN infusions [seizures + NRSE-ODN treatment]. This candidate gene approach was followed by measures to correct for FDR (see \u2018Materials and methods\u2019).*genes (28) with expression reduced by > 20% after KA-induced activity, and rescued by NRSF ODN; p < 0.05.\u2020genes (14) found with ANOVA, Benjamini\u2013Hochberg FDR <0.25.\u2021genes (6) found with one-way ANOVA, unadjusted p value <0.05._\n\n## Discussion\n\nThe key findings of these studies are: (1) NRSF contributes to epileptogenesis by regulating a group of genes that critically influence neuronal function; (2) whereas hundreds of hippocampal genes are potential NRSF targets because they contain NRSEs, only a few dozen are actually repressed by the transcription factor in the context of seizure-induced epilepsy as evident from their rescue when the function of NRSF is blocked; (3) the basis of the selective regulation of a subset of NRSE-containing genes includes the mid-range binding frequencies of these genes to the repressor, so that moderate fluctuations in NRSF levels influence the degree of their binding to the repressor. Whereas these findings were observed in the context of epileptogenesis, a neuroplasticity that leads to disease, they may apply to a broad spectrum of physiological and pathological activity-dependent plasticities in the mature hippocampus.\n\nNRSF is a transcription factor with protean effects. Whereas much is known about the role of this molecule in non-neuronal tissues and in neuronal differentiation, much less information is available about the function of NRSF in mature brain (Korosi et al., 2010; McClelland et al., 2011b). More recently, a protective role of NRSF has been proposed in aging and dementia (Lu et al., 2014). In addition, NRSF may be involved in neurological disorders including Huntington disease (Zuccato et al., 2007; Soldati et al., 2011) and stroke (Calderone et al., 2003; Kaneko et al., 2014).\n\nThe contribution of NRSF to epilepsy and its development (epileptogenesis) is currently the focus of intense study (Roopra et al., 2012; Goldberg and Coulter 2013; Pozzi et al., 2013). We previously found that interfering with NRSF binding to the chromatin-attenuated epileptogenesis. Interestingly, Hu et al. found that the conditional deletion of NRSF in the forebrain resulted in increased susceptibility to kindling and enhanced mossy fiber sprouting (Hu et al., 2011). The apparent discrepancy between these studies is likely a result of the significantly different approaches. Complete deletion of NRSF in \u2018naive\u2019 neurons may induce large cascades of transcriptional changes rendering neurons more susceptible to seizures. In contrast, acute disruption of NRSF function \u2018after\u2019 an epilepsy-provoking insult, as performed in our current and previous studies, provides a more direct approach to elucidate the epileptogenic functions of NRSF because it does not interfere with NRSF function prior to the epilepsy-inducing insult. This point is important also because the role of NRSF in mature neurons is not fully understood, as discussed above.\n\nIn previous studies, we focused on the rescue of a single gene coding for the ion channel HCN1 (McClelland et al., 2011a). However, whereas it was clear that NRSF likely regulated numerous additional genes that are involved in the epileptogenic process, the identity of these genes was unclear. In this study, we used large-scale transcriptome arrays and found that NRSE-containing genes were enriched among seizure-suppressed genes and that the majority of these genes were restored to control levels after treatment with decoy NRSE\u2013ODNs. The fact that preventing the repression of (\u2018rescuing\u2019) these genes led to attenuation of epilepsy strongly supports a role for these genes in the transformation of normal neurons (and neuronal networks) into epileptic ones.\n\nInvestigating the identity of these genes, we were pleased to find that the majority were already known to contribute to crucial neuronal properties, and many had been previously implicated in pathological states including epilepsy (Sloviter, 1989; Palm et al., 1999; Pathak et al., 2007; Zuccato et al., 2007; van Gassen et al., 2009; Khirug et al., 2010; Soldati et al., 2011; McClelland et al., 2011a; Nikitidou et al., 2012; Kingwell, 2013). This was not surprising, because these genes included ion channels, neurotransmitter receptors, calcium-dependent effectors, and phosphoenzymes (Pernhorst et al., 2011; Dingledine, 2012; Rodenas-Ruano et al., 2012; Maslarova et al., 2013).\n\nWhereas NRSF-mediated repression might theoretically involve hundreds of hippocampal NRSE-containing genes, it was intriguing to discover that in fact only a small subset of detected NRSE-containing genes were repressed by seizures. Most were rescued by blocking NRSF function\u2014as evident using a differential array that included control and insult groups as well as groups where NRSF function was blocked\u2014thus ascertaining that genes that are repressed during epileptogenesis are indeed repressed by the augmented levels of endogenous NRSF. To our knowledge this is the first study demonstrating the specificity of NRSF-mediated gene regulation in mature hippocampus in vivo.\n\nWhat might be the basis for the apparent selectivity of NRSF repression of only a minority of putative target genes? The binding of NRSF to a gene is required (though not always sufficient; [Belyaev et al., 2004]) for its repression. A number of mechanisms may influence both the degree of NRSF binding as well as the degree of its repressive effect on genes. These include the specific NRSE sequence (Mortazavi et al., 2006; Johnson et al., 2007) that is unlikely to be the cause in the current studies (Supplementary file 1A). Other important mechanisms include the interaction of NRSF with co-factors (Andres et al., 1999; Naruse et al., 1999; Wood et al., 2003; Gao et al., 2011), as well as additional, still enigmatic effects of the chromatin environment of individual genes (Belyaev et al., 2004), which might be influenced by \u2018super-enhancers\u2019 (Lov\u00e9n et al., 2013; Whyte et al., 2013).\n\nHere, we examined the binding of NRSF to hippocampal genes before and after an epilepsy-provoking insult and found significant increment in genes that were repressed by the factor. This suggested a correlation between repressor occupancy and gene repression (Hammar et al., 2014). To our surprise, basal binding of NRSF in regulated hippocampal genes was moderate. By contrast, most non-regulated genes had either high or low NRSF occupancy in naive hippocampus, with little change after an insult that augmented NRSF levels twofold to threefold. We examined our finding in mature hippocampus by comparing the binding-frequency distribution found in hippocampus to a larger set of NRSE target genes as determined by ChIP-Seq analysis (Johnson et al., 2007). Whereas many factors, as discussed above, may lead to different NRSF binding in cell lines and hippocampus, it was encouraging to find that our estimates for the relative mid-range binding of regulated genes among those expressed in hippocampus held when superimposed on a large NRSE-containing gene set (Johnson et al., 2007). Traditionally, the focus of studies on gene\u2013repressor interaction has been on genes with the strongest binding probability (Nichols et al., 1992; Chen et al., 1998; Singh et al., 2002). However, the genes with the strongest binding for NRSF would likely be constitutively bound to\u2014and suppressed by\u2014NRSF. These genes are unlikely to respond to moderate changes in NRSF levels. Rather, relatively modest seizure-induced changes in the tissue levels of NRSF regulate a subset of NRSE-containing genes that fall within a moderate \u2018dynamic range\u2019 of NRSF binding probabilities. This concept may be important for other forms of insult-induced plasticity in the mature brain including ischemia (Noh et al., 2012; Kaneko et al., 2014), peripheral nerve injury (Uchida et al., 2010), and seizure-induced epilepsy (McClelland et al., 2011a; Goldberg and Coulter, 2013) where changes in NRSF levels are moderate.\n\nThese findings support a role of NRSF in mature brain that is distinct from its role in development, when NRSF contributes to neuronal identity by repressing neuronal genes in non-neuronal tissues (Schoenherr and Anderson, 1995; Coulson, 2005), and specifies neuronal fate (Kuwabara et al., 2005). In that context, large changes in the expression of NRSF take place: NRSF levels plunge during neuronal differentiation (Gates et al., 2010; Ernsberger, 2012), de-repressing genes that contribute to neuronal identity (Wood et al., 2003; Belyaev et al., 2004; Abrajano et al., 2009). Remarkably, the gene set regulated by moderate changes in NRSF expression in the current study consisted of molecules which are extremely important for neuronal function and plasticity not only during development (Gates et al., 2010; Juliandi et al., 2010; Rodenas-Ruano et al., 2012; Pernhorst et al., 2013), but also in the adult brain (Lepagnol-Bestel et al., 2009; Gao et al., 2011; Pernhorst et al., 2011).\n\nIn summary, insult-induced increases of NRSF levels and activity contribute to epileptogenesis via NRSF-mediated repression of a group of genes that critically influence neuronal function. Of the hundreds of NRSE-containing hippocampal genes only a subset are repressed by the transcription factor in the context of seizure-induced epilepsy as evident from their rescue when the function of NRSF is blocked. The basis of the selective regulation of a subset of NRSE-containing genes includes their mid-range binding frequencies to NRSF, so that moderate fluctuations in NRSF levels influence the degree of their binding. These findings inform us about the mechanisms of neuroplasticity in the mature hippocampus.\n\n## Materials and methods\n\nAll experiments were performed according to NIH guidelines and approved by the UCI Institutional Animal Care and Use Committee.\n\n### Organotypic slice cultures\n\nOrganotypic hippocampal slice cultures were prepared and maintained using the interface technique (Stoppini et al., 1991). Briefly, hippocampi from P8 rat pups of both genders were resected and cut into 400-\u00b5m slices using a McIlwain tissue chopper (The Mickle Laboratory Engineering Co. Ltd, Surrey, UK). The slices were collected in ice-cold preparation buffer (100% Minimal Essential Medium, containing 30 mM glucose, and 3 mM glutamine, pH 7.3; Life Technologies, Rockville, MD), then placed onto moistened membrane inserts (Millicell-CM, 30 mm, 0.4 \u00b5m pore diameter; Millipore, Bedford, MA), transferred to sterile six-well plates filled with 1 ml culture medium (50% Minimal Essential Medium, 25% Hank's balanced salt solution, 20% heat-inactivated horse serum, 30 mM HEPES, 30 mM glucose, 3 mM glutamine, 0.5 mM ascorbic acid, 1 mg/ml insulin, 5 mM NaHCO3, pH 7.3) and incubated in a humidified CO2-enriched atmosphere at 36\u00b0C. Pairs of adjacent slices (sister cultures) were always compared (i.e., adjacent slices assigned to control and experimental conditions, n = 4\u20136/group for each time-point). Seizure-like activity was induced after 3 days in vitro by incubating cultures for 3 hr in a medium containing KA (6 \u00b5M; Sigma, St. Louis, MO). This seizure-like activity was halted by changing the medium after 3 hr (Richichi et al., 2008).\n\n### Surgery, induction of KA-seizures, and oligonucleotide (ODN) infusion in vivo\n\nMale Sprague\u2013Dawley rats (n = 36) were anaesthetized with inhalation of 4% isoflurane. The rats were shaved and placed in a stereotaxic frame, and their eyes were protected and hydrated with Ocry-gel. A bolus of 2% Lidocaine was injected subcutaneously prior to a midsagittal incision. The skull was exposed and cleaned of blood and periost. Bilateral infusion cannulae were positioned on the cortical surface (\u22121.0 mm posterior, \u00b11.5 mm lateral from Bregma) directly above the lateral ventricles, using the coordinates of Paxinos and Watson (Paxinos et al., 1985). The incision was then sutured closed as necessary. All rats received \u223c5 ml of 0.9% saline I.P. to rehydrate and aid in recovery from surgery. Rats were allowed 7 days post-surgical recovery before any further experimental procedures were conducted. Status epilepticus (SE) was induced as previously described (McClelland et al., 2011a). Controls received saline. Seizures were observed and scored using the Racine scale (Racine, 1972). One day later, rats were anaesthetized with inhalation of 4% isoflurane. An infusion needle was lowered through the guide cannulae until it reached the cortical surface. The needle was lowered an additional 3.0 mm so the tip was within the lateral ventricle. On the first day, rats received an infusion of 2.0 nmol/\u00b5l of ordered NRSE or random ODNs at a volume of 5 \u00b5l and a rate of 0.1 \u00b5l/min (NRSE: GGA GCT GTC CAC AGT TCT GAA; Random: AGG TCG TAC GTT AAT CGT CGC). The needle remained in place for an additional 10 min to allow for thorough diffusion of the solutions. On the following day, the procedure was identical except that each rat received a volume of 2.5 \u00b5l. This infusion protocol was chosen to ensure that an adequate level of ODNs remained in the brain over the course of the experiment (Bristol and Rothstein, 1998).\n\n### In situ hybridization (ISH)\n\nOrganotypic hippocampal slice cultures were used at different time points after treatment with KA, and rats receiving KA\u2013SE were decapitated at different time points. Brains were dissected and placed on powdered dry ice. Semi-quantitative analysis of NRSF mRNA levels were accomplished using in situ hybridization (ISH) (Brewster et al., 2002; McClelland et al., 2011a) using S35-cRNA probes and slide-mounted frozen sections (20 \u00b5m) with the most stringent wash at 0.03 SSC, at 62\u00b0C for 60 min. Sections were then dehydrated and apposed to Kodak BioMax film. Exposure time was monitored using 14C standards to maintain the signal in the linear range. Analyses compared control and KA-treated sister cultures derived from the same hippocampus at every time point (n = 4\u20138 per group per time point) and were performed without the knowledge of treatment group.\n\n### Western blot protein analysis\n\nAnimals were decapitated and the hippocampi were rapidly dissected. Tissues were placed in pre-chilled microcentrifuge tubes and processed immediately. The tissue was homogenized in glass/Teflon homogenizers in a cold solution containing 0.32 M sucrose, 0.01 M Tris\u2013HCl (pH 7.4), and Protease Inhibitor Cocktail (PIC Complete; di; Roche, Alameda, CA). Samples were then centrifuged at 800\u00d7g for 10 min at 4\u00b0C, and the pellet was retained for processing to obtain a nuclear-enriched fraction. The supernatant was centrifuged at 16,000\u00d7g for 40 min at 4\u00b0C, and the pellet containing membrane fractions resuspended in RIPA buffer (50 mM Tris\u2013HCl, pH 7.4, 1% NP-40, 1% Triton X-100, 1 mM EDTA, 150 mM NaCl, 1X PIC).\n\nPellets retained for the nuclear-enriched fraction described above were resuspended in 1 ml hypotonic buffer (10 mM KCl, 10 mM Tris pH 8, 1.5 mM MgCl2). Samples were then incubated on ice for 15 min, followed by the addition of 100 \u03bcl of 10% NP-40, samples were then spun for 1 min at 16,000\u00d7g. The supernatant was then discarded, and 360 \u03bcl of RIPA buffer was added to the remaining nuclear pellet. Samples were then sonicated for 10 min on the highest setting (30 s on/30 s off) using a Bioruptor sonicator (Diagenode, Sparta, NJ, USA), to disrupt nuclei. Protein concentration was determined using Bio-Rad Protein assay (Bio-Rad, Hercules, CA).\n\nProtein samples (30 \u03bcg) were suspended in Laemmli buffer, separated by 4\u201312% SDS-PAGE (Lonza, Rockland, ME, USA), transferred to PVDF membrane and blocked in 5% milk for 2 hr at room temperature (RT). Membranes were probed with anti-Actin (1:10,000; Sigma), anti-NRSF (1:2000, sc-25398X; Santa Cruz Biotechnology, Santa Cruz, CA, USA), in PBS with 5% non-fat milk. Membranes were then incubated with secondary IgG-horseradish peroxidase conjugates (1:10,000; AmerCtrl Pharmacia Biotech, Piscataway, NJ, USA) for 1 hr at room temperature. After final washes in PBS-T (6 \u00d7 5 min), membranes were incubated with ECL-Plus (Pierce Scientific, Rockford, IL, USA) for 5 min, and immunoreactive bands were visualized by apposing membrane to hyperfilmTM ECL.\n\nA series of ECL exposures were carried out to ensure that non-saturated bands were used for quantification. Western blot data acquisition and analysis were accomplished by measuring the pixel density and area of immunoreactive bands from the ECL films using the ImageJ software (NIH). Values were normalized to actin. Significance level for unpaired t-tests was set at 0.05, and data are presented as mean with standard errors.\n\n### Transcriptome gene array\n\nHippocampal CA1 regions were dissected using instruments bathed in RNALater (Ambion, Life Technologies, Rockford, IL, USA). The CA1 region was obtained 48 hr after SE from rats of the following groups: ctrl + random ODN (n = 4), ctrl + NRSE\u2013ODN (n = 5), KA-seizures + NRSE\u2013ODN (n = 4), and KA-seizures + random ODN (n = 3). Samples were processed for RNA extraction by SABiosciences using the Array Grade total RNA isolation kit. RNA from an individual rat was applied to separate Illumina RatRef-12. Expression BeadChips for transcriptome analysis of over 22,000 genes. GenomeStudio software was used by SABiosciences (an Illumina CSPro certified service provider) to perform quality control, quantile normalization and background correction, and to execute two-tailed Student's t-tests on the microarray expression results for all genes.\n\nThe microarray data complied with \u2018minimum information about a microarray experiment\u2019 (MIAME), and the raw data have been deposited in the Gene Expression Omnibus (GEO) (http://www.ncbi.nlm.nih.gov/geo) as GSE 22899.\n\n### qRT-PCR\n\nThe CA1 region was micro-dissected from dorsal rat hippocampus or whole hippocampus was dissected using pre-chilled RNase free instruments under a light microscope. Dissected tissue was placed immediately into pre-chilled sterile centrifuge tubes on powdered dry ice and stored at \u221280\u00b0C until use. Total RNA was extracted from CA1 tissue using the RNeasy kit (Qiagen, Sussex, UK) per protocol and quantified using a nanodrop (Thermo Scientific). RNA purity was determined. Double-stranded cDNA was synthesized from total RNA using Roche 1st strand cDNA synthesis kit (Cat # 04379012001; Roche) utilizing random hexamer primers. PCR analysis was performed using cDNA samples in triplicate on a Roche Lightcycler 96 system (Roche). Samples were normalized to Gapdh and relative quantitative amounts were analyzed using the cycle threshold method (2^-\u0394\u0394Ct). Minus-reverse transcription and non-template controls were routinely used to eliminate the possibility of genomic contamination or false positive analyses. Primers are provided in Supplementary file 1B.\n\n### Chromatin immunoprecipitation\n\nWhole hippocampal tissue was homogenized in 1% formaldehyde (Sigma) and incubated at room temperature (RT) for 20 min. Samples were centrifuged and the supernatant was discarded. Samples were then subjected to a number of incubations in glycine (Sigma) and hypotonic buffers, all containing a protease inhibitor cocktail (Roche). Samples were then transferred to a Dounce homogenizer and further homogenized before the addition of 10% NP-40 (MP Biochemicals, Solon, OH, USA), then centrifuged and the supernatant was once more discarded. The pellet was dissolved in RIPA buffer with PIC, vortexed, and sonicated (Diagenode) to shear DNA. Samples were then centrifuged for 45 min at 15,000 rpm, and the supernatant was collected and added to tubes containing 1 ml of magnetic DynaBeads (Life Technologies) pre-incubated with 5 \u00b5g NRSF antibody/sample or IgG control for 24 hr. Beads and DNA were left to incubate for 1 hr at 4\u00b0C. The beads were then accumulated using a magnet and the liquid was aspirated. The beads were washed 5 times with RIPA to remove loosely or non-specifically bound DNA. DNA and beads were separated by adding a Chelex solution (Bio-Rad) and heating samples to 100\u00b0C for 10 min. Samples were then centrifuged at 15,000 rpm, and the DNA containing supernatant was transferred to a new PCR tube and stored at 4\u00b0C, then quantified using qPCR. NRSF occupancy at NRSE sites was normalized to IgG binding to the DNA and calculated as a percentage of total input. Primers are provided in Supplementary file 1C.\n\n### Transcriptome array analyses\n\nGene set enrichment analysis (GSEA version 2.5; Broad Institute, Cambridge, MA) (Mootha et al., 2003; Subramanian et al., 2005) was employed to compare the KA-seizures + NRSE\u2013ODN and KA-seizures + random ODN groups to the ctrl + random ODN and ctrl + NRSE\u2013ODN groups using the entire array data set (see Table 1 and Figure 8). The differential expression for each gene was calculated using GSEA software's Signal2Noise metric, which is based on the difference in the mean of the two groups divided by the sum of the two standard deviations. All genes were then ranked and an enrichment score (ES) for each gene set was generated for different gene set collections in the Broad Institute's Molecular Signatures Database (MSigDB\u2014a collection of annotated gene sets for use with GSEA software). The ES was adjusted based on the size of each gene set to obtain the normalized enrichment score (NES) which was used to rank the gene sets according to their over-representation in one group when compared to another. For each gene set the false discovery rate was calculated to determine the probability that its NES represented a false positive finding. The more conservative family-wise error rate (FWER) statistic was also generated. Subsets of NRSF-binding genes from ChIP-Sequencing data previously obtained were populated according to binding affinity rank (Johnson et al., 2007). GSEA was run to determine if any specific subset was significantly contributing to the enrichment and the NES of each subset was plotted.\n\nStatistical analyses of the microarray were stepwise (see Table 2). An initial discovery phase employed direct p values, and this was followed by False discovery rate (FDR) adjustments. This step-wise approach enabled initial candidate gene discovery by decreasing Type II error (and clearly increasing the initial possibility of Type I error). This was important in the context of the moderate seizure-dependent changes of NRSF expression in mature hippocampus where amplified Type II error may result in early rejection of biologically important candidate genes.\n\nBenjamini\u2013Hochberg FDR was employed in subsequent ANOVAs. Genes were considered significantly repressed if they had a greater than 20% reduction in expression at a p-value less than 0.05. Genes were designated as \u2018NRSE-containing\u2019 based on NRSF ChIP-sequencing data from previous studies (Johnson et al., 2007). One-way ANOVA was performed using MeV 4.7 (MultiExperiment Viewer from the TM4 Microarray Software Suite) (Saeed et al., 2003, 2006), and post hoc Benjamini\u2013Hochberg FDRadjustments were made to the results using Excel (Microsoft). To avoid Type I error in the context of moderate changes of gene repression in mature hippocampus (see above), we set the FDR at 0.25. To avoid spurious discoveries (Type II error), we validated the repression of a sample of these genes using an independent method (qPCR). Heat maps were generated using MeV 4.7.\n\n### Statistical analysis of qRT-PCR and ChIP\n\nqPCR data were analyzed using a two-way ANOVA to answer the following questions; (a) did ODN treatment have the same effect at all values of status, that is was there any interaction? (b) did the NRSE ODN affect the result? (c) did the long seizures affect the result? ChIP data were analyzed by normalizing NRSF immunoprecipitation to IgG and calculating as a percentage of total input. Control and KA-treated groups were then compared using standard t-test.\n",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "225e8af5-5a13-4be3-b736-8981379886d6",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C1",
+      "claim": "NRSF mRNA expression levels increase following KA-induced seizures in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Time-course of NRSF mRNA expression levels following KA-induced seizures, n = 4/group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data showing time-dependent increases in NRSF mRNA levels after KA-induced seizures, as shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "4b490fed-ad2a-4a84-9abb-90f434d01226",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C2",
+      "claim": "NRSF protein levels increase at 72 hours post KA-induced seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of NRSF protein levels using optical density measurements (ctrl 1.96 \u00b1 0.18, n = 6; KA+72hr 6.75 \u00b1 0.54, n = 3; KA+1 week: 5.42 \u00b1 0.36, n = 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis with quantification shows NRSF protein levels increased approximately 3.4-fold at 72 hours after KA-induced seizures compared to controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "5942f154-ba15-47b7-affe-a34848986eda",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C3",
+      "claim": "NRSF protein levels increase at 1 week post KA-induced seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of NRSF protein levels using optical density measurements (ctrl 1.96 \u00b1 0.18, n = 6; KA+72hr 6.75 \u00b1 0.54, n = 3; KA+1 week: 5.42 \u00b1 0.36, n = 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis with quantification shows NRSF protein levels increased approximately 2.8-fold at 1 week after KA-induced seizures compared to controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "6a476327-8308-481a-b950-e904e930fb8b",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C4",
+      "claim": "KA induces seizure-like electrophysiological events in organotypic hippocampal slice cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "KA provoked seizure-like electrophysiological events in the hippocampal slice (Richichi et al., 2008) and led a to time-dependent increase of NRSF mRNA and protein levels (Figure 1C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richichi et al., 2008 and data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "8b555cc0-5f45-478b-8c76-bbba447b6a5e",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C5",
+      "claim": "KA treatment leads to time-dependent increase of NRSF mRNA levels in organotypic hippocampal slice cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "KA provoked seizure-like electrophysiological events in the hippocampal slice (Richichi et al., 2008) and led a to time-dependent increase of NRSF mRNA and protein levels (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "In situ hybridization data in organotypic cultures shows time-dependent increases in NRSF mRNA at 4hr, 12hr, 24hr, and 1 week following KA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "7cc0a8dc-d6cc-4b45-9c9b-93750a1e71c7",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C6",
+      "claim": "NRSF mRNA levels increase in CA1 pyramidal cell layer following KA-induced seizure-like events in organotypic cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of mRNA in pyramidal cell layer was performed in control cultures as well as cultures 4 hr, 12 hr, 24 hr, and 1 week following seizure-like events in CA1 and CA3 region of the hippocampus, n = 4\u20138/group, *p<0.05.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "In situ hybridization with quantification shows statistically significant increases in NRSF mRNA in CA1 pyramidal cell layer at multiple time points after KA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "c6d991ab-01b9-4a4e-830a-f5b37b022c70",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C7",
+      "claim": "NRSF mRNA levels increase in CA3 pyramidal cell layer following KA-induced seizure-like events in organotypic cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of mRNA in pyramidal cell layer was performed in control cultures as well as cultures 4 hr, 12 hr, 24 hr, and 1 week following seizure-like events in CA1 and CA3 region of the hippocampus, n = 4\u20138/group, *p<0.05.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "In situ hybridization with quantification shows statistically significant increases in NRSF mRNA in CA3 pyramidal cell layer at multiple time points after KA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "d9b4afc6-ee34-4e46-a815-8667428749ba",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C8",
+      "claim": "Expression of 12,996 genes was detected in the CA1 region of the rat hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of 12,996 genes was detected in the CA1 region of the rat hippocampus of which 371 (2.8%) contained NRSE sites (Johnson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Microarray analysis detected this number of expressed genes in hippocampal CA1 region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "d72a3d16-7691-4127-8b60-94cb65f8bd8c",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C9",
+      "claim": "371 genes (2.8% of detected genes) in rat hippocampal CA1 contain NRSE sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of 12,996 genes was detected in the CA1 region of the rat hippocampus of which 371 (2.8%) contained NRSE sites (Johnson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on microarray detection and NRSE site identification from Johnson et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "1c230f3f-b4b5-42f6-9413-7d184d0760ab",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C10",
+      "claim": "470 genes were significantly repressed by KA-induced seizures in hippocampal CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "470 genes whose expression was significantly repressed by KA-induced seizures were identified by this initial candidate gene analysis that employed routine statistical significance (Subramanian et al., 2005; Yukhananov and Kissin, 2008; Borg et al., 2010; Oberbauer et al., 2010; Stark et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Microarray analysis with statistical testing identified 470 genes with significantly repressed expression after KA-induced seizures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "421a4ab2-9955-43fe-9aea-46a5c8800dc4",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C11",
+      "claim": "39 genes (8.3%) of the 470 seizure-repressed genes contain NRSF binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 39 (8.3%) contained NRSF binding sites (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of the 470 repressed genes identified 39 that contain NRSE sites, as shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "ee34d0a7-4ee1-4863-b21c-a030eed96474",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C12",
+      "claim": "NRSE-containing genes are significantly enriched among genes repressed by KA-induced seizures compared to the total gene population.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant enrichment in the fraction of NRSE-containing genes in the repressed vs total gene population (8.3% vs 2.8%) indicated that NRSF-regulated genes were preferentially repressed by epilepsy-provoking network hyperactivity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison shows 8.3% of repressed genes contain NRSE sites versus 2.8% in the total detected gene population, indicating significant enrichment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "936b21d2-5170-4fdf-901d-d8de2e81b78a",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C13",
+      "claim": "NRSF-regulated genes are preferentially repressed by epilepsy-provoking network hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant enrichment in the fraction of NRSE-containing genes in the repressed vs total gene population (8.3% vs 2.8%) indicated that NRSF-regulated genes were preferentially repressed by epilepsy-provoking network hyperactivity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The enrichment of NRSE-containing genes among repressed genes (8.3% vs 2.8%) provides evidence for preferential repression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "d8222226-cf35-455d-94a1-84955bf656d8",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C14",
+      "claim": "Only approximately 10% of NRSE-containing genes are repressed by KA-induced seizures when NRSF levels increase twofold to threefold.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 371 of the detected hippocampal genes contained an NRSE and were therefore potential NRSF targets, only 39 of these were repressed by KA-induced seizures when NRSF levels increased twofold to threefold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Microarray data shows that of 371 NRSE-containing genes, only 39 (approximately 10%) were repressed following seizures that increased NRSF levels 2-3 fold.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b38a72f5-68b2-48c5-8c69-d3d2da002ab4",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C15",
+      "claim": "Decoy oligodeoxynucleotides (ODNs) comprised of the NRSF binding sequence can bind to cellular NRSF and inhibit its ability to bind to target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated oligodeoxynucleotides (ODNs) comprised of the NRSF binding sequence (NRSE), modified their backbone for stability and infused them into the brain. These ODNs acted as 'decoys', binding to cellular NRSF and inhibiting its ability to bind to target genes (Figure 3A) (McClelland et al., 2011a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The decoy ODN strategy is described and supported by citation to McClelland et al., 2011a and illustrated in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "8c8c524d-ba27-4af3-8d61-c7b68b0f1004",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C16",
+      "claim": "NRSE-ODN administration has little effect on the expression of most genes in naive hippocampus with low baseline NRSF levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the low baseline levels of NRSF in naive hippocampus, preventing the binding of the repressor to target genes had little effects on the expression of most of the 39 genes (compare \"random ODN\" and NRSE\u2013ODN columns in the control brain, left side of Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microarray data comparing control groups with random ODN versus NRSE-ODN shows minimal differences in gene expression, as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "69701b45-fc28-4315-8449-e21337867b7c",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C17",
+      "claim": "Of the 39 NRSE-containing genes repressed by seizures in the presence of random ODNs, the majority (28) were no longer significantly repressed when NRSF binding to target genes was inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 39 NRSE-containing genes that were repressed by seizures in the presence of random ODNs, (depicted in blue in Figure 3B) the majority (28) were no longer significantly repressed when NRSF binding to target genes was inhibited (compare the [KA-seizures + NRSE ODN] group to either of the control groups; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microarray data shows that 28 of 39 genes repressed by seizures were rescued (no longer significantly repressed) when NRSE-ODN was administered, as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "853538df-2b01-402e-a10e-1f1d82d900fb",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C18",
+      "claim": "Seizure-induced repression of Myo5B is rescued by NRSE-ODN administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes that were both repressed by seizure activity and rescued by interference with NRSF function were tested (Glra2, Myo5B, Stmn2), and results analyzed using two way ANOVA. Myo5B F(1,18) = 9.35, p = 0.007; Glra2 F(1,17) = 46.89, p = 0.0001; Stmn2 F(1,18) = 1.97, p = 0.047, n = 4/group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR validation with two-way ANOVA shows statistically significant rescue of Myo5B expression by NRSE-ODN (p = 0.007), as shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "ee7575ed-7ac9-4505-aa9c-98b4274b7fd0",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C19",
+      "claim": "Seizure-induced repression of Glra2 is rescued by NRSE-ODN administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes that were both repressed by seizure activity and rescued by interference with NRSF function were tested (Glra2, Myo5B, Stmn2), and results analyzed using two way ANOVA. Myo5B F(1,18) = 9.35, p = 0.007; Glra2 F(1,17) = 46.89, p = 0.0001; Stmn2 F(1,18) = 1.97, p = 0.047, n = 4/group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR validation with two-way ANOVA shows statistically significant rescue of Glra2 expression by NRSE-ODN (p = 0.0001), as shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "115cfe1f-667d-464d-9345-5329b6ab7fde",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C20",
+      "claim": "Seizure-induced repression of Stmn2 is rescued by NRSE-ODN administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes that were both repressed by seizure activity and rescued by interference with NRSF function were tested (Glra2, Myo5B, Stmn2), and results analyzed using two way ANOVA. Myo5B F(1,18) = 9.35, p = 0.007; Glra2 F(1,17) = 46.89, p = 0.0001; Stmn2 F(1,18) = 1.97, p = 0.047, n = 4/group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR validation with two-way ANOVA shows statistically significant rescue of Stmn2 expression by NRSE-ODN (p = 0.047), as shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "1da8de68-54f1-4535-891b-dab08f4e21a7",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C21",
+      "claim": "qPCR analysis of NRSE-containing genes that were not repressed on the microarray shows excellent correlation with the microarray data.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined the microarray data by performing qPCR analysis of a subset of NRSE-containing genes that were found to be repressed on the array and a second subset of genes whose expression was not altered on the array following KA-seizures (Figure 4A,B). These qPCR analyses revealed excellent correlation with the microarray and both methods distinguished between the NRSE-containing genes that were or were not repressed by seizures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR validation of genes not repressed on microarray (Atp2b, Crhr2, Ep300, Hcn2, Kcnh2, P2xr5, Pcsk1, Xpo6) confirmed the microarray findings, as shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b476f467-4f50-48a1-9780-e214697122ca",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C22",
+      "claim": "qPCR analysis of NRSE-containing genes that were repressed on the microarray shows excellent correlation with the microarray data.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined the microarray data by performing qPCR analysis of a subset of NRSE-containing genes that were found to be repressed on the array and a second subset of genes whose expression was not altered on the array following KA-seizures (Figure 4A,B). These qPCR analyses revealed excellent correlation with the microarray and both methods distinguished between the NRSE-containing genes that were or were not repressed by seizures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR validation of genes repressed on microarray (Calb1, Glra2, Grin2a, Hcn1, Kcnc2, Klf9, Lrp11, Myo5b, Stmn2) confirmed the microarray findings, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "0136145e-0ba7-459d-9093-a8b465142318",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C23",
+      "claim": "Genes repressed by seizure-induced increases of NRSF levels have a large increment in NRSF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "As apparent in this figure, (a) genes repressed by seizure-induced increases of NRSF levels were those that had a large increment in NRSF binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP analysis comparing NRSF binding before and after seizures shows that repressed genes (shown in green in Figure 5) have large increases in NRSF binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "0791ae4d-15f4-47e1-b371-0cc5bbf20d54",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C24",
+      "claim": "The increment in NRSF binding at repressed genes arises on the background of moderate binding levels in the naive state.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, (b) this increment arose on the background of moderate binding levels in the naive state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP analysis shows that genes with large increases in NRSF binding after seizures (repressed genes) had moderate baseline binding in naive hippocampus, as shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "a04620ef-2977-4f6f-a0df-b611393363a4",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C25",
+      "claim": "NRSF binding to genes with modest baseline binding (Ep300, Hcn2, P2xr5, Xpo6) does not increase significantly upon seizure-induced increase of NRSF levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the effects of seizure-induced increase of NRSF levels on NRSF binding to the chromatin correlated with the degree of repressor binding in the naive state: binding of NRSF to certain genes (Ep300, Hcn2, P2xr5, Xpo6) was modest and did not increase significantly upon seizure-induced increase of NRSF levels (white columns of Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP data shows that genes with low baseline NRSF binding (white columns in Figure 5) do not show significant increases in binding after seizures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "7455a22a-034d-4508-9401-505289abe657",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C26",
+      "claim": "NRSF binding to genes with very robust baseline binding (Atp2b, Crhr2, Htr1a, Pcsk1) is relatively independent of NRSF tissue levels.",
+      "claim_type": "EXPLICIT",
+      "source": "NRSF binding was very robust at NRSE sites of other genes (Atp2b, Crhr2, Htr1a, Pcsk1), and the degree of binding was relatively independent of NRSF tissue levels (black columns of Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP data shows that genes with high baseline NRSF binding (black columns in Figure 5) do not show significant changes in binding after seizures despite increased NRSF levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b86d42e7-6f8e-4ebf-a9df-f59e9b9d58fd",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C27",
+      "claim": "Seizure-induced increase of NRSF levels markedly augments NRSF binding to genes (Calb1, Glra2, Grin2A, Hcn1, Kcnc2) where binding was moderate in the naive hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, seizure-induced increase of NRSF levels markedly augmented NRSF binding to genes such as Calb1, Glra2, Grin2A, Hcn1, and Kcnc2, where binding was moderate in the naive hippocampus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP data shows that genes with moderate baseline NRSF binding (green columns in Figure 5) show large increases in binding after seizures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "ed234245-542b-469a-b958-e4926595e411",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C28",
+      "claim": "Genes with moderate baseline NRSF binding that show increased binding after seizures are preferentially repressed by NRSF in mature hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter set of genes was those preferentially repressed by NRSF in mature hippocampus (Figure 4B and Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Integration of ChIP data (Figure 5) and gene expression data (Figure 4B) shows that genes with moderate baseline binding and increased binding after seizures are those that are repressed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "e85dc041-5335-4777-9ee8-f176ddcb3f2f",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C29",
+      "claim": "In genes with very low binding to NRSF, a moderate increase of NRSF levels would not alter repressor binding appreciably.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the model (Figure 6), in genes with very low binding to NRSF, a moderate increase of NRSF levels would not alter repressor binding appreciably.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the observed data patterns, illustrated in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "272807de-41c7-4309-bf0e-a08ca71f3646",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C30",
+      "claim": "In genes with high binding frequency to NRSF, NRSEs would likely be occupied even by the low NRSF levels in the naive hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in genes with high binding frequency to NRSF, NRSEs would likely be occupied even by the low NRSF levels in the naive hippocampus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the observed data patterns, illustrated in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "c07c1acb-498f-461d-8c30-30cda87d39d8",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C31",
+      "claim": "Increased NRSF levels would be unlikely to augment occupancy or promote suppression of genes with high baseline NRSF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased NRSF levels would be unlikely to augment occupancy or promote suppression of these genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the observed data patterns, illustrated in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "c70adc93-02d4-4827-958b-d612cda146d2",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C32",
+      "claim": "When NRSF binding is mid-range, relatively small fluctuation of NRSF levels would result in major changes of repressor binding and gene repression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when NRSF binding is 'mid-range', then relatively small fluctuation of NRSF levels would result in major changes of repressor binding and gene repression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the observed data patterns, illustrated in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b57e3edb-739e-4109-a838-80c52d69716e",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C33",
+      "claim": "NRSF-binding scores of all hippocampal NRSE-containing genes range from 19 to 5544 with a mean of 279, median of 153, and standard deviation of 429.",
+      "claim_type": "EXPLICIT",
+      "source": "In the overall population of NRSE-containing hippocampal genes, binding frequencies ranged from 19 to 5544 (mean 279; median 153; standard deviation 429).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of ChIP-Seq data from Johnson et al., 2007 applied to the hippocampal gene set provides these binding frequency statistics.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "0c18bada-f840-462a-8a3a-d2d84a767744",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C34",
+      "claim": "NRSF-binding scores of genes functionally regulated by NRSF range from 27 to 663 with a mean of 214, median of 172, and standard deviation of 166.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NRSF-binding scores of the genes that were functionally regulated by NRSF ranged from 27 to 663 (mean 214; median 172; standard deviation 166).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of ChIP-Seq data from Johnson et al., 2007 applied to the subset of NRSF-regulated genes identified in this study provides these binding frequency statistics.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "729611ed-7910-47bc-b90b-5d58550ef4c4",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C35",
+      "claim": "The frequency medians of all NRSE-containing hippocampal genes and NRSF-regulated NRSE-containing genes are not significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the frequency medians of all NRSE-containing hippocampal genes and NRSF-regulated NRSE-containing genes were not significantly different (Mann\u2013Whitney p = 0.86), the scatter plots and regression-fit histograms demonstrated that the gene population regulated by NRSF in the context of epileptogenesis was more tightly clustered and had distinct distribution properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison using Mann-Whitney test shows no significant difference in medians (p = 0.86).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b8f2acdf-a1aa-4ad9-a7bc-2d98f22dbb1e",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C36",
+      "claim": "The gene population regulated by NRSF in the context of epileptogenesis is more tightly clustered and has distinct distribution properties compared to all NRSE-containing genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the frequency medians of all NRSE-containing hippocampal genes and NRSF-regulated NRSE-containing genes were not significantly different (Mann\u2013Whitney p = 0.86), the scatter plots and regression-fit histograms demonstrated that the gene population regulated by NRSF in the context of epileptogenesis was more tightly clustered and had distinct distribution properties.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Visual analysis of scatter plots and regression-fit histograms in Figure 7B,C shows tighter clustering and different distribution properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "f5ced82c-91e0-4c2d-83b2-082abf729327",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C37",
+      "claim": "Skewness is 6.5 in all detected NRSE-containing genes versus 1.2 in the regulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Skewness was 6.5 in all detected NRSE-containing genes vs 1.2 in the regulated genes; Kurtosis was 66 in all of the genes and 0.98 in the regulated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of binding frequency distributions provides these skewness values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "1d8e4dce-9e7c-469a-8524-a101caa53ac6",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C38",
+      "claim": "Kurtosis is 66 in all detected NRSE-containing genes versus 0.98 in the regulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Skewness was 6.5 in all detected NRSE-containing genes vs 1.2 in the regulated genes; Kurtosis was 66 in all of the genes and 0.98 in the regulated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of binding frequency distributions provides these kurtosis values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "8fad876c-5f23-4d08-bc74-4d7cca52bb4a",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C39",
+      "claim": "NRSF-binding distribution of the total NRSE-containing hippocampal gene population is exceedingly different from normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, whereas NRSF-binding distribution of the total NRSE-containing hippocampal gene population was exceedingly different from normal (all: Kolmogorov\u2013Smirnov test p < 0.0001, D'Agostino and Pearson omnibus normality test p < 0.0001), the distribution pattern of the regulated gene population was much closer to normal (Kolmogorov\u2013Smirnov test p > 0.10, D'Agostino and Pearson omnibus normality test p = 0.012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical normality tests (Kolmogorov-Smirnov and D'Agostino-Pearson) show highly significant deviation from normal distribution (p < 0.0001 for both tests).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "69b3ec91-3f84-4f94-985b-f9555d1cd3b2",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C40",
+      "claim": "The distribution pattern of the NRSF-regulated gene population is much closer to normal distribution compared to all NRSE-containing genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, whereas NRSF-binding distribution of the total NRSE-containing hippocampal gene population was exceedingly different from normal (all: Kolmogorov\u2013Smirnov test p < 0.0001, D'Agostino and Pearson omnibus normality test p < 0.0001), the distribution pattern of the regulated gene population was much closer to normal (Kolmogorov\u2013Smirnov test p > 0.10, D'Agostino and Pearson omnibus normality test p = 0.012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical normality tests show the regulated gene population is closer to normal distribution (Kolmogorov-Smirnov p > 0.10, D'Agostino-Pearson p = 0.012).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "03ccfb59-546b-46f8-95ee-d2c1d8feca46",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C41",
+      "claim": "The population of NRSF-regulated hippocampal genes is distinct and characterized by a relatively narrow, normally-distributed range of NRSF-binding frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these clustering patterns suggest that the population of NRSF-regulated hippocampal genes is distinct and characterized by a relatively narrow, normally-distributed range of NRSF-binding frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analyses of binding frequency distributions (skewness, kurtosis, normality tests) support this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "89328a5e-60d8-415a-99eb-17e9a4e75dcb",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C42",
+      "claim": "Three gene sets with binding frequencies between the 37.5th and 75th percentile rank were significantly enriched in the control group compared to the seizure group.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of three of these 'bins' (gene sets partitioned by binding frequency) was significantly enriched in the control group (i.e., repressed in the seizure group) when compared to the levels of enrichment of gene sets composed of random permutations of genes (FWER *p < 0.05). Notably, the three significantly enriched gene-sets were not composed of genes with the highest NRSF binding frequency; rather, they consisted of genes between the 37.5th and 75th binding frequency rank percentile (Figure 7D; Table 1; Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "GSEA analysis shows three gene sets (37.5-50%, 50-62.5%, 62.5-75% binding frequency percentiles) were significantly enriched in controls (FWER p < 0.05), as shown in Figure 7D, Table 1, and Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "28b21b84-308f-499a-9f91-19bad25367b6",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C43",
+      "claim": "When NRSF function is blocked with NRSE-ODN treatment, the three binned gene sets with mid-range binding frequencies are no longer significantly different from controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when binding-frequency binned GSEA was used to compare the control group to the KA-seizure group receiving the NRSE\u2013ODN treatment (i.e., with blocked NRSF function), the three binned gene sets were no longer significantly different from those in the control group (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "GSEA analysis comparing controls to KA-seizures + NRSE-ODN shows the three mid-range binding frequency gene sets are no longer significantly enriched, as shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "7b565735-17c1-4834-bba8-b75417413211",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C44",
+      "claim": "Genes regulated by NRSF encode primarily molecules that contribute to neuronal function and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that were both repressed by the seizures and 'rescued' by blocking NRSF\u2013NRSE interactions encoded primarily molecules that are well-known to contribute to neuronal function and plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of the identity of NRSF-regulated genes identified in Table 2 shows they encode ion channels, receptors, calcium-related molecules, and other neuronal function-related proteins.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "e175667b-bce4-45bf-ae7a-2e9a8108b52c",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C45",
+      "claim": "NRSF-regulated genes include ion channels and their accessory subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "These included ion channels and their accessory subunits, neurotransmitter receptors, genes involved in calcium-mediated cellular cascades, and phospho-enzymes (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 lists NRSF-regulated genes including HCN1, LRP11, KCNC2, KCNIP2, BAI2, SCN3B, SLC12A5, KCNC1 which are ion channels or accessory subunits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "6080d4b7-3d17-4604-87d2-35fd13591391",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C46",
+      "claim": "NRSF-regulated genes include neurotransmitter receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These included ion channels and their accessory subunits, neurotransmitter receptors, genes involved in calcium-mediated cellular cascades, and phospho-enzymes (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 lists NRSF-regulated genes including GRIN2A, GLRA2, NTRK3 which are neurotransmitter receptors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "08b3efbd-2ed5-44f9-a86e-1baf61f4b460",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C47",
+      "claim": "NRSF-regulated genes include genes involved in calcium-mediated cellular cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "These included ion channels and their accessory subunits, neurotransmitter receptors, genes involved in calcium-mediated cellular cascades, and phospho-enzymes (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 lists NRSF-regulated genes including CADPS, CALB1, HPCA, CABP7, MYO5B, CAMKV which are involved in calcium-mediated cascades.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "f79c2acc-fd4d-4036-acd5-803bc153593a",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C48",
+      "claim": "NRSF-regulated genes include phospho-enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "These included ion channels and their accessory subunits, neurotransmitter receptors, genes involved in calcium-mediated cellular cascades, and phospho-enzymes (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 lists NRSF-regulated genes including GNAO1, PRKCG, PRKCB1, NELL1 which are phospho-enzymes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "0703e975-1f6c-4766-82cf-6ad399ce0775",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C49",
+      "claim": "Several NRSF-regulated genes encode transcription factors or proteins involved in signaling cascades that might influence downstream gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these genes encode for transcription factors (e.g., Kruppel-like factor 9 [Klf9]), or proteins involved in signaling cascades that might influence downstream gene expression (Grin2A, PKC, Nell1), suggesting that they might mediate secondary (indirect) effects of NRSF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of gene functions in Table 2 identifies KLF9 as a transcription factor and GRIN2A, PKC, NELL1 as signaling molecules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "7742d6fd-cda3-428f-a730-86291333c56f",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C50",
+      "claim": "Preventing the repression of NRSF-regulated genes attenuated seizure-provoked neuroplasticity that promoted epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this NRSF-regulated gene set is crucial in influencing the function of both individual neurons (Garriga-Canut et al., 2006) and neuronal network behavior. Their importance is supported by the fact that preventing their repression attenuated seizure-provoked neuroplasticity that promoted epilepsy (McClelland et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McClelland et al., 2011a showing that NRSE-ODN treatment attenuated epileptogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "58758913-cbf9-4b3f-b3ed-b48124520ebb",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C51",
+      "claim": "Interfering with NRSF function attenuated development of epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that interfering with the function of the neuron-restrictive silencer factor (NRSF/REST), an important transcription factor that influences neuronal phenotype, attenuated development of this disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by previous work (McClelland et al., 2011a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "baf56d0c-3a2e-47a9-bfd6-57a997909091",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C52",
+      "claim": "Epilepsy-provoking seizures increased the low NRSF levels in mature hippocampus several fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that epilepsy-provoking seizures increased the low NRSF levels in mature hippocampus several fold yet surprisingly, provoked repression of only a subset (\u223c10%) of potential NRSF target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 1 showing 2-3 fold increases in NRSF mRNA and protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "8c4d430b-8d67-474d-92c9-011a6ab71ba5",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C53",
+      "claim": "Epilepsy-provoking seizures provoked repression of only a subset (approximately 10%) of potential NRSF target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that epilepsy-provoking seizures increased the low NRSF levels in mature hippocampus several fold yet surprisingly, provoked repression of only a subset (\u223c10%) of potential NRSF target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by microarray data showing 39 of 371 NRSE-containing genes were repressed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "fd292097-5fa3-4006-86f6-2c57d8667e3d",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C54",
+      "claim": "The repressed gene-set was rescued when NRSF binding to chromatin was blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the repressed gene-set was rescued when NRSF binding to chromatin was blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by microarray and qPCR data showing gene rescue with NRSE-ODN treatment (Figures 3 and 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "1d678a5b-3a28-45b1-984c-e425efd02a78",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C55",
+      "claim": "Genes selectively repressed by NRSF had mid-range binding frequencies to the repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, genes selectively repressed by NRSF had mid-range binding frequencies to the repressor, a property that rendered them sensitive to moderate fluctuations of NRSF levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by ChIP data (Figure 5) and binding frequency analysis (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "0384df26-2131-488d-a7a5-68442cb911a3",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C56",
+      "claim": "Mid-range binding frequencies render genes sensitive to moderate fluctuations of NRSF levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, genes selectively repressed by NRSF had mid-range binding frequencies to the repressor, a property that rendered them sensitive to moderate fluctuations of NRSF levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the model in Figure 6 and data showing genes with mid-range binding are those regulated by moderate NRSF increases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "3aca55ac-5615-49a9-8979-cc08cc051342",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C57",
+      "claim": "Genes selectively regulated by NRSF during epileptogenesis code for ion channels, receptors, and other crucial contributors to neuronal function.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes selectively regulated by NRSF during epileptogenesis coded for ion channels, receptors, and other crucial contributors to neuronal function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the gene list in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "154975be-5d49-4634-8c6d-a6e8b3b6ef78",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C58",
+      "claim": "Dynamic, selective regulation of NRSF target genes may play a role in influencing neuronal properties in pathological and physiological contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, dynamic, selective regulation of NRSF target genes may play a role in influencing neuronal properties in pathological and physiological contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "a14a1611-fea5-49ad-bb29-20be1373185f",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C59",
+      "claim": "Epileptic networks arise via numerous mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Epileptic networks arise via numerous mechanisms (Pitk\u00e4nen et al., 2011; Vezzani et al., 2011; Kim et al., 2012; Hildebrand et al., 2013; Rowley and Patel, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "56264e5a-84f2-470f-b783-38c1682244a9",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C60",
+      "claim": "Changes in neuronal properties and resulting alterations of network behavior constitute one of the important mechanisms of epileptogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in neuronal properties and resulting alterations of network behavior constitute one of the important mechanisms of epileptogenesis (Yaari and Beck, 2002; Noam et al., 2011; Goldberg and Coulter, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "a877b275-a687-4b4b-ad94-7ff9b4c4105c",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C61",
+      "claim": "Neuronal properties may change because of genetic mutations in crucial neuronal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal properties may change because of genetic mutations in crucial neuronal genes (Meisler and O'Brien, 2012; Oliva et al., 2012; Kingwell, 2013; Papale et al., 2013) or from insult-related alterations of gene expression that affect the levels and function of their products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "2355bd74-a6dd-4083-ad98-072f5b93602a",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C62",
+      "claim": "Neuronal properties may change from insult-related alterations of gene expression that affect the levels and function of their products.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal properties may change because of genetic mutations in crucial neuronal genes (Meisler and O'Brien, 2012; Oliva et al., 2012; Kingwell, 2013; Papale et al., 2013) or from insult-related alterations of gene expression that affect the levels and function of their products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the context of the introduction and general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "6d1370b4-8713-487f-8924-25e415d25904",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C63",
+      "claim": "Altered expression of individual ion channels has been extensively reported in epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas altered expression of individual ion channels (Brewster et al., 2002; Khirug et al., 2010; Poolos, 2012; van Loo et al., 2012; Maslarova et al., 2013; Shah et al., 2013), neurotransmitter receptors (Gonzalez et al., 2013; Rojas and Dingledine, 2013), and other cellular components (Zeng et al., 2009; Maroso et al., 2011; Jimenez-Mateos et al., 2012; Liu et al., 2013) have been extensively reported, the nature and mechanisms of the orchestration of these gene expression changes remain unknown",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "a74cc8d2-77eb-4d6a-8770-3c6de21509d5",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C64",
+      "claim": "Altered expression of neurotransmitter receptors has been extensively reported in epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas altered expression of individual ion channels (Brewster et al., 2002; Khirug et al., 2010; Poolos, 2012; van Loo et al., 2012; Maslarova et al., 2013; Shah et al., 2013), neurotransmitter receptors (Gonzalez et al., 2013; Rojas and Dingledine, 2013), and other cellular components (Zeng et al., 2009; Maroso et al., 2011; Jimenez-Mateos et al., 2012; Liu et al., 2013) have been extensively reported, the nature and mechanisms of the orchestration of these gene expression changes remain unknown",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "df91aa3c-f900-45c8-944a-ba75d3b9559b",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C65",
+      "claim": "Altered expression of other cellular components has been extensively reported in epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas altered expression of individual ion channels (Brewster et al., 2002; Khirug et al., 2010; Poolos, 2012; van Loo et al., 2012; Maslarova et al., 2013; Shah et al., 2013), neurotransmitter receptors (Gonzalez et al., 2013; Rojas and Dingledine, 2013), and other cellular components (Zeng et al., 2009; Maroso et al., 2011; Jimenez-Mateos et al., 2012; Liu et al., 2013) have been extensively reported, the nature and mechanisms of the orchestration of these gene expression changes remain unknown",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "274e3970-325e-4644-a5a6-fc7abc88392f",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C66",
+      "claim": "The nature and mechanisms of the orchestration of gene expression changes in epilepsy remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas altered expression of individual ion channels (Brewster et al., 2002; Khirug et al., 2010; Poolos, 2012; van Loo et al., 2012; Maslarova et al., 2013; Shah et al., 2013), neurotransmitter receptors (Gonzalez et al., 2013; Rojas and Dingledine, 2013), and other cellular components (Zeng et al., 2009; Maroso et al., 2011; Jimenez-Mateos et al., 2012; Liu et al., 2013) have been extensively reported, the nature and mechanisms of the orchestration of these gene expression changes remain unknown",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "6bc8273d-2c40-4c93-9673-7b1403767565",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C67",
+      "claim": "Gene expression is dynamically regulated throughout life and influences neuronal phenotype and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression is dynamically regulated throughout life and influences neuronal phenotype and behavior (Bale et al., 2010; Robison and Nestler, 2011; Sweatt, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "010fd036-4831-4dce-88b5-c9234d4031c2",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C68",
+      "claim": "Dynamic regulation of gene expression is mediated by transcriptional enhancers and repressors that bind to specific sequences of target genes and modify their expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynamic regulation is mediated by transcriptional enhancers and repressors that bind to specific sequences of target genes and modify their expression (Ballas et al., 2005; Kohyama et al., 2008; Hwang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "a38d5673-fc6d-4a96-953e-e51de3de268e",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C69",
+      "claim": "NRSF functions by binding a DNA sequence called neuron-restrictive silencer element (NRSE) to mediate long-term, cell-specific gene repression.",
+      "claim_type": "EXPLICIT",
+      "source": "The repressor neuron-restrictive silencer factor (NRSF/ REST) functions by binding a DNA sequence called neuron-restrictive silencer element (NRSE) to mediate long-term, cell-specific gene repression (Schoenherr and Anderson, 1995) via complex interactions with co-repressors such as mSin3 and Co-Rest (Chen et al., 1998; Andres et al., 1999; Naruse et al., 1999; Roopra et al., 2001; Wood et al., 2003; Belyaev et al., 2004; Kuwabara et al., 2004; Mortazavi et al., 2006; Johnson et al., 2007; Abrajano et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature, particularly Schoenherr and Anderson, 1995.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "f66f7a44-79e6-4394-b02a-749f7d7fa952",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C70",
+      "claim": "NRSF mediates gene repression via complex interactions with co-repressors such as mSin3 and Co-Rest.",
+      "claim_type": "EXPLICIT",
+      "source": "The repressor neuron-restrictive silencer factor (NRSF/ REST) functions by binding a DNA sequence called neuron-restrictive silencer element (NRSE) to mediate long-term, cell-specific gene repression (Schoenherr and Anderson, 1995) via complex interactions with co-repressors such as mSin3 and Co-Rest (Chen et al., 1998; Andres et al., 1999; Naruse et al., 1999; Roopra et al., 2001; Wood et al., 2003; Belyaev et al., 2004; Kuwabara et al., 2004; Mortazavi et al., 2006; Johnson et al., 2007; Abrajano et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "d2c3d21c-ad29-4845-848b-25ade14b36dc",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C71",
+      "claim": "NRSF is highly expressed in non-neuronal tissues where it represses neuronal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "NRSF is highly expressed in non-neuronal tissues where it represses neuronal genes (Ballas and Mandel, 2005) and has important roles in neurogenesis and neuronal differentation within the brain (Hsieh et al., 2004; Singh et al., 2008; Westbrook et al., 2008; Mandel et al., 2011; Aoki et al., 2012; Ernsberger, 2012; Kok et al., 2012; Rodenas-Ruano et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ballas and Mandel, 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "f92bffc1-4e0e-4282-85a9-81521151adf7",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C72",
+      "claim": "NRSF has important roles in neurogenesis and neuronal differentiation within the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "NRSF is highly expressed in non-neuronal tissues where it represses neuronal genes (Ballas and Mandel, 2005) and has important roles in neurogenesis and neuronal differentation within the brain (Hsieh et al., 2004; Singh et al., 2008; Westbrook et al., 2008; Mandel et al., 2011; Aoki et al., 2012; Ernsberger, 2012; Kok et al., 2012; Rodenas-Ruano et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "bb946ea8-4efc-43c7-8d9c-77833b37c624",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C73",
+      "claim": "NRSF levels are low in mature hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "NRSF levels are low in mature hippocampus where \u223c600 expressed genes contain NRSEs and are thus potentially regulated by the repressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by baseline measurements in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "64a24233-0b67-4756-815e-2d7cd97b1a9e",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C74",
+      "claim": "Approximately 600 expressed genes in mature hippocampus contain NRSEs and are thus potentially regulated by NRSF.",
+      "claim_type": "EXPLICIT",
+      "source": "NRSF levels are low in mature hippocampus where \u223c600 expressed genes contain NRSEs and are thus potentially regulated by the repressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction based on known NRSE-containing genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "44da8b6b-7748-4e7e-acef-9edd44a76e8b",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C75",
+      "claim": "Hippocampal NRSF expression increases several-fold following seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal NRSF expression increases several-fold following seizures (Palm et al., 1998; Garriga-Canut et al., 2006; McClelland et al., 2011a) and following other insults that promote epilepsy (Calderone et al., 2003; Noh et al., 2012; Kaneko et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature and data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "caa01920-5cf7-4807-9126-72b69b3151b0",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C76",
+      "claim": "NRSF expression increases following other insults that promote epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal NRSF expression increases several-fold following seizures (Palm et al., 1998; Garriga-Canut et al., 2006; McClelland et al., 2011a) and following other insults that promote epilepsy (Calderone et al., 2003; Noh et al., 2012; Kaneko et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "a09b0e8a-5655-4be7-bdbb-2b4762d843de",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C77",
+      "claim": "Blocking NRSF function attenuated the epileptic phenotype induced by severe seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that blocking NRSF function attenuated the epileptic phenotype induced by severe seizures (McClelland et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McClelland et al., 2011a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "cb31f9ad-3853-420d-b531-65223acd79db",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C78",
+      "claim": "The contribution of NRSF to epilepsy and epileptogenesis is currently the focus of intense study.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of NRSF to epilepsy and its development (epileptogenesis) is currently the focus of intense study (Roopra et al., 2012; Goldberg and Coulter 2013; Pozzi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "c346bbe8-b316-4df6-8cb3-8e34f954a833",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C79",
+      "claim": "Conditional deletion of NRSF in the forebrain resulted in increased susceptibility to kindling and enhanced mossy fiber sprouting.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Hu et al. found that the conditional deletion of NRSF in the forebrain resulted in increased susceptibility to kindling and enhanced mossy fiber sprouting (Hu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "6db99f5a-0a12-4bdc-a859-0604b2cf27d1",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C80",
+      "claim": "Complete deletion of NRSF in naive neurons may induce large cascades of transcriptional changes rendering neurons more susceptible to seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete deletion of NRSF in 'naive' neurons may induce large cascades of transcriptional changes rendering neurons more susceptible to seizures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as an explanation for the findings of Hu et al., 2011.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "8c008243-bb3d-4b3a-b815-a4941ac6106f",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C81",
+      "claim": "Acute disruption of NRSF function after an epilepsy-provoking insult provides a more direct approach to elucidate the epileptogenic functions of NRSF.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, acute disruption of NRSF function 'after' an epilepsy-provoking insult, as performed in our current and previous studies, provides a more direct approach to elucidate the epileptogenic functions of NRSF because it does not interfere with NRSF function prior to the epilepsy-inducing insult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological advantage of the current approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "06726eef-8f90-49c9-8d63-f7998e3f11b6",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C82",
+      "claim": "The majority of NRSF-regulated genes are already known to contribute to crucial neuronal properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigating the identity of these genes, we were pleased to find that the majority were already known to contribute to crucial neuronal properties, and many had been previously implicated in pathological states including epilepsy (Sloviter, 1989; Palm et al., 1999; Pathak et al., 2007; Zuccato et al., 2007; van Gassen et al., 2009; Khirug et al., 2010; Soldati et al., 2011; McClelland et al., 2011a; Nikitidou et al., 2012; Kingwell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of genes in Table 2 and citations to the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "f3ff3f79-a79f-4172-b55e-4eb507b764b5",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C83",
+      "claim": "Many NRSF-regulated genes had been previously implicated in pathological states including epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigating the identity of these genes, we were pleased to find that the majority were already known to contribute to crucial neuronal properties, and many had been previously implicated in pathological states including epilepsy (Sloviter, 1989; Palm et al., 1999; Pathak et al., 2007; Zuccato et al., 2007; van Gassen et al., 2009; Khirug et al., 2010; Soldati et al., 2011; McClelland et al., 2011a; Nikitidou et al., 2012; Kingwell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "526e91fb-85d9-41c4-884a-e6d620d5159a",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C84",
+      "claim": "The binding of NRSF to a gene is required for its repression.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of NRSF to a gene is required (though not always sufficient; [Belyaev et al., 2004]) for its repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle with citation to Belyaev et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "89b865e1-4741-425d-924c-8bcce90908c1",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C85",
+      "claim": "The binding of NRSF to a gene is not always sufficient for its repression.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of NRSF to a gene is required (though not always sufficient; [Belyaev et al., 2004]) for its repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Belyaev et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "737939fd-c550-49e6-8e0a-d1f26463010e",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C86",
+      "claim": "The specific NRSE sequence can influence the degree of NRSF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of mechanisms may influence both the degree of NRSF binding as well as the degree of its repressive effect on genes. These include the specific NRSE sequence (Mortazavi et al., 2006; Johnson et al., 2007) that is unlikely to be the cause in the current studies (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mortazavi et al., 2006 and Johnson et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b9406c9a-00ab-44f0-a91a-038247c4a3be",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C87",
+      "claim": "The interaction of NRSF with co-factors can influence the degree of NRSF binding and repressive effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Other important mechanisms include the interaction of NRSF with co-factors (Andres et al., 1999; Naruse et al., 1999; Wood et al., 2003; Gao et al., 2011), as well as additional, still enigmatic effects of the chromatin environment of individual genes (Belyaev et al., 2004), which might be influenced by 'super-enhancers' (Lov\u00e9n et al., 2013; Whyte et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b0ef879a-f336-4c60-87f8-e11e68fe7cc1",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C88",
+      "claim": "The chromatin environment of individual genes can influence the degree of NRSF binding and repressive effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Other important mechanisms include the interaction of NRSF with co-factors (Andres et al., 1999; Naruse et al., 1999; Wood et al., 2003; Gao et al., 2011), as well as additional, still enigmatic effects of the chromatin environment of individual genes (Belyaev et al., 2004), which might be influenced by 'super-enhancers' (Lov\u00e9n et al., 2013; Whyte et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "2b4d2c3b-ab66-457d-b8b5-c2d75ff0da2d",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C89",
+      "claim": "Super-enhancers might influence the chromatin environment effects on NRSF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Other important mechanisms include the interaction of NRSF with co-factors (Andres et al., 1999; Naruse et al., 1999; Wood et al., 2003; Gao et al., 2011), as well as additional, still enigmatic effects of the chromatin environment of individual genes (Belyaev et al., 2004), which might be influenced by 'super-enhancers' (Lov\u00e9n et al., 2013; Whyte et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed with citations to Lov\u00e9n et al., 2013 and Whyte et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "cb6823ea-2b37-4015-a7d2-c51f6f4ce47c",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C90",
+      "claim": "There is a correlation between repressor occupancy and gene repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we examined the binding of NRSF to hippocampal genes before and after an epilepsy-provoking insult and found significant increment in genes that were repressed by the factor. This suggested a correlation between repressor occupancy and gene repression (Hammar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data in Figure 5 and citation to Hammar et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b11c09a3-7c72-490c-b860-7613b12a8fc5",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C91",
+      "claim": "Genes with the strongest binding probability for NRSF would likely be constitutively bound to and suppressed by NRSF.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, the focus of studies on gene\u2013repressor interaction has been on genes with the strongest binding probability (Nichols et al., 1992; Chen et al., 1998; Singh et al., 2002). However, the genes with the strongest binding for NRSF would likely be constitutively bound to\u2014and suppressed by\u2014NRSF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed based on the data and supported by citations to traditional approaches.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "906a8c85-806f-4126-9552-6a512d87af08",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C92",
+      "claim": "Genes with the strongest NRSF binding are unlikely to respond to moderate changes in NRSF levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes are unlikely to respond to moderate changes in NRSF levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed based on the model and data showing high-binding genes do not change expression with moderate NRSF increases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "e5e8b281-7564-4964-aef9-7b3f880d3b4b",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C93",
+      "claim": "Relatively modest seizure-induced changes in NRSF levels regulate a subset of NRSE-containing genes that fall within a moderate dynamic range of NRSF binding probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, relatively modest seizure-induced changes in the tissue levels of NRSF regulate a subset of NRSE-containing genes that fall within a moderate 'dynamic range' of NRSF binding probabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion based on the integration of binding frequency data (Figure 7) and gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b5df0d5a-fc2a-4884-bb82-238f58410275",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C94",
+      "claim": "Changes in NRSF levels are moderate in ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "This concept may be important for other forms of insult-induced plasticity in the mature brain including ischemia (Noh et al., 2012; Kaneko et al., 2014), peripheral nerve injury (Uchida et al., 2010), and seizure-induced epilepsy (McClelland et al., 2011a; Goldberg and Coulter, 2013) where changes in NRSF levels are moderate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Noh et al., 2012 and Kaneko et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "f64f0b4d-fd82-4d61-aab1-60a53391096f",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C95",
+      "claim": "Changes in NRSF levels are moderate in peripheral nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "This concept may be important for other forms of insult-induced plasticity in the mature brain including ischemia (Noh et al., 2012; Kaneko et al., 2014), peripheral nerve injury (Uchida et al., 2010), and seizure-induced epilepsy (McClelland et al., 2011a; Goldberg and Coulter, 2013) where changes in NRSF levels are moderate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Uchida et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "77486b25-aaac-45c9-bfc4-98582374d2a7",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C96",
+      "claim": "Changes in NRSF levels are moderate in seizure-induced epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "This concept may be important for other forms of insult-induced plasticity in the mature brain including ischemia (Noh et al., 2012; Kaneko et al., 2014), peripheral nerve injury (Uchida et al., 2010), and seizure-induced epilepsy (McClelland et al., 2011a; Goldberg and Coulter, 2013) where changes in NRSF levels are moderate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to McClelland et al., 2011a and Goldberg and Coulter, 2013, and data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "cdf03e8c-639a-4635-9a96-ea3d3833bb3c",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C97",
+      "claim": "The role of NRSF in mature brain is distinct from its role in development.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support a role of NRSF in mature brain that is distinct from its role in development, when NRSF contributes to neuronal identity by repressing neuronal genes in non-neuronal tissues (Schoenherr and Anderson, 1995; Coulson, 2005), and specifies neuronal fate (Kuwabara et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings and supported by citations to the literature on NRSF's developmental roles.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "e5ae678d-1708-44b7-896c-c1850374ecca",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C98",
+      "claim": "During neuronal differentiation, NRSF levels plunge, de-repressing genes that contribute to neuronal identity.",
+      "claim_type": "EXPLICIT",
+      "source": "In that context, large changes in the expression of NRSF take place: NRSF levels plunge during neuronal differentiation (Gates et al., 2010; Ernsberger, 2012), de-repressing genes that contribute to neuronal identity (Wood et al., 2003; Belyaev et al., 2004; Abrajano et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "b5545db7-fe99-4af4-81be-3041662de5df",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C99",
+      "claim": "The gene set regulated by moderate changes in NRSF expression consists of molecules important for neuronal function and plasticity during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the gene set regulated by moderate changes in NRSF expression in the current study consisted of molecules which are extremely important for neuronal function and plasticity not only during development (Gates et al., 2010; Juliandi et al., 2010; Rodenas-Ruano et al., 2012; Pernhorst et al., 2013), but also in the adult brain (Lepagnol-Bestel et al., 2009; Gao et al., 2011; Pernhorst et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "197fe49a-fde0-40ff-8a87-a88ebc7d610b",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C100",
+      "claim": "The gene set regulated by moderate changes in NRSF expression consists of molecules important for neuronal function and plasticity in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the gene set regulated by moderate changes in NRSF expression in the current study consisted of molecules which are extremely important for neuronal function and plasticity not only during development (Gates et al., 2010; Juliandi et al., 2010; Rodenas-Ruano et al., 2012; Pernhorst et al., 2013), but also in the adult brain (Lepagnol-Bestel et al., 2009; Gao et al., 2011; Pernhorst et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "af18ccb8-4d80-433a-bf84-f0fbd20a8e83",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C101",
+      "claim": "Insult-induced increases of NRSF levels and activity contribute to epileptogenesis via NRSF-mediated repression of a group of genes that critically influence neuronal function.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, insult-induced increases of NRSF levels and activity contribute to epileptogenesis via NRSF-mediated repression of a group of genes that critically influence neuronal function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "ef6363f2-7f47-47ea-b7d8-7dcb4d8f4f8a",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C102",
+      "claim": "The basis of the selective regulation of a subset of NRSE-containing genes includes their mid-range binding frequencies to NRSF.",
+      "claim_type": "EXPLICIT",
+      "source": "The basis of the selective regulation of a subset of NRSE-containing genes includes their mid-range binding frequencies to NRSF, so that moderate fluctuations in NRSF levels influence the degree of their binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the ChIP and binding frequency analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "1db68ecb-5eac-43d2-917c-018154c12aab",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C103",
+      "claim": "Moderate fluctuations in NRSF levels influence the degree of binding to genes with mid-range binding frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The basis of the selective regulation of a subset of NRSE-containing genes includes their mid-range binding frequencies to NRSF, so that moderate fluctuations in NRSF levels influence the degree of their binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the ChIP data showing increased binding at mid-range genes after moderate NRSF increases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "82d9ad15-05b5-409a-831f-eddac2cf5551",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "claim_id": "C104",
+      "claim": "These findings inform about the mechanisms of neuroplasticity in the mature hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings inform us about the mechanisms of neuroplasticity in the mature hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "KA-induced seizures increase NRSF mRNA and protein levels in hippocampus both in vivo and in organotypic slice cultures. NRSF mRNA increases in a time-dependent manner (4hr-1week) in CA1 and CA3 pyramidal cell layers, with protein levels showing 2.8-3.4 fold increases at 72 hours and 1 week post-seizure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide converging evidence from multiple experimental systems (in vivo and organotypic cultures) using complementary techniques (ISH, Western blot, qPCR). The data show consistent time-dependent increases in NRSF expression with appropriate statistical analysis (n=3-8/group, p<0.05) and quantification. The findings are internally consistent and well-replicated across different experimental paradigms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "3a20f31f-c792-4e40-a721-426e19822a5b",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Microarray analysis reveals that NRSE-containing genes are significantly enriched among seizure-repressed genes. Of 12,996 detected genes in hippocampal CA1, 371 (2.8%) contain NRSE sites, but among 470 seizure-repressed genes, 39 (8.3%) contain NRSE sites, representing only ~10% of potential NRSF targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14 present a logical progression from microarray detection through enrichment analysis. The statistical enrichment (8.3% vs 2.8%) is clearly demonstrated and the conclusion that only a subset of NRSE-containing genes are repressed is well-supported by the data. However, the initial candidate gene analysis used routine statistical significance without FDR correction, which the authors acknowledge and address in subsequent analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "9b76fa76-76d1-488c-9208-d42e13c2ef7c",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NRSE-ODN decoy oligonucleotides can block NRSF binding to target genes and rescue seizure-induced gene repression. Of 39 NRSE-containing genes repressed by seizures, 28 were no longer significantly repressed when NRSF binding was inhibited with NRSE-ODN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 demonstrate causality through a loss-of-function approach. The decoy ODN strategy is well-established (cited to McClelland et al., 2011a) and the rescue of 28/39 genes provides strong evidence that NRSF mediates their repression. The minimal effect in naive hippocampus (C16) serves as an appropriate control showing specificity of the intervention.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "e3414d71-846c-4436-835e-0578505b9cd7",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "qPCR validation confirms microarray findings for both repressed and non-repressed NRSE-containing genes. Three genes (Myo5B, Glra2, Stmn2) show statistically significant rescue by NRSE-ODN (p=0.007, p=0.0001, p=0.047 respectively), and qPCR shows excellent correlation with microarray data for both gene sets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 provide critical validation of the microarray findings using an independent method (qPCR). The two-way ANOVA analysis is appropriate for the experimental design with n=4/group. The excellent correlation between microarray and qPCR for both repressed and non-repressed genes strengthens confidence in the microarray data. However, the p-value for Stmn2 (p=0.047) is marginal and close to the significance threshold.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "14bea76b-e981-4673-831f-def1cf6ef19d",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ChIP analysis reveals that genes repressed by seizure-induced NRSF increases show large increments in NRSF binding arising from moderate baseline binding levels. Genes with very low baseline binding (Ep300, Hcn2, P2xr5, Xpo6) or very high baseline binding (Atp2b, Crhr2, Htr1a, Pcsk1) show little change, while genes with moderate baseline binding (Calb1, Glra2, Grin2A, Hcn1, Kcnc2) show marked increases in NRSF binding after seizures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 present ChIP data showing a clear relationship between baseline NRSF binding and seizure-induced changes. The data are presented with appropriate statistical analysis (n=4-6/group, p<0.05) and integrate well with gene expression data from Figure 4B. The correlation between increased binding and gene repression (C90) is supported by citation to Hammar et al., 2014. However, the ChIP data would benefit from more technical replicates given the inherent variability of the technique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A 'dynamic range' model proposes that genes with mid-range NRSF binding frequencies are most sensitive to moderate fluctuations in NRSF levels. Genes with very low or very high binding are predicted to show little response to moderate NRSF changes, while mid-range binding genes would show major changes in repressor binding and gene repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 present a mechanistic model to explain the selective gene regulation observed. While these are explicitly labeled as model predictions (INFERENCE/SPECULATION), they are well-supported by the empirical data in C23-C28 and the binding frequency analyses in C33-C43. The model provides a parsimonious explanation for the observed selectivity and is consistent with basic binding kinetics principles. The model is further validated by the GSEA analysis showing enrichment of mid-range binding frequency genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NRSF-regulated genes have a distinct, more tightly clustered distribution of binding frequencies compared to all NRSE-containing genes. While medians are not significantly different (Mann-Whitney p=0.86), regulated genes show lower skewness (1.2 vs 6.5), lower kurtosis (0.98 vs 66), and a distribution closer to normal (Kolmogorov-Smirnov p>0.10 vs p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C41 present a comprehensive statistical analysis of binding frequency distributions using data from Johnson et al., 2007. The analysis appropriately uses multiple statistical tests (Mann-Whitney, Kolmogorov-Smirnov, D'Agostino-Pearson) and distribution parameters (skewness, kurtosis). The conclusion that regulated genes form a distinct population is well-supported. However, the authors acknowledge potential caveats in applying cell line ChIP-Seq data to hippocampal genes, which is appropriate scientific caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "afa17fef-2cfe-4822-9a2c-2c33ea73399d",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GSEA analysis reveals that three gene sets with mid-range NRSF binding frequencies (37.5-75th percentile) are significantly enriched in controls compared to seizure groups (FWER p<0.05). When NRSF function is blocked with NRSE-ODN, these gene sets are no longer significantly different from controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 provide strong statistical support for the dynamic range model using GSEA, an appropriate method for gene set analysis. The use of FWER correction is conservative and appropriate for multiple testing. The loss of enrichment with NRSE-ODN treatment (C43) provides additional evidence for NRSF-mediated regulation. The convergence of GSEA results with ChIP and expression data strengthens the overall conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NRSF-regulated genes encode functionally important molecules including ion channels and accessory subunits (HCN1, KCNC2, KCNIP2, etc.), neurotransmitter receptors (GRIN2A, GLRA2, NTRK3), calcium-related molecules (CADPS, CALB1, MYO5B), phospho-enzymes (GNAO1, PRKCG), and transcription factors (KLF9). Many of these genes were previously implicated in epilepsy and neuronal function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 characterize the functional categories of NRSF-regulated genes based on Table 2. The categorization is appropriate and well-supported by the literature (multiple citations provided). The identification of transcription factors and signaling molecules (C49) that could mediate secondary effects is an important insight. The claim that these genes are 'well-known' contributors to neuronal function (C82-C83) is supported by extensive citations, though this represents integration of prior knowledge rather than novel findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "857c5002-8c0b-412f-a25a-93bd19a47486",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Preventing NRSF-mediated gene repression attenuates seizure-provoked epileptogenesis. Blocking NRSF function with NRSE-ODN attenuated the epileptic phenotype induced by severe seizures, demonstrating that NRSF-mediated repression of target genes contributes to epileptogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 reference prior work (McClelland et al., 2011a) showing functional consequences of NRSF inhibition. While this is cited work rather than data presented in the current manuscript, it provides critical context for the significance of identifying NRSF-regulated genes. The integration of molecular findings with functional outcomes strengthens the overall biological relevance of the study. However, the current manuscript does not independently demonstrate the epileptogenesis phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "70e5a61c-051c-4896-a147-d9db72655be7",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Genes with the strongest NRSF binding would be constitutively bound and suppressed, making them unlikely to respond to moderate changes in NRSF levels. In contrast, genes with mid-range binding frequencies are selectively regulated by moderate NRSF fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C91-C92 present a logical inference about high-binding genes based on the empirical data showing they don't change with moderate NRSF increases (C26). This is supported by citations to traditional approaches focusing on high-binding genes (Nichols et al., 1992; Chen et al., 1998; Singh et al., 2002). The reasoning is sound and consistent with binding equilibrium principles, though it represents inference rather than direct experimental demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "6ecaf844-5efa-4ba1-b820-1ff44423010e",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple mechanisms influence NRSF binding and repressive effects, including NRSE sequence specificity, interaction with co-factors (mSin3, Co-Rest), chromatin environment, and potentially super-enhancers. NRSF binding is required but not always sufficient for gene repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C89 synthesize prior knowledge about NRSF regulation mechanisms with appropriate citations. The statement that NRSF binding is required but not sufficient (C84-C85) is an important caveat supported by Belyaev et al., 2004. The discussion of super-enhancers (C89) is appropriately speculative. These claims provide important context for interpreting the selectivity of NRSF-mediated repression, though they represent literature synthesis rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "0c21f41e-ac81-4e9c-aeb8-662789a94c4e",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Moderate changes in NRSF levels occur in multiple forms of insult-induced plasticity including ischemia, peripheral nerve injury, and seizure-induced epilepsy, suggesting the dynamic range concept may have broad applicability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 extend the findings to other pathological contexts based on literature citations. The claim for seizure-induced epilepsy (C96) is directly supported by the current study's data (Figure 1) showing 2-3 fold increases. The claims for ischemia and peripheral nerve injury are supported by appropriate citations. This represents appropriate contextualization of the findings within the broader literature on NRSF in brain injury.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "c1cd3c8e-a4de-4d17-bc3c-86a60c86d46f",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The role of NRSF in mature brain is distinct from its developmental role. During development, NRSF levels undergo large changes (plunging during differentiation), while in mature brain, moderate NRSF fluctuations regulate genes important for neuronal function and plasticity in both development and adulthood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 draw an important distinction between developmental and mature brain NRSF function, supported by appropriate citations. The conclusion that the role is 'distinct' (C97) is a reasonable inference based on the magnitude of changes (large in development vs moderate in mature brain) and the functional context. The characterization of regulated genes as important for both developmental and adult neuronal function (C99-C100) is well-supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "5a4576d4-93a5-46ee-a722-9e4d67d5c7e3",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Conditional deletion of NRSF in forebrain increases seizure susceptibility (Hu et al., 2011), but this apparent discrepancy with the current findings is explained by different experimental approaches: complete deletion in naive neurons may induce large transcriptional cascades, while acute disruption after insult provides a more direct assessment of epileptogenic NRSF functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 address an important apparent contradiction in the literature. The explanation (C80) is reasonable speculation supported by the different experimental designs. The methodological distinction (C81) is valid - acute post-insult intervention does provide a more direct test of NRSF's role in epileptogenesis versus development. However, C80 remains speculative as the authors did not directly test this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "914d5219-8989-4a34-aa0f-c6fc4af94b54",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Dynamic, selective regulation of NRSF target genes may play a role in influencing neuronal properties in both pathological and physiological contexts, informing mechanisms of neuroplasticity in mature hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C104 present broad conclusions about the implications of the findings. These are appropriately cautious ('may play a role') and represent reasonable extrapolations from the data. The extension to physiological contexts is speculative but justified given that the regulatory mechanism identified (mid-range binding sensitivity) would operate regardless of the stimulus. These represent appropriate concluding statements about the broader significance of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    },
+    {
+      "id": "aab70f06-b89b-4800-9a40-df02b08fea72",
+      "content_id": "59baee34-f208-4a7a-abe6-9cd527d553a3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background context: Epileptic networks arise through multiple mechanisms including changes in neuronal properties. Gene expression changes in epilepsy (ion channels, receptors, other components) have been extensively reported, but orchestration mechanisms remain unknown. NRSF is a transcriptional repressor that binds NRSE sequences and is involved in neurogenesis, with low levels in mature hippocampus where ~600 genes contain NRSEs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C78 establish the scientific background and rationale for the study. These are well-supported by extensive literature citations and represent accurate synthesis of prior knowledge. The statement that orchestration mechanisms 'remain unknown' (C66) appropriately identifies the knowledge gap addressed by the study. These background claims provide essential context but do not constitute novel findings of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.130180Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "225e8af5-5a13-4be3-b736-8981379886d6",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "4b490fed-ad2a-4a84-9abb-90f434d01226",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "5942f154-ba15-47b7-affe-a34848986eda",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "6a476327-8308-481a-b950-e904e930fb8b",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "8b555cc0-5f45-478b-8c76-bbba447b6a5e",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "7cc0a8dc-d6cc-4b45-9c9b-93750a1e71c7",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "c6d991ab-01b9-4a4e-830a-f5b37b022c70",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "baf56d0c-3a2e-47a9-bfd6-57a997909091",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "44da8b6b-7748-4e7e-acef-9edd44a76e8b",
+      "result_id": "54e6cdda-afa6-460c-b216-ea9e90cf23d9"
+    },
+    {
+      "claim_id": "d9b4afc6-ee34-4e46-a815-8667428749ba",
+      "result_id": "3a20f31f-c792-4e40-a721-426e19822a5b"
+    },
+    {
+      "claim_id": "d72a3d16-7691-4127-8b60-94cb65f8bd8c",
+      "result_id": "3a20f31f-c792-4e40-a721-426e19822a5b"
+    },
+    {
+      "claim_id": "1c230f3f-b4b5-42f6-9413-7d184d0760ab",
+      "result_id": "3a20f31f-c792-4e40-a721-426e19822a5b"
+    },
+    {
+      "claim_id": "421a4ab2-9955-43fe-9aea-46a5c8800dc4",
+      "result_id": "3a20f31f-c792-4e40-a721-426e19822a5b"
+    },
+    {
+      "claim_id": "ee34d0a7-4ee1-4863-b21c-a030eed96474",
+      "result_id": "3a20f31f-c792-4e40-a721-426e19822a5b"
+    },
+    {
+      "claim_id": "936b21d2-5170-4fdf-901d-d8de2e81b78a",
+      "result_id": "3a20f31f-c792-4e40-a721-426e19822a5b"
+    },
+    {
+      "claim_id": "d8222226-cf35-455d-94a1-84955bf656d8",
+      "result_id": "3a20f31f-c792-4e40-a721-426e19822a5b"
+    },
+    {
+      "claim_id": "8c4d430b-8d67-474d-92c9-011a6ab71ba5",
+      "result_id": "3a20f31f-c792-4e40-a721-426e19822a5b"
+    },
+    {
+      "claim_id": "b38a72f5-68b2-48c5-8c69-d3d2da002ab4",
+      "result_id": "9b76fa76-76d1-488c-9208-d42e13c2ef7c"
+    },
+    {
+      "claim_id": "8c8c524d-ba27-4af3-8d61-c7b68b0f1004",
+      "result_id": "9b76fa76-76d1-488c-9208-d42e13c2ef7c"
+    },
+    {
+      "claim_id": "69701b45-fc28-4315-8449-e21337867b7c",
+      "result_id": "9b76fa76-76d1-488c-9208-d42e13c2ef7c"
+    },
+    {
+      "claim_id": "fd292097-5fa3-4006-86f6-2c57d8667e3d",
+      "result_id": "9b76fa76-76d1-488c-9208-d42e13c2ef7c"
+    },
+    {
+      "claim_id": "853538df-2b01-402e-a10e-1f1d82d900fb",
+      "result_id": "e3414d71-846c-4436-835e-0578505b9cd7"
+    },
+    {
+      "claim_id": "ee7575ed-7ac9-4505-aa9c-98b4274b7fd0",
+      "result_id": "e3414d71-846c-4436-835e-0578505b9cd7"
+    },
+    {
+      "claim_id": "115cfe1f-667d-464d-9345-5329b6ab7fde",
+      "result_id": "e3414d71-846c-4436-835e-0578505b9cd7"
+    },
+    {
+      "claim_id": "1da8de68-54f1-4535-891b-dab08f4e21a7",
+      "result_id": "e3414d71-846c-4436-835e-0578505b9cd7"
+    },
+    {
+      "claim_id": "b476f467-4f50-48a1-9780-e214697122ca",
+      "result_id": "e3414d71-846c-4436-835e-0578505b9cd7"
+    },
+    {
+      "claim_id": "0136145e-0ba7-459d-9093-a8b465142318",
+      "result_id": "14bea76b-e981-4673-831f-def1cf6ef19d"
+    },
+    {
+      "claim_id": "0791ae4d-15f4-47e1-b371-0cc5bbf20d54",
+      "result_id": "14bea76b-e981-4673-831f-def1cf6ef19d"
+    },
+    {
+      "claim_id": "a04620ef-2977-4f6f-a0df-b611393363a4",
+      "result_id": "14bea76b-e981-4673-831f-def1cf6ef19d"
+    },
+    {
+      "claim_id": "7455a22a-034d-4508-9401-505289abe657",
+      "result_id": "14bea76b-e981-4673-831f-def1cf6ef19d"
+    },
+    {
+      "claim_id": "b86d42e7-6f8e-4ebf-a9df-f59e9b9d58fd",
+      "result_id": "14bea76b-e981-4673-831f-def1cf6ef19d"
+    },
+    {
+      "claim_id": "ed234245-542b-469a-b958-e4926595e411",
+      "result_id": "14bea76b-e981-4673-831f-def1cf6ef19d"
+    },
+    {
+      "claim_id": "cb6823ea-2b37-4015-a7d2-c51f6f4ce47c",
+      "result_id": "14bea76b-e981-4673-831f-def1cf6ef19d"
+    },
+    {
+      "claim_id": "e85dc041-5335-4777-9ee8-f176ddcb3f2f",
+      "result_id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90"
+    },
+    {
+      "claim_id": "272807de-41c7-4309-bf0e-a08ca71f3646",
+      "result_id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90"
+    },
+    {
+      "claim_id": "c07c1acb-498f-461d-8c30-30cda87d39d8",
+      "result_id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90"
+    },
+    {
+      "claim_id": "c70adc93-02d4-4827-958b-d612cda146d2",
+      "result_id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90"
+    },
+    {
+      "claim_id": "0384df26-2131-488d-a7a5-68442cb911a3",
+      "result_id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90"
+    },
+    {
+      "claim_id": "e5e8b281-7564-4964-aef9-7b3f880d3b4b",
+      "result_id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90"
+    },
+    {
+      "claim_id": "ef6363f2-7f47-47ea-b7d8-7dcb4d8f4f8a",
+      "result_id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90"
+    },
+    {
+      "claim_id": "1db68ecb-5eac-43d2-917c-018154c12aab",
+      "result_id": "2adc7f53-1b0a-4af5-ba3b-7be16225ea90"
+    },
+    {
+      "claim_id": "b57e3edb-739e-4109-a838-80c52d69716e",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "0c18bada-f840-462a-8a3a-d2d84a767744",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "729611ed-7910-47bc-b90b-5d58550ef4c4",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "b8f2acdf-a1aa-4ad9-a7bc-2d98f22dbb1e",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "f5ced82c-91e0-4c2d-83b2-082abf729327",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "1d8e4dce-9e7c-469a-8524-a101caa53ac6",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "8fad876c-5f23-4d08-bc74-4d7cca52bb4a",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "69b3ec91-3f84-4f94-985b-f9555d1cd3b2",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "03ccfb59-546b-46f8-95ee-d2c1d8feca46",
+      "result_id": "9c5fa236-5ee2-4eb8-849a-fd5e34ec3046"
+    },
+    {
+      "claim_id": "89328a5e-60d8-415a-99eb-17e9a4e75dcb",
+      "result_id": "afa17fef-2cfe-4822-9a2c-2c33ea73399d"
+    },
+    {
+      "claim_id": "28b21b84-308f-499a-9f91-19bad25367b6",
+      "result_id": "afa17fef-2cfe-4822-9a2c-2c33ea73399d"
+    },
+    {
+      "claim_id": "7b565735-17c1-4834-bba8-b75417413211",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "e175667b-bce4-45bf-ae7a-2e9a8108b52c",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "6080d4b7-3d17-4604-87d2-35fd13591391",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "08b3efbd-2ed5-44f9-a86e-1baf61f4b460",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "f79c2acc-fd4d-4036-acd5-803bc153593a",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "0703e975-1f6c-4766-82cf-6ad399ce0775",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "3aca55ac-5615-49a9-8979-cc08cc051342",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "06726eef-8f90-49c9-8d63-f7998e3f11b6",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "f3ff3f79-a79f-4172-b55e-4eb507b764b5",
+      "result_id": "07aa0ec5-5904-4d6e-a646-7d05d19f5aa2"
+    },
+    {
+      "claim_id": "7742d6fd-cda3-428f-a730-86291333c56f",
+      "result_id": "857c5002-8c0b-412f-a25a-93bd19a47486"
+    },
+    {
+      "claim_id": "58758913-cbf9-4b3f-b3ed-b48124520ebb",
+      "result_id": "857c5002-8c0b-412f-a25a-93bd19a47486"
+    },
+    {
+      "claim_id": "a09b0e8a-5655-4be7-bdbb-2b4762d843de",
+      "result_id": "857c5002-8c0b-412f-a25a-93bd19a47486"
+    },
+    {
+      "claim_id": "af18ccb8-4d80-433a-bf84-f0fbd20a8e83",
+      "result_id": "857c5002-8c0b-412f-a25a-93bd19a47486"
+    },
+    {
+      "claim_id": "1d678a5b-3a28-45b1-984c-e425efd02a78",
+      "result_id": "70e5a61c-051c-4896-a147-d9db72655be7"
+    },
+    {
+      "claim_id": "b11c09a3-7c72-490c-b860-7613b12a8fc5",
+      "result_id": "70e5a61c-051c-4896-a147-d9db72655be7"
+    },
+    {
+      "claim_id": "906a8c85-806f-4126-9552-6a512d87af08",
+      "result_id": "70e5a61c-051c-4896-a147-d9db72655be7"
+    },
+    {
+      "claim_id": "526e91fb-85d9-41c4-884a-e6d620d5159a",
+      "result_id": "6ecaf844-5efa-4ba1-b820-1ff44423010e"
+    },
+    {
+      "claim_id": "89b865e1-4741-425d-924c-8bcce90908c1",
+      "result_id": "6ecaf844-5efa-4ba1-b820-1ff44423010e"
+    },
+    {
+      "claim_id": "737939fd-c550-49e6-8e0a-d1f26463010e",
+      "result_id": "6ecaf844-5efa-4ba1-b820-1ff44423010e"
+    },
+    {
+      "claim_id": "b9406c9a-00ab-44f0-a91a-038247c4a3be",
+      "result_id": "6ecaf844-5efa-4ba1-b820-1ff44423010e"
+    },
+    {
+      "claim_id": "b0ef879a-f336-4c60-87f8-e11e68fe7cc1",
+      "result_id": "6ecaf844-5efa-4ba1-b820-1ff44423010e"
+    },
+    {
+      "claim_id": "2b4d2c3b-ab66-457d-b8b5-c2d75ff0da2d",
+      "result_id": "6ecaf844-5efa-4ba1-b820-1ff44423010e"
+    },
+    {
+      "claim_id": "b5df0d5a-fc2a-4884-bb82-238f58410275",
+      "result_id": "0c21f41e-ac81-4e9c-aeb8-662789a94c4e"
+    },
+    {
+      "claim_id": "f64f0b4d-fd82-4d61-aab1-60a53391096f",
+      "result_id": "0c21f41e-ac81-4e9c-aeb8-662789a94c4e"
+    },
+    {
+      "claim_id": "77486b25-aaac-45c9-bfc4-98582374d2a7",
+      "result_id": "0c21f41e-ac81-4e9c-aeb8-662789a94c4e"
+    },
+    {
+      "claim_id": "cdf03e8c-639a-4635-9a96-ea3d3833bb3c",
+      "result_id": "c1cd3c8e-a4de-4d17-bc3c-86a60c86d46f"
+    },
+    {
+      "claim_id": "e5ae678d-1708-44b7-896c-c1850374ecca",
+      "result_id": "c1cd3c8e-a4de-4d17-bc3c-86a60c86d46f"
+    },
+    {
+      "claim_id": "b5545db7-fe99-4af4-81be-3041662de5df",
+      "result_id": "c1cd3c8e-a4de-4d17-bc3c-86a60c86d46f"
+    },
+    {
+      "claim_id": "197fe49a-fde0-40ff-8a87-a88ebc7d610b",
+      "result_id": "c1cd3c8e-a4de-4d17-bc3c-86a60c86d46f"
+    },
+    {
+      "claim_id": "c346bbe8-b316-4df6-8cb3-8e34f954a833",
+      "result_id": "5a4576d4-93a5-46ee-a722-9e4d67d5c7e3"
+    },
+    {
+      "claim_id": "6db99f5a-0a12-4bdc-a859-0604b2cf27d1",
+      "result_id": "5a4576d4-93a5-46ee-a722-9e4d67d5c7e3"
+    },
+    {
+      "claim_id": "8c008243-bb3d-4b3a-b815-a4941ac6106f",
+      "result_id": "5a4576d4-93a5-46ee-a722-9e4d67d5c7e3"
+    },
+    {
+      "claim_id": "154975be-5d49-4634-8c6d-a6e8b3b6ef78",
+      "result_id": "914d5219-8989-4a34-aa0f-c6fc4af94b54"
+    },
+    {
+      "claim_id": "82d9ad15-05b5-409a-831f-eddac2cf5551",
+      "result_id": "914d5219-8989-4a34-aa0f-c6fc4af94b54"
+    },
+    {
+      "claim_id": "a14a1611-fea5-49ad-bb29-20be1373185f",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "56264e5a-84f2-470f-b783-38c1682244a9",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "a877b275-a687-4b4b-ad94-7ff9b4c4105c",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "2355bd74-a6dd-4083-ad98-072f5b93602a",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "6d1370b4-8713-487f-8924-25e415d25904",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "a74cc8d2-77eb-4d6a-8770-3c6de21509d5",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "df91aa3c-f900-45c8-944a-ba75d3b9559b",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "274e3970-325e-4644-a5a6-fc7abc88392f",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "6bc8273d-2c40-4c93-9673-7b1403767565",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "010fd036-4831-4dce-88b5-c9234d4031c2",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "a38d5673-fc6d-4a96-953e-e51de3de268e",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "f66f7a44-79e6-4394-b02a-749f7d7fa952",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "d2c3d21c-ad29-4845-848b-25ade14b36dc",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "f92bffc1-4e0e-4282-85a9-81521151adf7",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "bb946ea8-4efc-43c7-8d9c-77833b37c624",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "64a24233-0b67-4756-815e-2d7cd97b1a9e",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "caa01920-5cf7-4807-9126-72b69b3151b0",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    },
+    {
+      "claim_id": "cb31f9ad-3853-420d-b531-65223acd79db",
+      "result_id": "aab70f06-b89b-4800-9a40-df02b08fea72"
+    }
+  ],
+  "comparisons": []
+}

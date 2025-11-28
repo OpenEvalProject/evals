@@ -1,0 +1,2177 @@
+{
+  "submission": {
+    "id": "f294e7f4-ffe0-41f4-bbcf-e0f01383648f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:23:28.009172Z",
+    "updated_at": "2025-11-28T22:23:28.009172Z"
+  },
+  "content": [
+    {
+      "id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "submission_id": "f294e7f4-ffe0-41f4-bbcf-e0f01383648f",
+      "content_type": "manuscript",
+      "content_text": "# Non-catalytic motor domains enable processive movement and functional diversification of the kinesin-14 Kar3\n\n## Authors\n\n- Christine Mieck<sup>1</sup>\n- Maxim I Molodtsov<sup>1</sup>\n- Katarzyna Drzewicka<sup>1</sup>\n- Babet van der Vaart<sup>1</sup>\n- Gabriele Litos<sup>1</sup>\n- Gerald Schmauss<sup>1</sup>\n- Alipasha Vaziri<sup>1</sup> \u2020\n- Stefan Westermann<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Research Institute of Molecular Pathology Vienna Austria\n2. Max F Perutz Laboratories University of Vienna Vienna Austria\n3. Institute of Molecular Biotechnology Vienna Austria\n4. Research Platform Quantum Phenomena and Nanoscale Biological Systems University of Vienna Vienna Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nMotor proteins of the conserved kinesin-14 family have important roles in mitotic spindle organization and chromosome segregation. Previous studies have indicated that kinesin-14 motors are non-processive enzymes, working in the context of multi-motor ensembles that collectively organize microtubule networks. In this study, we show that the yeast kinesin-14 Kar3 generates processive movement as a heterodimer with the non-motor proteins Cik1 or Vik1. By analyzing the single-molecule properties of engineered motors, we demonstrate that the non-catalytic domain has a key role in the motility mechanism by acting as a \u2018foothold\u2019 that allows Kar3 to bias translocation towards the minus end. This mechanism rivals the speed and run length of conventional motors, can support transport of the Ndc80 complex in vitro and is critical for Kar3 function in vivo. Our findings provide an example for a non-conventional translocation mechanism and can explain how Kar3 substitutes for key functions of Dynein in the yeast nucleus.\n\n## Introduction\n\nMotors of the kinesin family are ubiquitous enzymes essential for intracellular transport along microtubules in eukaryotes. The mechanism by which kinesin motor proteins convert the chemical energy of ATP hydrolysis into coordinated, long-range directional movement has fascinated cell biologists, biochemists, and engineers for many decades. Biophysical studies of kinesins have focused on conventional Kinesin-1 and established the \u2018hand-over-hand\u2019 model for the processive walking behavior of this type of motor (Asbury et al., 2003; Yildiz et al., 2004; Kaseda et al., 2003). In analogy to other enzymes, the term \u2018processivity\u2019 describes the ability of individual motor molecules to undergo multiple catalytic cycles\u2014and therefore translocate\u2014before releasing from the microtubule.\n\nKinesin-14 family members, exemplified by the Drosophila Ncd motor, are common examples for nonprocessive kinesins (Case et al., 1997; Foster and Gilbert, 2000). They generate motility through the minus-end-directed rotational movement of a coiled-coil mechanical element that occurs upon ATP binding (Endres et al., 2006). After each catalytic cycle, Ncd motors release from the microtubule lattice, meaning that to support microtubule sliding and crosslinking in the spindle, many Ncd motors must work together cooperatively in an ensemble (Braun et al., 2009; Fink et al., 2009). Budding yeast kinesin-14 Kar3 is distinct from other family members in its heterodimeric composition with either Cik1 or Vik1 (Manning et al., 1999) (Figure 1A). High-resolution structural analysis has shown that these accessory proteins contain a motor homology domain that harbors a microtubule binding site but lacks the structural elements required to bind and hydrolyze ATP (Allingham et al., 2007). Biochemical experiments have indicated that Cik1 and Vik1 modulate the interaction of Kar3 with microtubules (Allingham et al., 2007; Chen et al., 2011; Rank et al., 2012). In vivo Kar3's heterodimeric composition governs its subcellular localization and function: Kar3 in complex with Vik1 crosslinks parallel microtubules in proximity to spindle pole bodies during mitosis (Manning et al., 1999), whereas antiparallel microtubule sliding is powered by Cik1\u2013Kar3 complexes that associate with the microtubule lattice and plus-ends during mitotic and meiotic events (Maddox et al., 2003; Gardner et al., 2008). In addition, Kar3 has been implicated in kinetochore capture and transport (Middleton and Carbon, 1994; Tanaka et al., 2005, 2007). The unusual composition of the Kar3 motor with the combination of a catalytic and a non-catalytic domain, as well as its key roles for diverse cellular processes in yeast, has made it a particularly interesting object of study both from a biophysical and cell biological point of view. The understanding of the mechanistic basis of Kar3 function, however, has remained incomplete, as biochemical experiments have been limited to ensemble assays using truncated or artificially dimerized proteins. On the basis of such experiments and the interpretation of in vivo phenotypes, it has been proposed that Cik1\u2013Kar3 acts as a microtubule depolymerase (Chu et al., 2005; Sproul et al., 2005; Allingham et al., 2007). We hypothesized that the presence of a non-catalytic domain may allow functionalities fundamentally different from conventional kinesin-14 homodimers. As the activity of individual full-length Kar3 motors had not been observed directly, we developed assays to investigate motors at the single molecule level and analyze the contribution of the non-catalytic domain.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of conventional Kinesin-1 in comparison to the kinesin-14 Cik1\u2013Kar3. (B) Purification of recombinant Cik1\u2013Kar3 from yeast extracts. Motors are covalently labeled with Tetramethylrhodamine (TMR) via a HaloTag on the amino-terminus of Kar3. Coomassie-stained SDS-PAGE shows purity of the motor preparation and fluorescent labeling of the Kar3 subunit. (C) Size-exclusion chromatography of Cik1\u2013Kar3-Halo motors on a Superose 6 column. The void volume of the column (V0) and the elution position of standard proteins with their respective stokes radii is indicated. (D) SDS-PAGE analysis of Superose 6 fractions from (C). (E) Sucrose gradient centrifugation of Cik1\u2013Kar3 motors. Consecutive fractions from top to bottom of a 5\u201325 (wt/vol)% sucrose gradient were analyzed by SDS-PAGE and Coomassie staining. The gradient positions of standard proteins are indicated together with their sedimentation coefficients. (F) Low angle Pt/C rotary shadowing electron microscopy of Cik1\u2013Kar3 motors obtained after size exclusion chromatography. Overview of Cik1\u2013Kar3 motors, scale bar 100 nm. (G) Gallery view of selected Cik1\u2013Kar3 motors, scale bar 50 nm.\n\n## Results\n\n### Cik1\u2013Kar3 is a processive kinesin-14 motor with a single catalytic domain\n\nTo study Kar3 motors at the single molecule level, we developed a protocol to express and purify full-length kinesin-14 heterodimers from Saccharomyces cerevisiae using affinity tagged Cik1 and Kar3 fused COOH-terminally to a HaloTag that served as covalent attachment site for the fluorescent dye tetramethylrhodamine (TMR). Purification and labeling yielded a homogenous preparation containing a heterodimer of Cik1 and TMR-labeled Kar3 (Figure 1B). During size exclusion chromatography, Cik1\u2013Kar3 motors eluted as a single major peak with a Stokes radius of \u223c9.1 nm, well separated from the void volume of the column (Figure 1C,D). Sucrose-gradient centrifugation revealed the presence of a single major species with an apparent sedimentation coefficient of \u223c5.6S (Figure 1E). Combining these hydrodynamic values yielded a native molecular weight of 214 kDa, close to the calculated molecular weight of a Halo-tagged Cik1\u2013Kar3 heterodimer of 190 kDa. We further characterized the oligomeric state of full-length Cik1\u2013Kar3 motors by performing low-angle Pt/C rotary shadowing electron microscopy on peak fractions from the gel filtration experiments. This analysis revealed individual well-defined, highly elongated molecules that were characterized by globular domains separated by a 61 \u00b1 8 nm (mean \u00b1 SD, n = 100) long coiled-coil (Figure 1F). Typically, two closely spaced globular domains likely corresponding to catalytic and non-catalytic head domains were discernible at one end, while a single globular domain decorated the other (Figure 1G). The highly elongated shape of the Cik1\u2013Kar3 molecules can explain their early elution from the gel filtration column. Overall, the hydrodynamic analysis and the direct visualization of motor molecules by EM support the presence of heterodimeric Cik1\u2013Kar3 molecules.\n\nWe next observed the behavior of single motor molecules on surface-immobilized microtubules in vitro using time-lapse multi-color TIRF microscopy. Unexpectedly, and contrary to the classification of kinesin-14s as non-processive motors, Kar3 molecules displayed efficient ATP-dependent movement over several micrometers and accumulated at microtubule minus ends (Figure 2A, Video 1). Automated tracking of motors revealed a Gaussian velocity distribution of Cik1\u2013Kar3 with a mean speed of 77 \u00b1 23 nm/s (mean \u00b1 SD; Figure 2B) in range with reported microtubule gliding velocities for truncated Cik1\u2013Kar3 molecules (Chu et al., 2005; Allingham et al., 2007). The motor is therefore approximately 10-fold slower than conventional Kinesin-1, but similar in speed to yeast cytoplasmic Dynein, the major minus-end directed-motor in eukaryotes (Reck-Peterson et al., 2006). The run-length histogram followed an exponential distribution and revealed that individual Cik1\u2013Kar3 motors advanced processively for an average of 5.2 \u03bcm before detaching from the microtubule track (Figure 2C). The motile parameters were highly sensitive to the ionic strength of the imaging buffer: at the same ATP concentration higher salt concentration increased the mean squared displacement of the motors (Figure 2D), but decreased the on-rate, run length and minus-end dwell time (Figure 2E). We additionally noticed that Cik1\u2013Kar3 oscillated back-and-forth when entering microtubule overlap zones. Because Cik1\u2013Kar3 is exclusively moving towards the minus-end on single MT filaments, we concluded that reversing motors encountered an antiparallel-oriented MT bundle. Individual motors were able to switch the track microtubule multiple times leading to a prolonged association with antiparallel bundles (Figure 2F, Video 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig2-v2.jpg)\n\n**Figure 2.:** (A) Kymograph showing two-color time lapse TIRF microscopy of Cik1\u2013Kar3 (red) moving along taxol-stabilized microtubules (blue). See Video 1 for example of Cik1\u2013Kar3 motility. (B) Histogram of velocities of Cik1\u2013Kar3 molecules moving along taxol-stabilized microtubules (fit with a Gaussian function, black line). The mean velocity is 77 \u00b1 23 nm/s, n = 699. (C) Histogram of run lengths of Cik1\u2013Kar3 molecules moving along taxol-stabilized microtubules, n = 209. (D) Mean-squared displacement analysis of wild-type Cik1\u2013Kar3 at two different salt concentrations in the presence of ATP. (E) Influence of ionic strength on the motile properties of Cik1\u2013Kar3 molecules. Experiments were performed in BRB80-based imaging buffer containing the indicated concentrations of KCl. (F) Behavior of Cik1\u2013Kar3 in microtubule networks. Typical kymograph showing directional movement of Cik1\u2013Kar3 on single microtubules vs repeated directionality switches of individual motors in antiparallel overlaps. The dashed line indicates the beginning of an overlap zone. See Video 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Photobleaching experiment in the absence of nucleotide. Kymograph representation showing that Cik-Kar3 motors do not exhibit displacement or diffusion in this state. (B) Quantification of photobleaching. (C) Example for single-step photobleaching event. (D) Example for two-step photobleaching event. (E) Mixing experiment combining TMR-labeled Cik1\u2013Kar3 motors with Alexa488 labeled Cik1\u2013Kar3 motors prior to imaging. Kymograph reveals individual traces for red-and green fluorescent motors, indicating that a single Cik1\u2013Kar3 heterodimer is sufficient for movement. (F) Microtubule-gliding experiment with varying concentrations of Cik1\u2013Kar3. In this assay, the motor is immobilized via anti-Halo antibodies to the coverglass and movement of microtubules is recorded by time-lapse TIRF microscopy. Kymographs indicate gliding velocity at different motor concentrations, the lower panel shows that gliding is ATP dependent. (G) Movement of Cik1\u2013Kar3 motors on dynamic microtubules. Dynamic extensions were grown from GMPCPP-stabilized microtubule seeds and imaged together with Cik1\u2013Kar3. Note movement of motors opposite to the directions of microtubule growth, indicating minus-end directed motility of Cik1\u2013Kar3. (H) Quantitative analysis of MT shrinkage rate of taxol-stabilized MTs in the presence of 1 nM Cik1/Kar3 (error bars represent SEM, n = 30).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Kymograph showing movement of Cik1\u2013Kar3. Position along the microtubule is depicted on the vertical axis while time changes along the horizontal axis. (B\u2013C) Kymographs showing binding and movement of single Cik1\u2013Kar3 complexes each composed of 1 (B) or 2 (C) heterodimers. (D\u2013E) Records for background subtracted brightness vs times for complexes in B and C, respectively. (E) Distribution of background subtracted brightness for Cik1\u2013Kar3 complexes. The fit is with four peak Gaussian. (F) Distribution of the initial size of processively moving complexes based on the brightness of a single fluorophore from E. (G) Histogram of moving motor complexes containing the indicated number of Cik1-Kar3 heterodimers. (H) Model of oligomerization of Cik1\u2013Kar3 complexes. Oligomer of two complexes is shown. Blue arrows show velocities of movement of each independent heterodimer. Interconnected tails act as a spring-like linker in between two moving heads. (I, J) Velocity of the movement and run length as a function of size. Blue squares are experimental data, red circles are results of theoretical modeling (for parameters seeFigure 2\u2014figure supplement 3). The bars show average value and standard deviation.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schematics of the kinesin team. In the depicted case, the team consists of three kinesins and two of them are shown as bound to the microtubule and move at the velocities $\u03bd\u2192_{1}$ and $\u03bd\u2192_{3}$, respectively. Since $\u03bd_{1}>\u03bd_{3}$ the elastic linkage between the dimers stretches generating the forces $f_{1}\u2192$ and $f_{3}\u2192$. (B) Representation of the force\u2013velocity relation used in the model. (C) Representation of the dependence of the unbinding rate on the applied force. (D) Example of a simulation for a complex size with three dimers. The blue graph is the position of the center of mass of the complex as a function of time (left axis), red graph shows the number of dimers attached to the microtubule at each time point. (right axis). (E\u2013F) Velocity, run length and their standard deviations as a function of the complex size for different values of $k_{stiff}$. Other parameters of the simulation are: V = 50 nm/s, $\\sigma_{\u03bd}$ = 20 nm/s; $F_{stall}$ = 1 pN; $k_{ON}$ = 0.55 s\u22121; $k_{OFF}^{o}$ = 0.08 s\u22121; $k_{OFF}^{MAX}$ = 4 s\u22121. (G) Comparison between experimental data (blue) and best fit (see values of objective function in Table 5) of the simplified theoretical model without force dependence (red). (H\u2013I) Velocity, run length and their standard deviations as a function of the complex size for best parameters of the complete model. Data are shown for red\u2014$F_{stall}$ = 0.2 pN; $k_{ON}$ = 0.57 s\u22121; $k_{OFF}^{MAX}$ = 3.7 s\u22121; magenta\u2014$F_{stall}$= 1 pN; $k_{ON}$ = 0.55 s\u22121; $k_{OFF}^{MAX}$ = 4 s\u22121; green\u2014$F_{stall}$ = 4 pN; $k_{ON}$ = 0.49 s\u22121; $k_{OFF}^{MAX}$ = 5.3 s\u22121; Other parameters for all simulations: V = 50 nm/s, $\\sigma_{\u03bd}$ = 20 nm/s; $k_{OFF}^{o}$ = 0.08 s\u22121; $k_{stiff}$ = 0.03 pN/nm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/04489/elife-04489-media1.avi.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/04489/elife-04489-media2.avi.jpg)\n\n### Individual Cik1\u2013Kar3 heterodimers are sufficient for processive movement\n\nThe processive movement of Kar3 may either be a property of individual heterodimers or alternatively require the formation of motor ensembles combining multiple catalytic domains that coordinate stepping. Photobleaching experiments in the absence of nucleotide, in which the motor is persistently bound to the microtubule, revealed that 43 out of 50 molecules lost fluorescence in a single step consistent with the presence of a single Cik1\u2013Kar3 heterodimer (Figure 2\u2014figure supplement 1A\u2013D). Mixing experiments combining TMR- with Alexa488 labeled Cik1\u2013Kar3 molecules prior to imaging showed that the majority of moving complexes displayed exclusively either red or green fluorescence (Figure 2\u2014figure supplement 1E, Video 3). To discriminate between processive and non-processive motility modes by an alternative approach, we varied the motor concentration in a standard microtubule gliding assay. Titration of Cik1\u2013Kar3 over a 50-fold concentration range revealed no decrease in velocity for microtubule gliding, a characteristic feature of processive motility (Hancock and Howard, 1998) (Figure 2\u2014figure supplement 1F). Contrary to previous reports, we did not observe substantial depolymerization of taxol-stabilized microtubules in the presence of Cik1\u2013Kar3. On dynamic microtubules motors moved towards the minus-ends, overall microtubule dynamics appeared unchanged in the presence of Cik1\u2013Kar3 and catastrophes did not coincide with plus-end localization of the motor (Figure 2\u2014figure supplement 1G).\n\n![Video 3.](https://cdn.elifesciences.org/articles/04489/elife-04489-media3.avi.jpg)\n\nQuantification of TMR brightness of moving motors allowed us to compare the motile properties of Cik1\u2013Kar3 heterodimers vs larger teams that consisted of two or more heterodimers (Figure 2\u2014figure supplement 2A\u2013G). We found that Cik1\u2013Kar3 velocity was largely independent of motor team size (Figure 2\u2014figure supplement 2H,I). The run length, however, increased with larger team size while the variance of the velocity decreased (Figure 2\u2014figure supplement 2J). These motile behaviors of Cik1\u2013Kar3 complexes of different sizes can be quantitatively explained by a biophysical model in which individual motors influence each other through mechanical coupling with spring-like properties (Figure 2\u2014figure supplement 3 and Supplementary file 1). Importantly, a key feature of the biophysical model is the ability of an individual Cik1\u2013Kar3 heterodimer to move processively.\n\n### Mutations in the non-catalytic head domain abolish directional movement\n\nWe next sought to establish the molecular requirements for Kar3 motility: processive movement could be a property intrinsic to the head domains or require secondary microtubule interaction sites in the motor tails (Gudimchuk et al., 2013; Su et al., 2013). To distinguish between these possibilities, truncation constructs were designed, systematically eliminating parts of the tail, coiled-coil, or globular domains of either the motor or the partner protein (Figure 3A). Truncation of the amino-terminal tail domain, either in Kar3 (up to aa 174) or in Cik1 (up to aa 250) allowed robust processive movement in the single molecule assay and also had little effect on multi-motor gliding velocity. This distinguishes Cik1\u2013Kar3 from the homodimeric Drosophila kinesin-14, Ncd, which has been shown to be capable of a weakly processive motion at very low ionic strength depending on its tail region that acts as an electrostatic tether to microtubules (Furuta and Toyoshima, 2008). Further truncations of the coiled-coil interfered with heterodimer formation (not shown). In contrast, carboxyterminal truncations that either completely eliminated the predicted globular Cik1 motor homology domain (Cik11\u2013360) or removed a portion of the carboxyterminus (Cik11\u2013521) had severe effects and prevented directional movement. The specific nature of the defect was most apparent for the shorter truncation Cik11\u2013521\u2013Kar3, which was able to bind microtubules under our standard conditions, but instead of smooth translocation it displayed erratic forward and backward displacements that did not lead to directional movement as revealed by kymographs (Figure 3B, Videos 4 and 5). The defect imposed by the Cik11\u2013521 mutation was also readily apparent in multi-motor gliding assays, where microtubules frequently switched their direction of movement and displayed little net transport (Figure 3C). The pronounced defect of the Cik11\u2013521 mutant points to an essential role for the non-catalytic head in the motility mechanism. To corroborate this point, we also co-overexpressed Flag-tagged Kar3 with Kar3-Halo and purified fluorescently labeled Kar3 homodimers that can form in the absence of Cik1 (Chu et al., 2005). We failed to observe processive movement of Kar3-Kar3 combining two catalytic domains or of Kar3-Kar3rigor complexes combining catalytically active and inactive Kar3 heads (Figure 3A). These results point to a specific role of the non-catalytic Cik1 head that cannot be simply replaced by a second catalytically active or inactive Kar3 head.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic showing analyzed Cik1 and Kar3 truncation constructs with the corresponding results from TIRF assays and multi-motor gliding assays. All constructs contained the Halo-tag at the aminoterminus of Kar3 for fluorescent labeling with TMR. (B) Kymographs of TMR-labeled Kar3 complexes containing either full-length Cik1 (aa 1\u2013594) or the carboxyterminal truncation mutant Cik11\u2013521. See Videos 4 and 5. (C) Kymograph of microtubule-gliding by full-length Cik1\u2013Kar3 and the Cik11\u2013521-Kar3 mutant. Note the impairment of directional translocation by the Cik11\u2013521\u2013Kar3 mutant.\n\n![Video 4.](https://cdn.elifesciences.org/articles/04489/elife-04489-media4.avi.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/04489/elife-04489-media5.avi.jpg)\n\n### The non-catalytic domain restrains diffusion of Kar3 motors\n\nTo analyze the motile cycle in more detail, we imaged single Cik1\u2013Kar3 motors in different nucleotide states by TIRF microscopy with high temporal resolution. In the absence of nucleotide (+Apyrase) and in the presence of the non-hydrolyzable ATP analog AMP-PNP Kar3 motors bound with high affinity to the microtubule but displayed no movement (Figure 4A). Binding under these conditions was sensitive to ionic strength with on-rate and lifetime of motor\u2013microtubule interactions decreasing as the salt concentration was raised from 30 mM to 100 mM KCl (not shown). In the ADP state, motors displayed diffusive microtubule interactions (D = 0.061 \u00b1 0.003 \u03bcm2/s) with short residence times (\u03c4 = 0.6 \u00b1 0.1 s) (Figure 4B,C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig4-v2.jpg)\n\n**Figure 4.:** (A) Kymographs showing single molecule TIRF microscopy of Cik1\u2013Kar3 motors in different nucleotide states. Videos were taken with high temporal resolution (35 frames per second). Note the different motor concentrations and the directional displacement of Cik1\u2013Kar3 molecules in the presence of ATP. (B) Diffusive movement of individual Cik1\u2013Kar3 molecules in the presence of ADP. (C) MSD analysis of the diffusive movement of Cik1\u2013Kar3 motors in the presence of ADP. Molecules with lifetimes between 0.5 and 5 s were analyzed. (D) Typical kymographs of Cik11\u2013360\u2013Kar3 motors lacking the non-catalytic head domain in no-nucleotide (Apyrase), AMPPNP and ATP states. Note the diffusive interactions of the motor with the microtubule in comparison to 3A. (E) Mean-squared displacement (MSD) analysis of Cik1\u2013Kar3 and Cik11\u2013360\u2013Kar3 motors in the presence of ATP. Data points were fitted to the formula <x2> = a\u00b7tn. n = 1 for Cik11\u2013360\u2013Kar3 indicates random diffusion without bias and constraints, while n = 2 for the wild-type motor indicates directional, processive movement. (F) Quantitative comparison of microtubule interactions of wild-type vs Cik11\u2013360\u2013Kar3 motors in no nucleotide and AMPPNP states by mean squared displacement analysis. (G) MSD analysis of wild-type vs Cik11\u2013360\u2013Kar3 motors in the ADP state. (H) Summary of the diffusion coefficients obtained for wild-type vs Cik11\u2013360-Kar3 motors in three different nucleotide states. Note the logarithmic scale on the y-axis. (I) Typical kymographs of a monomeric Kar3 head construct (residues 353\u2013729 fused to an N-terminal Halo tag) in the presence of ATP.\n\nWhat is the contribution of the non-catalytic domain to the translocation mechanism? To gain insights into this question, we quantitatively compared the microtubule-binding properties of single wild-type Cik1\u2013Kar3 molecules with a mutant that lacks the globular Cik1 motor homology domain (Cik11\u2013360\u2013Kar3) (Figure 4D). In contrast to wild-type motors, the Cik11\u2013360\u2013Kar3 mutant displayed short-lived diffusive interactions with microtubules (Figure 4D). MSD data obtained in ATP for wild-type and mutant were fitted to the equation <x2> = a\u00b7tn. n = 1 suggests standard diffusion and in this case, a = 2D, where D is the one-dimensional diffusion coefficient. For the mutant, an optimal fit was obtained with n = 1.01 \u00b1 0.04, indicating unconstrained diffusion with no directional component. By contrast, n = 1.96 \u00b1 0.03 was obtained for the wild-type motor, consistent with directional processive movement (Figure 4E). Further MSD analysis indicated that the mutant is about 20-fold more diffusive than the wild-type motor in the no nucleotide state (D = 0.01 \u00b1 0.0006 \u03bcm2/s vs 0.00045 \u00b1 0.00011 \u03bcm2/s) and about 30-fold more diffusive in the AMPPNP state (D = 0.0036 \u00b1 0.00011 \u03bcm2/s vs 0.00011 \u00b1 0.00001 \u03bcm2/s) (Figure 4F). Further analysis indicated that the Cik11\u2013360 mutation also increased diffusion in the ADP state, but the difference was less pronounced in comparison to the other states (Figure 4G,H). We additionally constructed and purified a monomeric Kar3 head encompassing residues 353\u2013729 with an N-terminal Halo-Tag. Under standard imaging conditions in the presence of ATP only very short-lived microtubule interactions without directional movement could be observed (Figure 4I). Taken together, these results indicate only a heterodimer containing a non-catalytic Cik1 head is able to move processively and a key contribution of the non-catalytic domain is to promote tight, non-diffusive binding of the motor in no nucleotide and AMPPNP states.\n\n### The non-catalytic head determines the velocity of the Kar3 motor\n\nHaving established that the non-catalytic partner is critical for achieving mechanically processive Kar3, we sought to gain further insights into the underlying mechanism by studying the alternative Vik1\u2013Kar3 motor. The non-catalytic proteins Cik1 and Vik1 are paralogs that display about 45% sequence similarity between each other. We purified Vik1\u2013Kar3 complexes from yeast extracts and imaged their interaction with microtubules under the same conditions as previously employed for Cik1\u2013Kar3 (Figure 5A). Interestingly, Vik1\u2013Kar3 also displayed highly processive movement, but with faster velocity compared to Cik1\u2013Kar3. Under standard assay conditions, Vik1\u2013Kar3 complexes moved at 234 \u00b1 29 nm/s towards microtubule minus-ends where they strongly accumulated (Figure 5B, Video 6). To ask how these differences might be determined by the non-catalytic partner, we constructed a chimeric protein in which the globular motor homology domain and the neck of Vik1 (aa 351\u2013647) were fused to the tail domain of Cik1 (aa 1\u2013353) (Figure 5C). The Vik1\u2013Cik1 chimera formed a stable heterodimer with Kar3-HALO and supported movement with 188 nm/s to the minus-end, significantly faster than Cik1\u2013Kar3 and approaching the velocity of Vik1\u2013Kar3 (Figure 5D,E). Thus, the globular non-catalytic domain is a key determinant for setting the velocity of the motor. The engineered chimeric protein was able to functionally replace Cik1 in cells as demonstrated by its ability to rescue the phenotypes of a Cik1 deletion and to support growth at wild type level under all tested conditions (Figure 5F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic representation of the kinesin-14 Vik1\u2013Kar3 and purification of recombinant Vik1\u2013Kar3 from yeast extracts. Motors are covalently labeled with Tetramethylrhodamine (TMR) via a HaloTag on the amino-terminus of Kar3. Coomassie-stained SDS-PAGE shows homogeneity of the motor preparation and fluorescent labeling of the Kar3 subunit. (B) Kymographs of single color time lapse TIRF microscopy highlighting the velocity difference between Vik1\u2013Kar3 and Cik1\u2013Kar3 when moving along taxol-stabilized microtubules. (C) Construction and purification of a chimeric motor in which the non-catalytic heads were switched. An asterisk denotes a proteolytic degradation product. (D) Kymograph of typical single molecule runs by the chimeric Cik1Tail\u2013Vik1Head motor. (E) Comparison of velocities of the different Kar3 constructs. (F) Serial dilution growth assay of the indicated yeast strains at different temperatures and conditions. Note that the integration of the chimeric Cik1Tail\u2013Vik1Head fusion protein fully rescues the phenotypes of a Cik1 deletion.\n\n![Video 6.](https://cdn.elifesciences.org/articles/04489/elife-04489-media6.avi.jpg)\n\n### Differential binding partners determine the subcellular localization of Kar3 in vivo\n\nIn addition to directly controlling the motile characteristics of individual Kar3 motors, the non-catalytic partners may also provide functional diversification by allowing differential interactions with regulatory proteins or cargos. To identify such interactors, we performed affinity purifications of Cik1\u2013FLAG at different cell cycle stages and analyzed associated proteins by mass spectrometry. In addition to Kar3, we reproducibly mapped two plus-end tracking proteins Bim1 and Bik1, the EB1 and CLIP-170 homologues of budding yeast, as well as the microtubule-binding Ndc80 kinetochore complex (Figure 6A). By performing pull-down assays with recombinant proteins, we established that Cik1\u2013Kar3, but not Vik1\u2013Kar3, directly interacted with Bim1 (Figure 6B). The binding interface involved the C-terminal EB homology domain of Bim1 and the aminoterminal tail domain of Cik1 (Figure 6\u2014figure supplement 1A\u2013D). A physical interaction with Bim1 may account for the previously observed microtubule plus-end localization of Cik1\u2013Kar3 in vivo (Sproul et al., 2005; Gardner et al., 2008). Live cell imaging showed that the localization of Kar3 to distinct foci along the yeast spindle, as well as to the tips of shmoo-tip-directed microtubules in alpha-factor-arrested cells (Figure 6\u2014figure supplement 1E), was abolished in a bim1\u0394 strain, pheno-copying a cik1 deletion (Manning et al., 1999) (Figure 6C,D,E). Consistent with our biochemical experiments, spindle localization was maintained in the Cik11\u2013360 and Cik11\u2013521 mutants. Thus, the Cik1 tail domain specifies the differential localization of Kar3 in vivo by allowing a direct interaction with Bim1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig6-v2.jpg)\n\n**Figure 6.:** (A) Affinity purification of the Cik1\u2013Kar3 complex from different cell cycle states and identification of interaction partners by mass spectrometry. (B) Pull-down assay with GST-Bim1 and Cik1- or Vik1-Kar3. Only Cik1-Kar3 interacts with Bim1 in a dose-dependent manner. (C) Localization of Kar3 in different deletion mutants in yeast investigated by live cell microscopy. (D) Panel shows line scans of Kar3\u2013GFP intensity along the spindle axis. Arrowheads point to Kar3 foci along the spindle. Scale bar: 3 \u03bcm. Both Cik1 and Bim1 are required for the localization to the anaphase spindle. (E) Quantification of Kar3 foci on anaphase spindles in the indicated yeast strains. Kar3 spindle signals were never detected in a bim1\u0394 or cik1\u0394 strain. (F) The Cik11\u2013521 and Cik11\u2013360 mutants elicit a temperature-sensitive phenotype in vivo. Growth assay was performed with serial dilutions of the indicated yeast strains at different temperature on rich medium (YPD). (G) Quantification of chromosome segregation in the indicated yeast strains at 25\u00b0C, n = 100 for all strains analyzed. Right panel shows representative fluorescent micrographs with segregation of fluorescently labeled Chromosome V.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Analytical size exclusion chromatography of Cik1\u2013Kar3 and Bim1 individually or in combination. Shift to earlier elution position indicates complex formation. (B) Sequence alignment of the amino-termini of selected Cik1 and Vik1 proteins from diverse yeasts. Note the presence of an SxIP motif (EB1 interaction motif) in Cik1 proteins that is absent from Vik1. (C) Mutation of the SxIP motif in Cik1 does not impair binding of the Cik1\u2013Kar3 complex to Bim1 in GST-pull down assays. (D) The more extended amino-terminus of Cik1 is required for Bim1 binding. GST-Bim1 pull-down assays with indicated Cik1\u2013Kar3 truncation mutants. Elimination of the first 250 amino acids in Cik1 impairs binding of the motor complex to Bim1. (E) Localization of Kar3 to the tips of shmoo-directed microtubules in alpha-factor arrested cells depends on Bim1. Live cell microscopy of Kar3-3xGFP (green) in either wild-type (upper panel) or bim1-deletion mutant (lower panel). Note the lack of microtubule plus-end localization of Kar3 in the bim1 deletion mutant. (F) Mutation of the conserved SxIP motif in Cik1 does not cause a growth phenotype in vivo. Spot assays were carried out with the indicated strains either on YPD plates or on YPD plates supplemented with 100 mM Hydroxyurea. (G) Binding of Cik1\u2013Kar3 to Bim1 occurs via the cargo-binding domain. GST-pull down assays with full-length Bim1 or versions constituting the microtubule (Lampert et al., 2013) in the absence of the motor.\n\nThe insights into the localization determinants of the Kar3 motor allowed us to evaluate the key roles of Kar3 in the cell: yeast strains expressing Cik11\u2013360 or Cik11\u2013521 from the endogenous chromosomal locus displayed slow growth at 25\u00b0C and were inviable at 37\u00b0C, similar to a cik1 deletion (Figure 6F). By contrast neither a bim1 deletion, which eliminates spindle localization, nor a vik1 deletion, removing spindle pole localization, displayed a pronounced growth phenotype (data not shown). Together with our finding that the Vik1head\u2013Cik1tail chimera fully supports viability, this implies that the key function of Kar3 in vegetatively growing yeast cells requires motility\u2014supported by any of the two non-catalytic heads\u2014and the Cik1 tail domain, but does not involve spindle localization via Bim1. Based on previously characterized mutants and on our finding that the Ndc80 complex co-purifies with Cik1, this supports a key role for Kar3 at the kinetochore. Consistent with this notion, we found that 80% of Cik11\u2013521 cells arrested as large budded cells upon shift to the restrictive temperature, indicative of mitotic checkpoint activation. Analysis of chromosome segregation at the semi-permissive temperature of 25\u00b0C by fluorescent labeling of chromosome V showed that 50% of large budded Cik1 mutant cells attempted nuclear division without proper bi-orientation of sister chromatids (Figure 6G). We conclude that the key contribution of the non-conventional Cik1 motility mechanism for cell proliferation lies in the promotion of sister chromatid bi-orientation in mitosis.\n\n### Cik1\u2013Kar3 motors can promote transport of the Ndc80 kinetochore complex in vitro\n\nTo ask whether Cik\u2013Kar3 can act as a transport motor, we first performed bulk in vitro recruitment assays in the absence of nucleotide using purified motor proteins and recombinant, fluorescently labeled Ndc80 complex as the candidate kinetochore binding partner revealed in the mass spectrometry experiments. In the absence of motor, the Ndc80 complex only weakly associated with taxol-stabilized microtubules under standard conditions (Figure 7A,B). Vik1\u2013Kar3 motors strongly decorated microtubules in the absence of ATP, but had no effect on the Ndc80 complex. By contrast, combining Cik1\u2013Kar3 and the Ndc80 complex resulted in decoration of microtubules with both molecules. Upon lowering protein concentrations, Cik1\u2013Kar3 and the Ndc80 complex co-localized to distinct spots on the microtubule where their intensities were correlated (Figure 7C). Inclusion of ATP initiated co-transport of the Ndc80 complex and Cik1\u2013Kar3 towards the minus end (Figure 7D, Video 7). While transporting the Ndc80 complex, the average speed of the motor was 76 \u00b1 15 nm/s (mean \u00b1 SD), indicating that cargo binding did not significantly impede movement. The value is also in range with the reported velocity for kinetochore transport in vivo (Tanaka et al., 2005). Microtubule binding by the Ndc80 complex was not required for efficient transport, as shown by effective recruitment and translocation of the microtubule-binding defective calponin-homology domain mutant K122E K204E (Lampert et al., 2013) (Figure 7\u2014figure supplement 1). This result is in agreement with the observation that Kar3 localizes to unattached kinetochores prior to microtubule binding. We conclude that the Ndc80 complex can be transported by the Kar3 motor in vitro and that in addition to promoting processive motility a key function of Cik1 may lie in the differential binding of this complex.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig7-v2.jpg)\n\n**Figure 7.:** (A) Cik1\u2013Kar3, but not Vik1\u2013Kar3 recruits the Ndc80 kinetochore complex to taxol-stabilized microtubules in vitro. The experiment was performed with TMR-labeled Kar3 motors and fluorescently labeled recombinant Ndc80 complex in the absence of nucleotide. (B) Quantification of the recruitment experiment by analyzing fluorescence intensity of microtubule-bound Ndc80-eGFP complex in the presence of different motor constructs. Error bars denote standard error of the mean (s.e.m.) (C) Co-localization of the Ndc80 kinetochore complex and Cik1\u2013Kar3 motors to distinct signals on the microtubule lattice. Right panel shows line scans of fluorescent intensity of Kar3 motors and Ndc80 complex along the length of a microtubule. (D) Kymograph showing triple-color time-lapse TIRF microscopy demonstrating that in the presence of ATP, Ndc80 complexes are processively transported towards microtubule minus ends by Cik1\u2013Kar3 motors.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Schematic and kymographs of an effective recruitment and translocation of the microtubule-binding defective calponin-homology domain mutant K122E K204E Ndc80 complex by the motor Cik1\u2013Kar3. The experiment was performed with TMR-labeled Kar3 motors, Alexa647-taxol stabilized MTs, and fluorescently labeled recombinant Ndc80 complex in the presence of ATP.\n\n![Video 7.](https://cdn.elifesciences.org/articles/04489/elife-04489-media7.avi.jpg)\n\n## Discussion\n\n### Kar3 motors and non-conventional translocation along microtubules\n\nOur study provides direct evidence for the processivity of Kinesin-14 motors by analyzing full-length yeast Kar3 motors on the single-molecule level. Contrary to other kinesin-14s, we demonstrate that individual Cik1\u2013Kar3 motors can move processively towards the minus-end and show that the non-catalytic Cik1 head domain is functionally required for this activity. We further demonstrate that the combination of Kar3 with two different non-catalytic partners generates motors with different motile properties and also allows the differential binding of partner proteins such as Bim1 and the Ndc80 complex (Figure 8A).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04489/elife-04489-fig8-v2.jpg)\n\n**Figure 8.:** (A) Functional contributions of the different domains of heterodimeric Kar3 motors analyzed in this study. (B) Model for Cik1\u2013Kar3 motility depending on a non-catalytic head domain. Upon ATP uptake a conformational change occurs with the stalk rotating towards the minus end. A key role for the non-catalytic domain is to prevent diffusion in this state but allow one-dimensional diffusion in the subsequent ADP state with a bias towards the minus end.\n\nThe demonstration of Cik1\u2013Kar3 processivity presented here provides evidence that effective translocation along microtubules does not strictly require the conventional hand-over-hand walking mechanism that has been established for conventional Kinesin-1. So far this point has been most clearly demonstrated for the Dynein motor, as recent studies have shown that cytoplasmic dynein is capable of processive movement in vitro despite inactivating mutations in one of the two force-generating AAA ring domains (DeWitt et al., 2012; Qiu et al., 2012), or even as a combination of one active head with a second passive microtubule-binding domain (Cleary et al., 2014).\n\nAlso several kinesin motors have been reported to move in violation of the hand-over-hand model: monomeric constructs of the kinesin-3 KIF1A have been shown to move along microtubules in vitro using a biased diffusion mechanism (Okada and Hirokawa, 1999), but the in vivo function of these motors probably involves dimeric molecules for effective cargo transport (Tomishige et al., 2002; Endres et al., 2006). We could not detect evidence for processive movement of monomeric Kar3, making it unlikely that it works via a KIF1A-type mechanism. Among the kinesin-14 family, Ncd can exhibit processive motility but requires at least two homodimers coupled together (Furuta et al., 2013). A number of studies have shown that inactivating mutations in one of the two heads of conventional kinesin can still allow residual processivity (Subramanian and Gelles, 2007; Thoresen and Gelles, 2008; Kaseda et al., 2003). We note, however, that in these examples processive movement of the mutant heterodimeric kinesins was compromised compared to wild-type homodimers. By contrast, Kar3 does not simply tolerate the loss of a second active head but instead it has evolved a specific requirement for the non-catalytic domain in order to move processively. In other words, Kar3 can only walk with a combination of an active and an inactive \u2018leg\u2019.\n\n### A working model for the movement of Kar3 kinesins\n\nA precise elucidation of the stepping mechanism of Kar3 motors will require further biophysical experiments. Based on the results obtained in this and in previous studies, we propose a working model that describes the non-catalytic head as a \u2018foothold\u2019 for Kar3. Based on recent structural data Kar3 and its partner non-catalytic head may be located on adjacent protofilaments (Rank et al., 2012), where the non-catalytic domain could contribute to hold the motor complex in place and prevent diffusion. During its ATP cycle, the motor goes through rounds of tightly and weakly bound states. When ADP is bound, the motor is in its weakly bound state which allows for one-dimensional diffusion along the microtubule lattice. On its own, movement in this state would lack directionality and an additional mechanism providing minus-end directed bias is required. We speculate that the presence of Cik1 in combination with the kinesin-14 typical stalk rotation upon ATP binding by Kar3 (Endres et al., 2006; Gonzalez et al., 2013) might provide such a mechanism either by shifting the overall position of the molecule or by allowing subsequent directed binding/unbinding (Figure 7C). Because of the combination of one foot on the track and a diffusive movement to the next binding site, we refer to this possible mechanism as the \u2018skateboard\u2019 model. This model can explain a number of our experimental observations: the effect of raising the ionic strength is that initially motor movement occurs with faster velocity, probably by increasing the diffusion term. At some point however, stable binding of the non-catalytic domain is prevented and directional displacement is disrupted, similar to the situation in which the motor lacks the motor homology domain. In addition, diffusive movement in the ADP state and the observed large variation in movement rates are compatible with the model. The biochemical properties of the non-catalytic head binding to the microtubule will have profound effects on the motile characteristics as evidenced by the different properties of Cik1\u2013Kar3 and Vik1\u2013Kar3 motors.\n\nOne of the open questions regarding the mechanism of processivity is how the motor homology domain can provide \u2018footing\u2019 in no nucleotide and AMPPNP states yet allow effective diffusion in the ADP state. In agreement with previous work, this suggests that similar to conventional kinesins, a form of head-to-head communication must occur in Kar3 motors such that the catalytic head influences the microtubule affinity of the motor homology domain (Allingham et al., 2007; Chen et al., 2011; Duan et al., 2012; Rank et al., 2012). Such coordination may involve intramolecular strain communicated by mechanical elements between the heads as has been reported for conventional kinesin (Yildiz et al., 2008).\n\n### Implications for Kar3 function in vivo\n\nBased on our experiments and the previously reported rates of microtubule shortening in the presence of Cik1\u2013Kar3, we consider it unlikely that Kar3 functions as a microtubule depolymerase in vivo. We note that none of the Kar3 functions poses a strict requirement for such an activity and indeed recent experiments analyzing Kar3 function during karyogamy support the view that its primary function is transport, not shortening (Gibeaux et al., 2013).\n\nWhat are the implications of Kar3's processivity? The ability to move processively may be used in the cell to enrich Kar3 motors at minus-ends. In addition, Kar3 could work more effectively in small teams if it can undergo multiple catalytic cycles before releasing from the microtubule. This may be especially important during kinetochore transport, where Ndc80 complexes can provide only a limited number of binding sites for the motor. Kar3 heterodimers have probably evolved from conventional Kinesin14-homodimers that performed Ncd-like roles in spindle organization. We speculate that with the exclusion of dynein from the budding yeast nucleus additional functional requirements for minus-end directed motility in spindle assembly and kinetochore function arose that could be fulfilled with the \u2018invention\u2019 of the Cik1 and Vik1 non-catalytic domains. While commonly perceived as conferring a loss of functionality, the pseudo-motor domains have the ability to convert a kinesin-14 into a processive motor and additionally create functional diversity through allowing differential interactions with partners. Together this allows Kar3 to function as a processsive sliding and transport motor that substitutes for key roles of dynein in the yeast nucleus. Other examples for heterodimeric motors exist in the Kinesin-2 family with different subunits conferring distinct activities (Brunnbauer et al., 2010). Kar3 motors may therefore constitute an extreme example for such diversification strategies that could be more widely used in other motor families. More generally, we note that pseudoenzymes have emerging roles in other cellular contexts, for example in the form pseudo-GTPases during human kinetochore assembly (Basilico et al., 2014), or as pseudo-kinases and pseudo-phosphatases in cell signaling (Boudeau et al., 2006; Tonks, 2009). This may suggest that the use of catalytically inactive enzyme derivatives could be a more widespread strategy employed by the cell. The establishment of an in vitro assay for Ndc80 transport serves as a starting point for a detailed analysis of the function and regulation of kinetochore motility. Furthermore, the unique design principle of the Kar3 motor, which allows the same catalytic domain to be paired with different non-catalytic heads, generates functional diversity that may also be exploited in nanotechnological applications.\n\n## Materials and methods\n\n### Protein Biochemistry\n\nThe protein coding sequences of S. cerevisae (S288c) full-length Kar3, Cik1, and Vik1 were amplified by PCR and cloned into the overexpression pESC-TRP (Agilent Technologies, Santa Clara, CA) vector. The non-catalytic motor subunit was tagged C-terminally with 1xFLAG and the motor itself was fused to a HaloTag (DHA, Promega) at the 5\u2032 end of the coding sequence, separated by a 13 amino acid linker. Mutated and truncated versions of Cik1 and Kar3 were generated by site-directed mutagenesis PCR (Phusion, Thermo Scientific). To determine the TMR-labeling efficiency, Halo-Kar3 was fused with enhanced green fluorescent protein (eGFP), creating Halo-eGFP-Kar3. All motor proteins were overexpressed in budding yeast using the pESC vectors (Agilent Technologies) following the manufacturer's instructions. In brief, yeast cells harboring the respective pESC plasmid were induced with 2% Galactose at OD600 = 1.0 for 7\u20139 hr, harvested by centrifugation, washed, and frozen as droplets in liquid nitrogen. Lysis was conducted in liquid nitrogen using a freezer mill (Biospec Inc.). The cell powder was resuspended in lysis buffer (25 mM Hepes [7.4], 300 mM NaCl, 1 mM MgCl2, 5% glycerole, 0.1 mM EDTA, 0.5 mM EGTA, 0.1% Tween-20, 0.01 mM ATP, 0.1 mM PMSF supplemented with PhosSTOP Phosphatase Inhibitor Cocktail [Roche]). The lysed cells were centrifuged twice, first at 43.146\u00d7g for 20 min and afterwards at 125.749\u00d7g for 1 hr. The resulting supernatant was incubated with M2 affinity agarose (Sigma\u2013Aldrich) for 1 hr, gently rotating at 4\u00b0C. The agarose resin was washed five times with lysis buffer (adjusted to 150 mM NaCl, 0.09% Tween-20, omitting the PhosSTOP reagent). Elution of the kinesin heterodimeric constructs from M2 agarose was achieved by applying one resin volume of 3xFLAG peptide at final 2 mg/ml in lysis buffer (adjusted to 250 mM NaCl, 1 mM DTT, 0.09% Tween-20, omitting ATP and PhosSTOP). If needed, the elution was loaded onto a cation exchange chromatography (MonoS 5/50 GL, GE Healthcare) in running buffer (10 mM Hepes [pH 7.2], 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 1 mM EGTA) to remove the FLAG peptide. Afterwards a linear salt gradient eluted a single peak, pure motor fraction at 250 mM salt. Elution fractions were supplemented with glycerol (final concentration: 5%), snap-frozen in liquid nitrogen and stored at \u221280\u00b0C. The protein concentration was measured using the DC Assay kit (Bio-Rad). All proteins were pre-cleared by centrifugation using a 0.1-\u03bcm spin filter (Millipore) to remove aggregates before each experiment.\n\nLabeling of the NH2-terminus of Kar3 with the HaloTag TMR ligand or HaloTag Alexa488 ligand (Promega, Madison, WI) was performed during the above-described purification before eluting the kinesin heterodimer from the M2 affinity agarose: the proteins were incubated with 10 \u03bcM HaloTag ligand for 3 hr. Extensive washing removed unbound TMR ligand and the kinesin was eluted as described before. In order to assess the labeling efficiency the Halo-eGFP-Kar3 construct was expressed, purified, and TMR-labeled. Observing the motor in our multi-color single-molecule imaging setup in the absence or presence of ATP revealed that >90% of eGFP-labeled kinesins also had a TMR-ligand covalently bound to the HaloTag.\n\nTo obtain a stoichiometric heterodimer of Cik1 and Kar3, the motor was subjected to analytical SEC. The purified motor was loaded onto a Superose 6 PC 3.2/30 column (GE Healthcare), and 100 \u03bcl fractions were collected and separated by SDS-PAGE. Proteins were stained with Coomassie Brilliant blue R250.\n\nExpression and purification of the full-length and mutant Ndc80 complex (Ndc80p-6xHis/Nuf2p-EGFP and Spc24p/6xHis/Spc25p) was performed as described previously (Lampert et al., 2013; Lampert et al., 2010). Bim1 was expressed and purified as described previously (Zimniak et al., 2009).\n\n### Rotary shadowing electron microscopy of full-length Cik1\u2013Kar3\n\nPeak fractions of motor from the gel filtration experiments were diluted to a final concentration of 60 \u03bcg/ml in spraying buffer, containing 100 mM ammonium acatate and 30% (vol/vol) glycerol, pH adjusted to 7.4. After dilution, the samples were sprayed onto freshly cleaved mica chips and immediately transferred into a Bal-Tec MED020 high vacuum evaporator equipped with electron guns. After drying in the vacuum, the rotating samples were coated with 0.6 nm Platinum at an elevation angle between 5\u00b0 and 6\u00b0, followed by 9.5 nm Carbon at 90\u00b0. The produced replicas were floated off from the mica chips and picked up on 400 mesh Cu/Pd grids. The grids were inspected in an FEI Morgagni 268D TEM operated at 80 kV. Electron micrographs were acquired using an 11 megapixel Morada CCD camera from Olympus-SIS. Images were examined and analyzed using ImageJ.\n\n### Sucrose gradient centrifugation\n\nSingle-step purified Cik1\u2013Halo\u2013Kar3 was loaded on top of a 4.4 ml 5\u201325% linear sucrose gradient and spun at 50,000 rpm for 16 hr using an Sorvall TH-660 rotor and a Sorvall Discovery 90SE centrifuge. Fractions (270 \u03bcl) were collected and analyzed by SDS-PAGE and Coomassie Brilliant Blue R250 staining. The sedimentation value for Cik1-Halo-Kar3 was defined by comaring the mobilities of the motor with linear plots of mobility standards.\n\n### Single molecule imaging assay\n\nThe single molecule motor assays were conceptually designed as described previously (Korten et al., 2011; Lampert et al., 2010; Bieling et al., 2010). Biotin-PEG-SVA- and mPEG-SVA-functionalized coverslips (Laysan Bio) were prepared as described (Lampert et al., 2010; Jain et al., 2012). Coverslips were assembled onto passivated glass slides using double-sided tape creating a flow chamber. First, a solution of 1 mg/ml avidin DN (Vector Laboratories) was applied to the chamber for 30 min and exchanged for 1% pluronic F-127 (Sigma\u2013Aldrich) in BRB80 (Zimniak et al., 2009; Nitzsche et al., 2010). Porcine-derived HiLyte-647-labeled, biotinylated and taxol-stabilized microtubules (MTs) were immobilized (labeled and biotinylated tubulin source: Cytoskeleton Inc., unlabeled tubulin was purified from pig brains as described previously [Ashford and Hyman, 2006]) and excess of MTs was washed out with BRB80 buffer supplemented with 5 \u03bcM taxol, 0.5% (vol/vol) \u03b2-mercaptoethanol, 4.5 \u03bcg/ml glucose, 200 \u03bcg/ml glucose-oxidase, and 35 \u03bcg/ml catalase. Single molecule imaging was performed by introducing the TMR- or Alexa488-labeled kinesins at low nanomolar range in assay buffer (BRB80, 0.33 mg/ml casein, 16.6 \u03bcM taxol, 0.13% [vol/vol] methylcellulose, 0.5% [vol/vol] \u03b2-mercaptoethanol, 4.5 \u03bcg/ml glucose, 200 \u03bcg/ml glucose-oxidase and 35 \u03bcg/ml catalase, 0.06% [vol/vol] Tween-20, the indicated amount of KCl and the respective amount of nucleotide) into the flow cell. Time-lapse videos were recorded at 28\u00b0C in 3 s intervals between frames (if not annotated differently) using a TIRF microscopy setup described previously (Lampert et al., 2010). Multi-color imaging was achieved by the use of an external filterwheel (Ludl Electronic Products Ltd.). Each channel (excitation: 488 nm, 561 nm, 639 nm) was exposed for 100 ms at every time-interval, recorded by a Cascade II EMCCD camera and projected to two-dimensional images (software: Metamorph [Molecular Devices], ImageJ). For photobleaching analysis, the oxygen-scavenger mix was omitted (\u03b2-mercaptoethanol, glucose, glucose-oxidase, catalase), and images were recorded at maximum laser power. Videos are represented as kymographs (time-space plot) or as example single frame (software: MetaMorph [Molecular Devices]).\n\nHigh temporal resolution recordings (as presented in Figure 2) have been obtained using custom-made TIRF microscope based on Olympus IX-71 body and Coherent CUBE lasers in a temperature stabilized room (21 \u00b1 0.1\u00b0C). Images were acquired using a Andor iXon3 897 EMCCD camera and subsequently analyzed using custom-made software written in MATLAB (MathWorks, Inc).\n\n### Microtubule gliding assay\n\nThe microtubule gliding assay was designed as described before (Nitzsche et al., 2010). For this assay, hydrophobic coverslips were prepared according to the following scheme: sonication in acetone for 15 min was followed by sonication for 15 min in ethanol. Coverslips were incubated 1 hr in boiling Piranha solution and rinsed with a lot of water afterwards. Then rinsed with 0.1 M KOH, MilliQ and dried with nitrogen and immersed in 5% dichlorodimethylsilane in heptane for 1 hr at room temperature. Coverslips were rinsed again with MilliQ and sonicated for 5 min, sonicated in chloroform for 5 min and air-dried.\n\nMotor proteins were attached to the hydrophobic coverslips via application of 0.2\u201320 \u03bcg/ml anti-Halo antibody (Promega) to the flow chamber. After the excess of antibody was washed out with BRB80 supplemented with 0.5 mg/ml casein, motors were introduced to the chamber and incubated for 5 min. Finally a microtubule-containing solution supplemented with 5 mM ATP and oxygen scavenger mix was perfused into the chamber. Microtubules used for this experiment were assembled from porcine tubulin mixed together with HiLyte-647-labeled tubulin (Cytoskeleton Inc.) in the presence of 10 \u03bcM taxol. Time-lapse videos were recorded at 28\u00b0C in 3-s intervals between frames using a TIRF microsopy setup described previously (Lampert et al., 2010). MetaMorph (Molecular Devices) software was used to compile images into videos and create kymographs out of individual moving microtubules. Velocity of gliding microtubules was calculated based upon the slope of the kymographs.\n\n### Data analysis\n\nThe tracking of the proteins was performed automatically using the Definiens Software Suite. Prior to the analysis, the image data were processed performing a shading correction and smoothing. This was done by applying an 11 \u00d7 11 pixel (1463 \u00d7 1463 nm) kernel median filter and dividing the original raw image by the filtered image data. The resulting image was smoothed, using a 3 \u00d7 3 (399 \u00d7 399 nm) kernel Gaussian filter. The processed image data were searched and segmented for fluorescent signal. The signal area was searched for local intensity maxima within a search range of 532 nm. Circular objects with a radius of 332 nm were created on the found maxima and used for tracking the identified proteins.\n\nThe tracking of the movement of the TMR-, Alexa-488-, or GFP-labeled proteins was done through linking the proteins frame by frame by direct overlap, using the best fitting overlap.\n\n### Bioinformatic methods\n\nCik1 protein sequences of Saccharomyces cerevisiae (accession number NP_013925.1), Saccharomyces kudriavzevii (EJT42048.1), Saccharomyces arboricola (EJS44163.1) and Vik1 sequences from S. cerevisiae (NP_015070.1), S. kudriavzevii (EJT43871.1), S. arboricola (EJS41496.1) were retrieved from the National Center for Biotechnology Information (NCBI). The Saccharomyces bayanus protein sequences of Cik1 (WashU_Sbay_Contig651.30) and Vik1 (WashU_Sbay_Contig637.18) were retrieved from the Saccharomyces Genome Database (SGD). The sequences were aligned with MAFFT (version 6, L-INS-I method) and further processed with Jalview and colored according to ClustalW.\n\n### In vitro binding assay\n\nVarying amounts (0.1\u20131 \u03bcM) of recombinant bait protein (GST, GST-Bim1FL, GST-Bim10\u2013185, GST-Bim1185\u2013344) were immobilized on 30 \u03bcl glutathione sepharose (GE Healthcare) in 0.5 ml binding buffer (25 mM Hepes pH 7.2, 250 mM NaCl, 1 mM MgCl2, 1 mM EGTA, 0.5 mM DTT, 0.05% NP-40). The binding partner was added at a constant concentration between 0.5 and 1 \u03bcM and incubation lasted for 1 hr at 4\u00b0C. Afterwards beads were washed three times with 0.5 ml binding buffer and analyzed by SDS-PAGE and Coomassie Brilliant blue R250 staining.\n\n### Yeast strains and spot assay\n\nAll modifications were performed in the S288C background (Supplementary file 2). Genetic modifications were introduced by using standard procedures.\n\nFor the spot assay, the desired strains were grown overnight in YPD medium. The following day cells were diluted to OD600 = 0.6 which was the starting point of a 1:4 dilution series and spotted on YPD or 100 mM hydroxyurea (HU) plates. Plates were incubated at the indicated temperatures to 2\u20133 days.\n\n### Live cell imaging\n\nImaging strains were grown in synthetic medium containing 2% glucose and imaged on concanavalin A-coated culture dishes (Matek) at ambient temperature. Eight z stacks with planes 0.3 \u03bcm apart were acquired at 30 s intervals on an Axiovert 200M microscope (Carl Zeiss) using an UPlanSApo 100\u00d7 NA 1.40 oil immersion objective lens (Olympus) and a Coolsnap HQ CCD camera (Photometrics). Images were projected to two-dimensional images (SoftWoRx software) and further analyzed by MetaMorph (Molecular Devices). The linescans showing the fluorescence intensity for Kar3-3xGFP on spindles were plotted using ImageJ.\n\n### Single-step affinity purification of native motors and mass spectrometry analysis\n\nDesired strains were grown to OD600 = 1.2 in YPD, centrifuged, drop frozen in liquid nitrogen, and lysed by freezer mill treatment. 5 g of yeast powder was dissolved in 10 ml buffer A (25 mM Hepes pH 8.0, 2 mM MgCl2, 0.5 mM EGTA pH 8.0, 0.1 mM EDTA, 0.1% NP-40, 15% glycerole, 150 mM KCl, 0.01 mM ATP, 0.1 mM PMSF, 1\u00d7 protease inhibitor cocktail set IV [Calbiochem]). The lysed cells were centrifuged twice, first at 43.146\u00d7g for 20 min and afterwards at 125.749\u00d7g for 1 hr. The resulting supernatant was incubated for 2\u20133 hr with 100 \u03bcl Dynabeads (Life Technologies) that were coupled to 50 \u03bcl anti-FLAG M2 antibody (Sigma Aldrich). Beads were washed three times with buffer A and four times with buffer B (25 mM Hepes pH 8.0, 150 mM KCl). Elution was achieved by using 1 beads volume 2 mg/ml 3xFLAG peptide in buffer B. The elution fractions were analyzed by SDS-PAGE and silver stain. For mass spectrometry analysis, an on-bead digest replaced the elution procedure: 500 ng LysC protease was added per 50 \u03bcl dynabeads in ammonium bicarbonate buffer and incubated at 37\u00b0C overnight. The supernatant was filtered and applied to mass spectrometry analysis, which was performed on three independent preparations.\n",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "c72a396a-0bf9-4aea-9992-a42170f92db8",
+      "submission_id": "f294e7f4-ffe0-41f4-bbcf-e0f01383648f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Harrison, Howard Hughes Medical Institute, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04489.025](https://doi.org/10.7554/eLife.04489.025)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cNon-catalytic motor domains enable processive movement and functional diversification of the kinesin Kar3\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor), a Reviewing editor, and two reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers agreed that in principle this paper would be suitable for publication in eLife, but to make it so, the authors will need to carry out additional experiments and to reduce the strength of their claims, which both reviewers agreed were exaggerated (one reviewer even used the word \u201creckless\u201d). The key result that the reviewers agreed makes the paper suitable for eLife is that the heterodimer walks processively toward the minus end of a MT.\n\n1) The main conclusion of this manuscript is that Kar3 needs a second non-catalytic microtubule binding domain for processive translocation. If monomeric kinesin Kif1A can move along microtubules in vitro using a biased diffusion mechanism (Okada and Hirokawa, 1999, but see reservations below), Kar3 might do the same, obviating (or at least reducing) the requirement for a second motor head. A key question is whether the Cik1(1-360)-Kar3 mutant (or the Cik1(1-521)-Kar3 mutant) moves directionally in the presence of ATP. Now it is clear from Figures 2B and 2C that the velocity is substantially lower, but the authors need to analyze these data in more detail. If Cik1(1-360)-Kar3 and Cik1(1-521)-Kar3 do have significant directionality, then the authors might need to modify their description of the \u201cfoot-hold\u201d mechanism.\n\n2) Examples of exaggerated claims or incorrect information, all of which need to be fixed in a revision:\n\nAbstract:\n\n(i) \u201cWhether this (hand-over-hand) model is universal, or if alternative mechanisms can support highly processive motion along microtubules, is an open question.\u201d This statement is wrong. It is no longer an open question. Dewitt et al., Science, 2012 and Qiu et al., NSMB, 2012 showed that dynein walks in an uncoordinated manner.\n\n(ii) \u201cThe noncatalytic domain acts as a foothold that allows Kar3 to bias translocation towards the minus end via a diffusive ADP state.\u201d The reported experiments do not prove this statement. That kinesins have lower MT affinity in the ADP state was already known. The authors did not demonstrate how this motor steps along MT. In order to make these claims, they must demonstrate that: a) Cik1/Vik1 biases translocation of Kar3 to the minus end, b) translocation of Kar3 occurs in the ADP bound state and c) diffusion of the Kar3 head to the next tubulin binding site is a critical step. The authors need to delete this statement and replace it with one that sticks to the facts.\n\n(iii) \u201cThis mechanism\u2026 allows transport of the Ndc80 kinetochore complex in vitro and is critical for Kar 3 function in vivo.\u201d The authors show that Kar3 can bind and transport the isolated Ndc80 complex, not the Ndc80 complex as part of an assembled kinetochore. It has yet to be shown whether this in vitro transport reflects a property critical for in vivo function of Kar3. This latter statement is what they propose, but do not show, in this manuscript. The authors need to delete this statement and replace it with one that sticks to the facts.\n\nIntroduction section:\n\n\u201cIn general motors equipped with only one catalytically active head fail to achieve long-range processive motility\u201d. This is not true. The authors need to rewrite this paragraph citing: (i) the Okada et al. 2003 Kif1A paper showing processive single-headed motility; (ii) the Kaseda, Higuchi and Hirose (NSMB, 2003) and Thoresen et al. (Biochemistry, 2008) papers showed that processive motility of kinesin heterodimers with mutant motor domains that have lower catalytic activity; (iii) the Clearly et al. 2014 paper on cytoplasmic dynein showing that processive motility can occur when one of the heads in the dimer is replaced by a non-motor domain; and (iv) reports of processive motility with axonemal dynein. In other words, the authors need to remove overblown claims, discuss earlier results in a balanced way, and clearly and accurately indicate how their results advance the field.\n\nThe manuscript lacks evidence that their preps do not include aggregates. The authors could rule out aggregation by running gel filtration experiments, which are standard in the field.\n\nThe authors do cite evidence in Figure 1\u2013figure supplement 1, for mostly single step photobleaching of labeled motors, arguing that processive motility is a property of individual motors. While this may be true, the single step photobleaching is not definitive. First, the data clearly show that some motors show 2 or >2 steps of photobleaching, suggesting protein aggregation or transient interactions. Second, the labeling efficiency is not calculated. If it is low (e.g. 40%), the fact that 10-20% of motors have 2 or more steps of photobleaching would suggest most proteins are aggregates. Third, if the motors are aggregated (e.g. 10 motors in an aggregate) then almost all the aggregates will have TMR even if the coupling efficiency is low. Aggregation may be an even bigger problem with the delta K-loop construct, which is expected to be less soluble. So gel filtration on this construct is also necessary.\n\nIn Figure 1G, how do the authors know that the MTs are antiparallel and overlap? Was the polarity marked?\n\nThird paragraph of the Results section:\n\n\u201cWe noticed that due to their relatively large velocity distribution\u2026\u201d This whole paragraph does not make sense. How do they know that the motors run into each other (e.g. literally colliding with each other)? What is the evidence that motors travel together in teams? Are the proteins in contacts with each other (which cannot be seen by a fluorescence microscope due to diffraction limited resolution of the assay). In this section, they can also cite the Cin8 study by the Surrey lab (Roostalu et al., Science, 2011).\n\nEighth paragraph of the Results section:\n\nThe interpretation of the K-tail mutant experiments is counterintuitive. One would expect that removing positively charged residues from the noncatalytic head would reduce its affinity for MTs (which is not shown biochemically in this manuscript and needs to be shown in a revised version). Since the authors wish to refer to the function of this head as \u201ca foothold\u201d, these mutations would be expected to alter motility by reducing processivity (because it is no longer a very strong MT tether), with increased or unchanged velocity (because it might be easier for Kar3 to pull off the noncatalytic head from MT by force). The description of these results and their interpretation need reconsideration and revision.\n\nThe authors do not present direct evidence that Kar3 transports Ndc80 in vivo. Therefore, they need to change \u201cWe conclude that the Ndc80 complex is a direct cargo for Kar3 transport\u201d to \u201cWe conclude that the Ndc80 complex can be transported by the Kar3/Cik1 motor.\u201d\n\nDiscussion:\n\n(i) In the first paragraph, the authors claim to have discovered that Kar3/Cik or Kar3/Vik1 heterodimers have a new mode of processive motility, and they assert that this is the first example of a motor that violates hand over hand motility. These statements are wrong (see comments above). Also note that without high resolution stepping studies their conclusions are too speculative.\n\n(ii) The authors claim that \u201cKar3's motile characteristics share similarities to Kif1A\u201d. How so? Kif1A was claimed to be processive on its own and not to require a foothold. The effect of the positive charges is different. Note that processive motility of single-headed Kif1 has not been replicated in another laboratory. The authors should analyze the motility of a Kar3 monomer and compare their results with those published by Hirokawa on Kif1A.\n\nFigure 7:\n\nThe model shown does not relate to the main story, and there is no evidence provided for it. It should be removed from the manuscript. The entire discussion of diffusive states, anisotropy and powerstroke are far too speculative. It would be more appropriate for some future review. The problem is that without high-resolution stepping data many of the conclusions are in fact speculations. The authors have to be very careful to distinguish fact from fiction.\n\nIn summary, to be suitable for eLife, a revised manuscript will need to include at least the following:\n\n1) More convincing and complete demonstration, by careful gel filtration experiments, that the motor proteins are not aggregated.\n\n2) More thorough analysis of the data in Figure 2B, C: is there directionality in the motion detected for the mutants?\n\n3) Comparison of the behavior of a Kar3 monomer with the reported behavior of Kif1A.\n\nThe revised manuscript must also avoid the exaggerated and overstated claims that mar the current version.\n",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "197df208-c8bd-428a-b004-47b2b11a9041",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C1",
+      "claim": "Kinesin-14 motors have important roles in mitotic spindle organization and chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor proteins of the conserved kinesin-14 family have important roles in mitotic spindle organization and chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about kinesin-14 family function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "6f86af32-e1cf-4eb6-a622-03b40658c08c",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C2",
+      "claim": "Previous studies have indicated that kinesin-14 motors are non-processive enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indicated that kinesin-14 motors are non-processive enzymes, working in the context of multi-motor ensembles that collectively organize microtubule networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature as indicated by the phrase 'Previous studies have indicated'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "b92388da-b957-43ef-8797-00b2a7557459",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C3",
+      "claim": "The yeast kinesin-14 Kar3 generates processive movement as a heterodimer with the non-motor proteins Cik1 or Vik1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that the yeast kinesin-14 Kar3 generates processive movement as a heterodimer with the non-motor proteins Cik1 or Vik1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study demonstrated through single-molecule imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "52c53895-b7e4-4528-8e1c-0abb39c1f3f3",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C4",
+      "claim": "The non-catalytic domain acts as a 'foothold' that allows Kar3 to bias translocation towards the minus end.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing the single-molecule properties of engineered motors, we demonstrate that the non-catalytic domain has a key role in the motility mechanism by acting as a 'foothold' that allows Kar3 to bias translocation towards the minus end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analysis of engineered motor constructs with truncations and mutations in the non-catalytic domain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "a4bcf94c-2e61-40e8-86d6-ab0d27b886fd",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C5",
+      "claim": "The Kar3 motility mechanism rivals the speed and run length of conventional motors.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism rivals the speed and run length of conventional motors, can support transport of the Ndc80 complex in vitro and is critical for Kar3 function in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative measurements of velocity and run length presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "49de5896-6800-445a-9d27-fe8ae261b7b6",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C6",
+      "claim": "The Kar3 mechanism can support transport of the Ndc80 complex in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism rivals the speed and run length of conventional motors, can support transport of the Ndc80 complex in vitro and is critical for Kar3 function in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through in vitro transport assays showing co-movement of Ndc80 complex with Kar3 motors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "b11b6111-a938-4e8d-a740-e7b74aebc1b0",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C7",
+      "claim": "The Kar3 motility mechanism is critical for Kar3 function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism rivals the speed and run length of conventional motors, can support transport of the Ndc80 complex in vitro and is critical for Kar3 function in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo experiments showing that mutations disrupting the motility mechanism cause temperature-sensitive growth defects and chromosome segregation defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "69330032-a793-4136-8f81-f687b8f9ac89",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C8",
+      "claim": "Kar3 can substitute for key functions of Dynein in the yeast nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide an example for a non-conventional translocation mechanism and can explain how Kar3 substitutes for key functions of Dynein in the yeast nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the processive minus-end directed motility of Kar3 and its role in kinetochore function, combined with knowledge that dynein is excluded from the yeast nucleus.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "3a666101-20b3-4568-abe0-b5a2e29f5868",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C9",
+      "claim": "The 'hand-over-hand' model describes the processive walking behavior of Kinesin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysical studies of kinesins have focused on conventional Kinesin-1 and established the 'hand-over-hand' model for the processive walking behavior of this type of motor (Asbury et al., 2003; Yildiz et al., 2004; Kaseda et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous biophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "b8e79b00-9a17-4b1a-ae7d-672d926a11a8",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C10",
+      "claim": "Processivity describes the ability of individual motor molecules to undergo multiple catalytic cycles before releasing from the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "In analogy to other enzymes, the term 'processivity' describes the ability of individual motor molecules to undergo multiple catalytic cycles\u2014and therefore translocate\u2014before releasing from the microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "15ce5609-0988-417a-8768-9db5e5b22515",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C11",
+      "claim": "Kinesin-14 family members, exemplified by Drosophila Ncd motor, are common examples for nonprocessive kinesins.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-14 family members, exemplified by the Drosophila Ncd motor, are common examples for nonprocessive kinesins (Case et al., 1997; Foster and Gilbert, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on Ncd.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "346f9a62-9a89-4994-9532-09002037bc4f",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C12",
+      "claim": "Ncd motors generate motility through the minus-end-directed rotational movement of a coiled-coil mechanical element that occurs upon ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "They generate motility through the minus-end-directed rotational movement of a coiled-coil mechanical element that occurs upon ATP binding (Endres et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "9e63a8cf-49a4-46fa-87da-b4f995af53f6",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C13",
+      "claim": "Ncd motors release from the microtubule lattice after each catalytic cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "After each catalytic cycle, Ncd motors release from the microtubule lattice, meaning that to support microtubule sliding and crosslinking in the spindle, many Ncd motors must work together cooperatively in an ensemble (Braun et al., 2009; Fink et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "9cf6638b-1392-442a-a4f4-c9c1e88be2bd",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C14",
+      "claim": "Budding yeast kinesin-14 Kar3 is distinct from other family members in its heterodimeric composition with either Cik1 or Vik1.",
+      "claim_type": "EXPLICIT",
+      "source": "Budding yeast kinesin-14 Kar3 is distinct from other family members in its heterodimeric composition with either Cik1 or Vik1 (Manning et al., 1999) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "b10dcde7-432c-4958-bde7-e704edbc9275",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C15",
+      "claim": "Cik1 and Vik1 contain a motor homology domain that harbors a microtubule binding site but lacks the structural elements required to bind and hydrolyze ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution structural analysis has shown that these accessory proteins contain a motor homology domain that harbors a microtubule binding site but lacks the structural elements required to bind and hydrolyze ATP (Allingham et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "69f7450e-f9a6-4b23-a390-2c69a5cb90ca",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C16",
+      "claim": "Cik1 and Vik1 modulate the interaction of Kar3 with microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical experiments have indicated that Cik1 and Vik1 modulate the interaction of Kar3 with microtubules (Allingham et al., 2007; Chen et al., 2011; Rank et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "cb1cca5d-e55f-4df2-917c-ef744feea4eb",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C17",
+      "claim": "Kar3 in complex with Vik1 crosslinks parallel microtubules in proximity to spindle pole bodies during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo Kar3's heterodimeric composition governs its subcellular localization and function: Kar3 in complex with Vik1 crosslinks parallel microtubules in proximity to spindle pole bodies during mitosis (Manning et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "2cd15149-be29-445d-a5db-496d05c2c3ab",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C18",
+      "claim": "Antiparallel microtubule sliding is powered by Cik1\u2013Kar3 complexes that associate with the microtubule lattice and plus-ends during mitotic and meiotic events.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas antiparallel microtubule sliding is powered by Cik1\u2013Kar3 complexes that associate with the microtubule lattice and plus-ends during mitotic and meiotic events (Maddox et al., 2003; Gardner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "3dd28621-1194-4314-970a-f089f309dc81",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C19",
+      "claim": "Kar3 has been implicated in kinetochore capture and transport.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Kar3 has been implicated in kinetochore capture and transport (Middleton and Carbon, 1994; Tanaka et al., 2005, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "d73d4197-9015-49d1-b0f3-11869d3409c5",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C20",
+      "claim": "It has been proposed that Cik1\u2013Kar3 acts as a microtubule depolymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of such experiments and the interpretation of in vivo phenotypes, it has been proposed that Cik1\u2013Kar3 acts as a microtubule depolymerase (Chu et al., 2005; Sproul et al., 2005; Allingham et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies that proposed this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "4a407a64-bfd8-4a14-a6b2-1b9aa2c2fc84",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C21",
+      "claim": "Purified Cik1\u2013Kar3 motors elute as a single major peak with a Stokes radius of \u223c9.1 nm during size exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "During size exclusion chromatography, Cik1\u2013Kar3 motors eluted as a single major peak with a Stokes radius of \u223c9.1 nm, well separated from the void volume of the column (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "f99346ba-e8bf-4221-8476-1e3e08bad6e0",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C22",
+      "claim": "Cik1\u2013Kar3 has an apparent sedimentation coefficient of \u223c5.6S.",
+      "claim_type": "EXPLICIT",
+      "source": "Sucrose-gradient centrifugation revealed the presence of a single major species with an apparent sedimentation coefficient of \u223c5.6S (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "da3f91a0-5f2b-4c74-9acd-0db45db9b4a8",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C23",
+      "claim": "The native molecular weight of Cik1\u2013Kar3 is 214 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining these hydrodynamic values yielded a native molecular weight of 214 kDa, close to the calculated molecular weight of a Halo-tagged Cik1\u2013Kar3 heterodimer of 190 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental hydrodynamic measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "9b68f23b-a949-48ba-95a6-c1c6e36bcc0e",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C24",
+      "claim": "Cik1\u2013Kar3 molecules are characterized by globular domains separated by a 61 \u00b1 8 nm long coiled-coil.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed individual well-defined, highly elongated molecules that were characterized by globular domains separated by a 61 \u00b1 8 nm (mean \u00b1 SD, n = 100) long coiled-coil (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from electron microscopy images shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "5c40c676-84cd-4163-89cf-f17e4468e4a5",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C25",
+      "claim": "Kar3 molecules display efficient ATP-dependent movement over several micrometers.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, and contrary to the classification of kinesin-14s as non-processive motors, Kar3 molecules displayed efficient ATP-dependent movement over several micrometers and accumulated at microtubule minus ends (Figure 2A, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in single-molecule imaging experiments shown in Figure 2A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "026060ff-f675-40a6-8bfb-1ae008a93271",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C26",
+      "claim": "Cik1\u2013Kar3 has a mean speed of 77 \u00b1 23 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated tracking of motors revealed a Gaussian velocity distribution of Cik1\u2013Kar3 with a mean speed of 77 \u00b1 23 nm/s (mean \u00b1 SD; Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from automated tracking of single molecules shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "8fb07985-e9a7-4fc1-aaa5-2d557a20ed7f",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C27",
+      "claim": "The mean speed of Cik1\u2013Kar3 is in range with reported microtubule gliding velocities for truncated Cik1\u2013Kar3 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "in range with reported microtubule gliding velocities for truncated Cik1\u2013Kar3 molecules (Chu et al., 2005; Allingham et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison to previous studies cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "2d1be2aa-6c4c-4f69-ab9b-10aec40469b4",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C28",
+      "claim": "Kar3 is approximately 10-fold slower than conventional Kinesin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor is therefore approximately 10-fold slower than conventional Kinesin-1, but similar in speed to yeast cytoplasmic Dynein, the major minus-end directed-motor in eukaryotes (Reck-Peterson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of measured Kar3 velocity to known velocities of Kinesin-1 and Dynein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "64e66b31-4e86-4e01-aab3-520f3ae3d29b",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C29",
+      "claim": "Kar3 is similar in speed to yeast cytoplasmic Dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor is therefore approximately 10-fold slower than conventional Kinesin-1, but similar in speed to yeast cytoplasmic Dynein, the major minus-end directed-motor in eukaryotes (Reck-Peterson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison to published Dynein velocity data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "bb4165c4-c343-412a-ac26-03c80b45a3b9",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C30",
+      "claim": "Individual Cik1\u2013Kar3 motors advance processively for an average of 5.2 \u03bcm before detaching from the microtubule track.",
+      "claim_type": "EXPLICIT",
+      "source": "The run-length histogram followed an exponential distribution and revealed that individual Cik1\u2013Kar3 motors advanced processively for an average of 5.2 \u03bcm before detaching from the microtubule track (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from single-molecule tracking data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "b911db61-a7fd-4dbf-9668-a78d94b54986",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C31",
+      "claim": "The motile parameters of Cik1\u2013Kar3 are highly sensitive to the ionic strength of the imaging buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "The motile parameters were highly sensitive to the ionic strength of the imaging buffer: at the same ATP concentration higher salt concentration increased the mean squared displacement of the motors (Figure 2D), but decreased the on-rate, run length and minus-end dwell time (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments varying salt concentration shown in Figures 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "fb8da82e-3181-4cd6-ad2b-249304ce4a67",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C32",
+      "claim": "Cik1\u2013Kar3 can switch between microtubule tracks in antiparallel bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual motors were able to switch the track microtubule multiple times leading to a prolonged association with antiparallel bundles (Figure 2F, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in imaging experiments shown in Figure 2F and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "693cda30-32c1-4b4d-9788-4a9d3f20b0f5",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C33",
+      "claim": "43 out of 50 Cik1\u2013Kar3 molecules lost fluorescence in a single step in photobleaching experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Photobleaching experiments in the absence of nucleotide, in which the motor is persistently bound to the microtubule, revealed that 43 out of 50 molecules lost fluorescence in a single step consistent with the presence of a single Cik1\u2013Kar3 heterodimer (Figure 2\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from photobleaching experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "5a467295-7a7a-4099-bca0-08569df45d6d",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C34",
+      "claim": "The majority of moving Cik1\u2013Kar3 complexes display exclusively either red or green fluorescence in mixing experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixing experiments combining TMR- with Alexa488 labeled Cik1\u2013Kar3 molecules prior to imaging showed that the majority of moving complexes displayed exclusively either red or green fluorescence (Figure 2\u2014figure supplement 1E, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in two-color imaging experiments shown in Figure 2\u2014figure supplement 1E and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "008b4ee1-8eb5-42e0-95c2-d13a5716bdf0",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C35",
+      "claim": "Titration of Cik1\u2013Kar3 over a 50-fold concentration range revealed no decrease in velocity for microtubule gliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Titration of Cik1\u2013Kar3 over a 50-fold concentration range revealed no decrease in velocity for microtubule gliding, a characteristic feature of processive motility (Hancock and Howard, 1998) (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microtubule gliding assays at different motor concentrations shown in Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "bdb59f16-146a-4294-b107-5b3cf4568f59",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C36",
+      "claim": "Cik1\u2013Kar3 does not cause substantial depolymerization of taxol-stabilized microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to previous reports, we did not observe substantial depolymerization of taxol-stabilized microtubules in the presence of Cik1\u2013Kar3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observation in imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "39961321-012c-4609-b9a4-bd46624087ad",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C37",
+      "claim": "Cik1\u2013Kar3 motors move towards the minus-ends on dynamic microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "On dynamic microtubules motors moved towards the minus-ends, overall microtubule dynamics appeared unchanged in the presence of Cik1\u2013Kar3 and catastrophes did not coincide with plus-end localization of the motor (Figure 2\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in experiments with dynamic microtubules shown in Figure 2\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "cd476a75-a1a9-4bd3-b5ec-9fafe40826ad",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C38",
+      "claim": "Cik1\u2013Kar3 velocity is largely independent of motor team size.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Cik1\u2013Kar3 velocity was largely independent of motor team size (Figure 2\u2014figure supplement 2H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analysis of motors with different numbers of heterodimers shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "d3d634d4-e499-40b9-869f-c00144c0097a",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C39",
+      "claim": "The run length of Cik1\u2013Kar3 increases with larger team size.",
+      "claim_type": "EXPLICIT",
+      "source": "The run length, however, increased with larger team size while the variance of the velocity decreased (Figure 2\u2014figure supplement 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 2\u2014figure supplement 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "97aab350-3654-4405-a218-f5cdad972a74",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C40",
+      "claim": "The motile behaviors of Cik1\u2013Kar3 complexes of different sizes can be quantitatively explained by a biophysical model in which individual motors influence each other through mechanical coupling with spring-like properties.",
+      "claim_type": "EXPLICIT",
+      "source": "These motile behaviors of Cik1\u2013Kar3 complexes of different sizes can be quantitatively explained by a biophysical model in which individual motors influence each other through mechanical coupling with spring-like properties (Figure 2\u2014figure supplement 3 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by theoretical modeling that fits the experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "414b84e9-a76e-412a-ac41-870eae50d844",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C41",
+      "claim": "Truncation of the amino-terminal tail domain in Kar3 (up to aa 174) allows robust processive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Truncation of the amino-terminal tail domain, either in Kar3 (up to aa 174) or in Cik1 (up to aa 250) allowed robust processive movement in the single molecule assay and also had little effect on multi-motor gliding velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by single-molecule imaging and gliding assays with truncation mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "97234779-6ebd-49d2-97c8-f70620c87394",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C42",
+      "claim": "Truncation of the amino-terminal tail domain in Cik1 (up to aa 250) allows robust processive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Truncation of the amino-terminal tail domain, either in Kar3 (up to aa 174) or in Cik1 (up to aa 250) allowed robust processive movement in the single molecule assay and also had little effect on multi-motor gliding velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by single-molecule imaging and gliding assays with truncation mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "f7af5c27-0d38-492f-b397-cea4577c1885",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C43",
+      "claim": "Carboxyterminal truncations that eliminate the predicted globular Cik1 motor homology domain prevent directional movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, carboxyterminal truncations that either completely eliminated the predicted globular Cik1 motor homology domain (Cik11\u2013360) or removed a portion of the carboxyterminus (Cik11\u2013521) had severe effects and prevented directional movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by single-molecule imaging experiments with truncation mutants shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "c533bb3e-5ef2-40ac-91f7-5c5cb8d9c786",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C44",
+      "claim": "The Cik11\u2013521\u2013Kar3 mutant displays erratic forward and backward displacements that do not lead to directional movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific nature of the defect was most apparent for the shorter truncation Cik11\u2013521\u2013Kar3, which was able to bind microtubules under our standard conditions, but instead of smooth translocation it displayed erratic forward and backward displacements that did not lead to directional movement as revealed by kymographs (Figure 3B, Videos 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in kymographs shown in Figure 3B and Videos 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "e5d460a0-7925-447b-9d77-ac8cce5296cc",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C45",
+      "claim": "Kar3 homodimers do not display processive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We failed to observe processive movement of Kar3-Kar3 combining two catalytic domains or of Kar3-Kar3rigor complexes combining catalytically active and inactive Kar3 heads (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by single-molecule imaging experiments with Kar3 homodimers shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "03598617-a814-4068-8292-7b63f89b88b2",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C46",
+      "claim": "In the absence of nucleotide, Kar3 motors bind with high affinity to the microtubule but display no movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of nucleotide (+Apyrase) and in the presence of the non-hydrolyzable ATP analog AMP-PNP Kar3 motors bound with high affinity to the microtubule but displayed no movement (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in high temporal resolution imaging experiments shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "cd3667ee-c420-42d9-9a3f-c6599d1d950d",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C47",
+      "claim": "In the presence of AMP-PNP, Kar3 motors bind with high affinity to the microtubule but display no movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of nucleotide (+Apyrase) and in the presence of the non-hydrolyzable ATP analog AMP-PNP Kar3 motors bound with high affinity to the microtubule but displayed no movement (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in high temporal resolution imaging experiments shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "2e15a416-f6f9-4c44-86c7-467b199b512f",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C48",
+      "claim": "In the ADP state, Cik1\u2013Kar3 motors display diffusive microtubule interactions with D = 0.061 \u00b1 0.003 \u03bcm2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ADP state, motors displayed diffusive microtubule interactions (D = 0.061 \u00b1 0.003 \u03bcm2/s) with short residence times (\u03c4 = 0.6 \u00b1 0.1 s) (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from MSD analysis shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "b2c140c1-0203-42b2-9b3f-0f0fda1fa98e",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C49",
+      "claim": "In the ADP state, Cik1\u2013Kar3 motors have short residence times of \u03c4 = 0.6 \u00b1 0.1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ADP state, motors displayed diffusive microtubule interactions (D = 0.061 \u00b1 0.003 \u03bcm2/s) with short residence times (\u03c4 = 0.6 \u00b1 0.1 s) (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from imaging experiments shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "613aface-b5bd-4b33-9062-dfd87163549a",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C50",
+      "claim": "The Cik11\u2013360\u2013Kar3 mutant displays short-lived diffusive interactions with microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to wild-type motors, the Cik11\u2013360\u2013Kar3 mutant displayed short-lived diffusive interactions with microtubules (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in imaging experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "ed818b91-9066-451c-a1b5-4f09c201d6f0",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C51",
+      "claim": "The Cik11\u2013360 mutant is about 20-fold more diffusive than the wild-type motor in the no nucleotide state.",
+      "claim_type": "EXPLICIT",
+      "source": "Further MSD analysis indicated that the mutant is about 20-fold more diffusive than the wild-type motor in the no nucleotide state (D = 0.01 \u00b1 0.0006 \u03bcm2/s vs 0.00045 \u00b1 0.00011 \u03bcm2/s)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from MSD analysis of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "a9a85cd5-ab19-492b-86d5-6bf9533f87d4",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C52",
+      "claim": "The Cik11\u2013360 mutant is about 30-fold more diffusive than the wild-type motor in the AMPPNP state.",
+      "claim_type": "EXPLICIT",
+      "source": "and about 30-fold more diffusive in the AMPPNP state (D = 0.0036 \u00b1 0.00011 \u03bcm2/s vs 0.00011 \u00b1 0.00001 \u03bcm2/s) (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from MSD analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "04b7c378-20e1-43e5-91e5-36573375054a",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C53",
+      "claim": "A monomeric Kar3 head displays only very short-lived microtubule interactions without directional movement in the presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally constructed and purified a monomeric Kar3 head encompassing residues 353\u2013729 with an N-terminal Halo-Tag. Under standard imaging conditions in the presence of ATP only very short-lived microtubule interactions without directional movement could be observed (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in imaging experiments shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "f320abff-4679-4e0a-a08a-36f6c5c759c2",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C54",
+      "claim": "Vik1\u2013Kar3 displays highly processive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Vik1\u2013Kar3 also displayed highly processive movement, but with faster velocity compared to Cik1\u2013Kar3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by single-molecule imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "16169634-5049-4930-876a-ff86a6164acb",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C55",
+      "claim": "Vik1\u2013Kar3 moves at 234 \u00b1 29 nm/s towards microtubule minus-ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Under standard assay conditions, Vik1\u2013Kar3 complexes moved at 234 \u00b1 29 nm/s towards microtubule minus-ends where they strongly accumulated (Figure 5B, Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from single-molecule tracking shown in Figure 5B and Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "34af9a67-a9d1-4d16-95cf-c2f176842d1e",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C56",
+      "claim": "The Vik1\u2013Cik1 chimera moves at 188 nm/s to the minus-end.",
+      "claim_type": "EXPLICIT",
+      "source": "The Vik1\u2013Cik1 chimera formed a stable heterodimer with Kar3-HALO and supported movement with 188 nm/s to the minus-end, significantly faster than Cik1\u2013Kar3 and approaching the velocity of Vik1\u2013Kar3 (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from single-molecule tracking shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "b90d845d-deaa-4eff-be55-3eac085df57d",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C57",
+      "claim": "The globular non-catalytic domain is a key determinant for setting the velocity of the motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the globular non-catalytic domain is a key determinant for setting the velocity of the motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that swapping the non-catalytic head changes the motor velocity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "64bf8eff-acf7-4d87-babb-4733abad9022",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C58",
+      "claim": "The Vik1\u2013Cik1 chimera can functionally replace Cik1 in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The engineered chimeric protein was able to functionally replace Cik1 in cells as demonstrated by its ability to rescue the phenotypes of a Cik1 deletion and to support growth at wild type level under all tested conditions (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth assays shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "32bac208-9b7e-48cf-b6f4-d7860f1d0e53",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C59",
+      "claim": "Cik1\u2013Kar3, but not Vik1\u2013Kar3, directly interacts with Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing pull-down assays with recombinant proteins, we established that Cik1\u2013Kar3, but not Vik1\u2013Kar3, directly interacted with Bim1 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pull-down assays shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "2a1dbcc0-67ac-4f82-8229-2f538c3249b0",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C60",
+      "claim": "The binding interface between Cik1\u2013Kar3 and Bim1 involves the C-terminal EB homology domain of Bim1 and the aminoterminal tail domain of Cik1.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding interface involved the C-terminal EB homology domain of Bim1 and the aminoterminal tail domain of Cik1 (Figure 6\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pull-down assays with truncation mutants shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "3f69de45-63e4-4f1a-ab1c-71a8636f296d",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C61",
+      "claim": "The localization of Kar3 to distinct foci along the yeast spindle is abolished in a bim1\u0394 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Live cell imaging showed that the localization of Kar3 to distinct foci along the yeast spindle, as well as to the tips of shmoo-tip-directed microtubules in alpha-factor-arrested cells (Figure 6\u2014figure supplement 1E), was abolished in a bim1\u0394 strain, pheno-copying a cik1 deletion (Manning et al., 1999) (Figure 6C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in live cell imaging experiments shown in Figure 6C,D,E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "092fc1ba-4420-42a5-85b7-c5513840e042",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C62",
+      "claim": "Spindle localization of Kar3 is maintained in the Cik11\u2013360 and Cik11\u2013521 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our biochemical experiments, spindle localization was maintained in the Cik11\u2013360 and Cik11\u2013521 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in live cell imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "061815f7-80ef-4c6f-8cc8-31e1b0e2db33",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C63",
+      "claim": "Yeast strains expressing Cik11\u2013360 or Cik11\u2013521 display slow growth at 25\u00b0C and are inviable at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "yeast strains expressing Cik11\u2013360 or Cik11\u2013521 from the endogenous chromosomal locus displayed slow growth at 25\u00b0C and were inviable at 37\u00b0C, similar to a cik1 deletion (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by growth assays shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "355fffbd-0fa9-477d-a6a4-48fdae4188bd",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C64",
+      "claim": "80% of Cik11\u2013521 cells arrest as large budded cells upon shift to the restrictive temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, we found that 80% of Cik11\u2013521 cells arrested as large budded cells upon shift to the restrictive temperature, indicative of mitotic checkpoint activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in cell cycle analysis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "13d0286c-b25f-4ea6-9530-aef533a80497",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C65",
+      "claim": "50% of large budded Cik1 mutant cells attempt nuclear division without proper bi-orientation of sister chromatids at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of chromosome segregation at the semi-permissive temperature of 25\u00b0C by fluorescent labeling of chromosome V showed that 50% of large budded Cik1 mutant cells attempted nuclear division without proper bi-orientation of sister chromatids (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from chromosome segregation analysis shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "ee5ac760-a852-4217-bb63-a2f1ab0c793e",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C66",
+      "claim": "Combining Cik1\u2013Kar3 and the Ndc80 complex results in decoration of microtubules with both molecules in the absence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, combining Cik1\u2013Kar3 and the Ndc80 complex resulted in decoration of microtubules with both molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in in vitro recruitment assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "4b888767-e5fb-4e17-b71e-7256bea51416",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C67",
+      "claim": "Cik1\u2013Kar3 and the Ndc80 complex co-localize to distinct spots on the microtubule at low protein concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon lowering protein concentrations, Cik1\u2013Kar3 and the Ndc80 complex co-localized to distinct spots on the microtubule where their intensities were correlated (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in imaging experiments shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "4f784a6e-5035-437f-9623-2cef48c0195d",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C68",
+      "claim": "Inclusion of ATP initiates co-transport of the Ndc80 complex and Cik1\u2013Kar3 towards the minus end.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of ATP initiated co-transport of the Ndc80 complex and Cik1\u2013Kar3 towards the minus end (Figure 7D, Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in time-lapse imaging experiments shown in Figure 7D and Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "1fe417c2-a8b1-46de-9087-915e4aa15f59",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C69",
+      "claim": "The average speed of Cik1\u2013Kar3 while transporting the Ndc80 complex is 76 \u00b1 15 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "While transporting the Ndc80 complex, the average speed of the motor was 76 \u00b1 15 nm/s (mean \u00b1 SD), indicating that cargo binding did not significantly impede movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from tracking of co-transport events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "52bff76d-9015-4bf7-90ed-1b84cbc901bf",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C70",
+      "claim": "The velocity of Kar3 transporting Ndc80 is in range with the reported velocity for kinetochore transport in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The value is also in range with the reported velocity for kinetochore transport in vivo (Tanaka et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison to published in vivo data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "71d0472e-ebbe-42cf-ab89-54eecbefe1cf",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C71",
+      "claim": "Microtubule binding by the Ndc80 complex is not required for efficient transport by Kar3.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule binding by the Ndc80 complex was not required for efficient transport, as shown by effective recruitment and translocation of the microtubule-binding defective calponin-homology domain mutant K122E K204E (Lampert et al., 2013) (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by transport assays with a microtubule-binding defective Ndc80 mutant shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "c0037e9c-e381-49f9-94ed-455ffbac6247",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C72",
+      "claim": "Kar3 provides direct evidence for the processivity of Kinesin-14 motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study provides direct evidence for the processivity of Kinesin-14 motors by analyzing full-length yeast Kar3 motors on the single-molecule level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary conclusion drawn from the single-molecule imaging experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "375b3c01-0fa1-43d5-8b05-f2bd293bfe6d",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C73",
+      "claim": "Individual Cik1\u2013Kar3 motors can move processively towards the minus-end.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to other kinesin-14s, we demonstrate that individual Cik1\u2013Kar3 motors can move processively towards the minus-end",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by single-molecule imaging and photobleaching experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "0df4d4f9-3f16-4a1a-8362-b5de9b2e032a",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C74",
+      "claim": "The non-catalytic Cik1 head domain is functionally required for processive motility.",
+      "claim_type": "EXPLICIT",
+      "source": "and show that the non-catalytic Cik1 head domain is functionally required for this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments with truncation mutants lacking the non-catalytic head.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "fb9c1ab5-5273-46f7-8e96-afb124c13832",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C75",
+      "claim": "The combination of Kar3 with two different non-catalytic partners generates motors with different motile properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that the combination of Kar3 with two different non-catalytic partners generates motors with different motile properties",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing the velocities of Cik1\u2013Kar3 and Vik1\u2013Kar3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "64b79e12-bc42-4963-bc6e-9c72cce025d9",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C76",
+      "claim": "The combination of Kar3 with different non-catalytic partners allows the differential binding of partner proteins such as Bim1 and the Ndc80 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "and also allows the differential binding of partner proteins such as Bim1 and the Ndc80 complex (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pull-down assays and co-localization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "7dac86c5-87f1-46eb-9945-a5bd8ae167cc",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C77",
+      "claim": "Effective translocation along microtubules does not strictly require the conventional hand-over-hand walking mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The demonstration of Cik1\u2013Kar3 processivity presented here provides evidence that effective translocation along microtubules does not strictly require the conventional hand-over-hand walking mechanism that has been established for conventional Kinesin-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the demonstration that Kar3 is processive despite having only one catalytic head.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "a4bb1809-1b77-4fe6-bdc1-fb4d16c069df",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C78",
+      "claim": "Cytoplasmic dynein is capable of processive movement despite inactivating mutations in one of the two force-generating AAA ring domains.",
+      "claim_type": "EXPLICIT",
+      "source": "So far this point has been most clearly demonstrated for the Dynein motor, as recent studies have shown that cytoplasmic dynein is capable of processive movement in vitro despite inactivating mutations in one of the two force-generating AAA ring domains (DeWitt et al., 2012; Qiu et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on dynein.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "e041cc97-747c-4d13-ab47-6a993c16b14a",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C79",
+      "claim": "Dynein can move processively as a combination of one active head with a second passive microtubule-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "or even as a combination of one active head with a second passive microtubule-binding domain (Cleary et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "4c768142-6baf-4ca1-a867-28bcaf802097",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C80",
+      "claim": "Monomeric constructs of the kinesin-3 KIF1A move along microtubules using a biased diffusion mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "monomeric constructs of the kinesin-3 KIF1A have been shown to move along microtubules in vitro using a biased diffusion mechanism (Okada and Hirokawa, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "6a8c5b02-0c2f-40f4-a584-8e98398a5c4c",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C81",
+      "claim": "The in vivo function of KIF1A probably involves dimeric molecules for effective cargo transport.",
+      "claim_type": "EXPLICIT",
+      "source": "but the in vivo function of these motors probably involves dimeric molecules for effective cargo transport (Tomishige et al., 2002; Endres et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "e09bbbdd-7e24-4e7a-8b41-22a56aa3d4c3",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C82",
+      "claim": "Ncd can exhibit processive motility but requires at least two homodimers coupled together.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the kinesin-14 family, Ncd can exhibit processive motility but requires at least two homodimers coupled together (Furuta et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "c61e8194-96d3-434d-afe9-dc9156d81a47",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C83",
+      "claim": "Inactivating mutations in one of the two heads of conventional kinesin can still allow residual processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have shown that inactivating mutations in one of the two heads of conventional kinesin can still allow residual processivity (Subramanian and Gelles, 2007; Thoresen and Gelles, 2008; Kaseda et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "cbe96a14-cd60-4c8c-86b4-cc81e9ee035a",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C84",
+      "claim": "Processive movement of mutant heterodimeric kinesins with one inactive head is compromised compared to wild-type homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that in these examples processive movement of the mutant heterodimeric kinesins was compromised compared to wild-type homodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of results in cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "99a947a2-5121-4c0a-8bd1-9afbcabdba5a",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C85",
+      "claim": "Kar3 does not simply tolerate the loss of a second active head but has evolved a specific requirement for the non-catalytic domain in order to move processively.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Kar3 does not simply tolerate the loss of a second active head but instead it has evolved a specific requirement for the non-catalytic domain in order to move processively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Kar3 homodimers are not processive while Kar3 heterodimers with non-catalytic partners are processive.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "fdfb6f86-b9b4-4a28-9880-34da6e6e5674",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C86",
+      "claim": "Kar3 and its partner non-catalytic head may be located on adjacent protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on recent structural data Kar3 and its partner non-catalytic head may be located on adjacent protofilaments (Rank et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "be6d6a46-30e6-4865-b57e-be7dff8a33ab",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C87",
+      "claim": "The non-catalytic domain could contribute to hold the motor complex in place and prevent diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "where the non-catalytic domain could contribute to hold the motor complex in place and prevent diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed reduction in diffusion when the non-catalytic domain is present.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "12945e7f-3367-4902-994f-2b1f97ae353c",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C88",
+      "claim": "When ADP is bound, Kar3 is in its weakly bound state which allows for one-dimensional diffusion along the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "When ADP is bound, the motor is in its weakly bound state which allows for one-dimensional diffusion along the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in experiments showing diffusive behavior in the ADP state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "6c9d22d3-fad4-419c-98c7-bd9db901a408",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C89",
+      "claim": "The presence of Cik1 in combination with the kinesin-14 typical stalk rotation upon ATP binding by Kar3 might provide a mechanism for minus-end directed bias.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the presence of Cik1 in combination with the kinesin-14 typical stalk rotation upon ATP binding by Kar3 (Endres et al., 2006; Gonzalez et al., 2013) might provide such a mechanism either by shifting the overall position of the molecule or by allowing subsequent directed binding/unbinding (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on known structural changes in kinesin-14 motors and the observed directional movement.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "2ccd94b3-26f3-43de-b581-99246acbc210",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C90",
+      "claim": "Raising the ionic strength initially causes motor movement to occur with faster velocity, probably by increasing the diffusion term.",
+      "claim_type": "EXPLICIT",
+      "source": "This model can explain a number of our experimental observations: the effect of raising the ionic strength is that initially motor movement occurs with faster velocity, probably by increasing the diffusion term.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed effects of salt concentration on motor velocity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "a289c426-8587-430b-a805-94cb8841f3d1",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C91",
+      "claim": "At high ionic strength, stable binding of the non-catalytic domain is prevented and directional displacement is disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "At some point however, stable binding of the non-catalytic domain is prevented and directional displacement is disrupted, similar to the situation in which the motor lacks the motor homology domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed effects of high salt concentration on motor behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "b550d4c0-4b3f-4ea2-bc47-43385a4ad664",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C92",
+      "claim": "A form of head-to-head communication must occur in Kar3 motors such that the catalytic head influences the microtubule affinity of the motor homology domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous work, this suggests that similar to conventional kinesins, a form of head-to-head communication must occur in Kar3 motors such that the catalytic head influences the microtubule affinity of the motor homology domain (Allingham et al., 2007; Chen et al., 2011; Duan et al., 2012; Rank et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the nucleotide-dependent changes in motor behavior and supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "940390bb-fa8b-4d41-bc21-3f451a16b4cc",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C93",
+      "claim": "It is unlikely that Kar3 functions as a microtubule depolymerase in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our experiments and the previously reported rates of microtubule shortening in the presence of Cik1\u2013Kar3, we consider it unlikely that Kar3 functions as a microtubule depolymerase in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of observed depolymerization activity in the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "1ce8f36d-35a7-4191-a521-1f569254a547",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C94",
+      "claim": "None of the Kar3 functions poses a strict requirement for microtubule depolymerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that none of the Kar3 functions poses a strict requirement for such an activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from analysis of Kar3 functions in vivo.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "bfe85290-610b-42a7-aacf-3f043a154749",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C95",
+      "claim": "Recent experiments analyzing Kar3 function during karyogamy support the view that its primary function is transport, not shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "and indeed recent experiments analyzing Kar3 function during karyogamy support the view that its primary function is transport, not shortening (Gibeaux et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "f95be489-1ea2-43bb-8c46-24def378e826",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C96",
+      "claim": "The ability to move processively may be used in the cell to enrich Kar3 motors at minus-ends.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to move processively may be used in the cell to enrich Kar3 motors at minus-ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed accumulation of motors at minus-ends.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "0a883a4d-29bb-43d9-b78d-4093552539b9",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C97",
+      "claim": "Kar3 could work more effectively in small teams if it can undergo multiple catalytic cycles before releasing from the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Kar3 could work more effectively in small teams if it can undergo multiple catalytic cycles before releasing from the microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed processivity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "4716bd9d-445e-46bf-93a4-84fe17b881ba",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C98",
+      "claim": "Kar3 heterodimers have probably evolved from conventional Kinesin14-homodimers that performed Ncd-like roles in spindle organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Kar3 heterodimers have probably evolved from conventional Kinesin14-homodimers that performed Ncd-like roles in spindle organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on evolutionary considerations.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "7684d0c5-4f08-42c5-af3d-e2502841c188",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C99",
+      "claim": "With the exclusion of dynein from the budding yeast nucleus, additional functional requirements for minus-end directed motility in spindle assembly and kinetochore function arose.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that with the exclusion of dynein from the budding yeast nucleus additional functional requirements for minus-end directed motility in spindle assembly and kinetochore function arose that could be fulfilled with the 'invention' of the Cik1 and Vik1 non-catalytic domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the functional properties of Kar3 and the absence of dynein in the yeast nucleus.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "cb5e0ec7-0a07-45de-816e-a4256a33b6d8",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C100",
+      "claim": "The pseudo-motor domains can convert a kinesin-14 into a processive motor.",
+      "claim_type": "EXPLICIT",
+      "source": "While commonly perceived as conferring a loss of functionality, the pseudo-motor domains have the ability to convert a kinesin-14 into a processive motor",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental results showing processivity requires the non-catalytic domain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "8694af12-e4a7-494a-9eeb-be49e64beefc",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C101",
+      "claim": "The pseudo-motor domains create functional diversity through allowing differential interactions with partners.",
+      "claim_type": "EXPLICIT",
+      "source": "and additionally create functional diversity through allowing differential interactions with partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the differential binding of Bim1 and Ndc80 to different Kar3 heterodimers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "f5e608d6-067c-45fd-896f-d1389984dbf0",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C102",
+      "claim": "Pseudoenzymes have emerging roles in other cellular contexts, such as pseudo-GTPases during human kinetochore assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, we note that pseudoenzymes have emerging roles in other cellular contexts, for example in the form pseudo-GTPases during human kinetochore assembly (Basilico et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on pseudo-GTPases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "d0d51b5d-8f87-4453-aa64-0f423066cacc",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "claim_id": "C103",
+      "claim": "Pseudoenzymes function as pseudo-kinases and pseudo-phosphatases in cell signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "or as pseudo-kinases and pseudo-phosphatases in cell signaling (Boudeau et al., 2006; Tonks, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on pseudo-kinases and pseudo-phosphatases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3a8fc3b9-38f5-4a2a-8a93-10ee8538d353",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Purified full-length Cik1\u2013Kar3 forms a heterodimeric complex with a native molecular weight of 214 kDa, characterized by an elongated structure with globular domains separated by a 61 \u00b1 8 nm coiled-coil, as determined by size exclusion chromatography, sucrose gradient centrifugation, and electron microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21\u2013C24 provide converging hydrodynamic and structural evidence from multiple independent techniques (SEC, sucrose gradient, EM) that consistently support the heterodimeric nature and structural dimensions of the Cik1\u2013Kar3 complex. The calculated molecular weight (214 kDa) is close to the expected value (190 kDa), and the EM directly visualizes the predicted elongated structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "236b7541-019f-449b-b47d-6bd38c22f284",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Individual Cik1\u2013Kar3 heterodimers display processive minus-end directed movement with a mean velocity of 77 \u00b1 23 nm/s and an average run length of 5.2 \u03bcm, representing a novel finding that contradicts the previous classification of kinesin-14 motors as non-processive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C25\u2013C30 are strongly supported by direct single-molecule imaging data showing ATP-dependent processive movement. The velocity measurements are consistent with previous ensemble assays (C27), and comparisons to other motors (C28, C29) provide appropriate context. The exponential distribution of run lengths (C30) is characteristic of processive motors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "f0d58adf-1e11-420d-ab03-1f3e3fa00d9b",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single Cik1\u2013Kar3 heterodimers are sufficient for processive movement, as demonstrated by photobleaching experiments showing single-step fluorescence loss, two-color mixing experiments showing predominantly single-color moving complexes, and concentration-independence of gliding velocity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33\u2013C35 and C73 provide multiple independent lines of evidence (photobleaching, two-color imaging, concentration titration) that converge on the conclusion that individual heterodimers are processive. The 86% single-step photobleaching (43/50) is strong evidence, and the concentration-independence of velocity (C35) is a hallmark of processive motility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "5f59a9c8-22d4-45c1-95f4-5ad81d44c530",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The non-catalytic Cik1 motor homology domain is essential for processive directional movement, as truncations eliminating this domain (Cik1^1\u2013360 and Cik1^1\u2013521) abolish directional translocation, and Kar3 homodimers lacking the non-catalytic partner are not processive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C43\u2013C45, and C74 are strongly supported by systematic truncation analysis and homodimer experiments. The Cik1^1\u2013521 mutant displays erratic bidirectional movement without net displacement (C44), directly demonstrating the requirement for the non-catalytic domain. The failure of Kar3 homodimers to move processively (C45) further supports the specific requirement for the non-catalytic partner.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "a8413847-b5a9-4dc1-9208-3ac45bb0e646",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The non-catalytic Cik1 domain restrains diffusion of the motor complex, as the Cik1^1\u2013360 truncation mutant displays 20-fold increased diffusion in the no-nucleotide state and 30-fold increased diffusion in the AMPPNP state compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50\u2013C52 provide quantitative MSD analysis showing dramatic increases in diffusion when the non-catalytic domain is removed. The nucleotide-state dependence of this effect (C51, C52) supports a functional role in restraining diffusion. However, the mechanistic interpretation (C87) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "1cdc8b8a-b422-4fde-99f5-beeb74e251af",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cik1\u2013Kar3 displays nucleotide-dependent microtubule binding states: tight binding without movement in no-nucleotide and AMPPNP states, and diffusive interactions (D = 0.061 \u00b1 0.003 \u03bcm\u00b2/s) with short residence times (\u03c4 = 0.6 \u00b1 0.1 s) in the ADP state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46\u2013C49 and C88 are supported by high temporal resolution imaging and MSD analysis in different nucleotide conditions. The nucleotide-dependent changes in binding affinity and diffusion are consistent with the expected ATPase cycle of motor proteins and provide mechanistic insights into the motility mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "10664925-c7fa-4031-a700-d7ef64b6c102",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The non-catalytic partner determines motor velocity: Vik1\u2013Kar3 moves at 234 \u00b1 29 nm/s (3-fold faster than Cik1\u2013Kar3), and a chimeric motor with the Vik1 head domain moves at 188 nm/s, demonstrating that the globular non-catalytic domain is a key determinant of motor speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54\u2013C57 and C75 are strongly supported by direct velocity measurements of different Kar3 heterodimers and the engineered chimera. The chimera experiment (C56) provides compelling evidence that the non-catalytic head domain determines velocity, as swapping this domain changes the motor speed to an intermediate value between Cik1\u2013Kar3 and Vik1\u2013Kar3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "97193be3-0c02-4062-96bd-57100bb23e14",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Vik1\u2013Cik1 chimera can functionally replace Cik1 in cells, rescuing the phenotypes of a Cik1 deletion and supporting wild-type growth under all tested conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by growth assays showing complete rescue of Cik1 deletion phenotypes. This demonstrates that the chimeric protein is functional in vivo and validates the domain-swapping approach used to dissect motor function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "52a3d140-ce9e-4175-ab9e-027a1395220f",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cik1\u2013Kar3, but not Vik1\u2013Kar3, directly interacts with the plus-end tracking protein Bim1 through the C-terminal EB homology domain of Bim1 and the N-terminal tail domain of Cik1, demonstrating differential partner binding by different Kar3 heterodimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C60, and C76 are supported by pull-down assays with full-length and truncated proteins. The differential binding (Cik1\u2013Kar3 binds Bim1, Vik1\u2013Kar3 does not) demonstrates functional diversification through the non-catalytic partner. The mapping of binding interfaces (C60) provides mechanistic detail.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "1d736e5d-ff38-481f-bc65-621131953d66",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Kar3 localization to distinct foci along the yeast spindle requires Bim1 and the Cik1 tail domain but not the Cik1 motor homology domain, as localization is abolished in bim1\u0394 strains but maintained in Cik1^1\u2013360 and Cik1^1\u2013521 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C62 are supported by live cell imaging experiments showing loss of spindle localization in bim1\u0394 but not in C-terminal Cik1 truncation mutants. This is consistent with the biochemical mapping of the Bim1 binding site to the Cik1 N-terminal tail (C60).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "4e18b7bf-d1b6-4fc1-b12d-b6ac45d2011b",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Kar3 motility mechanism is critical for cell viability and chromosome segregation in vivo, as Cik1^1\u2013360 and Cik1^1\u2013521 mutants display temperature-sensitive growth defects, mitotic checkpoint activation, and chromosome mis-segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C63\u2013C65 are supported by growth assays and chromosome segregation analysis. The temperature-sensitive phenotypes and chromosome mis-segregation in mutants lacking processive motility (but retaining Bim1 binding) demonstrate that the motility mechanism itself is essential for Kar3 function in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "d2992d40-6516-4e97-af29-403bc9aa27da",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cik1\u2013Kar3 can transport the Ndc80 kinetochore complex in vitro at 76 \u00b1 15 nm/s towards the minus end, with transport not requiring microtubule binding by Ndc80, demonstrating a potential mechanism for kinetochore motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C66\u2013C71 are supported by multi-color TIRF microscopy showing co-recruitment, co-localization, and co-transport of Ndc80 with Cik1\u2013Kar3. The velocity during transport (C69) matches the velocity of Cik1\u2013Kar3 alone and is consistent with in vivo kinetochore transport rates (C70). The transport of a microtubule-binding defective Ndc80 mutant (C71) demonstrates that Ndc80's own microtubule binding is not required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "3f5efe46-22cd-4489-98c2-28a0869c91ad",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The motile parameters of Cik1\u2013Kar3 are highly sensitive to ionic strength, with higher salt concentrations increasing mean squared displacement but decreasing on-rate, run length, and minus-end dwell time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by systematic variation of salt concentration and quantitative measurements of multiple motility parameters. The salt sensitivity is consistent with electrostatic interactions playing a role in motor-microtubule binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "a0b58084-7c8a-49e3-aded-9da0860cafa4",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cik1\u2013Kar3 motors can switch between microtubule tracks in antiparallel bundles, leading to prolonged association with bundles through multiple track-switching events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by direct observation in imaging experiments showing oscillatory movement in microtubule overlap zones. This behavior is consistent with minus-end directed movement on antiparallel microtubules.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "c2dacc5a-77bc-4d21-950e-baed00b143c2",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cik1\u2013Kar3 velocity is largely independent of motor team size, but run length increases with larger teams, and these behaviors can be quantitatively explained by a biophysical model with mechanical coupling between motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38\u2013C40 are supported by quantitative analysis of motors with different numbers of heterodimers and theoretical modeling. The velocity independence (C38) supports single-motor processivity, while the run length increase (C39) is consistent with cooperative effects. The biophysical model (C40) provides a mechanistic framework, though the model parameters and assumptions should be scrutinized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "bdd28aa9-e24b-44df-a54f-488188e2286f",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Kar3 does not function as a microtubule depolymerase in vivo, as substantial depolymerization of taxol-stabilized microtubules was not observed, microtubule dynamics appeared unchanged on dynamic microtubules, and none of the Kar3 functions require depolymerase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C37, and C93\u2013C95 are supported by direct observation of microtubules in the presence of Cik1\u2013Kar3 and analysis of Kar3 functions. This contradicts previous proposals (C20) and is further supported by a recent study (C95). However, the negative result (lack of depolymerization) should be interpreted cautiously as it may depend on experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "a7299377-d8df-406f-87b3-868f7f9da51e",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "N-terminal tail truncations in Kar3 (up to aa 174) or Cik1 (up to aa 250) allow robust processive movement, indicating that the tail domains are not required for processivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C42 are supported by single-molecule imaging and gliding assays with truncation mutants. This distinguishes Cik1\u2013Kar3 from other motors (like Ncd) that require tail domains for processivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "d7d246e2-8b70-43b4-b3fe-b5c0e2146cc6",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A monomeric Kar3 head displays only very short-lived microtubule interactions without directional movement in the presence of ATP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by direct observation in imaging experiments. This demonstrates that the monomeric Kar3 head alone is not sufficient for processive movement, consistent with the requirement for the non-catalytic partner.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "632a14e9-0d0f-4ce3-a31e-4ea6b6d04a6f",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Kar3 provides an example of a non-conventional translocation mechanism that does not require the hand-over-hand walking mechanism, and can explain how Kar3 substitutes for key functions of Dynein in the yeast nucleus where dynein is excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C72, C77, C85, C98, and C99 represent the major conceptual conclusions of the study. These are well-supported by the demonstration of processivity with only one catalytic head (C3, C73, C74) and the functional importance in vivo (C7, C63\u2013C65). The evolutionary speculation (C98, C99) is reasonable but remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "c56a6919-a3b4-4184-8023-211903ef0667",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The proposed 'skateboard' model suggests that Cik1 provides a foothold while Kar3 undergoes diffusive movement in the ADP state, with minus-end bias potentially provided by stalk rotation upon ATP binding, and head-to-head communication coordinating the nucleotide-dependent affinity changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89\u2013C92 represent a mechanistic model that is speculative and not directly tested. While the model is consistent with the observed salt sensitivity (C90, C91) and nucleotide-dependent binding changes (C92), it lacks direct structural or kinetic evidence. The model provides a useful framework for future experiments but should be considered a working hypothesis rather than an established mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "35ac82be-0138-4fdd-a1b6-0317c6ad9714",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The pseudo-motor domains of Cik1 and Vik1 convert kinesin-14 into a processive motor and create functional diversity through differential partner interactions, demonstrating that catalytically inactive domains can confer gain of function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100 and C101 are strongly supported by the demonstration that the non-catalytic domain is required for processivity (C43\u2013C45, C74) and enables differential binding of partners like Bim1 and Ndc80 (C59, C76). This represents a key conceptual advance showing that 'pseudo-enzymes' can have active functional roles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "68779391-bb45-4aaf-8da8-46ec2ae36302",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establish that kinesin-14 motors are important for mitotic spindle organization, are generally non-processive, and that Kar3 is distinct in forming heterodimers with non-catalytic partners Cik1 and Vik1 that modulate microtubule interactions and govern subcellular localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C9\u2013C20 represent established knowledge and prior work that is appropriately cited. These provide the necessary context for the current study and are generally well-supported by the cited literature. However, the prior proposal that Kar3 acts as a depolymerase (C20) is contradicted by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "1bbc3e85-2b98-4a51-b7c0-656f6d82dc83",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Prior work on other motors (dynein, KIF1A, Ncd, conventional kinesin) has shown that processive movement can occur through non-conventional mechanisms or with inactivated heads, providing precedent for the Kar3 findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78\u2013C84 appropriately cite prior work on other motor systems that have challenged the conventional hand-over-hand model. These provide important context for interpreting the Kar3 results and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "f4a3b40d-a645-4d8f-900b-473c9e028ec7",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The processivity of Kar3 may be used to enrich motors at minus-ends and could allow more effective work in small teams by undergoing multiple catalytic cycles before detachment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96 and C97 are speculative functional implications that are not directly tested. While the accumulation at minus-ends is observed (C25), the functional significance for cellular processes remains to be demonstrated. These represent reasonable hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "8b9201b7-ec79-422f-b54c-b16e04bb2f49",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Pseudoenzymes have emerging roles in other cellular contexts such as pseudo-GTPases in kinetochore assembly and pseudo-kinases/phosphatases in cell signaling, suggesting that catalytically inactive enzyme derivatives may be a widespread cellular strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102 and C103 appropriately cite examples of pseudoenzymes in other systems, providing broader context for the significance of the Kar3 findings. These are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    },
+    {
+      "id": "5f9bbab7-258c-4958-a998-01218739b504",
+      "content_id": "e6e2f293-ba60-42f6-b3fd-ee192f25e102",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "The Kar3 motility mechanism rivals the speed of conventional motors, with Cik1\u2013Kar3 moving at 77 \u00b1 23 nm/s, approximately 10-fold slower than Kinesin-1 but similar in speed to yeast cytoplasmic Dynein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C26\u2013C29 are supported by direct velocity measurements and appropriate comparisons to other motors. However, the claim that this 'rivals' conventional motors (C5) is somewhat overstated given that it is 10-fold slower than Kinesin-1. The comparison to Dynein (C29) is more appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:28.009172Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4a407a64-bfd8-4a14-a6b2-1b9aa2c2fc84",
+      "result_id": "3a8fc3b9-38f5-4a2a-8a93-10ee8538d353"
+    },
+    {
+      "claim_id": "f99346ba-e8bf-4221-8476-1e3e08bad6e0",
+      "result_id": "3a8fc3b9-38f5-4a2a-8a93-10ee8538d353"
+    },
+    {
+      "claim_id": "da3f91a0-5f2b-4c74-9acd-0db45db9b4a8",
+      "result_id": "3a8fc3b9-38f5-4a2a-8a93-10ee8538d353"
+    },
+    {
+      "claim_id": "9b68f23b-a949-48ba-95a6-c1c6e36bcc0e",
+      "result_id": "3a8fc3b9-38f5-4a2a-8a93-10ee8538d353"
+    },
+    {
+      "claim_id": "b92388da-b957-43ef-8797-00b2a7557459",
+      "result_id": "236b7541-019f-449b-b47d-6bd38c22f284"
+    },
+    {
+      "claim_id": "5c40c676-84cd-4163-89cf-f17e4468e4a5",
+      "result_id": "236b7541-019f-449b-b47d-6bd38c22f284"
+    },
+    {
+      "claim_id": "026060ff-f675-40a6-8bfb-1ae008a93271",
+      "result_id": "236b7541-019f-449b-b47d-6bd38c22f284"
+    },
+    {
+      "claim_id": "8fb07985-e9a7-4fc1-aaa5-2d557a20ed7f",
+      "result_id": "236b7541-019f-449b-b47d-6bd38c22f284"
+    },
+    {
+      "claim_id": "2d1be2aa-6c4c-4f69-ab9b-10aec40469b4",
+      "result_id": "236b7541-019f-449b-b47d-6bd38c22f284"
+    },
+    {
+      "claim_id": "64e66b31-4e86-4e01-aab3-520f3ae3d29b",
+      "result_id": "236b7541-019f-449b-b47d-6bd38c22f284"
+    },
+    {
+      "claim_id": "bb4165c4-c343-412a-ac26-03c80b45a3b9",
+      "result_id": "236b7541-019f-449b-b47d-6bd38c22f284"
+    },
+    {
+      "claim_id": "693cda30-32c1-4b4d-9788-4a9d3f20b0f5",
+      "result_id": "f0d58adf-1e11-420d-ab03-1f3e3fa00d9b"
+    },
+    {
+      "claim_id": "5a467295-7a7a-4099-bca0-08569df45d6d",
+      "result_id": "f0d58adf-1e11-420d-ab03-1f3e3fa00d9b"
+    },
+    {
+      "claim_id": "008b4ee1-8eb5-42e0-95c2-d13a5716bdf0",
+      "result_id": "f0d58adf-1e11-420d-ab03-1f3e3fa00d9b"
+    },
+    {
+      "claim_id": "375b3c01-0fa1-43d5-8b05-f2bd293bfe6d",
+      "result_id": "f0d58adf-1e11-420d-ab03-1f3e3fa00d9b"
+    },
+    {
+      "claim_id": "52c53895-b7e4-4528-8e1c-0abb39c1f3f3",
+      "result_id": "5f59a9c8-22d4-45c1-95f4-5ad81d44c530"
+    },
+    {
+      "claim_id": "f7af5c27-0d38-492f-b397-cea4577c1885",
+      "result_id": "5f59a9c8-22d4-45c1-95f4-5ad81d44c530"
+    },
+    {
+      "claim_id": "c533bb3e-5ef2-40ac-91f7-5c5cb8d9c786",
+      "result_id": "5f59a9c8-22d4-45c1-95f4-5ad81d44c530"
+    },
+    {
+      "claim_id": "e5d460a0-7925-447b-9d77-ac8cce5296cc",
+      "result_id": "5f59a9c8-22d4-45c1-95f4-5ad81d44c530"
+    },
+    {
+      "claim_id": "0df4d4f9-3f16-4a1a-8362-b5de9b2e032a",
+      "result_id": "5f59a9c8-22d4-45c1-95f4-5ad81d44c530"
+    },
+    {
+      "claim_id": "613aface-b5bd-4b33-9062-dfd87163549a",
+      "result_id": "a8413847-b5a9-4dc1-9208-3ac45bb0e646"
+    },
+    {
+      "claim_id": "ed818b91-9066-451c-a1b5-4f09c201d6f0",
+      "result_id": "a8413847-b5a9-4dc1-9208-3ac45bb0e646"
+    },
+    {
+      "claim_id": "a9a85cd5-ab19-492b-86d5-6bf9533f87d4",
+      "result_id": "a8413847-b5a9-4dc1-9208-3ac45bb0e646"
+    },
+    {
+      "claim_id": "be6d6a46-30e6-4865-b57e-be7dff8a33ab",
+      "result_id": "a8413847-b5a9-4dc1-9208-3ac45bb0e646"
+    },
+    {
+      "claim_id": "03598617-a814-4068-8292-7b63f89b88b2",
+      "result_id": "1cdc8b8a-b422-4fde-99f5-beeb74e251af"
+    },
+    {
+      "claim_id": "cd3667ee-c420-42d9-9a3f-c6599d1d950d",
+      "result_id": "1cdc8b8a-b422-4fde-99f5-beeb74e251af"
+    },
+    {
+      "claim_id": "2e15a416-f6f9-4c44-86c7-467b199b512f",
+      "result_id": "1cdc8b8a-b422-4fde-99f5-beeb74e251af"
+    },
+    {
+      "claim_id": "b2c140c1-0203-42b2-9b3f-0f0fda1fa98e",
+      "result_id": "1cdc8b8a-b422-4fde-99f5-beeb74e251af"
+    },
+    {
+      "claim_id": "12945e7f-3367-4902-994f-2b1f97ae353c",
+      "result_id": "1cdc8b8a-b422-4fde-99f5-beeb74e251af"
+    },
+    {
+      "claim_id": "f320abff-4679-4e0a-a08a-36f6c5c759c2",
+      "result_id": "10664925-c7fa-4031-a700-d7ef64b6c102"
+    },
+    {
+      "claim_id": "16169634-5049-4930-876a-ff86a6164acb",
+      "result_id": "10664925-c7fa-4031-a700-d7ef64b6c102"
+    },
+    {
+      "claim_id": "34af9a67-a9d1-4d16-95cf-c2f176842d1e",
+      "result_id": "10664925-c7fa-4031-a700-d7ef64b6c102"
+    },
+    {
+      "claim_id": "b90d845d-deaa-4eff-be55-3eac085df57d",
+      "result_id": "10664925-c7fa-4031-a700-d7ef64b6c102"
+    },
+    {
+      "claim_id": "fb9c1ab5-5273-46f7-8e96-afb124c13832",
+      "result_id": "10664925-c7fa-4031-a700-d7ef64b6c102"
+    },
+    {
+      "claim_id": "64bf8eff-acf7-4d87-babb-4733abad9022",
+      "result_id": "97193be3-0c02-4062-96bd-57100bb23e14"
+    },
+    {
+      "claim_id": "32bac208-9b7e-48cf-b6f4-d7860f1d0e53",
+      "result_id": "52a3d140-ce9e-4175-ab9e-027a1395220f"
+    },
+    {
+      "claim_id": "2a1dbcc0-67ac-4f82-8229-2f538c3249b0",
+      "result_id": "52a3d140-ce9e-4175-ab9e-027a1395220f"
+    },
+    {
+      "claim_id": "64b79e12-bc42-4963-bc6e-9c72cce025d9",
+      "result_id": "52a3d140-ce9e-4175-ab9e-027a1395220f"
+    },
+    {
+      "claim_id": "3f69de45-63e4-4f1a-ab1c-71a8636f296d",
+      "result_id": "1d736e5d-ff38-481f-bc65-621131953d66"
+    },
+    {
+      "claim_id": "092fc1ba-4420-42a5-85b7-c5513840e042",
+      "result_id": "1d736e5d-ff38-481f-bc65-621131953d66"
+    },
+    {
+      "claim_id": "b11b6111-a938-4e8d-a740-e7b74aebc1b0",
+      "result_id": "4e18b7bf-d1b6-4fc1-b12d-b6ac45d2011b"
+    },
+    {
+      "claim_id": "061815f7-80ef-4c6f-8cc8-31e1b0e2db33",
+      "result_id": "4e18b7bf-d1b6-4fc1-b12d-b6ac45d2011b"
+    },
+    {
+      "claim_id": "355fffbd-0fa9-477d-a6a4-48fdae4188bd",
+      "result_id": "4e18b7bf-d1b6-4fc1-b12d-b6ac45d2011b"
+    },
+    {
+      "claim_id": "13d0286c-b25f-4ea6-9530-aef533a80497",
+      "result_id": "4e18b7bf-d1b6-4fc1-b12d-b6ac45d2011b"
+    },
+    {
+      "claim_id": "49de5896-6800-445a-9d27-fe8ae261b7b6",
+      "result_id": "d2992d40-6516-4e97-af29-403bc9aa27da"
+    },
+    {
+      "claim_id": "ee5ac760-a852-4217-bb63-a2f1ab0c793e",
+      "result_id": "d2992d40-6516-4e97-af29-403bc9aa27da"
+    },
+    {
+      "claim_id": "4b888767-e5fb-4e17-b71e-7256bea51416",
+      "result_id": "d2992d40-6516-4e97-af29-403bc9aa27da"
+    },
+    {
+      "claim_id": "4f784a6e-5035-437f-9623-2cef48c0195d",
+      "result_id": "d2992d40-6516-4e97-af29-403bc9aa27da"
+    },
+    {
+      "claim_id": "1fe417c2-a8b1-46de-9087-915e4aa15f59",
+      "result_id": "d2992d40-6516-4e97-af29-403bc9aa27da"
+    },
+    {
+      "claim_id": "52bff76d-9015-4bf7-90ed-1b84cbc901bf",
+      "result_id": "d2992d40-6516-4e97-af29-403bc9aa27da"
+    },
+    {
+      "claim_id": "71d0472e-ebbe-42cf-ab89-54eecbefe1cf",
+      "result_id": "d2992d40-6516-4e97-af29-403bc9aa27da"
+    },
+    {
+      "claim_id": "b911db61-a7fd-4dbf-9668-a78d94b54986",
+      "result_id": "3f5efe46-22cd-4489-98c2-28a0869c91ad"
+    },
+    {
+      "claim_id": "fb8da82e-3181-4cd6-ad2b-249304ce4a67",
+      "result_id": "a0b58084-7c8a-49e3-aded-9da0860cafa4"
+    },
+    {
+      "claim_id": "cd476a75-a1a9-4bd3-b5ec-9fafe40826ad",
+      "result_id": "c2dacc5a-77bc-4d21-950e-baed00b143c2"
+    },
+    {
+      "claim_id": "d3d634d4-e499-40b9-869f-c00144c0097a",
+      "result_id": "c2dacc5a-77bc-4d21-950e-baed00b143c2"
+    },
+    {
+      "claim_id": "97aab350-3654-4405-a218-f5cdad972a74",
+      "result_id": "c2dacc5a-77bc-4d21-950e-baed00b143c2"
+    },
+    {
+      "claim_id": "bdb59f16-146a-4294-b107-5b3cf4568f59",
+      "result_id": "bdd28aa9-e24b-44df-a54f-488188e2286f"
+    },
+    {
+      "claim_id": "39961321-012c-4609-b9a4-bd46624087ad",
+      "result_id": "bdd28aa9-e24b-44df-a54f-488188e2286f"
+    },
+    {
+      "claim_id": "940390bb-fa8b-4d41-bc21-3f451a16b4cc",
+      "result_id": "bdd28aa9-e24b-44df-a54f-488188e2286f"
+    },
+    {
+      "claim_id": "1ce8f36d-35a7-4191-a521-1f569254a547",
+      "result_id": "bdd28aa9-e24b-44df-a54f-488188e2286f"
+    },
+    {
+      "claim_id": "bfe85290-610b-42a7-aacf-3f043a154749",
+      "result_id": "bdd28aa9-e24b-44df-a54f-488188e2286f"
+    },
+    {
+      "claim_id": "414b84e9-a76e-412a-ac41-870eae50d844",
+      "result_id": "a7299377-d8df-406f-87b3-868f7f9da51e"
+    },
+    {
+      "claim_id": "97234779-6ebd-49d2-97c8-f70620c87394",
+      "result_id": "a7299377-d8df-406f-87b3-868f7f9da51e"
+    },
+    {
+      "claim_id": "04b7c378-20e1-43e5-91e5-36573375054a",
+      "result_id": "d7d246e2-8b70-43b4-b3fe-b5c0e2146cc6"
+    },
+    {
+      "claim_id": "69330032-a793-4136-8f81-f687b8f9ac89",
+      "result_id": "632a14e9-0d0f-4ce3-a31e-4ea6b6d04a6f"
+    },
+    {
+      "claim_id": "c0037e9c-e381-49f9-94ed-455ffbac6247",
+      "result_id": "632a14e9-0d0f-4ce3-a31e-4ea6b6d04a6f"
+    },
+    {
+      "claim_id": "7dac86c5-87f1-46eb-9945-a5bd8ae167cc",
+      "result_id": "632a14e9-0d0f-4ce3-a31e-4ea6b6d04a6f"
+    },
+    {
+      "claim_id": "99a947a2-5121-4c0a-8bd1-9afbcabdba5a",
+      "result_id": "632a14e9-0d0f-4ce3-a31e-4ea6b6d04a6f"
+    },
+    {
+      "claim_id": "4716bd9d-445e-46bf-93a4-84fe17b881ba",
+      "result_id": "632a14e9-0d0f-4ce3-a31e-4ea6b6d04a6f"
+    },
+    {
+      "claim_id": "7684d0c5-4f08-42c5-af3d-e2502841c188",
+      "result_id": "632a14e9-0d0f-4ce3-a31e-4ea6b6d04a6f"
+    },
+    {
+      "claim_id": "6c9d22d3-fad4-419c-98c7-bd9db901a408",
+      "result_id": "c56a6919-a3b4-4184-8023-211903ef0667"
+    },
+    {
+      "claim_id": "2ccd94b3-26f3-43de-b581-99246acbc210",
+      "result_id": "c56a6919-a3b4-4184-8023-211903ef0667"
+    },
+    {
+      "claim_id": "a289c426-8587-430b-a805-94cb8841f3d1",
+      "result_id": "c56a6919-a3b4-4184-8023-211903ef0667"
+    },
+    {
+      "claim_id": "b550d4c0-4b3f-4ea2-bc47-43385a4ad664",
+      "result_id": "c56a6919-a3b4-4184-8023-211903ef0667"
+    },
+    {
+      "claim_id": "cb5e0ec7-0a07-45de-816e-a4256a33b6d8",
+      "result_id": "35ac82be-0138-4fdd-a1b6-0317c6ad9714"
+    },
+    {
+      "claim_id": "8694af12-e4a7-494a-9eeb-be49e64beefc",
+      "result_id": "35ac82be-0138-4fdd-a1b6-0317c6ad9714"
+    },
+    {
+      "claim_id": "197df208-c8bd-428a-b004-47b2b11a9041",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "6f86af32-e1cf-4eb6-a622-03b40658c08c",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "3a666101-20b3-4568-abe0-b5a2e29f5868",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "b8e79b00-9a17-4b1a-ae7d-672d926a11a8",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "15ce5609-0988-417a-8768-9db5e5b22515",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "346f9a62-9a89-4994-9532-09002037bc4f",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "9e63a8cf-49a4-46fa-87da-b4f995af53f6",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "9cf6638b-1392-442a-a4f4-c9c1e88be2bd",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "b10dcde7-432c-4958-bde7-e704edbc9275",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "69f7450e-f9a6-4b23-a390-2c69a5cb90ca",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "cb1cca5d-e55f-4df2-917c-ef744feea4eb",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "2cd15149-be29-445d-a5db-496d05c2c3ab",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "3dd28621-1194-4314-970a-f089f309dc81",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "d73d4197-9015-49d1-b0f3-11869d3409c5",
+      "result_id": "68779391-bb45-4aaf-8da8-46ec2ae36302"
+    },
+    {
+      "claim_id": "a4bb1809-1b77-4fe6-bdc1-fb4d16c069df",
+      "result_id": "1bbc3e85-2b98-4a51-b7c0-656f6d82dc83"
+    },
+    {
+      "claim_id": "e041cc97-747c-4d13-ab47-6a993c16b14a",
+      "result_id": "1bbc3e85-2b98-4a51-b7c0-656f6d82dc83"
+    },
+    {
+      "claim_id": "4c768142-6baf-4ca1-a867-28bcaf802097",
+      "result_id": "1bbc3e85-2b98-4a51-b7c0-656f6d82dc83"
+    },
+    {
+      "claim_id": "6a8c5b02-0c2f-40f4-a584-8e98398a5c4c",
+      "result_id": "1bbc3e85-2b98-4a51-b7c0-656f6d82dc83"
+    },
+    {
+      "claim_id": "e09bbbdd-7e24-4e7a-8b41-22a56aa3d4c3",
+      "result_id": "1bbc3e85-2b98-4a51-b7c0-656f6d82dc83"
+    },
+    {
+      "claim_id": "c61e8194-96d3-434d-afe9-dc9156d81a47",
+      "result_id": "1bbc3e85-2b98-4a51-b7c0-656f6d82dc83"
+    },
+    {
+      "claim_id": "cbe96a14-cd60-4c8c-86b4-cc81e9ee035a",
+      "result_id": "1bbc3e85-2b98-4a51-b7c0-656f6d82dc83"
+    },
+    {
+      "claim_id": "f95be489-1ea2-43bb-8c46-24def378e826",
+      "result_id": "f4a3b40d-a645-4d8f-900b-473c9e028ec7"
+    },
+    {
+      "claim_id": "0a883a4d-29bb-43d9-b78d-4093552539b9",
+      "result_id": "f4a3b40d-a645-4d8f-900b-473c9e028ec7"
+    },
+    {
+      "claim_id": "f5e608d6-067c-45fd-896f-d1389984dbf0",
+      "result_id": "8b9201b7-ec79-422f-b54c-b16e04bb2f49"
+    },
+    {
+      "claim_id": "d0d51b5d-8f87-4453-aa64-0f423066cacc",
+      "result_id": "8b9201b7-ec79-422f-b54c-b16e04bb2f49"
+    },
+    {
+      "claim_id": "a4bcf94c-2e61-40e8-86d6-ab0d27b886fd",
+      "result_id": "5f9bbab7-258c-4958-a998-01218739b504"
+    },
+    {
+      "claim_id": "026060ff-f675-40a6-8bfb-1ae008a93271",
+      "result_id": "5f9bbab7-258c-4958-a998-01218739b504"
+    },
+    {
+      "claim_id": "8fb07985-e9a7-4fc1-aaa5-2d557a20ed7f",
+      "result_id": "5f9bbab7-258c-4958-a998-01218739b504"
+    },
+    {
+      "claim_id": "2d1be2aa-6c4c-4f69-ab9b-10aec40469b4",
+      "result_id": "5f9bbab7-258c-4958-a998-01218739b504"
+    },
+    {
+      "claim_id": "64e66b31-4e86-4e01-aab3-520f3ae3d29b",
+      "result_id": "5f9bbab7-258c-4958-a998-01218739b504"
+    }
+  ],
+  "comparisons": []
+}

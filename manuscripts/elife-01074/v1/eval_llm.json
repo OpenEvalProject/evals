@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors established 11 clonal parasite cultures from the HB3 isolate and measured transcript levels of 38 var genes (almost all functional HB3 var genes) at multiple time points over 60-79 generations. The nine 'starter genes' initially transcribed in these clones were representative of var repertoire diversity in terms of chromosomal location and Ups type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe the experimental design and initial observations. The methodology is clearly stated, the gene coverage is comprehensive and validated by citations (C3), and the diversity of starter genes (C5) provides a strong foundation for studying switching patterns. The experimental approach is sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Different starter genes showed markedly different rates of decline in transcript levels over time. Despite starting from diverse initial conditions, most cultures converged towards high transcription of var27 and/or var29 (both centrally located but with different promoter types), suggesting that antigenic switching is governed by an activation hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 present key observational data showing differential decline rates and convergence patterns. The specific examples (var29 remaining dominant in C6, var35 declining rapidly in C7) are supported by the data shown in figures. The inference of an activation hierarchy (C10) is reasonable given the convergence from diverse starting points, though it remains a hypothesis to be tested by subsequent modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors applied a previously published MCMC-based parameter estimation method to model var gene switching using two parameters: off-rates and switch biases. Both 16-gene and 38-gene models provided good fits to the data, with parameter estimates for starter genes being more accurate due to higher signal-to-noise ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14, and C15 describe the modeling approach and its performance. The method is based on prior work (C11), the model fits are visually confirmed in supplementary figures (C14), and the assessment of parameter accuracy (C15) is reasonable given the data quality differences between highly and lowly transcribed genes. The approach is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Estimated off-rates ranged from 0.3% to >5% per generation (mean ~2.9%), with var29 and var27 having exceptionally low off-rates. Off-rates of centrally located genes were significantly lower than subtelomeric genes (p=0.002, robust to uncertainty analysis p=0.035), but there was no significant effect of promoter type (UpsA vs non-UpsA, or UpsB vs UpsC) on off-rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 present parameter estimates and statistical analyses of off-rates. The statistical tests are appropriate (Welch's t-tests), significance is maintained after accounting for uncertainty (C20), and the conclusion that chromosomal location matters more than promoter type (C23) is well-supported by the data and consistent with prior work (Frank et al., 2007). The findings are robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Only a minority of genes were highly transcribed during the experiment. When starter genes were excluded and the remaining genes ranked by average transcript levels, the rankings were highly correlated between cultures (Spearman's \u03c1 > 0.8, p=10\u207b\u2075 for all pairs), indicating that antigenic switching is governed by an activation hierarchy independent of the currently activated gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide strong statistical evidence for an activation hierarchy. The high correlation coefficients and extremely low p-values (C25) across all culture pairs strongly support the conclusion that gene activation follows a consistent hierarchy (C26). The analysis appropriately excludes starter genes to avoid bias. This is a key finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "All genes showed high switch biases towards the same few genes, particularly var29 and var27. Activation biases formed a clear hierarchy spanning three orders of magnitude. Central genes had significantly higher activation biases than subtelomeric genes (p=0.009), with no independent effect of promoter type. Gene length and chromosomal location both significantly affected activation bias (ANOVA), with central short genes (Type 1 var genes) having ~10-fold higher activation biases than the rest of the repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 describe the activation bias hierarchy and its genetic correlates. The statistical analyses are appropriate (t-tests, ANOVA), results are robust to uncertainty analysis, and the findings are internally consistent. The identification of central short genes as having the highest activation biases (C35) is a major finding. The statistical evidence is strong and the biological interpretation is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "A likelihood ratio test showed that a model with individual switch biases (where the currently active gene influences switching direction) was significantly more likely than a model with identical switch biases for all genes (F=1.84, p<0.0001), confirming that antigenic switching is controlled by both an activation hierarchy and the currently active gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 present a formal model comparison using an appropriate statistical test (likelihood ratio test). The significant p-value supports the conclusion that the currently active gene influences switching direction, beyond the global activation hierarchy. This adds nuance to the activation hierarchy model and is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Switch biases were higher between var genes with matching chromosomal locations than between differently located genes (p=0.029), with no significant association with matching Ups types or gene lengths. However, this result lost statistical significance when accounting for uncertainty in parameter estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C40 describe a potentially interesting pattern in switch biases, but the authors appropriately note that significance is lost with uncertainty analysis (C40). The result is suggestive but requires confirmation with larger datasets. The authors are appropriately cautious about this finding, making it uncertain rather than unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The degree to which var genes share sequence blocks (network centrality) is positively correlated with activation bias, independent of chromosomal location and gene length (F=8.8, p=0.006). Simulation of gene conversion weighted by activation bias reproduced this correlation. Average sequence conservation is also positively correlated with activation bias (F=13.6, p=0.0009), suggesting a role for active gene transcription in generating antigenic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 present a novel finding linking activation bias to sequence diversity. The statistical analyses are appropriate (ANOVA with multiple factors), the simulation (C42) provides mechanistic support for the hypothesis, and the correlation with sequence conservation (C43) provides independent confirmation. The conclusion about transcription facilitating diversity generation (C44) is a reasonable inference, though it remains a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors found that high transcription levels are confined to central genes encoding only four PfEMP1 binding domains (Type 1 var genes) and result from high activation biases rather than low off-rates. This is consistent with previous observations of preferential central gene transcription in vitro and with prior modeling work showing off-rates have modest effects on transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 synthesize current findings with prior literature. The identification of Type 1 var genes as highly transcribed (C46) is supported by the data, and the attribution to activation bias rather than off-rates (C47) is a key mechanistic insight. The consistency with prior work (C45, C48) strengthens the conclusions. This is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Reanalysis of published NF54 strain data showed that centrally located genes encoding four binding domains were more highly transcribed (p=0.02), with PF3D7_0809100, PF3D7_0421300, and PF3D7_0800100 being most highly transcribed. These genes were previously reported as highly transcribed or frequently activated. NF54 transcription levels were also positively correlated with sequence relatedness (Spearman's \u03c1=0.3, p=0.044).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 provide independent validation of the HB3 findings in a different parasite strain. The reanalysis is appropriate, the statistical tests are valid, and the consistency with prior reports (C51-C52) and with the sequence relatedness finding (C53) strengthens confidence in the generalizability of the results. This is strong supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The direction of transcriptional switching depends on both intrinsic activation biases and the particular preferences of each deactivating gene. While variations in switch biases have modest effects in vitro, they are expected to play a greater role during infection where immune responses and binding affinities alter expression profiles. This could explain the previously proposed source-sink model of antigenic switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 integrate the findings on switch biases with broader implications. C54 is supported by the model comparison (C36-C37), C55 is a reasonable speculation about in vivo relevance, and C56 connects to prior theoretical work. The reasoning is sound, though C55 and C56 involve speculation about in vivo dynamics that cannot be directly tested with the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The correlation between activation bias and gene relatedness (independent of chromosomal location, gene length, and promoter type) suggests that gene transcription facilitates recombination, thereby generating and maintaining antigenic diversity. Transcription-associated recombination has been observed in other eukaryotes and could explain why different var gene groups display different levels of population diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 propose a mechanistic hypothesis linking transcription to diversity generation. The correlation is statistically robust (C41), the independence from confounding factors strengthens the inference (C60), and the phenomenon is known in other systems (C61). The hypothesis is plausible and testable, though it remains speculative for P. falciparum. The reasoning is sound and the conclusion appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors propose that some var genes may be under balancing selection, with conserved genes having in vivo survival advantages (possibly through binding affinity) that cause them to dominate early infections in naive hosts despite low in vitro activation rates. Rapid immunity acquisition against conserved genes would then drive a transition to more diverse variants. The proposed order of immunity acquisition (anti-UpsA then anti-UpsB/C) may reflect selection of long conserved genes rather than Ups group per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C68 present an integrative hypothesis to reconcile in vitro and in vivo observations. The hypothesis is internally consistent and addresses the apparent contradiction between low in vitro activation of UpsA genes (C64) and their association with severe disease. However, these claims are largely speculative (C63, C66-C68 are explicitly speculative), and the in vivo dynamics cannot be directly tested with the current in vitro data. The hypothesis is plausible but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The results demonstrate how selection pressures operating on multiple ecological scales have shaped the phenotypic plasticity of the P. falciparum antigenic repertoire. Var genes and their switching mechanisms have co-evolved to allow the parasite to express the most advantageous phenotype in response to its current environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 present broad evolutionary conclusions synthesizing the findings. While these are high-level interpretations, they are reasonable inferences from the data showing structured switching patterns, associations with sequence diversity, and potential links between in vitro and in vivo selection. The conclusions are appropriately framed as interpretations rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study's main findings are that antigenic switching is governed by a global activation hierarchy favoring short, highly diverse genes in central chromosomal locations; longer conserved genes (associated with severe infection) are rarely activated, implying in vivo fitness advantages; and activation rate is positively associated with sequence diversity, offering insights into antigenic diversity evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 summarize the paper's main findings from the abstract. C102 is strongly supported by the activation bias and off-rate analyses; C103 is supported by the data; C104 is a reasonable hypothesis to explain the discrepancy between in vitro and in vivo observations; C105 is supported by the correlation analyses (C41, C43); and C106 appropriately frames the implications. These represent the core contributions of the paper.",
+    "result_type": "MAJOR"
+  }
+]

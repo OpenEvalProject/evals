@@ -1,0 +1,1743 @@
+{
+  "submission": {
+    "id": "79c897c7-7538-4051-8008-0d4054accc10",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:19:57.772669Z",
+    "updated_at": "2025-11-28T22:19:57.772669Z"
+  },
+  "content": [
+    {
+      "id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "submission_id": "79c897c7-7538-4051-8008-0d4054accc10",
+      "content_type": "manuscript",
+      "content_text": "# The contrasting phylodynamics of human influenza B viruses\n\n## Authors\n\n- Dhanasekaran Vijaykrishna<sup>1</sup> \u2020\n- Edward C Holmes<sup>4</sup>\n- Udayan Joseph<sup>1</sup>\n- Mathieu Fourment<sup>4</sup>\n- Yvonne CF Su<sup>1</sup>\n- Rebecca Halpin<sup>5</sup>\n- Raphael TC Lee<sup>6</sup>\n- Yi-Mo Deng<sup>3</sup>\n- Vithiagaran Gunalan<sup>6</sup>\n- Xudong Lin<sup>5</sup>\n- Timothy B Stockwell<sup>5</sup>\n- Nadia B Fedorova<sup>5</sup>\n- Bin Zhou<sup>5</sup>\n- Natalie Spirason<sup>3</sup>\n- Denise K\u00fchnert<sup>7</sup>\n- Veronika Bo\u0161kov\u00e1<sup>8</sup>\n- Tanja Stadler<sup>8</sup>\n- Anna-Maria Costa<sup>9</sup>\n- Dominic E Dwyer<sup>10</sup>\n- Q Sue Huang<sup>11</sup>\n- Lance C Jennings<sup>12</sup>\n- William Rawlinson<sup>13</sup>\n- Sheena G Sullivan<sup>3</sup>\n- Aeron C Hurt<sup>3</sup>\n- Sebastian Maurer-Stroh<sup>6</sup>\n- David E Wentworth<sup>5</sup>\n- Gavin JD Smith<sup>1</sup> \u2020\n- Ian G Barr<sup>3</sup>\n\n### Affiliations\n\n1. Duke-NUS Graduate Medical School Singapore Singapore\n2. Yong Loo Lin School of Medicine National University of Singapore Singapore Singapore\n3. World Health Organisation Collaborating Centre for Reference and Research on Influenza Peter Doherty Institute for Infection and Immunity Melbourne Australia\n4. Marie Bashir Institute for Infectious Diseases and Biosecurity University of Sydney Sydney Australia\n5. J Craig Venter Institute Rockville United States\n6. Bioinformatics Institute Agency for Science, Technology and Research Singapore Singapore\n7. Department of Environmental Systems Science Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich Z\u00fcrich Switzerland\n8. Department of Biosystems Science and Engineering Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich Zurich Switzerland\n9. Royal Children's Hospital Parkville Australia\n10. Centre for Infectious Diseases and Microbiology Laboratory Services Westmead Hospital and University of Sydney Westmead Australia\n11. Institute of Environmental Science and Research National Centre for Biosecurity and Infectious Disease Upper Hutt New Zealand\n12. Microbiology Department Canterbury Health Laboratories Christchurch New Zealand\n13. Virology Division, SEALS Microbiology Prince of Wales Hospital Sydney Australia\n14. School of Population and Global Health University of Melbourne Melbourne Australia\n15. School of Biological Sciences Nanyang Technological University Singapore Singapore\n16. National Public Health Laboratory, Communicable Diseases Division, Ministry of Health Singapore Singapore\n17. Duke Global Health Institute Duke University Durham United States\n18. School of Applied Sciences and Engineering Monash University Churchill Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nA complex interplay of viral, host, and ecological factors shapes the spatio-temporal incidence and evolution of human influenza viruses. Although considerable attention has been paid to influenza A viruses, a lack of equivalent data means that an integrated evolutionary and epidemiological framework has until now not been available for influenza B viruses, despite their significant disease burden. Through the analysis of over 900 full genomes from an epidemiological collection of more than 26,000 strains from Australia and New Zealand, we reveal fundamental differences in the phylodynamics of the two co-circulating lineages of influenza B virus (Victoria and Yamagata), showing that their individual dynamics are determined by a complex relationship between virus transmission, age of infection, and receptor binding preference. In sum, this work identifies new factors that are important determinants of influenza B evolution and epidemiology.\n\n## Introduction\n\nIn addition to two subtypes of influenza A virus (H1N1 and H3N2), two lineages of influenza B viruses co-circulate in humans and cause seasonal influenza epidemics (Klimov et al., 2012). Influenza B causes a significant proportion of influenza-associated morbidity and mortality, and in some years is responsible for the major disease burden (Burnham et al., 2013; Paul Glezen et al., 2013). Although type A and B influenza viruses are closely related and have similarities in genome organization and protein structure (McCauley et al., 2012), they exhibit important differences in their ecology and evolution (Chen and Holmes, 2008; Tan et al., 2013). While new influenza A viruses periodically emerge from animal reservoirs to become endemic in humans (Neumann et al., 2009; Smith et al., 2009), influenza B viruses, first recognized in 1940, have circulated continuously in humans alongside influenza A viruses and are presumably derived from a single, as yet unknown, source (Francis, 1940; Chen and Holmes, 2008). Unlike influenza A viruses that can infect a wide range of species, influenza B infections are almost exclusively restricted to humans with only sporadic infections reported in wildlife (Osterhaus et al., 2000; Bodewes et al., 2013). While the evolutionary and epidemiological dynamics of human influenza A H1N1 and H3N2 viruses have been well documented at the global scale (Rambaut et al., 2008; Russell et al., 2008; Bedford et al., 2010; Bahl et al., 2011), the equivalent dynamics of the two influenza B virus lineages\u2014B/Yamagata/16/88-like and B/Victoria/2/87-like, henceforth termed the Yamagata and Victoria viruses\u2014are poorly understood.\n\nHuman influenza A H3N2 viruses exhibit limited genetic diversity at individual time-points due to periodic bottlenecks caused by strong selection\u2014known as \u2018antigenic drift\u2019\u2014in the hemagglutinin (HA) and neuraminidase (NA) genes. This results in an HA phylogenetic tree with a characteristic slender \u2018trunk\u2019 (Fitch et al., 1997) appearance (Figure 1A). H3N2 viruses also exhibit strong seasonal fluctuations in genetic diversity in temperate climate regions (such as Australia and New Zealand) (Rambaut et al., 2008), mainly due to the local extinction of viral lineages at the end of each influenza season (Rambaut et al., 2008). A similar but weaker evolutionary pattern is observed in the seasonal H1N1 viruses that have circulated in humans for the majority of the previous century (1918\u20131957 and 1977\u20132009), with short-term co-circulation of diverging virus populations (Nelson et al., 2008b) (Figure 1B). The pandemic H1N1 (H1N1pdm09) viruses have to date also only exhibited limited antigenic evolution since they emerged in 2009 (Figure 1C). In contrast, influenza B viruses are currently composed of two distinct lineages (Victoria and Yamagata) (Kanegae et al., 1990; Rota et al., 1990) (Figure 1D) that diverged approximately 40 years ago and which have since co-circulated on a global scale, despite frequent reassortment among them (Chen and Holmes, 2008). Although the HA genes of influenza B viruses are thought to exhibit lower rates of evolutionary change (nucleotide substitution) than both influenza A viruses (Ferguson et al., 2003; Chen and Holmes, 2008; Bedford et al., 2014), their antigenic characteristics are not well understood.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig1-v2.jpg)\n\n**Figure 1.:** Evolution of the HA genes of influenza A H3N2 virus, 2002\u20132013, (A), H1N1 virus, 1998\u20132009 (B), H1N1pdm09 virus, 2009\u20132013 (C), and influenza B Yamagata (red) and Victoria (black) lineage viruses, 2002\u20132013 (D). All phylogenetic trees were generated using approximately 1200 randomly selected full-length gene sequences sampled during 12 years.\n\nThe advent of global influenza surveillance and full genome sequencing over the past decade has shown that seasonal epidemic outbreaks of each influenza type are caused by the stochastic introduction of multiple virus lineages (Nelson et al., 2008a) and that the patterns of seasonal oscillation vary between temperate and tropical regions (Rambaut et al., 2008). Population genetic analysis (Rambaut et al., 2008), consistent with epidemiological data (Goldstein et al., 2011), suggests that the H3N2 and H1N1 subtypes of influenza A virus compete with each other resulting in the epidemic dominance of a single subtype. However, it is unclear whether the same dynamic patterns can be extended to influenza B viruses, or why the Victoria and Yamagata lineages have co-circulated for such an extended time period.\n\nTo understand the evolutionary and epidemiological dynamics of influenza B virus, we generated the full genomes of 908 influenza B viruses selected from over 26,000 laboratory confirmed influenza B cases in children and adults aged from birth to 102 years sampled during 2002\u20132013 in eastern Australia (Queensland, n = 275; New South Wales, n = 210; and Victoria, n = 207) and New Zealand (n = 216) (Figure 2). These regions were selected because influenza surveillance was well established and continuous during the sampling period and included the co-circulation and periodic dominance of influenza A and both influenza B virus lineages. Of note is that the influenza B virus strain used for vaccination in the region did not match the dominant circulating strain during 7 of the 13 years studied (Figure 2B). Our overall aim was to integrate, for the first time, data obtained from genetic, epidemiological, and immunological sources to better understand the evolution and interaction of these two lineages of influenza B virus.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig2-v2.jpg)\n\n**Figure 2.:** Percentage prevalence of influenza B viruses isolated from the three eastern Australian states and New Zealand (A). Coloured lines represent the proportion of influenza viruses typed as influenza B in each country (blue) and each of the eastern Australian states; Queensland (yellow), New South Wales (orange), and Victoria (pink). Bars represent the percentage prevalence of Victoria (black) and Yamagata (red). Data based on National Notifiable Diseases Surveillance system (NNDSS) for Australia and Environmental Science and Research (ESR) for New Zealand. The lineage of representative influenza B virus strains used in the trivalent influenza vaccine during these years in both countries (B). Excluding the years 2003 and 2009, influenza B viruses represented on average 24.6% (range 9.5\u201353.7%) and 31.5% (range 0.5\u201386.9%) of laboratory confirmed influenza viruses from Australia and New Zealand, respectively. The percentage of circulating influenza viruses that were influenza B was significantly lower in 2003 (AUS, 3.4%) and 2009 (AUS, 0.8%) than in other years, due to the dominance of a new H3N2 variant (A/Fujian/412/2002-like) in 2003 and the emergence of the H1N1 pandemic in 2009. Source of full genomes of Victoria and Yamagata viruses (C).\n\n## Results and discussion\n\n### Population dynamics of influenza B virus\n\nWe used the HA segment of both lineages to contrast their phylodynamics. First, to assess the changing patterns of genetic diversity of the two influenza B virus lineages in relation to their evolutionary histories, we used a flexible coalescent-based demographic model (Minin et al., 2008), which revealed stark differences in the epidemiological dynamics of the Victoria and Yamagata lineages (Figure 3A,B). Whereas the Victoria lineage experienced strong seasonal fluctuations in relative genetic diversity, little change was observed over the same time period for the Yamagata lineage, and these observations were not heavily affected by differences in sampling density (Figure 3\u2014figure supplement 1). While the almost invariant relative genetic diversity of the Yamagata lineage resembled that of seasonal H1N1 viruses (Figure 3D), the stark and almost annual changes of diversity in the Victoria lineage were similar to those observed for H3N2 virus (Figure 3C); although H3N2 viruses exhibited a greater frequency of oscillations than those estimated for Victoria lineage viruses. The strong seasonal fluctuations in diversity observed for Victoria lineage suggest that this lineage experiences strong bottlenecks between seasons similar to those described for H3N2 viruses (Bedford et al., 2011; Zinder et al., 2013), whereas the almost invariant relative genetic diversity for Yamagata suggests the continuous co-circulation of multiple lineages.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig3-v2.jpg)\n\n**Figure 3.:** The relative genetic diversity of the HA segments of influenza B Victoria (A), Yamagata (B) and influenza A H3N2 (C), and H1N1 2003\u20132008 and H1N1pdm09 2009\u20132013 viruses (D), isolated in Australia and New Zealand using the Gaussian Markov Random Field (GMRF) model.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Relative genetic diversity of the Victoria (black) and Yamagata (red) lineages estimated using the Gaussian Markov Random Fields (GMRF) Skyride model (as in Figure 3), using a subsampled Victoria data set, in which, the number of Victoria lineage viruses was randomly reduced to match the size of Yamagata for that year.\n\nMarked differences between the Victoria and Yamagata lineages were apparent in phylogenetic trees of the HA (Figure 4). The phylogenetic analysis of the HA genes showed that the Victoria lineage was characterized by a single prominent tree \u2018trunk\u2019, with side branches that circulated for short periods of time (1\u20133 years) (Figure 4). This evolutionary pattern parallels that observed for seasonal H3N2 viruses and is indicative of frequent selective bottlenecks due to the serial replacement of circulating strains, as would be expected under continual antigenic drift (Grenfell et al., 2004). In contrast, greater diversification was observed for the Yamagata lineage, with multiple clades co-circulating for extensive periods of time (Figure 4). For example, the three clades of Yamagata viruses circulating in 2013 diverged approximately 10 years ago, again paralleling the evolutionary pattern seen in seasonal H1N1 viruses. These patterns are clearly identifiable in the genealogical diversity skyline (Figure 4) in which the average time to common ancestor between contemporaneous samples fluctuated from 0 to <5 years for Victoria lineage, except during 2010 and 2011 where the genealogical diversity marginally increased to 7 years. In contrast, the genealogical diversity of Yamagata was consistently greater and gradually increased during the sampling period. The maintenance of genetic diversity through epidemic peaks and troughs as described for Yamagata (Figure 3B) is expected to result in the gradual increase of divergence times of contemporaneous samples.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig4-v2.jpg)\n\n**Figure 4.:** Phylogenetic relationship of the HA genes of influenza B Victoria (black) and Yamagata (red) lineage viruses inferred using the uncorrelated lognormal relaxed clock model. Genetic diversity through time was estimated by averaging the pairwise distance in time between random contemporaneous samples with a 1-month window on the same dated Maximum clade credibility (MCC) trees.\n\n### Transmission dynamics of influenza B virus\n\nAs each seasonal influenza epidemic provides important information on the epidemiological characteristics of both influenza B virus lineages, we utilized a birth\u2013death susceptible-infected-removed (BDSIR) (K\u00fchnert et al., 2014) phylodynamic model that simultaneously co-estimates seasonal phylogenies along with the basic reproductive number, R0, for each lineage. However, because the infected population contains both susceptible and non-susceptible hosts we report the effective reproductive number, Re. This analysis showed a greater variation in Re (median values, 1.1\u20131.3) between epidemics caused by the Victoria lineage, whereas the Re of Yamagata epidemics, were generally lower, varied only slightly, around 1.1 (1.08\u20131.14) (Figure 5A), indicating greater heterogeneity in transmission between seasons for Victoria viruses. Years in which both influenza viruses co-circulated in sufficient numbers (2005 and 2008) offer a chance for direct comparison of their phylodynamics. Both lineages transmitted with nearly equal force in 2005, whereas in 2008 the median Re of 1.27 (95% highest posterior density [HPD] of 1.18\u20131.37) estimated for the Victoria lineage was significantly greater than that of Yamagata at 1.11 (95% HPD 1.05\u20131.17). Analysis of the cumulative number of all influenza B positive cases through time for each season (Figure 5B) reveals significant differences in the exponential growth phase between the lineages, where Victoria lineage exhibited significantly higher initial growth rate resulting in a faster epidemic with larger number of infections. These results also show that in 2008 the Victoria lineage exhibited a significantly faster growth rate, in correlation with the high Re, coinciding with the year in which a new antigenic variant of the Victoria lineage was first detected (B/Brisbane/60/2008-like viruses) in Australia and New Zealand. This antigenic variant emerged as the globally dominant influenza B strain in the following years and has been continuously recommended (2009\u20132015) as the influenza B vaccine component since that period in both the Northern and Southern Hemispheres (Klimov et al., 2012).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig5-v2.jpg)\n\n**Figure 5.:** Effective reproductive number (Re) of influenza B Victoria (black) and Yamagata (red) viruses (of the HA data set) estimated for single epidemics (median and 95% highest posterior density (HPD) values) during years with sufficient number of sequences estimated using the BDSIR model (A). The cumulative number of cases from all influenza B virus positive samples for each of these years (B).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Estimates of effective population size, Re, using various S0 values for all Victoria (A) and Yamagata (C) lineage viruses isolated in Australia and for the largest monophyletic group of Victoria (B) viruses in Australia that clearly represent a single introduction.\n\nThe BDSIR model assumes a closed epidemic, but the large-scale phylogenies generated using all available global data indicated that each of the annual epidemics were caused by the introduction of multiple viral lineages that went extinct locally by the end of the seasonal epidemic (data not shown). We therefore investigated the effect of virus migration on the estimates of Re. First, we identified lineages that conformed to the assumption of a closed epidemic (i.e., lineages resulting from a single introduction into Australia and New Zealand) and with a sufficiently large local transmission for analysis (i.e., Victoria lineage viruses in 2005, 2006 and 2008). An independent estimation of Re for each of these lineages produced a minor but non-significant variation to those observed for the entire epidemic (Figure 5\u2014figure supplement 1B), indicating that, on average, the Re estimates for lineages resulting from multiple introductions were similar. Next, we used a continuous-time Markov chain (CTMC) phylogeographic process (Minin and Suchard, 2008) to estimate the number of migration events into and from Australia and New Zealand during the same period (Figure 6). This indicated that the number of introductions per year was greater for the Yamagata lineage (15\u201322, mean state transition count in all years) than for Victoria (3\u20138, except 16 and 14 during 2010 and 2011, respectively) (Figure 6), further suggesting an inverse relationship between Re (Figure 5) and the number of introduction events. Indeed, our results show that introductions of viruses with greater transmission efficiency (i.e., high Re), such as Victoria/2008, resulted in the epidemic dominance of such single strains, whereas epidemics of the Yamagata lineage with lower Re values likely resulted in slower and shorter transmission chains with reduced competition, in turn allowing the co-circulation (and detection) of multiple introduced lineages. Additionally, we identified that, combined, Australia and New Zealand were net importers of influenza viruses, except during 2002 and 2008 when the net export of the Victoria lineage was similar to the import observed during the same years (Figure 6). The higher transmission rate for Victoria/2008 viruses (i.e., B/Brisbane/60/2008-like viruses) may have also caused the successful seeding of these viruses globally (as described above). Taken together, our results support the concept of a global metapopulation seeding subsequent epidemics elsewhere (Bedford et al., 2010; Bahl et al., 2011), provided the virus is transmitted efficiently as observed during 2008 in this study.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig6-v2.jpg)\n\n**Figure 6.:** Estimated counts of import and export of Victoria (black) and Yamagata (red) between Australia and New Zealand and rest of the world, using the HA gene data set. Error bars represent the 95% highest posterior density (HPD) values of each point.\n\n### Genome-wide evolutionary dynamics of influenza B viruses\n\nTo understand the genome-wide evolutionary dynamics of the two influenza B virus lineages, we inferred temporal changes in genetic diversity for all remaining gene segments (Figure 7). These analyses showed that the patterns observed for the NA and internal gene segments were similar to those observed for the HA genes described above. The single exception was the NP genes of both lineages where substantial differences occurred throughout their history. During 2002\u20132007, the peaks of relative genetic diversity of the Victoria NP was higher than all remaining gene segments following which this lineage was not identified in our surveillance, whereas the Yamagata NP showed additional peaks during 2010 and 2011 that corresponded to the NP peaks observed for the Victoria genes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig7-v2.jpg)\n\n**Figure 7.:** Relative genetic diversity of each gene segments of Victoria (black) and Yamagata (red) lineages estimated using the Gaussian Markov Random Fields (GMRF) Skyride model (as in Figure 3).\n\nAs genomic reassortment impacts levels of genetic diversity, we conducted phylogenetic analyses of all eight genome segments of the 908 viruses. Comparison of these phylogenies revealed frequent reassortment within the two lineages of influenza B virus (data not shown) and a few instances of reassortment between them (Figure 8). During the sampling period, the Victoria lineage HA gene repeatedly acquired internal gene segments from Yamagata lineage viruses to form novel reassortants. In particular, during 2004 a subpopulation (approximately 15%) of Victoria-like viruses acquired all internal gene segments (PB2, PB1, PA, NP, MP, and NS) from the Yamagata lineage viruses. Interestingly, all remaining inter-lineage reassortment events of the Victoria HA lineages involved the acquisition of the Yamagata NP gene during 2007 and 2008 (Figure 8E), which resulted in the extinction of the previously circulating Victoria lineage NP gene. These patterns were consistent with the reconstruction of the population genetic history for the NP gene where we observed additional peaks in genetic diversity following 2007/2008 when the Yamagata NP was acquired by Victoria viruses (Figure 7), indicating a major genome-level transition for Victoria lineage viruses. In contrast, the only inter-lineage reassortment events for the virus carrying the Yamagata HA occurred during 2002 and 2004 (red arrows in Figure 8A,F), when the NA and MP genes were derived from the Victoria lineage viruses, but these viruses went extinct within the same influenza season. In sum, these results show that the HA gene of Victoria viruses is placed in different genetic backgrounds at a higher rate and this is likely to have important fitness consequences.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig8-v2.jpg)\n\n**Figure 8.:** Evolutionary relationships of neuraminidase (A), polymerase basic 2 (B), polymerase basic 1 (C), polymerase acidic (D), nucleoprotein (E), matrix (F), and non-structural (G) genes of Victoria and Yamagata lineage viruses inferred using the maximum likelihood analysis of 908 full genome sequences. Lineages are coloured based on the HA lineage: Victoria (black) and Yamagata (red) and arrows highlight inter-lineage reassortment.\n\nPhylogenies also suggest that the PB2 and PB1 gene trees (Figure 8B,C) exhibit deep divergence, similar to the HA gene where co-circulating viruses contain distinct Victoria and Yamagata genes. In contrast, the other gene segments exhibit relatively recent divergence indicating that the prevailing diversity of these genes originates from a single lineage. These results are consistent with a detailed investigation of long term reassortment patterns of influenza B virus lineages that revealed genetic linkage between the PB2, PB1 and HA protein genes (Dudas et al., 2015). Specifically, we observe that the PB2, PB1 and HA genes were consistently derived from a single lineage, except for the short-lived subpopulation in 2004.\n\n### Differential selection pressure between lineages\n\nDespite the marked differences in their epidemiological and evolutionary dynamics, the HA genes of the two influenza B lineages both evolved at a rate of approximately 2.0 \u00d7 10\u22123 subs/site/year (Table 1), comparable to those previously estimated for a smaller (n = 102) global sample of influenza B viruses collected during 1989\u20132006 (Chen and Holmes, 2008) (mean nucleotide substitution rate of 2.15 \u00d7 10\u22123 subs/site/year). These rates were considerably lower than those estimated for influenza A H3N2 and H1N1 viruses (5.5 \u00d7 10\u22123 subs/site/year, 4.0 \u00d7 10\u22123 subs/site/year, respectively) (Rambaut et al., 2008). In contrast, analysis of the ratio of the number of nonsynonymous and synonymous substitutions per site (dN/dS) revealed significant differences between the influenza B virus lineages, with the Victoria lineage viruses having accumulated more nonsynonymous substitutions (dN/dS = 0.19) than the Yamagata lineage (dN/dS = 0.13) (p-value, <0.05). In addition, two amino acid residues in the Victoria HA (positions 212 and 214) were revealed to have experienced positive selection (p < 0.05), whereas no positively selected sites were observed in the Yamagata lineage over the time period studied. Similarly, the Victoria lineage exhibited a greater dN/dS (ratio = 1.37) on internal vs external branches of the HA phylogeny compared to the Yamagata lineage (ratio = 0.98), indicating that amino acid changes have been fixed more frequently in Victoria than Yamagata lineage viruses (Table 1). Taken together, these results indicate that the Victoria lineage is under greater positive selection pressure, and hence likely to experience greater antigenic drift, than the more conserved Yamagata lineage.\n\n**Table 1.**\n Nucleotide substitution rates (nucleotide substitutions/site/year) and selection pressures (dN/dS) of influenza B viruses from Australia and New Zealand during 2002\u20132013\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Mean substitution rates</th>\n      <th></th>\n      <th colspan=\"3\">Branch dN/dS</th>\n      <th colspan=\"2\">Site dN/dS</th>\n    </tr>\n    <tr>\n      <th>Segment*</th>\n      <th>(95% HPD)</th>\n      <th>Global dN/dS</th>\n      <th>Internal</th>\n      <th>External</th>\n      <th>Internal/External</th>\n      <th>No. +ve (sites)</th>\n      <th>No. \u2212ve</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"8\">Victoria</td>\n    </tr>\n    <tr>\n      <td>PB2</td>\n      <td>1.49 (1.28\u20131.69)</td>\n      <td>0.08 (0.07\u20130.09)</td>\n      <td>0.02</td>\n      <td>0.03</td>\n      <td>0.55</td>\n      <td>0</td>\n      <td>373</td>\n    </tr>\n    <tr>\n      <td>PB1</td>\n      <td>0.14 (0.12\u20130.16)</td>\n      <td>0.08 (0.07\u20130.09)</td>\n      <td>0.06</td>\n      <td>0.05</td>\n      <td>1.08</td>\n      <td>1 (474)</td>\n      <td>402</td>\n    </tr>\n    <tr>\n      <td>PA</td>\n      <td>1.65 (1.44\u20131.88)</td>\n      <td>0.13 (0.11\u20130.15)</td>\n      <td>0.08</td>\n      <td>0.08</td>\n      <td>1.03</td>\n      <td>1 (700)</td>\n      <td>334</td>\n    </tr>\n    <tr>\n      <td>HA</td>\n      <td>2.00 (1.74\u20132.57)</td>\n      <td>0.19 (0.17\u20130.22)</td>\n      <td>0.12</td>\n      <td>0.09</td>\n      <td>1.37</td>\n      <td>2 (212, 214)</td>\n      <td>239</td>\n    </tr>\n    <tr>\n      <td>NP</td>\n      <td>1.04 (0.76\u20131.34)</td>\n      <td>0.09 (0.07\u20130.12)</td>\n      <td>0.07</td>\n      <td>0.05</td>\n      <td>1.22</td>\n      <td>0</td>\n      <td>49</td>\n    </tr>\n    <tr>\n      <td>NA</td>\n      <td>2.04 (1.72\u20132.36)</td>\n      <td>0.31 (0.28\u20130.35)</td>\n      <td>0.25</td>\n      <td>0.24</td>\n      <td>1.02</td>\n      <td>6 (46, 73, 106, 145, 146, 395)</td>\n      <td>129</td>\n    </tr>\n    <tr>\n      <td>MP</td>\n      <td>1.44 (1.17\u20131.70)</td>\n      <td>0.06 (0.04\u20130.09)</td>\n      <td>0.00</td>\n      <td>0.02</td>\n      <td>0.01</td>\n      <td>0</td>\n      <td>87</td>\n    </tr>\n    <tr>\n      <td>NS</td>\n      <td>1.71 (1.38\u20132.06)</td>\n      <td>0.45 (0.38\u20130.53)</td>\n      <td>0.11</td>\n      <td>0.30</td>\n      <td>0.37</td>\n      <td>3 (116, 120, 249)</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td colspan=\"8\">Yamagata</td>\n    </tr>\n    <tr>\n      <td>PB2</td>\n      <td>2.00 (1.74\u20132.25)</td>\n      <td>0.06 (0.05\u20130.07)</td>\n      <td>0.03</td>\n      <td>0.02</td>\n      <td>1.44</td>\n      <td>0</td>\n      <td>443</td>\n    </tr>\n    <tr>\n      <td>PB1</td>\n      <td>1.78 (1.56\u20132.00)</td>\n      <td>0.07 (0.05\u20130.08)</td>\n      <td>0.02</td>\n      <td>0.03</td>\n      <td>0.82</td>\n      <td>1 (357)</td>\n      <td>392</td>\n    </tr>\n    <tr>\n      <td>PA</td>\n      <td>1.60 (1.35\u20131.84)</td>\n      <td>0.10 (0.08\u20130.12)</td>\n      <td>0.03</td>\n      <td>0.05</td>\n      <td>0.57</td>\n      <td>0</td>\n      <td>204</td>\n    </tr>\n    <tr>\n      <td>HA</td>\n      <td>2.01 (1.73\u20132.29)</td>\n      <td>0.13 (0.11\u20130.16)</td>\n      <td>0.07</td>\n      <td>0.07</td>\n      <td>0.98</td>\n      <td>0</td>\n      <td>245</td>\n    </tr>\n    <tr>\n      <td>NP</td>\n      <td>1.87 (1.65\u20132.10)</td>\n      <td>0.10 (0.08\u20130.11)</td>\n      <td>0.08</td>\n      <td>0.07</td>\n      <td>1.16</td>\n      <td>0</td>\n      <td>308</td>\n    </tr>\n    <tr>\n      <td>NA</td>\n      <td>2.25 (1.90\u20132.60)</td>\n      <td>0.20 (0.17\u20130.24)</td>\n      <td>0.30</td>\n      <td>0.18</td>\n      <td>1.70</td>\n      <td>1 (295)</td>\n      <td>124</td>\n    </tr>\n    <tr>\n      <td>MP</td>\n      <td>2.20 (1.85\u20132.55)</td>\n      <td>0.05 (0.03\u20130.07)</td>\n      <td>0.05</td>\n      <td>0.02</td>\n      <td>2.08</td>\n      <td>0</td>\n      <td>102</td>\n    </tr>\n    <tr>\n      <td>NS</td>\n      <td>2.00 (1.66\u20132.39)</td>\n      <td>0.33 (1.66\u20132.39)</td>\n      <td>0.42</td>\n      <td>0.32</td>\n      <td>1.32</td>\n      <td>0</td>\n      <td>30</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Analysis was restricted to the non-overlapping regions of M1 and NS1, for the MP and NS segments, respectively._\n\n### Antigenic evolution\n\nWe constructed antigenic maps (Smith et al., 2004) using hemagglutination inhibition (HI) assay measurements for 87 Victoria and Yamagata viruses isolated during 2002\u20132013 and using 20 reference antigens and antisera (Figure 9A). These revealed that Victoria lineage viruses exhibited antigenic variation that generally clustered according to the year of isolation and phylogenetic distance, indicative of ongoing antigenic drift, and similar to that previously reported for H3N2 viruses (Smith et al., 2004; Bedford et al., 2014). In contrast, the antigenic distances for the Yamagata viruses had no correlation with time or phylogenetic distance and showed greater levels of antigenic cross-reactivity between antisera raised to both earlier and more recent viruses. Structural modeling showed that the degree of antigenic distance between strains of Victoria viruses was often linked to the proximity of single amino acid substitutions to the receptor binding pocket (RBP) of the HA (Figure 9B; see structural differences section below), in agreement with recent work on H3N2 (Koel et al., 2013). Importantly, the closer the amino acid change between two strains was to the RBP, the greater the antigenic difference between them.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig9-v2.jpg)\n\n**Figure 9.:** Antigenic map showing relative antigenic differences of Victoria and Yamagata lineage viruses (circles) measured using the hemagglutinin inhibition (HI) assay for each strain and coloured by year of isolation (A). Residues contributing to HI titer changes (B). Among the nine amino acid changes that we detected between antigenically different Victoria viruses, three changes produced strong HI titer change (>100) (red), 3 medium (\u224850) (orange) and 3 low (<20) (yellow). Changes that produced the strongest HI titer change were the closest to the receptor binding pocket (blue arrow), highlighting the significance of their proximity to HI titer change. Amino acids were mapped on previously resolved influenza B virus structure (PDB:4FQM). Detailed HI titer values and reference antigens used are provided in the Dryad source data (Vijaykrishna et al., 2015).\n\n### Heterogeneous age distributions of the lineages\n\nIn addition to genetic, antigenic, and evolutionary differences, we found a notable difference in the age distribution of infected cases for the two influenza B virus lineages (Figure 10) that was generally consistent throughout our sampling period (Figure 10\u2014figure supplement 1). On average, Victoria viruses infected a younger population (mean 16.8 years, median 11 years) compared to Yamagata viruses (mean 26.6 years, median 18 years). Although the proportion of cases under 6 years were similar in both lineages (28.8% of Victoria and 26.8% of Yamagata), there were 1.7 times more cases aged 6\u201317 years infected with a Victoria lineage virus (39.0% Victoria vs 22.7% Yamagata), while this ratio was almost reversed for those aged 18 years and over (32.2% Victoria vs 50.0% Yamagata; \u03c72, p < 0.0001) (Table 2). Thus, nearly 70% of Victoria lineage viruses were identified in children <18 years, whereas the Yamagata lineage exhibited a bimodal age distribution with a significant shift toward infections in individuals aged >25 years (Figure 10). These differences in age distribution are significant and unlikely to be explained by systematic bias because the same pattern was observed in both countries, and are consistent with data from Guangdong, China (Tan et al., 2013), and Slovenia (So\u010dan et al., 2014) during the 2009\u20132010 and 2010\u20132013 epidemic seasons, respectively.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig10-v2.jpg)\n\n**Figure 10.:** Density of age distribution of influenza B virus positive samples of Victoria (black) and Yamagata (red) lineages, collected from Australia and New Zealand during 2002\u20132013. Patient age was available for 5260 samples. The age distributions by lineage were compared by histogram using 2-year bins. Also see Table 2 for comparison by age categories and Dryad source data for mean and median age for each year.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** Mean and median of age distribution of influenza B viruses (A). Box-whisker plot with mean (square) and age distribution of all influenza B viruses cases (jitter plot) are shown for years with greater than 100 samples for either lineage (B).\n\n**Table 2.**\n Age distribution by group\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Victoria</th>\n      <th colspan=\"2\">Yamagata</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th>Age</th>\n      <th>n</th>\n      <th>%</th>\n      <th>n</th>\n      <th>%</th>\n      <th>p value*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>&lt;6</td>\n      <td>1007</td>\n      <td>28.8</td>\n      <td>473</td>\n      <td>26.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>6\u201317</td>\n      <td>1361</td>\n      <td>39</td>\n      <td>402</td>\n      <td>22.7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u226518</td>\n      <td>1124</td>\n      <td>32.2</td>\n      <td>893</td>\n      <td>50.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>3492</td>\n      <td>100</td>\n      <td>1768</td>\n      <td>100</td>\n      <td>&lt;0.0001</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Age categories were compared by lineage using a \u03c72 test._\n\nA direct consequence of antigenic drift is the possibility for previously infected individuals to become reinfected. Subsequently, higher rates of antigenic drift in the Victoria lineage should lead to a more even age distribution of cases, whereas lower rates of antigenic drift should lead to an age distribution of cases that are skewed towards younger individuals. Although viruses of the Victoria lineage were consistently reported at a higher frequency during our surveillance period, the observed skew towards children runs counter to this expectation (Figure 10). One possible explanation is that the higher Re of the Victoria viruses reduces the mean age of infection, as expected in the case of a disease like influenza that imparts some immunity following infection (Anderson and May, 1992). Alternatively, the inability of Victoria viruses to infect an equivalent proportion of other age groups may mean that the relatively older population is better protected against this virus because of a broader immune response. The former scenario is supported by an increase in the mean age of infection from 15 years (median, 12) in 2008 to 20.5 years (median, 14) in 2011 for the B/Brisbane/60/2008-like antigenic variant of the Victoria lineage, which coincided with a gradual drop in Re from its peak in 2008 (Figure 5A).\n\n### Structural differences among influenza B viruses\n\nFinally, we sought to determine whether differences in the evolutionary and epidemiological dynamics between the two influenza B lineages resulted from variation in HA structure and binding preferences. First, we compared amino acid substitutions per site within and between influenza virus lineages from 2002 to 2012 and mapped these onto structural models of representative influenza B virus strains (Figure 11). The higher rates of amino acid change observed in the Victoria HA (Figure 11A) were consistent with the stronger selective pressures on this viral lineage. Importantly, these changes occurred in three major clusters situated around 21, 29, and 37 \u00c5 to the RBP of the HA domain that also comprises potential antigenic sites. Notably, all changes in the closest cluster (21 \u00c5) were comprised exclusively of Victoria lineage amino acid changes, while the few changes observed in Yamagata lineage viruses were distant to the RBP (Figure 11C). Overall, however, amino acid changes in both influenza B virus lineages were less frequent than those in influenza A viruses sampled over a similar time period, with the H3N2 viruses showing more extensive structural change (Figure 11\u2014figure supplement 1).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig11-v2.jpg)\n\n**Figure 11.:** Amino acid changes observed within and between influenza B virus lineages (A). Arrow colours in (A) correspond to inter- (B) or intra- (C) lineage amino acid changes, based on previously resolved crystal structure (PDB:4FQM). Amino acids in red represent differences between the two lineages that were retained over all sampling years; yellow represents differences that are newly observed in 2012 compared to 2002; and magenta represents changes lost in 2012 compared to 2002. Amino acids in blue and green represent changes that occurred in Victoria and Yamagata viruses between 2002 and 2012, respectively; whereas cyan represents difference between 2002 and 2012 shared between both lineages. These amino acid changes occur in regions that cluster around 21, 29, and 37 \u00c5 distant from the RBP (C). Structural differences in RBP among recent Victoria (B/Brisbane/60/2008) and Yamagata (B/Florida/4/2006) strains with a human-like \u03b1-2,6 host receptor analogue (magenta) modeled within the viral RBP (D). D was based on crystal structures PDB:4FQM and PDB:4FQJ with side-chains minimized after addition of ligand from PDB:2RFU through superposition. Regions differing in backbone conformation are shown in orange for Victoria and cyan for Yamagata, while conserved regions are shown in gray. Residues with conserved backbone structure but different amino acid side-chains are shown in red for Victoria and blue for Yamagata. Side-chains are shown only for residues within 5 \u00c5 of the receptor ligand and differing between the lineages. Structural view of receptor binding pocket with \u03b1-2,6- (green) and \u03b1-2,3-linked (red) host receptor and glycans (blue) (E). E was based on crystal structure PDB:4FQM, with the addition of ligands from PDB:2RFU and PDB:2RFT through superposition and no minimization. The presence of a glycan on site 212 allows binding only to 2,6-linked receptors, while loss of the glycan allows binding to both \u03b1-2,3- and \u03b1-2,6-linked receptors. Brown arrows (B and C) indicate relative position of receptor binding pocket (RBP), whereas black arrow heads (C and D) point to site of known antigenic cluster transition (Koel et al., 2013).\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig11-figsupp1-v2.jpg)\n\n**Figure 11\u2014figure supplement 1.:** Amino acid mutations accumulated over 10 years (red) using different rotations of the hemagglutinin monomer structure of influenza B Victoria (2002\u20132012) (PDB:4FQM) (A), Yamagata (2002\u20132012) (PDB:4FQM) (B) in comparison to seasonal influenza A H3N2 (1999\u20132009) (PDB:2YP4) (C), and H1N1 (1997\u20132007) (PDB:3UBE) (D) viruses. Arrows point to receptor binding pocket.\n\nNotably, we also observed fundamental structural differences between the lineages (Figure 11B). Crystal structures showed extensive backbone differences around amino acid sites 165 and 180 that lie near the RBP as well as residue differences in the helix close to where \u03b1-2,3 and \u03b1-2,6 ligands differ structurally, thereby potentially influencing receptor binding (Figure 11D). Previous experiments suggest that Yamagata viruses bind predominantly to \u03b1-2,6-linked sialic acid host receptors while Victoria viruses have both \u03b1-2,3 and \u03b1-2,6 binding capacities (Wang et al., 2012; Velkov, 2013). Binding differences may also originate in part from differences in N-glycosylation patterns between the lineages (Figure 11E, 12). While both lineages share a possible glycan at Asn 160, only Victoria has a functional N-glycosylation site at Asn 248, although its distance from the receptor may account for only a limited role in binding differences. On the other hand, N-glycosylation at Asn 212 occurs in both lineages but has a lower overall frequency in Victoria strains. In light of the positive selection acting on codon sites 212 and 214 in the Victoria lineage, it is interesting to note that amino acid changes in either site would abolish the N-glycosylation at 212, thereby highlighting a possible functional consequence of gain or loss of a glycan at this site. Furthermore, position 212 is located at the exit of the RBP which is used by \u03b1-2,3-linked sialic acid host receptors, and loss of N-glycosylation at 212 consequently adds capacity to bind \u03b1-2,3 and not just \u03b1-2,6-linked sialic acid host receptors (Figure 11E). Importantly, all our sequenced viruses have been passaged in MDCK cells to avoid egg adaptation artifacts in this context (Gambaryan et al., 1999). Interestingly, we observed that loss of N-glycosylation at site 212 was associated with an increased proportion in the younger (0\u20135 years) age group (Figure 12). We therefore hypothesize that subtle differences in the prevalence of \u03b1-2,3- and \u03b1-2,6-linked glycans on the cells of the respiratory tract of young children compared to adults (Nicholls et al., 2007; Walther et al., 2013), combined with partial changes in glycosylation patterns, could account for the observed differential age distribution of the two influenza B lineages.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/05055/elife-05055-fig12-v2.jpg)\n\n**Figure 12.:** Yamagata viruses showed five instances of glycosylation loss at 212, compared to 71 instances in Victoria, hence Victoria lineage strains have been analyzed in detail here. Temporal distribution of age groups and glycosylation at 212 for all Victoria strains (A). Summary of odds ratio (OR) for association of glycosylation loss at 212 with the different age groups (B). OR values >1 indicate that it is more likely to find a 212 loss in the respective age group, whereas values <1 indicate that 212 losses are less likely to be found in the respective groups. The following guideline helps judging significance of OR: strong positive association >3; moderate positive association 1.5\u20133; moderate negative association 0.33\u20130.66; strong negative association <0.33.\n\n### Conclusions\n\nThe genomic and epidemiological data analyzed here provide important insights into the phylodynamics of the two lineages of influenza B virus currently circulating in humans. In particular, we find significant differences in the evolutionary and epidemiological dynamics between the Victoria and Yamagata lineages (Table 3). Central to this is the observation that the phylodynamic pattern of the Victoria lineage HA gene is indicative of a virus population under greater selection pressure that escapes host immunity by accruing beneficial amino acid substitutions in the HA gene. Indeed, theory predicts that the highest rate of viral adaptation occurs at intermediate levels of immune pressure (Grenfell et al., 2004) which may characterize the Victoria lineage. Such an evolutionary pattern ensures that there is a constant supply of susceptible individuals for Victoria lineage viruses\u2014both na\u00efve and reinfected individuals which in turn increases Re\u2014which then exhibit a pattern of genomic diversity and lineage turnover that is significantly faster and more periodic than Yamagata lineage viruses.\n\n**Table 3.**\n Summary of evolutionary and epidemiological characteristics of influenza B virus lineages\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristics</th>\n      <th>Victoria</th>\n      <th>Yamagata</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age distribution</td>\n      <td>younger (mean 16.8, median 11)</td>\n      <td>older (mean 26.6, median 18)</td>\n    </tr>\n    <tr>\n      <td>Genetic diversity</td>\n      <td>strong seasonal changes</td>\n      <td>weak seasonal changes</td>\n    </tr>\n    <tr>\n      <td>R (medians)</td>\n      <td>higher (1.13\u20131.27)</td>\n      <td>lower (1.08\u20131.14)</td>\n    </tr>\n    <tr>\n      <td>Positive selection</td>\n      <td>stronger</td>\n      <td>weaker</td>\n    </tr>\n    <tr>\n      <td>Antigenic drift</td>\n      <td>relatively strong</td>\n      <td>relatively weak</td>\n    </tr>\n    <tr>\n      <td>Reassortment</td>\n      <td>high inter-sublineage reassortment, with lower intra-sublineage reassortment</td>\n      <td>low inter-sublineage reassortment, with greater intra-sublineage reassortment</td>\n    </tr>\n    <tr>\n      <td>Receptor binding preference</td>\n      <td>\u03b1-2,3- and \u03b1-2,6-linked sialic acid</td>\n      <td>mainly \u03b1-2,6 linked sialic acid</td>\n    </tr>\n  </tbody>\n</table>\n\nIn contrast, the phylodynamic patterns exhibited by Yamagata viruses are indicative of a virus population that exhibits slower and less periodic dynamics, reflected in a lower and more consistent Re, in turn suggesting that these viruses are under weaker immune selection pressure and accordingly experience weaker antigenic drift. Interestingly, clinical trials of influenza B virus vaccination in children (Skowronski et al., 2011) and experimental infection of mice (Skowronski et al., 2012) showed that the Yamagata antigens produced a stronger immune response than the Victoria antigens. If natural infection with influenza B virus was similar, this would imply that Yamagata viruses are less able to evolve through antigenic drift and therefore escape the immune response (Grenfell et al., 2004).\n\nWe propose that these fundamental differences in evolutionary and epidemiological dynamics are driven by differences in hemagglutinin binding preferences. Specifically, Victoria viruses appear to have both \u03b1-2,3- and \u03b1-2,6-linked sialic acid binding capacities (Wang et al., 2012; Velkov, 2013), while Yamagata viruses predominantly bind to \u03b1-2,6-linked glycans on cells in the human respiratory tract. Experimental studies in children (aged up to 7) (Nicholls et al., 2007) and adults have shown that the respiratory tissue of children mainly have \u03b1-2,3-linked receptors with a lower level of \u03b1-2,6-linked receptors than adults, and these differences among the different age groups may in part account for the different age distribution of the two B lineages. In turn, the greater propensity to infect children will increase Re, initiating the epidemiological and evolutionary pattern that characterizes the Victoria lineage. It remains to be determined whether the broadly equivalent phylodynamic differences between the H3N2 and seasonal H1N1 types of influenza A virus are similarly due to basic differences in the structure of their respective HA proteins. Furthermore, to better understand the bimodal age distribution in Yamagata, where a significant reduction of infection was observed among the older children\u2013young adult group (<25 years), additional experimental studies of the receptor distribution in all age groups are necessary.\n\nThese observations have implications for the future control of influenza B virus in the human population. While the co-circulation of divergent Yamagata viruses reported here has and can confound the accurate selection of vaccine strains, our analyses also indicate that the Yamagata viruses are under weaker positive selection and antigenic drift, and, on average, infect an older group of people who are more likely to have a higher level of cross-reactive antibodies to the B lineage viruses compared to children. As a consequence, there is a greater chance that, given sufficient coverage, Yamagata viruses might experience a major drop in prevalence over time through targeted control methods, such as the extensive use of quadrivalent influenza vaccines containing both B lineages, in contrast to the more adaptable Victoria viruses.\n\n## Materials and methods\n\n### Surveillance\n\nInfluenza B positive samples collected between 2002 and 2013 from subjects in eastern Australia (Victoria, New South Wales and Queensland) and from New Zealand and associated metadata, including date of isolation and age of host, were sent to the WHO Collaborating Centre for Reference and Research on Influenza, Melbourne, from National Influenza Centres and other laboratories as part of the World Health Organization Global Influenza Surveillance and Response System (WHO GISRS). Data deposited in Dryad data repository under DOI: 10.5061/dryad.n940b (Vijaykrishna et al., 2015).\n\n### Virus isolation\n\nInfluenza B viruses were isolated or re-isolated in MDCK cells (ATCC-CCL 34) from original clinical samples or virus isolates and typed as B/Yamagata or B/Victoria using HI analysis or by molecular assay (Deng et al., 2013). Viruses were stored at \u221280\u00b0C until sequenced.\n\n### Sequencing of viral RNA genome\n\nWe sequenced the complete genomes of 908 laboratxory confirmed influenza B virus MDCK or MDCK-SIAT cell propagated isolates passaged 1\u20134 times from eastern Australia and New Zealand using a novel methodology (Zhou et al., 2014). Influenza B virus genomes were amplified using the universal influenza B genomic amplification strategy that enables amplification of the complete genome of any influenza B virus in a one-step single tube/well reaction. Specifically, RNA was isolated from 130 \u03bcl of culture supernatant using ZR-96 Viral RNA Kit (Zymo Research, Irvine, CA) and eluted in 30 \u03bcl of RNase-free water. 3 \u03bcl of the RNA was mixed with FluB Universal Primer Cocktail (Zhou et al., 2014) and converted to cDNA and amplified with the SuperScript III One-Step RT-PCR System (Life Technologies, Grand Island, NY). The amplicons were fragmented, flanked by sequencing adaptors, clonally amplified onto IonSphere particles, and sequenced on the Ion Torrent PGM platform following manufacturer's instruction. The sequence reads were sorted by bar code to separate different viruses and used to assemble viral genomes (sequence accession numbers are available in the Dryad data repository under DOI: 10.5061/dryad.n940b).\n\n### Phylogenetic analysis\n\nSequences were curated, and maximum likelihood (ML) phylogenetic trees were inferred for each gene segment independently from the samples described above. ML trees were estimated using iqtree v0.9.5 (Minh et al., 2013) using the best-fit nucleotide substitution model, chosen by the Bayesian Information Criterion (BIC). The data were further divided into separate lineages (i.e., Victoria and Yamagata) and time-scaled phylogenies and rates of nucleotide substitution for each were inferred using a relaxed molecular clock model in a Bayesian Markov Chain Monte Carlo (MCMC) framework with the program BEASTv1.8 (Drummond et al., 2012) that incorporates virus sampling dates to concurrently estimate phylogenetic trees, rates of nucleotide substitution, and the dynamics of population genetic diversity using a coalescent based approach. The analysis was conducted with a General Time Reversible (GTR) model with a gamma (\u0393) distribution of among-site rate variation and a time-aware linear Bayesian skyride coalescent tree prior (Minin et al., 2008). We performed at least two independent analyses per data set for 100 million generations sampled every 10,000 runs. After the appropriate removal of burn-in (10\u201320% of samples in most cases), a summary Maximum Clade Credibility (MCC) tree was inferred and visualized with Figtree v1.4 (Rambaut, 2014). Support for individual nodes is reflected in posterior probability values, and statistical uncertainty is given by 95% Highest Posterior Density (HPD) intervals. The MCC trees were also used to estimate the genealogical pairwise diversity by averaging the time distance between contemporaneous sample pairs with a 1 month window (Zinder et al., 2013).\n\nThe past population dynamics of each linage were compared using a Bayesian skyride analysis in BEAST, which utilizes a Gaussian Markov Random Field (GMRF) smoothing prior to estimate the changes in relative genetic diversity in successive coalescent intervals (Minin et al., 2008). In the absence of natural selection (i.e., under a strictly neutral evolutionary process), the genetic diversity measure obtained reflects the change in effective number of infections over time (Net, where t is the average generation time). However, because natural selection can play a major role in the evolution of the influenza HA, these are interpreted as \u2018relative genetic diversity\u2019, and which is consistent with previous studies of influenza A virus (Rambaut et al., 2008). Sequence alignments with input parameters are available under Dryad data repository under DOI: 10.5061/dryad.n940b.\n\n### Phylogeography and migration rate estimates\n\nWe used a continuous-time Markov chain (CTMC) phylogeographic process (Minin and Suchard, 2008; Lemey et al., 2009) to estimate counts of migration to and from Australia and New Zealand, similar to previous studies (Nunes et al., 2012; Bahl et al., 2013). Briefly, global influenza B virus HA sequences and their associated spatial locations and isolation dates were downloaded from GenBank for the years for which we estimated an effective reproductive number in the phylodynamic analysis (see below). Spatial locations of the isolates were transformed to represent two discrete states: the region of interest (Australia and New Zealand) and the rest of the world. Phylogeographic events were estimated independently for each of the identified years using an asymmetric CTMC process (Minin and Suchard, 2008), with the estimated state transition counts (import and export) between the two discrete states estimated using a Markov Jump count approach. This phylogeographic inference was implemented in BEAST 1.8 (Drummond et al., 2012) similar to the temporal phylogenies described above. The resulting log files were used in extracting the net migration counts and mean non-zero transition rates.\n\n### Phylodynamic analysis\n\nTo estimate epidemiological parameters (specifically the effective reproductive number, Re) for each epidemic of virus lineages in Australia and New Zealand, we used the birth\u2013death susceptible-infected-removed (BDSIR) model (K\u00fchnert et al., 2014). The BDSIR analysis was also conducted with a GTR + \u0393 substitution model, with epidemiological dynamics estimated jointly with the phylogenies for each virus lineage. The model assumes a closed SIR epidemic in each season for the underlying host population. The initial number of susceptible individuals S0 could not be estimated and was therefore initially fixed to 4,000,000 (results reported in the main text). Analysis under different S0 values, ranging from 40,000 to 10 million, showed that the estimates of reproductive numbers (Re) are robust to the choice of S0. The BDSIR analyses utilized m = 100 intervals for the approximation of the SIR dynamics. Incidence and prevalence were computed from the posterior distributions of the SIR trajectories, and the relevant plots show their median values.\n\n### Molecular adaptation\n\nSelection pressures for each gene segment, lineage, and individual codon were estimated as the ratio of the number of nonsynonymous substitutions per nonsynonymous site (dN) to the number of synonymous substitutions per synonymous site (dS). Estimates were obtained using the Single Likelihood Ancestor Counting (SLAC) (Kosakovsky Pond and Frost, 2005) and Fast Unconstrained Bayesian AppRoximation (FUBAR) (Murrell et al., 2013) methods, accessed through the Datamonkey webserver of the HyPhy package (Delport et al., 2010). In addition, the dN/dS ratio for the internal and external branches of the Victoria and Yamagata HA phylogenies was estimated separately using the CODEML program (two-ratio model) available in the PAML suite (Yang, 2007).\n\n### HI assay and antigenic cartography\n\nRepresentative viruses from each lineage were sub-sampled and tested for antigenic reactivity by a hemagglutination inhibition (HI) assay using a panel of reference ferret antisera that were available for each influenza B lineage (raw HI titers are available in the Dryad data repository under DOI: 10.5061/dryad.n940b) and the subsequent antigenic profile was used to generate antigenic maps (Cai et al., 2010) for each lineage. HI assays were performed as described previously (WHO Global Influenza Surveillance Network, 2011) using panels of post-infection ferret sera raised against representative viruses from both B/Victoria lineage or the B/Yamagata lineage collected from 2000 to 2013. Turkey red blood cells were used to detect unbound virus and the HI titer was determined as the reciprocal of the last dilution that contained non-agglutinated RBC. Normalized titers from the HI assay were compiled for antigenic cartography analysis. The HI matrix was used in a multi-dimensional scaling (MDS) plot algorithm to chart the antigenic distances between isolates tested in a two-dimensional map (Cai et al., 2010), through the AntigenMap webserver (Wan, 2010). To identify residues contributing most to HI titer changes, pairwise comparison of sequences with a single amino acid difference were conducted.\n\n### Computational structural modeling\n\nFinally, sequence data of the HA segment from each lineage were used to construct structural models (Krieger et al., 2009; Webb and Sali, 2014). To identify those residues that contribute most to antigenic drift in Victoria viruses, we compared the HA amino acid sequences of all pairs of HI assay tested strains using the Smith-Waterman algorithm. If only a single mutation difference was found, we calculated the respective average HI titer change for occurrences of this mutation. These amino acid sites were then mapped on the crystal structure PDB:4FQM (Dreyfus et al., 2012) and visualized using YASARA (Krieger et al., 2009).\n\nAmino acid substitutions per site between pairs of HA sequences were calculated using MEGA5 (Tamura et al., 2011) under the Jones-Taylor-Thornton (JTT) amino acid substitution model. We constructed structural models using MODELLER (Webb and Sali, 2014) (five models each with and without ligand, best model selected by DOPE quality score), structural alignments were conducted using MUSTANG (Konagurthu et al., 2006) and visualized using YASARA (Krieger et al., 2009). To identify structural changes occurring on the HA proteins of influenza A subtypes and influenza B virus lineages over a 10-year period, we selected the HA protein sequences of the following virus strains: influenza B Victoria lineage, B/Sydney/1/2002 and B/Sydney/205/2012; Yamagata lineage, B/Victoria/341/2002 and B/Victoria/831/2012; influenza A H1N1 virus, A/Brisbane/59/2007 and A/Malaysia/11641/1997 and influenza A H3N2 virus, A/Perth/16/2009 and A/Moscow/10/1999. Crystal structure templates used for computational modeling include PDB:4FQM (Dreyfus et al., 2012) (influenza B virus), PDB:3UBE (Xu et al., 2012) (H1N1), and PDB:2YP4 (Lin et al., 2012) (H3N2).\n\nDifferences in the receptor binding pocket region of the two influenza B lineages were visualized using B/Brisbane/60/2008 (PDB:4FQM [Dreyfus et al., 2012]) and B/Florida/4/2006 (PDB:4FQJ [Dreyfus et al., 2012]) with the addition of an \u03b1-2,6-linked host receptor analogue ligand from a known complex (PDB:2RFU [Wang et al., 2007]) and targeted side-chain minimization of residues within 8 \u00c5 of the ligand through short simulated annealing molecular dynamic simulations in YASARA (Krieger et al., 2009) as previously benchmarked to ensure realistic results.\n\nWe also used YASARA (Krieger et al., 2009) to visualize the role of glycosylation on Asn at position 212 for \u03b1-2,3- vs \u03b1-2,6-linked host receptor ligands by schematically superimposing both ligands (PDB:2RFT [Wang et al., 2007] and PDB:2RFU [Wang et al., 2007]) into their respective positions within the receptor binding pocket of a fully glycosylated influenza B HA head (PDB:4FQM [Dreyfus et al., 2012]).\n",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "5b3f8c3d-ebe8-4ba8-af54-82a90c898f79",
+      "submission_id": "79c897c7-7538-4051-8008-0d4054accc10",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05055.022](https://doi.org/10.7554/eLife.05055.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe contrasting phylodynamics of human influenza B viruses\u201d for consideration at eLife. Your article has been favorably evaluated by Diethard Tautz (Senior editor) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nWe agreed that your paper provides the first comprehensive portrait of influenza B phylodynamics and epidemiology and that the comparisons of the Yam and Vic lineages with each other and with the dominant seasonal influenza A lineages greatly advance our understanding of influenza dynamics in general. We did, however, have a number of concerns regarding some of the presented analysis and the presentation of some of the results.\n\n1) Reassortment analysis: we were not convinced that the comparison of reassortment between different seasonal influenza strains via multidimensional scaling is appropriate. The analysis of A/H3N2 (Rambaut et al., 2008) uses a different distance measure and it is not clear whether the results are comparable. It is also not clear how sensitive and robust MDS based on the proposed distance measure is. It may be hard to conclude quantitative differences from this analysis as the dispersion in the plot will not only reflect the number of reassortment events, but also whether those events shuffle closely or distantly related lineages. In terms of inter-lineage reassortment, the MDS in Figure 10 does not add much to Figure 9 (which shows each probable reassortment event) and meaningful quantification of intra-lineage reassortment would require going beyond the MDS. We suggest cutting the MDS. Also, results by Dudas, Bedford, Lycett, Rambaut, MBE, 2014 should be discussed; the preprint has been available since March.\n\n2) More direct measures of genetic diversity: Figure 3 and Figure 8 are labeled as \u201crelative genetic diversity\u201d (relative to what?). We would like to see a more direct measure of diversity such as the average pairwise distance in windows of a few months. We would also like to ask you to offer a clearer interpretation of the GMRF results. The GMRF method gives smoothed estimate of the rate of coalescence and is based on a neutral coalescent model. This measure is not the same as genetic diversity and the meaning of estimates based on a neutral coalescent is not clear.\n\nThe take home message from these plots seems to be that Vic has a \u201cburstier\u201d and shallower phylogeny than Yam, with fewer lineages carrying over from one season to another. This would show up as spikes and troughs in the rate of coalescence and is consistent with the higher R0 and the smaller number of introductions for Vic. If this is the desired interpretation, please discuss as such.\n\n3) Phylodynamic analysis: how were the reported years chosen? (please double check the color code in Figure 2. 2011 seems to be fully dominated by Yam, but you report Vic estimates in Figure 4-5). The discussion of the implications of higher R0 for Vic needs clarification. Prevalence within one season depends on the start of the exponential growth phase, R0, and the number of independent introductions (i.e., the number of lineages at the beginning if the growth phase). The two strains differ in the latter two of these characteristics in ways that affect prevalence in opposite ways. This needs more careful discussion: the assertion that \u201cthese results are consistent with the more frequent detection of Victoria lineage viruses during our sampling period (see Source data in Dryad), indicating that Victoria viruses infected a higher proportion of the population\u201d (in the Results and discussion section) is a tautology (more frequent detection corresponding to higher prevalence\u2026). Would it be possible to explicitly show that exponential growth of Vic and Yam differs between years? The >5000 samples used for the age distribution should be sufficient to directly show differences in dynamics if date information beyond year is available. If this is not possible, Figure 6 should be presented on a log scale and real incidence data should be included.\n\n4) Age distribution and glycosylation: Figure 16C shows odds ratios of for an association between glycosylation at 212 and infections in age group 0-5. In Figure 16B, however, it would be much more useful to show that the fraction without 212 glycosylation correlates with the fraction of in age group 0-5. Otherwise, the correlation is confounded by the total number of strain. When discussing the structural implications of the observed sequences changes, more care should be taken to distinguish hard evidence from previously solved structures (give PDB IDs and references in figure or caption!), modeling, and hypothesis. Figure 15 could be absorbed as a supplement to Figure 14. The \u201cthree major clusters\u201d in Figure 14C are not as clear as the text suggests. Elaborate or tone down.\n\n5) Presentation and shortening: the manuscript is long with 16 figures in the main text and its length dilutes the most important points. Also, please make every effort to include parameters of programs used, scripts, and input files (such as BEAST xmls).\n",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "03e4cd35-9e77-4682-9f02-0f94052f20c5",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C1",
+      "claim": "Influenza B virus causes a significant proportion of influenza-associated morbidity and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza B causes a significant proportion of influenza-associated morbidity and mortality, and in some years is responsible for the major disease burden (Burnham et al., 2013; Paul Glezen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Burnham et al., 2013; Paul Glezen et al., 2013)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "3d4380ef-7189-44c4-9a59-852fdc51d562",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C2",
+      "claim": "Type A and B influenza viruses exhibit important differences in their ecology and evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although type A and B influenza viruses are closely related and have similarities in genome organization and protein structure (McCauley et al., 2012), they exhibit important differences in their ecology and evolution (Chen and Holmes, 2008; Tan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Chen and Holmes, 2008; Tan et al., 2013)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "03cdc249-f185-4ec4-b4fc-e62dac687568",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C3",
+      "claim": "Influenza B viruses were first recognized in 1940.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza B viruses, first recognized in 1940, have circulated continuously in humans alongside influenza A viruses and are presumably derived from a single, as yet unknown, source (Francis, 1940; Chen and Holmes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Francis, 1940",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "5fb0ea05-e3e8-4ed5-9430-29043c7301fe",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C4",
+      "claim": "Influenza B viruses have circulated continuously in humans alongside influenza A viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza B viruses, first recognized in 1940, have circulated continuously in humans alongside influenza A viruses and are presumably derived from a single, as yet unknown, source (Francis, 1940; Chen and Holmes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Francis, 1940; Chen and Holmes, 2008)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "b23d5d0e-8baf-4468-b657-cc470bfb9792",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C5",
+      "claim": "Influenza B infections are almost exclusively restricted to humans with only sporadic infections reported in wildlife.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike influenza A viruses that can infect a wide range of species, influenza B infections are almost exclusively restricted to humans with only sporadic infections reported in wildlife (Osterhaus et al., 2000; Bodewes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Osterhaus et al., 2000; Bodewes et al., 2013)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "bdaa6c81-ed31-48c4-83cf-278370650581",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C6",
+      "claim": "The evolutionary and epidemiological dynamics of human influenza A H1N1 and H3N2 viruses have been well documented at the global scale.",
+      "claim_type": "EXPLICIT",
+      "source": "While the evolutionary and epidemiological dynamics of human influenza A H1N1 and H3N2 viruses have been well documented at the global scale (Rambaut et al., 2008; Russell et al., 2008; Bedford et al., 2010; Bahl et al., 2011), the equivalent dynamics of the two influenza B virus lineages\u2014B/Yamagata/16/88-like and B/Victoria/2/87-like, henceforth termed the Yamagata and Victoria viruses\u2014are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Rambaut et al., 2008; Russell et al., 2008; Bedford et al., 2010; Bahl et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "0c7d70a2-a60c-490b-a09b-56d942700279",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C7",
+      "claim": "The equivalent dynamics of the two influenza B virus lineages are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "While the evolutionary and epidemiological dynamics of human influenza A H1N1 and H3N2 viruses have been well documented at the global scale (Rambaut et al., 2008; Russell et al., 2008; Bedford et al., 2010; Bahl et al., 2011), the equivalent dynamics of the two influenza B virus lineages\u2014B/Yamagata/16/88-like and B/Victoria/2/87-like, henceforth termed the Yamagata and Victoria viruses\u2014are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the statement that dynamics are poorly understood, contrasting with well-documented A viruses",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "2641446c-96ff-4ee5-a054-ab877e1b535d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C8",
+      "claim": "Human influenza A H3N2 viruses exhibit limited genetic diversity at individual time-points due to periodic bottlenecks caused by strong selection in the hemagglutinin (HA) and neuraminidase (NA) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Human influenza A H3N2 viruses exhibit limited genetic diversity at individual time-points due to periodic bottlenecks caused by strong selection\u2014known as 'antigenic drift'\u2014in the hemagglutinin (HA) and neuraminidase (NA) genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific understanding of H3N2 evolution",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "1b7df180-759d-42cc-87b6-93062118f30d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C9",
+      "claim": "H3N2 viruses exhibit an HA phylogenetic tree with a characteristic slender 'trunk' appearance.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in an HA phylogenetic tree with a characteristic slender 'trunk' (Fitch et al., 1997) appearance (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation (Fitch et al., 1997) and visual evidence in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "94b826ce-259e-48dc-a1d2-9c503933045f",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C10",
+      "claim": "H3N2 viruses exhibit strong seasonal fluctuations in genetic diversity in temperate climate regions.",
+      "claim_type": "EXPLICIT",
+      "source": "H3N2 viruses also exhibit strong seasonal fluctuations in genetic diversity in temperate climate regions (such as Australia and New Zealand) (Rambaut et al., 2008), mainly due to the local extinction of viral lineages at the end of each influenza season (Rambaut et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rambaut et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "ac8d40b7-543f-4826-ab4b-69390f0485c6",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C11",
+      "claim": "Seasonal H1N1 viruses exhibit short-term co-circulation of diverging virus populations.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar but weaker evolutionary pattern is observed in the seasonal H1N1 viruses that have circulated in humans for the majority of the previous century (1918\u20131957 and 1977\u20132009), with short-term co-circulation of diverging virus populations (Nelson et al., 2008b) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation (Nelson et al., 2008b) and visual evidence in Figure 1B",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "0003a12c-9121-41ae-bde2-0b9224ab6aa3",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C12",
+      "claim": "Pandemic H1N1 (H1N1pdm09) viruses have exhibited only limited antigenic evolution since they emerged in 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "The pandemic H1N1 (H1N1pdm09) viruses have to date also only exhibited limited antigenic evolution since they emerged in 2009 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by visual evidence in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "be9a3e80-e966-4dae-9a57-f1b24a32a1b8",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C13",
+      "claim": "Influenza B viruses are currently composed of two distinct lineages (Victoria and Yamagata) that diverged approximately 40 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, influenza B viruses are currently composed of two distinct lineages (Victoria and Yamagata) (Kanegae et al., 1990; Rota et al., 1990) (Figure 1D) that diverged approximately 40 years ago and which have since co-circulated on a global scale, despite frequent reassortment among them (Chen and Holmes, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations (Kanegae et al., 1990; Rota et al., 1990; Chen and Holmes, 2008) and visual evidence in Figure 1D",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "79c0fec3-52e4-43d8-b94c-b1de7a31d8fc",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C14",
+      "claim": "The Victoria and Yamagata lineages have co-circulated on a global scale despite frequent reassortment among them.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, influenza B viruses are currently composed of two distinct lineages (Victoria and Yamagata) (Kanegae et al., 1990; Rota et al., 1990) (Figure 1D) that diverged approximately 40 years ago and which have since co-circulated on a global scale, despite frequent reassortment among them (Chen and Holmes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen and Holmes, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "e030aa98-6603-43d5-ac25-9316d94f9be3",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C15",
+      "claim": "The HA genes of influenza B viruses exhibit lower rates of evolutionary change (nucleotide substitution) than both influenza A viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the HA genes of influenza B viruses are thought to exhibit lower rates of evolutionary change (nucleotide substitution) than both influenza A viruses (Ferguson et al., 2003; Chen and Holmes, 2008; Bedford et al., 2014), their antigenic characteristics are not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations (Ferguson et al., 2003; Chen and Holmes, 2008; Bedford et al., 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "cfed0380-9cdc-44cf-bc76-262e06a9ff09",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C16",
+      "claim": "The antigenic characteristics of influenza B viruses are not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the HA genes of influenza B viruses are thought to exhibit lower rates of evolutionary change (nucleotide substitution) than both influenza A viruses (Ferguson et al., 2003; Chen and Holmes, 2008; Bedford et al., 2014), their antigenic characteristics are not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement that antigenic characteristics are not well understood",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "46cde6c1-c7cc-4652-8b44-e85b75b6e067",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C17",
+      "claim": "Seasonal epidemic outbreaks of each influenza type are caused by the stochastic introduction of multiple virus lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The advent of global influenza surveillance and full genome sequencing over the past decade has shown that seasonal epidemic outbreaks of each influenza type are caused by the stochastic introduction of multiple virus lineages (Nelson et al., 2008a) and that the patterns of seasonal oscillation vary between temperate and tropical regions (Rambaut et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations (Nelson et al., 2008a; Rambaut et al., 2008)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "b1540087-bb6a-418f-a306-866e1d92b474",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C18",
+      "claim": "The patterns of seasonal oscillation vary between temperate and tropical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The advent of global influenza surveillance and full genome sequencing over the past decade has shown that seasonal epidemic outbreaks of each influenza type are caused by the stochastic introduction of multiple virus lineages (Nelson et al., 2008a) and that the patterns of seasonal oscillation vary between temperate and tropical regions (Rambaut et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rambaut et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "d721852f-f873-4479-b14a-02af7172d9fa",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C19",
+      "claim": "The H3N2 and H1N1 subtypes of influenza A virus compete with each other resulting in the epidemic dominance of a single subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Population genetic analysis (Rambaut et al., 2008), consistent with epidemiological data (Goldstein et al., 2011), suggests that the H3N2 and H1N1 subtypes of influenza A virus compete with each other resulting in the epidemic dominance of a single subtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations (Rambaut et al., 2008; Goldstein et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "133cdde8-f9c5-4da4-b512-8a8cc2bb9ea4",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C20",
+      "claim": "908 full genomes of influenza B viruses were generated from over 26,000 laboratory confirmed influenza B cases sampled during 2002\u20132013 in eastern Australia and New Zealand.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the evolutionary and epidemiological dynamics of influenza B virus, we generated the full genomes of 908 influenza B viruses selected from over 26,000 laboratory confirmed influenza B cases in children and adults aged from birth to 102 years sampled during 2002\u20132013 in eastern Australia (Queensland, n = 275; New South Wales, n = 210; and Victoria, n = 207) and New Zealand (n = 216) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes the data collection and sequencing performed in this study, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "f470bc95-6c12-4dbc-a8a9-a0a7065d4bf1",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C21",
+      "claim": "The influenza B virus strain used for vaccination did not match the dominant circulating strain during 7 of the 13 years studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note is that the influenza B virus strain used for vaccination in the region did not match the dominant circulating strain during 7 of the 13 years studied (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "d6663632-5d1f-43fe-b3d8-d296dfa41f24",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C22",
+      "claim": "The Victoria lineage experienced strong seasonal fluctuations in relative genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the Victoria lineage experienced strong seasonal fluctuations in relative genetic diversity, little change was observed over the same time period for the Yamagata lineage, and these observations were not heavily affected by differences in sampling density (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3 and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "d22b1af4-28a6-4704-a925-202bcf0b7b9c",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C23",
+      "claim": "Little change in relative genetic diversity was observed for the Yamagata lineage over the sampling period.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the Victoria lineage experienced strong seasonal fluctuations in relative genetic diversity, little change was observed over the same time period for the Yamagata lineage, and these observations were not heavily affected by differences in sampling density (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3 and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "5176429e-f377-4bcf-af13-398f9ae5b7f4",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C24",
+      "claim": "The almost invariant relative genetic diversity of the Yamagata lineage resembled that of seasonal H1N1 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "While the almost invariant relative genetic diversity of the Yamagata lineage resembled that of seasonal H1N1 viruses (Figure 3D), the stark and almost annual changes of diversity in the Victoria lineage were similar to those observed for H3N2 virus (Figure 3C); although H3N2 viruses exhibited a greater frequency of oscillations than those estimated for Victoria lineage viruses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "328f9f71-bdbf-49c7-ab90-84f5f8ea8a00",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C25",
+      "claim": "The stark and almost annual changes of diversity in the Victoria lineage were similar to those observed for H3N2 virus.",
+      "claim_type": "EXPLICIT",
+      "source": "While the almost invariant relative genetic diversity of the Yamagata lineage resembled that of seasonal H1N1 viruses (Figure 3D), the stark and almost annual changes of diversity in the Victoria lineage were similar to those observed for H3N2 virus (Figure 3C); although H3N2 viruses exhibited a greater frequency of oscillations than those estimated for Victoria lineage viruses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "d26c6494-0d25-4495-b47a-dbe8da4c2cee",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C26",
+      "claim": "The Victoria lineage experiences strong bottlenecks between seasons similar to those described for H3N2 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong seasonal fluctuations in diversity observed for Victoria lineage suggest that this lineage experiences strong bottlenecks between seasons similar to those described for H3N2 viruses (Bedford et al., 2011; Zinder et al., 2013), whereas the almost invariant relative genetic diversity for Yamagata suggests the continuous co-circulation of multiple lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on observed data patterns, supported by citations (Bedford et al., 2011; Zinder et al., 2013)",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "9dc13d61-fdc0-4993-8f81-34f41a8d9fb3",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C27",
+      "claim": "The almost invariant relative genetic diversity for Yamagata suggests the continuous co-circulation of multiple lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong seasonal fluctuations in diversity observed for Victoria lineage suggest that this lineage experiences strong bottlenecks between seasons similar to those described for H3N2 viruses (Bedford et al., 2011; Zinder et al., 2013), whereas the almost invariant relative genetic diversity for Yamagata suggests the continuous co-circulation of multiple lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on observed data patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "88ef70e6-0f93-45bf-b3dd-4f3afeb45212",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C28",
+      "claim": "The Victoria lineage was characterized by a single prominent tree 'trunk', with side branches that circulated for short periods of time (1\u20133 years).",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenetic analysis of the HA genes showed that the Victoria lineage was characterized by a single prominent tree 'trunk', with side branches that circulated for short periods of time (1\u20133 years) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "2d871536-c030-4824-ad78-8f54d263615a",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C29",
+      "claim": "The Victoria lineage evolutionary pattern parallels that observed for seasonal H3N2 viruses and is indicative of frequent selective bottlenecks due to the serial replacement of circulating strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This evolutionary pattern parallels that observed for seasonal H3N2 viruses and is indicative of frequent selective bottlenecks due to the serial replacement of circulating strains, as would be expected under continual antigenic drift (Grenfell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on phylogenetic patterns, supported by citation (Grenfell et al., 2004)",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "1e4fb3a5-532e-4193-99b1-b66c5e24fc88",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C30",
+      "claim": "Greater diversification was observed for the Yamagata lineage, with multiple clades co-circulating for extensive periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, greater diversification was observed for the Yamagata lineage, with multiple clades co-circulating for extensive periods of time (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "e8d9402a-8230-4240-a513-08711ad16a8d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C31",
+      "claim": "The three clades of Yamagata viruses circulating in 2013 diverged approximately 10 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the three clades of Yamagata viruses circulating in 2013 diverged approximately 10 years ago, again paralleling the evolutionary pattern seen in seasonal H1N1 viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from phylogenetic analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "b6e08dfe-3376-4d86-9e5a-930a6718fa85",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C32",
+      "claim": "The average time to common ancestor between contemporaneous samples fluctuated from 0 to <5 years for Victoria lineage, except during 2010 and 2011 where the genealogical diversity marginally increased to 7 years.",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns are clearly identifiable in the genealogical diversity skyline (Figure 4) in which the average time to common ancestor between contemporaneous samples fluctuated from 0 to <5 years for Victoria lineage, except during 2010 and 2011 where the genealogical diversity marginally increased to 7 years.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genealogical diversity analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "f77b854f-8327-4e99-8e50-3cdbaafb52cb",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C33",
+      "claim": "The genealogical diversity of Yamagata was consistently greater and gradually increased during the sampling period.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the genealogical diversity of Yamagata was consistently greater and gradually increased during the sampling period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genealogical diversity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "76392bb3-0fd2-46ef-9b65-138dceb7ad65",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C34",
+      "claim": "The effective reproductive number (Re) of Victoria lineage epidemics showed greater variation (median values, 1.1\u20131.3) between epidemics.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed a greater variation in Re (median values, 1.1\u20131.3) between epidemics caused by the Victoria lineage, whereas the Re of Yamagata epidemics, were generally lower, varied only slightly, around 1.1 (1.08\u20131.14) (Figure 5A), indicating greater heterogeneity in transmission between seasons for Victoria viruses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BDSIR model analysis shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "af403185-a8c7-4b55-97bb-1c3b5ef219e2",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C35",
+      "claim": "The Re of Yamagata epidemics were generally lower and varied only slightly, around 1.1 (1.08\u20131.14).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed a greater variation in Re (median values, 1.1\u20131.3) between epidemics caused by the Victoria lineage, whereas the Re of Yamagata epidemics, were generally lower, varied only slightly, around 1.1 (1.08\u20131.14) (Figure 5A), indicating greater heterogeneity in transmission between seasons for Victoria viruses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BDSIR model analysis shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "b274bd27-8c24-4eb0-9820-746474540f9e",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C36",
+      "claim": "In 2008, the median Re of 1.27 (95% HPD of 1.18\u20131.37) estimated for the Victoria lineage was significantly greater than that of Yamagata at 1.11 (95% HPD 1.05\u20131.17).",
+      "claim_type": "EXPLICIT",
+      "source": "Both lineages transmitted with nearly equal force in 2005, whereas in 2008 the median Re of 1.27 (95% highest posterior density [HPD] of 1.18\u20131.37) estimated for the Victoria lineage was significantly greater than that of Yamagata at 1.11 (95% HPD 1.05\u20131.17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by BDSIR model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "4c8734b8-d392-4cea-b61e-a69635a06e39",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C37",
+      "claim": "Victoria lineage exhibited significantly higher initial growth rate resulting in a faster epidemic with larger number of infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the cumulative number of all influenza B positive cases through time for each season (Figure 5B) reveals significant differences in the exponential growth phase between the lineages, where Victoria lineage exhibited significantly higher initial growth rate resulting in a faster epidemic with larger number of infections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by epidemiological data analysis shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "4edd1591-a7ef-45dc-a12d-ac094610daf1",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C38",
+      "claim": "In 2008, the Victoria lineage exhibited a significantly faster growth rate, coinciding with the year in which a new antigenic variant of the Victoria lineage was first detected (B/Brisbane/60/2008-like viruses) in Australia and New Zealand.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also show that in 2008 the Victoria lineage exhibited a significantly faster growth rate, in correlation with the high Re, coinciding with the year in which a new antigenic variant of the Victoria lineage was first detected (B/Brisbane/60/2008-like viruses) in Australia and New Zealand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by epidemiological and phylogenetic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "89f5dc89-cec9-48e6-b1d9-219ffe8a8312",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C39",
+      "claim": "The B/Brisbane/60/2008-like antigenic variant emerged as the globally dominant influenza B strain in the following years and has been continuously recommended (2009\u20132015) as the influenza B vaccine component.",
+      "claim_type": "EXPLICIT",
+      "source": "This antigenic variant emerged as the globally dominant influenza B strain in the following years and has been continuously recommended (2009\u20132015) as the influenza B vaccine component since that period in both the Northern and Southern Hemispheres (Klimov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation (Klimov et al., 2012) and knowledge of vaccine recommendations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "b0d27fcb-711a-4ff6-9b88-77b9266dec76",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C42",
+      "claim": "Combined, Australia and New Zealand were net importers of influenza viruses, except during 2002 and 2008 when the net export of the Victoria lineage was similar to the import observed during the same years.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we identified that, combined, Australia and New Zealand were net importers of influenza viruses, except during 2002 and 2008 when the net export of the Victoria lineage was similar to the import observed during the same years (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogeographic analysis shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "c9ba0104-11d5-456e-8c9f-7b034f90128e",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C43",
+      "claim": "The patterns observed for the NA and internal gene segments were similar to those observed for the HA genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses showed that the patterns observed for the NA and internal gene segments were similar to those observed for the HA genes described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome-wide analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "bb3f2484-4a8b-45c6-933e-31f633d9e09a",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C44",
+      "claim": "The NP genes of both lineages showed substantial differences throughout their history compared to other gene segments.",
+      "claim_type": "EXPLICIT",
+      "source": "The single exception was the NP genes of both lineages where substantial differences occurred throughout their history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome-wide analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "27d400e9-120a-46d9-b8ad-0636d493f606",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C45",
+      "claim": "Frequent reassortment occurred within the two lineages of influenza B virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of these phylogenies revealed frequent reassortment within the two lineages of influenza B virus (data not shown) and a few instances of reassortment between them (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic comparison of all eight genome segments shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "410128b9-58c3-4de1-a0dd-f2308b1495dd",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C46",
+      "claim": "During 2004, a subpopulation (approximately 15%) of Victoria-like viruses acquired all internal gene segments (PB2, PB1, PA, NP, MP, and NS) from the Yamagata lineage viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, during 2004 a subpopulation (approximately 15%) of Victoria-like viruses acquired all internal gene segments (PB2, PB1, PA, NP, MP, and NS) from the Yamagata lineage viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phylogenetic analysis of reassortment events",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "6083680d-fe42-4b5a-bcbb-af19e047817b",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C47",
+      "claim": "All remaining inter-lineage reassortment events of the Victoria HA lineages involved the acquisition of the Yamagata NP gene during 2007 and 2008, which resulted in the extinction of the previously circulating Victoria lineage NP gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all remaining inter-lineage reassortment events of the Victoria HA lineages involved the acquisition of the Yamagata NP gene during 2007 and 2008 (Figure 8E), which resulted in the extinction of the previously circulating Victoria lineage NP gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 8E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "8b1a28ed-f9ca-45fd-9f8b-771470d29b41",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C48",
+      "claim": "The only inter-lineage reassortment events for the virus carrying the Yamagata HA occurred during 2002 and 2004, when the NA and MP genes were derived from the Victoria lineage viruses, but these viruses went extinct within the same influenza season.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the only inter-lineage reassortment events for the virus carrying the Yamagata HA occurred during 2002 and 2004 (red arrows in Figure 8A,F), when the NA and MP genes were derived from the Victoria lineage viruses, but these viruses went extinct within the same influenza season.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 8A,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "fc81b218-1d6c-453d-813c-026f76c90890",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C49",
+      "claim": "The HA gene of Victoria viruses is placed in different genetic backgrounds at a higher rate than Yamagata viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, these results show that the HA gene of Victoria viruses is placed in different genetic backgrounds at a higher rate and this is likely to have important fitness consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on reassortment patterns observed in phylogenetic analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "130c1b9e-5610-49ad-b432-4db453b94ed3",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C50",
+      "claim": "The PB2 and PB1 gene trees exhibit deep divergence, similar to the HA gene where co-circulating viruses contain distinct Victoria and Yamagata genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenies also suggest that the PB2 and PB1 gene trees (Figure 8B,C) exhibit deep divergence, similar to the HA gene where co-circulating viruses contain distinct Victoria and Yamagata genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 8B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "f73119b6-adda-45c7-b1d4-f53314cff86f",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C51",
+      "claim": "The PB2, PB1 and HA genes were consistently derived from a single lineage, except for the short-lived subpopulation in 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observe that the PB2, PB1 and HA genes were consistently derived from a single lineage, except for the short-lived subpopulation in 2004.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phylogenetic analysis of reassortment patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "089196d9-f657-436d-9c96-ed7b0f73585f",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C52",
+      "claim": "The HA genes of the two influenza B lineages both evolved at a rate of approximately 2.0 \u00d7 10\u22123 subs/site/year.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the marked differences in their epidemiological and evolutionary dynamics, the HA genes of the two influenza B lineages both evolved at a rate of approximately 2.0 \u00d7 10\u22123 subs/site/year (Table 1), comparable to those previously estimated for a smaller (n = 102) global sample of influenza B viruses collected during 1989\u20132006 (Chen and Holmes, 2008) (mean nucleotide substitution rate of 2.15 \u00d7 10\u22123 subs/site/year).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by molecular clock analysis shown in Table 1 and comparison with Chen and Holmes, 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "bbcdfe7b-1245-4fd1-b1e4-acd0e7c3373e",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C53",
+      "claim": "The HA substitution rates of influenza B viruses were considerably lower than those estimated for influenza A H3N2 and H1N1 viruses (5.5 \u00d7 10\u22123 subs/site/year, 4.0 \u00d7 10\u22123 subs/site/year, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "These rates were considerably lower than those estimated for influenza A H3N2 and H1N1 viruses (5.5 \u00d7 10\u22123 subs/site/year, 4.0 \u00d7 10\u22123 subs/site/year, respectively) (Rambaut et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with rates from Rambaut et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "ab1b1d38-863c-4983-9832-6551ef2458dd",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C54",
+      "claim": "The Victoria lineage viruses have accumulated more nonsynonymous substitutions (dN/dS = 0.19) than the Yamagata lineage (dN/dS = 0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, analysis of the ratio of the number of nonsynonymous and synonymous substitutions per site (dN/dS) revealed significant differences between the influenza B virus lineages, with the Victoria lineage viruses having accumulated more nonsynonymous substitutions (dN/dS = 0.19) than the Yamagata lineage (dN/dS = 0.13) (p-value, <0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by dN/dS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "439304ad-ff88-4192-9658-51c9ded7614e",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C55",
+      "claim": "Two amino acid residues in the Victoria HA (positions 212 and 214) experienced positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, two amino acid residues in the Victoria HA (positions 212 and 214) were revealed to have experienced positive selection (p < 0.05), whereas no positively selected sites were observed in the Yamagata lineage over the time period studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by positive selection analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "37e78a62-866e-4f5e-b32f-ef78262d2910",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C56",
+      "claim": "No positively selected sites were observed in the Yamagata lineage over the time period studied.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, two amino acid residues in the Victoria HA (positions 212 and 214) were revealed to have experienced positive selection (p < 0.05), whereas no positively selected sites were observed in the Yamagata lineage over the time period studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by positive selection analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "9b4c8724-f4db-430f-b04c-1f2dd8eab556",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C57",
+      "claim": "The Victoria lineage exhibited a greater dN/dS (ratio = 1.37) on internal vs external branches of the HA phylogeny compared to the Yamagata lineage (ratio = 0.98).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the Victoria lineage exhibited a greater dN/dS (ratio = 1.37) on internal vs external branches of the HA phylogeny compared to the Yamagata lineage (ratio = 0.98), indicating that amino acid changes have been fixed more frequently in Victoria than Yamagata lineage viruses (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by branch-specific dN/dS analysis shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "dcc274dd-e66f-4584-a54f-a415e0f9370b",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C58",
+      "claim": "The Victoria lineage is under greater positive selection pressure, and hence likely to experience greater antigenic drift, than the more conserved Yamagata lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the Victoria lineage is under greater positive selection pressure, and hence likely to experience greater antigenic drift, than the more conserved Yamagata lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on dN/dS analysis and positive selection results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "d7f0a583-0285-4932-879f-a33273408ac0",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C59",
+      "claim": "Victoria lineage viruses exhibited antigenic variation that generally clustered according to the year of isolation and phylogenetic distance, indicative of ongoing antigenic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "These revealed that Victoria lineage viruses exhibited antigenic variation that generally clustered according to the year of isolation and phylogenetic distance, indicative of ongoing antigenic drift, and similar to that previously reported for H3N2 viruses (Smith et al., 2004; Bedford et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by antigenic mapping analysis and comparison with H3N2 (Smith et al., 2004; Bedford et al., 2014)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "23f9152c-728b-4391-8562-0a29fe1fc0f4",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C60",
+      "claim": "The antigenic distances for the Yamagata viruses had no correlation with time or phylogenetic distance and showed greater levels of antigenic cross-reactivity between antisera raised to both earlier and more recent viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the antigenic distances for the Yamagata viruses had no correlation with time or phylogenetic distance and showed greater levels of antigenic cross-reactivity between antisera raised to both earlier and more recent viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by antigenic mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "a20000ca-b1f0-443d-87b8-576e8a37adb6",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C61",
+      "claim": "The degree of antigenic distance between strains of Victoria viruses was often linked to the proximity of single amino acid substitutions to the receptor binding pocket (RBP) of the HA.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural modeling showed that the degree of antigenic distance between strains of Victoria viruses was often linked to the proximity of single amino acid substitutions to the receptor binding pocket (RBP) of the HA (Figure 9B; see structural differences section below), in agreement with recent work on H3N2 (Koel et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural modeling shown in Figure 9B and comparison with Koel et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "83b07d82-34f2-4b3e-94f2-eb6917222203",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C62",
+      "claim": "The closer the amino acid change between two strains was to the RBP, the greater the antigenic difference between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the closer the amino acid change between two strains was to the RBP, the greater the antigenic difference between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural modeling and antigenic analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "adbba217-c035-4935-ae37-db063efee65d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C63",
+      "claim": "Victoria viruses infected a younger population (mean 16.8 years, median 11 years) compared to Yamagata viruses (mean 26.6 years, median 18 years).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, Victoria viruses infected a younger population (mean 16.8 years, median 11 years) compared to Yamagata viruses (mean 26.6 years, median 18 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by epidemiological data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "471f4852-100d-4b00-a92e-d98d1e8be573",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C64",
+      "claim": "Nearly 70% of Victoria lineage viruses were identified in children <18 years, whereas the Yamagata lineage exhibited a bimodal age distribution with a significant shift toward infections in individuals aged >25 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, nearly 70% of Victoria lineage viruses were identified in children <18 years, whereas the Yamagata lineage exhibited a bimodal age distribution with a significant shift toward infections in individuals aged >25 years (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by age distribution analysis shown in Figure 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "6a64c97a-eddf-45ec-9138-7feb0bbf069d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C65",
+      "claim": "These differences in age distribution are significant and unlikely to be explained by systematic bias because the same pattern was observed in both countries.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in age distribution are significant and unlikely to be explained by systematic bias because the same pattern was observed in both countries, and are consistent with data from Guangdong, China (Tan et al., 2013), and Slovenia (So\u010dan et al., 2014) during the 2009\u20132010 and 2010\u20132013 epidemic seasons, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by consistency across multiple countries and citations (Tan et al., 2013; So\u010dan et al., 2014)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "edad4832-ada4-4856-a791-aca790ec0c28",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C66",
+      "claim": "The higher rates of amino acid change observed in the Victoria HA were consistent with the stronger selective pressures on this viral lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher rates of amino acid change observed in the Victoria HA (Figure 11A) were consistent with the stronger selective pressures on this viral lineage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on structural analysis shown in Figure 11A",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "69025af6-a84d-46ed-b1ac-9e6821ec4ff2",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C67",
+      "claim": "All changes in the closest cluster (21 \u00c5) to the RBP were comprised exclusively of Victoria lineage amino acid changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all changes in the closest cluster (21 \u00c5) were comprised exclusively of Victoria lineage amino acid changes, while the few changes observed in Yamagata lineage viruses were distant to the RBP (Figure 11C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural analysis shown in Figure 11C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "278e4816-7511-4baa-903a-877a5bf34952",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C68",
+      "claim": "Amino acid changes in both influenza B virus lineages were less frequent than those in influenza A viruses sampled over a similar time period.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, however, amino acid changes in both influenza B virus lineages were less frequent than those in influenza A viruses sampled over a similar time period, with the H3N2 viruses showing more extensive structural change (Figure 11\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparative structural analysis shown in Figure 11\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "674d6f76-7834-4337-ba74-2b2a2ea97ef2",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C69",
+      "claim": "Crystal structures showed extensive backbone differences around amino acid sites 165 and 180 that lie near the RBP between the Victoria and Yamagata lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we also observed fundamental structural differences between the lineages (Figure 11B). Crystal structures showed extensive backbone differences around amino acid sites 165 and 180 that lie near the RBP as well as residue differences in the helix close to where \u03b1-2,3 and \u03b1-2,6 ligands differ structurally, thereby potentially influencing receptor binding (Figure 11D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystal structure analysis shown in Figure 11B,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "f3397659-1b79-48af-a59e-04fe888700e0",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C70",
+      "claim": "Yamagata viruses bind predominantly to \u03b1-2,6-linked sialic acid host receptors while Victoria viruses have both \u03b1-2,3 and \u03b1-2,6 binding capacities.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments suggest that Yamagata viruses bind predominantly to \u03b1-2,6-linked sialic acid host receptors while Victoria viruses have both \u03b1-2,3 and \u03b1-2,6 binding capacities (Wang et al., 2012; Velkov, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies (Wang et al., 2012; Velkov, 2013)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "02f309b6-e587-457a-9f16-d214cd99f9ed",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C71",
+      "claim": "N-glycosylation at Asn 212 occurs in both lineages but has a lower overall frequency in Victoria strains.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, N-glycosylation at Asn 212 occurs in both lineages but has a lower overall frequency in Victoria strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "898e6741-20b6-4422-a2d2-7660183a3fc6",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C72",
+      "claim": "Amino acid changes in either site 212 or 214 would abolish the N-glycosylation at 212.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of the positive selection acting on codon sites 212 and 214 in the Victoria lineage, it is interesting to note that amino acid changes in either site would abolish the N-glycosylation at 212, thereby highlighting a possible functional consequence of gain or loss of a glycan at this site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural and selection analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "84e36904-73c4-4156-a178-420b7189f687",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C73",
+      "claim": "Loss of N-glycosylation at 212 adds capacity to bind \u03b1-2,3 and not just \u03b1-2,6-linked sialic acid host receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, position 212 is located at the exit of the RBP which is used by \u03b1-2,3-linked sialic acid host receptors, and loss of N-glycosylation at 212 consequently adds capacity to bind \u03b1-2,3 and not just \u03b1-2,6-linked sialic acid host receptors (Figure 11E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural analysis shown in Figure 11E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "ce45acd2-4b4c-4349-88df-75cf1db4883e",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C74",
+      "claim": "Loss of N-glycosylation at site 212 was associated with an increased proportion in the younger (0\u20135 years) age group.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that loss of N-glycosylation at site 212 was associated with an increased proportion in the younger (0\u20135 years) age group (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 12",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "43f3c113-c1b8-42a0-be37-83b3fb3a9797",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C75",
+      "claim": "Subtle differences in the prevalence of \u03b1-2,3- and \u03b1-2,6-linked glycans on the cells of the respiratory tract of young children compared to adults, combined with partial changes in glycosylation patterns, could account for the observed differential age distribution of the two influenza B lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore hypothesize that subtle differences in the prevalence of \u03b1-2,3- and \u03b1-2,6-linked glycans on the cells of the respiratory tract of young children compared to adults (Nicholls et al., 2007; Walther et al., 2013), combined with partial changes in glycosylation patterns, could account for the observed differential age distribution of the two influenza B lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on structural and epidemiological observations, supported by citations (Nicholls et al., 2007; Walther et al., 2013)",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "f35ce9fa-c1f5-4e55-85e4-475cc7f4465c",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C76",
+      "claim": "The Victoria lineage experiences strong bottlenecks between seasons due to periodic selective sweeps.",
+      "claim_type": "IMPLICIT",
+      "source": "The strong seasonal fluctuations in diversity observed for Victoria lineage suggest that this lineage experiences strong bottlenecks between seasons similar to those described for H3N2 viruses (Bedford et al., 2011; Zinder et al., 2013), whereas the almost invariant relative genetic diversity for Yamagata suggests the continuous co-circulation of multiple lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observed patterns of genetic diversity fluctuations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "6ecb4f19-f207-41f6-9bfd-0fd492a1939e",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C77",
+      "claim": "The higher Re of the Victoria viruses reduces the mean age of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation is that the higher Re of the Victoria viruses reduces the mean age of infection, as expected in the case of a disease like influenza that imparts some immunity following infection (Anderson and May, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on epidemiological theory, supported by citation (Anderson and May, 1992)",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "99d4b1e1-3b98-4877-a9fb-b83e9a63c66f",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C78",
+      "claim": "The relatively older population is better protected against Victoria virus because of a broader immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the inability of Victoria viruses to infect an equivalent proportion of other age groups may mean that the relatively older population is better protected against this virus because of a broader immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed age distribution patterns",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "7b5fdf1f-8cc3-407e-97a1-3045df4f5872",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C79",
+      "claim": "The mean age of infection for the B/Brisbane/60/2008-like antigenic variant of the Victoria lineage increased from 15 years (median, 12) in 2008 to 20.5 years (median, 14) in 2011, which coincided with a gradual drop in Re from its peak in 2008.",
+      "claim_type": "EXPLICIT",
+      "source": "The former scenario is supported by an increase in the mean age of infection from 15 years (median, 12) in 2008 to 20.5 years (median, 14) in 2011 for the B/Brisbane/60/2008-like antigenic variant of the Victoria lineage, which coincided with a gradual drop in Re from its peak in 2008 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by epidemiological data analysis shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "26f42c80-8b82-46d5-8a9c-28920015090d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C80",
+      "claim": "The phylodynamic pattern of the Victoria lineage HA gene is indicative of a virus population under greater selection pressure that escapes host immunity by accruing beneficial amino acid substitutions in the HA gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we find significant differences in the evolutionary and epidemiological dynamics between the Victoria and Yamagata lineages (Table 3). Central to this is the observation that the phylodynamic pattern of the Victoria lineage HA gene is indicative of a virus population under greater selection pressure that escapes host immunity by accruing beneficial amino acid substitutions in the HA gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on phylodynamic analysis and selection pressure data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "4747f1c7-56a3-4bf4-9446-02cec16fa944",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C81",
+      "claim": "The highest rate of viral adaptation occurs at intermediate levels of immune pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, theory predicts that the highest rate of viral adaptation occurs at intermediate levels of immune pressure (Grenfell et al., 2004) which may characterize the Victoria lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical work (Grenfell et al., 2004)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "f9b81516-8c41-4d56-bdd0-10cf004a769b",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C82",
+      "claim": "The Victoria lineage evolutionary pattern ensures that there is a constant supply of susceptible individuals\u2014both na\u00efve and reinfected individuals which in turn increases Re.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an evolutionary pattern ensures that there is a constant supply of susceptible individuals for Victoria lineage viruses\u2014both na\u00efve and reinfected individuals which in turn increases Re\u2014which then exhibit a pattern of genomic diversity and lineage turnover that is significantly faster and more periodic than Yamagata lineage viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on evolutionary and epidemiological patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "e6989296-1f9f-4b95-bc93-bc150c6f6adb",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C83",
+      "claim": "The Yamagata viruses are under weaker immune selection pressure and accordingly experience weaker antigenic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the phylodynamic patterns exhibited by Yamagata viruses are indicative of a virus population that exhibits slower and less periodic dynamics, reflected in a lower and more consistent Re, in turn suggesting that these viruses are under weaker immune selection pressure and accordingly experience weaker antigenic drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on phylodynamic analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "a4bd96a0-399d-4e7c-a8e2-8e0605d9caa7",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C84",
+      "claim": "Clinical trials of influenza B virus vaccination in children and experimental infection of mice showed that the Yamagata antigens produced a stronger immune response than the Victoria antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, clinical trials of influenza B virus vaccination in children (Skowronski et al., 2011) and experimental infection of mice (Skowronski et al., 2012) showed that the Yamagata antigens produced a stronger immune response than the Victoria antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies (Skowronski et al., 2011; Skowronski et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "479bbeec-c207-4903-bfbb-e997f60db1f6",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C85",
+      "claim": "If natural infection with influenza B virus was similar to vaccination, this would imply that Yamagata viruses are less able to evolve through antigenic drift and therefore escape the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "If natural infection with influenza B virus was similar, this would imply that Yamagata viruses are less able to evolve through antigenic drift and therefore escape the immune response (Grenfell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on vaccination studies, supported by citation (Grenfell et al., 2004)",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "87db589f-310b-4cff-a0cb-c30957c77da7",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C86",
+      "claim": "These fundamental differences in evolutionary and epidemiological dynamics are driven by differences in hemagglutinin binding preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that these fundamental differences in evolutionary and epidemiological dynamics are driven by differences in hemagglutinin binding preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis proposed by the authors based on their findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "7f22da4a-2df1-4e81-be80-1c600071b9c3",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C87",
+      "claim": "The respiratory tissue of children mainly have \u03b1-2,3-linked receptors with a lower level of \u03b1-2,6-linked receptors than adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental studies in children (aged up to 7) (Nicholls et al., 2007) and adults have shown that the respiratory tissue of children mainly have \u03b1-2,3-linked receptors with a lower level of \u03b1-2,6-linked receptors than adults, and these differences among the different age groups may in part account for the different age distribution of the two B lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental study (Nicholls et al., 2007)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "009f474e-29bb-4865-a60c-52c158fa195d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C88",
+      "claim": "The greater propensity to infect children will increase Re, initiating the epidemiological and evolutionary pattern that characterizes the Victoria lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, the greater propensity to infect children will increase Re, initiating the epidemiological and evolutionary pattern that characterizes the Victoria lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on epidemiological and structural findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "a5d12ce8-07c1-438c-b40b-314f8d4b89f2",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "claim_id": "C89",
+      "claim": "Given sufficient coverage, Yamagata viruses might experience a major drop in prevalence over time through targeted control methods, such as the extensive use of quadrivalent influenza vaccines containing both B lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, there is a greater chance that, given sufficient coverage, Yamagata viruses might experience a major drop in prevalence over time through targeted control methods, such as the extensive use of quadrivalent influenza vaccines containing both B lineages, in contrast to the more adaptable Victoria viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative prediction based on observed evolutionary and epidemiological patterns",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc95f7d1-b401-4220-b00d-9ba1232559c8",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study generated 908 full genomes of influenza B viruses from over 26,000 laboratory confirmed cases sampled during 2002\u20132013 in eastern Australia and New Zealand. The influenza B vaccine strain did not match the dominant circulating strain in 7 of the 13 years studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C21 describe the study design and sampling. The data collection is well-documented with specific sample sizes and geographic locations (Figure 2), and the vaccine mismatch observation is directly supported by epidemiological surveillance data shown in Figure 2B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "9c7fa5c9-7dbe-426d-8c63-e59d6605b140",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Victoria lineage experienced strong seasonal fluctuations in relative genetic diversity similar to H3N2 viruses, suggesting strong bottlenecks between seasons. In contrast, the Yamagata lineage showed almost invariant relative genetic diversity similar to seasonal H1N1 viruses, suggesting continuous co-circulation of multiple lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22\u2013C27 are well-supported by phylodynamic analysis using the GMRF model (Figure 3) and are robust to sampling density differences (Figure 3\u2014figure supplement 1). The contrasting patterns between lineages are clearly demonstrated and the interpretations are appropriately cautious, acknowledging these are inferences from observed patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "70db3f66-cf13-4c81-8b52-e55d4c302e4b",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis revealed that the Victoria lineage exhibited a single prominent tree 'trunk' with short-lived side branches (1\u20133 years), indicative of frequent selective bottlenecks. The Yamagata lineage showed greater diversification with multiple clades co-circulating for extensive periods, with three clades in 2013 having diverged approximately 10 years ago.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28\u2013C33 are supported by phylogenetic analysis and genealogical diversity measurements shown in Figure 4. The phylogenetic patterns are clearly visible and the genealogical diversity skyline provides quantitative support for the temporal dynamics described. The interpretations are consistent with established phylodynamic theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "814bd9c0-a573-4a5d-a231-e3ddf53181fc",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The effective reproductive number (Re) of Victoria lineage epidemics showed greater variation (median 1.1\u20131.3) between seasons compared to Yamagata (median 1.08\u20131.14). In 2008, Victoria exhibited significantly higher Re (1.27) than Yamagata (1.11), coinciding with faster epidemic growth and the emergence of the B/Brisbane/60/2008-like antigenic variant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34\u2013C38 are supported by BDSIR phylodynamic modeling (Figure 5A) and epidemiological data analysis (Figure 5B). The Re estimates include appropriate uncertainty intervals (95% HPD), and the statistical significance of differences is stated. However, the BDSIR model assumes a closed epidemic, which may not fully hold given multiple introductions, though sensitivity analyses (Figure 5\u2014figure supplement 1) suggest estimates are robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "0756b5aa-aca9-4a59-988f-b015a69ec922",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The B/Brisbane/60/2008-like antigenic variant emerged as the globally dominant influenza B strain and has been continuously recommended (2009\u20132015) as the influenza B vaccine component in both hemispheres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by citation to Klimov et al., 2012 and is consistent with public health knowledge of vaccine recommendations. This provides important context for the epidemiological significance of the 2008 Victoria lineage variant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "3066ffd2-3f6e-4a71-b1a2-41134dfd024c",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Australia and New Zealand were net importers of influenza viruses, except during 2002 and 2008 when net export of the Victoria lineage was similar to import.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by phylogeographic analysis using CTMC methods (Figure 6). The migration estimates include appropriate uncertainty intervals (95% HPD). The exception years (2002 and 2008) correspond to periods of high Victoria lineage transmission, providing biological plausibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "39531559-0804-4ceb-9cd3-83d047312ce9",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Genome-wide analysis showed that patterns for NA and internal gene segments were similar to HA genes, with the exception of the NP genes which showed substantial differences throughout their history for both lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C44 are supported by genome-wide phylodynamic analysis (Figure 7). The NP gene shows distinct diversity patterns compared to other segments, which is further explained by reassortment events described in subsequent claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "e3a1e217-c462-4169-a5ee-095886c12417",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Frequent reassortment occurred within influenza B lineages, with several inter-lineage reassortment events. During 2004, ~15% of Victoria viruses acquired all internal segments from Yamagata. During 2007\u20132008, Victoria viruses acquired the Yamagata NP gene, leading to extinction of the Victoria NP gene. The HA gene of Victoria viruses is placed in different genetic backgrounds at a higher rate than Yamagata.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45\u2013C49 are supported by phylogenetic comparison of all eight genome segments (Figure 8). The reassortment events are clearly identified in the phylogenies, and the asymmetry between lineages (more reassortment in Victoria) is well-documented. The extinction of Victoria NP explains the unusual diversity patterns observed in C44.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "6b1a8ab3-cfe4-4148-ae51-b3c02e06a46c",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The PB2 and PB1 gene trees exhibit deep divergence similar to HA, with distinct Victoria and Yamagata genes. The PB2, PB1, and HA genes were consistently derived from a single lineage, except for a short-lived subpopulation in 2004.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C51 are supported by phylogenetic analysis (Figure 8B,C) and are consistent with recent work by Dudas et al., 2015 showing genetic linkage between these segments. The exception in 2004 corresponds to the major reassortment event described in C46.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "233cea97-da68-4c34-8058-740ed7ca1154",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The HA genes of both influenza B lineages evolved at approximately 2.0 \u00d7 10\u207b\u00b3 subs/site/year, considerably lower than influenza A H3N2 (5.5 \u00d7 10\u207b\u00b3) and H1N1 (4.0 \u00d7 10\u207b\u00b3) viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C53 are supported by molecular clock analysis (Table 1) and comparison with published rates. The rates are consistent with prior estimates from Chen and Holmes, 2008, providing validation. The comparison with influenza A rates is appropriately cited to Rambaut et al., 2008.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "1f38640b-697d-48d5-9961-3941c1611abb",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Victoria lineage accumulated more nonsynonymous substitutions (dN/dS = 0.19) than Yamagata (dN/dS = 0.13, p < 0.05). Two amino acid residues in Victoria HA (positions 212 and 214) experienced positive selection (p < 0.05), while no positively selected sites were observed in Yamagata. Victoria exhibited greater dN/dS on internal vs external branches (ratio = 1.37) compared to Yamagata (ratio = 0.98), indicating Victoria is under greater positive selection pressure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54\u2013C58 are supported by dN/dS analysis using SLAC and FUBAR methods, and branch-specific analysis using PAML (Table 1). Statistical significance is reported with appropriate p-values. The interpretation that Victoria experiences greater positive selection pressure is well-supported by multiple lines of evidence. The specific sites under selection (212, 214) are later shown to have functional significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "34edff96-5e25-41c0-bed5-3bb2142891fb",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Victoria lineage viruses exhibited antigenic variation that clustered by year and phylogenetic distance, indicative of ongoing antigenic drift. Yamagata viruses showed no correlation with time or phylogenetic distance and greater antigenic cross-reactivity. The degree of antigenic distance in Victoria was linked to proximity of amino acid substitutions to the receptor binding pocket (RBP), with closer changes producing greater antigenic differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59\u2013C62 are supported by antigenic mapping using HI assays (Figure 9A) and structural modeling (Figure 9B). The contrasting patterns between lineages are clear. The relationship between RBP proximity and antigenic distance is consistent with work on H3N2 by Koel et al., 2013. However, the number of viruses tested (87) is relatively small, and HI assays can be subject to measurement error.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "5b5a2dc6-965e-4905-b69a-ac1e3bf42a4d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Victoria viruses infected a younger population (mean 16.8 years, median 11 years) compared to Yamagata (mean 26.6 years, median 18 years). Nearly 70% of Victoria infections occurred in children <18 years, while Yamagata showed a bimodal distribution with significant shift toward individuals >25 years. These differences were consistent across countries and with data from China and Slovenia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63\u2013C65 are supported by epidemiological data analysis (Figure 10, Table 2) with statistical significance (\u03c7\u00b2 test, p < 0.0001). The consistency across multiple countries (Australia, New Zealand, China, Slovenia) strengthens the finding and argues against systematic bias. The sample size is large (5260 samples with age data), providing good statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "596daccc-ab66-4f93-a4e6-1b3fc363dcab",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Victoria HA showed higher rates of amino acid change consistent with stronger selective pressures, with changes clustered at 21, 29, and 37 \u00c5 from the RBP. All changes in the closest cluster (21 \u00c5) were exclusively Victoria lineage changes. Overall, amino acid changes in both influenza B lineages were less frequent than in influenza A viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66\u2013C68 are supported by structural analysis mapping amino acid changes onto crystal structures (Figure 11A,C). The clustering of Victoria changes near the RBP is consistent with the antigenic drift patterns. The comparison with influenza A (Figure 11\u2014figure supplement 1) provides important context. The structural analysis appropriately uses resolved crystal structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "51f70f0f-29a6-4430-9ea4-8a737daf9bec",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Crystal structures showed extensive backbone differences around amino acid sites 165 and 180 near the RBP between Victoria and Yamagata lineages. Previous experiments suggest Yamagata viruses bind predominantly to \u03b1-2,6-linked sialic acid receptors while Victoria viruses have both \u03b1-2,3 and \u03b1-2,6 binding capacities. N-glycosylation at Asn 212 occurs in both lineages but has lower frequency in Victoria strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69\u2013C71 are supported by crystal structure analysis (Figure 11B,D) and citations to experimental studies (Wang et al., 2012; Velkov, 2013). The structural differences are clearly demonstrated. However, the receptor binding preferences are based on prior experimental work rather than direct experiments in this study, which is appropriately acknowledged through citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "fae4cc17-6aa0-4ceb-b44a-598afcd6c047",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Amino acid changes at sites 212 or 214 would abolish N-glycosylation at 212. Loss of N-glycosylation at 212 adds capacity to bind \u03b1-2,3 and not just \u03b1-2,6-linked sialic acid receptors. Loss of N-glycosylation at site 212 was associated with increased proportion in the younger (0\u20135 years) age group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72\u2013C74 integrate structural analysis (Figure 11E) with epidemiological observations (Figure 12). The structural consequence of glycosylation loss is well-supported by modeling. The association with younger age groups (Figure 12B) shows appropriate odds ratios. However, this is an association rather than a causal demonstration, and the mechanism linking glycosylation to age distribution remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "1907b8f5-1171-48f2-9e6b-27738380767d",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors hypothesize that differences in evolutionary and epidemiological dynamics are driven by differences in hemagglutinin binding preferences. Subtle differences in \u03b1-2,3- and \u03b1-2,6-linked glycan prevalence in respiratory tract cells of children versus adults, combined with glycosylation pattern changes, could account for differential age distributions. The greater propensity to infect children increases Re, initiating the epidemiological and evolutionary pattern characterizing Victoria lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75, C86, C87, and C88 present the authors' mechanistic hypothesis linking receptor binding to age distribution and transmission dynamics. While the hypothesis is plausible and integrates multiple lines of evidence (structural differences, age distributions, Re estimates, receptor distribution in children from Nicholls et al., 2007), it remains speculative. Direct experimental validation of receptor binding preferences for the specific strains studied, and demonstration of the causal link between receptor binding and age distribution, would be needed to fully support this hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "eb8ceb26-920f-4e80-804d-959e721555f6",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Two possible explanations for age distribution differences are proposed: (1) higher Re of Victoria reduces mean age of infection as expected for diseases conferring immunity, or (2) older populations are better protected against Victoria due to broader immune response. The first scenario is supported by increasing mean age of infection for B/Brisbane/60/2008 from 15 years (2008) to 20.5 years (2011), coinciding with gradual Re drop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77\u2013C79 present alternative hypotheses with supporting data. The temporal trend in age of infection correlating with Re changes (Figure 5A) provides evidence favoring the first hypothesis, though both mechanisms could contribute. The analysis appropriately acknowledges uncertainty and presents data supporting one explanation over the other.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "5fe8c7bd-c6f1-4246-8e5e-2aa1345383ed",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The Victoria lineage phylodynamic pattern indicates a virus population under greater selection pressure that escapes host immunity by accruing beneficial HA substitutions. Theory predicts highest viral adaptation at intermediate immune pressure, which may characterize Victoria. This ensures constant supply of susceptible individuals, increasing Re. Yamagata exhibits slower dynamics with lower Re, suggesting weaker immune selection pressure and weaker antigenic drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80\u2013C83 synthesize multiple results into a coherent evolutionary framework. The interpretation is well-supported by phylodynamic patterns (Figures 3, 4), selection analysis (Table 1), Re estimates (Figure 5), and antigenic data (Figure 9). The theoretical framework from Grenfell et al., 2004 is appropriately applied. The inferences are logical given the data, though alternative explanations are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "29450b05-adf3-4e8a-abaf-c0b2e9f34c6f",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Clinical trials in children and experimental mouse infections showed Yamagata antigens produced stronger immune response than Victoria antigens. If natural infection is similar, this would imply Yamagata viruses are less able to evolve through antigenic drift and escape immune response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C85 cite experimental evidence from Skowronski et al., 2011, 2012. The inference about natural infection is appropriately cautious ('if natural infection was similar'), acknowledging uncertainty in extrapolating from vaccination/experimental studies to natural infection. This provides a potential immunological mechanism for the observed differences in antigenic drift.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    },
+    {
+      "id": "2228c0a5-5f3e-4766-ab78-8500746494d3",
+      "content_id": "eb8687c0-afb3-4529-92b1-7e176e780f1f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Given sufficient coverage, Yamagata viruses might experience a major drop in prevalence through targeted control methods like extensive use of quadrivalent vaccines, in contrast to the more adaptable Victoria viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is a speculative prediction about future vaccine impact. While it logically follows from the observed differences in antigenic drift and immune pressure, it remains untested. The prediction depends on assumptions about vaccine coverage, vaccine effectiveness, and the stability of the observed evolutionary patterns. Long-term surveillance data would be needed to evaluate this prediction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:57.772669Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "133cdde8-f9c5-4da4-b512-8a8cc2bb9ea4",
+      "result_id": "dc95f7d1-b401-4220-b00d-9ba1232559c8"
+    },
+    {
+      "claim_id": "f470bc95-6c12-4dbc-a8a9-a0a7065d4bf1",
+      "result_id": "dc95f7d1-b401-4220-b00d-9ba1232559c8"
+    },
+    {
+      "claim_id": "d6663632-5d1f-43fe-b3d8-d296dfa41f24",
+      "result_id": "9c7fa5c9-7dbe-426d-8c63-e59d6605b140"
+    },
+    {
+      "claim_id": "d22b1af4-28a6-4704-a925-202bcf0b7b9c",
+      "result_id": "9c7fa5c9-7dbe-426d-8c63-e59d6605b140"
+    },
+    {
+      "claim_id": "5176429e-f377-4bcf-af13-398f9ae5b7f4",
+      "result_id": "9c7fa5c9-7dbe-426d-8c63-e59d6605b140"
+    },
+    {
+      "claim_id": "328f9f71-bdbf-49c7-ab90-84f5f8ea8a00",
+      "result_id": "9c7fa5c9-7dbe-426d-8c63-e59d6605b140"
+    },
+    {
+      "claim_id": "d26c6494-0d25-4495-b47a-dbe8da4c2cee",
+      "result_id": "9c7fa5c9-7dbe-426d-8c63-e59d6605b140"
+    },
+    {
+      "claim_id": "9dc13d61-fdc0-4993-8f81-34f41a8d9fb3",
+      "result_id": "9c7fa5c9-7dbe-426d-8c63-e59d6605b140"
+    },
+    {
+      "claim_id": "88ef70e6-0f93-45bf-b3dd-4f3afeb45212",
+      "result_id": "70db3f66-cf13-4c81-8b52-e55d4c302e4b"
+    },
+    {
+      "claim_id": "2d871536-c030-4824-ad78-8f54d263615a",
+      "result_id": "70db3f66-cf13-4c81-8b52-e55d4c302e4b"
+    },
+    {
+      "claim_id": "1e4fb3a5-532e-4193-99b1-b66c5e24fc88",
+      "result_id": "70db3f66-cf13-4c81-8b52-e55d4c302e4b"
+    },
+    {
+      "claim_id": "e8d9402a-8230-4240-a513-08711ad16a8d",
+      "result_id": "70db3f66-cf13-4c81-8b52-e55d4c302e4b"
+    },
+    {
+      "claim_id": "b6e08dfe-3376-4d86-9e5a-930a6718fa85",
+      "result_id": "70db3f66-cf13-4c81-8b52-e55d4c302e4b"
+    },
+    {
+      "claim_id": "f77b854f-8327-4e99-8e50-3cdbaafb52cb",
+      "result_id": "70db3f66-cf13-4c81-8b52-e55d4c302e4b"
+    },
+    {
+      "claim_id": "76392bb3-0fd2-46ef-9b65-138dceb7ad65",
+      "result_id": "814bd9c0-a573-4a5d-a231-e3ddf53181fc"
+    },
+    {
+      "claim_id": "af403185-a8c7-4b55-97bb-1c3b5ef219e2",
+      "result_id": "814bd9c0-a573-4a5d-a231-e3ddf53181fc"
+    },
+    {
+      "claim_id": "b274bd27-8c24-4eb0-9820-746474540f9e",
+      "result_id": "814bd9c0-a573-4a5d-a231-e3ddf53181fc"
+    },
+    {
+      "claim_id": "4c8734b8-d392-4cea-b61e-a69635a06e39",
+      "result_id": "814bd9c0-a573-4a5d-a231-e3ddf53181fc"
+    },
+    {
+      "claim_id": "4edd1591-a7ef-45dc-a12d-ac094610daf1",
+      "result_id": "814bd9c0-a573-4a5d-a231-e3ddf53181fc"
+    },
+    {
+      "claim_id": "89f5dc89-cec9-48e6-b1d9-219ffe8a8312",
+      "result_id": "0756b5aa-aca9-4a59-988f-b015a69ec922"
+    },
+    {
+      "claim_id": "b0d27fcb-711a-4ff6-9b88-77b9266dec76",
+      "result_id": "3066ffd2-3f6e-4a71-b1a2-41134dfd024c"
+    },
+    {
+      "claim_id": "c9ba0104-11d5-456e-8c9f-7b034f90128e",
+      "result_id": "39531559-0804-4ceb-9cd3-83d047312ce9"
+    },
+    {
+      "claim_id": "bb3f2484-4a8b-45c6-933e-31f633d9e09a",
+      "result_id": "39531559-0804-4ceb-9cd3-83d047312ce9"
+    },
+    {
+      "claim_id": "27d400e9-120a-46d9-b8ad-0636d493f606",
+      "result_id": "e3a1e217-c462-4169-a5ee-095886c12417"
+    },
+    {
+      "claim_id": "410128b9-58c3-4de1-a0dd-f2308b1495dd",
+      "result_id": "e3a1e217-c462-4169-a5ee-095886c12417"
+    },
+    {
+      "claim_id": "6083680d-fe42-4b5a-bcbb-af19e047817b",
+      "result_id": "e3a1e217-c462-4169-a5ee-095886c12417"
+    },
+    {
+      "claim_id": "8b1a28ed-f9ca-45fd-9f8b-771470d29b41",
+      "result_id": "e3a1e217-c462-4169-a5ee-095886c12417"
+    },
+    {
+      "claim_id": "fc81b218-1d6c-453d-813c-026f76c90890",
+      "result_id": "e3a1e217-c462-4169-a5ee-095886c12417"
+    },
+    {
+      "claim_id": "130c1b9e-5610-49ad-b432-4db453b94ed3",
+      "result_id": "6b1a8ab3-cfe4-4148-ae51-b3c02e06a46c"
+    },
+    {
+      "claim_id": "f73119b6-adda-45c7-b1d4-f53314cff86f",
+      "result_id": "6b1a8ab3-cfe4-4148-ae51-b3c02e06a46c"
+    },
+    {
+      "claim_id": "089196d9-f657-436d-9c96-ed7b0f73585f",
+      "result_id": "233cea97-da68-4c34-8058-740ed7ca1154"
+    },
+    {
+      "claim_id": "bbcdfe7b-1245-4fd1-b1e4-acd0e7c3373e",
+      "result_id": "233cea97-da68-4c34-8058-740ed7ca1154"
+    },
+    {
+      "claim_id": "ab1b1d38-863c-4983-9832-6551ef2458dd",
+      "result_id": "1f38640b-697d-48d5-9961-3941c1611abb"
+    },
+    {
+      "claim_id": "439304ad-ff88-4192-9658-51c9ded7614e",
+      "result_id": "1f38640b-697d-48d5-9961-3941c1611abb"
+    },
+    {
+      "claim_id": "37e78a62-866e-4f5e-b32f-ef78262d2910",
+      "result_id": "1f38640b-697d-48d5-9961-3941c1611abb"
+    },
+    {
+      "claim_id": "9b4c8724-f4db-430f-b04c-1f2dd8eab556",
+      "result_id": "1f38640b-697d-48d5-9961-3941c1611abb"
+    },
+    {
+      "claim_id": "dcc274dd-e66f-4584-a54f-a415e0f9370b",
+      "result_id": "1f38640b-697d-48d5-9961-3941c1611abb"
+    },
+    {
+      "claim_id": "d7f0a583-0285-4932-879f-a33273408ac0",
+      "result_id": "34edff96-5e25-41c0-bed5-3bb2142891fb"
+    },
+    {
+      "claim_id": "23f9152c-728b-4391-8562-0a29fe1fc0f4",
+      "result_id": "34edff96-5e25-41c0-bed5-3bb2142891fb"
+    },
+    {
+      "claim_id": "a20000ca-b1f0-443d-87b8-576e8a37adb6",
+      "result_id": "34edff96-5e25-41c0-bed5-3bb2142891fb"
+    },
+    {
+      "claim_id": "83b07d82-34f2-4b3e-94f2-eb6917222203",
+      "result_id": "34edff96-5e25-41c0-bed5-3bb2142891fb"
+    },
+    {
+      "claim_id": "adbba217-c035-4935-ae37-db063efee65d",
+      "result_id": "5b5a2dc6-965e-4905-b69a-ac1e3bf42a4d"
+    },
+    {
+      "claim_id": "471f4852-100d-4b00-a92e-d98d1e8be573",
+      "result_id": "5b5a2dc6-965e-4905-b69a-ac1e3bf42a4d"
+    },
+    {
+      "claim_id": "6a64c97a-eddf-45ec-9138-7feb0bbf069d",
+      "result_id": "5b5a2dc6-965e-4905-b69a-ac1e3bf42a4d"
+    },
+    {
+      "claim_id": "edad4832-ada4-4856-a791-aca790ec0c28",
+      "result_id": "596daccc-ab66-4f93-a4e6-1b3fc363dcab"
+    },
+    {
+      "claim_id": "69025af6-a84d-46ed-b1ac-9e6821ec4ff2",
+      "result_id": "596daccc-ab66-4f93-a4e6-1b3fc363dcab"
+    },
+    {
+      "claim_id": "278e4816-7511-4baa-903a-877a5bf34952",
+      "result_id": "596daccc-ab66-4f93-a4e6-1b3fc363dcab"
+    },
+    {
+      "claim_id": "674d6f76-7834-4337-ba74-2b2a2ea97ef2",
+      "result_id": "51f70f0f-29a6-4430-9ea4-8a737daf9bec"
+    },
+    {
+      "claim_id": "f3397659-1b79-48af-a59e-04fe888700e0",
+      "result_id": "51f70f0f-29a6-4430-9ea4-8a737daf9bec"
+    },
+    {
+      "claim_id": "02f309b6-e587-457a-9f16-d214cd99f9ed",
+      "result_id": "51f70f0f-29a6-4430-9ea4-8a737daf9bec"
+    },
+    {
+      "claim_id": "898e6741-20b6-4422-a2d2-7660183a3fc6",
+      "result_id": "fae4cc17-6aa0-4ceb-b44a-598afcd6c047"
+    },
+    {
+      "claim_id": "84e36904-73c4-4156-a178-420b7189f687",
+      "result_id": "fae4cc17-6aa0-4ceb-b44a-598afcd6c047"
+    },
+    {
+      "claim_id": "ce45acd2-4b4c-4349-88df-75cf1db4883e",
+      "result_id": "fae4cc17-6aa0-4ceb-b44a-598afcd6c047"
+    },
+    {
+      "claim_id": "43f3c113-c1b8-42a0-be37-83b3fb3a9797",
+      "result_id": "1907b8f5-1171-48f2-9e6b-27738380767d"
+    },
+    {
+      "claim_id": "87db589f-310b-4cff-a0cb-c30957c77da7",
+      "result_id": "1907b8f5-1171-48f2-9e6b-27738380767d"
+    },
+    {
+      "claim_id": "7f22da4a-2df1-4e81-be80-1c600071b9c3",
+      "result_id": "1907b8f5-1171-48f2-9e6b-27738380767d"
+    },
+    {
+      "claim_id": "009f474e-29bb-4865-a60c-52c158fa195d",
+      "result_id": "1907b8f5-1171-48f2-9e6b-27738380767d"
+    },
+    {
+      "claim_id": "6ecb4f19-f207-41f6-9bfd-0fd492a1939e",
+      "result_id": "eb8ceb26-920f-4e80-804d-959e721555f6"
+    },
+    {
+      "claim_id": "99d4b1e1-3b98-4877-a9fb-b83e9a63c66f",
+      "result_id": "eb8ceb26-920f-4e80-804d-959e721555f6"
+    },
+    {
+      "claim_id": "7b5fdf1f-8cc3-407e-97a1-3045df4f5872",
+      "result_id": "eb8ceb26-920f-4e80-804d-959e721555f6"
+    },
+    {
+      "claim_id": "26f42c80-8b82-46d5-8a9c-28920015090d",
+      "result_id": "5fe8c7bd-c6f1-4246-8e5e-2aa1345383ed"
+    },
+    {
+      "claim_id": "4747f1c7-56a3-4bf4-9446-02cec16fa944",
+      "result_id": "5fe8c7bd-c6f1-4246-8e5e-2aa1345383ed"
+    },
+    {
+      "claim_id": "f9b81516-8c41-4d56-bdd0-10cf004a769b",
+      "result_id": "5fe8c7bd-c6f1-4246-8e5e-2aa1345383ed"
+    },
+    {
+      "claim_id": "e6989296-1f9f-4b95-bc93-bc150c6f6adb",
+      "result_id": "5fe8c7bd-c6f1-4246-8e5e-2aa1345383ed"
+    },
+    {
+      "claim_id": "a4bd96a0-399d-4e7c-a8e2-8e0605d9caa7",
+      "result_id": "29450b05-adf3-4e8a-abaf-c0b2e9f34c6f"
+    },
+    {
+      "claim_id": "479bbeec-c207-4903-bfbb-e997f60db1f6",
+      "result_id": "29450b05-adf3-4e8a-abaf-c0b2e9f34c6f"
+    },
+    {
+      "claim_id": "a5d12ce8-07c1-438c-b40b-314f8d4b89f2",
+      "result_id": "2228c0a5-5f3e-4766-ab78-8500746494d3"
+    }
+  ],
+  "comparisons": []
+}

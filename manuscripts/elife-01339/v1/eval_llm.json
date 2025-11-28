@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Deletion of the singleton tRNAArgCCU gene causes severe growth defects in S. cerevisiae. The \u0394tRNAArgCCU strain exhibits substantially reduced growth compared to wild-type, despite being viable, demonstrating that wobble pairing by tRNAArgUCU cannot fully compensate for the loss of the cognate tRNA for the AGG codon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C54-C57 collectively establish that deletion of tRNAArgCCU creates a translational imbalance with measurable fitness consequences. The experimental growth data (C13), codon usage information (C54), and prior viability studies (C56) converge to support this result. The inference about wobble compensation (C55, C57) is reasonable given the established wobble pairing rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Experimental evolution of the \u0394tRNAArgCCU strain rapidly restores fitness through anticodon switching. After 200 generations, all four independent evolutionary lines converged on the same solution: a T\u2192C mutation in one of the 11 copies of tRNAArgUCU that changes its anticodon from UCU to CCU, enabling it to decode the AGG codon. This single mutation is sufficient for complete phenotypic rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 provide strong convergent evidence for anticodon switching as an adaptive mechanism. The reproducibility across four independent lines (C15, C19), sequencing data identifying the specific mutation (C16), and validation through engineered strains (C20, C21) collectively demonstrate that this is a robust evolutionary solution. The experimental design and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C47"
+    ],
+    "result": "Chimeric tRNAs with different scaffolds but correct anticodons are functionally equivalent to native tRNAs. Despite 21 nucleotide differences between tRNAArgUCU and tRNAArgCCU scaffolds, the chimeric tRNA (tRNAArgUCU scaffold with CCU anticodon) performs identically to wild-type under diverse growth conditions, suggesting that tRNA scaffolds encoding the same amino acid are interchangeable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C47 demonstrate functional equivalence through growth assays under multiple conditions (C24). However, the conclusion about complete interchangeability (C25) may be overstated, as the authors acknowledge that subtle fitness differences might exist under untested conditions or that measurements may lack sensitivity. The result is supported for the conditions tested but requires qualification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The anticodon dominance principle extends to other tRNA families. Deletion of the essential tRNASerGCU family is lethal, but viability is restored by either the native tRNA or a chimeric tRNA with a tRNASerCGA scaffold and GCU anticodon, further supporting that anticodon identity is the critical determinant of tRNA function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 provide independent validation of the anticodon dominance principle in a different tRNA family. The experimental design with plasmid complementation (C27) and chimeric rescue (C28) is appropriate. This generalization strengthens the main finding, though testing in only two tRNA families limits the scope of the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C45",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Anticodon switching is a widespread evolutionary mechanism across the tree of life. Bioinformatic analysis of 524 species identified tRNA switching events in all three domains of life (8 bacteria, 58 eukarya, 1 archaea), with most switches occurring at the first anticodon position. Phylogenetic analyses in mouse and human reveal multiple independent switching events that occurred after their divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C45 establish the prevalence of switching, while C64-C72 provide methodological details and specific examples. The phylogenetic approach is sound, and the control analysis (C72) showing higher discrepancies for non-anticodon triplets validates the specificity of the finding. However, the relatively low detection rate (especially in bacteria and archaea) and potential biases in the computational method warrant caution in interpreting the full extent of this phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C59"
+    ],
+    "result": "Overexpression of rare tRNAs is deleterious to cellular fitness. Wild-type cells carrying multi-copy plasmids with the rare tRNAArgCCU exhibit substantial growth defects compared to cells with abundant tRNAArgUCU or empty plasmids. This finding is consistent with evolutionary conservation of low copy numbers for tRNAArgCCU across yeast species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 demonstrate the deleterious effect through growth curve comparisons, with appropriate controls. The observation is consistent with evolutionary patterns (C59). However, the use of multi-copy plasmids may create artificially high expression levels that don't reflect gradual evolutionary changes. The modest effect with low-copy plasmids (mentioned in methods but not in main claims) suggests dose-dependency that could be better characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C48"
+    ],
+    "result": "Overexpression of rare tRNAs causes proteotoxic stress. Cells overexpressing tRNAArgCCU show a threefold increase in protein quality control machinery saturation (VHL-mCherry puncta) and significant upregulation of heat shock protein genes, while overexpression of abundant tRNAArgUCU does not. This demonstrates that maintaining low copy numbers of certain tRNAs is adaptive for proper protein folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C48 provide convergent evidence from two independent assays (VHL puncta and HSP expression) that specifically link rare tRNA overexpression to proteotoxic stress. The differential effect between rare and abundant tRNAs strengthens the conclusion. However, the mechanism remains partially unclear\u2014whether due to impaired cotranslational folding, misincorporation, or misloading\u2014limiting the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C50",
+      "C51"
+    ],
+    "result": "Anticodon mutations provide a rapid evolutionary mechanism for adapting the tRNA pool to changing translational demands. The multi-copy architecture of tRNA gene families enables single-point mutations to quickly alter tRNA ratios, potentially faster than through gene duplications and deletions. This mechanism acts in concert with protein folding constraints to shape the tRNA pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C50-C51 synthesize the experimental and bioinformatic findings into a coherent evolutionary model. The proposal that anticodon switching is faster than duplication/deletion (C43) is logical but somewhat speculative, as the relative rates are not directly measured. The integration of translational demand and folding constraints (C51) is well-supported by the combined experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7"
+    ],
+    "result": "The translation apparatus is highly conserved, but tRNA genes provide evolutionary plasticity. While ribosomal genes show little environmental responsiveness, tRNA genes may serve as an important source of evolutionary adaptation for fine-tuning translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C6 are well-supported by multiple citations to prior work. Claim C7 is speculative but serves as a reasonable hypothesis that motivates the study. This represents established background knowledge rather than a novel finding of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Codon usage bias is influenced by both neutral processes and natural selection. Codon choice affects multiple aspects of translation including expression level, protein folding, and accuracy, with selection capable of shaping codon usage even in organisms with small effective population sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 summarize well-established prior knowledge supported by appropriate citations. These claims provide important context for understanding the significance of tRNA pool evolution but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "tRNA gene copy number correlates with cellular tRNA abundance and influences translation efficiency. The rate-limiting step of elongation is tRNA recruitment, and highly expressed genes are biased toward codons with high tRNA gene copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 present established principles of translation biology supported by appropriate citations. These provide essential background for interpreting the experimental results but are not novel contributions of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Environmental changes can create translational imbalances that drive tRNA pool evolution. Transcriptional responses to environmental challenges alter transcriptome codon usage, potentially creating mismatches with the tRNA pool that can be addressed through both short-term expression changes and long-term genetic adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 synthesize prior work (supported by citations) to establish the biological context for why tRNA pool adaptation would be advantageous. This represents a well-supported framework based on existing literature rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Prior studies on methionine tRNAs demonstrated that scaffold sequences determine initiator versus elongator function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 accurately cites prior work on methionine tRNAs. This provides important context for discussing the novelty of the current findings regarding scaffold interchangeability in other tRNA families.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Overexpression of rare tRNAs may impair cotranslational folding by disrupting programmed translational pauses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is explicitly speculative and presents one possible mechanism for the observed proteotoxic stress. While consistent with cited theories about cotranslational folding, the authors acknowledge that alternative mechanisms (misincorporation, misloading) could also contribute. The claim appropriately identifies this as speculation requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "S. cerevisiae has 42 tRNA families comprising 274 tRNA genes, with family sizes ranging from 1-16 copies and 6 singleton families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 present established genomic information about yeast tRNA genes, supported by citation to the tRNA database. This provides essential background information for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The experimental evolution protocol involved daily dilution by a factor of 120, corresponding to approximately 7 generations per cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 describes a methodological detail of the evolution experiments. This is straightforward experimental design information necessary for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

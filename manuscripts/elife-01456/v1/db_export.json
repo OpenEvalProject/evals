@@ -1,0 +1,1721 @@
+{
+  "submission": {
+    "id": "4b1c36ec-057d-4750-bf43-ef4e3c3de21c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:39:44.953521Z",
+    "updated_at": "2025-11-28T19:39:44.953521Z"
+  },
+  "content": [
+    {
+      "id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "submission_id": "4b1c36ec-057d-4750-bf43-ef4e3c3de21c",
+      "content_type": "manuscript",
+      "content_text": "# Collaboration gets the most out of software\n\n## Authors\n\n- Andrew Morin<sup>1</sup>\n- Ben Eisenbraun<sup>2</sup>\n- Jason Key<sup>3</sup>\n- Paul C Sanschagrin<sup>4</sup>\n- Michael A Timony<sup>5</sup>\n- Michelle Ottaviano<sup>6</sup>\n- Piotr Sliz<sup>7</sup> \u2020\n\n### Affiliations\n\n1. SBGrid Consortium and the Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n2. SBGrid Consortium and the Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n3. SBGrid Consortium and the Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n4. SBGrid Consortium and the Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n5. SBGrid Consortium and the Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n6. SBGrid Consortium and the Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n7. SBGrid Consortium and the Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States piotr_sliz@hms.harvard.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nBy centralizing many of the tasks associated with the upkeep of scientific software, SBGrid allows researchers to spend more of their time on research.\n\n## The benefits of the shared approach\n\nSBGrid began as a collaboration between a handful of structural biology laboratories in the north-eastern US to support software applications used in X-ray crystallography (see Box 1). As more laboratories joined the collaboration, SBGrid began supporting software used in other common structural biology techniques, and today offers a library of over 270 different scientific applications and software suites to more than 245 laboratories and research groups in 16 countries (see Figure 1).Box 1.The origins and growth of SBGridSBGrid was started in 2000 by one of the present authors (Piotr Sliz) as a home-grown solution to the challenge of supporting and maintaining a few dozen X-ray crystallography applications run on SGI IRIX and Linux workstations in the laboratories of Stephen Harrison and the late Don Wiley at Harvard University and Children\u2019s Hospital Boston, and Ya Ha and Karin Reinisch at Yale Medical School. This support included other existing collaborative software projects in X-ray crystallography such as CCP4 (Winn et al., 2011) and later PHENIX (Adams et al., 2010)\u2014both of which are currently contributors to SBGrid.In 2002, Sliz and Harrison relocated to Harvard Medical School, several additional research groups joined SBGrid and it initiated software support for electron microscopy (EM), nuclear magnetic resonance (NMR) and other structural biology techniques. It also began charging user-fees to recover operational costs. In 2004, in response to demand from Mac users, SBGrid re-compiled the majority of its applications to run under OS X, and today approximately 50% of members use Macs (see Box 2). In 2007, in an effort to support more computationally demanding applications, SBGrid established a Virtual Organization within the Open Science Grid.2009 was notable as SBGrid established itself as an NIH-compliant non-profit service centre in the Department of Biological Chemistry and Molecular Pharmacology at Harvard Medical School, and developed a unified end-user license agreement (with the help of the Harvard University Office of Technology Development). The first pharmaceutical company laboratories (Genzyme, Novartis and Biogen) also joined. These commercial members are supported with a subset of applications in the SBGrid library suitably licensed for installation in for-profit laboratories. Several synchrotron beam lines also became members in 2009.SBGrid also makes use of its position as active intermediary between software developers and structural biologists to undertake a variety of activities:# regular seminars and webinars in which creators of popular programs can teach and interact with SBGrid member users, answer questions and demonstrate use of their applications. These sessions are also broadcast over the web and archived for later viewing.# policy and advocacy on behalf of the wider research computing community (Morin et al., 2012a, 2012b).# the organization of schools and workshops. To date there have been three schools/workshops in Boston and one in Heidelberg.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01456/elife-01456-fig1-v1.jpg)\n\n**Figure 1.:** Worldwide distribution of SBGrid member laboratories as of May 2013. The SBGrid software library spans the spectrum of techniques commonly utilized by structural biologists, including X-ray crystallography, electron microscopy, NMR, 2D crystallography, bioinformatics, computational chemistry, small angle scattering, tomography, modelling, visualization and structure prediction.\n\nSBGrid actively curates the software library, identifies new and useful software and applications, configures and compiles applications, and automatically installs the collection to computer workstations in member laboratories. SBGrid also continuously updates and upgrades programs in the collection with newer versions and bug fixes as they become available. This entire process is completely automated and transparent, requiring no input or maintenance from end-users. After members join SBGrid, all of the programs in the collection are installed and updated automatically and reside locally on member laboratory computers (see Box 2).Box 2.Technical detailsThe SBGrid software deployment and update system, internally referred to as the \u2018sync system\u2019, uses a shell script wrapper around a common file synchronization tool called rsync to install and automatically update the UNIX software environment on a large number of internet-connected machines around the world. The system uses a MySQL database to build customized download lists that determine which software titles are available to a particular laboratory. For each application the database contains public information about that software (such as its URL and links to documentation) and information that is specific to SBGrid (such as the installation directory, and information on which groups are licensed to use the software). Each member laboratory is designated as being either non-profit, government, academic or commercial, and the database contains a set of associated download credentials for each research group.The sync system uses this information to build a default list of applications that a member laboratory can access, and the rsync daemon on the SBGrid distribution server provides authenticated downloads of the software available in these \u2018include files\u2019. Client machines that host an installation of the SBGrid software environment run a shell script every 15 min via a cron job that performs a simple check over HTTP to see if updates are available and initiates the rsync download. SBGrid can initiate global updates that are applied to every installation, and it can also initiate a single site update in response to bug reports or requests for new software titles.The software available on the client machines is organized into a single top-level directory with subdirectories for each operating system and CPU architecture combination (e.g., i386-linux, x86_64-linux, i386-mac, etc). Each application is installed in its own directory in the next level of the file system, and in each application directory each version of the application is installed in a separate subdirectory. This allows multiple versions of a single installed application. The software environment configures a single default version, but a simple user-controlled version switching mechanism is available so that users can, for example, select an older version to check prior results or work around bugs in newer versions.The user initializes the SBGrid software environment by sourcing a single file into their UNIX shell, using provided configuration scripts for both sh and csh syntax shells. The shell environment does a number of tests to determine system type and then sets up a customized environment for each operating system depending on CPU type and operating system release. The sync system and software environment layout is flexible enough to accommodate the wide variety of IT environments that SBGrid member laboratories operate in and has proven to be robust and scalable.SBGrid also provides the wider structural biology community with access to supercomputing facilities across the US in collaboration with the Open Science Grid (OSG: Pordes et al., 2007) via the SBGrid Science Portal. Currently, SBGrid provides access to two grid-enabled services: the Wide-Search Molecular Replacement (WSMR; Stokes-Rees and Sliz, 2010) service for determining crystallographic phase using the Phaser program (McCoy et al., 2007), and the Deformable Elastic Network (DEN) service for refining low-resolution electron density data (O\u2019Donovan et al., 2012; Schr\u00f6der et al., 2010).SBGrid has also developed a prototype system for storage and transmission of large experimental datasets collected at synchrotron facilities (Stokes-Rees et al., 2012), and completed a pilot project with WeNMR to optimize cyber-infrastructure utilization between European and US computing facilities (Wassenaar et al., 2012).Finally, to support the development of cutting edge structural biology software, SBGrid operates a Developer Support Program which, among other things, offers software developers letters of support for grant applications, software beta testing in selected member laboratories and access to programming tools and resources.\n\nCollaborations like SBGrid provide benefits for the research community, software developers and institutions alike (see Figure 2). Member laboratories and end-users benefit directly from comprehensive licensing (see Box 3) and support for hundreds of software applications, each of which might otherwise demand significant time, expense and expertise to obtain, install and maintain. This centralized support means that software is maintained and updated on a regular basis, and it also reduces the problems associated with the high turnover of staff that is commonplace in academic environments. By offering access to a consistent and comprehensive set of research software, SBGrid promotes collaboration and reproducibility and, crucially, allows scientists to spend more of their time doing science.Box 3.Licensing modelAs part of its service to members, SBGrid consolidates licensing agreements for all software in the collection into a single end-user license agreement that users agree to when they join SBGrid. This simplifies license administration for software creators and saves end users and their institutional legal counsels from having to complete tens (or possibly hundreds) of individual license agreements.SBGrid applications are classified into one of four categories, depending on the type of license chosen by the creator or owner of the software: (i) open source software (OSS); (ii) software that is freely available to academic members; (iii) software that is freely available to non-profit groups who are members of SBGrid; (iv) software subject to restrictions. Of the 275 software titles currently in the SBGrid library, 162 are offered under OSS licenses, and the majority of the remaining software is freely available to academic and non-profit members. For the very limited number of programs with restrictions imposed by the author or owner of the software, member laboratories must demonstrate license compliance before the application is installed.This approach allows SBGrid to accommodate a variety of end-user types while complying with licensing terms of each program. For example, academic and non-profit members can access the entire collection by default (excluding applications with custom restrictions). For-profit members can access all OSS programs and any applications that permit free commercial use; however, they must provide SBGrid with proof of a valid license to access programs that have separate for-profit licensing agreements. Members with shared or mixed-use research environments, such as synchrotron beamlines, who often host both non-profit and for-profit users, are provided with multiple program trees each containing the appropriate subset of applications. These mixed-use facilities are then required to implement procedures for assuring that each category of user only has access to the appropriate program tree.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01456/elife-01456-fig2-v1.jpg)\n\n**Figure 2.:** Schematic representations of the interactions between developers, end-users and institutions. (Left) By providing software and support (orange lines) to end-users and institutions, SBGrid frees up time for developers to have scientific interactions (blue lines) with the scientific community, and reduces the amount of time end-users and institutions need to spend updating and maintaining software, thus leaving more time for research. SBGrid also facilitates access to external computing resources (green lines). In the traditional model for supporting research computing (right), the burden of maintaining and updating software falls on developers and users (orange line), thus reducing the time available for other more productive activities (blue line). Moreover, access to the most powerful external computing resources is limited to a small number of computationally sophisticated end-users (dashed lines).\n\nThe discovery of new applications is enhanced within SBGrid by comprehensive inclusion and continuous addition of new software based on aggregated community knowledge. The formation of a community of active and involved researchers and scientist software developers around the collaboration also makes possible the collective exploitation of research computing resources that might otherwise be beyond the means of any single member or institution (such as the US cyber-infrastructure for large-scale computing: see Box 2).\n\nFor developers, distributing software through collaborations like SBGrid relieves the significant burdens associated with the distribution of their programs and the provision of end-user support, thereby freeing them to focus on new research and scientific communication with end-users rather than on technical support issues. Program creators are assured that updates, improvements, bug-fixes and other development-side maintenance modifications are rapidly deployed, and developers are apprised of which research groups have access to their software, giving them information to more easily track citations and assess scientific impact for grant and funding purposes. Furthermore, popular scientific programs that the original creator may no longer be able and/or willing to actively support or distribute may be offered and supported by the collaboration, thereby extending the lifetime of useful research software and maximizing return on research investment.\n\nFor institutions, collaborations like SBGrid offer a simple and cost-effective solution to providing domain-specific, up-to-date research computing resources for specialized scientific fields independent of in-house IT and research computing expertise. Thus, in an era of shrinking IT budgets, difficulty hiring and retaining experienced staff and continually expanding demands on IT resources, initiatives like SBGrid extend the range and quality of software support while allowing local research computing departments to focus on core competencies and delivering common, foundational IT services (see Figure 2).\n\n## Generalizability of the SBGrid model\n\nThe community-based model established by SBGrid could offer benefits to other areas of research that are reliant on computing and scientific software. The basic requirements for replicating an SBGrid-like collaboration are: (i) a community of researchers utilizing common or overlapping research computing tools and methods; (ii) a set of useful research computing resources (such as scientist-created software or advanced computing facilities) whose acquisition, use or exploitation presents significant barriers to access. The \u2018start-up\u2019 phase of an SBGrid-style collaboration would also benefit from a cohort of research laboratories willing to provide an initial investment in foundational resources (e.g. salaries, facilities, etc). Alternatively, start-up could be facilitated through grant support from funding agencies, before shifting fully to a self-sustaining fee-for-use model. In the case of SBGrid the required technical elements are relatively modest (see Box 2) and are based on widely available and established technologies flexible enough to accommodate a broad range of research computing needs.\n\nCritical to the long-term direction and success of SBGrid, and likely to other similar initiatives, are its financial support and governance models. On-going SBGrid operations are funded through yearly membership fees from participating research groups. Reliance on membership fees promotes the sustainability of the collaboration, independent of the typical five-year funding cycle, and helps assure SBGrid management remain responsive to community needs. Exploitation of new resources and exploratory development (such as the SBGrid Science Portal: see Box 2) undertaken by the collaboration are typically funded through competitive grant applications to funding agencies.\n\nOf equal importance is the direction and governance of SBGrid by active researchers in structural biology. First-hand knowledge of current methods and practices, frequent contact with leading researchers and developers, and direct involvement in its community enables the custodians of SBGrid to effectively identify and administer new resources and provide appropriate and useful services to users.\n\nMore so than the technical details of compiling, deploying and maintaining a collection of software, these tenets of self-sustaining user-supported operations and administration and governance by active researchers in the field are key to long-term success of community-based collaborations.\n\n## Conclusions\n\nCollaborations like SBGrid provide a self-sustaining and community-responsive platform to address current and future challenges in research computing. As dependence on computational tools and techniques continue to increase in every field of scientific endeavour, the burdens of supporting research computing for individual researchers, research groups and institutions will also grow. SBGrid is an example of a successful community-based research computing initiative in the field of structural biology. Through the aggregation of resources, pooling of expertise and sharing of costs among its many members, SBGrid is able to lower barriers of entry and expand access to research computing. The SBGrid model is also readily generalizable to other scientific fields of study that rely on research computing, and would be likely to yield similar benefits.\n",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ec8006a0-b056-48f8-9e71-5d591eb9b743",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C1",
+      "claim": "SBGrid began as a collaboration between a handful of structural biology laboratories in the north-eastern US to support software applications used in X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid began as a collaboration between a handful of structural biology laboratories in the north-eastern US to support software applications used in X-ray crystallography (see Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the origins of SBGrid, presented as factual information in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "8b524722-28c3-4a36-9ef5-ff75d1a38a33",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C2",
+      "claim": "SBGrid offers a library of over 270 different scientific applications and software suites.",
+      "claim_type": "EXPLICIT",
+      "source": "today offers a library of over 270 different scientific applications and software suites to more than 245 laboratories and research groups in 16 countries (see Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about the current state of SBGrid's software library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "df30f4d1-45ce-4107-83f6-c2909365edc7",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C3",
+      "claim": "SBGrid serves more than 245 laboratories and research groups in 16 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "today offers a library of over 270 different scientific applications and software suites to more than 245 laboratories and research groups in 16 countries (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative statement about SBGrid's membership, supported by the text and referenced in Figure 1 showing worldwide distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "491ab681-2ff9-4beb-98fe-d9f6bf43de95",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C4",
+      "claim": "SBGrid was started in 2000 by Piotr Sliz.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid was started in 2000 by one of the present authors (Piotr Sliz) as a home-grown solution to the challenge of supporting and maintaining a few dozen X-ray crystallography applications run on SGI IRIX and Linux workstations in the laboratories of Stephen Harrison and the late Don Wiley at Harvard University and Children's Hospital Boston, and Ya Ha and Karin Reinisch at Yale Medical School.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about the founding of SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "4c115bf8-ae9c-4e7c-b14a-19a219adac2a",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C5",
+      "claim": "SBGrid initially supported X-ray crystallography applications on SGI IRIX and Linux workstations.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid was started in 2000 by one of the present authors (Piotr Sliz) as a home-grown solution to the challenge of supporting and maintaining a few dozen X-ray crystallography applications run on SGI IRIX and Linux workstations in the laboratories of Stephen Harrison and the late Don Wiley at Harvard University and Children's Hospital Boston, and Ya Ha and Karin Reinisch at Yale Medical School.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical platforms initially supported by SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "e232372b-0041-4f17-bf61-7726c9602efe",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C6",
+      "claim": "SBGrid support included collaborative software projects CCP4 and PHENIX.",
+      "claim_type": "EXPLICIT",
+      "source": "This support included other existing collaborative software projects in X-ray crystallography such as CCP4 (Winn et al., 2011) and later PHENIX (Adams et al., 2010)\u2014both of which are currently contributors to SBGrid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the CCP4 and PHENIX projects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "ab12bb2f-eb42-4a85-a162-7903f9bf9782",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C7",
+      "claim": "In 2002, SBGrid initiated software support for electron microscopy, nuclear magnetic resonance, and other structural biology techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2002, Sliz and Harrison relocated to Harvard Medical School, several additional research groups joined SBGrid and it initiated software support for electron microscopy (EM), nuclear magnetic resonance (NMR) and other structural biology techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the expansion of SBGrid's capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "27a64543-03b7-49dc-bdd7-d3dd59b8907b",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C8",
+      "claim": "SBGrid began charging user-fees to recover operational costs in 2002.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2002, Sliz and Harrison relocated to Harvard Medical School, several additional research groups joined SBGrid and it initiated software support for electron microscopy (EM), nuclear magnetic resonance (NMR) and other structural biology techniques. It also began charging user-fees to recover operational costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about SBGrid's funding model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "4ced82b8-e34c-44ca-b812-758f4ed38b39",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C9",
+      "claim": "In 2004, SBGrid re-compiled the majority of its applications to run under OS X.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2004, in response to demand from Mac users, SBGrid re-compiled the majority of its applications to run under OS X, and today approximately 50% of members use Macs (see Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about technical development in response to user demand.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "e1616d4a-58ab-4be1-96fd-f5a7751ead9d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C10",
+      "claim": "Approximately 50% of SBGrid members use Macs.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2004, in response to demand from Mac users, SBGrid re-compiled the majority of its applications to run under OS X, and today approximately 50% of members use Macs (see Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about the current user base.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "1ba894c2-183d-4cf8-adef-1f7ddd62aa42",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C11",
+      "claim": "In 2007, SBGrid established a Virtual Organization within the Open Science Grid to support more computationally demanding applications.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2007, in an effort to support more computationally demanding applications, SBGrid established a Virtual Organization within the Open Science Grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about SBGrid's expansion into grid computing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "c9933429-89b1-49cc-b73d-1d8a22ba23d0",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C12",
+      "claim": "In 2009, SBGrid established itself as an NIH-compliant non-profit service centre in the Department of Biological Chemistry and Molecular Pharmacology at Harvard Medical School.",
+      "claim_type": "EXPLICIT",
+      "source": "2009 was notable as SBGrid established itself as an NIH-compliant non-profit service centre in the Department of Biological Chemistry and Molecular Pharmacology at Harvard Medical School, and developed a unified end-user license agreement (with the help of the Harvard University Office of Technology Development).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about SBGrid's institutional status.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "5d9692e8-5dd2-4fa1-8d5e-5a2b0bd31d1d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C13",
+      "claim": "SBGrid developed a unified end-user license agreement in 2009 with the help of the Harvard University Office of Technology Development.",
+      "claim_type": "EXPLICIT",
+      "source": "2009 was notable as SBGrid established itself as an NIH-compliant non-profit service centre in the Department of Biological Chemistry and Molecular Pharmacology at Harvard Medical School, and developed a unified end-user license agreement (with the help of the Harvard University Office of Technology Development).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about licensing development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "288b5c6e-b4d1-49dc-8539-9dd8797013da",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C14",
+      "claim": "The first pharmaceutical company laboratories (Genzyme, Novartis and Biogen) joined SBGrid in 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "The first pharmaceutical company laboratories (Genzyme, Novartis and Biogen) also joined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about commercial membership.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "4e26ff86-d3ed-4612-a263-66b51c276be3",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C15",
+      "claim": "Several synchrotron beam lines became SBGrid members in 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "Several synchrotron beam lines also became members in 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about membership expansion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "6b15ab8b-2138-408c-82f6-c2bb9a44d5e6",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C16",
+      "claim": "SBGrid organizes regular seminars and webinars where software creators can teach and interact with users.",
+      "claim_type": "EXPLICIT",
+      "source": "regular seminars and webinars in which creators of popular programs can teach and interact with SBGrid member users, answer questions and demonstrate use of their applications. These sessions are also broadcast over the web and archived for later viewing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an ongoing activity of SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "bfd3ffdc-909f-4fee-a914-5c0f4c5e5c99",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C17",
+      "claim": "SBGrid engages in policy and advocacy on behalf of the wider research computing community.",
+      "claim_type": "EXPLICIT",
+      "source": "policy and advocacy on behalf of the wider research computing community (Morin et al., 2012a, 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to specific policy work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "e0c8e2e9-0555-42be-b6e0-1a0138444d29",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C18",
+      "claim": "There have been three SBGrid schools/workshops in Boston and one in Heidelberg.",
+      "claim_type": "EXPLICIT",
+      "source": "the organization of schools and workshops. To date there have been three schools/workshops in Boston and one in Heidelberg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about educational activities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "09cb6917-af7a-4cde-b269-828544cdd530",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C19",
+      "claim": "The SBGrid software library spans X-ray crystallography, electron microscopy, NMR, 2D crystallography, bioinformatics, computational chemistry, small angle scattering, tomography, modelling, visualization and structure prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "The SBGrid software library spans the spectrum of techniques commonly utilized by structural biologists, including X-ray crystallography, electron microscopy, NMR, 2D crystallography, bioinformatics, computational chemistry, small angle scattering, tomography, modelling, visualization and structure prediction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the scope of techniques covered by SBGrid, as shown in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "4f2ce32f-1033-40b0-90c2-f9841f003020",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C20",
+      "claim": "SBGrid actively curates the software library and identifies new and useful software and applications.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid actively curates the software library, identifies new and useful software and applications, configures and compiles applications, and automatically installs the collection to computer workstations in member laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes SBGrid's operational activities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "05749c20-bdd8-492b-9cc6-833b88b1ba77",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C21",
+      "claim": "SBGrid continuously updates and upgrades programs in the collection with newer versions and bug fixes as they become available.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid also continuously updates and upgrades programs in the collection with newer versions and bug fixes as they become available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes SBGrid's maintenance activities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "d14f365b-8477-4dd9-8151-ba0cfa4e3e4d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C22",
+      "claim": "The SBGrid software installation and update process is completely automated and transparent, requiring no input or maintenance from end-users.",
+      "claim_type": "EXPLICIT",
+      "source": "This entire process is completely automated and transparent, requiring no input or maintenance from end-users.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of SBGrid's technical implementation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "48e6632e-1ba3-49b7-b141-7ff0073605e6",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C23",
+      "claim": "All SBGrid programs are installed and updated automatically and reside locally on member laboratory computers.",
+      "claim_type": "EXPLICIT",
+      "source": "After members join SBGrid, all of the programs in the collection are installed and updated automatically and reside locally on member laboratory computers (see Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the deployment model used by SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "284a46ed-a158-4b2e-8329-70e3d142d3ec",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C24",
+      "claim": "The SBGrid software deployment and update system uses a shell script wrapper around rsync.",
+      "claim_type": "EXPLICIT",
+      "source": "The SBGrid software deployment and update system, internally referred to as the 'sync system', uses a shell script wrapper around a common file synchronization tool called rsync to install and automatically update the UNIX software environment on a large number of internet-connected machines around the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of SBGrid's deployment system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "f5202e59-d039-4663-b8b6-a7a408946402",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C25",
+      "claim": "The SBGrid sync system uses a MySQL database to build customized download lists.",
+      "claim_type": "EXPLICIT",
+      "source": "The system uses a MySQL database to build customized download lists that determine which software titles are available to a particular laboratory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical component of the SBGrid system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "f454901c-5494-43fc-957e-fd2f4bf1c698",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C26",
+      "claim": "Each SBGrid member laboratory is designated as being either non-profit, government, academic or commercial.",
+      "claim_type": "EXPLICIT",
+      "source": "Each member laboratory is designated as being either non-profit, government, academic or commercial, and the database contains a set of associated download credentials for each research group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classification system for member laboratories.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "4b4617ff-c569-4cbc-84fa-9a8f81e46856",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C27",
+      "claim": "Client machines hosting SBGrid software run a shell script every 15 minutes via a cron job to check for updates.",
+      "claim_type": "EXPLICIT",
+      "source": "Client machines that host an installation of the SBGrid software environment run a shell script every 15 min via a cron job that performs a simple check over HTTP to see if updates are available and initiates the rsync download.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical mechanism for automatic updates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "c787d8c4-9441-4255-b77c-a5978bf468fe",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C28",
+      "claim": "SBGrid can initiate global updates that are applied to every installation.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid can initiate global updates that are applied to every installation, and it can also initiate a single site update in response to bug reports or requests for new software titles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the SBGrid system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "780b87f3-f2b3-4707-9467-cfdea6afaefb",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C29",
+      "claim": "SBGrid can initiate single site updates in response to bug reports or requests for new software titles.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid can initiate global updates that are applied to every installation, and it can also initiate a single site update in response to bug reports or requests for new software titles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the SBGrid system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "903748da-7833-4219-997c-61dcf33b9ed6",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C30",
+      "claim": "SBGrid software is organized into a single top-level directory with subdirectories for each operating system and CPU architecture combination.",
+      "claim_type": "EXPLICIT",
+      "source": "The software available on the client machines is organized into a single top-level directory with subdirectories for each operating system and CPU architecture combination (e.g., i386-linux, x86_64-linux, i386-mac, etc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the file system organization of SBGrid software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "2c22b704-88ff-41d3-a0e9-0181de789511",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C31",
+      "claim": "Each version of an application is installed in a separate subdirectory, allowing multiple versions of a single application.",
+      "claim_type": "EXPLICIT",
+      "source": "Each application is installed in its own directory in the next level of the file system, and in each application directory each version of the application is installed in a separate subdirectory. This allows multiple versions of a single installed application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the versioning system used by SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "fce965b8-3582-4b4c-bca1-c1398a43a778",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C32",
+      "claim": "SBGrid provides a user-controlled version switching mechanism that allows users to select older versions of software.",
+      "claim_type": "EXPLICIT",
+      "source": "The software environment configures a single default version, but a simple user-controlled version switching mechanism is available so that users can, for example, select an older version to check prior results or work around bugs in newer versions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the SBGrid software environment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "7d6ce263-0383-4d30-af07-7bab854ec9f1",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C33",
+      "claim": "SBGrid provides access to supercomputing facilities across the US in collaboration with the Open Science Grid via the SBGrid Science Portal.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid also provides the wider structural biology community with access to supercomputing facilities across the US in collaboration with the Open Science Grid (OSG: Pordes et al., 2007) via the SBGrid Science Portal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to the Open Science Grid.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "53eeec02-ae04-4ae8-9fe8-df4e60110b17",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C34",
+      "claim": "SBGrid provides access to the Wide-Search Molecular Replacement (WSMR) service for determining crystallographic phase using the Phaser program.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, SBGrid provides access to two grid-enabled services: the Wide-Search Molecular Replacement (WSMR; Stokes-Rees and Sliz, 2010) service for determining crystallographic phase using the Phaser program (McCoy et al., 2007), and the Deformable Elastic Network (DEN) service for refining low-resolution electron density data (O'Donovan et al., 2012; Schr\u00f6der et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the WSMR service and Phaser program.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "ff08336c-e781-48fe-9973-7bdccfbceb27",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C35",
+      "claim": "SBGrid provides access to the Deformable Elastic Network (DEN) service for refining low-resolution electron density data.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, SBGrid provides access to two grid-enabled services: the Wide-Search Molecular Replacement (WSMR; Stokes-Rees and Sliz, 2010) service for determining crystallographic phase using the Phaser program (McCoy et al., 2007), and the Deformable Elastic Network (DEN) service for refining low-resolution electron density data (O'Donovan et al., 2012; Schr\u00f6der et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the DEN service.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "5b441c3c-c16c-42ac-903a-4f1a12eb25fc",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C36",
+      "claim": "SBGrid has developed a prototype system for storage and transmission of large experimental datasets collected at synchrotron facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid has also developed a prototype system for storage and transmission of large experimental datasets collected at synchrotron facilities (Stokes-Rees et al., 2012), and completed a pilot project with WeNMR to optimize cyber-infrastructure utilization between European and US computing facilities (Wassenaar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to the prototype system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "fa368114-bf24-4cf1-baaa-32a56fa15180",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C37",
+      "claim": "SBGrid completed a pilot project with WeNMR to optimize cyber-infrastructure utilization between European and US computing facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid has also developed a prototype system for storage and transmission of large experimental datasets collected at synchrotron facilities (Stokes-Rees et al., 2012), and completed a pilot project with WeNMR to optimize cyber-infrastructure utilization between European and US computing facilities (Wassenaar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to the pilot project.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "24721739-6d16-4c69-adfb-aa04c57a0900",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C38",
+      "claim": "SBGrid operates a Developer Support Program that offers software developers letters of support for grant applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to support the development of cutting edge structural biology software, SBGrid operates a Developer Support Program which, among other things, offers software developers letters of support for grant applications, software beta testing in selected member laboratories and access to programming tools and resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a service provided by SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "7fcfc604-bdba-4756-8f24-37072bdafb20",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C39",
+      "claim": "SBGrid's Developer Support Program offers software beta testing in selected member laboratories.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to support the development of cutting edge structural biology software, SBGrid operates a Developer Support Program which, among other things, offers software developers letters of support for grant applications, software beta testing in selected member laboratories and access to programming tools and resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a service provided by SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "9f7aa6ed-12df-485b-b24c-50a05ea53d9b",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C40",
+      "claim": "SBGrid's Developer Support Program offers access to programming tools and resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to support the development of cutting edge structural biology software, SBGrid operates a Developer Support Program which, among other things, offers software developers letters of support for grant applications, software beta testing in selected member laboratories and access to programming tools and resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a service provided by SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "b2330094-d2b0-45e0-ab13-707d09c9af91",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C41",
+      "claim": "Member laboratories benefit from comprehensive licensing and support for hundreds of software applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Member laboratories and end-users benefit directly from comprehensive licensing (see Box 3) and support for hundreds of software applications, each of which might otherwise demand significant time, expense and expertise to obtain, install and maintain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a benefit of SBGrid membership.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "6fa4ddbc-4c7c-4603-85ed-d34226bab983",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C42",
+      "claim": "Individual software applications might otherwise demand significant time, expense and expertise to obtain, install and maintain.",
+      "claim_type": "EXPLICIT",
+      "source": "Member laboratories and end-users benefit directly from comprehensive licensing (see Box 3) and support for hundreds of software applications, each of which might otherwise demand significant time, expense and expertise to obtain, install and maintain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the challenges of managing scientific software without a centralized system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "6c898772-183e-47ac-8a40-526b24db8e54",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C43",
+      "claim": "Centralized support reduces the problems associated with the high turnover of staff that is commonplace in academic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "This centralized support means that software is maintained and updated on a regular basis, and it also reduces the problems associated with the high turnover of staff that is commonplace in academic environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of centralized support in addressing staffing challenges.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "ace1e774-17b0-45c6-9cc2-0bde1f03072d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C44",
+      "claim": "SBGrid promotes collaboration and reproducibility by offering access to a consistent and comprehensive set of research software.",
+      "claim_type": "EXPLICIT",
+      "source": "By offering access to a consistent and comprehensive set of research software, SBGrid promotes collaboration and reproducibility and, crucially, allows scientists to spend more of their time doing science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of standardized software access.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "8d0c27fd-8b13-40dd-87d8-a52155da7819",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C45",
+      "claim": "SBGrid allows scientists to spend more of their time doing science.",
+      "claim_type": "EXPLICIT",
+      "source": "By offering access to a consistent and comprehensive set of research software, SBGrid promotes collaboration and reproducibility and, crucially, allows scientists to spend more of their time doing science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the time-saving benefits of SBGrid.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "bf2684c2-82de-441f-aa2c-bb9b4bd6112e",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C46",
+      "claim": "SBGrid consolidates licensing agreements for all software in the collection into a single end-user license agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "As part of its service to members, SBGrid consolidates licensing agreements for all software in the collection into a single end-user license agreement that users agree to when they join SBGrid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes SBGrid's licensing approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "193ea5fd-e3ef-42a2-877f-c4412aa52344",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C47",
+      "claim": "SBGrid's consolidated licensing simplifies license administration for software creators.",
+      "claim_type": "EXPLICIT",
+      "source": "This simplifies license administration for software creators and saves end users and their institutional legal counsels from having to complete tens (or possibly hundreds) of individual license agreements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of consolidated licensing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "6c1561a7-d2a6-4293-a863-c0f77604bb73",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C48",
+      "claim": "SBGrid's consolidated licensing saves end users and their institutional legal counsels from having to complete tens or possibly hundreds of individual license agreements.",
+      "claim_type": "EXPLICIT",
+      "source": "This simplifies license administration for software creators and saves end users and their institutional legal counsels from having to complete tens (or possibly hundreds) of individual license agreements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the administrative burden reduction for users.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "75d514bc-d7fd-4cc6-8140-fd9da2dedfcb",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C49",
+      "claim": "SBGrid applications are classified into four categories based on license type: open source software, software freely available to academic members, software freely available to non-profit members, and software subject to restrictions.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid applications are classified into one of four categories, depending on the type of license chosen by the creator or owner of the software: (i) open source software (OSS); (ii) software that is freely available to academic members; (iii) software that is freely available to non-profit groups who are members of SBGrid; (iv) software subject to restrictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes SBGrid's software classification system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "bfa52f8d-178b-41f5-b0f4-da1dad16d2bf",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C50",
+      "claim": "Of the 275 software titles in the SBGrid library, 162 are offered under open source software licenses.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 275 software titles currently in the SBGrid library, 162 are offered under OSS licenses, and the majority of the remaining software is freely available to academic and non-profit members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about the licensing distribution of SBGrid software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "61b2e027-16a6-4b5f-ba7f-320eeb729b4d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C51",
+      "claim": "The majority of non-OSS software in SBGrid is freely available to academic and non-profit members.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 275 software titles currently in the SBGrid library, 162 are offered under OSS licenses, and the majority of the remaining software is freely available to academic and non-profit members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "ef9c81c0-60d6-4b8b-9fa4-14ad67c11e88",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C52",
+      "claim": "For programs with restrictions, member laboratories must demonstrate license compliance before the application is installed.",
+      "claim_type": "EXPLICIT",
+      "source": "For the very limited number of programs with restrictions imposed by the author or owner of the software, member laboratories must demonstrate license compliance before the application is installed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a requirement for accessing restricted software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "575abb32-453b-420c-84d8-ae9ed628b8f9",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C53",
+      "claim": "Academic and non-profit members can access the entire SBGrid collection by default, excluding applications with custom restrictions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, academic and non-profit members can access the entire collection by default (excluding applications with custom restrictions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the access rights for academic and non-profit members.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "53418d36-afb3-4a14-98fc-47118929694d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C54",
+      "claim": "For-profit members can access all open source programs and any applications that permit free commercial use.",
+      "claim_type": "EXPLICIT",
+      "source": "For-profit members can access all OSS programs and any applications that permit free commercial use; however, they must provide SBGrid with proof of a valid license to access programs that have separate for-profit licensing agreements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the access rights for for-profit members.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "dc05d09b-3dd3-454c-aaf6-e5d8d168a929",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C55",
+      "claim": "For-profit members must provide SBGrid with proof of a valid license to access programs that have separate for-profit licensing agreements.",
+      "claim_type": "EXPLICIT",
+      "source": "For-profit members can access all OSS programs and any applications that permit free commercial use; however, they must provide SBGrid with proof of a valid license to access programs that have separate for-profit licensing agreements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a requirement for for-profit members.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "eadd427f-56e3-4dbf-bea7-92c497e77b83",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C56",
+      "claim": "Members with shared or mixed-use research environments are provided with multiple program trees each containing the appropriate subset of applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Members with shared or mixed-use research environments, such as synchrotron beamlines, who often host both non-profit and for-profit users, are provided with multiple program trees each containing the appropriate subset of applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how SBGrid handles mixed-use facilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "75787671-1430-4a9a-bc40-5b3c1926de9f",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C57",
+      "claim": "Mixed-use facilities are required to implement procedures for assuring that each category of user only has access to the appropriate program tree.",
+      "claim_type": "EXPLICIT",
+      "source": "These mixed-use facilities are then required to implement procedures for assuring that each category of user only has access to the appropriate program tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a requirement for mixed-use facilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "8ed44c8c-edd6-4199-ad5d-710c0fe61b86",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C58",
+      "claim": "SBGrid frees up time for developers to have scientific interactions with the scientific community by providing software and support.",
+      "claim_type": "EXPLICIT",
+      "source": "(Left) By providing software and support (orange lines) to end-users and institutions, SBGrid frees up time for developers to have scientific interactions (blue lines) with the scientific community, and reduces the amount of time end-users and institutions need to spend updating and maintaining software, thus leaving more time for research.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and described in the caption, representing an inference about the benefits of the SBGrid model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "010d56c4-a786-4ab0-a93c-c40006e74128",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C59",
+      "claim": "SBGrid reduces the amount of time end-users and institutions need to spend updating and maintaining software.",
+      "claim_type": "EXPLICIT",
+      "source": "(Left) By providing software and support (orange lines) to end-users and institutions, SBGrid frees up time for developers to have scientific interactions (blue lines) with the scientific community, and reduces the amount of time end-users and institutions need to spend updating and maintaining software, thus leaving more time for research.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and described in the caption, representing an inference about time savings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "361a2f26-4bd8-48e1-a4fa-6137840466fd",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C60",
+      "claim": "SBGrid facilitates access to external computing resources.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid also facilitates access to external computing resources (green lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and described in the caption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "7387e01c-1b1f-4836-8465-a5eaf121fde3",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C61",
+      "claim": "In the traditional model, the burden of maintaining and updating software falls on developers and users, reducing the time available for other more productive activities.",
+      "claim_type": "EXPLICIT",
+      "source": "In the traditional model for supporting research computing (right), the burden of maintaining and updating software falls on developers and users (orange line), thus reducing the time available for other more productive activities (blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and described in the caption, representing an inference about the traditional model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "255bff2a-3b4d-4a15-a2ae-771f7cbb7e2d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C62",
+      "claim": "In the traditional model, access to the most powerful external computing resources is limited to a small number of computationally sophisticated end-users.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, access to the most powerful external computing resources is limited to a small number of computationally sophisticated end-users (dashed lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and described in the caption, representing an inference about limitations of the traditional model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "a13f04f5-0e3e-4664-b9a8-f3d53b58aa7a",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C63",
+      "claim": "The discovery of new applications is enhanced within SBGrid by comprehensive inclusion and continuous addition of new software based on aggregated community knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of new applications is enhanced within SBGrid by comprehensive inclusion and continuous addition of new software based on aggregated community knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of SBGrid's curation approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "5b94b92b-7241-4f76-9d96-10edda479d73",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C64",
+      "claim": "The formation of a community around SBGrid makes possible the collective exploitation of research computing resources that might otherwise be beyond the means of any single member or institution.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of a community of active and involved researchers and scientist software developers around the collaboration also makes possible the collective exploitation of research computing resources that might otherwise be beyond the means of any single member or institution (such as the US cyber-infrastructure for large-scale computing: see Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of collective resource pooling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "108ab5cc-daec-4857-8c59-62c97afcd901",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C65",
+      "claim": "Distributing software through collaborations like SBGrid relieves developers of the significant burdens associated with software distribution and end-user support.",
+      "claim_type": "EXPLICIT",
+      "source": "For developers, distributing software through collaborations like SBGrid relieves the significant burdens associated with the distribution of their programs and the provision of end-user support, thereby freeing them to focus on new research and scientific communication with end-users rather than on technical support issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits for developers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "a4977604-f61f-45d2-9904-268edfcbd6ee",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C66",
+      "claim": "Developers are assured that updates, improvements, bug-fixes and other maintenance modifications are rapidly deployed through SBGrid.",
+      "claim_type": "EXPLICIT",
+      "source": "Program creators are assured that updates, improvements, bug-fixes and other development-side maintenance modifications are rapidly deployed, and developers are apprised of which research groups have access to their software, giving them information to more easily track citations and assess scientific impact for grant and funding purposes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of rapid deployment for developers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "4431a456-23cf-4881-86ae-d41fefc03021",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C67",
+      "claim": "Developers are apprised of which research groups have access to their software, giving them information to track citations and assess scientific impact.",
+      "claim_type": "EXPLICIT",
+      "source": "Program creators are assured that updates, improvements, bug-fixes and other development-side maintenance modifications are rapidly deployed, and developers are apprised of which research groups have access to their software, giving them information to more easily track citations and assess scientific impact for grant and funding purposes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of usage tracking for developers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "731fdba0-d87e-4e9e-9ac9-2635b649163b",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C68",
+      "claim": "Popular scientific programs that the original creator may no longer be able or willing to actively support may be offered and supported by SBGrid, extending the lifetime of useful research software.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, popular scientific programs that the original creator may no longer be able and/or willing to actively support or distribute may be offered and supported by the collaboration, thereby extending the lifetime of useful research software and maximizing return on research investment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of collaborative support for legacy software.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "b2fe2c18-a53a-41dd-aebe-e7337d33dcdb",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C69",
+      "claim": "Collaborations like SBGrid offer institutions a simple and cost-effective solution to providing domain-specific, up-to-date research computing resources independent of in-house IT expertise.",
+      "claim_type": "EXPLICIT",
+      "source": "For institutions, collaborations like SBGrid offer a simple and cost-effective solution to providing domain-specific, up-to-date research computing resources for specialized scientific fields independent of in-house IT and research computing expertise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits for institutions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "49a07feb-0bee-45af-896a-09cd946a8201",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C70",
+      "claim": "Initiatives like SBGrid extend the range and quality of software support while allowing local research computing departments to focus on core competencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in an era of shrinking IT budgets, difficulty hiring and retaining experienced staff and continually expanding demands on IT resources, initiatives like SBGrid extend the range and quality of software support while allowing local research computing departments to focus on core competencies and delivering common, foundational IT services (see Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about the benefits of SBGrid in the context of institutional IT challenges.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "6ce720de-d1e0-47f2-a0de-767336ec2b69",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C71",
+      "claim": "The community-based model established by SBGrid could offer benefits to other areas of research that are reliant on computing and scientific software.",
+      "claim_type": "EXPLICIT",
+      "source": "The community-based model established by SBGrid could offer benefits to other areas of research that are reliant on computing and scientific software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the generalizability of the SBGrid model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "02f2f3c6-944a-4801-92be-1b2c0e24913d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C72",
+      "claim": "The basic requirements for replicating an SBGrid-like collaboration are: a community of researchers utilizing common research computing tools, and a set of useful research computing resources whose acquisition presents significant barriers to access.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic requirements for replicating an SBGrid-like collaboration are: (i) a community of researchers utilizing common or overlapping research computing tools and methods; (ii) a set of useful research computing resources (such as scientist-created software or advanced computing facilities) whose acquisition, use or exploitation presents significant barriers to access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the prerequisites for similar collaborations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "e6a2b6fd-13ed-445f-8a25-83a4c57f86c6",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C74",
+      "claim": "Start-up of an SBGrid-style collaboration could be facilitated through grant support from funding agencies before shifting to a self-sustaining fee-for-use model.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, start-up could be facilitated through grant support from funding agencies, before shifting fully to a self-sustaining fee-for-use model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about alternative funding strategies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "8fff3d49-b0c9-45f4-9e8a-0f88dc618688",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C75",
+      "claim": "The required technical elements for SBGrid are relatively modest and based on widely available and established technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of SBGrid the required technical elements are relatively modest (see Box 2) and are based on widely available and established technologies flexible enough to accommodate a broad range of research computing needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the technical requirements for SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "6c730687-7115-4dc3-9a0c-315d480f6b6d",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C76",
+      "claim": "On-going SBGrid operations are funded through yearly membership fees from participating research groups.",
+      "claim_type": "EXPLICIT",
+      "source": "On-going SBGrid operations are funded through yearly membership fees from participating research groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes SBGrid's funding model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "2d51707e-ec32-481e-85c4-fde2caa0c443",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C77",
+      "claim": "Reliance on membership fees promotes the sustainability of the collaboration, independent of the typical five-year funding cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliance on membership fees promotes the sustainability of the collaboration, independent of the typical five-year funding cycle, and helps assure SBGrid management remain responsive to community needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of the membership fee model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "ddcbc513-218d-4e49-bff1-65eb47daa4d4",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C78",
+      "claim": "Reliance on membership fees helps assure SBGrid management remain responsive to community needs.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliance on membership fees promotes the sustainability of the collaboration, independent of the typical five-year funding cycle, and helps assure SBGrid management remain responsive to community needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the governance benefits of the membership fee model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "f3716fd1-e4f1-46e3-a12e-d9fae7edcb11",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C79",
+      "claim": "Exploitation of new resources and exploratory development undertaken by SBGrid are typically funded through competitive grant applications to funding agencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploitation of new resources and exploratory development (such as the SBGrid Science Portal: see Box 2) undertaken by the collaboration are typically funded through competitive grant applications to funding agencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the funding model for new initiatives.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "aff66a28-1d72-4fd5-be67-59f1b7ee9084",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C80",
+      "claim": "SBGrid is directed and governed by active researchers in structural biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Of equal importance is the direction and governance of SBGrid by active researchers in structural biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the governance structure of SBGrid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "add658a9-f94e-481a-932d-3622e30b9296",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C81",
+      "claim": "First-hand knowledge of current methods and practices enables the custodians of SBGrid to effectively identify and administer new resources.",
+      "claim_type": "EXPLICIT",
+      "source": "First-hand knowledge of current methods and practices, frequent contact with leading researchers and developers, and direct involvement in its community enables the custodians of SBGrid to effectively identify and administer new resources and provide appropriate and useful services to users.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of having active researchers in governance roles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "3a9fd6de-0e81-47d2-b9d6-fe488a1de44a",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C82",
+      "claim": "Self-sustaining user-supported operations and administration by active researchers in the field are key to long-term success of community-based collaborations.",
+      "claim_type": "EXPLICIT",
+      "source": "More so than the technical details of compiling, deploying and maintaining a collection of software, these tenets of self-sustaining user-supported operations and administration and governance by active researchers in the field are key to long-term success of community-based collaborations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the critical success factors for collaborative initiatives.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "c62ac2fe-7d91-44b9-9da6-2f55000e0e8e",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C83",
+      "claim": "Collaborations like SBGrid provide a self-sustaining and community-responsive platform to address current and future challenges in research computing.",
+      "claim_type": "EXPLICIT",
+      "source": "Collaborations like SBGrid provide a self-sustaining and community-responsive platform to address current and future challenges in research computing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the broader value of the SBGrid model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "158f4ce5-9141-4782-bb1b-8d567edadf25",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C84",
+      "claim": "Dependence on computational tools and techniques continues to increase in every field of scientific endeavour.",
+      "claim_type": "EXPLICIT",
+      "source": "As dependence on computational tools and techniques continue to increase in every field of scientific endeavour, the burdens of supporting research computing for individual researchers, research groups and institutions will also grow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on general knowledge about trends in scientific computing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "b5236c9f-d91f-48e8-b8c7-b3f17031ec45",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C85",
+      "claim": "The burdens of supporting research computing for individual researchers, research groups and institutions will grow as dependence on computational tools increases.",
+      "claim_type": "EXPLICIT",
+      "source": "As dependence on computational tools and techniques continue to increase in every field of scientific endeavour, the burdens of supporting research computing for individual researchers, research groups and institutions will also grow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about future challenges based on current trends.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "b5c2cfd9-7594-44e0-a763-995a8cabbc8a",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C86",
+      "claim": "SBGrid is an example of a successful community-based research computing initiative in the field of structural biology.",
+      "claim_type": "EXPLICIT",
+      "source": "SBGrid is an example of a successful community-based research computing initiative in the field of structural biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about SBGrid's status.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "f37572b7-9b2b-45b6-838b-295b867168fc",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C87",
+      "claim": "Through aggregation of resources, pooling of expertise and sharing of costs, SBGrid is able to lower barriers of entry and expand access to research computing.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the aggregation of resources, pooling of expertise and sharing of costs among its many members, SBGrid is able to lower barriers of entry and expand access to research computing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanisms by which SBGrid achieves its benefits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "a2b5d6d3-1e21-487e-a95c-0e676ff95a4e",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C88",
+      "claim": "The SBGrid model is readily generalizable to other scientific fields of study that rely on research computing.",
+      "claim_type": "EXPLICIT",
+      "source": "The SBGrid model is also readily generalizable to other scientific fields of study that rely on research computing, and would be likely to yield similar benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the applicability of the SBGrid model to other fields.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "c8192d22-37e2-4524-b7cd-12da87b6c92e",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "claim_id": "C89",
+      "claim": "The SBGrid model would be likely to yield similar benefits in other scientific fields that rely on research computing.",
+      "claim_type": "EXPLICIT",
+      "source": "The SBGrid model is also readily generalizable to other scientific fields of study that rely on research computing, and would be likely to yield similar benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the expected outcomes of applying the SBGrid model elsewhere.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "506d24dc-aff0-4b71-9a07-493007cde9c4",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SBGrid originated in 2000 as a collaboration to support X-ray crystallography software and expanded over time to include multiple structural biology techniques, commercial members, and institutional formalization by 2009.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide a coherent historical narrative with specific dates, institutions, and milestones. The claims are internally consistent and describe verifiable historical events. While no independent verification is provided in this manuscript, the historical account is presented by the founder (C4) and includes specific institutional affiliations and dates that could be verified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "1f6dd712-51a5-4e25-baa0-f71997b5488a",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SBGrid currently provides over 270 software applications spanning multiple structural biology techniques to more than 245 laboratories in 16 countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, and C19 provide specific quantitative data about SBGrid's current scope and are supported by Figure 1 showing worldwide distribution. These are factual statements about the state of the system at the time of publication and appear internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "1aaec73d-2faf-4614-81a6-7105f151e68c",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SBGrid conducts educational and advocacy activities including seminars, webinars, policy work, and workshops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 describe specific activities with quantitative details (three workshops in Boston, one in Heidelberg) and cite specific policy publications (C17). These activities are presented as factual descriptions of SBGrid operations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SBGrid operates an automated software deployment system using rsync and MySQL that installs and updates software locally on member computers every 15 minutes with support for multiple versions and operating systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C32 provide detailed technical specifications of the SBGrid system architecture. The technical details are internally consistent and describe a plausible implementation using standard technologies (rsync, MySQL, cron). The specificity (e.g., 15-minute update intervals) suggests these are accurate descriptions of the actual system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "4f8f6623-1fe7-43f9-ba63-c557087ae6d3",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SBGrid provides access to supercomputing resources through the Open Science Grid, including WSMR and DEN services, and has developed prototype systems for data storage and international collaboration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are supported by multiple citations to published work describing these services and collaborations. The citations provide external validation for these claims about SBGrid's computational infrastructure offerings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "3ed53949-7b3d-4f21-a07e-d8fab72ca55a",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SBGrid operates a Developer Support Program offering grant support letters, beta testing, and access to programming resources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 describe specific services offered by SBGrid. These are factual statements about program offerings that are internally consistent with the overall mission described in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "60148de3-064e-4420-9c64-6fa6b9206164",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SBGrid consolidates licensing into a unified agreement with four software categories, where 162 of 275 titles are open source and most others are freely available to academic/non-profit members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C57 provide specific quantitative data (162 of 275 OSS titles) and describe a detailed licensing framework. The system described is internally consistent and addresses the practical challenges of multi-license software distribution. The specific numbers and categorization scheme suggest accurate reporting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "af77bb13-dc0d-4157-8d13-e7bee9c6f0a3",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SBGrid membership provides benefits including reduced time and expense for software management, mitigation of staff turnover issues, promotion of collaboration and reproducibility, and more time for research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C45 make inferential statements about benefits without providing quantitative evidence or comparative data. While the claimed benefits are plausible given the system described, no measurements of time saved, cost reductions, or improvements in collaboration/reproducibility are provided. These remain assertions rather than demonstrated outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "b66e15cf-6063-4772-a14a-9211620c888c",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The SBGrid model reduces software maintenance burden on developers and users compared to traditional approaches, freeing time for scientific activities and democratizing access to computing resources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C62 present a conceptual model (Figure 2) comparing SBGrid to traditional approaches, but provide no empirical data quantifying time savings, productivity improvements, or changes in resource access. The comparison is logical but remains theoretical without supporting measurements or user studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SBGrid provides multiple benefits to the research community, developers, and institutions including enhanced software discovery, collective resource exploitation, reduced developer burden, rapid deployment, usage tracking, legacy software support, and cost-effective institutional solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C70 make broad inferential statements about benefits across multiple stakeholder groups without providing quantitative evidence, user surveys, or comparative analyses. While the claimed benefits are plausible consequences of the described system, they remain undemonstrated assertions. Evidence such as user satisfaction surveys, time-use studies, or cost-benefit analyses would be needed to support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "bf090ade-0ca8-4b79-a75f-53192a76e68b",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The SBGrid model is generalizable to other research fields with similar requirements and would likely yield similar benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71, C72, C74, C75, C88, and C89 speculate about generalizability without providing evidence from other fields or pilot implementations. While the authors identify plausible prerequisites (C72) and note modest technical requirements (C75), the actual transferability and expected benefits remain untested hypotheses. This is acknowledged speculation rather than demonstrated fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "e84a4557-02dc-4f77-8fc6-40d583a77a77",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SBGrid's sustainability model relies on membership fees for operations and grants for new development, with governance by active researchers being critical to success.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 describe SBGrid's funding and governance structure. C76, C79, and C80 are factual statements about how SBGrid operates. C77, C78, C81, and C82 make inferential claims about the benefits of this model, but these are reasonable inferences supported by the demonstrated longevity and growth of SBGrid (C1-C15) and are consistent with general principles of organizational sustainability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    },
+    {
+      "id": "1c6949bf-49c0-4914-8f61-40086915a03b",
+      "content_id": "e1ad613b-c16d-4fdf-9425-d7f1d8f3ac53",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SBGrid represents a successful community-based model that addresses growing research computing challenges through resource aggregation, expertise pooling, and cost sharing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 provide summary statements about SBGrid's success and approach. C84 reflects general knowledge about computing trends. C86 is a factual characterization supported by the historical and operational details in other claims. C83, C85, and C87 make inferential statements that are reasonably supported by the demonstrated scale (C2-C3), longevity (C1-C15), and operational capabilities (C20-C37) described elsewhere in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:39:44.953521Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ec8006a0-b056-48f8-9e71-5d591eb9b743",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "491ab681-2ff9-4beb-98fe-d9f6bf43de95",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "4c115bf8-ae9c-4e7c-b14a-19a219adac2a",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "e232372b-0041-4f17-bf61-7726c9602efe",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "ab12bb2f-eb42-4a85-a162-7903f9bf9782",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "27a64543-03b7-49dc-bdd7-d3dd59b8907b",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "4ced82b8-e34c-44ca-b812-758f4ed38b39",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "e1616d4a-58ab-4be1-96fd-f5a7751ead9d",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "1ba894c2-183d-4cf8-adef-1f7ddd62aa42",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "c9933429-89b1-49cc-b73d-1d8a22ba23d0",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "5d9692e8-5dd2-4fa1-8d5e-5a2b0bd31d1d",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "288b5c6e-b4d1-49dc-8539-9dd8797013da",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "4e26ff86-d3ed-4612-a263-66b51c276be3",
+      "result_id": "506d24dc-aff0-4b71-9a07-493007cde9c4"
+    },
+    {
+      "claim_id": "8b524722-28c3-4a36-9ef5-ff75d1a38a33",
+      "result_id": "1f6dd712-51a5-4e25-baa0-f71997b5488a"
+    },
+    {
+      "claim_id": "df30f4d1-45ce-4107-83f6-c2909365edc7",
+      "result_id": "1f6dd712-51a5-4e25-baa0-f71997b5488a"
+    },
+    {
+      "claim_id": "09cb6917-af7a-4cde-b269-828544cdd530",
+      "result_id": "1f6dd712-51a5-4e25-baa0-f71997b5488a"
+    },
+    {
+      "claim_id": "6b15ab8b-2138-408c-82f6-c2bb9a44d5e6",
+      "result_id": "1aaec73d-2faf-4614-81a6-7105f151e68c"
+    },
+    {
+      "claim_id": "bfd3ffdc-909f-4fee-a914-5c0f4c5e5c99",
+      "result_id": "1aaec73d-2faf-4614-81a6-7105f151e68c"
+    },
+    {
+      "claim_id": "e0c8e2e9-0555-42be-b6e0-1a0138444d29",
+      "result_id": "1aaec73d-2faf-4614-81a6-7105f151e68c"
+    },
+    {
+      "claim_id": "4f2ce32f-1033-40b0-90c2-f9841f003020",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "05749c20-bdd8-492b-9cc6-833b88b1ba77",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "d14f365b-8477-4dd9-8151-ba0cfa4e3e4d",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "48e6632e-1ba3-49b7-b141-7ff0073605e6",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "284a46ed-a158-4b2e-8329-70e3d142d3ec",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "f5202e59-d039-4663-b8b6-a7a408946402",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "f454901c-5494-43fc-957e-fd2f4bf1c698",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "4b4617ff-c569-4cbc-84fa-9a8f81e46856",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "c787d8c4-9441-4255-b77c-a5978bf468fe",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "780b87f3-f2b3-4707-9467-cfdea6afaefb",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "903748da-7833-4219-997c-61dcf33b9ed6",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "2c22b704-88ff-41d3-a0e9-0181de789511",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "fce965b8-3582-4b4c-bca1-c1398a43a778",
+      "result_id": "28b5534b-170c-4fd0-bc7b-0146b187b2f2"
+    },
+    {
+      "claim_id": "7d6ce263-0383-4d30-af07-7bab854ec9f1",
+      "result_id": "4f8f6623-1fe7-43f9-ba63-c557087ae6d3"
+    },
+    {
+      "claim_id": "53eeec02-ae04-4ae8-9fe8-df4e60110b17",
+      "result_id": "4f8f6623-1fe7-43f9-ba63-c557087ae6d3"
+    },
+    {
+      "claim_id": "ff08336c-e781-48fe-9973-7bdccfbceb27",
+      "result_id": "4f8f6623-1fe7-43f9-ba63-c557087ae6d3"
+    },
+    {
+      "claim_id": "5b441c3c-c16c-42ac-903a-4f1a12eb25fc",
+      "result_id": "4f8f6623-1fe7-43f9-ba63-c557087ae6d3"
+    },
+    {
+      "claim_id": "fa368114-bf24-4cf1-baaa-32a56fa15180",
+      "result_id": "4f8f6623-1fe7-43f9-ba63-c557087ae6d3"
+    },
+    {
+      "claim_id": "24721739-6d16-4c69-adfb-aa04c57a0900",
+      "result_id": "3ed53949-7b3d-4f21-a07e-d8fab72ca55a"
+    },
+    {
+      "claim_id": "7fcfc604-bdba-4756-8f24-37072bdafb20",
+      "result_id": "3ed53949-7b3d-4f21-a07e-d8fab72ca55a"
+    },
+    {
+      "claim_id": "9f7aa6ed-12df-485b-b24c-50a05ea53d9b",
+      "result_id": "3ed53949-7b3d-4f21-a07e-d8fab72ca55a"
+    },
+    {
+      "claim_id": "bf2684c2-82de-441f-aa2c-bb9b4bd6112e",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "193ea5fd-e3ef-42a2-877f-c4412aa52344",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "6c1561a7-d2a6-4293-a863-c0f77604bb73",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "75d514bc-d7fd-4cc6-8140-fd9da2dedfcb",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "bfa52f8d-178b-41f5-b0f4-da1dad16d2bf",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "61b2e027-16a6-4b5f-ba7f-320eeb729b4d",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "ef9c81c0-60d6-4b8b-9fa4-14ad67c11e88",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "575abb32-453b-420c-84d8-ae9ed628b8f9",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "53418d36-afb3-4a14-98fc-47118929694d",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "dc05d09b-3dd3-454c-aaf6-e5d8d168a929",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "eadd427f-56e3-4dbf-bea7-92c497e77b83",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "75787671-1430-4a9a-bc40-5b3c1926de9f",
+      "result_id": "60148de3-064e-4420-9c64-6fa6b9206164"
+    },
+    {
+      "claim_id": "b2330094-d2b0-45e0-ab13-707d09c9af91",
+      "result_id": "af77bb13-dc0d-4157-8d13-e7bee9c6f0a3"
+    },
+    {
+      "claim_id": "6fa4ddbc-4c7c-4603-85ed-d34226bab983",
+      "result_id": "af77bb13-dc0d-4157-8d13-e7bee9c6f0a3"
+    },
+    {
+      "claim_id": "6c898772-183e-47ac-8a40-526b24db8e54",
+      "result_id": "af77bb13-dc0d-4157-8d13-e7bee9c6f0a3"
+    },
+    {
+      "claim_id": "ace1e774-17b0-45c6-9cc2-0bde1f03072d",
+      "result_id": "af77bb13-dc0d-4157-8d13-e7bee9c6f0a3"
+    },
+    {
+      "claim_id": "8d0c27fd-8b13-40dd-87d8-a52155da7819",
+      "result_id": "af77bb13-dc0d-4157-8d13-e7bee9c6f0a3"
+    },
+    {
+      "claim_id": "8ed44c8c-edd6-4199-ad5d-710c0fe61b86",
+      "result_id": "b66e15cf-6063-4772-a14a-9211620c888c"
+    },
+    {
+      "claim_id": "010d56c4-a786-4ab0-a93c-c40006e74128",
+      "result_id": "b66e15cf-6063-4772-a14a-9211620c888c"
+    },
+    {
+      "claim_id": "361a2f26-4bd8-48e1-a4fa-6137840466fd",
+      "result_id": "b66e15cf-6063-4772-a14a-9211620c888c"
+    },
+    {
+      "claim_id": "7387e01c-1b1f-4836-8465-a5eaf121fde3",
+      "result_id": "b66e15cf-6063-4772-a14a-9211620c888c"
+    },
+    {
+      "claim_id": "255bff2a-3b4d-4a15-a2ae-771f7cbb7e2d",
+      "result_id": "b66e15cf-6063-4772-a14a-9211620c888c"
+    },
+    {
+      "claim_id": "a13f04f5-0e3e-4664-b9a8-f3d53b58aa7a",
+      "result_id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780"
+    },
+    {
+      "claim_id": "5b94b92b-7241-4f76-9d96-10edda479d73",
+      "result_id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780"
+    },
+    {
+      "claim_id": "108ab5cc-daec-4857-8c59-62c97afcd901",
+      "result_id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780"
+    },
+    {
+      "claim_id": "a4977604-f61f-45d2-9904-268edfcbd6ee",
+      "result_id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780"
+    },
+    {
+      "claim_id": "4431a456-23cf-4881-86ae-d41fefc03021",
+      "result_id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780"
+    },
+    {
+      "claim_id": "731fdba0-d87e-4e9e-9ac9-2635b649163b",
+      "result_id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780"
+    },
+    {
+      "claim_id": "b2fe2c18-a53a-41dd-aebe-e7337d33dcdb",
+      "result_id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780"
+    },
+    {
+      "claim_id": "49a07feb-0bee-45af-896a-09cd946a8201",
+      "result_id": "ba4327a8-1eba-4c68-bbf0-721ac7f19780"
+    },
+    {
+      "claim_id": "6ce720de-d1e0-47f2-a0de-767336ec2b69",
+      "result_id": "bf090ade-0ca8-4b79-a75f-53192a76e68b"
+    },
+    {
+      "claim_id": "02f2f3c6-944a-4801-92be-1b2c0e24913d",
+      "result_id": "bf090ade-0ca8-4b79-a75f-53192a76e68b"
+    },
+    {
+      "claim_id": "e6a2b6fd-13ed-445f-8a25-83a4c57f86c6",
+      "result_id": "bf090ade-0ca8-4b79-a75f-53192a76e68b"
+    },
+    {
+      "claim_id": "8fff3d49-b0c9-45f4-9e8a-0f88dc618688",
+      "result_id": "bf090ade-0ca8-4b79-a75f-53192a76e68b"
+    },
+    {
+      "claim_id": "a2b5d6d3-1e21-487e-a95c-0e676ff95a4e",
+      "result_id": "bf090ade-0ca8-4b79-a75f-53192a76e68b"
+    },
+    {
+      "claim_id": "c8192d22-37e2-4524-b7cd-12da87b6c92e",
+      "result_id": "bf090ade-0ca8-4b79-a75f-53192a76e68b"
+    },
+    {
+      "claim_id": "6c730687-7115-4dc3-9a0c-315d480f6b6d",
+      "result_id": "e84a4557-02dc-4f77-8fc6-40d583a77a77"
+    },
+    {
+      "claim_id": "2d51707e-ec32-481e-85c4-fde2caa0c443",
+      "result_id": "e84a4557-02dc-4f77-8fc6-40d583a77a77"
+    },
+    {
+      "claim_id": "ddcbc513-218d-4e49-bff1-65eb47daa4d4",
+      "result_id": "e84a4557-02dc-4f77-8fc6-40d583a77a77"
+    },
+    {
+      "claim_id": "f3716fd1-e4f1-46e3-a12e-d9fae7edcb11",
+      "result_id": "e84a4557-02dc-4f77-8fc6-40d583a77a77"
+    },
+    {
+      "claim_id": "aff66a28-1d72-4fd5-be67-59f1b7ee9084",
+      "result_id": "e84a4557-02dc-4f77-8fc6-40d583a77a77"
+    },
+    {
+      "claim_id": "add658a9-f94e-481a-932d-3622e30b9296",
+      "result_id": "e84a4557-02dc-4f77-8fc6-40d583a77a77"
+    },
+    {
+      "claim_id": "3a9fd6de-0e81-47d2-b9d6-fe488a1de44a",
+      "result_id": "e84a4557-02dc-4f77-8fc6-40d583a77a77"
+    },
+    {
+      "claim_id": "c62ac2fe-7d91-44b9-9da6-2f55000e0e8e",
+      "result_id": "1c6949bf-49c0-4914-8f61-40086915a03b"
+    },
+    {
+      "claim_id": "158f4ce5-9141-4782-bb1b-8d567edadf25",
+      "result_id": "1c6949bf-49c0-4914-8f61-40086915a03b"
+    },
+    {
+      "claim_id": "b5236c9f-d91f-48e8-b8c7-b3f17031ec45",
+      "result_id": "1c6949bf-49c0-4914-8f61-40086915a03b"
+    },
+    {
+      "claim_id": "b5c2cfd9-7594-44e0-a763-995a8cabbc8a",
+      "result_id": "1c6949bf-49c0-4914-8f61-40086915a03b"
+    },
+    {
+      "claim_id": "f37572b7-9b2b-45b6-838b-295b867168fc",
+      "result_id": "1c6949bf-49c0-4914-8f61-40086915a03b"
+    }
+  ],
+  "comparisons": []
+}

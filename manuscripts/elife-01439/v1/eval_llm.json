@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Rfx2 directly regulates 911 genes in multi-ciliated cells, identified through integrated RNA-seq and ChIP-seq analysis. RNA-seq identified 2750 differentially expressed genes following Rfx2 knockdown, ChIP-seq identified 3465 genes bound by Rfx2, and the intersection of these datasets defined 911 direct target genes, with 100% validation rate for tested genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 provide converging evidence from orthogonal genomic approaches (RNA-seq and ChIP-seq) with appropriate statistical thresholds (>2-fold change, FDR<0.05, p\u226410^-6 for overlap). The 100% validation rate (C16) by independent methods (in situ hybridization and RT-PCR) strongly supports the reliability of the genomic dataset. The experimental design is sound and replicates show good correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Rfx2 controls expression of essentially all known ciliary machinery components, including IFT complexes (IFT-A and IFT-B), axonemal dyneins, transition zone components, BBSome components, tubulins and tubulin-modifying enzymes, planar cell polarity effectors, and centriolar proteins. Many of these target genes are mutated in human ciliopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 are well-supported by the integrated RNA-seq and ChIP-seq data presented in Figure 2B and supplementary files. The comprehensive coverage of ciliary machinery components is documented, and the connection to human ciliopathies is supported by appropriate citations. The validation experiments (C16) further strengthen confidence in these specific targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Ttc29, identified through bioinformatic network analysis as functionally linked to IFT machinery, localizes to ciliary axonemes and is required for ciliogenesis. Ttc29 knockdown specifically reduces anterograde IFT rate without affecting retrograde IFT, consistent with its predicted interaction with IFT-B complex components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 demonstrate successful translation of bioinformatic predictions (C25) to functional validation. The localization data (C26), ciliogenesis defects (C27), and specific effects on anterograde but not retrograde IFT (C28-C29) provide strong mechanistic support. Quantitative imaging data with appropriate statistics (p<0.0001 for anterograde, p=0.0510 for retrograde) support the specificity of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Rfx2 controls ciliary beating through regulation of diverse genes including planar polarity components, dynein regulatory proteins, and radial spoke components. Ribc2, identified through network analysis, localizes to axonemes and is required for proper ciliary beating, axonemal organization, and localization of Tekt2 and Nme5, but not Pacrg, revealing functional hierarchies within the axoneme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C40 are well-supported by multiple lines of evidence including GO analysis (C30), direct gene identification (C31), bioinformatic prediction (C32), and extensive functional validation (C33-C40). The combination of localization studies, high-speed imaging, TEM analysis, and protein dependency experiments provides strong mechanistic insights. The specificity is demonstrated by the differential effects on Tekt2/Nme5 versus Pacrg (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Only ~20% of Rfx2 target genes are present in known cilia proteomes, suggesting many Rfx2 targets have non-ciliary functions. GO term analysis indicates potential roles in cell movement and morphogenesis, consistent with cilia-independent functions reported for other RFX family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by comparative analysis with established cilia proteomes and GO term enrichment analysis. The inference that many targets are not involved in ciliogenesis (C42) is reasonable given the proteome comparison, though this remains a prediction requiring further validation. The connection to prior reports of cilia-independent RFX functions provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Rfx2 cell-autonomously controls apical surface expansion in nascent MCCs during their insertion into the epithelium. Strong Rfx2 knockdown causes MCCs to remain positioned below the apical surface, and live imaging reveals that while initial probing behavior is normal, the subsequent apical surface expansion phase fails completely. Mosaic analysis demonstrates this is a cell-autonomous function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are strongly supported by multiple experimental approaches including fixed imaging (C44), dose-response controls ruling out secondary effects (C45), live imaging documenting specific behavioral defects (C46-C47), and definitive mosaic/transplantation experiments establishing cell autonomy (C48). The combination of observational and genetic mosaic data provides robust support for this novel function of Rfx2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Rfx2 controls MCC insertion through direct regulation of dystroglycan (dag1) and slit2. Slit2 knockdown disrupts MCC insertion, and mosaic analysis demonstrates that Slit2, like Rfx2, acts cell-autonomously in this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by the genomic data identifying dag1 and slit2 as direct Rfx2 targets, functional validation showing insertion defects upon Slit2 knockdown, and mosaic analysis establishing cell autonomy. The connection to known Dag1/Slit/Robo interactions in other morphogenetic contexts provides mechanistic plausibility. However, the relative contributions of dag1 versus slit2 are not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Rfx2 functions within a transcriptional network with Mcidas and FoxJ1 to control MCC development. While Rfx2 and FoxJ1 are downstream of Mcidas, many ciliary genes require combined action of multiple factors, and Rfx2 uniquely controls certain IFT genes, ciliopathy-associated genes, and MCC insertion genes (dag1, slit2) independent of FoxJ1 or Mcidas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by systematic comparison of the current Rfx2 dataset with published FoxJ1 and Mcidas datasets. The hierarchical relationships and combinatorial control patterns are clearly documented. However, the prior studies cited used overexpression rather than ChIP-seq, so the comparisons are not perfectly matched methodologically. The unique Rfx2 targets are well-documented in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Multi-ciliated epithelial cells (MCCs) project dozens to hundreds of motile cilia from their apical surfaces and are critical for homeostasis of airway, brain, and reproductive tracts. Defective MCC function is associated with pathologies including chronic infection and hydrocephalus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 provide established background knowledge supported by appropriate citations to prior literature. These are well-accepted facts in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Rfx2 coordinates multiple distinct gene expression programs controlling cell movement, ciliogenesis, and cilia function in MCCs, including a previously unrecognized role in cell-autonomous control of apical surface expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 are high-level summary claims that accurately reflect the totality of results presented in the manuscript. These are supported by the comprehensive genomic and functional data across all other result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C11"
+    ],
+    "result": "Background context on ciliogenesis: hundreds of proteins are required for cilia assembly and function, new cilia assembly requires transcription, RFX transcription factors are central regulators of ciliogenesis in C. elegans and vertebrates, and Rfx2 is essential for normal cilia development in MCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C11 provide established background knowledge supported by appropriate citations. C11 specifically cites the authors' prior work establishing Rfx2's role in ciliogenesis, which provides the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Contextual connections to human disease and mammalian biology: wdpcp and cep164 are implicated in human ciliopathies, Dag1 and Slit/Robo signaling collaborate in axon guidance, Rfx3 mutant mice show axon guidance defects, and mammalian MCCs arise from basally-positioned precursor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C58-C60 provide important contextual information connecting the findings to human disease and mammalian biology, all supported by appropriate citations to prior literature. These help establish the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Rab11 is required for MCC insertion but was not identified as an Rfx2 target in this study, despite its known role in the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by comparison with prior literature and the current dataset. This negative result is appropriately reported and suggests that not all MCC insertion genes are Rfx2 targets, indicating additional regulatory mechanisms exist.",
+    "result_type": "MINOR"
+  }
+]

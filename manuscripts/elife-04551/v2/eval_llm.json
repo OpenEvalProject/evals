@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C16"
+    ],
+    "result": "CA2 pyramidal neurons receive stronger excitatory input from entorhinal cortex perforant path (PP) synapses compared to CA1 neurons, with sub-threshold EPSP amplitudes 5-6 times larger in CA2 than CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, and C16 are well-supported by experimental data in Figure 1A-C showing direct comparison of EPSP amplitudes between CA2 and CA1 neurons in response to PP stimulation. The measurements are quantitative and reproducible across multiple cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Single PP stimuli are sufficient to elicit action potentials in the majority of CA2 pyramidal neurons (35/42 cells) but never in CA1 neurons, and these responses are synaptically driven rather than due to direct electrical stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by whole-cell recordings (Figure 1D-E) and pharmacological blockade experiments showing that glutamate receptor antagonists eliminate the responses. The contrast between CA2 and CA1 is clearly demonstrated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C29",
+      "C41"
+    ],
+    "result": "Despite PP-evoked EPSPs being ~11 mV below the somatic AP threshold measured by current injection, CA2 neurons fire APs at lower voltage thresholds with PP stimulation (-51.6 mV) compared to somatic current injection (-44.3 mV), indicating dendritic spikes may be required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C29, and C41 are supported by systematic measurements comparing EPSP amplitudes to AP thresholds (Figures 1G-I, 2C). The statistical significance (p < 0.001, n=17) and consistent observations across cells provide strong evidence for the necessity of an additional mechanism beyond passive EPSP summation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Sub-threshold PP stimulation in CA2 neurons evokes rapidly rising voltage responses (spikelets) with non-linear increases in dV/dt when EPSPs reach 15-20 mV, and phase-plane analysis reveals an early rapid dV/dt component preceding full APs that is absent with somatic current injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by detailed electrophysiological analysis in Figure 2 and Figure 2\u2014figure supplement 1, showing non-linear relationships between EPSP amplitude and dV/dt, decreased rise times, and phase-plane plots demonstrating dendritic spike signatures. The comparison to somatic current injection provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In CA1 pyramidal neurons, PP-evoked action potentials show no evidence of dendritic spikelets in somatic recordings or phase-plane plots, and AP properties are identical whether evoked by PP stimulation or somatic current injection, indicating temporal summation rather than dendritic spikes drives AP output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by experimental data in Figure 2D-F showing absence of spikelets and identical AP thresholds and waveforms between PP stimulation and current injection in CA1 neurons. This provides important negative control data contrasting with CA2 results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Hyperpolarizing CA2 neuron somata reveals consistent rapidly rising spikelets (dV/dt = 20.6 \u00b1 2.6 V/s) that precede full-blown APs and fluctuate between spikelet-only and full AP responses at near-threshold stimulation, while CA1 neurons show no spikelets upon hyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by experimental data in Figure 3 showing spikelets revealed by membrane hyperpolarization in CA2 but not CA1 neurons. The fluctuation between spikelets and full APs at constant stimulation strength (Figure 3A) provides strong evidence for dendritic spike involvement in AP generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Local TTX application to CA2 somata reveals consistent spikelets (dV/dt = 36.4 \u00b1 3.0 V/s, amplitude = 33.6 \u00b1 2.8 mV) that would normally trigger somatic APs, while CA1 neurons show no spikelets with somatic TTX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by experimental data in Figure 4 using local TTX application to block somatic Na+ channels while preserving dendritic spikes. The large amplitude and rapid kinetics of CA2 spikelets, contrasted with absence in CA1, provide strong evidence for dendritic spike propagation differences between cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Local TTX application to proximal dendrites of CA2 neurons completely blocks AP firing in response to single PP stimuli, while EPSPs reach only ~20 mV (below somatic AP threshold) and synaptic transmission and somatic excitability remain unchanged, demonstrating that TTX-sensitive dendritic Na+ spikes are necessary for AP initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are strongly supported by experimental data in Figure 5 showing selective blockade of dendritic spikes without affecting synaptic transmission or somatic excitability. The controls demonstrating unchanged sub-threshold EPSPs and somatic AP firing to current injection (Figure 5E-H) are critical for establishing the necessity of dendritic spikes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Dendritic Na+ spikes are also necessary for AP output in CA2 neurons in response to high-frequency bursts of PP stimuli (50 Hz, 5 pulses), as demonstrated by phase-plane analysis, somatic TTX revealing spikelets, and dendritic TTX blocking AP output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by experimental data in Figure 6 showing that dendritic spikes are required not only for single stimuli but also for burst stimulation. This extends the main finding to more physiologically relevant stimulation patterns and strengthens the conclusion about dendritic spike necessity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CA2 neurons fire with highest probability and shortest latency (4.4 \u00b1 0.1 ms) to the first stimulus in a PP burst, with decreasing responses to subsequent stimuli despite synaptic facilitation (PPR = 1.39), while CA1 requires multiple stimuli with latencies >20 ms, indicating dendritic spikes enable rapid, temporally precise responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by extracellular field recordings in Figure 6\u2014figure supplement 1 showing contrasting temporal response patterns between CA2 and CA1. The paired-pulse ratio measurement rules out synaptic depression as an explanation for decreased CA2 responses during bursts, supporting the interpretation about temporal coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CA2 dendrites generate active excitatory responses (negative field potentials in stratum radiatum) that correlate with somatic population spikes (R=0.91), precede somatic responses with latency proportional to recording distance, while CA1 and CA3 dendrites show no active responses, demonstrating that CA2 dendritic spikes propagate to trigger somatic APs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by dual extracellular field recordings in Figure 7 showing active dendritic responses specific to CA2. The correlation analysis (R=0.91) and latency-distance relationship provide strong evidence for spike propagation from dendrites to soma. The negative controls in CA1 and CA3 strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Direct dendritic recordings from CA2 neurons show distinct electrophysiological properties from CA1 (lack of Ih-mediated sag, no AP adaptation), dendritic spikes can be reliably triggered by current pulses (threshold 1.7 \u00b1 0.2 nA) and are blocked by TTX, and single PP stimuli evoke dendritic spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by direct dendritic whole-cell recordings in Figure 8 with morphological verification. The TTX blockade (Figure 8C) confirms Na+ channel mediation, and the demonstration of synaptically-evoked dendritic spikes (Figure 8D-E) provides direct evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "NMDA receptor activation is not required for dendritic spike initiation or AP output in CA2 neurons, as D-APV (50 \u03bcM) does not block dendritic spikes or population spikes despite producing a small (20%) decrease in EPSP amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by pharmacological experiments in Figure 8\u2014figure supplement 2 showing that NMDA receptor blockade does not prevent dendritic spikes or AP output. This rules out NMDA spikes as the mechanism and confirms that voltage-gated Na+ channels are the primary mediator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In the presence of physiological GABAergic inhibition, PP stimulation evokes strong inhibition that limits PSPs to 6-8 mV, yet CA2 neurons can still fire APs (though with reduced probability and higher threshold) when PSPs reach ~11 mV, with dendritic Na+ spikes consistently preceding full APs, demonstrating that dendritic spikes enable AP output despite powerful inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 are supported by comprehensive experiments in Figure 9 comparing responses with and without GABA receptor antagonists. The demonstration that dendritic spikes can overcome inhibition to trigger APs despite sub-threshold PSPs is critical for establishing physiological relevance. The variable responses at threshold (Figure 9G) provide additional evidence for dendritic spike involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "CA2 pyramidal neurons have distinct dendritic morphology compared to CA1, with the primary apical dendrite splitting into multiple secondary branches within 50-100 \u03bcm of the soma (each providing independent routes to soma), while CA1 has a single apical dendrite extending to SLM before branching into fine tufts; CA2 spikelets are much larger (25.5 \u00b1 2.6 mV, dV/dt = 36.4 \u00b1 3.0 V/s) than CA1 spikelets (<5 mV, dV/dt < 10 V/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by morphological reconstructions and electrophysiological measurements. The quantitative comparison of spikelet properties between CA2 and CA1 provides clear evidence for differences in dendritic spike propagation efficiency. The morphological descriptions are based on direct observations from biocytin-filled neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Computational modeling based on morphologically reconstructed CA2 and CA1 neurons shows that strong distal synaptic stimulation triggers dendritic Na+ spikes that propagate to soma and trigger APs in CA2 but not CA1 models; the primary dendritic branch point in CA2 acts as a 'hot spot' where spikes from 6 out of 12 branches summate to produce a large spike that propagates efficiently to soma, identifying CA2 dendritic morphology as a key factor enabling efficient spike coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by computational modeling in Figure 10 using morphologically realistic reconstructions. The models successfully reproduce the experimental observations and provide mechanistic insight into how dendritic geometry contributes to spike propagation. However, the models rely on conductance parameters from rat CA1 neurons due to lack of mouse CA2/CA1 data, which is a limitation acknowledged by the authors (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Dendritically generated Na+ spikes driven by cortical inputs to CA2 distal dendrites propagate to soma, are required for AP output, enable cortical inputs to overcome unfavorable distal location by shortening spike latency and overcoming inhibition, enhance temporal precision, and are likely crucial for the EC\u2192CA2\u2192CA1 disynaptic pathway function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 represent well-supported summary conclusions integrating multiple experimental findings from the study. The evidence from TTX blockade, temporal analysis, and inhibition experiments collectively support these interpretations about the functional significance of dendritic spikes in CA2 neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Given that CA2 pyramidal neurons are critical for social memory, dendritic Na+ spikes in these neurons are likely to play a key behavioral role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is speculative and represents an inference based on prior work showing CA2's role in social memory (C5) combined with the current findings about dendritic spikes. While plausible, this claim requires in vivo behavioral experiments to be validated and is acknowledged as an open question (C128).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In most pyramidal neurons including CA1 and neocortical layer 5 neurons, dendritic Na+ spikes fail to propagate efficiently to soma and are neither sufficient nor necessary for AP initiation; in CA1, temporal summation of EPSPs rather than dendritic spikes drives AP output, with spikelets observed in only ~5% of cells during high-frequency bursts; CA1 oriens-alveus interneurons are an exception where dendritic spikes do trigger AP output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 are supported by citations to prior literature and the current CA1 experimental data. These claims provide important context for understanding how CA2 neurons differ from most other pyramidal neurons. The discussion appropriately acknowledges prior work showing occasional dendritic spike involvement in CA1 while emphasizing its limited role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Computational modeling identifies CA2 dendritic morphology as a key factor enabling efficient coupling of dendritic spikes to AP output, with the primary branch point acting as a 'hot spot' integrating spikes from multiple secondary dendrites; additional factors such as distinct ion channel distributions may also contribute but are not ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by the computational modeling results in Figure 10. Claim C106 appropriately acknowledges limitations and alternative mechanisms. The modeling provides mechanistic insight but relies on assumptions about conductance distributions that may not fully capture CA2-specific properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "CA2 neurons utilize multiple mechanisms to boost somatic responses to distal EC inputs, including unidentified mechanisms that increase sub-threshold EPSP amplitude (5-6x larger than CA1) and dendritic Na+ spikes; however, even the enhanced EPSPs (15-20 mV) remain far below the somatic AP threshold (~30 mV depolarization required), making dendritic spikes necessary for AP output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 are supported by the experimental data showing EPSP amplitudes and AP thresholds. The logic connecting these measurements to the necessity of dendritic spikes is sound. However, claim C108 acknowledges that the mechanisms underlying enhanced EPSPs remain unidentified, representing an area for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "CA2 neurons receive direct input from dentate gyrus granule cells via mossy fibers (though lacking thorny excrescences), which provide weak synaptic drive (5-10 mV PSPs) yet can drive CA2 spike output; dendritic Na+ spikes may enable AP output through this DG\u2192CA2 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C115 are supported by citations to recent work (Kohara et al., 2014), but claim C116 is speculative. The authors suggest dendritic spikes may explain how weak DG inputs drive CA2 output, but this hypothesis is not directly tested in the current study and requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Dendritic Na+ spikes enable CA2 neurons to fire precisely and immediately (latency 4.4 ms) in response to single PP stimuli with highest probability to the first stimulus in a burst, contrasting with CA1 which requires temporal summation and fires with increasing probability during successive stimuli; this mechanism may influence temporal structure of cortico-hippocampal information flow, consistent with in vivo findings that CA2 fires earlier than CA1/CA3 in response to EC stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 are supported by experimental data on temporal response patterns. Claim C122 is somewhat speculative but reasonable given the data. Claim C123 is supported by citations to in vivo studies, providing convergent evidence for the physiological relevance of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "While dendritic Na+ spikes have been observed in vivo in some neuron types, and active dendritic responses in CA2 have been observed in anesthetized guinea pigs that precede somatic responses (consistent with current findings), whether cortically-driven dendritic spikes occur in awake-behaving animals and contribute to behaviors including social memory remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 are supported by citations to prior in vivo work, and claim C127 represents reasonable inference. However, claim C128 appropriately acknowledges that the behavioral relevance remains speculative and requires future in vivo studies in awake animals. The in vitro findings provide strong mechanistic insight but do not directly demonstrate in vivo function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "CA2 pyramidal neurons are crucial for social memory and aggression based on recent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 are supported by citations to recent published studies (Hitti and Siegelbaum, 2014; Stevenson and Caldwell, 2014; Pagani et al., 2014). These provide important context for the functional significance of CA2 neurons but are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work has established that PP inputs to CA1 are weak, Schaffer collateral inputs to CA2 are weak and dominated by feed-forward inhibition, individual CA2 neurons provide stronger drive to CA1 than CA3 inputs, and CA2 functions as a nexus for the EC\u2192CA2\u2192CA1 disynaptic circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C9, C10, and C11 are supported by citations to prior work, primarily from the same laboratory (Chevaleyre and Siegelbaum, 2010; Jones and McHugh, 2011). These provide essential background context for understanding the significance of the current findings but are not new results from this study.",
+    "result_type": "MINOR"
+  }
+]

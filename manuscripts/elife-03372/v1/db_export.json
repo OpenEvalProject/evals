@@ -1,0 +1,1683 @@
+{
+  "submission": {
+    "id": "8c9fd7f5-87af-4bc9-b7b2-71e6fc6d15e6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:45:31.612740Z",
+    "updated_at": "2025-11-28T21:45:31.612740Z"
+  },
+  "content": [
+    {
+      "id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "submission_id": "8c9fd7f5-87af-4bc9-b7b2-71e6fc6d15e6",
+      "content_type": "manuscript",
+      "content_text": "# Lis1 regulates dynein by sterically blocking its mechanochemical cycle\n\n## Authors\n\n- Katerina Toropova<sup>1</sup>\n- Sirui Zou<sup>2</sup>\n- Anthony J Roberts<sup>2</sup>\n- William B Redwine<sup>1</sup>\n- Brian S Goodman<sup>2</sup>\n- Samara L Reck-Peterson<sup>2</sup> \u2020\n- Andres E Leschziner<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n2. Department of Cell Biology Harvard Medical School Boston United States\n3. Astbury Centre for Structural Molecular Biology University of Leeds Leeds United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nRegulation of cytoplasmic dynein's motor activity is essential for diverse eukaryotic functions, including cell division, intracellular transport, and brain development. The dynein regulator Lis1 is known to keep dynein bound to microtubules; however, how this is accomplished mechanistically remains unknown. We have used three-dimensional electron microscopy, single-molecule imaging, biochemistry, and in vivo assays to help establish this mechanism. The three-dimensional structure of the dynein\u2013Lis1 complex shows that binding of Lis1 to dynein's AAA+ ring sterically prevents dynein's main mechanical element, the \u2018linker\u2019, from completing its normal conformational cycle. Single-molecule experiments show that eliminating this block by shortening the linker to a point where it can physically bypass Lis1 renders single dynein motors insensitive to regulation by Lis1. Our data reveal that Lis1 keeps dynein in a persistent microtubule-bound state by directly blocking the progression of its mechanochemical cycle.\n\n## Introduction\n\nCytoplasmic dynein (\u2018dynein\u2019 here), the largest and least understood of the cytoskeletal motors, uses the energy from ATP hydrolysis to move towards the minus ends of microtubules (Vale, 2003; Carter, 2013). As the major minus-end-directed motor in most eukaryotic cells, dynein's many roles include transporting a range of macromolecular cargo (Blocker et al., 1997; Jordens et al., 2001; Kural et al., 2005; Pilling et al., 2006; Driskell et al., 2007), constructing and positioning the mitotic spindle (Heald et al., 1996; Merdes et al., 1996; Kiyomitsu and Cheeseman, 2013), and polarizing and anchoring mRNAs during development (Wilkie and Davis, 2001). To perform its diverse biological functions, dynein partners with a range of regulatory co-factors, an important subset of which can alter dynein motility directly. Despite progress in understanding the architecture and mechanism of dynein's large motor domain, how this structure is acted upon by regulatory factors is not yet known.\n\nDynein is a homodimer of force generating units (\u223c500 kDa each) (Figure 1A,B). The N-terminal region of each monomer forms the \u2018tail\u2019 domain, which mediates dimerization and cargo attachment via adaptor proteins. Removal of the tail yields the \u2018motor\u2019, the minimal portion of dynein that can exert force. At the core of the motor are six AAA+ modules (AAA1\u20136) that fold into a ring. AAA1 is the main site of ATP hydrolysis for motility but AAA2, 3, and 4 can also bind ATP, and AAA3 and 4 can hydrolyze it (Gibbons et al., 1991; Kon et al., 2004, 2012; Cho et al., 2008; Schmidt et al., 2012). AAA5 and AAA6 have lost the ability to bind nucleotide (Kon et al., 2012; Schmidt et al., 2012). Two appendages to the ring are essential for dynein function; the \u2018stalk\u2019, an intramolecular anti-parallel coiled-coil at the end of which lies the microtubule-binding domain (Gee et al., 1997; Carter et al., 2008) and the \u2018linker\u2019, which is dynein's key mechanical element and is an elongated structure N-terminal to AAA1. The linker spans the ring and moves in a nucleotide dependent manner that is thought to transmit force to dynein's cargo (Burgess et al., 2003; Kon et al., 2005; Shima et al., 2006; Roberts et al., 2009, 2012). In order for dynein to move along microtubules, ATP binding/hydrolysis at AAA1 must be coupled with linker motion and microtubule binding and release at the tip of the stalk, located 250 \u00c5 away (Gibbons et al., 2005; Imamula et al., 2007; Kon et al., 2009; Redwine et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig1-v1.jpg)\n\n**Figure 1.:** (A) Domain organization of dynein and Lis1 constructs used in this study. Dynein's AAA+ domains are labeled AAA1\u20136. MTBD: microtubule binding domain; CC: coiled coil; LisH: Lis-homology (dimerization) motif. (B) Schematic representation of dynein and Lis1, color-coded as in (A) and throughout the paper. NT: N terminus; CT: C terminus. (C) Cryo-NS EM reconstruction of the dynein motor domain in complex with Lis1 and (D) of the motor domain alone. AAA4 and AAA5 are labeled. A density present only in the dynein\u2013Lis1 map is highlighted in (C) (brown arrowhead). The linker occupies different positions in the two maps (compare labeled densities and gray arrows), and its position in the dynein alone map is sterically incompatible with Lis1, as indicated by a semi-transparent Lis1 density. (E) Structural model of dynein's motor domain docked into the EM maps of dynein\u2013Lis1 and (F) dynein alone. The model was built from crystal structures of the S. cerevisiae dynein ring (PDB ID: 4AKG [Schmidt et al., 2012]) and D. discoideum linker aligned to the yeast linker position (PDB ID: 3VKG [Kon et al., 2012]), the D. discoideum linker being closer in length to that in our EM construct. In (E), a homology model of the S. cerevisiae Lis1 \u03b2-propeller (brown) has been docked into the new density highlighted in (C). The linker domain in the EM map (gray arrow) is shifted away from its position in the crystal structure (purple arrow), which protrudes from the EM density and clashes with the Lis1 density. In contrast, the linker is within the EM density in the dynein alone map (F). Green circle: location of known interactions between the linker and AAA5 module in dynein (Schmidt et al., 2012). (G) Close-up view of the Lis1 density with homology model docked in, viewed along the axis indicated by the arrowhead in (C). (H) A rotated, smaller view of (E), showing the interface between Lis1 (brown arrowhead) and dynein.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) SDS-PAGE of dynein and Lis1, affinity purified from S. cerevisiae. (B) Comparison between re-projections of the dynein and dynein\u2013Lis1 reconstructions and the best-matching reference-free class averages (no nucleotide conditions). (C) Fourier Shell Correlation plots for all EM maps presented. The plots are shown as a function of resolution (1/frequency). The thresholds for the 0.5 FSC and 0.143 FSC criteria are shown. (D and E) Class averages of monomeric dynein in complex with dimeric (D) or monomeric (E) Lis1, with a schematic representation alongside each. (F\u2013H) 3D classification of linker positions in the dynein\u2013Lis1 (no nucleotide) data set. (F) A reconstruction using the entire data set without sorting out linker conformations. The N-terminus of the linker is mostly averaged out in this map. (G) 3D class average of a subset of dynein motors whose linkers are located on the AAA5 proximal side of Lis1. The purple arrow points to the N-terminus of the linker. (H) The linker density from (G) was overlaid on the dynein\u2013Lis1 structure (Figure 1C) to highlight the different positions adopted by the linker in the presence of Lis1. The purple and gray arrows point to the N-terminus of the linker domain in the two conformations. The Lis1 density is indicated in all three maps. (I) A side view of the dynein motor domain in surface representation with the linker domain colored by conservation (100%, purple; 11%, white). The alignment was carried out using cytoplasmic dynein from the following species: M. musculus, H. sapiens, S. cerevisiae, C. albicans, A. fumigatus, A. nidulans, D. discoideum, D. melanogaster, and C. elegans using Muscle (Edgar, 2004). For orientation, a cartoon representation of the view is shown bottom right. The truncation site for the short linker dynein is marked with a dashed line and scissors (see Figure 5).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Zoomed out view of dynein\u2013Lis1; only the portion of the crystal structure corresponding to AAA4 is displayed, in yellow (PDB ID: 4AKG [Schmidt et al., 2012]). (B) Close-up of the N-terminal portion of the linker (left) and a view rotated by 60\u00b0 (right). The latter shows a density connecting the linker and AAA4. Residues in an AAA4 helix that are located in the density connecting AAA4 to the linker are shown in atomic representation, colored by element, and labeled. (C) Kymographs of in vitro motility experiments with TMR-labeled wild-type GST-dynein331kDa or mutant GST-dynein331kDa with the five residues labeled in (C) changed to alanine (AAA4 mut). Assays were performed with dynein alone or in the presence of 200 nM Lis1. Horizontal scale bar = 2 \u03bcm, vertical = 30 s. (D) Histogram of mean velocities for each experiment \u00b1 S.D., N = 228\u2013612, ***p < 0.0001.\n\nAcross a wide range of species, dynein interacts with a conserved regulator called Lis1 (also known as Pac1 in Saccharomyces cerevisiae) that is necessary for many dynein driven processes. Mutations in the Lis1 gene cause the neurodevelopmental disorder lissencephaly (Reiner et al., 1993). Lis1 is the only dynein regulator known to interact directly with its motor domain (McKenney et al., 2010; Huang et al., 2012). Like dynein, Lis1 acts as a dimer, with each monomer comprising an N-terminal dimerization domain (LisH) followed by a coiled-coil, a flexible loop and a C-terminal \u03b2-propeller domain of 7 WD motifs (Kim et al., 2004; Tarricone et al., 2004) (Figure 1A,B). We previously showed that the propeller domain alone can regulate dynein in vitro and used negative stain electron microscopy (EM) and two-dimensional (2D) image processing to show that Lis1 binds to dynein's motor domain near AAA3/4 (Huang et al., 2012). We and others have shown that Lis1 induces a slow-moving microtubule-attached state in dynein (Yamada et al., 2008; McKenney et al., 2010; Torisawa et al., 2011; Huang et al., 2012). Interestingly, Lis1 can accomplish this without substantially affecting dynein's overall ATP hydrolysis rate (Yamada et al., 2008; McKenney et al., 2010; Huang et al., 2012). This led us to propose that Lis1 acts as a \u2018clutch\u2019, uncoupling dynein's engine (AAA+ ring) from its track-binding region.\n\nOur previous 2D EM data, which indicated that Lis1 binds in the vicinity of AAA3/4, raised at least two possibilities for how Lis1 can affect dynein's mechanochemistry. On the one hand, Lis1 may regulate dynein allosterically, influencing the structure or motions of AAA3 or AAA4 in the ring, and thus preventing the propagation of a signal for microtubule detachment to the stalk. Alternatively, because the linker domain lies close to AAA4 in certain nucleotide-states, Lis1 may regulate dynein sterically, affecting the linker's movement directly, and thus dynein's mechanochemistry. Establishing Lis1's mode of regulation is not possible without three-dimensional (3D) data, as it is not known if Lis1 binds on the same face of the AAA+ ring as the linker, as would be required for direct Lis1\u2013linker interactions to occur. Moreover, it is not clear to what extent the Lis1 binding site encompasses AAA3, AAA4, or both of these modules. Thus, 3D structural information is critical to understanding the mechanistic basis of Lis1's regulation of dynein.\n\nWe set out to establish how Lis1 induces a persistent microtubule-bound state in dynein. We obtained the 3D structure of S. cerevisiae dynein bound to Lis1 to determine which elements of the motor Lis1 directly affects. Our structure revealed that Lis1 sterically prevents the linker from reaching its normal post-powerstroke locations on the ATP hydrolyzing ring that are involved in its conformational cycle. Structure-based mutagenesis also allowed us to identify residues in Lis1 responsible for binding to dynein. Single molecule analysis of a dynein motor with a shortened linker that can physically bypass Lis1 indicated that removing the steric block renders dynein insensitive to Lis1. Our combined data show that Lis1 directly blocks dynein's mechanochemical cycle, inducing a persistent microtubule-bound state, by acting on its linker domain.\n\n## Results\n\n### Structure of the dynein\u2013Lis1 complex\n\nIn order to visualize the spatial relationship between Lis1 and dynein's multiple structural elements and to better understand the mechanism by which Lis1 regulates dynein, we used cryo-negative stain (cryo-NS) EM and single-particle image processing to obtain the 3D structure of the dynein\u2013Lis1 complex (Figure 1C). Cryo-NS combines the structural preservation of vitrification with the high contrast provided by the negative stain (De Carlo and Stark, 2010). We found this increased contrast to be instrumental to our ability to computationally sort the different conformations that co-existed in most of our samples. We also determined a 3D map of dynein alone, as a reference, to establish whether Lis1 alters dynein's structure (Figure 1D). We used a well-characterized monomeric dynein construct (Reck-Peterson et al., 2006) but chose to use dimeric rather than monomeric Lis1 for our reconstructions. We previously showed that while a Lis1 monomer is sufficient to slow down dynein, a much higher concentration of it is required (Huang et al., 2012), presumably due to the high local concentration of the \u03b2-propeller in the context of a Lis1 dimer. Using a Lis1 dimer at much lower concentrations allowed us to minimize the background in our images.\n\nBoth dynein and Lis1 were expressed from S. cerevisiae at their genomic loci (Table 1). We imaged dynein\u2013Lis1 and dynein alone in the absence of nucleotide and obtained structures at resolutions of 21 \u00c5 for the complex (Figure 1C,E, Figure 1\u2014figure supplement 1C and Video 1) and of 15 \u00c5 for dynein alone (Figure 1D,F, Figure 1\u2014figure supplement 1C and Video 2). The dynein alone map accommodates the crystal structures of the dynein motor domain well (Kon et al., 2012; Schmidt et al., 2012) (Figure 1F), with a Fourier Shell Correlation between the EM map and yeast motor domain structure (Schmidt et al., 2012) of 0.143 at a resolution of 18.8 \u00c5.\n\n**Table 1.**\n Yeast strains\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Strain</th>\n      <th rowspan=\"2\">Genotype</th>\n      <th>Figure(s)</th>\n    </tr>\n    <tr>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">RPY753</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-GFP-3xHA-GST-DYN1331kDa-gs-DHA, pac1\u00c4::URA3, ndl1\u00c4::cgLEU2</td>\n      <td>Figure 2, Figure 2\u2014figure supplement 1,2, Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Huang et al., 2012</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY816</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-PAC1, dyn1\u00c4::cgLEU2, ndl1\u00c4::HygroR</td>\n      <td>Figures 1\u20135, Figure 2\u2014figure supplement 1,2, Figure 1\u2014figure supplement 1, Figure 4\u2014figure supplement 1, Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Julie Huang, Harvard Medical School</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY842</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-PAC1-g-1xFLAG-ga-SNAP-KanR, dyn1\u00c4::cgLEU2, ndl1\u00c4::HygroR</td>\n      <td>Figures 3,5, Figure 3\u2014figure supplement 1, Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Huang et al., 2012</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY844</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-GFP-3xHA-DYN1331kDa, pac1\u00c4::HygroR</td>\n      <td>Figures 1,4, Figure 1\u2014figure supplement 1, Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Huang et al., 2012</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1198</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-GFP-3xHA-DYN1331kDa-gs-DHA-KanR, pac1\u00c4::HygroR</td>\n      <td>Figure 5, Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Huang et al., 2012</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1245</td>\n      <td rowspan=\"2\">MATa, ura3-52, lys2-801, leu2-\u00c41, his3-\u00c4200, trp1-\u00c463, SPC110-GFP::TRP1, HXT1-tdTomato::HIS3</td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>Jeff Moore, University of Colorado</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1248</td>\n      <td rowspan=\"2\">MATa, ura3-52, lys2-801, leu2-\u00c41, his3-\u00c4200, trp1-\u00c463, SPC110-GFP::TRP1, HXT1-tdTomato::HIS3, dyn1\u00c4::URA3</td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1302</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-DYN1331kDa, pac1\u00c4::HygroR</td>\n      <td>Figures 1,3</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1400</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-GFP-3xHA-DYN1331kDa-L2441ybbR, pac1\u00c4::HygroR</td>\n      <td>Figure 3, Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1422</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-52, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-GFP-3xHA-DYN1314kDa-gs-DHA, pac1\u00c4::HygroR</td>\n      <td>Figures 4,5, Figure 4\u2014figure supplement 1, Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1436</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-52, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev- DYN1314kDa, pac1\u00c4::HygroR</td>\n      <td>Figure 5</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1439</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-GFP-3xHA-GST-DYN1314 kDa-gs-DHA-KanR, pac1\u00c4:URA3, ndl1\u00c4::cgLEU2</td>\n      <td>Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1509</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-DYN1331kDa-gs-DHA-KanR, pac1\u00c4::HygroR</td>\n      <td>Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1510</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-DYN1314kDa-gs-DHA-KanR, pac1\u00c4::HygroR</td>\n      <td>Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1523</td>\n      <td rowspan=\"2\">MATa, ura3-52, lys2-801, leu2-\u00c41, his3-\u00c4200, trp1-\u00c43, SPC110-GFP::TRP1, HXT1-tdTomato::HIS3, pac1\u00c4::URA3</td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1524</td>\n      <td rowspan=\"2\">MATa, ura3-52, lys2-801, leu2-\u00c41, his3-\u00c4200, trp1-\u00c463, SPC110-GFP::TRP1, HXT1-tdTomato::HIS3, PAC1R378A</td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1525</td>\n      <td rowspan=\"2\">MATa, ura3-52, lys2-801, leu2-\u00c41, his3-\u00c4200, trp1-\u00c463, SPC110-GFP::TRP1, HXT1-tdTomato::HIS3, PAC1R275A,R301A,R378A,W419A,K437A</td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1543</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-PAC1R275A, dyn1\u00c4::cgLEU2, ndl1\u00c4::HygroR</td>\n      <td>Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1544</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-PAC1R378A, dyn1\u00c4::cgLEU2, ndl1\u00c4::HygroR</td>\n      <td>Figure 2, Figure 2\u2014figure supplement 1,2</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1545</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-PAC1W419A, dyn1\u00c4::cgLEU2, ndl1\u00c4::HygroR</td>\n      <td>Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1546</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-PAC1K437A, dyn1\u00c4::cgLEU2, ndl1\u00c4::HygroR</td>\n      <td>Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1547</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-PAC1 R275A,R301A,R378A,W419A,K437A, dyn1\u00c4::cgLEU2, ndl1\u00c4::HygroR</td>\n      <td>Figure 2, Figure 2\u2014figure supplement 1,2</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1548</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-PAC1R301A, dyn1\u00c4::cgLEU2, ndl1\u00c4::HygroR</td>\n      <td>Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1553</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-GFP-3xHA-DYN1331kDaE1849Q, pac1\u00c4::HygroR</td>\n      <td>Figure 4, Figure 4\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1554</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-GFP-3xHA-DYN1331kDaE2819Q, pac1\u00c4::HygroR</td>\n      <td>Figure 4, Figure 4\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1555</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-52, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-GFP-3xHA-DYN1314kDaK3438E,R3445E,F3446D-gs-DHA, pac1\u00c4::HygroR</td>\n      <td>Figure 4\u2014figure supplement 1, Figure 5\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1557</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PAC11-13xMYC-TRP1, PGAL1-ZZ-Tev-GFP-3xHA-DYN1331kDaK3438E,R3445E,F3446D-gs-DHA-KanR, pac1\u00c4::HygroR</td>\n      <td>Figure 4, Figure 4\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">RPY1623</td>\n      <td rowspan=\"2\">MATa, his3-11,15, ura3-1, leu2-3,112, ade2-1, trp1-1, pep4\u00c4::HIS5, prb1\u00c4, PGAL1-ZZ-Tev-GFP-3xHA-GST- DYN1331kDaR2857A,N2858A,K2859A,R2861A,S2862A-gs-DHA, pac1\u00c4::URA3, ndl1\u00c4::cgLEU2</td>\n      <td>Figure 1\u2014figure supplement 2</td>\n    </tr>\n    <tr>\n      <td>This work</td>\n    </tr>\n  </tbody>\n</table>\n\n_DYN1, PAC11, PAC1, and NDL1 encode the dynein heavy chain, dynein intermediate chain, Lis1 and Nudel orthologs, respectively. DHA, SNAP, and ybbR refer to the HaloTag (Promega), SNAP-tag (NEB), and ybbR tag (Yin et al., 2005), respectively. TEV indicates a Tev protease cleavage site. PGAL1 denotes the galactose promoter, which was used for inducing strong expression of Lis1 and dynein motor domain constructs. Genes encoding proteases Pep4 and Prb1 were deleted as noted. Amino acid spacers are indicated by g (glycine), ga (glycine-alanine), and gs (glycine-serine)._\n\n![Video 1.](https://cdn.elifesciences.org/articles/03372/elife-03372-media1.mov.jpg)\n\n**Video 1.:** The movie shows the 3D reconstruction of dynein in complex with Lis1 with 360\u00b0 rotation about the Y-axis. After this rotation, the EM density is made transparent to display the docked dynein crystal structure model and Lis1 homology model and is again rotated by 360\u00b0 about the Y-axis.\n\n![Video 2.](https://cdn.elifesciences.org/articles/03372/elife-03372-media2.mov.jpg)\n\n**Video 2.:** The movie shows the 3D reconstruction of dynein alone with 360\u00b0 rotation about the Y-axis. After this rotation, the EM density is made transparent to display the docked dynein crystal structure model and is again rotated by 360\u00b0 about the Y-axis.\n\nThe dynein\u2013Lis1 map shows two major differences relative to the dynein alone reconstruction. First, a prominent donut-shaped density is resolved in contact with the dynein ring, adjacent to the stalk (Figure 1C, brown arrowhead). This extra density matches the dimensions of a \u03b2-propeller, including the hole at its center (Figure 1E,G,H). We thus conclude that the density corresponds to Lis1. The second, and striking difference between the two maps is in dynein itself: Lis1 binds on the same face of the ring where dynein's linker domain is located and the linker is displaced by \u223c44 \u00c5 in the dynein\u2013Lis1 map relative to the dynein alone reconstruction (Figure 1C\u2013F).\n\n### One dynein ring binds one Lis1 \u03b2-propeller\n\nOur previous 2D image analysis of the dynein\u2013Lis1 complex did not allow us to determine whether their interaction involved one or both of Lis1's \u03b2-propellers or whether Lis1's N-terminal LisH dimerization domain was part of the interaction as well. The extra density in the dynein\u2013Lis1 3D map fits well a single homology model of the S. cerevisiae Lis1 \u03b2-propeller built from the crystal structure of the mouse protein (Tarricone et al., 2004) (Figure 1E,G,H). Because our map resolved the hole at the center of the propeller, the homology model could be unambiguously docked within the density in terms of its translation (Figure 1G).\n\nIn Lis1, the \u03b2-propeller is connected to the N-terminal LisH dimerization domain by a loop, predicted to be flexible, and a coiled coil (Kim et al., 2004; Tarricone et al., 2004). Consequently, the rest of Lis1 would be expected to adopt a wide range of positions relative to the dynein-bound propeller domain. In agreement with this, we did not resolve density beyond that of the single \u03b2-propeller in our dynein\u2013Lis map. 2D image analysis of dynein\u2013Lis1 complexes with either monomeric or dimeric Lis1 showed the same density and location for Lis1 (Figure 1\u2014figure supplement 1D,E), further supporting a stoichiometry of one Lis1 propeller to one dynein motor domain.\n\n### Dissection of the dynein\u2013Lis1 interface\n\nOur structure of the dynein\u2013Lis1 complex shows that the Lis1 \u03b2-propeller contacts dynein primarily at a surface-exposed helix at the junction of AAA3 and AAA4 (Figure 2A and Video 3), explaining why mutagenesis of four conserved, charged residues (KDEE) on this helix virtually abolished Lis1 binding and dynein regulation (Huang et al., 2012). Since the resolution of the reconstruction does not allow us to determine unambiguously the rotational orientation of the Lis1 homology model within the corresponding density, we used mutagenesis to probe the dynein\u2013Lis1 interface and further constrain our model of the complex.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig2-v1.jpg)\n\n**Figure 2.:** (A) The Lis1 \u03b2-propeller engages dynein primarily at a surface helix connecting AAA3 and AAA4 (yellow arrowhead, see Video 3). Inset: a zoomed out view. (B) (Left) View along the axis highlighted in (A) by the eye/arrow; (right) rotated view. Except for the helix (yellow), the dynein density was removed for clarity. Five conserved residues on Lis1 that were mutated to alanine, either in combination (Lis15A) or individually, are labeled and shown in atomic representation. Also displayed are residues (KDEE) in dynein known to be involved in the interaction with Lis1 (Huang et al., 2012). Basic and acidic residues are labeled in blue and red, respectively. (C) No co-migration of dynein and Lis1 was detected by size-exclusion chromatography with the Lis15A and Lis1R378A mutants. Traces show elution profiles of GST-dynein331kDa (\u2018dynein\u2019) with wild-type Lis1 (black), Lis15A (purple) and Lis1R378A (green). SDS-PAGE for collected fractions are shown below. (D) Kymographs of in vitro motility experiments with TMR-labeled GST-dynein331kDa alone or in the presence of 200 nM wild-type or mutant Lis1. Horizontal scale bar = 2 \u03bcm, vertical = 20 s, N = 274\u2013542. (E) In vivo spindle oscillation assays comparing S. cerevisiae strains carrying either wild-type or mutant Lis1 or full deletions of dynein or Lis1. Inset is a Z-projection of a dividing cell with markers for the membrane (purple) and spindle pole bodies (SPBs) (cyan). BN = bud neck. Bud neck crossings by the SPBs were counted over 20 min. WT N = 53, Dynein\u0394 N = 32, Lis1\u0394 N = 55, Lis1R378A N = 58, Lis15A N = 47. For each strain the mean and SE are shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sequence identity (100%, purple; 0%, white) mapped onto the Lis1 homology model. The alignment was carried out with the following species: M. musculus, H. sapiens, S. cerevisiae, A. nidulans, D. discoideum, D. melanogaster, X. laevis, C. elegans, and D. rerio using Muscle (Edgar, 2004). (B) The Lis1 homology model was docked into the dynein\u2013Lis1 map in two possible orientations, with either the top (middle panel) or bottom (right panel) face interacting with dynein. The rotations relating the two orientations are indicated. A cross-correlation coefficient calculated for each fit is shown below the structures. These coefficients were calculated between the Lis1 EM density and the homology model filtered to the same resolution (21 \u00c5) (as implemented in UCSF Chimera [Pettersen et al., 2004]). (C) Size-exclusion chromatography traces for wild-type and Lis1 mutants. (D) SDS-PAGE of size-exclusion chromatography fractions for GST-dynein331kDa (shortened to \u2018dynein\u2019 in the figure) mixed with wild-type of mutant Lis1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Histogram showing the velocity distribution of single TMR-labeled GST-dynein331kDa molecules in the absence of Lis1 (black) and with 200 nM wild-type Lis1 (light gray), Lis1R378A (medium gray) and Lis15A (dark gray). Velocity distributions were unimodal and could be well fit by a single Gaussian (R2 values between 0.8221 and 0.9937).\n\n![Video 3.](https://cdn.elifesciences.org/articles/03372/elife-03372-media3.mov.jpg)\n\n**Video 3.:** The movie shows the 3D reconstruction of dynein\u2013Lis1, with the crystal structure of the dynein motor domain and the Lis1 homology model docked in. After a few frames, the EM density disappears to show only the atomic structures and the view changes to show the interaction between dynein and Lis1 in closer detail, finishing with an open-book view of Lis1. The conserved residues that were mutated in Lis1 are annotated as well as the conserved residues in the AAA4 helix in dynein that have been shown to be necessary for Lis1 binding. Note: the rotational fit of the Lis1 propeller within the Lis1 EM density is uncertain at the current resolution of the dynein\u2013Lis1 map.\n\nWithin Lis1, sequence conservation is much greater on one face of the \u03b2-propeller (\u2018top\u2019) compared to the other (Figure 2\u2014figure supplement 1A), suggesting that this top face may interact with dynein. Consistent with this idea, the docked \u03b2-propeller showed a better qualitative fit and a slightly higher cross-correlation coefficient with our density map when the top face is placed at the dynein interface (Figure 2\u2014figure supplement 1B). To test this docking orientation, we mutated highly conserved residues on the top face of the propeller (Figure 2B). Our previous finding that the KDEE residues in dynein are critical for Lis1 binding (Huang et al., 2012) suggested that interactions between Lis1 and dynein have an electrostatic component. We therefore targeted four positively charged residues on the top propeller face, as well as a surface tryptophan, all of which are conserved (Figure 2B). We mutated these residues to alanine, both singly and in combination.\n\nWe first used size-exclusion chromatography to test the ability of the Lis1 mutants to interact with a functional dimerized dynein construct (GST-dynein331kDa) (Reck-Peterson et al., 2006). When all five residues are mutated to alanine (Lis15A), no binding could be detected by size-exclusion chromatography (Figure 2C and Table 2). We also did not detect an interaction with two of the single point mutants, Lis1R378A and Lis1W419A (Figure 2C and Figure 2\u2014figure supplement 1D). The remaining single point mutants showed decreased but detectable binding to dynein (Table 2 and Figure 2\u2014figure supplement 1D). Thus, we conclude that highly conserved amino acids on the top face of Lis1's \u03b2-propeller are critical for dynein binding, in support of our structural model for the dynein\u2013Lis1 complex (Figure 2A).\n\n**Table 2.**\n Dynein:Lis1 ratios in complexes purified by size-exclusion chromatography\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>GST-dynein331kDa</th>\n      <th>Lis1</th>\n      <th>Lis1 (normalized to WT ratio)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT Lis1</td>\n      <td>0.82 \u00b1 0.01</td>\n      <td>0.18 \u00b1 0.01</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>Lis1R275A</td>\n      <td>0.85 \u00b1 0.01</td>\n      <td>0.15 \u00b1 0.01</td>\n      <td>0.80</td>\n    </tr>\n    <tr>\n      <td>Lis1R301A</td>\n      <td>0.88 \u00b1 0.01</td>\n      <td>0.12 \u00b1 0.01</td>\n      <td>0.62</td>\n    </tr>\n    <tr>\n      <td>Lis1R378A</td>\n      <td>1.00 \u00b1 0.00</td>\n      <td>0.00 \u00b1 0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>Lis1W419A</td>\n      <td>1.00 \u00b1 0.00</td>\n      <td>0.00 \u00b1 0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>Lis1K437A</td>\n      <td>0.85 \u00b1 0.01</td>\n      <td>0.15 \u00b1 0.01</td>\n      <td>0.80</td>\n    </tr>\n    <tr>\n      <td>Lis15A</td>\n      <td>1.00 \u00b1 0.00</td>\n      <td>0.00 \u00b1 0.00</td>\n      <td>0.00</td>\n    </tr>\n  </tbody>\n</table>\n\n_In relation to Figure 2 and Figure 2\u2014figure supplement 1. Fractions were run on SDS-PAGE, stained with SYPRO red, and the bands corresponding to GST-dynein331kDa and wild-type/mutant Lis1 were quantified using ImageJ. The quantification was done using three adjacent lanes corresponding to the peak from size-exclusion. Values are averages of the three lanes \u00b1 SD. The ratio for each mutant normalized against that of wild-type Lis1 is also shown._\n\nWe next examined if the binding-deficient Lis1 mutants Lis15A and Lis1R378A were able to regulate dynein in vitro. Wild-type Lis1 decreases dynein velocity in vitro in a concentration-dependent manner (Huang et al., 2012). These assays, where the motion of single, fluorescently labeled dynein molecules along microtubules is monitored over time, are more sensitive than size-exclusion chromatography for detecting dynein\u2013Lis1 interactions. Therefore, we expected that some of the Lis1 mutants that did not co-migrate with dynein might still exhibit weak but measurable regulation of the motor. The Lis15A mutant showed no reduction in dynein velocity, consistent with an inability to bind dynein (Figure 2D and Figure 2\u2014figure supplement 2). The Lis1R378A mutant, on the other hand, showed a slight reduction in dynein velocity compared to dynein alone, suggesting that its binding to the motor is compromised (Figure 2D and Figure 2\u2014figure supplement 2). Thus, the effect of the Lis1 mutations on dynein binding correlates with the ability of the Lis1 mutants to regulate dynein at the single-molecule level.\n\nLastly, we tested our model for the dynein\u2013Lis1 complex by measuring the effect of disrupting the dynein\u2013Lis1 interface in vivo. In yeast, spindle pole bodies (SPB) span the nuclear envelope and coordinate microtubule minus ends that emanate from its nuclear and cytoplasmic faces (Jaspersen and Winey, 2004). Lis1 assists in concentrating dynein at the plus ends of cytoplasmic microtubules, from where dynein is offloaded to the cell cortex (Lee et al., 2003; Sheeman et al., 2003; Roberts et al., 2014). Cortically anchored dynein exerts a pulling force that results in displacements of the entire mitotic spindle (Moore et al., 2009), giving rise to a brief series of oscillations across the bud neck. Deletion of dynein eliminates these oscillations (Yeh et al., 1995). We quantified the effect of the Lis15A and Lis1R378A mutants on spindle movement in cells treated with hydroxyurea, which prolongs the period of oscillations, by tracking fluorescently labeled SPBs over the course of 20 min. We found that disruption of the dynein\u2013Lis1 interface resulted in a decrease in the number of bud neck crossings to a level similar to that caused by the deletion of Lis1 (Figure 2E). These results indicate that the dynein\u2013Lis1 interface identified in our structural model is crucial for dynein's biological function.\n\n### Lis1 sterically blocks the position adopted by the linker under ADP and no nucleotide conditions but does not prevent it from reaching the pre-powerstroke position at AAA2\n\nThe end of the linker domain is displaced \u223c44 \u00c5 in the dynein\u2013Lis1 structure relative to the dynein alone map, mainly along the plane of the ring (Figure 1C,D). The structure suggests that this displacement may be a direct result of Lis1's binding to dynein: the linker position in the dynein alone structure is sterically incompatible with the presence of Lis1 (Figure 1D). This is consistent with a model where Lis1 regulates dynein motility through a steric mechanism, by physically blocking the linker's normal position in the no nucleotide state.\n\nWe next sought to test if Lis1 sterically blocks the linker in other nucleotide states. As the main mechanical element of dynein, the linker is thought to adopt at least two additional conformations during the ATPase cycle. In the presence of ATP (or ATP plus Vi, which leads to the formation of the transition state analog ADP.Vi), the linker is displaced across the ring to a position near AAA2 (Kon et al., 2005; Roberts et al., 2009, 2012) (the \u2018pre-powerstroke\u2019 position). In the presence of ADP the linker lies over AAA4 in the crystal structure of the Dictyostelium discoideum dynein (Kon et al., 2012), a \u2018post-powerstroke\u2019 position slightly different from that seen in the S. cerevisiae dynein crystal structure in the absence of nucleotide, where the linker is docked onto AAA5 (Schmidt et al., 2012). However, since dynein from the same species had not been visualized in both the no nucleotide and ADP states, and because different constructs were used in the studies cited above, it was uncertain whether the AAA4 and AAA5 linker positions corresponded to distinct mechanochemical states or were due to differences between dynein species and/or constructs.\n\nTo address this, we first obtained the structure of S. cerevisiae dynein alone in the presence of ADP. Conformational sorting revealed that the linker adopts two positions in this condition (Figure 3A). One is over AAA4, coinciding with that observed in the D. discoideum crystal structure. The other is the AAA5-docked position seen in S. cerevisiae dynein with no nucleotide. The AAA4 position was seen only in the presence of ADP and was not detectable in no nucleotide conditions. These results suggest that the linker docks at AAA5 in the absence of nucleotide but can coexist in the AAA4- and AAA5-interacting states in the presence of ADP. Importantly, both the AAA4 linker position in the ADP state and the AAA5 position in the no nucleotide state are sterically incompatible with the presence of Lis1 (Figure 3B). Thus, we conclude that binding of Lis1 to the dynein ring results in a displaced linker, away from its normal docking sites under both no nucleotide and ADP conditions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig3-v1.jpg)\n\n**Figure 3.:** (A) Cryo-NS maps of S. cerevisiae dynein in 100 \u03bcM ADP displaying the linker next to either AAA5 (left) or AAA4 (right). The S. cerevisiae linker domain (lacking nucleotide at AAA1, PDB ID: 4AKG [Schmidt et al., 2012]) and the D. discoideum linker domain (with ADP at AAA1, PDB ID: 3VKG [Kon et al., 2012]) are displayed in purple ribbon representation and have been docked into the linker-AAA5 and linker-AAA4 maps, respectively. To enable unambiguous comparison of linker positions between the EM density and crystal structure, we aligned each EM map to the corresponding dynein motor domain crystal structure after computationally removing the linker. (B) The dynein maps in no nucleotide (blue) and ADP (purple) conditions (the latter with the linker at the AAA4 location) are overlaid to compare linker positions. The location of Lis1 in the dynein\u2013Lis1 map is shown as a transparent brown density. Both linker positions are sterically incompatible with the presence of Lis1. Note: since the ADP AAA5 linker position is the same as that seen under no nucleotide conditions, we only show the ADP map with the linker at AAA4. (C) Schematic representation of the dynein FRET construct used to test dynein's linker swing in the presence of Lis1. eGFP (green sphere\u2013donor) was fused to the N-terminus of the linker domain, and TMR (red sphere\u2013acceptor) was inserted into the AAA2 domain in the ring. A pre-powerstroke linker position, where the linker moves close to AAA2 in ATP plus vanadate (Vi) conditions, would display an increased FRET efficiency between the two fluorophores (bottom) relative to the no nucleotide state, where the linker is docked at AAA5 (top). (D) FRET efficiency between the eGFP and TMR fluorophores in the absence or presence of 200 \u03bcM ATP + Vi and 840 nM Lis1, ***p < 0.001. The order of addition for the reactions containing ATP + Vi and Lis1 is indicated by arrows. Averages of three experiments \u00b1 SD are shown. (E) Cryo-NS reconstruction of dynein\u2013Lis1 in ATP + Vi conditions with the crystal structure of the motor domain docked in (PDB ID: 4AKG [Schmidt et al., 2012]). The Lis1 density is indicated. (F) At lower contour levels, the N-terminal portion of the linker can be resolved (purple arrow).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Diagram of a microtubule-gliding assay. Monomeric GFP-dynein molecules are immobilized on the coverslip via anti-GFP antibodies (Y shape). Dynein-driven gliding of fluorescently labeled (purple asterisks) microtubules is visualized using TIRF microscopy. (B) A dynein FRET construct with CoA-TMR inserted into its AAA2 domain (GFP-dyneinFRET/A2) has a microtubule gliding activity similar to that of a control construct lacking it (GFP-dynein331kDa). (C) Fitted FRET emission spectra for dynein in different nucleotide conditions (no nucleotide or 200 \u03bcM ATP + Vi) and with 0 nM or 840 nM Lis1. Arrows indicate the order of addition for the last two plots. Emission spectra for eGFP and TMR used for the fit are shown as green and red traces, respectively.\n\nWe then used two approaches to determine if Lis1 also influences the position of the linker at its pre-powerstroke position, near AAA2. First, we designed a monomeric dynein construct to use fluorescence resonance energy transfer (FRET) to measure linker movement to AAA2. We based our design, which used S. cerevisiae dynein, on a linker sensor developed for D. discoideum dynein (Kon et al., 2005). In our construct, we fused an eGFP donor to the N-terminus of the linker and coupled a tetramethylrhodamine (TMR) acceptor to AAA2 via a small acetyl-CoA-binding tag (ybbR [Yin et al., 2005]) (Figure 3C). This dynein construct (GFP-dyneinFRET/A2) slides microtubules robustly, with gliding rates \u223c90% of wild-type dynein (GFP-dynein331kDa) (Figure 3\u2014figure supplement 1A,B), showing that the tags are compatible with motor function. Under no nucleotide conditions, and in the absence of Lis1, this construct showed a low FRET efficiency (\u223c2%), as expected when the linker is docked at AAA5 (post-powerstroke position) and the FRET donor and acceptor are far apart (Figure 3D). In the presence of ATP and vanadate (Vi), which trap dynein as an ADP.Vi-bound complex after hydrolysis, FRET increased to \u223c26% (Figure 3D). Under these conditions, the linker is biased towards the pre-powerstroke position at AAA2 and the fluorophores lie closer together. When Lis1 was added to ADP.Vi\u2013dynein, there was no significant change in the FRET efficiency relative to ADP.Vi\u2013dynein alone (Figure 3D). When dynein was incubated with Lis1 before adding ATP and Vi, the FRET efficiency decreased somewhat but remained close to that observed for ADP.Vi\u2013dynein alone (Figure 3D). These results suggest that Lis1 does not affect the linker pre-powerstroke AAA2 position (ATP + Vi added before Lis1) and has only a minor effect on linkers undergoing the AAA5 to AAA2 transition (Lis1 added before ATP + Vi).\n\nAs a second method to determine if Lis1 affects the linker's ability to reach the AAA2 position under ADP.Vi conditions, we determined the EM structure of the ADP.Vi\u2013dynein\u2013Lis1 complex (Lis1 added before ATP + Vi). We could resolve the linker in the expected pre-powerstroke position towards AAA2 and the density for the Lis1 \u03b2-propeller at the AAA3/4 junction (Figure 3E,F). In summary, these results indicate that the presence of Lis1 does not interfere with linker movement towards its pre-powerstroke position at AAA2. In contrast, Lis1 occludes the linker binding sites at its two post-powerstroke positions (AAA4 and AAA5).\n\n### ATP turnover in the presence of Lis1 requires a hydrolysis-competent AAA1 and a functional AAA5 linker-docking site\n\nWe and others have shown that Lis1 reduces dynein's velocity without significantly affecting the motor's overall ATPase rate (Yamada et al., 2008; McKenney et al., 2010; Huang et al., 2012). However, which of dynein's AAA+ modules is responsible for this continued ATP hydrolysis was not previously addressed. To determine this, we measured microtubule-stimulated ATPase rates, with and without Lis1, in different monomeric dynein constructs.\n\nAs expected, dynein monomers continued to hydrolyze ATP in the presence of Lis1 at levels similar to those of dynein alone (Figure 4A). This hydrolysis, however, was virtually abolished, both in the presence and absence of Lis1, in a construct where AAA1, the main site of ATP hydrolysis in dynein (Gibbons et al., 1987), was rendered hydrolysis-deficient with an E to Q mutation in its Walker B motif (Kon et al., 2004) (Figure 4B). This result suggests that an intact ATP hydrolysis site at AAA1 is required for ATPase activity in the presence of Lis1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig4-v1.jpg)\n\n**Figure 4.:** Microtubule-stimulated ATPase activity of dynein monomers carrying (A) wild-type AAA+ modules, (B) a hydrolysis deficient E1849Q mutation in AAA1 (Kon et al., 2004), (C) a hydrolysis deficient E2819Q mutation in AAA4 (Cho et al., 2008), (D) AAA5 mutations (K3438E, R3445E, F3446D) that prevent linker docking (Schmidt et al., 2012). ATPase traces are of dynein alone (light green) or in the presence of 140 nM Lis1 (brown). Measurements were done in triplicate (A and C) or duplicate (B and D) from one preparation. Diagrams of the dynein constructs used to generate the plots are shown next to them. See Table 3 for fit equation and rate quantifications.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D) SDS-PAGE of fractions eluted from size-exclusion chromatography runs of Lis1 mixed with each of the dynein constructs used in the ATPase assays. Lis1 co-elutes with all of the constructs.\n\n**Table 3.**\n ATPase assay rate measurements\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Km(MT)(\u00ecM)</th>\n      <th>kbasal(Motor domain\u22121.s\u22121)</th>\n      <th>kcat(Motor domain\u22121.s\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Full-length linker</td>\n      <td>1.06 \u00b1 0.16</td>\n      <td>3.51 \u00b1 0.31</td>\n      <td>16.75 \u00b1 0.49</td>\n    </tr>\n    <tr>\n      <td>+Lis1</td>\n      <td>1.09 \u00b1 0.20</td>\n      <td>4.36 \u00b1 0.30</td>\n      <td>15.06 \u00b1 0.49</td>\n    </tr>\n    <tr>\n      <td>Short linker</td>\n      <td>0.92 \u00b1 0.10</td>\n      <td>4.45 \u00b1 0.22</td>\n      <td>16.98 \u00b1 0.32</td>\n    </tr>\n    <tr>\n      <td>+Lis1</td>\n      <td>2.05 \u00b1 0.44</td>\n      <td>7.14 \u00b1 0.21</td>\n      <td>16.12 \u00b1 0.61</td>\n    </tr>\n    <tr>\n      <td>Full-length linker, AAA4 ATPase mutant (E2819Q)</td>\n      <td>1.55 \u00b1 0.14</td>\n      <td>4.53 \u00b1 0.17</td>\n      <td>18.80 \u00b1 0.38</td>\n    </tr>\n    <tr>\n      <td>+Lis1</td>\n      <td>1.10 \u00b1 0.15</td>\n      <td>4.60 \u00b1 0.19</td>\n      <td>13.93 \u00b1 0.31</td>\n    </tr>\n  </tbody>\n</table>\n\n_Data were fit to the following equation: kobs = (kcat \u2212 kbasal) \u2212 [MT]/(Km(MT) + [MT]) + kbasal. Km(MT) is the microtubule concentration that gives half-maximal activation. Values are the averages of triplicate readings \u00b1 SE of the fit._\n\nGiven that Lis1 binds at AAA4, one of the hydrolysis-competent AAA+ modules in dynein, it was possible that Lis1 might be stimulating ATP hydrolysis at that site, with AAA1 playing only an indirect role. However, dynein carrying an E to Q mutation in the Walker B motif of AAA4 (Cho et al., 2008) showed a near wild-type ATPase rate with or without Lis1 (Figure 4C). Therefore, a hydrolysis-competent AAA4 is not required for the ATPase activity observed in the presence of Lis1.\n\nMutations in AAA5 (an AAA+ module that cannot bind ATP) that prevent linker docking have been shown to severely reduce dynein's ATPase activity (Schmidt et al., 2012). We wondered whether Lis1 binding might rescue this mutation and restore ATPase activity to dynein. This was not the case; dynein constructs carrying the AAA5 mutation did not hydrolyze ATP even in the presence of Lis1 (Figure 4D).\n\nTaken together, these results indicate that sustained ATP hydrolysis in a Lis1-regulated dynein requires a hydrolysis-competent AAA1 and a functional linker-docking site at AAA5.\n\n### Removing Lis1's steric block by shortening dynein's linker makes the motor Lis1-insensitive\n\nThe experiments discussed above showed that Lis1 does not regulate dynein by affecting the linker's ability to reach its pre-powerstroke position at AAA2. Our dynein\u2013Lis1 structure shows that Lis1, however, does affect post-powerstroke linker positions as Lis1 and the linker are sterically incompatible in no nucleotide and ADP conditions (Figure 1D,E, Figure 3B). We wondered whether motility regulation was a result of this steric blocking by Lis1. Specifically, we wanted to test the hypothesis that steric blocking of the linker is necessary for inducing dynein's Lis1-dependent state of persistent microtubule attachment. To test this hypothesis, we used a dynein construct with a truncated linker that is long enough to form a functional motor but is too short to be sterically blocked by Lis1. This construct is generated by deleting 145 amino acids at the N-terminus of the dynein motor (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig5-v1.jpg)\n\n**Figure 5.:** (A) A short linker construct was designed by docking the crystal structure of the D. discoideum linker (purple ribbon) (PDB ID: 3VKG [Kon et al., 2012]) into our EM map of dynein alone and overlaying the position of Lis1 (brown mesh). Truncating the linker at residue 1365 (dashed line) yields a linker that is functional (see Figure 5\u2014figure supplement 1) but that can no longer contact Lis1. (B) Cryo-NS reconstruction of the short linker dynein\u2013Lis1 complex; the linker assumes the same conformation with Lis1 bound as in the absence of Lis1. (C) Diagram of the single-molecule microtubule release assay we used to test Lis1 regulation of dynein. Release from microtubules of TMR-labeled (red asterisk) dynein monomers on addition of ATP is monitored by TIRF microscopy. (D) Diagrams of predicted outcomes. Dynein's linker domain in purple, microtubule in gray, Lis1 in brown. (i) Dynein monomers release from microtubules in ATP conditions in the absence of Lis1. (ii) Our model proposes that Lis1 sterically blocks a full-length linker from assuming the normal conformation on dynein's ring, keeping dynein bound to the microtubule. (iii) In the absence of Lis1, shortening the linker would have no effect on dynein's mechanochemical cycle. (iv) Our model predicts that a shortened linker that can bypass the Lis1 steric block should render dynein insensitive to Lis1. (E) Kymographs of TMR-labeled full-length (left) or short linker (right) dynein molecules. After pre-binding to microtubules, release of dynein molecules is monitored after addition of 5 mM ATP, with and without 300 nM Lis1. Kymographs correspond to the dynein constructs shown in (D). Scale bar = 5 s. (F) Quantification of the kymographs in (D), showing the duration of microtubule attachment after addition of ATP, in the absence (gray) or presence (brown) of Lis1. Data were binned into 1 s intervals and the histograms show alternating no Lis1 and +Lis1 bars. Rare attachments longer than 10 s were excluded from the analysis and plot, N = 179\u2013183.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Single-molecule motility assays. Kymographs of GST-dimerized full-length and short linker dyneins. Horizontal scale bar = 2 \u03bcm, vertical = 30 s. (B) Velocity and run length for short linker and full-length linker dyneins. Similar values are seen for the two constructs, N = 265\u2013333. (C) SDS-PAGE of elution fractions from size-exclusion chromatography of monomeric short linker dynein mixed with Lis1. Lis1 co-migrates with short linker dynein. (D) Microtubule-stimulated ATPase activity of short linker dynein with either wild-type AAA+ modules (left) or with mutations (K3438E, R3445E, F3446D) that prevent linker docking at AAA5 (Schmidt et al., 2012) (right). ATPase traces are of dynein alone (light green) or in the presence of 140 nM Lis1 (brown). Measurements were done in triplicate (wild type) or duplicate (AAA5 mutant) from one preparation. Diagrams of the dynein constructs used to generate the plots are shown next to them. (E) Addition of buffer lacking ATP to flow chambers containing TMR-labeled full-length or short linker dynein does not cause microtubule detachment. Scale bar = 5 s. (F) The short linker construct used in Figure 5 contains an N-terminal GFP connected to the short linker via 3 HA tags. We expected the GFP to be flexible in its location relative to dynein based on previous EM studies (Roberts et al., 2009) and the fact that it is averaged out in our 3D reconstruction of dynein (Figure 1D). However, to rule out interference from GFP, we also carried out the microtubule release assays with a GFP-less construct. We observed the same results: addition of ATP to GFP-less dyneins in the presence of 300 nM Lis1 caused short-linker dyneins to release from the microtubule while full-length dyneins remain attached. Scale bar = 5 s. (G) Quantification of the kymographs in (F), showing the duration of microtubule attachment of full-length (light brown) or short linker (dark brown) dynein molecules after addition of ATP, in the presence of 300 nM Lis1. Data were binned into 1 s intervals and the histograms show alternating full-length and short linker dynein bars. Rare attachments longer than 10 s were excluded from the analysis and plot, N = 141\u2013197.\n\nWe first verified this construct functionally and structurally. A dimeric dynein motor containing this shortened linker shows robust motility properties in in vitro motility assays (Figure 5\u2014figure supplement 1A,B) (Reck-Peterson et al., 2006). We also tested whether shortening the linker affects the microtubule-stimulated ATPase activity of dynein monomers. Monomers with a short linker showed ATPase levels comparable to those seen with a full-length linker, both in the context of a wild-type set of AAA+ modules and in the linker docking-deficient AAA5 mutant (Figure 5\u2014figure supplement 1D). As a monomer, the short linker construct can bind Lis1 as shown both by their co-migration in size-exclusion chromatography (Figure 5\u2014figure supplement 1C) and by our ability to obtain a 3D reconstruction of the short linker dynein\u2013Lis1 complex (Figure 5B). Central to our testing the steric block hypothesis, our 3D structure of the short linker dynein\u2013Lis1 complex shows the same conformation for the linker in the presence of Lis1 as we had observed for the full-length linker in the absence of Lis1 (Figure 1, Figure 5A,B). Therefore, the short linker is functional and able to physically bypass Lis1.\n\nTo directly test whether Lis1 was capable of regulating dynein with a short linker, we used a single-molecule microtubule release assay (Figure 5C). In this study, the duration of single monomeric dynein's attachments to microtubules can be measured by kymograph analysis in a flow chamber by TIRF microscopy (Huang et al., 2012). Addition of ATP triggers a low-affinity state in dynein (Kon et al., 2005; Imamula et al., 2007; Huang et al., 2012) and the dynein monomers release from microtubules, resulting in a loss of fluorescence signal. Microtubule rebinding events are short lived, likely corresponding to single turnovers of ATP. In the presence of a full-length linker, Lis1 converted dynein to a state of persistent microtubule attachment and dynein monomers stayed bound in the presence of ATP for extended periods as previously shown (Figure 5D\u2013F) (Huang et al., 2012). Strikingly, shortening of dynein's linker eliminated Lis1's ability to induce this persistent microtubule-bound state. We quantified the durations of microtubule attachments after the addition of ATP and found the same short-lived attachments seen with dynein in the absence of Lis1 (Figure 5D\u2013F). Thus, Lis1 is not capable of regulating microtubule attachment in the short linker construct. These data support a steric mode of dynein regulation where Lis1 physically blocks the linker.\n\n## Discussion\n\nWe previously described Lis1 as a \u2018clutch\u2019 for dynein, based on its ability to uncouple the cycles of ATP hydrolysis, which take place in the motor domain, from the cycles of microtubule binding and release at the microtubule binding domain (Huang et al., 2012). One of the functional consequences of the dynein\u2013Lis1 interaction is that Lis1 keeps dynein in a persistent microtubule-bound state. In this study, we have determined six 3D EM structures of dynein and dynein\u2013Lis1 in different nucleotide states. By combining these structures with single molecule motility experiments, we have established that Lis1 regulates dynein's microtubule attachment by sterically blocking its linker domain.\n\nTogether, our data suggest the following model of dynein regulation by Lis1 (Figure 6). In the current view of dynein's mechanochemical cycle, the motor domain encounters the microtubule with ADP.Pi bound at AAA1, with the linker in a pre-powerstroke position at AAA2 (Kon et al., 2005; Roberts et al., 2009, 2012). Strong microtubule binding stimulates Pi release, inducing the linker to swing to AAA4 (Kon et al., 2012). Finally, linker docking at AAA5 is thought to promote the release of ADP from AAA1, resetting the mechanochemical cycle (Schmidt et al., 2012). Our data suggest that when Lis1 is present, the linker retains its ability to adopt the pre-powerstroke AAA2 position but is prevented from reaching its normal post-powerstroke positions at AAA4 and AAA5 on dynein's ring (Figure 6). This blocking of the linker by Lis1 is critical for motility regulation; its removal by shortening dynein's linker renders the motor Lis1 insensitive.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03372/elife-03372-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013G) Current view of dynein's mechanochemical cycle. (A) ATP binding to AAA1 induces the low-affinity conformation in dynein's microtubule-binding domain and (B) release from the microtubule. (C) The linker domain changes its position from AAA5 towards AAA2, the \u2018pre-powerstroke\u2019 and ATP is hydrolyzed. (D) Binding of dynein to a new site on the microtubule triggers a change in the microtubule-binding domain to its high affinity conformation (E). (F) Release of Pi results in the \u2018powerstroke\u2019, a movement of the linker back towards AAA5. (G) Docking of the linker at AAA5 is thought to promote nucleotide exchange at AAA1, resetting the motor for a new cycle. (H\u2013J) Model for the Lis1-regulated cycle. Lis1 prevents the linker from completing its normal conformational cycle, keeping dynein in a persistent microtubule-attached state, despite continuing ATP hydrolysis. (H) Binding of Lis1 to dynein blocks the linker from docking onto the ring at AAA5, preventing the conformational changes in the stalk and microtubule binding domain that ultimately result in dynein's release from the microtubule. (I) The linker is still capable of moving to the pre-powerstroke position at AAA2 in the presence of Lis1, and ATP is hydrolyzed. (J) Presumably, by analogy to the dynein alone cycle, Pi release triggers the power-stroke, but Lis1 sterically blocks the linker's normal position on dynein's ring in the ADP state. Our current understanding of Lis1 regulation does not yet explain the mechanism of nucleotide exchange at AAA1.\n\nWhy does Lis1's blocking the linker from adopting its normal post-powerstroke positions prevent dynein's microtubule detachment? One possibility suggested by our structures is that Lis1 disrupts the interaction between the linker and AAA5, preventing normal progression through the mechanochemical cycle. Consistent with this notion, when linker docking at AAA5 is abolished by mutagenesis, dynein displays reduced velocity and prolonged microtubule attachments (Schmidt et al., 2012), reminiscent of Lis1's effects. However, while Lis1 has little effect on dynein's ATPase, AAA5 linker docking mutants display severely reduced ATPase rates, both in the absence (Schmidt et al., 2012) and the presence of Lis1 (Figure 4D, Figure 5\u2014figure supplement 1D). Given these results, it is not clear at this point what the mechanistic basis is for dynein's continuing ATPase in the presence of Lis1. On the one hand, it is possible that the AAA5 mutations may, in addition to preventing linker docking, disrupt dynein's mechanochemical cycle and thus also prevent ATP hydrolysis. A method to reversibly block linker docking at AAA5 (e.g., via a small molecule) would be required to determine if AAA5 docking is truly required for dynein ATPase activity. On the other hand, Lis1 may uncouple ATP hydrolysis from linker docking at AAA5 through an allosteric effect on the ring. In this scenario, the linker\u2013AAA5 interaction, which is blocked by Lis1, would be required for the conformational changes that ultimately shift dynein's microtubule-binding domain to its low-affinity state, but not for dynein's continuing ATPase activity. Higher resolution structures of the dynein\u2013Lis1 complex will be required to establish whether Lis1 has an effect on the structure of dynein's ring.\n\nIt is conceivable that blocking of the normal linker-docking sites by Lis1 might induce a new interaction between the linker and the AAA+ ring. Similarly, Lis1 may interact specifically with the linker itself. Either (or both) of these scenarios could in turn be responsible for preventing microtubule release. However, current evidence does not favor these possibilities. Low sequence conservation in the portion of the linker facing Lis1 argues against a specific Lis1\u2013linker interaction (Figure 1\u2014figure supplement 1I). Likewise, a specific interaction between a Lis1-displaced linker and dynein's ring is not supported by the apparent conformational heterogeneity of the N-terminus of the linker in the presence of Lis1, where 3D sorting is required to resolve linker positions (Figure 1\u2014figure supplement 1F\u2013H). Also mutating five amino acids on AAA4, proximal to the linker's displaced position (the most likely candidates to interact with the displaced linker), had minimal effect on Lis1-mediated motility regulation (Figure 1\u2014figure supplement 2). A direct test of whether specific interactions exist among these different elements will also require a higher resolution structure, where the rotational orientation of the Lis1 homology model within its density in the EM map is unequivocal and specific interactions between the linker and Lis1 as well as the linker and the dynein ring can be distinguished from physical proximity.\n\nIn conclusion, our data show that Lis1, a conserved dynein regulator, directly disrupts dynein's mechanochemical cycle by physically blocking conformations that are required to couple the cycles of ATP hydrolysis taking place in the motor domain from those of track binding and release happening at the microtubule binding domain. This allows Lis1 to keep dynein in a persistent microtubule-bound state. This modulation of dynein's interaction with its microtubule track likely contributes to dynein's ability to carry out the variety of cellular functions it performs in different organisms, given the conservation of the amino acids at the dynein\u2013Lis1 interface. For example, Lis1 is involved in initiation of cargo transport (Lenz et al., 2006; Egan et al., 2012; Moughamian et al., 2013), in transport of high load cargo (McKenney et al., 2010), and in targeting dynein molecules to the cell cortex via the microtubule plus end (Lee et al., 2003; Sheeman et al., 2003; Roberts et al., 2014). The displaced linker observed in the presence of Lis1 in our 3D dynein\u2013Lis1 reconstruction may contribute to this latter task, generating an \u2018unmasked\u2019 tail domain that has been shown necessary for cortical dynein localization (Markus and Lee, 2011). In the case of the mammalian proteins, dynein and Lis1 were previously shown to form a stable complex only in ATP and Vi conditions (McKenney et al., 2010). Our 3D reconstruction of dynein\u2013Lis1 under those conditions suggests that this might be a consequence of the linker's moving to its pre-powerstroke site at AAA2, where the linker and Lis1 are no longer sterically incompatible.\n\nThe work presented here has helped dissect the molecular mechanism by which Lis1 regulates a single dynein motor domain. The next challenge will be to understand the interactions between Lis1 and dynein dimers and of those with other regulatory factors. Future structural studies with full-length dimeric dynein\u2013Lis1\u2013Nudel complexes, free and bound to microtubules, will be required to answer these exciting questions.\n\n## Materials and methods\n\n### Yeast strain construction\n\nThe S. cerevisiae strains used in this study are listed in Table 1. Deletions or modifications of endogenous genomic copies of the dynein heavy chain (DYN1) and Lis1 (PAC1) were done using PCR-based methods as previously described (Longtine et al., 1998), using the URA3/5FOA \u2018pop-in/pop-out\u2019 method (Guthrie and Fink, 1991). Transformations were performed using the standard lithium acetate method (Gietz and Woods, 2002). Point mutants were generated using the PCR stitching method and verified by DNA sequencing.\n\n### Protein expression and purification\n\nCultures of S. cerevisiae for protein purification were grown, harvested, and frozen as described previously (Reck-Peterson et al., 2006). Dynein and Lis1 constructs were purified and labeled as described previously (Reck-Peterson et al., 2006; Huang et al., 2012), except that a modified TEV buffer for Lis1 purification was used; 50 mM Tris\u2013HCl (pH 8.0), 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 5% glycerol, 1 mM DTT, and 1 mM PMSF.\n\n### EM sample preparation\n\nWe chose to use cryo-NS EM, where a carbon support, combined with a heavy metal stain, resulted in highly reproducible grids with high contrast. Prior attempts at getting dynein reproducibly in open holes for standard cryo-EM were unsuccessful. Furthermore, cryo-EM on continuous carbon gave micrographs where individual dynein particles were difficult to see above the noise. The high reproducibility we were able to achieve with cryo-NS allowed us to sample a much greater range of constructs/nucleotide conditions in the same time frame than we would otherwise have been able to do in unstained, unsupported conditions. Most importantly, the improved contrast was instrumental in allowing us to sort the different dynein conformations that were present in most of our data sets. 4 \u03bcl of monomeric dynein (80\u2013120 nM), or monomeric dynein pre-incubated for 10 min with Lis1 dimer at a 1.5-fold excess (120\u2013180 nM), was applied to a glow discharged, continuous carbon coated, C-flat EM grids (Protochips, Raleigh, NC). Dynein samples stated to be prepared in no nucleotide conditions were treated with apyrase (0.14 U/ml) for 15 min prior to grid application to hydrolyze residual ADP left over from the dynein purification procedure. Dynein samples stated to be prepared in ADP and ATP + Vi conditions contained 100 \u03bcM ADP and 500 \u03bcM Mg-ATP/NaVO4, respectively. For the latter, nucleotide was added after the dynein\u2013Lis1 pre-incubation step. Once applied to the grid, the samples were stained with 2% uranyl formate by floating the grid sample face down on a pool of stain. Samples were then sandwiched with a thin layer of freshly evaporated carbon, and grids were lightly blotted from the non-sample containing side and plunged into liquid nitrogen. Grids were then stored at liquid nitrogen temperatures.\n\n### EM data collection\n\nSamples were imaged at liquid nitrogen temperatures using a Gatan 626 cryo holder (Gatan, Inc., Pleasanton, CA) on a Tecnai F20 TEM microscope (FEI, Hillsboro, OR), operating at 120 kV, equipped with a US4000 4k \u00d7 4k CCD camera (Gatan). Data were collected either manually or automatically using Leginon (Carragher et al., 2000). Dynein alone samples (no nucleotide [strain RPY844] and ADP conditions [strain RPY844]) and dynein\u2013Lis1 (ATP + Vi conditions [strains RPY1302 and RPY816]) were imaged at 62,000\u00d7 nominal magnification (1.73 \u00c5/pixel). Dynein\u2013Lis1 (no nucleotide [strains RPY1302 and RPY816]) was imaged at 50,000\u00d7 nominal magnification (2.14 \u00c5/pixel). Short linker dynein\u2013Lis1 (no nucleotide [strains RPY1436 and RPY816]) was imaged at 80,000\u00d7 nominal magnification (1.34 \u00c5/pixel). Low-dose conditions during imaging (dose \u223c25 e\u2212/\u00c52) were used for all data sets, and micrographs were collected using a defocus range of \u22120.6 to \u22121.5 \u03bcm.\n\n### EM image pre-processing\n\nFor all data sets, \u223c1,000 particles were initially selected manually in Boxer (EMAN1) (Ludtke et al., 1999) and reference-free 2D classified in IMAGIC (van Heel et al., 1996) to give class averages that were then used as templates for automated particle picking in Appion (Lander et al., 2009). Reference-free 2D classification in IMAGIC was subsequently used on the data sets to remove averages with blurred appearance or incorrect size. CTF determination and correction of image phases were carried out in Appion using Ace2 (NRAMM). Particles were band-pass filtered (high-pass = 250 \u00c5, low-pass = 3 \u00d7 sampling) in Imagic and normalized in Xmipp (Sorzano et al., 2004). For 3D classification and initial 3D refinement particles were binned by two; final 3D refinements were carried out using unbinned data.\n\n### EM image processing\n\n#### Dynein (no nucleotide)\n\nAn initial model was generated using the S. cerevisiae dynein motor domain crystal structure (PDB ID: 4AKG [Schmidt et al., 2012]), low-pass Fourier filtered to 80 \u00c5. Initial 3D refinement was carried out in EMAN2 (Tang et al., 2007). The resulting map was filtered to 40 \u00c5 and used as an initial model for 3D classification in RELION (Scheres, 2012). Five classes were generated. Particles from four of the classes were combined and refined in RELION against the class 5 map, filtered to 40 \u00c5. 3D refinement converged after 18 iterations. The final map contained 31,839 particles (from 38,463 total) and the \u2018gold-standard\u2019 resolution using an FSC cut-off of 0.143 was 14.8 \u00c5. The final map was filtered according to local resolutions (Cardone et al., 2013).\n\n#### Dynein (ADP)\n\nThe linker domain has been shown to have a different position relative to the dynein ring in ADP conditions in D. discoideum dynein compared with that of S. cerevisiae dynein in no nucleotide conditions (Kon et al., 2012; Schmidt et al., 2012). To avoid initial model bias of linker position, the domain was computationally removed from residue 1,620 of PDB file 4AKG (Schmidt et al., 2012). The resulting map was filtered to 50 \u00c5 and used as a starting model for an initial refinement in SPIDER (Frank et al., 1996) to regain linker density at a position derived solely from the data. This map was then filtered to 40 \u00c5 and used as an initial model for 3D classification in RELION. Five classes were generated. Four of the classes showed the linker at the no nucleotide position (position 1) and 1 class at the shifted position seen with D. discoideum dynein in ADP conditions (position 2). The particles in classes corresponding to each conformation were further refined in RELION and the refinements converged after 13 and 10 iterations for linker position 1 and 2 data sets, respectively. The final maps contained 7,630 and 3,983 particles (from 17,256 total) and the \u2018gold-standard\u2019 resolutions using an FSC cut-off of 0.143 were 18.3 and 19.5 \u00c5 for linker position 1 and 2 maps, respectively. The final maps were filtered according to local resolutions (Cardone et al., 2013).\n\n#### Dynein\u2013Lis1 (no nucleotide)\n\nThe same initial model as described for dynein (no nucleotide) above was used to 3D refine an initial data set of dynein\u2013Lis1 (RPY844, RPY816) in EMAN2. This map was then filtered to 60 \u00c5, and EMAN2 was used to refine a larger data set of dynein\u2013Lis1 using a dynein lacking any tags on the end of the linker (RPY1302). The resulting map was filtered to 40 \u00c5 and used for 3D classification in RELION. This process was repeated with different requested class numbers. Linker position was observed to vary across classes (Figure 1\u2014figure supplement 1F\u2013H). In a run with seven generated classes, classes with most density for the linker (class 1 and 6) were combined and refined against the class 1 map filtered to 40 \u00c5 in RELION. Three-dimensional refinement converged after 16 iterations. The final map contained 10,129 particles (from 35,472 total) and the \u2018gold-standard\u2019 resolution using an FSC cut-off of 0.143 was 21.4 \u00c5. The final map was filtered according to local resolutions (Cardone et al., 2013).\n\n#### Short linker dynein\u2013Lis1 (no nucleotide)\n\nThe same initial model as described for dynein (no nucleotide) was filtered to 50 \u00c5 and used for initial 3D classification of the data set in RELION. Five classes were generated. Particles from 1 class were further refined against the class map in RELION. The refinement converged after 14 iteractions and contained 11,818 particles (from 34,805 total). The gold-standard resolution using an FSC cut-off of 0.143 was 15.4 \u00c5. The final map was filtered according to local resolutions (Cardone et al., 2013).\n\n#### Dynein\u2013Lis1 (ATP + Vi)\n\nThe map of dynein\u2013Lis1 (no nucleotide) filtered to 60 \u00c5 was used as a starting model for initial refinement in EMAN2. The resulting map was filtered to 40 \u00c5 and used for 3D classification in RELION. Most classes showed the linker position unresolved, indicative of variability in location as previously observed (Roberts et al., 2009, 2012), but one class resolved the linker near AAA2 when viewed at lower contour levels. The particles in this class were refined against the class map in RELION and refinement converged after 16 iterations. The final map contained 1,072 particles (from 6,600 total), and the \u2018gold-standard\u2019 resolution using an FSC cut-off of 0.143 was 23.1 \u00c5.\n\n### Accession numbers\n\nEM maps have been deposited with the EMDataBank. Accession codes as follows; dynein\u2013Lis1 (no nucleotide conditions) EMDB-6008; dynein alone (no nucleotide conditions) EMDB-6013; dynein alone (ADP conditions) with position 1 and 2 linker domains, EMDB-6015 and EMDB-6014 respectively; dynein\u2013Lis1 (ATP + Vi conditions) EMDB-6016; short linker dynein\u2013Lis1 (no nucleotide conditions) EMDB-6017. For each entry, in addition to the final masked and filtered maps, raw half maps for each reconstruction have been deposited. We also deposited an XML file of the FSC plot between the dynein alone map and the fitted crystal structure of the motor domain (PDB ID: 4AKG [Schmidt et al., 2012]), as a supplementary file to the dynein alone submission (EMDB-6013).\n\n### Size-exclusion chromatography\n\nDynein and Lis1 were tested for complex formation, and Lis1 mutants were tested for structural integrity (Figure 2\u2014figure supplement 1C) by size-exclusion chromatography. 400\u2013800 nM dynein and 475\u2013800 nM Lis1 were loaded separately or after being mixed for 10 min at 4\u00b0C. Samples were fractionated on a Superose 6 PC 3.2/30 column using an \u00c4KTAmicro system (GE Healthcare) that had been equilibrated with degassed gel filtration buffer (50 mM Tris\u2013HCl pH 8.0, 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 1 mM DTT). Fractions (50 \u03bcl or 90 \u03bcl) were analyzed by SDS-PAGE on 4\u201312% Tris-Bis gels (Invitrogen, Grand Island, NY) with SYPRO Red staining (Invitrogen) and imaged using an ImageQuant 300 (BioRad, Hercules, CA) or Typhoon (Amersham, UK) gel imaging system.\n\n### Single-molecule microscopy\n\nSingle-molecule motility assays were performed using flow chambers as previously described (Case et al., 1997). Dynein was labeled with TMR (Promega, Madison, WI), and microtubules contained \u223c10% biotin-tubulin for surface attachment and \u223c10% HyLite488-tubulin (Cytoskeleton Inc., Denver, CO) for visualization. For assays that included Lis1, dynein was incubated with 200 nM Lis1 for 10 min at 4\u00b0C prior to addition to the flow chamber. The imaging buffer consisted of 30 mM HEPES (pH 7.2), 50 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 10% glycerol, 1 mM DTT, 20 mM taxol, 1.25 mg/ml casein, 1 mM Mg-ATP, and an oxygen scavenger system. Images were recorded every 2 s for 5 or 10 min, and dynein velocities and run-lengths were calculated from kymographs generated in ImageJ (National Institutes of Health).\n\nIn vitro motility assays were visualized on either a Zeiss Elyra PS.1 microscope with a 100\u00d7 1.46 N.A. oil immersion TIRF objective (Carl Zeiss GmbH, Germany) with an Andor EM-CCD camera or an Olympus IX-81 TIRF microscope with a 100\u00d7 1.45 N.A. oil immersion TIRF objective (Olympus, Japan) with a Hamamatsu EM-CCD camera. TMR-labeled dynein and HyLite488-microtubules were excited with 561 nm and 488 nm solid state laser lines, respectively. Images were recorded with a 100 ms exposure using Zen Black (Zeiss) or Metamorph software. Microtubule gliding assays and microtubule binding and release assays were performed as described (Huang et al., 2012). Control experiments for the microtubule release assays examined dynein release in buffer lacking ATP (Figure 5\u2014figure supplement 1E), where dynein remained bound to microtubules as expected (Huang et al., 2012) and with dynein lacking N-terminal tags (Figure 5\u2014figure supplement 1F,G), where untagged dynein behaved similar to tagged dynein (Figure 5E,F).\n\n### Spindle oscillation assay\n\nTo track the dynein-dependent movement of spindle pole bodies (SPBs), we used a strain containing a GFP-labeled SPB marker, SPC110, and a tdTomato-labeled cell membrane marker, HXT1 (kindly provided by Jeff Moore, University of Colorado). Mutations were introduced into the PAC1 (Lis1) locus in this strain. For control experiments, strains containing deletions of the dynein heavy chain (DYN1) and PAC1 loci were constructed. All strains were PCR verified, and mutations were additionally verified by DNA sequencing.\n\nFor image analysis, saturated overnight cultures for each strain were diluted to an OD600 of 0.1 in a total volume of 5 ml YPD media. The dilution of cultures was staggered such that the data could be collected for all strains during a single imaging session. Following dilution, each culture was incubated with rotation at 30\u00b0C for 3 hr. Hydroxyurea (HU) was then added to a final concentration of 200 mM, and the culture was incubated for an additional 2 hr with rotation at 30\u00b0C. The cells were collected by centrifugation, the media was discarded, and the cells were resuspended in 250 \u03bcl of fresh YPD + 200 mM HU. The cells were loaded into an Y04C microfluidic yeast plate (CellASIC, EMD-Millipore, Germany) and introduced into the viewing chamber with the ONIX controller (CellASIC). Imaging was performed at the Nikon Imaging Center at Harvard Medical School. All images were collected with a Yokagawa CSU-X1 spinning disk confocal with Borealis modification, on a Nikon Ti inverted microscope equipped with a Plan 60 \u00d7 1.4 N.A. objective and the Perfect Focus System (Nikon Corp., Japan). GFP-labeled SPB and tdTomato-labeled cell membrane fluorescence were excited with the 488 nm and 561 nm lines, respectively, from a LMM-5 solid state laser merge module controlled with an ATOF (Spectral Applied Research Inc., Canada). Images were acquired with a Hamamatsu ORCA-AG CCD controlled with MetaMorph 7.0 software. Images were collected for SPBs as 100 ms exposures, spanning 9 \u00d7 500 nm Z-sections (4.5 \u03bcm total Z stack) every 30 s for a total of 20 min. Cell membranes were imaged as single central Z-sections at the first and last time point. Membrane image pairs were digitally merged to allow for drift analysis; those cells with visible drift were excluded from analysis.\n\n### Image processing and particle tracking\n\nMaximum intensity projections were calculated for Z-series at each time point for GFP-labeled SPBs. At each time point, SPBs were independently detected in the Z-projection using a wavelet detection algorithm (Aguet et al., 2013), and the two spindles were tracked throughout the course of the movie using a nearest neighbor tracking method (unpublished Matlab [Mathworks, Natick, MA] scripts). The location of the bud neck and the mother\u2013daughter orientation were determined using the first tdTomato-labeled cell membrane exposure. The locations of tracked SPBs were used to calculate the number of bud neck crossings.\n\n### FRET\n\nTo generate the dynein FRET construct, eGFP (the FRET donor) was inserted at the dynein N-terminus and the acceptor site was inserted after L2241 in AAA2. We used the ybbR tag (GGGTVLDSLEFIASKLAGGG [Yin et al., 2005]) labeled with TMR-CoA (NEB, Ipswich, MA) as the FRET acceptor. Dynein was incubated with or without Lis1 for one hour on ice, followed by apyrase (6.6 U/ml) or 200 \u03bcM ATP.Vi for 2 min at room temperature (RT). For some experiments, dynein was first incubated with 200 \u03bcM ATP.Vi for 2 min at RT, followed by Lis1 for 1 hr on ice. Assays were performed in 30 mM HEPES (pH 7.2), 50 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 1 mM DTT and the final concentrations of dynein and Lis1 were 84 nM and 840 nM, respectively. The sample was excited with 485 nm (eGFP) light, and the emitted light was detected from 505 nm to 650 nm in a SpectraMax M5 fluorimeter (Molecular Devices, Sunnyvale, CA) at RT. In order to normalize across experiments, the samples were also excited with 535 nm (TMR) light and the emitted light was detected from 555 nm to 700 nm. To analyze the FRET data, we first subtracted the fluorescence background from the buffer alone. We then used the emission spectra of dynein-labeled with eGFP and free TMR dye alone to decompose each channel in the experimental spectra. FRET efficiencies (E) were calculated using the method of Clegg (Clegg, 1995): E = {FaFRET/FaDIR \u2212 \u03b5a(485)/\u03b5a(535)}\u03b5a(535)/\u03b5d(485), where the superscripts \u2018d\u2019 and \u2018a\u2019 refer to the donor (eGFP) and the acceptor (TMR), respectively. FaFRET is the fluorescence intensity of the acceptor excited at 485 nm and FaDIR is the fluorescence intensity of the acceptor excited at 535 nm. \u03b5d(485) \u03b5a(485) and \u03b5a(535) are the molar extinction coefficients at the designated wavelengths. In our experiments \u03b5a(535)/\u03b5d(485) = 37,900 M\u22121 cm\u22121/40,000 M\u22121 cm\u22121 and \u03b5a(485)/\u03b5a(535) = 0.2.\n\n### ATPase assays\n\nDynein constructs used in ATPase assays were tested for complex formation with Lis1 by size-exclusion chromatography (Figure 4\u2014figure supplement 1). ATPase assays were performed using an EnzChek phosphatase kit (Molecular Probes, Thermo Fisher Scientific Inc., Cambridge, MA) as previously described (Reck-Peterson et al., 2006; Cho et al., 2008). The final reaction consisted of 10\u201320 nM dynein (monomeric constructs, see Figure 4 and Figure 5\u2014figure supplement 1D), 0 or 140 nM Lis1, 0\u20137.5 \u03bcM taxol-stabilized microtubules, 2 mM Mg-ATP, 200 mM MESG (2-amino-6-mercapto-7-methyl-purine riboside), 1 U/ml purine nucleoside phosphorylase, and assay buffer (30 mM HEPES (pH 7.2), 50 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 1 mM DTT, and 10 mM taxol). A SpectraMax384 plate reader (Molecular Devices) was used to monitor the coupled reaction at OD360 every 12 s for 10 min. Data were fit according to Nishiura et al. (2004).\n",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "30e629d1-c54e-4423-be8f-6485e8b44cc2",
+      "submission_id": "8c9fd7f5-87af-4bc9-b7b2-71e6fc6d15e6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03372.022](https://doi.org/10.7554/eLife.03372.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cLis1 regulates dynein by sterically blocking its mechanochemical cycle\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and 3 reviewers, one of whom, Gabriel Lander, has agreed to reveal his identity.\n\nThe Senior editor and the three reviewers discussed their comments before we reached this decision, and the Senior editor has assembled the following comments to help you prepare a revised submission.\n\nIn the present work, the authors use electron microscopy to determine the three-dimensional structure of dynein bound to Lis1, enabling unambiguous identification of this regulator's binding site near the stalk of the motor. Although the resolutions of the reconstructions are moderate (in the 15-20\u00c5 range), the resolvable structural details were more than adequate to identify the key interactions that were involved in Lis1 regulation of dynein.\n\nThis group had a breakthrough paper in 2012, determining the Lis1-binding domain on the dynein motor domain, and using elegant single molecule studies to develop a clutch model for Lis1-mediated regulation of dynein motility. This work is a logical follow-up, with 3-D structures that support their previous binding data, and a clever short-linker mutant to test their more refined steric-blocking model.\n\nComparing the structure of the dynein head in the absence and presence of Lis1, the authors noticed that Lis1 binding induces a significant displacement of the dynein linker arm, a critical component of the mechanochemical cycle. Based on this finding, the authors carried out a series of well-designed biochemical and biophysical experiments to probe the mechanical relationship between bound Lis1 and the linker arm. By docking in previously determined atomic coordinates, the resulting pseudo-atomic models served as a framework for the mutagenesis and FRET experiments, which provided insight into the relationship between Lis1, nucleotide state, and the linker arm position. Truncation of the linker arm, single molecule motility experiments, and in vivo assays were performed to confirm the author's model for Lis1 regulation. Ultimately, the authors conclude that Lis1 serves as a molecular barricade, sterically preventing ATP hydrolysis from being converted into the conformational rearrangements that weaken microtubule binding.\n\nSome of the important insights into how Lis1 works that emerge from this work are as follows:\n\n1) That Lis1 occludes to normal position of the dynein linker in the ADP and nucleotide free (APO) conformations of dynein. In the presence of Lis1, the linker is deflected from its normal position. This EM work also provides a nice confirmation that the two conformations observed in yeast(APO) vs Dictyostellium(ADP) crystal structures can both exist in one (yeast) dynein.\n\n2) That the motor can still enter the pre-powerstroke conformation when Lis-1 is bound. This was demonstrated by both an EM structure in the presence of ATP.vanadate and a FRET assay.\n\n3) That the ability of Lis-1 to block release of dynein from microtubules is abolished when the linker is shortened (from the 331kD to 314kD construct). This shows that the N-terminal part of the linker is required for Lis1 function.\n\nThe EM work is expertly done, particularly in exploring the conformational variability that exists within a set of particles. The dynein motor is relatively small for detailed structural analyses by EM, and the authors' ability to distinguish between conformational subtleties in the motor arm is an impressive example of their expertise.\n\nIn general, the consensus among the reviewers is that this work is an important step forward in understanding dynein motor regulation, and provides a direct view of the conformational rearrangements that are necessary for dynein movement along the microtubule surface. The reviewers have, however, raised a number of points that you should address in preparing a revised manuscript.\n\n1) There is some concern that much of this work follows directly from the outstanding Huang et al. 2012 paper published by this group. In this paper, the authors further refine the model developed there, and while the three-dimensional structure adds knowledge, it is limited in detail because the docking of Lis1 is not fully resolved in terms of rotational alignment. The couple of new mutants examined here could also have been predicted based on the previous structure.\n\nThe most novel idea here is that the binding of Lis1 provides a steric block to the linker swing. This is tested with a single construct with a truncated linker, and the results support their model. But there is concern that this is a single approach; the paper would have more impact if the authors could demonstrate this key point in a complementary way. The reviewers recognize that this might be a tall order, but it would be good if the authors could respond to this issue.\n\n2) The authors interpret their data with a model in which the linker needs to get to AAA5 in order for the cycle of ATP hydrolysis to continue and so blocking access to AAA5 prevents ATP binding and therefore release from microtubules (which is thought to occur on ATP hydrolysis). The problem with this model, as the authors discuss, is that it would predict that Lis1 would inhibit the dynein ATPase. The data, however, are clear that this is not the case. It is suggested that the authors reduce the emphasis on the model that Lis1 blocks the linker from getting to AAA5. Instead the data could be presented and then this discussed as an option.\n\nMore specific points to consider:\n\nSpecific issues raised by the reviewers are given below. The authors should use their judgement in how to respond to these points, but if they choose to not address any particular issue they should explain their reasons in the cover letter accompanying the resubmitted manuscript.\n\n1) The authors employed cryo-negative staining for their EM analysis. This involved and tedious technique is not commonly used by EM labs, as it is difficult to master. Surely the authors had a reason to employ this technique; a sentence or two explaining their rationale would be of interest to other structural labs interested in studying similarly sized macromolecular complexes.\n\n2) A final summarizing cartoon outlining the relationship of Lis1 to the mechanochemical cycle of the dynein motor, and how it translates to MT affinity would strengthen the impact of this manuscript.\n\n3) No mention is made of deposition of the 5 EM densities to the EMDB. It is important that these are made available to the community.\n\n4) The authors state in their Abstract that how Lis1 regulates dynein is unknown, but in light of their previous work as well as that of the Vallee lab, this is a clear over-statement. This continues on through the Introduction, where they underplay their previous work determining the binding interface of Lis1 on dynein. This should be revised.\n\n5) The authors set up an either/or model that seems overly simplistic, and the terms ring-centric and linker-centric are clunky and not very clear.\n\n6) The authors report that their dynein alone map \u201caccommodates the crystal structure of the dynein motor domain well\u201d. While there is an overall match, there are also clearly discrepancies between the structures. How was the fit assessed quantitatively? Can anything be learned from the discrepancies?\n\n7) The authors report that the 3D structure allows them \u201cto hone in on the region of dynein interacting with Lis1\u201d, but other than the displacement of the linker, they do not go further with this approach. Are there any other changes? It would be good to discuss this, and the Lis1-dynein interface in more detail.\n\n8) It is unclear what new is learned from the section on \u201cone dynein ring binds one Lis1 beta-propeller\u201d Isn't this what they studied in their previous paper?\n\n9) Did they intend to reference Carragher et al?\n\n10) Vanadate is not so much a phosphate analog as a transition state analog. Similarly, calling the ADP-V complex a \u201cdead-end\u201d is awkward and imprecise terminology.\n\n11) The authors suggest that the differences in AAA4 and AAA5 linker positions previously noted might correspond to either distinct mechanochemical states or different dynein species. But isn't it also possible that they may result from different constructs used in the different studies, some of which were truncated or chimeric?\n\n12) Figure 2 would be stronger if the authors included parallel studies with the W419A mutant and provided more complete analysis of the motility data. Based on what is shown here, the R378A mutant effectively blocks formation of the dynein-Lis1 complex as judged by gel filtration, but only partially blocks the effects of Lis1 on dynein motility. Shoring up this point with an additional single point mutation would strengthen the point.\n\n13) The authors report that two structures are seen in the presence of ADP and one in the presence of no nucleotide, so they conclude that the AAA4 linker position is the ADP state. This may be true, but kinetic analysis has indicated that there is isomerization between 2 ADP-bound states, so it is also possible that the two observed structures correspond to different ADP-bound states. Both should be shown in Figure 3a. Didn't the authors perform FRET analysis of the dynein-Lis1 complex alone? How come this is not included in Figure 3?\n\n14) The authors report the ADP-V-dynein-Lis1 complex. Wouldn't it be useful to directly compare this to the ADP-V-dynein complex?\n\n15) The experiments described in the text and in Figure 4 yield results that are predictable. Three papers, including work from this same group, have already shown that Lis1 does not significantly affect dynein's ATPase rate, so it is unclear what new is learned from this work. It could all be removed from the text, or at least moved to supplemental information. If it does remain, experiments need to be performed in triplicate, and error bars should be reported for all points.\n\n16) In Figure 5, for the short linker construct, why are there fewer events, including fewer rebinding events? Does this construct have a weaker affinity for microtubules? If it does, how might this affect the interpretation of the results?\n\n17) Use of dimeric Lis1. It is not clear how an avidity effect would explain how dimeric Lis1 would bind more tightly to monomeric dynein than monomeric Lis1. The avidity effect should require two binding sites for Lis1. In Huang et al there does not seem to be a direct demonstration that dimeric Lis1 binds monomeric dynein better than monomeric Lis1. Please clarify.\n\n18) If the Lis1 purely displaces the linker by a steric mechanism, would the authors not expect to see the linker closely connected to Lis1? Instead Figure 1e suggests that the linker is making a tight connection to the AAA+ ring. Should this connection be discussed? Might it suggest that Lis1 has some allosteric effect on the AAA+ ring which, together with sterically blocking its normal position, allows the linker to dock onto the ring? Alternatively is the resolution too low to say this?\n\n19) The authors try to draw the parallel between mutations in AAA5 and the effect of Lis1. The reviewer's reading of the data is that these two effects are different as the first abolishes ATPase activity, while the second has no effect on it.\n\n20) One section states that the lack of conservation in the very N-terminus of the linker suggests it does not interact directly with Lis1 (which seems reasonable) and therefore that the Lis1 is acting as a steric block. The contact between the linker and the AAA+ ring in the Lis1:APO-Dynein structure appears to involve a more conserved part of the ring. This comes back to the question about whether Lis1 is acting on the AAA+ ring to allow the linker to bind to a place it normally would not.\n\n21) Figure 2c. The blue color is difficult to distinguish from the black in the gel filtration trace.\n\n22) Figure 3f/g. This EM map looks as though the contacts between the AAA+ ring and the Lis1 are different from in the Apo form. This may just be the different resolution of the structure, but it might be useful to discuss this somewhere.\n\n23) Figure 4. It would be helpful if the type of mutation made was specified on this figure. b & c are E-Q mutations (residue number?). d) AAA5 mutant is not in the ATP binding site, but on the linker binding site. Specifying this on the figure (& res numbers?) would be helpful.\n\n24) Figure 5 and Figure 5\u2013figure supplement 1. These figures show release from microtubules is blocked by Lis1, but not if the linker is shortened. The shortening does not affect the motors activity or ability to bind Lis1. Did the authors test if the velocity of the shorter linker was affected by Lis1?\n\n25) Figure 5 d ii: The cartoon uses the stop sign, which suggests it has a mutation in AAA5 (as in Figure 4). Is this true? If not then another symbol might be more appropriate.\n\n26) Table 3:\n\nThe units of Km, kbasal and kcat should be given.\n\nOne of the reviewers has the following thought which they would like to share with you:\n\nAnother mechanism that could be mentioned in the Discussion is that Lis1 has an allosteric effect on the AAA+ ring that allows the linker to move and the AAA1 site to exchange nucleotide without triggering the conformational change in the stalk that releases dynein from microtubules. This model is also not completely satisfactory as it is harder to explain the requirement for the N-terminus of the linker.\n\nPerhaps one (explanation would be that the transition from high to low affinity is most likely to occur before the linker moves from a post to pre-powerstroke position. That is, ATP binds to a high affinity, post-powerstroke dynein. A rearrangement occurs that leads to a low affinity, post-powerstroke dynein (that releases from MTs). This is followed by a transition to the ADP.Vi like state with a low affinity, pre-powerstroke conformation. The ATP bound, post-powerstroke, low affinity conformation could be altered so that it no longer releases from microtubules by a combination of Lis1 AND linker binding to the AAA+ ring.\n",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2992c70e-20c3-4d23-ac3e-3b2a4e9d389e",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C1",
+      "claim": "Cytoplasmic dynein uses energy from ATP hydrolysis to move towards the minus ends of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic dynein ('dynein' here), the largest and least understood of the cytoskeletal motors, uses the energy from ATP hydrolysis to move towards the minus ends of microtubules (Vale, 2003; Carter, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vale, 2003 and Carter, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "ae122364-264c-48d9-8943-fe65af273cc4",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C2",
+      "claim": "Dynein is the major minus-end-directed motor in most eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As the major minus-end-directed motor in most eukaryotic cells, dynein's many roles include transporting a range of macromolecular cargo (Blocker et al., 1997; Jordens et al., 2001; Kural et al., 2005; Pilling et al., 2006; Driskell et al., 2007), constructing and positioning the mitotic spindle (Heald et al., 1996; Merdes et al., 1996; Kiyomitsu and Cheeseman, 2013), and polarizing and anchoring mRNAs during development (Wilkie and Davis, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations describing dynein's cellular roles",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "36f11f65-51ad-4426-a8a0-73ee9898fbab",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C3",
+      "claim": "Dynein is a homodimer of force generating units, each approximately 500 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein is a homodimer of force generating units (\u223c500 kDa each) (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and illustrated in Figure 1A,B",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "e2604292-2461-4daf-b0a5-2da25710d4ea",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C4",
+      "claim": "The N-terminal region of each dynein monomer forms the 'tail' domain, which mediates dimerization and cargo attachment via adaptor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal region of each monomer forms the 'tail' domain, which mediates dimerization and cargo attachment via adaptor proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about dynein structure and function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "33ae1484-53ab-4ab2-8720-bcbe3ba55e6e",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C5",
+      "claim": "Removal of the tail yields the 'motor', the minimal portion of dynein that can exert force.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of the tail yields the 'motor', the minimal portion of dynein that can exert force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about dynein motor domain",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "252fe7a5-e81f-4f20-9357-e97b0c0cc155",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C6",
+      "claim": "At the core of the dynein motor are six AAA+ modules (AAA1\u20136) that fold into a ring.",
+      "claim_type": "EXPLICIT",
+      "source": "At the core of the motor are six AAA+ modules (AAA1\u20136) that fold into a ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about dynein structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "44238204-3842-453c-8ee6-ee96d783471a",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C7",
+      "claim": "AAA1 is the main site of ATP hydrolysis for dynein motility.",
+      "claim_type": "EXPLICIT",
+      "source": "AAA1 is the main site of ATP hydrolysis for motility but AAA2, 3, and 4 can also bind ATP, and AAA3 and 4 can hydrolyze it (Gibbons et al., 1991; Kon et al., 2004, 2012; Cho et al., 2008; Schmidt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "2cbdd08b-f179-4c54-8097-423587f7985f",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C8",
+      "claim": "AAA2, 3, and 4 can bind ATP, and AAA3 and 4 can hydrolyze it.",
+      "claim_type": "EXPLICIT",
+      "source": "AAA1 is the main site of ATP hydrolysis for motility but AAA2, 3, and 4 can also bind ATP, and AAA3 and 4 can hydrolyze it (Gibbons et al., 1991; Kon et al., 2004, 2012; Cho et al., 2008; Schmidt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "7579ef71-f838-4cf8-8543-24c004abc938",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C9",
+      "claim": "AAA5 and AAA6 have lost the ability to bind nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "AAA5 and AAA6 have lost the ability to bind nucleotide (Kon et al., 2012; Schmidt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kon et al., 2012 and Schmidt et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "1083c160-037f-4830-9b2c-ab4dfdfdf222",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C10",
+      "claim": "The 'stalk' is an intramolecular anti-parallel coiled-coil at the end of which lies the microtubule-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Two appendages to the ring are essential for dynein function; the 'stalk', an intramolecular anti-parallel coiled-coil at the end of which lies the microtubule-binding domain (Gee et al., 1997; Carter et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gee et al., 1997 and Carter et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "88a22b32-021f-47d0-be66-aeaf28fe1844",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C11",
+      "claim": "The 'linker' is dynein's key mechanical element and is an elongated structure N-terminal to AAA1.",
+      "claim_type": "EXPLICIT",
+      "source": "and the 'linker', which is dynein's key mechanical element and is an elongated structure N-terminal to AAA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about linker structure and function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "98f86f52-a0e6-4ec6-8401-b01fedc127cf",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C12",
+      "claim": "The linker spans the ring and moves in a nucleotide dependent manner that is thought to transmit force to dynein's cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker spans the ring and moves in a nucleotide dependent manner that is thought to transmit force to dynein's cargo (Burgess et al., 2003; Kon et al., 2005; Shima et al., 2006; Roberts et al., 2009, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "5a5b0793-8b5f-4da5-a01e-1ad06e967269",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C13",
+      "claim": "For dynein to move along microtubules, ATP binding/hydrolysis at AAA1 must be coupled with linker motion and microtubule binding and release at the tip of the stalk, located 250 \u00c5 away.",
+      "claim_type": "EXPLICIT",
+      "source": "In order for dynein to move along microtubules, ATP binding/hydrolysis at AAA1 must be coupled with linker motion and microtubule binding and release at the tip of the stalk, located 250 \u00c5 away (Gibbons et al., 2005; Imamula et al., 2007; Kon et al., 2009; Redwine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "5f29f43c-2a76-4ac7-bc65-aa94c3deee98",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C14",
+      "claim": "Lis1 is the only dynein regulator known to interact directly with its motor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Lis1 is the only dynein regulator known to interact directly with its motor domain (McKenney et al., 2010; Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McKenney et al., 2010 and Huang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "4165bd6b-4564-4117-960a-57fd87d723c4",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C15",
+      "claim": "Lis1 acts as a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Like dynein, Lis1 acts as a dimer, with each monomer comprising an N-terminal dimerization domain (LisH) followed by a coiled-coil, a flexible loop and a C-terminal \u03b2-propeller domain of 7 WD motifs (Kim et al., 2004; Tarricone et al., 2004) (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Kim et al., 2004 and Tarricone et al., 2004, and illustrated in Figure 1A,B",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "abd5e2ae-ba95-4d9f-bf86-281aa19073ed",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C16",
+      "claim": "Each Lis1 monomer comprises an N-terminal dimerization domain (LisH) followed by a coiled-coil, a flexible loop and a C-terminal \u03b2-propeller domain of 7 WD motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Like dynein, Lis1 acts as a dimer, with each monomer comprising an N-terminal dimerization domain (LisH) followed by a coiled-coil, a flexible loop and a C-terminal \u03b2-propeller domain of 7 WD motifs (Kim et al., 2004; Tarricone et al., 2004) (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Kim et al., 2004 and Tarricone et al., 2004, and illustrated in Figure 1A,B",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "3b9e81e9-eda0-45be-9468-4b50c4b8287a",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C17",
+      "claim": "The propeller domain alone can regulate dynein in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the propeller domain alone can regulate dynein in vitro and used negative stain electron microscopy (EM) and two-dimensional (2D) image processing to show that Lis1 binds to dynein's motor domain near AAA3/4 (Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Huang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "b4a246e0-6ee8-4550-b8e8-e3fc8ca60034",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C18",
+      "claim": "Lis1 binds to dynein's motor domain near AAA3/4.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the propeller domain alone can regulate dynein in vitro and used negative stain electron microscopy (EM) and two-dimensional (2D) image processing to show that Lis1 binds to dynein's motor domain near AAA3/4 (Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Huang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "1e14ca38-e8d9-49ab-994e-874e4fd6074e",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C19",
+      "claim": "Lis1 induces a slow-moving microtubule-attached state in dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have shown that Lis1 induces a slow-moving microtubule-attached state in dynein (Yamada et al., 2008; McKenney et al., 2010; Torisawa et al., 2011; Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "513d058c-6213-4475-a8a9-180ba97d6e6b",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C20",
+      "claim": "Lis1 can induce a slow-moving microtubule-attached state in dynein without substantially affecting dynein's overall ATP hydrolysis rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Lis1 can accomplish this without substantially affecting dynein's overall ATP hydrolysis rate (Yamada et al., 2008; McKenney et al., 2010; Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "196d4781-e647-4d89-89c2-331ccfed1591",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C21",
+      "claim": "Lis1 acts as a 'clutch', uncoupling dynein's engine (AAA+ ring) from its track-binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "This led us to propose that Lis1 acts as a 'clutch', uncoupling dynein's engine (AAA+ ring) from its track-binding region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation based on previous findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "aea1abca-2794-47c8-a24a-fd2a73e8927b",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C22",
+      "claim": "The 3D structure of the dynein\u2013Lis1 complex shows that binding of Lis1 to dynein's AAA+ ring sterically prevents dynein's linker from completing its normal conformational cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The three-dimensional structure of the dynein\u2013Lis1 complex shows that binding of Lis1 to dynein's AAA+ ring sterically prevents dynein's main mechanical element, the 'linker', from completing its normal conformational cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the 3D EM structure obtained in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "13d9e3cc-5364-49ca-b524-f5692decf556",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C23",
+      "claim": "Eliminating the steric block by shortening the linker to a point where it can physically bypass Lis1 renders single dynein motors insensitive to regulation by Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule experiments show that eliminating this block by shortening the linker to a point where it can physically bypass Lis1 renders single dynein motors insensitive to regulation by Lis1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on single-molecule experiments performed in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "17728cc8-25f4-4485-80e1-99497c40cf7d",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C24",
+      "claim": "Lis1 keeps dynein in a persistent microtubule-bound state by directly blocking the progression of its mechanochemical cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveal that Lis1 keeps dynein in a persistent microtubule-bound state by directly blocking the progression of its mechanochemical cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on combined structural and functional data from this study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "59362a64-65b7-4186-b52e-855a5f6f52d2",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C25",
+      "claim": "Mutations in the Lis1 gene cause the neurodevelopmental disorder lissencephaly.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the Lis1 gene cause the neurodevelopmental disorder lissencephaly (Reiner et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reiner et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "889c25d8-399f-4208-9079-70510e1ec79a",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C26",
+      "claim": "The dynein\u2013Lis1 complex was obtained at a resolution of 21 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We imaged dynein\u2013Lis1 and dynein alone in the absence of nucleotide and obtained structures at resolutions of 21 \u00c5 for the complex (Figure 1C,E, Figure 1\u2014figure supplement 1C and Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Resolution determined from FSC analysis of EM data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "aaceb27a-fa24-4275-8568-c7155d0964c1",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C27",
+      "claim": "The dynein alone map was obtained at a resolution of 15 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "and of 15 \u00c5 for dynein alone (Figure 1D,F, Figure 1\u2014figure supplement 1C and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Resolution determined from FSC analysis of EM data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "c7cbfd9e-9726-4756-9a53-d88412525071",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C28",
+      "claim": "The dynein alone map accommodates the crystal structures of the dynein motor domain well.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynein alone map accommodates the crystal structures of the dynein motor domain well (Kon et al., 2012; Schmidt et al., 2012) (Figure 1F), with a Fourier Shell Correlation between the EM map and yeast motor domain structure (Schmidt et al., 2012) of 0.143 at a resolution of 18.8 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "FSC calculation between EM map and crystal structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "2ab4b6af-859f-4220-8322-793f9eb8e234",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C29",
+      "claim": "The dynein\u2013Lis1 map shows a prominent donut-shaped density in contact with the dynein ring, adjacent to the stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynein\u2013Lis1 map shows two major differences relative to the dynein alone reconstruction. First, a prominent donut-shaped density is resolved in contact with the dynein ring, adjacent to the stalk (Figure 1C, brown arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the EM reconstruction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "4f4a2a26-4a40-447c-9cc1-65680a2210f3",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C30",
+      "claim": "The extra density in the dynein\u2013Lis1 map matches the dimensions of a \u03b2-propeller, including the hole at its center.",
+      "claim_type": "EXPLICIT",
+      "source": "This extra density matches the dimensions of a \u03b2-propeller, including the hole at its center (Figure 1E,G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of EM density with known \u03b2-propeller structure",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "534d9c6f-e811-40b9-9510-e3b327aa75ac",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C31",
+      "claim": "The donut-shaped density in the dynein\u2013Lis1 map corresponds to Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that the density corresponds to Lis1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on density shape and location",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "5ddbf85b-7921-4397-bf70-c4c7b34040bd",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C32",
+      "claim": "Lis1 binds on the same face of the ring where dynein's linker domain is located.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, and striking difference between the two maps is in dynein itself: Lis1 binds on the same face of the ring where dynein's linker domain is located and the linker is displaced by \u223c44 \u00c5 in the dynein\u2013Lis1 map relative to the dynein alone reconstruction (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the EM reconstructions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "51f3a4b7-9d48-4a37-b9b0-cb4a68b432da",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C33",
+      "claim": "The linker is displaced by approximately 44 \u00c5 in the dynein\u2013Lis1 map relative to the dynein alone reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, and striking difference between the two maps is in dynein itself: Lis1 binds on the same face of the ring where dynein's linker domain is located and the linker is displaced by \u223c44 \u00c5 in the dynein\u2013Lis1 map relative to the dynein alone reconstruction (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from EM reconstructions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "61581f04-6c2c-456c-98c9-8a9d9551a12b",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C34",
+      "claim": "The extra density in the dynein\u2013Lis1 3D map fits well a single homology model of the S. cerevisiae Lis1 \u03b2-propeller built from the crystal structure of the mouse protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The extra density in the dynein\u2013Lis1 3D map fits well a single homology model of the S. cerevisiae Lis1 \u03b2-propeller built from the crystal structure of the mouse protein (Tarricone et al., 2004) (Figure 1E,G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Homology model docked into EM density",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "a4370e75-6a83-4aeb-a4e1-e77026d01171",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C35",
+      "claim": "The stoichiometry of the dynein\u2013Lis1 complex is one Lis1 propeller to one dynein motor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "2D image analysis of dynein\u2013Lis1 complexes with either monomeric or dimeric Lis1 showed the same density and location for Lis1 (Figure 1\u2014figure supplement 1D,E), further supporting a stoichiometry of one Lis1 propeller to one dynein motor domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on 2D image analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "f3983054-0073-4419-b4e0-2c65d3d2b58a",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C36",
+      "claim": "The Lis1 \u03b2-propeller contacts dynein primarily at a surface-exposed helix at the junction of AAA3 and AAA4.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure of the dynein\u2013Lis1 complex shows that the Lis1 \u03b2-propeller contacts dynein primarily at a surface-exposed helix at the junction of AAA3 and AAA4 (Figure 2A and Video 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "7e7e7fc7-747c-408a-bc80-3e0272948ff6",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C37",
+      "claim": "Mutagenesis of four conserved, charged residues (KDEE) on the AAA3/AAA4 helix virtually abolished Lis1 binding and dynein regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "explaining why mutagenesis of four conserved, charged residues (KDEE) on this helix virtually abolished Lis1 binding and dynein regulation (Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Huang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "3cfb1afb-faea-40d4-b588-06b6c6286afb",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C38",
+      "claim": "When all five residues (R275, R301, R378, W419, K437) in Lis1 are mutated to alanine (Lis15A), no binding to dynein could be detected by size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "When all five residues are mutated to alanine (Lis15A), no binding could be detected by size-exclusion chromatography (Figure 2C and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from size-exclusion chromatography",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "93b1751a-5413-469b-9785-8f19c6f58bfa",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C39",
+      "claim": "Lis1R378A and Lis1W419A single point mutants did not show detectable interaction with dynein by size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "We also did not detect an interaction with two of the single point mutants, Lis1R378A and Lis1W419A (Figure 2C and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from size-exclusion chromatography",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "fdace074-212a-440f-9103-0d5d0982b15f",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C40",
+      "claim": "The remaining single point mutants (R275A, R301A, K437A) showed decreased but detectable binding to dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining single point mutants showed decreased but detectable binding to dynein (Table 2 and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from size-exclusion chromatography",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "4b1574d7-8413-4d91-bde1-1ab57e620c98",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C41",
+      "claim": "Highly conserved amino acids on the top face of Lis1's \u03b2-propeller are critical for dynein binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that highly conserved amino acids on the top face of Lis1's \u03b2-propeller are critical for dynein binding, in support of our structural model for the dynein\u2013Lis1 complex (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion based on mutagenesis data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "d4802a4b-15e3-4681-bde3-405e5690b8cc",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C42",
+      "claim": "The Lis15A mutant showed no reduction in dynein velocity in single-molecule assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lis15A mutant showed no reduction in dynein velocity, consistent with an inability to bind dynein (Figure 2D and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from single-molecule motility assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "3ffbf17e-f68d-4f3d-922a-df077e4a75ea",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C43",
+      "claim": "The Lis1R378A mutant showed a slight reduction in dynein velocity compared to dynein alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lis1R378A mutant, on the other hand, showed a slight reduction in dynein velocity compared to dynein alone, suggesting that its binding to the motor is compromised (Figure 2D and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from single-molecule motility assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "19cfe06d-c990-4faa-9651-7ba9d30e5c25",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C44",
+      "claim": "Disruption of the dynein\u2013Lis1 interface resulted in a decrease in the number of bud neck crossings to a level similar to that caused by the deletion of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that disruption of the dynein\u2013Lis1 interface resulted in a decrease in the number of bud neck crossings to a level similar to that caused by the deletion of Lis1 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from spindle oscillation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "3a8bbc71-5f67-4644-912f-bbd2791462bd",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C45",
+      "claim": "The dynein\u2013Lis1 interface identified in the structural model is crucial for dynein's biological function.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the dynein\u2013Lis1 interface identified in our structural model is crucial for dynein's biological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on in vivo spindle oscillation assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "32c6551b-db29-4f6a-ad9e-2eb50b73d9e4",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C46",
+      "claim": "The linker position in the dynein alone structure is sterically incompatible with the presence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure suggests that this displacement may be a direct result of Lis1's binding to dynein: the linker position in the dynein alone structure is sterically incompatible with the presence of Lis1 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the EM structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "c4549a73-11e2-4443-86f5-e2d2a997b830",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C47",
+      "claim": "In the presence of ADP, the linker adopts two positions: one over AAA4 and one at AAA5.",
+      "claim_type": "EXPLICIT",
+      "source": "Conformational sorting revealed that the linker adopts two positions in this condition (Figure 3A). One is over AAA4, coinciding with that observed in the D. discoideum crystal structure. The other is the AAA5-docked position seen in S. cerevisiae dynein with no nucleotide.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in EM reconstructions with ADP",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "654810c3-39bc-4cfb-8a5b-a891433f37f7",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C48",
+      "claim": "The AAA4 linker position was seen only in the presence of ADP and was not detectable in no nucleotide conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The AAA4 position was seen only in the presence of ADP and was not detectable in no nucleotide conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of EM reconstructions in different nucleotide states",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "1c023acd-3180-4936-974c-6f9c5660c7ed",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C49",
+      "claim": "Both the AAA4 linker position in the ADP state and the AAA5 position in the no nucleotide state are sterically incompatible with the presence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both the AAA4 linker position in the ADP state and the AAA5 position in the no nucleotide state are sterically incompatible with the presence of Lis1 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed by overlaying EM structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "b80b9c26-3f18-4771-9d9c-2de33859373a",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C50",
+      "claim": "Binding of Lis1 to the dynein ring results in a displaced linker, away from its normal docking sites under both no nucleotide and ADP conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that binding of Lis1 to the dynein ring results in a displaced linker, away from its normal docking sites under both no nucleotide and ADP conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on EM structures in different nucleotide states",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "8006b965-1e0b-49a9-999b-94e9c63f29db",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C51",
+      "claim": "In the presence of ATP and vanadate (Vi), FRET increased to approximately 26% in the dynein FRET construct.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ATP and vanadate (Vi), which trap dynein as an ADP.Vi-bound complex after hydrolysis, FRET increased to \u223c26% (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from FRET measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "b37f7450-a487-4a5b-b6aa-1ae520466e44",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C52",
+      "claim": "When Lis1 was added to ADP.Vi\u2013dynein, there was no significant change in the FRET efficiency relative to ADP.Vi\u2013dynein alone.",
+      "claim_type": "EXPLICIT",
+      "source": "When Lis1 was added to ADP.Vi\u2013dynein, there was no significant change in the FRET efficiency relative to ADP.Vi\u2013dynein alone (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from FRET measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "99083554-e6de-48e2-a917-bd40bc81c9f7",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C53",
+      "claim": "Lis1 does not affect the linker pre-powerstroke AAA2 position.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Lis1 does not affect the linker pre-powerstroke AAA2 position (ATP + Vi added before Lis1) and has only a minor effect on linkers undergoing the AAA5 to AAA2 transition (Lis1 added before ATP + Vi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on FRET measurements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "254d383a-e87a-4a54-9167-bb4747a55750",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C54",
+      "claim": "The presence of Lis1 does not interfere with linker movement towards its pre-powerstroke position at AAA2.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these results indicate that the presence of Lis1 does not interfere with linker movement towards its pre-powerstroke position at AAA2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on FRET and EM data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "9af27013-8bd8-435f-b05d-a525e29aa39c",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C55",
+      "claim": "Lis1 occludes the linker binding sites at its two post-powerstroke positions (AAA4 and AAA5).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Lis1 occludes the linker binding sites at its two post-powerstroke positions (AAA4 and AAA5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on EM structures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "b76381f1-8e9d-48e1-b3f1-22b7b793e75a",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C56",
+      "claim": "Dynein monomers continued to hydrolyze ATP in the presence of Lis1 at levels similar to those of dynein alone.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, dynein monomers continued to hydrolyze ATP in the presence of Lis1 at levels similar to those of dynein alone (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from ATPase assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "757db521-4a90-452f-92da-3b51380e52b2",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C57",
+      "claim": "ATP hydrolysis was virtually abolished in a construct where AAA1 was rendered hydrolysis-deficient with an E to Q mutation, both in the presence and absence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "This hydrolysis, however, was virtually abolished, both in the presence and absence of Lis1, in a construct where AAA1, the main site of ATP hydrolysis in dynein (Gibbons et al., 1987), was rendered hydrolysis-deficient with an E to Q mutation in its Walker B motif (Kon et al., 2004) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from ATPase assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "6d1643e5-d9e2-498e-a02b-023ec5a299cb",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C58",
+      "claim": "An intact ATP hydrolysis site at AAA1 is required for ATPase activity in the presence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that an intact ATP hydrolysis site at AAA1 is required for ATPase activity in the presence of Lis1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on ATPase assays with AAA1 mutant",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "b7c35d5d-0aa7-4525-bf2c-d9c447bb94a5",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C59",
+      "claim": "Dynein carrying an E to Q mutation in the Walker B motif of AAA4 showed a near wild-type ATPase rate with or without Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, dynein carrying an E to Q mutation in the Walker B motif of AAA4 (Cho et al., 2008) showed a near wild-type ATPase rate with or without Lis1 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from ATPase assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "69828c74-f7ad-4692-8161-fa25279c9d6c",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C60",
+      "claim": "A hydrolysis-competent AAA4 is not required for the ATPase activity observed in the presence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a hydrolysis-competent AAA4 is not required for the ATPase activity observed in the presence of Lis1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on ATPase assays with AAA4 mutant",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "11ce77dc-4d52-4416-9638-b9b5aa3ea62c",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C61",
+      "claim": "Dynein constructs carrying the AAA5 mutation did not hydrolyze ATP even in the presence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not the case; dynein constructs carrying the AAA5 mutation did not hydrolyze ATP even in the presence of Lis1 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from ATPase assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "128424bf-7a2c-4f27-8931-627318e3374c",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C62",
+      "claim": "Sustained ATP hydrolysis in a Lis1-regulated dynein requires a hydrolysis-competent AAA1 and a functional linker-docking site at AAA5.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that sustained ATP hydrolysis in a Lis1-regulated dynein requires a hydrolysis-competent AAA1 and a functional linker-docking site at AAA5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on ATPase assays with different mutants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "1506e9aa-92d9-4cd5-bcde-996417957073",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C63",
+      "claim": "A dimeric dynein motor containing a shortened linker shows robust motility properties in in vitro motility assays.",
+      "claim_type": "EXPLICIT",
+      "source": "A dimeric dynein motor containing this shortened linker shows robust motility properties in in vitro motility assays (Figure 5\u2014figure supplement 1A,B) (Reck-Peterson et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from motility assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "9d20fe45-ee8b-497e-a75d-c1867056c368",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C64",
+      "claim": "Monomers with a short linker showed ATPase levels comparable to those seen with a full-length linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Monomers with a short linker showed ATPase levels comparable to those seen with a full-length linker, both in the context of a wild-type set of AAA+ modules and in the linker docking-deficient AAA5 mutant (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from ATPase assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "f23c24d6-f93c-4f79-9385-d76240a5e9fa",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C65",
+      "claim": "The short linker construct can bind Lis1 as shown by co-migration in size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "As a monomer, the short linker construct can bind Lis1 as shown both by their co-migration in size-exclusion chromatography (Figure 5\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from size-exclusion chromatography",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "7c0a1240-b025-4777-b8ae-4d5a145af273",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C66",
+      "claim": "The 3D structure of the short linker dynein\u2013Lis1 complex shows the same conformation for the linker in the presence of Lis1 as observed for the full-length linker in the absence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "Central to our testing the steric block hypothesis, our 3D structure of the short linker dynein\u2013Lis1 complex shows the same conformation for the linker in the presence of Lis1 as we had observed for the full-length linker in the absence of Lis1 (Figure 1, Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in EM reconstruction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "ba1f55a1-1010-4a18-89b2-8f541aca1b37",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C67",
+      "claim": "In the presence of a full-length linker, Lis1 converted dynein to a state of persistent microtubule attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of a full-length linker, Lis1 converted dynein to a state of persistent microtubule attachment and dynein monomers stayed bound in the presence of ATP for extended periods as previously shown (Figure 5D\u2013F) (Huang et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from microtubule release assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "94cb7d28-e7ed-41e7-80e3-c3fb9662ad6a",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C68",
+      "claim": "Shortening of dynein's linker eliminated Lis1's ability to induce a persistent microtubule-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, shortening of dynein's linker eliminated Lis1's ability to induce this persistent microtubule-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental result from microtubule release assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "e4f1371a-bacb-4aa3-9713-cf878b6752fc",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C69",
+      "claim": "Lis1 is not capable of regulating microtubule attachment in the short linker construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Lis1 is not capable of regulating microtubule attachment in the short linker construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on microtubule release assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "c672c69d-e919-4ce4-b5c9-b10b2cab9e0c",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C70",
+      "claim": "The data support a steric mode of dynein regulation where Lis1 physically blocks the linker.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support a steric mode of dynein regulation where Lis1 physically blocks the linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on combined structural and functional data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "e8d511ad-be1a-4072-a1be-c36390a40beb",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C71",
+      "claim": "When Lis1 is present, the linker retains its ability to adopt the pre-powerstroke AAA2 position but is prevented from reaching its normal post-powerstroke positions at AAA4 and AAA5 on dynein's ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that when Lis1 is present, the linker retains its ability to adopt the pre-powerstroke AAA2 position but is prevented from reaching its normal post-powerstroke positions at AAA4 and AAA5 on dynein's ring (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of findings from EM and FRET experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "8d322f1c-1c36-4e5b-af1b-a2770dcde825",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C72",
+      "claim": "Blocking of the linker by Lis1 is critical for motility regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This blocking of the linker by Lis1 is critical for motility regulation; its removal by shortening dynein's linker renders the motor Lis1 insensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on short linker experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "9bda6396-195f-4834-b6b4-4231b7354257",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C73",
+      "claim": "Lis1 may disrupt the interaction between the linker and AAA5, preventing normal progression through the mechanochemical cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility suggested by our structures is that Lis1 disrupts the interaction between the linker and AAA5, preventing normal progression through the mechanochemical cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on structural observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "43e894a9-14b4-42aa-9eaf-c1c6b01b6679",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C74",
+      "claim": "When linker docking at AAA5 is abolished by mutagenesis, dynein displays reduced velocity and prolonged microtubule attachments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, when linker docking at AAA5 is abolished by mutagenesis, dynein displays reduced velocity and prolonged microtubule attachments (Schmidt et al., 2012), reminiscent of Lis1's effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schmidt et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "c73c2a40-1fc6-4e05-a8c6-183c76461e61",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C75",
+      "claim": "AAA5 linker docking mutants display severely reduced ATPase rates, both in the absence and the presence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while Lis1 has little effect on dynein's ATPase, AAA5 linker docking mutants display severely reduced ATPase rates, both in the absence (Schmidt et al., 2012) and the presence of Lis1 (Figure 4D, Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from ATPase assays and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "34fd3615-579e-44ae-a1d4-d478a974a31f",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C76",
+      "claim": "Low sequence conservation in the portion of the linker facing Lis1 argues against a specific Lis1\u2013linker interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Low sequence conservation in the portion of the linker facing Lis1 argues against a specific Lis1\u2013linker interaction (Figure 1\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "21217a7a-49cf-415e-b6ad-c293c6483401",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C77",
+      "claim": "A specific interaction between a Lis1-displaced linker and dynein's ring is not supported by the apparent conformational heterogeneity of the N-terminus of the linker in the presence of Lis1.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, a specific interaction between a Lis1-displaced linker and dynein's ring is not supported by the apparent conformational heterogeneity of the N-terminus of the linker in the presence of Lis1, where 3D sorting is required to resolve linker positions (Figure 1\u2014figure supplement 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed conformational heterogeneity in EM data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "43d341d6-8fb0-4c58-a12a-648a3d6245da",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C78",
+      "claim": "Mutating five amino acids on AAA4 proximal to the linker's displaced position had minimal effect on Lis1-mediated motility regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Also mutating five amino acids on AAA4, proximal to the linker's displaced position (the most likely candidates to interact with the displaced linker), had minimal effect on Lis1-mediated motility regulation (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result from motility assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "8e176d0c-ec7b-4090-b5a3-c03014bfa84b",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C79",
+      "claim": "Lis1 directly disrupts dynein's mechanochemical cycle by physically blocking conformations that are required to couple the cycles of ATP hydrolysis from those of track binding and release.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our data show that Lis1, a conserved dynein regulator, directly disrupts dynein's mechanochemical cycle by physically blocking conformations that are required to couple the cycles of ATP hydrolysis taking place in the motor domain from those of track binding and release happening at the microtubule binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on all experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "f1cca765-f79e-4345-8503-6ccf650b0884",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C80",
+      "claim": "Lis1 keeps dynein in a persistent microtubule-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows Lis1 to keep dynein in a persistent microtubule-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "e42797e1-0df4-495c-90f1-19f944d9ecbb",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C81",
+      "claim": "The conservation of amino acids at the dynein\u2013Lis1 interface suggests that this modulation of dynein's interaction with its microtubule track contributes to dynein's ability to carry out various cellular functions in different organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This modulation of dynein's interaction with its microtubule track likely contributes to dynein's ability to carry out the variety of cellular functions it performs in different organisms, given the conservation of the amino acids at the dynein\u2013Lis1 interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on sequence conservation",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "fe23a6fe-da0c-40d4-b798-1882cd359f52",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C82",
+      "claim": "Lis1 is involved in initiation of cargo transport.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Lis1 is involved in initiation of cargo transport (Lenz et al., 2006; Egan et al., 2012; Moughamian et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "c73964f6-6565-452f-aa55-de56e163ac96",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C83",
+      "claim": "Lis1 is involved in transport of high load cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "in transport of high load cargo (McKenney et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McKenney et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "ebff6b43-e617-4655-83b0-7f3a4eed08c0",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C84",
+      "claim": "Lis1 is involved in targeting dynein molecules to the cell cortex via the microtubule plus end.",
+      "claim_type": "EXPLICIT",
+      "source": "and in targeting dynein molecules to the cell cortex via the microtubule plus end (Lee et al., 2003; Sheeman et al., 2003; Roberts et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "67989d30-7887-4478-b845-c1090e7f9634",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C85",
+      "claim": "The displaced linker observed in the presence of Lis1 may generate an 'unmasked' tail domain that has been shown necessary for cortical dynein localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The displaced linker observed in the presence of Lis1 in our 3D dynein\u2013Lis1 reconstruction may contribute to this latter task, generating an 'unmasked' tail domain that has been shown necessary for cortical dynein localization (Markus and Lee, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on structural observation and citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "0037b753-5868-4e28-acb8-298613bf1217",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C86",
+      "claim": "Mammalian dynein and Lis1 form a stable complex only in ATP and Vi conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the mammalian proteins, dynein and Lis1 were previously shown to form a stable complex only in ATP and Vi conditions (McKenney et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McKenney et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "33e014d3-7031-4746-a04f-f9cc608872b8",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "claim_id": "C87",
+      "claim": "The stable complex formation between mammalian dynein and Lis1 in ATP and Vi conditions might be a consequence of the linker's moving to its pre-powerstroke site at AAA2, where the linker and Lis1 are no longer sterically incompatible.",
+      "claim_type": "EXPLICIT",
+      "source": "Our 3D reconstruction of dynein\u2013Lis1 under those conditions suggests that this might be a consequence of the linker's moving to its pre-powerstroke site at AAA2, where the linker and Lis1 are no longer sterically incompatible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on EM structure in ATP+Vi conditions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors obtained 3D cryo-negative stain EM structures of dynein\u2013Lis1 complex (21 \u00c5 resolution) and dynein alone (15 \u00c5 resolution), revealing that Lis1 binds as a single \u03b2-propeller to the dynein ring near AAA3/4, with a stoichiometry of one Lis1 propeller per dynein motor domain, and causes a ~44 \u00c5 displacement of the linker domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C35 provide converging structural evidence from EM reconstructions, including resolution measurements (C26-C27), validation against crystal structures (C28), identification of Lis1 density (C29-C31), and quantification of linker displacement (C32-C33). The structural model is supported by homology modeling (C34) and 2D analysis confirming stoichiometry (C35). The methods are appropriate and the conclusions are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "315389e5-072a-4594-be27-ed2972ae0f94",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors mapped the dynein\u2013Lis1 interface through mutagenesis, showing that Lis1 contacts dynein primarily at a surface helix between AAA3 and AAA4, and that conserved residues on the top face of Lis1's \u03b2-propeller (R275, R301, R378, W419, K437) are critical for dynein binding and regulation both in vitro and in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C45 present a comprehensive mutagenesis analysis combining structural observations (C36), prior work validation (C37), biochemical binding assays (C38-C40), single-molecule motility assays (C42-C43), and in vivo functional assays (C44-C45). The multiple independent experimental approaches converge to support the identification of critical interface residues, with appropriate controls and quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "6410b0df-d294-48f7-a555-676c7ab5a6c5",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate through EM structures in different nucleotide states that Lis1 sterically blocks the linker from adopting its normal post-powerstroke positions at AAA4 (ADP state) and AAA5 (no nucleotide state), resulting in linker displacement away from these docking sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by EM reconstructions in multiple nucleotide conditions showing steric incompatibility between Lis1 and the linker at AAA4/AAA5 positions. The conformational sorting approach (C47) appropriately identified two distinct linker positions in ADP conditions, and the overlay analysis (C49) directly demonstrates the steric clash. The conclusion (C50) logically follows from the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "43752313-bfd4-45f6-b101-5a914bd70324",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using FRET measurements and EM structures in ATP+Vi conditions, the authors show that Lis1 does not prevent the linker from reaching its pre-powerstroke position at AAA2, but does occlude the post-powerstroke positions at AAA4 and AAA5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 combine FRET data (C51-C52) with EM structural analysis to demonstrate selective blocking of linker positions. The FRET construct was validated for function (Figure 3\u2014figure supplement 1), and the measurements show no significant change in FRET efficiency when Lis1 is added to ADP.Vi-dynein (C52), supporting that the AAA2 position is accessible. The EM structure in ATP+Vi conditions provides independent confirmation. The conclusions (C53-C55) are appropriately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "1b72ec66-034c-4c7d-9655-b44f12aff16c",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors demonstrate through ATPase assays with various dynein mutants that sustained ATP hydrolysis in Lis1-regulated dynein requires a hydrolysis-competent AAA1 and a functional linker-docking site at AAA5, but not a hydrolysis-competent AAA4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 present systematic ATPase measurements with appropriate mutants targeting AAA1 (C57-C58), AAA4 (C59-C60), and AAA5 (C61-C62). The wild-type control (C56) confirms prior findings. All constructs were verified to bind Lis1 (Figure 4\u2014figure supplement 1), eliminating binding as a confounding variable. The conclusions about which AAA modules are required for ATPase activity in the presence of Lis1 are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors demonstrate that shortening dynein's linker to bypass Lis1 sterically renders the motor insensitive to Lis1 regulation, as shown by microtubule release assays where the short linker construct releases from microtubules in the presence of Lis1 and ATP, unlike the full-length linker construct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70 present a critical test of the steric blocking hypothesis. The short linker construct was thoroughly validated: it shows robust motility (C63), normal ATPase activity (C64), can bind Lis1 (C65), and adopts the same conformation with Lis1 as full-length linker without Lis1 (C66). The microtubule release assays (C67-C69) directly test regulation, with appropriate controls. The conclusion (C70) that steric blocking is the mechanism is strongly supported by this loss-of-regulation experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "44f8e7b3-a75a-4b39-bbb7-2cfe0451b07f",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that Lis1 keeps dynein in a persistent microtubule-bound state by sterically blocking the linker from completing its normal conformational cycle, specifically preventing it from reaching post-powerstroke positions at AAA4 and AAA5 while allowing the pre-powerstroke AAA2 position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24, C71-C72, C79-C80 represent the main conclusions synthesizing all experimental results. The steric blocking mechanism is supported by: (1) structural evidence showing linker displacement and steric incompatibility (C22, C71), (2) functional evidence from short linker experiments showing loss of regulation when steric block is removed (C23, C72), and (3) FRET/EM data showing selective blocking of specific linker positions (C71). The conclusion that this mechanism keeps dynein microtubule-bound (C24, C80) is supported by the microtubule release assays. The integration of structural and functional data strongly supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "a104265b-a90d-46cc-8e5e-9079d46b482f",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors provide background on dynein structure and function, describing it as a homodimeric minus-end-directed motor with a core AAA+ ring, linker domain, and stalk with microtubule-binding domain, where ATP hydrolysis at AAA1 must be coupled with linker motion and microtubule binding/release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 are background knowledge claims supported by appropriate citations to prior literature. These establish the context for the current work and are well-established facts in the field. The claims accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors provide background on Lis1, describing it as a dimeric dynein regulator that binds directly to the motor domain near AAA3/4, induces a slow-moving microtubule-attached state without substantially affecting ATP hydrolysis rate, and is implicated in the neurodevelopmental disorder lissencephaly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21, C25 are background claims about Lis1 supported by citations to prior work, including the authors' own previous studies. Claim C21 represents the authors' prior hypothesis ('clutch' model) that motivated the current structural work. These claims accurately represent the state of knowledge and provide appropriate context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "32fb0f66-ec04-4667-a3fe-5615afb9b272",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors discuss potential mechanisms for how Lis1 blocking affects dynein function, noting that while AAA5 linker docking mutants show similar phenotypes to Lis1 regulation, they differ in ATPase rates, and that evidence argues against specific Lis1-linker or linker-ring interactions beyond steric blocking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C78 represent mechanistic speculation and negative results. C73 is explicitly speculative. C74-C75 compare Lis1 effects to AAA5 mutants, noting similarities in motility but differences in ATPase rates, which the authors acknowledge they cannot fully explain. C76-C78 present evidence against alternative mechanisms (specific interactions), but these are based on sequence conservation analysis and limited mutagenesis. While the negative evidence is reasonable, the mechanistic understanding remains incomplete, as the authors acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    },
+    {
+      "id": "b239fd8c-e65a-4529-9fb1-b96800849ebd",
+      "content_id": "779a4de4-2050-44d3-aa4e-15bd14ee7bfc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss the biological implications of their findings, suggesting that the conserved dynein-Lis1 interface contributes to dynein's diverse cellular functions including cargo transport initiation, high-load transport, and cortical targeting, and that the linker displacement may facilitate cortical localization by unmasking the tail domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C87 are largely speculative about biological implications. C82-C84 cite prior work on Lis1's cellular roles but don't test these functions in the current study. C85 is explicit speculation about how linker displacement might contribute to cortical localization. C87 offers a structural explanation for prior observations about mammalian dynein-Lis1 complex stability in ATP+Vi conditions, which is reasonable inference from the structure but not directly tested. These represent plausible hypotheses for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:45:31.612740Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "889c25d8-399f-4208-9079-70510e1ec79a",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "aaceb27a-fa24-4275-8568-c7155d0964c1",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "c7cbfd9e-9726-4756-9a53-d88412525071",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "2ab4b6af-859f-4220-8322-793f9eb8e234",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "4f4a2a26-4a40-447c-9cc1-65680a2210f3",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "534d9c6f-e811-40b9-9510-e3b327aa75ac",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "5ddbf85b-7921-4397-bf70-c4c7b34040bd",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "51f3a4b7-9d48-4a37-b9b0-cb4a68b432da",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "61581f04-6c2c-456c-98c9-8a9d9551a12b",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "a4370e75-6a83-4aeb-a4e1-e77026d01171",
+      "result_id": "eb7a0b2b-b13b-4a6b-b95c-38a505079d72"
+    },
+    {
+      "claim_id": "f3983054-0073-4419-b4e0-2c65d3d2b58a",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "7e7e7fc7-747c-408a-bc80-3e0272948ff6",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "3cfb1afb-faea-40d4-b588-06b6c6286afb",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "93b1751a-5413-469b-9785-8f19c6f58bfa",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "fdace074-212a-440f-9103-0d5d0982b15f",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "4b1574d7-8413-4d91-bde1-1ab57e620c98",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "d4802a4b-15e3-4681-bde3-405e5690b8cc",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "3ffbf17e-f68d-4f3d-922a-df077e4a75ea",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "19cfe06d-c990-4faa-9651-7ba9d30e5c25",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "3a8bbc71-5f67-4644-912f-bbd2791462bd",
+      "result_id": "315389e5-072a-4594-be27-ed2972ae0f94"
+    },
+    {
+      "claim_id": "32c6551b-db29-4f6a-ad9e-2eb50b73d9e4",
+      "result_id": "6410b0df-d294-48f7-a555-676c7ab5a6c5"
+    },
+    {
+      "claim_id": "c4549a73-11e2-4443-86f5-e2d2a997b830",
+      "result_id": "6410b0df-d294-48f7-a555-676c7ab5a6c5"
+    },
+    {
+      "claim_id": "654810c3-39bc-4cfb-8a5b-a891433f37f7",
+      "result_id": "6410b0df-d294-48f7-a555-676c7ab5a6c5"
+    },
+    {
+      "claim_id": "1c023acd-3180-4936-974c-6f9c5660c7ed",
+      "result_id": "6410b0df-d294-48f7-a555-676c7ab5a6c5"
+    },
+    {
+      "claim_id": "b80b9c26-3f18-4771-9d9c-2de33859373a",
+      "result_id": "6410b0df-d294-48f7-a555-676c7ab5a6c5"
+    },
+    {
+      "claim_id": "8006b965-1e0b-49a9-999b-94e9c63f29db",
+      "result_id": "43752313-bfd4-45f6-b101-5a914bd70324"
+    },
+    {
+      "claim_id": "b37f7450-a487-4a5b-b6aa-1ae520466e44",
+      "result_id": "43752313-bfd4-45f6-b101-5a914bd70324"
+    },
+    {
+      "claim_id": "99083554-e6de-48e2-a917-bd40bc81c9f7",
+      "result_id": "43752313-bfd4-45f6-b101-5a914bd70324"
+    },
+    {
+      "claim_id": "254d383a-e87a-4a54-9167-bb4747a55750",
+      "result_id": "43752313-bfd4-45f6-b101-5a914bd70324"
+    },
+    {
+      "claim_id": "9af27013-8bd8-435f-b05d-a525e29aa39c",
+      "result_id": "43752313-bfd4-45f6-b101-5a914bd70324"
+    },
+    {
+      "claim_id": "b76381f1-8e9d-48e1-b3f1-22b7b793e75a",
+      "result_id": "1b72ec66-034c-4c7d-9655-b44f12aff16c"
+    },
+    {
+      "claim_id": "757db521-4a90-452f-92da-3b51380e52b2",
+      "result_id": "1b72ec66-034c-4c7d-9655-b44f12aff16c"
+    },
+    {
+      "claim_id": "6d1643e5-d9e2-498e-a02b-023ec5a299cb",
+      "result_id": "1b72ec66-034c-4c7d-9655-b44f12aff16c"
+    },
+    {
+      "claim_id": "b7c35d5d-0aa7-4525-bf2c-d9c447bb94a5",
+      "result_id": "1b72ec66-034c-4c7d-9655-b44f12aff16c"
+    },
+    {
+      "claim_id": "69828c74-f7ad-4692-8161-fa25279c9d6c",
+      "result_id": "1b72ec66-034c-4c7d-9655-b44f12aff16c"
+    },
+    {
+      "claim_id": "11ce77dc-4d52-4416-9638-b9b5aa3ea62c",
+      "result_id": "1b72ec66-034c-4c7d-9655-b44f12aff16c"
+    },
+    {
+      "claim_id": "128424bf-7a2c-4f27-8931-627318e3374c",
+      "result_id": "1b72ec66-034c-4c7d-9655-b44f12aff16c"
+    },
+    {
+      "claim_id": "1506e9aa-92d9-4cd5-bcde-996417957073",
+      "result_id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303"
+    },
+    {
+      "claim_id": "9d20fe45-ee8b-497e-a75d-c1867056c368",
+      "result_id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303"
+    },
+    {
+      "claim_id": "f23c24d6-f93c-4f79-9385-d76240a5e9fa",
+      "result_id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303"
+    },
+    {
+      "claim_id": "7c0a1240-b025-4777-b8ae-4d5a145af273",
+      "result_id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303"
+    },
+    {
+      "claim_id": "ba1f55a1-1010-4a18-89b2-8f541aca1b37",
+      "result_id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303"
+    },
+    {
+      "claim_id": "94cb7d28-e7ed-41e7-80e3-c3fb9662ad6a",
+      "result_id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303"
+    },
+    {
+      "claim_id": "e4f1371a-bacb-4aa3-9713-cf878b6752fc",
+      "result_id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303"
+    },
+    {
+      "claim_id": "c672c69d-e919-4ce4-b5c9-b10b2cab9e0c",
+      "result_id": "e3a4b4fc-688b-452f-8e1a-94ff2967e303"
+    },
+    {
+      "claim_id": "aea1abca-2794-47c8-a24a-fd2a73e8927b",
+      "result_id": "44f8e7b3-a75a-4b39-bbb7-2cfe0451b07f"
+    },
+    {
+      "claim_id": "13d9e3cc-5364-49ca-b524-f5692decf556",
+      "result_id": "44f8e7b3-a75a-4b39-bbb7-2cfe0451b07f"
+    },
+    {
+      "claim_id": "17728cc8-25f4-4485-80e1-99497c40cf7d",
+      "result_id": "44f8e7b3-a75a-4b39-bbb7-2cfe0451b07f"
+    },
+    {
+      "claim_id": "e8d511ad-be1a-4072-a1be-c36390a40beb",
+      "result_id": "44f8e7b3-a75a-4b39-bbb7-2cfe0451b07f"
+    },
+    {
+      "claim_id": "8d322f1c-1c36-4e5b-af1b-a2770dcde825",
+      "result_id": "44f8e7b3-a75a-4b39-bbb7-2cfe0451b07f"
+    },
+    {
+      "claim_id": "8e176d0c-ec7b-4090-b5a3-c03014bfa84b",
+      "result_id": "44f8e7b3-a75a-4b39-bbb7-2cfe0451b07f"
+    },
+    {
+      "claim_id": "f1cca765-f79e-4345-8503-6ccf650b0884",
+      "result_id": "44f8e7b3-a75a-4b39-bbb7-2cfe0451b07f"
+    },
+    {
+      "claim_id": "2992c70e-20c3-4d23-ac3e-3b2a4e9d389e",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "ae122364-264c-48d9-8943-fe65af273cc4",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "36f11f65-51ad-4426-a8a0-73ee9898fbab",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "e2604292-2461-4daf-b0a5-2da25710d4ea",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "33ae1484-53ab-4ab2-8720-bcbe3ba55e6e",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "252fe7a5-e81f-4f20-9357-e97b0c0cc155",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "44238204-3842-453c-8ee6-ee96d783471a",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "2cbdd08b-f179-4c54-8097-423587f7985f",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "7579ef71-f838-4cf8-8543-24c004abc938",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "1083c160-037f-4830-9b2c-ab4dfdfdf222",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "88a22b32-021f-47d0-be66-aeaf28fe1844",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "98f86f52-a0e6-4ec6-8401-b01fedc127cf",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "5a5b0793-8b5f-4da5-a01e-1ad06e967269",
+      "result_id": "a104265b-a90d-46cc-8e5e-9079d46b482f"
+    },
+    {
+      "claim_id": "5f29f43c-2a76-4ac7-bc65-aa94c3deee98",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "4165bd6b-4564-4117-960a-57fd87d723c4",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "abd5e2ae-ba95-4d9f-bf86-281aa19073ed",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "3b9e81e9-eda0-45be-9468-4b50c4b8287a",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "b4a246e0-6ee8-4550-b8e8-e3fc8ca60034",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "1e14ca38-e8d9-49ab-994e-874e4fd6074e",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "513d058c-6213-4475-a8a9-180ba97d6e6b",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "196d4781-e647-4d89-89c2-331ccfed1591",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "59362a64-65b7-4186-b52e-855a5f6f52d2",
+      "result_id": "74e8443a-8c6a-4a6c-b28a-c4e66703514c"
+    },
+    {
+      "claim_id": "9bda6396-195f-4834-b6b4-4231b7354257",
+      "result_id": "32fb0f66-ec04-4667-a3fe-5615afb9b272"
+    },
+    {
+      "claim_id": "43e894a9-14b4-42aa-9eaf-c1c6b01b6679",
+      "result_id": "32fb0f66-ec04-4667-a3fe-5615afb9b272"
+    },
+    {
+      "claim_id": "c73c2a40-1fc6-4e05-a8c6-183c76461e61",
+      "result_id": "32fb0f66-ec04-4667-a3fe-5615afb9b272"
+    },
+    {
+      "claim_id": "34fd3615-579e-44ae-a1d4-d478a974a31f",
+      "result_id": "32fb0f66-ec04-4667-a3fe-5615afb9b272"
+    },
+    {
+      "claim_id": "21217a7a-49cf-415e-b6ad-c293c6483401",
+      "result_id": "32fb0f66-ec04-4667-a3fe-5615afb9b272"
+    },
+    {
+      "claim_id": "43d341d6-8fb0-4c58-a12a-648a3d6245da",
+      "result_id": "32fb0f66-ec04-4667-a3fe-5615afb9b272"
+    },
+    {
+      "claim_id": "e42797e1-0df4-495c-90f1-19f944d9ecbb",
+      "result_id": "b239fd8c-e65a-4529-9fb1-b96800849ebd"
+    },
+    {
+      "claim_id": "fe23a6fe-da0c-40d4-b798-1882cd359f52",
+      "result_id": "b239fd8c-e65a-4529-9fb1-b96800849ebd"
+    },
+    {
+      "claim_id": "c73964f6-6565-452f-aa55-de56e163ac96",
+      "result_id": "b239fd8c-e65a-4529-9fb1-b96800849ebd"
+    },
+    {
+      "claim_id": "ebff6b43-e617-4655-83b0-7f3a4eed08c0",
+      "result_id": "b239fd8c-e65a-4529-9fb1-b96800849ebd"
+    },
+    {
+      "claim_id": "67989d30-7887-4478-b845-c1090e7f9634",
+      "result_id": "b239fd8c-e65a-4529-9fb1-b96800849ebd"
+    },
+    {
+      "claim_id": "0037b753-5868-4e28-acb8-298613bf1217",
+      "result_id": "b239fd8c-e65a-4529-9fb1-b96800849ebd"
+    },
+    {
+      "claim_id": "33e014d3-7031-4746-a04f-f9cc608872b8",
+      "result_id": "b239fd8c-e65a-4529-9fb1-b96800849ebd"
+    }
+  ],
+  "comparisons": []
+}

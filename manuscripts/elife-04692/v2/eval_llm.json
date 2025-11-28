@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "A within-host mathematical model for tropical P. vivax relapses was fitted to empirical data from three ecological zones using Bayesian methods. The model estimates parameters for hypnozoite number (N), activation rate (\u03b1), and death rate (\u03bc), though N and \u03b1 were found to be highly correlated, indicating identifiability issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C18 and C81-C89 describe model fitting to empirical relapse data. However, C84 explicitly acknowledges that the data were \"not sufficiently informative to estimate the three parameters simultaneously,\" requiring informative priors (C85-C86). The high correlation between N and \u03b1 (C17, Figure 1\u2014figure supplement 1) indicates a fundamental identifiability problem: the same relapse pattern can result from few fast-activating or many slow-activating hypnozoites (C18). While the Bayesian framework is appropriate, the reliance on informative priors and parameter non-identifiability means the specific parameter estimates are uncertain and model-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The within-host model predicts dose-dependent relapse patterns where more hypnozoites lead to more frequent relapses and shorter time to first relapse. The model also predicts that apparent periodicity in relapses can arise from censoring effects due to prophylactic drug protection, rather than biological mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C25-C28 are well-supported by model simulations shown in Figures 2 and 3. The dose-dependency prediction (C19) follows logically from the model structure with independent hypnozoite activation. The periodicity explanation (C22-C23) is demonstrated through simulations with 14-day censoring windows. The exponential decay predictions (C25-C28) are consistent with the constant-rate assumptions and supported by cited empirical observations (Horing 1947, White 2011). These are internally consistent model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The model assumes hypnozoites activate and die at constant rates, act independently, and follow a geometric distribution in number. The constant activation assumption implies immediate relapse potential, though this conflicts with clinical observations of a ~2-3 week delay before first relapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C49 and C69-C75 describe core model assumptions. While mathematically tractable, the constant activation assumption (C42-C43) is acknowledged to conflict with clinical observations (C44). The authors argue prophylactic drug effects mask early relapses, but this is speculative. C45 cites Tarning et al. (2014) as providing equivocal support. The model explicitly excludes known biological factors like fever triggers (C46), heterogeneity (C47), immunity (C48), and assumes all infected individuals transmit equally (C49). These simplifications may be reasonable for qualitative insights but limit quantitative predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "For temperate strains, the model incorporates a long-latency phase (mean ~6 months) before hypnozoites can activate, modeled using a gamma distribution implemented through multiple compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe the temperate strain model extension. The gamma distribution approach using M compartments (C78) is a standard mathematical technique for reducing variance in waiting times. The 6-month latency period is well-documented in the literature (C13-C14, C16). The model structure is clearly described and mathematically sound, though the biological mechanisms remain unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The transmission model predicts that the hypnozoite reservoir is over-dispersed following a negative binomial distribution, with hypnozoite prevalence exceeding blood-stage prevalence. For given transmission intensity, P. vivax blood-stage prevalence is predicted to exceed P. falciparum prevalence due to multiple relapses from single infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C29-C32 are supported by model predictions shown in Figure 4. The negative binomial distribution (C32) arises naturally from the geometric distribution assumption for hypnozoites per infection combined with multiple infections. The prediction that hypnozoite prevalence exceeds blood-stage prevalence (C29) follows logically from the longer duration of hypnozoite carriage. The PvPR > PfPR prediction (C30) is a direct consequence of relapses generating additional blood-stage infections. These are internally consistent model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The model predicts higher P. vivax than P. falciparum blood-stage prevalence at similar transmission intensities, but this contradicts empirical observations. The authors attribute this discrepancy to rapid immunity acquisition, low detectability of P. vivax, and longer P. falciparum infection durations not captured in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C51-C54 identify a major discrepancy between model predictions and empirical data. C51 states the model prediction while C52 notes it contradicts observations (Snounou and White 2004, Mueller et al. 2009b). C53 offers post-hoc explanations citing immunity, detectability, and infection duration, but these factors are explicitly excluded from the model (C47-C48). This represents a fundamental model failure that the authors acknowledge but do not resolve. The explanations in C53 are speculative and would require model modifications to test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C56",
+      "C57"
+    ],
+    "result": "Vector control interventions are predicted to cause greater reductions in P. falciparum than P. vivax prevalence because the hypnozoite reservoir allows P. vivax transmission to persist with fewer mosquito bites. This prediction is supported by observations from Thailand and Brazil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C56-C57 present a model prediction (Figure 5A) with empirical support. The differential impact follows logically from the hypnozoite reservoir providing a buffer against transmission interruption. Citations to field observations from Thailand (Sattabongkot et al. 2004) and Brazil (Coura et al. 2006) provide external validation (C57). This represents a well-supported qualitative prediction, though quantitative validation would require more detailed comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Treatment with blood-stage antimalarials alone reduces blood-stage prevalence of both species but has slow impact on the P. vivax hypnozoite reservoir since it is not directly targeted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 describe model predictions shown in Figure 5B. The slow reduction in hypnozoite prevalence (C35) follows logically from the model structure where blood-stage treatment only indirectly affects hypnozoites by preventing transmission. This is a straightforward consequence of the three-reservoir structure (blood, liver, mosquito) and is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Incorporating primaquine into first-line treatment is predicted to cause substantial reductions in P. vivax transmission by efficiently targeting the hypnozoite reservoir. Individuals with more hypnozoites experience more relapses, making them more likely to seek treatment and have their hypnozoites cleared, creating a self-targeting effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C36-C38 present a key model prediction supported by Figures 5C and 6. The self-targeting mechanism (C37-C38) is a logical consequence of the dose-dependent relapse frequency (C19) combined with treatment upon clinical presentation. Figure 6 demonstrates the preferential reduction in high-burden individuals. This represents an important and well-supported insight about intervention targeting, though it assumes perfect treatment compliance and efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C59"
+    ],
+    "result": "Greater control effort is required to reduce P. vivax than P. falciparum transmission when blood-stage prevalence is similar, due to the additional hypnozoite reservoir. Primaquine treatment for P. falciparum may also reduce P. vivax transmission in co-endemic areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C59 are logical inferences from the model structure. C55 follows from the three-reservoir system requiring interventions to target an additional parasite stage. C59 is supported by C58 citing heterogeneity in exposure (Douglas et al. 2011). Both represent reasonable qualitative predictions, though C59 is more speculative as it depends on co-infection patterns not explicitly modeled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Empirical studies in Papua New Guinea show that blood-stage antimalarials alone lead to rapid recurrence, while adding primaquine substantially reduces recurrence. However, primaquine requires 14-day treatment, poses hemolytic risks in G6PD-deficient patients, and requires G6PD testing. Tafenoquine offers single-dose treatment but has similar G6PD risks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 summarize established knowledge about primaquine and tafenoquine treatment, supported by appropriate citations (Betuela et al. 2012, Howes et al. 2013, Kim et al. 2011, Llanos-Cuentas et al. 2014). C60-C61 provide empirical validation of the model's predictions about primaquine efficacy. C62-C67 accurately describe treatment challenges and alternatives. These are well-documented facts from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "In the absence of effective diagnostics for liver-stage parasites, mathematical models will play a crucial role in estimating intervention effectiveness against the hypnozoite reservoir.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a reasonable conclusion supported by citation to malERA Consultative Group (2011) regarding diagnostic limitations. Given that hypnozoites cannot be directly detected in living patients, modeling is indeed necessary for predicting intervention impacts. This represents a well-justified statement about the role of modeling in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C39"
+    ],
+    "result": "Background claims about P. vivax biology, epidemiology, and the hypnozoite reservoir, including geographical variation in relapse patterns and the distinction from P. falciparum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C5-C16, C39 present established knowledge about P. vivax biology and epidemiology, appropriately supported by citations to the literature (Mueller et al., Battle et al., White, Berliner et al., Coatney et al., etc.). These provide necessary background context and are well-documented in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C58"
+    ],
+    "result": "Alternative hypotheses for relapse patterns include fever-triggered activation and associations between P. falciparum and P. vivax in co-endemic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C58 cite alternative mechanisms from the literature (White 2011, Douglas et al. 2011). These represent competing hypotheses that the current model does not test, appropriately acknowledged as limitations (C46). The citations provide adequate support for these alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Parasite prevalence (PfPR and PvPR) are the most widely reported and validated metrics of malaria transmission from epidemiological studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by citations to Gething et al. (2011a, 2012) and represents established epidemiological practice. This is a factual statement about measurement standards in the field.",
+    "result_type": "MINOR"
+  }
+]

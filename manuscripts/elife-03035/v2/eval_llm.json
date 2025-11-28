@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A structural model of E. coli YidC was developed using evolutionary covariation analysis of 2366 sequences, predicting seven helix-helix contacts with >57% probability and revealing a pentagonal arrangement of TM helices (4-5-3-2-6) plus a helical paddle domain (HPD) between TM2 and TM3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 describe a rigorous covariation analysis with clear specificity (C16-C17), and the resulting model (C18) is consistent with the predicted contacts. The HPD structure (C21-C23) is supported by covariation predictions. The methodology is well-documented and the predictions are specific and testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The E. coli YidC model was validated against subsequently published BhYidC2 crystal structures (34% sequence identity), showing RMSD of 7.3-7.5 \u00c5 for TM helices, which is within the resolution limits of the covariation method. The global TM arrangement matches, though helix tilt angles and HPD orientation differ, suggesting flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide quantitative validation against independent crystal structures. The RMSD values (C25) and assessment that this is within method resolution (C26) are reasonable. The observed differences in HPD orientation (C29-C31) are appropriately interpreted as flexibility, supported by crystallographic B-factors (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The E. coli YidC model shows a more closed hydrophilic groove than BhYidC2 crystal structures due to covariation-predicted TM3-TM5 and TM3-TM6 contacts. These predicted residue pairs are outliers (14.9-20.9 \u00c5 vs. 8.2 \u00c5 average) in the BhYidC2 structures, and TM3 position differs between the two crystal forms, indicating that TM3 movement is a genuine feature of YidC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 document structural differences between crystal forms. Claims C39-C40 provide quantitative evidence that covariation predictions are violated in the crystal structures. The conclusion (C41) that TM3 movement is genuine is well-supported by convergent evidence from both crystal structures and covariation analysis. The mechanistic speculation (C42) is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Molecular dynamics simulations (500 ns) show that the YidC model is stable, with a rigid TM core stabilized by hydrophobic interactions with lipids and inter-helix contacts. Cytoplasmic-side residues engage in electrostatic interactions while periplasmic-side residues show aromatic stacking interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 describe MD simulation results with appropriate detail about stability and interaction patterns. The 500 ns simulation length is substantial. The analysis of interaction types (hydrophobic, electrostatic, aromatic) is standard and well-supported by the data presented in Figure 3B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mutagenesis of residues identified by MD simulations as structurally important (T362A in TM2 and Y517A in TM6, located at the same membrane height) completely inactivated YidC in vivo, while nearby residues showed intermediate effects and distant residues had no effect. Both mutants were stably expressed, ruling out protein instability as the cause.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 provide functional validation of the structural model through systematic mutagenesis. The complementation assay (C50, C54-C55) shows a clear spatial pattern of effects. Western blot data (C52) appropriately controls for protein stability (C53). This provides strong experimental support for the model's functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MD simulations reveal that YidC induces significant membrane thinning (7-10 \u00c5) due to hydrophobic mismatch, with the thinnest region near TM3 and TM5. This region is where YidC substrates have been shown to crosslink, suggesting membrane thinning may be mechanistically relevant for insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe a clear MD simulation result with quantitative measurements. The connection to substrate crosslinking data (C60) from prior studies strengthens the mechanistic inference (C61). The speculation is appropriately qualified and based on convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "MD simulations reveal a hydrophilic environment on the cytoplasmic side of the YidC TM bundle that transitions to a hydrophobic aromatic cluster toward the periplasmic side, potentially serving to receive polar substrate regions during translocation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 describe structural features observed in MD simulations and shown in Figure 3F. The mechanistic speculation (C64) is appropriately tentative ('tempting to speculate') and consistent with the structural observations. This is supported by similar conclusions from BhYidC2 studies (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Cryo-EM analysis of YidC-RNC complexes (with FOc substrate) at ~8 \u00c5 resolution shows YidC binding at the ribosomal exit site. The detergent micelle was separated from YidC density, and elongated structural features allowed distinct docking of the YidC model with cross-correlation coefficient 0.865.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 describe the cryo-EM structure determination with appropriate technical detail. The ~8 \u00c5 resolution (C67) is reasonable for this type of complex. The cross-correlation coefficient of 0.865 (C70) indicates good model-map agreement. The ability to separate micelle from protein density (C69) demonstrates data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Two unaccounted densities in the cryo-EM map were assigned as the FOc TM helix (near TM3) and YidC TM1 (near TM5) based on: alignment with the ribosomal exit tunnel, prior crosslinking data, and comparison to SecY structures. Disulfide crosslinking experiments confirmed that FOc crosslinks to YidC TM3 (M430C, P431C) but not TM5 (V500C, T503C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 describe the density assignment logic based on multiple lines of evidence. The disulfide crosslinking experiments (C76-C78) provide direct experimental validation of the assignment. The negative control with TM5 mutants (C78) strengthens the conclusion. The convergent evidence from cryo-EM, prior crosslinking studies, and new experiments strongly supports the assignments (C79-C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The P1 domain shows weak, smaller-than-expected density in the cryo-EM structure, attributed to flexibility. The HPD shows no density, consistent with its flexibility observed in both BhYidC2 crystal structures and MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 appropriately interpret weak P1 density as flexibility. Claims C84-C85 note the absence of HPD density and correctly connect this to prior observations of flexibility from crystal structures (C32) and MD simulations (C43-C45). The interpretation is reasonable given the ~8 \u00c5 resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Mutations of ribosome-contacting residues (Y370A, Y377A contacting rRNA helix 59; D488K contacting uL23) severely impair YidC activity in vivo. All mutants were stably expressed, ruling out instability. Given YidC's general tolerance to mutations, these functional effects validate the ribosome-bound model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 identify specific ribosome contacts and their functional importance through mutagenesis. Western blot controls (C90-C91) rule out stability issues. The argument (C92-C93) that functional effects in a mutation-tolerant protein validate the model is sound and strengthens confidence in the structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Only a single YidC monomer is observed bound to the active ribosome, consistent with recent literature showing both YidC and SecY can be fully active as monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a direct observation from the cryo-EM structure. Claim C95 provides literature support for monomeric activity. This addresses the controversy mentioned in C12 about YidC oligomeric state and is well-supported by both the structural data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Unlike SecY, which translocates hydrophilic chains through a central channel and inserts TM domains via a lateral gate, the YidC model suggests substrates are inserted at the protein-lipid interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 accurately describe established SecY mechanisms with appropriate citations. Claim C98 presents a mechanistic model for YidC based on the structural data. The contrast with SecY is well-founded and the inference about the protein-lipid interface is supported by the structural observations (C7-C8, C62-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "YidC facilitates membrane protein insertion by: (i) providing a hydrophilic environment within the membrane core for substrate hydrophilic regions, and (ii) reducing bilayer thickness. Initial hydrophilic interactions enable partial membrane insertion while exposing hydrophobic TM domains to the bilayer core, potentially compensating for the energetic cost of driving hydrophilic regions across the thinned bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 are well-supported by MD simulations (C56-C64). However, claims C101-C103 are explicitly speculative mechanistic proposals ('would allow', 'may compensate') without direct experimental validation. While the model is plausible and consistent with structural observations, the proposed mechanism requires additional experimental validation (e.g., substrate insertion intermediates, energetic measurements). The authors appropriately acknowledge this need for future work in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Background knowledge: Most bacterial membrane proteins integrate co-translationally via the universally conserved YidC protein, either alone or with the SecY complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent established background knowledge appropriately cited in the introduction. These provide context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior to this study, only the P1 domain structure was available (poorly conserved, non-essential), ribosome-binding regions were unidentified, and YidC oligomeric state during translocation was controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 accurately describe the state of knowledge prior to this study with appropriate citations. Claim C13 identifies FOc as the substrate used. These establish the knowledge gaps addressed by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The HPD is not essential for YidC function in E. coli as its deletion does not compromise cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by citation to Jiang et al., 2003. This prior finding is relevant for interpreting the HPD flexibility observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Similar mechanistic conclusions about YidC have been drawn from BhYidC2 crystal structures and crosslinking studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 appropriately acknowledges convergent conclusions from independent work (Kumazaki et al., 2014), strengthening confidence in the mechanistic model.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "E. coli swimming behavior is controlled by flagellar motors that switch between CCW and CW rotation in response to CheY-P concentration, enabling chemotaxis through modulation of runs and tumbles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 describe well-established background knowledge about bacterial motility and chemotaxis, supported by appropriate citations to foundational work in the field. These claims provide the necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Previous work established that flagellar number varies greatly (1-10+), direct measurements have been limited to short durations (~1s), theoretical models have made simplifying assumptions, and Turner et al. showed a single CW flagellum can veto a run.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 accurately summarize prior work with appropriate citations. The characterization of the state of the field and limitations of previous studies is well-documented and provides justification for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C54",
+      "C63"
+    ],
+    "result": "Wild-type cells with multiple flagella deviate significantly from the simple veto model (p=0.0003, N=69), while CheY* cells match the model (p=0.77, N=46). A single CW flagellum is sufficient to induce tumbling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 present statistically significant experimental findings with adequate sample sizes. C54 confirms the veto principle while C63 describes the model framework. The deviation from the veto model in wild-type but not CheY* cells is a key observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "More than half of tumbles in multi-flagellated wild-type cells (56%, 117/210 events) involved multiple CW flagella, significantly more than expected for independent switching. Significant correlations between flagellar pairs persisted for ~1s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 present quantitative experimental observations with adequate event counts (210 tumbles). The comparison to simulations of independent switching (C15) provides appropriate controls. The temporal correlation analysis strengthens the evidence for flagellar coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C31"
+    ],
+    "result": "Previous work by Terasawa et al. observed correlations between motors on surface-immobilized cells and proposed CheY-P fluctuations as a coupling mechanism. Mutant cells with decoupled CheY-P showed no correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C20, and C31 accurately cite and describe relevant prior work that supports the interpretation of the current findings. The citations are appropriate and the characterization of prior results is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CheY* cells show far less correlated flagellar switching than wild-type, with fewer CW flagella participating in tumbles. The number of participating flagella matched expectations for independent switching, indicating motors switch independently when decoupled from the chemotaxis network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 present a coherent set of observations from the CheY* mutant (54 wild-type vs 24 CheY* cells with matched CW biases). The comparison to simulations and the logical inference about independent switching when decoupled from the network are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Inter-flagellar correlations in wild-type cells explain deviation from the veto model. A simple mathematical expression relates run/tumble bias to flagellar number and state, but an effective number of flagella (smaller than actual) must be used, making behavior weakly dependent on flagellar number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C64, C65, and C67 present the key conceptual framework and main conclusions. The inference is well-supported by the experimental data showing correlations (C14-C17) and the difference between wild-type and CheY* cells (C21-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The effective number of flagella (Neff) is consistently smaller than actual flagellar number (Nflag) in wild-type cells (Neff \u2248 1.27 \u00d7 Nflag^0.5), while Neff \u2248 Nflag for CheY* cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 present quantitative relationships derived from experimental data shown in Figure 3C and Figure 3\u2014figure supplement 1. The empirical fit and the contrast between wild-type and CheY* cells provide strong support for the effective flagella concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "In wild-type cells, CheY-P levels fluctuate due to phosphorylation/dephosphorylation reactions, while in CheY* mutants, CheY* levels are constant and decoupled from the chemotaxis network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 describe established properties of the two strains with appropriate citations. This provides the mechanistic basis for interpreting differences between wild-type and CheY* behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C66"
+    ],
+    "result": "Stochastic simulations with CheY-P fluctuations reproduced wild-type behavior, while simulations without fluctuations matched CheY* data. Using only two parameters (amplitude and timescale of fluctuations), simulations simultaneously reproduced multiple experimental observations, suggesting CheY-P fluctuations are the source of flagellar correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C66 describe comprehensive modeling results that simultaneously fit multiple independent experimental observations (Figures 2C, 2D, 3C, 4C) with only two free parameters. This parsimony and breadth of agreement strongly supports the CheY-P fluctuation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "There is no direct experimental evidence for the CheY-P fluctuations depicted in the model. While fluctuations have been inferred from tethered-bead assays, those fluctuations differ in timescale and amplitude from what is required here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide an honest assessment of limitations. The authors explicitly acknowledge the lack of direct evidence for their proposed mechanism and note discrepancies with prior indirect measurements. This transparency is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "An alternative hydrodynamic coupling mechanism proposed by Hu and Tu predicts flagellar number should affect switching rates, but experimental data show no such effect. The chemotaxis network fluctuation mechanism is more plausible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 present a critical evaluation of an alternative hypothesis. The experimental test (C40-C41, Figure 2\u2014figure supplements 1-2) directly addresses a prediction of the alternative model and finds no support, strengthening the case for the CheY-P fluctuation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Multi-flagellated wild-type cells tumble less than expected, making swimming behavior robust to flagellar number variation. This robustness may be evolutionarily advantageous, as cells with many flagella would otherwise tumble excessively and inhibit chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 connect the findings to functional implications. C45 is supported by data (Figure 4\u2014figure supplement 4), C46 is a reasonable inference, and C47-C48 present logical speculation about evolutionary advantages. The reasoning is sound though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The majority of CCW-to-CW switches (77%, 164/213) transitioned to semi-coiled, with most (71%) remaining semi-coiled until returning to CCW. Some (22%) skipped semi-coiled and went directly to curly-1. This agrees qualitatively with previous observations of 'canonical tumbles'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 present detailed quantitative observations of flagellar waveform transitions from 213 switching events (Figure 4\u2014figure supplement 2). The comparison to prior work (Darnton et al.) is appropriate, and the caveat about potential differences in optical traps is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C61",
+      "C62"
+    ],
+    "result": "Cells with all flagella in normal waveform ran 91% of the time, while cells with a single curly-1 flagellum (others normal) ran only 18% of the time, indicating a single curly-1 flagellum is sufficient to induce tumbling most of the time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C61, and C62 present quantitative observations about the relationship between flagellar waveforms and cell behavior (Figure 1\u2014figure supplement 5). The data support the conclusion that curly-1 flagella are effective at inducing tumbles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "While the relationship between chemotaxis signaling and individual motor bias is well-mapped, how multiple motors collectively determine whole-cell swimming remains poorly understood. This study provides the first experimentally-derived mathematical relation between flagellar and whole-cell swimming states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 accurately characterize the state of the field and position the novelty of the current work. The claim of being 'first' (C59) is appropriately qualified ('to the best of our knowledge') and is supported by the comprehensive literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Flagellar distributions from trapped cells (N=86) and TEM (N=56) have very similar means, validating the trapping method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 presents a methodological validation comparing two independent measurement approaches (Figure 1\u2014figure supplement 1). The agreement between methods supports the reliability of the optical trapping approach for flagellar counting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The high fraction of CW flagella during tumbles in wild-type cells agrees qualitatively with previous measurements by Turner et al., who observed that a majority of tumbles involved multiple flagella leaving the bundle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 appropriately connects the current findings to prior work, showing consistency between studies. The citation is appropriate and the comparison strengthens confidence in the results.",
+    "result_type": "MINOR"
+  }
+]

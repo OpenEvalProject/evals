@@ -1,0 +1,1636 @@
+{
+  "submission": {
+    "id": "c94b7bf1-c17d-476b-9450-683e012bb494",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:38:39.073256Z",
+    "updated_at": "2025-11-28T21:38:39.073256Z"
+  },
+  "content": [
+    {
+      "id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "submission_id": "c94b7bf1-c17d-476b-9450-683e012bb494",
+      "content_type": "manuscript",
+      "content_text": "# A combined quantitative mass spectrometry and electron microscopy analysis of ribosomal 30S subunit assembly in E. coli\n\n## Authors\n\n- Dipali G Sashital<sup>1</sup>\n- Candacia A Greeman<sup>1</sup>\n- Dmitry Lyumkis<sup>1</sup>\n- Clinton S Potter<sup>1</sup>\n- Bridget Carragher<sup>1</sup>\n- James R Williamson<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Integrative Structural and Computational Biology Scripps Research Institute La Jolla United States\n2. National Resource for Automated Molecular Microscopy Scripps Research Institute La Jolla United States\n3. Department of Chemistry Scripps Research Institute La Jolla United States\n4. Skaggs Institute for Chemical Biology Scripps Research Institute La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRibosome assembly is a complex process involving the folding and processing of ribosomal RNAs (rRNAs), concomitant binding of ribosomal proteins (r-proteins), and participation of numerous accessory cofactors. Here, we use a quantitative mass spectrometry/electron microscopy hybrid approach to determine the r-protein composition and conformation of 30S ribosome assembly intermediates in Escherichia coli. The relative timing of assembly of the 3\u2032 domain and the formation of the central pseudoknot (PK) structure depends on the presence of the assembly factor RimP. The central PK is unstable in the absence of RimP, resulting in the accumulation of intermediates in which the 3\u2032-domain is unanchored and the 5\u2032-domain is depleted for r-proteins S5 and S12 that contact the central PK. Our results reveal the importance of the cofactor RimP in central PK formation, and introduce a broadly applicable method for characterizing macromolecular assembly in cells.\n\n## Introduction\n\nThe ribosome catalyzes protein biosynthesis and is essential for cell growth. In Escherichia coli (E. coli), the 70S ribosome is a large (2.4 MDa) ribonucleoprotein consisting of a small (30S) and large (50S) subunit. Because ribosome biogenesis is complex and taxing on the metabolic resources of the cell, the process is tightly regulated. The efficiency of ribosome assembly is so directly tied to cell growth that even slight defects in assembly confer a significant selective disadvantage, and strong defects can threaten cell survival. In addition, ribosomes must be assembled accurately to ensure the fidelity of protein synthesis. A large number of accessory factors have been implicated in the regulation and efficiency of ribosomal production, although the precise roles for many of these factors remain unknown (Reviewed in Wilson and Nierhaus, 2007; Shajani et al., 2011).\n\nRemarkably, the 30S subunit can be reconstituted in vitro from 16S ribosomal RNA (rRNA) and 20 ribosomal proteins (r-proteins) in a high temperature, high Mg2+ environment (Traub and Nomura, 1969). Early work by Nomura and colleagues established the order and dependencies of r-protein binding in the assembling 30S subunit under equilibrium conditions (Figure 1A) (Mizushima and Nomura, 1970; Held et al., 1973, 1974). In the early stages of assembly, primary r-proteins bind directly to the 5\u2032-, central and 3\u2032-domains of 16S rRNA. These initial r-protein binding events lead to changes in the rRNA structure, and facilitate subsequent binding of secondary and tertiary r-proteins (Held et al., 1973; Stern et al., 1989). More recent studies using time-resolved hydroxyl radical RNA structure probing (Adilakshmi et al., 2008), fluorescence correlation spectroscopy (Ridgeway et al., 2012), single-molecule fluorescence resonance energy transfer (Kim et al., 2014), pulse-chase monitored by quantitative mass spectrometry (Talkington et al., 2005; Bunner et al., 2010a), and time-resolved negative stain electron microscopy (Mulder et al., 2010) added valuable insight into the dynamics and kinetics of RNA folding, r-protein binding, and immature subunit conformations throughout the assembly process. These studies have revealed that even in the presence of r-protein binding dependencies, assembly can proceed through multiple parallel pathways. In addition, a large body of evidence indicates that misfolded rRNA structure leads to stable kinetic traps during in vitro 30S reconstitution, inhibiting the binding of several secondary and tertiary r-proteins and limiting the efficiency of the reconstitution (Reviewed in Sykes and Williamson, 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig1-v2.jpg)\n\n**Figure 1.:** (A) Nomura assembly map; adapted. Three major regions of 16S rRNA are labeled at top. Arrows represent binding dependencies, with primary, secondary and tertiary proteins labeled on left. (B) Sucrose gradient chromatogram (absorbance at 254 nm) for WT E. coli lysate. 30S peak fractions analyzed by qMS and EM are labeled. (C) R-proteins clustered by relative abundance in 30S particles across sucrose gradient fractions 1\u20135 with a blue to red gradient representing high to low relative abundance. Relative abundance of each r-protein was normalized to that of S4. Gray boxes indicate r-proteins for which no peptides were detected. Clusters of r-proteins from more abundant to less abundant across the gradient are highlighted on the right as blue, green, yellow, and red. (D) Negative stain EM class averages for sucrose gradient fractions 2\u20135 (labeled at bottom). Classes were obtained by reference-free maximum likelihood alignment and classification and are sorted by Group. Histogram at top shows the fractional contribution of particles from each dataset to each Group.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Exemplar image collected on FEI T12 transmission electron microscope operating at 120 keV and equipped with a Tietz TemCam-F416 4k \u00d7 4k CMOS camera at nominal magnification of 52000\u00d7. Scale bar represents 200 nm. (B) Particle picks selected by reference-free DoG picking. (C) Initial class averages obtained by reference-free maximum likelihood alignment and classification. Several E. coli complexes are readily observed, including pili (26), GroEL (27 and 32), glutamine synthetase complex (33) and pyruvate dehydrogenase and 2-oxoglutarate dehydrogenase complexes (49). Components of these complexes were detected by MS-MS analysis of the sucrose gradient fractions (Supplementary file 1). 30S intermediates were identified by comparison with previous EM studies (Mandiyan et al., 1991; Mulder et al., 2010), and by further experiments including affinity purification described in text.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Class averages obtained from data sets for four WT sucrose gradient fractions (ML2D, 15 classes). The final classes were aligned to one another using EMAN align2d (Ludtke et al., 1999). (B) Dendrogram showing clustering of class averages from (A). Groups are labeled on bottom, and classes are ordered based on fraction and Group in Figure 1D.\n\nIn the cell, 30S assembly is fast and efficient, proceeding with the help of numerous assembly factors, including enzymes that directly modify the 16S rRNA and r-proteins, as well as a number of RNA-binding chaperones and GTPases that assist in RNA folding (Reviewed in Wilson and Nierhaus, 2007; Shajani et al., 2011). Previous studies suggest that some assembly factors, such as RimM and RbfA, may promote efficient assembly by binding co-transcriptionally to the nascent rRNA to facilitate folding and to prevent the formation of kinetic traps (Williamson, 2003; Clatterbuck Soper et al., 2013). In addition, factors may guide rearrangement of rRNA structure at specific points during the assembly process, as is likely the case during the re-structuring and cleavage of the 16S 5\u2032-leader sequence late in assembly (Dammel and Noller, 1995). Cryo-EM reconstructions indicate that several assembly factors, including RbfA (Datta et al., 2007; Jomaa et al., 2011b), the GTPases Era (Sharma et al., 2005) and RsgA (Guo et al., 2011), and the 16S rRNA methyltransferase KsgA (Boehringer et al., 2012), bind immature subunits and block them from prematurely entering the translation cycle. Many assembly factors appear to be functionally related, forming a complex network of interconnected activities (Bylund et al., 1998; Lu and Inouye, 1998; Inoue et al., 2003; Campbell and Brown, 2008; Goto et al., 2011; Connolly and Culver, 2013). Other factors, such as RimP, have been implicated in 30S assembly but have no known connection to the overall assembly factor network (Nord et al., 2009; Bunner et al., 2010b).\n\nOne of the major obstacles hindering studies of in vivo ribosomal biogenesis stems from the complexity of the assembly process and heterogeneity of the incompletely assembled intermediates. Multiple parallel pathways are operative for assembly, giving rise to a variety of intermediates containing distinct sets of r-proteins (Talkington et al., 2005; Mulder et al., 2010). Quantitative mass spectrometry (qMS) provides a high-throughput method for precisely measuring the relative levels of proteins in a complex mixture (Charollais et al., 2003). Recently, qMS has been used to determine the composition of r-proteins within ribosomal assembly intermediates isolated from cells, revealing the binding dependencies of late-associating r-proteins on earlier binding r-proteins and assembly factors (Chen and Williamson, 2013; Clatterbuck Soper et al., 2013; Guo et al., 2013; Leong et al., 2013). Single-particle EM is also an ideal technique for analyzing heterogeneous samples due to the development of powerful alignment and classification schemes that enable the identification of sub-populations of particle conformations within a single sample (Frank, 2006). Automated data collection and downstream image processing has greatly improved the throughput of single-particle EM analysis, facilitating the rapid analysis of even highly heterogeneous samples in a short period of time (Suloway et al., 2005; Lander et al., 2009). In addition, automated random conical tilt (RCT) data collection enables three-dimensional reconstructions of each subpopulation identified in a sample (Radermacher et al., 1987; Yoshioka et al., 2007; Voss et al., 2010). These advances in automation were previously applied to study the in vitro assembly of the 30S subunit, resulting in a quantitative visualization of assembly intermediate conformations present at various stages of the in vitro reconstitution process (Mulder et al., 2010).\n\nIn order to visualize the distributions of 30S assembly intermediates present in the cell we have developed a hybrid approach combining qMS and single-particle EM to provide unprecedented insight into the composition and structure of ribosome assembly intermediates from cellular lysates. Our approach exploits the exquisite facility of both techniques to analyze the heterogeneous samples generated by fractionating crude E. coli lysates using sucrose gradient ultracentrifugation. This one-step sample preparation eliminates the use of affinity tags or purification steps that may inadvertently lead to the exclusion of early intermediates. For each gradient fraction, ribosomal protein levels were measured using qMS, revealing r-proteins present or depleted within assembly intermediates. In parallel, gradient fractions were analyzed using single-particle negative stain EM to elucidate the structures of assembly intermediates and mature ribosomes present in each sample. These techniques were used to analyze E. coli 30S subunit assembly in wild type (WT) cells and in several assembly factor deletion strains. These studies revealed a novel intermediate, where the central pseudoknot (PK) that connects the 5\u2032-body domain of the 16S rRNA with the 3\u2032-head domain, is unformed, although the 3\u2032-head domain is partially assembled. Deletion of the assembly factor RimP causes a striking defect in central PK stability and results in the depletion of central PK-adjacent proteins S5 and S12, and late-binding proteins S2, S3 and S21. Together, our data suggest that central PK formation can occur either before or after head domain formation. Furthermore, our data implicate RimP in efficient central PK formation and in the subsequent incorporation of tertiary r-proteins S2, S3, S5, S12 and S21. In addition to providing novel insights into ribosome assembly, our approach represents a generalizable toolkit for studying the assembly of supramolecular structures in heterogeneous cellular samples.\n\n## Results\n\n### Observation of in vivo 30S assembly intermediates by qMS and negative stain EM\n\nWe previously demonstrated that ribosome assembly intermediates could be separated from mature subunits by sucrose gradient centrifugation (Chen and Williamson, 2013). Quantitative MS (qMS) analysis of sucrose gradient fractions revealed that individual r-protein levels in early 30S and early 50S fractions are variable and consistent with the expected binding dependencies based on the Nomura (Held et al., 1974) (Figure 1A) and Nierhaus (Herold and Nierhaus, 1987) maps, respectively. For example, in early 30S fractions, r-protein levels cluster into four groups with 5\u2032-domain primary and secondary binders such as S4 and S8 in the most abundant group and late binders such as S2, S3 and S21 in the most depleted group. The presence of four distinct groups of r-protein levels suggests that several intermediate species with varied r-protein compositions are present in early 30S fractions. In order to investigate the subpopulations of intermediates that accumulate in vivo, we combined our qMS analysis with single particle EM, applied to fractions collected from the 30S peak.\n\nE. coli BW25113 (Keio collection background strain/WT) (Baba et al., 2006) grown in M9 minimal media was harvested during exponential growth to ensure active production of ribosomes and the steady-state presence of assembly intermediates in the culture. The cell lysate was resolved by sucrose gradient centrifugation and five fractions encompassing the entire 30S peak were collected for qMS and EM analysis, allowing for a direct comparison of r-protein compositions with the observed particle conformations (Figure 1B). For qMS analysis, an equimolar amount of 15N-labeled ribosomes was added to each fraction prior to trypsin digestion. The resulting combination of 14N- and 15N-labeled peptides was quantified by LC-MS with the 15N-labeled peptides used as a reference. Peptides were detected for all r-proteins with the exception of later binding proteins with very low abundance in fraction 1 (S2, S3, S13, S19, S21) and S17 for fractions 1, 4 and 5 (Figure 1C). The isotope distribution fits for S17 peptides are often poor for both the experimental and reference sample, preventing unambiguous assignment of these peptides and necessitating their exclusion from the qMS analysis for some fractions. For convenience, the abundance of each r-protein in the experimental sample was normalized to that of the early binder S4, which is expected to be present in all assembling 30S particles. R-proteins were then grouped by the profile of their relative abundances using hierarchal clustering. The protein abundance data is consistent with the Nomura map and previous qMS analysis, with the earliest fractions containing 30S particles with the primary and secondary binders of the 5\u2032- and central domain bound (Figure 1A,C) (Chen and Williamson, 2013). In contrast, most tertiary binders of the 5\u2032- and central domain (S5, S11, S12) and most 3\u2032-domain binders (S7, S9, S10, S13, S14, S19) are only abundant in later fractions. Moreover, tertiary central and 3\u2032-domain binders (S2, S3, S21) are the least abundant r-proteins in 30S particles across all fractions.\n\nIn parallel, fractions from the sucrose gradient were prepared for EM analysis. Images of negatively stained sample were collected for each fraction using automated methods (Suloway et al., 2005; Yoshioka et al., 2007) and analyzed using single-particle methods (Lander et al., 2009; Mulder et al., 2010). A mixture of 30S intermediate particles and other abundant large cellular complexes, such as GroEL, is readily observable in raw images collected for the sucrose gradient fractions (Figure 1\u2014figure supplement 1A). Fraction 1 contained a particularly low abundance of 30S particles relative to other complexes, and as a result this fraction was omitted from further EM analysis. Given the heterogeneity of particles observed in the raw images, a reference free Difference of Gaussian particle picking method was used to select particles with diameters ranging from 100\u2013300 \u00c5 (Voss et al., 2009) (Figure 1\u2014figure supplement 1B). Particles were aligned and classified using iterative rounds of reference-free alignment, removing non-ribosomal particles between each iteration (Figure 1\u2014figure supplement 1C, also See \u2018Materials and methods\u2019 section). The final set of 60 class averages were compared using hierarchical clustering, revealing five major groups of 30S particles at various stages of assembly (Figure 1B, Figure 1\u2014figure supplement 2). Four of these Groups (I, III, IV and V) resemble the four groups characterized in previous time-resolved EM studies of in vitro 30S reconstitution (Mulder et al., 2010), while the Group II class averages were observed in the previous study, but were uncharacterized. In addition to this fraction-by-fraction two-dimensional analysis, random conical tilt (RCT) analysis was performed for fractions from the center of the 30S peak (fractions 3\u20134), enabling the reconstruction of 3D maps (Yoshioka et al., 2007; Voss et al., 2010) from representative 2D class averages from each Group (Figure 2). Three-dimensional volumes provided additional insight into the stage of assembly of each conformation observed in the 2D class averages.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig2-v2.jpg)\n\n**Figure 2.:** Representative RCT reconstructions aligned with crystal structure of the mature 30S subunit (PDB 2AVY (Schuwirth et al., 2005) shown in gray). (A) Group I intermediate. All density for 3\u2032-domain is missing. (B) Group II intermediate. Head domain density is detached from the body/platform domain. (C) Group III intermediate. The head density is angled away from the body domain, and density for S2 and S3 are missing. A 30 \u00c5 filter was applied to the PDB chains for S2 and S3, and the resulting volumes (gray surfaces) lie outside of the RCT volume. (D) Group IV intermediate. S2 and S21 density is missing, and the PDB chains for these proteins are shown as gray 30 \u00c5 filtered maps as in (C). (E) Group V intermediate missing S2 and S21, with the PDB chains for these proteins shown as gray 30 \u00c5 filtered maps as in (C). (F) Group V intermediate missing S3 density. The PDB chain for S3 is shown as a gray 30 \u00c5 filtered map as in (C). (G) Fully mature Group V.\n\nConsistent with the qMS data, the majority of early assembly intermediates (Groups I\u2013III) observed across the 30S peak are present in the early fractions, with a gradual build up of late intermediates and mature subunits (Groups IV\u2013V) toward the end of the peak (Figure 1D). The predominant conformation (Group I) present in early 30S peak fraction 2 is the earliest identifiable intermediate, encompassing the 5\u2032-body and platform regions, but wholly lacking density for the 3\u2032-head domain (Figure 1D, Figure 2A). The abundance of Group I particles is consistent with the depletion of 3\u2032-domain proteins (S2, S3, S7, S9, S10, S13, S14, S19) observed by qMS (Figure 1C).\n\nBoth Groups II and III contain head domain density, although the location of the domain relative to the body/platform regions is strikingly different in the two conformations (Figure 1D, Figure 2B,C). In Group II, the head appears to be completely unanchored from the platform domain, swinging well away from the helix 23/S11 interaction region (Figure 2B). In contrast, in Group III the head appears to be docked along the platform domain as it is in mature subunits, but angled away from its final resting spot along the body domain (Figure 2C). The vastly different locations of the head domain in Group II and Group III can be readily observed in RCT reconstructions of classes from these Groups (Figure 2B,C). RCT volumes for classes from both Groups suggest that late-binding proteins S2 and S3 may be missing from these particles, consistent with the relatively low levels of the proteins observed by qMS (Figure 1C, Figure 2B,C). In the three RCT reconstructions obtained for classes from WT Group II, the location of the head varies in relation to the 5\u2032-domain. Similarly, the location of head density varies substantially in class averages assigned to Group III, as revealed by focused 2D classification of the head region using custom masks created with Maskiton (Video 1) (Yoshioka et al., 2013). This type of \u2018hinged\u2019 head movement is similar to conformations observed in in vitro assembly intermediates, as well as intermediates observed in strains lacking the late-acting assembly factor RimM (Mulder et al., 2010; Guo et al., 2013; Leong et al., 2013).\n\n![Video 1.](https://cdn.elifesciences.org/articles/04491/elife-04491-media1.mov.jpg)\n\n**Video 1.:** A total of 3490 Group III particles were aligned to a reference image using SPIDER (Frank et al., 1996). The aligned stack was uploaded to the Maskiton server (www.maskiton.scripps.edu, [Yoshioka et al., 2013]), and the Maskiton web interface was used to apply a mask to the head region of the averaged stack. Classifications of the masked region were run for 1000 iterations. The resulting 16 class average images were compiled into a movie using QuickTime Pro 7 (Apple).\n\nClasses belonging to Groups IV and V represent very late assembly intermediates and mature subunits, as observed by 2D class averages and 3D RCT reconstructions (Figure 1D, Figure 2D\u2013H). Groups IV and V are highly represented in later fractions from the 30S peak, consistent with qMS data showing nearly stoichiometric levels of most r-proteins in these fractions. RCT reconstructions of Group IV classes appear to lack some density in the platform region, suggesting that these particles may primarily be late intermediates depleted of very late-binders such as S21 and S2 (Figure 2D). Similarly, for Group V, one subgroup of classes that appears to be missing density in the same region of the platform was detected (Figure 2E). A second subgroup of classes clearly missing density for S3 but containing density for S2 and S21 was observed (Figure 2F), in agreement with previous in vitro observations showing that S2 can bind prior to S3 (Mulder et al., 2010). Other Group V particles appear to be fully mature (Figure 2G), suggesting that 70S ribosomes may have disassociated during sample preparation. Together, these late-intermediate classes account for the depletion of S2, S3 and S21 observed in the qMS analysis of the late fractions of the 30S peak.\n\n### Destabilization of the central pseudoknot region\n\nAmong the intermediates observed in WT E. coli, the class averages present in Group II were the most intriguing. The vastly different location of the head in these particles compared to Group III particles suggests two alternate pathways for formation of the 3\u2032-domain, either before or after docking of the head onto the platform region of the central domain. In 16S rRNA, the central domain (16S nt:567-912) and 3\u2032-major domain comprising the head (16S nt:920-1396) are connected by a short linker (16S nt:913-919), which forms a long range pseudoknot interaction with helix 1 (h1) at the 5\u2032-end (Figure 3A,B). This central pseudoknot (PK) is formed by helix 2 (h2), and is the primary structural feature that leads to the positioning of the head domain upon the platform domain (Figure 3A,B). The detachment of the head from the platform in Group II classes suggests that these particles may have unstable or unformed central PK regions. To probe the stability of the RNA in the central PK region, an RNase H cleavage assay was developed using a DNA oligonucleotide anti-sense to the 3\u2032-end of helix 27 (h27) and the 3\u2032-strand of h2 (16S nt:906-920, Figure 3A). This \u2018anti-PK\u2019 oligo was incubated with samples encompassing the 30S sucrose gradient peak, allowing the oligo to specifically anneal to assembly intermediates in which the central PK is unformed. The hybridized RNA was subsequently digested with RNase H, resulting in two 16S products encompassing the 5\u2032- (\u223c900 nt) and 3\u2032-domains (\u223c600 nt) (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig3-v2.jpg)\n\n**Figure 3.:** (A) 16S rRNA secondary structure (red: 5\u2032-body; green: central; blue: 3\u2032-head; yellow: 3\u2032-minor), with central PK region boxed. The sequences of helix 2 (h2), which forms the central PK, and adjacent secondary structures helix 1 (h1), helix 27 (h27) and helix 28 (h28) are shown at right. The sequence targeted by an anti-sense DNA oligo (16S rRNA nt 906-920) is highlighted in yellow. (B) Crystal structure (PDB: 2AVY (Schuwirth et al., 2005)) of the 30S subunit from E. coli. 16S rRNA is shown as backbone ribbon and colored as in (A). Only r-proteins S5 (orange) and S12 (blue) are shown. A close-up of the central pseudoknot and adjacent rRNA helices and r-proteins is shown at right. (C) Anti-PK hybridization (500 pmol oligo)/RNase H cleavage of 16S rRNA from 30S peak sucrose gradient fractions for seven different E. coli strains. The average fraction of rRNA cleaved (product/total RNA) from three replicates is plotted. Error bars represent the standard deviation of fraction cleaved between the three replicates. (D) Abundance of Group II particles in seven E. coli strains as measured by negative stain EM. 10000 30S assembly intermediate particles from each strain were combined into a single stack of 70,000 particles. The stack was subjected to reference-free maximum likelihood alignment (Figure 3\u2014figure supplement 2). The number of particles from each strain contributing to Group II classes is plotted in the histogram.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Sucrose gradient chromatograms (absorbance at 254 nm) for seven strains. Lines indicate the portion of the 30S peak that was collected and used for RNase H assay and EM analysis. (B) RNase assay cleavage detected on 2% agarose gel stained with ethidium bromide. Products are labeled on right. The anti-h21 oligo was used as a control, targeting a region of the rRNA that should be stable and inaccessible in all strains. (C) Quantitation of RNase H cleavage (average of three replicates, error bars represent standard deviation). For each lane, the intensity of intact 16S rRNA and cleavage products was measured using image quant. Cleavage products detected in the \u2018no oligo\u2019 lane were subtracted from other lanes for the same strain, to account for background cleavage that may have occurred before or during the cleavage assay.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Direct comparison of the distribution of assembly intermediate Groups in data sets collected for samples from seven different strains. A combined stack of 70,000 particles (10,000 particles from each strain) was subjected to reference-free maximum likelihood alignment. The resultant classes were aligned to one another, then clustered using the Mathematica script described in the experimental methods. The number of particles from each strain contributing to each Group is plotted in the histogram. (B) Reference-free maximum likelihood class averages obtained from individual data sets collected for each sample from Figure 3\u2014figure supplement 1A. The classes are sorted by Group within each strain.\n\nPreviously, several 30S assembly factors have been implicated in central PK formation providing a motivation for comparing the PK accessibility for both WT E. coli and deletion strains using the RNase H assay. The level of central PK formation was determined in E. coli BW-25113 and deletion strains of five assembly factors: RimM, RbfA, RimP, RsgA (YjeQ) and KsgA. Alongside these strains, the effects of the plasmid pU23 (Dammel and Noller, 1993), that contains a copy of the rRNA operon rrnB bearing a C23U mutation within h1 of 16S RNA, was determined. This mutation destabilizes h1 and favors formation of an alternate stem-loop structure within the leader sequence of the pre-cleavage 17S rRNA, thus disrupting formation of h2. When transformed into E. coli strain BW-25113, pU23 displays a similar dominant negative cold-sensitive phenotype observed previously in E. coli strain DH1 (Dammel and Noller, 1993). Each strain was grown at 37\u00b0C and harvested during exponential growth, and the 30S peak from the sucrose gradient of each lysate was collected for analysis (Figure 3\u2014figure supplement 1A).\n\nRNase H cleavage in the presence of the anti-PK oligo led to accumulation of two products of the expected size (Figure 3\u2014figure supplement 1B). Very little product was observed for WT BW-25113, indicating that the majority of intermediates contain fully formed and stable central PKs in this strain (Figure 3C, Figure 3\u2014figure supplement 1B,C). In contrast, BW-25113+pU23 and all deletion strains displayed substantial but variable amounts of cleavage, suggesting varying degrees of central PK exposure (Figure 3C, Figure 3\u2014figure supplement 1B,C). Among the deletion strains, only E. coli lacking RimP displayed greater cleavage than BW-25113+pU23, suggesting that the \u0394rimP strain may have the strongest defect in central PK formation. Consistent with a potential role in PK formation, RimP has previously been shown to accelerate binding of the central PK-associated r-proteins S5 and S12 in in vitro 30S assembly assays (Bunner et al., 2010b). Negative stain EM datasets for each of the strains were collected in parallel to the RNase H assay, in order to observe the extent of Group II particle accumulation across the 30S peak (Figure 3\u2014figure supplement 2). Group II particles were most abundant in \u0394rimP and BW-25113+pU23 (Figure 3C, Figure 3\u2014figure supplement 2), and overall the levels of particles belonging to Group II in each strain was consistent with the amount of cleavage observed for anti-PK-oligo-dependent RNase H cleavage (Figure 3C,D). Based on these results, the \u0394rimP strain was chosen for further investigation into the composition and conformation of Group II assembly intermediates.\n\n### R-protein depletion in 30S assembly intermediates from \u0394rimP strain\n\nIn order to determine the effect of RimP deletion on the abundance of specific r-proteins in assembling 30S particles, cell lysate from WT and \u0394rimP strains were prepared for qMS analysis. WT and \u0394rimP cells were grown in 14N- and 50% 15N-labeled M9 media respectively. Equivalent amounts of lysates from each strain were purified using sucrose gradient centrifugation. In agreement with previous studies, the \u0394rimP strain shows an increase in 30S and 50S particles with a concomitant decrease in 70S particles, compared to the WT strain (Figure 4A) (Nord et al., 2009). To directly compare the abundance of specific r-proteins in assembling 30S particles between the WT and \u0394rimP strains, equivalent amounts of each cell lysate were combined and purified using sucrose gradient centrifugation (Figure 4B). Fractions were collected across the 30S peak and analyzed by qMS as previously described, using 15N-labeled 70S particles as a reference (Chen and Williamson, 2013). Hierarchal clustering of r-protein abundances normalized to that of S4, reveals significant depletion of S3 and S21 relative to other r-proteins in both strains, across all fractions (Figure 4C). Furthermore, S2 and S12 are more depleted in the \u0394rimP strain relative to the WT strain.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig4-v2.jpg)\n\n**Figure 4.:** (A) Overlay of sucrose gradient chromatograms (absorbance at 254 nm) for WT (black) and \u0394rimP (red). (B) Sucrose gradient chromatogram of combined WT and \u0394rimP (blue) lysates, with fractions analyzed by qMS labeled 1\u20134. (C) R-proteins in 30S particles in WT (black) and \u0394rimP (red), across fractions 1\u20134 (labeled at top) clustered by relative abundance, with a red to blue gradient representing high to low relative abundance. Relative abundance of each r-protein was normalized to that of S4. Gray boxes indicate r-proteins for which no peptides were detected. The cluster comprising r-proteins that are the least abundant in both strains (S3 and S21) and preferentially depleted in \u0394rimP (S2 and S12) is highlighted by a red box. (D) Fraction labeling of 30S r-proteins in 70S particles versus their relative abundance in 30S particles in WT (black) compared to \u0394rimP (red). Data collected from cells labeled for 45 min. (E) Representative labeling kinetics for an early binder, S4 (black) compared to late binder, S12 (red) in \u0394rimP. The maximum expected labeling rate is represented by the dashed grey line. Time course of experiment was fit (bold black line for S4) to a previously reported pulse-labeling model to determine the precursor pool size (P) of each r-protein (Chen et al., 2012). (F) Precursor pool size compared to relative abundance of r-proteins in 30S assembly intermediates in \u0394rimP. R-proteins with large pool sizes and high abundance in 30S assembly intermediates are boxed in black while those with small pool sizes and low abundance in 30S assembly intermediates are boxed in red.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Model of flow of 15N-label in 30S subunits during 70S assembly highlighting domain formation (body-red, platform-green, head-blue). (B) Isotope distribution of representative peptide with material synthesized pre-pulse (100% 14N) in red, material synthesized post-pulse (50% 15N) in green and material from the reference (100% 15N), used for peptide identification in orange. (C) Fraction labeled values of r-proteins in 30S particles compared to 70S particles for WT (black) and \u0394rimP (red) with a blue to red gradient representing high to low fraction labeled value.\n\nThe observed incomplete 30S particles could either be degradation products, dead-end assembly intermediates or on-pathway intermediates that eventually mature into 30S and 70S ribosomes. To distinguish among these distinct particle types, we performed a previously described pulse-labeling approach that monitors the flow of 15N-label during 70S assembly (Figure 4\u2014figure supplement 1A) (Chen et al., 2012). First, WT and \u0394rimP cells were pulse-labeled over a time-course at mid-log phase and the 30S particles and 70S ribosomes were purified and analyzed by qMS. The fraction of label incorporated into 70S ribosomes (fL) was determined for each r-protein by comparing the isotope amplitude of the isotope distributions pre-pulse (14N) and post-pulse (50% 15N) (Figure 4\u2014figure supplement 1B). Fully assembled 70S particles greatly outnumber assembling 30S intermediates during exponential growth, resulting in faster labeling of the intermediates relative to 70S ribosomes and their degradation products. Therefore, assembly intermediates should have a higher fL value than 70S ribosomes and their degradation products. The qMS analysis of the fractions containing 30S particles and 70S ribosomes from the WT and \u0394rimP strains reveals that the 30S particles in the early fractions of both strains have higher fL values than the 70S ribosomes (Figure 4\u2014figure supplement 1C). This indicates that the early fractions of both strains contain significant amounts of 30S assembly intermediates, and that these intermediates are competent to mature into 70S ribosomes.\n\nAs assembly progresses, early binding proteins are incorporated into intermediates before late binding proteins, thereby spending more time bound to intermediates than the late binders. Therefore, post-pulse, r-proteins sequentially incorporated into on-pathway intermediates would have different fL values. Early binding r-proteins would have lower fL values than late binding r-proteins. Furthermore, any delay in binding of specific r-proteins to on-pathway intermediates would be reflected in their fL values in 70S ribosomes. By comparing the fL values of r-proteins in 70S ribosomes in the WT and \u0394rimP strains to their relative abundance in the 30S intermediates, it can be seen that on average, WT r-proteins are more labeled than those in \u0394rimP (Figure 4D). This indicates that there is a delay in 30S assembly in the \u0394rimP strain compared to the WT strain, corresponding to an accumulation of assembly intermediates. Moreover, the data show that in the \u0394rimP strain, the most depleted r-proteins in the 30S intermediates are those with the highest fraction labeled values in the 70S ribosomes, and these correspond to the latest binding r-proteins.\n\nIn order to confirm that the incomplete 30S particles are on-pathway assembly intermediates, the \u0394rimP strain was pulse-labeled and the fL values of r-proteins in 70S ribosomes were measured for various time periods post-pulse. The fL values of the r-proteins as a function of the duration of pulse labeling were fit to equations describing the time-course of pulse labeling (Figure 4E) (Chen et al., 2012). From these fits, the magnitude of the precursor pool size (P) of each r-protein was calculated, reflecting the quantity of unbound r-protein as well as r-protein bound to assembly intermediates. Since dead-end particles do not assemble into 70S ribosomes, they have no effect on the P measured for each r-protein. However, r-proteins in on-pathway intermediates would have P related to their abundance in the precursor pool, including both free protein and assembly intermediates. According to this model, r-proteins that bind early in assembly are the most abundant in intermediates, and are expected to have larger values of P than those that bind later and are less abundant.\n\nThe data show that primary binding r-proteins such as S4 that are highly abundant in assembly intermediates in the \u0394rimP strain have large values of P (p = 0.12 or 12%), confirming that the assembly intermediates are on-pathway (Figure 4E,F). Previous studies have shown that WT cells have precursor pool sizes less than 2% (Chen et al., 2012). The large precursor pool sizes of early binders in the \u0394rimP strain are further confirmation of a delay in assembly. In contrast, depleted r-proteins such as S12 have small precursor pools (P \u223c 0) (Figure 4E,F). The incorporation of these r-proteins is delayed during 30S assembly in the \u0394rimP strain, and apparently, their synthesis and/or degradation is regulated such that they do not accumulate in their unbound form, resulting in a negligible pool size for these proteins.\n\nThe pool sizes for r-proteins in the \u0394rimP strain cluster into two distinct groups when compared to their relative abundance in the 30S assembly intermediates (Figure 4F). One cluster contains r-proteins known to bind early in WT that are highly abundant and have large pools. In contrast, the second group is composed of the latest binders in WT, with one exception, S12. This indicates a marked delay in S12 binding in the \u0394rimP strain relative to WT. These late binding r-proteins are depleted in intermediates in the \u0394rimP strain and have small pools. Outliers include S10, which is known to have extra-ribosomal functions (Friedman et al., 1981; Mason and Greenblatt, 1991), S14, which is exchangeable (Pulk et al., 2010) and S20, which is non-stoichiometric (Hardy, 1975; Tal et al., 1990). Together, these pulse-labeling data show that the intermediate assembly species are on-pathway and that incorporation of S12 and late-binding proteins S2, S21 and S3 is delayed during 30S assembly in the absence of RimP.\n\n### Conformations and distribution of 30S intermediates from \u0394rimP strain\n\nHaving determined the composition of on-pathway intermediates that accumulate upon deletion of RimP, fractions from the 30S peak of a \u0394rimP strain sucrose gradient were additionally analyzed by negative stain EM as described above for WT to determine the distribution of conformations present across the gradient (Figure 5A). Clustering analysis of class averages from the \u0394rimP strain revealed five Groups of similar conformations to those observed in the WT dataset (Figure 5B). However, the relative number of particles within each Group differs significantly between the two strains, with a dramatic increase in the abundance of Group II intermediates in \u0394rimP relative to WT (Figure 1D, Figure 5B). In contrast, the number of particles classified as Group I and III intermediates is similar in the two strains, while the number of late intermediates and mature subunits in Groups IV and V is decreased in \u0394rimP relative to WT. In order to directly compare the particle conformations and distributions between WT and \u0394rimP datasets, a combined stack of 10,000 randomly selected particles from each fraction from the two strains was classified using a reference-free maximum-likelihood protocol, followed by clustering analysis of the resulting class averages. For each Group from the cluster analysis, the number of particles contributed from each fraction of either WT or \u0394rimP was calculated (Figure 5C). Similar to the individual fractional analysis, this direct comparison of the combined datasets reveals a substantial relative accumulation of Group II intermediates across the entire 30S peak in \u0394rimP.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig5-v2.jpg)\n\n**Figure 5.:** (A) Overlay of sucrose gradient chromatograms (absorbance at 254 nm) for WT (blue) and \u0394rimP (red) lysates, with 30S peak fractions analyzed by EM indicated. (B) Negative stain EM class averages for fractions 2\u20135 of \u0394rimP sucrose gradient (labeled at bottom). Classes were obtained by reference-free maximum likelihood alignment and classification and are sorted by Group. Histogram at top shows the fractional contribution of particles from each dataset to each Group. (C) Direct comparison of assembly intermediate abundance in WT (shades of blue) and \u0394rimP (shades of red) strains. 10000 particles from each fraction for each strain were combined into a single stack with 80,000 particles. The stack was subjected to reference-free maximum likelihood alignment. For each strain, the number of particles from each fraction contributing to each Group are plotted as a stacked bar in the histogram, showing the contribution from each fraction and the overall number of particles in each group throughout the 30S peak. (D) Two-dimensional class averages and resulting 3D RCT volumes of Group II intermediates from the \u0394rimP strain. The 3\u2032-head domain location is highly variable between the different volumes. (E) Average density of the ten RCT volumes shown in (D). (F) Variance analysis of the 10 RCT volumes shown in (D). The average density from (E) is shown in gray, and the variance map is shown in red. (G) PDB model of the unanchored head conformation based on location of head in average density of RCT volumes. The 16S rRNA is shown and colored as in Figure 3A\u2013B. A 50 \u00c5 filter was applied to the PDB, and the density is shown at right.\n\nThe relative abundance of Group II particles in \u0394rimP fractions enabled a more in depth analysis of the unusual conformation adopted by this intermediate. In both 2D class averages and 3D RCT volumes, the location of the head volume is highly variable (residues 912\u2013920) (Figure 5D). To facilitate the 3D structural analysis, the RCT volumes in Figure 5D were aligned based on the body/platform density, and the average density and variance maps between the 10 volumes were calculated (Figure 5E,F). The regions of high variance are mainly localized to the head domain, which can sample a substantial range of motion, from locations close to the S11-binding region in the platform domain to the S4-binding region of the body domain. Analysis of Group II particles in 2D by Maskiton (Yoshioka et al., 2013) recapitulates this result and additionally indicates that head movement is constrained by a short but highly flexible linker (Video 2), likely comprising the 3\u2032-end of helix 27 and the 3\u2032-strand of the unformed h2 (16S residues 910\u2013919). Indeed, the distance between the head and body among Group II RCT volumes is generally 20\u201340 \u00c5, well within the range of lengths that could be accommodated by a 10-nt ssRNA. PDB models of the 16S rRNA for the body/platform region (nt 1-909) and the head domain (nt 920-1396) were docked into the average density from the 10 RCT volumes (Figure 5E,G), and the distance between the two domains could be accounted by the length of the 910\u2013919 linker. A 50-\u00c5 filter was additionally applied to the PDB model containing the 16S rRNA and r-proteins (excluding S2), revealing striking similarities to several RCT volumes in the amount of density observed for both the body/platform and head domain (Figure 5G). The similarity in size suggests that Group II particles may contain a nearly complete complement of r-proteins in the head domain, and that head domain assembly can occur prior to central PK formation.\n\n![Video 2.](https://cdn.elifesciences.org/articles/04491/elife-04491-media2.mov.jpg)\n\n**Video 2.:** Movie was generated as described for Video 1, using a total of 3660 Group II particles.\n\n### Cryo-EM analysis of affinity purified \u0394rimP assembly intermediates\n\nThe qMS and negative stain EM analysis of \u0394rimP 30S fractions revealed the r-protein levels and distribution of particle conformations in a complex mixture of various 30S particles and other large complexes. However, the sample complexity prohibited a detailed characterization of assembly intermediates in which the central PK is unformed. To reduce this sample complexity, an affinity purification protocol was developed using a biotinylated oligonucleotide anti-sense to the 3\u2032-strand of h2, similar to the anti-PK oligo used in the RNase H assays described above. This \u2018capture oligo\u2019 was incubated with samples containing 30S subunits and/or intermediates, then bound by NeutrAvidin agarose resin. After thorough washing of the resin, 30S particles annealed to the capture oligo were displaced by adding an excess of a DNA oligo bearing complete complementarity to the capture oligo. Using this purification strategy, 30S intermediates were enriched both from 30S peak sucrose gradient fractions and directly from \u0394rimP crude lysate (Figure 6\u2014figure supplement 1A). In contrast, no 16S rRNA could be detected when purified mature 30S subunits were incubated with the capture oligo (Figure 6\u2014figure supplement 1A).\n\nThe eluent from the \u0394rimP intermediate affinity purification was first analyzed by negative stain EM. Whereas samples taken directly from sucrose gradient fractions yielded images containing a large number of non-ribosomal E. coli complexes, raw images obtained from the affinity purified sample contained no readily observable non-ribosomal particles, confirming the specific purification of 30S particles. Particle classification further indicated the specific enrichment of early assembly intermediates, with the majority of particles classifying into Group I and II class averages and very few Group III-V classes observed. In addition to the previously identified Groups, an additional class was observed that might be partial degradation products of Group II intermediates corresponding to the 3\u2032-domain of the 30S subunit. Forward projections of the 30S 3\u2032-domain filtered to 30 \u00c5 strongly resemble the observed class averages (Figure 6\u2014figure supplement 1B,C). In addition, the putative 3\u2032-domain particles varied in abundance based on the amount of 16S rRNA degradation observed in the pulldown sample (Figure 6\u2014figure supplement 1D). Together, these observations suggest that particles in these classes contain the final \u223c600 nt of the 16S rRNA, including the head domain and the 3\u2032-minor domain containing helices 44 (h44) and 45. Indeed, density for h44 could be observed in some negative stain class averages, and was readily observed by cryo-EM (see below, Figure 6\u2014figure supplement 1C). The 3\u2032-domain particles appear to be preferentially enriched, suggesting that the 16S:906-920 region is more exposed in these particles than in Group II particles. The 3\u2032-domain particles likely result from non-specific cleavage of the exposed central PK region in Group II particles by contaminating RNases in the sample used for affinity purification. Efforts were made to limit sample degradation using RNase inhibitors, with limited success, further indicating the extent of rRNA exposure in the \u0394rimP intermediates.\n\nNext, the protein composition of the affinity purified intermediates was analyzed by qMS as described above, using 15N-labeled 70S particles as a reference. The relative abundance of each r-protein, normalized with respect to S4, shows that S2 and S12 are very depleted in 30S particles with PK instability, with partial depletion of S3 and S5 (Figure 6A). The depletion of S2, S3 and S12 in particles with PK instability is consistent with the earlier analysis of all the particles found in the 30S peak. The observed low abundance of S5 in the affinity purified particles could have been masked by the presence of a significant amount of particles containing S5 in the untreated sample. Furthermore, the affinity purified particles show a high abundance of most of the 3\u2032-domain r-proteins relative to early 5\u2032-domain binder, S4. This is consistent with the observation that 3\u2032-domain particles are preferentially enriched by the purification procedure. With the exception of S2 and S3, the uniform abundance of all the 3\u2032-domain r-proteins in the purified intermediates suggests that head domain formation is not perturbed until the very late stages of assembly. Some r-proteins, S17 and S21 could not be accurately quantitated in the qMS analysis due to poor fits of their isotope distributions, while the significantly high abundance of S18 is possibly due to its exchange in the 70S particles used as a reference.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig6-v2.jpg)\n\n**Figure 6.:** (A) Relative abundance of 30S r-proteins grouped by domain bound (body-red, platform-green, head-blue). Relative abundance of each r-protein was normalized to that of S4. No peptides were detected for S17 and S21. (B) Representative cryo-EM structure of Group I intermediate. All 3\u2032-domain density is missing, beginning with h27 (green) and continuing through the head and the 3\u2032-minor domain (h44 and h45, yellow). Close-ups of missing body domain r-proteins S5 (orange) and S12 (magenta) are shown at center. The PDB chains for S5 and S12 were filtered to 20 \u00c5, and the resulting maps are located outside of the cryo-EM density. (C and D) Codimensional PCA variance analysis for Group I cryo-EM particles. (C) The average density for all 12,425 Group I cryo-EM particles. (D) Variance map for Group I cryo-EM particles (red) overlaid on average map (gray). Regions of high variance are mainly localized in the platform domain.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Agarose gels (stained with ethidium bromide) showing results for affinity purification for \u0394rimP sucrose gradient fractions 2\u20133, \u0394rimP lysate, and purified 30S subunits. 16S rRNA is not visible in later washes, but is visible in elution fractions for \u0394rimP samples. (B) Class average of 3\u2032-domain degradation product versus a forward projection of the 3\u2032-domain filtered to 30 \u00c5 resolution. (C) Class averages from negative stain and cryoEM data sets with helix 44 density clearly visible, compared with a similar forward projection of the 3\u2032-domain model. (D) Comparison of particle distribution between two affinity purification samples. In sample 1, the input 16S rRNA was already heavily degraded, and the 3\u2032-domain was preferentially enriched based on agarose gel analysis. In sample 2, degradation was limited by the addition of RNasin (Promega) and reducing the amount of time for sample preparation. 5000 particles from negative stain data sets for each sample were combined into a single stack (10,000 particles), and subjected to reference-free maximum likelihood classification. The fraction of particles from each data set contributing to various conformations is plotted in the histogram. Putative 3\u2032-domain classes are enriched in the degraded sample 1, while Group II classes are enriched in the intact sample 2.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Reference-free class averages for all cryo-EM particles. Despite improvement of heterogeneity, several species are present including 3\u2032-domain degradation products (for example, classes 0\u20135). (B) Fourier shell correlation curves for the four Frealign 9 classes. Resolutions are reported in (C). The values are based on the 0.143 cutoff criterion. (C) Comparison of four structures obtained from classification using Frealign 9, as in Figure 6B of the main text. The resolution of each structure is reported below the class number. In the bottom row, the structures are rotated by 180\u00b0. Differences are observed in the platform region, suggesting that protein content and rRNA structure may vary in this region. All structures lack density for S5 (orange) and S12 (magenta) and all rRNA residues starting with h27 (green) and including h44-45 (yellow). (D) Comparison of reference-free class averages (odd columns) with re-projections (even columns) of Class 4 model from (C).\n\nThe initial negative stain and qMS analysis indicated that purification of 30S intermediates from mature subunits and other E. coli complexes substantially reduced sample heterogeneity, allowing for cryo-EM analysis of the affinity-purified sample. Similar to the negative stain analysis, class averages from the cryo-EM data set revealed that the majority of particles are early intermediates (Figure 6\u2014figure supplement 2A). Despite efforts to limit sample degradation, a substantial number of 3\u2032-domain degradation products were observed in the class averages, leading to an increase in the compositional heterogeneity of the data set. In addition, flexibility between the head and body domains in Group II intermediates led to significant conformational heterogeneity for these particles, and limited the ability to reconstruct 3D volumes for these particles. Efforts were therefore concentrated on 3D classification of the Group I cryo-EM particles. Following extensive sorting and classification of Group I particles, four reconstructions of this early intermediate were generated (Figure 6B, Figure 6\u2014figure supplement 2B\u2013D). As expected, the Group I structures lack density for the entire 3\u2032-domain, including all RNA and r-proteins comprising the head domain and helices 44 and 45 of the 3\u2032-minor domain (Figure 6B, Figure 6\u2014figure supplement 2C). In addition, 16S rRNA helix 27 lies completely outside the density in all Group I reconstructions, indicating that this final secondary structural element of the central domain is not present in these particles. Notably, the Group I reconstructions also clearly lack density for both S5 and S12, consistent with their observed depletion by qMS. The relatively high levels of S5 in comparison to S12 suggest that S5 may be present in Group II particles, while S12 is likely missing from both intermediates.\n\nAlthough the four Group I reconstructions are overall very similar in structure, some variability was apparent in the platform region. To identify regions of heterogeneity due to compositional or conformational variability, codimensional principal component analysis (PCA) was performed for the 12,425 Group I particles (Penczek et al., 2011) (Figures 6C,D). In agreement with variations observed by 3D classification of the particles, this codimensional PCA revealed that variability between these structures mainly arises from differences in the platform region (Figure 6D, Figure 6\u2014figure supplement 2C). Given the limited resolution of these reconstructions, it is difficult to discern whether these differences are due to compositional or conformational variability in Group I particles. However, the levels of S11 measured by qMS are slightly depleted in comparison to other central domain proteins, in agreement with the variability in S11 density observed in the Group I reconstructions. Together, these analyses of Group I cryo-EM particles suggest that structural stability within the platform region may be dependent on assembly and docking of the 3\u2032-domain.\n\n## Discussion\n\nOver the past 50 years, bacterial ribosome assembly has been studied extensively in vitro using a variety of biochemical and biophysical techniques. These previous studies provided insight into the order, hierarchies and kinetics of r-protein binding and rRNA folding, the fundamental underpinnings of ribosome biogenesis. In contrast, the understanding of in vivo ribosome assembly is relatively modest, owing in part to a lack of tools for the efficient study of this process at a molecular level. Recent developments in biophysical techniques have facilitated more detailed studies into the molecular mechanisms of cellular ribosome biogenesis, and especially the roles of various biogenesis factors. We have developed a high-throughput hybrid qMS/EM approach to study the composition and structure of cellular ribosome assembly intermediates. Our approach allows for the direct comparison of data sets from multiple samples, enabling quantitation of assembly intermediate distribution upon perturbation of the biogenesis pathway.\n\nBoth qMS and single-particle EM are ideal methods for the analysis of heterogeneous samples, and both methods were applied to understanding the assembly intermediates present in samples taken directly from a sucrose gradient of crude E. coli lysate. Theoretically, all soluble proteins and complexes present in the cell could be observed across the gradient, including all stable ribosomal assembly intermediates. However, other dense cellular complexes that co-elute with 30S assembly intermediates and mature subunits increase sample heterogeneity. Indeed, several abundant proteins and complexes were readily observed in gradient fractions by proteomic analysis and by negative stain EM (Supplementary file 1, Figure 1\u2014figure supplement 1). At the center of the 30S peak, the majority of the particles (65\u201370%) were ribosomal; however, fractions on the leading and lagging edges of the 30S peak were far more heterogeneous, containing only 30\u201335% ribosomal particles. The amount of data required to overcome this sample heterogeneity made high-throughput data collection indispensable for the detection of a wide range of 30S assembly intermediates. The combination of EM and qMS allowed for the classification of these intermediates along the 30S assembly pathway. Moreover, the application of stable isotope pulse-labeling and qMS facilitated the determination of assembly intermediates as on-pathway.\n\nOur analysis of sucrose gradient fractions from the E. coli 30S peak revealed five distinct groups of assembly intermediates distinguished by their conformation and r-protein content (Figure 1C,D). Group I particles comprised the earliest observed assembly intermediates with the body and platform domains intact but no head domain density (Figure 1D, Figure 2A). Group II and III particles all contained head domain density, with the head unanchored from the platform domain in Group II particles and slightly askew in Group III particles, when compared to mature 30S subunits (Figure 1D, Figure 2B,C, Figure 4D). Particles in Group IV and V were the most mature 30S intermediates, containing almost all r-proteins except for those last to be incorporated, namely S2, S3 and S21 (Figure 1D, Figure 2D\u2013H).\n\nPrevious studies have shown that the r-protein binding and rRNA folding can proceed through multiple parallel pathways (Talkington et al., 2005; Mulder et al., 2010). The difference in the location of head density between Group II and Group III particles suggests that these conformations may result from two such parallel assembly pathways. In particular, the central PK, the long-range tertiary interaction within 16S rRNA that anchors the head domain to the body and platform, appears to be formed in Group III but unformed in Group II particles. Central PK formation occurs late in the assembly pathway (Powers et al., 1993; Besancon and Wagner, 1999; Holmes and Culver, 2004), and could potentially occur after the modular assembly of the 5\u2032-body, central, and 3\u2032-head domains (Sykes and Williamson, 2009). This appears to be the case in Group II particles, in which nearly complete density is observed for all three domains in RCT reconstructions (compare Figures 5D and 5G). In contrast, Group III particles have partially formed heads that are anchored to the body and platform domains, suggesting that assembly of the head domain proceeds following central PK formation in these intermediates. The presence of both types of intermediates in WT E. coli suggests that both pathways are possible in vivo.\n\nA number of assembly factors, including RimM and RbfA, have previously been implicated in central PK formation (Clatterbuck Soper et al., 2013). In order to further examine the roles of various factors in this step, we used an anti-PK oligonucleotide hybridation/RNase H assay to test the degree of rRNA exposure in the central PK region. Surprisingly, we found that deletion of RimP has a much stronger effect on central PK exposure than either RimM or RbfA, suggesting that RimP may have a more direct role in central PK formation (Figure 3B, Figure 3\u2014figure supplement 1B,C). Indeed, EM analysis of intermediates purified from assembly factor deletion strains revealed that Group II particles are most abundant in \u0394rimP (Figure 3C, Figure 3\u2014figure supplement 2). In contrast, \u0394rimM predominantly contains Group III intermediates in which the head domain is anchored and only partially formed (Figure 3\u2014figure supplement 2), consistent with head-formation defects observed in cryo-EM structures and by in vivo 16S hydroxyl radical footprinting (Clatterbuck Soper et al., 2013; Guo et al., 2013; Leong et al., 2013). RbfA has previously been implicated in the re-structuring of the 5\u2032-leader sequence of 16S rRNA, which must be refolded in order for the central PK to form (Dammel and Noller, 1995). Deletion of RbfA leads to defects in folding of the 3\u2032-head domain and the 5\u2032-body domain, including the final placement of h44 (Clatterbuck Soper et al., 2013). Our EM analysis of \u0394rbfA shows an accumulation of Group II, III and late Group V intermediates (Figure 3\u2014figure supplement 2), consistent with the role of RbfA in several stages of assembly. Similarly, \u0394rsgA and \u0394ksgA primarily lead to accumulation of late Group V intermediates (Figure 3\u2014figure supplement 2), consistent with previous observations that these factors act in h44 placement during the very late stages of 30S assembly (Jomaa et al., 2011a; Boehringer et al., 2012).\n\nAn in-depth qMS analysis was performed on intermediate 30S particles extracted from the \u0394rimP strain and directly compared to those from the WT strain to determine the composition of \u0394rimP intermediates relative to those from an unperturbed assembly pathway. The \u0394rimP strain was significantly depleted in S2, S3, S12 and S21 when compared to the WT strain. EM analysis of the \u0394rimP sucrose gradient fractions revealed that these abundant intermediates are mainly Group I and II particles (Figure 5B,C). In particular, Group II is enriched by >3-fold in \u0394rimP samples when directly compared to WT (Figure 5C). This result suggests that Group II intermediates may either be more long-lived in \u0394rimP cells than in WT, or that RimP normally prevents Group II intermediates from forming in WT cells. The \u0394rimP intermediates are on-pathway and are eventually incorporated into 70S ribosomes, based on pulse-labeling analysis (Figure 4E,F). However, incorporation of depleted proteins occurs at a relatively slow rate, suggesting that the completion of these intermediates is kinetically unfavorable. RimP may act as a chaperone to prevent the assembling 30S subunit from falling into this kinetic trap. RimP has previously been shown to bind to free 30S subunits resolved on sucrose gradients, but not complete 70S ribosomes, indicating that it directly interacts with 30S assembly intermediates (Nord et al., 2009).\n\nTo directly measure the protein content of pre-central PK intermediates from the \u0394rimP strain, we devised a strategy for affinity purification using a biotinylated anti-PK oligonucleotide. This early intermediate sample contained relatively low levels of S5 and S3 and significantly depleted levels of S2 and S12 (Figure 6A). In addition, the late binding tertiary protein S21 could not be accurately quantitated, likely due to its extremely low levels in the purified intermediates. Cryo-EM structures of the Group I intermediate lack density for all five of these proteins, in addition to all 16S rRNA beginning with h27 (Figure 6B, Figure 6\u2014figure supplement 2C). It is likely that the severely depleted S2, S12 and S21 are missing from Group II intermediates as well, given that Group II particles are the predominant species in the sample.\n\nThe specific depletion of S5 and S12 in early \u0394rimP intermediates is notable, as both proteins contact the central PK region in mature 30S subunits (Figure 3B). Interestingly, RimP has previously been shown to accelerate binding of S5 and S12 by twofold and sixfold, respectively, in in vitro reconstitution assays (Bunner et al., 2010b). Together with our findings, these previous results suggest that addition of RimP to 30S reconstitution experiments may help to promote central PK formation and avoid the kinetically unfavorable Group I and Group II intermediates. In previous EM studies of assembly intermediates present during in vitro 30S reconstitution, Group I-like class averages were highly abundant at early time-points during assembly (Mulder et al., 2010). Intriguingly, Group II-like classes are also present during the early stages of assembly, although they were uncharacterized in that study (See Figure 1B in Mulder et al., 2010). The presence of Group I and II-like classes subsides with the incorporation of S5 and S12, as measured by pulse-chase followed by qMS. These previous in vitro results agree with the present in vivo observations that kinetically unfavorable pre-central PK conformations remain viable on-pathway intermediates.\n\nThe central PK is essential for translation (Brink et al., 1993; Poot et al., 1998) and is conserved in all kingdoms of life. The accurate formation and stability of the central PK is a critical step during small subunit assembly in both prokaryotes and eukaryotes. Recently, the essential ribosomal biogenesis factor Mrd1 was implicated in central PK formation in Saccharomyces cerevisiae (Segerstolpe et al., 2013). Mrd1 contains multiple RNA-binding domains (RBDs) and binds directly to 18S rRNA helices h27 and h28, two secondary structural elements that reside in close proximity to the central PK in the mature small subunit structure (Segerstolpe et al., 2013). Similarly, RimP is composed of two RBDs, and may play an analogous role in binding to 16S rRNA regions adjacent to the central PK. We propose that RimP acts during the early and late stages of 30S subunit biogenesis to assist in the stabilization of the central pseudoknot, allowing for the subsequent incorporation of central-PK binding r-proteins S5 and S12 and late binding r-proteins S2, S3 and S21 (Figure 7). During the early stages of 30S biogenesis, premature central PK formation is blocked by a structure within the 16S 5\u2032-leader that is mutually exclusive with h1. RbfA is thought to bind to the leader sequence and promote formation of h1 during the late stages of assembly, and may act synergistically with RimP to stabilize the central PK. In contrast, RimM may act independently of RimP to facilitate assembly of the head domain regardless of the status of central PK formation. Overall, our findings suggest that RimP might be one of the earliest factors to act upon the assembling 30S subunit. The combined EM/qMS approach employed here should have immediate and broad applicability to study of the role of other ribosome assembly factors as well as macromolecular assembly processes involving other bacterial and eukaryotic cellular machines.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04491/elife-04491-fig7-v2.jpg)\n\n**Figure 7.:** Co-transcriptional folding and binding of 5\u2032-body (red) and central domain (green) r-proteins results in the formation and accumulation of Group I intermediates. The 3\u2032-head domain (blue) can fold and r-proteins, including both primary and secondary binders, can bind prior to or following formation of the central PK, resulting in the accumulation of Group II and Group III intermediates, respectively. In the absence of RimP, the central PK is destabilized and the flux of 30S intermediates flows mainly through the Group II pathway, in which the 3\u2032 domain is nearly fully formed prior to formation of the central PK. These intermediates are on pathway and eventually all remaining r-proteins, including S5 and S12, are incorporated into the mature 30S subunit.\n\n## Materials and methods\n\n### Bacterial strains and plasmids\n\nAll E. coli strains used in this study were in the BW25113 background. BW25113 was used as WT, while assembly factor knockout strains were part of the Keio collection (Baba et al., 2006). E. coli strains were obtained from either the Yale E. coli Genetic Stock Center or Thermo Scientific (Waltham, MA), and genotypes were confirmed by PCR using primers flanking the gene of interest by \u223c100 bp on either side. The plasmid pU23 encodes a copy of the rrnB rRNA operon containing C23U and C1192U (confers spectinomycin resistance, used for selection purposes in the original study) mutations within the 16S rRNA gene (Dammel and Noller, 1993). The plasmid was a generous gift from the Noller lab.\n\n### Bacterial growth and sucrose gradient collection\n\nE. coli cultures were grown aerobically in M9 media (glucose, trace vitamins and minerals) supplemented with either 14N-, 50% 15N- or 15N-labeled ammonium sulfate as the only source of nitrogen. Cultures were grown to mid-log phase (0.4-0.5 OD600) at 37\u00b0C, then quickly cooled by direct addition to ice and harvested by centrifugation (20 min at 6000\u00d7g, 4\u00b0C). For pulse labeling experiments, cultures were grown to mid-log phase in 14N M9 media, then pulsed with an equivalent volume of 15N M9 media for 15, 20, 30 or 45 min. Cells were lysed in Buffer A (20 mM Tris, pH 7.5, 100 mM NH4Cl, 10 mM MgCl2, 0.5 mM EDTA, 6 mM \u03b2-Me) by bead beating (0.1 mm Zirconia/Silica beads, BioSpec mini-bead beater), then cleared by two successive centrifugation steps at 22,000\u00d7g. The lysate was resolved on a 35 ml 12.9\u201351.5% sucrose gradient by centrifugation at 4\u00b0C in a Beckman SW32 rotor for 16 hr at 26,000 rpm. For samples prepared for qMS analysis comparing the \u0394rimP and WT strains, equimolar amounts of the respective lysates were combined prior to sucrose gradient centrifugation. The gradients were eluted using a Brandel Gradient Fractionator and prepared for qMS and EM analysis. Fractions containing 70S particles in the WT strain grown in 15N M9 media were pooled and stored at \u221280\u00b0C for use as a reference sample. Samples used for fraction-by-fraction EM analysis were concentrated to 100 nM if necessary (early and late fractions from 30S peak), and frozen at \u221280\u00b0C. For the assembly factor deletion EM studies, RNase H assays and affinity purification, fractions from the 30S peak were pooled (Figure 3\u2014figure supplement 1A), then dialyzed against Buffer A for three hours at 4\u00b0C. The samples were concentrated to 250 nM, flash frozen and stored at \u221280\u00b0C.\n\n### Quantitative mass spectrometry analysis\n\nFor WT fraction-by-fraction analysis, particles in each fraction under the 30S peak were prepared for LC-MS investigation as previously described (Chen and Williamson, 2013). In brief, 20 pmol of each fraction was combined with 20 pmol of 70S spike and trichloroacetic acid (TCA) precipitated (13% vol/vol final concentration) at 4\u00b0C overnight. Precipitates were isolated by centrifugation (30 min at 14,000 rpm at 4\u00b0C), washed with 10% TCA, then cold acetone and left to air dry. TCA precipitates were resuspended in 20 \u03bcl 100 mM NH4HCO3, 5% acetonitrile (ACN), 2 \u03bcl 50 mM dithiothreitol was added and the mixture was incubated in a 65\u00b0C water bath for 10 min. The samples were then treated with 2 \u03bcl 100 mM iodoacetamide and incubated for 30 min at 30\u00b0C, then digested overnight with 2 \u03bcl 0.1 \u03bcg trypsin at 37\u00b0C. The trypsinized peptides were purified over a Pierce C18 column, eluting across a 5\u201350% ACN gradient over 105 min. Peptides were then detected on a coupled Agilent G1969A ESI-TOF mass spectrometer over a set detection range of 250\u20131300 m/z. For samples from WT cells only, peptides were detected by an Agilent Q-TOF G6520B and initially processed with Agilent Qualitative Analysis software. Peak lists from the raw LC-MS data were generated using the Aglient Mass Hunter and Mass Profiler programs, and the 14N/15N peak pairs were identified and quantified as described previously (Sperling et al., 2008; Sykes et al., 2010). The relative abundance of each r-protein was then calculated by comparing the amplitude of its 14N peptides to that of the sum of its 14N and 15N peptides [14N/(14N + 15N)]. The isotope distribution of each peptide was examined and fits with low signal-to-noise ratios were excluded from further analysis. The relative abundance of each r-protein was normalized to that of the primary binder S4 to flatten any differences in total r-protein amount of each sample. For fraction-by-fraction analysis of the \u0394rimP strain as compared to the WT strain, qMS analysis was carried out as described above with one exception. In this case, the relative abundance of each r-protein in the \u0394rimP strain was calculated by comparing the amplitude of the 50% 15N peptides to that of the sum of the 50% 15N and 15N peptides [50% 15N/(50% 15N + 15N)]. The normalized relative abundance of each r-protein across the 30S peak were hierarchically clustered using Euclidean distance scoring and average linkage in Gene Cluster 3.0. The resulting cluster trees were visualized using Java TreeView.\n\nFor proteomic data (Supplementary file 1), equimolar amounts of 14N peptides were prepared as described above for each sucrose gradient fraction from WT and \u0394rimP strains. Samples were submitted to an Agilent G6520B QTOF mass spectrometer for LC-MS/MS analysis as previously described (Chen and Williamson, 2013). Briefly, peptides were separated by a 90 min 5\u201360% concave acetonitrile gradient and detected over a precursor detection range of 400 to 2000 m/z and a product ion detection range of 80\u20132000 m/z. Data were analyzed using Mascot (precursor mass error tolerance = 0.05 Da, product mass error tolerance = 0.10 Da), and identified peptides were subject to a significance threshold of 0.05 and ion score cutoff of 0.05. The data provided in Supplementary file 1 represent the highest-scoring match for each peptide.\n\n### Pulse labeling experiments and r-protein labeling kinetics\n\nFor pulse-labeling experiments, WT or \u0394rimP samples were grown in 14N-labeled media to mid-log phase, then pulsed with an equivalent volume of 15N-labeled media for 15, 20, 30 or 45 min. At each time-point, 100 ml of culture was rapidly removed and quenched and the cell pellet was stored at \u221280\u00b0C. Time-point samples were then purified by sucrose gradient centrifugation to isolate 30S and 70S particles. Each sample containing either 30S or 70S particles was combined with an equimolar amount of 15N-labeled 70S particles (reference for accurate peptide identification), and prepared for qMS analysis as described above. For each peptide, the observed raw LC-MS data comprised three isotope distribution envelopes (Figure 4\u2014figure supplement 1B). The leftmost (low m/z) envelope corresponds to r-proteins synthesized prior to the pulse (100% 14N) while the middle envelope corresponds to r-proteins synthesized post-pulse (50% 15N). The rightmost (high m/z) envelope corresponds to r-proteins from the reference 70S particles (100% 15N). The fraction labeled (fL) value of each r-protein was calculated by comparing the abundance of r-proteins synthesized post-pulse to that of the sum of r-proteins pre- and post-pulse [50% 15N/(100% 14N + 50% 15N)]. For each r-protein, the time course of 15N-labeling was fit to Equation (1) below using Igor Pro (WaveMetrics Inc.) as previously reported (Chen et al., 2012).\n\n$$\nf_{L}(t)=1+P\u00b7exp[\u2212k\u00b7(1+1/P)\u00b7t]\u2212(1+P)\u00b7exp[\u2212k\u00b7t]\n$$\n\nwhere fL is the fraction labeled value, P is the precursor pool size, t is the length of 15N pulse and k is the growth rate, with P set as the only free parameter. The curve representing the maximum expected labeling was calculated using Equation (2),\n\n$$\nf_{max}(t)=1\u2212exp[\u2212k\u00b7t]\n$$\n\n### Electron microscopy sample preparation, data collection and processing\n\nFor untilted negative stain EM, samples were applied to plasma-cleaned (20 s, Gatan Solarus) carbon-coated copper mesh grids (Ted Pella, Inc.). For RCT negative stain EM and cryo-EM, samples were applied to plasma-cleaned (5 s) C-flat grids (Protochips) coated with a thin (2\u20135 nm) layer of continuous carbon. Sucrose gradient fraction samples were diluted with Buffer A to a concentration yielding optimal particle distribution and homogeneity on the grid surface, generally to a concentration of \u223c10 nM (based on absorbance reading at 260 nm of \u223c0.13 and 30S extinction coefficient of 12.8 \u00d7 106 M-1cm-1). The affinity purified sample was diluted with Buffer A 1:5 for negative stain analysis and 1:3 for cryo-EM analysis. Negative stain grids were prepared by applying the sample (3 \u00b5l) to the grid for 1 min, then blotting from the side to remove excess sample. The grid was washed immediately with 3 \u00b5l Buffer A, then blotted from the side. Concurrent with blotting, 3 \u00b5l of fresh 2% uranyl formate was applied to the grid, then blotted from the side. This step was repeated twice, then the grid was allowed to dry for at least 10 min. For cryo-EM grid preparation, 3 \u00b5l of sample was applied for 1 min, blotted for 3 s, then plunge-frozen in liquid ethane using a Gatan CP3.\n\nAll EM images were collected using Leginon (Suloway et al., 2005). Data for WT and \u0394rimP fractional analysis were acquired using an FEI T12 transmission electron microscope operating at 120 keV and equipped with a Tietz TemCam-F416 4k \u00d7 4k CMOS camera. Images were collected at a nominal magnification of 52000\u00d7 and pixel size of 2.05 \u00c5 with a dose of \u223c30 e-/\u00c52 and a nominal focus range from 0.8\u20131.8 \u00b5m under focus. Image tilt pairs (\u221250\u00b0/0\u00b0) for RCT data were collected at a dose of \u223c20 e-/\u00c52 (Yoshioka et al., 2007). Data for 30S peak samples from the WT and knockout strains were acquired using a Tecnai F20 Twin transmission electron microscope operating at 200 keV equipped with a Tietz TemCam-F416 4k \u00d7 4k CMOS camera. Images were collected at a nominal magnification of 62,000\u00d7 and a pixel size of 1.36 \u00c5 with a dose of \u223c30 e-/\u00c52 and a nominal focus range from 0.8\u20131.8 \u00b5m under focus. Cryo-EM data were acquired using a Tecnai F20 Twin transmission electron microscope operating at 200 keV equipped with a Gatan K2 Summit direct detection device. Cryo-EM images were collected at a nominal magnification of 29000\u00d7 and pixel size of 1.21 \u00c5 with a nominal focus range from 2.5\u20135.0 \u00b5m under focus. Images frame sets (1253) were collected for 6 s with a dose of 33.67 e-/\u00c52 for 30 frames (200 ms each), followed by whole frame alignment as previously described (Li et al., 2013).\n\nFor negative stain EM data, all image processing was carried out in Appion (Lander et al., 2009). The CTF for all images was estimated using CTFFind3 (Mindell and Grigorieff, 2003). For all datasets, particle picking was carried out using DoG picker (Voss et al., 2009). Parameters were adjusted to ensure that all particles were selected from each image, in order to eliminate particle selection bias based on size in the initial stack. Following particle extraction (with box sizes ranging from 350\u2013380 \u00c5), the initial stack was subjected to a first round of 2D reference-free alignment and classification using Xmipp ML2D to obtain classes with <2000 particles/class (Scheres et al., 2005a, 2005b). This initial alignment allowed for identification and removal of classes lacking any identifiable features (generally false positive particle picks) or clearly identifiable as a non-ribosomal E. coli complex. Identification of non-ribosomal complexes was validated by comparison with known structures of the complexes, and by their presence in proteomic analysis of sucrose gradient fractions (Figure 1\u2014figure supplement 1C, Supplementary file 1). The cleaned stack was then subjected to reference-free alignment and clustering using Xmipp CL2D to obtain classes with <200 particles/class (Sorzano et al., 2010). This finer classification revealed additional false positive and non-ribosomal classes, which were removed. A final round of cleaning was implemented following a second ML2D classification (<500 particles/class). The alternating use of CL2D and ML2D strategies revealed additional class averages containing false positive particles or non-ribosomal classes, although these classes were generally low in abundance and population. The final stack was subjected to ML2D classification with the resultant classes shown in Figure 1C, Figure 4B and Figure 3\u2014figure supplement 2B. The classes were aligned to a reference, and the aligned classes were imported into Mathematica (Wolfram Research) for hierarchical clustering analysis. Dendrograms were constructed using agglomerative hierarchical clustering of the class images, using a correlation distance metric and average linkage clustering. For direct comparison of particle distribution between strains, substacks of 10,000 random particles were created for each data set and combined into a single stack. These combined stacks were then subjected to ML2D alignment and classification. The resultant classes were clustered into Groups in Mathematica as described above.\n\nFor RCT data sets, particle tilt pairs were identified using TiltPicker (Voss et al., 2009). Untilted and tilted particles were extracted (box size 224, pixel size 2.05 \u00c5) into two separate stacks. For the untilted stack, bad particles were identified and removed using an initial ML2D alignment into 100 classes followed by a CL2D alignment into 256 classes. The cleaned untilted stacks were subjected to ML2D alignment into 15 classes, which were subsequently clustered using Mathematica. Substacks were created for every Group based on the clustering, and each substack was aligned using ML2D. RCT volumes were reconstructed from the resultant classes using the Create RCT Volume function in Appion (Voss et al., 2010).\n\nFor cryo-EM image analysis, CTF estimation and particle picking were carried out as described above. The micrographs were contrast-inverted, then particles were extracted with a box size of 288 pixels at 1.21 \u00c5/pixel. This box size was optimized for Group I particles, but we also performed a parallel analysis with a larger box size of 320 pixels to examine the larger Group II particles. The initial stack was binned by four and subjected to ML2D alignment and classification to obtain 100 classes. False positive peak picks were discarded, and the cleaned stack was aligned and clustered into 128 classes using CL2D for initial evaluation of the conformations and views present in the sample.\n\nGiven the heterogeneity of the sample, it was difficult to distinguish between various conformations and views based solely on visual inspection. We therefore employed a sorting algorithm that compared a set of models to our experimental class averages using Xmipp projection-matching refinement (Sorzano et al., 2004). Each class average was assigned to one of the models based on the highest correlation value following projection-matching refinement, as previously described in (Lyumkis et al., 2013b). The following five models used for projection matching were created from PDB 2AVY (Schuwirth et al., 2005) and low pass filtered to 30 \u00c5: the 3\u2032-domain comprising S3, S7, S9, S10, S13, S14, S19, and 16S nt 921-1534; a Group I model comprising S4, S6, S8, S11, S15, S16, S17, S18, S20, S21, and 16S nt 26-909; a Group II model in which the 3\u2032-domain model (with 16S nt 1398-1534 removed) and the Group I model were fit into a representative RCT volume; a late intermediate missing only S2, S3 and S21; and the fully mature 30S subunit. Notably, no class averages generated by CL2D of the cleaned stack were matched with the mature model. Group I classes were identified from the initial ML2D classes using this projection-matching sorting algorithm aided by visual inspection. These particles were subjected to two further rounds of CL2D to remove bad particles, resulting in a final cleaned stack of 12,425 Group I particles. An initial model was generated from the final CL2D classes using the OptiMod common lines/refinement package in Appion (Lyumkis et al., 2013c). An initial set of angles was assigned to the Group I particle stack using Xmipp projection-matching refinement. These angles were further refined and particles were classified through 200 rounds into four models using Frealign 9 (Lyumkis et al., 2013a). The final distribution of particles and Fourier shell correlations for the 4 models were as follows: Model 1 \u2013 3407 particles, 27.6 \u00c5; Model 2 \u2013 2975 particles, 26.1 \u00c5; Model 3 \u2013 2722 particles, 27.0 \u00c5; Model 4 \u2013 3241 particles, 25.4 \u00c5. Variance analysis for the Group I cryo-EM particles was performed using the codimensional PCA application in SPARX (Penczek et al., 2011). All structure figures were created in UCSF Chimera (Pettersen et al., 2004).\n\n### RNase H assays\n\nDNA oligonucleotides used for these experiments were designed to anneal to 16S rRNA positions 906\u2013920 (anti-PK 5\u2032-ATTCATTTGAGTTTT-3\u2032) to test for central PK accessibility or 589\u2013603 (anti-h21 5\u2032- ATCTGACTTAACAAA-3\u2032) as a negative control targeting a highly stable region of the 16S rRNA. RNase H assays were performed in Buffer A, with 10 mM DTT substituted for the 6 mM \u03b2-Me. Cleavage reactions were initiated on ice by adding 0.5 pmol 30S subunits (final concentration 33 nM) to 50 or 500 pmol (final concentration 3.3 or 33 \u00b5M) anti-PK or anti-h21 oligo (or buffer A for mock reactions) and 5U RNase H (New England Biolabs) (or buffer A for mock reactions). Samples were incubated on ice at 4\u00b0C for 16 hr, then resolved on a 2% agarose/TAE gel and visualized by ethidium bromide staining. Intact 16S rRNA and cleavage products were quantified using ImageQuant software, with the two cleavage bands treated as a single product. The intensity of \u2018cleavage products\u2019 detected in the mock reaction lane was subtracted from the cleavage band for each reaction containing oligo, to account for background cleavage that may have occured before or during the RNase H reaction. Fraction cleaved was calculated by dividing the volume of the cleavage products by the total RNA in the lane (cleavage products plus uncleaved rRNA). The average of three replicates was plotted with error bars representing the standard deviation between the three replicates.\n\n### Affinity purification of 30S assembly intermediates\n\nAffinity purification protocol was adapted from (Schnapp et al., 1998; Clatterbuck Soper et al., 2013). Oligonucleotides were designed based on the anti-PK oligo used for the RNase H assay. The capture oligo comprised a 5\u2032-biotin followed by 10 random DNA nucleotides and finally the 2\u2032-O-methylated anti-PK sequence (5\u2032-biotin-CTACAGGTGCAAmAmUmUmCmAmUmUmUmGmAmGmUmUmU-3\u2032), in order to promoted annealing of the anti-PK sequence to the 16S rRNA. The displacement DNA oligonucleotide was completely complementary to the capture oligo (5\u2032-AAACTCAAATGAATTTGCACCTGTAG-3\u2032). Samples used for affinity purification contained 200 pmol of F2-3 from the \u0394rimP sucrose gradient (30S peak), 20 OD260 of \u0394rimP lysate, or 200 pmol purified 30S subunits in 350 \u00b5l Buffer A. Each sample was incubated with 17.5 \u00b5l 1 mg/ml yeast tRNA, 2 \u00b5l 100 \u00b5M capture anti-PK oligo (200 pmol), and 5 \u00b5l RNasin at 30\u00b0C for 15 min. NuetrAvadin agarose beads (100 \u00b5l per sample) (Thermo Scientific) were blocked with 0.5 mg/ml BSA in Buffer A twice, then washed with Buffer A, and finally incubated at 30\u00b0C for 10 min. Samples were added to beads, then incubated at 30\u00b0C for 10 min. Samples were then transferred to 4\u00b0C, and incubated with rocking for 2 hr. Beads were centrifuged for 5 min at 500\u00d7g, and the supernatant was removed. Beads were washed four times at 4\u00b0C with Buffer A + 0.01% Nikkol, then twice more at room temperature with 5 min of incubation with rocking for each wash. Samples were eluted by adding 5 pmol of displacement oligo to 150 \u00b5l of Buffer A + 0.01% Nikkol. The buffer and beads were incubated with gentle rocking at room temperature for 30 min, then centrifuged for 5 min at 500\u00d7g, and the eluent was removed. This elution was repeated up to three times, but very little 16S rRNA was observed in later elution fractions. Samples were visualized on a 2% agarose/TAE gel stained with ethidium bromide. The first elution fraction was aliquoted and flash frozen in liquid nitrogen, then stored at \u221280\u00b0C prior to EM analysis. Samples for qMS were generated in the same manner, except 275 pmol 30S ribosomes, 500 pmol capture oligo and 250 \u00b5l NeutrAvidin Agarose beads were used for affinity purification, and 2.5 \u00b5M of displacement oligo was used for elution.\n\n### Data deposition\n\nElectron microscopy maps for the 30S ribosomal intermediates have been deposited to the 3D-Electron Micrscopy Data Bank (EMDB http://www.ebi.ac.uk/pdbe/emdb/) EMDB ID code 6125-6145.\n",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "8daf8895-d4ab-49ad-8c5b-c034a18bcf0f",
+      "submission_id": "c94b7bf1-c17d-476b-9450-683e012bb494",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04491.020](https://doi.org/10.7554/eLife.04491.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA combined quantitative mass spectrometry and electron microscopy analysis of ribosomal 30S subunit assembly in E. coli\u201d for consideration at eLife. Your article has been favorably evaluated by James Manley (Senior editor), a Reviewing Editor, and two other reviewers, both of whom, Harry Noller and Peter Moore, have agreed to reveal their identity.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe two reviewers praised your paper as exceptional. Their assessment is as follows:\n\n1) This paper addresses one of the most complex and challenging problems in biology \u2013 the mechanism of assembly of ribosomes in vivo. The authors use a combined mass spec/EM approach in an impressive technical tour de force. They first analyze 30S subunit assembly intermediates obtained from sucrose gradient fractions from wild-type cells, correlating the absence of specific ribosomal proteins with characteristic features of EM images of immature particles. They then use their approach to compare wild-type assembly with that of cells carrying mutations that affect 30S assembly. A major finding is that the ribosome assembly factor rimP appears to be critical for formation of the central pseudoknot of 16S rRNA and assembly of its associated ribosomal proteins. This is an outstanding paper that advances our understanding of in vivo ribosome assembly and demonstrates the use of a powerful new approach to studying the assembly of complex cellular particles.\n\n2) This manuscript reports the outcome of an extensive series of experiments the authors have performed to characterize the pathway of ribosome assembly in E. coli in vivo. The powerful technology they have used to do this work has been perfected by them over a period of several years, and is likely to prove useful for others interested in the assembly of similarly complex macromolecular assemblies. This study goes a long way towards proving that RimP, a gene product long known to be involved in ribosome assembly, plays an important role in ensuring that the central pseudoknot in 16S rRNA forms properly during assembly.\n\nThe insights obtained by the authors reveal the unique power of the experimental system they have devised, and represent a significant advance in our understanding of ribosome assembly, a physiological process of the utmost importance biologically.\n\nMinor comments:\n\n1) The \u201cdegradation\u201d observed may be due to the presence of endogenous RNase H.\n\n2) The color coding used in Figure 1C was counter-intuitive. It took quite some time to \u201cread\u201d the protein levels as intended. The authors might want to consider using a more usual \u201cheat map\u201d range (ramping, say, from blue to red) to more clearly show the abundance values, which are very critical to the punch line of the paper.\n\n3) I was puzzled by the absence of signal for protein S17, which was only alluded to in a cryptic comment toward the end. Perhaps this has already been addressed in a previous paper?\n",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "934a43f5-8e55-4d47-8a77-937b20e3af09",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C1",
+      "claim": "The E. coli 70S ribosome is a large (2.4 MDa) ribonucleoprotein consisting of a small (30S) and large (50S) subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli (E. coli), the 70S ribosome is a large (2.4 MDa) ribonucleoprotein consisting of a small (30S) and large (50S) subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ribosome structure and composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "0e94f7c7-d6f7-4c06-b954-0362937784e7",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C2",
+      "claim": "The 30S subunit can be reconstituted in vitro from 16S ribosomal RNA (rRNA) and 20 ribosomal proteins (r-proteins) in a high temperature, high Mg2+ environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the 30S subunit can be reconstituted in vitro from 16S ribosomal RNA (rRNA) and 20 ribosomal proteins (r-proteins) in a high temperature, high Mg2+ environment (Traub and Nomura, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Traub and Nomura, 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "1dbbbbe8-9c4e-4223-b825-803d876dda29",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C3",
+      "claim": "Early work by Nomura and colleagues established the order and dependencies of r-protein binding in the assembling 30S subunit under equilibrium conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Early work by Nomura and colleagues established the order and dependencies of r-protein binding in the assembling 30S subunit under equilibrium conditions (Figure 1A) (Mizushima and Nomura, 1970; Held et al., 1973, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mizushima and Nomura, 1970; Held et al., 1973, 1974.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "d17db78f-47e9-45a0-8e7a-fe6385daad2f",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C4",
+      "claim": "Primary r-proteins bind directly to the 5\u2032-, central and 3\u2032-domains of 16S rRNA in the early stages of assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In the early stages of assembly, primary r-proteins bind directly to the 5\u2032-, central and 3\u2032-domains of 16S rRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Held et al., 1973; Stern et al., 1989 in the context of the sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "b2c19b87-19b3-4a9b-bf9b-b29ba36de34c",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C5",
+      "claim": "Initial r-protein binding events lead to changes in the rRNA structure and facilitate subsequent binding of secondary and tertiary r-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These initial r-protein binding events lead to changes in the rRNA structure, and facilitate subsequent binding of secondary and tertiary r-proteins (Held et al., 1973; Stern et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Held et al., 1973; Stern et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "e4725b59-763e-45e4-b8de-3462fc7b2011",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C6",
+      "claim": "Assembly can proceed through multiple parallel pathways even in the presence of r-protein binding dependencies.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have revealed that even in the presence of r-protein binding dependencies, assembly can proceed through multiple parallel pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple studies mentioned in the preceding sentence including Adilakshmi et al., 2008; Ridgeway et al., 2012; Kim et al., 2014; Talkington et al., 2005; Bunner et al., 2010a; Mulder et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "df394a3c-6701-49c2-9251-f826a0662eee",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C7",
+      "claim": "Misfolded rRNA structure leads to stable kinetic traps during in vitro 30S reconstitution, inhibiting the binding of several secondary and tertiary r-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a large body of evidence indicates that misfolded rRNA structure leads to stable kinetic traps during in vitro 30S reconstitution, inhibiting the binding of several secondary and tertiary r-proteins and limiting the efficiency of the reconstitution (Reviewed in Sykes and Williamson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review by Sykes and Williamson, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "21113ba5-7d4f-4665-bcd9-bc132abf9278",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C8",
+      "claim": "In the cell, 30S assembly is fast and efficient, proceeding with the help of numerous assembly factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cell, 30S assembly is fast and efficient, proceeding with the help of numerous assembly factors, including enzymes that directly modify the 16S rRNA and r-proteins, as well as a number of RNA-binding chaperones and GTPases that assist in RNA folding (Reviewed in Wilson and Nierhaus, 2007; Shajani et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to reviews by Wilson and Nierhaus, 2007; Shajani et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "30d4c1bb-666c-4806-a45c-b21d07addc97",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C9",
+      "claim": "Some assembly factors, such as RimM and RbfA, may promote efficient assembly by binding co-transcriptionally to the nascent rRNA to facilitate folding and to prevent the formation of kinetic traps.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggest that some assembly factors, such as RimM and RbfA, may promote efficient assembly by binding co-transcriptionally to the nascent rRNA to facilitate folding and to prevent the formation of kinetic traps (Williamson, 2003; Clatterbuck Soper et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Williamson, 2003; Clatterbuck Soper et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "2dc80960-2aad-4957-8dcb-6cb5825c0ae1",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C10",
+      "claim": "Several assembly factors, including RbfA, Era, RsgA, and KsgA, bind immature subunits and block them from prematurely entering the translation cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM reconstructions indicate that several assembly factors, including RbfA (Datta et al., 2007; Jomaa et al., 2011b), the GTPases Era (Sharma et al., 2005) and RsgA (Guo et al., 2011), and the 16S rRNA methyltransferase KsgA (Boehringer et al., 2012), bind immature subunits and block them from prematurely entering the translation cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Datta et al., 2007; Jomaa et al., 2011b; Sharma et al., 2005; Guo et al., 2011; Boehringer et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "f5ba178c-1090-4e74-b036-36ab1953918c",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C11",
+      "claim": "RimP has been implicated in 30S assembly but has no known connection to the overall assembly factor network.",
+      "claim_type": "EXPLICIT",
+      "source": "Other factors, such as RimP, have been implicated in 30S assembly but have no known connection to the overall assembly factor network (Nord et al., 2009; Bunner et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nord et al., 2009; Bunner et al., 2010b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "821a725d-7c78-4a04-ad1c-b92da4c85264",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C12",
+      "claim": "Quantitative mass spectrometry provides a high-throughput method for precisely measuring the relative levels of proteins in a complex mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative mass spectrometry (qMS) provides a high-throughput method for precisely measuring the relative levels of proteins in a complex mixture (Charollais et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Charollais et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "b0de65db-5974-4fa2-b932-46c10c59c111",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C13",
+      "claim": "qMS has been used to determine the composition of r-proteins within ribosomal assembly intermediates isolated from cells, revealing the binding dependencies of late-associating r-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, qMS has been used to determine the composition of r-proteins within ribosomal assembly intermediates isolated from cells, revealing the binding dependencies of late-associating r-proteins on earlier binding r-proteins and assembly factors (Chen and Williamson, 2013; Clatterbuck Soper et al., 2013; Guo et al., 2013; Leong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chen and Williamson, 2013; Clatterbuck Soper et al., 2013; Guo et al., 2013; Leong et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "55cc5a01-be93-468e-907e-a90a42e95061",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C14",
+      "claim": "Automated data collection and downstream image processing has greatly improved the throughput of single-particle EM analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated data collection and downstream image processing has greatly improved the throughput of single-particle EM analysis, facilitating the rapid analysis of even highly heterogeneous samples in a short period of time (Suloway et al., 2005; Lander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Suloway et al., 2005; Lander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "f716ddfd-a5eb-4fae-9fea-8c5951630de0",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C15",
+      "claim": "Automated random conical tilt (RCT) data collection enables three-dimensional reconstructions of each subpopulation identified in a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, automated random conical tilt (RCT) data collection enables three-dimensional reconstructions of each subpopulation identified in a sample (Radermacher et al., 1987; Yoshioka et al., 2007; Voss et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Radermacher et al., 1987; Yoshioka et al., 2007; Voss et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "a4557d2e-e8fe-4c8d-b03a-2100bd4ffc3d",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C16",
+      "claim": "Five distinct groups of 30S assembly intermediates were observed in WT E. coli, distinguished by their conformation and r-protein content.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of sucrose gradient fractions from the E. coli 30S peak revealed five distinct groups of assembly intermediates distinguished by their conformation and r-protein content (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1C,D showing qMS and EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "3b1bbd90-3e92-4521-8e94-8b0042640019",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C17",
+      "claim": "Group I particles comprised the earliest observed assembly intermediates with the body and platform domains intact but no head domain density.",
+      "claim_type": "EXPLICIT",
+      "source": "Group I particles comprised the earliest observed assembly intermediates with the body and platform domains intact but no head domain density (Figure 1D, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 1D and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "8ccfb020-762f-4d1d-a21f-8241f47235b6",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C18",
+      "claim": "In Group II particles, the head appears to be completely unanchored from the platform domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In Group II, the head appears to be completely unanchored from the platform domain, swinging well away from the helix 23/S11 interaction region (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "d00f10ac-27b0-4978-8154-2295e359615f",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C19",
+      "claim": "In Group III, the head appears to be docked along the platform domain but angled away from its final resting spot along the body domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in Group III the head appears to be docked along the platform domain as it is in mature subunits, but angled away from its final resting spot along the body domain (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "a07b9998-945b-4e84-83af-12182e5c87f3",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C20",
+      "claim": "RCT volumes for classes from both Groups II and III suggest that late-binding proteins S2 and S3 may be missing from these particles.",
+      "claim_type": "EXPLICIT",
+      "source": "RCT volumes for classes from both Groups suggest that late-binding proteins S2 and S3 may be missing from these particles, consistent with the relatively low levels of the proteins observed by qMS (Figure 1C, Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data in Figure 2B,C and qMS data in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "d8c7e2f7-056a-4760-86a2-fbf9311e1577",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C21",
+      "claim": "Groups IV and V represent very late assembly intermediates and mature subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Classes belonging to Groups IV and V represent very late assembly intermediates and mature subunits, as observed by 2D class averages and 3D RCT reconstructions (Figure 1D, Figure 2D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 1D and Figure 2D-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "6a5b6c50-bc90-4dc8-bc62-8b30dd6263b4",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C22",
+      "claim": "RCT reconstructions of Group IV classes appear to lack some density in the platform region, suggesting that these particles may primarily be late intermediates depleted of very late-binders such as S21 and S2.",
+      "claim_type": "EXPLICIT",
+      "source": "RCT reconstructions of Group IV classes appear to lack some density in the platform region, suggesting that these particles may primarily be late intermediates depleted of very late-binders such as S21 and S2 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 2D and inference from the observed density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "f61591f3-49ed-4b5c-9638-f97e85f5ac44",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C23",
+      "claim": "The central pseudoknot (PK) that connects the 5\u2032-body domain of the 16S rRNA with the 3\u2032-head domain appears to be formed in Group III but unformed in Group II particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the central PK, the long-range tertiary interaction within 16S rRNA that anchors the head domain to the body and platform, appears to be formed in Group III but unformed in Group II particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural differences observed between Group II and Group III particles in EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "5267353e-099d-49b2-9c67-602cd5551be8",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C24",
+      "claim": "The detachment of the head from the platform in Group II classes suggests that these particles may have unstable or unformed central PK regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The detachment of the head from the platform in Group II classes suggests that these particles may have unstable or unformed central PK regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation of head detachment in Group II particles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "cb7ebf1a-5edb-47ec-91b0-aa9591707469",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C25",
+      "claim": "Deletion of RimP has a much stronger effect on central PK exposure than either RimM or RbfA.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that deletion of RimP has a much stronger effect on central PK exposure than either RimM or RbfA, suggesting that RimP may have a more direct role in central PK formation (Figure 3B, Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNase H assay data shown in Figure 3B and Figure 3\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "7073a7e2-2179-4fe1-b379-a8820b699ff5",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C26",
+      "claim": "Group II particles are most abundant in \u0394rimP and BW-25113+pU23.",
+      "claim_type": "EXPLICIT",
+      "source": "Group II particles were most abundant in \u0394rimP and BW-25113+pU23 (Figure 3C, Figure 3\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 3C and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "5090083e-7e5f-49c1-bf32-07578fa87df9",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C27",
+      "claim": "The levels of particles belonging to Group II in each strain was consistent with the amount of cleavage observed for anti-PK-oligo-dependent RNase H cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "overall the levels of particles belonging to Group II in each strain was consistent with the amount of cleavage observed for anti-PK-oligo-dependent RNase H cleavage (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of RNase H assay data and EM data shown in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "a3da35a5-15c6-4470-bc70-ec29a9ec34b9",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C28",
+      "claim": "The \u0394rimP strain shows an increase in 30S and 50S particles with a concomitant decrease in 70S particles, compared to the WT strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies, the \u0394rimP strain shows an increase in 30S and 50S particles with a concomitant decrease in 70S particles, compared to the WT strain (Figure 4A) (Nord et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sucrose gradient data shown in Figure 4A and citation to Nord et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "f81b9486-20d0-4596-a2c3-41e8edc24d20",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C29",
+      "claim": "S3 and S21 are significantly depleted relative to other r-proteins in both WT and \u0394rimP strains, across all fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchal clustering of r-protein abundances normalized to that of S4, reveals significant depletion of S3 and S21 relative to other r-proteins in both strains, across all fractions (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qMS data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "b4831fec-6641-4f3d-a868-6e98ed98cf31",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C30",
+      "claim": "S2 and S12 are more depleted in the \u0394rimP strain relative to the WT strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, S2 and S12 are more depleted in the \u0394rimP strain relative to the WT strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the qMS data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "3ea961ba-2d78-4a1d-b801-fe46266ec889",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C31",
+      "claim": "The 30S particles in the early fractions of both WT and \u0394rimP strains have higher fraction labeled values than the 70S ribosomes, indicating that the early fractions contain significant amounts of 30S assembly intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "The qMS analysis of the fractions containing 30S particles and 70S ribosomes from the WT and \u0394rimP strains reveals that the 30S particles in the early fractions of both strains have higher fL values than the 70S ribosomes (Figure 4\u2014figure supplement 1C). This indicates that the early fractions of both strains contain significant amounts of 30S assembly intermediates, and that these intermediates are competent to mature into 70S ribosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pulse-labeling qMS data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "7db678dc-ffa6-4985-95f2-3f551af622f3",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C32",
+      "claim": "There is a delay in 30S assembly in the \u0394rimP strain compared to the WT strain, corresponding to an accumulation of assembly intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that there is a delay in 30S assembly in the \u0394rimP strain compared to the WT strain, corresponding to an accumulation of assembly intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pulse-labeling data showing differences in fraction labeled values between WT and \u0394rimP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "bbe457ee-75a6-4ed9-beb6-f383426ad8d1",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C33",
+      "claim": "In the \u0394rimP strain, the most depleted r-proteins in the 30S intermediates are those with the highest fraction labeled values in the 70S ribosomes, and these correspond to the latest binding r-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the data show that in the \u0394rimP strain, the most depleted r-proteins in the 30S intermediates are those with the highest fraction labeled values in the 70S ribosomes, and these correspond to the latest binding r-proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the pulse-labeling data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "eb1684b9-4f76-4fd9-a131-ed82d63529e0",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C34",
+      "claim": "Primary binding r-proteins such as S4 that are highly abundant in assembly intermediates in the \u0394rimP strain have large values of precursor pool size (P).",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that primary binding r-proteins such as S4 that are highly abundant in assembly intermediates in the \u0394rimP strain have large values of P (p = 0.12 or 12%), confirming that the assembly intermediates are on-pathway (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pulse-labeling kinetics data shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "99e7c2ea-187a-43d2-ab30-50a781182f08",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C35",
+      "claim": "Depleted r-proteins such as S12 have small precursor pools (P \u223c 0) in the \u0394rimP strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, depleted r-proteins such as S12 have small precursor pools (P \u223c 0) (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pulse-labeling kinetics data shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "b750fb56-e15a-41b5-9b68-f9f3dfc88315",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C36",
+      "claim": "There is a marked delay in S12 binding in the \u0394rimP strain relative to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates a marked delay in S12 binding in the \u0394rimP strain relative to WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the precursor pool size data showing S12 clustering with late binders despite being an early binder in WT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "3d4253d6-c9f7-4830-8647-af7674ee2829",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C37",
+      "claim": "The intermediate assembly species in \u0394rimP are on-pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these pulse-labeling data show that the intermediate assembly species are on-pathway and that incorporation of S12 and late-binding proteins S2, S21 and S3 is delayed during 30S assembly in the absence of RimP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the pulse-labeling kinetics data showing that intermediates eventually mature into 70S ribosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "6e124c37-f0c7-47e9-bff1-35a568bb3533",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C38",
+      "claim": "Incorporation of S12 and late-binding proteins S2, S21 and S3 is delayed during 30S assembly in the absence of RimP.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these pulse-labeling data show that the intermediate assembly species are on-pathway and that incorporation of S12 and late-binding proteins S2, S21 and S3 is delayed during 30S assembly in the absence of RimP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the pulse-labeling kinetics data and precursor pool size analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "7ea9b6fd-4690-4d4f-aaf9-777a70be59fd",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C39",
+      "claim": "There is a dramatic increase in the abundance of Group II intermediates in \u0394rimP relative to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relative number of particles within each Group differs significantly between the two strains, with a dramatic increase in the abundance of Group II intermediates in \u0394rimP relative to WT (Figure 1D, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 1D and Figure 5B comparing WT and \u0394rimP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "bf489b6b-eeff-4c79-b1e4-f78581218a39",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C40",
+      "claim": "Group II intermediates are enriched by >3-fold in \u0394rimP samples when directly compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Group II is enriched by >3-fold in \u0394rimP samples when directly compared to WT (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 5C directly comparing WT and \u0394rimP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "4c988b86-a6cb-472f-aa0a-d54752713117",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C41",
+      "claim": "The location of the head volume is highly variable in Group II particles in both 2D class averages and 3D RCT volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "In both 2D class averages and 3D RCT volumes, the location of the head volume is highly variable (residues 912\u2013920) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "5711af76-d26f-4039-966d-bec9648ebe1f",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C42",
+      "claim": "The regions of high variance in Group II particles are mainly localized to the head domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The regions of high variance are mainly localized to the head domain, which can sample a substantial range of motion, from locations close to the S11-binding region in the platform domain to the S4-binding region of the body domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by variance analysis of RCT volumes shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "a2d10a24-abfc-4c6e-b636-396ca6db36d3",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C43",
+      "claim": "Head movement in Group II particles is constrained by a short but highly flexible linker, likely comprising the 3\u2032-end of helix 27 and the 3\u2032-strand of the unformed h2 (16S residues 910\u2013919).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Group II particles in 2D by Maskiton (Yoshioka et al., 2013) recapitulates this result and additionally indicates that head movement is constrained by a short but highly flexible linker (Video 2), likely comprising the 3\u2032-end of helix 27 and the 3\u2032-strand of the unformed h2 (16S residues 910\u2013919).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Maskiton analysis shown in Video 2 and structural inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "89c61cc4-2f2b-4028-aa56-be40bbfb217d",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C44",
+      "claim": "Group II particles may contain a nearly complete complement of r-proteins in the head domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in size suggests that Group II particles may contain a nearly complete complement of r-proteins in the head domain, and that head domain assembly can occur prior to central PK formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of RCT volumes with filtered PDB models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "520e06db-9c0c-4985-83bd-1bd164c7884b",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C45",
+      "claim": "Head domain assembly can occur prior to central PK formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in size suggests that Group II particles may contain a nearly complete complement of r-proteins in the head domain, and that head domain assembly can occur prior to central PK formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of Group II particles with assembled head domains but unformed central PK.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "b464fe18-f7d5-4a5f-a434-8a1769a44eb1",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C46",
+      "claim": "Affinity purified \u0394rimP intermediates show very depleted S2 and S12, with partial depletion of S3 and S5.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative abundance of each r-protein, normalized with respect to S4, shows that S2 and S12 are very depleted in 30S particles with PK instability, with partial depletion of S3 and S5 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qMS data of affinity purified intermediates shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "2581f835-d8aa-4e0d-a0ef-694c36df749d",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C47",
+      "claim": "The affinity purified particles show a high abundance of most of the 3\u2032-domain r-proteins relative to early 5\u2032-domain binder, S4.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the affinity purified particles show a high abundance of most of the 3\u2032-domain r-proteins relative to early 5\u2032-domain binder, S4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the qMS data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "7e1bc7ba-f73e-4cb6-8291-285c3d57c03b",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C48",
+      "claim": "With the exception of S2 and S3, the uniform abundance of all the 3\u2032-domain r-proteins in the purified intermediates suggests that head domain formation is not perturbed until the very late stages of assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of S2 and S3, the uniform abundance of all the 3\u2032-domain r-proteins in the purified intermediates suggests that head domain formation is not perturbed until the very late stages of assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the qMS data showing uniform abundance of most 3\u2032-domain proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "5311501d-95e8-44d1-95fe-529df7824a92",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C49",
+      "claim": "Group I cryo-EM structures lack density for the entire 3\u2032-domain, including all RNA and r-proteins comprising the head domain and helices 44 and 45 of the 3\u2032-minor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the Group I structures lack density for the entire 3\u2032-domain, including all RNA and r-proteins comprising the head domain and helices 44 and 45 of the 3\u2032-minor domain (Figure 6B, Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cryo-EM data shown in Figure 6B and Figure 6\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "e773ba92-3c1a-40e6-9bc3-1ab0d23325c3",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C50",
+      "claim": "16S rRNA helix 27 lies completely outside the density in all Group I reconstructions, indicating that this final secondary structural element of the central domain is not present in these particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 16S rRNA helix 27 lies completely outside the density in all Group I reconstructions, indicating that this final secondary structural element of the central domain is not present in these particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM reconstructions shown in Figure 6B and Figure 6\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "0254ba2d-e6e2-4327-80cc-a393c2409e77",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C51",
+      "claim": "The Group I reconstructions clearly lack density for both S5 and S12.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the Group I reconstructions also clearly lack density for both S5 and S12, consistent with their observed depletion by qMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM reconstructions shown in Figure 6B and is consistent with qMS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "b938dc01-fa4d-4fc7-a070-ce94940a9372",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C52",
+      "claim": "S5 may be present in Group II particles, while S12 is likely missing from both Group I and Group II intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively high levels of S5 in comparison to S12 suggest that S5 may be present in Group II particles, while S12 is likely missing from both intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the qMS data showing different depletion levels for S5 and S12.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "3aa02489-e0d5-4dec-82fb-bf230f16976a",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C53",
+      "claim": "Variability between Group I structures mainly arises from differences in the platform region.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with variations observed by 3D classification of the particles, this codimensional PCA revealed that variability between these structures mainly arises from differences in the platform region (Figure 6D, Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by codimensional PCA analysis shown in Figure 6D and Figure 6\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "ae54df2b-83fe-4ac1-bee4-5fc5d381f5d9",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C54",
+      "claim": "Structural stability within the platform region may be dependent on assembly and docking of the 3\u2032-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these analyses of Group I cryo-EM particles suggest that structural stability within the platform region may be dependent on assembly and docking of the 3\u2032-domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed variability in the platform region of Group I particles which lack the 3\u2032-domain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "1826cbe5-8b0f-47b3-a218-ef38d0d21b70",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C55",
+      "claim": "The central pseudoknot is essential for translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The central PK is essential for translation (Brink et al., 1993; Poot et al., 1998) and is conserved in all kingdoms of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brink et al., 1993; Poot et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "118bf6b2-e632-47fd-9f10-32d1cb62b021",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C56",
+      "claim": "The central pseudoknot is conserved in all kingdoms of life.",
+      "claim_type": "EXPLICIT",
+      "source": "The central PK is essential for translation (Brink et al., 1993; Poot et al., 1998) and is conserved in all kingdoms of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ribosome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "fd49ac9e-d9a9-4c1d-8e9a-28545e6ddbed",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C57",
+      "claim": "The essential ribosomal biogenesis factor Mrd1 was implicated in central PK formation in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the essential ribosomal biogenesis factor Mrd1 was implicated in central PK formation in Saccharomyces cerevisiae (Segerstolpe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Segerstolpe et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "3c14c7f6-34c0-4836-991b-134efb640c4f",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C58",
+      "claim": "Mrd1 contains multiple RNA-binding domains (RBDs) and binds directly to 18S rRNA helices h27 and h28.",
+      "claim_type": "EXPLICIT",
+      "source": "Mrd1 contains multiple RNA-binding domains (RBDs) and binds directly to 18S rRNA helices h27 and h28, two secondary structural elements that reside in close proximity to the central PK in the mature small subunit structure (Segerstolpe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Segerstolpe et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "4b35c617-5d33-4306-af47-d77b1c44b77b",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C59",
+      "claim": "RimP is composed of two RBDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RimP is composed of two RBDs, and may play an analogous role in binding to 16S rRNA regions adjacent to the central PK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RimP structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "fd7f108c-d26c-45fe-ac42-d86b6a7f2c7b",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C60",
+      "claim": "RimP may play an analogous role to Mrd1 in binding to 16S rRNA regions adjacent to the central PK.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RimP is composed of two RBDs, and may play an analogous role in binding to 16S rRNA regions adjacent to the central PK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on structural similarity between RimP and Mrd1.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "78a92203-2859-4630-b473-eeb057826b46",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C61",
+      "claim": "RimP acts during the early and late stages of 30S subunit biogenesis to assist in the stabilization of the central pseudoknot.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that RimP acts during the early and late stages of 30S subunit biogenesis to assist in the stabilization of the central pseudoknot, allowing for the subsequent incorporation of central-PK binding r-proteins S5 and S12 and late binding r-proteins S2, S3 and S21 (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the experimental data presented in the study, shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "daa01f2b-8580-4e3a-b1f3-2ec4bc50d8f7",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C62",
+      "claim": "RimP stabilization of the central pseudoknot allows for the subsequent incorporation of central-PK binding r-proteins S5 and S12 and late binding r-proteins S2, S3 and S21.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that RimP acts during the early and late stages of 30S subunit biogenesis to assist in the stabilization of the central pseudoknot, allowing for the subsequent incorporation of central-PK binding r-proteins S5 and S12 and late binding r-proteins S2, S3 and S21 (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the experimental data showing depletion of these proteins in \u0394rimP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "28c0fc5a-585f-4c59-be6d-59cabcf49b87",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C63",
+      "claim": "During the early stages of 30S biogenesis, premature central PK formation is blocked by a structure within the 16S 5\u2032-leader that is mutually exclusive with h1.",
+      "claim_type": "EXPLICIT",
+      "source": "During the early stages of 30S biogenesis, premature central PK formation is blocked by a structure within the 16S 5\u2032-leader that is mutually exclusive with h1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about 30S assembly.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "5348a887-cee2-4872-ab37-be179daf7504",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C64",
+      "claim": "RbfA is thought to bind to the leader sequence and promote formation of h1 during the late stages of assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "RbfA is thought to bind to the leader sequence and promote formation of h1 during the late stages of assembly, and may act synergistically with RimP to stabilize the central PK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous knowledge about RbfA function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "72d3828a-9dd0-4fd6-adad-c21bfdc194ca",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C65",
+      "claim": "RbfA may act synergistically with RimP to stabilize the central PK.",
+      "claim_type": "EXPLICIT",
+      "source": "RbfA is thought to bind to the leader sequence and promote formation of h1 during the late stages of assembly, and may act synergistically with RimP to stabilize the central PK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the roles of both factors in central PK formation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "8f0ba04f-26e1-4007-b36d-89d1f5adc837",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C66",
+      "claim": "RimM may act independently of RimP to facilitate assembly of the head domain regardless of the status of central PK formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, RimM may act independently of RimP to facilitate assembly of the head domain regardless of the status of central PK formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that \u0394rimM predominantly contains Group III intermediates with anchored heads, while \u0394rimP contains Group II intermediates with unanchored heads.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "a788a996-d70f-4a7b-bd61-a9b15a9c64f5",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C67",
+      "claim": "RimP might be one of the earliest factors to act upon the assembling 30S subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings suggest that RimP might be one of the earliest factors to act upon the assembling 30S subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that RimP affects early intermediates and central PK formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "d0d2ace7-3c9e-49bf-a483-cf9b373d086f",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C68",
+      "claim": "RimP has previously been shown to accelerate binding of S5 and S12 by twofold and sixfold, respectively, in in vitro reconstitution assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RimP has previously been shown to accelerate binding of S5 and S12 by twofold and sixfold, respectively, in in vitro reconstitution assays (Bunner et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bunner et al., 2010b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "879c0ad2-3211-4f14-848e-e158268dc23f",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C69",
+      "claim": "Addition of RimP to 30S reconstitution experiments may help to promote central PK formation and avoid the kinetically unfavorable Group I and Group II intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our findings, these previous results suggest that addition of RimP to 30S reconstitution experiments may help to promote central PK formation and avoid the kinetically unfavorable Group I and Group II intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the role of RimP in central PK formation observed in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "f85db384-4f3a-4cde-b58e-a6cd92972269",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C70",
+      "claim": "Group I-like class averages were highly abundant at early time-points during in vitro 30S reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous EM studies of assembly intermediates present during in vitro 30S reconstitution, Group I-like class averages were highly abundant at early time-points during assembly (Mulder et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mulder et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "4b1582a9-a4e6-406b-afd8-334e29a63e67",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C71",
+      "claim": "Group II-like classes are present during the early stages of in vitro 30S assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, Group II-like classes are also present during the early stages of assembly, although they were uncharacterized in that study (See Figure 1B in Mulder et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mulder et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "efc2a3c8-b31c-4a13-ad7f-04a3cb85733e",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C72",
+      "claim": "The presence of Group I and II-like classes subsides with the incorporation of S5 and S12 during in vitro reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of Group I and II-like classes subsides with the incorporation of S5 and S12, as measured by pulse-chase followed by qMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from previous in vitro studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "dc2a8522-7517-45d5-ac81-2e1f8373a202",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C73",
+      "claim": "Kinetically unfavorable pre-central PK conformations remain viable on-pathway intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "These previous in vitro results agree with the present in vivo observations that kinetically unfavorable pre-central PK conformations remain viable on-pathway intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of in vitro and in vivo observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "7e32b203-eab2-4c11-9d4a-7aab70969e41",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C74",
+      "claim": "RimP has previously been shown to bind to free 30S subunits resolved on sucrose gradients, but not complete 70S ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "RimP has previously been shown to bind to free 30S subunits resolved on sucrose gradients, but not complete 70S ribosomes, indicating that it directly interacts with 30S assembly intermediates (Nord et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nord et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "b1f3439d-eeea-403a-95ff-eae3799c5092",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C75",
+      "claim": "RimP directly interacts with 30S assembly intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "RimP has previously been shown to bind to free 30S subunits resolved on sucrose gradients, but not complete 70S ribosomes, indicating that it directly interacts with 30S assembly intermediates (Nord et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that RimP binds to 30S but not 70S particles.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "41d75c94-2056-482c-b841-3ba5941f2ae6",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "claim_id": "C76",
+      "claim": "The combined EM/qMS approach should have immediate and broad applicability to study of the role of other ribosome assembly factors as well as macromolecular assembly processes involving other bacterial and eukaryotic cellular machines.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined EM/qMS approach employed here should have immediate and broad applicability to study of the role of other ribosome assembly factors as well as macromolecular assembly processes involving other bacterial and eukaryotic cellular machines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the broader applicability of the method developed in this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c6d57ae9-4ee4-4865-9554-7ce11dd9c1da",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work established the basic framework of 30S ribosome assembly, including the structure of the 70S ribosome, the ability to reconstitute 30S subunits in vitro, and the hierarchical order and dependencies of r-protein binding under equilibrium conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are all supported by established literature citations (Traub and Nomura 1969; Mizushima and Nomura 1970; Held et al. 1973, 1974; Stern et al. 1989). These represent well-established prior knowledge that provides the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "75ad7acf-54e6-4771-b7f3-d00b973d19bc",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior studies revealed that 30S assembly can proceed through multiple parallel pathways despite r-protein binding dependencies, and that misfolded rRNA structures lead to stable kinetic traps during in vitro reconstitution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 are supported by multiple citations to prior work (Adilakshmi et al. 2008; Ridgeway et al. 2012; Kim et al. 2014; Talkington et al. 2005; Bunner et al. 2010a; Mulder et al. 2010; Sykes and Williamson 2009). These establish important context for understanding assembly complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "cb8a025e-ec01-43b7-879f-7ab08a53fc3d",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Assembly factors including RimM, RbfA, RimP, Era, RsgA, and KsgA have been implicated in various aspects of 30S assembly in vivo, though the precise role of RimP within the assembly factor network was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 are supported by citations to prior work (Wilson and Nierhaus 2007; Shajani et al. 2011; Williamson 2003; Clatterbuck Soper et al. 2013; Datta et al. 2007; Jomaa et al. 2011b; Sharma et al. 2005; Guo et al. 2011; Boehringer et al. 2012; Nord et al. 2009; Bunner et al. 2010b). This establishes the motivation for investigating RimP's role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "9b35859a-993c-4145-8f5d-e7753da18673",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Recent methodological advances in quantitative mass spectrometry and automated electron microscopy enable high-throughput analysis of heterogeneous ribosome assembly intermediates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 are supported by citations to prior methodological work (Charollais et al. 2003; Chen and Williamson 2013; Clatterbuck Soper et al. 2013; Guo et al. 2013; Leong et al. 2013; Suloway et al. 2005; Lander et al. 2009; Radermacher et al. 1987; Yoshioka et al. 2007; Voss et al. 2010). This establishes the technical foundation for the hybrid approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "3fc0c61f-215d-456a-9c48-02ed71a91681",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Five distinct groups of 30S assembly intermediates were identified in WT E. coli by combined qMS and EM analysis, representing a progression from early intermediates lacking the head domain (Group I) through intermediates with unanchored (Group II) or partially docked heads (Group III) to late intermediates and mature subunits (Groups IV and V).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 are directly supported by experimental data shown in Figures 1C-D and 2A-H, combining qMS measurements of r-protein abundance with EM structural analysis. The classification into five groups is based on both compositional and conformational differences observed across multiple fractions. The data are internally consistent between qMS and EM observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "e0d387e4-46b3-4190-8dd0-dcb8af459c1b",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The central pseudoknot appears to be formed in Group III but unformed in Group II particles, with the detachment of the head from the platform in Group II suggesting unstable or unformed central PK regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C24 are supported by structural observations from EM data (Figures 2B-C) showing distinct head positioning between Groups II and III. The inference about central PK status is reasonable based on the known structural role of the central PK in anchoring the head domain, though this is an inference from structural data rather than direct measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "b8bd9520-6f6a-4ef0-af1b-ebee7a9ae197",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Deletion of RimP has a stronger effect on central PK exposure than deletion of RimM or RbfA, as measured by RNase H accessibility assays, and correlates with increased abundance of Group II particles with unanchored heads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by RNase H assay data (Figure 3B, Figure 3\u2014figure supplement 1B-C) and EM analysis (Figure 3C-D, Figure 3\u2014figure supplement 2) comparing multiple deletion strains. The correlation between RNase H cleavage and Group II particle abundance across strains provides strong support for the connection between RimP and central PK stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "0826e727-bfa1-4654-9792-063d18406de5",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The \u0394rimP strain shows altered ribosome profiles with increased 30S/50S and decreased 70S particles compared to WT, and qMS analysis reveals that S2, S3, S12, and S21 are specifically depleted in \u0394rimP relative to WT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by sucrose gradient data (Figure 4A) and qMS data (Figure 4C). The sucrose gradient result is consistent with prior work (Nord et al. 2009). The specific depletion pattern of S2, S3, S12, and S21 is clearly shown in the hierarchical clustering analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pulse-labeling experiments demonstrate that \u0394rimP intermediates are on-pathway, eventually maturing into 70S ribosomes, but with delayed incorporation of S12 and late-binding proteins S2, S21, and S3. Early-binding proteins like S4 have large precursor pool sizes while depleted proteins like S12 have negligible pools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 are supported by pulse-labeling qMS data (Figure 4D-F, Figure 4\u2014figure supplement 1C). The higher fraction labeled values in 30S particles compared to 70S ribosomes (C31) demonstrate that intermediates are on-pathway. The precursor pool size analysis (C34-C35) and kinetic modeling (Figure 4E) provide quantitative support for delayed incorporation of specific proteins. The clustering of S12 with late binders despite being an early binder in WT (C36) is a key finding supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "8736ed0a-261d-4e0a-bdf9-2a77b5fd87ed",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Group II intermediates are dramatically enriched (>3-fold) in \u0394rimP samples compared to WT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C40 are supported by direct comparison of EM data between WT and \u0394rimP strains (Figures 1D, 5B-C). The >3-fold enrichment is quantified in Figure 5C using a combined dataset approach that allows direct comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "4c7cfb26-bed6-4341-98c1-0048ad5e6bfd",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Group II particles exhibit highly variable head domain positioning constrained by a flexible linker (likely 16S residues 910-919), and may contain a nearly complete complement of head domain r-proteins, indicating that head domain assembly can occur prior to central PK formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by EM analysis including 2D class averages, 3D RCT volumes, variance analysis (Figure 5D-F), and Maskiton analysis (Video 2). The inference about the flexible linker (C43) is reasonable based on the structural context and observed range of motion. The conclusion that head domain assembly can precede central PK formation (C45) is a significant finding supported by the structural data showing assembled heads with unformed central PK.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "8c6715bd-1fb7-4ec7-b2b8-cbba2c89c5bc",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Affinity-purified \u0394rimP intermediates with unstable central PK show severe depletion of S2 and S12, partial depletion of S3 and S5, but high abundance of most other 3\u2032-domain r-proteins, suggesting head domain formation is not perturbed until very late stages of assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by qMS analysis of affinity-purified intermediates (Figure 6A). The specific depletion pattern and the inference about head domain assembly timing (C48) are reasonable based on the uniform abundance of most 3\u2032-domain proteins. However, the affinity purification method may introduce some bias toward certain intermediate types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "f118548c-6c93-4036-9165-ab7732c9cc9b",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cryo-EM structures of Group I intermediates lack the entire 3\u2032-domain including helix 27, and clearly lack density for S5 and S12. Variability between Group I structures arises mainly from differences in the platform region, suggesting that platform stability may depend on 3\u2032-domain assembly and docking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 are supported by cryo-EM data (Figure 6B, Figure 6\u2014figure supplement 2C) and codimensional PCA analysis (Figure 6D). The lack of density for specific structural elements and proteins is clearly demonstrated. The inference about platform stability depending on 3\u2032-domain assembly (C54) is reasonable based on the observed variability pattern, though this remains a hypothesis requiring further testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "c67a8b12-0f0e-425a-b18a-9b4bcfdd1293",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The central pseudoknot is essential for translation and conserved across all kingdoms of life. The yeast ribosomal biogenesis factor Mrd1 was previously implicated in central PK formation and binds to 18S rRNA helices h27 and h28 adjacent to the central PK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 are supported by citations to prior work (Brink et al. 1993; Poot et al. 1998; Segerstolpe et al. 2013). This establishes important evolutionary and functional context for understanding the significance of central PK formation and provides a precedent for assembly factors acting on this structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "36ce34bb-7968-4245-bd0e-19c5234e2f86",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "RimP is composed of two RNA-binding domains and may play an analogous role to Mrd1 in binding to 16S rRNA regions adjacent to the central PK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 about RimP structure is supported by established knowledge. However, claim C60 is explicitly speculative, based on structural similarity between RimP and Mrd1. While the speculation is reasonable given the experimental results showing RimP's role in central PK formation, direct evidence for RimP binding to specific rRNA regions is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "db0f23d5-8716-417b-882e-6f1c4f8dc8f1",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that RimP acts during early and late stages of 30S biogenesis to stabilize the central pseudoknot, allowing subsequent incorporation of central-PK binding r-proteins S5 and S12 and late-binding r-proteins S2, S3, and S21.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C62 represent the authors' proposed model based on their experimental data. While explicitly presented as a proposal, the model is well-supported by the combined evidence from RNase H assays, EM structural analysis, qMS protein composition data, and pulse-labeling kinetics. The model integrates multiple lines of evidence showing RimP's effect on central PK stability and the delayed incorporation of specific proteins in \u0394rimP.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "fc1fb2ab-550f-4b64-98e4-faba64d11636",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose a model where premature central PK formation is blocked by the 5\u2032-leader structure, RbfA promotes h1 formation and may act synergistically with RimP to stabilize the central PK, while RimM acts independently to facilitate head domain assembly. RimP may be one of the earliest factors to act on the assembling 30S subunit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C67 represent a proposed mechanistic model integrating RimP with other assembly factors. While C63 is established knowledge and C66-C67 are reasonable inferences from the data showing different intermediate distributions in \u0394rimM vs \u0394rimP, claims C64-C65 about RbfA acting synergistically with RimP are explicitly speculative and not directly tested in this study. The model is plausible but requires additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "cc68aaa1-9b96-4973-bff3-0b327439fede",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "RimP has previously been shown to accelerate S5 and S12 binding in vitro, and the authors suggest that adding RimP to in vitro reconstitution experiments may help promote central PK formation and avoid kinetically unfavorable Group I and II intermediates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by citation to prior work (Bunner et al. 2010b). Claim C69 is a reasonable suggestion based on integrating the prior in vitro results with the current in vivo findings, though it remains a prediction requiring experimental validation. The suggestion is well-grounded in the data showing RimP's role in central PK formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "97e4a324-eec0-44e0-b5d1-6ade9c13a337",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Previous in vitro reconstitution studies showed Group I-like and Group II-like intermediates at early time points, with their abundance subsiding upon S5 and S12 incorporation, consistent with the current in vivo observations that pre-central PK conformations are viable on-pathway intermediates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are supported by citations to prior work (Mulder et al. 2010) and represent a synthesis of prior in vitro observations with the current in vivo findings. The consistency between in vitro and in vivo observations strengthens the interpretation that Group I and II intermediates represent kinetically unfavorable but on-pathway states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "a3dc8186-70b2-4499-801f-748e835b34ac",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "RimP has been shown to bind free 30S subunits but not 70S ribosomes, indicating direct interaction with 30S assembly intermediates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C75 are supported by citation to prior work (Nord et al. 2009). The inference that RimP directly interacts with assembly intermediates (C75) is reasonable based on the binding specificity, though the exact binding site and mechanism remain to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    },
+    {
+      "id": "26930d4e-b89f-47ca-8918-bc92dfd9e98e",
+      "content_id": "0ec8d1cd-9315-4dbf-ac8b-72b9d475f043",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The combined EM/qMS approach should have broad applicability to studying other ribosome assembly factors and macromolecular assembly processes in bacteria and eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is a reasonable speculation about the broader applicability of the methodology. The successful application of the hybrid approach to characterize heterogeneous ribosome assembly intermediates demonstrates its potential utility for other complex assembly processes, though actual application to other systems would require validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:39.073256Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "934a43f5-8e55-4d47-8a77-937b20e3af09",
+      "result_id": "c6d57ae9-4ee4-4865-9554-7ce11dd9c1da"
+    },
+    {
+      "claim_id": "0e94f7c7-d6f7-4c06-b954-0362937784e7",
+      "result_id": "c6d57ae9-4ee4-4865-9554-7ce11dd9c1da"
+    },
+    {
+      "claim_id": "1dbbbbe8-9c4e-4223-b825-803d876dda29",
+      "result_id": "c6d57ae9-4ee4-4865-9554-7ce11dd9c1da"
+    },
+    {
+      "claim_id": "d17db78f-47e9-45a0-8e7a-fe6385daad2f",
+      "result_id": "c6d57ae9-4ee4-4865-9554-7ce11dd9c1da"
+    },
+    {
+      "claim_id": "b2c19b87-19b3-4a9b-bf9b-b29ba36de34c",
+      "result_id": "c6d57ae9-4ee4-4865-9554-7ce11dd9c1da"
+    },
+    {
+      "claim_id": "e4725b59-763e-45e4-b8de-3462fc7b2011",
+      "result_id": "75ad7acf-54e6-4771-b7f3-d00b973d19bc"
+    },
+    {
+      "claim_id": "df394a3c-6701-49c2-9251-f826a0662eee",
+      "result_id": "75ad7acf-54e6-4771-b7f3-d00b973d19bc"
+    },
+    {
+      "claim_id": "21113ba5-7d4f-4665-bcd9-bc132abf9278",
+      "result_id": "cb8a025e-ec01-43b7-879f-7ab08a53fc3d"
+    },
+    {
+      "claim_id": "30d4c1bb-666c-4806-a45c-b21d07addc97",
+      "result_id": "cb8a025e-ec01-43b7-879f-7ab08a53fc3d"
+    },
+    {
+      "claim_id": "2dc80960-2aad-4957-8dcb-6cb5825c0ae1",
+      "result_id": "cb8a025e-ec01-43b7-879f-7ab08a53fc3d"
+    },
+    {
+      "claim_id": "f5ba178c-1090-4e74-b036-36ab1953918c",
+      "result_id": "cb8a025e-ec01-43b7-879f-7ab08a53fc3d"
+    },
+    {
+      "claim_id": "821a725d-7c78-4a04-ad1c-b92da4c85264",
+      "result_id": "9b35859a-993c-4145-8f5d-e7753da18673"
+    },
+    {
+      "claim_id": "b0de65db-5974-4fa2-b932-46c10c59c111",
+      "result_id": "9b35859a-993c-4145-8f5d-e7753da18673"
+    },
+    {
+      "claim_id": "55cc5a01-be93-468e-907e-a90a42e95061",
+      "result_id": "9b35859a-993c-4145-8f5d-e7753da18673"
+    },
+    {
+      "claim_id": "f716ddfd-a5eb-4fae-9fea-8c5951630de0",
+      "result_id": "9b35859a-993c-4145-8f5d-e7753da18673"
+    },
+    {
+      "claim_id": "a4557d2e-e8fe-4c8d-b03a-2100bd4ffc3d",
+      "result_id": "3fc0c61f-215d-456a-9c48-02ed71a91681"
+    },
+    {
+      "claim_id": "3b1bbd90-3e92-4521-8e94-8b0042640019",
+      "result_id": "3fc0c61f-215d-456a-9c48-02ed71a91681"
+    },
+    {
+      "claim_id": "8ccfb020-762f-4d1d-a21f-8241f47235b6",
+      "result_id": "3fc0c61f-215d-456a-9c48-02ed71a91681"
+    },
+    {
+      "claim_id": "d00f10ac-27b0-4978-8154-2295e359615f",
+      "result_id": "3fc0c61f-215d-456a-9c48-02ed71a91681"
+    },
+    {
+      "claim_id": "a07b9998-945b-4e84-83af-12182e5c87f3",
+      "result_id": "3fc0c61f-215d-456a-9c48-02ed71a91681"
+    },
+    {
+      "claim_id": "d8c7e2f7-056a-4760-86a2-fbf9311e1577",
+      "result_id": "3fc0c61f-215d-456a-9c48-02ed71a91681"
+    },
+    {
+      "claim_id": "6a5b6c50-bc90-4dc8-bc62-8b30dd6263b4",
+      "result_id": "3fc0c61f-215d-456a-9c48-02ed71a91681"
+    },
+    {
+      "claim_id": "f61591f3-49ed-4b5c-9638-f97e85f5ac44",
+      "result_id": "e0d387e4-46b3-4190-8dd0-dcb8af459c1b"
+    },
+    {
+      "claim_id": "5267353e-099d-49b2-9c67-602cd5551be8",
+      "result_id": "e0d387e4-46b3-4190-8dd0-dcb8af459c1b"
+    },
+    {
+      "claim_id": "cb7ebf1a-5edb-47ec-91b0-aa9591707469",
+      "result_id": "b8bd9520-6f6a-4ef0-af1b-ebee7a9ae197"
+    },
+    {
+      "claim_id": "7073a7e2-2179-4fe1-b379-a8820b699ff5",
+      "result_id": "b8bd9520-6f6a-4ef0-af1b-ebee7a9ae197"
+    },
+    {
+      "claim_id": "5090083e-7e5f-49c1-bf32-07578fa87df9",
+      "result_id": "b8bd9520-6f6a-4ef0-af1b-ebee7a9ae197"
+    },
+    {
+      "claim_id": "a3da35a5-15c6-4470-bc70-ec29a9ec34b9",
+      "result_id": "0826e727-bfa1-4654-9792-063d18406de5"
+    },
+    {
+      "claim_id": "f81b9486-20d0-4596-a2c3-41e8edc24d20",
+      "result_id": "0826e727-bfa1-4654-9792-063d18406de5"
+    },
+    {
+      "claim_id": "b4831fec-6641-4f3d-a868-6e98ed98cf31",
+      "result_id": "0826e727-bfa1-4654-9792-063d18406de5"
+    },
+    {
+      "claim_id": "3ea961ba-2d78-4a1d-b801-fe46266ec889",
+      "result_id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc"
+    },
+    {
+      "claim_id": "7db678dc-ffa6-4985-95f2-3f551af622f3",
+      "result_id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc"
+    },
+    {
+      "claim_id": "bbe457ee-75a6-4ed9-beb6-f383426ad8d1",
+      "result_id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc"
+    },
+    {
+      "claim_id": "eb1684b9-4f76-4fd9-a131-ed82d63529e0",
+      "result_id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc"
+    },
+    {
+      "claim_id": "99e7c2ea-187a-43d2-ab30-50a781182f08",
+      "result_id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc"
+    },
+    {
+      "claim_id": "b750fb56-e15a-41b5-9b68-f9f3dfc88315",
+      "result_id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc"
+    },
+    {
+      "claim_id": "3d4253d6-c9f7-4830-8647-af7674ee2829",
+      "result_id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc"
+    },
+    {
+      "claim_id": "6e124c37-f0c7-47e9-bff1-35a568bb3533",
+      "result_id": "d0c3fa82-09e1-40a8-8659-5c05fbbed4dc"
+    },
+    {
+      "claim_id": "7ea9b6fd-4690-4d4f-aaf9-777a70be59fd",
+      "result_id": "8736ed0a-261d-4e0a-bdf9-2a77b5fd87ed"
+    },
+    {
+      "claim_id": "bf489b6b-eeff-4c79-b1e4-f78581218a39",
+      "result_id": "8736ed0a-261d-4e0a-bdf9-2a77b5fd87ed"
+    },
+    {
+      "claim_id": "4c988b86-a6cb-472f-aa0a-d54752713117",
+      "result_id": "4c7cfb26-bed6-4341-98c1-0048ad5e6bfd"
+    },
+    {
+      "claim_id": "5711af76-d26f-4039-966d-bec9648ebe1f",
+      "result_id": "4c7cfb26-bed6-4341-98c1-0048ad5e6bfd"
+    },
+    {
+      "claim_id": "a2d10a24-abfc-4c6e-b636-396ca6db36d3",
+      "result_id": "4c7cfb26-bed6-4341-98c1-0048ad5e6bfd"
+    },
+    {
+      "claim_id": "89c61cc4-2f2b-4028-aa56-be40bbfb217d",
+      "result_id": "4c7cfb26-bed6-4341-98c1-0048ad5e6bfd"
+    },
+    {
+      "claim_id": "520e06db-9c0c-4985-83bd-1bd164c7884b",
+      "result_id": "4c7cfb26-bed6-4341-98c1-0048ad5e6bfd"
+    },
+    {
+      "claim_id": "b464fe18-f7d5-4a5f-a434-8a1769a44eb1",
+      "result_id": "8c6715bd-1fb7-4ec7-b2b8-cbba2c89c5bc"
+    },
+    {
+      "claim_id": "2581f835-d8aa-4e0d-a0ef-694c36df749d",
+      "result_id": "8c6715bd-1fb7-4ec7-b2b8-cbba2c89c5bc"
+    },
+    {
+      "claim_id": "7e1bc7ba-f73e-4cb6-8291-285c3d57c03b",
+      "result_id": "8c6715bd-1fb7-4ec7-b2b8-cbba2c89c5bc"
+    },
+    {
+      "claim_id": "5311501d-95e8-44d1-95fe-529df7824a92",
+      "result_id": "f118548c-6c93-4036-9165-ab7732c9cc9b"
+    },
+    {
+      "claim_id": "e773ba92-3c1a-40e6-9bc3-1ab0d23325c3",
+      "result_id": "f118548c-6c93-4036-9165-ab7732c9cc9b"
+    },
+    {
+      "claim_id": "0254ba2d-e6e2-4327-80cc-a393c2409e77",
+      "result_id": "f118548c-6c93-4036-9165-ab7732c9cc9b"
+    },
+    {
+      "claim_id": "b938dc01-fa4d-4fc7-a070-ce94940a9372",
+      "result_id": "f118548c-6c93-4036-9165-ab7732c9cc9b"
+    },
+    {
+      "claim_id": "3aa02489-e0d5-4dec-82fb-bf230f16976a",
+      "result_id": "f118548c-6c93-4036-9165-ab7732c9cc9b"
+    },
+    {
+      "claim_id": "ae54df2b-83fe-4ac1-bee4-5fc5d381f5d9",
+      "result_id": "f118548c-6c93-4036-9165-ab7732c9cc9b"
+    },
+    {
+      "claim_id": "1826cbe5-8b0f-47b3-a218-ef38d0d21b70",
+      "result_id": "c67a8b12-0f0e-425a-b18a-9b4bcfdd1293"
+    },
+    {
+      "claim_id": "118bf6b2-e632-47fd-9f10-32d1cb62b021",
+      "result_id": "c67a8b12-0f0e-425a-b18a-9b4bcfdd1293"
+    },
+    {
+      "claim_id": "fd49ac9e-d9a9-4c1d-8e9a-28545e6ddbed",
+      "result_id": "c67a8b12-0f0e-425a-b18a-9b4bcfdd1293"
+    },
+    {
+      "claim_id": "3c14c7f6-34c0-4836-991b-134efb640c4f",
+      "result_id": "c67a8b12-0f0e-425a-b18a-9b4bcfdd1293"
+    },
+    {
+      "claim_id": "4b35c617-5d33-4306-af47-d77b1c44b77b",
+      "result_id": "36ce34bb-7968-4245-bd0e-19c5234e2f86"
+    },
+    {
+      "claim_id": "fd7f108c-d26c-45fe-ac42-d86b6a7f2c7b",
+      "result_id": "36ce34bb-7968-4245-bd0e-19c5234e2f86"
+    },
+    {
+      "claim_id": "78a92203-2859-4630-b473-eeb057826b46",
+      "result_id": "db0f23d5-8716-417b-882e-6f1c4f8dc8f1"
+    },
+    {
+      "claim_id": "daa01f2b-8580-4e3a-b1f3-2ec4bc50d8f7",
+      "result_id": "db0f23d5-8716-417b-882e-6f1c4f8dc8f1"
+    },
+    {
+      "claim_id": "28c0fc5a-585f-4c59-be6d-59cabcf49b87",
+      "result_id": "fc1fb2ab-550f-4b64-98e4-faba64d11636"
+    },
+    {
+      "claim_id": "5348a887-cee2-4872-ab37-be179daf7504",
+      "result_id": "fc1fb2ab-550f-4b64-98e4-faba64d11636"
+    },
+    {
+      "claim_id": "72d3828a-9dd0-4fd6-adad-c21bfdc194ca",
+      "result_id": "fc1fb2ab-550f-4b64-98e4-faba64d11636"
+    },
+    {
+      "claim_id": "8f0ba04f-26e1-4007-b36d-89d1f5adc837",
+      "result_id": "fc1fb2ab-550f-4b64-98e4-faba64d11636"
+    },
+    {
+      "claim_id": "a788a996-d70f-4a7b-bd61-a9b15a9c64f5",
+      "result_id": "fc1fb2ab-550f-4b64-98e4-faba64d11636"
+    },
+    {
+      "claim_id": "d0d2ace7-3c9e-49bf-a483-cf9b373d086f",
+      "result_id": "cc68aaa1-9b96-4973-bff3-0b327439fede"
+    },
+    {
+      "claim_id": "879c0ad2-3211-4f14-848e-e158268dc23f",
+      "result_id": "cc68aaa1-9b96-4973-bff3-0b327439fede"
+    },
+    {
+      "claim_id": "f85db384-4f3a-4cde-b58e-a6cd92972269",
+      "result_id": "97e4a324-eec0-44e0-b5d1-6ade9c13a337"
+    },
+    {
+      "claim_id": "4b1582a9-a4e6-406b-afd8-334e29a63e67",
+      "result_id": "97e4a324-eec0-44e0-b5d1-6ade9c13a337"
+    },
+    {
+      "claim_id": "efc2a3c8-b31c-4a13-ad7f-04a3cb85733e",
+      "result_id": "97e4a324-eec0-44e0-b5d1-6ade9c13a337"
+    },
+    {
+      "claim_id": "dc2a8522-7517-45d5-ac81-2e1f8373a202",
+      "result_id": "97e4a324-eec0-44e0-b5d1-6ade9c13a337"
+    },
+    {
+      "claim_id": "7e32b203-eab2-4c11-9d4a-7aab70969e41",
+      "result_id": "a3dc8186-70b2-4499-801f-748e835b34ac"
+    },
+    {
+      "claim_id": "b1f3439d-eeea-403a-95ff-eae3799c5092",
+      "result_id": "a3dc8186-70b2-4499-801f-748e835b34ac"
+    },
+    {
+      "claim_id": "41d75c94-2056-482c-b841-3ba5941f2ae6",
+      "result_id": "26930d4e-b89f-47ca-8918-bc92dfd9e98e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,424 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C103",
+      "C104"
+    ],
+    "result": "Mammalian transcription factors (Oct4, Sox2, Klf4, c-myc) can induce a partially reprogrammed pluripotent stem cell (PRPSC) state in non-mammalian vertebrates (birds, fish) and invertebrates (Drosophila), spanning 550 million years of evolution. The degree of reprogramming varies with phylogenetic distance from mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C26-C28, C103-C104 collectively establish the core finding with experimental data across multiple species. The phylogenetic span (C3, C26) is supported by citation and Figure 1A. Experimental evidence includes morphological changes (C34), marker expression (C33-C36, C43-C65), and functional assays (C66-C70, C78-C102) across all tested species. The variation with phylogenetic distance (C27, C149) is supported by comparative data showing stronger reprogramming in birds than fish or Drosophila.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The rationale for attempting cross-species reprogramming was based on good overall amino acid conservation (80-98%) between mouse and bird transcription factors, particularly in DNA binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by sequence analysis data shown in Figure 1B-E and Figure 1\u2014figure supplement 2. The conservation percentages are explicitly stated and the highly conserved DNA binding domains are documented with visual evidence (red boxes in supplementary figure).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "Transformed avian cells exhibited stem cell-like morphology, alkaline phosphatase activity, and SSEA-1 expression within 5 days, with colony formation in 20% of wells (up to 90% with optimized conditions). Colony characteristics were similar to mouse and chicken ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 are well-supported by morphological data (Figure 2A-B), ALP staining (Figure 2C-D), SSEA-1 immunofluorescence (Figure 2E-F), and quantitative colony counts from seven independent experiments (C37). The dose-response relationship (C39) is documented in Figure 2\u2014figure supplement 1. Comparisons to ESC controls (C42) are shown in Figure 2G-H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "After 1-2 passages, transformed avian cells expressed exogenous mouse genes and showed significant upregulation (10-100-fold) of endogenous Oct4, Sox2, and c-myc homologs, but not Klf4. Nanog and Vasa were also induced. Expression levels varied by species, with chicken showing highest induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by comprehensive qRT-PCR data in Figure 3A-G with statistical analysis (p<0.0001, ANOVA, n=5 replicates). The lack of Klf4 induction in avian species (C47) is notable and confirmed in both iPSC-like cells and chicken ESC controls (C48). Species-specific differences are quantified and statistically significant (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "By the fifth passage (2-3 months), exogenous mouse genes were completely or partially silenced, accompanied by further increases in endogenous species-specific homologs. Klf4 remained low in avian cells except for a small increase in finch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by qRT-PCR data in Figure 3G-L showing transgene silencing and compensatory upregulation of endogenous genes. The temporal dynamics are well-documented across passages. The persistent lack of Klf4 induction (C52) is shown in Figure 3J and represents a consistent species difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Zebrafish cells showed similar reprogramming characteristics to avian cells, including colony formation, ALP activity, SSEA1 expression, transgene silencing, and Vasa induction. Key differences included lack of Nanog induction and smaller colony size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by data in Figures 2-3 showing zebrafish cells exhibit most avian characteristics. The lack of Nanog induction (C57) is a significant species difference documented in Figure 3E. The authors note potential issues with zebrafish Nanog homolog identification (C121-C122), which provides context for this difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Drosophila S2 cells showed colony formation (fewer, smaller, darker than vertebrates), ALP activity, expression of exogenous mouse genes, and induced expression of two endogenous homologs (VVL/Oct4, dMyc) plus four other stem cell markers (Dichaete, Escargot, Snail, Vasa). SoxN showed low induction and Luna/Klf4 showed no induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by morphological data (Figure 2B, 2D) and qRT-PCR data (Figure 3M-N). The less prominent reprogramming in Drosophila compared to vertebrates (C143-C145) is consistent with greater phylogenetic distance. The successful transduction itself is notable as lentivirus had not previously been used successfully in fly cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Proliferation levels of transformed vertebrate cells exceeded fibroblast controls and approached ESC levels by passages 1-3, while GFP-vector controls showed continuous decline associated with senescence. Transformed Drosophila cells showed enhanced proliferation at all passages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by MTT assay data in Figure 3O with measurements across multiple passages. The contrast between iPSC-like cells and controls is clear, and the association with senescence in controls (C68) is stated as an observation. Sample size (n=5 independent lines) provides adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Telomerase activity was activated in all transformed vertebrate cells at levels comparable to ESC lines. Transformed Drosophila cells lacked telomerase activity, consistent with known absence of telomerase in the Drosophila genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by telomerase activity assay data in Figure 3P for vertebrates. The lack of telomerase in Drosophila (C72) is confirmed by citation to Gomes et al., 2010 and is consistent with known biology. The telomerase activation in vertebrate cells is a key marker of stem cell state and immortalization potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Karyotype analysis showed 90% of chicken and zebra finch iPSC-like cells displayed normal macro chromosome arrangements. The 10% abnormal cells had tetraploid spreads, which occurred at similar rates in control fibroblasts and is common in cultured cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by karyotype data in Figure 4C-F with quantitative analysis (18/20 normal for chicken, similar for finch). The tetraploidy in both iPSC-like and control cells (C75) indicates it is not transformation-specific. The interpretation that major chromosomal rearrangements did not occur (C77) is reasonable but limited to macro chromosomes only.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Embryoid bodies (EBs) formed from iPSC-like cells of all species (avian, fish, Drosophila) and appeared similar to those from ESC controls. EBs showed upregulation of three germ layer markers (Brachyury, Nestin, Gata-4) that were low in undifferentiated iPSC-like cells. Control fibroblasts did not form EBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by morphological data (Figure 4A) and qRT-PCR of lineage markers (Figure 4B) with appropriate citations for marker identity. The specificity of EB formation to iPSC-like cells and ESCs (C80) is an important control. However, the germ layer assignments appear incorrect: Nestin is typically ectoderm (neural), not endoderm, and Gata-4 is typically endoderm, not ectoderm, representing a potential error in C81.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Teratoma formation occurred in 2/9 mice injected with chicken iPSC-like cells and 3/9 with quail cells. Teratomas exhibited organized structures from all three germ layers (neuronal rosettes, bone, GI tract). No controls formed teratomas. Zebra finch cells did not form teratomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by quantitative data and histological evidence in Figure 5A-I. The formation rates (22-33%) are modest but significant compared to 0% in controls. The organized tri-lineage differentiation (C85) demonstrates in vivo pluripotency. The failure of finch cells (C87) suggests species differences, though the interpretation is appropriately cautious (\"suggestive\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Chimera formation rates were 16% for chicken (4/25) and 10% for zebrafish (10/103). Embryos injected with iPSC-like cells showed higher mortality than fibroblast controls (50% vs 20% for chicken, 60% vs negligible for fish), consistent with observations in mouse iPSC studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by quantitative data from chimera experiments. The mortality rates (C90-C92) are concerning but are appropriately compared to published mouse data (C93, citing Maherali and Hochedlinger, 2008). The authors speculate about causes (tumors, aberrant growth) but do not provide direct evidence. The chimera formation rates are modest but represent successful in vivo incorporation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "iPSC-like cells incorporated into developing chicken and zebrafish embryos, differentiating into multiple cell types and tissues. Fibroblast controls did not survive to generate older chimeras. Incorporation patterns varied from sporadic to widespread, with tissue-specific preferences (chicken: muscle, intestines, skin, brain; fish: stomach, head). Features were similar to published mouse and chicken ESC chimeras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 are supported by extensive imaging data in Figure 6 and supplements, including brightfield, fluorescence, and immunohistochemistry. The survival difference between iPSC-like cells and fibroblasts (C95) is a critical control. The comparison to published chimeras (C99) with citations provides validation. The conclusion of pluripotency for non-germline cells (C101) is appropriately qualified, as germline transmission was not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "During review, another group (Lu et al., 2012) showed similar properties could be induced in quail using human genes. The authors tested human transcription factors in all avian species and zebrafish with similar results to mouse factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 acknowledge concurrent work and report additional unpublished data. C105 is a straightforward citation. C106 states results were \"similar\" but data are not shown, making detailed evaluation impossible. This represents appropriate disclosure of related work and suggests the phenomenon is not specific to mouse genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Non-mammalian iPSC-like cells share multiple characteristics with mouse iPSCs/ESCs (morphology, marker expression, endogenous gene reactivation, self-renewal, EB formation, teratomas, chimera contribution), suggesting conserved induction processes. Differences include lack of Klf4 induction, slower initial growth, and lower fold-expression increases (20-80-fold vs 100-1000-fold for Oct4), but these lower levels were still sufficient for pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C116 provide a comprehensive summary supported by data throughout the manuscript and Table 1. The conclusion that lower expression levels are sufficient for pluripotency (C115-C116) is important and supported by the functional data (EBs, teratomas, chimeras). The acknowledgment of embryonic fibroblast baseline expression (C113) is appropriate. Species differences are well-documented and statistically significant (C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "SSEA-1 was induced in all studied species but not in human iPSCs/ESCs, suggesting humans may differ. Nanog was induced in all species except zebrafish. The zebrafish Nanog homolog shows low sequence identity with birds (32%) and mammals (31%), raising questions about its identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 identify important species differences. SSEA-1 difference (C117) is supported by data and citation. The Nanog situation is more complex: lack of induction in zebrafish (C118) is documented, but the authors appropriately question whether the true homolog has been identified (C121-C122) based on sequence analysis. This represents good scientific reasoning about potential confounders.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The absence of Klf4 induction in non-mammalian species may reflect inability to reprogram this gene, Klf family redundancy, or mammalian lineage specificity. The lineage-specific hypothesis is supported by low Klf4 in chicken ESCs. Klf4's role in cell adhesion regulation is consistent with observations that non-mammalian cells are more adhesive and slower-growing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 present reasonable hypotheses about Klf4 with supporting evidence. The low expression in chicken ESCs (C124) supports lineage specificity. The connection to cell adhesion and proliferation (C126-C127) is supported by citations and consistent with observations. However, these remain correlative observations rather than mechanistic proof. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Induced expression of endogenous Oct4, Sox2, and c-myc homologs in all species, with continued expression after transgene silencing, suggests conserved inductive roles. These genes are master transcription factors (Oct4, Sox2, Nanog) or key proliferation regulators (c-myc) in mammalian stem cell systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 synthesize experimental observations with established knowledge. The inference about conserved roles (C128) is supported by the transgene silencing data (Figure 3G-L) and multiple citations establishing the functions of these factors in mammals (C129-C133). The logic connecting sustained endogenous expression to functional conservation is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A recent study (Lin et al., 2011) showed intermediate stem cell states can exist with partial transcription factor sets, but those cells did not achieve in vivo pluripotency, unlike the iPSC-like cells in this study which appear further along in programming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 appropriately compare the current work to published studies. The key distinction is in vivo pluripotency (C137), which is demonstrated in the current study through chimera formation and teratomas. The inference that the current cells are \"further along\" (C138) is reasonable based on functional criteria, though direct comparison would require side-by-side testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "At least 7-8 stem cell marker genes were upregulated and three lineage-specific genes downregulated, suggesting sufficient gene regulatory network induction for vertebrate cells to maintain stem cell state without continued transgene expression, achieve stable proliferation (avian), and demonstrate in vivo pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 summarize the molecular and functional evidence. The gene expression changes (C139) are documented throughout Figure 3. The inferences about regulatory network sufficiency (C140-C142) are supported by transgene silencing data, proliferation data, and in vivo pluripotency assays. The authors appropriately note they have not performed full transcriptome or methylation analysis, which would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Drosophila showed less prominent stem cell induction than vertebrates, with lower EB formation rates, incomplete endogenous gene induction, and enhanced proliferation from an already proliferative baseline (S2 cells are partially differentiated, aneuploid). This may represent transdifferentiation between proliferative states. The pattern suggests phylogenetic distance correlates with reprogramming extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C149 appropriately characterize the Drosophila results as distinct from vertebrates. The observations are supported by data in Figures 2-3. The interpretation as possible transdifferentiation (C148) is speculative but reasonable given the starting cell properties (C147, supported by citation). The phylogenetic distance correlation (C149) is a logical inference from comparing results across species, though causation is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "While individual gene function substitution has been shown previously, this represents a systematic set of genes functioning across lineages. Stem cell gene regulatory networks and stem cells themselves may share more conserved molecular similarities than differentiated cells, supported by Oct4 regulating similar genes in mammals and fish, embryonic cells being more similar across species than adult cells, and maintenance of iPSC features after transgene suppression. This suggests stem cells may represent a primordial animal cell state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C156 present an interesting evolutionary hypothesis. The novelty claim (C150-C151) is supported by citations showing prior individual examples. The conservation hypothesis (C152, C156) is speculative but supported by circumstantial evidence: Oct4 target conservation (C153, cited), embryonic cell similarity (C154, cited), and transgene-independent maintenance (C155, documented). However, this remains correlative rather than mechanistic evidence. The \"primordial cell state\" hypothesis (C156) is provocative but would require extensive additional comparative and evolutionary analysis to test rigorously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30"
+    ],
+    "result": "These findings represent one of the first demonstrations of cross-lineage stem cell-like induction and generation of pluripotent-like cells with in vivo chimeras for several non-mammalian species where stem cells have been difficult or impossible to isolate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C30 assert novelty and significance. The cross-lineage induction claim (C4) is supported by the experimental data across phylogenetically distant species. The chimera formation (C5) is documented for chicken and zebrafish. The difficulty of isolating stem cells in these species (C30) is supported by citations to Zwaka, 2008 and Lavial and Pain, 2010. The qualification \"one of the first\" is appropriately cautious, and concurrent work (C105) confirms the timeliness of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C6",
+      "C156"
+    ],
+    "result": "The findings suggest that the stem cell state may be highly conserved across a wide phylogenetic range and could represent a primordial animal cell state conserved across the animal kingdom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C156 present the overarching evolutionary interpretation. While the functional data (cross-species reprogramming, shared markers, in vivo pluripotency) provide circumstantial support, this remains a speculative conclusion. The authors appropriately use cautious language (\"may be,\" \"suggest,\" \"could represent\"). Definitive support would require: (1) comprehensive transcriptomic/epigenomic comparisons of stem cells across species, (2) functional testing of conservation through reciprocal experiments, (3) evolutionary analysis of stem cell regulatory networks. The hypothesis is plausible and testable but not yet proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The generation of in vivo incorporating stem cells for non-mammalian species should advance studies of these model systems, providing tools to study differentiation, evolution, disease (including cancer), and cellular evolution at the molecular level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 discuss future applications. These are speculative but reasonable projections based on how iPSCs have been used in mammalian systems. The successful generation of functional iPSC-like cells (documented throughout) provides the foundation for these applications. The cancer application (C158) is supported by citation to Takashima et al., 2013. These represent appropriate discussion of potential impact rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

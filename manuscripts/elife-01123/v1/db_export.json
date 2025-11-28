@@ -1,0 +1,2328 @@
+{
+  "submission": {
+    "id": "dfff074c-eb25-4b62-ad25-d637b4885ff9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:48:28.897956Z",
+    "updated_at": "2025-11-28T19:48:28.897956Z"
+  },
+  "content": [
+    {
+      "id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "submission_id": "dfff074c-eb25-4b62-ad25-d637b4885ff9",
+      "content_type": "manuscript",
+      "content_text": "# A genome-to-genome analysis of associations between human genetic variation, HIV-1 sequence diversity, and viral control\n\n## Authors\n\n- Istv\u00e1n Bartha<sup>1</sup>\n- Jonathan M Carlson<sup>5</sup>\n- Chanson J Brumme<sup>6</sup>\n- Paul J McLaren<sup>1</sup>\n- Zabrina L Brumme<sup>6</sup>\n- Mina John<sup>8</sup>\n- David W Haas<sup>9</sup>\n- Javier Martinez-Picado<sup>10</sup>\n- Judith Dalmau<sup>10</sup>\n- Cecilio L\u00f3pez-Gal\u00edndez<sup>12</sup>\n- Concepci\u00f3n Casado<sup>12</sup>\n- Andri Rauch<sup>13</sup>\n- Huldrych F G\u00fcnthard<sup>14</sup>\n- Enos Bernasconi<sup>15</sup>\n- Pietro Vernazza<sup>16</sup>\n- Thomas Klimkait<sup>17</sup>\n- Sabine Yerly<sup>18</sup>\n- Stephen J O\u2019Brien<sup>19</sup>\n- Jennifer Listgarten<sup>5</sup>\n- Nico Pfeifer<sup>5</sup>\n- Christoph Lippert<sup>5</sup>\n- Nicolo Fusi<sup>5</sup>\n- Zolt\u00e1n Kutalik<sup>4</sup>\n- Todd M Allen<sup>21</sup>\n- Viktor M\u00fcller<sup>3</sup>\n- P Richard Harrigan<sup>6</sup>\n- David Heckerman<sup>5</sup>\n- Amalio Telenti<sup>2</sup> \u2020\n- Jacques Fellay<sup>1</sup> \u2020\n\n### Affiliations\n\n1. School of Life Sciences \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n2. Institute of Microbiology University Hospital and University of Lausanne Lausanne Switzerland\n3. Research Group of Theoretical Biology and Evolutionary Ecology E\u00f6tv\u00f6s Lor\u00e1nd University and the Hungarian Academy of Sciences Budapest Hungary\n4. Swiss Institute of Bioinformatics Lausanne Switzerland\n5. eScience Group Microsoft Research Los Angeles United States\n6. BC Centre for Excellence in HIV/AIDS Vancouver Canada\n7. Faculty of Health Sciences Simon Fraser University Burnaby Canada\n8. Institute of Immunology and Infectious Diseases Murdoch University Murdoch Australia\n9. Vanderbilt University Medical Center Nashville United States\n10. AIDS Research Institute IrsiCaixa, Institut d\u2019Investigaci\u00f3 en Ci\u00e8ncies de la Salut Germans Trias i Pujol Universitat Aut\u00f2noma de Barcelona Badalona Spain\n11. Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats (ICREA) Barcelona Spain\n12. Centro Nacional de Microbiolog\u00eda Instituto de Salud Carlos III Madrid Spain\n13. Clinic of Infectious Diseases University of Bern & Inselspital Bern Switzerland\n14. Division of Infectious Diseases and Hospital Epidemiology University Hospital and University of Z\u00fcrich Z\u00fcrich Switzerland\n15. Division of Infectious Diseases Regional Hospital of Lugano Lugano Switzerland\n16. Division of Infectious Diseases and Hospital Epidemiology Cantonal Hospital St. Gallen Switzerland\n17. Department of Biomedicine University of Basel Basel Switzerland\n18. Laboratory of Virology Geneva University Hospitals Geneva Switzerland\n19. Theodosius Dobzhansky Center for Genome Bioinformatics St. Petersburg State University St. Petersburg Russia\n20. Institute of Social and Preventive Medicine University Hospital and University of Lausanne Lausanne Switzerland\n21. Ragon Institute of MGH, MIT, and Harvard Massachusetts General Hospital Boston United States\n22. Faculty of Medicine University of British Columbia Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nHIV-1 sequence diversity is affected by selection pressures arising from host genomic factors. Using paired human and viral data from 1071 individuals, we ran >3000 genome-wide scans, testing for associations between host DNA polymorphisms, HIV-1 sequence variation and plasma viral load (VL), while considering human and viral population structure. We observed significant human SNP associations to a total of 48 HIV-1 amino acid variants (p<2.4 \u00d7 10\u221212). All associated SNPs mapped to the HLA class I region. Clinical relevance of host and pathogen variation was assessed using VL results. We identified two critical advantages to the use of viral variation for identifying host factors: (1) association signals are much stronger for HIV-1 sequence variants than VL, reflecting the \u2018intermediate phenotype\u2019 nature of viral variation; (2) association testing can be run without any clinical data. The proposed genome-to-genome approach highlights sites of genomic conflict and is a strategy generally applicable to studies of host\u2013pathogen interaction.\n\n## Introduction\n\nThrough multiple rounds of selection and escape, host and pathogen genomes are imprinted with signatures of co-evolution that are governed by Darwinian forces. On the host side, well-characterized anti-retroviral restriction factors, such as TRIM5\u03b1, APOBEC3G and BST2, harbor strong signals of selection in primate genomes, clear examples of retroviral pressure (Ortiz et al., 2009). On the virus side, obvious signs of selection are observable in the HIV-1 genome: escape mutations and reversions have been described in epitopes restricted by human leukocyte antigen (HLA) class I molecules and targeted by cytotoxic T lymphocyte (CTL) responses (Goulder et al., 2001; Kawashima et al., 2009). Sequence polymorphisms have also been reported recently in regions targeted by killer immunoglobulin-like receptors (KIR), suggesting evasion from immune pressure by natural killer (NK) cells (Alter et al., 2011). Evidence for the remodeling of retroviral genomes by host genetic pressure also comes from simian immunodeficiency virus (SIV) infection studies in rhesus macaques, where escape from restrictive TRIM5\u03b1 alleles has been observed in the viral capsid upon cross-species transmission of SIVsm (Kirmaier et al., 2010). In contrast, human alleles of TRIM5\u03b1 do not result in escape mutations, likely because of adaptation of the pathogen to the host (Rahm et al., 2013). Sequence adaptation is also a known feature of cross-species transmission. For example, a methionine in the matrix protein (Gag-30) in SIVcpzPtt changed to arginine in lineages leading to HIV-1 and reverted to methionine when HIV-1 was passaged through chimpanzees (Wain et al., 2007).\n\nTo date, combined analyses of human and HIV-1 genetic data have addressed the association of HLA and KIR genes with variants in the retroviral genome (Moore et al., 2002; Brumme et al., 2007; Bhattacharya et al., 2007; Kawashima et al., 2009; Alter et al., 2011; Carlson et al., 2012; Wright et al., 2012). Additionally, genome-wide association studies (GWAS) performed in the host have focused on various HIV-related clinical phenotypes (Fellay et al., 2007; Fellay et al., 2009; Pereyra et al., 2010). In parallel, large amounts of HIV-1 sequence data have been generated for phylogenetic studies, which shed new light on viral transmission and evolution (Kouyos et al., 2010; Alizon et al., 2010; Von Wyl et al., 2011), or allow clinically driven analyses of viral genes targeted by antiretroviral drugs (resistance testing) (Von Wyl et al., 2009).\n\nBuilding on the unprecedented possibility to acquire and combine paired human and viral genomic information from the same infected individuals; we employ an innovative strategy for global genome-to-genome host\u2013pathogen analysis. By simultaneously testing for associations between genome-wide human variation, HIV-1 sequence diversity, and plasma viral load (VL), our approach allows the mapping of all sites of host\u2013pathogen genomic interaction, the correction for both host and viral population stratification, and the assessment of the respective impact of human and HIV-1 variation on a clinical outcome (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01123/elife-01123-fig1-v1.jpg)\n\n**Figure 1.:** The following association analyses were performed: [Study A] human SNPs vs plasma viral load (1 GWAS); [Study B] human SNPs vs variable HIV-1 amino acids (3007 GWAS); and [Study C] variable HIV-1 amino acids vs plasma viral load (1 proteome-wide association study).\n\n## Results\n\n### Study participants, host genotypes, and HIV-1 sequence variation\n\nFull-length HIV-1 genome sequence and human genome-wide SNP data were obtained from seven studies or institutions on a total of 1071 antiretroviral naive patients of Western European ancestry, infected with HIV-1 subtype B. The homogeneity of the study population was confirmed by principal component analysis of the genotype matrix: together, the first five principal components explained 1% of total genotypic variation. After quality control of the human genotype data, imputation and filtering, \u223c7 million SNPs were available for association testing. The full-length HIV-1 sequence is approximately 9.5 Kb long, corresponding to over 3000 encoded amino acids. Not all sequences were complete; on an average, viral residues were covered in 85% of the study population (range: 75% in Tat to 95% in Gag). Due to its hypervariable nature, the portion of the HIV-1 envelope gene that encodes the gp120 protein was not sequenced in most study samples and was therefore excluded. Overall 1126 residues of the HIV-1 proteome were found to be variable in at least 10 samples, for a total of 3381 different viral amino acids that could be represented by 3007 distinct binary variables.\n\n### Host VL GWAS\n\nWe first performed a classical GWAS of host determinants of HIV-1 VL (Figure 2A, Study A) using data from 698 patients (65% of the study population) for whom a VL phenotype could be reliably estimated. The top associations were observed in the HLA class I region on chromosome 6 and were highly consistent with results observed previously (Fellay et al., 2009; Pereyra et al., 2010). The strongest associated SNP, rs9267454 (p = 1.5 \u00d7 10\u22128), is in partial linkage disequilibrium (LD) with HLA-B*57:01 (r2 = 0.47, D\u2032 = 0.92), HLA-B*14:01 (r2 = 0.12, D\u2032 = 1.0), HLA-B*27:05 (r2 = 0.01, D\u2032 = 0.99), and the HLA-C -35 rs9264942 SNP (r2 = 0.07, D\u2032 = 0.77), and thus reflects these well-known associations with HIV-1 control. These results confirm the quality of the study population for the purpose of genome analysis of determinants of HIV-1-related outcomes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01123/elife-01123-fig2-v1.jpg)\n\n**Figure 2.:** (A) Associations between human SNPs and HIV-1 plasma viral load. The dotted line shows the Bonferroni-corrected significance threshold (p-value < 7.25 \u00d7 10\u22129). (B) Associations between human SNPs and HIV-1 amino acid variants, with 3007 GWAS collapsed in a single Manhattan plot. The dotted line shows the Bonferroni-corrected significance threshold (p-value < 2.4 \u00d7 10\u221212). (C) Schematic representation of the HLA class I genes and of the SNPs associated with HIV-1 amino acid variants in the region. (D) Same association results as in panel B, projected on the HIV-1 proteome. Only the strongest association is shown for each amino acid. Significant associations are indicated by a blue dot. The gp120 part of the HIV-1 proteome was not tested. The colored bar below the plot area shows the positions of the optimally defined CD8+ T cell epitopes. An interactive version of this figure can be found at http://g2g.labtelenti.org (which is also available to download from Zenodo, http://dx.doi.org/10.5281/zenodo.7138).\n\n### Genome-to-genome analyses\n\n3007 genome-wide analyses of associations between human SNPs and HIV-1 amino acid variants were performed in the full sample of 1071 individuals (Figure 2B, Study B) using logistic regression corrected for viral phylogeny (Carlson et al., 2008; Carlson et al., 2012). Highly significant associations were observed between SNPs in the major histocompatibility complex (MHC) region and multiple amino acids throughout the HIV-1 proteome (except in Vpu, Rev and the RNaseH subunit of RT) (Figure 2C), with Gag and Nef having a significantly higher density of associated variable sites than the rest of the proteome (Gag: 6.8% vs 2.6% p=0.001; Nef: 11% vs 2.6% p = 1.2 \u00d7 10\u22125, binomial tests). Using Bonferroni correction for multiple testing (threshold p = 2.4 \u00d7 10\u221212), significant human SNP associations were observed with 48 viral amino acids (Figure 2 and Table 1). None of these 48 amino acids mapped to known sites of major antiretroviral drug resistance mutations (Hirsch et al., 2008). The strongest association found was between rs72845950 and Nef position 135 (p = 2.7 \u00d7 10\u221266). Associations were much stronger between human SNPs and HIV-1 amino acids than with VL. For example, the SNP rs2395029, a proxy for HLA-B*57:01 (r2 = 0.93), has a p-value of 1.21 \u00d7 10\u22126 for association with VL, while it reaches a p-value of 4 \u00d7 10\u221259 for association with amino acid variation in Gag at position 242 (a well known position of escape from HLA-B*57:01). No significant signals were identified outside the MHC. A link to the complete set of association results can be found at http://g2g.labtelenti.org (which is also available to download from Zenodo, http://dx.doi.org/10.5281/zenodo.7139). These results demonstrate the feasibility and improved power of performing association testing using viral genetic variation as outcome, independent of clinical phenotype.\n\n**Table 1.**\n Associations between HIV-1 amino acid variants and human polymorphisms\n\n\n<table>\n  <thead>\n    <tr>\n      <th>HIV gene</th>\n      <th>HIV position</th>\n      <th>SNP</th>\n      <th>CTL epitope (codons)</th>\n      <th>Tagging HLA (D\u2019/r2)</th>\n      <th>SNP vs aa (p)</th>\n      <th>SNP vs VL (p)</th>\n      <th>aa vs VL (p)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GAG</td>\n      <td>12</td>\n      <td>chr6:31285512</td>\n      <td>\u2013</td>\n      <td>B*49:01 (1.00/1.00)</td>\n      <td>2.20E-13</td>\n      <td>6.70E-01</td>\n      <td>5.60E-01</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>26</td>\n      <td>rs12524487</td>\n      <td>\u2013</td>\n      <td>B*15:01 (1.00/0.82)</td>\n      <td>6.10E-19</td>\n      <td>2.10E-01</td>\n      <td>1.40E-01</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>28</td>\n      <td>rs1655912</td>\n      <td>RLRPGGKKK (20\u201328)</td>\n      <td>A*03:01 (1.00/0.81)</td>\n      <td>2.70E-55</td>\n      <td>5.60E-01</td>\n      <td>2.00E-02</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>79</td>\n      <td>chr6:31267544</td>\n      <td>LYNTVATL (78-85)</td>\n      <td>C*14:02 (1.00/0.96)</td>\n      <td>2.40E-12</td>\n      <td>3.50E-01</td>\n      <td>2.80E-01</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>147</td>\n      <td>rs1055821</td>\n      <td>\u2013</td>\n      <td>C*06:02 (0.95/0.71)</td>\n      <td>3.10E-17</td>\n      <td>3.30E-07</td>\n      <td>2.90E-05</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>242</td>\n      <td>rs73392116</td>\n      <td>TSTLQEQIGW (240\u2013249)</td>\n      <td>B*57:01 (1.00/0.98)</td>\n      <td>2.40E-62</td>\n      <td>1.90E-06</td>\n      <td>1.70E-05</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>248</td>\n      <td>rs41557213</td>\n      <td>TSTLQEQIGW (240-249)</td>\n      <td>B*57:01 (1.00/0.97)</td>\n      <td>4.80E-15</td>\n      <td>2.00E-06</td>\n      <td>5.30E-03</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>264</td>\n      <td>chr6:31376564</td>\n      <td>KRWIILGLNK (263\u2013272)</td>\n      <td>B*27:05 (1.00/0.92)</td>\n      <td>2.30E-13</td>\n      <td>5.50E-02</td>\n      <td>3.50E-01</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>268</td>\n      <td>rs2249935</td>\n      <td>GEIYKRWIIL (259\u2013268)</td>\n      <td>B*08:01 (1.00/0.43)</td>\n      <td>2.20E-14</td>\n      <td>5.10E-01</td>\n      <td>1.90E-01</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">GAG</td>\n      <td rowspan=\"2\">340</td>\n      <td rowspan=\"2\">rs11966319</td>\n      <td>\u2013</td>\n      <td>B*15:01 (0.94/0.42)</td>\n      <td rowspan=\"2\">6.70E-14</td>\n      <td rowspan=\"2\">4.60E-01</td>\n      <td rowspan=\"2\">7.70E-01</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>C*03:04 (0.99/0.59)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">GAG</td>\n      <td rowspan=\"2\">357</td>\n      <td rowspan=\"2\">rs2523612</td>\n      <td>GPGHKARVL (355-363)</td>\n      <td>B*07:02 (0.99/0.95)</td>\n      <td rowspan=\"2\">2.70E-19</td>\n      <td rowspan=\"2\">2.20E-01</td>\n      <td rowspan=\"2\">1.20E-01</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>C*07:02 (0.99/0.84)</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>397</td>\n      <td>rs61754472</td>\n      <td>\u2013</td>\n      <td>A*31:01 (0.97/0.83)</td>\n      <td>8.80E-21</td>\n      <td>3.50E-01</td>\n      <td>8.30E-01</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>403</td>\n      <td>rs28896571</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>8.90E-21</td>\n      <td>7.90E-01</td>\n      <td>8.60E-01</td>\n    </tr>\n    <tr>\n      <td>GAG</td>\n      <td>437</td>\n      <td>rs34268928</td>\n      <td>RQANFLGKI (429-437)</td>\n      <td>B*13:02 (1.00/0.96)</td>\n      <td>8.70E-14</td>\n      <td>1.80E-02</td>\n      <td>6.80E-02</td>\n    </tr>\n    <tr>\n      <td>GP41</td>\n      <td>206</td>\n      <td>rs17881210</td>\n      <td>\u2013</td>\n      <td>B*15:01 (1.00/0.88)</td>\n      <td>6.10E-17</td>\n      <td>6.10E-01</td>\n      <td>3.00E-01</td>\n    </tr>\n    <tr>\n      <td>GP41</td>\n      <td>267</td>\n      <td>rs9278477</td>\n      <td>RLRDLLLIVTR (259\u2013269)</td>\n      <td>A*03:01 (1.00/0.01)</td>\n      <td>1.00E-12</td>\n      <td>7.80E-01</td>\n      <td>2.60E-01</td>\n    </tr>\n    <tr>\n      <td>INT</td>\n      <td>11</td>\n      <td>rs2596477</td>\n      <td>\u2013</td>\n      <td>B*44:02 (1.00/0.64)</td>\n      <td>5.10E-33</td>\n      <td>1.50E-01</td>\n      <td>1.80E-01</td>\n    </tr>\n    <tr>\n      <td>INT</td>\n      <td>32</td>\n      <td>rs1050502</td>\n      <td>\u2013</td>\n      <td>B*51:01 (0.97/0.92)</td>\n      <td>4.80E-18</td>\n      <td>7.20E-01</td>\n      <td>4.00E-01</td>\n    </tr>\n    <tr>\n      <td>INT</td>\n      <td>119</td>\n      <td>rs9264954</td>\n      <td>\u2013</td>\n      <td>C*05:01 (1.00/1.00)</td>\n      <td>1.30E-24</td>\n      <td>7.90E-01</td>\n      <td>1.10E-01</td>\n    </tr>\n    <tr>\n      <td>INT</td>\n      <td>122</td>\n      <td>rs9264419</td>\n      <td>\u2013</td>\n      <td>C*05:01 (1.00/0.95)</td>\n      <td>4.50E-22</td>\n      <td>8.30E-01</td>\n      <td>7.80E-01</td>\n    </tr>\n    <tr>\n      <td>INT</td>\n      <td>124</td>\n      <td>chr6:31345421</td>\n      <td>STTVKAACWW (123\u2013132)</td>\n      <td>B*57:01 (1.00/1.00)</td>\n      <td>3.00E-13</td>\n      <td>1.10E-06</td>\n      <td>9.70E-03</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">NEF</td>\n      <td rowspan=\"2\">71</td>\n      <td rowspan=\"2\">rs2596488</td>\n      <td>FPVTPQVPLR (68\u201377)</td>\n      <td>B*07:02 (1.00/0.98)</td>\n      <td rowspan=\"2\">3.80E-55</td>\n      <td rowspan=\"2\">2.50E-01</td>\n      <td rowspan=\"2\">8.10E-02</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>C*07:02 (0.95/0.83)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">NEF</td>\n      <td rowspan=\"2\">81</td>\n      <td rowspan=\"2\">rs9295987</td>\n      <td>RPMTYKAAL (77\u201385)</td>\n      <td>B*07:02 (1.00/0.01)</td>\n      <td rowspan=\"2\">4.80E-36</td>\n      <td rowspan=\"2\">2.50E-01</td>\n      <td rowspan=\"2\">9.50E-02</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>C*04:01 (0.90/0.63)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">NEF</td>\n      <td rowspan=\"2\">83</td>\n      <td rowspan=\"2\">rs34768512</td>\n      <td>\u2013</td>\n      <td>B*15:01 (1.00/0.47)</td>\n      <td rowspan=\"2\">2.20E-17</td>\n      <td rowspan=\"2\">2.80E-01</td>\n      <td rowspan=\"2\">1.50E-02</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>C*03:04 (0.96/0.54)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">NEF</td>\n      <td rowspan=\"3\">85</td>\n      <td rowspan=\"3\">rs2395475</td>\n      <td>RPMTYKAAL (77\u201385)</td>\n      <td>B*07:02 (1.00/0.29)</td>\n      <td rowspan=\"3\">1.90E-24</td>\n      <td rowspan=\"3\">8.10E-01</td>\n      <td rowspan=\"3\">1.30E-03</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>B*08:01 (1.00/0.22)</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>C*07:02 (0.97/0.30)</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>92</td>\n      <td>rs16896166</td>\n      <td>AVDLSHFLK (84\u201392)</td>\n      <td>A*11:01 (1.00/0.99)</td>\n      <td>1.00E-27</td>\n      <td>5.30E-01</td>\n      <td>1.50E-01</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>94</td>\n      <td>rs9265972</td>\n      <td>FLKEKGGL (90\u201397)</td>\n      <td>B*08:01 (1.00/0.97)</td>\n      <td>9.60E-35</td>\n      <td>9.80E-01</td>\n      <td>1.20E-01</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>102</td>\n      <td>rs2524277</td>\n      <td>\u2013</td>\n      <td>B*44:03 (0.98/0.96)</td>\n      <td>1.10E-13</td>\n      <td>4.40E-01</td>\n      <td>2.40E-01</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>105</td>\n      <td>rs1049709</td>\n      <td>\u2013</td>\n      <td>C*07:01 (1.00/0.98)</td>\n      <td>1.10E-35</td>\n      <td>9.00E-01</td>\n      <td>2.70E-01</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>116</td>\n      <td>chr6:31402358</td>\n      <td>HTQGYFPDW (116\u2013124)</td>\n      <td>B*57:01 (1.00/1.00)</td>\n      <td>3.00E-22</td>\n      <td>1.90E-06</td>\n      <td>3.30E-01</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>120</td>\n      <td>chr6:31236168</td>\n      <td>-</td>\n      <td>C*14:02 (1.00/1.00)</td>\n      <td>4.40E-16</td>\n      <td>3.60E-01</td>\n      <td>1.20E-02</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>126</td>\n      <td>chr6:31102273</td>\n      <td>\u2013</td>\n      <td>B*51:01 (1.00/0.18)</td>\n      <td>1.10E-12</td>\n      <td>1.80E-01</td>\n      <td>4.90E-02</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>133</td>\n      <td>chr6:31397689</td>\n      <td>\u2013</td>\n      <td>B*35:01 (0.95/0.89)</td>\n      <td>2.80E-19</td>\n      <td>2.50E-01</td>\n      <td>3.40E-01</td>\n    </tr>\n    <tr>\n      <td>NEF</td>\n      <td>135</td>\n      <td>rs72845950</td>\n      <td>RYPLTFGW (134\u2013141)</td>\n      <td>A*24:02 (1.00/0.88)</td>\n      <td>2.70E-66</td>\n      <td>9.10E-02</td>\n      <td>5.50E-03</td>\n    </tr>\n    <tr>\n      <td>PR</td>\n      <td>35</td>\n      <td>rs2523577</td>\n      <td>EEMNLPGRW (34-42)</td>\n      <td>B*44:02 (1.00/0.64)</td>\n      <td>1.70E-18</td>\n      <td>1.60E-01</td>\n      <td>5.70E-01</td>\n    </tr>\n    <tr>\n      <td>PR</td>\n      <td>93</td>\n      <td>rs2263323</td>\n      <td>\u2013</td>\n      <td>B*15:01 (0.98/0.92)</td>\n      <td>5.60E-30</td>\n      <td>4.70E-01</td>\n      <td>9.50E-01</td>\n    </tr>\n    <tr>\n      <td>RNASE</td>\n      <td>28</td>\n      <td>rs2428481</td>\n      <td>\u2013</td>\n      <td>B*08:01 (1.00/1.00)</td>\n      <td>1.80E-12</td>\n      <td>8.10E-01</td>\n      <td>6.20E-01</td>\n    </tr>\n    <tr>\n      <td>RT</td>\n      <td>135</td>\n      <td>rs1050502</td>\n      <td>TAFTIPSI (128\u2013135)</td>\n      <td>B*51:01 (0.97/0.92)</td>\n      <td>6.70E-45</td>\n      <td>7.20E-01</td>\n      <td>3.00E-01</td>\n    </tr>\n    <tr>\n      <td>RT</td>\n      <td>245</td>\n      <td>chr6:31411714</td>\n      <td>IVLPEKDSW (244\u2013252)</td>\n      <td>B*57:01 (1.00/0.98)</td>\n      <td>2.90E-21</td>\n      <td>1.20E-06</td>\n      <td>5.40E-02</td>\n    </tr>\n    <tr>\n      <td>RT</td>\n      <td>277</td>\n      <td>rs3128902</td>\n      <td>QIYPGIKVR (269\u2013277)</td>\n      <td>A*03:01 (1.00/0.99)</td>\n      <td>1.20E-65</td>\n      <td>8.20E-01</td>\n      <td>2.70E-01</td>\n    </tr>\n    <tr>\n      <td>RT</td>\n      <td>369</td>\n      <td>rs17190134</td>\n      <td>\u2013</td>\n      <td>B*13:02 (0.93/0.86)</td>\n      <td>3.50E-20</td>\n      <td>6.40E-02</td>\n      <td>1.40E-01</td>\n    </tr>\n    <tr>\n      <td>RT</td>\n      <td>395</td>\n      <td>rs17194293</td>\n      <td>\u2013</td>\n      <td>-</td>\n      <td>1.50E-12</td>\n      <td>1.20E-01</td>\n      <td>7.70E-02</td>\n    </tr>\n    <tr>\n      <td>TAT</td>\n      <td>29</td>\n      <td>rs9260615</td>\n      <td>\u2013</td>\n      <td>A*32:01 (0.98/0.95)</td>\n      <td>4.40E-14</td>\n      <td>3.90E-01</td>\n      <td>1.40E-01</td>\n    </tr>\n    <tr>\n      <td>TAT</td>\n      <td>32</td>\n      <td>rs16899214</td>\n      <td>CCFHCQVC (30\u201337)</td>\n      <td>C*12:03 (0.98/0.96)</td>\n      <td>6.40E-21</td>\n      <td>3.40E-01</td>\n      <td>4.90E-01</td>\n    </tr>\n    <tr>\n      <td>VIF</td>\n      <td>33</td>\n      <td>chr6:31430060</td>\n      <td>ISKKAKGWF (31\u201339)</td>\n      <td>B*57:01 (1.00/0.98)</td>\n      <td>1.50E-13</td>\n      <td>9.90E-07</td>\n      <td>9.30E-03</td>\n    </tr>\n    <tr>\n      <td>VIF</td>\n      <td>51</td>\n      <td>rs7767850</td>\n      <td>\u2013</td>\n      <td>B*49:01 (1.00/1.00)</td>\n      <td>1.40E-12</td>\n      <td>5.20E-01</td>\n      <td>2.10E-01</td>\n    </tr>\n    <tr>\n      <td>VIF</td>\n      <td>74</td>\n      <td>rs2395029</td>\n      <td>\u2013</td>\n      <td>B*57:01 (1.00/0.98)</td>\n      <td>5.40E-13</td>\n      <td>9.70E-07</td>\n      <td>2.80E-01</td>\n    </tr>\n    <tr>\n      <td>VPR</td>\n      <td>32</td>\n      <td>chr6:31362941</td>\n      <td>VRHFPRIWL (31\u201339)</td>\n      <td>B*27:05 (1.00/0.94)</td>\n      <td>3.10E-13</td>\n      <td>5.40E-02</td>\n      <td>6.50E-01</td>\n    </tr>\n  </tbody>\n</table>\n\n_Significant associations (p < 2.4 \u00d7 10-12) were observed for 48 HIV-1 amino acid variants. The table shows the major amino acid variants present at each specific HIV-1 position, the strongest associated SNP and its linked HLA class I allele(s), if applicable. The column \u2018CTL Epitope (codons)\u2019 lists published, optimally described CTL epitopes (available at http://www.hiv.lanl.gov/content/immunology/tables/optimal_ctl_summary.html and in [Carlson et al., 2012]) restricted by the tagged HLA class I allele(s) specified, and their positions within the protein. Where multiple overlapping epitopes restricted by the same HLA class I allele have been described, only one is shown. Associations where no relevant CTL epitope has been described are indicated with a dash. The last three columns give association p-values for comparisons between human SNPs and viral amino acids, human SNPs and plasma VL and viral amino acids and plasma VL, respectively. For tests involving viral amino acids accommodating more than 1 alternate allele, the smallest association p-value observed at that position is reported._\n\n### SNPs, HLA alleles and CTL epitopes\n\nWe next assessed whether the top SNPs associated with HIV-1 amino acids represent indirect markers of HLA class I alleles known to exert evolutionary pressure on HIV-1 (Table 1). We tested pairwise correlations between significant MHC SNPs and HLA class I alleles. The analysis confirmed the existence of high LD between SNPs and HLA alleles targeting corresponding epitopes. For example, the strongest association (p = 2.7 \u00d7 10\u221266) was observed between residue 135 in Nef, located in an optimally defined A*24:02 epitope, and rs72845950, which strongly tags HLA-A*24:02 (r2 = 0.89). Furthermore, we observed that a substantial fraction of the identified viral amino acids (24/48, 50%) were located within an optimally defined CTL epitope restricted by one or more HLA alleles tagged by the associated SNP (http://www.hiv.lanl.gov/content/immunology/tables/optimal_ctl_summary.html, supplemented with a recently updated list of epitopes [Carlson et al., 2012]). However, in seven cases, the classical HLA allele implicated through LD with a tagging SNP did not match previously reported restriction patterns (Table 1). These data demonstrate that this approach can reconstruct a map of targets of HLA pressure across the viral proteome and identify sites outside classical epitopes that could represent additional escape variants or compensatory mutations. That a substantial proportion of associated viral amino acids lay outside known CTL epitopes also highlights this approach as a tool to guide novel epitope discovery (Bhattacharya et al., 2007; Almeida et al., 2011).\n\nAnalysis of polymorphic amino acids within the HLA genes has been shown to improve power for detection of association with clinical outcome and has demonstrated the biological relevance of key residues in the HLA-B binding groove (Pereyra et al., 2010). Therefore, we used the genome-to-genome framework to characterize the evolutionary pressure of HLA class I amino acids on the viral genome. The top associations in all classical class I genes mapped to discrete residues in the binding grooves of the HLA molecule: HLA-A position 62 (p = 3.3 \u00d7 10\u221276 with HIV Nef 135), HLA-B position 70 (p = 7.1 \u00d7 10\u221257 with HIV Gag 242), HLA-C position 99 (p = 5.4 \u00d7 10\u221263 with HIV Nef 70). These data indicate that all class I HLA genes can exert strong pressure on the viral proteome through a shared mechanism. The association results for HLA amino acids can also be found at http://g2g.labtelenti.org (which is also available to download from Zenodo).\n\n### HIV-1 amino acids vs plasma viral load\n\nTo address whether there was an observable impact of viral mutation on a clinical outcome in this sample, we tested for associations between all HIV-1 amino acid variant and VL (Study C). After correction for multiple testing (p threshold = 1.6 \u00d7 10\u22125 based on 3125 viral amino acids), we did not observe any significant associations. We then focused on estimating the changes in VL associated with the 48 HIV-1 amino acid variants that were identified as significantly associated with host SNPs (Figure 2D). The effects of amino acid variation at these sites on VL ranged from \u20130.16 to +0.07 log10 copies/ml (Figure 3A). We also explored the combined fitness effect of multiple HIV-1 viral amino acid variants targeted by a single host marker using the well-understood model of HLA-B*57:01. We evaluated the effect on VL of 23 viral residues that associated with host variant rs2395029 (r2 = 0.93 with HLA-B*57:01) in the genome-to-genome analysis (selection cutoff: p<0.001). The marker rs2395029 was associated with a 0.38 log decrease in viral RNA copies/ml. The univariate effect on VL for each of the 23 viral amino acids targeted by this allele ranged from \u20130.16 to +0.12 (Figure 3B). These results suggest that the genome-to-genome approach can be linked to clinical/laboratory phenotypes, allowing for detailed understanding of the distribution and relative contribution of sites of host\u2013pathogen interaction to disease outcome.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01123/elife-01123-fig3-v1.jpg)\n\n**Figure 3.:** (A) Changes in VL (slope coefficients from the univariate regression model and standard error, log10 copies/ml) for the 48 HIV-1 amino acids that are associated with host SNPs in the genome-to-genome analysis. (B) rs2395029, a marker of HLA-B*57:01 is associated with a 0.38 log10 copies/ml lower VL (black bar) in comparison to the population mean. Gray bars represent changes in VL for amino acid variants associated with rs2395029 (p<0.001). In case of multiallelic positions, the change in VL is shown for all minor amino acids combined vs the major amino acid (e.g., GAG147 not I).\n\n## Discussion\n\nHIV-1 host genomic studies performed so far have focused on clinically defined outcomes (resistance to infection, clinical presentation, disease progression or death) or on pathogen-related laboratory results (such as CD4+ T cell counts and VL set point). While useful, these phenotypes have significant drawbacks. First, consistency of phenotypic determination can be hard to achieve, and such inconsistency can adversely affect power in large-scale genetic studies performed across multiple centers (Evangelou et al., 2011). Second, a relatively long follow-up in the absence of antiretroviral treatment is necessary to obtain informative data about the natural history of infection. However, international guidelines now propose an early start of antiretroviral therapy in most HIV-1 infected individuals (Thompson et al., 2012), making the collection of large numbers of long-term untreated patients not only unrealistic but also ethically questionable.\n\nTo overcome these limitations, we developed a novel approach for host genetic studies of infectious diseases, built on the unprecedented possibility to obtain paired genome-wide information from hosts and pathogens. We combined human polymorphism and HIV-1 sequence diversity in the same analytical framework to search for sites of human-virus genomic conflict, effectively using variation in HIV-1 amino acids as an \u2018intermediate phenotype\u2019 for association studies. Intermediate phenotypes have recently been shown to be useful in uncovering association signals that are not detectable using more complex clinical endpoints: illustrative examples include metabolomic biomarkers in cardiovascular research (Suhre et al., 2011), serum IgE concentration in the study of asthma (Moffatt et al., 2010), or neuroimaging-based phenotypes in psychiatry genetics (Rasetti and Weinberger, 2011). Variation in the pathogen sequence is an as-yet-untapped intermediate phenotype, specific by nature to genomic research in infectious diseases. Importantly, it depends on sequencing the pathogen, which could prove in many cases easier and more standardized than obtaining detailed clinical phenotypes.\n\nOur approach allowed the mapping of host genetic pressure on the HIV-1 genome. The strongest association signals genome-wide were observed between human SNPs tagging HLA class I alleles and viral mutations in their corresponding CTL epitopes. Additional association signals were observed outside of optimally defined CTL epitopes, which could indicate novel epitopes, or represent secondary (compensatory) mutations. In a single experiment, these results recapitulate extensive epidemiological and immunogenetic research and represent a proof-of-concept that biologically meaningful association signals are identifiable using a hypothesis-free strategy. Indeed, host factors leading to viral adaptation can be uncovered by searching for associated imprints in the viral genome. Of note, the International HIV Controllers Study demonstrated the importance of specific amino acid positions in the HLA-B binding groove on a clinical outcome (elite control) (Pereyra et al., 2010). We here extend this observation to the HLA-A and C grooves, emphasizing the similarity in mechanism of host pressure on the viral proteome that is not necessarily translated into observable clinical outcomes.\n\nWe found a higher density of amino acid positions under selection in Gag and Nef compared with the rest of the HIV proteome. This is consistent with earlier findings that indicate the importance of Gag p24-specific CTL responses in slower progression to AIDS (Borghans et al., 2007; Brennan et al., 2012) or controller status (Dyer et al., 2008). Moreover, this further demonstrates that mapping host pressure on the pathogen proteome can reveal biologically relevant effects.\n\nAnalyses were performed using samples from clinically well-characterized patients, most of them with repeated and reliable HIV-1 VL measurements in the absence of antiretroviral therapy. We were thus able to compare the results of GWAS assessing human genetic determinants of mean VL, a standard clinical correlate of HIV-1 control, and genome-to-genome GWAS on amino acid variants in the viral proteome. The use of HIV-1 variation as outcome resulted in a considerable gain in power to detect host factors: the lowest p-values were observed for SNPs mapping to the HLA class I region in both approaches, but associations were much stronger with HIV-1 amino acid variation than for HIV-1 VL (2.7 \u00d7 10\u221266 vs 1 \u00d7 10\u221208), even when accounting for the increased number of multiple tests.\n\nIn addition to identifying sites of interaction between the host and the pathogen, the study design allowed the scoring of biological consequences of such interaction, by assessing associations between host-driven escape at viral sites and an in vivo phenotype (VL). For example, we decomposed the effect of rs2395029 (a marker of HLA-B*57:01) on VL to the effects of the multiple viral amino acid variants that are associated with that SNP. While some HIV-1 amino acid changes individually associate with decrease in VL, the compound image that emerges is one of a multiplicity of modest effects distributed across many residues. Correlations between host-associated variants and VL are difficult to interpret, because they may reflect fitness costs or compensation, the existence of strong (Iversen et al., 2006; Carlson et al.,, 2012) or novel (Almeida et al., 2011) immune responses, or the indirect impact of specific HLA class I alleles. Nevertheless, the observation that the majority of host-associated HIV-1 mutations do not correlate with any detectable change in VL confirms HIV\u2019s remarkable capacity to adapt and compensate to immune pressure, often without measurable fitness cost.\n\nA significant confounder in both human and viral genomic analyses is the existence of population stratification, where shared ancestry between infected individuals, stratification by ethnic groups, non-random distribution of HIV-1 subtypes, or clusters of viral transmission can all have an influence on the population frequencies of specific mutations, and thus create spurious associations if not carefully controlled for. Previous studies usually controlled for viral population substructure but were limited in the control of human population stratification (Moore et al., 2002; Bhattacharya et al., 2007). Our approach offers the opportunity to correct for both factors, thanks to the availability of extensive host and viral genomic information.\n\nThe present sample size provided approximately 80% power to detect a common human variant (minor allele frequency of 10%) with an odds ratio of 4.2 in the genome-to-genome analysis (Study B) and a viral amino acid explaining approximately 4% of the variation in plasma viral load (Study C) at the respective significance thresholds (Purcell et al., 2003). Consistent with most studies performed in HIV-1 host genetics over the past few years (reviewed in Telenti and Johnson (2012)), we did not identify previously unknown host genetic loci involved in host-viral interaction and HIV-1 restriction. The proposed approach can only detect polymorphic host factors that leave an imprint on the virus, which may exclude mediators of immunopathogenesis or genes involved in the establishment of tolerance (Medzhitov et al., 2012). An additional limitation is the incomplete nature of genomic information available both on the host side (common genotypes from GWAS) and on the viral side (near full-length consensus sequence; gp120 was not included in the analyses). Finally, the multiple hypothesis burden of a genome-to-genome scan is extremely high. It is conceivable that larger studies, or studies that focus on a subgroup of predefined host genes, would have power to detect novel associations. A comprehensive, but computationally challenging description of host\u2013pathogen genomic interactions would require human genome sequencing, coupled with deep sequencing of intra-host retroviral subpopulations.\n\nIn summary, we used a genome-to-genome, hypothesis-free approach to identify associations between host polymorphisms and HIV-1 genomic variation. This strategy allows a global assessment of host\u2013pathogen interactions at the genome level and reveals sites of genomic conflict. Comparable approaches are immediately applicable to explore other important infectious diseases, as long as polymorphic host factors exert sufficient selective pressure to trigger escape mutations in the pathogen. The observation that pathogen sequence variation, used as an intermediate phenotype, is more powerful than clinical and laboratory outcomes to identify some host factors allows smaller-scale studies and encourages analyses of less prevalent infectious diseases. Researchers involved in pathogen genome studies and host genetic studies should strongly consider the gathering of paired host\u2013pathogen data.\n\n## Materials and methods\n\n### Ethics statement\n\nParticipating centers provided local Institutional Review Board approval for genetic analysis. Study participants provided informed consent for genetic testing, with the exception of a subset where a procedure approved by the relevant Research Ethics Board allowed the use of anonymized historical specimens in the absence of a specific informed consent.\n\n### Participants\n\nStudy participants are treatment-na\u00efve individuals followed in one of the following cohorts or institutions: the Swiss HIV Cohort Study (SHCS, www.shcs.ch, [Schoeni-Affolter et al., 2010]); the HAART Observational Medical Evaluation and Research (HOMER) study in Vancouver, Canada (www.cfenet.ubc.ca/our-work/initiatives/homer); the AIDS Clinical Trials Group (ACTG) Network in the USA (actgnetwork.org); the International HIV Controllers Study in Boston, USA (IHCS, www.hivcontrollers.org); Western Australian HIV Cohort Study, Perth, Australia; the AIDS Research Institute IrsiCaixa in Badalona, Spain; and the Instituto de Salud Carlos III in Madrid, Spain. To reduce noise due to host and viral diversity, we only included individuals of recent Western European ancestry (confirmed by clustering with HapMap CEU individuals in principal component analysis of the genotype data [Price et al., 2006]), and infected with HIV-1 subtype B (as assessed by the REGA Subtyping Tool [De Oliveira et al., 2005]). Plasma VL determinations in the absence of antiretroviral therapy were available from patients from the SHCS and the HOMER study. The VL phenotype was defined as the average of the log10-transformed numbers of HIV-1 RNA copies per ml of plasma, excluding measurements obtained in the first 6 months after seroconversion and during advanced immunosuppression (i.e., with <100 CD4+ T cells per ml of blood). Consequently, 698 study participants were eligible for VL analysis.\n\n### Human genotype data\n\nDNA samples were genotyped in the context of previous GWAS (Fellay et al., 2009; Pereyra et al., 2010) or for the current study on various platforms, including the HumanHap550, Human 660W-Quad, Human1M and HumanOmniExpress BeadChips (Illumina Inc., San Diego, CA, USA), as well as the Genome-Wide Human SNP Array 6.0 (Affymetrix Inc., Santa Clara, CA, USA) (Table 2). Study participants were filtered on the basis of genotyping quality, a sex check, and cryptic relatedness. SNP quality control was performed separately for each dataset: SNPs were filtered on the basis of missingness (excluded if called in <99% of participants), minor allele frequency (excluded if <0.01), and marked deviation from Hardy-Weinberg equilibrium (excluded if p<0.00005). Missing genotype imputation was performed with the Mach software per genotyping platform (in separate batches for Illumina 1M, OmniExpress, 550K and Affymetrix data) using 1000 Genomes Phase I CEU population data as reference haplotypes. Imputed markers were filtered on minor allele frequency (excluded if <0.01) and imputation quality using Mach\u2019s reported r-squared measure (excluded if <0.3). SNPs with a deviation in the allele frequencies between platforms were excluded. High-resolution HLA class I typing (4 digits; HLA-A, HLA-B, and HLA-C) was obtained using sequence-based methods, or imputed from the SNP genotyping data as described elsewhere (Jia et al., 2013).\n\n**Table 2.**\n Distribution of samples across genotyping platforms and cohorts\n\n\n<table>\n  <thead>\n    <tr>\n      <th>N</th>\n      <th>Genotyping platform</th>\n      <th>Cohort</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>140</td>\n      <td>Illumina 1M</td>\n      <td>ACTG</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>Illumina OmniExpress 12v1H</td>\n      <td>CARLOS III</td>\n    </tr>\n    <tr>\n      <td>518</td>\n      <td>Affymetrix 6.0</td>\n      <td>HOMER</td>\n    </tr>\n    <tr>\n      <td>136</td>\n      <td>Illumina OmniExpress12v1H</td>\n      <td>HOMER</td>\n    </tr>\n    <tr>\n      <td>47</td>\n      <td>Illumina 650k</td>\n      <td>IHCS</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>Illumina 660W-Quad</td>\n      <td>IRSICAIXA</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Illumina 1M</td>\n      <td>SHCS</td>\n    </tr>\n    <tr>\n      <td>79</td>\n      <td>Illumina 550k</td>\n      <td>SHCS</td>\n    </tr>\n    <tr>\n      <td>122</td>\n      <td>Illumina OmniExpress12v1H</td>\n      <td>SHCS</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>Illumina 550k</td>\n      <td>WAHCS</td>\n    </tr>\n  </tbody>\n</table>\n\n_ACTG = AIDS Clinical Trials Group Network; CARLOS III = Instituto de Salud Carlos III; HOMER = HAART Observational Medical Evaluation and Research Study; IHCS = International HIV Controllers Study; IRSICAIXA = AIDS Research Institute IrsiCaixa; SHCS = Swiss HIV Cohort Study; WAHCS = Western Australian HIV Cohort Study._\n\n### HIV-1 sequence data\n\nNear full-length retroviral sequence data were obtained by bulk sequencing of viral RNA present in pretreatment-stored plasma, and in 11 cases, of proviral DNA isolated from peripheral blood mononuclear cells, as previously described (Sandon\u00eds et al., 2009; John et al., 2010). We defined an amino acid residue as variable if at least 10 study samples presented an alternative allele. Per position, separate binary variables were generated for each alternate amino acid, indicating the presence or absence of that allele in a given sample.\n\n### Association analyses\n\nTo globally assess the association between human genomic variation (SNPs), HIV-1 proteomic variation (amino acids) and clinical outcome (VL), we performed three series of analyses (Figure 1): [A] human SNPs vs VL; [B] human SNPs vs HIV-1 amino acids; and [C] HIV-1 amino acids vs VL. To test for association between human SNPs and HIV-1 amino acids, we used phylogenetically corrected logistic regression (Carlson et al., 2008; Carlson et al., 2012). For association testing between polymorphic amino acids in human HLA genes and HIV sequence variation, we used standard logistic regression (for a binary HLA amino acid) or a multivariate omnibus test (when more than one alternate allele was present) including sex, cohort, and the coordinates of the first two principal component axes as covariates. We used linear regression models in PLINK to test for association between human SNPs and VL, and between HIV-1 amino acids and VL (Purcell et al., 2007), including sex, cohort, and the coordinates of the first two principal component axes as covariates (Price et al., 2006). An additive genetic model was used for all analyses involving human SNPs. Significance was assessed using Bonferroni correction (significance thresholds of 7.25 \u00d7 10\u22129, 2.4 \u00d7 10\u221212, and 1.6 \u00d7 10\u22125 for analyses A, B, and C, respectively, Figure 1).\n",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c206044a-fc18-4fa4-8531-3d07ed5e6d8d",
+      "submission_id": "dfff074c-eb25-4b62-ad25-d637b4885ff9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gil McVean, Oxford University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01123.008](https://doi.org/10.7554/eLife.01123.008)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA genome-to-genome analysis of associations between human genetic variation, HIV-1 sequence diversity, and viral control\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 3 reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe study represents an important and novel direction in the analysis of host-pathogen interactions, namely the joint analysis of both host and pathogen genomes. With additional information on pathogen phenotype (viral load) this enables the authors to provide a detailed dissection of how genetic variation within the players influences outcome.\n\nOverall, we felt the study was well designed and analysed. Although there are perhaps no great surprises in terms of findings, the finding of many associated viral variants outside epitopes and the stronger association between human variation and HIV variation, compared to viral load, are both interesting results. When revising, we would like you to focus on the following issues:\n\n1) The authors wish to include a clinical correlate in the study, and we understand the use of viral load as it is easy to measure and is associated with progression. However, viral load is not only the only marker of disease progression \u2013 CD4 count, rate of CD4 decline, immune activation, time to starting therapy from seroconversion etc, so it is clear that clinical progression is multifactorial. (It is also widely reported that CD8 immune responses, especially ELISpots, do not associate with viral load). With this in mind, the authors can only conclude that when using viral load as the surrogate their method produces stronger P values, but it cannot be stated that their \u2018intermediate phenotype\u2019 can replace possible other clinical correlates.\n\n2) The authors have used sequences from proviral DNA and plasma DNA in the same analysis, without mentioning this apart from in the Methods. Whereas proviral DNA may represent a record of HLA-imposed selection pressure it may not represent the circulating virus, and therefore associations with viral load etc. may be misleading. One would expect to see some justification of this approach.\n\n3) It would help frame the findings better if the power of the association studies was given. How big an effect size were the studies powered to detect? Given the finding of Alizon et al. cited here and other related papers, are we to be surprised by the lack of associations in the viral proteome to VL study? Does this place an upper bound for effect size of associations? Similarly for the lack of associations outside of MHC, which seem quite definitive especially in the case of the host genome to viral genome study.\n\n4) The GWAS to viral sequence variation is probably the most interesting finding of this study, with 48 viral amino acids showing significant associations with host SNPs in the MHC. The strongest association is observed for position 135/Nef within an A*24:04 restricted epitope and for a SNP which is known to tag A*24:02. Assuming that this effect has a structural basis (i.e., the molecular interaction between peptide and MHC), why only show amino acids in the viral genome? Why not make it more \u201csymmetric\u201d and also look at the individual amino acids in the HLA molecules? Because the authors have imputed amino acid polymorphisms of the HLA proteins (Jia et al.), this should be relatively easy and potentially interesting.\n",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fab9c062-fef9-401e-8f28-c36e851798f3",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C1",
+      "claim": "Full-length HIV-1 genome sequence and human genome-wide SNP data were obtained from 1071 antiretroviral naive patients of Western European ancestry infected with HIV-1 subtype B.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length HIV-1 genome sequence and human genome-wide SNP data were obtained from seven studies or institutions on a total of 1071 antiretroviral naive patients of Western European ancestry, infected with HIV-1 subtype B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study population and data collection methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "22089af0-5c28-4243-8b77-287af15edaf6",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C2",
+      "claim": "The first five principal components explained 1% of total genotypic variation in the study population.",
+      "claim_type": "EXPLICIT",
+      "source": "The homogeneity of the study population was confirmed by principal component analysis of the genotype matrix: together, the first five principal components explained 1% of total genotypic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from principal component analysis of genotype data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "7605f84e-ee8f-48ce-bf63-26782b26c0ab",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C3",
+      "claim": "After quality control and imputation, approximately 7 million SNPs were available for association testing.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control of the human genotype data, imputation and filtering, \u223c7 million SNPs were available for association testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of SNPs available after data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "93d53e25-2506-4484-807b-7b74d0dd5404",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C4",
+      "claim": "The HIV-1 full-length sequence is approximately 9.5 Kb long, corresponding to over 3000 encoded amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length HIV-1 sequence is approximately 9.5 Kb long, corresponding to over 3000 encoded amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the size of the HIV-1 genome and its protein-coding capacity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "2fc620b8-c575-459e-b042-9eacff38e1cf",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C5",
+      "claim": "On average, viral residues were covered in 85% of the study population, ranging from 75% in Tat to 95% in Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all sequences were complete; on an average, viral residues were covered in 85% of the study population (range: 75% in Tat to 95% in Gag).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of sequence coverage across the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "da1b3d6e-e3ac-4d58-84dd-b029c0cd2d2d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C6",
+      "claim": "The gp120 portion of the HIV-1 envelope gene was excluded from the analysis due to its hypervariable nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its hypervariable nature, the portion of the HIV-1 envelope gene that encodes the gp120 protein was not sequenced in most study samples and was therefore excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about exclusion criteria for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "daae7c06-49bb-4143-98d5-b07af8ec0d29",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C7",
+      "claim": "1126 residues of the HIV-1 proteome were found to be variable in at least 10 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall 1126 residues of the HIV-1 proteome were found to be variable in at least 10 samples, for a total of 3381 different viral amino acids that could be represented by 3007 distinct binary variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from analysis of HIV-1 sequence variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "b16dea8a-1f91-4bbe-992c-d94e3b257371",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C8",
+      "claim": "3381 different viral amino acids could be represented by 3007 distinct binary variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall 1126 residues of the HIV-1 proteome were found to be variable in at least 10 samples, for a total of 3381 different viral amino acids that could be represented by 3007 distinct binary variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of how viral variation was encoded for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c74276ad-3881-4134-8d0c-51b82308284f",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C9",
+      "claim": "VL phenotype data were available from 698 patients (65% of the study population).",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed a classical GWAS of host determinants of HIV-1 VL (Figure 2A, Study A) using data from 698 patients (65% of the study population) for whom a VL phenotype could be reliably estimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the sample size for VL analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "db9735cc-6777-452b-ab2e-1df07e3b9bf7",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C10",
+      "claim": "The strongest associated SNP in the VL GWAS was rs9267454 with p = 1.5 \u00d7 10\u22128.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest associated SNP, rs9267454 (p = 1.5 \u00d7 10\u22128), is in partial linkage disequilibrium (LD) with HLA-B*57:01 (r2 = 0.47, D\u2032 = 0.92), HLA-B*14:01 (r2 = 0.12, D\u2032 = 1.0), HLA-B*27:05 (r2 = 0.01, D\u2032 = 0.99), and the HLA-C -35 rs9264942 SNP (r2 = 0.07, D\u2032 = 0.77), and thus reflects these well-known associations with HIV-1 control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from GWAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "36ba3cf1-9cbf-42f8-967b-df1b4353cecf",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C11",
+      "claim": "rs9267454 is in partial linkage disequilibrium with HLA-B*57:01 (r2 = 0.47, D\u2032 = 0.92).",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest associated SNP, rs9267454 (p = 1.5 \u00d7 10\u22128), is in partial linkage disequilibrium (LD) with HLA-B*57:01 (r2 = 0.47, D\u2032 = 0.92), HLA-B*14:01 (r2 = 0.12, D\u2032 = 1.0), HLA-B*27:05 (r2 = 0.01, D\u2032 = 0.99), and the HLA-C -35 rs9264942 SNP (r2 = 0.07, D\u2032 = 0.77), and thus reflects these well-known associations with HIV-1 control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from linkage disequilibrium analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "5bcdf93a-f5a1-44b6-aa71-526e7c012be6",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C12",
+      "claim": "rs9267454 is in partial linkage disequilibrium with HLA-B*14:01 (r2 = 0.12, D\u2032 = 1.0).",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest associated SNP, rs9267454 (p = 1.5 \u00d7 10\u22128), is in partial linkage disequilibrium (LD) with HLA-B*57:01 (r2 = 0.47, D\u2032 = 0.92), HLA-B*14:01 (r2 = 0.12, D\u2032 = 1.0), HLA-B*27:05 (r2 = 0.01, D\u2032 = 0.99), and the HLA-C -35 rs9264942 SNP (r2 = 0.07, D\u2032 = 0.77), and thus reflects these well-known associations with HIV-1 control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from linkage disequilibrium analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "6d94c2aa-6c40-4a0e-bcfa-7880fb153cee",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C13",
+      "claim": "rs9267454 is in partial linkage disequilibrium with HLA-B*27:05 (r2 = 0.01, D\u2032 = 0.99).",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest associated SNP, rs9267454 (p = 1.5 \u00d7 10\u22128), is in partial linkage disequilibrium (LD) with HLA-B*57:01 (r2 = 0.47, D\u2032 = 0.92), HLA-B*14:01 (r2 = 0.12, D\u2032 = 1.0), HLA-B*27:05 (r2 = 0.01, D\u2032 = 0.99), and the HLA-C -35 rs9264942 SNP (r2 = 0.07, D\u2032 = 0.77), and thus reflects these well-known associations with HIV-1 control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from linkage disequilibrium analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c1697e80-8f00-4d4a-a51a-f3fcf2287ff1",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C14",
+      "claim": "rs9267454 is in partial linkage disequilibrium with the HLA-C -35 rs9264942 SNP (r2 = 0.07, D\u2032 = 0.77).",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest associated SNP, rs9267454 (p = 1.5 \u00d7 10\u22128), is in partial linkage disequilibrium (LD) with HLA-B*57:01 (r2 = 0.47, D\u2032 = 0.92), HLA-B*14:01 (r2 = 0.12, D\u2032 = 1.0), HLA-B*27:05 (r2 = 0.01, D\u2032 = 0.99), and the HLA-C -35 rs9264942 SNP (r2 = 0.07, D\u2032 = 0.77), and thus reflects these well-known associations with HIV-1 control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from linkage disequilibrium analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "bf0111a4-a2db-48ad-b6aa-c6835bc38a49",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C15",
+      "claim": "The VL GWAS results confirm the quality of the study population for genome analysis of determinants of HIV-1-related outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm the quality of the study population for the purpose of genome analysis of determinants of HIV-1-related outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the GWAS results in the context of study validation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "706bfd5d-4f5a-48c6-8702-b4913bde0e20",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C16",
+      "claim": "3007 genome-wide analyses of associations between human SNPs and HIV-1 amino acid variants were performed in the full sample of 1071 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "3007 genome-wide analyses of associations between human SNPs and HIV-1 amino acid variants were performed in the full sample of 1071 individuals (Figure 2B, Study B) using logistic regression corrected for viral phylogeny (Carlson et al., 2008; Carlson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number and type of analyses performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "2145deb6-1af2-4594-b68f-f9dbcefcfae0",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C17",
+      "claim": "Phylogenetically corrected logistic regression was used for genome-to-genome analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "3007 genome-wide analyses of associations between human SNPs and HIV-1 amino acid variants were performed in the full sample of 1071 individuals (Figure 2B, Study B) using logistic regression corrected for viral phylogeny (Carlson et al., 2008; Carlson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical method used, with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "83ab75c7-335b-4dcb-88ef-182bdd53e352",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C18",
+      "claim": "Highly significant associations were observed between SNPs in the MHC region and multiple amino acids throughout the HIV-1 proteome except in Vpu, Rev and the RNaseH subunit of RT.",
+      "claim_type": "EXPLICIT",
+      "source": "Highly significant associations were observed between SNPs in the major histocompatibility complex (MHC) region and multiple amino acids throughout the HIV-1 proteome (except in Vpu, Rev and the RNaseH subunit of RT) (Figure 2C), with Gag and Nef having a significantly higher density of associated variable sites than the rest of the proteome (Gag: 6.8% vs 2.6% p=0.001; Nef: 11% vs 2.6% p = 1.2 \u00d7 10\u22125, binomial tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of association results from the genome-to-genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "aa86b969-952a-45bc-bf6e-d3283135c7c5",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C19",
+      "claim": "Gag has a significantly higher density of associated variable sites than the rest of the proteome (6.8% vs 2.6%, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Highly significant associations were observed between SNPs in the major histocompatibility complex (MHC) region and multiple amino acids throughout the HIV-1 proteome (except in Vpu, Rev and the RNaseH subunit of RT) (Figure 2C), with Gag and Nef having a significantly higher density of associated variable sites than the rest of the proteome (Gag: 6.8% vs 2.6% p=0.001; Nef: 11% vs 2.6% p = 1.2 \u00d7 10\u22125, binomial tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from statistical testing of association density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "1ca767c2-76b1-484f-ad52-e8c0729920e4",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C20",
+      "claim": "Nef has a significantly higher density of associated variable sites than the rest of the proteome (11% vs 2.6%, p = 1.2 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Highly significant associations were observed between SNPs in the major histocompatibility complex (MHC) region and multiple amino acids throughout the HIV-1 proteome (except in Vpu, Rev and the RNaseH subunit of RT) (Figure 2C), with Gag and Nef having a significantly higher density of associated variable sites than the rest of the proteome (Gag: 6.8% vs 2.6% p=0.001; Nef: 11% vs 2.6% p = 1.2 \u00d7 10\u22125, binomial tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from statistical testing of association density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "640401f2-b172-411b-88ed-8fdcef32c295",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C21",
+      "claim": "Using Bonferroni correction for multiple testing, the significance threshold was p = 2.4 \u00d7 10\u221212.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Bonferroni correction for multiple testing (threshold p = 2.4 \u00d7 10\u221212), significant human SNP associations were observed with 48 viral amino acids (Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical threshold used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "a885b1df-62fd-4898-9add-5659fde9b88d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C22",
+      "claim": "Significant human SNP associations were observed with 48 viral amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Bonferroni correction for multiple testing (threshold p = 2.4 \u00d7 10\u221212), significant human SNP associations were observed with 48 viral amino acids (Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the genome-to-genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "6db913d9-f322-449a-b348-82ce475d7bc7",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C23",
+      "claim": "None of the 48 significantly associated amino acids mapped to known sites of major antiretroviral drug resistance mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these 48 amino acids mapped to known sites of major antiretroviral drug resistance mutations (Hirsch et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement comparing results to known drug resistance sites, with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "7cf3d990-e154-4f73-b7c6-c6758033c06a",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C24",
+      "claim": "The strongest association found was between rs72845950 and Nef position 135 (p = 2.7 \u00d7 10\u221266).",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest association found was between rs72845950 and Nef position 135 (p = 2.7 \u00d7 10\u221266).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result identifying the strongest association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "b4211dc8-92a2-4d76-a5f6-bc5ab70a8ff8",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C25",
+      "claim": "Associations were much stronger between human SNPs and HIV-1 amino acids than with VL.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations were much stronger between human SNPs and HIV-1 amino acids than with VL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about association strengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "595f98e5-7849-40dd-aac3-ca506c04449f",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C26",
+      "claim": "rs2395029 has a p-value of 1.21 \u00d7 10\u22126 for association with VL.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the SNP rs2395029, a proxy for HLA-B*57:01 (r2 = 0.93), has a p-value of 1.21 \u00d7 10\u22126 for association with VL, while it reaches a p-value of 4 \u00d7 10\u221259 for association with amino acid variation in Gag at position 242 (a well known position of escape from HLA-B*57:01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from association testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8c719e82-9234-4651-82c7-d209845b8c74",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C27",
+      "claim": "rs2395029 is a proxy for HLA-B*57:01 (r2 = 0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the SNP rs2395029, a proxy for HLA-B*57:01 (r2 = 0.93), has a p-value of 1.21 \u00d7 10\u22126 for association with VL, while it reaches a p-value of 4 \u00d7 10\u221259 for association with amino acid variation in Gag at position 242 (a well known position of escape from HLA-B*57:01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from linkage disequilibrium analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c7f7eb9c-26d5-4b21-a3fc-607ce01c1c3c",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C28",
+      "claim": "rs2395029 reaches a p-value of 4 \u00d7 10\u221259 for association with amino acid variation in Gag at position 242.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the SNP rs2395029, a proxy for HLA-B*57:01 (r2 = 0.93), has a p-value of 1.21 \u00d7 10\u22126 for association with VL, while it reaches a p-value of 4 \u00d7 10\u221259 for association with amino acid variation in Gag at position 242 (a well known position of escape from HLA-B*57:01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from association testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "af761964-e54e-422a-8969-062fb47ebece",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C29",
+      "claim": "Gag position 242 is a well known position of escape from HLA-B*57:01.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the SNP rs2395029, a proxy for HLA-B*57:01 (r2 = 0.93), has a p-value of 1.21 \u00d7 10\u22126 for association with VL, while it reaches a p-value of 4 \u00d7 10\u221259 for association with amino acid variation in Gag at position 242 (a well known position of escape from HLA-B*57:01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established knowledge of HIV-1 escape mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8d051115-3bdd-4483-87da-a0d602bc3d3b",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C30",
+      "claim": "No significant signals were identified outside the MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant signals were identified outside the MHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the absence of significant findings outside the MHC region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "974676d1-7c79-4377-a5c5-754244a6d47e",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C31",
+      "claim": "The genome-to-genome approach demonstrates the feasibility and improved power of performing association testing using viral genetic variation as outcome, independent of clinical phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate the feasibility and improved power of performing association testing using viral genetic variation as outcome, independent of clinical phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results regarding the methodological advantages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "39d8ae34-2c7b-46e9-8286-64f4ec0ea868",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C32",
+      "claim": "50% of the identified viral amino acids (24/48) were located within an optimally defined CTL epitope restricted by one or more HLA alleles tagged by the associated SNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that a substantial fraction of the identified viral amino acids (24/48, 50%) were located within an optimally defined CTL epitope restricted by one or more HLA alleles tagged by the associated SNP (http://www.hiv.lanl.gov/content/immunology/tables/optimal_ctl_summary.html, supplemented with a recently updated list of epitopes [Carlson et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from comparison with known CTL epitopes, with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "cd61d268-03ea-42b6-b61d-29d595aba4b6",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C33",
+      "claim": "In seven cases, the classical HLA allele implicated through LD with a tagging SNP did not match previously reported restriction patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in seven cases, the classical HLA allele implicated through LD with a tagging SNP did not match previously reported restriction patterns (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from comparison with known restriction patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "f89b5509-bc2f-4e9a-a21f-acd77e12ff27",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C34",
+      "claim": "The genome-to-genome approach can reconstruct a map of targets of HLA pressure across the viral proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that this approach can reconstruct a map of targets of HLA pressure across the viral proteome and identify sites outside classical epitopes that could represent additional escape variants or compensatory mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results regarding the capabilities of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "aa5d0d06-4194-49ac-a06b-5acc4a83f970",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C35",
+      "claim": "The genome-to-genome approach can identify sites outside classical epitopes that could represent additional escape variants or compensatory mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that this approach can reconstruct a map of targets of HLA pressure across the viral proteome and identify sites outside classical epitopes that could represent additional escape variants or compensatory mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results regarding potential novel findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c7740f89-ed69-470c-9468-33b99f9e9469",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C36",
+      "claim": "A substantial proportion of associated viral amino acids lay outside known CTL epitopes, highlighting this approach as a tool to guide novel epitope discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "That a substantial proportion of associated viral amino acids lay outside known CTL epitopes also highlights this approach as a tool to guide novel epitope discovery (Bhattacharya et al., 2007; Almeida et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "1fa48764-8800-41fb-88e2-f3b11ea2a002",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C37",
+      "claim": "Analysis of polymorphic amino acids within the HLA genes has been shown to improve power for detection of association with clinical outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of polymorphic amino acids within the HLA genes has been shown to improve power for detection of association with clinical outcome and has demonstrated the biological relevance of key residues in the HLA-B binding groove (Pereyra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "26712e6e-f17e-4d92-a558-354f1688feee",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C38",
+      "claim": "Analysis of polymorphic amino acids within the HLA genes has demonstrated the biological relevance of key residues in the HLA-B binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of polymorphic amino acids within the HLA genes has been shown to improve power for detection of association with clinical outcome and has demonstrated the biological relevance of key residues in the HLA-B binding groove (Pereyra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "409f5387-a1ca-49c7-bfed-8fec259610ba",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C39",
+      "claim": "The top association in HLA-A mapped to position 62 (p = 3.3 \u00d7 10\u221276 with HIV Nef 135).",
+      "claim_type": "EXPLICIT",
+      "source": "The top associations in all classical class I genes mapped to discrete residues in the binding grooves of the HLA molecule: HLA-A position 62 (p = 3.3 \u00d7 10\u221276 with HIV Nef 135), HLA-B position 70 (p = 7.1 \u00d7 10\u221257 with HIV Gag 242), HLA-C position 99 (p = 5.4 \u00d7 10\u221263 with HIV Nef 70).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from HLA amino acid association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "93e84b8a-6c9c-4806-bc12-f8e8ee89607d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C40",
+      "claim": "The top association in HLA-B mapped to position 70 (p = 7.1 \u00d7 10\u221257 with HIV Gag 242).",
+      "claim_type": "EXPLICIT",
+      "source": "The top associations in all classical class I genes mapped to discrete residues in the binding grooves of the HLA molecule: HLA-A position 62 (p = 3.3 \u00d7 10\u221276 with HIV Nef 135), HLA-B position 70 (p = 7.1 \u00d7 10\u221257 with HIV Gag 242), HLA-C position 99 (p = 5.4 \u00d7 10\u221263 with HIV Nef 70).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from HLA amino acid association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "d6568770-c874-4d2c-bbd5-c983767cc7ca",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C41",
+      "claim": "The top association in HLA-C mapped to position 99 (p = 5.4 \u00d7 10\u221263 with HIV Nef 70).",
+      "claim_type": "EXPLICIT",
+      "source": "The top associations in all classical class I genes mapped to discrete residues in the binding grooves of the HLA molecule: HLA-A position 62 (p = 3.3 \u00d7 10\u221276 with HIV Nef 135), HLA-B position 70 (p = 7.1 \u00d7 10\u221257 with HIV Gag 242), HLA-C position 99 (p = 5.4 \u00d7 10\u221263 with HIV Nef 70).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from HLA amino acid association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "72bf847c-d9c4-4d9d-953f-8006564cbb04",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C42",
+      "claim": "All class I HLA genes can exert strong pressure on the viral proteome through a shared mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that all class I HLA genes can exert strong pressure on the viral proteome through a shared mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the HLA amino acid association results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "ea0147e4-a6ce-4c46-8386-90f50c95c6d4",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C43",
+      "claim": "After correction for multiple testing (p threshold = 1.6 \u00d7 10\u22125 based on 3125 viral amino acids), no significant associations were observed between HIV-1 amino acid variants and VL.",
+      "claim_type": "EXPLICIT",
+      "source": "After correction for multiple testing (p threshold = 1.6 \u00d7 10\u22125 based on 3125 viral amino acids), we did not observe any significant associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the absence of significant findings in the VL association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "51443b4d-e2d7-46ad-b48e-81d4c28f8501",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C44",
+      "claim": "The effects of amino acid variation at the 48 host-associated sites on VL ranged from \u20130.16 to +0.07 log10 copies/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of amino acid variation at these sites on VL ranged from \u20130.16 to +0.07 log10 copies/ml (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from VL association analysis, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "bea6b1ef-11e4-403b-be30-87841f35f6a4",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C45",
+      "claim": "rs2395029 was associated with a 0.38 log decrease in viral RNA copies/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "The marker rs2395029 was associated with a 0.38 log decrease in viral RNA copies/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from VL association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "ff55906a-153b-4d5d-92e9-5364e54da839",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C46",
+      "claim": "23 viral residues associated with host variant rs2395029 in the genome-to-genome analysis (selection cutoff: p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the effect on VL of 23 viral residues that associated with host variant rs2395029 (r2 = 0.93 with HLA-B*57:01) in the genome-to-genome analysis (selection cutoff: p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the genome-to-genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c0da3483-fcf1-49ac-8884-eb1d504f01b0",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C47",
+      "claim": "The univariate effect on VL for each of the 23 viral amino acids targeted by rs2395029 ranged from \u20130.16 to +0.12.",
+      "claim_type": "EXPLICIT",
+      "source": "The univariate effect on VL for each of the 23 viral amino acids targeted by this allele ranged from \u20130.16 to +0.12 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from VL association analysis, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "e2793145-13ea-4127-b07a-1be3d2ff3a06",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C48",
+      "claim": "The genome-to-genome approach can be linked to clinical/laboratory phenotypes, allowing for detailed understanding of the distribution and relative contribution of sites of host\u2013pathogen interaction to disease outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the genome-to-genome approach can be linked to clinical/laboratory phenotypes, allowing for detailed understanding of the distribution and relative contribution of sites of host\u2013pathogen interaction to disease outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results regarding the capabilities of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "984bfbc1-511d-4126-baf7-ceace88683aa",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C49",
+      "claim": "International guidelines now propose an early start of antiretroviral therapy in most HIV-1 infected individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, international guidelines now propose an early start of antiretroviral therapy in most HIV-1 infected individuals (Thompson et al., 2012), making the collection of large numbers of long-term untreated patients not only unrealistic but also ethically questionable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current clinical guidelines with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "fb1d2146-a458-4594-bd0f-bf8c06693889",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C50",
+      "claim": "Early start of antiretroviral therapy makes the collection of large numbers of long-term untreated patients not only unrealistic but also ethically questionable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, international guidelines now propose an early start of antiretroviral therapy in most HIV-1 infected individuals (Thompson et al., 2012), making the collection of large numbers of long-term untreated patients not only unrealistic but also ethically questionable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of current clinical guidelines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "d5bd524b-bb6c-41df-b386-d3b17780e88f",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C51",
+      "claim": "Intermediate phenotypes have recently been shown to be useful in uncovering association signals that are not detectable using more complex clinical endpoints.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermediate phenotypes have recently been shown to be useful in uncovering association signals that are not detectable using more complex clinical endpoints: illustrative examples include metabolomic biomarkers in cardiovascular research (Suhre et al., 2011), serum IgE concentration in the study of asthma (Moffatt et al., 2010), or neuroimaging-based phenotypes in psychiatry genetics (Rasetti and Weinberger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of intermediate phenotypes with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "544bad26-d866-4cd6-98fe-ba9fcd2bba7a",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C52",
+      "claim": "Metabolomic biomarkers are an example of useful intermediate phenotypes in cardiovascular research.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermediate phenotypes have recently been shown to be useful in uncovering association signals that are not detectable using more complex clinical endpoints: illustrative examples include metabolomic biomarkers in cardiovascular research (Suhre et al., 2011), serum IgE concentration in the study of asthma (Moffatt et al., 2010), or neuroimaging-based phenotypes in psychiatry genetics (Rasetti and Weinberger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of intermediate phenotypes with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "a249a82f-8598-48bd-9178-d169f9c4ad1e",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C53",
+      "claim": "Serum IgE concentration is an example of a useful intermediate phenotype in the study of asthma.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermediate phenotypes have recently been shown to be useful in uncovering association signals that are not detectable using more complex clinical endpoints: illustrative examples include metabolomic biomarkers in cardiovascular research (Suhre et al., 2011), serum IgE concentration in the study of asthma (Moffatt et al., 2010), or neuroimaging-based phenotypes in psychiatry genetics (Rasetti and Weinberger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of intermediate phenotypes with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "b0c9879c-b2c2-4c04-a9ef-fa21ba117a2e",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C54",
+      "claim": "Neuroimaging-based phenotypes are an example of useful intermediate phenotypes in psychiatry genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermediate phenotypes have recently been shown to be useful in uncovering association signals that are not detectable using more complex clinical endpoints: illustrative examples include metabolomic biomarkers in cardiovascular research (Suhre et al., 2011), serum IgE concentration in the study of asthma (Moffatt et al., 2010), or neuroimaging-based phenotypes in psychiatry genetics (Rasetti and Weinberger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of intermediate phenotypes with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "f8e42a9c-e2f3-4161-a279-fd05caefb43d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C55",
+      "claim": "Variation in the pathogen sequence is an as-yet-untapped intermediate phenotype, specific by nature to genomic research in infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in the pathogen sequence is an as-yet-untapped intermediate phenotype, specific by nature to genomic research in infectious diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of using pathogen sequence variation as an intermediate phenotype.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "6c8b884a-4c20-475c-9c11-8817786aca2d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C56",
+      "claim": "Sequencing the pathogen could prove in many cases easier and more standardized than obtaining detailed clinical phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it depends on sequencing the pathogen, which could prove in many cases easier and more standardized than obtaining detailed clinical phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the practical advantages of pathogen sequencing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c5260341-f31a-41d3-a020-e822b814707d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C57",
+      "claim": "The genome-to-genome approach allowed the mapping of host genetic pressure on the HIV-1 genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach allowed the mapping of host genetic pressure on the HIV-1 genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the capabilities of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "46c6134d-8f61-45d0-8e8f-696e2bca7874",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C58",
+      "claim": "The strongest association signals genome-wide were observed between human SNPs tagging HLA class I alleles and viral mutations in their corresponding CTL epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest association signals genome-wide were observed between human SNPs tagging HLA class I alleles and viral mutations in their corresponding CTL epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the genome-to-genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8c4131cd-419b-4857-bfe1-5ac359c0da42",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C59",
+      "claim": "Additional association signals were observed outside of optimally defined CTL epitopes, which could indicate novel epitopes, or represent secondary (compensatory) mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional association signals were observed outside of optimally defined CTL epitopes, which could indicate novel epitopes, or represent secondary (compensatory) mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings with speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "6208be3a-dc4b-4b07-bd8e-60a4b147aec0",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C60",
+      "claim": "The results recapitulate extensive epidemiological and immunogenetic research and represent a proof-of-concept that biologically meaningful association signals are identifiable using a hypothesis-free strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "In a single experiment, these results recapitulate extensive epidemiological and immunogenetic research and represent a proof-of-concept that biologically meaningful association signals are identifiable using a hypothesis-free strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of previous research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "775edd70-12be-4cb4-95c1-5f2600254480",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C61",
+      "claim": "Host factors leading to viral adaptation can be uncovered by searching for associated imprints in the viral genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, host factors leading to viral adaptation can be uncovered by searching for associated imprints in the viral genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle derived from the study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "476246f6-c8ca-417e-8b9d-3c975a58d4e7",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C62",
+      "claim": "The International HIV Controllers Study demonstrated the importance of specific amino acid positions in the HLA-B binding groove on a clinical outcome (elite control).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the International HIV Controllers Study demonstrated the importance of specific amino acid positions in the HLA-B binding groove on a clinical outcome (elite control) (Pereyra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "03af65d1-5047-498f-b752-252e20ebb54a",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C63",
+      "claim": "The current study extends the observation about HLA-B binding groove to the HLA-A and C grooves, emphasizing the similarity in mechanism of host pressure on the viral proteome that is not necessarily translated into observable clinical outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We here extend this observation to the HLA-A and C grooves, emphasizing the similarity in mechanism of host pressure on the viral proteome that is not necessarily translated into observable clinical outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the current results in the context of previous findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "268f9a8c-3fce-458c-bb6e-63a3c187590f",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C64",
+      "claim": "The higher density of amino acid positions under selection in Gag and Nef is consistent with earlier findings that indicate the importance of Gag p24-specific CTL responses in slower progression to AIDS.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a higher density of amino acid positions under selection in Gag and Nef compared with the rest of the HIV proteome. This is consistent with earlier findings that indicate the importance of Gag p24-specific CTL responses in slower progression to AIDS (Borghans et al., 2007; Brennan et al., 2012) or controller status (Dyer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of previous findings with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "70705dd8-59c8-404c-bfe1-30b6c82f337d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C65",
+      "claim": "The higher density of amino acid positions under selection in Gag and Nef is consistent with earlier findings that indicate the importance of Gag p24-specific CTL responses in controller status.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a higher density of amino acid positions under selection in Gag and Nef compared with the rest of the HIV proteome. This is consistent with earlier findings that indicate the importance of Gag p24-specific CTL responses in slower progression to AIDS (Borghans et al., 2007; Brennan et al., 2012) or controller status (Dyer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of previous findings with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "112b9d80-0913-4ce2-b21d-f65e6e8b8704",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C66",
+      "claim": "Mapping host pressure on the pathogen proteome can reveal biologically relevant effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this further demonstrates that mapping host pressure on the pathogen proteome can reveal biologically relevant effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results regarding the biological relevance of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "bfed3f0d-2bfa-42b9-8fa6-b0efc5f48fd0",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C67",
+      "claim": "The use of HIV-1 variation as outcome resulted in a considerable gain in power to detect host factors compared to using VL.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of HIV-1 variation as outcome resulted in a considerable gain in power to detect host factors: the lowest p-values were observed for SNPs mapping to the HLA class I region in both approaches, but associations were much stronger with HIV-1 amino acid variation than for HIV-1 VL (2.7 \u00d7 10\u221266 vs 1 \u00d7 10\u221208), even when accounting for the increased number of multiple tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the power of different approaches with quantitative support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "e2400d45-9956-4761-ba87-fc831a36ddf5",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C68",
+      "claim": "The compound image that emerges from decomposing the effect of rs2395029 on VL is one of a multiplicity of modest effects distributed across many residues.",
+      "claim_type": "EXPLICIT",
+      "source": "While some HIV-1 amino acid changes individually associate with decrease in VL, the compound image that emerges is one of a multiplicity of modest effects distributed across many residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the VL association results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8940305c-eaaa-40cf-b7ef-178eebf45987",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C69",
+      "claim": "Correlations between host-associated variants and VL are difficult to interpret, because they may reflect fitness costs or compensation, the existence of strong or novel immune responses, or the indirect impact of specific HLA class I alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlations between host-associated variants and VL are difficult to interpret, because they may reflect fitness costs or compensation, the existence of strong (Iversen et al., 2006; Carlson et al.,, 2012) or novel (Almeida et al., 2011) immune responses, or the indirect impact of specific HLA class I alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the complexity of interpreting VL associations with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "f377b68c-6158-49c1-94c7-2c7fb3b932d7",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C70",
+      "claim": "The observation that the majority of host-associated HIV-1 mutations do not correlate with any detectable change in VL confirms HIV's remarkable capacity to adapt and compensate to immune pressure, often without measurable fitness cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the observation that the majority of host-associated HIV-1 mutations do not correlate with any detectable change in VL confirms HIV's remarkable capacity to adapt and compensate to immune pressure, often without measurable fitness cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the VL association results in the context of HIV biology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "bb5cdb82-2367-4919-a817-3761b46d8eff",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C71",
+      "claim": "Population stratification is a significant confounder in both human and viral genomic analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant confounder in both human and viral genomic analyses is the existence of population stratification, where shared ancestry between infected individuals, stratification by ethnic groups, non-random distribution of HIV-1 subtypes, or clusters of viral transmission can all have an influence on the population frequencies of specific mutations, and thus create spurious associations if not carefully controlled for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a known methodological challenge in genetic studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "fe9d34ea-05e6-4374-8fe5-fbb26590e10f",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C72",
+      "claim": "Previous studies usually controlled for viral population substructure but were limited in the control of human population stratification.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies usually controlled for viral population substructure but were limited in the control of human population stratification (Moore et al., 2002; Bhattacharya et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of previous studies with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "57ad46c3-c05e-41bd-bcef-fdfc8649db0b",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C73",
+      "claim": "The genome-to-genome approach offers the opportunity to correct for both host and viral population stratification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach offers the opportunity to correct for both factors, thanks to the availability of extensive host and viral genomic information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the current approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "7c9c657f-62bb-4f24-86c5-81284a9961d5",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C74",
+      "claim": "The present sample size provided approximately 80% power to detect a common human variant (minor allele frequency of 10%) with an odds ratio of 4.2 in the genome-to-genome analysis (Study B) at the respective significance threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The present sample size provided approximately 80% power to detect a common human variant (minor allele frequency of 10%) with an odds ratio of 4.2 in the genome-to-genome analysis (Study B) and a viral amino acid explaining approximately 4% of the variation in plasma viral load (Study C) at the respective significance thresholds (Purcell et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about statistical power with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "b0c42dab-a6a6-4c1f-aad1-f38f1bf8bc6e",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C75",
+      "claim": "The present sample size provided approximately 80% power to detect a viral amino acid explaining approximately 4% of the variation in plasma viral load (Study C) at the respective significance threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The present sample size provided approximately 80% power to detect a common human variant (minor allele frequency of 10%) with an odds ratio of 4.2 in the genome-to-genome analysis (Study B) and a viral amino acid explaining approximately 4% of the variation in plasma viral load (Study C) at the respective significance thresholds (Purcell et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about statistical power with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "ef726cbe-4118-4e8d-9fec-76b2d5dd334c",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C76",
+      "claim": "Consistent with most studies performed in HIV-1 host genetics over the past few years, the study did not identify previously unknown host genetic loci involved in host-viral interaction and HIV-1 restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with most studies performed in HIV-1 host genetics over the past few years (reviewed in Telenti and Johnson (2012)), we did not identify previously unknown host genetic loci involved in host-viral interaction and HIV-1 restriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of novel findings with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "22921082-8fcd-4b89-8385-e2f6ca7b6860",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C77",
+      "claim": "The genome-to-genome approach can only detect polymorphic host factors that leave an imprint on the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed approach can only detect polymorphic host factors that leave an imprint on the virus, which may exclude mediators of immunopathogenesis or genes involved in the establishment of tolerance (Medzhitov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method with a supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "3cbee9ba-544d-4311-8c35-55b688bd373a",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C78",
+      "claim": "The genome-to-genome approach may exclude mediators of immunopathogenesis or genes involved in the establishment of tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed approach can only detect polymorphic host factors that leave an imprint on the virus, which may exclude mediators of immunopathogenesis or genes involved in the establishment of tolerance (Medzhitov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method with a supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "e7d36c53-08ce-47d5-a56f-959ecb28a270",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C79",
+      "claim": "An additional limitation is the incomplete nature of genomic information available both on the host side (common genotypes from GWAS) and on the viral side (near full-length consensus sequence; gp120 was not included in the analyses).",
+      "claim_type": "EXPLICIT",
+      "source": "An additional limitation is the incomplete nature of genomic information available both on the host side (common genotypes from GWAS) and on the viral side (near full-length consensus sequence; gp120 was not included in the analyses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "74c9a15c-da46-43b3-93f8-175b4a2fe91a",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C80",
+      "claim": "The multiple hypothesis burden of a genome-to-genome scan is extremely high.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the multiple hypothesis burden of a genome-to-genome scan is extremely high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a statistical challenge of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "f08b29cb-dd94-4103-b579-377fbca31f1e",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C81",
+      "claim": "Larger studies, or studies that focus on a subgroup of predefined host genes, would have power to detect novel associations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that larger studies, or studies that focus on a subgroup of predefined host genes, would have power to detect novel associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "3bbc9e0f-2a2f-4dba-bafa-598b9ebd5a88",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C82",
+      "claim": "A comprehensive description of host\u2013pathogen genomic interactions would require human genome sequencing, coupled with deep sequencing of intra-host retroviral subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive, but computationally challenging description of host\u2013pathogen genomic interactions would require human genome sequencing, coupled with deep sequencing of intra-host retroviral subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "fd34b930-896c-40a2-891e-cfef3cffdc36",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C83",
+      "claim": "The genome-to-genome, hypothesis-free approach allows a global assessment of host\u2013pathogen interactions at the genome level.",
+      "claim_type": "EXPLICIT",
+      "source": "By simultaneously testing for associations between genome-wide human variation, HIV-1 sequence diversity, and plasma viral load (VL), our approach allows the mapping of all sites of host\u2013pathogen genomic interaction, the correction for both host and viral population stratification, and the assessment of the respective impact of human and HIV-1 variation on a clinical outcome (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the capabilities of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "03a69b8a-e874-4f77-9e1f-dcaa364de63b",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C84",
+      "claim": "The genome-to-genome approach allows the correction for both host and viral population stratification.",
+      "claim_type": "EXPLICIT",
+      "source": "By simultaneously testing for associations between genome-wide human variation, HIV-1 sequence diversity, and plasma viral load (VL), our approach allows the mapping of all sites of host\u2013pathogen genomic interaction, the correction for both host and viral population stratification, and the assessment of the respective impact of human and HIV-1 variation on a clinical outcome (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the capabilities of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "be3b9633-c90c-4528-b858-2df3bc1a71b1",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C85",
+      "claim": "The genome-to-genome approach allows the assessment of the respective impact of human and HIV-1 variation on a clinical outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "By simultaneously testing for associations between genome-wide human variation, HIV-1 sequence diversity, and plasma viral load (VL), our approach allows the mapping of all sites of host\u2013pathogen genomic interaction, the correction for both host and viral population stratification, and the assessment of the respective impact of human and HIV-1 variation on a clinical outcome (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the capabilities of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "759f7363-528f-4543-8c1b-782df2f2ebf8",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C86",
+      "claim": "The genome-to-genome approach reveals sites of genomic conflict.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we used a genome-to-genome, hypothesis-free approach to identify associations between host polymorphisms and HIV-1 genomic variation. This strategy allows a global assessment of host\u2013pathogen interactions at the genome level and reveals sites of genomic conflict.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "1ccf992b-3f6f-4d36-a7c7-4baea6c9af55",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C87",
+      "claim": "Comparable approaches are immediately applicable to explore other important infectious diseases, as long as polymorphic host factors exert sufficient selective pressure to trigger escape mutations in the pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparable approaches are immediately applicable to explore other important infectious diseases, as long as polymorphic host factors exert sufficient selective pressure to trigger escape mutations in the pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the approach.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "d141859d-c5e1-41d3-9920-887f0012f42a",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C88",
+      "claim": "Pathogen sequence variation, used as an intermediate phenotype, is more powerful than clinical and laboratory outcomes to identify some host factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that pathogen sequence variation, used as an intermediate phenotype, is more powerful than clinical and laboratory outcomes to identify some host factors allows smaller-scale studies and encourages analyses of less prevalent infectious diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results regarding the advantages of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "9edc8a0d-de3f-4789-99ba-3cb2455b49b4",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C89",
+      "claim": "The use of pathogen sequence variation as an intermediate phenotype allows smaller-scale studies and encourages analyses of less prevalent infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that pathogen sequence variation, used as an intermediate phenotype, is more powerful than clinical and laboratory outcomes to identify some host factors allows smaller-scale studies and encourages analyses of less prevalent infectious diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the implications of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "968be637-8d71-4943-969c-493d4bd725c2",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C90",
+      "claim": "Researchers involved in pathogen genome studies and host genetic studies should strongly consider the gathering of paired host\u2013pathogen data.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers involved in pathogen genome studies and host genetic studies should strongly consider the gathering of paired host\u2013pathogen data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "0719d5d9-6b1a-4761-a4ac-8d8c6f1f39fa",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C91",
+      "claim": "Study participants are treatment-na\u00efve individuals followed in one of seven cohorts or institutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Study participants are treatment-na\u00efve individuals followed in one of the following cohorts or institutions: the Swiss HIV Cohort Study (SHCS, www.shcs.ch, [Schoeni-Affolter et al., 2010]); the HAART Observational Medical Evaluation and Research (HOMER) study in Vancouver, Canada (www.cfenet.ubc.ca/our-work/initiatives/homer); the AIDS Clinical Trials Group (ACTG) Network in the USA (actgnetwork.org); the International HIV Controllers Study in Boston, USA (IHCS, www.hivcontrollers.org); Western Australian HIV Cohort Study, Perth, Australia; the AIDS Research Institute IrsiCaixa in Badalona, Spain; and the Instituto de Salud Carlos III in Madrid, Spain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study population with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "b0baefdd-3a87-46a4-8241-880b4d0ca054",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C92",
+      "claim": "Only individuals of recent Western European ancestry (confirmed by clustering with HapMap CEU individuals in principal component analysis of the genotype data) were included.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce noise due to host and viral diversity, we only included individuals of recent Western European ancestry (confirmed by clustering with HapMap CEU individuals in principal component analysis of the genotype data [Price et al., 2006]), and infected with HIV-1 subtype B (as assessed by the REGA Subtyping Tool [De Oliveira et al., 2005]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about inclusion criteria with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "0a33f065-32bc-4987-bb77-e6ca9ac0245d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C93",
+      "claim": "Only individuals infected with HIV-1 subtype B (as assessed by the REGA Subtyping Tool) were included.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce noise due to host and viral diversity, we only included individuals of recent Western European ancestry (confirmed by clustering with HapMap CEU individuals in principal component analysis of the genotype data [Price et al., 2006]), and infected with HIV-1 subtype B (as assessed by the REGA Subtyping Tool [De Oliveira et al., 2005]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about inclusion criteria with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "87adeb9e-b6da-4384-84ab-168ef2b1c5b3",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C94",
+      "claim": "The VL phenotype was defined as the average of the log10-transformed numbers of HIV-1 RNA copies per ml of plasma, excluding measurements obtained in the first 6 months after seroconversion and during advanced immunosuppression (i.e., with <100 CD4+ T cells per ml of blood).",
+      "claim_type": "EXPLICIT",
+      "source": "The VL phenotype was defined as the average of the log10-transformed numbers of HIV-1 RNA copies per ml of plasma, excluding measurements obtained in the first 6 months after seroconversion and during advanced immunosuppression (i.e., with <100 CD4+ T cells per ml of blood).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the definition of the VL phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "d93cbc39-2623-46dc-a52f-b252380cf2e1",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C95",
+      "claim": "DNA samples were genotyped on various platforms, including the HumanHap550, Human 660W-Quad, Human1M and HumanOmniExpress BeadChips (Illumina Inc., San Diego, CA, USA), as well as the Genome-Wide Human SNP Array 6.0 (Affymetrix Inc., Santa Clara, CA, USA).",
+      "claim_type": "EXPLICIT",
+      "source": "DNA samples were genotyped in the context of previous GWAS (Fellay et al., 2009; Pereyra et al., 2010) or for the current study on various platforms, including the HumanHap550, Human 660W-Quad, Human1M and HumanOmniExpress BeadChips (Illumina Inc., San Diego, CA, USA), as well as the Genome-Wide Human SNP Array 6.0 (Affymetrix Inc., Santa Clara, CA, USA) (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about genotyping methods with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "1642db18-68ab-4145-a8d2-7c9067d802a9",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C96",
+      "claim": "Study participants were filtered on the basis of genotyping quality, a sex check, and cryptic relatedness.",
+      "claim_type": "EXPLICIT",
+      "source": "Study participants were filtered on the basis of genotyping quality, a sex check, and cryptic relatedness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "129887c4-99f3-4d28-85d0-6ac895c06517",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C97",
+      "claim": "SNPs were filtered on the basis of missingness (excluded if called in <99% of participants), minor allele frequency (excluded if <0.01), and marked deviation from Hardy-Weinberg equilibrium (excluded if p<0.00005).",
+      "claim_type": "EXPLICIT",
+      "source": "SNP quality control was performed separately for each dataset: SNPs were filtered on the basis of missingness (excluded if called in <99% of participants), minor allele frequency (excluded if <0.01), and marked deviation from Hardy-Weinberg equilibrium (excluded if p<0.00005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "439930fe-0667-438e-890a-cf78a7772b07",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C98",
+      "claim": "Missing genotype imputation was performed with the Mach software per genotyping platform using 1000 Genomes Phase I CEU population data as reference haplotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Missing genotype imputation was performed with the Mach software per genotyping platform (in separate batches for Illumina 1M, OmniExpress, 550K and Affymetrix data) using 1000 Genomes Phase I CEU population data as reference haplotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about imputation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "9454cbad-a8d2-42d4-b515-42d3d8a989df",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C99",
+      "claim": "Imputed markers were filtered on minor allele frequency (excluded if <0.01) and imputation quality using Mach's reported r-squared measure (excluded if <0.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Imputed markers were filtered on minor allele frequency (excluded if <0.01) and imputation quality using Mach's reported r-squared measure (excluded if <0.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about quality control procedures for imputed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "01d647db-7250-476e-b936-cf9152e43bce",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C100",
+      "claim": "High-resolution HLA class I typing (4 digits; HLA-A, HLA-B, and HLA-C) was obtained using sequence-based methods, or imputed from the SNP genotyping data.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution HLA class I typing (4 digits; HLA-A, HLA-B, and HLA-C) was obtained using sequence-based methods, or imputed from the SNP genotyping data as described elsewhere (Jia et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about HLA typing methods with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "89686542-4929-4443-808a-7af569b97efb",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C101",
+      "claim": "Near full-length retroviral sequence data were obtained by bulk sequencing of viral RNA present in pretreatment-stored plasma, and in 11 cases, of proviral DNA isolated from peripheral blood mononuclear cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Near full-length retroviral sequence data were obtained by bulk sequencing of viral RNA present in pretreatment-stored plasma, and in 11 cases, of proviral DNA isolated from peripheral blood mononuclear cells, as previously described (Sandon\u00eds et al., 2009; John et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about viral sequencing methods with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "4cbe5e2e-36c9-4097-a6e9-b9251d1212ff",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C102",
+      "claim": "An amino acid residue was defined as variable if at least 10 study samples presented an alternative allele.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined an amino acid residue as variable if at least 10 study samples presented an alternative allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the definition of variable amino acids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "74f9d7e2-8c9a-4451-a8eb-f7d359ccec1c",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C103",
+      "claim": "Per position, separate binary variables were generated for each alternate amino acid, indicating the presence or absence of that allele in a given sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Per position, separate binary variables were generated for each alternate amino acid, indicating the presence or absence of that allele in a given sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data encoding methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "82ac21cb-77c2-4de1-b779-e9a75ef061f5",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C104",
+      "claim": "Phylogenetically corrected logistic regression was used to test for association between human SNPs and HIV-1 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for association between human SNPs and HIV-1 amino acids, we used phylogenetically corrected logistic regression (Carlson et al., 2008; Carlson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about statistical methods with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "e0c1919f-f59b-48fb-a4dd-f2f0622cefcf",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C105",
+      "claim": "Standard logistic regression was used for association testing between polymorphic amino acids in human HLA genes and HIV sequence variation for a binary HLA amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "For association testing between polymorphic amino acids in human HLA genes and HIV sequence variation, we used standard logistic regression (for a binary HLA amino acid) or a multivariate omnibus test (when more than one alternate allele was present) including sex, cohort, and the coordinates of the first two principal component axes as covariates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about statistical methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "ee16dce8-b58e-4241-ae65-3bef335e9614",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C106",
+      "claim": "A multivariate omnibus test was used for association testing between polymorphic amino acids in human HLA genes and HIV sequence variation when more than one alternate allele was present.",
+      "claim_type": "EXPLICIT",
+      "source": "For association testing between polymorphic amino acids in human HLA genes and HIV sequence variation, we used standard logistic regression (for a binary HLA amino acid) or a multivariate omnibus test (when more than one alternate allele was present) including sex, cohort, and the coordinates of the first two principal component axes as covariates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about statistical methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "3be3e857-92c6-428d-a52a-8fd89aa5a730",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C107",
+      "claim": "Linear regression models in PLINK were used to test for association between human SNPs and VL, and between HIV-1 amino acids and VL.",
+      "claim_type": "EXPLICIT",
+      "source": "We used linear regression models in PLINK to test for association between human SNPs and VL, and between HIV-1 amino acids and VL (Purcell et al., 2007), including sex, cohort, and the coordinates of the first two principal component axes as covariates (Price et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about statistical methods with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8b1fd5d6-551f-4b91-9c8a-54558277bda1",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C108",
+      "claim": "An additive genetic model was used for all analyses involving human SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "An additive genetic model was used for all analyses involving human SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the genetic model used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "58820420-3bcc-4d40-9226-27ecf02bf4cf",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C109",
+      "claim": "Significance was assessed using Bonferroni correction with significance thresholds of 7.25 \u00d7 10\u22129, 2.4 \u00d7 10\u221212, and 1.6 \u00d7 10\u22125 for analyses A, B, and C, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Significance was assessed using Bonferroni correction (significance thresholds of 7.25 \u00d7 10\u22129, 2.4 \u00d7 10\u221212, and 1.6 \u00d7 10\u22125 for analyses A, B, and C, respectively, Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about statistical significance thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "eae3672d-ae98-4641-b0c1-70f6956dac21",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C110",
+      "claim": "Through multiple rounds of selection and escape, host and pathogen genomes are imprinted with signatures of co-evolution that are governed by Darwinian forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Through multiple rounds of selection and escape, host and pathogen genomes are imprinted with signatures of co-evolution that are governed by Darwinian forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about evolutionary principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "132af3ad-7956-4060-b5f7-81bbabe90c85",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C111",
+      "claim": "Well-characterized anti-retroviral restriction factors, such as TRIM5\u03b1, APOBEC3G and BST2, harbor strong signals of selection in primate genomes, clear examples of retroviral pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "On the host side, well-characterized anti-retroviral restriction factors, such as TRIM5\u03b1, APOBEC3G and BST2, harbor strong signals of selection in primate genomes, clear examples of retroviral pressure (Ortiz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about known examples of host-pathogen co-evolution with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c25a1fa3-7678-40fe-984e-dc6f42ad7048",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C112",
+      "claim": "Escape mutations and reversions have been described in epitopes restricted by human leukocyte antigen (HLA) class I molecules and targeted by cytotoxic T lymphocyte (CTL) responses.",
+      "claim_type": "EXPLICIT",
+      "source": "On the virus side, obvious signs of selection are observable in the HIV-1 genome: escape mutations and reversions have been described in epitopes restricted by human leukocyte antigen (HLA) class I molecules and targeted by cytotoxic T lymphocyte (CTL) responses (Goulder et al., 2001; Kawashima et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about known examples of viral adaptation with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "370326c5-4c6b-401b-9325-2b552c4d4d84",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C113",
+      "claim": "Sequence polymorphisms have been reported recently in regions targeted by killer immunoglobulin-like receptors (KIR), suggesting evasion from immune pressure by natural killer (NK) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence polymorphisms have also been reported recently in regions targeted by killer immunoglobulin-like receptors (KIR), suggesting evasion from immune pressure by natural killer (NK) cells (Alter et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recent findings with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "2e1498c4-39d5-44ef-b835-dd33ca9b4630",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C114",
+      "claim": "Evidence for the remodeling of retroviral genomes by host genetic pressure comes from simian immunodeficiency virus (SIV) infection studies in rhesus macaques, where escape from restrictive TRIM5\u03b1 alleles has been observed in the viral capsid upon cross-species transmission of SIVsm.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for the remodeling of retroviral genomes by host genetic pressure also comes from simian immunodeficiency virus (SIV) infection studies in rhesus macaques, where escape from restrictive TRIM5\u03b1 alleles has been observed in the viral capsid upon cross-species transmission of SIVsm (Kirmaier et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about evidence from animal studies with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "4a913a0d-9829-461c-81d8-eda57ef5700b",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C115",
+      "claim": "Human alleles of TRIM5\u03b1 do not result in escape mutations, likely because of adaptation of the pathogen to the host.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, human alleles of TRIM5\u03b1 do not result in escape mutations, likely because of adaptation of the pathogen to the host (Rahm et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about human TRIM5\u03b1 with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8346567d-8b15-4dee-a623-26e282455e50",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C116",
+      "claim": "A methionine in the matrix protein (Gag-30) in SIVcpzPtt changed to arginine in lineages leading to HIV-1 and reverted to methionine when HIV-1 was passaged through chimpanzees.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a methionine in the matrix protein (Gag-30) in SIVcpzPtt changed to arginine in lineages leading to HIV-1 and reverted to methionine when HIV-1 was passaged through chimpanzees (Wain et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example of sequence adaptation with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "13790d77-6dd4-4f0f-a57d-73e30617c4be",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C117",
+      "claim": "Combined analyses of human and HIV-1 genetic data have addressed the association of HLA and KIR genes with variants in the retroviral genome.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, combined analyses of human and HIV-1 genetic data have addressed the association of HLA and KIR genes with variants in the retroviral genome (Moore et al., 2002; Brumme et al., 2007; Bhattacharya et al., 2007; Kawashima et al., 2009; Alter et al., 2011; Carlson et al., 2012; Wright et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "bed6b555-ab25-4f0c-8b00-59799619e021",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C118",
+      "claim": "Genome-wide association studies (GWAS) performed in the host have focused on various HIV-related clinical phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, genome-wide association studies (GWAS) performed in the host have focused on various HIV-related clinical phenotypes (Fellay et al., 2007; Fellay et al., 2009; Pereyra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "80eff1c4-4d0c-4faa-9da9-4631b39c1b8d",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C119",
+      "claim": "Large amounts of HIV-1 sequence data have been generated for phylogenetic studies, which shed new light on viral transmission and evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, large amounts of HIV-1 sequence data have been generated for phylogenetic studies, which shed new light on viral transmission and evolution (Kouyos et al., 2010; Alizon et al., 2010; Von Wyl et al., 2011), or allow clinically driven analyses of viral genes targeted by antiretroviral drugs (resistance testing) (Von Wyl et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "a60b431f-34da-4d16-959f-f4cafcb4f6ae",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C120",
+      "claim": "Large amounts of HIV-1 sequence data allow clinically driven analyses of viral genes targeted by antiretroviral drugs (resistance testing).",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, large amounts of HIV-1 sequence data have been generated for phylogenetic studies, which shed new light on viral transmission and evolution (Kouyos et al., 2010; Alizon et al., 2010; Von Wyl et al., 2011), or allow clinically driven analyses of viral genes targeted by antiretroviral drugs (resistance testing) (Von Wyl et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "97afc056-8303-4bdb-8ea8-b429f605a1e5",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C121",
+      "claim": "rs72845950 strongly tags HLA-A*24:02 (r2 = 0.89).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the strongest association (p = 2.7 \u00d7 10\u221266) was observed between residue 135 in Nef, located in an optimally defined A*24:02 epitope, and rs72845950, which strongly tags HLA-A*24:02 (r2 = 0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from linkage disequilibrium analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "3b45412b-dbe7-47a1-b6a4-dabd8997b4de",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "claim_id": "C122",
+      "claim": "Residue 135 in Nef is located in an optimally defined A*24:02 epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the strongest association (p = 2.7 \u00d7 10\u221266) was observed between residue 135 in Nef, located in an optimally defined A*24:02 epitope, and rs72845950, which strongly tags HLA-A*24:02 (r2 = 0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the location of a viral residue within a known epitope.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e1d7ad07-da38-46a0-9e20-01416693c557",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study collected paired human genome-wide SNP data and HIV-1 full-length sequence data from 1071 antiretroviral-naive patients of Western European ancestry infected with HIV-1 subtype B. After quality control and imputation, approximately 7 million human SNPs and 3007 distinct binary variables representing HIV-1 amino acid variation were available for analysis. The study population was homogeneous, with the first five principal components explaining only 1% of total genotypic variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 and C91-C103 provide comprehensive methodological details about data collection, quality control, and processing. The quantitative metrics (sample size, SNP counts, sequence coverage) are explicitly stated, and the methods for genotyping, imputation, and viral sequencing are described with appropriate citations. The population homogeneity is demonstrated through principal component analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "3114ee36-a5f1-4cca-9b85-ebb881af8bc3",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A classical GWAS of host determinants of HIV-1 viral load (VL) in 698 patients identified the strongest association at rs9267454 (p = 1.5 \u00d7 10\u207b\u2078), which is in partial linkage disequilibrium with known protective HLA alleles including HLA-B*57:01, HLA-B*14:01, HLA-B*27:05, and HLA-C -35 rs9264942. These results confirm the quality of the study population and replicate well-known associations with HIV-1 control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 describe a validation GWAS that successfully replicates known associations between HLA alleles and HIV-1 control. The quantitative LD metrics and p-values are provided, and the interpretation (C15) appropriately positions this as a quality control check. This serves as proof-of-concept for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genome-to-genome analysis using phylogenetically corrected logistic regression identified 48 HIV-1 amino acid variants significantly associated (p < 2.4 \u00d7 10\u207b\u00b9\u00b2) with human SNPs in the MHC region. Gag and Nef showed significantly higher densities of associated sites (6.8% and 11% respectively vs 2.6% for the rest of the proteome). The strongest association was between rs72845950 and Nef position 135 (p = 2.7 \u00d7 10\u207b\u2076\u2076). No significant signals were identified outside the MHC, and none of the 48 amino acids mapped to known drug resistance sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C25, C30, and C104 describe the core genome-to-genome findings with appropriate statistical rigor. The use of phylogenetically corrected regression (C17, C104) addresses viral population structure. The Bonferroni correction (C21) is appropriate for the multiple testing burden. The quantitative results are consistent and biologically interpretable, with enrichment in Gag and Nef consistent with known immunology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8295584a-fa24-47b7-b197-b64cbc156a31",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Associations between human SNPs and HIV-1 amino acids were much stronger than associations with viral load. For example, rs2395029 (a proxy for HLA-B*57:01, r\u00b2 = 0.93) showed p = 1.21 \u00d7 10\u207b\u2076 for association with VL but p = 4 \u00d7 10\u207b\u2075\u2079 for association with Gag position 242, a well-known escape site. This demonstrates a considerable gain in power (2.7 \u00d7 10\u207b\u2076\u2076 vs 1 \u00d7 10\u207b\u2078) when using HIV-1 variation as outcome compared to VL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 and C67 provide a direct quantitative comparison demonstrating the power advantage of using viral sequence variation as an intermediate phenotype. The example is well-chosen (HLA-B*57:01 and Gag 242 are well-established), and the magnitude of difference (>50 orders of magnitude in p-values) is striking and supports the methodological innovation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The genome-to-genome approach demonstrates feasibility and improved power for mapping host genetic pressure on the HIV-1 genome. The strongest associations genome-wide were between HLA class I-tagging SNPs and viral mutations in corresponding CTL epitopes. This hypothesis-free strategy successfully recapitulates extensive prior immunogenetic research in a single experiment, proving that biologically meaningful association signals can be identified by searching for host-driven imprints in the viral genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C57-C61, and C83-C86 provide appropriate interpretation of the methodological contribution. The approach successfully identifies known biology (validation) while offering advantages in power and the ability to correct for both host and viral population stratification. The proof-of-concept nature is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "15f75b3f-5f3e-4b7c-bb39-9d38958ee726",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "50% of the 48 significantly associated viral amino acids were located within optimally defined CTL epitopes restricted by HLA alleles tagged by the associated SNPs. However, in seven cases, the implicated HLA allele did not match previously reported restriction patterns. The approach can reconstruct a map of HLA pressure targets and identify sites outside classical epitopes that could represent novel epitopes or compensatory mutations, highlighting its utility for epitope discovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36, C121-C122 demonstrate both validation (50% in known epitopes) and discovery potential (50% outside known epitopes, 7 mismatches with prior reports). The example of Nef 135 in an A*24:02 epitope with rs72845950 (r\u00b2 = 0.89 with HLA-A*24:02) provides concrete support. The interpretation about epitope discovery is appropriately cautious ('could represent').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of polymorphic amino acids within HLA genes revealed that the top associations in all classical class I genes mapped to discrete residues in the HLA binding grooves: HLA-A position 62 (p = 3.3 \u00d7 10\u207b\u2077\u2076), HLA-B position 70 (p = 7.1 \u00d7 10\u207b\u2075\u2077), and HLA-C position 99 (p = 5.4 \u00d7 10\u207b\u2076\u00b3). This extends prior findings about HLA-B to HLA-A and HLA-C, indicating that all class I HLA genes exert strong pressure on the viral proteome through a shared mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 and C62-C63 extend prior work (C37-C38, C62) to new HLA loci. The extremely strong p-values and consistent mapping to binding groove residues across all three classical class I genes provide compelling evidence. The interpretation (C42, C63) appropriately contextualizes this as extending known biology while noting that mechanism similarity doesn't necessarily translate to clinical outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "8a7cb0fb-9db8-456e-a856-b34b13c05358",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gag and Nef showed significantly higher densities of amino acid positions under selection (6.8% and 11% respectively vs 2.6% for the rest of the proteome, p = 0.001 and p = 1.2 \u00d7 10\u207b\u2075). This is consistent with earlier findings indicating the importance of Gag p24-specific CTL responses in slower AIDS progression and controller status, demonstrating that mapping host pressure on the pathogen proteome can reveal biologically relevant effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C64-C66 identify a biologically meaningful pattern with appropriate statistical support (binomial tests). The consistency with prior literature (C64-C65 with citations) validates the biological relevance. The interpretation (C66) is appropriately supported by the convergence of current and prior findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "No significant associations were observed between HIV-1 amino acids and VL after multiple testing correction (p < 1.6 \u00d7 10\u207b\u2075). Effects of the 48 host-associated amino acids on VL ranged from -0.16 to +0.07 log\u2081\u2080 copies/ml. For HLA-B*57:01 (tagged by rs2395029), which was associated with 0.38 log decrease in VL, the 23 targeted viral amino acids showed individual effects ranging from -0.16 to +0.12, revealing a multiplicity of modest effects. The majority of host-associated HIV-1 mutations showed no detectable change in VL, confirming HIV's capacity to adapt without measurable fitness cost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 provide quantitative assessment of viral amino acid effects on VL. The lack of genome-wide significant associations (C43) is appropriately interpreted given the multiple testing burden. The decomposition of HLA-B*57:01 effects (C45-C47) provides mechanistic insight. The interpretation (C68-C70) appropriately acknowledges complexity and is consistent with HIV biology, though the causal claims are somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "4a439786-ef46-4f31-b91e-286fa5e2c0a5",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Population stratification is a significant confounder in both human and viral genomic analyses. Previous studies controlled for viral population substructure but were limited in controlling human population stratification. The genome-to-genome approach offers the opportunity to correct for both host and viral population stratification through the availability of extensive genomic information from both organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 and C84 identify a key methodological advantage. The statement about prior limitations (C72) is supported by citations. The correction for both host (via PCA, covariates) and viral (via phylogenetically corrected regression) stratification is implemented in the methods (C104-C107), supporting the claim of improved control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study had 80% power to detect common variants (MAF 10%) with OR 4.2 in genome-to-genome analysis and viral amino acids explaining 4% of VL variation. Consistent with recent HIV-1 host genetics studies, no previously unknown host genetic loci were identified. Limitations include: the approach can only detect polymorphic host factors leaving viral imprints (potentially excluding immunopathogenesis mediators), incomplete genomic information (common SNPs only, no gp120), and extremely high multiple testing burden. Larger studies or focused candidate gene approaches might detect novel associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C82 provide appropriate discussion of power, limitations, and negative results. The power calculations (C74-C75) are cited and reasonable. The acknowledgment of no novel loci (C76) is honest and contextualized. The limitations (C77-C80) are substantive and appropriately qualified. The suggestions for future work (C81-C82) are reasonable, though speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "c544f8a4-d358-4dac-a3e4-74a7600409ca",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Current guidelines recommend early antiretroviral therapy, making collection of large untreated cohorts unrealistic and ethically questionable. Intermediate phenotypes have proven useful in other fields. Pathogen sequence variation represents an untapped intermediate phenotype specific to infectious disease genomics that could be easier and more standardized than obtaining clinical phenotypes. This approach is immediately applicable to other infectious diseases where polymorphic host factors trigger pathogen escape mutations, allows smaller-scale studies, and encourages analysis of less prevalent diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C56 and C87-C90 provide appropriate contextualization and discuss generalizability. The clinical context (C49-C50) is accurate and cited. The analogy to intermediate phenotypes in other fields (C51-C54) is well-supported with citations. The claims about advantages (C56, C88-C89) are supported by the demonstrated power gains. The generalizability claims (C87, C90) are appropriately qualified ('as long as...', 'should consider').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "511efd3c-65b8-42ce-9779-d6c8cdc5bcab",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Statistical methods included standard or multivariate omnibus logistic regression for HLA amino acid associations with HIV variation, linear regression in PLINK for associations with VL, an additive genetic model for human SNPs, and Bonferroni correction with thresholds of 7.25 \u00d7 10\u207b\u2079, 2.4 \u00d7 10\u207b\u00b9\u00b2, and 1.6 \u00d7 10\u207b\u2075 for the three study types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C109 describe the statistical methods with appropriate detail and citations. The choice of methods is reasonable, though the appropriateness of Bonferroni correction for correlated tests (especially in the MHC) could be questioned. The different thresholds for different analyses appropriately reflect the different numbers of tests.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    },
+    {
+      "id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82",
+      "content_id": "0feeaa06-b206-41d4-b257-39e87d6f710b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes that host and pathogen genomes bear signatures of co-evolution governed by Darwinian forces, with examples including selection signatures in host restriction factors (TRIM5\u03b1, APOBEC3G, BST2), HIV-1 escape mutations in HLA-restricted epitopes and KIR-targeted regions, and evidence from SIV studies. Prior work has addressed HLA/KIR associations with HIV variants and performed host GWAS on clinical phenotypes, while large-scale HIV sequencing has enabled phylogenetic and resistance studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C120 provide appropriate background context with supporting citations throughout. These establish the biological rationale and prior work that motivates the current study. All statements are appropriately attributed to cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:48:28.897956Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fab9c062-fef9-401e-8f28-c36e851798f3",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "22089af0-5c28-4243-8b77-287af15edaf6",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "7605f84e-ee8f-48ce-bf63-26782b26c0ab",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "93d53e25-2506-4484-807b-7b74d0dd5404",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "2fc620b8-c575-459e-b042-9eacff38e1cf",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "da1b3d6e-e3ac-4d58-84dd-b029c0cd2d2d",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "daae7c06-49bb-4143-98d5-b07af8ec0d29",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "b16dea8a-1f91-4bbe-992c-d94e3b257371",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "0719d5d9-6b1a-4761-a4ac-8d8c6f1f39fa",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "b0baefdd-3a87-46a4-8241-880b4d0ca054",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "0a33f065-32bc-4987-bb77-e6ca9ac0245d",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "87adeb9e-b6da-4384-84ab-168ef2b1c5b3",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "d93cbc39-2623-46dc-a52f-b252380cf2e1",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "1642db18-68ab-4145-a8d2-7c9067d802a9",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "129887c4-99f3-4d28-85d0-6ac895c06517",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "439930fe-0667-438e-890a-cf78a7772b07",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "9454cbad-a8d2-42d4-b515-42d3d8a989df",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "01d647db-7250-476e-b936-cf9152e43bce",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "89686542-4929-4443-808a-7af569b97efb",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "4cbe5e2e-36c9-4097-a6e9-b9251d1212ff",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "74f9d7e2-8c9a-4451-a8eb-f7d359ccec1c",
+      "result_id": "e1d7ad07-da38-46a0-9e20-01416693c557"
+    },
+    {
+      "claim_id": "c74276ad-3881-4134-8d0c-51b82308284f",
+      "result_id": "3114ee36-a5f1-4cca-9b85-ebb881af8bc3"
+    },
+    {
+      "claim_id": "db9735cc-6777-452b-ab2e-1df07e3b9bf7",
+      "result_id": "3114ee36-a5f1-4cca-9b85-ebb881af8bc3"
+    },
+    {
+      "claim_id": "36ba3cf1-9cbf-42f8-967b-df1b4353cecf",
+      "result_id": "3114ee36-a5f1-4cca-9b85-ebb881af8bc3"
+    },
+    {
+      "claim_id": "5bcdf93a-f5a1-44b6-aa71-526e7c012be6",
+      "result_id": "3114ee36-a5f1-4cca-9b85-ebb881af8bc3"
+    },
+    {
+      "claim_id": "6d94c2aa-6c40-4a0e-bcfa-7880fb153cee",
+      "result_id": "3114ee36-a5f1-4cca-9b85-ebb881af8bc3"
+    },
+    {
+      "claim_id": "c1697e80-8f00-4d4a-a51a-f3fcf2287ff1",
+      "result_id": "3114ee36-a5f1-4cca-9b85-ebb881af8bc3"
+    },
+    {
+      "claim_id": "bf0111a4-a2db-48ad-b6aa-c6835bc38a49",
+      "result_id": "3114ee36-a5f1-4cca-9b85-ebb881af8bc3"
+    },
+    {
+      "claim_id": "706bfd5d-4f5a-48c6-8702-b4913bde0e20",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "2145deb6-1af2-4594-b68f-f9dbcefcfae0",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "83ab75c7-335b-4dcb-88ef-182bdd53e352",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "aa86b969-952a-45bc-bf6e-d3283135c7c5",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "1ca767c2-76b1-484f-ad52-e8c0729920e4",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "640401f2-b172-411b-88ed-8fdcef32c295",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "a885b1df-62fd-4898-9add-5659fde9b88d",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "6db913d9-f322-449a-b348-82ce475d7bc7",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "7cf3d990-e154-4f73-b7c6-c6758033c06a",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "b4211dc8-92a2-4d76-a5f6-bc5ab70a8ff8",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "8d051115-3bdd-4483-87da-a0d602bc3d3b",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "82ac21cb-77c2-4de1-b779-e9a75ef061f5",
+      "result_id": "fca9cc9a-b507-4740-ba28-72d2aa39bba4"
+    },
+    {
+      "claim_id": "595f98e5-7849-40dd-aac3-ca506c04449f",
+      "result_id": "8295584a-fa24-47b7-b197-b64cbc156a31"
+    },
+    {
+      "claim_id": "8c719e82-9234-4651-82c7-d209845b8c74",
+      "result_id": "8295584a-fa24-47b7-b197-b64cbc156a31"
+    },
+    {
+      "claim_id": "c7f7eb9c-26d5-4b21-a3fc-607ce01c1c3c",
+      "result_id": "8295584a-fa24-47b7-b197-b64cbc156a31"
+    },
+    {
+      "claim_id": "af761964-e54e-422a-8969-062fb47ebece",
+      "result_id": "8295584a-fa24-47b7-b197-b64cbc156a31"
+    },
+    {
+      "claim_id": "bfed3f0d-2bfa-42b9-8fa6-b0efc5f48fd0",
+      "result_id": "8295584a-fa24-47b7-b197-b64cbc156a31"
+    },
+    {
+      "claim_id": "974676d1-7c79-4377-a5c5-754244a6d47e",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "c5260341-f31a-41d3-a020-e822b814707d",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "46c6134d-8f61-45d0-8e8f-696e2bca7874",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "6208be3a-dc4b-4b07-bd8e-60a4b147aec0",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "775edd70-12be-4cb4-95c1-5f2600254480",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "fd34b930-896c-40a2-891e-cfef3cffdc36",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "03a69b8a-e874-4f77-9e1f-dcaa364de63b",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "be3b9633-c90c-4528-b858-2df3bc1a71b1",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "759f7363-528f-4543-8c1b-782df2f2ebf8",
+      "result_id": "383ae2aa-e6d6-4aec-b333-791c16a3ab78"
+    },
+    {
+      "claim_id": "39d8ae34-2c7b-46e9-8286-64f4ec0ea868",
+      "result_id": "15f75b3f-5f3e-4b7c-bb39-9d38958ee726"
+    },
+    {
+      "claim_id": "cd61d268-03ea-42b6-b61d-29d595aba4b6",
+      "result_id": "15f75b3f-5f3e-4b7c-bb39-9d38958ee726"
+    },
+    {
+      "claim_id": "f89b5509-bc2f-4e9a-a21f-acd77e12ff27",
+      "result_id": "15f75b3f-5f3e-4b7c-bb39-9d38958ee726"
+    },
+    {
+      "claim_id": "aa5d0d06-4194-49ac-a06b-5acc4a83f970",
+      "result_id": "15f75b3f-5f3e-4b7c-bb39-9d38958ee726"
+    },
+    {
+      "claim_id": "c7740f89-ed69-470c-9468-33b99f9e9469",
+      "result_id": "15f75b3f-5f3e-4b7c-bb39-9d38958ee726"
+    },
+    {
+      "claim_id": "97afc056-8303-4bdb-8ea8-b429f605a1e5",
+      "result_id": "15f75b3f-5f3e-4b7c-bb39-9d38958ee726"
+    },
+    {
+      "claim_id": "3b45412b-dbe7-47a1-b6a4-dabd8997b4de",
+      "result_id": "15f75b3f-5f3e-4b7c-bb39-9d38958ee726"
+    },
+    {
+      "claim_id": "1fa48764-8800-41fb-88e2-f3b11ea2a002",
+      "result_id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e"
+    },
+    {
+      "claim_id": "26712e6e-f17e-4d92-a558-354f1688feee",
+      "result_id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e"
+    },
+    {
+      "claim_id": "409f5387-a1ca-49c7-bfed-8fec259610ba",
+      "result_id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e"
+    },
+    {
+      "claim_id": "93e84b8a-6c9c-4806-bc12-f8e8ee89607d",
+      "result_id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e"
+    },
+    {
+      "claim_id": "d6568770-c874-4d2c-bbd5-c983767cc7ca",
+      "result_id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e"
+    },
+    {
+      "claim_id": "72bf847c-d9c4-4d9d-953f-8006564cbb04",
+      "result_id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e"
+    },
+    {
+      "claim_id": "476246f6-c8ca-417e-8b9d-3c975a58d4e7",
+      "result_id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e"
+    },
+    {
+      "claim_id": "03af65d1-5047-498f-b752-252e20ebb54a",
+      "result_id": "afce3b5a-97f1-4c55-b3f0-ae5b4f20b53e"
+    },
+    {
+      "claim_id": "aa86b969-952a-45bc-bf6e-d3283135c7c5",
+      "result_id": "8a7cb0fb-9db8-456e-a856-b34b13c05358"
+    },
+    {
+      "claim_id": "1ca767c2-76b1-484f-ad52-e8c0729920e4",
+      "result_id": "8a7cb0fb-9db8-456e-a856-b34b13c05358"
+    },
+    {
+      "claim_id": "268f9a8c-3fce-458c-bb6e-63a3c187590f",
+      "result_id": "8a7cb0fb-9db8-456e-a856-b34b13c05358"
+    },
+    {
+      "claim_id": "70705dd8-59c8-404c-bfe1-30b6c82f337d",
+      "result_id": "8a7cb0fb-9db8-456e-a856-b34b13c05358"
+    },
+    {
+      "claim_id": "112b9d80-0913-4ce2-b21d-f65e6e8b8704",
+      "result_id": "8a7cb0fb-9db8-456e-a856-b34b13c05358"
+    },
+    {
+      "claim_id": "ea0147e4-a6ce-4c46-8386-90f50c95c6d4",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "51443b4d-e2d7-46ad-b48e-81d4c28f8501",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "bea6b1ef-11e4-403b-be30-87841f35f6a4",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "ff55906a-153b-4d5d-92e9-5364e54da839",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "c0da3483-fcf1-49ac-8884-eb1d504f01b0",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "e2793145-13ea-4127-b07a-1be3d2ff3a06",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "e2400d45-9956-4761-ba87-fc831a36ddf5",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "8940305c-eaaa-40cf-b7ef-178eebf45987",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "f377b68c-6158-49c1-94c7-2c7fb3b932d7",
+      "result_id": "9b349ee6-b4a1-41e3-84a1-1255532b0caf"
+    },
+    {
+      "claim_id": "bb5cdb82-2367-4919-a817-3761b46d8eff",
+      "result_id": "4a439786-ef46-4f31-b91e-286fa5e2c0a5"
+    },
+    {
+      "claim_id": "fe9d34ea-05e6-4374-8fe5-fbb26590e10f",
+      "result_id": "4a439786-ef46-4f31-b91e-286fa5e2c0a5"
+    },
+    {
+      "claim_id": "57ad46c3-c05e-41bd-bcef-fdfc8649db0b",
+      "result_id": "4a439786-ef46-4f31-b91e-286fa5e2c0a5"
+    },
+    {
+      "claim_id": "03a69b8a-e874-4f77-9e1f-dcaa364de63b",
+      "result_id": "4a439786-ef46-4f31-b91e-286fa5e2c0a5"
+    },
+    {
+      "claim_id": "7c9c657f-62bb-4f24-86c5-81284a9961d5",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "b0c42dab-a6a6-4c1f-aad1-f38f1bf8bc6e",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "ef726cbe-4118-4e8d-9fec-76b2d5dd334c",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "22921082-8fcd-4b89-8385-e2f6ca7b6860",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "3cbee9ba-544d-4311-8c35-55b688bd373a",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "e7d36c53-08ce-47d5-a56f-959ecb28a270",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "74c9a15c-da46-43b3-93f8-175b4a2fe91a",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "f08b29cb-dd94-4103-b579-377fbca31f1e",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "3bbc9e0f-2a2f-4dba-bafa-598b9ebd5a88",
+      "result_id": "d63eba1d-2633-4d7e-a6bd-c0c846bf94cd"
+    },
+    {
+      "claim_id": "984bfbc1-511d-4126-baf7-ceace88683aa",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "fb1d2146-a458-4594-bd0f-bf8c06693889",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "d5bd524b-bb6c-41df-b386-d3b17780e88f",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "544bad26-d866-4cd6-98fe-ba9fcd2bba7a",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "a249a82f-8598-48bd-9178-d169f9c4ad1e",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "b0c9879c-b2c2-4c04-a9ef-fa21ba117a2e",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "f8e42a9c-e2f3-4161-a279-fd05caefb43d",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "6c8b884a-4c20-475c-9c11-8817786aca2d",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "1ccf992b-3f6f-4d36-a7c7-4baea6c9af55",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "d141859d-c5e1-41d3-9920-887f0012f42a",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "9edc8a0d-de3f-4789-99ba-3cb2455b49b4",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "968be637-8d71-4943-969c-493d4bd725c2",
+      "result_id": "c544f8a4-d358-4dac-a3e4-74a7600409ca"
+    },
+    {
+      "claim_id": "e0c1919f-f59b-48fb-a4dd-f2f0622cefcf",
+      "result_id": "511efd3c-65b8-42ce-9779-d6c8cdc5bcab"
+    },
+    {
+      "claim_id": "ee16dce8-b58e-4241-ae65-3bef335e9614",
+      "result_id": "511efd3c-65b8-42ce-9779-d6c8cdc5bcab"
+    },
+    {
+      "claim_id": "3be3e857-92c6-428d-a52a-8fd89aa5a730",
+      "result_id": "511efd3c-65b8-42ce-9779-d6c8cdc5bcab"
+    },
+    {
+      "claim_id": "8b1fd5d6-551f-4b91-9c8a-54558277bda1",
+      "result_id": "511efd3c-65b8-42ce-9779-d6c8cdc5bcab"
+    },
+    {
+      "claim_id": "58820420-3bcc-4d40-9226-27ecf02bf4cf",
+      "result_id": "511efd3c-65b8-42ce-9779-d6c8cdc5bcab"
+    },
+    {
+      "claim_id": "eae3672d-ae98-4641-b0c1-70f6956dac21",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "132af3ad-7956-4060-b5f7-81bbabe90c85",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "c25a1fa3-7678-40fe-984e-dc6f42ad7048",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "370326c5-4c6b-401b-9325-2b552c4d4d84",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "2e1498c4-39d5-44ef-b835-dd33ca9b4630",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "4a913a0d-9829-461c-81d8-eda57ef5700b",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "8346567d-8b15-4dee-a623-26e282455e50",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "13790d77-6dd4-4f0f-a57d-73e30617c4be",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "bed6b555-ab25-4f0c-8b00-59799619e021",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "80eff1c4-4d0c-4faa-9da9-4631b39c1b8d",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    },
+    {
+      "claim_id": "a60b431f-34da-4d16-959f-f4cafcb4f6ae",
+      "result_id": "81862053-1f8f-4c1d-96b4-f6bb55aadb82"
+    }
+  ],
+  "comparisons": []
+}

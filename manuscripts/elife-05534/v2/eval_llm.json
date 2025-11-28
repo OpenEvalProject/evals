@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Protein expression from poly(lysine)-containing reporters is codon-dependent in both E. coli and S. cerevisiae, with AAA codons producing significantly less protein than synonymous AAG codons. Reporters with (AAA)12 produce 4-fold less protein in E. coli and 3-fold less in S. cerevisiae compared to (AAG)12 reporters, while glutamic acid repeats show no negative impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C23 are directly supported by experimental data in Figure 1B showing differential protein expression across multiple reporter constructs in both bacterial and eukaryotic systems. The quantitative measurements and appropriate controls (glutamic acid) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Kinetic analysis reveals that the first lysine is added rapidly (k1 = 2-19 s\u207b\u00b9) on both AAA and AAG codons, but subsequent lysines are added 130-fold slower (k2 = 0.0005-0.009 s\u207b\u00b9), with AAA codons showing slightly slower rates than AAG. The identity of the poly(A) message plays a critical role in this elongation slowdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 are well-supported by kinetic data in Figure 2C and toeprinting assays in Figure 2\u2014figure supplement 1. The rate constants are quantitatively measured and modeled using appropriate mathematical approaches (Figure 2\u2014figure supplement 2), with controls showing normal elongation rates on heteropolymeric sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Ribosomes translating iterated AAA codons generate extended peptide products containing more lysines than encoded, a phenomenon termed 'ribosome sliding.' Messages with two consecutive AAA codons produce predominantly extended products with at least four lysines, while equivalent AAG messages produce the expected products. Five consecutive adenosines are sufficient to promote sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 are supported by direct experimental evidence in Figure 3 showing extended peptide products on AAA but not AAG sequences. The toeprinting data (Figure 2\u2014figure supplement 1) showing diffuse signals on AAA sequences supports irregular ribosome movement. Controls excluding T7 polymerase artifacts (Figure 3\u2014figure supplement 3) strengthen the conclusion that sliding is a genuine ribosomal phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Ribosome sliding occurs more slowly than normal peptidyl transfer or RF1-catalyzed release, allowing cells to normally translate two consecutive AAA codons when downstream factors are present. When more than two AAA codons are present, slow lysine addition increases the likelihood of sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by data in Figure 3C showing that normal products predominate when downstream factors (RF1 or Phe-tRNA) are present. This explains the biological tolerance of two consecutive AAA codons observed in genomic data (Table 1) and is consistent with the kinetic measurements showing slow elongation on longer poly(A) stretches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In the PURExpress cell-free system and in E. coli, (AAA)12 reporters produce truncated protein products that are release factor-dependent and do not shift with RNase A treatment, indicating premature termination on out-of-frame stop codons following ribosome sliding rather than peptidyl-tRNA accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 are well-supported by data in Figure 4 showing truncated products that are RF1/RF2-dependent but RF3-independent, and resistant to RNase A treatment. The identification of out-of-frame stop codons in the reporter sequence (C53) provides a mechanistic explanation. Observation of the same truncated product in vivo (Figure 4\u2014figure supplement 2) confirms physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The minimum length of homopolymeric A sequence required to trigger robust ribosome sliding is 11 nucleotides (encoding 3 lysines), with A9 and A10 sequences showing little truncated product despite encoding the same number of lysines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are directly supported by experimental data in Figure 5 and Figure 5\u2014figure supplement 1 systematically testing different poly(A) lengths. The finding that nucleotide length rather than lysine number determines sliding is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In S. cerevisiae, (AAA)12 and (AAGAAGAAA)4 reporter mRNAs are targeted for Nonsense-Mediated Decay (NMD) in a Upf1-dependent manner, with mRNA levels reduced 30-50 fold in wild-type cells but recovered in upf1\u0394 cells. (AAG)12 reporters show no such reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C63-C66, C69-C74 are supported by qRT-PCR data in Figure 6 and mRNA half-life measurements in Figure 6\u2014figure supplement 1. Appropriate positive (PTC) and negative (stem-loop) controls validate the NMD-specificity of the response. The differential recovery of (AAGAAGAAA)4 vs (AAA)12 in upf1\u0394 cells is intriguing but adequately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C94",
+      "C95"
+    ],
+    "result": "Bioinformatic analysis reveals that consecutive AAA codons are significantly under-represented in E. coli and S. cerevisiae genomes relative to their overall codon usage, with longer stretches showing stronger selection against homopolymeric A sequences. The minimum length for sliding (11 nt) correlates with the length at which genomic selection becomes evident.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C75-C82, C94-C95 are supported by comprehensive bioinformatic analysis in Table 1 showing clear underrepresentation of consecutive AAA codons (e.g., 50-fold reduction for (AAA)3 in E. coli) while AAG sequences are overrepresented. The correlation between the experimental threshold for sliding (11 nt) and genomic selection patterns provides strong evolutionary validation of the sliding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose a model where ribosome pausing on poly(A) sequences (possibly due to complex instability rather than peptidyl-transfer defects) is followed by either sliding or another round of peptide bond formation, with the outcome depending on whether sliding positions another AAA codon or a non-lysine codon in the A site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C83-C86 represent a mechanistic model (Figure 7) that integrates the kinetic data (slow k2, k3), sliding observations, and differential outcomes on AAA vs AAG sequences. While some aspects are speculative (C84), the model is well-supported by the collective experimental evidence and provides a coherent explanation for all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The authors challenge a recent claim that truncated products from poly(lysine) reporters result from eRF1:eRF3-mediated termination on sense codons, showing no evidence for such activity in a yeast reconstituted translation system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by negative data in Figure 6\u2014figure supplement 2 showing no eRF1:eRF3-mediated release on iterated lysine mRNAs. While negative results require careful interpretation, the data directly address a competing hypothesis and support the authors' alternative explanation of sliding followed by canonical stop codon recognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "Ribosome sliding on poly(A) is mechanistically distinct from programmed -1 and +1 frameshifting, lacking the downstream secondary structures typical of PRF signals, and may be more similar to translational bypassing but without producing a single defined product.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90, C92-C93 provide important context by comparing sliding to known ribosomal movements. The distinctions are well-supported by citations to prior work and by the experimental observations showing multiple products from sliding (unlike the single product from T4 gene 60 bypassing). The lack of secondary structure is confirmed by sequence analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The differential recovery of (AAGAAGAAA)4 vs (AAA)12 mRNA levels in upf1\u0394 cells is explained by sliding on mixed sequences potentially placing ribosomes in productive frames (EEK repeats) allowing escape from slow elongation, while homopolymeric AAA sequences trap ribosomes triggering both NMD and NSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C102 are largely speculative mechanistic explanations (C98, C99, C101, C102) for the observed differential mRNA recovery. While the observation in C97 is supported by data in Figure 6B, the mechanistic explanations are not directly tested. Claim C100 references data not shown, further limiting evaluation. The model is plausible but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C60",
+      "C61",
+      "C62",
+      "C96",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The manuscript provides extensive background on mRNA surveillance pathways (NSD, NMD), translation quality control, peptide-mediated stalling, and the prevalence of premature polyadenylation, establishing the biological context for studying poly(lysine) translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C19, C24, C60-C62, C96, C103-C108, C110-C112 are background claims supported by appropriate citations to prior literature. These establish the scientific context and are generally accurate representations of established knowledge and prior work. C107 represents a reasonable inference from the current findings about mechanistic overlaps in poly(basic) reporter systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors speculate that ribosome sliding may provide a rescue mechanism for ribosomes on polyadenylated mRNAs in bacteria, that NSD is triggered by slow translation and sliding events, that NSD serves as an important gene regulation pathway given the ubiquity of premature polyadenylation, and that the widespread use of poly(A) tails may reflect the ribosome's inability to control these sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109, C113, C114, C116 are speculative proposals about broader biological implications. While plausible and consistent with the findings, they lack direct experimental support. Claim C115 references unpublished data on cancer-related codon changes, which cannot be evaluated. These represent interesting hypotheses for future work but are not demonstrated in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

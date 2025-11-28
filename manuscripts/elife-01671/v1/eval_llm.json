@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In the absence of actin, the ternary lipid membrane (DOPC/DPPC/cholesterol) undergoes a phase transition at Tc \u2248 28\u00b0C, below which macroscopic Lo/Ld domains form and coarsen, with domain size increasing from <75 nm to >200 nm and into the near micrometer range as temperature decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 collectively describe the phase behavior of actin-free membranes using multiple complementary measurements (visual inspection, cumulant U1, domain size R). The transition temperature (Tc \u2248 28\u00b0C), domain coarsening behavior, and comparison to literature values are all well-documented with experimental data from Figure 1A,C,D. The interpretation that the transition is close to critical (C37) is reasonably inferred from the observed domain dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In the presence of actin bound via DOPE-biotin, lipid domains appear at physiological temperature (37\u00b0C), forming a channel-like structure with Ld domains correlated to actin fibers. The phase transition is eliminated, domain size is restricted to ~90 nm without coarsening, and correlation persists 9\u00b0C above the actin-free Tc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 describe the dramatic effect of actin on membrane organization, supported by multiple lines of evidence from Figure 1B,C,D,E. The Pearson correlation coefficient (PCC) quantitatively demonstrates domain-actin correlation across temperatures, the absence of a phase transition is shown by lack of temperature dependence in cumulant and domain size, and the restricted domain size is directly measured. These findings align with theoretical predictions (Fischer and Vink, 2011; Machta et al., 2011).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Control experiments with single-component DOPC membranes bound to actin show no domain formation and minimal effect on lipid diffusion, demonstrating that actin's effects require phase-separating ternary membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 describe essential control experiments (Figure 1\u2014figure supplement 2, Figure 2A,B) showing that actin alone does not induce domains or significantly restrict diffusion in single-component membranes. This controls for artifacts from the actin network itself and demonstrates specificity to phase-separating systems. The FCS measurements across varying actin densities strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Scanning FCS measurements in ternary membranes with actin reveal directionally dependent lipid diffusion: enhanced diffusion along actin fibers (\u03c4 \u2248 30-50 ms) and hindered diffusion perpendicular to fibers (\u03c4 > 50 ms), confirming compartmentalization predicted by simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 describe sophisticated FCS experiments (Figure 2C,D) that directly measure directional diffusion. The pair-correlation analysis reveals clear anisotropy in lipid mobility, with strong peaks along actin fibers and weaker, delayed peaks perpendicular to them. This experimental confirmation of simulation predictions (Machta et al., 2011) is well-supported by the data and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Different biotinylated lipids with varying phase preferences (DOPE-biotin: Lo%=11\u00b12; DSPE-PEG-biotin: Lo%=78\u00b17; DPPE-biotin: Lo%=59\u00b15) produce distinct domain patterns: Ld-preferring pinning sites yield positive PCC (0.55\u00b10.02), Lo-preferring sites yield negative PCC (-0.37\u00b10.04), while DPPE-biotin unexpectedly yields weakly positive PCC (0.07\u00b10.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 describe systematic experiments varying pinning lipid properties (Figure 3, Figure 3\u2014figure supplement 1). The partitioning measurements are clearly documented, and the resulting domain structures with quantified PCC values demonstrate how pinning site properties control domain organization. The surprising result with DPPE-biotin (C71-C72) is acknowledged and motivates the curvature coupling hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A simulation model incorporating membrane elasticity (Helfrich), phase separation (Ising), and curvature-composition coupling reproduces experimental observations. At curvature coupling strength g\u224820, the model predicts sign change in PCC matching DPPE-biotin experiments, explained by competition between energetic attraction and curvature-induced repulsion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 describe the simulation model and key findings (Figure 4). The model is clearly defined with appropriate physics (Helfrich elasticity, Ising phase separation, curvature coupling). The prediction that PCC changes sign at g\u224820 (C80) matches the experimental paradox with DPPE-biotin. The mechanistic interpretation (C83-C85) is physically reasonable, though the authors acknowledge uncertainty in the precise g value due to PSF effects (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Simulations with curvature coupling (g=20) reproduce experimental domain structures at low pinning density (\u03c1p=0.1/nm), while simulations without coupling (g=0) produce domains that are too large. Curvature coupling is essential to match experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 compare simulation snapshots with experiments (Figure 4B,D,E,F). The qualitative agreement between simulations with curvature coupling and experiments is clear, while g=0 simulations fail to reproduce key features. The domain size comparison (C91-C92) acknowledges PSF limitations appropriately. The conclusion that curvature coupling is essential (C90, C93) is well-supported by the systematic comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Curvature coupling dramatically enhances the effective range of pinning sites through the elastic length scale \u03beh=(\u03ba/\u03c3)^1/2 ~100 nm, allowing much lower pinning densities (\u03c1p~0.1/nm vs 0.2-1.25/nm without coupling) to achieve domain alignment. This effect is temperature-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 explain a key mechanistic insight from simulations: curvature coupling extends the influence of pinning sites via membrane elasticity. The comparison to previous simulations requiring higher pinning densities (C89, citing Ehrig et al., 2011; Machta et al., 2011) is appropriate. The physical explanation via the elastic length scale \u03beh (C95) is well-grounded in membrane physics (Schick, 2012), and the temperature independence (C97) is an important prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Simulation height profiles show Ld domains have positive curvature while Lo domains have negative curvature on average. Actin with curvature coupling reduces membrane height fluctuations from ~3.6 nm to ~2 nm, consistent with literature values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide quantitative validation of the curvature coupling mechanism through membrane height analysis (Figure 4 height profiles). The observation that Ld and Lo domains have opposite curvatures (C98) directly demonstrates the coupling effect. The reduction in height fluctuations (C99-C100) and agreement with Speck et al. (2010) provides additional validation of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The experimental model system confirms simulation predictions: actin has minimal effect on single-component membranes but dramatic effects on ternary membranes, including absence of macroscopic phase separation, Ld domain alignment along actin, and compartmentalized diffusion, demonstrating that simple simulation models capture key membrane organization principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 synthesize the main experimental findings and their agreement with prior simulations (Ehrig et al., 2011; Fischer and Vink, 2011; Machta et al., 2011). The contrast between single-component and ternary systems (C101-C102) is well-established by controls. The three key confirmations (C103-C105) are each supported by distinct experimental approaches. The broader conclusion about simulation models (C106) is justified by the extensive agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Experiments with Lo-preferring pinning sites reveal phenomena unexplained by previous models: weak Ld domain alignment despite energetic preference for Lo phase. A simulation model incorporating curvature-composition coupling reproduces this behavior, suggesting additional mechanisms beyond pinning-lipid energetic interactions govern membrane organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 identify a key discrepancy with previous models (the DPPE-biotin paradox) and propose curvature coupling as an explanation. The experimental observation (C108) is clear from Figure 3B. The inference that additional mechanisms are needed (C109) is logical. The simulation model incorporating curvature coupling (C110) successfully reproduces the paradox, and the mechanistic explanation (C111-C113) is physically reasonable, though the authors appropriately acknowledge alternative explanations exist (C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "While curvature coupling is not the only possible mechanism, recent experimental studies of membrane phase separation at intermembrane junctions (Kaizuka and Groves, 2010) demonstrate pronounced curvature coupling, making it a likely candidate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 appropriately acknowledge limitations and cite supporting evidence. The authors correctly note that curvature coupling is one possible mechanism (C114), avoiding overstatement. The citation to Kaizuka and Groves (2010) provides independent experimental support for strong curvature coupling effects in membranes (C115), strengthening the plausibility of their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The stabilized lipid domain type depends sensitively on pinning species properties, suggesting cells could use this mechanism to locally sort membrane components at physiological temperatures while preventing macroscopic phase separation at low temperatures. Curvature coupling enhances these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C121 extrapolate experimental findings to biological implications. While the experimental observation that pinning species properties determine domain type (C116) is well-supported, the speculation about cellular mechanisms (C118, C120) goes beyond the data. The claim that effects persist at physiological temperature (C119) is supported experimentally, but the biological relevance remains speculative. These are reasonable hypotheses for future work but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The curvature effect in experiments was likely limited by the Mica support, but some effect is expected since lipid extraction energy exceeds membrane de-adhesion energy. Curvature coupling should be stronger in free-standing or cell membranes, supported by findings of Kaizuka and Groves (2010).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C125 discuss limitations and predictions. The speculation that Mica support limits curvature effects (C122) is reasonable but not directly tested. The energetic argument (C123, citing Helm et al., 1991; Lipowsky and Seifert, 1991) provides theoretical support for expecting some effect despite the support. The prediction about free-standing membranes (C124-C125) is plausible but remains to be experimentally validated in the authors' system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C33"
+    ],
+    "result": "The experimental model system consists of a supported lipid bilayer with ternary lipid mixture (DOPC:DPPC:cholesterol = 35:35:30 mol% plus 1 mol% DOPE-biotin) bound to an actin network, enabling direct observation of Lo/Ld domain formation using STED microscopy and FCS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C33 describe the experimental system design and rationale. The model system is clearly defined (C22, C26, C33), the choice of ternary mixture is justified by standard practice (C27, citing Dimova et al., 2006), and the phase behavior is well-characterized in literature (C28-C29, citing Veatch and Keller, 2003). The technical capabilities (C23) are demonstrated throughout the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background context establishes that eukaryotic membranes have an actin cortex, lipid raft theory relates phase separation to membrane organization, model membranes show macroscopic Lo/Ld domains at low temperature, but plasma membrane domains are postulated to be nanoscale. The picket-fence model proposes that actin pinning sites compartmentalize membranes and simulations predict this prevents macroscopic phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide literature context and are appropriately supported by citations. These establish the biological relevance (C1, C6, C14-C18), characterize model membrane behavior (C7-C13), and describe prior simulation predictions (C19-C21). All claims are backed by appropriate references and represent established knowledge or prior theoretical work that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C24",
+      "C25"
+    ],
+    "result": "The study demonstrates that dense membrane-bound actin networks severely influence lipid phase separation, preventing macroscopic Lo/Ld domain formation and creating actin-correlated multi-domain patterns with hindered lipid diffusion. Simulations show curvature coupling dramatically enhances pinning effects, implying low pinning densities can induce significant membrane structuring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 and C24-C25 summarize the main findings presented in the abstract and introduction. These high-level conclusions are well-supported by the detailed experimental and simulation results described in other claim groups. The claims accurately represent the key contributions of the work: experimental confirmation of simulation predictions and the new insight about curvature coupling enhancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Domain size in phase-separated membranes depends on the support: largest in unsupported membranes, smaller in Mica-supported membranes, and below diffraction limit on glass-supported membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 cite established literature (Honigmann et al., 2010, 2013; Jensen et al., 2007) about how membrane support affects domain size. These are appropriately cited background facts that contextualize the choice of Mica support in the current study and explain why domains don't fully coalesce at low temperature (C43).",
+    "result_type": "MINOR"
+  }
+]

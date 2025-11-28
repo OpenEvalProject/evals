@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C28",
+      "C29",
+      "C30",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The squid Doryteuthis pealeii exhibits unprecedented levels of RNA editing, with 57,108 recoding sites identified in 6,991 out of 12,039 ORFs (approximately 60% of proteins studied). This represents orders of magnitude more recoding than any other species studied, with many proteins harboring multiple editing sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C28-C30, C69-C75 collectively demonstrate extensive RNA editing in squid through multiple lines of evidence: bioinformatic detection (C45-C46), validation experiments (C64-C66), and comparative analysis (C70). The data show clear enrichment of A-to-G modifications over other types (C45-C48), tissue-specific patterns (C58-C60), and validation rates of 100% (40/40) by Sanger sequencing and 84% (120/143) by deep sequencing, supporting the conclusion of unprecedented editing levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C58",
+      "C59",
+      "C60",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "RNA editing in squid is tissue-dependent, with 19% of A-to-G modifications differing significantly between tissues (GFL and OL), and 84% of these showing higher levels in GFL. Hierarchical clustering reveals clear tissue-specificity for A-to-G but not non-A-to-G modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C58-C60, C124-C126 are supported by hierarchical clustering analysis (Figure 2\u2014figure supplement 2) and statistical testing showing significant tissue differences. The tissue-specificity of A-to-G modifications, contrasted with the lack of such patterns in non-A-to-G modifications, provides strong evidence that these are genuine editing events rather than technical artifacts or genomic polymorphisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "RNA editing is enriched in genes with neuronal and cytoskeletal functions, with nervous system pathways showing particularly high editing rates (75% edited, 35% heavily edited). Specific pathways like 'Synaptic vesicle cycle' (22/27 proteins edited) and 'Axon guidance' (33/39 proteins edited) are extensively affected, while 'Ribosome' and 'RNA polymerase' pathways show lower editing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C81-C87, C137-C144 are supported by Gene Ontology analysis (Figure 4\u2014figure supplement 1A) and KEGG pathway mapping (Figure 4A, Supplementary file 1I). The enrichment in neuronal pathways is statistically significant and consistent with editing patterns in other organisms (C81 cites Stapleton et al., 2006). The differential editing across pathways suggests functional selectivity rather than random modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Among 87 proteins encoding ion channels, transporters, synaptic machinery, and molecular motors, 70% harbor editing sites and 54% are heavily edited\u2014significantly higher than the 24% expected by chance (p<1e-6). This enrichment is consistent across all examined neuronal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97, C145-C147 demonstrate preferential editing of nervous system targets through statistical comparison with genome-wide rates. The >2-fold enrichment of heavy editing in these functionally important proteins (54% vs 24% expected) with high statistical significance (p<1e-6) supports the conclusion that squid preferentially edit nervous system targets even in a background of hyper-editing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "For sites with editing levels >20%, the fraction of nonsynonymous changes (>0.65) is significantly higher than expected by chance (0.65). Editing favors creation of glycine and arginine at the expense of lysine, and highly edited sites within conserved domains tend to recode to amino acids that occur frequently in other species, suggesting selection for functional substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92, C130-C136 are supported by multiple analyses: nonsynonymous enrichment analysis (Figure 4B), amino acid substitution patterns (Figure 4\u2014figure supplement 2B-D), and conserved domain analysis (Figure 4\u2014figure supplement 3). The pattern contrasts with humans where editing is generally not advantageous (C89 references Xu and Zhang, 2014), and the correlation between editing levels and substitution scores suggests functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A novel bioinformatic approach was developed using a de novo transcriptome as reference instead of a genome, detecting 'strong' editing sites (where majority of reads are edited) by comparing DNA to transcriptome, and 'weak' sites (minority edited) by identifying RNA-seq variability absent in DNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 describe the methodological approach illustrated in Figure 1. The method is logically sound and addresses the absence of a squid genome (C27). The approach successfully detected editing sites as demonstrated by validation experiments (C64-C66) and control analyses in human and macaque (C53-C55), confirming it is not an artifact of the pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The pipeline identified 81,930 weak and 5,644 strong A-to-G sites, compared to only 12,403 weak and 219 strong sites for other modification types, suggesting false-positive rates of 15% and 4% respectively. These rates are lower than those for similar searches in human coding sequences using genome references.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 present the primary detection results with estimated error rates. The dramatic enrichment of A-to-G over other modification types (Figure 2A) provides internal validation. The false-positive rate estimation is reasonable based on the ratio of A-to-G to non-A-to-G modifications, though the assumption that all non-A-to-G modifications are false positives may be conservative. The comparison with human studies (C52) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Control analyses applying the pipeline to human blood and rhesus macaque brain samples showed AG mismatches at levels similar to non-AG mismatches and indistinguishable from noise, demonstrating that the enormous number of AG mismatches in squid is not an artifact of the analysis pipeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe critical negative controls shown in Figure 2A and Supplementary file 1A,B. The absence of A-to-G enrichment in mammals using the same pipeline strongly supports that the squid signal is biological rather than methodological. This addresses a key potential criticism of the novel approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C123"
+    ],
+    "result": "A-to-I editing sites in squid tend to cluster and show distinctive 5\u2032 and 3\u2032 neighbor preferences, with about half appearing in clusters of at least three consecutive same-type mismatches, consistent with properties observed in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C123 are supported by sequence analysis (Figure 2\u2014figure supplement 1) and comparison with established editing patterns in other species (cites Morse et al., 2002; Levanon et al., 2004; Kleinberger and Eisenberg, 2010). The clustering and sequence preferences provide additional evidence that detected sites are genuine A-to-I editing events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "No A-to-G overrepresentation is observed in mitochondria-encoded genes, consistent with the absence of ADARs and A-to-I editing in mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 describe a negative control shown in Figure 2A inset. The absence of A-to-G enrichment in mitochondrial genes is consistent with established knowledge about ADAR localization (C62) and provides additional validation that the nuclear editing signal is genuine.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Validation experiments confirmed editing at 40/40 A-to-G sites by Sanger sequencing and 120/143 (84%) by deep sequencing, while none of 12 non-A-to-G sites were validated. Deep sequencing also identified 170 additional A-to-G sites and showed high correlation (r=0.86) between HiSeq and MiSeq editing level measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C127-C129 present validation results (Figure 2\u2014figure supplement 3, Supplementary file 1C-G). The 100% Sanger validation rate and 84% deep sequencing validation rate, combined with 0% validation of non-A-to-G sites, strongly support the authenticity of detected A-to-G modifications. The high correlation between platforms (r=0.86) demonstrates technical reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Multiple lines of evidence\u2014overrepresentation of A-to-G modifications, characteristic sequence motifs, tissue-specific modification levels, and validation experiments\u2014indicate that the majority of A-to-G modifications are true editing events, while most non-A-to-G modifications are likely technical artifacts or genomic variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 synthesize evidence from multiple analyses (C45-C66) to conclude that A-to-G modifications represent genuine editing. The convergence of independent lines of evidence (enrichment, sequence context, tissue-specificity, validation) provides strong support for this conclusion. The inference about non-A-to-G modifications is reasonable given their lack of characteristic features and validation failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The analysis examined only annotated ORFs, and the number of editing sites did not saturate with sequencing depth. Incompleteness of the de novo transcriptome and incorrect assembly of paralogs/splice variants may cause many additional sites to be missed, suggesting the true number of recoding sites is likely much higher than reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 acknowledge methodological limitations supported by Figure 2\u2014figure supplement 5 showing non-saturation. These are reasonable inferences about underestimation given the de novo assembly approach. However, the magnitude of underestimation is uncertain, and this caveat appropriately tempers the quantitative claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Editing levels observed in non-nervous system tissues are considerably lower than in nervous system tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by data from non-neuronal tissues (cites Alon et al., 2015) and is consistent with the enrichment of editing in neuronal pathways (C10, C81). This supports the functional importance of editing in nervous system physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Squid ADAR2 can be expressed as two isoforms via alternative splicing, with a non-canonical isoform containing an extra dsRNA binding motif that edits more efficiently, edits more sites, and binds dsRNA with higher affinity. Squid ADAR2 messages themselves contain many editing sites, and an ADAR1 isoform is also present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 are supported by prior studies (cites Palavicini et al., 2009, 2012) for C98-C103, and by the current transcriptome data for C104-C105. This provides a mechanistic explanation for the extensive editing observed in squid, though the causal relationship between ADAR structure and editing extent is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Extensive editing creates tremendous protein diversity in squid, which may in part explain the behavioral sophistication of these complex invertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 are speculative interpretations (marked as SPECULATION in evidence_type) about functional consequences. While the protein diversity claim is supported by the editing data, the connection to behavioral sophistication is not tested and remains hypothetical. No behavioral or functional assays are presented to support this inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "In squid, editing is so pervasive that the central dogma should be modified to include this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C31 is a provocative interpretation of the extensive editing observed. While the data support unprecedented editing levels in squid, whether this necessitates modification of the central dogma is a philosophical/conceptual question rather than an empirical one. The claim is marked as SPECULATION and represents an opinion about the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Extensive recoding may be common in many organisms, rivaling alternative splicing as a means of creating functional diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 is a speculative extrapolation from squid findings to other organisms. While the squid data are robust, there is no evidence presented that other organisms exhibit similar editing levels. The claim is appropriately marked as SPECULATION. Testing this hypothesis would require systematic surveys of diverse species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Editing can be used for temperature adaptation in cephalopods and responds to acute temperature changes in Drosophila. The large number of editing sites in squid suggests editing is well positioned to respond to environmental variation, though most model organisms studied are homeothermic mammals, and future studies of diverse species are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109 cite prior work on temperature adaptation, but C110 is speculative (marked as SPECULATION). While the extensive editing in squid is consistent with a role in environmental adaptation, this hypothesis is not tested in the current study. Claims C111-C112 appropriately acknowledge the limitation of current model systems and call for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Specimens were collected from Vineyard Sound in July. Trinity assembly of GFL and OL RNA-seq data yielded 99,226 components, from which 12,039 ORFs (average 1,370 bases) representing 8,276 Swiss-Prot proteins were detected, totaling ~16 million bases (28% of transcriptome). Average coverage was 1,206\u00d7 for RNA and 106\u00d7 for DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C122 describe specimen collection and transcriptome assembly procedures with specific quantitative results. These are straightforward methodological details and assembly statistics that are internally consistent and appropriate for the analysis performed. The coverage levels are adequate for the detection methods used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims about RNA editing: A-to-I editing alters genetic information and can create protein diversity; all eumetazoans express ADARs; transcriptome-wide screens have been limited to organisms with sequenced genomes; mammals have ~25-115 conserved recoding sites, Drosophila has several hundred; cephalopods lack sequenced genomes but traditional cloning has revealed extensive editing in specific transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide background context supported by established knowledge (C1-C3, C12-C14, C27, C36, C43-C44, C62-C63) and cited literature (C4-C5, C15-C26). These claims accurately represent prior work and establish the context for the current study's significance. The citations appear appropriate and the characterization of prior findings is consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The general approach is applicable to all organisms that lack a sequenced genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 states the method is applicable to all organisms without genomes, but this is not directly tested. While the approach is validated for squid and shows appropriate negative results for mammals with genomes, its performance in other non-model organisms with potentially different editing patterns, transcriptome complexity, or polymorphism rates is unknown. The claim is reasonable but not empirically demonstrated.",
+    "result_type": "MINOR"
+  }
+]

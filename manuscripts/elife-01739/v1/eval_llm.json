@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors developed ABAleon FRET-based reporters for ABA with affinities in the 100-600 nM range. ABAleon1.1 has a K'd of ~300 nM and dynamic range of ~15%, while ABAleon2.1 has a K'd of ~100 nM and dynamic range of ~9%. ABAleon2.1 contains an ABI1D413L mutation that eliminates phosphatase activity while maintaining ABA-responsive FRET changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide direct in vitro measurements of ABAleon properties including affinity, dynamic range, kinetics, and phosphatase activity (Figure 1). The design is structurally informed (C2) and control experiments (C53, C54) demonstrate specificity and pH stability. The data are internally consistent and well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ABAleon2.1 reports ABA concentration differences in distinct cell types and tissues in Arabidopsis. Guard cells show high basal ABA levels (low emission ratios), while roots show tissue-specific differences. Time-resolved imaging reveals simultaneous ABA uptake in guard cells and roots, but delayed wave-like transport in the hypocotyl. Controls with empty FRET cassette and solvent show no response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41, C55-C62 provide direct imaging evidence from multiple tissues (Figure 2, 3). The wave-like transport observation (C59) is supported by time-resolved data and Video 1. Appropriate controls (C60, C61) validate specificity. The correlation with pRAB18-GFP expression (C55, C56) provides independent validation of high guard cell ABA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "ABAleon2.1 detects endogenous ABA concentration increases in guard cells in response to low humidity (15 min) and NaCl treatment (4 h), but not to osmotic stress (sorbitol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are directly measured from experiments in Figure 9A-D with appropriate replication (n=3 with \u226524 guard cells). The differential response to NaCl vs sorbitol is interesting and well-documented. The 15-min humidity response is consistent with published literature on rapid ABA changes in guard cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41"
+    ],
+    "result": "ABAleon2.1 reports ABA concentration increases in roots in response to both NaCl and osmotic stress (sorbitol), with differential responses in root maturation vs elongation zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 provide quantitative measurements from two distinct root zones (Figure 9E-H) with adequate replication (n=8-10 seedlings). The tissue-specific differences in response magnitude are clearly documented. Unlike guard cells, roots respond to both NaCl and sorbitol, suggesting tissue-specific ABA regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C43",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "ABAleon2.1 visualizes directional ABA transport from shoot to root at ~16 \u03bcm/min in the hypocotyl. Root-to-shoot transport was not detected within 3 hours under the experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C65-C67 are supported by long-distance transport experiments (Figure 6) with appropriate chamber isolation and controls (Figure 6\u2014supplement 1). The calculated transport rate (C42) is derived from fitted curves with error estimates (16.4 \u00b1 0.8 \u03bcm/min, n=3). The lack of root-to-shoot transport (C43, C66) is appropriately qualified as being under imposed conditions that may affect transpiration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "High ABAleon2.1 expression causes ABA hyposensitivity in seed germination and seedling growth assays, with the degree of hyposensitivity correlating with expression levels. This effect is not observed in stomatal closure assays. The authors speculate this may be due to ABA sequestration by the high-affinity reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are demonstrated by comparing two ABAleon2.1 lines with different expression levels to controls (Figure 5). The correlation between expression and hyposensitivity is clear. The tissue-specific effect (no impact on stomatal closure, C44) is interesting. The sequestration hypothesis (C79) is reasonable speculation given the lack of phosphatase activity (C36) and high affinity, though direct evidence is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C80",
+      "C81"
+    ],
+    "result": "ABA-induced ABAleon2.1 responses are accelerated in the pyr1-1/pyl1-1/pyl2-1/pyl4-1 quadruple mutant, with half-saturation reached in 7 min vs 16 min in wild-type. The authors speculate this may reflect compensatory upregulation of ABA levels or transport, or altered ABA buffering capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are directly measured from fitted curves (Figure 4) with adequate replication (n=4). The accelerated response is surprising and well-documented. However, the mechanistic explanations (C80, C81) are speculative. The observation is robust but the interpretation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mutations in PYR1 modulate ABAleon ABA affinity and stereospecificity. ABAleon2.13 (PYR1V83H) has reduced affinity (~3-4 \u03bcM), while ABAleon2.15 (PYR1H115A) has intermediate affinity (~600 nM) and 50-fold reduced affinity for (-)-ABA vs (+)-ABA, suggesting PYR1H115 is important for stereospecificity. ABAleon2.15 is identified as the best low-affinity reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by systematic in vitro characterization (Figure 7, Table 1) and in planta validation (Figure 8). The stereospecificity finding (C50-C51) is particularly interesting and consistent with published work on PYL3 (C74). The conclusion that ABAleon2.15 is the best low-affinity reporter (C52) is justified by the data showing good dynamic range and appropriate affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ABAleons were designed using PYR1 and close relatives that require ABA for PP2C interaction, rather than monomeric PYR/PYL/RCARs that can interact with PP2Cs without ABA. The resulting ABAleons have affinities (100-600 nM) similar to endogenous receptor-PP2C complexes (20-125 nM) and can detect endogenous ABA changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 explain the design rationale with appropriate citations. The affinity comparison (C70-C71) is supported by both literature values and the demonstration that ABAleon2.1 detects endogenous ABA changes (Figure 9). This design choice is well-justified and validated by the functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The introduction establishes the biological context for ABA signaling, including its role in plant stress responses, synthesis, catabolism, transport, and the molecular mechanism of ABA perception through PYR/PYL/RCAR receptors and PP2C phosphatases. The authors identify gaps in direct, time-resolved measurements of ABA distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C30 are background knowledge supported by extensive citations to published literature. These establish the scientific context and identify the gap (C12, C18, C22) that the current work addresses. The structural information (C27-C30) provides the basis for the ABAleon design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The discussion contextualizes ABAleon properties relative to published ABA measurements and other reporters. Estimated cellular ABA concentrations (~500 nM in unstressed guard cells, ~15 \u03bcM in stressed) are consistent with ABAleon responses. The authors acknowledge concurrent development of ABACUS reporters and suggest complementary applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 provide literature context for interpreting ABAleon data, with appropriate citations. The extrapolation of guard cell ABA concentration (C89) is reasonable but acknowledged as approximate. The acknowledgment of ABACUS (C91) and suggestion of complementary use (C92) is appropriate scholarly practice.",
+    "result_type": "MINOR"
+  }
+]

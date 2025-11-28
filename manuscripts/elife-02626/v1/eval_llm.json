@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "ChIP-seq was performed for four liver-enriched transcription factors (HNF4A, CEBPA, ONECUT1, FOXA1) in five mammalian species using validated antibodies. The binding motifs for these TFs were virtually identical across species and occurred close to ChIP-seq binding summits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the experimental methodology and quality controls. The antibodies were validated in prior studies (C2), motifs were conserved across species (C3), and positioned near binding summits as expected (C4). These foundational claims are well-supported by the data and citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10"
+    ],
+    "result": "Only a minority of TF binding events and CRMs are shared between species at orthologous locations. Between 21-37% of human TF binding events are found in macaque, 21-31% between mouse and rat. Similarly, only ~35% of human CRMs are shared with macaque and ~32% of mouse CRMs with rat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C9-C10 consistently demonstrate rapid turnover of TF binding across species with specific percentages provided. The data shows low conservation rates even between closely related species (human-macaque, mouse-rat), supported by figures and consistent with prior work cited (C5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C81"
+    ],
+    "result": "Approximately two-thirds of human liver TF binding events were incorporated into CRMs using summit-based clustering with a 300 bp distance threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C81 report that ~2/3 of TF binding events fall into CRMs, with the remainder as singletons. This is a straightforward quantitative result supported by the clustering methodology described and shown in figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "CRMs containing all four TFs show higher conservation rates across species (53% human-macaque shared) compared to CRMs with fewer TFs, indicating increased selection pressure on higher-order combinatorial TF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 demonstrate that CRMs with all four TFs are more conserved (C12: 53% vs ~35% overall), and interpret this as evidence of selection pressure (C13). The quantitative data supports the observation, though the inference about selection pressure, while reasonable, is interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Shared TF binding events are significantly enriched in CRMs compared to singletons (72% vs 27%, p=8.48\u00d710\u207b\u00b2\u00b3\u2078), and previously identified conserved CEBPA binding sites predominantly fall within CRMs identified in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 show strong statistical enrichment of shared binding in CRMs with highly significant p-values (C14). The validation against prior data (C17: 32/35 sites) provides independent support for the CRM identification approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "CRMs are enriched for their respective TF binding motifs and other liver TF motifs, and show significant overlap with ENCODE data. Deeply shared CRMs show higher fold enrichment than human-only CRMs for ENCODE datasets including SP1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 demonstrate motif enrichment in CRMs and validation against ENCODE data with specific p-values and fold enrichments provided. The higher enrichment in deeply shared CRMs (C21) supports their functional relevance. Citation of prior work on SP1-HNF4A cooperation (C24) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Shared CRMs show enrichment for liver-related biological pathways and diseases (liver disease q=4.53\u00d710\u207b\u00b9\u00b3\u2070, lipid metabolism q=2.96\u00d710\u207b\u2077\u00b3), while human-only CRMs enrich for xenobiotic metabolism pathways, suggesting evolutionary filtering can identify both conserved and species-specific functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 present functional enrichment analyses with highly significant q-values. The contrast between shared CRMs (liver-specific pathways) and human-only CRMs (xenobiotic metabolism) is well-supported. The interpretation about evolutionary filtering (C30) is reasonable given the species-specificity of xenobiotic metabolism cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Singleton TF binding events show enrichment for their own motif but not other TFs' motifs, and show strongest association with their corresponding TF in ENCODE data. HNF4A singletons show enrichment for FOX family motifs and weak FOXA1 ChIP-seq signal, consistent with motif similarity and prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 characterize singletons as distinct from CRMs in their motif content and binding patterns. The observation of weak FOXA1 signal at HNF4A sites (C35) with motif similarity (C36) and citation of supporting work (C37) provides converging evidence for this relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Singleton TF binding sites have a significantly higher fraction of high-quality motifs compared to CRMs (56% vs 33% at stringent cutoff), consistent with findings that active chromatin states are depleted of regulatory motif instances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 report a counterintuitive finding that singletons have higher quality motifs than CRMs, with specific percentages provided. This is supported by citation of ENCODE analysis (C41) showing similar patterns, lending credibility to the observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Shared singleton TF binding events show high DNA constraint and are enriched near transcription start sites compared to equivalently shared CRMs, but show fewer and less liver-specific functional enrichments than shared CRMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 characterize shared singletons as having distinct genomic properties (high constraint, TSS proximity) but weaker functional enrichments than CRMs. The lack of liver-specific enrichments (C45-C46) with cancer enrichments instead (C47) is clearly stated with q-values provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Genes near shared CRMs show significantly higher expression than genes near shared singletons (p=2.4\u00d710\u207b\u00b9\u2076), while human-specific singletons and CRMs show no expression difference. Deeply shared CRMs are associated with highly expressed, liver-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 demonstrate differential gene expression associations with highly significant p-values. The contrast between shared vs. human-specific categories and CRMs vs. singletons is well-supported by RNA-seq data. The conclusion about liver-specific expression (C50) is supported by multi-tissue analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Using evolutionary conservation as a filter, shared CRMs give an increased number of significant enrichments compared to peak intensity-ranked CRMs, with enrichments related to liver metabolic processes and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 demonstrate that evolutionary filtering outperforms intensity-based ranking for functional enrichment. This is a key methodological finding showing the value of comparative genomics over simple peak calling metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Liver-related GWAS lead SNPs are enriched near Deeply shared CRMs, including liver (p=8.38\u00d710\u207b\u2076, 3.7-fold), blood lipid (p=9.68\u00d710\u207b\u2075, 3.3-fold), and drug response (p=1.43\u00d710\u207b\u2074, 5.1-fold) categories. Results are consistent using linkage disequilibrium windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 show significant enrichment of disease-associated SNPs near conserved CRMs with specific p-values and fold enrichments. The consistency across different window definitions (\u00b12.5kb vs LD-based) strengthens the findings. Statistical significance is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Analysis of specific disease traits revealed 11 traits enriched for Deeply shared CRMs using LD windows, while only LDL cholesterol was significant using 2.5kb windows, demonstrating the importance of LD-based analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 show that LD-based analysis is more sensitive than fixed windows for detecting disease trait enrichments. The specific numbers (11 traits vs 1) with reference to Table 1 support this methodological point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Of 1020 CRM/singleton regions near GWAS lead SNPs, 753 contained variants with 90% showing regulatory potential in RegulomeDB. 317 regions had conserved TF binding across species, making them candidates for functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 provide follow-up characterization of GWAS-associated regions using RegulomeDB. The high percentage showing regulatory potential (90%) validates the approach, and identification of conserved candidates (317) provides actionable targets for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "HepG2 super-enhancers were not enriched for liver-related GWAS SNPs, unlike shared CRMs in primary liver, possibly due to biological differences between primary tissue and cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 show a negative result comparing to super-enhancers, with speculation about tissue vs. cell line differences (C64). The negative finding strengthens the case for primary tissue analysis, though the explanation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "157 genes with regulatory mutations from HGMD overlapped ChIP-seq data, with 106 in CRMs. The 47 genes in Deeply shared CRMs were enriched for coagulation/complement factors (p=9.34\u00d710\u207b\u2076, 24-fold) and lipid homeostasis (p=6.93\u00d710\u207b\u2075, 36-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 demonstrate enrichment of known disease genes in conserved CRMs with highly significant p-values and large fold enrichments. The use of curated HGMD data provides validation that conserved CRMs harbor functionally important regulatory variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Multiple disease-causing regulatory mutations were found in CRMs at promoters of seven coagulation genes (FGA, FGB, F7, F9, F10, F11, F12). Mutations occur at critical positions in TF binding motifs, with specific examples at F7 and F9 promoters validated by prior functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 provide detailed examples of disease mutations in conserved CRMs with extensive citation of prior functional validation studies. The convergence of conservation, motif disruption, and known disease phenotypes provides strong support for the functional importance of these CRMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C89",
+      "C92",
+      "C93"
+    ],
+    "result": "Genomic regions with shared combinatorial TF binding are enriched for essential biological pathways, GWAS variants for complex traits, and rare disease mutations in a tissue-specific manner. This suggests shared combinatorial binding can help identify pathologically significant regulatory variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C89, C92-C93 summarize the main conclusions of the study. These are well-supported by the multiple lines of evidence presented: pathway enrichments, GWAS enrichments, and disease mutation analyses all converge on the functional importance of conserved combinatorial binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The percentage of shared CRMs between species (~35% human-macaque, ~34% mouse-rat) is considerably lower than sequence identity (~90% and ~93% respectively), indicating rapid regulatory evolution despite high sequence conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 make an important comparison showing that CRM conservation is much lower than sequence conservation. This is well-supported by citations and highlights the rapid evolution of regulatory regions even in highly similar genomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Deeply shared CRMs showed the highest overlap (~30%) with EnhancerFinder predictions compared to other phylogenetic categories, validating the functional relevance of deeply conserved combinatorial binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 provides external validation by comparing to computational enhancer predictions. The highest overlap with deeply shared CRMs supports their functional importance, though 30% overlap suggests complementary rather than identical approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The cancer-associated SNP rs2279744 in MDM2 intron 1, which enhances SP1 binding and lacks a clear mouse ortholog, overlaps a Deeply shared HNF4A singleton in this study, illustrating that conserved singleton binding can also mark functionally important variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 provide a specific example where a singleton (not CRM) marks a known functional variant. This is well-supported by citations and demonstrates that the filtering approach should not exclude all singletons, adding nuance to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Conserved CRMs were found near coagulation and complement system genes, and the interplay between these systems is well-established. The results suggest their liver gene expression is coordinated by conserved cis-regulatory modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 identify conserved CRMs near functionally related gene sets. The interpretation about coordinated regulation (C92) is reasonable given the known biological relationship (C91), though direct evidence of coordination would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The liver is relatively homogeneous (~75% hepatocytes) and the four TFs studied (HNF4A, CEBPA, ONECUT1, FOXA1) are required for liver specification and work together to drive liver-specific function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 provide background justification for the experimental system with appropriate citations. These establish why liver is a good model tissue and why these particular TFs were chosen, supporting the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Most disease mutations in Deeply shared CRMs from HGMD are near TSS, but since most TF binding occurs distally, many more regulatory mutations affecting long-range interactions likely remain to be discovered. Disruption of conserved TF binding is expected to have pathological consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 make valid observations about the current data, but C99-C100 are speculative predictions about undiscovered mutations and future findings. While reasonable hypotheses, these lack direct supporting evidence and represent future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

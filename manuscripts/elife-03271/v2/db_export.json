@@ -1,0 +1,2242 @@
+{
+  "submission": {
+    "id": "d4e252d4-2a74-48d9-acd8-c557c7c5a0df",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:38:00.427104Z",
+    "updated_at": "2025-11-28T21:38:00.427104Z"
+  },
+  "content": [
+    {
+      "id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "submission_id": "d4e252d4-2a74-48d9-acd8-c557c7c5a0df",
+      "content_type": "manuscript",
+      "content_text": "# Irreversible fate commitment in the Arabidopsis stomatal lineage requires a FAMA and RETINOBLASTOMA-RELATED module\n\n## Authors\n\n- Juliana L Matos<sup>1</sup> ([ORCID: 0000-0001-9347-304X](https://orcid.org/0000-0001-9347-304X))\n- On Sun Lau<sup>1</sup> ([ORCID: 0000-0002-8121-235X](https://orcid.org/0000-0002-8121-235X))\n- Charles Hachez<sup>1</sup>\n- Alfredo Cruz-Ram\u00edrez<sup>2</sup>\n- Ben Scheres<sup>2</sup>\n- Dominique C Bergmann<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biology Stanford University Stanford United States\n2. Department of Molecular Genetics Utrecht University Utrecht Netherlands\n3. Howard Hughes Medical Institute, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe presumed totipotency of plant cells leads to questions about how specific stem cell lineages and terminal fates could be established. In the Arabidopsis stomatal lineage, a transient self-renewing phase creates precursors that differentiate into one of two epidermal cell types, guard cells or pavement cells. We found that irreversible differentiation of guard cells involves RETINOBLASTOMA-RELATED (RBR) recruitment to regulatory regions of master regulators of stomatal initiation, facilitated through interaction with a terminal stomatal lineage transcription factor, FAMA. Disrupting physical interactions between FAMA and RBR preferentially reveals the role of RBR in enforcing fate commitment over its role in cell-cycle control in this developmental context. Analysis of the phenotypes linked to the modulation of FAMA and RBR sheds new light on the way iterative divisions and terminal differentiation are coordinately regulated in a plant stem-cell lineage.\n\n## Introduction\n\nPlants exhibit remarkable developmental plasticity and their cells are typically considered totipotent, in that a complete plant can be regenerated from nearly any isolated individual cell. In intact plants, however, distinct cell lineages emerge and terminal fates are stable. A prime example of a specialized lineage is in the Arabidopsis leaf epidermis (Figure 1A) where asymmetric divisions of protodermal cells generate meristemoid mother cells (MMC) and meristemoids (M), self-renewing cells akin to transit amplifying cells in mammalian stem cell lineages (Lau and Bergmann, 2012; Pillitteri and Dong, 2013). At the end of their renewing stages, these meristemoids differentiate into guard mother cells (GMCs), which undergo a single symmetric division to generate the paired guard cells (GCs) of the mature stomata. GCs and each of the intermediate stages leading to their formation are characterized by distinct morphologies and unique gene expression profiles, allowing experimental dissection of lineage progression in intact, developing organs (Lau and Bergmann, 2012; Pillitteri and Dong, 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of key stages in stomatal development mediated by bHLHs SPCH, MUTE and FAMA. Cell types are labeled as: meristemoid mother cell (MMC), meristemoid (M), stomatal lineage ground cell (SLGC), guard mother cell (GMC), guard cell (GC), pavement cell (PC). (B and C) Expression of FAMA and RBR in GMCs and GCs. Confocal images of 5-days post germination (dpg) cotyledon of FAMAp:GFP-FAMA (B, in green) and RBRp:RBR-CFP (C, in green). Inset in (B) is a fama mutant GMC at 10-dpg. Cell outlines (purple) were visualized with propidium iodide. (D and E) Reduction in RBR level leads to extra divisions in GCs. Confocal images of a co-suppressed RBRp:RBR-CFP line (D) and FAMAp:amiRBR expressing a CDKA1;1 reporter (green) (E). Yellow arrowheads in (D) indicate ectopic cell divisions. Cell outlines (white) were visualized with propidium iodide. (F) ClustalW2-based protein alignment of the LxCxE motif among FAMA relatives. (G and H) FAMA interacts with RBR in vivo and in vitro through its LxCxE motif. Representative images (G, left) and quantified data (G, right; rep: replicate) of Bimolecular Fluorescence Complementation (BIFC) analysis between FAMA and RBR. Pairs of CYCD/CYCDLGK-RBR and FAMA-bHLH93 (Ohashi-Ito and Bergmann, 2006) were used as controls. (H) Yeast two-hybrid interaction assays between FAMA and RBR. (I) Complementation of seedling lethality in fama mutants by FAMALGK (FAMAp:FAMALGK; fama). (J\u2013L) Diversity of GC defects in adaxial cotyledon epidermis of 12-dpg FAMALGK. DIC images of a mature GC showing strong phenotype (J, false red colors indicate different GC units within another) and a broader view of GCs with different defects (K). Key: ectopic asymmetric divisions (arrowheads), new GC units (asterisks), properly spaced divisions and GC units (brackets). Inset shows a lobed GC. (L) Quantitation of different classes of GC defects (cartoons on Y-axis) in FAMALGK at 6, 9 and 12-dpg. Bars represent the percentages of each class over all GCs on adaxial cotyledons. All images are at the same magnification (including insets in B and K). Scale bar, 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Reduction of RBR levels under the FAMA promoter (FAMAp:amiRBR) drives ectopic cells divisions exclusively in guard cells (black arrowheads). (B\u2013C) Expression pattern of YFP-tagged FAMALGK (FAMAp:FAMALGK-YFP, green) rescuing the fama mutant is indistinguishable from the wild type in guard cells (GCs) of 6-dpg cotyledons; it first appears in GMCs (single green nuclei), persists into young GCs (pairs of green nuclei), but disappears before GCs mature and make full pores. (D) When ectopic GCs divisions appear, FAMALGK-YFP is absent from most divisions but only appears in cells (top left) that are likely new GMCs based on morphology. Cell outlines (purple) were visualized with propidium iodide. Scale bar in A, 50 \u03bcm, scale bars in B\u2013D, 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) DIC images of distinguishable phenotypic defects in GCs in FAMALGK plants (FAMAp:FAMALGK; fama). For quantification analysis, 13 distinct phenotypes (1\u201313) were identified at appreciable frequencies and grouped into 5 phenotypic classes (box). (B) GC defects of a second, independent FAMALGK line from the one characterized in Figure 1L at 6, 9 and 12-dpg; note similar results between the two lines. Cartoons of GCs on the Y-axis indicate the 5 phenotypic classes scored. Bars represent the average percentages of each phenotypic class over total number of GCs (\u00b1 SEM) in 0.320 mm\u22122 DIC images of adaxial cotyledons at the indicated age.\n\nThe basic helix-loop-helix (bHLH) transcription factor FAMA is a master regulator of guard cell identity; it is necessary and sufficient for GC fate acquisition and its epidermal expression is limited to GMCs and young GCs (Ohashi-Ito and Bergmann, 2006) and (Figure 1B). GMCs are made in fama mutants, but they fail to progress into GCs and instead continue dividing while maintaining expression of earlier fate markers (Ohashi-Ito and Bergmann, 2006) and (Figure 1B, inset); this failure to make GCs results in seedling lethality (Ohashi-Ito and Bergmann, 2006) and (Figure 1I). Overexpression of FAMA reprograms other cells into GC identity, while simultaneously repressing cell division to yield single-celled stomata (Ohashi-Ito and Bergmann, 2006). The mechanisms by which FAMA regulates cell division and terminal differentiation are not known, but FAMA's direct targets include cell cycle regulators and genes associated with mature guard cell function (Hachez et al., 2011). FAMA has been shown to act as a transcriptional activator (Ohashi-Ito and Bergmann, 2006) but can also participate in repression of certain cell cycle targets (Hachez et al., 2011). Here we show that FAMA is required for the irreversible differentiation of GCs and that it fulfills this role through recruitment of the Arabidopsis Retinoblastoma homologue, RETINOBLASTOMA-RELATED (RBR). Point mutations that disrupt FAMA-RBR interactions render FAMA capable of promoting initial GC identity, but unable to maintain commitment. By demonstrating FAMA-promoted binding of RBR to the regulatory regions of stomatal regulators whose genomic regions contain repressive chromatin marks, we define a molecular mechanism by which the ubiquitously expressed RBR is recruited to specific genomic contexts at specific times to regulate key developmental events.\n\n## Results\n\nRBR is broadly expressed in Arabidopsis development and reduction of RBR activity has been correlated with excess division and loss of cell identity in many different contexts, including the early stomatal lineage (Borghi et al., 2010). In the epidermis of actively dividing young leaves, RBRp:RBR-CFP (Cruz-Ramirez et al., 2012) is expressed in all cell nuclei; as the leaf matures, expression becomes restricted to stomatal lineage cells (Figure 1C). Mosaic co-suppression of the RBRp:RBR-CFP transgene leads to loss of fluorescence and concomitant excessive divisions in the CFP-minus sectors, suggesting that RBR represses cell divisions in both the early lineage and the terminally differentiated GCs (Figure 1D). To examine RBR's role specifically in the GCs, we drove expression of artificial microRNAs (amiRNAs) against RBR by the FAMA promoter. FAMAp:amiRNA-RBR GCs underwent inappropriate extra divisions oriented transverse to the long axis of the cells, while other epidermal cells were not affected, confirming a direct requirement for RBR in GCs (Figure 1E and Figure 1\u2014figure supplement 1A) and confirming phenotypes reported using different amiRNAs directed against RBR (Lee et al., 2014a).\n\nFAMA encodes a canonical RBR binding motif (LxCxE) (Burkhart and Sage, 2008) that is conserved among dicot FAMA orthologs, but not in FAMA's closest paralogs SPEECHLESS (SPCH) and MUTE (Figure 1F). LxCxE-dependent physical interaction between FAMA and RBR was tested by in planta Bimolecular Fluorescence Complementation (BiFC) (Figure 1G) and yeast two-hybrid (Figure 1H) assays. In both assays, WT FAMA, but not a version bearing point mutations changing the Cysteine (C) and Glutamate (E) in the LxCxE motif to Glycine (G) and Lysine (K) (FAMALGK) could interact with RBR. Importantly, FAMALGK could still interact with its dimerization partner bHLH93 (Ohashi-Ito and Bergmann, 2006) (Figure 1G), indicating that the FAMALGK variant maintains its overall structural integrity.\n\nWe then asked whether physical interaction with RBR was required for FAMA function in the context of normal leaf development. FAMAp:FAMALGK was tested for its ability to complement fama lethality and defects in GC differentiation, and FAMAp:FAMALGK-YFP was monitored to determine whether the LCE\u2192LGK modification altered FAMA's expression, stability or subcellular localization. In young cotyledons and leaves, FAMAp:FAMALGK-YFP was exclusively nuclear. Like G/YFP-tagged versions of FAMA published previously (Ohashi-Ito and Bergmann, 2006; Pillitteri et al., 2007; Lee et al., 2014a), FAMAp:FAMALGK-YFP is first apparent in GMCs, remains highly expressed as the GMCs undergo cell division, and is downregulated as GCs mature such that stomata with clearly defined pores express the protein at low levels or not at all (Figure 1B and Figure 1\u2014figure supplement 1B\u2013C). Plants of genotype fama;FAMApro:FAMALGK (hereafter referred to as FAMALGK plants) were recovered and were moderately healthy and fertile, though smaller than wild type, indicating that FAMALGK was sufficient to rescue fama lethality (Figure 1I). In the GCs of rescued FAMALGK plants, however, we observed excessive cell divisions, changes in cell morphology, and, most strikingly, production of paired GCs inside of existing GCs (Figure 1J\u2013L and Figure 1\u2014figure supplement 2, phenotypic classes 6\u201311).\n\nPhenotypes conferred by FAMALGK and by manipulating RBR in the late stomatal lineage both involved increased cell division, but were not identical. To improve phenotypic resolution, we characterized the expression patterns of cell fate and cell cycle markers in FAMALGK and FAMAp:amiRBR plants (Figure 2 and Figure 2\u2014figure supplement 1). This detailed analysis revealed clear phenotypic differences between reducing RBR levels in GMCs and reducing RBR's interaction with FAMA (Figure 2\u2014figure supplement 1A\u2013B). Notably, the FAMALGK phenotype results, not from chaotic or uncontrolled divisions and fate changes, but rather an orderly reiteration of stomatal lineage progression. This manifested itself as a progressive increase in phenotypic severity with age (Figure 1L) and by the appearance of stomatal lineage markers in patterns suggesting that the GCs reverted to MMC identity and proceeded through the intermediate stages of the pathway normally (Figure 2). Expression of stomatal-promoting transcription factors (SPCH, MUTE, FAMA, Figure 2A\u2013C and Figure 2\u2014figure supplement 2), stomatal-restricting signaling elements (TMM, EPF1, EPF2, Figure 3A\u2013D), and general division reporters (CDKA1;1, Figure 2B\u2013C) followed the normal temporal patterns, and ectopic GC divisions appeared to follow early lineage division rules. For example, when a \u2018reprogrammed\u2019 GC produced two stomata, they were separated by a non-stomatal cell, indicating that spacing divisions occurred. Distinct cell orientations characteristic of amplifying divisions were also visible (Figure 2B and Figure 2\u2014figure supplement 3). Further evidence for normal asymmetric divisions is polarized localization of BASL (Dong et al., 2009) in the larger daughter of a GC division (Figure 3E). Based on the lack of expression of stomatal lineage markers (Figure 2D), we interpret the lobed GCs we observe at low, but significant, frequencies in FAMALGK plants (Figure 1K, inset, and Figure 1L) as cells that are transdifferentiating into an epidermal pavement cell identity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig2-v2.jpg)\n\n**Figure 2.:** (A) Diagram of stages of stomatal development (abbreviated and color-coded as in Figure 1A) and expression window of bHLH transcription factors SPCH, MUTE and FAMA. (B) Characterization of GC defects in FAMALGK plants accompanied by key stomatal reporters. Wild type-looking GCs of FAMALGK plants re-iterate the stomatal developmental pathway, undergo further divisions and exhibit correct orderly expression of stage-specific stomatal regulators and cell cycle genes. Each column from left to right represents a stage in the progression of the stomatal lineage (abbreviated as in Figure 1A). Rows from top to bottom show expression patterns of plasma membrane (PM) marker (row 1), and reporters of SPCH (row 2, beige), MUTE (row 3, orange), FAMALGK (row 4, red) and CDKA1;1 (row 5). Images are of independent GCs of adaxial cotyledons at 6, 9 or 12-dpg. (C) Expression of each marker (rows 1 to 5) in GCs that underwent amplifying or spacing divisions. (D) Guard cells exhibiting pavement cell-like lobed growth with no divisions or expression of stomatal and cell cycle reporters. Cell outlines (purple) were visualized with propidium iodide or ML1p:mCherry-RCI2A. Autofluorescence of chloroplasts (blue spheres) may be visible in some images. All images are at the same magnification. Scale bar, 10 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) GUS staining of transcriptional reporters for cell cycle genes CDKB1;1 and CDC6 (rows) in WT Col (left column), amiRBR (middle), and FAMALGK plants (right column). Note that the pattern and levels of expression differ between the RBR knockdown line (amiRBR) and when the interaction between FAMA and RBR is disrupted (FAMALGK). In the amiRBR line, CDKB1;1 and CDC6 are strongly expressed in both GCs, each of which displays ectopic cell divisions (outline in left guard cell and arrowheads in the right guard cell). Broad expression of CDKB1;1 and CDC6 is consistent with RBR's function as a direct repressor of the transcription factor E2F and its cell cycle target genes required for the G1 to S-phase transition (Gutzat et al., 2012). In FAMALGK plants, however, CDKB1;1 and CDC6 are restricted to only some stomatal cell divisions (stars mark new GCs and arrows mark amplifying ACDs). Expression of CDKB1;1 and CDC6 are likely consequences of regulated cell divisions as the mutant GCs progress through the stomatal lineage. (B) Confocal images of stomatal lineage reporters in GCs of amiRBR. Cell outlines are visualized with propidium iodide (purple). Arrowheads correspond to ectopic cell divisions. Of the reporters tested, SPCH and MUTE are weakly and infrequently seen (<20% of GCs) and only in GCs with many ectopic divisions (green asterisks). TMM and EPF2, however, were not detectable. Small blue disks visible in these cells are chloroplasts. Scale bar, 10 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) Examples of MUTE expression in reprogrammed guard cells. MUTE expression always appears after an asymmetric division and before a symmetric division to create a new guard cell pair. (C\u2013D) Examples of SPCH expression. SPCH appears before divisions, persists after division in both daughters, but then becomes undetectable in one daughter (white arrowheads track expressing cells in C). SPCH expression has disappeared before cells undergo symmetric divisions to create the new guard cell pair. All images are from abaxial cotyledons placed in the timelapse imaging chamber at 6 days post germination. Time relative to first panel image in hours:minutes is indicated in the bottom right corner of each image. Because development is asynchronous, T0 is a different absolute time for each montage.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Diagram of three types of asymmetric cell division (ACD) in the stomata lineage. Entry division (black) of a meristemoid mother cell (MMC) initiates the lineage and results in the formation of a meristemoid (M) and a stomatal lineage ground cell (SLGC). Amplifying division (green) denotes a subsequent ACD of a meristemoid. Spacing division (blue) is the ACD of a SLGC, where the newly formed M is spaced away from existing M, guard mother cell (GMC) or guard cells (GCs). (B) GCs of FAMALGK plants re-enter the stomatal lineage and can undergo the three types of stomatal ACD. DIC images of GCs from FAMALGK plants illustrating the entry (black), amplifying (green) and spacing (blue) divisions and their subsequent progression in the lineage (left to right). Images were false colored to indicate MMC (light blue), M (beige), GMC (orange), GC (red).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig3-v2.jpg)\n\n**Figure 3.:** (A) Diagram of stages of stomatal development (abbreviated as in Figure 1A) and expression window of signaling and polarity regulators indicated as bars spanning lineage stages. Re-expression of TMMp:TMM-YFP (B), EPF1p:YFPnuc (C), EPF2p:YFPnuc (D), and BASLp:YFP-BASL (E) in GCs from adaxial cotyledons of 6-dpg FAMALGK seedlings. Arrowhead in (E) indicates the polarized crescent characteristic of BASL in asymmetrically dividing cells. Cell outlines (purple) were visualized with propidium iodide. Scale bar, 10 \u03bcm.\n\nIn FAMAp:amiRBR lines, by contrast, excessive GC division was accompanied by elevation of cell cycle gene expression throughout the GCs (CDKA1;1, Figure 1E , CDKB1;1 and CDC6, Figure 2\u2014figure supplement 1A), but only rarely by misexpression of early stomatal lineage markers (Figure 2\u2014figure supplement 2B). Consistent with gene expression behaviors, spacing and amplifying divisions were not seen in FAMAp:amiRBR cotyledon GCs at any appreciable frequency (<1/1000 GCs) in 6\u201312 day old plants. Expression of an additional copy of tagged RBR (RBR-CFP), however, does not alter divisions in the stomatal lineage; we observed neither arrested cells nor hyperproliferating cells (Figure 4A\u2013B). In FAMALGK plants, GCs that undergo extra divisions re-express RBR as would be expected from RBR's normal expression pattern in the early stomatal lineage (Figure 4C\u2013G).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig4-v2.jpg)\n\n**Figure 4.:** RBRp:RBR-CFP (green) is expressed in GMCs and young GCs, but expression in WT does not confer any guard cell phenotype at 6-dpg (A) or 12-dpg (B). Reprogrammed guard cells in FAMALGK plants re-express RBR in specific cells (green) as they recapitulate the stomatal development pathway and undergo precursor divisions. Meristemoid mother cell (MMC) and meristemoid (M) divisions (asterisks) captured at 6-dpg (C) and GMC and spacing asymmetric cell division (ACD) captured at 12-dpg (D\u2013G). Cell outlines in confocal images are visualized with propidium iodide (purple). Small disks visible in color in these cells are chloroplasts. Scale bar, 10 \u03bcm.\n\nExpression of early stomatal markers indicated that FAMALGK GCs re-acquired stomatal precursor identities, but did these cells return to an even earlier stem-cell or embryonic identity? Moreover, was a change in identity tied to failure of FAMALGK to activate its normal downstream targets? We addressed these questions by monitoring gene expression in isolated 12-dpg cotyledons of WT (Col) and FAMALGK plants (Figure 5A). Analysis of genes shown in Figures 2 and 3 to be inappropriately up-regulated in FAMALGK verified that a qRT-PCR-based approach could accurately assess gene expression changes (Figure 5A, bracket indicating stomatal precursor genes). There was a dramatic increase in expression levels for the stomatal precursor genes, but variable change in expression of mature GC genes, consistent with a situation in which the overproduction of GCs through repeated re-entry is balanced by the loss of identity of older GCs (Figure 5A, mature GC genes). FAMALGK was also still capable of up-regulating several, but not all, of the direct targets reported in (Hachez et al., 2011) (Figure 5A, FAMA direct targets). When expression of shoot meristem (SHOOT MERISTEMLESS, STM), root meristem (WUS HOMEOBOX, WOX5) or embryo genes (WOX9, WOX2, FUSCA3 (FUS3), LEC1) (Breuninger et al., 2008; De Smet et al., 2010) was monitored in FAMALGK plants, however, we found no evidence that cells were being reprogrammed into embryonic or other stem-cell-like fates (Figure 5A and Figure 5\u2014figure supplement 1). Taken together, the gene expression data indicate that disruption of FAMA-RBR interaction via the FAMALGK modification leads to a stomatal lineage-specific loss of terminal commitment.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig5-v2.jpg)\n\n**Figure 5.:** (A) Expression analysis in mature cotyledons (12-dpg) of FAMALGK and wild type (Col) by quantitative RT-PCR. Signals were normalized to ACTIN2 and then to Col. Values shown are means \u00b1 SEM. UD, undetected. Asterisks indicate significant difference (Student's t test, * p < 0.05). (B\u2013D) Binding of FAMA and RBR to regulatory regions of stomatal genes. ChIP assays were performed with FAMAp:FAMA-MYC in fama (B), FAMAp:RBR-MYC in Col (C), and FAMAp:RBR-MYC in FAMALGK (FAMAp:FAMALGK;fama) (D) using an anti-Myc antibody as in (Lau et al., 2014). ChIPed DNA was quantified by qPCR with primers specific to the indicated gene promoters or the negative control region, IR1 (Cruz-Ramirez et al., 2012). Input-adjusted signals were normalized to Col. Values are means \u00b1 SEM. (E) FAMA promoter-driven expression of SPCH in wild type is not sufficient to reprogram guard cells to FAMALGK phenotype. Confocal image of FAMAp:SPCH-YFP (green) in 12-dpg cotyledon visualized with propidium iodide (purple). Scale bar, 10 \u03bcm. (F) The stomatal lineage represents a stem-cell like lineage that is distinct from other stem-cell like compartments in the shoot, root or embryo. The FAMA-RBR module maintains terminal differentiation of guard cells (GCs) through repression of the early stomatal lineage genes, likely made permanent by chromatin modification. In FAMALGK plants, RBR is no longer recruited to SPCH and other stomatal lineage gene promoters allowing inappropriate re-expression of these genes and subsequent reiteration of the stomatal development pathway.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** RT-PCR reactions for RNA extracted from immature siliques of Arabidopsis. Target size of the amplified products is indicated in Supplementary file 1. Lanes: molecular weight DNA ladder (MW), independent RNA samples (1, 2, 3), negative controls (\u2212). Gel was stained with ethidium bromide.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Western detection of RBR-Myc in transgenic plants harboring the FAMAp:RBR-MYC construct in either Col (lines 1\u20134) or FAMALGK (lines 1\u20133) backgrounds. Total protein was extracted from 5-dpg seedlings of the indicated genotypes and probed with \u03b1-Myc antibody. Recombinant RBR-Myc has a calculated M.W. of 128.5 kDa. (B) In vivo pull-down assay of stomatal lineage expressed RBR-MYC from transgenic plants. Total soluble protein from Col and FAMAp:RBR-MYC (in Col) was incubated with an anti-Myc antibody. Precipitated samples were probed with the same antibody in Western analysis. IB: Immunoblot, IP: Immunoprecipitation. (C\u2013F) Confirmation that expression of FAMAp:RBR-MYC does not alter guard cell development. (C\u2013F) Confocal images of 6-dpg cotyledons and DIC images of 12-dpg cotyledons of wild type and FAMAp:RBR-MYC plants. Transgenic plants harboring the FAMAp:RBR-MYC construct (E\u2013F) do not exhibit changes in GC divisions (neither fewer, nor more divisions are found) and are indistinguishable from wild type (C\u2013D) at 6 and 12-dpg. Cell outlines (purple) in confocal images were visualized with propidium iodide. All images are at the same magnification. Scale bar, 10 \u03bcm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** ChIP assays were performed with FAMAp:FAMA-MYC in Col (A), FAMAp:RBR-MYC in Col (B), and FAMAp:RBR-MYC in FAMALGK plants (C) using an anti-Myc antibody as in (Lau et al., 2014). ChIPed DNA was quantified by qPCR with primers specific to the indicated gene promoters or the negative control region, IR1 or RB45 (Cruz-Ramirez et al., 2012) and (Weimer et al., 2012). Input-adjusted signals were normalized to Col. Values are means \u00b1 SEM.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03271/elife-03271-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A and D) Map of the SPCH (A) and EPF1 (D) loci. Arrow indicates orientation of the gene and the transcription start site. Genome coordinate is indicated above the gene structure. Black bars indicate genomic region probed by ChIP-qPCR assays. Key: U, upstream; P, promoter; D, downstream. (B, C, E and F) ChIP assays were performed with FAMAp:FAMA-MYC in fama (B and E) and FAMAp:RBR-MYC in Col (C and F), using an anti-Myc antibody as in (Lau et al., 2014). ChIPed DNA was quantified by qPCR with primers specific to the indicated genomic regions relative to SPCH (B and C) and EPF1 (E and F) or the negative control region, RB45 (Weimer et al., 2012). Input-adjusted signals were normalized to Col. Values are means \u00b1 SEM.\n\nBy what molecular mechanism might this specific loss of commitment take place? Analysis of chromatin states in maturing leaves revealed H3K27me3 (a chromatin mark associated with transcriptional repression) in the genomic regions of SPCH, MUTE, FAMA, EPF1 and other stomatal genes (Lafos et al., 2011), and a recent report showed that manipulation of a member of the POLYCOMB REPRESSIVE COMPLEX 2 (PRC2) can alter developmental regulation of H3K27me3 deposition at SPCH and MUTE loci (Lee et al., 2014b). Animal and plant Rb/RBR proteins can serve as interaction bridges between chromatin modifying enzymes and specific genomic contexts (Burkhart and Sage, 2008; Gutzat et al., 2012) and RBR was previously found to be associated with SPCH regulatory regions via ChIP in whole seedlings (Weimer et al., 2012). Therefore it is plausible that, as the final master regulator bHLH in the stomatal pathway, FAMA (with RBR) ensures terminal differentiation of GCs by facilitating stable repression of early stomatal lineage genes. To test this model, we assayed the co-association of FAMA and RBR with regulatory regions of three key stomatal lineage genes that have significant H3K27me3 coverage (SPCH, FAMA and EPF1) and, as specificity controls, two cell cycle genes known to be RBR targets (Nowack et al., 2012). Because RBR is essential and expressed in nearly all cells, to accurately assay its role as a potential partner of FAMA in the stomatal lineage, we generated a Myc-tagged version of RBR expressed under the FAMA promoter (FAMAp:RBR-MYC). We confirmed that expression of this transgene did not alter stomatal development and that we could effectively immunoprecipitate it from plants (Figure 5\u2014figure supplement 2). In ChIP assays, SPCH, FAMA and EPF1 were all targets of FAMA and of stomatal lineage-expressed RBR (Figure 5B\u2013C and Figure 5\u2014figure supplement 3). Further dissection of the binding regions at SPCH and EPF1 indicates that FAMA and RBR are enriched in the same pattern, suggesting that they bind as part of the same complex (Figure 5\u2014figure supplement 4). We then tested the key prediction of our model\u2013that association of RBR with a stomatal target gene is dependent on its interaction with FAMA. ChIPs of FAMAp:RBR-MYC in a FAMALGK background showed that RBR enrichment at the promoters of SPCH and FAMA, but not of the general RBR target gene PCNA, was significantly reduced (Figure 5D and Figure 5\u2014figure supplement 4), consistent with our recruitment model. RBR enrichment at the promoter of a negative regulator of stomatal development, EPF1, was more variable in our assays, sometimes showing little change (Figure 5D), but failing to associate with RBR in other replicates (Figure 5\u2014figure supplement 3C).\n\nThe association of FAMA and RBR with the SPCH locus is intriguing, as in normal development SPCH is required for initiation of the stomatal lineage and is essential for robust expression of all stomatal genes so far reported (MacAlister et al., 2007; Pillitteri et al., 2007; Kanaoka et al., 2008). In theory, failure of FAMALGK to stably repress SPCH expression could, by itself, be sufficient to reinitiate the stomatal lineage program. If this were true, ectopic expression of SPCH in GCs should recapitulate the FAMALGK phenotype. Expression of FAMAp:SPCH-YFP (or its hyperactive variants FAMAp:SPCH1-4A or FAMAp:SPCH2-4A [Lampard et al., 2008]) in an otherwise WT background, however, did not mimic FAMALGK (Figure 5E). This suggests that competence to reinitiate the stomatal pathway requires more than expression of a single \u2018trigger\u2019 gene, but rather a more generally permissive expression state, a fact supporting a broader chromatin regulating role for the FAMA-RBR complex (Figure 5F).\n\n## Discussion\n\nRecently, physical associations between RBR and the Arabidopsis transcription factor SCARECROW (SCR) were found to be essential for modulating stem-cell behavior in the root (Cruz-Ramirez et al., 2012, 2013). Both SCR and FAMA bind to RBR via an LxCxE motif, yet the consequences of these transcription factor/RBR interactions are different; RBR antagonizes SCR function in asymmetric division in the root stem cell compartment (Cruz-Ramirez et al., 2012, 2013), whereas RBR and FAMA have similar functions promoting differentiation at the terminal stage of stomatal development. Yet, while different RBR/transcription factor complexes may be customized for unique developmental contexts, the underlying molecular mechanisms of gene regulation might be similar. As with FAMA targets, RBR is required for repression of SCR target genes and can associate with their promoter regions, but there have been no experiments addressing whether disrupting association of SCR and RBR affects either proteins' chromatin association. In this study, we provide key data in support of a specific molecular mechanism for transcriptional repression utilizing RBR in combination with cell-type specific transcription factors: first, we demonstrate, through cell-type specific ChIPs, that RBR is associated with the promoter of the stomatal lineage initiator SPCH in cells as they are committing to terminal fates and second, we show that this binding is reduced when RBR's interaction with FAMA is disrupted. Thus, our data provide strong support for RBR being recruited by cell-type specific transcription factors to lead to transcriptional repression of their targets (Figure 5F).\n\nWe observed significant changes in RBR association with SPCH and FAMA regulatory regions in FAMALGK lines; however, RBR was still associated with the EPF1 locus in some experimental replicates. This could indicate that there are FAMA-independent ways to recruit RBR to this site, or that our FAMALGK manipulation does not eliminate all FAMA-RBR interactions in the endogenous complex. It is interesting, however, that EPF1 differs from SPCH and FAMA in being a repressor of stomatal development and thus alleviation of the repression of EPF1 would be expected to antagonize reprogramming to a stomatal precursor identity.\n\nThe role of PRC2 complex protein CURLY LEAF (CLF) was recently investigated in connection to stomatal lineage termination and was found to promote the accumulation of H3K27me3 marks on early stomatal lineage genes (Lee et al., 2014b). These data complement ours in connecting chromatin modification to stable acquisition of terminal cell identities in the stomatal lineage. Additionally, (Lee et al., 2014b) report phenotypes, similar to, but milder than those seen in FAMALGK, caused by prolonged expression of a C-terminal GFP-tagged version of FAMA (FAMAtrans). In a timepoint and tissue common to their data and this study (12 day old cotyledons), FAMALGK plants display reprogramming of \u223c80% guard cells (Figure 1L) compared with 10% of FAMAtrans. Lee et al. interpret reinitiation of divisions in guard cells as resulting from a gain of FAMA function, however, this interpretation is at odds with previously published data that FAMA overexpression limits cell division (Ohashi-Ito and Bergmann, 2006; Hachez et al., 2011) and is difficult to reconcile with most models of chromatin-mediated repression of transcription. In light of our data showing that a loss of a specific FAMA activity (RBR binding) produces strong lineage reprogramming, we think a more parsimonious explanation of the FAMAtrans-induced phenotype is that blocking of the FAMA C-terminus by addition of GFP creates a protein that dominantly interferes with FAMA-RBR interactions.\n\nBy independently manipulating RBR levels and RBR-FAMA interactions in terminally differentiating GCs, we could uncouple division and fate modulating roles of RBR. Notably, depletion of RBR in many contexts leads to hyperproliferation and derepression of cell cycle promoting genes (Figure 1E and Figure 2\u2014figure supplement 1 and Borghi et al., 2010; Wachsman et al., 2011; Weimer et al., 2012). This is in contrast to phenotypes that dominate when its association with FAMA is disrupted; namely that specific cell fates and division behaviors and their accompanying gene expression patterns re-emerge in an orderly pattern. RBRp:RBR-CFP itself becomes ectopically expressed in re-dividing FAMALGK GCs. Were RBR to be playing its cell-cycle repressive role in this context, one would expect this ectopic expression might completely halt divisions. That the opposite occurs, however, suggests a qualitatively different role for RBR in combination with FAMA in these cells. Because RBR is expressed in all cells of the plant, it is difficult to measure whether our cell-type specific amiRNA completely eliminated RBR in guard cells, but our data suggest that RBR's cell-cycle repression activity is more sensitive to dosage than its activity modulating stomatal gene expression. Only by retaining RBR levels but disrupting the FAMA-dependent activity was a clear role for RBR in terminal differentiation unmasked.\n\nIn the balance between proliferation and differentiation, between developmental flexibility and robust fate commitment, several decades of cell culture and animal genetic knockout studies have placed Rb family proteins in key, if disputed, roles (Chinnam and Goodrich, 2011; Gu et al., 1993; Sage, 2012). Regulation of the stomatal lineage can parallel that of stem cell populations in animals at cellular, developmental and molecular levels. Both plant stomatal and mammalian myogenic lineages, for example, employ series of paralogous bHLHs during fate specification and differentiation, and activities of these bHLHs are regulated through conserved upstream kinases and by association with Rb/RBR (reviewed in Matos and Bergmann, 2014). Bound by immobile cell walls, stomatal lineage cells leave a record of their fate and division history in their marker expression and spatial arrangement on the leaf surface. This plant model, therefore, provides a unique opportunity to dissect cell division and cell fate activities of Rb and other conserved proteins during programming and reprogramming and is a powerful comparative system for future discoveries of fundamental regulatory mechanisms of stem cell initiation, maintenance and termination.\n\n## Materials and methods\n\n### Plant material and growth conditions\n\nArabidopsis thaliana Columbia-0 (Col) was used as wild type in all experiments. All mutants and transgenic lines tested are in this ecotype. The following previously described mutants and reporter lines were used in this study: fama-1 and FAMAp:GFP-FAMA (Ohashi-Ito and Bergmann, 2006); MUTEp:MUTE-GFP (Pillitteri et al., 2007); KAT1p:GUS (Nakamura et al., 1995); CDKB1;1p:GUS (Boudolf et al., 2004); CDC6p:GUS (Castellano et al., 2001), RBRp:RBR-CFP (Cruz-Ramirez et al., 2012) and CDKA;1p:YFP-DB (Jakoby et al., 2006). The CDKA;1 reporter contains a destruction box (DB) within the YFP fusion to ensure that reporter expression does not persist after a cell division. Versions of reporters previously published with different fluorescent proteins include: SPCHp:SPCH-YFP (MacAlister et al., 2007), TMMp:TMM-YFP (Nadeau and Sack, 2002), EPF2p:YFPnuc (Hara et al., 2009), EPF1p:YFPnuc (Hara et al., 2007), ML1p:mCherry-RCI2A (Roeder et al., 2010), and BASLp:YFP-BASL (Dong et al., 2009). Seedlings were grown on 0.5 Murashige and Skoog (MS) medium at 22\u00b0C under 16 hr-light/8 hr-dark cycles and were examined at the indicated time.\n\n### Vector construction and plant transformation\n\nThe FAMA promoter (2.5 kb, [Ohashi-Ito and Bergmann, 2006]) and full-length cDNAs of FAMA and RBR were cloned into Gateway compatible entry vectors, typically pENTR/D-TOPO (Life Technologies, Carlsbad, CA), to facilitate subsequent cloning into plant binary vectors. To mutate the LxCxE motif of FAMA to LxGxK, site directed mutagenesis was performed using the QuikChange II Kit (Agilent, Santa Clara, CA). Gateway entry vectors containing the FAMA promoter and FAMALGK cDNA were recombined into the plant binary destination vectors pHGY (Kubo et al., 2005) and pGWBI (Nakagawa et al., 2007) to generate YFP-tagged and untagged versions of FAMAp:FAMALGK, respectively. For the FAMAp:amiRBR construct, the artificial microRNA sequence was designed with the Web MicroRNA Designer platform (http://wmd3.weigelworld.org). The microRNA sequence was engineered using the pRS300 plasmid as template, and together with the FAMA promoter, was subcloned into the destination vector pGWBI (Nakagawa et al., 2007). The constructs FAMAp:FAMA-MYC and FAMAp:RBR-MYC were generated with the tripartite recombination of the plant binary vector R4pGWB419 (Nakagawa et al., 2008), with the Gateway entry clones of the FAMA promoter and cDNAs of FAMA or RBR. The constructs FAMAp:SPCH-YFP, FAMAp:SPCH1-4A and FAMAp:SPCH2-4A were generated with the plant binary vector R4pGWB430 (Nakagawa et al., 2008), the FAMA promoter and the respective SPCH coding sequences described in Lampard et al. (2008). Primer sequences used for each construct are provided in Supplementary file 1.\n\nTransgenic plants were generated by Agrobacterium\u2013mediated transformation (Clough, 2005) and transgenic seedlings were selected by growth on 0.5 MS plates supplemented with 50 mg/l hygromycin (pHGY and pGWB1 based constructs) or kanamycin 100 mg/l (pGWB419 and pGWB430 based constructs). The constructs FAMAp:FAMALGK and FAMAp:FAMALGK-YFP were transformed into the fama/+ segregating line and homozygous lines for fama (as detected by PCR genotyping) were recovered in subsequent generations. FAMAp:FAMALGK;fama\u2212/\u2212 is referred to as FAMALGK throughout the study. FAMAp:RBR-MYC was transformed into Col and FAMAp:FAMALGK-YFP;fama lines. All other constructs were transformed into Col.\n\n### Quantification of phenotypic defects in FAMALGK\n\nSeedlings from two independent and homozygous lines of FAMAp:FAMALGK;fama were collected at 6, 9 and 12 dpg. Samples were cleared in 7:1 ethanol:acetic acid, treated 30 min with 1 N potassium hydroxide, rinsed in water, and mounted in Hoyer's medium. Differential contrast interference (DIC) images were obtained from the middle region of adaxial epidermis of cotyledons at 20\u00d7 (0.32 mm\u22122 field of view) on a Leica DM2500 microscope. For quantification, 13 different guard cell phenotypes were counted and grouped into 5 classes (Figure 1L and Figure 1\u2014figure supplement 2). Results are shown as mean percentages of each phenotypic class divided by the total number of guard cells per field view \u00b1 SEM (n = 30).\n\n### Analysis of transcriptional and translational reporters\n\nTo analyze reporter expression in FAMALGK, FAMAp:amiRBR and fama, all transcriptional and translational reporters were introgressed into the mutant backgrounds and homozygous lines (as determined by PCR-based genotyping and segregation ratios) in subsequent generations were recovered for analysis. For confocal microscopy, images were taken with a Leica SP5 microscope and processed in ImageJ. Cell outlines were visualized by either 0.1 mg/ml propidium iodide in water (Molecular Probes, P3566) or the plasma membrane marker ML1p:mCherry-RCI2A. GUS staining of transcriptional reporters was performed as described in Scarpella et al. (2004) and seedlings were mounted in Hoyer's and visualized with DIC microscopy as described above.\n\n### Timelapse imaging\n\nAfter 6 days of growth on half strength MS media, seedlings were transferred to a sterilized perfusion chamber similar to that described in Robinson et al. (2011) for imaging on a Leica SP5 Confocal microscope. The chamber was perfused with \u00bc strength 0.75% (wt/vol) sucrose liquid MS growth media (pH 5.8) at a rate of 2 ml/hr. Z-stacks through the epidermis of the reporter lines were captured with Leica software every 20 min (SPCH) or 2 hr (MUTE) and then processed with Fiji/ImageJ (NIH).\n\n### Bimolecular Fluorescence Complementation (BiFC) assays\n\nFull-length ORFs with no stop codon of each test candidate (FAMA, FAMALGK, bHLH93, RBR, CYCD and CYCDLGK) were cloned into BiFC vectors (Walter et al., 2004) to generate fusion proteins with either N or C terminal half of the yellow fluorescence protein (YFP) fused to the C-terminus of the test candidate. FAMA and bHLH93 constructs were reported in (Ohashi-Ito and Bergmann, 2006). Assays were performed in Nicotiana benthamiana leaves as described in Ohashi-Ito and Bergmann (2006). BiFC signals were visualized on a Leica DM5000 fluorescence microscope and quantified as percentage of YFP-positive nuclei over total number of pavement cells in a field of view (centered on the injection site). Results from three experiments are presented in Figure 1G.\n\n### Yeast two-hybrid assays\n\nFull-length ORFs containing stop codons for each test candidate (FAMA, FAMALGK, bHLH93, BASL, RBR, CYCD, CYCDLGK) were cloned into pENTR/D-TOPO (Life Technologies) and then recombined into the yeast vectors pGADT7 (Clontech, Mountain View, CA) and pXDGATcy86 (Ding et al., 2007) Yeast stain AH109 was transformed using the Yeastmaker yeast transformation system (Clontech) according to manufacture's instructions. Pairwise interactions were tested based on growth complementation on nutritional selective media.\n\n### Quantitative RT-PCR\n\nCotyledons from 10 FAMALGK or Col seedlings were harvested at 12 dpg and RNA was extracted using the RNeasy plant mini kit (QIAGEN, Valencia, CA) with on-column DNAse digestion. 700 ng of total RNA was used for cDNA synthesis using oligo(dT) primers and the Supercript III First-strand cDNA synthesis kit (Life Technologies). qPCR reactions were performed on a CFX96 Real-Time PCR detection system (Bio-Rad) with the Ssofast EvaGreen Supermix (Bio-Rad, Hercules, CA). Three technical replicates were performed on each of two biological replicates. Expression values were normalized to the reference gene ACTIN2 using the \u0394CT method and relative expression of a target was calculated from the ratio of FAMALGK to Col. All data are presented as mean \u00b1 SEM. The significance of difference between the mean values was determined using two-tailed unpaired Student's t test. Statistical analysis was applied to normalized \u0394CT values. p < 0.05 was considered statistically significant. All calculations were performed using GraphPad Prism software. Primer sequences are listed in Supplementary file 1. Since expression of the embryonic genes WOX9, LEC1, FUS3 and the shoot apical meristem gene STM were not detectable in cotyledons of either Col nor FAMALGK, we confirmed that primers were functional by testing them in RT-PCRs with RNA from immature siliques, as described in Onate-Sanchez and Vicente-Carbajosa (2008). STM, WOX9, LEC1 and FUS3 were all detectable in these assays (Figure 5\u2014figure supplement 1).\n\n### Chromatin immunoprecipitation (ChIP) assays\n\nChIP experiments were carried out based on standard protocols (Gendrel et al., 2005) or with adaptations as described in Lau et al. (2014). Briefly, for ChIPs of FAMA, \u223c5 g of 5-day-old whole seedlings of FAMAp:FAMA-MYC (in Col or in fama) and Col (control) were used as starting materials. For ChIPs of RBR, \u223c25 g of 5-day-old whole seedlings of Col (control) and FAMAp:RBR-MYC in Col or in FAMApro::FAMALGK-YFP;fama were used in the assays. For RBR ChIP, input materials were processed in standard-sized aliquots during nuclei isolation and DNA fragmentation steps before combining for immunoprecipitation. Expression and pull-down of the cell-type specific RBR-Myc were verified by Western and immunoprecipitation experiments (Figure 5\u2014figure supplement 2A\u2013B). Chromatin was fragmented by a Bioruptor (Diagenode) programed at high intensity for 3 \u00d7 7.5 min (cycles of 30 s on and 30 s off) at 4\u00b0C. Immunoprecipitation was carried out with a monoclonal anti-Myc antibody (71D10; Cell Signaling Technology), followed by incubation with magnetic beads (Dynabeads Protein A; Invitrogen). ChIPed DNA was purified by the ChIP DNA Clean & Concentrator (Zymo). For real-time qPCR, reactions were performed using SsoFast EvaGreen or SsoAdvanced Universal SYBR Green Supermix (Bio-Rad), according to manufacturer's recommended conditions, with primers targeted to the indicated region of selected genes (Supplementary file 1) on a CFX96 Real-Time PCR detection system (Bio-Rad). CT values were obtained for sonicated chromatin taken before (input) and after immunoprecipitation (ChIP). Three technical replicates were assayed for each sample. CT values for ChIP DNA were normalized to mean of CT values for input DNA (CT ChIP\u2014\u03bcCT Input). Fold enrichment was calculated by dividing the normalized value of Myc-tagged with that of untagged Col. All data are presented as mean \u00b1 SEM. Two biological replicates were assayed for each ChIP-qPCR experiment.\n",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "0a950940-41d8-4812-a67d-8ccfa473dfe7",
+      "submission_id": "d4e252d4-2a74-48d9-acd8-c557c7c5a0df",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Amasino, University of Wisconsin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03271.018](https://doi.org/10.7554/eLife.03271.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cIrreversible fate commitment in the Arabidopsis stomatal lineage requires a FAMA and RETINOBLASTOMA-RELATED module\u201d for consideration at eLife. Your article has been favorably evaluated by Detlef Weigel (Senior editor), Richard Amasino (Reviewing editor), and 2 reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\n1) Regarding the ChIP experiments, it would be useful to do some further analyses at higher resolution. It is unclear if the target sites amplified by qPCR overlap for RBR and FAMA at the present resolution. Furthermore, an important control that should be done for at least a few of the target genes, is to generate ChIP data across several neighboring regions to ensure that the peak is real and decaying as expected.\n\n2) In addition, please show the results from at least two biological replicates (i.e., double the number of columns in the relevant histograms).\n\n3) Regarding the statistical treatment of the ChIP-qPCR data, rather than apply standard statistics to ratios (i.e., the normalized values), it is more appropriate to compare ratios in the ChIP-qPCR assays (tagged sample vs Col-0 control) by multiplying the standard errors of the individual results. (The errors seem small enough that the differences will hopefully still be significant, but it would be good to know that this is the case.) An ANOVA is also possible (with the CT values themselves) as is a linear regression with the Ct of the sample plotted against the Ct of the control to enable a determination of the correlation of the Ct of Col against the Ct of the control (and a p-value can be obtained for the linear regression).\n\n4) The arguments for the statement \u201cwe largely uncoupled division and fate modulating roles of RBR\u201d and the claim that cells do not return to an embryonic identity or earlier stem cell identity need to be more thoroughly discussed. Furthermore, the relatively easy experiment of evaluating TMO7 and WOX2 expression in marker lines to support the above statements ought to be done.\n\n5) It is important to note whether or not pRBR-RBR-CFP rescues the rbr null mutants.\n\n6) Regarding the claim that your data demonstrate the dosage sensitivity of RBR's cell-cycle repression activity, it is important to show that RBR levels are unaltered in FAMA-LGK mutants. Also, given the highly specific RBR accumulation pattern, qRT may not be sufficient to address this issue. Preferable, an RBR-reporter line would be used.\n\n7) Regarding the pFAMA-RBR-Myc line that is used for their lineage-specific ChIP, it is important to note whether or not expression of this construct affects stomatal development because differentiation appears to be highly dependent on RBR dosage.\n\n8) Regarding \u201cThese results reinforce parallels between stem-cell decisions in plants and animals at molecular and organizational levels...\u201d There are clearly parallels in how plants and animals organize stem cells, but it is not clear what mechanism in particular you have identified in this study that reinforces this idea. This part should be further developed or removed.\n",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cf5ba201-2996-4e0a-85a4-fa1926b367ac",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C1",
+      "claim": "Plant cells are typically considered totipotent, in that a complete plant can be regenerated from nearly any isolated individual cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants exhibit remarkable developmental plasticity and their cells are typically considered totipotent, in that a complete plant can be regenerated from nearly any isolated individual cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about plant cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "daf114d1-e2a5-46ca-a937-b17af4bc5df5",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C2",
+      "claim": "In intact plants, distinct cell lineages emerge and terminal fates are stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In intact plants, however, distinct cell lineages emerge and terminal fates are stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about plant development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d0cadff2-fdc6-430c-95ec-a79235055fa2",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C3",
+      "claim": "Asymmetric divisions of protodermal cells generate meristemoid mother cells (MMC) and meristemoids (M) in the Arabidopsis leaf epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "A prime example of a specialized lineage is in the Arabidopsis leaf epidermis (Figure 1A) where asymmetric divisions of protodermal cells generate meristemoid mother cells (MMC) and meristemoids (M), self-renewing cells akin to transit amplifying cells in mammalian stem cell lineages (Lau and Bergmann, 2012; Pillitteri and Dong, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous work and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "c860eb0d-a23b-4bbe-b01b-11f0986116b5",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C4",
+      "claim": "Meristemoids are self-renewing cells akin to transit amplifying cells in mammalian stem cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "A prime example of a specialized lineage is in the Arabidopsis leaf epidermis (Figure 1A) where asymmetric divisions of protodermal cells generate meristemoid mother cells (MMC) and meristemoids (M), self-renewing cells akin to transit amplifying cells in mammalian stem cell lineages (Lau and Bergmann, 2012; Pillitteri and Dong, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "a46c45ab-cabc-4f16-862c-5893e3dd020c",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C5",
+      "claim": "Meristemoids differentiate into guard mother cells (GMCs) at the end of their renewing stages.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of their renewing stages, these meristemoids differentiate into guard mother cells (GMCs), which undergo a single symmetric division to generate the paired guard cells (GCs) of the mature stomata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about stomatal development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "3d156ed1-6724-4f34-a985-43ccb4daec1b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C6",
+      "claim": "Guard mother cells undergo a single symmetric division to generate the paired guard cells of the mature stomata.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of their renewing stages, these meristemoids differentiate into guard mother cells (GMCs), which undergo a single symmetric division to generate the paired guard cells (GCs) of the mature stomata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about stomatal development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "181a68aa-9e40-44e4-b26a-40b74ec0b035",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C7",
+      "claim": "Guard cells and each of the intermediate stages leading to their formation are characterized by distinct morphologies and unique gene expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "GCs and each of the intermediate stages leading to their formation are characterized by distinct morphologies and unique gene expression profiles, allowing experimental dissection of lineage progression in intact, developing organs (Lau and Bergmann, 2012; Pillitteri and Dong, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "5ef3792c-ac43-4303-9f48-5f4348a86216",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C8",
+      "claim": "FAMA is a master regulator of guard cell identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic helix-loop-helix (bHLH) transcription factor FAMA is a master regulator of guard cell identity; it is necessary and sufficient for GC fate acquisition and its epidermal expression is limited to GMCs and young GCs (Ohashi-Ito and Bergmann, 2006) and (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "a1a30f17-bfcb-490d-9e36-6ff26f6b041f",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C9",
+      "claim": "FAMA is necessary and sufficient for guard cell fate acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic helix-loop-helix (bHLH) transcription factor FAMA is a master regulator of guard cell identity; it is necessary and sufficient for GC fate acquisition and its epidermal expression is limited to GMCs and young GCs (Ohashi-Ito and Bergmann, 2006) and (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "6daf504e-3ebd-4574-83dd-779e0cf6a500",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C10",
+      "claim": "FAMA epidermal expression is limited to GMCs and young GCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic helix-loop-helix (bHLH) transcription factor FAMA is a master regulator of guard cell identity; it is necessary and sufficient for GC fate acquisition and its epidermal expression is limited to GMCs and young GCs (Ohashi-Ito and Bergmann, 2006) and (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "cd462429-0c10-4505-ab23-ed822538f950",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C11",
+      "claim": "In fama mutants, GMCs are made but fail to progress into GCs and instead continue dividing while maintaining expression of earlier fate markers.",
+      "claim_type": "EXPLICIT",
+      "source": "GMCs are made in fama mutants, but they fail to progress into GCs and instead continue dividing while maintaining expression of earlier fate markers (Ohashi-Ito and Bergmann, 2006) and (Figure 1B, inset)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and shown in Figure 1B inset.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "e02f7b09-2cab-4bd7-af80-bd36661b08bb",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C12",
+      "claim": "Failure to make guard cells in fama mutants results in seedling lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "this failure to make GCs results in seedling lethality (Ohashi-Ito and Bergmann, 2006) and (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and shown in Figure 1I.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "20c2113d-e4a1-43d2-9a37-f853bee351dc",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C13",
+      "claim": "Overexpression of FAMA reprograms other cells into GC identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of FAMA reprograms other cells into GC identity, while simultaneously repressing cell division to yield single-celled stomata (Ohashi-Ito and Bergmann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "6d2d94aa-2084-4390-8890-d25f2656fa6d",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C14",
+      "claim": "Overexpression of FAMA represses cell division to yield single-celled stomata.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of FAMA reprograms other cells into GC identity, while simultaneously repressing cell division to yield single-celled stomata (Ohashi-Ito and Bergmann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "0e6e32cd-e577-42ec-8e3b-67161d4c435b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C15",
+      "claim": "FAMA's direct targets include cell cycle regulators and genes associated with mature guard cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMA's direct targets include cell cycle regulators and genes associated with mature guard cell function (Hachez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "785c71d2-c598-48bd-b8c5-c967811d0d00",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C16",
+      "claim": "FAMA has been shown to act as a transcriptional activator.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMA has been shown to act as a transcriptional activator (Ohashi-Ito and Bergmann, 2006) but can also participate in repression of certain cell cycle targets (Hachez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "7006bedb-bbd7-4bc3-80a7-47b625bd5319",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C17",
+      "claim": "FAMA can participate in repression of certain cell cycle targets.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMA has been shown to act as a transcriptional activator (Ohashi-Ito and Bergmann, 2006) but can also participate in repression of certain cell cycle targets (Hachez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "9cba3133-468a-4962-a267-fe246c11e14d",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C18",
+      "claim": "FAMA is required for the irreversible differentiation of guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that FAMA is required for the irreversible differentiation of GCs and that it fulfills this role through recruitment of the Arabidopsis Retinoblastoma homologue, RETINOBLASTOMA-RELATED (RBR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented throughout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d463eeb9-ca7a-4774-943d-f3e69f41dd46",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C19",
+      "claim": "FAMA fulfills its role in irreversible differentiation of guard cells through recruitment of RETINOBLASTOMA-RELATED (RBR).",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that FAMA is required for the irreversible differentiation of GCs and that it fulfills this role through recruitment of the Arabidopsis Retinoblastoma homologue, RETINOBLASTOMA-RELATED (RBR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented throughout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "fae7152d-6f9d-4a73-95b9-4aa6e77af7e3",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C20",
+      "claim": "Point mutations that disrupt FAMA-RBR interactions render FAMA capable of promoting initial GC identity, but unable to maintain commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutations that disrupt FAMA-RBR interactions render FAMA capable of promoting initial GC identity, but unable to maintain commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data with FAMALGK mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "4ca76a31-ebc6-472b-aa1d-dfb8de647f98",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C21",
+      "claim": "FAMA promotes binding of RBR to the regulatory regions of stomatal regulators whose genomic regions contain repressive chromatin marks.",
+      "claim_type": "EXPLICIT",
+      "source": "By demonstrating FAMA-promoted binding of RBR to the regulatory regions of stomatal regulators whose genomic regions contain repressive chromatin marks, we define a molecular mechanism by which the ubiquitously expressed RBR is recruited to specific genomic contexts at specific times to regulate key developmental events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by ChIP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "24ff20ad-3b25-409c-b53e-e7f238d3f078",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C22",
+      "claim": "RBR is broadly expressed in Arabidopsis development.",
+      "claim_type": "EXPLICIT",
+      "source": "RBR is broadly expressed in Arabidopsis development and reduction of RBR activity has been correlated with excess division and loss of cell identity in many different contexts, including the early stomatal lineage (Borghi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "a30c8be3-fd25-4360-ba67-02d4f30e159a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C23",
+      "claim": "Reduction of RBR activity has been correlated with excess division and loss of cell identity in many different contexts, including the early stomatal lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "RBR is broadly expressed in Arabidopsis development and reduction of RBR activity has been correlated with excess division and loss of cell identity in many different contexts, including the early stomatal lineage (Borghi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "fdf2e5f2-7b33-4dc3-8511-3b9304242602",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C24",
+      "claim": "In the epidermis of actively dividing young leaves, RBRp:RBR-CFP is expressed in all cell nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "In the epidermis of actively dividing young leaves, RBRp:RBR-CFP (Cruz-Ramirez et al., 2012) is expressed in all cell nuclei; as the leaf matures, expression becomes restricted to stomatal lineage cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and shown in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "3fe5462e-4df4-48c9-9b6c-fdeea8952a83",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C25",
+      "claim": "As the leaf matures, RBRp:RBR-CFP expression becomes restricted to stomatal lineage cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the epidermis of actively dividing young leaves, RBRp:RBR-CFP (Cruz-Ramirez et al., 2012) is expressed in all cell nuclei; as the leaf matures, expression becomes restricted to stomatal lineage cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "43d9f6b6-8908-4be5-b984-2764bf682cd4",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C26",
+      "claim": "Mosaic co-suppression of the RBRp:RBR-CFP transgene leads to loss of fluorescence and concomitant excessive divisions in the CFP-minus sectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosaic co-suppression of the RBRp:RBR-CFP transgene leads to loss of fluorescence and concomitant excessive divisions in the CFP-minus sectors, suggesting that RBR represses cell divisions in both the early lineage and the terminally differentiated GCs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "9d3d505b-7102-4dac-8362-2404af43cd29",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C27",
+      "claim": "RBR represses cell divisions in both the early lineage and the terminally differentiated guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosaic co-suppression of the RBRp:RBR-CFP transgene leads to loss of fluorescence and concomitant excessive divisions in the CFP-minus sectors, suggesting that RBR represses cell divisions in both the early lineage and the terminally differentiated GCs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the co-suppression data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "b5ddffff-7a4c-4429-a1a3-d66ec7689325",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C28",
+      "claim": "FAMAp:amiRNA-RBR guard cells underwent inappropriate extra divisions oriented transverse to the long axis of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine RBR's role specifically in the GCs, we drove expression of artificial microRNAs (amiRNAs) against RBR by the FAMA promoter. FAMAp:amiRNA-RBR GCs underwent inappropriate extra divisions oriented transverse to the long axis of the cells, while other epidermal cells were not affected, confirming a direct requirement for RBR in GCs (Figure 1E and Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "b20443b8-5e12-4f80-a41f-319bd1f73fd8",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C29",
+      "claim": "FAMAp:amiRNA-RBR does not affect other epidermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMAp:amiRNA-RBR GCs underwent inappropriate extra divisions oriented transverse to the long axis of the cells, while other epidermal cells were not affected, confirming a direct requirement for RBR in GCs (Figure 1E and Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "a9c1118b-582f-40a3-a23e-cb7cb63ce137",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C30",
+      "claim": "There is a direct requirement for RBR in guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMAp:amiRNA-RBR GCs underwent inappropriate extra divisions oriented transverse to the long axis of the cells, while other epidermal cells were not affected, confirming a direct requirement for RBR in GCs (Figure 1E and Figure 1\u2014figure supplement 1A) and confirming phenotypes reported using different amiRNAs directed against RBR (Lee et al., 2014a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 1E and Figure 1\u2014figure supplement 1A and by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d04539c3-fbc0-4f41-a10f-04d581e71125",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C31",
+      "claim": "FAMA encodes a canonical RBR binding motif (LxCxE).",
+      "claim_type": "EXPLICIT",
+      "source": "FAMA encodes a canonical RBR binding motif (LxCxE) (Burkhart and Sage, 2008) that is conserved among dicot FAMA orthologs, but not in FAMA's closest paralogs SPEECHLESS (SPCH) and MUTE (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and shown in Figure 1F.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "abb4dbce-244c-4703-8a46-8c8d69acaecc",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C32",
+      "claim": "The LxCxE motif is conserved among dicot FAMA orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMA encodes a canonical RBR binding motif (LxCxE) (Burkhart and Sage, 2008) that is conserved among dicot FAMA orthologs, but not in FAMA's closest paralogs SPEECHLESS (SPCH) and MUTE (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "8bbbcdb5-1093-415e-82ab-e783d9d3d44f",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C33",
+      "claim": "The LxCxE motif is not conserved in FAMA's closest paralogs SPEECHLESS (SPCH) and MUTE.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMA encodes a canonical RBR binding motif (LxCxE) (Burkhart and Sage, 2008) that is conserved among dicot FAMA orthologs, but not in FAMA's closest paralogs SPEECHLESS (SPCH) and MUTE (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "4c172e5c-ba04-4f5a-9368-ff2cbed98875",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C34",
+      "claim": "Wild-type FAMA can interact with RBR in BiFC assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In both assays, WT FAMA, but not a version bearing point mutations changing the Cysteine (C) and Glutamate (E) in the LxCxE motif to Glycine (G) and Lysine (K) (FAMALGK) could interact with RBR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in BiFC assays in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "7f6f7018-1b61-4818-9400-458fa8557e89",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C35",
+      "claim": "FAMALGK cannot interact with RBR in BiFC assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In both assays, WT FAMA, but not a version bearing point mutations changing the Cysteine (C) and Glutamate (E) in the LxCxE motif to Glycine (G) and Lysine (K) (FAMALGK) could interact with RBR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in BiFC assays in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "f09cee07-f59d-48dd-b398-68a01dc0576b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C36",
+      "claim": "Wild-type FAMA can interact with RBR in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In both assays, WT FAMA, but not a version bearing point mutations changing the Cysteine (C) and Glutamate (E) in the LxCxE motif to Glycine (G) and Lysine (K) (FAMALGK) could interact with RBR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in yeast two-hybrid assays in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "8c9f65a4-9c89-4640-86f2-5b2ad7e31cd1",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C37",
+      "claim": "FAMALGK cannot interact with RBR in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In both assays, WT FAMA, but not a version bearing point mutations changing the Cysteine (C) and Glutamate (E) in the LxCxE motif to Glycine (G) and Lysine (K) (FAMALGK) could interact with RBR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in yeast two-hybrid assays in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "ec5f1c1f-4069-4749-90db-06c63bde7952",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C38",
+      "claim": "FAMALGK can interact with its dimerization partner bHLH93.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, FAMALGK could still interact with its dimerization partner bHLH93 (Ohashi-Ito and Bergmann, 2006) (Figure 1G), indicating that the FAMALGK variant maintains its overall structural integrity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1G and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "9fcba1fe-d374-47eb-977b-bf6cc9bdc418",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C39",
+      "claim": "The FAMALGK variant maintains its overall structural integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, FAMALGK could still interact with its dimerization partner bHLH93 (Ohashi-Ito and Bergmann, 2006) (Figure 1G), indicating that the FAMALGK variant maintains its overall structural integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ability of FAMALGK to interact with bHLH93.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "b23440b4-435f-4b77-b0d9-f608b9e5e6fb",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C40",
+      "claim": "FAMAp:FAMALGK-YFP is exclusively nuclear in young cotyledons and leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "In young cotyledons and leaves, FAMAp:FAMALGK-YFP was exclusively nuclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d6a09246-374f-47a8-9dfa-7a9c15fbcf62",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C41",
+      "claim": "FAMAp:FAMALGK-YFP is first apparent in GMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Like G/YFP-tagged versions of FAMA published previously (Ohashi-Ito and Bergmann, 2006; Pillitteri et al., 2007; Lee et al., 2014a), FAMAp:FAMALGK-YFP is first apparent in GMCs, remains highly expressed as the GMCs undergo cell division, and is downregulated as GCs mature such that stomata with clearly defined pores express the protein at low levels or not at all (Figure 1B and Figure 1\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and Figure 1\u2014figure supplement 1B\u2013C and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "35b3771f-275d-497c-b35e-04c5dd8be39f",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C42",
+      "claim": "FAMAp:FAMALGK-YFP remains highly expressed as the GMCs undergo cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Like G/YFP-tagged versions of FAMA published previously (Ohashi-Ito and Bergmann, 2006; Pillitteri et al., 2007; Lee et al., 2014a), FAMAp:FAMALGK-YFP is first apparent in GMCs, remains highly expressed as the GMCs undergo cell division, and is downregulated as GCs mature such that stomata with clearly defined pores express the protein at low levels or not at all (Figure 1B and Figure 1\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and Figure 1\u2014figure supplement 1B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "ff729200-586b-4a56-ae51-4b3d102a188d",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C43",
+      "claim": "FAMAp:FAMALGK-YFP is downregulated as GCs mature such that stomata with clearly defined pores express the protein at low levels or not at all.",
+      "claim_type": "EXPLICIT",
+      "source": "Like G/YFP-tagged versions of FAMA published previously (Ohashi-Ito and Bergmann, 2006; Pillitteri et al., 2007; Lee et al., 2014a), FAMAp:FAMALGK-YFP is first apparent in GMCs, remains highly expressed as the GMCs undergo cell division, and is downregulated as GCs mature such that stomata with clearly defined pores express the protein at low levels or not at all (Figure 1B and Figure 1\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and Figure 1\u2014figure supplement 1B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "afa2e057-d58b-4db0-85c6-450e7c0ec0da",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C44",
+      "claim": "FAMALGK was sufficient to rescue fama lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants of genotype fama;FAMApro:FAMALGK (hereafter referred to as FAMALGK plants) were recovered and were moderately healthy and fertile, though smaller than wild type, indicating that FAMALGK was sufficient to rescue fama lethality (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "89f68203-6a37-4b83-b479-c9ec17543d8d",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C45",
+      "claim": "FAMALGK plants are moderately healthy and fertile, though smaller than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants of genotype fama;FAMApro:FAMALGK (hereafter referred to as FAMALGK plants) were recovered and were moderately healthy and fertile, though smaller than wild type, indicating that FAMALGK was sufficient to rescue fama lethality (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "512b7b3c-6122-4883-ba19-f082651623de",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C46",
+      "claim": "In the GCs of rescued FAMALGK plants, excessive cell divisions, changes in cell morphology, and production of paired GCs inside of existing GCs were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the GCs of rescued FAMALGK plants, however, we observed excessive cell divisions, changes in cell morphology, and, most strikingly, production of paired GCs inside of existing GCs (Figure 1J\u2013L and Figure 1\u2014figure supplement 2, phenotypic classes 6\u201311).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1J\u2013L and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "07de4c01-51c2-443c-b060-3647b7f03270",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C47",
+      "claim": "The FAMALGK phenotype results from an orderly reiteration of stomatal lineage progression, not from chaotic or uncontrolled divisions and fate changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the FAMALGK phenotype results, not from chaotic or uncontrolled divisions and fate changes, but rather an orderly reiteration of stomatal lineage progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from detailed analysis of markers and phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "e7e13165-fa73-4c46-80c7-bc56ff887544",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C48",
+      "claim": "The FAMALGK phenotype manifests as a progressive increase in phenotypic severity with age.",
+      "claim_type": "EXPLICIT",
+      "source": "This manifested itself as a progressive increase in phenotypic severity with age (Figure 1L) and by the appearance of stomatal lineage markers in patterns suggesting that the GCs reverted to MMC identity and proceeded through the intermediate stages of the pathway normally (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "464d7b7d-c928-4112-9742-e10ee690428b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C49",
+      "claim": "In FAMALGK plants, GCs reverted to MMC identity and proceeded through the intermediate stages of the pathway normally.",
+      "claim_type": "EXPLICIT",
+      "source": "This manifested itself as a progressive increase in phenotypic severity with age (Figure 1L) and by the appearance of stomatal lineage markers in patterns suggesting that the GCs reverted to MMC identity and proceeded through the intermediate stages of the pathway normally (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from marker expression patterns shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "ddc60087-a65d-4ea5-857b-ac5e9f2f1e81",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C50",
+      "claim": "Expression of stomatal-promoting transcription factors (SPCH, MUTE, FAMA) in FAMALGK plants followed the normal temporal patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of stomatal-promoting transcription factors (SPCH, MUTE, FAMA, Figure 2A\u2013C and Figure 2\u2014figure supplement 2), stomatal-restricting signaling elements (TMM, EPF1, EPF2, Figure 3A\u2013D), and general division reporters (CDKA1;1, Figure 2B\u2013C) followed the normal temporal patterns, and ectopic GC divisions appeared to follow early lineage division rules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A\u2013C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "40f97ba6-680a-47eb-bb0f-c0c03a383448",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C51",
+      "claim": "Expression of stomatal-restricting signaling elements (TMM, EPF1, EPF2) in FAMALGK plants followed the normal temporal patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of stomatal-promoting transcription factors (SPCH, MUTE, FAMA, Figure 2A\u2013C and Figure 2\u2014figure supplement 2), stomatal-restricting signaling elements (TMM, EPF1, EPF2, Figure 3A\u2013D), and general division reporters (CDKA1;1, Figure 2B\u2013C) followed the normal temporal patterns, and ectopic GC divisions appeared to follow early lineage division rules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "dcbf94e1-8925-452e-b284-3a6c2dbb97b7",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C52",
+      "claim": "Expression of general division reporters (CDKA1;1) in FAMALGK plants followed the normal temporal patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of stomatal-promoting transcription factors (SPCH, MUTE, FAMA, Figure 2A\u2013C and Figure 2\u2014figure supplement 2), stomatal-restricting signaling elements (TMM, EPF1, EPF2, Figure 3A\u2013D), and general division reporters (CDKA1;1, Figure 2B\u2013C) followed the normal temporal patterns, and ectopic GC divisions appeared to follow early lineage division rules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "7ac0fe89-89af-4fa3-8bd8-bb11fcb2895d",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C53",
+      "claim": "Ectopic GC divisions in FAMALGK plants appeared to follow early lineage division rules.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of stomatal-promoting transcription factors (SPCH, MUTE, FAMA, Figure 2A\u2013C and Figure 2\u2014figure supplement 2), stomatal-restricting signaling elements (TMM, EPF1, EPF2, Figure 3A\u2013D), and general division reporters (CDKA1;1, Figure 2B\u2013C) followed the normal temporal patterns, and ectopic GC divisions appeared to follow early lineage division rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from marker expression and division patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "4787bba9-a0f1-436f-aba1-4f8ef2175ec4",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C54",
+      "claim": "When a 'reprogrammed' GC in FAMALGK plants produced two stomata, they were separated by a non-stomatal cell, indicating that spacing divisions occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when a 'reprogrammed' GC produced two stomata, they were separated by a non-stomatal cell, indicating that spacing divisions occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the study and indicates normal spacing division behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "27d2ace1-6f69-4c0e-9023-6aae0982f59e",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C55",
+      "claim": "Distinct cell orientations characteristic of amplifying divisions were visible in FAMALGK plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct cell orientations characteristic of amplifying divisions were also visible (Figure 2B and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "355b6f0b-fb1c-4f92-b183-e98c60b1f7a1",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C56",
+      "claim": "Polarized localization of BASL in the larger daughter of a GC division provides evidence for normal asymmetric divisions in FAMALGK plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence for normal asymmetric divisions is polarized localization of BASL (Dong et al., 2009) in the larger daughter of a GC division (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3E and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "0612a02d-f0d0-4890-bfc0-3bf16c820003",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C57",
+      "claim": "Lobed GCs in FAMALGK plants are cells that are transdifferentiating into an epidermal pavement cell identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the lack of expression of stomatal lineage markers (Figure 2D), we interpret the lobed GCs we observe at low, but significant, frequencies in FAMALGK plants (Figure 1K, inset, and Figure 1L) as cells that are transdifferentiating into an epidermal pavement cell identity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of stomatal marker expression shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "8975e7b5-703b-4c7b-9ca8-f1480073b055",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C58",
+      "claim": "In FAMAp:amiRBR lines, excessive GC division was accompanied by elevation of cell cycle gene expression throughout the GCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In FAMAp:amiRBR lines, by contrast, excessive GC division was accompanied by elevation of cell cycle gene expression throughout the GCs (CDKA1;1, Figure 1E , CDKB1;1 and CDC6, Figure 2\u2014figure supplement 1A), but only rarely by misexpression of early stomatal lineage markers (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "4416fdfe-60c2-46d2-bd7e-a87f5e0467bc",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C59",
+      "claim": "In FAMAp:amiRBR lines, excessive GC division was only rarely accompanied by misexpression of early stomatal lineage markers.",
+      "claim_type": "EXPLICIT",
+      "source": "In FAMAp:amiRBR lines, by contrast, excessive GC division was accompanied by elevation of cell cycle gene expression throughout the GCs (CDKA1;1, Figure 1E , CDKB1;1 and CDC6, Figure 2\u2014figure supplement 1A), but only rarely by misexpression of early stomatal lineage markers (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "0b0eda5c-15dd-405d-80e9-efaaf5f13513",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C60",
+      "claim": "Spacing and amplifying divisions were not seen in FAMAp:amiRBR cotyledon GCs at any appreciable frequency (<1/1000 GCs) in 6\u201312 day old plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with gene expression behaviors, spacing and amplifying divisions were not seen in FAMAp:amiRBR cotyledon GCs at any appreciable frequency (<1/1000 GCs) in 6\u201312 day old plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "9134712c-5de5-49b7-9118-63c570a0612c",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C61",
+      "claim": "Expression of an additional copy of tagged RBR (RBR-CFP) does not alter divisions in the stomatal lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of an additional copy of tagged RBR (RBR-CFP), however, does not alter divisions in the stomatal lineage; we observed neither arrested cells nor hyperproliferating cells (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "fadf068b-1c66-46b0-a022-03c08728979e",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C62",
+      "claim": "In FAMALGK plants, GCs that undergo extra divisions re-express RBR as would be expected from RBR's normal expression pattern in the early stomatal lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In FAMALGK plants, GCs that undergo extra divisions re-express RBR as would be expected from RBR's normal expression pattern in the early stomatal lineage (Figure 4C\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "114b9f6a-1269-4cb8-8a60-d68a98ffb46a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C63",
+      "claim": "There was a dramatic increase in expression levels for the stomatal precursor genes in FAMALGK plants.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a dramatic increase in expression levels for the stomatal precursor genes, but variable change in expression of mature GC genes, consistent with a situation in which the overproduction of GCs through repeated re-entry is balanced by the loss of identity of older GCs (Figure 5A, mature GC genes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "205f00c4-3166-4a30-90ee-24d1a60e81b2",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C64",
+      "claim": "There was variable change in expression of mature GC genes in FAMALGK plants, consistent with a situation in which the overproduction of GCs through repeated re-entry is balanced by the loss of identity of older GCs.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a dramatic increase in expression levels for the stomatal precursor genes, but variable change in expression of mature GC genes, consistent with a situation in which the overproduction of GCs through repeated re-entry is balanced by the loss of identity of older GCs (Figure 5A, mature GC genes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A and inferred from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "aee70f1b-6ad7-4fa4-9592-ee5953ca1c5b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C65",
+      "claim": "FAMALGK was still capable of up-regulating several, but not all, of the direct targets reported in Hachez et al., 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "FAMALGK was also still capable of up-regulating several, but not all, of the direct targets reported in (Hachez et al., 2011) (Figure 5A, FAMA direct targets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "6a562f18-31a5-4eb4-9b63-26973ee2bfc8",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C66",
+      "claim": "There was no evidence that cells in FAMALGK plants were being reprogrammed into embryonic or other stem-cell-like fates.",
+      "claim_type": "EXPLICIT",
+      "source": "When expression of shoot meristem (SHOOT MERISTEMLESS, STM), root meristem (WUS HOMEOBOX, WOX5) or embryo genes (WOX9, WOX2, FUSCA3 (FUS3), LEC1) (Breuninger et al., 2008; De Smet et al., 2010) was monitored in FAMALGK plants, however, we found no evidence that cells were being reprogrammed into embryonic or other stem-cell-like fates (Figure 5A and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A and Figure 5\u2014figure supplement 1 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "adc131cd-95f9-454a-bf18-5778cac55084",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C67",
+      "claim": "Disruption of FAMA-RBR interaction via the FAMALGK modification leads to a stomatal lineage-specific loss of terminal commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the gene expression data indicate that disruption of FAMA-RBR interaction via the FAMALGK modification leads to a stomatal lineage-specific loss of terminal commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "7a746fa6-2b44-44e0-8c30-1997b32c381a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C68",
+      "claim": "H3K27me3 (a chromatin mark associated with transcriptional repression) is present in the genomic regions of SPCH, MUTE, FAMA, EPF1 and other stomatal genes in maturing leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of chromatin states in maturing leaves revealed H3K27me3 (a chromatin mark associated with transcriptional repression) in the genomic regions of SPCH, MUTE, FAMA, EPF1 and other stomatal genes (Lafos et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "2925719a-a573-4178-921f-179c7ba2278c",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C69",
+      "claim": "Manipulation of a member of the POLYCOMB REPRESSIVE COMPLEX 2 (PRC2) can alter developmental regulation of H3K27me3 deposition at SPCH and MUTE loci.",
+      "claim_type": "EXPLICIT",
+      "source": "a recent report showed that manipulation of a member of the POLYCOMB REPRESSIVE COMPLEX 2 (PRC2) can alter developmental regulation of H3K27me3 deposition at SPCH and MUTE loci (Lee et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "382b1dea-abf1-43ab-ba8c-4135f46b3c1e",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C70",
+      "claim": "Animal and plant Rb/RBR proteins can serve as interaction bridges between chromatin modifying enzymes and specific genomic contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal and plant Rb/RBR proteins can serve as interaction bridges between chromatin modifying enzymes and specific genomic contexts (Burkhart and Sage, 2008; Gutzat et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "287b914d-251a-4b47-8213-660bf801a410",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C71",
+      "claim": "RBR was previously found to be associated with SPCH regulatory regions via ChIP in whole seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "RBR was previously found to be associated with SPCH regulatory regions via ChIP in whole seedlings (Weimer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "40cdc754-8426-4da1-8c83-5259d554891c",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C72",
+      "claim": "FAMA (with RBR) ensures terminal differentiation of GCs by facilitating stable repression of early stomatal lineage genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore it is plausible that, as the final master regulator bHLH in the stomatal pathway, FAMA (with RBR) ensures terminal differentiation of GCs by facilitating stable repression of early stomatal lineage genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the data and previous knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "68eee8fa-ee46-47e4-827a-05ade0da44a6",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C73",
+      "claim": "SPCH, FAMA and EPF1 were all targets of FAMA in ChIP assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In ChIP assays, SPCH, FAMA and EPF1 were all targets of FAMA and of stomatal lineage-expressed RBR (Figure 5B\u2013C and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B\u2013C and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "7ebc9799-695a-4991-80fe-49ca6d4b19ab",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C74",
+      "claim": "SPCH, FAMA and EPF1 were all targets of stomatal lineage-expressed RBR in ChIP assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In ChIP assays, SPCH, FAMA and EPF1 were all targets of FAMA and of stomatal lineage-expressed RBR (Figure 5B\u2013C and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B\u2013C and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "443a7f5f-5078-4b00-8843-a20c57c4a1d6",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C75",
+      "claim": "FAMA and RBR are enriched in the same pattern at SPCH and EPF1, suggesting that they bind as part of the same complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Further dissection of the binding regions at SPCH and EPF1 indicates that FAMA and RBR are enriched in the same pattern, suggesting that they bind as part of the same complex (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 4 and inferred from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "35121de6-12f8-47d3-b15b-84de5a247297",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C76",
+      "claim": "RBR enrichment at the promoters of SPCH and FAMA was significantly reduced in a FAMALGK background.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIPs of FAMAp:RBR-MYC in a FAMALGK background showed that RBR enrichment at the promoters of SPCH and FAMA, but not of the general RBR target gene PCNA, was significantly reduced (Figure 5D and Figure 5\u2014figure supplement 4), consistent with our recruitment model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D and Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "e9c3a164-256b-4e52-8e53-3ba15b7dff9b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C77",
+      "claim": "RBR enrichment at the promoter of PCNA was not reduced in a FAMALGK background.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIPs of FAMAp:RBR-MYC in a FAMALGK background showed that RBR enrichment at the promoters of SPCH and FAMA, but not of the general RBR target gene PCNA, was significantly reduced (Figure 5D and Figure 5\u2014figure supplement 4), consistent with our recruitment model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D and Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "8fc2b760-46c6-4d48-9a5e-17161ccd1423",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C78",
+      "claim": "RBR enrichment at the promoter of EPF1 was variable in FAMALGK background assays.",
+      "claim_type": "EXPLICIT",
+      "source": "RBR enrichment at the promoter of a negative regulator of stomatal development, EPF1, was more variable in our assays, sometimes showing little change (Figure 5D), but failing to associate with RBR in other replicates (Figure 5\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D and Figure 5\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "67816526-56a7-4749-b5c5-18958bc95a40",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C79",
+      "claim": "SPCH is required for initiation of the stomatal lineage in normal development.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of FAMA and RBR with the SPCH locus is intriguing, as in normal development SPCH is required for initiation of the stomatal lineage and is essential for robust expression of all stomatal genes so far reported (MacAlister et al., 2007; Pillitteri et al., 2007; Kanaoka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "7015cc79-afed-4153-b8b1-be424c0acb80",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C80",
+      "claim": "SPCH is essential for robust expression of all stomatal genes so far reported.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of FAMA and RBR with the SPCH locus is intriguing, as in normal development SPCH is required for initiation of the stomatal lineage and is essential for robust expression of all stomatal genes so far reported (MacAlister et al., 2007; Pillitteri et al., 2007; Kanaoka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "9260da77-9fba-4cc7-b93f-0adde3dd1d4b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C81",
+      "claim": "Expression of FAMAp:SPCH-YFP (or its hyperactive variants FAMAp:SPCH1-4A or FAMAp:SPCH2-4A) in an otherwise WT background did not mimic FAMALGK.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of FAMAp:SPCH-YFP (or its hyperactive variants FAMAp:SPCH1-4A or FAMAp:SPCH2-4A [Lampard et al., 2008]) in an otherwise WT background, however, did not mimic FAMALGK (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5E and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "bd4574d7-f0f7-4d1c-9b2f-b8d15fd5daed",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C82",
+      "claim": "Competence to reinitiate the stomatal pathway requires more than expression of a single 'trigger' gene, but rather a more generally permissive expression state.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that competence to reinitiate the stomatal pathway requires more than expression of a single 'trigger' gene, but rather a more generally permissive expression state, a fact supporting a broader chromatin regulating role for the FAMA-RBR complex (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data and illustrated in Figure 5F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "958d82e4-121e-4d5b-8278-329e84d3482a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C83",
+      "claim": "Physical associations between RBR and the Arabidopsis transcription factor SCARECROW (SCR) were found to be essential for modulating stem-cell behavior in the root.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, physical associations between RBR and the Arabidopsis transcription factor SCARECROW (SCR) were found to be essential for modulating stem-cell behavior in the root (Cruz-Ramirez et al., 2012, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "104f1ac6-600a-4406-88b2-b798de958eee",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C84",
+      "claim": "Both SCR and FAMA bind to RBR via an LxCxE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Both SCR and FAMA bind to RBR via an LxCxE motif, yet the consequences of these transcription factor/RBR interactions are different",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the study's findings and previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "31945086-80f9-4359-b4bd-32492978f8e0",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C85",
+      "claim": "RBR antagonizes SCR function in asymmetric division in the root stem cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "RBR antagonizes SCR function in asymmetric division in the root stem cell compartment (Cruz-Ramirez et al., 2012, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d213f597-f68b-40cb-89fb-918b77100d7b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C86",
+      "claim": "RBR and FAMA have similar functions promoting differentiation at the terminal stage of stomatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas RBR and FAMA have similar functions promoting differentiation at the terminal stage of stomatal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "e22564a7-7757-48a2-8542-13d809f9bb93",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C87",
+      "claim": "RBR is required for repression of SCR target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As with FAMA targets, RBR is required for repression of SCR target genes and can associate with their promoter regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "60606643-0ba6-4096-befe-ae4061ce2a9a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C88",
+      "claim": "RBR can associate with the promoter regions of SCR target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As with FAMA targets, RBR is required for repression of SCR target genes and can associate with their promoter regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "8bb184be-5a64-4988-857d-8ce742ae8e31",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C89",
+      "claim": "RBR is associated with the promoter of the stomatal lineage initiator SPCH in cells as they are committing to terminal fates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we provide key data in support of a specific molecular mechanism for transcriptional repression utilizing RBR in combination with cell-type specific transcription factors: first, we demonstrate, through cell-type specific ChIPs, that RBR is associated with the promoter of the stomatal lineage initiator SPCH in cells as they are committing to terminal fates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study demonstrated through ChIP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "3ba02f06-48bb-48dd-8ed1-f76beada0d12",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C90",
+      "claim": "RBR binding to SPCH promoter is reduced when RBR's interaction with FAMA is disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "and second, we show that this binding is reduced when RBR's interaction with FAMA is disrupted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study demonstrated through ChIP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "bfa79dc7-60b2-4129-9350-a4363a8cf865",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C91",
+      "claim": "RBR is recruited by cell-type specific transcription factors to lead to transcriptional repression of their targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data provide strong support for RBR being recruited by cell-type specific transcription factors to lead to transcriptional repression of their targets (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the study's data and illustrated in Figure 5F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "93a555c4-7f41-4c74-b7e9-d15ad6d39505",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C92",
+      "claim": "There may be FAMA-independent ways to recruit RBR to the EPF1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "This could indicate that there are FAMA-independent ways to recruit RBR to this site, or that our FAMALGK manipulation does not eliminate all FAMA-RBR interactions in the endogenous complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the variable results for EPF1.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "33c2df97-473e-4210-903e-cafd33bbeea4",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C93",
+      "claim": "The FAMALGK manipulation may not eliminate all FAMA-RBR interactions in the endogenous complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This could indicate that there are FAMA-independent ways to recruit RBR to this site, or that our FAMALGK manipulation does not eliminate all FAMA-RBR interactions in the endogenous complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the variable results for EPF1.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "9189d61b-3582-46bf-9c3f-270d3cda20af",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C94",
+      "claim": "EPF1 is a repressor of stomatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting, however, that EPF1 differs from SPCH and FAMA in being a repressor of stomatal development and thus alleviation of the repression of EPF1 would be expected to antagonize reprogramming to a stomatal precursor identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "6f57036f-5dfb-449c-847d-a4b9d17c987a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C95",
+      "claim": "Alleviation of the repression of EPF1 would be expected to antagonize reprogramming to a stomatal precursor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting, however, that EPF1 differs from SPCH and FAMA in being a repressor of stomatal development and thus alleviation of the repression of EPF1 would be expected to antagonize reprogramming to a stomatal precursor identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known function of EPF1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "a47c2e0a-17f8-4eb8-b1d1-66f8e46fbce8",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C96",
+      "claim": "The role of PRC2 complex protein CURLY LEAF (CLF) was recently investigated in connection to stomatal lineage termination.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of PRC2 complex protein CURLY LEAF (CLF) was recently investigated in connection to stomatal lineage termination and was found to promote the accumulation of H3K27me3 marks on early stomatal lineage genes (Lee et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "79b95f06-1c98-4163-90c1-3df9b0dd483e",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C97",
+      "claim": "CURLY LEAF (CLF) promotes the accumulation of H3K27me3 marks on early stomatal lineage genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of PRC2 complex protein CURLY LEAF (CLF) was recently investigated in connection to stomatal lineage termination and was found to promote the accumulation of H3K27me3 marks on early stomatal lineage genes (Lee et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "380e72b2-e1d5-4b22-9b0c-a4310e86d524",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C98",
+      "claim": "Prolonged expression of a C-terminal GFP-tagged version of FAMA (FAMAtrans) causes phenotypes similar to, but milder than those seen in FAMALGK.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, (Lee et al., 2014b) report phenotypes, similar to, but milder than those seen in FAMALGK, caused by prolonged expression of a C-terminal GFP-tagged version of FAMA (FAMAtrans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "161bbd21-f2cf-4d21-be1d-e882dde86d25",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C99",
+      "claim": "In 12 day old cotyledons, FAMALGK plants display reprogramming of \u223c80% guard cells compared with 10% of FAMAtrans.",
+      "claim_type": "EXPLICIT",
+      "source": "In a timepoint and tissue common to their data and this study (12 day old cotyledons), FAMALGK plants display reprogramming of \u223c80% guard cells (Figure 1L) compared with 10% of FAMAtrans.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1L and compared to data from Lee et al., 2014b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "75e1266f-821d-4d40-b0a9-7c1fe91396d7",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C100",
+      "claim": "Blocking of the FAMA C-terminus by addition of GFP creates a protein that dominantly interferes with FAMA-RBR interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of our data showing that a loss of a specific FAMA activity (RBR binding) produces strong lineage reprogramming, we think a more parsimonious explanation of the FAMAtrans-induced phenotype is that blocking of the FAMA C-terminus by addition of GFP creates a protein that dominantly interferes with FAMA-RBR interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FAMAtrans phenotype based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "0526774b-03fa-480a-99d3-aee8095f5917",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C101",
+      "claim": "Depletion of RBR in many contexts leads to hyperproliferation and derepression of cell cycle promoting genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, depletion of RBR in many contexts leads to hyperproliferation and derepression of cell cycle promoting genes (Figure 1E and Figure 2\u2014figure supplement 1 and Borghi et al., 2010; Wachsman et al., 2011; Weimer et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E and Figure 2\u2014figure supplement 1 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d1006c8f-5d3f-4be2-bf1c-46a3e349509d",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C102",
+      "claim": "When RBR's association with FAMA is disrupted, specific cell fates and division behaviors and their accompanying gene expression patterns re-emerge in an orderly pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to phenotypes that dominate when its association with FAMA is disrupted; namely that specific cell fates and division behaviors and their accompanying gene expression patterns re-emerge in an orderly pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "6d38c64c-fbd9-41a2-8f7d-c0ded4b7e33c",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C103",
+      "claim": "RBRp:RBR-CFP becomes ectopically expressed in re-dividing FAMALGK GCs.",
+      "claim_type": "EXPLICIT",
+      "source": "RBRp:RBR-CFP itself becomes ectopically expressed in re-dividing FAMALGK GCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4C\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "b0e1caf1-d1c7-428e-8805-e50bbb405e85",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C104",
+      "claim": "RBR's cell-cycle repressive role in FAMALGK GCs would be expected to completely halt divisions if it were playing that role.",
+      "claim_type": "EXPLICIT",
+      "source": "Were RBR to be playing its cell-cycle repressive role in this context, one would expect this ectopic expression might completely halt divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on RBR's known function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "99c572c6-4b93-4798-8e84-5ad1c3ed8a18",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C105",
+      "claim": "RBR plays a qualitatively different role in combination with FAMA in guard cells than its typical cell-cycle repressive role.",
+      "claim_type": "EXPLICIT",
+      "source": "That the opposite occurs, however, suggests a qualitatively different role for RBR in combination with FAMA in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that divisions continue despite RBR expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d7d3b2a2-17d2-4a9c-bef7-b8404ac8f5a3",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C106",
+      "claim": "RBR's cell-cycle repression activity is more sensitive to dosage than its activity modulating stomatal gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Because RBR is expressed in all cells of the plant, it is difficult to measure whether our cell-type specific amiRNA completely eliminated RBR in guard cells, but our data suggest that RBR's cell-cycle repression activity is more sensitive to dosage than its activity modulating stomatal gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of RBR manipulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "268f9d3b-3dc4-4827-9220-70b931b4e102",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C107",
+      "claim": "Only by retaining RBR levels but disrupting the FAMA-dependent activity was a clear role for RBR in terminal differentiation unmasked.",
+      "claim_type": "EXPLICIT",
+      "source": "Only by retaining RBR levels but disrupting the FAMA-dependent activity was a clear role for RBR in terminal differentiation unmasked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's experimental design and results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "cb18df48-cad9-4a69-830c-220bf7374275",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C108",
+      "claim": "Regulation of the stomatal lineage can parallel that of stem cell populations in animals at cellular, developmental and molecular levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of the stomatal lineage can parallel that of stem cell populations in animals at cellular, developmental and molecular levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "13ac085d-5608-4835-a534-256011904c17",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C109",
+      "claim": "Both plant stomatal and mammalian myogenic lineages employ series of paralogous bHLHs during fate specification and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both plant stomatal and mammalian myogenic lineages, for example, employ series of paralogous bHLHs during fate specification and differentiation, and activities of these bHLHs are regulated through conserved upstream kinases and by association with Rb/RBR (reviewed in Matos and Bergmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "44187382-4f0a-4682-9729-c2b0ce5bcbe5",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C110",
+      "claim": "Activities of bHLHs in stomatal and myogenic lineages are regulated through conserved upstream kinases and by association with Rb/RBR.",
+      "claim_type": "EXPLICIT",
+      "source": "Both plant stomatal and mammalian myogenic lineages, for example, employ series of paralogous bHLHs during fate specification and differentiation, and activities of these bHLHs are regulated through conserved upstream kinases and by association with Rb/RBR (reviewed in Matos and Bergmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "4d3b19d9-a3bf-4fab-8adc-cc40a67d9cb7",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C111",
+      "claim": "Stomatal lineage cells leave a record of their fate and division history in their marker expression and spatial arrangement on the leaf surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Bound by immobile cell walls, stomatal lineage cells leave a record of their fate and division history in their marker expression and spatial arrangement on the leaf surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the stomatal lineage system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "1592ed6d-e83f-4332-bc08-52bc80636297",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "claim_id": "C112",
+      "claim": "The stomatal lineage provides a unique opportunity to dissect cell division and cell fate activities of Rb and other conserved proteins during programming and reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "This plant model, therefore, provides a unique opportunity to dissect cell division and cell fate activities of Rb and other conserved proteins during programming and reprogramming and is a powerful comparative system for future discoveries of fundamental regulatory mechanisms of stem cell initiation, maintenance and termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the stomatal lineage as a model system.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c9507614-39f2-4b5e-aca4-9415e757cacf",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FAMA is required for irreversible differentiation of guard cells through recruitment of RBR, and disruption of FAMA-RBR interaction via point mutations (FAMALGK) renders FAMA capable of promoting initial guard cell identity but unable to maintain commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 represent the central findings of the manuscript. The FAMALGK mutant phenotype (C46-C49), BiFC and yeast two-hybrid interaction data (C34-C37), rescue experiments (C44-C45), and ChIP data (C73-C76, C89-C90) collectively provide strong converging evidence for this mechanism. The structural integrity control (C38-C39) strengthens the interpretation that the phenotype is specifically due to loss of RBR interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "cf717a9a-a72e-41ce-967d-72ba1551f059",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FAMA contains a canonical LxCxE motif that is conserved among dicot orthologs but not in paralogs SPCH and MUTE, and this motif mediates physical interaction with RBR in BiFC and yeast two-hybrid assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C39 are well-supported by sequence alignment data (Figure 1F), BiFC assays (Figure 1G), and yeast two-hybrid assays (Figure 1H). The control showing FAMALGK can still interact with bHLH93 (C38) demonstrates that the mutation specifically disrupts RBR binding without affecting overall protein structure, strengthening the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "67133a12-79f4-4b8c-9b90-b3c15ba89de4",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FAMALGK rescues fama lethality but causes guard cells to undergo orderly reiteration of stomatal lineage progression with progressive increase in phenotypic severity, including production of paired guard cells inside existing guard cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 are supported by plant viability data (Figure 1I), detailed phenotypic quantification (Figure 1J-L, Figure 1\u2014figure supplement 2), and marker expression analysis (Figure 2). The orderly progression through lineage stages (C47, C49) is inferred from marker patterns but is well-supported by the comprehensive temporal analysis shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d28fbce8-4f93-48bf-895c-51acba274323",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In FAMALGK plants, expression of stomatal transcription factors, signaling elements, and division reporters follows normal temporal patterns, and ectopic guard cell divisions follow early lineage division rules including spacing and amplifying divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 are supported by extensive marker analysis shown in Figures 2 and 3, including SPCH, MUTE, FAMA, TMM, EPF1, EPF2, CDKA1;1, and BASL. The polarized BASL localization (C56, Figure 3E) and distinct cell orientations (C55, Figure 2B and supplement 3) provide strong evidence for normal asymmetric division behavior. The spacing division inference (C54) is reasonable based on cell arrangement patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "6813bfde-fdbd-4194-bdf8-6e28831f3483",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FAMALGK plants show dramatic increase in stomatal precursor gene expression but variable change in mature guard cell genes, with no evidence of reprogramming to embryonic or stem-cell-like fates, indicating stomatal lineage-specific loss of terminal commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 are supported by qRT-PCR data (Figure 5A) and RT-PCR validation (Figure 5\u2014figure supplement 1). The interpretation that variable mature GC gene expression reflects balance between overproduction and loss of identity (C64) is reasonable. The absence of embryonic/stem cell marker expression (C66) is well-documented. The conclusion of lineage-specific commitment loss (C67) is a justified inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "43a0138e-4581-4504-8f2a-e044bc492a3f",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FAMA and RBR co-associate with regulatory regions of SPCH, FAMA, and EPF1 in ChIP assays, and RBR enrichment at SPCH and FAMA promoters is significantly reduced in FAMALGK background, supporting a model where RBR is recruited by FAMA to repress stomatal lineage genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 and C89-C91 are supported by cell-type-specific ChIP data (Figures 5B-D and supplements 3-4). The co-enrichment pattern (C75) and reduced RBR binding in FAMALGK (C76, C90) provide strong evidence for the recruitment model. The specificity control showing no change at PCNA (C77) strengthens the interpretation. The conclusion (C91) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "3678c25e-ffce-475f-9b78-6c21d2b41d73",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Expression of SPCH under the FAMA promoter in wild-type background does not mimic FAMALGK phenotype, suggesting that competence to reinitiate the stomatal pathway requires a more generally permissive expression state rather than expression of a single trigger gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are supported by the negative result shown in Figure 5E. The interpretation (C82) is a reasonable inference from the data, though it is somewhat speculative. The conclusion is consistent with the broader chromatin regulation model proposed by the authors and supported by the ChIP data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "894f46f0-349e-42cf-a96e-46f17cdb5777",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Guard cell-specific knockdown of RBR using FAMAp:amiRNA-RBR causes inappropriate extra divisions in guard cells without affecting other epidermal cells, confirming direct requirement for RBR in guard cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by microscopy data (Figure 1E and Figure 1\u2014figure supplement 1A) and confirmed by citation to independent work using different amiRNAs. The cell-type specificity (C29) is clearly demonstrated. This result establishes the baseline RBR function in guard cells for comparison with FAMALGK.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "26f8f187-b86c-4509-b354-4623f0e61ae8",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In FAMAp:amiRBR lines, excessive guard cell division is accompanied by elevated cell cycle gene expression but only rarely by misexpression of early stomatal lineage markers, and spacing/amplifying divisions are not observed at appreciable frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by marker analysis (Figure 1E, Figure 2\u2014figure supplement 1A-B) and quantitative observation. This result establishes an important contrast with FAMALGK phenotype, showing that RBR depletion causes different effects than disruption of FAMA-RBR interaction, supporting the model that RBR has distinct roles in cell cycle control versus fate commitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "fbedea8a-11f4-4631-8ad3-034f17a0752a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In FAMALGK plants, guard cells that undergo extra divisions re-express RBR, yet divisions continue rather than halt, suggesting RBR plays a qualitatively different role in combination with FAMA than its typical cell-cycle repressive role, with cell-cycle repression being more sensitive to dosage than stomatal gene expression modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C103, C105-C107 are supported by RBR-CFP expression data (Figure 4C-G) and comparison with RBR knockdown phenotypes. The interpretation that RBR plays a different role with FAMA (C105) is a reasonable inference from the observation that divisions continue despite RBR expression. The dosage sensitivity conclusion (C106) is inferred from differential effects but is plausible. Claim C107 represents a key conceptual conclusion about the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "ff41fe51-9135-47d0-9cc7-0a34d3388e0a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RBR is broadly expressed in Arabidopsis development, with expression in young leaves in all cell nuclei that becomes restricted to stomatal lineage cells as the leaf matures, and mosaic co-suppression leads to excessive divisions suggesting RBR represses cell divisions in both early lineage and terminally differentiated guard cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 are supported by RBR-CFP expression data (Figure 1C-D) and citations to previous work. The expression pattern (C24-C25) is clearly shown. The inference about RBR function from co-suppression (C27) is reasonable but should be noted as correlative. This result establishes the expression context for RBR in the stomatal lineage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "56f73849-10cb-4cbc-ae09-18338c21a597",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "FAMAp:FAMALGK-YFP is exclusively nuclear, first appears in GMCs, remains highly expressed during GMC division, and is downregulated as guard cells mature, similar to wild-type FAMA expression pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by confocal microscopy data (Figure 1B and Figure 1\u2014figure supplement 1B-C) and comparison with published FAMA expression patterns. This result demonstrates that the FAMALGK mutation does not alter FAMA expression pattern, localization, or stability, which is important for interpreting the phenotype as specifically due to loss of RBR interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "29d9e7b4-435f-4cf6-ba24-4253df7f244c",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Lobed guard cells observed at low frequency in FAMALGK plants are interpreted as cells transdifferentiating into epidermal pavement cell identity based on lack of stomatal lineage marker expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by the lack of marker expression shown in Figure 2D and the morphological observation (Figure 1K inset, Figure 1L). The interpretation is reasonable given the lobed morphology characteristic of pavement cells and absence of stomatal markers, though direct pavement cell marker expression would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d4ddd441-57d2-49e9-8f6f-b1f95d55b0c5",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Expression of an additional copy of tagged RBR (RBR-CFP) does not alter divisions in the stomatal lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by microscopy data (Figure 4A-B and Figure 5\u2014figure supplement 2C-F). This control is important for demonstrating that RBR overexpression alone does not cause phenotypes, supporting the interpretation that the FAMALGK phenotype is due to loss of FAMA-RBR interaction rather than altered RBR levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "37c5c740-e7c2-4906-bb42-b673f4bcbe1b",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "RBR enrichment at the EPF1 promoter was variable in FAMALGK background assays, which could indicate FAMA-independent recruitment of RBR to this site or incomplete elimination of FAMA-RBR interactions by the FAMALGK mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78, C92-C93 acknowledge variability in the EPF1 ChIP data (Figure 5D and Figure 5\u2014figure supplement 3C). The authors appropriately present this as uncertain and offer two possible explanations (C92-C93). The variability weakens the conclusion about EPF1 as a target, but the authors' transparent reporting and speculation about possible explanations is appropriate. Additional replicates or alternative approaches would be needed to resolve this uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "34a34621-97c7-4b53-9edc-e76442a19ff4",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "H3K27me3 repressive chromatin marks are present at stomatal gene loci in maturing leaves, and RBR proteins can bridge chromatin modifying enzymes to specific genomic contexts, suggesting FAMA with RBR ensures terminal differentiation by facilitating stable repression of early stomatal lineage genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by citations to previous work establishing the chromatin context and RBR's general role. Claim C72 is explicitly stated as a hypothesis ('plausible') and is appropriately labeled as speculation in the evidence type. While the hypothesis is reasonable given the data and prior knowledge, it represents a proposed mechanism rather than a directly demonstrated result. The subsequent ChIP data (C73-C77) provide support for this model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "0993c3cf-bda1-4f79-b4d3-fcc2f698705f",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Physical associations between RBR and transcription factors SCR and FAMA both occur via LxCxE motifs but have different functional consequences, with RBR antagonizing SCR in root asymmetric division but promoting differentiation with FAMA in stomatal development, though both involve RBR-mediated repression of target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 are supported by citations to previous work on SCR-RBR interactions and comparison with the current study's findings on FAMA-RBR. This comparative analysis provides important context for understanding the versatility of RBR function in different developmental contexts. The claims appropriately distinguish between established knowledge (C83, C85, C87-C88) and findings from the current study (C84, C86).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "2915bbe4-7890-48fd-afc0-4142bdb2c0fa",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The PRC2 complex protein CLF promotes H3K27me3 accumulation on early stomatal lineage genes, and prolonged expression of C-terminal GFP-tagged FAMA causes phenotypes similar to but milder than FAMALGK, which the authors interpret as dominant interference with FAMA-RBR interactions rather than gain of function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 are supported by citations to Lee et al., 2014b and comparison with the current study's data (Figure 1L). Claim C100 represents the authors' alternative interpretation of the FAMAtrans phenotype. While this interpretation is reasonable given their data showing loss of FAMA-RBR interaction causes strong reprogramming, it remains an inference that would require direct testing. The authors appropriately present this as their interpretation ('we think') rather than established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "4ae7a030-4712-49c4-a092-5bd45f3de4b9",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Depletion of RBR in many contexts leads to hyperproliferation and derepression of cell cycle genes, in contrast to disruption of FAMA-RBR association which causes specific cell fates and division behaviors to re-emerge in an orderly pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102 are supported by data from the current study (Figures 1E, 2\u2014figure supplement 1) and citations to previous work. This comparison highlights the key distinction between RBR's general cell cycle role and its specific role in terminal differentiation when associated with FAMA, which is central to the manuscript's conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "7d5ecaf1-6080-4acc-ac12-fdbbc7e2cc0a",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Plant cells are typically considered totipotent, but in intact plants distinct cell lineages emerge with stable terminal fates, exemplified by the Arabidopsis stomatal lineage where asymmetric divisions generate meristemoids that differentiate through guard mother cells into paired guard cells, with each stage characterized by distinct morphologies and gene expression profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 represent established background knowledge about plant development and the stomatal lineage, supported by citations to previous work (Lau and Bergmann, 2012; Pillitteri and Dong, 2013) and reference to Figure 1A. These claims provide essential context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "d00d58cc-6066-4f12-82bd-9e046f991b30",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "FAMA is a master regulator of guard cell identity that is necessary and sufficient for guard cell fate acquisition, with expression limited to GMCs and young GCs; fama mutants fail to make guard cells resulting in lethality, while FAMA overexpression reprograms cells to guard cell identity and represses division; FAMA acts as both transcriptional activator and repressor of cell cycle targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C17 represent established knowledge about FAMA function from previous work (primarily Ohashi-Ito and Bergmann, 2006; Hachez et al., 2011), confirmed by data in the current study (Figure 1B, 1I). These claims provide essential background for understanding the current study's findings but are not novel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    },
+    {
+      "id": "004c1e85-ac4f-4693-b0d3-ed5c640671ad",
+      "content_id": "a5dfa6c5-7460-4347-be64-7dbb2724f039",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Regulation of the stomatal lineage parallels animal stem cell populations at cellular, developmental and molecular levels, with both plant stomatal and mammalian myogenic lineages employing paralogous bHLHs regulated by conserved kinases and Rb/RBR association; the stomatal lineage provides a unique opportunity to dissect Rb activities during programming and reprogramming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C112 represent comparative analysis and discussion of the stomatal lineage as a model system. Claims C108-C110 are supported by citation to a review (Matos and Bergmann, 2014). Claim C111 describes a characteristic of the system. Claim C112 represents a conclusion about the utility of the system that is reasonable but somewhat speculative (labeled as INFERENCE and SPECULATION in evidence type). These are appropriate discussion points but not primary experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:38:00.427104Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9cba3133-468a-4962-a267-fe246c11e14d",
+      "result_id": "c9507614-39f2-4b5e-aca4-9415e757cacf"
+    },
+    {
+      "claim_id": "d463eeb9-ca7a-4774-943d-f3e69f41dd46",
+      "result_id": "c9507614-39f2-4b5e-aca4-9415e757cacf"
+    },
+    {
+      "claim_id": "fae7152d-6f9d-4a73-95b9-4aa6e77af7e3",
+      "result_id": "c9507614-39f2-4b5e-aca4-9415e757cacf"
+    },
+    {
+      "claim_id": "4ca76a31-ebc6-472b-aa1d-dfb8de647f98",
+      "result_id": "c9507614-39f2-4b5e-aca4-9415e757cacf"
+    },
+    {
+      "claim_id": "d04539c3-fbc0-4f41-a10f-04d581e71125",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "abb4dbce-244c-4703-8a46-8c8d69acaecc",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "8bbbcdb5-1093-415e-82ab-e783d9d3d44f",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "4c172e5c-ba04-4f5a-9368-ff2cbed98875",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "7f6f7018-1b61-4818-9400-458fa8557e89",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "f09cee07-f59d-48dd-b398-68a01dc0576b",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "8c9f65a4-9c89-4640-86f2-5b2ad7e31cd1",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "ec5f1c1f-4069-4749-90db-06c63bde7952",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "9fcba1fe-d374-47eb-977b-bf6cc9bdc418",
+      "result_id": "cf717a9a-a72e-41ce-967d-72ba1551f059"
+    },
+    {
+      "claim_id": "afa2e057-d58b-4db0-85c6-450e7c0ec0da",
+      "result_id": "67133a12-79f4-4b8c-9b90-b3c15ba89de4"
+    },
+    {
+      "claim_id": "89f68203-6a37-4b83-b479-c9ec17543d8d",
+      "result_id": "67133a12-79f4-4b8c-9b90-b3c15ba89de4"
+    },
+    {
+      "claim_id": "512b7b3c-6122-4883-ba19-f082651623de",
+      "result_id": "67133a12-79f4-4b8c-9b90-b3c15ba89de4"
+    },
+    {
+      "claim_id": "07de4c01-51c2-443c-b060-3647b7f03270",
+      "result_id": "67133a12-79f4-4b8c-9b90-b3c15ba89de4"
+    },
+    {
+      "claim_id": "e7e13165-fa73-4c46-80c7-bc56ff887544",
+      "result_id": "67133a12-79f4-4b8c-9b90-b3c15ba89de4"
+    },
+    {
+      "claim_id": "464d7b7d-c928-4112-9742-e10ee690428b",
+      "result_id": "67133a12-79f4-4b8c-9b90-b3c15ba89de4"
+    },
+    {
+      "claim_id": "ddc60087-a65d-4ea5-857b-ac5e9f2f1e81",
+      "result_id": "d28fbce8-4f93-48bf-895c-51acba274323"
+    },
+    {
+      "claim_id": "40f97ba6-680a-47eb-bb0f-c0c03a383448",
+      "result_id": "d28fbce8-4f93-48bf-895c-51acba274323"
+    },
+    {
+      "claim_id": "dcbf94e1-8925-452e-b284-3a6c2dbb97b7",
+      "result_id": "d28fbce8-4f93-48bf-895c-51acba274323"
+    },
+    {
+      "claim_id": "7ac0fe89-89af-4fa3-8bd8-bb11fcb2895d",
+      "result_id": "d28fbce8-4f93-48bf-895c-51acba274323"
+    },
+    {
+      "claim_id": "4787bba9-a0f1-436f-aba1-4f8ef2175ec4",
+      "result_id": "d28fbce8-4f93-48bf-895c-51acba274323"
+    },
+    {
+      "claim_id": "27d2ace1-6f69-4c0e-9023-6aae0982f59e",
+      "result_id": "d28fbce8-4f93-48bf-895c-51acba274323"
+    },
+    {
+      "claim_id": "355b6f0b-fb1c-4f92-b183-e98c60b1f7a1",
+      "result_id": "d28fbce8-4f93-48bf-895c-51acba274323"
+    },
+    {
+      "claim_id": "114b9f6a-1269-4cb8-8a60-d68a98ffb46a",
+      "result_id": "6813bfde-fdbd-4194-bdf8-6e28831f3483"
+    },
+    {
+      "claim_id": "205f00c4-3166-4a30-90ee-24d1a60e81b2",
+      "result_id": "6813bfde-fdbd-4194-bdf8-6e28831f3483"
+    },
+    {
+      "claim_id": "aee70f1b-6ad7-4fa4-9592-ee5953ca1c5b",
+      "result_id": "6813bfde-fdbd-4194-bdf8-6e28831f3483"
+    },
+    {
+      "claim_id": "6a562f18-31a5-4eb4-9b63-26973ee2bfc8",
+      "result_id": "6813bfde-fdbd-4194-bdf8-6e28831f3483"
+    },
+    {
+      "claim_id": "adc131cd-95f9-454a-bf18-5778cac55084",
+      "result_id": "6813bfde-fdbd-4194-bdf8-6e28831f3483"
+    },
+    {
+      "claim_id": "68eee8fa-ee46-47e4-827a-05ade0da44a6",
+      "result_id": "43a0138e-4581-4504-8f2a-e044bc492a3f"
+    },
+    {
+      "claim_id": "7ebc9799-695a-4991-80fe-49ca6d4b19ab",
+      "result_id": "43a0138e-4581-4504-8f2a-e044bc492a3f"
+    },
+    {
+      "claim_id": "443a7f5f-5078-4b00-8843-a20c57c4a1d6",
+      "result_id": "43a0138e-4581-4504-8f2a-e044bc492a3f"
+    },
+    {
+      "claim_id": "35121de6-12f8-47d3-b15b-84de5a247297",
+      "result_id": "43a0138e-4581-4504-8f2a-e044bc492a3f"
+    },
+    {
+      "claim_id": "e9c3a164-256b-4e52-8e53-3ba15b7dff9b",
+      "result_id": "43a0138e-4581-4504-8f2a-e044bc492a3f"
+    },
+    {
+      "claim_id": "8bb184be-5a64-4988-857d-8ce742ae8e31",
+      "result_id": "43a0138e-4581-4504-8f2a-e044bc492a3f"
+    },
+    {
+      "claim_id": "3ba02f06-48bb-48dd-8ed1-f76beada0d12",
+      "result_id": "43a0138e-4581-4504-8f2a-e044bc492a3f"
+    },
+    {
+      "claim_id": "bfa79dc7-60b2-4129-9350-a4363a8cf865",
+      "result_id": "43a0138e-4581-4504-8f2a-e044bc492a3f"
+    },
+    {
+      "claim_id": "9260da77-9fba-4cc7-b93f-0adde3dd1d4b",
+      "result_id": "3678c25e-ffce-475f-9b78-6c21d2b41d73"
+    },
+    {
+      "claim_id": "bd4574d7-f0f7-4d1c-9b2f-b8d15fd5daed",
+      "result_id": "3678c25e-ffce-475f-9b78-6c21d2b41d73"
+    },
+    {
+      "claim_id": "b5ddffff-7a4c-4429-a1a3-d66ec7689325",
+      "result_id": "894f46f0-349e-42cf-a96e-46f17cdb5777"
+    },
+    {
+      "claim_id": "b20443b8-5e12-4f80-a41f-319bd1f73fd8",
+      "result_id": "894f46f0-349e-42cf-a96e-46f17cdb5777"
+    },
+    {
+      "claim_id": "a9c1118b-582f-40a3-a23e-cb7cb63ce137",
+      "result_id": "894f46f0-349e-42cf-a96e-46f17cdb5777"
+    },
+    {
+      "claim_id": "8975e7b5-703b-4c7b-9ca8-f1480073b055",
+      "result_id": "26f8f187-b86c-4509-b354-4623f0e61ae8"
+    },
+    {
+      "claim_id": "4416fdfe-60c2-46d2-bd7e-a87f5e0467bc",
+      "result_id": "26f8f187-b86c-4509-b354-4623f0e61ae8"
+    },
+    {
+      "claim_id": "0b0eda5c-15dd-405d-80e9-efaaf5f13513",
+      "result_id": "26f8f187-b86c-4509-b354-4623f0e61ae8"
+    },
+    {
+      "claim_id": "fadf068b-1c66-46b0-a022-03c08728979e",
+      "result_id": "fbedea8a-11f4-4631-8ad3-034f17a0752a"
+    },
+    {
+      "claim_id": "6d38c64c-fbd9-41a2-8f7d-c0ded4b7e33c",
+      "result_id": "fbedea8a-11f4-4631-8ad3-034f17a0752a"
+    },
+    {
+      "claim_id": "99c572c6-4b93-4798-8e84-5ad1c3ed8a18",
+      "result_id": "fbedea8a-11f4-4631-8ad3-034f17a0752a"
+    },
+    {
+      "claim_id": "d7d3b2a2-17d2-4a9c-bef7-b8404ac8f5a3",
+      "result_id": "fbedea8a-11f4-4631-8ad3-034f17a0752a"
+    },
+    {
+      "claim_id": "268f9d3b-3dc4-4827-9220-70b931b4e102",
+      "result_id": "fbedea8a-11f4-4631-8ad3-034f17a0752a"
+    },
+    {
+      "claim_id": "24ff20ad-3b25-409c-b53e-e7f238d3f078",
+      "result_id": "ff41fe51-9135-47d0-9cc7-0a34d3388e0a"
+    },
+    {
+      "claim_id": "a30c8be3-fd25-4360-ba67-02d4f30e159a",
+      "result_id": "ff41fe51-9135-47d0-9cc7-0a34d3388e0a"
+    },
+    {
+      "claim_id": "fdf2e5f2-7b33-4dc3-8511-3b9304242602",
+      "result_id": "ff41fe51-9135-47d0-9cc7-0a34d3388e0a"
+    },
+    {
+      "claim_id": "3fe5462e-4df4-48c9-9b6c-fdeea8952a83",
+      "result_id": "ff41fe51-9135-47d0-9cc7-0a34d3388e0a"
+    },
+    {
+      "claim_id": "43d9f6b6-8908-4be5-b984-2764bf682cd4",
+      "result_id": "ff41fe51-9135-47d0-9cc7-0a34d3388e0a"
+    },
+    {
+      "claim_id": "9d3d505b-7102-4dac-8362-2404af43cd29",
+      "result_id": "ff41fe51-9135-47d0-9cc7-0a34d3388e0a"
+    },
+    {
+      "claim_id": "b23440b4-435f-4b77-b0d9-f608b9e5e6fb",
+      "result_id": "56f73849-10cb-4cbc-ae09-18338c21a597"
+    },
+    {
+      "claim_id": "d6a09246-374f-47a8-9dfa-7a9c15fbcf62",
+      "result_id": "56f73849-10cb-4cbc-ae09-18338c21a597"
+    },
+    {
+      "claim_id": "35b3771f-275d-497c-b35e-04c5dd8be39f",
+      "result_id": "56f73849-10cb-4cbc-ae09-18338c21a597"
+    },
+    {
+      "claim_id": "ff729200-586b-4a56-ae51-4b3d102a188d",
+      "result_id": "56f73849-10cb-4cbc-ae09-18338c21a597"
+    },
+    {
+      "claim_id": "0612a02d-f0d0-4890-bfc0-3bf16c820003",
+      "result_id": "29d9e7b4-435f-4cf6-ba24-4253df7f244c"
+    },
+    {
+      "claim_id": "9134712c-5de5-49b7-9118-63c570a0612c",
+      "result_id": "d4ddd441-57d2-49e9-8f6f-b1f95d55b0c5"
+    },
+    {
+      "claim_id": "8fc2b760-46c6-4d48-9a5e-17161ccd1423",
+      "result_id": "37c5c740-e7c2-4906-bb42-b673f4bcbe1b"
+    },
+    {
+      "claim_id": "93a555c4-7f41-4c74-b7e9-d15ad6d39505",
+      "result_id": "37c5c740-e7c2-4906-bb42-b673f4bcbe1b"
+    },
+    {
+      "claim_id": "33c2df97-473e-4210-903e-cafd33bbeea4",
+      "result_id": "37c5c740-e7c2-4906-bb42-b673f4bcbe1b"
+    },
+    {
+      "claim_id": "7a746fa6-2b44-44e0-8c30-1997b32c381a",
+      "result_id": "34a34621-97c7-4b53-9edc-e76442a19ff4"
+    },
+    {
+      "claim_id": "2925719a-a573-4178-921f-179c7ba2278c",
+      "result_id": "34a34621-97c7-4b53-9edc-e76442a19ff4"
+    },
+    {
+      "claim_id": "382b1dea-abf1-43ab-ba8c-4135f46b3c1e",
+      "result_id": "34a34621-97c7-4b53-9edc-e76442a19ff4"
+    },
+    {
+      "claim_id": "287b914d-251a-4b47-8213-660bf801a410",
+      "result_id": "34a34621-97c7-4b53-9edc-e76442a19ff4"
+    },
+    {
+      "claim_id": "40cdc754-8426-4da1-8c83-5259d554891c",
+      "result_id": "34a34621-97c7-4b53-9edc-e76442a19ff4"
+    },
+    {
+      "claim_id": "958d82e4-121e-4d5b-8278-329e84d3482a",
+      "result_id": "0993c3cf-bda1-4f79-b4d3-fcc2f698705f"
+    },
+    {
+      "claim_id": "104f1ac6-600a-4406-88b2-b798de958eee",
+      "result_id": "0993c3cf-bda1-4f79-b4d3-fcc2f698705f"
+    },
+    {
+      "claim_id": "31945086-80f9-4359-b4bd-32492978f8e0",
+      "result_id": "0993c3cf-bda1-4f79-b4d3-fcc2f698705f"
+    },
+    {
+      "claim_id": "d213f597-f68b-40cb-89fb-918b77100d7b",
+      "result_id": "0993c3cf-bda1-4f79-b4d3-fcc2f698705f"
+    },
+    {
+      "claim_id": "e22564a7-7757-48a2-8542-13d809f9bb93",
+      "result_id": "0993c3cf-bda1-4f79-b4d3-fcc2f698705f"
+    },
+    {
+      "claim_id": "60606643-0ba6-4096-befe-ae4061ce2a9a",
+      "result_id": "0993c3cf-bda1-4f79-b4d3-fcc2f698705f"
+    },
+    {
+      "claim_id": "a47c2e0a-17f8-4eb8-b1d1-66f8e46fbce8",
+      "result_id": "2915bbe4-7890-48fd-afc0-4142bdb2c0fa"
+    },
+    {
+      "claim_id": "79b95f06-1c98-4163-90c1-3df9b0dd483e",
+      "result_id": "2915bbe4-7890-48fd-afc0-4142bdb2c0fa"
+    },
+    {
+      "claim_id": "380e72b2-e1d5-4b22-9b0c-a4310e86d524",
+      "result_id": "2915bbe4-7890-48fd-afc0-4142bdb2c0fa"
+    },
+    {
+      "claim_id": "161bbd21-f2cf-4d21-be1d-e882dde86d25",
+      "result_id": "2915bbe4-7890-48fd-afc0-4142bdb2c0fa"
+    },
+    {
+      "claim_id": "75e1266f-821d-4d40-b0a9-7c1fe91396d7",
+      "result_id": "2915bbe4-7890-48fd-afc0-4142bdb2c0fa"
+    },
+    {
+      "claim_id": "0526774b-03fa-480a-99d3-aee8095f5917",
+      "result_id": "4ae7a030-4712-49c4-a092-5bd45f3de4b9"
+    },
+    {
+      "claim_id": "d1006c8f-5d3f-4be2-bf1c-46a3e349509d",
+      "result_id": "4ae7a030-4712-49c4-a092-5bd45f3de4b9"
+    },
+    {
+      "claim_id": "cf5ba201-2996-4e0a-85a4-fa1926b367ac",
+      "result_id": "7d5ecaf1-6080-4acc-ac12-fdbbc7e2cc0a"
+    },
+    {
+      "claim_id": "daf114d1-e2a5-46ca-a937-b17af4bc5df5",
+      "result_id": "7d5ecaf1-6080-4acc-ac12-fdbbc7e2cc0a"
+    },
+    {
+      "claim_id": "d0cadff2-fdc6-430c-95ec-a79235055fa2",
+      "result_id": "7d5ecaf1-6080-4acc-ac12-fdbbc7e2cc0a"
+    },
+    {
+      "claim_id": "c860eb0d-a23b-4bbe-b01b-11f0986116b5",
+      "result_id": "7d5ecaf1-6080-4acc-ac12-fdbbc7e2cc0a"
+    },
+    {
+      "claim_id": "a46c45ab-cabc-4f16-862c-5893e3dd020c",
+      "result_id": "7d5ecaf1-6080-4acc-ac12-fdbbc7e2cc0a"
+    },
+    {
+      "claim_id": "3d156ed1-6724-4f34-a985-43ccb4daec1b",
+      "result_id": "7d5ecaf1-6080-4acc-ac12-fdbbc7e2cc0a"
+    },
+    {
+      "claim_id": "181a68aa-9e40-44e4-b26a-40b74ec0b035",
+      "result_id": "7d5ecaf1-6080-4acc-ac12-fdbbc7e2cc0a"
+    },
+    {
+      "claim_id": "5ef3792c-ac43-4303-9f48-5f4348a86216",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "a1a30f17-bfcb-490d-9e36-6ff26f6b041f",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "6daf504e-3ebd-4574-83dd-779e0cf6a500",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "cd462429-0c10-4505-ab23-ed822538f950",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "e02f7b09-2cab-4bd7-af80-bd36661b08bb",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "20c2113d-e4a1-43d2-9a37-f853bee351dc",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "6d2d94aa-2084-4390-8890-d25f2656fa6d",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "0e6e32cd-e577-42ec-8e3b-67161d4c435b",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "785c71d2-c598-48bd-b8c5-c967811d0d00",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "7006bedb-bbd7-4bc3-80a7-47b625bd5319",
+      "result_id": "d00d58cc-6066-4f12-82bd-9e046f991b30"
+    },
+    {
+      "claim_id": "cb18df48-cad9-4a69-830c-220bf7374275",
+      "result_id": "004c1e85-ac4f-4693-b0d3-ed5c640671ad"
+    },
+    {
+      "claim_id": "13ac085d-5608-4835-a534-256011904c17",
+      "result_id": "004c1e85-ac4f-4693-b0d3-ed5c640671ad"
+    },
+    {
+      "claim_id": "44187382-4f0a-4682-9729-c2b0ce5bcbe5",
+      "result_id": "004c1e85-ac4f-4693-b0d3-ed5c640671ad"
+    },
+    {
+      "claim_id": "4d3b19d9-a3bf-4fab-8adc-cc40a67d9cb7",
+      "result_id": "004c1e85-ac4f-4693-b0d3-ed5c640671ad"
+    },
+    {
+      "claim_id": "1592ed6d-e83f-4332-bc08-52bc80636297",
+      "result_id": "004c1e85-ac4f-4693-b0d3-ed5c640671ad"
+    }
+  ],
+  "comparisons": []
+}

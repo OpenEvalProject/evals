@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The previously proposed pom1p gradient model for cell size control is not supported by experimental data. Pom1p levels at the medial cortex do not decrease with cell length as predicted by the gradient model, and altering the gradient profile (pom1-3GFP) does not affect cell size at division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 show direct experimental evidence that pom1p levels at the medial cortex remain constant with cell length in both population and single-cell analyses. Claims C20-C22 demonstrate that steeper pom1p gradients (pom1-3GFP) do not alter cell division size or cdr2p node properties, contradicting key predictions of the gradient model. This challenges the previously proposed model (C57-C58) as stated in C59.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C29",
+      "C89",
+      "C90"
+    ],
+    "result": "Cdr2p accumulates at the medial cortex as cells grow, with local concentration increasing approximately twofold through interphase while whole-cell concentration remains constant. This accumulation occurs through an increase in the number of nodes rather than intensity of individual nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 provide direct experimental evidence from multiple measurement methods showing constant whole-cell cdr2p but increasing medial cortex concentration. Claims C28-C29 demonstrate the mechanism: more nodes form while individual node intensities remain constant. Claims C89-C90 synthesize these findings into a coherent model of cdr2p as a stable protein that accumulates at the medial cortex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Cdr2p functions as a dose-dependent 'sizer' that controls mitotic entry. Mild overexpression causes cells to divide at shorter lengths, while decreased expression leads to division at longer lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 provide direct experimental evidence showing that varying cdr2p expression levels affects cell size at division in a dose-dependent manner. The data show that 1.6-fold overexpression causes shorter cells, while decreased expression causes longer cells, supporting the conclusion in C3 that cdr2p is a dose-dependent sizer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C91",
+      "C101",
+      "C102"
+    ],
+    "result": "Cdr2p functions as a 'sizer' rather than a 'timer' - its accumulation at nodes depends on cell growth rather than time. Cdr2p does not accumulate when cell growth is blocked, and its accumulation rate correlates with cell growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide direct experimental evidence: latrunculin A treatment blocks both growth and cdr2p accumulation, and in for3\u0394 mutants with variable growth rates, cdr2p accumulation correlates with growth rate (p<10\u207b\u00b3). Claims C101-C102 establish the steady-state assumption underlying this interpretation. These data strongly support C91's conclusion that cdr2p is a sizer not a timer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C95",
+      "C96"
+    ],
+    "result": "Cells enter mitosis at a specific surface area rather than volume or length. Nodal cdr2p scales with cell surface area, and cells with different shapes (rga2\u0394, rga4\u0394 mutants) divide at similar surface areas but different volumes and lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 show that nodal cdr2p intensity correlates with surface area but not volume in cells with different widths. Claims C48-C50 demonstrate that wild-type, rga2\u0394, and rga4\u0394 strains all divide at ~150 \u00b5m\u00b2 surface area despite having different volumes (120-150 \u00b5m\u00b3) and lengths (11-15 \u00b5m), with statistical analysis confirming surface area distributions are most similar. This strongly supports C2 and C96.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86"
+    ],
+    "result": "A mathematical model explains how cdr2p senses cell surface area: cdr2p binds to the entire cell membrane and accumulates at medial nodes, where local concentration increases with cell surface area because nodal area does not scale proportionally with total membrane area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 describe the key principles of the mathematical model, which are validated by experimental data. C80 identifies the critical requirement that nodal area not scale proportionally with cell area (confirmed experimentally in Figure 2C). C81 establishes that nodes receive information about total surface area via cdr2p. The model successfully fits experimental data (Figure 5E) and explains the mechanism underlying C4 and C60.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cdr2p localizes to dim, dynamic dots distributed around the entire cell cortex, not just at medial nodes. This distribution does not correlate with pom1p levels at cell tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are directly supported by imaging data in Figure 5A and Video 2 showing dim cortical cdr2p dots throughout the cell cortex. The observation that this distribution does not vary with pom1p levels at tips supports the conclusion in C38 that cdr2p can bind to the whole cell surface, which is critical for the proposed size-sensing mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C69",
+      "C70",
+      "C99",
+      "C100"
+    ],
+    "result": "Pom1p regulates cdr2p node localization and properties rather than serving as the primary size sensor. In pom1\u0394 cells, cdr2p spreads throughout the cortex, nodes are more motile, and medial cortex cdr2p levels are lower, though total cellular cdr2p is unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 provide comprehensive experimental characterization of cdr2p in pom1\u0394 cells, showing altered distribution, increased mobility, and lower medial cortex levels despite unchanged total cellular levels. Claims C69-C70 and C99-C100 interpret these findings to conclude that pom1p's primary role is ensuring proper medial localization of nodes rather than serving as the size sensor itself. This is consistent with C88 showing size correction still occurs in pom1\u0394 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C33",
+      "C104"
+    ],
+    "result": "Quantitative characterization of cdr2p: cells contain ~9000 cdr2p molecules, mature nodes contain ~90 molecules each, cdr2p turns over with t1/2 ~3 min within nodes, and the majority of cdr2p is highly stable in interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C33, and C104 are all directly supported by quantitative experimental measurements using fluorescence intensity comparisons with standard proteins (C104, C26), FRAP experiments (C27), and cycloheximide treatment (C33). These measurements provide important quantitative parameters for understanding cdr2p dynamics and for the mathematical modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C56",
+      "C83"
+    ],
+    "result": "S. pombe cells are rod-shaped with approximately constant width (~3 \u00b5m diameter), grow from tips at nearly constant rate to ~14 \u00b5m length before entering mitosis, making them an attractive model for cell size studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C5 describe established S. pombe cell biology supported by citations and consistent with the experimental observations throughout the manuscript. Claims C56 and C83 establish why S. pombe is a good model system. These are well-established facts about the model organism that provide essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The genetic pathway for cell size control in fission yeast involves pom1p (DYRK kinase) inhibiting cdr2p (SAD family kinase), which inhibits wee1p, which inhibits cdk1p. These proteins localize to different cellular locations: pom1p at cortical gradients from tips, cdr2p at medial cortical nodes, and wee1p/cdk1p at the spindle pole body and nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 describe the established genetic pathway and protein localizations, all supported by multiple citations to previous studies and confirmed by imaging data in the current manuscript (Figures 1-2). The mutant phenotypes (C9-C11) are consistent with the proposed pathway. This provides essential background for understanding the current study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C61"
+    ],
+    "result": "Cortical node localization of cdr2p provides advantages over nuclear localization for size sensing because it allows local concentration to increase as cells grow, whereas nuclear volume also increases with cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by citation to Neumann and Nurse, 2007 and confirmed by data in Figure 1\u2014figure supplement 3 showing nuclear size increases with cell length. Claim C61 logically follows from this observation and the experimental data showing cdr2p concentration at nodes increases with cell size. This provides important conceptual justification for the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The medial cortical placement of cdr2p nodes near the nucleus may allow communication with cell cycle regulators (wee1p, cdk1p) at the spindle pole body, though additional regulatory layers would be needed to generate steep enough gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C67 are largely speculative (C63, C66, C67 explicitly noted as speculation). While C64-C65 are supported by citations showing localization of wee1p and cdk1p to SPB/nucleus, the proposed mechanism of communication via gradients from nodes to SPB remains hypothetical. C67 acknowledges that simple diffusion would not generate steep enough gradients, requiring additional unspecified regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C72",
+      "C73"
+    ],
+    "result": "Node localization to the medial cortex involves multiple inputs including the nucleus (which may govern dynamic nodal localization through nuclear shuttling) and the cortical endoplasmic reticulum organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by citations to previous studies on mid1p and cortical ER. Claim C68 synthesizes these findings to conclude that multiple inputs regulate node localization. While the current study doesn't directly test these mechanisms, the cited evidence supports these conclusions about factors affecting node localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cell size control involves additional regulators beyond cdr2p, including phosphorylation by pom1p and ssp1p, the cell tip protein nif1p, skb1p at cortical patches, and cdk1-tyrosine phosphorylation-independent pathways. The cdr2p-based mechanism is likely a core component of a larger network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are all supported by citations to recent studies identifying these additional factors and pathways. Claim C78 provides a reasonable synthesis acknowledging that while cdr2p is important, it operates within a larger regulatory network. This appropriately contextualizes the current findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The cdr2p size-sensing mechanism shares conceptual elements with the microtubule 'antenna model', where the plasma membrane acts as an antenna that cdr2p must bind before reaching nodes, and the system operates in dynamic steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 draw an analogy to the microtubule antenna model (supported by citation to Varga et al., 2006) to explain the conceptual basis of the size-sensing mechanism. Claim C87 establishes the steady-state assumption based on experimental data (C102) showing cdr2p levels are stable without growth. This provides useful conceptual framework for understanding the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Pom1p is excluded from the nucleus, and rga2\u0394 mutants are thinner while rga4\u0394 mutants are fatter than wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by citation to Saunders et al., 2012 and imaging data in Figure 1A and supplements. Claims C93-C94 are supported by citations to previous studies and confirmed by imaging in Figure 6A. These are established facts about the strains used in the study that are important for interpreting the surface area experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "In cells expressing PMT-Pom1C fusion (pom1p targeted throughout the plasma membrane), cdr2p is evenly distributed at low levels across the cortex and cells divide at abnormally long lengths similar to cdr2\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by citation to Moseley et al., 2009 and imaging data in Figure 7\u2014figure supplement 1. This provides additional evidence that proper spatial restriction of pom1p is important for cdr2p node localization and function, supporting the conclusions about pom1p's role in regulating node distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "For3\u0394 (formin) mutants are defective in cell polarity regulation and exhibit highly variable growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by citation to Feierbach and Chang, 2001. This established property of for3\u0394 mutants is essential for the experimental design testing whether cdr2p is a sizer vs. timer, as it provides cells with variable growth rates under identical conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Cells can control their size by growing to a specified size before division, and size thresholds have been demonstrated in several cell types, but the molecular mechanism for size sensing remains poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe the general state of knowledge in the field, with C54 supported by citation to Turner et al., 2012. These claims establish the broader context and motivation for the study, accurately representing what was known and unknown about cell size control prior to this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Size correction still occurs in pom1\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by citation to Wood and Nurse, 2013. This finding from another group is consistent with the current study's conclusion that pom1p is not the primary size sensor, and helps support the alternative model proposed here.",
+    "result_type": "MINOR"
+  }
+]

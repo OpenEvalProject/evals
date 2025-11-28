@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "A two-dimensional Bayesian multidimensional scaling (BMDS) model provides optimal predictive power for antigenic cartography across all four influenza lineages, with average absolute predictive errors between 0.78 and 0.91 log2 HI titers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are directly supported by empirical data in Table 1, showing that 2D models outperform 1D, 3D, 4D, and 5D models across all lineages. The predictive error values are explicitly reported and consistent with prior work (Smith et al., 2004).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Genetic relationships (amino acid mutations and phylogenetic distance) correlate with antigenic distance in influenza viruses, but the low R\u00b2 values indicate that genetic relationships alone cannot fully resolve antigenic distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by correlation analyses shown in Figure 1. The observed correlations are statistically documented, and the low R\u00b2 values (shown in Figure 1) directly support the inference that genetic data alone is insufficient for predicting antigenic phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Incorporating phylogenetic diffusion, estimating serum potencies, and including virus avidities progressively improve the predictive accuracy of the BMDS model, with improvements ranging from 0.01 to 0.12 log2 HI titers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by systematic model comparisons in Table 1 (models 6-10). Each model extension shows incremental improvements in test error across multiple lineages, demonstrating the value of these biological parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The BMDS model shows nearly constant prediction error across antigenic distance and time, validating the assumption that log2 titer drop is proportional to Euclidean distance in antigenic space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 are supported by Pearson correlation analyses (r = 0.098 for antigenic distance, r = -0.007 for time). These very low correlations validate the model's core assumption of proportionality between distance and titer drop.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Antigenic distances between virus pairs are well-resolved with 50% credible intervals of \u00b10.45 to \u00b10.76 antigenic units across the four influenza lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 report Bayesian credible intervals derived from the MCMC posterior distributions. These uncertainty estimates are appropriate for the Bayesian framework and indicate reasonable precision in antigenic location estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Influenza A/H3N2 exhibits substantially more antigenic evolution than A/H1N1, B/Vic, or B/Yam, with prominent antigenic clusters that show high genetic similarity and occasional evolutionary dead-ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by visual and quantitative data in Figures 2 and 3. The greater antigenic evolution in H3N2 is evident from the maps, and the genetic similarity within clusters and identification of dead-end clusters are directly observable in the phylogenetic-antigenic reconstructions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Antigenic drift rates vary substantially across influenza lineages: A/H3N2 evolves at 1.01 units/year, A/H1N1 at 0.62 units/year, B/Vic at 0.42 units/year, and B/Yam at 0.32 units/year, with punctuated evolution more pronounced in type A lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by quantitative estimates in Table 2 and Figure 3. The drift rates are explicitly calculated with credible intervals, and the punctuated nature of evolution is visually evident in Figure 3. The persistence of the B/Hubei-Songzi lineage is documented with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "While drift rates differ significantly between lineages, diffusion volatility shows less variation, resulting in similar levels of standing antigenic variation across all four lineages despite different drift rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by data in Table 2 and Figure 3. The contrast between variable drift rates and more consistent diffusion volatility is quantitatively documented, and Figure 3 visually demonstrates similar standing variation across lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Influenza A/H3N2 exhibits a characteristically 'spindly' phylogenetic tree with rapid population turnover and reduced effective population size (Ne\u03c4 = 5.03 years), while A/H1N1 and B lineages show greater viral coexistence and larger effective population sizes, consistent with the relationship between antigenic drift and genealogical diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by phylogenetic data in Figure 4 and Table 2. The visual differences in tree structure are clear, the Ne\u03c4 estimates are quantified with credible intervals, and the correlation between drift rate and Ne\u03c4 is documented with appropriate citations to epidemiological models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The faster rate of antigenic drift in A/H3N2 compared to other lineages may be influenced by differences in the fundamental reproductive number R0 or mutation rate, as suggested by epidemiological models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by the observed drift rate differences (Table 2, Figure 3) and appropriate citations to theoretical models (Gog and Grenfell 2002, Lin et al. 2003, Ferguson et al. 2003, Bedford et al. 2012). However, the authors appropriately note that the current study cannot distinguish between these causal mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Type A influenza lineages exhibit greater heterogeneity in year-to-year antigenic drift than type B lineages, with standard deviations of 0.97 units (H3N2), 0.66 units (H1N1), 0.46 units (B/Vic), and 0.26 units (B/Yam).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by data shown in Figure 5B. The standard deviations are explicitly calculated from the year-to-year drift estimates, and the greater heterogeneity in type A is visually and quantitatively evident.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A significant correlation exists between antigenic drift rate and seasonal incidence both across lineages (r = 0.97, p = 0.041) and within lineages, with Pearson correlations of 0.51 (H3N2), 0.29 (H1N1), 0.44 (B/Vic), and 0.14 (B/Yam), and an overall p-value of 0.018 across all four lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C76 report correlations between drift and incidence with statistical tests. However, several concerns arise: (1) The within-lineage correlations have marginal or non-significant p-values (only H3N2 approaches significance at p=0.056), (2) The sample sizes are small (11-20 years per lineage), (3) The correlation across lineages (n=4) is heavily influenced by a single data point, and (4) Temporal autocorrelation in both drift and incidence data may inflate correlation estimates. While the overall pattern is suggestive, the statistical evidence is not robust enough to strongly support a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C82"
+    ],
+    "result": "The observation that periods of pronounced antigenic drift precede increased incidence across all four influenza lineages suggests a causal relationship in which antigenic evolution drives increased incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77 and C82 make causal inferences from correlational data. While the temporal ordering (drift preceding incidence) is consistent with causation, several alternative explanations are not adequately ruled out: (1) increased incidence could drive sampling bias toward more divergent strains, (2) both drift and incidence could be driven by a third variable (e.g., population immunity dynamics), (3) the correlation could be spurious given the small sample sizes and multiple testing. The authors appropriately use cautious language ('suggests'), but the evidence remains insufficient for a strong causal claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The correlation between antigenic drift and incidence is not confounded by sample count, as demonstrated by the lack of correlation (r = -0.01, p = 0.514) between sample count ratios and drift estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 address a potential confounding variable through appropriate control analyses. The lack of correlation between sample count and drift estimates (Figure 7) with non-significant p-values across all lineages supports the conclusion that sampling bias does not explain the drift-incidence correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The correlation between antigenic drift and incidence suggests the possibility of using HI data at the start of an influenza season to predict which lineage will subsequently predominate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is speculative and depends on the validity of the causal relationship between drift and incidence (C77, C82), which itself is uncertain. Additionally, the predictive utility would require prospective validation, which is not provided. The claim is appropriately framed as a possibility rather than a demonstrated capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The BMDS model produces results strongly congruent with MDS results when using equivalent models, with consistent antigenic cluster locations and narrow credible intervals across the temporal spectrum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by systematic comparisons in Figure 10 using the same dataset as Smith et al. 2004. The visual and quantitative congruence between MDS and BMDS methods validates the Bayesian approach, and the narrow credible intervals demonstrate good precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Both MDS and BMDS methods exhibit metastable behavior with at least two global optima involving rotation of early H3N2 clusters (HK/68, EN/72, VI/75), though solutions remain locally consistent for viruses up to ~15 years divergent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by comparisons in Figures 10-11 and citations to Smith et al. 2004. The identification of multiple solutions with similar likelihoods is an important finding about model identifiability, and the local consistency despite global flexibility is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Including a drift prior on antigenic locations resolves the identifiability problem, maintains local consistency with MDS results for viruses ~15 years divergent, and often improves predictive power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by comparisons in Figure 12 and Table 1. The drift prior successfully eliminates metastability (as evidenced by MCMC convergence), maintains local consistency, and shows improved test error for three of four lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Estimating virus avidity and serum potency produces a more linear antigenic map resembling the drift prior model while preserving local consistency with MDS results for viruses less than ~10 years divergent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 are supported by comparisons in Figure 13. The linearization effect of estimating avidities and potencies is visually evident, and the local consistency is quantitatively demonstrated for temporally proximate viruses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Viruses 15 or more years divergent always yield threshold titers requiring indirect inference, but local comparisons used to calculate year-to-year drift are robust to model particulars.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 are supported by observations from the HI data and the demonstrated local consistency across different models (Figures 10-13). The limitation of HI assay sensitivity is well-established, and the robustness of local estimates despite global model differences is an important validation.",
+    "result_type": "MINOR"
+  }
+]

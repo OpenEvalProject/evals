@@ -1,0 +1,83 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C14",
+      "C15",
+      "C16",
+      "C28",
+      "C29"
+    ],
+    "result": "The A88V mutation in Cx26 renders hemichannels insensitive to CO2. Using dye loading assays with pH-matched hypercapnic conditions (55 and 70 mmHg CO2), the authors demonstrate that Cx26A88V hemichannels do not open in response to elevated CO2, unlike wild-type Cx26.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental design includes appropriate pH controls (C14, C15) and adequate replication (C28), critical data are missing from the manuscript. No figures, statistical comparisons, or quantitative results are presented to support the claim of CO2 insensitivity (C4). Without seeing the actual dye loading data, cumulative probability distributions, or statistical tests comparing hypercapnic vs. control conditions, the conclusion cannot be verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C30"
+    ],
+    "result": "The A88V mutant Cx26 hemichannels are functional and can be opened by zero Ca2+ conditions. This positive control demonstrates that the mutant protein forms functional hemichannels capable of dye uptake when appropriately stimulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The rationale for using zero Ca2+ as a positive control is sound (C22, C30), as this is an established method to open connexin hemichannels. However, no data are presented showing that dye loading actually occurred under zero Ca2+ conditions. Without quantitative results or images demonstrating successful dye uptake, we cannot verify that functional hemichannels were expressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The A88V mutation in Cx26 is associated with disordered breathing in humans, representing the first connection between CO2 sensitivity of Cx26 and human pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "No case study data are presented in the manuscript despite reference to IRB exemption for a case report. The claim of disordered breathing (C6) lacks any supporting clinical data, patient information, or respiratory measurements. The novelty claim (C7) cannot be evaluated without demonstrating both the CO2 insensitivity and the clinical breathing phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The A88V mutation was successfully introduced into Cx26 using site-directed mutagenesis and verified by sequencing. The mutant construct was cloned into an expression vector for mammalian cell studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular cloning approach is standard and well-described (C8, C9). Sequencing verification (C10) confirms both the presence of the desired mutation and absence of unintended mutations, which is essential for attributing any functional changes specifically to the A88V substitution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A dye loading assay system was established using transiently transfected HeLa cells with appropriate imaging and quantification methods. The analysis pipeline includes background subtraction and ROI-based fluorescence quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell culture (C11, C12), transfection (C13), imaging (C24), and analysis methods (C25, C26, C27) are clearly described and represent standard approaches for assessing hemichannel function via dye uptake. The background correction procedure is appropriate for fluorescence quantification.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Evolutionary coupling analysis accurately predicts inter-protein contacts in 76 complexes of known 3D structure. The method achieves 74% precision at 10\u00c5 and 69% at 8\u00c5 for predictions with EVcomplex score \u22650.8, with 53/76 complexes having at least one predicted contact above threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C16-C21, C79-C81 collectively demonstrate that the evolutionary coupling method accurately predicts inter-protein contacts in a blinded benchmark set. The precision metrics (C79-C80), benchmark size (C4, C81), and specific performance data (C17-C21) provide converging quantitative evidence that the method works as claimed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C71",
+      "C72"
+    ],
+    "result": "Protein-protein docking using predicted evolutionary couplings as restraints produces accurate 3D models of complexes. All 15 tested complexes achieved interface RMSDs under 6\u00c5, with 12/15 under 4\u00c5 and 11/15 top-ranked models under 5\u00c5, using minimal computational resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C22-C28, C71-C72 demonstrate successful 3D structure prediction through docking. The quantitative RMSD metrics (C17-C19, C23, C25, C27), specific examples (C22-C27), and comparison to controls (C20-C21) provide strong evidence that evolutionary couplings are sufficient for accurate complex structure determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Predicted evolutionary couplings identify functionally important residue networks in ABC transporter complexes. For MetNI and BtuCD, top-ranked inter-ECs map to experimentally validated residues that couple ATP hydrolysis to conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 show that evolutionary couplings capture not just spatial proximity but functional constraints. The agreement with experimental data (C32) and identification of analogous coupling mechanisms in different transporter families (C31, C33) support the biological relevance of the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C49",
+      "C50"
+    ],
+    "result": "EVcomplex successfully predicts inter-protein contacts for 32 complexes of unknown structure. Predictions include MetQ-MetI, UmuD-UmuC, and DinJ-YafQ, with the latter validated by a crystal structure published during review (17/19 predictions within 8\u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C41, C49-C50 demonstrate prospective prediction capability. The post-hoc validation of DinJ-YafQ predictions (C49) provides strong independent confirmation, while consistency with known biology (C41) supports other predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C74"
+    ],
+    "result": "EVcomplex distinguishes interacting from non-interacting protein pairs in the ATP synthase complex. Using a 0.8 score threshold, 24/28 possible subunit interactions are correctly classified, with 80% of residue pairs in known structures correctly predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51-C55, C74 demonstrate that the method can identify which proteins interact in a large complex. The quantitative performance (C52, C54) and characterization as proof-of-principle (C74) appropriately frame the achievement while acknowledging limitations (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C109"
+    ],
+    "result": "EVcomplex predictions for ATP synthase a-b subunit interactions agree with experimental crosslinking data. The predicted structure of the a-subunit is consistent with crosslinking topology, and 6/13 high-scoring inter-ECs match experimental interaction regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64, C109 show that predictions for structurally uncharacterized ATP synthase subunits agree with available experimental data. The consistency with crosslinking experiments (C59-C63) and functional residues (C64) validates the approach for partially characterized systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "EVcomplex accurately predicts contacts for the conformationally flexible ATP synthase \u03b5-\u03b3 subunit complex. Despite the \u03b5 subunit adopting multiple conformations, 6/10 top predictions are within 8\u00c5, and docking achieves 1.4\u00c5 interface RMSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 demonstrate that the method can handle conformational flexibility. The accurate predictions (C36) and successful docking (C37) despite known conformational heterogeneity (C35) show robustness to biological complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The EVcomplex score normalizes raw evolutionary coupling scores for sequence depth and alignment length, enabling uniform thresholds across protein pairs. The score is based on distance from background noise and requires minimum 0.3 sequences per residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C93-C96, C106-C108 describe the methodological innovation that enables comparison across diverse protein pairs. The demonstration of bias without normalization (C95) and the empirical basis for the correction (C96) support the approach, though the non-blind optimization (C96) is appropriately disclosed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Three complexes show exceptional prediction accuracy with >20 inter-protein contacts at >80% precision: histidine kinase/response regulator (78 pairs), t-RNA synthetase (32 pairs), and vitamin B importer (21 pairs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 highlight the best-performing predictions in the benchmark set. These examples demonstrate the upper bound of method performance and show that high-quality predictions are achievable with sufficient sequence information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "EVcomplex predictions for UmuD-UmuC suggest that residues Y33 and I38 in the UmuD N-terminal arm may become available for UmuC binding after cleavage, potentially identifying critical residues for translesion synthesis function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C47 present predictions for UmuD-UmuC with biological interpretation. While the predictions are internally consistent (C45) and biologically plausible (C46-C47), the speculative nature (C46-C47 marked as SPECULATION) and lack of experimental validation make this result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The method's primary limitation is dependence on large numbers of evolutionarily related sequences. Currently, EVcomplex provides information for ~1/10th of E. coli interactions, but this fraction will increase as more genomes are sequenced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 honestly assess current limitations and future prospects. The quantification of current coverage (C69), explanation of methodological constraints (C67-C68), and projection of future capabilities (C70) provide a balanced evaluation of the method's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Deconvoluting homomultimeric inter-ECs from intra-protein signals is identified as an important technical challenge for future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 identifies a clear limitation for complexes containing homomultimers. This is appropriately characterized as a future direction rather than a current capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Some high-confidence inter-protein ECs are not close in 3D space in known structures. False positives may result from non-conserved interactions across species/paralogs, non-spatial coupling, or alternative conformations not captured by available structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 acknowledge and explain false positive predictions. The discussion of potential sources of error (C87-C88) shows appropriate critical evaluation of the method's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The computational pipeline involves: (1) identifying 326 close-genome E. coli protein pairs, (2) generating alignments with jackhmmer using bit score threshold 0.5\u00d7sequence length, (3) pairing sequences by genomic proximity, (4) filtering by distance <10kb, (5) clustering at 80% identity, and (6) calculating evolutionary couplings with PLM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C105 describe the complete computational methodology. The workflow is clearly documented with specific parameters (C98, C101, C102, C104) and appropriate citations to underlying methods (C90-C91, C103).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Docking methodology uses HADDOCK with evolutionary couplings as distance restraints on C\u03b1 atoms. Unbound structures or randomized side chains were used to avoid bias. Controls used center-of-mass restraints only. Interface RMSD was calculated for residues with atoms <6\u00c5 from partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C117 describe the docking protocol with appropriate controls and validation measures. The use of unbound structures (C111) and negative controls (C114) demonstrates methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background context: Experimental screens have identified tens of thousands of protein interactions, but ~80% of known interactions in bacteria, yeast, and human lack 3D structural information (~30,000 in human, ~6,000 in E. coli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C9 establish the scientific context and motivation. These are well-established facts supported by appropriate citations (C7-C9) and general knowledge (C1-C2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work: Evolutionary co-variation analysis for protein interactions was first used 20 years ago with local models. Recent global models have been successful for histidine kinases/response regulators and single protein structure determination. Parallel independent work by Ovchinnikov et al. (2014) used similar approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 accurately summarize prior work with appropriate citations. The acknowledgment of parallel work (C13) and distinction between local and global models (C11-C12) properly contextualizes the current contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Future applications: Understanding protein interaction networks is critical in eukaryotic systems (kinases, GPCRs, PDZ domains). Results on histidine kinase/response regulator systems suggest optimism for handling less obligate interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 discuss future applications and potential generalization. While C75 states importance (supported by general knowledge), C76 is explicitly speculative about handling transient interactions, making the overall result uncertain.",
+    "result_type": "MINOR"
+  }
+]

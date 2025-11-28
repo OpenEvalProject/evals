@@ -1,0 +1,1228 @@
+{
+  "submission": {
+    "id": "9f8b128a-daeb-4c81-af54-7d311e4961b4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:16:33.923405Z",
+    "updated_at": "2025-11-28T21:16:33.923405Z"
+  },
+  "content": [
+    {
+      "id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "submission_id": "9f8b128a-daeb-4c81-af54-7d311e4961b4",
+      "content_type": "manuscript",
+      "content_text": "# Ecology and evolution of viruses infecting uncultivated SUP05 bacteria as revealed by single-cell- and meta-genomics\n\n## Authors\n\n- Simon Roux<sup>1</sup>\n- Alyse K Hawley<sup>2</sup>\n- Monica Torres Beltran<sup>2</sup>\n- Melanie Scofield<sup>2</sup>\n- Patrick Schwientek<sup>3</sup>\n- Ramunas Stepanauskas<sup>4</sup>\n- Tanja Woyke<sup>3</sup>\n- Steven J Hallam<sup>2</sup> \u2020\n- Matthew B Sullivan<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Ecology and Evolutionary Biology University of Arizona Tucson United States\n2. Department of Microbiology and Immunology University of British Columbia Vancouver Canada\n3. U.S Department of Energy Joint Genome Institute Walnut Creek United States\n4. Bigelow Laboratory for Ocean Sciences East Boothbay United States\n5. Graduate Program in Bioinformatics University of British Columbia Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nViruses modulate microbial communities and alter ecosystem functions. However, due to cultivation bottlenecks, specific virus\u2013host interaction dynamics remain cryptic. In this study, we examined 127 single-cell amplified genomes (SAGs) from uncultivated SUP05 bacteria isolated from a model marine oxygen minimum zone (OMZ) to identify 69 viral contigs representing five new genera within dsDNA Caudovirales and ssDNA Microviridae. Infection frequencies suggest that \u223c1/3 of SUP05 bacteria is viral-infected, with higher infection frequency where oxygen-deficiency was most severe. Observed Microviridae clonality suggests recovery of bloom-terminating viruses, while systematic co-infection between dsDNA and ssDNA viruses posits previously unrecognized cooperation modes. Analyses of 186 microbial and viral metagenomes revealed that SUP05 viruses persisted for years, but remained endemic to the OMZ. Finally, identification of virus-encoded dissimilatory sulfite reductase suggests SUP05 viruses reprogram their host's energy metabolism. Together, these results demonstrate closely coupled SUP05 virus\u2013host co-evolutionary dynamics with the potential to modulate biogeochemical cycling in climate-critical and expanding OMZs.\n\n## Introduction\n\nMicrobial communities are critical drivers of nutrient and energy conversion process in natural and engineered ecosystems (Falkowski et al., 2008). In the last two decades, it has progressively become clear that viral-mediated predation, gene transfer, and metabolic reprogramming modulate the structure, function, and evolutionary trajectory of these microbial communities (Suttle, 2007; Abedon, 2009; Rodriguez-Valera et al., 2009; Hurwitz et al., 2013). At the same time, the vast majority of microbes and viruses remain uncultivated and their diversity is extensive, so that model system-based measurements rarely reflect the network properties of natural microbial communities. While culture-independent methods, such as metagenomics and metatranscriptomics, can illuminate latent and expressed metabolic potential of microbial (Frias-Lopez et al., 2008; Venter et al., 2004; Stewart et al., 2012; DeLong et al., 2006) or viral communities (Angly et al., 2006; Hurwitz et al., 2013; Mizuno et al., 2013), interactions between community members remain difficult to resolve.\n\nClustered regularly interspaced short palindromic repeats (CRISPRs) containing short stretches of viral or plasmid DNA separated between repeat sequences can provide a record of past infections in uncultivated microbial communities. Together with associated Cas (CRISPR-associated) genes, CRISPRs function as an adaptive immune system in prokaryotes with the potential to suppress viral replication or horizontal gene transfer (Sorek et al., 2008). However, an application of CRISPR-based virus\u2013host association to both uncultivated hosts and viruses require the assembly of complete or near-complete genomes of both entities, limiting their utility to lower diversity ecosystems (Andersson and Banfield, 2008; Anderson et al., 2011). Alternatively, single-cell amplified genome (SAG) sequencing is emerging as a more direct method to chart metabolic potential of individual cells within microbial communities with special emphasis on candidate phyla that have no cultured representatives (Yoon et al., 2011; Martinez-Garcia et al., 2012; Rinke et al., 2013; Swan et al., 2013). Here, we combine metagenomic and single-cell genomic sequencing to explore virus\u2013host interactions within uncultivated bacteria inhabiting a marine oxygen minimum zone (OMZ).\n\nMarine OMZs, defined by dissolved oxygen concentrations <20 \u03bcmol kg\u22121, are oceanographic features that arise from elevated demand for respiratory oxygen in poorly ventilated, highly stratified waters. OMZs are crucial for biogeochemical cycles in the global ocean, as they represent hotspots for microbial-driven carbon, nitrogen, and sulfur transformations (Ulloa et al., 2012; Wright et al., 2012) and play a disproportionate role in nitrogen loss processes and greenhouse gas cycling (Lam et al., 2009; Ward et al., 2009). Moreover, these zones are expanding due to changing ocean water temperatures and circulation patterns (Stramma et al., 2008; Whitney et al., 2007). Given these changing physical and chemical conditions and the importance of OMZs to ocean-atmosphere functioning, a clearer understanding of biological responses is critical to develop a much-needed predictive modeling capacity for OMZs.\n\nIn OMZs, microbial communities drive matter and energy transformations and are typically dominated by sulfur-oxidizing Gammaproteobacteria related to the chemoautotrophic gill symbionts of deep-sea clams and mussels (Stewart et al., 2012; Wright et al., 2012). Phylogenetic analysis indicates that these bacteria are comprised of two primary lineages; one consisting of sequences affiliated with SUP05 and clam and mussel symbionts, and the other consisting of sequences affiliated with Arctic96BD-19 (Walsh et al., 2009; Wright et al., 2012). Both groups partition along gradients of oxygen and sulfide, with Arctic96BD-19 most prevalent in oxygenated waters and SUP05 most prevalent in anoxic or anoxic/sulfidic waters (Wright et al., 2012). Niche partitioning between SUP05 and Arctic96BD-19 is driven by complementary modes of carbon and energy metabolism that harness alternative terminal electron acceptors. While both Arctic96BD-19 and SUP05 use reduced sulfur compounds as electron donors to drive inorganic carbon fixation, SUP05 manifests a more versatile energy metabolism linking carbon, nitrogen, and sulfur cycling within OMZ and hydrothermal vent waters (Canfield et al., 2010; Zaikova et al., 2010; Swan et al., 2011; Stewart et al., 2012; Anantharaman et al., 2013; Mattes et al., 2013; Anantharaman et al., 2014; Hawley et al., 2014).\n\nOcean viruses, predominantly investigated in the sunlit or photic zone, are abundant, dynamic, and diverse (Suttle, 2005) with growing evidence for direct roles in metabolic reprogramming of microbial photosynthesis, central carbon metabolism, and sulfur cycling (Mann et al., 2003; Lindell et al., 2005; Clokie et al., 2006; Breitbart et al., 2007; Dammeyer et al., 2008; Sharon et al., 2009, 2011; Thompson et al., 2011; Hurwitz et al., 2013). Preliminary studies suggest that similar patterns are emerging in OMZ waters. In the Eastern Tropical South Pacific, a metagenomic survey revealed specific viral populations endemic to OMZ waters (Cassman et al., 2012). Consistent with most viral metagenome surveys, approximately 3% of sequences were affiliated with functionally annotated genes in public databases. From a nitrogen and sulfur cycling perspective, viromes from the oxycline contained genes encoding components of nitric oxide synthase, nitrate and nitrite ammonification, and ammonia assimilation pathways as well as inorganic sulfur assimilation (Cassman et al., 2012). In anoxic waters, viromes contained genes encoding components of denitrification, nitrate and nitrite ammonification, and ammonia assimilation pathways as well as sulfate reduction, thioredoxin-disulfide reductase, and inorganic sulfur assimilation (Cassman et al., 2012). More recently, metagenomic analyses of hydrothermal vent plume microbial communities dominated by SUP05 bacteria-enabled phage genome assemblies presumed to infect SUP05 (Anantharaman et al., 2014). Consistent with viruses encoding auxiliary metabolic genes (AMGs, Breitbart et al., 2007) enabling viral reprogramming of microbial metabolic pathways (Lindell et al., 2005; Thompson et al., 2011), putative SUP05 phage contained genes encoding reverse dissimilatory sulfite reductase A and C positing a role for viruses in modulating the marine sulfur cycle (Anantharaman et al., 2014).\n\nGiven that SUP05 and Arctic96BD-19 play key roles in OMZ ecology and biogeochemistry, we designed an approach to target SUP05-associated viruses in a model OMZ ecosystem, Saanich Inlet a seasonally anoxic fjord on the coast of Vancouver Island, British Columbia, Canada. We obtained a SUP05 single-cell genomic data set spanning defined redox gradients in the Saanich Inlet water column, identified SUP05-associated viruses infecting SAGs, and used resulting virus\u2013host pairs as recruitment platforms to estimate viral diversity, activity, dispersion, and potential impact on SUP05 population dynamics and metabolic capacity. The resulting data sets open an unprecedented window on uncultivated virus\u2013host dynamics in OMZs and provide an analytical approach extensible to other natural or engineered ecosystems.\n\n## Results and discussion\n\n### Generating a SUP05 bacterial genomic data set\n\nSUP05 SAGs were generated at the Bigelow Laboratory for Ocean Sciences (http://scgc.bigelow.org, [Stepanauskas and Sieracki, 2007; Swan et al., 2013]). Briefly, fluorescence-activated cell sorting was used to separate individual cells <10 \u00b5m in diameter from 100, 150, and 185 meters water depth, spanning water column gradients of oxygen and sulfide in Saanich Inlet (Figure 1\u2014figure supplement 1). Water column redox conditions were typical for stratified summer months when SUP05 populations bloom in deep basin waters. A total of 315 anonymously sorted cells (discriminated solely using fluorescence and size for sorting) per depth interval were subjected to multiple displacement amplification (MDA), and the taxonomic identity of single amplified genomes (SAGs) was determined by directly sequencing bacterial small subunit ribosomal RNA (SSU rRNA) gene amplicons. SAGs affiliated with SUP05 (n = 127) and Arctic96BD-19 (n = 9) populations were subsequently whole genome shotgun sequenced on the Illumina HiSeq platform. Most (113/127) SUP05 SAGs fell into two major operational taxonomic units (OTUs) or subclades, based on SSU rRNA gene sequence clustering at the 97% identity threshold\u2014SUP05_01 (n = 65) and SUP05_03 (n = 48) (Figure 1\u2014figure supplement 2). SUP05_01 SAGs were recovered at 100, 150, and 185 meters, peaking at 150 meters, while SUP05_03 SAGs were more evenly distributed between 150 and 185 meters. A number of SUP05 SAG assemblies contained viral contigs consistent with sampling infected cells across the redoxcline.\n\n### New SUP05-associated phage genomes\n\n50 bona fide viral contigs (Supplementary file 1, \u2018Materials and methods\u2019) were identified in 30 SUP05 SAGs using viral marker genes, hereafter termed \u2018hallmark genes\u2019 (Abrescia et al., 2012). SUP05 viral contigs were affiliated with known families of Caudovirales (dsDNA) and Microviridae (ssDNA) bacteriophages. The presence of Caudovirales is not surprising as they are commonly observed in oceanic samples (Williamson et al., 2012; Hurwitz and Sullivan, 2013), including the ETSP OMZ and SUP05-dominated hydrothermal vent plumes (Cassman et al., 2012; Anantharaman et al., 2014). Microviridae, however, are usually observed in surface seawater or deep-sea sediments and have not been previously associated with OMZs (Angly et al., 2009; Tucker et al., 2011; Yoshida et al., 2013; Labont\u00e9 and Suttle, 2013b). Given the SUP05 lineages described above, we note that viral contigs recovered from SUP05_01 SAGs were exclusively Caudovirales, whereas SUP05_03 SAGs contained both Caudovirales and Microviridae. Using non-reference-based methods, an additional 19 contigs were identified as putative viral sequences. These sequences did not encode hallmark genes, but displayed genomic characteristics consistent with novel viral genomes including a low ratio of characterized genes (i.e., most genes predicted on these contigs do not match any sequences from the reference databases), a high number of short genes, and a low number of strand changes between two consecutive genes (i.e., gene sets tend to be coded on the same strand; \u2018Materials and methods\u2019, Figure 1\u2014figure supplement 3). In total, 69 viral contigs encoding 898 predicted open reading frames over 529 kb were recovered from SUP05 SAGs representing current viral infections.\n\n### Viral infection of SUP05 cells in nature\n\nForty-two out of 127 SUP05 SAGs sequenced contained one or more viral contigs (Figure 1\u2014source data 1), indicating that \u223c1/3 of SUP05 cells inhabiting the Saanich Inlet water column were infected by viruses. Such lineage-specific infection frequency determination is unprecedented in uncultivated or cultivated host cells and is largely consistent with community-averaged estimates for marine bacteria (Suttle, 2007). As with all the other means to estimate infection frequency and viral-induced microbial mortality (Brum et al., 2014), there are caveats to these numbers including underestimation linked to incomplete identification of viruses in the SAG data sets. Such an underestimation could result from (i) lack of reference genomes, (ii) incomplete SAG genomes, (iii) early infections not being detected prior to genome insertion and replication, or (iv) late infections not being detected due to phage-directed degradation of host DNA preventing 16S identification during the SAG selection process. Since the infection frequency estimates are largely consistent with community-based measurements, we expect that these biases are small.\n\nSUP05 viral infections showed strong depth partitioning along defined gradients of oxygen and sulfide (Figure 1). At 100 meters a single SUP05 SAG (of 12) displayed current viral infection, while the percentage of infected SUP05 SAGs increased to 28% and 47% at 150 and 185 meters (Figure 1\u2014source data 1). Consistent with previous studies evaluating community-averaged lytic viral activity (Weinbauer et al., 2003), cell-specific lytic viral infection estimates peaked where SUP05 is typically most abundant and metabolically active in the Saanich Inlet water column (Hawley et al., 2014). Additionally, remnants of past infections were detected in SUP05 and Arctic96BD-19 SAGs, including 13 putative prophages and 25 CRISPR sequences (Supplementary file 2). None of these \u2018past infection\u2019 sequences match the detected \u2018current infection\u2019 viral contigs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig1-v2.jpg)\n\n**Figure 1.:** Key abiotic measurements are represented as background coloring (oxygen levels) and black lined graphs at left (hydrogen sulfide and temperature). SUP05 viral infections determined from 127 SAGs are indicated at right by black slices in pie charts where current infections were delineated from intact viral contigs and past infections were inferred from identification of defective prophages and CRISPR loci.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The tree was inferred using maximum-likelihood implemented in PHYML. The percentage (\u226570%) of replicates in which the associated taxa clustered together in the bootstrap test (1000 replicates) is shown next to the branches. Reference sequences for both lineages are marked with a star. Representative sequences for SUP05 and Arctic96BD-19 clusters are labeled \u2018SUP05_cluster number\u2019 followed by the name of the sequence according to NCBI. SAG representative sequences are shown in red, SAG sequences distribution with depth is represented by colored circles (100 m: green, 150 m: blue, 200 m: purple) whose circumference indicated the total number of SAG sequences (reads) within the cluster.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** For each set of contigs, the distribution of average gene size (A), ratio of strand changes (number of strand changes between two consecutive genes divided by the total number of genes on the contig, B), and ratio of uncharacterized genes (number of genes with no significant hit in PFAM database divided by the total number of genes on the contig, C) are displayed.\n\n### Patterns of co-infection between SUP05 ssDNA and dsDNA viruses\n\nTo better understand the ecological and evolutionary forces shaping SUP05 virus\u2013host interactions in Saanich Inlet, we focused on 12 viral reference contigs including 4 Caudovirales contigs longer than 15 kb (from 3 Podoviridae and 1 Siphoviridae) and 8 complete genomes of Microviridae. Genome organization (Figure 2) and phylogenetic analysis (Figure 2\u2014figure supplement 1) revealed that all four Caudovirales contigs represent new genera (share <40% of their genes, Lavigne et al., 2008, Figure 2\u2014source data 1) even when considering the viruses recently assembled from SUP05-dominated microbial metagenomes (Anantharaman et al., 2014). All 8 Microviridae contigs shared 100% nucleotide identity, despite their recovery from different SUP05_03 SAGs (Supplementary file 3), and represent a new genus within the subfamily Gokushovirinae (Figure 2\u2014figure supplements 2 and 3). These identical Microviridae genomes could represent a lineage-specific viral bloom, targeting the SUP05_03 subclade. SUP05 infection by Gokushovirinae extends the known host range from small parasitic bacteria (namely Chlamydia, Bdellovibrio and Spiroplasma) to include free-living Gammaproteobacteria, the first marine host identified for this subfamily of viruses (Labont\u00e9 and Suttle, 2013a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig2-v2.jpg)\n\n**Figure 2.:** Viral hallmark genes are underlined and identified on plots (MCP: major capsid protein, Sc: scaffolding protein, H-T conn.: head-tail connector). Sequence similarities were deduced from a tBLASTx comparison. For clarity sake, several sequences including SUP05 viral contig M8F6_0, K04_0, and G10_6 are reverse-complemented (noted RC).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** All SUP05 contigs affiliated to the Podoviridae and harboring the major capsid protein gene are included in the tree and highlighted in bold. The three SUP05 Podoviridae reference contigs (longer than 15 kb) are noted with a star. SH-like branch supports are indicated on the tree, and all branches with a support lower than 0.5 were collapsed.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Tree was computed with PhyML (maximum-likelihood tree, LG model, gamma parameter estimated with CAT approximation), and SH-like supports are indicated for each branch. All branches with support lower than 0.50 were collapsed. The tree is focused around the Gokushovirinae subfamily and includes the Pichovirinae subfamily as an outgroup. Aquatic Gokushovirinae are colored according to their type of sample, and Saanich Inlet sequences are highlighted in bold. Cultivated Gokushovirinae are noted in black and highlighted in bold, with the associated genus associated in italic. All the other sequences are non-cultivated and currently affiliated to \u2018Unclassified Gokushovirinae\u2019.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Viral hallmark genes are labeled on the plot. Associated sequence \u2018Marine Gokushovirus isolate SOG1-KC131024\u2019 was sampled from Strait of Georgia (Labont\u00e9 and Suttle 2013b), on which the Saanich Inlet fjord is opening.\n\nCuriously, most (11 of 12) Microviridae-infected SUP05_03 SAGs also contained Podoviridae contigs (Supplementary file 4). While previously postulated based on comparative genomics, lineage-specific co-infection between the ssDNA Microviridae and dsDNA phages has not been observed (Roux et al., 2012). Such highly correlated co-occurrence in SUP05 SAGs (Fisher exact test p-value = 2e\u221215) is consistent with non-random co-infection. This could be linked to cooperative infection modes between viruses or opportunistic infection of cells already infected by the other virus type, as seen in the case of satellite viruses and virophages (Murant and Mayo, 1982; La Scola et al., 2008). It is worth noting that the exact nature of interaction between satellite and helper viruses, or between virophages and their associated viruses, is still a matter of debate, and this association between two phages previously thought to be autonomous and independent (Microviridae and Caudovirales) presents a new variation on this theme (Desnues and Raoult, 2012; Krupovic and Cvirkaite-Krupovic, 2012; Fischer, 2012). Because the modular theory of phage evolution postulates that phage genomes consist of collections of gene modules, exchanged through proximity-enhanced recombination (Hendrix et al., 2000) such co-infection of a single host by ssDNA and dsDNA phages provides evidence for how such chimeric ssDNA\u2013dsDNA viral genomes may come into existence (Diemer and Stedman, 2012; Roux et al., 2013).\n\n### SUP05 viruses endemic to Saanich Inlet are stable over time\n\nTo extend our analysis of SUP05 virus\u2013host interactions beyond individual SAGs, we used the 12 reference viral contigs (i.e., the 4 Caudovirales and 8 Microviridae) as platforms to recruit 3 years of Saanich Inlet microbial metagenome sequences spanning the redoxcline (Figure 3, Supplementary file 5). SUP05 Microviridae contigs were inconsistently detected due to known methodological biases associated with linker-amplified metagenome library construction (\u2018Materials and methods\u2019), so we focused on dsDNA viral contigs. All 4 SUP05 Caudovirales contigs were absent from surface waters, but repeatedly detected within and below the oxycline, consistent with SUP05 water column disposition (Figure 3A\u2014figure supplement 1). Within the Caudovirales, recruited microbial metagenome sequences were more similar to the reference genome for Podoviridae contigs C22_13 and K04_0 (96% average amino-acid identity), than for Siphoviridae G10_6 and Podoviridae M8F6_0 (92% average amino-acid identity, Figure 2B). Beyond sequence variation, metagenome coverage in one region of M8F6_0 (3 hypothetical open reading frames) was absent in 2009, minimal in 2010, and as abundant as surrounding genomic regions in 2011 (Figure 3C), suggesting a selective sweep within this population. Contig-derived abundances of SUP05-Caudovirales were in sync with host distributions, but at virus-to-host ratios of 0.01 to 0.3 (Figure 4). While tightly choreographed virus\u2013host abundance dynamics parallels that of cultured virus\u2013host systems (e.g., cyanophages\u2014[Waterbury and Valois, 1993]), the systematically lower (orders of magnitude lower than typical community measurements) virus-to-host ratios observed here indicates that a greater diversity of SUP05 viruses remains to be uncovered in the Saanich Inlet water column.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig3-v2.jpg)\n\n**Figure 3.:** (A) SUP05 viral presence in Saanich Inlet microbial metagenomes with OMZ sample names bolded. Four categories indicate the SUP05 virus was detected (>75% of viral genes detected at >80% amino-acid identity; light blue), a SUP05 viral relative was detected (>75% of viral genes detected at 60\u201380% amino-acid identity; light green), no SUP05 virus was detected (red) or detection was inconclusive (e.g., Microviridae in HiSeq Illumina data sets that strongly select against ssDNA sequences; gray). (B) SUP05 viral reference genomes had differing sequence conservation among recruited metagenomic reads. Upper and lower \u2018hinges\u2019 correspond to the first and third quartiles (the 25th and 75th percentiles), while outliers are displayed as points (values beyond 1.5 * Inter-Quartile Range of the hinge). (C) One SUP05 viral reference genome with low sequence conservation revealed evolution in action whereby a genomic region (see \u223c21\u201330 kb) appears to sweep through the population.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Each dot correspond to a match between a metagenome predicted gene and a gene from the SUP05 viral genome fragment, displayed according to the coordinate on the genome (x-axis) and the protein identity percentage (y-axis). For each genome, plots were only generated for data sets in which the genome was detected. Only hits with more than 80% amino-acid identity were considered.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Metagenomes are classified from left to right based on the sampling depth as \u2018Above the OMZ\u2019, \u2018OMZ\u2019, and \u2018Below the OMZ\u2019, and vertically ordered based on the geographical sampling region, from the samples closest to Saanich Inlet (on top) to the one farthest from Saanich Inlet (at the bottom). Viral metagenomes are noted with a gray capsid symbol. Each metagenome\u2014viral genome association was classified based on the number of viral genes detected and the amino-acid percentage identity of the BLAST hits associated. The viral genome was thought to be in the sample when more than 75% of the genes were detected at more than 80% of identity in the metagenome (blue cells), when the same ratio of genes detected at lower percentage (60\u201380%) indicates the presence of a related but distinct virus (green cells). We considered that less than 75% of the genes detected meant that this virus was likely absent from the sample (red cells), except for the detection of the ssDNA Microviridae in HiSeq-Illumina-sequenced viromes, where the procedure used to process samples prior to sequencing is likely to select against the amplification of ssDNA templates (gray cells). Metagenomes in which the associated SUP05 host was detected are highlighted in black (>75% genes on SAG microbial contigs covered with Average Nucleotide Identity > 95%).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Each dot correspond to a match between a metagenome predicted gene and a gene from the SUP05 viral genome fragment, displayed according to the coordinate on the genome (x-axis) and the protein identity percentage (y-axis). For each genome, plots were only generated for data sets in which the genome was detected. Only hits with more than 80% amino-acid identity were considered.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig4-v2.jpg)\n\n**Figure 4.:** Fragment recruitment from Saanich Inlet microbial metagenomes to microbial (95% nucleotide identity) and viral (100% amino-acid identity) reference contigs normalized by contig and metagenome size was used as a proxy for abundance. Hence, the relative abundance of microbial and viral genome is indicated as number of metagenomic bases recruited by contig(s) base pairs (bp) by megabase (Mb) of metagenome. Upper and lower \u2018hinges\u2019 of the relative abundance distribution correspond to the first and third quartiles (the 25th and 75th percentiles), while outliers are displayed as points (values beyond 1.5 * Inter-Quartile Range of the hinge). A virus-to-host ratio was then calculated for each SAG (i.e., each virus-host pair) as the ratio of relative abundance of viral contigs to the relative abundance of microbial contigs from the same SAG.\n\nTo determine SUP05 viral biogeography, we interrogated 74 viromes and 112 microbial metagenomes sourced from Pacific Ocean waters (Supplementary file 5). Despite consistently recovering SUP05 viral sequences in Saanich Inlet, these sequences were extremely uncommon in other locales (22 instances out of 803 possibilities; Figure 3\u2014figure supplements 2 and 3), even when proximal to Saanich Inlet (e.g., northeastern subarctic Pacific [NESAP] coastal and open ocean waters along the LineP transect) or when sourced from similar water column conditions (e.g., Eastern Tropical South Pacific OMZ, ETSP). Of the 22 SUP05-related viruses detected, all but two were recovered below 500 meters in NESAP OMZ samples, in which SUP05 bacteria were also detected with similar abundance as in Saanich Inlet samples. The remaining two detections derived from an ETSP OMZ virome and a hydrothermal vent plume microbial metagenome from the Guaymas basin. Taken together, these observations point to endemic SUP05 viral populations with the potential to modulate SUP05-mediated biogeochemical cycling via lysis or metabolic reprogramming.\n\n### Potential impact of SUP05 phages on sulfur metabolism\n\nRecent studies have highlighted the role of viruses in metabolic reprogramming, from global photosynthesis (Mann et al., 2003; Lindell et al., 2005; Clokie et al., 2006; Sullivan et al., 2006; Sharon et al., 2009) to central carbon metabolism (Sharon et al., 2011; Thompson et al., 2011; Hurwitz et al., 2013) via auxiliary metabolism genes (AMGs). Additionally, viruses assembled from microbial metagenomes from SUP05 dominated hydrothermal vent samples contain sulfur cycling genes (Anantharaman et al., 2014). Therefore, we looked for AMGs encoded on SUP05 viral contigs in the Saanich Inlet water column.\n\nFour putative AMGs were detected in 12 of the 69 viral contigs, predominantly from SUP05_01 SAGs recovered from 150 meters (Supplementary file 6). One AMG identified on a bona fide viral contig, phosphate-related phoH, is common among marine phages, but remains functionally uncharacterized (Sullivan et al., 2010; Goldsmith et al., 2011). The remaining 3 AMGs including 2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily (2OG-FeII oxygenase), tripartite tricarboxylate transporter (tctA, protein domain hit only), and dissimilatory sulfite reductase subunit C (dsrC) were encoded on contigs identified by non-reference-based methods. In marine cyanophages, 2OG-FeII oxygenase-encoding genes are common where they are thought to modulate host nitrogen metabolism during infection (Sullivan et al., 2010). However, the precise metabolic role of tctA and dsrC-like genes during viral infection remains unknown.\n\nGiven that dsrC was found on 7 SUP05_01 viral contigs (Supplementary file 7) and DsrC is critical in SUP05 energy metabolism (Walsh et al., 2009), we focused on this gene. Although dsrC genes were only present on contigs identified by non-reference-based methods they were closely related to dsrC-like genes encoded on the hydrothermal vent plume phages (Anantharaman et al., 2014). Indeed, conceptually translated sequence alignment of these viral dsrC genes including putative viral and bacterial genes from microbial metagenomic data sets indicate that the Saanich Inlet 'viral' sequences belong to one dsrC subgroup (dsrC_1 according to the classification of Anantharaman et al., 2014). In addition to high sequence similarity viral dsrC genes from SUP05 SAGs co-localized on contigs with viral homologs (e.g., 2OG-FeII oxygenase, chaperonin), and occurred in genomic context that was completely different to the conserved and well-characterized dsrC region in SUP05 genomes (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig5-v2.jpg)\n\n**Figure 5.:** (A) Seven contigs including dsrC-like gene detected as viral based on non-reference metrics (ratio of uncharacterized genes, strand coding bias). (B) Genomic context in which dsrC-like genes are retrieved in SUP05 microbial contigs from SAG. All contigs above 50 kb containing a dsrC-like gene were selected and compared to get a summary of the different regions in which dsrC-like genes are found in SUP05 genomes. (C) Map of dsrC-containing Contigs assembled from Saanich Inlet metagenomes. One viral-like contig from SAG (020_11) is included for comparison.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Viral sequences are highlighted in red, Saanich Inlet sequences in bold. Four groups could be distinguished within this set of sequences (dsrC_1 to 4). The main residues most likely needed for the protein to function as rDsrC are colored across all groups and indicated below the alignment. The specific insertion and second C-terminal cysteine, thought to be required for the dsrC function, and only retrieved in the group dsrC_2, are highlighted with a black frame. Other conserved residues are colored within each group, except for groups 3 and 4 where too few sequences are available.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03125/elife-03125-fig5-figsupp2-v2.jpg)\n\nThe dsrC_1 group encodes a protein retaining 15 conserved residues across known DsrC subunits. However, the second C-terminal cysteine and a 7\u20138 residue insertion thought to be required for DsrC function based on structural analysis of Desulfovibrio vulgaris and Archaeoglobus fulgidus proteins are missing from the viral protein (Figure 5\u2014figure supplement 1; Mander et al., 2005; Oliveira et al., 2008). These differences suggest that either the viral encoded dsrC is non-functional or has a modified function. Given that genes shared between different viral genomes rarely represent nonfunctional genes, it is likely that viral-encoded dsrC plays a biological role in SUP05. Indeed, there is precedent for divergent viral AMGs serving as modified functional counterparts to host-encoded homologues. Specifically, a highly divergent viral \u2018pebA\u2019 (Sullivan et al., 2005) was experimentally demonstrated to perform the functions of two host enzymes' (pebA and pebB) as a bifunctional enzyme, phycoerythrobilin synthetase (pebS) (Dammeyer et al., 2008).\n\nGiven that viral dsrC genes were abundant in the Saanich Inlet water column over a 3-year-time interval (Figure 5C) with peaked recovery consistent with blooming SUP05 populations (Figure 5\u2014figure supplement 2; Hawley et al., 2014), we posit that this viral gene is functional in SUP05 sulfur cycling. Future functional characterization of viral DsrC is needed to constrain viral roles in modulating SUP05 electron transfer reactions during viral infection in the environment.\n\n### Conclusion\n\nWhile new methods and model systems for identifying virus\u2013host interactions continue to emerge (Tadmor et al., 2011; Allers et al., 2013; Mizuno et al., 2013; Deng et al., 2014), viral ecology remains predominantly community focused in nature. This is because most hosts are uncultivated (Rapp\u00e9 and Giovannoni, 2003), and culture-independent viral metagenomes are dominated by \u2018unknown\u2019 sequences (Hurwitz and Sullivan, 2013), which inhibits developing a mechanism- and population-based viral ecology. Here, we use single-cell genomics to directly link SUP05 viruses and their hosts across defined gradients of oxygen and sulfide over a 3-year-time interval in a model OMZ ecosystem. This spatiotemporal resolution revealed endemic patterns of co-infection between ssDNA and dsDNA viruses and the occurrence of AMGs with the potential to modulate electron transfer reactions essential to SUP05 energy metabolism. Together, these findings offer novel perspectives on the ecology and evolution of viruses infecting uncultivated bacterial populations. While the capacity to formulate such linkages between cultured virus\u2013host systems in nature is recognized (e.g., cyanophages and pelagiphages), the use of single-cell genomics to explore such linkages in uncultivated microbial communities represents a watershed moment in illuminating viral dark matter and its role in modulating microbial interaction networks in natural and engineered ecosystems.\n\n## Materials and methods\n\n### Sample collection, sequencing, and assembly\n\nSamples were collected in Saanich Inlet on Vancouver Island, British Columbia, on the 09th of August 2011. Sample collection and biochemical measurements were performed as previously described (Zaikova et al., 2010). Water column redox conditions were typical for stratified summer months when SUP05 populations bloom in deep basin waters. Individual cells <10 \u00b5m in diameter from 100, 150, and 185 meter depth samples were subjected to fluorescence-activated cell sorting, multiple displacement amplification (MDA), and taxonomic identification at the Bigelow Laboratory Single Cell Genomics Center (SCGC; http://scgc.bigelow.org), following previously described procedures (Stepanauskas and Sieracki, 2007; Swan et al., 2013). A total of 315 single amplified genomes (SAGs) per sample were subjected to multiple displacement amplification (MDA), and the taxonomic identity of single amplified genomes (SAG) was determined by directly sequencing bacterial small subunit ribosomal RNA (SSU rRNA) gene amplicons. A total of 136 SAGs affiliated with SUP05 or Arctic96BD-19 were selected for genome sequencing. Between 1 and 3 \u00b5g of MDA product was sent to Canada's Michael Smith Genome Sciences Center (Vancouver, BC) to create shotgun libraries. Briefly, the DNA was sheared to 350\u2013450 bp fragments using a Covaris E210 and purified using AMPure XP Beads according to the manufacturer's instructions. The sheared DNA was end-repaired and A-tailed according to the Illumina standard PE protocol and purified again using AMPure XP Beads, generating paired-end 100-bp reads. Indexed libraries were amplified by PCR for six cycles, gel-purified, pooled (11\u201312 samples per lane), and QC assessed on a Bioanalyzer DNA Series II High Sensitivity chip (Agilent, Santa Clara, CA, USA), and then sequenced using an Illumina HiSeq2000 sequencer.\n\nAll raw Illumina sequence data were passed through DUK, a filtering program developed at JGI, which removes known Illumina sequencing and library preparation artifacts (Mingkun, Copeland, and Han, Unpublished). Artifact filtered sequence data were then screened and trimmed according to the k-mers present in the data set (Mingkun and Kmernorm, Unpublished). High-depth k-mers, presumably derived from MDA amplification bias, cause problems in the assembly, especially if the k-mer depth varies in orders of magnitude for different regions of the genome. Reads with high k-mer coverage (>30\u00d7 average k\u2013mer depth) were normalized to an average depth of 30\u00d7. Reads with an average k-mer depth of less than 2\u00d7 were removed. Following steps were then performed for assembly: (i) normalized Illumina reads were assembled using IDBA\u2013UD version 1.0.9 (Peng et al., 2012); (ii) 1\u20133 kb simulated paired end reads were created from IDBA\u2013UD contigs using wgsim (https://github.com/lh3/wgsim); (iii) normalized Illumina reads were assembled with simulated read pairs using Allpaths\u2013LG (version r42328) (Gnerre et al., 2011); (iv) Parameters for assembly steps were: (i) IDBA\u2013UD (\u2013\u2013no local), (ii) wgsim (\u2013e 0 \u20131 100 \u20132 100 \u2013r 0 \u2013R 0 \u2013X 0), (iii) Allpaths\u2013LG (PrepareAllpathsInputs: PHRED 64=1 PLOIDY=1 FRAG COVERAGE=125 JUMP COVERAGE=25 LONG JUMP COV=50, RunAllpathsLG: THREADS=8 RUN=std shredpairs TARGETS=standard VAPI WARN ONLY=True OVERWRITE=True MIN CONTIG=2000).\n\n### SAG taxonomic assignment\n\nSAG taxonomy was verified using the assembled contigs in two ways using MetaPathways 1.0 (Konwar et al., 2013). First, the assemblies were blasted against the SILVA (v.111) database to confirm the taxonomy based on SSU rRNA. Next, MEGAN5 was used to carry out taxonomic binning of all ORFs from the MetaPathways BLAST output using the Lowest Common Ancestor (LCA) approach (Huson et al., 2007).\n\nA total of 2711 SSU rRNA sequences previously taxonomically assigned to SUP05 and Arctic96BD-19 lineages were aligned and clustered using mothur v.1.27.0 (Schloss et al., 2009), and 20 representative sequences for the most abundant clusters (cutoff = 6) at 97% similarity were selected. These representative sequences were used to build the phylogenetic tree differentiating between SUP05 and Arctic96BD-19. Reference SUP05 and Arctic96BD-19 sequences from different environments and symbionts and cluster representative sequences were aligned using the SILVA aligner tool (http://www.arb-silva.de/aligner/) and imported into an in-house ARB database for SUP05. Aligned sequences were exported from ARB into Mesquite for manual alignment refinement. The final phylogenetic tree was inferred from manually refined Mesquite alignment of sequences using maximum likelihood implemented in PHYML using a GTR model with estimated values for the \u03b1 parameter of the \u0393 distribution and the proportion of invariable sites. The confidence of each node was determined by assembling a consensus tree of 1000 bootstrap replicates.\n\n### Microbial and viral metagenomes\n\nThe protocols used to generate the POV (Hurwitz and Sullivan, 2013), ETSP OMZ viromes (Cassman et al., 2012), ETSP microbial metagenomes and metatranscriptomes (Stewart et al., 2012; Ganesh et al., 2014), and Guaymas basin metagenome (Anantharaman et al., 2013) are described in their respective publications. All these data sets were sequenced with Roche 454 GL FLX Titanium systems, and quality controlled reads were used in the different analysis computed in this study.\n\nLineP and Malaspina viral metagenomes (viromes) were obtained from samples collected during LineP (http://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/line-p/index-eng.html) and Malaspina (http://scientific.expedicionmalaspina.es/) cruises. Particles were precipitated with Iron\u2013Chloride from 0.2 \u00b5m filtrates, and resuspended in EDTA-Mg-Ascorbate buffer (John et al., 2011) before the DNA was extracted using Promega's Wizard Prep kit. Assembly and gene prediction were conducted through the IMG/M ER pipeline (Markowitz et al., 2014). Microbial metagenome samples at Saanich Inlet and along the LineP transect were also collected during LineP cruises (http://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/line-p/index-eng.html). Sequencing and assembly of these data sets was conducted at the JGI. A list of the different web servers and accession numbers for these publicly available data sets is displayed in Supplementary file 5.\n\n### Detection of viral contigs in SUP05/Arctic SAG\n\nSUP05 SAG contigs were annotated with the Metavir web server (Roux et al., 2014). Briefly, ORFs were predicted with MetaGeneAnnotator (Noguchi et al., 2008) and compared to the RefseqVirus database with BLASTp (Altschul et al., 1997). In order to select viral-associated contigs, we looked for viral-specific genes, that is, genes associated with the formation of the capsid and encapsidation of the genome (designated as \u2018hallmark viral genes\u2019). Thus, we searched for all genes annotated as \u2018virion structure\u2019, \u2018capsid\u2019, \u2018portal\u2019, \u2018tail\u2019, or \u2018terminase\u2019, and selected contigs including at least one of these hallmark genes (Supplementary file 1). Among the 50 viral contigs detected, we highlighted a set of 12 long (>15 kb) or circular contigs as the best references available for SUP05 phages (Supplementary file 1). We then compared the reference sequences retrieved in this first screening round to all the SUP05/Arctic96BD-19 SAG contigs, in order to extract more viral-related sequences (Supplementary file 1). At this step, all contigs with at least 50% of their genes similar to a previously detected SUP05 viral contigs were retained (sequence similarity between predicted genes assessed through BLASTp, thresholds of 0.001 for e-value and 50 for bit score).\n\nAlternatively, we compared the SUP05/Arctic96BD-19 SAG contigs to a set of ocean viromes (Supplementary file 5) and looked for every contig which was covered by virome reads (for 454-sequenced viromes) or predicted genes (for HiSeq-sequenced viromes) on at least three genes with at least 90% of identity (protein sequences). However, this comparison to viromes only highlighted contigs already identified as viral from the hallmark gene analysis. Finally, we looked for every sequence which could come from a new type of phage, based on two known properties of phage genomes: most of their genes are not similar to anything in the current databases, and they tend to be mostly coded on the same strand (by block, or module) (Akhter et al., 2012). We thus looked for all regions in SAG contigs composed of at least 50% of uncharacterized genes, with at least 80% of them on the same coding strand. 19 new short viral contigs were highlighted through this detection (Supplementary file 1), which displayed characteristics close to the viral hallmark contigs (Figure 1\u2014figure supplement 3).\n\nA set of regions of putative viral origin within bacterial contigs also stood out. These sequences were manually curated to check if they could indeed be of viral origin, notably by checking if these regions were conserved between closely related bacterial contigs, and 13 putative defective prophages were eventually identified among them. CRISPR regions were detected with the CRISPR recognition tool (Bland et al., 2007). All spacers were extracted and compared to all SUP05/Arctic96BD-19 SAG contigs with BLASTn.\n\n### Annotation of viral contigs\n\nThe annotations of selected contigs were extracted from the Metavir web server (Roux et al., 2014) and manually curated. Taxonomic affiliations were based on a BLAST comparison to RefseqVirus and NR databases from NCBI, with a bit score threshold of 50 and e-value threshold of 0.001. A tBLASTx comparison of larger contigs (>15 kb) against WGS (Whole-Genome shotgun), HTGS (High-Throughput Genomic Shotgun), and GSS (Genomic Survey Sequences) from the NCBI was used to add the most closely related sequence to the analysis, which could have not been included in the NR and Refseq database yet. This screening notably lead to the detection of two contigs from a Gammaproteobacteria single-cell amplified genome (Gamma proteobacterium SCGC AAA160-D02) similar to SUP05 phage genome and was therefore included in the phylogenetic and genome comparison analysis. The affiliation of SUP05 viruses to new or existing genera was based on the criteria of 40% of genes shared within a genus previously defined for Caudovirales (Lavigne et al., 2008). Map comparison figures were created with Easyfig (Sullivan et al., 2011).\n\nFunctional annotation was achieved through a domain search against the PFAM database (Punta et al., 2012) (hmmscan [Eddy, 2011], using a threshold of 0.001 for e-value and 30 for score). When looking for putative AMGs, defective prophages were not considered since these regions are likely to be subject to rearrangement and gene transfer, and the origin of single genes within these regions is uncertain. A set of microbial dsrC sequences were selected as references for SUP05 viral-encoded dsrC genes in genomic context (Figure 5B). Briefly, all contigs in SUP05 SAGs longer than 50 kb and containing a DsrC-like gene were compared through BLASTn and displayed with Easyfig (Sullivan et al., 2011).\n\n### Phage multiple alignments and phylogenetic trees\n\nMaximum-likelihood trees were computed with PhyML (Guindon and Gascuel, 2003) using a LG model, a CAT approximation for Gamma parameter, and computing SH-like scores for node supports. All SUP05 contigs affiliated to Podoviridae and including the major capsid protein gene were added in a single tree alongside reference sequences from Autographivirinae and N4-like viruses. The most closely related sequences to each SUP05 Podoviridae, as detected from the genome comparison analysis, were also included in the tree. SUP05 Microviridae were included in a phylogenetic tree based on the Major Capsid protein and centered around the Gokushovirinae sub-family, with sequences from Pichovirinae used as outgroup. Gokushovirinae reference sequences were taken from Roux et al. (2012) and Labont\u00e9 and Suttle (2013b). In order to include more aquatic sequences, complete Microviridae genomes were assembled from two sets of viromes sampled from a freshwater subtropical reservoir (Tseng et al., 2013) and deep-sea sediments (Yoshida et al., 2013) and annotated as previously described (Roux et al., 2012). Tree figures were drawn with Itol (Letunic and Bork, 2007). DsrC-like predicted protein sequences were aligned with Muscle v3.8.31 (Edgar, 2004), and the multiple alignment was displayed with Jalview (Waterhouse et al., 2009).\n\n### Recruitment of metagenomic sequences to SUP05 viral genomes\n\nA set of oceanic viromes and microbial metagenomes were used for comparison with SUP05 viral genomes (Supplementary file 5). Similarities between SUP05 viral genomes and published viromes were assessed through BLAST comparison, BLASTx for 454-sequenced viromes (POV data set [Hurwitz and Sullivan, 2013], ETSP OMZ viromes [Cassman et al., 2012], ETSP microbial metagenomes and metatranscriptomes [Ganesh et al., 2014; Stewart et al., 2012], and Guaymas basin metagenome [Anantharaman et al., 2013]) and BLASTp from predicted protein for HiSeq-sequenced viromes (LineP and Malaspina viromes, Saanich Inlet and LineP microbial metagenomes), with similar thresholds of 0.001 for e-value and 50 for bit score. Each metagenome\u2014viral genome association was classified based on the number of viral genes detected and the amino-acid percentage identity of the BLAST hits associated: when more than 75% of the genes were detected at more than 80% identity in the metagenome, the viral genome was thought to be in the sample. The same ratio of genes detected at lower percentage (60 to 80%) indicates the presence of a related but distinct virus. We considered that less than 75% of the genes detected meant that this virus was likely absent from the sample. The results of Microviridae detection with the HiSeq Illumina data sets have to be carefully considered, as the linker amplification used in the preparation of samples for HiSeq Illumina sequencing displays a strong bias against ssDNA templates such as Microviridae genomes (Kim and Bae, 2011). Hence, if the detection of SUP05 Microviridae in HiSeq Illumina data sets undoubtedly testifies for the presence of these viruses in the samples, an absence of detection is not a strong indicator of their absence in the sample.\n\nIn order to detect the host of SUP05 viruses in the same data sets, a mapping of all sequences from each metagenome to non-viral SAG contigs was computed with mummer (Delcher et al., 2003) (minimum cluster length of 100, maximum gap between two matches in a cluster of 500). The Saanich Inlet SUP05 bacteria is considered present in the metagenome when more than 75% of genes are covered by metagenomic sequences with average nucleotide identity above 95%. Viral-encoded dsrC was computed with a threshold of 95% on average nucleotide identity, as no similarity beyond 80% average nucleotide identity was detected between viral and microbial homologues, whether from public database or from the SUP05 SAG microbial contigs. All recruitment and coverage plots were drawn with the ggplot2 module of R software (Wickham, 2009).\n\n### Abundance and variability of SUP05 viral and microbial genomes\n\nAssessment of variability in the populations associated with each SUP05 virus was based on a BLASTp between all sequences from Saanich Inlet metagenomes recruited by each SUP05 viral contig (thresholds of 50 for bit score, 0.001 for e-value, and 80% for amino-acid identity). The relative abundance of SUP05 viral and microbial genomes was assessed from the recruitment of Saanich Inlet metagenomic reads to each viral contig and set of microbial contigs (all contigs greater than 5 kb and not identified as viral) for each \u2018reference\u2019 SAG (i.e., the 4 SAG in which a SUP05 reference Caudovirales was detected: AB-750C22AB-904 for C22_13, AB-750K04AB-904 for K04_0, AB-751_G10AB-905 for G10_6, and AB-755_M08F06 for M8F6_0, Figure 2\u2014source data 1). For each metagenome, a normalized ratio of nucleotides recruited by each contig or set of contigs was calculated as the number of bases recruited (sum of the length of recruited reads) divided by the total number of bases in the (set of) contig(s) and the total number of bases in the metagenome. The ratio of viral genomes to host genomes was then calculated for each metagenome as the relative abundance of viral contig divided by the relative abundance of bacterial contig from the same SAG. The plots of genetic variability and relative abundance distributions were generated with the ggplot2 module of R software (Wickham, 2009). The perl scripts used in the different part of the bioinformatics analyses are available online at http://tmpl.arizona.edu/dokuwiki/doku.php?id=bioinformatics:scripts:sup05 and as Source code 1.\n",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "edb547d6-b66a-498d-a92e-f11e9e2243b1",
+      "submission_id": "9f8b128a-daeb-4c81-af54-7d311e4961b4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicole Dubilier, Max Planck Institute for Marine Microbiology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03125.029](https://doi.org/10.7554/eLife.03125.029)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCultivation-independent exploration of SUP05 virus-host interactions in a model Oxygen Minimum Zone\u201d for consideration at eLife. Your article has been favorably evaluated by Ian Baldwin (Senior editor) and 3 reviewers, one of whom is a guest Reviewing editor.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAll 3 reviewers agree that Roux et al. present a fascinating, multifaceted study of high quality that analyses the viral community of a group of as yet uncultivable bacteria called SUP05 using single-cell amplified genome (SAG) sequencing. SUP05 are highly abundant in marine oxygen minimum zones (OMZ), areas of the ocean that are expanding and associated with the generation of greenhouse gases. Given that viruses can have a major effect on microbially driven carbon, nitrogen and sulfur transformations, improving our knowledge of viruses associated with SUP05 is critical for a better understanding of OMZs and their effects on marine biogeochemical processes.\n\nRoux et al sequenced SUP05 cells from three different water depths across the chemocline, allowing them to draw inferences about infection rates as a function of water column geochemistry. Major results include the first estimate for viral infection rates in free-living bacteria from the environment (as high as 33%), host-specific identification of viruses in an environmental sample, co-infection of hosts by ssDNA and dsDNA viruses, the presence of auxiliary metabolic genes including dsrC (involved in sulfur oxidation), and increases in viral infection frequencies with water depth and oxygen deficiency.\n\nWe have the following suggestions for revising the paper:\n\n1) Since this paper was submitted, a paper describing viruses that infect SUP05 in deep-sea hydrothermal plumes was published by Anantharaman et al. (Science 344: 757). These two papers are quite distinct in their approach, field site, and results, so the Anantharaman et al. study does not diminish the impact of the current manuscript. However, both the common themes (auxiliary metabolic genes (dsrC); some shared taxa) as well as differences (no dsrA in this paper; some differences in taxa identified) should be discussed.\n\n2) The paper provides a large quantity of data and covers the topic well; however a more general discussion and a little less method in the main text region is needed. There is no attempt to compare the findings to other viral data from OMZ's or marine environments in general.\n\n3) The weakest part of this paper is the section on auxiliary metabolism genes (AMGs). While this is only a side aspect of this paper, it is important that it be addressed. In both this submission and the Anantharaman et al. paper, the annotation of the DsrC protein is problematic: DsrC is a short protein and has homologs that are very likely not involved in sulfur oxidation by rDSR or sulfur reduction by DSR, such as TusE, which is involved in thiouridine biosynthesis. Anantharaman et al. identified two groups of rDsrC, but only one (their \u201crdsrC2 group\u201d) has the residues that are most likely needed for the protein to function as rDsrC. The sequences in their second group (\u201crdsrC1\u201d) do not share the seemingly characteristic signatures with any of the proteins TusE, rDsrC, and DsrC (\u201crdsrC1\u201d sequences lack both the 2nd c-terminal cysteine and the 7-8 residue insertion). The neighboring genes for the first three sequences from the second group (\u201crdsrC1\u201d) do not have any (r)DSR-related genes. Instead, there is an annotated \u201dthiamine biosynthesis gene\u201d. The DsrC homologs of the \u201drdsrC1 group\u201d might therefore be homologs with a completely different function.\n\nWe would therefore like the authors to reanalyze the DsrC genes they found, e.g. by aligning them with bona fide DsrC genes and those from the Anantharaman et al. study. This is particularly interesting because the \u201cviral\u201d DsrC apparently occurred in a completely different genomic context than the DsrC of the host and seems to be \u201crelatively divergent from the host version\u201d.\n\n4) We were not convinced by the authors' statements that they were able to show \u201cviral metabolic reprogramming\u201d, \u201cvirus-host co-evolution dynamics\u201d, and reactions that \u201cfuel SUP05-mediated nitrogen loss and inorganic carbon fixation pathways with resulting feedback on climate active trace gas cycling in OMZ waters with real world implications for biogeochemical models.\u201d Evidence for metabolic reprogramming (such as expression of the relevant proteins and physiological data showing the effects of reprogramming), co-evolution (e.g. phylogenetic analyses and statistical tests for co-evolution), and effects of SUP05 phages on nitrogen and carbon cycles is needed to provide support for these unnecessary inflationary statements.\n",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bf201d05-286f-494c-80d5-098c1d3a1a3d",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C1",
+      "claim": "127 single-cell amplified genomes (SAGs) from uncultivated SUP05 bacteria were examined from a marine oxygen minimum zone (OMZ).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we examined 127 single-cell amplified genomes (SAGs) from uncultivated SUP05 bacteria isolated from a model marine oxygen minimum zone (OMZ) to identify 69 viral contigs representing five new genera within dsDNA Caudovirales and ssDNA Microviridae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of SAGs examined and their source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "10596f84-628e-447a-b800-a034c76fa1c8",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C2",
+      "claim": "69 viral contigs representing five new genera within dsDNA Caudovirales and ssDNA Microviridae were identified from SUP05 SAGs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we examined 127 single-cell amplified genomes (SAGs) from uncultivated SUP05 bacteria isolated from a model marine oxygen minimum zone (OMZ) to identify 69 viral contigs representing five new genera within dsDNA Caudovirales and ssDNA Microviridae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number and taxonomic classification of viral contigs identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "e5684b6e-929b-4d7b-ba27-119b6dae2b57",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C3",
+      "claim": "Approximately 1/3 of SUP05 bacteria is viral-infected.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection frequencies suggest that \u223c1/3 of SUP05 bacteria is viral-infected, with higher infection frequency where oxygen-deficiency was most severe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides an estimate of infection frequency based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "14c37a65-1eb3-41fc-80cd-f76c827bb539",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C4",
+      "claim": "Higher viral infection frequency occurs where oxygen-deficiency was most severe.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection frequencies suggest that \u223c1/3 of SUP05 bacteria is viral-infected, with higher infection frequency where oxygen-deficiency was most severe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states a correlation between oxygen deficiency and infection frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "2729bc19-427c-4452-b244-c277d93d0a6f",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C5",
+      "claim": "Observed Microviridae clonality suggests recovery of bloom-terminating viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Observed Microviridae clonality suggests recovery of bloom-terminating viruses, while systematic co-infection between dsDNA and ssDNA viruses posits previously unrecognized cooperation modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract interprets the clonality observation as evidence for bloom-terminating viruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "9fc76373-2c9c-4d0d-af8e-5ea753501f95",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C6",
+      "claim": "Systematic co-infection between dsDNA and ssDNA viruses suggests previously unrecognized cooperation modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Observed Microviridae clonality suggests recovery of bloom-terminating viruses, while systematic co-infection between dsDNA and ssDNA viruses posits previously unrecognized cooperation modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract interprets co-infection patterns as evidence for novel cooperation mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "1cb6a724-b8e7-4294-b189-89c0cd31a2e8",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C7",
+      "claim": "SUP05 viruses persisted for years but remained endemic to the OMZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of 186 microbial and viral metagenomes revealed that SUP05 viruses persisted for years, but remained endemic to the OMZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states findings from metagenomic analyses regarding viral persistence and biogeography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "f2b0f390-451a-4dd8-9bd4-3328e90ab1ec",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C8",
+      "claim": "186 microbial and viral metagenomes were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of 186 microbial and viral metagenomes revealed that SUP05 viruses persisted for years, but remained endemic to the OMZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of metagenomes analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "65aba2ef-85f4-4638-878e-000212b5c943",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C9",
+      "claim": "Virus-encoded dissimilatory sulfite reductase suggests SUP05 viruses reprogram their host's energy metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, identification of virus-encoded dissimilatory sulfite reductase suggests SUP05 viruses reprogram their host's energy metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract interprets the presence of a specific viral gene as evidence for metabolic reprogramming.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "e4062586-c3b1-4cf0-aa29-4075584b36c7",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C10",
+      "claim": "Viral-mediated predation, gene transfer, and metabolic reprogramming modulate the structure, function, and evolutionary trajectory of microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "In the last two decades, it has progressively become clear that viral-mediated predation, gene transfer, and metabolic reprogramming modulate the structure, function, and evolutionary trajectory of these microbial communities (Suttle, 2007; Abedon, 2009; Rodriguez-Valera et al., 2009; Hurwitz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple references to support this established understanding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "a6e1115a-787f-49fb-a1ee-34b9e226ed84",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C11",
+      "claim": "The vast majority of microbes and viruses remain uncultivated.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the vast majority of microbes and viruses remain uncultivated and their diversity is extensive, so that model system-based measurements rarely reflect the network properties of natural microbial communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states this as an established fact in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "e7d96881-c99b-4ab8-983e-8e9c6c836409",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C12",
+      "claim": "CRISPRs function as an adaptive immune system in prokaryotes with the potential to suppress viral replication or horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with associated Cas (CRISPR-associated) genes, CRISPRs function as an adaptive immune system in prokaryotes with the potential to suppress viral replication or horizontal gene transfer (Sorek et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a reference to support this statement about CRISPR function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "62b32c3c-07d0-424a-9a50-0eaee4b7d31b",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C13",
+      "claim": "Marine OMZs are defined by dissolved oxygen concentrations <20 \u03bcmol kg\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Marine OMZs, defined by dissolved oxygen concentrations <20 \u03bcmol kg\u22121, are oceanographic features that arise from elevated demand for respiratory oxygen in poorly ventilated, highly stratified waters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction provides a specific definition for OMZs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "f28ac21a-9967-4636-8674-7f33dade37fd",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C14",
+      "claim": "OMZs represent hotspots for microbial-driven carbon, nitrogen, and sulfur transformations.",
+      "claim_type": "EXPLICIT",
+      "source": "OMZs are crucial for biogeochemical cycles in the global ocean, as they represent hotspots for microbial-driven carbon, nitrogen, and sulfur transformations (Ulloa et al., 2012; Wright et al., 2012) and play a disproportionate role in nitrogen loss processes and greenhouse gas cycling (Lam et al., 2009; Ward et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites references to support this statement about OMZ biogeochemistry.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "a903aea0-fb9e-4b61-906b-547a25e1ac63",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C15",
+      "claim": "OMZs are expanding due to changing ocean water temperatures and circulation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these zones are expanding due to changing ocean water temperatures and circulation patterns (Stramma et al., 2008; Whitney et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites references to support this statement about OMZ expansion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "0d6f6ac5-4281-4c43-87e3-326f5dc6d1bd",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C16",
+      "claim": "SUP05 bacteria are comprised of two primary lineages: one affiliated with SUP05 and clam and mussel symbionts, and the other affiliated with Arctic96BD-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis indicates that these bacteria are comprised of two primary lineages; one consisting of sequences affiliated with SUP05 and clam and mussel symbionts, and the other consisting of sequences affiliated with Arctic96BD-19 (Walsh et al., 2009; Wright et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites references to support this phylogenetic classification.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "352b3411-8300-42ad-9ffe-6d6f9e9662b2",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C17",
+      "claim": "SUP05 is most prevalent in anoxic or anoxic/sulfidic waters.",
+      "claim_type": "EXPLICIT",
+      "source": "Both groups partition along gradients of oxygen and sulfide, with Arctic96BD-19 most prevalent in oxygenated waters and SUP05 most prevalent in anoxic or anoxic/sulfidic waters (Wright et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a reference to support this statement about SUP05 distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "d9f34a82-5530-4305-a7b8-9d422f5b8df7",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C18",
+      "claim": "Arctic96BD-19 is most prevalent in oxygenated waters.",
+      "claim_type": "EXPLICIT",
+      "source": "Both groups partition along gradients of oxygen and sulfide, with Arctic96BD-19 most prevalent in oxygenated waters and SUP05 most prevalent in anoxic or anoxic/sulfidic waters (Wright et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a reference to support this statement about Arctic96BD-19 distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "64376696-4ff6-4b66-999c-f6a41843822d",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C19",
+      "claim": "Ocean viruses are abundant, dynamic, and diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocean viruses, predominantly investigated in the sunlit or photic zone, are abundant, dynamic, and diverse (Suttle, 2005) with growing evidence for direct roles in metabolic reprogramming of microbial photosynthesis, central carbon metabolism, and sulfur cycling (Mann et al., 2003; Lindell et al., 2005; Clokie et al., 2006; Breitbart et al., 2007; Dammeyer et al., 2008; Sharon et al., 2009, 2011; Thompson et al., 2011; Hurwitz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites references to support this statement about ocean viruses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "c1dcccbf-009d-467c-b614-fcebc088a18d",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C20",
+      "claim": "Putative SUP05 phage contained genes encoding reverse dissimilatory sulfite reductase A and C.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with viruses encoding auxiliary metabolic genes (AMGs, Breitbart et al., 2007) enabling viral reprogramming of microbial metabolic pathways (Lindell et al., 2005; Thompson et al., 2011), putative SUP05 phage contained genes encoding reverse dissimilatory sulfite reductase A and C positing a role for viruses in modulating the marine sulfur cycle (Anantharaman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a reference to support this statement about SUP05 phage genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "7c71133c-5f00-4b38-baff-29f227a8f059",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C21",
+      "claim": "SUP05 SAGs were generated at the Bigelow Laboratory for Ocean Sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "SUP05 SAGs were generated at the Bigelow Laboratory for Ocean Sciences (http://scgc.bigelow.org, [Stepanauskas and Sieracki, 2007; Swan et al., 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states where SAGs were generated with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "fb6944ad-b578-4af9-965e-64fb4706e078",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C22",
+      "claim": "Fluorescence-activated cell sorting was used to separate individual cells <10 \u00b5m in diameter from 100, 150, and 185 meters water depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, fluorescence-activated cell sorting was used to separate individual cells <10 \u00b5m in diameter from 100, 150, and 185 meters water depth, spanning water column gradients of oxygen and sulfide in Saanich Inlet (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the methodology with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "eee14a3d-8304-4cab-bf4c-dbce6c8dcb51",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C23",
+      "claim": "A total of 315 anonymously sorted cells per depth interval were subjected to multiple displacement amplification (MDA).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 315 anonymously sorted cells (discriminated solely using fluorescence and size for sorting) per depth interval were subjected to multiple displacement amplification (MDA), and the taxonomic identity of single amplified genomes (SAGs) was determined by directly sequencing bacterial small subunit ribosomal RNA (SSU rRNA) gene amplicons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states the number of cells processed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "299a4158-c6ce-48bc-af63-017f70ce7a44",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C24",
+      "claim": "Most (113/127) SUP05 SAGs fell into two major operational taxonomic units (OTUs) or subclades: SUP05_01 (n = 65) and SUP05_03 (n = 48).",
+      "claim_type": "EXPLICIT",
+      "source": "Most (113/127) SUP05 SAGs fell into two major operational taxonomic units (OTUs) or subclades, based on SSU rRNA gene sequence clustering at the 97% identity threshold\u2014SUP05_01 (n = 65) and SUP05_03 (n = 48) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific numbers for SAG classification with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "24ed13ad-8300-433a-989b-decb583f6b3d",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C25",
+      "claim": "50 bona fide viral contigs were identified in 30 SUP05 SAGs using viral marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "50 bona fide viral contigs (Supplementary file 1, 'Materials and methods') were identified in 30 SUP05 SAGs using viral marker genes, hereafter termed 'hallmark genes' (Abrescia et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states the number of viral contigs identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "75a5cab7-10f5-4c41-99a6-a431044bfa27",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C26",
+      "claim": "SUP05 viral contigs were affiliated with known families of Caudovirales (dsDNA) and Microviridae (ssDNA) bacteriophages.",
+      "claim_type": "EXPLICIT",
+      "source": "SUP05 viral contigs were affiliated with known families of Caudovirales (dsDNA) and Microviridae (ssDNA) bacteriophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section states the taxonomic affiliation of viral contigs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "3c8a3b30-c5d0-4393-a101-1d8518673e6c",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C27",
+      "claim": "Microviridae have not been previously associated with OMZs.",
+      "claim_type": "EXPLICIT",
+      "source": "Microviridae, however, are usually observed in surface seawater or deep-sea sediments and have not been previously associated with OMZs (Angly et al., 2009; Tucker et al., 2011; Yoshida et al., 2013; Labont\u00e9 and Suttle, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites references to support this statement about Microviridae distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "590be16f-2198-4d32-93a5-fcc801efb498",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C28",
+      "claim": "Viral contigs recovered from SUP05_01 SAGs were exclusively Caudovirales.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the SUP05 lineages described above, we note that viral contigs recovered from SUP05_01 SAGs were exclusively Caudovirales, whereas SUP05_03 SAGs contained both Caudovirales and Microviridae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the distribution of viral types across SUP05 subclades.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "cef134f8-e49e-4866-98e5-1379684b4847",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C29",
+      "claim": "SUP05_03 SAGs contained both Caudovirales and Microviridae.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the SUP05 lineages described above, we note that viral contigs recovered from SUP05_01 SAGs were exclusively Caudovirales, whereas SUP05_03 SAGs contained both Caudovirales and Microviridae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the distribution of viral types across SUP05 subclades.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "9947841e-2700-4575-aee6-7f45f79bb737",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C30",
+      "claim": "An additional 19 contigs were identified as putative viral sequences using non-reference-based methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Using non-reference-based methods, an additional 19 contigs were identified as putative viral sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states the number of additional viral contigs identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "b4acc6b8-2848-4ec5-836c-a9e41212c184",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C31",
+      "claim": "In total, 69 viral contigs encoding 898 predicted open reading frames over 529 kb were recovered from SUP05 SAGs.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 69 viral contigs encoding 898 predicted open reading frames over 529 kb were recovered from SUP05 SAGs representing current viral infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides specific numbers for total viral contigs and their characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "361e0625-2e49-4ddc-9e48-3bd6f2a569e9",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C32",
+      "claim": "Forty-two out of 127 SUP05 SAGs sequenced contained one or more viral contigs.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-two out of 127 SUP05 SAGs sequenced contained one or more viral contigs (Figure 1\u2014source data 1), indicating that \u223c1/3 of SUP05 cells inhabiting the Saanich Inlet water column were infected by viruses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific numbers with reference to source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "cb589557-fef1-4122-9980-ab5fd9ef3e7c",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C33",
+      "claim": "At 100 meters a single SUP05 SAG (of 12) displayed current viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "At 100 meters a single SUP05 SAG (of 12) displayed current viral infection, while the percentage of infected SUP05 SAGs increased to 28% and 47% at 150 and 185 meters (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific infection frequencies at different depths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "8e194b99-36cb-4fcc-a774-c70a302cb694",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C34",
+      "claim": "The percentage of infected SUP05 SAGs increased to 28% and 47% at 150 and 185 meters.",
+      "claim_type": "EXPLICIT",
+      "source": "At 100 meters a single SUP05 SAG (of 12) displayed current viral infection, while the percentage of infected SUP05 SAGs increased to 28% and 47% at 150 and 185 meters (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific infection frequencies at different depths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "10480de9-df52-4599-96e8-d5c0a7aef152",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C35",
+      "claim": "Remnants of past infections were detected in SUP05 and Arctic96BD-19 SAGs, including 13 putative prophages and 25 CRISPR sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, remnants of past infections were detected in SUP05 and Arctic96BD-19 SAGs, including 13 putative prophages and 25 CRISPR sequences (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides specific numbers for past infection markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "d21f261a-670c-48fa-98ee-3c33e8ce1640",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C36",
+      "claim": "All four Caudovirales contigs represent new genera.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome organization (Figure 2) and phylogenetic analysis (Figure 2\u2014figure supplement 1) revealed that all four Caudovirales contigs represent new genera (share <40% of their genes, Lavigne et al., 2008, Figure 2\u2014source data 1) even when considering the viruses recently assembled from SUP05-dominated microbial metagenomes (Anantharaman et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section states this finding based on genome organization and phylogenetic analysis with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "b8948ab0-4c93-43b1-855e-9c09182b29b3",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C37",
+      "claim": "All 8 Microviridae contigs shared 100% nucleotide identity, despite their recovery from different SUP05_03 SAGs.",
+      "claim_type": "EXPLICIT",
+      "source": "All 8 Microviridae contigs shared 100% nucleotide identity, despite their recovery from different SUP05_03 SAGs (Supplementary file 3), and represent a new genus within the subfamily Gokushovirinae (Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific sequence identity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "218a08bb-ca68-42ec-8ff6-94c71d95f2a0",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C38",
+      "claim": "The 8 Microviridae contigs represent a new genus within the subfamily Gokushovirinae.",
+      "claim_type": "EXPLICIT",
+      "source": "All 8 Microviridae contigs shared 100% nucleotide identity, despite their recovery from different SUP05_03 SAGs (Supplementary file 3), and represent a new genus within the subfamily Gokushovirinae (Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section states the taxonomic classification based on phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "7795af08-422e-4001-a95f-b7c518603260",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C39",
+      "claim": "SUP05 infection by Gokushovirinae extends the known host range from small parasitic bacteria to include free-living Gammaproteobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "SUP05 infection by Gokushovirinae extends the known host range from small parasitic bacteria (namely Chlamydia, Bdellovibrio and Spiroplasma) to include free-living Gammaproteobacteria, the first marine host identified for this subfamily of viruses (Labont\u00e9 and Suttle, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section states this finding with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "537aa855-9b07-4616-94b2-9f3a306b2c92",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C40",
+      "claim": "Most (11 of 12) Microviridae-infected SUP05_03 SAGs also contained Podoviridae contigs.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, most (11 of 12) Microviridae-infected SUP05_03 SAGs also contained Podoviridae contigs (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides specific numbers for co-infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "8bfdcb44-3f1c-4157-8961-6b4343b206fa",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C41",
+      "claim": "Lineage-specific co-infection between the ssDNA Microviridae and dsDNA phages has not been observed before.",
+      "claim_type": "EXPLICIT",
+      "source": "While previously postulated based on comparative genomics, lineage-specific co-infection between the ssDNA Microviridae and dsDNA phages has not been observed (Roux et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites a reference to support this statement about novelty.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "9781c6a2-cd78-4c0c-9ad4-d12bb0541768",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C42",
+      "claim": "Co-occurrence of Microviridae and Podoviridae in SUP05 SAGs is highly correlated (Fisher exact test p-value = 2e\u221215).",
+      "claim_type": "EXPLICIT",
+      "source": "Such highly correlated co-occurrence in SUP05 SAGs (Fisher exact test p-value = 2e\u221215) is consistent with non-random co-infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides a statistical test result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "4b9286f9-704a-4ced-9728-b6552b63af55",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C43",
+      "claim": "All 4 SUP05 Caudovirales contigs were absent from surface waters, but repeatedly detected within and below the oxycline.",
+      "claim_type": "EXPLICIT",
+      "source": "All 4 SUP05 Caudovirales contigs were absent from surface waters, but repeatedly detected within and below the oxycline, consistent with SUP05 water column disposition (Figure 3A\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the distribution of viral contigs in the water column.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "c6e4530e-c2f0-4718-9ac6-25584643c04f",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C44",
+      "claim": "Recruited microbial metagenome sequences were more similar to the reference genome for Podoviridae contigs C22_13 and K04_0 (96% average amino-acid identity), than for Siphoviridae G10_6 and Podoviridae M8F6_0 (92% average amino-acid identity).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the Caudovirales, recruited microbial metagenome sequences were more similar to the reference genome for Podoviridae contigs C22_13 and K04_0 (96% average amino-acid identity), than for Siphoviridae G10_6 and Podoviridae M8F6_0 (92% average amino-acid identity, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific sequence identity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "ac1a5458-ba97-400c-b655-fd6cf4e4c092",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C45",
+      "claim": "Contig-derived abundances of SUP05-Caudovirales were in sync with host distributions, but at virus-to-host ratios of 0.01 to 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Contig-derived abundances of SUP05-Caudovirales were in sync with host distributions, but at virus-to-host ratios of 0.01 to 0.3 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific ratio data with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "3f32308b-1324-4dfb-bca6-37dd6df8fc56",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C46",
+      "claim": "SUP05 viral sequences were extremely uncommon in locales outside Saanich Inlet (22 instances out of 803 possibilities).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite consistently recovering SUP05 viral sequences in Saanich Inlet, these sequences were extremely uncommon in other locales (22 instances out of 803 possibilities; Figure 3\u2014figure supplements 2 and 3), even when proximal to Saanich Inlet (e.g., northeastern subarctic Pacific [NESAP] coastal and open ocean waters along the LineP transect) or when sourced from similar water column conditions (e.g., Eastern Tropical South Pacific OMZ, ETSP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific numbers for viral detection in different locations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "50ecd33d-1c96-46e0-ac0e-bf747a39a9f7",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C47",
+      "claim": "Four putative AMGs were detected in 12 of the 69 viral contigs, predominantly from SUP05_01 SAGs recovered from 150 meters.",
+      "claim_type": "EXPLICIT",
+      "source": "Four putative AMGs were detected in 12 of the 69 viral contigs, predominantly from SUP05_01 SAGs recovered from 150 meters (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides specific numbers for AMG detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "e2b000b5-1b8d-4cd9-bd52-eb4b91f46627",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C48",
+      "claim": "One AMG identified on a bona fide viral contig, phosphate-related phoH, is common among marine phages, but remains functionally uncharacterized.",
+      "claim_type": "EXPLICIT",
+      "source": "One AMG identified on a bona fide viral contig, phosphate-related phoH, is common among marine phages, but remains functionally uncharacterized (Sullivan et al., 2010; Goldsmith et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites references to support this statement about phoH.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "0bbf4708-ad81-4f01-932c-cab52a289f87",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C49",
+      "claim": "dsrC genes were found on 7 SUP05_01 viral contigs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that dsrC was found on 7 SUP05_01 viral contigs (Supplementary file 7) and DsrC is critical in SUP05 energy metabolism (Walsh et al., 2009), we focused on this gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides specific numbers with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "28bad83e-eb7e-48cd-8fe0-414ed845370b",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C50",
+      "claim": "Viral dsrC genes from SUP05 SAGs co-localized on contigs with viral homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to high sequence similarity viral dsrC genes from SUP05 SAGs co-localized on contigs with viral homologs (e.g., 2OG-FeII oxygenase, chaperonin), and occurred in genomic context that was completely different to the conserved and well-characterized dsrC region in SUP05 genomes (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the genomic context of viral dsrC genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "0b9ee309-5d68-44c1-b01b-d52184edf7e8",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C51",
+      "claim": "The viral encoded dsrC protein retains 15 conserved residues across known DsrC subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The dsrC_1 group encodes a protein retaining 15 conserved residues across known DsrC subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes sequence conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "2fc84c84-24fa-4446-b329-dd12b2818593",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C52",
+      "claim": "The second C-terminal cysteine and a 7\u20138 residue insertion thought to be required for DsrC function are missing from the viral protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the second C-terminal cysteine and a 7\u20138 residue insertion thought to be required for DsrC function based on structural analysis of Desulfovibrio vulgaris and Archaeoglobus fulgidus proteins are missing from the viral protein (Figure 5\u2014figure supplement 1; Mander et al., 2005; Oliveira et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes sequence differences with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "86df658a-d22b-4718-a476-d2142b87ea06",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C53",
+      "claim": "Viral dsrC genes were abundant in the Saanich Inlet water column over a 3-year-time interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that viral dsrC genes were abundant in the Saanich Inlet water column over a 3-year-time interval (Figure 5C) with peaked recovery consistent with blooming SUP05 populations (Figure 5\u2014figure supplement 2; Hawley et al., 2014), we posit that this viral gene is functional in SUP05 sulfur cycling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes temporal abundance patterns with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "10091677-a27f-4f85-8475-f45b29876385",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C54",
+      "claim": "Samples were collected in Saanich Inlet on Vancouver Island, British Columbia, on the 09th of August 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were collected in Saanich Inlet on Vancouver Island, British Columbia, on the 09th of August 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly states the sampling date and location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "6d398ac0-d0d5-4130-b03f-69768fed0f47",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C55",
+      "claim": "Between 1 and 3 \u00b5g of MDA product was sent to Canada's Michael Smith Genome Sciences Center to create shotgun libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 1 and 3 \u00b5g of MDA product was sent to Canada's Michael Smith Genome Sciences Center (Vancouver, BC) to create shotgun libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly states the amount of DNA used for library preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "aee62ddf-f6ce-444d-88dc-94221b744fce",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C56",
+      "claim": "The DNA was sheared to 350\u2013450 bp fragments using a Covaris E210.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the DNA was sheared to 350\u2013450 bp fragments using a Covaris E210 and purified using AMPure XP Beads according to the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section describes the DNA fragmentation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "ed9c4389-1f06-431c-8311-9ecf4fdb2b6f",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C57",
+      "claim": "Indexed libraries were amplified by PCR for six cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Indexed libraries were amplified by PCR for six cycles, gel-purified, pooled (11\u201312 samples per lane), and QC assessed on a Bioanalyzer DNA Series II High Sensitivity chip (Agilent, Santa Clara, CA, USA), and then sequenced using an Illumina HiSeq2000 sequencer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section describes the library amplification procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "92483968-4325-4d92-b439-de7cd0c260e3",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "claim_id": "C58",
+      "claim": "A total of 136 SAGs affiliated with SUP05 or Arctic96BD-19 were selected for genome sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 136 SAGs affiliated with SUP05 or Arctic96BD-19 were selected for genome sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly states the number of SAGs selected for sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study generated 127 SUP05 single-cell amplified genomes (SAGs) from Saanich Inlet oxygen minimum zone waters at 100, 150, and 185 meters depth using fluorescence-activated cell sorting and multiple displacement amplification. Most SAGs (113/127) clustered into two major subclades: SUP05_01 (n=65) and SUP05_03 (n=48).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims are well-documented with specific numbers, dates, locations, and technical details (C1, C21-C24, C54-C58). The SAG generation, sequencing, and taxonomic classification procedures are described with appropriate technical specifications and are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study identified 69 viral contigs from SUP05 SAGs, including 50 bona fide viral contigs identified using hallmark genes and 19 additional putative viral contigs identified using non-reference-based methods. These represent five new genera: four Caudovirales genera and one Microviridae genus (Gokushovirinae subfamily) with all 8 Microviridae contigs sharing 100% nucleotide identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The viral identification is supported by multiple lines of evidence including hallmark gene detection (C25-C26), non-reference-based genomic characteristics (C30), phylogenetic analysis (C36, C38), and genome organization comparisons (C2, C31, C37). The 100% identity among Microviridae contigs is a strong quantitative finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "6c39177c-9791-47e3-8ea3-6466cd432109",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Approximately 1/3 (42/127) of SUP05 SAGs contained viral contigs, with infection frequency increasing with depth and oxygen deficiency: 8% at 100m, 28% at 150m, and 47% at 185m, correlating with more severe oxygen-deficient conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The infection frequency estimates are based on direct observation of viral contigs in SAGs with specific counts provided (C32-C34). The correlation with oxygen deficiency is supported by the depth-stratified data (C4, C33-C34). However, the authors acknowledge potential underestimation due to incomplete viral identification, making this a conservative estimate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "e2d46ee8-0fd9-4851-97eb-945395776115",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SUP05_01 SAGs contained exclusively Caudovirales, while SUP05_03 SAGs contained both Caudovirales and Microviridae. Notably, 11 of 12 Microviridae-infected SUP05_03 SAGs also contained Podoviridae contigs, representing highly correlated co-infection (Fisher exact test p=2e-15) between ssDNA and dsDNA viruses not previously observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The lineage-specific viral distribution is clearly documented (C28-C29), and the co-infection pattern is supported by strong statistical evidence (C42). The novelty claim is supported by citation (C41). The Fisher exact test provides rigorous statistical support for non-random co-infection, though the biological mechanism remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "13145d66-bd40-4ba5-a7b6-c5ed6de3d71f",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The eight Microviridae contigs sharing 100% nucleotide identity despite recovery from different SUP05_03 SAGs suggests recovery of bloom-terminating viruses targeting a specific SUP05 subclade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the 100% sequence identity among Microviridae from different SAGs is well-supported (C37), the interpretation as 'bloom-terminating' viruses (C5) is speculative. The clonality could indicate a recent viral bloom, but direct evidence of bloom termination (e.g., temporal dynamics showing population decline following viral increase) is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "22d767bf-620c-48ec-aa13-5c8e944b5c1a",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Systematic co-infection between dsDNA Podoviridae and ssDNA Microviridae suggests previously unrecognized cooperation modes between these viral types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The co-infection pattern is statistically robust (C42), and the observation is novel (C41). However, the interpretation of 'cooperation modes' (C6) is speculative. The authors suggest possibilities including satellite-helper relationships or opportunistic co-infection, but no mechanistic data is provided to distinguish between cooperation, competition, or coincidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "f230ac42-b3c4-4f94-a52d-30cddd8b9b1c",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of 186 microbial and viral metagenomes revealed SUP05 viruses persisted in Saanich Inlet for 3 years within and below the oxycline but were extremely rare outside this location (22/803 detections), indicating endemic populations with virus-to-host ratios of 0.01-0.3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The temporal persistence and biogeographic endemism are well-supported by extensive metagenomic recruitment across multiple years and locations (C7-C8, C43, C46). The low virus-to-host ratios (C45) are acknowledged by the authors as indicating incomplete viral discovery. The sequence conservation data (C44) provides additional support for population stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "78489ead-4d66-4a30-941c-001b56270c20",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Viral-encoded dissimilatory sulfite reductase C (dsrC) genes were found on 7 SUP05_01 viral contigs, co-localized with viral homologs, and were abundant in Saanich Inlet over 3 years. The viral DsrC protein retains 15 conserved residues but lacks the second C-terminal cysteine and 7-8 residue insertion thought required for function, suggesting SUP05 viruses may reprogram host sulfur metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The presence of viral dsrC genes is well-documented (C49-C50), and their abundance over time is supported (C53). The sequence analysis showing conservation and differences from bacterial homologs is detailed (C51-C52). However, the functional interpretation (C9) is speculative since the viral protein lacks key residues thought to be required for function. The authors acknowledge this uncertainty and suggest the viral gene may have modified function, but no experimental validation is provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "73c12075-f137-4110-b01d-83e61389df7e",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SUP05 infection by Gokushovirinae extends the known host range from small parasitic bacteria to free-living Gammaproteobacteria, representing the first marine host for this viral subfamily and the first association of Microviridae with OMZs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The host range extension is supported by phylogenetic placement (C38) and citation of prior host associations (C39). The novelty of Microviridae in OMZs is supported by citations showing their typical distribution in surface waters or deep-sea sediments (C27). This represents a clear expansion of known ecological and host ranges.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "65c5dacc-6fec-4dec-af36-7e7cd9556115",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Remnants of past infections including 13 putative prophages and 25 CRISPR sequences were detected in SUP05 and Arctic96BD-19 SAGs, none matching the detected current infection viral contigs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The detection of past infection markers is clearly quantified (C35). The lack of overlap between past and current infections is explicitly stated and suggests either different viral populations over time or incomplete sampling. The methods for prophage and CRISPR detection are described in the Materials and Methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "6c466ae1-823e-4967-aae8-a2a8620cd9b4",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Four putative auxiliary metabolic genes (AMGs) were detected in 12 of 69 viral contigs, including phoH (phosphate-related), 2OG-FeII oxygenase, tctA, and dsrC, predominantly from SUP05_01 SAGs at 150 meters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The AMG detection is quantified (C47) and the genes are identified. The functional characterization of phoH as common but uncharacterized is supported by citations (C48). This provides context for the more detailed analysis of dsrC covered in another result group.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    },
+    {
+      "id": "dfcc7b1c-5059-4549-9caf-351feb884c39",
+      "content_id": "35573f62-1db8-4164-8a96-fc63e3886e3c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about viral roles in microbial communities, OMZ characteristics and biogeochemical importance, SUP05 bacterial ecology and phylogeny, and prior evidence for viral metabolic reprogramming including SUP05 phage with sulfur cycling genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established background knowledge appropriately cited from the literature (C10-C20). They provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:16:33.923405Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf201d05-286f-494c-80d5-098c1d3a1a3d",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "7c71133c-5f00-4b38-baff-29f227a8f059",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "fb6944ad-b578-4af9-965e-64fb4706e078",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "eee14a3d-8304-4cab-bf4c-dbce6c8dcb51",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "299a4158-c6ce-48bc-af63-017f70ce7a44",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "10091677-a27f-4f85-8475-f45b29876385",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "6d398ac0-d0d5-4130-b03f-69768fed0f47",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "aee62ddf-f6ce-444d-88dc-94221b744fce",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "ed9c4389-1f06-431c-8311-9ecf4fdb2b6f",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "92483968-4325-4d92-b439-de7cd0c260e3",
+      "result_id": "ceb13062-1fa1-4aa9-bea2-4d1007e3d6e4"
+    },
+    {
+      "claim_id": "10596f84-628e-447a-b800-a034c76fa1c8",
+      "result_id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a"
+    },
+    {
+      "claim_id": "24ed13ad-8300-433a-989b-decb583f6b3d",
+      "result_id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a"
+    },
+    {
+      "claim_id": "75a5cab7-10f5-4c41-99a6-a431044bfa27",
+      "result_id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a"
+    },
+    {
+      "claim_id": "9947841e-2700-4575-aee6-7f45f79bb737",
+      "result_id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a"
+    },
+    {
+      "claim_id": "b4acc6b8-2848-4ec5-836c-a9e41212c184",
+      "result_id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a"
+    },
+    {
+      "claim_id": "d21f261a-670c-48fa-98ee-3c33e8ce1640",
+      "result_id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a"
+    },
+    {
+      "claim_id": "b8948ab0-4c93-43b1-855e-9c09182b29b3",
+      "result_id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a"
+    },
+    {
+      "claim_id": "218a08bb-ca68-42ec-8ff6-94c71d95f2a0",
+      "result_id": "ed7ec1cf-8599-4482-a375-3ab49cafe09a"
+    },
+    {
+      "claim_id": "e5684b6e-929b-4d7b-ba27-119b6dae2b57",
+      "result_id": "6c39177c-9791-47e3-8ea3-6466cd432109"
+    },
+    {
+      "claim_id": "361e0625-2e49-4ddc-9e48-3bd6f2a569e9",
+      "result_id": "6c39177c-9791-47e3-8ea3-6466cd432109"
+    },
+    {
+      "claim_id": "cb589557-fef1-4122-9980-ab5fd9ef3e7c",
+      "result_id": "6c39177c-9791-47e3-8ea3-6466cd432109"
+    },
+    {
+      "claim_id": "8e194b99-36cb-4fcc-a774-c70a302cb694",
+      "result_id": "6c39177c-9791-47e3-8ea3-6466cd432109"
+    },
+    {
+      "claim_id": "14c37a65-1eb3-41fc-80cd-f76c827bb539",
+      "result_id": "6c39177c-9791-47e3-8ea3-6466cd432109"
+    },
+    {
+      "claim_id": "590be16f-2198-4d32-93a5-fcc801efb498",
+      "result_id": "e2d46ee8-0fd9-4851-97eb-945395776115"
+    },
+    {
+      "claim_id": "cef134f8-e49e-4866-98e5-1379684b4847",
+      "result_id": "e2d46ee8-0fd9-4851-97eb-945395776115"
+    },
+    {
+      "claim_id": "537aa855-9b07-4616-94b2-9f3a306b2c92",
+      "result_id": "e2d46ee8-0fd9-4851-97eb-945395776115"
+    },
+    {
+      "claim_id": "8bfdcb44-3f1c-4157-8961-6b4343b206fa",
+      "result_id": "e2d46ee8-0fd9-4851-97eb-945395776115"
+    },
+    {
+      "claim_id": "9781c6a2-cd78-4c0c-9ad4-d12bb0541768",
+      "result_id": "e2d46ee8-0fd9-4851-97eb-945395776115"
+    },
+    {
+      "claim_id": "2729bc19-427c-4452-b244-c277d93d0a6f",
+      "result_id": "13145d66-bd40-4ba5-a7b6-c5ed6de3d71f"
+    },
+    {
+      "claim_id": "b8948ab0-4c93-43b1-855e-9c09182b29b3",
+      "result_id": "13145d66-bd40-4ba5-a7b6-c5ed6de3d71f"
+    },
+    {
+      "claim_id": "218a08bb-ca68-42ec-8ff6-94c71d95f2a0",
+      "result_id": "13145d66-bd40-4ba5-a7b6-c5ed6de3d71f"
+    },
+    {
+      "claim_id": "9fc76373-2c9c-4d0d-af8e-5ea753501f95",
+      "result_id": "22d767bf-620c-48ec-aa13-5c8e944b5c1a"
+    },
+    {
+      "claim_id": "537aa855-9b07-4616-94b2-9f3a306b2c92",
+      "result_id": "22d767bf-620c-48ec-aa13-5c8e944b5c1a"
+    },
+    {
+      "claim_id": "8bfdcb44-3f1c-4157-8961-6b4343b206fa",
+      "result_id": "22d767bf-620c-48ec-aa13-5c8e944b5c1a"
+    },
+    {
+      "claim_id": "9781c6a2-cd78-4c0c-9ad4-d12bb0541768",
+      "result_id": "22d767bf-620c-48ec-aa13-5c8e944b5c1a"
+    },
+    {
+      "claim_id": "1cb6a724-b8e7-4294-b189-89c0cd31a2e8",
+      "result_id": "f230ac42-b3c4-4f94-a52d-30cddd8b9b1c"
+    },
+    {
+      "claim_id": "f2b0f390-451a-4dd8-9bd4-3328e90ab1ec",
+      "result_id": "f230ac42-b3c4-4f94-a52d-30cddd8b9b1c"
+    },
+    {
+      "claim_id": "4b9286f9-704a-4ced-9728-b6552b63af55",
+      "result_id": "f230ac42-b3c4-4f94-a52d-30cddd8b9b1c"
+    },
+    {
+      "claim_id": "c6e4530e-c2f0-4718-9ac6-25584643c04f",
+      "result_id": "f230ac42-b3c4-4f94-a52d-30cddd8b9b1c"
+    },
+    {
+      "claim_id": "ac1a5458-ba97-400c-b655-fd6cf4e4c092",
+      "result_id": "f230ac42-b3c4-4f94-a52d-30cddd8b9b1c"
+    },
+    {
+      "claim_id": "3f32308b-1324-4dfb-bca6-37dd6df8fc56",
+      "result_id": "f230ac42-b3c4-4f94-a52d-30cddd8b9b1c"
+    },
+    {
+      "claim_id": "65aba2ef-85f4-4638-878e-000212b5c943",
+      "result_id": "78489ead-4d66-4a30-941c-001b56270c20"
+    },
+    {
+      "claim_id": "50ecd33d-1c96-46e0-ac0e-bf747a39a9f7",
+      "result_id": "78489ead-4d66-4a30-941c-001b56270c20"
+    },
+    {
+      "claim_id": "0bbf4708-ad81-4f01-932c-cab52a289f87",
+      "result_id": "78489ead-4d66-4a30-941c-001b56270c20"
+    },
+    {
+      "claim_id": "28bad83e-eb7e-48cd-8fe0-414ed845370b",
+      "result_id": "78489ead-4d66-4a30-941c-001b56270c20"
+    },
+    {
+      "claim_id": "0b9ee309-5d68-44c1-b01b-d52184edf7e8",
+      "result_id": "78489ead-4d66-4a30-941c-001b56270c20"
+    },
+    {
+      "claim_id": "2fc84c84-24fa-4446-b329-dd12b2818593",
+      "result_id": "78489ead-4d66-4a30-941c-001b56270c20"
+    },
+    {
+      "claim_id": "86df658a-d22b-4718-a476-d2142b87ea06",
+      "result_id": "78489ead-4d66-4a30-941c-001b56270c20"
+    },
+    {
+      "claim_id": "7795af08-422e-4001-a95f-b7c518603260",
+      "result_id": "73c12075-f137-4110-b01d-83e61389df7e"
+    },
+    {
+      "claim_id": "3c8a3b30-c5d0-4393-a101-1d8518673e6c",
+      "result_id": "73c12075-f137-4110-b01d-83e61389df7e"
+    },
+    {
+      "claim_id": "10480de9-df52-4599-96e8-d5c0a7aef152",
+      "result_id": "65c5dacc-6fec-4dec-af36-7e7cd9556115"
+    },
+    {
+      "claim_id": "50ecd33d-1c96-46e0-ac0e-bf747a39a9f7",
+      "result_id": "6c466ae1-823e-4967-aae8-a2a8620cd9b4"
+    },
+    {
+      "claim_id": "e2b000b5-1b8d-4cd9-bd52-eb4b91f46627",
+      "result_id": "6c466ae1-823e-4967-aae8-a2a8620cd9b4"
+    },
+    {
+      "claim_id": "e4062586-c3b1-4cf0-aa29-4075584b36c7",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "a6e1115a-787f-49fb-a1ee-34b9e226ed84",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "e7d96881-c99b-4ab8-983e-8e9c6c836409",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "62b32c3c-07d0-424a-9a50-0eaee4b7d31b",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "f28ac21a-9967-4636-8674-7f33dade37fd",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "a903aea0-fb9e-4b61-906b-547a25e1ac63",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "0d6f6ac5-4281-4c43-87e3-326f5dc6d1bd",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "352b3411-8300-42ad-9ffe-6d6f9e9662b2",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "d9f34a82-5530-4305-a7b8-9d422f5b8df7",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "64376696-4ff6-4b66-999c-f6a41843822d",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    },
+    {
+      "claim_id": "c1dcccbf-009d-467c-b614-fcebc088a18d",
+      "result_id": "dfcc7b1c-5059-4549-9caf-351feb884c39"
+    }
+  ],
+  "comparisons": []
+}

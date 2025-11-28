@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The Drosophila genome contains 829 annotated smORF genes (4% of total genes), but only 164 have corroborated evidence of translation and peptide function based on at least two of three markers (GO terms, proteomics, conservation beyond insects). The remaining 665 smORFs are uncorroborated, with 494 having no evidence of translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C51-C55 collectively establish the baseline state of smORF annotation in Drosophila. The numbers are supported by database citations (FlyBase, Ensembl) and presented in Table 1 and Figure 1A. The categorization into corroborated vs. uncorroborated smORFs based on multiple evidence types provides a clear framework for evaluating the contribution of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Poly-Ribo-Seq is a methodological improvement over standard ribosome profiling that isolates mRNAs bound by multiple ribosomes (polysomes) to distinguish actively translated sequences from non-productive ribosomal binding. This addresses limitations of traditional ribosome profiling where single ribosomes or scanning subunits can produce footprints without productive translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C58-C61 describe the methodological rationale and innovation of Poly-Ribo-Seq. The approach is logically sound and addresses known limitations of ribosome profiling cited in the literature (C58-C60). The trade-off acknowledged in C61 (potentially missing very short smORFs) demonstrates appropriate consideration of method limitations. The experimental design is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Poly-Ribo-Seq successfully captures regions of active translation, as demonstrated by ~80% of reads mapping to coding sequences, read densities dropping off at start/stop codons, significantly higher median translation efficiency in CDSs compared to UTRs, and triplet phasing in coding sequences but not UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 provide multiple lines of evidence validating the Poly-Ribo-Seq method. The data show expected patterns for active translation (enrichment in CDS, depletion in UTRs, triplet periodicity, boundary effects at start/stop codons). These are standard quality control metrics for ribosome profiling experiments and the results meet expectations, supporting method validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Poly-Ribo-Seq is highly reproducible, with genome-wide ribosome densities strongly correlated between two independent experiments (R\u00b2 = 0.83) and 80% of putative translated smORFs detected in all three independent data sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 demonstrate technical reproducibility through statistical correlation and overlap analysis. The R\u00b2 = 0.83 indicates strong correlation, and 80% overlap across three experiments is substantial. These metrics support the reliability of the method and findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C33",
+      "C34",
+      "C50"
+    ],
+    "result": "Small polysomes (2-6 ribosomes) are enriched for smORF mRNAs compared to large polysomes, with Drosophila smORFs capable of binding up to six ribosomes. Small polysomes contain all smORFs detected in large polysomes plus double the number. The translation efficiency of smORFs from small polysomes is similar to that of long ORFs from large polysomes, indicating comparable translation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 and C33-C34 establish the rationale for using small polysome fractions to enrich for smORFs. The RT-PCR data (C47), differential ribosome density distributions (C48), and enrichment patterns (C49) support the approach. The TE comparisons (C33-C34) provide important context showing that smORFs in small polysomes are translated as efficiently as canonical ORFs in large polysomes, validating the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Poly-Ribo-Seq detected 191 annotated smORFs as translated in the initial experiment (~70% of transcribed smORFs), 224 in an extensive small polysome experiment, and combining three independent experiments provides evidence that 228 smORFs are translated out of 274 transcribed in S2 cells (83%), similar to the proportion of standard protein-coding ORFs translated (81%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 present the core quantitative findings from Poly-Ribo-Seq experiments. The progression from 191 to 224 to 228 detected smORFs across increasingly deep sequencing demonstrates thoroughness. The 83% translation rate for smORFs matching the 81% rate for canonical ORFs (C8) is a key finding suggesting smORFs behave similarly to standard genes. The data are supported by Figure 2D-E and multiple independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C37"
+    ],
+    "result": "Poly-Ribo-Seq nearly doubles the previous repertoire of translated smORFs in Drosophila from 164 to 285 (164 previously corroborated plus 121 newly detected), and increases nearly fourfold the number of smORFs with evidence of translation in S2 cells from 59 (Peptide Atlas) to 228.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C37 quantify the advance over previous knowledge. The comparison to previously corroborated smORFs (164, from C2) and Peptide Atlas data (59) provides clear benchmarks. The numbers are internally consistent and supported by Figure 2E-F. This represents a substantial expansion of known translated smORFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C38"
+    ],
+    "result": "Poly-Ribo-Seq detects 86% of smORFs with Peptide Atlas evidence in S2 cells (51/59) and 90 of 99 smORFs in the combined proteomics pool. The Poly-Ribo-Seq RPKM values of smORFs detected by peptidomics are over three times higher than those not detected, suggesting mass spectrometry preferentially detects highly translated smORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C12, and C38 validate Poly-Ribo-Seq against orthogonal proteomic evidence. The high detection rate (86-90%) of proteomically-confirmed smORFs supports method sensitivity. The RPKM correlation (C38) provides mechanistic insight into why some smORFs are detected by proteomics while others are not, consistent with cited literature (Brunner et al., 2007; Bazzini et al., 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C39"
+    ],
+    "result": "All 12 smORFs tested by FLAG-tagging transfection assay were confirmed to be translated, with immunoblotting confirming the expected sizes of the tagged peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C39 provide independent experimental validation of smORF translation using a different method (FLAG-tagging). The 12/12 success rate and size confirmation by Western blot (Figure 3\u2014figure supplement 1C) strongly support the Poly-Ribo-Seq findings. The smORFs tested represent a range of translational indicators (Table 3), strengthening the validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Six FLAG-tagged smORFs display reticular distribution resembling mitochondria and co-localize with Mitotracker Red, while six others show other types of anisotropic cytoplasmic localization suggesting localization to other cytoplasmic compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 describe subcellular localization patterns of translated smORF peptides. The mitochondrial localization is supported by co-localization with Mitotracker Red (Figure 3A, Figure 3\u2014figure supplement 1D-E) and correlation analysis. The diverse localization patterns suggest functional diversity. The comparison to known ER-localized Sarcolamban (C15) provides additional context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Translated smORFs show bioinformatic hallmarks of functional peptides: 93% have phastCons scores above 0.55 (indicating conservation similar to canonical proteins), display lower-than-random arginine usage (a hallmark of translated proteins), show differential amino acid usage characteristic of alpha-helices (enriched for lysine and phenylalanine, depleted of serine), and about a third contain putative transmembrane alpha-helix motifs compared to 20% in canonical proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 provide multiple bioinformatic lines of evidence for smORF functionality. The conservation analysis (C20) uses appropriate methodology (phastCons across 12 insect species) with a defined threshold. The amino acid composition analyses (C21-C22) are supported by established literature on protein characteristics. The transmembrane helix prediction (C23-C24) uses standard software (TMHMM) and shows enrichment compared to canonical proteins. These converging lines of evidence strongly support functional potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Over half of translated smORFs show function in high-throughput S2 cell RNAi screens. 196 translated smORFs are transcribed in embryos, with 88 transcribed throughout embryogenesis (potentially indicating housekeeping roles) and 47 showing stage-specific expression (potentially indicating developmental roles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide functional and expression evidence supporting smORF biological relevance. The RNAi screen data (C25) from previous studies (Schmidt et al., 2012) provides independent functional evidence. The embryonic expression patterns (C26-C28) suggest biological roles, though the functional interpretations in C27-C28 are appropriately presented as speculative ('might be indicative', 'perhaps indicative').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The 555 annotated smORFs not transcribed in S2 cells share bioinformatic characteristics (peptide length, amino acid usage, transmembrane helices) with translated smORFs. Extrapolating the 83% translation rate to this wider pool potentially brings the number of smORFs encoding functional peptides in Drosophila to around 700.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C30 involve extrapolation from S2 cells to all Drosophila smORFs. While C29 is supported by bioinformatic comparisons (Figure 4), the extrapolation in C30 is speculative. The assumption that non-transcribed smORFs in S2 cells would be translated at the same rate (83%) when/if transcribed in other contexts is reasonable but unproven. The claim is appropriately hedged ('could be extrapolated', 'potentially'), but requires validation in other cell types or developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Poly-Ribo-Seq detects 313 smORFs in non-coding RNA transcripts (34% of transcribed ncRNA smORFs) and 2708 uORFs (30% of transcribed uORFs) as translated. However, both ncRNA smORFs and uORFs display lower median translation efficiency than canonical genes and annotated smORFs, similar to UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 identify translation of smORFs in non-canonical locations. The quantitative data are supported by Figure 2E and Table 2. The lower translation efficiency (C17, C19) distinguishes these from annotated smORFs, suggesting they may represent a different class. The data are clear, though functional interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Poly-Ribo-Seq detects two types of translated smORFs: (1) 'longer' smORFs (~80 aa) that are efficiently translated, conserved, and show bioinformatic hallmarks of peptide function including membrane association; and (2) 'dwarf' smORFs (~20 aa) from ncRNAs and 5'-UTRs that are shorter, less conserved, less efficiently translated, and lack bioinformatic indicators distinguishing them from intergenic or random sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C104-C107 synthesize multiple lines of evidence to propose two distinct smORF classes. The distinction is supported by differences in size (Figure 4E-F, Figure 4\u2014figure supplement 1C-D), conservation (C20 vs C31), translation efficiency (Table 2), amino acid composition, and transmembrane motif frequency. This is a key conceptual finding that organizes the diverse observations into a coherent framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "For ncRNA smORFs, ribosomal footprinting reads show high correlation with polysomal RNA reads for canonical coding sequences but not for non-coding RNAs, where high polysomal counts don't necessarily result in significant footprinting. However, positive-testing ncRNA smORFs show codon read-phasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 address the question of whether ncRNA smORF translation is genuine or background. The differential correlation (C40, Figure 3\u2014figure supplement 2B) suggests that polysome association alone doesn't indicate translation for ncRNAs. The codon phasing (C41, Figure 3\u2014figure supplement 2A) for positive smORFs supports genuine translation. Together, these provide evidence that the detected translation is real, not artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C70",
+      "C74",
+      "C103"
+    ],
+    "result": "Extrapolation suggests thousands of smORFs are translated in metazoan genomes, including higher organisms and humans. Based on Drosophila results and zebrafish data (190 smORFs), and considering that 44% of human lncRNAs are cytoplasmic, if translated at the same rate as Drosophila (34%), there could be thousands of human peptides awaiting detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63, C70, C74, and C103 involve substantial extrapolation from Drosophila to other organisms, particularly mammals and humans. While the zebrafish data (C69, 190 smORFs) provides some support for conservation across species, the extrapolation involves multiple assumptions: (1) similar smORF proportions across species, (2) similar translation rates, (3) similar functionality. The human lncRNA calculation (C74) compounds uncertainties. These are reasonable hypotheses but require experimental validation in each organism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Translated smORFs show evidence of functionality: conservation similar to canonical proteins, 50% show function in RNAi tests, encode ~80 aa peptides with high proportion of transmembrane alpha-helix motifs, and GO term enrichment shows ribosome constituents, oxidoreductase activity, and transporter activity. Hundreds of small membrane-associated peptides may be awaiting characterization with potential to alter understanding of cellular and organismal processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 provide multiple lines of evidence for smORF functionality, including conservation (C80), RNAi phenotypes (C81), structural features (C82), GO enrichment (C85), and transmembrane motif frequency (C86). The evidence is substantial and converging. However, C87-C88 are speculative about future impact ('may alter our understanding'), appropriately hedged but representing hypothesis rather than demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Small peptides are expected to interact with canonical proteins as regulators due to size-limited structural capabilities, though capabilities could be expanded by oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C90 propose a functional model for smORF peptides based on size constraints and cite one example (Magny et al., 2013). While the reasoning is logical and the regulatory example provides some support, this remains largely speculative. The oligomerization possibility (C90) is presented as speculation without supporting evidence. These are reasonable hypotheses requiring experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The main described function of uORFs is translational regulation of downstream ORFs, with the translated peptide sequence often irrelevant. This cis-regulatory role would fit with the observed low translation efficiency and high sequence variability of uORFs. However, no overall correlation is observed between uORF translation and downstream ORF translation, and validating uORF function is difficult with current genetic methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C95 discuss uORF function. C91-C92 cite established knowledge about uORF regulatory roles. C93 makes a logical inference connecting observed data (low TE, low conservation) with known mechanisms. However, C94 presents an observation (no correlation with downstream ORF translation) that contradicts the expected regulatory model, creating uncertainty. C95 acknowledges methodological limitations. The evidence is mixed and interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "smORFs in putative lncRNAs might reveal coding potential, non-coding ribosome association, or dual function. Standard genetic techniques cannot distinguish these possibilities. However, examples like tal and scl (previously annotated as ncRNAs) encode functional peptides as short as 11-28 aa with important developmental and physiological functions, including confirmed transmembrane structure for Scl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 acknowledge interpretive uncertainty, which is appropriate. Claims C98-C101 provide concrete examples (tal and scl) of functional peptides from sequences previously thought to be non-coding, supported by multiple citations to functional studies. These examples demonstrate that at least some ncRNA smORFs encode functional peptides. C102 is speculative about future discoveries but reasonable given the examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The small size of uORF and ncORF peptides may hinder mass spectrometry detection, so absence of proteomic or functional data should not disprove translation. Poly-Ribo-Seq can define whole translated ORFs versus isolated micropeptides from peptidomics. High translation level appears critical for mass spectrometry detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 discuss methodological limitations and advantages. The inference about size limitations for mass spectrometry (C75) is reasonable and supported by unpublished observations. The caution against using negative evidence (C76) is methodologically sound. The advantage of Poly-Ribo-Seq for defining complete ORFs (C77) is valid. The correlation between translation level and proteomic detection (C78) is supported by data (C38). C79 is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "Prior work context: Ribosome profiling has expanded proteomes across species, detecting thousands of new translated sequences. Bioinformatic approaches predict hundreds of functional smORFs across organisms, but this contrasts with low detection rates in proteomic and genetic screens. smORF annotation has been hindered by size-related limitations in obtaining high conservation scores and limited experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C64-C69 accurately summarize prior work through appropriate citations. C66-C68 correctly identify the annotation challenge that motivates this study. C71 makes a reasonable statement about the need for experimental validation. These claims provide accurate context for the current work and are well-supported by citations.",
+    "result_type": "MINOR"
+  }
+]

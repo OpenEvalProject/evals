@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "NB4 cells were arrested at different cell cycle phases using serum starvation (G0/G1), hydroxyurea (S), and RO-3306 (G2), with enrichment profiles similar to those obtained by centrifugal elutriation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C40 collectively demonstrate that the arrest methods successfully enriched cells at the targeted cell cycle phases, as confirmed by flow cytometry (C28-C31) and immunoblot analysis (C35-C37). The experimental design (C21, C27) and comparison with elutriation data (C39) support the conclusion that differences in protein abundance are not due to enrichment efficiency (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Label-free quantitative proteomics identified 484 proteins as cell cycle arrest regulated based on \u22652-fold change, p<0.05 (ANOVA), and detection in all three biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 describe a rigorous proteomic analysis with high reproducibility (>0.95 correlation, C42-C43) and appropriate statistical criteria (C45-C46). The filtering steps (C44) and multiple criteria (C47) provide confidence in the identification of arrest-regulated proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Hierarchical clustering identified four clusters of arrest-regulated proteins with distinct peak expression patterns and functional enrichments, differing substantially from the elutriation dataset where ~50% peaked at G2&M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 demonstrate clear clustering patterns with functional coherence (GO enrichment analysis). The comparison with elutriation data (C53) highlights a major difference in the distribution of protein expression peaks, supporting the conclusion that arrest methods produce distinct proteomic responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Only 212 of 484 arrest-regulated proteins (47%) correlate well with elutriation data (Pearson's r\u22650.50), with just 29 (14%) showing >2-fold changes in both datasets, indicating that 53% of arrest-induced changes are not observed in unperturbed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 provide quantitative evidence for the limited overlap between arrest and elutriation datasets. The correlation analysis (C58), functional enrichment of overlapping proteins (C59), and specific examples (C61-C62) support the conclusion that most arrest-induced changes are method-specific rather than physiological.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Serum starvation induces dramatic increases in proteins involved in cellular metabolism, particularly catabolic pathways and cholesterol biosynthesis, with 75% (9/12) of quantitated cholesterol biosynthesis enzymes increasing in abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C74 demonstrate specific metabolic changes upon serum starvation, with quantitative data on cholesterol biosynthesis enzymes (C70-C72) and support from prior literature (C73). The proteomic data (C74) confirms that transcriptional changes translate to protein abundance changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Serum starvation induces significant upregulation of core nucleosome components (histones H2A, H3.1, H4, H2A.Z) and chromatin remodelers, representing changes not observed during normal cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 provide proteomic evidence (C76, C80) confirmed by immunoblot (C78) for histone upregulation. While unexpected (C79), this finding is supported by prior literature showing histone modulation under different conditions (C77). The comparison with elutriation data (C81) strengthens the conclusion that these are arrest-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Hydroxyurea arrest induces a DNA damage response with enrichment of p53 signaling pathway proteins and increased abundance of CHEK2 and ATR, suggesting more extensive DNA damage than in elutriated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C93 demonstrate that hydroxyurea induces both expected S-phase markers (C83-C84) and DNA damage responses (C86-C87, C90). The comparison with elutriation data (C91-C92) supports the inference of more extensive DNA damage (C93), though this remains somewhat speculative. The pathway analysis (C86) and literature support (C85, C88-C89) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "RO-3306 treatment causes accumulation of replication and origin licensing factors (MCM6, ORC1/3/5, RFC3/5) with abnormally high CDT1 levels and CDT1:Geminin ratios in G2 cells, indicating that ~97% of arrested cells are poised for re-replication despite only ~3.3% showing >4N DNA content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C110 provide strong evidence for abnormal accumulation of licensing factors through proteomic analysis (C99, C101) and immunofluorescence (C106-C107). The surprise expressed (C102) and the discrepancy between protein accumulation and actual re-replication frequency support the inference that cells are 'poised' for re-replication (C110). The comparison with normal cells (C103-C105) and inference about CDK1's role (C108) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "RO-3306 treatment causes significant decreases in translation machinery proteins (ribosomal components, eIFs, elongation factors), suggesting impaired protein translation as an arrest-specific effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 demonstrate decreased abundance of translation factors with proteomic data (C111-C112) and comparison to elutriation showing this is RO-3306-specific (C114). While the inference of impaired translation (C113) is speculative, it is reasonable given the comprehensive decrease in translation machinery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C125",
+      "C128"
+    ],
+    "result": "The majority of protein abundance changes in arrested cells are arrest-specific responses rather than physiological cell cycle regulation, with each arrest method inducing unique proteomic changes not detected in unperturbed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C115-C119, C125, C128 represent the main conclusion of the study, supported by the comprehensive comparison between arrest and elutriation datasets. The quantitative evidence (53% of changes are arrest-specific, C64) and specific examples for each arrest method support this conclusion. The recommendation for caution (C125) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C126",
+      "C127"
+    ],
+    "result": "CDK1 inhibition by RO-3306 causes cells to express abnormally high levels of replication and origin licensing factors, likely contributing to genome re-replication through increased CDT1:Geminin ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C126-C127 are supported by the proteomic and immunofluorescence data showing elevated licensing factors and altered CDT1:Geminin ratios. However, the causal link to re-replication (C4, C126) remains somewhat inferential, as only ~3.3% of cells show actual re-replication. The term 'likely' appropriately reflects this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C34"
+    ],
+    "result": "NB4 cells are hypersensitive to hydroxyurea, undergoing apoptosis at 1-5 mM concentrations typically used for other cell lines, requiring use of 80 \u03bcM in this study, and RO-3306 induces re-replication in ~3.3% of treated NB4 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C34 report cell line-specific observations supported by experimental data (flow cytometry showing >4N DNA content, C34). The hypersensitivity observation (C32) is based on comparison with typical concentrations used in other studies, which is reasonable but could benefit from more direct comparative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Increases in histone gene expression upon serum starvation have been reported in other systems (mouse 3T3 cells, C. elegans), suggesting this may represent a conserved mechanism for modulating gene expression in response to nutrient deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 cite prior work showing similar histone changes in other organisms, but C124 is explicitly speculative about conservation. While the cross-species observations are suggestive, the claim of a 'conserved mechanism' requires more direct comparative analysis and functional validation. The authors appropriately frame this as speculation meriting future study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Proteomic data were analyzed using MaxQuant 1.5.0.0 with appropriate parameters (7 ppm mass tolerance, trypsin/P digestion, 1% FDR) and statistical methods (ANOVA, Ward clustering, GSEA) with data management through PepTracker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C161 describe comprehensive and appropriate computational methods. The parameters are standard for label-free proteomics, the FDR threshold is appropriate (C151-C152), and multiple complementary analysis approaches were used (C158-C161). The methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C162"
+    ],
+    "result": "The complete proteomic dataset is available through multiple repositories: Encyclopedia of Proteome Dynamics (http://www.peptracker.com/epd/), ProteomeXchange (PXD001610), and supplementary files, facilitating data access and comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C129-C132, C162 document comprehensive data deposition in appropriate repositories with proper accession numbers. The multi-level data sharing (raw files, processed data, online resource) exceeds typical standards and facilitates reproducibility and reuse.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Future studies should extend this work to arrest-release methods, characterize reversibility of serum starvation effects on chromatin, and apply MS-based proteomics to screen for drug off-target effects and improve cytotoxicity studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 appropriately acknowledge study limitations (C133) and propose reasonable future directions based on the findings. These are suggestions rather than results, but they logically follow from the data presented. The proposal to use proteomics for drug screening (C137) is supported by the RO-3306 findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C26",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C68",
+      "C73",
+      "C77",
+      "C82",
+      "C85",
+      "C88",
+      "C89",
+      "C94",
+      "C95",
+      "C96",
+      "C103",
+      "C118",
+      "C146"
+    ],
+    "result": "Background claims establish prior knowledge about cell cycle synchronization methods, their mechanisms, and known effects, including the previous elutriation study (Ly et al., 2014) and established properties of arrest agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C146 (selected) represent background knowledge and prior work, appropriately cited throughout. These establish the context for the current study and are generally well-supported by the cited literature. The characterization of arrest methods and their known effects provides necessary foundation for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "NB4 cells were cultured under standard conditions (37\u00b0C, 5% CO2, RPMI-1640 with supplements) and arrested using 48 hr serum starvation, 80 \u03bcM hydroxyurea for 18 hr, or 9 \u03bcM RO-3306 for 18 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 describe standard cell culture and arrest protocols. The methods are clearly described and appropriate for the cell line and experimental goals. The specific concentrations and durations are justified by the validation experiments (flow cytometry, immunoblots).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Protein abundance changes upon serum starvation may arise from depletion of serum components (growth factors, hormones, lipids) and/or reflect the shift from proliferative to quiescent state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121 are explicitly speculative (both use 'may') about the mechanisms underlying serum starvation effects. While reasonable hypotheses supported by citations to relevant studies (C121), these remain untested in this study. The authors appropriately present these as speculation rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

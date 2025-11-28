@@ -1,0 +1,2231 @@
+{
+  "submission": {
+    "id": "dbcdd079-8a0d-44f3-8595-1935990ab0d0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:10:05.758900Z",
+    "updated_at": "2025-11-28T22:10:05.758900Z"
+  },
+  "content": [
+    {
+      "id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "submission_id": "dbcdd079-8a0d-44f3-8595-1935990ab0d0",
+      "content_type": "manuscript",
+      "content_text": "# Domain\u2013domain interactions determine the gating, permeation, pharmacology, and subunit modulation of the IKs ion channel\n\n## Authors\n\n- Mark A Zaydman<sup>1</sup>\n- Marina A Kasimova<sup>2</sup>\n- Kelli McFarland<sup>1</sup>\n- Zachary Beller<sup>1</sup>\n- Panpan Hou<sup>1</sup>\n- Holly E Kinser<sup>1</sup>\n- Hongwu Liang<sup>1</sup>\n- Guohui Zhang<sup>1</sup>\n- Jingyi Shi<sup>1</sup>\n- Mounir Tarek<sup>2</sup>\n- Jianmin Cui<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, Center for the Investigation of Membrane Excitability Diseases Washington University in St Louis St Louis United States\n2. Theory, Modeling, and Simulations, UMR 7565 Universite\u0301 de Lorraine Nancy France\n3. Lomonosov Moscow State University Moscow Russia\n4. UMR 7565 Centre National de la Recherche Scientifique Vandoeuvre-le\u0301s-Nancy France\n\n\u2020 Corresponding author\n\n## Abstract\n\nVoltage-gated ion channels generate electrical currents that control muscle contraction, encode neuronal information, and trigger hormonal release. Tissue-specific expression of accessory (\u03b2) subunits causes these channels to generate currents with distinct properties. In the heart, KCNQ1 voltage-gated potassium channels coassemble with KCNE1 \u03b2-subunits to generate the IKs current (Barhanin et al., 1996; Sanguinetti et al., 1996), an important current for maintenance of stable heart rhythms. KCNE1 significantly modulates the gating, permeation, and pharmacology of KCNQ1 (Wrobel et al., 2012; Sun et al., 2012; Abbott, 2014). These changes are essential for the physiological role of IKs (Silva and Rudy, 2005); however, after 18 years of study, no coherent mechanism explaining how KCNE1 affects KCNQ1 has emerged. Here we provide evidence of such a mechanism, whereby, KCNE1 alters the state-dependent interactions that functionally couple the voltage-sensing domains (VSDs) to the pore.\n\n## Introduction\n\nVoltage-gated ion channels sense changes in membrane voltage and respond by opening or closing a pore through which selected ions cross the membrane, generating a transmembrane current. These channels consist of four voltage-sensing domains (VSDs) surrounding a central pore. In voltage-gated potassium (Kv) channels, this structure results from the tetrameric assembly of Kv-\u03b1 subunits, each of which contain six transmembrane-spanning segments (S1\u2013S6). S1\u2013S4 of each subunit forms a voltage-sensing domain (VSD), and S5\u2013S6's from all four subunits form the pore. Sensing of membrane voltage occurs within the VSDs, which contain a mobile S4 segment with several highly conserved basic residues. At depolarized voltages, the forces of the membrane electric field on these positively charged residues promotes the outward displacement of S4 toward its activated state (Papazian et al., 1995; Larsson et al., 1996; Silva et al., 2009; Wu et al., 2010a; Delemotte et al., 2011; Jensen et al., 2012). The pore contains the ion permeation pathway that can be opened and closed by the reorientation of the intracellular portions of the S6 helices (Liu et al., 1997; Webster et al., 2004; del Camino and Yellen, 2001; Jiang et al., 2002). Critical to voltage-dependent gating are the interactions between the VSDs and the pore, which couple the activation of the VSD to the opening of the pore, resulting in a voltage-gated conductance (Chen et al., 2001; Lu et al., 2001, 2002; Long et al., 2005; Lee et al., 2009; Zaydman et al., 2013).\n\nIn their pioneering work on the action potential of the squid giant axon, Hodgkin and Huxley empirically derived a model for the K+ conductance in which a transmembrane pathway is gated by four voltage-dependent particles (Hodgkin and Huxley, 1952). The legacy of the Hogdkin and Huxley model can still be found in the current Kv channel models, which assume that (1) VSD activation and pore opening are two-state (i.e., all or none) processes and (2) gating and permeation are independent so that the VSD conformation changes the probability of pore opening, but does not affect the properties of the open pore. Several recent studies call into question the assumption that VSD activation and pore opening are two-state processes. Computational and experimental studies have demonstrated that VSD activation actually occurs in a series of stepwise transitions due to salt bridge interactions between the basic residues on S4 and acidic residues on S1 and S2, which define resting, intermediate, and activated states (Papazian et al., 1995; Tiwari-Woodruff et al., 1997; Wu et al., 2010a; Delemotte et al., 2011; Jensen et al., 2012; Lacroix et al., 2012). With regards to pore opening, recordings of single channel currents from Kv channels revealed multiple open states discernable by their different conductance levels (Chapman et al., 1997), although the identities of these subconductance states remain unclear. In our present study of KCNQ1 (Kv7.1, KvLQT1) channels, we found that both the intermediate and fully-activated states of the VSD yielded robust pore-opening. Remarkably, the intermediate-open and activated-open states had different permeation and pharmacological properties revealing that VSD-pore interactions determine both open probability and open conformation, demonstrating that gating and permeation are not independent.\n\nKCNQ1 channels generate currents with very different properties as a result of tissue specific expression of KCNE family accessory subunits (Abbott, 2014). In the heart, channels formed by KCNQ1 and KCNE1 subunits are responsible for the slow-delayed rectifier potassium current, IKs (Barhanin et al., 1996; Sanguinetti et al., 1996), which plays a critical role in limiting action potential duration when beta-adrenergic tone is elevated. The importance of this response is highlighted by a large set of loss-of-function mutations of KCNQ1 or KCNE1 that have been associated with Long QT Syndrome and result in an elevated risk of fatal arrhythmias during times of stress (Paavonen et al., 2001; Schwartz et al., 2001; Hedley et al., 2009). Although KCNE1 is a small, single-membrane-spanning peptide, its coassembly dramatically alters every physiologically relevant property of the KCNQ1 channel: voltage-dependence, current kinetics, inactivation, current amplitude, single channel conductance, selectivity, and pharmacology (Wrobel et al., 2012; Sun et al., 2012). The mechanism of how KCNE1 modulates KCNQ1 has been a longstanding topic of debate with several groups arguing that KCNE1 alters VSD activation (Nakajo and Kubo, 2007; Ruscic et al., 2013), several other groups arguing that KCNE1 alters pore opening (Rocheleau and Kobertz, 2008; Osteen et al., 2010), and several reports claiming that KCNE1 directly contributes to the inner structure of the pore (Wang et al., 1996; Tai and Goldstein, 1998). However, these mechanisms are not able to simultaneously account for the effects of KCNE1 on gating and the observed changes in permeation and pharmacology.\n\nHere we made three observations regarding the function of homomeric KCNQ1 channels that were not previously reported. First, we found that VSD activation occurs in two resolvable steps through a stable intermediate state. Second, we observed that the intermediate-state of the VSD is sufficient to promote KCNQ1 channel opening, resulting in both intermediate-open and activated-open states. Third, we observed that the intermediate-open and activated-open states have different permeation and pharmacological properties. With these critical observations, we were able to reexamine how KCNE1 affects KCNQ1. We found that coexpression of KCNE1 prevented the intermediate-open state and changed the properties of the activated-open state. The apparent decoupling of pore opening from the resting to intermediate transition of the VSD suggested that KCNE1 changes how the VSD and pore interact. Consistent with this hypothesis, changing the VSD-pore interactions directly via a single point mutation also prevented the intermediate-open state and modified the properties of the activated-open state. Using a kinetic model, we demonstrated that the effects of KCNE1 on VSD-pore interactions, as suggested by our data, are sufficient to simultaneously explain most of the changes in activation gating without any direct impacts on VSD activation or pore opening. Furthermore, as VSD-pore interactions were found to determine the open-pore properties, the effects of KCNE1 on permeation and pharmacology could also be rationalized. Therefore we conclude that altering VSD-pore interactions is likely the primary mechanism through which KCNE1 modulates KCNQ1.\n\n## Results\n\nVoltage-clamp fluorometry (VCF) simultaneously monitors VSD-activation and pore opening (Mannuzzu et al., 1996). In our VCF records, a fluorophore attached to the S3\u2013S4 linker of pseudo-WT KCNQ1 channels (with mutations C214A/G219C/C331A) reports on conformational changes associated with VSD activation (Figure 1A\u2013H, green), while the ionic currents report the opening of the pore (Figure 1A\u2013H, black) (Osteen et al., 2010; Zaydman et al., 2013). We observed multiple components of the fluorescence signals for KCNQ1 (Figure 1A\u2013D) and, as recently reported (Barro-Soria et al., 2014), for KCNQ1+KCNE1 (Figure 1E\u2013H). Most of the total change in fluorescence intensity was due to a fast component occurring at hyperpolarized voltages (Fmain), but a small additional change was observed due to a slow component occurring at highly depolarized voltages (Fhigh). Fhigh was more prominently observed when KCNQ1 channels were labeled with a different dye (Figure 1\u2014figure supplement 1A,B), or coexpressed with a mutant KCNE1 (Figure 1\u2014figure supplement 1C,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013H) Fluorescence (green) and current (black) signals from Xenopus oocytes injected with cRNA encoding pseudo-WT (C214A/G219C/C331A) KCNQ1 alone (KCNQ1, A\u2013D) or coinjected with cRNAs encoding pseudo-WT KCNQ1 and KCNE1 (KCNQ1+KCNE1, E\u2013H). The cells were labeled with Alexa 488 C5-maleimide. (A and E) GV and FV relationships (solid) with the main and high voltage FV components plotted (dotted lines). (B and F) normalized fluorescence and current responses to a 60 mV pulse shown with fits (thin grey lines) to a single- or bi-exponential function. Averaged fast (C and G) and slow (D and H) tau values of fluorescence and current responses to various voltage pulses. (I) Intermediate- (E1-R2, top) and activated- (E1-R4, bottom) state homology models of KCNQ1 after 100 ns of MD simulation. Side view of one VSD (left) and bottom view of the pore (right). (J) Currents from the cells expressing E160R/R231E (E1R/R2E, top) or E160R/R237E (E1R/R4E, bottom) both alone (\u2212KCNE1, middle) or with KCNE1 (+KCNE1, right).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A and B) VCF data from cells expressing pseudo-WT KCNQ1, labeled with Alexa 546 C5-maleimide (KCNQ1 [Alexa 546]). (C and D) VCF data from pseudo-WT KCNQ1+R67E/K69E/K70E KCNE1 labeled with Alexa 488 C5-maleimide (KCNQ1+RKK/EEE [Alexa488]). (A and C) Normalized current and fluorescence responses to a 60 mV pulse. (B and D) GV and FV relationships (solid) with the main and high voltage FV components plotted (dotted lines). Current signals (black), fluorescence signals (color, red = Alexa 546, green = Alexa 488). The RKK/EEE mutation in KCNE1 causes a leftward shift of Fmain, relative to that of WT KCNE1, which increases the separation between Fmain and Fhigh.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** GV (solid black) and FV (solid green) relationships for R243Q/psWT KCNQ1 channels expressed alone (R243Q) (A) or with R67E/K69E/K70E KCNE1 (R243Q+RKK/EEE) (B). Green dotted lines show the main and high voltage FV components. The GV relationship of pseudo-WT channels (black dashed lines) is significantly different from that of R243Q; however, the relationship of the GV to different FV components are preserved.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Snapshots of one VSD (left, side view) or the pore domain (right, bottom view) following 100 ns of MD simulations. In the resting, intermediate or activated VSD, E160 (E1, red) forms a salt bridge with R228 (R1), R231 (R2) or R237 (R4), respectively. (B) Averaged (over several trajectories) pore radius vs position along the axis normal to the membrane (Z). (C) Snapshots of the PIP2 intrasubunit-binding site in the three states. In the resting/closed state, PIP2 interacts with positive residues of S4 (cyan). When the VSD is intermediate or activated, PIP2 shifts closer to S6 (yellow) and anchors its positive residues (K354 and K358). (D) Probability of salt bridges formation between positive residues of S6 (K354 and K358) and PIP2. The lipid interacts with S6 only when the VSD is intermediate or activated, not when it is resting. Error bars represent SD. K354 and K358 interactions are not statistically different for the E1-R2 and E1-R4 states. Figure 1\u2014figure supplement 3B represents the averaged pore radius profiles along the axis normal to the membrane (Z). In the activated/open and intermediate states, the minimal radiuses of the pore at this level are 3.5 \u00b1 0.4 \u00c5 and 2.8 \u00b1 0.6 \u00c5 respectively. For comparison, in the Kv1.2 open state, the corresponding radius (pdb 3LUT [Chen et al., 2010]) is 4.2 \u00c5, in the Kv1.2/2.1 paddle chimera open state (pdb 2 R9R [Long et al., 2007]) it is 4.2 \u00c5 also, and in the NavMS open state (pdb 3ZJZ [Loussouarn et al., 2003]) it is 2.3 \u00c5. Therefore, the minimal pore radius at the intercellular gate level in the models of the Kv7.1 activated and intermediate states corresponds to the open pore. In the resting/closed state, this radius decreases to 1.5 \u00b1 0.5 \u00c5. This is similar to the closed states of KcsA (pdb 1K4C [Zhou et al., 2001]), NavAB (pdb 4EKW [Payandeh et al., 2012]) and NavAP (pdb 4DXW [Zhang et al., 2012]), where these values are 1.1, 1.2 and 0.9 \u00c5 respectively. The activated/open, intermediate and resting/closed states of Kv7.1 differ by their properties as evidenced from the reported experimental data. Taking advantage of our simulations, we attempted to investigate whether the interactions between PIP2 and positive residues of the Kv7.1 intrasubunit binding site are different. Indeed PIP2 interacts preferably with the VSD (S4) when the channel is resting/closed or with the pore (S6) when the channel is activated/open (Kasimova et al., 2014) (Figure 1\u2014figure supplement 3C, top and bottom panels). In the intermediate state, the lipid forms salt bridges with both S4 (R243) and S6 (K354 and K358) simultaneously (Figure 1\u2014figure supplement 3C, middle panel). Its equilibrium position is also between these in the activated/open and resting/closed states. Interestingly, the probability of interaction between PIP2 and S6 (K354 and K358) is rather high (Figure 1\u2014figure supplement 3D). The average values are slightly higher for the intermediate than for the activated/open states: 40 and 26% for K354, 68 and 42% for K358 respectively. However, this difference is statistically insignificant due to the estimated error bars.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Cartoons illustrating the mutational strategy used to arrest the VSD near the intermediate- and activated-states. The E160R (E1R) mutation was used to disrupt the native electrostatic interactions between the S2 and S4 segments that stabilize the VSD as it undergoes activation. E1R was paired with R231E (R2E) or R237E (R4E) to stabilize the putative intermediate- and activated-states, respectively. (B) Currents from oocytes expressing WT or mutant KCNQ1 subunits alone (\u2212KCNE1, left) or with KCNE1 (+KCNE1, right) in response various voltage test pulses. (C and D) Averaged steady-state current\u2013voltage relationships for cells expressing WT or mutant KCNQ1 subunits alone (C, \u2212KCNE1) or with KCNE1 (D, +KCNE1).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Biotinylation of intact oocytes allowed separation of membrane proteins from the cell lysate using streptavidin beads. The membrane fraction and the cell lysate were subjected to Western Blot using antibodies against KCNQ1 (Top) or G\u03b2, a soluble protein not found in the membrane. (A) E1R/R2E and E1R/R4E reached the cell membrane with similar efficiency. (B) KCNE1 did not decrease the expression of E1R/R2E to the membrane.\n\nStrikingly, KCNE1 shifted the conductance-voltage (GV) relationship so that it correlated with a different component of the fluorescence-voltage (FV) relationship. In the absence of KCNE1, pore opening (i.e., GV) occurred in a similar voltage range as Fmain (Figure 1A, Figure 1\u2014figure supplement 1B). In contrast, in the presence of KCNE1, pore opening was not observed unless more depolarized voltages were applied, as with Fhigh (Figure 1E, Figure 1\u2014figure supplement 1D). These FV-GV correlations were not likely to be coincidental because they were maintained in the presence of a KCNQ1 mutation, R243Q, that shifted the voltage dependence of channel opening but did not change the correlation of the GV to Fmain or Fhigh in the absence or precense of RKK/EEE KCNE1, respectively (Figure 1\u2014figure supplement 2).\n\nKCNE1 also altered the time-dependence of pore opening. KCNQ1 current onset had two exponential components following the two timecourses of the fluorescence (Figure 1B\u2013D). With KCNE1, the channels remained closed during the fast fluorescence increase and, after this initial delay, the channels opened with a single timecourse, similar to the slow fluorescence component (Figure 1F\u2013H). Both the steady-state and kinetic VCF data can be easily explained if one VSD transition (Fmain) is sufficient to open KCNQ1, but an additional transition (Fhigh) is required for KCNQ1+KCNE1.\n\nThe observation of two fluorescence components (Figure 1A\u2013H) is consistent with the suggestion from previous studies (Silva et al., 2009; Wu et al., 2010a) that, in KCNQ1, VSD activation occurs in two sequential transitions due to electrostatic interactions between E160 (E1) in S2 and arginine residues in S4. These interactions stabilize discrete resting, intermediate, and activated states. We built homology models of KCNQ1 with the VSDs in states where E1 forms a salt bridge with R228 (R1), R231 (R2), or R237 (R4) (Figure 1\u2014figure supplement 3), the three S4 arginines that are known to be critical for voltage-sensing in KCNQ1 (Shamgar et al., 2008; Wu et al., 2010b). In KCNQ1 a neutral residue (Q234) is located in the canonical third arginine position (R3) of other Kv channels; therefore, we did not model the E1-R3 state. In Molecular Dynamic (MD) simulations, we found that the pore was more dilated when the VSDs were in the E1-R2 or E1-R4 states than in the E1-R1 state (Figure 1\u2014figure supplement 3). These simulations suggest that KCNQ1 channels can open when the VSDs assume intermediate or activated states (Figure 1I, Figure 1\u2014figure supplement 3). To capture these states experimentally, we engineered pairwise charge reversal mutations to arrest the VSD near the E1-R2 or E1-R4 states (Figure 1J, Figure 1\u2014figure supplement 4). As shown previously (Wu et al., 2010a), for KCNQ1 channels, mutating E1 to arginine (E1R) caused a severe loss of current that was partially rescued by a charge reversing (R to E) mutation at the R2 (E1R/R2E) or R4 (E1R/R4E) positions (Figure 1\u2014figure supplement 4). E1R/R2E and E1R/R4E channels were constitutively open (Figure 1\u2014figure supplement 4C,D), suggesting that the VSD was trapped in states where the paired residues interact. When KCNE1 was coexpressed, the E1R/R2E currents were eliminated and the E1R/R4E currents were increased by nearly 10-fold (Figure 1J, Figure 1\u2014figure supplement 4), suggesting that KCNE1 suppresses the intermediate-open state and potentiates the activated-open state. Importantly, we found that the abundance of E1R/R2E subunits in the cell membrane was similar when expressed alone or coexpressed with KCNE1, indicating that the inhibition of E1R/R2E currents was due to a functional effect on the intermediate-open state, not an effect on surface expression (Figure 1\u2014figure supplement 5B). Altogether, the results in Figure 1 are consistent with a model in which the VSD undergoes two sequential transitions, resting-to-intermediate and intermediate-to-activated. The first transition is sufficient for KCNQ1 to open, resulting in both intermediate-open and activated-open states. With KCNE1, the second transition is required for opening because the intermediate-open state is suppressed.\n\nIn addition to affecting KCNQ1 channel gating, KCNE1 also alters permeation and pharmacology (Sun et al., 2012). For example, as previously demonstrated by Pusch et al. (2000), KCNQ1 channels had a higher Rb+/K+ permeability ratio than KCNQ1+KCNE1 channels (Figure 2A,B) and, as reported by Cohen and colleagues (Wang et al., 2000), KCNQ1 channels were more sensitive than KCNQ1+KCNE1 channels to the inhibitor XE991 when short duration pulses (comparable to the length of the cardiac action potential) were applied (Figure 2\u2014figure supplement 1). We used the E1R/R2E and E1R/R4E mutations to examine if VSD conformation affects permeation and pharmacology. Strikingly, E1R/R4E channels had a significantly lower Rb+/K+ permeability ratio and a significantly lower apparent affinity for XE991 compared to E1R/R2E and WT KCNQ1 channels, which were similar (Figure 2). These results reveal that different VSD conformations yield functionally distinct open states. Furthermore, the similar properties of E1R/R2E and WT KCNQ1 suggest that the intermediate-open state is either the most populated or the most conductive open-state for WT KCNQ1 channels, a notion that is further supported by our observation that E1R/R2E currents are 2\u20133 times larger than E1R/R4E currents (Figure 1J, Figure 1\u2014figure supplement 4C) despite having similar levels of membrane expression (Figure 1\u2014figure supplement 5A). Relative to E1R/R4E alone, coexpression of KCNE1 with E1R/R4E significantly decreased the Rb+/K+ permeability ratio (Figure 2A,B) and increased the apparent affinity for XE991 (Figure 2C,D) indicating that, in addition to eliminating the intermediate-open state, KCNE1 alters the properties of the activated-open state. Of note, we found that E1R/R4E+KCNE1 and WT KCNQ1+KCNE1 channels displayed similar Rb+/K+ permeability ratios (Figure 2B) and XE991 sensitivities (Figure 2D), further supporting our conclusion from Figure 1 that WT KCNQ1+KCNE1 currents are conducted by channels in the activated-open state.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig2-v1.jpg)\n\n**Figure 2.:** Currents from cells expressing WT KCNQ1 alone (KCNQ1, black), E160R/R231E (E1R/R2E, red), E160R/R237E alone (E1R/R4E, blue), E160R/R237E+KCNE1 (E1R/R4E+KCNE1, green), or WT KCNQ1+KCNE1 (KCNQ1+KCNE1, grey). (A) Currents from a single cell in external solutions containing 100 mM of Na+, K+, or Rb+. The currents were elicited by first stepping the voltage to +60 mV for 5 s then to \u221260 mV for 3 s tails. (B) Averaged Rb+/K+ permeability ratios calculated by comparing the tail current amplitudes. (C). Currents before (CTL) and after (XE991) bath application of 5 \u03bcM XE991 in the external solution. (D) Fraction of original current inhibited after 2 s of depolarization vs concentration of XE991 applied shown with fits to the hill equation with a hill coefficient of 1. N.S. = not significant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Currents in response to a +60 mV test pulse from oocytes expressing KCNQ1 (A) or KCNQ1+KCNE1 (B), recorded in control (CTL) and 5 \u03bcM XE991 external solutions. (C) Time dependence of XE991 inhibition\u2014the averaged ratio of the current in 5 \u03bcM XE991 to that in control solutions is plotted vs depolarization time. (D) Averaged fraction inhibited after 200 (dashed line), 500 (thin line) or 2000 (thick line) ms of depolarization is plotted vs concentration of XE991 for oocytes expressing WT KCNQ1 (black) or WT KCNQ1+KCNE1 (grey).\n\nIn our previous studies, we have shown that KCNE1 increases the apparent affinity of KCNQ1 for the membrane lipid phosphatidylinositol 4,5-bisphosphate (PIP2) (Li et al., 2011) and that, in KCNQ1, PIP2 binding at the VSD-pore interface mediates the VSD-pore interactions that energetically couple VSD activation to pore opening (Zaydman et al., 2013). Taken together these findings suggest that KCNE1 affects the VSD-pore interactions. To test this hypothesis, we studied the impact of changing VSD-pore interactions directly via a point mutation of KCNQ1, F351A. F351 on S6 is highly conserved among Kv channels and participates in interactions with the S4/S5 linker that are known to be critical for VSD-pore interactions and coupling (Lu et al., 2001; Tristani-Firouzi et al., 2002; Long et al., 2005; Haddad and Blunck, 2011). Remarkably, in VCF experiments, we observed that the F351A GV was correlated with Fhigh instead of Fmain (Figure 3A, left), revealing that, similar to KCNE1 (Figure 1E), F351A suppressed the intermediate-open state. As a result, F351A current onset was delayed and slowed (Figure 3A, right), resembling WT KCNQ1+KCNE1 current onset, as reported previously (Boulet et al., 2007). We also observed that, compared to WT KCNQ1, F351A caused significant changes in the Rb+/K+ permeability ratio (Figure 3B) and the timecourse of inhibition by XE991 (Figure 3C, middle, right). Of note, these properties of F351A were not identical to those of WT KCNQ1+KCNE1. However, such differences are not surprising as prior studies (Kang et al., 2008; Xu et al., 2008; Chung et al., 2009; Lvov et al., 2010; Strutz-Seebohm et al., 2011; Wang et al., 2011; Chan et al., 2012; Xu et al., 2013) have located KCNE1 at the VSD-pore interface and have suggested that KCNE1 engages in a very broad and complex set of interactions with KCNQ1 (Sun et al., 2012); therefore, it would be unreasonable to expect that a single point mutation, such as F351A, would alter the VSD-pore interactions in exactly the same way as KCNE1. Nonetheless, our studies of F351A provide evidence that the VSD-pore interactions determine the permeation and pharmacological properties of the pore as well as which VSD transitions are required for the pore to open. Therefore, altering VSD-pore interactions is a single mechanism that can explain all of these effects of KCNE1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig3-v1.jpg)\n\n**Figure 3.:** (A) VCF recordings from oocytes expressing pseudo-WT/F351A (C214A/G219C/C331A/F351A), labeled with Alexa 488 C5-maleimide. Left\u2013GV (red) and FV (solid green) relationships with the main and high voltage FV components plotted (dotted green lines). Right\u2013normalized fluorescence (green) and current (red) responses to a 60 mV pulse, the current from a cell expressing pseudo-WT KCNQ1+KCNE1 is shown for comparison (grey). (B) Left\u2013currents from a single oocyte expressing F351A in external solutions containing 100 mM of Na+, K+, or Rb+. Right\u2013averaged Rb+/K+ permeability ratios for WT KCNQ1 (black) and F351A (red). (C) Left\u2013currents from an oocyte expressing F351A in control and 5 \u03bcM XE991 external solutions. Middle\u2013time dependence of XE991 inhibition\u2014the averaged ratio of the current in 5 \u03bcM XE991 to that in control solutions is plotted vs depolarization time. Right\u2013averaged fraction inhibited after 200 (dashed line), 500 (thin line) or 2000 (thick line) ms of depolarization is plotted vs concentration of XE991 for oocytes expressing WT KCNQ1 (black), F351A (red), or WT KCNQ1+KCNE1 (grey).\n\nThe observation that KCNE1 suppressed the intermediate-state opening (Figure 1, Figure 1\u2014figure supplement 4) strongly suggested that KCNE1 affects the interactions between the intermediate-state of the VSD and the pore. Does KCNE1 also affect the interaction between the activated-state of the VSD and the pore to modulate the activated-open state? In order to detect such effects of KCNE1, we used the apparent affinity of E1R/R4E for PIP2 as a proxy for the strength of VSD-pore interactions in the activated-open state of KCNQ1. The rationale behind this approach was that our previous study has demonstrated that the apparent affinity for PIP2 correlates with the strength of VSD-pore interaction (Zaydman et al., 2013). In our experiments, we used CiVSP, a voltage-sensitive lipid phosphatase (Iwasaki et al., 2008), to cause a rapid decrease in membrane PIP2 upon depolarization (Falkenburger et al., 2010) and observed the resulting time-dependent decay in ionic currents resulting from net unbinding of PIP2. We found that the decay of E1R/R4E+CiVSP currents were significantly slower and less severe when KCNE1 was present (Figure 4A), suggesting that KCNE1 increases the affinity of the activated-open state of KCNQ1 for PIP2. Consistent with this idea, WT KCNQ1+KCNE1 currents, which come from activated-open states exclusively (Figure 1), were observed to be relatively insensitive to the activity of CiVSP as long as they were maintained in the activated-open state by sustained membrane depolarization (Figure 4B,C). When the channels were permitted to close, by hyperpolarizing the membrane potential, PIP2 unbinding was facilitated as evidenced by decreased current amplitude observed with application of a subsequent depolarizing pulse (Figure 4B,C). Altogether these results reveal that KCNE1 causes the activated-open state to have a high apparent affinity for PIP2, suggesting that KCNE1 may increase the strength of VSD-pore interactions in the activated-open state.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig4-v1.jpg)\n\n**Figure 4.:** (A) Responses of currents from oocytes expressing E1R/R4E alone (left) or E1R/R4E+KCNE1 (middle) to rapid depletion of PIP2 by CiVSP (VSP, blue). The membrane voltage was pulsed to +60 mV to activate CiVSP. Currents were normalized to the value 200 ms after depolarization for comparison with currents from oocytes not expressing CiVSP (black = channel subunits alone, blue = channel subunits + CiVSP). Right\u2013averaged current responses for oocytes expressing E1R/R4E+CiVSP (\u2212KCNE1) or E1R/R4E+KCNE1+CiVSP (+KCNE1). (B) CiVSP responses (VSP, blue) of currents from oocytes expressing WT KCNQ1 or WT KCNQ1+KCNE1. Two +80 mV depolarizing pulses were applied, spaced 30 s apart (note: time scale is broken). The currents were normalized to the value 200 ms into the first depolarizing pulse for comparison with currents from an oocyte expressing channel subunits alone (black). (C) Left\u2013double pulse protocol in which two 25 s depolarizing pulses were applied. In between the two pulses the membrane potential was set to various voltages for 10 s. After each sweep, the membrane potential was held at \u221280 mV for 300 s to deactivate CiVSP and allow for PIP2 regeneration by the endogenous lipid kinases. Middle\u2013currents from an oocyte expressing KCNQ1+KCNE1+CiVSP subjected to the voltage protocol shown and normalized to the value at the end of the first pulse (I1). Right\u2013fraction of the first pulse current available on the second pulse (I2/I1) is plotted vs voltage of intervening 10 s (blue). The voltage-dependence of I2/I1 (solid blue line) is similar to that of the GV relationship for WT KCNQ1+KCNE1 (dotted black line) suggesting that the open probability during the 10 second interpulse determines the unbinding of PIP2.\n\n## Discussion\n\nThe basic experimental phenomena revealed in our study are summarized in Figure 5A. We observed that, in KCNQ1, VSD activation occurred in two steps, with and without KCNE1 (Figure 1A\u2013H). The first step, leading to an intermediate-state, promoted the opening of homomeric KCNQ1 channels causing the GV to overlap with the first component of the FV (Figure 1A). KCNE1 prevented the channel from opening while the VSD is in the intermediate-state and potentiated opening while the VSD is in the activated state resulting in a GV relationship with a similar voltage-dependence as the second component of the FV (Figure 1E). We observed that different states of the VSD yielded functionally different open states (Figure 2) of the pore indicating that the unique sets of interactions with different conformations of the VSD determine the probability of pore opening and selects for different open-pore conformations. In agreement with this interpretation, changing the VSD-pore interactions directly, via the mutation F351A, suppressed the intermediate-open state and changed the properties of the open channel (Figure 3). The ability of this single point mutation at the S4\u2013S5/S6 interface to change the same variety of properties as KCNE1 suggests that a single mechanism for the effects of KCNE1 could be to alter the VSD-pore interactions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig5-v1.jpg)\n\n**Figure 5.:** (A) Cartoon illustrating the observed effects of KCNE1 on KCNQ1. The VSDs transit between resting (R, grey patterned), intermediate (I, red patterned), and activated (A, blue patterned) states. Each VSD conformation has unique interactions (double arrow) with the closed (C) and open (O) conformation of the pore. KCNE1 suppresses the intermediate-open (OI) state and modulates the activated-open (OA) states. (B) Kinetic model of KCNQ1 channel gating where the k parameters are the intrinsic transition rates of the VSD and the pore, and the \u03b8 parameters explicitly represent VSD-pore interactions. Fourth power notation ([ ]4) indicates that the model includes four VSDs. (C and D) Experimental data and model simulations with (+KCNE1) and without KCNE1. Steady-state current- (C, top), conductance- (C, middle), and fluorescence- (C, bottom) voltage relationships. (D) Current (black) and fluorescence (green) responses at various voltages.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The channel is modeled as a pore coupled to four voltage-sensing domains. VSD activation occurs in two transitions, resting (R) to intermediate (I) along the horizontal and intermediate to activated (A) along the vertical. The pore can be fully closed (C, back face, grey) or fully open (O, front face, black), with any combination of VSD-states. The state-notation indicates the conformation of the pore and the combination of the four VSDs (subscripted). For example CRRRR indicates the state where the pore is closed and all four VSDs are resting.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** As described in the text the k parameters represent the intrinsic rates of the two domains and the \u03b8 parameters represent the effect of VSD-pore interactions at different states. The closed to open transitions dependent on the intrinsic rate of the pore (kco) divided by the closed state interactions with the VSDs. The open to closed transitions depend on the koc divided by the open state interactions the VSDs. n(X) indiciated the number of VSDs in state X.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The values represent those used in the kinetic modeling of KCNQ1 gating. \u0394KCNE1 column indicates the changes used to simulate the effects of KCNE1 on KCNQ1 channel gating.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03606/elife-03606-fig5-figsupp4-v1.jpg)\n\nExperimentally, two effects of KCNE1 on VSD-pore interactions were observed. (1) KCNE1 prevented the channel from opening when the VSD was in the intermediate-state suggesting that KCNE1 changes the interactions between the intermediate-state of the VSD and the pore (Figure 1). (2) KCNE1 greatly increased the apparent affinity of the activated-open state for PIP2 suggesting that KCNE1 stabilized the activated-open state interactions (Figure 4). Using kinetic modeling, we sought to test if these experimentally observed effects of KCNE1 on VSD-pore interactions are sufficient to explain the many effects of KCNE1 on KCNQ1 activation gating. Previous Kv channel gating models assume that all four VSDs (Zagotta et al., 1994) or each VSD (Horrigan et al., 1999) must fully activate before the pore can open. Therefore, we could not use these established models as they are not able to represent the coupling between three different states of the VSD and the pore. We developed a new gating model that better reflects the understanding that the VSD and pore can fold and function independently (discussed in our previous review [Zaydman and Cui, 2014]), but couple their motions through state-dependent interactions.\n\nIn our gating model, the VSDs can occupy resting (R), intermediate (I), or activated (A) states, and the pore can occupy closed (C) or open (O) states (Figure 5B, Figure 5\u2014figure supplement 1). Assuming that the intrinsic activation of each VSD is identical and non-cooperative, as assumed in the ZHA model (Zagotta et al., 1994), the different combinations of the states of the four VSDs and the pore give rise to only 30 possible channel states. Two sets of parameters, k's and \u03b8's, determine the transitions among these channel states (Figure 5B, Figure 5\u2014figure supplement 2,3). The \u2018k\u2019 parameters represent the intrinsic tendencies of the pore to open and close and a VSD to undergo its transitions, and would be measured directly if the VSD and pore could be decoupled entirely. The k parameters concerning VSD transitions (kRI, kIR, kIA, kAI) are assumed to be exponentially dependent on voltage according to Equation 1. On the other hand, the k parameters concerning pore transitions (kCO and kOC) are assumed to be voltage-independent (i.e., constant).\n\n$$\nk_{ij}=k_{ij}o\u2217exp(z_{ij}\u2217F\u2217V/(R\u2217T))\n$$\n\nwhere: kij is the voltage-dependent rate of transition from VSD state i to VSD state j, kij0 is the rate of the ij transition at 0 mV, zij is the valence of the ij transition, F is the faraday constant, V is voltage, R is the universal gas constant, T is the absolute temperature.\n\nThe \u2018\u03b8\u2019 terms explicitly represent the net effect of all VSD-pore interactions within each channel state. For example, \u03b8\u0399C, represents the net stabilization of the intermediate-closed state due to all interactions between the intermediate-state of the VSD and the closed-state of the pore. If \u03b8IC is greater than 1, these interactions will slow transitions away from the intermediate-closed state. The full model is shown in Figure 5\u2014figure supplement 2 and a shorthand version appears in Figure 5B. The main difference between our model and previous allosteric gating models is that the reference state is an imaginary state in which the two domains are completely isolated (i.e., decoupled) from each other, rather than using transitions among the resting states as a reference. The advantage of our approach is that each parameter has an intuitive physical meaning: the k parameters represent the net effect of all interactions within a state of the VSD or the pore, and the \u03b8 parameters represent the net effect of all interactions between the VSD and the pore in a specific channel state.\n\nIn order to parameterize our model, we started with parameter values from two previous KCNQ1 channel gating models (Silva and Rudy, 2005; Zaydman et al., 2013) and were able to reasonably replicate the experimentally observed KCNQ1 channel gating behavior (Figure 5C,D) with some adjustments to the parameter values to account for the differences in the schemes of these models (Figure 5\u2014figure supplement 3). In order to simulate the effects of KCNE1 on VSD-pore interactions, we made only two changes to the VSD-pore interactions, as suggested by experimental results (Figure 5\u2014figure supplement 3). (1) Experimentally, when KCNE1 was coexpressed, the pore remained closed while the VSD was in the intermediate state (Figure 1E, Figure 1\u2014figure supplement 4). Thus, to model KCNE1, we strengthened the intermediate-closed state interaction, \u03b8IC. (2) Also, in experiments, KCNE1 increased the activated-open state affinity for PIP2 (Figure 4). Accordingly, we strengthened the activated-open state interaction, \u03b8AO. Making only these two changes mimicked all of the effects of KCNE1 on KCNQ1 activation gating (Figure 5C,D). The GV shifted to more depolarized voltages correlating with Fhigh because the intermediate-closed state interactions became more energetically favorable than the intermediate-open state interactions, preventing pore opening until a more depolarized voltage-range where the intermediate-to-activated transition occurred. In the absence of intermediate-state opening, the resting-to-intermediate transition occurred among closed states and introduced the characteristic delay of current onset of several hundred milliseconds. The maximal current amplitude was increased several fold due to stabilization of the activated-open state. Furthermore, the stabilization of the intermediate-closed state reduced the current near physiological resting voltages and caused a left shift in main component of the FV curve, two phenomena observed experimentally (Figure 5C). The kinetics and steady-state gating behavior predicted by our model were not quantitatively identical to those in experiments; such discrepancies were expected due to several overly simplistic assumptions that we used to limit the number of states in our model. Particularly, we assumed that PIP2 binding was saturated, that all open states had identical conductance, and that inactivated states did not exist. However, previous studies highlight that KCNQ1 is not saturated with PIP2 and that KCNE1 dramatically increases PIP2 binding (Li et al., 2011), that KCNE1 increases the apparent single channel conductance (Sesti and Goldstein, 1998; Yang and Sigworth, 1998), and that KCNE1 prevents the observation of a partially inactivated state (Pusch et al., 1998; Tristani-Firouzi and Sanguinetti, 1998), all of which may contribute to gating and macroscopic current amplitude. Revision of our model to include the influence of PIP2 binding and the different properties of intermediate- and activated-open states will require additional studies to better define these properties. Despite these limitations, it is remarkable that we were able to capture all the major effects of KCNE1 on the activation gating of KCNQ1. This model illustrates that the effects of KCNE1 on VSD-pore interactions are sufficient to explain how KCNE1 affects the activation gating of KCNQ1 without any additional effects on VSD activation or pore opening. Furthermore, as our experimental data demonstrate that VSD-pore interactions determine the permeation and pharmacological properties (Figures 2,3), our proposed mechanism, that KCNE1 affects VSD-pore interactions, provides a relatively complete explanation for how KCNE1 affects KCNQ1.\n\nCentral to understanding the modulation of KCNQ1 by KCNE1 is a longstanding controversy regarding which stoichiometries of KCNQ1:KCNE1 may exist in the fully assembled channel. Several groups have argued that association of KCNE1 with KCNQ1 dimers during an early stage of biogenesis leads to a fixed 4:2 KCNQ1:KCNE1 stoichiometry and breaks the fourfold symmetry of the channel (Wang and Goldstein, 1995; Chen et al., 2003; Morin and Kobertz, 2008; Plant et al.,2014). Other groups have argued that various stoichiometries, 4:0\u20134 KCNQ1:KCNE1, are possible, depending on the relative levels of subunit expression (Blumenthal and Kaczmarek, 1994; Cui et al., 1994; Wang et al., 1998; Nakajo et al., 2010; Li et al., 2011). In the present study, we coinjected oocytes with KCNQ1 and KCNE1 transcripts at a 1:1 ratio because previous work, from our lab (Li et al., 2011) and others (Nakajo et al., 2010), demonstrated that this ratio is sufficient to saturate the functional effects of KCNE1 on KCNQ1. In our modeling, we assume that coexpression of KCNE1 affects all four subunits identically as if the channel were saturated by KCNE1, that is, with a 4:4 stoichiometry. This assumption may represent yet another reason why the simulated and experimental gating behavior are not quantitatively identical. Furthermore, it is important to ask, given the ongoing controversy regarding stoichiometry, if the presence of multiple populations of channels with different stoichiometries could complicate our interpretation of our data. Fortunately, the F351A mutation demonstrates that the major finding of our study\u2014the ability to couple pore opening to different transitions within the VSD\u2014is intrinsic to the KCNQ1 subunit and observed even in the absence of the KCNE1 subunit.\n\nIn the voltage-gated ion channel field, VSD-pore coupling, aka electromechanical coupling, has been a loosely defined term referring to the experimental observation that pore opening is more likely when the VSDs are activated at depolarized voltages. In our model of voltage-dependent gating, coupling is represented in a very different way than in the previously established models. The landmark linear models of Shaker Kv channels (Schoppa et al., 1992; Zagotta et al., 1994), which require that all four VSDs be activated before the pore can open, do an excellent job replicating the gating of Shaker Kv channels, but do not explicitly define coupling. Another landmark model, the Horrigan-Cui-Aldrich (HCA) model (Horrigan et al., 1999), permits pore-opening without prior activation of all VSDs. In the HCA model, coupling is quantitatively defined by a single term, D, representing how much the closed-open equilibrium of the pore is biased towards open when a single VSD is transitioned from its fully resting to its fully activated state. Our model further develops from these two previous models. Like the shaker model, we assumed two transitions occurring sequentially and independently within each VSD. Similar to the HCA model, we assumed that pore opening can occur with the four VSDs in any combination of states. In our model, we decomposed D into its elementary components, that is, VSD-pore interactions at each channel state. As a result, each parameter (k, \u03b8) in our model represents a specific set of interactions that exist at the same time in the physical world. The relative differences in the strengths of all these state-dependent VSD-pore interactions lead to the experimental observation that a change in VSD conformation leads to a change in the probability of pore opening, that is, coupling. It is important to understand that coupling is a result of all of these state-dependent interactions and a perturbation of any of these interactions may alter the coupling. These points are illustrated by our modeling of the KCNE1 effect on KCNQ1 channel gating where strengthening the intermediate-closed interactions caused an apparent decoupling of pore-opening from the resting-to-intermediate transition of the VSD, that is, the open probability was no longer increased by the transition of the VSD to the intermediate-state at intermediate voltages. Alternatively, weakening the intermediate-open state interactions would also decouple opening from the resting-to-intermediate state of the VSD; however, this would not reproduce the leftward shift of the first FV component (Fmain) that we observed when KCNE1 was expressed (Figure 5C).\n\nThe topic of how KCNE1 modulates KCNQ1 has been studied for many years. Early studies by Goldstein and colleagues argued that KCNE1 intercalates deeply into the pore and directly lines the permeation pathway (Goldstein and Miller, 1991; Wang et al., 1996; Tai and Goldstein, 1998). Later, the Kass and George labs argued that KCNE1 associates outside the pore and modulates the pore properties through an allosteric mechanism (Kurokawa et al., 2001; Tapper and George, 2001). Then, the efforts of several labs have detected probable interactions between the extracellular (Xu et al., 2008; Chan et al., 2012), transmembrane (Tapper and George, 2001; Chung et al., 2009; Lvov et al., 2010), and intracellular (Haitin et al., 2009) regions of KCNQ1 and KCNE1. These data have been used to build homology models of the KCNQ1+KCNE1 channel (Kang et al., 2008; Lundby et al., 2010; Xu et al., 2013), all of which place KCNE1 in a cleft between a VSD and the pore where it participates in a broad set of interactions with KCNQ1. Even after all of these excellent studies, there was a lack of a biophysical mechanism to explain how these interactions alter the gating, permeation, and pharmacology of KCNQ1. Prior biophysical studies, which have focused on how KCNE1 slows current onset, have come to conflicting conclusions that KCNE1 either slows VSD activation (Nakajo and Kubo, 2007; Ruscic et al., 2013) or pore opening (Rocheleau and Kobertz, 2008; Osteen et al., 2010). We believe that the interpretations of these data were limited by several missing pieces of information revealed in the present study: (1) VSD activation occurs through a stable intermediate state, (2) full activation of the VSD is not necessarily required to open the pore, and (3) the distinct interactions between different states of the VSD and the pore determine both the probability of opening and the open-state conformation. Also, it is likely that these previous studies did not consider an effect on the state-dependent VSD-pore interactions because such interactions are not explicitly represented in previously established gating models.\n\nRecently, the Larsson and Kass labs reported the presence of a second fluorescence transition in KCNQ1+KCNE1 channels, which they attributed to pore opening (Osteen et al., 2010, 2012) or a concerted step in which pore opening and further S4 movement occur simultaneously (Barro-Soria et al., 2014). From these observations, they concluded that KCNE1 changes the number of subunits that must be activated before pore opening can occur leading to a right shifted GV and a delay in current onset. This model is most similar to ours in that KCNE1 is changing the relationship between VSD activation and pore opening; however, our model is different in several regards. We believe that the second FV component reports on an intrinsic transition of the VSD rather than the pore opening step. This assumption was based on our observation that homomeric KCNQ1 channels also exhibited a second FV component, with similar properties to that of KCNQ1+KCNE1, which occurred in a range of voltages that was more positive than required for pore opening (Figure 1A\u2013H, Figure 1\u2014figure supplement 1). Thus, in our model, channel opening requires an additional transition within a single VSD, rather than the activation of additional subunits. A natural consequence of such gating behavior is the existence of both intermediate-open and activated-open states, which could be detected experimentally and are of great functional importance as the different open states have different conductive and pharmacological properties (Figure 2).\n\n## Materials and methods\n\n### Mutagenesis\n\nPoint mutations were engineered using overlap extension and high-fidelity PCR. Each mutation was verified by DNA sequencing. cRNA was synthesized using the mMessage T7 polymerase kit (Applied Biosystems).\n\n### Oocytes expression\n\nPieces of ovarian lobes were excised from Xenopus laevis by laparotomy. Stage V or VI oocytes from X. laevis were isolated by collagenase (Sigma Aldrich, St Louis, MO) digestion. 9.2 ng of KCNQ1 cRNA was microinjected with or without 2.3 ng of KCNE1 cRNA (using the Drummond Nanoject, Broomall, PA) into each oocyte. For CiVSP expression, 2.3 ng of CiVSP cRNA was coinjected. Injected cells were incubated at 18\u00b0C for up to 7 days before recording in ND96 solution (96 mM NaCl, 2 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 5 mM HEPES, pH 7.6).\n\n### Electrophysiology\n\n#### Two-electrode voltage clamp\n\nMicroelectrodes were pulled with resistances between 0.3 and 3 M\u03a9 and filled with 3 M KCl solution. Recordings were performed in ND96 solutions unless otherwise indicated. Whole-oocyte currents in response to applied voltage steps were amplified using the CA-1B (Dagan, Minneapolis, MN) amplifier in two-electrode voltage clamp mode and digitized using the HEKA EPC10 (HEKA, Germany) AD/DA board, sampled at 1 KHz and recorded using the Patchmaster (HEKA) software.\n\n#### Voltage clamp fluorometry\n\nOocytes were labeled with 10 \u03bcM Alexa 488 C5-maleimide or Alexa 546 C5-maleimide (Molecular Probes, Eugene, OR) in high K+ solution (98 mM KCl, 1.8 mM CaCl2, 5 mM HEPES, pH 7.6) for 45 min on ice. After labeling, the cells were washed with ND96 and kept on ice until recording. Recordings were performed in ND96 solution. Fluorescence emission from the sample was focused onto a Pin20A photodiode (OSI Optoelectronics), amplified by an EPC10 (HEKA) patch amplifier, analog filtered at 200 Hz, sampled at 1 KHz, and recorded simultaneously with whole oocyte currents. A FITC filter cube (Leica, Germany) was used for Alexa 488 labeled cells and a rhodamine cube (Leica) was used for cells labeled with Alexa 546.\n\n#### Voltage-protocols\n\nHolding potential was set to \u221280 mV throughout. Voltage steps were applied to elicit current and fluorescence signals. Tail potentials were +60 mV for VCF experiments and measuring IV curves, \u221260 mV for Rb+/K+ permeability experiments, and \u221240 mV for XE991 experiments.\n\n### Molecular dynamics (MD) simulations\n\nIn our previous work (Kasimova et al.,), we have built models of the Kv7.1 activated/open and resting/closed states using homology modeling (Eswar et al., 2007) with the Kv1.2 crystal structure in its activated/open state (pdb code 3LUT [Chen et al., 2010]), \u03b1, and in its \u03b4 conformational state (Delemotte et al., 2011) as templates. Here, we applied a similar protocol to prepare a model of the Kv7.1 intermediate state. Each state is characterized by a unique set of interactions within the VSD. In particular, E160 (E1) forms a salt bridge with R237 (R4) in the activated/open or with R228 (R1) in the resting/closed states (Figure 1I, S3a). We assumed that, when the VSD is intermediate, E1 interacts with the residue located in between of R4 and R1, namely R231 (R2). Based on this assumption, the \u03b3 conformation of Kv1.2 (Delemotte et al., 2011) with the E1-R2, was considered as a template for the Kv7.1 intermediate state model. This model was further embedded in a palmitoyl-oleyl-phosphatidylcholine (POPC) hydrated bilayer and immersed in a 150 mM K+Cl\u2212 solution. Due to the importance of PIP2 for Kv7.1 function (Loussouarn et al., 2003; Eswar et al., 2007), four molecules of this lipid were placed at the channel's intrasubunit sites located at the interface between the voltage sensor and the pore (Zaydman et al., 2013; Kasimova et al.,).\n\nThe MD simulations were performed using NAMD (Smart et al., 1996). Langevin dynamics was applied to keep the temperature (300 K) and the pressure (1 atm) constant. The time-step of the simulations was 2.0 fs. The equations of motion were integrated using a multiple time-step algorithm. Short- and long-range forces were calculated every 1 and 2 time-steps respectively. Long-range electrostatics was calculated using Particle Mesh Ewald (PME). The cutoff distance of short-range electrostatics was taken to be 11 \u00c5. A switching function was used between 8 and 11 \u00c5 to smoothly bring the vdW forces and energies to 0 at 11 \u00c5. During the calculations, chemical bonds between hydrogen and heavy atoms were constrained to their equilibrium values. Periodic boundary conditions were applied.\n\nThe protein backbone was constrained during 100 ns allowing PIP2 to sample possible interactions with the channel's positive residues. Based on this trajectory, the time evolution of salt bridges formation was monitored. Several residues of Kv7.1 interacted with the lipid headgroups temporarily, revealing different configurations of the system where corresponding salt bridges were either formed or broken. In total, for the activated/open, intermediate and resting/closed states we have identified 9, 8 and 8 the most frequent configurations respectively. These were considered as starting points for the final equilibration step, involving gradual release of the protein backbone and subsequent relaxation of the entire system during 100 ns for each. For all the trajectories, the root mean square deviation (RMSD) from the initial structure reached a plateau starting from \u223c50 ns. The simulation stretch from 50 to 100 ns was used for further analysis.\n\nIn order to estimate a degree of the Kv7.1 pore dilation at the intercellular gate level, we applied HOLE (Smart et al., 1996). 50 conformations of Kv7.1 spread equidistantly along the last 50 ns were extracted from each MD trajectory. For these conformations, the pore radius along the axis normal to the membrane (Z) was calculated. The obtained profiles were considered to estimate an average profile and error bars (SD) for each of the channel states.\n\nTo analyze the salt bridge formation between PIP2 and Kv7.1, we measured the minimal distance between the nitrogen atoms of arginine and lysine charged groups and the oxygen atoms of the PIP2 phosphates. The salt bridges were assumed formed if the calculated distance was less than 3.2 \u00c5. The probabilities of salt bridge formation were simultaneously estimated for four subunits of the channel as a ratio between the number of frames with a formed salt bridge to its total number. The error bars correspond to a standard deviation (SD) calculated between values obtained from several MD runs.\n\n### Data analysis\n\nRelative conductance-voltage (GV) relationships were generated by estimating the instantaneous tail current values following test pulses to various voltages and normalizing to the value following the highest voltage test pulse. For calculation of relative fluorescence changes, a baseline fluorescence was extrapolated by fitting a line to the fluorescence at the holding potential during the 2 s preceding application of the voltage pulse. \u0394F/F was calculated as (F(t)-baseline(t))/baseline(t), where F(t) is the raw fluorescence intensity at time t and baseline(t) is the extrapolated baseline value at time t. Fluorescence voltage-relationships were derived by normalizing the \u0394F/F value at the end of a four second test pulse to various voltages to the value of the highest voltage test-pulse. FV and GV curves were fits with one or the sum of two Boltzmann equations in the form 1/(1 + exp(\u2212z*F*(V \u2212 V1/2)/RT)) where z is the equivelant valence of the transition, V1/2 is the voltage at which the transition is half maximal, R is the gas constant, T is absolute temperature, F is the Faraday constant and V is the voltage. FV curves were derived from the value at the end of the test pulse, GV curved were derived from estimating the instantaneous tail current amplitude.\n\n### Statistics\n\nAll averaged data reflects n = 6 or more from at least two batches of oocytes. Pairwise comparisons were achieved using Student's t test, multiple comparisons were performed using an ANOVA with Tukey's Post-Hoc Test. All error bars represent standard error mean.\n\n### Solutions and chemicals\n\n100 mM Na+ (96 mM NaCl, 4 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 5 mM HEPES) 100 mM K+(100 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 5 mM HEPES) 100 mM Rb (96 mM RbCl, 4 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 5 mM HEPES) ND96 (96 mM NaCl, 4 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 5 mM HEPES) XE991 from Sigma Aldrich. Alexa fluors from Molecular Probes.\n",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "398f0342-f1fe-41bf-8ad8-d05c2c6aa46d",
+      "submission_id": "dbcdd079-8a0d-44f3-8595-1935990ab0d0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03606.018](https://doi.org/10.7554/eLife.03606.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cKCNE1 modulates KCNQ1 channel gating, permeation and pharmacology through a single mechanism\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor), Richard Aldrich (Reviewing editor), and 3 reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe biophysical and pharmacological properties of KCNQ1 K+ channels are radically altered by co-assembly with KCNE1 accessory beta-subunits. In this study, the authors use voltage-clamp fluorometry (VCF) to show that activation of the voltage sensor domain (VSD) of KCNQ1 channels occurs in two resolvable steps. Both the intermediate and fully-activated states of the VSD result in KCNQ1 channel opening, and these states have different permeation and pharmacological properties. The intermediate-open state was absent when KCNQ1 was co-expressed with its beta-subunit KCNE1, suggesting that accessory subunits changes how the VSD and pore interact. The gating of F351A KCNQ1 channels in many ways mimics KCNQ1/KCNE1 channel gating, supporting the main hypothesis. Finally, a kinetic model was developed that can account for many of the effects of KCNE1 on VSD-pore interactions. These findings provide important and novel insights into the mechanism of IKs channel gating as well as a framework for interpreting KCNQ effects that is novel, well substantiated, conceptually simple, and thermodynamically plausible.\n\nThe authors need to more clearly delineate and critically evaluate which aspects of the gating and permeation/conductance differences between the two channels their model does or does not fully describe.\n\nThe following issues must be addressed in a revision:\n\n1) The main conclusion, that KCNE1 alters KCNQ1 gating by a single mechanism (altered VSD-pore coupling; modeled by only two changes to a kinetic model) is attractive due to its apparent simplicity; however in reality the effects of the accessory subunit are more complex than just shifting the G-V and slowing activation kinetics. KCNQ1 channels inactivate, whereas KCNQ1/KCNE1 channels do not. Some of the deviation between the data and the predictions of the model may be due to KCNQ1 inactivation, which is not detectable using voltage-activation protocols when KCNE1 is present \u2013 something the authors might want to consider in the interpretation of their data.\n\n2) The single channel properties of KCNQ1 channels differ from KCNQ1/KCNE1 channels. The model should be modified to account for these important differences in channel properties. One would expect for example two discernible channel open states for KCNQ1 (corresponding to the intermediate-open (O1) and activated-open (O2) states), whereas KCNQ1/KCNE1 channels would have only one open state, with properties similar to the O2 state for KCNQ1 channels. It is stated that \u201cThe maximal current amplitude was increased several fold due to stabilization of the activated-open state\u201d. Presumably, this means only a change in Po, whereas experimental data indicate that KCNQ1/KCNE1 currents are larger mainly due to an increase in single channel conductance (Yang and Sigworth, 1998. J Gen Physiol 112:665).\n\n3) The data presented in Figure 3 and corresponding text are incomplete and their interpretation (that it indicates increased \u201cstrength\u201d of VSD-pore coupling in presence of KCNE1) is not convincing. F351A channels have many properties similar to KCNQ1/KCNE1 channels (especially G-V matching Fmain-V relationship), but the relative Rb/K ion permeation and pharmacology are not the same. The authors state that F351A like KCNE1 cause significant changes in the Rb/K permeability ratio (Figure 3f), however this change is in the opposite direction from KCNE1 (Figure 2b). This KCNQ1 mutant with KCNE1-like activation kinetics should have a significantly lower (not a higher) permeability ratio if it is mimicking KCNQ1/KCNE1 channels. This should be made clear. Similarly, F351A affects XE991 pharmacology, but this is unlike the effect of KCNE1. These experiments need to be expanded (e.g., dose-response to XE991; differences in compound sensitivity requires more than a single concentration) to more quantitatively describe the effects of KCNE1. In addition, the rubidium data and pore dilation hypothesis might be better resolved using external cesium, which is larger, yet permeates homotetrameric KCNQ1 channels.\n\n4) Several figures use whole cell current amplitude as a proxy for channel gating. Authors should address the possibility of surface expression level differences with different proteins, KCNQ mutations and plus/minus KCNE.\n\n5) CiVSP experiments need to be better explained and analyzed. The protocol for CiVSP activation is not explained. There is no analysis or evidence of repeated trials, and the logic is confusing. In the text the claim is made that Figure 3b demonstrates that KCNE1 increases the open state affinity for PIP2. This claim is not well backed up. Explaining why a lack of effect of CiVSP demonstrates high affinity rather than no interaction with PIP2 could be helpful.\n\n6) The modeling could be explained better. The modeled effect of KCNQ invokes a 10 fold stabilization of IC and AO states with no alteration of transition barrier heights. In effect, this results in decreased coupling to the IO state (because the RO is rarely occupied). The implied change in coupling could be more thoroughly discussed, as this is the major intellectual contribution of this study.\n\n7) While it is mentioned that the kinetics of the model don't entirely match the data, it appears that a major feature of KCNQ gating is missed by the model. The \u201ctau slow\u201d of KCNQ (quantified and made note of in the discussion surrounding Figure 1) is proposed to be the transition from an IO state to an AO state. The existence of this slow component is a pillar of their mechanism involving multiple classes of open states. This slow component seems to be missing from the KCNQ1 modeled kinetics.\n\n8) Statistics. Students T test was used without explanation of why such a parametric test is appropriate.\n\n9) Figure 1\u2013figure supplement 4. Analyzing normalized GVs here would be more informative than just the IVs in panels (c),(d).\n\n10) Figure 2a: Explain voltage protocols used more completely. If KCNQ is slowly transiting from an IO state to an AO state wouldn't the Rb/K permeability ratio be time and voltage dependent?\n\n11) The authors should discuss/hypothesize how two KCNE1 subunits fit into their modeling (Figure 4) given the recent paper by the Goldstein lab unequivocally showing that the stoichiometry of the complex is 4:2 Q1:E1.\n\n12) XE991 Pharmacology: The Wang et al. paper showed that KCNQ1/KCNE1 channels are 10-fold less sensitive than KCNQ1 channels; however, in Figure 2C wild type KCNQ1/KCNE1 channels do not appear to be 10-fold less sensitive to the drug. Of all the currents shown, these are the smallest, which makes us wonder if these are endogenous xKCNQ1 channels assembling with exogenously expressed KCNE1 subunits. Besides the inconsistency with wild type, the E1R/R4E+KCNE1 mutant should have similar \u201cinhibition\u201d to E1R/R4E. It appears that the E1R/R4E mutant is modestly activated by XE991.\n",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9c7c6c28-e7d4-4686-bc86-32b46e6af4b4",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C1",
+      "claim": "KCNQ1 voltage-gated potassium channels coassemble with KCNE1 \u03b2-subunits to generate the IKs current in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "In the heart, KCNQ1 voltage-gated potassium channels coassemble with KCNE1 \u03b2-subunits to generate the IKs current (Barhanin et al., 1996; Sanguinetti et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barhanin et al., 1996 and Sanguinetti et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "bfba7a22-ad6e-40c1-ac6c-1116bfbbde3f",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C2",
+      "claim": "IKs current is important for maintenance of stable heart rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the heart, KCNQ1 voltage-gated potassium channels coassemble with KCNE1 \u03b2-subunits to generate the IKs current (Barhanin et al., 1996; Sanguinetti et al., 1996), an important current for maintenance of stable heart rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge about cardiac electrophysiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "01737561-a45a-479d-b740-0411aeec3911",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C3",
+      "claim": "KCNE1 significantly modulates the gating, permeation, and pharmacology of KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNE1 significantly modulates the gating, permeation, and pharmacology of KCNQ1 (Wrobel et al., 2012; Sun et al., 2012; Abbott, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wrobel et al., 2012; Sun et al., 2012; Abbott, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "7753fca2-7818-4a08-8d60-17445d6c3f2e",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C4",
+      "claim": "The changes induced by KCNE1 are essential for the physiological role of IKs.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes are essential for the physiological role of IKs (Silva and Rudy, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Silva and Rudy, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "90a57158-e97a-4ca3-9453-64d0f7eb89f5",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C5",
+      "claim": "KCNE1 alters the state-dependent interactions that functionally couple the voltage-sensing domains (VSDs) to the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we provide evidence of such a mechanism, whereby, KCNE1 alters the state-dependent interactions that functionally couple the voltage-sensing domains (VSDs) to the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "0357a9c2-ab66-4592-8504-dbf2bcf89236",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C6",
+      "claim": "Voltage-gated ion channels consist of four voltage-sensing domains (VSDs) surrounding a central pore.",
+      "claim_type": "EXPLICIT",
+      "source": "These channels consist of four voltage-sensing domains (VSDs) surrounding a central pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about voltage-gated ion channels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "98afe3be-fb1f-45d7-a5cc-2a00ceeac501",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C7",
+      "claim": "In voltage-gated potassium (Kv) channels, the structure results from the tetrameric assembly of Kv-\u03b1 subunits, each containing six transmembrane-spanning segments (S1\u2013S6).",
+      "claim_type": "EXPLICIT",
+      "source": "In voltage-gated potassium (Kv) channels, this structure results from the tetrameric assembly of Kv-\u03b1 subunits, each of which contain six transmembrane-spanning segments (S1\u2013S6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about Kv channels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "b8c892f2-4ecb-415e-9c67-350569d47b29",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C8",
+      "claim": "S1\u2013S4 of each subunit forms a voltage-sensing domain (VSD).",
+      "claim_type": "EXPLICIT",
+      "source": "S1\u2013S4 of each subunit forms a voltage-sensing domain (VSD)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about Kv channels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "784ead2b-1422-446c-af22-87456a2610d3",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C9",
+      "claim": "S5\u2013S6's from all four subunits form the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "S5\u2013S6's from all four subunits form the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about Kv channels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "bef6aa8b-7e2e-4b31-a800-1451c54983d8",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C10",
+      "claim": "At depolarized voltages, the forces of the membrane electric field on positively charged residues promotes the outward displacement of S4 toward its activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "At depolarized voltages, the forces of the membrane electric field on these positively charged residues promotes the outward displacement of S4 toward its activated state (Papazian et al., 1995; Larsson et al., 1996; Silva et al., 2009; Wu et al., 2010a; Delemotte et al., 2011; Jensen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "9974fb31-22f1-4ce9-a4f2-4bc9ee2a8f06",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C11",
+      "claim": "The pore contains the ion permeation pathway that can be opened and closed by the reorientation of the intracellular portions of the S6 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The pore contains the ion permeation pathway that can be opened and closed by the reorientation of the intracellular portions of the S6 helices (Liu et al., 1997; Webster et al., 2004; del Camino and Yellen, 2001; Jiang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "c2a7dfb2-cfb8-4eb8-a856-cb61afe3bc5b",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C12",
+      "claim": "Interactions between the VSDs and the pore couple the activation of the VSD to the opening of the pore, resulting in a voltage-gated conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "Critical to voltage-dependent gating are the interactions between the VSDs and the pore, which couple the activation of the VSD to the opening of the pore, resulting in a voltage-gated conductance (Chen et al., 2001; Lu et al., 2001, 2002; Long et al., 2005; Lee et al., 2009; Zaydman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "ba0d47f3-9439-440f-8cb2-8529c9c946c5",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C13",
+      "claim": "Hodgkin and Huxley empirically derived a model for the K+ conductance in which a transmembrane pathway is gated by four voltage-dependent particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In their pioneering work on the action potential of the squid giant axon, Hodgkin and Huxley empirically derived a model for the K+ conductance in which a transmembrane pathway is gated by four voltage-dependent particles (Hodgkin and Huxley, 1952).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hodgkin and Huxley, 1952",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "2a51d9b5-6c53-47b5-bedd-f9ebb265aaa9",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C14",
+      "claim": "Current Kv channel models assume that VSD activation and pore opening are two-state (i.e., all or none) processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The legacy of the Hogdkin and Huxley model can still be found in the current Kv channel models, which assume that (1) VSD activation and pore opening are two-state (i.e., all or none) processes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the assumptions in current models, based on inference from the literature",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8768a9d9-981e-43ee-8715-09816deebe3c",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C15",
+      "claim": "Current Kv channel models assume that gating and permeation are independent so that the VSD conformation changes the probability of pore opening, but does not affect the properties of the open pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The legacy of the Hogdkin and Huxley model can still be found in the current Kv channel models, which assume that (1) VSD activation and pore opening are two-state (i.e., all or none) processes and (2) gating and permeation are independent so that the VSD conformation changes the probability of pore opening, but does not affect the properties of the open pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the assumptions in current models, based on inference from the literature",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "9a6bc7b0-d1f9-4cd2-a5b6-05eb782b8d80",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C16",
+      "claim": "VSD activation actually occurs in a series of stepwise transitions due to salt bridge interactions between the basic residues on S4 and acidic residues on S1 and S2, which define resting, intermediate, and activated states.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational and experimental studies have demonstrated that VSD activation actually occurs in a series of stepwise transitions due to salt bridge interactions between the basic residues on S4 and acidic residues on S1 and S2, which define resting, intermediate, and activated states (Papazian et al., 1995; Tiwari-Woodruff et al., 1997; Wu et al., 2010a; Delemotte et al., 2011; Jensen et al., 2012; Lacroix et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "1d6133fe-3b03-451e-b7bd-c404f24e06c5",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C17",
+      "claim": "Recordings of single channel currents from Kv channels revealed multiple open states discernable by their different conductance levels.",
+      "claim_type": "EXPLICIT",
+      "source": "With regards to pore opening, recordings of single channel currents from Kv channels revealed multiple open states discernable by their different conductance levels (Chapman et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chapman et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "e1404862-8d88-49f9-a294-f701392d7dfd",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C18",
+      "claim": "Both the intermediate and fully-activated states of the VSD yielded robust pore-opening in KCNQ1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In our present study of KCNQ1 (Kv7.1, KvLQT1) channels, we found that both the intermediate and fully-activated states of the VSD yielded robust pore-opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8ead2ab3-2640-4127-84d6-45b811570176",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C19",
+      "claim": "The intermediate-open and activated-open states had different permeation and pharmacological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the intermediate-open and activated-open states had different permeation and pharmacological properties revealing that VSD-pore interactions determine both open probability and open conformation, demonstrating that gating and permeation are not independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8cc17fe2-908f-482a-9af3-5da32324d9ee",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C20",
+      "claim": "VSD-pore interactions determine both open probability and open conformation, demonstrating that gating and permeation are not independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the intermediate-open and activated-open states had different permeation and pharmacological properties revealing that VSD-pore interactions determine both open probability and open conformation, demonstrating that gating and permeation are not independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data and inference",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "f0940ccf-a6ac-49a4-873f-636bb40feac8",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C21",
+      "claim": "KCNQ1 channels generate currents with very different properties as a result of tissue specific expression of KCNE family accessory subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNQ1 channels generate currents with very different properties as a result of tissue specific expression of KCNE family accessory subunits (Abbott, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Abbott, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "4bc2e034-589b-4c4b-a2af-32513dc3773c",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C22",
+      "claim": "Channels formed by KCNQ1 and KCNE1 subunits are responsible for the slow-delayed rectifier potassium current, IKs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the heart, channels formed by KCNQ1 and KCNE1 subunits are responsible for the slow-delayed rectifier potassium current, IKs (Barhanin et al., 1996; Sanguinetti et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barhanin et al., 1996 and Sanguinetti et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "991f9adf-4479-434f-bd04-fb936825b07c",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C23",
+      "claim": "IKs plays a critical role in limiting action potential duration when beta-adrenergic tone is elevated.",
+      "claim_type": "EXPLICIT",
+      "source": "In the heart, channels formed by KCNQ1 and KCNE1 subunits are responsible for the slow-delayed rectifier potassium current, IKs (Barhanin et al., 1996; Sanguinetti et al., 1996), which plays a critical role in limiting action potential duration when beta-adrenergic tone is elevated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cardiac electrophysiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "33b69eea-a649-4a48-82fe-26f2fbf0efc3",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C24",
+      "claim": "A large set of loss-of-function mutations of KCNQ1 or KCNE1 have been associated with Long QT Syndrome and result in an elevated risk of fatal arrhythmias during times of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of this response is highlighted by a large set of loss-of-function mutations of KCNQ1 or KCNE1 that have been associated with Long QT Syndrome and result in an elevated risk of fatal arrhythmias during times of stress (Paavonen et al., 2001; Schwartz et al., 2001; Hedley et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Paavonen et al., 2001; Schwartz et al., 2001; Hedley et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "ca1f0132-f2bc-4a45-9247-3fa70084f672",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C25",
+      "claim": "KCNE1 coassembly dramatically alters voltage-dependence, current kinetics, inactivation, current amplitude, single channel conductance, selectivity, and pharmacology of KCNQ1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although KCNE1 is a small, single-membrane-spanning peptide, its coassembly dramatically alters every physiologically relevant property of the KCNQ1 channel: voltage-dependence, current kinetics, inactivation, current amplitude, single channel conductance, selectivity, and pharmacology (Wrobel et al., 2012; Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wrobel et al., 2012 and Sun et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "5061b9ca-c453-4833-a6f0-c5606801d586",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C26",
+      "claim": "Some groups have argued that KCNE1 alters VSD activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of how KCNE1 modulates KCNQ1 has been a longstanding topic of debate with several groups arguing that KCNE1 alters VSD activation (Nakajo and Kubo, 2007; Ruscic et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nakajo and Kubo, 2007 and Ruscic et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8430f5e3-3b1f-4b80-99e7-c10839162018",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C27",
+      "claim": "Some groups have argued that KCNE1 alters pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "several other groups arguing that KCNE1 alters pore opening (Rocheleau and Kobertz, 2008; Osteen et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rocheleau and Kobertz, 2008 and Osteen et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "45e48268-ae5d-4192-bc9e-be01cf514535",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C28",
+      "claim": "Some reports claim that KCNE1 directly contributes to the inner structure of the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "and several reports claiming that KCNE1 directly contributes to the inner structure of the pore (Wang et al., 1996; Tai and Goldstein, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 1996 and Tai and Goldstein, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "087cd34b-797a-4790-b717-064c973a2d71",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C29",
+      "claim": "Previous mechanisms are not able to simultaneously account for the effects of KCNE1 on gating and the observed changes in permeation and pharmacology.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these mechanisms are not able to simultaneously account for the effects of KCNE1 on gating and the observed changes in permeation and pharmacology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' analysis of the literature",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "bc936035-4d49-4bbb-93f5-5fcf207b11b5",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C30",
+      "claim": "VSD activation in KCNQ1 occurs in two resolvable steps through a stable intermediate state.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that VSD activation occurs in two resolvable steps through a stable intermediate state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "a8fb318f-0996-46b9-bf03-eace9135f87a",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C31",
+      "claim": "The intermediate-state of the VSD is sufficient to promote KCNQ1 channel opening, resulting in both intermediate-open and activated-open states.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we observed that the intermediate-state of the VSD is sufficient to promote KCNQ1 channel opening, resulting in both intermediate-open and activated-open states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "97bc8496-dd46-4ceb-bb27-dabd98e82d7b",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C32",
+      "claim": "The intermediate-open and activated-open states have different permeation and pharmacological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we observed that the intermediate-open and activated-open states have different permeation and pharmacological properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "6a2bc9b6-2044-4017-9ba9-87e12675cd1f",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C33",
+      "claim": "Coexpression of KCNE1 prevented the intermediate-open state and changed the properties of the activated-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that coexpression of KCNE1 prevented the intermediate-open state and changed the properties of the activated-open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "4617bdb2-1c98-4a8d-a261-0aa27b5fd801",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C34",
+      "claim": "KCNE1 changes how the VSD and pore interact.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent decoupling of pore opening from the resting to intermediate transition of the VSD suggested that KCNE1 changes how the VSD and pore interact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "218e4aad-ed87-4cc8-88bf-7ff3762030da",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C35",
+      "claim": "Changing the VSD-pore interactions directly via a single point mutation also prevented the intermediate-open state and modified the properties of the activated-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, changing the VSD-pore interactions directly via a single point mutation also prevented the intermediate-open state and modified the properties of the activated-open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "4ada57ce-b7ef-41ce-b523-df87829db32c",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C36",
+      "claim": "The effects of KCNE1 on VSD-pore interactions are sufficient to simultaneously explain most of the changes in activation gating without any direct impacts on VSD activation or pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a kinetic model, we demonstrated that the effects of KCNE1 on VSD-pore interactions, as suggested by our data, are sufficient to simultaneously explain most of the changes in activation gating without any direct impacts on VSD activation or pore opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by kinetic modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "776c961b-94cd-4887-88c6-182f54ade515",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C37",
+      "claim": "Altering VSD-pore interactions is likely the primary mechanism through which KCNE1 modulates KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore we conclude that altering VSD-pore interactions is likely the primary mechanism through which KCNE1 modulates KCNQ1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on experimental data and modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "5faefc58-bbdc-45c0-aa44-b48a7aa2577d",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C38",
+      "claim": "A fluorophore attached to the S3\u2013S4 linker of pseudo-WT KCNQ1 channels reports on conformational changes associated with VSD activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our VCF records, a fluorophore attached to the S3\u2013S4 linker of pseudo-WT KCNQ1 channels (with mutations C214A/G219C/C331A) reports on conformational changes associated with VSD activation (Figure 1A\u2013H, green), while the ionic currents report the opening of the pore (Figure 1A\u2013H, black) (Osteen et al., 2010; Zaydman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Osteen et al., 2010 and Zaydman et al., 2013",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "cc3a90f4-25d5-42f6-8925-146ed7417104",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C39",
+      "claim": "Multiple components of the fluorescence signals were observed for KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed multiple components of the fluorescence signals for KCNQ1 (Figure 1A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "a39ba4b7-c52d-4598-a832-07dbea3f1fe1",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C40",
+      "claim": "Multiple components of the fluorescence signals were observed for KCNQ1+KCNE1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed multiple components of the fluorescence signals for KCNQ1 (Figure 1A\u2013D) and, as recently reported (Barro-Soria et al., 2014), for KCNQ1+KCNE1 (Figure 1E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E-H and citation to Barro-Soria et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "ae4b09ba-c972-4d12-b077-5544f42bf71a",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C41",
+      "claim": "Most of the total change in fluorescence intensity was due to a fast component occurring at hyperpolarized voltages (Fmain).",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the total change in fluorescence intensity was due to a fast component occurring at hyperpolarized voltages (Fmain), but a small additional change was observed due to a slow component occurring at highly depolarized voltages (Fhigh).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "9b87a268-39b4-4c98-a932-654bcb8bc6f2",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C42",
+      "claim": "A small additional change in fluorescence was observed due to a slow component occurring at highly depolarized voltages (Fhigh).",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the total change in fluorescence intensity was due to a fast component occurring at hyperpolarized voltages (Fmain), but a small additional change was observed due to a slow component occurring at highly depolarized voltages (Fhigh).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "bb7a71a9-4c59-4f69-b02e-42b068bfc39f",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C43",
+      "claim": "Fhigh was more prominently observed when KCNQ1 channels were labeled with a different dye.",
+      "claim_type": "EXPLICIT",
+      "source": "Fhigh was more prominently observed when KCNQ1 channels were labeled with a different dye (Figure 1\u2014figure supplement 1A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "f2a78f5d-fb06-43d7-a9dc-b2d5f248eca9",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C44",
+      "claim": "Fhigh was more prominently observed when KCNQ1 channels were coexpressed with a mutant KCNE1.",
+      "claim_type": "EXPLICIT",
+      "source": "Fhigh was more prominently observed when KCNQ1 channels were labeled with a different dye (Figure 1\u2014figure supplement 1A,B), or coexpressed with a mutant KCNE1 (Figure 1\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "4566b28f-9f16-40b6-bab3-e86e4af96a16",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C45",
+      "claim": "In the absence of KCNE1, pore opening (i.e., GV) occurred in a similar voltage range as Fmain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of KCNE1, pore opening (i.e., GV) occurred in a similar voltage range as Fmain (Figure 1A, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "d8cca6d8-1b67-47ee-93af-6288644bfdd9",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C46",
+      "claim": "In the presence of KCNE1, pore opening was not observed unless more depolarized voltages were applied, as with Fhigh.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the presence of KCNE1, pore opening was not observed unless more depolarized voltages were applied, as with Fhigh (Figure 1E, Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E and Figure 1\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "0bec8d01-ed2b-44a0-b32f-6b6b3f4ae866",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C47",
+      "claim": "The FV-GV correlations were maintained in the presence of a KCNQ1 mutation, R243Q, that shifted the voltage dependence of channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "These FV-GV correlations were not likely to be coincidental because they were maintained in the presence of a KCNQ1 mutation, R243Q, that shifted the voltage dependence of channel opening but did not change the correlation of the GV to Fmain or Fhigh in the absence or precense of RKK/EEE KCNE1, respectively (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "91366021-a7de-4e94-b7b2-08dc6d9b5496",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C48",
+      "claim": "KCNQ1 current onset had two exponential components following the two timecourses of the fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNQ1 current onset had two exponential components following the two timecourses of the fluorescence (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "43672e7b-6a48-4412-8e44-e61e4cdaed3f",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C49",
+      "claim": "With KCNE1, the channels remained closed during the fast fluorescence increase and, after this initial delay, the channels opened with a single timecourse, similar to the slow fluorescence component.",
+      "claim_type": "EXPLICIT",
+      "source": "With KCNE1, the channels remained closed during the fast fluorescence increase and, after this initial delay, the channels opened with a single timecourse, similar to the slow fluorescence component (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "6b1b2db5-5363-41e1-85fe-8a4803e44de3",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C50",
+      "claim": "The observation of two fluorescence components is consistent with the suggestion that, in KCNQ1, VSD activation occurs in two sequential transitions due to electrostatic interactions between E160 (E1) in S2 and arginine residues in S4.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of two fluorescence components (Figure 1A\u2013H) is consistent with the suggestion from previous studies (Silva et al., 2009; Wu et al., 2010a) that, in KCNQ1, VSD activation occurs in two sequential transitions due to electrostatic interactions between E160 (E1) in S2 and arginine residues in S4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Silva et al., 2009 and Wu et al., 2010a, and experimental data",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "fae05140-afba-4cfa-a55d-9f917a21a0c3",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C51",
+      "claim": "These interactions stabilize discrete resting, intermediate, and activated states of the VSD.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of two fluorescence components (Figure 1A\u2013H) is consistent with the suggestion from previous studies (Silva et al., 2009; Wu et al., 2010a) that, in KCNQ1, VSD activation occurs in two sequential transitions due to electrostatic interactions between E160 (E1) in S2 and arginine residues in S4. These interactions stabilize discrete resting, intermediate, and activated states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and inference from experimental data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "131e9b75-fbfb-4c66-a02c-ba204c66725d",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C52",
+      "claim": "Homology models of KCNQ1 were built with the VSDs in states where E1 forms a salt bridge with R228 (R1), R231 (R2), or R237 (R4).",
+      "claim_type": "EXPLICIT",
+      "source": "We built homology models of KCNQ1 with the VSDs in states where E1 forms a salt bridge with R228 (R1), R231 (R2), or R237 (R4) (Figure 1\u2014figure supplement 3), the three S4 arginines that are known to be critical for voltage-sensing in KCNQ1 (Shamgar et al., 2008; Wu et al., 2010b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational modeling and citations to Shamgar et al., 2008 and Wu et al., 2010b",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8ae22411-30a5-4408-bbd4-c6949849b3b0",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C53",
+      "claim": "R228 (R1), R231 (R2), and R237 (R4) are the three S4 arginines that are known to be critical for voltage-sensing in KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "We built homology models of KCNQ1 with the VSDs in states where E1 forms a salt bridge with R228 (R1), R231 (R2), or R237 (R4) (Figure 1\u2014figure supplement 3), the three S4 arginines that are known to be critical for voltage-sensing in KCNQ1 (Shamgar et al., 2008; Wu et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shamgar et al., 2008 and Wu et al., 2010b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "79128431-2c1f-4c1b-83aa-a58201013cc8",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C54",
+      "claim": "In MD simulations, the pore was more dilated when the VSDs were in the E1-R2 or E1-R4 states than in the E1-R1 state.",
+      "claim_type": "EXPLICIT",
+      "source": "In Molecular Dynamic (MD) simulations, we found that the pore was more dilated when the VSDs were in the E1-R2 or E1-R4 states than in the E1-R1 state (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MD simulation data shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "5b4977f3-49c5-4997-8ec2-f4569da4b08c",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C55",
+      "claim": "MD simulations suggest that KCNQ1 channels can open when the VSDs assume intermediate or activated states.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations suggest that KCNQ1 channels can open when the VSDs assume intermediate or activated states (Figure 1I, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MD simulation data shown in Figure 1I and Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "a8647153-54c4-4613-a5d3-324c1c80e2ac",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C56",
+      "claim": "Mutating E1 to arginine (E1R) caused a severe loss of current in KCNQ1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown previously (Wu et al., 2010a), for KCNQ1 channels, mutating E1 to arginine (E1R) caused a severe loss of current that was partially rescued by a charge reversing (R to E) mutation at the R2 (E1R/R2E) or R4 (E1R/R4E) positions (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Wu et al., 2010a and experimental data shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "6dc486cc-4949-4821-96e1-472507952e9c",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C57",
+      "claim": "The loss of current from E1R mutation was partially rescued by a charge reversing (R to E) mutation at the R2 (E1R/R2E) or R4 (E1R/R4E) positions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown previously (Wu et al., 2010a), for KCNQ1 channels, mutating E1 to arginine (E1R) caused a severe loss of current that was partially rescued by a charge reversing (R to E) mutation at the R2 (E1R/R2E) or R4 (E1R/R4E) positions (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Wu et al., 2010a and experimental data shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "20ed8f39-7c7d-478b-9e7c-dcdf7d31dc9e",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C58",
+      "claim": "E1R/R2E and E1R/R4E channels were constitutively open.",
+      "claim_type": "EXPLICIT",
+      "source": "E1R/R2E and E1R/R4E channels were constitutively open (Figure 1\u2014figure supplement 4C,D), suggesting that the VSD was trapped in states where the paired residues interact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 4C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "ce175745-5715-4654-911c-410f5c8b8b19",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C59",
+      "claim": "When KCNE1 was coexpressed, the E1R/R2E currents were eliminated and the E1R/R4E currents were increased by nearly 10-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "When KCNE1 was coexpressed, the E1R/R2E currents were eliminated and the E1R/R4E currents were increased by nearly 10-fold (Figure 1J, Figure 1\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1J and Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "41151bb3-a42d-4167-81d1-6aed8478b3d5",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C60",
+      "claim": "KCNE1 suppresses the intermediate-open state and potentiates the activated-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "When KCNE1 was coexpressed, the E1R/R2E currents were eliminated and the E1R/R4E currents were increased by nearly 10-fold (Figure 1J, Figure 1\u2014figure supplement 4), suggesting that KCNE1 suppresses the intermediate-open state and potentiates the activated-open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "c1fd2ad4-939a-42c0-980f-0d9edd158cd0",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C61",
+      "claim": "The abundance of E1R/R2E subunits in the cell membrane was similar when expressed alone or coexpressed with KCNE1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the abundance of E1R/R2E subunits in the cell membrane was similar when expressed alone or coexpressed with KCNE1, indicating that the inhibition of E1R/R2E currents was due to a functional effect on the intermediate-open state, not an effect on surface expression (Figure 1\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "5d85262f-6717-4e7a-93bd-2211eadc6a53",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C62",
+      "claim": "The inhibition of E1R/R2E currents by KCNE1 was due to a functional effect on the intermediate-open state, not an effect on surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the abundance of E1R/R2E subunits in the cell membrane was similar when expressed alone or coexpressed with KCNE1, indicating that the inhibition of E1R/R2E currents was due to a functional effect on the intermediate-open state, not an effect on surface expression (Figure 1\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8b7d00a5-ce71-4980-ae35-5dea5e2d8bc9",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C63",
+      "claim": "The VSD undergoes two sequential transitions, resting-to-intermediate and intermediate-to-activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the results in Figure 1 are consistent with a model in which the VSD undergoes two sequential transitions, resting-to-intermediate and intermediate-to-activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "b804d9ad-5993-4e79-906e-4d7eae2a4bb0",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C64",
+      "claim": "The first transition is sufficient for KCNQ1 to open, resulting in both intermediate-open and activated-open states.",
+      "claim_type": "EXPLICIT",
+      "source": "The first transition is sufficient for KCNQ1 to open, resulting in both intermediate-open and activated-open states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "309bd32e-70a8-45f0-ab22-86472bd01dd0",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C65",
+      "claim": "With KCNE1, the second transition is required for opening because the intermediate-open state is suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "With KCNE1, the second transition is required for opening because the intermediate-open state is suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "a98bf8a1-af7d-4130-b365-6f329ef25826",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C66",
+      "claim": "KCNQ1 channels had a higher Rb+/K+ permeability ratio than KCNQ1+KCNE1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, as previously demonstrated by Pusch et al. (2000), KCNQ1 channels had a higher Rb+/K+ permeability ratio than KCNQ1+KCNE1 channels (Figure 2A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Pusch et al. 2000 and experimental data shown in Figure 2A,B",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "91b47f2f-6285-4059-b3de-c5bfea7e3823",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C67",
+      "claim": "KCNQ1 channels were more sensitive than KCNQ1+KCNE1 channels to the inhibitor XE991 when short duration pulses were applied.",
+      "claim_type": "EXPLICIT",
+      "source": "and, as reported by Cohen and colleagues (Wang et al., 2000), KCNQ1 channels were more sensitive than KCNQ1+KCNE1 channels to the inhibitor XE991 when short duration pulses (comparable to the length of the cardiac action potential) were applied (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Wang et al., 2000 and experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "a732cd18-484e-475d-9d75-af1566f3ad71",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C68",
+      "claim": "E1R/R4E channels had a significantly lower Rb+/K+ permeability ratio compared to E1R/R2E and WT KCNQ1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, E1R/R4E channels had a significantly lower Rb+/K+ permeability ratio and a significantly lower apparent affinity for XE991 compared to E1R/R2E and WT KCNQ1 channels, which were similar (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "c3af35f7-2282-44d3-97af-c0c611724947",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C69",
+      "claim": "E1R/R4E channels had a significantly lower apparent affinity for XE991 compared to E1R/R2E and WT KCNQ1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, E1R/R4E channels had a significantly lower Rb+/K+ permeability ratio and a significantly lower apparent affinity for XE991 compared to E1R/R2E and WT KCNQ1 channels, which were similar (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "2d404e05-b225-4c05-8294-e785ec559652",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C70",
+      "claim": "Different VSD conformations yield functionally distinct open states.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that different VSD conformations yield functionally distinct open states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "bac4fcbf-99f0-43c4-8489-7ca736844f6f",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C71",
+      "claim": "The intermediate-open state is either the most populated or the most conductive open-state for WT KCNQ1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the similar properties of E1R/R2E and WT KCNQ1 suggest that the intermediate-open state is either the most populated or the most conductive open-state for WT KCNQ1 channels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "fdfb1ac2-fcf5-4f52-b130-abc846a0ddbc",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C72",
+      "claim": "E1R/R2E currents are 2\u20133 times larger than E1R/R4E currents.",
+      "claim_type": "EXPLICIT",
+      "source": "a notion that is further supported by our observation that E1R/R2E currents are 2\u20133 times larger than E1R/R4E currents (Figure 1J, Figure 1\u2014figure supplement 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1J and Figure 1\u2014figure supplement 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "6fa2ee4c-3a2d-4c53-a754-f8b42a901ee9",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C73",
+      "claim": "E1R/R2E and E1R/R4E have similar levels of membrane expression.",
+      "claim_type": "EXPLICIT",
+      "source": "despite having similar levels of membrane expression (Figure 1\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "d0588319-0794-4ed6-8352-19af1912dd76",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C74",
+      "claim": "Coexpression of KCNE1 with E1R/R4E significantly decreased the Rb+/K+ permeability ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to E1R/R4E alone, coexpression of KCNE1 with E1R/R4E significantly decreased the Rb+/K+ permeability ratio (Figure 2A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "9ea143c0-5171-4a97-bcc1-d63201666965",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C75",
+      "claim": "Coexpression of KCNE1 with E1R/R4E increased the apparent affinity for XE991.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to E1R/R4E alone, coexpression of KCNE1 with E1R/R4E significantly decreased the Rb+/K+ permeability ratio (Figure 2A,B) and increased the apparent affinity for XE991 (Figure 2C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "85e85b8a-c4f3-469c-93a7-26f235259526",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C76",
+      "claim": "In addition to eliminating the intermediate-open state, KCNE1 alters the properties of the activated-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that, in addition to eliminating the intermediate-open state, KCNE1 alters the properties of the activated-open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "da0ca1d3-695c-428c-ad67-c625f507d554",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C77",
+      "claim": "E1R/R4E+KCNE1 and WT KCNQ1+KCNE1 channels displayed similar Rb+/K+ permeability ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we found that E1R/R4E+KCNE1 and WT KCNQ1+KCNE1 channels displayed similar Rb+/K+ permeability ratios (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "902f1c8d-491f-40a0-95d4-700cd55470e2",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C78",
+      "claim": "E1R/R4E+KCNE1 and WT KCNQ1+KCNE1 channels displayed similar XE991 sensitivities.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we found that E1R/R4E+KCNE1 and WT KCNQ1+KCNE1 channels displayed similar Rb+/K+ permeability ratios (Figure 2B) and XE991 sensitivities (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "97f397e7-f01c-4e54-ab3c-24561c00fa1c",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C79",
+      "claim": "WT KCNQ1+KCNE1 currents are conducted by channels in the activated-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "further supporting our conclusion from Figure 1 that WT KCNQ1+KCNE1 currents are conducted by channels in the activated-open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "7f77ecae-e5bd-4ec8-a5ae-6447a83bf975",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C80",
+      "claim": "KCNE1 increases the apparent affinity of KCNQ1 for the membrane lipid phosphatidylinositol 4,5-bisphosphate (PIP2).",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous studies, we have shown that KCNE1 increases the apparent affinity of KCNQ1 for the membrane lipid phosphatidylinositol 4,5-bisphosphate (PIP2) (Li et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "23c259ca-51a3-42be-b222-13d5e39a17c7",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C81",
+      "claim": "In KCNQ1, PIP2 binding at the VSD-pore interface mediates the VSD-pore interactions that energetically couple VSD activation to pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "and that, in KCNQ1, PIP2 binding at the VSD-pore interface mediates the VSD-pore interactions that energetically couple VSD activation to pore opening (Zaydman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaydman et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "4bd50a21-a49a-4d91-9966-c0eea9288c2b",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C82",
+      "claim": "KCNE1 affects the VSD-pore interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these findings suggest that KCNE1 affects the VSD-pore interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on previous findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "676897da-5017-4b62-956c-26f8ee143530",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C83",
+      "claim": "F351 on S6 is highly conserved among Kv channels and participates in interactions with the S4/S5 linker that are known to be critical for VSD-pore interactions and coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "F351 on S6 is highly conserved among Kv channels and participates in interactions with the S4/S5 linker that are known to be critical for VSD-pore interactions and coupling (Lu et al., 2001; Tristani-Firouzi et al., 2002; Long et al., 2005; Haddad and Blunck, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "99330fda-9888-47ee-bd54-df0b0319f1b8",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C84",
+      "claim": "The F351A GV was correlated with Fhigh instead of Fmain.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in VCF experiments, we observed that the F351A GV was correlated with Fhigh instead of Fmain (Figure 3A, left)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "e25cd169-359f-49b5-a398-2fd6350d6d4e",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C85",
+      "claim": "Similar to KCNE1, F351A suppressed the intermediate-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in VCF experiments, we observed that the F351A GV was correlated with Fhigh instead of Fmain (Figure 3A, left), revealing that, similar to KCNE1 (Figure 1E), F351A suppressed the intermediate-open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "5914c081-1199-4484-968a-8335d17d231e",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C86",
+      "claim": "F351A current onset was delayed and slowed, resembling WT KCNQ1+KCNE1 current onset.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, F351A current onset was delayed and slowed (Figure 3A, right), resembling WT KCNQ1+KCNE1 current onset, as reported previously (Boulet et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A and citation to Boulet et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "858e6274-21ea-49e1-ba5e-d81e940afd1e",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C87",
+      "claim": "Compared to WT KCNQ1, F351A caused significant changes in the Rb+/K+ permeability ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that, compared to WT KCNQ1, F351A caused significant changes in the Rb+/K+ permeability ratio (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "f2ece015-0105-496e-bff9-8121724e884f",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C88",
+      "claim": "Compared to WT KCNQ1, F351A caused significant changes in the timecourse of inhibition by XE991.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that, compared to WT KCNQ1, F351A caused significant changes in the Rb+/K+ permeability ratio (Figure 3B) and the timecourse of inhibition by XE991 (Figure 3C, middle, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "9a986349-bb73-40d0-81aa-f0fdb135a23d",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C89",
+      "claim": "The properties of F351A were not identical to those of WT KCNQ1+KCNE1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, these properties of F351A were not identical to those of WT KCNQ1+KCNE1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "88f79ec7-d27f-4d5c-95fe-f864e2ae9651",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C90",
+      "claim": "Prior studies have located KCNE1 at the VSD-pore interface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such differences are not surprising as prior studies (Kang et al., 2008; Xu et al., 2008; Chung et al., 2009; Lvov et al., 2010; Strutz-Seebohm et al., 2011; Wang et al., 2011; Chan et al., 2012; Xu et al., 2013) have located KCNE1 at the VSD-pore interface",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "42333217-c214-41e1-85f4-ff99cd13c5c2",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C91",
+      "claim": "Prior studies have suggested that KCNE1 engages in a very broad and complex set of interactions with KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "and have suggested that KCNE1 engages in a very broad and complex set of interactions with KCNQ1 (Sun et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "9a5753ff-2f5f-4415-b3bb-6c1121078020",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C92",
+      "claim": "The VSD-pore interactions determine the permeation and pharmacological properties of the pore as well as which VSD transitions are required for the pore to open.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our studies of F351A provide evidence that the VSD-pore interactions determine the permeation and pharmacological properties of the pore as well as which VSD transitions are required for the pore to open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "af65f573-7bb5-4e41-973b-a9ca6d8ac2f4",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C93",
+      "claim": "The decay of E1R/R4E+CiVSP currents were significantly slower and less severe when KCNE1 was present.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the decay of E1R/R4E+CiVSP currents were significantly slower and less severe when KCNE1 was present (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "306e6ebd-5c6e-4db7-a4d1-39617f7618dc",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C94",
+      "claim": "KCNE1 increases the affinity of the activated-open state of KCNQ1 for PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the decay of E1R/R4E+CiVSP currents were significantly slower and less severe when KCNE1 was present (Figure 4A), suggesting that KCNE1 increases the affinity of the activated-open state of KCNQ1 for PIP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "39d405ab-da46-4dd6-af87-84b58ccc1686",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C95",
+      "claim": "WT KCNQ1+KCNE1 currents were relatively insensitive to the activity of CiVSP as long as they were maintained in the activated-open state by sustained membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, WT KCNQ1+KCNE1 currents, which come from activated-open states exclusively (Figure 1), were observed to be relatively insensitive to the activity of CiVSP as long as they were maintained in the activated-open state by sustained membrane depolarization (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "6d639988-a311-4949-bb6f-4fd44a36aaaf",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C96",
+      "claim": "When the channels were permitted to close, by hyperpolarizing the membrane potential, PIP2 unbinding was facilitated as evidenced by decreased current amplitude observed with application of a subsequent depolarizing pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "When the channels were permitted to close, by hyperpolarizing the membrane potential, PIP2 unbinding was facilitated as evidenced by decreased current amplitude observed with application of a subsequent depolarizing pulse (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "07785298-cb18-4fe1-96a4-e2497954b942",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C97",
+      "claim": "KCNE1 causes the activated-open state to have a high apparent affinity for PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results reveal that KCNE1 causes the activated-open state to have a high apparent affinity for PIP2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "c739d148-dfa0-4a5d-a59f-03bf4d48ee15",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C98",
+      "claim": "KCNE1 may increase the strength of VSD-pore interactions in the activated-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results reveal that KCNE1 causes the activated-open state to have a high apparent affinity for PIP2, suggesting that KCNE1 may increase the strength of VSD-pore interactions in the activated-open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on experimental data",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "3d557cf6-709a-4b45-8e13-37fceec2d74d",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C99",
+      "claim": "The effects of KCNE1 on VSD-pore interactions are sufficient to explain how KCNE1 affects the activation gating of KCNQ1 without any additional effects on VSD activation or pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these limitations, it is remarkable that we were able to capture all the major effects of KCNE1 on the activation gating of KCNQ1. This model illustrates that the effects of KCNE1 on VSD-pore interactions are sufficient to explain how KCNE1 affects the activation gating of KCNQ1 without any additional effects on VSD activation or pore opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on kinetic modeling and experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "ee9ec1b4-75ca-4a2f-a08b-c2a560e7c47f",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C100",
+      "claim": "The proposed mechanism that KCNE1 affects VSD-pore interactions provides a relatively complete explanation for how KCNE1 affects KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as our experimental data demonstrate that VSD-pore interactions determine the permeation and pharmacological properties (Figures 2,3), our proposed mechanism, that KCNE1 affects VSD-pore interactions, provides a relatively complete explanation for how KCNE1 affects KCNQ1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data and inference",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "4e088343-dc4b-4a8a-b213-ddbb71d75239",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C101",
+      "claim": "Several groups have argued that association of KCNE1 with KCNQ1 dimers during an early stage of biogenesis leads to a fixed 4:2 KCNQ1:KCNE1 stoichiometry and breaks the fourfold symmetry of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Several groups have argued that association of KCNE1 with KCNQ1 dimers during an early stage of biogenesis leads to a fixed 4:2 KCNQ1:KCNE1 stoichiometry and breaks the fourfold symmetry of the channel (Wang and Goldstein, 1995; Chen et al., 2003; Morin and Kobertz, 2008; Plant et al.,2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "0ab0699f-745e-4437-b48a-2b0a022e4333",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C102",
+      "claim": "Other groups have argued that various stoichiometries, 4:0\u20134 KCNQ1:KCNE1, are possible, depending on the relative levels of subunit expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Other groups have argued that various stoichiometries, 4:0\u20134 KCNQ1:KCNE1, are possible, depending on the relative levels of subunit expression (Blumenthal and Kaczmarek, 1994; Cui et al., 1994; Wang et al., 1998; Nakajo et al., 2010; Li et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "d88629ad-22c1-4b80-b1a2-02a26bd439cb",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C103",
+      "claim": "Coinjecting oocytes with KCNQ1 and KCNE1 transcripts at a 1:1 ratio is sufficient to saturate the functional effects of KCNE1 on KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we coinjected oocytes with KCNQ1 and KCNE1 transcripts at a 1:1 ratio because previous work, from our lab (Li et al., 2011) and others (Nakajo et al., 2010), demonstrated that this ratio is sufficient to saturate the functional effects of KCNE1 on KCNQ1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li et al., 2011 and Nakajo et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "5e5b48a4-b9a6-4751-b34d-21d81458f624",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C104",
+      "claim": "The F351A mutation demonstrates that the ability to couple pore opening to different transitions within the VSD is intrinsic to the KCNQ1 subunit and observed even in the absence of the KCNE1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, the F351A mutation demonstrates that the major finding of our study\u2014the ability to couple pore opening to different transitions within the VSD\u2014is intrinsic to the KCNQ1 subunit and observed even in the absence of the KCNE1 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "0004456c-8586-4402-b4ad-387a42261ec3",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C105",
+      "claim": "The landmark linear models of Shaker Kv channels require that all four VSDs be activated before the pore can open.",
+      "claim_type": "EXPLICIT",
+      "source": "The landmark linear models of Shaker Kv channels (Schoppa et al., 1992; Zagotta et al., 1994), which require that all four VSDs be activated before the pore can open, do an excellent job replicating the gating of Shaker Kv channels, but do not explicitly define coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schoppa et al., 1992 and Zagotta et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "fb171553-732d-4ca7-8ba3-270ef161458d",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C106",
+      "claim": "The HCA model permits pore-opening without prior activation of all VSDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Another landmark model, the Horrigan-Cui-Aldrich (HCA) model (Horrigan et al., 1999), permits pore-opening without prior activation of all VSDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Horrigan et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "a319e489-c968-40b7-b0b6-528cbb67e603",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C107",
+      "claim": "In the HCA model, coupling is quantitatively defined by a single term, D, representing how much the closed-open equilibrium of the pore is biased towards open when a single VSD is transitioned from its fully resting to its fully activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HCA model, coupling is quantitatively defined by a single term, D, representing how much the closed-open equilibrium of the pore is biased towards open when a single VSD is transitioned from its fully resting to its fully activated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the HCA model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "11e9d639-bfeb-46d0-96a0-d5071aa80713",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C108",
+      "claim": "Early studies by Goldstein and colleagues argued that KCNE1 intercalates deeply into the pore and directly lines the permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies by Goldstein and colleagues argued that KCNE1 intercalates deeply into the pore and directly lines the permeation pathway (Goldstein and Miller, 1991; Wang et al., 1996; Tai and Goldstein, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goldstein and Miller, 1991; Wang et al., 1996; Tai and Goldstein, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "caa1670b-29f9-4ff6-bfbf-6061fac28657",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C109",
+      "claim": "The Kass and George labs argued that KCNE1 associates outside the pore and modulates the pore properties through an allosteric mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, the Kass and George labs argued that KCNE1 associates outside the pore and modulates the pore properties through an allosteric mechanism (Kurokawa et al., 2001; Tapper and George, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kurokawa et al., 2001 and Tapper and George, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "daef87bd-2e95-4679-89a6-8a3630a7dd32",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C110",
+      "claim": "Several labs have detected probable interactions between the extracellular, transmembrane, and intracellular regions of KCNQ1 and KCNE1.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the efforts of several labs have detected probable interactions between the extracellular (Xu et al., 2008; Chan et al., 2012), transmembrane (Tapper and George, 2001; Chung et al., 2009; Lvov et al., 2010), and intracellular (Haitin et al., 2009) regions of KCNQ1 and KCNE1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "f727a720-ee6f-4cf2-acc5-b0a4ee02573b",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C111",
+      "claim": "Homology models of the KCNQ1+KCNE1 channel place KCNE1 in a cleft between a VSD and the pore where it participates in a broad set of interactions with KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data have been used to build homology models of the KCNQ1+KCNE1 channel (Kang et al., 2008; Lundby et al., 2010; Xu et al., 2013), all of which place KCNE1 in a cleft between a VSD and the pore where it participates in a broad set of interactions with KCNQ1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kang et al., 2008; Lundby et al., 2010; Xu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "9dda1069-eb62-438c-b565-aa7bcf85957d",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C112",
+      "claim": "Prior biophysical studies have come to conflicting conclusions that KCNE1 either slows VSD activation or pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior biophysical studies, which have focused on how KCNE1 slows current onset, have come to conflicting conclusions that KCNE1 either slows VSD activation (Nakajo and Kubo, 2007; Ruscic et al., 2013) or pore opening (Rocheleau and Kobertz, 2008; Osteen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "937238a9-9e50-4a84-8abd-ab9ae00bf78d",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C113",
+      "claim": "The Larsson and Kass labs reported the presence of a second fluorescence transition in KCNQ1+KCNE1 channels, which they attributed to pore opening or a concerted step in which pore opening and further S4 movement occur simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the Larsson and Kass labs reported the presence of a second fluorescence transition in KCNQ1+KCNE1 channels, which they attributed to pore opening (Osteen et al., 2010, 2012) or a concerted step in which pore opening and further S4 movement occur simultaneously (Barro-Soria et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Osteen et al., 2010, 2012 and Barro-Soria et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "97f22d9c-7a3e-4afb-8305-a2715ba9b701",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C114",
+      "claim": "The second FV component reports on an intrinsic transition of the VSD rather than the pore opening step.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the second FV component reports on an intrinsic transition of the VSD rather than the pore opening step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation based on their data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "5691d149-956d-4b82-a35f-4f012ec37373",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C115",
+      "claim": "Homomeric KCNQ1 channels exhibited a second FV component, with similar properties to that of KCNQ1+KCNE1, which occurred in a range of voltages that was more positive than required for pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption was based on our observation that homomeric KCNQ1 channels also exhibited a second FV component, with similar properties to that of KCNQ1+KCNE1, which occurred in a range of voltages that was more positive than required for pore opening (Figure 1A\u2013H, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A-H and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "571148b5-46e6-4456-826f-b7491ff60f17",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C116",
+      "claim": "In the authors' model, channel opening requires an additional transition within a single VSD, rather than the activation of additional subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in our model, channel opening requires an additional transition within a single VSD, rather than the activation of additional subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the authors' model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "4268f275-3ffa-4a7e-9faf-ae11463a4238",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "claim_id": "C117",
+      "claim": "The different open states have different conductive and pharmacological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "A natural consequence of such gating behavior is the existence of both intermediate-open and activated-open states, which could be detected experimentally and are of great functional importance as the different open states have different conductive and pharmacological properties (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "58320f04-e1cc-4560-9a94-9b6b48795dd3",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "KCNQ1 and KCNE1 form the IKs channel complex in the heart, which is critical for cardiac repolarization. KCNE1 dramatically modulates KCNQ1 properties including gating, permeation, and pharmacology, and these changes are essential for IKs physiological function. Loss-of-function mutations cause Long QT Syndrome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C21-C25 establish well-documented background knowledge about KCNQ1/KCNE1 channels supported by multiple literature citations. These claims provide essential context for the study and are consistently supported across the ion channel field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Voltage-gated potassium channels have a tetrameric structure with four VSDs surrounding a central pore. Current models assume two-state VSD activation and pore opening with independence between gating and permeation, but evidence suggests VSD activation occurs through multiple intermediate states and pore opening shows subconductance levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C17 present established structural and mechanistic knowledge about Kv channels supported by extensive literature citations. These claims accurately describe the field's understanding and set up the conceptual framework for challenging existing assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "VSD activation in KCNQ1 occurs in two resolvable steps through a stable intermediate state, as demonstrated by voltage-clamp fluorometry showing two fluorescence components (Fmain and Fhigh). Without KCNE1, pore opening correlates with Fmain, but with KCNE1, opening requires the second transition (Fhigh).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C38-C51 are well-supported by VCF experimental data in Figures 1A-H and supplementary figures. The two-component fluorescence signals are reproducible across different dyes and conditions, and the correlation between GV and different FV components is maintained even with mutations that shift voltage dependence (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8db25b3c-c938-4337-923d-6c43421b092d",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Homology modeling and MD simulations suggest that KCNQ1 channels can open when VSDs are in intermediate (E1-R2) or activated (E1-R4) states, with the pore more dilated in these states compared to the resting (E1-R1) state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C55 are based on computational modeling (Figure 1\u2014figure supplement 3). While the models are built on established templates and show reasonable structural predictions, MD simulations have inherent limitations and assumptions. The pore dilation differences are modest and the biological relevance requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "e836d6b1-f552-4399-9913-22cf512b5023",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Charge-reversal mutations E1R/R2E and E1R/R4E trap the VSD in intermediate and activated states respectively, producing constitutively open channels. KCNE1 eliminates E1R/R2E currents but potentiates E1R/R4E currents ~10-fold, demonstrating that KCNE1 suppresses the intermediate-open state and potentiates the activated-open state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 are strongly supported by experimental data in Figure 1J and Figure 1\u2014figure supplement 4-5. The mutational strategy is well-designed based on prior work (Wu et al., 2010a). Critically, surface expression controls (C61, Figure 1\u2014figure supplement 5B) confirm the effects are functional rather than due to trafficking differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "78d02c99-9be7-4d7f-8d2a-e5ca90ea936a",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both intermediate and activated VSD states yield robust pore opening in KCNQ1, and these intermediate-open and activated-open states have different permeation and pharmacological properties, demonstrating that gating and permeation are not independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C31-C32 represent core findings supported by multiple experimental approaches including VCF (Figure 1), permeation studies (Figure 2), and pharmacology (Figures 2-3). The convergence of evidence from different methodologies strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "03fd42b3-00ad-4f67-bc64-c278c21d841a",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "E1R/R4E channels (activated-open state) have significantly lower Rb+/K+ permeability and XE991 sensitivity compared to E1R/R2E and WT KCNQ1 (intermediate-open state), demonstrating that different VSD conformations yield functionally distinct open states. The intermediate-open state appears to be the dominant state in WT KCNQ1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 are well-supported by experimental data in Figure 2 and Figure 1\u2014figure supplement 4-5. The permeation and pharmacology experiments clearly distinguish the two open states. Surface expression controls (C73) confirm similar membrane expression levels, validating the functional comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "01bb2e81-362e-4712-a431-aa9da9ecd8ea",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "KCNE1 coexpression with E1R/R4E significantly alters the properties of the activated-open state, decreasing Rb+/K+ permeability and increasing XE991 sensitivity. E1R/R4E+KCNE1 channels display similar properties to WT KCNQ1+KCNE1, confirming that WT KCNQ1+KCNE1 currents are conducted by activated-open state channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 are supported by experimental data in Figure 2. The similarity between E1R/R4E+KCNE1 and WT KCNQ1+KCNE1 properties provides strong evidence that KCNE1 not only suppresses intermediate-open states but also modulates activated-open state properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "5ff9337b-651d-4994-97c5-e06f88f8d2e2",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "KCNE1 coexpression prevents the intermediate-open state and changes activated-open state properties. The F351A mutation, which directly alters VSD-pore interactions, produces similar effects, suggesting KCNE1 acts by changing VSD-pore interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by experimental data. C33 is demonstrated throughout Figure 1 and related experiments. The F351A mutation data (C35, Figure 3) provides critical independent evidence that altering VSD-pore interactions can recapitulate KCNE1 effects, though the authors appropriately note F351A doesn't perfectly mimic all KCNE1 effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The F351A mutation at the VSD-pore interface suppresses the intermediate-open state (GV correlates with Fhigh instead of Fmain) and alters permeation and pharmacology. This demonstrates that VSD-pore interactions determine which VSD transitions are required for opening and the properties of open states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C92 are supported by experimental data in Figure 3. The F351A mutation provides strong evidence for the VSD-pore interaction mechanism. The authors appropriately acknowledge that F351A properties aren't identical to KCNQ1+KCNE1 (C89), which is expected given KCNE1's complex interactions with KCNQ1 (C90-C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "f657ce23-cdb4-4408-bd3a-945748a6956c",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "KCNE1 increases the apparent affinity of the activated-open state for PIP2, as demonstrated by slower current decay with CiVSP-mediated PIP2 depletion. This suggests KCNE1 strengthens VSD-pore interactions in the activated-open state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 cite prior work establishing PIP2's role. Claims C93-C98 are supported by CiVSP experiments in Figure 4. The experimental design is sound, showing that KCNE1 slows PIP2 unbinding from activated-open channels. However, C98 is appropriately stated as speculation ('may increase') since PIP2 affinity is used as a proxy for interaction strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "b19953c9-4b28-45ca-be67-9a35d1badf8b",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Kinetic modeling demonstrates that the effects of KCNE1 on VSD-pore interactions are sufficient to explain most changes in activation gating without requiring direct effects on VSD activation or pore opening. This mechanism provides a relatively complete explanation for how KCNE1 affects KCNQ1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C99-C100 are supported by the kinetic modeling in Figure 5. The model successfully recapitulates major KCNE1 effects by only changing two VSD-pore interaction parameters (\u03b8IC and \u03b8AO). The authors appropriately acknowledge model limitations (PIP2 saturation, uniform conductance, no inactivation) and note the simulations aren't quantitatively perfect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous mechanisms proposed for KCNE1 modulation (altered VSD activation, altered pore opening, or direct pore contribution) cannot simultaneously account for effects on gating, permeation, and pharmacology. There is ongoing debate about KCNQ1:KCNE1 stoichiometry. The F351A mutation demonstrates that coupling pore opening to different VSD transitions is intrinsic to KCNQ1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 accurately summarize prior literature with appropriate citations. Claims C101-C103 acknowledge the stoichiometry controversy and justify the experimental approach. Claim C104 is an important control showing the key finding is KCNQ1-intrinsic and not dependent on KCNE1 presence or stoichiometry assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    },
+    {
+      "id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6",
+      "content_id": "8c604948-5070-4e3a-85d6-a2e55dc4a081",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors' model differs from previous Kv channel gating models by explicitly representing VSD-pore interactions at each state and allowing pore opening from intermediate VSD states. This contrasts with prior interpretations that KCNE1 affects either VSD activation or pore opening, and differs from recent work attributing the second fluorescence component to pore opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C117 accurately describe prior models and position the current work within the field. The distinction between the authors' interpretation (second FV component = VSD transition) versus others' (pore opening) is clearly stated and supported by the observation that homomeric KCNQ1 shows the second component at voltages more positive than required for opening (C115).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:10:05.758900Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9c7c6c28-e7d4-4686-bc86-32b46e6af4b4",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "bfba7a22-ad6e-40c1-ac6c-1116bfbbde3f",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "01737561-a45a-479d-b740-0411aeec3911",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "7753fca2-7818-4a08-8d60-17445d6c3f2e",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "f0940ccf-a6ac-49a4-873f-636bb40feac8",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "4bc2e034-589b-4c4b-a2af-32513dc3773c",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "991f9adf-4479-434f-bd04-fb936825b07c",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "33b69eea-a649-4a48-82fe-26f2fbf0efc3",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "ca1f0132-f2bc-4a45-9247-3fa70084f672",
+      "result_id": "58320f04-e1cc-4560-9a94-9b6b48795dd3"
+    },
+    {
+      "claim_id": "0357a9c2-ab66-4592-8504-dbf2bcf89236",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "98afe3be-fb1f-45d7-a5cc-2a00ceeac501",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "b8c892f2-4ecb-415e-9c67-350569d47b29",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "784ead2b-1422-446c-af22-87456a2610d3",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "bef6aa8b-7e2e-4b31-a800-1451c54983d8",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "9974fb31-22f1-4ce9-a4f2-4bc9ee2a8f06",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "c2a7dfb2-cfb8-4eb8-a856-cb61afe3bc5b",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "ba0d47f3-9439-440f-8cb2-8529c9c946c5",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "2a51d9b5-6c53-47b5-bedd-f9ebb265aaa9",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "8768a9d9-981e-43ee-8715-09816deebe3c",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "9a6bc7b0-d1f9-4cd2-a5b6-05eb782b8d80",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "1d6133fe-3b03-451e-b7bd-c404f24e06c5",
+      "result_id": "1a75e857-aa3d-4431-8ca7-2b0ebc89660f"
+    },
+    {
+      "claim_id": "bc936035-4d49-4bbb-93f5-5fcf207b11b5",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "5faefc58-bbdc-45c0-aa44-b48a7aa2577d",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "cc3a90f4-25d5-42f6-8925-146ed7417104",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "a39ba4b7-c52d-4598-a832-07dbea3f1fe1",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "ae4b09ba-c972-4d12-b077-5544f42bf71a",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "9b87a268-39b4-4c98-a932-654bcb8bc6f2",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "bb7a71a9-4c59-4f69-b02e-42b068bfc39f",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "f2a78f5d-fb06-43d7-a9dc-b2d5f248eca9",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "4566b28f-9f16-40b6-bab3-e86e4af96a16",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "d8cca6d8-1b67-47ee-93af-6288644bfdd9",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "0bec8d01-ed2b-44a0-b32f-6b6b3f4ae866",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "91366021-a7de-4e94-b7b2-08dc6d9b5496",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "43672e7b-6a48-4412-8e44-e61e4cdaed3f",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "6b1b2db5-5363-41e1-85fe-8a4803e44de3",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "fae05140-afba-4cfa-a55d-9f917a21a0c3",
+      "result_id": "bf0101e9-730c-4c5c-bdfb-b4ae0305a369"
+    },
+    {
+      "claim_id": "131e9b75-fbfb-4c66-a02c-ba204c66725d",
+      "result_id": "8db25b3c-c938-4337-923d-6c43421b092d"
+    },
+    {
+      "claim_id": "8ae22411-30a5-4408-bbd4-c6949849b3b0",
+      "result_id": "8db25b3c-c938-4337-923d-6c43421b092d"
+    },
+    {
+      "claim_id": "79128431-2c1f-4c1b-83aa-a58201013cc8",
+      "result_id": "8db25b3c-c938-4337-923d-6c43421b092d"
+    },
+    {
+      "claim_id": "5b4977f3-49c5-4997-8ec2-f4569da4b08c",
+      "result_id": "8db25b3c-c938-4337-923d-6c43421b092d"
+    },
+    {
+      "claim_id": "a8647153-54c4-4613-a5d3-324c1c80e2ac",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "6dc486cc-4949-4821-96e1-472507952e9c",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "20ed8f39-7c7d-478b-9e7c-dcdf7d31dc9e",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "ce175745-5715-4654-911c-410f5c8b8b19",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "41151bb3-a42d-4167-81d1-6aed8478b3d5",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "c1fd2ad4-939a-42c0-980f-0d9edd158cd0",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "5d85262f-6717-4e7a-93bd-2211eadc6a53",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "8b7d00a5-ce71-4980-ae35-5dea5e2d8bc9",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "b804d9ad-5993-4e79-906e-4d7eae2a4bb0",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "309bd32e-70a8-45f0-ab22-86472bd01dd0",
+      "result_id": "e836d6b1-f552-4399-9913-22cf512b5023"
+    },
+    {
+      "claim_id": "e1404862-8d88-49f9-a294-f701392d7dfd",
+      "result_id": "78d02c99-9be7-4d7f-8d2a-e5ca90ea936a"
+    },
+    {
+      "claim_id": "8ead2ab3-2640-4127-84d6-45b811570176",
+      "result_id": "78d02c99-9be7-4d7f-8d2a-e5ca90ea936a"
+    },
+    {
+      "claim_id": "8cc17fe2-908f-482a-9af3-5da32324d9ee",
+      "result_id": "78d02c99-9be7-4d7f-8d2a-e5ca90ea936a"
+    },
+    {
+      "claim_id": "a8fb318f-0996-46b9-bf03-eace9135f87a",
+      "result_id": "78d02c99-9be7-4d7f-8d2a-e5ca90ea936a"
+    },
+    {
+      "claim_id": "97bc8496-dd46-4ceb-bb27-dabd98e82d7b",
+      "result_id": "78d02c99-9be7-4d7f-8d2a-e5ca90ea936a"
+    },
+    {
+      "claim_id": "a98bf8a1-af7d-4130-b365-6f329ef25826",
+      "result_id": "03fd42b3-00ad-4f67-bc64-c278c21d841a"
+    },
+    {
+      "claim_id": "91b47f2f-6285-4059-b3de-c5bfea7e3823",
+      "result_id": "03fd42b3-00ad-4f67-bc64-c278c21d841a"
+    },
+    {
+      "claim_id": "a732cd18-484e-475d-9d75-af1566f3ad71",
+      "result_id": "03fd42b3-00ad-4f67-bc64-c278c21d841a"
+    },
+    {
+      "claim_id": "c3af35f7-2282-44d3-97af-c0c611724947",
+      "result_id": "03fd42b3-00ad-4f67-bc64-c278c21d841a"
+    },
+    {
+      "claim_id": "2d404e05-b225-4c05-8294-e785ec559652",
+      "result_id": "03fd42b3-00ad-4f67-bc64-c278c21d841a"
+    },
+    {
+      "claim_id": "bac4fcbf-99f0-43c4-8489-7ca736844f6f",
+      "result_id": "03fd42b3-00ad-4f67-bc64-c278c21d841a"
+    },
+    {
+      "claim_id": "fdfb1ac2-fcf5-4f52-b130-abc846a0ddbc",
+      "result_id": "03fd42b3-00ad-4f67-bc64-c278c21d841a"
+    },
+    {
+      "claim_id": "6fa2ee4c-3a2d-4c53-a754-f8b42a901ee9",
+      "result_id": "03fd42b3-00ad-4f67-bc64-c278c21d841a"
+    },
+    {
+      "claim_id": "d0588319-0794-4ed6-8352-19af1912dd76",
+      "result_id": "01bb2e81-362e-4712-a431-aa9da9ecd8ea"
+    },
+    {
+      "claim_id": "9ea143c0-5171-4a97-bcc1-d63201666965",
+      "result_id": "01bb2e81-362e-4712-a431-aa9da9ecd8ea"
+    },
+    {
+      "claim_id": "85e85b8a-c4f3-469c-93a7-26f235259526",
+      "result_id": "01bb2e81-362e-4712-a431-aa9da9ecd8ea"
+    },
+    {
+      "claim_id": "da0ca1d3-695c-428c-ad67-c625f507d554",
+      "result_id": "01bb2e81-362e-4712-a431-aa9da9ecd8ea"
+    },
+    {
+      "claim_id": "902f1c8d-491f-40a0-95d4-700cd55470e2",
+      "result_id": "01bb2e81-362e-4712-a431-aa9da9ecd8ea"
+    },
+    {
+      "claim_id": "97f397e7-f01c-4e54-ab3c-24561c00fa1c",
+      "result_id": "01bb2e81-362e-4712-a431-aa9da9ecd8ea"
+    },
+    {
+      "claim_id": "6a2bc9b6-2044-4017-9ba9-87e12675cd1f",
+      "result_id": "5ff9337b-651d-4994-97c5-e06f88f8d2e2"
+    },
+    {
+      "claim_id": "4617bdb2-1c98-4a8d-a261-0aa27b5fd801",
+      "result_id": "5ff9337b-651d-4994-97c5-e06f88f8d2e2"
+    },
+    {
+      "claim_id": "218e4aad-ed87-4cc8-88bf-7ff3762030da",
+      "result_id": "5ff9337b-651d-4994-97c5-e06f88f8d2e2"
+    },
+    {
+      "claim_id": "676897da-5017-4b62-956c-26f8ee143530",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "99330fda-9888-47ee-bd54-df0b0319f1b8",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "e25cd169-359f-49b5-a398-2fd6350d6d4e",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "5914c081-1199-4484-968a-8335d17d231e",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "858e6274-21ea-49e1-ba5e-d81e940afd1e",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "f2ece015-0105-496e-bff9-8121724e884f",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "9a986349-bb73-40d0-81aa-f0fdb135a23d",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "88f79ec7-d27f-4d5c-95fe-f864e2ae9651",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "42333217-c214-41e1-85f4-ff99cd13c5c2",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "9a5753ff-2f5f-4415-b3bb-6c1121078020",
+      "result_id": "7e38a93e-bb09-4e7c-80e3-9c1a1b7f0de0"
+    },
+    {
+      "claim_id": "7f77ecae-e5bd-4ec8-a5ae-6447a83bf975",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "23c259ca-51a3-42be-b222-13d5e39a17c7",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "4bd50a21-a49a-4d91-9966-c0eea9288c2b",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "af65f573-7bb5-4e41-973b-a9ca6d8ac2f4",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "306e6ebd-5c6e-4db7-a4d1-39617f7618dc",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "39d405ab-da46-4dd6-af87-84b58ccc1686",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "6d639988-a311-4949-bb6f-4fd44a36aaaf",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "07785298-cb18-4fe1-96a4-e2497954b942",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "c739d148-dfa0-4a5d-a59f-03bf4d48ee15",
+      "result_id": "f657ce23-cdb4-4408-bd3a-945748a6956c"
+    },
+    {
+      "claim_id": "4ada57ce-b7ef-41ce-b523-df87829db32c",
+      "result_id": "b19953c9-4b28-45ca-be67-9a35d1badf8b"
+    },
+    {
+      "claim_id": "776c961b-94cd-4887-88c6-182f54ade515",
+      "result_id": "b19953c9-4b28-45ca-be67-9a35d1badf8b"
+    },
+    {
+      "claim_id": "3d557cf6-709a-4b45-8e13-37fceec2d74d",
+      "result_id": "b19953c9-4b28-45ca-be67-9a35d1badf8b"
+    },
+    {
+      "claim_id": "ee9ec1b4-75ca-4a2f-a08b-c2a560e7c47f",
+      "result_id": "b19953c9-4b28-45ca-be67-9a35d1badf8b"
+    },
+    {
+      "claim_id": "5061b9ca-c453-4833-a6f0-c5606801d586",
+      "result_id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18"
+    },
+    {
+      "claim_id": "8430f5e3-3b1f-4b80-99e7-c10839162018",
+      "result_id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18"
+    },
+    {
+      "claim_id": "45e48268-ae5d-4192-bc9e-be01cf514535",
+      "result_id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18"
+    },
+    {
+      "claim_id": "087cd34b-797a-4790-b717-064c973a2d71",
+      "result_id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18"
+    },
+    {
+      "claim_id": "4e088343-dc4b-4a8a-b213-ddbb71d75239",
+      "result_id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18"
+    },
+    {
+      "claim_id": "0ab0699f-745e-4437-b48a-2b0a022e4333",
+      "result_id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18"
+    },
+    {
+      "claim_id": "d88629ad-22c1-4b80-b1a2-02a26bd439cb",
+      "result_id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18"
+    },
+    {
+      "claim_id": "5e5b48a4-b9a6-4751-b34d-21d81458f624",
+      "result_id": "8c2b7696-9f63-4d91-a105-a4bc57eeed18"
+    },
+    {
+      "claim_id": "0004456c-8586-4402-b4ad-387a42261ec3",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "fb171553-732d-4ca7-8ba3-270ef161458d",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "a319e489-c968-40b7-b0b6-528cbb67e603",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "11e9d639-bfeb-46d0-96a0-d5071aa80713",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "caa1670b-29f9-4ff6-bfbf-6061fac28657",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "daef87bd-2e95-4679-89a6-8a3630a7dd32",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "f727a720-ee6f-4cf2-acc5-b0a4ee02573b",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "9dda1069-eb62-438c-b565-aa7bcf85957d",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "937238a9-9e50-4a84-8abd-ab9ae00bf78d",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "97f22d9c-7a3e-4afb-8305-a2715ba9b701",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "5691d149-956d-4b82-a35f-4f012ec37373",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "571148b5-46e6-4456-826f-b7491ff60f17",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    },
+    {
+      "claim_id": "4268f275-3ffa-4a7e-9faf-ae11463a4238",
+      "result_id": "a7e22b02-91ac-4b79-bd6b-3a84ce5113f6"
+    }
+  ],
+  "comparisons": []
+}

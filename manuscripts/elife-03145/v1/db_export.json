@@ -1,0 +1,1576 @@
+{
+  "submission": {
+    "id": "e8c69bb7-6df4-4457-b335-0269ba320124",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:25:37.122679Z",
+    "updated_at": "2025-11-28T21:25:37.122679Z"
+  },
+  "content": [
+    {
+      "id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "submission_id": "e8c69bb7-6df4-4457-b335-0269ba320124",
+      "content_type": "manuscript",
+      "content_text": "# Coupling of remote alternating-access transport mechanisms for protons and substrates in the multidrug efflux pump AcrB\n\n## Authors\n\n- Thomas Eicher<sup>1</sup>\n- Markus A Seeger<sup>3</sup>\n- Claudio Anselmi<sup>6</sup>\n- Wenchang Zhou<sup>6</sup>\n- Lorenz Brandst\u00e4tter<sup>1</sup>\n- Fran\u00e7ois Verrey<sup>3</sup>\n- Kay Diederichs<sup>7</sup>\n- Jos\u00e9 D Faraldo-G\u00f3mez<sup>6</sup> \u2020\n- Klaas M Pos<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institute of Biochemistry Goethe University Frankfurt am Main Germany\n2. Cluster of Excellence Frankfurt Goethe University Frankfurt am Main Germany\n3. Institute of Physiology University of Zurich Zurich Switzerland\n4. Zurich Centre for Integrative Human Physiology University of Zurich Zurich Switzerland\n5. Institute of Medical Microbiology University of Zurich Zurich Switzerland\n6. Theoretical Molecular Biophysics Section, National Heart, Lung and Blood Institute National Institutes of Health Bethesda United States\n7. Department of Biology University of Konstanz Konstanz Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nMembrane transporters of the RND superfamily confer multidrug resistance to pathogenic bacteria, and are essential for cholesterol metabolism and embryonic development in humans. We use high-resolution X-ray crystallography and computational methods to delineate the mechanism of the homotrimeric RND-type proton/drug antiporter AcrB, the active component of the major efflux system AcrAB-TolC in Escherichia coli, and one most complex and intriguing membrane transporters known to date. Analysis of wildtype AcrB and four functionally-inactive variants reveals an unprecedented mechanism that involves two remote alternating-access conformational cycles within each protomer, namely one for protons in the transmembrane region and another for drugs in the periplasmic domain, 50 \u00c5 apart. Each of these cycles entails two distinct types of collective motions of two structural repeats, coupled by flanking \u03b1-helices that project from the membrane. Moreover, we rationalize how the cross-talk among protomers across the trimerization interface might lead to a more kinetically efficient efflux system.\n\n## Introduction\n\nThe AcrA-AcrB-TolC complex is a secondary active antiport system in Escherichia coli, powered by the electrochemical proton gradient across the inner membrane of this Gram-negative bacterium (Okusu et al., 1996). Its biological function is to capture cytotoxic compounds from either the periplasmic space or the inner membrane, and to expel them across the outer membrane, into the extracellular medium. This tripartite system is arguably one of the most complex and intriguing secondary transporters known to date, from both structural and mechanistic standpoints. The AcrAB-TolC system and its homologues are also of considerable biomedical interest, as they confer multidrug resistance to important pathogenic bacteria involved in human disease (Nikaido and Pag\u00e8s, 2012).\n\nAcrB is the inner-membrane component of the system, and is responsible for both substrate recognition and energy transduction. This membrane protein belongs to the resistance-nodulation-cell-division (RND) family (Tseng et al., 1999), which also includes transporters involved in protein secretion (e.g., SecDF of E. coli), export of lipids (e.g., MmpL7 of Mycobacterium tuberculosis) and pigment export (e.g., ORF4 of Xanthomonas oryzae). In humans, the RND transporters NPC1 and Patched play key roles in the regulation of cholesterol metabolism and in the Hedgehog signaling pathway of embryonic cells, respectively (Taipale et al., 2002; Scott and Ioannou, 2004).\n\nThe first known structure of AcrB, solved by X-ray crystallography at a resolution of 3.5 \u00c5, revealed a homotrimeric assembly in which all protomers adopt the same conformation (Murakami et al., 2002). In each protomer, the transmembrane (TM) domain consists of 12 \u03b1-helices (TM1\u2013TM12), mostly interconnected by short unstructured loops as is common. In contrast to other secondary transporters, however, AcrB also features two large periplasmic insertions, between TM1 and TM2, and between TM7 and TM8, which account for approximately 60% of the 1049 amino acids in each protomer. These insertions are highly structured domains that project 70 \u00c5 away from the membrane, and form extensive interfaces among protomers (Figure 1). The TM domains barely contribute to the trimer interface, in further contrast to typical homomeric transporters. The more distal region of the periplasmic domain features a central funnel-shaped cavity that channels the substrate towards TolC, the outer-membrane channel component (140 \u00c5 in length) of this transport system (Koronakis et al., 2000). AcrA, the third component, functions as a peripheral scaffold to mediate the interaction between AcrB and TolC (Akama et al., 2004; Mikolosko et al., 2006; Tikhonova et al., 2011; Du et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig1-v1.jpg)\n\n**Figure 1.:** (A) Topology of the AcrB protomers in the transmembrane (TM) and porter domains. Our analysis indicates that the TM domain consists of two 5-helix parallel repeats, referred to as R1 and R2, and two flanking helices, TM2 and TM8. R1 (blue) is connected to R2 (red) through helix I\u03b1 (white), which lies parallel to the cytoplasmic face of the membrane. The porter domain also consists of two repeats of two subdomains each, namely PC1 and PN2 (blue), and PN1 and PC2 (red). TM2 (cyan) connects R1 to PN2, whereas TM8 (orange) links R2 to PC2. Other connections among porter sub-domains and R1/R2 are indicated by open/closed squares/circles. Hexagons indicate the connections between the porter domain and the funnel domain (FD), not drawn in this scheme. (B) Cartoon representation of the secondary structure of an AcrB protomer, in the context of the complete trimer. The other two protomers are drawn as a molecular surface (gray). Different sub-domains are colored as in (A), with inter-connecting loops and the FD shown in black.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each of the protomers adopt a distinct conformation, namely L, T and O; gray dashed lines indicate the protomer interfaces. Subdomains PC1/PN2 and PN1/PC2 are colored in blue and red, respectively, as in Figure 1. A minocycline molecule is bound in the T state, in the deep binding pocket between PC1 and PN2. Substrates can also bind more superficially, in the L state. Black dashed lines indicate access pathways from the periplasmic space into the drug-binding sites, in the L and T states, and from the binding site to the central funnel (green dashed line) within the funnel domain, in the O state. A fragment of this funnel domain is shown with green cartoons; this funnel is open to the lumen of the TolC channel, which traverses the outer membrane of E. coli.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Asymmetric AcrB trimer (residues 1 to 1044 per protomer) with one minocycline bound to the T state, embedded in a POPC lipid membrane and solvated by water. The system is enclosed in a periodic box of dimensions \u223c150 \u00d7 150 \u00d7 160 \u00c5. The molecular system includes \u223c370,000 atoms. AcrB is shown as a van-der-Waals surface, with the L, T and O states in blue, yellow and red, respectively. Lipid and water molecules are represented with lines and sticks; free Na+ ions, added to neutralize the total charge of the system, are shown as green spheres. (B) Free-energy simulations were carried out on a construct of the individual AcrB protomers, comprising the transmembrane and porter domains only, embedded in a POPC lipid membrane. The figure shows the T state; L and O states were prepared similarly. Each of these systems consist of \u223c101,000 atoms, enclosed in a rectangular box of dimensions \u223c90 \u00d7 90 \u00d7 120 \u00c5.\n\nThe intricate and unusual topology of AcrB and its trimerization state were confirmed by subsequent higher-resolution X-ray structures obtained from crystals grown in different space groups, several of which include bound substrates (Murakami et al., 2006; Seeger et al., 2006; Sennhauser et al., 2007; Nakashima et al., 2011, 2013; Eicher et al., 2012). These structures, however, also revealed that upon substrate loading AcrB becomes asymmetric, that is, each protomer in the trimer adopts one of three distinct conformational states, designated as \u2018loose\u2019 (L), \u2018tight\u2019 (T) and \u2018open\u2019 (O), or alternatively, as \u2018access\u2019, \u2018binding\u2019 and \u2018extrusion\u2019, (Murakami et al., 2006; Seeger et al., 2006). On the basis of these structures as well as other findings (Seeger et al., 2008; Takatsuka and Nikaido, 2009), it has also become generally accepted that drug recognition and efflux are mediated by a sub-domain of the periplasmic region, referred to as the porter domain (Figure 1, Figure 1\u2014figure supplement 1), whose mechanism is akin to that of a peristaltic pump (Seeger et al., 2006). Specifically, recognition of high molecular-mass drugs occurs in the L state, via an access pocket in the porter domain that is open to the periplasmic space (Nakashima et al., 2011; Eicher et al., 2012). When the L protomer transitions to the T state, drugs translocate to a binding pocket deeper in the protein; low molecular-mass drugs, however, can apparently bind directly to the deep binding pocket in the T protomer without binding to the access pocket first (Nakashima et al., 2011). Drug extrusion occurs next, in the transition from T to O, which re-shapes and opens the binding pocket to a central cavity in the funnel domain, which leads to the lumen of the TolC channel. Finally, the O to L transition resets the conformational cycle by re-exposing the binding site to the periplasm. The extensive interface between protomers in the porter domain, and the asymmetric nature of the trimer, also suggest that the three protomers are conformationally coupled (Pos, 2009). Indeed, recent measurements of AcrB transport kinetics (Nagano and Nikaido, 2009; Lim and Nikaido, 2010) are consistent with a bi-site activation model (Pos, 2009), analogous to the binding-change mechanism of the ATP synthase (Boyer, 1997).\n\nThe transport mechanism of the TM domain of AcrB, in contrast, remains largely undefined. The asymmetric trimer structures indicate that this domain also cycles between three distinct conformations, and point to several ionizable residues in its core (D407, D408, K940 and R971) that might function as a proton-relay network. Nevertheless, no clear interpretation of existing data has been formulated yet in terms of an alternating-access proton transport mechanism, which is a necessary condition for the transporter to harness the energy stored in the transmembrane electrochemical gradient. How this proton-motive-force is mechanically transduced to the porter domain, in order to power uphill drug efflux, also remains to be determined.\n\nHere, we gain insights into these crucial mechanistic questions from a series of new crystal structures of AcrB, systematically analyzed with molecular simulations and other computational methods. More specifically, we examine the TM domain of the transporter in an improved atomic structure of wildtype AcrB (Eicher et al., 2012), at 1.9 \u00c5 resolution, and also report the structures of four single-substitution variants (D407N, D408N, K940A and R971A), all of which are inactive both in proton translocation and drug efflux, solved at resolutions between 2.0 and 2.3 \u00c5. Taken together with our computational analysis, these data enable us to delineate the alternating-access mechanism of proton transport of the TM domain, and rationalize how this mechanism energizes drug efflux, more than 50 \u00c5 away.\n\n## Results and discussion\n\n### Modularity and collective motions in the periplasmic and transmembrane domains\n\nDespite the unique topological complexity of AcrB, a systematic analysis of its structure permits to rationalize its conformational cycle in terms of collective motions of distinct structural units. In the porter domain, as noted previously, each protomer consists of two structural repeats, referred to as PN1/PC2, and PN2/PC1 (Figure 1, Figure 1\u2014figure supplement 1). Each repeat is a tandem of two similar \u03b1/\u03b2 sub-domains, joined by a shared \u03b2-strand. The PN1/PC2 repeat appears to be a rigid unit throughout the LTO conformational cycle. Analysis of the conformation of this repeat in the 1.9 \u00c5-resolution crystal structure of wildtype AcrB (Eicher et al., 2012) yields root-mean-square differences (RMSD) among states of less than 0.5 \u00c5 (Supplementary file 1). By contrast, the PN2/PC1 tandem changes its conformation significantly, in particular in the L to T (RMSD \u223c2.0 \u00c5) and T to O transitions (RMSD \u223c1.8 \u00c5). This is due to the rearrangement of PN2 relative to PC1, rather than to changes in the internal structure of the individual \u03b1/\u03b2 domains, which appear to be quite inflexible across the cycle, in both repeats (Supplementary file 1). As described elsewhere (Murakami et al., 2006; Seeger et al., 2006; Sennhauser et al., 2007; Pos, 2009; Nakashima et al., 2013), the changes in PN2/PC1 reflect binding of the substrate deep within the hydrophobic core of the tandem, in the T state, and its subsequent release into the interior of the funnel domain, in the O state (Figure 1\u2014figure supplement 1; Video 1, Video 2, Video 3). Incidentally, the conformation of the funnel domain is largely unchanged throughout the cycle (RMSD < 0.5 \u00c5).\n\n![Video 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-media1.avi.jpg)\n\n**Video 1.:** L to T transition.\n\n![Video 2.](https://cdn.elifesciences.org/articles/03145/elife-03145-media2.avi.jpg)\n\n**Video 2.:** T to O transition.\n\n![Video 3.](https://cdn.elifesciences.org/articles/03145/elife-03145-media3.avi.jpg)\n\n**Video 3.:** O to L transition.\n\nGiven the modular nature of the porter domain, we reasoned that the TM domain might also consist of structural repeats, as is observed in other secondary transporters. To identify these, we quantified the degree of similarity of combinative structural superpositions of fragments of the transmembrane 12-helix bundle in the L, T and O states (Figure 2). This analysis indicates that the conformational cycle of the TM domain entails relative motions of two structural repeats within each protomer, which had not been previously recognized. Each of these repeats, which we refer to as R1 and R2, comprise five transmembrane \u03b1\u2212helices. The N-terminal repeat, R1, includes TM1 and TM3 to TM6, while the C-terminal repeat, R2, comprises TM7 and TM9 to TM12 (Figure 1). R1 and R2 are thus oriented in parallel, and are rotated relative to each other approximately 180\u00b0 around an axis perpendicular to the membrane plane. Interestingly, each repeat is flanked by a single transmembrane helix that seems to function as a coupling element with the periplasmic porter domain (Figure 1). The flanking helices are TM2 and TM8, respectively; TM2 is linked to the flexible PN2/PC1 repeat in the porter domain, while TM8 is connected to the more rigid PN1/PC2 unit (Figure 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig2-v1.jpg)\n\n**Figure 2.:** We considered all possible combinations of 6, 5 and 4 transmembrane helices, within either TM1-TM6 or TM7-TM12, and compared the structure of each set of helices in the L vs T states (closed circles), T vs O (open circles) and O vs L (closed squares), through pairwise root-mean-square difference (RMSD) calculations. When these RMSD values are used as a rank, it becomes clear that combinations that exclude TM2 or TM8 (red) feature systematically smaller differences across the LTO cycle than those that include TM2 or TM8 (black). All other exclusions show no clear correlation. For example, comparing TM1-TM6 (left panel) in L vs T, this increasing ranking is \u0394TM2, \u0394TM4, \u0394TM1, \u0394TM5, \u0394TM3, and \u0394TM6; in T vs O: \u0394TM2, \u0394TM5, \u0394TM4, \u0394TM3, \u0394TM1, and \u0394TM6; and in O vs L: \u0394TM2, \u0394TM5, \u0394TM1, \u0394TM4, \u0394TM3, and \u0394TM6. Furthermore, the data shows that combinations of five helices excluding TM2 and TM8 are not significantly more divergent across the LTO conformers than combinations of four helices. Thus, the asymmetric crystal structure of AcrB captures collective displacements of two 5-helix bundles within each protomer, formed by TM1/TM3-TM6 and TM7/TM9-TM12 (referred to as repeats R1 and R2), relative to flanking helices TM2 and TM8, respectively. Note that comparisons of combinations of seven or more helices result in larger RMSD values than those shown here, and are therefore omitted.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The off-diagonal elements are comparisons (in terms of RMSD, as in  Supplementary file 1) of the same repeat in different conformational states of the AcrB protomer. The diagonal elements are comparisons between R1 and R2 in the same state (all values in \u00c5). Both R1 and R2 consist of a five-helix bundle. R1 includes TM1 and TM3 to TM6, while R2 comprises TM7 and TM9 to TM12. The definition of each transmembrane segment is as follows: TM1, residues 10\u201328; TM2, 329\u2013358; TM3, 362\u2013386; TM4, 393\u2013423; TM5, 428\u2013457; TM6, 463\u2013496, TM7, 539\u2013557; TM8, 872\u2013892; TM9, 895\u2013919; TM10, 925\u2013955; TM11, 960\u2013989; TM12, 998\u20131031.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** In each case, the L, T and O states are compared pair-wise. For example, to compute the displacement of R2 between the L and T states, the structures of R1+R2 in these two states are overlaid by least-square fitting R1, and the RMSD of R2 is computed (all values in \u00c5). An analogous procedure is followed for TM2, relative to R1, and TM8, relative to R2, as well as for repeat PN1+PC2 in the porter domain relative to PN2+PC1. In all cases it is apparent that the computed displacements are significantly greater than the changes in the internal structure of these elements, quantified in  Supplementary file 1 and Figure 2\u2014figure supplement 1, indicating collective motions take place.\n\nAnalysis of R1, for example, shows that the structure of this five-helix bundle is largely preserved in the L, T and O conformations; the RMSD among these states ranges from 0.8 to 1.1 \u00c5 (Figure 2\u2014figure supplement 1). These differences are even smaller for R2, with RMSD values between 0.3 and 1.0 \u00c5 (Figure 2\u2014figure supplement 1). R1 and R2 are, however, always different from each other (RMSD \u223c3.5 \u00c5). Further inspection also shows that R1 and R2 move relative to each other throughout the conformational cycle of each protomer (Figure 2\u2014figure supplement 2). For example, if we superimpose R1 in the L and T conformations, the RMSD of the corresponding R2 repeats is 1.6 \u00c5; for the T to O transition the analogous value is 2.1 \u00c5, and for O to L, 3.1 \u00c5. These relative differences are substantially larger than those observed individually within R1 or R2, for all steps of the cycle. Therefore, it is clear that R2 and R1 undergo collective motions during the LTO cycle that are larger in magnitude than the changes in their internal structure.\n\nStructural overlays and interpolations of the L, T and O conformations, based on the topological decomposition just described, reveal the nature of the relative repeat motions within the TM domain during the transport cycle (Figure 3; Video 4, Video 5, Video 6). In the L to T transition, R1 and R2 undergo a rocking motion around an axis that is tilted relative to the membrane plane (Figure 3; Video 4). By contrast, in the transition between the T and O states, and between O and L, what can be observed is mostly a lateral shear motion of R1 and R2, relative to each other (Figure 3; Video 5, Video 6). This analysis also highlights the motions in the helices flanking the repeats, TM2 and TM8. In the L to T transition, TM2 moves downwards relative to R1 (toward the cytoplasm), returning to the up state in the O conformation (Figure 3; Video 4, Video 5, Video 6). By contrast, TM8 is similarly positioned in the L and T states, and largely unengaged from R2. However, during the T to O transition this \u03b1-helix becomes closely packed against R2, through hydrophobic interactions with TM5. In this transition TM8 also becomes elongated, reaching directly to the PN1/PC2 unit (Figure 3; Video 4, Video 5, Video 6).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig3-v1.jpg)\n\n**Figure 3.:** For clarity, the figure shows only the transmembrane \u03b1-helices at the interface between repeats R1 (blue) and R2 (red), alongside the two \u03b1-helices flanking these repeats, TM2 (cyan), TM8 (orange), and the helix that links the two repeats, I\u03b1 (gray). Each panel depicts two conformations in the LTO cycle, overlaid optimally on TM4-TM6; thus the figure highlights the motions of R2 relative to R1. Initial and final states (e.g., L vs T) are shown in light and bright colors, respectively. Note that the L vs T overlay is viewed from a different angle than T vs O and O vs L, for clarity. Interpolations between these conformational states using the complete TM domain are shown in Video 4, Video 5 and Video 6.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** I\u03b1 is an additional \u03b1-helix inserted between TM6 and TM7, which lies parallel to the membrane domain (residues 512 to 536). RMSD analysis (shown in \u00c5) of R2+I\u03b1 indicates that this helix moves alongside the R2 repeat. RMSD analysis of TM2+I also shows that the relative orientation of these two helices is also approximately constant in the L, T, and O states. Altogether, these data indicate that I\u03b1 functions as a connecting rod coupling the displacements of TM2 and R2.\n\n![Video 4.](https://cdn.elifesciences.org/articles/03145/elife-03145-media4.avi.jpg)\n\n**Video 4.:** L to T transition.\n\n![Video 5.](https://cdn.elifesciences.org/articles/03145/elife-03145-media5.avi.jpg)\n\n**Video 5.:** T to O transition.\n\n![Video 6.](https://cdn.elifesciences.org/articles/03145/elife-03145-media6.avi.jpg)\n\n**Video 6.:** O to L transition.\n\nInterestingly, the membrane domain features an additional helix, I\u03b1, which lies parallel to the membrane, on the cytoplasmic side. This helix is inserted between TM6 and TM7 in the protein sequence, and thus links R1 and R2 (Figure 1). Structurally, however, I\u03b1 is mostly adjacent to R2, and interacts with R1 (via hydrophobic interactions and hydrogen-bonds) primarily at the cytoplasmic end of TM2, at a right angle (Figure 3; Video 4, Video 5, Video 6). Our analysis shows that I\u03b1 is effectively part of R2, and that it moves rigidly along with this repeat in the three conformational transitions, most probably in response to the motion of TM2 (Figure 3\u2014figure supplement 1). This notion is consistent with the finding that MexB, a homolog of AcrB, is functional if the mexB gene is expressed in two halves, split at the N-terminal end of I\u03b1 (Eda et al., 2003). This construct lacks a direct link between I\u03b1 and TM6 in R1, but likely preserves the large interface between I\u03b1 and R2, as well as the interaction with TM2.\n\n### The membrane-domain repeats switch between an engaged and a disengaged state\n\nPrevious crystal structures of AcrB (Murakami et al., 2006; Seeger et al., 2006; Sennhauser et al., 2007; Eicher et al., 2012) have revealed an intriguing network of ionic and polar side-chains in the core of the TM domain, which seems to re-configure as the TM domain cycles between conformations. In particular D407 and D408 in TM4 and K940 in TM10 are critical for function (Guan and Nakae, 2001; Murakami and Yamaguchi, 2003; Takatsuka and Nikaido, 2006; Seeger et al., 2009). Another functionally important side-chain, R971 in TM11, is located about 10 \u00c5 away from K940 on TM10, towards the cytoplasm.\n\nInterestingly, all these side chains are found at the interface between R1 and R2, seemingly controlling the relative position of the repeats. The latest high-resolution (1.9 \u00c5) crystal structure of AcrB (PDB entry 4DX5, Eicher et al., 2012), whose TM domain had not been previously analyzed, reveals in detail how this side-chain network reorganizes throughout the conformational cycle (Figure 4). In both the L and T states, R1 and R2 appear to be strongly paired through multiple interactions. First, through K940, which projects away from R2 and is sandwiched between D407 and D408, from R1, forming two simultaneous ionic interactions. D407 is the acceptor of an additional hydrogen-bond between repeats, namely from T978 in TM11. And lastly, towards the cytoplasm, R971 is in close proximity to E414 and N415, from TM4, particularly in the T state (Figure 4). (D408 is also the acceptor of an additional hydrogen-bond, but within its own repeat, namely S481 from TM6.) In the O state, by contrast, all R1-R2 interactions break off, and are replaced by alternative ones within each repeat. D407 rotates to engage the backbone of G403, one helix-turn above along TM4; K940 retracts towards R1, and donates hydrogen-bonds to N941 (TM10) and T978; and R971 moves away from E414/N415, and interacts instead with the backbone carbonyl of L944 and the aromatic ring of F948, both in TM10. (D408 also switches interaction partners, to the backbone of L442 in TM5, i.e. also within repeat R1.) In sum, repeats R1 and R2 appear to exchange between an \u2018engaged\u2019 state in the L and T conformations, to a \u2018disengaged\u2019 state, in the O conformation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig4-v1.jpg)\n\n**Figure 4.:** The structure corresponds to the asymmetric crystal structure of AcrB at a resolution of 1.9 \u00c5 (PDB entry 4DX5). The top panels show a close-up of the proton-binding sites, D407 and D408, along with neighboring side-chains, including K940 in the foreground and R971 in the background. The lower panels are close-ups of R971 and interacting side-chains in its proximity. The highlighted side-chains are shown along with 2Fo-Fc electron density maps contoured at 1.0\u03c3. Note this proton-relay network is precisely at the interface between the two transmembrane repeats, R1 and R2 (blue and red).\n\n### Proton relay across the membrane domain\n\nTo examine how the local and global changes in the structure of the TM domain of AcrB are related to proton translocation, we carried out two distinct but complementary computational analyses. First, we conducted a series of Monte Carlo simulations of the protonation equilibrium of all aspartate, glutamate and histidine side-chains in the protein under a continuum-electrostatics framework, that is, via the Poisson equation (\u2018Materials and methods\u2019). In these calculations all lysine and arginine side-chains were assumed to be ionized, except for K940 and R971, which were explicitly analyzed. Figure 5 summarizes the results from these simulations, focusing on the TM domain. Most of the aspartate, glutamate and histidine side-chains were found to be deprotonated across the LTO cycle; many of these aspartate and glutamate are engaged in salt-bridges, particularly on the cytoplasmic side of the protein (Figure 5A,B). A handful of residues, however, change their most probable protonation state in the T to O transition. These include D407 and D408, in the core of the TM domain, which are ionized in the L and T states but become protonated in the O state (Figure 5C). Interestingly, E346 and D924, at the periplasmic end of TM2 and TM10, respectively, are protonated in the L and T states, but become deprotonated in O; conversely, the neighboring H338 (TM2) and D566 (in the region between TM7 and PC1 subdomain) are most likely deprotonated in L and T, and become protonated in the O state (Figure 5C). Lastly, the calculations indicate that both K940 and R971 remain protonated throughout the cycle.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig5-v1.jpg)\n\n**Figure 5.:** The three protomers in the asymmetric crystal structure of AcrB are shown side by side, in a cartoon representation (white), in the same orientation as in Figure 1. Ionizable residues are represented as van-der-Waals spheres, and colored according to their protonation probability, computed via Monte-Carlo Poisson\u2013Boltzmann calculations (\u2018Materials and methods\u2019). (A) Glu, Asp and His residues predicted to be in the deprotonated state in all conformations of the protomer. (B) K940 and R971 are predicted to be protonated in the L, T and O states; other lysine and arginine residues are assumed to be protonated in the calculation. (C) Glutamate, aspartate and histidine residues whose protonation state is predicted to be inter-dependent with the conformation of the protomer.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The plot shows net electrostatic interactions between K940, R971 and D407/D408, in each conformational state of AcrB; \u2018other\u2019 indicates the net interaction with all residues in the protein except for K940, R971, D407 and D408. D407 and D408 are deprotonated in states L (blue) and T (yellow), and protonated in state O (red). This analysis shows that in the transition from T to O, K940 and R971 lose favorable electrostatic interactions with D407 and D408, as a result of their becoming protonated; however, by re-orienting and retracting towards their own repeat, that is, R2 (see Figure 3), they gain much of the lost electrostatic energy, by increasing their favorable interactions with other residues in the protein, by minimizing the repulsion between each other, and by increasing their exposure to solvent. In turn, this reconfiguration results in a lateral displacement of the repeats relative to each other. Electrostatic interaction energies were extracted from a Monte-Carlo Poisson\u2013Boltzmann simulation of the protonation equilibrium of AcrB (\u2018Materials and methods\u2019); the plot shows average values over 500,000 steps of the Monte-Carlo simulation; error bars correspond to the standard-deviation in each case (not visible in all cases).\n\nAs is well known, electrostatic-energy calculations based on the Poisson equation often yield divergent results depending on the value of the protein dielectric constant that is assumed. Although the results just described are generally consistent across the range of most plausible values (Kukic et al., 2013), namely 2 to 6, we sought to confirm our conclusions with a second methodology. In particular we used a series of all-atom molecular dynamics simulations of AcrB protomers embedded in a phospholipid membrane (Figure 1\u2014figure supplement 2) to calculate the protonation free energy of individual sites, relative to side-chain analogs in bulk water (\u2018Materials and methods\u2019). Specifically, we computed the free energy of protonation of D407, D408 and K940, in the O state, and of E346 and D924, in the T conformation. The results, shown in Figure 6, reveal strong upward shifts in the pKa of D407 (in the O conformation), D408(O), E346(T) and D924(T), and a weak downward shift in K940(O), thus confirming that these side-chains are most likely protonated in those protomer states. As controls we also analyzed E693(T) and K603(O), which are located on the solvent-exposed surface of the periplasmic PC2 subdomain; as expected, the calculated pKa shifts for these side-chains are small or negligible (Figure 6). In sum, both all-atom molecular simulations and continuum-electrostatic calculations indicate that in the L and T states, two protons are bound to the TM domain of AcrB at the periplasmic side (i.e., D924 and E346), while D407 and D408, two-thirds of the way across the membrane, are deprotonated; upon transition to the O state, two protons bind to D407 and D408, while the proton-accepting sites on the periplasmic face become deprotonated.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig6-v1.jpg)\n\n**Figure 6.:** All values were computed via all-atom molecular simulations in a phospholipid membrane (\u2018Materials and methods\u2019). Computed values for side-chain analogs in solution, whose pKa is known experimentally, provide a means to translate the computed free-energy values into a pKa scale (dashed lines). (A) The calculations indicate upward shifts in the pKa of E346 and D924 in the T state, and of D407 and D408 in the O state, relative to acetate in water, whose magnitude indicate that in those conformational states these residues are protonated at physiological pH. By contrast, the pKa of E693 is hardly shifted, consistent with its location on a water-exposed, electrostatically neutral area of the protein surface. (B) The pKa of K940 in the O state is also shifted downwards relative to n-butylamine in solution, on account of its being largely unexposed, but does not become deprotonated owing to polar contacts with N941 and T978 (Figure 4).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The datasets analyzed comprise crystal structures with non-redundant amino-acid sequences, based on either a 70% or a 30% sequence-identity threshold (21,780 and 13,735 structures, respectively). For each lysine side-chain in each structure, we identify the number of polar and/or acidic side-chains with which the lysine side-chain interacts directly, that is, via a direct hydrogen-bond. This analysis shows that the interaction patterns observed for K940 in AcrB (highlighted in blue/red) are frequently observed in protein structures; interestingly, the frequency with which two concurrent Glu/Asp interactions are observed, as in the L and T states of AcrB (blue) is comparable (slightly smaller) to that with which two non-ionic interactions are observed, as in the O state of AcrB (red).\n\nThe proposed changes in the protonation state of D407 and D408 in the transitions from T to O (protonation) and O to L (deprotonation) are consistent with the \u2018disengagement\u2019 and \u2018reengagement\u2019, respectively, of the structural repeats R1 and R2, as the ionic interactions with K940 would be weakened by protonation of the aspartate side-chains. The finding that K940 remains ionized in the O state might be less intuitive. However, analysis of non-redundant high-resolution structures in the Protein Data Bank reveals thousands of instances in which a lysine side-chain is part of an electrostatic interaction network that does not include any negatively-charged contacts (Figure 6\u2014figure supplement 1). Moreover, in this O state K940 not only hydrogen-bonds with N941 with T978 (Figure 4), but also interacts with water, as we will show below. This polar micro-environment explains the small shift in the pKa calculated here. Consistent with this result, measured pKa values for lysine side-chains engineered in a slightly less polar (and also non-ionic) environment within the model protein SNase are down-shifted only by \u223c2 units (Damjanovi\u0107 et al., 2011).\n\nAs mentioned above, experimental evidence demonstrates that K940 and R971 are indispensable for the proton-driven mechanism of AcrB (Guan and Nakae, 2001; Murakami and Yamaguchi, 2003; Takatsuka and Nikaido, 2006; Seeger et al., 2009). Our results suggest that the primary role of these side-chains is not, however, to capture and donate protons; instead, they appear to function as a conformational electrostatic switch coupled to the protonation state of D407 and D408. In the L and T states both K940 and R971 have strong favorable interactions with ionized D407 and D408, which exceed their mutual repulsion (Figure 5\u2014figure supplement 1). Neutralization of D407 and D408, in the transition to the O state, alters this electrostatic balance. As a result, K940 and R971 reorient to reduce their electrostatic repulsion and to maximize alternative favorable interactions within the protein, particularly within repeat R2 (Figure 5, Figure 5\u2014figure supplement 1). We propose that the re-configuration of this reversible electrostatic switch, which is coupled to the protonation and deprotonation of both D407 and D408, is the trigger for the lateral displacements of repeat R2 relative to R1 observed in the T to O and O to L transitions (Figure 3; Video 5, Video 6).\n\n### Structures of AcrB variants are consistent with a two-proton conformational-switch mechanism\n\nTo further assess the proposed proton-relay mechanism and its influence on the conformation of the TM domain, we solved the atomic structures of four AcrB variants, namely K940A, R971A, D407N and D408N (Supplementary file 2), all of which abolish the drug-efflux activity of AcrB (Guan and Nakae, 2001; Murakami and Yamaguchi, 2003; Takatsuka and Nikaido, 2006; Seeger et al., 2009). Electron-density maps for these variants could be resolved at resolutions ranging from 2.0 to 2.3 \u00c5, which are sufficient to discern the precise configuration of side-chains and structural waters inside the TM domain.\n\nIn all cases, the crystal structures represent an asymmetric configuration of the AcrB trimer. As in the wildtype transporter, this asymmetry originates in the porter domain due to drug binding (Supplementary file 3A, Supplementary file 3B), compounded by the steric coupling between protomers in this region. This asymmetry in the porter domain is important for crystallization, as it facilitates the recognition of designed-ankyrin repeats proteins (DARPins) developed to improve wildtype crystals (Sennhauser et al., 2007). As in wildtype AcrB, the asymmetry of the porter domain propagates to the transmembrane region, where the protomers also adopt three distinct conformations.\n\nNone of the substitutions studied caused significant changes in the internal structure of the R1 and R2 repeats, compared to the wildtype L, T and O states (Supplementary file 3A). The relative orientation of these two repeats is also unchanged in the K940A and D408N mutants (Supplementary file 3C), as is the side-chain configuration of the proton-relay network, aside from the mutations (Figure 7). That is, these two substitutions appear to perturb the conformational cycle of the transporter by altering the energetic balance between the L, T and O states, rather than by precluding the protomers from adopting native-like conformations in each of these states. Indeed, electrostatic calculations analogous to those carried out for the wildtype protein show that in the K940A structure, D408 is constitutively neutralized throughout the cycle. D407, which is more proximal to R971, is deprotonated in the L and T states and protonated in the O state, as in the wildtype (Figure 7, Figure 7\u2014figure supplement 1). Similarly for the D408N variant, D407 is predicted to become protonated only in the O state, while the substituted N408 is evidently neutral throughout the cycle (K940 and R971 are protonated in all states in both mutants) (Figure 7). These results imply that the ionic interactions across the R1-R2 interface that stabilize the L and T states are weakened in the mutants. By contrast, the O state is probably less affected (K940A) or not at all (D408N), since the repeats become disengaged in this state. This change in the energetic balance of the conformational cycle (which for example would hinder the transition from O to L) would explain the drastic functional effect of these two mutations.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig7-v1.jpg)\n\n**Figure 7.:** The binding site is viewed and represented as in Figure 4, omitting the electron-density map. The most probable protonation states of D407 and D408, based on Poisson\u2013Boltzmann Monte-Carlo simulations (wildtype and mutants) as well as all-atom free-energy perturbation molecular dynamics simulations (wildtype), are indicated in each case with \u2018H+\u2019. K940 and R971 are protonated in all cases, according to these calculations. Hydrogen-bonds identified on the basis of the distance and orientation of potential donors and acceptors, are indicated with dashed lines.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Each of the protonation probability values shown is an average of the results of 10 independent Monte-Carlo/Poisson\u2013Boltzmann simulations of the coupled protonation equilibrium of all glutamate, aspartate and histidine side-chains, plus K940 and R971, in full-length AcrB trimers (see \u2018Materials and methods\u2019 for further details). Standard deviations are also shown.\n\nElectrostatic calculations for the R971A and D407N crystal structures indicate that, like K940A and D408N, these variants lack the ability to bind and release two protons (Figure 7\u2014figure supplement 1). In R971A, like in K940A, a first proton is already bound to the protomer in the L and T states (alternating between D407 and D408, respectively) and a second proton binds in the O state (Figure 7). In D407N, like in D408N, only one proton is loaded (on D408), and only in the O state (Figure 7). Thus, also in these two variants is the key ionic interaction network at the R1-R2 interface partially neutralized in the L and T states. The R971A and D407N substitutions, however, not only perturb the energetics of the conformational cycle and the transduction of the proton electrochemical gradient, but also seem to preclude the protomers from adopting all the native-like conformations, particularly the T state (Figure 7). The structure of R971A shows that K940 is engaged only with D408 in the L state (while D407 is protonated). In the T state, K940 switches towards D407 (while D408 is protonated), adopting a configuration that is arguably an intermediate between the native T and O states: first, in that K940 retracts away from the repeat interface, unhindered by the now absent repulsion with R971, while still paired with D407; and second, in that as a result D407 loses its hydrogen bond to T978 across the R1-R2 interface. Consistent with our hypothesis that the structural configuration of the proton-relay network is intimately coupled to the displacements of the 5-helix repeats, the arrangement of these repeats in the T protomer of the R971A crystal structure is an intermediate between the T and O states of the wildtype structure (Figure 8); in fact, this altered conformation is more similar to the latter (RMSD values of 2.4 vs 1.6 \u00c5, respectively\u2014Supplementary file 3C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig8-v1.jpg)\n\n**Figure 8.:** For clarity, only the three transmembrane helices at the interface between repeats are shown, namely TM4-TM6 (R1, blue cartoons) and TM10-TM12 (R2, red cartoons), respectively. The structural superimpositions shown are optimal overlays of TM4-TM6, and thus highlight the differences in the orientation of TM10-TM12 relative to TM4-TM6. This comparison shows that the T state in the crystal structures of the R971A and D407N mutants is an intermediate between the T and O conformations in wildtype AcrB. The conformation of the O state, however, is largely unaffected by these mutations.\n\nThe effect of the D407N substitution is subtler than that of R971A, but also underscores the relationship between the local configuration of the proton-relay network and the organization of the transmembrane repeats. The D407N structure shows that although the substituted asparagine can accept a hydrogen-bond from K940 in the L and T states, its orientation is geometrically inconsistent with the second hydrogen-bond with T978 seen in the wildtype (Figure 7). In the L state this appears to be compensated by an alternative hydrogen-bond donated by N941, but this interaction is not feasible in the T state. In addition, the asparagine substitution removes the attractive electrostatic interaction between D407 with R971. In sum, the interaction network at the R1-R2 interface is partially disengaged. Consequently, the T state in the D407N structure shows R1 and R2 partially displaced, in a conformation that is again intermediate between the wildtype T and O states (Figure 8; Supplementary file 3C).\n\nAs mentioned above, the crystallization of these variant structures was facilitated by DARPin ligands, which recognize the porter domain of AcrB in its asymmetric form (Sennhauser et al., 2007; Eicher et al., 2012). Because the porter and transmembrane domains are necessarily coupled, it is conceivable that the DARPins inhibit the structural impact of the mutations, that is, only the strongest perturbations (R971A and D407N) would translate into noticeable structural differences in our experiment. Thus, we cannot rule out that the lack of activity of these mutants reflects structural perturbations more significant than those observed here. Nonetheless, even the relatively modest changes revealed by the structures presented here support the conclusions of our analysis of wildtype AcrB. That is, that there is a causal relationship between the displacements of the repeats R1 and R2 within the TM domain and the configuration of the proton-dependent electrostatic network at the R1-R2 interface; that there is a conformational and electrostatic coupling between R971 and K940 and the two aspartate side-chains that serve as proton-binding sites; and lastly, that the transitions from T to O and O to L, which power the peristaltic pump mechanism of the porter domain, entail binding and release of two protons at D407 and D408.\n\n### Hydration of the membrane domain reveals alternating access to proton-relay site\n\nProton translocation across membrane proteins necessarily requires a pathway of water molecules to facilitate access from the surrounding solution, and to mediate proton hopping between protonatable side-chains. In the case of proton-driven secondary transporters, these pathways must also be dependent on the conformational state of the protein, that is, they must be consistent with an alternating-access mechanism, so as to preclude leakage and ensure strict coupling of substrate and proton transport. To examine whether the conformational cycle of AcrB indeed implies changes in proton accessibility, we carried out an all-atom molecular dynamics simulation of the complete trimer in a lipid membrane, and analyzed the formation and persistence of hydration channels across the TM domain. The results, summarized in Figure 9A, indicate that the LTO conformational cycle described above does indeed involve a mechanism of alternating access. More specifically, we observe that the L state permits the formation of two persistent water channels open to the cytoplasm, at the interface between repeats R1 and R2, and reaching into the proton-binding site; access from the periplasmic space is, however, closed (Figure 9A). In the T state, by contrast, two narrow water wires form on the periplasmic face of the TM domain, again reaching into the proton-binding site, and approximately along the interface between the two repeats R1 and R2 (Figure 9A). Interestingly, E346 and D924 flank the entrance of each of these water wires; as mentioned earlier, both these side-chains are likely to be protonated in the L and T states and deprotonated in the O state (Figure 4, Figure 5), which suggests that E346 and D924 facilitate proton uptake by providing transient binding sites en route to D407/D408 (Fischer and Kandt, 2011). On the cytoplasmic side, we also observed a narrow water wire, flanked by R971, which is thus unlikely to sustain proton transfer, as discussed below. Finally, the O state features two water channels into the proton-binding site that are highly similar to those seen in the L conformation, that is, open to the cytoplasm, while access from the periplasmic space is also occluded (Figure 9A).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig9-v1.jpg)\n\n**Figure 9.:** (A) Conformation-dependent water channels within the TM domain of AcrB, observed in all-atom simulations in a phospholipid membrane. Transmembrane helices are represented as cartoons and colored as in Figure 1; for clarity, TM7, TM9 and TM12 in repeat R2 are omitted. The locations of D407, D408, K940, R971, E346 and D924 are indicated with green spheres representing their C\u03b1 atoms. The water channels are represented by average density maps computed from the molecular dynamics trajectory, and depicted as an iso-density surface (gray). Based on this analysis, the proton-binding site is open to the cytoplasm in the L and O states, via two possible channels (solid black lines), whereas in the T state it is open to the periplasm, also via two water wires (solid black lines). A third narrow wire in the T state seems to connect the proton-binding site to the cytoplasm (dashed black lines), but the positively charged R971, which traverses this water wire, likely blocks H+ leakage. (B and C) Crystallographic water molecules (gray spheres) detected within the TM domain of AcrB, in each of the protomer states of the wildtype structure, as well as in the T protomer of the D407N and R971A variants.\n\nA striking feature of these putative access pathways for protons is that they are, for the most part, highly dynamic and permit individual water molecules to frequently exchange between the bulk solution and the close vicinity of the proton-binding site (Figure 10A). For the L state, for example, we observed more than 900 exchange events in a 250-ns period; about 70% occur via the cytoplasmic channel formed between helices TM5 (repeat R1) and TM10 (repeat R2), while the remainder proceeds via the channel formed between TM4 (R1) and TM11 (R2). Likewise for the O state, with over 600 exchange events in the same time-period, distributed over the two channels, roughly in a 2:1 ratio. In the T state, the periplasmic pathway flanked by TM2-TM4 and TM11 seems to be the most dynamic, although much less so than the cytoplasmic channels in L and O (we observed about 30 exchange events), while the periplasmic wire flanked by TM10 consists of a series of water molecules that are static on the simulation time-scale.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig10-v1.jpg)\n\n**Figure 10.:** (A) A random selection of single-water trajectories extracted from the molecular dynamics simulation are shown as blue lines, cut-off at 30 \u00c5 from the proton-binding site. The location of residues D407, D408, K940 and R971 is indicated by their C\u03b1 atoms, shown as green spheres. Transmembrane helices in each protomer/state are represented as cartoons (white); for clarity, TM7, TM9 and TM12 in repeat R2 are omitted. (B) Proposed role of R971 as a selectivity filter against cytoplasmic H+ leakage in the T state of AcrB. The plot quantifies the frequency of water exchanges between the proton-binding site within the TM domain of AcrB and the bulk solution at the cytoplasmic side of the membrane, as a function of the proximity of the individual molecular trajectories to R971. In the T state, almost 100% of the water trajectories approach R971 within 10 \u00c5, and therefore this water wire (dashed lines in Figure 9) is highly unlikely to sustain H+ conduction, for electrostatic reasons. In the L and O states, by contrast, 40% of the exchanging water molecules follow trajectories that do not approach R971 (solid lines in Figure 9).\n\nAs mentioned, in the T state we also observed a significant number of water molecules exchanging between the proton-binding site and the cytoplasm. However, the trajectories followed by these water molecules invariably enter or exit the TM domain in close proximity to R971 (within 10 \u00c5) (Figure 10B). This positively charged side-chain very likely imposes a very large energetic barrier for proton diffusion to and from the cytoplasm, despite the presence of water. Such an electrostatic barrier would be analogous, for example, to that observed in the selectivity filter of aquaporins, which is also lined by an arginine side-chain (Kosinska Eriksson et al., 2013). By contrast, almost half of the water-permeation events in the L and O states involve molecular trajectories that are distant from R971 at all times (Figure 10B). Likewise, no large electrostatic barriers for protons are apparent along the periplasmic pathways in the T state.\n\nThat the hydration of the TM domain is conformationally dependent is entirely consistent with the electron densities from ordered water molecules in the X-ray structures of wildtype and variant AcrB. As shown in Figure 9B, the structure of the T state in wildtype AcrB features the abovementioned continuous water wire flanked by TM10, connecting the periplasmic space and D407/D408, with D924 at its entrance. The second outward-open wire, with E346 at its entrance and running along the interface between TM2-TM4 and TM11, cannot be discerned in the wildtype structure, but interestingly, is partially resolved in the structures of D407N and R971A (Figure 9C). As discussed earlier, in these crystals the T protomer is captured in an intermediate conformation between wildtype T and O, in which the lateral displacement of repeat R2 is already underway (Figure 8). In the native membrane and at room temperature, the two repeats would be much more dynamic than what appears in the crystal lattice, and thus we envisage that both water wires co-exist, also in the wildtype protein, as we observe in the simulation. In any case, it is apparent that no water wires connect the central proton-binding site and the periplasmic space in the L and O states, in any of the structures. By contrast, a significant number of ordered water molecules are observed in the intracellular side of these protomers. According to our simulation, the cytoplasmic channels, and particularly that between TM5 and TM10, are highly dynamic, and thus electron densities in this region would be poorly defined. Nevertheless, ordered water can be clearly discerned in the proximity of the proton-binding site, particularly in the L state (Figure 9B).\n\nIn sum, our data indicate that throughout the conformational cycle of AcrB the proton-binding sites within the TM domain become alternately accessible to the periplasm or the cytoplasm. As mentioned, this is a necessary condition in order for the transporter to harness the proton-motive-force. Interestingly, two distinct types of relative motion of repeats R1 and R2 result in alternating access, namely a rocking motion during the L to T transition, with no protons bound, and a shear motion in the T to O transition, in the protonated form. This finding indicates that other transporters may also follow significantly different conformational pathways in the substrate-bound and apo segments of their functional cycle, contrary to what is often assumed. To our knowledge, however, AcrB is the only secondary-transporter for which two distinct structural transitions resulting in alternating access have been described to date.\n\n### The antiport mechanism of AcrB\u2014conformational coupling within and across protomers\n\nAs described above, AcrB consists of well-defined structural elements in both its periplasmic and membrane domains, whose relative arrangement changes to a significant degree throughout the conformational cycle of the transporter. In the periplasmic domain, these rearrangements reflect substrate loading from the periplasm, the re-shaping of the hydrophobic binding site, and its release into the TolC lumen. In the membrane domain, water pathways across the protein become reconfigured to facilitate access from either side of the membrane, and a network of ionic and H-bonding interactions is re-organized as a result of protonation and deprotonation events.\n\nTaken together, these observations reveal an unprecedented antiport strategy that involves the remote coupling of two alternating-access transport mechanisms, that is, one for drugs and another for protons, within each of the AcrB protomers, which we summarize in Figure 11. In the L to T transition, substrate binding in the deep binding pocket of the porter domain causes a structural change within the PN2/PC1 unit. This change translates into the downward displacement of TM2, which pushes on I\u03b1 and causes it to swing away, along with whole of the R2 repeat (Figure 3). In this transition, the interaction network formed by the proton-relay triad, D407, D408 and K940, remains engaged (Figure 4), with all three side-chains ionized (Figure 5, Figure 6), and seems to provide the hinge point of the swinging motion of R1 and R2 relative to each other (Figure 3). Importantly, this motion leads to alternating access of pathways for protons from either side of the membrane. Specifically, while in the L state the triad is accessible only from the cytoplasm, in the T state protons can only enter the TM domain from the periplasm (Figure 9, Figure 10). In both cases, proton transfer is highly likely to be mediated by water channels formed at the interface between repeats, which open or close as the repeats themselves rearrange relative to each other.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig11-v1.jpg)\n\n**Figure 11.:** (A) The scheme shows the conformational cycle of one of the protomers; the porter domain is viewed from the outer membrane, and the TM domain is viewed along the membrane plane. The structural repeats in the TM and porter domains, R1 and R2, and PC1/PN2 and PN1/PC2, respectively, are colored as in Figure 1. Likewise for the TM2 and TM8, which flank R1 and R2 and couple them to the repeats in the porter domain. The conformational state (L/T/O) of each protomer is indicated alongside the proposed location of the substrate (D) and the protons (H+) in each state. Residues in the proton relay network formed by K940, R971, D407 and D408, which controls the relative orientation of R1 and R2, are indicated with \u2018+\u2019 and \u2018\u2212\u2019 symbols. The series of states proposed for the TM domain is based on the analysis of protonation states and water accessibility of wildtype AcrB and its variants, reported above. The model postulates that TM2 and TM8 mediate the strict coupling between these two conformational cycles. (B) The scheme shows the conformational cycle of the porter-domain trimer, viewed from the outer-membrane. The specific series of states proposed for the porter domain derives from analysis of potential steric clashes at the protomer\u2013protomer interface in all possible combinations of L, T and O conformations (Figure 11\u2014figure supplement 1). Note that the frequency of protomers in the O state is minimized, relative to other possible cycles, while that of protomers in the L and T state is maximized; we propose this kinetically advantageous, in that it would result in minimum back-flow of substrates from the exit pore, and maximal capture from the periplasmic space.\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03145/elife-03145-fig11-figsupp1-v1.jpg)\n\n**Figure 11\u2014figure supplement 1.:** (A) Steric clashes in hypothetical models of the porter domain of AcrB, in all possible non-symmetric permutations of the L, T and O conformations. The steric clash in a given trimer configuration is defined as the volume of the overlapping atoms from different protomers at the three interfaces. The trimer models were generated via rigid-body rotations of the PC1/PN2 and PN1/PC2 sub-domains around the trimer axis, and optimized with a side-chain prediction algorithm (\u2018Materials and methods\u2019). The combinations shown in green are the most feasible from a steric standpoint; these are also sufficient to draw a complete transport cycle that, arguably, would be also ideal from a kinetic standpoint, as it would minimize the chances of drug re-binding after extrusion into the TolC lumen (see manuscript). The conformations shown in red are likely to be energetically prohibited, because LO and OO interfaces would require extensive deformations in the protomers structure. (B) For alternative hypothetical transport cycles of the AcrB trimer, ratio of the number of instances in which a protomer adopts either the L or T state, relative to the O state. Only non-symmetric trimer states are considered. The conformational cycle of an uncoupled trimer features the largest number of possible trimer configurations, but also the largest proportion of O states. In the coupled trimer, many of those trimer configurations are excluded because speficic protomer\u2013protomer interfaces are sterically incompatible, for example, OO and LO (A). The plot shows that these specific exclusions imply an optimization of the LT/O ratio in the conformational cycle, which is likely to translate into a more kinetically efficient efflux system.\n\nIn the T to O transition, D407, D408 and K940 break away from each other (Figure 4), following binding of one proton to each of the aspartate side-chains (Figure 5, Figure 6). K940 remains in the ionized, protonated state, and retracts towards TM10/TM11 to compensate for the loss of interaction partners. R971 (on TM11) also reconfigures in response to these events, rotating towards TM10. As a result, the repeats R1 and R2 become disengaged, and R2 (along with I\u03b1) moves laterally relative to R1 (Figure 3). This displacement allows TM2 to return to the up conformation, and importantly, enables TM8 to come into close proximity to R2. The displacement of TM8 causes the PN1/PC2 repeat in the porter domain to move, as a rigid body, against PN2/PC1, thus closing the binding cleft to the periplasmic space, and triggers instead the opening of an exit pathway towards the funnel domain. The ability of TM8 to steer the motion of PN1/PC2 in the T to O step (Video 5) seems to be facilitated by the elongation of the helical fold of TM8, on the periplasmic side, upon transition from L to T (Video 4); this naturally facilitates its coupling to the motion of PN1/PC2. Crucially, in the O state the proton-relay site is again accessible to the cytoplasm, and not to the periplasm (Figure 9, Figure 10). Thus, deprotonation will imply a release of the bound protons down the electrochemical gradient. Proton release into the cell interior also causes the R1 and R2 repeats to re-engage (Figure 4), and thus the dissociation of TM8 from R2 when reforming the L state (Figure 3). This enables the re-opening of the drug-binding cleft between PC1 and PC2, exposing the access binding pocket (Nakashima et al., 2011; Eicher et al., 2012) to the periplasm, ready to sequester a new drug molecule.\n\nIt is worth noting that the directionality of this mechanism is entirely encoded structurally, for each of the protomers. Proton uptake leads to substrate export (instead of symport) for two reasons: first, both proton- and substrate-binding sites are concurrently open to the periplasm in the T state, while in the O state they become open to the cytoplasm and the TolC lumen, respectively; second, both porter and membrane domains are able to re-open to the periplasm after releasing their cargo, that is, in their apo state (Figure 11A, drug access pocket and proton loading). Thus, the free-energy gain associated with downhill proton permeation compensates the cost of uphill efflux of cytotoxic compounds. This energy-transduction process is reminiscent of the binding-change mechanism of the F1Fo-ATP synthase, which also utilizes the energy harnessed from the transmembrane electrochemical proton gradient to release synthesized ATP molecules from their binding sites in the \u03b1/\u03b2 subunits (Boyer, 1997; Pos, 2009).\n\nAlthough the mechanism and energetics of transport in AcrB can be fully rationalized in terms of the individual protomers, the extensive trimer interface within the porter domain suggests that the protomers are conformationally coupled. Indeed, transport of certain cephalosporins and penicillins has been shown to be highly cooperative (Nagano and Nikaido, 2009; Lim and Nikaido, 2010). How the cross-talk among protomers might benefit the antiport mechanism is, however, not immediately evident. From an architectural standpoint, trimerization is necessary for AcrB to form a pore leading into the TolC channel, but why would the protomers not cycle independently from each other? A disadvantage of independent protomer cycling would be that a drug released into the exit pore by a protomer in the O state would often be exposed to a second protomer also in the O state, which would enhance the probability of re-binding. Such event would not likely result in drug re-uptake (which would require uphill proton transport) but efflux would be surely hindered from a kinetic standpoint, because the drug concentration within TolC is probably very large. Ideally, therefore, the number of trimer configurations in which one or more protomer are in the O state ought to be somehow minimized. Following the same kinetic argument, it would be advantageous if AcrB maximizes the number of trimer configurations featuring the L and T states in one or more protomers, so as to accelerate capture (or re-capture) of the substrate from the periplasmic space or the inner membrane.\n\nRemarkably, analysis of computer-generated models of the porter domain in all non-symmetric permutations of the L, T and O states (\u2018Materials and methods\u2019) indicates that this kind of kinetic optimization is what emerges from the conformational coupling among protomers. A quantification of the steric clashes between protomers in these hypothetical models indicates that OO and LO interfaces (counter-clockwise, viewed from TolC) are highly incompatible, and that OT is also suboptimal. Thus, most of the combinations that include one or more O states in the trimer would be energetically unfeasible (Figure 11\u2014figure supplement 1). Figure 11 depicts the conformational cycle of the porter domain that involves only the most plausible combinations, alongside the cycle of the TM domain described earlier. Throughout this cycle, the proportion of protomers in either the L or T state relative to those in the O state is fourfold greater than in a hypothetical uncoupled trimer (Figure 11\u2014figure supplement 1). That is, the AcrB protomers are substantially more efficient efflux pumps if they are coupled; not because the protomers energize each other, but because collectively they are able to restrict their conformational pathways so as to achieve the most productive mechanism.\n\n### Conclusions\n\nNew high-resolution crystal structures of wildtype and AcrB variants, systematically analyzed through diverse computational methods, have enabled us to formulate a novel, clear-cut theory of the mechanism of proton-coupled drug-efflux in this very complex transport system. On the basis of this theory, which is consistent with existing biochemical, structural and functional data, additional and more precise experiments and computations may now be designed to further establish the proposed molecular mechanism of transport and energy transduction. It will also be of interest to extrapolate these findings to other homologues in the RND superfamily. Such investigations could potentially aid the development of novel pharmacological approaches, such as conformational inhibitors, against Gram-negative multidrug resistant pathogens.\n\n## Materials and methods\n\n### Bacterial strains, plasmids and growth conditions\n\nE. coli C43 (DE3) (Miroux and Walker, 1996) harboring mutant derivatives of pET24acrBHis (Pos and Diederichs, 2002; Seeger et al., 2009) were used for protein overexpression. LB medium and LB agar (Sambrook et al., 1989) were used for routine bacterial growth at 37\u00b0C. Terrific broth (Tartoff and Hobbs, 1987) was used for protein overexpression. Kanamycin (Applichem, Germany) was applied at 50 \u03bcg ml\u22121 (Kan50).\n\n### Crystallization of variant AcrB in complex with DARPins\n\nOverexpression and membrane preparation of wildtype and mutant AcrB was carried out as described previously (Pos and Diederichs, 2002; Seeger et al., 2006). DARPin clone 1108_19 (Sennhauser et al., 2007) was overexpressed and purified according to Binz et al. (2003). To crystallize the AcrB/DARPin complex, the method described by Sennhauser et al. (2007)with n-dodecyl-\u03b2-D-maltoside as detergent (Glycon Biochemicals, Germany) was applied. For all AcrB variants except R971A, minocycline was added prior to crystallization at a concentration of 2 mM (Sigma-Aldrich, Germany). All crystals were grown by the hanging drop vapor diffusion method at 0.05 M ADA buffer pH 6.5, 7\u20139% polyethylene glycol (PEG) 4000, 6\u201310% glycerol, 0.2 M (NH4)SO4. Cryprotection was achieved by transfer of the crystals to the same buffer containing 30% glycerol and flash freezing into liquid N2.\n\n### X-ray diffraction dataset analysis and refinement procedure\n\nDatasets of P212121 crystals were collected at beamline X06SA (wavelength 0.8\u20131.0 \u00c5) of the Swiss Light Source (Paul Scherrer Institut, Villigen, Switzerland). Data reduction was done with the XDS package (Kabsch, 2010). The structures were solved by molecular replacement using MOLREP (Vagin and Teplyakov, 2010) or PHASER (McCoy et al., 2007). As search model pdb entry 4DX5 (Eicher et al., 2012) was used and model rebuilding was employed using COOT (Emsley et al., 2010). Refinement was carried out with PHENIX (Adams et al., 2010) and REFMAC5 (Murshudov et al., 2011) and additional water molecules appended. Model rebuilding and water molecule analysis was done employing COOT (Emsley et al., 2010). Figures were created using PyMOL (The PyMOL Molecular Graphics System, Version 1.5.0.3 Schr\u00f6dinger LLC, Oregon, USA).\n\n### Calculation of protonation probabilities\n\nProtonation probabilities were calculated using two independent methodologies. Wildtype and mutagenized AcrB structures were analyzed via Monte-Carlo/Poisson-equation simulations of the global protonation equilibrium in the complete trimer. In addition, selected ionizable side-chains in the wildtype transporter were analyzed via all-atom molecular dynamics simulations of individual protomers, using the free-energy perturbation (FEP) method. To assess the most likely protonation state of the ionizable side-chains in AcrB, we carried out a series of Metropolis Monte-Carlo simulations of the global protonation equilibrium of the protein at fixed pH. In a first set of calculations, we analyzed in each protomer separately, including all ionizable side-chains in the calculation. All lysine and arginine side-chains were consistently predicted to be protonated at the pH and dielectric constant values used in these calculations (see below). Thus, in subsequent simulations, in which the complete trimer was considered, all lysine and arginine side-chains were fixed in their ionized state, except for K940 and R971, which were explicitly re-analyzed along with all aspartate, histidine and glutamate residues (306 side-chains in total).\n\nEach Monte Carlo simulation was initiated with a random configuration of protonation states, and consists of five cycles of temperature annealing and a subsequent equilibration. In the annealing phases, the temperature was raised to 400 K and then gradually reduced to 300 K over 100,000 simulation steps. The equilibration phases, in which the temperature was kept at 300 K, lasted 500,000 steps. The protonation probability of each group was determined by averaging the ionisation states sampled during the equilibration phase of the final cycle of the simulation. This procedure was repeated 10 times with independent starting configurations, resulting in a global average; the typical statistical error was <2%.\n\nTo evaluate the energy changes associated with the Monte Carlo moves we used a continuum electrostatic model, that is, the crystal structure of the AcrB trimer is surrounded by a high-dielectric medium representing water, except for a low-dielectric rectangular slab surrounding the transmembrane domain, which mimics the lipid membrane. Specifically, we used the linearized Poisson-Boltzmann equation solver implemented in CHARMM c34a2 (Brooks et al., 2009) to set up the continuum model and to compute all the necessary electrostatic energy contributions. In all simulations the dielectric constant of the solvent was 80, and that of the membrane was 2. The results described in the manuscript and represented in Figure 5 and Figure 6 correspond to a protein dielectric constant of 4; alternative values ranging from 2 to 6 were also explored, which resulted in analogous conclusions (not shown). The atomic charges employed are those in the CHARMM27 force field (MacKerell et al., 1998). The atomic radii are those previously optimized for continuum electrostatic calculations based on the CHARMM27 force field (Nina et al., 1997). Non-standard radii were adapted according to chemical similarity, for example, the radius of the N\u03b6 atom in the neutral lysine was considered to be equal to that of the side-chain nitrogen atom of asparagine/glutamine.\n\nThe reference aqueous-phase pKa values were: aspartate, 4.0; glutamate, 4.4, histidine, 6.3; lysine, 10.4; and arginine, 12.0. Residues on the periplasmic side of the protein were assumed to exchange protons with a solution at pHout = 5.5, while those on the cytoplasmic side exchanged with a solution at pHin = 7.5; interpolated pH values in this range were used for residues across the membrane. Calculations with an alternative value of pHout = pHin = 7.5 led to analogous conclusions (not shown).\n\n### Molecular dynamics simulations\n\nAll molecular dynamics simulations were carried out at 298 K and 1 atm. Three independent all-atom systems were studied, namely the complete asymmetric AcrB trimer and truncated constructs of the T and O protomers comprising the transmembrane and porter domains only (Figure 1\u2014figure supplement 2). In all cases the protein structures were embedded in a hydrated POPC bilayer using GRIFFIN (Staritzbichler et al., 2011). All simulations were initiated with the high-resolution (1.9 \u00c5) crystal structure of wildtype AcrB (PDB entry 4DX5). The simulation system for the complete AcrB trimer includes \u223c369,000 atoms, enclosed in a periodic orthorhombic box of dimensions \u223c150 \u00d7 150 \u00d7 160 \u00c5. This system was simulated for 250 ns (after equilibration) to assess the formation and dynamics of water channels within the transmembrane domain. The protomer systems include \u223c101,000 atoms in a periodic orthorhombic box of dimensions \u223c90 \u00d7 90 \u00d7 120 \u00c5. These systems were used to evaluate the most likely protonation state of selected side-chains using the FEP method. Each of these calculations entailed a total of \u223c80 ns of simulation (after equilibration). Three independent all-atom simulation systems were studied, namely the complete asymmetric AcrB trimer (residues 1 to 1044 in each protomer) (Figure 1\u2014figure supplement 2); a truncated constructs of the T protomer, comprising the transmembrane and porter domains only (residues 1 to 182, 275 to 723 and 813 to 1044) (Figure 1\u2014figure supplement 2); and an analogous truncated construct of the O protomer. In all cases the protein structures were embedded in a hydrated phospholipid (POPC) bilayer using the GRIFFIN method (Staritzbichler et al., 2011), adding Na+ counter ions when necessary to neutralize the total charge of the system.\n\nThis system was employed to assess the formation and dynamics of water channels within the transmembrane domain. A minocycline molecule was bound to the porter domain in the T protomer. D407 and D408 were deprotonated in the L and T protomers, and protonated in the O protomer; K940 and R971 were protonated in all protomers. The simulation was initiated with the high-resolution (1.9 \u00c5) crystal structure of wildtype AcrB (PDB entry 4DX5), preserving crystallographic water molecules. Additional water molecules within the protein structure were placed with DOWSER (http://danger.med.unc.edu/hermans/dowser/dowser.htm). To optimize the protein-solvent and protein-lipid interfaces in the model, and to thermalize the system, a series of short simulations (10 ns) were initially carried out with gradually weaker positional restraints applied to the protein and the crystallographic and DOWSER-added water molecules (excluding hydrogen atoms). To enable the protein to tumble, the equilibration phase was extended (5 ns) after replacing the positional restraints with collective conformational restraints (RMSD), applied first to the whole protein, and subsequently to each of three transmembrane domains separately. In the last state of the equilibration (10 ns), only the configuration of the proton-relay network was preserved via inter-residue distance restraints (flat-bottom harmonic potential). Finally, a fully unrestrained simulation was carried out for 250 ns.\n\nThe truncated-protomer systems were used to re-evaluate the most likely protonation state of selected side-chains using the free-energy perturbation (FEP) method; the substantial computational cost of this methodology is what motivated the truncation of the protein. The preparation and equilibration of these reduced simulation systems was analogous to the procedure followed for the trimer. In the final production phase (90 ns), however, only the transmembrane domain was fully unrestrained. The conformation of the porter domain was preserved using a harmonic restraint on its RMSD relative to the crystal structure, to preclude any distortions resulting from the artefactual truncation of the funnel domain. Importantly, the force constant of this harmonic restraint was selected so that the structural fluctuations of the porter domain in the truncated-protomer system are comparable to those observed in the unrestrained simulations of the complete trimer (not shown). Thus, the dynamics of the transmembrane domain during the free-energy calculations is unlikely to be significantly affected by the truncation. For both T and O protomers, snapshots after 90 ns of simulation were extracted and used to initiate the FEP calculations. Here, the protonation state of a given side-chain is exchanged alchemically, using a step-wise protocol controlled by a parameter \u03bb that reflects the weight of either protonation state in the potential energy function of the system. All FEP calculations were carried out in the forward and backward directions, with 38 intermediate \u03bb steps (33 for D408 in the O state). The simulation time per \u03bb step was 1 ns; the initial 100 ps of each simulation were considered as equilibration, and so free-energy increments were obtained from the final 900 ps.\n\nAll molecular dynamics simulations were carried out with NAMD 2.7 (Phillips et al., 2005), using an integration time-step of 2 fs, periodic boundary conditions, and a Langevin thermostat set to 298 K. The pressure along the direction perpendicular to the membrane was maintained at 1 atm using a Nose-Hoover Langevin piston, while keeping the surface area of the membrane constant (\u223c69 \u00c52 per lipid). Electrostatic interactions were calculated using the Particle-Mesh-Ewald algorithm, with a real-space cut-off of 12 \u00c5. A shifted Lennard-Jones potential, also cut-off at 12 \u00c5, was used to compute van-der-Waals interactions. The CHARMM27/CMAP force field for proteins and lipids (MacKerell et al., 1998, 2004) was used in all calculations. Force field parameters for minocycline were taken from Aleksandrov and Simonson (2009). Water density maps were calculated with VMD (Humphrey et al., 1996).\n\n### Statistical analysis of lysine interactions in the PDB\n\nThe frequency of hydrogen-bonded interaction networks involving lysine side-chains and other polar and/or acidic residues was quantified using a subset of entries in the Protein Data Bank that consists of all protein X-ray structures of resolution 3.0 \u00c5 or better, excluding redundant entries with sequence identity greater than either 30% or 70%. A distance threshold of 3.0 \u00c5 was used to identify hydrogen-bonds donated by lysine N\u03b6 atoms to potential acceptor oxygen atoms in either Asp (O\u03b4), Asn (O\u03b4), Glu (O\u03b5), Gln (O\u03b5), Ser (O\u03b3) or Thr (O\u03b3) side-chains.\n\n### Steric exclusions in the conformational cycle of the porter domain\n\nAlternative structures of the porter domain were modeled in all possible permutations of the L, T and O conformations, via rigid-body rotations of the PC1/PN2 and PN1/PC2 sub-domains around the trimer axis. All side-chains in all models (including the crystallographic LTO state) were then re-built using SCWRL4 (Krivov et al., 2009). The solvent-excluded surface (probe radius of 1.4 \u00c5) of each protomer in each model was then calculated with MSMS (Sanner et al., 1996), and mapped onto a fine cubic grid. The overlap volume at each of the three promoter interfaces was computed by counting the number of grid-points concurrently inside two opposing surfaces. The models were ranked according to the total value of the overlapping volume.\n",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "ff840683-c354-4104-8fc9-eb13e25227c6",
+      "submission_id": "e8c69bb7-6df4-4457-b335-0269ba320124",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Levitt, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03145.032](https://doi.org/10.7554/eLife.03145.032)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCoupling of remote alternating-access transport mechanisms for protons and substrates in the multidrug efflux pump AcrB\u201d for consideration at eLife. Your article has been favorably evaluated by Michael Marletta (Senior editor), a Reviewing editor, and 2 reviewers, both of whom (Ben Luisi and Shimon Schuldiner) have agreed to reveal their identity.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nBoth reviewers are in agreement that your work should be accepted pending minor changes.\n\nReviewer #1 minor comments:\n\n1) The movies are wonderful, but it would be easier to follow them if they were annotated with some labels.\n\n2) In the Introduction the authors refer to the membrane distal portion of the periplasmic domain as the 'TolC-dockign domain'. Is this naming convention too suggestive in light of the report of the structure of the pump assembly (see Du et al (2014) Nature)?\n\n3) Figure 4 is a new interpretation of old data. The density looks a little poor in the L state: are the side chains disordered?\n\n4) Abstract, change to read \u201c...one of the most...\u201d\n\nReviewer #2 minor comments:\n\n1) What do the authors mean by saying that the ...TM domain had not previously described\u2026?\n\n2) Figure 5: there is an isolated residue in the cytoplasmic side that changes its protonation probability during the cycle. This should be labeled.\n\n3) Figure 10 legend. They refer to figure dashed lines and solid lines in Figure 8, should be Figure 9.\n\n4) Regarding the suggested role of R971 in blocking proton leakage: is there any indication that R971A expression is toxic to the cell?\n\n5) Are the mutants D407N and D408N fully inactive? Could it be that they are moving only one proton at a time and they can then generate smaller gradients? Is it possible to look at AcrB-dependent passive loading of ethidium in whole cells? Is the assay that follows hydrolysis of cephalosporins sensitive enough for this purpose?\n\n6) The model presented here has some very clear predictions that could be challenged experimentally or supported by existing data. Is there any evidence that supports a stoichiometry of 2H+/substrate? As far as I know AcrB transports positively and negatively charged substrates as well as neutral ones. The driving force for them with this stoichiometry would be very different at different pHs. I am aware of the problem of making proteoliposomes that transport substrate but they may be able to make PLs and follow substrate-induced proton transport.\n",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eb7ce33e-f20a-4b9c-80d6-ff5bb9a0fb12",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C1",
+      "claim": "The AcrA-AcrB-TolC complex is a secondary active antiport system in Escherichia coli, powered by the electrochemical proton gradient across the inner membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The AcrA-AcrB-TolC complex is a secondary active antiport system in Escherichia coli, powered by the electrochemical proton gradient across the inner membrane of this Gram-negative bacterium (Okusu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Okusu et al., 1996, which provides external evidence for this statement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "3b06cf9a-70a0-474b-8acd-03d556185da4",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C2",
+      "claim": "The AcrAB-TolC system confers multidrug resistance to important pathogenic bacteria involved in human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The AcrAB-TolC system and its homologues are also of considerable biomedical interest, as they confer multidrug resistance to important pathogenic bacteria involved in human disease (Nikaido and Pag\u00e8s, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nikaido and Pag\u00e8s, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "1fd4be0d-e7e8-4032-8a05-ea9ca3a04491",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C3",
+      "claim": "AcrB belongs to the resistance-nodulation-cell-division (RND) family.",
+      "claim_type": "EXPLICIT",
+      "source": "This membrane protein belongs to the resistance-nodulation-cell-division (RND) family (Tseng et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tseng et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "6955aa74-5a2d-4b8e-8867-9c1e46bff51b",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C4",
+      "claim": "NPC1 and Patched play key roles in the regulation of cholesterol metabolism and in the Hedgehog signaling pathway of embryonic cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, the RND transporters NPC1 and Patched play key roles in the regulation of cholesterol metabolism and in the Hedgehog signaling pathway of embryonic cells, respectively (Taipale et al., 2002; Scott and Ioannou, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Taipale et al., 2002 and Scott and Ioannou, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "cd82cfef-961e-4776-91e2-7c82d4b7e8e3",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C5",
+      "claim": "The first known structure of AcrB revealed a homotrimeric assembly in which all protomers adopt the same conformation at 3.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The first known structure of AcrB, solved by X-ray crystallography at a resolution of 3.5 \u00c5, revealed a homotrimeric assembly in which all protomers adopt the same conformation (Murakami et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Murakami et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "9fda9743-503f-48da-a1ed-5d91acaa3dd3",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C6",
+      "claim": "The transmembrane domain of AcrB consists of 12 \u03b1-helices (TM1\u2013TM12).",
+      "claim_type": "EXPLICIT",
+      "source": "In each protomer, the transmembrane (TM) domain consists of 12 \u03b1-helices (TM1\u2013TM12), mostly interconnected by short unstructured loops as is common.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the structure of AcrB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "ab2b97ad-c7e0-4c44-bd6f-0781d5147352",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C7",
+      "claim": "AcrB features two large periplasmic insertions, between TM1 and TM2, and between TM7 and TM8, which account for approximately 60% of the 1049 amino acids in each protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to other secondary transporters, however, AcrB also features two large periplasmic insertions, between TM1 and TM2, and between TM7 and TM8, which account for approximately 60% of the 1049 amino acids in each protomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the structure of AcrB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "0268c189-5f89-4a0c-87f5-9261fe114e63",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C8",
+      "claim": "The periplasmic insertions project 70 \u00c5 away from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These insertions are highly structured domains that project 70 \u00c5 away from the membrane, and form extensive interfaces among protomers (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and references Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "cdcdedf8-acb2-412c-b239-c46148d88091",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C9",
+      "claim": "TolC is 140 \u00c5 in length.",
+      "claim_type": "EXPLICIT",
+      "source": "The more distal region of the periplasmic domain features a central funnel-shaped cavity that channels the substrate towards TolC, the outer-membrane channel component (140 \u00c5 in length) of this transport system (Koronakis et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text with a citation to Koronakis et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "201bb7cd-dd0c-4901-af0a-41b8cde0d076",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C10",
+      "claim": "Upon substrate loading, AcrB becomes asymmetric, with each protomer in the trimer adopting one of three distinct conformational states designated as 'loose' (L), 'tight' (T) and 'open' (O).",
+      "claim_type": "EXPLICIT",
+      "source": "These structures, however, also revealed that upon substrate loading AcrB becomes asymmetric, that is, each protomer in the trimer adopts one of three distinct conformational states, designated as 'loose' (L), 'tight' (T) and 'open' (O), or alternatively, as 'access', 'binding' and 'extrusion', (Murakami et al., 2006; Seeger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Murakami et al., 2006 and Seeger et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "bc3692f8-548a-4ba4-9cfb-c190c3b54a7a",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C11",
+      "claim": "Drug recognition and efflux are mediated by a sub-domain of the periplasmic region, referred to as the porter domain, whose mechanism is akin to that of a peristaltic pump.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these structures as well as other findings (Seeger et al., 2008; Takatsuka and Nikaido, 2009), it has also become generally accepted that drug recognition and efflux are mediated by a sub-domain of the periplasmic region, referred to as the porter domain (Figure 1, Figure 1\u2014figure supplement 1), whose mechanism is akin to that of a peristaltic pump (Seeger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Seeger et al., 2008, Takatsuka and Nikaido, 2009, and Seeger et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "1d40c807-39e7-49f4-89e0-323f0f3ba5a2",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C12",
+      "claim": "Recognition of high molecular-mass drugs occurs in the L state, via an access pocket in the porter domain that is open to the periplasmic space.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, recognition of high molecular-mass drugs occurs in the L state, via an access pocket in the porter domain that is open to the periplasmic space (Nakashima et al., 2011; Eicher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nakashima et al., 2011 and Eicher et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "d81ba3a1-882e-4ede-9c2a-c580fc3ab643",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C13",
+      "claim": "Low molecular-mass drugs can bind directly to the deep binding pocket in the T protomer without binding to the access pocket first.",
+      "claim_type": "EXPLICIT",
+      "source": "When the L protomer transitions to the T state, drugs translocate to a binding pocket deeper in the protein; low molecular-mass drugs, however, can apparently bind directly to the deep binding pocket in the T protomer without binding to the access pocket first (Nakashima et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nakashima et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "9b8f4cee-75b9-44ca-bf47-d4e45ea8ef1c",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C14",
+      "claim": "Drug extrusion occurs in the transition from T to O.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug extrusion occurs next, in the transition from T to O, which re-shapes and opens the binding pocket to a central cavity in the funnel domain, which leads to the lumen of the TolC channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "df9abfd5-38c2-4788-8d1e-e55552d1879e",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C15",
+      "claim": "The O to L transition resets the conformational cycle by re-exposing the binding site to the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the O to L transition resets the conformational cycle by re-exposing the binding site to the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "d9dca44a-e729-4efc-af35-2717bded4c0a",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C16",
+      "claim": "Recent measurements of AcrB transport kinetics are consistent with a bi-site activation model.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent measurements of AcrB transport kinetics (Nagano and Nikaido, 2009; Lim and Nikaido, 2010) are consistent with a bi-site activation model (Pos, 2009), analogous to the binding-change mechanism of the ATP synthase (Boyer, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nagano and Nikaido, 2009, Lim and Nikaido, 2010, Pos, 2009, and Boyer, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "a05fb70d-d8c0-4127-b2fb-a85cf8102504",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C17",
+      "claim": "The TM domain consists of two 5-helix parallel repeats, referred to as R1 and R2, and two flanking helices, TM2 and TM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that the TM domain consists of two 5-helix parallel repeats, referred to as R1 and R2, and two flanking helices, TM2 and TM8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and illustrated in Figure 1A. The analysis is based on structural data from the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "81772411-1be1-49c7-b19e-65c672d2ad7b",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C18",
+      "claim": "R1 includes TM1 and TM3 to TM6, while R2 comprises TM7 and TM9 to TM12.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal repeat, R1, includes TM1 and TM3 to TM6, while the C-terminal repeat, R2, comprises TM7 and TM9 to TM12 (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and references Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "91db79a7-6e82-4fb0-96bb-7bd0f34eb0ac",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C19",
+      "claim": "The porter domain consists of two structural repeats, referred to as PN1/PC2, and PN2/PC1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the porter domain, as noted previously, each protomer consists of two structural repeats, referred to as PN1/PC2, and PN2/PC1 (Figure 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "0fdf8730-6be2-4f95-8b79-43c217a5ecd1",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C20",
+      "claim": "The PN1/PC2 repeat appears to be a rigid unit throughout the LTO conformational cycle with RMSD among states of less than 0.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The PN1/PC2 repeat appears to be a rigid unit throughout the LTO conformational cycle. Analysis of the conformation of this repeat in the 1.9 \u00c5-resolution crystal structure of wildtype AcrB (Eicher et al., 2012) yields root-mean-square differences (RMSD) among states of less than 0.5 \u00c5 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RMSD analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "dc477b0a-d95a-4430-8d1b-d677b33b268d",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C21",
+      "claim": "The PN2/PC1 tandem changes its conformation significantly, with RMSD of approximately 2.0 \u00c5 in the L to T transition and approximately 1.8 \u00c5 in the T to O transition.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the PN2/PC1 tandem changes its conformation significantly, in particular in the L to T (RMSD \u223c2.0 \u00c5) and T to O transitions (RMSD \u223c1.8 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RMSD analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "6349b473-33cf-4aa1-8952-e2b434bd6441",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C22",
+      "claim": "The conformation of the funnel domain is largely unchanged throughout the cycle with RMSD < 0.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidentally, the conformation of the funnel domain is largely unchanged throughout the cycle (RMSD < 0.5 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RMSD analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "0f9d5ae7-9d6d-42a2-ba66-01726a8cf2cd",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C23",
+      "claim": "The structure of the R1 five-helix bundle is largely preserved in the L, T and O conformations with RMSD ranging from 0.8 to 1.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of R1, for example, shows that the structure of this five-helix bundle is largely preserved in the L, T and O conformations; the RMSD among these states ranges from 0.8 to 1.1 \u00c5 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RMSD analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "cf9581f7-453a-4507-bb34-f4d34600a781",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C24",
+      "claim": "The structure of R2 is even more preserved than R1, with RMSD values between 0.3 and 1.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences are even smaller for R2, with RMSD values between 0.3 and 1.0 \u00c5 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RMSD analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "95bc832b-929a-43e1-8503-88263003f306",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C25",
+      "claim": "R1 and R2 are always different from each other with RMSD approximately 3.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "R1 and R2 are, however, always different from each other (RMSD \u223c3.5 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RMSD analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "49ae39e4-101c-41ab-8cfe-4fcdcce60e7c",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C26",
+      "claim": "R1 and R2 move relative to each other throughout the conformational cycle of each protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Further inspection also shows that R1 and R2 move relative to each other throughout the conformational cycle of each protomer (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "5d969738-d972-4e22-8a1d-323c6f10e5e3",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C27",
+      "claim": "In the L to T transition, R1 and R2 undergo a rocking motion around an axis that is tilted relative to the membrane plane.",
+      "claim_type": "EXPLICIT",
+      "source": "In the L to T transition, R1 and R2 undergo a rocking motion around an axis that is tilted relative to the membrane plane (Figure 3; Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and illustrated in Figure 3 and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "4a142a25-2a1a-442f-8a8e-d9afb6c06e87",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C28",
+      "claim": "In the transition between the T and O states, and between O and L, R1 and R2 undergo mostly a lateral shear motion relative to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the transition between the T and O states, and between O and L, what can be observed is mostly a lateral shear motion of R1 and R2, relative to each other (Figure 3; Video 5, Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and illustrated in Figure 3, Video 5, and Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "f2b6b85c-b5d9-4ef9-bb84-d636cbb08a9e",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C29",
+      "claim": "In the L to T transition, TM2 moves downwards relative to R1 (toward the cytoplasm), returning to the up state in the O conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the L to T transition, TM2 moves downwards relative to R1 (toward the cytoplasm), returning to the up state in the O conformation (Figure 3; Video 4, Video 5, Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and illustrated in Figure 3 and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "6a70abdf-2b99-498f-8328-100b0fd575ef",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C30",
+      "claim": "TM8 is similarly positioned in the L and T states, and largely unengaged from R2.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, TM8 is similarly positioned in the L and T states, and largely unengaged from R2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "32fb3005-71e6-4f93-bc3c-a9f9c39c96f5",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C31",
+      "claim": "During the T to O transition, TM8 becomes closely packed against R2, through hydrophobic interactions with TM5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during the T to O transition this \u03b1-helix becomes closely packed against R2, through hydrophobic interactions with TM5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "fc8d3644-d6a9-4868-9146-0c9a67e0db67",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C32",
+      "claim": "In the T to O transition, TM8 becomes elongated, reaching directly to the PN1/PC2 unit.",
+      "claim_type": "EXPLICIT",
+      "source": "In this transition TM8 also becomes elongated, reaching directly to the PN1/PC2 unit (Figure 3; Video 4, Video 5, Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and illustrated in Figure 3 and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "7d3bf2c2-34c3-4c8c-a2e1-4fcc00a222ff",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C33",
+      "claim": "I\u03b1 functions as a connecting rod coupling the displacements of TM2 and R2.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data indicate that I\u03b1 functions as a connecting rod coupling the displacements of TM2 and R2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RMSD analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "d597a308-8fb0-4b32-878b-0d2c41560b7e",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C34",
+      "claim": "D407, D408, K940, and R971 are critical for function.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular D407 and D408 in TM4 and K940 in TM10 are critical for function (Guan and Nakae, 2001; Murakami and Yamaguchi, 2003; Takatsuka and Nikaido, 2006; Seeger et al., 2009). Another functionally important side-chain, R971 in TM11, is located about 10 \u00c5 away from K940 on TM10, towards the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Guan and Nakae, 2001, Murakami and Yamaguchi, 2003, Takatsuka and Nikaido, 2006, and Seeger et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "8514fc57-7d67-42b1-92f1-9f4a08b6a783",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C35",
+      "claim": "In both the L and T states, R1 and R2 are strongly paired through multiple interactions including K940 sandwiched between D407 and D408.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the L and T states, R1 and R2 appear to be strongly paired through multiple interactions. First, through K940, which projects away from R2 and is sandwiched between D407 and D408, from R1, forming two simultaneous ionic interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of the high-resolution crystal structure shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "5ac6467c-0a7d-4426-9d02-598fc5f776dc",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C36",
+      "claim": "In the O state, all R1-R2 interactions break off, and are replaced by alternative ones within each repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "In the O state, by contrast, all R1-R2 interactions break off, and are replaced by alternative ones within each repeat.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of the high-resolution crystal structure shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "cce84da5-0f19-4f5b-b544-5ea2a72de7f6",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C37",
+      "claim": "D407 and D408 are ionized in the L and T states but become protonated in the O state.",
+      "claim_type": "EXPLICIT",
+      "source": "These include D407 and D408, in the core of the TM domain, which are ionized in the L and T states but become protonated in the O state (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on Monte Carlo simulations of protonation equilibrium shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "620458dd-dc1e-4d11-806e-6958f97958d4",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C38",
+      "claim": "E346 and D924 are protonated in the L and T states, but become deprotonated in O.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, E346 and D924, at the periplasmic end of TM2 and TM10, respectively, are protonated in the L and T states, but become deprotonated in O",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on Monte Carlo simulations of protonation equilibrium shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "7b185761-3552-4c8c-80c0-5d6c9a65c4a6",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C39",
+      "claim": "H338 and D566 are most likely deprotonated in L and T, and become protonated in the O state.",
+      "claim_type": "EXPLICIT",
+      "source": "conversely, the neighboring H338 (TM2) and D566 (in the region between TM7 and PC1 subdomain) are most likely deprotonated in L and T, and become protonated in the O state (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on Monte Carlo simulations of protonation equilibrium shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "8eed99be-5b06-4b54-a3cf-4307ea26754e",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C40",
+      "claim": "Both K940 and R971 remain protonated throughout the cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the calculations indicate that both K940 and R971 remain protonated throughout the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Monte Carlo simulations of protonation equilibrium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "b02089c8-a2cb-4f73-b594-cf0b90c07997",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C41",
+      "claim": "All-atom molecular simulations and continuum-electrostatic calculations indicate that in the L and T states, two protons are bound to the TM domain of AcrB at the periplasmic side (D924 and E346), while D407 and D408 are deprotonated.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, both all-atom molecular simulations and continuum-electrostatic calculations indicate that in the L and T states, two protons are bound to the TM domain of AcrB at the periplasmic side (i.e., D924 and E346), while D407 and D408, two-thirds of the way across the membrane, are deprotonated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational analysis including Monte Carlo simulations and all-atom molecular dynamics simulations shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "f3d0c30f-2ddf-469c-8494-f2c6242544f5",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C42",
+      "claim": "Upon transition to the O state, two protons bind to D407 and D408, while the proton-accepting sites on the periplasmic face become deprotonated.",
+      "claim_type": "EXPLICIT",
+      "source": "upon transition to the O state, two protons bind to D407 and D408, while the proton-accepting sites on the periplasmic face become deprotonated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational analysis including Monte Carlo simulations and all-atom molecular dynamics simulations shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "1b6edae2-7c65-4c7a-8d0e-5e9c91164752",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C43",
+      "claim": "The primary role of K940 and R971 is to function as a conformational electrostatic switch coupled to the protonation state of D407 and D408.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the primary role of these side-chains is not, however, to capture and donate protons; instead, they appear to function as a conformational electrostatic switch coupled to the protonation state of D407 and D408.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from computational analysis and structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "ed76037d-840e-473d-88f1-0a896e217a43",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C44",
+      "claim": "The re-configuration of the reversible electrostatic switch, coupled to the protonation and deprotonation of both D407 and D408, is the trigger for the lateral displacements of repeat R2 relative to R1 observed in the T to O and O to L transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the re-configuration of this reversible electrostatic switch, which is coupled to the protonation and deprotonation of both D407 and D408, is the trigger for the lateral displacements of repeat R2 relative to R1 observed in the T to O and O to L transitions (Figure 3; Video 5, Video 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed mechanism based on inference from computational and structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "37399a23-7c45-4950-a5a3-9d962ea4e49c",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C45",
+      "claim": "Crystal structures of K940A, R971A, D407N and D408N variants were solved at resolutions ranging from 2.0 to 2.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "To further assess the proposed proton-relay mechanism and its influence on the conformation of the TM domain, we solved the atomic structures of four AcrB variants, namely K940A, R971A, D407N and D408N (Supplementary file 2), all of which abolish the drug-efflux activity of AcrB (Guan and Nakae, 2001; Murakami and Yamaguchi, 2003; Takatsuka and Nikaido, 2006; Seeger et al., 2009). Electron-density maps for these variants could be resolved at resolutions ranging from 2.0 to 2.3 \u00c5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on X-ray crystallography data reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "41e00990-520b-4552-b5fc-cc5a7c36f1cd",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C46",
+      "claim": "All four variants (K940A, R971A, D407N, D408N) abolish the drug-efflux activity of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "we solved the atomic structures of four AcrB variants, namely K940A, R971A, D407N and D408N (Supplementary file 2), all of which abolish the drug-efflux activity of AcrB (Guan and Nakae, 2001; Murakami and Yamaguchi, 2003; Takatsuka and Nikaido, 2006; Seeger et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Guan and Nakae, 2001, Murakami and Yamaguchi, 2003, Takatsuka and Nikaido, 2006, and Seeger et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "70769822-d7a9-4c62-9e77-e8387708a864",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C47",
+      "claim": "In all variant crystal structures, the crystal structures represent an asymmetric configuration of the AcrB trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the crystal structures represent an asymmetric configuration of the AcrB trimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on X-ray crystallography data of the variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "7ec40942-3790-44ce-8842-402591968e4a",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C48",
+      "claim": "None of the substitutions studied caused significant changes in the internal structure of the R1 and R2 repeats, compared to the wildtype L, T and O states.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the substitutions studied caused significant changes in the internal structure of the R1 and R2 repeats, compared to the wildtype L, T and O states (Supplementary file 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural comparison of variant and wildtype structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "245fe895-df9c-4ccf-bf14-8406f764ec36",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C49",
+      "claim": "The relative orientation of R1 and R2 is unchanged in the K940A and D408N mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative orientation of these two repeats is also unchanged in the K940A and D408N mutants (Supplementary file 3C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural comparison of variant and wildtype structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "106418cf-f98a-489e-ae27-ed1d5127ec1f",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C50",
+      "claim": "In the K940A structure, D408 is constitutively neutralized throughout the cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, electrostatic calculations analogous to those carried out for the wildtype protein show that in the K940A structure, D408 is constitutively neutralized throughout the cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on electrostatic calculations shown in Figure 7 and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "012750c0-45d3-4ae4-9afe-6a49e04baeb6",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C51",
+      "claim": "In K940A, D407 is deprotonated in the L and T states and protonated in the O state, as in the wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "D407, which is more proximal to R971, is deprotonated in the L and T states and protonated in the O state, as in the wildtype (Figure 7, Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on electrostatic calculations shown in Figure 7 and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "dd5e6178-6af4-4d4d-9a0b-03491c23652c",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C52",
+      "claim": "The T state in the crystal structures of the R971A and D407N mutants is an intermediate between the T and O conformations in wildtype AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis that the structural configuration of the proton-relay network is intimately coupled to the displacements of the 5-helix repeats, the arrangement of these repeats in the T protomer of the R971A crystal structure is an intermediate between the T and O states of the wildtype structure (Figure 8); in fact, this altered conformation is more similar to the latter (RMSD values of 2.4 vs 1.6 \u00c5, respectively\u2014Supplementary file 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on structural comparison shown in Figure 8 and Supplementary file 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "28295e1c-97f3-4ae5-9e17-1b4297f40e54",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C53",
+      "claim": "The L state permits the formation of two persistent water channels open to the cytoplasm, at the interface between repeats R1 and R2, reaching into the proton-binding site; access from the periplasmic space is closed.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, we observe that the L state permits the formation of two persistent water channels open to the cytoplasm, at the interface between repeats R1 and R2, and reaching into the proton-binding site; access from the periplasmic space is, however, closed (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on all-atom molecular dynamics simulation analysis shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "11e99301-e83e-42ce-8b67-5252e10d48f6",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C54",
+      "claim": "In the T state, two narrow water wires form on the periplasmic face of the TM domain, reaching into the proton-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the T state, by contrast, two narrow water wires form on the periplasmic face of the TM domain, again reaching into the proton-binding site, and approximately along the interface between the two repeats R1 and R2 (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on all-atom molecular dynamics simulation analysis shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "f4458361-2728-4eea-9d5a-5008b8f3e17d",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C55",
+      "claim": "E346 and D924 flank the entrance of each of the periplasmic water wires in the T state.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, E346 and D924 flank the entrance of each of these water wires",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on all-atom molecular dynamics simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "7f07b384-084e-42f6-8db7-1b3521559ded",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C56",
+      "claim": "E346 and D924 facilitate proton uptake by providing transient binding sites en route to D407/D408.",
+      "claim_type": "EXPLICIT",
+      "source": "as mentioned earlier, both these side-chains are likely to be protonated in the L and T states and deprotonated in the O state (Figure 4, Figure 5), which suggests that E346 and D924 facilitate proton uptake by providing transient binding sites en route to D407/D408 (Fischer and Kandt, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from computational analysis and is supported by a citation to Fischer and Kandt, 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "b2234d0a-5f3f-4ed9-8288-2280ae839706",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C57",
+      "claim": "The O state features two water channels into the proton-binding site that are highly similar to those seen in the L conformation, open to the cytoplasm, while access from the periplasmic space is occluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the O state features two water channels into the proton-binding site that are highly similar to those seen in the L conformation, that is, open to the cytoplasm, while access from the periplasmic space is also occluded (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on all-atom molecular dynamics simulation analysis shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "4b9abc47-83b1-4a1e-abcd-a445d6603362",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C58",
+      "claim": "Throughout the conformational cycle of AcrB the proton-binding sites within the TM domain become alternately accessible to the periplasm or the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our data indicate that throughout the conformational cycle of AcrB the proton-binding sites within the TM domain become alternately accessible to the periplasm or the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "6cd98c80-cb1c-47d7-bbeb-30a6b3242cd6",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C59",
+      "claim": "Two distinct types of relative motion of repeats R1 and R2 result in alternating access, namely a rocking motion during the L to T transition, with no protons bound, and a shear motion in the T to O transition, in the protonated form.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two distinct types of relative motion of repeats R1 and R2 result in alternating access, namely a rocking motion during the L to T transition, with no protons bound, and a shear motion in the T to O transition, in the protonated form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural and computational analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "2463b047-e3cb-47c6-8771-f4ca1feddcb4",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C60",
+      "claim": "AcrB is the only secondary-transporter for which two distinct structural transitions resulting in alternating access have been described to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, however, AcrB is the only secondary-transporter for which two distinct structural transitions resulting in alternating access have been described to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "d3e61db1-7164-4881-ae72-2b0c3b4c6971",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C61",
+      "claim": "Proton uptake leads to substrate export (instead of symport) because both proton- and substrate-binding sites are concurrently open to the periplasm in the T state, while in the O state they become open to the cytoplasm and the TolC lumen, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Proton uptake leads to substrate export (instead of symport) for two reasons: first, both proton- and substrate-binding sites are concurrently open to the periplasm in the T state, while in the O state they become open to the cytoplasm and the TolC lumen, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the structural and computational analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "a85013c9-e8ea-4984-98ac-75be2b0fbbd6",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C62",
+      "claim": "Both porter and membrane domains are able to re-open to the periplasm after releasing their cargo, in their apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "second, both porter and membrane domains are able to re-open to the periplasm after releasing their cargo, that is, in their apo state (Figure 11A, drug access pocket and proton loading).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the structural and computational analysis shown in Figure 11A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "e8adf649-64b2-4aeb-b560-1c929fe8f5f3",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C63",
+      "claim": "The free-energy gain associated with downhill proton permeation compensates the cost of uphill efflux of cytotoxic compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the free-energy gain associated with downhill proton permeation compensates the cost of uphill efflux of cytotoxic compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "b1a271cd-0084-415f-aaba-bf3d0af819ab",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C64",
+      "claim": "Transport of certain cephalosporins and penicillins has been shown to be highly cooperative.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, transport of certain cephalosporins and penicillins has been shown to be highly cooperative (Nagano and Nikaido, 2009; Lim and Nikaido, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nagano and Nikaido, 2009 and Lim and Nikaido, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "894267af-51f2-43f6-9e78-06a732374873",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C65",
+      "claim": "Analysis of computer-generated models of the porter domain in all non-symmetric permutations of the L, T and O states indicates that OO and LO interfaces are highly incompatible, and that OT is also suboptimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, analysis of computer-generated models of the porter domain in all non-symmetric permutations of the L, T and O states ('Materials and methods') indicates that this kind of kinetic optimization is what emerges from the conformational coupling among protomers. A quantification of the steric clashes between protomers in these hypothetical models indicates that OO and LO interfaces (counter-clockwise, viewed from TolC) are highly incompatible, and that OT is also suboptimal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on computational modeling analysis shown in Figure 11\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "7d9c8fe1-51c8-49e3-ba8f-f2edcc730de9",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C66",
+      "claim": "Throughout the proposed conformational cycle, the proportion of protomers in either the L or T state relative to those in the O state is fourfold greater than in a hypothetical uncoupled trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout this cycle, the proportion of protomers in either the L or T state relative to those in the O state is fourfold greater than in a hypothetical uncoupled trimer (Figure 11\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on computational modeling analysis shown in Figure 11\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "b48a88b1-5f54-46c4-b111-adf691c7f9d2",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C67",
+      "claim": "The AcrB protomers are substantially more efficient efflux pumps if they are coupled, not because the protomers energize each other, but because collectively they are able to restrict their conformational pathways so as to achieve the most productive mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the AcrB protomers are substantially more efficient efflux pumps if they are coupled; not because the protomers energize each other, but because collectively they are able to restrict their conformational pathways so as to achieve the most productive mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational modeling analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "035a63e3-dd30-4fad-92e3-63a197540b97",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C68",
+      "claim": "The mechanism of AcrB involves two remote alternating-access conformational cycles within each protomer, namely one for protons in the transmembrane region and another for drugs in the periplasmic domain, 50 \u00c5 apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of wildtype AcrB and four functionally-inactive variants reveals an unprecedented mechanism that involves two remote alternating-access conformational cycles within each protomer, namely one for protons in the transmembrane region and another for drugs in the periplasmic domain, 50 \u00c5 apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and is based on the comprehensive analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "685b45ef-9aee-4133-9006-6742891ada01",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C69",
+      "claim": "Each of the alternating-access cycles entails two distinct types of collective motions of two structural repeats, coupled by flanking \u03b1-helices that project from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these cycles entails two distinct types of collective motions of two structural repeats, coupled by flanking \u03b1-helices that project from the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and is based on the structural analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "1c0f55b2-8104-46f9-bb16-73502288d070",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "claim_id": "C70",
+      "claim": "The cross-talk among protomers across the trimerization interface might lead to a more kinetically efficient efflux system.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we rationalize how the cross-talk among protomers across the trimerization interface might lead to a more kinetically efficient efflux system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and is based on the computational modeling analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2b1bcd-dd74-4cba-a8c9-63660a94598a",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the AcrAB-TolC system and the RND transporter family, establishing that AcrB is a secondary active antiporter powered by the proton gradient, confers multidrug resistance, and belongs to the RND family which includes human transporters NPC1 and Patched.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are all supported by appropriate citations to prior work (Okusu et al. 1996, Nikaido and Pag\u00e8s 2012, Tseng et al. 1999, Taipale et al. 2002, Scott and Ioannou 2004). These are well-established facts in the field and serve as appropriate background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "1b730457-b79b-4db3-a2a9-227ce5c50af1",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior structural work on AcrB revealed a homotrimeric assembly with 12 transmembrane helices per protomer, large periplasmic insertions projecting 70 \u00c5 from the membrane, and connection to the TolC outer membrane channel (140 \u00c5 in length).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 describe established structural features of AcrB from prior crystallographic work, supported by appropriate citations (Murakami et al. 2002, Koronakis et al. 2000). These are well-documented structural characteristics that provide necessary background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "1357483d-4a77-4e07-8d8b-0def79851a20",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior work established that AcrB adopts three asymmetric conformational states (L, T, O) upon substrate loading, with drug recognition and efflux mediated by a peristaltic pump mechanism in the porter domain, and transport kinetics consistent with a bi-site activation model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 summarize the current understanding of AcrB's mechanism from prior structural and functional studies, all supported by appropriate citations (Murakami et al. 2006, Seeger et al. 2006, Nakashima et al. 2011, Eicher et al. 2012, Nagano and Nikaido 2009, Lim and Nikaido 2010, Pos 2009). This provides essential context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "4e968d56-77af-437b-b4ff-f15a1ca3a423",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors identify that the TM domain consists of two 5-helix parallel repeats (R1 and R2) with flanking helices TM2 and TM8, and the porter domain consists of two structural repeats (PN1/PC2 and PN2/PC1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 describe a novel structural decomposition of AcrB based on the authors' analysis of crystal structures (Figure 1, Figure 2). The identification of R1 and R2 as distinct structural repeats is supported by systematic RMSD analysis shown in Figure 2, which demonstrates that excluding TM2 or TM8 yields consistently smaller conformational differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "26d335c0-d377-49c9-9db1-2dcb21f8929a",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The PN1/PC2 repeat is rigid throughout the LTO cycle (RMSD < 0.5 \u00c5), while PN2/PC1 undergoes significant conformational changes (RMSD ~2.0 \u00c5 in L to T, ~1.8 \u00c5 in T to O), and the funnel domain remains largely unchanged (RMSD < 0.5 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 are supported by quantitative RMSD analysis of the 1.9 \u00c5 crystal structure (Supplementary file 1). The values are specific and consistent with the structural data, establishing the differential flexibility of porter domain subdomains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "cf72ed50-a087-4ec3-a8e2-61f94b59f281",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The R1 and R2 repeats maintain their internal structure throughout the cycle (RMSD 0.8-1.1 \u00c5 for R1, 0.3-1.0 \u00c5 for R2) but are always different from each other (RMSD ~3.5 \u00c5) and move relative to each other during the conformational cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are supported by systematic RMSD analysis (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2). The data demonstrate that R1 and R2 are structurally stable individually but undergo collective motions relative to each other, which is a key finding for understanding the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "af884e60-0803-4605-8bea-c97f0b25589a",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The L to T transition involves a rocking motion of R1 and R2 with TM2 moving downward, while T to O and O to L transitions involve lateral shear motions with TM8 becoming closely packed against R2 and elongated in the T to O transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 describe distinct types of conformational changes supported by structural analysis and visualization (Figure 3, Videos 4-6). The characterization of rocking vs. shear motions is based on structural overlays and represents a novel mechanistic insight into how the repeats move.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "d29a51ce-e00e-408a-b3b2-c01e3dc92a0d",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The helix I\u03b1 functions as a connecting rod coupling the displacements of TM2 and R2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by RMSD analysis (Figure 3\u2014figure supplement 1) showing that I\u03b1 moves rigidly with R2 and maintains constant orientation with TM2. This structural coupling is consistent with the functional split-gene experiment cited (Eda et al. 2003).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "c49a0326-a423-4d06-84f4-62b0ed25fb68",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Residues D407, D408, K940, and R971 are critical for function, with R1 and R2 strongly paired through multiple interactions in L and T states (including K940 sandwiched between D407 and D408), while all R1-R2 interactions break in the O state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by high-resolution crystal structure analysis (Figure 4) and prior functional studies (Guan and Nakae 2001, Murakami and Yamaguchi 2003, Takatsuka and Nikaido 2006, Seeger et al. 2009). The 1.9 \u00c5 structure provides detailed visualization of the interaction network and its state-dependent reconfiguration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "f1e060a7-46df-4a7d-babb-b68ea86a558b",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Monte Carlo simulations of protonation equilibrium predict that D407 and D408 are ionized in L and T but protonated in O; E346 and D924 are protonated in L and T but deprotonated in O; H338 and D566 are deprotonated in L and T but protonated in O; and K940 and R971 remain protonated throughout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by Monte Carlo/Poisson-Boltzmann calculations (Figure 5). The computational methodology is appropriate for predicting protonation states, though the results depend on the choice of protein dielectric constant. The authors acknowledge testing multiple values (2-6) with consistent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "b9cf5ba5-4329-410e-b095-6f9bec8eb33c",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both computational methods (all-atom MD simulations and continuum-electrostatic calculations) indicate that in L and T states, two protons are bound at the periplasmic side (D924 and E346) while D407 and D408 are deprotonated; upon transition to O, two protons bind to D407 and D408 while periplasmic sites become deprotonated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by two independent computational approaches: Monte Carlo/Poisson-Boltzmann (Figure 5) and all-atom FEP molecular dynamics (Figure 6). The convergence of two different methodologies strengthens confidence in the protonation state predictions, which are central to the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "001aca7f-d25e-4b59-9702-7587ae7ec893",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "K940 and R971 function as a conformational electrostatic switch coupled to the protonation state of D407 and D408, with the re-configuration of this switch triggering the lateral displacements of R2 relative to R1 in the T to O and O to L transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 represent a mechanistic interpretation supported by computational analysis (Figure 5\u2014figure supplement 1) showing that K940 and R971 lose favorable interactions with D407/D408 upon protonation but gain compensatory interactions. This electrostatic switch model is consistent with the structural data and provides a mechanistic explanation for the conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "2930429b-32b5-4759-a666-49e3c60b2c3f",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Crystal structures of four functionally inactive variants (K940A, R971A, D407N, D408N) were solved at 2.0-2.3 \u00c5 resolution, all showing asymmetric trimers with no significant changes in the internal structure of R1 and R2 repeats, and unchanged relative orientation of R1 and R2 in K940A and D408N.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are supported by X-ray crystallography data (Supplementary file 2, Supplementary file 3A, 3C). The structures provide experimental validation of the proposed mechanism by showing how specific mutations affect the conformational states. The resolution is adequate for the analysis performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "ee7d7542-1694-43a4-8020-7437c993d46a",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In K940A, electrostatic calculations show D408 is constitutively neutralized throughout the cycle, while D407 is deprotonated in L and T and protonated in O as in wildtype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by electrostatic calculations on the K940A structure (Figure 7, Figure 7\u2014figure supplement 1). The analysis explains how the K940A mutation disrupts the two-proton switch mechanism while maintaining some native-like conformations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "1b4da430-b92b-49bd-ac90-9e6b6390f078",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The T state in R971A and D407N crystal structures is an intermediate between wildtype T and O conformations, more similar to O (RMSD 1.6 \u00c5) than to T (RMSD 2.4 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by structural comparison (Figure 8, Supplementary file 3C). The quantitative RMSD analysis demonstrates that these mutations cause partial displacement of the repeats, consistent with the hypothesis that the proton-relay network configuration is coupled to repeat positioning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "2469e9cc-a33f-4acb-b5a6-cf6fb5399397",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "All-atom MD simulations reveal that the L state has two water channels open to the cytoplasm; the T state has two narrow water wires open to the periplasm flanked by E346 and D924; and the O state has water channels similar to L, open to the cytoplasm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55, C57 are supported by all-atom MD simulations of the complete trimer in a lipid membrane (Figure 9A). The water channel analysis demonstrates alternating access, which is essential for the proposed proton transport mechanism. The 250 ns simulation time is reasonable for observing water dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "d8ebbb4a-c9fc-46d1-9135-81301407dce4",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "E346 and D924 facilitate proton uptake by providing transient binding sites en route to D407/D408.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is an inference based on the protonation state predictions (C38) and the location of E346 and D924 at the entrance of periplasmic water wires (C55). The inference is reasonable and supported by a citation to Fischer and Kandt 2011, though it represents a proposed mechanism rather than direct observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "2cdd07f9-6d00-4067-be83-7d426ac6afdc",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Throughout the conformational cycle, the proton-binding sites become alternately accessible to periplasm or cytoplasm via two distinct types of repeat motions: rocking during L to T (no protons bound) and shear during T to O (protonated form).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 synthesize the structural and computational findings to describe the alternating access mechanism. The conclusion is well-supported by the water channel analysis (C53-C57), protonation state predictions (C37-C42), and structural characterization of repeat motions (C27-C28).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "8677aef0-a6f6-47eb-84ba-5accaf69b405",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "AcrB is the only secondary transporter for which two distinct structural transitions resulting in alternating access have been described to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 is based on the authors' knowledge of the field but lacks specific citations. While the finding of two distinct transition types (rocking and shear) is novel and well-supported for AcrB, the claim of uniqueness across all secondary transporters is difficult to verify without comprehensive literature analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "2a0a3dbb-3aa2-43ca-af91-dc9dc8445f9f",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Proton uptake leads to substrate export (antiport) because both sites are open to periplasm in T but to cytoplasm/TolC in O, both domains can re-open to periplasm in apo state, and the free-energy gain from downhill proton permeation compensates uphill drug efflux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 represent mechanistic inferences based on the structural and computational data (Figure 11A). The antiport directionality is logically explained by the spatial and temporal organization of the alternating access cycles in the two domains. The thermodynamic argument is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "4be580d2-e430-407e-a5c4-492521364c54",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Transport of certain cephalosporins and penicillins has been shown to be highly cooperative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by citations to prior experimental work (Nagano and Nikaido 2009, Lim and Nikaido 2010). This provides context for the subsequent analysis of protomer coupling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "18b14534-c0f9-4f8d-91c7-902b95a87782",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Computational modeling of all non-symmetric permutations shows OO and LO interfaces are highly incompatible and OT is suboptimal, resulting in a fourfold greater proportion of L or T states relative to O compared to an uncoupled trimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by computational modeling analysis (Figure 11\u2014figure supplement 1). The steric clash quantification provides a structural basis for conformational coupling. However, the analysis is based on rigid-body models with side-chain repacking, which may not fully capture the flexibility of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "792782cb-6801-4ce4-b65f-cd7b4373c7bd",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "AcrB protomers are more efficient as coupled efflux pumps not because they energize each other, but because they collectively restrict conformational pathways to achieve the most productive mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is an inference based on the steric exclusion analysis (C65-C66). The mechanistic interpretation is reasonable and provides a novel explanation for cooperative transport that differs from direct energetic coupling. The conclusion is consistent with the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    },
+    {
+      "id": "a66721dc-c0fe-474e-9b2a-e510bba557d8",
+      "content_id": "774934fc-39b4-44ba-90b4-f49fe4d283ac",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The mechanism of AcrB involves two remote alternating-access cycles (protons in TM domain, drugs in porter domain, 50 \u00c5 apart), each entailing two distinct types of collective motions of structural repeats coupled by flanking helices, with cross-talk among protomers leading to kinetically efficient efflux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 represent the main conclusions of the manuscript, synthesizing all the structural, computational, and mechanistic findings. These claims are well-supported by the comprehensive analysis presented, including crystal structures, MD simulations, protonation calculations, and modeling of protomer coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:37.122679Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eb7ce33e-f20a-4b9c-80d6-ff5bb9a0fb12",
+      "result_id": "ae2b1bcd-dd74-4cba-a8c9-63660a94598a"
+    },
+    {
+      "claim_id": "3b06cf9a-70a0-474b-8acd-03d556185da4",
+      "result_id": "ae2b1bcd-dd74-4cba-a8c9-63660a94598a"
+    },
+    {
+      "claim_id": "1fd4be0d-e7e8-4032-8a05-ea9ca3a04491",
+      "result_id": "ae2b1bcd-dd74-4cba-a8c9-63660a94598a"
+    },
+    {
+      "claim_id": "6955aa74-5a2d-4b8e-8867-9c1e46bff51b",
+      "result_id": "ae2b1bcd-dd74-4cba-a8c9-63660a94598a"
+    },
+    {
+      "claim_id": "cd82cfef-961e-4776-91e2-7c82d4b7e8e3",
+      "result_id": "1b730457-b79b-4db3-a2a9-227ce5c50af1"
+    },
+    {
+      "claim_id": "9fda9743-503f-48da-a1ed-5d91acaa3dd3",
+      "result_id": "1b730457-b79b-4db3-a2a9-227ce5c50af1"
+    },
+    {
+      "claim_id": "ab2b97ad-c7e0-4c44-bd6f-0781d5147352",
+      "result_id": "1b730457-b79b-4db3-a2a9-227ce5c50af1"
+    },
+    {
+      "claim_id": "0268c189-5f89-4a0c-87f5-9261fe114e63",
+      "result_id": "1b730457-b79b-4db3-a2a9-227ce5c50af1"
+    },
+    {
+      "claim_id": "cdcdedf8-acb2-412c-b239-c46148d88091",
+      "result_id": "1b730457-b79b-4db3-a2a9-227ce5c50af1"
+    },
+    {
+      "claim_id": "201bb7cd-dd0c-4901-af0a-41b8cde0d076",
+      "result_id": "1357483d-4a77-4e07-8d8b-0def79851a20"
+    },
+    {
+      "claim_id": "bc3692f8-548a-4ba4-9cfb-c190c3b54a7a",
+      "result_id": "1357483d-4a77-4e07-8d8b-0def79851a20"
+    },
+    {
+      "claim_id": "1d40c807-39e7-49f4-89e0-323f0f3ba5a2",
+      "result_id": "1357483d-4a77-4e07-8d8b-0def79851a20"
+    },
+    {
+      "claim_id": "d81ba3a1-882e-4ede-9c2a-c580fc3ab643",
+      "result_id": "1357483d-4a77-4e07-8d8b-0def79851a20"
+    },
+    {
+      "claim_id": "9b8f4cee-75b9-44ca-bf47-d4e45ea8ef1c",
+      "result_id": "1357483d-4a77-4e07-8d8b-0def79851a20"
+    },
+    {
+      "claim_id": "df9abfd5-38c2-4788-8d1e-e55552d1879e",
+      "result_id": "1357483d-4a77-4e07-8d8b-0def79851a20"
+    },
+    {
+      "claim_id": "d9dca44a-e729-4efc-af35-2717bded4c0a",
+      "result_id": "1357483d-4a77-4e07-8d8b-0def79851a20"
+    },
+    {
+      "claim_id": "a05fb70d-d8c0-4127-b2fb-a85cf8102504",
+      "result_id": "4e968d56-77af-437b-b4ff-f15a1ca3a423"
+    },
+    {
+      "claim_id": "81772411-1be1-49c7-b19e-65c672d2ad7b",
+      "result_id": "4e968d56-77af-437b-b4ff-f15a1ca3a423"
+    },
+    {
+      "claim_id": "91db79a7-6e82-4fb0-96bb-7bd0f34eb0ac",
+      "result_id": "4e968d56-77af-437b-b4ff-f15a1ca3a423"
+    },
+    {
+      "claim_id": "0fdf8730-6be2-4f95-8b79-43c217a5ecd1",
+      "result_id": "26d335c0-d377-49c9-9db1-2dcb21f8929a"
+    },
+    {
+      "claim_id": "dc477b0a-d95a-4430-8d1b-d677b33b268d",
+      "result_id": "26d335c0-d377-49c9-9db1-2dcb21f8929a"
+    },
+    {
+      "claim_id": "6349b473-33cf-4aa1-8952-e2b434bd6441",
+      "result_id": "26d335c0-d377-49c9-9db1-2dcb21f8929a"
+    },
+    {
+      "claim_id": "0f9d5ae7-9d6d-42a2-ba66-01726a8cf2cd",
+      "result_id": "cf72ed50-a087-4ec3-a8e2-61f94b59f281"
+    },
+    {
+      "claim_id": "cf9581f7-453a-4507-bb34-f4d34600a781",
+      "result_id": "cf72ed50-a087-4ec3-a8e2-61f94b59f281"
+    },
+    {
+      "claim_id": "95bc832b-929a-43e1-8503-88263003f306",
+      "result_id": "cf72ed50-a087-4ec3-a8e2-61f94b59f281"
+    },
+    {
+      "claim_id": "49ae39e4-101c-41ab-8cfe-4fcdcce60e7c",
+      "result_id": "cf72ed50-a087-4ec3-a8e2-61f94b59f281"
+    },
+    {
+      "claim_id": "5d969738-d972-4e22-8a1d-323c6f10e5e3",
+      "result_id": "af884e60-0803-4605-8bea-c97f0b25589a"
+    },
+    {
+      "claim_id": "4a142a25-2a1a-442f-8a8e-d9afb6c06e87",
+      "result_id": "af884e60-0803-4605-8bea-c97f0b25589a"
+    },
+    {
+      "claim_id": "f2b6b85c-b5d9-4ef9-bb84-d636cbb08a9e",
+      "result_id": "af884e60-0803-4605-8bea-c97f0b25589a"
+    },
+    {
+      "claim_id": "6a70abdf-2b99-498f-8328-100b0fd575ef",
+      "result_id": "af884e60-0803-4605-8bea-c97f0b25589a"
+    },
+    {
+      "claim_id": "32fb3005-71e6-4f93-bc3c-a9f9c39c96f5",
+      "result_id": "af884e60-0803-4605-8bea-c97f0b25589a"
+    },
+    {
+      "claim_id": "fc8d3644-d6a9-4868-9146-0c9a67e0db67",
+      "result_id": "af884e60-0803-4605-8bea-c97f0b25589a"
+    },
+    {
+      "claim_id": "7d3bf2c2-34c3-4c8c-a2e1-4fcc00a222ff",
+      "result_id": "d29a51ce-e00e-408a-b3b2-c01e3dc92a0d"
+    },
+    {
+      "claim_id": "d597a308-8fb0-4b32-878b-0d2c41560b7e",
+      "result_id": "c49a0326-a423-4d06-84f4-62b0ed25fb68"
+    },
+    {
+      "claim_id": "8514fc57-7d67-42b1-92f1-9f4a08b6a783",
+      "result_id": "c49a0326-a423-4d06-84f4-62b0ed25fb68"
+    },
+    {
+      "claim_id": "5ac6467c-0a7d-4426-9d02-598fc5f776dc",
+      "result_id": "c49a0326-a423-4d06-84f4-62b0ed25fb68"
+    },
+    {
+      "claim_id": "cce84da5-0f19-4f5b-b544-5ea2a72de7f6",
+      "result_id": "f1e060a7-46df-4a7d-babb-b68ea86a558b"
+    },
+    {
+      "claim_id": "620458dd-dc1e-4d11-806e-6958f97958d4",
+      "result_id": "f1e060a7-46df-4a7d-babb-b68ea86a558b"
+    },
+    {
+      "claim_id": "7b185761-3552-4c8c-80c0-5d6c9a65c4a6",
+      "result_id": "f1e060a7-46df-4a7d-babb-b68ea86a558b"
+    },
+    {
+      "claim_id": "8eed99be-5b06-4b54-a3cf-4307ea26754e",
+      "result_id": "f1e060a7-46df-4a7d-babb-b68ea86a558b"
+    },
+    {
+      "claim_id": "b02089c8-a2cb-4f73-b594-cf0b90c07997",
+      "result_id": "b9cf5ba5-4329-410e-b095-6f9bec8eb33c"
+    },
+    {
+      "claim_id": "f3d0c30f-2ddf-469c-8494-f2c6242544f5",
+      "result_id": "b9cf5ba5-4329-410e-b095-6f9bec8eb33c"
+    },
+    {
+      "claim_id": "1b6edae2-7c65-4c7a-8d0e-5e9c91164752",
+      "result_id": "001aca7f-d25e-4b59-9702-7587ae7ec893"
+    },
+    {
+      "claim_id": "ed76037d-840e-473d-88f1-0a896e217a43",
+      "result_id": "001aca7f-d25e-4b59-9702-7587ae7ec893"
+    },
+    {
+      "claim_id": "37399a23-7c45-4950-a5a3-9d962ea4e49c",
+      "result_id": "2930429b-32b5-4759-a666-49e3c60b2c3f"
+    },
+    {
+      "claim_id": "41e00990-520b-4552-b5fc-cc5a7c36f1cd",
+      "result_id": "2930429b-32b5-4759-a666-49e3c60b2c3f"
+    },
+    {
+      "claim_id": "70769822-d7a9-4c62-9e77-e8387708a864",
+      "result_id": "2930429b-32b5-4759-a666-49e3c60b2c3f"
+    },
+    {
+      "claim_id": "7ec40942-3790-44ce-8842-402591968e4a",
+      "result_id": "2930429b-32b5-4759-a666-49e3c60b2c3f"
+    },
+    {
+      "claim_id": "245fe895-df9c-4ccf-bf14-8406f764ec36",
+      "result_id": "2930429b-32b5-4759-a666-49e3c60b2c3f"
+    },
+    {
+      "claim_id": "106418cf-f98a-489e-ae27-ed1d5127ec1f",
+      "result_id": "ee7d7542-1694-43a4-8020-7437c993d46a"
+    },
+    {
+      "claim_id": "012750c0-45d3-4ae4-9afe-6a49e04baeb6",
+      "result_id": "ee7d7542-1694-43a4-8020-7437c993d46a"
+    },
+    {
+      "claim_id": "dd5e6178-6af4-4d4d-9a0b-03491c23652c",
+      "result_id": "1b4da430-b92b-49bd-ac90-9e6b6390f078"
+    },
+    {
+      "claim_id": "28295e1c-97f3-4ae5-9e17-1b4297f40e54",
+      "result_id": "2469e9cc-a33f-4acb-b5a6-cf6fb5399397"
+    },
+    {
+      "claim_id": "11e99301-e83e-42ce-8b67-5252e10d48f6",
+      "result_id": "2469e9cc-a33f-4acb-b5a6-cf6fb5399397"
+    },
+    {
+      "claim_id": "f4458361-2728-4eea-9d5a-5008b8f3e17d",
+      "result_id": "2469e9cc-a33f-4acb-b5a6-cf6fb5399397"
+    },
+    {
+      "claim_id": "b2234d0a-5f3f-4ed9-8288-2280ae839706",
+      "result_id": "2469e9cc-a33f-4acb-b5a6-cf6fb5399397"
+    },
+    {
+      "claim_id": "7f07b384-084e-42f6-8db7-1b3521559ded",
+      "result_id": "d8ebbb4a-c9fc-46d1-9135-81301407dce4"
+    },
+    {
+      "claim_id": "4b9abc47-83b1-4a1e-abcd-a445d6603362",
+      "result_id": "2cdd07f9-6d00-4067-be83-7d426ac6afdc"
+    },
+    {
+      "claim_id": "6cd98c80-cb1c-47d7-bbeb-30a6b3242cd6",
+      "result_id": "2cdd07f9-6d00-4067-be83-7d426ac6afdc"
+    },
+    {
+      "claim_id": "2463b047-e3cb-47c6-8771-f4ca1feddcb4",
+      "result_id": "8677aef0-a6f6-47eb-84ba-5accaf69b405"
+    },
+    {
+      "claim_id": "d3e61db1-7164-4881-ae72-2b0c3b4c6971",
+      "result_id": "2a0a3dbb-3aa2-43ca-af91-dc9dc8445f9f"
+    },
+    {
+      "claim_id": "a85013c9-e8ea-4984-98ac-75be2b0fbbd6",
+      "result_id": "2a0a3dbb-3aa2-43ca-af91-dc9dc8445f9f"
+    },
+    {
+      "claim_id": "e8adf649-64b2-4aeb-b560-1c929fe8f5f3",
+      "result_id": "2a0a3dbb-3aa2-43ca-af91-dc9dc8445f9f"
+    },
+    {
+      "claim_id": "b1a271cd-0084-415f-aaba-bf3d0af819ab",
+      "result_id": "4be580d2-e430-407e-a5c4-492521364c54"
+    },
+    {
+      "claim_id": "894267af-51f2-43f6-9e78-06a732374873",
+      "result_id": "18b14534-c0f9-4f8d-91c7-902b95a87782"
+    },
+    {
+      "claim_id": "7d9c8fe1-51c8-49e3-ba8f-f2edcc730de9",
+      "result_id": "18b14534-c0f9-4f8d-91c7-902b95a87782"
+    },
+    {
+      "claim_id": "b48a88b1-5f54-46c4-b111-adf691c7f9d2",
+      "result_id": "792782cb-6801-4ce4-b65f-cd7b4373c7bd"
+    },
+    {
+      "claim_id": "035a63e3-dd30-4fad-92e3-63a197540b97",
+      "result_id": "a66721dc-c0fe-474e-9b2a-e510bba557d8"
+    },
+    {
+      "claim_id": "685b45ef-9aee-4133-9006-6742891ada01",
+      "result_id": "a66721dc-c0fe-474e-9b2a-e510bba557d8"
+    },
+    {
+      "claim_id": "1c0f55b2-8104-46f9-bb16-73502288d070",
+      "result_id": "a66721dc-c0fe-474e-9b2a-e510bba557d8"
+    }
+  ],
+  "comparisons": []
+}

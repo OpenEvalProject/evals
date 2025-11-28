@@ -1,0 +1,1844 @@
+{
+  "submission": {
+    "id": "27569206-f4b1-4506-b2d5-b0cd5195a718",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:55:26.440529Z",
+    "updated_at": "2025-11-28T21:55:26.440529Z"
+  },
+  "content": [
+    {
+      "id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "submission_id": "27569206-f4b1-4506-b2d5-b0cd5195a718",
+      "content_type": "manuscript",
+      "content_text": "# Antibacterial gene transfer across the tree of life\n\n## Authors\n\n- Jason A Metcalf<sup>1</sup>\n- Lisa J Funkhouser-Jones<sup>1</sup>\n- Kristen Brileya<sup>2</sup>\n- Anna-Louise Reysenbach<sup>2</sup>\n- Seth R Bordenstein<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences Vanderbilt University Nashville United States\n2. Department of Biology Portland State University Portland United States\n3. Department of Pathology, Microbiology, and Immunology Vanderbilt University Nashville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThough horizontal gene transfer (HGT) is widespread, genes and taxa experience biased rates of transferability. Curiously, independent transmission of homologous DNA to archaea, bacteria, eukaryotes, and viruses is extremely rare and often defies ecological and functional explanations. Here, we demonstrate that a bacterial lysozyme family integrated independently in all domains of life across diverse environments, generating the only glycosyl hydrolase 25 muramidases in plants and archaea. During coculture of a hydrothermal vent archaeon with a bacterial competitor, muramidase transcription is upregulated. Moreover, recombinant lysozyme exhibits broad-spectrum antibacterial action in a dose-dependent manner. Similar to bacterial transfer of antibiotic resistance genes, transfer of a potent antibacterial gene across the universal tree seemingly bestows a niche-transcending adaptation that trumps the barriers against parallel HGT to all domains. The discoveries also comprise the first characterization of an antibacterial gene in archaea and support the pursuit of antibiotics in this underexplored group.\n\n## Introduction\n\nHGT is rampant among prokaryotes and phages and is an important mechanism for acquisition of new genes and functions (Popa and Dagan, 2011), including the shuttling of antibiotics and antibiotic resistance between bacteria (Clardy et al., 2009). Instances of interdomain horizontal transfer of diverse genes between two domains of life or between viruses and their hosts are also increasingly documented (Nelson et al., 1999; Husnik et al., 2013; Dunning Hotopp et al., 2007; Wu et al., 2013; Gladyshev et al., 2008; Bratke and McLysaght, 2008; Danchin et al., 2010). While a minority of these transfers have been functionally investigated, the biological activity, selective advantages, and ecological contexts of many interdomain HGT events remain poorly characterized (Dunning Hotopp 2011, Keeling and Palmer, 2008). In comparison to these intradomain or interdomain highways of HGT (Beiko et al., 2005), independent transmission of the same gene family to archaea, bacteria, eukaryotes, and viruses is extremely uncommon and subject to apparently rare events throughout the history of life (Moran et al., 2012; Lundin et al., 2010; Koonin et al., 2003; McClure, 2001; McDonald et al., 2012). When taken together, genome-enabled studies suggest that horizontal gene transfers (HGTs) are biased and experience a frequency gradient that decreases from within domain > between two domains > between all domains of life (Bruto et al., 2013; Zhaxybayeva and Doolittle, 2011; Puigbo et al., 2009; Andam and Gogarten, 2013, 2011). However, the fact that a large number of organisms from all domains of life have been artificially transformed with genes evolved in other taxa indicates that there is no fundamental obstruction to interdomain HGT when barriers to transfer are deliberately removed.\n\nOne significant question then is why do highways of intra- or interdomain transfers occur more frequently than transfers to all domains in the universal tree of life? There are at least two explanations. First, recurrent transfer of the same gene family may be limited by incompatible mechanics of gene transfer (e.g., transduction, transfection, plasmid exchange, isolation of eukaryotic genome in nucleus, separation of somatic and germline tissues in multicellular eukaryotes) between domains compared to within domains. However, the individual success of gene transfers between any two domains of life, for example archaea and bacteria (Nelson et al., 1999; van Wolferen et al., 2013), bacteria and eukaryote (Andersson, 2005; Bordenstein, 2007; Gladyshev et al., 2008; Danchin et al., 2010), and archaea and eukaryote (Andersson et al., 2003; Schonknecht et al., 2013), suggests that these barriers may be minimal. Second, the selective barriers against HGT of the same gene to multiple taxa and preservation of the gene through evolutionary time are multifaceted given the potential costs associated with HGT (Baltrus, 2013), and that each recipient may not benefit from the trait conferred. In the case of selfish genetic elements, HGT provides a strong benefit to the gene itself, yet these genes can be detrimental to the host organism and select for the evolution of countermeasures to gene propagation (Werren, 2011). Thus, it may be necessary for a transferred gene to confer a benefit to its new host in order to be stably maintained in the host genome over the long term. Given these evolutionary dynamics, there may be very few niche-transcending genes (Wiedenbeck and Cohan, 2011), defined as genes that are useful in different physiological capabilities, cellular structures, and ecological niches, which repeatedly increase fitness of each recipient across the whole diversity of life and can be stably and repeatedly transferred between very divergent organisms.\n\nAmong the few putative cases, there is a pore-forming toxin domain that appears to have been anciently transferred between diverse lineages (Moran et al., 2012). However, the distribution of the transfer across the tree of life is unclear because archaeal sequences were not included in phylogenetic analyses due to low support values. Other candidate genes encode proteins involved in nucleotide metabolism, intramembrane proteolysis, or membrane transport, but the transfer events defy clear interpretations due to their deep antiquity in evolutionary time and the confounding issues of ancient paralogy (Lundin et al., 2010; Koonin et al., 2003; McClure, 2001; McDonald et al., 2012). Moreover, these transfers are often not functionally validated in the recipient taxa.\n\nHere we demonstrate for the first time, to our knowledge, that a functional antibacterial gene family scattered across the tree of life in diverse ecological contexts. This bacterial gene encodes a glycosyl hydrolase 25 (GH25) muramidase, a peptidoglycan-degrading lysozyme that hydrolyzes the 1,4-\u03b2-linkages between N-acetylmuramic acid and N-acetyl-D-glucosamine in the bacterial cell wall. Typically found in bacteria (Cantarel et al., 2009), the lytic enzyme classically functions in cell division and cell wall remodeling (Vollmer et al., 2008), while in bacteriophages they lyse bacterial peptidoglycan at the end of the phage life cycle (Fastrez, 1996). Although members of the GH25 muramidase family have been noted in other taxa (Korczynska et al., 2010; Nikoh et al., 2010), extensive analysis of their evolutionary history and functions have not been undertaken. We hypothesized that the transfer of antibacterial genes from bacteria to archaea and to eukaryotes bestows a niche-transcending adaptation that overcomes the barriers against repeated and evolutionarily stable HGT of the same type of gene across the tree of life.\n\n## Results and discussion\n\n### A bacterial GH25 muramidase is present in all domains of life\n\nDuring a homology search, we uncovered 75 nonredundant sequences (E-values \u2264 10\u221212) of a bacterial GH25 muramidase in disparate taxa across the tree of life, indicating possible HGT of a bacterial gene to both eukaryotic and archaeal species as well as to phages. Putative HGT events were identified in the genomes of the plant Selaginella moellendorffii (Banks et al., 2011), the deep-sea hydrothermal vent archaeon Aciduliprofundum boonei (Reysenbach et al., 2006), the pea aphid Acyrthosiphon pisum (International Aphid Genomics Consortium 2010, Nikoh et al., 2010), and several species of fungi such as Aspergillus oryzae (Machida et al., 2005). We verified the presence of the lysozyme gene in natural populations of selected HGT recipients by PCR and sequencing of the GH25 muramidase domain (Figure 1\u2014figure supplement 1), including Aciduliprofundum field samples harvested from hydrothermal vents worldwide. We detected lysozyme genes in 9 out of 12 field isolates of Aciduliprofundum from deep-sea vents in the Atlantic and Pacific oceans, 5 out of 6 species in the plant genus Selaginella, and 8 out of 9 aphid species in the subfamily Aphidinae (Supplementary file 1). However, it is possible that PCR-negative strains actually do possess lysozyme genes and were simply more divergent than could be detected with our primers. At the protein level, sequenced field isolate lysozymes were relatively similar to each other in each clade, with 74% pairwise identity (385aa alignment) amongst Aciduliprofundum sequences, 85.1% (203aa alignment) amongst three intact Selaginella sequences, and 87.3% identity (93aa alignment) amongst Aphidinae sequences, with more variable divergence between clades (full identity matrix available in Supplementary file 2). We also found lysozymes in two additional WO phages as part of an ongoing next generation sequencing project of Wolbachia viruses (unpublished data).\n\nTo rule out spurious bacterial contamination in these genomes and to confirm genomic integration of the lysozyme gene, we employed direct sequencing of PCR products amplified using primers inside the lysozyme gene paired with primers outside the gene for Aciduliprofundum field samples and S. moellendorffii. Incorporation of the lysozyme gene was verified in all cases tested (Figure 1\u2014figure supplement 2). Additionally, Aciduliprofundum samples were grown in strict monocultures as determined by 16S amplicon monitoring. Integration of the A. pisum lysozyme has been previously established (Nikoh et al., 2010). Flanking genes in the recipient genomes were non-bacterial on either side of the transferred lysozyme in each case (Figure 1, Supplementary file 3), with two exceptions. A bordering gene in A. boonei, ADP-ribose-1\u201d-monophosphatase (App-1), possesses both bacterial and archaeal homologs and a phylogenetic analysis suggests HGT unrelated to the lysozyme transfer (Figure 1\u2014figure supplement 3A). This transfer was likely between archaea and Thermotogae bacteria. The second exception is a GH2 hydrolase gene adjacent to the lysozyme in A. oryzae. This hydrolase has bacterial homologs in the phylum Actinobacteria, and recapitulates the same phylogenetic pattern seen in the GH25 muramidase (see below, Figure 1\u2014figure supplement 3B). Thus, it is likely that the lysozyme and GH2 hydrolase were transferred to fungi in a single event. GH2 hydrolases have a number of carbohydrate-degrading enzymatic abilities (Cantarel et al., 2009), including \u03b2-galactosidase, \u03b2-mannosidase, and \u03b2-glucuronidase activities, suggesting that this gene may benefit the fungi by adding additional digestive/nutritive capabilities in Dikarya.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig1-v1.jpg)\n\n**Figure 1.:** Each arrow represents an open reading frame transcribed from either the plus strand (arrow pointing right) or the minus strand (arrow pointing left). The color of the arrow indicates the taxa the gene is found in based on its closest homologs. Black = Eubacteria, purple = virus, red = Archaea, green = Plantae, Orange = Fungi, Blue = Insecta, white = no known homologs, dashed line = present in multiple domains. The length of the arrows and intergenic regions are drawn to scale except where indicated with broken lines. The four paralogs of the lysozyme in S. moellendorffii occur on two genomic scaffolds with light green bands connecting homologous genes. Vertical arrows indicate the location of introns in the A. oryzae and A. pisum lysozymes. Abbreviations: Lys: lysozyme, gpW = phage baseplate assembly protein W, SH3: Src homology domain 3, App-1 = ADP-ribose-1\u201d-monophosphatase, PRT = phosphoribosyltransferase, LD = leucoanthocyanidin dioxygenase; IMP = integral membrane protein. A protein diagram for each lysozyme is drawn to scale with the light gray regions highlighting a conserved protein domain. *A. pisum diagram is based on Acyr_1.0 assembly and transcription data (Nikoh et al., 2010); the annotation in Acyr_2.0 is different.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) PCR amplifications of portions of the GH25 muramidase domain in the indicated taxa. All amplifications were Sanger sequenced to confirm integration. Primers used are listed in Table S3. Abbreviations: Sb: S. braunii, Sm: S. moellendorffii, Su: S. uncinata, Ssa: S. sanguinolenta, Sst: S. stauntoniana, Sl: S. lepidophylla, E: East Pacific Rise, L: Lao Spreading Center, M: Mid-Atlantic Ridge, Pu: Pleotrichophorus utensis, Aa: Artemisaphis artemisicola, Ue: Uroleucon erigeronensis, Av: Aphis varians, Ap: Acyrthosiphon pisum, Al: Aphis lupini, Cs: Cedoaphis sp., As: Aphthargelia symphoricarpi, Bs: Braggia sp., - denotes water only control. (B) World map with approximate locations of A. boonei field samples. Those that tested positive for the GH25 muramidase domain are indicated by green stars and those that tested negative are indicated by red stars. Map is a public domain image from Wikimedia Commons.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Primers used are listed in Supplementary file 1 and binding sites are indicated in gene diagrams with small black arrows. All integrations were confirmed with Sanger sequencing. Abbreviations: Sm: S. moellendorffii, L: Lao Spreading Center, - denotes water only control, CHP = conserved hypothetical protein, App-1 = ADP-ribose-1\u201dmonophosphatase, PRT = phosphoribosyltransferase.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) App-1 phylogeny based on alignment of 141aa without indels consisting of top E-value hits to blastp using A. boonei App-1 as the query. Taxon of origin for each amino acid sequence is indicated by color. Posterior probability is indicated at all nodes with values above 50. Branch lengths represent number of substitutions per site as indicated by scale bar. Tree is arbitrarily rooted. (B) GH2 hydrolase phylogeny based on an alignment of 188aa without indels consisting of top E-value hits to blastp using A. oryzae hydrolase as the query.\n\n### Non-bacterial GH25 muramidases arose from HGT\n\nTo establish parallel HGT, i.e., the independent transfer of the same gene family to multiple lineages, we conducted a phylogenetic analysis on 86 GH25 muramidase sequences using Bayesian and maximum likelihood inference methods (Figure 2A). We combined non-redundant Aciduliprofundum, Selaginella, and WO sequences obtained from PCR and Sanger sequencing with blastp results to reconstruct the phylogeny. Putative instances of HGT are diagrammed in Figure 3. Additionally, transferred lysozymes in nonbacterial taxa were used as queries to identify homologs and make a second set of phylogenetic trees to confirm the HGT (Figure 2B\u2013D, Figure 2\u2014figure supplements 1 and 2, Supplementary file 4). Three key results emerge from these phylogenetic analyses: (i) at least three independent instances of interdomain HGT of the bacterial GH25 muramidase occurred in nonbacterial taxa (Aciduliprofundum, Selaginella, and Insecta) as well as a number of transfers to bacteriophages, (ii) vertical transmission of the transferred gene ensues in some descendant taxa (i.e., Aciduliprofundum and Selaginella), and (iii) frequent HGT of the muramidase between bacterial clades accompanies the interdomain transfer, indicating unusually frequent and broad-ranging HGT of this niche-transcending gene family.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig2-v1.jpg)\n\n**Figure 2.:** (A) Phylogeny based on alignment of 113aa without indels consisting of top E-value hits to blastp using WORiA phage lysozyme as a query. Taxon of origin for each amino acid sequence is indicated by color. Posterior probability (Bayesian phylogeny) and bootstrap values (maximum likelihood phylogeny) are indicated at all nodes with values above 50. Branch lengths represent number of substitutions per site as indicated by scale bar. Tree is arbitrarily rooted. Iterative phylogenies based on top E-value blastp hits to A. boonei lysozyme (B), A. pisum lysozyme (C), and S. moellendorffii lysozyme (D) are also shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Consensus alignment of GH25 muramidases without indels used in iterative phylogenies in Figure 2 is shown for (A) A. boonei, (B) A. pisum, and (C) S. moellendorffii. Conservation is indicated by amino acid symbol size and bar graphs below the consensus sequence.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Phylogeny based on alignment of 186aa without indels consisting of top E-value hits to blastp using A. oryzae lysozyme as a query. Taxon of origin for each amino acid sequence is indicated by color. Posterior probability (Bayesian phylogeny) and bootstrap values (maximum likelihood phylogeny) are indicated at all nodes with values above 50. Branch lengths represent number of substitutions per site as indicated by scale bar. Tree is arbitrarily rooted.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Phylogeny based on alignment of 282 bp without indels consisting of top E-value hits to blastn using A. oryzae lysozyme exon 2 as a query. Taxon of origin for each nucleic acid sequence is indicated by color. Posterior probability (Bayesian phylogeny) and bootstrap values (maximum likelihood phylogeny) are indicated at all nodes with values above 50. Branch lengths represent number of substitutions per site as indicated by scale bar. Tree is arbitrarily rooted.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig3-v1.jpg)\n\n**Figure 3.:** Bayesian phylogeny based on the 16S rRNA gene from selected taxa is shown. Colored lines indicate putative horizontal gene transfer events, although other possible HGT patterns cannot be definitively excluded. Posterior probabilities are noted at each node.\n\nTo statistically validate parallel HGT across the tree of life, we performed a Shimodaira\u2013Hasegawa test (SH-test) (Shimodaira and Hasegawa, 1999) by comparing our consensus tree (Figure 2A) against a hypothetical tree with a binary constraint in which bacterial sequences are monophyletic and separate from monophyletic nonbacterial sequences. In this hypothetical tree consistent with the tree of life, lineage relationships within the bacterial and nonbacterial groups were permissively set as unconstrained. Results indicate that the hypothetical tree is significantly worse than the HGT tree, as expected (p<0.01, D(LH) = \u2212133.9, SD = 31.5). We repeated this analysis with the hypothetical tree compared to 100 randomly sampled HGT trees from maximum likelihood bootstrapping and found the hypothetical tree was also worse than each of these trees (p<0.01). Finally, we performed SH tests between the HGT tree and either 1) a three-domain constraint tree or 2) a monophyletic eukaryote branch constraint tree, and again found that the constraint trees were significantly worse than the HGT tree (p<0.01). Thus, the null hypothesis of vertical descent is rejected, even under the most permissive conditions.\n\nWe observed that each interdomain HGT event (Figure 2) occurred between taxa that coexist in the same ecological niche, a likely prerequisite for HGT. For instance, the A. boonei lysozyme is in a clade dominated by Firmicutes whose members can be common in deep ocean sediments (Orcutt et al., 2011a). Indeed, Bacillus species have even been found in hydrothermal vents of the same fields in which Aciduliprofundum strains were isolated (Reysenbach et al., 2000). The A. pisum lysozyme clade includes Wolbachia prophages and Proteobacteria, which are common endosymbionts of aphids and other insects (Gomez-Valero et al., 2004; Augustinos et al., 2011; Wang et al., 2014). The S. moellendorffii plant lysozyme is closely related to Actinobacteria, which are dominant microbes in soil (Bulgarelli et al., 2013). These associations, while not proof of HGT, establish interactions that may have facilitated the transfers, although any number of intermediate gene carriers is possible. While the phylogenetic pattern of the GH25 muramidase found in fungi is consistent with HGT (Figure 2A, Figure 2\u2014figure supplement 2), the transfer occurred anciently in fungal evolution prior to the divergence of Dikarya, as the domain is present in both Basidiomycota and Ascomycota, but not other fungal phyla. As is the case with most putative ancient transfers, the deep branches of the tree are poorly supported and a definitive donor taxon cannot be established. Additionally, the possibility of multiple ancient transfers between bacteria and fungi or among fungi and plants cannot be excluded. However, a nucleotide-level phylogeny also supports HGT from an ancestral Actinobacterium (Figure 2\u2014figure supplement 3).\n\nInterestingly, the lysozyme gene in the aphid A. pisum consists of a fusion of a bacterial GH25 muramidase domain and a eukaryotic carboxypeptidase domain. The gene includes five introns (Nikoh et al., 2010), none of which interrupt the GH25 domain, consistent with a relatively recent HGT event and the absence of the gene from most sequenced insects (Figure 1). The lysozyme in the fungus A. oryzae, meanwhile, contains only a single intron, but it does interrupt the GH25 domain, consistent with the domain\u2019s long association with fungi from the subkingdom Dikarya (Figure 1). We found no evidence of a GH25 muramidase in 323 sequenced archaeal genomes spanning all the major phyla and sister taxa to A. boonei (Reysenbach et al., 2006; Flores et al., 2012). This lack of homology does not appear to be due to insufficient representation of archaeal diversity, as the 323 members span all of the major phyla: Crenarchaeota (56), Euryarchaeota (205), Nanoarchaeota (10), and Thaumarchaeota (39). Indeed, if vertical descent were assumed for a recent Bayesian phylogeny of archaea with sequenced genomes (Brochier-Armanet et al., 2011), this would require at least 10 independent losses of the lysozyme gene, an assumption that is certainly less parsimonious than a single HGT event. Moreover, the relative divergence of the small subunit rRNA gene in A. boonei compared to the putative bacterial HGT donors is greater than the relative divergence of the lysozyme gene (Figure 4), a finding that is inconsistent with both genes being transmitted by vertical descent. Also, there are no other homologs beyond those presented in this study in 132 plant genomes, and only one insect species with additional homologs out of 109 insect genomes. Thus, if the lysozyme were present in the last common ancestor of all domains, it would require the unlikely loss of the gene in dozens of lineages while maintaining it in an exceedingly small number of species. In summary, the presence of a GH25 muramidase in nonbacterial species represents a series of recurrent, independent horizontal gene transfer events derived from diverse, ecologically associated bacteria.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig4-v1.jpg)\n\n**Figure 4.:** (A) Unrooted Bayesian phylogeny of the GH25 muramidase from A. boonei and selected relatives, based on an alignment of 185aa without indels. Taxon of origin for each nucleic acid sequence is indicated by color. Posterior probability is indicated at all nodes with values above 50. Branch lengths represent number of substitutions per site as indicated by scale bar. (B) Unrooted Bayesian phylogeny of the 16S rRNA gene for the same taxa as in (A), based on an alignment of 1,156 bp without indels.\n\n### A. boonei GH25 muramidase is antibacterial\n\nWe next undertook a series of experiments to test the hypothesis that the transferred muramidase functions as an antibacterial molecule. Since HGT frequently results in pseudogenized and nonfunctional genes (Kondrashov et al., 2006; Nikoh et al., 2010, 2008; Dunning Hotopp et al., 2007), we first investigated the amino acid sequences for preserved antibacterial action of the transferred lysozymes in nonbacterial genomes. We aligned all 86 GH25 muramidase sequences to identify conserved sites (Figure 5A). We then mapped the conserved amino acids to a three-dimensional structure prediction of the A. boonei GH25 muramidase domain (Figure 5B). Highly conserved residues (>85% identity between all taxa) invariably mapped to the previously identified active site pocket (Martinez-Fleites et al., 2009). Conservation was also evident for structure predictions of other GH25 muramidases in the phylogeny such as S. moellendorffii (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig5-v1.jpg)\n\n**Figure 5.:** (A) Consensus alignment of 86 GH25 muramidases with insertions and deletions removed. Conservation is indicated by amino acid symbol size and bar graphs below the consensus sequence. Active site residues and highly conserved amino acids modeled below are indicated with red and orange asterisks, respectively. (B) Space-filling model of the active site face of the predicted structure of A. boonei GH25 muramidase domain and (C) S. moellendorffii GH25 muramidase domain. Active site residues are indicated in red and the eight additional residues most highly conserved across all 86 proteins are orange.\n\nSecond, we cloned, expressed, and purified the GH25 muramidase domain from the archaeon A. boonei as well as from closely related homologs in Paenibacillus polymyxa and PhiBP. We obtained each muramidase in a pure elution (Figure 6\u2014figure supplement 1) and tested for antibacterial action against a range of bacterial species. As predicted, the A. boonei GH25 muramidase efficiently killed several species of bacteria in the phylum Firmicutes - the putative donor group of the gene (Figure 6A). The bacterial inhibition by A. boonei GH25 muramidase was more potent than the positive control, chicken egg white lysozyme, and was dose-dependent (Figure 6B). Bacterial and phage muramidases did not elicit antibacterial killing, similar to cyan fluorescent protein and buffer-only negative controls. Bacteria typically use a large protein complex to limit their lysozymes\u2019 activity to the septum during cell division (Uehara and Bernhardt, 2011), and PhiBP phage has a documented spectrum of activity limited only to a P. polymyxa strain unavailable for our analyses (Halgasova et al., 2010). As expected, the A. boonei GH25 muramidase did not exhibit antibacterial activity against Gram-negative species or Gram-positive species outside of the families Bacillaceae and Paenibacillaceae, which was equivalent to the killing range of chicken egg white lysozyme with the exception of the Actinobacterium Micrococcus luteus (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig6-v1.jpg)\n\n**Figure 6.:** (A) Bacteria of the specified strain/species incubated overnight on tryptic soy agar after a 20-min liquid preincubation with the proteins indicated. Genera: B = Bacillus, P = Paenibacillus. Proteins: CEWL = chicken egg white lysozyme, P. poly = P. polymyxa lysozyme, PhiBP = bacteriophage PhiBP lysozyme, A. boo = GH25 domain of A. boonei lysozyme, CFP = cyan fluorescent protein. Images are representative of at least three independent experiments. (B) Dose-dependence of A. boonei GH25 muramidase antibacterial action. B. subtilis colony survival is shown after incubation with A. boonei GH25 muramidase at the indicated concentrations for 20 min at 37\u00b0C. N = 10 for each concentration. p < 0.001 for linear model fit. Error bars are \u00b1 SEM.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** PAGE gel stained with GelCode blue before and after purification of 6x-histidine tagged enzymes using nickel affinity chromatography. L = crude E. coli lysate expressing the indicated lysozyme, E = elution after lysozyme purification. P. poly = P. polymyxa lysozyme, PhiBP = bacteriophage PhiBP lysozyme, A. boo = A. boonei GH25 domain.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Bacteria of the specified strain/species incubated overnight on tryptic soy agar after a 20-min liquid preincubation with the proteins indicated. Genera: L = Listeria, S = Staphylococcus, E. saccharolyticus = Enterococcus, M = Micrococcus, E. cloacae = Enterobacter, E. coli = Escherichia, S = Serratia, D = Deinococcus. Proteins: CEWL = chicken egg white lysozyme, P. poly = P. polymyxa lysozyme, PhiBP = bacteriophage PhiBP lysozyme, A. boo = GH25 domain of A. boonei lysozyme, CFP = cyan fluorescent protein. Images are representative of at least three independent experiments.\n\nThird, the A. boonei muramidase domain is part of a larger gene (1725 bp) composed of other domains that may broaden or constrain the range of antibacterial activity. To test the full-length gene's function in the absence of genetic tools in this system, we cloned the entire gene into an expression plasmid in E. coli and discovered that bacterial colonies grew poorly, with tiny, slow-growing colonies on solid media, and substantial cell death coinciding with a small amount of leaky expression in liquid culture (Figure 7A). However, two colonies grew to normal size and upon sequencing, we determined that their expression plasmids were disrupted by insertions of 774 bp (mutant 1) and 768 bp (mutant 2) of a native IS1 family transposase from E. coli at 21 bp or 266 bp from the start of the lysozyme gene, respectively. These insertions also resulted in a number of premature stop codons in the lysozyme reading frame, disrupting production of the full-length gene (Figure 7B). Thus, E. coli death requires intact and full-length lysozyme, and toxicity is not due to the expression construct itself. In sum, expression of the complete lysozyme resulted in E. coli death, while cloned genes with insertion sequences and premature stop codons abolished the lytic capacity of these proteins from within E. coli cells, providing evidence for an expanded host range to the antibacterial action.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig7-v1.jpg)\n\n**Figure 7.:** (A) Live/dead stain of BL21 (DE3) E. coli transformed with expression constructs for the full-length lysozyme from A. boonei or a control lysozyme WORiA, a bacteriophage infecting Wolbachia pipientis strain wRi, after overnight growth without induction. PAGE gels of crude E. coli lysates from E. coli expressing the indicated lysozyme after 6 hr of induction are also shown with the expected sizes of lysozymes indicated with arrows. (B) Structure of original full-length A. boonei lysozyme expression plasmid and two spontaneous knockout mutants caused by insertion of 774 bp (mutant 1) and 768 bp (mutant 2) of IS1 transposase sequences. These insertions also resulted in a number of stop codons in the reading frame of the lysozyme. Knockout mutants grew to normal colony size, while all wild type colonies had intact expression plasmids, grew poorly, and died over time in liquid culture.\n\nFourth, if horizontally transferred lysozymes serve as antibacterials to fend off bacterial niche competitors, two predictions follow: the lysozyme will be upregulated in response to bacterial competition and upregulation may correlate with a relative growth advantage in coculture. We thus cultured A. boonei cells in anaerobic marine media (Reysenbach et al., 2006) with and without cohabiting Mesoaciditoga lauensis (phylum Thermotogae) that was isolated from the same hydrothermal vent field as Aciduliprofundum in the Eastern Lau Spreading Center (Reysenbach et al., 2013). As expected, we observed a significant increase in A. boonei lysozyme expression at four (up to 127% increase) and 12 hr (up to 43% increase) of coculture with M. lauensis in comparison to negative control cultures of the singular A. boonei (Figure 8A). Ideally, A. boonei wild type and lysozyme knockouts would be employed to test relative fitness and bacterial inhibition. However, genetic manipulation of A. boonei is not currently feasible.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04266/elife-04266-fig8-v1.jpg)\n\n**Figure 8.:** (A) Expression of A. boonei GH25 muramidase relative to the control gene elongation factor 1\u03b1, after the indicated time of coculture with M. lauensis (M.l) at the specified ratio relative to A. boonei. *p < 0.05, **p < 0.01, by Mann\u2013Whitney U pairwise comparisons. N = 6 for all samples. Primers are listed in Supplementary file 1. (B) Relative fitness of A. boonei vs M. lauensis in monoculture (N = 5) and coculture (N = 4). (C) Growth of A. boonei (red) and M. lauensis (blue) monocultures over time. Significant differences in cell abundance occur at 24, 52, and 64 hr (p < 0.05), and 56 and 60 hr (p < 0.01) based on pairwise Wilcoxon tests. (D) Growth of A. boonei and M. lauensis in coculture over time. Significant differences in cell abundance occur at 48, 52, and 64 hr (p < 0.05) based on pairwise Wilcoxon tests. Error bars are \u00b1SEM for all panels.\n\nGrowth experiments of A. boonei and M. lauensis were continued for 72 hr, during which there was a relative Malthusian fitness (Lenski et al., 1991) increase for A. boonei in coculture vs. monoculture (Figure 8B) across the exponential growth phase. This difference is marginally non-significant, perhaps due to low sample sizes (p = 0.11, N = 5, MWU two-tailed test). When the species are cultured separately for 72 hr, M. lauensis cell abundance is greater than that of A. boonei during 14 out of the 19 sampling points (Figure 8C, blue circles), indicating that bacteria outperform archaea in monoculture conditions. However, when the two species are cocultured, the cell abundances reverse and A. boonei outperforms M. lauensis for 14 out of the 19 time points (Figure 8D, red circles). This competitive frequency difference is significant (Chi-square test, p = 0.0035), complementing the Malthusian fitness increase. Additionally, for each monoculture time point, there are 4.43% fewer A. boonei cells on average than M. lauensis, while in coculture there are 6.22% more A. boonei cells per time point (Mann Whitney U. p = 0.023). Thus, A. boonei outcompetes its bacterial competitor in coculture despite a higher monoculture growth rate for the bacteria, although whether lysozyme upregulation is directly responsible for this effect cannot be definitively proven. Other possible explanations for this finding include A. boonei scavenging of bacterial waste products, possessing a superior ability to obtain a rate-limiting nutrient, or deploying alternative antibacterial defense mechanisms.\n\n### Conclusions\n\nThe universal tree represents the evolutionary relationships between cellular domains and establishes the modern foundation for benchmarking the magnitude of HGT across life. Indeed, HGTs have been described between each domain including archaea and bacteria (Nelson et al., 1999; van Wolferen et al., 2013), bacteria and eukaryote (Andersson, 2005; Bordenstein, 2007; Gladyshev et al., 2008; Danchin et al., 2010), and archaea and eukaryote (Andersson et al., 2003; Schonknecht et al., 2013). Despite these cases and others (Brown, 2003; Zhaxybayeva and Doolittle, 2011), HGTs are not without limits and often succumb to the selective costs of genomic rearrangements, cytotoxic effects, disruptive insertions, and functional inefficiencies upon integration (Baltrus, 2013).\n\nIt follows then that HGTs do not occur at equal rates across the universal tree, but rather experience preferential routes in which the costs of HGT are easier to overcome. The resulting pattern of HGT can be understood as a gradient of decreasing frequency from within domain > between two domains > between all domains of life (Bruto et al., 2013; Zhaxybayeva and Doolittle, 2011; Puigbo et al., 2009; Andam and Gogarten, 2011, 2013). In support of this pattern, the overwhelming evidence of gene transfers between bacteria is counterbalanced by the extreme lack of parallel gene transfers across all extant groups of life. As these parallel transfers are usually ancient and occur in non-model organisms (Lundin et al., 2010; Koonin et al., 2003; McClure, 2001; McDonald et al., 2012; Moran et al., 2012), they can defy clear interpretations due to their deep antiquity and lack of functional validation.\n\nOne feature that parallel HGTs have in common is that the gene's phenotype must transcend different physiological capabilities, cellular structures, and ecological niches to repeatedly increase the fitness of each recipient across the whole diversity of life. While not traditionally used in the context of parallel HGT across all cellular domains, the term niche-transcending gene appropriately captures these conditions (Wiedenbeck and Cohan, 2011). The lysozyme gene family we describe in archaea, bacteria, eukaryotes, and viruses provides one such example because the adaptive benefit of an antibacterial muramidase has repeatedly surmounted the obstacles against recurrent HGT. Indeed, horizontally transferred homologs of the GH25 muramidase exhibit differential tissue expression in A. pisum (Nikoh et al., 2010) and bacteriolytic activity in the fungus Aspergillus nidulans (AN6470.2) (Bauer et al., 2006). Thus, the horizontally transferred homologs in eukaryotes confer the same transcriptional and enzymatic activity as in the archaea.\n\nThe muramidase in a thermophilic archaeon is of special note as archaea do not possess murein cell walls (Albers and Meyer, 2011), and genes encoding an antibacterial peptide have never before been identified (Cantarel et al., 2009). Members of the genus Aciduliprofundum are widespread thermoacidophiles in deep-sea hydrothermal vent chimney biofilms (Flores et al., 2012) in which bacteria are frequent inhabitants (Orcutt et al., 2011a; Miroshnichenko and Bonch-Osmolovskaya 2006), including the M. lauensis species tested above. Archaea have been largely ignored in the context of antibiotic discovery, likely because of the conjecture that archaea do not compete with bacteria in nature. However, given that they coexist with diverse bacterial species in the environment (Oren, 2002; Kato and Watanabe, 2010; Orcutt et al., 2011b) and can compete for similar resources, there may be significant, unexploited potential for antibiotics in this domain. Only a handful of antimicrobial peptides produced by archaea have been characterized, and those are active only against other archaea (O'Connor and Shand 2002) despite the fact that archaea are known to inhibit bacteria in diverse environments (Atanasova et al., 2013; Shand and Levya, 2008). It is also possible that since Aciduliprofundum strains metabolize peptides, the lysozyme enables a nutritive strategy in which lysed bacteria provide nutrients for the archaeon to scavenge.\n\nBased on this work, we suspect that systematic surveys of archaeal gene products will likely uncover a broad range of antibacterial activities, and may eventually offer novel peptide or small molecule therapeutics. Such antibacterial products may have naturally evolved thermostability that would increase their attractiveness as therapeutics. GH25 muramidases have been demonstrated as effective antibacterials against biofilms of Streptococcus pneumoniae (Domenech et al., 2011) and related enzymes have proven efficacious in mouse models of bacterial mucosal colonization (Fenton et al., 2010), sepsis (Loeffler et al., 2003), and endocarditis (Entenza et al., 2005).\n\nIn summary, we infer that the evolutionary path to this parallel HGT was paved by the universal drive for nonbacterial taxa to compete in a bacterial world. We predict that similar to the cascade of antibiotic gene transfer discoveries that followed their initial reporting, parallel transfers of genes to all cellular domains and viruses might regularly have antimicrobial functions.\n\n## Materials and methods\n\nUnless otherwise stated, reagents were obtained from Fisher Scientific (Waltham, WI).\n\n### PCR and sequencing\n\nPCR was performed using GoTaq DNA Polymerase (Promega, Madison, WI) with primers listed in Supplementary file 1. PCR products were electrophoresed using 1% agarose gels in sodium boric acid buffer. Following electrophoresis, gels were dyed with GelRed (Phenix Research, Candler, NC) and imaged on an Alpha Innotech GelRed Imager (Alpha Innotech, San Leandro, CA). Amplified bands were excised from the gels and purified with an SV Wizard Gel Cleanup kit (Promega). Following purification, DNA concentration was measured using the Qubit DNA high sensitivity kit (Life Technologies, Grand Island, NY) and sequencing reactions were performed by Genewiz (South Plainfield, NJ).\n\n### Bioinformatics\n\nThe lysozyme protein from Wolbachia prophage WORiA (ZP_00372884) was used as a query in a blastp search of the NCBI nonredundant protein database using Geneious Pro v5.5.6. All hits with E-values below 10\u221212 were collected and duplicate entries were removed. Sequences from field and laboratory samples were added to this collection and aligned with MUSCLE (Edgar, 2004), insertions and deletions were removed, and the eight most highly conserved residues from the MUSCLE alignment were mapped to a structure prediction of A. boonei lysozyme using PyMOL. Structure prediction was performed using the homology-based modeling tool Phyre2 (Kelley and Sternberg, 2009). For phylogenetic analyses, ProtTest (Abascal et al., 2005) was used to determine the best model of protein evolution based on the corrected Akaike information criterion (AICc). MrBayes (Ronquist et al., 2012) and PhyML (Guindon et al., 2010) were used to build a phylogenetic tree with Bayesian and maximum likelihood methods, respectively. For the global lysozyme phylogeny, the best model chosen by ProtTest (LG + I + G) was used to generate the maximum likelihood tree, while the third best model (WAG + I + G; \u0394AICc: 74.82) was used to generate the Bayesian tree due to a lack of LG model availability in MrBayes. S. sanguinolenta and S. stauntoniana lysozymes were excluded from this analysis because frameshift mutations suggest the genes may be evolving in the absence of selection, while Aphidinae lysozymes were not included because of shorter sequences of the GH25 muramidase domain obtained through the use of degenerate primers that would have limited resolution of the tree.\n\nIn an iterative approach, each candidate example of HGT was used as a blastp query against the nr database and the top 15 (A. boonei, A. pisum, S. moellendorffii) or top 75 (A. oryzae) E-value hits were subjected to the same phylogenetic analysis as above. Evolutionary models used were A. boonei: WAG + I + G on a 148aa indel-free alignment, A. pisum: CpREV + I + G on a 190aa indel-free alignment, S. moellendorffii: WAG + I + G (\u0394AICc: 44.28) on a 200aa indel-free alignment, A. oryzae: WAG + G (Bayesian, \u0394AICc: 4.49) or LG + G (maximum likelihood) on a 186aa indel-free alignment. The fungal lysozyme was also phylogenetically analyzed on the DNA level using the top 25 E-value blastn hits to exon 2 of the A. oryzae lysozyme gene. jModelTest 2 (Darriba et al., 2012) was used to determine the best model of nucleic acid evolution (GTR + I + G, \u0394AICc: 7.33) of a 282 bp indel-free alignment. The archaea HGT clade was also analyzed phylogenetically with a Bayesian tree of selected taxa using lysozyme protein sequences (WAG + I + G, 185aa) and compared to 16S rRNA (GTR + G, 1,156 bp) for the same strains obtained from SILVA (Quast et al., 2013). A schematic representation of putative HGT events was plotted on a Bayesian phylogeny based on the 16 s rRNA gene (GTR + G, 1,226 bp). Representative species used for this phylogeny were Magnetospirillum magneticum (Proteobacteria), Paenibacillus polymyxa (Firmicutes), Arthrospira maxima (Cyanobacteria), Crenarchaeota archaeon SCGC AAA471-B05, Chthoniobacter flavus (Verrucomicrobia), Thermotoga maritima (Thermotogae), Pedobacter saltans (Bacteroidetes), Streptomyces violaceusniger (Actinobacteria).\n\nStatistical support for the HGT hypothesis was assessed with the Shimodaira\u2013Hasegawa test (SH-test) (Shimodaira and Hasegawa, 1999) as implemented in RAxML v.8.0.20 (Stamatakis, 2014). An unresolved binary constraint tree was generated in MacClade v4.08, in which bacterial sequences are monophyletic, as are nonbacterial sequences, with all other topology unconstrained. This constraint tree was used to generate a maximum likelihood best tree with RAxML, using the same evolutionary models as above. The SH-test was then run comparing the maximum likelihood constrained tree to the unconstrained consensus Bayesian tree or to 100 bootstrap trees from the maximum likelihood analysis from PhyML. This procedure was repeated for a three-domain constraint tree consistent with the tree of life and with a constraint tree in which eukaryotic sequences were monophyletic and other sequences were unconstrained.\n\n### Lysozyme cloning and purification\n\nA. boonei GH25 muramidase domain (ZP_04874596), P. polymyxa lysozyme (YP_003869492), and PhiBP lysozyme (CBA18122) were cloned and expressed with a 6x C-terminal histidine tag using an Expresso T7 Cloning and Expression System (Lucigen, Middleton, WI) according to the manufacturer's instructions. We also cloned the S. moellendorffii and A. oryzae GH25 muramidases, however recombinant 6\u00d7 histidine-tagged proteins were insoluble when expressed in either E. coli or sf9 insect cells and attempts to solubilize them were unsuccessful. Sequence-confirmed expression plasmids and a control plasmid expressing cyan fluorescent protein (CFP) were transformed into HI-Control BL21 (DE3) E. coli cells. Cultures at an OD600 of \u223c0.5 were induced with 1 mM IPTG for 6 hr, centrifuged, and frozen at \u221280\u00b0C until purification. Frozen pellets were resuspended in lysis buffer containing 10 mM Tris\u2013HCl, pH 7.5, 300 mM NaCl, 0.5% Triton X-100, 0.3% sodium dodecyl sulfate, and 1 mM phenylmethylsulfonylfluoride and sonicated 5 times for 30 s with at least 1 min on ice between sonications. Samples were centrifuged and recombinant proteins were purified from supernatant using HisPur Ni-NTA chromatography cartridges (Thermo Scientific, Waltham, MA) according to manufacturer's instructions. Glycerol at a final concentration of 40% was added to enzymes in elution buffer for storage at \u221220\u00b0C for a maximum of 3 weeks before use in antibacterial assays. Purifications were analyzed with denaturing polyacrylamide gel electrophoresis and stained with GelCode Blue (Thermo Scientific).\n\nFull-length A. boonei lysozyme and WORiA lysozyme were cloned into a pET-20b vector (EMD Millipore, Darmstadt, Germany) with a C-terminal 6\u00d7 histidine tag and sequence-confirmed plasmids were transformed into BL21 (DE3) E. coli (EMD Millipore). Three colonies from each transformation were inoculated into LB media and grown to an OD600 of \u223c0.5, induced for 4 hr with 1 mM IPTG and harvested for analysis on PAGE gels. Overnight cultures without induction were examined for bacterial death with a BacLight Live/Dead Stain (Life Technologies).\n\n### Antibacterial assays\n\nPurified A. boonei GH25 muramidase, P. polymyxa lysozyme, PhiBP lysozyme, CFP, and commercially purchased CEWL (Sigma-Aldrich, St. Louis, MO) were diluted to 100 \u03bcg/ml in buffer EG (60% nickel column elution buffer, 40% glycerol) and filter sterilized. Bacteria to be tested were grown overnight in tryptic soy broth, split 1:10, and incubated to exponential growth before being diluted into each enzyme solution. Samples were incubated with shaking for 20 min at 37\u00b0C and then 5 \u03bcl was spotted onto tryptic soy agar and incubated overnight at 37\u00b0C. To evaluate whether antibacterial activity is dose-dependent, B. subtilis was incubated with A. boonei GH25 muramidase at 100 \u03bcg/ml, 75 \u03bcg/ml, 50 \u03bcg/ml, 25 \u03bcg/ml and 0 \u03bcg/ml and 100 \u03bcl was spread on tryptic soy agar plates. Replicates of 10 were performed for each concentration, plates were incubated overnight at 37\u00b0C, and colonies were counted the following morning. Bacterial strains used in these experiments are listed in Supplementary file 1.\n\n### A. boonei cultures\n\nA. boonei and M. lauensis cultures were performed as previously described (Reysenbach et al. 2006) with the following modifications: yeast extract was added at 2.0 g/l, pH was adjusted to 4.8, and cultures were incubated at 65\u00b0C. For gene expression studies, 8.2 \u00d7 105 cells were inoculated into 5 ml cultures in 6 replicates each of monocultures and cocultures at 0.1:1, 1:1, and 1:0.1 ratios and 500 \u03bcl samples were collected after 4 and 12 hr of co-incubation and frozen for expression analysis. RNA was isolated from frozen samples using an RNeasy Mini Kit (Qiagen) and QIAshredder (Qiagen), DNA contamination was removed with a Turbo DNAfree Kit (Life Technologies), and reverse transcription was performed using a Superscript III first Strand Synthesis System (Life Technologies) along with no-reverse transcriptase controls. Quantitative PCR was performed with GoTaq qPCR Master Mix (Promega) using a CFX96 Real-Time System (Bio-Rad, Hercules, CA). Primers are listed in Supplementary file 1. For competition studies, 5 replicates of 5 ml cultures were inoculated as monocultures or 1:1 cocultures and 175 \u03bcl was collected every 4 hr for counting of relative species abundance with a hemocytometer. Relative fitness was calculated based on Malthusian parameters over the period of exponential growth as previously described (Lenski et al., 1991).\n",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "c37cf766-4779-4185-b758-02c6976c5d0d",
+      "submission_id": "27569206-f4b1-4506-b2d5-b0cd5195a718",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wilfred van der Donk, University of Illinois-Urbana Champaign , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04266.023](https://doi.org/10.7554/eLife.04266.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAntibacterial Gene Transfer Across the Tree of Life\u201d for consideration at eLife. Your article has been favorably evaluated by Diethard Tautz (Senior editor), Wilfred van der Donk (Reviewing editor), and 3 reviewers (Peter Gogarten, Anthony Poole, and David Baltrus). The Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe study provides clear evidence for the transfer of the GH25 muramidase between the three domains of life. Phylogenetic analyses establish that the eukaryotic and archaeal versions of the gene have bacterial neighbors and that the transfers occurred more recently than the splitting of the domains. Furthermore, the use of phenotypic tests as well as expression in E. coli establishes that the GH25 muramidase is functional across its range and not a pseudogene or other non-functional relic. The assessment of genomic context also supports that the GH25 muramidase gene has been transferred from bacteria to archaeal and eukaryote recipients.\n\nThe potential antibacterial role of the GH25 muramidase gene in the archaeal recipient Aciduliprofundum boonei is addressed by showing that the product of the transferred gene exhibits antibiotic properties against expected species in purified form. Experimental work in a non-model system that lacks standard genetic tools is challenging, so these experiments along with the data in E. coli provide a good means of assessing function.\n\nFinally, the authors test whether the gene can impact competitors. Again, without the capacity to undertake direct knockouts, the authors do an admirable job of testing this, by examining relative growth in both monocultures and cocultures with Mesoaciditoga lauensis, a bacterium known to cohabit the environments from which A. boonei has been isolated.\n\nAll reviewers agreed that this study is of high interest to the readership of eLife, but request you address the following points in a revised manuscript:\n\n1) One question stems from the observation that not all field isolates appear to have lysozyme genes. If there are isolates that genuinely lack the GH25 muramidase genes, these would make a good control. It would be helpful if the authors could comment on whether they think the isolates definitely lack the GH25 muramidase gene, and whether they have tried the growth and coculture assays with any of these isolates.\n\n2) The clarity of the manuscript would benefit greatly from the inclusion of a single phylogeny (recA-like genes?) across all domains of life with arrows actually showing putative transfer directions. The included phylogenies are great, but don't necessarily give an intuitive sense of how distant these transfers are. The inclusion of non-lysozyme containing taxa would really help tell the story to a wider audience.\n\n3) The SH tests of phylogenies are significantly different and demonstrate that the constrained tree is a poorer fit than the unconstrained tree. However, this only demonstrates that at least one transfer has occurred while the study is about numerous independent transfers...it is possible to sequentially constrain the tree and perform independent SH tests for each potential transfer, which would make a stronger story.\n\n4) In regards to the competition assays, the reviewers realize that the authors are dealing with intractable genetic systems, but were wondering if there might be cleaner ways of comparing growth between microbes, instead of independent vs. together. The current comparison is confounded because a variety of lysozyme independent reasons could be responsible for a shift in competitive outcome in co-culture (i.e. cross-feeding of archaea on bacterial waste products). Would it be possible to isolate lysozyme resistant bacteria and perform paired competition assays with sensitive and resistant versions? The reviewers felt that the story might be good enough as is without such experiments but wanted to share their thoughts with the authors. Regardless, the authors should point out the caveats of their approach in the paper.\n",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8d68fbf-2dfe-42ed-9504-318cea0ea1ec",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C1",
+      "claim": "A bacterial lysozyme family integrated independently in all domains of life across diverse environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that a bacterial lysozyme family integrated independently in all domains of life across diverse environments, generating the only glycosyl hydrolase 25 muramidases in plants and archaea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, supported by phylogenetic analyses and genomic data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "1d3e8324-5475-4998-8d3a-f18bdd547a6c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C2",
+      "claim": "The bacterial lysozyme family generates the only glycosyl hydrolase 25 muramidases in plants and archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that a bacterial lysozyme family integrated independently in all domains of life across diverse environments, generating the only glycosyl hydrolase 25 muramidases in plants and archaea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by the absence of GH25 muramidases in 323 sequenced archaeal genomes and 132 plant genomes except for the transferred genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "aa7c87d2-00b5-4d6a-b501-2af52ed08aa3",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C3",
+      "claim": "During coculture of a hydrothermal vent archaeon with a bacterial competitor, muramidase transcription is upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "During coculture of a hydrothermal vent archaeon with a bacterial competitor, muramidase transcription is upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by qPCR data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "94f40259-698b-432b-ba0f-7ddba6bd0c25",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C4",
+      "claim": "Recombinant lysozyme exhibits broad-spectrum antibacterial action in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recombinant lysozyme exhibits broad-spectrum antibacterial action in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "3b8f15e9-67a4-47cc-92d0-d46bf8ec5adc",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C5",
+      "claim": "This is the first characterization of an antibacterial gene in archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "The discoveries also comprise the first characterization of an antibacterial gene in archaea and support the pursuit of antibiotics in this underexplored group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this is the first characterization of an antibacterial gene in archaea.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "f29b7a9b-15fe-492d-8415-f5b404e2b61c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C6",
+      "claim": "75 nonredundant sequences of a bacterial GH25 muramidase were found in disparate taxa across the tree of life.",
+      "claim_type": "EXPLICIT",
+      "source": "During a homology search, we uncovered 75 nonredundant sequences (E-values \u2264 10\u221212) of a bacterial GH25 muramidase in disparate taxa across the tree of life, indicating possible HGT of a bacterial gene to both eukaryotic and archaeal species as well as to phages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the homology search findings with specific E-value cutoffs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "0f6ac442-1fd3-4c6b-9896-65b889c0f5c4",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C7",
+      "claim": "Putative HGT events were identified in the genome of the plant Selaginella moellendorffii.",
+      "claim_type": "EXPLICIT",
+      "source": "Putative HGT events were identified in the genomes of the plant Selaginella moellendorffii (Banks et al., 2011), the deep-sea hydrothermal vent archaeon Aciduliprofundum boonei (Reysenbach et al., 2006), the pea aphid Acyrthosiphon pisum (International Aphid Genomics Consortium 2010, Nikoh et al., 2010), and several species of fungi such as Aspergillus oryzae (Machida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists S. moellendorffii as containing a putative HGT event, with citation to Banks et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "30be6a00-4ab8-47d8-9cb3-6a4872965bda",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C8",
+      "claim": "Putative HGT events were identified in the genome of the deep-sea hydrothermal vent archaeon Aciduliprofundum boonei.",
+      "claim_type": "EXPLICIT",
+      "source": "Putative HGT events were identified in the genomes of the plant Selaginella moellendorffii (Banks et al., 2011), the deep-sea hydrothermal vent archaeon Aciduliprofundum boonei (Reysenbach et al., 2006), the pea aphid Acyrthosiphon pisum (International Aphid Genomics Consortium 2010, Nikoh et al., 2010), and several species of fungi such as Aspergillus oryzae (Machida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists A. boonei as containing a putative HGT event, with citation to Reysenbach et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "995bef72-57fc-4b02-a908-c9388f162630",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C9",
+      "claim": "Putative HGT events were identified in the genome of the pea aphid Acyrthosiphon pisum.",
+      "claim_type": "EXPLICIT",
+      "source": "Putative HGT events were identified in the genomes of the plant Selaginella moellendorffii (Banks et al., 2011), the deep-sea hydrothermal vent archaeon Aciduliprofundum boonei (Reysenbach et al., 2006), the pea aphid Acyrthosiphon pisum (International Aphid Genomics Consortium 2010, Nikoh et al., 2010), and several species of fungi such as Aspergillus oryzae (Machida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists A. pisum as containing a putative HGT event, with citations to International Aphid Genomics Consortium 2010 and Nikoh et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "bef470d1-45b8-44c5-b65f-b2a9c6529618",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C10",
+      "claim": "Putative HGT events were identified in the genome of the fungus Aspergillus oryzae.",
+      "claim_type": "EXPLICIT",
+      "source": "Putative HGT events were identified in the genomes of the plant Selaginella moellendorffii (Banks et al., 2011), the deep-sea hydrothermal vent archaeon Aciduliprofundum boonei (Reysenbach et al., 2006), the pea aphid Acyrthosiphon pisum (International Aphid Genomics Consortium 2010, Nikoh et al., 2010), and several species of fungi such as Aspergillus oryzae (Machida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists A. oryzae as containing a putative HGT event, with citation to Machida et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "1a00314c-5444-455b-b7d1-dbdb4460657a",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C11",
+      "claim": "Lysozyme genes were detected in 9 out of 12 field isolates of Aciduliprofundum from deep-sea vents in the Atlantic and Pacific oceans.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected lysozyme genes in 9 out of 12 field isolates of Aciduliprofundum from deep-sea vents in the Atlantic and Pacific oceans, 5 out of 6 species in the plant genus Selaginella, and 8 out of 9 aphid species in the subfamily Aphidinae (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific counts of positive detections from field samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "31bc9dee-6d07-479a-adb0-0eeca3320caf",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C12",
+      "claim": "Lysozyme genes were detected in 5 out of 6 species in the plant genus Selaginella.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected lysozyme genes in 9 out of 12 field isolates of Aciduliprofundum from deep-sea vents in the Atlantic and Pacific oceans, 5 out of 6 species in the plant genus Selaginella, and 8 out of 9 aphid species in the subfamily Aphidinae (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific counts of positive detections from field samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "dbb8909b-07ff-4a6d-8077-1d4be03ce827",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C13",
+      "claim": "Lysozyme genes were detected in 8 out of 9 aphid species in the subfamily Aphidinae.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected lysozyme genes in 9 out of 12 field isolates of Aciduliprofundum from deep-sea vents in the Atlantic and Pacific oceans, 5 out of 6 species in the plant genus Selaginella, and 8 out of 9 aphid species in the subfamily Aphidinae (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific counts of positive detections from field samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "68cfadc6-b442-4948-8c65-c9aaa4e1777e",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C14",
+      "claim": "Sequenced field isolate lysozymes were relatively similar to each other in each clade, with 74% pairwise identity amongst Aciduliprofundum sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "At the protein level, sequenced field isolate lysozymes were relatively similar to each other in each clade, with 74% pairwise identity (385aa alignment) amongst Aciduliprofundum sequences, 85.1% (203aa alignment) amongst three intact Selaginella sequences, and 87.3% identity (93aa alignment) amongst Aphidinae sequences, with more variable divergence between clades (full identity matrix available in Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific pairwise identity percentages from sequence alignments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "fab1d6d9-af7c-425e-9723-c18a3a17424b",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C15",
+      "claim": "Sequenced field isolate lysozymes showed 85.1% pairwise identity amongst three intact Selaginella sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "At the protein level, sequenced field isolate lysozymes were relatively similar to each other in each clade, with 74% pairwise identity (385aa alignment) amongst Aciduliprofundum sequences, 85.1% (203aa alignment) amongst three intact Selaginella sequences, and 87.3% identity (93aa alignment) amongst Aphidinae sequences, with more variable divergence between clades (full identity matrix available in Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific pairwise identity percentages from sequence alignments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "2feffcef-0534-4bec-878c-104c94609fde",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C16",
+      "claim": "Sequenced field isolate lysozymes showed 87.3% pairwise identity amongst Aphidinae sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "At the protein level, sequenced field isolate lysozymes were relatively similar to each other in each clade, with 74% pairwise identity (385aa alignment) amongst Aciduliprofundum sequences, 85.1% (203aa alignment) amongst three intact Selaginella sequences, and 87.3% identity (93aa alignment) amongst Aphidinae sequences, with more variable divergence between clades (full identity matrix available in Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific pairwise identity percentages from sequence alignments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "69ca94fb-9867-4532-abc4-4ac8b576fa47",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C17",
+      "claim": "Flanking genes in the recipient genomes were non-bacterial on either side of the transferred lysozyme in each case, with two exceptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Flanking genes in the recipient genomes were non-bacterial on either side of the transferred lysozyme in each case (Figure 1, Supplementary file 3), with two exceptions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1 and Supplementary file 3 for supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "037612f2-2c76-4d6c-ae22-c91752a59313",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C18",
+      "claim": "A bordering gene in A. boonei, ADP-ribose-1\"-monophosphatase (App-1), possesses both bacterial and archaeal homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "A bordering gene in A. boonei, ADP-ribose-1\"-monophosphatase (App-1), possesses both bacterial and archaeal homologs and a phylogenetic analysis suggests HGT unrelated to the lysozyme transfer (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the App-1 gene and references phylogenetic analysis in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "0a3a1e77-75b6-47c2-a5b5-9b142df08642",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C19",
+      "claim": "The App-1 transfer was likely between archaea and Thermotogae bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This transfer was likely between archaea and Thermotogae bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this inference about the App-1 transfer.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "81dc9d4c-60a4-4157-a42c-1ae7793e788c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C20",
+      "claim": "A GH2 hydrolase gene adjacent to the lysozyme in A. oryzae has bacterial homologs in the phylum Actinobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The second exception is a GH2 hydrolase gene adjacent to the lysozyme in A. oryzae. This hydrolase has bacterial homologs in the phylum Actinobacteria, and recapitulates the same phylogenetic pattern seen in the GH25 muramidase (see below, Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the GH2 hydrolase gene and references phylogenetic data in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "ccad5024-0126-4d86-a0c7-293bbed3a581",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C21",
+      "claim": "The lysozyme and GH2 hydrolase were likely transferred to fungi in a single event.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that the lysozyme and GH2 hydrolase were transferred to fungi in a single event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this inference based on the phylogenetic pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "37b86ec2-551f-41dd-8a86-ab0a7b39f267",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C22",
+      "claim": "The lysozyme gene in the aphid A. pisum consists of a fusion of a bacterial GH25 muramidase domain and a eukaryotic carboxypeptidase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the lysozyme gene in the aphid A. pisum consists of a fusion of a bacterial GH25 muramidase domain and a eukaryotic carboxypeptidase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the domain structure of the A. pisum lysozyme gene.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "60daa6e6-eae6-4938-9436-658a788b127a",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C23",
+      "claim": "The A. pisum lysozyme gene includes five introns, none of which interrupt the GH25 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene includes five introns (Nikoh et al., 2010), none of which interrupt the GH25 domain, consistent with a relatively recent HGT event and the absence of the gene from most sequenced insects (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the intron structure with citation to Nikoh et al., 2010, and references Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "44a910fd-6b31-4d0a-adb2-142766847cd3",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C24",
+      "claim": "The lysozyme in the fungus A. oryzae contains only a single intron that interrupts the GH25 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The lysozyme in the fungus A. oryzae, meanwhile, contains only a single intron, but it does interrupt the GH25 domain, consistent with the domain's long association with fungi from the subkingdom Dikarya (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the intron structure and references Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "a8da7ccb-0e45-4a9e-9ce0-f6d461bb84e5",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C25",
+      "claim": "No evidence of a GH25 muramidase was found in 323 sequenced archaeal genomes spanning all the major phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence of a GH25 muramidase in 323 sequenced archaeal genomes spanning all the major phyla and sister taxa to A. boonei (Reysenbach et al., 2006; Flores et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the absence of GH25 muramidase in 323 archaeal genomes with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "218e0001-dea0-4e58-b629-6f61fc7ab44f",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C26",
+      "claim": "The 323 archaeal genomes span all of the major phyla: Crenarchaeota (56), Euryarchaeota (205), Nanoarchaeota (10), and Thaumarchaeota (39).",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of homology does not appear to be due to insufficient representation of archaeal diversity, as the 323 members span all of the major phyla: Crenarchaeota (56), Euryarchaeota (205), Nanoarchaeota (10), and Thaumarchaeota (39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific counts of genomes for each archaeal phylum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "f633f092-a553-4df3-9a06-e6052ce75b57",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C27",
+      "claim": "If vertical descent were assumed for archaea, at least 10 independent losses of the lysozyme gene would be required.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, if vertical descent were assumed for a recent Bayesian phylogeny of archaea with sequenced genomes (Brochier-Armanet et al., 2011), this would require at least 10 independent losses of the lysozyme gene, an assumption that is certainly less parsimonious than a single HGT event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this inference with citation to Brochier-Armanet et al., 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "e1cf6694-b20d-49d2-a5d7-8f96579822ba",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C28",
+      "claim": "The relative divergence of the small subunit rRNA gene in A. boonei compared to the putative bacterial HGT donors is greater than the relative divergence of the lysozyme gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the relative divergence of the small subunit rRNA gene in A. boonei compared to the putative bacterial HGT donors is greater than the relative divergence of the lysozyme gene (Figure 4), a finding that is inconsistent with both genes being transmitted by vertical descent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 4 for supporting data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "d5246fb7-ec8d-4085-8857-0c63c85f8db2",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C29",
+      "claim": "There are no other homologs beyond those presented in this study in 132 plant genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, there are no other homologs beyond those presented in this study in 132 plant genomes, and only one insect species with additional homologs out of 109 insect genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the absence of additional homologs in 132 plant genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "9cbb2c4f-8698-4902-a5f7-4adf54d3cc87",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C30",
+      "claim": "Only one insect species has additional homologs out of 109 insect genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, there are no other homologs beyond those presented in this study in 132 plant genomes, and only one insect species with additional homologs out of 109 insect genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the presence of additional homologs in only one insect species out of 109 genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "cbca71e0-5578-4665-bdb6-ca0a30422507",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C31",
+      "claim": "At least three independent instances of interdomain HGT of the bacterial GH25 muramidase occurred in nonbacterial taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Three key results emerge from these phylogenetic analyses: (i) at least three independent instances of interdomain HGT of the bacterial GH25 muramidase occurred in nonbacterial taxa (Aciduliprofundum, Selaginella, and Insecta) as well as a number of transfers to bacteriophages, (ii) vertical transmission of the transferred gene ensues in some descendant taxa (i.e., Aciduliprofundum and Selaginella), and (iii) frequent HGT of the muramidase between bacterial clades accompanies the interdomain transfer, indicating unusually frequent and broad-ranging HGT of this niche-transcending gene family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists this as one of three key results from phylogenetic analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "785cb71f-0495-4aad-9c73-f004cb82e9af",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C32",
+      "claim": "Vertical transmission of the transferred gene ensues in some descendant taxa (i.e., Aciduliprofundum and Selaginella).",
+      "claim_type": "EXPLICIT",
+      "source": "Three key results emerge from these phylogenetic analyses: (i) at least three independent instances of interdomain HGT of the bacterial GH25 muramidase occurred in nonbacterial taxa (Aciduliprofundum, Selaginella, and Insecta) as well as a number of transfers to bacteriophages, (ii) vertical transmission of the transferred gene ensues in some descendant taxa (i.e., Aciduliprofundum and Selaginella), and (iii) frequent HGT of the muramidase between bacterial clades accompanies the interdomain transfer, indicating unusually frequent and broad-ranging HGT of this niche-transcending gene family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists this as one of three key results from phylogenetic analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "a8a524ca-794f-4b92-96af-0c95769dac49",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C33",
+      "claim": "Frequent HGT of the muramidase between bacterial clades accompanies the interdomain transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Three key results emerge from these phylogenetic analyses: (i) at least three independent instances of interdomain HGT of the bacterial GH25 muramidase occurred in nonbacterial taxa (Aciduliprofundum, Selaginella, and Insecta) as well as a number of transfers to bacteriophages, (ii) vertical transmission of the transferred gene ensues in some descendant taxa (i.e., Aciduliprofundum and Selaginella), and (iii) frequent HGT of the muramidase between bacterial clades accompanies the interdomain transfer, indicating unusually frequent and broad-ranging HGT of this niche-transcending gene family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists this as one of three key results from phylogenetic analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "de5e5a49-5407-47a9-b921-c6fd3ee8c13b",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C34",
+      "claim": "The hypothetical tree consistent with vertical descent is significantly worse than the HGT tree (p<0.01, D(LH) = \u2212133.9, SD = 31.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicate that the hypothetical tree is significantly worse than the HGT tree, as expected (p<0.01, D(LH) = \u2212133.9, SD = 31.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical test results from the Shimodaira-Hasegawa test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "f7939144-40d1-4cec-a98c-f9ee63c3037e",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C35",
+      "claim": "The null hypothesis of vertical descent is rejected, even under the most permissive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the null hypothesis of vertical descent is rejected, even under the most permissive conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion based on statistical tests.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "f66a8c27-b5f7-492a-918a-4a222c427245",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C36",
+      "claim": "Each interdomain HGT event occurred between taxa that coexist in the same ecological niche.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that each interdomain HGT event (Figure 2) occurred between taxa that coexist in the same ecological niche, a likely prerequisite for HGT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states this observation and references Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "c3a2e6c1-738b-43e4-87e7-9a1d0dae3154",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C37",
+      "claim": "The A. boonei lysozyme is in a clade dominated by Firmicutes whose members can be common in deep ocean sediments.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the A. boonei lysozyme is in a clade dominated by Firmicutes whose members can be common in deep ocean sediments (Orcutt et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this observation with citation to Orcutt et al., 2011a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "faad8da8-b410-4b7c-8b39-d59321773093",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C38",
+      "claim": "Bacillus species have been found in hydrothermal vents of the same fields in which Aciduliprofundum strains were isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Bacillus species have even been found in hydrothermal vents of the same fields in which Aciduliprofundum strains were isolated (Reysenbach et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding with citation to Reysenbach et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "69e127ff-f757-4e5d-ba0d-2a00d6de0855",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C39",
+      "claim": "The A. pisum lysozyme clade includes Wolbachia prophages and Proteobacteria, which are common endosymbionts of aphids and other insects.",
+      "claim_type": "EXPLICIT",
+      "source": "The A. pisum lysozyme clade includes Wolbachia prophages and Proteobacteria, which are common endosymbionts of aphids and other insects (Gomez-Valero et al., 2004; Augustinos et al., 2011; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this observation with citations to Gomez-Valero et al., 2004; Augustinos et al., 2011; Wang et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "e4d33d7e-9a36-4c8c-9b0f-bc6ceb9e9261",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C40",
+      "claim": "The S. moellendorffii plant lysozyme is closely related to Actinobacteria, which are dominant microbes in soil.",
+      "claim_type": "EXPLICIT",
+      "source": "The S. moellendorffii plant lysozyme is closely related to Actinobacteria, which are dominant microbes in soil (Bulgarelli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this observation with citation to Bulgarelli et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "c78822ba-997e-44d7-9be1-868ffdaa39f7",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C41",
+      "claim": "The transfer of GH25 muramidase to fungi occurred anciently in fungal evolution prior to the divergence of Dikarya.",
+      "claim_type": "EXPLICIT",
+      "source": "While the phylogenetic pattern of the GH25 muramidase found in fungi is consistent with HGT (Figure 2A, Figure 2\u2014figure supplement 2), the transfer occurred anciently in fungal evolution prior to the divergence of Dikarya, as the domain is present in both Basidiomycota and Ascomycota, but not other fungal phyla.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this inference and references Figure 2A and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "3b3ee958-2fec-4efa-a7c5-cd311eacff44",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C42",
+      "claim": "The GH25 muramidase domain is present in both Basidiomycota and Ascomycota, but not other fungal phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "While the phylogenetic pattern of the GH25 muramidase found in fungi is consistent with HGT (Figure 2A, Figure 2\u2014figure supplement 2), the transfer occurred anciently in fungal evolution prior to the divergence of Dikarya, as the domain is present in both Basidiomycota and Ascomycota, but not other fungal phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the distribution of the domain across fungal phyla.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "ea4b6bb1-5bd4-4d72-9889-f4ba724f247c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C43",
+      "claim": "Highly conserved residues (>85% identity between all taxa) invariably mapped to the previously identified active site pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Highly conserved residues (>85% identity between all taxa) invariably mapped to the previously identified active site pocket (Martinez-Fleites et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding with citation to Martinez-Fleites et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "5790d4f6-22b6-44a1-9672-0979d1e67865",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C44",
+      "claim": "The A. boonei GH25 muramidase efficiently killed several species of bacteria in the phylum Firmicutes.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, the A. boonei GH25 muramidase efficiently killed several species of bacteria in the phylum Firmicutes - the putative donor group of the gene (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 6A for supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "1b2e28e4-79c4-44ac-b7f4-d1629e783ef0",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C45",
+      "claim": "The bacterial inhibition by A. boonei GH25 muramidase was more potent than the positive control, chicken egg white lysozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial inhibition by A. boonei GH25 muramidase was more potent than the positive control, chicken egg white lysozyme, and was dose-dependent (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 6B for supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "089be464-69fa-4d5b-83f6-5b5ca97547b4",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C46",
+      "claim": "Bacterial and phage muramidases did not elicit antibacterial killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial and phage muramidases did not elicit antibacterial killing, similar to cyan fluorescent protein and buffer-only negative controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this negative result from the antibacterial assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "0d3620c7-4c5d-4475-bea2-27be845a12b2",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C47",
+      "claim": "The A. boonei GH25 muramidase did not exhibit antibacterial activity against Gram-negative species.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the A. boonei GH25 muramidase did not exhibit antibacterial activity against Gram-negative species or Gram-positive species outside of the families Bacillaceae and Paenibacillaceae, which was equivalent to the killing range of chicken egg white lysozyme with the exception of the Actinobacterium Micrococcus luteus (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "39116496-9ceb-4b49-aec7-8c56a3fb4fc0",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C48",
+      "claim": "Expression of the complete lysozyme resulted in E. coli death.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, expression of the complete lysozyme resulted in E. coli death, while cloned genes with insertion sequences and premature stop codons abolished the lytic capacity of these proteins from within E. coli cells, providing evidence for an expanded host range to the antibacterial action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion from the E. coli expression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "bc8b8b1a-446d-44a9-955d-fb222e780c37",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C49",
+      "claim": "A significant increase in A. boonei lysozyme expression was observed at four hours (up to 127% increase) of coculture with M. lauensis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a significant increase in A. boonei lysozyme expression at four (up to 127% increase) and 12 hr (up to 43% increase) of coculture with M. lauensis in comparison to negative control cultures of the singular A. boonei (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 8A for supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "e57de81a-930c-4209-b37b-92223705482c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C50",
+      "claim": "A significant increase in A. boonei lysozyme expression was observed at 12 hours (up to 43% increase) of coculture with M. lauensis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a significant increase in A. boonei lysozyme expression at four (up to 127% increase) and 12 hr (up to 43% increase) of coculture with M. lauensis in comparison to negative control cultures of the singular A. boonei (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 8A for supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "93963cdb-6d15-4889-812c-2539f3195aa1",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C51",
+      "claim": "There was a relative Malthusian fitness increase for A. boonei in coculture vs. monoculture across the exponential growth phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth experiments of A. boonei and M. lauensis were continued for 72 hr, during which there was a relative Malthusian fitness (Lenski et al., 1991) increase for A. boonei in coculture vs. monoculture (Figure 8B) across the exponential growth phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding with citation to Lenski et al., 1991, and references Figure 8B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "51ed9ce4-36b4-4a5a-b88e-e6b0966918e5",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C52",
+      "claim": "M. lauensis cell abundance is greater than that of A. boonei during 14 out of the 19 sampling points when cultured separately for 72 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "When the species are cultured separately for 72 hr, M. lauensis cell abundance is greater than that of A. boonei during 14 out of the 19 sampling points (Figure 8C, blue circles), indicating that bacteria outperform archaea in monoculture conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 8C for supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "54273c26-a398-481c-98aa-7e8b0ec345d9",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C53",
+      "claim": "When A. boonei and M. lauensis are cocultured, A. boonei outperforms M. lauensis for 14 out of the 19 time points.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the two species are cocultured, the cell abundances reverse and A. boonei outperforms M. lauensis for 14 out of the 19 time points (Figure 8D, red circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 8D for supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "e5b17c8c-8cae-4815-81b8-436f7fda09e7",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C54",
+      "claim": "The competitive frequency difference between monoculture and coculture is significant (Chi-square test, p = 0.0035).",
+      "claim_type": "EXPLICIT",
+      "source": "This competitive frequency difference is significant (Chi-square test, p = 0.0035), complementing the Malthusian fitness increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "1d31cd76-42a3-4bbd-a30a-ed1e333fef3b",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C55",
+      "claim": "For each monoculture time point, there are 4.43% fewer A. boonei cells on average than M. lauensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, for each monoculture time point, there are 4.43% fewer A. boonei cells on average than M. lauensis, while in coculture there are 6.22% more A. boonei cells per time point (Mann Whitney U. p = 0.023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific percentages and statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "d933e971-5aa8-4c0c-80d4-83853799b051",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C56",
+      "claim": "In coculture there are 6.22% more A. boonei cells per time point than M. lauensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, for each monoculture time point, there are 4.43% fewer A. boonei cells on average than M. lauensis, while in coculture there are 6.22% more A. boonei cells per time point (Mann Whitney U. p = 0.023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific percentages and statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "5a28150c-22bb-41b0-a8de-d88b941a9654",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C57",
+      "claim": "A. boonei outcompetes its bacterial competitor in coculture despite a higher monoculture growth rate for the bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, A. boonei outcompetes its bacterial competitor in coculture despite a higher monoculture growth rate for the bacteria, although whether lysozyme upregulation is directly responsible for this effect cannot be definitively proven.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion from the competition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "739ad372-7f77-4aca-b560-2b856167f34b",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C58",
+      "claim": "HGT is rampant among prokaryotes and phages and is an important mechanism for acquisition of new genes and functions.",
+      "claim_type": "EXPLICIT",
+      "source": "HGT is rampant among prokaryotes and phages and is an important mechanism for acquisition of new genes and functions (Popa and Dagan, 2011), including the shuttling of antibiotics and antibiotic resistance between bacteria (Clardy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citations to Popa and Dagan, 2011, and Clardy et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "f4368a85-2672-4df7-872f-caed06f667a6",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C59",
+      "claim": "Independent transmission of homologous DNA to archaea, bacteria, eukaryotes, and viruses is extremely rare.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to these intradomain or interdomain highways of HGT (Beiko et al., 2005), independent transmission of the same gene family to archaea, bacteria, eukaryotes, and viruses is extremely uncommon and subject to apparently rare events throughout the history of life (Moran et al., 2012; Lundin et al., 2010; Koonin et al., 2003; McClure, 2001; McDonald et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citations to multiple sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "23903bd3-f205-407e-b00f-535c0523694b",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C60",
+      "claim": "Horizontal gene transfers experience a frequency gradient that decreases from within domain > between two domains > between all domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "When taken together, genome-enabled studies suggest that horizontal gene transfers (HGTs) are biased and experience a frequency gradient that decreases from within domain > between two domains > between all domains of life (Bruto et al., 2013; Zhaxybayeva and Doolittle, 2011; Puigbo et al., 2009; Andam and Gogarten, 2013, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citations to multiple sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "0a8788d1-43a4-42f5-82d1-16b7cc75180c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C61",
+      "claim": "Archaea do not possess murein cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "The muramidase in a thermophilic archaeon is of special note as archaea do not possess murein cell walls (Albers and Meyer, 2011), and genes encoding an antibacterial peptide have never before been identified (Cantarel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Albers and Meyer, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "447c6ab9-dc18-48fe-8db7-008c8b7970e8",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C62",
+      "claim": "Members of the genus Aciduliprofundum are widespread thermoacidophiles in deep-sea hydrothermal vent chimney biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the genus Aciduliprofundum are widespread thermoacidophiles in deep-sea hydrothermal vent chimney biofilms (Flores et al., 2012) in which bacteria are frequent inhabitants (Orcutt et al., 2011a; Miroshnichenko and Bonch-Osmolovskaya 2006), including the M. lauensis species tested above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Flores et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "32630a29-5a90-4c68-a7a1-fafbc73453f9",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C63",
+      "claim": "Bacteria are frequent inhabitants of deep-sea hydrothermal vent chimney biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the genus Aciduliprofundum are widespread thermoacidophiles in deep-sea hydrothermal vent chimney biofilms (Flores et al., 2012) in which bacteria are frequent inhabitants (Orcutt et al., 2011a; Miroshnichenko and Bonch-Osmolovskaya 2006), including the M. lauensis species tested above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citations to Orcutt et al., 2011a and Miroshnichenko and Bonch-Osmolovskaya 2006.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "251f218a-ca47-4fbf-9440-574af67a84be",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C64",
+      "claim": "Archaea have been largely ignored in the context of antibiotic discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaea have been largely ignored in the context of antibiotic discovery, likely because of the conjecture that archaea do not compete with bacteria in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "055638e7-33f9-48f3-b72f-5590e14fb15a",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C65",
+      "claim": "Only a handful of antimicrobial peptides produced by archaea have been characterized, and those are active only against other archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a handful of antimicrobial peptides produced by archaea have been characterized, and those are active only against other archaea (O'Connor and Shand 2002) despite the fact that archaea are known to inhibit bacteria in diverse environments (Atanasova et al., 2013; Shand and Levya, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citations to O'Connor and Shand 2002, Atanasova et al., 2013, and Shand and Levya, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "57c6ed32-6da7-4061-bce3-c50beb5cf30a",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C66",
+      "claim": "Archaea are known to inhibit bacteria in diverse environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a handful of antimicrobial peptides produced by archaea have been characterized, and those are active only against other archaea (O'Connor and Shand 2002) despite the fact that archaea are known to inhibit bacteria in diverse environments (Atanasova et al., 2013; Shand and Levya, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citations to Atanasova et al., 2013 and Shand and Levya, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "b4cf355b-d8e1-4bb2-b6e0-40f215fe167c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C67",
+      "claim": "GH25 muramidases have been demonstrated as effective antibacterials against biofilms of Streptococcus pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "GH25 muramidases have been demonstrated as effective antibacterials against biofilms of Streptococcus pneumoniae (Domenech et al., 2011) and related enzymes have proven efficacious in mouse models of bacterial mucosal colonization (Fenton et al., 2010), sepsis (Loeffler et al., 2003), and endocarditis (Entenza et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Domenech et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "b206dc99-3f53-4ff3-ae73-549b6bde938e",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C68",
+      "claim": "Related enzymes to GH25 muramidases have proven efficacious in mouse models of bacterial mucosal colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "GH25 muramidases have been demonstrated as effective antibacterials against biofilms of Streptococcus pneumoniae (Domenech et al., 2011) and related enzymes have proven efficacious in mouse models of bacterial mucosal colonization (Fenton et al., 2010), sepsis (Loeffler et al., 2003), and endocarditis (Entenza et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Fenton et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "a7a3a130-8831-470d-b429-31cf9b47b4b1",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C69",
+      "claim": "Related enzymes to GH25 muramidases have proven efficacious in mouse models of sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "GH25 muramidases have been demonstrated as effective antibacterials against biofilms of Streptococcus pneumoniae (Domenech et al., 2011) and related enzymes have proven efficacious in mouse models of bacterial mucosal colonization (Fenton et al., 2010), sepsis (Loeffler et al., 2003), and endocarditis (Entenza et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Loeffler et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "a68a7b0a-669b-42c1-9bf9-63da331ba572",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C70",
+      "claim": "Related enzymes to GH25 muramidases have proven efficacious in mouse models of endocarditis.",
+      "claim_type": "EXPLICIT",
+      "source": "GH25 muramidases have been demonstrated as effective antibacterials against biofilms of Streptococcus pneumoniae (Domenech et al., 2011) and related enzymes have proven efficacious in mouse models of bacterial mucosal colonization (Fenton et al., 2010), sepsis (Loeffler et al., 2003), and endocarditis (Entenza et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Entenza et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "fd26202e-7343-49ba-a286-48245170bd35",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C71",
+      "claim": "Horizontally transferred homologs of the GH25 muramidase exhibit differential tissue expression in A. pisum.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, horizontally transferred homologs of the GH25 muramidase exhibit differential tissue expression in A. pisum (Nikoh et al., 2010) and bacteriolytic activity in the fungus Aspergillus nidulans (AN6470.2) (Bauer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Nikoh et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "21f8d4a7-d948-4afc-9e94-832f0b536efd",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C72",
+      "claim": "Horizontally transferred homologs of the GH25 muramidase exhibit bacteriolytic activity in the fungus Aspergillus nidulans.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, horizontally transferred homologs of the GH25 muramidase exhibit differential tissue expression in A. pisum (Nikoh et al., 2010) and bacteriolytic activity in the fungus Aspergillus nidulans (AN6470.2) (Bauer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Bauer et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "976158c8-51c3-44bd-8e70-a93577ef8e8a",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C73",
+      "claim": "The evolutionary path to parallel HGT was paved by the universal drive for nonbacterial taxa to compete in a bacterial world.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we infer that the evolutionary path to this parallel HGT was paved by the universal drive for nonbacterial taxa to compete in a bacterial world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this inference as a summary conclusion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "fb52dc05-333e-475e-b607-94819bcf7fd2",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C74",
+      "claim": "Parallel transfers of genes to all cellular domains and viruses might regularly have antimicrobial functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that similar to the cascade of antibiotic gene transfer discoveries that followed their initial reporting, parallel transfers of genes to all cellular domains and viruses might regularly have antimicrobial functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this prediction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "70ebd9b8-0e95-4141-808c-7e07a78709b8",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C75",
+      "claim": "Aciduliprofundum samples were grown in strict monocultures as determined by 16S amplicon monitoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Aciduliprofundum samples were grown in strict monocultures as determined by 16S amplicon monitoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this methodological detail to rule out contamination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "757944fb-3814-4b9d-b98c-8c72efacc0d8",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C76",
+      "claim": "Integration of the A. pisum lysozyme has been previously established.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration of the A. pisum lysozyme has been previously established (Nikoh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Nikoh et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "f48bb8ff-1316-42df-b201-6564825483db",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C77",
+      "claim": "Lysozymes were found in two additional WO phages as part of an ongoing next generation sequencing project of Wolbachia viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found lysozymes in two additional WO phages as part of an ongoing next generation sequencing project of Wolbachia viruses (unpublished data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this finding from unpublished data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "9dbd76cb-a191-4698-a326-d20656ca1fd0",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C78",
+      "claim": "The GH25 muramidase is a peptidoglycan-degrading lysozyme that hydrolyzes the 1,4-\u03b2-linkages between N-acetylmuramic acid and N-acetyl-D-glucosamine in the bacterial cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "This bacterial gene encodes a glycosyl hydrolase 25 (GH25) muramidase, a peptidoglycan-degrading lysozyme that hydrolyzes the 1,4-\u03b2-linkages between N-acetylmuramic acid and N-acetyl-D-glucosamine in the bacterial cell wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the biochemical function of the GH25 muramidase.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "9de56692-1754-4bc4-b139-4f559d08d8c1",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C79",
+      "claim": "In bacteria, the lytic enzyme classically functions in cell division and cell wall remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically found in bacteria (Cantarel et al., 2009), the lytic enzyme classically functions in cell division and cell wall remodeling (Vollmer et al., 2008), while in bacteriophages they lyse bacterial peptidoglycan at the end of the phage life cycle (Fastrez, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citations to Cantarel et al., 2009 and Vollmer et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "6a2b1a0f-6bcd-4fa7-8c43-e1b8d23e078c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C80",
+      "claim": "In bacteriophages, GH25 muramidases lyse bacterial peptidoglycan at the end of the phage life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically found in bacteria (Cantarel et al., 2009), the lytic enzyme classically functions in cell division and cell wall remodeling (Vollmer et al., 2008), while in bacteriophages they lyse bacterial peptidoglycan at the end of the phage life cycle (Fastrez, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citation to Fastrez, 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "a3cec371-bf2b-43f4-8494-7d31e135fb2f",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C81",
+      "claim": "The possibility of multiple ancient transfers between bacteria and fungi or among fungi and plants cannot be excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the possibility of multiple ancient transfers between bacteria and fungi or among fungi and plants cannot be excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly acknowledges this alternative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "b86abdfe-fc60-4de0-a179-c03e687460bb",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C82",
+      "claim": "Recombinant 6\u00d7 histidine-tagged proteins from S. moellendorffii and A. oryzae GH25 muramidases were insoluble when expressed in either E. coli or sf9 insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also cloned the S. moellendorffii and A. oryzae GH25 muramidases, however recombinant 6\u00d7 histidine-tagged proteins were insoluble when expressed in either E. coli or sf9 insect cells and attempts to solubilize them were unsuccessful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "b5bc2d58-0197-4f81-80c8-487d456e76c6",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C83",
+      "claim": "E. coli colonies expressing full-length A. boonei lysozyme grew poorly, with tiny, slow-growing colonies on solid media.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the full-length gene's function in the absence of genetic tools in this system, we cloned the entire gene into an expression plasmid in E. coli and discovered that bacterial colonies grew poorly, with tiny, slow-growing colonies on solid media, and substantial cell death coinciding with a small amount of leaky expression in liquid culture (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes this experimental observation and references Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "38d2d299-0517-492e-a646-bd4e1d61565a",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C84",
+      "claim": "Two E. coli colonies expressing A. boonei lysozyme grew to normal size and had expression plasmids disrupted by insertions of IS1 family transposase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two colonies grew to normal size and upon sequencing, we determined that their expression plasmids were disrupted by insertions of 774 bp (mutant 1) and 768 bp (mutant 2) of a native IS1 family transposase from E. coli at 21 bp or 266 bp from the start of the lysozyme gene, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes this experimental finding with specific details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "a6c2a9ef-9b0d-4043-8d4f-cf451573a0c2",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C85",
+      "claim": "The insertions in the two E. coli mutants resulted in a number of premature stop codons in the lysozyme reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "These insertions also resulted in a number of premature stop codons in the lysozyme reading frame, disrupting production of the full-length gene (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes this finding and references Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "b0bad6d6-eeeb-43a4-b5ab-277f444e0353",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C86",
+      "claim": "E. coli death requires intact and full-length lysozyme, and toxicity is not due to the expression construct itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, E. coli death requires intact and full-length lysozyme, and toxicity is not due to the expression construct itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion from the expression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "d710da3a-e8a3-4f82-8b4d-14b126fddb90",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C87",
+      "claim": "Genetic manipulation of A. boonei is not currently feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, A. boonei wild type and lysozyme knockouts would be employed to test relative fitness and bacterial inhibition. However, genetic manipulation of A. boonei is not currently feasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "bb3bcdec-04be-4326-a54d-27fd67ede23f",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C88",
+      "claim": "The Malthusian fitness difference between A. boonei in coculture vs. monoculture is marginally non-significant (p = 0.11, N = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "This difference is marginally non-significant, perhaps due to low sample sizes (p = 0.11, N = 5, MWU two-tailed test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides specific statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "5018db75-1da6-442f-b0fc-94e92c29a4b6",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C89",
+      "claim": "Whether lysozyme upregulation is directly responsible for A. boonei's competitive advantage cannot be definitively proven.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, A. boonei outcompetes its bacterial competitor in coculture despite a higher monoculture growth rate for the bacteria, although whether lysozyme upregulation is directly responsible for this effect cannot be definitively proven.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly acknowledges this limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "1acea5cd-e505-4e71-9e30-7425dcba65b5",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C90",
+      "claim": "Other possible explanations for A. boonei's competitive advantage include scavenging of bacterial waste products, superior ability to obtain a rate-limiting nutrient, or alternative antibacterial defense mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Other possible explanations for this finding include A. boonei scavenging of bacterial waste products, possessing a superior ability to obtain a rate-limiting nutrient, or deploying alternative antibacterial defense mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists these alternative explanations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "b33590f9-840d-42ab-a67a-082d362f7177",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C91",
+      "claim": "It is possible that since Aciduliprofundum strains metabolize peptides, the lysozyme enables a nutritive strategy in which lysed bacteria provide nutrients for the archaeon to scavenge.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that since Aciduliprofundum strains metabolize peptides, the lysozyme enables a nutritive strategy in which lysed bacteria provide nutrients for the archaeon to scavenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly proposes this alternative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "25b9cbf3-e085-43d7-9d21-a705d676ba67",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C92",
+      "claim": "There may be significant, unexploited potential for antibiotics in archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that they coexist with diverse bacterial species in the environment (Oren, 2002; Kato and Watanabe, 2010; Orcutt et al., 2011b) and can compete for similar resources, there may be significant, unexploited potential for antibiotics in this domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this speculation with supporting citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "0561b79e-32e8-4f64-a235-a97ddd19e8a0",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C93",
+      "claim": "Systematic surveys of archaeal gene products will likely uncover a broad range of antibacterial activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this work, we suspect that systematic surveys of archaeal gene products will likely uncover a broad range of antibacterial activities, and may eventually offer novel peptide or small molecule therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this prediction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "04226d4d-5f4b-4e53-afb6-704f0bec0825",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "claim_id": "C94",
+      "claim": "Archaeal antibacterial products may have naturally evolved thermostability that would increase their attractiveness as therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Such antibacterial products may have naturally evolved thermostability that would increase their attractiveness as therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "86fa13d9-d078-4bc8-800b-5b091c017ba6",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A bacterial GH25 muramidase gene family has been horizontally transferred independently to multiple non-bacterial taxa across all domains of life, including archaea (Aciduliprofundum), plants (Selaginella), insects (Aphidinae), fungi (Aspergillus), and bacteriophages. This gene represents the only GH25 muramidase in plants and archaea, as evidenced by its absence in 323 archaeal genomes, 132 plant genomes, and 109 insect genomes outside the identified recipients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C33 provide converging evidence from homology searches (C6), PCR validation in field isolates (C11-C13), genomic integration verification (C17, C75), phylogenetic analyses (C31-C33), statistical tests rejecting vertical descent (C34-C35), and comprehensive genome surveys (C25-C26, C29-C30). The phylogenetic data, flanking gene analyses, and ecological co-occurrence patterns strongly support independent HGT events rather than vertical inheritance or contamination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "b980f909-ea8d-49dd-811e-e46d8186af62",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The transferred lysozyme genes show evidence of genomic integration and evolutionary adaptation in recipient genomes, including high sequence conservation within clades (74-87% identity), non-bacterial flanking genes, intron acquisition patterns consistent with transfer timing, and domain fusion events in some recipients (e.g., A. pisum).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C24 provide detailed molecular evidence for stable genomic integration including sequence identity data (C14-C16), flanking gene analysis (C17), intron patterns (C23-C24), and domain architecture (C22). The intron distribution patterns are particularly compelling: A. pisum has 5 introns none interrupting the GH25 domain (consistent with recent transfer), while A. oryzae has 1 intron interrupting the domain (consistent with ancient transfer). These patterns support genuine integration rather than contamination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "e83262e0-a690-446a-aeea-a1d172a6ec9a",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Statistical phylogenetic tests strongly reject the hypothesis of vertical descent for the GH25 muramidase distribution. The Shimodaira-Hasegawa test shows the HGT tree is significantly better than constraint trees consistent with vertical inheritance (p<0.01), and vertical descent would require at least 10 independent gene losses in archaea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 provide rigorous statistical support with specific test results (SH-test, p<0.01, D(LH)=-133.9, SD=31.5) comparing HGT versus vertical descent hypotheses. The analysis tested multiple constraint tree topologies and 100 bootstrap replicates. Claims C27-C28 provide additional parsimony arguments. The statistical framework is appropriate and the results are definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "11c85b1a-f8d3-4ea5-a2f9-0ffa2fa8edfd",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Each interdomain HGT event occurred between taxa that coexist in the same ecological niche, with phylogenetic placement consistent with ecologically plausible donor-recipient relationships. The A. boonei lysozyme clusters with Firmicutes from deep ocean sediments, A. pisum with Wolbachia/Proteobacteria endosymbionts, and S. moellendorffii with soil Actinobacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 establish ecological plausibility for HGT by demonstrating phylogenetic clustering with ecologically associated bacteria (C37-C40) and citing appropriate literature. The ecological co-occurrence data (e.g., Bacillus in same hydrothermal vents as Aciduliprofundum, C38) provides context for transfer mechanisms. However, the authors appropriately note that intermediate carriers are possible and the donor cannot be definitively established for ancient transfers like fungi (C41-C42).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "d4a7b58c-fb74-43c3-ae50-3a446fa56790",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The recombinant A. boonei GH25 muramidase exhibits potent, dose-dependent antibacterial activity against Firmicutes bacteria, with greater efficacy than chicken egg white lysozyme. The enzyme specifically targets Gram-positive bacteria in families Bacillaceae and Paenibacillaceae, while bacterial and phage muramidases showed no antibacterial activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 provide comprehensive functional validation through protein structure analysis (C43), antibacterial assays against multiple species (C44, C47), dose-response experiments (C45, C4), and appropriate negative controls (C46). The conservation of active site residues (C43) supports functional preservation. The specificity pattern (C47) is consistent with GH25 muramidase biochemistry. Figure 6 provides clear visual evidence of antibacterial activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "4324c6aa-a488-4c5a-8c10-8f11a70c822e",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Expression of full-length A. boonei lysozyme is lethal to E. coli, causing poor growth and cell death. Two spontaneous mutants with IS1 transposase insertions that disrupted the lysozyme gene grew normally, demonstrating that intact lysozyme is required for toxicity and that toxicity is not due to the expression construct itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C83-C86 provide strong evidence through a natural selection experiment where only E. coli with disrupted lysozyme genes survived (C84-C85). The spontaneous insertion of transposable elements specifically into the lysozyme gene and the resulting premature stop codons (C85) provide compelling evidence that the intact gene is toxic. This elegant experiment demonstrates expanded antibacterial host range beyond the purified domain assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "ccfd0a6f-2411-4f77-b682-3aec6f69b15c",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A. boonei lysozyme expression is significantly upregulated during coculture with the bacterial competitor M. lauensis, with increases of up to 127% at 4 hours and 43% at 12 hours compared to monoculture controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 report specific qPCR data with statistical significance and reference Figure 8A. The upregulation in response to bacterial presence is consistent with an antibacterial defense function. The time course (4h and 12h) and magnitude (127% and 43% increases) are clearly stated. However, the authors appropriately acknowledge that direct causation cannot be proven without genetic manipulation (C89).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A. boonei shows a competitive advantage over M. lauensis in coculture compared to monoculture, reversing the growth dominance pattern. In monoculture, M. lauensis outperforms A. boonei at 14/19 timepoints, but in coculture A. boonei outperforms M. lauensis at 14/19 timepoints (Chi-square p=0.0035). However, the Malthusian fitness increase is marginally non-significant (p=0.11, N=5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C57 present competition data with mixed statistical support. The competitive frequency reversal is statistically significant (C54, p=0.0035) and the cell abundance differences are significant (C55-C56, p=0.023). However, the Malthusian fitness measure is marginally non-significant (C88, p=0.11), likely due to small sample size (N=5). The authors appropriately acknowledge that lysozyme upregulation cannot be definitively linked to competitive advantage without genetic manipulation (C89), and list alternative explanations (C90). The correlation is suggestive but not conclusive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "eac16db9-cf0c-404e-8530-73d8871a4981",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "This work represents the first characterization of an antibacterial gene in archaea. Archaea lack murein cell walls, and previously characterized archaeal antimicrobial peptides were only active against other archaea, despite evidence that archaea can inhibit bacteria in diverse environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C61, C64-C66 establish the novelty of this finding through literature review and citations. The claim that this is the \"first characterization\" (C5) is supported by statements that archaea have been ignored for antibiotic discovery (C64) and that only archaeon-targeting antimicrobials were previously known (C65). The biological context (archaea lack murein walls, C61) makes the finding particularly notable. The citations appear appropriate for these knowledge claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "5ee38b19-1d33-4b58-86ba-5e5ffd4d88eb",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that parallel HGT across all domains of life is driven by the universal selective advantage of competing against bacteria, and predict that similar parallel transfers may regularly have antimicrobial functions. They suggest archaea represent an unexploited source for antibiotic discovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74, C92-C94 are explicitly speculative predictions and interpretations rather than demonstrated results. While the speculation is reasonable given the data, these are hypotheses for future work rather than supported conclusions. The authors appropriately frame these as inferences (C73: \"we infer\") and predictions (C74: \"we predict\", C93: \"will likely\"). These represent the broader implications of the work but lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "6d357405-dfa4-4165-b1d1-2273f4ba992e",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides background context on HGT patterns and GH25 muramidase function, noting that HGT is common within and between domains but parallel transfer to all domains is extremely rare, and that GH25 muramidases typically function in bacterial cell division or phage lysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60, C78-C80 are background knowledge claims supported by appropriate citations to the literature. These establish the context for why the findings are significant (parallel HGT is rare) and provide biochemical background on the enzyme family. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "8dccc048-f996-4c42-92c2-87bd3f7a55ae",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has demonstrated that GH25 muramidases and related enzymes have antibacterial efficacy in various contexts, including against S. pneumoniae biofilms and in mouse models of infection. Horizontally transferred GH25 muramidases show tissue-specific expression in A. pisum and bacteriolytic activity in A. nidulans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 cite prior literature to establish that GH25 muramidases have therapeutic potential and that transferred homologs are functional in other recipients. The citations appear appropriate and support the claims. This provides important context that the transferred genes are not only present but functionally active in diverse recipients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "40664b25-a3e4-4275-8db5-5ba6ba7bc44d",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details and limitations are reported, including that Aciduliprofundum samples were grown in verified monocultures, A. pisum integration was previously established, additional WO phage lysozymes were found in unpublished data, and S. moellendorffii/A. oryzae recombinant proteins were insoluble.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77, C82 report methodological details and technical limitations. C75 addresses potential contamination concerns, C76 cites prior validation work, C77 mentions additional supporting data, and C82 explains why functional assays were not performed for all recipients. These are appropriately documented limitations and methodological controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    },
+    {
+      "id": "ecc79a9b-2780-4f0f-a253-7075201cc70f",
+      "content_id": "a7e2e80e-243a-4a09-81db-23f68fcb43d9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors acknowledge several limitations and alternative explanations, including that multiple ancient transfers cannot be excluded for fungi/plants, genetic manipulation of A. boonei is not feasible, lysozyme upregulation cannot be definitively linked to competitive advantage, and alternative mechanisms could explain the competitive phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C87, C89-C91 appropriately acknowledge limitations and alternative interpretations. These demonstrate scientific rigor by noting what cannot be definitively concluded from the data. The authors are transparent about the limitations of their experimental system (no genetic tools for A. boonei, C87) and alternative explanations for their observations (C90-C91).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:55:26.440529Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c8d68fbf-2dfe-42ed-9504-318cea0ea1ec",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "1d3e8324-5475-4998-8d3a-f18bdd547a6c",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "f29b7a9b-15fe-492d-8415-f5b404e2b61c",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "0f6ac442-1fd3-4c6b-9896-65b889c0f5c4",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "30be6a00-4ab8-47d8-9cb3-6a4872965bda",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "995bef72-57fc-4b02-a908-c9388f162630",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "bef470d1-45b8-44c5-b65f-b2a9c6529618",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "1a00314c-5444-455b-b7d1-dbdb4460657a",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "31bc9dee-6d07-479a-adb0-0eeca3320caf",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "dbb8909b-07ff-4a6d-8077-1d4be03ce827",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "a8da7ccb-0e45-4a9e-9ce0-f6d461bb84e5",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "218e0001-dea0-4e58-b629-6f61fc7ab44f",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "d5246fb7-ec8d-4085-8857-0c63c85f8db2",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "9cbb2c4f-8698-4902-a5f7-4adf54d3cc87",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "cbca71e0-5578-4665-bdb6-ca0a30422507",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "785cb71f-0495-4aad-9c73-f004cb82e9af",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "a8a524ca-794f-4b92-96af-0c95769dac49",
+      "result_id": "86fa13d9-d078-4bc8-800b-5b091c017ba6"
+    },
+    {
+      "claim_id": "68cfadc6-b442-4948-8c65-c9aaa4e1777e",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "fab1d6d9-af7c-425e-9723-c18a3a17424b",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "2feffcef-0534-4bec-878c-104c94609fde",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "69ca94fb-9867-4532-abc4-4ac8b576fa47",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "037612f2-2c76-4d6c-ae22-c91752a59313",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "0a3a1e77-75b6-47c2-a5b5-9b142df08642",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "81dc9d4c-60a4-4157-a42c-1ae7793e788c",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "ccad5024-0126-4d86-a0c7-293bbed3a581",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "37b86ec2-551f-41dd-8a86-ab0a7b39f267",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "60daa6e6-eae6-4938-9436-658a788b127a",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "44a910fd-6b31-4d0a-adb2-142766847cd3",
+      "result_id": "b980f909-ea8d-49dd-811e-e46d8186af62"
+    },
+    {
+      "claim_id": "de5e5a49-5407-47a9-b921-c6fd3ee8c13b",
+      "result_id": "e83262e0-a690-446a-aeea-a1d172a6ec9a"
+    },
+    {
+      "claim_id": "f7939144-40d1-4cec-a98c-f9ee63c3037e",
+      "result_id": "e83262e0-a690-446a-aeea-a1d172a6ec9a"
+    },
+    {
+      "claim_id": "f633f092-a553-4df3-9a06-e6052ce75b57",
+      "result_id": "e83262e0-a690-446a-aeea-a1d172a6ec9a"
+    },
+    {
+      "claim_id": "e1cf6694-b20d-49d2-a5d7-8f96579822ba",
+      "result_id": "e83262e0-a690-446a-aeea-a1d172a6ec9a"
+    },
+    {
+      "claim_id": "f66a8c27-b5f7-492a-918a-4a222c427245",
+      "result_id": "11c85b1a-f8d3-4ea5-a2f9-0ffa2fa8edfd"
+    },
+    {
+      "claim_id": "c3a2e6c1-738b-43e4-87e7-9a1d0dae3154",
+      "result_id": "11c85b1a-f8d3-4ea5-a2f9-0ffa2fa8edfd"
+    },
+    {
+      "claim_id": "faad8da8-b410-4b7c-8b39-d59321773093",
+      "result_id": "11c85b1a-f8d3-4ea5-a2f9-0ffa2fa8edfd"
+    },
+    {
+      "claim_id": "69e127ff-f757-4e5d-ba0d-2a00d6de0855",
+      "result_id": "11c85b1a-f8d3-4ea5-a2f9-0ffa2fa8edfd"
+    },
+    {
+      "claim_id": "e4d33d7e-9a36-4c8c-9b0f-bc6ceb9e9261",
+      "result_id": "11c85b1a-f8d3-4ea5-a2f9-0ffa2fa8edfd"
+    },
+    {
+      "claim_id": "c78822ba-997e-44d7-9be1-868ffdaa39f7",
+      "result_id": "11c85b1a-f8d3-4ea5-a2f9-0ffa2fa8edfd"
+    },
+    {
+      "claim_id": "3b3ee958-2fec-4efa-a7c5-cd311eacff44",
+      "result_id": "11c85b1a-f8d3-4ea5-a2f9-0ffa2fa8edfd"
+    },
+    {
+      "claim_id": "ea4b6bb1-5bd4-4d72-9889-f4ba724f247c",
+      "result_id": "d4a7b58c-fb74-43c3-ae50-3a446fa56790"
+    },
+    {
+      "claim_id": "5790d4f6-22b6-44a1-9672-0979d1e67865",
+      "result_id": "d4a7b58c-fb74-43c3-ae50-3a446fa56790"
+    },
+    {
+      "claim_id": "1b2e28e4-79c4-44ac-b7f4-d1629e783ef0",
+      "result_id": "d4a7b58c-fb74-43c3-ae50-3a446fa56790"
+    },
+    {
+      "claim_id": "089be464-69fa-4d5b-83f6-5b5ca97547b4",
+      "result_id": "d4a7b58c-fb74-43c3-ae50-3a446fa56790"
+    },
+    {
+      "claim_id": "0d3620c7-4c5d-4475-bea2-27be845a12b2",
+      "result_id": "d4a7b58c-fb74-43c3-ae50-3a446fa56790"
+    },
+    {
+      "claim_id": "94f40259-698b-432b-ba0f-7ddba6bd0c25",
+      "result_id": "d4a7b58c-fb74-43c3-ae50-3a446fa56790"
+    },
+    {
+      "claim_id": "39116496-9ceb-4b49-aec7-8c56a3fb4fc0",
+      "result_id": "4324c6aa-a488-4c5a-8c10-8f11a70c822e"
+    },
+    {
+      "claim_id": "b5bc2d58-0197-4f81-80c8-487d456e76c6",
+      "result_id": "4324c6aa-a488-4c5a-8c10-8f11a70c822e"
+    },
+    {
+      "claim_id": "38d2d299-0517-492e-a646-bd4e1d61565a",
+      "result_id": "4324c6aa-a488-4c5a-8c10-8f11a70c822e"
+    },
+    {
+      "claim_id": "a6c2a9ef-9b0d-4043-8d4f-cf451573a0c2",
+      "result_id": "4324c6aa-a488-4c5a-8c10-8f11a70c822e"
+    },
+    {
+      "claim_id": "b0bad6d6-eeeb-43a4-b5ab-277f444e0353",
+      "result_id": "4324c6aa-a488-4c5a-8c10-8f11a70c822e"
+    },
+    {
+      "claim_id": "bc8b8b1a-446d-44a9-955d-fb222e780c37",
+      "result_id": "ccfd0a6f-2411-4f77-b682-3aec6f69b15c"
+    },
+    {
+      "claim_id": "e57de81a-930c-4209-b37b-92223705482c",
+      "result_id": "ccfd0a6f-2411-4f77-b682-3aec6f69b15c"
+    },
+    {
+      "claim_id": "aa7c87d2-00b5-4d6a-b501-2af52ed08aa3",
+      "result_id": "ccfd0a6f-2411-4f77-b682-3aec6f69b15c"
+    },
+    {
+      "claim_id": "93963cdb-6d15-4889-812c-2539f3195aa1",
+      "result_id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9"
+    },
+    {
+      "claim_id": "51ed9ce4-36b4-4a5a-b88e-e6b0966918e5",
+      "result_id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9"
+    },
+    {
+      "claim_id": "54273c26-a398-481c-98aa-7e8b0ec345d9",
+      "result_id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9"
+    },
+    {
+      "claim_id": "e5b17c8c-8cae-4815-81b8-436f7fda09e7",
+      "result_id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9"
+    },
+    {
+      "claim_id": "1d31cd76-42a3-4bbd-a30a-ed1e333fef3b",
+      "result_id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9"
+    },
+    {
+      "claim_id": "d933e971-5aa8-4c0c-80d4-83853799b051",
+      "result_id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9"
+    },
+    {
+      "claim_id": "5a28150c-22bb-41b0-a8de-d88b941a9654",
+      "result_id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9"
+    },
+    {
+      "claim_id": "bb3bcdec-04be-4326-a54d-27fd67ede23f",
+      "result_id": "fe2e7488-5e85-444a-ad81-a7b10e9121e9"
+    },
+    {
+      "claim_id": "3b8f15e9-67a4-47cc-92d0-d46bf8ec5adc",
+      "result_id": "eac16db9-cf0c-404e-8530-73d8871a4981"
+    },
+    {
+      "claim_id": "0a8788d1-43a4-42f5-82d1-16b7cc75180c",
+      "result_id": "eac16db9-cf0c-404e-8530-73d8871a4981"
+    },
+    {
+      "claim_id": "447c6ab9-dc18-48fe-8db7-008c8b7970e8",
+      "result_id": "eac16db9-cf0c-404e-8530-73d8871a4981"
+    },
+    {
+      "claim_id": "32630a29-5a90-4c68-a7a1-fafbc73453f9",
+      "result_id": "eac16db9-cf0c-404e-8530-73d8871a4981"
+    },
+    {
+      "claim_id": "251f218a-ca47-4fbf-9440-574af67a84be",
+      "result_id": "eac16db9-cf0c-404e-8530-73d8871a4981"
+    },
+    {
+      "claim_id": "055638e7-33f9-48f3-b72f-5590e14fb15a",
+      "result_id": "eac16db9-cf0c-404e-8530-73d8871a4981"
+    },
+    {
+      "claim_id": "57c6ed32-6da7-4061-bce3-c50beb5cf30a",
+      "result_id": "eac16db9-cf0c-404e-8530-73d8871a4981"
+    },
+    {
+      "claim_id": "976158c8-51c3-44bd-8e70-a93577ef8e8a",
+      "result_id": "5ee38b19-1d33-4b58-86ba-5e5ffd4d88eb"
+    },
+    {
+      "claim_id": "fb52dc05-333e-475e-b607-94819bcf7fd2",
+      "result_id": "5ee38b19-1d33-4b58-86ba-5e5ffd4d88eb"
+    },
+    {
+      "claim_id": "25b9cbf3-e085-43d7-9d21-a705d676ba67",
+      "result_id": "5ee38b19-1d33-4b58-86ba-5e5ffd4d88eb"
+    },
+    {
+      "claim_id": "0561b79e-32e8-4f64-a235-a97ddd19e8a0",
+      "result_id": "5ee38b19-1d33-4b58-86ba-5e5ffd4d88eb"
+    },
+    {
+      "claim_id": "04226d4d-5f4b-4e53-afb6-704f0bec0825",
+      "result_id": "5ee38b19-1d33-4b58-86ba-5e5ffd4d88eb"
+    },
+    {
+      "claim_id": "739ad372-7f77-4aca-b560-2b856167f34b",
+      "result_id": "6d357405-dfa4-4165-b1d1-2273f4ba992e"
+    },
+    {
+      "claim_id": "f4368a85-2672-4df7-872f-caed06f667a6",
+      "result_id": "6d357405-dfa4-4165-b1d1-2273f4ba992e"
+    },
+    {
+      "claim_id": "23903bd3-f205-407e-b00f-535c0523694b",
+      "result_id": "6d357405-dfa4-4165-b1d1-2273f4ba992e"
+    },
+    {
+      "claim_id": "9dbd76cb-a191-4698-a326-d20656ca1fd0",
+      "result_id": "6d357405-dfa4-4165-b1d1-2273f4ba992e"
+    },
+    {
+      "claim_id": "9de56692-1754-4bc4-b139-4f559d08d8c1",
+      "result_id": "6d357405-dfa4-4165-b1d1-2273f4ba992e"
+    },
+    {
+      "claim_id": "6a2b1a0f-6bcd-4fa7-8c43-e1b8d23e078c",
+      "result_id": "6d357405-dfa4-4165-b1d1-2273f4ba992e"
+    },
+    {
+      "claim_id": "b4cf355b-d8e1-4bb2-b6e0-40f215fe167c",
+      "result_id": "8dccc048-f996-4c42-92c2-87bd3f7a55ae"
+    },
+    {
+      "claim_id": "b206dc99-3f53-4ff3-ae73-549b6bde938e",
+      "result_id": "8dccc048-f996-4c42-92c2-87bd3f7a55ae"
+    },
+    {
+      "claim_id": "a7a3a130-8831-470d-b429-31cf9b47b4b1",
+      "result_id": "8dccc048-f996-4c42-92c2-87bd3f7a55ae"
+    },
+    {
+      "claim_id": "a68a7b0a-669b-42c1-9bf9-63da331ba572",
+      "result_id": "8dccc048-f996-4c42-92c2-87bd3f7a55ae"
+    },
+    {
+      "claim_id": "fd26202e-7343-49ba-a286-48245170bd35",
+      "result_id": "8dccc048-f996-4c42-92c2-87bd3f7a55ae"
+    },
+    {
+      "claim_id": "21f8d4a7-d948-4afc-9e94-832f0b536efd",
+      "result_id": "8dccc048-f996-4c42-92c2-87bd3f7a55ae"
+    },
+    {
+      "claim_id": "70ebd9b8-0e95-4141-808c-7e07a78709b8",
+      "result_id": "40664b25-a3e4-4275-8db5-5ba6ba7bc44d"
+    },
+    {
+      "claim_id": "757944fb-3814-4b9d-b98c-8c72efacc0d8",
+      "result_id": "40664b25-a3e4-4275-8db5-5ba6ba7bc44d"
+    },
+    {
+      "claim_id": "f48bb8ff-1316-42df-b201-6564825483db",
+      "result_id": "40664b25-a3e4-4275-8db5-5ba6ba7bc44d"
+    },
+    {
+      "claim_id": "b86abdfe-fc60-4de0-a179-c03e687460bb",
+      "result_id": "40664b25-a3e4-4275-8db5-5ba6ba7bc44d"
+    },
+    {
+      "claim_id": "a3cec371-bf2b-43f4-8494-7d31e135fb2f",
+      "result_id": "ecc79a9b-2780-4f0f-a253-7075201cc70f"
+    },
+    {
+      "claim_id": "d710da3a-e8a3-4f82-8b4d-14b126fddb90",
+      "result_id": "ecc79a9b-2780-4f0f-a253-7075201cc70f"
+    },
+    {
+      "claim_id": "5018db75-1da6-442f-b0fc-94e92c29a4b6",
+      "result_id": "ecc79a9b-2780-4f0f-a253-7075201cc70f"
+    },
+    {
+      "claim_id": "1acea5cd-e505-4e71-9e30-7425dcba65b5",
+      "result_id": "ecc79a9b-2780-4f0f-a253-7075201cc70f"
+    },
+    {
+      "claim_id": "b33590f9-840d-42ab-a67a-082d362f7177",
+      "result_id": "ecc79a9b-2780-4f0f-a253-7075201cc70f"
+    }
+  ],
+  "comparisons": []
+}

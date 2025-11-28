@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A conditional Dicer knockout mouse model was successfully established in hepatocytes, achieving efficient miRNA depletion approximately 1 month after tamoxifen treatment, with miR-122 levels reduced to 1.4% of control levels and pre-miR-122 accumulating to >6-fold higher levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 collectively demonstrate successful establishment of the Dicer knockout model with appropriate validation. The PCR, northern blot, and microarray data (C26-C28, C31) provide converging evidence for efficient knockout. The observation of miRNA recovery after 2 months (C29-C30) is appropriately interpreted as hepatocyte renewal from escaped cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "RNA-seq analysis using a strategy that quantifies both mRNAs and pre-mRNAs revealed that 30.3% of mRNAs and 15.5% of pre-mRNAs were significantly changed in Dicer knockouts, with changes skewed toward increased mRNA levels and a global shift in mRNA/pre-mRNA ratios to higher values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 describe the RNA-seq methodology and results with appropriate statistical analysis. The use of pre-mRNA abundance as a proxy for transcription rates is well-supported by citation (C37-C38), and the differential expression analysis with 1.5-fold cutoff is clearly documented with percentages and directionality (C40-C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Increased mRNA/pre-mRNA ratios in Dicer knockouts are predictive of miRNA activity, as validated by the observation that miR-122 targets showed increased ratios while miR-124 targets (negative control) and ribosomal protein mRNAs did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide appropriate positive and negative controls for validating the mRNA/pre-mRNA ratio as a metric for miRNA regulation. The use of experimentally validated targets for liver-expressed miR-122 versus non-expressed miR-124, along with ribosomal proteins with short 3' UTRs, represents sound experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55"
+    ],
+    "result": "Per1, Per2, and Per3 showed moderate but significant increases in mRNA/pre-mRNA ratios in Dicer knockouts, with PER2 protein levels increased ~2-fold and CRY2 increased 1.5-fold, while PER1 protein was barely increased (1.1-fold), yet core clock functionality remained overall unimpaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51, C54-C55 demonstrate effects on core clock components with converging evidence from RNA-seq and western blot. The discrepancy between Per1 mRNA and protein levels (C50) is acknowledged but not fully explained. The conclusion that the core clock remains functional (C51, C55) is supported by unchanged expression of clock-regulated genes like Dbp.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Dicer knockout liver explants showed a trend toward period lengthening with periods on average 41 minutes longer than controls, but this effect did not reach statistical significance (p=0.197).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 report a phenotype that fails to reach statistical significance. While the 41-minute difference is biologically interesting and consistent with increased PER2 levels, the lack of statistical significance (p=0.197) means this result cannot be considered definitively supported. The sample sizes (n=9 control, n=13 knockout) may be insufficient to detect this effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Rhythmicity analysis revealed that approximately 13-14% of mRNAs and 17% of pre-mRNAs were rhythmic in both control and Dicer knockout mice, with >60% of oscillating mRNAs also rhythmic at the pre-mRNA level, and Dicer KO-specific rhythmic transcripts enriched for cell cycle genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 describe comprehensive rhythmicity detection with appropriate methodology combining JTK_CYCLE and harmonic regression. The percentages are consistent with previous literature (cited in C56-C57). The enrichment of cell cycle genes in KO-specific rhythmic transcripts (C60) is supported by GO term analysis and consistent with liver regeneration after miRNA loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C96"
+    ],
+    "result": "While 30% of rhythmic transcripts in control mice showed significantly increased mRNA/pre-mRNA ratios in Dicer knockouts, visual inspection identified no more than 20 transcripts (~2% of rhythmic mRNAs) with confident miRNA-driven rhythmicity, indicating miRNAs are only of marginal importance as drivers of circadian rhythmicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64, C96 provide converging evidence that miRNAs rarely drive rhythmicity de novo. The analysis combines quantitative metrics (C61-C62) with careful visual inspection (C63), and the conclusion (C64, C96) is appropriately conservative. The low percentage (<2%) is consistent with the expectation that miRNAs are generally stable molecules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C74"
+    ],
+    "result": "Loss of miRNAs caused rhythmic mRNAs with increased mRNA/pre-mRNA ratios to peak on average 48 minutes later than controls (p=1.72e-07) and showed globally shallower amplitudes with a mean 7% decrease, with phase delays being the dominant, consistent consequence and both effects individually highly significant by permutation testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C73-C74 demonstrate effects of miRNA loss on rhythmic gene expression with appropriate statistical analysis. The phase delay effect is highly significant (C67) and validated by permutation tests (C74). The amplitude effect is smaller and more variable (C68) but still significant. The kinetic model framework (C65) provides theoretical support for the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "For Lipa, rhythmicity generated at the pre-mRNA level was completely lost at the mRNA level when miRNAs were absent, and since LAL has been reported to be rhythmic in liver but non-rhythmic in other organs, miRNAs could be involved in rendering Lipa rhythms tissue-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is supported by RNA-seq data showing loss of Lipa mRNA rhythmicity in Dicer knockouts. However, claim C71 is speculative about tissue-specific roles of miRNAs. While the hypothesis is plausible given the cited tissue-specific rhythmicity of LAL (C70), direct evidence for miRNA involvement in tissue-specificity is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Serum analyses of Dicer knockout animals showed reduced cholesterol, triglyceride, and glucose levels, effects likely mediated at least in part by loss of miR-122.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 report metabolic phenotypes with appropriate measurements. The attribution to miR-122 loss (C76) is reasonable given extensive prior literature on miR-122's role in lipid metabolism (cited), though the contribution of other miRNAs cannot be excluded in this global knockout model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C102"
+    ],
+    "result": "miRNA target prediction analysis identified nine miRNA seed families with more circadian targets than expected by chance in transcripts with higher mRNA/pre-mRNA ratios, with miR-25, miR-92, miR-122, miR-22, and miR-29 expressed at readily detectable levels in liver and specifically involved in post-transcriptional tuning of circadian transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C102 describe enrichment analysis with appropriate statistical methods. The identification of specific miRNA families is supported by both computational prediction and expression validation by northern blot and small RNA-seq (C78). The conclusion about their involvement in circadian regulation (C102) is appropriately framed as a suggestion based on the enrichment analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Luciferase reporter assays in primary hepatocytes identified Per2 as the main miRNA-regulated core clock component with full-length 3' UTR showing strong de-repression, while Per1 showed only 1.2-fold up-regulation, a striking difference from MEF data potentially explained by tissue-specific miRNA expression patterns with miR-30 highly abundant but miR-29 and miR-24 expressed at lower levels in liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide functional validation of miRNA regulation using an appropriate reporter system. The differential regulation of Per2 vs Per1 (C79-C80) is consistent with the protein data. The comparison to MEFs (C81) and proposed explanation based on tissue-specific miRNA expression (C82-C83) is reasonable, though the small RNA-seq data supporting miRNA abundance claims is not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C84",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The hepatic core clock was surprisingly resilient to miRNA loss, yet whole transcriptome sequencing uncovered widespread effects on clock output gene expression, with cyclic transcription paired with miRNA-mediated regulation affecting up to 30% of the rhythmic transcriptome and serving to post-transcriptionally adjust phases and amplitudes of rhythmic mRNA accumulation, establishing miRNAs as key to converting rhythmic transcriptional information into tissue-specific rhythmic outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C8, C84, C98-C101 represent the major conclusions of the study, supported by the comprehensive RNA-seq analysis and functional studies. The resilience of the core clock (C3, C84) is demonstrated by maintained rhythmicity of core clock genes. The widespread effects on output genes (C4) and the 30% estimate (C5, C98) are supported by the mRNA/pre-mRNA ratio analysis. The phase and amplitude adjustments (C6, C99-C100) are statistically validated. The conclusion about tissue-specificity (C8, C101) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Dicer knockout liver explants showed modest period lengthening of free-running rhythms (on average by 40 min), a phenotype consistent with increased PER2 levels and similar to mice with additional Per2 transgenes, potentially masked in vivo by constant SCN entrainment and consistent with models of miRNAs conferring robustness to oscillatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C91 attempt to interpret the non-significant period lengthening result. While the biological reasoning is sound and supported by citations (C87-C88, C90-C91), the core observation (C86) lacks statistical significance (see C52-C53). The speculation about masking by SCN entrainment (C89) is plausible but untested. This interpretation requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Tissue-specific differences in miRNA activity likely form the basis of differences between liver and MEF Dicer knockout phenotypes, suggesting miRNAs generally function to post-transcriptionally tune the core clock in a cell type-specific fashion and could underlie known tissue-specific differences in phases and free-running period lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 propose tissue-specific miRNA functions based on comparison with MEF data (C92) and SCN data (C93). While the hypothesis is plausible and supported by the differential regulation of Per1 between tissues, claims C94-C95 are explicitly speculative. Direct evidence for tissue-specific miRNA tuning of the clock would require comparative studies across multiple tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Small RNA-seq profiling could not confirm high-cycling miRNA species previously reported in mouse liver, and circadian expression of Dicer itself was not evident from RNA-seq data, suggesting the potential for rhythmic miRNA activity in mouse liver is relatively low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 report negative findings regarding rhythmic miRNAs with appropriate acknowledgment of conflicting prior reports (C103-C104). The conclusion about low potential for rhythmic miRNA activity (C105) is a reasonable inference from the data, though the authors appropriately note this approach cannot definitively resolve the issue of rhythmic miRNA activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "miR-451, which can undergo Dicer-independent biogenesis, is not depleted from Dicer knockout livers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 identify an important limitation of the Dicer knockout approach. The Dicer-independent processing of miR-451 is established knowledge (C106), and its persistence in knockouts is confirmed by microarray data (C107). This represents appropriate acknowledgment of model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "While genome-wide measurements show miRNA action on mRNA and protein levels generally correlate well, miRNAs may affect mRNA levels less strongly than protein levels, and in specific cases miRNAs can directly interfere with transcription through promoter complementarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 appropriately discuss limitations of using mRNA levels as a proxy for miRNA activity. All claims are supported by citations to prior literature. This represents appropriate acknowledgment of methodological limitations and alternative mechanisms of miRNA action.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2207 @@
+{
+  "submission": {
+    "id": "8d4ed9e8-954b-4d37-867f-b8438c90ce8f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:12:35.331530Z",
+    "updated_at": "2025-11-28T21:12:35.331530Z"
+  },
+  "content": [
+    {
+      "id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "submission_id": "8d4ed9e8-954b-4d37-867f-b8438c90ce8f",
+      "content_type": "manuscript",
+      "content_text": "# Beam-induced motion correction for sub-megadalton cryo-EM particles\n\n## Authors\n\n- Sjors HW Scheres<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Structural Studies Medical Research Council Laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn electron cryo-microscopy (cryo-EM), the electron beam that is used for imaging also causes the sample to move. This motion blurs the images and limits the resolution attainable by single-particle analysis. In a previous Research article (Bai et al., 2013) we showed that correcting for this motion by processing movies from fast direct-electron detectors allowed structure determination to near-atomic resolution from 35,000 ribosome particles. In this Research advance article, we show that an improved movie processing algorithm is applicable to a much wider range of specimens. The new algorithm estimates straight movement tracks by considering multiple particles that are close to each other in the field of view, and models the fall-off of high-resolution information content by radiation damage in a dose-dependent manner. Application of the new algorithm to four data sets illustrates its potential for significantly improving cryo-EM structures, even for particles that are smaller than 200 kDa.\n\n## Introduction\n\nThe recent development of highly efficient direct-electron detectors and powerful new image processing algorithms has led to rapid progress in the resolutions obtained by electron cryo-microscopy (cryo-EM) structure determination. The new detectors yield higher signal-to-noise ratios (SNRs) than conventional detection devices (McMullan et al., 2009), and are fast enough to record multiple images, that is movies, during typical exposure times. The latter allows correction for sample movements that are caused by interactions with the incoming electron beam (Brilot et al., 2012; Campbell et al., 2012). Last year, we reported an algorithm for beam-induced movement correction of individual ribosome particles, which allowed us to calculate a reconstruction with a level of detail down to 4 \u00c5 resolution from only 35,000 (asymmetric) ribosome particles (Bai et al., 2013). Around the same time, Li et al. (2013) reported an algorithm to correct for the movement of much larger fields of views, which they used to calculate a 3.3 \u00c5 map for the 20S proteasome from 1.8 million asymmetric units. More recently, these techniques were also used to calculate a 3.2 \u00c5 map for the large subunit of the yeast mitochondrial ribosomal subunit (Amunts et al., 2014), a 3.4 \u00c5 structure of the F420-reducing [NiFe] hydrogenase (Allegretti et al., 2014), and a 3.4 \u00c5 structure of the TRPV1 ion channel (Liao et al., 2013).\n\nThis paper describes an advance on our previously described beam-induced movement correction algorithm. The original algorithm followed particle movement by determining the relative rotations and translations of individual particles in running averages of several movie frames with respect to a common reference map. However, this approach does not work well for particles that are much smaller than ribosomes, because too low SNRs in the movie frames prohibit accurate orientation determination. Although the approach by Li et al. (2013) suffers less from lower SNRs in smaller particles (because each field of view contains many of them), it is less suited to model the complicated movement patterns that we and others have observed (Glaeser and Hall, 2011; Brilot et al., 2012; Bai et al., 2013) (also see Figure 1). In addition, neither of the two algorithms accounts for the observation that low frequencies in the data survive higher electron doses than the high frequencies (Unwin and Henderson, 1975; Hayward and Glaeser, 1979; Stark et al., 1996). The approach presented here addresses both issues: it deals with relatively small particles by considering the movements of multiple particles together, yet is still able to model complex movement patterns, and it formulates a resolution-dependent radiation damage model.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03665/elife-03665-fig1-v1.jpg)\n\n**Figure 1.:** A representative micrograph for each of the four test cases is shown, on top of which 50-fold exaggerated beam-induced particle movements are plotted. The original tracks as estimated for running averages of several movie frames for each particle independently are shown in blue; the fitted linear tracks are shown in white. The start and end points of the fitted tracks are indicated with green and red dots, respectively. The orange circles indicate the 2\u03c3NB distance for one of the particles on the micrographs. Note that tracks are only shown for those particles that were selected for the final reconstruction after 2D and 3D classification. Also note that the relatively small movement tracks for \u03b3-secretase only represent the beam-induced motion that was not already corrected for in the algorithm by Li et al. (2013).\n\n## Approach\n\nIn our previous contribution (Bai et al., 2013), we observed beam-induced rotations for ribosome particles of only a few degrees, which is comparable to the accuracy with which orientations of the individual particles could be determined. This agreed with previous observations by others (Campbell et al., 2012), and prompted us to investigate a beam-induced movement correction algorithm that only considers particle translations. The new approach builds on the original one, where running averages of several movie frames of individual particles are (only translationally) aligned against a common reference. Because for small particles these translations become noisy, the new approach fits straight tracks through them, and includes all neighbouring particles on the same field of view in these weighted least-squares fits. More specifically, for each particle p, the program independently minimizes the least squares target below for both the X- and Y-components of the particle coordinates in the field of view:\n\n$$\nmin\\alpha_{p},\\beta_{p}(\\sump'w_{p'}\\sumf(\u0394x_{p'}\u2212\\alpha_{p}\u2212\\beta_{p}f)^{2}),\n$$\n\nwhere the first summation runs over all particles p\u2032 in the field of view; wp\u2032 is calculated as a Gaussian function of the distance between particles p and p\u2032; the second summation runs over all movie frames f = 1,\u2026,F; \u0394xp\u2032 is the difference in (either X- or Y-) coordinate between the refined position of the average particle p\u2032 and the refined position of its movie frame f; and \u03b1p and \u03b2p are the intercept and slope parameters of the fitted movement track for particle p in the X- or Y-direction. The user controls the standard deviation \u03c3NB of the Gaussian function that defines all wp\u2032. Smaller values for \u03c3NB result in fewer neighbouring particles effectively contributing to the linear fits, so that less noise may be removed, but more complicated movement patterns may be described. In cases where the beam-induced motions may not be modelled by straight tracks, for example for bent or zig-zag tracks, this method will not yield good results. In such cases, a hybrid approach, as also used for the \u03b3-secretase example below, may be useful to correct for large, possibly non-straight movements using the algorithm by Li et al. (2013) and correct for finer movements using the one described here.\n\nThe fall-off of information content with frequency in cryo-EM data is often modelled by a Gaussian using a B-factor, in analogy to the temperature factor in X-ray crystallography (Rosenthal and Henderson, 2003). The new movie processing approach exploits a similar model to describe the dose-dependent signal fall-off throughout the recorded movies by estimating a (relative) B-factor for each movie frame. The most common procedure to estimate B-factors in cryo-EM structure determination, by analyzing the Guinier plot of the logarithm of the amplitudes (\u03c4) of a reconstruction versus the square of the frequency (\u03bd2 = 1/\u03b42), only works for reconstructions where the signal extends beyond \u03bd = 1/10 \u00c5\u22121 (Rosenthal and Henderson, 2003). Because reconstructions from individual movie frames often do not reach that resolution, an alternative analysis was devised. Instead of estimating absolute B-factors for each movie frame, the alternative approach merely estimates \u2018relative B-factors\u2019 that describe how much faster (or slower) the signal in reconstructions from individual frames drops with frequency compared to the average reconstruction from all movie frames. If the signal in a reconstruction from a single movie frame of all particles drops faster than the signal in a reconstruction from all movie frames, then the relative B-factor will be negative; if the signal in the single-frame reconstruction drops slower, the relative B-factor will be positive. Assuming equal noise power spectra (\u03c32) in all single-frame reconstructions, the ratio of the amplitudes of the signal in reconstructions from each individual movie frame (f) versus the average reconstruction from all movie frames (a) may be calculated as:\n\n$$\n\\frac{\\tau_{f}(\u03bd)}{\\tau_{a}(\u03bd)}=\\sqrt{\\frac{FSC_{f}(\u03bd)\u2212FSC_{f}(\u03bd)FSC_{a}(\u03bd)}{FSC_{a}(\u03bd)\u2212FSC_{f}(\u03bd)FSC_{a}(\u03bd)}},\n$$\n\nwhere FSCf and FSCa are Fourier shell correlation curves calculated between two independently refined halves of the data for the individual frame and average reconstructions; and one uses \u03c42(v)/\u03c32(v) = SNR(v) = FSC(v)/{1\u2212FSC(v)}. Plotting the logarithm of \u03c4f(v)/\u03c4a(v) versus the square of the frequencies then produces a \u2018relative Guinier\u2019 plot, that is, it describes the fall-off of signal of an individual movie frame relative to the average reconstruction from all movie frames. Fitting straight lines through the relative Guinier plot can then be used to derive the relative B-factors, Bf, and the intercepts of the fitted lines with the Y-axis, Cf, which represent frequency-independent components of the relative signals. In these plots, useful frequencies for fitting straight lines were observed from approximately 1/20 \u00c5\u22121 to the frequency where FSCf = 0.143. The intercept Cf and the slope Bf of these fits are then used to calculate a frequency-dependent weight, wf, for all movie frames as:\n\n$$\nw_{f}(\u03bd)=\\frac{exp(\\frac{B_{f}}{4}\u03bd^{2}+C_{f})}{\\sum_{f'}w_{f'}(\u03bd)}.\n$$\n\nFinally, because out-of-plane rotations are not considered in the new approach, one may apply the in-plane translations from the fitted tracks for all movie frames of each particle, and then sum the movie frames using the frequency-dependent weights described above. This creates a set of new \u2018polished\u2019 average particles with increased SNRs, which may again be used in subsequent 2D or 3D classifications or refinements. It is useful to consider that, since all Guinier plots are calculated relative to the same average reconstruction, the absolute values of Bf and Cf do not matter in the calculation of the weighted average particles: only the differences between these values for different movie frames determine the relative contribution of each movie frame to each frequency shell (v). Also, because of the summation in the nominator above, the sum of all wf(v) over all movie frames remains unity within each frequency shell. Therefore, the re-weighting of the movie frames thus does not comprise an overall sharpening or dampening of the data, and the estimation of an overall absolute B-factor (as in the last row of Table 1) remains relevant.\n\n**Table 1.**\n Overview of the results\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>\u03b3-Secretase</th>\n      <th>\u03b2-Galactosidase</th>\n      <th>Complex-I</th>\n      <th>Mitoribosome large sub-unit</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Molecular mass (MDa)</td>\n      <td>0.17*</td>\n      <td>0.45</td>\n      <td>1.0</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Data set characteristics</td>\n    </tr>\n    <tr>\n      <td>Sample support</td>\n      <td>Quantifoil R1.2/1.3</td>\n      <td>Quantifoil R1.2/1.3</td>\n      <td>Quantifoil R0.6/1</td>\n      <td>Quantifoil R2/2 continuous carbon</td>\n    </tr>\n    <tr>\n      <td>Microscope</td>\n      <td>Titan Krios</td>\n      <td>Polara</td>\n      <td>Titan Krios</td>\n      <td>Titan Krios</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td>K2-Summit</td>\n      <td>Falcon-II</td>\n      <td>Falcon-II</td>\n      <td>Falcon-II</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.76</td>\n      <td>1.77</td>\n      <td>1.71</td>\n      <td>1.34</td>\n    </tr>\n    <tr>\n      <td>No. movie frames</td>\n      <td>15</td>\n      <td>24</td>\n      <td>32</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Exposure time (s)</td>\n      <td>15</td>\n      <td>1.5</td>\n      <td>1.9</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Electron dose (e\u2212/\u00c52)</td>\n      <td>37</td>\n      <td>24</td>\n      <td>32</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>No. particles</td>\n      <td>144,545</td>\n      <td>34,032</td>\n      <td>45,618</td>\n      <td>47,114</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Prior to movie processing</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>4.9\u2020</td>\n      <td>4.3</td>\n      <td>5.9</td>\n      <td>3.9</td>\n    </tr>\n    <tr>\n      <td>B-factor (\u00c52)</td>\n      <td>\u2212119\u2020</td>\n      <td>\u2212107</td>\n      <td>\u2212170</td>\n      <td>\u221285</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Original movie processing</td>\n    </tr>\n    <tr>\n      <td>Running average frames</td>\n      <td>7</td>\n      <td>7</td>\n      <td>7</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>CPU time (hr)</td>\n      <td>3720</td>\n      <td>690</td>\n      <td>16,060</td>\n      <td>8030</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>5.4</td>\n      <td>4.4</td>\n      <td>5.7</td>\n      <td>3.23</td>\n    </tr>\n    <tr>\n      <td>B-factor (\u00c52)</td>\n      <td>\u2212199</td>\n      <td>\u2212166</td>\n      <td>\u2212228</td>\n      <td>\u221276</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">New movie processing</td>\n    </tr>\n    <tr>\n      <td>Running average frames</td>\n      <td>7</td>\n      <td>7</td>\n      <td>7</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>\u03c3NB</td>\n      <td>300</td>\n      <td>300</td>\n      <td>200</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>CPU time (hr)</td>\n      <td>940</td>\n      <td>470</td>\n      <td>5960</td>\n      <td>1300</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>4.5</td>\n      <td>4.0</td>\n      <td>4.8</td>\n      <td>3.3</td>\n    </tr>\n    <tr>\n      <td>B-factor (\u00c52)</td>\n      <td>\u221285</td>\n      <td>\u221295</td>\n      <td>\u2212143</td>\n      <td>\u221254</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The molecular mass of \u03b3-secretase is 170 kDa of protein, plus 60 kDa of disordered glycosylation. The density for the glycosylation was not visible in the electron microscopy map.\u2020As also explained in the main text, the \u03b3-secretase images were first subjected to the movie processing algorithm of Li et al. (2013). The resolution and B-factor reported here are after application of that algorithm, but before the original or the new particle-based approach._\n\n## Results and discussion\n\nThe new approach was tested on four previously published cryo-EM data sets on particles of varying size: human \u03b3-secretase (Lu et al., 2014), Escherichia coli \u03b2-galactosidase (Scheres and Chen, 2012; Chen et al., 2013; Vinothkumar et al., 2014a), bovine complex-I (Vinothkumar et al., 2014b), and the large sub-unit (LSU) of the yeast mitochondrial ribosome (Amunts et al., 2014). The data set on the \u03b3-secretase complex was recorded on a Gatan K2-Summit detector; all other data sets were recorded on an FEI Falcon-II detector. Because the K2 detector aims to count single-electron events, it has to be used at a much lower dose rate than the Falcon-II, which integrates charge during the exposure. Consequently, the \u03b3-secretase data were recorded using relatively long exposures of 15 s. To correct for linear drift during this time, the recorded fields of view were first subjected to the algorithm by Li et al. (2013), and then to the particle-based correction described here. A similar hybrid strategy, but using the original movie processing approach, was also applied to F420-reducing [NiFe] hydrogenase (Allegretti et al., 2014). The other three data sets were recorded with exposures of 1\u20132 s, and only particle-based movement correction was performed. The results are summarized in Table 1. Whereas the original movie processing algorithm does not improve resolution for particles smaller than 500 kDa, the new approach yields significant improvements for all four cases.\n\nFigure 1 shows a representative field of view for each of the four samples. The movement tracks after application of the original movie processing algorithm (but omitting rotational searches) become increasingly noisy for smaller particles, whereas for the mitoribosomes the assumption of linear movements appears to be reasonable. All four samples exhibit complex movement patterns that could not be described as a single correlated movement, but which are captured by the fitted linear tracks. The user may control two parameters to adequately model these patterns. Firstly, the width of the running averages of the movie frames to be used in the alignment of each particle will represent a compromise between how precisely movements for individual particles may be modelled, and how noisy the estimated tracks will be. Secondly, complex movement patterns on the field of view may need relatively small values of \u03c3NB, whereas too small values will lead to noise in the fitted tracks, as fewer particles are taken into account. In general, one may use running averages of fewer movie frames (i.e., less accumulated electron dose) and smaller values for \u03c3NB for larger particles. The number of frames in the running averages can only be an odd number. For large particles such as ribosomes, a running average that accumulates approximately 5 electrons/\u00c52 (five frames in the example below) is often a good choice. For smaller particles, running averages that correspond to larger doses may be necessary, for example 17 electrons/\u00c52 (seven frames) for the \u03b3-secretase example below and 7 electrons/\u00c52 (seven frames) for \u03b2-galactosidase and complex-I. The precise values of \u03c3NB are less critical, in particular for relatively large particles. In practice, constructing plots like those in Figure 1 is useful for determining suitable values for both parameters.\n\nFigure 2 shows the relative B-factors (Bf) and intercepts (Cf) as estimated for all four data sets, as well as the corresponding frequency-dependent weights for each movie frame. Overall, Bf and Cf values decrease with higher electron dose, which may be attributed to the relatively faster disappearance of signal at high resolution through radiation damage. Interestingly, however, consistently low values for Bf are also observed for the first few movie frames. This is in agreement with observations made by others (Brilot et al., 2012; Campbell et al., 2012; Li et al., 2013; Russo and Passmore, 2014; Vinothkumar et al., 2014a) that during the initial stages of sample irradiation relatively large beam-induced movements occur, while sample movement slows down at higher electron doses. Given that electron diffraction spots at 3 \u00c5 resolution from bacteriorhodopsin crystals lose 99% of their intensity after a dose of only 3 electrons/\u00c52 (Stark et al., 1996), the initial sample movement is extremely detrimental to high-resolution structure determination. Therefore, stopping the initial movement altogether would be a very powerful way to further increase resolution, but this has not yet been achieved with existing sample preparation or imaging techniques. Instead, the movie processing algorithm proposed here down-weights the high-frequency contributions of the first few movie frames, as well as those of the later, high-dose frames. This represents an attractive alternative to merely omitting such frames (e.g., see Liao et al., 2013 and Allegretti et al., 2014), since these frames may still contribute useful information to the reconstruction process, particularly at low resolution.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03665/elife-03665-fig2-v1.jpg)\n\n**Figure 2.:** For each of the four test cases, estimated values for Bf and Cf (top) and the resulting frequency-dependent relative weights (bottom) are shown for all movie frames. The first, third, and last movie frames of each data set are highlighted in green, red, and blue, respectively. For these movie frames, the relative Guinier plots as described in the main text and the linear fits through them are shown in Figure 2\u2014figure supplement 1. For example, in the \u03b3-secretase case, the third movie frame has the least negative relative B-factor (Bf), and therefore this frame contributes the most of all movie frames to the weighted average at the high frequencies (and hence the red band gets broader towards the right-hand side of the relative-weight figure). In contrast, the first and last movie frames have much larger negative B-factors because they suffer from large initial beam-induced motion and radiation damage, respectively. Therefore, these movie frames contribute relatively little to the weighted average at the higher frequencies (and hence the green and blue bands decrease in width towards the right-hand side of the relative-weight figure). Because beam-induced motion and radiation damage affect the low frequencies to a much smaller extent, for the low frequencies all movie frames contribute more or less equally to the weighted average. Therefore, each band is more or less the same width on the left-hand side of the relative-weight figure, although the exact relative weights are dominated by Cf on this side of the plot.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03665/elife-03665-fig2-figsupp1-v1.jpg)\n\nFigure 3 shows the map improvement that results from the new movie processing approach. For all four data sets the reconstructed density is significantly improved, thus allowing identification of finer biologically relevant details like separated \u03b2-strands or RNA bases in the maps. The new approach outperforms the original one for the three smaller complexes. Only for the mitoribosome LSU, does the new approach yield a map with 0.05 \u00c5 lower resolution than the original approach, although this difference is hard to appreciate in the maps (see Figure 3\u2014figure supplement 1). Probably, for particles of several megadaltons in size, the determination of rotations and translations is (just about) accurate enough to follow particle rotations during the movies (also see Brilot et al., 2012 and Campbell et al., 2012), and the omission of rotational searches in the new approach may actually affect the results to a small extent. (For small particles the accuracy with which such particles may be aligned is the limiting factor, and omitting rotational searches in the movie refinement will probably not have a noticeable effect.) Nevertheless, when weighed against the significant speed-up obtained by omitting the rotational searches from the original movie processing approach (a factor of 6 for the mitoribosome data set), even for large particles the new approach may still be preferred over the original one. However, the major advance of the new movie processing approach lies in its applicability to smaller particles. Whereas the original approach was limited to large particles, the new one yields map improvements for a wide range of particles, now bringing resolutions at which \u03b2-strands become separated within reach for particles smaller than 200 kDa. The new approach has been implemented in the 1.3 release of the open-source RELION program (Scheres, 2012), where it is called \u2018particle polishing\u2019. Apart from the data sets presented here, it has been used already in the structure determination to 3.2 \u00c5 resolution of the cytoplasmic ribosome of the Plasmodium falciparum parasite in complex with the antibiotic emetine as well (Wong et al., 2014). Hopefully, in the future it will contribute positively to the structure determination of a wide range of other cryo-EM samples.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03665/elife-03665-fig3-v1.jpg)\n\n**Figure 3.:** Representative parts of the density maps for all four test cases before (left of the arrow) and after the new movie processing approach (right of the arrow).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03665/elife-03665-fig3-figsupp1-v1.jpg)\n\n## Materials and methods\n\nAll data sets were recorded using 300 keV electrons. The \u03b3-secretase, \u03b2-galactosidase, and mitoribosome data sets were recorded manually; the complex-I data set was recorded automatically using the EPU software from FEI. For all data sets, fields of views that showed signs of significant drift, charging, or astigmatism were discarded. For the \u03b3-secretase data, this assessment was made after alignment using the algorithm by Li et al. (2013). Movies on the Falcon-II detectors on the Polara and Titan Krios microscopes were intercepted using a system that was developed in-house (Bai et al., 2013). CTF parameters were estimated using CTFFIND3 (Mindell and Grigorieff, 2003), and the particles were picked in a semi-automated manner, using EMAN2 (Tang et al., 2007) for the mitoribosome, and RELION for the three other data sets. Selection of particles for the final 3D reconstruction was performed using reference-free 2D class averaging and 3D classification in RELION (Scheres, 2012), and the final maps before and after movie processing were calculated using RELION\u2019s 3D auto-refine, followed by automated B-factor sharpening (Rosenthal and Henderson, 2003) and correction for the MTF of the detector. All resolutions were based on the gold-standard FSC = 0.143 criterion (Scheres and Chen, 2012), and FSC curves were corrected for the effects of soft masking by high-resolution noise substitution (Chen et al., 2013). Density figures were made using UCSF Chimera (Pettersen et al., 2004).\n",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "f3620b72-4e24-46a4-a49e-551abb4024f2",
+      "submission_id": "8d4ed9e8-954b-4d37-867f-b8438c90ce8f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Werner K\u00fchlbrandt, Max Planck Institute of Biophysics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03665.008](https://doi.org/10.7554/eLife.03665.008)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cBeam-induced motion correction for sub-MegaDalton cryo-EM particles\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor), Werner K\u00fchlbrandt (Reviewing editor), and 3 reviewers, one of whom, Yifan Cheng, has agreed to reveal his identity.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAll the reviewers agreed that the manuscript represents an important advance in high-resolution cryo-EM of sub-MDa particles and should be published in eLife as quickly as possible. However, three reviewers raised the concern that more detail needs to be added to the description of the procedure, so that others can reproduce and apply it to their data.\n\nPlease address the following points in a revised manuscript:\n\n1) The description of how linear tracks are fitted through particles in each frame is vague. As this is a method-oriented paper, a detailed description is necessary.\n\n2) The first formula in the Approach section is not intuitive. It is not clear how this formula is derived. Again, a clear description is necessary.\n\n3) Results and Discussion: \u201cThe user may control two parameters\u2026\u201d Presumably these are the width and sigma(NB) of the Gaussian. Can you provide some guidance how they should best be chosen?\n\n4) Figure 1. Why are the tracks shorter and sparser for the smallest particles, and also for complex-1 relative to beta-galactosidase and ribosomes? One might expect the smaller particles to move more. Does the plot show only the second stage of correction for gamma-secretase? Some comment on this would help, even if these are just arbitrary selections from the data sets.\n\n5) It would be good to have an idea of how many particles were grouped for tracking in each case.\n\n6) Figure 2. The striped plots of relative weight are difficult to understand. Why are they shown as bands of variable width? Does this indicate some range of values the extent of which varies with frequency?\n\n7) Figure 2\u2013figure supplement 1. How can the Guinier plot increase with frequency (image 1 of beta-galactosidase)?\n\n8) Is it possible to estimate the extent to which the resolution of smaller particles is limited by out-of-plane rotations, which are not corrected?\n",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f983ea76-5171-42f1-b58f-dce1983899ce",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C1",
+      "claim": "In electron cryo-microscopy (cryo-EM), the electron beam used for imaging causes the sample to move.",
+      "claim_type": "EXPLICIT",
+      "source": "In electron cryo-microscopy (cryo-EM), the electron beam that is used for imaging also causes the sample to move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract and is supported by multiple citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "871b1e0c-bb62-4a77-a837-f651674f0673",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C2",
+      "claim": "Beam-induced motion blurs cryo-EM images and limits the resolution attainable by single-particle analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This motion blurs the images and limits the resolution attainable by single-particle analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known consequence of beam-induced motion, supported by established understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "7670f38f-db02-4c97-a6d1-a7c7f57aa251",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C3",
+      "claim": "Correcting for beam-induced motion by processing movies from fast direct-electron detectors allowed structure determination to near-atomic resolution from 35,000 ribosome particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous Research article (Bai et al., 2013) we showed that correcting for this motion by processing movies from fast direct-electron detectors allowed structure determination to near-atomic resolution from 35,000 ribosome particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous publication by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "5881c928-f91d-43c8-bca3-d7edf8d8b885",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C4",
+      "claim": "The new movie processing algorithm is applicable to a much wider range of specimens than the previous algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "In this Research advance article, we show that an improved movie processing algorithm is applicable to a much wider range of specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through application to four different data sets of varying particle sizes in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "d1cf7382-a9fb-457b-907b-a95533039ee3",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C5",
+      "claim": "The new algorithm estimates straight movement tracks by considering multiple particles that are close to each other in the field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "The new algorithm estimates straight movement tracks by considering multiple particles that are close to each other in the field of view, and models the fall-off of high-resolution information content by radiation damage in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach taken in the new algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "6eaf01e1-1863-496c-a0e3-a7c7e6201698",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C6",
+      "claim": "The new algorithm models the fall-off of high-resolution information content by radiation damage in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The new algorithm estimates straight movement tracks by considering multiple particles that are close to each other in the field of view, and models the fall-off of high-resolution information content by radiation damage in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach and is demonstrated through the relative B-factor analysis in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "2677ebf6-9e62-41f6-981b-487afc0a7c83",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C7",
+      "claim": "The new algorithm has potential for significantly improving cryo-EM structures for particles smaller than 200 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of the new algorithm to four data sets illustrates its potential for significantly improving cryo-EM structures, even for particles that are smaller than 200 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the \u03b3-secretase example (170 kDa) showing improvement from 4.9 \u00c5 to 4.5 \u00c5 resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "5926266b-a05e-4c96-a229-c769ae80b878",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C8",
+      "claim": "Direct-electron detectors yield higher signal-to-noise ratios than conventional detection devices.",
+      "claim_type": "EXPLICIT",
+      "source": "The new detectors yield higher signal-to-noise ratios (SNRs) than conventional detection devices (McMullan et al., 2009), and are fast enough to record multiple images, that is movies, during typical exposure times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to McMullan et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "ea88017d-5b5f-48ed-a645-55111a36d474",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C9",
+      "claim": "Direct-electron detectors are fast enough to record multiple images (movies) during typical exposure times.",
+      "claim_type": "EXPLICIT",
+      "source": "The new detectors yield higher signal-to-noise ratios (SNRs) than conventional detection devices (McMullan et al., 2009), and are fast enough to record multiple images, that is movies, during typical exposure times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known capability of direct-electron detectors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "517bc0ed-8910-4c08-8ac3-c7a40f97c44e",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C10",
+      "claim": "Sample movements in cryo-EM are caused by interactions with the incoming electron beam.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter allows correction for sample movements that are caused by interactions with the incoming electron beam (Brilot et al., 2012; Campbell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brilot et al., 2012 and Campbell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "7c7974ab-8d87-4cc3-890b-1a42e491855f",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C11",
+      "claim": "A previous algorithm for beam-induced movement correction of individual ribosome particles allowed calculation of a reconstruction with detail down to 4 \u00c5 resolution from only 35,000 asymmetric ribosome particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Last year, we reported an algorithm for beam-induced movement correction of individual ribosome particles, which allowed us to calculate a reconstruction with a level of detail down to 4 \u00c5 resolution from only 35,000 (asymmetric) ribosome particles (Bai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "96a2324e-eaef-46b1-8bd5-71b816f0917f",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C12",
+      "claim": "Li et al. (2013) reported an algorithm to correct for the movement of much larger fields of views, which was used to calculate a 3.3 \u00c5 map for the 20S proteasome from 1.8 million asymmetric units.",
+      "claim_type": "EXPLICIT",
+      "source": "Around the same time, Li et al. (2013) reported an algorithm to correct for the movement of much larger fields of views, which they used to calculate a 3.3 \u00c5 map for the 20S proteasome from 1.8 million asymmetric units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Li et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "33ec2a0d-6166-4212-9f96-683db978c8cf",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C13",
+      "claim": "Movie processing techniques were used to calculate a 3.2 \u00c5 map for the large subunit of the yeast mitochondrial ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, these techniques were also used to calculate a 3.2 \u00c5 map for the large subunit of the yeast mitochondrial ribosomal subunit (Amunts et al., 2014), a 3.4 \u00c5 structure of the F420-reducing [NiFe] hydrogenase (Allegretti et al., 2014), and a 3.4 \u00c5 structure of the TRPV1 ion channel (Liao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Amunts et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "3395dbd4-0bcb-4abf-9953-38ba56806d9e",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C14",
+      "claim": "Movie processing techniques were used to calculate a 3.4 \u00c5 structure of the F420-reducing [NiFe] hydrogenase.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, these techniques were also used to calculate a 3.2 \u00c5 map for the large subunit of the yeast mitochondrial ribosomal subunit (Amunts et al., 2014), a 3.4 \u00c5 structure of the F420-reducing [NiFe] hydrogenase (Allegretti et al., 2014), and a 3.4 \u00c5 structure of the TRPV1 ion channel (Liao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Allegretti et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "2fd103a6-c08b-4cb5-9700-427ec57039a1",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C15",
+      "claim": "Movie processing techniques were used to calculate a 3.4 \u00c5 structure of the TRPV1 ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, these techniques were also used to calculate a 3.2 \u00c5 map for the large subunit of the yeast mitochondrial ribosomal subunit (Amunts et al., 2014), a 3.4 \u00c5 structure of the F420-reducing [NiFe] hydrogenase (Allegretti et al., 2014), and a 3.4 \u00c5 structure of the TRPV1 ion channel (Liao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Liao et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "d5338b39-a637-4f91-ae3b-a0e42275d1d3",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C16",
+      "claim": "The original beam-induced movement correction algorithm followed particle movement by determining the relative rotations and translations of individual particles in running averages of several movie frames with respect to a common reference map.",
+      "claim_type": "EXPLICIT",
+      "source": "The original algorithm followed particle movement by determining the relative rotations and translations of individual particles in running averages of several movie frames with respect to a common reference map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology of the previous algorithm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "2b2f2385-1198-466b-b1ff-2e2c343d88e6",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C17",
+      "claim": "The original algorithm does not work well for particles that are much smaller than ribosomes because too low SNRs in the movie frames prohibit accurate orientation determination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach does not work well for particles that are much smaller than ribosomes, because too low SNRs in the movie frames prohibit accurate orientation determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations observed when applying the original algorithm to smaller particles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "b57d08b5-635d-4ff2-ac33-37ab8e649aac",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C18",
+      "claim": "The approach by Li et al. (2013) suffers less from lower SNRs in smaller particles because each field of view contains many of them.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the approach by Li et al. (2013) suffers less from lower SNRs in smaller particles (because each field of view contains many of them), it is less suited to model the complicated movement patterns that we and others have observed (Glaeser and Hall, 2011; Brilot et al., 2012; Bai et al., 2013) (also see Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the characteristics of the Li et al. algorithm based on its methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "8ef837a8-7245-448e-a13e-7da0632b1142",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C19",
+      "claim": "The approach by Li et al. (2013) is less suited to model complicated movement patterns observed in cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the approach by Li et al. (2013) suffers less from lower SNRs in smaller particles (because each field of view contains many of them), it is less suited to model the complicated movement patterns that we and others have observed (Glaeser and Hall, 2011; Brilot et al., 2012; Bai et al., 2013) (also see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous observations and by Figure 1 showing complex movement patterns.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "e8527cd6-2dac-4194-b7f4-875694509118",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C20",
+      "claim": "Low frequencies in cryo-EM data survive higher electron doses than high frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, neither of the two algorithms accounts for the observation that low frequencies in the data survive higher electron doses than the high frequencies (Unwin and Henderson, 1975; Hayward and Glaeser, 1979; Stark et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Unwin and Henderson, 1975; Hayward and Glaeser, 1979; Stark et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "fb2af3d7-ebf8-4efd-9120-275f85b12bf4",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C21",
+      "claim": "The new approach deals with relatively small particles by considering the movements of multiple particles together.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach presented here addresses both issues: it deals with relatively small particles by considering the movements of multiple particles together, yet is still able to model complex movement patterns, and it formulates a resolution-dependent radiation damage model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach taken in the new algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "426f9e11-79ec-4698-be97-aff645a96e35",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C22",
+      "claim": "The new approach is able to model complex movement patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach presented here addresses both issues: it deals with relatively small particles by considering the movements of multiple particles together, yet is still able to model complex movement patterns, and it formulates a resolution-dependent radiation damage model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the fitted linear tracks shown in Figure 1 for various complex movement patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "a51add50-5bde-4abc-ada1-b01aa494d776",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C23",
+      "claim": "The new approach formulates a resolution-dependent radiation damage model.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach presented here addresses both issues: it deals with relatively small particles by considering the movements of multiple particles together, yet is still able to model complex movement patterns, and it formulates a resolution-dependent radiation damage model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methodology and demonstrated through the relative B-factor analysis in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "771f013b-3135-42a5-a785-6951718efd40",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C24",
+      "claim": "Beam-induced rotations for ribosome particles were observed to be only a few degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous contribution (Bai et al., 2013), we observed beam-induced rotations for ribosome particles of only a few degrees, which is comparable to the accuracy with which orientations of the individual particles could be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "38205e77-14c6-49a0-8729-7e7aae3091d0",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C25",
+      "claim": "The observed beam-induced rotations for ribosome particles are comparable to the accuracy with which orientations of individual particles could be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous contribution (Bai et al., 2013), we observed beam-induced rotations for ribosome particles of only a few degrees, which is comparable to the accuracy with which orientations of the individual particles could be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of rotation magnitudes to orientation determination accuracy.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "e3d43ce0-5724-4d3c-bd6b-7276ce32d518",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C26",
+      "claim": "The observation of small beam-induced rotations agreed with previous observations by Campbell et al. (2012).",
+      "claim_type": "EXPLICIT",
+      "source": "This agreed with previous observations by others (Campbell et al., 2012), and prompted us to investigate a beam-induced movement correction algorithm that only considers particle translations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Campbell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "61f916d3-90cb-48ff-bdeb-2dae9decec3b",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C27",
+      "claim": "The new beam-induced movement correction algorithm only considers particle translations.",
+      "claim_type": "EXPLICIT",
+      "source": "This agreed with previous observations by others (Campbell et al., 2012), and prompted us to investigate a beam-induced movement correction algorithm that only considers particle translations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach taken in the new algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "88847a1d-9533-4913-9246-8b52ddd6efdd",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C28",
+      "claim": "The new approach builds on the original approach where running averages of several movie frames of individual particles are translationally aligned against a common reference.",
+      "claim_type": "EXPLICIT",
+      "source": "The new approach builds on the original one, where running averages of several movie frames of individual particles are (only translationally) aligned against a common reference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological foundation of the new algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "bff9f018-74e4-455e-aa79-6e6aa798b3da",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C29",
+      "claim": "For small particles, the translations from individual particle alignments become noisy.",
+      "claim_type": "EXPLICIT",
+      "source": "Because for small particles these translations become noisy, the new approach fits straight tracks through them, and includes all neighbouring particles on the same field of view in these weighted least-squares fits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation that motivated the development of the new approach, as shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "769f510a-6afd-4dad-8e7f-95b97f96a8ac",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C30",
+      "claim": "The new approach fits straight tracks through particle translations and includes all neighbouring particles on the same field of view in weighted least-squares fits.",
+      "claim_type": "EXPLICIT",
+      "source": "Because for small particles these translations become noisy, the new approach fits straight tracks through them, and includes all neighbouring particles on the same field of view in these weighted least-squares fits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach taken in the new algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "e29b0ddb-6256-4839-8e35-9b33c59920c4",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C31",
+      "claim": "The user controls the standard deviation \u03c3NB of the Gaussian function that defines the weights for neighbouring particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The user controls the standard deviation \u03c3NB of the Gaussian function that defines all wp\u2032.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a user-controllable parameter in the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "0fb30db4-a2ec-4e3f-ad7d-29910249295f",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C32",
+      "claim": "Smaller values for \u03c3NB result in fewer neighbouring particles effectively contributing to the linear fits.",
+      "claim_type": "EXPLICIT",
+      "source": "Smaller values for \u03c3NB result in fewer neighbouring particles effectively contributing to the linear fits, so that less noise may be removed, but more complicated movement patterns may be described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the effect of the \u03c3NB parameter on the algorithm's behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "1055e0d9-2391-472f-b52e-915760ec63e9",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C33",
+      "claim": "In cases where beam-induced motions may not be modelled by straight tracks, the method will not yield good results.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where the beam-induced motions may not be modelled by straight tracks, for example for bent or zig-zag tracks, this method will not yield good results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the limitations of the method based on its assumptions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "7605f097-3fec-46df-bba1-a8564e336ee4",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C34",
+      "claim": "A hybrid approach may be useful to correct for large, possibly non-straight movements using the algorithm by Li et al. (2013) and correct for finer movements using the new algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, a hybrid approach, as also used for the \u03b3-secretase example below, may be useful to correct for large, possibly non-straight movements using the algorithm by Li et al. (2013) and correct for finer movements using the one described here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the \u03b3-secretase example in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "9a055c89-59a1-406e-8664-745a800fd104",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C35",
+      "claim": "The fall-off of information content with frequency in cryo-EM data is often modelled by a Gaussian using a B-factor, in analogy to the temperature factor in X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "The fall-off of information content with frequency in cryo-EM data is often modelled by a Gaussian using a B-factor, in analogy to the temperature factor in X-ray crystallography (Rosenthal and Henderson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rosenthal and Henderson, 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "0f5ef8a1-7cda-418b-a813-66fd480d511c",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C36",
+      "claim": "The new movie processing approach exploits a B-factor model to describe the dose-dependent signal fall-off throughout the recorded movies by estimating a relative B-factor for each movie frame.",
+      "claim_type": "EXPLICIT",
+      "source": "The new movie processing approach exploits a similar model to describe the dose-dependent signal fall-off throughout the recorded movies by estimating a (relative) B-factor for each movie frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach and is demonstrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "43ecd7e4-67a8-46c1-86ce-107942db007e",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C37",
+      "claim": "The most common procedure to estimate B-factors in cryo-EM structure determination only works for reconstructions where the signal extends beyond \u03bd = 1/10 \u00c5\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common procedure to estimate B-factors in cryo-EM structure determination, by analyzing the Guinier plot of the logarithm of the amplitudes (\u03c4) of a reconstruction versus the square of the frequency (\u03bd2 = 1/\u03b42), only works for reconstructions where the signal extends beyond \u03bd = 1/10 \u00c5\u22121 (Rosenthal and Henderson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rosenthal and Henderson, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "18da75cc-7279-4021-a9c0-a98a65da274c",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C38",
+      "claim": "Reconstructions from individual movie frames often do not reach \u03bd = 1/10 \u00c5\u22121 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Because reconstructions from individual movie frames often do not reach that resolution, an alternative analysis was devised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation that motivated the development of the alternative B-factor estimation approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "f2ac5fea-be65-42e6-bf92-e93bd536c0b1",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C39",
+      "claim": "The alternative approach estimates 'relative B-factors' that describe how much faster or slower the signal in reconstructions from individual frames drops with frequency compared to the average reconstruction from all movie frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of estimating absolute B-factors for each movie frame, the alternative approach merely estimates 'relative B-factors' that describe how much faster (or slower) the signal in reconstructions from individual frames drops with frequency compared to the average reconstruction from all movie frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach taken in the new algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "b7b90dd2-3b0f-47c9-863f-82c66949322e",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C40",
+      "claim": "If the signal in a reconstruction from a single movie frame drops faster than the signal in a reconstruction from all movie frames, then the relative B-factor will be negative.",
+      "claim_type": "EXPLICIT",
+      "source": "If the signal in a reconstruction from a single movie frame of all particles drops faster than the signal in a reconstruction from all movie frames, then the relative B-factor will be negative; if the signal in the single-frame reconstruction drops slower, the relative B-factor will be positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of how relative B-factors are interpreted in the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "ad89b491-9c6f-40bf-82aa-07586efa3399",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C41",
+      "claim": "If the signal in a single-frame reconstruction drops slower than the average reconstruction, the relative B-factor will be positive.",
+      "claim_type": "EXPLICIT",
+      "source": "If the signal in a reconstruction from a single movie frame of all particles drops faster than the signal in a reconstruction from all movie frames, then the relative B-factor will be negative; if the signal in the single-frame reconstruction drops slower, the relative B-factor will be positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of how relative B-factors are interpreted in the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "86aa85bf-e714-4501-8565-185cab4d2965",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C42",
+      "claim": "Useful frequencies for fitting straight lines in relative Guinier plots were observed from approximately 1/20 \u00c5\u22121 to the frequency where FSCf = 0.143.",
+      "claim_type": "EXPLICIT",
+      "source": "In these plots, useful frequencies for fitting straight lines were observed from approximately 1/20 \u00c5\u22121 to the frequency where FSCf = 0.143.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "30bc1031-55c5-4fef-9c6f-e14c14913aeb",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C43",
+      "claim": "Out-of-plane rotations are not considered in the new approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, because out-of-plane rotations are not considered in the new approach, one may apply the in-plane translations from the fitted tracks for all movie frames of each particle, and then sum the movie frames using the frequency-dependent weights described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a limitation of the methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "09ef4dfd-c0f1-42fb-a57e-fa23bcf75a5f",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C44",
+      "claim": "The new approach creates a set of 'polished' average particles with increased SNRs.",
+      "claim_type": "EXPLICIT",
+      "source": "This creates a set of new 'polished' average particles with increased SNRs, which may again be used in subsequent 2D or 3D classifications or refinements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the output of the algorithm, with increased SNR demonstrated through improved resolution in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "bdde79d2-3257-4b05-82c3-779313588329",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C45",
+      "claim": "The re-weighting of movie frames does not comprise an overall sharpening or dampening of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the re-weighting of the movie frames thus does not comprise an overall sharpening or dampening of the data, and the estimation of an overall absolute B-factor (as in the last row of Table 1) remains relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mathematical properties of the weighting scheme.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "3f760058-ceb9-4902-9317-3314dcf15b99",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C46",
+      "claim": "The new approach was tested on four previously published cryo-EM data sets on particles of varying size: human \u03b3-secretase, E. coli \u03b2-galactosidase, bovine complex-I, and the large sub-unit of the yeast mitochondrial ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The new approach was tested on four previously published cryo-EM data sets on particles of varying size: human \u03b3-secretase (Lu et al., 2014), Escherichia coli \u03b2-galactosidase (Scheres and Chen, 2012; Chen et al., 2013; Vinothkumar et al., 2014a), bovine complex-I (Vinothkumar et al., 2014b), and the large sub-unit (LSU) of the yeast mitochondrial ribosome (Amunts et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design, with citations to the original data sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "78dd1236-6c78-48ef-8903-eadb008d01b4",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C47",
+      "claim": "The \u03b3-secretase data set was recorded on a Gatan K2-Summit detector.",
+      "claim_type": "EXPLICIT",
+      "source": "The data set on the \u03b3-secretase complex was recorded on a Gatan K2-Summit detector; all other data sets were recorded on an FEI Falcon-II detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup, also shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "a4927374-fa9d-406d-b927-6a65b7f241d7",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C48",
+      "claim": "All data sets except \u03b3-secretase were recorded on an FEI Falcon-II detector.",
+      "claim_type": "EXPLICIT",
+      "source": "The data set on the \u03b3-secretase complex was recorded on a Gatan K2-Summit detector; all other data sets were recorded on an FEI Falcon-II detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup, also shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "59aaca56-b1ed-4d8c-95d5-f038f000e759",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C49",
+      "claim": "The K2 detector aims to count single-electron events and has to be used at a much lower dose rate than the Falcon-II.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the K2 detector aims to count single-electron events, it has to be used at a much lower dose rate than the Falcon-II, which integrates charge during the exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the different operating principles of the two detectors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "acd10e93-b19a-43a8-8cce-54ebd66e21ff",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C50",
+      "claim": "The Falcon-II detector integrates charge during the exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the K2 detector aims to count single-electron events, it has to be used at a much lower dose rate than the Falcon-II, which integrates charge during the exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the detector's operating principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "63c7fe85-4c14-468a-95c9-4bb3b57905da",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C51",
+      "claim": "The \u03b3-secretase data were recorded using relatively long exposures of 15 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the \u03b3-secretase data were recorded using relatively long exposures of 15 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup, also shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "db4c62a1-aa9c-4863-ae97-f7c774e91c3e",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C52",
+      "claim": "The \u03b3-secretase fields of view were first subjected to the algorithm by Li et al. (2013) to correct for linear drift, and then to the particle-based correction.",
+      "claim_type": "EXPLICIT",
+      "source": "To correct for linear drift during this time, the recorded fields of view were first subjected to the algorithm by Li et al. (2013), and then to the particle-based correction described here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the hybrid approach used for the \u03b3-secretase data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "3b102011-26b3-4890-b587-5dcd003d97bd",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C53",
+      "claim": "A similar hybrid strategy was applied to F420-reducing [NiFe] hydrogenase using the original movie processing approach.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar hybrid strategy, but using the original movie processing approach, was also applied to F420-reducing [NiFe] hydrogenase (Allegretti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Allegretti et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "8cf7f08b-0132-44a1-b87f-51d4c8ff36f6",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C54",
+      "claim": "The \u03b2-galactosidase, complex-I, and mitoribosome data sets were recorded with exposures of 1\u20132 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The other three data sets were recorded with exposures of 1\u20132 s, and only particle-based movement correction was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup, also shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "bdd2a671-980b-4617-b21e-abebd6623de4",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C55",
+      "claim": "Only particle-based movement correction was performed for the \u03b2-galactosidase, complex-I, and mitoribosome data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The other three data sets were recorded with exposures of 1\u20132 s, and only particle-based movement correction was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "50a583fa-e038-4736-83b5-50269ff8bef9",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C56",
+      "claim": "The original movie processing algorithm does not improve resolution for particles smaller than 500 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the original movie processing algorithm does not improve resolution for particles smaller than 500 kDa, the new approach yields significant improvements for all four cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the results in Table 1 showing no improvement or worsening for smaller particles with the original algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "02d28766-0ae7-444c-ba31-41a0e56e00d4",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C57",
+      "claim": "The new approach yields significant improvements for all four test cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the original movie processing algorithm does not improve resolution for particles smaller than 500 kDa, the new approach yields significant improvements for all four cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the results in Table 1 showing resolution improvements for all four data sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "79b30f32-73bf-47de-b1a9-75b336c3c624",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C58",
+      "claim": "The movement tracks after application of the original movie processing algorithm become increasingly noisy for smaller particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The movement tracks after application of the original movie processing algorithm (but omitting rotational searches) become increasingly noisy for smaller particles, whereas for the mitoribosomes the assumption of linear movements appears to be reasonable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated visually in Figure 1 showing the blue tracks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "3a499d5d-4cc0-4c3f-aae8-bfc4063c2554",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C59",
+      "claim": "For mitoribosomes, the assumption of linear movements appears to be reasonable.",
+      "claim_type": "EXPLICIT",
+      "source": "The movement tracks after application of the original movie processing algorithm (but omitting rotational searches) become increasingly noisy for smaller particles, whereas for the mitoribosomes the assumption of linear movements appears to be reasonable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of the movement tracks in Figure 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "5d0a0d5c-3331-444a-adba-837e7eccded4",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C60",
+      "claim": "All four samples exhibit complex movement patterns that could not be described as a single correlated movement.",
+      "claim_type": "EXPLICIT",
+      "source": "All four samples exhibit complex movement patterns that could not be described as a single correlated movement, but which are captured by the fitted linear tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated visually in Figure 1 showing varied movement directions across each field of view.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "c245c0c6-6858-4d54-bbe1-d7bd7bc361d2",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C61",
+      "claim": "The complex movement patterns are captured by the fitted linear tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "All four samples exhibit complex movement patterns that could not be described as a single correlated movement, but which are captured by the fitted linear tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated visually in Figure 1 showing the white fitted tracks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "c57d60a8-b9e3-4fbf-8c5d-5198bd66f20d",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C62",
+      "claim": "For large particles such as ribosomes, a running average that accumulates approximately 5 electrons/\u00c52 is often a good choice.",
+      "claim_type": "EXPLICIT",
+      "source": "For large particles such as ribosomes, a running average that accumulates approximately 5 electrons/\u00c52 (five frames in the example below) is often a good choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experience gained from applying the algorithm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "8ee9297b-2bc8-4967-a48d-0d59968d073d",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C63",
+      "claim": "For smaller particles, running averages that correspond to larger doses may be necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "For smaller particles, running averages that correspond to larger doses may be necessary, for example 17 electrons/\u00c52 (seven frames) for the \u03b3-secretase example below and 7 electrons/\u00c52 (seven frames) for \u03b2-galactosidase and complex-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experience gained from applying the algorithm to the test cases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "bebbfb9c-cb7d-4354-836f-1c9ef8bd2956",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C64",
+      "claim": "Overall, Bf and Cf values decrease with higher electron dose, which may be attributed to the relatively faster disappearance of signal at high resolution through radiation damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, Bf and Cf values decrease with higher electron dose, which may be attributed to the relatively faster disappearance of signal at high resolution through radiation damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 2 and represents an inference about the cause of the observed trend.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "21a40161-2429-41a9-a514-5c1f6c8f8396",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C65",
+      "claim": "Consistently low values for Bf are observed for the first few movie frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, consistently low values for Bf are also observed for the first few movie frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 2 showing the Bf values for early frames.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "94446990-7766-4dc6-8a35-b40744c69e60",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C66",
+      "claim": "During the initial stages of sample irradiation, relatively large beam-induced movements occur.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with observations made by others (Brilot et al., 2012; Campbell et al., 2012; Li et al., 2013; Russo and Passmore, 2014; Vinothkumar et al., 2014a) that during the initial stages of sample irradiation relatively large beam-induced movements occur, while sample movement slows down at higher electron doses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "eb81c882-58da-4582-8cf6-cddb17e38288",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C67",
+      "claim": "Sample movement slows down at higher electron doses.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with observations made by others (Brilot et al., 2012; Campbell et al., 2012; Li et al., 2013; Russo and Passmore, 2014; Vinothkumar et al., 2014a) that during the initial stages of sample irradiation relatively large beam-induced movements occur, while sample movement slows down at higher electron doses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "c1f30a6a-9859-477b-b798-8a0baa69ac1c",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C68",
+      "claim": "Electron diffraction spots at 3 \u00c5 resolution from bacteriorhodopsin crystals lose 99% of their intensity after a dose of only 3 electrons/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that electron diffraction spots at 3 \u00c5 resolution from bacteriorhodopsin crystals lose 99% of their intensity after a dose of only 3 electrons/\u00c52 (Stark et al., 1996), the initial sample movement is extremely detrimental to high-resolution structure determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Stark et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "6378ee1e-7771-4cf2-ae73-36b3254b462b",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C69",
+      "claim": "The initial sample movement is extremely detrimental to high-resolution structure determination.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that electron diffraction spots at 3 \u00c5 resolution from bacteriorhodopsin crystals lose 99% of their intensity after a dose of only 3 electrons/\u00c52 (Stark et al., 1996), the initial sample movement is extremely detrimental to high-resolution structure determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combination of rapid radiation damage and initial movement.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "62bf7310-d943-4817-90bf-f31d7117722e",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C70",
+      "claim": "Stopping the initial movement altogether would be a very powerful way to further increase resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, stopping the initial movement altogether would be a very powerful way to further increase resolution, but this has not yet been achieved with existing sample preparation or imaging techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential future improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "3f061596-396f-41fb-8071-843af54a0ff9",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C71",
+      "claim": "Stopping the initial movement has not yet been achieved with existing sample preparation or imaging techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, stopping the initial movement altogether would be a very powerful way to further increase resolution, but this has not yet been achieved with existing sample preparation or imaging techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "aa3008b7-69bb-4dae-b1e4-ed42cc694968",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C72",
+      "claim": "The movie processing algorithm down-weights the high-frequency contributions of the first few movie frames as well as those of the later, high-dose frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the movie processing algorithm proposed here down-weights the high-frequency contributions of the first few movie frames, as well as those of the later, high-dose frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 2 showing the frequency-dependent weights.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "cef6bc11-c4a4-4047-a6c0-0b2a1b5d620b",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C73",
+      "claim": "Down-weighting early and late frames represents an attractive alternative to merely omitting such frames.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents an attractive alternative to merely omitting such frames (e.g., see Liao et al., 2013 and Allegretti et al., 2014), since these frames may still contribute useful information to the reconstruction process, particularly at low resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the weighting approach, with citations to alternative approaches.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "f648dbb7-e3c4-4aff-974e-cacd19eeb72f",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C74",
+      "claim": "Early and late frames may still contribute useful information to the reconstruction process, particularly at low resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents an attractive alternative to merely omitting such frames (e.g., see Liao et al., 2013 and Allegretti et al., 2014), since these frames may still contribute useful information to the reconstruction process, particularly at low resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the frequency-dependent weighting scheme shown in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "a56c6b64-d0d8-4ac1-84c7-1abacd295a4d",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C75",
+      "claim": "For all four data sets, the reconstructed density is significantly improved by the new movie processing approach.",
+      "claim_type": "EXPLICIT",
+      "source": "For all four data sets the reconstructed density is significantly improved, thus allowing identification of finer biologically relevant details like separated \u03b2-strands or RNA bases in the maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3 and Table 1 showing resolution improvements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "440bc7c8-4cb2-4154-85aa-b56fd1f60736",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C76",
+      "claim": "The new approach allows identification of finer biologically relevant details like separated \u03b2-strands or RNA bases in the maps.",
+      "claim_type": "EXPLICIT",
+      "source": "For all four data sets the reconstructed density is significantly improved, thus allowing identification of finer biologically relevant details like separated \u03b2-strands or RNA bases in the maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated visually in Figure 3 showing improved density maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "88b19f5e-eaa0-45fb-94fd-b47503306fdb",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C77",
+      "claim": "The new approach outperforms the original one for the three smaller complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The new approach outperforms the original one for the three smaller complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Table 1 showing better resolution for \u03b3-secretase, \u03b2-galactosidase, and complex-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "82c4338e-c1e6-4fcd-ad3c-bfb87497c85f",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C78",
+      "claim": "For the mitoribosome LSU, the new approach yields a map with 0.05 \u00c5 lower resolution than the original approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Only for the mitoribosome LSU, does the new approach yield a map with 0.05 \u00c5 lower resolution than the original approach, although this difference is hard to appreciate in the maps (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Table 1 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "294ba6b6-d76d-48c2-b10b-7c3b33427094",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C79",
+      "claim": "For particles of several megadaltons in size, the determination of rotations and translations is accurate enough to follow particle rotations during the movies.",
+      "claim_type": "EXPLICIT",
+      "source": "Probably, for particles of several megadaltons in size, the determination of rotations and translations is (just about) accurate enough to follow particle rotations during the movies (also see Brilot et al., 2012 and Campbell et al., 2012), and the omission of rotational searches in the new approach may actually affect the results to a small extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the results and citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "c4006bc5-01de-4b78-a1cb-428626a1659f",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C80",
+      "claim": "The omission of rotational searches in the new approach may affect the results to a small extent for very large particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Probably, for particles of several megadaltons in size, the determination of rotations and translations is (just about) accurate enough to follow particle rotations during the movies (also see Brilot et al., 2012 and Campbell et al., 2012), and the omission of rotational searches in the new approach may actually affect the results to a small extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the slightly lower resolution obtained for the mitoribosome.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "9748ad7b-e8ef-4ee6-8226-64ff689292b5",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C81",
+      "claim": "For small particles, the accuracy with which particles may be aligned is the limiting factor.",
+      "claim_type": "EXPLICIT",
+      "source": "(For small particles the accuracy with which such particles may be aligned is the limiting factor, and omitting rotational searches in the movie refinement will probably not have a noticeable effect.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that the new approach works well for small particles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "d37e5654-ae4d-42fd-a1cd-e4c18c9f2e68",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C82",
+      "claim": "Omitting rotational searches in the movie refinement will probably not have a noticeable effect for small particles.",
+      "claim_type": "EXPLICIT",
+      "source": "(For small particles the accuracy with which such particles may be aligned is the limiting factor, and omitting rotational searches in the movie refinement will probably not have a noticeable effect.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the understanding of alignment limitations for small particles.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "e60c4ce7-cf14-4bf0-87ed-627b7eddf031",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C83",
+      "claim": "The new approach provides a significant speed-up compared to the original approach (a factor of 6 for the mitoribosome data set).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, when weighed against the significant speed-up obtained by omitting the rotational searches from the original movie processing approach (a factor of 6 for the mitoribosome data set), even for large particles the new approach may still be preferred over the original one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Table 1 showing CPU time comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "ea8dfd91-9b62-41a6-bfbb-88443ae3cdd2",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C84",
+      "claim": "Even for large particles, the new approach may still be preferred over the original one due to the speed-up.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, when weighed against the significant speed-up obtained by omitting the rotational searches from the original movie processing approach (a factor of 6 for the mitoribosome data set), even for large particles the new approach may still be preferred over the original one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the trade-off between speed and marginal resolution difference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "197cecb0-5226-47fc-9009-6bb3ea4b15e9",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C85",
+      "claim": "The major advance of the new movie processing approach lies in its applicability to smaller particles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the major advance of the new movie processing approach lies in its applicability to smaller particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the results for \u03b3-secretase, \u03b2-galactosidase, and complex-I in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "2382a1be-ab5c-47b2-a864-0ea8050465b6",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C86",
+      "claim": "The new approach brings resolutions at which \u03b2-strands become separated within reach for particles smaller than 200 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the original approach was limited to large particles, the new one yields map improvements for a wide range of particles, now bringing resolutions at which \u03b2-strands become separated within reach for particles smaller than 200 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the \u03b3-secretase example (170 kDa) achieving 4.5 \u00c5 resolution with visible \u03b2-strands in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "eebe4370-b63a-45e3-b377-a16b772f9fbf",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C87",
+      "claim": "The new approach has been implemented in the 1.3 release of the open-source RELION program, where it is called 'particle polishing'.",
+      "claim_type": "EXPLICIT",
+      "source": "The new approach has been implemented in the 1.3 release of the open-source RELION program (Scheres, 2012), where it is called 'particle polishing'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the software implementation with citation to the RELION program.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "3d98abc5-91fa-4ec8-940c-fd5a30a5ac75",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C88",
+      "claim": "The new approach has been used in the structure determination to 3.2 \u00c5 resolution of the cytoplasmic ribosome of the Plasmodium falciparum parasite in complex with the antibiotic emetine.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the data sets presented here, it has been used already in the structure determination to 3.2 \u00c5 resolution of the cytoplasmic ribosome of the Plasmodium falciparum parasite in complex with the antibiotic emetine as well (Wong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wong et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "8376d8a0-995c-4eb1-8335-243f3cd7a8c0",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C89",
+      "claim": "All data sets were recorded using 300 keV electrons.",
+      "claim_type": "EXPLICIT",
+      "source": "All data sets were recorded using 300 keV electrons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "74ab313a-0c73-49af-a454-cbcc4abfe040",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C90",
+      "claim": "The \u03b3-secretase, \u03b2-galactosidase, and mitoribosome data sets were recorded manually.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b3-secretase, \u03b2-galactosidase, and mitoribosome data sets were recorded manually; the complex-I data set was recorded automatically using the EPU software from FEI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "563e361c-922a-4709-9ce5-5a5c7365e04d",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C91",
+      "claim": "The complex-I data set was recorded automatically using the EPU software from FEI.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b3-secretase, \u03b2-galactosidase, and mitoribosome data sets were recorded manually; the complex-I data set was recorded automatically using the EPU software from FEI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "372ac537-7080-46e0-9451-35a0c2444592",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C92",
+      "claim": "Fields of view that showed signs of significant drift, charging, or astigmatism were discarded for all data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "For all data sets, fields of views that showed signs of significant drift, charging, or astigmatism were discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data quality control procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "13659ebd-e474-496d-b0b7-9c37311cb939",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C93",
+      "claim": "For the \u03b3-secretase data, assessment of drift, charging, or astigmatism was made after alignment using the algorithm by Li et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "For the \u03b3-secretase data, this assessment was made after alignment using the algorithm by Li et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data quality control procedure specific to \u03b3-secretase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "ab28d248-ce8c-4bc5-8284-8470d990ef25",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C94",
+      "claim": "Movies on the Falcon-II detectors were intercepted using a system that was developed in-house.",
+      "claim_type": "EXPLICIT",
+      "source": "Movies on the Falcon-II detectors on the Polara and Titan Krios microscopes were intercepted using a system that was developed in-house (Bai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection method with citation to the previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "5952b98c-7a6a-42fb-ae14-c2f95e3f818c",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C95",
+      "claim": "CTF parameters were estimated using CTFFIND3.",
+      "claim_type": "EXPLICIT",
+      "source": "CTF parameters were estimated using CTFFIND3 (Mindell and Grigorieff, 2003), and the particles were picked in a semi-automated manner, using EMAN2 (Tang et al., 2007) for the mitoribosome, and RELION for the three other data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method with citation to the software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "438c3373-2429-4eeb-b0c2-b6813f54fbf9",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C96",
+      "claim": "Particles were picked in a semi-automated manner using EMAN2 for the mitoribosome and RELION for the three other data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "CTF parameters were estimated using CTFFIND3 (Mindell and Grigorieff, 2003), and the particles were picked in a semi-automated manner, using EMAN2 (Tang et al., 2007) for the mitoribosome, and RELION for the three other data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method with citations to the software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "843341bf-06b6-4d2a-9c68-954b26005b6e",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C97",
+      "claim": "Selection of particles for the final 3D reconstruction was performed using reference-free 2D class averaging and 3D classification in RELION.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection of particles for the final 3D reconstruction was performed using reference-free 2D class averaging and 3D classification in RELION (Scheres, 2012), and the final maps before and after movie processing were calculated using RELION's 3D auto-refine, followed by automated B-factor sharpening (Rosenthal and Henderson, 2003) and correction for the MTF of the detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method with citation to the software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "c45afff8-fa0f-4efe-827a-8059be5effb5",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C98",
+      "claim": "Final maps before and after movie processing were calculated using RELION's 3D auto-refine, followed by automated B-factor sharpening and correction for the MTF of the detector.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection of particles for the final 3D reconstruction was performed using reference-free 2D class averaging and 3D classification in RELION (Scheres, 2012), and the final maps before and after movie processing were calculated using RELION's 3D auto-refine, followed by automated B-factor sharpening (Rosenthal and Henderson, 2003) and correction for the MTF of the detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method with citations to the methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "68117afa-2008-4bd5-9b16-a000a2305039",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C99",
+      "claim": "All resolutions were based on the gold-standard FSC = 0.143 criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "All resolutions were based on the gold-standard FSC = 0.143 criterion (Scheres and Chen, 2012), and FSC curves were corrected for the effects of soft masking by high-resolution noise substitution (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the resolution determination method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "7089fee6-f3e8-4528-90fb-4bb0a8af9020",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C100",
+      "claim": "FSC curves were corrected for the effects of soft masking by high-resolution noise substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "All resolutions were based on the gold-standard FSC = 0.143 criterion (Scheres and Chen, 2012), and FSC curves were corrected for the effects of soft masking by high-resolution noise substitution (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the resolution determination method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "547b3059-4214-4ab2-b3d0-822bb9f44f6a",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C101",
+      "claim": "Density figures were made using UCSF Chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "Density figures were made using UCSF Chimera (Pettersen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the visualization method with citation to the software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "a5de723c-b129-4c1d-8bf6-816c28b3bc0c",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C102",
+      "claim": "The molecular mass of \u03b3-secretase is 170 kDa of protein, plus 60 kDa of disordered glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "*The molecular mass of \u03b3-secretase is 170 kDa of protein, plus 60 kDa of disordered glycosylation. The density for the glycosylation was not visible in the electron microscopy map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the footnote to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "0db9361d-5cd4-4fbb-8174-acdc8d2095db",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C103",
+      "claim": "The density for the glycosylation of \u03b3-secretase was not visible in the electron microscopy map.",
+      "claim_type": "EXPLICIT",
+      "source": "*The molecular mass of \u03b3-secretase is 170 kDa of protein, plus 60 kDa of disordered glycosylation. The density for the glycosylation was not visible in the electron microscopy map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the footnote to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "17e50657-8d24-4128-93c6-5fec5d07cf16",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C109",
+      "claim": "Figure 1 shows representative micrographs with 50-fold exaggerated beam-induced particle movements plotted on top.",
+      "claim_type": "EXPLICIT",
+      "source": "A representative micrograph for each of the four test cases is shown, on top of which 50-fold exaggerated beam-induced particle movements are plotted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the figure caption for Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "8b71fbaf-0078-46bc-be76-cd41f5a492df",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C110",
+      "claim": "In Figure 1, the original tracks estimated for running averages of several movie frames for each particle independently are shown in blue.",
+      "claim_type": "EXPLICIT",
+      "source": "The original tracks as estimated for running averages of several movie frames for each particle independently are shown in blue; the fitted linear tracks are shown in white.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the figure caption for Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "87e782ac-862e-4b5b-8c67-96cee24fe718",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C111",
+      "claim": "In Figure 1, the fitted linear tracks are shown in white.",
+      "claim_type": "EXPLICIT",
+      "source": "The original tracks as estimated for running averages of several movie frames for each particle independently are shown in blue; the fitted linear tracks are shown in white.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the figure caption for Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "579308ca-c469-4108-8279-d5b2bb7ac312",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "claim_id": "C112",
+      "claim": "The relatively small movement tracks for \u03b3-secretase only represent the beam-induced motion that was not already corrected for in the algorithm by Li et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Also note that the relatively small movement tracks for \u03b3-secretase only represent the beam-induced motion that was not already corrected for in the algorithm by Li et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure caption for Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4e63a635-c82a-4bed-8563-b260b6fbcbaf",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Beam-induced motion in cryo-EM is caused by electron beam interactions with the sample, which blurs images and limits resolution in single-particle analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C10 establish well-known phenomena in cryo-EM that are supported by multiple citations and represent established knowledge in the field. These are foundational observations that motivate the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "3ebb0ff8-4da8-4c6f-b45b-54a8d9d1d5e6",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous movie processing algorithms have successfully achieved near-atomic resolution structures for various specimens, including ribosomes and other large complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C11-C15 are all supported by appropriate citations to prior published work. These establish the state of the field and provide context for the current advance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "8554af4d-fec9-46ed-a0aa-3b7105715993",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The original beam-induced movement correction algorithm has limitations: it does not work well for particles smaller than ribosomes due to low SNR, while the Li et al. (2013) approach is less suited to model complex movement patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 accurately describe limitations of prior methods. C17 is an inference supported by the data presented (Table 1, C56), C18-C19 are supported by citations and Figure 1 demonstrating complex movement patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "f5bfa421-65f7-4c88-8e3f-9ebf2ecec8e3",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Low-frequency signals in cryo-EM survive higher electron doses than high-frequency signals, and standard B-factor estimation methods have limitations for low-resolution reconstructions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C35, and C37 are supported by appropriate citations to established literature. C38 is a reasonable observation that motivates the alternative approach developed in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The new algorithm addresses small particle limitations by fitting straight movement tracks through translations of multiple neighboring particles using weighted least-squares fits, omitting rotational searches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21, C27-C32 describe the core methodological innovation. The approach is clearly described mathematically and demonstrated in Figure 1. The weighted neighbor approach is a logical solution to the noise problem in small particles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "293711e6-bd8b-4d4b-a807-a28a57fe08f3",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The new algorithm implements a resolution-dependent radiation damage model using relative B-factors estimated for each movie frame to weight frequency contributions appropriately.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C23, C36, C39-C42 describe the dose-dependent weighting scheme. The mathematical formulation is provided, and Figure 2 demonstrates the estimated parameters and resulting weights across all test cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "4f4183ca-a609-4a51-bdee-db11984532bd",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The algorithm produces 'polished' particles with increased SNR by applying fitted translational tracks and frequency-dependent weights without overall sharpening or dampening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 describe the output and properties of the algorithm. C44 is supported by resolution improvements in Table 1. C45 is a mathematical consequence of the normalization scheme described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "496f815d-8655-4565-9a15-5ba46ce1983c",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The new approach was tested on four cryo-EM datasets of varying particle sizes (170 kDa to 1.9 MDa) recorded on different detectors with appropriate experimental protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52, C54-C55 describe the experimental design. All details are documented in Table 1 and are supported by citations to the original data sources. The hybrid approach for \u03b3-secretase (C52) is appropriately justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "44d56122-6854-40d4-b992-fb8118a2171b",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The new approach yields significant resolution improvements for all four test cases, including particles smaller than 500 kDa where the original algorithm fails, and successfully captures complex movement patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 are strongly supported by Table 1 showing quantitative resolution improvements and Figure 1 visualizing movement patterns. The original algorithm shows no improvement or worsening for smaller particles, while the new approach improves all cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "40e58992-c503-4222-8160-59f17a38b3c4",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Optimal running average parameters depend on particle size, with larger particles requiring ~5 e\u207b/\u00c5\u00b2 and smaller particles requiring larger doses (7-17 e\u207b/\u00c5\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 provide practical recommendations based on the four test cases. These are empirical observations supported by the successful application shown in Table 1, though they represent guidelines rather than strict rules.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "da774990-6d1d-4a59-957c-eca1a53238f6",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Relative B-factors decrease with electron dose due to radiation damage, but are also low for initial frames due to large beam-induced movements, which is extremely detrimental to high-resolution structure determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 are supported by Figure 2 showing B-factor trends and by multiple citations (C66-C67). C68 provides quantitative support from literature. C69 is a logical inference combining rapid damage with initial movement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "52e205ac-ff22-4520-9d12-5f348342e925",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Stopping initial beam-induced movement would be powerful for improving resolution but has not yet been achieved with existing techniques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 represent reasonable speculation (C70) and an accurate assessment of the current state of the field (C71). These motivate the algorithmic approach as an alternative solution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "b5c8dd86-fead-4503-a839-b7e455406b17",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The algorithm down-weights high-frequency contributions from early and late frames, representing an attractive alternative to frame omission since these frames contribute useful low-resolution information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by Figure 2 showing frequency-dependent weights. C73-C74 represent reasonable inferences about the advantages of weighting versus omission, with citations to alternative approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "64a1f503-5eff-440b-9a13-b482cad91f83",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The new approach significantly improves reconstructed density for all four datasets, allowing identification of finer biological details like separated \u03b2-strands and RNA bases, and outperforms the original algorithm for smaller complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 are strongly supported by Figure 3 showing visual improvements in density maps and Table 1 showing quantitative resolution improvements for \u03b3-secretase (4.9\u21924.5 \u00c5), \u03b2-galactosidase (4.3\u21924.0 \u00c5), and complex-I (5.9\u21924.8 \u00c5).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "3d124189-cf6f-4b7d-8db8-ca3959052f4b",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "For the mitoribosome LSU, the new approach yields slightly lower resolution (0.05 \u00c5) than the original, possibly because omitting rotational searches affects results for very large particles where rotation determination is sufficiently accurate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C80 acknowledge a limitation. C78 is supported by Table 1 data. However, C79-C80 are speculative explanations without direct experimental validation. The difference is marginal and hard to appreciate visually (per manuscript), making the interpretation uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "e69c69b9-e435-49a4-806d-0262b75e103b",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "For small particles, alignment accuracy is the limiting factor and omitting rotational searches likely has no noticeable effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 represent reasonable inferences based on the successful application to small particles. The logic is sound: if alignment accuracy limits resolution, then rotational searches cannot improve results beyond this limit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "49750586-eb25-4a0f-ac34-375dfdf5c6ef",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The new approach provides significant computational speed-up (6-fold for mitoribosome) compared to the original, making it preferable even for large particles despite marginal resolution differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by CPU time data in Table 1 showing substantial speed improvements across all datasets. C84 is a reasonable inference about practical utility given the speed-resolution trade-off.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "5ae28c95-c8bf-453f-a048-eecce38cf6ac",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The major advance of the new algorithm is its applicability to a much wider range of specimens, bringing \u03b2-strand resolution within reach for particles smaller than 200 kDa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C7, C85-C86 represent the main conclusion. This is strongly supported by the \u03b3-secretase results (170 kDa, 4.9\u21924.5 \u00c5) showing visible \u03b2-strands in Figure 3, and by improvements across the size range tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "1e927458-4b29-4ea1-ada0-b4e4a82ac049",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The method has limitations for non-straight movement tracks (bent or zig-zag), but a hybrid approach combining whole-field correction with particle-based correction can address this.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 acknowledge methodological limitations and propose solutions. C33 is a logical consequence of the straight-track assumption. C34 is demonstrated through the \u03b3-secretase example combining Li et al. and the new approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "878715b8-147c-4ec0-83ec-47cde19ec517",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The new approach has been implemented in RELION 1.3 as 'particle polishing' and has already been successfully applied to additional structures including P. falciparum ribosome at 3.2 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 document software availability and additional applications. C87 provides implementation details with citation. C88 is supported by citation to Wong et al., 2014, demonstrating broader utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "6f793db2-57c0-44cb-864d-d9d07178d6bb",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Comprehensive materials and methods are provided including data collection parameters, quality control procedures, and data processing workflows using standard software tools with appropriate citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C101 provide methodological details necessary for reproducibility. All are straightforward descriptions of experimental procedures with appropriate software citations. These enable independent verification of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "0f0ed7d4-5d46-4cd9-93de-a08b9d737d92",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Direct-electron detectors yield higher SNR than conventional detectors and are fast enough to record movies during typical exposures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 describe established detector capabilities supported by citation (C8) and general knowledge (C9). These provide context for why movie processing is feasible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "880749e5-0c15-434f-b4d1-e33ed55bfea1",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Previous observations showed beam-induced rotations for ribosomes are only a few degrees, comparable to orientation determination accuracy, which motivated the translation-only approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 provide rationale for the methodological choice. C24 and C26 are supported by citations to prior work. C25 is a reasonable inference that justifies omitting rotational searches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "86f73771-42dc-4a79-ad0d-500908b703b1",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "\u03b3-secretase has 170 kDa of protein plus 60 kDa of disordered glycosylation that is not visible in the EM map.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 provide important clarification about the effective molecular mass for EM analysis. This explains why \u03b3-secretase at 170 kDa protein represents a challenging small particle case.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    },
+    {
+      "id": "5d601848-c01b-4637-bc4f-833c836988e2",
+      "content_id": "c7be621a-8227-4c8c-a042-f67683848f8f",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The new approach successfully models complex movement patterns that cannot be described as single correlated movements, as demonstrated by fitted linear tracks in Figure 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C60-C61 demonstrate a key capability. Figure 1 clearly shows varied movement directions across fields of view that are captured by the white fitted tracks, validating the multi-particle fitting approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:35.331530Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f983ea76-5171-42f1-b58f-dce1983899ce",
+      "result_id": "4e63a635-c82a-4bed-8563-b260b6fbcbaf"
+    },
+    {
+      "claim_id": "871b1e0c-bb62-4a77-a837-f651674f0673",
+      "result_id": "4e63a635-c82a-4bed-8563-b260b6fbcbaf"
+    },
+    {
+      "claim_id": "517bc0ed-8910-4c08-8ac3-c7a40f97c44e",
+      "result_id": "4e63a635-c82a-4bed-8563-b260b6fbcbaf"
+    },
+    {
+      "claim_id": "7670f38f-db02-4c97-a6d1-a7c7f57aa251",
+      "result_id": "3ebb0ff8-4da8-4c6f-b45b-54a8d9d1d5e6"
+    },
+    {
+      "claim_id": "7c7974ab-8d87-4cc3-890b-1a42e491855f",
+      "result_id": "3ebb0ff8-4da8-4c6f-b45b-54a8d9d1d5e6"
+    },
+    {
+      "claim_id": "96a2324e-eaef-46b1-8bd5-71b816f0917f",
+      "result_id": "3ebb0ff8-4da8-4c6f-b45b-54a8d9d1d5e6"
+    },
+    {
+      "claim_id": "33ec2a0d-6166-4212-9f96-683db978c8cf",
+      "result_id": "3ebb0ff8-4da8-4c6f-b45b-54a8d9d1d5e6"
+    },
+    {
+      "claim_id": "3395dbd4-0bcb-4abf-9953-38ba56806d9e",
+      "result_id": "3ebb0ff8-4da8-4c6f-b45b-54a8d9d1d5e6"
+    },
+    {
+      "claim_id": "2fd103a6-c08b-4cb5-9700-427ec57039a1",
+      "result_id": "3ebb0ff8-4da8-4c6f-b45b-54a8d9d1d5e6"
+    },
+    {
+      "claim_id": "d5338b39-a637-4f91-ae3b-a0e42275d1d3",
+      "result_id": "8554af4d-fec9-46ed-a0aa-3b7105715993"
+    },
+    {
+      "claim_id": "2b2f2385-1198-466b-b1ff-2e2c343d88e6",
+      "result_id": "8554af4d-fec9-46ed-a0aa-3b7105715993"
+    },
+    {
+      "claim_id": "b57d08b5-635d-4ff2-ac33-37ab8e649aac",
+      "result_id": "8554af4d-fec9-46ed-a0aa-3b7105715993"
+    },
+    {
+      "claim_id": "8ef837a8-7245-448e-a13e-7da0632b1142",
+      "result_id": "8554af4d-fec9-46ed-a0aa-3b7105715993"
+    },
+    {
+      "claim_id": "e8527cd6-2dac-4194-b7f4-875694509118",
+      "result_id": "f5bfa421-65f7-4c88-8e3f-9ebf2ecec8e3"
+    },
+    {
+      "claim_id": "9a055c89-59a1-406e-8664-745a800fd104",
+      "result_id": "f5bfa421-65f7-4c88-8e3f-9ebf2ecec8e3"
+    },
+    {
+      "claim_id": "43ecd7e4-67a8-46c1-86ce-107942db007e",
+      "result_id": "f5bfa421-65f7-4c88-8e3f-9ebf2ecec8e3"
+    },
+    {
+      "claim_id": "18da75cc-7279-4021-a9c0-a98a65da274c",
+      "result_id": "f5bfa421-65f7-4c88-8e3f-9ebf2ecec8e3"
+    },
+    {
+      "claim_id": "d1cf7382-a9fb-457b-907b-a95533039ee3",
+      "result_id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773"
+    },
+    {
+      "claim_id": "fb2af3d7-ebf8-4efd-9120-275f85b12bf4",
+      "result_id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773"
+    },
+    {
+      "claim_id": "61f916d3-90cb-48ff-bdeb-2dae9decec3b",
+      "result_id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773"
+    },
+    {
+      "claim_id": "88847a1d-9533-4913-9246-8b52ddd6efdd",
+      "result_id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773"
+    },
+    {
+      "claim_id": "bff9f018-74e4-455e-aa79-6e6aa798b3da",
+      "result_id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773"
+    },
+    {
+      "claim_id": "769f510a-6afd-4dad-8e7f-95b97f96a8ac",
+      "result_id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773"
+    },
+    {
+      "claim_id": "e29b0ddb-6256-4839-8e35-9b33c59920c4",
+      "result_id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773"
+    },
+    {
+      "claim_id": "0fb30db4-a2ec-4e3f-ad7d-29910249295f",
+      "result_id": "d7c17cca-7bc1-46ee-aee1-4df4e8c82773"
+    },
+    {
+      "claim_id": "6eaf01e1-1863-496c-a0e3-a7c7e6201698",
+      "result_id": "293711e6-bd8b-4d4b-a807-a28a57fe08f3"
+    },
+    {
+      "claim_id": "a51add50-5bde-4abc-ada1-b01aa494d776",
+      "result_id": "293711e6-bd8b-4d4b-a807-a28a57fe08f3"
+    },
+    {
+      "claim_id": "0f5ef8a1-7cda-418b-a813-66fd480d511c",
+      "result_id": "293711e6-bd8b-4d4b-a807-a28a57fe08f3"
+    },
+    {
+      "claim_id": "f2ac5fea-be65-42e6-bf92-e93bd536c0b1",
+      "result_id": "293711e6-bd8b-4d4b-a807-a28a57fe08f3"
+    },
+    {
+      "claim_id": "b7b90dd2-3b0f-47c9-863f-82c66949322e",
+      "result_id": "293711e6-bd8b-4d4b-a807-a28a57fe08f3"
+    },
+    {
+      "claim_id": "ad89b491-9c6f-40bf-82aa-07586efa3399",
+      "result_id": "293711e6-bd8b-4d4b-a807-a28a57fe08f3"
+    },
+    {
+      "claim_id": "86aa85bf-e714-4501-8565-185cab4d2965",
+      "result_id": "293711e6-bd8b-4d4b-a807-a28a57fe08f3"
+    },
+    {
+      "claim_id": "30bc1031-55c5-4fef-9c6f-e14c14913aeb",
+      "result_id": "4f4183ca-a609-4a51-bdee-db11984532bd"
+    },
+    {
+      "claim_id": "09ef4dfd-c0f1-42fb-a57e-fa23bcf75a5f",
+      "result_id": "4f4183ca-a609-4a51-bdee-db11984532bd"
+    },
+    {
+      "claim_id": "bdde79d2-3257-4b05-82c3-779313588329",
+      "result_id": "4f4183ca-a609-4a51-bdee-db11984532bd"
+    },
+    {
+      "claim_id": "3f760058-ceb9-4902-9317-3314dcf15b99",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "78dd1236-6c78-48ef-8903-eadb008d01b4",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "a4927374-fa9d-406d-b927-6a65b7f241d7",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "59aaca56-b1ed-4d8c-95d5-f038f000e759",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "acd10e93-b19a-43a8-8cce-54ebd66e21ff",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "63c7fe85-4c14-468a-95c9-4bb3b57905da",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "db4c62a1-aa9c-4863-ae97-f7c774e91c3e",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "8cf7f08b-0132-44a1-b87f-51d4c8ff36f6",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "bdd2a671-980b-4617-b21e-abebd6623de4",
+      "result_id": "496f815d-8655-4565-9a15-5ba46ce1983c"
+    },
+    {
+      "claim_id": "50a583fa-e038-4736-83b5-50269ff8bef9",
+      "result_id": "44d56122-6854-40d4-b992-fb8118a2171b"
+    },
+    {
+      "claim_id": "02d28766-0ae7-444c-ba31-41a0e56e00d4",
+      "result_id": "44d56122-6854-40d4-b992-fb8118a2171b"
+    },
+    {
+      "claim_id": "79b30f32-73bf-47de-b1a9-75b336c3c624",
+      "result_id": "44d56122-6854-40d4-b992-fb8118a2171b"
+    },
+    {
+      "claim_id": "3a499d5d-4cc0-4c3f-aae8-bfc4063c2554",
+      "result_id": "44d56122-6854-40d4-b992-fb8118a2171b"
+    },
+    {
+      "claim_id": "5d0a0d5c-3331-444a-adba-837e7eccded4",
+      "result_id": "44d56122-6854-40d4-b992-fb8118a2171b"
+    },
+    {
+      "claim_id": "c245c0c6-6858-4d54-bbe1-d7bd7bc361d2",
+      "result_id": "44d56122-6854-40d4-b992-fb8118a2171b"
+    },
+    {
+      "claim_id": "c57d60a8-b9e3-4fbf-8c5d-5198bd66f20d",
+      "result_id": "40e58992-c503-4222-8160-59f17a38b3c4"
+    },
+    {
+      "claim_id": "8ee9297b-2bc8-4967-a48d-0d59968d073d",
+      "result_id": "40e58992-c503-4222-8160-59f17a38b3c4"
+    },
+    {
+      "claim_id": "bebbfb9c-cb7d-4354-836f-1c9ef8bd2956",
+      "result_id": "da774990-6d1d-4a59-957c-eca1a53238f6"
+    },
+    {
+      "claim_id": "21a40161-2429-41a9-a514-5c1f6c8f8396",
+      "result_id": "da774990-6d1d-4a59-957c-eca1a53238f6"
+    },
+    {
+      "claim_id": "94446990-7766-4dc6-8a35-b40744c69e60",
+      "result_id": "da774990-6d1d-4a59-957c-eca1a53238f6"
+    },
+    {
+      "claim_id": "eb81c882-58da-4582-8cf6-cddb17e38288",
+      "result_id": "da774990-6d1d-4a59-957c-eca1a53238f6"
+    },
+    {
+      "claim_id": "c1f30a6a-9859-477b-b798-8a0baa69ac1c",
+      "result_id": "da774990-6d1d-4a59-957c-eca1a53238f6"
+    },
+    {
+      "claim_id": "6378ee1e-7771-4cf2-ae73-36b3254b462b",
+      "result_id": "da774990-6d1d-4a59-957c-eca1a53238f6"
+    },
+    {
+      "claim_id": "62bf7310-d943-4817-90bf-f31d7117722e",
+      "result_id": "52e205ac-ff22-4520-9d12-5f348342e925"
+    },
+    {
+      "claim_id": "3f061596-396f-41fb-8071-843af54a0ff9",
+      "result_id": "52e205ac-ff22-4520-9d12-5f348342e925"
+    },
+    {
+      "claim_id": "aa3008b7-69bb-4dae-b1e4-ed42cc694968",
+      "result_id": "b5c8dd86-fead-4503-a839-b7e455406b17"
+    },
+    {
+      "claim_id": "cef6bc11-c4a4-4047-a6c0-0b2a1b5d620b",
+      "result_id": "b5c8dd86-fead-4503-a839-b7e455406b17"
+    },
+    {
+      "claim_id": "f648dbb7-e3c4-4aff-974e-cacd19eeb72f",
+      "result_id": "b5c8dd86-fead-4503-a839-b7e455406b17"
+    },
+    {
+      "claim_id": "a56c6b64-d0d8-4ac1-84c7-1abacd295a4d",
+      "result_id": "64a1f503-5eff-440b-9a13-b482cad91f83"
+    },
+    {
+      "claim_id": "440bc7c8-4cb2-4154-85aa-b56fd1f60736",
+      "result_id": "64a1f503-5eff-440b-9a13-b482cad91f83"
+    },
+    {
+      "claim_id": "88b19f5e-eaa0-45fb-94fd-b47503306fdb",
+      "result_id": "64a1f503-5eff-440b-9a13-b482cad91f83"
+    },
+    {
+      "claim_id": "82c4338e-c1e6-4fcd-ad3c-bfb87497c85f",
+      "result_id": "3d124189-cf6f-4b7d-8db8-ca3959052f4b"
+    },
+    {
+      "claim_id": "294ba6b6-d76d-48c2-b10b-7c3b33427094",
+      "result_id": "3d124189-cf6f-4b7d-8db8-ca3959052f4b"
+    },
+    {
+      "claim_id": "c4006bc5-01de-4b78-a1cb-428626a1659f",
+      "result_id": "3d124189-cf6f-4b7d-8db8-ca3959052f4b"
+    },
+    {
+      "claim_id": "9748ad7b-e8ef-4ee6-8226-64ff689292b5",
+      "result_id": "e69c69b9-e435-49a4-806d-0262b75e103b"
+    },
+    {
+      "claim_id": "d37e5654-ae4d-42fd-a1cd-e4c18c9f2e68",
+      "result_id": "e69c69b9-e435-49a4-806d-0262b75e103b"
+    },
+    {
+      "claim_id": "e60c4ce7-cf14-4bf0-87ed-627b7eddf031",
+      "result_id": "49750586-eb25-4a0f-ac34-375dfdf5c6ef"
+    },
+    {
+      "claim_id": "ea8dfd91-9b62-41a6-bfbb-88443ae3cdd2",
+      "result_id": "49750586-eb25-4a0f-ac34-375dfdf5c6ef"
+    },
+    {
+      "claim_id": "5881c928-f91d-43c8-bca3-d7edf8d8b885",
+      "result_id": "5ae28c95-c8bf-453f-a048-eecce38cf6ac"
+    },
+    {
+      "claim_id": "2677ebf6-9e62-41f6-981b-487afc0a7c83",
+      "result_id": "5ae28c95-c8bf-453f-a048-eecce38cf6ac"
+    },
+    {
+      "claim_id": "197cecb0-5226-47fc-9009-6bb3ea4b15e9",
+      "result_id": "5ae28c95-c8bf-453f-a048-eecce38cf6ac"
+    },
+    {
+      "claim_id": "2382a1be-ab5c-47b2-a864-0ea8050465b6",
+      "result_id": "5ae28c95-c8bf-453f-a048-eecce38cf6ac"
+    },
+    {
+      "claim_id": "1055e0d9-2391-472f-b52e-915760ec63e9",
+      "result_id": "1e927458-4b29-4ea1-ada0-b4e4a82ac049"
+    },
+    {
+      "claim_id": "7605f097-3fec-46df-bba1-a8564e336ee4",
+      "result_id": "1e927458-4b29-4ea1-ada0-b4e4a82ac049"
+    },
+    {
+      "claim_id": "eebe4370-b63a-45e3-b377-a16b772f9fbf",
+      "result_id": "878715b8-147c-4ec0-83ec-47cde19ec517"
+    },
+    {
+      "claim_id": "3d98abc5-91fa-4ec8-940c-fd5a30a5ac75",
+      "result_id": "878715b8-147c-4ec0-83ec-47cde19ec517"
+    },
+    {
+      "claim_id": "8376d8a0-995c-4eb1-8335-243f3cd7a8c0",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "74ab313a-0c73-49af-a454-cbcc4abfe040",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "563e361c-922a-4709-9ce5-5a5c7365e04d",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "372ac537-7080-46e0-9451-35a0c2444592",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "13659ebd-e474-496d-b0b7-9c37311cb939",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "ab28d248-ce8c-4bc5-8284-8470d990ef25",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "5952b98c-7a6a-42fb-ae14-c2f95e3f818c",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "438c3373-2429-4eeb-b0c2-b6813f54fbf9",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "843341bf-06b6-4d2a-9c68-954b26005b6e",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "c45afff8-fa0f-4efe-827a-8059be5effb5",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "68117afa-2008-4bd5-9b16-a000a2305039",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "7089fee6-f3e8-4528-90fb-4bb0a8af9020",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "547b3059-4214-4ab2-b3d0-822bb9f44f6a",
+      "result_id": "6f793db2-57c0-44cb-864d-d9d07178d6bb"
+    },
+    {
+      "claim_id": "5926266b-a05e-4c96-a229-c769ae80b878",
+      "result_id": "0f0ed7d4-5d46-4cd9-93de-a08b9d737d92"
+    },
+    {
+      "claim_id": "ea88017d-5b5f-48ed-a645-55111a36d474",
+      "result_id": "0f0ed7d4-5d46-4cd9-93de-a08b9d737d92"
+    },
+    {
+      "claim_id": "771f013b-3135-42a5-a785-6951718efd40",
+      "result_id": "880749e5-0c15-434f-b4d1-e33ed55bfea1"
+    },
+    {
+      "claim_id": "38205e77-14c6-49a0-8729-7e7aae3091d0",
+      "result_id": "880749e5-0c15-434f-b4d1-e33ed55bfea1"
+    },
+    {
+      "claim_id": "e3d43ce0-5724-4d3c-bd6b-7276ce32d518",
+      "result_id": "880749e5-0c15-434f-b4d1-e33ed55bfea1"
+    },
+    {
+      "claim_id": "a5de723c-b129-4c1d-8bf6-816c28b3bc0c",
+      "result_id": "86f73771-42dc-4a79-ad0d-500908b703b1"
+    },
+    {
+      "claim_id": "0db9361d-5cd4-4fbb-8174-acdc8d2095db",
+      "result_id": "86f73771-42dc-4a79-ad0d-500908b703b1"
+    },
+    {
+      "claim_id": "426f9e11-79ec-4698-be97-aff645a96e35",
+      "result_id": "5d601848-c01b-4637-bc4f-833c836988e2"
+    },
+    {
+      "claim_id": "5d0a0d5c-3331-444a-adba-837e7eccded4",
+      "result_id": "5d601848-c01b-4637-bc4f-833c836988e2"
+    },
+    {
+      "claim_id": "c245c0c6-6858-4d54-bbe1-d7bd7bc361d2",
+      "result_id": "5d601848-c01b-4637-bc4f-833c836988e2"
+    }
+  ],
+  "comparisons": []
+}

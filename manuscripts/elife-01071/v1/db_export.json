@@ -1,0 +1,1323 @@
+{
+  "submission": {
+    "id": "635e9e43-f8e7-4561-9c1b-c08e2e93b25c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:40:12.564309Z",
+    "updated_at": "2025-11-28T19:40:12.564309Z"
+  },
+  "content": [
+    {
+      "id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "submission_id": "635e9e43-f8e7-4561-9c1b-c08e2e93b25c",
+      "content_type": "manuscript",
+      "content_text": "# Crystal structures of the CPAP/STIL complex reveal its role in centriole assembly and human microcephaly\n\n## Authors\n\n- Matthew A Cottee<sup>1</sup>\n- Nadine Muschalik<sup>1</sup>\n- Yao Liang Wong<sup>2</sup>\n- Christopher M Johnson<sup>3</sup>\n- Steven Johnson<sup>1</sup>\n- Antonina Andreeva<sup>3</sup>\n- Karen Oegema<sup>2</sup>\n- Susan M Lea<sup>1</sup>\n- Jordan W Raff<sup>1</sup>\n- Mark van Breugel<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Sir William Dunn School of Pathology University of Oxford Oxford United Kingdom\n2. Department of Cellular and Molecular Medicine Ludwig Institute for Cancer Research, University of California, San Diego La Jolla United States\n3. Laboratory of Molecular Biology Medical Research Council Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCentrioles organise centrosomes and template cilia and flagella. Several centriole and centrosome proteins have been linked to microcephaly (MCPH), a neuro-developmental disease associated with small brain size. CPAP (MCPH6) and STIL (MCPH7) are required for centriole assembly, but it is unclear how mutations in them lead to microcephaly. We show that the TCP domain of CPAP constitutes a novel proline recognition domain that forms a 1:1 complex with a short, highly conserved target motif in STIL. Crystal structures of this complex reveal an unusual, all-\u03b2 structure adopted by the TCP domain and explain how a microcephaly mutation in CPAP compromises complex formation. Through point mutations, we demonstrate that complex formation is essential for centriole duplication in vivo. Our studies provide the first structural insight into how the malfunction of centriole proteins results in human disease and also reveal that the CPAP\u2013STIL interaction constitutes a conserved key step in centriole biogenesis.\n\n## Introduction\n\nCentrioles are small cylindrical organelles whose outer walls contain a ninefold symmetric array of microtubule triplets. These structures form the basal bodies that template the assembly of cilia and flagella, and they also organise a proteinaceous matrix termed the pericentriolar material (PCM) to form centrosomes, the main microtubule organising centres in animal cells. These organelles play an important part in many aspects of cell organisation, and centriolar dysfunction is linked to a plethora of human diseases, including cancer, obesity, macular degeneration and polycystic kidney disease (Nigg and Raff, 2009; Bettencourt-Dias et al., 2011).\n\nRecently, an unexpected genetic link has emerged between centriole/centrosome assembly and human brain size. Autosomal recessive primary microcephaly (MCPH) is a rare condition where patients are born with small brains (Thornton and Woods, 2009). All eight identified MCPH genes encode proteins that localise to centrioles and/or centrosomes/spindle poles (Thornton and Woods, 2009; Hussain et al., 2012). It is unclear why mutations in these proteins are linked to such a specific neuro-developmental problem in humans, but it seems likely that some aspect of centriole/centrosome function must be particularly important for the proper proliferation of human neural progenitors (Siller and Doe, 2009; Megraw et al., 2011). In support of this possibility, mutations in the centriolar components CPAP (DSas-4 in Drosophila, here called dCPAP) and STIL (Ana2 in Drosophila, here called dSTIL) in flies lead to defects in the asymmetric division of larval neural stem/progenitor cells (Basto et al., 2006). Mutations in MCPH proteins in mice, however, lead to complex phenotypes that can include, but are not restricted to, microcephaly (McIntyre et al., 2012). Moreover, compelling genetic links are now emerging between centrioles/centrosomes and DNA damage repair (DDR) pathways: mutations in certain MCPH genes and in genes encoding other centriole/centrosome proteins can lead to Seckel syndrome and MOPD, pathologies normally associated with defects in DDR (Megraw et al., 2011). Thus, the cellular mechanisms that lead to pathology when centriole/centrosome proteins are mutated in humans remain unclear.\n\nCentrioles are complex structures, but work in several model systems revealed only a small number of conserved proteins to be important for centriole assembly. These include PLK4/SAK, SAS-6, STIL/Ana2, CPAP/CenpJ/SAS-4, Cep152/Asl, and CEP135 (Brito et al., 2012; Gonczy, 2012). Several studies have identified a complex web of putative interactions between these proteins (Cizmecioglu et al., 2010; Dzhindzhev et al., 2010; Hatch et al., 2010; Tang et al., 2011; Vulprecht et al., 2012; Lin et al., 2013). However, an understanding of centriole architecture and its assembly mechanisms will ultimately require high-resolution structures of the key centriolar components and their complexes. The power of combining structural studies with protein biochemistry and functional in vivo experiments has been demonstrated by work on SAS-6. These studies revealed how SAS-6 homo-oligomerises to organise the central cartwheel (Kitagawa et al., 2011b; van Breugel et al., 2011), the earliest structurally defined intermediate in centriole assembly (Brito et al., 2012; Gonczy, 2012), and suggested how SAS-6 might interact with SAS-5, the proposed STIL homologue in worms (Qiao et al., 2012). Additionally, high-resolution structures of Sak/Plk4 fragments have recently been solved (Leung et al., 2002; Slevin et al., 2012). However, equivalent studies with other core centriolar components or especially their complexes are currently missing, and how any of these proteins might be structurally and mechanistically compromised in MCPH is not known.\n\nOf particular interest in this regard is the putative centriolar CPAP\u2013STIL complex, as mutations in both components result in MCPH (Leal et al., 2003; Bond et al., 2005; Gul et al., 2006; Darvish et al., 2010). CPAP and STIL are strictly required for centriole assembly: STIL at a very early stage (Stevens et al., 2010b; Tang et al., 2011; Kitagawa et al., 2011a; Arquint et al., 2012; Vulprecht et al., 2012) and CPAP slightly later (Kirkham et al., 2003; Leidel and Gonczy, 2003; Basto et al., 2006; Kleylein-Sohn et al., 2007; Dobbelaere et al., 2008; Vulprecht et al., 2012), possibly by controlling the organisation (Pelletier et al., 2006; Dammermann et al., 2008) and length of the centriolar microtubules (Blachon et al., 2009; Kohlmaier et al., 2009; Schmidt et al., 2009; Tang et al., 2009; Kim et al., 2012). A direct interaction between STIL and CPAP has been observed in yeast-two-hybrid and pull-down experiments (Tang et al., 2011; Vulprecht et al., 2012). Intriguingly, a MCPH mutation (E1235V) in the conserved C-terminal domain of CPAP (the so-called TCP-domain or G-Box) appeared to weaken this yeast-two-hybrid interaction (Tang et al., 2011). Tissue culture experiments suggested that this MCPH mutation might cause a partial loss-of-function of CPAP (Kitagawa et al., 2011a). However, the same study also found that the E1235V mutation results in an enhanced functionality of CPAP when overexpressed in vivo (Kitagawa et al., 2011a). To understand how CPAP and STIL interact and how the MCPH mutation affects CPAP functionality in vitro and in vivo, we undertook a detailed biochemical, structural and functional study of the putative CPAP\u2013STIL complex.\n\n## Results\n\n### The CPAP TCP domain binds to a conserved proline-rich motif in STIL\n\nYeast-two-hybrid experiments suggested that a region of human CPAP comprising its conserved C-terminal TCP domain (or G-box) can interact with a \u223c400 amino acid (aa) region (residues 231\u2013619) of human STIL (Tang et al., 2011). To try to identify the region of STIL most likely to be involved in an interaction with CPAP, we carried out a sequence alignment with multiple metazoan STIL proteins (Figure 1A, Figure 1\u2014figure supplement 1). This analysis revealed a short (\u223c40 aa) highly conserved proline-rich region (CR2) (Figure 1A) within this interval. To test whether this region of STIL could bind to the CPAP TCP domain, we recombinantly produced the TCP domain of Danio rerio CPAP and used isothermal titration calorimetry (ITC) to test its ability to bind to a fragment of D. rerio STIL that spanned CR2 (residues 404\u2013448) (Figure 1D, Table 1). The two proteins formed a 1:1 complex with a KD of \u223c2 \u03bcM. Next, we further split the peptide to test the binding contribution from its N-terminal (residues 411\u2013428) and C-terminal region (residues 429\u2013448). The N-terminal region exhibited an only slightly weaker binding (KD \u223c4 \u03bcM) to the TCP domain, whereas the C-terminal region showed a very weak binding (KD > 500 \u03bcM) (Figure 1D; Table 1). We conclude that the CPAP TCP domain binds to a short conserved motif in STIL (CR2) with a potentially biologically significant affinity, and that the majority of the binding affinity comes from interactions with residues within the first proline-rich region in CR2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of D. rerio CPAP and STIL. CPAP is a 1124 amino acid (aa) protein with three predicted coiled coil (cc) domains and a C-terminal TCP domain. STIL is a 1263 aa protein with one predicted cc domain and several conserved regions (CR). The proline-rich CR2 domain is enlarged and coloured according to Consurf conservation scores (Glaser et al., 2003) from cyan (variable) to burgundy (conserved). The constructs used in this study are indicated by bars. (B) Two views of the TCP domain structure (green) in complex with the STIL peptide (orange), rotated by 180\u00b0. Images on the left of each view show a ribbon representation and images on the right show the TCP domain as a molecular surface coloured according to Consurf conservation scores. Note the presence of a conserved patch (dashed circle) along the edge of the TCP domain where the STIL peptide is bound. This patch contains aromatic residues (black sticks) that would be well placed to interact with conserved prolines in the C-terminal part of the STIL CR2 region that we had to omit for crystallisation. ITC experiments (Figure 1D) suggest that these putative additional contacts would only contribute weakly to overall binding. (C) Detailed view of the D. rerio CPAP\u2013STIL interaction interface coloured according to Consurf conservation scores. Interface residues are shown in sticks, and the TCP domain is shown as a semi-transparent molecular surface. Contact residues are labelled in green (CPAP) and orange (STIL). Dotted yellow lines indicate hydrogen-bonds. The dark orange sphere represents a bound water molecule. (D) ITC analysis using the STIL constructs shown in Figure 1A. The excess heat measured on titrating STIL into CPAP at 25\u00b0C was fitted to a single set of binding sites model. Fitted KD values are indicated together with their standard deviations. (E and F) Ribbon models of the apo-structures of the D. rerio CPAP TCP domain: (E) WT apo-structure; (F) E1021V (MCPH mutation) apo-structure (V1021 represented as red spheres).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The numbering refers to D. rerio STIL. The alignment is coloured by conservation according to the Consurf conservation score from cyan (variable) to burgundy (conserved).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Alignment of the sequence repeats of D. rerio CPAP937\u20131124. Residues are coloured according to the Clustalx colour scheme. R, Repeat. Repeat 1 was not visible in the electron density map of D. rerio apo-CPAP937\u20131124 but could be seen partially in the structure of the complex between D. rerio CPAP937\u20131124 and STIL408\u2013428. (B) Sequence logo of the CPAP937\u20131124 repeat with the relative residue frequencies at each position. Prominent features of this repeat are two PDG motifs and the high frequency of aromatic residues adjacent to the first PDG motif in position 6 of the repeat. (C) Left: ribbon presentation of the D. rerio apo CPAP937\u20131124 structure with its sequence repeats rainbow-coloured from N- to C-terminus. R, Repeat. An individual structural repeat consists of a \u03b2-hairpin. The aromatic residues found in position 6 of the repeat are shown in black sticks. These aromatic residues run along the edge of one side of the \u03b2-sheet, where the proline-rich STIL peptide binds. The PDG motifs frequently constitute the \u03b2-turns of the TCP repeats. Boxed are three of these turns that are presented on the right as a close-up. In this close-up, residues of the PDG motif are labelled and shown in sticks. The Asp residue in this motif hydrogen-bonds (dotted black lines) to the main-chain of the (n) + 1 neighbouring residue.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Panel showing size exclusion chromatography coupled to multi-angle light scattering (SEC-MALS) chromatograms. CPAP937\u20131124 was injected at concentrations of approximately 70 \u03bcM (light grey), 460 \u03bcM (dark grey) and 2.4 mM (black). The corresponding chromatogram traces (thin lines) show the refractive index signal. The concentrations of the CPAP937\u20131124 monomer measured at the peaks are indicated, and heavy solid lines across the peaks show the calculated molar masses. When averaged across the central 50% of the peaks, these molar masses were 22 kDa, 23 kDa, and 29 kDa, respectively. The theoretical molecular weight of a CPAP937\u20131124 monomer is 22 kDa. The Rh of CPAP937\u20131124 determined at the intermediate concentration was 2.9 \u00b1 0.15 nm, which is significantly larger than expected for a globular protein of this mass and thus is consistent with the extended crystallographic structure. SEC-MALS measurements were performed using a Wyatt Heleos II 18 angle light scattering instrument coupled to a Wyatt Optilab rEX online refractive index detector. Detector 12 in the Heleos instrument was replaced with Wyatt's QELS detector for dynamic light scattering measurement. Samples (100 \u03bcl) were resolved on a Superdex S-200 10/300 analytical gel filtration column (GE Healthcare, Little Chalfont, UK) running at 0.5 ml/min in 25 mM bis Tris pH 7.2, 100 mM NaCl buffer before passing through the light scattering and refractive index detectors in a standard SEC-MALS format. Protein concentration was determined from the excess differential refractive index based on 0.186 RI increment for 1 g/ml protein solution. The concentration and the observed scattered intensity at each point in the chromatograms were used to calculate the absolute molecular mass from the intercept of the Debye plot using Zimm's model as implemented in Wyatt's ASTRA software. Autocorrelation analysis of data from the dynamic light scattering detector was also performed using Wyatt's ASTRA software, and the translational diffusion coefficients determined were used to calculate the hydrodynamic radius using the Stokes-Einstein equation and the measured solvent viscosity of 9.3 e-3 Poise. (B) Small-angle X-ray scattering (SAXS) experiment with approximately 20 \u03bcM D. rerio CPAP937\u20131124 in 25 mM bis Tris pH 7.2, 100 mM NaCl, 2 mM DTT. Shown in blue is the experimentally measured SAXS curve of CPAP937\u20131124 with the experimental error indicated by black bars. The orange line shows the fitted theoretical SAXS curve of CPAP937\u20131124 derived from its crystal structure. Fitting was done using CRYSOL (Svergun et al., 1995) and resulted in a \u03c7-value of 1.416. A.U., arbitrary units. At higher CPAP937\u20131124 concentrations the fit became less good due to the tendency of CPAP937\u20131124 to self-associate at these concentrations as revealed by a gradual increase of the derived Rg values. SAXS data were collected at the European Synchrotron Radiation Facility (ESRF), Grenoble, France, at beamline ID14\u20133. Measurements were done at 10\u00b0C at a wavelength of 0.931 \u00c5 with the standard beamline settings using a PILATUS 1M detector (Dectris, Baden, Switzerland). To minimise radiation damage, a flow cell was used for the measurements. Collected data was buffer subtracted using PRIMUS (Konarev et al., 2003) and the beamstop shadow removed by cutting the data at a q-value of 0.055 nm\u22121. Above a q-value of 3.8 nm\u22121 the data became too noisy to be interpretable and the data were therefore cut at this value.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Side-by-side comparison of the apo-structure of the D. rerio TCP-domain of CPAP (left) with the structure of an engineered peptide-assembly mimic based on Borrelia OspA (right) that is used to study \u03b2-rich self-assemblies (PDB code 2FKJ, chain A). Structures are shown as ribbon presentations and are rainbow-coloured from N- to C-terminus. Note that the conformation of the peptide-self-assembly mimic is maintained by two globular domains capping both ends of its \u03b2-sheet. In contrast, the TCP domain entirely lacks a hydrophobic core.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The numbering refers to D. rerio CPAP. The alignment is coloured by conservation according to the Consurf conservation score from cyan (variable) to burgundy (conserved).\n\n**Table 1.**\n Characterisation of the CPAP:STIL interaction in vitro\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Danio rerio STIL peptide in syringe</th>\n      <th>Danio rerio CPAP937\u20131124 TCP domain in cell</th>\n      <th>Number of binding sites (N)</th>\n      <th>SD N</th>\n      <th>KD (\u03bcM)</th>\n      <th>SD KD (\u03bcM)</th>\n      <th>\u0394H (kcal/mol)</th>\n      <th>SD (kcal/mol)</th>\n      <th>n (number of measurements)</th>\n      <th>Factor change in KD</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>STIL404\u2013448</td>\n      <td>WT</td>\n      <td>1.07</td>\n      <td>0.04</td>\n      <td>1.9</td>\n      <td>0.2</td>\n      <td>\u221210.1</td>\n      <td>0.3</td>\n      <td>5</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>STIL411\u2013428</td>\n      <td>WT</td>\n      <td>0.98</td>\n      <td>0.03</td>\n      <td>4</td>\n      <td>0.3</td>\n      <td>\u221211.3</td>\n      <td>0.5</td>\n      <td>3</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>STIL429\u2013448</td>\n      <td>WT</td>\n      <td>0.97</td>\n      <td>0.08</td>\n      <td>540</td>\n      <td>130</td>\n      <td>\u22126.3</td>\n      <td>0.6</td>\n      <td>2</td>\n      <td>\u223c280</td>\n    </tr>\n  </tbody>\n</table>\n\n_Binding parameters between D. rerio CPAP and various D. rerio STIL constructs obtained from ITC experiments. Fitting was performed with N as a variable. Constraining N to a fixed value of 1 during fitting produced KD values that were within the experimental error of those tabulated here._\n\n### The CPAP TCP domain adopts a unique extended open \u03b2-sheet conformation that packs against a series of conserved prolines in STIL\n\nTo understand how CPAP and STIL interact at the molecular level, we obtained the crystal structures of the TCP-domain of D. rerio CPAP937\u20131124, both on its own and in a complex with D. rerio STIL408\u2013428 (Figure 1B,C,E; Table 2, Table 3). In both structures, the TCP domain adopts a nearly identical conformation, suggesting that no significant conformational change occurs in CPAP upon binding to STIL (RMSD = 1.5 \u00c5 \u00b1 0.2 \u00c5 over 148 \u00b1 4 C\u03b1 pairs). The TCP domain folds into a single layer \u03b2-sheet comprising \u223c20 consecutive antiparallel strands connected by type I \u03b2-turns and is stabilised by an extensive hydrogen-bonding network. The resulting sheet shows a twist of approximately 13\u00b0 (i.e., the angle between the consecutive, hydrogen-bonded strands), slightly lower than the average value of 20\u00b0 observed for typical \u03b2-sheets (Chothia, 1973; Murzin, 1992). Individual \u03b2-hairpins correspond to previously noted (Islam et al., 1993; Hung et al., 2000) repeats in the TCP domain sequence; the turns of these hairpins are often constituted by a PDG motif explaining the high frequency of proline and glycine residues in this domain (Figure 1\u2014figure supplement 2). Crystal packing interactions involve only small protein interfaces, suggesting that the protein is biologically active as a monomer. Indeed both small-angle X-ray scattering (SAXS) and size-exclusion chromatography\u2014multi angle light scattering (SEC-MALS) experiments demonstrate that the TCP domain is predominantly monomeric in solution (Figure 1\u2014figure supplement 3).\n\nThe structure of the TCP domain represents an unusual, novel architecture. It is reminiscent of the \u03b2-sheet conformation proposed to exist within amyloid fibrils and resembles engineered water-soluble peptide self-assembly mimics (PSAMs) used to study \u03b2-rich self-assemblies (Makabe et al., 2006). In contrast to these PSAM structures whose conformation is maintained by two globular domains capping both ends of the \u03b2-sheet, the TCP domain stably exists on its own. (Figure 1\u2014figure supplement 4). The TCP domain structure lacks a defined hydrophobic core typical for globular domains, and both sides of its \u03b2-sheet are exposed to the solvent and well hydrated.\n\nThe structure of the CPAP\u2013STIL complex revealed that the STIL peptide binds in a polyproline II helical conformation along one edge of the TCP domain \u03b2-sheet. The STIL peptide binds to CPAP by four main mechanisms (Figure 1C). First, three STIL prolines (P417, P421, and P423) pack against aromatic CPAP residues (F978, Y996, and F1015) in a way that resembles target motif recognition by other described proline-rich motif (PRM) binding domains (Kay et al., 2000). Second, R418 (STIL) makes a cation-\u03c0 interaction with the phenyl ring of Y994 (CPAP). Third, STIL R418 is further involved in a water-mediated hydrogen bonding network that includes CPAP residues H1003 and T1005. Finally, sidechain\u2013mainchain interactions are formed between CPAP residues Y994, Q1019, and E1021 and the bound STIL peptide. The CPAP and STIL residues involved in this interaction are highly conserved across metazoans (Figure 1C).\n\nSequence conservation of the TCP domain is not confined to this section of our structure but extends further along the same edge of the sheet (Figure 1B). This additional conserved region contains aromatic residues that are arranged similar to those that pack against the proline residues of the bound STIL peptide in our crystal structure (Figure 1B,C). Intriguingly, the C-terminal part of STIL\u2019s CR2 region (omitted to obtain diffraction grade crystals) contains two highly conserved proline residues (P435 and P438 in D. rerio) that would be well positioned to bind to these aromatic residues in an analogous way (Figure 1A,B). Thus, we speculate that the entire CR2 region of STIL spanning from residue 417 to residue 438 (D. rerio) may be bound all along the edge of the TCP domain. Although our ITC experiments suggest that these putative additional contacts are insufficient to establish strong binding between STIL and CPAP (Figure 1D) they may contribute cooperatively to the CPAP\u2013STIL interaction once the N-terminal proline-rich region in CR2 established binding. We conclude that the TCP domain of CPAP adopts a unique extended open \u03b2-sheet conformation that recognises a series of conserved prolines in the CR2 region of STIL.\n\n### The CPAP E1021V MCPH mutation reduces the binding affinity of the CPAP\u2013STIL interaction\n\nThe involvement of CPAP E1021 in the interaction with STIL in zebrafish is potentially significant, as the equivalent residue in human CPAP (E1235) is mutated to valine in some MCPH patients. To test whether this mutation disrupts the organisation of the TCP domain, we obtained the crystal structure of D. rerio CPAP937\u20131124 carrying the E1021V mutation (Figure 1F; Table 2). The structure of the wild-type and the mutant TCP domain were virtually identical (RMSD = 0.1 \u00c5 over 142 C\u03b1 pairs) demonstrating that the TCP domain structure was not compromised. To test whether this mutation perturbed the interaction with STIL, we purified WT and various other mutant forms of D. rerio CPAP937\u20131124 in which we valine substituted residues that our crystal structure suggested to be important for binding (Figure 2B). Circular dichroism (CD) spectra indicated that the mutant forms of the TCP domain were correctly folded with a predominantly \u03b2-type profile (Figure 2\u2014figure supplement 1). ITC experiments with WT D. rerio STIL404\u2013448 showed that the mutation of residues F978, Y994, and F1015 decreased the binding strength by \u223c20 to 40-fold (Figure 2A, left; Table 4), while mutation of E1021 decreased the binding strength by approximately eightfold. In contrast, mutation of T986, which is not predicted to be in the interaction interface, did not detectably perturb binding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig2-v1.jpg)\n\n**Figure 2.:** (A) Graphs showing the binding constants (KD) determined by ITC for the interaction between WT and mutant constructs of CPAP937\u20131124 and STIL404\u2013448. Left panel, WT and various mutant forms of CPAP937\u20131124 binding to WT STIL404\u2013448 (T986 is a non-interacting residue included as a negative control). Error bars, standard deviation. Right panel, WT and various mutant STIL404\u2013448 constructs binding to WT CPAP937\u20131124 (N422 is a non-interacting residue included as a negative control). Error bars, standard deviation. The wild-type measurements are the same as shown in Figure 1D and are shown again for comparison to the mutants. (B and C) Close-up view of the CPAP (green):STIL (orange) interaction interface from D. rerio (B) and Drosophila (C). Interface residues are shown as sticks, in yellow is the Glutamate residue in Drosophila and D. rerio CPAP that is equivalent to E1235 in human CPAP (mutated in MCPH). Residues of the D. rerio protein mutated for ITC experiments are ringed in green (CPAP) or red (STIL). Dotted black lines indicate hydrogen-bonds. The conserved bound water molecule is shown as a red sphere.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Coomassie stained SDS-PAGE gel of purified, recombinant CPAP937\u20131124 and its mutants (as labelled in colours above the gel). (B) Buffer-subtracted circular dichroism (CD) spectra of D. rerio CPAP937\u20131124 and its mutants in 10 mM Na-Phosphate pH 7.3 at approximately 200 \u03bcg/ml. Spectra were recorded on a JASCO J-810 from 260 to 190 nm in 0.2 nm steps at 20\u00b0C and are colour-coded as in (A). The data were cut at 200 nm as the detector was saturated below this wavelength for some constructs as indicated by a high HT voltage. (C) Coomassie stained SDS-PAGE gel showing purified, recombinant D. rerio STIL404\u2013448 and its mutants.\n\nWe also purified mutant forms of the D. rerio STIL404\u2013448 peptide and tested their ability to interact with the WT D. rerio TCP domain in ITC experiments (Figure 2A, right, Figure 2\u2014figure supplement 1C; Table 4). Alanine substitution of P417, R418 or P421 decreased the binding strength by \u223c10 to 20-fold and alanine substitution of P423 by approximately twofold to threefold. In contrast, the mutation of residue N422, which is not predicted to be in the interaction interface, did not compromise binding. Taken together these results lend strong support to our structural model and indicate that the E1021V MCPH mutation leads to roughly an order of magnitude decrease in affinity of the CPAP\u2013STIL interaction.\n\n### The CPAP\u2013STIL interaction is highly conserved\n\nThe sequence conservation of the CPAP TCP domain (Figure 1\u2014figure supplement 5) and the CR2 region of STIL (Figure 1\u2014figure supplement 1) suggests that this interaction may be conserved. To confirm this, we solved the crystal structure of the TCP domain from Drosophila melanogaster DSas-4 (dCPAP) (residues 700\u2013901) in complex with the region of Ana2 (dSTIL) equivalent to CR2 (residues 1\u201347) (Table 2, Table 5, Table 6; Figure 2C). The dSTIL\u2013dCPAP interaction interface in this structure was highly similar to the D. rerio complex (inter-species alignments of the structures yielded an average pairwise RMSD of 1.2 \u00b1 0.2 \u00c5 across an average of 118 \u00b1 4 C\u03b1 pairs). Indeed, all copies of the complex obtained in the structures from both species superimposed well and exhibited the same four major groups of binding interactions as described for the D. rerio structure. This conservation includes the contact made by the E792 residue in dCPAP (the equivalent of the E1235 residue in human CPAP that is mutated in MCPH). Together, these data allow us to determine a consensus CPAP binding motif in metazoan STIL proteins (PRxxPxP, Figure 1\u2014figure supplement 1) and suggest that the described CPAP\u2013STIL interaction constitutes a highly conserved step in centriole biogenesis.\n\n### The CPAP\u2013STIL interaction is essential for centriole assembly in vivo\n\nSince the binding mechanism of CPAP and STIL is conserved between zebrafish and Drosophila, we turned to D. melanogaster as a model system to address the functional relevance of this interaction in vivo. In flies, the lack of dCPAP or dSTIL leads to centriole loss and a consequent severe uncoordinated (unc) phenotype due to the lack of basal bodies and so cilia in Type I sensory neurons. These flies lack all mechano- and chemo-sensation and, although viable, they usually die shortly after eclosion, as they cannot feed or move in a coordinated fashion (Kernan et al., 1994; Basto et al., 2006; Wang et al., 2011). We examined the ability of various GFP-tagged versions of dCPAP and dSTIL to rescue the centriole loss observed in these mutants and assayed their ability to localise to centrosomes in the presence of endogenous dCPAP or dSTIL (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic view of the complex between dCPAP (green) and dSTIL (magenta) with the residues mutated in MC1 (cyan), MC2 (brown) and MC3 (dark purple) indicated as coloured sticks. The MCPH residue E792 is circled in red. Note that MC1 and MC2 are mapped onto the Drosophila structure (dark-green backbone), while MC3 had to be mapped onto the backbone of the D. rerio structure (light green backbone). Although highly conserved between Drosophila and D. rerio (Figure 1\u2014figure supplement 5) this region was not visible in the electron density map of the Drosophila structure probably due to its partial unfolding to enable packing interactions within the crystal. (B\u2013M) Panels show representative still images taken from movies of Drosophila embryos expressing the indicated dCPAP-GFP or dSTIL-GFP constructs. Note that all analyses were performed in the presence of endogenous WT dCPAP or dSTIL, and that all images were acquired with the same microscope settings at the same stage of the cell cycle. (B\u2013F) dSTIL-GFP constructs localise to centrosomes at similar levels. (G\u2013M) All mutant dCPAP-GFP constructs localise to centrosomes, but at strongly reduced levels compared to wild-type dCPAP-GFP. (N) Graphs show the percentage of cells with 0, 1, 2, and 3 centrosomes in the genotypes analysed (as indicated). All dSTIL-GFP and dCPAP-GFP constructs were analysed in their respective mutant backgrounds. Note that this experiment was performed blind. (O\u2013Q\u2032\u2032) Panels show third instar larval brain cells of various genotypes in metaphase. Cells were stained for the centriolar protein Asterless (Asl\u2014green) and the PCM component Centrosomin (Cnn\u2014red) and DNA (blue). Wild-type metaphase cells have two centrosomes (O), whereas centrosomes are mostly absent in third instar larval brain cells from dCPAP mutants (P). As an example, representative images of dCPAP mutant cells expressing the dCPAP_E792V-GFP construct are shown that were scored with 2 (Q), 1 (Q\u2032) or no (Q\u2032\u2032) centrosomes. Scale bars = 3 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Panels show western blots of third instar larval brain samples probed with antibodies against GFP (recognising the fusion proteins), actin (as a loading control) and dCPAP (recognising both the fusion proteins and the endogenous protein) (highlighted by an arrow). All fusion proteins were expressed in their respective mutant backgrounds, as indicated by the black lines. Left panel, the dCPAP fusion proteins were expressed at approximately equal levels (when compared to the actin control) but were all moderately overexpressed compared to the endogenous dCPAP protein. Right panel, dSTIL_WT, dSTIL\u0394N and dSTILP11AR12A were expressed at slightly higher levels than dSTIL_P11A and dSTIL_R12A, and all GFP fusion proteins were strongly overexpressed when compared to endogenous dSTIL (data not shown).\n\nWe first expressed a version of dSTIL that lacks the first 45 aa (including the PRxxPxP motif required for the interaction with dCPAP). GFP-tagged wild-type dSTIL (dSTIL_WT-GFP) served as a control. Both proteins were expressed at similar levels and localised strongly to centrosomes in the presence of endogenous dSTIL (Figure 3B,C; Figure 3\u2014figure supplement 1). Only the wild-type version, however, was able to rescue the unc phenotype and the centriole loss phenotype of the dSTIL mutant (Figure 3N; Table 7). To further characterise the dCPAP binding domain in vivo we mutated the first proline and arginine of the PRxxPxP motif of dSTIL to alanine, both separately and in combination (P11A, R12A, and P11A:R12A, Figure 2C). All three constructs strongly localised to centrosomes in the presence of endogenous dSTIL (Figure 3D\u2013F, Figure 3\u2014figure supplement 1). Both single mutants rescued the unc phenotype of the dSTIL mutation while the double mutant failed to do so (data not shown). The single mutants P11A and R12A were also able to partially rescue the centriole loss phenotype, whereas the double mutant P11A:R12A showed only a poor rescue (Figure 3N; Table 7). These data strongly suggest that the interaction with dCPAP is essential for dSTIL function in centriole assembly.\n\nWe next deleted the entire TCP-domain of dCPAP (dCPAP_\u0394C), or expressed GFP fusion proteins carrying mutation clusters (MCs) altering 3\u20134 residues in different regions of the TCP domain (Figure 3A). Mutation clusters were designed that targeted central (dCPAP_MC1) or peripheral (dCPAP_MC2) residues in the dSTIL binding domain, as well as residues that are predicted to not significantly be involved in complex formation (dCPAP_MC3), according to the crystal structure and the ITC data (Figure 3A, Figure 2A, Figure 1D; Table 1). We also analysed dCPAP_E792V-GFP lines, which carried the MCPH equivalent mutation E792V (E1235V in humans and E1021V in zebrafish CPAP). All transgenic dCPAP-GFP proteins were expressed at approximately equivalent levels in vivo, but were moderately overexpressed compared to endogenous dCPAP (Figure 3\u2014figure supplement 1). Wild-type dCPAP-GFP localised strongly to centrosomes and rescued both the unc phenotype and the centriole loss phenotype (Figure 3G,N; Table 7). Strikingly, the rescuing ability of the mutant constructs strongly correlated with the predicted strength of dSTIL binding. dCPAP_\u0394C-GFP failed to rescue, dCPAP-MC1 and dCPAP-MC2 rescued poorly, the MCPH mutation E792V showed an intermediate phenotype, while dCPAP-MC3 exhibited a robust rescue (Figure 3N; Table 7). Interestingly, when compared to wild-type dCPAP-GFP, all mutant constructs (including dCPAP_MC3) localised only weakly to centrosomes (Figure 3H\u2013M). Together, these data suggest that the interaction between dCPAP and dSTIL is a key step in centriole assembly and is essential for centriole duplication. Furthermore, they indicate that low total levels of dCPAP at centrosomes might be sufficient for centriole duplication, as long as some interaction with dSTIL is maintained.\n\n### The TCP domain of C. elegans SAS-4 is required for its interaction with SAS-5 and for centriole assembly\n\nIt has been proposed that SAS-5 is the C. elegans homolog of the STIL proteins in flies and vertebrates, but there is little sequence homology between these proteins (Stevens et al., 2010a). We failed to identify an unambiguous PRxxPxP motif in worm SAS-5, so we tested whether the TCP domain of SAS-4 (the C. elegans CPAP homologue) is functionally important. We used the Mos single-copy insertion system (MosSCI; Fr\u00f8kj\u00e6r-Jensen et al., 2008) to generate transgenic lines with single-copy transgenes under the control of sas-6 regulatory sequences integrated at a specific site on chromosome II (Figure 4A). Transgenes were generated expressing GFP fusions with either WT SAS-4 (SAS-4WT::GFP) or a form in which the C-terminal TCP domain (aa 557\u2013808) had been deleted (SAS-4\u0394TCP::GFP); both transgenes contained a 497 bp resequenced region in their N-terminal coding region (preserving codon usage) that rendered them resistant to RNAi-mediated depletion (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic illustration of the MosSCI system used for generating single-copy sas-4 transgene insertions. (B) A schematic illustration of the monopolar spindle assay for centriole duplication in C. elegans embryos. Panels show maximum intensity projections of representative fluorescence confocal z-series taken of sas-4(RNAi) embryos expressing either WT or \u0394TCP SAS-4::GFP. Transgenic SAS-4WT::GFP localises to sharp foci representing the centrioles, whereas SAS-4\u0394TCP::GFP localises diffusely to the pericentriolar material. Bar, 10 \u03bcM. (C) Graphs show the quantification of second division monopolar spindles (left) and embryonic viability (right) after sas-4(RNAi) and rescue with either a WT or \u0394TCP sas-4::gfp transgene. (D) Panels show autoradiographs (top panel) and a Coomassie stained gel from a Ni-NTA pull-down experiment with 35S-labelled in vitro translated SAS-4 fragments (prey) and SAS-5-6xHis fragments (baits).\n\nSAS-4 depletion by RNAi prevents centriole assembly, resulting in a signature phenotype characterised by a normal first mitotic division followed by monopolar spindles during the second division (Figure 4B,C; O\u2019Connell et al., 2001). This phenotype arises because the sperm that fertilise the SAS-4-depleted oocytes carry two normal centrioles, since sperm are produced prior to introduction of the dsRNA. The two sperm-derived centrioles organise two centrosomes, and the first mitotic division appears normal. If no new centrioles form, each daughter cell inherits a single sperm-derived centriole leading to monopolar spindles in the second division and 100% embryonic lethality (Figure 4C). Both the monopolar spindle phenotype and embryonic viability were fully rescued by the WT sas-4::gfp transgene (aa 1\u2013808), but not by the \u0394TCP transgene (aa 1\u2013556) (Figure 4B,C). While SAS-4WT::GFP targeted to centrioles in the absence of the endogenous protein, SAS-4\u0394TCP::GFP did not, and instead exhibited a diffuse accumulation in the pericentriolar material (Figure 4B). Thus, the SAS-4 TCP domain is required for SAS-4 to accumulate at centrioles and become incorporated into the microtubule-containing outer centriole wall.\n\nTo determine if the failure of SAS-4\u0394TCP::GFP to become incorporated in the centriole outer wall could be due to an inability to interact with SAS-5, we performed a pull-down assay to determine whether 35S-labelled in vitro translated SAS-4 fragments could interact with the N-terminal or C-terminal regions of SAS-5 bound to beads (Figure 4D). In vitro translated full-length SAS-4 interacted specifically with the N-terminal domain (aa 1\u2013202) of SAS-5. Interestingly, we could not further narrow down the region of SAS-4 required for this interaction. Neither the SAS-4 N-terminal nor C-terminal region (which includes the TCP domain) alone could be pulled down by SAS-5. This result suggests that although the TCP domain is required for SAS-4 to interact with SAS-5, it is not sufficient. Together, these data suggest that a TCP domain-dependent interaction between SAS-4/CPAP and SAS-5/STIL is conserved and essential for centriole duplication in C. elegans, but that the precise interaction interface may have diverged.\n\n## Discussion\n\nOnly a small set of conserved centriolar proteins is essential for centriole assembly (Brito et al., 2012; Gonczy, 2012) and some of these proteins, like CPAP and STIL, have been linked to microcephaly in humans (Leal et al., 2003; Bond et al., 2005; Gul et al., 2006; Thornton and Woods, 2009; Darvish et al., 2010). However, there is currently little structural understanding on how these proteins interact with one another, how mutations in them cause microcephaly in humans and how these interactions are regulated.\n\nHere we have solved the crystal structures of the CPAP\u2013STIL complex from zebrafish and Drosophila. We showed that the CPAP TCP domain folds into an elongated open-sided \u03b2-meander that consists of \u223c20 consecutive antiparallel \u03b2-strands connected by type I \u03b2-turns. \u03b2-meanders are frequently found in \u03b2-barrels, \u03b2-propellers and some \u03b1+\u03b2 proteins. However, what, to our knowledge, makes the TCP domain structure unique amongst naturally occurring proteins is that it solely consists of a freestanding meander \u03b2-sheet that entirely lacks a defined hydrophobic core and is not flanked by other globular domains that pack against it. We show that the TCP domain is predominantly monomeric in solution and self-interacts in its crystallised form only through small interfaces that are not conserved. Thus, despite some reminiscence to \u03b2-sheets observed in amyloid fibrils it is unlikely that the TCP domain self-associates in a similar manner.\n\nInstead, we demonstrate that the TCP domain of CPAP constitutes a novel proline-rich-motif (PRM) recognition-domain that specifically binds to a short target motif in STIL. Although the overall sequence identity of the CPAP and STIL proteins between Drosophila and zebrafish is relatively low (\u223c22% and \u223c13%, respectively), our structural analysis revealed that the interaction interface is conserved, confirming the previous proposal that fly Ana2 is the functional homologue of vertebrate STIL (Stevens et al., 2010a). Our characterisation of the binding interface also allowed us to define a consensus-binding site (PRxxPxP) for the CPAP TCP domain in STIL that is conserved across metazoa. Our mutational analysis of the interface demonstrates a remarkable correlation between the ability of mutant proteins to bind to one another in vitro and their ability to support centriole assembly in vivo, providing compelling support for our structural model of the metazoan CPAP\u2013STIL complex. These data strongly suggest that the interaction between CPAP and STIL is a conserved, essential step in centriole biogenesis. A schematic model that places this interaction in the context of a possible centriole assembly pathway is shown in Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01071/elife-01071-fig5-v1.jpg)\n\n**Figure 5.:** In this illustration, interactions whose crystal structure have been determined are highlighted by green boxes\u2014all other interactions are inferred from biochemical and genetic studies and so are depicted in cartoon form. The cartwheel central hub comprises SAS-6 (red) (Nakazawa et al., 2007; Kitagawa et al., 2011b; van Breugel et al., 2011). The spokes extending outward from the hub consist of a homodimeric SAS-6 coiled-coil, which extends (van Breugel et al., 2011) into a region known as the \u2018pinhead\u2019 (cyan in low magnification view, left), where CEP135 (grey) may act as a linker between SAS-6, CPAP and microtubules (Hiraki et al., 2007; Roque et al., 2012; Lin et al., 2013). CPAP (dark blue) localises more towards the periphery of the centriole (Mennella et al., 2012; Sonnen et al., 2012; Lukinavi\u010dius et al., 2013), where its N-terminal part may interact directly with both Asterless/CEP152 (Cizmecioglu et al., 2010; Dzhindzhev et al., 2010) (orange arrow) and microtubules (Hsu et al., 2008) (green arrow). In contrast STIL (yellow) localises more towards the interior of centrioles (Arquint et al., 2012), and appears to function upstream of CPAP in centriole biogenesis (Tang et al., 2011; Vulprecht et al., 2012). Thus, we propose that the C-terminal TCP domain of CPAP interacts with the conserved region 2 (CR2) of STIL towards the interior of the centriole and that this interaction is crucial for CPAP/STIL function at centrioles. The orientation of STIL in centrioles is unknown.\n\nThe high degree of sequence divergence between vertebrate STIL, Drosophila Ana2 and C. elegans SAS-5 suggests that STIL homologs are under particularly strong lineage-specific selection. Despite the many sequence changes between Drosophila Ana2 and vertebrate STIL, our work suggests that the interaction interface between Ana2/STIL and dSAS-4/CPAP TCP domain has been retained, highlighting its importance. Even in C. elegans, which is the most divergent of the functionally characterised STIL homologs, our work indicates that the SAS-4 TCP domain is essential for centriole assembly, and that a TCP-domain dependent interaction between SAS-4 and SAS-5 has been conserved. Nevertheless, as the SAS-4 TCP domain is not sufficient for interaction with SAS-5 and we were unable to identify a PRxxPxP interaction motif in worm SAS-5, more work will be needed to understand the SAS-4\u2014SAS-5 interaction in C. elegans and its relationship to the CPAP\u2013STIL interaction in other metazoans.\n\nA surprising aspect of our findings is that the E792V (MCPH) mutant and all three of the mutation clusters (MCs) that we analysed in dCPAP localise poorly to centrosomes. For the E792, MC1, and MC2 mutations this could be expected, as these are all predicted to perturb the interaction between dCPAP and dSTIL (as is the case with similar mutations in zebrafish CPAP in our in vitro binding assays), and this would be predicted to perturb the recruitment of dCPAP to centrioles. The MC3 cluster, however, is not predicted to lie in a strong interaction interface and, unlike the MC1 and MC2 mutation clusters, it can rescue the centriole duplication defect in dCPAP mutant cells nearly as efficiently as the WT protein. Possibly, an interaction with another protein that plays some part in recruiting dCPAP to centrioles might be perturbed by these mutations. Alternatively, similar to the situation with C. elegans SAS-4 (Dammermann et al., 2008), dCPAP may localise to both centrioles and the PCM. It might therefore be PCM and not centriole recruitment that is affected by the mutation clusters. If this were the case it would be hard to discern an additional partial loss of centriole recruitment, as this loss would be masked by the PCM pool of dCPAP, especially under conditions of moderate overexpression of dCPAP. Importantly, however, our findings demonstrate that even very reduced amounts of centrosomal dCPAP can support robust centriole duplication as long as this protein can interact efficiently with dSTIL.\n\nOur studies provide the first structural insight into the nature of the link between centrioles and human microcephaly. It is unclear why mutations in genes encoding key centriole or centrosome proteins can lead to such a specific neuro-developmental disorder in humans. It is widely assumed that some aspect of centriole/centrosome function must be particularly important in human neural progenitor cells, and that the failure of these cells to proliferate in an appropriate manner underlies the small brain size in affected individuals (Megraw et al., 2011). One possibility, based on the fact that these neural progenitors seem to divide asymmetrically (Siller and Doe, 2009; Megraw et al., 2011), is that centrioles/centrosomes may play a particularly important role in properly orienting the spindle during asymmetric divisions, and division orientation could in turn be required for the maintenance of neuronal progenitors. This appears to be the case in flies, where mutations in dCPAP/DSas-4 and dSTIL/Ana2 lead to defects in the asymmetric division of the neural stem/progenitor cells (Basto et al., 2006; Wang et al., 2011). However, there are other possible explanations. Human neural progenitor cells form primary cilia, for example, and signalling through the cilium could be perturbed if centriole assembly is perturbed (Han and Alvarez-Buylla, 2010; Megraw et al., 2011). Moreover, several studies have linked centriole and centrosome malfunction to defects in DNA damage repair (DDR) pathways (Megraw et al., 2011), and mutations in MCPH genes can also lead to more severe phenotypes in humans that may be related to DDR pathway malfunction (Al-Dosari et al., 2010; Kalay et al., 2011; Megraw et al., 2011).\n\nA previous analysis of the behaviour of various CPAP mutant proteins (modelled on MCPH mutations) in human cells revealed some surprising findings (Kitagawa et al., 2011a). The deletion of the TCP domain or the mutation of E1235 to Valine did not effect the localisation of CPAP to the centriole, although centriole duplication was compromised by both mutations. Moreover, overexpression of the E1235V mutant protein was able to promote centriole overgrowth to a greater extent than the WT protein, suggesting that it may have acquired some enhanced functionality. The structures we report here reveal that E1235 is one of the several residues involved in the binding interface with STIL, making an important sidechain\u2013mainchain contact. This structural model explains how the E1235V mutation can compromise complex formation, and we have confirmed that this is the case with zebrafish proteins in vitro. Moreover, the equivalent mutation in flies leads to inefficient centriole assembly, but this process is not abolished. Taken together, our data strongly suggest that it is a partial failure in centriole assembly that is the primary cause of microcephaly in these patients. The challenge now is to understand how inefficient centriole assembly leads to microcephaly in humans.\n\n## Materials and methods\n\n### Recombinant protein expression and purification\n\nD. rerio CPAP937\u20131124 was cloned from D. rerio cDNA. Proteins were expressed in Escherichia coli BL21 (DE3) Rosetta as N-terminally His-tagged constructs, and purified via immobilised metal ion affinity chromatography (NiNTA; Qiagen, Hilden, Germany), proteolytic tag cleavage, followed (optionally) by size-exclusion chromatography and ion-exchange chromatography using standard methods. The selenomethionine derivative protein was expressed in selenomethionine supplemented M9 medium and purified in the same way. Purified constructs contained the sequence GPHM at the N-termini that stem from the cloning and protease cleavage sites.\n\nD. rerio STIL404\u2013448 was cloned from IMAGE clone 7147918 and expressed in E. coli C41 BL21 (DE3), fused to two His-tagged lipoyl domains from Bacillus stearothermophilus dihydrolipoamide acetyltransferase at both the N- and C terminus. The peptide was purified via NiNTA chromatography, proteolytic cleavage of the His-lipoyl domains, and ion-exchange chromatography. The purified constructs contained a G (GG for D. rerio STIL404\u2013448 and its point-mutants) at their N-terminus and the sequence EFGENLYFQ (ENLYFQ for D. rerio STIL408\u2013428 and D. rerio STIL411\u2013428) at their C-terminus. These extra sequences stem from the cloning and protease cleavage sites.\n\nMutations of the D. rerio constructs were introduced into the expression vectors by site-directed mutagenesis.\n\nCodon-optimised (GeneArt, Carlsbad, CA) Drosophila dSTIL1\u201347 was genetically fused to the N-terminus of Drosophila dCPAP700\u2013901 via 3-way ligation. The fusion protein was expressed in E. coli B834 (DE3) as an N-terminally His-tagged fusion, and purified via NiNTA chromatography, proteolytic tag cleavage and size exclusion chromatography. The selenomethionine derivative protein was expressed using SelenoMethionine Medium (Molecular Dimensions, Newmarket, UK) and purified in the same way.\n\n**Table 2.**\n Native dataset analysis and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>D. rerio CPAP937\u20131124 WT</th>\n      <th>D. rerio CPAP937\u20131124 E1021V</th>\n      <th>D. rerio CPAP937\u20131124 + D. rerio STIL408\u2013428 complex</th>\n      <th>D. melanogaster dSTIL1\u201347 \u2212 dCPAP700\u2013901 fusion complex</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Beamline</td>\n      <td>Diamond I02</td>\n      <td>MRC-LMB Cambridge UK</td>\n      <td>Diamond I04</td>\n      <td>Diamond I04</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P21</td>\n      <td>P21</td>\n      <td>P21</td>\n      <td>P1</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.9786</td>\n      <td>1.5418</td>\n      <td>0.9795</td>\n      <td>0.9795</td>\n    </tr>\n    <tr>\n      <td>Monomers in the asymmetric unit</td>\n      <td>1</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Unit cell dimensions (\u00c5)</td>\n      <td>a = 52.34; b = 36.44; c = 56.44; \u03b1 = 90.00; \u03b2 = 117.31; \u03b3 = 90.00</td>\n      <td>a = 52.12; b = 36.48; c = 56.46; \u03b1 = 90.00; \u03b2 = 117.47; \u03b3 = 90.00</td>\n      <td>a = 60.25; b = 67.47; c = 61.65; \u03b1 = 90.00; \u03b2 = 113.92; \u03b3 = 90</td>\n      <td>a = 58.64; b = 69.91; c = 69.98; \u03b1 = 86.96; \u03b2 = 88.64; \u03b3 = 67.69</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>29.48\u20131.7</td>\n      <td>36.48\u20131.9</td>\n      <td>56.35\u20132.7/2.2 (anisotropy)</td>\n      <td>64.60\u20132.57</td>\n    </tr>\n    <tr>\n      <td>Completeness(overall/inner/outer shell)</td>\n      <td>99.7/99.4/100</td>\n      <td>100/99.6/100</td>\n      <td>99.9/99.5/99.9</td>\n      <td>97.6/93.6/97.2</td>\n    </tr>\n    <tr>\n      <td>Rmerge (overall/inner/outer shell)</td>\n      <td>0.074/0.030/0.929</td>\n      <td>0.096/0.028/1.093</td>\n      <td>0.101/0.053/1.008</td>\n      <td>0.091/0.069/0.512</td>\n    </tr>\n    <tr>\n      <td>Rpim (overall/inner/outer shell)</td>\n      <td>0.029/0.012/0.369</td>\n      <td>0.039/0.012/0.456</td>\n      <td>0.050/0.027/0.505</td>\n      <td>0.061/0.035/0.449</td>\n    </tr>\n    <tr>\n      <td>Mean I/\u03c3I (overall/inner/outer shell)</td>\n      <td>14.6/39.9/2.0</td>\n      <td>13.8/43.4/1.8</td>\n      <td>7.6/19.0/1.4</td>\n      <td>7.6/16.3/1.7</td>\n    </tr>\n    <tr>\n      <td>Multiplicity (overall/inner/outer shell)</td>\n      <td>7.2/7.0/7.3</td>\n      <td>6.8/6.6/6.6</td>\n      <td>4.8/4.7/4.9</td>\n      <td>3.1/2.9/3.1</td>\n    </tr>\n    <tr>\n      <td>Number of reflections</td>\n      <td>19,941</td>\n      <td>14,349</td>\n      <td>21,892</td>\n      <td>31,911</td>\n    </tr>\n    <tr>\n      <td>Number of atoms</td>\n      <td>1595</td>\n      <td>1515</td>\n      <td>3176</td>\n      <td>3924</td>\n    </tr>\n    <tr>\n      <td>Waters</td>\n      <td>190</td>\n      <td>114</td>\n      <td>54</td>\n      <td>65</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree (% data used)</td>\n      <td>19.9/24.4 (5.1%)</td>\n      <td>20.9/26.7 (5.0%)</td>\n      <td>23.4/27.7 (5.0%)</td>\n      <td>24.5/26.3 (5.05%)</td>\n    </tr>\n    <tr>\n      <td>rmsd from ideal values: bond length/angles</td>\n      <td>0.011/1.478</td>\n      <td>0.009/1.310</td>\n      <td>0.015/1.619</td>\n      <td>0.007/0.900</td>\n    </tr>\n    <tr>\n      <td>Mean B value</td>\n      <td>26.52</td>\n      <td>31.553</td>\n      <td>59.69</td>\n      <td>70.80</td>\n    </tr>\n    <tr>\n      <td>Correlation coefficient Fo-Fc/Fo-Fc free</td>\n      <td>0.961/0.942</td>\n      <td>0.955/0.926</td>\n      <td>0.954/0.933</td>\n      <td>0.854/0.836</td>\n    </tr>\n    <tr>\n      <td>Molprobity Score</td>\n      <td>0.97 (100th percentile)</td>\n      <td>1.2 (99th percentile)</td>\n      <td>1.70 (96th percentile)</td>\n      <td>1.40 (100th percentile)</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n SeMet D. rerio CPAP937\u20131124 dataset analysis and phasing statistics\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Beamline</td>\n      <td colspan=\"3\">ESRF ID 23\u20131</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td colspan=\"3\">P21</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.9791 (Peak)</td>\n      <td>0.9794 (Inflection)</td>\n      <td>0.9393 (Remote)</td>\n    </tr>\n    <tr>\n      <td>Unit cell dimensions (\u00c5)</td>\n      <td>a = 52.39 b = 36.53 c = 56.34 \u03b1 = 90.00 \u03b2 = 117.28 \u03b3 = 90.00</td>\n      <td>a = 52.59 b = 36.60 c = 56.48 \u03b1 = 90.00 \u03b2 = 117.24 \u03b3 = 90.00</td>\n      <td>a = 52.49 b = 36.55 c = 56.38 \u03b1 = 90.00 \u03b2 = 117.26 \u03b3 = 90.00</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>36.56\u20131.7</td>\n      <td>36.56\u20131.7</td>\n      <td>36.56\u20131.7</td>\n    </tr>\n    <tr>\n      <td>Completeness (overall/inner/outer shell)</td>\n      <td>100.0/99.7/100.0</td>\n      <td>100/99.2/100</td>\n      <td>100/99.7/100</td>\n    </tr>\n    <tr>\n      <td>Rmerge (overall/inner/outer shell)</td>\n      <td>0.09/0.048/1.296</td>\n      <td>0.127/0.047/2.840</td>\n      <td>0.092/0.046/1.370</td>\n    </tr>\n    <tr>\n      <td>Rpim (overall/inner/outer shell)</td>\n      <td>0.042/0.031/0.552</td>\n      <td>0.056/0.028/1.201</td>\n      <td>0.041/0.026/0.580</td>\n    </tr>\n    <tr>\n      <td>Mean I/sd(I) (overall/inner/outer shell)</td>\n      <td>10.7/26.0/1.5</td>\n      <td>8.9/26.4/0.7</td>\n      <td>10.8/27.4/1.4</td>\n    </tr>\n    <tr>\n      <td>Multiplicity (overall/inner/outer shell)</td>\n      <td>7.2/7.0/7.3</td>\n      <td>7.2/6.9/7.3</td>\n      <td>7.2/7.0/7.3</td>\n    </tr>\n    <tr>\n      <td>Se sites found/expected</td>\n      <td colspan=\"3\">5/7</td>\n    </tr>\n    <tr>\n      <td>Overall FOM</td>\n      <td colspan=\"3\">0.306</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Characterisation of the CPAP:STIL interaction in vitro\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Danio rerio STIL404\u2013448 peptide in syringe</th>\n      <th>Danio rerio CPAP937\u20131124 TCP domain in cell</th>\n      <th>Number of binding sites (N)</th>\n      <th>SD N</th>\n      <th>KD (\u03bcM)</th>\n      <th>SD KD (\u03bcM)</th>\n      <th>\u0394H (kcal/mol)</th>\n      <th>SD (kcal/mol)</th>\n      <th>n (number of measurements)</th>\n      <th>Factor change in KD</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT</td>\n      <td>WT</td>\n      <td>1.07</td>\n      <td>0.04</td>\n      <td>1.9</td>\n      <td>0.2</td>\n      <td>\u221210.1</td>\n      <td>0.3</td>\n      <td>5</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>F978V</td>\n      <td>0.70</td>\n      <td>0.09</td>\n      <td>37</td>\n      <td>10</td>\n      <td>\u221223</td>\n      <td>5</td>\n      <td>4</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>T986V</td>\n      <td>1.01</td>\n      <td>0.07</td>\n      <td>1.9</td>\n      <td>0.2</td>\n      <td>\u221210.6</td>\n      <td>0.4</td>\n      <td>3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>Y994V</td>\n      <td>1.00</td>\n      <td>0.33</td>\n      <td>68</td>\n      <td>14</td>\n      <td>\u22129.5</td>\n      <td>3.8</td>\n      <td>5</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>F1015V</td>\n      <td>0.93</td>\n      <td>0.13</td>\n      <td>70</td>\n      <td>18</td>\n      <td>\u221210.4</td>\n      <td>2.7</td>\n      <td>3</td>\n      <td>37</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>E1021V</td>\n      <td>0.91</td>\n      <td>0.13</td>\n      <td>16</td>\n      <td>2</td>\n      <td>\u22128.1</td>\n      <td>0.6</td>\n      <td>3</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>WT</td>\n      <td>1.07</td>\n      <td>0.04</td>\n      <td>1.9</td>\n      <td>0.2</td>\n      <td>\u221210.1</td>\n      <td>0.3</td>\n      <td>5</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>P417A</td>\n      <td>WT</td>\n      <td>1.06</td>\n      <td>0.02</td>\n      <td>37</td>\n      <td>1.3</td>\n      <td>\u221211.5</td>\n      <td>0.2</td>\n      <td>3</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>R418A</td>\n      <td>WT</td>\n      <td>1.12</td>\n      <td>0.02</td>\n      <td>19</td>\n      <td>1</td>\n      <td>\u22128.8</td>\n      <td>0.1</td>\n      <td>4</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>P421A</td>\n      <td>WT</td>\n      <td>1.16</td>\n      <td>0.03</td>\n      <td>17</td>\n      <td>0.3</td>\n      <td>\u22129.8</td>\n      <td>0.2</td>\n      <td>4</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>N422A</td>\n      <td>WT</td>\n      <td>1.09</td>\n      <td>0.03</td>\n      <td>0.7</td>\n      <td>0.05</td>\n      <td>\u221212.3</td>\n      <td>0.3</td>\n      <td>4</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>P423A</td>\n      <td>WT</td>\n      <td>1.16</td>\n      <td>0.05</td>\n      <td>4.6</td>\n      <td>0.3</td>\n      <td>\u221210.9</td>\n      <td>0.4</td>\n      <td>4</td>\n      <td>2.4</td>\n    </tr>\n  </tbody>\n</table>\n\n_Tables show the binding parameters between various D. rerio CPAP and STIL constructs obtained from ITC experiments. The measurements of the WT STIL404\u2013448\u2014WT CPAP937\u20131124 interaction are identical to each other and identical to those shown in Table 1 and are only presented again to allow easier comparison within each table. Fitting was performed with N as a variable. Constraining N to a fixed value of 1 during fitting produced KD values that were within the experimental error of those tabulated here. In control measurements on wild-type material and a selection of mutants of both CPAP and STIL, the experimental configuration was reversed with CPAP protein titrated into STIL peptide in the ITC cell. These experiments gave similar values for N, KD and \u0394H to the standard configuration reported here._\n\n**Table 5.**\n D. melanogaster dSTIL1\u201347-dCPAP700\u2013901 crystallisation conditions\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Crystal</th>\n      <th>Protein concentration (mg/ml)</th>\n      <th>Mother liquor</th>\n      <th>\u00b5l protein:\u00b5l Mother liquor</th>\n      <th>\u00b5l seed stock</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Native</td>\n      <td>6.18</td>\n      <td>100 mM MES/imidazole mix pH 6.5, 30 mM MgCl2, 30 mM CaCl2, 20% ethylene glycol, 10% PEG 8000</td>\n      <td>0.15:0.05</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Semet1</td>\n      <td>5.00</td>\n      <td>100 mM MES/imidazole mix pH 6.5, 20% ethylene glycol, 10% PEG8000, 0.2 M racemic glutamic acid, 0.2 M glycine, 0.2 M racemic serine, 0.2 M racemic alanine, 0.2 M racemic lysine HCl</td>\n      <td>0.1:0.1</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Semet2</td>\n      <td>5.29</td>\n      <td>100 mM MES/imidazole mix pH 6.5, 14% ethylene glycol, 7% PEG8000, 30 mM NaNO3, 30 mM NaPO4, 30 mM NH4SO4</td>\n      <td>0.3:0.1</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>Semet3</td>\n      <td>5.29</td>\n      <td>100 mM MES/imidazole mix pH 6.5, 14% ethylene glycol, 7% PEG8000, 30 mM NaNO3, 30 mM NaPO4, 30 mM NH4SO4</td>\n      <td>0.3:0.1</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>Semet4</td>\n      <td>5.29</td>\n      <td>100 mM MES/imidazole mix pH 6.5, 16% ethylene glycol, 8% PEG8000, 30 mM NaNO3, 30 mM NaPO4, 30 mM NH4SO4</td>\n      <td>0.3:0.1</td>\n      <td>0.05</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 6.**\n D. melanogaster dSTIL1\u201347-dCPAP700\u2013901 SeMet dataset analysis\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Semet1-PEAK</th>\n      <th>SEMET1-LREM</th>\n      <th>Semet2-Peak</th>\n      <th>Semet3-PEAK</th>\n      <th>Semet3-INFL</th>\n      <th>Semet4-Peak</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Beamline</td>\n      <td>Diamond IO4</td>\n      <td>Diamond IO4</td>\n      <td>Diamond IO3</td>\n      <td>Diamond IO3</td>\n      <td>Diamond IO3</td>\n      <td>Diamond IO3</td>\n    </tr>\n    <tr>\n      <td>Spacegroup</td>\n      <td>P1</td>\n      <td>P1</td>\n      <td>P1</td>\n      <td>P1</td>\n      <td>P1</td>\n      <td>P1</td>\n    </tr>\n    <tr>\n      <td>Wavelength</td>\n      <td>0.9795</td>\n      <td>0.9999</td>\n      <td>0.9792</td>\n      <td>0.9791</td>\n      <td>0.9794</td>\n      <td>0.9791</td>\n    </tr>\n    <tr>\n      <td>Unit cell dimensions (\u00c5)</td>\n      <td>a = 59.31 b = 70.02 c = 70.01 \u03b1 = 87.65 \u03b2 = 89.24 \u03b3 = 67.37</td>\n      <td>a = 59.14 b = 70.24 c = 70.13 \u03b1 = 87.62 \u03b2 = 89.12 \u03b3 = 67.35</td>\n      <td>a = 58.47 b = 70.15 c = 69.99 \u03b1 = 87.08 \u03b2 = 88.41 \u03b3 = 67.60</td>\n      <td>a = 58.56 b = 70.03 c = 70.14 \u03b1 = 86.93 \u03b2 = 88.39 \u03b3 = 68.09</td>\n      <td>a = 58.72 b = 70.06 c = 70.28 \u03b1 = 86.84 \u03b2 = 88.47 \u03b3 = 68.36</td>\n      <td>a = 59.01 b = 70.17 c = 70.15 \u03b1 = 87.16 \u03b2 = 88.64 \u03b3 = 67.58</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>54.74\u20133.50</td>\n      <td>64.77\u20133.50</td>\n      <td>64.80\u20133.44</td>\n      <td>70.04\u20133.50</td>\n      <td>70.17\u20134.60</td>\n      <td>64.80\u20133.36</td>\n    </tr>\n    <tr>\n      <td>Completeness (overall/inner/outer)</td>\n      <td>98.1/93.8/98.3</td>\n      <td>98.4/98.0/98.2</td>\n      <td>97.8/91.6/93.7</td>\n      <td>98.3/95.3/97.6</td>\n      <td>97.8/79.1/89.9</td>\n      <td>97.6/91.0/97.4</td>\n    </tr>\n    <tr>\n      <td>Rmerge (overall/inner/outer)</td>\n      <td>0.093/0.055/0.118</td>\n      <td>0.086/0.041/0.238</td>\n      <td>0.17/0.076/0.518</td>\n      <td>0.152/0.086/0.336</td>\n      <td>0.116/0.039/0.189</td>\n      <td>0.125/0.037/0.433</td>\n    </tr>\n    <tr>\n      <td>Rpim (overall/inner/outer)</td>\n      <td>0.071/0.047/0.136</td>\n      <td>0.062/0.029/0.172</td>\n      <td>0.078/0.040/0.229</td>\n      <td>0.075/0.043/0.184</td>\n      <td>0.087/0.034/0.141</td>\n      <td>0.100/0.038/0.323</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3I (overall/inner/outer)</td>\n      <td>9.1/16.9/5.6</td>\n      <td>10.9/24.7/4.9</td>\n      <td>7.3/18.8/3.5</td>\n      <td>9.1/27.2/3.6</td>\n      <td>6.0/20.8/4.6</td>\n      <td>6.9/22.5/2.7</td>\n    </tr>\n    <tr>\n      <td>Multiplicity (overall/inner/outer)</td>\n      <td>3.9/3.8/3.9</td>\n      <td>3.9/3.8/3.8</td>\n      <td>7.0/7.0/7.1</td>\n      <td>6.0/6.7/5.3</td>\n      <td>3.5/3.6/3.5</td>\n      <td>3.5/3.4/3.6</td>\n    </tr>\n    <tr>\n      <td>No. unique reflections</td>\n      <td>12,832</td>\n      <td>12,884</td>\n      <td>13,315</td>\n      <td>12,797</td>\n      <td>5641</td>\n      <td>14,461</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 7.**\n Quantification of centriole/centrosome numbers in dCPAP or dSTIL mutant larval brain cells expressing the indicated WT or mutant constructs\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Genotype</th>\n      <th rowspan=\"2\">Number of brains</th>\n      <th rowspan=\"2\">Total number of cells</th>\n      <th colspan=\"4\">Cells with centrosome number (%)</th>\n    </tr>\n    <tr>\n      <th>0</th>\n      <th>1</th>\n      <th>2</th>\n      <th>3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT</td>\n      <td>12</td>\n      <td>944</td>\n      <td>2.1</td>\n      <td>2.6</td>\n      <td>95.2</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>dCPAP</td>\n      <td>8</td>\n      <td>661</td>\n      <td>95.2</td>\n      <td>4.2</td>\n      <td>0.6</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>dCPAP_WT-GFP</td>\n      <td>9</td>\n      <td>715</td>\n      <td>2.8</td>\n      <td>6.3</td>\n      <td>90.5</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>dCPAP_\u0394C-GFP</td>\n      <td>13</td>\n      <td>1147</td>\n      <td>95.1</td>\n      <td>3.8</td>\n      <td>1.0</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>dCPAP_MC1-GFP</td>\n      <td>11</td>\n      <td>968</td>\n      <td>64.9</td>\n      <td>30.1</td>\n      <td>4.8</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>dCPAP_MC2-GFP</td>\n      <td>17</td>\n      <td>1053</td>\n      <td>43.5</td>\n      <td>42.2</td>\n      <td>14.1</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>dCPAP_MC3-GFP</td>\n      <td>16</td>\n      <td>1870</td>\n      <td>4.5</td>\n      <td>13.3</td>\n      <td>81.9</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>dCPAP_MC1-3-GFP</td>\n      <td>11</td>\n      <td>888</td>\n      <td>90.1</td>\n      <td>8.0</td>\n      <td>1.8</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>dCPAP_E792V-GFP</td>\n      <td>9</td>\n      <td>1015</td>\n      <td>13.7</td>\n      <td>31.1</td>\n      <td>54.8</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>dSTIL169</td>\n      <td>9</td>\n      <td>846</td>\n      <td>98.1</td>\n      <td>1.9</td>\n      <td>0.0</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>dSTIL719</td>\n      <td>9</td>\n      <td>980</td>\n      <td>99.2</td>\n      <td>0.8</td>\n      <td>0.0</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>dSTIL_WT-GFP</td>\n      <td>6</td>\n      <td>424</td>\n      <td>5.7</td>\n      <td>9.0</td>\n      <td>85.1</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>dSTIL_\u0394N-GFP</td>\n      <td>13</td>\n      <td>884</td>\n      <td>88.1</td>\n      <td>9.8</td>\n      <td>1.9</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>dSTIL_P11A-GFP</td>\n      <td>9</td>\n      <td>1008</td>\n      <td>11.0</td>\n      <td>41.0</td>\n      <td>48.0</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>dSTIL_R12A-GFP</td>\n      <td>9</td>\n      <td>709</td>\n      <td>7.0</td>\n      <td>31.0</td>\n      <td>62.0</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>dSTIL_P11AR12A-GFP</td>\n      <td>9</td>\n      <td>727</td>\n      <td>41.0</td>\n      <td>43.0</td>\n      <td>16.0</td>\n      <td>0.0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Crystallisation\n\nNative D. rerio CPAP937\u20131124 was crystallised in sitting drops in 80 mM Tris pH 8.5, 160 mM MgCl2, 20% PEG-4000, 18% Glycerol, 1 mM DTT at 19.5\u00b0C. The drops were set up using 1 \u03bcl of the protein solution and 0.5 \u03bcl of the reservoir solution. Crystals were mounted after 3 days and flash-frozen in liquid nitrogen.\n\nD. rerio CPAP937\u20131124 E1021V was crystallised in sitting drops in 80 mM Tris pH 8.5, 160 mM MgCl2, 24% PEG-4000, 20% glycerol at 19.5\u00b0C. Crystals were mounted after 3 days and flash-frozen in liquid nitrogen.\n\nSeMet D. rerio CPAP937\u20131124 crystals were obtained using the sitting drop method with a reservoir solution of 80 mM Tris pH 8.5, 160 mM MgCl2, 26% PEG-4000, 18% glycerol, 1 mM DTT at 19.5\u00b0C. Drops were set up using 1 \u03bcl protein solution and 1 \u03bcl of reservoir solution. Native CPAP937\u20131124 crystals were used for streak-seeding into these drops and crystals allowed to grow for 7 days before mounting and flash-freezing them in liquid nitrogen.\n\nCrystals of the complex of D. rerio CPAP937\u20131124 and D. rerio STIL408\u2013428 were initially obtained using the LMB screening set-up with the Clear Strategy 2 pH 8.5 screen (MDL, Newmarket, UK). Crystals were used to streak seed into sitting drops consisting of 1 \u03bcl of a reservoir solution of 100 mM Tris pH 8.5, 200 mM CaAcetate, 17% PEG-2000 MME and 1 \u03bcl of protein/peptide mixture (0.25 \u03bcl protein + 0.75 \u03bcl peptide) at 19.5\u00b0C. Crystals were grown for 2 days before mounting them in 100 mM Tris pH 8.5, 200 mM CaAcetate, 17% PEG-2000 MME, 25% glycerol and flash-freezing them in liquid nitrogen.\n\nThe protein concentrations of D. rerio CPAP937\u20131124 used for crystallisations were measured by the Bradford assay with BSA as a standard and were 39.9 mg/ml (apo-CPAP937\u20131124), 46.2 mg/ml (CPAP937\u20131124 E1021V), 30.6 mg/ml (SeMet CPAP937\u20131124) and 81 mg/ml CPAP937\u20131124 (3.7 mM, CPAP/STIL complex). The concentration of STIL408\u2013428 (CPAP/STIL complex) was determined by amino acid analysis and was 11.8 mg/ml (3.8 mM).\n\nNative D. melanogaster dSTIL1\u201347-dCPAP700\u2013901 was crystallised using the sitting drop approach, using the Morpheus screen (Molecular Dimensions). Crystals grew after approximately 3 weeks (Table 5, \u2018Native\u2019). Crystals were mounted after approximately 4 weeks. SeMet D. melanogaster dSTIL1\u201347-dCPAP700\u2013901 was initially crystallised using the Morpheus screen (Molecular Dimensions). Crystals typically grew after 3\u20134 weeks. Some crystals were used for microseeding of further screens including an optimisation screen. Seed stock was generated using a Seed bead kit (Hampton, Aliso Viejo, CA). Details of crystallisation conditions are shown in Table 5.\n\n### Data collection and processing\n\nNative data were collected as described in Table 2. All D. rerio datasets were integrated and scaled using MOSFLM (Leslie and Powell, 2007) and Scala (Evans, 2006) respectively. The D. rerio CPAP937\u20131124 structure was solved by MAD in CRANK (Ness et al., 2004; Cowtan, 2006), resulting in clear electron density into which an initial model was built using ArpWarp (Langer et al., 2008). Phenix.refine (Afonine et al., 2005) and REFMAC (Murshudov et al., 2011) were used to refine the model against the native dataset with manual building done in Coot (Emsley and Cowtan, 2004). D. rerio CPAP937\u20131124 E1021V was solved by molecular replacement in Phaser (McCoy et al., 2007) using a poly-alanine model derived from the WT model. The model was further built and refined as described for the WT structure. The complex of D. rerio CPAP937\u20131124 and D. rerio STIL408\u2013428 was solved by molecular replacement using Phaser (McCoy et al., 2007) with a distorted model of the D. rerio CPAP937\u20131124 WT apo-structure. Refinement yielded clear density for the residues of STIL shown here. The model was further built and refined as described for the other D. rerio structures.\n\nD. melanogaster dSTIL1\u201347-dCPAP700\u2013901 data was scaled using Xia2 (Winter, 2010). Phasing was carried out using all SeMet datasets (Table 6) in autoSHARP (Vonrhein et al., 2007), using SHELXC/D (Sheldrick, 2008) for heavy atom finding, SHARP for site refinement/phasing and SOLOMON (Abrahams and Leslie, 1996) for density modification. This resulted in an experimental density map within which a CHAINSAW (Stein, 2008) model based on the D. rerio complex structure could be manually placed, using heavy atom sites as a guide. Experimental density corresponding to the dSTIL peptide could be easily seen. Further refinement cycles allowed the remaining copies of the monomer to be placed and trimmed. Refinement and model building were carried out in autoBUSTER (Bricogne et al., 2011) and Coot (Emsley and Cowtan, 2004) respectively.\n\n### Isothermal calorimetry (ITC) measurements\n\nAll ITC measurements were performed using an auto-iTC 200 instrument (GE Healthcare, Little Chalfont, UK) in 50 mM HEPES pH 7.5, 100 mM NaCl at 25\u00b0C. Samples were stored by the instrument in 96-well microtiter plates at 5\u00b0C prior to loading and performing the titrations. Standard experiments used 19 \u00d7 2 \u03bcl injections of STIL peptide into CPAP protein preceded by a single 0.5 \u03bcl pre-injection. Heat from the pre-injection was not used during fitting. Data were analysed manually in the Origin software package provided by the manufacturer and fit to a single set of binding sites model. All measurements were corrected using control ITC experiments in which the peptide studied was injected into buffer only. The small endothermic heats of injection in these experiments were fitted to a linear function that was subsequently subtracted from the equivalent integrated heats of the peptide\u2013protein binding experiment before fitting. The concentration of CPAP in the cell was typically 40 \u03bcM but varied maximally between 20 and 100 \u03bcM. The concentration of STIL used in the syringe was typically 700 \u03bcM but varied maximally between 600 and 2600 \u03bcM depending on the affinity of the peptide interaction being studied.\n\n### In vivo analysis in Drosophila\n\n#### Fly stocks and transgenic constructs\n\nThe following mutant alleles and stocks were used in this study: ana2169 (here called dSTIL169), ana2719 (here called dSTIL719) (Wang et al., 2011), sas-4s2214 (here called dCPAP) (Basto et al., 2006), pUbq-dCPAP_WT-GFP, pUbq-dCPAP_\u0394C1\u2013724-GFP, pUbq-dCPAP_MC1-GFP, pUbq-dCPAP_MC2-GFP, pUbq-dCPAP_MC3-GFP, pUbq-dCPAP_MC1-3-GFP, pUbq-dCPAP_E792V-GFP, pUbq-dSTIL_WT-GFP, pUbq-dSTIL_\u0394N46\u2013420-GFP, pUbq-dSTIL_P11A-GFP, pUbq-dSTIL_R12A-GFP, pUbq-dSTIL_P11AR12A-GFP. Transgenic lines contain GFP fused to the C-terminus of dCPAP and dSTIL, respectively, and are expressed from the Ubiquitin promoter, which drives moderate expression in all cell types (Lee et al., 1988). Flies were kept at 25\u00b0C, OregonR served as wild-type control.\n\nGFP-tagged full length versions of dCPAP and dSTIL used in this study were made by cloning the full length dCPAP cDNA and the dSTIL cDNA into the pUbq-GFP(C-terminus) destination vector using the Gateway System (Life Technologies, Carlsbad, CA). PCR with dCPAP_WT and dSTIL_WT as template was used to make dCPAP_\u0394C1\u2013724 and dSTIL_\u0394N46\u2013420, respectively. Single point mutations and mutation clusters were introduced into full length dCPAP and dSTIL using site-directed mutagenesis (QuickChange II XL/Quick Change Lightening Multi Site-Directed Mutagenesis Kits, Agilent Technologies, Santa Clara, CA). Constructs were injected either by Genetic Services Inc. (Cambridge, MA) or Cambridge DNA Injection Service (Cambridge, UK).\n\n#### Rescue experiments\n\nAll constructs were tested for their ability to rescue the uncoordinated phenotype, which is a feature of flies lacking centrioles (Basto et al., 2006). For that purpose, the different versions of dCPAP-GFP and dSTIL-GFP were either crossed into the dCPAP or dSTIL169/dSTIL2719 mutant background, and desired pupae were collected from vials and transferred to filter paper (Whatman, Maidstone, UK) for analysis.\n\n#### Immunohistochemistry on third instar larval brains and centrosome quantification\n\nBrains were dissected, squashed, and stained as previously described (Stevens et al., 2009). The following antibodies were used to stain centrosomes in third instar larval brain cells: sheep anti-Centrosomin (Cnn, directed against the N-terminus, 1:1000, [Lucas and Raff, 2007] but raised in sheep), guinea pig anti-Asterless (Asl, 1:500, [Conduit et al., 2010] but raised in guinea pig). Secondary antibodies conjugated to either Alexa Fluor 488 or Alexa Fluor 568 (Life Technologies) were used 1:1000. Hoechst33258 (Life Technologies) was used to visualise DNA (1:5000). Centrosomes were counted on a Zeiss Axioskop 2 microscope (Zeiss, Oberkochen, Germany). Only brain cells in metaphase were scored that did stain for Asl and Cnn. DNA morphology was used to identify cells at the desired stage of the cell cycle. Furthermore, the assessment of centriole loss was performed blind. Microsoft Excel was used to analyse the data. Images were acquired in Metamorph (molecular devices) using a CoolSNAP HQ camera (Photometrics, Tucson, AZ) and processed using ImageJ/Fiji (www.fiji.sc/Fiji, [Schindelin et al., 2012]), Gimp (www.gimp.org/) and Inkscape (www.inkscape.org/) for figure assembly.\n\n#### Western blot analysis\n\nThe following primary and secondary antibodies were used: Mouse anti-GFP (1:500, Roche, Basel, Switzerland), mouse anti-actin (1:1000, SIGMA, St. Louis, MO), rabbit anti-dCPAP (1:500) (Basto et al., 2006), anti-mouse HRP (1:3000, GE Healthcare) and anti-rabbit HRP (1:3000, GE Healthcare).\n\n#### Live imaging of embryos\n\nEmbryos expressing the different GFP-tagged versions of dCPAP and dSTIL were dechorionated manually and mounted in a Glass Bottom Microwell Dish (MatTek, Ashland, MA) using heptane glue. Embryos were covered with voltalef oil and followed by time-lapse spinning disc microscopy on a Perkin Elmer spinning disc microscope (Perkin Elmer, Waltham, MA). Images were acquired with a charge-coupled Orca ER device camera (Hamamatsu Photonics, Hamamatsu, Japan) using UltraView ERS (Perkin Elmer) and processed and analysed in Velocity (Perkin Elmer).\n\n### C. elegans experiments\n\nC. elegans strains carrying single-copy sas-4 transgenes were generated using MosSCI (Fr\u00f8kj\u00e6r-Jensen et al., 2008). To render the transgenes RNAi-resistant, a 500 bp region at the 5\u2032 end of the sas-4 genomic sequence was re-encoded. The engineered sas-4 sequence was cloned into pCFJ151 with the promoter and 3\u2032 UTR from sas-6, as well as a C-terminal GFP tag. pCFJ151 contains homology arms that direct transposase-mediated insertion of intervening sequence into the ttTi5606 Mos1 site on Chromosome II. Transgene integration was confirmed by PCR of regions spanning each side of the insertion. The genotypes of the strains used are: unc-119(ed9)III; ltSi85[pOD1550; Psas-6::SAS-4 reencoded::GFP; cb-unc-119(+)]II for WT SAS-4; and unc-119(ed9)III; ltSi177[pOD1551; Psas-6::SAS-4(1-556) reencoded::GFP; cb-unc-119(+)]II for SAS-4\u0394TCP.\n\nDouble-stranded sas-4 RNA was generated as described (Oegema et al., 2001) using DNA templates prepared by PCR. For experiments to quantify monopolar spindle formation, L4 hermaphrodites were injected with dsRNA and incubated at 20\u00b0C for 40 hr prior to dissection for imaging. For lethality assays, worms were maintained at 20\u00b0C. L4 hermaphrodites were injected with dsRNA and singled 24 hr post-injection. Adult worms were removed from the plates 48 hr post-injection, and hatched larvae and unhatched embryos were counted 24 hr later.\n\nFor light microscopy to identify monopolar or bipolar second division cells, images were acquired using an inverted Zeiss Axio Observer Z1 system with a Yokogawa spinning-disk confocal head (CSU-X1), a 63X 1.4 NA Plan Apochromat objective, and a QuantEM:512SC EMCCD camera (Photometrics). Adult worms were dissected in M9 buffer, and embryos were mounted onto 2% agarose pads for imaging. 11 \u00d7 1 \u03bcm z-stacks were collected in the GFP channel (100 ms, 20% power, no binning), along with one central DIC section.\n\n#### SAS-4/SAS-5 pull-down experiments\n\nSAS-4 constructs were cloned into a pET21a vector for in vitro transcription/translation. Proteins were expressed using the T7 TNT Quick Coupled Transcription/Translation System (Promega, Fitchburg, WI) with 35S-Met labelling.\n\nSAS-5 fragments were cloned into a pRSET-A vector with a C-terminal 6xHis tag. Proteins were expressed in E. coli Rosetta2(DE3) cells and purified on Ni-NTA agarose (Qiagen) using standard protocols. For pull-down experiments, proteins were dialysed into 25 mM HEPES, 100 mM NaCl, 20 mM imidazole, 1 mM DTT, 10% sucrose, 0.02% Tween-20, pH 7.4.\n\nSAS-5 fragments were pre-incubated with 20 \u03bcl Ni-NTA beads for 45 min at 4\u00b0C. 10 \u03bcl of the SAS-4 IVTT product was added to the beads with 190 \u03bcl buffer and incubated at 4\u00b0C for 30 min. The beads were washed with 3 \u00d7 200 \u03bcl buffer and resuspended in 100 \u03bcl SDS-PAGE sample buffer. Samples were run on 10% SDS-PAGE gels and either stained with Coomassie or dried and exposed to a phosphor screen overnight. Phosphor screens were analysed on a Personal Molecular Imager System (Bio-Rad, Hercules, CA).\n",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "bee641ee-3d98-4aea-9978-8d3f48e83c7d",
+      "submission_id": "635e9e43-f8e7-4561-9c1b-c08e2e93b25c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01071.022](https://doi.org/10.7554/eLife.01071.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCrystal structures of the CPAP/STIL complex reveal its role in centriole assembly and human microcephaly\u201d for consideration at eLife. Your article has been favorably reviewed by an editor and a reviewer. The Senior editor and the other reviewer discussed their comments before we reached this decision, and the Senior editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript by Cottee et al. offers the first structural insights into the link between centrioles and microcephaly, based on detailed experiments ranging from structural biology and bioinformatics to cell biology and in vivo studies. The cornerstone is the identification of the molecular units that interact in centriole assembly. Evidence is presented for the interaction and it is illuminated by atomic structures.\n\nIn this paper the authors provide crystal structures for a central part of the CPAP/STIL protein complex from Drosophila and zebrafish. The CPAP/STIL complex is involved in centriole formation. The structures reveal a 20-strand beta sheet that forms a binding pocket for an extended polyproline motif. From a structural perspective, this is most interesting, since the STIL-interacting domain of CPAP (the TCP domain) forms a single beta sheet that is reminiscent of the structure of amyloid fibrils. The distinction is that amyloid fibrils are formed by strands from multiple protein molecules, whereas here a single protein forms the sheet. Also, in amyloid fibers the sheets pack against each other whereas the CPAP TCP domain forms a single sheet. This structure may well be unprecedented, and the finding is important because it extends our understanding of protein architecture.\n\nThe TCP domain is found to form a novel proline-recognition domain. The authors identified a \u223c40 amino acid region in STIL that is proline rich and conserved. They dissected this region to find that a peptide segment corresponding to the entire region binds with 2\u00b5M affinity to CPAP, but that a shorter segment (411\u2013428) binds with only slightly diminished affinity. This shorter segment was crystallised with the TCP domain, using the zebrafish sequences, and also on its own. Remarkably, the single beta sheet formed by the TCP domain lacks a hydrophobic core, and is stabilised principally by hydrogen bonding. Sequence repeats have been identified previously in the domain and these are shown to form the beta-hairpin repeats in the structure. There are no extensive crystal packing interfaces, and so the structure suggests that the functional unit of TCP is a monomer. This is verified by biophysical data.\n\nThe STIL peptide adopts a PP-II helix conformation and interacts with the TCP domain via conventional interactions, including the packing of proline side-chains from the peptide into hydrophobic surfaces on the TCP domain. Additional conservation in the TCP domain, beyond that required for the interaction with the short crystallised peptide, suggests that the complete interface is more extensive.\n\nThe importance of the crystallographic interface between the TCP domain and the STIL peptide has been verified by mutagenesis and by determining the structure of the equivalent complex from Drosophila, revealing strong structural conservation despite weak sequence similarity. There is extensive analysis of the implications of the structure for centriole formation, using cell-based assays in the Drosophila system.\n\nThe novelty of the structural fold of the TCP domain and the new mechanism revealed for recognition of proline-rich peptides revealed by the structures of the complexes makes this paper suitable for eLife. The paper represents a significant advance, and it is well validated and well described.\n\nMinor comments:\n\n1) In one place the authors call the interaction with the peptide 'unique' and in another 'highly unusual.' It would strengthen the paper to give quantitative evidence for the lack of similarity of this structural element to previously determined structures, and for a brief discussion of any similar structures. At the very least, the authors may wish to give somewhat more prominence to their very unusual structural finding. It is quite rare these days to determine a structure of a soluble protein and really find something new.\n\n2) The paper is very clearly written and can be accepted with very minor changes. One suggestion regarding clarity is that the paper will be of interest to structural biologists who are not familiar with the cell-based assay systems, and so these should be explained better. To start with, the \u201cunc\u201d phenotype is mentioned in the Results with no explanation. Presumably, this is the \u201cuncoordinated phenotype\u201d mentioned in the earlier paragraph, but this should be explained. The use of this phenotype in the cell-based assays needs more explanation. Presumably, a general behavioral phenotype (\u201cuncoordinated\u201d) is being mapped into specific features of the embryonic cells?\n",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "384668a4-1938-42c4-8fbf-e7f724f4d60f",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C1",
+      "claim": "Centrioles organise centrosomes and template cilia and flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Centrioles organise centrosomes and template cilia and flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about centriole function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "ece193bf-8978-4773-b014-7f9e8cfc3f61",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C2",
+      "claim": "Several centriole and centrosome proteins have been linked to microcephaly (MCPH), a neuro-developmental disease associated with small brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "Several centriole and centrosome proteins have been linked to microcephaly (MCPH), a neuro-developmental disease associated with small brain size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by the context of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "e51d5ca9-e469-46fe-b02d-26845d9ea066",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C3",
+      "claim": "CPAP (MCPH6) and STIL (MCPH7) are required for centriole assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "CPAP (MCPH6) and STIL (MCPH7) are required for centriole assembly, but it is unclear how mutations in them lead to microcephaly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited in the introduction and supported by prior research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "d1ea3155-8ce1-4b72-a6bd-0db0adf857a9",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C4",
+      "claim": "The TCP domain of CPAP constitutes a novel proline recognition domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the TCP domain of CPAP constitutes a novel proline recognition domain that forms a 1:1 complex with a short, highly conserved target motif in STIL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by structural and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "9c8fb64c-3c63-4820-ad68-dc53888a255e",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C5",
+      "claim": "The TCP domain of CPAP forms a 1:1 complex with a short, highly conserved target motif in STIL.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the TCP domain of CPAP constitutes a novel proline recognition domain that forms a 1:1 complex with a short, highly conserved target motif in STIL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC measurements showing stoichiometry and crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "ceff3a88-4958-4eac-9ef3-2dccf5517989",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C6",
+      "claim": "Crystal structures of the CPAP-STIL complex reveal an unusual, all-\u03b2 structure adopted by the TCP domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of this complex reveal an unusual, all-\u03b2 structure adopted by the TCP domain and explain how a microcephaly mutation in CPAP compromises complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "4c39ba12-dcbd-411c-9a86-0ba55fca01fe",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C7",
+      "claim": "A microcephaly mutation in CPAP (E1235V) compromises complex formation with STIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of this complex reveal an unusual, all-\u03b2 structure adopted by the TCP domain and explain how a microcephaly mutation in CPAP compromises complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC data showing reduced binding affinity and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "c4b018b6-46d8-491f-bb5e-c87a808d2352",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C8",
+      "claim": "Complex formation between CPAP and STIL is essential for centriole duplication in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Through point mutations, we demonstrate that complex formation is essential for centriole duplication in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through functional rescue experiments in Drosophila.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "181b7fc4-2c97-48c6-9e5a-48ffff73e535",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C9",
+      "claim": "The CPAP\u2013STIL interaction constitutes a conserved key step in centriole biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies provide the first structural insight into how the malfunction of centriole proteins results in human disease and also reveal that the CPAP\u2013STIL interaction constitutes a conserved key step in centriole biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural conservation between zebrafish and Drosophila and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "dbc3cce6-39cd-4414-8492-2e0028f98ee3",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C10",
+      "claim": "All eight identified MCPH genes encode proteins that localise to centrioles and/or centrosomes/spindle poles.",
+      "claim_type": "EXPLICIT",
+      "source": "All eight identified MCPH genes encode proteins that localise to centrioles and/or centrosomes/spindle poles (Thornton and Woods, 2009; Hussain et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "583393b1-ee3a-4296-941e-29f1fb2efc81",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C11",
+      "claim": "Mutations in CPAP (DSas-4 in Drosophila) and STIL (Ana2 in Drosophila) in flies lead to defects in the asymmetric division of larval neural stem/progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this possibility, mutations in the centriolar components CPAP (DSas-4 in Drosophila, here called dCPAP) and STIL (Ana2 in Drosophila, here called dSTIL) in flies lead to defects in the asymmetric division of larval neural stem/progenitor cells (Basto et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "337bad59-7801-427d-9189-549f3706f35b",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C12",
+      "claim": "Mutations in MCPH proteins in mice lead to complex phenotypes that can include, but are not restricted to, microcephaly.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in MCPH proteins in mice, however, lead to complex phenotypes that can include, but are not restricted to, microcephaly (McIntyre et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "00c5cb9c-aa64-43b6-b652-d41f10a6fa7e",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C13",
+      "claim": "The conserved proline-rich region (CR2) in STIL is within residues 231\u2013619 of human STIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast-two-hybrid experiments suggested that a region of human CPAP comprising its conserved C-terminal TCP domain (or G-box) can interact with a \u223c400 amino acid (aa) region (residues 231\u2013619) of human STIL (Tang et al., 2011). To try to identify the region of STIL most likely to be involved in an interaction with CPAP, we carried out a sequence alignment with multiple metazoan STIL proteins (Figure 1A, Figure 1\u2014figure supplement 1). This analysis revealed a short (\u223c40 aa) highly conserved proline-rich region (CR2) (Figure 1A) within this interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis and prior yeast-two-hybrid data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "0368a2c7-f42a-4096-9b78-7fe1da591c94",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C14",
+      "claim": "The TCP domain of D. rerio CPAP binds to D. rerio STIL fragment (residues 404\u2013448) with a KD of approximately 2 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this region of STIL could bind to the CPAP TCP domain, we recombinantly produced the TCP domain of Danio rerio CPAP and used isothermal titration calorimetry (ITC) to test its ability to bind to a fragment of D. rerio STIL that spanned CR2 (residues 404\u2013448) (Figure 1D, Table 1). The two proteins formed a 1:1 complex with a KD of \u223c2 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by ITC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "69a4763b-d7ad-4983-b0da-685e81c59587",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C15",
+      "claim": "The N-terminal region of D. rerio STIL CR2 (residues 411\u2013428) binds to the CPAP TCP domain with a KD of approximately 4 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we further split the peptide to test the binding contribution from its N-terminal (residues 411\u2013428) and C-terminal region (residues 429\u2013448). The N-terminal region exhibited an only slightly weaker binding (KD \u223c4 \u03bcM) to the TCP domain, whereas the C-terminal region showed a very weak binding (KD > 500 \u03bcM) (Figure 1D; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by ITC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "7be193c2-deed-4445-b254-d58ed4024b6a",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C16",
+      "claim": "The C-terminal region of D. rerio STIL CR2 (residues 429\u2013448) binds to the CPAP TCP domain with a KD greater than 500 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we further split the peptide to test the binding contribution from its N-terminal (residues 411\u2013428) and C-terminal region (residues 429\u2013448). The N-terminal region exhibited an only slightly weaker binding (KD \u223c4 \u03bcM) to the TCP domain, whereas the C-terminal region showed a very weak binding (KD > 500 \u03bcM) (Figure 1D; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by ITC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "691a1dee-a27a-4b6b-84e7-bc63916b3cde",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C17",
+      "claim": "The majority of the binding affinity between CPAP and STIL comes from interactions with residues within the first proline-rich region in CR2.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the CPAP TCP domain binds to a short conserved motif in STIL (CR2) with a potentially biologically significant affinity, and that the majority of the binding affinity comes from interactions with residues within the first proline-rich region in CR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ITC data comparing N-terminal and C-terminal fragments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "03c6de26-fc9c-45d0-b650-21e3f8616e85",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C18",
+      "claim": "The TCP domain of CPAP folds into a single layer \u03b2-sheet comprising approximately 20 consecutive antiparallel strands.",
+      "claim_type": "EXPLICIT",
+      "source": "The TCP domain folds into a single layer \u03b2-sheet comprising \u223c20 consecutive antiparallel strands connected by type I \u03b2-turns and is stabilised by an extensive hydrogen-bonding network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "3248c554-9f9c-45be-870b-645865835b7c",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C19",
+      "claim": "The TCP domain \u03b2-sheet shows a twist of approximately 13 degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting sheet shows a twist of approximately 13\u00b0 (i.e., the angle between the consecutive, hydrogen-bonded strands), slightly lower than the average value of 20\u00b0 observed for typical \u03b2-sheets (Chothia, 1973; Murzin, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the crystal structure and compared to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "27501f39-e08e-4bd4-9c67-fb45070ac297",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C20",
+      "claim": "The TCP domain is predominantly monomeric in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal packing interactions involve only small protein interfaces, suggesting that the protein is biologically active as a monomer. Indeed both small-angle X-ray scattering (SAXS) and size-exclusion chromatography\u2014multi angle light scattering (SEC-MALS) experiments demonstrate that the TCP domain is predominantly monomeric in solution (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SAXS and SEC-MALS data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "ce345e83-38e5-4630-aa2e-ab3cd95dbc45",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C21",
+      "claim": "The STIL peptide binds in a polyproline II helical conformation along one edge of the TCP domain \u03b2-sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the CPAP\u2013STIL complex revealed that the STIL peptide binds in a polyproline II helical conformation along one edge of the TCP domain \u03b2-sheet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure of the complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "11c8563e-fc2d-4f81-a172-9aafd5193b47",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C22",
+      "claim": "Three STIL prolines (P417, P421, and P423) pack against aromatic CPAP residues (F978, Y996, and F1015).",
+      "claim_type": "EXPLICIT",
+      "source": "The STIL peptide binds to CPAP by four main mechanisms (Figure 1C). First, three STIL prolines (P417, P421, and P423) pack against aromatic CPAP residues (F978, Y996, and F1015) in a way that resembles target motif recognition by other described proline-rich motif (PRM) binding domains (Kay et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "2036ba06-00d3-4654-9f90-d61260051abd",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C23",
+      "claim": "STIL R418 makes a cation-\u03c0 interaction with the phenyl ring of CPAP Y994.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, R418 (STIL) makes a cation-\u03c0 interaction with the phenyl ring of Y994 (CPAP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "dd01a87a-a388-49ce-ba87-b609bb6dab8a",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C24",
+      "claim": "STIL R418 is involved in a water-mediated hydrogen bonding network that includes CPAP residues H1003 and T1005.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, STIL R418 is further involved in a water-mediated hydrogen bonding network that includes CPAP residues H1003 and T1005.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "a241a8ee-b05f-43ab-8dae-f9f8a35c1000",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C25",
+      "claim": "Sidechain\u2013mainchain interactions are formed between CPAP residues Y994, Q1019, and E1021 and the bound STIL peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, sidechain\u2013mainchain interactions are formed between CPAP residues Y994, Q1019, and E1021 and the bound STIL peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "53503a88-f293-4449-9120-1fc3f0da02cf",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C26",
+      "claim": "The CPAP and STIL residues involved in the interaction are highly conserved across metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "The CPAP and STIL residues involved in this interaction are highly conserved across metazoans (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by conservation analysis in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "8d3c90a3-3587-4f9c-be30-5779ba02c7a4",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C27",
+      "claim": "The structure of the wild-type and the E1021V mutant TCP domain are virtually identical (RMSD = 0.1 \u00c5 over 142 C\u03b1 pairs).",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this mutation disrupts the organisation of the TCP domain, we obtained the crystal structure of D. rerio CPAP937\u20131124 carrying the E1021V mutation (Figure 1F; Table 2). The structure of the wild-type and the mutant TCP domain were virtually identical (RMSD = 0.1 \u00c5 over 142 C\u03b1 pairs) demonstrating that the TCP domain structure was not compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from comparing the two crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "9fd01516-ce34-4d31-bc93-c7a131796fc3",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C28",
+      "claim": "The E1021V mutation in D. rerio CPAP decreases binding strength to STIL by approximately eightfold.",
+      "claim_type": "EXPLICIT",
+      "source": "ITC experiments with WT D. rerio STIL404\u2013448 showed that the mutation of residues F978, Y994, and F1015 decreased the binding strength by \u223c20 to 40-fold (Figure 2A, left; Table 4), while mutation of E1021 decreased the binding strength by approximately eightfold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ITC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "e8b029e4-0f36-4b3b-b5d2-3df85f71b982",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C29",
+      "claim": "Mutation of CPAP residues F978, Y994, and F1015 to valine decreases binding strength to STIL by approximately 20 to 40-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "ITC experiments with WT D. rerio STIL404\u2013448 showed that the mutation of residues F978, Y994, and F1015 decreased the binding strength by \u223c20 to 40-fold (Figure 2A, left; Table 4), while mutation of E1021 decreased the binding strength by approximately eightfold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ITC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "5a61e036-af98-415e-9a04-31b02b1f389d",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C30",
+      "claim": "Mutation of CPAP T986 does not detectably perturb binding to STIL.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mutation of T986, which is not predicted to be in the interaction interface, did not detectably perturb binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ITC experiments and serves as a negative control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "fd99febb-f30b-48b2-b49b-ee9e8338b3a0",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C31",
+      "claim": "Alanine substitution of STIL P417, R418 or P421 decreases binding strength to CPAP by approximately 10 to 20-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "We also purified mutant forms of the D. rerio STIL404\u2013448 peptide and tested their ability to interact with the WT D. rerio TCP domain in ITC experiments (Figure 2A, right, Figure 2\u2014figure supplement 1C; Table 4). Alanine substitution of P417, R418 or P421 decreased the binding strength by \u223c10 to 20-fold and alanine substitution of P423 by approximately twofold to threefold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ITC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "b231a01e-e421-4fff-8348-d9ad5897f719",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C32",
+      "claim": "Alanine substitution of STIL P423 decreases binding strength to CPAP by approximately twofold to threefold.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitution of P417, R418 or P421 decreased the binding strength by \u223c10 to 20-fold and alanine substitution of P423 by approximately twofold to threefold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ITC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "cf8377e7-5cf2-48e7-9f06-d704dd80ebab",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C33",
+      "claim": "Mutation of STIL residue N422 does not compromise binding to CPAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the mutation of residue N422, which is not predicted to be in the interaction interface, did not compromise binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ITC experiments and serves as a negative control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "5704287e-35a0-4f8a-8593-d9a5192a8e4d",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C34",
+      "claim": "The dSTIL\u2013dCPAP interaction interface is highly similar to the D. rerio complex (average pairwise RMSD of 1.2 \u00b1 0.2 \u00c5 across an average of 118 \u00b1 4 C\u03b1 pairs).",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we solved the crystal structure of the TCP domain from Drosophila melanogaster DSas-4 (dCPAP) (residues 700\u2013901) in complex with the region of Ana2 (dSTIL) equivalent to CR2 (residues 1\u201347) (Table 2, Table 5, Table 6; Figure 2C). The dSTIL\u2013dCPAP interaction interface in this structure was highly similar to the D. rerio complex (inter-species alignments of the structures yielded an average pairwise RMSD of 1.2 \u00b1 0.2 \u00c5 across an average of 118 \u00b1 4 C\u03b1 pairs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from structural alignment of the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "9085d8a8-65f8-454d-92a4-c9497325cc41",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C35",
+      "claim": "A consensus CPAP binding motif in metazoan STIL proteins is PRxxPxP.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data allow us to determine a consensus CPAP binding motif in metazoan STIL proteins (PRxxPxP, Figure 1\u2014figure supplement 1) and suggest that the described CPAP\u2013STIL interaction constitutes a highly conserved step in centriole biogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from sequence alignment and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "bc8e7b0e-e6ef-4f5c-ab28-fccbbe1a67ae",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C36",
+      "claim": "Wild-type dSTIL-GFP rescues the unc phenotype of the dSTIL mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Both proteins were expressed at similar levels and localised strongly to centrosomes in the presence of endogenous dSTIL (Figure 3B,C; Figure 3\u2014figure supplement 1). Only the wild-type version, however, was able to rescue the unc phenotype and the centriole loss phenotype of the dSTIL mutant (Figure 3N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by functional rescue experiments in Drosophila.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "9cf8b9ef-9162-4904-8288-107ed7e24633",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C37",
+      "claim": "dSTIL lacking the first 45 amino acids (including the PRxxPxP motif) fails to rescue the unc phenotype of the dSTIL mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We first expressed a version of dSTIL that lacks the first 45 aa (including the PRxxPxP motif required for the interaction with dCPAP). GFP-tagged wild-type dSTIL (dSTIL_WT-GFP) served as a control. Both proteins were expressed at similar levels and localised strongly to centrosomes in the presence of endogenous dSTIL (Figure 3B,C; Figure 3\u2014figure supplement 1). Only the wild-type version, however, was able to rescue the unc phenotype and the centriole loss phenotype of the dSTIL mutant (Figure 3N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by functional rescue experiments in Drosophila.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "18fb05d0-173a-4805-84dd-f0f10d4d03b5",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C38",
+      "claim": "The dSTIL P11A:R12A double mutant fails to rescue the unc phenotype of the dSTIL mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "All three constructs strongly localised to centrosomes in the presence of endogenous dSTIL (Figure 3D\u2013F, Figure 3\u2014figure supplement 1). Both single mutants rescued the unc phenotype of the dSTIL mutation while the double mutant failed to do so (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by functional rescue experiments in Drosophila.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "8ed02389-3b74-4b9e-b775-51a2127227e8",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C39",
+      "claim": "The dSTIL single mutants P11A and R12A partially rescue the centriole loss phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The single mutants P11A and R12A were also able to partially rescue the centriole loss phenotype, whereas the double mutant P11A:R12A showed only a poor rescue (Figure 3N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by quantification of centrosome numbers in larval brain cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "023275b9-42f7-4d65-a2fc-30e566eca857",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C40",
+      "claim": "The dSTIL P11A:R12A double mutant shows only a poor rescue of the centriole loss phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The single mutants P11A and R12A were also able to partially rescue the centriole loss phenotype, whereas the double mutant P11A:R12A showed only a poor rescue (Figure 3N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by quantification of centrosome numbers in larval brain cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "190cde90-36d8-467a-b561-b787d73c5949",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C41",
+      "claim": "The interaction between dCPAP and dSTIL is essential for dSTIL function in centriole assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly suggest that the interaction with dCPAP is essential for dSTIL function in centriole assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue experiments with mutant constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "c5fb13dc-a4e1-4a59-b6b2-2e282a4435d8",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C42",
+      "claim": "Wild-type dCPAP-GFP rescues both the unc phenotype and the centriole loss phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type dCPAP-GFP localised strongly to centrosomes and rescued both the unc phenotype and the centriole loss phenotype (Figure 3G,N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by functional rescue experiments in Drosophila.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "e5f52f39-c25d-41d7-b528-028c14ce14d6",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C43",
+      "claim": "dCPAP_\u0394C-GFP fails to rescue the centriole loss phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the rescuing ability of the mutant constructs strongly correlated with the predicted strength of dSTIL binding. dCPAP_\u0394C-GFP failed to rescue, dCPAP-MC1 and dCPAP-MC2 rescued poorly, the MCPH mutation E792V showed an intermediate phenotype, while dCPAP-MC3 exhibited a robust rescue (Figure 3N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by quantification of centrosome numbers in larval brain cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "07b50c31-ca79-4e6d-80d4-ca7b1747f700",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C44",
+      "claim": "dCPAP-MC1 and dCPAP-MC2 rescue the centriole loss phenotype poorly.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the rescuing ability of the mutant constructs strongly correlated with the predicted strength of dSTIL binding. dCPAP_\u0394C-GFP failed to rescue, dCPAP-MC1 and dCPAP-MC2 rescued poorly, the MCPH mutation E792V showed an intermediate phenotype, while dCPAP-MC3 exhibited a robust rescue (Figure 3N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by quantification of centrosome numbers in larval brain cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "ba00063a-2fb2-4c54-8750-ab4880f0efbe",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C45",
+      "claim": "The dCPAP MCPH mutation E792V shows an intermediate rescue phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the rescuing ability of the mutant constructs strongly correlated with the predicted strength of dSTIL binding. dCPAP_\u0394C-GFP failed to rescue, dCPAP-MC1 and dCPAP-MC2 rescued poorly, the MCPH mutation E792V showed an intermediate phenotype, while dCPAP-MC3 exhibited a robust rescue (Figure 3N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by quantification of centrosome numbers in larval brain cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "fa83e18d-bfd1-462f-af21-f4b0b7e7f1e5",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C46",
+      "claim": "dCPAP-MC3 exhibits a robust rescue of the centriole loss phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the rescuing ability of the mutant constructs strongly correlated with the predicted strength of dSTIL binding. dCPAP_\u0394C-GFP failed to rescue, dCPAP-MC1 and dCPAP-MC2 rescued poorly, the MCPH mutation E792V showed an intermediate phenotype, while dCPAP-MC3 exhibited a robust rescue (Figure 3N; Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by quantification of centrosome numbers in larval brain cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "36b39c05-ad9e-435a-8550-97695c34ff29",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C48",
+      "claim": "Low total levels of dCPAP at centrosomes might be sufficient for centriole duplication, as long as some interaction with dSTIL is maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the interaction between dCPAP and dSTIL is a key step in centriole assembly and is essential for centriole duplication. Furthermore, they indicate that low total levels of dCPAP at centrosomes might be sufficient for centriole duplication, as long as some interaction with dSTIL is maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that MC3 rescues well despite weak localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "ed42ef65-1598-4440-8274-d483b252022d",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C49",
+      "claim": "The SAS-4 TCP domain is required for SAS-4 to accumulate at centrioles.",
+      "claim_type": "EXPLICIT",
+      "source": "While SAS-4WT::GFP targeted to centrioles in the absence of the endogenous protein, SAS-4\u0394TCP::GFP did not, and instead exhibited a diffuse accumulation in the pericentriolar material (Figure 4B). Thus, the SAS-4 TCP domain is required for SAS-4 to accumulate at centrioles and become incorporated into the microtubule-containing outer centriole wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by rescue experiments in C. elegans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "c3b92fd4-64cb-414f-93a0-1782c4687792",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C50",
+      "claim": "The SAS-4 TCP domain is required for SAS-4 to become incorporated into the microtubule-containing outer centriole wall.",
+      "claim_type": "EXPLICIT",
+      "source": "While SAS-4WT::GFP targeted to centrioles in the absence of the endogenous protein, SAS-4\u0394TCP::GFP did not, and instead exhibited a diffuse accumulation in the pericentriolar material (Figure 4B). Thus, the SAS-4 TCP domain is required for SAS-4 to accumulate at centrioles and become incorporated into the microtubule-containing outer centriole wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by rescue experiments in C. elegans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "c099ad0b-99ff-42be-bd26-bbdd31ed6f2c",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C51",
+      "claim": "Full-length SAS-4 interacts specifically with the N-terminal domain (aa 1\u2013202) of SAS-5.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if the failure of SAS-4\u0394TCP::GFP to become incorporated in the centriole outer wall could be due to an inability to interact with SAS-5, we performed a pull-down assay to determine whether 35S-labelled in vitro translated SAS-4 fragments could interact with the N-terminal or C-terminal regions of SAS-5 bound to beads (Figure 4D). In vitro translated full-length SAS-4 interacted specifically with the N-terminal domain (aa 1\u2013202) of SAS-5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pull-down experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "095bd956-579e-48e2-9d64-90a83c326800",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C52",
+      "claim": "Neither the SAS-4 N-terminal nor C-terminal region (which includes the TCP domain) alone can be pulled down by SAS-5.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we could not further narrow down the region of SAS-4 required for this interaction. Neither the SAS-4 N-terminal nor C-terminal region (which includes the TCP domain) alone could be pulled down by SAS-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by pull-down experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "a4779339-70f5-4845-9b7b-56f0395531ff",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C53",
+      "claim": "The TCP domain is required but not sufficient for SAS-4 to interact with SAS-5.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that although the TCP domain is required for SAS-4 to interact with SAS-5, it is not sufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pull-down experiments showing that neither fragment alone binds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "c7f72c26-dcd9-4f6c-9220-72057b282cfb",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C54",
+      "claim": "A TCP domain-dependent interaction between SAS-4/CPAP and SAS-5/STIL is conserved and essential for centriole duplication in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that a TCP domain-dependent interaction between SAS-4/CPAP and SAS-5/STIL is conserved and essential for centriole duplication in C. elegans, but that the precise interaction interface may have diverged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional and biochemical data in C. elegans.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "88975955-44b5-455a-ab48-bf147d634552",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C55",
+      "claim": "The precise interaction interface between SAS-4 and SAS-5 may have diverged from other metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that a TCP domain-dependent interaction between SAS-4/CPAP and SAS-5/STIL is conserved and essential for centriole duplication in C. elegans, but that the precise interaction interface may have diverged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability to identify a PRxxPxP motif in worm SAS-5 and the requirement for both N- and C-terminal regions of SAS-4 for binding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "4a8785f0-bf68-4944-9afc-09eb55fd56be",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C56",
+      "claim": "The TCP domain structure represents an unusual, novel architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the TCP domain represents an unusual, novel architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis and comparison to known protein structures.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "0bd595ed-b732-4909-a5e5-c964a10a50b4",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C57",
+      "claim": "The TCP domain structure lacks a defined hydrophobic core typical for globular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The TCP domain structure lacks a defined hydrophobic core typical for globular domains, and both sides of its \u03b2-sheet are exposed to the solvent and well hydrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "708600a0-1244-406b-a68b-a20cd0e24b38",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C58",
+      "claim": "Both sides of the TCP domain \u03b2-sheet are exposed to the solvent and well hydrated.",
+      "claim_type": "EXPLICIT",
+      "source": "The TCP domain structure lacks a defined hydrophobic core typical for globular domains, and both sides of its \u03b2-sheet are exposed to the solvent and well hydrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "949cef93-53d2-4fcf-9a30-2195114389da",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C59",
+      "claim": "The overall sequence identity of the CPAP and STIL proteins between Drosophila and zebrafish is relatively low (approximately 22% and approximately 13%, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall sequence identity of the CPAP and STIL proteins between Drosophila and zebrafish is relatively low (\u223c22% and \u223c13%, respectively), our structural analysis revealed that the interaction interface is conserved, confirming the previous proposal that fly Ana2 is the functional homologue of vertebrate STIL (Stevens et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined by sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "7a51a240-a15a-40cd-b7b1-dceaebbb252e",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C60",
+      "claim": "The interaction interface between CPAP and STIL is conserved between Drosophila and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall sequence identity of the CPAP and STIL proteins between Drosophila and zebrafish is relatively low (\u223c22% and \u223c13%, respectively), our structural analysis revealed that the interaction interface is conserved, confirming the previous proposal that fly Ana2 is the functional homologue of vertebrate STIL (Stevens et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by structural comparison of the complexes from both species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "bbb98c03-b7e3-4beb-a7fd-cc644f7debcb",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C61",
+      "claim": "Fly Ana2 is the functional homologue of vertebrate STIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall sequence identity of the CPAP and STIL proteins between Drosophila and zebrafish is relatively low (\u223c22% and \u223c13%, respectively), our structural analysis revealed that the interaction interface is conserved, confirming the previous proposal that fly Ana2 is the functional homologue of vertebrate STIL (Stevens et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by structural conservation and supported by prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "346b4b63-2d95-4eaf-aa72-72f71f6d6718",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C62",
+      "claim": "There is a remarkable correlation between the ability of mutant proteins to bind to one another in vitro and their ability to support centriole assembly in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mutational analysis of the interface demonstrates a remarkable correlation between the ability of mutant proteins to bind to one another in vitro and their ability to support centriole assembly in vivo, providing compelling support for our structural model of the metazoan CPAP\u2013STIL complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing ITC binding data with functional rescue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "504387fb-884e-4ac9-b71c-9b7fb70c1f48",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C63",
+      "claim": "E1235 in human CPAP is one of several residues involved in the binding interface with STIL, making an important sidechain\u2013mainchain contact.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures we report here reveal that E1235 is one of the several residues involved in the binding interface with STIL, making an important sidechain\u2013mainchain contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure and inferred from the zebrafish structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "c4c07565-4149-4cdb-9040-39c8128c293a",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C64",
+      "claim": "The E1235V mutation can compromise complex formation between CPAP and STIL.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural model explains how the E1235V mutation can compromise complex formation, and we have confirmed that this is the case with zebrafish proteins in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by ITC experiments with the equivalent mutation in zebrafish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "65f472e4-e759-4b03-8f45-c416082a0e68",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C65",
+      "claim": "The equivalent E792V mutation in fly dCPAP leads to inefficient centriole assembly, but this process is not abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the equivalent mutation in flies leads to inefficient centriole assembly, but this process is not abolished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by rescue experiments in Drosophila showing intermediate phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "0b01e1b2-fe87-420b-b5e9-5afbd2c9d2a2",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "claim_id": "C66",
+      "claim": "It is a partial failure in centriole assembly that is the primary cause of microcephaly in patients with the E1235V mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data strongly suggest that it is a partial failure in centriole assembly that is the primary cause of microcephaly in these patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and functional data showing partial loss of function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04e7f019-f3af-4e2b-bd1d-a6551772b86a",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Centrioles organize centrosomes and template cilia/flagella, and several centriole proteins including CPAP and STIL are linked to microcephaly, though the mechanism is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 represent established background knowledge supported by citations and general understanding in the field. These provide context for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The TCP domain of CPAP adopts a novel all-\u03b2 structure consisting of ~20 antiparallel \u03b2-strands forming a single-layer \u03b2-sheet that binds STIL in a 1:1 complex. The STIL peptide binds in a polyproline II helix along one edge through proline-aromatic interactions, cation-\u03c0 interactions, and hydrogen bonding networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C18-C26, and C56-C58 are strongly supported by crystal structure data (Tables 2-3), ITC measurements (Table 1, Figure 1D), SAXS/SEC-MALS data (Figure 1\u2014figure supplement 3), and detailed structural analysis. The structural characterization is comprehensive and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "588ea932-c801-40a9-9080-98fb742d4cd1",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The conserved proline-rich region CR2 in STIL (residues 404-448 in D. rerio) binds the CPAP TCP domain with KD ~2 \u03bcM, with the majority of binding affinity coming from the N-terminal region (residues 411-428, KD ~4 \u03bcM) rather than the C-terminal region (KD >500 \u03bcM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 are directly supported by ITC measurements (Figure 1D, Table 1) and sequence alignment analysis (Figure 1A, Figure 1\u2014figure supplement 1). The binding affinities are quantitatively measured with appropriate replicates and error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "a231d3a7-e8e3-4946-8fba-09dd92087120",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The microcephaly mutation E1021V (equivalent to human E1235V) does not disrupt TCP domain structure but reduces STIL binding affinity ~8-fold. Mutations of key interface residues (F978, Y994, F1015 in CPAP; P417, R418, P421 in STIL) reduce binding 10-40 fold, while control mutations show no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 and C7 are supported by crystal structure comparison (RMSD 0.1 \u00c5, Table 2), ITC measurements with multiple mutants (Figure 2A, Table 4), and CD spectroscopy confirming proper folding (Figure 2\u2014figure supplement 1). The mutational analysis systematically validates the structural model with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "cc8961d7-eb0c-4fa4-ab36-520f2ca8e57d",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The CPAP-STIL interaction interface is highly conserved between zebrafish and Drosophila (RMSD 1.2\u00b10.2 \u00c5) despite low overall sequence identity (~22% CPAP, ~13% STIL), defining a consensus PRxxPxP binding motif and confirming Ana2 as the functional STIL homolog.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 and C59-C61 are supported by crystal structures from both species (Tables 2, 5-6), structural alignment data, sequence conservation analysis (Figure 1\u2014figure supplement 1), and prior literature. The cross-species validation strengthens the biological significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "465ee6a5-5458-43a1-8d4a-27d5dec6a30d",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In Drosophila, wild-type dSTIL rescues the unc and centriole loss phenotypes, while deletion of the PRxxPxP motif or the P11A:R12A double mutant fails to rescue. Single mutants P11A and R12A show partial rescue, demonstrating that CPAP-STIL interaction is essential for centriole assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 are supported by functional rescue experiments in Drosophila with quantitative phenotype analysis (Figure 3, Table 7). The correlation between binding affinity and rescue ability is systematic, though the experiments were performed in the presence of endogenous protein which may complicate interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "450a085a-1af7-43b9-b536-09931ca01dc6",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In Drosophila, dCPAP rescue ability correlates with predicted STIL binding strength: \u0394C fails, MC1/MC2 rescue poorly, E792V shows intermediate rescue, and MC3 shows robust rescue despite weak centrosomal localization, suggesting low dCPAP levels suffice if STIL interaction is maintained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 and C48 are supported by systematic rescue experiments (Figure 3, Table 7) showing correlation between in vitro binding and in vivo function. However, C48 is somewhat speculative as the mechanism explaining MC3's robust rescue despite weak localization is not directly tested. The observation is intriguing but the interpretation requires caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "4f58cd7f-41c3-4bc0-aeb1-676ef3ac8d15",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In C. elegans, the SAS-4 TCP domain is required for centriole localization and assembly. Full-length SAS-4 binds SAS-5 N-terminus, but neither N- nor C-terminal fragments alone bind, suggesting the TCP domain is necessary but not sufficient and the precise interface may have diverged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 are supported by rescue experiments (Figure 4B-C) and pull-down assays (Figure 4D). The inability to identify a PRxxPxP motif in worm SAS-5 and requirement for both SAS-4 regions suggest evolutionary divergence. However, the mechanistic details remain incomplete compared to the zebrafish/Drosophila systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "38a34831-3f1c-4e9a-9c3a-5dcc189f90ca",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There is a remarkable correlation between mutant protein binding affinity in vitro (measured by ITC) and ability to support centriole assembly in vivo (measured by rescue experiments).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by comparing ITC data (Tables 1, 4) with functional rescue data (Table 7, Figure 3N). The correlation is qualitatively strong across multiple mutants in both CPAP and STIL, providing compelling validation of the structural model's biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "fa07e33e-e2c1-4bed-bee3-b9231500120a",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The E1235V microcephaly mutation in human CPAP makes an important sidechain-mainchain contact with STIL. This mutation compromises complex formation (confirmed in zebrafish), leads to inefficient but not abolished centriole assembly in flies, suggesting partial loss of function is the primary cause of microcephaly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C65 are supported by structural data and functional experiments in model organisms. However, C66 is speculative as it extrapolates from zebrafish/fly data to human disease mechanism without direct evidence in human cells or patients. The inference is reasonable but represents a hypothesis rather than a demonstrated result. Additional validation in human systems would be needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "a2f26128-1480-4f4c-863b-de9d4b41a3e5",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The CPAP-STIL interaction is essential for centriole duplication in vivo and constitutes a conserved key step in centriole biogenesis across metazoans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are supported by the combination of structural conservation data (C34, C60), functional rescue experiments in Drosophila (C36-C46) and C. elegans (C49-C54), and the correlation between binding and function (C62). The evidence spans multiple model organisms and experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    },
+    {
+      "id": "6ef4d300-6d7a-413b-a2d3-5fedb8ac1cee",
+      "content_id": "abce7b77-3453-4871-8302-cb11f736c328",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "All eight MCPH genes encode centrosomal proteins, and mutations in CPAP/STIL cause defects in asymmetric neural progenitor division in flies, while mouse mutations show complex phenotypes including but not limited to microcephaly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 represent established knowledge from prior literature, supported by appropriate citations. These provide important context but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:40:12.564309Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "384668a4-1938-42c4-8fbf-e7f724f4d60f",
+      "result_id": "04e7f019-f3af-4e2b-bd1d-a6551772b86a"
+    },
+    {
+      "claim_id": "ece193bf-8978-4773-b014-7f9e8cfc3f61",
+      "result_id": "04e7f019-f3af-4e2b-bd1d-a6551772b86a"
+    },
+    {
+      "claim_id": "e51d5ca9-e469-46fe-b02d-26845d9ea066",
+      "result_id": "04e7f019-f3af-4e2b-bd1d-a6551772b86a"
+    },
+    {
+      "claim_id": "d1ea3155-8ce1-4b72-a6bd-0db0adf857a9",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "9c8fb64c-3c63-4820-ad68-dc53888a255e",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "ceff3a88-4958-4eac-9ef3-2dccf5517989",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "03c6de26-fc9c-45d0-b650-21e3f8616e85",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "3248c554-9f9c-45be-870b-645865835b7c",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "27501f39-e08e-4bd4-9c67-fb45070ac297",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "ce345e83-38e5-4630-aa2e-ab3cd95dbc45",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "11c8563e-fc2d-4f81-a172-9aafd5193b47",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "2036ba06-00d3-4654-9f90-d61260051abd",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "dd01a87a-a388-49ce-ba87-b609bb6dab8a",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "a241a8ee-b05f-43ab-8dae-f9f8a35c1000",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "53503a88-f293-4449-9120-1fc3f0da02cf",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "4a8785f0-bf68-4944-9afc-09eb55fd56be",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "0bd595ed-b732-4909-a5e5-c964a10a50b4",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "708600a0-1244-406b-a68b-a20cd0e24b38",
+      "result_id": "aebdccbc-695c-4ada-bf1d-ee9f9e2a37b0"
+    },
+    {
+      "claim_id": "00c5cb9c-aa64-43b6-b652-d41f10a6fa7e",
+      "result_id": "588ea932-c801-40a9-9080-98fb742d4cd1"
+    },
+    {
+      "claim_id": "0368a2c7-f42a-4096-9b78-7fe1da591c94",
+      "result_id": "588ea932-c801-40a9-9080-98fb742d4cd1"
+    },
+    {
+      "claim_id": "69a4763b-d7ad-4983-b0da-685e81c59587",
+      "result_id": "588ea932-c801-40a9-9080-98fb742d4cd1"
+    },
+    {
+      "claim_id": "7be193c2-deed-4445-b254-d58ed4024b6a",
+      "result_id": "588ea932-c801-40a9-9080-98fb742d4cd1"
+    },
+    {
+      "claim_id": "691a1dee-a27a-4b6b-84e7-bc63916b3cde",
+      "result_id": "588ea932-c801-40a9-9080-98fb742d4cd1"
+    },
+    {
+      "claim_id": "8d3c90a3-3587-4f9c-be30-5779ba02c7a4",
+      "result_id": "a231d3a7-e8e3-4946-8fba-09dd92087120"
+    },
+    {
+      "claim_id": "9fd01516-ce34-4d31-bc93-c7a131796fc3",
+      "result_id": "a231d3a7-e8e3-4946-8fba-09dd92087120"
+    },
+    {
+      "claim_id": "e8b029e4-0f36-4b3b-b5d2-3df85f71b982",
+      "result_id": "a231d3a7-e8e3-4946-8fba-09dd92087120"
+    },
+    {
+      "claim_id": "5a61e036-af98-415e-9a04-31b02b1f389d",
+      "result_id": "a231d3a7-e8e3-4946-8fba-09dd92087120"
+    },
+    {
+      "claim_id": "fd99febb-f30b-48b2-b49b-ee9e8338b3a0",
+      "result_id": "a231d3a7-e8e3-4946-8fba-09dd92087120"
+    },
+    {
+      "claim_id": "b231a01e-e421-4fff-8348-d9ad5897f719",
+      "result_id": "a231d3a7-e8e3-4946-8fba-09dd92087120"
+    },
+    {
+      "claim_id": "cf8377e7-5cf2-48e7-9f06-d704dd80ebab",
+      "result_id": "a231d3a7-e8e3-4946-8fba-09dd92087120"
+    },
+    {
+      "claim_id": "4c39ba12-dcbd-411c-9a86-0ba55fca01fe",
+      "result_id": "a231d3a7-e8e3-4946-8fba-09dd92087120"
+    },
+    {
+      "claim_id": "5704287e-35a0-4f8a-8593-d9a5192a8e4d",
+      "result_id": "cc8961d7-eb0c-4fa4-ab36-520f2ca8e57d"
+    },
+    {
+      "claim_id": "9085d8a8-65f8-454d-92a4-c9497325cc41",
+      "result_id": "cc8961d7-eb0c-4fa4-ab36-520f2ca8e57d"
+    },
+    {
+      "claim_id": "949cef93-53d2-4fcf-9a30-2195114389da",
+      "result_id": "cc8961d7-eb0c-4fa4-ab36-520f2ca8e57d"
+    },
+    {
+      "claim_id": "7a51a240-a15a-40cd-b7b1-dceaebbb252e",
+      "result_id": "cc8961d7-eb0c-4fa4-ab36-520f2ca8e57d"
+    },
+    {
+      "claim_id": "bbb98c03-b7e3-4beb-a7fd-cc644f7debcb",
+      "result_id": "cc8961d7-eb0c-4fa4-ab36-520f2ca8e57d"
+    },
+    {
+      "claim_id": "bc8e7b0e-e6ef-4f5c-ab28-fccbbe1a67ae",
+      "result_id": "465ee6a5-5458-43a1-8d4a-27d5dec6a30d"
+    },
+    {
+      "claim_id": "9cf8b9ef-9162-4904-8288-107ed7e24633",
+      "result_id": "465ee6a5-5458-43a1-8d4a-27d5dec6a30d"
+    },
+    {
+      "claim_id": "18fb05d0-173a-4805-84dd-f0f10d4d03b5",
+      "result_id": "465ee6a5-5458-43a1-8d4a-27d5dec6a30d"
+    },
+    {
+      "claim_id": "8ed02389-3b74-4b9e-b775-51a2127227e8",
+      "result_id": "465ee6a5-5458-43a1-8d4a-27d5dec6a30d"
+    },
+    {
+      "claim_id": "023275b9-42f7-4d65-a2fc-30e566eca857",
+      "result_id": "465ee6a5-5458-43a1-8d4a-27d5dec6a30d"
+    },
+    {
+      "claim_id": "190cde90-36d8-467a-b561-b787d73c5949",
+      "result_id": "465ee6a5-5458-43a1-8d4a-27d5dec6a30d"
+    },
+    {
+      "claim_id": "c5fb13dc-a4e1-4a59-b6b2-2e282a4435d8",
+      "result_id": "450a085a-1af7-43b9-b536-09931ca01dc6"
+    },
+    {
+      "claim_id": "e5f52f39-c25d-41d7-b528-028c14ce14d6",
+      "result_id": "450a085a-1af7-43b9-b536-09931ca01dc6"
+    },
+    {
+      "claim_id": "07b50c31-ca79-4e6d-80d4-ca7b1747f700",
+      "result_id": "450a085a-1af7-43b9-b536-09931ca01dc6"
+    },
+    {
+      "claim_id": "ba00063a-2fb2-4c54-8750-ab4880f0efbe",
+      "result_id": "450a085a-1af7-43b9-b536-09931ca01dc6"
+    },
+    {
+      "claim_id": "fa83e18d-bfd1-462f-af21-f4b0b7e7f1e5",
+      "result_id": "450a085a-1af7-43b9-b536-09931ca01dc6"
+    },
+    {
+      "claim_id": "36b39c05-ad9e-435a-8550-97695c34ff29",
+      "result_id": "450a085a-1af7-43b9-b536-09931ca01dc6"
+    },
+    {
+      "claim_id": "ed42ef65-1598-4440-8274-d483b252022d",
+      "result_id": "4f58cd7f-41c3-4bc0-aeb1-676ef3ac8d15"
+    },
+    {
+      "claim_id": "c3b92fd4-64cb-414f-93a0-1782c4687792",
+      "result_id": "4f58cd7f-41c3-4bc0-aeb1-676ef3ac8d15"
+    },
+    {
+      "claim_id": "c099ad0b-99ff-42be-bd26-bbdd31ed6f2c",
+      "result_id": "4f58cd7f-41c3-4bc0-aeb1-676ef3ac8d15"
+    },
+    {
+      "claim_id": "095bd956-579e-48e2-9d64-90a83c326800",
+      "result_id": "4f58cd7f-41c3-4bc0-aeb1-676ef3ac8d15"
+    },
+    {
+      "claim_id": "a4779339-70f5-4845-9b7b-56f0395531ff",
+      "result_id": "4f58cd7f-41c3-4bc0-aeb1-676ef3ac8d15"
+    },
+    {
+      "claim_id": "c7f72c26-dcd9-4f6c-9220-72057b282cfb",
+      "result_id": "4f58cd7f-41c3-4bc0-aeb1-676ef3ac8d15"
+    },
+    {
+      "claim_id": "88975955-44b5-455a-ab48-bf147d634552",
+      "result_id": "4f58cd7f-41c3-4bc0-aeb1-676ef3ac8d15"
+    },
+    {
+      "claim_id": "346b4b63-2d95-4eaf-aa72-72f71f6d6718",
+      "result_id": "38a34831-3f1c-4e9a-9c3a-5dcc189f90ca"
+    },
+    {
+      "claim_id": "504387fb-884e-4ac9-b71c-9b7fb70c1f48",
+      "result_id": "fa07e33e-e2c1-4bed-bee3-b9231500120a"
+    },
+    {
+      "claim_id": "c4c07565-4149-4cdb-9040-39c8128c293a",
+      "result_id": "fa07e33e-e2c1-4bed-bee3-b9231500120a"
+    },
+    {
+      "claim_id": "65f472e4-e759-4b03-8f45-c416082a0e68",
+      "result_id": "fa07e33e-e2c1-4bed-bee3-b9231500120a"
+    },
+    {
+      "claim_id": "0b01e1b2-fe87-420b-b5e9-5afbd2c9d2a2",
+      "result_id": "fa07e33e-e2c1-4bed-bee3-b9231500120a"
+    },
+    {
+      "claim_id": "c4b018b6-46d8-491f-bb5e-c87a808d2352",
+      "result_id": "a2f26128-1480-4f4c-863b-de9d4b41a3e5"
+    },
+    {
+      "claim_id": "181b7fc4-2c97-48c6-9e5a-48ffff73e535",
+      "result_id": "a2f26128-1480-4f4c-863b-de9d4b41a3e5"
+    },
+    {
+      "claim_id": "dbc3cce6-39cd-4414-8492-2e0028f98ee3",
+      "result_id": "6ef4d300-6d7a-413b-a2d3-5fedb8ac1cee"
+    },
+    {
+      "claim_id": "583393b1-ee3a-4296-941e-29f1fb2efc81",
+      "result_id": "6ef4d300-6d7a-413b-a2d3-5fedb8ac1cee"
+    },
+    {
+      "claim_id": "337bad59-7801-427d-9189-549f3706f35b",
+      "result_id": "6ef4d300-6d7a-413b-a2d3-5fedb8ac1cee"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2106 @@
+{
+  "submission": {
+    "id": "11998f55-6975-4f73-9a25-c16e64106913",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:08:03.119554Z",
+    "updated_at": "2025-11-28T20:08:03.119554Z"
+  },
+  "content": [
+    {
+      "id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "submission_id": "11998f55-6975-4f73-9a25-c16e64106913",
+      "content_type": "manuscript",
+      "content_text": "# An allosteric Sec61 inhibitor traps nascent transmembrane helices at the lateral gate\n\n## Authors\n\n- Andrew L MacKinnon<sup>1</sup>\n- Ville O Paavilainen<sup>1</sup>\n- Ajay Sharma<sup>2</sup>\n- Ramanujan S Hegde<sup>2</sup>\n- Jack Taunton<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n2. Cell Biology and Metabolism Program National Institutes of Child Health and Human Development, National Institutes of Health Bethesda United States\n3. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMembrane protein biogenesis requires the coordinated movement of hydrophobic transmembrane domains (TMD) from the cytosolic vestibule of the Sec61 channel into the lipid bilayer. Molecular insight into TMD integration has been hampered by the difficulty of characterizing intermediates during this intrinsically dynamic process. In this study, we show that cotransin, a substrate-selective Sec61 inhibitor, traps nascent TMDs in the cytosolic vestibule, permitting detailed interrogation of an early pre-integration intermediate. Site-specific crosslinking revealed the pre-integrated TMD docked to Sec61 near the cytosolic tip of the lateral gate. Escape from cotransin-arrest depends not only on cotransin concentration, but also on the biophysical properties of the TMD. Genetic selection of cotransin-resistant cancer cells uncovered multiple mutations clustered near the lumenal plug of Sec61\u03b1, thus revealing cotransin\u2019s likely site of action. Our results suggest that TMD/lateral gate interactions facilitate TMD transfer into the membrane, a process that is allosterically modulated by cotransin binding to the plug.\n\n## Introduction\n\nMost eukaryotic membrane proteins are cotranslationally integrated into the endoplasmic reticulum (ER) membrane (Shao and Hegde, 2011). This process begins when the first hydrophobic segment of a nascent membrane protein, often a transmembrane domain (TMD), emerges from a translating ribosome and is recognized by the signal recognition particle (SRP). The SRP system (Akopian et al., 2013) targets the ribosome-nascent polypeptide complex (RNC) to the ER membrane and transfers it to a translocation channel, or translocon, the central component of which is the Sec61 complex (Osborne et al., 2005). Sec61 binds the ribosome near the polypeptide exit tunnel and mediates both cotranslational translocation and TMD integration. This means that the Sec61 channel opens not only toward the ER lumen, but also laterally toward the lipid bilayer. While lateral TMD release through the Sec61 channel was appreciated long ago (Martoglio et al., 1995; Do et al., 1996; Mothes et al., 1997), the precise mechanism of this crucial step in membrane protein biogenesis remains unclear.\n\nDuring integration into the membrane, TMDs must move from the aqueous pore of the Sec61 channel into the surrounding lipid bilayer. Several models have been proposed to explain how this occurs. In one model, the TMD is thought to equilibrate between the aqueous Sec61 channel and the lipid bilayer (Heinrich et al., 2000; Hessa et al., 2007; Ojemalm et al., 2011). This process would be facilitated by an intrinsically dynamic lateral gate in Sec61 that allows the polypeptide segment inside the channel to reversibly sample the membrane. A second model proposes that TMD integration is facilitated by direct interactions with Sec61. This idea is supported by the analysis of stalled RNCs of membrane proteins at different lengths. Not only does the TMD of such stalled RNCs crosslink to Sec61, but it also appears to be oriented in a specific manner, as judged by asymmetric crosslinks to adjacent TMD residues (McCormick et al., 2003; Sadlish et al., 2005). Molecular dynamics simulations further suggest that lateral gating is facilitated by the TMD and that TMD movement into the lipid bilayer is a kinetically irreversible event (Zhang and Miller, 2010, 2012). Analysis of cotranslational integration in yeast has also revealed a kinetic barrier to TMD insertion (Cheng and Gilmore, 2006; Trueman et al., 2011).\n\nStructural studies of the Sec61 complex have provided important clues to the mechanism of TMD integration. The crystal structure of the archaeal complex revealed that SecY (homologous to eukaryotic Sec61\u03b1) comprises a compact bundle of 10 transmembrane helices (TM1\u201310) arranged in a pseudo-twofold symmetric structure, with TM1\u20135 and 6\u201310 forming two halves of a \u2018clamshell\u2019 (Van den Berg et al., 2004). The interior of the clamshell forms an hourglass-shaped pore in the membrane, the center of which is occluded by a short \u03b1-helix termed the plug. The front of the clamshell, at the interface between TM2/3 and TM7/8, forms a lateral gate that, when opened, could provide direct access to the lipid bilayer from the central pore.\n\nTranslocation across the membrane requires movement of the plug to open the channel toward the ER lumen. This is thought to occur when the first TMD (or signal sequence) of an RNC intercalates between the lateral gate helices of Sec61\u03b1. When coupled with ongoing translation, this event would position the nascent polypeptide within the channel and provide access of the hydrophobic TMD to the lipid bilayer. This idea is supported by the observation that signal peptides can be crosslinked to Sec61\u03b1 TM2 and TM7 (Plath et al., 1998; Wang et al., 2004) and that mutations in the lateral gate can influence TMD integration (Junne et al., 2010; Trueman et al., 2012). While crystal structures of prokaryotic Sec61 have revealed the lateral gate in a continuum of partially open states (Tsukazaki et al., 2008; Zimmer et al., 2008; Egea and Stroud, 2010), how the gate transitions between open and closed conformations, and especially the role of the nascent TMD in this process, remains unclear. A major obstacle to understanding cotranslational TMD integration has been the inability to stabilize and interrogate discrete pre-integrated intermediates during this highly dynamic process.\n\nWe and others previously described cotransins, a class of cyclic peptides that bind Sec61\u03b1 and potently inhibit cotranslational translocation of a subset of secretory and membrane proteins (Besemer et al., 2005; Garrison et al., 2005; MacKinnon et al., 2007). We reasoned that because Sec61 represents the final destination of a nascent TMD prior to its integration into the membrane, small-molecule modulators like cotransin could shed light on this poorly understood process. In this study, we have investigated the mechanism by which cotransin inhibits membrane protein insertion. We demonstrate that cotransin stabilizes an ephemeral pre-integrated intermediate in which the TMD docks against the cytosolic tip of the Sec61 lateral gate. Progression through this cotransin-arrested stage was found to depend on TMD hydrophobicity, helical propensity, and charge distribution, features that contribute to cotransin\u2019s ability to discriminate among different substrates. Using genetic selection in human cancer cells, we identified multiple point mutations in the lumenal plug region of Sec61\u03b1 that confer dominant resistance and prevent cotransin binding. These results support a model in which cotransin binding to the plug prevents lateral gating by susceptible TMDs, whereas TMDs with increased hydrophobicity and helical propensity can override the cotransin-imposed block. More generally, our characterization of a pre-integrated complex implies that dynamic interactions between the TMD and Sec61 can facilitate lateral gating and membrane integration.\n\n## Results and discussion\n\n### Experimental strategy\n\nTo explore the effect of cotransin on TMD integration, we used a reconstituted system comprising a mammalian translation extract supplemented with microsomal ER membranes (Sharma et al., 2010). When this system is programed with a truncated mRNA that lacks a stop codon, the ribosome translates to the end of the transcript and stalls, creating a synchronized population of ribosome nascent chain complexes (RNCs) of defined length that functionally engage the targeting and translocation machinery (Gilmore et al., 1991). We used this approach to prepare translocation intermediates of TNF\u03b1, an integral membrane protein whose single TMD mediates targeting, membrane insertion, and translocation of the C-terminal ectodomain (Figure 1A). Importantly, cotranslational integration of TNF\u03b1 is potently inhibited by CT8, a recently described cotransin variant (Maifeld et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of TNF\u03b1 primary structure and membrane orientation. Cys49 is indicated by an asterisk. (B) TNF\u03b1 126-mers containing an N-terminal FLAG- or HA-tag were translated in the presence of canine rough microsomes, solubilized with 1% Deoxy BigChap (DBC), and immunoprecipitated (IP) with anti-FLAG affinity resin. IP eluates were analyzed by immunoblotting for FLAG-TNF\u03b1 and Sec61\u03b1. (C) As in (B), except that microsome-targeted 126-mers were prepared in the presence or absence of the photo-affinity probe CT7 and photolyzed (h\u03bd) either before (lane 2) or after immunoprecipitation (lane 3). The photo-crosslinked CT7/Sec61\u03b1 adduct was detected by click chemistry with TAMRA-azide, followed by in-gel fluorescence imaging. (D) Protease protection assays with 35S-labeled 126-mers translated in the presence or absence of canine rough microsomes (CRM), followed by treatment with proteinase K (PK) and TX-100 (Det) as indicated. The nascent chain and protease-protected fragment are indicated (closed and open triangle, respectively). An unidentified weak band (asterisk) was occasionally observed. (E) Microsome-targeted 126-mers with Cys49 or lacking all cysteines were assembled in the presence or absence of CT8 and treated with N-ethylmaleimide (NEM) as indicated. Samples were subsequently denatured with SDS, treated with PEG-maleimide (PEG-Mal), and analyzed by SDS-PAGE/phosphorimaging. NEM inaccessibility is indicated by a shift to higher molecular weight, corresponding to nascent chains (NC) modified by PEG-Mal at Cys49. (F) NEM accessibility of RNCs of varying length, defined as fraction of nascent chains modified by PEG-Mal, determined by phosphorimaging and normalized to a matched control reaction lacking NEM. Data represent the mean \u00b1 range of two independent experiments. For raw phosphorimaging data, see Figure 1\u2014figure supplement 1C.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Chemical structures of cotransin variants used in the study. CT7 contains a photo-reactive diazirine to enable covalent photo-crosslinking to Sec61\u03b1. All compounds block TNF\u03b1 insertion into ER microsomes with similar potency (Maifeld et al., 2011, and data not shown). (B) Scheme for CT7 photo-affinity labeling of Sec61\u03b1. The covalent CT7/Sec61\u03b1 adduct (formed after irradiation with UV-light, h\u03bd) is detected using click chemistry between the alkyne group in CT7 and a rhodamine-azide (TAMRA-N3). (C) NEM accessibility assays of Cys49 RNCs of varying length in the presence and absence of CT8. Gels are representative of the primary data used to derive the graph in Figure 1F. (D) Microsome targeted TNF\u03b1 126-mers with Cys49 or lacking all cysteines were treated with proteinase K (PK) as indicated. Samples were subsequently denatured with SDS, treated with PEG-maleimide (PEG-Mal) as indicated and analyzed by SDS-PAGE/phosphorimaging. PEG-Mal efficiently modifies the PK-protected TNF\u03b1 fragment containing Cys49.\n\n### CT8 blocks TMD integration into the membrane\n\nWe first established the feasibility of producing a stable complex comprised minimally of CT8, Sec61, and TNF\u03b1 RNCs. Direct detection of cotransin binding to Sec61 was aided by CT7, an isosteric and equipotent analog of CT8 equipped with a diazirine for covalent photo-crosslinking to Sec61\u03b1 (MacKinnon et al., 2007; Figure 1\u2014figure supplement 1A,B). FLAG-tagged TNF\u03b1 nascent chains of 126 residues (126-mers) were assembled on ER microsomes in the presence or absence of CT7, solubilized with digitonin, immunopurified with anti-FLAG beads, and analyzed for the presence of Sec61\u03b1 and CT7. Sec61\u03b1 specifically copurified with FLAG-TNF\u03b1 RNCs, as it was not detected on anti-FLAG beads recovered from control reactions programed with HA-tagged TNF\u03b1 (Figure 1B). Moreover, the amount of Sec61\u03b1 copurifying with TNF\u03b1 RNCs was identical in the absence or presence of CT7 (Figure 1C, lane 1 vs 2), suggesting that CT7 does not weaken the affinity of the RNC-Sec61 complex. Finally, the amount of CT7 covalently bound to Sec61\u03b1 in the FLAG-TNF\u03b1 immunoprecipitates was identical whether the photo-crosslinking step was carried out before or after the stringent immunopurification and washing steps (Figure 1C, lane 2 vs 3). Thus, CT7, Sec61, and TNF\u03b1 RNCs assemble into a high-affinity ternary complex amenable to biochemical analysis.\n\nWe employed a combination of protease protection and cysteine accessibility assays to probe the local environment of the TNF\u03b1 nascent chain. At the 126-mer length, TNF\u03b1 RNCs should have sufficient polypeptide beyond the TMD (\u223c75 amino acids) to have stably inserted into the Sec61 channel in the \u2018looped\u2019 orientation, with the TMD at least partially exposed to the lipid bilayer (Martoglio et al., 1995; McCormick et al., 2003). Consistent with this expectation, 126-mer RNCs assembled in the absence of CT8 were predominantly shielded from protease, generating a large protected fragment that consists of the TMD plus the lumenal C-terminal domain (Figure 1D, Figure 1\u2014figure supplement 1D). This fragment was not observed in the absence of microsomes, suggesting that the TNF\u03b1 TMD and ectodomain are protected by the Sec61 complex and the membrane. RNCs produced in the presence of CT8 generated sharply reduced amounts of the protected fragment, indicating that the nascent chain remained primarily in a protease-accessible compartment, despite binding tightly to the Sec61 complex (Figure 1D).\n\nTo probe the environment of the TMD itself, we analyzed TNF\u03b1 RNCs containing a single native cysteine at position 49, near the C-terminal end of the TMD. We monitored accessibility of Cys49 to N-ethylmaleimide (NEM), which efficiently reacts with cysteine thiols exposed to an aqueous environment. In this assay, ER-targeted RNCs are first alkylated with NEM under native conditions, followed by quenching, denaturation with SDS, and modification of unreacted sulfhydryls with PEG-maleimide. Thus, PEG-modified nascent chains (identified by a molecular weight shift) represent RNCs whose Cys49 sulfhydryl was initially inaccessible to NEM. When 126-mers were assembled without CT8, Cys49 was unreactive toward NEM, whereas the same nascent chains assembled in the presence of CT8 were strongly reactive and thus protected from subsequent reaction with PEG-maleimide (Figure 1E). These results are consistent with the protease protection assay and demonstrate that CT8 causes 126-mers to occupy a distinct environment, one in which Cys49 in the TMD is exposed to aqueous solvent.\n\nApplying this assay to RNCs of varying length revealed that in the absence of CT8, Cys49 progressed from a primarily NEM-accessible environment to one that was inaccessible (Figure 1F). This transition occurred over a narrow range of nascent chain lengths, between 116- and 126-mers. By contrast, in the presence of CT8, the TMD remained accessible to NEM at every nascent chain length tested (Figure 1F, Figure 1\u2014figure supplement 1C). Given that efficient alkylation with NEM requires an aqueous environment, the abrupt transition observed in the absence of CT8 likely represents TMD integration into the lipid bilayer. Not only is the polypeptide sufficiently long at this stage to exit the translocon, but this is also the length at which earlier studies have observed photo-crosslinking of the TMD to phospholipids (Martoglio et al., 1995; Mothes et al., 1997; Urbanus et al., 2001). While the TMD may remain close to Sec61 at this stage (McCormick et al., 2003; Sadlish et al., 2005; Devaraneni et al., 2011; Frauenfeld et al., 2011; Hou et al., 2012), it has most likely exited the central aqueous pore of Sec61. Collectively, the above results demonstrate that CT8 prevents TMD insertion into the membrane at a step that occurs after RNC targeting to Sec61.\n\n### CT8 stabilizes a transient pre-integrated intermediate\n\nTo gain insight into the topological relationship between the TMD and Sec61 along the integration pathway, we used bis-maleimidohexane (BMH), which can covalently crosslink solvent-accessible cysteines that lie within \u223c13 \u00c5 of each other. BMH crosslinking of wild-type TNF\u03b1 126-mers (native cysteines at positions 30 and 49 in the TMD) yielded no major crosslinked products (Figure 2A), consistent with the solvent inaccessibility of the TMD at this length. In the presence of CT8, the 126-mers crosslinked strongly to partners of \u223c10 and \u223c40 kDa (Figure 2A), identified by immunoprecipitation as Sec61\u03b2 and Sec61\u03b1, respectively (Figure 2\u2014figure supplement 1). These crosslinks were diminished when a termination codon was introduced at position 126, indicating that only tRNA-bound nascent chains crosslink to the Sec61 complex. Further supporting this interpretation, a portion of TNF\u03b1 RNCs retained the tRNA during electrophoresis, and this peptidyl-tRNA was also found to efficiently crosslink to Sec61\u03b1 and Sec61\u03b2 (Figure 2A, Figure 2\u2014figure supplement 1B, arrowheads). Mutagenesis of each cysteine in TNF\u03b1 showed that Cys49 was uniquely responsible for the crosslinks.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig2-v1.jpg)\n\n**Figure 2.:** (A) Microsome-targeted TNF\u03b1 126-mers assembled in the presence or absence of CT8 (1 \u03bcM) were treated with BMH as indicated (Stop: termination codon at position 126). Bands corresponding to the nascent chain (NC) and the NC crosslinked to Sec61\u03b1 and Sec61\u03b2 are indicated (for IP confirmation, see Figure 2\u2014figure supplement 1). Residual NC-tRNA as well as crosslinks to Sec61\u03b1 and Sec61\u03b2 is also indicated (closed and open triangle, respectively). (B) BMH crosslinking reactions with TNF\u03b1 RNCs of varying length. (C) Microsome-targeted TNF\u03b1 RNCs of the indicated length were assembled in the continuous presence of CT8 (\u2018Co-\u2019) or treated with CT8 post-translationally (\u2018Post-\u2019), followed by BMH crosslinking. NC crosslinks to Sec61\u03b1 were quantified by phosphorimaging and normalized to the cotranslationally CT8-treated control. Quantified data represent the mean \u00b1 standard deviation of three independent experiments. In (B) and (C), TNF\u03b1 RNCs contained a single cysteine (Cys49).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Denaturing immunoprecipitation (IP) of BMH crosslinking reactions. Cys49 126-mers were prepared in the presence or absence of CT8 and crosslinked with BMH. Reactions were then quenched with DTT, denatured in SDS and immunoprecipitated with antibodies directed against the indicated proteins. Eluates were analyzed by SDS-PAGE and autoradiography. (B) Microsome targeted wild-type TNF\u03b1 126-mers were assembled in the presence or absence of 1 \u00b5M CT8 and treated with BMH as indicated. The BMH treated samples were further treated with base or RNAse A and reactions analyzed on NuPage gels at pH 7.3. Base and RNAse treatment collapses the nascent chain-tRNA bands.\n\nWe next analyzed crosslinking patterns of TNF\u03b1 RNCs containing a single cysteine (Cys49 in the TMD) at various chain lengths from 70 to 146 residues, in the absence and presence of CT8. Without CT8, crosslinks first appeared between the 80-mer and Sec61\u03b2, which contains a single cysteine in its presumably unstructured cytosolic tail (Figure 2B). This demonstrates that the 80-mer was properly targeted to the Sec61 complex and that Cys49, predicted to have just emerged from the ribosomal exit tunnel, was exposed to the cytosol. Crosslinking to Sec61\u03b2 decreased as the nascent chain was extended to 96 residues, at which point strong crosslinks to Sec61\u03b1 appeared (Figure 2B). Given the \u223c15 amino acid tether between the C-terminal end of the TMD and the polypeptide exit tunnel (positions 51\u201365 of the 96-mer), Cys49 is likely situated within or near the cytosolic vestibule of Sec61\u03b1 such that it can reach a solvent-exposed cysteine on Sec61\u03b1 (via the 13 \u00c5 crosslinker). As the nascent chain was extended beyond 96 residues, crosslinking to Sec61\u03b1 decreased abruptly and was undetectable by 126 amino acids. This transition parallels the loss in NEM accessibility (Figure 1F) and further suggests that the TMD exits the Sec61\u03b1 vestibule at this stage of nascent chain elongation. Integration of the TMD is therefore preceded by a step in which Cys49 of the TMD passes within \u223c13 \u00c5 of an accessible cysteine in Sec61\u03b1.\n\nA strikingly different picture emerged when this analysis was performed in the presence of CT8. Although short nascent chains (up to 86-mers) had a similar crosslinking profile, all RNCs beyond this length were clearly distinct from the matched samples lacking CT8. Not only were the crosslinks to Sec61\u03b1 and Sec61\u03b2 more intense, but they also persisted beyond the point where TMD integration occurred in the absence of CT8 (Figure 2B). Order-of-addition experiments indicated that TMD egress from the cytosolic vestibule (operationally defined by the disappearance of TMD/Sec61\u03b1 crosslinks) becomes irreversible once the nascent chain has progressed from 106- to 126-mers (Figure 2C). When 106-mers were first assembled in the absence of CT8, isolated by sedimentation, and then incubated with CT8 post-translationally, enhanced TMD/Sec61\u03b1 crosslinks were observed. By contrast, post-translational addition of CT8 to identically prepared 126-mers had no effect, indicating that the 126-mers had crossed a kinetic point-of-no-return that could not be reversed by CT8. Taken together, these data argue: (1) CT8 stabilizes a configuration of the TMD/Sec61 complex that occurs just prior to a committed step of TMD integration, and (2) a similar pre-integrated configuration occurs in the absence of CT8 for nascent chain lengths of 96\u2013106 amino acids. That CT8 actually enhances the initial interaction between Sec61\u03b1 and the TMD (as determined by BMH crosslinking) suggests an allosteric mechanism of action.\n\n### CT8 traps the TMD helix in a defined orientation\n\nThe CT8-arrested TMD/Sec61 complex provides a unique opportunity to characterize an otherwise transient, pre-integrated intermediate. We used BMH crosslinking to probe the environment of a cysteine residue scanned across the TMD and flanking regions of 126-mers assembled in the presence or absence of CT8 (Figure 3A). As expected on the basis of protease and NEM accessibility experiments (Figure 1D,E), 126-mers assembled in the absence of CT8 displayed no protein crosslinks to cysteines within the TMD (Figure 3B,C). By contrast, 126-mers prepared with CT8 showed strong crosslinks to Sec61\u03b1, with peak intensities at positions 35, 38, 42, 45, and 49 (Figure 3B,C). A helix-destabilizing proline mutation in the center of the TMD (V41P) abolished the periodic crosslinking pattern without significantly affecting RNC targeting to Sec61 (Figure 3D, Figure 3\u2014figure supplement 1D). An identical periodic crosslinking pattern was observed with both shorter (96-mers) and longer (146-mers) nascent chains (Figure 3D, Figure 3\u2014figure supplement 1B,C). The sharp periodicity of the crosslinks (i, i+3, i+7, etc), along with the consistent pattern observed across multiple nascent chain lengths, indicates that the TMD helix is not oriented randomly relative to Sec61\u03b1. Instead, the TMD appears to have a defined orientation, docked to Sec61\u03b1 in a manner that is presumably stabilized by CT8. In the absence of CT8, a periodic crosslinking pattern across the TMD was not observed (Figure 2B), despite the strong crosslinks to Cys49 in the context of 96-mers (Figure 3\u2014figure supplement 1B). Thus, the pre-integrated TMD/Sec61\u03b1 complex likely samples multiple conformations in the absence of CT8.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig3-v1.jpg)\n\n**Figure 3.:** (A) Positions of single cysteine mutations (blue dashes) analyzed by BMH crosslinking. (B) BMH crosslinking reactions of 126-mers containing a single cysteine at the indicated positions. (C) Crosslinking intensities (NC \u00d7 Sec61\u03b1) were quantified by phosphorimaging of the gels shown in (B) and plotted as a function of cysteine position. Inset, TMD \u03b1-helix model (red) highlighting positions with strongest crosslinks to Sec61\u03b1 (yellow). (D) Overlay of BMH crosslinking profiles for the indicated constructs. Crosslinking intensities were normalized to an internal standard (Cys49 126-mer) included in each experiment. For raw phosphorimaging data, see Figure 3\u2014figure supplement 1. (E) Cartoon depicting approximate TMD disposition (red) of 126-mer assembled in the presence and absence of CT8.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) BMH crosslinking profiles of RNCs of various lengths that carry single cysteines at the indicated positions of the TMD. The graphs on the right plot the intensity of the TMD/Sec61\u03b1 crosslink (\u00d7Sec61\u03b1) against the position of the cysteine along the TMD. For part (D), the V41P position was not changed to cysteine. An internal standard construct (Cys49 126-mer) was included in each experiment (last pair of lanes in each gel series) to enable comparison of crosslinking efficiencies between different experiments. The values on the y-axes for plots in (A\u2013D) are therefore comparable.\n\nCrosslinking experiments with the cysteine positioned either before or after the TMD helped define the overall topology of the nascent chain. Cysteines at positions 10 or 16 formed strong crosslinks to numerous proteins, including Sec61\u03b2 (Figure 3B), in a pattern that was nearly identical for RNCs assembled with or without CT8. Thus, the N-terminal tail is highly accessible and localized to the cytosolic side of the membrane under both conditions.\n\nThe polypeptide segment C-terminal to the TMD of integrated 126-mers is predicted to pass through the Sec61 channel and into the ribosomal exit tunnel. In the absence of CT8, cysteines engineered along this segment in 126-mer RNCs showed strong crosslinks to Sec61\u03b1 without concomitant crosslinks to Sec61\u03b2 (Figure 3B). By contrast, the presence of CT8 caused these same cysteines to crosslink strongly to Sec61\u03b2 (Figure 3B), again indicating that this region of the CT8-arrested nascent chain is exposed to the cytosol. We note that the N-terminal tail of CT8-arrested, pre-integrated TNF\u03b1 is highly accessible to the cytosolic side of the membrane, consistent with the early establishment of a type II orientation. It is therefore unlikely that TNF\u03b1 initially exposes its N-terminus to the ER lumen, as shown in a recent study of a different type II membrane protein (Devaraneni et al., 2011). This difference may be due to the longer, charged N-terminal tail of TNF\u03b1 relative to the aquaporin-4 construct used in the previous study.\n\nThe protease protection, NEM accessibility, and BMH crosslinking data together reveal a distinct configuration of late-stage RNCs (>96-mer) assembled in the absence vs presence of CT8 (Figure 3E). In the absence of CT8, 126-mer RNCs are in the expected type II topology with a cytosolically disposed N-terminus and membrane-spanning TMD, followed by a C-terminal domain threading through the Sec61 channel to the ribosome. By contrast, the CT8-arrested state is distinguished by a TMD helix that has not integrated, but is instead accessible to the aqueous environment and docked to Sec61\u03b1 in a specific orientation. This pre-integrated configuration is stabilized by CT8 from the 96-mer until at least the 146-mer. The degree to which the cotransin-stabilized Sec61 conformation resembles integration intermediates that form in the absence of cotransin is not clear. Cotransin may stabilize one of a continuum of conformational states adopted by Sec61 during the normal process of cotranslational integration (e.g., TMD docked to a lateral gate that is partially open toward the cytosol, but closed near the lumenal plug).\n\n### The pre-integrated TMD docks to the cytosolic tip of the lateral gate\n\nTo identify the docking site on Sec61\u03b1, we first sought to determine which cysteine(s) in Sec61\u03b1 formed BMH-induced crosslinks to the pre-integrated TMD. Unfortunately, our efforts to produce recombinant mammalian Sec61\u03b1\u03b2\u03b3 complexes on which to perform mutagenesis were unsuccessful. In considering the available structural and functional data, we reasoned that the minimal unit for TMD docking is likely to be the Sec61\u03b1/\u03b3 sub-complex. This is because the \u03b2 subunit is poorly conserved across species and does not contribute substantially to the structural core of the Sec61 complex. Moreover, a stable sub-complex of mammalian Sec61\u03b1 and Sec61\u03b3 was found to function in RNC targeting and translocation assays, albeit only under certain conditions (Kalies et al., 1998). We therefore investigated the Sec61\u03b1/\u03b3 sub-complex as an alternative system, using the criteria of stable co-association, cotransin binding, and RNC targeting as three independent indicators of correct folding and partial functionality.\n\nExpression of FLAG-tagged Sec61\u03b1 and untagged Sec61\u03b3 subunits from a single baculovirus in Sf21 insect cells produced proteins that co-purified as a stable complex with \u223c1:1 stoichiometry (Figure 4\u2014figure supplement 1A). Importantly, the photo-affinity probe CT7 labeled FLAG-Sec61\u03b1 in a manner that was competed by CT9 (Figure 4A,B, Figure 4\u2014figure supplement 1B), a potent analog similar to CT8 (Maifeld et al., 2011). Moreover, when TNF\u03b1 126-mers were translated in the presence of Sf21 microsomes containing recombinant Sec61\u03b1/\u03b3, CT8 promoted the formation of BMH crosslinks between Cys49 and recombinant Sec61\u03b1 (Figure 4C, Figure 4\u2014figure supplement 1C). In each of these experiments, recombinant FLAG-Sec61\u03b1 behaved similarly to native Sec61\u03b1 in canine pancreatic microsomes, suggesting that the recombinant complex is correctly folded and sufficiently functional to analyze its interaction with the TNF\u03b1 126-mer.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig4-v1.jpg)\n\n**Figure 4.:** (A) Cotransin binding activity of recombinant FLAG-Sec61\u03b1. Microsomes from Sf21 cells expressing FLAG-Sec61\u03b1 and Sec61\u03b3 were incubated with CT7 (50 nM) in the presence or absence of excess CT9 (10 \u03bcM). Samples were photolyzed (h\u03bd), and analyzed as in Figure 1C (left panel). Samples were immunoprecipitated under denaturing conditions with anti-FLAG or anti-HA (control) beads and analyzed as previously (right panel). (B) Photo-affinity labeling with CT7 as in (A) with microsomes from FLAG-Sec61\u03b1/\u03b3 mutant or control baculovirus-infected Sf21 cells. (C) 35S-labeled TNF\u03b1 126-mers (Cys49) were translated in the presence of FLAG-Sec61\u03b1/\u03b3 microsomes and subjected to BMH crosslinking. After immunoprecipitation with anti-FLAG beads, eluates were analyzed by autoradiography and immunoblotting. (D) As in (C), except that crosslinking reactions were performed with BMOE instead of BMH. See Figure 4\u2014figure supplement 1 for further characterization of recombinant FLAG-Sec61\u03b1/\u03b3. (E) Homology model of human Sec61\u03b1 (Erdmann et al., 2009) (based on PDB entry:1RH5), highlighting positions of native and engineered cysteines (yellow = strong, red = weak crosslinks to TNF\u03b1 TMD Cys49). Lateral gate helices are shown in blue (TM2b/3) and green (TM7/8).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Co-immunoprecipitation of recombinant FLAG-Sec61\u03b1 and Sec61\u03b3. Sf21 insect cell microsomes were solubilized with 1% Deoxy BigChap (DBC) and subjected to anti-FLAG immunoprecipitation (IP). Eluted samples (Sf21) were analyzed by immunoblotting next to a sample of canine microsomal ER membranes (CRM). (B) Comparison of the relative CT7 photo-crosslinking efficiency of canine rough microsomes (CRM) and Sf21 microsomes containing wild-type FLAG-Sec61\u03b1/\u03b3 complex. CT7 crosslinking was performed as before. The relative crosslinking efficiency of recombinant Sec61\u03b1 was normalized to the native protein. (C) BMH crosslinking reactions using recombinant FLAG-Sec61\u03b1/\u03b3 complex. Cys49 TNF\u03b1 126-mers were prepared in the presence of Sf21 microsomes, and BMH crosslinking reactions were conducted as described previously. Reactions were either analyzed directly (Total) or after denaturing IP with anti-FLAG affinity resin. IP with the anti-HA affinity resin served as a specificity control. (D) Western blots of Sf21 microsomes co-expressing either wild-type or mutant FLAG-Sec61\u03b1/\u03b3. Insect cell microsomes from cells infected with a baculovirus that lacked Sec61 genes (control virus) served as a control. (E) CT7 crosslinking of mutant Sec61\u03b1/\u03b3 complexes containing the indicated cysteine substitutions. The region of the gel corresponding to FLAG-Sec61\u03b1 is shown. Detection of photo-affinity labeling that is competed by CT9 indicates that the mutant Sec61\u03b1/\u03b3 complex is properly folded.\n\nTo determine which of the eight native cysteines in Sec61\u03b1 crosslinked to the TMD, each was mutated to alanine or serine. All Sec61\u03b1 mutants co-expressed with Sec61\u03b3 at levels similar to the wild type and were properly folded, as assessed by specific photo-affinity labeling with CT7 (Figure 4B, Figure 4\u2014figure supplement 1D). A single mutation in Sec61\u03b1 (C13A) abolished BMH crosslinking to the TMD, whereas each of the other cysteine mutants crosslinked efficiently in the presence of CT8 (Figure 4C). Based on a homology model of the human Sec61 complex derived from the crystal structure of an archaeal ortholog (Van den Berg et al., 2004; Erdmann et al., 2009), Cys13 is predicted to be in a short \u03b1-helix that lies parallel to the cytosolic face of the membrane, just outside the cytosolic vestibule and adjacent to TM3 (Figure 4E).\n\nTo refine the location of the pre-integrated TMD, non-conserved residues throughout the cytosolic vestibule of Sec61\u03b1 were individually mutated to cysteine in the background of the C13A mutation (a mutant Sec61\u03b1 construct lacking all 8 native cysteines was non-functional in the CT7 photo-crosslinking assay). Like the single mutants, all of the double mutants co-expressed with Sec61\u03b3 at similar levels and specifically bound CT7 (Figure 4\u2014figure supplement 1E). To enforce a more stringent distance constraint in the cysteine crosslinking experiments, we used bis-maleimidoethane (BMOE), the shortest available bis-maleimide crosslinker (\u223c8 \u00c5). Sec61\u03b1 cysteine-substitution mutants were then analyzed for crosslinking to Cys49 in TNF\u03b1 126-mers.\n\nUnlike the longer BMH crosslinker (\u223c13 \u00c5), BMOE failed to promote crosslinking of the TMD to Cys13 of wild-type Sec61\u03b1 (Figure 4D), suggesting that BMOE is a more stringent reporter of Cys\u2013Cys proximity. Similarly, crosslinks to most of the engineered cysteines within the cytosolic vestibule of Sec61\u03b1 were weak or undetectable (Figure 4D). Notable exceptions were cysteine substitutions at Gly88, Met91, Ala95, and Ser383, each of which showed strong CT8-enhanced crosslinks. Mapping the location of these engineered cysteines onto a model of human Sec61\u03b1 revealed a clear hotspot where the cytosolic face of TM2b meets the cytosolic tip of TM8 (Figure 4E). This region of Sec61\u03b1 represents the cytosol-exposed tip of the lateral gate, shown here to lie within \u223c8 \u00c5 of the TMD (Cys49) in the CT8-stabilized, pre-integrated configuration.\n\n### Resistant and sensitive TMDs pass through a common pre-integrated intermediate\n\nPrevious studies have shown that the cotransin sensitivity of a given secretory protein can be altered by mutations in the signal sequence (Harant et al., 2006, 2007). However, a mechanistic explanation for these effects has remained elusive. Given the intimate association between the TMD and the cytosolic face of TM2b and TM8, we reasoned that certain TMD mutants should be able to overcome the CT8-imposed barrier to integration via productive interactions with the lateral gate helices and/or membrane lipids. Comparison of sensitive and resistant TMDs at multiple points along the integration pathway (i.e., at multiple nascent chain lengths) should allow us to: (1) test whether they pass through a common intermediate and (2) define the point at which their fates diverge. Finally, analysis of diverse TMD mutants should provide insight into the biophysical basis of CT8 sensitivity and resistance.\n\nWe identified TNF\u03b1 TMD mutants with a broad range of CT8 sensitivity (see below). We first present a detailed analysis of the double mutant, T45L/T46L. Inhibiting cotranslational integration of this mutant required 13-fold higher concentrations of CT8 as compared to wild-type TNF\u03b1 (IC50 of 1040 nM and 80 nM, respectively). BMH crosslinking of successively longer T45L/T46L RNCs assembled without CT8 showed a pattern that was similar to wild-type TNF\u03b1: crosslinks to Sec61\u03b1 were observed over a narrow length range, 86- to 96-mers, beyond which the crosslinks abruptly disappeared (Figure 5A). As with the wild type, low nanomolar concentrations of CT8 led to increased crosslinking between the T45L/T46L mutant and Sec61\u03b1, but this was true only at short nascent chain lengths (Figure 5A,B). At longer chain lengths, crosslinking of the mutant TMD to Sec61\u03b1 was not observed, consistent with its successful integration into the membrane beyond the 96-mer stage (Figure 5A,C). A cysteine scan across the TMD of wild-type and mutant 96-mers revealed identical crosslinking patterns (Figure 5D, Figure 5\u2014figure supplement 1), suggesting that the T45L/T46L TMD docks to Sec61\u03b1 in a specific conformation and orientation similar to the wild type. Unlike the wild type, the mutant TMD escapes from the CT8-mediated arrest point and integrates into the membrane as the nascent polypeptide continues to elongate.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig5-v1.jpg)\n\n**Figure 5.:** (A) BMH crosslinking reactions with T45L/T46L TNF\u03b1 RNCs of varying length, assembled in the presence or absence of CT8. (B) BMH crosslinking reactions of wild-type or T45L/T46L 96-mers in the presence of increasing concentrations of CT8. Crosslink intensities (\u00d7 Sec61\u03b1) were quantified by phosphorimaging and plotted as a function of [CT8]. (C) As in (B), except 126-mers were used. (D) T45L/T46L 96-mers containing single cysteines at the indicated positions were assembled in the presence of CT8 (1 \u03bcM) and subjected to BMH crosslinking. Crosslink intensities (\u00d7 Sec61\u03b1) were quantified by phosphorimaging (see Figure 5\u2014figure supplement 1 for raw data) and plotted as a function of cysteine position. Data from \u2018wild-type\u2019 96-mer cysteine scan (Figure 3D) are shown for comparison.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) BMH crosslinking reactions of T45L/T46L 96-mers containing single cysteines at the indicated positions. (B) Quantified data from the gels shown in part (A).\n\nGiven that CT8 arrests wild-type and T45L/T46L 96-mers in the same pre-integrated conformation, the question arises as to how the mutant TMD is able to escape and pass through the lateral gate. One potential explanation is the increased overall hydrophobicity of the T45L/T46L mutant, which is predicted to have a greater thermodynamic driving force for membrane integration (Hessa et al., 2007; Ojemalm et al., 2011). While mutating multiple polar residues to leucine resulted in increased CT8 resistance (Figure 6B), further mutational analysis revealed that overall hydrophobicity is not the sole determinant. Hydrophobic to lysine mutations in the N-terminal region of the TMD, for example, led to increased CT8 resistance, whereas such mutations in the central or C-terminal regions had the opposite effect (Figure 6C). This may be mechanistically related to the observation that positively charged flanking residues influence TMD orientation (\u2018positive-inside rule\u2019) and facilitate membrane integration (Hessa et al., 2007; Lerch-Bader et al., 2008), potentially due to interactions with negative charges on or near the cytoplasmic face of Sec61 (Goder et al., 2004; Frauenfeld et al., 2011). Proline-scanning mutagenesis across the TMD resulted in similar position-dependent effects, conferring increased CT8 resistance when introduced into the N-terminal region and increased sensitivity in the central region (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig6-v1.jpg)\n\n**Figure 6.:** (A) Amino acid sequence of the TNF\u03b1 TMD. (B) Protease protection assays (proteinase K, PK) of full-length TNF\u03b1 polar-to-leucine mutants as a function of increasing CT8 concentration. Translation reactions were carried out in the presence of increasing concentrations of CT8 or DMSO control, followed by digestion with PK as previously described (Sharma et al., 2010). Full-length TNF\u03b1 and the protease-resistant fragment are indicated by open and closed triangles, respectively. (C) As in (B), except with hydrophobic-to-lysine mutants. (D) As in (B), except with proline-scanning mutagenesis. IC50 values were plotted as a function of the position of the corresponding proline mutation. To compute IC50 values, protease-resistant fragments were quantified by phosphorimaging, normalized to the DMSO control, and fitted to a three-parameter equation using GraphPad Prism software. Representative curve fits in each set (B\u2013D) are shown. Based on the online TMD prediction algorithm (http://dgpred.cbr.su.se/), no mutation was expected to change the N-terminal or C-terminal boundaries of the TMD.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) HCT-116 parental cells and resistant clones were treated with increasing concentrations of CT9 for 72 hr, and viability was assessed by the Alamar Blue assay (mean \u00b1 S.D., n = 4). (B) Sensitivity of wild-type and resistant HCT-116 cells to CT8 and CT9 and the identified heterozygous S61\u03b1 mutations. (C) Untagged Sec61\u03b1 constructs are expressed in a tetracycline-dependent manner similarly as endogenous Sec61\u03b1.\n\nCollectively, the mutagenesis data suggest that helical propensity, hydrophobicity, and charge distribution can influence TMD movement through the lateral gate in opposition to CT8 binding. This apparent competitive relationship is indicated by shifts in the CT8 dose-response curves as a result of TMD mutations (Figure 6). Rather than attribute these differences solely to thermodynamic partitioning of the TMD into the lipid phase (Hessa et al., 2005, 2007), we propose that escape from the CT8 arrest point involves dynamic interactions between the TMD and the hydrophobic helices of the lateral gate (TM2/3 and TM7/8), in addition to interactions with membrane lipids. We speculate that these combined interactions, coupled with nascent chain elongation, ultimately cause the lateral gate to open, a conformational change that is opposed by cotransin binding to Sec61.\n\n### Mutations in the lumenal plug of Sec61\u03b1 confer resistance to cotransins\n\nTo gain further molecular insight into the mechanism of CT8-mediated arrest, we sought to determine its binding site on Sec61\u03b1. Repeated attempts to identify the CT7 photo-crosslinking site by mass spectrometry were unsuccessful, likely due to the challenge of analyzing heterogeneous, hydrophobic peptides derived from a CT7/Sec61\u03b1 photo-conjugate. Given that CT8 and its more potent analog CT9 are cytotoxic to certain cancer cell lines (Figure 7A and our unpublished results), we reasoned that it should be possible to identify resistance-conferring alleles of Sec61\u03b1 by genetic selection. With few exceptions, dominant resistance mutations that reduce a drug\u2019s binding affinity localize to the drug\u2019s binding site or its immediate vicinity; confidence in this interpretation is especially high when multiple resistance mutations localize to the same site (Campbell et al., 2001; Shah et al., 2002; Wacker et al., 2012), although remote allosteric effects on drug binding are also possible.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig7-v1.jpg)\n\n**Figure 7.:** (A) Parental HCT-116 cells and resistant clones were treated with increasing concentrations of CT8 for 72 hr, and viability was assessed by the Alamar Blue assay (mean \u00b1 S.D., n = 4). (B) HEK293-FRT cells stably expressing wild-type or mutant Sec61\u03b1 were transfected with a plasmid encoding TNF\u03b1 and treated with increasing concentrations of CT8. After 24 hr, TNF\u03b1 expression was analyzed by immunoblotting. (C) CT7 photo-crosslinking to recombinant wild-type and mutant FLAG-Sec61\u03b1. Microsomes were incubated with 250 nM CT7 in the presence or absence of excess CT9 (10 \u00b5M), photolyzed, and analyzed by in-gel fluorescence and immunoblotting as in Figure 1C. (D) Homology model of human Sec61\u03b1 showing the location of cotransin resistance mutations (red) and the TMD docking site (yellow). Lateral gate helices colored as in Figure 4E.\n\nWe exposed the DNA repair-defective tumor cell line HCT-116 (Wacker et al., 2012) to cytotoxic concentrations of CT9, our most potent cotransin variant (see \u2018Materials and methods\u2019 for details). After 9\u201312 days, during which time most cells died, several colonies were isolated and found to display varying degrees of resistance to both CT8 and CT9 (Figure 7A, Figure 6\u2014figure supplement 1A, respectively). After amplifying the S61A1 coding sequence from total RNA, Sanger sequencing revealed that 11 of 11 resistant cell lines had one of five single-nucleotide transitions (all heterozygous) at four amino acid positions (Figure 7A, Figure 6\u2014figure supplement 1B). All five mutations associated with CT8 resistance cluster in the same region of Sec61\u03b1 (Figure 7D), at the interface between the plug (R66I, R66G, G80V, S82P) and the C-terminal end of TM3 (M136T). This interface defines the side of the lateral gate that is closest to the ER lumen. The fact that five independent resistance mutations localize within \u223c10 \u00c5 of each other to the lumenal plug region argues that this is the cotransin binding site.\n\nWe characterized two mutations in greater detail, one in the plug (R66I) and the other at the lumenal end of TM3 (M136T). To determine whether these mutants support TNF\u03b1 integration in the presence of CT8, we generated stable cell lines that express wild-type or mutant Sec61\u03b1 constructs from a tetracycline-inducible promoter. For these experiments, we used HEK293 cells, whose viability is unaffected by CT8 treatment for at least 72 hr. Upon induction with tetracycline, both wild-type and mutant Sec61\u03b1 transgenes (untagged) were expressed at similar levels as the endogenous protein (Figure 6\u2014figure supplement 1C). Whereas CT8 potently inhibited TNF\u03b1 expression in cells with the wild-type Sec61\u03b1 transgene (IC50 \u223c 50 nM), it had little effect in cells carrying either the M136T or R66I mutant (Figure 7B). These results indicate that the Sec61\u03b1 mutants assemble into functional translocons and that the M136T and R66I mutations are sufficient to confer dominant resistance to CT8. Because we could not easily distinguish endogenous Sec61\u03b1 from the mutants expressed in HEK293 cells, we measured cotransin binding to recombinant Sec61\u03b1/\u03b3 overexpressed in Sf21 insect cells, as described in Figure 4. CT7 photo-crosslinking assays revealed specific binding to wild-type Sec61\u03b1, but greatly reduced and undetectable binding to the M136T and R66I mutants, respectively (Figure 7C). Although the mutations may have subtle effects on Sec61 function, the CT7 photo-crosslinking data argue that reduced cotransin binding causes resistance in the cell proliferation and TNF\u03b1 expression assays.\n\n### Conclusions and perspective\n\nStructural, mutagenesis, and crosslinking analyses have all converged on the lateral gate as the site where hydrophobic segments exit the central pore of Sec61 and enter the lipid bilayer (du Plessis et al., 2009; Egea and Stroud, 2010; Frauenfeld et al., 2011; Plath et al., 1998; Trueman et al., 2011; Tsukazaki et al., 2008; Zimmer et al., 2008). However, the mechanism and timing of TMD egress, along with the role of the TMD itself in the integration process, have remained unclear. In this study, we have exploited a small-molecule inhibitor of cotranslational integration (cotransin, CT8) to trap and interrogate a nascent TMD prior to its exit from the cytosolic vestibule. By analyzing recombinant cysteine mutants of Sec61\u03b1, we identified a TMD docking site near the cytosolic tip of the lateral gate. This intimate association suggests that the TMD helix may facilitate opening of the lateral gate. Indeed, such a gating transition may underlie the recently described \u2018pulling force\u2019 exerted by the translocon on a nascent TMD just before its integration into the membrane (Ismail et al., 2012).\n\nFigure 8 depicts a model that places our biochemical data in the context of Sec61/SecY structures determined by x-ray crystallography and cryoelectron microscopy. In this model, RNC targeting to Sec61 allows partial opening of the lateral gate toward the cytosol, as observed in a crystal structure of SecYE bound to a Fab fragment (Tsukazaki et al., 2008). In the SecYE/Fab structure, separation of TM2b from the cytosolic end of TM8 creates a notch in the lateral gate, which we propose to be the initial docking site for a nascent TMD after its release from SRP (Figure 8, middle). At the 96-mer stage, docking of the TMD to this site enables BMH crosslinking to Sec61\u03b1 (Figure 2B). As the nascent chain elongates, interhelical contacts that seal the lateral gate are progressively destabilized. This key transition, which is opposed by CT8 binding (most likely to the plug), leads to complete intercalation of the TMD between helices TM2/3 and TM7/8 of the lateral gate, concomitant with exposure of the TMD to membrane lipids (Figure 8, right). As indicated by the pronounced rightward shifts in the CT8 dose-response curves (Figure 6), TMDs with greater hydrophobicity and helical propensity are better able to progress to this state, presumably in kinetic competition with CT8.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01483/elife-01483-fig8-v1.jpg)\n\n**Figure 8.:** Following RNC targeting to Sec61 (left panel), the TMD docks to a notch in the cytosolic tip of the lateral gate created by the separation of TM2b from TM8 (middle panel). This otherwise transient, pre-integrated configuration is stabilized by CT8 binding to the lumenal plug region of Sec61\u03b1. Interactions between the TMD and the lateral gate facilitate gate opening and TMD movement to a second site on the lipid-exposed face of the lateral gate (right panel). CT8 blocks TMD movement from the cytosolic docking site to the external, lipid-exposed site. Structural models (bottom) were adapted from PDB entries 1RH5 (left panel, closed lateral gate), 2ZJS (middle panel, pre-integrated configuration), and 3J00/3J01 (right panel, integrated configuration). The model for the pre-integrated TMD configuration was approximated by manually placing the TMD (modeled as an \u03b1-helix) into the cytosolic vestibule between TM2b and TM7 (PDB entry: 2ZJS), consistent with the BMOE crosslinking data. Lateral gate helices TM2b/3 and TM7/8 are blue and green, respectively, while the TMD helix is red.\n\nOur discovery of five resistance mutations in Sec61\u03b1 that localize to the lumenal plug region suggests that CT8 binds proximal to this site. This conclusion is further strengthened by the observation that R66I and M136T mutations abrogate CT7 binding (Figure 7C), although we cannot exclude the possibility that mutations in the plug perturb cotransin binding to a remote site. Given that binding to the lumenal plug arrests the TMD in its cytosolic docking site >20 \u00c5 away, cotransins appear to exhibit characteristics of both allosteric and competitive inhibitors. We note that the closed conformation of the channel (Van den Berg et al., 2004) cannot accommodate a molecule the size of CT8, whereas a cavity, outlined by the identified mutations and roughly large enough for CT8, is apparent in structures with a partially open lateral gate (Egea and Stroud, 2010). We speculate that CT8 binding stabilizes interactions between the plug, TM3, and TM7, thereby sealing the lateral gate at its lumenal end in a manner similar to that proposed for the Q129L and N302L mutations in yeast Sec61p (Trueman et al., 2012). In this view, CT8 acts as a molecular wedge that impedes TMD integration by blocking displacement of the plug. Alternatively, CT8 binding may itself result in the displacement or structural rearrangement of the plug; here again, CT8 would act as a molecular wedge that prevents TMD movement through the lumenal end of the lateral gate. This model is suggested by a recent electron crystallographic structure of the SecYEG complex in which a signal peptide bound to the lipid-exposed face of the lateral gate displaces the plug 10 \u00c5 relative to apo-SecYEG (Hizlan et al., 2012). Further structural studies are needed to provide an atomic-resolution view of how cotransins engage Sec61 to arrest TMD integration.\n\n## Materials and methods\n\n### Antibodies, proteins, and reagents\n\nThe following commercially available primary antibodies and antibody resins were used: anti-FLAG M2 antibody and affinity matrix (Sigma, St. Louis, MO), anti-HA affinity matrix (Roche, Basel, Switzerland), anti-Sec61\u03b3 (Proteintech Group, Chicago, IL), anti-Sec61\u03b1 (Novus Biologics, Littleton, CO), anti-human TNF\u03b1 (R&D Systems MAB2101, Minneapolis, MN). The antibody directed against Sec61\u03b2 was previously described (Fons et al., 2003). Secondary antibodies conjugated to HRP (Santa Cruz Biotechnology, Dallas, TX) or infrared-dyes (LI-COR Biosciences, Lincoln, NE) were purchased. Preparations of rabbit reticulocyte lysate (Sharma et al., 2010) and canine rough microsomes (Walter and Blobel, 1983) have been previously described. CT7 and CT8 were prepared as previously described (MacKinnon et al., 2007). CT9 was prepared as previously described (Maifeld et al., 2011). The sources of other reagents are noted in the text and were used without further purification.\n\n### Plasmid and DNA construction\n\nSite-directed mutagenesis was performed using the QuikChange method (Stratagene, La Jolla, CA) and all constructs were verified by DNA sequencing. The plasmid encoding human TNF\u03b1 was previously described (Maifeld et al., 2011). DNA templates encoding truncated TNF\u03b1 constructs were prepared by PCR using a forward primer that contained a T7 promoter (bold) and a Kozak consensus sequence (underlined) followed by a region complementary to the 5\u2032-end of TNF\u03b1 (5\u2032-GCCTAATACGACTCACTATAGGGAGACCATGAGCACTGAAAGCATGATCCGG-3\u2032). The reverse primer annealed to various regions of the TNF\u03b1 coding region and introduced three additional methionines at the C-terminus to improve detection of translated products by autoradiography. The indicated length of the nascent chain includes the three terminal methionines. A similar PCR-based strategy was used for production of full-length TNF\u03b1 DNA templates except the reverse primer included a stop codon. DNA templates encoding N-terminally tagged TNF\u03b1 constructs were prepared by PCR using forward primers encoding either the 3x-FLAG or 3x-HA epitopes immediately upstream of the TNF\u03b1 translational start site.\n\nConstruction of the composite MultiBac baculovirus expression vector followed the previously described strategic guidelines (Fitzgerald et al., 2006). Briefly, human Sec61\u03b1 and Sec61\u03b3 genes were amplified by PCR using templates kindly provided by Professor Tom Rapoport (Harvard Medical School), and a 3x-FLAG tag was introduced into the N-terminus of Sec61\u03b1. The Sec61\u03b1 subunit was then cloned into the MCS-1 of vector pUCDM by In-Fusion cloning according to manufacturer\u2019s instructions (Clontech, Mountain View, CA). The Sec61\u03b3 subunit was cloned into SacI/HindIII sites (MCS-2) of vector pKL. The two vectors were then fused by Cre-recombination yielding a \u2018master plasmid\u2019, which was used to transform DH10\u03b1 MultiBac cells for preparation of the MultiBac expression vector. Site-directed mutagenesis to create Sec61\u03b1 mutants was performed on the master plasmid. All constructs were verified by DNA sequencing.\n\n### SDS-PAGE, autoradiography and western blotting\n\nUnless otherwise noted, SDS-PAGE was performed with 12% Tris/Tricine polyacrylamide gels. Prior to autoradiography, gels were stained with Coomassie brilliant blue to confirm equal protein loading and dried under vacuum. For quantitative autoradiography, dried gels were exposed to a storage phosphorous screen (GE Healthcare, San Francisco, CA), imaged on a Typhoon 9400 phosphorimager (Amersham), and the images were quantified using ImageJ software (NIH). Dose-response data were normalized to the DMSO control and fitted with a three-parameter equation using GraphPad Prism (GraphPad Software). For qualitative autoradiography, dried gels were exposed to Biomax MR film (Kodak , Rochester, NY).\n\nFor western blotting, proteins were transferred to nitrocellulose membranes. Following blocking of the membranes with 5% milk in TBST (50 mM Tris, 150 mM NaCl, 0.05% TX-100, pH 7.6), membranes were incubated with the appropriate primary antibodies at the following dilutions: 1:10,0000 (anti-Sec61\u03b1), 1:20,000 (anti-Sec61\u03b2), 1:500 (anti-Sec61\u03b3), 1:20,000 (anti-FLAG). Blotting for Se61\u03b3 typically required overnight incubation at 4\u00b0C with the primary antibody. Following incubation with primary antibodies, membranes were washed and incubated with the appropriate HRP-conjugated secondary antibodies followed by chemiluminescent detection (GE Healthcare). Alternatively, blots were incubated with the appropriate infrared dye-conjugated secondary antibodies followed by imaging on an Odyssey infrared fluorescent scanner (LI-COR Biosciences).\n\n### Cell-free translation/translocation assays\n\nCell-free transcription, translation, translocation, and Protease K (PK) protection assays were performed as previously described (Sharma et al., 2010). Briefly, DNA templates encoding full-length or truncated TNF\u03b1 constructs were transcribed with T7 Polymerase (New England Biolabs, Ipswich, MA) for 1 hr at 37\u00b0C and used immediately in the subsequent translation/translocation reactions. Translocation reactions were assembled at 0\u00b0C in the presence of CTs (added from a 100 \u00d7 stock in DMSO) or an equivalent volume of DMSO. Unless otherwise indicated, reactions included 35S-Methionine (Perkin Elmer, Waltham, MA, 2 \u03bcCi per 10 \u03bcl translation), and either canine pancreatic microsomes (CRM, 1 \u2018equivalent\u2019 per 10 \u03bcl translation, as defined in Walter and Blobel, 1983), or microsomal membranes derived from Sf21 insect cells that contained an equivalent amount of recombinant Sec61 complex. Translation was initiated by transferring the reactions to 32\u00b0C for 30 min and stopped by removing the reactions to ice.\n\nTo isolate ER microsome-targeted RNCs, translation reactions were diluted with an equal volume of ice-cold high salt buffer (1M KOAc, 10 mM Mg(OAc)2, 50 mM Hepes, pH 7.8) and sedimented through a high salt sucrose cushion (0.5 M KOAc, 0.5 M sucrose, 5 mM Mg(OAc)2, 50 mM Hepes, pH 7.8) at 4\u00b0C in a TLA100 rotor (Beckman) for 10 min at 50,000 rpm. The membrane pellet was re-suspended to the original volume in membrane buffer (100 mM KOAc, 250 mM sucrose, 2 mM Mg(OAc)2, 0.1 mM TCEP, 50 mM Hepes, pH 7.8).\n\nFor analysis of tRNA-associated nascent chains following protease digestion (as in Figure 2\u2014figure supplement 1), reactions were quenched with PMSF as previously described (Sharma et al., 2010) and then rapidly diluted into 10 volumes of boiling 1% SDS, 0.1 M Tris, pH 6.8. Samples were then resolved on 4\u201312% NuPAGE Bis/Tris gels (Invitrogen, Carlsbad, CA), which run at neutral pH and therefore help preserve the alkaline-sensitive peptidyl-tRNA bond.\n\n### Bis-maleimide crosslinking\n\nER microsome-targeted RNCs in membrane buffer were isolated as described above and treated with 50 \u03bcM bis-maleimidohexane (BMH, Pierce, Rockford, IL) or bis-maleimidoethane (BMOE, Pierce) for 30 min at 0\u00b0C. To analyze total crosslinked products, reactions were quenched by addition of an equal volume of 2 \u00d7 Laemmli sample buffer (which contains a large molar excess of DTT over BMH or BMOE), heated for 1 min at 95\u00b0C, and analyzed by SDS-PAGE and autoradiography. To immunoprecipitate (IP) proteins from the reactions, the samples were quenched with 1 mM DTT for 10 min at 0\u00b0C, denatured with 1% SDS at 95\u00b0C for 1 min, and diluted 10-fold with IP buffer (1% Triton-X 100, 100 mM NaCl, 50 mM Hepes, pH 7.8). Anti-FLAG affinity resin or protein A sepharose (GE Healthcare) along with the appropriate primary antibodies were then added and the samples were rotated overnight (\u223c12 to 16 hr) at 4\u00b0C. The resin was washed four times with IP buffer supplemented with 0.1% SDS, and bound proteins were eluted with 1 \u00d7 Laemmli sample buffer at 95\u00b0C for 1 min. Eluted material was analyzed by SDS-PAGE and autoradiography.\n\n### NEM accessibility\n\nER microsome-targeted RNCs in membrane buffer were divided into two equal portions (10 \u03bcl each) and incubated with either 200 \u03bcM N-ethylmaleimide (NEM, Sigma Aldrich) or an equal volume of DMSO for 1 hr at 0\u00b0C. NEM was then quenched with 100 \u03bcl of quench buffer (5 mM DTT, 100 mM NaCl, 2 mM Mg(OAc)2, 50 mM Hepes, pH 7.8) for 10 min at 0\u00b0C, and the membranes were isolated by centrifugation at 4\u00b0C in a TLA100 rotor (Beckman) for 10 min at 70,000 rpm. The membrane pellet was then solubilized in a detergent-containing buffer (1% SDS, 0.25 mM TCEP, 50 mM Hepes, pH 7.8) and treated with an equal volume (10 \u03bcl) of 16 mM 5 kDa PEG-maleimide (Nektar, San Francisco, CA), prepared in 50 mM Hepes (pH 7.8). Reactions were incubated at 32\u00b0C for 1 hr and quenched with 20 mM DTT for 20 min at 32\u00b0C. To completely hydrolyze the nascent chain-tRNA bond prior to SDS-PAGE (which simplified the appearance of autoradiograms), samples were treated with 100 \u03bcl of 200 mM Na2CO3 (pH 12) for 30 min at room temperature, then diluted with 1 ml of IP buffer (1% TX-100, 100 mM NaCl, 50 mM Hepes, pH 7.8), and precipitated with 10% trichloroacetic acid (TCA). Precipitated proteins were washed twice with ice-cold acetone, dissolved in 1 \u00d7 Laemmli sample buffer and resolved by SDS-PAGE. The quantities of unmodified nascent chains (NC) and PEG-modified nascent chains (NC \u00d7 PEG) were determined by phosphorimaging. The fraction of PEG-modified chains was defined as NC \u00d7 PEG/(NC \u00d7 PEG + unmodified NC). These values were normalized to control reactions that contained no NEM. NEM accessibility was defined as 1 \u2212 normalized fraction of PEG-modified chains.\n\n### Photo-affinity labeling\n\nSf21 microsomes containing 50 nM Sec61 were treated with either 10 \u03bcM CT9 (Maifeld et al., 2011) or DMSO for 30 min at 0\u00b0C, followed by incubation with 50 nM CT7 for an additional 30 min at 0\u00b0C. Samples were then photolyzed and crosslinked proteins were detected by click chemistry, SDS-PAGE, and in-gel fluorescent scanning as previously described (MacKinnon et al., 2007; MacKinnon and Taunton, 2009).\n\n### Sf21 cell culture, protein expression and purification of microsomes\n\nSf21 insect cells were grown and maintained in SF-900 II serum-free media (Gibco) at 27\u00b0C following standard protocols (Fitzgerald et al., 2006). The cells were transfected with the MultiBac vector using Fugene HD transfection reagent according to the manufacturer\u2019s instructions (Roche), and virus was propagated following published methods (Fitzgerald et al., 2006). For expression of Sec61\u03b1/\u03b3 complexes, a 100 ml culture of cells at 0.5 \u00d7 106 cells/ml was infected with 2 ml of first generation virus (V1), which resulted in immediate arrest of cell growth. The cells were harvested 48 hr after growth-arrest by sedimentation at 800\u00d7g for 5 min. The cell were swollen in 20 ml hypotonic buffer (20 mM Hepes, pH 7.8) at 0\u00b0C for 20 min and broken with a microfluidizer (Emulsiflex-C5) at 15,000 psi for 10 min. The lysate was immediately adjusted to 100 mM KOAc, 5 mM Mg(OAc)2, 1 mM EDTA, and 1 \u00d7 EDTA-free protease inhibitor cocktail (Roche) and then clarified by centrifugation at 1000\u00d7g for 10 min. To isolate microsomal membranes, the clarified lysate was centrifuged at 45,000 rpm in a type 70 Ti rotor (Beckman) for 1 hr at 4\u00b0C and the resulting microsomal pellet was re-suspended with a glass dounce in 400 \u03bcl of buffer (50 mM Hepes, 250 mM sucrose, 1 mM CaCl2, pH 7.8). To remove endogenous RNA that co-purified with the membranes, the microsomes were treated with micrococcal nuclease (New England Biolabs, 150 units/ml final concentration) at 25\u00b0C for 10 min. The nuclease activity was quenched by adjusting the extract to 2 mM EGTA. Microsomes containing various Sec61 mutants were normalized for total protein by BCA protein assay (Pierce) and equivalent amounts of total protein resolved by SDS-PAGE next to a serial dilution of canine rough microsomes (CRM) containing a known concentration of the Sec61 complex. Proteins were then transferred to nitrocellulose and western blotted for the FLAG epitope, Sec61\u03b1, and Sec61\u03b3. Following this standardized protocol, the expression level between different Sec61\u03b1 mutants was found to be very similar and the concentration of recombinant FLAG-Sec61 in the final microsomal preparation was similar to the concentration of Sec61 in CRM.\n\n### Immunopurification of RNC-Sec61 complexes\n\nTranslation reactions (100 \u03bcl) were programed with mRNA templates encoding an N-terminal 3x-FLAG tag or 3x-HA tag (control) followed by the first 126 residues of TNF\u03b1. Reactions were assembled in the presence or absence of CT7 (1 \u03bcM). Following translation, ER microsome-targeted RNCs were isolated as described above, except the membrane pellet was brought up in two volumes of membrane buffer supplemented with 1% Deoxy BigChap (DBC, Anatrace, Santa Clara, CA). The membranes were solubilized for 10 min at 0\u00b0C and insoluble material removed by centrifugation at 50,000 rpm in a TLA100 rotor at 4\u00b0C for 10 min. The supernatant was then incubated with anti-FLAG affinity resin and mixed with rotation at 4\u00b0C for 2.5 hr. The resin was then sedimented (600 \u00d7 g, 3 min, 4\u00b0C) and washed four times with 1 ml of membrane buffer containing 0.3% DBC. After the final wash, bound proteins were eluted with 250 \u03bcg/ml of 3x-FLAG peptide (Sigma) in membrane buffer containing 0.3% DBC. The eluted material was analyzed directly by SDS-PAGE and semi-quantitative western blotting, or was first photolyzed and then subjected to click chemistry and analyzed by SDS-PAGE and in-gel fluorescent scanning. Typically, \u223c0.3 pmol of purified RNC-Sec61 complexes were obtained from a 100 \u03bcl translation reaction.\n\n### Cell culture, cell viability assay, and immunoblot analysis\n\nHCT-116 cells and clonal lines were cultured in McCoy\u2019s 5A medium (Invitrogen) at 37\u00b0C with 5% CO2. HEK293-FRT cells were grown in Dulbecco\u2019s Modified Eagle\u2019s Medium (Invitrogen) and grown at 37\u00b0C with 10% CO2. All cultures were supplemented with 10% FBS and penicillin-streptomycin. Cell viability assays were performed by plating 2500 HCT-116 cells in flat-bottomed 96-well plates and treating with CT8 or CT9 the following day. After 72 hr, cell viability was analyzed using the Alamar Blue assay (Invitrogen) according to the manufacturer\u2019s instructions. HEK293 cells stably expressing wild-type or mutant Sec61\u03b1 were generated using Flp-In 293 T-Rex cells (Invitrogen) as previously described (Henise and Taunton, 2011). For transient transfection experiments, 1.7 \u00d7 105 HEK293 T-Rex cells were seeded in 12-well dishes and transfected with a TNF\u03b1 expression plasmid (Maifeld et al., 2011) using Lipofectamine 2000 (Invitrogen) for 2 hr, after which the culture media was changed to one containing increasing concentrations of CT8. After 24 hr, cells were harvested and lysed in 0.5% Triton X-100 in PBS. The resulting lysates were normalized using the Bradford assay (Bio-Rad) and 20 \u00b5g of total protein was resolved on 12% Tris-Tricine gels and analyzed by immunoblotting.\n\n### Selection of resistant clones, RNA purification, RT-PCR and sequencing\n\nTo derive resistant cell lines, HCT-116 cells were incubated with 28\u201341 nM CT9 for 9\u201312 days, after which cell colonies were isolated by ring cloning and cultured in drug-free media. Total RNA was isolated from HCT116 cells using the RNeasy Mini Kit (Qiagen, Venlo, Netherlands) according to the manufacturer\u2019s instructions. Total cDNA was synthesized using anchored oligo-dT primers and Superscript III reverse transcriptase (Invitrogen) and S61A1 cDNA was amplified with Phusion polymerase (Thermo Fisher Scientific) and sequenced bi-directionally by Sanger sequencing.\n",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "054676c6-ae69-4c77-9e28-6c864edfed85",
+      "submission_id": "11998f55-6975-4f73-9a25-c16e64106913",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Randy Schekman, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01483.017](https://doi.org/10.7554/eLife.01483.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAn allosteric Sec61 inhibitor traps nascent transmembrane helices at the lateral gate\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Randy Schekman and Reid Gilmore.\n\nThe Senior editor, Randy Schekman, and the three reviewers discussed their comments before we reached this decision, and the Senior editor has assembled the following comments to help you prepare a revised submission.\n\nMacKinnon and colleagues have examined the mechanism of cotransin inhibition of the mammalian Sec61 complex. The authors present convincing evidence that cotransin stabilizes an early targeting intermediate. Elegant crosslinkng experiments localized the TM binding site to the cytosolic vestibule of Sec61. Point mutations in the TNF TM span reduce or enhance sensitivity to cotransin, depending upon whether the mutation increases hydrophobicity or alter the predicted helical propensity of the TM span. Cotransin insensitive mammalian cells were isolated, and found to have point mutations in the Sec61 plug domain. The most important feature of this manuscript is that it provides evidence for an initial binding site for signal sequences prior to insertion into the lateral gate.\n\nThe inhibitor is used to provide evidence for the existence of a transient pre-insertion intermediate but since this is based on the use of the inhibitor one may wonder about the general significance of this state. Several additional experiments are requested:\n\n1) Figure 1D: What is the exact evidence that the protease-protected fragment corresponds to the TMD plus the luminal C-terminal domain of TNF\u03b1. It seems to be based on an educated guess of the authors, but TMD regions run aberrantly on SDS-PAGE such that predicted mass on such gels may not be precise. The fragment might correspond to a ribosome-shielded peptide. Also, the fragment does not disappear completely after detergent solubilisation, which remains unexplained. The authors should demonstrate that the protected fragment contains the TM span, and also is a peptidyl-tRNA and whether Cys-46 or some of the other cysteine is part of the PK inaccessible fragment using the corresponding mutant TNF\u03b1.\n\n2) Paragraph \u2018CT8 traps the TMD helix in a defined orientation\u2019: The authors argue that the CT8-arrested TMD/Sec61 complex would correspond to an otherwise transient, pre-integrated intermediate which is a selling point of the manuscript. However, this should be taken with caution since the experiments make use of a CT8-blocked translocon that is no longer responsive to the incoming nascent chain. It is unclear if the arrested state is truly a transient intermediate or the direct result of a block at Sec61, yielding an arrested non-physiological state where the translocon is unable to open because of its interactions with CT8. The authors argue that inhibition is allosteric, of which I am in complete agreement; however, this would suggest that the Sec61\u03b1/cotransin complex is in a distinct conformation relative to the channel alone. This would further suggest that the nature of the TMD interaction in the presence of cotransin does not necessarily reflect an on-pathway intermediate. In fact, the data might support a unique interaction as Figures 1C and 2B suggest that the nature of the interaction is distinct as CT8 enhances the pre-integration interaction (the authors note this at the end of the paragraph \u2018CT8 stabilizes a transient pre-integrated intermediate\u2019). This distinction is not critical to the story; however, it does qualify the ability to describe the cotransin complex as a 'pre-integrated intermediate'. In fact, the authors argue that a true pre-integrated TMD complex likely samples multiple conformations. So, at best, they are stabilizing one possible intermediate. In my opinion, they may be stabilizing a unique state that only appears in the presence of cotransin. A remedy might just be to provide some clarity to the 'intermediate' discussion early on.\n\n3) Figure 1F, Figure 1\u2013figure supplement 1. It seems odd that the C49 appears to be 20% more accessible in the presence of CT8 when nascent chains are short (80 to 106 residues). This difference is small relative to that observed was observed with long nascent chains, so it does not raise concerns about the main conclusion. Do the authors have any explanation for this unexpected difference?\n\n4) Figure 2A. The authors state that the open and closed diamonds correspond to the NC-tRNA crosslinked to Sec61-\u03b1 and Sec61-\u03b2. Identification of the major crosslinked bands was satisfactory (Figure 2\u2013 figure supplement 1). Have the authors shown that the NC-tRNA band and the open and closed diamond bands are base-labile as expected for peptidyl-tRNA? If so, they should add this statement to the text.\n\n5) Figure 3D and Figure 3\u2013figure supplement 1. The Results section states that the crosslinking pattern of V41P 126mers is different even though RNC targeting is not significantly affected. The crosslinking pattern is clearly different, but I am not sure how the authors reach the conclusion that RNC of V41P targeting was normal. The Sec61\u03b1 crosslinks are similar in intensity (\u00b1CT8). Crosslinks seem to be elevated for -CT8 and reduced for +CT8. Sec61\u03b2 crosslinks are mainly in the +CT8 lanes. In a later figure, data is presented that V41P 126mers progress to the integrated form based upon protease digestion, so it is not clear why any crosslinking is observed in the -CT8 case. Overall, I wonder whether the V41P mutation reduces integration at multiple points in the absence of CT8, and as such, whether analysis of this sample adds definitive information to Figure 3D.\n\n6) The observation that mutations in the plug region causes resistance to CT9 inhibition and reduced CT7 binding is interesting, but is no direct proof for a CT9 interaction site. The authors conclude that the mutant residues define the binding site for cotransin. While this interpretation is possible, an alternative interpretation is that point mutations in the plug domain indirectly perturb the cotransin binding site. The basis for this alternative interpretation is that there are a number of previously identified point mutations in the plug domain that are thought to destabilize the plug domain and allow more permissive translocation of precursors (the prl mutants). The most effective mutations identified in the current study (R66G and R66I) are probably prl alleles. R66 in human Sec61 corresponds to R67 in S. cerevisiae Sec61 and N65 in E. coli SecY. Martin Spiess isolated the R67E and R67C alleles, both of which have the prl phenotype. The E. coli N65Y mutant corresponds to prlA8914, which was isolated by the Beckwith lab. Rather it could be that these mutations effect a conformational change in Sec61-\u03b1 that also reduces the effectiveness of CT9. In this respect, the probed sites cluster in a region that when mutated in the bacterial SecY causes prl mutations. While the Discussion tempers this, the description of the mutations in the results gives a strong impression that there is only one interpretation. It might be useful to include some other possible explanations. Certainly, with there being such a strong allosteric effect, one might imagine that mutations preventing this would be equally likely to appear. If one thinks broadly about the translocation channel, many mutations that affect specific function do not map to the location of function.\n",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "42cbd113-53d1-40b8-b640-a26ba6eddba3",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C1",
+      "claim": "Most eukaryotic membrane proteins are cotranslationally integrated into the endoplasmic reticulum (ER) membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Most eukaryotic membrane proteins are cotranslationally integrated into the endoplasmic reticulum (ER) membrane (Shao and Hegde, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shao and Hegde, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "18eaedbe-1e0e-4aca-8d81-cb2c41055145",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C2",
+      "claim": "The first hydrophobic segment of a nascent membrane protein is often a transmembrane domain (TMD).",
+      "claim_type": "EXPLICIT",
+      "source": "This process begins when the first hydrophobic segment of a nascent membrane protein, often a transmembrane domain (TMD), emerges from a translating ribosome and is recognized by the signal recognition particle (SRP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "90326d75-f7cb-4ebd-a4a3-d69257b950d7",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C3",
+      "claim": "The SRP system targets the ribosome-nascent polypeptide complex (RNC) to the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRP system (Akopian et al., 2013) targets the ribosome-nascent polypeptide complex (RNC) to the ER membrane and transfers it to a translocation channel, or translocon, the central component of which is the Sec61 complex (Osborne et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Akopian et al., 2013 and Osborne et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "dad0a730-ecab-4c68-b8b5-ebbb124c5e43",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C4",
+      "claim": "The central component of the translocon is the Sec61 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRP system (Akopian et al., 2013) targets the ribosome-nascent polypeptide complex (RNC) to the ER membrane and transfers it to a translocation channel, or translocon, the central component of which is the Sec61 complex (Osborne et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Osborne et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "6b659c22-7a58-4338-a56b-fa3766b289f9",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C5",
+      "claim": "Sec61 binds the ribosome near the polypeptide exit tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec61 binds the ribosome near the polypeptide exit tunnel and mediates both cotranslational translocation and TMD integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "d93ebab0-1703-41e2-a21a-d41fe5ed8adc",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C6",
+      "claim": "The Sec61 channel opens laterally toward the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the Sec61 channel opens not only toward the ER lumen, but also laterally toward the lipid bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "d76e4b05-4507-41c4-aa3d-dfd89059bd95",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C7",
+      "claim": "Lateral TMD release through the Sec61 channel was appreciated long ago.",
+      "claim_type": "EXPLICIT",
+      "source": "While lateral TMD release through the Sec61 channel was appreciated long ago (Martoglio et al., 1995; Do et al., 1996; Mothes et al., 1997), the precise mechanism of this crucial step in membrane protein biogenesis remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Martoglio et al., 1995; Do et al., 1996; Mothes et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "366bbc4d-9e34-480c-93f0-b7dd04bffaa6",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C8",
+      "claim": "The precise mechanism of lateral TMD release remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "While lateral TMD release through the Sec61 channel was appreciated long ago (Martoglio et al., 1995; Do et al., 1996; Mothes et al., 1997), the precise mechanism of this crucial step in membrane protein biogenesis remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "181333eb-dd69-4218-914c-7af35dd4479d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C9",
+      "claim": "One model proposes that the TMD equilibrates between the aqueous Sec61 channel and the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "In one model, the TMD is thought to equilibrate between the aqueous Sec61 channel and the lipid bilayer (Heinrich et al., 2000; Hessa et al., 2007; Ojemalm et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Heinrich et al., 2000; Hessa et al., 2007; Ojemalm et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "75f0e075-6d84-4ad7-a59d-6d938e0b4fd9",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C10",
+      "claim": "TMD integration is facilitated by an intrinsically dynamic lateral gate in Sec61.",
+      "claim_type": "EXPLICIT",
+      "source": "This process would be facilitated by an intrinsically dynamic lateral gate in Sec61 that allows the polypeptide segment inside the channel to reversibly sample the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the equilibration model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "1f742498-8279-490e-96e4-71ffbb1a68f1",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C11",
+      "claim": "A second model proposes that TMD integration is facilitated by direct interactions with Sec61.",
+      "claim_type": "EXPLICIT",
+      "source": "A second model proposes that TMD integration is facilitated by direct interactions with Sec61.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an alternative model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "b4739505-8ca0-4df6-8ac8-6f952e6ea4d2",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C12",
+      "claim": "The TMD of stalled RNCs crosslinks to Sec61.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does the TMD of such stalled RNCs crosslink to Sec61, but it also appears to be oriented in a specific manner, as judged by asymmetric crosslinks to adjacent TMD residues (McCormick et al., 2003; Sadlish et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McCormick et al., 2003; Sadlish et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "629d097c-215d-4d0c-a158-58b3a8d5ab4b",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C13",
+      "claim": "The TMD appears to be oriented in a specific manner in stalled RNCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does the TMD of such stalled RNCs crosslink to Sec61, but it also appears to be oriented in a specific manner, as judged by asymmetric crosslinks to adjacent TMD residues (McCormick et al., 2003; Sadlish et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McCormick et al., 2003; Sadlish et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "a3a9841d-1f10-4981-9cdc-2f83382e1d75",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C14",
+      "claim": "Molecular dynamics simulations suggest that lateral gating is facilitated by the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations further suggest that lateral gating is facilitated by the TMD and that TMD movement into the lipid bilayer is a kinetically irreversible event (Zhang and Miller, 2010, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhang and Miller, 2010, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "a6e8755e-4e7d-4231-a69a-0f982ccb8a08",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C15",
+      "claim": "TMD movement into the lipid bilayer is a kinetically irreversible event.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations further suggest that lateral gating is facilitated by the TMD and that TMD movement into the lipid bilayer is a kinetically irreversible event (Zhang and Miller, 2010, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhang and Miller, 2010, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "498fd686-fbfc-4c15-b6aa-d774fbd96d9d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C16",
+      "claim": "Analysis of cotranslational integration in yeast has revealed a kinetic barrier to TMD insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cotranslational integration in yeast has also revealed a kinetic barrier to TMD insertion (Cheng and Gilmore, 2006; Trueman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cheng and Gilmore, 2006; Trueman et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "7906b30b-fba0-4e44-a18e-7c644e5289c2",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C17",
+      "claim": "The crystal structure of the archaeal complex revealed that SecY comprises a compact bundle of 10 transmembrane helices (TM1\u201310).",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the archaeal complex revealed that SecY (homologous to eukaryotic Sec61\u03b1) comprises a compact bundle of 10 transmembrane helices (TM1\u201310) arranged in a pseudo-twofold symmetric structure, with TM1\u20135 and 6\u201310 forming two halves of a 'clamshell' (Van den Berg et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van den Berg et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "1e8cf8f2-9ded-41f6-95b4-eb3b47cd16e1",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C18",
+      "claim": "TM1\u20135 and 6\u201310 form two halves of a 'clamshell' structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the archaeal complex revealed that SecY (homologous to eukaryotic Sec61\u03b1) comprises a compact bundle of 10 transmembrane helices (TM1\u201310) arranged in a pseudo-twofold symmetric structure, with TM1\u20135 and 6\u201310 forming two halves of a 'clamshell' (Van den Berg et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van den Berg et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "1a9b4626-7550-48f0-8453-3ee31fa9461c",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C19",
+      "claim": "The interior of the clamshell forms an hourglass-shaped pore in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The interior of the clamshell forms an hourglass-shaped pore in the membrane, the center of which is occluded by a short \u03b1-helix termed the plug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural data cited to Van den Berg et al., 2004",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "4df85343-caaa-4d01-960e-e031f66a62e7",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C20",
+      "claim": "The center of the pore is occluded by a short \u03b1-helix termed the plug.",
+      "claim_type": "EXPLICIT",
+      "source": "The interior of the clamshell forms an hourglass-shaped pore in the membrane, the center of which is occluded by a short \u03b1-helix termed the plug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural data cited to Van den Berg et al., 2004",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "0a6459cb-805d-43bc-9853-be3d763177b0",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C21",
+      "claim": "The front of the clamshell forms a lateral gate at the interface between TM2/3 and TM7/8.",
+      "claim_type": "EXPLICIT",
+      "source": "The front of the clamshell, at the interface between TM2/3 and TM7/8, forms a lateral gate that, when opened, could provide direct access to the lipid bilayer from the central pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural data cited to Van den Berg et al., 2004",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "76ad2206-d19b-4a01-87fe-fb99c6adccca",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C22",
+      "claim": "Translocation across the membrane requires movement of the plug to open the channel toward the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Translocation across the membrane requires movement of the plug to open the channel toward the ER lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "bef4ba0d-5148-4d2f-badd-c92265ed130a",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C23",
+      "claim": "Signal peptides can be crosslinked to Sec61\u03b1 TM2 and TM7.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is supported by the observation that signal peptides can be crosslinked to Sec61\u03b1 TM2 and TM7 (Plath et al., 1998; Wang et al., 2004) and that mutations in the lateral gate can influence TMD integration (Junne et al., 2010; Trueman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Plath et al., 1998; Wang et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "e6cba1e7-a337-499c-be74-d154f103ab19",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C24",
+      "claim": "Mutations in the lateral gate can influence TMD integration.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is supported by the observation that signal peptides can be crosslinked to Sec61\u03b1 TM2 and TM7 (Plath et al., 1998; Wang et al., 2004) and that mutations in the lateral gate can influence TMD integration (Junne et al., 2010; Trueman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Junne et al., 2010; Trueman et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "0463c28e-ad69-48c9-b488-b7491d8ee335",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C25",
+      "claim": "Crystal structures of prokaryotic Sec61 have revealed the lateral gate in a continuum of partially open states.",
+      "claim_type": "EXPLICIT",
+      "source": "While crystal structures of prokaryotic Sec61 have revealed the lateral gate in a continuum of partially open states (Tsukazaki et al., 2008; Zimmer et al., 2008; Egea and Stroud, 2010), how the gate transitions between open and closed conformations, and especially the role of the nascent TMD in this process, remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tsukazaki et al., 2008; Zimmer et al., 2008; Egea and Stroud, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "4fece956-45f8-4681-a4e3-40c03911f946",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C26",
+      "claim": "How the gate transitions between open and closed conformations remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "While crystal structures of prokaryotic Sec61 have revealed the lateral gate in a continuum of partially open states (Tsukazaki et al., 2008; Zimmer et al., 2008; Egea and Stroud, 2010), how the gate transitions between open and closed conformations, and especially the role of the nascent TMD in this process, remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "5325a792-3eb0-42ac-89f2-e70a9ae7e78c",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C27",
+      "claim": "Cotransins are a class of cyclic peptides that bind Sec61\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others previously described cotransins, a class of cyclic peptides that bind Sec61\u03b1 and potently inhibit cotranslational translocation of a subset of secretory and membrane proteins (Besemer et al., 2005; Garrison et al., 2005; MacKinnon et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Besemer et al., 2005; Garrison et al., 2005; MacKinnon et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "68fd5238-a7db-4054-b9be-b4901f45e933",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C28",
+      "claim": "Cotransins potently inhibit cotranslational translocation of a subset of secretory and membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others previously described cotransins, a class of cyclic peptides that bind Sec61\u03b1 and potently inhibit cotranslational translocation of a subset of secretory and membrane proteins (Besemer et al., 2005; Garrison et al., 2005; MacKinnon et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Besemer et al., 2005; Garrison et al., 2005; MacKinnon et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "0faa3907-cfca-4592-960d-c38b7cae75f6",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C29",
+      "claim": "Cotransin stabilizes an ephemeral pre-integrated intermediate in which the TMD docks against the cytosolic tip of the Sec61 lateral gate.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that cotransin stabilizes an ephemeral pre-integrated intermediate in which the TMD docks against the cytosolic tip of the Sec61 lateral gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "ac1d1bb4-31f0-40b4-91df-3a6e4826e535",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C30",
+      "claim": "Progression through the cotransin-arrested stage depends on TMD hydrophobicity, helical propensity, and charge distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Progression through this cotransin-arrested stage was found to depend on TMD hydrophobicity, helical propensity, and charge distribution, features that contribute to cotransin's ability to discriminate among different substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "97e92836-d92f-4b3e-a178-25fd995dfb27",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C31",
+      "claim": "Multiple point mutations in the lumenal plug region of Sec61\u03b1 confer dominant resistance to cotransin.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genetic selection in human cancer cells, we identified multiple point mutations in the lumenal plug region of Sec61\u03b1 that confer dominant resistance and prevent cotransin binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "3b24efee-e0fb-4227-a779-56ff704aa540",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C32",
+      "claim": "Mutations in the lumenal plug region prevent cotransin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genetic selection in human cancer cells, we identified multiple point mutations in the lumenal plug region of Sec61\u03b1 that confer dominant resistance and prevent cotransin binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "df508883-5066-4fe9-bde9-e1fc34e66d32",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C33",
+      "claim": "TMD/lateral gate interactions facilitate TMD transfer into the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that TMD/lateral gate interactions facilitate TMD transfer into the membrane, a process that is allosterically modulated by cotransin binding to the plug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "bd4c0931-a640-4989-b2d3-aafc25077d0b",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C34",
+      "claim": "TMD transfer into the membrane is allosterically modulated by cotransin binding to the plug.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that TMD/lateral gate interactions facilitate TMD transfer into the membrane, a process that is allosterically modulated by cotransin binding to the plug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "e9c97942-2d9c-4d55-920c-f57c6f5e02b1",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C35",
+      "claim": "Sec61\u03b1 specifically copurified with FLAG-TNF\u03b1 RNCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec61\u03b1 specifically copurified with FLAG-TNF\u03b1 RNCs, as it was not detected on anti-FLAG beads recovered from control reactions programed with HA-tagged TNF\u03b1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "5711e15f-3aa9-4828-a5f0-5a5f09a40350",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C36",
+      "claim": "The amount of Sec61\u03b1 copurifying with TNF\u03b1 RNCs was identical in the absence or presence of CT7.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the amount of Sec61\u03b1 copurifying with TNF\u03b1 RNCs was identical in the absence or presence of CT7 (Figure 1C, lane 1 vs 2), suggesting that CT7 does not weaken the affinity of the RNC-Sec61 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "e305c2b7-6ccd-40fc-9bd9-c823142e4d47",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C37",
+      "claim": "CT7 does not weaken the affinity of the RNC-Sec61 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the amount of Sec61\u03b1 copurifying with TNF\u03b1 RNCs was identical in the absence or presence of CT7 (Figure 1C, lane 1 vs 2), suggesting that CT7 does not weaken the affinity of the RNC-Sec61 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "928e95da-8854-4dfe-a0f4-f0438875d944",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C38",
+      "claim": "CT7, Sec61, and TNF\u03b1 RNCs assemble into a high-affinity ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CT7, Sec61, and TNF\u03b1 RNCs assemble into a high-affinity ternary complex amenable to biochemical analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "7f11856e-3113-49e1-9a1f-c189881d71d7",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C39",
+      "claim": "126-mer RNCs assembled in the absence of CT8 were predominantly shielded from protease.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, 126-mer RNCs assembled in the absence of CT8 were predominantly shielded from protease, generating a large protected fragment that consists of the TMD plus the lumenal C-terminal domain (Figure 1D, Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "f249b345-5158-4d72-bed9-d69ae8455b04",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C40",
+      "claim": "RNCs produced in the presence of CT8 generated sharply reduced amounts of the protected fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "RNCs produced in the presence of CT8 generated sharply reduced amounts of the protected fragment, indicating that the nascent chain remained primarily in a protease-accessible compartment, despite binding tightly to the Sec61 complex (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "d5d70c4d-bf09-437d-8676-c8dbd2331f27",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C41",
+      "claim": "The nascent chain remained primarily in a protease-accessible compartment in the presence of CT8.",
+      "claim_type": "EXPLICIT",
+      "source": "RNCs produced in the presence of CT8 generated sharply reduced amounts of the protected fragment, indicating that the nascent chain remained primarily in a protease-accessible compartment, despite binding tightly to the Sec61 complex (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "1e12d142-88a7-4861-9f16-ede0ee37a0d3",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C42",
+      "claim": "When 126-mers were assembled without CT8, Cys49 was unreactive toward NEM.",
+      "claim_type": "EXPLICIT",
+      "source": "When 126-mers were assembled without CT8, Cys49 was unreactive toward NEM, whereas the same nascent chains assembled in the presence of CT8 were strongly reactive and thus protected from subsequent reaction with PEG-maleimide (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "6ef5e83a-414b-44bf-b399-f1db2cbc7bf2",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C43",
+      "claim": "Nascent chains assembled in the presence of CT8 were strongly reactive toward NEM.",
+      "claim_type": "EXPLICIT",
+      "source": "When 126-mers were assembled without CT8, Cys49 was unreactive toward NEM, whereas the same nascent chains assembled in the presence of CT8 were strongly reactive and thus protected from subsequent reaction with PEG-maleimide (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "175e12aa-cc12-4e27-92c3-9e37ccefa18e",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C44",
+      "claim": "CT8 causes 126-mers to occupy a distinct environment where Cys49 in the TMD is exposed to aqueous solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the protease protection assay and demonstrate that CT8 causes 126-mers to occupy a distinct environment, one in which Cys49 in the TMD is exposed to aqueous solvent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "150ef75c-fa43-4bb4-bfbb-123c3ef21ee5",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C45",
+      "claim": "In the absence of CT8, Cys49 progressed from a primarily NEM-accessible environment to one that was inaccessible.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying this assay to RNCs of varying length revealed that in the absence of CT8, Cys49 progressed from a primarily NEM-accessible environment to one that was inaccessible (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "d287eec1-0b05-4340-8ac3-c3ee684c0e7e",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C46",
+      "claim": "The transition from NEM-accessible to inaccessible occurred over a narrow range of nascent chain lengths, between 116- and 126-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition occurred over a narrow range of nascent chain lengths, between 116- and 126-mers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "52e78e09-71c1-46ee-9119-794fefaf71ce",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C47",
+      "claim": "In the presence of CT8, the TMD remained accessible to NEM at every nascent chain length tested.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the presence of CT8, the TMD remained accessible to NEM at every nascent chain length tested (Figure 1F, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "e7a1f7a8-0673-460a-916b-e22d21e19a3d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C48",
+      "claim": "The abrupt transition observed in the absence of CT8 likely represents TMD integration into the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that efficient alkylation with NEM requires an aqueous environment, the abrupt transition observed in the absence of CT8 likely represents TMD integration into the lipid bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and knowledge about NEM reactivity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "f457ea6b-c5f8-480f-a7ac-cf361f2814e4",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C49",
+      "claim": "CT8 prevents TMD insertion into the membrane at a step that occurs after RNC targeting to Sec61.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the above results demonstrate that CT8 prevents TMD insertion into the membrane at a step that occurs after RNC targeting to Sec61.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data presented in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "41876dc2-8a64-490a-aa46-970a84d60a41",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C50",
+      "claim": "BMH crosslinking of wild-type TNF\u03b1 126-mers yielded no major crosslinked products in the absence of CT8.",
+      "claim_type": "EXPLICIT",
+      "source": "BMH crosslinking of wild-type TNF\u03b1 126-mers (native cysteines at positions 30 and 49 in the TMD) yielded no major crosslinked products (Figure 2A), consistent with the solvent inaccessibility of the TMD at this length.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "b7bbb196-59f0-413c-8cc2-2607962cb120",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C51",
+      "claim": "In the presence of CT8, the 126-mers crosslinked strongly to partners of \u223c10 and \u223c40 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of CT8, the 126-mers crosslinked strongly to partners of \u223c10 and \u223c40 kDa (Figure 2A), identified by immunoprecipitation as Sec61\u03b2 and Sec61\u03b1, respectively (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "9873ec44-7e09-426a-9add-72003ced4db7",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C52",
+      "claim": "The crosslink partners of \u223c10 and \u223c40 kDa were identified as Sec61\u03b2 and Sec61\u03b1, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of CT8, the 126-mers crosslinked strongly to partners of \u223c10 and \u223c40 kDa (Figure 2A), identified by immunoprecipitation as Sec61\u03b2 and Sec61\u03b1, respectively (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "7e3902a1-e62f-4980-879e-0a9546d5062f",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C53",
+      "claim": "Cys49 was uniquely responsible for the crosslinks to Sec61\u03b1 and Sec61\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis of each cysteine in TNF\u03b1 showed that Cys49 was uniquely responsible for the crosslinks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutagenesis experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "c21aa99d-ff74-49b9-950e-e86c7da3f09a",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C54",
+      "claim": "Without CT8, crosslinks first appeared between the 80-mer and Sec61\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Without CT8, crosslinks first appeared between the 80-mer and Sec61\u03b2, which contains a single cysteine in its presumably unstructured cytosolic tail (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "739c1740-c16d-4e7a-98b2-416a895156c8",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C55",
+      "claim": "Crosslinking to Sec61\u03b2 decreased as the nascent chain was extended to 96 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosslinking to Sec61\u03b2 decreased as the nascent chain was extended to 96 residues, at which point strong crosslinks to Sec61\u03b1 appeared (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "5d284507-e217-4871-b83d-2435192b98d2",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C56",
+      "claim": "Strong crosslinks to Sec61\u03b1 appeared at 96 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosslinking to Sec61\u03b2 decreased as the nascent chain was extended to 96 residues, at which point strong crosslinks to Sec61\u03b1 appeared (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "a9bd30b2-bce1-4290-9bb3-ead5ee4a9b77",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C57",
+      "claim": "Crosslinking to Sec61\u03b1 decreased abruptly as the nascent chain was extended beyond 96 residues and was undetectable by 126 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "As the nascent chain was extended beyond 96 residues, crosslinking to Sec61\u03b1 decreased abruptly and was undetectable by 126 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "81169cf4-03e7-4107-a89c-3e9159bef072",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C58",
+      "claim": "The TMD exits the Sec61\u03b1 vestibule at the 126 amino acid stage of nascent chain elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition parallels the loss in NEM accessibility (Figure 1F) and further suggests that the TMD exits the Sec61\u03b1 vestibule at this stage of nascent chain elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data shown in Figure 2B and Figure 1F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "7ba44c03-52cc-49a9-bc92-b4b7ba1009d4",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C59",
+      "claim": "In the presence of CT8, crosslinks to Sec61\u03b1 and Sec61\u03b2 were more intense and persisted beyond the point where TMD integration occurred in the absence of CT8.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only were the crosslinks to Sec61\u03b1 and Sec61\u03b2 more intense, but they also persisted beyond the point where TMD integration occurred in the absence of CT8 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "6cf43b94-bf0d-48b6-86da-281754f4d607",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C60",
+      "claim": "TMD egress from the cytosolic vestibule becomes irreversible once the nascent chain has progressed from 106- to 126-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "Order-of-addition experiments indicated that TMD egress from the cytosolic vestibule (operationally defined by the disappearance of TMD/Sec61\u03b1 crosslinks) becomes irreversible once the nascent chain has progressed from 106- to 126-mers (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "f894e9c8-c6eb-435c-97a7-0a27b2b4aacc",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C61",
+      "claim": "Post-translational addition of CT8 to 106-mers enhanced TMD/Sec61\u03b1 crosslinks.",
+      "claim_type": "EXPLICIT",
+      "source": "When 106-mers were first assembled in the absence of CT8, isolated by sedimentation, and then incubated with CT8 post-translationally, enhanced TMD/Sec61\u03b1 crosslinks were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "cb66ef67-a9ae-4560-8ca2-f3e5e9760c97",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C62",
+      "claim": "Post-translational addition of CT8 to 126-mers had no effect on TMD/Sec61\u03b1 crosslinks.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, post-translational addition of CT8 to identically prepared 126-mers had no effect, indicating that the 126-mers had crossed a kinetic point-of-no-return that could not be reversed by CT8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "53d525fe-6652-41c8-8e73-492d618498d2",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C63",
+      "claim": "CT8 stabilizes a configuration of the TMD/Sec61 complex that occurs just prior to a committed step of TMD integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data argue: (1) CT8 stabilizes a configuration of the TMD/Sec61 complex that occurs just prior to a committed step of TMD integration, and (2) a similar pre-integrated configuration occurs in the absence of CT8 for nascent chain lengths of 96\u2013106 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "309ded6e-ef30-4a71-b541-b973cbfc653b",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C64",
+      "claim": "A similar pre-integrated configuration occurs in the absence of CT8 for nascent chain lengths of 96\u2013106 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data argue: (1) CT8 stabilizes a configuration of the TMD/Sec61 complex that occurs just prior to a committed step of TMD integration, and (2) a similar pre-integrated configuration occurs in the absence of CT8 for nascent chain lengths of 96\u2013106 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "4a90a6f7-3f55-411f-ae93-f52d5faac97d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C65",
+      "claim": "CT8 enhances the initial interaction between Sec61\u03b1 and the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "That CT8 actually enhances the initial interaction between Sec61\u03b1 and the TMD (as determined by BMH crosslinking) suggests an allosteric mechanism of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing enhanced crosslinking in the presence of CT8",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "557c5e44-2cb1-4165-9f4f-2f06955bbf08",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C66",
+      "claim": "126-mers assembled in the absence of CT8 displayed no protein crosslinks to cysteines within the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected on the basis of protease and NEM accessibility experiments (Figure 1D,E), 126-mers assembled in the absence of CT8 displayed no protein crosslinks to cysteines within the TMD (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "daeba25a-2e71-4a22-9e4e-08c77207874e",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C67",
+      "claim": "126-mers prepared with CT8 showed strong crosslinks to Sec61\u03b1, with peak intensities at positions 35, 38, 42, 45, and 49.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 126-mers prepared with CT8 showed strong crosslinks to Sec61\u03b1, with peak intensities at positions 35, 38, 42, 45, and 49 (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "bbbef67a-aebb-48b7-9d21-cf9809a0c4e1",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C68",
+      "claim": "A helix-destabilizing proline mutation in the center of the TMD (V41P) abolished the periodic crosslinking pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "A helix-destabilizing proline mutation in the center of the TMD (V41P) abolished the periodic crosslinking pattern without significantly affecting RNC targeting to Sec61 (Figure 3D, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "3a3da61b-4e9e-4595-88ef-013c793d3b81",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C69",
+      "claim": "An identical periodic crosslinking pattern was observed with both shorter (96-mers) and longer (146-mers) nascent chains.",
+      "claim_type": "EXPLICIT",
+      "source": "An identical periodic crosslinking pattern was observed with both shorter (96-mers) and longer (146-mers) nascent chains (Figure 3D, Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "80113845-c852-4b65-b44b-d8835804dfa2",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C70",
+      "claim": "The TMD helix is not oriented randomly relative to Sec61\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The sharp periodicity of the crosslinks (i, i+3, i+7, etc), along with the consistent pattern observed across multiple nascent chain lengths, indicates that the TMD helix is not oriented randomly relative to Sec61\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing periodic crosslinking pattern",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "09c3540d-0100-4230-8a52-d6c9fd26bfb5",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C71",
+      "claim": "The TMD appears to have a defined orientation, docked to Sec61\u03b1 in a manner that is presumably stabilized by CT8.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the TMD appears to have a defined orientation, docked to Sec61\u03b1 in a manner that is presumably stabilized by CT8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing periodic crosslinking pattern",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "d8fc17ae-7c1a-450a-92a1-b87f9dca281c",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C72",
+      "claim": "In the absence of CT8, a periodic crosslinking pattern across the TMD was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of CT8, a periodic crosslinking pattern across the TMD was not observed (Figure 2B), despite the strong crosslinks to Cys49 in the context of 96-mers (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "cc24f49f-7168-43f5-b837-104c2e365868",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C73",
+      "claim": "The pre-integrated TMD/Sec61\u03b1 complex likely samples multiple conformations in the absence of CT8.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pre-integrated TMD/Sec61\u03b1 complex likely samples multiple conformations in the absence of CT8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of periodic crosslinking pattern in the absence of CT8",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "8693b4b4-0d0e-4356-87f6-6c4c3e823423",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C74",
+      "claim": "Cysteines at positions 10 or 16 formed strong crosslinks to numerous proteins, including Sec61\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cysteines at positions 10 or 16 formed strong crosslinks to numerous proteins, including Sec61\u03b2 (Figure 3B), in a pattern that was nearly identical for RNCs assembled with or without CT8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "2343b9e8-85a2-4ee8-a8c3-7a7800ceb07d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C75",
+      "claim": "The N-terminal tail is highly accessible and localized to the cytosolic side of the membrane under both conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the N-terminal tail is highly accessible and localized to the cytosolic side of the membrane under both conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking data for cysteines at positions 10 or 16",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "a99b89d5-837d-4189-9283-476922222447",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C76",
+      "claim": "In the absence of CT8, cysteines engineered along the C-terminal segment in 126-mer RNCs showed strong crosslinks to Sec61\u03b1 without concomitant crosslinks to Sec61\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of CT8, cysteines engineered along this segment in 126-mer RNCs showed strong crosslinks to Sec61\u03b1 without concomitant crosslinks to Sec61\u03b2 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "b80ee73d-4ddc-44cd-b467-574d1050fa86",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C77",
+      "claim": "The presence of CT8 caused cysteines in the C-terminal segment to crosslink strongly to Sec61\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the presence of CT8 caused these same cysteines to crosslink strongly to Sec61\u03b2 (Figure 3B), again indicating that this region of the CT8-arrested nascent chain is exposed to the cytosol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "bff964ab-f1fe-48b4-b247-9bbe0aa49689",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C78",
+      "claim": "The N-terminal tail of CT8-arrested, pre-integrated TNF\u03b1 is highly accessible to the cytosolic side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the N-terminal tail of CT8-arrested, pre-integrated TNF\u03b1 is highly accessible to the cytosolic side of the membrane, consistent with the early establishment of a type II orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "87ba4bbc-5b16-4c6b-9f20-6b7a0b588f46",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C79",
+      "claim": "It is unlikely that TNF\u03b1 initially exposes its N-terminus to the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore unlikely that TNF\u03b1 initially exposes its N-terminus to the ER lumen, as shown in a recent study of a different type II membrane protein (Devaraneni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from crosslinking data and comparison to previous study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "05a1f038-fafe-4cd9-a8cb-8c65d2b2963c",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C80",
+      "claim": "A single mutation in Sec61\u03b1 (C13A) abolished BMH crosslinking to the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "A single mutation in Sec61\u03b1 (C13A) abolished BMH crosslinking to the TMD, whereas each of the other cysteine mutants crosslinked efficiently in the presence of CT8 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "0294b57b-0fba-4ae3-aaeb-782814553a85",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C81",
+      "claim": "Cys13 is predicted to be in a short \u03b1-helix that lies parallel to the cytosolic face of the membrane, just outside the cytosolic vestibule and adjacent to TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a homology model of the human Sec61 complex derived from the crystal structure of an archaeal ortholog (Van den Berg et al., 2004; Erdmann et al., 2009), Cys13 is predicted to be in a short \u03b1-helix that lies parallel to the cytosolic face of the membrane, just outside the cytosolic vestibule and adjacent to TM3 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on homology model derived from crystal structure",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "9c7483ac-309d-4f5c-b300-48c66ee6f882",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C82",
+      "claim": "Sec61\u03b1 cysteine-substitution mutants at Gly88, Met91, Ala95, and Ser383 showed strong CT8-enhanced crosslinks.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable exceptions were cysteine substitutions at Gly88, Met91, Ala95, and Ser383, each of which showed strong CT8-enhanced crosslinks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "c0a58ca9-3b03-4c49-be98-b0293f25fa7d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C83",
+      "claim": "The engineered cysteines at Gly88, Met91, Ala95, and Ser383 revealed a clear hotspot where the cytosolic face of TM2b meets the cytosolic tip of TM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping the location of these engineered cysteines onto a model of human Sec61\u03b1 revealed a clear hotspot where the cytosolic face of TM2b meets the cytosolic tip of TM8 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data and structural model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "4a588dd8-a88b-4826-b88c-df25d9b9d74b",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C84",
+      "claim": "The cytosol-exposed tip of the lateral gate lies within \u223c8 \u00c5 of the TMD (Cys49) in the CT8-stabilized, pre-integrated configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "This region of Sec61\u03b1 represents the cytosol-exposed tip of the lateral gate, shown here to lie within \u223c8 \u00c5 of the TMD (Cys49) in the CT8-stabilized, pre-integrated configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from BMOE crosslinking data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "5cbaa0b3-c325-4cd5-98cd-c5e27ebbae79",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C85",
+      "claim": "The cotransin sensitivity of a given secretory protein can be altered by mutations in the signal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the cotransin sensitivity of a given secretory protein can be altered by mutations in the signal sequence (Harant et al., 2006, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Harant et al., 2006, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "a90a162e-08ac-470f-9efd-d4ce33869aff",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C86",
+      "claim": "Inhibiting cotranslational integration of the T45L/T46L mutant required 13-fold higher concentrations of CT8 as compared to wild-type TNF\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting cotranslational integration of this mutant required 13-fold higher concentrations of CT8 as compared to wild-type TNF\u03b1 (IC50 of 1040 nM and 80 nM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "06a3f894-a230-4c89-bdb8-84a1d5ed577d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C87",
+      "claim": "BMH crosslinking of successively longer T45L/T46L RNCs assembled without CT8 showed a pattern similar to wild-type TNF\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "BMH crosslinking of successively longer T45L/T46L RNCs assembled without CT8 showed a pattern that was similar to wild-type TNF\u03b1: crosslinks to Sec61\u03b1 were observed over a narrow length range, 86- to 96-mers, beyond which the crosslinks abruptly disappeared (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "79af2bb9-0030-4535-8622-883d107c084f",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C88",
+      "claim": "At longer chain lengths, crosslinking of the T45L/T46L mutant TMD to Sec61\u03b1 was not observed, consistent with its successful integration into the membrane beyond the 96-mer stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At longer chain lengths, crosslinking of the mutant TMD to Sec61\u03b1 was not observed, consistent with its successful integration into the membrane beyond the 96-mer stage (Figure 5A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "e2fc0129-42fd-44a5-aff2-b07de97569b8",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C89",
+      "claim": "A cysteine scan across the TMD of wild-type and T45L/T46L mutant 96-mers revealed identical crosslinking patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "A cysteine scan across the TMD of wild-type and mutant 96-mers revealed identical crosslinking patterns (Figure 5D, Figure 5\u2014figure supplement 1), suggesting that the T45L/T46L TMD docks to Sec61\u03b1 in a specific conformation and orientation similar to the wild type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "3b808c4d-704f-4a6b-8a06-e385997af9b9",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C90",
+      "claim": "The T45L/T46L TMD docks to Sec61\u03b1 in a specific conformation and orientation similar to the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "A cysteine scan across the TMD of wild-type and mutant 96-mers revealed identical crosslinking patterns (Figure 5D, Figure 5\u2014figure supplement 1), suggesting that the T45L/T46L TMD docks to Sec61\u03b1 in a specific conformation and orientation similar to the wild type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from identical crosslinking patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "77487760-847f-44e7-9013-8ab295ab14db",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C91",
+      "claim": "The mutant TMD escapes from the CT8-mediated arrest point and integrates into the membrane as the nascent polypeptide continues to elongate.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the wild type, the mutant TMD escapes from the CT8-mediated arrest point and integrates into the membrane as the nascent polypeptide continues to elongate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing loss of crosslinking at longer chain lengths",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "da2d0ace-146b-4027-84a8-e52d4c7ed3d3",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C92",
+      "claim": "Mutating multiple polar residues to leucine resulted in increased CT8 resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "While mutating multiple polar residues to leucine resulted in increased CT8 resistance (Figure 6B), further mutational analysis revealed that overall hydrophobicity is not the sole determinant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "6d673d96-ea68-4038-849f-52ad5d8703c7",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C93",
+      "claim": "Overall hydrophobicity is not the sole determinant of CT8 resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "While mutating multiple polar residues to leucine resulted in increased CT8 resistance (Figure 6B), further mutational analysis revealed that overall hydrophobicity is not the sole determinant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mutational analysis data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "c3a95a72-81c5-4f51-b067-83e0563d4acc",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C94",
+      "claim": "Hydrophobic to lysine mutations in the N-terminal region of the TMD led to increased CT8 resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrophobic to lysine mutations in the N-terminal region of the TMD, for example, led to increased CT8 resistance, whereas such mutations in the central or C-terminal regions had the opposite effect (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "500d05e6-5858-46b8-be7a-c7c69b22aed2",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C95",
+      "claim": "Hydrophobic to lysine mutations in the central or C-terminal regions of the TMD led to increased CT8 sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrophobic to lysine mutations in the N-terminal region of the TMD, for example, led to increased CT8 resistance, whereas such mutations in the central or C-terminal regions had the opposite effect (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "6d9bdc44-e39e-426d-bbe3-fb361b452359",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C96",
+      "claim": "Proline-scanning mutagenesis across the TMD resulted in position-dependent effects, conferring increased CT8 resistance when introduced into the N-terminal region and increased sensitivity in the central region.",
+      "claim_type": "EXPLICIT",
+      "source": "Proline-scanning mutagenesis across the TMD resulted in similar position-dependent effects, conferring increased CT8 resistance when introduced into the N-terminal region and increased sensitivity in the central region (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "856922a8-f39a-4e52-824e-8b4abda1f42d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C97",
+      "claim": "Helical propensity, hydrophobicity, and charge distribution can influence TMD movement through the lateral gate in opposition to CT8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the mutagenesis data suggest that helical propensity, hydrophobicity, and charge distribution can influence TMD movement through the lateral gate in opposition to CT8 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mutagenesis data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "b672fc67-6bb4-4d32-b161-8592a3c6e40f",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C98",
+      "claim": "Escape from the CT8 arrest point involves dynamic interactions between the TMD and the hydrophobic helices of the lateral gate (TM2/3 and TM7/8), in addition to interactions with membrane lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than attribute these differences solely to thermodynamic partitioning of the TMD into the lipid phase (Hessa et al., 2005, 2007), we propose that escape from the CT8 arrest point involves dynamic interactions between the TMD and the hydrophobic helices of the lateral gate (TM2/3 and TM7/8), in addition to interactions with membrane lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed based on mutagenesis data and comparison to previous models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "4daae4cd-126c-4a75-bfcd-365f59631a58",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C99",
+      "claim": "CT8 and its more potent analog CT9 are cytotoxic to certain cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that CT8 and its more potent analog CT9 are cytotoxic to certain cancer cell lines (Figure 7A and our unpublished results), we reasoned that it should be possible to identify resistance-conferring alleles of Sec61\u03b1 by genetic selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "d7cdbd38-840d-42ad-a7ee-ea87ab96f29f",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C100",
+      "claim": "11 of 11 resistant cell lines had one of five single-nucleotide transitions at four amino acid positions.",
+      "claim_type": "EXPLICIT",
+      "source": "After amplifying the S61A1 coding sequence from total RNA, Sanger sequencing revealed that 11 of 11 resistant cell lines had one of five single-nucleotide transitions (all heterozygous) at four amino acid positions (Figure 7A, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "ebedd54d-3434-4c46-b5bb-4677ae46b682",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C101",
+      "claim": "All five mutations associated with CT8 resistance cluster in the same region of Sec61\u03b1, at the interface between the plug and the C-terminal end of TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "All five mutations associated with CT8 resistance cluster in the same region of Sec61\u03b1 (Figure 7D), at the interface between the plug (R66I, R66G, G80V, S82P) and the C-terminal end of TM3 (M136T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequencing data and structural mapping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "f9e44c2f-519d-4503-859a-4b109b85d054",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C102",
+      "claim": "Five independent resistance mutations localize within \u223c10 \u00c5 of each other to the lumenal plug region, arguing that this is the cotransin binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that five independent resistance mutations localize within \u223c10 \u00c5 of each other to the lumenal plug region argues that this is the cotransin binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from clustering of resistance mutations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "f89122d7-2067-4539-b35f-8a066be55e05",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C103",
+      "claim": "CT8 potently inhibited TNF\u03b1 expression in cells with the wild-type Sec61\u03b1 transgene (IC50 \u223c 50 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas CT8 potently inhibited TNF\u03b1 expression in cells with the wild-type Sec61\u03b1 transgene (IC50 \u223c 50 nM), it had little effect in cells carrying either the M136T or R66I mutant (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "87345030-4d9e-434a-ab52-617c315d5415",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C104",
+      "claim": "CT8 had little effect on TNF\u03b1 expression in cells carrying either the M136T or R66I mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas CT8 potently inhibited TNF\u03b1 expression in cells with the wild-type Sec61\u03b1 transgene (IC50 \u223c 50 nM), it had little effect in cells carrying either the M136T or R66I mutant (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "282a84d0-99dc-4bcc-9452-b1ec22ddc2bf",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C105",
+      "claim": "The M136T and R66I mutations are sufficient to confer dominant resistance to CT8.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the Sec61\u03b1 mutants assemble into functional translocons and that the M136T and R66I mutations are sufficient to confer dominant resistance to CT8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "dd2136ba-7514-4146-85f8-d40c79df183d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C106",
+      "claim": "CT7 photo-crosslinking assays revealed specific binding to wild-type Sec61\u03b1, but greatly reduced and undetectable binding to the M136T and R66I mutants, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "CT7 photo-crosslinking assays revealed specific binding to wild-type Sec61\u03b1, but greatly reduced and undetectable binding to the M136T and R66I mutants, respectively (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "e4415b2f-9f06-41dd-9608-a57d33fde0c2",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C107",
+      "claim": "Reduced cotransin binding causes resistance in the cell proliferation and TNF\u03b1 expression assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mutations may have subtle effects on Sec61 function, the CT7 photo-crosslinking data argue that reduced cotransin binding causes resistance in the cell proliferation and TNF\u03b1 expression assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from photo-crosslinking data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "3b85da9e-c17a-4626-ad6e-67a4fc9879f1",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C108",
+      "claim": "The lateral gate is the site where hydrophobic segments exit the central pore of Sec61 and enter the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural, mutagenesis, and crosslinking analyses have all converged on the lateral gate as the site where hydrophobic segments exit the central pore of Sec61 and enter the lipid bilayer (du Plessis et al., 2009; Egea and Stroud, 2010; Frauenfeld et al., 2011; Plath et al., 1998; Trueman et al., 2011; Tsukazaki et al., 2008; Zimmer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "46169913-5731-41e1-b55c-49db364898aa",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C109",
+      "claim": "RNC targeting to Sec61 allows partial opening of the lateral gate toward the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, RNC targeting to Sec61 allows partial opening of the lateral gate toward the cytosol, as observed in a crystal structure of SecYE bound to a Fab fragment (Tsukazaki et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tsukazaki et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "c3f15598-9620-4564-b5d3-58133a7d50f7",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C110",
+      "claim": "Separation of TM2b from the cytosolic end of TM8 creates a notch in the lateral gate, which is proposed to be the initial docking site for a nascent TMD after its release from SRP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SecYE/Fab structure, separation of TM2b from the cytosolic end of TM8 creates a notch in the lateral gate, which we propose to be the initial docking site for a nascent TMD after its release from SRP (Figure 8, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed based on structural data and experimental results",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "c4d3bdb2-e907-41e1-959f-096ec7416ec9",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C111",
+      "claim": "At the 96-mer stage, docking of the TMD to this site enables BMH crosslinking to Sec61\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 96-mer stage, docking of the TMD to this site enables BMH crosslinking to Sec61\u03b1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "d315cc1d-4e22-48f0-ab88-8cabc199a49f",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C112",
+      "claim": "As the nascent chain elongates, interhelical contacts that seal the lateral gate are progressively destabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "As the nascent chain elongates, interhelical contacts that seal the lateral gate are progressively destabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "4faa1a97-7069-4c0f-9108-f642f77e6f72",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C113",
+      "claim": "This key transition leads to complete intercalation of the TMD between helices TM2/3 and TM7/8 of the lateral gate, concomitant with exposure of the TMD to membrane lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "This key transition, which is opposed by CT8 binding (most likely to the plug), leads to complete intercalation of the TMD between helices TM2/3 and TM7/8 of the lateral gate, concomitant with exposure of the TMD to membrane lipids (Figure 8, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "277f288c-fd79-4b17-94af-b8ff05b10993",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "claim_id": "C114",
+      "claim": "TMDs with greater hydrophobicity and helical propensity are better able to progress to the integrated state, presumably in kinetic competition with CT8.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by the pronounced rightward shifts in the CT8 dose-response curves (Figure 6), TMDs with greater hydrophobicity and helical propensity are better able to progress to this state, presumably in kinetic competition with CT8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from dose-response data shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "142796bd-9e86-47a9-bbb9-463c9333dbf9",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CT7/CT8 forms a stable ternary complex with Sec61 and TNF\u03b1 RNCs. Sec61\u03b1 specifically copurifies with FLAG-TNF\u03b1 RNCs, and the amount of Sec61\u03b1 copurifying is identical in the presence or absence of CT7, indicating that CT7 does not weaken RNC-Sec61 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by co-immunoprecipitation and photo-crosslinking data in Figure 1B-C. The controls (HA-tagged TNF\u03b1) and photo-crosslinking before/after IP demonstrate specificity and stability of the complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "815f9f79-7fee-4934-ae08-0b08cb069904",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CT8 blocks TMD integration into the membrane after RNC targeting to Sec61. In the absence of CT8, 126-mer RNCs are predominantly protected from protease, but in the presence of CT8, the nascent chain remains in a protease-accessible compartment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C49 are supported by protease protection assays in Figure 1D. The data clearly show differential protease accessibility with and without CT8, indicating CT8 blocks a post-targeting step in TMD integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "51af1862-0581-40f5-9ec0-5675e223bb80",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CT8 prevents TMD integration by maintaining the TMD in an aqueous environment. NEM accessibility assays show that in the absence of CT8, Cys49 transitions from NEM-accessible to inaccessible between 116-126 amino acids, representing TMD integration into the lipid bilayer. In the presence of CT8, the TMD remains NEM-accessible at all chain lengths tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 are supported by NEM accessibility data in Figure 1E-F. The abrupt transition in NEM accessibility without CT8 and persistent accessibility with CT8 provide strong evidence for CT8 blocking TMD membrane integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CT8 stabilizes crosslinks between the TMD and Sec61\u03b1/\u03b2. Without CT8, crosslinks to Sec61\u03b1 appear at 96-mers and disappear by 126-mers. With CT8, crosslinks are more intense and persist beyond the normal integration point, indicating CT8 stabilizes a pre-integrated intermediate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C59 are supported by BMH crosslinking data in Figure 2A-B. The length-dependent crosslinking patterns and enhanced crosslinking with CT8 provide strong evidence for stabilization of a pre-integrated state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "aaa0ca94-ba91-4861-8637-d2b8887d2b6f",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TMD egress from the cytosolic vestibule becomes irreversible between 106-126 amino acids. Order-of-addition experiments show that post-translational CT8 addition enhances crosslinks in 106-mers but has no effect on 126-mers, indicating a kinetic point-of-no-return.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are supported by order-of-addition experiments in Figure 2C. The differential response to post-translational CT8 addition at different chain lengths provides strong evidence for an irreversible commitment step.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "328c304e-9c3b-436f-9b13-489ab5fda57d",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CT8 enhances the initial interaction between Sec61\u03b1 and the TMD, suggesting an allosteric mechanism of action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by the enhanced BMH crosslinking observed in the presence of CT8 (Figure 2B). The enhancement rather than reduction of crosslinking supports an allosteric rather than competitive mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "967ac209-25af-49c9-aa77-f57df0998bc6",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The TMD adopts a defined helical orientation when docked to Sec61\u03b1 in the presence of CT8. Cysteine scanning reveals periodic crosslinks (i, i+3, i+7) to Sec61\u03b1 at positions 35, 38, 42, 45, and 49, which is abolished by a helix-destabilizing proline mutation and is consistent across multiple nascent chain lengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 are supported by cysteine scanning and BMH crosslinking data in Figure 3B-D. The periodic crosslinking pattern, its dependence on helical structure (V41P mutation), and consistency across chain lengths provide strong evidence for a defined TMD orientation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "765081ef-d6c5-4e99-abf6-2eb3a4508457",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the absence of CT8, the pre-integrated TMD/Sec61\u03b1 complex likely samples multiple conformations, as evidenced by the lack of a periodic crosslinking pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are supported by the absence of periodic crosslinking in the absence of CT8 (Figure 2B) despite strong crosslinks to Cys49 at 96-mers. This suggests conformational heterogeneity without CT8 stabilization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "beb7bfef-6876-4c5a-8f9f-147602c72a8c",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The N-terminal tail of TNF\u03b1 is highly accessible to the cytosolic side of the membrane under both conditions, establishing an early type II orientation. The C-terminal segment shows differential accessibility depending on CT8 presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 are supported by crosslinking data in Figure 3B showing consistent N-terminal crosslinks to Sec61\u03b2 and differential C-terminal crosslinking patterns with/without CT8. This establishes the topology of the arrested intermediate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "765351a1-3f54-4480-9f3f-abc30e2976eb",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The pre-integrated TMD docks at the cytosolic tip of the lateral gate. Cys13 in Sec61\u03b1 is responsible for TMD crosslinking, and engineered cysteines at Gly88, Met91, Ala95, and Ser383 (at the TM2b/TM8 interface) show strong crosslinks, placing the TMD within ~8 \u00c5 of the lateral gate tip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 are supported by systematic cysteine mutagenesis and BMOE crosslinking data in Figure 4C-E using recombinant Sec61\u03b1/\u03b3. The identification of Cys13 and the hotspot at TM2b/TM8 interface provide precise localization of the TMD docking site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "f15c6364-2722-4fe4-9916-158a1b7607e7",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The T45L/T46L mutant TMD passes through the same pre-integrated intermediate as wild-type but escapes CT8-mediated arrest. This mutant requires 13-fold higher CT8 concentrations for inhibition, shows identical crosslinking patterns at 96-mers, but integrates at longer chain lengths despite CT8 presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 are supported by dose-response curves and crosslinking data in Figure 5. The identical crosslinking patterns at 96-mers followed by escape at longer lengths demonstrate passage through a common intermediate with differential progression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "13547673-6b58-4e16-9e4a-aa4ec0a9d921",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TMD escape from CT8 arrest depends on helical propensity, hydrophobicity, and charge distribution in a position-dependent manner. Polar-to-leucine mutations increase resistance, but hydrophobic-to-lysine and proline mutations have position-dependent effects on CT8 sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C97 are supported by systematic mutagenesis and dose-response data in Figure 6B-D. The position-dependent effects of different mutation types provide strong evidence that multiple biophysical properties influence TMD progression through the lateral gate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "f80dae06-82d1-4aae-8e47-06b2fc73bb37",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Escape from the CT8 arrest point involves dynamic interactions between the TMD and the lateral gate helices (TM2/3 and TM7/8), in addition to interactions with membrane lipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C98 is a proposed model based on mutagenesis data. While the data support that TMD properties influence progression, the specific molecular interactions with lateral gate helices versus lipids are not directly demonstrated. This remains a reasonable but unproven hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "b3aac32e-725b-4b84-8706-854ba7ff32b4",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Five independent resistance mutations in Sec61\u03b1 cluster within ~10 \u00c5 in the lumenal plug region (R66I, R66G, G80V, S82P, M136T), identifying this as the likely cotransin binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 are supported by genetic selection and sequencing data in Figure 7A. The clustering of five independent mutations in a small region provides strong evidence for the cotransin binding site, following established principles of resistance mutation mapping.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "ae360cf1-efb6-417b-9416-4f545a58f50c",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The M136T and R66I mutations confer dominant resistance to CT8 by preventing cotransin binding. These mutations abolish or greatly reduce CT7 photo-crosslinking while maintaining functional translocon activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C107 are supported by TNF\u03b1 expression assays and CT7 photo-crosslinking data in Figure 7B-C. The correlation between reduced CT7 binding and resistance in functional assays provides strong evidence that reduced drug binding causes resistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "a744e81f-14a1-48e8-8fb6-955628760818",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cotransin stabilizes an ephemeral pre-integrated intermediate where the TMD docks against the cytosolic tip of the Sec61 lateral gate. Progression through this stage depends on TMD hydrophobicity, helical propensity, and charge distribution. TMD/lateral gate interactions facilitate TMD transfer, which is allosterically modulated by cotransin binding to the plug.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 represent the main conclusions of the study and are supported by the collective evidence from crosslinking (Figures 2-4), mutagenesis (Figures 5-6), and resistance mapping (Figure 7). The allosteric mechanism is supported by enhanced crosslinking with CT8 and the spatial separation between the binding site (plug) and docking site (lateral gate tip).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    },
+    {
+      "id": "ac6efff4-2f08-453e-9e9c-ba3af222b131",
+      "content_id": "f2890c97-9159-4f57-be23-f8703d11e0e2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A mechanistic model is proposed where RNC targeting allows partial lateral gate opening, creating a notch for TMD docking at 96-mers. As the nascent chain elongates, interhelical contacts destabilize, leading to TMD intercalation between TM2/3 and TM7/8 with lipid exposure. CT8 binding to the plug opposes this transition, with TMDs of greater hydrophobicity and helical propensity better able to overcome the block.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C114 present an integrated model based on the experimental data and structural considerations. While some aspects are speculative (C112, C113), the model is well-supported by the crosslinking data showing TMD position at different stages, the mutagenesis data showing biophysical determinants, and the resistance mutations localizing cotransin binding to the plug region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:08:03.119554Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e9c97942-2d9c-4d55-920c-f57c6f5e02b1",
+      "result_id": "142796bd-9e86-47a9-bbb9-463c9333dbf9"
+    },
+    {
+      "claim_id": "5711e15f-3aa9-4828-a5f0-5a5f09a40350",
+      "result_id": "142796bd-9e86-47a9-bbb9-463c9333dbf9"
+    },
+    {
+      "claim_id": "e305c2b7-6ccd-40fc-9bd9-c823142e4d47",
+      "result_id": "142796bd-9e86-47a9-bbb9-463c9333dbf9"
+    },
+    {
+      "claim_id": "928e95da-8854-4dfe-a0f4-f0438875d944",
+      "result_id": "142796bd-9e86-47a9-bbb9-463c9333dbf9"
+    },
+    {
+      "claim_id": "7f11856e-3113-49e1-9a1f-c189881d71d7",
+      "result_id": "815f9f79-7fee-4934-ae08-0b08cb069904"
+    },
+    {
+      "claim_id": "f249b345-5158-4d72-bed9-d69ae8455b04",
+      "result_id": "815f9f79-7fee-4934-ae08-0b08cb069904"
+    },
+    {
+      "claim_id": "d5d70c4d-bf09-437d-8676-c8dbd2331f27",
+      "result_id": "815f9f79-7fee-4934-ae08-0b08cb069904"
+    },
+    {
+      "claim_id": "f457ea6b-c5f8-480f-a7ac-cf361f2814e4",
+      "result_id": "815f9f79-7fee-4934-ae08-0b08cb069904"
+    },
+    {
+      "claim_id": "1e12d142-88a7-4861-9f16-ede0ee37a0d3",
+      "result_id": "51af1862-0581-40f5-9ec0-5675e223bb80"
+    },
+    {
+      "claim_id": "6ef5e83a-414b-44bf-b399-f1db2cbc7bf2",
+      "result_id": "51af1862-0581-40f5-9ec0-5675e223bb80"
+    },
+    {
+      "claim_id": "175e12aa-cc12-4e27-92c3-9e37ccefa18e",
+      "result_id": "51af1862-0581-40f5-9ec0-5675e223bb80"
+    },
+    {
+      "claim_id": "150ef75c-fa43-4bb4-bfbb-123c3ef21ee5",
+      "result_id": "51af1862-0581-40f5-9ec0-5675e223bb80"
+    },
+    {
+      "claim_id": "d287eec1-0b05-4340-8ac3-c3ee684c0e7e",
+      "result_id": "51af1862-0581-40f5-9ec0-5675e223bb80"
+    },
+    {
+      "claim_id": "52e78e09-71c1-46ee-9119-794fefaf71ce",
+      "result_id": "51af1862-0581-40f5-9ec0-5675e223bb80"
+    },
+    {
+      "claim_id": "e7a1f7a8-0673-460a-916b-e22d21e19a3d",
+      "result_id": "51af1862-0581-40f5-9ec0-5675e223bb80"
+    },
+    {
+      "claim_id": "41876dc2-8a64-490a-aa46-970a84d60a41",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "b7bbb196-59f0-413c-8cc2-2607962cb120",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "9873ec44-7e09-426a-9add-72003ced4db7",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "7e3902a1-e62f-4980-879e-0a9546d5062f",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "c21aa99d-ff74-49b9-950e-e86c7da3f09a",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "739c1740-c16d-4e7a-98b2-416a895156c8",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "5d284507-e217-4871-b83d-2435192b98d2",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "a9bd30b2-bce1-4290-9bb3-ead5ee4a9b77",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "81169cf4-03e7-4107-a89c-3e9159bef072",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "7ba44c03-52cc-49a9-bc92-b4b7ba1009d4",
+      "result_id": "cab3ed0f-fcd7-4113-b25b-0d37b8e87e3d"
+    },
+    {
+      "claim_id": "6cf43b94-bf0d-48b6-86da-281754f4d607",
+      "result_id": "aaa0ca94-ba91-4861-8637-d2b8887d2b6f"
+    },
+    {
+      "claim_id": "f894e9c8-c6eb-435c-97a7-0a27b2b4aacc",
+      "result_id": "aaa0ca94-ba91-4861-8637-d2b8887d2b6f"
+    },
+    {
+      "claim_id": "cb66ef67-a9ae-4560-8ca2-f3e5e9760c97",
+      "result_id": "aaa0ca94-ba91-4861-8637-d2b8887d2b6f"
+    },
+    {
+      "claim_id": "53d525fe-6652-41c8-8e73-492d618498d2",
+      "result_id": "aaa0ca94-ba91-4861-8637-d2b8887d2b6f"
+    },
+    {
+      "claim_id": "309ded6e-ef30-4a71-b541-b973cbfc653b",
+      "result_id": "aaa0ca94-ba91-4861-8637-d2b8887d2b6f"
+    },
+    {
+      "claim_id": "4a90a6f7-3f55-411f-ae93-f52d5faac97d",
+      "result_id": "328c304e-9c3b-436f-9b13-489ab5fda57d"
+    },
+    {
+      "claim_id": "557c5e44-2cb1-4165-9f4f-2f06955bbf08",
+      "result_id": "967ac209-25af-49c9-aa77-f57df0998bc6"
+    },
+    {
+      "claim_id": "daeba25a-2e71-4a22-9e4e-08c77207874e",
+      "result_id": "967ac209-25af-49c9-aa77-f57df0998bc6"
+    },
+    {
+      "claim_id": "bbbef67a-aebb-48b7-9d21-cf9809a0c4e1",
+      "result_id": "967ac209-25af-49c9-aa77-f57df0998bc6"
+    },
+    {
+      "claim_id": "3a3da61b-4e9e-4595-88ef-013c793d3b81",
+      "result_id": "967ac209-25af-49c9-aa77-f57df0998bc6"
+    },
+    {
+      "claim_id": "80113845-c852-4b65-b44b-d8835804dfa2",
+      "result_id": "967ac209-25af-49c9-aa77-f57df0998bc6"
+    },
+    {
+      "claim_id": "09c3540d-0100-4230-8a52-d6c9fd26bfb5",
+      "result_id": "967ac209-25af-49c9-aa77-f57df0998bc6"
+    },
+    {
+      "claim_id": "d8fc17ae-7c1a-450a-92a1-b87f9dca281c",
+      "result_id": "765081ef-d6c5-4e99-abf6-2eb3a4508457"
+    },
+    {
+      "claim_id": "cc24f49f-7168-43f5-b837-104c2e365868",
+      "result_id": "765081ef-d6c5-4e99-abf6-2eb3a4508457"
+    },
+    {
+      "claim_id": "8693b4b4-0d0e-4356-87f6-6c4c3e823423",
+      "result_id": "beb7bfef-6876-4c5a-8f9f-147602c72a8c"
+    },
+    {
+      "claim_id": "2343b9e8-85a2-4ee8-a8c3-7a7800ceb07d",
+      "result_id": "beb7bfef-6876-4c5a-8f9f-147602c72a8c"
+    },
+    {
+      "claim_id": "a99b89d5-837d-4189-9283-476922222447",
+      "result_id": "beb7bfef-6876-4c5a-8f9f-147602c72a8c"
+    },
+    {
+      "claim_id": "b80ee73d-4ddc-44cd-b467-574d1050fa86",
+      "result_id": "beb7bfef-6876-4c5a-8f9f-147602c72a8c"
+    },
+    {
+      "claim_id": "bff964ab-f1fe-48b4-b247-9bbe0aa49689",
+      "result_id": "beb7bfef-6876-4c5a-8f9f-147602c72a8c"
+    },
+    {
+      "claim_id": "87ba4bbc-5b16-4c6b-9f20-6b7a0b588f46",
+      "result_id": "beb7bfef-6876-4c5a-8f9f-147602c72a8c"
+    },
+    {
+      "claim_id": "05a1f038-fafe-4cd9-a8cb-8c65d2b2963c",
+      "result_id": "765351a1-3f54-4480-9f3f-abc30e2976eb"
+    },
+    {
+      "claim_id": "0294b57b-0fba-4ae3-aaeb-782814553a85",
+      "result_id": "765351a1-3f54-4480-9f3f-abc30e2976eb"
+    },
+    {
+      "claim_id": "9c7483ac-309d-4f5c-b300-48c66ee6f882",
+      "result_id": "765351a1-3f54-4480-9f3f-abc30e2976eb"
+    },
+    {
+      "claim_id": "c0a58ca9-3b03-4c49-be98-b0293f25fa7d",
+      "result_id": "765351a1-3f54-4480-9f3f-abc30e2976eb"
+    },
+    {
+      "claim_id": "4a588dd8-a88b-4826-b88c-df25d9b9d74b",
+      "result_id": "765351a1-3f54-4480-9f3f-abc30e2976eb"
+    },
+    {
+      "claim_id": "a90a162e-08ac-470f-9efd-d4ce33869aff",
+      "result_id": "f15c6364-2722-4fe4-9916-158a1b7607e7"
+    },
+    {
+      "claim_id": "06a3f894-a230-4c89-bdb8-84a1d5ed577d",
+      "result_id": "f15c6364-2722-4fe4-9916-158a1b7607e7"
+    },
+    {
+      "claim_id": "79af2bb9-0030-4535-8622-883d107c084f",
+      "result_id": "f15c6364-2722-4fe4-9916-158a1b7607e7"
+    },
+    {
+      "claim_id": "e2fc0129-42fd-44a5-aff2-b07de97569b8",
+      "result_id": "f15c6364-2722-4fe4-9916-158a1b7607e7"
+    },
+    {
+      "claim_id": "3b808c4d-704f-4a6b-8a06-e385997af9b9",
+      "result_id": "f15c6364-2722-4fe4-9916-158a1b7607e7"
+    },
+    {
+      "claim_id": "77487760-847f-44e7-9013-8ab295ab14db",
+      "result_id": "f15c6364-2722-4fe4-9916-158a1b7607e7"
+    },
+    {
+      "claim_id": "da2d0ace-146b-4027-84a8-e52d4c7ed3d3",
+      "result_id": "13547673-6b58-4e16-9e4a-aa4ec0a9d921"
+    },
+    {
+      "claim_id": "6d673d96-ea68-4038-849f-52ad5d8703c7",
+      "result_id": "13547673-6b58-4e16-9e4a-aa4ec0a9d921"
+    },
+    {
+      "claim_id": "c3a95a72-81c5-4f51-b067-83e0563d4acc",
+      "result_id": "13547673-6b58-4e16-9e4a-aa4ec0a9d921"
+    },
+    {
+      "claim_id": "500d05e6-5858-46b8-be7a-c7c69b22aed2",
+      "result_id": "13547673-6b58-4e16-9e4a-aa4ec0a9d921"
+    },
+    {
+      "claim_id": "6d9bdc44-e39e-426d-bbe3-fb361b452359",
+      "result_id": "13547673-6b58-4e16-9e4a-aa4ec0a9d921"
+    },
+    {
+      "claim_id": "856922a8-f39a-4e52-824e-8b4abda1f42d",
+      "result_id": "13547673-6b58-4e16-9e4a-aa4ec0a9d921"
+    },
+    {
+      "claim_id": "b672fc67-6bb4-4d32-b161-8592a3c6e40f",
+      "result_id": "f80dae06-82d1-4aae-8e47-06b2fc73bb37"
+    },
+    {
+      "claim_id": "4daae4cd-126c-4a75-bfcd-365f59631a58",
+      "result_id": "b3aac32e-725b-4b84-8706-854ba7ff32b4"
+    },
+    {
+      "claim_id": "d7cdbd38-840d-42ad-a7ee-ea87ab96f29f",
+      "result_id": "b3aac32e-725b-4b84-8706-854ba7ff32b4"
+    },
+    {
+      "claim_id": "ebedd54d-3434-4c46-b5bb-4677ae46b682",
+      "result_id": "b3aac32e-725b-4b84-8706-854ba7ff32b4"
+    },
+    {
+      "claim_id": "f9e44c2f-519d-4503-859a-4b109b85d054",
+      "result_id": "b3aac32e-725b-4b84-8706-854ba7ff32b4"
+    },
+    {
+      "claim_id": "f89122d7-2067-4539-b35f-8a066be55e05",
+      "result_id": "ae360cf1-efb6-417b-9416-4f545a58f50c"
+    },
+    {
+      "claim_id": "87345030-4d9e-434a-ab52-617c315d5415",
+      "result_id": "ae360cf1-efb6-417b-9416-4f545a58f50c"
+    },
+    {
+      "claim_id": "282a84d0-99dc-4bcc-9452-b1ec22ddc2bf",
+      "result_id": "ae360cf1-efb6-417b-9416-4f545a58f50c"
+    },
+    {
+      "claim_id": "dd2136ba-7514-4146-85f8-d40c79df183d",
+      "result_id": "ae360cf1-efb6-417b-9416-4f545a58f50c"
+    },
+    {
+      "claim_id": "e4415b2f-9f06-41dd-9608-a57d33fde0c2",
+      "result_id": "ae360cf1-efb6-417b-9416-4f545a58f50c"
+    },
+    {
+      "claim_id": "0faa3907-cfca-4592-960d-c38b7cae75f6",
+      "result_id": "a744e81f-14a1-48e8-8fb6-955628760818"
+    },
+    {
+      "claim_id": "ac1d1bb4-31f0-40b4-91df-3a6e4826e535",
+      "result_id": "a744e81f-14a1-48e8-8fb6-955628760818"
+    },
+    {
+      "claim_id": "97e92836-d92f-4b3e-a178-25fd995dfb27",
+      "result_id": "a744e81f-14a1-48e8-8fb6-955628760818"
+    },
+    {
+      "claim_id": "3b24efee-e0fb-4227-a779-56ff704aa540",
+      "result_id": "a744e81f-14a1-48e8-8fb6-955628760818"
+    },
+    {
+      "claim_id": "df508883-5066-4fe9-bde9-e1fc34e66d32",
+      "result_id": "a744e81f-14a1-48e8-8fb6-955628760818"
+    },
+    {
+      "claim_id": "bd4c0931-a640-4989-b2d3-aafc25077d0b",
+      "result_id": "a744e81f-14a1-48e8-8fb6-955628760818"
+    },
+    {
+      "claim_id": "46169913-5731-41e1-b55c-49db364898aa",
+      "result_id": "ac6efff4-2f08-453e-9e9c-ba3af222b131"
+    },
+    {
+      "claim_id": "c3f15598-9620-4564-b5d3-58133a7d50f7",
+      "result_id": "ac6efff4-2f08-453e-9e9c-ba3af222b131"
+    },
+    {
+      "claim_id": "c4d3bdb2-e907-41e1-959f-096ec7416ec9",
+      "result_id": "ac6efff4-2f08-453e-9e9c-ba3af222b131"
+    },
+    {
+      "claim_id": "d315cc1d-4e22-48f0-ab88-8cabc199a49f",
+      "result_id": "ac6efff4-2f08-453e-9e9c-ba3af222b131"
+    },
+    {
+      "claim_id": "4faa1a97-7069-4c0f-9108-f642f77e6f72",
+      "result_id": "ac6efff4-2f08-453e-9e9c-ba3af222b131"
+    },
+    {
+      "claim_id": "277f288c-fd79-4b17-94af-b8ff05b10993",
+      "result_id": "ac6efff4-2f08-453e-9e9c-ba3af222b131"
+    }
+  ],
+  "comparisons": []
+}

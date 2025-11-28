@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C87",
+      "C88"
+    ],
+    "result": "The S. aureus \u0394atl mutant exhibits significantly increased binding of mCherry_PGRP-SA compared to the parental strain and other cell wall metabolism mutants. Among all tested mutants, the \u0394atl mutant showed the highest level of PGRP-SA binding (p<0.001), identifying the major autolysin Atl as critical for preventing host immune recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C87, and C88 are well-supported by quantitative fluorescence data and microscopy images in Figure 1. The statistical analysis (p<0.001) with appropriate sample size (n\u226510) and the visual confirmation by microscopy provide strong evidence for this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C70"
+    ],
+    "result": "The Atl-mediated mechanism of PGN concealment is distinct from the wall teichoic acid (WTA)-mediated mechanism. The \u0394atl mutant produces WTAs and has similar PGN muropeptide composition to the parental strain, with no increase in polymerized muropeptides. The synergistic effect of simultaneously deleting tagO and atl demonstrates independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 and C70 are supported by complementary biochemical analyses (HPLC, PAGE) shown in Figure 2A-C. The synergistic effect observed in the double mutant (Figure 2C) provides strong evidence for independent mechanisms. However, the inference about mechanism novelty (C34) relies on comparison to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Either the amidase (AM) or glucosaminidase (GL) activity of Atl is sufficient to prevent PGRP-SA recognition of S. aureus. Only when both enzymatic activities are absent does mCherry-PGRP-SA strongly recognize the bacterial surface, though the double point mutant shows lower binding than the complete null mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are well-supported by data in Figure 3C-D using validated point mutants confirmed by zymography (Figure 3B). The observation that either activity alone is sufficient is clearly demonstrated. The speculation about residual activity (C41) is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Purified AM and GL enzymes can individually abolish PGRP-SA binding to \u0394atl mutant cells at ~0.4 \u03bcM concentration. When combined, lower concentrations (<0.02 \u03bcM) of both enzymes are sufficient, demonstrating synergistic activity consistent with the genetic double mutant data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by biochemical complementation experiments shown in Figure 4A-B using purified enzymes. The dose-response data and synergy between enzymes provide strong evidence. The connection to genetic data (C44) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The enzymatic activity of autolysins, rather than their physical presence, is required for protection from PGRP-SA recognition. Washing away the enzymes after treatment does not restore PGRP-SA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by the washing experiment in Figure 5, which includes appropriate controls and dot-blot confirmation of enzyme removal. This experiment effectively distinguishes between competitive binding and enzymatic modification mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The S. aureus \u0394atl mutant shows severely impaired virulence in wild-type Drosophila, with significantly reduced ability to kill flies compared to the parental strain NCTC8325-4. This was observed in both the 25174 strain (p<0.005) and yw strain (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C89-C91 are well-supported by survival curve data in Figure 6A-B with appropriate statistical analysis (log-rank test) and adequate sample sizes (n=75). The consistency across two different fly strains strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C92"
+    ],
+    "result": "The \u0394atl mutant triggers stronger induction of drosomycin expression at 12 hours post-infection when normalized for bacterial numbers, indicating enhanced immune activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C92 are supported by qPCR data in Figure 6D normalized to bacterial CFU counts (Figure 6C). The normalization is critical and appropriately performed, though statistical significance is not explicitly stated for the difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C93",
+      "C94"
+    ],
+    "result": "Survival of Drosophila infected with the \u0394atl mutant is dependent on functional PGRP-SA. In PGRP-SA mutant flies, both wild-type and \u0394atl bacteria kill flies equally (p>0.05), demonstrating that the attenuated virulence requires PGRP-SA-mediated recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C93-C94 are strongly supported by genetic epistasis experiments in Figure 6E showing that the \u0394atl phenotype is suppressed in seml mutant flies. This provides direct evidence for PGRP-SA dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C95",
+      "C96"
+    ],
+    "result": "The impaired virulence of the \u0394atl mutant is not due to reduced bacterial proliferation, as demonstrated by similar CFU counts of wild-type and \u0394atl bacteria in PGRP-SA mutant flies at 17 hours post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C95-C96 are supported by CFU data in Figure 6F. This control experiment effectively rules out a growth defect as the cause of reduced virulence, strengthening the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C97",
+      "C98"
+    ],
+    "result": "Inactivation of either the amidase (AMH265A) or glucosaminidase (GLE1128A) activity results in decreased virulence compared to wild-type bacteria (p=0.01 and p<0.001), with all atl mutant strains showing similar reduced ability to kill flies (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C97-C98 are supported by survival data in Figure 7A. This genetic dissection supports the hypothesis that either activity can contribute to virulence, consistent with the PGRP-SA binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C99",
+      "C100"
+    ],
+    "result": "Pre-coating \u0394atl bacteria with mCherry_PGRP-SA before injection into PGRP-SA mutant flies significantly increases fly survival (p<0.0001), demonstrating that direct PGRP-SA binding to the bacterial surface can partially restore immune protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C99-C100 are supported by the rescue experiment in Figure 7B. However, the rescue is partial, and the authors appropriately note that continuous PGRP-SA expression may be required for full protection (C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C101",
+      "C102"
+    ],
+    "result": "Supernatant from wild-type S. aureus cultures containing secreted Atl products can modify the surface of \u0394atl mutant cells and abolish PGRP-SA recognition (100-fold reduction in binding). Supernatant from \u0394atl cultures lacks this activity, demonstrating specificity for Atl products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C101-C102 are well-supported by quantitative binding assays (Figure 8A) and microscopy (Figure 8B). The comparison between wild-type and mutant supernatants provides strong evidence for Atl-specific activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Pre-treatment of \u0394atl bacteria with supernatant from wild-type cultures, but not from \u0394atl cultures, restores the ability to kill flies (p<0.001), demonstrating that secreted Atl products can rescue virulence in trans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C103-C105 are strongly supported by survival data in Figure 8C. This functional rescue experiment provides compelling evidence that secreted autolysins can act on neighboring bacteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C106"
+    ],
+    "result": "Previously bound PGRP-SA can be removed from bacterial surfaces by autolysin activity present in culture supernatants, as demonstrated by time-lapse microscopy showing loss of mCherry_PGRP-SA fluorescence over 50 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C106 are supported by time-lapse microscopy in Figure 9 and Videos 1-2. This dynamic visualization provides direct evidence for enzymatic removal of bound PGRP-SA, though the mechanism (substrate removal vs. direct cleavage) is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C7",
+      "C8"
+    ],
+    "result": "Autolysins encoded by atl can protect not only producer cells but also neighboring bacteria from immune detection during infection, facilitating survival of the entire bacterial population in the infected host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C7-C8 are supported by the supernatant experiments (Figures 8-9) showing trans-complementation. The combination of binding assays, virulence rescue, and time-lapse microscopy provides strong evidence for population-level protection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The role of Atl in immune evasion is conserved in the highly virulent CA-MRSA strain MW2. Deletion of atl in MW2 increases PGRP-SA binding (p<0.05) and severely impairs virulence in wild-type flies, with flies controlling MW2\u0394atl infection in a PGRP-SA-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C107-C110 are supported by data in Figure 10A-B. Testing in a clinically relevant MRSA strain significantly strengthens the generalizability of the findings, though only one MRSA strain was tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C111",
+      "C112"
+    ],
+    "result": "The autolysin-mediated immune evasion mechanism extends to other Gram-positive pathogens. Deletion of lytA in S. pneumoniae significantly increases PGRP-SA recognition (p<0.05), and this phenotype is reversed by plasmid-based complementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C111-C112 are supported by data in Figure 11A. The complementation experiment strengthens the conclusion, demonstrating that the effect is specifically due to LytA loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C113"
+    ],
+    "result": "Autolysins from different bacterial species (S. pneumoniae LytA and S. globisporus mutanolysin) can protect S. aureus \u0394atl cells from PGRP-SA recognition, suggesting potential for inter-species protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C113 are supported by microscopy data in Figure 11B. However, C67 (inter-species protection) is appropriately labeled as speculation, as the experiments were performed in vitro and the physiological relevance is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C79",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "Autolysins from Gram-positive pathogenic bacteria trim outermost peptidoglycan fragments, preventing direct recognition by PGRPs. This represents a major mechanism of immune evasion where bacteria use dedicated amidases or glucosaminidases to remove exposed PGN fragments that would otherwise be recognized by the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the central conclusion of the manuscript, synthesizing results from multiple experimental approaches. The trimming model is well-supported by the collective data showing: (1) increased PGRP-SA binding to atl mutants, (2) rescue by purified enzymes, (3) requirement for enzymatic activity, (4) virulence dependence on PGRP-SA, and (5) conservation across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C34",
+      "C35"
+    ],
+    "result": "Bacteria have evolved multiple independent mechanisms to prevent PGN recognition. The Atl-mediated mechanism is distinct from WTA-mediated concealment, as demonstrated by the synergistic effect of simultaneously deleting both pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by the synergy data in Figure 2C and comparison to prior work (C69). The independence of mechanisms is clearly demonstrated, though the evolutionary claim (C68) is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C13",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims about peptidoglycan structure, function, and recognition by host immune systems represent established knowledge in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C9-C10, C13, C25-C26) represent well-established background knowledge appropriately cited or stated. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C32",
+      "C46",
+      "C54",
+      "C55",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Citations to prior work establish the context for peptidoglycan metabolism, immune recognition mechanisms, and previous observations about autolysin function and virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent appropriate citations to prior literature that establish the scientific context. The accuracy of these attributions appears correct based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C84",
+      "C86"
+    ],
+    "result": "Speculative claims about the limited role of direct PGN recognition in mammals and Gram-negative bacteria, the extension of PGN fragments beyond teichoic acids, and potential therapeutic targeting of autolysins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81, C84, and C86 are appropriately labeled as speculation in the evidence. While reasonable based on the data, these claims extend beyond what is directly demonstrated and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The difference in PGRP-SA recognition between the double point mutant and complete null mutant may be due to residual enzymatic activity not detectable by zymography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 is speculation to explain an observed difference. While plausible, alternative explanations (e.g., structural differences between point mutants and null mutant) are not ruled out. Additional biochemical characterization would be needed.",
+    "result_type": "MINOR"
+  }
+]

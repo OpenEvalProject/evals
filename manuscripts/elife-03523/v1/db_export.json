@@ -1,0 +1,2090 @@
+{
+  "submission": {
+    "id": "98c7e51f-8827-4a28-b7c2-7e66201ee46b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:24:19.818484Z",
+    "updated_at": "2025-11-28T21:24:19.818484Z"
+  },
+  "content": [
+    {
+      "id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "submission_id": "98c7e51f-8827-4a28-b7c2-7e66201ee46b",
+      "content_type": "manuscript",
+      "content_text": "# Long non-coding RNAs as a source of new peptides\n\n## Authors\n\n- Jorge Ruiz-Orera<sup>1</sup>\n- Xavier Messeguer<sup>2</sup>\n- Juan Antonio Subirana<sup>1</sup>\n- M Mar Alba<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Evolutionary Genomics Group, Research Programme on Biomedical Informatics Hospital del Mar Research Institute, Universitat Pompeu Fabra Barcelona Spain\n2. Llenguatges i Sistemes Inform\u00e0tics Universitat Polit\u00e8cnica de Catalunya Barcelona Spain\n3. Real Academia de Ci\u00e8ncies i Arts de Barcelona Barcelona Spain\n4. Catalan Institution for Research and Advanced Studies Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nDeep transcriptome sequencing has revealed the existence of many transcripts that lack long or conserved open reading frames (ORFs) and which have been termed long non-coding RNAs (lncRNAs). The vast majority of lncRNAs are lineage-specific and do not yet have a known function. In this study, we test the hypothesis that they may act as a repository for the synthesis of new peptides. We find that a large fraction of the lncRNAs expressed in cells from six different species is associated with ribosomes. The patterns of ribosome protection are consistent with the translation of short peptides. lncRNAs show similar coding potential and sequence constraints than evolutionary young protein coding sequences, indicating that they play an important role in de novo protein evolution.\n\n## Introduction\n\nStudies performed over the past decade have unveiled a richer and more complex transcriptome than was previously appreciated (Okazaki et al., 2002; Carninci et al., 2005; Kapranov et al., 2007; Ponjavic et al., 2007). Thousands of long RNA molecules (>200 nucleotides) that do not display the typical properties of well-characterized protein-coding RNAs, and which have been named intergenic or long non-coding RNAs (lncRNAs), have been discovered in several eukaryotic genomes (Okazaki et al., 2002; Ponting et al., 2009; Cabili et al., 2011; Liu et al., 2012; Pauli et al., 2012; Ulitsky and Bartel, 2013). There are several lncRNAs that have regulatory functions (Guttman and Rinn, 2012; Ulitsky and Bartel, 2013). For example the X-inactive-specific transcript Xist regulates X chromosome inactivation in eutherian mammals (Brockdorff et al., 1992). However, the vast majority of lncRNAs do not have a known function.\n\nIntriguingly, several recent studies have noted that a large fraction of lncRNAs associate with ribosomes (Ingolia et al., 2011; Bazzini et al., 2014; Juntawong et al., 2014; van Heesch et al., 2014). Deep sequencing of ribosome-protected fragments, or ribosome profiling, provides detailed information on the regions that are translated in a transcript (Ingolia, 2014). According to some studies, the patterns of ribosome protection indicate that lncRNAs are capable of translating short peptides (Ingolia et al., 2011; Bazzini et al., 2014; Juntawong et al., 2014) although others have reached different conclusions (Guttman et al., 2013). Many lncRNAs have the same structure as classical mRNAs: they are transcribed by polymerase II, capped and polyadenylated, and accumulate in the cytoplasm (van Heesch et al., 2014). However, in contrast to typical protein-coding genes, they tend to contain few introns, are expressed at low levels, exhibit weak sequence constraints, and show limited phylogenetic conservation (Cabili et al., 2011; Derrien et al., 2012; Kutter et al., 2012; Necsulea et al., 2014).\n\nThe association of lncRNAs with ribosomes, and the fact that many of them appear to have arisen relatively recently in evolution, indicate that they could be an important source of new peptides. Levine et al., who described the first examples of de novo originated genes in Drosophila melanogaster, already noted that non-coding RNAs expressed at low levels could contribute to the birth of novel protein coding genes (Levine et al., 2006). Cai et al. found a new protein coding gene in Saccharomyces cerevisiae likely to have been formed from a previously transcribed non-coding sequence (Cai et al., 2008). Wilson and Masel observed that ribosome profiling reads from a yeast experiment often mapped to intergenic transcripts (Wilson and Masel, 2011), and they proposed that this could help provide the raw material for the birth of new protein-coding genes. Another study in yeast found evidence of translation of short species-specific ORFs located in non-genic regions (Carvunis et al., 2012). More generally, it is important to consider that de novo protein-coding gene evolution, which was once thought to be a very rare event, is now believed to be relatively common (Khalturin et al., 2009; Toll-Riera et al., 2009; Tautz and Domazet-Lo\u0161o, 2011; Long et al., 2013; Reinhardt et al., 2013). Recently emerged proteins tend to be very short and evolve under weak evolutionary constraints (Alb\u00e0 and Castresana, 2005; Levine et al., 2006; Cai et al., 2009; Liu et al., 2010; Xie et al., 2012; Palmieri et al., 2014), properties that we also expect to find in the putative ORFs of lncRNAs.\n\nThe idea that lncRNAs serve as a repository for the evolution of new peptides is appealing but the evidence is still fragmented. In this study, we have analyzed ribosome profiling experiments performed in six different species and measured the sequence coding potential and selective constraints of the putatively translated ORFs in lncRNAs and codRNAs. We have discovered that lncRNAs show very similar characteristics to evolutionary young protein coding genes (lineage-specific proteins). The results strongly support a role for lncRNAs in the production of new peptides.\n\n## Results\n\n### Characterization of coding and long non-coding transcripts\n\nWe obtained polyA+ RNA and ribosome profiling sequencing data from six different published experiments performed in diverse eukaryotic species, mouse (Mus musculus), human (Homo sapiens, HeLa cells), zebrafish (Danio rerio), fruit fly (D. melanogaster), Arabidopsis (A. thaliana), and yeast (S. cerevisiae) (Table 1). After read mapping and transcript assembly, we classified the expressed transcripts longer than 200 nucleotides into coding and long non-coding classes (codRNAs and lncRNAs, respectively, Table 2).\n\n**Table 1.**\n Data sets used in the study\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Species</th>\n      <th>GEO Accession</th>\n      <th>Mapped reads (millions)</th>\n      <th>Max read length (bp)</th>\n      <th>Description</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Mouse M. musculus</td>\n      <td>RNA-seq</td>\n      <td>GSE30839</td>\n      <td>226.0</td>\n      <td>43</td>\n      <td rowspan=\"2\">ES cells, E14</td>\n      <td rowspan=\"2\">Ingolia et al., 2011</td>\n    </tr>\n    <tr>\n      <td>Ribosome profiling</td>\n      <td>GSE30839</td>\n      <td>39.2</td>\n      <td>47</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Human H. sapiens</td>\n      <td>RNA-seq</td>\n      <td>GSE22004</td>\n      <td>29.8</td>\n      <td>36</td>\n      <td rowspan=\"2\">HeLa cells</td>\n      <td rowspan=\"2\">Guo et al., 2010</td>\n    </tr>\n    <tr>\n      <td>Ribosome profiling</td>\n      <td>GSE22004</td>\n      <td>78.3</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Zebrafish D. rerio</td>\n      <td>RNA-seq</td>\n      <td>GSE32900</td>\n      <td>1382.2</td>\n      <td>2 \u00d7 75</td>\n      <td rowspan=\"2\">Series of developmental stages</td>\n      <td rowspan=\"2\">Chew et al., 2013</td>\n    </tr>\n    <tr>\n      <td>Ribosome profiling</td>\n      <td>GSE46512</td>\n      <td>1040.0</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Fruit fly D. melanogaster</td>\n      <td>RNA-seq</td>\n      <td>GSE49197</td>\n      <td>1317.9</td>\n      <td>50</td>\n      <td rowspan=\"2\">0\u20132hr embryos, wild type</td>\n      <td rowspan=\"2\">Dunn et al., 2013</td>\n    </tr>\n    <tr>\n      <td>Ribosome profiling</td>\n      <td>GSE49197</td>\n      <td>105.7</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Arabidopsis A. thaliana</td>\n      <td>RNA-seq</td>\n      <td>GSE50597</td>\n      <td>79.8</td>\n      <td>51</td>\n      <td rowspan=\"2\">No stress conditions, TRAP purification</td>\n      <td rowspan=\"2\">Juntawong et al., 2014</td>\n    </tr>\n    <tr>\n      <td>Ribosome profiling</td>\n      <td>GSE50597</td>\n      <td>140.3</td>\n      <td>51</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Yeast S. cerevisiae</td>\n      <td>RNA-seq</td>\n      <td>GSE52119</td>\n      <td>20.54</td>\n      <td>50</td>\n      <td rowspan=\"2\">GSY83, diploid</td>\n      <td rowspan=\"2\">McManus et al., 2014</td>\n    </tr>\n    <tr>\n      <td>Ribosome profiling</td>\n      <td>GSE52119</td>\n      <td>6.83</td>\n      <td>50</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Fraction of transcripts associated with ribosomes\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">codRNA</th>\n      <th colspan=\"3\">lncRNA</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Expressed</th>\n      <th colspan=\"2\">Associated with ribosomes (RP)</th>\n      <th>Expressed</th>\n      <th colspan=\"2\">Associated with ribosomes (RP)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Total</th>\n      <th>Stringent</th>\n      <th></th>\n      <th>Total</th>\n      <th>Stringent</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Mouse</td>\n      <td>14,245</td>\n      <td>14,196 (99.7%)</td>\n      <td>13,918 (97.7%)</td>\n      <td>476</td>\n      <td>390 (81.9%)</td>\n      <td>367 (77.1%)</td>\n    </tr>\n    <tr>\n      <td>Human</td>\n      <td>17,011</td>\n      <td>16,630 (97.8%)</td>\n      <td>16,617 (97.7%)</td>\n      <td>934</td>\n      <td>403 (43.1%)</td>\n      <td>343 (36.7%)</td>\n    </tr>\n    <tr>\n      <td>Zebrafish</td>\n      <td>12,595</td>\n      <td>11,643 (92.4%)</td>\n      <td>11,637 (92.4%)</td>\n      <td>2392</td>\n      <td>726 (30.4%)</td>\n      <td>684 (28.6%)</td>\n    </tr>\n    <tr>\n      <td>Fruit fly</td>\n      <td>8041</td>\n      <td>8031 (99.9%)</td>\n      <td>7623 (94.8%)</td>\n      <td>28</td>\n      <td>22 (78.6%)</td>\n      <td>10 (35.7%)</td>\n    </tr>\n    <tr>\n      <td>Arabidopsis</td>\n      <td>19,162</td>\n      <td>18,879 (98.5%)</td>\n      <td>10,329 (53.9%)</td>\n      <td>139</td>\n      <td>93 (66.9%)</td>\n      <td>68 (48.9%)</td>\n    </tr>\n    <tr>\n      <td>Yeast</td>\n      <td>4740</td>\n      <td>4547 (95.9%)</td>\n      <td>4335 (91.5%)</td>\n      <td>21</td>\n      <td>6 (28.6%)</td>\n      <td>6 (28.6%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Stringent: number of transcripts significant at p < 0.05 using 3\u2032UTRs as a null model (see \u2018Materials and methods\u2019 for more details)._\n\nWe detected hundreds of annotated lncRNAs in the vertebrate species (mouse, human and zebrafish), the number being lower (<150) in the other species (fruit fly, Arabidopsis and yeast). In addition, we identified a large number of novel lncRNAs not annotated in the databases, 2488 taking all species together (Supplementary file 1A). The inclusion of such lncRNAs resulted in a sixfold increase in the number of lncRNAs amenable for study in zebrafish and a twofold increase in mouse. In yeast, we only found two annotated lncRNAs, but there were 19 novel ones. In the majority of the analyses, we merged the annotated and the novel lncRNAs.\n\nAs expected, lncRNAs tended to be much shorter than codRNAs in all the species studied (Figure 1A). We found that most lncRNAs contained at least one short ORF (\u226524 amino acids) and often several ORFs. The average ORF size in lncRNAs was between 43 and 68 amino acids depending on the species (Supplementary file 1B). Consistent with previous studies, lncRNAs were expressed at significantly lower levels than codRNAs (Figure 1B, Wilcoxon test, p < 10\u22125).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig1-v1.jpg)\n\n**Figure 1.:** (A) Density plots of transcript length. (B) Box-plots of transcript expression level in log2(FPKM) units. lncRNA_ribo: lncRNAs associated with ribosomes; lncRNA_noribo: lncRNAs for which association with ribosomes was not detected. codRNA: coding transcripts encoding experimentally validated proteins except for zebrafish in which all transcripts annotated as coding were considered. The area within the box-plot comprises 50% of the data and the line represents the median value. In all studied species, codRNAs were expressed at higher levels than lncRNAs (Wilcoxon test, p < 10\u22125), and lncRNA_ribo at higher levels than lncRNA_noribo (Wilcoxon test, p < 0.005).\n\n### Efficient detection of translation events by ribosome profiling\n\nThe analysis of ribosome profiling sequencing data showed that the percentage of expressed coding transcripts associated with ribosomes was >90% in all species, with the highest values (>99%) in mouse and fruit fly (Table 2). Pseudogenes had a lower rate of association with ribosomes than coding RNAs, but surprisingly, in species with many annotated pseudogenes, such as human, mouse, and Arabidopsis, the majority of them showed association with ribosomes (Supplementary file 1A). This appeared to be a true signal; while pseudogenes will typically show sequence similarity to other functional copies in the genome, we only considered uniquely mapped reads with no mismatches.\n\nRibosome profiling is based on deep sequencing, and thus provides an unmatched level of resolution of the translated peptides when compared with current proteomics techniques. This is especially important for short proteins, which are difficult to detect by standard mass spectrometry methods (Slavoff et al., 2013). We used the ribosome-associated protein-coding RNA data to investigate the relationship between peptide detection by proteomics and protein length. We found that human and mouse translated proteins between 24 and 80 amino acids long were more difficult to identify in proteomics databases than longer proteins (Table 3).\n\n**Table 3.**\n Fraction of translated proteins of different size detected in proteomics databases\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"4\">Protein size (amino acids)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Species</td>\n      <td>24\u201380</td>\n      <td>81\u2013130</td>\n      <td>131\u2013180</td>\n      <td>&gt;180</td>\n    </tr>\n    <tr>\n      <td>Mouse</td>\n      <td>27/58 (46.6%)</td>\n      <td>222/286 (77.6%)</td>\n      <td>256/330 (77.6%)</td>\n      <td>3716/4786 (77.7%)</td>\n    </tr>\n    <tr>\n      <td>Human</td>\n      <td>116/272 (42.6%)</td>\n      <td>536/748 (71.7%)</td>\n      <td>669/875 (76.5%)</td>\n      <td>6757/8964 (75.4%)</td>\n    </tr>\n    <tr>\n      <td>Yeast</td>\n      <td>27/30 (90.0%)</td>\n      <td>168/207 (81.1%)</td>\n      <td>234/265 (88.3%)</td>\n      <td>2934/3224 (91.0%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Only transcripts encoding experimentally validated proteins (codRNAe) were considered._\n\n### Long non-coding RNA transcripts frequently associate with ribosomes\n\nThe percentage of lncRNAs scanned by ribosomes (lncRNA_ribo) was surprisingly high in all the species studied (Table 2). The values ranged from 28.6% in yeast to 81.9% in mouse. This affected the main lncRNA classes described in Ensembl v. 70, including long intervening non-coding RNAs (lincRNAs) or antisense transcripts (Supplementary file 1C). Short transcript size may hinder ribosome association detection (Aspden et al., 2014). We also found that the ribosome profiling signal was more difficult to detect in poorly expressed transcripts than in highly expressed ones, both for lncRNAs and codRNAs (Figure 2). As lncRNAs tend to be expressed at low levels and are short when compared to codRNAs (Figure 1), we might be underestimating their association with ribosomes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig2-v1.jpg)\n\n**Figure 2.:** The percentage of transcripts associated with ribosomes is shown for several transcript expression intervals. codRNA: annotated coding transcripts encoding experimentally verified proteins (except in zebrafish for which all coding transcripts were considered). lncRNA: annotated and novel long non-coding RNAs. Only species with at least 20 transcripts in each expression bin were plotted. In the rest of species, the data were consistent with the trends shown.\n\nIn order to determine if the ribosome profiling signal in lncRNAs was different from noise, we compared ribosome density in the transcripts it to that in 3\u2032untranslated regions (3\u2032UTRs). More specifically, the null model consisted in a size-matched set of sequences containing randomly taken 3\u2032UTR from annotated coding transcripts. Ribosome density was calculated as the number of ribosome profiling reads divided by RNA-seq reads, a ratio defined as translational efficiency (TE) (Ingolia et al., 2011). Both codRNAs and lncRNAS displayed much higher TE values than 3\u2032UTRs in all species studied (Wilcoxon test p < 10\u22125, Figure 3). We could reject the null model for 90.12% of the lncRNAs and 87.19% of the codRNAs associated with ribosomes (p < 0.05) (see details by species in Table 2, Stringent set). Therefore, we concluded that the density of ribosomes in lncRNAs is much higher than expected by spurious ribosome binding.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig3-v1.jpg)\n\n**Figure 3.:** Cumulative distribution of TE values in human codRNAs, lncRNAs, and 3\u2032UTR sequences. We randomly selected 3\u2032UTRs with a minimum length of 30 nucleotides to build a set of 3\u2032UTR sequences with the same size distribution as the complete transcripts.\n\nNext, we compared ribosome density in lncRNAs and codRNAs in each of the species focusing on regions covered by ribosome profiling reads to accommodate for any differences in the length of the putatively translated regions. In human, fruit fly, and yeast, TE was higher in codRNAs than in lncRNAs (Wilcoxon test, p < 0.005), but in mouse and zebrafish the opposite trend was observed (Wilcoxon test, p < 0.05) (Figure 4). Despite the differences between the species, which may be due to technical issues, it is clear that lncRNAs can show TE values that are similar or even higher than codRNAs. The results were similar when we restricted the analysis to genes encoding a single transcript to avoid any possible biases due to multiple read mapping or when we employed the maximum TE in 90 nucleotide windows (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig4-v1.jpg)\n\n**Figure 4.:** Box-plots of transcript translational efficiency (TE) in log2(TE) units. The area within the box-plot comprises 50% of the data, and the line represents the median value. lncRNA: lncRNAs for which association with ribosomes was detected. codRNA: coding RNAs transcripts encoding experimentally validated proteins except for zebrafish in which all transcripts annotated as coding were considered.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Single isoforms correspond to data for genes with a single transcript. The number of such genes was 2961 codRNA and 246 lncRNA_ribo for mouse, 2853 codRNA and 150 lncRNA_ribo for human, 9352 codRNA and 412 lncRNA_ribo for zebrafish, 836 codRNA and 18 lncRNA_ribo for fruit fly, and 3024 codRNA and 92 lncRNA_ribo for Arabidopsis. In the case of yeast, all genes were taken. TE max is the maximum TE value taking 90 nucleotide windows.\n\nFor comparison, we collected a set of 29 human genes with non-coding functions described in several recent reviews (Supplementary file 2A; Ponting et al., 2009; Ulitsky and Bartel, 2013; Fatica and Bozzoni, 2014). Many of these genes play roles in the regulation of gene expression in the nucleus and are thus unlikely to be translated. We only detected expression for five of these genes: Malat1, Pvt1, Neat1, Meg8, and Cyrano. Transcripts encoded by the first three genes showed ribosome association. In the case of Malat1, this was also consistently observed in mouse and zebrafish (in the latter species Malat1 was identified as a novel transcript) and in the case of Pvt1 in mouse. Given the small number of expressed transcripts, we could not draw any general conclusions for this set.\n\n### lncRNAs show similar ribosome protection profiles to codRNAs\n\nThe exact positions of ribosome profiling reads on the RNA can be used to delineate the regions that are being actively translated or to discover new functional ORFs (Chew et al., 2013; Guttman et al., 2013; Ingolia, 2014). Because the ribosome is released after encountering a stop codon, this technique can also be employed to identify novel C-terminal protein extensions (Dunn et al., 2013) or to evaluate if a predicted ORF is likely to correspond to a translated peptide (Guttman et al., 2013). We next aimed at comparing the TE values in different transcript regions, including open reading frames (ORFs), putative 5\u2032 and 3\u2032 untranslated regions (UTRs), and the regions between ORFs.\n\nIn order to obtain an unbiased picture, it was important to define the different regions in the same way in lncRNAs and codRNAs. In typical codRNAs there is a main translated ORF that covers a large fraction of the transcript, sometimes accompanied by short upstream ORFs in the 5\u2032UTR (Chew et al., 2013). However, lncRNAs may potentially encode several short peptides (Ingolia et al., 2011). The minimum size of ORFs was set at 24 amino acids (75 nucleotides counting the STOP codon), as peptides of this size have been identified in genetic screen studies in humans (Hashimoto et al., 2001). To simplify the comparisons, we employed the same ORF size cut-off in all species. We also considered both a primary ORF, defined as the ORF with the largest number of ribosome profiling reads, as well as any additional non-overlapping ORFs that mapped to ribosome profiling reads (rest of ORFs).\n\nIn codRNAs, the primary ORF showed a nearly perfect degree of agreement with the annotated protein, indicating that it was an appropriate metric for the main translated product. Primary ORFs in lncRNAs typically occupied a shorter fraction of the transcript than in codRNAs (Figure 5A). The relative length of the ORF with respect to transcript length did not seem to be a strong predictor of ribosome association, as it did not help distinguish lncRNAs associated with ribosomes (lncRNA_ribo) to those not associated with ribosomes (lncRNA_noribo). In lncRNAs, most of the primary ORFs corresponded to proteins less than 100 amino acids long (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-v1.jpg)\n\n**Figure 5.:** (A) Density plot of the relative length of the primary ORF in lncRNA_ribo and codRNA with respect to transcript length. For comparison data for the longest ORF in lncRNA_noribo is also shown (except for fruit fly due to insufficient data). (B) Box-plots of TE distribution in primary ORF, 5\u2032UTR, and 3\u2032UTR regions. The area within the box-plot comprises 50% of the data, and the line represents the median value. The analysis considered all transcripts with 5\u2032UTR and 3\u2032UTR longer than 30 nucleotides and >0.2 FPKM in all three regions. The number of transcripts was 1956 codRNA and 159 lncRNA_ribo in mouse, 3558 codRNA and 139 lncRNA_ribo in human, 5216 codRNA and 252 lncRNA_ribo in zebrafish, and 2019 codRNA and 33 lncRNA_ribo in Arabidopsis. (C) Box-plots of TE distribution in primary ORFs, rest of ORFs with ribosome profiling reads and non-ORF regions (interORF). The analysis considered all transcripts with at least two ORFs and more than 30 nucleotides interORF. The number of transcripts was 3264 codRNA and 204 lncRNA_ribo in mouse, 3104 codRNA and 168 lncRNA_ribo in human, 1646 codRNA and 212 lncRNA_ribo in zebrafish, and 1098 codRNA and 25 lncRNA_ribo in Arabidopsis. Fruit fly and yeast were not included in the last two analyses due to insufficient data (<8 lncRNA_ribo meeting the conditions).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** In codRNAs and lncRNA_ribo, we selected the primary ORF (the ORF with the largest number of ribosome profiling reads), whereas in lncRNA_noribo we selected the longest ORF.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Box-plots of TE distribution in primary ORF, 5\u2032UTR, and 3\u2032UTR regions. The analysis considered only genes with one isoform, with UTR and ORF regions expressed at >0.2 FPKM and with 5\u2032UTR and 3\u2032UTR longer than 30 nucleotides. The number of transcripts was 980 codRNA and 97 lncRNA_ribo in mouse, 758 codRNA and 36 lncRNA_ribo in human, 3763 codRNA and 117 lncRNA_ribo in zebrafish, and 1495 codRNA and 32 lncRNA_ribo in Arabidopsis. (B) Box-plots of TE distribution in primary ORFs, other ORFs with ribosome profiling reads and non-ORF regions (interORFs). The analysis only considered genes with one isoform in which these regions were longer than 30 nucleotides and with expression >0.2 FPKM. The number of transcripts was 1691 codRNA and 113 lncRNA_ribo in mouse, 763 codRNA and 54 lncRNA_ribo in human, 1170 codRNA and 108 lncRNA_ribo in zebrafish, and 817 codRNA and 25 lncRNA_ribo in Arabidopsis.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Box-plots of TE distribution in primary ORF, 5\u2032UTR, and 3\u2032UTR regions. The analysis considered only annotated transcripts, with UTR and ORF regions expressed at >0.2 FPKM and with 5\u2032UTR and 3\u2032UTR longer than 30 nucleotides. The number of transcripts was 1956 codRNA and 92 lncRNA_ribo in mouse, 3558 codRNA and 138 lncRNA_ribo in human, 5216 codRNA and 54 lncRNA_ribo in zebrafish, and 2019 codRNA and 22 lncRNA_ribo in Arabidopsis. (B) Box-plots of TE distribution in primary ORFs, other ORFs with ribosome profiling reads (rest ORFs) and non-ORF regions (interORF). The analysis only considered annotated transcripts in which these regions were longer than 30 nucleotides and with expression >0.2 FPKM. The number of transcripts was 3264 codRNA and 128 lncRNA_ribo in mouse, 3104 codRNA and 167 lncRNA_ribo in human, 1646 codRNA and 58 lncRNA_ribo in zebrafish, and 1098 codRNA and 18 lncRNA_ribo in Arabidopsis.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** We restricted this analysis to transcripts with ORF and UTR regions expressed at >0.2 FPKM and with 5\u2032UTR and 3\u2032UTR longer than 30 nucleotides. (A) Expressed at low levels: transcripts expressed at 0.5\u20132 FPKM, (B) expressed at high levels: transcripts expressed at 2\u201310 FPKM. codRNAs were sampled in such a way as to have the same gene expression distribution as the corresponding lncRNA set. Results for species in which all sets contained at least 20 transcripts are shown.\n\nNext, we focused our attention on the differences between the primary ORF and the 5\u2032UTR and 3\u2032UTR regions in codRNAs and lncRNAs. We defined the 3\u2032 untranslated region (3\u2032UTR) as the sequence located immediately after the STOP codon of the primary ORF or the most downstream ORF associated with ribosomes. We used the same criteria to define the 5\u2032UTR upstream from the initiation codon. In this analysis, we included all transcripts containing at least one ORF associated with ribosomes (the primary ORF) and sufficiently long UTR regions as to detect ribosome profiling reads (>30 nucleotides); insufficient data for fruit fly and yeast precluded the analysis for these species. In both codRNAs and lncRNAs, the 5\u2032UTR showed a ribosome density (translational efficiency, TE) comparable to that of the primary ORF (Figure 5B). In contrast, the 3\u2032UTR showed very little ribosome association and often we could not find a single read mapping to this region (31\u201391% of cases in codRNAs and 46\u201368% in lncRNAs). Using genes with a single isoform or considering only annotated transcripts produced similar results (Figure 5\u2014figure supplements 2 and 3). We also controlled for expression level by dividing the data set in transcripts with low (0.5\u20132 FPKM) and high expression (>2 FPKM), and by sampling the codRNAs in such a way as to have a similar expression distribution as lncRNAs. The results were very similar to those obtained with the complete data set (Figure 5\u2014figure supplement 4), indicating that the analysis is robust to transcript expression differences.\n\nAs transcripts may contain several ORFs, we performed a separate analysis in which we compared the translational efficiency of the primary ORF, any additional ORFs with mapped ribosome profiling reads, and the regions between ribosome-protected ORFs (interORF) (Figure 5C). InterORF regions showed little signal when compared to the primary ORF, both in codRNAs and lncRNAs (Wilcoxon test, p < 10\u22129 in human, mouse, and zebrafish, p < 0.05 in Arabidopsis, insufficient data for fruit fly and yeast precluded the analysis for these species). The data also indicated that ribosome binding is not always restricted to the primary ORF, especially in lncRNAs, as ribosome protection could sometimes be observed for additional ORFs.\n\nTaken together, these results indicate that lncRNAs have ribosome profiling signatures consistent with translation, with a strong decrease of ribosome density in the 3\u2032UTR but not the 5\u2032UTR region, and preferential binding of ribosomes to the primary ORF. There exists the possibility that the translated peptides are degraded soon after being produced. However, we estimate that the percentage of cases that may undergo nonsense-mediated decay (NMD, see \u2018Materials and methods\u2019 for more details) is low, between 4.47 and 14.11% depending on the species. For comparison, the percentage for protein-coding transcripts showing the same patterns (including transcripts annotated as NMD in Ensembl) is between 0.34 and 13.33%.\n\n### lncRNAs are less conserved than codRNAs\n\nAre the putatively translated ORF in lncRNAs conserved? We performed sequence similarity searches using BLASTP (E-value < 10\u22124) against all annotated coding transcripts in Ensembl, as well as against the primary ORFs in lncRNAs, for the six species studied here (Supplementary files 1D and 2B). The number of lncRNA_ribo with homologues in other species was remarkably low (0\u201315.6%) except for zebrafish (49.4%). In contrast, the majority of codRNAs had homologues in other species (>95% for vertebrates and fruit fly and 70\u201373% for Arabidopsis and yeast). After we discarded lncRNAs that showed cross-species conservation, association with ribosomes was still very prevalent (80.4% of mouse, 40.3% of human, and 22.1% of zebrafish lncRNAs were associated with ribosomes).\n\nWe also investigated whether the ribosome-associated ORFs in lncRNAs showed homology to annotated proteins in the same species. The values were very low for all the species (0\u201312.4%) except for zebrafish (47.5%). Therefore, in general lncRNAs are not truncated duplicated copies (pseudogenes). The case of zebrafish is an exception probably because of missing protein-coding annotations in this species.\n\n### Coding properties of ribosome-protected ORFs in lncRNAs\n\nSubsequently, we compared the sequence coding properties of the primary ORF in lncRNAs with those in bona fide coding and non-coding sequences using a hexamer-based coding score (see \u2018Materials and methods\u2019). In all species the coding scores of the primary ORF in lncRNAs, while lower than that of codRNAs, were significantly higher than the coding score of ORFs in introns (Figure 6, Wilcoxon test lncRNA_ribo vs intron, human, mouse, zebrafish, and Arabidopsis p < 10\u221216; fruit fly and yeast p < 10\u22125). This clearly shows that ORFs in lncRNAs are more coding-like than random ORFs. We repeated the same comparison using 100 different randomly sampled intronic sequence sets, and in >95% of the cases, we obtained the same result. lncRNAs associated with ribosomes (lncRNA_ribo) showed higher coding scores than those not associated with ribosomes (lncRNA_noribo), even when we did not use the ribosome profiling information and compared the longest ORF in both types of transcripts (Figure 6\u2014figure supplement 1). We reached similar conclusions when we restricted the analysis to annotated lncRNA transcripts (Figure 6\u2014figure supplement 2), when we used ORFs from gene deserts as an alternative non-coding sequence set (differences with lncRNAs significant by Wilcoxon test, p < 10\u221216, see \u2018Materials and methods\u2019 for more details), and when we restricted the analysis to lncRNAs for which we did not find protein coding homologues in the other species studied (Figure 6\u2014figure supplement 3). Because a high proportion of lncRNAs contained small ORFs, we repeated the comparison only considering transcripts with ORFs shorter than 100 amino acids to avoid any length biases, again obtaining similar results (Figure 6\u2014figure supplement 4). The use of other coding scores, for example based on codon frequencies instead of hexamer frequencies or related metrics such as GC content produced consistent results (Figure 6\u2014figure supplement 5; Supplementary file 1E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-v1.jpg)\n\n**Figure 6.:** Intron: randomly selected intronic regions; lncRNA_noribo: lncRNAs not associated with ribosomes; lncRNA_ribo: lncRNAs associated with ribosomes; pseudogene: pseudogenes associated with ribosomes; codRNAne: coding transcripts encoding non-validated proteins associated with ribosomes; codRNAe: coding transcripts encoding experimentally validated proteins. The coding score was calculated as the log ratio of hexamer frequencies in coding vs intronic sequences. In lncRNA_noribo and introns, we considered the longest ORF and in the rest of transcripts the primary ORF. The Class \u2018pseudogene\u2019 was only included in species with more than 20 expressed pseudogenes with mapped ribosome profiling reads. The coding score of the primary ORF in lncRNAs (lncRNA_ribo) was significantly higher than the coding score in ORFs defined in introns (Wilcoxon test, human, mouse, zebrafish, and Arabidopsis p < 10\u221216; fruit fly and yeast p < 10\u22124, Wilcoxon test) and in lncRNA_ribo it was significantly higher than in lncRNA_noribo in four species (Wilcoxon test, human, mouse and zebrafish p < 10\u22125, and Arabidopsis p < 0.05). Transcripts from genes of different evolutionary age were taken from the literature (see manuscript text). The number of transcripts was 68 for rodent, 127/123 for mammalian (mouse/human as reference species), 11,203/13,423/9812 for metazoan (mouse/human/zebrafish), 162 for fish, 208 for Crucifera, 28 for S. cerevisiae and 84 for Saccharomyces. The youngest class of codRNAs displayed similar scores than lncRNA_ribo in mouse, zebrafish, and yeast (classes rodent, fish and S. cerevisiae, respectively), being only significantly higher in human and Arabidopsis (Wilcoxon test, p < 0.005; classes primate and Cruciferae). We did not analyze young genes in fruit fly due to lack of a suitable young set of codRNAs in this species.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Comparison between lncRNAs associated and not associated with ribosomes using the longest ORF in both cases (lncRNA_ribo and lncRNA_noribo, respectively). Differences between lncRNA_ribo and lncRNA_noribo are significant by a Wilcoxon test (p < 10\u221210 in human, mouse, and zebrafish; p < 0.005 in Arabidopsis).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Comparison between different transcript classes using only annotated lncRNAs. Yeast transcriptome is composed of very few annotated lncRNAs, and this analysis could not be performed.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Comparison between different transcript classes using only lncRNA with no homologues (noH) in other species. Only species in which several lncRNA_ribo and lncRNA_noribo had homology matches were considered.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Here we only employed lncRNAs in which the primary ORF was shorter than 100 amino acids. codRNA refers to joined codRNAe and codRNAne sets, since experimentally verified proteins are usually longer than 100 amino acid. The number of transcripts is shown in red.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp5-v1.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Equal dicodon was based on the observed hexamer frequencies in coding sequences vs hexamer equiprobability, intron dicodon was based on the differences between hexamer frequencies in coding vs non-coding sequences and intron_monocodon was based on the observed codon frequences in coding sequences vs codon equiprobability.\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp6-v1.jpg)\n\n**Figure 6\u2014figure supplement 6.:** (A) Mouse CUFF.34338.1 (chr5:113183493\u2013113188347) is a novel lncRNA, it contains an ORF encoding a 169 amino acid protein associated with ribosomes and with protein-coding homologues in human, zebrafish, and yeast. (B) ENSMUST00000107081 is an annotated codRNA in mouse which evolved recently since no homologues were found in any other species. It has a small ORF that translates a 55 amino acid protein. (C) AT1G34418.1 is an annotated lncRNA in Arabidopsis showing abundant association with ribosomes in the 5\u2032UTR region, the primary ORF (34 amino acid) and the final region of the transcript, which contains two redundant ORFs (in red) coding the sequence: MGLGFVN(V/F)LLGM. RNAseq: profile of RNAseq reads. RPFs: profile of ribosome profiling reads. Exon-intron transcript structures are represented; the thickest boxes on the exons are the primary ORFs.\n\nAt the individual transcript level, a sizeable fraction of lncRNAs associated with ribosomes displayed significantly higher coding scores than expected for non-coding sequences (p < 0.05 in all 100 intronic random sets; data in Supplementary file 2C; examples in Figure 6\u2014figure supplement 6). These transcripts are comprised of 143 human lncRNAs (35.5% of the lncRNAs, score > 0.0189), 137 mouse lncRNAs (35.1%, score > 0.0377), 379 zebrafish lncRNAs (52.1% score > 0.0095), 7 fruit fly lncRNAs (31.8%, score > \u22120.0483), 43 Arabidopsis lncRNAs (46.2%, score > \u22120.0202), and 5 yeast lncRNAs (83.3%, score > 0.03387). Annotated and novel lncRNAs were present in similar proportions in these sets, supporting the validity of our strategy of merging the two types of transcripts from the beginning. We also noted that the fraction of lncRNAs with coding homologues in other species increased in these sets. For example, whereas the proportion of total human lncRNA_ribo with homologues in other species was 15.6%, in the set with significant coding scores it was 29.3%. This number increased to 57.3% when we performed searches against the NCBI non-redundant peptide database \u2018nr\u2019, as some of the ORFs in lncRNAs are annotated as predicted peptides in this database.\n\nIf ORFs in lncRNAs are being translated this is likely to be a relatively recent evolutionary event, as many lncRNAs are lineage-specific (Pauli et al., 2012; Necsulea et al., 2014; our data). It is well established that proteins of different evolutionary age display distinct sequence properties, including different codon usage (Toll-Riera et al., 2009; Carvunis et al., 2012; Palmieri et al., 2014). We retrieved sets of annotated protein-coding transcripts of different evolutionary age from human, mouse, zebrafish, Arabidopsis, and yeast available from various studies (Ekman and Elofsson, 2010; Donoghue et al., 2011; Neme and Tautz, 2013) and expressed in the systems studied here. We found that the coding score was always lower in the youngest group than in older groups (Figure 6, Wilcoxon test, p < 0.05). Remarkably, the youngest codRNAs showed a very similar coding score distribution to lncRNAs (Figure 6). We obtained similar results when we discarded lncRNAs that had homologues in any of the other species (Figure 6\u2014figure supplement 3).\n\nWe also collected information from young protein coding genes encoding experimentally verified proteins according to Swiss-Prot (Supplementary file 2D). We observed that these proteins were short and the ORF occupied a relatively small fraction of the transcript, features typically observed in lncRNAs. For example, the average size of proteins encoded by primate-specific transcripts was 148 amino acids and the average transcript coverage 47%. The coding score was remarkably low and again similar to that of lncRNAs (median 0.008 for primate-specific human transcripts, 0.046 for rodent-specific mouse transcripts, and 0.089 for yeast-specific coding transcripts).\n\n### Selection pressure signatures in ORFs associated with ribosomes\n\nAn important measure of the strength of purifying selection acting on a coding sequence is the ratio between the number of non-synonymous and synonymous single nucleotide polymorphisms (PN/PS). Given the nature of the genetic code, there are more possible non-synonymous mutations than synonymous mutations. Under neutrality (no purifying selection), the PN/PS ratio is expected to be approximately 2.89 (Nei and Gojobori, 1986).\n\nHere, we applied the large amount of available polymorphism data for human, mouse, and zebrafish to compare the level of purifying selection in primary ORFs from codRNAs and lncRNAs (Figure 7; Supplementary file 1F). In general, human sequences showed higher PN/PS ratios than sequences from the other analyzed species, probably due to the presence of many slightly deleterious mutations segregating in the population (Eyre-Walker, 2002). However, despite the intrinsic differences between organisms, we observed the same general trends. First, the PN/PS was significantly lower in codRNAs than in lncRNAs (proportion test, p < 10\u22125), denoting stronger purifying selection in the former. Second, there was a very clear inverse relationship between the strength of purifying selection and the age of the gene (p < 10\u221215 between the youngest and rest of codRNAs in mouse and zebrafish), in agreement with previous studies (Liu et al., 2008; Cai et al., 2009). High PN/PS values were also observed in the subset of young genes encoding experimentally validated proteins in human (primate-specific transcripts median PN/PS of 3.10) and mouse (rodent-specific transcripts median PN/PS 1.42), confirming this tendency. Third, the distribution of PN/PS values in lncRNAs was very similar to that of young protein-coding genes. In human and mouse, there were no significant differences, and in the case of zebrafish the lncRNAs had even slightly lower PN/PS values than the fish-specific protein coding genes (p < 0.01).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig7-v1.jpg)\n\n**Figure 7.:** PN/PS: ratio between the number of non-synonymous and synonymous single nucleotide polymorphisms (SNPs) in the complete set of primary ORFs for a given class of transcripts (in lncRNA_noribo the longest ORF was considered). In blue, data for different coding and non-coding transcript classes. In brown, data for different age codRNA classes. The bars represent the 95% confidence interval for the PN/PS value. For the species not shown there was not sufficient data to perform this analysis.\n\n## Discussion\n\nHere, we analyzed the patterns of ribosome protection in polyA+ transcripts from cells belonging to six different eukaryotic species. Among the expressed transcripts, we identified many lncRNAs in the different species. The vast majority of transcripts annotated as coding showed association with ribosomes (>92% in all species). Remarkably, a very large number of transcripts annotated as long non-coding RNA (lncRNAs) also showed such association (30\u201382% depending on the data set). Considering that lncRNAs are typically much shorter and expressed at lower levels than codRNAs, which may hinder the identification of ribosome association, this is a very significant fraction. In addition, the patterns of ribosome protection along the transcript are similar to those of protein-coding genes. Therefore, many lncRNAs appear to be scanned by ribosomes and are likely to translate short peptides.\n\nLong non-coding RNAs are classified as such in databases because, according to a number of criteria, they are unlikely to encode functional proteins. These criteria include the lack of a long ORF, the absence of amino acid sequence conservation, and the lack of known protein domains (Harrow et al., 2012). Moreover, we expect lncRNAs not to have matches to proteomics databases, as this should classify them as coding. Annotated lncRNAs are typically longer than 200 nucleotides because this is the cutoff size normally implemented to differentiate them from other RNA classes such as microRNAs and small nuclear RNAs. In practice, it is difficult to classify a transcript as coding or non-coding on the basis of the ORF size (Dinger et al., 2008). Some true coding sequences may be quite small, and by chance alone non-coding transcripts may have relatively long ORFs. The majority of lncRNAs contain ORFs longer than 24 amino acids, which can potentially correspond to real proteins. Short proteins are more difficult to detect than longer ones and consequently they are probably underestimated in databases. In recent years, the use of comparative genomics (Frith et al., 2006; Ladoukakis et al., 2011; Hanada et al., 2013), proteomics (Slavoff et al., 2013; Vanderperre et al., 2013; Ma et al., 2014), and a combination of evolutionary conservation and ribosome profiling data (Crapp\u00e9 et al., 2013; Bazzini et al., 2014) have shown that the number of short proteins is probably much higher than previously suspected (Andrews and Rothnagel, 2014). In yeast, gene deletion experiments have provided evidence of functionality for short open reading frames (sORFs < 100 amino acids) (Kastenmayer et al., 2006); in zebrafish, several newly discovered sORFs appear to be involved in embryonic development (Pauli et al., 2014) and other examples exist in insects (Magny et al., 2013) and humans (Lee et al., 2013; Slavoff et al., 2014). In many cases, the transcripts containing sORFs will be classified as non-coding, especially if the ORF is not well conserved across different species.\n\nOne approach to identify potential coding transcripts is ribosome profiling (Ingolia et al., 2009), which has been used to study translation of proteins in a wide range of organisms (Guo et al., 2010; Ingolia et al., 2011; Brar et al., 2012; Michel et al., 2012; Chew et al., 2013; Dunn et al., 2013; Huang et al., 2013; Artieri and Fraser, 2014; Bazzini et al., 2014; Juntawong et al., 2014; McManus et al., 2014; Vasquez et al., 2014). In several of these studies it has been noted that lncRNAs can be protected by ribosomes (Ingolia et al., 2011; Chew et al., 2013; Bazzini et al., 2014; Juntawong et al., 2014). However, there is no consensus on whether the observed patterns are consistent with translation. For example in the original analysis of mouse stem cells, which we reanalyzed here, it was reported that many lncRNAs were polycistronic transcripts encoding short proteins (Ingolia et al., 2011), but in another paper where the same data were processed in a different way, they concluded that lncRNAs were unlikely to be protein-coding (Guttman et al., 2013). A zebrafish ribosome profiling study reported resemblance between lncRNAs and 5\u2032leaders of coding RNAs; the authors suggested that translation may play a role in lncRNA regulation (Chew et al., 2013). Nevertheless, in the same study dozens of lncRNAs were proposed to be bona fide protein-coding transcripts. In Arabidopsis, the translational efficiency values of highly expressed lncRNAs (>5 FPKM) were similar to those of coding RNAs and some lncRNAs had profiles consistent with initiation and termination of translation (Juntawong et al., 2014). Finally, using yeast data, Wilson and Masel. (2011) found many cases of non-coding transcripts bound to ribosomes and suggested that this facilitates the evolution of novel protein-coding genes from non-coding sequences.\n\nThe disparity of results obtained in different systems motivated us to retrieve the original data and perform exactly the same analyses for six different species. As lncRNA catalogues are still very incomplete for most species, we also defined sets of novel lncRNAs using the RNA-seq sequencing reads for de novo transcript assembly. We discovered many novel, non-annotated, lncRNAs, especially in zebrafish, mouse, and fruit fly (Table 2). After the analysis of the ribosome profiling data, the same general picture emerged for the different biological systems, indicating that we are detecting very fundamental properties. In transcripts classified as lncRNAs, the ribosome profiling reads tend to cover a smaller fraction of the transcript than in typical codRNAs, in agreement with a shorter relative size of the ORF accumulating the largest number of ribosome profiling reads (primary ORF). We also find that the translational efficiency of regions corresponding to the primary ORF is much higher than that of 3\u2032UTRs, both in codRNAs and lncRNAs, consistent with translation of the transcripts. Furthermore, the primary ORF of lncRNAs showed significantly higher coding score than the longest ORF extracted from randomly selected non-coding regions.\n\nlncRNAs often contain several potentially translated ORFs (Ingolia et al., 2011). Transcripts encoding multiple short proteins have been reported in insects (Savard et al., 2006) and could be common in other species as well (Tautz, 2009). One such candidate is AT1G34418.1 in Arabidopsis, an annotated lncRNA which contains a primary ORF followed by two instances of a 12 amino acid ORF also covered by ribosome profiling reads (Figure 6\u2014figure supplement 6). This case is reminiscent of the gene pri in fruit fly, which regulates tarsal development (Galindo et al., 2007) and translates several small redundant ORFs (Kondo et al., 2007).\n\nlncRNAs are poorly conserved across species and so, if translated, they will produce species- or lineage-specific proteins. Recently evolved proteins are markedly different from widely distributed ancient proteins; they are shorter, subject to weaker selective constraints and expressed at lower levels (Alb\u00e0 and Castresana, 2005; Cai et al., 2009; Liu et al., 2010; Donoghue et al., 2011; Carvunis et al., 2012; Xie et al., 2012; Wissler et al., 2013; Neme and Tautz, 2014). Here for the first time, we have compared the properties of the ORFs in lncRNAs associated with ribosomes with the properties of annotated, and in some cases experimentally validated, young protein-coding genes. lncRNAs and young protein-coding transcripts are virtually indistinguishable regarding their coding score and ORF selective constraints (Figures 6 and 7), which is consistent with the idea that many lncRNAs encode new peptides.\n\nAlthough it is unclear how many of these peptides are functional, the data indicate that at least a fraction of them may be functional. Sequences that translate functional proteins are expected to display signs of selection related to preferential usage of certain amino acids and codons. This can be used to differentiate between coding and non-coding entities, especially in the absence of cross-species conservation, as is the case of many lncRNAs. About 35\u201340% of primary ORFs in human and mouse lncRNAs displayed coding scores that were significantly higher than those expected for non-coding sequences, making them excellent candidates for translating functional proteins. In fact, five human lncRNAs associated with ribosomes that exhibited high coding scores in our study were re-annotated as protein-coding transcripts in a subsequent Ensembl gene annotation release (version 75, Supplementary file 2C). Gene knock-out experiments in fly have discovered that young proteins, even if rapidly evolving, are often essential for the organism and can cause important defects when deleted (Chen et al., 2010; Reinhardt et al., 2013). Similarly, some peptides translated from lncRNAs may have important cellular functions yet to be discovered.\n\nlncRNAs tend to be expressed at much lower levels than typical codRNAs, so, everything else being equal, the amount of translated peptide is also expected to be smaller. It may be that some of these peptides are not functional, but their translation does not produce a large enough deleterious effect for them to be eliminated via selection. Pseudogenes also showed extensive association with ribosomes in our study, indicating that the translation machinery is probably not very selective or that some pseudogenes produce functional proteins. This question may be worth revisiting, as a recent proteomics study has also found that dozens of human pseudogenes produce peptides (Kim et al., 2014).\n\nThe data also indicate that a fraction of lncRNAs have not acquired the capacity to be translated. Depending on the experiment analyzed, a number of lncRNAs did not show any significant association with ribosomes. As previously discussed, this is probably affected by a lack of sensitivity; it is also true that the lncRNAs not associated with ribosomes tended to show lower coding scores than lncRNAs associated with ribosomes, even when we did not use the ribosome profiling data and simply compared the longest ORF in both kinds of transcripts.\n\nRecently, it has been reported that human-specific protein-coding genes are often related to non-coding transcripts in macaque, pointing to a non-coding origin for many newly evolved proteins (Xie et al., 2012). More generally, one may view de novo protein-coding gene evolution as a continuum from non-functional genomic sequences to fully-fledged protein-coding genes (Alb\u00e0 and Castresana, 2005; Toll-Riera et al., 2009; Carvunis et al., 2012). Therefore, many lncRNAs could be in intermediate states in this process, their pervasive translation serving as the building material for the evolution of new proteins. It may be difficult to obtain functional proteins from completely random ORFs (Jacob, 1977), but the effect of natural selection preventing the production of toxic peptides (Wilson and Masel, 2011), and the high number of transcripts expressed in the genome, may facilitate this process.\n\n## Materials and methods\n\n### Sequencing and mapping of reads\n\nWe downloaded the original data from Gene Expression Omnibus (GEO) for six different ribosome profiling experiments that had both ribosome footprinting and polyA+ RNA-seq sequencing reads: mouse (M. musculus) (Ingolia et al., 2011), human (H. sapiens, HeLa cells) (Guo et al., 2010), zebrafish (D. rerio) (Chew et al., 2013), fruit fly (D. melanogaster) (Dunn et al., 2013), Arabidopsis (A. thaliana) (Juntawong et al., 2014), and yeast (S. cerevisiae) (McManus et al., 2014). We retrieved genome sequences and gene annotations from Ensembl v.70 and Ensembl Plants v.21 (Flicek et al., 2012).\n\nRaw ribosome and RNA-seq sequencing reads underwent quality filtering using Condentri (v.2.2) (Smeds and K\u00fcnstner, 2011) with the following settings (-hq=30 \u2013lq=10). Adaptors described in the original publications were trimmed from filtered reads if at least five nucleotides of the adaptor sequence matched the end of each read. In zebrafish, reads from different developmental stages were pooled to improve read coverage. In all experiments, reads below 25 nucleotides were not considered. Clean ribosome short reads were filtered by mapping them to the corresponding species reference RNA (rRNA) using the Bowtie2 short-read alignment program (v. 2.1.0) (Langmead et al., 2009). Unaligned reads were aligned to a genomic reference genome with Bowtie2 allowing one mismatch in the first 'seed' region (the length of this region was selected according to the descriptions provided in each individual experiment). RNA-seq short reads were mapped with Tophat (v. 2.0.8) (Kim et al., 2013) to the corresponding reference genome. We allowed two mismatches in the alignment with the exception of zebrafish, for which we allowed three mismatches since the reads were significantly longer. Multiple mapping was allowed unless specifically stated.\n\n### Defining a set of expressed transcripts\n\nExpressed transcripts were assembled using Cufflinks (v 2.2.0) (Trapnell et al., 2010). We initially considered a transcript as expressed if it was covered by at least four reads and its abundance was higher than 1% of the most abundant isoform of the gene. We also discarded assembled transcripts in which >20% of reads were mapped to several locations in the genome. Gene annotation files from Ensembl (gtf format, v.70) were provided to Cufflinks to guide the reconstruction of already annotated transcripts. Annotated transcripts were divided into coding RNAs and long non-coding RNAs (lncRNAs), we only considered lncRNAs that were not part of genes with coding transcripts. Novel isoforms corresponding to annotated loci were not analyzed. Transcripts that did not match or overlapped annotated genes were labeled 'novel\u2019 lncRNAs. We used a length threshold of 200 nucleotides to select novel long non-coding RNAs, as in ENCODE annotations (Djebali et al., 2012).\n\nStrand directionality of multiexonic transcripts was inferred using the splice site consensus sequence. We only considered monoexonic transcripts in the case of Arabidopsis and yeast, provided the transcripts were intergenic.\n\nThe inclusion of novel lncRNAs made it possible to perform analyses of species for which there are very few annotated lncRNAs. Annotations of UTR regions in yeast genes were missing from Ensembl because of the variability observed in transcription start sites (TSS). However, we downloaded a set of available 5\u2032 and 3\u2032UTRs obtained by deep transcriptomics (Nagalakshmi et al., 2008) and added them to the existing yeast Ensembl annotations before assembling the transcriptome.\n\nCoding transcripts were classified into different subclasses depending on the existing annotations: (a) Annotated protein-coding transcripts (codRNA), (b) Annotated transcripts with surveillance mechanisms (nonsense mediated decay, nonstop mediated decay, and no-go decay), (c) Annotated pseudogenes. We removed protein-coding transcripts in which annotated coding sequences (CDS) are still incomplete.\n\nSubsequently, we defined an additional subset of annotated protein-coding transcripts with well-established coding properties based on the existence of an experimentally verified protein in Swiss-Prot for the gene (\u2018evidence at protein level\u2019, downloaded 29 October 2013, UniProt Consortium, 2014). These transcripts were labeled codRNAe. The rest of annotated protein-coding transcripts were abbreviated codRNAne. In zebrafish, most proteins are not yet experimentally validated; and therefore, we generated a single group.\n\nWe built a data set of human lncRNAs with described non-coding functions using data obtained from several recent reviews (Ponting et al., 2009; Ulitsky and Bartel, 2013; Fatica and Bozzoni, 2014). This data set included 29 different genes (Supplementary file 2A).\n\nWe used cufflinks to estimate the expression level of a transcript in FPKM units (Fragments Per Kilobase per total Million mapped reads). We used a threshold of >0.5 FPKM except in yeast, in which the average read coverage per transcript was much higher than in the other species and the threshold was set up at >5 FPKM. These thresholds guaranteed detection of ribosome association for the majority of expressed coding transcripts (>92%), while yielding proportions of transcripts comparable to those reported in the original papers.\n\n### Definition of potential open reading frames (ORFs) and other transcript regions\n\nWe predicted all possible open reading frames (ORFs) in the expressed transcripts. We defined an ORF as any sequence starting with an AUG codon and finishing with a stop codon (TAA, TAG, or TGA), and at least 75 nucleotides long. This would correspond to a 24 amino acid protein, which is the size of the smallest complete human polypeptide found in genetic screen studies (Hashimoto et al., 2001). This ORF definition will not detect non-canonical ORFs with different start or stop codons, although these ORFs often correspond to regulatory ORFs (uORFs) in the 5\u2032UTR region. In monoexonic transcripts (Arabidopsis and yeast), we considered all six possible different frames.\n\nWe also defined each transcript 5\u2032UTR as the region between the transcription start site and the AUG codon from the left-most predicted ORF, and the 3\u2032UTR the region from the stop codon in the right-most predicted ORF to the transcript end. UTRs with lengths below 30 nucleotides were not analyzed since ribosome reads could not be properly aligned to these regions due to their small size. Regions between two consecutive putatively translated ORFs (with ribosome profiling reads) were termed interORF. We only analyzed this region when the length of the interORF sequence in a transcript was 30 nucleotides or longer.\n\nWe defined a set of bona fide non-coding sequences sampled from intronic fragments. We used the introns of the genes expressed in each experiment, provided they did not overlap to any exons from other overlapping genes. We randomly selected fragments in such a way as to simulate the same size distribution as in the complete set of expressed transcripts. We performed 100 simulations of intron sampling to ensure the results were robust to the randomization process. We selected the longest ORF in each intronic fragment for the calculation of coding scores and GC content.\n\n### Association with ribosomes and translational efficiency (TE)\n\nWe computed the number of reads overlapping each feature of interest (transcript, UTR, ORF, and interORF) using the BEDTools package (v. 2.16.2) (Quinlan and Hall, 2010). We only considered ribosome reads in which more than half of their length spanned the considered region. This was considered appropriate because the ribosome P-site is usually detected at the central region of the read, with only slight variations depending on the experimental setting. We set up a minimum ribosome profiling coverage of 75 nucleotides per transcript to define the transcript or transcript region (e.g., ORF) as associated with ribosomes. This is significantly longer than the length of the ribosome profiling sequencing reads (36\u201351 nucleotides) and is consistent with the minimum ORF length threshold.\n\nThe translational efficiency (TE) of a sequence has been previously defined as the density of ribosome profiling (RPF) reads normalized by transcript abundance (Ingolia et al., 2009). We calculated it by dividing the FPKM of the ribosome profiling experiment by the FPKM of the RNA-seq experiment. In transcripts, we also obtained the maximum TE by dividing the sequence in 90 nucleotide windows and selecting the window with the highest TE value.\n\nIn order to have a null model of ribosome binding against which to compare the ribosome profiling signal in codRNA and lncRNA transcripts, we extracted annotated 3\u2032 untranslated regions (3\u2032UTRs) from codRNAs in genes in which UTRs did not overlap with coding sequences from other transcripts, and by randomly selecting 3\u2032UTRs with a minimum length of 30 nucleotides, we built a set of 3\u2032UTR sequences with the same size distribution as the complete transcripts. For each species, we calculated the TE values for codRNAs, lncRNA, and 3\u2032UTR sequences. We used the empirical distribution of TE values in the 3\u2032UTRs to calculate the number of codRNAs and lncRNAs that showed significantly higher TE value than expected under the null model at a p < 0.05. These corresponded to TE values higher than 0.1043 in mouse, 0.2556 in human, 0.0004 in zebrafish, 0.7164 in fruit fly, 0.1800 in Arabidopsis, and 0.0527 in yeast.\n\nWe defined the primary ORF in a transcript as the ORF with the largest number of RPF reads with respect to the total RPF reads covering the transcript. The rest of ORFs \u226524 amino acids associated with ribosomes were considered as well; when two or more ORFs overlapped, we selected the longest one. In ORFs, interORFs, and UTRs, we computed the TE along the whole region. For comparing the TE in different regions, we only considered transcripts in which all regions had >0.2 FPKM.\n\n### Peptide evidence in existing proteomics databases\n\nWe downloaded all peptide sequences from the PeptideAtlas database: 338,013 human peptides (August 2013), 101,695 mouse peptides (June 2013), and 86,836 yeast peptides (March 2013). We investigated if the number of ribosome-associated protein-coding transcripts that matched the peptides in these databases varied with protein length. We omitted this analysis in zebrafish and Arabidopsis due to the lack of sufficiently large peptide databases. The matches were identified using BLASTP searches (v. 2.2.28+) (Altschul et al., 1997). We selected perfect matches only.\n\n### Evidence of nonsense mediated decay in ORFs\n\nWe investigated how many primary ORFs may be candidates for being regulated via non-sense mediated decay (NMD) surveillance pathways, whose main function is to eliminate transcripts containing premature stop codons. We defined NMD candidates as all cases in which the stop-codon from a predicted ORF was located \u226555 nucleotides upstream of a splice junction site, provided the stop-codon was not in the terminal exon (Scofield et al., 2007). This mechanism is well characterized in protein-coding genes and it has been proposed as a way to degrade non-functional peptides translated in lncRNAs (Tani et al., 2013). Other surveillance mechanisms, such as non-stop-mediated decay or no-go decay, were not considered since all predicted ORFs finished at a stop codon, and we did not analyze RNA secondary structures.\n\n### Defining ages of protein-coding transcripts\n\nWe utilized existing gene age classifications in human, mouse, and zebrafish (Neme and Tautz, 2013) to identify young gene classes: human primate-specific (\u223c55.8 My), mouse rodent-specific (\u223c61.7 My), human and mouse mammalian-specific (\u223c225 My), zebrafish actinopterygii-specific (\u223c420 My) (abbreviated fish) and metazoan (\u223c800 My). In yeast, we used predefined genes specific to S. cerevisiae (1\u20133 My)(abbreviated S. cerevisiae) and the Saccharomyces group (\u223c100 My) (Ekman et al., 2007). In Arabidopsis, we retrieved Cruciferae(Brassicaceae)-specific genes (20\u201340 My) (Donoghue et al., 2011). These genes are believed to have arisen primarily by de novo mechanisms, as no homologies in other species have been detected despite the fact that many closely related genomes have now been sequenced.\n\n### Defining gene desert sequences\n\nIn humans, we obtained a set of gene desert sequences as defined in Ovcharenko et al. (2005). We selected two stable and two flexible gene deserts (the definition depends on the degree of conservation in other species). They belonged to chromosome 4 (flexible located in coordinates 136,000,001\u2013138,000,000; stable located in coordinates 180,000,001\u2013182,000,010) that has a high number of gene deserts; and chromosome 17 (flexible located in coordinates 51,100,001\u201351,900,000; stable located in coordinates 69,300,001\u201370,000,000) that has a high gene density. We ensured that no protein-coding genes were annotated in subsequent Ensembl versions in these regions. We predicted all possible ORFs in these regions and evaluated their coding score and GC content.\n\n### ORF coding score\n\nThe examination of nucleotide hexamer frequencies has been shown to be a powerful way to distinguish between coding and non-coding sequences (Sun et al., 2013; Wang et al., 2013). We computed one coding score (CS) per hexamer:\n\n$$\nCS_{hexamer(i)}=log(\\frac{freq_{coding}(hexamer(i))}{freq_{non\u2212coding}(hexamer(i))}).\n$$\n\nThe coding hexamer frequencies were obtained from the open reading frame of all transcripts in a species encoding experimentally validated proteins (except for zebrafish in which all protein-coding transcripts were considered). The non-coding hexamer frequencies were calculated using the longest ORF in intronic regions, which were selected randomly from expressed protein-coding genes. Next, we used the following statistic to measure the coding score of an ORF:\n\n$$\nCS_{ORF}=\\frac{\\sum_{i=1}^{i=n}CS_{hexamer(i)}}{n},\n$$\n\nwhere i is each sequence hexamer in the ORF, and n the number of hexamers considered.\n\nThe hexamers were calculated in steps of three nucleotides in frame (dicodons). We did not consider the initial hexamers containing a Methionine or the last hexamers containing a STOP codon, since they are not informative. Given that all ORFs were at least 75 nucleotides long the minimum value for n was 22.\n\nWe calculated other related statistics in a similar way. This included using an equiprobable hexamer distribution instead of the distribution obtained from non-coding sequences, or using codon frequencies instead of hexamer frequencies. These statistics showed somewhat lower power to distinguish between coding and non-coding sequences. As a complementary measure, we quantified the GC content in different coding and non-coding transcripts and ORFs.\n\n### Sequence similarity searches\n\nWe employed BLASTP with an E-value cutoff of 10\u22124 to compare the amino acid sequences encoded by ORFs in different kinds of transcripts. We enabled SEG to mask low complexity regions in protein sequences before doing the homology searches. We also searched for homologues in the NCBI non-redundant (nr) protein database (Pruitt et al., 2014). BLAST sequence similarity search programs are based on gapped local alignments (Altschul et al., 1997).\n\n### Analysis of single nucleotide polymorphisms\n\nWe downloaded all available single-nucleotide polymorphisms (SNPs) from dbSNP (Sherry et al., 2001) for human (\u223c50 million), mouse (\u223c64.2 million), and zebrafish (\u223c1.3 million). We did not consider other species due to insufficient data for the analysis. We classified SNPs in ORFs as non-synonymous (PN, amino acid altering) and synonymous (PS, not amino acid altering). We computed the PN/PS ratio in each sequence data set by using the sum of PN and PS in all sequences. The estimation of PN/PS ratios of individual sequences was in general not reliable due to lack of sufficient SNP data. We obtained confidence intervals using the proportion test in R (see below).\n\n### Statistical data analyses\n\nThe analysis of the data, including generation of plots and statistical tests, was done with R (R Development Core Team, 2010).\n\n### Additional files\n\nSupplementary file 1 contains additional Tables and Supplementary file 2 data subsets. The genomic coordinates of all transcripts used in this study (GTF files) and the amino acid sequences corresponding to primary ORFs in lncRNA with coding scores significant at p < 0.05 (FASTA files) are available at figshare (http://dx.doi.org/10.6084/m9.figshare.1114969).\n",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "badd6172-d796-4319-8297-8c8ffd6c4816",
+      "submission_id": "98c7e51f-8827-4a28-b7c2-7e66201ee46b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Diethard Tautz, Max Planck Institute for Evolutionary Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03523.026](https://doi.org/10.7554/eLife.03523.026)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cLong non-coding RNAs as a source of new peptides\u201d for consideration at eLife. Your article has been favorably evaluated by Aviv Regev (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments extensively before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis paper adds to the current active discussion on the coding potential of lncRNAs, the role of short open reading frames and the emergence of new genes. The authors use published ribosome association datasets, but use several analysis pipelines that go beyond the analysis that has previously been done with these data. However, there are two comparable published papers that do similar analysis, namely Ingolia et al. 2011 and Guttman et al. 2013. While the former had suggested much translation of lncRNAs, the latter denies this, although there is some overlap of authors.\n\nMajor comments that need to be addressed by additional analyses and/clarification:\n\nThe crucial point is in how far ribosome associations are partly artifacts. The fraction of lncRNAs that the authors find to be associated with ribosomes is very large. Is this because the vast majority of transcripts actually are scanned by ribosomes, or could this observation be an artifact of the way the ribosome profiling data was analyzed? Pseudo-genes, and bona-fide human lncRNAs with known non-coding functions, were investigated, but the authors found evidence of ribosome binding in these putative negative controls, i.e. possible evidence for artifacts. This issue needs to be resolved more clearly, since the current paper should go beyond the Guttmann et al. 2013 line of arguments. It is necessary to provide a convincing demonstration that the analysis of ribosome profiling data is based on signal, not on noise. This could be done by different means, for instance by deriving null models describing what fraction of transcripts would be expected to be found associated with ribosomes if all of the ribosome profiling data was random, or by calculating otherwise a False Positive Rate or False Discovery Rate in the calling of \u201cribosome association\u201d per transcript. You can also try something like the Bazzini 2014 or the Carvunis 2012 method. Another possibility is to choose a class of sequences with very low ribosomal association (maybe 3'UTRs are best) and use that as an upper bound on the false positive rate. The lower bound on the false positive rate is zero, and likely to remain there, but calculating an upper bound is something that should be added.\n\nThe claim is also made that these short and hard-to-annotate protein-coding genes look young according to protein-coding metrics and PN/PS. While plausible, it is also possible that they represent a mixture of genes of all ages combined with sequences that, while perhaps translated at some level, are not really genes in the functional sense of the word (at least not yet), and whose existence is therefore highly transient in evolutionary time. Contamination with these sequences could create the same statistical effect as having young genes. The presence of such contamination is also a critical piece of evidence in theories of how de novo protein birth occurs. This basically means that there are two interpretations of the data, both interesting, and not mutually exclusive. This needs to be better clarified. For instance the results of the BlastP search against codRNAs (supplementary file 8) and the results of the BlastX search against nr could be merged into one table or bar graph counting the number of BlastP and BlastX hits in lncRNA-noribo, lncRNA-ribo, and codRNA, separately, for each species.\n\nIt is unclear why the starved conditions (Table 1) were used in the yeast riboprofiling data. Starvation represses translation and therefore makes the data unreliable as a marker of translation. This should therefore be redone, perhaps with the rich media conditions of Ingolia et al. 2009, but if this needs to be redone anyway, ideally with the much higher coverage data of Artieri & Fraser.\n",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ca075405-3cec-47bc-a5f4-25f6a4f5b19c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C1",
+      "claim": "Deep transcriptome sequencing has revealed the existence of many transcripts that lack long or conserved open reading frames (ORFs) and which have been termed long non-coding RNAs (lncRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Deep transcriptome sequencing has revealed the existence of many transcripts that lack long or conserved open reading frames (ORFs) and which have been termed long non-coding RNAs (lncRNAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the discovery of lncRNAs through sequencing technology, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "7d5aa70b-c14d-418f-a2d5-606433106812",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C2",
+      "claim": "The vast majority of lncRNAs are lineage-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of lncRNAs are lineage-specific and do not yet have a known function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the manuscript (Pauli et al., 2012; Necsulea et al., 2014) and by the authors' own data showing low cross-species conservation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "cedbd233-190a-477e-a18e-28593fc831ef",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C3",
+      "claim": "The vast majority of lncRNAs do not yet have a known function.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of lncRNAs are lineage-specific and do not yet have a known function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "96ebf2e2-e4bc-4197-b43c-155ef64cdc54",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C4",
+      "claim": "A large fraction of the lncRNAs expressed in cells from six different species is associated with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that a large fraction of the lncRNAs expressed in cells from six different species is associated with ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by ribosome profiling data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "92d557bf-e2ca-414b-8999-2838e4d65641",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C5",
+      "claim": "The patterns of ribosome protection in lncRNAs are consistent with the translation of short peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The patterns of ribosome protection are consistent with the translation of short peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the analysis of ribosome profiling data presented in Figures 5 and related analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "67f56ac7-bdaa-4b29-9c11-2f4b893aca72",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C6",
+      "claim": "lncRNAs show similar coding potential and sequence constraints than evolutionary young protein coding sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs show similar coding potential and sequence constraints than evolutionary young protein coding sequences, indicating that they play an important role in de novo protein evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by coding score analysis (Figure 6) and PN/PS ratio analysis (Figure 7) comparing lncRNAs to young protein-coding genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "0fc036af-a7d5-4400-9d2e-5677227dbfd6",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C7",
+      "claim": "lncRNAs play an important role in de novo protein evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs show similar coding potential and sequence constraints than evolutionary young protein coding sequences, indicating that they play an important role in de novo protein evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the similarity between lncRNAs and young protein-coding genes in terms of coding potential and sequence constraints.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "e28cce84-2c6f-4239-9866-464a3d83cd36",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C8",
+      "claim": "Thousands of long RNA molecules (>200 nucleotides) that do not display the typical properties of well-characterized protein-coding RNAs have been discovered in several eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thousands of long RNA molecules (>200 nucleotides) that do not display the typical properties of well-characterized protein-coding RNAs, and which have been named intergenic or long non-coding RNAs (lncRNAs), have been discovered in several eukaryotic genomes (Okazaki et al., 2002; Ponting et al., 2009; Cabili et al., 2011; Liu et al., 2012; Pauli et al., 2012; Ulitsky and Bartel, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "d5930f33-45bc-490a-acf5-7d6f9d15150a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C9",
+      "claim": "The X-inactive-specific transcript Xist regulates X chromosome inactivation in eutherian mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example the X-inactive-specific transcript Xist regulates X chromosome inactivation in eutherian mammals (Brockdorff et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Brockdorff et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "e537fe09-4c8f-4820-b6ba-9fd20a1fecaf",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C10",
+      "claim": "A large fraction of lncRNAs associate with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, several recent studies have noted that a large fraction of lncRNAs associate with ribosomes (Ingolia et al., 2011; Bazzini et al., 2014; Juntawong et al., 2014; van Heesch et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "17c1efc1-c2e1-43e2-b5d6-790763156365",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C11",
+      "claim": "Deep sequencing of ribosome-protected fragments provides detailed information on the regions that are translated in a transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep sequencing of ribosome-protected fragments, or ribosome profiling, provides detailed information on the regions that are translated in a transcript (Ingolia, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ingolia, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "9f780a81-5c18-403f-bf28-f32034025b04",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C12",
+      "claim": "According to some studies, the patterns of ribosome protection indicate that lncRNAs are capable of translating short peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "According to some studies, the patterns of ribosome protection indicate that lncRNAs are capable of translating short peptides (Ingolia et al., 2011; Bazzini et al., 2014; Juntawong et al., 2014) although others have reached different conclusions (Guttman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies that reached this conclusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "8470b98f-e697-41b2-8691-4223eec0df4e",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C13",
+      "claim": "Many lncRNAs have the same structure as classical mRNAs: they are transcribed by polymerase II, capped and polyadenylated, and accumulate in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Many lncRNAs have the same structure as classical mRNAs: they are transcribed by polymerase II, capped and polyadenylated, and accumulate in the cytoplasm (van Heesch et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to van Heesch et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "2e626c3a-1e3b-4942-b7fd-a124b3f27aee",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C14",
+      "claim": "lncRNAs tend to contain few introns.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to typical protein-coding genes, they tend to contain few introns, are expressed at low levels, exhibit weak sequence constraints, and show limited phylogenetic conservation (Cabili et al., 2011; Derrien et al., 2012; Kutter et al., 2012; Necsulea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "ad01ff7c-e89f-421b-b997-35b8f16db92b",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C15",
+      "claim": "lncRNAs are expressed at low levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to typical protein-coding genes, they tend to contain few introns, are expressed at low levels, exhibit weak sequence constraints, and show limited phylogenetic conservation (Cabili et al., 2011; Derrien et al., 2012; Kutter et al., 2012; Necsulea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies and confirmed by the authors' data in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "a49a5b29-ffd1-4c3a-b571-65e0908e5a34",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C16",
+      "claim": "lncRNAs exhibit weak sequence constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to typical protein-coding genes, they tend to contain few introns, are expressed at low levels, exhibit weak sequence constraints, and show limited phylogenetic conservation (Cabili et al., 2011; Derrien et al., 2012; Kutter et al., 2012; Necsulea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "a70b128d-9a08-45b3-bf74-590ef8eac33c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C17",
+      "claim": "lncRNAs show limited phylogenetic conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to typical protein-coding genes, they tend to contain few introns, are expressed at low levels, exhibit weak sequence constraints, and show limited phylogenetic conservation (Cabili et al., 2011; Derrien et al., 2012; Kutter et al., 2012; Necsulea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies and confirmed by the authors' sequence similarity searches.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "15bc3ed8-3301-4db3-8875-e4ceb957e7f0",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C18",
+      "claim": "De novo protein-coding gene evolution was once thought to be a very rare event.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, it is important to consider that de novo protein-coding gene evolution, which was once thought to be a very rare event, is now believed to be relatively common (Khalturin et al., 2009; Toll-Riera et al., 2009; Tautz and Domazet-Lo\u0161o, 2011; Long et al., 2013; Reinhardt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical context in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "6c50af62-9016-4c45-9f5d-06e7f295fe58",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C19",
+      "claim": "De novo protein-coding gene evolution is now believed to be relatively common.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, it is important to consider that de novo protein-coding gene evolution, which was once thought to be a very rare event, is now believed to be relatively common (Khalturin et al., 2009; Toll-Riera et al., 2009; Tautz and Domazet-Lo\u0161o, 2011; Long et al., 2013; Reinhardt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "ba5254b5-491b-4813-9831-86f1eeead196",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C20",
+      "claim": "Recently emerged proteins tend to be very short.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently emerged proteins tend to be very short and evolve under weak evolutionary constraints (Alb\u00e0 and Castresana, 2005; Levine et al., 2006; Cai et al., 2009; Liu et al., 2010; Xie et al., 2012; Palmieri et al., 2014), properties that we also expect to find in the putative ORFs of lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "6390e785-b9eb-4421-a8b4-6c11cb85c4ed",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C21",
+      "claim": "Recently emerged proteins evolve under weak evolutionary constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently emerged proteins tend to be very short and evolve under weak evolutionary constraints (Alb\u00e0 and Castresana, 2005; Levine et al., 2006; Cai et al., 2009; Liu et al., 2010; Xie et al., 2012; Palmieri et al., 2014), properties that we also expect to find in the putative ORFs of lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "51ad7b7e-f10a-4df5-862a-352e9871f89a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C22",
+      "claim": "The percentage of expressed coding transcripts associated with ribosomes was >90% in all species studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of ribosome profiling sequencing data showed that the percentage of expressed coding transcripts associated with ribosomes was >90% in all species, with the highest values (>99%) in mouse and fruit fly (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "9f5d9b56-e0da-41d4-82e4-88e95991161d",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C23",
+      "claim": "The highest values of coding transcript association with ribosomes (>99%) were observed in mouse and fruit fly.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of ribosome profiling sequencing data showed that the percentage of expressed coding transcripts associated with ribosomes was >90% in all species, with the highest values (>99%) in mouse and fruit fly (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "c136ac38-c8a6-4fb2-bbb4-922906a8e15e",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C24",
+      "claim": "In species with many annotated pseudogenes, such as human, mouse, and Arabidopsis, the majority of pseudogenes showed association with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudogenes had a lower rate of association with ribosomes than coding RNAs, but surprisingly, in species with many annotated pseudogenes, such as human, mouse, and Arabidopsis, the majority of them showed association with ribosomes (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "c5ad2852-cea1-4da4-800f-3bc82e3841e2",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C25",
+      "claim": "Human and mouse translated proteins between 24 and 80 amino acids long were more difficult to identify in proteomics databases than longer proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that human and mouse translated proteins between 24 and 80 amino acids long were more difficult to identify in proteomics databases than longer proteins (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "b77e8f24-a5ce-4b6a-b2fe-a6f5ea9eba6a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C26",
+      "claim": "The percentage of lncRNAs scanned by ribosomes ranged from 28.6% in yeast to 81.9% in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of lncRNAs scanned by ribosomes (lncRNA_ribo) was surprisingly high in all the species studied (Table 2). The values ranged from 28.6% in yeast to 81.9% in mouse.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "0e7e0634-ea20-4d14-b78c-0a0d23bc10f6",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C27",
+      "claim": "Short transcript size may hinder ribosome association detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Short transcript size may hinder ribosome association detection (Aspden et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Aspden et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "2a5a3081-2d3a-4c05-8125-8e88a5f9ed1c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C28",
+      "claim": "The ribosome profiling signal was more difficult to detect in poorly expressed transcripts than in highly expressed ones, both for lncRNAs and codRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the ribosome profiling signal was more difficult to detect in poorly expressed transcripts than in highly expressed ones, both for lncRNAs and codRNAs (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "fbc57fb8-75fa-488c-b776-7b801f4efe24",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C29",
+      "claim": "Both codRNAs and lncRNAs displayed much higher TE values than 3\u2032UTRs in all species studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Both codRNAs and lncRNAS displayed much higher TE values than 3\u2032UTRs in all species studied (Wilcoxon test p < 10\u22125, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "aac84138-5935-4d02-9473-cbc4f7eaf346",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C30",
+      "claim": "90.12% of the lncRNAs associated with ribosomes could reject the null model at p < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "We could reject the null model for 90.12% of the lncRNAs and 87.19% of the codRNAs associated with ribosomes (p < 0.05) (see details by species in Table 2, Stringent set).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "08a21863-3f18-4ffb-9905-8d0775b06085",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C31",
+      "claim": "87.19% of the codRNAs associated with ribosomes could reject the null model at p < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "We could reject the null model for 90.12% of the lncRNAs and 87.19% of the codRNAs associated with ribosomes (p < 0.05) (see details by species in Table 2, Stringent set).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "1ab6f066-540e-413f-abc0-392939b0c069",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C32",
+      "claim": "The density of ribosomes in lncRNAs is much higher than expected by spurious ribosome binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we concluded that the density of ribosomes in lncRNAs is much higher than expected by spurious ribosome binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of TE values between lncRNAs and the 3'UTR null model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "85675f18-9f8b-4c11-870c-01902b6ce892",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C33",
+      "claim": "In human, fruit fly, and yeast, TE was higher in codRNAs than in lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In human, fruit fly, and yeast, TE was higher in codRNAs than in lncRNAs (Wilcoxon test, p < 0.005), but in mouse and zebrafish the opposite trend was observed (Wilcoxon test, p < 0.05) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "0adad217-4d51-4045-8115-10b9dc0d7e9a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C34",
+      "claim": "In mouse and zebrafish, TE was higher in lncRNAs than in codRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In human, fruit fly, and yeast, TE was higher in codRNAs than in lncRNAs (Wilcoxon test, p < 0.005), but in mouse and zebrafish the opposite trend was observed (Wilcoxon test, p < 0.05) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "0cef38f9-6edc-4c1c-92a8-06f661ad6665",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C35",
+      "claim": "lncRNAs can show TE values that are similar or even higher than codRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the differences between the species, which may be due to technical issues, it is clear that lncRNAs can show TE values that are similar or even higher than codRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the TE data presented in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "604c110f-f752-4569-bc8a-9046bee9ed88",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C36",
+      "claim": "The number of lncRNA_ribo with homologues in other species was remarkably low (0\u201315.6%) except for zebrafish (49.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of lncRNA_ribo with homologues in other species was remarkably low (0\u201315.6%) except for zebrafish (49.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on BLASTP sequence similarity searches performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "17b83558-24ae-4bfa-bd6c-3c51d421877b",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C37",
+      "claim": "The majority of codRNAs had homologues in other species (>95% for vertebrates and fruit fly and 70\u201373% for Arabidopsis and yeast).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the majority of codRNAs had homologues in other species (>95% for vertebrates and fruit fly and 70\u201373% for Arabidopsis and yeast).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on BLASTP sequence similarity searches performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "6c80e5aa-9e4b-4650-acda-333aca72c86e",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C38",
+      "claim": "After discarding lncRNAs that showed cross-species conservation, association with ribosomes was still very prevalent (80.4% of mouse, 40.3% of human, and 22.1% of zebrafish lncRNAs were associated with ribosomes).",
+      "claim_type": "EXPLICIT",
+      "source": "After we discarded lncRNAs that showed cross-species conservation, association with ribosomes was still very prevalent (80.4% of mouse, 40.3% of human, and 22.1% of zebrafish lncRNAs were associated with ribosomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of ribosome association after filtering for conserved lncRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "dfb724f0-2b89-4cc2-9a2f-ceda876a507f",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C39",
+      "claim": "In general lncRNAs are not truncated duplicated copies (pseudogenes).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in general lncRNAs are not truncated duplicated copies (pseudogenes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the low homology of ribosome-associated ORFs in lncRNAs to annotated proteins in the same species.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "4cd378a7-f983-406f-9a27-68532c31cf6e",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C40",
+      "claim": "In all species the coding scores of the primary ORF in lncRNAs were significantly higher than the coding score of ORFs in introns.",
+      "claim_type": "EXPLICIT",
+      "source": "In all species the coding scores of the primary ORF in lncRNAs, while lower than that of codRNAs, were significantly higher than the coding score of ORFs in introns (Figure 6, Wilcoxon test lncRNA_ribo vs intron, human, mouse, zebrafish, and Arabidopsis p < 10\u221216; fruit fly and yeast p < 10\u22125).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "6d2bf4eb-b5f1-4de9-a112-63c52382143a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C41",
+      "claim": "ORFs in lncRNAs are more coding-like than random ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly shows that ORFs in lncRNAs are more coding-like than random ORFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of coding scores between lncRNA ORFs and intronic ORFs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "9d2dd658-7f1f-4c43-8a30-b37130d853ef",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C42",
+      "claim": "lncRNAs associated with ribosomes (lncRNA_ribo) showed higher coding scores than those not associated with ribosomes (lncRNA_noribo).",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs associated with ribosomes (lncRNA_ribo) showed higher coding scores than those not associated with ribosomes (lncRNA_noribo), even when we did not use the ribosome profiling information and compared the longest ORF in both types of transcripts (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data presented in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "2584daa9-7387-4104-967b-6ee676a286c6",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C43",
+      "claim": "The coding score was always lower in the youngest group of codRNAs than in older groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the coding score was always lower in the youngest group than in older groups (Figure 6, Wilcoxon test, p < 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "d54c1a1d-886a-400f-9eb0-9cf43f485518",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C44",
+      "claim": "The youngest codRNAs showed a very similar coding score distribution to lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the youngest codRNAs showed a very similar coding score distribution to lncRNAs (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "398a2ccd-f672-460e-af59-dfe492dbb6eb",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C45",
+      "claim": "The average size of proteins encoded by primate-specific transcripts was 148 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the average size of proteins encoded by primate-specific transcripts was 148 amino acids and the average transcript coverage 47%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of young protein coding genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "1c87ce30-f042-4f30-b03a-3fc165c2ee7b",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C46",
+      "claim": "The average transcript coverage of primate-specific transcripts was 47%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the average size of proteins encoded by primate-specific transcripts was 148 amino acids and the average transcript coverage 47%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of young protein coding genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "c43cdd6c-e770-45dd-9ce7-7309c4294b8c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C47",
+      "claim": "Under neutrality (no purifying selection), the PN/PS ratio is expected to be approximately 2.89.",
+      "claim_type": "EXPLICIT",
+      "source": "Under neutrality (no purifying selection), the PN/PS ratio is expected to be approximately 2.89 (Nei and Gojobori, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nei and Gojobori, 1986.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "b7451e47-413c-408a-a975-1be1c051567a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C48",
+      "claim": "Human sequences showed higher PN/PS ratios than sequences from the other analyzed species.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, human sequences showed higher PN/PS ratios than sequences from the other analyzed species, probably due to the presence of many slightly deleterious mutations segregating in the population (Eyre-Walker, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of polymorphism data presented in Figure 7.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "fecea787-cf30-4f9c-a397-7fee32fba966",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C49",
+      "claim": "The PN/PS was significantly lower in codRNAs than in lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the PN/PS was significantly lower in codRNAs than in lncRNAs (proportion test, p < 10\u22125), denoting stronger purifying selection in the former.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "42707dc4-554a-4b29-8f19-c5fad37da2f3",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C50",
+      "claim": "There was a very clear inverse relationship between the strength of purifying selection and the age of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, there was a very clear inverse relationship between the strength of purifying selection and the age of the gene (p < 10\u221215 between the youngest and rest of codRNAs in mouse and zebrafish), in agreement with previous studies (Liu et al., 2008; Cai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis and data presented in Figure 7, as well as citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "86ba5509-64b1-4288-bc2e-13784b3bfff0",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C51",
+      "claim": "The distribution of PN/PS values in lncRNAs was very similar to that of young protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the distribution of PN/PS values in lncRNAs was very similar to that of young protein-coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of polymorphism data presented in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "4da8b6d3-3846-45d5-b827-8e81cc9b6e2a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C52",
+      "claim": "In human and mouse, there were no significant differences in PN/PS values between lncRNAs and young protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In human and mouse, there were no significant differences, and in the case of zebrafish the lncRNAs had even slightly lower PN/PS values than the fish-specific protein coding genes (p < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the polymorphism data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "57919e3f-02c5-4dbc-87c0-72effa54bce0",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C53",
+      "claim": "In zebrafish, lncRNAs had slightly lower PN/PS values than the fish-specific protein coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In human and mouse, there were no significant differences, and in the case of zebrafish the lncRNAs had even slightly lower PN/PS values than the fish-specific protein coding genes (p < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the polymorphism data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "4fbc4f2c-dab5-4081-940c-cc671a7174cd",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C54",
+      "claim": "Many lncRNAs appear to be scanned by ribosomes and are likely to translate short peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, many lncRNAs appear to be scanned by ribosomes and are likely to translate short peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the patterns of ribosome protection observed in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "646b5091-1e3c-44bb-a7b2-f68f74139b20",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C55",
+      "claim": "lncRNAs are classified as such in databases because they are unlikely to encode functional proteins according to a number of criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Long non-coding RNAs are classified as such in databases because, according to a number of criteria, they are unlikely to encode functional proteins. These criteria include the lack of a long ORF, the absence of amino acid sequence conservation, and the lack of known protein domains (Harrow et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "3795e410-1121-4205-8df7-45cd497aa785",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C56",
+      "claim": "The majority of lncRNAs contain ORFs longer than 24 amino acids, which can potentially correspond to real proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of lncRNAs contain ORFs longer than 24 amino acids, which can potentially correspond to real proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of ORF content in lncRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "b8a094a2-35fa-4e47-a48c-9960a2278afb",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C57",
+      "claim": "Short proteins are more difficult to detect than longer ones and consequently they are probably underestimated in databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Short proteins are more difficult to detect than longer ones and consequently they are probably underestimated in databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the technical limitations of proteomics methods, supported by the authors' data in Table 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "e811978b-4104-4ff7-a9fb-d6818056e840",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C58",
+      "claim": "The use of comparative genomics, proteomics, and a combination of evolutionary conservation and ribosome profiling data have shown that the number of short proteins is probably much higher than previously suspected.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, the use of comparative genomics (Frith et al., 2006; Ladoukakis et al., 2011; Hanada et al., 2013), proteomics (Slavoff et al., 2013; Vanderperre et al., 2013; Ma et al., 2014), and a combination of evolutionary conservation and ribosome profiling data (Crapp\u00e9 et al., 2013; Bazzini et al., 2014) have shown that the number of short proteins is probably much higher than previously suspected (Andrews and Rothnagel, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "74cfa3bb-95da-4b1a-922b-66f9022a245b",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C59",
+      "claim": "In yeast, gene deletion experiments have provided evidence of functionality for short open reading frames (sORFs < 100 amino acids).",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, gene deletion experiments have provided evidence of functionality for short open reading frames (sORFs < 100 amino acids) (Kastenmayer et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kastenmayer et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "d9bec70d-e37b-4d28-bc3e-74cdbaaf6460",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C60",
+      "claim": "In zebrafish, several newly discovered sORFs appear to be involved in embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "in zebrafish, several newly discovered sORFs appear to be involved in embryonic development (Pauli et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pauli et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "f98abe26-b71e-4890-acd6-c02fc433b421",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C61",
+      "claim": "In many cases, the transcripts containing sORFs will be classified as non-coding, especially if the ORF is not well conserved across different species.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, the transcripts containing sORFs will be classified as non-coding, especially if the ORF is not well conserved across different species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the classification criteria for lncRNAs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "75d136e2-9210-4979-905c-9c7f0c0e7cd0",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C62",
+      "claim": "Ribosome profiling has been used to study translation of proteins in a wide range of organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "One approach to identify potential coding transcripts is ribosome profiling (Ingolia et al., 2009), which has been used to study translation of proteins in a wide range of organisms (Guo et al., 2010; Ingolia et al., 2011; Brar et al., 2012; Michel et al., 2012; Chew et al., 2013; Dunn et al., 2013; Huang et al., 2013; Artieri and Fraser, 2014; Bazzini et al., 2014; Juntawong et al., 2014; McManus et al., 2014; Vasquez et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "96dccef6-c8eb-4d9c-a43d-9f8dd295f101",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C63",
+      "claim": "In several ribosome profiling studies it has been noted that lncRNAs can be protected by ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In several of these studies it has been noted that lncRNAs can be protected by ribosomes (Ingolia et al., 2011; Chew et al., 2013; Bazzini et al., 2014; Juntawong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "7ef70e7a-e4f4-4635-8122-bcfdd04bddd4",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C64",
+      "claim": "There is no consensus on whether the observed patterns of ribosome protection in lncRNAs are consistent with translation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no consensus on whether the observed patterns are consistent with translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the conflicting conclusions in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "cafa601f-0f63-44ca-bcd4-445f84e62fef",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C65",
+      "claim": "In the original analysis of mouse stem cells, it was reported that many lncRNAs were polycistronic transcripts encoding short proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example in the original analysis of mouse stem cells, which we reanalyzed here, it was reported that many lncRNAs were polycistronic transcripts encoding short proteins (Ingolia et al., 2011), but in another paper where the same data were processed in a different way, they concluded that lncRNAs were unlikely to be protein-coding (Guttman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ingolia et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "53f7f799-8642-40c7-a832-89a40dfe4f0a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C66",
+      "claim": "In another analysis of the same mouse stem cell data, it was concluded that lncRNAs were unlikely to be protein-coding.",
+      "claim_type": "EXPLICIT",
+      "source": "For example in the original analysis of mouse stem cells, which we reanalyzed here, it was reported that many lncRNAs were polycistronic transcripts encoding short proteins (Ingolia et al., 2011), but in another paper where the same data were processed in a different way, they concluded that lncRNAs were unlikely to be protein-coding (Guttman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Guttman et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "8e21baf4-9934-4bd8-943d-824a015a6a3a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C67",
+      "claim": "In Arabidopsis, the translational efficiency values of highly expressed lncRNAs (>5 FPKM) were similar to those of coding RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, the translational efficiency values of highly expressed lncRNAs (>5 FPKM) were similar to those of coding RNAs and some lncRNAs had profiles consistent with initiation and termination of translation (Juntawong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Juntawong et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "08437001-beb6-4f48-91a5-e3a20348b418",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C68",
+      "claim": "Some Arabidopsis lncRNAs had profiles consistent with initiation and termination of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, the translational efficiency values of highly expressed lncRNAs (>5 FPKM) were similar to those of coding RNAs and some lncRNAs had profiles consistent with initiation and termination of translation (Juntawong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Juntawong et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "33f307f0-0ff2-48c6-8b57-9c14f8c3257e",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C69",
+      "claim": "Using yeast data, Wilson and Masel found many cases of non-coding transcripts bound to ribosomes and suggested that this facilitates the evolution of novel protein-coding genes from non-coding sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using yeast data, Wilson and Masel. (2011) found many cases of non-coding transcripts bound to ribosomes and suggested that this facilitates the evolution of novel protein-coding genes from non-coding sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wilson and Masel, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "6bc66466-5b85-48e6-9611-d3230f1e84af",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C70",
+      "claim": "Many novel, non-annotated, lncRNAs were discovered, especially in zebrafish, mouse, and fruit fly.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered many novel, non-annotated, lncRNAs, especially in zebrafish, mouse, and fruit fly (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' de novo transcript assembly analysis, with data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "c497cd95-003e-46d6-9f98-b695c44e0e11",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C71",
+      "claim": "In transcripts classified as lncRNAs, the ribosome profiling reads tend to cover a smaller fraction of the transcript than in typical codRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In transcripts classified as lncRNAs, the ribosome profiling reads tend to cover a smaller fraction of the transcript than in typical codRNAs, in agreement with a shorter relative size of the ORF accumulating the largest number of ribosome profiling reads (primary ORF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of ribosome profiling coverage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "36fb054e-6c00-46b2-a4b2-9577acec3b8c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C72",
+      "claim": "The translational efficiency of regions corresponding to the primary ORF is much higher than that of 3\u2032UTRs, both in codRNAs and lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that the translational efficiency of regions corresponding to the primary ORF is much higher than that of 3\u2032UTRs, both in codRNAs and lncRNAs, consistent with translation of the transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of TE in different transcript regions, presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "a7b9ed3e-3254-4a89-8bcb-11bd360f2c46",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C73",
+      "claim": "The primary ORF of lncRNAs showed significantly higher coding score than the longest ORF extracted from randomly selected non-coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the primary ORF of lncRNAs showed significantly higher coding score than the longest ORF extracted from randomly selected non-coding regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' coding score analysis presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "c2724411-bdfe-41ac-8912-49d1995c0e39",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C74",
+      "claim": "lncRNAs often contain several potentially translated ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs often contain several potentially translated ORFs (Ingolia et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ingolia et al., 2011 and the authors' own observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "b576d731-0fc7-4ef2-b8cc-4611135e81a5",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C75",
+      "claim": "Transcripts encoding multiple short proteins have been reported in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcripts encoding multiple short proteins have been reported in insects (Savard et al., 2006) and could be common in other species as well (Tautz, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Savard et al., 2006 and Tautz, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "cf1fd54d-9208-47e5-acab-d774675c12ac",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C76",
+      "claim": "lncRNAs are poorly conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs are poorly conserved across species and so, if translated, they will produce species- or lineage-specific proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' sequence similarity searches showing low conservation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "6528d54b-4504-4a52-a690-fc604f0c0544",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C77",
+      "claim": "If lncRNAs are translated, they will produce species- or lineage-specific proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs are poorly conserved across species and so, if translated, they will produce species- or lineage-specific proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the poor conservation of lncRNAs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "84d50fe3-9436-4bbb-8c35-919f0316ccea",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C78",
+      "claim": "Recently evolved proteins are shorter, subject to weaker selective constraints and expressed at lower levels than ancient proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently evolved proteins are markedly different from widely distributed ancient proteins; they are shorter, subject to weaker selective constraints and expressed at lower levels (Alb\u00e0 and Castresana, 2005; Cai et al., 2009; Liu et al., 2010; Donoghue et al., 2011; Carvunis et al., 2012; Xie et al., 2012; Wissler et al., 2013; Neme and Tautz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "0603f9b5-e012-425c-a036-7841264277ae",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C79",
+      "claim": "lncRNAs and young protein-coding transcripts are virtually indistinguishable regarding their coding score and ORF selective constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs and young protein-coding transcripts are virtually indistinguishable regarding their coding score and ORF selective constraints (Figures 6 and 7), which is consistent with the idea that many lncRNAs encode new peptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' comparative analysis of coding scores and PN/PS ratios presented in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "b5fe77ae-01e8-4835-af64-5527f4345858",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C80",
+      "claim": "About 35\u201340% of primary ORFs in human and mouse lncRNAs displayed coding scores that were significantly higher than those expected for non-coding sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "About 35\u201340% of primary ORFs in human and mouse lncRNAs displayed coding scores that were significantly higher than those expected for non-coding sequences, making them excellent candidates for translating functional proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' coding score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "c3c80c3d-55bb-48da-a079-3ae34d6435d5",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C81",
+      "claim": "Five human lncRNAs associated with ribosomes that exhibited high coding scores in this study were re-annotated as protein-coding transcripts in a subsequent Ensembl gene annotation release (version 75).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, five human lncRNAs associated with ribosomes that exhibited high coding scores in our study were re-annotated as protein-coding transcripts in a subsequent Ensembl gene annotation release (version 75, Supplementary file 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with a later version of the Ensembl database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "29e50e99-fcfe-4e7b-a2b2-694f0068520d",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C82",
+      "claim": "Gene knock-out experiments in fly have discovered that young proteins, even if rapidly evolving, are often essential for the organism and can cause important defects when deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene knock-out experiments in fly have discovered that young proteins, even if rapidly evolving, are often essential for the organism and can cause important defects when deleted (Chen et al., 2010; Reinhardt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2010 and Reinhardt et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "87da8eaa-94f2-4a06-9b56-ee85bd5a5d3c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C83",
+      "claim": "lncRNAs tend to be expressed at much lower levels than typical codRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs tend to be expressed at much lower levels than typical codRNAs, so, everything else being equal, the amount of translated peptide is also expected to be smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' expression analysis presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "d4d6a712-4903-4422-8504-ec9ffd7ff30c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C84",
+      "claim": "Pseudogenes showed extensive association with ribosomes in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudogenes also showed extensive association with ribosomes in our study, indicating that the translation machinery is probably not very selective or that some pseudogenes produce functional proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of pseudogene association with ribosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "b264b3b9-d5ff-429f-b83c-b63588f80439",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C85",
+      "claim": "A recent proteomics study has found that dozens of human pseudogenes produce peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "This question may be worth revisiting, as a recent proteomics study has also found that dozens of human pseudogenes produce peptides (Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kim et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "0434f622-ea2e-4303-9439-4f2ac807f573",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C86",
+      "claim": "A fraction of lncRNAs have not acquired the capacity to be translated.",
+      "claim_type": "EXPLICIT",
+      "source": "The data also indicate that a fraction of lncRNAs have not acquired the capacity to be translated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that some lncRNAs did not show association with ribosomes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "4cf2bbb8-da80-4945-a565-dbc29d947232",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C87",
+      "claim": "lncRNAs not associated with ribosomes tended to show lower coding scores than lncRNAs associated with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "it is also true that the lncRNAs not associated with ribosomes tended to show lower coding scores than lncRNAs associated with ribosomes, even when we did not use the ribosome profiling data and simply compared the longest ORF in both kinds of transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' coding score analysis presented in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "dcc0a509-0357-47d6-b420-0600e6cb075f",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C88",
+      "claim": "Human-specific protein-coding genes are often related to non-coding transcripts in macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been reported that human-specific protein-coding genes are often related to non-coding transcripts in macaque, pointing to a non-coding origin for many newly evolved proteins (Xie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Xie et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "0230ed94-107f-4360-a415-83001a6dae26",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C89",
+      "claim": "De novo protein-coding gene evolution can be viewed as a continuum from non-functional genomic sequences to fully-fledged protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, one may view de novo protein-coding gene evolution as a continuum from non-functional genomic sequences to fully-fledged protein-coding genes (Alb\u00e0 and Castresana, 2005; Toll-Riera et al., 2009; Carvunis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "b54dd3bd-a76a-46b2-b200-f4c5dbacabb6",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C90",
+      "claim": "Many lncRNAs could be in intermediate states in the process of de novo protein-coding gene evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, many lncRNAs could be in intermediate states in this process, their pervasive translation serving as the building material for the evolution of new proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the continuum model of de novo gene evolution and the observed properties of lncRNAs.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "eebf7e9e-0856-4dc1-bda1-ce70e164981f",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C91",
+      "claim": "The pervasive translation of lncRNAs may serve as the building material for the evolution of new proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, many lncRNAs could be in intermediate states in this process, their pervasive translation serving as the building material for the evolution of new proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed translation of lncRNAs and theories of de novo gene evolution.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "e40f17d8-7dc5-4e32-8635-9ca7707072eb",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C92",
+      "claim": "The effect of natural selection preventing the production of toxic peptides may facilitate the evolution of functional proteins from random ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be difficult to obtain functional proteins from completely random ORFs (Jacob, 1977), but the effect of natural selection preventing the production of toxic peptides (Wilson and Masel, 2011), and the high number of transcripts expressed in the genome, may facilitate this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations to Jacob, 1977 and Wilson and Masel, 2011.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "a8389730-8d02-4798-bc15-80b2f53594e2",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C93",
+      "claim": "The high number of transcripts expressed in the genome may facilitate the evolution of functional proteins from random ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be difficult to obtain functional proteins from completely random ORFs (Jacob, 1977), but the effect of natural selection preventing the production of toxic peptides (Wilson and Masel, 2011), and the high number of transcripts expressed in the genome, may facilitate this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the abundance of expressed transcripts.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "e7d72720-bbd1-4c36-a403-c25a34cf3998",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C94",
+      "claim": "In both codRNAs and lncRNAs, the 5\u2032UTR showed a ribosome density (translational efficiency, TE) comparable to that of the primary ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "In both codRNAs and lncRNAs, the 5\u2032UTR showed a ribosome density (translational efficiency, TE) comparable to that of the primary ORF (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' analysis of TE in different transcript regions, presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "fc704ce2-2a34-438d-a0d1-fc0f3347d280",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C95",
+      "claim": "In both codRNAs and lncRNAs, the 3\u2032UTR showed very little ribosome association.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the 3\u2032UTR showed very little ribosome association and often we could not find a single read mapping to this region (31\u201391% of cases in codRNAs and 46\u201368% in lncRNAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of ribosome profiling reads in 3'UTR regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "811d0185-cd5d-4fc0-ad31-07104b5e7752",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C96",
+      "claim": "InterORF regions showed little signal when compared to the primary ORF, both in codRNAs and lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "InterORF regions showed little signal when compared to the primary ORF, both in codRNAs and lncRNAs (Wilcoxon test, p < 10\u22129 in human, mouse, and zebrafish, p < 0.05 in Arabidopsis, insufficient data for fruit fly and yeast precluded the analysis for these species).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of TE in interORF regions, presented in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "ee8a0b0e-ddfe-4a81-9ef1-305d6d4135a3",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C97",
+      "claim": "Ribosome binding is not always restricted to the primary ORF in lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The data also indicated that ribosome binding is not always restricted to the primary ORF, especially in lncRNAs, as ribosome protection could sometimes be observed for additional ORFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of ribosome profiling reads mapping to multiple ORFs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "b1595fa2-d604-4203-8480-05dee81340bb",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C98",
+      "claim": "The percentage of lncRNAs that may undergo nonsense-mediated decay (NMD) is estimated to be between 4.47 and 14.11% depending on the species.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we estimate that the percentage of cases that may undergo nonsense-mediated decay (NMD, see 'Materials and methods' for more details) is low, between 4.47 and 14.11% depending on the species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of NMD candidate transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "1875db32-7b29-4d7e-b965-abcb84929edf",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C99",
+      "claim": "The percentage of protein-coding transcripts showing NMD patterns is between 0.34 and 13.33%.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, the percentage for protein-coding transcripts showing the same patterns (including transcripts annotated as NMD in Ensembl) is between 0.34 and 13.33%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of NMD patterns in protein-coding transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "2aca532d-a2a1-41a3-ae75-ae5ae77461c8",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C100",
+      "claim": "lncRNAs tended to be much shorter than codRNAs in all the species studied.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, lncRNAs tended to be much shorter than codRNAs in all the species studied (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' analysis of transcript lengths, presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "6e12b1bf-2eb8-4b60-bf77-7c5cad435de0",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C101",
+      "claim": "Most lncRNAs contained at least one short ORF (\u226524 amino acids) and often several ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most lncRNAs contained at least one short ORF (\u226524 amino acids) and often several ORFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of ORF content in lncRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "c7e2d204-78d6-4e25-9d17-77ae94eaca1a",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C102",
+      "claim": "The average ORF size in lncRNAs was between 43 and 68 amino acids depending on the species.",
+      "claim_type": "EXPLICIT",
+      "source": "The average ORF size in lncRNAs was between 43 and 68 amino acids depending on the species (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis of ORF sizes in lncRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "5009dcdf-9a71-4956-8336-5739c4177a32",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C103",
+      "claim": "lncRNAs were expressed at significantly lower levels than codRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, lncRNAs were expressed at significantly lower levels than codRNAs (Figure 1B, Wilcoxon test, p < 10\u22125).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' expression analysis, presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "51cf7ffd-e37d-4655-91ca-06a0b9ee86d6",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C104",
+      "claim": "In the primary ORF of codRNAs, there was a nearly perfect degree of agreement with the annotated protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In codRNAs, the primary ORF showed a nearly perfect degree of agreement with the annotated protein, indicating that it was an appropriate metric for the main translated product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' comparison of primary ORFs with annotated proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "fcab902c-afcc-44c1-a6d9-11dd4dc3a834",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C105",
+      "claim": "Primary ORFs in lncRNAs typically occupied a shorter fraction of the transcript than in codRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary ORFs in lncRNAs typically occupied a shorter fraction of the transcript than in codRNAs (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' analysis of ORF coverage, presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "6ba7100a-917e-4f67-8f97-40aad772710d",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "claim_id": "C106",
+      "claim": "In lncRNAs, most of the primary ORFs corresponded to proteins less than 100 amino acids long.",
+      "claim_type": "EXPLICIT",
+      "source": "In lncRNAs, most of the primary ORFs corresponded to proteins less than 100 amino acids long (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' analysis of primary ORF sizes, presented in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a9103669-abbb-4627-9bb2-037ec44b32ac",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A large fraction of lncRNAs (28.6-81.9% depending on species) associate with ribosomes, with ribosome density significantly higher than expected by spurious binding. Over 90% of coding transcripts showed ribosome association across all species studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22-C23, C26, C28-C32 provide converging evidence from ribosome profiling data across six species (Table 2, Figures 2-3). The statistical comparison to 3'UTR null model (C29-C32) demonstrates that ribosome association is significantly above background, with 90.12% of lncRNAs rejecting the null hypothesis at p<0.05.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The patterns of ribosome protection in lncRNAs are consistent with translation of short peptides, showing high ribosome density in primary ORFs and 5'UTRs but minimal density in 3'UTRs and interORF regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C54, C71-C72, C94-C97 are supported by detailed analysis of ribosome profiling patterns across transcript regions (Figure 5). The data show translation-like signatures with strong ribosome protection in ORFs and 5'UTRs but not 3'UTRs, consistent across multiple species with appropriate statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "202be485-6a8a-4b38-97dd-15876ab6846f",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "lncRNAs show similar coding potential to evolutionarily young protein-coding genes, with coding scores significantly higher than random ORFs. About 35-40% of human and mouse lncRNA primary ORFs displayed coding scores significantly above non-coding expectations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C40-C44, C73, C79-C80 are supported by hexamer-based coding score analysis (Figure 6) comparing lncRNAs to intronic sequences and age-stratified coding genes. Statistical tests show lncRNA coding scores are significantly higher than intronic ORFs (p<10^-16 in most species) and indistinguishable from young coding genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "bb524fae-655c-4d9b-a024-4044e46624c1",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "lncRNAs show similar sequence constraints (PN/PS ratios) to young protein-coding genes and may play an important role in de novo protein evolution, potentially representing intermediate states in the evolution of new proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C49-C53, C79 are supported by polymorphism analysis (Figure 7) showing lncRNAs have PN/PS ratios similar to young coding genes. However, claims C90-C91 about lncRNAs being intermediate states in de novo gene evolution are speculative inferences not directly tested. The evolutionary role requires additional evidence beyond sequence similarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "516a9094-9e30-430b-a6e1-8c5981c44058",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "lncRNAs show remarkably low cross-species conservation (0-15.6% with homologues except zebrafish at 49.4%), in contrast to coding RNAs (>95% for vertebrates). Even after removing conserved lncRNAs, ribosome association remains prevalent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17, C36-C38, C76 are supported by BLASTP sequence similarity searches and prior citations. The low conservation is consistent across species and contrasts sharply with coding sequences. The persistence of ribosome association after filtering conserved lncRNAs (C38) strengthens the conclusion that lineage-specific lncRNAs associate with ribosomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "65474069-42b5-4975-bfa9-c6b544711074",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Translational efficiency (TE) comparisons between lncRNAs and codRNAs showed species-specific patterns: TE was higher in codRNAs than lncRNAs in human, fruit fly, and yeast, but the opposite in mouse and zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by statistical analysis of TE values (Figure 4, Wilcoxon tests p<0.005 and p<0.05). The authors acknowledge technical differences between species may contribute to variation. Despite inconsistencies across species, the data clearly show lncRNAs can achieve TE values comparable to or exceeding codRNAs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "3015a858-0af0-42ec-8320-3b89e257ee94",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "lncRNAs are shorter than codRNAs, expressed at lower levels, and contain short ORFs (average 43-68 amino acids). Primary ORFs in lncRNAs occupy a smaller fraction of transcripts than in codRNAs, with most corresponding to proteins <100 amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C106 are supported by transcript characterization data (Figure 1, Figure 5A, Supplementary files). Statistical tests confirm significant differences in length and expression (Wilcoxon test p<10^-5). The characterization is consistent with prior literature and provides essential context for interpreting ribosome profiling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "bdcac704-9eb2-4398-90d4-db62e1e95059",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Short proteins (24-80 amino acids) are more difficult to detect in proteomics databases than longer proteins, with only 42.6-46.6% detected in human and mouse compared to >75% for longer proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C57 are supported by proteomics database analysis (Table 3) comparing detection rates across protein size ranges. This provides important context for why lncRNA-encoded peptides may be underrepresented in databases, though it does not directly demonstrate that lncRNAs produce functional proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "4a3973eb-a89f-4800-bb50-03b734eb150c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pseudogenes showed extensive association with ribosomes, with the majority of pseudogenes in human, mouse, and Arabidopsis showing ribosome association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C84 are supported by ribosome profiling data (Supplementary file 1A). The authors note this is surprising and suggest either the translation machinery is not selective or some pseudogenes produce functional proteins. This finding raises questions about translation specificity but is adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "ce69da23-1f7e-4cd5-ac31-7f406cad9132",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Many novel, non-annotated lncRNAs were discovered through de novo transcript assembly, especially in zebrafish, mouse, and fruit fly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is supported by transcript assembly results (Table 2) showing 2488 novel lncRNAs across species. This methodological contribution expands the lncRNA catalog, particularly for species with incomplete annotations, and strengthens the generalizability of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "69e7f07e-e7bf-47b4-8a91-03a3513f1b0b",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The percentage of lncRNAs that may undergo nonsense-mediated decay (NMD) is estimated at 4.47-14.11% depending on species, comparable to protein-coding transcripts (0.34-13.33%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 are supported by analysis of NMD candidate transcripts based on stop codon position relative to splice junctions. The low percentages suggest most ribosome-associated lncRNAs are not subject to NMD, though this analysis is limited to one surveillance mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "63531e3c-b7b6-414c-bc9d-40bb73b04163",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In general, lncRNAs are not truncated duplicated copies (pseudogenes), based on low homology to annotated proteins in the same species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by BLASTP searches showing very low homology (0-12.4% except zebrafish at 47.5%) between lncRNA ORFs and annotated proteins within species. The zebrafish exception is attributed to incomplete protein-coding annotations. This inference is reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "fc93dd38-8f02-4c5f-8ea1-6776f58a133c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Five human lncRNAs associated with ribosomes that exhibited high coding scores were re-annotated as protein-coding transcripts in a subsequent Ensembl release (version 75).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by comparison with later Ensembl annotations (Supplementary file 2C). This provides independent validation that some lncRNAs identified by the authors' methods are indeed coding, though the small number limits generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "60570399-093f-4ea8-a97b-1ee47bb25309",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "lncRNAs are expressed at significantly lower levels than codRNAs across all species studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C83, C103 are supported by expression analysis (Figure 1B) with statistical testing (Wilcoxon test p<10^-5). This is consistent with prior literature (citations provided) and has implications for the amount of translated peptide expected from lncRNAs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "e553e0dd-c916-4288-b6b2-baad87e1913c",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Young protein-coding genes (primate-specific transcripts) encode proteins averaging 148 amino acids with 47% transcript coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by analysis of experimentally validated young proteins. These characteristics are similar to lncRNAs, supporting the comparison between lncRNAs and young coding genes. The data provide important context for interpreting coding potential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "30334cbe-2b4c-4074-9311-b27653b4dce7",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A fraction of lncRNAs have not acquired the capacity to be translated, as evidenced by lack of ribosome association and lower coding scores in lncRNA_noribo compared to lncRNA_ribo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 are supported by comparison of lncRNAs with and without ribosome association (Figure 6\u2014figure supplement 1). The inference that some lncRNAs lack translation capacity is reasonable, though alternative explanations (e.g., low expression, technical limitations) are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    },
+    {
+      "id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e",
+      "content_id": "d4632b14-13af-4457-a742-5ef3a8cd4bc3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background and literature context on lncRNAs, ribosome profiling, short proteins, and de novo gene evolution from prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C3, C8-C21, C27, C47, C55, C58-C69, C74-C75, C77-C78, C82, C85, C88-C89, C92-C93 represent established knowledge or prior findings supported by appropriate citations. These provide essential context but are not novel findings of this study. The citations appear appropriate and accurately represent prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:19.818484Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "96ebf2e2-e4bc-4197-b43c-155ef64cdc54",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "51ad7b7e-f10a-4df5-862a-352e9871f89a",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "9f5d9b56-e0da-41d4-82e4-88e95991161d",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "b77e8f24-a5ce-4b6a-b2fe-a6f5ea9eba6a",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "2a5a3081-2d3a-4c05-8125-8e88a5f9ed1c",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "fbc57fb8-75fa-488c-b776-7b801f4efe24",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "aac84138-5935-4d02-9473-cbc4f7eaf346",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "08a21863-3f18-4ffb-9905-8d0775b06085",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "1ab6f066-540e-413f-abc0-392939b0c069",
+      "result_id": "a9103669-abbb-4627-9bb2-037ec44b32ac"
+    },
+    {
+      "claim_id": "92d557bf-e2ca-414b-8999-2838e4d65641",
+      "result_id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69"
+    },
+    {
+      "claim_id": "4fbc4f2c-dab5-4081-940c-cc671a7174cd",
+      "result_id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69"
+    },
+    {
+      "claim_id": "c497cd95-003e-46d6-9f98-b695c44e0e11",
+      "result_id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69"
+    },
+    {
+      "claim_id": "36fb054e-6c00-46b2-a4b2-9577acec3b8c",
+      "result_id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69"
+    },
+    {
+      "claim_id": "e7d72720-bbd1-4c36-a403-c25a34cf3998",
+      "result_id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69"
+    },
+    {
+      "claim_id": "fc704ce2-2a34-438d-a0d1-fc0f3347d280",
+      "result_id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69"
+    },
+    {
+      "claim_id": "811d0185-cd5d-4fc0-ad31-07104b5e7752",
+      "result_id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69"
+    },
+    {
+      "claim_id": "ee8a0b0e-ddfe-4a81-9ef1-305d6d4135a3",
+      "result_id": "80612e4f-a4c2-47cd-a4a3-a399d183bf69"
+    },
+    {
+      "claim_id": "67f56ac7-bdaa-4b29-9c11-2f4b893aca72",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "4cd378a7-f983-406f-9a27-68532c31cf6e",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "6d2bf4eb-b5f1-4de9-a112-63c52382143a",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "9d2dd658-7f1f-4c43-8a30-b37130d853ef",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "2584daa9-7387-4104-967b-6ee676a286c6",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "d54c1a1d-886a-400f-9eb0-9cf43f485518",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "a7b9ed3e-3254-4a89-8bcb-11bd360f2c46",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "0603f9b5-e012-425c-a036-7841264277ae",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "b5fe77ae-01e8-4835-af64-5527f4345858",
+      "result_id": "202be485-6a8a-4b38-97dd-15876ab6846f"
+    },
+    {
+      "claim_id": "0fc036af-a7d5-4400-9d2e-5677227dbfd6",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "fecea787-cf30-4f9c-a397-7fee32fba966",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "42707dc4-554a-4b29-8f19-c5fad37da2f3",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "86ba5509-64b1-4288-bc2e-13784b3bfff0",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "4da8b6d3-3846-45d5-b827-8e81cc9b6e2a",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "57919e3f-02c5-4dbc-87c0-72effa54bce0",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "0603f9b5-e012-425c-a036-7841264277ae",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "b54dd3bd-a76a-46b2-b200-f4c5dbacabb6",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "eebf7e9e-0856-4dc1-bda1-ce70e164981f",
+      "result_id": "bb524fae-655c-4d9b-a024-4044e46624c1"
+    },
+    {
+      "claim_id": "7d5aa70b-c14d-418f-a2d5-606433106812",
+      "result_id": "516a9094-9e30-430b-a6e1-8c5981c44058"
+    },
+    {
+      "claim_id": "a70b128d-9a08-45b3-bf74-590ef8eac33c",
+      "result_id": "516a9094-9e30-430b-a6e1-8c5981c44058"
+    },
+    {
+      "claim_id": "604c110f-f752-4569-bc8a-9046bee9ed88",
+      "result_id": "516a9094-9e30-430b-a6e1-8c5981c44058"
+    },
+    {
+      "claim_id": "17b83558-24ae-4bfa-bd6c-3c51d421877b",
+      "result_id": "516a9094-9e30-430b-a6e1-8c5981c44058"
+    },
+    {
+      "claim_id": "6c80e5aa-9e4b-4650-acda-333aca72c86e",
+      "result_id": "516a9094-9e30-430b-a6e1-8c5981c44058"
+    },
+    {
+      "claim_id": "cf1fd54d-9208-47e5-acab-d774675c12ac",
+      "result_id": "516a9094-9e30-430b-a6e1-8c5981c44058"
+    },
+    {
+      "claim_id": "85675f18-9f8b-4c11-870c-01902b6ce892",
+      "result_id": "65474069-42b5-4975-bfa9-c6b544711074"
+    },
+    {
+      "claim_id": "0adad217-4d51-4045-8115-10b9dc0d7e9a",
+      "result_id": "65474069-42b5-4975-bfa9-c6b544711074"
+    },
+    {
+      "claim_id": "0cef38f9-6edc-4c1c-92a8-06f661ad6665",
+      "result_id": "65474069-42b5-4975-bfa9-c6b544711074"
+    },
+    {
+      "claim_id": "2aca532d-a2a1-41a3-ae75-ae5ae77461c8",
+      "result_id": "3015a858-0af0-42ec-8320-3b89e257ee94"
+    },
+    {
+      "claim_id": "6e12b1bf-2eb8-4b60-bf77-7c5cad435de0",
+      "result_id": "3015a858-0af0-42ec-8320-3b89e257ee94"
+    },
+    {
+      "claim_id": "c7e2d204-78d6-4e25-9d17-77ae94eaca1a",
+      "result_id": "3015a858-0af0-42ec-8320-3b89e257ee94"
+    },
+    {
+      "claim_id": "5009dcdf-9a71-4956-8336-5739c4177a32",
+      "result_id": "3015a858-0af0-42ec-8320-3b89e257ee94"
+    },
+    {
+      "claim_id": "51cf7ffd-e37d-4655-91ca-06a0b9ee86d6",
+      "result_id": "3015a858-0af0-42ec-8320-3b89e257ee94"
+    },
+    {
+      "claim_id": "fcab902c-afcc-44c1-a6d9-11dd4dc3a834",
+      "result_id": "3015a858-0af0-42ec-8320-3b89e257ee94"
+    },
+    {
+      "claim_id": "6ba7100a-917e-4f67-8f97-40aad772710d",
+      "result_id": "3015a858-0af0-42ec-8320-3b89e257ee94"
+    },
+    {
+      "claim_id": "c5ad2852-cea1-4da4-800f-3bc82e3841e2",
+      "result_id": "bdcac704-9eb2-4398-90d4-db62e1e95059"
+    },
+    {
+      "claim_id": "b8a094a2-35fa-4e47-a48c-9960a2278afb",
+      "result_id": "bdcac704-9eb2-4398-90d4-db62e1e95059"
+    },
+    {
+      "claim_id": "c136ac38-c8a6-4fb2-bbb4-922906a8e15e",
+      "result_id": "4a3973eb-a89f-4800-bb50-03b734eb150c"
+    },
+    {
+      "claim_id": "d4d6a712-4903-4422-8504-ec9ffd7ff30c",
+      "result_id": "4a3973eb-a89f-4800-bb50-03b734eb150c"
+    },
+    {
+      "claim_id": "6bc66466-5b85-48e6-9611-d3230f1e84af",
+      "result_id": "ce69da23-1f7e-4cd5-ac31-7f406cad9132"
+    },
+    {
+      "claim_id": "b1595fa2-d604-4203-8480-05dee81340bb",
+      "result_id": "69e7f07e-e7bf-47b4-8a91-03a3513f1b0b"
+    },
+    {
+      "claim_id": "1875db32-7b29-4d7e-b965-abcb84929edf",
+      "result_id": "69e7f07e-e7bf-47b4-8a91-03a3513f1b0b"
+    },
+    {
+      "claim_id": "dfb724f0-2b89-4cc2-9a2f-ceda876a507f",
+      "result_id": "63531e3c-b7b6-414c-bc9d-40bb73b04163"
+    },
+    {
+      "claim_id": "c3c80c3d-55bb-48da-a079-3ae34d6435d5",
+      "result_id": "fc93dd38-8f02-4c5f-8ea1-6776f58a133c"
+    },
+    {
+      "claim_id": "ad01ff7c-e89f-421b-b997-35b8f16db92b",
+      "result_id": "60570399-093f-4ea8-a97b-1ee47bb25309"
+    },
+    {
+      "claim_id": "87da8eaa-94f2-4a06-9b56-ee85bd5a5d3c",
+      "result_id": "60570399-093f-4ea8-a97b-1ee47bb25309"
+    },
+    {
+      "claim_id": "5009dcdf-9a71-4956-8336-5739c4177a32",
+      "result_id": "60570399-093f-4ea8-a97b-1ee47bb25309"
+    },
+    {
+      "claim_id": "398a2ccd-f672-460e-af59-dfe492dbb6eb",
+      "result_id": "e553e0dd-c916-4288-b6b2-baad87e1913c"
+    },
+    {
+      "claim_id": "1c87ce30-f042-4f30-b03a-3fc165c2ee7b",
+      "result_id": "e553e0dd-c916-4288-b6b2-baad87e1913c"
+    },
+    {
+      "claim_id": "0434f622-ea2e-4303-9439-4f2ac807f573",
+      "result_id": "30334cbe-2b4c-4074-9311-b27653b4dce7"
+    },
+    {
+      "claim_id": "4cf2bbb8-da80-4945-a565-dbc29d947232",
+      "result_id": "30334cbe-2b4c-4074-9311-b27653b4dce7"
+    },
+    {
+      "claim_id": "ca075405-3cec-47bc-a5f4-25f6a4f5b19c",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "cedbd233-190a-477e-a18e-28593fc831ef",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "e28cce84-2c6f-4239-9866-464a3d83cd36",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "d5930f33-45bc-490a-acf5-7d6f9d15150a",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "e537fe09-4c8f-4820-b6ba-9fd20a1fecaf",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "17c1efc1-c2e1-43e2-b5d6-790763156365",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "9f780a81-5c18-403f-bf28-f32034025b04",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "8470b98f-e697-41b2-8691-4223eec0df4e",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "2e626c3a-1e3b-4942-b7fd-a124b3f27aee",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "a49a5b29-ffd1-4c3a-b571-65e0908e5a34",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "15bc3ed8-3301-4db3-8875-e4ceb957e7f0",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "6c50af62-9016-4c45-9f5d-06e7f295fe58",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "ba5254b5-491b-4813-9831-86f1eeead196",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "6390e785-b9eb-4421-a8b4-6c11cb85c4ed",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "0e7e0634-ea20-4d14-b78c-0a0d23bc10f6",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "c43cdd6c-e770-45dd-9ce7-7309c4294b8c",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "646b5091-1e3c-44bb-a7b2-f68f74139b20",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "e811978b-4104-4ff7-a9fb-d6818056e840",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "74cfa3bb-95da-4b1a-922b-66f9022a245b",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "d9bec70d-e37b-4d28-bc3e-74cdbaaf6460",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "f98abe26-b71e-4890-acd6-c02fc433b421",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "75d136e2-9210-4979-905c-9c7f0c0e7cd0",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "96dccef6-c8eb-4d9c-a43d-9f8dd295f101",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "7ef70e7a-e4f4-4635-8122-bcfdd04bddd4",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "cafa601f-0f63-44ca-bcd4-445f84e62fef",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "53f7f799-8642-40c7-a832-89a40dfe4f0a",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "8e21baf4-9934-4bd8-943d-824a015a6a3a",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "08437001-beb6-4f48-91a5-e3a20348b418",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "33f307f0-0ff2-48c6-8b57-9c14f8c3257e",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "c2724411-bdfe-41ac-8912-49d1995c0e39",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "b576d731-0fc7-4ef2-b8cc-4611135e81a5",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "6528d54b-4504-4a52-a690-fc604f0c0544",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "84d50fe3-9436-4bbb-8c35-919f0316ccea",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "29e50e99-fcfe-4e7b-a2b2-694f0068520d",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "b264b3b9-d5ff-429f-b83c-b63588f80439",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "dcc0a509-0357-47d6-b420-0600e6cb075f",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "0230ed94-107f-4360-a415-83001a6dae26",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "e40f17d8-7dc5-4e32-8635-9ca7707072eb",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    },
+    {
+      "claim_id": "a8389730-8d02-4798-bc15-80b2f53594e2",
+      "result_id": "0f9fda6c-0e03-4be9-adcd-56b708a2e06e"
+    }
+  ],
+  "comparisons": []
+}

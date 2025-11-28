@@ -1,0 +1,2329 @@
+{
+  "submission": {
+    "id": "e33b3f07-75e2-4d4e-9724-646afd383039",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:20:41.265083Z",
+    "updated_at": "2025-11-28T22:20:41.265083Z"
+  },
+  "content": [
+    {
+      "id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "submission_id": "e33b3f07-75e2-4d4e-9724-646afd383039",
+      "content_type": "manuscript",
+      "content_text": "# Controlling fertilization and cAMP signaling in sperm by optogenetics\n\n## Authors\n\n- Vera Jansen<sup>1</sup>\n- Luis Alvarez<sup>1</sup>\n- Melanie Balbach<sup>1</sup>\n- Timo Str\u00fcnker<sup>1</sup>\n- Peter Hegemann<sup>3</sup>\n- U Benjamin Kaupp<sup>1</sup> \u2020\n- Dagmar Wachten<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Sensory Systems Center of Advanced European Studies and Research Bonn Germany\n2. Minerva Research Group Molecular Physiology Center of Advanced European Studies and Research Bonn Germany\n3. Institute of Biology, Experimental Biophysics Humboldt University of Berlin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nOptogenetics is a powerful technique to control cellular activity by light. The light-gated Channelrhodopsin has been widely used to study and manipulate neuronal activity in vivo, whereas optogenetic control of second messengers in vivo has not been examined in depth. In this study, we present a transgenic mouse model expressing a photoactivated adenylyl cyclase (bPAC) in sperm. In transgenic sperm, bPAC mimics the action of the endogenous soluble adenylyl cyclase (SACY) that is required for motility and fertilization: light-stimulation rapidly elevates cAMP, accelerates the flagellar beat, and, thereby, changes swimming behavior of sperm. Furthermore, bPAC replaces endogenous adenylyl cyclase activity. In mutant sperm lacking the bicarbonate-stimulated SACY activity, bPAC restored motility after light-stimulation and, thereby, enabled sperm to fertilize oocytes in vitro. We show that optogenetic control of cAMP in vivo allows to non-invasively study cAMP signaling, to control behaviors of single cells, and to restore a fundamental biological process such as fertilization.\n\n## Introduction\n\nAlmost every eukaryotic cell contains a specialized surface protrusion called the primary cilium (Singla and Reiter, 2006). Primary cilia serve as sensory antennae that register physical and chemical cues from the environment. Cilia are not only involved in for example, mechano-, chemo-, and photo-sensation but also in embryonic and neuronal development (Praetorius and Spring 2001; Singla and Reiter, 2006; Insinna and Besharse, 2008; Goetz and Anderson, 2010; Satir et al., 2010). Motile cilia, also called flagella, are used both as sensory antenna and motors that move fluids or propel cells (Salathe, 2007; Bloodgood, 2010; Lindemann and Lesich, 2010; Pichlo et al., 2014). Signaling in cilia and flagella is tightly regulated, spatially confined, and relies on a cilia-specific transport machinery (Rosenbaum and Witman, 2002; Delling et al., 2013; Chung et al., 2014; Pichlo et al., 2014).\n\nCyclic nucleotide-dependent signaling plays a central role in both primary and motile cilia. In ciliary structures of olfactory neurons and photoreceptors, it regulates chemosensation and photoreception, respectively (Johnson and Leroux, 2010). In cilia of endothelial and mesenchymal cells, cAMP signaling controls cilia length in response to extracellular stimuli (Besschetnova et al., 2010). Defects in cilia of the renal epithelium cause polycystic kidney disease (Pazour et al., 2000). During embryonic development, ciliary cAMP signaling is involved in neural tube development by regulating the Sonic hedgehog (Shh) pathway (Mukhopadhyay et al., 2013).\n\nA case in point for the importance of cAMP signaling in flagella is the mammalian sperm cell. Cyclic AMP signaling is essential for sperm development, motility, and maturation in the female genital tract (Visconti et al., 1995b; Wennemuth et al., 2003; Kr\u00e4hling et al., 2013). However, the underlying signaling pathways are not well understood. CRIS, a cAMP-binding protein, controls spermatogenesis and sperm motility (Kr\u00e4hling et al., 2013). An increase in bicarbonate (HCO3\u2212) during the transit from the epididymis to the female genital tract activates a soluble adenylyl cyclase (SACY) and, thereby, accelerates the flagellar beat and enhances progressive sperm motility (Esposito et al., 2004; Xie et al., 2006). HCO3\u2212-induced cAMP synthesis by SACY stimulates protein kinase A (PKA) (Wennemuth et al., 2003; Nolan et al., 2004) and controls capacitation, a maturation process of sperm in the female genital tract that is essential for fertilization (Chang, 1951; Austin, 1952). Acceleration of the flagellar beat and capacitation proceed on quite different time scales: the beat frequency increases within seconds, whereas PKA-dependent tyrosine phosphorylation, a hallmark of sperm capacitation, takes about an hour to become noticeable (Visconti et al., 1995a).\n\nThe study of cAMP-dependent signaling pathways in mammalian sperm is further complicated by an ill-defined interplay between cAMP and Ca2+ signaling; for example, Ca2+ controls SACY activity (Carlson et al., 2007) and cAMP reportedly evokes a Ca2+ influx (Kobori et al., 2000; Ren et al., 2001; Xia et al., 2007; Wertheimer et al., 2013). Previous attempts to delineate these signaling pathways relied on common pharmacological tools: membrane-permeable cAMP analogs and modulators of cAMP signaling components (Kobori et al., 2000; Xia et al., 2007; Wertheimer et al., 2013). Recent studies in human sperm, however, refute that cAMP controls [Ca2+]i (Str\u00fcnker et al., 2011) and disclose serious shortcomings of these pharmacological tools that directly act on the sperm Ca2+ channel CatSper and, thereby, artifactually change Ca2+ levels (Brenker et al., 2012). In mice, however, it is equivocal whether cAMP indeed evokes a Ca2+ signal. Therefore, it is required to study the interconnection of cAMP and Ca2+ signaling in mouse sperm by novel, non-invasive techniques.\n\nOptogenetics is a powerful tool to spatially and temporally control second messenger-dependent signaling, uncompromised by pharmacological side effects. To this end, we present here a transgenic mouse model expressing the photoactivated adenylyl cyclase bPAC (Ryu et al., 2010; Stierl et al., 2011) to manipulate cAMP levels in sperm and, thereby, control sperm motility by light. We show that bPAC mimics the action of HCO3\u2212 in sperm. Furthermore, bPAC functionally replaces the endogenous SACY activity and remedies cAMP signaling defects, demonstrating that in vitro, fertility can be restored by optogenetics. Finally, an increase of cAMP levels by light does not elevate Ca2+ levels in sperm. Thus, the Prm1-bPAC mouse model is a powerful tool to analyze cAMP-dependent signaling in ciliary structures with high spatio-temporal resolution uncompromised by pharmacological artifacts.\n\n## Results\n\n### Generation of Prm1-bPAC transgenic mice\n\nWe engineered a targeting vector to express the beta subunit of photo activated adenylyl cyclase from the soil bacterium Beggiatoa (bPAC) under the control of the protamine 1 promoter (Prm1, Figure 1A) that is exclusively active in post-meiotic spermatids (Zambrowicz et al., 1993). Transgenic mice were generated by pronuclear injection using standard procedures (Ittner and G\u00f6tz, 2007). Genomic insertion of the transgene was confirmed by PCR (Figure 1B). Protein expression of bPAC in testis lysates varied between different founder lines (Figure 1C). This variation in transgene expression reflects differences in integration site and/or copy number. For further analysis, founder lines 1 and 5 were chosen due to stable inheritance of the transgene to the next generation. The bPAC protein was exclusively expressed in sperm (Figure 1D\u2013F). Prm1-bPAC males were fertile and did not show any defects during spermatogenesis, demonstrating that bPAC expression does not affect sperm development or function (Figure 1\u2014source data 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05161/elife-05161-fig1-v1.jpg)\n\n**Figure 1.:** (A) Scheme of the Prm1-bPAC targeting vector. Expression of hemagglutinin (HA)-tagged bPAC is driven by the protamine 1 promoter (Prm1); arrows indicate the position of genotyping primers. (B) Genotyping by PCR. In Prm1-bPAC mice, a 213-bp fragment is amplified. The targeting vector served as a positive control (+). (C) Western blot analyzing bPAC-HA expression in testis lysates from different founder lines. Lysates from HEK cells expressing bPAC-HA served as positive control (+), wild-type testis lysates as negative control (\u2212). (D) Western blot analyzing bPAC-HA expression in tissue lysates from male and female Prm1-bPAC mice. (E) Western blot analyzing bPAC-HA expression in testis and sperm. (F) Immunohistochemical analysis of bPAC-HA expression (left panel: transmission, right panel: fluorescence). Pictures at the bottom show a higher magnification (see white box). Sperm flagella are indicated (arrow). Cryosections of mouse testis were probed with anti-HA antibody and fluorescent secondary antibody (green), DNA was stained with DAPI (blue). Loading control for Western blots: \u03b2-tubulin.\n\n### Control of sperm cAMP levels and motility by light\n\nTo scrutinize whether bPAC allows optogenetic control of sperm cAMP signaling, we determined cAMP levels in whole sperm before and after light stimulation. Basal cAMP levels in bPAC sperm were slightly enhanced (bPAC: 15.3 \u00b1 3.6 fmol/105 sperm versus wild-type: 10.0 \u00b1 4.4 fmol/105 sperm; Figure 2A), which might be due to basal bPAC activity (Stierl et al., 2011). In wild-type sperm, light stimulation did not alter cAMP levels, whereas in bPAC sperm, cAMP levels increased by about 2.5-fold (Figure 2A). During continuous light stimulation, cAMP levels reached a maximum within 2 min (Figure 2B); after switching off the light, cAMP returned to baseline within 10 min (Figure 2B). The light-induced cAMP increase was similar to the HCO3\u2212-induced cAMP increase (Figure 2A), indicating that activation of bPAC mimics the activation of SACY by HCO3\u2212.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05161/elife-05161-fig2-v1.jpg)\n\n**Figure 2.:** (A) Light stimulation of bPAC sperm for 10 min increases cAMP levels. Stimulation of SACY activity with HCO3\u2212 (1 min) evokes the same response in wild-type and bPAC sperm. (B) cAMP levels in bPAC sperm during prolonged light stimulation and after switching off the light. (C) Western blot analyzing SACY and PKA expression in wild-type and bPAC sperm. (D) Phosphorylation of PKA targets in wild-type and bPAC sperm detected with an anti-phospho-(Ser/Thr) PKA substrate antibody (p-PKA). Wild-type sperm were stimulated with 25 mM HCO3\u2212, bPAC sperm with HCO3\u2212 or light. (E) db-cAMP- (1 mM) and HCO3\u2212-induced tyrosine phosphorylation in wild-type and bPAC sperm detected with an anti-phospho-tyrosine antibody (pY). (F) Acrosome-reaction assay. Percentage of sperm that has undergone the acrosome reaction under non-capacitating conditions (no HCO3\u2212) before and after light-stimulation and under capacitating conditions (25 mM HCO3\u2212). (G) Basal flagellar beat frequency in wild-type and bPAC sperm (individual values and mean \u00b1 s.d.). (H, I) Light-induced change in flagellar beat frequency of individual bPAC sperm. (J) Average change in flagellar beat frequency after light stimulation. (K) Change in flagellar beat frequency of bPAC sperm after global or local light stimulation of the flagellum for 100 ms; see also Video 3 and 4. Data are plotted as mean \u00b1 s.d.; (n) = number of experiments, n \u2265 5 if not stated otherwise; p values calculated using Student's t test. Loading control for Western blots: \u03b2-tubulin.\n\nNext, we studied whether bPAC expression interferes with cellular events controlled by cAMP, such as capacitation. Sperm are capacitated in vitro by incubation with a cholesterol acceptor (e.g., serum albumin) and HCO3\u2212 to stimulate cAMP synthesis via SACY (Visconti et al., 1995a; Xie et al., 2006). cAMP in turn activates PKA, the principal cAMP target in sperm. PKA activation indirectly promotes tyrosine phosphorylation of a subset of proteins, which is considered to be a hallmark of capacitation (Visconti et al., 1995a; Nolan et al., 2004).\n\nThe presence of bPAC did not affect SACY expression level (Figure 2C), consistent with the observation that HCO3\u2212-stimulated cAMP synthesis is similar in wild-type and bPAC sperm (Figure 2A). The expression level of PKA also remained unchanged in bPAC sperm (Figure 2C). The phosphorylation of PKA targets under non-stimulated conditions was also not majorly different in bPAC sperm compared to wild-type sperm (Figure 2D). Furthermore, stimulation of bPAC sperm with either light or HCO3\u2212 both evoked phosphorylation of PKA targets (Figure 2D). Finally, we analyzed whether the capacitation-associated phosphorylation of tyrosine residues was altered: incubation with HCO3\u2212 or the cAMP analog dibutyryl-cAMP (db-cAMP) enhanced tyrosine phosphorylation to a similar extent in wild-type and bPAC sperm (Figure 2E). In summary, bPAC expression does not interfere with known cAMP-signaling events in sperm.\n\nNext, we studied whether a cAMP increase evoked by light-stimulation of bPAC results in sperm capacitation. As a functional read-out for sperm capacitation, we used an acrosome-reaction assay (Figure 2F). Under non-capacitating conditions (without HCO3\u2212) in the dark, the percentage of sperm undergoing the acrosome reaction was similar between wild-type and bPAC sperm (wild-type: 34.1% versus bPAC: 41.7%; Figure 2F). After light-stimulation, the number of sperm undergoing the acrosome reaction changed dramatically for bPAC sperm but remained unchanged for wild-type sperm (wild-type: 38.4% bPAC: 70.5%; Figure 2F). This demonstrates that a light-stimulated increase in cAMP levels results in sperm capacitation and that bPAC functionally mimics the activation of SACY by HCO3\u2212.\n\nIn mammalian sperm, cAMP controls the flagellar beat (Wennemuth et al., 2003; Esposito et al., 2004; Nolan et al., 2004). The basal beat frequency of bPAC sperm was slightly lower compared to wild-type sperm (5.5 \u00b1 2.5 Hz versus 8.0 \u00b1 3.7 Hz; Figure 2G), which might be due to a cAMP-dependent feedback mechanism activated by elevated basal cAMP levels (Burton and McKnight, 2007). Light stimulation of bPAC sperm evoked a transient acceleration of the flagellar beat: a 200-ms light pulse increased the beat frequency within 10 s about 2.5-fold from 7 Hz to 18 Hz (Figure 2H; Videos 1,2). The acceleration persisted for at least 10 s and sperm returned to basal beat frequency within 30 s (Figure 2H). The light-stimulated acceleration of the flagellar beat was dose-dependent: the longer the light exposure, the faster the onset and higher the beat frequency (Figure 2I,J). Local illumination of a small part of the flagellum also enhanced the beat frequency, albeit the increase was smaller and its kinetics slower compared to global illumination (Figure 2K, Videos 3,4). Altogether, we conclude that (1) light activation of bPAC mimics the transient beat acceleration evoked by HCO3\u2212 stimulation of SACY (Wennemuth et al., 2003; Carlson et al., 2007), (2) the behavioral response of single cells can be modulated in a graded fashion, and that (3) bPAC is able to control cAMP signaling in the sperm flagellum with spatial precision.\n\n![Video 1.](https://cdn.elifesciences.org/articles/05161/elife-05161-media1.mp4.jpg)\n\n**Video 1.:** The cell was tethered to the glass surface by lowering the BSA concentration (0.3 mg/ml). The recording was performed using an epifluorescent microscope (IX71; Olympus) equipped with a dark-field condenser and a 10x objective (UPlanFL, NA 0.3; Olympus) and an additional 1.6\u00d7 lenses. Frames were acquired at 200 fps using a CMOS camera (Dimax; PCO). Stimulation with UV light for 200 ms was achieved using a UV LED. For clarity, the video is played with 100 fps (half original speed).\n\n![Video 2.](https://cdn.elifesciences.org/articles/05161/elife-05161-media2.mp4.jpg)\n\n**Video 2.:** The recording was performed as described for Video 1.\n\n![Video 3.](https://cdn.elifesciences.org/articles/05161/elife-05161-media3.mp4.jpg)\n\n**Video 3.:** The recording was performed as described for Video 1 using local illumination of the sperm flagellum for 100 ms; the video is played with 100 fps (half of the original speed). In this setting, the light flash is not visible and is, therefore, visualized with a circle. The analysis of the beat frequency is presented in Figure 2K.\n\n![Video 4.](https://cdn.elifesciences.org/articles/05161/elife-05161-media4.mp4.jpg)\n\n**Video 4.:** Video 3 shown at higher intensity for the frames containing the light flash. This allows to visualize the light flash. The profile of the light flash is indicated in an inset. For clarity, the video speed was reduced to 10% of the frames containing the light flash.\n\n### Light-stimulated cAMP synthesis does not affect intracellular Ca2+ levels\n\nWe tested whether a light-induced increase of cAMP evokes a Ca2+ influx into bPAC sperm. The use of a red-shifted fluorescent Ca2+ indicator enabled us to orthogonalize indicator excitation and bPAC activation (Stierl et al., 2011): after recording basal Ca2+ levels at 520 nm, we repeatedly switched between excitation of the Ca2+ indicator at 520 nm and activation of bPAC at 485 nm; finally, we challenged sperm with 8-Br-cNMPs or db-cAMP while exciting the Ca2+ indicator only (Figure 3A\u2013C). To scrutinize our experimental conditions, we determined sperm cAMP levels before and after activation of bPAC (Figure 3D). We observed that cAMP synthesis via light stimulation of bPAC did not evoke a Ca2+ signal (Figure 3A\u2013D), consistent with the observation that a HCO3\u2212-induced cAMP increase does not affect [Ca2+]i in mouse (Wennemuth et al., 2003; Carlson et al., 2007) and human sperm (Str\u00fcnker et al., 2011). In contrast, 8-Br-cAMP, 8-Br-cGMP, and db-cAMP evoked a Ca2+ signal in wild-type and bPAC sperm (Figure 3A\u2013C,E) that was abolished in CatSper-null sperm (Figure 3F); similar results have been reported by others (Ren et al., 2001; Xia et al., 2007). In human sperm, 8-Br-cNMPs directly activate CatSper via an extracellular site (Brenker et al., 2012). Experiments analyzing the action of 8-Br-cNMPs on membrane currents in mouse sperm yielded inconsistent results (Kirichok et al., 2006; Cisneros-Mejorado et al., 2014). Thus, this effect needs to be addressed by future studies.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05161/elife-05161-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Ca2+ signals induced by 8-Br-cAMP (10 mM; left) and db-cAMP (10 mM; right) in wild-type (A) and bPAC sperm (B) loaded with the fluorescent Ca2+ indicator FluoForte. Arrows indicate the addition of compounds. Light stimulation does not evoke a Ca2+ signal. Signals were measured in 96 multi-well plates in a fluorescence plate reader. (C) Mean signals evoked by light stimulation, cyclic nucleotide analogs, and ionomycin. (D) Illumination according to the protocol in (A, B) stimulates cAMP synthesis in bPAC sperm. Data are plotted as mean \u00b1 s.d.; (n) = number of experiments; p values calculated using Student's t test. (E, F) Ca2+ signals of capacitated sperm induced by cyclic nucleotide analogs (10 mM) in wild-type (E) and CatSper-null (F) sperm loaded with the fluorescent Ca2+ indicator Cal-520 in a stopped-flow device. Inset in (F): ionomycin control (2 \u00b5M).\n\n### Light-stimulated cAMP synthesis restores fertility\n\nThe loss of SACY function abolishes cAMP signaling in sperm, rendering sperm immotile and resulting in male infertility (Esposito et al., 2004; Xie et al., 2006). We explored the potential of optogenetics to compensate for the functional loss of SACY. Removal of extracellular Ca2+ attenuated HCO3\u2212-induced cAMP synthesis by SACY (Figure 4A) (Jaiswal and Conti, 2003; Carlson et al., 2007). Thereby, tyrosine phosphorylation in wild-type and bPAC sperm was largely abolished (Figure 4B). Elevation of basal cAMP levels by the phosphodiesterase inhibitor IBMX restored tyrosine phosphorylation in wild-type sperm (Figure 4A,B). Similarly, in Ca2+-free medium, the light-stimulated increase of cAMP levels restored tyrosine phosphorylation in bPAC sperm (Figure 4A,B), demonstrating that bPAC activation compensates for the loss of SACY activity. Furthermore, we examined whether in sperm lacking functional SACY, bPAC activation can restore motility and the ability to fertilize the egg. To this end, we crossed Prm1-bPAC mice with mice lacking the sperm-specific Na+/H+ exchanger sNHE, encoded by the Slc9a10 gene. Male Slc9a10-null mice are infertile, because their sperm are largely immotile (Wang et al., 2003). In Slc9a10-null mice, the HCO3\u2212-stimulated SACY activity is abolished as well, probably because sNHE and SACY form a functional signaling complex that is disrupted in these mice (Wang et al., 2007). The motility of Slc9a10-null sperm is restored by db-cAMP (Wang et al., 2003); however, db-cAMP not only elevates cAMP levels but also evokes a Ca2+ influx via CatSper (Figure 3E). Thus, we tested whether motility can be restored by solely increasing cAMP levels with light. Sperm were immotile in darkness (Figure 4C, left); light stimulation restored both the flagellar beat and forward motility (Figure 4C, right; Video 5), demonstrating that restoring cAMP levels alone is sufficient to rescue motility. We went one step further and tested whether Slc9a10-null/bPAC sperm also regain their fertilization potential upon light stimulation. Indeed, light-stimulated Slc9a10-null/bPAC sperm were able to fertilize oocytes in vitro (Figure 4D), demonstrating that optogenetics can restore fertility.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05161/elife-05161-fig4-v1.jpg)\n\n**Figure 4.:** (A) Nominally Ca2+-free medium attenuates HCO3\u2212-induced cAMP synthesis by SACY in wild-type and bPAC sperm. Inhibition of phosphodiesterases by IBMX in wild-type sperm and light stimulation in bPAC sperm increases cAMP levels without extracellular Ca2+. Data are plotted as mean \u00b1 s.d.; (n) = number of experiments; p values calculated using Student's t test. (B) In the absence of extracellular Ca2+, HCO3\u2212-induced tyrosine phosphorylation (pY) is strongly attenuated. In bPAC sperm, light stimulation is sufficient to restore tyrosine phosphorylation. (C) Light stimulation restores flagellar beating of Slc9a10-null/bPAC sperm. Flagellar waveform of Slc9a10-null/bPAC sperm before (left) and after light stimulation (right). Successive, aligned, and superimposed images creating a \u2018stop-motion\u2019 image, illustrating one flagellar beating cycle. Scale bar: 30 \u00b5m. (D) Upon light stimulation, Slc9a10-null/bPAC sperm fertilize oocytes in vitro (mean \u00b1 s.d.; (n) = total number of oocytes from three independent experiments).\n\n![Video 5.](https://cdn.elifesciences.org/articles/05161/elife-05161-media5.mp4.jpg)\n\n**Video 5.:** The recording was performed as described for Video 1, but without the additional 1.6\u00d7 magnification, an acquisition frequency of 90 fps, and 500 ms UV stimulation. The video is shown in real time.\n\n## Discussion\n\nIn this study, we report on a transgenic mouse model designed to control cAMP signaling in sperm using optogenetics. We demonstrate that transgenic expression of bPAC in sperm does not interfere with the endogenous HCO3\u2212-stimulated SACY activity. In fact, bPAC mimics the effect of SACY activity: the light-stimulated increase in cAMP levels is similar to that activated by HCO3\u2212 and activation of bPAC increases the flagellar beat frequency in a dose-dependent manner. Thus, the Prm1-bPAC mouse model is an ideal optogenetic tool to study cAMP signaling in sperm.\n\nFurthermore, we show that optogenetics can be used to restore fertility. Sperm from infertile Slc9a10-null mice are devoid of cAMP signaling, because they lack HCO3\u2212-stimulated SACY activity, which is essential for sperm motility (Wang et al., 2003, 2007). Expression of bPAC in Slc9a10-null sperm allowed restoring motility after light stimulation and, most importantly, restoring fertilization in vitro. Of note, in vitro fertilization (IVF) using light-stimulated sperm was successful using zona pellucida-intact oocytes, demonstrating that a cAMP increase, at least in vitro, is sufficient to restore fertility in Slc9a10-null mice. In contrast, incubation of Slc9a10-null sperm with cAMP analogs only restored fertilization of zona pellucida-free but not zona pellucida-intact oocytes (Wang et al., 2003). This discrepancy could be explained by (1) cAMP analogs not reaching sufficiently high levels in sperm, or (2) cAMP analogs being not as efficient as cAMP to stimulate downstream targets, or (3) non-specific effects compromising the interpretation of their action (Brenker et al., 2012). The Prm1-bPAC mouse model holds great promise studying cAMP signaling uncompromised by side effects and allowed us to solve a long-standing controversy by showing that cAMP, in fact, does not stimulate a Ca2+ influx into mouse sperm (Figure 3B). These results demonstrate that optogenetics can disentangle cellular events such as Ca2+ and cAMP signaling in vivo.\n\nNow that we have established the Prm1-bPAC mouse model and demonstrated that it can be used to analyze cAMP signaling in sperm, the next step will be to implement the spatio-temporal precision of this tool to study cAMP signaling in sperm. For example, HCO3\u2212 stimulation evokes a rapid cAMP increase and changes the flagellar beat frequency within seconds. However, PKA-dependent activation of tyrosine phosphorylation is barely detectable within the first hour of HCO3\u2212 incubation (Visconti et al., 1995a). Thus, HCO3\u2212 exhibits short-term and long-term effects and probably controls cellular events in addition to cAMP synthesis via SACY. The Prm1-bPAC mouse model allows deciphering these signaling events, if bPAC expression does not interfere with other signaling pathways.\n\nSignaling molecules in sperm flagella are highly compartmentalized (Chung et al., 2014). The flagellar beat is controlled by cAMP-dependent phosphorylation of PKA targets in the axoneme (Salathe, 2007); however, it is unknown whether cAMP signaling is restricted to microdomains or whether changes in cAMP propagate along the flagellum. Compartmentalization of cAMP signaling confers specificity to this ubiquitous cellular messenger, for example, in cell-cycle progression or modulation of gene expression. (Michel and Scott, 2002; Zaccolo and Pozzan, 2002; Willoughby and Cooper, 2007). Our results show that local illumination of the flagellum of bPAC sperm is sufficient to increase its beat frequency. Optogenetics using bPAC provides the spatial and temporal precision to increase cAMP levels in subcellular regions and specialized signaling compartments such as cilia and flagella, which allows to study complex signaling networks - not only in mammalian sperm but also any other ciliated cell type.\n\nFinally, the optogenetic toolkit has been recently expanded by a light-activated phosphodiesterase (LAPD) that hydrolyses cyclic nucleotides upon stimulation by red light (Gasser et al., 2014). A combination of LAPD and bPAC with fluorescent cAMP biosensors holds great promise to map the dynamics of cAMP signaling in live cells in precise spatio-temporal and quantitative terms. These findings encourage future studies to explore the full potential of controlling cellular messengers by optogenetics.\n\n## Materials and methods\n\n### Generation and genotyping of Prm1-bPAC transgenic mice\n\nThe bPAC cDNA (beta subunit of photo-activated adenylyl cyclase from Beggiatoa sp. PS, BGP_1043; modified for expression in mammalian systems according to Stierl et al. (2011), GU461307) sequence was amplified via PCR. A hemagglutinin (HA) tag was fused to the C terminus, an EcoRI restriction site was added to the 5\u2032 end and a BamHI and XhoI restriction site to the 3\u2032 end by nested PCR. The PCR product was cloned into a pBluescript SK(-) vector (Agilent Technologies, Santa Clara, USA) using EcoRI and XhoI (pB-bPAC). After sequencing, the bPAC-HA insert was excised and cloned into pPrCExV (a kind gift from Robert Braun, Jackson Laboratory) using EcoRI/BamHI. Transgenic mice were generated via pronuclear injection following standard procedures (Ittner and G\u00f6tz, 2007) at the HET animal facility (University Hospital Bonn, Germany). Mice were genotyped by PCR using bPAC-specific primers (see also Figure 1A). Mice used in this study were 2\u20135 months of age. All animal experiments were in accordance with the relevant guidelines and regulations.\n\n### Slc9a10-null mice\n\nSlc9a10-null mice were purchased from the Jackson Laboratory (B6;129S6-Slc9a10tm1Gar/J, stock number: 007661).\n\n### Western blot analysis\n\nFor heterologous expression, HEK293 cells were transfected using Lipofectamine 2000 (Life Technologies, Carlsbad, USA). Lysates were obtained by homogenizing cells or tissues in lysis buffer (10 mM Tris/HCl, pH 7.6, 140 mM NaCl, 1 mM EDTA, 1% Triton X-100, mPIC protease inhibitor cocktail 1:500) followed by trituration through a 18-gauge needle. Samples were incubated for 30 min on ice and centrifuged at 10,000\u00d7g for 5 min at 4\u00b0C. Prior to separation by SDS-PAGE, samples were mixed with 4\u00d7 SDS loading buffer (200 mM Tric/HCl, pH 6.8, 8% SDS (wt/vol), 4% \u03b2-mercaptoethanol (vol/vol), 50% glycerol, 0.04% bromophenol blue) and heated for 5 min at 95\u00b0C. To activate bPAC, sperm samples were illuminated for 90 min in suspension in a reaction tube using a halogen fiber optics illuminator (Olympus, Tokio, Japan). Sperm samples used for SDS-PAGE were washed with 1 ml PBS and sedimented by centrifugation at 5000\u00d7g for 5 min. 1\u20132 \u00d7 106 cells were resuspended in 4\u00d7 SDS loading buffer and heated for 5 min at 95\u00b0C. For Western blot analysis, proteins were transferred onto PVDF membranes (Merck Millipore, Billerica, USA), probed with antibodies, and analysed using a chemiluminescence detection system. For re-probing, membranes were incubated in stripping buffer (62.5 mM Tris/HCl pH 6.7, 2% SDS) for 30 min at 65\u00b0C and washed with PBS before incubation with a new antibody. For the study of protein phosphorylation, sperm were incubated in capacitating buffer containing 25 mM NaHCO3 for 10 min (PKA-dependent phosphorylation) or 90 min (tyrosine kinase-dependent phosphorylation). Similarly, bPAC sperm were illuminated for either 10 or 90 min using a halogen fibre optics illuminator (150 W, Intralux 6000-1; Volpi, Schlieren, Switzerland).\n\nPrimary antibodies: anti-HA 3F10 (1:5000; Roche, Basel, Switzerland), anti-SACY R21 (1:2000; CEP Biotech, Tamarac, USA), anti-phosphotyrosine 4G10 (1:1000; Merck Millipore), anti-PKA[C] 5B (1:4000; BD Transduction Laboratories, San Jose, USA), anti-phospho-PKA substrate (1:1000; Cell Signaling, Danvers, USA), anti-\u03b1-tubulin (1:5000; Sigma-Aldrich, Seelze, Germany); secondary antibodies: goat-anti-rat, HRP conjugated (1:5000, Dianova, Hamburg, Germany), sheep-anti-mouse, HRP conjugated (1:5000, Dianova).\n\n### Immunohistochemistry\n\nTestes were fixed in 4% paraformaldehyde/PBS overnight, cryo-protected in 10 and 30% sucrose, and embedded in Tissue-Tek (Sakura Finetek, Alphen aan den Rijn, Netherlands). To block unspecific binding sites, cryosections (16 \u00b5m) were incubated for 1 hr with blocking buffer (0.5% Triton X-100 and 5% ChemiBLOCKER (Merck Millipore) in 0.1 M phosphate buffer, pH 7.4). The primary anti-HA antibody (rat monoclonal; Roche) was diluted 1:1000 in blocking buffer and incubated for 2 hr. Fluorescent secondary antibodies (donkey anti-rat Alexa488; Dianova) was diluted 1:400 in blocking buffer containing 0.5 mg/ml DAPI (Life Technologies) and pictures were taken on a confocal microscope (FV1000; Olympus).\n\n### Sperm preparation\n\nSperm were isolated by incision of the cauda followed by a swim-out in modified TYH medium (135 mM NaCl, 4.8 mM KCl, 2 mM CaCl2, 1.2 mM KH2PO4, 1 mM MgSO4, 5.6 mM glucose, 0.5 mM sodium pyruvate, 10 mM L-lactate, 10 mM HEPES, pH 7.4). For capacitation, the medium contained 3 mg/ml BSA and 25 mM of the NaCl was substituted with 25 mM NaHCO3. The pH was adjusted at 37\u00b0C. After 15\u201330 min swim-out at 37\u00b0C, sperm were collected and counted. Red light was used during the isolation of bPAC sperm.\n\n### Determination of cAMP content\n\nSperm were adjusted to a concentration of 1.25 \u00d7 107 cells per ml with TYH buffer containing different compounds with the following final concentrations: 25 mM NaHCO3, 1 mM N6,2\u2032-O-dibutyryladenosine-3\u2032,5\u2032-cyclic monophosphate (db-cAMP; Sigma-Aldrich), 0.5 mM IBMX (Sigma-Aldrich). To activate bPAC, sperm samples were illuminated in suspension in a reaction tube using a halogen fiber-optics illuminator (150 W, Intralux 6000-1; Volpi, Schlieren, Switzerland). After stimulation with light or compounds for 1 to 10 min, the reaction was quenched with HClO4 (1:3 (vol/vol); 0.5 M final concentration). Samples were frozen in liquid N2, thawed, and neutralized by addition of K3PO4 (0.24 M final concentration). The salt precipitate and cell debris were sedimented by centrifugation (15 min, 15,000 g, 4\u00b0C). The cAMP content in the supernatant was determined by a competitive immunoassay (Molecular Devices, Sunnyvale, USA), including an acetylation step for higher sensitivity. Calibration curves were obtained by serial dilutions of cAMP standards. 96-well plates were analysed by using a microplate reader (FLUOstar Omega; BMGLabtech, Ortenberg, Germany).\n\n### Analysis of acrosomal exocytosis\n\n1 \u00d7 106 sperm were capacitated in TYH buffer supplemented with 3 mg/ml BSA and 25 mM NaHCO3. Non-capacitated sperm were incubated in BSA buffer only. To induce capacitation by light, sperm were illuminated with a halogen fiber-optics illuminator (150 W, Intralux 6000-1; Volpi) at 37\u00b0C for 90 min. The acrosome reaction was induced by incubating sperm with 2 \u00b5M ionomycin for 10 min, incubation with 1% DMSO served as control. Sperm were collected by centrifugation and resuspended in 100 \u00b5l PBS buffer. Samples were air dried on microscope slides and fixed with 100% ethanol for 30 min at room temperature. For acrosome staining, sperm were labeled with 5 \u03bcg/ml PNA-FITC (L7381, Sigma-Aldrich) and 2 \u03bcg/ml DAPI in PBS for 30 min. Images were acquired using a confocal laser scanning microscope (FV1000; Olympus), a minimum of 600 cells was analyzed per condition.\n\n### Sperm motility analysis\n\nSperm motility was studied in shallow observation chambers (depth 150 \u00b5m). Cells were tethered to the glass surface by adjusting the BSA concentration in the buffer to 0.3 mg/ml. For analysis, cells that had their head attached to the glass surface and that had a free beating flagellum were chosen. Sperm motility was recorded under an inverted microscope (IX71; Olympus) equipped with a dark-field condenser, a 10x objective (UPlanFL, NA 0.3; Olympus), and additional 1.6\u00d7 lenses (16\u00d7 final magnification). The temperature of the microscope incubator (Life Imaging Services, Basel, Switzerland) was adjusted to 37\u00b0C. To obtain sharp images of moving sperm, stroboscopic illumination (2 ms light pulses) was achieved using a red LED (M660L3-C1; Thorlabs, Newton, USA) with a custom-made power supply. The camera and the LED light pulses were synchronized using a function generator (33220A; Agilent). Images were collected at 200 frames per second using a CMOS camera with a pixel size of 11 \u00b5m (Dimax; PCO, Kelheim, Germany). Stimulation of bPAC was achieved using a collimated UV LED (365 nm; \u223c12 mW) coupled to the epifluorescence port of the microscope (M365L2-C1; Thorlabs) and a TTL-controlled custom-made power supply. Irradiation time was set using a TTL pulse generator (UTG100; ELV). For local activation of the flagellum of bPAC sperm, we partially focused the UV-LED onto a 100-\u00b5m diaphragm (Linos Photonik) by detuning its corresponding collimator lens. The diaphragm aperture was then imaged onto the objective focal plane by a plano-convex lens (f = 100 mm; LA1509A, Thorlabs). This resulted in a Gaussian-shaped UV spot (R2 of the fit 0.96) with a 12-\u00b5m width at the focal plane. The total UV-light power delivered was 2.3 mW. Quantification of the flagellar beat was performed using custom-made programs written in MATLAB (MathWorks. Natick, USA). The software can be made available upon request. The program identified the best threshold for binarization followed by a skeleton operation to identify the flagellum. The flagellar beat parameters were determined within a time window of 0.5 s before and after each frame. For frames at the boundaries (the beginning or the end of the video or flanking the UV flash), the time windows were asymmetric but contained the same number of frames. We monitored the angle between the straight line connecting the middle of the flagellum with the sperm head and the axis of symmetry of the cell. This angle varied in a sinusoid-like manner in time. The beat frequency was obtained by fitting a sinus to this wave. For alignment of the flagellar beat envelopes, we used custom-made programs written in LabVIEW. Using defined thresholds, the image was binarized. From a user-defined region-of-interest centred at the cell head, the program determined the location of the head on subsequent frames using a registering procedure. The neck of the cell was identified by applying a mask with the shape of an annulus centred into the sperm head. The annulus had an internal diameter of 16 \u00b5m to cover the sperm head and a 4 \u00b5m longer external diameter, enough to resolve the first pixels of the neck. All frames were then rotated and superimposed with a rotation angle equal to the azimuth of the neck region on a reference system centred at the sperm head. For better visualization, representative datasets were smoothed using Graph Pad Prism 5.02 (factor 20 for global illumination, factor 100 local illumination).\n\n### Measurement of changes in intracellular Ca2+\n\nChanges in [Ca2+]i were recorded using the fluorescent Ca2+ indicators Cal-520, AM (AAT Bioquest, Sunnyvale, USA) and FluoForte (ENZO Life Sciences, L\u00f6rrach, Germany) in 96 multi-well plates in a fluorescence plate reader (Fluostar Omega; BMGLabtech) and in a rapid-mixing device in the stopped-flow mode (SFM400; Bio-Logic, Claix, France). For Ca2+ measurements in the plate reader, sperm were loaded with FluoForte (20 \u00b5M) in the presence of Pluronic F-127 (0.02% vol/vol) at 37\u00b0C for 45 min. After incubation, excess dye was removed by three centrifugation steps (700\u00d7g, 7 min, room temperature). The pellet was resuspended in TYH and equilibrated for 5 min at 37\u00b0C. Each well was filled with 100 \u00b5l (106 sperm ml\u22121) of the sperm suspension. To record changes in [Ca2+]i upon activation of bPAC, samples were alternately excited at 485 nm and 520 nm. As a control, fluorescence was recorded before and after the addition of 10 \u00b5l of different compounds to the final concentration of 10 mM (db-cAMP, 8-Bromo-cAMP, 8-Bromo-cGMP; Sigma-Aldrich). Changes in fluorescence are depicted as \u0394F/F0 (%), indicating the percentage change in fluorescence (\u0394F) with respect to the mean basal fluorescence (F0) before application of buffer or compounds.\n\nTo record changes in [Ca2+]i in a rapid-mixing device (SFM-400; Bio-Logic) in the stopped-flow mode, sperm were loaded with Cal-520 (5 \u03bcM) as described above for FluoForte. Changes in [Ca2+]i were measured as previously described (Str\u00fcnker et al., 2011) with minor modifications. In brief, the sperm suspension (5 \u00d7 106 sperm/ml) was rapidly mixed 1:1 (vol/vol) with the respective stimulants at a flow rate of 0.5 ml/s. Fluorescence was excited by a SpectraX Light Engine (Lumencor, Beaverton, USA), whose intensity was modulated with a frequency of 10 kHz. The excitation light was passed through a BrightLine 475/28 nm filter (Semrock, Rochester, USA) onto the cuvette. Emission light was passed through a BrightLine 536/40 filter (Semrock) and recorded by photomultiplier modules (H10723-20; Hamamatsu Photonics). The signal was amplified and filtered through a lock-in amplifier (7230 DualPhase; Ametek, Paoli, USA). Data acquisition was performed with a data acquisition pad (PCI-6221; National Instruments. Austin, USA) and Bio-Kine software v. 4.49 (Bio-Logic). Ca2+ signals are depicted as the percent change in fluorescence (\u0394F) with respect to the mean of the first three data points recorded immediately after mixing (F0), that is, when a stable fluorescence signal was observed. The control (buffer) \u0394F/F0 signal was subtracted from compound-induced signals.\n\n### In vitro fertilization\n\nSuperovulation in females was induced by intraperitoneal injection of 10 I.U. Intergonan (SimposiumVet, Lisbon, Portugal) 3 days before the experiment. 14 hours before oocyte preparation, mice were injected with 10 I.U. Ovogest (SimposiumVet). KSOM medium (EmbryoMax Modified M16 Medium; Merck Millipore) was mixed 1:1 with mineral oil (Sigma-Aldrich) and equilibrated overnight at 37\u00b0C. On the day of preparation, 100 \u00b5l drops of KSOM medium were covered with the medium/oil mixture and 100,000 sperm were added to each drop. Sperm were capacitated for 90 min in TYH medium supplemented as indicated above. For stimulation of bPAC, the medium contained no HCO3\u2212 and reaction tubes containing sperm were placed in a custom-made rack equipped with blue LEDs for 90 min. Cumulus-enclosed oocytes were prepared from the oviducts of superovulated females and added to the drops. After 4 hr at 37\u00b0C and 5% CO2, oocytes were transferred to fresh KSOM medium. The number of 2-cell stages was evaluated after 24 hr.\n",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "0364ba52-6913-4dbf-9a7e-18c77c3ec41a",
+      "submission_id": "e33b3f07-75e2-4d4e-9724-646afd383039",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David E Clapham, Howard Hughes Medical Institute, Boston Children's Hospital , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05161.013](https://doi.org/10.7554/eLife.05161.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cControlling fertilization and cAMP signaling in sperm flagella by optogenetics\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, David Clapham as a guest Reviewing editor, and two peer reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe full reviewers comments are shown at the end of this letter, but the points for revision boil down to the following:\n\n1) You need to more convincingly show that light stimulation in the imaging experiments induces a significant [cAMP] increase in the sperm principal piece.\n\n2) You need to show that cAMP/cGMP analogs activate ICatSper in mouse sperm. You state: \u201cHowever, these analogues failed to induce a Ca2+ influx in CatSper-null sperm (Figure 3F) (Ren et al, 2001), indicating that analogues of cyclic nucleotides, like in human sperm, nonspecifically activate also mouse CatSper. These results solve a long-standing controversy concerning the interconnection of cAMP and Ca2+ influx in mammalian sperm.\u201d You assume that 8-Br-cAMP/cGMP also activates ICatSper in mouse sperm, \u201clike in human sperm\u201d. Although not referenced in this sentence, the authors are presumably referring to their previous paper (EMBOJ, 2012, 31,1654-1665, Figure 8) where high concentration (5 mM) 8-Br-cGMP enhanced a monovalent ICatSper-like current by \u223c 2 fold. Such a small change at this high dose is difficult to interpret. In the Kirichok et al. paper (Nature, 2006, 439: 737-740), 8-Br-cAMP was tested on mouse sperm, and there was no ICatSper activation. Thus, if you wish to support this statement, you could record mouse ICatSper changes with 8Br-cAMP and show that 8-Br-cAMP activation is nonspecific, perhaps by showing a dose response curve, comparing inside and outside perfusion of the analog, etc.\n\nAlternatively, for both points, you could refrain from overextending your conclusions and simply state the points you have definitively shown. This would require removing the comments quoted above and alike comments in the discussion, and state without exaggeration the merits and current limitations of the experiments. This is an important new tool, and it is best to accurately state what is, and is not, possible to conclude. Further refinement of the indicator, or other indicators may enable you to definitively address these points in the future.\n\nReviewer #1:\n\nIn this manuscript, Jansen et al. made a transgenic mouse line expressing a bacterial photoactivated adenylyl cyclase (bPAC) in testis and sperm. bPAC was previously developed and tested by the Hegemann group in Xenopus oocytes and cultured neurons; this paper reports the first use of bPAC in whole animals. Light stimulation in the transgenic sperm is able to increase cAMP concentration, leads to the acrosome reaction and triggers sperm tail beating. In addition, light stimulation also rescues the fertililization deficiency in the sNHE (a sperm-specific putative Na+/H+ exchanger) knockout sperm.\n\nThe tool developed in the paper allowed the authors to directly test the function of cAMP. Previous experiments relied on the addition of bicarbonate, exogenously applied cell-permeable cAMP or cAMP UV-uncaging, which can be somewhat indirect. The results from the paper largely confirmed previous findings: cAMP is important for all the major sperm physiology including capacitation, motility and fertilization. One apparently surprising finding is that light stimulation does not lead to obvious increase of intracellular Ca2+ concentration.\n\nThe experiments in the paper are well designed and the data is convincing. This is the first reported optogenetic tool applied to sperm physiology. The tool will allow cAMP signaling studies with high temporal and spatial resolution in the future.\n\nThe only major comment I have is on the conclusion that cAMP does not induce Ca2+ influx ([Ca2+]i increase) in sperm, which is apparently at odd with various previous studies with \u201cindirect\u201d methods. While the finding in Figure 3B and C, that light stimulation does not lead to detectable change in \u0394 F/F, is consistent with the idea that cAMP doesn't cause Ca2+ influx, there can be other interpretations to the data. For example, the light-induced [cAMP] increase is relatively moderate (\u223c2 to 4 fold) and is comparable to that induced by HCO3 (Figure 2A). Earlier studies by Babcock and colleagues (e.g. Wennemuth, JBC, 2000) showed that large detectable HCO3- induced [Ca2+] increases were obvious only when combined with K8.6 stimulus (higher [K+] with alkali bath). It is possible that at the level achieved by light stimulation in the current study, cAMP requires other co-stimuli to induce Ca2+ influx. Another possibility, perhaps even more likely, is that the 2-4 fold [cAMP] increase, which is measured from whole, is largely from sperm head (because of its overwhelmingly larger volume) but little from sperm principal piece where the Ca2+ influx channels are localized. The experiments in the paper do not show whether there is [cAMP] increase in sperm tail upon light stimulation. The geometry of the sperm midpiece and the filled mitochondria perhaps are significant barriers for cAMP diffusion from sperm head to tail.\n\nReviewer #2:\n\nThis paper describes a novel animal model featuring expression of the light-activated adenylyl cyclase bPAC exclusively in sperm. The authors present exciting data showing rapid changes in flagellar beat in live sperm upon stimulation of bPAC, and that light can serve as a surrogate for other stimuli believed to elevate cAMP in sperm such as HCO3- treatment. The changes in flagellar beat also provide a useful (albeit indirect) readout of the temporal features of illumination-dependent cAMP production by bPAC.\n\nThis optogenetic tool will provide a fantastic opportunity to clarify the role of compartmentalized cAMP signaling in sperm motility, maturation and fertilization. The animal model is well-validated (Figure 1), and bPAC expression does not alter expression of other cAMP signaling proteins and pathways (Figure 2). While expression of bPAC did not alter PKA phosphorylation per se (Figure 2D), it would have been nice to see that illumination could also produce sufficient cAMP to stimulate phosphorylation of PKA targets. If the authors could produce such a figure, it would strengthen the paper.\n\nIn Figure 3, the authors confirm previous findings that cyclic nucleotide analogs (10 mM 8Br-cAMP and 10mM db-cAMP) caused Ca2+ entry into the sperm via CatSper, but light stimulation of bPAC did not cause this Ca2+ entry. Is another possible interpretation of this result simply that the illumination of bPAC didn't cause sufficient intracellular cAMP production to influence CatSper? On the other hand, the concentration of cAMP analogs in the present study is much higher than would typically be used in most other cell types to activate cAMP targets. Is this concentration comparable to what was used previously in other studies that examined the effects of cAMP analogs on calcium entry? What was the concentration of db-cAMP used in Figure 2E (cAMP-dependent tyrosine phosphorylation)?\n",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "42351a3d-6261-4807-ac3a-0d3cc8ba0355",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C1",
+      "claim": "Channelrhodopsin has been widely used to study and manipulate neuronal activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The light-gated Channelrhodopsin has been widely used to study and manipulate neuronal activity in vivo, whereas optogenetic control of second messengers in vivo has not been examined in depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "6e9f5af6-cb2f-431f-8113-b3502118653f",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C2",
+      "claim": "Optogenetic control of second messengers in vivo has not been examined in depth.",
+      "claim_type": "EXPLICIT",
+      "source": "The light-gated Channelrhodopsin has been widely used to study and manipulate neuronal activity in vivo, whereas optogenetic control of second messengers in vivo has not been examined in depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "0e2458e5-e314-41d0-a22a-f9ea5a7eceb4",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C3",
+      "claim": "A transgenic mouse model expressing photoactivated adenylyl cyclase (bPAC) in sperm has been created.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we present a transgenic mouse model expressing a photoactivated adenylyl cyclase (bPAC) in sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The creation of the transgenic mouse model is described in the abstract and detailed in the Results section with supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "60f22913-5202-457d-904b-d2e875b34ad5",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C4",
+      "claim": "In transgenic sperm, bPAC mimics the action of the endogenous soluble adenylyl cyclase (SACY) that is required for motility and fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In transgenic sperm, bPAC mimics the action of the endogenous soluble adenylyl cyclase (SACY) that is required for motility and fertilization: light-stimulation rapidly elevates cAMP, accelerates the flagellar beat, and, thereby, changes swimming behavior of sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 2 and 4 showing cAMP elevation and motility changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "87206c9c-6767-4e72-9d01-473a978579a8",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C5",
+      "claim": "Light-stimulation of bPAC rapidly elevates cAMP in sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "In transgenic sperm, bPAC mimics the action of the endogenous soluble adenylyl cyclase (SACY) that is required for motility and fertilization: light-stimulation rapidly elevates cAMP, accelerates the flagellar beat, and, thereby, changes swimming behavior of sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by cAMP measurements shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "38d9e741-1ac8-4355-a1e4-19142811d760",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C6",
+      "claim": "Light-stimulation of bPAC accelerates the flagellar beat in sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "In transgenic sperm, bPAC mimics the action of the endogenous soluble adenylyl cyclase (SACY) that is required for motility and fertilization: light-stimulation rapidly elevates cAMP, accelerates the flagellar beat, and, thereby, changes swimming behavior of sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2H-K showing beat frequency changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "81e55e55-8531-4cfa-8e62-e88005f4f4a3",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C7",
+      "claim": "Light-stimulation of bPAC changes swimming behavior of sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "In transgenic sperm, bPAC mimics the action of the endogenous soluble adenylyl cyclase (SACY) that is required for motility and fertilization: light-stimulation rapidly elevates cAMP, accelerates the flagellar beat, and, thereby, changes swimming behavior of sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by videos and motility analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "8a9a58ec-e0de-4349-81f5-27ed1611b46c",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C8",
+      "claim": "bPAC replaces endogenous adenylyl cyclase activity in mutant sperm lacking bicarbonate-stimulated SACY activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bPAC replaces endogenous adenylyl cyclase activity. In mutant sperm lacking the bicarbonate-stimulated SACY activity, bPAC restored motility after light-stimulation and, thereby, enabled sperm to fertilize oocytes in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments with Slc9a10-null/bPAC sperm shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "4fa58e15-7414-4d3b-9492-94fc6ae46f21",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C9",
+      "claim": "bPAC restored motility after light-stimulation in mutant sperm lacking bicarbonate-stimulated SACY activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In mutant sperm lacking the bicarbonate-stimulated SACY activity, bPAC restored motility after light-stimulation and, thereby, enabled sperm to fertilize oocytes in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4C and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "87597109-0368-4440-bced-718b524f1c9f",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C10",
+      "claim": "bPAC enabled mutant sperm lacking bicarbonate-stimulated SACY activity to fertilize oocytes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In mutant sperm lacking the bicarbonate-stimulated SACY activity, bPAC restored motility after light-stimulation and, thereby, enabled sperm to fertilize oocytes in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vitro fertilization data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "a903c9a3-4412-4f39-bcfa-ed028ce86cca",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C11",
+      "claim": "Almost every eukaryotic cell contains a specialized surface protrusion called the primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost every eukaryotic cell contains a specialized surface protrusion called the primary cilium (Singla and Reiter, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Singla and Reiter, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "64cdda07-28a7-41d6-a290-3bd41d24b7b9",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C12",
+      "claim": "Primary cilia serve as sensory antennae that register physical and chemical cues from the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cilia serve as sensory antennae that register physical and chemical cues from the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "710786b9-3ef8-4bd3-996d-55582bbd5267",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C13",
+      "claim": "Cilia are involved in mechano-, chemo-, and photo-sensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia are not only involved in for example, mechano-, chemo-, and photo-sensation but also in embryonic and neuronal development (Praetorius and Spring 2001; Singla and Reiter, 2006; Insinna and Besharse, 2008; Goetz and Anderson, 2010; Satir et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "f880d1bf-df2d-466c-a8c1-a30b06e483f5",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C14",
+      "claim": "Cilia are involved in embryonic and neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia are not only involved in for example, mechano-, chemo-, and photo-sensation but also in embryonic and neuronal development (Praetorius and Spring 2001; Singla and Reiter, 2006; Insinna and Besharse, 2008; Goetz and Anderson, 2010; Satir et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "e93d0fa2-d32e-4a5d-9bcf-bc7412c76e84",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C15",
+      "claim": "Motile cilia are used both as sensory antenna and motors that move fluids or propel cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile cilia, also called flagella, are used both as sensory antenna and motors that move fluids or propel cells (Salathe, 2007; Bloodgood, 2010; Lindemann and Lesich, 2010; Pichlo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "baf8b16d-017b-421f-a100-31ea7a10aaab",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C16",
+      "claim": "Signaling in cilia and flagella is tightly regulated, spatially confined, and relies on a cilia-specific transport machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling in cilia and flagella is tightly regulated, spatially confined, and relies on a cilia-specific transport machinery (Rosenbaum and Witman, 2002; Delling et al., 2013; Chung et al., 2014; Pichlo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "d3033685-0c09-49e3-a75c-1ae0805b70f0",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C17",
+      "claim": "Cyclic nucleotide-dependent signaling plays a central role in both primary and motile cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic nucleotide-dependent signaling plays a central role in both primary and motile cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by subsequent citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "c2ffdd11-d303-4aea-886e-95a0216c8d32",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C18",
+      "claim": "In ciliary structures of olfactory neurons and photoreceptors, cyclic nucleotide signaling regulates chemosensation and photoreception, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In ciliary structures of olfactory neurons and photoreceptors, it regulates chemosensation and photoreception, respectively (Johnson and Leroux, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Johnson and Leroux, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "4846a0dd-ae22-45fb-a2b3-0453a68e027a",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C19",
+      "claim": "In cilia of endothelial and mesenchymal cells, cAMP signaling controls cilia length in response to extracellular stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In cilia of endothelial and mesenchymal cells, cAMP signaling controls cilia length in response to extracellular stimuli (Besschetnova et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Besschetnova et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "ff595c8e-eac4-482d-b68b-cfaa38e03308",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C20",
+      "claim": "Defects in cilia of the renal epithelium cause polycystic kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in cilia of the renal epithelium cause polycystic kidney disease (Pazour et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pazour et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "9ba4aa8c-b6b6-4bbd-a774-f3ea2f0a0e96",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C21",
+      "claim": "During embryonic development, ciliary cAMP signaling is involved in neural tube development by regulating the Sonic hedgehog (Shh) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "During embryonic development, ciliary cAMP signaling is involved in neural tube development by regulating the Sonic hedgehog (Shh) pathway (Mukhopadhyay et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mukhopadhyay et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "4bcc53d9-15e0-488b-8f10-9add39bf5fe5",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C22",
+      "claim": "Cyclic AMP signaling is essential for sperm development, motility, and maturation in the female genital tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic AMP signaling is essential for sperm development, motility, and maturation in the female genital tract (Visconti et al., 1995b; Wennemuth et al., 2003; Kr\u00e4hling et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "6bd0d18b-22b0-4bb3-bb00-36d9ddabfaa2",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C23",
+      "claim": "CRIS, a cAMP-binding protein, controls spermatogenesis and sperm motility.",
+      "claim_type": "EXPLICIT",
+      "source": "CRIS, a cAMP-binding protein, controls spermatogenesis and sperm motility (Kr\u00e4hling et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kr\u00e4hling et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "e9e56bb4-df72-4986-be11-3119fa60a266",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C24",
+      "claim": "An increase in bicarbonate during the transit from the epididymis to the female genital tract activates a soluble adenylyl cyclase (SACY).",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in bicarbonate (HCO3\u2212) during the transit from the epididymis to the female genital tract activates a soluble adenylyl cyclase (SACY) and, thereby, accelerates the flagellar beat and enhances progressive sperm motility (Esposito et al., 2004; Xie et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Esposito et al., 2004 and Xie et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "5f169059-ab77-4dc7-b99e-f20cc9cb031e",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C25",
+      "claim": "Activation of SACY by bicarbonate accelerates the flagellar beat and enhances progressive sperm motility.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in bicarbonate (HCO3\u2212) during the transit from the epididymis to the female genital tract activates a soluble adenylyl cyclase (SACY) and, thereby, accelerates the flagellar beat and enhances progressive sperm motility (Esposito et al., 2004; Xie et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Esposito et al., 2004 and Xie et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "118db134-f23f-4170-98ce-c7a705e7abad",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C26",
+      "claim": "HCO3\u2212-induced cAMP synthesis by SACY stimulates protein kinase A (PKA).",
+      "claim_type": "EXPLICIT",
+      "source": "HCO3\u2212-induced cAMP synthesis by SACY stimulates protein kinase A (PKA) (Wennemuth et al., 2003; Nolan et al., 2004) and controls capacitation, a maturation process of sperm in the female genital tract that is essential for fertilization (Chang, 1951; Austin, 1952).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wennemuth et al., 2003 and Nolan et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "37408a50-c8f9-443b-8f08-0897b2ba5d04",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C27",
+      "claim": "SACY controls capacitation, a maturation process of sperm in the female genital tract that is essential for fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "HCO3\u2212-induced cAMP synthesis by SACY stimulates protein kinase A (PKA) (Wennemuth et al., 2003; Nolan et al., 2004) and controls capacitation, a maturation process of sperm in the female genital tract that is essential for fertilization (Chang, 1951; Austin, 1952).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chang, 1951 and Austin, 1952.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "a9d9a8ae-d95b-4be0-b11f-384c3b772abe",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C28",
+      "claim": "The beat frequency increases within seconds after HCO3\u2212 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Acceleration of the flagellar beat and capacitation proceed on quite different time scales: the beat frequency increases within seconds, whereas PKA-dependent tyrosine phosphorylation, a hallmark of sperm capacitation, takes about an hour to become noticeable (Visconti et al., 1995a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "174ba869-4e1c-488f-bd92-c1077f1eb8cc",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C29",
+      "claim": "PKA-dependent tyrosine phosphorylation, a hallmark of sperm capacitation, takes about an hour to become noticeable.",
+      "claim_type": "EXPLICIT",
+      "source": "Acceleration of the flagellar beat and capacitation proceed on quite different time scales: the beat frequency increases within seconds, whereas PKA-dependent tyrosine phosphorylation, a hallmark of sperm capacitation, takes about an hour to become noticeable (Visconti et al., 1995a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Visconti et al., 1995a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "9467b5d6-ac31-4ed9-9d13-be0f4744c82f",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C30",
+      "claim": "Ca2+ controls SACY activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The study of cAMP-dependent signaling pathways in mammalian sperm is further complicated by an ill-defined interplay between cAMP and Ca2+ signaling; for example, Ca2+ controls SACY activity (Carlson et al., 2007) and cAMP reportedly evokes a Ca2+ influx (Kobori et al., 2000; Ren et al., 2001; Xia et al., 2007; Wertheimer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Carlson et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "48674856-454c-45d5-8d52-85b62ea85cba",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C31",
+      "claim": "cAMP reportedly evokes a Ca2+ influx in sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The study of cAMP-dependent signaling pathways in mammalian sperm is further complicated by an ill-defined interplay between cAMP and Ca2+ signaling; for example, Ca2+ controls SACY activity (Carlson et al., 2007) and cAMP reportedly evokes a Ca2+ influx (Kobori et al., 2000; Ren et al., 2001; Xia et al., 2007; Wertheimer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kobori et al., 2000; Ren et al., 2001; Xia et al., 2007; Wertheimer et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "935fd9e4-265b-4b7d-a30f-98f2a54850d0",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C32",
+      "claim": "Recent studies in human sperm refute that cAMP controls [Ca2+]i.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies in human sperm, however, refute that cAMP controls [Ca2+]i (Str\u00fcnker et al., 2011) and disclose serious shortcomings of these pharmacological tools that directly act on the sperm Ca2+ channel CatSper and, thereby, artifactually change Ca2+ levels (Brenker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Str\u00fcnker et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "3613be36-8172-4c60-ba73-1c5c18a40f5e",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C33",
+      "claim": "Pharmacological tools used to study cAMP signaling have serious shortcomings as they directly act on the sperm Ca2+ channel CatSper and artifactually change Ca2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies in human sperm, however, refute that cAMP controls [Ca2+]i (Str\u00fcnker et al., 2011) and disclose serious shortcomings of these pharmacological tools that directly act on the sperm Ca2+ channel CatSper and, thereby, artifactually change Ca2+ levels (Brenker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Brenker et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "10350989-a582-497a-89de-4d939c4732af",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C34",
+      "claim": "The bPAC cDNA sequence was modified for expression in mammalian systems according to Stierl et al. (2011).",
+      "claim_type": "EXPLICIT",
+      "source": "The bPAC cDNA (beta subunit of photo-activated adenylyl cyclase from Beggiatoa sp. PS, BGP_1043; modified for expression in mammalian systems according to Stierl et al. (2011), GU461307) sequence was amplified via PCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Stierl et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "29264da7-a917-4a93-9f93-7fd7895ff8b8",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C35",
+      "claim": "The protamine 1 promoter is exclusively active in post-meiotic spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "We engineered a targeting vector to express the beta subunit of photo activated adenylyl cyclase from the soil bacterium Beggiatoa (bPAC) under the control of the protamine 1 promoter (Prm1, Figure 1A) that is exclusively active in post-meiotic spermatids (Zambrowicz et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zambrowicz et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "68c3c097-ffb8-4fc6-af3a-116c0883c975",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C36",
+      "claim": "Genomic insertion of the transgene was confirmed by PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic insertion of the transgene was confirmed by PCR (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "4010d42c-2c11-4b55-ae96-206c2642f22a",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C37",
+      "claim": "Protein expression of bPAC in testis lysates varied between different founder lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein expression of bPAC in testis lysates varied between different founder lines (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "a29d53b5-2164-4f9e-a415-513ced04cbad",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C38",
+      "claim": "Variation in transgene expression reflects differences in integration site and/or copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "This variation in transgene expression reflects differences in integration site and/or copy number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of variable expression between founder lines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "0a122203-b9a7-422b-b957-a7f7e3625ce2",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C39",
+      "claim": "The bPAC protein was exclusively expressed in sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The bPAC protein was exclusively expressed in sperm (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot and immunohistochemistry data shown in Figures 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "29382e9c-9b84-4b45-8bf5-2fc2abe0c974",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C40",
+      "claim": "Prm1-bPAC males were fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "Prm1-bPAC males were fertile and did not show any defects during spermatogenesis, demonstrating that bPAC expression does not affect sperm development or function (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fertility data referenced in Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "bcad4e78-d8c5-4353-b2e5-1af0c9eb9247",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C41",
+      "claim": "Prm1-bPAC males did not show any defects during spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Prm1-bPAC males were fertile and did not show any defects during spermatogenesis, demonstrating that bPAC expression does not affect sperm development or function (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data referenced in Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "2b2f9ff2-3606-4200-9d99-8b94d133aad2",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C42",
+      "claim": "bPAC expression does not affect sperm development or function.",
+      "claim_type": "EXPLICIT",
+      "source": "Prm1-bPAC males were fertile and did not show any defects during spermatogenesis, demonstrating that bPAC expression does not affect sperm development or function (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Prm1-bPAC males were fertile and showed no spermatogenesis defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "34f0224a-7416-4252-b55f-241fb2378c70",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C43",
+      "claim": "Basal cAMP levels in bPAC sperm were slightly enhanced compared to wild-type sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Basal cAMP levels in bPAC sperm were slightly enhanced (bPAC: 15.3 \u00b1 3.6 fmol/105 sperm versus wild-type: 10.0 \u00b1 4.4 fmol/105 sperm; Figure 2A), which might be due to basal bPAC activity (Stierl et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cAMP measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "aff38f4c-7e6a-4518-be1b-c1eb08625459",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C44",
+      "claim": "The enhanced basal cAMP levels in bPAC sperm might be due to basal bPAC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Basal cAMP levels in bPAC sperm were slightly enhanced (bPAC: 15.3 \u00b1 3.6 fmol/105 sperm versus wild-type: 10.0 \u00b1 4.4 fmol/105 sperm; Figure 2A), which might be due to basal bPAC activity (Stierl et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by a citation to Stierl et al., 2011.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "17c210b4-5524-4d0a-8f49-23b1a017b058",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C45",
+      "claim": "In wild-type sperm, light stimulation did not alter cAMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type sperm, light stimulation did not alter cAMP levels, whereas in bPAC sperm, cAMP levels increased by about 2.5-fold (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cAMP measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "2fabd367-f7b3-4a90-8f6b-b33500a753fb",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C46",
+      "claim": "In bPAC sperm, light stimulation increased cAMP levels by about 2.5-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type sperm, light stimulation did not alter cAMP levels, whereas in bPAC sperm, cAMP levels increased by about 2.5-fold (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cAMP measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "38fd8ff7-8762-4fd5-97b2-adfee29be5a7",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C47",
+      "claim": "During continuous light stimulation, cAMP levels reached a maximum within 2 min.",
+      "claim_type": "EXPLICIT",
+      "source": "During continuous light stimulation, cAMP levels reached a maximum within 2 min (Figure 2B); after switching off the light, cAMP returned to baseline within 10 min (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-course cAMP measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "e1a89563-933a-4805-8a92-b0c49c6f25b1",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C48",
+      "claim": "After switching off the light, cAMP returned to baseline within 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "During continuous light stimulation, cAMP levels reached a maximum within 2 min (Figure 2B); after switching off the light, cAMP returned to baseline within 10 min (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-course cAMP measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "6b4fc206-01a2-4994-9530-15d047ea6944",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C49",
+      "claim": "The light-induced cAMP increase was similar to the HCO3\u2212-induced cAMP increase.",
+      "claim_type": "EXPLICIT",
+      "source": "The light-induced cAMP increase was similar to the HCO3\u2212-induced cAMP increase (Figure 2A), indicating that activation of bPAC mimics the activation of SACY by HCO3\u2212.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative cAMP measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "629d9c09-651e-48b4-9773-16ba79326257",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C50",
+      "claim": "Activation of bPAC mimics the activation of SACY by HCO3\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "The light-induced cAMP increase was similar to the HCO3\u2212-induced cAMP increase (Figure 2A), indicating that activation of bPAC mimics the activation of SACY by HCO3\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of cAMP increases shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "4b141109-c61e-42ec-ae27-55199487e974",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C51",
+      "claim": "The presence of bPAC did not affect SACY expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of bPAC did not affect SACY expression level (Figure 2C), consistent with the observation that HCO3\u2212-stimulated cAMP synthesis is similar in wild-type and bPAC sperm (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "5403508d-735d-4bce-8ac0-f9e232862a71",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C52",
+      "claim": "HCO3\u2212-stimulated cAMP synthesis is similar in wild-type and bPAC sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of bPAC did not affect SACY expression level (Figure 2C), consistent with the observation that HCO3\u2212-stimulated cAMP synthesis is similar in wild-type and bPAC sperm (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cAMP measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "f5753b35-0d57-4d01-8b3c-26b6a883c534",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C53",
+      "claim": "The expression level of PKA remained unchanged in bPAC sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression level of PKA also remained unchanged in bPAC sperm (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "6b2edab5-68fe-48eb-8869-4c76fb4e499d",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C54",
+      "claim": "The phosphorylation of PKA targets under non-stimulated conditions was not majorly different in bPAC sperm compared to wild-type sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphorylation of PKA targets under non-stimulated conditions was also not majorly different in bPAC sperm compared to wild-type sperm (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "617122e0-3940-44b3-ad41-4a47ffb50206",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C55",
+      "claim": "Stimulation of bPAC sperm with either light or HCO3\u2212 both evoked phosphorylation of PKA targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, stimulation of bPAC sperm with either light or HCO3\u2212 both evoked phosphorylation of PKA targets (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "936ef72d-2d66-42b4-a283-cd0eb6d3a12b",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C56",
+      "claim": "Incubation with HCO3\u2212 or db-cAMP enhanced tyrosine phosphorylation to a similar extent in wild-type and bPAC sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyzed whether the capacitation-associated phosphorylation of tyrosine residues was altered: incubation with HCO3\u2212 or the cAMP analog dibutyryl-cAMP (db-cAMP) enhanced tyrosine phosphorylation to a similar extent in wild-type and bPAC sperm (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "20263967-75ab-44a9-8dfb-5752418b2343",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C57",
+      "claim": "bPAC expression does not interfere with known cAMP-signaling events in sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, bPAC expression does not interfere with known cAMP-signaling events in sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing similar responses in wild-type and bPAC sperm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "bc89a83b-04be-4e9f-a263-f24f14ae1aea",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C58",
+      "claim": "Under non-capacitating conditions in the dark, the percentage of sperm undergoing the acrosome reaction was similar between wild-type and bPAC sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Under non-capacitating conditions (without HCO3\u2212) in the dark, the percentage of sperm undergoing the acrosome reaction was similar between wild-type and bPAC sperm (wild-type: 34.1% versus bPAC: 41.7%; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by acrosome reaction assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "2fcbb600-35a6-413a-8912-a4f3afdcc5b1",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C59",
+      "claim": "After light-stimulation, the number of bPAC sperm undergoing the acrosome reaction increased dramatically.",
+      "claim_type": "EXPLICIT",
+      "source": "After light-stimulation, the number of sperm undergoing the acrosome reaction changed dramatically for bPAC sperm but remained unchanged for wild-type sperm (wild-type: 38.4% bPAC: 70.5%; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by acrosome reaction assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "c091bf9f-228a-475d-afb0-974c7f866cd1",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C60",
+      "claim": "After light-stimulation, the number of wild-type sperm undergoing the acrosome reaction remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "After light-stimulation, the number of sperm undergoing the acrosome reaction changed dramatically for bPAC sperm but remained unchanged for wild-type sperm (wild-type: 38.4% bPAC: 70.5%; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by acrosome reaction assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "a7619d52-7522-4da7-b925-f5f005fc6666",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C61",
+      "claim": "A light-stimulated increase in cAMP levels results in sperm capacitation.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that a light-stimulated increase in cAMP levels results in sperm capacitation and that bPAC functionally mimics the activation of SACY by HCO3\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the acrosome reaction data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "d1725a22-749b-423d-87e9-b68b02907748",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C62",
+      "claim": "bPAC functionally mimics the activation of SACY by HCO3\u2212 in inducing capacitation.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that a light-stimulated increase in cAMP levels results in sperm capacitation and that bPAC functionally mimics the activation of SACY by HCO3\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the acrosome reaction data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "2f093b56-7e1d-4594-beea-400fb2655327",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C63",
+      "claim": "In mammalian sperm, cAMP controls the flagellar beat.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian sperm, cAMP controls the flagellar beat (Wennemuth et al., 2003; Esposito et al., 2004; Nolan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wennemuth et al., 2003; Esposito et al., 2004; Nolan et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "f041d383-dabf-475e-8ad0-c516aa34e775",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C64",
+      "claim": "The basal beat frequency of bPAC sperm was slightly lower compared to wild-type sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal beat frequency of bPAC sperm was slightly lower compared to wild-type sperm (5.5 \u00b1 2.5 Hz versus 8.0 \u00b1 3.7 Hz; Figure 2G), which might be due to a cAMP-dependent feedback mechanism activated by elevated basal cAMP levels (Burton and McKnight, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by beat frequency measurements shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "6f916572-6b68-4789-a90f-1831d9a659a4",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C65",
+      "claim": "The lower basal beat frequency in bPAC sperm might be due to a cAMP-dependent feedback mechanism activated by elevated basal cAMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal beat frequency of bPAC sperm was slightly lower compared to wild-type sperm (5.5 \u00b1 2.5 Hz versus 8.0 \u00b1 3.7 Hz; Figure 2G), which might be due to a cAMP-dependent feedback mechanism activated by elevated basal cAMP levels (Burton and McKnight, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by a citation to Burton and McKnight, 2007.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "dee39e54-903e-4672-9346-5b6842a7641a",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C66",
+      "claim": "A 200-ms light pulse increased the beat frequency of bPAC sperm within 10 s about 2.5-fold from 7 Hz to 18 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Light stimulation of bPAC sperm evoked a transient acceleration of the flagellar beat: a 200-ms light pulse increased the beat frequency within 10 s about 2.5-fold from 7 Hz to 18 Hz (Figure 2H; Videos 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by beat frequency measurements shown in Figure 2H and Videos 1,2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "bf6f5c51-5929-451d-964b-f45bbdd8bae1",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C67",
+      "claim": "The acceleration of flagellar beat persisted for at least 10 s after light stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The acceleration persisted for at least 10 s and sperm returned to basal beat frequency within 30 s (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by beat frequency measurements shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "2254689d-6c6e-4c7f-a6b3-523cde540830",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C68",
+      "claim": "Sperm returned to basal beat frequency within 30 s after light stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The acceleration persisted for at least 10 s and sperm returned to basal beat frequency within 30 s (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by beat frequency measurements shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "74b244ed-c234-4e5e-b98a-5964fefa9678",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C69",
+      "claim": "The light-stimulated acceleration of the flagellar beat was dose-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The light-stimulated acceleration of the flagellar beat was dose-dependent: the longer the light exposure, the faster the onset and higher the beat frequency (Figure 2I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data shown in Figures 2I and 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "0ee66309-b6e0-4302-9b84-542e491fa4ad",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C70",
+      "claim": "The longer the light exposure, the faster the onset and higher the beat frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The light-stimulated acceleration of the flagellar beat was dose-dependent: the longer the light exposure, the faster the onset and higher the beat frequency (Figure 2I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data shown in Figures 2I and 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "521f83c8-18f6-4d8b-92f7-714d307b2ce3",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C71",
+      "claim": "Local illumination of a small part of the flagellum enhanced the beat frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Local illumination of a small part of the flagellum also enhanced the beat frequency, albeit the increase was smaller and its kinetics slower compared to global illumination (Figure 2K, Videos 3,4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by beat frequency measurements shown in Figure 2K and Videos 3,4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "bd2d087d-e7eb-4671-8f47-e371aef0b5f1",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C72",
+      "claim": "The increase in beat frequency from local illumination was smaller and its kinetics slower compared to global illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Local illumination of a small part of the flagellum also enhanced the beat frequency, albeit the increase was smaller and its kinetics slower compared to global illumination (Figure 2K, Videos 3,4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by beat frequency measurements shown in Figure 2K and Videos 3,4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "a86d1c48-0c9d-45ae-8046-7bfcb3355a9f",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C73",
+      "claim": "Light activation of bPAC mimics the transient beat acceleration evoked by HCO3\u2212 stimulation of SACY.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we conclude that (1) light activation of bPAC mimics the transient beat acceleration evoked by HCO3\u2212 stimulation of SACY (Wennemuth et al., 2003; Carlson et al., 2007), (2) the behavioral response of single cells can be modulated in a graded fashion, and that (3) bPAC is able to control cAMP signaling in the sperm flagellum with spatial precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citations to Wennemuth et al., 2003 and Carlson et al., 2007.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "3aa29b2a-a807-456b-9a0a-3574fe7102e9",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C74",
+      "claim": "The behavioral response of single cells can be modulated in a graded fashion using bPAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we conclude that (1) light activation of bPAC mimics the transient beat acceleration evoked by HCO3\u2212 stimulation of SACY (Wennemuth et al., 2003; Carlson et al., 2007), (2) the behavioral response of single cells can be modulated in a graded fashion, and that (3) bPAC is able to control cAMP signaling in the sperm flagellum with spatial precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dose-dependent responses shown in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "29337513-8372-4826-bcd5-54e2cbfb8603",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C75",
+      "claim": "bPAC is able to control cAMP signaling in the sperm flagellum with spatial precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we conclude that (1) light activation of bPAC mimics the transient beat acceleration evoked by HCO3\u2212 stimulation of SACY (Wennemuth et al., 2003; Carlson et al., 2007), (2) the behavioral response of single cells can be modulated in a graded fashion, and that (3) bPAC is able to control cAMP signaling in the sperm flagellum with spatial precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the local illumination experiments shown in Figure 2K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "c25bb3e8-4a6f-4f73-aafc-b966bc3eee56",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C76",
+      "claim": "cAMP synthesis via light stimulation of bPAC did not evoke a Ca2+ signal in mouse sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cAMP synthesis via light stimulation of bPAC did not evoke a Ca2+ signal (Figure 3A\u2013D), consistent with the observation that a HCO3\u2212-induced cAMP increase does not affect [Ca2+]i in mouse (Wennemuth et al., 2003; Carlson et al., 2007) and human sperm (Str\u00fcnker et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Ca2+ measurements shown in Figures 3A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "267c5a01-65a2-4b35-8aae-0aaf346a7180",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C77",
+      "claim": "A HCO3\u2212-induced cAMP increase does not affect [Ca2+]i in mouse sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cAMP synthesis via light stimulation of bPAC did not evoke a Ca2+ signal (Figure 3A\u2013D), consistent with the observation that a HCO3\u2212-induced cAMP increase does not affect [Ca2+]i in mouse (Wennemuth et al., 2003; Carlson et al., 2007) and human sperm (Str\u00fcnker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wennemuth et al., 2003 and Carlson et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "308f1fa1-3177-4e1b-8d61-7a5b05233d2b",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C78",
+      "claim": "A HCO3\u2212-induced cAMP increase does not affect [Ca2+]i in human sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cAMP synthesis via light stimulation of bPAC did not evoke a Ca2+ signal (Figure 3A\u2013D), consistent with the observation that a HCO3\u2212-induced cAMP increase does not affect [Ca2+]i in mouse (Wennemuth et al., 2003; Carlson et al., 2007) and human sperm (Str\u00fcnker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Str\u00fcnker et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "fce0bf64-eac7-4509-b287-704bc999e397",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C79",
+      "claim": "8-Br-cAMP, 8-Br-cGMP, and db-cAMP evoked a Ca2+ signal in wild-type and bPAC sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 8-Br-cAMP, 8-Br-cGMP, and db-cAMP evoked a Ca2+ signal in wild-type and bPAC sperm (Figure 3A\u2013C,E) that was abolished in CatSper-null sperm (Figure 3F); similar results have been reported by others (Ren et al., 2001; Xia et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Ca2+ measurements shown in Figures 3A-C and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "f73804ad-78d7-466e-a2fd-c394dabe722e",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C80",
+      "claim": "The Ca2+ signal evoked by 8-Br-cAMP, 8-Br-cGMP, and db-cAMP was abolished in CatSper-null sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 8-Br-cAMP, 8-Br-cGMP, and db-cAMP evoked a Ca2+ signal in wild-type and bPAC sperm (Figure 3A\u2013C,E) that was abolished in CatSper-null sperm (Figure 3F); similar results have been reported by others (Ren et al., 2001; Xia et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Ca2+ measurements shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "82898258-8d2e-42f5-b7e0-694a03828f89",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C81",
+      "claim": "In human sperm, 8-Br-cNMPs directly activate CatSper via an extracellular site.",
+      "claim_type": "EXPLICIT",
+      "source": "In human sperm, 8-Br-cNMPs directly activate CatSper via an extracellular site (Brenker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Brenker et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "4efa4e21-78ab-4fd7-9507-62ea8468572b",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C82",
+      "claim": "The loss of SACY function abolishes cAMP signaling in sperm, rendering sperm immotile and resulting in male infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of SACY function abolishes cAMP signaling in sperm, rendering sperm immotile and resulting in male infertility (Esposito et al., 2004; Xie et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Esposito et al., 2004 and Xie et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "d6ad951e-60f9-4af3-bef0-a79e3e5e1de9",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C83",
+      "claim": "Removal of extracellular Ca2+ attenuated HCO3\u2212-induced cAMP synthesis by SACY.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of extracellular Ca2+ attenuated HCO3\u2212-induced cAMP synthesis by SACY (Figure 4A) (Jaiswal and Conti, 2003; Carlson et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cAMP measurements shown in Figure 4A and citations to Jaiswal and Conti, 2003 and Carlson et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "3c186249-8e8d-47ba-8618-bed5f7e8ccc1",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C84",
+      "claim": "Tyrosine phosphorylation in wild-type and bPAC sperm was largely abolished by removal of extracellular Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereby, tyrosine phosphorylation in wild-type and bPAC sperm was largely abolished (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "fc669a5e-05b3-4722-abea-0aee2cf5c062",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C85",
+      "claim": "Elevation of basal cAMP levels by IBMX restored tyrosine phosphorylation in wild-type sperm in Ca2+-free medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevation of basal cAMP levels by the phosphodiesterase inhibitor IBMX restored tyrosine phosphorylation in wild-type sperm (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cAMP measurements and Western blot data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "76d8e2dd-62b7-4baf-8b57-4ed1d29ed0d4",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C86",
+      "claim": "In Ca2+-free medium, light-stimulated increase of cAMP levels restored tyrosine phosphorylation in bPAC sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in Ca2+-free medium, the light-stimulated increase of cAMP levels restored tyrosine phosphorylation in bPAC sperm (Figure 4A,B), demonstrating that bPAC activation compensates for the loss of SACY activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cAMP measurements and Western blot data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "053acf9d-d104-41d8-aca4-43c2f17d80b9",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C87",
+      "claim": "bPAC activation compensates for the loss of SACY activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in Ca2+-free medium, the light-stimulated increase of cAMP levels restored tyrosine phosphorylation in bPAC sperm (Figure 4A,B), demonstrating that bPAC activation compensates for the loss of SACY activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the restoration of tyrosine phosphorylation shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "56f5b066-ebdb-4b44-8f00-651560b48011",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C88",
+      "claim": "Male Slc9a10-null mice are infertile because their sperm are largely immotile.",
+      "claim_type": "EXPLICIT",
+      "source": "Male Slc9a10-null mice are infertile, because their sperm are largely immotile (Wang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "560ef942-4200-4783-8710-65740a2314b7",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C89",
+      "claim": "In Slc9a10-null mice, the HCO3\u2212-stimulated SACY activity is abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "In Slc9a10-null mice, the HCO3\u2212-stimulated SACY activity is abolished as well, probably because sNHE and SACY form a functional signaling complex that is disrupted in these mice (Wang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "043cd820-b15f-4f76-994d-3578170defbf",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C90",
+      "claim": "sNHE and SACY probably form a functional signaling complex that is disrupted in Slc9a10-null mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In Slc9a10-null mice, the HCO3\u2212-stimulated SACY activity is abolished as well, probably because sNHE and SACY form a functional signaling complex that is disrupted in these mice (Wang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by a citation to Wang et al., 2007.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "bc7137b3-713b-42f0-8bf7-cb34720d6582",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C91",
+      "claim": "The motility of Slc9a10-null sperm is restored by db-cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The motility of Slc9a10-null sperm is restored by db-cAMP (Wang et al., 2003); however, db-cAMP not only elevates cAMP levels but also evokes a Ca2+ influx via CatSper (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "def94043-3942-4a83-919c-6e0e78b5cdac",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C92",
+      "claim": "db-cAMP not only elevates cAMP levels but also evokes a Ca2+ influx via CatSper.",
+      "claim_type": "EXPLICIT",
+      "source": "The motility of Slc9a10-null sperm is restored by db-cAMP (Wang et al., 2003); however, db-cAMP not only elevates cAMP levels but also evokes a Ca2+ influx via CatSper (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Ca2+ measurements shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "b935abe4-fc6a-4028-9213-913f2c771e06",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C93",
+      "claim": "Slc9a10-null/bPAC sperm were immotile in darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "Sperm were immotile in darkness (Figure 4C, left); light stimulation restored both the flagellar beat and forward motility (Figure 4C, right; Video 5), demonstrating that restoring cAMP levels alone is sufficient to rescue motility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motility analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "f19beeee-07e7-4212-bfe6-5150d7e24cdc",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C94",
+      "claim": "Light stimulation restored both the flagellar beat and forward motility in Slc9a10-null/bPAC sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Sperm were immotile in darkness (Figure 4C, left); light stimulation restored both the flagellar beat and forward motility (Figure 4C, right; Video 5), demonstrating that restoring cAMP levels alone is sufficient to rescue motility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motility analysis shown in Figure 4C and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "095df527-15e3-46de-8664-de33a8ea7e70",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C95",
+      "claim": "Restoring cAMP levels alone is sufficient to rescue motility in Slc9a10-null sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Sperm were immotile in darkness (Figure 4C, left); light stimulation restored both the flagellar beat and forward motility (Figure 4C, right; Video 5), demonstrating that restoring cAMP levels alone is sufficient to rescue motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the restoration of motility by light stimulation shown in Figure 4C and Video 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "87ec08b7-f3db-4a66-bef5-4318f98eb249",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C96",
+      "claim": "Light-stimulated Slc9a10-null/bPAC sperm were able to fertilize oocytes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, light-stimulated Slc9a10-null/bPAC sperm were able to fertilize oocytes in vitro (Figure 4D), demonstrating that optogenetics can restore fertility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro fertilization data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "b0045610-279f-4dc9-bd46-e9ce27d86281",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C97",
+      "claim": "Optogenetics can restore fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, light-stimulated Slc9a10-null/bPAC sperm were able to fertilize oocytes in vitro (Figure 4D), demonstrating that optogenetics can restore fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful in vitro fertilization shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "6d2c8cd6-1778-4459-9410-029216f7f37d",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C98",
+      "claim": "Transgenic expression of bPAC in sperm does not interfere with the endogenous HCO3\u2212-stimulated SACY activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we report on a transgenic mouse model designed to control cAMP signaling in sperm using optogenetics. We demonstrate that transgenic expression of bPAC in sperm does not interfere with the endogenous HCO3\u2212-stimulated SACY activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing similar HCO3\u2212-stimulated cAMP synthesis in wild-type and bPAC sperm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "e7cf0c3a-f0b5-4c98-93b3-24530fd9ce78",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C99",
+      "claim": "bPAC mimics the effect of SACY activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, bPAC mimics the effect of SACY activity: the light-stimulated increase in cAMP levels is similar to that activated by HCO3\u2212 and activation of bPAC increases the flagellar beat frequency in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative data on cAMP levels and beat frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "bd591f12-6203-4f5e-8837-43358ab26a83",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C100",
+      "claim": "The light-stimulated increase in cAMP levels by bPAC is similar to that activated by HCO3\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, bPAC mimics the effect of SACY activity: the light-stimulated increase in cAMP levels is similar to that activated by HCO3\u2212 and activation of bPAC increases the flagellar beat frequency in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cAMP measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "8cf0afe2-cef1-446a-871a-884a905924ea",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C101",
+      "claim": "Activation of bPAC increases the flagellar beat frequency in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, bPAC mimics the effect of SACY activity: the light-stimulated increase in cAMP levels is similar to that activated by HCO3\u2212 and activation of bPAC increases the flagellar beat frequency in a dose-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dose-response data shown in Figures 2I and 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "fa8908f2-264f-4939-8dd5-77b611a9bfc7",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C102",
+      "claim": "The Prm1-bPAC mouse model is an ideal optogenetic tool to study cAMP signaling in sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Prm1-bPAC mouse model is an ideal optogenetic tool to study cAMP signaling in sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful demonstration of optogenetic control of cAMP signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "34069043-b91c-4be5-949e-b356d2c8dcc3",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C103",
+      "claim": "Expression of bPAC in Slc9a10-null sperm allowed restoring motility after light stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of bPAC in Slc9a10-null sperm allowed restoring motility after light stimulation and, most importantly, restoring fertilization in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motility and fertilization data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "e9166e7f-58ba-4fd0-bf0a-04f0f1c817ac",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C104",
+      "claim": "Expression of bPAC in Slc9a10-null sperm allowed restoring fertilization in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of bPAC in Slc9a10-null sperm allowed restoring motility after light stimulation and, most importantly, restoring fertilization in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro fertilization data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "57921025-bf71-4fb8-8370-fcf4817ed438",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C105",
+      "claim": "IVF using light-stimulated sperm was successful using zona pellucida-intact oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, in vitro fertilization (IVF) using light-stimulated sperm was successful using zona pellucida-intact oocytes, demonstrating that a cAMP increase, at least in vitro, is sufficient to restore fertility in Slc9a10-null mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro fertilization data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "32608ca7-1e9c-467e-ab62-ef8ea29010e8",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C106",
+      "claim": "A cAMP increase, at least in vitro, is sufficient to restore fertility in Slc9a10-null mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, in vitro fertilization (IVF) using light-stimulated sperm was successful using zona pellucida-intact oocytes, demonstrating that a cAMP increase, at least in vitro, is sufficient to restore fertility in Slc9a10-null mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful IVF with zona pellucida-intact oocytes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "70eab301-18e2-40f4-b6b4-f13d76a5bd0d",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C107",
+      "claim": "Incubation of Slc9a10-null sperm with cAMP analogs only restored fertilization of zona pellucida-free but not zona pellucida-intact oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, incubation of Slc9a10-null sperm with cAMP analogs only restored fertilization of zona pellucida-free but not zona pellucida-intact oocytes (Wang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "4c2e886d-7663-42d6-87ba-450ccd664621",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C108",
+      "claim": "The Prm1-bPAC mouse model allowed solving a long-standing controversy by showing that cAMP does not stimulate a Ca2+ influx into mouse sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "The Prm1-bPAC mouse model holds great promise studying cAMP signaling uncompromised by side effects and allowed us to solve a long-standing controversy by showing that cAMP, in fact, does not stimulate a Ca2+ influx into mouse sperm (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Ca2+ measurements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "894dddce-d6d8-4bc1-80e1-504efe065ccd",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C109",
+      "claim": "Optogenetics can disentangle cellular events such as Ca2+ and cAMP signaling in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that optogenetics can disentangle cellular events such as Ca2+ and cAMP signaling in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ability to independently control cAMP without affecting Ca2+.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "2d0fc449-6c11-4b83-a354-73cd0e413395",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C110",
+      "claim": "HCO3\u2212 stimulation evokes a rapid cAMP increase and changes the flagellar beat frequency within seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HCO3\u2212 stimulation evokes a rapid cAMP increase and changes the flagellar beat frequency within seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge based on previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "6e770291-cd79-43cf-b98a-f681297bfae5",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C111",
+      "claim": "PKA-dependent activation of tyrosine phosphorylation is barely detectable within the first hour of HCO3\u2212 incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PKA-dependent activation of tyrosine phosphorylation is barely detectable within the first hour of HCO3\u2212 incubation (Visconti et al., 1995a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Visconti et al., 1995a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "33b3f687-56d3-4813-90b1-40cc17e6c0c8",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C112",
+      "claim": "HCO3\u2212 exhibits short-term and long-term effects and probably controls cellular events in addition to cAMP synthesis via SACY.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, HCO3\u2212 exhibits short-term and long-term effects and probably controls cellular events in addition to cAMP synthesis via SACY.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the different time scales of HCO3\u2212 effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "8e4d128b-e9dc-4942-b70e-e1659e52c505",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C113",
+      "claim": "The Prm1-bPAC mouse model allows deciphering signaling events controlled by HCO3\u2212, if bPAC expression does not interfere with other signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The Prm1-bPAC mouse model allows deciphering these signaling events, if bPAC expression does not interfere with other signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "f9aba4cb-184e-4af1-8408-33ce6c433eb7",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C114",
+      "claim": "Signaling molecules in sperm flagella are highly compartmentalized.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling molecules in sperm flagella are highly compartmentalized (Chung et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chung et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "7ed70450-8d1a-429a-af55-424101306698",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C115",
+      "claim": "The flagellar beat is controlled by cAMP-dependent phosphorylation of PKA targets in the axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellar beat is controlled by cAMP-dependent phosphorylation of PKA targets in the axoneme (Salathe, 2007); however, it is unknown whether cAMP signaling is restricted to microdomains or whether changes in cAMP propagate along the flagellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Salathe, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "90048ca9-3f87-4211-9651-d105c6b96bd3",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C116",
+      "claim": "It is unknown whether cAMP signaling is restricted to microdomains or whether changes in cAMP propagate along the flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellar beat is controlled by cAMP-dependent phosphorylation of PKA targets in the axoneme (Salathe, 2007); however, it is unknown whether cAMP signaling is restricted to microdomains or whether changes in cAMP propagate along the flagellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "b8178ce8-df2e-4c48-91e1-7639cd7d50a7",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C117",
+      "claim": "Compartmentalization of cAMP signaling confers specificity to this ubiquitous cellular messenger.",
+      "claim_type": "EXPLICIT",
+      "source": "Compartmentalization of cAMP signaling confers specificity to this ubiquitous cellular messenger, for example, in cell-cycle progression or modulation of gene expression. (Michel and Scott, 2002; Zaccolo and Pozzan, 2002; Willoughby and Cooper, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Michel and Scott, 2002; Zaccolo and Pozzan, 2002; Willoughby and Cooper, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "0c2e6b40-df30-4a68-9749-60ac4c07cc15",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C118",
+      "claim": "Local illumination of the flagellum of bPAC sperm is sufficient to increase its beat frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that local illumination of the flagellum of bPAC sperm is sufficient to increase its beat frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "5a0fca60-8e34-4897-abda-b84b483cad95",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C119",
+      "claim": "Optogenetics using bPAC provides the spatial and temporal precision to increase cAMP levels in subcellular regions and specialized signaling compartments such as cilia and flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetics using bPAC provides the spatial and temporal precision to increase cAMP levels in subcellular regions and specialized signaling compartments such as cilia and flagella, which allows to study complex signaling networks - not only in mammalian sperm but also any other ciliated cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the demonstrated spatial control of cAMP signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "ddf5ff51-c5fa-4e4e-8d92-915d990cf9a6",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C120",
+      "claim": "The optogenetic toolkit has been recently expanded by a light-activated phosphodiesterase (LAPD) that hydrolyses cyclic nucleotides upon stimulation by red light.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the optogenetic toolkit has been recently expanded by a light-activated phosphodiesterase (LAPD) that hydrolyses cyclic nucleotides upon stimulation by red light (Gasser et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gasser et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "25ff6300-2071-4293-a1c7-a0839936afa7",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "claim_id": "C121",
+      "claim": "A combination of LAPD and bPAC with fluorescent cAMP biosensors holds great promise to map the dynamics of cAMP signaling in live cells in precise spatio-temporal and quantitative terms.",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of LAPD and bPAC with fluorescent cAMP biosensors holds great promise to map the dynamics of cAMP signaling in live cells in precise spatio-temporal and quantitative terms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "86685c06-ad4c-48bc-8b4e-65c7776c781d",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A transgenic mouse model (Prm1-bPAC) was successfully generated expressing photoactivated adenylyl cyclase (bPAC) specifically in sperm under control of the protamine 1 promoter. The bPAC protein was exclusively expressed in sperm, and transgenic males were fertile with no defects in spermatogenesis, demonstrating that bPAC expression does not affect sperm development or function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C34-C42 are well-supported by multiple lines of evidence including PCR confirmation of genomic insertion (Figure 1B), Western blot analysis showing sperm-specific expression (Figures 1C-E), immunohistochemistry (Figure 1F), and fertility data. The experimental design is sound with appropriate controls, and the conclusion that bPAC expression does not interfere with normal sperm function is justified by the fertility and spermatogenesis data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "d563dfda-eb1d-42b4-b401-7ab822788b1a",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Light stimulation of bPAC sperm rapidly elevates cAMP levels (~2.5-fold increase) in a reversible manner, mimicking the effect of HCO3\u2212 stimulation of endogenous SACY. The presence of bPAC does not interfere with endogenous cAMP signaling pathways, as evidenced by similar HCO3\u2212-stimulated cAMP synthesis, unchanged SACY and PKA expression levels, and comparable PKA-dependent phosphorylation and tyrosine phosphorylation patterns in wild-type and bPAC sperm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C57 are strongly supported by quantitative cAMP measurements (Figure 2A-B), Western blot analysis of signaling proteins and phosphorylation events (Figure 2C-E), and appropriate controls. The data demonstrate both the functionality of bPAC and its lack of interference with endogenous signaling. Statistical significance is reported with appropriate p-values, and multiple independent experiments support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "472f8eaa-73a1-4008-8b48-7b2788e038f6",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Light-stimulated increase in cAMP levels via bPAC activation induces sperm capacitation, as demonstrated by a dramatic increase in acrosome reaction in bPAC sperm (from 41.7% to 70.5%) after light stimulation, while wild-type sperm showed no change. This demonstrates that bPAC functionally mimics SACY activation by HCO3\u2212 in inducing capacitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by acrosome reaction assay data (Figure 2F) with clear quantitative differences between light-stimulated bPAC sperm and controls. The experimental design includes appropriate controls (wild-type sperm, dark conditions) and the conclusion that light-induced cAMP elevation causes capacitation is logically derived from the data. However, the baseline acrosome reaction rate in bPAC sperm (41.7%) is somewhat elevated compared to wild-type (34.1%), which could warrant further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "eaeeeb72-be01-41e6-b1b4-120da1d222db",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Light activation of bPAC controls flagellar beat frequency in a dose-dependent and spatially precise manner. A 200-ms light pulse increased beat frequency ~2.5-fold (from 7 Hz to 18 Hz) within 10 seconds, with recovery to baseline within 30 seconds. Local illumination of the flagellum also enhanced beat frequency, though with smaller magnitude and slower kinetics. This demonstrates that bPAC can modulate single-cell behavior in a graded fashion and control cAMP signaling with spatial precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C75 are well-supported by quantitative beat frequency measurements (Figure 2G-K) and video documentation (Videos 1-4). The dose-response relationship is clearly demonstrated, and the spatial control is evidenced by local illumination experiments. Statistical analysis shows significant differences (p=0.002). The conclusion that bPAC mimics HCO3\u2212 stimulation of SACY is supported by citations and consistent with the data. The slightly lower basal beat frequency in bPAC sperm is noted with a plausible mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "2dc575fd-8c97-47d5-953a-7f017424102c",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Light-stimulated cAMP synthesis via bPAC does not evoke a Ca2+ signal in mouse sperm, resolving a long-standing controversy. This finding is consistent with prior studies showing that HCO3\u2212-induced cAMP increases do not affect intracellular Ca2+ in mouse and human sperm. In contrast, cAMP analogs (8-Br-cAMP, 8-Br-cGMP, db-cAMP) evoked Ca2+ signals in wild-type and bPAC sperm through direct activation of the CatSper channel, revealing artifacts of pharmacological approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 and C108 are strongly supported by Ca2+ imaging data (Figure 3A-F) using orthogonal excitation wavelengths to separate bPAC activation from Ca2+ indicator excitation. The experimental design is rigorous with appropriate controls including CatSper-null sperm. The finding that cAMP analogs activate CatSper directly is well-documented and explains previous contradictory results. This represents a significant methodological advance demonstrating the value of optogenetics over pharmacological tools.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "09d2491f-dc71-49de-8c1b-dcb74bb84a98",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In Ca2+-free medium where HCO3\u2212-induced SACY activity is attenuated, light-stimulated activation of bPAC restores cAMP levels and tyrosine phosphorylation in bPAC sperm, demonstrating that bPAC activation compensates for the loss of SACY activity. Similarly, the phosphodiesterase inhibitor IBMX restored tyrosine phosphorylation in wild-type sperm under these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 are supported by cAMP measurements and Western blot analysis of tyrosine phosphorylation (Figure 4A-B). The experimental design appropriately tests whether bPAC can substitute for SACY function under conditions where SACY is impaired. The parallel experiment with IBMX in wild-type sperm provides additional validation. The conclusion that bPAC compensates for SACY loss is logically derived from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "9492561b-ebe1-4d48-b1b7-66329e06d37a",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In Slc9a10-null mice, which are infertile due to immotile sperm lacking HCO3\u2212-stimulated SACY activity, expression of bPAC restored both motility and fertilization capacity upon light stimulation. Light-stimulated Slc9a10-null/bPAC sperm successfully fertilized zona pellucida-intact oocytes in vitro, demonstrating that restoring cAMP levels alone is sufficient to rescue fertility. This contrasts with cAMP analogs, which only restored fertilization of zona pellucida-free oocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C97 and C103-C107 are strongly supported by motility analysis (Figure 4C, Video 5) and in vitro fertilization data (Figure 4D). The rescue of fertility in a genetic model of infertility represents a powerful demonstration of the functional equivalence of bPAC and SACY. The comparison with cAMP analog treatment highlights the advantages of the optogenetic approach. The use of zona pellucida-intact oocytes is a more stringent test of fertility restoration. This is a major finding demonstrating therapeutic potential of optogenetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "466cacd6-635b-494c-b46e-ee4cf36b79f7",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Prm1-bPAC mouse model is an ideal optogenetic tool to study cAMP signaling in sperm. Transgenic expression of bPAC does not interfere with endogenous HCO3\u2212-stimulated SACY activity, and bPAC mimics SACY function: light-stimulated cAMP increases are similar to HCO3\u2212-induced increases, and bPAC activation increases flagellar beat frequency in a dose-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C102 represent summary conclusions that are well-supported by the collective data from multiple experiments (Figures 2-4). The characterization of the model is comprehensive, including cAMP measurements, motility analysis, capacitation assays, and functional rescue experiments. The conclusion that this is an 'ideal' tool is justified by the demonstrated specificity, reversibility, dose-dependence, and spatial control of cAMP manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "1451004b-bcbd-4e2c-be9f-9e4f73053da0",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optogenetics using bPAC can disentangle cellular events such as Ca2+ and cAMP signaling in vivo and provides spatial and temporal precision to increase cAMP levels in subcellular regions and specialized signaling compartments such as cilia and flagella. This allows study of complex signaling networks in mammalian sperm and other ciliated cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109 and C119 are supported by the demonstrated ability to independently control cAMP without affecting Ca2+ (Figure 3) and the local illumination experiments showing spatial control (Figure 2K). The conclusions about broader applicability to other ciliated cells are reasonable extrapolations from the sperm data, though direct evidence in other cell types is not provided in this study. The claims are appropriately framed as potential applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "c975aa22-338f-4e6f-82bf-5de8abf9a898",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Channelrhodopsin has been widely used for neuronal optogenetics in vivo, whereas optogenetic control of second messengers in vivo has not been examined in depth, representing a gap in the field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 represent established knowledge and identification of a research gap. While no specific citations are provided in the abstract for C1, this is well-established in the field. C2 accurately identifies the gap that this study addresses. These are appropriate framing statements for the introduction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "7e12d379-c98c-4103-bbeb-c90ce2a5aaaa",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In transgenic sperm, bPAC mimics the action of endogenous SACY: light-stimulation rapidly elevates cAMP, accelerates flagellar beat, changes swimming behavior, and in mutant sperm lacking SACY activity, bPAC restored motility and enabled fertilization in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 are high-level summary statements of the main findings that are supported by the detailed experimental data presented in Figures 2-4. These claims accurately represent the key results of the study and are appropriate for the abstract.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "a5f729ba-fae8-42ae-96e1-94263907bb57",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge on cilia, flagella, and cAMP signaling: Primary cilia are sensory organelles involved in various cellular processes. Motile cilia/flagella serve as both sensors and motors. cAMP signaling plays central roles in ciliary function, including sperm motility and capacitation through SACY and PKA. The interplay between cAMP and Ca2+ signaling in sperm has been controversial, with pharmacological tools showing artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C33, C63, C82, C110-C111, and C114-C117 represent background knowledge supported by appropriate citations to the literature. These claims establish the context and rationale for the study. The citations appear appropriate and the knowledge claims are consistent with the field. These are standard introductory statements that frame the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "18e3b49d-b693-4830-923a-41979164a3f0",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HCO3\u2212 exhibits short-term and long-term effects and probably controls cellular events beyond cAMP synthesis via SACY. The Prm1-bPAC model allows deciphering these signaling events if bPAC expression does not interfere with other pathways. Local illumination of the flagellum is sufficient to increase beat frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 are reasonable inferences from the different time scales of HCO3\u2212 effects (seconds for beat frequency vs. hours for tyrosine phosphorylation). C113 appropriately identifies future applications with the caveat about potential interference. C118 is directly supported by data in Figure 2K. These represent valid conclusions and future directions based on the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "fa1e6fff-93ba-4913-a0e0-99820c60ba98",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The optogenetic toolkit has been expanded by light-activated phosphodiesterase (LAPD), and combining LAPD with bPAC and fluorescent cAMP biosensors holds promise for mapping cAMP signaling dynamics with spatio-temporal precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C121 are appropriately cited (Gasser et al., 2014) and represent reasonable speculation about future applications. C121 is clearly framed as prospective ('holds great promise') rather than as demonstrated fact. These are appropriate forward-looking statements for the Discussion section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    },
+    {
+      "id": "32662d61-4973-4572-b348-3df5469bbcd9",
+      "content_id": "b3c1391d-118a-420f-98b3-a7c8b8ce6773",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Speculative mechanistic explanations: Enhanced basal cAMP in bPAC sperm might be due to basal bPAC activity; lower basal beat frequency might be due to cAMP-dependent feedback; sNHE and SACY probably form a functional complex disrupted in Slc9a10-null mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44, C65, and C90 are explicitly speculative (using 'might be' or 'probably') and are appropriately qualified by the authors. C44 and C65 offer plausible explanations for observed phenomena with supporting citations, but are not directly tested. C90 is supported by a citation (Wang et al., 2007) but represents an inference about molecular mechanisms. These speculations are reasonable but not definitively proven in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:20:41.265083Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0e2458e5-e314-41d0-a22a-f9ea5a7eceb4",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "10350989-a582-497a-89de-4d939c4732af",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "29264da7-a917-4a93-9f93-7fd7895ff8b8",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "68c3c097-ffb8-4fc6-af3a-116c0883c975",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "4010d42c-2c11-4b55-ae96-206c2642f22a",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "a29d53b5-2164-4f9e-a415-513ced04cbad",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "0a122203-b9a7-422b-b957-a7f7e3625ce2",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "29382e9c-9b84-4b45-8bf5-2fc2abe0c974",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "bcad4e78-d8c5-4353-b2e5-1af0c9eb9247",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "2b2f9ff2-3606-4200-9d99-8b94d133aad2",
+      "result_id": "86685c06-ad4c-48bc-8b4e-65c7776c781d"
+    },
+    {
+      "claim_id": "34f0224a-7416-4252-b55f-241fb2378c70",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "aff38f4c-7e6a-4518-be1b-c1eb08625459",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "17c210b4-5524-4d0a-8f49-23b1a017b058",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "2fabd367-f7b3-4a90-8f6b-b33500a753fb",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "38fd8ff7-8762-4fd5-97b2-adfee29be5a7",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "e1a89563-933a-4805-8a92-b0c49c6f25b1",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "6b4fc206-01a2-4994-9530-15d047ea6944",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "629d9c09-651e-48b4-9773-16ba79326257",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "4b141109-c61e-42ec-ae27-55199487e974",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "5403508d-735d-4bce-8ac0-f9e232862a71",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "f5753b35-0d57-4d01-8b3c-26b6a883c534",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "6b2edab5-68fe-48eb-8869-4c76fb4e499d",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "617122e0-3940-44b3-ad41-4a47ffb50206",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "936ef72d-2d66-42b4-a283-cd0eb6d3a12b",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "20263967-75ab-44a9-8dfb-5752418b2343",
+      "result_id": "d563dfda-eb1d-42b4-b401-7ab822788b1a"
+    },
+    {
+      "claim_id": "bc89a83b-04be-4e9f-a263-f24f14ae1aea",
+      "result_id": "472f8eaa-73a1-4008-8b48-7b2788e038f6"
+    },
+    {
+      "claim_id": "2fcbb600-35a6-413a-8912-a4f3afdcc5b1",
+      "result_id": "472f8eaa-73a1-4008-8b48-7b2788e038f6"
+    },
+    {
+      "claim_id": "c091bf9f-228a-475d-afb0-974c7f866cd1",
+      "result_id": "472f8eaa-73a1-4008-8b48-7b2788e038f6"
+    },
+    {
+      "claim_id": "a7619d52-7522-4da7-b925-f5f005fc6666",
+      "result_id": "472f8eaa-73a1-4008-8b48-7b2788e038f6"
+    },
+    {
+      "claim_id": "d1725a22-749b-423d-87e9-b68b02907748",
+      "result_id": "472f8eaa-73a1-4008-8b48-7b2788e038f6"
+    },
+    {
+      "claim_id": "f041d383-dabf-475e-8ad0-c516aa34e775",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "6f916572-6b68-4789-a90f-1831d9a659a4",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "dee39e54-903e-4672-9346-5b6842a7641a",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "bf6f5c51-5929-451d-964b-f45bbdd8bae1",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "2254689d-6c6e-4c7f-a6b3-523cde540830",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "74b244ed-c234-4e5e-b98a-5964fefa9678",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "0ee66309-b6e0-4302-9b84-542e491fa4ad",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "521f83c8-18f6-4d8b-92f7-714d307b2ce3",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "bd2d087d-e7eb-4671-8f47-e371aef0b5f1",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "a86d1c48-0c9d-45ae-8046-7bfcb3355a9f",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "3aa29b2a-a807-456b-9a0a-3574fe7102e9",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "29337513-8372-4826-bcd5-54e2cbfb8603",
+      "result_id": "eaeeeb72-be01-41e6-b1b4-120da1d222db"
+    },
+    {
+      "claim_id": "c25bb3e8-4a6f-4f73-aafc-b966bc3eee56",
+      "result_id": "2dc575fd-8c97-47d5-953a-7f017424102c"
+    },
+    {
+      "claim_id": "267c5a01-65a2-4b35-8aae-0aaf346a7180",
+      "result_id": "2dc575fd-8c97-47d5-953a-7f017424102c"
+    },
+    {
+      "claim_id": "308f1fa1-3177-4e1b-8d61-7a5b05233d2b",
+      "result_id": "2dc575fd-8c97-47d5-953a-7f017424102c"
+    },
+    {
+      "claim_id": "fce0bf64-eac7-4509-b287-704bc999e397",
+      "result_id": "2dc575fd-8c97-47d5-953a-7f017424102c"
+    },
+    {
+      "claim_id": "f73804ad-78d7-466e-a2fd-c394dabe722e",
+      "result_id": "2dc575fd-8c97-47d5-953a-7f017424102c"
+    },
+    {
+      "claim_id": "82898258-8d2e-42f5-b7e0-694a03828f89",
+      "result_id": "2dc575fd-8c97-47d5-953a-7f017424102c"
+    },
+    {
+      "claim_id": "4c2e886d-7663-42d6-87ba-450ccd664621",
+      "result_id": "2dc575fd-8c97-47d5-953a-7f017424102c"
+    },
+    {
+      "claim_id": "d6ad951e-60f9-4af3-bef0-a79e3e5e1de9",
+      "result_id": "09d2491f-dc71-49de-8c1b-dcb74bb84a98"
+    },
+    {
+      "claim_id": "3c186249-8e8d-47ba-8618-bed5f7e8ccc1",
+      "result_id": "09d2491f-dc71-49de-8c1b-dcb74bb84a98"
+    },
+    {
+      "claim_id": "fc669a5e-05b3-4722-abea-0aee2cf5c062",
+      "result_id": "09d2491f-dc71-49de-8c1b-dcb74bb84a98"
+    },
+    {
+      "claim_id": "76d8e2dd-62b7-4baf-8b57-4ed1d29ed0d4",
+      "result_id": "09d2491f-dc71-49de-8c1b-dcb74bb84a98"
+    },
+    {
+      "claim_id": "053acf9d-d104-41d8-aca4-43c2f17d80b9",
+      "result_id": "09d2491f-dc71-49de-8c1b-dcb74bb84a98"
+    },
+    {
+      "claim_id": "56f5b066-ebdb-4b44-8f00-651560b48011",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "560ef942-4200-4783-8710-65740a2314b7",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "043cd820-b15f-4f76-994d-3578170defbf",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "bc7137b3-713b-42f0-8bf7-cb34720d6582",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "def94043-3942-4a83-919c-6e0e78b5cdac",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "b935abe4-fc6a-4028-9213-913f2c771e06",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "f19beeee-07e7-4212-bfe6-5150d7e24cdc",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "095df527-15e3-46de-8664-de33a8ea7e70",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "87ec08b7-f3db-4a66-bef5-4318f98eb249",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "b0045610-279f-4dc9-bd46-e9ce27d86281",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "34069043-b91c-4be5-949e-b356d2c8dcc3",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "e9166e7f-58ba-4fd0-bf0a-04f0f1c817ac",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "57921025-bf71-4fb8-8370-fcf4817ed438",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "32608ca7-1e9c-467e-ab62-ef8ea29010e8",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "70eab301-18e2-40f4-b6b4-f13d76a5bd0d",
+      "result_id": "9492561b-ebe1-4d48-b1b7-66329e06d37a"
+    },
+    {
+      "claim_id": "6d2c8cd6-1778-4459-9410-029216f7f37d",
+      "result_id": "466cacd6-635b-494c-b46e-ee4cf36b79f7"
+    },
+    {
+      "claim_id": "e7cf0c3a-f0b5-4c98-93b3-24530fd9ce78",
+      "result_id": "466cacd6-635b-494c-b46e-ee4cf36b79f7"
+    },
+    {
+      "claim_id": "bd591f12-6203-4f5e-8837-43358ab26a83",
+      "result_id": "466cacd6-635b-494c-b46e-ee4cf36b79f7"
+    },
+    {
+      "claim_id": "8cf0afe2-cef1-446a-871a-884a905924ea",
+      "result_id": "466cacd6-635b-494c-b46e-ee4cf36b79f7"
+    },
+    {
+      "claim_id": "fa8908f2-264f-4939-8dd5-77b611a9bfc7",
+      "result_id": "466cacd6-635b-494c-b46e-ee4cf36b79f7"
+    },
+    {
+      "claim_id": "894dddce-d6d8-4bc1-80e1-504efe065ccd",
+      "result_id": "1451004b-bcbd-4e2c-be9f-9e4f73053da0"
+    },
+    {
+      "claim_id": "5a0fca60-8e34-4897-abda-b84b483cad95",
+      "result_id": "1451004b-bcbd-4e2c-be9f-9e4f73053da0"
+    },
+    {
+      "claim_id": "42351a3d-6261-4807-ac3a-0d3cc8ba0355",
+      "result_id": "c975aa22-338f-4e6f-82bf-5de8abf9a898"
+    },
+    {
+      "claim_id": "6e9f5af6-cb2f-431f-8113-b3502118653f",
+      "result_id": "c975aa22-338f-4e6f-82bf-5de8abf9a898"
+    },
+    {
+      "claim_id": "60f22913-5202-457d-904b-d2e875b34ad5",
+      "result_id": "7e12d379-c98c-4103-bbeb-c90ce2a5aaaa"
+    },
+    {
+      "claim_id": "87206c9c-6767-4e72-9d01-473a978579a8",
+      "result_id": "7e12d379-c98c-4103-bbeb-c90ce2a5aaaa"
+    },
+    {
+      "claim_id": "38d9e741-1ac8-4355-a1e4-19142811d760",
+      "result_id": "7e12d379-c98c-4103-bbeb-c90ce2a5aaaa"
+    },
+    {
+      "claim_id": "81e55e55-8531-4cfa-8e62-e88005f4f4a3",
+      "result_id": "7e12d379-c98c-4103-bbeb-c90ce2a5aaaa"
+    },
+    {
+      "claim_id": "8a9a58ec-e0de-4349-81f5-27ed1611b46c",
+      "result_id": "7e12d379-c98c-4103-bbeb-c90ce2a5aaaa"
+    },
+    {
+      "claim_id": "4fa58e15-7414-4d3b-9492-94fc6ae46f21",
+      "result_id": "7e12d379-c98c-4103-bbeb-c90ce2a5aaaa"
+    },
+    {
+      "claim_id": "87597109-0368-4440-bced-718b524f1c9f",
+      "result_id": "7e12d379-c98c-4103-bbeb-c90ce2a5aaaa"
+    },
+    {
+      "claim_id": "a903c9a3-4412-4f39-bcfa-ed028ce86cca",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "64cdda07-28a7-41d6-a290-3bd41d24b7b9",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "710786b9-3ef8-4bd3-996d-55582bbd5267",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "f880d1bf-df2d-466c-a8c1-a30b06e483f5",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "e93d0fa2-d32e-4a5d-9bcf-bc7412c76e84",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "baf8b16d-017b-421f-a100-31ea7a10aaab",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "d3033685-0c09-49e3-a75c-1ae0805b70f0",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "c2ffdd11-d303-4aea-886e-95a0216c8d32",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "4846a0dd-ae22-45fb-a2b3-0453a68e027a",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "ff595c8e-eac4-482d-b68b-cfaa38e03308",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "9ba4aa8c-b6b6-4bbd-a774-f3ea2f0a0e96",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "4bcc53d9-15e0-488b-8f10-9add39bf5fe5",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "6bd0d18b-22b0-4bb3-bb00-36d9ddabfaa2",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "e9e56bb4-df72-4986-be11-3119fa60a266",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "5f169059-ab77-4dc7-b99e-f20cc9cb031e",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "118db134-f23f-4170-98ce-c7a705e7abad",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "37408a50-c8f9-443b-8f08-0897b2ba5d04",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "a9d9a8ae-d95b-4be0-b11f-384c3b772abe",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "174ba869-4e1c-488f-bd92-c1077f1eb8cc",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "9467b5d6-ac31-4ed9-9d13-be0f4744c82f",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "48674856-454c-45d5-8d52-85b62ea85cba",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "935fd9e4-265b-4b7d-a30f-98f2a54850d0",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "3613be36-8172-4c60-ba73-1c5c18a40f5e",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "2f093b56-7e1d-4594-beea-400fb2655327",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "4efa4e21-78ab-4fd7-9507-62ea8468572b",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "2d0fc449-6c11-4b83-a354-73cd0e413395",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "6e770291-cd79-43cf-b98a-f681297bfae5",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "f9aba4cb-184e-4af1-8408-33ce6c433eb7",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "7ed70450-8d1a-429a-af55-424101306698",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "90048ca9-3f87-4211-9651-d105c6b96bd3",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "b8178ce8-df2e-4c48-91e1-7639cd7d50a7",
+      "result_id": "a5f729ba-fae8-42ae-96e1-94263907bb57"
+    },
+    {
+      "claim_id": "33b3f687-56d3-4813-90b1-40cc17e6c0c8",
+      "result_id": "18e3b49d-b693-4830-923a-41979164a3f0"
+    },
+    {
+      "claim_id": "8e4d128b-e9dc-4942-b70e-e1659e52c505",
+      "result_id": "18e3b49d-b693-4830-923a-41979164a3f0"
+    },
+    {
+      "claim_id": "0c2e6b40-df30-4a68-9749-60ac4c07cc15",
+      "result_id": "18e3b49d-b693-4830-923a-41979164a3f0"
+    },
+    {
+      "claim_id": "ddf5ff51-c5fa-4e4e-8d92-915d990cf9a6",
+      "result_id": "fa1e6fff-93ba-4913-a0e0-99820c60ba98"
+    },
+    {
+      "claim_id": "25ff6300-2071-4293-a1c7-a0839936afa7",
+      "result_id": "fa1e6fff-93ba-4913-a0e0-99820c60ba98"
+    },
+    {
+      "claim_id": "aff38f4c-7e6a-4518-be1b-c1eb08625459",
+      "result_id": "32662d61-4973-4572-b348-3df5469bbcd9"
+    },
+    {
+      "claim_id": "6f916572-6b68-4789-a90f-1831d9a659a4",
+      "result_id": "32662d61-4973-4572-b348-3df5469bbcd9"
+    },
+    {
+      "claim_id": "043cd820-b15f-4f76-994d-3578170defbf",
+      "result_id": "32662d61-4973-4572-b348-3df5469bbcd9"
+    }
+  ],
+  "comparisons": []
+}

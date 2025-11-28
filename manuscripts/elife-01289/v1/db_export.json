@@ -1,0 +1,1573 @@
+{
+  "submission": {
+    "id": "8569d925-47c3-47f2-9cd9-def6ae3585de",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:54:34.790272Z",
+    "updated_at": "2025-11-28T19:54:34.790272Z"
+  },
+  "content": [
+    {
+      "id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "submission_id": "8569d925-47c3-47f2-9cd9-def6ae3585de",
+      "content_type": "manuscript",
+      "content_text": "# Hydrogen bonds as molecular timers for slow inactivation in voltage-gated potassium channels\n\n## Authors\n\n- Stephan A Pless<sup>1</sup>\n- Jason D Galpin<sup>1</sup>\n- Ana P Niciforovic<sup>1</sup>\n- Harley T Kurata<sup>1</sup>\n- Christopher A Ahern<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Anesthesiology, Pharmacology and Therapeutics University of British Columbia Vancouver Canada\n2. Department of Cellular and Physiological Sciences University of British Columbia Vancouver Canada\n3. Department of Molecular Physiology and Biophysics University of Iowa Iowa City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVoltage-gated potassium (Kv) channels enable potassium efflux and membrane repolarization in excitable tissues. Many Kv channels undergo a progressive loss of ion conductance in the presence of a prolonged voltage stimulus, termed slow inactivation, but the atomic determinants that regulate the kinetics of this process remain obscure. Using a combination of synthetic amino acid analogs and concatenated channel subunits we establish two H-bonds near the extracellular surface of the channel that endow Kv channels with a mechanism to time the entry into slow inactivation: an intra-subunit H-bond between Asp447 and Trp434 and an inter-subunit H-bond connecting Tyr445 to Thr439. Breaking of either interaction triggers slow inactivation by means of a local disruption in the selectivity filter, while severing the Tyr445\u2013Thr439 H-bond is likely to communicate this conformational change to the adjacent subunit(s).\n\n## Introduction\n\nEnzymes and catalytic proteins have evolved to balance the thermodynamic challenges of stability and substrate throughput (Shoichet et al., 1995). Ion channels, for instance, must efficiently interconvert between open, closed and inactivated states to regulate ionic flux across biological membranes. Even small alterations in their function that change the rates of isomerization between states can underlie inherited or acquired diseases (Hille, 2001). Voltage-gated potassium (Kv) channels are tetrameric membrane proteins with a central ion-conducting pore domain, surrounded by four voltage-sensor domains (VSDs), which tightly regulate the conductive state of the pore domain (Figure 1A). The pore domain consists of two transmembrane helices (S5\u2013S6) connected by a re-entrant pore helix, which forms the selectivity filter. Kv channels negatively regulate conductance after channel opening through a process termed inactivation. The rate and extent of inactivation exhibit considerable isoform-dependent differences, which are reflected in the physiological contributions of these channels to cellular excitability in neuronal and cardiac tissues (Bean, 2007; Smith et al., 1996; Spector et al., 1996; Sanguinetti and Tristani-Firouzi, 2006; Aldrich et al., 1979). Inactivation can be described by two kinetically and mechanistically distinct processes termed fast (or \u2018N-type\u2019) inactivation and slow (or \u2018C-type\u2019) inactivation (Hoshi et al., 1991; Kurata and Fedida, 2006; Hoshi and Armstrong, 2013). While the former results from a channel peptide docking within the open cytoplasmic entrance to the permeation pathway (Hoshi et al., 1990, 1991; Zhou et al., 2001), the latter is assumed to involve highly cooperative local conformational changes near the selectivity filter, a notion supported by electrophysiological, structural and computational approaches (Lopez-Barneo et al., 1993; Yellen et al., 1994; Liu et al., 1996, 1997; Starkus et al., 1997; Kiss et al., 1999; Cordero-Morales et al., 2006, 2007; Peng et al., 2007; Cuello et al., 2010a, b; Cordero-Morales et al., 2011; Ostmeyer et al., 2013; van der Cruijsen et al., 2013). However, and despite this available data, fundamental questions persist regarding the precise molecular determinants that mediate the rate of slow inactivation, the basis for cooperativity and the relationship between slow inactivation and the structural integrity of the selectivity filter (Hoshi and Armstrong, 2013). An ongoing challenge is to elucidate how these proteins precisely time the entry into the slow inactivated state in the presence of a sustained voltage stimulus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig1-v1.jpg)\n\n**Figure 1.:** (A) Top view of a Kv channel based on the structure of the tetrameric Kv1.2/2.1 chimera (PDB 2R9R; individual subunits are colored in gray, cyan, green and yellow, respectively). The inset shows a magnified view of the side chains that form the \u2018aromatic cuff\u2019: Trp434, Trp435 and Tyr445 (by numbering in Shaker potassium channels). Note the backbone carbonyls are shown for Tyr445 to highlight their role in the coordination of potassium ions (gray circle); (B) Sequence alignment of the pore helix and the selectivity filter of various potassium channels: Shaker (GI:288442), Kv1.1 (GI:119395748), Kv2.1 (GI:84570020), Kv3.1 (GI:298603), Kv4.1 (GI:8272404), Kv5.1 (GI:24418476), Kv6.1 (GI:24418479), Kv7.1 (GI:6166005), Kv8.1 (GI:7657289), Kv9.1 (GI:219520418), and KCSA (GI: 61226909). Side chains constituting the aromatic cuff are highlighted in gray (see above) and all positions studied here are indicated using their numbering in Shaker potassium channels (these residues correspond to Trp362, Trp363, Ser367, Thr369, Thr370, Tyr373 and Asp375 in the Kv1.2/Kv2.1 [voltage-gated potassium channel isoforms 1.2 and 2.1] chimera crystal structure [PDB 2R9R]).\n\nThe Kv channel pore domain contains intermeshed aromatic side chains, an arrangement termed the \u2018aromatic cuff\u2019 that is located at the extracellular end of the selectivity filter and pore helix (Figure 1). This highly conserved region has long been suggested to play a part in the stability of the pore and likely slow inactivation (Doyle et al., 1998; Larsson and Elinder, 2000; Kurata and Fedida, 2006), yet the dynamic rearrangements during inactivation have remained poorly resolved given that many side chains within this region are intolerant to replacement, likely due to the large chemical and steric changes produced by standard mutagenesis. Here, we bypass this experimental hurdle by employing subtle synthetic derivatives of naturally occurring side chains in combination with concatenated subunits to probe the inter- and intra-subunit atomic determinants that control the onset and cooperativity of slow inactivation in Kv channels.\n\n## Results\n\n### Defining an intra-subunit H-bond between Asp447 and Trp434\n\nCrystallographic data demonstrate the close physical proximity of highly conserved Asp and Trp side chains within the same subunit of potassium channels (Figure 2A) (Doyle et al., 1998; Long et al., 2005). Mutations at these positions (Asp447 and Trp434 by Shaker numbering, which is used throughout the manuscript) elicit drastic changes in channel function, including effects on inactivation (Perozo et al., 1993; Molina et al., 1997, 1998; Yang et al., 1997; Loots and Isacoff, 2000; Loboda et al., 2001; Cordero-Morales et al., 2011). However, functional studies have not demonstrated the chemical basis of the interaction between these two side chains. One previously proposed (Cordero-Morales et al., 2011; Hoshi and Armstrong, 2013), but untested possibility is that a H-bond is formed between the hydrogen on the indole nitrogen of Trp434 and the carboxylate moiety of Asp447, and disrupting this H-bond would promote conformational changes associated with slow inactivation. If correct, then a side chain such as Glu (with altered stereochemistry, but a conserved negatively charged carboxylate), might weaken the interaction but not abolish it completely. By contrast, the virtually isosteric but uncharged Asn side chain should not form a significant H-bond with Trp434 and should thus result in dramatically accelerated inactivation. Indeed, the Asp447Glu mutation leads to a rapid and complete decrease in ionic current (Molina et al., 1997, 1998), and this loss in conductance can be drastically slowed by addition of extracellular tetraethyl ammonium (TEA). This deceleration of current decay in the presence of extracellular TEA is a hallmark of slow inactivation and can serve to discriminate this process from other phenotypes, such as fast inactivation or generic protein dysfunction (Grissmer and Cahalan, 1989; Choi et al., 1991; Molina et al., 1997). The charge-neutralizing Asp447Asn mutation resulted in gating currents only, generally interpreted to reflect an inactivation phenotype too rapid to resolve (Figure 2B and Table 1) (Hurst et al., 1996; Yang et al., 1997; Loots and Isacoff, 1998). Conversely, manipulations of the putative H-bonding partner Trp 434 should cause complimentary effects. For example, if the hydrogen on the indole nitrogen of Trp434 does, indeed, play a critical role in slow inactivation, then removing it should drastically increase the rate of inactivation. However, there are no naturally occurring Trp derivatives that can faithfully test this hypothesis without perturbing the local structure. Other (smaller) aromatic side chains markedly alter channel function: Tyr in position 434 speeds up slow inactivation (and is sensitive to TEA, Figure 2\u2014figure supplement 1), while Phe results in gating currents only (Figure 2C; Table 1) (Perozo et al., 1993; Yang et al., 1997; Cordero-Morales et al., 2011). Thus, while structural data suggests a possible H-bond between Trp434 and Asp447, the available functional data cannot definitely discriminate between the roles of side chain size and/or volume or hydrogen bonding ability being the major determinant of slow inactivation at position 434. We therefore employed synthetic derivatives of Trp to test the hypothesis that a H-bond between Trp434 and Asp447 is a rate-controlling interaction for slow inactivation. If this H-bond is a critical determinant of the rate of slow inactivation, predicted outcomes are that strengthening the interaction should decelerate inactivation, while weakening the putative H-bond would be expected to increase the rate of inactivation. To this end, we introduced F4-Trp (Figure 2D), a fluorinated Trp derivative that increases the acidity of the hydrogen on the indole nitrogen (Deutsch and Taylor, 1987, 1989), while leaving side chain size and hydrophobicity intact. This slowed the rate of slow inactivation by threefold (Figure 2E). However, this slowing is preceded by an initial faster inactivating component in the Trp434TAG + Trp trace (gray trace in Figure 2D), which may stem from a small degree of nonspecific incorporation of (endogenous) amino acids other than the one ligated to the tRNA (in this case Trp). This likely produces an underestimate of the true slowing of inactivation through fluorination as all naturally occurring amino acids other than Trp in position 434 lead to accelerated slow inactivation. As a chemical complement, we sought to incorporate 2-amino-3-indol-1-yl-propionic acid (Ind, Figure 1F) (Lacroix et al., 2012), a synthetic isosteric Trp derivative in which the indole hydrogen cannot act as a H-bond donor. As co-injection of Trp434TAG cRNA and Ind-coupled tRNA alone did not yield measurable ionic currents, Wild type cRNA was mixed with Trp434TAG cRNA and Ind-coupled tRNA. However, even in the presence of WT (Wild type) subunits, the resulting heteromeric channel population displayed a 70-fold increase in inactivation rate (Figure 2G), demonstrating that breaking the proposed Asp447\u2013Trp434 H-bond in the absence of steric perturbation leads to substantially accelerated inactivation. Similar to our recordings with Trp434TAG + Trp alone, we observed an initial fast inactivating component with the Trp434TAG + Trp: WT mix (gray trace in Figure 2F), possibly indicating a small degree of nonspecific incorporation of endogenous amino acids in position 434. However, this also is unlikely to have a major impact on our results because, first, the resulting fast component is a minor component only visually discernible during the initial phase (less than 1 s) of the depolarization and, second, the overall measured effect is likely more affected (slowed) by the presence of the WT subunits that were necessary to obtain ionic currents with Ind-containing subunits. We thus conclude that slow inactivation is amenable to the simple atomic \u2018push/pull\u2019 of a single H-bond, and manipulation of the strength of this H-bond generates a spectrum of inactivation rates, that can be tuned to occur faster or slower than what is observed in WT channels.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig2-v1.jpg)\n\n**Figure 2.:** (A) Structure of a Kv1.2/2.1 chimera (2R9R) pore region demonstrating the physical proximity of Asp447 and Trp434 (Shaker residue numbering); (B) Chemical structures of side chains at position 447 and (normalized) representative currents for Asp447 (WT), Asp447Glu and Asp447Asn (\u221280 mV to +20 mV in 10 mV increments). Inset for Asp447Glu shows the traces recorded for a pulse to +20 mV in the absence and presence of 30 mM TEA (see Figure 2\u2014figure supplement 1 for further details); (C) Chemical structures of side chains at position 434 and (normalized) representative currents for Trp434 (WT), Trp434Tyr and Trp434Phe (\u221280 mV to +20 mV, 10 mV increments). Inset for Trp434Tyr shows the traces recorded for a pulse to +20 mV in the absence and presence of 30 mM TEA (see Figure 2\u2014figure supplement 1 for further details). Unlike the Trp434Phe mutant the Asp447Asn mutant remained nonconducting on the Thr449Val background as shown in Figure 2\u2014figure supplement 2; the vertical scale bar indicates 1 \u03bcA; (D)/(F) Left panels: model for the Asp447\u2013Trp434 pair (based on PDB 2R9R) for either Trp and F4-Trp (D) or Trp and Ind (F); Right panels: normalized sample currents for WT, Trp434TAG + Trp or Trp434TAG + F4-Trp (D) or WT, Trp434TAG + Trp: WT or Trp434TAG + Ind: WT (F). The initial faster decay of the gray traces in (D) and (F) may indicate that a very small fraction of channels has incorporated amino acids other than the one ligated to the tRNA, see text for details. Note that for the experiments in (F) and (G) WT cRNA was mixed with Trp434TAG cRNA to account for the fact the Trp434TAG + Ind alone did not yield measurable ionic currents (see \u2018Materials and methods\u2019 for details). Note the different time scales in (D) and (F); (E)/(G) Averaged inactivation time constants for the constructs shown in (D) and (E), respectively. Single exponentials were fit to the entire (45 s) depolarizations in (D), while in (F) the time constants for Ind were determined by fitting only the initial 500 ms of the depolarization (5 s for WT and Trp434TAG + Trp: WT); Note the logarithmic scaling in (G); *p<0.05 (WT vs mutants).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)/(B) Recordings with Asp447Glu (A) and Trp434Tyr (B) in the absence (black) or presence of 30 mM TEA (\u221280 mV to +20 mV, 10 mV increments), clearly demonstrating their sensitivity to extracellular TEA, a hallmark of slow inactivation. The insets show the inactivation time constants at + 20 mV for WT and Asp447Glu or Trp434Tyr in the absence or presence of TEA; single exponentials were fit to the rst 100 ms (Asp447Glu control) or the entire length of the depolarization (all other currents shown above); *p=0.05 (WT vs mutant), **p=0.05 (control vs TEA for mutants).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)/(B) Representative currents of Trp434Phe (A) and Asp447Asn (B) on either the WT background (black) or the Thr449Val background (red) (\u221280 mV to +20 mV, 10 mV increments; the vertical scale bar indicates 1 \u03bcA).\n\n**Table 1.**\n Mutants that result in gating currents only show very similar gating charge-voltage (QV) relations\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Construct</th>\n      <th>V1/2 (mV)</th>\n      <th>Z</th>\n      <th>n</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Trp434Phe</td>\n      <td>\u221252.9 \u00b1 0.9</td>\n      <td>5.2 \u00b1 0.3</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Asp447Asn</td>\n      <td>\u221253.4 \u00b1 0.9</td>\n      <td>5.3 \u00b1 0.3</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Thr439Val</td>\n      <td>\u221251.0 \u00b1 1.4</td>\n      <td>5.5 \u00b1 0.3</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Tyr445Ala</td>\n      <td>\u221250.3 \u00b1 2.1</td>\n      <td>5.3 \u00b1 0.4</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\n_Displayed are the values for the midpoints (V1/2), the amount of gating charge (Z) of the QVs (derived from the OFF gating currents) and the number of experiments conducted (n)._\n\nSlow inactivation is highly cooperative (Ogielska et al., 1995; Panyi et al., 1995; Yang et al., 1997) and the single mutation, Trp434Phe, in the first of four concatenated subunits accelerates slow inactivation (Yang et al., 1997). We reasoned that the phenotype obtained by breaking the putative H-bond through manipulations at Trp434 should be mimicked by mutations at the complementary Asp447 site. Indeed, the Asp447Glu mutation in the first of four concatenated Shaker subunits accelerated inactivation rates, similar to those obtained from Trp434Phe concatemers (Figure 3A,B). Together, these data support the notion that the strength of the Asp447\u2013Trp434 intra-subunit H-bond is directly correlated with slow inactivation rate, suggesting that breaking of this interaction is an intrinsic timing mechanism that tightly regulates Kv channel activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig3-v1.jpg)\n\n**Figure 3.:** (A) Concatemer structure and (normalized) representative currents (5 s pulses from \u221220 mV to +20 mV, 10 mV increments) for WT, Trp434Phe and Asp447Glu concatemers, respectively. The vertical scale bars indicate 2 \u03bcA. The insets show recording from the same cells in the presence of 30 mM TEA; (B) Averaged inactivation rates (logarithmic scaling) over different voltages for the constructs shown in (A). Note that for the Trp434Phe and Asp447Glu concatemers only the first 2 s of the depolarization were fit with a single exponential. To avoid a potential bias of this approach, we have also analyzed the time to half-maximal current for all constructs. Importantly, this approach yielded similar results, see Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The decay of ionic current of WT, Trp434Phe and Asp447Glu concatemers was either fit with a single exponential (colored symbols, reproduced from Figure 3B) or quantfied by analyzing the time to half-maximal current (empty symbols). Displayed is the data for depolarizations to +20 mV; note that long (20 s) depolarizations were necessary to determine the time to half-maximal current for WT concatemers.\n\n### A novel inter-subunit H-bond with a pivotal role in slow inactivation\n\nStructural evidence suggests that Trp435 (Figure 4A) forms an inter-subunit H-bond via its hydrogen on the indole nitrogen with the Tyr445 hydroxyl (Doyle et al., 1998; Larsson and Elinder, 2000; Kurata and Fedida, 2006), and therefore substitution of Tyr or Phe for Trp435 would be expected to disrupt this H-bond, and potentially accelerate inactivation (as observed for aromatic substitutions of the adjacent Trp434 residue). However, while the Trp435Ala mutation produced non-functional channels (as suggested by the absence of ionic or gating currents), Tyr and Phe substitutions at position 435 resulted in WT-like slow inactivation rates (Figure 4B,C), ruling out a role for Trp435 H-bonding in slow inactivation. However, the Tyr445Phe mutation results in a mix of gating current and ionic current, with markedly accelerated slow inactivation (Harris et al., 1998) (a phenotype antagonized by TEA) (Figure 4D, Figure 4\u2014figure supplement 1). Furthermore, Tyr445Ala channels exhibited gating currents akin to Trp434Phe channels (Figure 4D; Table 1) (Heginbotham et al., 1994). Interestingly, crystallographic data (Doyle et al., 1998; Long et al., 2007) place the Tyr445 hydroxyl within 3 \u00c5 of the hydroxyl moiety of a conserved Thr or Ser side chain (Thr439 in Shaker, Figure 1B), raising the intriguing possibility of an uncharacterized inter-subunit interaction between Tyr445 and Thr439. Consistent with this possibility, the Thr439Val mutant exhibited exclusively gating currents (Figure 4E), while the Thr439Ser mutation resulted in a modest threefold faster inactivation than observed for WT channels, likely indicating a minor role for the Thr439 methyl group in slow inactivation (Figure 4E, Figure 4\u2014figure supplement 3). Further, and unlike the Trp434Phe mutation (Kitaguchi et al., 2004), introducing Tyr445Ala, Tyr445Val or Thr439Val on the Thr449Val background did not slow inactivation to an extent that ionic currents could be observed (Figure 4\u2014figure supplement 3). While these data point to an inter-subunit H-bond between Tyr445 and Thr439, they do not inform on the cooperativity between individual subunits or whether this interaction contributes to the same extent as the Asp447\u2013Trp434 H-bond. However, we speculated that breaking this inter-subunit H-bond may have a more pronounced effect when introduced in only a single subunit, compared to the intra-subunit Trp434\u2013Asp447 H-bond. Consistent with this possibility, either the Tyr445Ala or the Thr439Val mutation in the first of four concatenated Shaker subunits (Figure 5A) had similar phenotypes, with a clearly biphasic inactivation phenotype composed of fast (around 50 ms) and WT-like slow (around 3 s) components (Figure 5B). The fast component was affected by TEA, implicating a slow inactivation mechanism (Figure 5\u2014figure supplement 1). The sizable gating currents at hyperpolarized potentials (Figure 5\u2014figure supplement 2) suggest that either mutation (one per concatenated tetramer) reduces the ratio of ionic current to gating charge at a given voltage, an effect that would arise if a significant portion of channels rapidly adopt a non-conducting conformation. To further test this possibility, the pore blocker agitoxin II (Eriksson and Roux, 2002; Banerjee et al., 2013) was used to assay the gating currents as a metric for normalization of the number of channels present in the cell, and thus permitting an estimate of the relative reduction in ionic current in the mutant concatemers relative to WT concatemers. Indeed, we found the ratio of ionic current to gating charge to be significantly reduced in both mutant concatemers (Figure 5C), suggesting that a sizable proportion of channels rapidly enter an inactivated state upon depolarization. This behavior is further illustrated in Figure 5D, where currents from Tyr445Ala or Thr439Val concatemers were normalized to WT (by gating charge), thus emphasizing the very rapid and near-complete inactivation in Tyr445Ala and Thr439Val concatemers. These experiments establish a previously unidentified inter-subunit H-bond between Thr439 and Tyr445 that controls slow inactivation in Kv channels.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig4-v1.jpg)\n\n**Figure 4.:** (A) Structure of a Kv1.2/2.1 chimera (2R9R) pore region demonstrating the physical proximity of Tyr445 to both Thr439 and Trp435 on the adjacent subunit (Shaker residue numbering). Note that the position equivalent to position 439 in Shaker (Thr439) is a serine in the Kv1.2/2.1 chimera; (B) Chemical structures of side chains at position 435 and representative currents for Trp435 (WT), Trp435Tyr and Trp435Phe (\u221280 mV to +20 mV, 10 mV increments). The vertical scale bar indicates 1 \u03bcA; (C) Representative normalized currents for a 45 s depolarization to +20 mV for Trp435 (WT), Trp435Tyr and Trp435Phe. Inset shows average inactivation time constants for the constructs shown in (B) (single exponential fit over the entire duration of the depolarization); (D)/(E) Chemical structures and (normalized) representative currents for different side chains in position 445 (D) and 439 (E), respectively (\u221280 mV to +20 mV, 10 mV increments). The vertical scale bars indicate 1 \u03bcA, note the different time scales. Inset for Tyr445Phe shows the traces recorded for a pulse to +20 mV in the absence and presence of 30 mM TEA (see Figure 4\u2014figure supplement 1 for further details). The Tyr445Ala and Thr439Val mutants remained nonconducting on the Thr449Val background as shown in Figure 4\u2014figure supplement 2. The inactivation time constant (\u03c4) for Thr439Ser was 948 \u00b1 30 ms compared to 3247 \u00b1 186 ms for WT channels (see Figure 4\u2014figure supplement 3 for further details).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Recordings with Tyr445Phe in the absence (black) or presence of 30 mM TEA (green) (\u221280 mV to +20 mV, 10 mV increments), clearly demonstrating the sensitivity to extracellular TEA, a hallmark of slow inactivation; (B) Inactivation time constants at + 20 mV for WT and for Tyr445Phe in the absence or presence of TEA; single exponentials were fit to the entire 200 ms of the depolarization; *p<0.05 (WT vs Tyr445Phe), **p<0.05 (control vs TEA for Tyr445Phe).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A)/(B) Representative currents of Tyr445Ala and Tyr445Val (A) and Thr439Val (B) on either the WT background (black) or the Thr449Val background (red) (\u221280 mV to +20 mV, 10 mV increments; the vertical scale bar indicates 1 \u03bcA).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) GVs for Thr439Ser (V1/2 Thr441Ser: \u221228.4 \u00b1 0.3 mV; vs V1/2 for WT: \u221223.5 \u00b1 0.9 mV); (B) Representative currents for WT and Thr439Ser (5 s pulses from \u221220 mV to +20 mV, 10 mV increments); (C) Averaged inactivation rates at +20 mV for WT and Thr439Ser, respectively; *p<0.05.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig5-v1.jpg)\n\n**Figure 5.:** (A) Concatemer structure and representative currents (5 s pulses from \u221220 mV to +20 mV, 10 mV increments) for WT, Tyr445Ala and Thr439Val concatemers, respectively. The vertical scale bars indicate 2 \u03bcA. The insets compare normalized currents in response to a +20 mV step for WT and Tyr445Ala or Thr439Val concatemers over a short (200 ms) time scale (see Figure 5\u2014figure supplement 1 for details on TEA sensitivity; see Figure 5\u2014figure supplement 2 for gating currents at hyperpolarized potentials with Tyr445Ala and Thr439Val concatemers); (B) Averaged inactivation time constants over different voltages for the constructs shown in (A), with rates for Tyr445Ala and Thr439Val concatemers split into fast and slow components (single exponentials were fit to the first 50 ms and the remainder of the depolarization, respectively). Note the logarithmic scaling; (C) Ratio of maximal ionic current to gating charge (both recorded at +20 mV) for WT, the Tyr445Ala and the Thr439Val concatemers (gating currents were recorded in the presence of 10 \u03bcM agitoxin II, not shown); *p<0.05 (WT vs mutants); (D) Comparison of ionic currents recorded at +20 mV normalized to the amount of gating charge recorded from WT concatemers and the Tyr445Ala (left panel) and the Thr439Val (right panel) concatemers, respectively.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)/(C) Representative recordings from Thr439Val (A) and Tyr445Ala (C) concatemers in the absence (black) or presence (green) of 30 mM TEA (\u221220 mV to +20 mV, 10 mV increments), clearly demonstrating their sensitivity to extracellular TEA, a hallmark of slow inactivation; (B)/(D) Averaged inactivation time constants at +20 mV for Thr439Val (B) and Tyr445Ala (D) concatemers (single exponentials were fit to the first 50 ms of the control, and to the entire 200 ms of the depolarization in the presence of TEA).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A)/(B) Representative currents of Tyr445Ala concatemers (A) and Thr439Val concatemers (B) showing signicant gating currents before the onset of ionic currents at around \u221240 mV (50 ms depolarizations from a holding potential to the indicated test potential).\n\n### Thr441 and Thr442 are essential for channel function but not slow inactivation\n\nThr441 and Thr442 are highly conserved amongst Kv channels and are favorably located at the junction of selectivity filter and pore helix (Figure 6A) for a possible role in pore stability and/or slow inactivation. We aimed to compare the relative contribution of Thr441 and Thr442 to slow inactivation with more extracellular structural elements of the selectivity filter. Interestingly, mutations here produce vastly different outcomes (depending on the amino acid substitution), including loss-of-function, alterations in open state stability, and the appearance of subconductance states with diminished selectivity (Yool and Schwarz, 1991; Heginbotham et al., 1994; Zheng and Sigworth, 1997). Consistent with these reports, we found that valine substitutions a 441 and 442 had severe consequences: while Thr442Val displayed a non-expressing phenotype (Figure 6C) (Zheng and Sigworth, 1997), the Thr441Val mutation resulted in voltage-dependent currents both in the inward and the outward direction, as well as reduced potassium selectivity (Figure 6B, Figure 6\u2014figure supplement 1), suggesting a significant perturbation of the local structure. However, Thr441Ser channels displayed a WT-like GV whereas Thr442Ser channels displayed a modest left-shifted activation relationship, yet both had inactivation behaviors similar to WT channels (Figure 6B,C, Figure 6\u2014figure supplement 2), supporting the notion that the hydroxyl moieties at positions 441 and 442 support normal pore function (in addition to the proposed role of the Thr442 methyl group in ion binding (Rossi et al., 2013)). However, despite the disruptive phenotypes observed in homotetrameric Thr441Val or Thr442Val channels, single subunit mutations had minimal effects in the background of a concatenated tetramer (Figure 6D,E). Thus, hydroxyl removal at either 441 or 442 produces channel phenotypes that are very mild compared to perturbations within the aromatic cuff, and importantly, their effects are not propagated to other subunits in the channel tetramer, suggesting they are unrelated to the cooperative mechanism of slow inactivation. We believe this is an important finding as it demonstrates that severe functional consequences of mutations at the selectivity filter are not necessarily linked to changes in slow inactivation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig6-v1.jpg)\n\n**Figure 6.:** (A) Structure of a Kv1.2/2.1 chimera (2R9R) pore region highlighting the positions of Thr441 and Thr442 at the bottom of the selectivity filter (Asp447 and Trp434 are shown for reference; all by Shaker numbering); (B, C) Chemical structures and (normalized) representative currents for different side chains in position 441 (B) and 442 (C), respectively (\u221280 mV to +20 mV, 10 mV increments for WT, Thr441Ser and Thr442Ser; \u2212200 mV to +150 mV, 10 mV increments for Thr441Val and a single pulse to +20 mV for Thr442Val). Note that recordings for Thr441Val were conducted from a holding potential of 0 mV with no leak subtraction. The vertical scale bars indicate 1 \u03bcA. See Figure 6\u2014figure supplement 1 for details on the loss of potassium selectivity of Thr441Val. GVs and inactivation behavior of Thr441Ser and Thr442Ser are shown in Figure 6\u2014figure supplement 2; (D) Concatemer structure and representative currents (5 s pulses from \u221220 mV to +20 mV, 10 mV increments) for WT, Thr441Val and Thr442Val concatemers, respectively. The vertical scale bars indicate 2 \u03bcA. The small inward tail current for Thr441Val could indicate reduced potassium selectivity; (E) Averaged inactivation time constants over different voltages for the constructs shown in (D); similar results were obtained with longer (20 s) depolarizations, see Figure 6\u2014figure supplement 3.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Current vs voltage plot for the Thr441Val mutant (n = 9). The inset shows that the current reverses around \u221240 mV.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A)/(D) GVs for Thr441Ser (A) and Thr442Ser (V1/2 Thr441Ser: \u221219.7 \u00b1 1.5 mV; V1/2 Thr442Ser: \u221245.6 \u00b1 0.6 mV; vs V1/2 for WT: \u221223.5 \u00b1 0.9 mV); (B)/(E) Representative currents for WT and Thr441Ser (B) and WT and Thr442Ser (E), respectively (5 s pulses from \u221220 mV to +20 mV, 10 mV increments); (C)/(F) Averaged inactivation rates at +20 mV (fit with a single exponential) for WT and Thr441Ser (C) and WT and Thr442Ser (F), respectively; *p\u22640.05.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Averaged inactivation time constants obtained from WT, Thr441Val and Thr442Val concatemers by fitting the current decay during 5 s (colored symbols, reproduced from Figure 6E) or 20 s (empty symbols) depolarizations to +20 mV with a single exponential.\n\n## Discussion\n\nDespite intense experimental scrutiny for almost 25 years, the molecular and atomic origin(s) of the ability of Kv channels to enter a non-conducting conformation in the presence of a sustained (voltage) stimulus has remained enigmatic. A major challenge with addressing the contribution of individual side chains in the selectivity filter and pore helix to slow inactivation is that many amino acids lack naturally occurring analogs that allow subtle manipulation without dramatic disruption of the overall structure of this critical protein region. Furthermore, since slow inactivation is tightly coupled to ion occupancy in the selectivity filter, it has been difficult to distinguish direct effects on the mechanistic underpinnings of slow inactivation from indirect effects arising from changes in the structural integrity of the selectivity filter. Here, we overcome this hurdle by employing subtle synthetic analogs of naturally occurring amino acids and by introducing isolated mutations in single subunits.\n\nWhen using concatenated Shaker constructs to introduce single mutations in a fourfold symmetric channel, it is crucial to confirm that the concatenated subunits do not form functional channels that vary in their stoichiometry from that predicted from the cloning strategy. Albeit possible (McCormack et al., 1992; Hurst et al., 1995), we believe the constructs used here assemble correctly for three reasons. First, the Thr439Val concatemers and the Tyr445Ala concatemers showed almost complete inactivation over a period of only 200 ms (when corrected for the amount of gating charge). Second, we observed very low ratios of Imax to Qmax for Thr439Val concatemers and Tyr445Ala concatemers. Both scenarios are not compatible with the idea of a significant WT-only channel subpopulation; Lastly, Sigworth and co-workers have used the same concatemers and successfully demonstrated that channels containing only a single mutated subunit generally assemble in the correct stoichiometry (Yang et al., 1997). We conclude that the (vast majority of) concatemers assemble correctly, although we cannot ultimately rule out a small subpopulation of channels with WT-like slow inactivation.\n\nFurther, we employed fluorinated Trp derivatives, which have been used extensively to probe electrostatic (cation-pi) interactions (Dougherty, 1996) between Trp side chains and organic cations as fluorination allows a step-wise dispersion of the electronegative surface potential of aromatic side chains (Pless and Ahern, 2013). As such, our finding that F4-Trp in position 434 significantly slows channel inactivation could be interpreted as a result of a cation-pi interaction at Trp434 that is being diminished by fluorination. However, if this were true, Ind, a synthetic amino acid which lacks H-bonding ability, should have no effect on channel inactivation as it is isosteric and isoelectric to the native Trp side chain. By contrast, we observe a substantial increase in the rate of slow inactivation with Ind in position 434, a result not compatible with the notion of an energetically significant cation-pi interaction at Trp434. We thus conclude that it is the ability of the indole nitrogen to participate in a H-bond that regulates the strength of the intra-subunit interaction between Trp434 and Asp447.\n\nTogether, our experimental approaches provide strong evidence for two H-bonds that are critical for slow inactivation of Kv channels: one that confers stability within an individual subunit (the Trp434\u2013Asp447 interaction), and a second that stabilizes the relative orientation of two adjacent subunits (the Tyr445\u2013Thr439 interaction) (Figure 7). Although disruption of the Trp434\u2013Asp447 interaction has profound effects on slow inactivation, breaking of the Tyr445\u2013Thr439 interaction elicits more functionally significant phenotypes. We surmise that these comparatively more severe phenotypes seen when disrupting the Tyr445\u2013Thr439 pair arise from its location at the inter-subunit interface, but cannot exclude the possibility that this difference arises from the fact that the Tyr445 backbone carbonyl is also directly involved in coordinating permeant ions. Furthermore, the Tyr445\u2013Thr439 interaction is, to our knowledge, the first evidence for an inter-subunit interaction contributing to slow inactivation, possibly providing an explanation for the observed subunit cooperativity during slow inactivation. However, although previous studies have suggested evidence for both constriction (Baukrowitz and Yellen, 1996; Liu et al., 1996, 1997) and dilation (Hoshi and Armstrong, 2013) of the selectivity filter, the data here is not definitive in distinguishing these models of slow inactivation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01289/elife-01289-fig7-v1.jpg)\n\n**Figure 7.:** (A) The left panel shows a top view of pore helix and selectivity filter (based on the Kv1.2/2.1 chimera structure (2R9R); individual subunits are colored in gray, cyan, green and yellow, respectively). Note the backbone carbonyls are shown for Tyr445 to highlight their role in the coordination of potassium ions (gray circle). The center panel highlights the two proposed H-bonds: Thr439\u2013Tyr445 (inter-subunit, red oval,) and Asp447\u2013Trp434 (intra-subunit, blue oval), all by Shaker numbering. The panel on the right compares the averaged inactivation time constants over a range of voltages for different concatemers (data reproduced from Figure 3 and Figure 5; note that for Tyr445Ala and Thr439Val only the fast components are displayed). Note the arrows pointing to the respective interactions in the model in the center.\n\nThe notion that side chains critical to slow inactivation cluster around the \u2018aromatic cuff\u2019 (formed between the extracellular end of the selectivity filter and the pore helix) is further supported by the marked differences between side chains at the outer vs the inner end of the selectivity filter and pore helix: only those located around the \u2018aromatic cuff\u2019 result in notable effects on slow inactivation that are propagated to the entire channel (Figures 2\u20135), while those residing in the middle or lower section of the selectivity filter do not affect slow inactivation (see Figure 6 for positions 441 and 442; see (Heginbotham et al., 1994) for position 443).\n\nOverall, the results point towards an intriguing molecular explanation for the mechanism of slow inactivation: upon depolarization and channel opening, the stability of the channel open state is proportional to the strength of two H-bonds that regulate entry into slow inactivation, thus endowing Kv channels with an intrinsic timing mechanism that tightly regulates their biological activity. During a sustained voltage stimulus, channels experience a sequential breaking of the Trp434\u2013Asp447 and Tyr445\u2013Thr439 H-bonds and given the relative arrangement of their hydroxyl moieties this would likely result in an anti-clockwise swivel movement of the Tyr445 backbone carbonyl away from the permeation pathway, ultimately disrupting the coordination and occupancy of potassium ions at the outer end of the selectivity filter. Such a scenario would lead to mutual repulsion between the Tyr445 backbone carbonyls of the remaining three subunits (Almers and Armstrong, 1980; Hoshi and Armstrong, 2013), further lowering filter-occupancy at its outer mouth. The resulting strain could trigger a cascade of disrupted H-bonds critical to inactivation near the extracellular end of the selectivity filter in all subunits, ultimately resulting in a fully inactivated channel.\n\n## Materials and methods\n\n### Molecular biology and in vivo nonsense suppression\n\nShaker IR (Inactivation Removed by deletion of amino acids 6\u201346) cDNA in pBSTA was used as the parent clone unless stated otherwise (note that Cys301 and Cys308 were present). For mutations, standard site-directed mutagenesis was employed in combination with automated sequencing to confirm successful incorporation of mutations. For experiments with concatenated Shaker tetramers (Yang et al., 1997), mutations were introduced in the first of the four subunits only: the first subunit was subcloned into pBSTA with SacI and XbaI, and standard site-directed mutagenesis was used to introduce mutations followed by sequence verification. Next, the mutated construct was subcloned (with SacI and XbaI) back into the parent concatemer.\n\nFor electrophysiology experiments, Stage V-VI Xenopus oocytes were prepared, and injected with cRNA transcribed with the T7 mMessage mMachine kit (Ambion, Austin, TX) as previously described (Pless et al., 2013). Oocytes were incubated at 18\u00b0C and all recordings were conducted within 12\u201372 hr after injection. The fluorinated Trp derivative F4-Trp (4,5,6,7-F4-Trp) was purchased from Asis Chem (Watertown, MA) and the Trp analog 2-Amino-3-indol-1-yl-propionic acid (Ind) was synthesized as described previously (Lacroix et al., 2012). The principle of the in vivo nonsense suppression methodology is outlined elsewhere (Pless and Ahern, 2013). In short, nitroveratryloxycarbonyl (NVOC) was used to protect the amine of the synthetic amino acid, while the carboxyl group was activated as the cyanomethyl ester for coupling to the dinucleotide pdCpA (Dharmacon, Lafayette, CO). The resulting product was stored in DMSO at \u221280\u00b0C before enzymatic ligation to a modified (G73) Tetrahymena thermophila tRNA, which was synthesized using an oligonucleotide by Integrated DNA Technologies (Coralville, IA) as a template. The NVOC protection group of the aminoacylated tRNA-UAA was removed directly prior to co-injection with the cRNA by UV irradiation for 8 min at 400 W. In a typical experiment, 10\u201380 ng of tRNA-UAA and 25\u201350 ng of cRNA were co-injected in a 50 nl vol. In control experiments, the tRNA coupled to pdCpA (without an appended synthetic amino acid) was co-injected with the Trp434TAG cRNA. The control did not yield currents larger than for uninjected oocytes, ruling out significant levels of non-specific amino acid incorporation, or re-charging of the tRNA with endogenous amino acids. Note that incorporation of Ind at position 434 did not result in measurable ionic currents. This was expected given the results with the conventional Trp434Tyr and Trp434Phe mutants, as side chains in position 434 with no propensity to contribute to a H-bond (such as Ind) were shown to result in gating currents only. However, the nonsense suppression method is generally not efficient enough to establish current levels of necessary magnitude to resolve gating currents, even for sites with exceptionally high incorporation efficiency (Pless et al., 2011, 2013). We thus co-injected WT Shaker cRNA with the Trp434TAG cRNA for incorporation of Ind. Despite the high degree of cooperativity between subunits (Figure 3 and Figure 5), this likely results in slower and less complete slow inactivation than would be expected for Ind-containing subunits alone and the 70-fold increase in inactivation rate (Figure 2) is likely to be an underestimate of the real acceleration of inactivation induced by the Ind side chain in position 434.\n\n### Electrophysiology and data analysis\n\nTwo electrode voltage-clamp recordings were conducted with an OC-725C voltage clamp (Warner, Hamden, CT) in standard Ringers solution (in mM): 116 NaCl, 2 KCl, 1 MgCl2, 0.5 CaCl2, 5 HEPES (pH 7.4). TEA (St. Louis, MO) and agitoxin-II (Alomone Labs, Jerusalem, Israel) were dissolved in Ringers and stored at \u221220\u00b0C until use. Glass microelectrodes with resistances of 0.1\u20131 M\u03a9 were backfilled with 3 M KCl. Currents were acquired using leak subtraction and from a holding potential of \u221280 mV, unless stated otherwise. To obtain conductance-voltage (GV) relationships, isochronal tail current amplitudes were plotted vs the depolarizing pulse potential. All data = mean \u00b1 SEM; Student\u2019s t test was used to determine statistically significant differences. To obtain gating charge-voltage (QV) relationships, the total area of the off gating charge was plotting against the depolarizing pulse potential.\n",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "920f4c21-678d-40a9-b11f-43195a79c416",
+      "submission_id": "8569d925-47c3-47f2-9cd9-def6ae3585de",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01289.022](https://doi.org/10.7554/eLife.01289.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cHydrogen bonds as molecular timers for slow inactivation in voltage-gated potassium channels\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 2 reviewers.\n\nThe Reviewing editor and the two reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nUsing the atomic structure of Kv1.2/2.1 as the roadmap, Pless et al. ask a series of specific questions regarding the mechanism of C-type inactivation focusing on the hydrogen bonds near the selectivity filter. For example, is the (probable) hydrogen bond between W434 and D447 important in C-type inactivation of Shaker potassium channels? Despite the efforts by many, the exact mechanism of C-type inactivation remains mysterious and any specific and firm mechanistic information will be appreciated by those in the field and this study has potential to make an important contribution. The use of unusual amino acids using the in vivo nonsense suppression method brings a fresh approach to study C-type inactivation. The overall experimental rationale/design is straightforward, the experiments are elegant and the conclusions are for the most part solid.\n\nThere are two major central issues that must be addressed:\n\n1) The overly simplistic treatment of inactivation kinetics must be corrected, taking into account the existence of non-exponential decay.\n\nPerhaps the most problematic issue with the study described in this manuscript may lie in the data analysis/interpretation and the data description (e.g., the manuscript text). Many of the sample ionic currents involving the in vivo nonsense suppression method exhibit double-exponential inactivation kinetics (e.g., Figure 2D blue, Figure 2F gray, and Figure 2H W434F blue). Except for Figure 1F gray and blue, it is not clear what is responsible for the double exponential character. Is it possible that the nonsense suppression method was not perfect? Given the double exponential character, it is also unclear how the currents were analyzed to estimate the time constant values plotted in the figures. It is also uncertain how the \u201crate of entry into slow inactivation\u201d often mentioned in the text is estimated. Additionally, the manuscript does not report any attempt to separate the entry and recovery rates \u2013 this would be important because many of the sample currents shown (e.g., Figure 2D, 2F, 2H; Figure 3C) suggest that the inactivated state at depolarized test voltages was not an absorbing state and the recovery rate constant value was appreciable (as evidenced by \u201csteady-state\u201d currents in the sample data shown). If the authors really wish to address the stability of the open state (as opposed to the stability of the inactivated state), they may wish to separate them out.\n\n2) The work has little power (or relevance) in distinguishing between the pore collapse and pore dilation hypotheses of inactivation. Speculation along these lines should be eliminated. Likewise the distinction between pore stability and inactivation is weak and should be toned down.\n\nThe data presented on the perturbation analysis done on positions Thr441 and Thr442 although extremely interesting are not conclusive evidence to rule out \u201cpore stability and selectivity filter from C-type inactivation\u201d. These far-reaching conclusions have not been systematically addressed by the authors. The fact that the authors introduce the mutation on the first subunit of the tandem tetramer and they saw no effect implies that one subunit is not sufficient to affect slow inactivation and it might need more than one, but concluding that we should \u201cconceptually dissociate pore stability and selectivity filter from C-type inactivation\u201d is mere speculation that is not demonstrated in this paper.\n",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fa2c7d9f-ac43-4c5d-96f1-fbba2597b8a5",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C1",
+      "claim": "Voltage-gated potassium (Kv) channels enable potassium efflux and membrane repolarization in excitable tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-gated potassium (Kv) channels enable potassium efflux and membrane repolarization in excitable tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field of ion channel physiology, supported by extensive prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "29314d26-c4d6-473d-aa4a-ecf20e98bbdb",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C2",
+      "claim": "Many Kv channels undergo a progressive loss of ion conductance in the presence of a prolonged voltage stimulus, termed slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Many Kv channels undergo a progressive loss of ion conductance in the presence of a prolonged voltage stimulus, termed slow inactivation, but the atomic determinants that regulate the kinetics of this process remain obscure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known phenomenon in Kv channel biophysics, supported by decades of research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "bab50a08-6c05-41ba-9f8a-6058546b508b",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C3",
+      "claim": "An intra-subunit H-bond exists between Asp447 and Trp434 in Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a combination of synthetic amino acid analogs and concatenated channel subunits we establish two H-bonds near the extracellular surface of the channel that endow Kv channels with a mechanism to time the entry into slow inactivation: an intra-subunit H-bond between Asp447 and Trp434 and an inter-subunit H-bond connecting Tyr445 to Thr439.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data using synthetic amino acid analogs and concatenated subunits presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "b19d37a6-5daa-49f0-a0ea-522ed5ea6a52",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C4",
+      "claim": "An inter-subunit H-bond exists between Tyr445 and Thr439 in Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a combination of synthetic amino acid analogs and concatenated channel subunits we establish two H-bonds near the extracellular surface of the channel that endow Kv channels with a mechanism to time the entry into slow inactivation: an intra-subunit H-bond between Asp447 and Trp434 and an inter-subunit H-bond connecting Tyr445 to Thr439.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data using synthetic amino acid analogs and concatenated subunits presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "b7d5a129-b08d-49dd-b300-29a94783de5a",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C5",
+      "claim": "Breaking the Asp447-Trp434 H-bond triggers slow inactivation by means of a local disruption in the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Breaking of either interaction triggers slow inactivation by means of a local disruption in the selectivity filter, while severing the Tyr445\u2013Thr439 H-bond is likely to communicate this conformational change to the adjacent subunit(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that mutations disrupting this H-bond accelerate slow inactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "56e0a29c-0498-42e0-9107-50d1a81ad569",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C6",
+      "claim": "Breaking the Tyr445-Thr439 H-bond triggers slow inactivation by means of a local disruption in the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Breaking of either interaction triggers slow inactivation by means of a local disruption in the selectivity filter, while severing the Tyr445\u2013Thr439 H-bond is likely to communicate this conformational change to the adjacent subunit(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that mutations disrupting this H-bond accelerate slow inactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "90d08f25-6a7f-45d8-bfad-ce1251763a4c",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C7",
+      "claim": "Severing the Tyr445-Thr439 H-bond communicates conformational changes to adjacent subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Breaking of either interaction triggers slow inactivation by means of a local disruption in the selectivity filter, while severing the Tyr445\u2013Thr439 H-bond is likely to communicate this conformational change to the adjacent subunit(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing inter-subunit effects.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "cc42403e-caa4-4dfd-98cf-336878db1240",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C8",
+      "claim": "Kv channels are tetrameric membrane proteins with a central ion-conducting pore domain surrounded by four voltage-sensor domains (VSDs).",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-gated potassium (Kv) channels are tetrameric membrane proteins with a central ion-conducting pore domain, surrounded by four voltage-sensor domains (VSDs), which tightly regulate the conductive state of the pore domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a well-established structural feature of Kv channels, supported by crystallographic data and referenced in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "c3756767-9db7-4e6d-84e2-186637799f26",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C9",
+      "claim": "The pore domain of Kv channels consists of two transmembrane helices (S5-S6) connected by a re-entrant pore helix, which forms the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The pore domain consists of two transmembrane helices (S5\u2013S6) connected by a re-entrant pore helix, which forms the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established structural feature of Kv channels, supported by crystallographic data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "3eb6f216-3b51-45f9-9d02-8b84aaf96798",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C10",
+      "claim": "Kv channels negatively regulate conductance after channel opening through a process termed inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Kv channels negatively regulate conductance after channel opening through a process termed inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known phenomenon in Kv channel biophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "8c14ed38-f3d5-4ab4-a055-e791e6b52d9f",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C11",
+      "claim": "The rate and extent of inactivation exhibit considerable isoform-dependent differences in Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate and extent of inactivation exhibit considerable isoform-dependent differences, which are reflected in the physiological contributions of these channels to cellular excitability in neuronal and cardiac tissues (Bean, 2007; Smith et al., 1996; Spector et al., 1996; Sanguinetti and Tristani-Firouzi, 2006; Aldrich et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "958f8beb-7f22-497d-9a84-ca0aea205c1b",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C12",
+      "claim": "Inactivation in Kv channels can be described by two kinetically and mechanistically distinct processes termed fast (or 'N-type') inactivation and slow (or 'C-type') inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation can be described by two kinetically and mechanistically distinct processes termed fast (or 'N-type') inactivation and slow (or 'C-type') inactivation (Hoshi et al., 1991; Kurata and Fedida, 2006; Hoshi and Armstrong, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "9fde13df-d84f-4e58-a67a-cd36cdfa40ef",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C13",
+      "claim": "Fast inactivation results from a channel peptide docking within the open cytoplasmic entrance to the permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "While the former results from a channel peptide docking within the open cytoplasmic entrance to the permeation pathway (Hoshi et al., 1990, 1991; Zhou et al., 2001), the latter is assumed to involve highly cooperative local conformational changes near the selectivity filter, a notion supported by electrophysiological, structural and computational approaches (Lopez-Barneo et al., 1993; Yellen et al., 1994; Liu et al., 1996, 1997; Starkus et al., 1997; Kiss et al., 1999; Cordero-Morales et al., 2006, 2007; Peng et al., 2007; Cuello et al., 2010a, b; Cordero-Morales et al., 2011; Ostmeyer et al., 2013; van der Cruijsen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "bb13dc78-5c0f-4df7-85db-a1ece5dde8c9",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C14",
+      "claim": "Slow inactivation involves highly cooperative local conformational changes near the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "While the former results from a channel peptide docking within the open cytoplasmic entrance to the permeation pathway (Hoshi et al., 1990, 1991; Zhou et al., 2001), the latter is assumed to involve highly cooperative local conformational changes near the selectivity filter, a notion supported by electrophysiological, structural and computational approaches (Lopez-Barneo et al., 1993; Yellen et al., 1994; Liu et al., 1996, 1997; Starkus et al., 1997; Kiss et al., 1999; Cordero-Morales et al., 2006, 2007; Peng et al., 2007; Cuello et al., 2010a, b; Cordero-Morales et al., 2011; Ostmeyer et al., 2013; van der Cruijsen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "be857110-5344-4ef3-b3d8-9996076720b9",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C15",
+      "claim": "The Kv channel pore domain contains intermeshed aromatic side chains, an arrangement termed the 'aromatic cuff' that is located at the extracellular end of the selectivity filter and pore helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kv channel pore domain contains intermeshed aromatic side chains, an arrangement termed the 'aromatic cuff' that is located at the extracellular end of the selectivity filter and pore helix (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "449f60e4-84e1-4dc5-bc06-7f126df6842c",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C16",
+      "claim": "The aromatic cuff has long been suggested to play a part in the stability of the pore and likely slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This highly conserved region has long been suggested to play a part in the stability of the pore and likely slow inactivation (Doyle et al., 1998; Larsson and Elinder, 2000; Kurata and Fedida, 2006), yet the dynamic rearrangements during inactivation have remained poorly resolved given that many side chains within this region are intolerant to replacement, likely due to the large chemical and steric changes produced by standard mutagenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "f813d7f1-9b63-4d22-ada4-d0d46f96a299",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C17",
+      "claim": "Crystallographic data demonstrate the close physical proximity of highly conserved Asp and Trp side chains within the same subunit of potassium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallographic data demonstrate the close physical proximity of highly conserved Asp and Trp side chains within the same subunit of potassium channels (Figure 2A) (Doyle et al., 1998; Long et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to crystallographic studies and Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "2034d787-8e72-42ed-bd83-62fa0ff784f2",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C18",
+      "claim": "Mutations at positions Asp447 and Trp434 elicit drastic changes in channel function, including effects on inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations at these positions (Asp447 and Trp434 by Shaker numbering, which is used throughout the manuscript) elicit drastic changes in channel function, including effects on inactivation (Perozo et al., 1993; Molina et al., 1997, 1998; Yang et al., 1997; Loots and Isacoff, 2000; Loboda et al., 2001; Cordero-Morales et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "f7099910-4cc5-4519-b7f6-9a5d93aafad8",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C19",
+      "claim": "The Asp447Glu mutation leads to a rapid and complete decrease in ionic current.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Asp447Glu mutation leads to a rapid and complete decrease in ionic current (Molina et al., 1997, 1998), and this loss in conductance can be drastically slowed by addition of extracellular tetraethyl ammonium (TEA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research and experimental data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "52e93a02-4367-494e-afd5-407ab0af83f6",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C20",
+      "claim": "The loss in conductance caused by the Asp447Glu mutation can be drastically slowed by addition of extracellular tetraethyl ammonium (TEA).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Asp447Glu mutation leads to a rapid and complete decrease in ionic current (Molina et al., 1997, 1998), and this loss in conductance can be drastically slowed by addition of extracellular tetraethyl ammonium (TEA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research and experimental data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "1fc2f234-293a-4f1a-ae66-f0b19ea8aefc",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C21",
+      "claim": "Deceleration of current decay in the presence of extracellular TEA is a hallmark of slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This deceleration of current decay in the presence of extracellular TEA is a hallmark of slow inactivation and can serve to discriminate this process from other phenotypes, such as fast inactivation or generic protein dysfunction (Grissmer and Cahalan, 1989; Choi et al., 1991; Molina et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "38072eda-882b-4e8d-968c-39f6c75f9007",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C22",
+      "claim": "The charge-neutralizing Asp447Asn mutation resulted in gating currents only.",
+      "claim_type": "EXPLICIT",
+      "source": "The charge-neutralizing Asp447Asn mutation resulted in gating currents only, generally interpreted to reflect an inactivation phenotype too rapid to resolve (Figure 2B and Table 1) (Hurst et al., 1996; Yang et al., 1997; Loots and Isacoff, 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B and Table 1, as well as citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "14beb951-5f6f-402d-bae2-2ac555443a6f",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C23",
+      "claim": "The Trp434Tyr mutation speeds up slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr in position 434 speeds up slow inactivation (and is sensitive to TEA, Figure 2\u2014figure supplement 1), while Phe results in gating currents only (Figure 2C; Table 1) (Perozo et al., 1993; Yang et al., 1997; Cordero-Morales et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 1, as well as citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "86d6e1ab-bbd4-4c88-a05a-8945d78a3304",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C24",
+      "claim": "The Trp434Phe mutation results in gating currents only.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr in position 434 speeds up slow inactivation (and is sensitive to TEA, Figure 2\u2014figure supplement 1), while Phe results in gating currents only (Figure 2C; Table 1) (Perozo et al., 1993; Yang et al., 1997; Cordero-Morales et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and Table 1, as well as citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "3aa01487-1fdf-4dbb-845b-2e1ecc68bb2f",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C25",
+      "claim": "F4-Trp (a fluorinated Trp derivative) in position 434 slowed the rate of slow inactivation by threefold.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we introduced F4-Trp (Figure 2D), a fluorinated Trp derivative that increases the acidity of the hydrogen on the indole nitrogen (Deutsch and Taylor, 1987, 1989), while leaving side chain size and hydrophobicity intact. This slowed the rate of slow inactivation by threefold (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "383f645b-15de-43df-979c-4fc87b4f6f3e",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C26",
+      "claim": "F4-Trp increases the acidity of the hydrogen on the indole nitrogen.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we introduced F4-Trp (Figure 2D), a fluorinated Trp derivative that increases the acidity of the hydrogen on the indole nitrogen (Deutsch and Taylor, 1987, 1989), while leaving side chain size and hydrophobicity intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "cadb1d93-4863-4b79-a116-f87b60ee6397",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C27",
+      "claim": "Ind (2-amino-3-indol-1-yl-propionic acid) in position 434 in heteromeric channels displayed a 70-fold increase in inactivation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As co-injection of Trp434TAG cRNA and Ind-coupled tRNA alone did not yield measurable ionic currents, Wild type cRNA was mixed with Trp434TAG cRNA and Ind-coupled tRNA. However, even in the presence of WT (Wild type) subunits, the resulting heteromeric channel population displayed a 70-fold increase in inactivation rate (Figure 2G), demonstrating that breaking the proposed Asp447\u2013Trp434 H-bond in the absence of steric perturbation leads to substantially accelerated inactivation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "149d9f98-237b-4e71-ace2-3cc620fc7341",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C28",
+      "claim": "Breaking the proposed Asp447-Trp434 H-bond in the absence of steric perturbation leads to substantially accelerated inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even in the presence of WT (Wild type) subunits, the resulting heteromeric channel population displayed a 70-fold increase in inactivation rate (Figure 2G), demonstrating that breaking the proposed Asp447\u2013Trp434 H-bond in the absence of steric perturbation leads to substantially accelerated inactivation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "2765dc3a-1db9-4835-b1db-f1acbd43e2fd",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C29",
+      "claim": "Slow inactivation is amenable to the simple atomic 'push/pull' of a single H-bond.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that slow inactivation is amenable to the simple atomic 'push/pull' of a single H-bond, and manipulation of the strength of this H-bond generates a spectrum of inactivation rates, that can be tuned to occur faster or slower than what is observed in WT channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that modulating H-bond strength affects inactivation rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "fe5f299c-420c-4410-bcc3-6b31f06958c6",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C30",
+      "claim": "Manipulation of the strength of the Asp447-Trp434 H-bond generates a spectrum of inactivation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that slow inactivation is amenable to the simple atomic 'push/pull' of a single H-bond, and manipulation of the strength of this H-bond generates a spectrum of inactivation rates, that can be tuned to occur faster or slower than what is observed in WT channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that modulating H-bond strength affects inactivation rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "9ea8a96a-fc88-4d05-a460-970be5456c75",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C31",
+      "claim": "Slow inactivation is highly cooperative.",
+      "claim_type": "EXPLICIT",
+      "source": "Slow inactivation is highly cooperative (Ogielska et al., 1995; Panyi et al., 1995; Yang et al., 1997) and the single mutation, Trp434Phe, in the first of four concatenated subunits accelerates slow inactivation (Yang et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "cadcbcb4-c23e-42c7-a591-7fbc24504393",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C32",
+      "claim": "The single mutation Trp434Phe in the first of four concatenated subunits accelerates slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Slow inactivation is highly cooperative (Ogielska et al., 1995; Panyi et al., 1995; Yang et al., 1997) and the single mutation, Trp434Phe, in the first of four concatenated subunits accelerates slow inactivation (Yang et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "528714e3-8f36-43bd-ad0c-47117b370311",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C33",
+      "claim": "The Asp447Glu mutation in the first of four concatenated Shaker subunits accelerated inactivation rates, similar to those obtained from Trp434Phe concatemers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Asp447Glu mutation in the first of four concatenated Shaker subunits accelerated inactivation rates, similar to those obtained from Trp434Phe concatemers (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "e24ac70f-e972-4873-a531-4220cdcdbb03",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C34",
+      "claim": "The strength of the Asp447-Trp434 intra-subunit H-bond is directly correlated with slow inactivation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support the notion that the strength of the Asp447\u2013Trp434 intra-subunit H-bond is directly correlated with slow inactivation rate, suggesting that breaking of this interaction is an intrinsic timing mechanism that tightly regulates Kv channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that modulating this H-bond affects inactivation rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "9b8c14dd-0dd1-4e46-ae7a-19961dc6837b",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C35",
+      "claim": "Breaking of the Asp447-Trp434 interaction is an intrinsic timing mechanism that tightly regulates Kv channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support the notion that the strength of the Asp447\u2013Trp434 intra-subunit H-bond is directly correlated with slow inactivation rate, suggesting that breaking of this interaction is an intrinsic timing mechanism that tightly regulates Kv channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that modulating this H-bond affects inactivation rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "483fd5fb-b9c7-4939-8f23-075f85f86c72",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C36",
+      "claim": "Structural evidence suggests that Trp435 forms an inter-subunit H-bond via its hydrogen on the indole nitrogen with the Tyr445 hydroxyl.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural evidence suggests that Trp435 (Figure 4A) forms an inter-subunit H-bond via its hydrogen on the indole nitrogen with the Tyr445 hydroxyl (Doyle et al., 1998; Larsson and Elinder, 2000; Kurata and Fedida, 2006), and therefore substitution of Tyr or Phe for Trp435 would be expected to disrupt this H-bond, and potentially accelerate inactivation (as observed for aromatic substitutions of the adjacent Trp434 residue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior structural studies and Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "2c83ef4e-97a0-4069-94d3-8c19a59c89e6",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C37",
+      "claim": "The Trp435Ala mutation produced non-functional channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the Trp435Ala mutation produced non-functional channels (as suggested by the absence of ionic or gating currents), Tyr and Phe substitutions at position 435 resulted in WT-like slow inactivation rates (Figure 4B,C), ruling out a role for Trp435 H-bonding in slow inactivation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "1632bab1-f8f4-43b8-9e56-8f4b07d51799",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C38",
+      "claim": "Tyr and Phe substitutions at position 435 resulted in WT-like slow inactivation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the Trp435Ala mutation produced non-functional channels (as suggested by the absence of ionic or gating currents), Tyr and Phe substitutions at position 435 resulted in WT-like slow inactivation rates (Figure 4B,C), ruling out a role for Trp435 H-bonding in slow inactivation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "43e35e62-bc38-4dc6-b86b-9950a364ddcd",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C39",
+      "claim": "Trp435 H-bonding does not play a role in slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the Trp435Ala mutation produced non-functional channels (as suggested by the absence of ionic or gating currents), Tyr and Phe substitutions at position 435 resulted in WT-like slow inactivation rates (Figure 4B,C), ruling out a role for Trp435 H-bonding in slow inactivation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data showing that mutations at Trp435 do not affect slow inactivation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "297d32cd-53ff-4f43-8f1f-c8ec61f3852a",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C40",
+      "claim": "The Tyr445Phe mutation results in a mix of gating current and ionic current, with markedly accelerated slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Tyr445Phe mutation results in a mix of gating current and ionic current, with markedly accelerated slow inactivation (Harris et al., 1998) (a phenotype antagonized by TEA) (Figure 4D, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D and Figure 4\u2014figure supplement 1, as well as citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "566adca0-5ef5-42d6-a3ab-a489cfe17907",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C41",
+      "claim": "Tyr445Ala channels exhibited gating currents akin to Trp434Phe channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Tyr445Ala channels exhibited gating currents akin to Trp434Phe channels (Figure 4D; Table 1) (Heginbotham et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D and Table 1, as well as citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "ce3d56eb-9a36-4982-8333-9641fcba0f76",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C42",
+      "claim": "Crystallographic data place the Tyr445 hydroxyl within 3 \u00c5 of the hydroxyl moiety of Thr439.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, crystallographic data (Doyle et al., 1998; Long et al., 2007) place the Tyr445 hydroxyl within 3 \u00c5 of the hydroxyl moiety of a conserved Thr or Ser side chain (Thr439 in Shaker, Figure 1B), raising the intriguing possibility of an uncharacterized inter-subunit interaction between Tyr445 and Thr439.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to crystallographic studies and Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "e7e8ff73-8f0f-4504-9a7e-8bfc71b8718d",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C43",
+      "claim": "The Thr439Val mutant exhibited exclusively gating currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, the Thr439Val mutant exhibited exclusively gating currents (Figure 4E), while the Thr439Ser mutation resulted in a modest threefold faster inactivation than observed for WT channels, likely indicating a minor role for the Thr439 methyl group in slow inactivation (Figure 4E, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "5f7c52f7-5ea8-450c-8839-66f732307ef0",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C44",
+      "claim": "The Thr439Ser mutation resulted in a modest threefold faster inactivation than observed for WT channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, the Thr439Val mutant exhibited exclusively gating currents (Figure 4E), while the Thr439Ser mutation resulted in a modest threefold faster inactivation than observed for WT channels, likely indicating a minor role for the Thr439 methyl group in slow inactivation (Figure 4E, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4E and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "374e3bab-a1e3-4aae-9e50-9e7eb3dfdda6",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C45",
+      "claim": "The Thr439 methyl group plays a minor role in slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, the Thr439Val mutant exhibited exclusively gating currents (Figure 4E), while the Thr439Ser mutation resulted in a modest threefold faster inactivation than observed for WT channels, likely indicating a minor role for the Thr439 methyl group in slow inactivation (Figure 4E, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data showing that the Thr439Ser mutation modestly affects inactivation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "7964f571-4e39-483b-98a1-33aae0e9b6b3",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C46",
+      "claim": "Introducing Tyr445Ala, Tyr445Val or Thr439Val on the Thr449Val background did not slow inactivation to an extent that ionic currents could be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, and unlike the Trp434Phe mutation (Kitaguchi et al., 2004), introducing Tyr445Ala, Tyr445Val or Thr439Val on the Thr449Val background did not slow inactivation to an extent that ionic currents could be observed (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "4a69306f-bc19-44ec-8b98-25299718a0f0",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C47",
+      "claim": "Breaking the inter-subunit Tyr445-Thr439 H-bond may have a more pronounced effect when introduced in only a single subunit, compared to the intra-subunit Trp434-Asp447 H-bond.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we speculated that breaking this inter-subunit H-bond may have a more pronounced effect when introduced in only a single subunit, compared to the intra-subunit Trp434\u2013Asp447 H-bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from experimental design.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "a3648696-0cf7-43da-92db-0314e65c8ae7",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C48",
+      "claim": "Either the Tyr445Ala or the Thr439Val mutation in the first of four concatenated Shaker subunits had similar phenotypes, with a clearly biphasic inactivation phenotype composed of fast (around 50 ms) and WT-like slow (around 3 s) components.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, either the Tyr445Ala or the Thr439Val mutation in the first of four concatenated Shaker subunits (Figure 5A) had similar phenotypes, with a clearly biphasic inactivation phenotype composed of fast (around 50 ms) and WT-like slow (around 3 s) components (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "b23f3272-46ff-4361-ae44-785e1a3e4195",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C49",
+      "claim": "The fast component of inactivation in Tyr445Ala and Thr439Val concatemers was affected by TEA, implicating a slow inactivation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The fast component was affected by TEA, implicating a slow inactivation mechanism (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "fba72f15-eaed-4a98-beb6-7409d0ed8b8c",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C50",
+      "claim": "The ratio of ionic current to gating charge is significantly reduced in both Tyr445Ala and Thr439Val concatemers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found the ratio of ionic current to gating charge to be significantly reduced in both mutant concatemers (Figure 5C), suggesting that a sizable proportion of channels rapidly enter an inactivated state upon depolarization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "558e0d27-2cb2-45b6-a4ca-ff29f52bffc3",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C51",
+      "claim": "A sizable proportion of Tyr445Ala and Thr439Val concatemer channels rapidly enter an inactivated state upon depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found the ratio of ionic current to gating charge to be significantly reduced in both mutant concatemers (Figure 5C), suggesting that a sizable proportion of channels rapidly enter an inactivated state upon depolarization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data showing reduced ionic current to gating charge ratio.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "cd96867c-76e0-4ace-87a4-bf8a1ec433c8",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C52",
+      "claim": "A previously unidentified inter-subunit H-bond between Thr439 and Tyr445 controls slow inactivation in Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments establish a previously unidentified inter-subunit H-bond between Thr439 and Tyr445 that controls slow inactivation in Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that mutations at these positions affect slow inactivation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "518963fd-429c-484c-9cc2-de88b12e62fe",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C53",
+      "claim": "Thr441 and Thr442 are highly conserved amongst Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thr441 and Thr442 are highly conserved amongst Kv channels and are favorably located at the junction of selectivity filter and pore helix (Figure 6A) for a possible role in pore stability and/or slow inactivation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment data shown in Figure 1B and structural data in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "dad29670-1962-4d2c-9bec-637d3ff350ce",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C54",
+      "claim": "Thr441 and Thr442 are favorably located at the junction of selectivity filter and pore helix for a possible role in pore stability and/or slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thr441 and Thr442 are highly conserved amongst Kv channels and are favorably located at the junction of selectivity filter and pore helix (Figure 6A) for a possible role in pore stability and/or slow inactivation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from structural data shown in Figure 6A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "5adee55c-f643-4dde-9902-6c14332fed7a",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C55",
+      "claim": "The Thr442Val mutation displayed a non-expressing phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these reports, we found that valine substitutions a 441 and 442 had severe consequences: while Thr442Val displayed a non-expressing phenotype (Figure 6C) (Zheng and Sigworth, 1997), the Thr441Val mutation resulted in voltage-dependent currents both in the inward and the outward direction, as well as reduced potassium selectivity (Figure 6B, Figure 6\u2014figure supplement 1), suggesting a significant perturbation of the local structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6C and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "da92145a-5710-454a-939d-03e5cb6bb288",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C56",
+      "claim": "The Thr441Val mutation resulted in voltage-dependent currents both in the inward and the outward direction, as well as reduced potassium selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these reports, we found that valine substitutions a 441 and 442 had severe consequences: while Thr442Val displayed a non-expressing phenotype (Figure 6C) (Zheng and Sigworth, 1997), the Thr441Val mutation resulted in voltage-dependent currents both in the inward and the outward direction, as well as reduced potassium selectivity (Figure 6B, Figure 6\u2014figure supplement 1), suggesting a significant perturbation of the local structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "76293d65-3942-4bf0-a3b9-c822730d9f9f",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C57",
+      "claim": "Thr441Ser channels displayed a WT-like GV.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Thr441Ser channels displayed a WT-like GV whereas Thr442Ser channels displayed a modest left-shifted activation relationship, yet both had inactivation behaviors similar to WT channels (Figure 6B,C, Figure 6\u2014figure supplement 2), supporting the notion that the hydroxyl moieties at positions 441 and 442 support normal pore function (in addition to the proposed role of the Thr442 methyl group in ion binding (Rossi et al., 2013)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "1648ff68-cf98-4fab-a20a-b6a2a8ad722d",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C58",
+      "claim": "Thr442Ser channels displayed a modest left-shifted activation relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Thr441Ser channels displayed a WT-like GV whereas Thr442Ser channels displayed a modest left-shifted activation relationship, yet both had inactivation behaviors similar to WT channels (Figure 6B,C, Figure 6\u2014figure supplement 2), supporting the notion that the hydroxyl moieties at positions 441 and 442 support normal pore function (in addition to the proposed role of the Thr442 methyl group in ion binding (Rossi et al., 2013)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6C and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "ec8e7d37-ba8e-45c7-b91f-56338768efd0",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C59",
+      "claim": "Both Thr441Ser and Thr442Ser had inactivation behaviors similar to WT channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Thr441Ser channels displayed a WT-like GV whereas Thr442Ser channels displayed a modest left-shifted activation relationship, yet both had inactivation behaviors similar to WT channels (Figure 6B,C, Figure 6\u2014figure supplement 2), supporting the notion that the hydroxyl moieties at positions 441 and 442 support normal pore function (in addition to the proposed role of the Thr442 methyl group in ion binding (Rossi et al., 2013)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B, 6C, and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "ae089f8e-3a9c-4542-8723-a3f010193be2",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C60",
+      "claim": "The hydroxyl moieties at positions 441 and 442 support normal pore function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Thr441Ser channels displayed a WT-like GV whereas Thr442Ser channels displayed a modest left-shifted activation relationship, yet both had inactivation behaviors similar to WT channels (Figure 6B,C, Figure 6\u2014figure supplement 2), supporting the notion that the hydroxyl moieties at positions 441 and 442 support normal pore function (in addition to the proposed role of the Thr442 methyl group in ion binding (Rossi et al., 2013)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data showing that Ser substitutions maintain normal function.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "d3afd6b1-0c8c-4c62-bafd-7f80b9991f1d",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C61",
+      "claim": "Single subunit mutations at Thr441Val or Thr442Val had minimal effects in the background of a concatenated tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite the disruptive phenotypes observed in homotetrameric Thr441Val or Thr442Val channels, single subunit mutations had minimal effects in the background of a concatenated tetramer (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6D and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "c3fdbc4b-1678-47a3-bd87-bae462129ee8",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C62",
+      "claim": "Hydroxyl removal at either 441 or 442 produces channel phenotypes that are very mild compared to perturbations within the aromatic cuff.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, hydroxyl removal at either 441 or 442 produces channel phenotypes that are very mild compared to perturbations within the aromatic cuff, and importantly, their effects are not propagated to other subunits in the channel tetramer, suggesting they are unrelated to the cooperative mechanism of slow inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data comparing effects of mutations at different positions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "6fa3e1a2-806a-4fd7-8df2-03ce58c5de87",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C63",
+      "claim": "The effects of mutations at Thr441 or Thr442 are not propagated to other subunits in the channel tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, hydroxyl removal at either 441 or 442 produces channel phenotypes that are very mild compared to perturbations within the aromatic cuff, and importantly, their effects are not propagated to other subunits in the channel tetramer, suggesting they are unrelated to the cooperative mechanism of slow inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing minimal effects in concatenated tetramers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "fe4c9518-f90f-4a43-b3d2-0cb3475014ca",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C64",
+      "claim": "Mutations at Thr441 or Thr442 are unrelated to the cooperative mechanism of slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, hydroxyl removal at either 441 or 442 produces channel phenotypes that are very mild compared to perturbations within the aromatic cuff, and importantly, their effects are not propagated to other subunits in the channel tetramer, suggesting they are unrelated to the cooperative mechanism of slow inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing minimal effects in concatenated tetramers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "38b44714-f5c0-4ed6-8f2f-d8e704d6334f",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C65",
+      "claim": "Severe functional consequences of mutations at the selectivity filter are not necessarily linked to changes in slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe this is an important finding as it demonstrates that severe functional consequences of mutations at the selectivity filter are not necessarily linked to changes in slow inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that Thr441Val and Thr442Val mutations have severe effects but do not affect slow inactivation in concatenated tetramers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "07fa9635-943a-4784-9afb-be0f31c36caa",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C66",
+      "claim": "Side chains critical to slow inactivation cluster around the 'aromatic cuff'.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that side chains critical to slow inactivation cluster around the 'aromatic cuff' (formed between the extracellular end of the selectivity filter and the pore helix) is further supported by the marked differences between side chains at the outer vs the inner end of the selectivity filter and pore helix: only those located around the 'aromatic cuff' result in notable effects on slow inactivation that are propagated to the entire channel (Figures 2\u20135), while those residing in the middle or lower section of the selectivity filter do not affect slow inactivation (see Figure 6 for positions 441 and 442; see (Heginbotham et al., 1994) for position 443).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data comparing effects of mutations at different positions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "4e485773-9f6f-4451-8907-fa1f9d870d13",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C67",
+      "claim": "Upon depolarization and channel opening, the stability of the channel open state is proportional to the strength of two H-bonds that regulate entry into slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results point towards an intriguing molecular explanation for the mechanism of slow inactivation: upon depolarization and channel opening, the stability of the channel open state is proportional to the strength of two H-bonds that regulate entry into slow inactivation, thus endowing Kv channels with an intrinsic timing mechanism that tightly regulates their biological activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that H-bond strength affects inactivation rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "c999e3fc-0445-4726-b18a-e53a20cad119",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C68",
+      "claim": "Kv channels are endowed with an intrinsic timing mechanism that tightly regulates their biological activity through H-bonds that regulate entry into slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results point towards an intriguing molecular explanation for the mechanism of slow inactivation: upon depolarization and channel opening, the stability of the channel open state is proportional to the strength of two H-bonds that regulate entry into slow inactivation, thus endowing Kv channels with an intrinsic timing mechanism that tightly regulates their biological activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that H-bond strength affects inactivation rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "8341f595-392f-4106-9007-3076ec5885f5",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C69",
+      "claim": "During a sustained voltage stimulus, channels experience a sequential breaking of the Trp434-Asp447 and Tyr445-Thr439 H-bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "During a sustained voltage stimulus, channels experience a sequential breaking of the Trp434\u2013Asp447 and Tyr445\u2013Thr439 H-bonds and given the relative arrangement of their hydroxyl moieties this would likely result in an anti-clockwise swivel movement of the Tyr445 backbone carbonyl away from the permeation pathway, ultimately disrupting the coordination and occupancy of potassium ions at the outer end of the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from experimental data and structural considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "28d07e31-5065-46c8-8f7b-10d05bd8ec6c",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C70",
+      "claim": "Breaking of the Trp434-Asp447 and Tyr445-Thr439 H-bonds would likely result in an anti-clockwise swivel movement of the Tyr445 backbone carbonyl away from the permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "During a sustained voltage stimulus, channels experience a sequential breaking of the Trp434\u2013Asp447 and Tyr445\u2013Thr439 H-bonds and given the relative arrangement of their hydroxyl moieties this would likely result in an anti-clockwise swivel movement of the Tyr445 backbone carbonyl away from the permeation pathway, ultimately disrupting the coordination and occupancy of potassium ions at the outer end of the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from structural considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "515ed8d8-0e2c-4924-9559-bf8fc611b62f",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C71",
+      "claim": "Breaking of the Trp434-Asp447 and Tyr445-Thr439 H-bonds ultimately disrupts the coordination and occupancy of potassium ions at the outer end of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "During a sustained voltage stimulus, channels experience a sequential breaking of the Trp434\u2013Asp447 and Tyr445\u2013Thr439 H-bonds and given the relative arrangement of their hydroxyl moieties this would likely result in an anti-clockwise swivel movement of the Tyr445 backbone carbonyl away from the permeation pathway, ultimately disrupting the coordination and occupancy of potassium ions at the outer end of the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from structural considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "12b21bc3-dc39-4e2f-ac4b-c6d12a9c2d0d",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C72",
+      "claim": "Movement of the Tyr445 backbone carbonyl away from the permeation pathway would lead to mutual repulsion between the Tyr445 backbone carbonyls of the remaining three subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a scenario would lead to mutual repulsion between the Tyr445 backbone carbonyls of the remaining three subunits (Almers and Armstrong, 1980; Hoshi and Armstrong, 2013), further lowering filter-occupancy at its outer mouth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from structural considerations, supported by citations to prior research.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "fa687870-528b-4476-9a23-fd1fd0c5d0fa",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C73",
+      "claim": "Mutual repulsion between the Tyr445 backbone carbonyls would further lower filter-occupancy at its outer mouth.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a scenario would lead to mutual repulsion between the Tyr445 backbone carbonyls of the remaining three subunits (Almers and Armstrong, 1980; Hoshi and Armstrong, 2013), further lowering filter-occupancy at its outer mouth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from structural considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "e6337fce-08e0-4af1-bb4b-d2ea198fbd5a",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C74",
+      "claim": "The resulting strain from mutual repulsion could trigger a cascade of disrupted H-bonds critical to inactivation near the extracellular end of the selectivity filter in all subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting strain could trigger a cascade of disrupted H-bonds critical to inactivation near the extracellular end of the selectivity filter in all subunits, ultimately resulting in a fully inactivated channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from structural considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "0597efad-5826-4b28-9115-9d86cb2bf437",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C75",
+      "claim": "A cascade of disrupted H-bonds ultimately results in a fully inactivated channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting strain could trigger a cascade of disrupted H-bonds critical to inactivation near the extracellular end of the selectivity filter in all subunits, ultimately resulting in a fully inactivated channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from structural considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "62e9a4e0-f893-4f3b-a670-8f242e236e61",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C76",
+      "claim": "Shaker IR (Inactivation Removed by deletion of amino acids 6-46) cDNA in pBSTA was used as the parent clone.",
+      "claim_type": "EXPLICIT",
+      "source": "Shaker IR (Inactivation Removed by deletion of amino acids 6\u201346) cDNA in pBSTA was used as the parent clone unless stated otherwise (note that Cys301 and Cys308 were present).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "477b1584-bd2c-4339-b9ca-b6643fa02da5",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C77",
+      "claim": "Cys301 and Cys308 were present in the Shaker IR construct used.",
+      "claim_type": "EXPLICIT",
+      "source": "Shaker IR (Inactivation Removed by deletion of amino acids 6\u201346) cDNA in pBSTA was used as the parent clone unless stated otherwise (note that Cys301 and Cys308 were present).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "eae7a540-efff-4a91-b91e-b144babbbb9b",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C78",
+      "claim": "F4-Trp (4,5,6,7-F4-Trp) was purchased from Asis Chem.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorinated Trp derivative F4-Trp (4,5,6,7-F4-Trp) was purchased from Asis Chem (Watertown, MA) and the Trp analog 2-Amino-3-indol-1-yl-propionic acid (Ind) was synthesized as described previously (Lacroix et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "fef31d6a-ab5a-4655-b554-e3f309a37f77",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C79",
+      "claim": "The Trp analog 2-Amino-3-indol-1-yl-propionic acid (Ind) was synthesized as described previously.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorinated Trp derivative F4-Trp (4,5,6,7-F4-Trp) was purchased from Asis Chem (Watertown, MA) and the Trp analog 2-Amino-3-indol-1-yl-propionic acid (Ind) was synthesized as described previously (Lacroix et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental approach, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "e72fa962-7bff-4cd6-89c5-ea6750175699",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C80",
+      "claim": "Incorporation of Ind at position 434 did not result in measurable ionic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that incorporation of Ind at position 434 did not result in measurable ionic currents. This was expected given the results with the conventional Trp434Tyr and Trp434Phe mutants, as side chains in position 434 with no propensity to contribute to a H-bond (such as Ind) were shown to result in gating currents only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "3ddc6928-babe-4598-af3b-50005c9f4f16",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C81",
+      "claim": "WT Shaker cRNA was co-injected with Trp434TAG cRNA for incorporation of Ind to obtain ionic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus co-injected WT Shaker cRNA with the Trp434TAG cRNA for incorporation of Ind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "7a93fc01-c12c-499c-a1af-9e0ec18001de",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C82",
+      "claim": "Two electrode voltage-clamp recordings were conducted with an OC-725C voltage clamp in standard Ringers solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Two electrode voltage-clamp recordings were conducted with an OC-725C voltage clamp (Warner, Hamden, CT) in standard Ringers solution (in mM): 116 NaCl, 2 KCl, 1 MgCl2, 0.5 CaCl2, 5 HEPES (pH 7.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "eea3e279-7c63-4c56-aee0-78e01eb7d42d",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "claim_id": "C83",
+      "claim": "Currents were acquired using leak subtraction and from a holding potential of -80 mV, unless stated otherwise.",
+      "claim_type": "EXPLICIT",
+      "source": "Currents were acquired using leak subtraction and from a holding potential of \u221280 mV, unless stated otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0282ec57-99f9-4cbc-9504-48ba3af3801b",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish an intra-subunit hydrogen bond between Asp447 and Trp434 that regulates slow inactivation kinetics in Kv channels. Using synthetic amino acid analogs (F4-Trp and Ind) and concatenated subunits, they demonstrate that modulating the strength of this H-bond generates a spectrum of inactivation rates, with strengthening slowing inactivation and weakening accelerating it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17-C35 provide converging evidence from multiple experimental approaches including crystallographic data (C17), mutagenesis (C19-C24), synthetic amino acid incorporation (C25-C28), and concatenated subunits (C33). The use of F4-Trp (which strengthens the H-bond) slowing inactivation and Ind (which cannot donate an H-bond) accelerating inactivation provides strong chemical evidence for the H-bond hypothesis. The concatenated subunit experiments (C33) confirm cooperativity and validate the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "87c70070-44d2-4e96-b89c-ed7ccb52424f",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identify a novel inter-subunit hydrogen bond between Tyr445 and Thr439 that controls slow inactivation. Single subunit mutations in concatenated tetramers produce biphasic inactivation with a fast component (~50 ms) and WT-like slow component (~3 s), with significantly reduced ionic current to gating charge ratios, indicating rapid entry into inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C36-C52 provide strong evidence for the inter-subunit H-bond through mutagenesis (C40-C44), crystallographic distance measurements (C42), and critically, concatenated subunit experiments (C48-C51) that demonstrate inter-subunit cooperativity. The biphasic inactivation phenotype and reduced I/Q ratios in single-subunit mutants provide compelling functional evidence. The TEA sensitivity (C49) confirms the mechanism is slow inactivation rather than other processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "6b720f51-e93f-4202-82e5-218f575f54ba",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate that Thr441 and Thr442, while highly conserved and located at the selectivity filter-pore helix junction, are not involved in the cooperative mechanism of slow inactivation. Homotetrameric mutations have severe functional consequences, but single subunit mutations in concatenated tetramers have minimal effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C65 provide clear negative control data showing that not all selectivity filter residues contribute to slow inactivation cooperativity. The contrast between severe homotetrameric phenotypes (C55-C56) and minimal concatenated tetramer effects (C61) is well-documented. This is an important control demonstrating specificity of the aromatic cuff residues (C62-C65) and distinguishing structural integrity from slow inactivation mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "e0982323-3839-4424-b199-4f940b4bcd26",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose that side chains critical to slow inactivation cluster around the 'aromatic cuff' and that the stability of the open state is proportional to the strength of two H-bonds (Asp447-Trp434 and Tyr445-Thr439), providing an intrinsic timing mechanism for Kv channel activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 represent integrative conclusions supported by the differential effects of mutations at the aromatic cuff versus inner selectivity filter positions (C66, supported by data in Figures 2-6). The proportionality between H-bond strength and inactivation rate is demonstrated experimentally through the F4-Trp and Ind experiments. The 'timing mechanism' interpretation is a reasonable inference from the data showing tunable inactivation rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "cb85e8f3-5243-4abc-b0fa-4a5a089f9951",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where sequential breaking of the Trp434-Asp447 and Tyr445-Thr439 H-bonds causes an anti-clockwise swivel of the Tyr445 backbone carbonyl, disrupting potassium coordination and leading to mutual repulsion between Tyr445 carbonyls, triggering a cascade of disrupted H-bonds resulting in full inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C75 are largely speculative (marked as SPECULATION/INFERENCE in evidence_type) and represent a mechanistic model based on structural considerations and experimental data, but lack direct structural or dynamic evidence. While the model is consistent with the functional data, it requires validation through structural studies (e.g., cryo-EM, MD simulations) or additional functional experiments to directly test the proposed conformational changes and sequential H-bond breaking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "2f03f245-8be8-4723-9c62-5ce8e588fc42",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript provides background on Kv channel structure, function, and inactivation mechanisms, establishing the context for investigating slow inactivation determinants in the aromatic cuff region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16, C31-C32 represent well-established background knowledge supported by extensive prior literature (marked as KNOWLEDGE or CITATION evidence types). These claims accurately summarize the current understanding of Kv channel biology and provide appropriate context for the experimental work. The citations to prior research are appropriate and accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "4ccfe2b4-ff4b-4e47-b7da-e00d3fa33ec1",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors claim that breaking either the Asp447-Trp434 or Tyr445-Thr439 H-bond triggers slow inactivation through local disruption of the selectivity filter, with the Tyr445-Thr439 H-bond communicating conformational changes to adjacent subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are supported by the experimental data showing that mutations disrupting these H-bonds accelerate inactivation (documented in multiple figures). The inter-subunit communication aspect (C7) is supported by the concatenated subunit experiments showing that single-subunit mutations affect the entire tetramer. However, the precise mechanism of 'local disruption in the selectivity filter' is inferred rather than directly observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    },
+    {
+      "id": "a003d0ae-106a-49e3-8573-f98d031e6332",
+      "content_id": "132cea24-06df-4256-9255-d4edb59a9ac5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors describe their experimental methodology including the use of Shaker IR constructs, synthetic amino acid analogs (F4-Trp and Ind), nonsense suppression techniques, and two-electrode voltage clamp recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C83 represent methodological details that are clearly described and appropriate for the experiments conducted. The methods are standard for the field and adequately detailed. The acknowledgment that Ind incorporation alone did not yield currents (C80) and required WT co-injection (C81) is an important experimental detail that is appropriately disclosed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:54:34.790272Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bab50a08-6c05-41ba-9f8a-6058546b508b",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "f813d7f1-9b63-4d22-ada4-d0d46f96a299",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "2034d787-8e72-42ed-bd83-62fa0ff784f2",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "f7099910-4cc5-4519-b7f6-9a5d93aafad8",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "52e93a02-4367-494e-afd5-407ab0af83f6",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "1fc2f234-293a-4f1a-ae66-f0b19ea8aefc",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "38072eda-882b-4e8d-968c-39f6c75f9007",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "14beb951-5f6f-402d-bae2-2ac555443a6f",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "86d6e1ab-bbd4-4c88-a05a-8945d78a3304",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "3aa01487-1fdf-4dbb-845b-2e1ecc68bb2f",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "383f645b-15de-43df-979c-4fc87b4f6f3e",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "cadb1d93-4863-4b79-a116-f87b60ee6397",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "149d9f98-237b-4e71-ace2-3cc620fc7341",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "2765dc3a-1db9-4835-b1db-f1acbd43e2fd",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "fe5f299c-420c-4410-bcc3-6b31f06958c6",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "528714e3-8f36-43bd-ad0c-47117b370311",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "e24ac70f-e972-4873-a531-4220cdcdbb03",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "9b8c14dd-0dd1-4e46-ae7a-19961dc6837b",
+      "result_id": "0282ec57-99f9-4cbc-9504-48ba3af3801b"
+    },
+    {
+      "claim_id": "b19d37a6-5daa-49f0-a0ea-522ed5ea6a52",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "483fd5fb-b9c7-4939-8f23-075f85f86c72",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "2c83ef4e-97a0-4069-94d3-8c19a59c89e6",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "1632bab1-f8f4-43b8-9e56-8f4b07d51799",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "43e35e62-bc38-4dc6-b86b-9950a364ddcd",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "297d32cd-53ff-4f43-8f1f-c8ec61f3852a",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "566adca0-5ef5-42d6-a3ab-a489cfe17907",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "ce3d56eb-9a36-4982-8333-9641fcba0f76",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "e7e8ff73-8f0f-4504-9a7e-8bfc71b8718d",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "5f7c52f7-5ea8-450c-8839-66f732307ef0",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "374e3bab-a1e3-4aae-9e50-9e7eb3dfdda6",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "7964f571-4e39-483b-98a1-33aae0e9b6b3",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "4a69306f-bc19-44ec-8b98-25299718a0f0",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "a3648696-0cf7-43da-92db-0314e65c8ae7",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "b23f3272-46ff-4361-ae44-785e1a3e4195",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "fba72f15-eaed-4a98-beb6-7409d0ed8b8c",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "558e0d27-2cb2-45b6-a4ca-ff29f52bffc3",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "cd96867c-76e0-4ace-87a4-bf8a1ec433c8",
+      "result_id": "87c70070-44d2-4e96-b89c-ed7ccb52424f"
+    },
+    {
+      "claim_id": "518963fd-429c-484c-9cc2-de88b12e62fe",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "dad29670-1962-4d2c-9bec-637d3ff350ce",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "5adee55c-f643-4dde-9902-6c14332fed7a",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "da92145a-5710-454a-939d-03e5cb6bb288",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "76293d65-3942-4bf0-a3b9-c822730d9f9f",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "1648ff68-cf98-4fab-a20a-b6a2a8ad722d",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "ec8e7d37-ba8e-45c7-b91f-56338768efd0",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "ae089f8e-3a9c-4542-8723-a3f010193be2",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "d3afd6b1-0c8c-4c62-bafd-7f80b9991f1d",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "c3fdbc4b-1678-47a3-bd87-bae462129ee8",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "6fa3e1a2-806a-4fd7-8df2-03ce58c5de87",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "fe4c9518-f90f-4a43-b3d2-0cb3475014ca",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "38b44714-f5c0-4ed6-8f2f-d8e704d6334f",
+      "result_id": "6b720f51-e93f-4202-82e5-218f575f54ba"
+    },
+    {
+      "claim_id": "07fa9635-943a-4784-9afb-be0f31c36caa",
+      "result_id": "e0982323-3839-4424-b199-4f940b4bcd26"
+    },
+    {
+      "claim_id": "4e485773-9f6f-4451-8907-fa1f9d870d13",
+      "result_id": "e0982323-3839-4424-b199-4f940b4bcd26"
+    },
+    {
+      "claim_id": "c999e3fc-0445-4726-b18a-e53a20cad119",
+      "result_id": "e0982323-3839-4424-b199-4f940b4bcd26"
+    },
+    {
+      "claim_id": "8341f595-392f-4106-9007-3076ec5885f5",
+      "result_id": "cb85e8f3-5243-4abc-b0fa-4a5a089f9951"
+    },
+    {
+      "claim_id": "28d07e31-5065-46c8-8f7b-10d05bd8ec6c",
+      "result_id": "cb85e8f3-5243-4abc-b0fa-4a5a089f9951"
+    },
+    {
+      "claim_id": "515ed8d8-0e2c-4924-9559-bf8fc611b62f",
+      "result_id": "cb85e8f3-5243-4abc-b0fa-4a5a089f9951"
+    },
+    {
+      "claim_id": "12b21bc3-dc39-4e2f-ac4b-c6d12a9c2d0d",
+      "result_id": "cb85e8f3-5243-4abc-b0fa-4a5a089f9951"
+    },
+    {
+      "claim_id": "fa687870-528b-4476-9a23-fd1fd0c5d0fa",
+      "result_id": "cb85e8f3-5243-4abc-b0fa-4a5a089f9951"
+    },
+    {
+      "claim_id": "e6337fce-08e0-4af1-bb4b-d2ea198fbd5a",
+      "result_id": "cb85e8f3-5243-4abc-b0fa-4a5a089f9951"
+    },
+    {
+      "claim_id": "0597efad-5826-4b28-9115-9d86cb2bf437",
+      "result_id": "cb85e8f3-5243-4abc-b0fa-4a5a089f9951"
+    },
+    {
+      "claim_id": "fa2c7d9f-ac43-4c5d-96f1-fbba2597b8a5",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "29314d26-c4d6-473d-aa4a-ecf20e98bbdb",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "cc42403e-caa4-4dfd-98cf-336878db1240",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "c3756767-9db7-4e6d-84e2-186637799f26",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "3eb6f216-3b51-45f9-9d02-8b84aaf96798",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "8c14ed38-f3d5-4ab4-a055-e791e6b52d9f",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "958f8beb-7f22-497d-9a84-ca0aea205c1b",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "9fde13df-d84f-4e58-a67a-cd36cdfa40ef",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "bb13dc78-5c0f-4df7-85db-a1ece5dde8c9",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "be857110-5344-4ef3-b3d8-9996076720b9",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "449f60e4-84e1-4dc5-bc06-7f126df6842c",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "9ea8a96a-fc88-4d05-a460-970be5456c75",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "cadcbcb4-c23e-42c7-a591-7fbc24504393",
+      "result_id": "2f03f245-8be8-4723-9c62-5ce8e588fc42"
+    },
+    {
+      "claim_id": "b7d5a129-b08d-49dd-b300-29a94783de5a",
+      "result_id": "4ccfe2b4-ff4b-4e47-b7da-e00d3fa33ec1"
+    },
+    {
+      "claim_id": "56e0a29c-0498-42e0-9107-50d1a81ad569",
+      "result_id": "4ccfe2b4-ff4b-4e47-b7da-e00d3fa33ec1"
+    },
+    {
+      "claim_id": "90d08f25-6a7f-45d8-bfad-ce1251763a4c",
+      "result_id": "4ccfe2b4-ff4b-4e47-b7da-e00d3fa33ec1"
+    },
+    {
+      "claim_id": "62e9a4e0-f893-4f3b-a670-8f242e236e61",
+      "result_id": "a003d0ae-106a-49e3-8573-f98d031e6332"
+    },
+    {
+      "claim_id": "477b1584-bd2c-4339-b9ca-b6643fa02da5",
+      "result_id": "a003d0ae-106a-49e3-8573-f98d031e6332"
+    },
+    {
+      "claim_id": "eae7a540-efff-4a91-b91e-b144babbbb9b",
+      "result_id": "a003d0ae-106a-49e3-8573-f98d031e6332"
+    },
+    {
+      "claim_id": "fef31d6a-ab5a-4655-b554-e3f309a37f77",
+      "result_id": "a003d0ae-106a-49e3-8573-f98d031e6332"
+    },
+    {
+      "claim_id": "e72fa962-7bff-4cd6-89c5-ea6750175699",
+      "result_id": "a003d0ae-106a-49e3-8573-f98d031e6332"
+    },
+    {
+      "claim_id": "3ddc6928-babe-4598-af3b-50005c9f4f16",
+      "result_id": "a003d0ae-106a-49e3-8573-f98d031e6332"
+    },
+    {
+      "claim_id": "7a93fc01-c12c-499c-a1af-9e0ec18001de",
+      "result_id": "a003d0ae-106a-49e3-8573-f98d031e6332"
+    },
+    {
+      "claim_id": "eea3e279-7c63-4c56-aee0-78e01eb7d42d",
+      "result_id": "a003d0ae-106a-49e3-8573-f98d031e6332"
+    }
+  ],
+  "comparisons": []
+}

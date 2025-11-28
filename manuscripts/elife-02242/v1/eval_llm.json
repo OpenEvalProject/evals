@@ -1,0 +1,414 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C23",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Metformin inhibits mitochondrial complex I activity and cellular respiration in cancer cells in a dose-dependent manner. This inhibition is specific to complex I, as metformin does not affect complex II-driven respiration. NDI1-expressing cells are completely resistant to metformin's effects on oxygen consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C20, C23, C25, C26, and C27 are well-supported by dose-response data in Figure 1A showing metformin inhibits oxygen consumption in control cells at 0.25-1.0 mM, permeabilized cell experiments demonstrating complex I-specific inhibition (Figure 1C-E), and genetic rescue experiments showing NDI1 expression confers complete resistance (Figure 1B, D). The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Metformin requires transport across the plasma membrane to inhibit complex I, as permeabilized cells are more sensitive to metformin than intact cells. This transport is mediated by organic cation transporters (OCTs), and OCT1 expression is unchanged by NDI1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by comparing metformin sensitivity in intact (Figure 1A) versus permeabilized cells (Figure 1C), showing lower concentrations are effective when the plasma membrane is bypassed. Claims C30 and C31 are supported by citation and Western blot data (Figure 1F) confirming OCT1 expression is unchanged, ruling out differential uptake as an explanation for NDI1 resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C34"
+    ],
+    "result": "Metformin inhibits cellular proliferation in the presence of glucose in control cancer cells but not in NDI1-expressing cells, without inducing cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32, and C34 are supported by cell proliferation data (Figure 2E, F) showing dose-dependent reduction in control cells but not NDI1 cells, and viability data (Figure 2A, B) showing no cell death with glucose present. The genetic rescue with NDI1 provides strong evidence for complex I-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C5",
+      "C35"
+    ],
+    "result": "Metformin induces cell death upon glucose deprivation in control cells but not NDI1-expressing cells, indicating cancer cells rely exclusively on glycolysis for survival when complex I is inhibited by metformin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C33 are supported by viability data (Figure 2C, D) showing metformin-induced cell death only in control cells without glucose. Claims C5 and C35 represent reasonable inferences from these data: if cells die when metformin blocks oxidative phosphorylation and glucose is removed, they must depend on glycolysis. The NDI1 rescue strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The anti-proliferative effects of metformin are not specific to HCT116 p53\u2212/\u2212 cells but extend to HCT116 p53+/+ and A549 lung cancer cells, and require mitochondrial complex I inhibition across all cell lines tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C38 are supported by data in Figure 2\u2014figure supplements 1 and 2 showing metformin inhibits oxygen consumption and proliferation in multiple cell lines (HCT116 p53+/+, A549), with NDI1 expression conferring resistance in all cases. This demonstrates the generalizability of the findings beyond a single cell line.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Phenformin, a more lipophilic biguanide, inhibits complex I and cellular proliferation at 100-fold lower concentrations than metformin, with effects reversed by NDI1 expression, demonstrating that phenformin also acts through complex I inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by dose-response data (Figure 3A-H) showing phenformin is more potent than metformin but exhibits the same pattern of NDI1-mediated resistance. The 100-fold difference in potency is consistent with phenformin's greater lipophilicity enabling better membrane penetration. The parallel effects strengthen the conclusion that complex I is the relevant target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In CCL16 hamster fibroblasts with a complex I mutation (B2-CCL16), metformin and phenformin do not inhibit proliferation or induce cell death, while wild-type and NDI1-reconstituted cells respond normally, confirming that complex I is required for biguanide effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by data in Figure 3\u2014figure supplements 1 and 2 using B2-CCL16 cells that lack functional complex I. The observation that these cells are resistant to metformin/phenformin, while NDI1 reconstitution restores sensitivity, provides strong genetic evidence that complex I is the essential target. This is a critical control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Metformin requires a polarized mitochondrial membrane potential to inhibit complex I, as it inhibits ADP-stimulated but not CCCP-depolarized respiration. This is consistent with metformin's cationic nature driving accumulation in polarized mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C52, C87, C88, and C89 are supported by experiments in Figure 4A-D showing metformin inhibits respiration only when membrane potential is maintained (ADP condition) but not when depolarized (CCCP condition), while rotenone works in both conditions. This is consistent with the cited mechanism (C50) and basic electrochemistry (C88, C89). The data are clear and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C91",
+      "C92"
+    ],
+    "result": "Despite inhibiting complex I, metformin does not reduce mitochondrial membrane potential in intact cells because ATP synthase reverses to maintain potential using glycolytic ATP, as demonstrated by oligomycin sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C55, C56, C91, and C92 are supported by TMRE fluorescence data (Figure 4E, F) showing maintained membrane potential despite metformin treatment, and the observation that oligomycin (ATP synthase inhibitor) collapses potential in metformin-treated cells. This mechanism is well-established (C54, C92) and the data are consistent with ATP synthase reversal maintaining potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C96",
+      "C97"
+    ],
+    "result": "Metformin reversibly inhibits complex I, in contrast to rotenone which is an irreversible inhibitor. Metformin's reversibility is demonstrated by restoration of respiration upon depolarization with CCCP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C58, C96, and C97 are supported by experiments in Figure 5A, B showing that CCCP restores respiration after metformin treatment, indicating reversible binding. If metformin were irreversible like rotenone, CCCP would not restore activity. This is an important mechanistic distinction explaining metformin's better tolerability compared to rotenone (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C99"
+    ],
+    "result": "Metformin does not substantially increase H2O2 production from isolated mitochondria, unlike rotenone and antimycin, suggesting metformin and rotenone act on different sites of complex I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 and C99 are supported by Amplex Red assays (Figure 6A, B) showing rotenone and antimycin increase H2O2 release while metformin does not. The differential effects on ROS production (C63) are consistent with different binding sites within complex I. NDI1-expressing cells show only antimycin-induced ROS (C64), confirming complex I-specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Metformin likely acts upstream of the flavin site in complex I, inhibiting both electron transport and ROS generation, while also limiting electron flow to complex III and thereby reducing overall mitochondrial ROS production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100 and C101 are supported by citations, but claims C102 and C104 are inferences from the ROS data without direct evidence of the binding site. While the inference is reasonable (metformin doesn't increase ROS, so likely acts upstream of the ROS-generating flavin site), the actual binding site has not been experimentally determined in this study. Additional biochemical studies would be needed to confirm the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C105",
+      "C120"
+    ],
+    "result": "Metformin reduces hypoxic activation of HIF-1\u03b1 protein and HIF target genes (VEGF, CA9) in control cells but not NDI1-expressing cells, demonstrating that metformin inhibits HIF-1 signaling through complex I-dependent reduction of mitochondrial ROS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C67-C73, C105, and C120 are supported by Western blot data (Figure 6C, D) showing reduced HIF-1\u03b1 under hypoxia with metformin in control but not NDI1 cells, and qPCR data (Figure 6E) showing reduced VEGF and CA9 expression. The specificity is demonstrated by lack of effect on DFO-stabilized HIF-1\u03b1 (C70). The mechanism linking ROS to HIF is well-established (C67, C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C118"
+    ],
+    "result": "In vivo, metformin inhibits growth of control HCT116 p53\u2212/\u2212 xenografts but not NDI1-expressing xenografts, demonstrating that metformin's anti-tumor effects are cancer cell autonomous and depend on complex I inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C74-C78, C80, and C118 are supported by xenograft data (Figure 7A, B) showing marked tumor growth inhibition in control but not NDI1 tumors with similar metformin consumption (C77). HIF target gene expression is reduced only in control tumors (C78). This is the key in vivo validation demonstrating cell-autonomous, complex I-dependent mechanism. The genetic rescue approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C84"
+    ],
+    "result": "Metformin treatment did not alter blood glucose, plasma lactate, insulin, or IGF-1 levels in tumor-bearing mice, suggesting organismal metabolic effects do not explain the anti-tumor activity, though insulin-dependent effects in other contexts remain possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by data in Figure 7\u2014figure supplement 1 showing no differences in metabolic parameters between metformin-treated and control mice. This argues against systemic metabolic effects explaining tumor inhibition in this model. However, claim C84 is speculative about potential insulin-mediated effects in other contexts. The data support the cell-autonomous mechanism but don't rule out additional organismal effects in different settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "In A549 lung cancer cell xenografts, metformin inhibits tumor growth in control cells but not in NDI1-NDUFS3-A549 cells where endogenous complex I is replaced by NDI1, further confirming the cell-autonomous, complex I-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are supported by data in Figure 7\u2014figure supplement 3 showing metformin inhibits control A549 xenografts but not NDI1-NDUFS3-A549 xenografts. The observation that NDI1-NDUFS3-A549 xenografts grow slower than controls (C127) is noted but doesn't undermine the main conclusion. This replicates the HCT116 findings in a second cancer cell line, strengthening generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The metformin dosage used in mice (250 mg/kg, 1.25 mg/ml in drinking water) is predicted to achieve plasma concentrations similar to those in humans receiving therapeutic doses (500-2500 mg/day), falling within a clinically relevant range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 are supported by dose conversion calculations (C109) using cited methodology (Reagan-Shaw et al., 2008) and comparison to published mouse pharmacokinetics (C112) and human therapeutic levels (C110, C111). The human equivalent dose of 1418 mg falls within the clinical range of 500-2500 mg/day. The calculations appear correct and the citations appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The in vitro metformin concentrations (250-1000 \u03bcM) are higher than plasma levels in vivo (4-15 \u03bcM), likely due to tissue accumulation to local concentrations much higher than circulating plasma, as demonstrated in gut tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by citations showing similar in vitro concentrations are used in hepatocyte studies (C114), acknowledgment of the concentration discrepancy (C115), and evidence for tissue accumulation in gut (C117). The explanation (C116) is reasonable given metformin's known accumulation properties, though direct measurement of tumor metformin concentrations would strengthen this argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C121",
+      "C122"
+    ],
+    "result": "Metformin inhibits tumorigenesis through multiple mechanisms including induction of cell death under glucose limitation and inhibition of HIF signaling, suggesting it would be most effective in low glucose/oxygen conditions and might synergize with therapies limiting glucose uptake or inducing hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by the cell death data under glucose deprivation (Figure 2C, D) and HIF inhibition data (Figure 6). Claim C121 is a reasonable inference from these mechanisms. However, claim C122 is speculative about combination therapies without experimental evidence. While the speculation is scientifically reasonable, it represents future work rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C123"
+    ],
+    "result": "NDI1 is a single-subunit yeast NADH dehydrogenase that oxidizes NADH without proton pumping or ROS generation, unlike mammalian complex I which has 45 subunits. NDI1 expression causes a slight, non-significant elevation in basal oxygen consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C22 are supported by citation (Seo et al., 1998) and represent established knowledge about NDI1 and mammalian complex I structure/function. Claim C123 is supported by data in Figure 1\u2014figure supplement 1 showing a small increase in basal OCR that is not statistically significant. This is an important characterization of the NDI1 cell line used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C93",
+      "C94"
+    ],
+    "result": "Metformin accumulation in cells depends on organic cation transporters (OCT1, 2, 3) for uptake and MATE proteins for efflux. Cancer cells likely vary in transporter expression, and metformin efficacy may depend on tumor OCT expression, requiring plasma membrane transporters and robust mitochondrial membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by citation to prior research on metformin transport. Claims C86 and C93 are reasonable inferences from known biology and the experimental data on membrane potential dependence. Claim C94 is presented as speculation for future investigation, which is appropriate. The logic connecting transporter expression to drug efficacy is sound, though direct testing would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Metformin's inhibition of complex I is mechanistically distinct from rotenone: metformin requires mitochondrial membrane potential and is reversible, while rotenone is irreversible, membrane potential-independent, and highly toxic due to non-selective accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by the experimental data comparing metformin and rotenone effects (Figures 4, 5) and established knowledge about rotenone toxicity (C98). The mechanistic distinctions are clearly demonstrated and explain why metformin is clinically tolerable while rotenone is not. This is an important contribution to understanding metformin's mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Although complex I inhibition should reduce membrane potential by blocking proton pumping, metformin-treated cells maintain membrane potential through ATP synthase reversal, a well-known mechanism in cells with compromised electron transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 represents basic mitochondrial biology. Claims C91 and C92 are supported by the oligomycin data (Figure 4E) and citation (Appleby et al., 1999). The observation that oligomycin collapses membrane potential in metformin-treated cells provides direct evidence for ATP synthase reversal. This mechanism explains how metformin can accumulate despite inhibiting the electron transport chain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context: Metformin is used to treat type II diabetes by suppressing hepatic gluconeogenesis. Epidemiological studies show associations with reduced tumor progression, but the mechanism is unclear. Metformin may act systemically (reducing insulin) or directly on cancer cells (inhibiting complex I), though cancer cells can survive on glycolysis alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 provide background context supported by appropriate citations to established literature. These claims set up the knowledge gap (C14) that the study addresses. The citations appear appropriate for the claims made. This background establishes the rationale for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The findings support prior work showing mitochondrial metabolism is essential for cancer proliferation and are consistent with recent reports that phenformin acts through complex I inhibition, though phenformin was discontinued due to lactic acidosis risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 place the current findings in context of prior literature with appropriate citations. Claim C81 cites the authors' own prior work. Claim C82 cites a concurrent report (Birsoy et al., 2014) with consistent findings. Claim C83 provides important clinical context about phenformin. These claims appropriately situate the work within the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Beyond cancer, metformin might be effective for diseases with HIF hyperactivation such as pulmonary hypertension, based on its ability to inhibit HIF-1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is speculative, extrapolating from the HIF inhibition data to potential therapeutic applications in other diseases. While the speculation is scientifically reasonable and supported by a citation linking HIF to pulmonary hypertension (Shimoda and Semenza, 2011), this represents a hypothesis for future testing rather than a demonstrated result. No experimental evidence for non-cancer applications is provided.",
+    "result_type": "MINOR"
+  }
+]

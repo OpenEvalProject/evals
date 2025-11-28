@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Between 1979 and 2009, the number of biomedical graduate students in the US doubled from 30,000 to 56,800, with the largest increase (219%) in students supported by NIH research grants (8,000 to 25,500), while NIH training grant support increased only modestly (29%, from 4,500 to 5,800).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, C8, and C9 are directly supported by data presented in Table 1, which shows clear numerical increases across funding categories. The calculation that NIH research grants accounted for the largest proportional increase is mathematically correct and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The PhD completion rate is 56%, calculated from 2009 data showing 16,000 students started PhDs while only 9,000 received PhDs, indicating that 44% of students fail to complete their training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C11, C12, and C13 present a critical methodological flaw: the calculation compares students who started PhDs in 2009 with those who completed PhDs in 2009, which are different cohorts. A valid completion rate requires tracking the same cohort over time. This cross-sectional comparison does not establish a true completion rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C48"
+    ],
+    "result": "Approximately one-third (34%) of PhD graduates leave research careers, with 66% pursuing careers in research and 34% in non-research positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14, and C48 are supported by Table 2 data showing 84,500 of 128,000 post-PhD workforce (66%) in scientific research. The calculation is straightforward and the data internally consistent, though the definition of 'leaving research completely' versus working in science-related non-research positions could be clearer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C15"
+    ],
+    "result": "Only 37% of students who start PhDs eventually become researchers, calculated by multiplying the 56% completion rate by the 66% who pursue research careers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C5 and C15 compound the methodological error from the completion rate calculation. Since the 56% completion rate is based on comparing different cohorts (not a true longitudinal completion rate), the 37% figure is unreliable. The calculation method is correct, but it relies on flawed input data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Elite PhD programs (UCSF Tetrad and CSHL Watson School) demonstrate significantly higher completion rates (94% and 83% respectively) and research career rates (89% and 81%) compared to the national average (56% completion, 66% research careers), with CSHL completing PhDs in 4.6 years versus 6.5 years at UCSF and 6-7 years nationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25, C26, C27, C28, C39, C40, C41, and C42 present data from Table 3, but several confounding factors limit interpretation. The comparison involves different time periods (1999-2001 for UCSF, 1999-2006 for CSHL, versus 2009 snapshot for national data), different sample sizes, and potential selection bias (elite programs may recruit stronger students). The national 56% 'completion rate' is methodologically flawed as noted earlier, making the comparison problematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The Watson School at CSHL, founded in 1999, implemented structural differences from typical programs including smaller cohorts (\u226410 students/year vs 15-20 at UCSF), complete separation of training from research funding (all students supported by fellowships, not PI research grants), and an institutional commitment to shorter PhD duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe factual programmatic differences between Watson School and other programs. These structural features are presented as established facts about program design and are internally consistent, though their causal relationship to outcomes requires further analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "According to the Watson School dean, graduates maintain high research standards and successfully compete for postdoc positions, with 11 of 52 graduates (21%) from 1999-2008 obtaining tenure-track positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36, C37, and C38 rely on statements from the Watson School dean without independent verification. The 21% tenure-track rate lacks context (timeframe post-PhD, comparison to other programs). The claims about research quality and postdoc competitiveness are qualitative assertions without supporting data or comparison benchmarks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The average age at which academic researchers receive their first NIH grant increased from 38 in 1980 to 42 in 2010, indicating that young scientists spend their most creative years working on questions posed by older scientists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by data cited from the Workforce report (p29). The four-year increase is clearly documented. However, C51 represents an interpretive inference about 'most creative years' that, while plausible, is not directly supported by empirical evidence and reflects the author's perspective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The postdoc population increased approximately threefold from 8,500 in 1980 to 33,000 in 2009, driven primarily by increases in federal research grant support (3,000 to 11,500) and non-US citizens (1,500 to 11,000, a 630% increase), while federal training grant support remained constant at 2,000.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C65-C69 are directly supported by Table 4 data. The calculations are correct and the trends are clear. The manuscript acknowledges data quality issues and notes that different estimates exist, but the relative trends are described as 'almost certainly correct.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The increase in postdoc numbers was driven largely by non-US researchers (630% increase vs 210% for US citizens), who help keep postdoc salaries low and are more willing to accept low pay, long training, and fierce competition, thereby depressing the market for US citizen scientists while also bringing enormous benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is supported by Table 4 data showing differential growth rates. However, C60, C79, and C80 make causal claims about labor market effects and motivations that are presented as inferences without direct empirical support. These represent economic hypotheses about wage suppression and differential risk tolerance that would require labor market analysis to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The age distribution of NIH-funded investigators shifted dramatically between 1980 and 2009: investigators under 36 decreased from 18% to 3%, while those over 65 increased from 1% to 7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by data cited from NIH 2012. The shifts in age distribution are substantial and clearly documented, representing a major demographic change in the NIH-funded investigator population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C97"
+    ],
+    "result": "Jobs in industry and academic research did not keep pace with the threefold increase in postdocs, creating a 'holding tank' of senior postdocs who bear the heaviest burden of the unsustainable biomedical research enterprise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57, C58, and C97 make inferences about job availability and labor market dynamics without presenting direct data on job openings or hiring rates. While the postdoc increase is documented, the claim that jobs 'did not keep pace' requires employment data not provided. The 'holding tank' metaphor and assessment of burden are interpretive rather than empirical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The US produces twice as many STEM graduates as needed for STEM positions, making claims of a STEM shortage a myth perpetuated by employers seeking to keep salaries low and increase visa availability for foreign STEM workers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C73 rely entirely on citation to Salzman 2013 without presenting supporting data in the manuscript. The '2x oversupply' claim and assertions about employer motivations are not independently verified. These represent important claims that would benefit from direct data presentation rather than citation alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Too many students start PhDs, most PhD programs are inefficient at producing PhDs, the number of new PhDs exceeds researcher demand, and universities/PIs recruit PhD students primarily as cheap labor while ignoring national workforce needs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C21, C22, C43, C44, and C45 represent interpretive conclusions and causal attributions. While based on the presented data about completion rates and career outcomes, these claims make strong assertions about motivations ('cheap labor,' 'ignoring' workforce needs) that are inferences rather than demonstrated facts. The efficiency assessment depends on the flawed completion rate calculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C96"
+    ],
+    "result": "The NIH Workforce working group avoided concluding whether PhD numbers exceed demand, citing inadequate tracking of students supported by research grants and their career outcomes, and a year later the NIH was still struggling to obtain better data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, and C96 accurately characterize the Workforce working group's position as cited from NIH 2012. The author's characterization that they 'waffled' is interpretive but the underlying facts about data tracking limitations are supported by the citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C74"
+    ],
+    "result": "The Workforce working group recommended modest increases in training grants, better information for students about alternative careers, and increased postdoc pay especially in later years of service.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C74 accurately summarize recommendations from the Workforce working group. These are factual statements about policy recommendations that are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Most researchers entering the US on visas are never sponsored for citizenship by their employers, and current NIH policy allows non-US PhD students to be funded by research grants but not training grants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by citation to Salzman 2013. Claim C77 describes current NIH funding policy, which is presented as established knowledge. Both claims are factual statements appropriately sourced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "An efficient PhD system would produce enough researchers to meet national needs plus a few more, with 85% of graduates engaging in research 10 years post-PhD, 10% in science-related non-research work, and 5% in unrelated careers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C23 and C24 present the author's opinion about what constitutes an 'efficient' system without empirical justification for the specific 85%/10%/5% targets. These are normative goals rather than evidence-based findings. No analysis is provided to demonstrate these percentages would 'meet national needs.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C100",
+      "C101"
+    ],
+    "result": "The relentless expansion of biomedical research threatens sustainability and takes a heavy toll on young researchers, representing a debilitating, potentially fatal disease affecting every academic biomedical scientist in the US.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C84, C100, and C101 represent the manuscript's central thesis. While supported by various data points about completion rates, career outcomes, and age trends, the characterization as 'threatening sustainability' and a 'potentially fatal disease' are interpretive conclusions. The evidence shows problems but does not directly demonstrate unsustainability or system failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98"
+    ],
+    "result": "The author proposes that separating training from research funding, limiting PhD duration to 5 years, and implementing various reforms will improve training quality, drain the postdoc holding tank, reduce age at independence, and make the system more sustainable, with likely reductions in trainee numbers of less than 15-20%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C85-C95 and C98 are speculative predictions about the effects of proposed policy changes. These represent the author's opinions and hypotheses about future outcomes without empirical evidence or modeling to support the predicted effects. While the proposals may be reasonable, their predicted impacts are not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C52",
+      "C53",
+      "C75"
+    ],
+    "result": "Various descriptive statistics about PhD programs including: the main purpose is teaching research (C6), average PhD duration is 6-7 years nationally and 4.6 years at CSHL (C16, C52, C53), workforce distribution across sectors (C17-C19), and uncertainty in postdoc counts ranging from 37,000-68,000 (C20, C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims present factual data from tables and cited sources. C6 represents common knowledge about PhD program objectives. The numerical claims are directly supported by the presented data, though C20 and C75 explicitly acknowledge data quality limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Some estimates put the number of PhD students at 83,000, higher than the 56,800 figure in Table 1, reflecting tracking difficulties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 acknowledges uncertainty in PhD student counts and presents an alternative estimate. This appropriately reflects data quality limitations noted in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The present system has produced the best national biomedical research effort in the world (an argument made by reform opponents).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 accurately represents an argument made by opponents of reform as cited by the author. This is a factual statement about what others claim, not an assertion by the author.",
+    "result_type": "MINOR"
+  }
+]

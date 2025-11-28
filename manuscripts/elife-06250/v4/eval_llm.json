@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Motion anticipation is a fundamental retinal computation that compensates for the ~70 ms phototransduction delay, allowing accurate localization of moving objects. This phenomenon is observed across the majority of ganglion cell types and multiple species, with peak firing occurring earlier than expected from flashed stimulus responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C12 establish the biological significance and ubiquity of motion anticipation. The ~70 ms delay (C8) is well-documented in prior literature and confirmed experimentally (C14). The phenomenon is demonstrated across multiple cell types (C12, C16) and species, with functional relevance shown in salamander (C11). These foundational claims are well-supported by both citations and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Experimental characterization in goldfish RGCs shows motion anticipation with peak firing occurring 46 \u00b1 13 ms before the stimulus reaches receptive field center, compared to 62 \u00b1 3 ms delay for flashed stimuli. The degree of anticipation correlates with receptive field size (r = -0.593, accounting for 35% of variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 present core experimental findings with appropriate sample sizes (n=25), statistical analysis (Pearson correlation), and consistent observations across cell types. The correlation between RF size and anticipation (C17) is statistically significant and mechanistically interpretable. The observation that cells with smallest RFs show least anticipation (C18) is consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Voltage-clamp recordings reveal that excitatory inputs to RGCs are delayed (peak EPSC occurring 158 \u00b1 34 ms after bar reaches RF center in 7/9 cells), with no significant difference from linear predictions in most cells, ruling out presynaptic mechanisms of motion anticipation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 provide critical negative results that constrain the mechanism. The Kolmogorov-Smirnov test (C20) appropriately compares measured vs. predicted responses. The exception in orientation-selective cells (C21, n=2) is noted but represents a minority. These findings effectively rule out bipolar cell terminal mechanisms (feedback/lateral inhibition, synaptic depression) as the primary source of motion anticipation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Disrupting inhibition in single RGCs by dialyzing with 120 mM Cl\u207b eliminates motion anticipation, shifting peak firing from -18 \u00b1 11 ms to +210 \u00b1 26 ms (p < 0.0002), while leaving flash responses unaffected. This demonstrates that feedforward inhibition is necessary for motion anticipation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 present a critical causal experiment with appropriate controls. The approach (high Cl\u207b dialysis) is validated by prior work (Taylor et al., 2000) and specifically disrupts inhibition in the recorded cell while preserving circuit function. The selective effect on motion (C24) but not flash responses (C25) strongly supports the conclusion (C26). Statistical significance is appropriate (p < 0.0002, n=6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Computational modeling with passive dendrites and physiologically realistic parameters (I/E ratio ~2:1, synaptic density ~1 per 5 \u03bcm) successfully reproduces motion anticipation, demonstrating that passive dendritic properties are sufficient for this computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 show that computational models with experimentally measured parameters (C27: I/E = 2.1 \u00b1 0.23, n=10) reproduce motion anticipation (C28). The robustness analysis (C29) demonstrates the mechanism works across physiologically relevant parameter ranges but breaks down at extreme values (Rm = 50 M\u03a9), providing boundaries. The modeling is well-constrained by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Blocking active dendritic conductances (NMDA receptors, voltage-gated Na\u207a and Ca\u00b2\u207a channels) with MK-801 and QX-314 does not eliminate motion anticipation, with EPSPs peaking 47 \u00b1 29 ms before stimulus reaches RF center (p = 0.0002, n=7), confirming that active conductances are not necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 provide strong experimental evidence that active conductances are dispensable. The pharmacological approach is well-validated, with verification that drugs reached dendrites (10 min dialysis, compared to Alexa 488 diffusion). The timing of anticipation in passive cells (47 \u00b1 29 ms) is statistically indistinguishable from control cells (46 \u00b1 13 ms, p = 0.9844), strongly supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Motion anticipation operates at velocities between 3.8\u00b0 s\u207b\u00b9 and 14.7\u00b0 s\u207b\u00b9 but breaks down at 27.8\u00b0 s\u207b\u00b9 or higher, with computational models accurately reproducing this velocity dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 demonstrate quantitative agreement between experimental data (n=26 cells, multi-electrode array) and model predictions. The velocity range is consistent with prior work in salamander (cited). The model's ability to predict breakdown velocity provides validation and suggests the mechanism captures essential biophysics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Inhibition preferentially affects the latter half of the receptive field during motion because proximal inhibition activated before distal excitation effectively shunts excitatory inputs. Anatomical studies show that inhibitory synapses outnumber excitatory inputs and are randomly distributed on RGC dendrites, satisfying the conditions for effective shunting across all motion directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 integrate modeling insights (C34) with established theoretical principles (C35, Koch et al., 1983) and extensive anatomical literature (C36-C37, multiple citations across species). The mechanism explains how random synaptic placement with excess inhibition achieves direction-invariant motion anticipation. The logic is sound and well-supported by both modeling and anatomical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C57"
+    ],
+    "result": "Computational modeling demonstrates that motion anticipation requires an excess of inhibitory over excitatory inputs (I/E > 1 in most models, I/E > 2 in one), with increasing I/E ratio causing smaller EPSPs and forward temporal shift in peak response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C57 show systematic modeling results testing the I/E ratio requirement. The finding that I/E > 1 is necessary (C39) is tested across three different RGC morphologies, providing generality. The variation (I/E > 1 vs. > 2) across models suggests some dependence on dendritic architecture, which is appropriately noted. This is a key mechanistic prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C7"
+    ],
+    "result": "The density of synaptic inputs determines the critical velocity for motion anticipation. Reducing synaptic density to 25% of normal decreases critical velocity from \u22651 mm s\u207b\u00b9 to ~0.5 mm s\u207b\u00b9. The conserved excitatory synapse spacing of ~1 per 5 \u03bcm across species explains the consistent critical velocity observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C7 link anatomical observations (C40, multiple citations) to functional predictions through modeling (C41). The relationship between synaptic density and critical velocity is mechanistically interpretable and explains cross-species consistency. The modeling systematically varies density while holding I/E ratio constant, properly isolating the variable of interest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Motion anticipation is computed autonomously within each ganglion cell's dendritic tree through passive, non-linear interactions of excitatory and inhibitory inputs, independent of other retinal circuit computations. The excitatory signal transmitted to RGCs is delayed, indicating temporal correction occurs postsynaptically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43, C48-C50 present the central mechanistic conclusion, supported by multiple lines of evidence: delayed excitatory inputs (C48, experimental), persistence with passive dendrites (C30-C31), and modeling results (C28, C43). The autonomy claim (C3, C49) is supported by the finding that excitation is delayed while output shows anticipation, requiring dendritic computation. The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Motion anticipation correlates with RF size in goldfish, with smaller RFs showing less anticipation. In primates, parafoveal midget RGCs have I/E ratios ~1:1 and may lack motion anticipation, consistent with their role in the 'what' pathway requiring high spatial resolution, while magnocellular pathway RGCs with larger RFs benefit from motion anticipation for spatial localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 extend findings to functional and evolutionary context. The correlation with RF size (C44) is experimentally demonstrated. The primate data (C45) comes from anatomical studies. The functional interpretation (C46-C47) regarding 'what' vs. 'where' pathways is well-grounded in established visual neuroscience and provides a coherent framework for understanding species/cell-type differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The classical linear-nonlinear receptive field model incompletely describes RGC responses to motion because excitatory and inhibitory inputs interact non-linearly in a spatiotemporally dependent manner. This implements an AND-NOT operation (Koch et al., 1983) that is activated when objects move away from the soma, aligning peak excitation with the object's actual position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide theoretical interpretation of the mechanism. The inadequacy of linear models (C51) is demonstrated by the modeling results showing non-linear interactions. The connection to AND-NOT logic (C52-C53) appropriately cites theoretical work and applies it to explain the directional asymmetry in inhibitory effectiveness. This provides conceptual clarity to the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Other RGC types use dendritic computations for different functions: PV-5 cells integrate inputs locally for approach sensitivity, direction-selective cells use dendritic Nav channels, and some DS-RGCs combine dendritic spikes with gap junctions for enhanced temporal responses. NMDA receptors could potentially augment motion anticipation in specific RGC subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 place findings in broader context of dendritic computation. These are appropriately cited from prior literature and serve to illustrate that different RGC types use dendritic mechanisms for various computations. The speculation about NMDA receptors (C55) is appropriately tentative and based on known properties. This contextualizes but does not constitute primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The location of inhibitory synapses on dendritic trees significantly affects RGC output, as demonstrated for direction-selective cells with specific starburst wiring. However, motion anticipation relies on general wiring principles: random, independent distribution of excess inhibitory inputs ensures effective transmission of stimuli entering the RF while attenuating later portions, with inter-synapse distance determining velocity tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 contrast specific vs. general wiring principles. The importance of synapse location (C58) is demonstrated by modeling. The contrast with direction-selective cells (C59) highlights that motion anticipation uses different organizational principles. The interpretation of anatomical data (C60-C61) in light of the mechanism is logical. The velocity tuning prediction (C62) follows from modeling and theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The general conditions for motion anticipation (topographically organized neurons receiving feedforward inhibition) exist in downstream visual areas including superior colliculus, thalamus, and V1, suggesting this may be a general mechanism for correcting neural signal delays relative to external events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 are speculative extrapolations beyond the retinal data. While the cited studies show feedforward inhibition exists in these areas, they do not demonstrate motion anticipation or test whether the specific mechanism operates there. The speculation is reasonable and appropriately tentative, but lacks direct experimental support. This represents a hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Motion anticipation relies on feedforward inhibition, with passive non-linear interactions of excitatory and inhibitory synapses enabling accurate position encoding. An excess of inhibitory over excitatory inputs allows tracking of all motion directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 summarize key mechanistic findings that are directly supported by the experimental and modeling results detailed in other claim groups. C4 is demonstrated by the inhibition disruption experiments (C23-C26), C5 by the passive dendrite experiments (C30-C31) and modeling (C28), and C6 by the I/E ratio modeling (C38-C39). These are well-established by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Directional selectivity in RGCs involves asymmetric connections with starburst amacrine cells, which have directionally selective dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 accurately summarizes well-established prior work on directional selectivity, appropriately cited from multiple studies. This provides important context for contrasting motion anticipation (a general computation) with directional selectivity (a specialized computation requiring specific wiring). The claim serves as background rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

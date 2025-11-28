@@ -1,0 +1,1664 @@
+{
+  "submission": {
+    "id": "685504c1-eb4b-4a9c-8ea6-d54ec5f58189",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:46:53.889290Z",
+    "updated_at": "2025-11-28T20:46:53.889290Z"
+  },
+  "content": [
+    {
+      "id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "submission_id": "685504c1-eb4b-4a9c-8ea6-d54ec5f58189",
+      "content_type": "manuscript",
+      "content_text": "# Rheotaxis facilitates upstream navigation of mammalian sperm cells\n\n## Authors\n\n- Vasily Kantsler<sup>1</sup>\n- J\u00f6rn Dunkel<sup>1</sup>\n- Martyn Blayney<sup>2</sup>\n- Raymond E Goldstein<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Applied Mathematics and Theoretical Physics University of Cambridge Cambridge United Kingdom\n2. Science Bourn Hall Clinic Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nA major puzzle in biology is how mammalian sperm maintain the correct swimming direction during various phases of the sexual reproduction process. Whilst chemotaxis may dominate near the ovum, it is unclear which cues guide spermatozoa on their long journey towards the egg. Hypothesized mechanisms range from peristaltic pumping to temperature sensing and response to fluid flow variations (rheotaxis), but little is known quantitatively about them. We report the first quantitative study of mammalian sperm rheotaxis, using microfluidic devices to investigate systematically swimming of human and bull sperm over a range of physiologically relevant shear rates and viscosities. Our measurements show that the interplay of fluid shear, steric surface-interactions, and chirality of the flagellar beat leads to stable upstream spiralling motion of sperm cells, thus providing a generic and robust rectification mechanism to support mammalian fertilisation. A minimal mathematical model is presented that accounts quantitatively for the experimental observations.\n\n## Introduction\n\nDuring their journey from ejaculation to fertilisation, human spermatozoa have to find and maintain the right swimming direction over distances that may exceed their head-to-tail length (\u223c100 \u03bcm) by a 1000-fold. On their path to the egg cell, mammalian sperm encounter varied physiological environments and are exposed to a variety of chemical gradients and must overcome counterflows. Whilst chemotactic sensing (Kaupp et al., 2008) is assumed to provide important guidance in the immediate vicinity of the ovum (Spehr et al., 2003), it is not known which biochemical (Brenker et al., 2012) or physical mechanisms (Winet et al., 1984) keep the sperm cells on track as they pass through the rugged landscapes of cervix, uterus, and oviduct (Katz et al., 2005; Eisenbach and Giojalas, 2006; Suarez and Pacey, 2006). The complexity of the mammalian reproduction process and not least the lack of quantitative data make it very difficult to assess the relative importance of the various proposed long-distance navigation mechanisms (Eisenbach and Giojalas, 2006; Fauci and Dillon, 2006), ranging from cervix contractions (Fauci and Dillon, 2006; Suarez and Pacey, 2006) and chemotaxis (Kaupp et al., 2008) to thermotaxis (Bahat et al., 2003) and rheotaxis (Miki and Clapham, 2013). Aiming to understand not only qualitatively but also quantitatively how fluid-mechanical effects may help steer mammalian spermatozoa over large distances, we report here a combined experimental and theoretical study of sperm swimming in microfluidic channels, probing a wide range of physiologically relevant conditions of shear and viscosity. For both human and bull spermatozoa, we find that their physical response to shear flow, combined with an effective shape-regulated surface attraction (Kantsler et al., 2013) and head\u2013tail counter-precession, favours an upstream spiralling motion along channel walls. The robustness of this fluid-mechanical rectification mechanism suggests that it is likely to play a key role in the long-distance navigation of mammalian sperm cells. Thus, the detailed analysis reported below not only yields new quantitative insights into the role of biophysical processes during mammalian reproduction but could also lead to new diagnostic tools and improved artificial insemination techniques (Merviel et al., 2010).\n\nRecent experiments on red abalone (Riffell and Zimmer, 2007; Zimmer and Riffell, 2011), a large marine snail that fertilises externally, showed that weak fluid flows can be beneficial to the reproduction of these organisms, suggesting that shear flows could have acted as a selective pressure in gamete evolution. In higher organisms, which typically fertilise internally, sperm transport is much more complex and the importance of shear flows relative to chemotaxis, peristaltic pumping, or thermotaxis still poses an open problem as it is difficult to perform well-controlled in vivo studies. The complex uterine and oviduct topography (Suarez and Pacey, 2006) and large travelling distances render it unlikely that local chemotactic gradients steer sperm cells during the initial and intermediate stages of the sexual reproduction process. Experimental evidence (Kunz et al., 1996) suggests that rapid sperm transport right after insemination is supported by peristaltic pumping driven by muscular contractions of the uterus, but it is not known how sperm navigate in the oviduct. Thermotaxis, the directed response of sperm to local temperature differences, was proposed as a possible long-range rectification mechanism of sperm swimming in rabbits (Bahat et al., 2003), but recently questioned (Miki and Clapham, 2013) as it is likely to be inhibited by convective currents that form in the presence of temperature gradients. On the other hand, it has long been known that, similar to bacteria (Marcos et al., 2012) and algae (Chengala et al., 2013), mammalian sperm (Adolphi, 1905; Roberts, 1970) are capable of performing rheotaxis, by aligning against a surrounding flow (Marcos et al., 2012; Miki and Clapham, 2013), but this effect has yet to be systematically quantified in experiments (Fauci and Dillon, 2006; Suarez and Pacey, 2006). Specifically, it is not known at present how sperm cells respond to variations in shear rate and viscosity, and how long they need to adapt to temporal changes in the flow direction. Answering these questions is essential for understanding which physical effects may be important at different stages of the mammalian fertilisation process.\n\nTo quantify the swimming strategies of sperm cells under well-controlled flow conditions, we performed a series of microfluidic experiments in cylindrical and planar channels (Figure 1), varying systematically shear rates \u03b3\u02d9 and viscosities \u03bc through the physiologically and rheotactically relevant regime, up to \u03bc = 20 mPa\u00b7s which is roughly 10\u00d7 the viscosity of natural seminal fluid (Owen and Katz, 2005). These measurements revealed the interesting result that both human and bull spermatozoa do not simply align against the flow, but instead swim upstream on spiral-shaped trajectories along the walls of a cylindrical channel (Figure 1A; and Video 1). The previously unrecognised transversal velocity component can be attributed to the chirality of the flagellar beat. The resulting helical swimming patterns enable the spermatozoa to explore collectively the full surface of a cylindrical channel, suggesting that rheotaxis can help sperm to navigate their way through the oviduct and find the egg cell (Miki and Clapham, 2013). Using high-speed imaging, we also determined the dynamical response of human and bull spermatozoa to flow reversal at different viscosities, which is essential for understanding how active swimming, rheotaxis, and uterine peristalsis can combine to facilitate optimal sperm transport. To rationalise the experimental observations, we identify below a simple mathematical model that reproduces the main results of our measurements.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02403/elife-02403-fig1-v1.jpg)\n\n**Figure 1.:** (A) Background-subtracted micrograph showing the track of a bull sperm in a cylindrical channel (viscosity \u03bc = 3 mPa\u00b7s shear rate $\\gamma\u02d9=2.1s^{\u22121}$ ), channel boundary false-coloured with black, see Video 1 for raw data. (B) Schematic representation not drawn to scale. The conical envelope of the flagellar beat holds the sperm close to the surface (Kantsler et al., 2013). The vertical flow gradient exerts a torque that turns the sperm against the flow, but is counteracted by a torque from the chirality of the flagellar wave, resulting in a mean diagonal upstream motion. (C) Tracks of bull sperm near a flat channel surface. (D) Upstream and transverse mean velocities $\u2329v_{y,x}\u232a$ vs shear flow speed u20 at 20 \u03bcm from the surface for different viscosities. All velocities are normalised by the sample mean speed v0\u03bc at $\\gamma\u02d9=0$. For human sperm, in order of increasing viscosity v0\u03bc = 53.5 \u00b1 3.0, 46.8 \u00b1 3.7, 36.8 \u00b1 3.3, 29.7 \u00b1 3.9 \u03bcm/s, and for bull sperm v0\u03bc = 70.4 \u00b1 11.8, 45.6 \u00b1 4.7, 32.4 \u00b1 4.8, 29.6 \u00b1 4.1 \u03bcm/s, where uncertainties are standard deviations of mean values from different experiments. Each data point is an average over >1000 sperms. (E) Histograms for selected points in (D).\n\n![Video 1.](https://cdn.elifesciences.org/articles/02403/elife-02403-media1.mov.jpg)\n\n**Video 1.:** Scale bar 100 \u03bcm.\n\n## Results\n\n### Shear and viscosity dependence\n\nIn the experiments, samples of human and bull spermatozoa were injected into microfluidic channels of spherical or rectangular cross-section (\u2018Materials and methods\u2019). The cells were then exposed to well-defined Poiseuille shear flows, corresponding to parabolic flow profiles (Figure 1B). Even in the absence of flow, sperm cells tend to accummulate at surfaces (Rothschild, 1963; Denissenko et al., 2012) due to a combination of steric repulsion (Kantsler et al., 2013) and hydrodynamic forces (Fauci and McDonald, 1995; Elgeti et al., 2010; Friedrich et al., 2010; Gaffney et al., 2011; Montenegro-Johnson et al., 2012). This can be explained by the fact that, in essence, the flagellar beat traces out a cone which, upon collision, aligns with a solid surface, so that the sperm's propulsion vector points into the boundary and the cells become effectively trapped at the surface (Kantsler et al., 2013). In the presence of a Poiseuille shear flow, cells close to the channel boundaries experience an approximately linear vertical flow profile, whose slope is given by the shear rate $\\gamma\u02d9$ (Figure 1B). To quantify the effects of shear rate and viscosity on sperm swimming, we tracked a large number of individual cells (typically N >10,000) in planar microfluidic channels (Figure 1C) at different shear rates $\\gamma\u02d9$, ranging from 0.2 s\u22121 to 9 s\u22121, and different dynamic viscosities \u03bc, ranging from 1 mPa\u00b7s (that of water) to 20 mPa\u00b7s (\u2018Materials and methods\u2019). The cell tracks were then used to reconstruct the velocities of sperm swimming close to the boundary. Mean values and histograms of the upstream and transverse velocity components from those measurements are summarised in Figure 1D,E. Since sperm motility depends on viscosity and may vary among different samples, it is advisable to normalise sperm velocities v = (vx,vy), that have been measured at different values of $\\gamma\u02d9$ and \u03bc, by the mean sample speed $v_{0\\mu}=\u2329|v|\u232a_{\\mu}$ at zero shear $\\gamma\u02d9=0$, and also to rescale the flow velocity accordingly. Figure 1D shows the thus-normalised mean upstream and mean transverse swimming velocities $\u2329v_{y,x}\u232a_{\\mu}/v_{0\\mu}$ for bull and human spermatozoa as a function of the dimensionless rescaled shear flow speed $u_{20}=\\gamma\u02d9(2A/v_{0\\mu})$, where A = 10 \u03bcm is the approximate amplitude of a typical flagellar beat (i.e., the maximum distance of the flagellar tip from the surface during a beat is 2A). The results for the upstream velocity reveal that both human and bull sperm exhibit optimal upstream swimming at rescaled flow speeds u20 \u223c 1, implying that there is an optimal shear regime for the rectification of sperm swimming. Remarkably, however, we also find that, at low viscosities (\u03bc \u226a10 mPa\u00b7s), human spermatozoa exhibit a substantial shear-induced transverse velocity component that becomes suppressed at very high viscosities. By contrast, for bull spermatozoa, the mean transverse component is generally weaker and less sensitive to viscosity variations. These statements are also corroborated by the corresponding velocity histograms in Figure 1E.\n\nQualitatively, the above observations for stationary shear flows can be explained as follows. Once a sperm cell has become trapped at a surface, its tail explores, on average, regions of higher flow velocity than the head, resulting in a net torque that turns the head against the flow (Figure 1B). This shear-induced rectification is counter-acted by variability in the cells swimming direction. If the shear velocity is too low the orientational \u2018noise\u2019, which is caused by a combination of intrinsic fluctuations in the cells' swimming apparatus, thermal fluctuations, and elastohydrodynamic effects, inhibits upstream swimming, whereas if the shear velocity becomes too large the sperm will simply be advected downstream by the flow, implying that there exists an optimal intermediate shear rate for upstream swimming. Interestingly, we find that the maximum of the upstream velocity decreases more strongly with viscosity for bull sperm than for human sperm (Figure 1D). This could be due to differences in cell morphology, as previous numerical studies (Smith et al., 2011) for bacterial cells suggest that differences in head shape can substantially alter swimming behavior. Bull sperm have a flatter head than human sperm, which likely suppresses the rotational motion of the cell at high viscosities thus leading to an effectively smaller vertical beat amplitude A. This could explain why, at high values of \u03bc, the tail beat of bull sperm becomes essentially two-dimensional and constricted to the vicinity of the surface, so that alignment against the flow becomes less efficient.\n\nTo understand the unexpectedly strong transverse velocity component of human sperm at \u03bc \u22725 mPa\u00b7s, as typical of the seminal fluid (Owen and Katz, 2005), it is important to recall that sperm of invertebrae and mammals are known to exhibit different chiral beat patterns depending on environmental conditions (Gibbons, 1982; Ishijima and Hamaguchi, 1993; Woolley and Vernon, 2001; Smith et al., 2009), and that shear flows are capable of separating particles along the transverse direction according to their chirality (Marcos et al., 2009; Talkner et al., 2012). Human sperm exhibit a strong helical beat component at low-to-moderate values of \u03bc (Video 2), but this chirality becomes suppressed at high viscosities (Video 3) resulting in more planar wave forms (Smith et al., 2009). For comparison, the beat of a bull sperm flagellum is more similar to a rigidly rotating planar wave even at low viscosities (Video 4), thus exhibiting a weaker chirality and leading to smaller transverse velocities (Figure 1D). Since the flagellar beating pattern can be controlled not only by viscosity but also by changes in calcium concentration (Ishijima and Hamaguchi, 1993), higher organisms appear to possess several means for tuning transverse and upstream swimming of sperm.\n\n![Video 2.](https://cdn.elifesciences.org/articles/02403/elife-02403-media2.mov.jpg)\n\n**Video 2.:** The video shows that, at low viscosity, the flagellar beat of a human sperm cell typically exhibits a considerable chiral component. This follows from the fact that the flagellum never appears as a straight line (in contrast to bull sperms at same viscosity, compare Video 4). Scale bar 20 \u03bcm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/02403/elife-02403-media3.mov.jpg)\n\n**Video 3.:** The video shows that, at very high viscosity, the chiral beat component becomes considerably weaker for there now exist instances where the flagellum appears as an almost straight line, indicating that the beat pattern approaches the shape of a planar rotating wave. Scale bar 20 \u03bcm.\n\n![Video 4.](https://cdn.elifesciences.org/articles/02403/elife-02403-media4.mov.jpg)\n\n**Video 4.:** The video shows that, even at low viscosity, the flagellar beat of bull sperm is approximately planar. This follows from the fact that at certain instances the flagellum appears as a line (in contrast to human sperms at same viscosity, compare Video 2). Scale bar 20 \u03bcm.\n\n### Dynamical response\n\nIn addition to typically outward directed mucus flow in the oviduct, sperm cells are also exposed to temporally varying flows driven by uterine contractions (Fauci and Dillon, 2006; Suarez and Pacey, 2006). To probe the dynamical response of sperm to changes in the flow direction, we performed additional experiments, where we tracked the motion of bull and human spermatozoa after a sudden flow reversal at two different viscosities (Figure 2; Videos 5, 6). In those experiment, sperm were first given time to align against a stationary shear flow, then the flow direction was reversed, uy\u2192\u2212uy, with a switching time <1 s. Upon flow reversal, a sperm cell typically performs a U-turn (Figure 2A,B). The characteristic radius of curvature of the trajectory and the typical turning time \u03c4 were found to increase strongly with viscosity. At low viscosity, \u03bc \u223c 1 mPa\u00b7s, sperm realign rapidly against the new flow direction with a typical response time of \u03c4 \u223c 5 s to 10 s, and the curvature radius is of the order of one or two sperm lengths \u2113 \u223c 60 \u03bcm (Video 5). By contrast, at a larger viscosity of \u03bc \u223c 12 mPa\u00b7s, which is roughly 4\u00d7 higher than the natural viscosity of the ejaculate, both curvature radius and response time increase by approximately a factor of 5 (Video 6). Interestingly, these response times are of the order of typical cervical contractions (Kunz et al., 1996), suggesting a possible fine-tuning between muscular activity of the uterus and turning behavior of sperm cells. In particular, immediately after the flow reversal, sperm orientation and flow direction point for a short period of time in approximately the same direction, leading to a momentarily increased transport velocity (see velocity peaks in Figure 2C). Thus, by switching flow directions back and forth at an optimal rate, the transport efficiency of an initially rectified sperm population can be enhanced.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02403/elife-02403-fig2-v1.jpg)\n\n**Figure 2.:** (A) At low viscosity, sperm perform sharp U-turns, see also Video 2. (B) At high viscosity, the typical radius of the U-turns increases substantially (Video 3). White/black arrows show orientations of several cells before/after turning. (C) Flow velocity at distance 5 \u03bcm from the channel surface (blue, \u2018Flow\u2019), mean upstream velocity $\u2329v_{y}\u232a$ (red, \u2018Up\u2019) and mean transverse velocity $\u2329v_{x}\u232a$ (green, \u2018Trans\u2019) as function of time. The typical response time of sperm cells after flow reversal increases with viscosity. Peaks reflect a short period when mean swimming direction and flow direction are aligned. The time series for human sperm also signal a suppression of the beat chirality at high viscosity, consistent with Figure 1D.\n\n![Video 5.](https://cdn.elifesciences.org/articles/02403/elife-02403-media5.mov.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/02403/elife-02403-media6.mov.jpg)\n\n### Minimal model\n\nTo test whether our understanding of the experimental observations is correct and to provide a basis for future theoretical studies, we used resistive force theory to infer a minimal mathematical model that incorporates the main physical mechanisms discussed above (details are provided in the Supplementary file 1). The model assumes that the effective two-dimensional motion of a sperm cell, that swims close to a surface in the presence of a shear flow can be described in terms of its position vector R(t) = (X(t),Y(t)) and its orientation unit vector N(t) = (Nx(t),Ny(t)). Focussing on an effective description of the main physical effects and assuming that the flow is in y-direction (Figure 1B), the equations of motions for R and N read\n\n$$\nR\u02d9=VN+\\sigmaU\u00afe_{y},\n$$\n\n\n\n$$\nN\u02d9=\\sigma\\gamma\u02d9\\alpha(N_{x}N_{y}N_{y}^{2}\u22121)+\\sigma\\gamma\u02d9\u03c7\\beta(N_{x}^{2}\u22121N_{x}N_{y})+(2D)^{1/2}(I\u2212NN)\u00b7\u03be(t).\n$$\n\nEquation 1 states that the net in-plane velocity R\u02d9(t) of a cell arises from two main contributions: self-swimming at typical speed V in the direction of the cell orientation N, and advection by the flow, where \u03c3 = \u00b11 defines the flow direction and U\u00af>0 the mean flow speed experienced by the cell. As explained in detail in the Supplementary file 1, the nonlinear structure of Equation 2 ensures that the length of the orientation vector N remains conserved, assuming that the change in orientation, N\u02d9(t), is caused by three effects: shear-induced alignment against the flow with rate \u03b3\u02d9\u03b1, where \u03b1 >0 is numerical factor that encodes geometry of the flagellar beat, shear-and-chirality-induced turning at rate \u03b3\u02d9\u03b2 with \u03c7\u2208{\u22121, 0, +1} and \u03b2 >0 encoding chirality and shape of the flagellar beat, and variability (Su et al., 2012) in the swimming direction, modeled as a Stratonovich-type two-dimensional Gaussian white noise \u03be with amplitude D (Han et al., 2006). Equations 1 and 2 were obtained by approximating the flagellum by a rigid conical helix, with the polar geometry of the enveloping cone dictating the mathematical structure of the deterministic turning terms (see Supplementary file 1 for details of the calculation). The simplifying assumptions underlying Equations 1 and 2 imply that this minimal model does not accurately capture the dynamics of individual cells at zero shear, as the deterministic terms in Equation 2 neglect the intrinsic curvature of cell trajectories. However, when analyzing the in-plane curvature for a large number of human sperm trajectories (>100,000 sample points from more than 1200 cells) at zero shear, we found a broad distribution of curvatures with a small positive mean curvature of (5.6 \u00b1 1.3)\u00b710\u22124 \u03bcm at low viscosity (1 mPa\u00b7s) and a small negative mean curvature (\u22121.9 \u00b1 0.1)\u00b710\u22123 \u03bcm at high viscosity (12 mPa\u00b7s), where the different signs are consistent with the observed change in the transverse velocity for human sperm at high viscosity (Figure 1D). To account at least partially for these curvature variations, we include in Equation 2 the Gaussian white noise term. Compared with more accurate models that resolve the details of the flagellar dynamics (Elgeti et al., 2010; Gaffney et al., 2011), Equations 1 and 2 provide a strongly reduced description which, however, turns out be sufficient for rationalising our experimental observations (Figure 3). Values for V and U\u00af can be directly estimated from experiments, and sign conventions in Equation 2 have been chosen such that \u03c7 = +1 for human sperm at low viscosity (for weakly chiral bull sperm one can use \u03c7 = 0 in a first approximation). The model parameters (\u03b1, \u03b2, D) can be inferred from the experimental data (Supplementary file 1). By performing systematic parameter scans, we found that values \u03b1\u2208[0.2, 0.4], \u03b2\u2208[0.05, 0.1] and D\u2208[0.2, 0.3] rad/s yield good quantitative agreement with the experimental results for both stationary flow (Figure 3A) and flow reversal (Figure 3B), suggesting that the coupling between shear flow and beat chirality dominates the transverse velocity dynamics. We may therefore conclude that, despite some strong simplifications, the effects included in the model capture indeed the main physical mechanisms relevant for understanding sperm motion in shear flow near a surface.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02403/elife-02403-fig3-v1.jpg)\n\n**Figure 3.:** (A) Upstream and transverse velocity for different values of the variability (effective noise) parameter D in units rad/s and dimensionless shape factors (\u03b1, \u03b2). (B) Time response of a chiral swimmer with \u03c7 = +1 (\u2018Human\u2019) and a non-chiral swimmer with \u03c7 = 0 (\u2018Bull\u2019) to a reversal of the flow direction at time t = 0. Blue dashed line shows fluid flow uy at 5 \u03bcm from the boundary. Simulation parameters (N = 1000 trajectories, A = 10 \u03bcm, \u2113 = 60 \u03bcm, V = 50 \u03bcm/s) were chosen to match approximately those for viscosity 1 mPa\u00b7s in Figure 2C.\n\n## Discussion\n\nIn conclusion, we have reported detailed quantitative measurements of sperm motion in shear flow. Our experimental results show that upstream swimming of mammalian sperm due to rheotaxis is more complex than previously thought. Human sperm cells were found to exhibit a significant transverse velocity component that could be of relevance in the fertilisation process, as the ensuing spiralling motion enables spermatozoa to explore collectively a larger surface area of the oviducts, thereby increasing the probability of locating egg cells. Our theoretical analysis implies that the transverse velocity component arises from a preferred handedness in the flagella beat in the presence of shear flow, in contrast to recent findings for male microgametes of the malaria parasite Plasmodium berghei (Wilson et al., 2013). Due to the large sample size, our data provide substantial statistical evidence for the hypothesis that mammalian sperm have evolved to achieve optimal upstream swimming near surfaces, possibly exploiting the enhanced fluid production in the female reproductive system during the fertile phase (Eschenbach et al., 2000) and after intercourse (Miki and Clapham, 2013). The improved quantitative knowledge derived from this data may help to design more efficient artificial insemination strategies, for example, by optimising the viscosity and chemical composition of fertilisation media and adjusting injection techniques to maximise upstream swimming of sperm cells. Combined with recent measurements (Kantsler et al., 2013), which clarified the importance of flagella-mediated contact interactions for the accumulation of sperm cells at surfaces, the results presented here yield a cohesive picture of the mechanistic and fluid-mechanical (Friedrich et al., 2010) aspects of long-distance sperm navigation. Future work should focus on merging these insights with quantitative studies of chemotaxis (Spehr et al., 2003; Kaupp et al., 2008; Zimmer and Riffell, 2011; Brenker et al., 2012) to obtain a differentiated understanding of the interplay between physical and chemical factors during various stages of the mammalian reproduction process.\n\n## Materials and methods\n\n### Sperm sample preparation\n\nCryogenically frozen bull spermatozoa were purchased from Genus Breeding. For each experiment, a bull sperm sample of 250 \u03bcl was thawed in a water bath at 37\u00b0C for 15 s. Human samples from healthy undisclosed normozoospermic donors were obtained from Bourn Hall Clinic. Donors provided informed consent in accordance with the regulations of The University of Cambridge Human Biology Research Ethics Committee. For each experiment, bull and human samples were washed three times by centrifugation at 500 rcf for 5 min with the appropriate medium. The medium for bull spermatozoa contained 72 mM KCl, 160 mM sucrose, 2 mM Na-pyruvate, and 2 mM Na-phosphate buffer at pH 7.4 (Woolley and Vernon, 2001). Human sperm medium was based on a standard Earle's Balanced Salt Solution, containing 66.4 mM NaCl, 5.4 mM KCl, 1.6 mM CaCl2, 0.8 mM MgSO4, N2H2PO4 1 mM, NaHCO3 26 mM, D-Glucose 5.5 mM supplemented with 2.5 mM Na pyruvate and 19 mM Na-lactate pH adjusted to 7.2 by bubbling the medium with CO2. Viscosity of the medium was modified by adding methylcellulose (M0512; Sigma-Aldrich; St. Louis, MO; approximate molecular weight 88,000) at concentrations 0%, 0.2%, 0.4%, 0.5% wt/vol. The absence of circular trajectories at zero-shear implies that the sperm are capacitated (Miki and Clapham, 2013).\n\n### Microfluidics\n\nMicrofluidic channels were manufactured using standard soft-lithography techniques. The master mould was produced from SU8 2075 (MicroChem Corp.; Newton, MA) spun to a 340 microns thickness layer and exposed to UV light through a high resolution mask to obtain the desired structures. The microfluidic chip containing the channels cast from PDMS (Sylgard 184; Dow Corning; Midland, MI) and bonded to covered glass. The channel has rectangular cross-section of 0.34 \u00d7 3 mm. We treated PDMS surfaces of the channels prior the experiment with 10% (wt/vol) Polyethylene glycol (m.w. 8000; Sigma) solution in water for 30 min to avoid adhesion of sperm cells to the walls. Sperm suspension was introduced through inlets with a micro-syringe pump (Harvard Apparatus; Kent, UK) at controlled flow rates of 0.1\u201340 \u03bcl/min. The concentration of the sperm cells in the experiments was kept below 1% volume fraction.\n\n### Microscopy\n\nTo identify the swimming characteristics of individual sperm cells, the trajectories were reconstructed by applying a custom-made particle-tracking-velocimetry (PTV) algorithm to image data taken with a Zeiss Axio Observer inverted microscope (20x or 10x objective, 25 fps). The flagella dynamics was captured with a Fastcam SA-3 Photron camera (San Diego, CA; 125 fps, 40x/NA 0.6 objective). Calibration of the velocity profile in the channel was performed by measuring trajectories of fluorescent beads for different distances from the coverslip via PTV. The measured velocity profile is found identical to the calculated values from solving the Stokes equations for the given geometry. Values of the shear rate $\\gamma\u02d9$ in the different experiments were reconstructed from the flow velocity at distance 20 \u03bcm from the wall (see below).\n\n### Additional experimental information\n\nEffects of viscosity variation and shear-rate variation were studied in experiments that were performed in a rectangular channel with a cross-section 0.34 \u00d7 3 mm, by observing sperm motion at lower and upper channel walls. The field of view (normally 800 \u00d7 800 \u03bcm) was chosen at the middle of the channel (in x-direction), where the in-plane velocity gradient is negligible due to the high aspect ratio of the channel (Figure 4B). The vy-velocity profiles, measured along the z-coordinate, were found to be in perfect agreement with the theoretically expected parabolic flow profile for this geometry (Figure 4B). The shear rate \u03b3\u02d9 at a given flow rate was determined from the flow velocity at distance 20 \u03bcm from the wall. The depth of field of the objective was <5 \u03bcm to ensure that we only observed cells that swam close to the surface. Trajectories of individual sperm cells were analysed in MATLAB. The sample size in a single experiment exceeds 100,000 velocity vectors, each measurement for a given viscosity and a shear rate was repeated a few times with different sperm samples. Supplemental data tables that summarise the statistical information for each experiment are given in Supplementary file 2.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02403/elife-02403-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of the microfluidic channel and field of view (turquoise region) in the sperm motility measurements. (B) Velocity profile at the center of the channel. Red symbols are values of the vertical velocity profile vy(z) measured by PTV for the flow rate 0.1 \u03bcl/s. The solid line shows the theoretically calculated flow profile for the same flow rate. In motility experiments, values for the velocity gradient near the boundary (pink region) were obtained by measuring the flow velocity at 20 \u03bcm from the boundary. (C) Theoretical 2D flow speed profile in (x,z)-plane at flow rate 0.1 \u03bcl/s.\n",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "cc98add1-98be-4f31-a268-9ea547001da1",
+      "submission_id": "685504c1-eb4b-4a9c-8ea6-d54ec5f58189",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anthony A Hyman, Max Planck Institute of Molecular Cell Biology and Genetics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02403.015](https://doi.org/10.7554/eLife.02403.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cRheotaxis facilitates upstream navigation of mammalian sperm cells\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom, Tony Hyman, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIt has been known for a long time that spermatozoa are not just dragged along by a fluid flow, but they tend to swim upstream of the flow, under certain circumstances. A recent paper by Miki et al. in Curr. Biol. (2013) showed that there are fluid flows in the oviduct of mammals for some time after coitus that guide sperm swimming upstream towards the egg. Your paper adds to our knowledge by providing the first quantitative analysis of how mammal spermatozoa swimming is guided by surrounding fluid flows and provides a substantial contribution to the understanding of how sperm are transported to the egg before fertilization. The theory is elegant and the arguments presented are quite clear.\n\nOur main criticism is that in many places you make strong statements without sufficient justification. We would like you to go through your manuscript and consider making adjustments at these places.\n\nFor instance in the fifth paragraph of the Introduction section, you state \u201cHuman sperm exhibit a strongly helical beat component at low-to-moderate values of \u03bc, but this chirality becomes suppressed at high viscosities due to increased friction (Figure 1d). For comparison, the beat of a bull sperm flagellum is more similar to a rigidly rotating planar wave, thus exhibiting a weaker chirality and leading to smaller transverse velocities at physiologically relevant values of \u03bc.\u201d This is a crucial point of the paper and needs to be validated by citations.\n\nThere are several statements in the Discussion section that interpret the observations, but it is unclear how strong the arguments presented are. You need to either tone down your statements, or provide better explanations. For example the statement \u201cThis is a consequence of the fact that bull sperm have a flatter head which suppresses the rotational motion of the tail ...\u201d is presented as a clear fact. However, I do not see direct evidence for the claim that the head shape is the precise cause for the observation. There are several such problems in the Discussion section that leave the reader with strong statements that remain unclear as to the precise supporting evidence. A second example is \u201c... but the chirality becomes suppressed at high viscosities due to increased friction (Figure 1d)\u201d. Figure 1d does not however provide any information about the beat shape, only about the swimming path. Also the \u201cdue to increased friction\u201d referring to a changed chirality of beat shape seems to be just a hypothesis.\n\nYou do not comment that their swimming paths are straight at zero shear rates. Chiral asymmetry of the beat would allow for a bend in the swimming path that has been observed experimentally (probably for non-capacitated sperm). Why is this possibility not appearing in the simple model? Is there not a measurable radius of curvature of the trajectories observed in the experiments?\n\nThere remains some confusion by the symmetries of the terms in Equation (2) that are derived in the theory section. Both alignment terms in Equation (2) have the same structure and thus should have similar symmetries (one aligns in y-direction, one in x-direction). However, the term proportional to beta was introduced as a chiral term, while the term proportional to alpha is a shear-aligning term that exits for nonchiral elongated objects. This is somewhat puzzling. Also, the shear alignment term usually has a nematic symmetry as shear only provides an axis but no direction. However, the terms in Equation (2) describe alignment with a stable direction (not axis), which is a vectorial symmetry. The theory would be more compelling if the underlying symmetries would become clear and their relation to chiral, vector or tensor asymmetries would be transparent.\n",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d65deb99-2873-4021-ac1e-ab885f97a4e3",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C1",
+      "claim": "Human spermatozoa have to find and maintain the right swimming direction over distances that may exceed their head-to-tail length (~100 \u03bcm) by a 1000-fold during their journey from ejaculation to fertilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "During their journey from ejaculation to fertilisation, human spermatozoa have to find and maintain the right swimming direction over distances that may exceed their head-to-tail length (\u223c100 \u03bcm) by a 1000-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biological challenge faced by sperm cells, drawing from established knowledge about mammalian reproduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "1582c02b-ed3e-44a3-973c-6cb21d6734f8",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C2",
+      "claim": "Chemotactic sensing is assumed to provide important guidance in the immediate vicinity of the ovum.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst chemotactic sensing (Kaupp et al., 2008) is assumed to provide important guidance in the immediate vicinity of the ovum (Spehr et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Kaupp et al., 2008; Spehr et al., 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "6295492a-d5f3-472a-898f-bb570626bd54",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C3",
+      "claim": "It is not known which biochemical or physical mechanisms keep the sperm cells on track as they pass through the cervix, uterus, and oviduct.",
+      "claim_type": "EXPLICIT",
+      "source": "it is not known which biochemical (Brenker et al., 2012) or physical mechanisms (Winet et al., 1984) keep the sperm cells on track as they pass through the rugged landscapes of cervix, uterus, and oviduct (Katz et al., 2005; Eisenbach and Giojalas, 2006; Suarez and Pacey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in current scientific knowledge, supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "7db0fcf9-8cef-4876-b336-0590157de7eb",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C4",
+      "claim": "Both human and bull spermatozoa swim upstream on spiral-shaped trajectories along the walls of a cylindrical channel.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements revealed the interesting result that both human and bull spermatozoa do not simply align against the flow, but instead swim upstream on spiral-shaped trajectories along the walls of a cylindrical channel (Figure 1A; and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental measurements shown in Figure 1A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "82dfdeb6-fc83-4839-a687-ce0f368ccd49",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C5",
+      "claim": "The transversal velocity component of sperm can be attributed to the chirality of the flagellar beat.",
+      "claim_type": "EXPLICIT",
+      "source": "The previously unrecognised transversal velocity component can be attributed to the chirality of the flagellar beat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations and theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "9819ffed-32c7-469d-8172-e0b32776276e",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C7",
+      "claim": "Rheotaxis can help sperm to navigate their way through the oviduct and find the egg cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting helical swimming patterns enable the spermatozoa to explore collectively the full surface of a cylindrical channel, suggesting that rheotaxis can help sperm to navigate their way through the oviduct and find the egg cell (Miki and Clapham, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the biological function of rheotaxis, supported by citation and inference from experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "35d6bc18-dfdb-4c71-a0c6-ba06f0be678e",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C8",
+      "claim": "Weak fluid flows can be beneficial to the reproduction of red abalone organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments on red abalone (Riffell and Zimmer, 2007; Zimmer and Riffell, 2011), a large marine snail that fertilises externally, showed that weak fluid flows can be beneficial to the reproduction of these organisms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental work on red abalone.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "95238267-836c-47a9-85e5-c44ee440641b",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C9",
+      "claim": "Shear flows could have acted as a selective pressure in gamete evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments on red abalone (Riffell and Zimmer, 2007; Zimmer and Riffell, 2011), a large marine snail that fertilises externally, showed that weak fluid flows can be beneficial to the reproduction of these organisms, suggesting that shear flows could have acted as a selective pressure in gamete evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about evolutionary pressures, inferred from experimental observations on red abalone.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "d213e6ba-43c0-4de1-9f2a-a88b789de584",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C10",
+      "claim": "It is unlikely that local chemotactic gradients steer sperm cells during the initial and intermediate stages of the sexual reproduction process due to complex uterine and oviduct topography and large travelling distances.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex uterine and oviduct topography (Suarez and Pacey, 2006) and large travelling distances render it unlikely that local chemotactic gradients steer sperm cells during the initial and intermediate stages of the sexual reproduction process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on anatomical knowledge and cited literature about reproductive tract topography.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "6733ef3c-01a0-4be2-b93b-fc1ac6d10a1d",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C11",
+      "claim": "Experimental evidence suggests that rapid sperm transport right after insemination is supported by peristaltic pumping driven by muscular contractions of the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental evidence (Kunz et al., 1996) suggests that rapid sperm transport right after insemination is supported by peristaltic pumping driven by muscular contractions of the uterus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "df0a2512-e889-4612-8efb-7a88a1a40854",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C12",
+      "claim": "It is not known how sperm navigate in the oviduct.",
+      "claim_type": "EXPLICIT",
+      "source": "but it is not known how sperm navigate in the oviduct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "10b9c28d-ccea-41a6-be08-d981c210c153",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C13",
+      "claim": "Thermotaxis was proposed as a possible long-range rectification mechanism of sperm swimming in rabbits.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermotaxis, the directed response of sperm to local temperature differences, was proposed as a possible long-range rectification mechanism of sperm swimming in rabbits (Bahat et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "b5524fb2-954e-42e4-a0f2-79416aa7f114",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C14",
+      "claim": "Thermotaxis was recently questioned as it is likely to be inhibited by convective currents that form in the presence of temperature gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "but recently questioned (Miki and Clapham, 2013) as it is likely to be inhibited by convective currents that form in the presence of temperature gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and involves inference about physical mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "d7ccddeb-b24c-459a-add9-cbb98f4c39de",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C15",
+      "claim": "Mammalian sperm are capable of performing rheotaxis by aligning against a surrounding flow, similar to bacteria and algae.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, it has long been known that, similar to bacteria (Marcos et al., 2012) and algae (Chengala et al., 2013), mammalian sperm (Adolphi, 1905; Roberts, 1970) are capable of performing rheotaxis, by aligning against a surrounding flow (Marcos et al., 2012; Miki and Clapham, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to historical and recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "9412bd82-c79f-4e8a-bdc7-3b9ebfe45175",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C16",
+      "claim": "Rheotaxis in mammalian sperm has yet to be systematically quantified in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "but this effect has yet to be systematically quantified in experiments (Fauci and Dillon, 2006; Suarez and Pacey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "380587f3-f736-4758-8ed8-d2904b09504a",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C17",
+      "claim": "It is not known at present how sperm cells respond to variations in shear rate and viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it is not known at present how sperm cells respond to variations in shear rate and viscosity, and how long they need to adapt to temporal changes in the flow direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies specific gaps in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "0e716502-3c6a-4b06-8886-85ac5aabb37d",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C18",
+      "claim": "It is not known how long sperm cells need to adapt to temporal changes in the flow direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it is not known at present how sperm cells respond to variations in shear rate and viscosity, and how long they need to adapt to temporal changes in the flow direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a specific gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "ad329ccd-02d1-47e4-85b4-560af61b4a1c",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C19",
+      "claim": "Experiments were performed with viscosities up to \u03bc = 20 mPa\u00b7s which is roughly 10\u00d7 the viscosity of natural seminal fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "varying systematically shear rates \u03b3\u02d9 and viscosities \u03bc through the physiologically and rheotactically relevant regime, up to \u03bc = 20 mPa\u00b7s which is roughly 10\u00d7 the viscosity of natural seminal fluid (Owen and Katz, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental parameters and compares them to physiological values cited from literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "c0759fb9-9b7b-488e-af45-160e46a5e880",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C20",
+      "claim": "Even in the absence of flow, sperm cells tend to accumulate at surfaces due to a combination of steric repulsion and hydrodynamic forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the absence of flow, sperm cells tend to accummulate at surfaces (Rothschild, 1963; Denissenko et al., 2012) due to a combination of steric repulsion (Kantsler et al., 2013) and hydrodynamic forces (Fauci and McDonald, 1995; Elgeti et al., 2010; Friedrich et al., 2010; Gaffney et al., 2011; Montenegro-Johnson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "b4e403e9-fb1d-4fa0-94af-c410488556f2",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C21",
+      "claim": "The flagellar beat traces out a cone which, upon collision, aligns with a solid surface, so that the sperm's propulsion vector points into the boundary and the cells become effectively trapped at the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be explained by the fact that, in essence, the flagellar beat traces out a cone which, upon collision, aligns with a solid surface, so that the sperm's propulsion vector points into the boundary and the cells become effectively trapped at the surface (Kantsler et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of a physical mechanism, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "15e62248-5780-4162-bc62-0f0f3c8320a3",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C22",
+      "claim": "Both human and bull sperm exhibit optimal upstream swimming at rescaled flow speeds u20 \u223c 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The results for the upstream velocity reveal that both human and bull sperm exhibit optimal upstream swimming at rescaled flow speeds u20 \u223c 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "be590f47-9578-4e98-82f9-22c2bd53226f",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C23",
+      "claim": "There is an optimal shear regime for the rectification of sperm swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that there is an optimal shear regime for the rectification of sperm swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing optimal upstream swimming at specific flow speeds.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "3d7d94e5-7153-4d27-b695-8974a7a52e21",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C24",
+      "claim": "At low viscosities (\u03bc \u226a10 mPa\u00b7s), human spermatozoa exhibit a substantial shear-induced transverse velocity component that becomes suppressed at very high viscosities.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, however, we also find that, at low viscosities (\u03bc \u226a10 mPa\u00b7s), human spermatozoa exhibit a substantial shear-induced transverse velocity component that becomes suppressed at very high viscosities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "d03bb7f7-b4b2-46a6-bae5-66bb370fa2d2",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C25",
+      "claim": "For bull spermatozoa, the mean transverse component is generally weaker and less sensitive to viscosity variations compared to human sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, for bull spermatozoa, the mean transverse component is generally weaker and less sensitive to viscosity variations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental measurements comparing bull and human sperm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "bfa94cc1-dac4-48ac-b20a-b95ab4198eb8",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C26",
+      "claim": "Once a sperm cell has become trapped at a surface, its tail explores, on average, regions of higher flow velocity than the head, resulting in a net torque that turns the head against the flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Once a sperm cell has become trapped at a surface, its tail explores, on average, regions of higher flow velocity than the head, resulting in a net torque that turns the head against the flow (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of the physical mechanism, illustrated in Figure 1B.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "31abb6b5-5a7e-4ffc-a7fd-f883437369b6",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C27",
+      "claim": "If the shear velocity is too low, the orientational 'noise' inhibits upstream swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "If the shear velocity is too low the orientational 'noise', which is caused by a combination of intrinsic fluctuations in the cells' swimming apparatus, thermal fluctuations, and elastohydrodynamic effects, inhibits upstream swimming",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the physical mechanism explaining the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "a750a83c-53ed-44a7-82ae-f3d401c20e12",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C28",
+      "claim": "If the shear velocity becomes too large, the sperm will simply be advected downstream by the flow.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas if the shear velocity becomes too large the sperm will simply be advected downstream by the flow",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the physical mechanism based on fluid dynamics principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "c2dbf9e2-ee82-4fe0-870f-3d81492ba1ad",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C29",
+      "claim": "There exists an optimal intermediate shear rate for upstream swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that there exists an optimal intermediate shear rate for upstream swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations and physical reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "86b22ce0-0acb-4dc8-8877-47ff590b7adb",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C30",
+      "claim": "The maximum of the upstream velocity decreases more strongly with viscosity for bull sperm than for human sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that the maximum of the upstream velocity decreases more strongly with viscosity for bull sperm than for human sperm (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "4d9e844b-e7d9-4e1d-a17d-805a8cf25569",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C31",
+      "claim": "Differences in cell morphology can substantially alter swimming behavior, as suggested by previous numerical studies for bacterial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to differences in cell morphology, as previous numerical studies (Smith et al., 2011) for bacterial cells suggest that differences in head shape can substantially alter swimming behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous numerical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "0dc90f46-657a-44e7-89f8-42c9c9e6bb0f",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C32",
+      "claim": "Bull sperm have a flatter head than human sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Bull sperm have a flatter head than human sperm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about morphological differences based on established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "68b56cda-d779-4cbf-b30f-4dd600a228f4",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C33",
+      "claim": "The flatter head of bull sperm likely suppresses the rotational motion of the cell at high viscosities, leading to an effectively smaller vertical beat amplitude A.",
+      "claim_type": "EXPLICIT",
+      "source": "which likely suppresses the rotational motion of the cell at high viscosities thus leading to an effectively smaller vertical beat amplitude A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the physical mechanism based on morphological differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "8a9fb28d-0bdf-4834-b850-15b2b22ad4f7",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C34",
+      "claim": "At high values of \u03bc, the tail beat of bull sperm becomes essentially two-dimensional and constricted to the vicinity of the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This could explain why, at high values of \u03bc, the tail beat of bull sperm becomes essentially two-dimensional and constricted to the vicinity of the surface",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from experimental observations and physical reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "5d19f937-e0d0-4721-83ea-7c7106f402e9",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C35",
+      "claim": "When the tail beat becomes two-dimensional and constricted to the surface, alignment against the flow becomes less efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "so that alignment against the flow becomes less efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the physical mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "f03e43cd-7812-44d9-bbef-faef99728b30",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C36",
+      "claim": "Sperm of invertebrae and mammals are known to exhibit different chiral beat patterns depending on environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the unexpectedly strong transverse velocity component of human sperm at \u03bc \u22725 mPa\u00b7s, as typical of the seminal fluid (Owen and Katz, 2005), it is important to recall that sperm of invertebrae and mammals are known to exhibit different chiral beat patterns depending on environmental conditions (Gibbons, 1982; Ishijima and Hamaguchi, 1993; Woolley and Vernon, 2001; Smith et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "9a237aa5-2ac1-470e-adaa-0384cecec706",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C37",
+      "claim": "Shear flows are capable of separating particles along the transverse direction according to their chirality.",
+      "claim_type": "EXPLICIT",
+      "source": "and that shear flows are capable of separating particles along the transverse direction according to their chirality (Marcos et al., 2009; Talkner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "10af103b-4137-42e5-afb4-e773803363c0",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C38",
+      "claim": "Human sperm exhibit a strong helical beat component at low-to-moderate values of \u03bc.",
+      "claim_type": "EXPLICIT",
+      "source": "Human sperm exhibit a strong helical beat component at low-to-moderate values of \u03bc (Video 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "c318298e-349f-4132-a763-fd5474c41293",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C39",
+      "claim": "The chirality of human sperm beat becomes suppressed at high viscosities, resulting in more planar wave forms.",
+      "claim_type": "EXPLICIT",
+      "source": "but this chirality becomes suppressed at high viscosities (Video 3) resulting in more planar wave forms (Smith et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations in Video 3 and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "fa9148c4-112c-4f1c-9892-a8e3473c11bb",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C40",
+      "claim": "The beat of a bull sperm flagellum is more similar to a rigidly rotating planar wave even at low viscosities.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, the beat of a bull sperm flagellum is more similar to a rigidly rotating planar wave even at low viscosities (Video 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "de9363f7-4982-4de6-bf57-61cb0da56ed7",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C41",
+      "claim": "Bull sperm exhibit weaker chirality leading to smaller transverse velocities compared to human sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "thus exhibiting a weaker chirality and leading to smaller transverse velocities (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from experimental observations shown in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "7aaab52a-9cfd-49e0-a86a-721cb1c97cf3",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C42",
+      "claim": "The flagellar beating pattern can be controlled not only by viscosity but also by changes in calcium concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the flagellar beating pattern can be controlled not only by viscosity but also by changes in calcium concentration (Ishijima and Hamaguchi, 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "688d820a-a835-4592-9605-717fb038a1e4",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C43",
+      "claim": "Higher organisms appear to possess several means for tuning transverse and upstream swimming of sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "higher organisms appear to possess several means for tuning transverse and upstream swimming of sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed effects of viscosity and calcium concentration on flagellar beating.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "50f79879-a724-4234-b7b8-b49b9af7bb8f",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C44",
+      "claim": "Sperm cells are exposed to temporally varying flows driven by uterine contractions in addition to typically outward directed mucus flow in the oviduct.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to typically outward directed mucus flow in the oviduct, sperm cells are also exposed to temporally varying flows driven by uterine contractions (Fauci and Dillon, 2006; Suarez and Pacey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "c8df3894-5a7d-4aac-8539-26fc567bb2e6",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C45",
+      "claim": "Upon flow reversal, a sperm cell typically performs a U-turn.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon flow reversal, a sperm cell typically performs a U-turn (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "5e1fdaa9-38c0-4d6c-a0bf-abe380c8216c",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C46",
+      "claim": "The characteristic radius of curvature of the trajectory and the typical turning time \u03c4 were found to increase strongly with viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristic radius of curvature of the trajectory and the typical turning time \u03c4 were found to increase strongly with viscosity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "88420558-ea52-4f9a-a9ea-80d6c88fad39",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C47",
+      "claim": "At low viscosity (\u03bc \u223c 1 mPa\u00b7s), sperm realign rapidly against the new flow direction with a typical response time of \u03c4 \u223c 5 s to 10 s.",
+      "claim_type": "EXPLICIT",
+      "source": "At low viscosity, \u03bc \u223c 1 mPa\u00b7s, sperm realign rapidly against the new flow direction with a typical response time of \u03c4 \u223c 5 s to 10 s",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "e4f57677-a6c1-42a9-9307-39205e63818b",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C48",
+      "claim": "At low viscosity, the curvature radius of sperm U-turns is of the order of one or two sperm lengths \u2113 \u223c 60 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "and the curvature radius is of the order of one or two sperm lengths \u2113 \u223c 60 \u03bcm (Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental measurements shown in Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "f579f67e-6258-4d87-9205-02c468c9b60a",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C49",
+      "claim": "At a larger viscosity of \u03bc \u223c 12 mPa\u00b7s, both curvature radius and response time increase by approximately a factor of 5 compared to low viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, at a larger viscosity of \u03bc \u223c 12 mPa\u00b7s, which is roughly 4\u00d7 higher than the natural viscosity of the ejaculate, both curvature radius and response time increase by approximately a factor of 5 (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental measurements shown in Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "ed7133c2-d7a5-4d9a-ae1f-99dfa831c210",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C50",
+      "claim": "The response times of sperm to flow reversal are of the order of typical cervical contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these response times are of the order of typical cervical contractions (Kunz et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between experimental findings and physiological data from cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "c6e31b45-4b78-498d-95a8-d801573c4888",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C51",
+      "claim": "There is a possible fine-tuning between muscular activity of the uterus and turning behavior of sperm cells.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting a possible fine-tuning between muscular activity of the uterus and turning behavior of sperm cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the similarity between response times and contraction periods.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "2af25454-ffe9-43a4-a1c5-3be0d5d8a406",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C52",
+      "claim": "Immediately after flow reversal, sperm orientation and flow direction point for a short period of time in approximately the same direction, leading to a momentarily increased transport velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, immediately after the flow reversal, sperm orientation and flow direction point for a short period of time in approximately the same direction, leading to a momentarily increased transport velocity (see velocity peaks in Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "d9edb40c-5d74-49cc-889a-201a9937120e",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C53",
+      "claim": "By switching flow directions back and forth at an optimal rate, the transport efficiency of an initially rectified sperm population can be enhanced.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by switching flow directions back and forth at an optimal rate, the transport efficiency of an initially rectified sperm population can be enhanced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed velocity peaks after flow reversal.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "5d8d0576-4ec1-4d93-bf7c-b2cfedbc6df8",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C54",
+      "claim": "Resistive force theory was used to infer a minimal mathematical model that incorporates the main physical mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether our understanding of the experimental observations is correct and to provide a basis for future theoretical studies, we used resistive force theory to infer a minimal mathematical model that incorporates the main physical mechanisms discussed above (details are provided in the Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "f35f7893-c65d-4691-9322-7e686441df44",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C55",
+      "claim": "The model assumes that the effective two-dimensional motion of a sperm cell swimming close to a surface in the presence of a shear flow can be described in terms of its position vector R(t) and its orientation unit vector N(t).",
+      "claim_type": "EXPLICIT",
+      "source": "The model assumes that the effective two-dimensional motion of a sperm cell, that swims close to a surface in the presence of a shear flow can be described in terms of its position vector R(t) = (X(t),Y(t)) and its orientation unit vector N(t) = (Nx(t),Ny(t)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assumptions of the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "c0b5e150-a8cb-41d7-9d18-e59c7f6e79d7",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C56",
+      "claim": "The model was obtained by approximating the flagellum by a rigid conical helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Equations 1 and 2 were obtained by approximating the flagellum by a rigid conical helix, with the polar geometry of the enveloping cone dictating the mathematical structure of the deterministic turning terms (see Supplementary file 1 for details of the calculation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approximation used in deriving the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "93fb6968-9945-42de-a08e-a32471bdc9eb",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C57",
+      "claim": "The minimal model does not accurately capture the dynamics of individual cells at zero shear due to simplifying assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplifying assumptions underlying Equations 1 and 2 imply that this minimal model does not accurately capture the dynamics of individual cells at zero shear, as the deterministic terms in Equation 2 neglect the intrinsic curvature of cell trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "a9987fff-2fe3-418d-b41e-86fe5b0cef03",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C58",
+      "claim": "When analyzing the in-plane curvature for a large number of human sperm trajectories at zero shear, a broad distribution of curvatures with a small positive mean curvature of (5.6 \u00b1 1.3)\u00b710\u22124 \u03bcm was found at low viscosity (1 mPa\u00b7s).",
+      "claim_type": "EXPLICIT",
+      "source": "However, when analyzing the in-plane curvature for a large number of human sperm trajectories (>100,000 sample points from more than 1200 cells) at zero shear, we found a broad distribution of curvatures with a small positive mean curvature of (5.6 \u00b1 1.3)\u00b710\u22124 \u03bcm at low viscosity (1 mPa\u00b7s)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "d85d6db1-a7a0-4044-b7bf-67db602f69c8",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C59",
+      "claim": "At high viscosity (12 mPa\u00b7s), human sperm trajectories showed a small negative mean curvature (\u22121.9 \u00b1 0.1)\u00b710\u22123 \u03bcm at zero shear.",
+      "claim_type": "EXPLICIT",
+      "source": "and a small negative mean curvature (\u22121.9 \u00b1 0.1)\u00b710\u22123 \u03bcm at high viscosity (12 mPa\u00b7s)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "f15d9ecb-ad0a-4c9d-aedf-2a005f5c4637",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C60",
+      "claim": "The different signs of mean curvature at different viscosities are consistent with the observed change in the transverse velocity for human sperm at high viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "where the different signs are consistent with the observed change in the transverse velocity for human sperm at high viscosity (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting curvature measurements to velocity observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "797c273f-92c9-4ba0-afbd-7766441d7598",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C61",
+      "claim": "Values \u03b1\u2208[0.2, 0.4], \u03b2\u2208[0.05, 0.1] and D\u2208[0.2, 0.3] rad/s yield good quantitative agreement with the experimental results for both stationary flow and flow reversal.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing systematic parameter scans, we found that values \u03b1\u2208[0.2, 0.4], \u03b2\u2208[0.05, 0.1] and D\u2208[0.2, 0.3] rad/s yield good quantitative agreement with the experimental results for both stationary flow (Figure 3A) and flow reversal (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model parameter fitting to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "74093e84-23cb-4283-92be-5aeb74caa66d",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C62",
+      "claim": "The coupling between shear flow and beat chirality dominates the transverse velocity dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the coupling between shear flow and beat chirality dominates the transverse velocity dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model parameter fitting results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "3a6cf43a-a04f-4c1e-952a-740652481029",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C63",
+      "claim": "Despite some strong simplifications, the effects included in the model capture the main physical mechanisms relevant for understanding sperm motion in shear flow near a surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We may therefore conclude that, despite some strong simplifications, the effects included in the model capture indeed the main physical mechanisms relevant for understanding sperm motion in shear flow near a surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the agreement between model predictions and experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "266ce28a-42f9-46e8-a610-6f158c424253",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C64",
+      "claim": "Upstream swimming of mammalian sperm due to rheotaxis is more complex than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental results show that upstream swimming of mammalian sperm due to rheotaxis is more complex than previously thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "7cf7919f-85f1-4305-8448-a298de261ba4",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C65",
+      "claim": "Human sperm cells exhibit a significant transverse velocity component that could be of relevance in the fertilisation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Human sperm cells were found to exhibit a significant transverse velocity component that could be of relevance in the fertilisation process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experiments with speculation about biological relevance.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "7f72e675-ffba-433c-a112-bdba0935348c",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C66",
+      "claim": "The spiralling motion enables spermatozoa to explore collectively a larger surface area of the oviducts, thereby increasing the probability of locating egg cells.",
+      "claim_type": "EXPLICIT",
+      "source": "as the ensuing spiralling motion enables spermatozoa to explore collectively a larger surface area of the oviducts, thereby increasing the probability of locating egg cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the biological function of the observed spiralling motion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "98e641d4-c370-423d-bf11-62fea88401a9",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C67",
+      "claim": "The transverse velocity component arises from a preferred handedness in the flagella beat in the presence of shear flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theoretical analysis implies that the transverse velocity component arises from a preferred handedness in the flagella beat in the presence of shear flow",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "efcb062c-decd-4c25-b139-94727f0acaeb",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C68",
+      "claim": "The findings for mammalian sperm contrast with recent findings for male microgametes of the malaria parasite Plasmodium berghei.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast to recent findings for male microgametes of the malaria parasite Plasmodium berghei (Wilson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited research on a different organism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "77d3cac8-0e8f-429b-b855-5b8b9300135f",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C69",
+      "claim": "The data provide substantial statistical evidence for the hypothesis that mammalian sperm have evolved to achieve optimal upstream swimming near surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the large sample size, our data provide substantial statistical evidence for the hypothesis that mammalian sperm have evolved to achieve optimal upstream swimming near surfaces",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about evolution supported by the large dataset.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "7ebf0e87-5023-4ea8-bff7-1a93fe700981",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C70",
+      "claim": "Sperm may be exploiting the enhanced fluid production in the female reproductive system during the fertile phase and after intercourse.",
+      "claim_type": "EXPLICIT",
+      "source": "possibly exploiting the enhanced fluid production in the female reproductive system during the fertile phase (Eschenbach et al., 2000) and after intercourse (Miki and Clapham, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about biological function, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "94953b31-fc31-4f72-8876-6c881c1d2097",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C71",
+      "claim": "The improved quantitative knowledge may help to design more efficient artificial insemination strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "The improved quantitative knowledge derived from this data may help to design more efficient artificial insemination strategies, for example, by optimising the viscosity and chemical composition of fertilisation media and adjusting injection techniques to maximise upstream swimming of sperm cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications of the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "f5dc9655-991e-49d4-b001-5fadb25868ef",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C72",
+      "claim": "The results yield a cohesive picture of the mechanistic and fluid-mechanical aspects of long-distance sperm navigation when combined with recent measurements on flagella-mediated contact interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with recent measurements (Kantsler et al., 2013), which clarified the importance of flagella-mediated contact interactions for the accumulation of sperm cells at surfaces, the results presented here yield a cohesive picture of the mechanistic and fluid-mechanical (Friedrich et al., 2010) aspects of long-distance sperm navigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the current findings with previous research, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "14758ef9-2f27-495a-b042-cc300881f3e8",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C73",
+      "claim": "Future work should focus on merging these insights with quantitative studies of chemotaxis to obtain a differentiated understanding of the interplay between physical and chemical factors during various stages of the mammalian reproduction process.",
+      "claim_type": "EXPLICIT",
+      "source": "Future work should focus on merging these insights with quantitative studies of chemotaxis (Spehr et al., 2003; Kaupp et al., 2008; Zimmer and Riffell, 2011; Brenker et al., 2012) to obtain a differentiated understanding of the interplay between physical and chemical factors during various stages of the mammalian reproduction process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research, supported by citations to relevant work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "1785bdc1-7278-4adb-af26-0a70bf33a800",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C74",
+      "claim": "Cryogenically frozen bull spermatozoa were purchased from Genus Breeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryogenically frozen bull spermatozoa were purchased from Genus Breeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about sample sourcing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "841d6a27-e968-4c81-88c9-f16ad3898d92",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C75",
+      "claim": "Human samples from healthy undisclosed normozoospermic donors were obtained from Bourn Hall Clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "Human samples from healthy undisclosed normozoospermic donors were obtained from Bourn Hall Clinic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about sample sourcing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "f77dc3ce-275d-4fb8-92c1-4e9a63506e32",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C76",
+      "claim": "Donors provided informed consent in accordance with the regulations of The University of Cambridge Human Biology Research Ethics Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "Donors provided informed consent in accordance with the regulations of The University of Cambridge Human Biology Research Ethics Committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "4c398cef-aeb6-4a53-ae5c-fcaf99f6de51",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C77",
+      "claim": "The absence of circular trajectories at zero-shear implies that the sperm are capacitated.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of circular trajectories at zero-shear implies that the sperm are capacitated (Miki and Clapham, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from experimental observations, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "26dc8546-1d05-44c8-9c5f-d055a690d9d6",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C78",
+      "claim": "The measured velocity profile is found identical to the calculated values from solving the Stokes equations for the given geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured velocity profile is found identical to the calculated values from solving the Stokes equations for the given geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the experimental setup against theoretical predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "e25d876f-0c59-484d-af2f-e1e07f92dbab",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C79",
+      "claim": "The sample size in a single experiment exceeds 100,000 velocity vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample size in a single experiment exceeds 100,000 velocity vectors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the statistical power of the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "605ec7a9-b833-4e6e-9ffa-46ba36a7a368",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C80",
+      "claim": "Each measurement for a given viscosity and shear rate was repeated a few times with different sperm samples.",
+      "claim_type": "EXPLICIT",
+      "source": "each measurement for a given viscosity and a shear rate was repeated a few times with different sperm samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "e7b30ac9-97d2-4a55-b618-28cd5731a396",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C81",
+      "claim": "The interplay of fluid shear, steric surface-interactions, and chirality of the flagellar beat leads to stable upstream spiralling motion of sperm cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements show that the interplay of fluid shear, steric surface-interactions, and chirality of the flagellar beat leads to stable upstream spiralling motion of sperm cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "23e884c7-8aa7-48e6-8a33-2a48538398d8",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C82",
+      "claim": "The upstream spiralling motion provides a generic and robust rectification mechanism to support mammalian fertilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "thus providing a generic and robust rectification mechanism to support mammalian fertilisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the biological function of the observed behavior.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "2fbfabfb-902f-4601-9476-1eb67d624cb6",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "claim_id": "C83",
+      "claim": "A minimal mathematical model is presented that accounts quantitatively for the experimental observations.",
+      "claim_type": "EXPLICIT",
+      "source": "A minimal mathematical model is presented that accounts quantitatively for the experimental observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the theoretical contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3534fdf7-f046-43cd-9e90-847da7b42ce6",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Human and bull spermatozoa swim upstream in spiral-shaped trajectories along channel walls under shear flow, with both species exhibiting optimal upstream swimming at rescaled flow speeds u20~1. Human sperm show substantial transverse velocity at low viscosities that becomes suppressed at high viscosities, while bull sperm exhibit weaker and less viscosity-sensitive transverse motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22-C25, and C81 are directly supported by extensive experimental data (>100,000 velocity vectors per experiment, Figure 1A, 1D, 1E, Videos 1-4). The large sample size provides strong statistical power, and measurements were replicated across different sperm samples (C80). The observation of spiral trajectories and optimal shear regime is robustly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "0b8d70b1-cde7-45e0-94fa-0d4302991714",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The transverse velocity component arises from chirality of the flagellar beat in shear flow. Human sperm exhibit strong helical beat at low-to-moderate viscosities that becomes suppressed at high viscosities, while bull sperm show more planar beating patterns. Model fitting suggests coupling between shear flow and beat chirality dominates transverse velocity dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are directly supported by video evidence (Videos 2-4), and the mechanistic explanation (C5, C67) is validated by mathematical modeling (C62, C61) showing good quantitative agreement with experiments. The chirality hypothesis is further supported by citations to prior work on chiral beat patterns (C36) and shear-induced particle separation (C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "c26ba239-f38c-4f4d-a715-49b5a78381fd",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The mechanism for upstream swimming involves shear-induced torque that turns sperm heads against flow. Optimal upstream swimming occurs at intermediate shear rates because low shear allows orientational noise to dominate while high shear causes downstream advection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The physical mechanism (C26) is well-explained and consistent with fluid dynamics principles. The existence of optimal intermediate shear (C29) is directly demonstrated by experimental data showing peak upstream velocity at u20~1 (C22). The explanations for suboptimal performance at extreme shear rates (C27, C28) are physically sound inferences supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "fec7c479-cb81-4f24-9b94-2a8ceeb93ab5",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bull sperm show stronger viscosity-dependent decrease in maximum upstream velocity compared to human sperm, potentially due to their flatter head morphology suppressing rotational motion at high viscosities, leading to more two-dimensional tail beats and less efficient flow alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The differential viscosity response (C30) is clearly shown in Figure 1D. The morphological difference (C32) is established knowledge, and the mechanistic explanation (C33-C35) provides a physically plausible inference consistent with cited numerical studies on head shape effects (C31). However, the mechanism remains somewhat speculative as direct measurements of beat amplitude were not reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "09470f77-67de-468e-b366-4b1fd4944089",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Upon flow reversal, sperm perform U-turns with characteristic radius and response time that increase strongly with viscosity. At low viscosity (1 mPa\u00b7s), response time is 5-10 s with curvature radius of 1-2 sperm lengths; at high viscosity (12 mPa\u00b7s), both increase ~5-fold. Response times match typical cervical contraction periods, and velocity peaks occur immediately after reversal when swimming and flow directions temporarily align.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 and C52 are directly supported by experimental observations in Figure 2A-C and Videos 5-6. The quantitative measurements of response times and curvature radii are clearly documented. The comparison to cervical contractions (C50) is supported by citation to physiological data (Kunz et al., 1996), providing appropriate context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "0656c4df-8837-4e41-b75e-d3e4482141bd",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The similarity between sperm response times and uterine contraction periods suggests possible fine-tuning between muscular activity and sperm turning behavior, and periodic flow reversal at optimal rates could enhance transport efficiency of rectified sperm populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51 and C53 are speculative inferences from the temporal matching observed in C50 and velocity peaks in C52. While the observations are sound, the biological significance and evolutionary fine-tuning remain hypothetical without in vivo validation or additional evidence of functional optimization. These represent interesting hypotheses requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A minimal mathematical model based on resistive force theory, approximating the flagellum as a rigid conical helix, quantitatively reproduces experimental observations for both stationary flow and flow reversal with parameters \u03b1\u2208[0.2,0.4], \u03b2\u2208[0.05,0.1], and D\u2208[0.2,0.3] rad/s. The model captures main physical mechanisms despite simplifications and limitations at zero shear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model development (C54-C56) follows established theoretical approaches. The authors acknowledge limitations (C57) and validate the model against large-scale trajectory data (C58-C59, >100,000 sample points). The good quantitative agreement with experiments for both stationary and dynamic conditions (C61, Figure 3A-B) supports the conclusion that key mechanisms are captured (C63). The model provides a useful minimal framework despite acknowledged simplifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "45e9fe95-b9ff-4b75-ac37-61a54b0162d6",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The helical swimming patterns enable collective surface exploration, suggesting rheotaxis helps sperm navigate the oviduct and locate egg cells, providing a generic and robust rectification mechanism to support mammalian fertilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the spiral swimming behavior is well-documented (C4, C81), the biological function claims (C7, C66, C82) are speculative. The inference that increased surface exploration enhances egg-finding probability is plausible but not directly tested. The claim of a \"generic and robust rectification mechanism\" (C82) extrapolates from in vitro microfluidic observations to in vivo function without validation in physiological contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "95d06a0d-daac-4e43-a581-7e2ec3f3a3e2",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The data provide statistical evidence that mammalian sperm evolved to achieve optimal upstream swimming near surfaces, possibly exploiting enhanced fluid production during the fertile phase and after intercourse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the large sample size (C79) provides strong statistical power for characterizing swimming behavior, the evolutionary claims (C69) and adaptive exploitation of physiological conditions (C70) are speculative. The observation of optimal swimming at certain shear rates does not directly demonstrate evolutionary optimization without comparative studies across species or fitness measurements. These remain plausible but unproven hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "cbc5ce77-65e3-4932-9406-04aa05fe0a5b",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Higher organisms possess multiple means for tuning sperm swimming behavior, as flagellar beating patterns can be controlled by both viscosity and calcium concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The viscosity control is directly demonstrated in this study (C24, C38-C39), and calcium control is supported by citation to previous research (C42, Ishijima and Hamaguchi, 1993). The inference that organisms possess multiple tuning mechanisms (C43) is reasonable given these two documented control pathways, though the extent and biological utilization of this control requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "c4563f17-f8d3-46f1-a4df-52bf6888078e",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The quantitative knowledge may enable more efficient artificial insemination strategies through optimization of media viscosity and injection techniques, and future work should integrate these findings with chemotaxis studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71 and C73 are forward-looking statements about potential applications and future research directions. While the fundamental knowledge gained could inform such applications, no validation of improved insemination outcomes is provided. These represent reasonable suggestions for translational research and future studies rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "f4786867-f9ae-451a-a607-0a3c195c0fb1",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experiments used physiologically relevant conditions (viscosities up to 20 mPa\u00b7s, ~10\u00d7 seminal fluid viscosity) with human and bull sperm samples, achieving >100,000 velocity vectors per experiment with replicate measurements. Flow profiles matched theoretical predictions, and sperm were capacitated as indicated by absence of circular trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims are well-documented and appropriate. Sample sizes (C79) provide excellent statistical power, experimental validation against theory (C78) confirms proper setup, replication (C80) supports reproducibility, and ethical compliance (C76) is stated. The physiological relevance of conditions (C19) is supported by citation. The capacitation inference (C77) is reasonable based on cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "726c4c65-9078-4a98-9902-1a4fd2356ee9",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sperm accumulate at surfaces even without flow due to steric repulsion and hydrodynamic forces, explained by flagellar beat tracing a cone that aligns with surfaces upon collision, trapping cells at boundaries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The surface accumulation phenomenon (C20) is well-established and supported by multiple citations to previous research. The mechanistic explanation (C21) is supported by recent citation (Kantsler et al., 2013) and provides physical basis for the observed behavior. This contextualizes the experimental observations in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "5bcb20d2-612b-4e09-9f46-67e97b971180",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context: sperm must navigate distances 1000\u00d7 their length, chemotaxis likely guides near the ovum, but mechanisms for long-distance navigation through the reproductive tract remain unclear. While rheotaxis capability has long been known, systematic quantification has been lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims appropriately establish the scientific context and knowledge gaps. They are supported by relevant citations and accurately represent the state of the field. The identification of specific unknowns (C3, C12, C17, C18) motivates the current study. This provides appropriate framing for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "22778978-fb40-49a5-85ae-9b42ce802ce6",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Studies on red abalone show weak fluid flows benefit reproduction, suggesting shear flows may have acted as selective pressure in gamete evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental findings on red abalone (C8) are supported by citations to previous work (Riffell and Zimmer, 2007; Zimmer and Riffell, 2011). The evolutionary speculation (C9) is appropriately qualified as a suggestion and provides comparative context for understanding the potential evolutionary significance of rheotaxis across different organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    },
+    {
+      "id": "1a1a604c-6832-4404-ab3e-10215f2e5b65",
+      "content_id": "819ca8ca-a25b-4a1a-99c0-f1d8d2d7345b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The findings contrast with recent results for Plasmodium berghei microgametes and, combined with previous work on flagella-mediated surface interactions, yield a cohesive picture of long-distance sperm navigation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to Plasmodium (C68) is appropriately cited and highlights species-specific differences. The synthesis with previous work (C72) is reasonable given the complementary nature of surface accumulation studies (Kantsler et al., 2013) and the current rheotaxis findings. This provides appropriate context for the broader significance of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:46:53.889290Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7db0fcf9-8cef-4876-b336-0590157de7eb",
+      "result_id": "3534fdf7-f046-43cd-9e90-847da7b42ce6"
+    },
+    {
+      "claim_id": "15e62248-5780-4162-bc62-0f0f3c8320a3",
+      "result_id": "3534fdf7-f046-43cd-9e90-847da7b42ce6"
+    },
+    {
+      "claim_id": "be590f47-9578-4e98-82f9-22c2bd53226f",
+      "result_id": "3534fdf7-f046-43cd-9e90-847da7b42ce6"
+    },
+    {
+      "claim_id": "3d7d94e5-7153-4d27-b695-8974a7a52e21",
+      "result_id": "3534fdf7-f046-43cd-9e90-847da7b42ce6"
+    },
+    {
+      "claim_id": "d03bb7f7-b4b2-46a6-bae5-66bb370fa2d2",
+      "result_id": "3534fdf7-f046-43cd-9e90-847da7b42ce6"
+    },
+    {
+      "claim_id": "e7b30ac9-97d2-4a55-b618-28cd5731a396",
+      "result_id": "3534fdf7-f046-43cd-9e90-847da7b42ce6"
+    },
+    {
+      "claim_id": "82dfdeb6-fc83-4839-a687-ce0f368ccd49",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "f03e43cd-7812-44d9-bbef-faef99728b30",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "9a237aa5-2ac1-470e-adaa-0384cecec706",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "10af103b-4137-42e5-afb4-e773803363c0",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "c318298e-349f-4132-a763-fd5474c41293",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "fa9148c4-112c-4f1c-9892-a8e3473c11bb",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "de9363f7-4982-4de6-bf57-61cb0da56ed7",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "74093e84-23cb-4283-92be-5aeb74caa66d",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "98e641d4-c370-423d-bf11-62fea88401a9",
+      "result_id": "0b8d70b1-cde7-45e0-94fa-0d4302991714"
+    },
+    {
+      "claim_id": "bfa94cc1-dac4-48ac-b20a-b95ab4198eb8",
+      "result_id": "c26ba239-f38c-4f4d-a715-49b5a78381fd"
+    },
+    {
+      "claim_id": "31abb6b5-5a7e-4ffc-a7fd-f883437369b6",
+      "result_id": "c26ba239-f38c-4f4d-a715-49b5a78381fd"
+    },
+    {
+      "claim_id": "a750a83c-53ed-44a7-82ae-f3d401c20e12",
+      "result_id": "c26ba239-f38c-4f4d-a715-49b5a78381fd"
+    },
+    {
+      "claim_id": "c2dbf9e2-ee82-4fe0-870f-3d81492ba1ad",
+      "result_id": "c26ba239-f38c-4f4d-a715-49b5a78381fd"
+    },
+    {
+      "claim_id": "86b22ce0-0acb-4dc8-8877-47ff590b7adb",
+      "result_id": "fec7c479-cb81-4f24-9b94-2a8ceeb93ab5"
+    },
+    {
+      "claim_id": "4d9e844b-e7d9-4e1d-a17d-805a8cf25569",
+      "result_id": "fec7c479-cb81-4f24-9b94-2a8ceeb93ab5"
+    },
+    {
+      "claim_id": "0dc90f46-657a-44e7-89f8-42c9c9e6bb0f",
+      "result_id": "fec7c479-cb81-4f24-9b94-2a8ceeb93ab5"
+    },
+    {
+      "claim_id": "68b56cda-d779-4cbf-b30f-4dd600a228f4",
+      "result_id": "fec7c479-cb81-4f24-9b94-2a8ceeb93ab5"
+    },
+    {
+      "claim_id": "8a9fb28d-0bdf-4834-b850-15b2b22ad4f7",
+      "result_id": "fec7c479-cb81-4f24-9b94-2a8ceeb93ab5"
+    },
+    {
+      "claim_id": "5d19f937-e0d0-4721-83ea-7c7106f402e9",
+      "result_id": "fec7c479-cb81-4f24-9b94-2a8ceeb93ab5"
+    },
+    {
+      "claim_id": "c8df3894-5a7d-4aac-8539-26fc567bb2e6",
+      "result_id": "09470f77-67de-468e-b366-4b1fd4944089"
+    },
+    {
+      "claim_id": "5e1fdaa9-38c0-4d6c-a0bf-abe380c8216c",
+      "result_id": "09470f77-67de-468e-b366-4b1fd4944089"
+    },
+    {
+      "claim_id": "88420558-ea52-4f9a-a9ea-80d6c88fad39",
+      "result_id": "09470f77-67de-468e-b366-4b1fd4944089"
+    },
+    {
+      "claim_id": "e4f57677-a6c1-42a9-9307-39205e63818b",
+      "result_id": "09470f77-67de-468e-b366-4b1fd4944089"
+    },
+    {
+      "claim_id": "f579f67e-6258-4d87-9205-02c468c9b60a",
+      "result_id": "09470f77-67de-468e-b366-4b1fd4944089"
+    },
+    {
+      "claim_id": "ed7133c2-d7a5-4d9a-ae1f-99dfa831c210",
+      "result_id": "09470f77-67de-468e-b366-4b1fd4944089"
+    },
+    {
+      "claim_id": "2af25454-ffe9-43a4-a1c5-3be0d5d8a406",
+      "result_id": "09470f77-67de-468e-b366-4b1fd4944089"
+    },
+    {
+      "claim_id": "c6e31b45-4b78-498d-95a8-d801573c4888",
+      "result_id": "0656c4df-8837-4e41-b75e-d3e4482141bd"
+    },
+    {
+      "claim_id": "d9edb40c-5d74-49cc-889a-201a9937120e",
+      "result_id": "0656c4df-8837-4e41-b75e-d3e4482141bd"
+    },
+    {
+      "claim_id": "5d8d0576-4ec1-4d93-bf7c-b2cfedbc6df8",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "f35f7893-c65d-4691-9322-7e686441df44",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "c0b5e150-a8cb-41d7-9d18-e59c7f6e79d7",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "93fb6968-9945-42de-a08e-a32471bdc9eb",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "a9987fff-2fe3-418d-b41e-86fe5b0cef03",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "d85d6db1-a7a0-4044-b7bf-67db602f69c8",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "f15d9ecb-ad0a-4c9d-aedf-2a005f5c4637",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "797c273f-92c9-4ba0-afbd-7766441d7598",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "3a6cf43a-a04f-4c1e-952a-740652481029",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "2fbfabfb-902f-4601-9476-1eb67d624cb6",
+      "result_id": "7d2ad1f9-aef0-48a2-916a-c22e488d69b8"
+    },
+    {
+      "claim_id": "9819ffed-32c7-469d-8172-e0b32776276e",
+      "result_id": "45e9fe95-b9ff-4b75-ac37-61a54b0162d6"
+    },
+    {
+      "claim_id": "7cf7919f-85f1-4305-8448-a298de261ba4",
+      "result_id": "45e9fe95-b9ff-4b75-ac37-61a54b0162d6"
+    },
+    {
+      "claim_id": "7f72e675-ffba-433c-a112-bdba0935348c",
+      "result_id": "45e9fe95-b9ff-4b75-ac37-61a54b0162d6"
+    },
+    {
+      "claim_id": "23e884c7-8aa7-48e6-8a33-2a48538398d8",
+      "result_id": "45e9fe95-b9ff-4b75-ac37-61a54b0162d6"
+    },
+    {
+      "claim_id": "266ce28a-42f9-46e8-a610-6f158c424253",
+      "result_id": "95d06a0d-daac-4e43-a581-7e2ec3f3a3e2"
+    },
+    {
+      "claim_id": "77d3cac8-0e8f-429b-b855-5b8b9300135f",
+      "result_id": "95d06a0d-daac-4e43-a581-7e2ec3f3a3e2"
+    },
+    {
+      "claim_id": "7ebf0e87-5023-4ea8-bff7-1a93fe700981",
+      "result_id": "95d06a0d-daac-4e43-a581-7e2ec3f3a3e2"
+    },
+    {
+      "claim_id": "7aaab52a-9cfd-49e0-a86a-721cb1c97cf3",
+      "result_id": "cbc5ce77-65e3-4932-9406-04aa05fe0a5b"
+    },
+    {
+      "claim_id": "688d820a-a835-4592-9605-717fb038a1e4",
+      "result_id": "cbc5ce77-65e3-4932-9406-04aa05fe0a5b"
+    },
+    {
+      "claim_id": "94953b31-fc31-4f72-8876-6c881c1d2097",
+      "result_id": "c4563f17-f8d3-46f1-a4df-52bf6888078e"
+    },
+    {
+      "claim_id": "14758ef9-2f27-495a-b042-cc300881f3e8",
+      "result_id": "c4563f17-f8d3-46f1-a4df-52bf6888078e"
+    },
+    {
+      "claim_id": "ad329ccd-02d1-47e4-85b4-560af61b4a1c",
+      "result_id": "f4786867-f9ae-451a-a607-0a3c195c0fb1"
+    },
+    {
+      "claim_id": "1785bdc1-7278-4adb-af26-0a70bf33a800",
+      "result_id": "f4786867-f9ae-451a-a607-0a3c195c0fb1"
+    },
+    {
+      "claim_id": "841d6a27-e968-4c81-88c9-f16ad3898d92",
+      "result_id": "f4786867-f9ae-451a-a607-0a3c195c0fb1"
+    },
+    {
+      "claim_id": "f77dc3ce-275d-4fb8-92c1-4e9a63506e32",
+      "result_id": "f4786867-f9ae-451a-a607-0a3c195c0fb1"
+    },
+    {
+      "claim_id": "4c398cef-aeb6-4a53-ae5c-fcaf99f6de51",
+      "result_id": "f4786867-f9ae-451a-a607-0a3c195c0fb1"
+    },
+    {
+      "claim_id": "26dc8546-1d05-44c8-9c5f-d055a690d9d6",
+      "result_id": "f4786867-f9ae-451a-a607-0a3c195c0fb1"
+    },
+    {
+      "claim_id": "e25d876f-0c59-484d-af2f-e1e07f92dbab",
+      "result_id": "f4786867-f9ae-451a-a607-0a3c195c0fb1"
+    },
+    {
+      "claim_id": "605ec7a9-b833-4e6e-9ffa-46ba36a7a368",
+      "result_id": "f4786867-f9ae-451a-a607-0a3c195c0fb1"
+    },
+    {
+      "claim_id": "c0759fb9-9b7b-488e-af45-160e46a5e880",
+      "result_id": "726c4c65-9078-4a98-9902-1a4fd2356ee9"
+    },
+    {
+      "claim_id": "b4e403e9-fb1d-4fa0-94af-c410488556f2",
+      "result_id": "726c4c65-9078-4a98-9902-1a4fd2356ee9"
+    },
+    {
+      "claim_id": "d65deb99-2873-4021-ac1e-ab885f97a4e3",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "1582c02b-ed3e-44a3-973c-6cb21d6734f8",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "6295492a-d5f3-472a-898f-bb570626bd54",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "d213e6ba-43c0-4de1-9f2a-a88b789de584",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "6733ef3c-01a0-4be2-b93b-fc1ac6d10a1d",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "df0a2512-e889-4612-8efb-7a88a1a40854",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "10b9c28d-ccea-41a6-be08-d981c210c153",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "b5524fb2-954e-42e4-a0f2-79416aa7f114",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "d7ccddeb-b24c-459a-add9-cbb98f4c39de",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "9412bd82-c79f-4e8a-bdc7-3b9ebfe45175",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "380587f3-f736-4758-8ed8-d2904b09504a",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "0e716502-3c6a-4b06-8886-85ac5aabb37d",
+      "result_id": "5bcb20d2-612b-4e09-9f46-67e97b971180"
+    },
+    {
+      "claim_id": "35d6bc18-dfdb-4c71-a0c6-ba06f0be678e",
+      "result_id": "22778978-fb40-49a5-85ae-9b42ce802ce6"
+    },
+    {
+      "claim_id": "95238267-836c-47a9-85e5-c44ee440641b",
+      "result_id": "22778978-fb40-49a5-85ae-9b42ce802ce6"
+    },
+    {
+      "claim_id": "efcb062c-decd-4c25-b139-94727f0acaeb",
+      "result_id": "1a1a604c-6832-4404-ab3e-10215f2e5b65"
+    },
+    {
+      "claim_id": "f5dc9655-991e-49d4-b001-5fadb25868ef",
+      "result_id": "1a1a604c-6832-4404-ab3e-10215f2e5b65"
+    }
+  ],
+  "comparisons": []
+}

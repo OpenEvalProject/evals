@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors characterize the composition and specificity of MSL and NSL complexes in mESCs. They demonstrate that Msl1 and Nsl1 are specific subunits incorporated exclusively into their respective Mof-containing complexes, with no free Msl1 or Nsl1 detected in nuclei. A fraction of free Mof not associated with either complex was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 and C111-C114 are supported by multiple complementary techniques including western blot (C32), immunoprecipitation with MudPIT analysis (C33-C34), and gel filtration (C35-C36). The proteomic data showing similar abundance of Mof with Msl1/Nsl1 in respective complexes, combined with gel filtration showing co-elution at expected molecular weights, provides strong evidence for the conclusions about complex composition and specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C116"
+    ],
+    "result": "MSL and NSL complexes have distinct genome-wide binding patterns in mESCs. NSL binds exclusively at promoters (67% of peaks at TSS regions), while MSL binds predominantly in gene bodies (74% of peaks), with significant but modest overlap between the two complexes (Pearson correlation 0.23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C38-C51 are well-supported by comprehensive ChIP-seq data with appropriate validation by ChIP-qPCR (Figure 2\u2014figure supplement 1B,C) and knockdown experiments (Figure 2\u2014figure supplement 2E,F). The distinct binding profiles are demonstrated through multiple analytical approaches including peak annotation, correlation analysis, k-means clustering, and average binding profiles. Statistical significance is established with appropriate p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Both MSL and NSL bind to expressed genes in mESCs, but only MSL binding strength correlates with gene expression levels. Msl1-positive genes show significantly higher median expression than all genes, and Msl1 enrichment increases with expression level similar to Pol II, while Nsl1 binding shows no correlation with expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by RNA-seq analysis combined with ChIP-seq data (Figure 3). The boxplot analyses clearly demonstrate differential relationships between binding and expression for MSL versus NSL. The use of Pol II as a positive control strengthens the interpretation. Statistical significance is indicated by non-overlapping notches in boxplots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C128"
+    ],
+    "result": "MSL is the main H4K16 acetyltransferase in mESCs. Msl1 knockdown results in dramatic reduction of global H4K16ac levels, while Nsl1 knockdown has no effect. The Msl1 binding profile correlates better with H4K16ac distribution (Pearson 0.57) than Nsl1 (Pearson 0.32), and this function cannot be compensated by other HAT complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 and C128 are strongly supported by multiple lines of evidence: scatter plot correlation analysis (Figure 4A,B), binding profile comparisons (Figure 4C), and western blot analysis of histone modifications (Figure 4D). The dramatic loss of H4K16ac upon Msl1 KD but not Nsl1 KD, with no changes in H4K5ac or H4K8ac, provides compelling evidence for MSL as the main H4K16 HAT. The specificity is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "MSL and NSL bind to overlapping and distinct gene sets, with MSL specifically enriched at genes regulating pluripotency and development. Of 10,600 bound genes, ~25% are co-bound, while 3274 are MSL-only and 2185 are NSL-only. MSL binds to 44% of mESC-specific genes including core pluripotency factors (Oct4, Nanog, Sox2), which is statistically significant above random.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 are supported by comprehensive analysis including Venn diagrams (Figure 5A), GO analysis (Figure 5B), comparison with RNA-seq data (Figure 5C), and ChIP-qPCR validation (Figure 5D,E). Bootstrap statistical analysis (Figure 5\u2014figure supplements 1-2) demonstrates that the observed overlaps and MSL enrichment at mESC-specific genes are statistically significant. The functional enrichment for developmental and pluripotency terms specifically in MSL-only genes is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C136",
+      "C137"
+    ],
+    "result": "NSL regulates mESC proliferation and cellular homeostasis. Nsl1 knockdown leads to slower cell growth and G1-phase accumulation, with more severe effects than Msl1 knockdown. Cell morphology remains unchanged and reduced proliferation is not due to apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C82-C87 are supported by cell counting experiments (Figure 6A), morphology analysis (Figure 6B), cell cycle FACS analysis (Figure 6C), and apoptosis assays (Figure 6\u2014figure supplement 1B). The data consistently show that Nsl1 KD has stronger effects on proliferation than Msl1 KD, supporting the conclusion about NSL's role in cellular homeostasis. The inclusion of double KD controls strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C125",
+      "C138"
+    ],
+    "result": "MSL and NSL regulate distinct but overlapping gene sets in mESCs, with MSL binding to pluripotency genes that are downregulated in Mof KO. Msl1 KD affects 275 downregulated and 500 upregulated genes (30% and 20% bound by Msl1, respectively), while Nsl1 KD affects 1158 downregulated and 429 upregulated genes (43% and 5% bound by Nsl1, respectively). Key pluripotency genes (Nanog, Sox2, Oct4) are bound by Msl1 and Mof and downregulated in Mof KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C96 and C125 are supported by microarray data with RT-qPCR validation (Figure 7). However, the relatively weak overlap between bound and regulated genes (20-43% for downregulated, 5-20% for upregulated) raises questions about direct versus indirect effects. The authors acknowledge this limitation (C125-C127) and suggest possible explanations including incomplete KD efficiency or measurement of steady-state mRNA rather than nascent transcripts. The connection to Mof KO data strengthens the MSL-pluripotency link, but the incomplete overlap limits confidence in direct regulatory relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C139",
+      "C140"
+    ],
+    "result": "MSL binds to bivalent genes in mESCs and has dual roles: keeping them silent/poised in pluripotent mESCs and activating them during differentiation. About 343 Msl1 binding sites co-localize with bivalent domain markers (Ezh2, H3K27me3, H3K4me3), and Msl1 KD leads to upregulation of bivalent genes in mESCs but downregulation during NPC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C110 and C139-C140 are supported by multiple lines of evidence: ChIP-seq showing co-localization with bivalent markers (Figure 8A,B), k-means clustering analysis, bootstrap statistical validation (Figure 8\u2014figure supplement 1B), RT-qPCR showing opposite effects in mESCs versus NPCs (Figure 8C,D), and consistency with published Mof binding data (C106). The dual role of MSL in silencing versus activating the same genes in different cellular contexts is a novel and well-supported finding. The statistical significance of the 343 bivalent genes bound by MSL is established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The NSL complex functions differently in pluripotent mESCs compared to differentiated cells. While NSL complex composition is conserved between mESCs and differentiated human cells, Nsl1 KD does not affect global H4K16ac in mESCs (unlike in differentiated cells), suggesting localized HAT activity or dynamic recruitment in mESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C123 compare findings to differentiated cells but rely heavily on speculation (C121-C122 are marked as SPECULATION). While the observation that Nsl1 KD doesn't affect global H4K16ac in mESCs is solid (C65), the mechanistic explanations are not directly tested. The claim about differential regulation is inferred from comparison to published data in differentiated cells rather than direct experimental comparison. Additional experiments measuring localized H4K16ac at NSL binding sites or comparing NSL function across cell types would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The weak overlap between bound and regulated genes may be due to inefficient knockdowns or measurement of steady-state mRNA levels, and other transcriptional co-activators may compensate for H4K16ac loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 are explicitly marked as SPECULATION and represent the authors' attempts to explain unexpected findings rather than tested hypotheses. While these are reasonable explanations for the limited overlap between ChIP-seq and expression data, they remain untested. The compensation hypothesis (C127) is particularly speculative given the complete loss of H4K16ac upon Msl1 KD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C81",
+      "C99",
+      "C100",
+      "C106",
+      "C115",
+      "C118",
+      "C130",
+      "C133"
+    ],
+    "result": "Background knowledge about Mof, MSL, NSL complexes, histone acetylation, and mESC biology from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C31, C40, C81, C99-C100, C106, C115, C118, C130, and C133 represent established knowledge from the literature, appropriately cited. These provide necessary context for interpreting the current study's findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C134",
+      "C135"
+    ],
+    "result": "Summary conclusion that NSL and MSL HAT complexes differentially regulate specific sets of expressed genes in mESCs and during differentiation, with overlapping and distinct roles in transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C134-C135 represent high-level summary conclusions that integrate multiple results from the study. These are well-supported by the collective evidence from ChIP-seq, expression analysis, functional studies, and differentiation experiments presented throughout the manuscript. The conclusions appropriately synthesize the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C131",
+      "C132"
+    ],
+    "result": "The function of MSL and NSL complexes in transcriptional regulation is evolutionarily conserved between Drosophila and vertebrates. MSL is important for establishing high H4K16ac levels required for open chromatin and mESC pluripotency, and is recruited to ESC-specific loci to regulate transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C131-C132 are supported by the similarity of binding profiles to Drosophila studies (C116-C117), the dramatic loss of H4K16ac upon Msl1 KD (C64), comparison to Mof KO phenotypes showing chromatin compaction (cited from Thomas et al., 2008), and the enrichment of MSL at mESC-specific genes (C73-C80). The evolutionary conservation argument is strengthened by multiple citations to Drosophila studies showing similar patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "MSL depletion is expected to recapitulate chromatin perturbations caused by Mof KO that are linked to H4K16ac loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is a reasonable inference based on the finding that Msl1 KD abolishes H4K16ac (C64) similar to Mof KO (C26), and that MSL is the main H4K16 HAT (C68). This inference is supported by the data showing MSL is responsible for global H4K16ac in mESCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "The co-activator role of MSL is linked to its H4K16 acetylation function at bound genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 is supported by the correlation between MSL binding and H4K16ac (C59-C61), the loss of H4K16ac upon Msl1 KD (C64), and the overlap of Msl1 and Mof binding with H4K16ac genome-wide (C47). The inference that MSL's co-activator function is linked to H4K16ac is reasonable given these data.",
+    "result_type": "MAJOR"
+  }
+]

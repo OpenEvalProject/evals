@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C67"
+    ],
+    "result": "CaNAR2 was engineered as an improved version of CaNAR1 by optimizing the donor and acceptor fluorescent protein pair (Cerulean3 and YPet), resulting in at least a twofold greater response to thapsigargin or ionomycin treatment in HEK293 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C67 provide converging evidence for the successful engineering and improved performance of CaNAR2. The construction method is clearly described (C67), and direct comparative data demonstrate the enhanced response (C2). The methodological details and experimental validation support this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Ca2+ oscillations induce distinct temporal patterns of calcineurin activity in MIN6 \u03b2-cells: integrating, step-like patterns in the cytosol and plasma membrane versus reversible, oscillatory patterns at the ER and mitochondria. These differential response patterns are independent of biosensor expression level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C6, C7, C8, and C9 collectively demonstrate the core finding of subcellular differences in calcineurin activity patterns. The data show clear distinctions between cytosol/plasma membrane (integrating) and ER/mitochondria (oscillatory) responses, with appropriate controls for expression level (C9). This is a well-supported major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PKA activity, but not PKC activity, antagonizes calcineurin near the ER surface in MIN6 cells. H89 treatment abolishes erCaNAR2 oscillations and leads to integrative responses, while PKC inhibition does not alter the oscillatory pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 and C17-C20 provide strong evidence for PKA-mediated antagonism of ER calcineurin activity. The use of pharmacological inhibitors (H89 for PKA, G\u00f66983 for PKC) with appropriate controls (cyclosporin A, C13) and alternative stimulation methods (KCl, C17-C19) strengthens the conclusion. The differential effects of PKA vs PKC inhibition support the specificity of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "TEA-stimulated PKA activity is slightly lower at the ER (39.8 \u00b1 3.3%) compared to the cytosol (55.4 \u00b1 5.9%, p = 0.0249), but maximal PKA activity does not affect subcellular CaNAR response patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C22 provide quantitative measurements of PKA activity using AKAR4 biosensors. The statistically significant difference in PKA levels (C21) is modest, and the control experiment showing that maximal PKA activity doesn't alter response patterns (C22) suggests PKA levels alone don't explain the differential calcineurin patterns. This is well-supported but indicates PKA distribution is not the primary mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C72"
+    ],
+    "result": "CaNARi, a FRET-based reporter for calcineurin activation constructed by sandwiching the catalytic subunit between Cerulean and Venus, reveals that the kinetics of calcineurin activation are similar throughout the cell during Ca2+ oscillations, though slightly smaller responses are observed at the ER and mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 and C72 describe the development and characterization of CaNARi. The biosensor responds to Ca2+/CaM binding (C24, C25) and shows uniform kinetics across subcellular compartments (C26, C27), with appropriate controls for expression level (C29). The slightly smaller ER/mitochondrial responses (C28) suggest subtle differences in activation magnitude rather than kinetics. This is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "A slightly lower amount of Ca2+ is detected near the ER surface (61.2% of max) compared to the cytosol (71.4% of max, p = 0.0049) using GCaMP3 sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 provides quantitative measurements of local Ca2+ levels using targeted GCaMP3 sensors. The statistically significant but modest difference suggests that local Ca2+ variations are not the primary driver of the differential calcineurin activity patterns. The measurement is well-supported but the biological significance is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C73",
+      "C74"
+    ],
+    "result": "Differential calcineurin activity patterns are determined by variations in the subcellular distribution of Ca2+/CaM. BSCaM-2 measurements show significantly lower Ca2+/CaM at the ER versus cytosol (p < 0.0001), and CaM overexpression converts oscillatory ER calcineurin responses to integrative patterns, while CaM antagonism converts cytosolic integrative responses to oscillatory patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C38, C73, and C74 provide strong converging evidence for the central mechanistic finding. BSCaM-2 measurements directly demonstrate lower Ca2+/CaM at the ER (C34), CaM overexpression rescues the difference (C35, C36), and CaM antagonism produces the opposite effect (C37). The bidirectional manipulation experiments strongly support the causal role of CaM distribution. This is the key mechanistic insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Cells utilize CaM to actively encode spatial information, which is decoded by calcineurin to ensure oscillatory Ca2+ signals are transduced properly within specific local contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 represents the overarching conclusion drawn from the experimental findings. The evidence from CaM manipulation experiments (C34-C38) and the demonstration that CaM distribution determines calcineurin activity patterns provide strong support for this novel mechanism. This conclusion is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Ca2+ oscillations in \u03b2-cells are slow (< 1 min\u207b\u00b9), and Ca2+/CaM fully dissociates from calcineurin between each Ca2+ peak, suggesting frequency modulation is not a prominent feature in \u03b2-cell calcineurin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C64 combine established knowledge about \u03b2-cell Ca2+ oscillation frequency with inferences from CaNARi data showing complete dissociation between peaks. The CaNARi responses closely track Ca2+ dynamics (Figures 7C-F), supporting the inference of complete dissociation. This conclusion is well-supported by the data and contrasts with the mechanism in neurons/cardiomyocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C15",
+      "C16"
+    ],
+    "result": "TEA treatment produces robust Ca2+ oscillations in MIN6 cells by blocking K+ channels and activating voltage-gated Ca2+ channels. KCl addition can similarly induce Ca2+ oscillations through membrane depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C15, and C16 describe the experimental methods for inducing Ca2+ oscillations. The mechanisms are well-established (C15, C16 with multiple citations), and the experimental observations with RCaMP confirm the expected Ca2+ dynamics (C5). This is methodological validation rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C23",
+      "C31",
+      "C32",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The manuscript cites extensive prior work on calcineurin signaling, PKA antagonism, CaM properties, NFAT regulation, and \u03b2-cell function to contextualize the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C23, C31, C32, C41, C42, C45-C48, C50-C55, C57-C62 represent background knowledge and prior findings that are appropriately cited. These claims provide context for the current work and are supported by the cited literature. They are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Prior studies have shown subcellular differences in calcineurin dynamics in neurons and cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 cite previous work showing subcellular calcineurin differences in other cell types. These appropriately contextualize the current findings and are supported by the cited references (Wu et al., 2012; Saucerman and Bers, 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "CaNAR monitors net endogenous calcineurin activity at each subcellular location and is more sensitive for detecting weak calcineurin signals due to its enzymatic amplification mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 explain the properties and advantages of the CaNAR biosensor. These are logical inferences based on the biosensor design (substrate-based, enzymatic amplification) and are supported by the observed ability to detect subcellular differences that CaNARi could not resolve. This is a valid characterization of the tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Oscillatory calcineurin activity near the ER and mitochondria suggests weak and intermittent NFAT activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 draws an inference about NFAT activation based on the observed oscillatory calcineurin patterns and prior knowledge about NFAT activation kinetics (Tomida et al., 2003). This is a reasonable inference given that sustained calcineurin activity is required for efficient NFAT activation, but it is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The combination of PKA activity and limited CaM access at the ER may help constrain local calcineurin signals within physiologically permissible limits to prevent \u03b2-cell dysfunction and death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is speculative, proposing a physiological rationale for the observed regulatory mechanisms. While it cites evidence that excess calcineurin activity can cause \u03b2-cell dysfunction (Bernal-Mizrachi et al., 2010), the proposed protective role is not directly tested. This is a reasonable hypothesis but lacks experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C60"
+    ],
+    "result": "AKAP-calcineurin-VGCC complexes may be involved in calcineurin/NFAT signaling in \u03b2-cells, and AKAP79 binding to CaM may provide a local source of Ca2+/CaM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48 and C60 are speculative, extrapolating from findings in neurons to \u03b2-cells. While the cited evidence supports the importance of these components in other systems, their specific roles in \u03b2-cell calcineurin signaling are not directly tested in this study. These are reasonable hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Frequency decoding in neurons and cardiomyocytes is based on intrinsic kinetics of CaM-target interactions where CaM plays a passive role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 contrasts the mechanism in neurons/cardiomyocytes with the findings in \u03b2-cells. This is a valid characterization of prior work that helps highlight the novelty of the current findings showing CaM's active role in spatial encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Subcellularly targeted CaNAR2 variants were generated using established targeting sequences: Lyn kinase (plasma membrane), DAKAP1 (mitochondria), CYP450 (ER), and NES (cytosol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe the construction methods for targeted biosensors. These are standard molecular biology techniques using well-characterized targeting sequences. The localization is validated by imaging (Figure 2B-E), supporting the successful targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "PKC inhibitor G\u00f66983 treatment results in a steadily increasing erCaNAR2 response accompanied by a transition from Ca2+ oscillations to persistently elevated cytosolic Ca2+ levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C14 describes the effect of PKC inhibition, but the interpretation is complicated by the fact that G\u00f66983 is fluorescent and increases background fluorescence. While oscillations are still observable above this background, the confounding effect of the inhibitor on Ca2+ dynamics makes it difficult to definitively conclude that PKC does not affect ER calcineurin activity. The KCl experiments (C19) provide clearer evidence.",
+    "result_type": "MINOR"
+  }
+]

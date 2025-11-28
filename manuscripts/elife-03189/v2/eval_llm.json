@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C102",
+      "C103"
+    ],
+    "result": "RNA-Seq profiling of scrib and dlg mutant tumors reveals multiple signatures of neoplasia including altered metabolism, oxidative stress response, and dedifferentiation. 574 genes were misregulated at least twofold in both mutant tissues (FDR <5%), with upregulated genes enriched for stress response factors and downregulated genes reflecting failure to differentiate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C30 are well-supported by RNA-Seq data with appropriate statistical thresholds (FDR <5%), validation by qRT-PCR (R2=0.8844), and Gene Ontology analysis. The transcriptome analysis is technically sound with biological replicates and appropriate controls. Claims C102-C103 regarding metabolic changes are supported by the data but appropriately note complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C89"
+    ],
+    "result": "Upregulation of JAK/STAT pathway ligands (upd genes) drives neoplastic overgrowth. The three upd genes were transcriptionally elevated 3-50 fold, and inhibition of JAK/STAT signaling via Socs36E or DomeDN suppressed overgrowth of polarity-deficient tissue by 40% without affecting wild-type growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C42 are strongly supported by RNA-Seq data showing specific upregulation of upd ligands, reporter assays demonstrating pathway activation, and functional genetic experiments with appropriate controls and quantification (FACS-based cell counting). The specificity of the effect (no impact on WT) strengthens the conclusion. Claim C89 appropriately notes that upd3 alone is insufficient, suggesting redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A 1-kb polarity-responsive enhancer element (upd3.3) within the first intron of upd3 is activated in neoplastic discs and contains evolutionarily conserved AP-1 binding sites. This enhancer is expressed in a patchy manner in dlg and scrib mutant discs but not in wild-type tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by systematic reporter analysis of genomic fragments, microscopy showing tissue-specific expression, and computational motif analysis with evolutionary conservation. The identification of a minimal responsive element through deletion analysis is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C85",
+      "C86"
+    ],
+    "result": "JNK-dependent Fos transcription is necessary but not sufficient for full activation of the upd3.3 enhancer and neoplastic transformation. Inhibition of JNK or Fos completely blocks enhancer activation and neoplasia, but JNK activation alone (with apoptosis blocked) only partially activates the enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C85-C86 are well-supported by genetic epistasis experiments using dominant-negative constructs and mutants, with appropriate controls. The necessity is demonstrated by loss-of-function (JNKDN, fosDN, hep mutant) and sufficiency tested by gain-of-function (Eiger + miRGH). The partial activation by JNK alone is a key observation supporting the coincidence detection model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C87"
+    ],
+    "result": "aPKC activates the upd3.3 enhancer through Yki-dependent transcription, independently of JNK signaling. Constitutively active aPKC is sufficient to trigger enhancer expression, and this activation is not prevented by JNK inhibition despite aPKC's ability to activate JNK targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C87 are supported by genetic experiments showing aPKC mislocalization in polarity mutants, gain-of-function experiments with aPKCact, and epistasis experiments demonstrating JNK-independence. The use of multiple aPKC constructs (aPKCact and aPKCmild) strengthens the conclusion that results are not transgene-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "aPKC activates the upd3.3 enhancer via Yorkie (Yki), the Hippo pathway transcriptional coactivator. The enhancer contains a conserved Scalloped binding site, yki knockdown blocks aPKC-driven enhancer activation, and constitutively active Yki is sufficient to activate the enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by computational identification of Sd binding sites, genetic epistasis experiments showing Yki requirement, and gain-of-function experiments with Ykiact. The combination of motif analysis, loss-of-function, and gain-of-function experiments provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C91",
+      "C92"
+    ],
+    "result": "The upd3.3 enhancer functions as a 'coincidence detector' requiring simultaneous input from both JNK/Fos and aPKC/Yki pathways. Mild activation of either pathway alone is insufficient, but co-expression of wild-type JNK kinase and aPKCmild together induces enhancer activation and moderate overgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71, C91-C92 are strongly supported by systematic genetic experiments testing individual and combined pathway activation. The coincidence detection model is well-supported by the observation that physiological levels of either pathway alone are insufficient, but together are sufficient for activation. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Polycomb Group (PcG) genes regulate the upd3.3 enhancer and show extensive transcriptional overlap with Scrib module mutants. Nearly half of genes upregulated upon polarity loss are also upregulated in PcG mutants (p<6.98e-121), and 25% of direct PcG targets upregulated in PcG mutants are also upregulated in polarity-deficient tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by reporter expression in PcG mutants, RNA-Seq comparison with highly significant statistical enrichment, and integration with published ChIP data. The transcriptome overlap is substantial and statistically robust. Claim C77 appropriately notes that PcG mutants can maintain polarity, ruling out indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C100",
+      "C101"
+    ],
+    "result": "Epithelial polarity suppresses neoplasia through PcG in cooperation with JNK and aPKC/Yki pathways. PcG knockdown enhances neoplastic growth in dlg hypomorphs, Brm inhibition suppresses dlg-induced growth, and PcG component expression is reduced in neoplastic tumors. Reduced PcG activity synergizes with mild aPKC or JNK signaling to activate the enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83, C100-C101 are supported by genetic interaction experiments showing synthetic enhancement and suppression, RNA-Seq data showing PcG downregulation, and epistasis experiments demonstrating synergy. The model that PcG attenuation 'primes' targets for activation is well-supported by the genetic data, though the chromatin mechanism remains speculative (appropriately noted in C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C104"
+    ],
+    "result": "Restoring expression of the differentiation factor vestigial (vg) suppresses neoplastic overgrowth and architecture defects without inducing cell death, while eyeless cannot suppress dlg knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C104 are supported by genetic rescue experiments with appropriate imaging and controls. The observation that vg suppresses without cell death contrasts with prior work (appropriately cited), suggesting context-dependent mechanisms. The negative result with eyeless serves as a control showing specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "JNK activation alone (with apoptosis blocked) induces upd3.3LacZ and tissue overgrowth but does not disrupt polarity or fully recapitulate neoplasia. The enhancer induction is low compared to canonical JNK targets like Mmp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by experiments using Eiger + miRGH to activate JNK while blocking apoptosis, with quantitative comparison of reporter levels and polarity marker localization. This demonstrates sufficiency for partial activation but not full neoplasia, supporting the coincidence detection model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Yki activation in neoplastic tissue differs from Hippo pathway mutants in target gene selection. Canonical Yki growth targets (cycE, diap1, Myc) are expressed at near-normal levels in Scrib mutants, and upd3.3lacZ is not active in hippo mutant tumors, despite both contexts having active Yki.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C95-C97 are supported by transcriptome comparisons and reporter assays in different genetic backgrounds. The observation that chromatin context may influence Yki target response (C97) is appropriately presented as speculative. This highlights an important puzzle about context-dependent Yki activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "Loss of polarity induces two parallel signaling pathways (JNK\u2192Fos and aPKC\u2192Yki) that converge on transcriptional targets. Inhibition of Fos can revert both growth and polarity defects, but activation of JNK, Yki, or both together is insufficient to elicit polarity defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C90, C93-C94 are supported by the genetic epistasis experiments throughout the manuscript. The observation that Fos inhibition restores polarity (C93) is particularly striking and well-documented. The asymmetry between necessity and sufficiency for polarity disruption is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Canonical PcG targets including Hox genes are not upregulated in neoplastic tissues, and overall H3K27me3 levels are not altered, ruling out global PcG inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by RNA-Seq data and histone modification analysis. This is important negative data that constrains the model, showing that PcG effects are target-specific rather than global.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Polarity disruption elicits transcriptional responses paralleling epithelial wound healing in flies and humans. Several upregulated neoplastic effectors with conserved AP-1 and Sd sites are also wound-healing genes. The model proposes that polarity loss creates a 'wound that never heals' because architecture cannot be restored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are supported by transcriptome comparisons with published wound healing data and motif analysis. The 'wounds that never heal' model (C110) is appropriately presented as an interpretation linking the data to a conceptual framework. Claims C107-C109 contain speculative elements but are clearly presented as a model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8"
+    ],
+    "result": "Loss of epithelial polarity correlates with progression of epithelial cancers and tumor malignancy in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C8 represent established clinical and pathological knowledge about cancer diagnosis and are appropriately cited as background. These are well-accepted facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The Scrib module polarity regulators are conserved tumor suppressors, and polarity regulators including aPKC are altered in multiple human cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C13 are supported by citations to published research and represent established knowledge about polarity regulator conservation and cancer relevance. These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Scrib module mutants in Drosophila display multiple neoplastic characteristics including overgrowth, transplantability, basement membrane degradation, invasion with oncogenic Ras, differentiation defects, immune recognition, and cachexia-inducing signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are supported by citations to published research and represent established phenotypes of Scrib module mutants. These provide important background establishing the neoplastic nature of the model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "In polarity-deficient tissues, simultaneous initiation of Fos-dependent transcription, aPKC-mediated Yki activation, and loss of PcG target repression leads to induction of oncogenic factors including JAK/STAT ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a summary statement integrating the major findings of the manuscript. It is well-supported by the collective evidence from the genetic, transcriptomic, and molecular analyses presented throughout the paper.",
+    "result_type": "MAJOR"
+  }
+]

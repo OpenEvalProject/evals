@@ -1,0 +1,2326 @@
+{
+  "submission": {
+    "id": "ee273d17-1cca-4f64-a517-399ed581cfb0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:41:41.507678Z",
+    "updated_at": "2025-11-28T22:41:41.507678Z"
+  },
+  "content": [
+    {
+      "id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "submission_id": "ee273d17-1cca-4f64-a517-399ed581cfb0",
+      "content_type": "manuscript",
+      "content_text": "# Mapping microbial ecosystems and spoilage-gene flow in breweries highlights patterns of contamination and resistance\n\n## Authors\n\n- Nicholas A Bokulich<sup>1</sup>\n- Jordyn Bergsveinson<sup>4</sup>\n- Barry Ziola<sup>4</sup> ([ORCID: 0000-0003-4836-7576](https://orcid.org/0000-0003-4836-7576))\n- David A Mills<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Food Science and Technology University of California, Davis Davis United States\n2. Department of Viticulture and Enology University of California, Davis Davis United States\n3. Foods for Health Institute University of California, Davis Davis United States\n4. Department of Pathology and Laboratory Medicine University of Saskatchewan Saskatoon Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nDistinct microbial ecosystems have evolved to meet the challenges of indoor environments, shaping the microbial communities that interact most with modern human activities. Microbial transmission in food-processing facilities has an enormous impact on the qualities and healthfulness of foods, beneficially or detrimentally interacting with food products. To explore modes of microbial transmission and spoilage-gene frequency in a commercial food-production scenario, we profiled hop-resistance gene frequencies and bacterial and fungal communities in a brewery. We employed a Bayesian approach for predicting routes of contamination, revealing critical control points for microbial management. Physically mapping microbial populations over time illustrates patterns of dispersal and identifies potential contaminant reservoirs within this environment. Habitual exposure to beer is associated with increased abundance of spoilage genes, predicting greater contamination risk. Elucidating the genetic landscapes of indoor environments poses important practical implications for food-production systems and these concepts are translatable to other built environments.\n\n## Introduction\n\nMicrobial activity is an inherent feature of food-processing systems, influencing the quality and healthfulness of foods for human consumption. Like other indoor environments, the building materials, substrates, and physiochemical conditions encountered by microbes in food-processing facilities differ dramatically from the outdoor conditions to which microbial life evolved (Kelley and Gilbert, 2013). How this has impacted the adaptation and ecological assemblages of microbes in food systems is largely unexplored. While the microbial communities of other indoor environments, such as homes (Lax et al., 2014), office buildings (Kembel et al., 2014), and hospitals (Bokulich et al., 2013a), can influence the health of their inhabitants, food-production facilities represent a unique type of built environment wherein microbial activities are intimately tied to product-quality outcomes. Thus, the sensory and safety effects of microbial growth in food-production streams have a much broader impact, such that consumer enjoyment and health can be linked to the hygiene and processing decisions at the food facility. Furthermore, both beneficial and detrimental microbial activities are well defined in foods, making these systems a useful model for exploring microbial ecosystem dynamics beyond the scope of contaminant mitigation.\n\nFermented foods, including beer, have the additional distinction that microbial activity is central to their production, responsible for necessary transformations as well as product spoilage (Bokulich et al., 2012a; Bokulich and Bamforth, 2013). Most modern food-fermentation practices occur under relatively aseptic conditions, employing pure starter cultures in their production, and environmental contamination represents a prevalent threat to product integrity (Bokulich and Bamforth, 2013). Beer is typically produced through fermentation of malted barley sugars (wort) to alcohol by pure strains of Saccharomyces cerevisiae or Saccharomyces pastorianus, and any additional organisms\u2014including cross-contamination from different Saccharomyces strains used in the same facility\u2014are considered contaminants (Bokulich and Bamforth, 2013). In traditional fermentation production practices, conversely, microbial communities introduced from raw materials and processing environments are central to the fermentation process. For example, in the production of coolship (lambic-style) beers, a type of sour beer, no starter cultures are added to the wort; instead, boiled wort is allowed to cool overnight in a shallow, open-top vessel known as a coolship where indigenous microbiota are presumably introduced to the product, initiating fermentation (Van Oevelen et al., 1977; Bokulich et al., 2012b; Spitaels et al., 2014). The unique succession of indigenous microbiota in coolship ale fermentations sets them apart chemically and sensorially from other beers (Van Oevelen et al., 1976; Spaepen et al., 1978), making coolship breweries a particularly interesting system for tracking microbial populations in food-processing environments.\n\nMicrobial spoilage genes are also well defined in brewing environments and can be studied in situ without representing a direct threat to public health. Beer is protected from wholesale microbial contamination through its alcoholic, low-pH, and antimicrobial properties, and modern sanitary technologies and practices minimize the threat of spoilage organisms that have evolved specifically to grow in beer (Bokulich and Bamforth, 2013). Nevertheless, biofilms and other environmental reservoirs remain potential sources of microbial contamination in breweries (Timke et al., 2005; Storgards et al., 2006; Timke et al., 2008; Mamvura et al., 2011; Matoulkova et al., 2012). As wort is boiled prior to fermentation, the primary reservoir for spoilage microorganisms in beer production is the brewery environment. Lactic acid bacteria (LAB) are of particular concern, as some members of this clade resist hop antimicrobial compounds, enabling growth and spoilage of beer through acidification, hazes, and off-flavors (Suzuki et al., 2006; Bokulich and Bamforth, 2013). Hop iso-alpha-acids, the primary antimicrobial compounds in beer, kill most Gram-positive bacteria by acting as ionophores, dissipating proton-motive force across cell walls (Simpson and Fernandez, 1992, 1994; Simpson, 1993a), and via oxidative stress (Behr and Vogel, 2010). Very few resistance mechanisms have been proposed (Suzuki et al., 2006), primarily being the multi-drug transporters horA (Sami et al., 1997; Sakamoto et al., 2001) and horC (Suzuki et al., 2005; Iijima et al., 2006), the transcriptional regulator of horC, horB (Suzuki et al., 2005; Iijima et al., 2006), and hitA, a divalent cation transporter (Hayashi et al., 2001) that imports manganese into the cell. These genes are all located on plasmids and transmit via horizontal gene transfer (Suzuki et al., 2005, 2006). The frequency and transmission of these and other beer-spoilage genes within processing environments\u2014or any other reservoir for spoilage microbes\u2014have yet to be tested.\n\nHere, we employ mixed molecular approaches (Bokulich and Mills, 2012b) and a Bayesian modeling method to interrogate the seasonal sources, reservoirs, and transmission of bacteria, fungi, and beer-spoilage genes within a North American brewery over the course of one year. Given the inherent role of environmental microbiota in conducting coolship ale fermentations, this serves as a model system for studying mechanisms for microbial transfer within food-processing systems. Information on population and gene flow extends to other food-processing systems where environmental microbiota are involved positively or negatively in the production, stability, and safety of human nutrition.\n\n## Results and discussion\n\nThe microbial ecosystems of breweries are inherently linked to successful product outcomes, impacting the qualities and healthfulness of beer. In conventional brewing, any microbe not intentionally inoculated is a contaminant (Bokulich and Bamforth, 2013). Conversely, in coolship ale and other sour beer brewing, adventitious microbiota are integral to the process. Thus, we studied microbial ecosystem dynamics in a brewery that produces conventional, sour, and coolship beers, in order to observe food\u2013ecosystem interactions from a dual perspective. First, how do microbial community assemblages and spoilage-gene frequencies change over time with respect to contamination issues in a conventional brewery? Second, how do these same elements interact with the production of sour beers?\n\n### Production environment microbiota are driven by substrate contact\n\nShort-amplicon marker-gene sequencing was employed to survey the bacterial and fungal consortia inhabiting the entire brewery environment. A total of 501 samples were collected during three seasons, representing the main processing surfaces and equipment used throughout the brewing process (Figure 1). Beta-diversity (between sample) comparisons provide useful assessments of the taxonomic similarity between different sites. Bray\u2013Curtis dissimilarity of complete microbial profiles reveals that many samples cluster by processing room and substrate type regardless of season (Figures 2\u20133). Thus, fermenter samples cluster, associated with Bacillaceae; cellar production areas, associated with Micrococcaceae (including the beer-spoiling genera Kocuria and Micrococcus); wort, malt, and hotside (wort-preparation) surfaces, associated with Enterobacteriaceae, Leuconostocaceae, Candida santamariae, Pichia, and Rhodotorula; barrel-room floor samples, associated with Staphylococcaceae and Carnobacteriaceae; and beer samples, associated with Lactobacillaceae and Enterobacteriaceae. Barrels cluster, associated with Aspergillus, Eurotium, and Penicillium; coolship and barrel-room samples with Cryptococcus and Cladosporium. These taxonomic trends each demonstrate significant site associations (Kruskal\u2013Wallis Bonferroni-corrected p < 0.05). S. cerevisiae was common throughout the brewery, but especially in the fermentation cellar. LAB and acetic acid bacteria were found sporadically at different sites and times, including on and near packaging equipment and fermenters inoculated with LAB (Figure 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig1-v1.jpg)\n\n**Figure 1.:** (A) Floorplan of brewery details surface sampling key and indicates separate sections of the brewery. LAC/Br fermenters indicate they were inoculated intentionally with lactic acid bacteria or Dekkera spp., respectively, at the time of sampling. (B) Process diagram for conventional beer brewing, illustrating the relationship between brewing stages and sections of the brewery. Grain is milled and taken to the brewhouse (hotside) area where it is mashed (steeped in hot water) to form wort, which is lautered (extracted from the grain by filtering and spraying with hot water) and then boiled with hops. Boiled wort is cooled and pumped to the fermentation cellar where it is inoculated with Saccharomyces and fermented. Optionally, barrel-aged beers are transferred to barrels after fermentation. Finished beers are transferred to conditioning tanks in a separate section of the brewery where they are cooled, carbonated, and then packaged. (C) Process diagram for coolship beer brewing. Same as conventional, but following boiling wort is pumped to the coolship room where it is left to cool overnight, exposed to the atmosphere. The following morning, the wort is pumped to barrels in which it is fermented and aged for 1\u20133 years. In the Autumn samples, this occurred in the barrel room in the main brewery, but in Spring and Summer this moved to a newly built facility dedicated to sour beers. All coolship and sour beers were packaged on separate equipment in this second facility. The distinction between coolship beers and sour beers is the use of this coolship; other sour beers are produced using conventional brewing methods (panel B), but are fermented with organisms other than Saccharomyces yeasts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig2-v1.jpg)\n\n**Figure 2.:** The relative abundances (RA) of each genus (columns) within each sample (rows) are indicated by the color of the intersecting tile. Sample types are indicated by colored bars to the left of each row, classified according to the location within the brewery (Figure 1) or the type of substrate (grain, wort, hops, beer). Dendrograms represent Bray\u2013Curtis dissimilarity between samples (vertical trees) and shared-niche similarity between taxa (horizontal trees), respectively indicating taxonomic composition similarities and taxon co-occurrence patterns. Only taxa \u22650.05 relative abundance in at least one sample are shown.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig3-v1.jpg)\n\n**Figure 3.:** The relative abundances of each genus (columns) within each sample (rows) are indicated by the color of the intersecting tile. Sample types are indicated by colored bars to the left of each row, classified according to the location within the brewery (Figure 1) or the type of substrate (grain, wort, hops, beer). Dendrograms represent Bray\u2013Curtis dissimilarity between samples (vertical trees) and shared-niche similarity between taxa (horizontal trees), respectively indicating taxonomic composition similarities and taxon co-occurrence patterns. Only taxa \u22650.05 relative abundance in at least one sample are shown.\n\nTo further examine this relationship, the Bayesian technique sourcetracker (Knights et al., 2010) was used to test whether raw substrates may act as sources for the microbial consortia of brewery surfaces. This tool predicts the relative proportion of contamination in sink samples (in this case brewery surfaces) from microbial sources (raw ingredients and extraneous sources). Raw substrates (grain, hops, yeast, beer) and extraneous sources (human skin, outdoor air, soil, saliva, feces, freshwater, ocean water) from previous studies (Caporaso et al., 2011; Bowers et al., 2012; Caporaso et al., 2012; Bowers et al., 2013) were tested as microbial sources. Results reveal distinct patterns of contamination across seasons (Figure 4). Grains were predicted as the largest microbial contributor to hotside areas, almost all surfaces in the coolship room, and areas of the cellar away from the main fermentation area. Hops were predicted as the major contributor to cellar fermentation areas and fermentation equipment. Yeast was predicted as the highest contributor to fermenters, conditioning tanks, and packaging equipment. Beer was predicted to be a common contaminant around fermenters and barrels within the cellar. Skin was a minor contributor to some surfaces in the cellar. Other surfaces, including most barrels and barrel-room surfaces, were most influenced by unknown sources. Outdoor air, soil, saliva, feces, freshwater, and ocean water were predicted to provide only a very low level of contamination (<0.001 relative abundance). These results suggest that raw substrates are the main contaminant sources within the brewery, compared to extraneous sources. However, it is important to note that these predictions do not indicate a causative role for contamination. These predicted source/sink relationships could alternatively suggest that both are actually contaminated by another, untested source (e.g, fruit flies or other vectors could transfer microbes between these and other surfaces within the brewery). Nevertheless, these predictions highlight potential sources of contamination, or at least shared microbial transmission patterns, between substrates and equipment/surfaces within the brewery.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig4-v1.jpg)\n\n**Figure 4.:** Floorplans of brewery indicate the predicted relative contamination of brewery surfaces by microbial sources (grains, hops, yeast, beer, human skin, unknown) at each season, estimated by SourceTracker (Knights et al., 2010). Coloration of each surface indicates the relative degree of microbial contamination from that source type (as indicated by keys to the right of each row; units are relative abundance). Contamination from outdoor air, soil, feces, freshwater, ocean water, and saliva was negligible (<0.001 relative abundance) and are not shown. See Figure 1 for a floorplan key and description of surfaces.\n\nThese findings suggest that substrate contact drives the microbial communities of different brewery surfaces. Consequently, raw materials (grain, hops, yeast) may be important vectors for any spoilage organisms encountered in the facility. This substrate-centric community structuring has also been observed in other food facilities (Bokulich and Mills, 2013a; Bokulich et al., 2013b, 2014). However, the brewery surface niches clustered throughout time with only subtle changes across seasons, unlike wineries, which were significantly impacted by seasonal factors (Bokulich et al., 2013b). This reflects the divergent production schemes of these two foods: whereas most beers are produced year-round, wine is an inherently seasonal product. The raw materials for beer are stored and processed throughout the year in a continual production schedule, creating a stable environment on equipment surfaces that interact with these same raw substrates on a daily basis. Instead, brewery environments may function more like cheese-making environments, where facility-specific \u2018house\u2019 microbial communities form on equipment surfaces in response to idiosyncrasies in the indoor environment (Bokulich and Mills, 2013a). Such a possibility would have interesting implications for sour beer breweries, and comparative studies of lambic and coolship breweries could offer insight into the brewery-specific flavor profiles displayed in these beers.\n\n### Physical mapping illustrates microbial dispersal in processing facility\n\nBy mapping surface samples to their physical location within the brewery, a spatial model emerges of microbial dispersion across brewery surfaces over time (Figures 5\u20137). Several populations visibly spread with time, most prominently S. cerevisiae, which progressed from dominating fermentation and packaging areas only in Autumn to being the most abundant fungus detected across the brewery in Spring and Summer. Likewise, C. santamariae displayed high abundance on hotside surfaces in Autumn but became more abundant and spread to nearby sections of the cellar in Spring and Summer (Figure 5). As building measurements were not taken during these times, the factors driving these changes cannot be assessed with these data, but warming temperatures and increasing humidity in the Spring and Summer months could be associated phenomena. Other taxa demonstrated more localized patterns of dispersion, such as Micrococcus and Kocuria, which appeared to spread the most around floors and other surfaces in cellar, barrel room, and packaging areas (Figure 6). Here, regular contact with beer runoff diluted with rinse water may support growth of these populations, which are associated with spoilage in low-alcohol beers (Back, 1981). High populations of Acetobacter and Lactobacillus were found more disparately, and specifically in areas where high volumes of wort and beer may be encountered: on conveyor belts and floors below packaging areas, hotside and cellar area sinks, and on sample ports for isolated fermenters and kegs (Figure 6). On these sites microbial communities can contact undiluted beer, for example, drips in the basin below the packaging-line belt, wort and beer collected for specific gravity (sugar concentration) measurements then dumped in sinks, and sampling ports on fermenters. This follows the known behavior of these bacteria, which can spoil undiluted, higher-alcohol beers under appropriate conditions (Bokulich and Bamforth, 2013).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig5-v1.jpg)\n\n**Figure 5.:** Plots indicate relative abundance of fungal taxa detected by ITS sequence reads across brewery surfaces at different times: Autumn (left), Spring (center), and Summer (right). See Figure 1 for a floorplan key and description of surfaces. Note that the floorplans change between seasons as some samples were only collected as specific timepoints and the wild brewing facility was built and opened during the Spring sampling time.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig6-v1.jpg)\n\n**Figure 6.:** Plots indicate relative abundance of bacterial taxa detected by 16S rRNA gene sequence reads across brewery surfaces at different times: Autumn (left), Spring (center), and Summer (right). Scales on right represent relative abundance scale (maximum 1.0) for each row of plots. See Figure 1 for a floorplan key and description of surfaces. Note that the floorplans change between seasons as some samples were only collected as specific timepoints and the wild brewing facility was built and opened during the Spring sampling time.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig7-v1.jpg)\n\n**Figure 7.:** Plots indicate relative abundance of bacterial taxa detected by 16S rRNA gene sequence reads across brewery surfaces at different times: Autumn (left), Spring (center), and Summer (right). Scales on right represent relative abundance scale (maximum 1.0) for each row of plots. See Figure 1 for a floorplan key and description of surfaces. Note that the floorplans change between seasons as some samples were only collected as specific timepoints and the wild brewing facility was built and opened during the Spring sampling time.\n\nThese results illustrate the progressive dissemination of microbes in space and time within a functioning food-processing environment. Microbes not only associate with specific substrates, they exhibit patterns of dispersion within confined regions of the brewery. This yields useful insight into the transmission behavior of these organisms, and especially taxa associated with beer spoilage, through physical space. Microbial confinement within discrete zones suggests that physical barriers (e.g., walls) and physiochemical conditions (e.g., humidity and temperature control) can staunch the spread of some microbes. Non-production surfaces that encounter beer and/or waste streams, such as floors, sinks, and grain-handling equipment, are typically only cleaned by hose and may accumulate substrates for supporting microbial growth and survival. Aerosols and splashing occur regularly in a production brewery (indeed, hosing down floors is one obvious cause), increasing the likelihood for microbial spread and colonization from these surfaces onto other surfaces, including equipment. Human and insect traffic can also increase the rate of dispersal between these surfaces (e.g., from one room to another). Physical partitions appear to inhibit this passage as observed in this brewery and, where possible, may reduce the probability for contamination. This is particularly important in packaging areas, where microbial dispersal can directly contaminate sanitary surfaces and open packages, increasing the likelihood of spoilage in finished product. Separating packaging rooms from cellar and hotside operations and using local partitions, such as blast shields, may help protect packaging surfaces and beer from such routes of contamination. Further investigations into the relationship between building materials, spatial area, indoor conditions (e.g., airflow, humidity, and personnel traffic), and the rate and extent of microbial dispersion could yield important findings for optimal brewery design from the perspective of microbial control. These findings are instructive but indeed should not be interpreted with alarm: they illustrate microbial dispersal in a functioning brewery that rarely suffers from any cases of product contamination.\n\n### Lactic acid bacteria profiles are also driven by substrate exposure\n\nDifferent species of LAB are the principal spoilage bacteria in beer fermentations as well as important members of sour beer fermentations. However, short 16S rRNA gene amplicons are frequently inadequate to resolve reliable species-level identifications (Bokulich and Mills, 2012a). Therefore, we used LAB-TRFLP (Bokulich and Mills, 2012a) to characterize genus- and species-level LAB community compositions in a select subset of samples. This included raw material and beer samples, as well as surfaces on which detection of Lactobacillales by marker-gene sequencing was particularly high.\n\nResults indicate that different surface and sample types exhibit distinct lactic acid bacterial patterns, corresponding to the substrates encountered at that site or contained in that sample (Figure 8). Wort samples contained a mixture of Lactobacillus delbrueckii, Lactobacillus sakei, Lactobacillus hilgardii, Leuconostoc mesenteroides, Lactococcus lactis, Streptococcus sp., and Bacillus sp. A, most of which were only rarely detected in other fermenting and bottled beer samples. Many of these species are also rarely found in beers (Bokulich and Bamforth, 2013), but instead appear associated with grain, hence their detection in wort. Coolship and fermenting sour beers (in this case coolship beers produced from different wort types) were dominated by Pediococcus and/or L. lindneri, corroborating previous studies of coolship beers in this brewery (Bokulich et al., 2012b). Fermenters and barrel surfaces that contacted these fermentations near the time of sampling exhibited similar communities, though Lactobacillus brevis and Lactobacillus sp. A were more common on these surfaces than in the beers or on other surfaces. Other sour and barrel-aged beers contained unique profiles, with involvement of other Lactobacillus species only weakly detected in coolship beers. Floor and packaging area surfaces contained a more diverse mixture of LAB, but primarily the L. lindneri, L. brevis, and L. delbrueckii detected in the wort and beer samples. Interestingly, only Pediococcus was detected on grain samples, though only weak amplification could be had from these samples, suggesting low LAB populations or inhibition of PCR by grain polyphenols, possibly suppressing the detection of less abundant populations. Hop pellet samples also contained a mixture of different LAB populations, including Pediococcus, L. lindneri, and L. brevis.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig8-v1.jpg)\n\n**Figure 8.:** LAB-TRFLP profiles of samples exhibiting high Lactobacillales relative abundance by 16S rRNA gene sequencing.\n\nThese results illustrate that substrate drives the composition of LAB communities as well as whole microbial communities and highlight the risk of cross-contamination between different equipment surfaces. The detection of Lactobacillus spp. on both filler heads (only one of which is used for sour beer packaging) makes this observation all the more pertinent. This observation is not likely to be an exceptional case; cross-contamination between processing areas is very likely the prevailing cause of spoilage in any brewery, where microbial biofilms have been previously reported even on packaging equipment (Timke et al., 2005; Storgards et al., 2006; Timke et al., 2008; Mamvura et al., 2011; Matoulkova et al., 2012). This observation underlines the need for constant hygiene surveillance in breweries but is hardly cause for alarm, if the exceedingly low incidence of microbial spoilage in modern brewing practice is any indication.\n\n### Beer contact predicts spoilage-gene distribution on brewery surfaces\n\nBeer-spoiling LAB possess several mechanisms that support their growth and survival in beer (Suzuki et al., 2006). Several hop-resistance genes are principal among these, counteracting the antimicrobial effects of iso-a-acids (hop bittering resins) (Simpson, 1993b; Simpson and Fernandez, 1994). Hop-resistant LAB typically contain several of these genes, including horA (Sami et al., 1997; Sakamoto et al., 2001), horB (Suzuki et al., 2005; Iijima et al., 2006), horC (Suzuki et al., 2005; Iijima et al., 2006), and hitA (Hayashi et al., 2001), which are upregulated during growth in beer (Bergsveinson et al., 2012; Pittet et al., 2013). However, the presence of these genes within brewery environments and on brewing equipment has not been described previously. Thus, we sought to quantify the abundance of these beer-spoilage genes on brewing equipment and in beer during different times in conjunction with microbial community profiles.\n\nResults demonstrate high gene frequencies on several surfaces within the brewery (Figure 9). Sour beer samples contained the highest counts, between 2.0 \u00d7 104\u20134.8 \u00d7 104 copies/\u00b5l of horC, but fermenter and packaging area surfaces (filler heads, below bottling line belt, and packaging sink) also registered between 2.8\u20137.8 \u00d7 102 copies/cm2. None of these alleles were detected on hop samples, keg samples, or one barrel bung (stopper) sample, though 1.1 \u00d7 103 total copies/cm2 were detected on a keg faucet used for attaching kegs to beer lines at the brewery. Among the genes analyzed, horC was the most abundant (Figure 9), which is interesting when considered in the context of previous work showing that presence of this gene correlates with increased hop-tolerance and beer-spoilage ability (Fujii et al., 2005; Iijima et al., 2006; Bergsveinson et al., 2012) and the plasmid carrying horC is the most important for supporting growth of Lactobacillus brevis in beer (Bergsveinson et al., 2015). The preferential expression of this gene observed in these previous studies and the relative increased abundance with which it was found in this study suggests horC is an important gene for facilitating beer-spoilage and is consequently selected for in the brewery environment, particularly in areas where sour beers are produced. The purported transcriptional regulator of horC, horB, was detected at stable ratios relative to horC in all samples, supporting this putative function (Iijima et al., 2006). The least frequently observed hop-resistance gene, hitA, is involved in manganese transport (Hayashi et al., 2001), supporting resistance against manganese depletion by iso-a-acids (Behr and Vogel, 2010). Other studies have observed similarly low frequencies of hitA presence and expression in LAB relative to the other hop-resistance genes (Haakensen and Ziola, 2008; Bergsveinson et al., 2012).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/04634/elife-04634-fig9-v1.jpg)\n\n**Figure 9.:** (A) ddPCR detection of hitA, horA, horB, and horC on surfaces (detected as copies/cm2) and in beers (copies/ml). Bar height indicates cumulative log gene abundance; colors indicate relative gene frequencies superimposed on these bars. Two barrel bung (stopper) samples are depicted on the left, one has no detection. (B) Pearson product-moment correlation matrix between hop-resistance genes, Lactobacillales relative abundance by 16S rRNA gene sequencing, and relative abundance of the dominant lactic acid bacteria detected by LAB-TRFLP. The color and shape of correlation ellipses (lower-left) indicate Pearson's product-moment correlation coefficient (r) between intersecting variables, as depicted in the key to the right. Correlations with larger positive r values are depicted as darker blue with increasingly narrow, upward-pointing ellipses. Correlations with larger negative r values are depicted as darker red with increasingly narrow, downward-pointing ellipses. Weaker correlations are depicted as wider, lighter colored ellipses. The corresponding p values for all correlation tests are provided in the reflected intersection (top-right).\n\nThe spoilage genes horA, horB, and horC all display high degrees of intercorrelation (Pearson's r = 0.83\u20131.0, p < 0.01) and significant but lesser correlation to hitA (r = 0.48\u20130.64, p \u2264 0.04). All spoilage genes except for hitA demonstrate significant correlation with bulk detection of Lactobacillales via 16S rRNA gene sequencing (r = 0.53\u20130.74, p \u2264 0.03), while bulk Lactobacillales and all spoilage genes but horA correlate significantly with L. lindneri detection via LAB-TRFLP (r = 0.48\u20130.77, p \u2264 0.04). The only gene correlated with Pediococcus abundance via LAB-TRFLP was horA (r = 0.57, p = 0.01), consistent with previous observations that horA is the primary known hop-resistance gene observed in Pediococcus spp. (Haakensen and Ziola, 2008). Interestingly, no resistance genes correlated with L. brevis, strains of which are among the most common brewery contaminants and most commonly positive for hop-resistance genes (Haakensen and Ziola, 2008). This likely reflects the strains detected in this brewery only, and L. brevis was only a minor constituent of sour beers and processing surfaces (Figure 7).\n\nThese results are the first indication of hop-resistance-gene abundance within a brewery environment. As the primary reservoir for spoilage microbes in beer production, tracking spoilage genes on brewing surfaces and materials is important for understanding contamination risks arising from the environment. Sour beer contained the highest gene abundance, which is predictable given that the LAB growing in these (coolship) beers must be adapted to resist hop antimicrobials. Likewise, detection on barrel surfaces is also expected, given their regular and direct contact with these sour beers. Fermenters and packaging-line surfaces also exhibited fairly high levels of hop-resistance genes, with the highest detection on surfaces that contact sour beers and unsanitary surfaces (below packaging belt, packaging-line sink). The only sanitary, conventional beer-making surface among these is the second filler head, which only exhibited 4 cumulative copies/cm2 of the resistance genes, compared to 2.1 \u00d7 102 in the first filler head, which is used for packaging sour and barrel-aged beers. Nevertheless, this second filler head is also a sanitary surface ready for packaging, and should be free of contaminants. DNA was used for ddPCR and thus these counts may represent dead cells present on the equipment surfaces; the relative proportion of viable cells is unknown. If the resistance genes detected by ddPCR do in fact represent any viable cells, this demonstrates the resilience of these bacterial populations on equipment surfaces that regularly contact \u2018contaminated\u2019 (in this case, intentionally contaminated) beers. These findings argue for careful separation of equipment used in conventional beer-making from that used for sour beers: equipment that contacts fermenting and finished sour beer or barrels, including pumps, hoses, and especially packaging equipment, is best dedicated to sour beer production and should not be used to handle conventional beers.\n\nNo hop-resistance genes were detected on hop pellets, though LAB were present, indicating that hops are probably not a significant source of beer-spoilage bacteria. Iso-alpha-acids, the antimicrobial compounds released from hops and against which hop-resistance genes confer protection, are generated by the breakdown of humulones during boiling, and are not present in raw hops (Steenackers et al., 2015). Undissociated humulones are significantly less inhibitory to LAB, and the antimicrobial effects of hops are dependent upon acidic conditions (Simpson and Smith, 1992). Thus, the selective pressure to acquire and maintain hop-resistance genes only exists in the presence of hopped beer, not in raw hops. Only two hop pellets were tested for hop-resistance genes, but this finding suggests that the brewery environment itself is the site of hop-resistance-gene propagation. Larger studies of hop-resistance genes on brewery surfaces and brewing materials will illuminate the role of environmental vs raw material contamination in hop-resistance-gene transfer, and sites, conditions, and mechanisms of transfer within the brewery environment.\n\nTracking spoilage-gene flow across brewery surfaces presents a unique opportunity for understanding spoilage dynamics within food-processing systems and other built environments in general. This approach will facilitate understanding how spoilage resistance propagates within production environments and the reservoirs and vectors encouraging its spread, yielding novel insight for controlling spoilage\u2014focused on gene transmission rather than taxonomic populations. Moving forward, this facility-surveillance model opens many questions and possibilities for mapping microbial spoilage dynamics within food-production systems. What relationship do indoor environmental factors, building design, and surface materials have with microbial transmission? What roles do cleaning and other processes play in controlling contamination on a facility-wide scale? What other biomarkers are associated with contamination and how does the spoilage-allele landscape behave over time and in response to these conditions? The potential advantages of studying microbiology of breweries are not confined to food systems alone, and lessons learned here may aid our understanding of microbial communities in other built environments. For example, the hop-resistance genes include ABC multi-drug transporters similar to other antimicrobial-resistance genes (Sakamoto et al., 2001). Studying and manipulating their transmission within breweries may aid understanding of similar gene-transfer events involved in pathogenesis in hospitals, homes, water systems, or public environments where in situ modeling of such genes is unfeasible or a potential health hazard. Breweries are a useful model for testing general theories of microbial transmission and spoilage-gene dispersal in situ for functional indoor environments and food systems, as beer spoilage is not actually detrimental to human health\u2014merely human pleasure.\n\n## Materials and methods\n\n### Facility description\n\nSamples were collected from a single brewery located in North America. This brewery operates as a conventional brewing facility but also contains a dedicated coolship room, barrel room, and a secondary cellar building, where it produces coolship and other sour and barrel-aged beers seasonally. The coolship beers (a type of sour beer produced without inoculation) are produced following the classic Belgian tradition, and their microbial profiles in this brewery have been investigated previously (Bokulich et al., 2012b). The other sour beers are produced using pure-culture inocula of non-Saccharomyces yeasts and bacteria, but the term \u2018sour beer\u2019 refers to both coolship and other sour beers elsewhere in this study unless if a distinction is made between these types of beer. The secondary cellar building was built and opened during the course of the collection period. Thus, during the first sample collection time point (Fall, 2012) sour beers were fermented and stored in the barrel room of the main facility. For the remaining times (Spring and Summer, 2013), all sour beers were held in this second \u2018wild fermentation\u2019 facility. A facility map and flow\u2013through diagrams relating brewing stages to this space are presented in Figure 1.\n\n### Sample collection and DNA extraction\n\nSamples were collected in Fall 2012, Spring 2013, and Summer 2013. In all, 445 surface swabs and 56 beer and ingredient samples were collected (Figure 1) as described previously (Bokulich et al., 2013b). DNA was extracted using the ZR-96 Fecal DNA MiniPrep Kit (Zymo Research, Irvine, CA), with bead beating in a FastPrep-24 bead beater (MP Bio, Solon, OH), and stored at \u221220\u00b0C until further processing.\n\n### Sequencing library construction\n\nAmplification and sequencing were performed as described previously for bacterial (Bokulich, 2012b) and fungal communities (Bokulich and Mills, 2013b). The V4 domain of bacterial 16S rRNA genes was amplified using primers F515 (5\u2032\u2013NNNNNNNNGTGTGCCAGCMGCCGCGGTAA\u20133\u2032) and R806 (5\u2032\u2013GGACTACHVGGGTWTCTAAT\u20133\u2032) (Caporaso et al., 2011), with a unique 8 nt barcode (italicized poly-N section) and 2 nt linker sequence (bold) at the 5\u2032 terminus. Fungal internal transcribed spacer (ITS) 1 loci were amplified with primers BITS (5\u2032\u2013NNNNNNNNCTACCTGCGGARGGATCA\u20133\u2032) and B58S3 (5\u2032\u2013GAGATCCRTTGYTRAAAGTT\u20133\u2032) (Bokulich and Mills, 2013b). Amplicons were combined into two separate pooled samples (keeping bacterial and fungal amplicons separate) at roughly equal amplification intensity ratios, purified using the Qiaquick spin kit (Qiagen, Germantown, MD), and submitted to the UC Davis DNA Technologies Core for Illumina paired-end library preparation, cluster generation, and 250 bp paired-end sequencing on an Illumina MiSeq instrument in four separate runs (separating bacterial and fungal libraries).\n\n### Data analysis\n\nRaw fastq files were demultiplexed, quality-filtered, and analyzed using QIIME v.1.7.0 (Caporaso et al., 2010b). The 250-bp reads were truncated at any site of \u22653 sequential bases receiving a quality score < Q10, and any read with <75% (of total read length) consecutive high-quality base calls was discarded (Bokulich et al., 2013c). Operational taxonomic units (OTUs) were clustered at 97% identity using QIIME's open-reference OTU-picking pipeline using UCLUST-ref (Edgar, 2010) against either the Greengenes 16S rRNA gene database (May 2013 release) (McDonald et al., 2012) or the UNITE fungal ITS database (Abarenkov et al., 2010), modified as described previously (Bokulich and Mills, 2013b). OTUs were classified taxonomically using RDP classifier (Wang et al., 2007) for bacteria and BLAST (Altschul et al., 1990) for fungi. Any OTU comprising less than 0.0001% of total sequences for each run were removed (Bokulich et al., 2013c). Bacterial 16S rRNA gene sequences were aligned using PyNAST (Caporaso et al., 2010a) and chimeric sequences were identified using ChimeraSlayer (Haas et al., 2011). Sequences failing alignment or identified as chimera were removed prior to downstream analysis. OTU tables were evenly subsampled to 400 sequences per sample for all statistical tests. MANOVA with 999 permutations was used to test significant difference between sample categories based on Bray\u2013Curtis distance using Adonis (Anderson, 2001). Kruskal\u2013Wallis tests were used to identify significantly discriminant taxa (with Bonferroni error correction) between sample groups. Pearson product-moment correlation analyses were performed using R software. Environmental surveillance heatmaps were generated based on taxonomic abundance tables generated in QIIME and visualized using SitePainter 1.1 (Gonzalez et al., 2012). Bacterial OTU source-sink relationships were tested using SourceTracker (Knights et al., 2010) with 1000 burn-ins, 25 restarts, and rarefaction to 100 OTUs. Source-tracking predictions used bacterial profiles of samples collected in this study, coolship beers from this brewery analyzed in a previous study (Bokulich et al., 2012b), and outdoor air (Bowers et al., 2012, 2013), soil, saliva, feces, human skin, freshwater, and ocean water samples (Caporaso et al., 2011, 2012) from previously published studies as source samples. All studies were performed using bacterial V4 16S rRNA with the same F515/R806 primer pair.\n\n#### Terminal restriction fragment length polymorphism (TRFLP)\n\nLactic acid bacteria-specific TRFLP was performed as described previously using the primers NLAB2F (5\u2032-(5HEX)-GGCGGCGTGCCTAATACATGCAAGT-3\u2032) and WLAB1R (5\u2032-TCGCTTTACGCCCAATAAATCCGGA-3\u2032) (Bokulich and Mills, 2012a). Purified amplicons were digested using enzymes MseI and Hpy188I and submitted to the UC Davis College of Biological Sciences Sequencing Facility for capillary electrophoresis fragment separation. Electropherogram traces were visualized using the program Peak Scanner v1.0 (Applied Biosystems, Carlsbad, CA) using a baseline detection value of 10 fluorescence units. Peak filtration and clustering were performed with R software using IBEST TRFLP tools (Abdo et al., 2006). OTUs were identified based on an empirical TRFLP database (Bokulich and Mills, 2012a) and an in silico digest database generated with MiCA (Shyu et al., 2007) of good-quality 16S rRNA gene sequences from RDP (Cole et al., 2014), allowing up to three nucleotide mismatches within 15 bp of the 5\u2032 terminus of the forward primer.\n\n### Droplet digital PCR\n\nIn order to quantify hop-resistance gene abundance on brewery surfaces, droplet digital PCR (ddPCR) was used to enumerate the genes horA, horB, horC, and hitA. ddPCR was performed using the QX100 Droplet Digital PCR setup and protocol (Bio-Rad). ddPCR was performed in 20-\u00b5l reactions containing 3 ng/\u00b5l of DNA template, 900 nmol of each primer, 250 nM of each probe, and 1\u00d7 Bio-Rad Droplet PCR Supermix. Primer and probe sequences, melting temperatures, 5\u2032 fluorophore probe labels, and amplicon lengths for each gene target are shown in Table 1. All probes contained a 3\u2032 IowaBlack FQ quencher paired with different 5\u2032 fluorescent labels (Table 1). Each 20 \u03bcl reaction was then pipetted into separate wells of a disposable eight channel droplet generation cartridge (Bio-Rad) and 70 \u00b5l of droplet generation oil (Bio-Rad) loaded into the cartridge oil wells. The cartridge was then inserted into the QX100 droplet generator (Bio-Rad) and each sample was portioned into droplet-sized water-in-oil emulsions. Following droplet generation, emulsion samples were transferred to a 96-well PCR plate (Eppendorf). The plate was then hot-sealed with foil cover and subjected to conventional PCR in the CFX96 Touch Real-Time PCR (Bio-Rad). Thermal cycling conditions consisted of an activation period for 10 min at 95\u00b0C, followed by 40 cycles of a denaturation step for 30 s at 94\u00b0C, and an annealing-extension step for 60 s at the optimal annealing temperature (59\u201359.6\u00b0C), using a ramp rate of 2.5\u00b0C/s for each step and a final inactivation step of 98\u00b0C for 10 min. After PCR amplification, the plate was loaded into the QX100 Droplet Digitial PCR (Bio-Rad) and analyzed for absolute signal quantification of each fluorescence channel in each well. Signal detection and data processing were performed using Quantasoft Software v.1.3.2 (Bio-Rad).\n\n**Table 1.**\n Hop-Resistance Gene Primers and Probes for ddPCR\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Target</th>\n      <th>Tm*</th>\n      <th>5\u2032 Label</th>\n      <th>Probe</th>\n      <th>Forward primer</th>\n      <th>Reverse primer</th>\n      <th>bp\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>horB</td>\n      <td>59</td>\n      <td>FAM</td>\n      <td>TCGCGGCCAAGTGATACTTATCCTGA</td>\n      <td>AGTCGACACAAAATCCTGAATCA</td>\n      <td>AGCCTTGATCAATCGTCAGAC</td>\n      <td>88</td>\n    </tr>\n    <tr>\n      <td>hitA</td>\n      <td>59</td>\n      <td>HEX</td>\n      <td>ACAGAATAACGGCAACCAGTGTCGCAA</td>\n      <td>TCCTGTTGCTTCTGATGAAATTGG</td>\n      <td>CCGCTAAGAATACTTCGTAGGTGA</td>\n      <td>105</td>\n    </tr>\n    <tr>\n      <td>horA</td>\n      <td>59.6</td>\n      <td>FAM</td>\n      <td>CGCCGTTCCGCTCGTCTTGATCTGCC</td>\n      <td>TGGACTGGCGGATGACTATC</td>\n      <td>CTGTCTCGCTCTGGCAAC</td>\n      <td>104</td>\n    </tr>\n    <tr>\n      <td>horC</td>\n      <td>59.6</td>\n      <td>HEX</td>\n      <td>ACCACGCCAATGCCACTAGAAGCATGG</td>\n      <td>ACACGGTTAATGGCACAGC</td>\n      <td>GTTCGCGCCATAAAATAAGAGAGG</td>\n      <td>87</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Tm = melt temperature (\u00b0C).\u2020Nucleotide length (bp)._\n\n### Data availability\n\nAll raw marker-gene sequencing data are publicly deposited in QIITA (http://qiita.colorado.edu/) under the accession number 10105 (http://qiita.colorado.edu/study/description/10105).\n",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "716fc843-21e4-4cb1-8893-d885a7a24f41",
+      "submission_id": "ee273d17-1cca-4f64-a517-399ed581cfb0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roberto Kolter, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04634.013](https://doi.org/10.7554/eLife.04634.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMapping microbial ecosystems and spoilage-gene flow in breweries highlights patterns of contamination and resistance\u201d for consideration at eLife. Your article has been favorably evaluated by Ian Baldwin (Senior editor), Roberto Kolter (Reviewing editor), and two outside reviewers, one of whom was Greg Caporaso.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors present a nice study of tracking the source of microbes and antimicrobial resistance genes through breweries. The analysis is well done. While overall we deemed the manuscript presented a very nice story that could be of broad interest, there were several concerns that should be addressed in revising the submission.\n\nFirst, we were concerned with the data and interpretations of causative sources of contamination based on the Sourcetracker software. Given that the results are a prediction of possible contamination, it will be helpful to know what the confidence in these predictions is. In addition, how do the authors distinguish between alternate possibilities such as 1) microbes coming instead from untested sources, 2) source and sample just happening to have similar communities, or 3) both source and sample being \u201ccontaminated\u201d by another untested source. In other words, how likely is it that the listed source is actually causative of the \u201ccontamination\u201d? This seems particularly difficult to determine in the coolship analysis. One dominant source is the beer-packaging surface (Figure 4B). Isn't it equally likely that the beer itself was the source of contamination of the packaging surface? Also, is the barrel \u201csource\u201d the fermenting beer inside the barrel, the interior surface of an empty barrel (have the barrels been used for brewing before or are they new?), or the exterior of the barrel? Again, how can the \u201csource\u201d here really be interpreted? Some additional clarification would be very helpful. In short, the authors should elaborate on what other likely sources there are, and test these as possible sources, which might provide more information for the sites \u201cinfluenced by unknown sources\u201d (third paragraph of the Results and Discussion section). Such sources could include human skin and saliva, as well as rinse water, soil and outdoor air, and could easily be included analysis. Given that the authors used the 515F/806R primers for bacterial sequencing, it should be straight-forward to include samples from other studies for comparisons.\n\nSecond, the QIIME Database is currently offline, so the authors should deposit to an additional repository, and/or ensure that their samples are in the new version of the database (QiiTA) when it comes online. As far as we understand, this should happen soon or might already have happened. In the meantime, if QiiTA is not up and running, the sequences should be deposited in a repository such as EBI. That way, when QiiTA eventually comes online, a transfer should be easy.\n\nFinally, in the Abstract the authors mention that the concepts learned from breweries are readily translatable to other built environments. We think the authors should come back to this point in the Discussion section, as right now it's not clear how these concepts translate to other, non-food-production environments. For example, can their findings provide insight into contamination sources in hospitals, or are the building systems too different? This would greatly add to the general interest of the manuscript.\n",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b5ae9d7c-5a7f-4d44-86b1-80d753aef92f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C1",
+      "claim": "Distinct microbial ecosystems have evolved to meet the challenges of indoor environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct microbial ecosystems have evolved to meet the challenges of indoor environments, shaping the microbial communities that interact most with modern human activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract without specific experimental data or citations provided in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "a9259876-9466-4b1a-b565-7f3988f21723",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C2",
+      "claim": "Microbial transmission in food-processing facilities has an enormous impact on the qualities and healthfulness of foods.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial transmission in food-processing facilities has an enormous impact on the qualities and healthfulness of foods, beneficially or detrimentally interacting with food products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of microbial transmission in food processing, drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "37dec746-ebb8-4aa8-84fa-303a7aad0685",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C3",
+      "claim": "The study profiled hop-resistance gene frequencies and bacterial and fungal communities in a brewery.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore modes of microbial transmission and spoilage-gene frequency in a commercial food-production scenario, we profiled hop-resistance gene frequencies and bacterial and fungal communities in a brewery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods and data collection performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "7a13bb3a-136f-41a6-8294-1285a1f7fcd1",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C4",
+      "claim": "A Bayesian approach was employed for predicting routes of contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed a Bayesian approach for predicting routes of contamination, revealing critical control points for microbial management.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "30e53250-3b65-448a-869a-f579f04431fe",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C5",
+      "claim": "Physically mapping microbial populations over time illustrates patterns of dispersal and identifies potential contaminant reservoirs within the brewery environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Physically mapping microbial populations over time illustrates patterns of dispersal and identifies potential contaminant reservoirs within this environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from the spatial and temporal analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "b4439a13-2779-4ac9-a29e-7dd517bc70fe",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C6",
+      "claim": "Habitual exposure to beer is associated with increased abundance of spoilage genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Habitual exposure to beer is associated with increased abundance of spoilage genes, predicting greater contamination risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings on spoilage gene distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "b3ab82ea-9865-40ab-960a-a77a2e3fbc15",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C7",
+      "claim": "Building materials, substrates, and physiochemical conditions encountered by microbes in food-processing facilities differ dramatically from outdoor conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other indoor environments, the building materials, substrates, and physiochemical conditions encountered by microbes in food-processing facilities differ dramatically from the outdoor conditions to which microbial life evolved (Kelley and Gilbert, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kelley and Gilbert, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "6bfdc65d-522d-4105-a8ac-308f90ab9e14",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C8",
+      "claim": "The microbial communities of homes, office buildings, and hospitals can influence the health of their inhabitants.",
+      "claim_type": "EXPLICIT",
+      "source": "While the microbial communities of other indoor environments, such as homes (Lax et al., 2014), office buildings (Kembel et al., 2014), and hospitals (Bokulich et al., 2013a), can influence the health of their inhabitants, food-production facilities represent a unique type of built environment wherein microbial activities are intimately tied to product-quality outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to studies on homes, office buildings, and hospitals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "fb1dfd57-e5c5-4a47-91e8-c1d8f9bd9897",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C9",
+      "claim": "Food-production facilities represent a unique type of built environment wherein microbial activities are intimately tied to product-quality outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the microbial communities of other indoor environments, such as homes (Lax et al., 2014), office buildings (Kembel et al., 2014), and hospitals (Bokulich et al., 2013a), can influence the health of their inhabitants, food-production facilities represent a unique type of built environment wherein microbial activities are intimately tied to product-quality outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement drawing on knowledge of different built environments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "f4f66c45-b435-425b-a4c6-6e04d131c90f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C10",
+      "claim": "Both beneficial and detrimental microbial activities are well defined in foods.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both beneficial and detrimental microbial activities are well defined in foods, making these systems a useful model for exploring microbial ecosystem dynamics beyond the scope of contaminant mitigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws on established knowledge in food microbiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "8b36c8cd-d5ec-4e5c-960a-dbe82a1615c7",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C11",
+      "claim": "Microbial activity is central to the production of fermented foods including beer.",
+      "claim_type": "EXPLICIT",
+      "source": "Fermented foods, including beer, have the additional distinction that microbial activity is central to their production, responsible for necessary transformations as well as product spoilage (Bokulich et al., 2012a; Bokulich and Bamforth, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "eb34ac87-7e0c-4046-a8c2-638ff7a16559",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C12",
+      "claim": "Most modern food-fermentation practices occur under relatively aseptic conditions, employing pure starter cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Most modern food-fermentation practices occur under relatively aseptic conditions, employing pure starter cultures in their production, and environmental contamination represents a prevalent threat to product integrity (Bokulich and Bamforth, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and draws on knowledge of modern fermentation practices.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "1bf86398-678d-4a0d-bbc7-4726e9af7f76",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C13",
+      "claim": "Beer is typically produced through fermentation of malted barley sugars (wort) to alcohol by pure strains of Saccharomyces cerevisiae or Saccharomyces pastorianus.",
+      "claim_type": "EXPLICIT",
+      "source": "Beer is typically produced through fermentation of malted barley sugars (wort) to alcohol by pure strains of Saccharomyces cerevisiae or Saccharomyces pastorianus, and any additional organisms\u2014including cross-contamination from different Saccharomyces strains used in the same facility\u2014are considered contaminants (Bokulich and Bamforth, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes standard beer production practices and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "9e7055c8-6a63-4101-97a6-3214848ba76c",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C14",
+      "claim": "Any additional organisms in beer production, including cross-contamination from different Saccharomyces strains, are considered contaminants.",
+      "claim_type": "EXPLICIT",
+      "source": "Beer is typically produced through fermentation of malted barley sugars (wort) to alcohol by pure strains of Saccharomyces cerevisiae or Saccharomyces pastorianus, and any additional organisms\u2014including cross-contamination from different Saccharomyces strains used in the same facility\u2014are considered contaminants (Bokulich and Bamforth, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bokulich and Bamforth, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "3fd1b007-5574-4929-bcb4-079c8d1403a7",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C15",
+      "claim": "In coolship beer production, no starter cultures are added to the wort.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the production of coolship (lambic-style) beers, a type of sour beer, no starter cultures are added to the wort; instead, boiled wort is allowed to cool overnight in a shallow, open-top vessel known as a coolship where indigenous microbiota are presumably introduced to the product, initiating fermentation (Van Oevelen et al., 1977; Bokulich et al., 2012b; Spitaels et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the coolship beer production process and is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "0f50e1d3-4812-48de-aff5-8288ac67ec7f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C16",
+      "claim": "In coolship beer production, boiled wort is allowed to cool overnight in a shallow, open-top vessel where indigenous microbiota are presumably introduced to the product.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the production of coolship (lambic-style) beers, a type of sour beer, no starter cultures are added to the wort; instead, boiled wort is allowed to cool overnight in a shallow, open-top vessel known as a coolship where indigenous microbiota are presumably introduced to the product, initiating fermentation (Van Oevelen et al., 1977; Bokulich et al., 2012b; Spitaels et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the coolship process and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "3240eb76-9ede-4b2b-b898-66cbf3c729a9",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C17",
+      "claim": "The unique succession of indigenous microbiota in coolship ale fermentations sets them apart chemically and sensorially from other beers.",
+      "claim_type": "EXPLICIT",
+      "source": "The unique succession of indigenous microbiota in coolship ale fermentations sets them apart chemically and sensorially from other beers (Van Oevelen et al., 1976; Spaepen et al., 1978), making coolship breweries a particularly interesting system for tracking microbial populations in food-processing environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Van Oevelen et al., 1976 and Spaepen et al., 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "3e728e96-b0ae-45d8-b225-97a4f3635e62",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C18",
+      "claim": "Beer is protected from wholesale microbial contamination through its alcoholic, low-pH, and antimicrobial properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Beer is protected from wholesale microbial contamination through its alcoholic, low-pH, and antimicrobial properties, and modern sanitary technologies and practices minimize the threat of spoilage organisms that have evolved specifically to grow in beer (Bokulich and Bamforth, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the antimicrobial properties of beer and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "85f25ec3-e51d-4f4b-9de2-e25c58ca626f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C19",
+      "claim": "Biofilms and other environmental reservoirs remain potential sources of microbial contamination in breweries.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, biofilms and other environmental reservoirs remain potential sources of microbial contamination in breweries (Timke et al., 2005; Storgards et al., 2006; Timke et al., 2008; Mamvura et al., 2011; Matoulkova et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous studies on biofilms in breweries.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "4fb8f28d-6ed7-4a8a-9a37-079414f0e07e",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C20",
+      "claim": "As wort is boiled prior to fermentation, the primary reservoir for spoilage microorganisms in beer production is the brewery environment.",
+      "claim_type": "EXPLICIT",
+      "source": "As wort is boiled prior to fermentation, the primary reservoir for spoilage microorganisms in beer production is the brewery environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the brewing process where boiling sterilizes the wort.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "6ed57af4-4797-4b03-8053-76e3cc50726f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C21",
+      "claim": "Lactic acid bacteria (LAB) are of particular concern in beer production as some members resist hop antimicrobial compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Lactic acid bacteria (LAB) are of particular concern, as some members of this clade resist hop antimicrobial compounds, enabling growth and spoilage of beer through acidification, hazes, and off-flavors (Suzuki et al., 2006; Bokulich and Bamforth, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Suzuki et al., 2006 and Bokulich and Bamforth, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "6cb7c8b9-5e27-4419-aa63-d1404cda4b9d",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C22",
+      "claim": "Hop iso-alpha-acids kill most Gram-positive bacteria by acting as ionophores, dissipating proton-motive force across cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Hop iso-alpha-acids, the primary antimicrobial compounds in beer, kill most Gram-positive bacteria by acting as ionophores, dissipating proton-motive force across cell walls (Simpson and Fernandez, 1992, 1994; Simpson, 1993a), and via oxidative stress (Behr and Vogel, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to Simpson and Fernandez, 1992, 1994; Simpson, 1993a; and Behr and Vogel, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "18041818-41ee-4747-879c-c5f1539121b4",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C23",
+      "claim": "Hop iso-alpha-acids kill bacteria via oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Hop iso-alpha-acids, the primary antimicrobial compounds in beer, kill most Gram-positive bacteria by acting as ionophores, dissipating proton-motive force across cell walls (Simpson and Fernandez, 1992, 1994; Simpson, 1993a), and via oxidative stress (Behr and Vogel, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by a citation to Behr and Vogel, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "0b4c5b33-6346-4222-9964-f55b95b12ae2",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C24",
+      "claim": "The multi-drug transporters horA and horC are hop-resistance mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Very few resistance mechanisms have been proposed (Suzuki et al., 2006), primarily being the multi-drug transporters horA (Sami et al., 1997; Sakamoto et al., 2001) and horC (Suzuki et al., 2005; Iijima et al., 2006), the transcriptional regulator of horC, horB (Suzuki et al., 2005; Iijima et al., 2006), and hitA, a divalent cation transporter (Hayashi et al., 2001) that imports manganese into the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies identifying these genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "73b9bfd9-601a-49c9-bdd1-40fe817eda27",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C25",
+      "claim": "horB is the transcriptional regulator of horC.",
+      "claim_type": "EXPLICIT",
+      "source": "Very few resistance mechanisms have been proposed (Suzuki et al., 2006), primarily being the multi-drug transporters horA (Sami et al., 1997; Sakamoto et al., 2001) and horC (Suzuki et al., 2005; Iijima et al., 2006), the transcriptional regulator of horC, horB (Suzuki et al., 2005; Iijima et al., 2006), and hitA, a divalent cation transporter (Hayashi et al., 2001) that imports manganese into the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Suzuki et al., 2005 and Iijima et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "65bd022e-b332-4313-94c5-5e235614fffd",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C26",
+      "claim": "hitA is a divalent cation transporter that imports manganese into the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Very few resistance mechanisms have been proposed (Suzuki et al., 2006), primarily being the multi-drug transporters horA (Sami et al., 1997; Sakamoto et al., 2001) and horC (Suzuki et al., 2005; Iijima et al., 2006), the transcriptional regulator of horC, horB (Suzuki et al., 2005; Iijima et al., 2006), and hitA, a divalent cation transporter (Hayashi et al., 2001) that imports manganese into the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hayashi et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "2bf3035d-b47d-4b76-bc55-26c78083d049",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C27",
+      "claim": "Hop-resistance genes are all located on plasmids and transmit via horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes are all located on plasmids and transmit via horizontal gene transfer (Suzuki et al., 2005, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Suzuki et al., 2005, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "e320decd-726e-45e0-a356-69f05b9d4693",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C28",
+      "claim": "A total of 501 samples were collected during three seasons from the brewery.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 501 samples were collected during three seasons, representing the main processing surfaces and equipment used throughout the brewing process (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample collection performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "36449c21-3539-4191-8508-f0bc4adb0add",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C29",
+      "claim": "Many samples cluster by processing room and substrate type regardless of season based on Bray\u2013Curtis dissimilarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Bray\u2013Curtis dissimilarity of complete microbial profiles reveals that many samples cluster by processing room and substrate type regardless of season (Figures 2\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the beta-diversity analysis shown in Figures 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "9194c0d7-7104-4b12-8cf0-7e95f1e06a91",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C30",
+      "claim": "Fermenter samples cluster and are associated with Bacillaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, fermenter samples cluster, associated with Bacillaceae; cellar production areas, associated with Micrococcaceae (including the beer-spoiling genera Kocuria and Micrococcus); wort, malt, and hotside (wort-preparation) surfaces, associated with Enterobacteriaceae, Leuconostocaceae, Candida santamariae, Pichia, and Rhodotorula; barrel-room floor samples, associated with Staphylococcaceae and Carnobacteriaceae; and beer samples, associated with Lactobacillaceae and Enterobacteriaceae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes clustering patterns observed in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "5a7eec00-fc3d-4804-8566-fbca15ab4545",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C31",
+      "claim": "Cellar production areas are associated with Micrococcaceae including the beer-spoiling genera Kocuria and Micrococcus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, fermenter samples cluster, associated with Bacillaceae; cellar production areas, associated with Micrococcaceae (including the beer-spoiling genera Kocuria and Micrococcus); wort, malt, and hotside (wort-preparation) surfaces, associated with Enterobacteriaceae, Leuconostocaceae, Candida santamariae, Pichia, and Rhodotorula; barrel-room floor samples, associated with Staphylococcaceae and Carnobacteriaceae; and beer samples, associated with Lactobacillaceae and Enterobacteriaceae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes clustering patterns observed in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "70a71327-4ba6-4808-ba5b-2a6ef3893d5f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C32",
+      "claim": "Wort, malt, and hotside surfaces are associated with Enterobacteriaceae, Leuconostocaceae, Candida santamariae, Pichia, and Rhodotorula.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, fermenter samples cluster, associated with Bacillaceae; cellar production areas, associated with Micrococcaceae (including the beer-spoiling genera Kocuria and Micrococcus); wort, malt, and hotside (wort-preparation) surfaces, associated with Enterobacteriaceae, Leuconostocaceae, Candida santamariae, Pichia, and Rhodotorula; barrel-room floor samples, associated with Staphylococcaceae and Carnobacteriaceae; and beer samples, associated with Lactobacillaceae and Enterobacteriaceae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes clustering patterns observed in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "75930de2-827d-457c-ac56-a24d8a7ded24",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C33",
+      "claim": "Barrel-room floor samples are associated with Staphylococcaceae and Carnobacteriaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, fermenter samples cluster, associated with Bacillaceae; cellar production areas, associated with Micrococcaceae (including the beer-spoiling genera Kocuria and Micrococcus); wort, malt, and hotside (wort-preparation) surfaces, associated with Enterobacteriaceae, Leuconostocaceae, Candida santamariae, Pichia, and Rhodotorula; barrel-room floor samples, associated with Staphylococcaceae and Carnobacteriaceae; and beer samples, associated with Lactobacillaceae and Enterobacteriaceae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes clustering patterns observed in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "f3059cb6-943a-4b2b-a1f4-728cb51acdaf",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C34",
+      "claim": "Beer samples are associated with Lactobacillaceae and Enterobacteriaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, fermenter samples cluster, associated with Bacillaceae; cellar production areas, associated with Micrococcaceae (including the beer-spoiling genera Kocuria and Micrococcus); wort, malt, and hotside (wort-preparation) surfaces, associated with Enterobacteriaceae, Leuconostocaceae, Candida santamariae, Pichia, and Rhodotorula; barrel-room floor samples, associated with Staphylococcaceae and Carnobacteriaceae; and beer samples, associated with Lactobacillaceae and Enterobacteriaceae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes clustering patterns observed in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "950d6dc7-f9fc-474a-814d-66ba18f0f340",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C35",
+      "claim": "Barrels cluster and are associated with Aspergillus, Eurotium, and Penicillium.",
+      "claim_type": "EXPLICIT",
+      "source": "Barrels cluster, associated with Aspergillus, Eurotium, and Penicillium; coolship and barrel-room samples with Cryptococcus and Cladosporium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes clustering patterns observed in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "555c957b-f6d0-456d-a4d2-11b075496434",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C36",
+      "claim": "Coolship and barrel-room samples are associated with Cryptococcus and Cladosporium.",
+      "claim_type": "EXPLICIT",
+      "source": "Barrels cluster, associated with Aspergillus, Eurotium, and Penicillium; coolship and barrel-room samples with Cryptococcus and Cladosporium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes clustering patterns observed in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "d3f83dab-f034-42d6-b9a9-925b2c72836f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C37",
+      "claim": "The taxonomic trends demonstrate significant site associations (Kruskal\u2013Wallis Bonferroni-corrected p < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "These taxonomic trends each demonstrate significant site associations (Kruskal\u2013Wallis Bonferroni-corrected p < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the statistical significance of the observed associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "9edee0fd-73fa-4b59-8c32-7044abf2ad01",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C38",
+      "claim": "S. cerevisiae was common throughout the brewery, but especially in the fermentation cellar.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae was common throughout the brewery, but especially in the fermentation cellar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distribution of S. cerevisiae observed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "8125b4c3-1a70-4fa3-add9-790688ea4e39",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C39",
+      "claim": "LAB and acetic acid bacteria were found sporadically at different sites and times, including on and near packaging equipment and fermenters inoculated with LAB.",
+      "claim_type": "EXPLICIT",
+      "source": "LAB and acetic acid bacteria were found sporadically at different sites and times, including on and near packaging equipment and fermenters inoculated with LAB (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distribution of LAB and acetic acid bacteria observed in the study, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "c20802d6-eda3-46fa-8e2c-686cbe9bfdd1",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C40",
+      "claim": "Grains were predicted as the largest microbial contributor to hotside areas, almost all surfaces in the coolship room, and areas of the cellar away from the main fermentation area.",
+      "claim_type": "EXPLICIT",
+      "source": "Grains were predicted as the largest microbial contributor to hotside areas, almost all surfaces in the coolship room, and areas of the cellar away from the main fermentation area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the SourceTracker analysis predicting contamination sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "b02e409f-6e29-4259-8870-acf3290656c5",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C41",
+      "claim": "Hops were predicted as the major contributor to cellar fermentation areas and fermentation equipment.",
+      "claim_type": "EXPLICIT",
+      "source": "Hops were predicted as the major contributor to cellar fermentation areas and fermentation equipment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the SourceTracker analysis predicting contamination sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "1b627179-2e42-4311-8a2d-e17f838c8aa5",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C42",
+      "claim": "Yeast was predicted as the highest contributor to fermenters, conditioning tanks, and packaging equipment.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast was predicted as the highest contributor to fermenters, conditioning tanks, and packaging equipment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the SourceTracker analysis predicting contamination sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "75d0ea0c-5df3-4aee-a2fe-8bc8e800c119",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C43",
+      "claim": "Beer was predicted to be a common contaminant around fermenters and barrels within the cellar.",
+      "claim_type": "EXPLICIT",
+      "source": "Beer was predicted to be a common contaminant around fermenters and barrels within the cellar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the SourceTracker analysis predicting contamination sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "f4c42c21-4230-4892-b35f-205b25b18394",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C44",
+      "claim": "Skin was a minor contributor to some surfaces in the cellar.",
+      "claim_type": "EXPLICIT",
+      "source": "Skin was a minor contributor to some surfaces in the cellar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the SourceTracker analysis predicting contamination sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "263edb6d-86eb-4f3d-821d-74065485c2c2",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C45",
+      "claim": "Outdoor air, soil, saliva, feces, freshwater, and ocean water were predicted to provide only a very low level of contamination (<0.001 relative abundance).",
+      "claim_type": "EXPLICIT",
+      "source": "Outdoor air, soil, saliva, feces, freshwater, and ocean water were predicted to provide only a very low level of contamination (<0.001 relative abundance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the SourceTracker analysis predicting contamination sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "2ba31071-26a8-486e-9a6f-9be04077453c",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C46",
+      "claim": "Raw substrates are the main contaminant sources within the brewery, compared to extraneous sources.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that raw substrates are the main contaminant sources within the brewery, compared to extraneous sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the SourceTracker analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "e7bb99fa-2f83-4701-b90e-48ec1ad8b830",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C47",
+      "claim": "Substrate contact drives the microbial communities of different brewery surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that substrate contact drives the microbial communities of different brewery surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the clustering and source-tracking analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "6e2ca4e6-36ed-4889-9851-d3b48f7116ed",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C48",
+      "claim": "Raw materials (grain, hops, yeast) may be important vectors for any spoilage organisms encountered in the facility.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, raw materials (grain, hops, yeast) may be important vectors for any spoilage organisms encountered in the facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding that substrate contact drives microbial communities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "6f1842a9-45de-4c15-abb3-a01c04462d33",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C49",
+      "claim": "Substrate-centric community structuring has been observed in other food facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "This substrate-centric community structuring has also been observed in other food facilities (Bokulich and Mills, 2013a; Bokulich et al., 2013b, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies in other food facilities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "55c08c1a-b5fd-4356-b7f5-0049dd49b5da",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C50",
+      "claim": "The brewery surface niches clustered throughout time with only subtle changes across seasons, unlike wineries which were significantly impacted by seasonal factors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the brewery surface niches clustered throughout time with only subtle changes across seasons, unlike wineries, which were significantly impacted by seasonal factors (Bokulich et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the findings of this study to a previous study on wineries, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "d692a830-fbb8-4fd8-8f23-eb70bc923d08",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C51",
+      "claim": "Beer production is a continual year-round process, creating a stable environment on equipment surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The raw materials for beer are stored and processed throughout the year in a continual production schedule, creating a stable environment on equipment surfaces that interact with these same raw substrates on a daily basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the observed stability of microbial communities over time.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "73b8aaf4-36e2-49f6-a189-48fb5c02480e",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C52",
+      "claim": "Brewery environments may function like cheese-making environments, where facility-specific 'house' microbial communities form on equipment surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, brewery environments may function more like cheese-making environments, where facility-specific 'house' microbial communities form on equipment surfaces in response to idiosyncrasies in the indoor environment (Bokulich and Mills, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative comparison supported by a citation to a study on cheese-making environments.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "e957c0ee-61de-4884-a8e0-00fa595e94db",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C53",
+      "claim": "S. cerevisiae progressed from dominating fermentation and packaging areas only in Autumn to being the most abundant fungus detected across the brewery in Spring and Summer.",
+      "claim_type": "EXPLICIT",
+      "source": "Several populations visibly spread with time, most prominently S. cerevisiae, which progressed from dominating fermentation and packaging areas only in Autumn to being the most abundant fungus detected across the brewery in Spring and Summer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes temporal changes in S. cerevisiae distribution observed in the spatial mapping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "05b1d71b-0f79-4635-b1d6-5703fdc103eb",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C54",
+      "claim": "C. santamariae displayed high abundance on hotside surfaces in Autumn but became more abundant and spread to nearby sections of the cellar in Spring and Summer.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, C. santamariae displayed high abundance on hotside surfaces in Autumn but became more abundant and spread to nearby sections of the cellar in Spring and Summer (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes temporal changes in C. santamariae distribution observed in the spatial mapping data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "1b905156-e92e-4633-9c74-7080bbac1bb3",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C55",
+      "claim": "Micrococcus and Kocuria spread around floors and other surfaces in cellar, barrel room, and packaging areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Other taxa demonstrated more localized patterns of dispersion, such as Micrococcus and Kocuria, which appeared to spread the most around floors and other surfaces in cellar, barrel room, and packaging areas (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes spatial distribution patterns observed in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "6873b88c-0460-4244-9677-f99643faa38c",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C56",
+      "claim": "Regular contact with beer runoff diluted with rinse water may support growth of Micrococcus and Kocuria populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, regular contact with beer runoff diluted with rinse water may support growth of these populations, which are associated with spoilage in low-alcohol beers (Back, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about conditions supporting microbial growth, with a citation supporting the association with beer spoilage.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "801f40ed-c659-4747-a1e6-69c48a08a321",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C57",
+      "claim": "Micrococcus and Kocuria are associated with spoilage in low-alcohol beers.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, regular contact with beer runoff diluted with rinse water may support growth of these populations, which are associated with spoilage in low-alcohol beers (Back, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Back, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "a01b8ffc-6129-4122-bf7e-4dd3b12b0e63",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C58",
+      "claim": "High populations of Acetobacter and Lactobacillus were found in areas where high volumes of wort and beer may be encountered.",
+      "claim_type": "EXPLICIT",
+      "source": "High populations of Acetobacter and Lactobacillus were found more disparately, and specifically in areas where high volumes of wort and beer may be encountered: on conveyor belts and floors below packaging areas, hotside and cellar area sinks, and on sample ports for isolated fermenters and kegs (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the spatial distribution of these bacteria observed in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "2db141b3-3dd5-474b-801e-57f91e8f1023",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C59",
+      "claim": "Physical barriers (e.g., walls) and physiochemical conditions (e.g., humidity and temperature control) can staunch the spread of some microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial confinement within discrete zones suggests that physical barriers (e.g., walls) and physiochemical conditions (e.g., humidity and temperature control) can staunch the spread of some microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed patterns of microbial confinement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "1f14dcbd-21aa-48c3-a4c6-24f75debebd0",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C60",
+      "claim": "Non-production surfaces that encounter beer and/or waste streams are typically only cleaned by hose and may accumulate substrates for supporting microbial growth and survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-production surfaces that encounter beer and/or waste streams, such as floors, sinks, and grain-handling equipment, are typically only cleaned by hose and may accumulate substrates for supporting microbial growth and survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about cleaning practices and their effects on microbial growth.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "40e0255a-0b63-44a5-a6a2-26cbd10f8ee1",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C61",
+      "claim": "Aerosols and splashing occur regularly in a production brewery, increasing the likelihood for microbial spread and colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Aerosols and splashing occur regularly in a production brewery (indeed, hosing down floors is one obvious cause), increasing the likelihood for microbial spread and colonization from these surfaces onto other surfaces, including equipment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about mechanisms of microbial dispersal in the brewery.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "2a09aeb3-d133-48ca-8139-789e2826ae87",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C62",
+      "claim": "Human and insect traffic can increase the rate of dispersal between surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Human and insect traffic can also increase the rate of dispersal between these surfaces (e.g., from one room to another).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential vectors for microbial dispersal.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "587b178a-0c63-4ba8-998f-e4ba6e0e2158",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C63",
+      "claim": "Physical partitions appear to inhibit microbial passage between areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Physical partitions appear to inhibit this passage as observed in this brewery and, where possible, may reduce the probability for contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed patterns of microbial distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "832d667e-cb27-486c-be94-d6576ab4d093",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C64",
+      "claim": "Separating packaging rooms from cellar and hotside operations may help protect packaging surfaces and beer from contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating packaging rooms from cellar and hotside operations and using local partitions, such as blast shields, may help protect packaging surfaces and beer from such routes of contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the observed patterns of microbial dispersal.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "1ad07053-ca0b-499e-ab6b-89894d2436f3",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C65",
+      "claim": "The brewery studied rarely suffers from any cases of product contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are instructive but indeed should not be interpreted with alarm: they illustrate microbial dispersal in a functioning brewery that rarely suffers from any cases of product contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides context about the practical significance of the findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "bd21e3e5-c557-4d64-9759-f0962612f4d8",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C66",
+      "claim": "Short 16S rRNA gene amplicons are frequently inadequate to resolve reliable species-level identifications.",
+      "claim_type": "EXPLICIT",
+      "source": "However, short 16S rRNA gene amplicons are frequently inadequate to resolve reliable species-level identifications (Bokulich and Mills, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bokulich and Mills, 2012a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "a3f57217-f41b-4e4c-a727-732563d73d56",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C67",
+      "claim": "Different surface and sample types exhibit distinct lactic acid bacterial patterns, corresponding to the substrates encountered at that site or contained in that sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicate that different surface and sample types exhibit distinct lactic acid bacterial patterns, corresponding to the substrates encountered at that site or contained in that sample (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of the LAB-TRFLP analysis shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "9b62834a-da3d-43be-a542-51858d573383",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C68",
+      "claim": "Wort samples contained a mixture of Lactobacillus delbrueckii, Lactobacillus sakei, Lactobacillus hilgardii, Leuconostoc mesenteroides, Lactococcus lactis, Streptococcus sp., and Bacillus sp. A.",
+      "claim_type": "EXPLICIT",
+      "source": "Wort samples contained a mixture of Lactobacillus delbrueckii, Lactobacillus sakei, Lactobacillus hilgardii, Leuconostoc mesenteroides, Lactococcus lactis, Streptococcus sp., and Bacillus sp. A, most of which were only rarely detected in other fermenting and bottled beer samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LAB community composition in wort samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "7246c189-a973-473c-834f-ede3f19cec34",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C69",
+      "claim": "Many LAB species detected in wort are rarely found in beers.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these species are also rarely found in beers (Bokulich and Bamforth, 2013), but instead appear associated with grain, hence their detection in wort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and inference about the source of these LAB.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "ec385b31-efe3-46c8-a56a-bd0a79cae8ec",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C70",
+      "claim": "Coolship and fermenting sour beers were dominated by Pediococcus and/or L. lindneri.",
+      "claim_type": "EXPLICIT",
+      "source": "Coolship and fermenting sour beers (in this case coolship beers produced from different wort types) were dominated by Pediococcus and/or L. lindneri, corroborating previous studies of coolship beers in this brewery (Bokulich et al., 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LAB community composition in coolship beers and is supported by a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "3064c714-bb1a-4a91-974c-770989720988",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C71",
+      "claim": "Fermenters and barrel surfaces that contacted coolship fermentations exhibited similar LAB communities to the beers, though Lactobacillus brevis and Lactobacillus sp. A were more common on these surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Fermenters and barrel surfaces that contacted these fermentations near the time of sampling exhibited similar communities, though Lactobacillus brevis and Lactobacillus sp. A were more common on these surfaces than in the beers or on other surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LAB community composition on surfaces contacting coolship beers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "d37130cf-0ce6-4ca7-8879-ae82c1b2aa06",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C72",
+      "claim": "Floor and packaging area surfaces contained a diverse mixture of LAB, primarily L. lindneri, L. brevis, and L. delbrueckii.",
+      "claim_type": "EXPLICIT",
+      "source": "Floor and packaging area surfaces contained a more diverse mixture of LAB, but primarily the L. lindneri, L. brevis, and L. delbrueckii detected in the wort and beer samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LAB community composition on floor and packaging surfaces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "0e2c4cb3-5513-45a3-91c5-416fa5f3cea5",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C73",
+      "claim": "Only Pediococcus was detected on grain samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only Pediococcus was detected on grain samples, though only weak amplification could be had from these samples, suggesting low LAB populations or inhibition of PCR by grain polyphenols, possibly suppressing the detection of less abundant populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LAB detected on grain samples and provides possible explanations for limited detection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "e39981dd-e2ac-4b69-a563-57a2f35bc99d",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C74",
+      "claim": "Hop pellet samples contained a mixture of different LAB populations, including Pediococcus, L. lindneri, and L. brevis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hop pellet samples also contained a mixture of different LAB populations, including Pediococcus, L. lindneri, and L. brevis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LAB community composition in hop samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "451e6e84-d27a-4cf6-9482-9fab353c25e2",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C75",
+      "claim": "Substrate drives the composition of LAB communities as well as whole microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrate that substrate drives the composition of LAB communities as well as whole microbial communities and highlight the risk of cross-contamination between different equipment surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the LAB-TRFLP results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "caa11389-86be-4930-a6d5-a186fb27af74",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C76",
+      "claim": "Lactobacillus spp. were detected on both filler heads, including one used only for conventional beer packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection of Lactobacillus spp. on both filler heads (only one of which is used for sour beer packaging) makes this observation all the more pertinent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific finding highlighting cross-contamination risk.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "24d2e575-33c0-4e02-b690-f3b9cc164f5d",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C77",
+      "claim": "Cross-contamination between processing areas is very likely the prevailing cause of spoilage in any brewery.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is not likely to be an exceptional case; cross-contamination between processing areas is very likely the prevailing cause of spoilage in any brewery, where microbial biofilms have been previously reported even on packaging equipment (Timke et al., 2005; Storgards et al., 2006; Timke et al., 2008; Mamvura et al., 2011; Matoulkova et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to previous studies on biofilms in breweries.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "9f8facef-4543-4fe8-8768-5a93f879187c",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C78",
+      "claim": "Beer-spoiling LAB possess several mechanisms that support their growth and survival in beer.",
+      "claim_type": "EXPLICIT",
+      "source": "Beer-spoiling LAB possess several mechanisms that support their growth and survival in beer (Suzuki et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Suzuki et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "16f844b1-9bd9-44fc-8093-763ccaafc39c",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C79",
+      "claim": "Hop-resistance genes including horA, horB, horC, and hitA are upregulated during growth in beer.",
+      "claim_type": "EXPLICIT",
+      "source": "Hop-resistant LAB typically contain several of these genes, including horA (Sami et al., 1997; Sakamoto et al., 2001), horB (Suzuki et al., 2005; Iijima et al., 2006), horC (Suzuki et al., 2005; Iijima et al., 2006), and hitA (Hayashi et al., 2001), which are upregulated during growth in beer (Bergsveinson et al., 2012; Pittet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "5c473ab4-99a4-4d45-9cf7-f0b404152677",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C80",
+      "claim": "The presence of hop-resistance genes within brewery environments and on brewing equipment has not been described previously.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of these genes within brewery environments and on brewing equipment has not been described previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This establishes the novelty of the study's investigation of hop-resistance genes in brewery environments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "3436754f-9e48-4ce5-9912-b6044a60c952",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C81",
+      "claim": "Sour beer samples contained the highest counts of horC, between 2.0 \u00d7 10^4\u20134.8 \u00d7 10^4 copies/\u00b5l.",
+      "claim_type": "EXPLICIT",
+      "source": "Results demonstrate high gene frequencies on several surfaces within the brewery (Figure 9). Sour beer samples contained the highest counts, between 2.0 \u00d7 104\u20134.8 \u00d7 104 copies/\u00b5l of horC, but fermenter and packaging area surfaces (filler heads, below bottling line belt, and packaging sink) also registered between 2.8\u20137.8 \u00d7 102 copies/cm2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports quantitative results from the ddPCR analysis shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "51395ded-6e2f-41c5-9f2d-448a1aa92ae1",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C82",
+      "claim": "Fermenter and packaging area surfaces registered between 2.8\u20137.8 \u00d7 10^2 copies/cm^2 of hop-resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Results demonstrate high gene frequencies on several surfaces within the brewery (Figure 9). Sour beer samples contained the highest counts, between 2.0 \u00d7 104\u20134.8 \u00d7 104 copies/\u00b5l of horC, but fermenter and packaging area surfaces (filler heads, below bottling line belt, and packaging sink) also registered between 2.8\u20137.8 \u00d7 102 copies/cm2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports quantitative results from the ddPCR analysis shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "06b95855-ffaa-4673-917d-06a1c2747b10",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C83",
+      "claim": "No hop-resistance alleles were detected on hop samples, keg samples, or one barrel bung sample.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these alleles were detected on hop samples, keg samples, or one barrel bung (stopper) sample, though 1.1 \u00d7 103 total copies/cm2 were detected on a keg faucet used for attaching kegs to beer lines at the brewery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports negative and positive detection results from the ddPCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "653fc55e-260e-4d81-b146-c766d722fa59",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C84",
+      "claim": "1.1 \u00d7 10^3 total copies/cm^2 of hop-resistance genes were detected on a keg faucet.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these alleles were detected on hop samples, keg samples, or one barrel bung (stopper) sample, though 1.1 \u00d7 103 total copies/cm2 were detected on a keg faucet used for attaching kegs to beer lines at the brewery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports quantitative results from the ddPCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "b48cce3f-3fe9-4f59-894d-76b4e394aab1",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C85",
+      "claim": "horC was the most abundant hop-resistance gene detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the genes analyzed, horC was the most abundant (Figure 9), which is interesting when considered in the context of previous work showing that presence of this gene correlates with increased hop-tolerance and beer-spoilage ability (Fujii et al., 2005; Iijima et al., 2006; Bergsveinson et al., 2012) and the plasmid carrying horC is the most important for supporting growth of Lactobacillus brevis in beer (Bergsveinson et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the ddPCR analysis shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "f088e9bb-fca4-4a22-93b2-f519c9255d1a",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C86",
+      "claim": "Presence of horC correlates with increased hop-tolerance and beer-spoilage ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the genes analyzed, horC was the most abundant (Figure 9), which is interesting when considered in the context of previous work showing that presence of this gene correlates with increased hop-tolerance and beer-spoilage ability (Fujii et al., 2005; Iijima et al., 2006; Bergsveinson et al., 2012) and the plasmid carrying horC is the most important for supporting growth of Lactobacillus brevis in beer (Bergsveinson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fujii et al., 2005; Iijima et al., 2006; and Bergsveinson et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "af599119-d890-4cea-8099-04077be17406",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C87",
+      "claim": "The plasmid carrying horC is the most important for supporting growth of Lactobacillus brevis in beer.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the genes analyzed, horC was the most abundant (Figure 9), which is interesting when considered in the context of previous work showing that presence of this gene correlates with increased hop-tolerance and beer-spoilage ability (Fujii et al., 2005; Iijima et al., 2006; Bergsveinson et al., 2012) and the plasmid carrying horC is the most important for supporting growth of Lactobacillus brevis in beer (Bergsveinson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bergsveinson et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "80680684-8b5c-4f84-80e3-db958fa7a7dc",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C88",
+      "claim": "horC is an important gene for facilitating beer-spoilage and is consequently selected for in the brewery environment, particularly in areas where sour beers are produced.",
+      "claim_type": "EXPLICIT",
+      "source": "The preferential expression of this gene observed in these previous studies and the relative increased abundance with which it was found in this study suggests horC is an important gene for facilitating beer-spoilage and is consequently selected for in the brewery environment, particularly in areas where sour beers are produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed abundance of horC and previous studies on its function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "2cf2ca62-ed64-4404-9179-5dedc971745c",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C89",
+      "claim": "horB was detected at stable ratios relative to horC in all samples, supporting its putative function as a transcriptional regulator of horC.",
+      "claim_type": "EXPLICIT",
+      "source": "The purported transcriptional regulator of horC, horB, was detected at stable ratios relative to horC in all samples, supporting this putative function (Iijima et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the ddPCR analysis that supports a previously proposed function, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "0f17ca40-74c2-4c76-9201-83af511b34be",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C90",
+      "claim": "hitA was the least frequently observed hop-resistance gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The least frequently observed hop-resistance gene, hitA, is involved in manganese transport (Hayashi et al., 2001), supporting resistance against manganese depletion by iso-a-acids (Behr and Vogel, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the ddPCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "1dac7306-b7b0-44dc-b6a9-ffdda0492972",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C91",
+      "claim": "hitA supports resistance against manganese depletion by iso-a-acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The least frequently observed hop-resistance gene, hitA, is involved in manganese transport (Hayashi et al., 2001), supporting resistance against manganese depletion by iso-a-acids (Behr and Vogel, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hayashi et al., 2001 and Behr and Vogel, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "f3b49fcd-1fe1-496e-89b0-ebe97520f2a1",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C92",
+      "claim": "Other studies have observed similarly low frequencies of hitA presence and expression in LAB relative to the other hop-resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have observed similarly low frequencies of hitA presence and expression in LAB relative to the other hop-resistance genes (Haakensen and Ziola, 2008; Bergsveinson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Haakensen and Ziola, 2008 and Bergsveinson et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "8ad636f9-a46f-4e46-9dc3-8fd7ca1f44c4",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C93",
+      "claim": "The spoilage genes horA, horB, and horC all display high degrees of intercorrelation (Pearson's r = 0.83\u20131.0, p < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The spoilage genes horA, horB, and horC all display high degrees of intercorrelation (Pearson's r = 0.83\u20131.0, p < 0.01) and significant but lesser correlation to hitA (r = 0.48\u20130.64, p \u2264 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical correlations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "bb4e87bd-f6d1-4dd5-ad4c-414d5ade697d",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C94",
+      "claim": "horA, horB, and horC show significant but lesser correlation to hitA (r = 0.48\u20130.64, p \u2264 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "The spoilage genes horA, horB, and horC all display high degrees of intercorrelation (Pearson's r = 0.83\u20131.0, p < 0.01) and significant but lesser correlation to hitA (r = 0.48\u20130.64, p \u2264 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical correlations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "66039b8b-4d14-4f37-819d-c26e448e8fb2",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C95",
+      "claim": "All spoilage genes except hitA demonstrate significant correlation with bulk detection of Lactobacillales via 16S rRNA gene sequencing (r = 0.53\u20130.74, p \u2264 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "All spoilage genes except for hitA demonstrate significant correlation with bulk detection of Lactobacillales via 16S rRNA gene sequencing (r = 0.53\u20130.74, p \u2264 0.03), while bulk Lactobacillales and all spoilage genes but horA correlate significantly with L. lindneri detection via LAB-TRFLP (r = 0.48\u20130.77, p \u2264 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical correlations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "1869cb60-dbc0-4f31-b42a-d711e2be3fa2",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C96",
+      "claim": "Bulk Lactobacillales and all spoilage genes except horA correlate significantly with L. lindneri detection via LAB-TRFLP (r = 0.48\u20130.77, p \u2264 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "All spoilage genes except for hitA demonstrate significant correlation with bulk detection of Lactobacillales via 16S rRNA gene sequencing (r = 0.53\u20130.74, p \u2264 0.03), while bulk Lactobacillales and all spoilage genes but horA correlate significantly with L. lindneri detection via LAB-TRFLP (r = 0.48\u20130.77, p \u2264 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical correlations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "437acb63-312b-430f-9daf-f10fed4320f2",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C97",
+      "claim": "horA was the only gene correlated with Pediococcus abundance via LAB-TRFLP (r = 0.57, p = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The only gene correlated with Pediococcus abundance via LAB-TRFLP was horA (r = 0.57, p = 0.01), consistent with previous observations that horA is the primary known hop-resistance gene observed in Pediococcus spp. (Haakensen and Ziola, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a statistical correlation and is consistent with a previous study cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "12ba2020-5575-4145-8d43-886b1b09c299",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C98",
+      "claim": "horA is the primary known hop-resistance gene observed in Pediococcus spp.",
+      "claim_type": "EXPLICIT",
+      "source": "The only gene correlated with Pediococcus abundance via LAB-TRFLP was horA (r = 0.57, p = 0.01), consistent with previous observations that horA is the primary known hop-resistance gene observed in Pediococcus spp. (Haakensen and Ziola, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Haakensen and Ziola, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "dfef3f47-77ab-464d-87c7-919ac352bd15",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C99",
+      "claim": "No resistance genes correlated with L. brevis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, no resistance genes correlated with L. brevis, strains of which are among the most common brewery contaminants and most commonly positive for hop-resistance genes (Haakensen and Ziola, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a finding from the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "ff889b74-d907-41db-b8b7-7f2bf57cf77f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C100",
+      "claim": "L. brevis strains are among the most common brewery contaminants and most commonly positive for hop-resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, no resistance genes correlated with L. brevis, strains of which are among the most common brewery contaminants and most commonly positive for hop-resistance genes (Haakensen and Ziola, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Haakensen and Ziola, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "91eb5d78-dd73-4367-8a3a-fc46bd569035",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C101",
+      "claim": "L. brevis was only a minor constituent of sour beers and processing surfaces in this brewery.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely reflects the strains detected in this brewery only, and L. brevis was only a minor constituent of sour beers and processing surfaces (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "37619fcf-35d1-4984-a6cb-958198e14983",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C102",
+      "claim": "These results are the first indication of hop-resistance-gene abundance within a brewery environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are the first indication of hop-resistance-gene abundance within a brewery environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This establishes the novelty of the findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "8a1e0ba3-d193-4047-a51f-68a1ed520df4",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C103",
+      "claim": "The brewery environment itself is the site of hop-resistance-gene propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "Only two hop pellets were tested for hop-resistance genes, but this finding suggests that the brewery environment itself is the site of hop-resistance-gene propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the lack of detection on hop pellets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "89f93b24-4b53-4d20-9b55-b47ba4cd52cb",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C104",
+      "claim": "Iso-alpha-acids are generated by the breakdown of humulones during boiling and are not present in raw hops.",
+      "claim_type": "EXPLICIT",
+      "source": "Iso-alpha-acids, the antimicrobial compounds released from hops and against which hop-resistance genes confer protection, are generated by the breakdown of humulones during boiling, and are not present in raw hops (Steenackers et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Steenackers et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "9d509dd4-6731-4ab8-97ed-7fca401ae939",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C105",
+      "claim": "Undissociated humulones are significantly less inhibitory to LAB.",
+      "claim_type": "EXPLICIT",
+      "source": "Undissociated humulones are significantly less inhibitory to LAB, and the antimicrobial effects of hops are dependent upon acidic conditions (Simpson and Smith, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Simpson and Smith, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "e17d906d-33e3-4019-8fb2-ae181d3908bd",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C106",
+      "claim": "The antimicrobial effects of hops are dependent upon acidic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Undissociated humulones are significantly less inhibitory to LAB, and the antimicrobial effects of hops are dependent upon acidic conditions (Simpson and Smith, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Simpson and Smith, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "dd676e1e-2742-404d-8bff-b25cf02628d6",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C107",
+      "claim": "The selective pressure to acquire and maintain hop-resistance genes only exists in the presence of hopped beer, not in raw hops.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the selective pressure to acquire and maintain hop-resistance genes only exists in the presence of hopped beer, not in raw hops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the chemistry of hop antimicrobials and where they are active.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "4d428c38-2713-42af-a73c-b29c656c40bb",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C108",
+      "claim": "Equipment that contacts fermenting and finished sour beer or barrels should be dedicated to sour beer production and should not be used to handle conventional beers.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings argue for careful separation of equipment used in conventional beer-making from that used for sour beers: equipment that contacts fermenting and finished sour beer or barrels, including pumps, hoses, and especially packaging equipment, is best dedicated to sour beer production and should not be used to handle conventional beers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings about hop-resistance gene distribution.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "b1428fb4-313c-431e-8636-b5303a61e733",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C109",
+      "claim": "The hop-resistance genes include ABC multi-drug transporters similar to other antimicrobial-resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the hop-resistance genes include ABC multi-drug transporters similar to other antimicrobial-resistance genes (Sakamoto et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sakamoto et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "367a4700-35bc-445a-9b81-5b6d3a7bd7fa",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C110",
+      "claim": "Studying hop-resistance gene transmission within breweries may aid understanding of similar gene-transfer events involved in pathogenesis in hospitals, homes, water systems, or public environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying and manipulating their transmission within breweries may aid understanding of similar gene-transfer events involved in pathogenesis in hospitals, homes, water systems, or public environments where in situ modeling of such genes is unfeasible or a potential health hazard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of this research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "ffa9ebfa-ac73-405b-a214-c22cdc5e301f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C111",
+      "claim": "Beer spoilage is not detrimental to human health\u2014merely human pleasure.",
+      "claim_type": "EXPLICIT",
+      "source": "Breweries are a useful model for testing general theories of microbial transmission and spoilage-gene dispersal in situ for functional indoor environments and food systems, as beer spoilage is not actually detrimental to human health\u2014merely human pleasure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the safety implications of beer spoilage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "b5725b11-db83-4879-880a-fcf4e3c2af57",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C112",
+      "claim": "The brewery studied produces conventional, sour, and coolship beers.",
+      "claim_type": "EXPLICIT",
+      "source": "This brewery operates as a conventional brewing facility but also contains a dedicated coolship room, barrel room, and a secondary cellar building, where it produces coolship and other sour and barrel-aged beers seasonally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the facility studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "c9a1d6dd-ca28-4547-ad06-3af59eef1516",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C113",
+      "claim": "The secondary cellar building was built and opened during the course of the collection period.",
+      "claim_type": "EXPLICIT",
+      "source": "The secondary cellar building was built and opened during the course of the collection period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a change in the facility during the study period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "1e6f0490-fd03-4ccf-ad8a-2c1387455834",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C114",
+      "claim": "In Fall 2012, sour beers were fermented and stored in the barrel room of the main facility.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, during the first sample collection time point (Fall, 2012) sour beers were fermented and stored in the barrel room of the main facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the facility configuration during the first sampling time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "a5f96342-958c-45ff-876d-b49def637d08",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C115",
+      "claim": "In Spring and Summer 2013, all sour beers were held in the wild fermentation facility.",
+      "claim_type": "EXPLICIT",
+      "source": "For the remaining times (Spring and Summer, 2013), all sour beers were held in this second 'wild fermentation' facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the facility configuration during later sampling times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "a7c7488c-a767-43c7-aa0d-67176d3dc716",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C116",
+      "claim": "A total of 445 surface swabs and 56 beer and ingredient samples were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, 445 surface swabs and 56 beer and ingredient samples were collected (Figure 1) as described previously (Bokulich et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample collection performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "9f742ceb-ac2d-4b8b-8e84-c70d2123f562",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C117",
+      "claim": "The V4 domain of bacterial 16S rRNA genes was amplified using primers F515 and R806.",
+      "claim_type": "EXPLICIT",
+      "source": "The V4 domain of bacterial 16S rRNA genes was amplified using primers F515 (5\u2032\u2013NNNNNNNNGTGTGCCAGCMGCCGCGGTAA\u20133\u2032) and R806 (5\u2032\u2013GGACTACHVGGGTWTCTAAT\u20133\u2032) (Caporaso et al., 2011), with a unique 8 nt barcode (italicized poly-N section) and 2 nt linker sequence (bold) at the 5\u2032 terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "7720abd1-552d-4702-9fc1-f7938a8e77d8",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C118",
+      "claim": "Fungal internal transcribed spacer (ITS) 1 loci were amplified with primers BITS and B58S3.",
+      "claim_type": "EXPLICIT",
+      "source": "Fungal internal transcribed spacer (ITS) 1 loci were amplified with primers BITS (5\u2032\u2013NNNNNNNNCTACCTGCGGARGGATCA\u20133\u2032) and B58S3 (5\u2032\u2013GAGATCCRTTGYTRAAAGTT\u20133\u2032) (Bokulich and Mills, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "8e8981c0-56e7-48be-8b93-171be7b27b94",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C119",
+      "claim": "Operational taxonomic units (OTUs) were clustered at 97% identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Operational taxonomic units (OTUs) were clustered at 97% identity using QIIME's open-reference OTU-picking pipeline using UCLUST-ref (Edgar, 2010) against either the Greengenes 16S rRNA gene database (May 2013 release) (McDonald et al., 2012) or the UNITE fungal ITS database (Abarenkov et al., 2010), modified as described previously (Bokulich and Mills, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bioinformatics methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "60de0a9e-2771-4499-bc0f-dd560a46c93e",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C120",
+      "claim": "OTU tables were evenly subsampled to 400 sequences per sample for all statistical tests.",
+      "claim_type": "EXPLICIT",
+      "source": "OTU tables were evenly subsampled to 400 sequences per sample for all statistical tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data normalization method used for statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "c8705739-b2ab-4254-815a-621eec5b70f9",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C121",
+      "claim": "SourceTracker was used with 1000 burn-ins, 25 restarts, and rarefaction to 100 OTUs.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial OTU source-sink relationships were tested using SourceTracker (Knights et al., 2010) with 1000 burn-ins, 25 restarts, and rarefaction to 100 OTUs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameters used for the SourceTracker analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "a56c5d8e-9f8a-4639-95f7-da2421c38d7a",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "claim_id": "C122",
+      "claim": "ddPCR was performed in 20-\u00b5l reactions containing 3 ng/\u00b5l of DNA template, 900 nmol of each primer, 250 nM of each probe, and 1\u00d7 Bio-Rad Droplet PCR Supermix.",
+      "claim_type": "EXPLICIT",
+      "source": "ddPCR was performed in 20-\u00b5l reactions containing 3 ng/\u00b5l of DNA template, 900 nmol of each primer, 250 nM of each probe, and 1\u00d7 Bio-Rad Droplet PCR Supermix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ddPCR reaction conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microbial communities in the brewery cluster by processing room and substrate type regardless of season. Specific microbial taxa show significant associations with particular locations: fermenter samples with Bacillaceae, cellar areas with Micrococcaceae, wort/malt/hotside surfaces with Enterobacteriaceae and various fungi, barrel-room floors with Staphylococcaceae, beer samples with Lactobacillaceae, and barrels with Aspergillus/Eurotium/Penicillium (Kruskal-Wallis p < 0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C39 collectively describe beta-diversity analysis results showing substrate-driven community structuring. The clustering patterns are supported by Figures 2-3 and statistical testing (C37). The sample size (501 samples, C28) is substantial, and the statistical approach (Bray-Curtis dissimilarity with Kruskal-Wallis testing and Bonferroni correction) is appropriate for compositional microbiome data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "66881b3a-30c9-497b-a193-b040b0f8123f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SourceTracker Bayesian modeling predicts that raw brewing substrates (grain, hops, yeast, beer) are the main microbial sources contaminating brewery surfaces, with minimal contribution from extraneous environmental sources. Grain contributes most to hotside and coolship areas, hops to fermentation areas, yeast to fermenters and packaging, and beer to cellar surfaces. This suggests substrate contact drives microbial community composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C48 describe SourceTracker predictions, but the authors appropriately note (C46) that these are correlative associations, not causative. The analysis uses appropriate Bayesian methods (C4, C121) but relies on reference databases from other studies that may not perfectly match brewery conditions. The inference that raw materials are vectors (C48) is reasonable but speculative without experimental validation. The claim requires additional experimental work to confirm causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "fd3c4de9-d53e-4130-80cd-aedc54a79768",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Brewery microbial communities showed temporal stability across seasons, unlike wineries which show significant seasonal variation. This stability is attributed to year-round beer production creating consistent substrate exposure, potentially leading to facility-specific 'house' microbial communities similar to cheese-making environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 compare temporal dynamics to previous winery studies (C50 cites Bokulich et al., 2013b). The explanation for stability (C51) is logical given continuous production schedules. However, C52 is speculative (labeled as 'may function like') and would benefit from comparative studies across multiple breweries. The core observation of temporal stability is well-supported by the clustering data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "7068bdb0-da0d-4685-91b9-7a5b88a088ab",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Physical mapping reveals temporal and spatial patterns of microbial dispersal. S. cerevisiae and C. santamariae spread broadly across the brewery over time, while Micrococcus, Kocuria, Acetobacter, and Lactobacillus show more localized distribution patterns associated with specific substrate exposure (beer runoff, wort, undiluted beer).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 describe spatial-temporal mapping results shown in Figures 5-7. The observations are descriptive and well-documented visually. The inference about substrate supporting growth (C56) is reasonable given known associations with beer spoilage (C57, citing Back 1981). The spatial resolution and temporal sampling (three seasons) provide adequate data to support these dispersal patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "e671da79-3e80-4396-80e4-f575f1fe30dc",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Physical barriers and physiochemical conditions can limit microbial spread within the brewery. Non-production surfaces cleaned only by hosing may accumulate substrates supporting microbial growth. Aerosols, splashing, human and insect traffic facilitate dispersal, while physical partitions inhibit passage. The authors recommend separating packaging rooms from other operations to reduce contamination risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C64 are largely inferential (C59, C60, C61, C62 are labeled as INFERENCE). While the observations about microbial confinement (C63) are supported by the spatial data, the mechanistic explanations for dispersal (aerosols, traffic) and the effectiveness of barriers are not directly tested. The recommendations (C64) are reasonable but speculative. Experimental validation of dispersal mechanisms and barrier effectiveness would strengthen these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "d9760d00-b934-4852-a344-5bcf230c2f7f",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LAB-TRFLP analysis reveals substrate-specific LAB community composition. Wort contains diverse LAB species rarely found in beer, coolship beers are dominated by Pediococcus and L. lindneri, and floor/packaging surfaces contain mixed LAB populations. Lactobacillus spp. were detected on both filler heads, indicating cross-contamination risk between sour and conventional beer production lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C77 describe LAB-TRFLP results addressing the limitation of short 16S amplicons (C66). The method is appropriate for species-level identification (Bokulich and Mills, 2012a). Results shown in Figure 8 support substrate-driven LAB composition (C67, C75). The detection on both filler heads (C76) is a specific, concerning finding. However, C73 notes technical limitations (weak amplification from grain), and C77's generalization about cross-contamination being the 'prevailing cause' in 'any brewery' is an overreach from single-site data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "This is the first quantification of hop-resistance genes in brewery environments. Sour beers contained the highest horC levels (2.0-4.8 \u00d7 10^4 copies/\u00b5l), with fermenter and packaging surfaces also showing substantial levels (2.8-7.8 \u00d7 10^2 copies/cm^2). No genes were detected on hops, suggesting the brewery environment itself is the site of hop-resistance gene propagation. horC was the most abundant gene detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85, C102-C103 report novel ddPCR quantification of hop-resistance genes (Figure 9). The novelty claim (C80, C102) appears valid given the literature review. The quantitative data (C81-C84) are specific and obtained using appropriate ddPCR methods (C122). The inference that the brewery is the propagation site (C103) is reasonable given absence on hops (C83) but is based on only two hop samples, which is a limitation. The finding that horC is most abundant (C85) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "7711e1df-36ff-411f-95da-54fd228f6f75",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The abundance and functional significance of detected hop-resistance genes align with prior literature. horC correlates with hop-tolerance and beer-spoilage ability and is likely selected for in brewery environments. horB was detected at stable ratios with horC, supporting its role as a transcriptional regulator. hitA was least abundant, consistent with other studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 integrate current findings with prior literature. The functional roles are well-cited (C86: Fujii et al., 2005; Iijima et al., 2006; Bergsveinson et al., 2012; C87: Bergsveinson et al., 2015; C91: Hayashi et al., 2001; Behr and Vogel, 2010; C92: Haakensen and Ziola, 2008; Bergsveinson et al., 2012). The inference about selection (C88) is reasonable given the observed abundance patterns. The horB:horC ratio observation (C89) provides functional validation. These claims appropriately contextualize the novel quantitative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Statistical correlations show hop-resistance genes horA, horB, and horC are highly intercorrelated (r=0.83-1.0, p<0.01) and correlate with Lactobacillales abundance. horA specifically correlates with Pediococcus (r=0.57, p=0.01), consistent with it being the primary hop-resistance gene in Pediococcus. No genes correlated with L. brevis, which was only a minor constituent in this brewery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C101 report correlation analyses with appropriate statistics (Pearson's r with p-values). The correlations are shown in Figure 9B. The high intercorrelation of horA/B/C (C93) and their correlation with Lactobacillales (C95) are well-supported. The horA-Pediococcus correlation (C97) aligns with prior knowledge (C98, citing Haakensen and Ziola, 2008). The lack of L. brevis correlation (C99) is appropriately explained by its low abundance in this specific brewery (C101), avoiding overgeneralization. Sample size for correlations appears adequate given 19 samples analyzed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "499909f2-661a-4625-8713-7677ec44665e",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Iso-alpha-acids (the antimicrobial compounds) are generated during boiling and absent in raw hops. Since selective pressure for hop-resistance genes only exists in hopped beer, not raw hops, equipment contacting sour beer should be dedicated to sour production and not used for conventional beers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C108 integrate chemistry (C104-C106, well-cited: Steenackers et al., 2015; Simpson and Smith, 1992) with the finding of no resistance genes on hops (C83) to infer where selective pressure exists (C107). The recommendation (C108) logically follows from the high gene abundance on sour beer equipment (C81-C82). However, C108 is labeled as SPECULATION and represents a practical recommendation rather than an experimental finding. The reasoning is sound but the recommendation's effectiveness is untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "2de46e09-c92a-4e35-9c29-4d5294e58fdd",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study profiled hop-resistance gene frequencies and bacterial/fungal communities using marker-gene sequencing, LAB-TRFLP, and ddPCR. A Bayesian approach (SourceTracker) predicted contamination routes. Physical mapping illustrated dispersal patterns and identified potential reservoirs. Habitual beer exposure is associated with increased spoilage gene abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 summarize the study's methodological approach and key findings. The methods are well-described in Materials and Methods (C117-C122) and appropriately applied. The association between beer exposure and spoilage genes (C6) is supported by the quantitative data (C81-C82) showing highest levels in sour beer and associated equipment. These claims accurately represent the study design and major conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "e5ed6b67-31b1-4b14-bf87-61ccf967ca76",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study was conducted in a North American brewery producing conventional, sour, and coolship beers. A secondary cellar building was constructed during the study period, changing the facility configuration between sampling times. A total of 445 surface swabs and 56 beer/ingredient samples were collected across three seasons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C116 describe the study site and sampling. The facility change (C113) is an important contextual detail that could affect temporal comparisons. The sample numbers (C116) are substantial and well-distributed across the facility (Figure 1). These methodological details are clearly documented and support the study's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "224aa7a5-dd0b-46f3-8208-d731acde5a33",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Bacterial 16S rRNA V4 and fungal ITS1 regions were amplified and sequenced. OTUs were clustered at 97% identity and tables were rarefied to 400 sequences/sample for statistical tests. SourceTracker used 1000 burn-ins, 25 restarts, and rarefaction to 100 OTUs. ddPCR reactions contained 3 ng/\u00b5l DNA template with specified primer/probe concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C122 detail molecular and bioinformatics methods. The primer choices (C117-C118) are standard and well-cited (Caporaso et al., 2011; Bokulich and Mills, 2013b). The 97% OTU clustering (C119) is conventional. Rarefaction to 400 sequences (C120) is relatively shallow but may be appropriate given the sample type; however, this could limit detection of rare taxa. SourceTracker parameters (C121) are reasonable. ddPCR conditions (C122) are specific and appropriate. Methods are reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "7cf72822-cbf5-42a4-a747-7506f8eb307c",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishes that indoor microbial ecosystems differ from outdoor environments, food-production facilities are unique built environments where microbial activities affect product quality, and beer production involves specific antimicrobial properties and spoilage mechanisms. Hop-resistance genes (horA, horB, horC, hitA) are plasmid-borne and horizontally transferred.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C27 provide literature-based background. All claims are appropriately cited (Kelley and Gilbert, 2013; Lax et al., 2014; Kembel et al., 2014; Bokulich et al., 2013a; Bokulich and Bamforth, 2013; Van Oevelen et al., 1976, 1977; Spaepen et al., 1978; Simpson and Fernandez, 1992, 1994; Simpson, 1993a; Behr and Vogel, 2010; Suzuki et al., 2005, 2006; Sami et al., 1997; Sakamoto et al., 2001; Iijima et al., 2006; Hayashi et al., 2001). These establish the scientific foundation and novelty of the current work. No experimental claims are made in this section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    },
+    {
+      "id": "8354e9d9-b2ef-42c0-8e2b-7bab39cac9fa",
+      "content_id": "8592036f-84ef-44a0-b261-5fe77934fe9e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The substrate-centric community structuring observed has been seen in other food facilities. The studied brewery rarely suffers product contamination. Hop-resistance genes include ABC transporters similar to other antimicrobial-resistance genes, and studying them in breweries may inform understanding of gene transfer in other environments. Beer spoilage is not detrimental to human health.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C65, C109, C111 provide important context. C49 is well-cited (Bokulich and Mills, 2013a; Bokulich et al., 2013b, 2014). C65 clarifies that findings should not cause alarm. C109 is cited (Sakamoto et al., 2001). C111 correctly notes beer spoilage is not a health hazard. C110 is speculative about broader applications but reasonable. These contextual claims appropriately frame the study's significance and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:41.507678Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e320decd-726e-45e0-a356-69f05b9d4693",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "36449c21-3539-4191-8508-f0bc4adb0add",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "9194c0d7-7104-4b12-8cf0-7e95f1e06a91",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "5a7eec00-fc3d-4804-8566-fbca15ab4545",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "70a71327-4ba6-4808-ba5b-2a6ef3893d5f",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "75930de2-827d-457c-ac56-a24d8a7ded24",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "f3059cb6-943a-4b2b-a1f4-728cb51acdaf",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "950d6dc7-f9fc-474a-814d-66ba18f0f340",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "555c957b-f6d0-456d-a4d2-11b075496434",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "d3f83dab-f034-42d6-b9a9-925b2c72836f",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "9edee0fd-73fa-4b59-8c32-7044abf2ad01",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "8125b4c3-1a70-4fa3-add9-790688ea4e39",
+      "result_id": "fdfcda7a-6615-4f2a-9ea3-ffb1615df3f5"
+    },
+    {
+      "claim_id": "c20802d6-eda3-46fa-8e2c-686cbe9bfdd1",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "b02e409f-6e29-4259-8870-acf3290656c5",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "1b627179-2e42-4311-8a2d-e17f838c8aa5",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "75d0ea0c-5df3-4aee-a2fe-8bc8e800c119",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "f4c42c21-4230-4892-b35f-205b25b18394",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "263edb6d-86eb-4f3d-821d-74065485c2c2",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "2ba31071-26a8-486e-9a6f-9be04077453c",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "e7bb99fa-2f83-4701-b90e-48ec1ad8b830",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "6e2ca4e6-36ed-4889-9851-d3b48f7116ed",
+      "result_id": "66881b3a-30c9-497b-a193-b040b0f8123f"
+    },
+    {
+      "claim_id": "55c08c1a-b5fd-4356-b7f5-0049dd49b5da",
+      "result_id": "fd3c4de9-d53e-4130-80cd-aedc54a79768"
+    },
+    {
+      "claim_id": "d692a830-fbb8-4fd8-8f23-eb70bc923d08",
+      "result_id": "fd3c4de9-d53e-4130-80cd-aedc54a79768"
+    },
+    {
+      "claim_id": "73b8aaf4-36e2-49f6-a189-48fb5c02480e",
+      "result_id": "fd3c4de9-d53e-4130-80cd-aedc54a79768"
+    },
+    {
+      "claim_id": "e957c0ee-61de-4884-a8e0-00fa595e94db",
+      "result_id": "7068bdb0-da0d-4685-91b9-7a5b88a088ab"
+    },
+    {
+      "claim_id": "05b1d71b-0f79-4635-b1d6-5703fdc103eb",
+      "result_id": "7068bdb0-da0d-4685-91b9-7a5b88a088ab"
+    },
+    {
+      "claim_id": "1b905156-e92e-4633-9c74-7080bbac1bb3",
+      "result_id": "7068bdb0-da0d-4685-91b9-7a5b88a088ab"
+    },
+    {
+      "claim_id": "6873b88c-0460-4244-9677-f99643faa38c",
+      "result_id": "7068bdb0-da0d-4685-91b9-7a5b88a088ab"
+    },
+    {
+      "claim_id": "801f40ed-c659-4747-a1e6-69c48a08a321",
+      "result_id": "7068bdb0-da0d-4685-91b9-7a5b88a088ab"
+    },
+    {
+      "claim_id": "a01b8ffc-6129-4122-bf7e-4dd3b12b0e63",
+      "result_id": "7068bdb0-da0d-4685-91b9-7a5b88a088ab"
+    },
+    {
+      "claim_id": "2db141b3-3dd5-474b-801e-57f91e8f1023",
+      "result_id": "e671da79-3e80-4396-80e4-f575f1fe30dc"
+    },
+    {
+      "claim_id": "1f14dcbd-21aa-48c3-a4c6-24f75debebd0",
+      "result_id": "e671da79-3e80-4396-80e4-f575f1fe30dc"
+    },
+    {
+      "claim_id": "40e0255a-0b63-44a5-a6a2-26cbd10f8ee1",
+      "result_id": "e671da79-3e80-4396-80e4-f575f1fe30dc"
+    },
+    {
+      "claim_id": "2a09aeb3-d133-48ca-8139-789e2826ae87",
+      "result_id": "e671da79-3e80-4396-80e4-f575f1fe30dc"
+    },
+    {
+      "claim_id": "587b178a-0c63-4ba8-998f-e4ba6e0e2158",
+      "result_id": "e671da79-3e80-4396-80e4-f575f1fe30dc"
+    },
+    {
+      "claim_id": "832d667e-cb27-486c-be94-d6576ab4d093",
+      "result_id": "e671da79-3e80-4396-80e4-f575f1fe30dc"
+    },
+    {
+      "claim_id": "bd21e3e5-c557-4d64-9759-f0962612f4d8",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "a3f57217-f41b-4e4c-a727-732563d73d56",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "9b62834a-da3d-43be-a542-51858d573383",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "7246c189-a973-473c-834f-ede3f19cec34",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "ec385b31-efe3-46c8-a56a-bd0a79cae8ec",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "3064c714-bb1a-4a91-974c-770989720988",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "d37130cf-0ce6-4ca7-8879-ae82c1b2aa06",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "0e2c4cb3-5513-45a3-91c5-416fa5f3cea5",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "e39981dd-e2ac-4b69-a563-57a2f35bc99d",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "451e6e84-d27a-4cf6-9482-9fab353c25e2",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "caa11389-86be-4930-a6d5-a186fb27af74",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "24d2e575-33c0-4e02-b690-f3b9cc164f5d",
+      "result_id": "d9760d00-b934-4852-a344-5bcf230c2f7f"
+    },
+    {
+      "claim_id": "5c473ab4-99a4-4d45-9cf7-f0b404152677",
+      "result_id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e"
+    },
+    {
+      "claim_id": "3436754f-9e48-4ce5-9912-b6044a60c952",
+      "result_id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e"
+    },
+    {
+      "claim_id": "51395ded-6e2f-41c5-9f2d-448a1aa92ae1",
+      "result_id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e"
+    },
+    {
+      "claim_id": "06b95855-ffaa-4673-917d-06a1c2747b10",
+      "result_id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e"
+    },
+    {
+      "claim_id": "653fc55e-260e-4d81-b146-c766d722fa59",
+      "result_id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e"
+    },
+    {
+      "claim_id": "b48cce3f-3fe9-4f59-894d-76b4e394aab1",
+      "result_id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e"
+    },
+    {
+      "claim_id": "37619fcf-35d1-4984-a6cb-958198e14983",
+      "result_id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e"
+    },
+    {
+      "claim_id": "8a1e0ba3-d193-4047-a51f-68a1ed520df4",
+      "result_id": "5c097cb5-69a1-41e7-8d4d-1a99b956477e"
+    },
+    {
+      "claim_id": "f088e9bb-fca4-4a22-93b2-f519c9255d1a",
+      "result_id": "7711e1df-36ff-411f-95da-54fd228f6f75"
+    },
+    {
+      "claim_id": "af599119-d890-4cea-8099-04077be17406",
+      "result_id": "7711e1df-36ff-411f-95da-54fd228f6f75"
+    },
+    {
+      "claim_id": "80680684-8b5c-4f84-80e3-db958fa7a7dc",
+      "result_id": "7711e1df-36ff-411f-95da-54fd228f6f75"
+    },
+    {
+      "claim_id": "2cf2ca62-ed64-4404-9179-5dedc971745c",
+      "result_id": "7711e1df-36ff-411f-95da-54fd228f6f75"
+    },
+    {
+      "claim_id": "0f17ca40-74c2-4c76-9201-83af511b34be",
+      "result_id": "7711e1df-36ff-411f-95da-54fd228f6f75"
+    },
+    {
+      "claim_id": "1dac7306-b7b0-44dc-b6a9-ffdda0492972",
+      "result_id": "7711e1df-36ff-411f-95da-54fd228f6f75"
+    },
+    {
+      "claim_id": "f3b49fcd-1fe1-496e-89b0-ebe97520f2a1",
+      "result_id": "7711e1df-36ff-411f-95da-54fd228f6f75"
+    },
+    {
+      "claim_id": "8ad636f9-a46f-4e46-9dc3-8fd7ca1f44c4",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "bb4e87bd-f6d1-4dd5-ad4c-414d5ade697d",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "66039b8b-4d14-4f37-819d-c26e448e8fb2",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "1869cb60-dbc0-4f31-b42a-d711e2be3fa2",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "437acb63-312b-430f-9daf-f10fed4320f2",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "12ba2020-5575-4145-8d43-886b1b09c299",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "dfef3f47-77ab-464d-87c7-919ac352bd15",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "ff889b74-d907-41db-b8b7-7f2bf57cf77f",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "91eb5d78-dd73-4367-8a3a-fc46bd569035",
+      "result_id": "dd3e8b99-7630-4f7d-be9f-8f1e6dab46e8"
+    },
+    {
+      "claim_id": "89f93b24-4b53-4d20-9b55-b47ba4cd52cb",
+      "result_id": "499909f2-661a-4625-8713-7677ec44665e"
+    },
+    {
+      "claim_id": "9d509dd4-6731-4ab8-97ed-7fca401ae939",
+      "result_id": "499909f2-661a-4625-8713-7677ec44665e"
+    },
+    {
+      "claim_id": "e17d906d-33e3-4019-8fb2-ae181d3908bd",
+      "result_id": "499909f2-661a-4625-8713-7677ec44665e"
+    },
+    {
+      "claim_id": "dd676e1e-2742-404d-8bff-b25cf02628d6",
+      "result_id": "499909f2-661a-4625-8713-7677ec44665e"
+    },
+    {
+      "claim_id": "4d428c38-2713-42af-a73c-b29c656c40bb",
+      "result_id": "499909f2-661a-4625-8713-7677ec44665e"
+    },
+    {
+      "claim_id": "37dec746-ebb8-4aa8-84fa-303a7aad0685",
+      "result_id": "2de46e09-c92a-4e35-9c29-4d5294e58fdd"
+    },
+    {
+      "claim_id": "7a13bb3a-136f-41a6-8294-1285a1f7fcd1",
+      "result_id": "2de46e09-c92a-4e35-9c29-4d5294e58fdd"
+    },
+    {
+      "claim_id": "30e53250-3b65-448a-869a-f579f04431fe",
+      "result_id": "2de46e09-c92a-4e35-9c29-4d5294e58fdd"
+    },
+    {
+      "claim_id": "b4439a13-2779-4ac9-a29e-7dd517bc70fe",
+      "result_id": "2de46e09-c92a-4e35-9c29-4d5294e58fdd"
+    },
+    {
+      "claim_id": "b5725b11-db83-4879-880a-fcf4e3c2af57",
+      "result_id": "e5ed6b67-31b1-4b14-bf87-61ccf967ca76"
+    },
+    {
+      "claim_id": "c9a1d6dd-ca28-4547-ad06-3af59eef1516",
+      "result_id": "e5ed6b67-31b1-4b14-bf87-61ccf967ca76"
+    },
+    {
+      "claim_id": "1e6f0490-fd03-4ccf-ad8a-2c1387455834",
+      "result_id": "e5ed6b67-31b1-4b14-bf87-61ccf967ca76"
+    },
+    {
+      "claim_id": "a5f96342-958c-45ff-876d-b49def637d08",
+      "result_id": "e5ed6b67-31b1-4b14-bf87-61ccf967ca76"
+    },
+    {
+      "claim_id": "a7c7488c-a767-43c7-aa0d-67176d3dc716",
+      "result_id": "e5ed6b67-31b1-4b14-bf87-61ccf967ca76"
+    },
+    {
+      "claim_id": "9f742ceb-ac2d-4b8b-8e84-c70d2123f562",
+      "result_id": "224aa7a5-dd0b-46f3-8208-d731acde5a33"
+    },
+    {
+      "claim_id": "7720abd1-552d-4702-9fc1-f7938a8e77d8",
+      "result_id": "224aa7a5-dd0b-46f3-8208-d731acde5a33"
+    },
+    {
+      "claim_id": "8e8981c0-56e7-48be-8b93-171be7b27b94",
+      "result_id": "224aa7a5-dd0b-46f3-8208-d731acde5a33"
+    },
+    {
+      "claim_id": "60de0a9e-2771-4499-bc0f-dd560a46c93e",
+      "result_id": "224aa7a5-dd0b-46f3-8208-d731acde5a33"
+    },
+    {
+      "claim_id": "c8705739-b2ab-4254-815a-621eec5b70f9",
+      "result_id": "224aa7a5-dd0b-46f3-8208-d731acde5a33"
+    },
+    {
+      "claim_id": "a56c5d8e-9f8a-4639-95f7-da2421c38d7a",
+      "result_id": "224aa7a5-dd0b-46f3-8208-d731acde5a33"
+    },
+    {
+      "claim_id": "b5ae9d7c-5a7f-4d44-86b1-80d753aef92f",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "a9259876-9466-4b1a-b565-7f3988f21723",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "b3ab82ea-9865-40ab-960a-a77a2e3fbc15",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "6bfdc65d-522d-4105-a8ac-308f90ab9e14",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "fb1dfd57-e5c5-4a47-91e8-c1d8f9bd9897",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "f4f66c45-b435-425b-a4c6-6e04d131c90f",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "8b36c8cd-d5ec-4e5c-960a-dbe82a1615c7",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "eb34ac87-7e0c-4046-a8c2-638ff7a16559",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "1bf86398-678d-4a0d-bbc7-4726e9af7f76",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "9e7055c8-6a63-4101-97a6-3214848ba76c",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "3fd1b007-5574-4929-bcb4-079c8d1403a7",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "0f50e1d3-4812-48de-aff5-8288ac67ec7f",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "3240eb76-9ede-4b2b-b898-66cbf3c729a9",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "3e728e96-b0ae-45d8-b225-97a4f3635e62",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "85f25ec3-e51d-4f4b-9de2-e25c58ca626f",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "4fb8f28d-6ed7-4a8a-9a37-079414f0e07e",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "6ed57af4-4797-4b03-8053-76e3cc50726f",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "6cb7c8b9-5e27-4419-aa63-d1404cda4b9d",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "18041818-41ee-4747-879c-c5f1539121b4",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "0b4c5b33-6346-4222-9964-f55b95b12ae2",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "73b9bfd9-601a-49c9-bdd1-40fe817eda27",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "65bd022e-b332-4313-94c5-5e235614fffd",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "2bf3035d-b47d-4b76-bc55-26c78083d049",
+      "result_id": "7cf72822-cbf5-42a4-a747-7506f8eb307c"
+    },
+    {
+      "claim_id": "6f1842a9-45de-4c15-abb3-a01c04462d33",
+      "result_id": "8354e9d9-b2ef-42c0-8e2b-7bab39cac9fa"
+    },
+    {
+      "claim_id": "1ad07053-ca0b-499e-ab6b-89894d2436f3",
+      "result_id": "8354e9d9-b2ef-42c0-8e2b-7bab39cac9fa"
+    },
+    {
+      "claim_id": "b1428fb4-313c-431e-8636-b5303a61e733",
+      "result_id": "8354e9d9-b2ef-42c0-8e2b-7bab39cac9fa"
+    },
+    {
+      "claim_id": "367a4700-35bc-445a-9b81-5b6d3a7bd7fa",
+      "result_id": "8354e9d9-b2ef-42c0-8e2b-7bab39cac9fa"
+    },
+    {
+      "claim_id": "ffa9ebfa-ac73-405b-a214-c22cdc5e301f",
+      "result_id": "8354e9d9-b2ef-42c0-8e2b-7bab39cac9fa"
+    }
+  ],
+  "comparisons": []
+}

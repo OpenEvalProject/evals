@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Four Gal4 driver lines label distinct enteric neuron populations in the Drosophila digestive system. GMR48A05-Gal4 and GMR51F12-Gal4 neurons project to anterior regions (proventriculus, anterior midgut, crop), while HGN1-Gal4 and Ilp7-Gal4 neurons project to posterior regions (hindgut pylorus, rectum pylorus, and connecting regions), designated as posterior enteric neurons (PENs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are well-supported by anatomical imaging data in Figure 1A,B and appropriate citations to prior characterization studies. The projection patterns are clearly documented and provide the anatomical foundation for subsequent functional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Activation of PENs (using Ilp7-Gal4 or HGN1-Gal4 with TRPA1) decreases hemolymph glucose levels, while silencing PENs (using ShiTS1) increases glucose levels. Enteric neurons projecting to other gut regions (GMR48A05-Gal4, GMR51F12-Gal4) show no effect on glucose levels when manipulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 are supported by experimental data in Figure 1C-D with appropriate controls. The use of HGN1-Gal4 (C22-C23) addresses the confound that Ilp7-Gal4 is also expressed in CNS and reproductive organs (C21), strengthening the conclusion that PEN activity specifically regulates glucose levels. Statistical significance is indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The glucose level changes caused by PEN manipulation are dependent on food availability. Silencing PENs in the absence of food abolishes the glucose increase, supporting the hypothesis that PEN activity regulates glucose levels through effects on food intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 establish a logical connection between PEN activity and feeding behavior. The starvation experiment (C32, Figure 1E) provides critical evidence that the glucose phenotype requires food availability, supporting the mechanistic link to feeding regulation rather than direct metabolic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Modulation of PEN activity produces dramatic bidirectional changes in food intake: silencing PENs increases feeding while activation decreases feeding, resulting in an overall six-fold change. This effect is significantly larger than that produced by neuropeptide F signaling modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by capillary feeding assay data in Figure 2A-B. The bidirectional effects with appropriate controls strengthen the conclusion. The comparison to neuropeptide F (C36) provides context for the magnitude of the effect, though the basis for this comparison could be more clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "PEN projections wrap tightly around the gut muscle layer rather than extending into the lumen, suggesting involvement in mechanosensory activity rather than nutrient detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by anatomical imaging in Figure 2C. The anatomical observation (C38) is clear, though the inference about mechanosensory function (C39) is reasonable but not definitively proven by anatomy alone. This sets up the subsequent molecular investigation of mechanosensory channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The mechanosensory ion channel PPK1 is expressed in PENs, and RNAi knockdown of PPK1 (but not the related PPK29) in PENs dramatically increases feeding, phenocopying the effect of neuronal silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are well-supported by expression data (Figure 2D) and RNAi experiments (Figure 2E). The specificity control using PPK29 RNAi (C46) strengthens the conclusion that PPK1 specifically mediates the feeding regulation. The phenocopy comparison (C48) appropriately links the molecular and cellular phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C6",
+      "C50"
+    ],
+    "result": "PPK1 genetic deficiency increases food intake, and this phenotype is rescued by expressing wild-type PPK1 specifically in PENs, demonstrating that PPK1 function in PENs is necessary and sufficient for normal feeding regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49, C6, and C50 are supported by genetic loss-of-function and rescue experiments in Figure 2F. The rescue experiment is critical for establishing cell-type specificity and ruling out developmental or indirect effects. This provides strong genetic evidence for PPK1's role in PENs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C7"
+    ],
+    "result": "Pharmacological inhibition of DEG/ENaC channels with benzamil increases food consumption in wild-type flies but not in PPK1 knockdown flies, phenocopying the genetic manipulations and demonstrating that benzamil acts through PPK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C7 are supported by pharmacological data in Figure 2G. The lack of benzamil effect in PPK1 knockdown flies (C55) is a critical epistasis experiment demonstrating that benzamil acts through PPK1. However, benzamil specificity for PPK1 vs. other DEG/ENaCs in flies could be better documented, and the 10 mM concentration is quite high.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C8",
+      "C56",
+      "C59"
+    ],
+    "result": "Enteric neurons, specifically PENs, play a major role in regulating feeding through the mechanosensory ion channel PPK1, providing molecular genetic evidence that mechanosensory channels in enteric neurons regulate food intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C5, C8, C56, and C59 represent the main conclusions of the study. These are well-supported by converging evidence from neuronal manipulation (activation/silencing), genetic loss-of-function, rescue experiments, and pharmacological inhibition. The mechanistic link between mechanosensation and feeding is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "DEG/ENaC family members function as conserved mechanosensory ion channels across species, with mutations in C. elegans Mec-4 and Drosophila PPK1 causing touch insensitivity and failure to generate action potentials in response to mechanical tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 accurately summarize prior work on DEG/ENaC mechanosensory function, supported by appropriate citations. This background establishes the rationale for investigating PPK1 in the context of gut mechanosensation and feeding regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work established correlations between stomach expansion and satiety in mammals, and recent Drosophila studies showed feeding-related neurons are sensitive to satiety state but not nutrients, suggesting non-metabolic inputs like mechanical tension could regulate feeding. However, the contribution of enteric neurons had not been explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 accurately represent prior literature with appropriate citations, establishing the historical context and knowledge gap that motivates the current study. The progression from mammalian studies to Drosophila CNS work to the unexplored enteric system is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "Current FDA-approved weight-loss drugs have significant side effects and target the hypothalamus or fat absorption. The findings suggest enteric DEG/ENaCs provide an attractive therapeutic alternative for obesity treatment due to better druggability, accessibility, and fewer side effects than CNS targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 about FDA drugs is supported by citation, but claims C58 and C60 about therapeutic potential are highly speculative. The study is in Drosophila and provides no evidence for therapeutic efficacy, safety, or translatability to mammals. The advantages claimed for enteric targets (fewer side effects, better accessibility) are asserted without supporting evidence.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2118 @@
+{
+  "submission": {
+    "id": "fea15200-c9e0-4ca0-a090-d7f7ded2e576",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:52:54.227094Z",
+    "updated_at": "2025-11-28T20:52:54.227094Z"
+  },
+  "content": [
+    {
+      "id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "submission_id": "fea15200-c9e0-4ca0-a090-d7f7ded2e576",
+      "content_type": "manuscript",
+      "content_text": "# The transcription factor Pou3f1 promotes neural fate commitment via activation of neural lineage genes and inhibition of external signaling pathways\n\n## Authors\n\n- Qingqing Zhu<sup>1</sup>\n- Lu Song<sup>1</sup>\n- Guangdun Peng<sup>1</sup>\n- Na Sun<sup>3</sup>\n- Jun Chen<sup>1</sup>\n- Ting Zhang<sup>1</sup>\n- Nengyin Sheng<sup>1</sup>\n- Wei Tang<sup>1</sup>\n- Cheng Qian<sup>1</sup>\n- Yunbo Qiao<sup>1</sup>\n- Ke Tang<sup>4</sup>\n- Jing-Dong Jackie Han<sup>3</sup>\n- Jinsong Li<sup>1</sup>\n- Naihe Jing<sup>1</sup> \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Cell Biology Institute of Biochemistry and Cell Biology, Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences Shanghai China\n2. Department of Neurosurgery West China Hospital, Sichuan University Sichuan China\n3. Key Laboratory of Computational Biology CAS-MPG Partner Institute for Computational Biology, Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences Shanghai China\n4. Institute of Life Science, Nanchang University Nanchang, Jiangxi China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe neural fate commitment of pluripotent stem cells requires the repression of extrinsic inhibitory signals and the activation of intrinsic positive transcription factors. However, how these two events are integrated to ensure appropriate neural conversion remains unclear. In this study, we showed that Pou3f1 is essential for the neural differentiation of mouse embryonic stem cells (ESCs), specifically during the transition from epiblast stem cells (EpiSCs) to neural progenitor cells (NPCs). Chimeric analysis showed that Pou3f1 knockdown leads to a markedly decreased incorporation of ESCs in the neuroectoderm. By contrast, Pou3f1-overexpressing ESC derivatives preferentially contribute to the neuroectoderm. Genome-wide ChIP-seq and RNA-seq analyses indicated that Pou3f1 is an upstream activator of neural lineage genes, and also is a repressor of BMP and Wnt signaling. Our results established that Pou3f1 promotes the neural fate commitment of pluripotent stem cells through a dual role, activating internal neural induction programs and antagonizing extrinsic neural inhibitory signals.\n\n## Introduction\n\nEarly vertebrate development is the process by which unrestricted pluripotent stem cells progressively make lineage fate choices. Central to cell allocation is gastrulation, during which the epiblast responds to secreted signals and generates three primary germ layers (Lu et al., 2001). In early mouse embryos, gastrulation initiates at embryonic day (E) 6.5. Posterior epiblast cells ingress through the primitive streak to form the mesoderm and endoderm, whereas the cells that remain in the anterior part of the epiblast form the ectoderm (Tam and Loebel, 2007). Then, a portion of the anterior ectoderm is specified to adopt the neural fate and subsequently, develops into the neuroectoderm, forming a plate-shaped structure called the neural plate at approximately E7.5 (Tam and Zhou, 1996).\n\nPrevious studies have indicated that neural fate specification from embryonic ectoderm occurs autonomously in the absence of inhibitory signals such as bone morphogenetic proteins (BMPs) and Wnts (Munoz-Sanjuan and Brivanlou, 2002; Stern, 2005b). In early Xenopus, chick, and mouse embryos, BMP and Wnt signals prevent neural conversion and contribute to non-neural fates such as epidermal differentiation and primitive streak formation (Winnier et al., 1995; Hemmati-Brivanlou and Melton, 1997; Liu et al., 1999; Wilson et al., 2001). BMP and Wnt inhibition in the prospective neural ectoderm is essential for proper neural development (Wilson and Edlund, 2001). In mouse embryonic stem cells (ESCs), BMP and Wnt signals are required for self-renewal and readily repress neural differentiation partially through their targets, such as Id1, Id2, and Myc (ten Berge et al., 2011; Varlakhanova et al., 2010; Ying et al., 2003; Zhang et al., 2010a). BMP and Wnt antagonists have been utilized to generate neural lineage cells in mouse or human ESCs (Blauwkamp et al., 2012; Chambers et al., 2009; Gratsch and O'Shea, 2002; Watanabe et al., 2005).\n\nIn addition to extrinsic signaling pathways, neuroectoderm specification is also controlled by the sequential activation of intrinsic neural fate-promoting factors. Sox2, which is an ESC pluripotency-maintenance factor, plays an important role in ESC neural differentiation, indicating that Sox2 is a neural lineage-poised factor (Thomson et al., 2011). Zic2 and Otx2 are also involved in epiblast stem cell (EpiSC) neural conversion (Iwafuchi-Doi et al., 2012). Recently, Zfp521 was identified as an intrinsic factor that promotes the progression of early neural development (Kamiya et al., 2011). Studies concerning these neural fate-promoting factors have partially revealed the internal mechanism of early neural development. However, how these neural factors are activated during neural fate commitment remains unclear. Moreover, considering the importance of the effect of extrinsic signals on the neural fate decision, it remains unclear whether the inhibition of extrinsic signals and activation of internal factors are regulated separately or are integrated by a single determinant.\n\nPOU family transcription factors play important roles in the development of the nervous system (Veenstra et al., 1997). Pou3f1 (also known as Oct6, Tst1, or as SCIP) has been reported as the earliest expressed POU III family member in mouse embryo development (He et al., 1989; Monuki et al., 1989; Meijer et al., 1990; Suzuki et al., 1990). During gastrulation, Pou3f1 expression is observed in the chorion and in the anterior epiblast (Zwart et al., 1996). As embryonic development proceeds, Pou3f1 expression becomes restricted to central nervous tissues and is detectable in the midbrain and in the forebrain (He et al., 1989; Zwart et al., 1996). Pou3f1 has also been documented as a crucial regulator of the myelination of Schwann cells in the peripheral nervous system (Bermingham et al., 1996; Jaegle et al., 1996). In vitro, the rapid increase of Pou3f1 mRNA in retinoic acid-induced neural differentiation of P19 cells suggests that Pou3f1 may be functionally associated with neural fate commitment (Meijer et al., 1990). Recent reports have proposed that Pou3f1 might be a potential regulator associated with early neural development (Kamiya et al., 2011; Iwafuchi-Doi et al., 2012; Yasuhara et al., 2013). However, whether Pou3f1 is involved in the neural initiation of pluripotent stem cells remains elusive, and the underlying mechanism requires further investigation.\n\nIn this study, we show that Pou3f1 is necessary and sufficient for the neural fate commitment of ESCs and of EpiSCs. In chimeric mice, Pou3f1-knockdown cells display suppressed neuroectoderm distribution. Conversely, ESCs with Pou3f1 overexpression preferentially contribute to the neuroectoderm but not to other lineages. We further demonstrate that Pou3f1 promotes the neural fate commitment of pluripotent stem cells through the activation of intrinsic neural lineage genes and through the inhibition of extrinsic BMP and Wnt signals.\n\n## Results\n\n### Pou3f1 is essential for ESC neural differentiation\n\nWe previously established an efficient system to induce ESC neural differentiation in serum-free medium (Zhang et al., 2010a). To investigate neural conversion mechanisms, we performed a microarray-based screening and identified Pou3f1 as one of the genes significantly up-regulated during pluripotent stem cell neural differentiation. Pou3f1 was moderately expressed in ESCs. The highest levels were observed from days 2\u20134 upon neural differentiation, and then the expression of Pou3f1 declined (Figure 1A, Figure 1\u2014figure supplement 1A). Gene expression profiling indicated that the Pou3f1 expression peak occurred between the epiblast marker Fgf5 and the neural stem cell marker Sox1 (Figure 1A, Figure 1\u2014figure supplement 1A). This result suggests that Pou3f1 might play a role in ESC neural differentiation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic expression profiles of Pou3f1 and of several key marker genes during ESC neural differentiation in serum-free medium. Rex1, ESC marker; Fgf5, EpiSC marker; Sox1, NPC marker; Tuj1, neuron marker. Detection of Pou3f1 protein expression during ESC neural differentiation by Western blotting. (B) Gene expression levels in control-ESCs (Ctrl) and in Pou3f1-knockdown ESCs (Pou3f1-KD1, Pou3f1-KD3) at neural differentiation day 4 were determined by Q-PCR. Three independent experiments were performed. (C) Immunocytochemical assays of Sox/Oct4, Pax6, and Tuj1 in day 4 EBs described in B. DNA is stained with DAPI. Scale bars: 50 \u03bcm. (D) Statistical analysis of Sox+/Oct4\u2212, Pax6+, and Tuj1+ cells in C. (E) Gene expression levels in control-ESCs and inducible Pou3f1-overexpressing (Pou3f1-OE) ESCs at unbiased differentiation (10%FBS) day 8 were determined by Q-PCR. Dox (2 \u03bcg/ml) was added for 8 days. (F) Immunocytochemical assays of Sox/Oct4, Pax6, Nestin, and of Tuj1 in day 8 EBs described in E. Scale bars, 50 \u03bcm. (G) Statistical analysis of Sox+/Oct4\u2212, Pax6+, and Tuj1+ cells in F. (H) Pou3f1-knockdown ESCs were transfected with control or with Pou3f1-overexpressing lentiviruses. Gene expression levels at neural differentiation day 4 were determined by Q-PCR. The values represent the mean \u00b1 SD for B, D, E, G, and for H. (*p<0.05; **p<0.01).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Expression profiling of Pou3f1 and of several key marker genes during ESC neural differentiation in serum-free medium, was determined by Q-PCR. (B) a, Knockdown efficiency of Pou3f1 with control-shRNA and Pou3f1-KD1/2/3 lentivirus-transfected ESCs was determined by Q-PCR. b, Knockdown of Pou3f1 protein by Pou3f1-shRNAs. (C) Gene expression levels in control and Pou3f1-knockdown ESCs were determined by Q-PCR. (D) Expression levels of germ layer genes in control and Pou3f1-knockdown ESCs at unbiased differentiation day 8 were determined by Q-PCR. The values represent the mean \u00b1 SD. (*p<0.05; **p<0.01).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Expression levels of the POU III family members Pou3f1, Brn1, and Brn2 during ESC neural differentiation in serum-free medium. (B) Brn1 and Brn2 expression levels in control and Pou3f1-knockdown ESCs were determined by Q-PCR. (C) Expression levels of POUIII family members in control, Pou3f1-knockdown and Pou3f1/Brn2-knockdown ESCs undergoing differentiation for 4 days in serum-free medium. (D) Expression levels of neural marker genes in control, Pou3f1-knockdown, and Pou3f1/Brn2-knockdown ESCs undergoing differentiation for 4 days in serum-free medium.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Expression levels of neural marker genes in control and Pou3f1-stable-overexpression ESCs differentiated in serum-free medium from days 0 to 6. (B) Immunocytochemical assays of Sox/Oct4, Nestin, and Tuj1 in day 4 EBs described in A. Cells in day 4 EBs were replated in N2 medium for 2 days. Immunostaining of Tuj1 (red) was performed (g and h). DNA is stained with DAPI. Scale bars: 50 \u03bcm. (C) Statistical analysis of Sox+/Oct4\u2212, Nestin+, and Tuj1+ cells in EBs and percentages of Tuj1+ cells in adherent culture during neural differentiation from days 0 to 6 in A.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) a, Q-PCR and b, Western blotting analysis of induced Pou3f1 overexpression. ESCs in adherent cultures were treated with Dox for 48 hr. (B) a, Immunocytochemical assays for Tuj1 (red) and GFP (green) using the co-cultured EBs. Wt ESCs (GFP\u2212) were co-cultured with control ESCs (GFP+) or with Pou3f1-overexpressing ESCs (GFP+) in serum-free medium for 6 days. b, Cells in \u2018a\u2019 were immunostained by the Tuj1 antibody and then analyzed by fluorescence-activated cell sorting. The values represent the mean \u00b1 SD. (*p<0.05; **p<0.01).\n\nTo test this hypothesis, a lentivirus-mediated knockdown strategy was utilized to diminish Pou3f1 expression. Two shRNAs (KD1 and KD3) targeting the Pou3f1 3\u2032 UTR region efficiently decreased Pou3f1 expression in ESCs to approximately 50% and 30%, respectively (Figure 1\u2014figure supplement 1B). The control (Ctrl) and Pou3f1-KD1/3 ESCs exhibited comparable expression levels of the pluripotency markers (Figure 1\u2014figure supplement 1C). After differentiating these ESC lines in serum-free medium, the transcripts of the neural markers Sox1, Pax6, and Tuj1 were reduced in Pou3f1-KD1/3 cells (Figure 1B). Immunocytochemical assays confirmed the reduced percentage of Sox+/Oct4\u2212, Pax6+ NPCs, and Tuj1+ neurons from Pou3f1-KD1/3 ESCs (Figure 1C,D). Moreover, unbiased ESC differentiation in serum-containing medium revealed that the expression of mesoderm (T and Flk1), endoderm (Gata4 and Gata6), and epidermal (Ck18 and Ck19) markers was unaltered after Pou3f1 knockdown (Figure 1\u2014figure supplement 1D). These results suggest that Pou3f1 is selectively required for the neural differentiation of ESCs.\n\nBecause most POU III proteins exhibit extensive functional equivalence (Andersen and Rosenfeld, 2001; Jaegle et al., 2003; Friedrich et al., 2005), we wanted to determine whether other POU III proteins, such as Brn1 and Brn2, are similarly involved in ESC neural fate commitment. We examined the Brn1 and Brn2 expression profiles, and determined that these proteins are up-regulated in ESC serum-free neural differentiation after day 5, following the peak of Pou3f1 expression (Figure 1\u2014figure supplement 2A). Interestingly, compared with the control, Brn2, but not Brn1, expression was enhanced in Pou3f1-KD1/3 cells (Figure 1\u2014figure supplement 2B). When the expression of Pou3f1 and Brn2 was simultaneously reduced by lentivirus-mediated shRNAs, the expression of the neural marker genes Sox1, Pax6, and Nestin decreased more dramatically (Figure 1\u2014figure supplement 2D), although Brn1 expression was not affected (Figure 1\u2014figure supplement 2C). Together, these results suggest that Brn2, which is a POU III family member, compensates for Pou3f1 depletion.\n\nTo determine whether Pou3f1 is sufficient to promote the neural differentiation of ESCs, stable Pou3f1-overexpressing ESCs were generated. Compared with the control, the constitutive expression of Pou3f1 notably enhanced the expression of NPC and the neuron markers during serum-free differentiation, particularly at day 4 (Figure 1\u2014figure supplement 3). Single cell suspensions from EBs at various days were replated in N2 medium for neuronal differentiation. Many Tuj1+ neurons emerged from stable Pou3f1-overexpression ESCs at day 4, 2 days earlier than the control ESCs (Figure 1\u2014figure supplement 3C, d). These results demonstrate that neural differentiation was accelerated by Pou3f1 overexpression under serum-free conditions. To exclude the influences of Pou3f1 overexpression on the ESC state, doxycycline (Dox)-inducible Pou3f1-overexpressing ESCs were generated (Figure 1\u2014figure supplement 4A). As expected, the Dox-induced overexpression of Pou3f1 strongly enhanced ESC neural differentiation in serum-containing medium, which was accompanied by the increased expression of the neural markers Sox1, Pax6, Nestin, and Tuj1 in both quantitative polymerase chain reaction (Q-PCR) and immunostaining assays (Figure 1E\u2013G). Moreover, the decreased neural marker expression in Pou3f1-depleted ESCs was restored by the overexpression of a Pou3f1 coding sequence (CDS) lacking the 3\u2032 UTR (Figure 1H). Cell aggregation assays were performed by co-culturing wild-type ESCs with either GFP-labeled control or Pou3f1-overexpressing ESCs in serum-free medium. The neural differentiation of wild-type ESCs was not affected by Pou3f1-overexpressing ESCs in the culture system (Figure 1\u2014figure supplement 4B), indicating that Pou3f1 promoted neural differentiation cell-autonomously. Taken together, these results suggest that Pou3f1 is both necessary and sufficient for the intrinsic neural conversion of ESCs.\n\n### Pou3f1 promotes the neural transition from epiblast to neural progenitor cells\n\nOur previous study showed that ESC neural differentiation could be divided into two stages: ESCs to EpiSCs and EpiSCs to NPCs (Zhang et al., 2010a). Therefore, we investigated which stage of neural differentiation is regulated by Pou3f1. To address this question, we performed ESC-derived EpiSC (ESD-EpiSC) colony formation assays (Zhang et al., 2010a) using day 2 ESC aggregates in serum-free medium. The results demonstrated that both control and Pou3f1-overexpressing ESCs generated similar numbers of homogeneous compact monolayer EpiSC-like colonies that displayed weak alkaline phosphatase activity (AKP) and similar levels of Oct4 expression (Figure 2A,B). Furthermore, both types of EpiSC-like colonies expressed comparably high levels of the pluripotency markers Oct4 and Nanog, and of the epiblast marker Fgf5, with the absence of the expression of the ESC-specific gene Rex1 (Figure 2D). Consistently, Pou3f1 knockdown did not affect the formation and markers' expression of EpiSC-like colonies (Figure 2C,E). These results suggest that Pou3f1 may not be involved in the first stage of ESC neural differentiation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig2-v2.jpg)\n\n**Figure 2.:** (A) Inducible Pou3f1-overexpressing ESCs were cultured as EBs for 2 days in the medium with or without Dox and then subjected to the ESD-EpiSC colony formation assay for 6 days in Dox-free CDM/AF medium. EpiSC-like colony cellular morphology, alkaline phosphatase activity (AKP) (purple), and Oct4 immunostaining (red) are presented. Scale bars, 100 \u03bcm. (B) Statistical analysis of EpiSC-like colonies in A. (C) Statistical analysis of EpiSC-like colonies from the control-ESCs and from Pou3f1-knockdown ESCs (Pou3f1-KD1, Pou3f1-KD3) in the ESD-EpiSC colony formation assay. (D) Gene expression levels in ESCs and in EpiSC-like colonies formed in A. (E) Gene expression levels in ESCs and in EpiSC-like colonies formed in C. (F) EpiSC-like colonies from control-ESCs (\u2212Dox), short-term Pou3f1-overexpressing ESCs (+Dox 0\u20132), and from long-term Pou3f1-overexpressing ESCs (+Dox 0\u20136) in the ESD-EpiSC colony formation assay. Cellular morphology, AKP activity, and immunostaining for Oct4, Nestin, or for Tuj1 with DAPI are presented. Scale bars, 100 \u03bcm. (G) Statistical analysis of EpiSC-like colony numbers described in F. (H) Gene expression levels of ESCs and of the EpiSC-like colonies described in F. (I) Expression profiling of Pou3f1 and Sox1 during EpiSC neural differentiation in serum-free medium. (J) Gene expression levels of control and Pou3f1-knockdown EpiSCs in serum-free medium at differentiation day 2 were determined by Q-PCR. (K) Gene expression levels of control and Pou3f1-overexpressing EpiSCs at unbiased EBs differentiation day 2 were determined by Q-PCR. The values represent the mean \u00b1 SD for B\u2013E and for G\u2013K. (*p<0.05).\n\nTo determine whether Pou3f1 plays a role at the second stage of ESC neural differentiation, we used Dox to induce Pou3f1 overexpression during various periods in the ESD\u2013EpiSC colony formation assay. The short-term overexpression of Pou3f1 was achieved by adding Dox for the first 2 days (+Dox 0\u20132), whereas the long-term overexpression was achieved by adding Dox for 6 days (+Dox 0\u20136) (Figure 2F). The number and morphology of EpiSC-like colonies from the short-term treated ESCs were similar to those characteristics of untreated control ESCs (\u2212Dox). Additionally, AKP and Oct4 expression levels were also similar to those levels in the controls (Figure 2F,G). However, the number of EpiSC-like colonies from the long-term treated ESCs was significantly reduced, as was the expression of AKP and Oct4, whereas the expression of neural makers, such as Nestin and Tuj1, increased (Figure 2F,G). Moreover, the enhanced expression of Sox1, Pax6, and Nestin was also confirmed by Q-PCR (Figure 2H). Therefore, these results suggest that Pou3f1 may function during the second stage of ESC neural differentiation, from EpiSCs to NPCs.\n\nTo validate this finding, EpiSCs derived from early mouse embryos were differentiated in serum-free medium for 4 days. Gene expression profiling revealed that Pou3f1 transcripts peaked at differentiation day 1 and subsequently declined with the onset of Sox1 expression (Figure 2I). In Pou3f1-knockdown EpiSCs at neural differentiation day 2, Sox1, Pax6, and Nestin expression was reduced (Figure 2J), whereas Sox1, Pax6, and Nestin expression was increased in Pou3f1-overexpressing EpiSCs at unbiased differentiation day 2 (Figure 2K). These results suggest that Pou3f1 facilitates the neural differentiation of EpiSCs. Together, these data indicate that Pou3f1 promotes pluripotent stem cell neural differentiation during the transition from EpiSCs to NPCs.\n\n### Pou3f1 promotes the neural fate commitment of pluripotent stem cells in chimeric mouse embryos\n\nTo explore the function of Pou3f1 in vivo, first, we verified Pou3f1 expression patterns in early mouse embryos by in situ hybridization. Pou3f1 transcripts were detected in the whole epiblast and in the extraembryonic region of mouse embryos at E5.5 (Figures 3A, a, g). Then, Pou3f1 expression was gradually restricted to the anterior part of the embryos from E6.5 to E7.0 (Figure 3A, c, d). Transverse sections of embryos revealed that Pou3f1 expression was exclusively localized to the anterior region of the inner epiblast, which would prospectively undergo neuroectoderm fate (Figures 3A, b\u2013d, h, i). During the neural initiation stage at E7.5 and at E8.0, Pou3f1 expression was further restricted to the anterior neuroectoderm (Figure 3A, e, f, j, k), suggesting a causal correlation with embryonic neural differentiation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig3-v2.jpg)\n\n**Figure 3.:** (A) Whole-mount in situ hybridization of Pou3f1 in early mouse embryos (E5.5\u2013E8.0). The arrowhead marks the position-plane of the transverse section of the corresponding embryo below. Scale bars, 100 \u03bcm. (B) Contribution of injected GFP-labeled control (Ctrl), Pou3f1-knockdown (Pou3f1-KD), and inducible Pou3f1-overexpressing (Pou3f1-OE) ESCs to different germ lineages in chimeric embryos. NE, neuroectoderm; M, mesenchyme; and S, somite. Scale bars, 50 \u03bcm. (C) Statistical analysis of GFP-positive cell distribution in the various germ layer lineages in the ESC blastocyst injection study. The values represent the mean \u00b1 SD for C.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig3-figsupp1-v2.jpg)\n\nNext, we performed a blastocyst injection study using manipulated ESCs. GFP-labeled control, Pou3f1-knockdown (Pou3f1-KD), and Pou3f1-overexpressing (Pou3f1-OE) ESCs were injected into E2.5 blastocysts and transferred into pseudopregnant mice, respectively. The developmental potentials of these cells were examined after 7 days post-transplantation (at E9.0\u2212E9.5). Chimeras were generated from these three ES cell lines (Figure 3\u2014figure supplement 1). The number of GFP-positive cells in various tissues was ascertained in sections of chimeric embryos. The control ESCs contributed to a wide range of germ layer lineages, including neuroectoderm (NE), mesenchyme (M), somite (S), heart, gut, and extraembryonic ectoderm, at similar percentages (\u223c60%) (Figure 3B,C). Surprisingly, only Pou3f1-KD ESCs failed to contribute to the neuroectoderm, but were widely identified in non-neural lineages (Figure 3B,C). By contrast, Pou3f1-OE ESCs preferred incorporation into the neuroectoderm and displayed a considerably reduced contribution to non-neural tissues (Figure 3B,C). These results indicate that Pou3f1 promotes the neural fate commitment of pluripotent stem cells in vivo.\n\n### Genome-wide ChIP-seq and RNA-seq analyses of Pou3f1\n\nTo investigate the regulatory mechanism of Pou3f1 at the global level, we performed RNA-seq assays to identify Pou3f1-regulated genes during ESC differentiation. Pou3f1-overexpressing ESCs were differentiated in unbiased medium, and total RNAs were collected from EBs at days 2, 4, and 6 for mRNA sequencing. The RNA-seq analysis revealed that the global transcriptome changed dramatically from day 2 to day 6 (Figure 4A). Because day 4 EBs were at the transition state from the epiblast-like stage at day 2 to the NPC-like stage at day 6 (Zhang et al., 2010a), we focused on the transcriptome data from day 4. To validate the deep-sequencing data, we examined the expression levels of approximately 30 genes by Q-PCR and found that these expression levels were consistent with the sequencing data (Figure 4\u2014figure supplement 1A). Of the 11,356 genes expressed (rpkm > 1), 768 genes were up-regulated, and 202 genes were down-regulated (Cuffdiff, FDR < 0.05).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig4-v2.jpg)\n\n**Figure 4.:** (A) RNA-seq gene expression heat map of control and of inducible Pou3f1-overexpressing ESCs with Dox-treatment for 6 days. Heat-map colors (red, up-regulation; blue, down-regulation) indicate gene expression in units of standard deviation from the mean of all samples. (B) Analysis of Pou3f1-enriched regions in the ChIP-seq assay. Pie chart showing the percentage distribution of Pou3f1-binding peaks in each category. The ChIP-seq assay was performed with Pou3f1-overexpressing ESCs at differentiation day 4. (C) Venn diagram depicting the overlap (purple) of Pou3f1-bound genes (blue) and genes with significantly altered expression upon Pou3f1 overexpression (pink) at differentiation day 4. Statistical significance was estimated by Fisher's exact test (p<4.71e\u221275). (D) GO analysis of biological processes of the overlap genes described in C. Many genes involved in neural differentiation processes were up-regulated, whereas a few genes related to pattern specification were down-regulated. Log p value was used to rank the enrichment. (E) Genome browser view of the distribution of the ChIP-seq and RNA-seq reads of represented genes. The upper panels show the Pou3f1-binding regions identified by ChIP-seq (black, input; red, Pou3f1-binding site at genomic loci), and the lower panels depict the RNA-seq reads of the represented genes in control ESCs (gray) and in Pou3f1-overexpressing ESCs (green) at differentiation day 4.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Correlation between Q-PCR and RNA-Seq data. Approximately, 30 genes were chosen to confirm the RNA-Seq results. (B) ChIP-qPCR verification of the ChIP-seq data represented in Figure 4E. Pou3f1 enrichment at identified binding sites of each gene was normalized to corresponding coding regions. (C) Genome browser view of the distribution of Pou3f1 binding on the loci of representative genes. The values represent the mean \u00b1 SD for B.\n\nTo identify genes directly regulated by Pou3f1 on a genome-wide scale, ChIP-seq assays were performed with day 4 EBs. Interestingly, a large percentage of Pou3f1-binding sites (47%) were located in distal regions more than 50 kb away from known or predicted transcription start sites (TSS). Only a small percentage of Pou3f1 binding sites resided in 5\u2032 proximal regions (0\u20131 kb and 1\u20135 kb), reflecting the property of Pou3f1 to control transcription primarily through distal enhancers. To investigate whether Pou3f1 binding to the genomic regions exerts functional consequences through regulating targeted gene expression, we integrated the ChIP-seq data with the RNA-seq data. Among the 4674 Pou3f1-binding genes, 430 genes were modulated significantly (Figure 4C). Gene Ontology term enrichment analysis revealed that genes up-regulated by Pou3f1 were primarily involved in neural differentiation processes, such as neuron differentiation, neuron development, and axonogenesis, whereas Pou3f1-down-regulated targets were highly enriched in pattern specification and in embryonic morphogenesis (Figure 4D).\n\nDetailed ChIP-seq and RNA-seq analyses showed that the genomic region of neural development-related genes, such as Pax6, Sox2, and Zfp521, was bound by Pou3f1 and that their expression was up-regulated by Pou3f1 overexpression. Intriguingly, the downstream targets of important morphogens, such as Gata4 in the BMP pathway as well as Myc and Dkk1 in the Wnt pathway, were also bound by Pou3f1. However, the expression of these genes was down-regulated by Pou3f1 overexpression (Figure 4E). Pou3f1 genomic binding was confirmed by ChIP-qPCR (Figure 4\u2014figure supplement 1B). We also found that Pou3f1 could bind to the genomic regions of Zic1 and of Zic2, which are related to neural development, and of the BMP and Wnt signaling targets Id1 and Axin2 (Figure 4\u2014figure supplement 1C). Together, these results suggest that Pou3f1 might promote ESC neural fate commitment through regulating the expression of multiple genes.\n\n### Pou3f1 increases neural development-related gene expression\n\nGenome-wide ChIP-seq and RNA-seq assays revealed that Pou3f1 might regulate a group of genes related to neural development, such as Sox2, Zfp521, Zic1, and Zic2 (Figure 4E, Figure 4\u2014figure supplement 1C). Q-PCR confirmed that expression of these neural fate-promoting factors was decreased by Pou3f1 knockdown and increased by Pou3f1 overexpression (Figure 5A,B). Next, we investigated how Pou3f1 regulates the expression of these target genes. As a transcription factor, Pou3f1 contains three domains: the amino-terminal region, the POU domain, and the HOMEO domain. The POU domain and HOMEO domains mediate protein interactions and DNA binding (Levavasseur et al., 1998). Among serial deletion mutants (Figure 5\u2014figure supplement 1A), the HOMEO domain deleted mutant (\u0394HOMEO) exclusively failed to promote ESC neural differentiation (Figure 5\u2014figure supplement 1B and data not shown). This result suggests that the HOMEO domain is essential for the Pou3f1-mediated promotion of the neural fate.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig5-v2.jpg)\n\n**Figure 5.:** (A) Gene expression levels in control and in Pou3f1-knockdown ESCs differentiated in serum-free medium for 4 days. (B) Gene expression levels in control and in inducible Pou3f1-overexpressing ESCs at unbiased differentiation day 8. (C) Luciferase assays using the Sox2N2-luc enhancer in control, Pou3f1-full length, or in Pou3f1-\u0394HOMEO vector-transfected HEK293 cells. (D) ChIP assay in control, Pou3f1-full length, or in Pou3f1-\u0394HOMEO lentivirus-transfected P19 cells. A Pou3f1-specific antibody was used, and Pou3f1 enrichment at Sox2N2 and Sox2N1 enhancer regions was normalized to the Sox2 coding region. (E) Whole-mount in situ hybridization of cPou3f1 (a\u2013h) and cSox2 (i\u2013p) in early chick embryos from HH stage 3+ to HH stage 10. (F) Pou3f1 overexpression induces cSox2 expression ectopically. IRES-GFP (control vector, a and a\u2032) or Pou3f1-IRES-GFP (b and b\u2032) was electroporated into the epiblast layer of the chick embryos. cSox2 (blue) expression was examined by in situ hybridization (a, b, a\u2032, b\u2032). GFP expression (brown) indicating the electroporated field was detected by immunohistochemical assays (a\u2032 and b\u2032). The arrowhead marks the position-plane of the corresponding embryo transverse section below (i and ii). NC, notochord. The values represent the mean \u00b1 SD for A\u2013D. (*p<0.05; **p<0.01).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic structure of full-length and domain-deleted mutant Pou3f1 proteins. Row 1, full-length Pou3f1; Row 2, Pou3f1 without the N-terminus (\u0394N, missing 1\u2013244 amino acids); Row 3, Pou3f1 without the POU domain (\u0394POU, missing 245\u2013324 amino acids); Row 4, Pou3f1 without the HOMEO domain (\u0394HOMEO, missing 325\u2013499 amino acids). (B) Gene expression levels in ESCs transfected with control, Pou3f1-full length or with Pou3f1-\u0394HOMEO lentiviruses at differentiation day 4 in serum-free medium. The values represent the mean \u00b1 SD for B. (*p<0.05; **p<0.01).\n\nThe expression of Sox2, which is an important neural induction gene, is regulated by different enhancers. For example, the N2 enhancer regulates Sox2 expression in the anterior neural plate, and the N1 enhancer regulates Sox2 expression in the posterior neural plate (Uchikawa et al., 2003; Takemoto et al., 2011). Our ChIP-seq data revealed that Pou3f1 binds to the N2 enhancer region of the Sox2 gene and promotes Sox2 expression (Figure 4E). To further confirm this regulation, luciferase assays were conducted using a reporter construct driven by the Sox2N2 enhancer. Wild-type Pou3f1 enhanced luciferase activity; however, the \u0394HOMEO mutant did not enhance this activity (Figure 5C). Similarly, ChIP assays revealed that wild-type Pou3f1, but not Pou3f1-\u0394HOMEO, bound to the Sox2N2 enhancer, and neither of them bound to the Sox2N1 enhancer (Figure 5D). Thus, Pou3f1 regulates Sox2 expression by binding to the N2 enhancer, and this activity is mediated by the HOMEO domain.\n\nChick embryos have been widely used as an in vivo model to study early neural development (Stern, 2005a). In early chick embryos, chick Pou3f1 (cPou3f1) was initially expressed at the anterior portion of the primitive streak at HH stage 3+ (Figure 5E, a). Then, the territory of cPou3f1 expanded to the prospective neural plate, where the earliest expression of cSox2 was detectable at HH stage 4 (Figure 5E, b, i, j). From HH stage 5 onward, cPou3f1 expression highly overlapped with cSox2 in the anterior neural plate (Figure 5E, c\u2013h, k\u2013p). These results demonstrated that cPou3f1 was expressed earlier than cSox2 in the prospective neural plate in early chick embryos, suggesting that cPou3f1 activates cSox2 expression in chick embryos. These results are similar to our findings concerning ESC neural differentiation.\n\nTo determine the function of Pou3f1 in early chick embryos, either the control vector or Pou3f1 was electroporated into the epiblast layer of HH stage 3 chick embryos as a line extending outwards from the prospective neural plate (Linker et al., 2009), and the expression of cSox2 was analyzed 12 hr later. The ectopic expression of Pou3f1 induced the lateral expansion of cSox2 expression (7/9), whereas the control vector did not (0/9) (Figure 5F). Taken together, these results suggest that Pou3f1 promotes neural fate commitment by directly activating the expression of neural development-related genes.\n\n### Pou3f1 inhibits the BMP and Wnt pathways by interfering with their transcriptional activities\n\nIn addition to the direct regulation of intrinsic factors, Pou3f1 might also interfere with the activities of extrinsic inhibitory signals, such as the BMP and Wnt pathways, in ESC neural differentiation (Figure 4E, Figure 4\u2014figure supplement 1C). Indeed, during ESC neural differentiation, Pou3f1 knockdown increased the expression of the BMP targets Id1, Id2, Msx1, and Msx2 (Figure 6A), whereas Pou3f1 overexpression generated the opposite effect (Figure 6B). In vivo electroporation studies also revealed that the ectopic expression of Pou3f1 reduced the expression of the BMP target gene cId1 (6/10) at the edge of the chick anterior peripheral ectoderm, whereas the control vector did not (0/11) (Figure 6\u2014figure supplement 1A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig6-v2.jpg)\n\n**Figure 6.:** (A) Expression levels of BMP signaling target genes in control and Pou3f1-knockdown ESCs differentiated in serum-free medium. (B) Expression levels of BMP signaling target genes in control and Pou3f1-overexpressing ESCs in unbiased differentiation. (C) Luciferase assays using BRE-luc in control and Pou3f1-shRNA vector-transfected ESCs with or without BMP4 treatment in N2B27 medium. (D) Luciferase assays using BRE-luc in control and Pou3f1-expressing vector-transfected ESCs with or without BMP4 treatment in N2B27 medium. (E) Pou3f1 ChIP assays in control, Pou3f1-full length, or in Pou3f1-\u0394HOMEO lentivirus-transfected P19 cells. Pou3f1 enrichment at the Id1-BRE was normalized to the Id1 3\u2032 UTR region. (F) pSmad1 ChIP assay in control and Pou3f1-full length lentivirus-transfected P19 cells with or without BMP4 treatment. A pSmad1/5/8-specific antibody was used in the assay. pSmad1 enrichment at the Id1-BRE and control 3\u2032 UTR region were analyzed. (G) Dose-dependent inhibitory effect of Pou3f1 on the BRE-luc reporter activities. P19 cells were transfected with increasing amounts of Pou3f1-expressing vector and treated with or without BMP4 in N2B27 medium. (H) Expression levels of Wnt signaling target genes in control and Pou3f1-knockdown ESCs differentiated in serum-free medium. (I) Expression levels of Wnt signaling target genes in control and Pou3f1-overexpressing ESCs in unbiased differentiation. (J) Luciferase assays using TOPflash in control and Pou3f1-shRNA vector-transfected ESCs with or without stimulation of Wnt3a in N2B27 medium. (K) Luciferase assays using TOPflash in control and Pou3f1-expressing vector-transfected ESCs with or without stimulation of Wnt3a in N2B27 medium. (L) Dose-dependent inhibitory effect of Pou3f1 on the TOPflash luciferase reporter activities. P19 cells were transfected with increasing amounts of Pou3f1-expressing vector and treated with or without CHIR99021 in N2B27 medium. The values represent the mean \u00b1 SD. (*p<0.05; **p<0.01).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) In situ hybridization of cId1 expression (blue) in chick embryos that were electroporated with IRES-GFP (control vector, a and a\u2032) or with Pou3f1-IRES-GFP (b and b\u2032). GFP expression (brown) was detected in a\u2032 and b\u2032 by immunohistochemical assay. (B) Luciferase assays using BRE-luc in P19 cells that were transfected with control, Pou3f1-full length or with each of the Pou3f1-deletion mutant vectors shown in Figure 5\u2014figure supplement 1 with or without BMP4 stimulation in N2B27 medium. (C) Luciferase assays using TOPflash-luc in P19 cells that were transfected with control, Pou3f1-full length expression or with each Pou3f1-deletion mutant vector shown in Figure 5\u2014figure supplement 1 with or without Wnt3a stimulation in N2B27 medium. The values represent the mean \u00b1 SD for B and C.\n\nThen, we explored the mechanism underlying the Pou3f1-mediated inhibition of BMP targets. Luciferase assays were performed with a four-repeat BMP responsive element (BRE)-driven reporter (Katagiri et al., 2002) to examine BMP activity in ESCs and in P19 cells. Pou3f1 knockdown increased BRE activity in ESCs with or without BMP4 stimulation (Figure 6C), whereas Pou3f1 overexpression partially inhibited BRE-luc activity (Figure 6D). Furthermore, among the several known functional domains, only the HOMEO domain was necessary to maintain the inhibitory effect of Pou3f1 on BMP signaling (Figure 6\u2014figure supplement 1B). ChIP assays using a Pou3f1 antibody were performed, and we found that the binding of wild-type Pou3f1, rather than Pou3f1-\u0394HOMEO, was specifically enriched at the BRE region of the Id1 gene promoter (Figure 6E). We also performed ChIP assays using a pSmad1 antibody and found that pSmad1 bound to the BRE locus of the Id1 promoter, but not to the 3\u2032 UTR region, in the presence of BMP4 (Figure 6F, open column). Interestingly, Pou3f1 interfered with the binding of pSmad1 to the BRE locus of the Id1 promoter (Figure 6F, filled column). Moreover, Pou3f1 repressed BMP-induced luciferase activity in a dose-dependent manner (Figure 6G). We also observed that Pou3f1 did not affect the stimulation, degradation, dephosphorylation, or intracellular translocation of pSmad1 (data not shown), excluding the fact that Pou3f1 regulates the BMP pathway through a signaling cascade. Together, these results suggest that Pou3f1 may inhibit BMP signaling by interfering with pSmad1 binding to the regulatory elements and then repressing the transcription of target genes.\n\nSimilar to the BMP pathway, Wnt3a, Axin2, Dkk1, and Myc in Wnt signaling were regulated by Pou3f1 during ESC neural fate commitment (Figure 6H,I). ChIP-seq data revealed that Pou3f1 directly binds to the promoter regions of these Wnt signaling targets (Figure 4E, Figure 4\u2014figure supplement 1C). In luciferase-based TOPflash (TCF optimal promoter) Wnt reporter assays (Korinek et al., 1997), TOPflash-luc activity was enhanced by Pou3f1 knockdown (Figure 6J), and Wnt3a-induced luciferase activity was partially reduced with Pou3f1 overexpression (Figure 6K). We also found that the HOMEO domain is crucial for sustaining the inhibitory effect of Pou3f1 on TOPflash-luc activity (Figure 6\u2014figure supplement 1C). Pou3f1 also inhibited Wnt agonist CHIR99021-induced TOPflash-luc activity in a dose-dependent manner (Figure 6L). Together, these results suggest that Pou3f1 interferes with the BMP and Wnt signaling pathways by directly inhibiting the transcription of their target genes.\n\n### Pou3f1 rescues the neural inhibition effects of the BMP and Wnt pathways\n\nThe BMP and Wnt signaling pathways have strong inhibitory effects on ESC neural differentiation (Haegele et al., 2003; Ying et al., 2003), and the above data suggest that Pou3f1 inhibits BMP and Wnt transcriptional activities. Thus, we investigated whether Pou3f1 could attenuate their inhibitory effects. ESCs were differentiated in serum-free medium with or without BMP4 for 48 hr from day 2 to day 4, and Dox was simultaneously added to induce Pou3f1 overexpression (Figure 7A). Consistent with our previous observation (Zhang et al., 2010a), BMP4 inhibited the expression of the neural markers Sox1, Pax6, Nestin, and Tuj1 at both the mRNA and protein levels (Ctrl BMP4+ compared with Ctrl BMP4\u2212 in Figure 7A\u2013C). As expected, Pou3f1 overexpression fully restored the expression of these markers in ESC neural differentiation (Pou3f1 BMP4+ compared with Ctrl BMP4+ in Figure 7A\u2013C). Furthermore, Pou3f1 overexpression also fully rescued the neural inhibitory effects of Wnt3a (Figure 7D). To test whether Pou3f1 relieves the neural inhibition mediated by the BMP signaling pathway in vivo, we co-electroporated Xenopus BMP4 (xBMP4) with a control vector or with Pou3f1 into the pre-neural plate region of chick embryos at HH stage 3. cSox2 expression was completely repressed by xBMP4 (16/19), whereas the forced expression of Pou3f1 partially recovered cSox2 expression (10/19) (Figure 7E). Together, these results suggest that Pou3f1 alleviates the inhibitory activities of both BMP and Wnt signals during neural fate commitment.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02224/elife-02224-fig7-v2.jpg)\n\n**Figure 7.:** (A) Inducible Pou3f1-overexpressing ESCs were cultured as EBs in serum-free medium for 4 days with or without BMP4/Dox treatment from day 2 to day 4. Gene expression levels were detected by Q-PCR. (B) Immunocytochemical assays using day 4 EBs described in A. The EBs were stained with Sox (red) and with Oct4 (green). Scale bars, 100 \u03bcm. (C) Statistical analysis of results from the immunocytochemical assay of Sox+/Oct4\u2212, Nestin+, and Tuj1+ cells in EBs and of Tuj1+ replated cells. (D) Pou3f1-overexpressing ESCs were cultured as EBs in serum-free medium for 4 days with or without Wnt3a/Dox addition from day 2 to day 4. Gene expression levels were detected by Q-PCR. (E) Pou3f1 partially rescues the inhibitory effects of xBMP4 on cSox2. In situ hybridization of cSox2 (blue) in chick embryos that were co-electroporated with xBMP4 plus IRES-GFP (control vector, a and a\u2032) or Pou3f1-IRES-GFP (b and b\u2032), respectively. GFP expression (brown) was detected in a\u2032 and b\u2032 by immunohistochemistry. The values represent the mean \u00b1 SD for A, C, and D. (*p<0.05; **p<0.01).\n\n## Discussion\n\nIn the past decades, studies on early neural development have mainly focused on the role of extrinsic signals. Recent works have provided new insights concerning the intracellular programs involved in early neural fate commitment in the absence of extracellular signals (Kamiya et al., 2011; Iwafuchi-Doi et al., 2012). However, how the intrinsic and extrinsic regulatory networks are orchestrated to ensure the appropriate initiation of neural differentiation remains largely unclear. Our in vitro and in vivo data indicate that Pou3f1 is crucial for ESC neural fate commitment and promotes the transition from EpiSCs to neural progenitor cells. Furthermore, Pou3f1 functions as an intrinsic regulator of both intracellular transcription factors and extracellular inhibitory signals during neural fate commitment.\n\nPou3f1 was previously reported to be a transcription factor that participates in Schwann cell development and myelination (Bermingham et al., 1996; Jaegle et al., 1996). The Pou3f1 gene expression profiles in mouse embryos in vivo (Figure 3; Zwart et al., 1996) and of ESC differentiation in vitro (Figure 1, Figure 1\u2014figure supplement 1) imply that Pou3f1 may also participate in early neural development. Indeed, the shRNA-mediated knockdown of Pou3f1 in ESCs results in the reduced expression of the neural markers Sox1, Pax6, and Tuj1 in serum-free medium (Figure 1). However, the compensation of the POU III member Brn2 may be one of the reasons for the mild effects observed during ESC neural differentiation after Pou3f1 depletion (Figure 1, Figure 1\u2014figure supplement 2). Brn2 compensation and the different ESC lines and culture system used potentially explain why the Pou3f1 knockdown effects are not reported in Iwafuchi-Doi's study (Iwafuchi-Doi et al., 2012). On the other hand, our results are consistent with their results indicating that the forced expression of Pou3f1 promotes the expression of neural markers (Figure 1, Iwafuchi-Doi et al., 2012). Clearly, Pou3f1 is necessary and sufficient for ESC neural differentiation. Pou3f1-overexpressing or Pou3f1-knockdown ESCs generate EpiSC-like colonies that are similar to the control ESCs. However, the neural differentiation of Pou3f1-overexpressing or Pou3f1-knockdown EpiSCs is markedly different from the control EpiSCs, suggesting that Pou3f1 functions specifically during the neural transition from the epiblast to neural progenitor cells (Figure 2). Furthermore, in our blastocyst injection study, the contribution of Pou3f1-knockdown ESCs to the neuroectoderm was severely impaired (Figure 3), indicating that Pou3f1 most likely functions cell-autonomously during the neural fate commitment of pluripotent stem cells in vivo. Our findings revealed that Pou3f1 is an essential transcription factor required for the intrinsic neural differentiation of pluripotent stem cells.\n\nCell fate determination is regulated in a step-wise fashion via the activation or inhibition of lineage specification factors (Pfister et al., 2007). Several transcription factors, including Pax6, Sox2, Zfp521, Zic1, and Zic2, promote neural gene expression and play roles in the derivation of the anterior neural plate (Iwafuchi-Doi et al., 2012; Kamiya et al., 2011; Zhang et al., 2010b). Zfp521 and Zic1/2 are important for neural fate consolidation rather than initiation (Aruga, 2004; Kamiya et al., 2011; Iwafuchi-Doi et al., 2012). To date, the intrinsic modulators essential for the early neural initiation event have not been identified. In this study, the combination of RNA-seq and ChIP-seq enabled us to investigate the underlying molecular mechanisms governing Pou3f1-mediated neural fate commitment in ESCs at the genome-wide level and to determine whether Pou3f1 is involved in the initiation of neural differentiation. Our results indicate that Pax6, Sox2, Zfp521, and dozens of other known neural fate-promoting genes are enhanced by Pou3f1 overexpression during ESC differentiation (Figures 4 and 5). Furthermore, ChIP-seq data reveal that Pou3f1 is enriched at the regulatory regions of Pax6, Sox2, Zfp521, Zic1, and Zic2 genomic loci (Figure 4, Figure 4\u2014figure supplement 1), indicating that Pou3f1 directly activates these neural fate-promoting genes. Surprisingly, Pou3f1 did not bind the Sox2N1 enhancer, which controls Sox2 posterior neural plate expression; Pou3f1 preferentially binds to the Sox2N2 enhancer, which drives Sox2 anterior neural plate expression (Figures 4 and 5). This result is consistent with the in vivo Pou3f1 and Sox2 overlapping expression patterns during neural fate commitment. Our results are also consistent with the notion that the anterior-most portion of the epiblast constitutes the primitive neural identity following neural induction (Andoniadou and Martinez-Barbera, 2013; Li et al., 2013). Moreover, our observations confirm the hypothesis proposed in a recent study (Kamiya et al., 2011) that Pou3f1 functions upstream of Zfp521 during ESC neural differentiation (Figures 4 and 5, Figure 4\u2014figure supplement 1). Taken together, these findings demonstrate that Pou3f1 is most likely an intrinsic neural initiation factor that participates in the transition of pluripotent stem cells to NPCs by directly activating a group of key neural fate-promoting genes.\n\nIn addition to intrinsic factors, several extrinsic signals involved in early neural fate commitment have been intensively studied, including BMPs and Wnts. However, how BMP/Wnt inhibitory activities are alleviated to secure neural fate commitment has not been fully elucidated. BMP and Wnt signals function partially through their downstream genes (ten Berge et al., 2011; Varlakhanova et al., 2010; Ying et al., 2003; Zhang et al., 2010a). Unlike Zfp521, which did not affect BMP signaling (Kamiya et al., 2011), the expression of a few genes related to BMP and Wnt pathways was regulated by Pou3f1 knockdown or by overexpressing in EBs at day 4 (Figure 6). However, this regulation was not evident in ESCs or in EBs at day 2 (data not shown). This finding suggests that Pou3f1 interferes with the BMP/Wnt signaling pathways during the process of neural conversion from epiblast to NPCs. Moreover, Pou3f1 is recruited to the genomic loci of many downstream targets of BMP and Wnt signals, such as Id1, Id2, Myc, and Axin2 (Figure 4, Figure 4\u2014figure supplement 1). We also found that Pou3f1 represses the transcriptional activation of a BMP responsive element (BRE) by BMP4 and of a TCF optimal promoter (TOP) by Wnt3a (Figure 6, Figure 6\u2014figure supplement 1). Our data further suggest that the binding of pSmad1 to the BRE locus is potentially compromised in the presence of Pou3f1, which results in the repression of BMP signaling pathway activity (Figure 6). However, other possibilities, such as the recruitment of repressing cofactors by Pou3f1, could not be excluded by the present study. Notably, Pou3f1 overexpression enables neural differentiation even in the presence of BMP4 or Wnt3a (Figure 7). We propose that the Pou3f1-dependent repression of the BMP and Wnt signaling pathways and the activation of intrinsic neural lineage genes together are involved in the neural fate-promoting activity of Pou3f1.\n\nIn summary, our study establishes Pou3f1 as a critical dual-regulator of intrinsic transcription factors and extrinsic signals to promote neural fate commitment. This study provides a better understanding of the internal mechanism of neural initiation. Nonetheless, many questions concerning this process remain unanswered, such as whether the dual regulatory mechanism of Pou3f1 is also utilized to initiate the mouse neural program in vivo, whether this two-way modulating processes occurs simultaneously or in a sequential, temporal manner, and how the controversial activation/inhibition activities of the Pou3f1 transcription factor is achieved. All these unanswered questions lay the foundation for exciting future work concerning the interplay between the extrinsic and intrinsic cues during early embryonic neural fate commitment.\n\n## Materials and methods\n\n### Cell culture, differentiation, and treatment\n\nMouse ESCs (R1 and R1/E) were maintained on feeders in standard medium. ESC serum-free neural differentiation (8% knockout serum replacement medium) and EB replating were performed as described previously (Watanabe et al., 2005; Zhang et al., 2010a). ESC unbiased differentiation in serum-containing medium (10% FBS) was performed as described previously (Zhang et al., 2013). EpiSCs were cultured on FBS-coated dishes in a chemically defined medium (CDM) supplemented with 20 ng/ml activin A (R&D Systems, Minneapolis, MN) and with 12 ng/ml bFGF (Invitrogen, Carlsbad, CA) (CDM/AF) as described previously (Brons et al., 2007; Zhang et al., 2010a). To generate ESD-EpiSCs (ESC-derived epiblast stem cells), ESCs or cell aggregates were dissociated into single cells after treatment with 0.05% Trypsin-EDTA at 37\u00b0C for 2 min. Individual cells were seeded at a density of 2.0 \u00d7 105 cells per 35-mm dish in CDM/AF. After 6 days, the surviving cells formed large compact colonies. P19 cells were cultured as described previously (Jin et al., 2009). Factors and inhibitors, including BMP4 (10 ng/ml, R&D Systems, Minneapolis, MN), Wnt3a (100 ng/ml, R&D Systems, Minneapolis, MN), and CHIR99021 (3 \u03bcM, Stemgent, Cambridge, MA), were used.\n\n### Gene knockdown and overexpression\n\nFor Pou3f1 knockdown in ESCs, the lentiviral vector pLentiLox 3.7, which expresses shRNA and GFP, was used. A reference shRNA sequence (Huang et al., 2010b) was used as a negative control. The control and Pou3f1 shRNA sequences are shown in Supplementary file 1. Lentiviral packaging and cell transfection were performed as described (Tiscornia et al., 2006). GFP-positive cells were sorted using a FACS-Aria cell sorter (BD Biosciences, San Jose, CA) and propagated. For stable overexpression, Pou3f1 was cloned into the lentiviral expression vector pFUGW-IRES-EGFP (Naldini et al., 1996). The PCR primers used in the cloning are listed in Supplementary file 1. The empty vector pFUGW-GFP was used as a negative control. For Pou3f1-inducible overexpression, the Pou3f1-IRES-EGFP fragment was constructed and inserted into the lentiviral vector pLVX-Tight-Puro (Clontech, Mountain View, CA). After co-transfection of pLVX-Tight-Puro-Pou3f1-IRES-EGFP and rtTA lentiviruses for 48 hr, the stable transfection was selected by puromycin (2 \u03bcg/ml, Sigma). The culture medium supplemented with Dox (2 \u03bcg/ml, Sigma-Aldrich, St. Louis, MO) was used for inducing the overexpression of Pou3f1, and Dox was not added to the control group.\n\n### Immunocytochemistry\n\nImmunocytochemistry was performed as described previously (Xia et al., 2007). The mouse monoclonal antibodies included anti-Oct4 (Santa Cruz Biotechnology, Santa Cruz, CA), and anti-Tuj1 (Covance, San Diego, CA). The rabbit polyclonal antibodies included anti-Nestin (Upstate Biotech, Lake Placid, NY), anti-Pax6 (Covance, San Diego, CA), and an anti-Sox1/(2)/3 that preferentially recognize Sox1 and Sox3 over Sox2 (Okada et al., 2004; Tanaka et al., 2004). Cy3 and Cy5 (Jackson Immunoresearch Laboratories, West Grove, PA) secondary antibodies were used in this study. Fluorescence detection and imaging were performed on a Leica confocal microscope or on an Olympus fluorescence microscope.\n\n### RNA preparation and Q-PCR analysis\n\nTotal RNA was extracted from cells using TRIzol reagent (Invitrogen, Carlsbad, CA). Reverse transcription and Q-PCR analysis were performed using an Eppendorf Realplex2 (Peng et al., 2009). Primers for Q-PCR analysis are listed in Supplementary file 1.\n\n### Whole-mount in situ hybridization\n\nWhole-mount in situ hybridizations were performed as described previously (Huang et al., 2010a). The following probes were used: mPou3f1 (3\u2032 UTR of mouse Pou3f1 mRNA, PCR-amplified from cDNA), cPou3f1, cSox2, and cId1.\n\n### Mouse chimeric embryo analysis\n\nR1 ESCs constitutively expressing pFUGW-IRES-EGFP were used as the control for visualizing the contribution of the injected cells in vivo. To obtain chimeric embryos, GFP-labeled Pou3f1-KD, Pou3f1-OE, or control ESCs were injected into E2.5 mouse blastocysts respectively, and the cells were then transferred into the uteri of day 2.5 pseudopregnant ICR female mice. For the inducible Pou3f1-overexpresing ESCs, the recipient ICR female mice were fed with Dox (2 mg/ml) in water after blastocyst injection. Mouse embryos were collected at E8.5 to E9.0. After transverse section, the fluorescent signals of embryos were detected by confocal microscope. Our animal experiments are conducted with the highest ethical standards.\n\n### Early chick embryo manipulation\n\nFertilized eggs (Shanghai Academy of Agricultural Sciences, Shanghai, China) were incubated at 38\u00b0C to HH stage 3/3+ (Hamburger and Hamilton, 1992). Gene electroporation and new culture were performed as described previously (New, 1955; Voiculescu et al., 2008). The control vector pCAGGS-IRES-GFP and the Pou3f1 expression construct pCAGGS-mPou3f1-IRES-GFP were used. Whole-mount immunostaining of GFP was performed as described previously (Huang et al., 2010a).\n\n### Luciferase assay\n\nThe luciferase assay was described previously (Jin et al., 2009). Plasmids were co-transfected in ESCs or in P19 cells in N2B27 medium for 24 hr. f Factor treatment was applied for 10 hr, and then the luciferase activities were measured using a Dual-Luciferase Reporter Assay system (Promega, Madison, WI) with a Turner Design 2020 luminometer.\n\n### Chromatin immunoprecipitation (ChIP)\n\nChIP assays were performed according to the manufacturer's protocol (Protein A/G Agarose/Salmon Sperm DNA [Upstate Biotech, Lake Placid, NY] and Dynabeads Protein A/G [Invitrogen, Carlsbad, CA]), and detailed procedures were described previously (Jin et al., 2009). ChIP was performed with 2 \u03bcg antibody against phosphorylated Smad1/5/8 (Cell Signaling) or Pou3f1 (Santa Cruz Biotechnology, Santa Cruz, CA). Normal IgG was used as negative control. Q-PCR was used to amplify various regions of the target gene genome, and primers for ChIP-qPCR are listed in Supplementary file 1.\n\n### ChIP-Seq data processing\n\nThe high-throughput sequencing was performed by the Computational Biology Omics Core, PICB, Shanghai. The SOAP version 2.20 alignment tool was used to align ChIP-Seq reads to the mouse genome build mm9 (Li et al., 2009). Only reads with less than two mismatches that uniquely mapped to the genome were used in subsequent analyses. Using FindPeaks Homer software, Pou3f1 binding peaks with fourfold greater normalized tags were identified in ChIP experiments compared with the control (Heinz et al., 2010). We calculated the distance from the peak centers to the annotated transcription start sites (TSS) and then defined the nearest genes as peak-related genes.\n\n### RNA-Seq data processing\n\nRaw reads were mapped to mm9 using the TopHat version 1.4.1 program (Trapnell et al., 2009). We assigned FPKM (fragment per kilo base per million) as an expression value for each gene using Cufflinks version 1.3.0 software (Trapnell et al., 2010). Then, Cuffdiff software was used to identify differentially expressed genes between treatment and control samples (Trapnell et al., 2013). Differentially expressed gene heat maps were clustered by k-means clustering using the Euclidean distance as the distance and visualized using Java TreeView software (Saldanha, 2004).\n\n### Functional enrichment analysis\n\nTo investigate the functions of genes with Pou3f1 binding sites and differentially expressed after Pou3f1 perturbation, functional enrichment analyses were performed using the Database for Annotation, Visualization, and Integrated Discovery (DAVID).\n\n### Statistics\n\nEach experiment was performed at least three times, and similar results were obtained. The data are presented as the mean \u00b1 SD. Student's t test was used to compare the effects of all treatments. Statistically significant differences are indicated as follows: * for p<0.05 and ** for p<0.01.\n",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "56674812-8101-4aa4-bbde-65a6864ad9a1",
+      "submission_id": "fea15200-c9e0-4ca0-a090-d7f7ded2e576",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hideyuki Okano, Keio University School of Medicine , Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02224.019](https://doi.org/10.7554/eLife.02224.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cOct6 promotes neural commitment via activation of neural lineage genes and inhibition of BMP/Wnt signals\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 3 reviewers, one of whom, Ali Brivanlou, has agreed to reveal his identity.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this manuscript, the authors analyzed the role of Oct6 in during neuronal commitment and differentiation by using mouse ES cell differentiation system. The three reviewers' comments are mostly positive for this manuscript. However, to be acceptable, we would urge authors to make substantial revisions as summarized below.\n\n1) Authors need to clarify what they mean by \u201cneural commitment\u201d. In many cases, very vague words are used in the text to describe the role of Oct6, e.g. \u201cessential positive factor\u201d or \u201ccritical regulator\u201d, etc.\n\n2) At the beginning of the paper, while authors are referring some microarray time course data, such data are not represented in Figure 1a. Furthermore, no reference was added in the text. Authors need to specify this.\n\n3) While authors claim that Oct6 expression is detectable in undifferentiated ES cells and increases during differentiation. Then, what is the role of Oct6 in ES cells? Does Oct6 bind to the Wnt/BMP target genes and repress them?\n\n4) Controls for overexpression and KD experiments are not clear. Authors need to clarify it. Furthermore, the effects of Oct6 KD and overexpression are relatively small upon gene expression profile and cell fate than expected. How do such relatively small changes translate to the role of Oct6 in neural induction by targeting both intrinsic transcription factors and extracellular signaling molecules? Authors need to explain about these results.\n\n5) In the Oct6 KD experiment, there is no information about the level of KD. It is necessary to show how much the shRNAs to Oct6 is down-regulating the Oct6 gene at the transcript and protein level.\n\n6) Do Oct-family members compensate for the depletion of Oct6?\n\n7) It also needs to be shown that constitutive and dox-inducible Oct6 overexpression in the mouse ES cells in within the physiological range at the transcript and protein levels.\n\n8) The Oct6 target genes identified in gain-of-function lines should be validated in the loss-of-function lines.\n\n9) Multiple media conditions are used in various parts of the manuscript during neural differentiation. For example, data in Figure 1 is not compatible to data from other figures. Ideally, the data for all figures should be presented in serum free conditions.\n\n10) As regards the results of Oct6 loss-of-function experiments are not consistent with those obtained in the previous report (Iwabuchi-Doi et al., 2012). Such differences should be explained in the text.\n",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d5c8ccd3-3986-4a73-b690-e6df58ce371c",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C1",
+      "claim": "Pou3f1 is essential for the neural differentiation of mouse embryonic stem cells (ESCs), specifically during the transition from epiblast stem cells (EpiSCs) to neural progenitor cells (NPCs).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we showed that Pou3f1 is essential for the neural differentiation of mouse embryonic stem cells (ESCs), specifically during the transition from epiblast stem cells (EpiSCs) to neural progenitor cells (NPCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from knockdown and overexpression studies, EpiSC colony formation assays, and gene expression profiling showing Pou3f1's role during the EpiSC to NPC transition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "29783beb-a321-484f-8738-fe1ec5db8067",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C2",
+      "claim": "Pou3f1 knockdown leads to a markedly decreased incorporation of ESCs in the neuroectoderm in chimeric analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimeric analysis showed that Pou3f1 knockdown leads to a markedly decreased incorporation of ESCs in the neuroectoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from blastocyst injection studies showing GFP-positive cell distribution in chimeric embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "e05da2ef-7068-48a6-b72e-da18d3ed60e9",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C3",
+      "claim": "Pou3f1-overexpressing ESC derivatives preferentially contribute to the neuroectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Pou3f1-overexpressing ESC derivatives preferentially contribute to the neuroectoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from chimeric embryo analysis showing preferential incorporation into neuroectoderm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "f80672bd-a14e-40be-8e38-4e8cae5665bc",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C4",
+      "claim": "Pou3f1 is an upstream activator of neural lineage genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide ChIP-seq and RNA-seq analyses indicated that Pou3f1 is an upstream activator of neural lineage genes, and also is a repressor of BMP and Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genome-wide ChIP-seq and RNA-seq data showing Pou3f1 binding to and activating neural lineage genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "19466a68-181a-4ca0-8072-b22019e8ddb1",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C5",
+      "claim": "Pou3f1 is a repressor of BMP and Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide ChIP-seq and RNA-seq analyses indicated that Pou3f1 is an upstream activator of neural lineage genes, and also is a repressor of BMP and Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-seq, RNA-seq, and luciferase reporter assays showing Pou3f1's inhibitory effects on BMP and Wnt signaling pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "faae2d73-6f7a-43ef-8745-e3e1ddec0645",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C6",
+      "claim": "Pou3f1 promotes the neural fate commitment of pluripotent stem cells through a dual role, activating internal neural induction programs and antagonizing extrinsic neural inhibitory signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results established that Pou3f1 promotes the neural fate commitment of pluripotent stem cells through a dual role, activating internal neural induction programs and antagonizing extrinsic neural inhibitory signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple lines of experimental evidence including ChIP-seq, RNA-seq, luciferase assays, and functional studies showing both activation of neural genes and repression of BMP/Wnt signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "49cba2fd-24b0-4b9f-9e95-d3be24de1d6a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C7",
+      "claim": "In early mouse embryos, gastrulation initiates at embryonic day (E) 6.5.",
+      "claim_type": "EXPLICIT",
+      "source": "In early mouse embryos, gastrulation initiates at embryonic day (E) 6.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about mouse embryonic development.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "477dc741-b7d5-4c2f-9cb9-fe6854902b59",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C8",
+      "claim": "Posterior epiblast cells ingress through the primitive streak to form the mesoderm and endoderm, whereas the cells that remain in the anterior part of the epiblast form the ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior epiblast cells ingress through the primitive streak to form the mesoderm and endoderm, whereas the cells that remain in the anterior part of the epiblast form the ectoderm (Tam and Loebel, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Tam and Loebel, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "2f8517a9-0b42-44ac-897b-c3d1d4365a48",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C9",
+      "claim": "A portion of the anterior ectoderm is specified to adopt the neural fate and subsequently develops into the neuroectoderm, forming a plate-shaped structure called the neural plate at approximately E7.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, a portion of the anterior ectoderm is specified to adopt the neural fate and subsequently, develops into the neuroectoderm, forming a plate-shaped structure called the neural plate at approximately E7.5 (Tam and Zhou, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Tam and Zhou, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "57480999-1c66-484f-8c9b-6e553e236194",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C10",
+      "claim": "Neural fate specification from embryonic ectoderm occurs autonomously in the absence of inhibitory signals such as bone morphogenetic proteins (BMPs) and Wnts.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indicated that neural fate specification from embryonic ectoderm occurs autonomously in the absence of inhibitory signals such as bone morphogenetic proteins (BMPs) and Wnts (Munoz-Sanjuan and Brivanlou, 2002; Stern, 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies by Munoz-Sanjuan and Brivanlou, 2002 and Stern, 2005b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "acb0333f-1805-406d-b3e2-8ef830b27ac5",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C11",
+      "claim": "In early Xenopus, chick, and mouse embryos, BMP and Wnt signals prevent neural conversion and contribute to non-neural fates such as epidermal differentiation and primitive streak formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In early Xenopus, chick, and mouse embryos, BMP and Wnt signals prevent neural conversion and contribute to non-neural fates such as epidermal differentiation and primitive streak formation (Winnier et al., 1995; Hemmati-Brivanlou and Melton, 1997; Liu et al., 1999; Wilson et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "810f99ca-8ac4-4085-8c65-162eb6361982",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C12",
+      "claim": "BMP and Wnt inhibition in the prospective neural ectoderm is essential for proper neural development.",
+      "claim_type": "EXPLICIT",
+      "source": "BMP and Wnt inhibition in the prospective neural ectoderm is essential for proper neural development (Wilson and Edlund, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Wilson and Edlund, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "06ccb4c4-4546-4fe3-b5af-050245e3a6f2",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C13",
+      "claim": "In mouse embryonic stem cells (ESCs), BMP and Wnt signals are required for self-renewal and readily repress neural differentiation partially through their targets, such as Id1, Id2, and Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse embryonic stem cells (ESCs), BMP and Wnt signals are required for self-renewal and readily repress neural differentiation partially through their targets, such as Id1, Id2, and Myc (ten Berge et al., 2011; Varlakhanova et al., 2010; Ying et al., 2003; Zhang et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "00b9478d-7498-4ac4-8dd6-ff28abde5530",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C14",
+      "claim": "BMP and Wnt antagonists have been utilized to generate neural lineage cells in mouse or human ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "BMP and Wnt antagonists have been utilized to generate neural lineage cells in mouse or human ESCs (Blauwkamp et al., 2012; Chambers et al., 2009; Gratsch and O'Shea, 2002; Watanabe et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "512c89c0-ce14-455e-a4aa-a05cef4b8f04",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C15",
+      "claim": "Sox2, which is an ESC pluripotency-maintenance factor, plays an important role in ESC neural differentiation, indicating that Sox2 is a neural lineage-poised factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox2, which is an ESC pluripotency-maintenance factor, plays an important role in ESC neural differentiation, indicating that Sox2 is a neural lineage-poised factor (Thomson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Thomson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "1d12eb78-a3a8-4069-86ca-365621210375",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C16",
+      "claim": "Zic2 and Otx2 are also involved in epiblast stem cell (EpiSC) neural conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Zic2 and Otx2 are also involved in epiblast stem cell (EpiSC) neural conversion (Iwafuchi-Doi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Iwafuchi-Doi et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "a5b35061-1a66-4c4f-9ada-bf6570d912aa",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C17",
+      "claim": "Zfp521 was identified as an intrinsic factor that promotes the progression of early neural development.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Zfp521 was identified as an intrinsic factor that promotes the progression of early neural development (Kamiya et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Kamiya et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "5d4bb433-b669-48fd-8434-328215333b82",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C18",
+      "claim": "Pou3f1 (also known as Oct6, Tst1, or as SCIP) has been reported as the earliest expressed POU III family member in mouse embryo development.",
+      "claim_type": "EXPLICIT",
+      "source": "Pou3f1 (also known as Oct6, Tst1, or as SCIP) has been reported as the earliest expressed POU III family member in mouse embryo development (He et al., 1989; Monuki et al., 1989; Meijer et al., 1990; Suzuki et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "ead14dd4-de41-4dfc-8cd6-a1cbfede9046",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C19",
+      "claim": "During gastrulation, Pou3f1 expression is observed in the chorion and in the anterior epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "During gastrulation, Pou3f1 expression is observed in the chorion and in the anterior epiblast (Zwart et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Zwart et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "fae83c62-452f-4ea1-92e3-07abd8e757b4",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C20",
+      "claim": "As embryonic development proceeds, Pou3f1 expression becomes restricted to central nervous tissues and is detectable in the midbrain and in the forebrain.",
+      "claim_type": "EXPLICIT",
+      "source": "As embryonic development proceeds, Pou3f1 expression becomes restricted to central nervous tissues and is detectable in the midbrain and in the forebrain (He et al., 1989; Zwart et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "a0764269-d15a-41de-98b8-35a59315172c",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C21",
+      "claim": "Pou3f1 has also been documented as a crucial regulator of the myelination of Schwann cells in the peripheral nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Pou3f1 has also been documented as a crucial regulator of the myelination of Schwann cells in the peripheral nervous system (Bermingham et al., 1996; Jaegle et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "13e17f41-54fc-4ddc-9694-e75562ca1ad8",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C22",
+      "claim": "The rapid increase of Pou3f1 mRNA in retinoic acid-induced neural differentiation of P19 cells suggests that Pou3f1 may be functionally associated with neural fate commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, the rapid increase of Pou3f1 mRNA in retinoic acid-induced neural differentiation of P19 cells suggests that Pou3f1 may be functionally associated with neural fate commitment (Meijer et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Meijer et al., 1990 and involves speculation about functional association.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "341b3174-2117-4440-9e08-8b19357fb268",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C23",
+      "claim": "Pou3f1 was moderately expressed in ESCs with the highest levels observed from days 2\u20134 upon neural differentiation, and then the expression of Pou3f1 declined.",
+      "claim_type": "EXPLICIT",
+      "source": "Pou3f1 was moderately expressed in ESCs. The highest levels were observed from days 2\u20134 upon neural differentiation, and then the expression of Pou3f1 declined (Figure 1A, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "d19f4ba8-3ab1-4290-87c9-ad3e8e693697",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C24",
+      "claim": "Gene expression profiling indicated that the Pou3f1 expression peak occurred between the epiblast marker Fgf5 and the neural stem cell marker Sox1.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression profiling indicated that the Pou3f1 expression peak occurred between the epiblast marker Fgf5 and the neural stem cell marker Sox1 (Figure 1A, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "8394699d-0737-4ebb-83a3-bc58ed7a166c",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C25",
+      "claim": "The transcripts of the neural markers Sox1, Pax6, and Tuj1 were reduced in Pou3f1-KD1/3 cells after differentiating in serum-free medium.",
+      "claim_type": "EXPLICIT",
+      "source": "After differentiating these ESC lines in serum-free medium, the transcripts of the neural markers Sox1, Pax6, and Tuj1 were reduced in Pou3f1-KD1/3 cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental Q-PCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "7a69d148-e941-4d89-830a-e2509ad7d83c",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C26",
+      "claim": "Immunocytochemical assays confirmed the reduced percentage of Sox+/Oct4\u2212, Pax6+ NPCs, and Tuj1+ neurons from Pou3f1-KD1/3 ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunocytochemical assays confirmed the reduced percentage of Sox+/Oct4\u2212, Pax6+ NPCs, and Tuj1+ neurons from Pou3f1-KD1/3 ESCs (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunocytochemical data shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "2fb4573e-0fca-4a74-b0a0-bf87976b0f19",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C27",
+      "claim": "Unbiased ESC differentiation in serum-containing medium revealed that the expression of mesoderm (T and Flk1), endoderm (Gata4 and Gata6), and epidermal (Ck18 and Ck19) markers was unaltered after Pou3f1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, unbiased ESC differentiation in serum-containing medium revealed that the expression of mesoderm (T and Flk1), endoderm (Gata4 and Gata6), and epidermal (Ck18 and Ck19) markers was unaltered after Pou3f1 knockdown (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "81153ed7-ac0b-4e2e-8b9b-22be51fd415a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C28",
+      "claim": "Pou3f1 is selectively required for the neural differentiation of ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Pou3f1 is selectively required for the neural differentiation of ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing Pou3f1 affects neural but not other lineage markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "4c3e6056-70a0-4852-a94f-40624239207a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C29",
+      "claim": "Brn1 and Brn2 are up-regulated in ESC serum-free neural differentiation after day 5, following the peak of Pou3f1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the Brn1 and Brn2 expression profiles, and determined that these proteins are up-regulated in ESC serum-free neural differentiation after day 5, following the peak of Pou3f1 expression (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "076c2368-51ac-4d66-8305-ffa1656b353e",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C30",
+      "claim": "Compared with the control, Brn2, but not Brn1, expression was enhanced in Pou3f1-KD1/3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, compared with the control, Brn2, but not Brn1, expression was enhanced in Pou3f1-KD1/3 cells (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "6c64b1e5-c271-4cfd-b0c4-ae30cf484f6a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C31",
+      "claim": "When the expression of Pou3f1 and Brn2 was simultaneously reduced by lentivirus-mediated shRNAs, the expression of the neural marker genes Sox1, Pax6, and Nestin decreased more dramatically.",
+      "claim_type": "EXPLICIT",
+      "source": "When the expression of Pou3f1 and Brn2 was simultaneously reduced by lentivirus-mediated shRNAs, the expression of the neural marker genes Sox1, Pax6, and Nestin decreased more dramatically (Figure 1\u2014figure supplement 2D), although Brn1 expression was not affected (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "42a2ab60-5e03-49e7-998e-ad4352cf6409",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C32",
+      "claim": "Brn2, which is a POU III family member, compensates for Pou3f1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that Brn2, which is a POU III family member, compensates for Pou3f1 depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing Brn2 upregulation after Pou3f1 knockdown and enhanced effects of double knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "6e838f3c-9afd-457a-92b3-6e8af6e22073",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C33",
+      "claim": "The constitutive expression of Pou3f1 notably enhanced the expression of NPC and the neuron markers during serum-free differentiation, particularly at day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the control, the constitutive expression of Pou3f1 notably enhanced the expression of NPC and the neuron markers during serum-free differentiation, particularly at day 4 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "6606f4b3-16ec-4cdb-957c-bcfb9bf6ba0a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C34",
+      "claim": "Many Tuj1+ neurons emerged from stable Pou3f1-overexpression ESCs at day 4, 2 days earlier than the control ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Many Tuj1+ neurons emerged from stable Pou3f1-overexpression ESCs at day 4, 2 days earlier than the control ESCs (Figure 1\u2014figure supplement 3C, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "909f6b41-1016-4d75-aceb-4f11afa29c72",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C35",
+      "claim": "Neural differentiation was accelerated by Pou3f1 overexpression under serum-free conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that neural differentiation was accelerated by Pou3f1 overexpression under serum-free conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing earlier appearance of neural markers with Pou3f1 overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "f59e100c-2f66-47e0-ab64-fae4e3622ce5",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C36",
+      "claim": "The Dox-induced overexpression of Pou3f1 strongly enhanced ESC neural differentiation in serum-containing medium, which was accompanied by the increased expression of the neural markers Sox1, Pax6, Nestin, and Tuj1 in both quantitative polymerase chain reaction (Q-PCR) and immunostaining assays.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the Dox-induced overexpression of Pou3f1 strongly enhanced ESC neural differentiation in serum-containing medium, which was accompanied by the increased expression of the neural markers Sox1, Pax6, Nestin, and Tuj1 in both quantitative polymerase chain reaction (Q-PCR) and immunostaining assays (Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "91185ec9-603d-43af-af62-ae803533fe24",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C37",
+      "claim": "The decreased neural marker expression in Pou3f1-depleted ESCs was restored by the overexpression of a Pou3f1 coding sequence (CDS) lacking the 3\u2032 UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the decreased neural marker expression in Pou3f1-depleted ESCs was restored by the overexpression of a Pou3f1 coding sequence (CDS) lacking the 3\u2032 UTR (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "41bf412d-0d3a-4a2c-8a44-6e287705c2b7",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C38",
+      "claim": "The neural differentiation of wild-type ESCs was not affected by Pou3f1-overexpressing ESCs in the culture system.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural differentiation of wild-type ESCs was not affected by Pou3f1-overexpressing ESCs in the culture system (Figure 1\u2014figure supplement 4B), indicating that Pou3f1 promoted neural differentiation cell-autonomously.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from cell aggregation assays shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "a5613227-6c25-4e73-bec3-e1e8ce3be058",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C39",
+      "claim": "Pou3f1 promoted neural differentiation cell-autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural differentiation of wild-type ESCs was not affected by Pou3f1-overexpressing ESCs in the culture system (Figure 1\u2014figure supplement 4B), indicating that Pou3f1 promoted neural differentiation cell-autonomously.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the co-culture experiment data showing no effect on wild-type cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "161c5eae-7334-43ee-95a9-3bdfe0f8c42a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C40",
+      "claim": "Pou3f1 is both necessary and sufficient for the intrinsic neural conversion of ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that Pou3f1 is both necessary and sufficient for the intrinsic neural conversion of ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined knockdown and overexpression experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "2fe103ae-70d6-4ba8-bc00-83a0b6098166",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C41",
+      "claim": "ESC neural differentiation could be divided into two stages: ESCs to EpiSCs and EpiSCs to NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study showed that ESC neural differentiation could be divided into two stages: ESCs to EpiSCs and EpiSCs to NPCs (Zhang et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Zhang et al., 2010a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "ab17339c-4322-4124-b359-d44ea814000c",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C42",
+      "claim": "Both control and Pou3f1-overexpressing ESCs generated similar numbers of homogeneous compact monolayer EpiSC-like colonies that displayed weak alkaline phosphatase activity (AKP) and similar levels of Oct4 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated that both control and Pou3f1-overexpressing ESCs generated similar numbers of homogeneous compact monolayer EpiSC-like colonies that displayed weak alkaline phosphatase activity (AKP) and similar levels of Oct4 expression (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "bc39a345-55bd-4e70-aaf4-378f3fbdd206",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C43",
+      "claim": "Both types of EpiSC-like colonies expressed comparably high levels of the pluripotency markers Oct4 and Nanog, and of the epiblast marker Fgf5, with the absence of the expression of the ESC-specific gene Rex1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both types of EpiSC-like colonies expressed comparably high levels of the pluripotency markers Oct4 and Nanog, and of the epiblast marker Fgf5, with the absence of the expression of the ESC-specific gene Rex1 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "c23946fb-2f29-473f-a0fe-51672bf9765f",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C44",
+      "claim": "Pou3f1 knockdown did not affect the formation and markers' expression of EpiSC-like colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Pou3f1 knockdown did not affect the formation and markers' expression of EpiSC-like colonies (Figure 2C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "3a369cd5-8e36-43fe-8b11-7e60a6135282",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C45",
+      "claim": "Pou3f1 may not be involved in the first stage of ESC neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Pou3f1 may not be involved in the first stage of ESC neural differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing no effect of Pou3f1 manipulation on EpiSC formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "041b7363-3404-4f18-ae6c-a4c4227fd7d8",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C46",
+      "claim": "The number of EpiSC-like colonies from the long-term treated ESCs was significantly reduced, as was the expression of AKP and Oct4, whereas the expression of neural makers, such as Nestin and Tuj1, increased.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of EpiSC-like colonies from the long-term treated ESCs was significantly reduced, as was the expression of AKP and Oct4, whereas the expression of neural makers, such as Nestin and Tuj1, increased (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "644c62fc-7686-4f95-a7fe-6cd412d18d94",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C47",
+      "claim": "The enhanced expression of Sox1, Pax6, and Nestin was also confirmed by Q-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the enhanced expression of Sox1, Pax6, and Nestin was also confirmed by Q-PCR (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "f5ada589-1c66-4187-9e63-713f35b33cba",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C48",
+      "claim": "Pou3f1 may function during the second stage of ESC neural differentiation, from EpiSCs to NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results suggest that Pou3f1 may function during the second stage of ESC neural differentiation, from EpiSCs to NPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing effects of long-term but not short-term Pou3f1 overexpression on EpiSC colonies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "35684b88-3322-4723-b26b-7c37500401a7",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C49",
+      "claim": "Pou3f1 transcripts peaked at differentiation day 1 and subsequently declined with the onset of Sox1 expression in EpiSCs derived from early mouse embryos differentiated in serum-free medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression profiling revealed that Pou3f1 transcripts peaked at differentiation day 1 and subsequently declined with the onset of Sox1 expression (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "b1269eaa-6313-48ff-8b4c-2839bf293b24",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C50",
+      "claim": "In Pou3f1-knockdown EpiSCs at neural differentiation day 2, Sox1, Pax6, and Nestin expression was reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pou3f1-knockdown EpiSCs at neural differentiation day 2, Sox1, Pax6, and Nestin expression was reduced (Figure 2J), whereas Sox1, Pax6, and Nestin expression was increased in Pou3f1-overexpressing EpiSCs at unbiased differentiation day 2 (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "514c4e55-81a9-4b6c-b6f4-697b2cbc173a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C51",
+      "claim": "Sox1, Pax6, and Nestin expression was increased in Pou3f1-overexpressing EpiSCs at unbiased differentiation day 2.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pou3f1-knockdown EpiSCs at neural differentiation day 2, Sox1, Pax6, and Nestin expression was reduced (Figure 2J), whereas Sox1, Pax6, and Nestin expression was increased in Pou3f1-overexpressing EpiSCs at unbiased differentiation day 2 (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "0c54364f-87ce-4cbd-8e21-75cb26b6e61d",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C52",
+      "claim": "Pou3f1 facilitates the neural differentiation of EpiSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Pou3f1 facilitates the neural differentiation of EpiSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing effects of Pou3f1 manipulation on EpiSC neural differentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "2b45c27e-846b-4916-ac2b-e52dfdb792f5",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C53",
+      "claim": "Pou3f1 promotes pluripotent stem cell neural differentiation during the transition from EpiSCs to NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that Pou3f1 promotes pluripotent stem cell neural differentiation during the transition from EpiSCs to NPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental data from ESC and EpiSC differentiation studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "39c71d41-e73a-47d9-8a82-e2a0b970c909",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C54",
+      "claim": "Pou3f1 transcripts were detected in the whole epiblast and in the extraembryonic region of mouse embryos at E5.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Pou3f1 transcripts were detected in the whole epiblast and in the extraembryonic region of mouse embryos at E5.5 (Figures 3A, a, g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "7e06c72a-e036-4aad-88c7-45aefb7b864e",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C55",
+      "claim": "Pou3f1 expression was gradually restricted to the anterior part of the embryos from E6.5 to E7.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, Pou3f1 expression was gradually restricted to the anterior part of the embryos from E6.5 to E7.0 (Figure 3A, c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "7b0dd936-950e-48bf-ac9b-aee15e5661d3",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C56",
+      "claim": "Transverse sections of embryos revealed that Pou3f1 expression was exclusively localized to the anterior region of the inner epiblast, which would prospectively undergo neuroectoderm fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Transverse sections of embryos revealed that Pou3f1 expression was exclusively localized to the anterior region of the inner epiblast, which would prospectively undergo neuroectoderm fate (Figures 3A, b\u2013d, h, i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 3A and involves inference about prospective fate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "046581ca-b302-47be-a800-6578d0f2effa",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C57",
+      "claim": "During the neural initiation stage at E7.5 and at E8.0, Pou3f1 expression was further restricted to the anterior neuroectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "During the neural initiation stage at E7.5 and at E8.0, Pou3f1 expression was further restricted to the anterior neuroectoderm (Figure 3A, e, f, j, k), suggesting a causal correlation with embryonic neural differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "d28a06d9-79f4-401a-80f5-e0137c21f16f",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C58",
+      "claim": "Pou3f1 expression pattern suggests a causal correlation with embryonic neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "During the neural initiation stage at E7.5 and at E8.0, Pou3f1 expression was further restricted to the anterior neuroectoderm (Figure 3A, e, f, j, k), suggesting a causal correlation with embryonic neural differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim involves speculation based on the expression pattern data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "16187a8b-81a4-4dde-ae56-d1e7226205da",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C59",
+      "claim": "The control ESCs contributed to a wide range of germ layer lineages, including neuroectoderm (NE), mesenchyme (M), somite (S), heart, gut, and extraembryonic ectoderm, at similar percentages (\u223c60%).",
+      "claim_type": "EXPLICIT",
+      "source": "The control ESCs contributed to a wide range of germ layer lineages, including neuroectoderm (NE), mesenchyme (M), somite (S), heart, gut, and extraembryonic ectoderm, at similar percentages (\u223c60%) (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chimeric embryo analysis data shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "180f79fe-17d2-4894-9cac-a46691231a37",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C60",
+      "claim": "Only Pou3f1-KD ESCs failed to contribute to the neuroectoderm, but were widely identified in non-neural lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, only Pou3f1-KD ESCs failed to contribute to the neuroectoderm, but were widely identified in non-neural lineages (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chimeric embryo analysis data shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "91098028-0941-4ac5-a25f-39d4ce4e5dea",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C61",
+      "claim": "Pou3f1-OE ESCs preferred incorporation into the neuroectoderm and displayed a considerably reduced contribution to non-neural tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Pou3f1-OE ESCs preferred incorporation into the neuroectoderm and displayed a considerably reduced contribution to non-neural tissues (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chimeric embryo analysis data shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "53f73b5d-c49c-4517-a97a-cdcb3365490d",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C62",
+      "claim": "Pou3f1 promotes the neural fate commitment of pluripotent stem cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Pou3f1 promotes the neural fate commitment of pluripotent stem cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the chimeric embryo analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "048693f0-9c39-4f1d-891a-e079d9160505",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C63",
+      "claim": "The global transcriptome changed dramatically from day 2 to day 6 in Pou3f1-overexpressing ESCs differentiated in unbiased medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-seq analysis revealed that the global transcriptome changed dramatically from day 2 to day 6 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "3a79f29d-0306-47ec-90ad-5755a39ec7cb",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C64",
+      "claim": "Of the 11,356 genes expressed (rpkm > 1), 768 genes were up-regulated, and 202 genes were down-regulated (Cuffdiff, FDR < 0.05) at day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 11,356 genes expressed (rpkm > 1), 768 genes were up-regulated, and 202 genes were down-regulated (Cuffdiff, FDR < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "45caa69d-4bd1-4e76-8dff-5db19b55ba9e",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C65",
+      "claim": "A large percentage of Pou3f1-binding sites (47%) were located in distal regions more than 50 kb away from known or predicted transcription start sites (TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a large percentage of Pou3f1-binding sites (47%) were located in distal regions more than 50 kb away from known or predicted transcription start sites (TSS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-seq data analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "f3485dea-ec9d-4842-8249-4ee03089bf97",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C66",
+      "claim": "Only a small percentage of Pou3f1 binding sites resided in 5\u2032 proximal regions (0\u20131 kb and 1\u20135 kb), reflecting the property of Pou3f1 to control transcription primarily through distal enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small percentage of Pou3f1 binding sites resided in 5\u2032 proximal regions (0\u20131 kb and 1\u20135 kb), reflecting the property of Pou3f1 to control transcription primarily through distal enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-seq data analysis and involves inference about transcriptional control mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "8252d0dc-6b2f-404b-9715-a99177b5b1d7",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C67",
+      "claim": "Among the 4674 Pou3f1-binding genes, 430 genes were modulated significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 4674 Pou3f1-binding genes, 430 genes were modulated significantly (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integrated ChIP-seq and RNA-seq data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "4e570af4-ad5a-4ad3-89c3-4ab0cb631739",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C68",
+      "claim": "Genes up-regulated by Pou3f1 were primarily involved in neural differentiation processes, such as neuron differentiation, neuron development, and axonogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology term enrichment analysis revealed that genes up-regulated by Pou3f1 were primarily involved in neural differentiation processes, such as neuron differentiation, neuron development, and axonogenesis, whereas Pou3f1-down-regulated targets were highly enriched in pattern specification and in embryonic morphogenesis (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Gene Ontology analysis of RNA-seq data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "35f0c9b3-e38a-4883-902f-6e6b5906d407",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C69",
+      "claim": "Pou3f1-down-regulated targets were highly enriched in pattern specification and in embryonic morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology term enrichment analysis revealed that genes up-regulated by Pou3f1 were primarily involved in neural differentiation processes, such as neuron differentiation, neuron development, and axonogenesis, whereas Pou3f1-down-regulated targets were highly enriched in pattern specification and in embryonic morphogenesis (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Gene Ontology analysis of RNA-seq data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "5ca34893-051b-43d0-a45f-a16f5176fb7e",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C70",
+      "claim": "The genomic region of neural development-related genes, such as Pax6, Sox2, and Zfp521, was bound by Pou3f1 and their expression was up-regulated by Pou3f1 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed ChIP-seq and RNA-seq analyses showed that the genomic region of neural development-related genes, such as Pax6, Sox2, and Zfp521, was bound by Pou3f1 and that their expression was up-regulated by Pou3f1 overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by integrated ChIP-seq and RNA-seq data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "b5531657-b3ae-492b-9399-81c1bababc2f",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C71",
+      "claim": "The downstream targets of important morphogens, such as Gata4 in the BMP pathway as well as Myc and Dkk1 in the Wnt pathway, were also bound by Pou3f1 and their expression was down-regulated by Pou3f1 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the downstream targets of important morphogens, such as Gata4 in the BMP pathway as well as Myc and Dkk1 in the Wnt pathway, were also bound by Pou3f1. However, the expression of these genes was down-regulated by Pou3f1 overexpression (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integrated ChIP-seq and RNA-seq data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "d6c3b947-04e2-450e-8468-ebc88a1ad26a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C72",
+      "claim": "Pou3f1 could bind to the genomic regions of Zic1 and of Zic2, which are related to neural development, and of the BMP and Wnt signaling targets Id1 and Axin2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that Pou3f1 could bind to the genomic regions of Zic1 and of Zic2, which are related to neural development, and of the BMP and Wnt signaling targets Id1 and Axin2 (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-seq data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "a66ad590-d755-4157-92ff-0ac7036b2bde",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C73",
+      "claim": "Pou3f1 might promote ESC neural fate commitment through regulating the expression of multiple genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that Pou3f1 might promote ESC neural fate commitment through regulating the expression of multiple genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined ChIP-seq and RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "6401f284-59f3-42f3-a902-184fff5f9e68",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C74",
+      "claim": "Expression of neural fate-promoting factors Sox2, Zfp521, Zic1, and Zic2 was decreased by Pou3f1 knockdown and increased by Pou3f1 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Q-PCR confirmed that expression of these neural fate-promoting factors was decreased by Pou3f1 knockdown and increased by Pou3f1 overexpression (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Q-PCR data shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "75f2374d-ad5a-4eb0-9358-80f1f5ee8da3",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C75",
+      "claim": "The HOMEO domain deleted mutant (\u0394HOMEO) exclusively failed to promote ESC neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among serial deletion mutants (Figure 5\u2014figure supplement 1A), the HOMEO domain deleted mutant (\u0394HOMEO) exclusively failed to promote ESC neural differentiation (Figure 5\u2014figure supplement 1B and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "73725dad-0e1e-4826-be5c-25a0347758e9",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C76",
+      "claim": "The HOMEO domain is essential for the Pou3f1-mediated promotion of the neural fate.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the HOMEO domain is essential for the Pou3f1-mediated promotion of the neural fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the deletion mutant experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "b8f98e33-506d-4f1e-9777-8a83ed8393d8",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C77",
+      "claim": "Wild-type Pou3f1 enhanced luciferase activity driven by the Sox2N2 enhancer; however, the \u0394HOMEO mutant did not enhance this activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type Pou3f1 enhanced luciferase activity; however, the \u0394HOMEO mutant did not enhance this activity (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "b631f1cc-19d3-48cc-bedb-bab1541a9bbd",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C78",
+      "claim": "Wild-type Pou3f1, but not Pou3f1-\u0394HOMEO, bound to the Sox2N2 enhancer, and neither of them bound to the Sox2N1 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ChIP assays revealed that wild-type Pou3f1, but not Pou3f1-\u0394HOMEO, bound to the Sox2N2 enhancer, and neither of them bound to the Sox2N1 enhancer (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP assay data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "2c1288f9-aed6-4967-9e43-c151e84a1a5c",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C79",
+      "claim": "Pou3f1 regulates Sox2 expression by binding to the N2 enhancer, and this activity is mediated by the HOMEO domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Pou3f1 regulates Sox2 expression by binding to the N2 enhancer, and this activity is mediated by the HOMEO domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined luciferase and ChIP assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "fa40d81d-a442-4999-adf3-474dcc39d103",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C80",
+      "claim": "In early chick embryos, chick Pou3f1 (cPou3f1) was initially expressed at the anterior portion of the primitive streak at HH stage 3+.",
+      "claim_type": "EXPLICIT",
+      "source": "In early chick embryos, chick Pou3f1 (cPou3f1) was initially expressed at the anterior portion of the primitive streak at HH stage 3+ (Figure 5E, a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "a7c2dba1-deea-4329-8def-526e92ed2f0b",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C81",
+      "claim": "The territory of cPou3f1 expanded to the prospective neural plate, where the earliest expression of cSox2 was detectable at HH stage 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the territory of cPou3f1 expanded to the prospective neural plate, where the earliest expression of cSox2 was detectable at HH stage 4 (Figure 5E, b, i, j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "5372ce11-940a-477c-b4d7-658b5437c461",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C82",
+      "claim": "From HH stage 5 onward, cPou3f1 expression highly overlapped with cSox2 in the anterior neural plate.",
+      "claim_type": "EXPLICIT",
+      "source": "From HH stage 5 onward, cPou3f1 expression highly overlapped with cSox2 in the anterior neural plate (Figure 5E, c\u2013h, k\u2013p).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "da3ab629-2249-4d16-bb9d-c67b2fdfa289",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C83",
+      "claim": "cPou3f1 was expressed earlier than cSox2 in the prospective neural plate in early chick embryos, suggesting that cPou3f1 activates cSox2 expression in chick embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that cPou3f1 was expressed earlier than cSox2 in the prospective neural plate in early chick embryos, suggesting that cPou3f1 activates cSox2 expression in chick embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the temporal expression pattern data and involves speculation about regulatory relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "13758b3b-3457-4c16-b0e5-9b8ecc336a50",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C84",
+      "claim": "The ectopic expression of Pou3f1 induced the lateral expansion of cSox2 expression (7/9), whereas the control vector did not (0/9).",
+      "claim_type": "EXPLICIT",
+      "source": "The ectopic expression of Pou3f1 induced the lateral expansion of cSox2 expression (7/9), whereas the control vector did not (0/9) (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo electroporation data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "09300586-9434-443a-aa5d-3eaacd3bb0ad",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C85",
+      "claim": "Pou3f1 promotes neural fate commitment by directly activating the expression of neural development-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that Pou3f1 promotes neural fate commitment by directly activating the expression of neural development-related genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined in vitro and in vivo experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "ae94aa1b-dd5c-4a1b-8aa1-707eedbb9469",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C86",
+      "claim": "During ESC neural differentiation, Pou3f1 knockdown increased the expression of the BMP targets Id1, Id2, Msx1, and Msx2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, during ESC neural differentiation, Pou3f1 knockdown increased the expression of the BMP targets Id1, Id2, Msx1, and Msx2 (Figure 6A), whereas Pou3f1 overexpression generated the opposite effect (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Q-PCR data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "526a20a1-c91c-4131-a794-3b71856fa837",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C87",
+      "claim": "Pou3f1 overexpression generated the opposite effect on BMP target gene expression compared to knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, during ESC neural differentiation, Pou3f1 knockdown increased the expression of the BMP targets Id1, Id2, Msx1, and Msx2 (Figure 6A), whereas Pou3f1 overexpression generated the opposite effect (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Q-PCR data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "ae4a04a9-5ae6-474e-8aad-7edbdc593e93",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C88",
+      "claim": "The ectopic expression of Pou3f1 reduced the expression of the BMP target gene cId1 (6/10) at the edge of the chick anterior peripheral ectoderm, whereas the control vector did not (0/11).",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo electroporation studies also revealed that the ectopic expression of Pou3f1 reduced the expression of the BMP target gene cId1 (6/10) at the edge of the chick anterior peripheral ectoderm, whereas the control vector did not (0/11) (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo electroporation data shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "046360f0-acff-4930-9185-0824713a9848",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C89",
+      "claim": "Pou3f1 knockdown increased BRE activity in ESCs with or without BMP4 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pou3f1 knockdown increased BRE activity in ESCs with or without BMP4 stimulation (Figure 6C), whereas Pou3f1 overexpression partially inhibited BRE-luc activity (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "fe3299a9-966b-4796-983b-c4c605f37a67",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C90",
+      "claim": "Pou3f1 overexpression partially inhibited BRE-luc activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Pou3f1 knockdown increased BRE activity in ESCs with or without BMP4 stimulation (Figure 6C), whereas Pou3f1 overexpression partially inhibited BRE-luc activity (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase assay data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "c0095855-ae67-423a-8c33-3dbba731259a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C91",
+      "claim": "Only the HOMEO domain was necessary to maintain the inhibitory effect of Pou3f1 on BMP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, among the several known functional domains, only the HOMEO domain was necessary to maintain the inhibitory effect of Pou3f1 on BMP signaling (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by deletion mutant luciferase assay data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "fe26199a-3ec5-48cb-83e7-e5faaba09b40",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C92",
+      "claim": "The binding of wild-type Pou3f1, rather than Pou3f1-\u0394HOMEO, was specifically enriched at the BRE region of the Id1 gene promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP assays using a Pou3f1 antibody were performed, and we found that the binding of wild-type Pou3f1, rather than Pou3f1-\u0394HOMEO, was specifically enriched at the BRE region of the Id1 gene promoter (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP assay data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "5625728c-e50a-4ddf-8d78-15a9ec90b698",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C93",
+      "claim": "pSmad1 bound to the BRE locus of the Id1 promoter, but not to the 3\u2032 UTR region, in the presence of BMP4.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed ChIP assays using a pSmad1 antibody and found that pSmad1 bound to the BRE locus of the Id1 promoter, but not to the 3\u2032 UTR region, in the presence of BMP4 (Figure 6F, open column).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP assay data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "acd35c80-17d4-4d7f-affb-a3dd3ed02b53",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C94",
+      "claim": "Pou3f1 interfered with the binding of pSmad1 to the BRE locus of the Id1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Pou3f1 interfered with the binding of pSmad1 to the BRE locus of the Id1 promoter (Figure 6F, filled column).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP assay data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "5faff6a5-ab20-4560-88b1-f26df9972754",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C95",
+      "claim": "Pou3f1 repressed BMP-induced luciferase activity in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Pou3f1 repressed BMP-induced luciferase activity in a dose-dependent manner (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response luciferase assay data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "356b1fec-a07a-49bc-8728-4285226395dc",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C96",
+      "claim": "Pou3f1 did not affect the stimulation, degradation, dephosphorylation, or intracellular translocation of pSmad1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that Pou3f1 did not affect the stimulation, degradation, dephosphorylation, or intracellular translocation of pSmad1 (data not shown), excluding the fact that Pou3f1 regulates the BMP pathway through a signaling cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations (data not shown) and involves inference about mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "d8618e6f-b242-4051-9cf5-3fae3eb96514",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C97",
+      "claim": "Pou3f1 may inhibit BMP signaling by interfering with pSmad1 binding to the regulatory elements and then repressing the transcription of target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that Pou3f1 may inhibit BMP signaling by interfering with pSmad1 binding to the regulatory elements and then repressing the transcription of target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental data on Pou3f1 and pSmad1 binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "42db295c-c1cd-4e98-b3ea-40f507744259",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C98",
+      "claim": "Wnt3a, Axin2, Dkk1, and Myc in Wnt signaling were regulated by Pou3f1 during ESC neural fate commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the BMP pathway, Wnt3a, Axin2, Dkk1, and Myc in Wnt signaling were regulated by Pou3f1 during ESC neural fate commitment (Figure 6H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Q-PCR data shown in Figure 6H and 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "6ff8a88e-3838-4e48-bb01-bfcefd19a0ae",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C99",
+      "claim": "Pou3f1 directly binds to the promoter regions of Wnt signaling targets.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq data revealed that Pou3f1 directly binds to the promoter regions of these Wnt signaling targets (Figure 4E, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-seq data shown in Figure 4E and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "12eb9312-ade9-4883-971c-f4490db92cdc",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C100",
+      "claim": "TOPflash-luc activity was enhanced by Pou3f1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In luciferase-based TOPflash (TCF optimal promoter) Wnt reporter assays (Korinek et al., 1997), TOPflash-luc activity was enhanced by Pou3f1 knockdown (Figure 6J), and Wnt3a-induced luciferase activity was partially reduced with Pou3f1 overexpression (Figure 6K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase assay data shown in Figure 6J.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "a0c2f9bb-74ea-45f9-ba43-6b7c260ecd5c",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C101",
+      "claim": "Wnt3a-induced luciferase activity was partially reduced with Pou3f1 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "In luciferase-based TOPflash (TCF optimal promoter) Wnt reporter assays (Korinek et al., 1997), TOPflash-luc activity was enhanced by Pou3f1 knockdown (Figure 6J), and Wnt3a-induced luciferase activity was partially reduced with Pou3f1 overexpression (Figure 6K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase assay data shown in Figure 6K.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "49cf5ec0-b3b2-489e-959f-a6fc1b883dd2",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C102",
+      "claim": "The HOMEO domain is crucial for sustaining the inhibitory effect of Pou3f1 on TOPflash-luc activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the HOMEO domain is crucial for sustaining the inhibitory effect of Pou3f1 on TOPflash-luc activity (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by deletion mutant luciferase assay data shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "55750dbc-9b0a-4c73-a745-c593301cc4e4",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C103",
+      "claim": "Pou3f1 inhibited Wnt agonist CHIR99021-induced TOPflash-luc activity in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Pou3f1 also inhibited Wnt agonist CHIR99021-induced TOPflash-luc activity in a dose-dependent manner (Figure 6L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response luciferase assay data shown in Figure 6L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "baa19594-e780-4682-9301-a10bf03213ba",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C104",
+      "claim": "Pou3f1 interferes with the BMP and Wnt signaling pathways by directly inhibiting the transcription of their target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that Pou3f1 interferes with the BMP and Wnt signaling pathways by directly inhibiting the transcription of their target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental data on BMP and Wnt signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "a0d39126-d301-4c82-836d-ca10cbd027b3",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C105",
+      "claim": "BMP4 inhibited the expression of the neural markers Sox1, Pax6, Nestin, and Tuj1 at both the mRNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous observation (Zhang et al., 2010a), BMP4 inhibited the expression of the neural markers Sox1, Pax6, Nestin, and Tuj1 at both the mRNA and protein levels (Ctrl BMP4+ compared with Ctrl BMP4\u2212 in Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A-C and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "6a8a00bc-09f8-463b-b130-b7cc9f5e296a",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C106",
+      "claim": "Pou3f1 overexpression fully restored the expression of neural markers in ESC neural differentiation in the presence of BMP4.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Pou3f1 overexpression fully restored the expression of these markers in ESC neural differentiation (Pou3f1 BMP4+ compared with Ctrl BMP4+ in Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "e13dd46c-eaee-41b4-820b-14286b0e0426",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C107",
+      "claim": "Pou3f1 overexpression also fully rescued the neural inhibitory effects of Wnt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Pou3f1 overexpression also fully rescued the neural inhibitory effects of Wnt3a (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "25831523-6223-44ce-bf0b-288273bcdad3",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C108",
+      "claim": "cSox2 expression was completely repressed by xBMP4 (16/19), whereas the forced expression of Pou3f1 partially recovered cSox2 expression (10/19).",
+      "claim_type": "EXPLICIT",
+      "source": "cSox2 expression was completely repressed by xBMP4 (16/19), whereas the forced expression of Pou3f1 partially recovered cSox2 expression (10/19) (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo electroporation data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "ebe8c15a-99be-4d96-b854-740d81285e93",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C109",
+      "claim": "Pou3f1 alleviates the inhibitory activities of both BMP and Wnt signals during neural fate commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that Pou3f1 alleviates the inhibitory activities of both BMP and Wnt signals during neural fate commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined rescue experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "3ed9d0d4-d9cf-4b3e-8b25-2b766241423e",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C110",
+      "claim": "Pou3f1 is most likely an intrinsic neural initiation factor that participates in the transition of pluripotent stem cells to NPCs by directly activating a group of key neural fate-promoting genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings demonstrate that Pou3f1 is most likely an intrinsic neural initiation factor that participates in the transition of pluripotent stem cells to NPCs by directly activating a group of key neural fate-promoting genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental data showing Pou3f1's role in activating neural genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "54c91723-c33c-407a-a308-6c6458b40934",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C111",
+      "claim": "Pou3f1 is crucial for ESC neural fate commitment and promotes the transition from epiblast to NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro and in vivo data indicate that Pou3f1 is crucial for ESC neural fate commitment and promotes the transition from EpiSCs to neural progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple lines of experimental evidence from in vitro and in vivo studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "7f89922b-057f-4e4d-82ab-43ca9befd492",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C112",
+      "claim": "Pou3f1 functions as an intrinsic regulator of both intracellular transcription factors and extracellular inhibitory signals during neural fate commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Pou3f1 functions as an intrinsic regulator of both intracellular transcription factors and extracellular inhibitory signals during neural fate commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing Pou3f1's dual role in activating neural genes and inhibiting BMP/Wnt signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "42db0311-5b5a-4a5f-bc3a-a26b3117da79",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C114",
+      "claim": "Pou3f1 functions upstream of Zfp521 during ESC neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our observations confirm the hypothesis proposed in a recent study (Kamiya et al., 2011) that Pou3f1 functions upstream of Zfp521 during ESC neural differentiation (Figures 4 and 5, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and citation to previous work by Kamiya et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "8e339c97-02f7-4a07-8bd5-408fdf4f1e60",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "claim_id": "C115",
+      "claim": "Most POU III proteins exhibit extensive functional equivalence.",
+      "claim_type": "EXPLICIT",
+      "source": "Because most POU III proteins exhibit extensive functional equivalence (Andersen and Rosenfeld, 2001; Jaegle et al., 2003; Friedrich et al., 2005), we wanted to determine whether other POU III proteins, such as Brn1 and Brn2, are similarly involved in ESC neural fate commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Pou3f1 is essential for neural differentiation of mouse ESCs, specifically during the transition from EpiSCs to NPCs. Knockdown of Pou3f1 reduces neural marker expression while overexpression enhances it. EpiSC colony formation assays show Pou3f1 does not affect ESC-to-EpiSC transition but is critical for EpiSC-to-NPC transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C23-C28, C40-C53 provide converging evidence from knockdown, overexpression, and EpiSC colony formation assays demonstrating Pou3f1's stage-specific role. The temporal expression pattern (C23-C24), functional manipulation data (C25-C26, C33-C37, C50-C51), and stage-specific assays (C42-C48) collectively support this conclusion with appropriate controls and multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vivo chimeric analysis demonstrates that Pou3f1 promotes neural fate commitment. Pou3f1-knockdown ESCs fail to contribute to neuroectoderm but incorporate into non-neural lineages, while Pou3f1-overexpressing ESCs preferentially contribute to neuroectoderm. Pou3f1 expression in mouse embryos is restricted to anterior epiblast and prospective neuroectoderm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C59-C62 provide strong in vivo evidence from blastocyst injection studies showing differential lineage contribution based on Pou3f1 levels. The expression pattern data (C54-C57) supports the functional role. However, C58 is speculative about causality. The chimeric analysis provides compelling functional validation of the in vitro findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genome-wide ChIP-seq and RNA-seq analyses reveal that Pou3f1 directly binds to and activates neural lineage genes including Pax6, Sox2, Zfp521, Zic1, and Zic2. Pou3f1 binding sites are predominantly located in distal enhancer regions. Gene ontology analysis shows upregulated genes are enriched in neural differentiation processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C63-C74, C85, C114 are supported by integrated ChIP-seq and RNA-seq data showing direct binding and transcriptional activation. The genome-wide approach with appropriate controls (C63-C67), functional validation by Q-PCR (C74), and mechanistic studies (C75-C79) provide strong evidence. The data integration (430 genes both bound and regulated, C67) demonstrates functional consequences of binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "91eef692-97ee-488a-bb29-d3233d9c430b",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The HOMEO domain of Pou3f1 is essential for promoting neural fate. Pou3f1 regulates Sox2 expression by binding to the N2 enhancer (anterior neural plate) but not the N1 enhancer. In chick embryos, Pou3f1 is expressed earlier than Sox2 in the prospective neural plate and ectopic Pou3f1 induces lateral expansion of Sox2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C84 provide mechanistic insight through domain deletion analysis (C75-C76), luciferase assays (C77), ChIP validation (C78), and in vivo chick embryo studies (C80-C84). The HOMEO domain requirement is demonstrated by loss-of-function (C75, C77-C78). The chick embryo data (C80-C84) provides cross-species validation, though C83 involves some speculation about the regulatory relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "07322c5c-3287-40f8-945c-ba2b043eae92",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pou3f1 represses BMP and Wnt signaling pathways by directly binding to target gene promoters and interfering with transcriptional activity. Pou3f1 binds to BRE regions and interferes with pSmad1 binding, and inhibits Wnt-responsive TOPflash activity. The HOMEO domain is required for this inhibitory effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C71, C86-C104 demonstrate Pou3f1's role in repressing BMP/Wnt signaling through multiple lines of evidence: target gene expression changes (C86-C88, C98), reporter assays (C89-C90, C100-C101, C103), ChIP showing direct binding (C92-C94, C99), and domain requirement (C91, C102). The mechanism of pSmad1 interference (C94) is supported by ChIP data. However, C96 relies on unpublished data and C97 involves mechanistic inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "d5e14144-6133-4f41-93ca-eb1f33308118",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pou3f1 promotes neural fate commitment through a dual mechanism: activating internal neural induction programs and antagonizing extrinsic BMP/Wnt inhibitory signals. Pou3f1 overexpression rescues neural differentiation in the presence of BMP4 or Wnt3a, both in vitro and in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C105-C112 integrate the activation and repression functions into a unified model. The rescue experiments (C106-C108) provide strong functional evidence that Pou3f1 can overcome BMP/Wnt inhibition. Both in vitro ESC studies (C105-C107) and in vivo chick embryo experiments (C108) support this dual mechanism. This represents the main conceptual advance of the paper, synthesizing the separate lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "66c2411e-388e-47df-a60c-6bf750450799",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Brn2, a POU III family member, compensates for Pou3f1 depletion. Brn2 expression is enhanced in Pou3f1-knockdown cells, and simultaneous knockdown of both Pou3f1 and Brn2 causes more dramatic reduction in neural marker expression than Pou3f1 knockdown alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 demonstrate functional redundancy within the POU III family. The temporal expression data (C29), compensatory upregulation (C30), and enhanced phenotype with double knockdown (C31) provide evidence for compensation. This explains the relatively mild phenotype of Pou3f1 knockdown alone and strengthens the overall conclusions about POU III function in neural differentiation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "b874e7c6-22f9-450f-ab97-05f954aa8dd5",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Constitutive or inducible Pou3f1 overexpression accelerates neural differentiation in both serum-free and serum-containing conditions. Neurons appear 2 days earlier in Pou3f1-overexpressing ESCs. Pou3f1 promotes neural differentiation cell-autonomously as shown by co-culture experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 demonstrate sufficiency of Pou3f1 for neural differentiation using multiple overexpression systems (constitutive and inducible) and culture conditions. The rescue experiment (C37) and co-culture assay (C38-C39) provide important controls. The cell-autonomous mechanism (C38-C39) is well-supported by the co-culture data showing no effect on wild-type cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    },
+    {
+      "id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9",
+      "content_id": "e29ba8f2-65b0-4ba8-abb7-3833dd8b7b9a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background information on mouse embryonic development, neural fate specification, BMP/Wnt signaling, known neural factors (Sox2, Zic2, Otx2, Zfp521), and Pou3f1 expression patterns and functions from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C22 and C115 represent established knowledge from cited literature and provide context for the current study. These are appropriately cited and accurately represent prior work. C22 involves some speculation from a cited study. These background claims establish the rationale for investigating Pou3f1's role in neural differentiation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:52:54.227094Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d5c8ccd3-3986-4a73-b690-e6df58ce371c",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "341b3174-2117-4440-9e08-8b19357fb268",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "d19f4ba8-3ab1-4290-87c9-ad3e8e693697",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "8394699d-0737-4ebb-83a3-bc58ed7a166c",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "7a69d148-e941-4d89-830a-e2509ad7d83c",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "2fb4573e-0fca-4a74-b0a0-bf87976b0f19",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "81153ed7-ac0b-4e2e-8b9b-22be51fd415a",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "161c5eae-7334-43ee-95a9-3bdfe0f8c42a",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "2fe103ae-70d6-4ba8-bc00-83a0b6098166",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "ab17339c-4322-4124-b359-d44ea814000c",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "bc39a345-55bd-4e70-aaf4-378f3fbdd206",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "c23946fb-2f29-473f-a0fe-51672bf9765f",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "3a369cd5-8e36-43fe-8b11-7e60a6135282",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "041b7363-3404-4f18-ae6c-a4c4227fd7d8",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "644c62fc-7686-4f95-a7fe-6cd412d18d94",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "f5ada589-1c66-4187-9e63-713f35b33cba",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "35684b88-3322-4723-b26b-7c37500401a7",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "b1269eaa-6313-48ff-8b4c-2839bf293b24",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "514c4e55-81a9-4b6c-b6f4-697b2cbc173a",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "0c54364f-87ce-4cbd-8e21-75cb26b6e61d",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "2b45c27e-846b-4916-ac2b-e52dfdb792f5",
+      "result_id": "cdeb93f2-be4b-402a-9883-b229bfd9b5bb"
+    },
+    {
+      "claim_id": "29783beb-a321-484f-8738-fe1ec5db8067",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "e05da2ef-7068-48a6-b72e-da18d3ed60e9",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "39c71d41-e73a-47d9-8a82-e2a0b970c909",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "7e06c72a-e036-4aad-88c7-45aefb7b864e",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "7b0dd936-950e-48bf-ac9b-aee15e5661d3",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "046581ca-b302-47be-a800-6578d0f2effa",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "d28a06d9-79f4-401a-80f5-e0137c21f16f",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "16187a8b-81a4-4dde-ae56-d1e7226205da",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "180f79fe-17d2-4894-9cac-a46691231a37",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "91098028-0941-4ac5-a25f-39d4ce4e5dea",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "53f73b5d-c49c-4517-a97a-cdcb3365490d",
+      "result_id": "e8b3ca6d-4297-475f-b0f1-054aec145bfd"
+    },
+    {
+      "claim_id": "f80672bd-a14e-40be-8e38-4e8cae5665bc",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "048693f0-9c39-4f1d-891a-e079d9160505",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "3a79f29d-0306-47ec-90ad-5755a39ec7cb",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "45caa69d-4bd1-4e76-8dff-5db19b55ba9e",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "f3485dea-ec9d-4842-8249-4ee03089bf97",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "8252d0dc-6b2f-404b-9715-a99177b5b1d7",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "4e570af4-ad5a-4ad3-89c3-4ab0cb631739",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "35f0c9b3-e38a-4883-902f-6e6b5906d407",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "5ca34893-051b-43d0-a45f-a16f5176fb7e",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "b5531657-b3ae-492b-9399-81c1bababc2f",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "d6c3b947-04e2-450e-8468-ebc88a1ad26a",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "a66ad590-d755-4157-92ff-0ac7036b2bde",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "6401f284-59f3-42f3-a902-184fff5f9e68",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "09300586-9434-443a-aa5d-3eaacd3bb0ad",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "42db0311-5b5a-4a5f-bc3a-a26b3117da79",
+      "result_id": "b424ad96-ffa8-4386-b2a0-f20baabc3ba0"
+    },
+    {
+      "claim_id": "75f2374d-ad5a-4eb0-9358-80f1f5ee8da3",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "73725dad-0e1e-4826-be5c-25a0347758e9",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "b8f98e33-506d-4f1e-9777-8a83ed8393d8",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "b631f1cc-19d3-48cc-bedb-bab1541a9bbd",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "2c1288f9-aed6-4967-9e43-c151e84a1a5c",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "fa40d81d-a442-4999-adf3-474dcc39d103",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "a7c2dba1-deea-4329-8def-526e92ed2f0b",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "5372ce11-940a-477c-b4d7-658b5437c461",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "da3ab629-2249-4d16-bb9d-c67b2fdfa289",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "13758b3b-3457-4c16-b0e5-9b8ecc336a50",
+      "result_id": "91eef692-97ee-488a-bb29-d3233d9c430b"
+    },
+    {
+      "claim_id": "19466a68-181a-4ca0-8072-b22019e8ddb1",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "b5531657-b3ae-492b-9399-81c1bababc2f",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "ae94aa1b-dd5c-4a1b-8aa1-707eedbb9469",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "526a20a1-c91c-4131-a794-3b71856fa837",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "ae4a04a9-5ae6-474e-8aad-7edbdc593e93",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "046360f0-acff-4930-9185-0824713a9848",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "fe3299a9-966b-4796-983b-c4c605f37a67",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "c0095855-ae67-423a-8c33-3dbba731259a",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "fe26199a-3ec5-48cb-83e7-e5faaba09b40",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "5625728c-e50a-4ddf-8d78-15a9ec90b698",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "acd35c80-17d4-4d7f-affb-a3dd3ed02b53",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "5faff6a5-ab20-4560-88b1-f26df9972754",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "356b1fec-a07a-49bc-8728-4285226395dc",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "d8618e6f-b242-4051-9cf5-3fae3eb96514",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "42db295c-c1cd-4e98-b3ea-40f507744259",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "6ff8a88e-3838-4e48-bb01-bfcefd19a0ae",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "12eb9312-ade9-4883-971c-f4490db92cdc",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "a0c2f9bb-74ea-45f9-ba43-6b7c260ecd5c",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "49cf5ec0-b3b2-489e-959f-a6fc1b883dd2",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "55750dbc-9b0a-4c73-a745-c593301cc4e4",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "baa19594-e780-4682-9301-a10bf03213ba",
+      "result_id": "07322c5c-3287-40f8-945c-ba2b043eae92"
+    },
+    {
+      "claim_id": "faae2d73-6f7a-43ef-8745-e3e1ddec0645",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "a0d39126-d301-4c82-836d-ca10cbd027b3",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "6a8a00bc-09f8-463b-b130-b7cc9f5e296a",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "e13dd46c-eaee-41b4-820b-14286b0e0426",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "25831523-6223-44ce-bf0b-288273bcdad3",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "ebe8c15a-99be-4d96-b854-740d81285e93",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "3ed9d0d4-d9cf-4b3e-8b25-2b766241423e",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "54c91723-c33c-407a-a308-6c6458b40934",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "7f89922b-057f-4e4d-82ab-43ca9befd492",
+      "result_id": "d5e14144-6133-4f41-93ca-eb1f33308118"
+    },
+    {
+      "claim_id": "4c3e6056-70a0-4852-a94f-40624239207a",
+      "result_id": "66c2411e-388e-47df-a60c-6bf750450799"
+    },
+    {
+      "claim_id": "076c2368-51ac-4d66-8305-ffa1656b353e",
+      "result_id": "66c2411e-388e-47df-a60c-6bf750450799"
+    },
+    {
+      "claim_id": "6c64b1e5-c271-4cfd-b0c4-ae30cf484f6a",
+      "result_id": "66c2411e-388e-47df-a60c-6bf750450799"
+    },
+    {
+      "claim_id": "42a2ab60-5e03-49e7-998e-ad4352cf6409",
+      "result_id": "66c2411e-388e-47df-a60c-6bf750450799"
+    },
+    {
+      "claim_id": "6e838f3c-9afd-457a-92b3-6e8af6e22073",
+      "result_id": "b874e7c6-22f9-450f-ab97-05f954aa8dd5"
+    },
+    {
+      "claim_id": "6606f4b3-16ec-4cdb-957c-bcfb9bf6ba0a",
+      "result_id": "b874e7c6-22f9-450f-ab97-05f954aa8dd5"
+    },
+    {
+      "claim_id": "909f6b41-1016-4d75-aceb-4f11afa29c72",
+      "result_id": "b874e7c6-22f9-450f-ab97-05f954aa8dd5"
+    },
+    {
+      "claim_id": "f59e100c-2f66-47e0-ab64-fae4e3622ce5",
+      "result_id": "b874e7c6-22f9-450f-ab97-05f954aa8dd5"
+    },
+    {
+      "claim_id": "91185ec9-603d-43af-af62-ae803533fe24",
+      "result_id": "b874e7c6-22f9-450f-ab97-05f954aa8dd5"
+    },
+    {
+      "claim_id": "41bf412d-0d3a-4a2c-8a44-6e287705c2b7",
+      "result_id": "b874e7c6-22f9-450f-ab97-05f954aa8dd5"
+    },
+    {
+      "claim_id": "a5613227-6c25-4e73-bec3-e1e8ce3be058",
+      "result_id": "b874e7c6-22f9-450f-ab97-05f954aa8dd5"
+    },
+    {
+      "claim_id": "49cba2fd-24b0-4b9f-9e95-d3be24de1d6a",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "477dc741-b7d5-4c2f-9cb9-fe6854902b59",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "2f8517a9-0b42-44ac-897b-c3d1d4365a48",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "57480999-1c66-484f-8c9b-6e553e236194",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "acb0333f-1805-406d-b3e2-8ef830b27ac5",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "810f99ca-8ac4-4085-8c65-162eb6361982",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "06ccb4c4-4546-4fe3-b5af-050245e3a6f2",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "00b9478d-7498-4ac4-8dd6-ff28abde5530",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "512c89c0-ce14-455e-a4aa-a05cef4b8f04",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "1d12eb78-a3a8-4069-86ca-365621210375",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "a5b35061-1a66-4c4f-9ada-bf6570d912aa",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "5d4bb433-b669-48fd-8434-328215333b82",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "ead14dd4-de41-4dfc-8cd6-a1cbfede9046",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "fae83c62-452f-4ea1-92e3-07abd8e757b4",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "a0764269-d15a-41de-98b8-35a59315172c",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "13e17f41-54fc-4ddc-9694-e75562ca1ad8",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    },
+    {
+      "claim_id": "8e339c97-02f7-4a07-8bd5-408fdf4f1e60",
+      "result_id": "039cc6ea-666f-4446-ab6e-ba7456cdb7b9"
+    }
+  ],
+  "comparisons": []
+}

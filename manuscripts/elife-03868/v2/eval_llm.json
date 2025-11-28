@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C46",
+      "C51"
+    ],
+    "result": "DPM neurons are sleep-promoting neurons. Acute activation of DPM neurons using dTrpA1 at 31\u00b0C produces immediate and dramatic increases in sleep during both day and night. This sleep-promoting effect is cell-specific, does not impair locomotion during waking periods, and represents a true sleep state as flies remain arousable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide converging behavioral evidence from multiple GAL4 driver lines (NP2721, VT64246) showing robust sleep increases upon DPM activation. Video evidence (C34) confirms arousability and normal locomotion, distinguishing sleep from paralysis. Statistical analyses (C33) rule out locomotor impairment. The consistency across multiple experimental approaches strongly supports this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C52"
+    ],
+    "result": "DPM neurons have a modest role in maintaining baseline nighttime sleep. Inhibition of DPM activity using Shits or Kir2.1 produces small but significant decreases in nighttime sleep that are cell-specific and independent of the inhibition method. The small magnitude suggests DPMs are not the major driver of baseline sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate consistent nighttime sleep loss across multiple inhibition methods (Shits, Kir2.1) and driver lines, with appropriate statistical controls. The phenotype is reproducible across temperature shift protocols (C41). The interpretation that DPMs are not major drivers of baseline sleep (C45) is appropriately cautious given the modest effect sizes. This represents a well-supported but secondary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C87",
+      "C88"
+    ],
+    "result": "Sleep gains from DPM activation result from neurotransmitter release from DPMs themselves, not from gap junction-coupled APL neurons. Coexpression of Shits with dTrpA1 in DPMs completely blocks activation-induced sleep gains, while coexpression of a neutral transgene does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Shits coexpression experiment (C48) provides strong evidence that DPM neurotransmitter release is necessary for sleep promotion. The control with neutral transgene (C49) rules out GAL4 dilution artifacts. This is critical for establishing that the sleep phenotype is cell-autonomous to DPMs rather than mediated through APLs, supporting the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C108"
+    ],
+    "result": "MB \u03b1'/\u03b2' neurons are wake-promoting. Acute activation of \u03b1'/\u03b2' neurons with dTrpA1 produces strong decreases in nighttime sleep that persist throughout 48 hours of activation. This pattern exactly matches the phenotype of DPM inhibition, suggesting DPM neurons inhibit \u03b1'/\u03b2' neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Behavioral data (C57-C58) demonstrate robust and sustained sleep loss with \u03b1'/\u03b2' activation. The phenocopy with DPM inhibition (C59) provides strong functional evidence for an inhibitory connection. The opposing roles of DPM and \u03b1'/\u03b2' neurons (C60) are well-supported by converging evidence from gain- and loss-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C114",
+      "C115"
+    ],
+    "result": "DPM neurons contain GABA and serotonin but not acetylcholine or dopamine. Immunohistochemistry shows DPM cell bodies stain positively for GABA, 5HT, and the GABA synthetic enzyme Gad1, but not for ChAT or tyrosine hydroxylase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple immunohistochemistry experiments (C62-C66) with different antibodies consistently demonstrate the presence of GABA/5HT and absence of ACh/dopamine markers. The positive staining for Gad1 (C64) confirms GABA synthetic capacity. Sample sizes are reported (e.g., 11/11, 12/13 cell bodies), and ICA analysis provides objective quantification of colocalization. This is well-supported anatomical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "DPM GABA release sites are localized to MB \u03b1'/\u03b2' lobes and peduncles. Colocalization of DPM presynaptic markers with VGAT is prominent in \u03b1'/\u03b2' lobes and peduncles, with little colocalization with ChAT, suggesting potential branch-specific neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunohistochemistry with presynaptic markers (C68, C70) demonstrates anatomical specificity of GABA release sites. The localization to \u03b1'/\u03b2' lobes is consistent with the functional data showing these neurons as DPM targets. The speculation about branch-specific transmission (C69) is appropriately tentative and supported by citations to prior work on this phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78",
+      "C95"
+    ],
+    "result": "DPM neurons do not excite MB neurons. Functional imaging with P2X2-mediated DPM activation shows no increases in MB calcium (GCaMP3.0) or cAMP (EPAC), despite effective DPM activation confirmed by calcium, voltage, and vesicle fusion sensors in DPM projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple fluorescent sensors (GCaMP3.0, EPAC, Arclight) consistently show no excitatory responses in MBs (C74, C95). Positive controls confirm P2X2 effectively activates DPMs (C71-C72) and that MBs can respond to excitatory inputs (C75-C77). The use of multiple driver lines and appropriate controls strengthens this negative result, which is critical for establishing the inhibitory nature of DPM\u2192MB transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "MB neurons are capable of responding to excitatory synaptic inputs. MBs show robust increases in calcium and cAMP in response to carbachol application and PAM neuron activation via P2X2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Control experiments with carbachol (C76) and PAM neuron activation (C77) demonstrate MB responsiveness to excitatory inputs. TTX controls isolate direct effects. These positive controls are essential for validating the negative results with DPM activation and rule out technical issues with the imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C96"
+    ],
+    "result": "DPM neurons inhibit MB neurons via GABAA receptor activation. DPM activation evokes chloride increases in MBs measured by SuperClomeleon that are blocked by picrotoxin. Bath-applied GABA produces similar picrotoxin-sensitive responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SuperClomeleon imaging (C79-C80) provides direct evidence of GABAergic inhibition. Picrotoxin blockade confirms GABAA receptor involvement. The pharmacological mimicry with exogenous GABA (C80) validates the mechanism. Statistical significance is reported (p<0.001, p=0.001). This is strong functional evidence for inhibitory transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C123"
+    ],
+    "result": "GABA from DPM neurons, not APL neurons, is the primary regulator of sleep. VGAT knockdown in DPMs produces large nighttime sleep loss without hyperactivity, while APL VGAT knockdown has minor effects often accompanied by locomotor changes. Multiple lines of evidence support cell-autonomous DPM function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Behavioral data with VGAT-RNAi in DPMs (C82-C83) show robust sleep loss across multiple driver lines. Comparison with APL manipulations (C84-C85, C116-C119) demonstrates qualitative and quantitative differences. Additional evidence from Shits experiments (C87, C120-C121) supports cell autonomy. The comprehensive comparison across multiple experimental approaches strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Serotonin from DPM neurons promotes sleep. Knockdown of tryptophan hydroxylase (Trh) in DPMs results in significant nighttime sleep loss that is not due to hyperactivity. The effect is driver-dependent, being stronger with c316-GAL4 than NP2721-GAL4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Behavioral data (C92-C93) demonstrate sleep loss with Trh-RNAi across two driver lines, with appropriate statistical controls (C94) ruling out hyperactivity. The driver-dependent magnitude (C93) is consistent with known expression differences. This complements the GABA findings and supports dual neurotransmitter regulation of sleep by DPMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "GABAA (Rdl) and GABAB (GABABR3) receptors in MB \u03b1'/\u03b2' neurons mediate DPM sleep promotion. Knockdown of either receptor in \u03b1'/\u03b2' neurons decreases nighttime sleep through reduced sleep episode duration. MB-GAL80 controls confirm lobe specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Behavioral experiments (C98-C100) show consistent sleep loss with receptor knockdowns, with detailed analysis of sleep architecture. MB-GAL80 rescue experiments (C101) confirm anatomical specificity to \u03b1'/\u03b2' lobes. The phenocopy with DPM VGAT knockdown supports the functional connection. This provides strong evidence for the postsynaptic mechanisms of DPM-mediated sleep promotion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Serotonin and GABA may play different circuit-level roles in sleep and memory consolidation. Unpublished experiments suggest 5HT acts broadly in the MB, not just on \u03b1'/\u03b2' lobes, unlike the more localized GABA effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim relies on unpublished data (C102) that is not presented in the manuscript. While the speculation about differential roles (C103) is reasonable given the anatomical localization data for GABA, the evidence for 5HT localization is not provided. This requires additional published data for proper evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C109",
+      "C11",
+      "C162"
+    ],
+    "result": "DPM neurons represent a shared anatomical locus linking memory consolidation and sleep promotion. The involvement of memory consolidation neurons in sleep regulation suggests these processes are functionally interrelated through shared anatomy, representing the first cellular-level demonstration of sleep-memory coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergence of sleep-promoting function (demonstrated in this study) with established memory consolidation function (C3, C18, C21) in the same neurons provides strong support for anatomical coupling. The claim of being the first cellular-level demonstration (C162) appears justified given the comprehensive characterization. This represents the major conceptual advance of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C145",
+      "C147"
+    ],
+    "result": "DPM neurons are inhibitory rather than excitatory, contradicting prior models of excitatory feedback in memory consolidation. Multiple lines of behavioral and functional evidence support an inhibitory connection between DPMs and \u03b1'/\u03b2' neurons via GABA release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors acknowledge the contradiction with prior models (C124) and provide methodological explanations for why inhibition wasn't detected with some sensors (C125-C127). The behavioral phenocopy experiments (C128-C130) provide strong functional evidence for inhibition. The convergence of anatomical (GABA/VGAT), functional (SuperClomeleon), and behavioral (opposing phenotypes) data strongly supports the inhibitory model (C131, C145).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Speculative models for how DPM inhibition could facilitate memory consolidation. Three possibilities are proposed: sharpening memory transitions by suppressing transferred information, preventing interference during consolidation, or providing precisely timed rebound excitation. All models imply tight temporal ordering of circuit activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative models (C155-C157) proposed to reconcile the inhibitory findings with known requirements for \u03b1'/\u03b2' activity in consolidation. While the speculation is reasonable and appropriately presented as such, no experimental evidence is provided to distinguish between these models. The statement that they are consistent with prior findings (C159) is valid, but these remain untested hypotheses requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Flies show decreased sleep (negative rebound) after cessation of prolonged DPM activation. This is interpreted as evidence for compensatory homeostatic mechanisms counteracting excessive sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral observation (C35) is clearly shown in Figure 1A. The interpretation invoking homeostatic mechanisms (C36) is reasonable and supported by citation to prior work on sleep homeostasis. However, the authors appropriately note this is an artificial situation with prolonged activation unlikely to occur naturally (C37), which contextualizes the finding appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The mushroom bodies are sensory integration centers critical for attention and arousal. Their role in plasticity is related to attention, and suppression of arousal-promoting MB subsets increases sleep, consistent with their attention/arousal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are well-established knowledge supported by multiple citations. The connection to plasticity (C134) and the consistency with current findings (C135) represent reasonable inferences that contextualize the results within broader MB function. This provides important background for interpreting the sleep findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The DPM-APL network may function analogously to mammalian gap junction-coupled inhibitory networks that coordinate memory consolidation. While inhibition wasn't previously considered for this role in Drosophila, it may coordinate timing of MB lobe output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The analogy to mammalian systems (C148-C149) is well-supported by citations. However, the proposed function of the DPM-APL network (C150) and the specific role of inhibition in coordinating MB output (C153) are speculative. While the speculation is informed by the data and mammalian literature, it represents a hypothesis requiring future experimental validation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

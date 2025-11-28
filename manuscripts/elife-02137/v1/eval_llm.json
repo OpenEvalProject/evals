@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C40",
+      "C41",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C92"
+    ],
+    "result": "Human centromeres contain approximately 400 molecules of CENP-A, as determined by three independent quantification methods: 3D integrated fluorescence, stochastic fluctuation analysis, and fluorescent standard comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C40-C41, C51-C58, and C92 collectively demonstrate convergent evidence from three independent methods (integrated fluorescence yielding ~400 molecules, stochastic fluctuation providing minimum estimates of \u2265377, \u2265188, \u2265149, and fluorescent standard providing maximum estimate of \u2264538). The close agreement between methods (C57-C58) strongly supports the ~400 molecule estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C35",
+      "C115",
+      "C116"
+    ],
+    "result": "Centromeric CENP-A levels are regulated by a mass-action mechanism where centromeric levels vary in direct proportion to total cellular CENP-A content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C29, C35, C115-C116 demonstrate high correlations (r\u00b2=84% for tagged, r\u00b2=71% for untagged CENP-A) between total cellular and centromeric CENP-A across a sixfold expression range. Both stable cell lines and transient transfection experiments support this proportional relationship, providing strong evidence for mass-action regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Pre-assembled CENP-A is randomly segregated during cell division, with sister centromeres receiving unequal fractions following a random distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C50-C54 demonstrate through stochastic fluctuation analysis that CENP-A segregation follows a random distribution rather than precise 50:50 splitting. The measurements across multiple cell lines (CAG/\u2212, CAY/\u2212, CAY/\u2212+OE) consistently show random redistribution, with statistical validation distinguishing true sister pairs from random pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C94",
+      "C95",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The ~400 molecules of CENP-A (200 nucleosomes in interphase, 100 per sister chromatid after replication) is sufficient to prevent stochastic loss of centromere function, with the probability of inheriting critically low levels being negligible (<10^-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C94-C95, C99-C103 combine quantitative measurements with statistical modeling to demonstrate that 200 CENP-A nucleosomes per centromere provides robust inheritance. The critical threshold is estimated at 22-40 nucleosomes based on viability data (C97-C99), and calculations show negligible probability of reaching critical levels at wild-type steady state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C131"
+    ],
+    "result": "A statistical map of CENP-A occupancy at the human neocentromere NeoCEN-4 reveals non-random distribution with individual nucleosome positions occupied in 0.5-80% of cells, with more than one-third of CENP-A nucleosomes located on the top 10% of potential positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C86-C90, and C131 combine ChIP-seq data with quantitative CENP-A measurements to generate an occupancy map. The data clearly show non-random distribution with high-occupancy positions (up to 80%) and clustering of CENP-A on preferred sites, strongly suggesting sequence-dependent positioning at this neocentromere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C105",
+      "C109",
+      "C110"
+    ],
+    "result": "CENP-A represents only ~4% of centromeric nucleosomes but forms a ~50-fold enrichment per unit DNA length compared to the genome, with only ~20% of total cellular CENP-A present at centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C37-C39, C105, C109-C110 are based on calculations combining measured CENP-A copy numbers with estimated centromere size and genome parameters. The calculations are internally consistent and supported by multiple measurements showing ~0.44% of cellular CENP-A per centromere across different cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C120",
+      "C138"
+    ],
+    "result": "Downstream centromere and kinetochore proteins (CENP-C, CENP-T, Hec1) remain constant despite 40-240% variation in CENP-A levels, indicating a >2.5-fold excess of CENP-A for recruitment of fixed-size protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C120, and C138 demonstrate through immunofluorescence quantification that downstream proteins do not correlate with CENP-A levels across a sixfold range. This argues against a modular architecture and supports the interpretation that only a subset of CENP-A is required for recruiting downstream components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Reducing CENP-A levels to ~50% of wild-type leads to a significant increase in micronuclei formation (from 0.53% to 1.95-2.77%), indicating a critical functional threshold is reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 demonstrate through independent cell lines (CA+/\u2212 and CAG/\u2212) that reduced CENP-A causes increased micronuclei. The statistical significance, independent derivation of cell lines, and specificity to reduced (not increased) CENP-A levels provide strong support. However, the molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C121",
+      "C122"
+    ],
+    "result": "While CENP-A distribution among centromeres is generally uniform, specific centromeres (Y-centromere and neocentromere NeoCEN-4) have reduced CENP-A levels (13-25% decrease), suggesting local sequence or chromatin features can modulate CENP-A levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77, C80-C84, C121-C122 demonstrate through measurements on marked chromosomes that most centromeres have similar CENP-A levels, but Y-centromeres and the neocentromere show reproducible reductions. The variance is maintained even at these atypical centromeres, supporting both systematic and local regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C78",
+      "C79"
+    ],
+    "result": "Cellular CENP-A content spans a sixfold range across different RPE cell lines, with primary human fibroblasts having similar levels to RPE cells, indicating the measurements are relevant to normal human tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C78-C79 demonstrate through quantitative immunoblotting and immunofluorescence that CENP-A levels vary substantially between cell lines but primary cells match RPE levels. This supports the relevance of the ~400 molecule measurement for normal human cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "HJURP levels show weak correlation with CENP-A (supporting mass-action), while Mis18BP1 shows no correlation (indicating non-stoichiometric role), and HJURP overexpression does not increase centromeric CENP-A beyond CENP-A overexpression alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 demonstrate through Western blots and transient transfection that HJURP weakly correlates with CENP-A while Mis18BP1 does not, and HJURP overexpression has no additional effect. This supports the mass-action model where CENP-A availability, not chaperone levels, is limiting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The centromeric fraction of CENP-A does not differ significantly between S phase and randomly cycling cells, indicating observed variation reflects inherent cell-to-cell differences rather than cell cycle effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 use FUCCI cell cycle staging to demonstrate that S phase cells have similar centromeric CENP-A fractions as random populations. This validates that the measured variation is not an artifact of cell cycle asynchrony, though the sample size and staging precision could be better documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C106",
+      "C133"
+    ],
+    "result": "Approximately 74% of cellular CENP-A is chromatin-bound, with 0.73% of nuclear CENP-A per centromere, yielding ~492 molecules per centromere (consistent with cellular measurements), and surprisingly ~66% of chromatin-bound CENP-A is located outside centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C106, and C133 use H2B-RFP nuclear marker and fractionation to validate the cellular measurements and quantify extra-centromeric CENP-A. The convergence of nuclear-based (492 molecules) and cellular-based (400 molecules) estimates supports the methodology, and the high proportion of non-centromeric CENP-A is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Fluorescence lifetime of CENP-A-YFP is similar between centromeric and cytoplasmic pools, indicating that clustering does not affect fluorescence efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 use FLIM measurements to validate that fluorescence quantification is not biased by concentration-dependent quenching. This is an important technical control for the integrated fluorescence method, though more detail on the FLIM analysis would strengthen confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Gene-targeted RPE cell lines express exclusively tagged (CAG/\u2212, CAY/\u2212) or untagged (CA+/+, CA+/F, CA+/\u2212) CENP-A as designed, with heterozygous expression or tagging not affecting cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 describe the validation of engineered cell lines through Western blotting showing expected protein sizes and viability observations. This is essential methodological validation, though more quantitative viability data would be valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Current evidence in human cells supports octameric CENP-A nucleosomes with two CENP-A molecules each, corresponding to 200 nucleosomes in interphase (400 molecules) that split into 100 nucleosomes per sister chromatid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 rely on multiple citations to prior structural and biochemical studies supporting octameric composition. The conversion from molecules to nucleosomes is straightforward given this assumption, though the authors acknowledge ongoing debate about nucleosome composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The critical number of CENP-A nucleosomes that must be inherited lies between 22 and 40, based on HeLa cell lethality at ~33% levels (44 nucleosomes) and CAG/\u2212 viability at 40% levels (80 nucleosomes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 combine prior work (C97) with current observations (C98) to estimate critical thresholds. However, the calculation assumes the critical level is half the steady-state (due to inheritance), which may not be accurate if cells can compensate. Different cell types (HeLa vs RPE) may also have different thresholds, adding uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Y-centromeres and neocentromeres are formed on smaller genomic loci (~600 kb and ~300 kb respectively vs several Mb for autosomes), lack CENP-B recruitment, and CENP-B binding sites may be involved in regulating centromeric CENP-A levels through nucleosome phasing and kinetochore function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 are well-supported by citations to prior literature establishing these characteristics. Claim C130 is speculative about CENP-B's role in CENP-A level regulation, appropriately qualified as 'may be involved.' The connection between CENP-B absence and reduced CENP-A is correlative but plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The number of CENP-A molecules at human centromeres (~400) is optimized for robust epigenetic inheritance and function, with sufficient excess to prevent stochastic loss while avoiding unnecessary metabolic cost, and the mass-action mechanism may prevent neocentromere seeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C135-C137 are speculative interpretations of the data marked as 'argue,' 'propose,' and 'may.' While the statistical calculations support robustness against stochastic loss (C100-C102), the claims about optimization and prevention of neocentromere formation are reasonable hypotheses but lack direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Non-centromeric CENP-A exists in multiple species, is enriched at sites of high histone turnover in HeLa cells, and not all non-centromeric CENP-A nucleosomes recruit downstream centromere components, though these components may affect centromeric CENP-A levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 and C111 are supported by citations to recent literature. Claims C112-C113 are reasonable inferences from the observation that downstream proteins don't correlate with CENP-A levels (C63). Claim C114 about overexpression effects is cited. The integration of these observations provides context for understanding CENP-A distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on centromere biology: centromeres are essential for cell division, assemble kinetochores during mitosis, function independently of specific DNA sequences (as shown by neocentromeres), and CENP-A is the primary epigenetic mark that replaces H3, recruits downstream complexes, is stably transmitted, and can initiate centromere formation when targeted ectopically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C19 provide established background knowledge supported by appropriate citations to prior literature. These are well-accepted facts in the field that provide context for the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C36",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C91",
+      "C96",
+      "C104"
+    ],
+    "result": "Background on prior CENP-A quantification and centromere architecture: previous estimates ranged from tens to tens of thousands of molecules, with debate about modular vs. subcomplex architecture, and the single nucleosome hypothesis in yeast has been challenged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C59-C62, C91, C96, and C104 provide relevant background from prior literature with appropriate citations. These establish the context and motivation for the current quantification efforts and architectural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Despite DNA sequences being neither necessary nor sufficient for centromere identity, the amount of CENP-A at centromeres results from a combination of systematic cellular mechanisms (mass-action) with contributions from local sequence or chromatin features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 synthesizes the major findings about mass-action regulation (C2, C27-C29) with observations of centromere-specific variations (C74-C76). This integrated conclusion is well-supported by the combination of systematic and local effects demonstrated throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "There is no exclusive pathway that restricts CENP-A assembly to centromeres, as evidenced by the presence of CENP-A throughout chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 is a logical inference from the finding that most chromatin-bound CENP-A is extra-centromeric (C49, C106, C109). This conclusion is well-supported by the quantitative measurements, though the mechanisms allowing non-centromeric assembly remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  }
+]

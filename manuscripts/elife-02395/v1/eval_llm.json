@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors developed a novel aversive visual learning assay for Drosophila using a transparent ITO shock grid that allows electric shock punishment while maintaining visual stimulation from below. The assay produces aversive visual memory comparable to other paradigms, with conditioned avoidance plateauing at approximately 30V, leading to the use of 60V for subsequent experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 provide strong methodological and empirical support for the development of the aversive visual learning assay. The transparent shock grid solution (C13) is technically sound, and the dose-response data (C14-C15) with appropriate controls justify the experimental parameters chosen (C16-C17). This represents a significant methodological advance enabling direct comparison between appetitive and aversive visual learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Different aminergic neuron populations mediate appetitive versus aversive visual memory formation. Blocking dopamine neurons with DDC-GAL4 selectively impairs appetitive memory during training but not retrieval, while blocking with TH-GAL4 selectively impairs aversive memory during training but not retrieval. Octopamine/tyramine neurons are not required for either memory type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 provide converging evidence from neuronal blockade experiments (C18-C20), control experiments (C21-C22), and temporal requirement analyses (C23-C24) that collectively support the differential roles of dopamine neuron subsets in appetitive versus aversive visual memory. The temporal specificity (training vs. test) strengthens the interpretation that these neurons mediate memory formation rather than retrieval.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Specific dopamine neuron subsets that mediate olfactory memory also mediate visual memory: PAM cluster neurons (R58E02-GAL4) are required for appetitive visual memory, while PPL1 cluster neurons (MB504B-GAL4) are required for aversive visual memory. These neurons do not affect reflexive responses to sugar or shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 provide strong evidence through genetic dissection using specific GAL4 drivers, with appropriate anatomical characterization (C27, C29) and functional validation (C31-C32). The control experiments (C33) rule out non-specific effects on sensory processing. The conclusion (C34) that visual and olfactory memories share reinforcement substrates is well-supported by the convergence of these findings with prior olfactory learning studies (C26, C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Thermo-activation of PAM cluster neurons (R58E02-GAL4) is sufficient to induce appetitive visual memory, while thermo-activation of PPL1 cluster neurons (MB504B-GAL4) is sufficient to induce aversive visual memory, demonstrating that these dopamine neurons directly supply reinforcement signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide sufficiency evidence complementing the necessity experiments, using dTRPA1-mediated thermo-activation to substitute for natural reinforcement. The conclusion (C37) that these dopamine neurons supply reinforcement information for both visual and olfactory memories is well-supported by the combination of necessity (blockade) and sufficiency (activation) experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The dopamine receptor DopR is required for both appetitive and aversive visual memories, and selective expression of DopR in Kenyon cells rescues the memory defect in dumb2 mutants, indicating that dopamine signals are received by mushroom body neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 provide strong genetic evidence through mutant analysis and cell-type-specific rescue experiments. The DopR requirement (C39) and MB-specific rescue (C40) together demonstrate that dopamine signals act on Kenyon cells. The conclusion (C41) integrating dopamine neuron and receptor findings is well-supported, though the rescue is described as 'significant' rather than complete, suggesting additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Kenyon cells in the mushroom body are required for both appetitive and aversive visual memories. This requirement is independent of conditioning design (classical vs. operant) and context changes between training and test, as demonstrated by blockade experiments with 201y-GAL4 and MB247-GAL4 and rescue with MB247-GAL80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide strong evidence through neuronal blockade and genetic rescue experiments that control for off-target effects. Claim C45 is supported by additional experiments with modified protocols (referenced in Figure 5B and Figure 5\u2014figure supplement 2), demonstrating robustness across different conditioning paradigms. This establishes a clear role for MBs in visual memory, resolving prior contradictions in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Visual and olfactory memories recruit partially overlapping Kenyon cell subsets. \u03b1'/\u03b2' neurons (c305a-GAL4) are selectively required for olfactory but not visual memory, while \u03b1/\u03b2 and \u03b3 neurons (201y-GAL4) are required for both modalities. \u03b1/\u03b2 neurons alone (17D-GAL4) are not required for either memory type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide clear differential requirements across memory modalities using multiple GAL4 drivers. The conclusion (C49) of partial overlap is well-supported by the data. The interpretation (C50) linking \u03b1'/\u03b2' specificity to preferential olfactory input representation is reasonable but relies on prior anatomical work rather than direct demonstration in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Within visual memory, \u03b3 lobe neurons (MB009B-GAL4) are specifically required for both appetitive and aversive memories, while \u03b1'/\u03b2' neurons (MB186B-GAL4) and \u03b1/\u03b2 neurons (MB008B-GAL4) are not required. The similar requirements for appetitive and aversive memories suggest differential modulation of the same KC subsets by reward versus punishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide systematic dissection of MB lobe contributions using Split GAL4 lines with high specificity. The observation (C55) of similar requirements across valences is well-documented. The interpretation (C56) of differential modulation is reasonable but remains somewhat speculative, as direct evidence for modulation mechanisms is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Different Kenyon cell populations mediate acquisition versus retrieval of visual memories. Broad KC populations (MB010B-GAL4, MB247-GAL4) are required during both training and test, while smaller subsets (201y-GAL4, MB009B-GAL4) are selectively required for retrieval but not acquisition of aversive memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide systematic temporal requirement analysis using temperature-shift experiments with shibirets1. The differential temporal requirements across different GAL4 drivers provide strong evidence for distinct roles of KC subsets in memory phases. The conclusion (C62) is well-supported by the convergent findings across multiple driver lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C64",
+      "C77",
+      "C78"
+    ],
+    "result": "Visual and olfactory memories are processed in a common brain center (the mushroom body) using shared dopamine reinforcement circuits and partially overlapping Kenyon cell populations, suggesting similar coincidence detection mechanisms operate across sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates findings from multiple experimental approaches (C3, C4, C64) demonstrating shared dopamine neurons and partially overlapping KC requirements. Claims C77-C78 synthesize these findings into a coherent model of MB function. The conclusion is well-supported by the convergence of anatomical, genetic, and functional evidence, though the specific molecular mechanisms of coincidence detection are inferred from prior work rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C79"
+    ],
+    "result": "Centralization of visual and olfactory memory processing in the mushroom body represents an economical design that avoids repetition of similar circuit motifs and may be an evolutionarily conserved principle of information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C79 present an evolutionary/design interpretation of the findings. While the observation of shared circuits is well-supported, the claims about 'economical design' and evolutionary conservation are speculative. No comparative data across species or direct evidence for evolutionary selection is provided. This represents a reasonable hypothesis but goes beyond what the data directly demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C82",
+      "C84"
+    ],
+    "result": "The authors argue that optimal comparison of visual and olfactory memory circuits requires matched reinforcers (sugar and shock) between modalities, and that differences from flight simulator studies may reflect state-dependent mechanisms or other paradigm-specific factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 articulates a sound methodological principle that is implemented throughout the study. Claims C82 and C84 provide reasonable explanations for discrepancies with prior flight simulator studies, though C84 remains speculative. The methodological approach of matching reinforcers is well-justified and represents a strength of the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "For electric shock punishment, PPL1 cluster neurons (MB-MP1, MB-MV1, MB-V1) drive both visual and olfactory aversive memories, while MB-M3 neurons in the PAM cluster are specifically involved in olfactory aversive memory. For appetitive conditioning, PAM cluster neurons are crucial for both modalities. All reinforcement-signaling dopamine neurons project to restricted MB subdomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 integrate current findings with prior olfactory learning studies to identify shared and modality-specific dopamine neurons. Claim C68 provides a reasonable synthesis, though the interpretation of 'larger set' for olfactory memory is somewhat speculative. Claims C69-C70 offer plausible explanations for differential neuron recruitment based on memory stability. Claim C72 is well-supported by anatomical data. Overall, this represents a well-supported integration of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Octopamine neurons are not required for appetitive visual memories with sucrose reward, though they may be more important when non-nutritious sweet taste rewards are used, as shown in olfactory learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is directly supported by experimental data (Figure 2A). Claim C74 is a reasonable speculation based on prior olfactory learning studies, appropriately qualified as speculative. The negative result for octopamine is important for understanding the specificity of dopamine neuron involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The necessity of mushroom body output for visual memory acquisition and retrieval is consistent with olfactory conditioning, though the recruited Kenyon cell subsets are not identical across modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 accurately summarize key findings and their relationship to prior olfactory learning studies. The temporal requirements (C75) and differential KC recruitment (C76) are both well-supported by experimental data presented in Figures 6 and 8.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The mushroom body's role in associative learning extends beyond olfaction to multiple sensory modalities (visual, gustatory), with different modalities recruiting overlapping yet partly distinct Kenyon cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 synthesize findings from the current study with prior work on taste learning. The conclusion is well-supported by the convergence of evidence across multiple sensory modalities, establishing the MB as a general associative learning center rather than a modality-specific structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The \u03b3 lobe plays a general role in short-lasting memories across different sensory modalities. Visual and olfactory cues may both be represented in \u03b3 neurons, which receive heavy projections from dopamine neurons conveying appetitive and aversive signals and contribute mainly to short-term memory in olfactory conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is a reasonable inference based on the general requirement of \u03b3 neurons (Figure 7). Claim C93 is well-supported by anatomical data. Claims C94-C95 integrate current findings with prior olfactory memory studies to propose a general role for \u03b3 lobes in short-term memory. The conclusion is well-supported by converging evidence, though direct measurement of memory duration in visual learning would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The \u03b1'/\u03b2' lobes are selective for olfactory memories, consistent with their specialized odor representation properties. The \u03b1/\u03b2 neurons have limited roles in visual memories but may play modulatory roles in specific tasks and are preferentially required for long-lasting olfactory memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are well-supported by experimental data (Figures 6-7). Claims C99 and C102 appropriately cite prior work on odor representation and memory phases. Claim C101 is more speculative, proposing modulatory roles based on prior studies rather than direct demonstration. Overall, the differential contributions of MB lobes are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Visual inputs to the mushroom body remain unidentified. No direct anatomical connections between optic lobes and MBs have been reported in Drosophila, though such connections exist in other insects. Drosophila MBs may receive indirect visual input from optic lobes via protocerebral afferents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 accurately summarize the current state of knowledge regarding visual inputs to the MB, appropriately citing prior anatomical studies. Claim C91 is a reasonable speculation based on findings in other insect species. This represents an important knowledge gap identified by the study that motivates future anatomical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The mushroom body may be involved in sensorimotor gating and visual selective attention, and the MB circuits for visual associative memories might also be required for these functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 appropriately cites prior work on MB involvement in attention and sensorimotor gating. However, claim C97 is speculative, as the current study does not directly test attention or gating functions. The relationship between memory circuits and attention mechanisms remains to be established experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Differentiated but overlapping sensory representations by Kenyon cells may be conserved among insect species, with the mushroom body potentially evolving to represent sensory modalities subject to associative modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 is speculative about evolutionary conservation without comparative data. Claim C104 appropriately cites prior work in honeybees showing spatial segregation of sensory inputs. Claim C105 presents an evolutionary hypothesis about MB function that, while plausible, goes beyond the data presented. These represent interesting hypotheses for future comparative studies but are not directly supported by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work establishes that animals form multisensory associative memories and that mushroom bodies are required for olfactory and gustatory memories in Drosophila, but prior studies disagreed on whether MBs are required for visual memory, and the circuit mechanisms underlying memories of different sensory modalities were unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 accurately summarize relevant prior work and identify the knowledge gap motivating the study. The citations are appropriate and the characterization of contradictory findings in the literature (C11-C12) is fair. This provides solid context for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C83"
+    ],
+    "result": "Prior flight simulator studies showed that visual learning requires the central complex but not the mushroom bodies, and that flies during flight show octopamine-mediated modulation of optic lobe neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C83 accurately cite prior work on flight simulator learning and flight-state modulation. These claims provide important context for understanding apparent contradictions with the current findings and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C38",
+      "C65",
+      "C80"
+    ],
+    "result": "Prior work in insects and other animals has established roles for specific dopamine neuron subsets in olfactory memory, shared transmitter system requirements between visual and olfactory learning in crickets, and multisensory convergence in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize relevant prior work that provides context for the current findings. The citations are appropriate and the characterization of prior results is accurate. These establish the foundation for comparing visual and olfactory memory mechanisms.",
+    "result_type": "MINOR"
+  }
+]

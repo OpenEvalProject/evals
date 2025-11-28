@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors established an in vivo imaging system using transgenic Eisuke mice expressing a nuclear ERK FRET biosensor (EKAREV-NLS) under the CAG promoter, enabling visualization of ERK activity in living mouse epidermis at single-cell resolution using two-photon microscopy. The imaging setup stabilized ear and back skin to minimize motion artifacts, with images acquired at defined intervals and spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C73-C85 collectively describe a well-documented experimental system with appropriate controls (C5), validation across different skin regions (C6), and detailed methodological parameters. The use of previously published transgenic mice (C73-C74), proper animal ethics approval (C78), and comprehensive technical specifications support the validity of this imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors discovered a novel phenomenon termed SPREAD (Spatial Propagation of Radial ERK Activity Distribution) in steady-state mouse epidermis, characterized by radial propagation of ERK activation from a few originating cells primarily in the basal layer. Quantitative single-cell analysis revealed SPREADs have a mean velocity of 1.5 \u00b1 0.3 \u03bcm/min, duration of 30.5 \u00b1 5.6 min, radius of 47.7 \u00b1 10.2 \u03bcm, with ERK activation amplitude decreasing with distance from the origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 describe the discovery and characterization of SPREADs with detailed quantitative measurements from multiple SPREADs (n=8). The analysis methodology (C93-C98) using automated segmentation and sine curve fitting provides objective criteria for identifying responder vs. non-responder cells. The positive correlation between SPREAD size, ERK activity, and wave velocity (C16) adds internal consistency to the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C66"
+    ],
+    "result": "SPREADs in vivo differ from previously reported in vitro ERK propagation in three key aspects: amplitude decay during propagation (vs. constant amplitude in vitro), nearly deterministic propagation to neighboring cells (vs. stochastic in vitro), and emergence from a small fraction of cells (vs. any cell in vitro). Despite these differences, both phenomena share dependence on EGFRs and MMPs, suggesting a common underlying molecular mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C66 compare in vivo SPREADs to previously published in vitro observations (Aoki et al., 2013), identifying both similarities and differences. The comparison is well-supported by the data showing amplitude decay (C14) and the inhibitor experiments (C32-C33) demonstrating EGFR/MMP dependence. The differences highlight important context-dependent modifications of the propagation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C68"
+    ],
+    "result": "SPREAD frequency exhibits spatiotemporal heterogeneity, with periods of high SPREAD activity correlating with increased cell division. Cell division in SPREAD areas (SAs) was twice as frequent as in non-SPREAD areas. SPREADs were significantly clustered (p < 0.01 by Monte Carlo simulation), emerged preferentially near hair follicles (~50% within 50 \u03bcm), and often occurred repeatedly from the same locations, suggesting a relationship to stem cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 demonstrate a clear spatiotemporal correlation between SPREADs and cell division with appropriate statistical analysis (C26, C24). The Monte Carlo simulation (C100) provides rigorous statistical support for spatial clustering. However, the connection to stem cells (C68) remains speculative as acknowledged by the authors, though the preferential localization near hair follicles (C25) and repeated emergence from same spots (C27) provide circumstantial support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C63",
+      "C64"
+    ],
+    "result": "A single TPA treatment failed to increase SPREAD and cell division frequencies despite elevating ERK activity for >24 hours. However, a second TPA dose 24 hours later significantly increased both SPREADs and cell divisions 10-18 hours after the second treatment. This requirement for two TPA treatments suggests that SPREAD induction requires cell cycle synchronization and/or induction into the replicating cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe a surprising finding that single TPA treatment is insufficient despite sustained ERK elevation (C28-C29), while double treatment is effective (C31). The interpretation (C64) is reasonable given the parallel with published in vitro observations in mammary epithelial cells (C63, Zwang et al., 2011), though the exact mechanism remains to be fully elucidated. The observation is well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C51",
+      "C52",
+      "C53",
+      "C72"
+    ],
+    "result": "SPREAD propagation is mediated by EGFR ligands released by matrix metalloproteinases (MMPs). Treatment with TAPI-1 (MMP inhibitor) or PD153035 (EGFR inhibitor) significantly decreased both SPREAD and cell division frequencies. This mechanism is consistent with the established pathway where TPA drives MMP-dependent cleavage of membrane-bound EGFR ligand precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate pharmacological dependence on both MMPs and EGFRs with appropriate inhibitors. The interpretation is well-supported by established literature (C34, C51-C53) on TPA-induced MMP activation and EGFR ligand release. The parallel mechanism to in vitro observations (C66) and the genetic evidence from knockout mice phenotypes (C53) strengthen this conclusion. However, the authors acknowledge they cannot distinguish whether inhibitors block initiation or propagation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SPREADs play an important role in G2/M cell cycle progression. Using Fucci mice, the authors showed that while MEK inhibitor (PD0325901) prevented S/G2/M entry after the second TPA treatment, TAPI-1 (MMP inhibitor) did not prevent S/G2/M entry but instead blocked exit from S/G2/M phase and entry into G0/G1, causing cells to remain arrested in S/G2/M. This suggests SPREADs provide precisely timed, localized ERK activation necessary for G2/M progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide compelling evidence for SPREAD function in cell cycle progression using the Fucci system. The differential effects of MEK inhibitor (blocking entry, C40) vs. MMP inhibitor (blocking exit, C41-C42) are particularly informative. The interpretation (C43, C61-C62) is well-supported by extensive literature (C57-C60) showing ERK's complex role in G2/M progression requiring precise temporal and spatial control. The reduced cell division frequency with TAPI-1 in Eisuke mice (C32) corroborates this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C70",
+      "C69"
+    ],
+    "result": "During wound healing, two distinct ERK activation propagation patterns were observed: (1) SPREADs occurring ~200 \u03bcm from the wound edge, and (2) repetitive ERK activation waves parallel to the wound edge within ~100 \u03bcm, propagating with similar velocity (1.4 \u03bcm/min) but maintaining high amplitude and propagation efficiency unlike SPREADs. Both patterns were suppressed by TAPI-1 or PD153035, suggesting synchronized ERK pulses can generate sustained trigger waves when evoked in close spatiotemporal proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 describe two distinct wound-associated ERK propagation patterns with detailed characterization. The similar velocity (C48) but different amplitude maintenance (C49) between wound waves and SPREADs suggests related but modified mechanisms. The pharmacological dependence (C45, C47) confirms similar molecular requirements. The interpretation that synchronized pulses generate trigger waves (C70) is reasonable though somewhat speculative. The connection to stem cell activation (C69) remains speculative but plausible given wound healing biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors used different mouse strains for different biosensors (C57BL/6 for Fucci, FVB/N for FRET) due to technical limitations where melanin granule fluorescence in C57BL/6 mice interfered with FRET quantification. Despite this limitation, TPA-induced cell division increase and SPREAD occurrence were confirmed in C57BL/6 mice, indicating the phenomena are not strain-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 acknowledge an important experimental limitation and provide validation across strains. The observation of SPREADs and TPA-induced cell division in both strains (C105-C106) strengthens the generalizability of findings, though quantitative SPREAD analysis in C57BL/6 was limited by melanin fluorescence (C104, C106). This transparent reporting of limitations and cross-validation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C65",
+      "C67"
+    ],
+    "result": "The authors conclude that localized propagations of ERK activation (SPREADs) regulate cell cycle progression in mouse epidermis through cellular interactions via EGFRs and their ligands. This represents a novel mechanism for coordinating growth signaling and cell proliferation in living tissue, with potential implications for understanding tumorigenesis and how ERK propagation patterns may vary with cellular environment and pathological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C50-C56 summarize the main conclusions, which are well-supported by the experimental evidence presented. The connection to cell cycle regulation is demonstrated through multiple lines of evidence (Fucci experiments, correlation with cell division, inhibitor studies). The speculation about tumorigenesis (C65) and environmental modulation (C67) is appropriately cautious and based on the double TPA protocol's relevance to tumor promotion and the observed differences between steady-state and wound conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors employed appropriate drug concentrations, imaging protocols, and analysis methods including visual scoring of SPREADs and cell divisions, automated segmentation for single-cell analysis, Monte Carlo simulation for spatial clustering analysis, and standard statistical tests (unpaired Student's t-test) using MATLAB and Excel software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C102 describe the methodological details. The drug concentrations (C86) and imaging parameters (C87) are clearly specified. The combination of visual inspection (C90) and automated analysis (C94-C98) is appropriate. The Monte Carlo simulation (C100) provides rigorous statistical validation of spatial clustering. However, some concerns exist: (1) visual scoring of SPREADs (C90, C93) introduces potential observer bias, (2) the threshold of 0.003 for responder classification (C95) appears arbitrary without justification, and (3) unpaired t-tests (C101) may not be optimal for all comparisons shown.",
+    "result_type": "MINOR"
+  }
+]

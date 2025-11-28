@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study collected paired human genome-wide SNP data and HIV-1 full-length sequence data from 1071 antiretroviral-naive patients of Western European ancestry infected with HIV-1 subtype B. After quality control and imputation, approximately 7 million human SNPs and 3007 distinct binary variables representing HIV-1 amino acid variation were available for analysis. The study population was homogeneous, with the first five principal components explaining only 1% of total genotypic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 and C91-C103 provide comprehensive methodological details about data collection, quality control, and processing. The quantitative metrics (sample size, SNP counts, sequence coverage) are explicitly stated, and the methods for genotyping, imputation, and viral sequencing are described with appropriate citations. The population homogeneity is demonstrated through principal component analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A classical GWAS of host determinants of HIV-1 viral load (VL) in 698 patients identified the strongest association at rs9267454 (p = 1.5 \u00d7 10\u207b\u2078), which is in partial linkage disequilibrium with known protective HLA alleles including HLA-B*57:01, HLA-B*14:01, HLA-B*27:05, and HLA-C -35 rs9264942. These results confirm the quality of the study population and replicate well-known associations with HIV-1 control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe a validation GWAS that successfully replicates known associations between HLA alleles and HIV-1 control. The quantitative LD metrics and p-values are provided, and the interpretation (C15) appropriately positions this as a quality control check. This serves as proof-of-concept for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C30",
+      "C104"
+    ],
+    "result": "Genome-to-genome analysis using phylogenetically corrected logistic regression identified 48 HIV-1 amino acid variants significantly associated (p < 2.4 \u00d7 10\u207b\u00b9\u00b2) with human SNPs in the MHC region. Gag and Nef showed significantly higher densities of associated sites (6.8% and 11% respectively vs 2.6% for the rest of the proteome). The strongest association was between rs72845950 and Nef position 135 (p = 2.7 \u00d7 10\u207b\u2076\u2076). No significant signals were identified outside the MHC, and none of the 48 amino acids mapped to known drug resistance sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25, C30, and C104 describe the core genome-to-genome findings with appropriate statistical rigor. The use of phylogenetically corrected regression (C17, C104) addresses viral population structure. The Bonferroni correction (C21) is appropriate for the multiple testing burden. The quantitative results are consistent and biologically interpretable, with enrichment in Gag and Nef consistent with known immunology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C67"
+    ],
+    "result": "Associations between human SNPs and HIV-1 amino acids were much stronger than associations with viral load. For example, rs2395029 (a proxy for HLA-B*57:01, r\u00b2 = 0.93) showed p = 1.21 \u00d7 10\u207b\u2076 for association with VL but p = 4 \u00d7 10\u207b\u2075\u2079 for association with Gag position 242, a well-known escape site. This demonstrates a considerable gain in power (2.7 \u00d7 10\u207b\u2076\u2076 vs 1 \u00d7 10\u207b\u2078) when using HIV-1 variation as outcome compared to VL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 and C67 provide a direct quantitative comparison demonstrating the power advantage of using viral sequence variation as an intermediate phenotype. The example is well-chosen (HLA-B*57:01 and Gag 242 are well-established), and the magnitude of difference (>50 orders of magnitude in p-values) is striking and supports the methodological innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The genome-to-genome approach demonstrates feasibility and improved power for mapping host genetic pressure on the HIV-1 genome. The strongest associations genome-wide were between HLA class I-tagging SNPs and viral mutations in corresponding CTL epitopes. This hypothesis-free strategy successfully recapitulates extensive prior immunogenetic research in a single experiment, proving that biologically meaningful association signals can be identified by searching for host-driven imprints in the viral genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C57-C61, and C83-C86 provide appropriate interpretation of the methodological contribution. The approach successfully identifies known biology (validation) while offering advantages in power and the ability to correct for both host and viral population stratification. The proof-of-concept nature is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C121",
+      "C122"
+    ],
+    "result": "50% of the 48 significantly associated viral amino acids were located within optimally defined CTL epitopes restricted by HLA alleles tagged by the associated SNPs. However, in seven cases, the implicated HLA allele did not match previously reported restriction patterns. The approach can reconstruct a map of HLA pressure targets and identify sites outside classical epitopes that could represent novel epitopes or compensatory mutations, highlighting its utility for epitope discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36, C121-C122 demonstrate both validation (50% in known epitopes) and discovery potential (50% outside known epitopes, 7 mismatches with prior reports). The example of Nef 135 in an A*24:02 epitope with rs72845950 (r\u00b2 = 0.89 with HLA-A*24:02) provides concrete support. The interpretation about epitope discovery is appropriately cautious ('could represent').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C62",
+      "C63"
+    ],
+    "result": "Analysis of polymorphic amino acids within HLA genes revealed that the top associations in all classical class I genes mapped to discrete residues in the HLA binding grooves: HLA-A position 62 (p = 3.3 \u00d7 10\u207b\u2077\u2076), HLA-B position 70 (p = 7.1 \u00d7 10\u207b\u2075\u2077), and HLA-C position 99 (p = 5.4 \u00d7 10\u207b\u2076\u00b3). This extends prior findings about HLA-B to HLA-A and HLA-C, indicating that all class I HLA genes exert strong pressure on the viral proteome through a shared mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 and C62-C63 extend prior work (C37-C38, C62) to new HLA loci. The extremely strong p-values and consistent mapping to binding groove residues across all three classical class I genes provide compelling evidence. The interpretation (C42, C63) appropriately contextualizes this as extending known biology while noting that mechanism similarity doesn't necessarily translate to clinical outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Gag and Nef showed significantly higher densities of amino acid positions under selection (6.8% and 11% respectively vs 2.6% for the rest of the proteome, p = 0.001 and p = 1.2 \u00d7 10\u207b\u2075). This is consistent with earlier findings indicating the importance of Gag p24-specific CTL responses in slower AIDS progression and controller status, demonstrating that mapping host pressure on the pathogen proteome can reveal biologically relevant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C64-C66 identify a biologically meaningful pattern with appropriate statistical support (binomial tests). The consistency with prior literature (C64-C65 with citations) validates the biological relevance. The interpretation (C66) is appropriately supported by the convergence of current and prior findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "No significant associations were observed between HIV-1 amino acids and VL after multiple testing correction (p < 1.6 \u00d7 10\u207b\u2075). Effects of the 48 host-associated amino acids on VL ranged from -0.16 to +0.07 log\u2081\u2080 copies/ml. For HLA-B*57:01 (tagged by rs2395029), which was associated with 0.38 log decrease in VL, the 23 targeted viral amino acids showed individual effects ranging from -0.16 to +0.12, revealing a multiplicity of modest effects. The majority of host-associated HIV-1 mutations showed no detectable change in VL, confirming HIV's capacity to adapt without measurable fitness cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide quantitative assessment of viral amino acid effects on VL. The lack of genome-wide significant associations (C43) is appropriately interpreted given the multiple testing burden. The decomposition of HLA-B*57:01 effects (C45-C47) provides mechanistic insight. The interpretation (C68-C70) appropriately acknowledges complexity and is consistent with HIV biology, though the causal claims are somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C84"
+    ],
+    "result": "Population stratification is a significant confounder in both human and viral genomic analyses. Previous studies controlled for viral population substructure but were limited in controlling human population stratification. The genome-to-genome approach offers the opportunity to correct for both host and viral population stratification through the availability of extensive genomic information from both organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 and C84 identify a key methodological advantage. The statement about prior limitations (C72) is supported by citations. The correction for both host (via PCA, covariates) and viral (via phylogenetically corrected regression) stratification is implemented in the methods (C104-C107), supporting the claim of improved control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study had 80% power to detect common variants (MAF 10%) with OR 4.2 in genome-to-genome analysis and viral amino acids explaining 4% of VL variation. Consistent with recent HIV-1 host genetics studies, no previously unknown host genetic loci were identified. Limitations include: the approach can only detect polymorphic host factors leaving viral imprints (potentially excluding immunopathogenesis mediators), incomplete genomic information (common SNPs only, no gp120), and extremely high multiple testing burden. Larger studies or focused candidate gene approaches might detect novel associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 provide appropriate discussion of power, limitations, and negative results. The power calculations (C74-C75) are cited and reasonable. The acknowledgment of no novel loci (C76) is honest and contextualized. The limitations (C77-C80) are substantive and appropriately qualified. The suggestions for future work (C81-C82) are reasonable, though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Current guidelines recommend early antiretroviral therapy, making collection of large untreated cohorts unrealistic and ethically questionable. Intermediate phenotypes have proven useful in other fields. Pathogen sequence variation represents an untapped intermediate phenotype specific to infectious disease genomics that could be easier and more standardized than obtaining clinical phenotypes. This approach is immediately applicable to other infectious diseases where polymorphic host factors trigger pathogen escape mutations, allows smaller-scale studies, and encourages analysis of less prevalent diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 and C87-C90 provide appropriate contextualization and discuss generalizability. The clinical context (C49-C50) is accurate and cited. The analogy to intermediate phenotypes in other fields (C51-C54) is well-supported with citations. The claims about advantages (C56, C88-C89) are supported by the demonstrated power gains. The generalizability claims (C87, C90) are appropriately qualified ('as long as...', 'should consider').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Statistical methods included standard or multivariate omnibus logistic regression for HLA amino acid associations with HIV variation, linear regression in PLINK for associations with VL, an additive genetic model for human SNPs, and Bonferroni correction with thresholds of 7.25 \u00d7 10\u207b\u2079, 2.4 \u00d7 10\u207b\u00b9\u00b2, and 1.6 \u00d7 10\u207b\u2075 for the three study types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 describe the statistical methods with appropriate detail and citations. The choice of methods is reasonable, though the appropriateness of Bonferroni correction for correlated tests (especially in the MHC) could be questioned. The different thresholds for different analyses appropriately reflect the different numbers of tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The introduction establishes that host and pathogen genomes bear signatures of co-evolution governed by Darwinian forces, with examples including selection signatures in host restriction factors (TRIM5\u03b1, APOBEC3G, BST2), HIV-1 escape mutations in HLA-restricted epitopes and KIR-targeted regions, and evidence from SIV studies. Prior work has addressed HLA/KIR associations with HIV variants and performed host GWAS on clinical phenotypes, while large-scale HIV sequencing has enabled phylogenetic and resistance studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C120 provide appropriate background context with supporting citations throughout. These establish the biological rationale and prior work that motivates the current study. All statements are appropriately attributed to cited literature.",
+    "result_type": "MINOR"
+  }
+]

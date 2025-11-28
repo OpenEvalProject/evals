@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C13",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C50",
+      "C55"
+    ],
+    "result": "Paired-pulse TMS with 8 ms IPI between PMv and M1 increases functional connectivity between these regions during task performance. The study applied 90 paired pulses at 0.1 Hz for 15 min at specific MNI coordinates and measured increased PMv-M1 BOLD functional connectivity during grasping (t(13)=-2.59, p=0.023) and increased responsiveness of M1 to PMv input (t(13)=-4.78, p=0.0004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging analyses (seed-based correlation, PPI, partial correlation, multiple regression) consistently demonstrate increased PMv-M1 connectivity during task performance following 8 ms IPI TMS. The statistical evidence is robust with appropriate sample sizes (N=14-15) and significant p-values. The control experiment (C64-C71) with 500 ms IPI showing no changes strengthens the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C49",
+      "C65"
+    ],
+    "result": "PMv-M1 functional connectivity at rest was not modulated by the 8 ms IPI paired-pulse TMS intervention. Multiple analyses (SBCA, PPI) showed no significant changes in resting-state connectivity (t(14)=-0.07, p=0.94; t(14)=0.08, p=0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The null result for resting-state PMv-M1 connectivity is well-supported by consistent findings across multiple analytical approaches with appropriate statistical tests. This contrasts with the task-based findings and is consistent with prior literature (C31-C34) showing state-dependent effects of the TMS protocol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "At rest, 8 ms IPI paired-pulse TMS led to increased functional connectivity in the dorsolateral circuit (AIP-PMv: t(14)=-2.50, p=0.025) but decreased connectivity in the dorsomedial circuit (PMd-pSPL: t(14)=2.22, p=0.04; PMd-M1: t(14)=2.84, p=0.013). These network-wide reorganization effects extended beyond the directly stimulated PMv-M1 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The findings demonstrate specific, anatomically-constrained network reorganization with significant effects in predicted pathways. The partial correlation analysis appropriately controls for other network nodes. The pattern of increased dorsolateral and decreased dorsomedial connectivity is internally consistent and supported by multiple regression analysis (C56-C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C59",
+      "C60",
+      "C61",
+      "C63"
+    ],
+    "result": "Dual-regression analysis revealed task-specific increases in AIP/SMG coupling with the sensorimotor network (p=0.012) and rest-specific increases in IFJ/PMv coupling with the frontoparietal network (p=0.007) following 8 ms IPI TMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The exploratory whole-brain dual-regression analysis provides unbiased confirmation of network changes beyond the hypothesis-driven ROI analyses. The cluster-based thresholding with multiple comparison correction (p\u22640.05) is appropriate. The state-dependent effects (task vs. rest) are consistent with the targeted ROI findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Control Experiment 2 with 500 ms IPI showed no changes in functional connectivity, confirming that the effects observed with 8 ms IPI are specific to the timing required for Hebbian-like plasticity. Direct statistical comparisons showed significant TIME\u00d7PROTOCOL interactions for PMv-M1 (F(1,26)=4.64, p=0.041), AIP-PMv (F(1,28)=7.15, p=0.012), and PMd-pSPL (F(1,28)=5.29, p=0.029).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control experiment is well-designed, using identical stimulation parameters except IPI, and provides strong evidence for the specificity of the 8 ms IPI effect. The mixed-model ANOVAs appropriately test for differential effects between protocols. The lack of effects with 500 ms IPI rules out non-specific stimulation effects and supports the Hebbian plasticity interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C105"
+    ],
+    "result": "During task performance, TMS-based effective connectivity and fMRI-based functional connectivity measures were positively correlated across subjects both at baseline (R=0.74, p=0.01) and post-TMS (R=0.87, p=0.0008), indicating that greater facilitatory influence of PMv on M1 corresponds to greater functional connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlations between independent measures of connectivity (TMS-MEP ratios and fMRI) provide strong construct validity. The sample size (N=10) is modest but the correlations are strong and significant. The positive relationship during task performance is theoretically consistent with known facilitatory PMv-M1 interactions during grasping (C31, C97-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C104"
+    ],
+    "result": "At rest, a significant negative correlation (R=-0.68, p=0.03) was observed between baseline TMS-derived effective connectivity and post-TMS fMRI functional connectivity, indicating that stronger inhibitory influence of PMv on M1 (measured by TMS) corresponds to stronger positive functional connectivity (measured by fMRI). This demonstrates that positive functional connectivity can reflect either facilitatory or inhibitory effective connectivity depending on behavioral state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative correlation at rest is counterintuitive but well-supported statistically and theoretically consistent with the known inhibitory influence of PMv on M1 at rest (C32, C97). The finding that fMRI functional connectivity cannot distinguish between facilitatory and inhibitory effective connectivity is an important methodological insight. However, the interpretation relies on the assumption that baseline TMS measures predict post-TMS fMRI measures, which could be further validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C29",
+      "C30",
+      "C36"
+    ],
+    "result": "The 8 ms IPI paired-pulse TMS protocol evokes synchronous pre- and post-synaptic activity, strengthens excitatory connections between PMv and M1 consistent with Hebbian plasticity, and exhibits classic Hebbian learning rules including pathway specificity, spike timing dependency, rapid evolution, persistence, and reversibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by prior work (C22, C36 citing Buch et al., 2011) and are consistent with the current experimental findings. The anatomical knowledge about glutamatergic connections (C27-C28) supports the mechanism. However, the direct demonstration of these properties relies heavily on citations rather than new data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors infer that functional connectivity is shaped not only by structural connections but also by short-term plastic changes in synaptic efficacy. Paired stimulation led to both increased connectivity between stimulated regions and a limited set of other connectivity changes in cortical sensorimotor circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference is well-supported by the totality of experimental findings showing specific, pathway-dependent changes in functional connectivity following TMS-induced plasticity. The control experiment strengthens the causal interpretation. The claim appropriately acknowledges that changes are limited and specific rather than widespread.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Changes in PMv-M1 interactions were most apparent during motor activity, changes in PMv-IFJ interactions with prefrontal/parietal areas were most apparent at rest, and changes in PMv-AIP interactions were apparent in both states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary of state-dependent effects is supported by the pattern of results across Figures 2-4. The interpretation is consistent with the known functional roles of these pathways. However, the manuscript notes that rest and task data were not directly compared statistically due to movement artifacts (C95), which limits the strength of claims about differential effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Methodological details: 15 subjects in Experiments 1 and 2, 10 in Experiment 3, mean age 24\u00b14 years, RMT 40\u00b17%, PMv stimulated at 110% RMT, M1 at 1-mV MEP intensity, 90 pulse pairs at 0.1 Hz for 15 min, grasping task with 66 trials and 4.5s ITI, scanning within 3-4 min post-TMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details are clearly reported and appropriate for the study design. Sample sizes are adequate for within-subject designs with multiple measurements. The timing between TMS and fMRI (3-4 min) is justified by prior work showing effects last >1 hr (C123-C124). The counterbalancing of session order is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims about functional connectivity: it is shaped by structural connections, may be influenced by synaptic efficacy changes, exists during rest and task, and has been used to identify pathological changes in various neurological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to prior literature. They provide necessary context for the study but are not novel findings. C2 is appropriately framed as speculative ('might be influenced').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on TMS protocols: Various TMS protocols induce M1 excitability changes through frequency-dependent potentiation, paired associative stimulation follows Hebbian principles, and pathway-specific changes occur in animal models of synaptic plasticity underlying network self-organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by appropriate citations and provide necessary background for understanding the TMS protocol used. They establish the theoretical foundation for the experimental approach but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Anatomical and functional organization of sensorimotor circuits: PMv and M1 are part of the dorsolateral circuit with AIP, complemented by the dorsomedial circuit with PMd and pSPL. PMv provides major glutamatergic input to M1 with synapses on both pyramidal neurons and interneurons. The modulating influence of PMv over M1 is state-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These anatomical and functional claims are well-supported by extensive citations to prior literature. They provide essential context for interpreting the experimental findings and justify the choice of ROIs and network models used in the analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C97",
+      "C98"
+    ],
+    "result": "State-dependent effects of PMv-M1 interactions: Enhanced facilitatory influences are more apparent during grasping tasks while enhanced inhibitory influences are more apparent at rest. These effects depend on behavioral state at testing but not at the time of plasticity induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by citations to prior work (particularly Buch et al., 2011) and are consistent with the current findings. The state-dependency is a key feature that helps interpret the differential effects observed in rest vs. task conditions in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background on network effects of disruption: Lesions and disruption of brain areas can affect distant areas and connections, with compensatory changes such as increased contralateral PMd activity and preserved performance through network redistribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about compensatory plasticity following disruption are well-supported by citations and provide important context for understanding network reorganization. However, they describe disruption/lesion effects rather than the enhancement effects studied in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Theoretical implications: Different premotor-M1 interaction patterns relate to stroke recovery, paired-pulse TMS provides direct effective connectivity measures complementing DCM, inhibitory plasticity may accompany excitatory plasticity for network stabilization, and dorsomedial/dorsolateral streams may complement each other in movement selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These theoretical and translational claims are appropriately supported by citations and provide important context for interpreting the findings. However, they are largely speculative regarding the current data (particularly C107-C110) and represent discussion points rather than direct findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C123",
+      "C124"
+    ],
+    "result": "Methodological considerations: Rest and task data were analyzed identically but not directly compared due to movement artifacts. Prior studies show PMv-M1 functional connectivity increases during grasping and that plasticity effects last >1 hr with no differences in efficacy across the first hour post-intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are appropriately justified. The decision not to directly compare rest and task is reasonable given artifact differences (C95). The timing justifications based on prior work (C123-C124) are appropriate, though it would strengthen the study to have directly measured duration of effects in the current sample.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1735 @@
+{
+  "submission": {
+    "id": "b57d1173-9b79-4b90-9df3-9fa4ecd299ab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:07:05.423382Z",
+    "updated_at": "2025-11-28T21:07:05.423382Z"
+  },
+  "content": [
+    {
+      "id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "submission_id": "b57d1173-9b79-4b90-9df3-9fa4ecd299ab",
+      "content_type": "manuscript",
+      "content_text": "# H3K27 modifications define segmental regulatory domains in the Drosophila bithorax complex\n\n## Authors\n\n- Sarah K Bowman<sup>1</sup>\n- Aimee M Deaton<sup>1</sup>\n- Heber Domingues<sup>3</sup>\n- Peggy I Wang<sup>1</sup>\n- Ruslan I Sadreyev<sup>1</sup>\n- Robert E Kingston<sup>1</sup> \u2020\n- Welcome Bender<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology Massachusetts General Hospital Boston United States\n2. Department of Genetics Harvard Medical School Boston United States\n3. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n4. Department of Pathology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe bithorax complex (BX-C) in Drosophila melanogaster is a cluster of homeotic genes that determine body segment identity. Expression of these genes is governed by cis-regulatory domains, one for each parasegment. Stable repression of these domains depends on Polycomb Group (PcG) functions, which include trimethylation of lysine 27 of histone H3 (H3K27me3). To search for parasegment-specific signatures that reflect PcG function, chromatin from single parasegments was isolated and profiled. The H3K27me3 profiles across the BX-C in successive parasegments showed a \u2018stairstep\u2019 pattern that revealed sharp boundaries of the BX-C regulatory domains. Acetylated H3K27 was broadly enriched across active domains, in a pattern complementary to H3K27me3. The CCCTC-binding protein (CTCF) bound the borders between H3K27 modification domains; it was retained even in parasegments where adjacent domains lack H3K27me3. These findings provide a molecular definition of the homeotic domains, and implicate precisely positioned H3K27 modifications as a central determinant of segment identity.\n\n## Introduction\n\nCells in higher organisms choose among developmental pathways in response to transitory cues. The choice must be remembered; this is often described as changing the epigenetic state. One prominent mechanism to fix such choices relies on the genes of the Polycomb Group (PcG). The members of this family have been well defined by genetic and biochemical studies (Simon and Kingston, 2013). The PcG proteins are present in all cells, but they impose long-term repression on different target genes in different lineages. PcG proteins form distinct complexes with distinct functions. These include the PRC1 family of complexes, which compact chromatin and ubiquitylate histone H2A, and the PRC2 complexes, which methylate histone H3 on lysine 27. The molecular details of how PcG functions are coordinated to lead to repression are poorly understood.\n\nThe prototypic targets of PcG action are the Drosophila homeotic genes that control segment identity. Indeed, a mutation in Polycomb, the founding member of the PcG, was discovered for its segmental transformations (Lewis, 1947). In Drosophila melanogaster, the homeotics lie in two clusters, the Antennapedia complex (Antp-C) and the bithorax complex (BX-C). The BX-C is the better-studied cluster, due largely to the effort of EB Lewis. Lewis showed that mutations that transform specific segments align on the genetic map in the order of the body segments that they affect (Lewis, 1978). The evolutionary conservation of this gene order, including that in the mammalian HOX complexes, suggests that chromosomal position dictates the expression pattern. Lewis used nested deletions to show that successively more distal genetic functions of the BX-C are activated in successively more posterior segments along the body axis (Lewis, 1981). The genetic functions are now thought to encompass nine regulatory domains, each for a different parasegment. The regulatory domains control three homeobox-containing genes of the complex, Ultrabithorax (Ubx), abdominal-A (abd-A), and Abdominal-B (Abd-B) (Maeda and Karch, 2009). The regulatory domains have been roughly defined by mutant lesions (Lewis, 1978), and by enhancer traps in the BX-C, which show different anterior limits of expression (Bender and Hudson, 2000). The molecular features that define these regions, as well as the precise locations of their boundaries, have not been defined.\n\nBoth PRC1 and PRC2 are required to maintain repression of homeotic genes in appropriate parasegments, so these complexes may generate segment-specific chromatin features in the regulatory domains of the BX-C. We initially evaluated H3K27me3 patterns because they reflect the central function of PRC2. The entire BX-C is heavily marked with H3K27me3 in whole embryos (Schuettengruber et al., 2009; N\u00e8gre et al., 2011). This histone modification is necessary for maintaining repression of BX-C genes (Pengelly et al., 2013), yet these genes are not repressed throughout the body. It seemed likely that parasegment-specific patterns of histone modification might be obscured when all the parasegments are pooled for analysis. Indeed, Papp and M\u00fcller (2006) observed loss of the K27me3 mark across the Ubx transcription unit in haltere and third leg imaginal discs, tissues where Ubx is transcribed. These discs include cells of two parasegments (PS5&6), and so it was not clear how the K27me3-free regions might correlate with transcription units or with the genetic regulatory domains. The issue could be resolved if H3K27me3 patterns could be studied in single parasegments.\n\n## Results\n\nThe chromatin features of the BX-C have not been studied in individual parasegments because of the technical challenges of cell isolation and molecular analysis on small samples. To address this, we marked single parasegments with a combination of Gal4 and Gal80 drivers, and developed a nuclear sorting-chromatin immunoprecipitation-sequencing protocol. Gal4, a transcriptional activator, was expressed in a series of parasegments with a defined anterior boundary, and Gal80 was expressed in a pattern shifted one parasegment more posterior. Gal80 binds to and inactivates Gal4, leaving Gal4 activity in a single parasegment (Figure 1A). Gal4 and Gal80 expression domains were established either by enhancer trapping or by selecting an enhancer to achieve the desired expression pattern (Figure1\u2014figure supplement 1). Various combinations of Gal4 and Gal80 drivers were combined genetically to limit Gal4 activity to each of parasegments 4, 5, 6, and 7, which approximately correspond to the second thoracic through the second abdominal segments (Figure 1B, Figure1\u2014figure supplements 1 and 2; \u2018Materials and methods\u2019 for details).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02833/elife-02833-fig1-v2.jpg)\n\n**Figure 1.:** (A) Drivers for the Gal4 activator and the Gal80 repressor, each with a different anterior limit, are combined genetically. Gal4 activity is thus limited to a single parasegment, and is used to activate transcription of a fluorescent nuclear envelope protein. (B) Expression patterns used for isolation of parasegment nuclei are shown, visualized with antibody to the FLAG epitope on the INTACT fusion protein. Each panel shows embryos at about 6, 8, 10, 12, 14, and 16 hr after fertilization, with the stained cells marking the indicated parasegments. Embryos between 5 hr and 13 hr old (or between 4 hr and 10 hr for PS6) were harvested for analysis.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02833/elife-02833-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A P element was constructed that initially expresses Gal4 from the P promoter, and transgenes were moved into the homeotic gene complexes by P element swapping. Recombination between the FRT sites flanking Gal4 convert the transgene into one expressing Gal80. (B) A second P element expressed Gal4 or Gal80, driven by enhancers from the BX-C. The enhancers were positioned upstream of a promoter and a PRE from the engrailed locus. The PRE helps to maintain the restricted expression by the enhancer in older embryos. A cluster of binding sites for the suppressor of Hairy-wing protein flanks the enhancer, to block potential position effects at random chromosomal locations. (C) Nuclei were sorted using Hoechst 33,342 (to select only single nuclei) and mCherry fluorescence. Nuclei from wild type (Oregon R, OR) embryos were used to set the fluorescence threshold. (D) The flow chart from embryos to sequencing libraries is diagramed; the procedure could be paused at either freezing step.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02833/elife-02833-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Embryos expressing the INTACT marker in parasegments 4\u20137 were obtained as in Figure 1B. All are at \u223c10 hr of development, prior to dorsal closure; they were dissected along the dorsal midline, and flattened to display the epidermis in one focal plane. The last panel shows an embryo stained for UBX (in blue) and ABD-A (in brown) (Karch et al., 1990), to illustrate the expression patterns of these two proteins in parasegments 4\u20137.\n\nFor isolation of marked nuclei, we used Gal4 to drive an mCherry-RanGAP fusion protein, from the INTACT system (Deal and Henikoff, 2011; Steiner et al., 2012). Staged embryos with single parasegment stripes of mCherry were formaldehyde-fixed and disrupted, and their nuclei were sorted on a FACS instrument (Figure1\u2014figure supplement 1C). DNA enriched by chromatin immunoprecipitation (ChIP) was prepared for paired-end sequencing, using a picogram-scale library protocol (Figure 1\u2014figure supplement 1D; Bowman et al., 2013).\n\nThe largest differences in H3K27me3 enrichment between parasegments occurred at the BX-C (Figure 2A, Figure 2\u2014figure supplement 1). While the H3K27me3 profiles in our four adjacent parasegments were very similar elsewhere in the genome (Figure 2\u2014figure supplement 1), the BX-C exhibited a striking \u2018stairstep\u2019 pattern. Large expanses of H3K27me3 enrichment were lost as we moved from anterior to posterior along the body axis (Figure 2C\u2013F), revealing the locations of the regulatory domains. This is reminiscent of the temporal activation pattern of the Hox-D cluster in mouse, which correlates with loss of H3K27me3 (Soshnikova and Duboule, 2009). Our analysis of single parasegments locates distinct domain borders where K27me3 status changes abruptly. The contrast between the whole embryo profile (Figure 2B) and the single segment profiles (Figure 2C\u2013F) shows how isolated cell types can identify chromatin changes linked to cell identity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02833/elife-02833-fig2-v2.jpg)\n\n**Figure 2.:** (A) ChIP-seq profiles across 27 Mb of chromosome 3R are virtually identical, except at the BX-C, in the middle of the chromosome arm. (B\u2013F) H3K27me3 profiles across 380 kb encompassing the BX-C. (G\u2013H) CTCF binding sites. (I and J) CP190 binding sites. Panels B, G, and I were prepared from unsorted nuclei; parasegment-specific nuclei were used for the other panels, as indicated. Transcription units of coding genes are shown below the profiles. The Drosophila reference sequence includes a 6.1 kb Diver retroposon insertion at the indicated position; it was not present in the strains used for this analysis. At the bottom are shown the three regulatory domains defined by this analysis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02833/elife-02833-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The most striking differences in H3K27me3 enrichment across different parasegments occur at the BX-C. Each plot compares the density of H3K27me3 between two parasegments over all H3K27me3 peaks (see supplementary methods for additional details). A linear line of fit was drawn. H3K27me3 density across the entire genome was largely unchanging between parasegments, with the exception of a few points corresponding to the BX-C that are markedly far off from the line of fit. Within each plot, the comparison of five BX-C segments (labeled a\u2013e) are indicated with pink or red circles, the color of which corresponds to the Z-score (number of observed standard deviations from the line of fit).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02833/elife-02833-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The H3K27me3 profiles in parasegments 4 through 7 are very similar. ANTP is expressed at high levels in PS4 and PS5 in wild type embryos, and in the absence of the BX-C, parasegments 4\u201312 all show similar expression patterns (Carroll et al., 1986). By this criterion, Antp appears to be free of Pc-G repression in PS4\u201312, which is consistent with the lack of H3K27 methylation over its transcription unit in PS7, as shown. CTCF and CP190 profiles look identical between mixed and PS7 nuclei, as they are in the BX-C. CP190 marks several potential domain boundaries in the Antennapedia complex that lack apparent CTCF binding.\n\nIn each isolated parasegment, the extent of K27me3 coverage was largely consistent with genetic studies indicating the location of BX-C active and repressed regulatory domains. The PS4 H3K27me3 pattern is mesa-like across the complex (Figure 2C), with only a few narrow gaps at nucleosome-free regions (Mito et al., 2005). The BX-C is almost completely repressed in PS4, with only a few neuronal cells on the midline showing UBX expression in embryos. The PS5 regulatory domain, associated with the bithorax (bx) mutant lesions, is defined by the low level of H3K27me3 modification across the leftmost (proximal) 92 kb of the complex (Figure 2D). There is a sharp transition to full H3K27me3 coverage at a position upstream of the Ubx transcription start site. The low residual level of H3K27me3 marks in the 92 kb PS5 domain is likely due to partial contamination from more anterior parasegments in our preparation of PS5 nuclei (Figure 1\u2014figure supplement 2). In PS6, the leftmost 137 kb of the BX-C is clear of the K27me3 mark (Figure 2E); the additional K27me3-clear region reveals the PS6 domain. The PS6 regulatory domain is the one best defined by genetic analysis, with a series of rearrangement breakpoints giving bithoraxoid (bxd) phenotypes (Bender and Lucas, 2013). The transition point to full K27 methylation coincides with the genetically defined Fub border between the PS6 and the PS7 regulatory domains (Bender and Lucas, 2013). In PS7, an additional 36 kb was depleted of H3K27me3 (Figure 2F). This region includes the abd-A transcription unit, and is associated with the infraabdominal-2 (iab-2) class of genetic mutations. We observed a reproducible mound of H3K27me3 in PS7 nuclei close to the Ubx promoter (arrow in Figure 2F). This may reflect repression of Ubx by abd-A in this parasegment (Karch et al., 1990), mediated by the PcG.\n\nThe regulatory domains defined by the sharp transitions in K27me3 enrichment do not correspond in every detail to expectations from genetic studies. Prior mapping of domains has relied upon random insertion of transgenic reporter elements into the BX-C to interrogate local enhancer activity. These enhancer traps show sharp anterior edges to their expression patterns, with the anterior-most labeled parasegment corresponding to the domain in which the insertion resides (Bender and Hudson, 2000). In the current study, the border between the PS5 and PS6 domains, defined by the discontinuity in K27me3 enrichment in PS5 nuclei, lies 14 kb upstream of the Ubx promoter. However, transgenic reporter elements inserted between the Ubx promoter and the K27me3-defined border (presumably part of the PS5 regulatory domain) show patterns with a PS6 anterior limit. Perhaps the promoters of these reporters interact with the Ubx promoter in distinctive ways. There was also prior evidence of an active BX-C domain in PS4. An enhancer trap 3 kb downstream of the Ubx start site shows a PS4 anterior border (Casares et al., 1997), and a ncRNA with a PS4 anterior expression limit is transcribed from the region 5\u201315 kb downstream of the Ubx start (Pease et al., 2013). Despite the activity of these regulatory regions in PS4 cells, we did not detect a decrease in K27me3 at these locations. The PS4 active state may be early and transient, limited to a subset of PS4 cells, or resistant to H3K27 methylation.\n\nWe have profiled additional histone modifications and several chromosomal proteins in single parasegments to understand better how domains are established and bounded. The sharp discontinuities in K27 methylation coincide with binding sites of the CCCTC-binding factor (CTCF), which is thought to impose boundaries on regulatory domains in many systems (Ohlsson et al., 2010). Figure 2G shows the CTCF ChIP pattern in unsorted nuclei, similar to that previously reported (N\u00e8gre et al., 2010). CTCF in PS7 nuclei gives a pattern virtually identical to the whole embryo pattern (Figure 2H). Apparently, the activation state of a domain is not coupled to the presence of CTCF at its borders. We note that our experimental conditions do not detect robust CTCF enrichment in some BX-C locations that have been reported by others (N\u00e8gre et al., 2010), notably at the border between regulatory regions for PS7 and PS8, and proximal to the 3\u2032 end of the Ubx transcription unit.\n\nCTCF is present in a protein complex with Centrosomal Protein 190 (CP190) (Mohan et al., 2007), and the binding sites of these proteins often overlap (N\u00e8gre et al., 2010). The CP190 sites largely coincide with CTCF sites in the BX-C, and, as with CTCF, there is little difference between the CP190 pattern in unsorted nuclei (Figure 2I; N\u00e8gre et al., 2010) and in PS7 nuclei (Figure 2J). There is a noteworthy CP190 site immediately proximal to the 3\u2032 end of the Ubx transcription unit, separating Ubx from the adjacent gene (modular serine protease). In the Antennapedia complex, the other homeotic gene complex in flies, CP190 peaks often appear without coincident CTCF peaks (Figure 2\u2014figure supplement 2).\n\nAcetylation of H3K27 (H3K27ac) is correlated with active enhancer regions (Heintzman et al., 2009; Kharchenko et al., 2011), and is anti-correlated with PcG function (Tie et al., 2009), prompting us to examine its pattern in the BX-C. H3K27ac showed the opposite pattern to H3K27me3. There is relatively little H3K27ac across the BX-C in unsorted nuclei, but in PS7, the active domains show broad enrichment for H3K27ac (Figure 3B,C). The H3K27ac levels differ in the three active domains, for reasons we do not yet understand. Within each domain, however, the coverage is boundary-to-boundary, although many enhancers in the BX-C are not active in embryos. Overall, H3K27ac is a mirror to H3K27me3, in extent, if not in density.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02833/elife-02833-fig3-v2.jpg)\n\n**Figure 3.:** (A) The H3K27me3 distribution, repeated from Figure 2F, marks the border between active and repressed domains. (B and C) H3K27ac profiles are shown for mixed and PS7 nuclei; the acetylation mark in PS7 is largely restricted to the active domains. (D and E) Pol-II profiles show peaks at the promoters of Ubx, abd-A, and Abd-B both in whole embryo and in PS7 nuclei. In PS7, polymerase is distributed across the transcription units of Ubx and abd-A, but not Abd-B. The arrow in D marks the PS5/PS6 border; the arrow in E marks the major Abd-B promoter. (F and G) H3K4me3 profiles show prominent peaks over the Ubx and abd-A promoters, both of which drive strong transcription in PS7. (H and I) POLYCOMB profiles show sharp peaks over all known Polycomb Response Elements. In PS7, there is a reduction of the PC peak at the \u2018bx PRE\u2019 in the active PS5 domain. There is also a PC peak at the abd-A promoter, which is somewhat reduced in PS7, where Abd-A is transcribed. (J and K) POLYHOMEOTIC protein shows peaks at known PREs and the abd-A promoter in both the active and repressed domains. As with PC, the PH peak at the bx PRE is reduced in PS7. (L and M) SU(Z)12 profiles also mark PREs, but in PS7, the PRE peaks are reduced in all three active domains. The ranges for the vertical axes are indicated above the left edge of each trace.\n\nChIP of serine-5-phosphorylated RNA polymerase II (Pol-II) (transcriptionally engaged polymerase) in whole embryos shows the transcription units for Ubx, abd-A, and Abd-B (Figure 3D). Embryonic non-coding transcripts (Bae et al., 2002; Pease et al., 2013) are not apparent from the Pol-II density, either because they are limited to very early stages of embryogenesis, or because the levels of transcription are too low. There is an unexpected Pol-II peak \u223c14.5 kb upstream of the Ubx promoter, coincident with the CTCF binding site at the border between the PS5 and PS6 domains (arrow in Figure 3D). There is no reported transcript initiating at this position (Pease et al., 2013), although a short transcript could have been missed. Pol-II in PS7 (Figure 3E) marks the Ubx and abd-A transcription units, as expected from the UBX and ABD-A protein patterns (Figure 1\u2014figure supplement 2). There is also a Pol-II peak at the major Abd-B promoter (arrow in Figure 3E), although Abd-B RNA and protein are absent from PS7 (Celniker et al., 1990; Boulet et al., 1991) and this region is H3K27 trimethylated. Analogous localization of Pol-II at the Abd-B promoter in wing and haltere discs was reported by Chopra et al. (2009), who argued that these polymerase molecules were \u2018paused\u2019. The H3K4me3 mark aligns with the Ubx and abd-A promoters in PS7 nuclei (but not Abd-B; Figure 3G) and is reduced in mixed cells (Figure 3F); this histone mark has been seen at active promoters in other systems (Ruthenburg et al., 2007).\n\nThe POLYCOMB subunit of PRC1 is known to bind to the H3K27me3 modification through its chromodomain (Fischle et al., 2003), and so PRC1 localization might be expected to correspond to the stair-step H3K27me3 pattern. Published ChIP\u2013CHIP and ChIP-seq profiles for PC across the BX-C vary from broad coverage matching the H3K27me3 profile (Kwong et al., 2008) to sharp peaks at the known PREs (Gonzalez et al., 2014). The difference may be due to different procedures for chromatin fragmentation prior to immunoprecipitation (Straub et al., 2013). Our PC profiles show sharp peaks at PREs in nuclei from whole embryos (Figure 3H), matching the profile for POLYHOMEOTIC, another PRC1 subunit (Figure 3J). In PS7 nuclei, we find both the POLYCOMB and POLYHOMEOTIC subunits of PRC1 are bound to the Polycomb Response Elements of the active PS6 and PS7 domains at levels comparable to those in the whole embryo profile (Figure 3H\u2013K). In the active PS5 domain, the levels of PC and PHO at the PS5 PRE are reduced, relative to the whole embryo profile. Papp and M\u00fcller (2006) have reported reduced retention of PRC1 and 2 components at the PRE in the PS5 domain in haltere and third leg imaginal discs, where the PS5 domain is in the active state and K27me3 is absent. Kwong et al. (2008) have made analogous observations regarding PRC retention in imaginal discs of the third thoracic segment. PRC1 presence is apparently not a determinant of repressed domains, although its subunits are clearly needed for PcG repression (Simon and Kingston, 2013). It will be important to map H2A ubiquitylation (a function of the dRING subunit of PRC1) across the domains, especially given recent findings that H2A ubiquitylation promotes PRC2 recruitment and H3K27 trimethylation (Blackledge et al., 2014; Cooper et al., 2014; Kalb et al., 2014).\n\nThe profiles for SU(Z)12, a PRC2 component (Figure 3L,M), look similar to those of the PRC1 proteins, POLYCOMB and POLYHOMEOTIC. There are major peaks at the known PREs in both whole embryo and PS7 nuclei, although in PS7, the PREs in active domains have reduced levels of SU(Z)12. This result is again consistent with the prior work of Papp and M\u00fcller (2006) on the PS5 PRE in imaginal discs. SU(Z)12 is also present at the transcription start sites of Ubx, abd-A, and Abd-B; binding at these promoters is more apparent than it is for PRC1 proteins.\n\n## Discussion\n\nThe Polycomb Group repression system is often described as a cellular memory mechanism, which can impose lifelong silencing of a gene in response to a transitory signal. That view seems valid, but the concept of a PcG regulatory domain is much richer. In the PS6 domain of the BX-C, for example, there are many enhancers to drive Ubx expression in specific cells at specific developmental times, all of which are blocked in parasegments one through five, but active in parasegments 6 through 12 (Bender and Lucas, 2013). Individual enhancers need not include a segmental address that is specified, for example, by gap and pair-rule DNA-binding factors; their function is segmentally restricted by the domain architecture. Indeed, these enhancers will drive expression in a different parasegment when inserted into a different domain (as in the Cbx transposition, Peifer et al., 1987). Each domain has a distinctive collection of enhancers; the UBX pattern in PS5 is quite different from that in PS6. Thus, there are two developmental programs for Ubx, one in each of these parasegments, without the need for a duplication of the Ubx gene. Other loci with broad regions of H3K27 methylation may likewise be parsed into multiple domains, once we examine histone marks in specific cell types.\n\nThe all-or-nothing H3K27me3 coverage of the BX-C parasegmental domains validates and refines the domain model. In particular, K27me3 is uniformly removed across the PS5 and PS7 domains in PS5 and PS7, even though the activated genes in those parasegments (Ubx and abd-A, respectively) are only transcribed in a subset of cells. It is interesting that both PRC1 and PRC2 components have binding patterns that do not fully reflect function (repression and K27 methylation, respectively), indicating the possibility that function of these complexes is regulated separately from binding (Papp and M\u00fcller, 2006). The challenges now are to understand how PcG regulated domains are established, differently in different parasegments, and to describe the molecular mechanisms, including changes in chromosome structure, that block gene activity in H3K27 trimethylated domains.\n\n## Materials and methods\n\n### Gal4 and Gal80 sources\n\nA P element was built containing both Gal4 and Gal80 (Figure 1\u2014figure supplement 1A). The P promoter initially drives Gal4 transcription. The P-element used the Gal4 gene with an HSP70 terminator derived from pGawB (Brand and Perrimon, 1993), fused in frame to the P transposase gene after the 130th amino acid. The Gal4 gene was followed by a synthetic FRT site plus a polylinker. The Gal80 coding sequence with an HSP70 terminator, derived from pBPG80Uw (a gift of B Pfeiffer and G Rubin) was inserted into this polylinker. Another synthetic FRT site was inserted near the start of the Gal4 coding region at a unique SphI site. Thus, the Gal4 coding sequence is flanked by FRT sites, so that flipase-induced recombination can turn the P element into a Gal80 producer, with the same expression pattern. The P element was transformed into a random chromosomal position, and then used to swap into the position of an existing P enhancer trap in the BX-C (Bender and Hudson, 2000) or at the Antennapedia promoter. P element swapping (Sepp and Auld, 1999) is a low frequency event, but the lines were constructed with UAS/GFP as a marker for Gal4 activity, and thousands of first instar larvae could be quickly screened for one with the expected segmentally-restricted GFP pattern. A derivative of this vector was made by replacing the HSP70 terminator downstream of the Gal80 coding sequence with the poly(A) addition site from the Drosophila Alcohol Dehydrogenase (Adh) gene, recovered as a 317 bp PCR fragment from genomic DNA.\n\nWe have also taken known embryonic enhancers from the BX-C and inserted them into a second vector (Figure 1\u2014figure supplement 1B), which was derived from the initial vector with the Adh terminator. At a BamH1 site immediately upstream of the 5\u2032 FRT site, a fragment was inserted containing: (1) an 841 bp fragment from the 5\u2032 end of the gypsy mobile element (bases 189-1029), (2) an AscI site, and (3) a fragment from the engrailed gene (\u2212595 bp to +243 bp relative to the major transcription start site). The gypsy fragment includes twelve tandem binding sites for SUPPRESSOR OF HAIRY WING (SU(HW)). The engrailed fragment includes the proximal PRE (\u2018PSE2\u2019 [DeVido et al., 2008]), and is designed to fuse the first nine amino acids of ENGRAILED to the amino terminal end of Gal4. Enhancer fragments from the BX-C were cloned by PCR with AscI extensions on the primers, and inserted into the AscI site between the gypsy and engrailed fragments. The engrailed PRE was included to maintain the segmentally-restricted pattern through most of embryonic development, and the SU(HW) binding sequences were intended to insulate the promoter from endogenous enhancers near the insertion site. Transformants were recognized by Gal4-driven GFP patterns in young larvae, and, again, any Gal4 producer could be converted to a Gal80 producer. Sequences of these P elements are available on request.\n\n### Swap positions\n\nP element swapping was used to replace a P element at the Antennapedia P1 promoter (P[XP] Antpd02480, target site duplication: 3R: 2,825,198-2,825,205 [Thibault et al., 2004]), and a P element in the PS8 (iab-3) domain of the BX-C (HCJ192, target site duplication 3R: 12,673,279-12,673,286 [Bender and Hudson, 2000]). Other swaps were made with P elements in the PS5 (bx) and PS6 (bxd) domains, but these did not give sufficiently strong or uniform expression patterns. The Antp swap was subjected to P transposase to induce \u2018local hopping\u2019 and thereby increase the Gal4 expression level.\n\n### Enhancer fragments\n\nFragments used as enhancers inserted into the vector of Figure 1\u2014figure supplement 1B included:abx enhancer (for PS5 anterior limit) 3R: 12,508,951-12,513,096pbx enhancer (for PS6 anterior limit) 3R: 12,598,546-12,600,177iab-2 enhancer (for PS7 anterior limit) 3R: 12,636,236-12,639,140iab-3 enhancer (for PS8 anterior limit) 3R: 12,664,301-12,666,886\n\nOther fragments tested covered the \u2018bx\u2019 and \u2018bxd\u2019 enhancers, but these did not give sufficiently strong or uniform expression patterns. One insertion of a P element with the iab-3 enhancer fortuitously inserted 1.4 kb upstream of the Ubx transcription start site (target site duplication, 3R: 12,561,577-12,561,584). This gave a strong pattern with a sharp PS6 anterior limit, and was used as the Gal4 source for PS6 nuclei. Insertions with the abx and pbx enhancers were subjected to P transposase to adjust the levels of Gal4 and Gal80. D. melanogaster genome coordinates are from release 5.57.\n\n### INTACT marker\n\nFlies with the INTACT reporter in a P element on the third chromosome (w1118; p[w+; UASRG]6) were generously provided by Paul Talbert and Steve Henikoff. This P element was crossed to a P transposase source (P{ry[+t7.2] = Delta2-3}99B), and offspring were screened initially for darker eye color, most likely due to multiple copies of the INTACT element. Such stocks with INTACT insertions on the second or third chromosome were then crossed to a Gal4 source, and those with brightest mCherry expression were used for subsequent efforts to mark single parasegments. The higher copy INTACT chromosomes are designated \u2018INTACTn on II\u2019 and \u2018INTACTn on III\u2019.\n\n### Genotypes\n\nTo mark PS4, males homozygous for [w; abx en.>Gal80, pbx en.>Gal80; Antp swap>Gal4*, INTACT on III] were crossed to females homozygous for [w; INTACTn on II; INTACTn on III].\n\nTo mark PS5, males homozygous for [w; abx en.>Gal4*, pbx en.>Gal80*, UAS-GFP*] were crossed to females homozygous for [w; INTACTn on II; INTACTn on III].\n\nTo mark PS6, males homozygous for [w; INTACTn on II; iab-2 en.>Gal80, iab-3 swap>Gal80, INTACT on III] were crossed to females [w; bxd insert>Gal4, iab-2 en.>Gal80, iab-3 en.>Gal80, INTACT on III / TM6]. Only half of the resulting embryos had a Gal4-driven stripe.\n\nTo mark PS7, males homozygous for [w; iab-2 en.>Gal4, iab-3 swap>Gal80, INTACT on III] were crossed to females homozygous for [w; INTACTn on II; INTACTn on III].\n\nInsertions treated with P transposase are marked above with an asterisk (*).\n\n### Embryo collection and nuclear preps\n\nAgar plates with yeast paste were put on the PS4, PS5 or PS7 laying cages for 8 hr at 25\u00b0C (or 16 hr at 18\u00b0C), and then the eggs were aged for another 5 hr at 25\u00b0C (or 10 hr at 18\u00b0C). For PS6, a 6 hr collection was aged for a further 4 hr. The eggs were dechorionated (2 min in 50% bleach) and fixed in fixation buffer (5% formaldehyde, 100 mM NaCl, 50 mM Hepes, 1 mM EDTA, 0.5 mM EGTA, pH 8.0) under heptane, on a rotator for 15 min at 25\u00b0C. The fixed embryos were washed with stop buffer (125 mM glycine, 130 mM NaCl, 7 mM Na2HPO4, 3 mM KH2PO4, 0.1% Triton X100, pH 8.0) for 2 min at 25\u00b0C, and then briefly with PBS (130 mM NaCl, 7 mM Na2HPO4, 3 mM KH2PO4) plus 0.1% Triton X100. The washed embryos were collected on a nytex filter, and examined under an epifluorescence stereoscope. Embryos that appeared too old, with fluorescent nuclei anterior to the desired parasegment, were manually removed. The remaining eggs were collected and weighed in a 1.5 ml microfuge tube, flash frozen in liquid nitrogen, and stored at \u221275\u00b0C.\n\nFor the isolation of nuclei, \u223c100 mg of embryos were suspended in 5 ml of BBT buffer (55 mM NaCl, 40 mM KCl, 15 mM MgSO4, 5 mM CaCl2, 10 mM Tricine, 20 mM dextrose, 50 mM sucrose, 0.1% bovine serum albumin (Miles PENTEX), 0.01% Triton X-100, pH7.0) plus 100 \u00b5l protease inhibitor cocktail (Roche Complete, EDTA-free), and disrupted with 10 strokes in a Dounce homogenizer with a loose pestle, then 10 strokes with a tight pestle. The homogenate was spun at 275 \u00d7 g for 1 min to remove large debris. The resulting supernatant was spun at 1000 \u00d7 g for 10 min to pellet the nuclei. The pellet was resuspended in 2 ml BBT buffer plus 40 \u00b5l protease inhibitor, and homogenized again, 20 strokes with the tight pestle. The homogenate was passed through a cell strainer cap with a 40 \u00b5m nylon mesh and stored at 0\u00b0C. Hoechst 33,342 dye was added (2 \u00b5l of 10 mg/ml solution) before sorting.\n\n### Sorting\n\nNuclei were sorted on a BD Biosciences (San Jose, CA) FACSAria IIu instrument. The fluorescence from Hoechst 33342 (405 nM excitation, 425\u2013475 nm emission) was used to select for a 2N DNA content, thus avoiding clumps of nuclei. These single nuclei were secondarily selected for mCherry fluorescence (594 nM excitation, 619\u2013640 nM emission) stronger than 99.9% of nuclei from control (Oregon R) embryos. Recovered nuclei constituted between 1 and 6% of total single nuclei (Figure 1\u2014figure supplement 1C), depending of the parasegment under selection. Recovered nuclei were kept at 0\u00b0C, and used for chromatin preparation within 5 hr.\n\n### Chromatin preparation\n\nThe yield of sorted nuclei in sort buffer (PBS) was determined with a hemacytometer, and 50\u2013200 K nuclei were used for each ChIP. Chromatin fragmentation was accomplished either with micrococcal nuclease (MNase) or bath sonication. For MNase fragmentation, nuclei in sort buffer were supplemented with PBS containing 0.1% Triton-X100 (PBS-Tx) to a volume of 400 \u00b5l, and CaCl2 to 1 mM. Nuclei were pre-warmed to 37\u00b0C and digested with 12U MNase (Worthington Biochemical) for 3 min. Digestion was stopped by moving the tubes to ice and adding 10 \u00b5l of 250 mM EDTA, 250 mM EGTA, and nuclei were briefly sonicated in a Diagenode Bioruptor (Denville, NJ) (3 min, high intensity, 30 s on, 30 s off). For bath sonication, the nuclear suspension in sort buffer was adjusted to ChIP buffer conditions (10 mM Tris pH8, 100 mM NaCl, 0.1% sodium deoxycholate, 0.5% sarkosyl, 1% Triton-X100) in a volume of 500 \u00b5l. Nuclei were sonicated for 30 min at high intensity (30 s on, 30 s off) in a Bioruptor. Fragmented chromatin was snap frozen and stored at \u221280\u00b0C prior to ChIP.\n\n### ChIP-seq\n\nMNase fragmented chromatin was adjusted to ChIP buffer conditions in a final volume of 500 \u00b5l, and incubated on ice for 5 min. Prior to ChIP, protease inhibitors (COMPLETE, Roche) were added to either MNase fragmented chromatin or sonicated chromatin. Chromatin was subjected to a high speed spin at 4\u00b0C for 10 min. Supernatant was moved to a new low retention tube, 1% input was removed and stored at 4\u00b0C, and and the remaining chromatin was incubated overnight with the appropriate antibody at 4\u00b0C. After a high speed spin at 4\u00b0C for 10 min, supernatant was moved to a low retention tube with 10 \u00b5l prewashed protein A dynabeads (Life Technologies), and incubated at 4\u00b0C for 1\u20132 hr with gentle rotation. After six rinses with ice cold ChIP buffer, immunoprecipitates were eluted from the beads with two successive additions of 125 \u00b5l freshly made elution buffer (0.2% SDS, 0.1 M NaHCO3, 5 mM DTT) incubated at 65\u00b0C for 10 min. Eluates were combined, and adjusted with Tris and EDTA to a final concentration of 10 mM Tris pH8 and 2 mM EDTA. 250 \u00b5l elution buffer was added to the reserved input and likewise adjusted. DNA cleanup began by incubating with RNase (DNase-free, Roche) at 37\u00b0C for 30 min, proteinase K (PCR-grade, Roche) at 55\u00b0C for 1 hr, and crosslinks were reversed by incubating at 65\u00b0C for 1 hr. After two phenol-chloroform extractions and one chloroform extraction, purified DNA was ethanol precipitated in the presence of sodium acetate and Glycoblue (Ambion). Sequencing library construction was performed according to (Bowman et al., 2013). Libraries were sequenced on an Illumina (San Diego, CA) HiSeq2000, HiSeq2500, or MiSeq according to manufacturer's instructions.\n\n### ChIP antisera\n\nanti-K27me3 (Active Motif 39155), anti-K27ac (Active Motif 39,136), anti-K4me3 (07473; Millipore), anti-CTCF (Smith et al., 2009), anti-Ph (residues 772\u2013984 [Oktaba et al., 2008]), anti-CP190 (Pai et al., 2004), anti-Pol-II (ab5131; Abcam), anti-Pc (Schuettengruber et al., 2009), anti-SU(Z)12 (M\u00fcller et al., 2002).\n\n### Data analysis\n\nChIP-seq reads were aligned to the dm3 genome using BWA and allowing up to one mismatch. Potential PCR duplicates, tags with multiple alignments, and paired-end reads with insert size greater than 1 kb were removed from further analysis. We calculated normalized positional coverage as previously described (Pinter et al., 2012; Yildirim et al., 2012). Briefly, experimental coverage was normalized by corresponding input coverage for each position: nnorm = [(n+1)/(ni+1)] * [Ni/N], where n, ni, N, and Ni are positional coverages in experiment and input, and total genome coverages in experiment and input, respectively.\n\nTo determine regions of enrichment, we summed the coverage within sliding windows of size 1 kb and step 50 bp across the entire genome. The same was calculated for tags assigned a random location within the chromosome. The resulting distribution of random window coverages was then used to determine the significance of observed window coverages. Individual p-value cutoffs were selected based on manual inspection of each experiment. For samples with replicates, only regions significant in both replicates were used.\n\nFor genome-wide analysis of coverage difference between two parasegments for H3K27me3, we first merged the significant regions of enrichment from the different parasegments to create an aggregate set of regions of interest. Regions greater than 50 kb were split into equally sized sub-regions. For each region we calculated the density, or total normalized coverage divided by region length. Replicate density values were averaged. To find differences, region densities for two parasegments were scatter plotted against one another, and a line of best fit calculated. Points located furthest away from this fit line were identified as the candidate differing regions. This approach allows us to account for the variation in sequencing coverage and noise for each sample and parasegment.\n\nSPP (Kharchenko et al., 2008) was used to generate tag density profiles for visualization. For each chip ChIP experiment, we followed standard methods to estimate the binding peak separation distance, remove low quality or anomalous tags, and generate an input-subtracted, Gaussian-smoothed tag density profile.\n",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "41610981-b5c9-4566-af0f-64777e226080",
+      "submission_id": "b57d1173-9b79-4b90-9df3-9fa4ecd299ab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Danny Reinberg, Howard Hughes Medical Institute, New York University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02833.010](https://doi.org/10.7554/eLife.02833.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: although it is not typical of the review process at eLife, in this case the editors decided to include the reviews in their entirety for the authors\u2019 consideration as they prepared their revised submission.]\n\nThank you for sending your work entitled \u201cH3K27 modifications define segmental regulatory domains in the Drosophila bithorax complex\u201d for consideration at eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nWe think that the study is solid and has its value. However, we collectively believe that the current data set (H3-K27me3/ PH/ CTCF) is too preliminary compared to earlier studies but that it might become suitable if the analysis is expanded as suggested below.\n\nThe authors should look minimally at PRC2 binding and RNA Pol II occupancy. These two profiles would help to clarify whether the 'constitutive' binding of PRC2, PRC1 etc. at the HOX gene Ubx (i.e. in Ubx OFF and Ubx ON cells) that was reported back in 2006 is a general principle. Similarly, it was shown that several components of the general transcription machinery are bound at Ubx in the OFF state, and so it would be good to know whether assembly of the RNA Pol II machinery even at permanently repressed Polycomb target genes is a general principle.\n\nWe also noticed that the citation of relevant scientific literature is missing.\n\nReviewer #1:\n\nFigure 1:\n\nCan the authors computationally overlay the different parasegments that are labeled at each time point? Currently, it is visually difficult to assess the level of overlap or lack thereof between each of the labeled parasegments.\n\nIs it possible to label any upstream parasegments? The question of contamination of PS4 by upstream signal may thereby be resolved.\n\nThe authors should provide antibody stainings of genes within the BX-C cluster for us to align against the labeled parasegments.\n\nFigure 2:\n\nWhat about the Antp-C locus? Does H3K27me3 profiling parallel what is seen in the BX-C locus? Does dCTCF localize to boundaries here as well?\n\nAs there are many characterized insulator proteins in the fruit fly, how does dCTCF co-localize with these factors? I.e. CP190, BEAF-32, Su(Hw)?\n\nHow is a given constitutive CTCF site chosen to be \u201cactive\u201d in performing a boundary function? For example, in PS7, why are activation signals able to push through the most anterior dCTCF sites? Is specificity achieved through association with distinct insulator partners at different CTCF sites?\n\nHow does the H3K27me3 pattern compare to the distribution of E(Z) or other PRC2 components? Does PRC2 only sit at PREs, from which the modification spreads? Is PRC2 absent from upstream PREs present within an activated region of BX-C? If present, what inhibits PRC2 activity at these sites?\n\nSince the authors are able to purify nuclei from distinct parasegments of the fly, they should be able to provide RNA-seq or Pol-II occupancy tracks to correlate with presence of repressive H3K27me3 and active H3K27ac.\n\nThe genetic system employed nicely allows for the isolation of parasegments during time points of development. What are the dynamics of the activation of the BX-C locus? Is the transition gradual or immediate? Is it possible to ChIP some of the transcription factors thought to activate these genes?\n\nWhat is the 3D conformation of the parasegments within the BX-C cluster? How do they compare to each other? Are active and repressive domains spatially partitioned?\n\nHow is the expression and H3K27 distribution altered in mutants (null or hypomorphs) of Polycomb genes? Is there simply a decrease in H3K27me3, or is the H3K27me3 boundary shifted as well?\n\nFigure 3:\n\nHow does the distribution of H2AK119Ub correlate with Polyhomeotic? Does it form blocks within transcriptionally repressed chromatin, as is the case for PRC2?\n\nReviewer #3:\n\n1 )The authors should analyze the PRC2 binding profile (e.g. ChIP with antibody against E(z))in PS4, 5, 6 and 7, or at the minimum, just in PS7 as they did for Ph, CTCF etc.. This would address the conceptually important point whether the binding of PRC2 at PREs is constitutive (i.e. PRC2 bound not only in the inactive but also in the active state; see also below) and that the control takes place at the level of deposition of the modification. Given that the authors may already have chromatin from PS7 nuclei or can generate it as they did for several of their experiments in the manuscript, I do not think that it is asking too much to perform such a ChIP experiment.\n\n2) This point is directly connected to the first point. The authors must discuss their findings in the context of the findings from earlier studies (i.e. Papp and M\u00fcller, G&D 2006; Kwong et al., PLOS Genetics 2008; Soshnikova and Duboule, Science 2009). Directly relevant to the work by Bowman here, Papp and Muller had compared the chromatin of the HOX gene Ubx in wing imaginal disc cells where Ubx is inactive and in haltere and third leg discs where the gene is active. One key conclusion from that work was that PRC2 (as well as PRC1 and PhoRC) is bound at Ubx both in the inactive and in the active state (with subtle differences) but that the domains of H3-K27me3 are different in the two states, with H3-K27me3 covering the entire upstream, promoter and coding region in wing disc cells but being absent from the promoter and coding region in haltere and third leg disc cells. So the observation that H3-K27me3 domains correlate with inactivity of regulatory regions in the bithorax complex is not new but the nice data shown here in embryos (with modern genomic techniques) extend and refine these findings. From the above it also directly follows that it is key to find out about PRC2 binding at the bx, bxd and abd-A PREs in PS7 (Point 1).\n",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "810190e4-c7ee-4535-a0fa-10cff90c6d3f",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C1",
+      "claim": "The bithorax complex (BX-C) in Drosophila melanogaster is a cluster of homeotic genes that determine body segment identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The bithorax complex (BX-C) in Drosophila melanogaster is a cluster of homeotic genes that determine body segment identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing the function of the BX-C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "9b84cc67-d1b9-4fa8-bb3a-94e6841fbf61",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C2",
+      "claim": "Expression of BX-C genes is governed by cis-regulatory domains, one for each parasegment.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of these genes is governed by cis-regulatory domains, one for each parasegment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known feature of BX-C organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "20604f46-e685-4b4a-bb1d-503ed13d973b",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C3",
+      "claim": "Stable repression of BX-C regulatory domains depends on Polycomb Group (PcG) functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Stable repression of these domains depends on Polycomb Group (PcG) functions, which include trimethylation of lysine 27 of histone H3 (H3K27me3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by established knowledge about PcG function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "5c8e3cf2-e3c7-4132-b84f-008abc528b29",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C4",
+      "claim": "Polycomb Group functions include trimethylation of lysine 27 of histone H3 (H3K27me3).",
+      "claim_type": "EXPLICIT",
+      "source": "Stable repression of these domains depends on Polycomb Group (PcG) functions, which include trimethylation of lysine 27 of histone H3 (H3K27me3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about PcG molecular function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "75e6b01b-bd2f-4305-82d9-e2e6f84591da",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C5",
+      "claim": "H3K27me3 profiles across the BX-C in successive parasegments showed a 'stairstep' pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The H3K27me3 profiles across the BX-C in successive parasegments showed a 'stairstep' pattern that revealed sharp boundaries of the BX-C regulatory domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the abstract and shown in Figure 2C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "4935626d-85b6-4ef6-a8bf-690f193303bd",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C6",
+      "claim": "The stairstep pattern of H3K27me3 revealed sharp boundaries of the BX-C regulatory domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The H3K27me3 profiles across the BX-C in successive parasegments showed a 'stairstep' pattern that revealed sharp boundaries of the BX-C regulatory domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "aab5be24-00de-42fe-adf2-9aceadb9cd8a",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C7",
+      "claim": "Acetylated H3K27 was broadly enriched across active domains in a pattern complementary to H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetylated H3K27 was broadly enriched across active domains, in a pattern complementary to H3K27me3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "8166edfa-d07d-419a-a1da-4149ac2690e2",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C8",
+      "claim": "CTCF bound the borders between H3K27 modification domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The CCCTC-binding protein (CTCF) bound the borders between H3K27 modification domains; it was retained even in parasegments where adjacent domains lack H3K27me3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 2G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "aee2cd3d-4c69-49dd-b95e-849aa1fd1bd4",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C9",
+      "claim": "CTCF was retained at domain borders even in parasegments where adjacent domains lack H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "The CCCTC-binding protein (CTCF) bound the borders between H3K27 modification domains; it was retained even in parasegments where adjacent domains lack H3K27me3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "3daa99d8-a751-402f-9a14-dd62ad945aa7",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C10",
+      "claim": "A mutation in Polycomb was discovered for its segmental transformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a mutation in Polycomb, the founding member of the PcG, was discovered for its segmental transformations (Lewis, 1947).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact cited from Lewis, 1947.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "ddbaeeb7-ea2f-4c4e-860e-4bec9999a267",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C11",
+      "claim": "The BX-C contains three homeobox-containing genes: Ultrabithorax (Ubx), abdominal-A (abd-A), and Abdominal-B (Abd-B).",
+      "claim_type": "EXPLICIT",
+      "source": "The regulatory domains control three homeobox-containing genes of the complex, Ultrabithorax (Ubx), abdominal-A (abd-A), and Abdominal-B (Abd-B) (Maeda and Karch, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Maeda and Karch, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "1e56c0b0-c8fd-4424-af68-9a05d52c6346",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C12",
+      "claim": "The BX-C regulatory domains encompass nine regulatory domains, each for a different parasegment.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic functions are now thought to encompass nine regulatory domains, each for a different parasegment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as current understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "d07fa0cd-f96a-42cd-86d7-a7eff3f92892",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C13",
+      "claim": "The entire BX-C is heavily marked with H3K27me3 in whole embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire BX-C is heavily marked with H3K27me3 in whole embryos (Schuettengruber et al., 2009; N\u00e8gre et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "a50c4dd5-65b9-47aa-9a76-fdba0504a81c",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C14",
+      "claim": "H3K27me3 is necessary for maintaining repression of BX-C genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This histone modification is necessary for maintaining repression of BX-C genes (Pengelly et al., 2013), yet these genes are not repressed throughout the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Pengelly et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "4572ea9c-6b96-4e1a-9209-8eb385d8922e",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C15",
+      "claim": "Papp and M\u00fcller (2006) observed loss of the K27me3 mark across the Ubx transcription unit in haltere and third leg imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Papp and M\u00fcller (2006) observed loss of the K27me3 mark across the Ubx transcription unit in haltere and third leg imaginal discs, tissues where Ubx is transcribed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of prior work by Papp and M\u00fcller.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "2100d2f8-0564-4efb-885f-aa9f3b6fc64a",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C16",
+      "claim": "Single parasegments were marked with a combination of Gal4 and Gal80 drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we marked single parasegments with a combination of Gal4 and Gal80 drivers, and developed a nuclear sorting-chromatin immunoprecipitation-sequencing protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "c84aeece-54f4-4acd-be9d-2f3bb7c38fb8",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C17",
+      "claim": "Gal80 binds to and inactivates Gal4, leaving Gal4 activity in a single parasegment.",
+      "claim_type": "EXPLICIT",
+      "source": "Gal80 binds to and inactivates Gal4, leaving Gal4 activity in a single parasegment (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism of the Gal4/Gal80 system used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "b4f998c8-1119-4b11-afb0-3b0afc3f1d97",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C18",
+      "claim": "The largest differences in H3K27me3 enrichment between parasegments occurred at the BX-C.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest differences in H3K27me3 enrichment between parasegments occurred at the BX-C (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2A and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "42733f83-43cd-47e1-8efd-e47210869bcc",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C19",
+      "claim": "The BX-C exhibited a striking 'stairstep' pattern of H3K27me3 enrichment across parasegments PS4-PS7.",
+      "claim_type": "EXPLICIT",
+      "source": "While the H3K27me3 profiles in our four adjacent parasegments were very similar elsewhere in the genome (Figure 2\u2014figure supplement 1), the BX-C exhibited a striking 'stairstep' pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding shown in Figure 2C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "e71bbcb4-d46d-40cb-a1e2-2fbb6e2eb8f5",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C20",
+      "claim": "Large expanses of H3K27me3 enrichment were lost as we moved from anterior to posterior along the body axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Large expanses of H3K27me3 enrichment were lost as we moved from anterior to posterior along the body axis (Figure 2C\u2013F), revealing the locations of the regulatory domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding shown in Figure 2C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "41b69082-1dec-45de-ab1a-d4183e5f2427",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C21",
+      "claim": "The BX-C is almost completely repressed in PS4, with only a few neuronal cells on the midline showing UBX expression in embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The BX-C is almost completely repressed in PS4, with only a few neuronal cells on the midline showing UBX expression in embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing PS4 H3K27me3 patterns.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "0dd75286-3fee-40c5-a386-565e66c1ba33",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C22",
+      "claim": "The PS5 regulatory domain is defined by the low level of H3K27me3 modification across the leftmost (proximal) 92 kb of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The PS5 regulatory domain, associated with the bithorax (bx) mutant lesions, is defined by the low level of H3K27me3 modification across the leftmost (proximal) 92 kb of the complex (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "c90e9a12-4bc6-47c4-8f74-70e5bfbc0b17",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C23",
+      "claim": "There is a sharp transition to full H3K27me3 coverage at a position upstream of the Ubx transcription start site in PS5.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a sharp transition to full H3K27me3 coverage at a position upstream of the Ubx transcription start site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results describing PS5 and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "ae8a6d62-cc98-4401-ae9f-76139eb4bbc3",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C24",
+      "claim": "In PS6, the leftmost 137 kb of the BX-C is clear of the K27me3 mark.",
+      "claim_type": "EXPLICIT",
+      "source": "In PS6, the leftmost 137 kb of the BX-C is clear of the K27me3 mark (Figure 2E); the additional K27me3-clear region reveals the PS6 domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "1f310a34-ecf1-437b-9f0f-f39661496e94",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C25",
+      "claim": "The transition point to full K27 methylation in PS6 coincides with the genetically defined Fub border between the PS6 and the PS7 regulatory domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition point to full K27 methylation coincides with the genetically defined Fub border between the PS6 and the PS7 regulatory domains (Bender and Lucas, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to Bender and Lucas, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "5720b046-5ce6-40af-bc84-f7edcfbd773e",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C26",
+      "claim": "In PS7, an additional 36 kb was depleted of H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "In PS7, an additional 36 kb was depleted of H3K27me3 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "7b417f02-cef5-4204-afe9-8e3b6d54da5d",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C27",
+      "claim": "The PS7 H3K27me3-depleted region includes the abd-A transcription unit and is associated with the infraabdominal-2 (iab-2) class of genetic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "This region includes the abd-A transcription unit, and is associated with the infraabdominal-2 (iab-2) class of genetic mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results describing PS7.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "c0aa42e6-17f2-44df-9bf4-5061b64e6a13",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C28",
+      "claim": "A reproducible mound of H3K27me3 was observed in PS7 nuclei close to the Ubx promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a reproducible mound of H3K27me3 in PS7 nuclei close to the Ubx promoter (arrow in Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "1ee1b30c-a6ab-4ff3-b68a-a28068af70c0",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C29",
+      "claim": "The H3K27me3 mound near the Ubx promoter in PS7 may reflect repression of Ubx by abd-A in this parasegment, mediated by the PcG.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect repression of Ubx by abd-A in this parasegment (Karch et al., 1990), mediated by the PcG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with citation to Karch et al., 1990.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "1913c1a2-dcc7-47aa-a6da-6ada457ccb35",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C30",
+      "claim": "The sharp discontinuities in K27 methylation coincide with binding sites of CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "The sharp discontinuities in K27 methylation coincide with binding sites of the CCCTC-binding factor (CTCF), which is thought to impose boundaries on regulatory domains in many systems (Ohlsson et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2G-H, with citation to Ohlsson et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "d5abc2ff-9f4f-4cdc-bbe2-907da60f2761",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C31",
+      "claim": "CTCF in PS7 nuclei gives a pattern virtually identical to the whole embryo pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF in PS7 nuclei gives a pattern virtually identical to the whole embryo pattern (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "4184b153-fb60-480b-b0da-fc4ecc59bba0",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C32",
+      "claim": "The activation state of a domain is not coupled to the presence of CTCF at its borders.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, the activation state of a domain is not coupled to the presence of CTCF at its borders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that CTCF patterns are similar in active and repressed states.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "54574c3d-1b3c-412f-afb2-c72e6e8f228b",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C33",
+      "claim": "CTCF is present in a protein complex with Centrosomal Protein 190 (CP190).",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF is present in a protein complex with Centrosomal Protein 190 (CP190) (Mohan et al., 2007), and the binding sites of these proteins often overlap (N\u00e8gre et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Mohan et al., 2007 and N\u00e8gre et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "71bcf7e7-749d-4a96-a7d6-12c2566ec478",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C34",
+      "claim": "The binding sites of CTCF and CP190 often overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF is present in a protein complex with Centrosomal Protein 190 (CP190) (Mohan et al., 2007), and the binding sites of these proteins often overlap (N\u00e8gre et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to N\u00e8gre et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "faeaa788-d7e7-4f8d-86f5-ca35f3ae21fc",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C35",
+      "claim": "CP190 sites largely coincide with CTCF sites in the BX-C.",
+      "claim_type": "EXPLICIT",
+      "source": "The CP190 sites largely coincide with CTCF sites in the BX-C, and, as with CTCF, there is little difference between the CP190 pattern in unsorted nuclei (Figure 2I; N\u00e8gre et al., 2010) and in PS7 nuclei (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "ccdd4c9e-5ac5-4661-bcba-e56984a27561",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C36",
+      "claim": "There is little difference between the CP190 pattern in unsorted nuclei and in PS7 nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The CP190 sites largely coincide with CTCF sites in the BX-C, and, as with CTCF, there is little difference between the CP190 pattern in unsorted nuclei (Figure 2I; N\u00e8gre et al., 2010) and in PS7 nuclei (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "8de05798-8c01-4519-b6cf-d8238742791d",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C37",
+      "claim": "There is a noteworthy CP190 site immediately proximal to the 3\u2032 end of the Ubx transcription unit, separating Ubx from the adjacent gene (modular serine protease).",
+      "claim_type": "EXPLICIT",
+      "source": "There is a noteworthy CP190 site immediately proximal to the 3\u2032 end of the Ubx transcription unit, separating Ubx from the adjacent gene (modular serine protease).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "3e7e5163-c307-41f7-8ad0-6d8955aef03d",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C38",
+      "claim": "Acetylation of H3K27 (H3K27ac) is correlated with active enhancer regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetylation of H3K27 (H3K27ac) is correlated with active enhancer regions (Heintzman et al., 2009; Kharchenko et al., 2011), and is anti-correlated with PcG function (Tie et al., 2009), prompting us to examine its pattern in the BX-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "2e420222-0117-445d-bc00-b9181a5626fc",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C39",
+      "claim": "H3K27ac is anti-correlated with PcG function.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetylation of H3K27 (H3K27ac) is correlated with active enhancer regions (Heintzman et al., 2009; Kharchenko et al., 2011), and is anti-correlated with PcG function (Tie et al., 2009), prompting us to examine its pattern in the BX-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Tie et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "db6e2fb5-e7dd-48b1-838b-6cee1069a90d",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C40",
+      "claim": "H3K27ac showed the opposite pattern to H3K27me3 in the BX-C.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27ac showed the opposite pattern to H3K27me3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "c37a3414-51d1-4f0c-82c4-cb6fc560db06",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C41",
+      "claim": "There is relatively little H3K27ac across the BX-C in unsorted nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "There is relatively little H3K27ac across the BX-C in unsorted nuclei, but in PS7, the active domains show broad enrichment for H3K27ac (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "4b165a7c-b7e6-4730-a3db-91c0b5140bbc",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C42",
+      "claim": "In PS7, the active domains show broad enrichment for H3K27ac.",
+      "claim_type": "EXPLICIT",
+      "source": "There is relatively little H3K27ac across the BX-C in unsorted nuclei, but in PS7, the active domains show broad enrichment for H3K27ac (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "dc8df3f9-3590-4073-a4db-fc465aa53d17",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C43",
+      "claim": "Within each active domain, H3K27ac coverage is boundary-to-boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each domain, however, the coverage is boundary-to-boundary, although many enhancers in the BX-C are not active in embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "e8909639-3357-491e-83ad-66cb4b4db235",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C44",
+      "claim": "H3K27ac is a mirror to H3K27me3, in extent, if not in density.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, H3K27ac is a mirror to H3K27me3, in extent, if not in density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement in the results based on the data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "183c387b-f622-4151-bd54-7bacb90d7b09",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C45",
+      "claim": "ChIP of serine-5-phosphorylated RNA polymerase II (Pol-II) in whole embryos shows the transcription units for Ubx, abd-A, and Abd-B.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP of serine-5-phosphorylated RNA polymerase II (Pol-II) (transcriptionally engaged polymerase) in whole embryos shows the transcription units for Ubx, abd-A, and Abd-B (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "f86f3077-fcec-4149-82f6-b2f3de322988",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C46",
+      "claim": "There is an unexpected Pol-II peak \u223c14.5 kb upstream of the Ubx promoter, coincident with the CTCF binding site at the border between the PS5 and PS6 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an unexpected Pol-II peak \u223c14.5 kb upstream of the Ubx promoter, coincident with the CTCF binding site at the border between the PS5 and PS6 domains (arrow in Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "78aa594d-fd8b-4779-bbbf-d33bcd4c134a",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C47",
+      "claim": "Pol-II in PS7 marks the Ubx and abd-A transcription units.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol-II in PS7 (Figure 3E) marks the Ubx and abd-A transcription units, as expected from the UBX and ABD-A protein patterns (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "e8152528-0d2d-47b5-a0be-a6fc7ed8456e",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C48",
+      "claim": "There is a Pol-II peak at the major Abd-B promoter in PS7, although Abd-B RNA and protein are absent from PS7.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also a Pol-II peak at the major Abd-B promoter (arrow in Figure 3E), although Abd-B RNA and protein are absent from PS7 (Celniker et al., 1990; Boulet et al., 1991) and this region is H3K27 trimethylated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3E, with citations to Celniker et al., 1990 and Boulet et al., 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "c363b408-8170-4c76-bdb1-0ddc025676d0",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C49",
+      "claim": "Analogous localization of Pol-II at the Abd-B promoter in wing and haltere discs was reported by Chopra et al. (2009), who argued that these polymerase molecules were 'paused'.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous localization of Pol-II at the Abd-B promoter in wing and haltere discs was reported by Chopra et al. (2009), who argued that these polymerase molecules were 'paused'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of prior work by Chopra et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "5a8b3484-89da-423c-93e7-dcc3e1bf3004",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C50",
+      "claim": "The H3K4me3 mark aligns with the Ubx and abd-A promoters in PS7 nuclei (but not Abd-B).",
+      "claim_type": "EXPLICIT",
+      "source": "The H3K4me3 mark aligns with the Ubx and abd-A promoters in PS7 nuclei (but not Abd-B; Figure 3G) and is reduced in mixed cells (Figure 3F); this histone mark has been seen at active promoters in other systems (Ruthenburg et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3G, with citation to Ruthenburg et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "2ffb4b32-e895-4e4a-a153-956ef2dc2049",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C51",
+      "claim": "The POLYCOMB subunit of PRC1 is known to bind to the H3K27me3 modification through its chromodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "The POLYCOMB subunit of PRC1 is known to bind to the H3K27me3 modification through its chromodomain (Fischle et al., 2003), and so PRC1 localization might be expected to correspond to the stair-step H3K27me3 pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Fischle et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "3e669486-c6bb-4877-9089-7eeba1f096c9",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C52",
+      "claim": "PC profiles show sharp peaks at PREs in nuclei from whole embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Our PC profiles show sharp peaks at PREs in nuclei from whole embryos (Figure 3H), matching the profile for POLYHOMEOTIC, another PRC1 subunit (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "65532f08-58af-4a14-aac2-801d263ded59",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C53",
+      "claim": "In PS7 nuclei, both POLYCOMB and POLYHOMEOTIC subunits of PRC1 are bound to the Polycomb Response Elements of the active PS6 and PS7 domains at levels comparable to those in the whole embryo profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In PS7 nuclei, we find both the POLYCOMB and POLYHOMEOTIC subunits of PRC1 are bound to the Polycomb Response Elements of the active PS6 and PS7 domains at levels comparable to those in the whole embryo profile (Figure 3H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3H-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "e145e76c-1a95-4b39-ad6e-83e9f19cecd6",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C54",
+      "claim": "In the active PS5 domain, the levels of PC and PHO at the PS5 PRE are reduced, relative to the whole embryo profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In the active PS5 domain, the levels of PC and PHO at the PS5 PRE are reduced, relative to the whole embryo profile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3H-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "94bbe36b-25b5-458a-95af-e896eb8e0b7a",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C55",
+      "claim": "Papp and M\u00fcller (2006) have reported reduced retention of PRC1 and 2 components at the PRE in the PS5 domain in haltere and third leg imaginal discs, where the PS5 domain is in the active state and K27me3 is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Papp and M\u00fcller (2006) have reported reduced retention of PRC1 and 2 components at the PRE in the PS5 domain in haltere and third leg imaginal discs, where the PS5 domain is in the active state and K27me3 is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of prior work by Papp and M\u00fcller, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "a45900ea-01a1-443f-bc3f-cdf6f81918db",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C56",
+      "claim": "PRC1 presence is apparently not a determinant of repressed domains, although its subunits are clearly needed for PcG repression.",
+      "claim_type": "EXPLICIT",
+      "source": "PRC1 presence is apparently not a determinant of repressed domains, although its subunits are clearly needed for PcG repression (Simon and Kingston, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data, with citation to Simon and Kingston, 2013.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "a13ff99b-8adc-45a4-a470-372e4b9fa27c",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C57",
+      "claim": "The profiles for SU(Z)12, a PRC2 component, look similar to those of the PRC1 proteins, POLYCOMB and POLYHOMEOTIC.",
+      "claim_type": "EXPLICIT",
+      "source": "The profiles for SU(Z)12, a PRC2 component (Figure 3L,M), look similar to those of the PRC1 proteins, POLYCOMB and POLYHOMEOTIC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3L-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "212b0e0a-b874-4ed7-8dad-26864746b0a8",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C58",
+      "claim": "There are major peaks of SU(Z)12 at the known PREs in both whole embryo and PS7 nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "There are major peaks at the known PREs in both whole embryo and PS7 nuclei, although in PS7, the PREs in active domains have reduced levels of SU(Z)12.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3L-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "2a0d72e0-3c68-4302-82c5-3aabdae4a058",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C59",
+      "claim": "In PS7, the PREs in active domains have reduced levels of SU(Z)12.",
+      "claim_type": "EXPLICIT",
+      "source": "There are major peaks at the known PREs in both whole embryo and PS7 nuclei, although in PS7, the PREs in active domains have reduced levels of SU(Z)12.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "240e4f3a-6aa0-4f89-8af5-f538a8ac39dd",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C60",
+      "claim": "SU(Z)12 is present at the transcription start sites of Ubx, abd-A, and Abd-B.",
+      "claim_type": "EXPLICIT",
+      "source": "SU(Z)12 is also present at the transcription start sites of Ubx, abd-A, and Abd-B; binding at these promoters is more apparent than it is for PRC1 proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3L-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "80218e9b-1909-4b50-abea-251f34f13832",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C61",
+      "claim": "Binding of SU(Z)12 at the Ubx, abd-A, and Abd-B promoters is more apparent than it is for PRC1 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "SU(Z)12 is also present at the transcription start sites of Ubx, abd-A, and Abd-B; binding at these promoters is more apparent than it is for PRC1 proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 3L-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "7cbf9598-de0d-4ac4-84e3-48fc52896eb0",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C62",
+      "claim": "In the PS6 domain of the BX-C, there are many enhancers to drive Ubx expression in specific cells at specific developmental times, all of which are blocked in parasegments one through five, but active in parasegments 6 through 12.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PS6 domain of the BX-C, for example, there are many enhancers to drive Ubx expression in specific cells at specific developmental times, all of which are blocked in parasegments one through five, but active in parasegments 6 through 12 (Bender and Lucas, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to Bender and Lucas, 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "f74ded24-38a4-4182-89bd-9e101df5c525",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C63",
+      "claim": "Individual enhancers in the BX-C need not include a segmental address specified by gap and pair-rule DNA-binding factors; their function is segmentally restricted by the domain architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual enhancers need not include a segmental address that is specified, for example, by gap and pair-rule DNA-binding factors; their function is segmentally restricted by the domain architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "0f7427bb-5933-423b-8a8c-4ecf975d4ab9",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C64",
+      "claim": "BX-C enhancers will drive expression in a different parasegment when inserted into a different domain (as in the Cbx transposition).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, these enhancers will drive expression in a different parasegment when inserted into a different domain (as in the Cbx transposition, Peifer et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to Peifer et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "56a7cc54-b17a-4fb5-970e-6c9052a68e13",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C65",
+      "claim": "Each BX-C domain has a distinctive collection of enhancers; the UBX pattern in PS5 is quite different from that in PS6.",
+      "claim_type": "EXPLICIT",
+      "source": "Each domain has a distinctive collection of enhancers; the UBX pattern in PS5 is quite different from that in PS6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on known biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "caae016b-239c-48c4-a31e-51eb2d6f3600",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C66",
+      "claim": "The all-or-nothing H3K27me3 coverage of the BX-C parasegmental domains validates and refines the domain model.",
+      "claim_type": "EXPLICIT",
+      "source": "The all-or-nothing H3K27me3 coverage of the BX-C parasegmental domains validates and refines the domain model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement in the discussion based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "0b922b8e-04a8-40ad-a0e3-ff34b38927b5",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C67",
+      "claim": "K27me3 is uniformly removed across the PS5 and PS7 domains in PS5 and PS7, even though the activated genes in those parasegments are only transcribed in a subset of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, K27me3 is uniformly removed across the PS5 and PS7 domains in PS5 and PS7, even though the activated genes in those parasegments (Ubx and abd-A, respectively) are only transcribed in a subset of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "2c5d4ae7-8c06-4cba-9af1-02b0440b4423",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C68",
+      "claim": "Both PRC1 and PRC2 components have binding patterns that do not fully reflect function (repression and K27 methylation, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that both PRC1 and PRC2 components have binding patterns that do not fully reflect function (repression and K27 methylation, respectively), indicating the possibility that function of these complexes is regulated separately from binding (Papp and M\u00fcller, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the discussion with citation to Papp and M\u00fcller, 2006.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "3a400a26-5cfd-4e2c-9e27-256fbd94f44d",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C69",
+      "claim": "The function of PRC1 and PRC2 complexes may be regulated separately from binding.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that both PRC1 and PRC2 components have binding patterns that do not fully reflect function (repression and K27 methylation, respectively), indicating the possibility that function of these complexes is regulated separately from binding (Papp and M\u00fcller, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation stated in the discussion.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "334318e2-d3d7-4041-bb09-9e336003f928",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C70",
+      "claim": "PRC2 complexes methylate histone H3 on lysine 27.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the PRC1 family of complexes, which compact chromatin and ubiquitylate histone H2A, and the PRC2 complexes, which methylate histone H3 on lysine 27.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "b3b2e8b3-cc1b-485c-a970-d1efd3bd83b8",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C71",
+      "claim": "The PRC1 family of complexes compact chromatin and ubiquitylate histone H2A.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the PRC1 family of complexes, which compact chromatin and ubiquitylate histone H2A, and the PRC2 complexes, which methylate histone H3 on lysine 27.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "0ce288e1-4260-41d8-a4c4-1f978248698c",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C72",
+      "claim": "Both PRC1 and PRC2 are required to maintain repression of homeotic genes in appropriate parasegments.",
+      "claim_type": "EXPLICIT",
+      "source": "Both PRC1 and PRC2 are required to maintain repression of homeotic genes in appropriate parasegments, so these complexes may generate segment-specific chromatin features in the regulatory domains of the BX-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "bceee822-1f19-4b51-a2b1-d5308660c1a8",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C73",
+      "claim": "Lewis showed that mutations that transform specific segments align on the genetic map in the order of the body segments that they affect.",
+      "claim_type": "EXPLICIT",
+      "source": "Lewis showed that mutations that transform specific segments align on the genetic map in the order of the body segments that they affect (Lewis, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact cited from Lewis, 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "ec62bfbf-50be-44d3-891b-38cd8adf5ac5",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C74",
+      "claim": "The evolutionary conservation of homeotic gene order, including that in the mammalian HOX complexes, suggests that chromosomal position dictates the expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary conservation of this gene order, including that in the mammalian HOX complexes, suggests that chromosomal position dictates the expression pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference stated in the introduction based on evolutionary conservation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "844b816a-3f66-40d7-921d-8e34cffa556f",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C75",
+      "claim": "Lewis used nested deletions to show that successively more distal genetic functions of the BX-C are activated in successively more posterior segments along the body axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lewis used nested deletions to show that successively more distal genetic functions of the BX-C are activated in successively more posterior segments along the body axis (Lewis, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact cited from Lewis, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "2aadbee5-01b6-4022-8d7e-6a58f700c4c1",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C76",
+      "claim": "Enhancer traps in the BX-C show different anterior limits of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulatory domains have been roughly defined by mutant lesions (Lewis, 1978), and by enhancer traps in the BX-C, which show different anterior limits of expression (Bender and Hudson, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Bender and Hudson, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "1f6063c5-f47e-493f-905e-6f5642e96a18",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C77",
+      "claim": "The molecular features that define BX-C regulatory regions, as well as the precise locations of their boundaries, have not been defined prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular features that define these regions, as well as the precise locations of their boundaries, have not been defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction to establish the gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "f6d9ff61-595b-458b-9b21-fc33683373cb",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C78",
+      "claim": "Parasegment-specific patterns of histone modification might be obscured when all the parasegments are pooled for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It seemed likely that parasegment-specific patterns of histone modification might be obscured when all the parasegments are pooled for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the introduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "d4e8f94f-b14b-4664-8d4c-f452775b04ee",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C79",
+      "claim": "The border between the PS5 and PS6 domains, defined by the discontinuity in K27me3 enrichment in PS5 nuclei, lies 14 kb upstream of the Ubx promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, the border between the PS5 and PS6 domains, defined by the discontinuity in K27me3 enrichment in PS5 nuclei, lies 14 kb upstream of the Ubx promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "52ec6234-846c-4c39-99fd-2ee946b46dc9",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C80",
+      "claim": "Transgenic reporter elements inserted between the Ubx promoter and the K27me3-defined border show patterns with a PS6 anterior limit.",
+      "claim_type": "EXPLICIT",
+      "source": "However, transgenic reporter elements inserted between the Ubx promoter and the K27me3-defined border (presumably part of the PS5 regulatory domain) show patterns with a PS6 anterior limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a discrepancy with genetic data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "b6653e4f-856e-46a2-9aa7-ffe0e4502172",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C81",
+      "claim": "An enhancer trap 3 kb downstream of the Ubx start site shows a PS4 anterior border.",
+      "claim_type": "EXPLICIT",
+      "source": "An enhancer trap 3 kb downstream of the Ubx start site shows a PS4 anterior border (Casares et al., 1997), and a ncRNA with a PS4 anterior expression limit is transcribed from the region 5\u201315 kb downstream of the Ubx start (Pease et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Casares et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "645a09c7-5d47-41ae-bddc-90f343cbd4d0",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C82",
+      "claim": "A ncRNA with a PS4 anterior expression limit is transcribed from the region 5\u201315 kb downstream of the Ubx start.",
+      "claim_type": "EXPLICIT",
+      "source": "An enhancer trap 3 kb downstream of the Ubx start site shows a PS4 anterior border (Casares et al., 1997), and a ncRNA with a PS4 anterior expression limit is transcribed from the region 5\u201315 kb downstream of the Ubx start (Pease et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Pease et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "d6191c37-4059-4c1d-ab85-7ab6f1596b41",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C83",
+      "claim": "Despite the activity of regulatory regions in PS4 cells, we did not detect a decrease in K27me3 at these locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the activity of these regulatory regions in PS4 cells, we did not detect a decrease in K27me3 at these locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "c3492bc3-8821-4a8a-8029-8d2287262d37",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C84",
+      "claim": "The PS4 active state may be early and transient, limited to a subset of PS4 cells, or resistant to H3K27 methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The PS4 active state may be early and transient, limited to a subset of PS4 cells, or resistant to H3K27 methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation stated in the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "e51cf6de-62eb-4cbd-847e-c2957d13bde2",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C85",
+      "claim": "CTCF is thought to impose boundaries on regulatory domains in many systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The sharp discontinuities in K27 methylation coincide with binding sites of the CCCTC-binding factor (CTCF), which is thought to impose boundaries on regulatory domains in many systems (Ohlsson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Ohlsson et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "1279e406-b130-4925-8c37-0f848dbe97f8",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C86",
+      "claim": "The experimental conditions used do not detect robust CTCF enrichment in some BX-C locations that have been reported by others.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that our experimental conditions do not detect robust CTCF enrichment in some BX-C locations that have been reported by others (N\u00e8gre et al., 2010), notably at the border between regulatory regions for PS7 and PS8, and proximal to the 3\u2032 end of the Ubx transcription unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with citation to N\u00e8gre et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "98f1b022-3b82-40f1-b9cc-4eaf4167417f",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C87",
+      "claim": "In the Antennapedia complex, CP190 peaks often appear without coincident CTCF peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Antennapedia complex, the other homeotic gene complex in flies, CP190 peaks often appear without coincident CTCF peaks (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the results and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "a7195441-668d-402a-90bf-5b7cabe1d6a8",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C88",
+      "claim": "The low residual level of H3K27me3 marks in the 92 kb PS5 domain is likely due to partial contamination from more anterior parasegments in the preparation of PS5 nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The low residual level of H3K27me3 marks in the 92 kb PS5 domain is likely due to partial contamination from more anterior parasegments in our preparation of PS5 nuclei (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation stated in the results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "2b730e95-5be1-411f-839e-430313f04451",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C89",
+      "claim": "The PS6 regulatory domain is the one best defined by genetic analysis, with a series of rearrangement breakpoints giving bithoraxoid (bxd) phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The PS6 regulatory domain is the one best defined by genetic analysis, with a series of rearrangement breakpoints giving bithoraxoid (bxd) phenotypes (Bender and Lucas, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Bender and Lucas, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "7ac466e4-1513-4deb-b67b-848c309cc2d5",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C90",
+      "claim": "Temporal activation pattern of the Hox-D cluster in mouse correlates with loss of H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "This is reminiscent of the temporal activation pattern of the Hox-D cluster in mouse, which correlates with loss of H3K27me3 (Soshnikova and Duboule, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Soshnikova and Duboule, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "7f608899-5e39-4c6d-b958-272c12ba28d1",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C91",
+      "claim": "H2A ubiquitylation promotes PRC2 recruitment and H3K27 trimethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be important to map H2A ubiquitylation (a function of the dRING subunit of PRC1) across the domains, especially given recent findings that H2A ubiquitylation promotes PRC2 recruitment and H3K27 trimethylation (Blackledge et al., 2014; Cooper et al., 2014; Kalb et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Blackledge et al., 2014; Cooper et al., 2014; Kalb et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "f06b9cee-fffb-4495-91c3-1ae09c764291",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C92",
+      "claim": "Kwong et al. (2008) have made analogous observations regarding PRC retention in imaginal discs of the third thoracic segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Kwong et al. (2008) have made analogous observations regarding PRC retention in imaginal discs of the third thoracic segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of prior work by Kwong et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "ccf6e348-98e8-4522-baeb-a05e7fc61665",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C93",
+      "claim": "Published ChIP\u2013CHIP and ChIP-seq profiles for PC across the BX-C vary from broad coverage matching the H3K27me3 profile to sharp peaks at the known PREs.",
+      "claim_type": "EXPLICIT",
+      "source": "Published ChIP\u2013CHIP and ChIP-seq profiles for PC across the BX-C vary from broad coverage matching the H3K27me3 profile (Kwong et al., 2008) to sharp peaks at the known PREs (Gonzalez et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Kwong et al., 2008 and Gonzalez et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "b855d04a-6f38-4f47-994d-089b43882dd6",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C94",
+      "claim": "The difference in PC profiles may be due to different procedures for chromatin fragmentation prior to immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference may be due to different procedures for chromatin fragmentation prior to immunoprecipitation (Straub et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Straub et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "6b74c22f-c8fa-494f-aa26-59f3dff4154a",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "claim_id": "C95",
+      "claim": "Recovered nuclei constituted between 1 and 6% of total single nuclei, depending on the parasegment under selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Recovered nuclei constituted between 1 and 6% of total single nuclei (Figure 1\u2014figure supplement 1C), depending of the parasegment under selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Materials and methods section and shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b24dc72-bb1a-4c7b-9403-8981aa01a6db",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a method to isolate nuclei from single parasegments using a Gal4/Gal80 system combined with the INTACT nuclear tagging approach, recovering 1-6% of total nuclei depending on the parasegment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, and C95 describe a technically sound approach for parasegment-specific nuclear isolation. The Gal4/Gal80 mechanism is well-established, and the recovery rates (1-6%) are documented with supporting figures. This methodological result is well-supported by the data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "7fdb60d2-3815-4c9f-9abf-9716ee341395",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "H3K27me3 ChIP-seq from individual parasegments (PS4-PS7) revealed a 'stairstep' pattern across the BX-C, with progressive loss of H3K27me3 from anterior to posterior parasegments, defining sharp boundaries of regulatory domains at 92 kb (PS5), 137 kb (PS6), and 173 kb (PS7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C18-C28 collectively demonstrate the stairstep pattern with strong visual evidence in Figures 2C-F. The boundaries are precisely mapped and correlate with known genetic domains. The reproducible H3K27me3 mound near Ubx in PS7 (C28) adds specificity. This is the central finding of the manuscript and is well-supported by multiple replicates and clear visual data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "f0064fa6-3d90-4daf-8279-43106de2f1a3",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "H3K27ac shows a complementary pattern to H3K27me3, with broad boundary-to-boundary enrichment across active domains in PS7, though with varying density levels between domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C40-C44 describe H3K27ac patterns that mirror H3K27me3 depletion. Figure 3B-C provides clear visual evidence of this complementary relationship. The boundary-to-boundary coverage is well-documented, though the authors acknowledge unexplained density differences between domains. The result is well-supported despite some mechanistic uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "0a387071-be2b-4efd-8e30-16cd6a5c6802",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CTCF binds at the borders between H3K27 modification domains and is retained regardless of domain activation state, with CP190 largely co-localizing with CTCF sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C30-C32, and C35-C37 demonstrate CTCF binding at domain boundaries with consistent patterns between whole embryo and PS7 nuclei (Figure 2G-H). The retention of CTCF in both active and repressed states (C32) is a key observation supported by the data. CP190 co-localization is also well-documented (Figure 2I-J).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "1f28eec1-2772-45df-b0f7-0d6aa3037607",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The experimental conditions did not detect CTCF enrichment at some previously reported BX-C locations, and CP190 peaks can appear without coincident CTCF peaks in the Antennapedia complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C87 acknowledge technical limitations and discrepancies with prior work. The authors transparently report missing CTCF signals at expected locations and show CP190-only peaks in Figure 2\u2014figure supplement 2. This honest reporting of limitations strengthens the overall credibility of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "01ae0f19-09af-45bc-9a59-614f0dff313c",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA Pol-II ChIP-seq shows transcription of Ubx and abd-A in PS7, with an unexpected Pol-II peak at the PS5/PS6 border and a peak at the Abd-B promoter despite absence of Abd-B expression in PS7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 describe Pol-II patterns with clear visual evidence in Figure 3D-E. The unexpected peaks (C46, C48) are acknowledged as unusual but are reproducible. The Abd-B promoter peak is consistent with prior reports of paused polymerase (C49), providing external validation. The result is well-supported though mechanistically incomplete.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "e0162571-fcf3-4890-8476-b8411963f172",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "H3K4me3 marks align with active Ubx and abd-A promoters in PS7 but not with the inactive Abd-B promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 describes H3K4me3 patterns consistent with active transcription at Ubx and abd-A promoters (Figure 3F-G). The absence at Abd-B despite Pol-II presence distinguishes truly active from paused promoters. This result is well-supported and consistent with known H3K4me3 biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "a5c444ff-2485-4f17-88af-5c53f6fab6d7",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PRC1 components (POLYCOMB and POLYHOMEOTIC) bind to PREs in both active and repressed domains, with reduced levels only at the PS5 PRE in active PS7 nuclei, indicating that PRC1 presence does not determine domain repression state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 and C56 describe PRC1 binding patterns with clear evidence in Figure 3H-K. The retention of PRC1 at PREs in active domains (C53) is a key finding that challenges simple models of PcG function. The inference that PRC1 presence is not determinative of repression (C56) is well-supported by the data and consistent with cited prior work (C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "72d2f8d8-d933-4d5a-b599-c3ca26b632c5",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PRC2 component SU(Z)12 shows similar binding patterns to PRC1 proteins, with peaks at PREs that are reduced in active domains of PS7, and more apparent binding at gene promoters compared to PRC1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 describe SU(Z)12 patterns with clear visual evidence in Figure 3L-M. The similarity to PRC1 patterns but with stronger promoter binding is well-documented. The reduction at PREs in active domains is consistent with the PRC1 results and prior literature (C55). This result is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "e2318c2e-33e3-42a7-85b1-9b7828ab4a0a",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The all-or-nothing H3K27me3 coverage validates the domain model, with uniform removal across entire domains even when genes are only transcribed in subsets of cells within those parasegments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C67 synthesize the H3K27me3 findings into a broader conclusion about domain organization. The uniform removal across domains despite heterogeneous gene expression (C67) is a key insight supported by the stairstep patterns in Figure 2. This interpretive result is well-supported by the primary data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "7956f604-de8e-4126-af52-b96e711ea603",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both PRC1 and PRC2 components have binding patterns that do not fully reflect their functions, suggesting that complex function may be regulated separately from binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C69 draw an important inference from the PRC binding data. The observation that PRC proteins bind to PREs in active domains where they are not functionally repressing is well-supported by Figures 3H-M and consistent with cited prior work (C55, C92). While speculative (C69), this interpretation is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "dc095a08-283a-433a-8703-012d89778fed",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The molecularly defined PS5/PS6 border lies 14 kb upstream of the Ubx promoter, which conflicts with transgenic reporter data, and no H3K27me3 depletion was detected at PS4-active regulatory regions despite evidence of their activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79, C80, C83, and C84 describe discrepancies between molecular and genetic definitions of domains. While the H3K27me3 boundary is clearly defined (C79), the conflict with transgenic data (C80) and the absence of expected PS4 changes (C83) are acknowledged but not resolved. The speculative explanations (C84) are reasonable but untested. This result highlights limitations and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "b9f5cae0-1d5e-4b14-9749-9712ea2b6bd7",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The domain architecture provides segmental restriction of enhancer function, allowing individual enhancers to drive expression in specific parasegments without requiring intrinsic segmental address information, with each domain containing a distinctive collection of enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 present a conceptual model of how domain architecture restricts enhancer function. This is supported by cited genetic evidence (C62, C64) and is consistent with the H3K27me3 domain boundaries defined in this study. While largely interpretive, this result synthesizes prior genetic knowledge with the current molecular findings effectively.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "a9c4c98a-c9d2-4adf-bb59-bf089aabc445",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The H3K27me3 mound near the Ubx promoter in PS7 may reflect PcG-mediated repression of Ubx by abd-A in this parasegment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C29 is explicitly speculative and offers one possible interpretation of the H3K27me3 mound observed in Figure 2F (C28). While the observation is reproducible, the mechanistic explanation is not tested. This interpretation requires experimental validation to be considered supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    },
+    {
+      "id": "d6e7ecbc-b126-445c-937f-17b5eac4d020",
+      "content_id": "b79d237c-7ba5-4150-b8c2-96619cd69fe3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The residual H3K27me3 in the PS5 domain is likely due to contamination from anterior parasegments in the nuclear preparation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 provides a reasonable interpretation of residual H3K27me3 signal in the PS5 domain. Given the FACS sorting recovered only 1-6% of nuclei (C95) and Figure 1\u2014figure supplement 2 shows some expression outside the target parasegment, this interpretation is well-supported by the technical limitations of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:07:05.423382Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2100d2f8-0564-4efb-885f-aa9f3b6fc64a",
+      "result_id": "4b24dc72-bb1a-4c7b-9403-8981aa01a6db"
+    },
+    {
+      "claim_id": "c84aeece-54f4-4acd-be9d-2f3bb7c38fb8",
+      "result_id": "4b24dc72-bb1a-4c7b-9403-8981aa01a6db"
+    },
+    {
+      "claim_id": "6b74c22f-c8fa-494f-aa26-59f3dff4154a",
+      "result_id": "4b24dc72-bb1a-4c7b-9403-8981aa01a6db"
+    },
+    {
+      "claim_id": "75e6b01b-bd2f-4305-82d9-e2e6f84591da",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "4935626d-85b6-4ef6-a8bf-690f193303bd",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "b4f998c8-1119-4b11-afb0-3b0afc3f1d97",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "42733f83-43cd-47e1-8efd-e47210869bcc",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "e71bbcb4-d46d-40cb-a1e2-2fbb6e2eb8f5",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "41b69082-1dec-45de-ab1a-d4183e5f2427",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "0dd75286-3fee-40c5-a386-565e66c1ba33",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "c90e9a12-4bc6-47c4-8f74-70e5bfbc0b17",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "ae8a6d62-cc98-4401-ae9f-76139eb4bbc3",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "1f310a34-ecf1-437b-9f0f-f39661496e94",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "5720b046-5ce6-40af-bc84-f7edcfbd773e",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "7b417f02-cef5-4204-afe9-8e3b6d54da5d",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "c0aa42e6-17f2-44df-9bf4-5061b64e6a13",
+      "result_id": "7fdb60d2-3815-4c9f-9abf-9716ee341395"
+    },
+    {
+      "claim_id": "aab5be24-00de-42fe-adf2-9aceadb9cd8a",
+      "result_id": "f0064fa6-3d90-4daf-8279-43106de2f1a3"
+    },
+    {
+      "claim_id": "db6e2fb5-e7dd-48b1-838b-6cee1069a90d",
+      "result_id": "f0064fa6-3d90-4daf-8279-43106de2f1a3"
+    },
+    {
+      "claim_id": "c37a3414-51d1-4f0c-82c4-cb6fc560db06",
+      "result_id": "f0064fa6-3d90-4daf-8279-43106de2f1a3"
+    },
+    {
+      "claim_id": "4b165a7c-b7e6-4730-a3db-91c0b5140bbc",
+      "result_id": "f0064fa6-3d90-4daf-8279-43106de2f1a3"
+    },
+    {
+      "claim_id": "dc8df3f9-3590-4073-a4db-fc465aa53d17",
+      "result_id": "f0064fa6-3d90-4daf-8279-43106de2f1a3"
+    },
+    {
+      "claim_id": "e8909639-3357-491e-83ad-66cb4b4db235",
+      "result_id": "f0064fa6-3d90-4daf-8279-43106de2f1a3"
+    },
+    {
+      "claim_id": "8166edfa-d07d-419a-a1da-4149ac2690e2",
+      "result_id": "0a387071-be2b-4efd-8e30-16cd6a5c6802"
+    },
+    {
+      "claim_id": "aee2cd3d-4c69-49dd-b95e-849aa1fd1bd4",
+      "result_id": "0a387071-be2b-4efd-8e30-16cd6a5c6802"
+    },
+    {
+      "claim_id": "1913c1a2-dcc7-47aa-a6da-6ada457ccb35",
+      "result_id": "0a387071-be2b-4efd-8e30-16cd6a5c6802"
+    },
+    {
+      "claim_id": "d5abc2ff-9f4f-4cdc-bbe2-907da60f2761",
+      "result_id": "0a387071-be2b-4efd-8e30-16cd6a5c6802"
+    },
+    {
+      "claim_id": "4184b153-fb60-480b-b0da-fc4ecc59bba0",
+      "result_id": "0a387071-be2b-4efd-8e30-16cd6a5c6802"
+    },
+    {
+      "claim_id": "faeaa788-d7e7-4f8d-86f5-ca35f3ae21fc",
+      "result_id": "0a387071-be2b-4efd-8e30-16cd6a5c6802"
+    },
+    {
+      "claim_id": "ccdd4c9e-5ac5-4661-bcba-e56984a27561",
+      "result_id": "0a387071-be2b-4efd-8e30-16cd6a5c6802"
+    },
+    {
+      "claim_id": "8de05798-8c01-4519-b6cf-d8238742791d",
+      "result_id": "0a387071-be2b-4efd-8e30-16cd6a5c6802"
+    },
+    {
+      "claim_id": "1279e406-b130-4925-8c37-0f848dbe97f8",
+      "result_id": "1f28eec1-2772-45df-b0f7-0d6aa3037607"
+    },
+    {
+      "claim_id": "98f1b022-3b82-40f1-b9cc-4eaf4167417f",
+      "result_id": "1f28eec1-2772-45df-b0f7-0d6aa3037607"
+    },
+    {
+      "claim_id": "183c387b-f622-4151-bd54-7bacb90d7b09",
+      "result_id": "01ae0f19-09af-45bc-9a59-614f0dff313c"
+    },
+    {
+      "claim_id": "f86f3077-fcec-4149-82f6-b2f3de322988",
+      "result_id": "01ae0f19-09af-45bc-9a59-614f0dff313c"
+    },
+    {
+      "claim_id": "78aa594d-fd8b-4779-bbbf-d33bcd4c134a",
+      "result_id": "01ae0f19-09af-45bc-9a59-614f0dff313c"
+    },
+    {
+      "claim_id": "e8152528-0d2d-47b5-a0be-a6fc7ed8456e",
+      "result_id": "01ae0f19-09af-45bc-9a59-614f0dff313c"
+    },
+    {
+      "claim_id": "5a8b3484-89da-423c-93e7-dcc3e1bf3004",
+      "result_id": "e0162571-fcf3-4890-8476-b8411963f172"
+    },
+    {
+      "claim_id": "3e669486-c6bb-4877-9089-7eeba1f096c9",
+      "result_id": "a5c444ff-2485-4f17-88af-5c53f6fab6d7"
+    },
+    {
+      "claim_id": "65532f08-58af-4a14-aac2-801d263ded59",
+      "result_id": "a5c444ff-2485-4f17-88af-5c53f6fab6d7"
+    },
+    {
+      "claim_id": "e145e76c-1a95-4b39-ad6e-83e9f19cecd6",
+      "result_id": "a5c444ff-2485-4f17-88af-5c53f6fab6d7"
+    },
+    {
+      "claim_id": "a45900ea-01a1-443f-bc3f-cdf6f81918db",
+      "result_id": "a5c444ff-2485-4f17-88af-5c53f6fab6d7"
+    },
+    {
+      "claim_id": "a13ff99b-8adc-45a4-a470-372e4b9fa27c",
+      "result_id": "72d2f8d8-d933-4d5a-b599-c3ca26b632c5"
+    },
+    {
+      "claim_id": "212b0e0a-b874-4ed7-8dad-26864746b0a8",
+      "result_id": "72d2f8d8-d933-4d5a-b599-c3ca26b632c5"
+    },
+    {
+      "claim_id": "2a0d72e0-3c68-4302-82c5-3aabdae4a058",
+      "result_id": "72d2f8d8-d933-4d5a-b599-c3ca26b632c5"
+    },
+    {
+      "claim_id": "240e4f3a-6aa0-4f89-8af5-f538a8ac39dd",
+      "result_id": "72d2f8d8-d933-4d5a-b599-c3ca26b632c5"
+    },
+    {
+      "claim_id": "80218e9b-1909-4b50-abea-251f34f13832",
+      "result_id": "72d2f8d8-d933-4d5a-b599-c3ca26b632c5"
+    },
+    {
+      "claim_id": "caae016b-239c-48c4-a31e-51eb2d6f3600",
+      "result_id": "e2318c2e-33e3-42a7-85b1-9b7828ab4a0a"
+    },
+    {
+      "claim_id": "0b922b8e-04a8-40ad-a0e3-ff34b38927b5",
+      "result_id": "e2318c2e-33e3-42a7-85b1-9b7828ab4a0a"
+    },
+    {
+      "claim_id": "2c5d4ae7-8c06-4cba-9af1-02b0440b4423",
+      "result_id": "7956f604-de8e-4126-af52-b96e711ea603"
+    },
+    {
+      "claim_id": "3a400a26-5cfd-4e2c-9e27-256fbd94f44d",
+      "result_id": "7956f604-de8e-4126-af52-b96e711ea603"
+    },
+    {
+      "claim_id": "d4e8f94f-b14b-4664-8d4c-f452775b04ee",
+      "result_id": "dc095a08-283a-433a-8703-012d89778fed"
+    },
+    {
+      "claim_id": "52ec6234-846c-4c39-99fd-2ee946b46dc9",
+      "result_id": "dc095a08-283a-433a-8703-012d89778fed"
+    },
+    {
+      "claim_id": "d6191c37-4059-4c1d-ab85-7ab6f1596b41",
+      "result_id": "dc095a08-283a-433a-8703-012d89778fed"
+    },
+    {
+      "claim_id": "c3492bc3-8821-4a8a-8029-8d2287262d37",
+      "result_id": "dc095a08-283a-433a-8703-012d89778fed"
+    },
+    {
+      "claim_id": "7cbf9598-de0d-4ac4-84e3-48fc52896eb0",
+      "result_id": "b9f5cae0-1d5e-4b14-9749-9712ea2b6bd7"
+    },
+    {
+      "claim_id": "f74ded24-38a4-4182-89bd-9e101df5c525",
+      "result_id": "b9f5cae0-1d5e-4b14-9749-9712ea2b6bd7"
+    },
+    {
+      "claim_id": "0f7427bb-5933-423b-8a8c-4ecf975d4ab9",
+      "result_id": "b9f5cae0-1d5e-4b14-9749-9712ea2b6bd7"
+    },
+    {
+      "claim_id": "56a7cc54-b17a-4fb5-970e-6c9052a68e13",
+      "result_id": "b9f5cae0-1d5e-4b14-9749-9712ea2b6bd7"
+    },
+    {
+      "claim_id": "1ee1b30c-a6ab-4ff3-b68a-a28068af70c0",
+      "result_id": "a9c4c98a-c9d2-4adf-bb59-bf089aabc445"
+    },
+    {
+      "claim_id": "a7195441-668d-402a-90bf-5b7cabe1d6a8",
+      "result_id": "d6e7ecbc-b126-445c-937f-17b5eac4d020"
+    }
+  ],
+  "comparisons": []
+}

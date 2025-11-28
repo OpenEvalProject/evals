@@ -1,0 +1,1531 @@
+{
+  "submission": {
+    "id": "1ca2838b-51d2-44da-8103-997e72a9bb48",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:34:01.886949Z",
+    "updated_at": "2025-11-28T20:34:01.886949Z"
+  },
+  "content": [
+    {
+      "id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "submission_id": "1ca2838b-51d2-44da-8103-997e72a9bb48",
+      "content_type": "manuscript",
+      "content_text": "# Combining growth-promoting genes leads to positive epistasis in Arabidopsis thaliana\n\n## Authors\n\n- Hannes Vanhaeren<sup>1</sup>\n- Nathalie Gonzalez<sup>1</sup>\n- Frederik Coppens<sup>1</sup>\n- Liesbeth De Milde<sup>1</sup>\n- Twiggy Van Daele<sup>1</sup>\n- Mattias Vermeersch<sup>1</sup>\n- Nubia B Eloy<sup>1</sup>\n- Veronique Storme<sup>1</sup>\n- Dirk Inz\u00e9<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Plant Systems Biology Vlaams Instituut voor Biotechnologie Ghent Belgium\n2. Department of Plant Biotechnology and Bioinformatics Ghent University Ghent Belgium\n\n\u2020 Corresponding author\n\n## Abstract\n\nSeveral genes positively influence final leaf size in Arabidopsis when mutated or overexpressed. The connections between these growth regulators are still poorly understood although such knowledge would further contribute to understand the processes driving leaf growth. In this study, we performed a combinatorial screen with 13 transgenic Arabidopsis lines with an increased leaf size. We found that from 61 analyzed combinations, 39% showed an additional increase in leaf size and most resulted from a positive epistasis on growth. Similar to what is found in other organisms in which such an epistasis assay was performed, only few genes were highly connected in synergistic combinations as we observed a positive epistasis in the majority of the combinations with samba, BRI1OE or SAUR19OE. Furthermore, positive epistasis was found with combinations of genes with a similar mode of action, but also with genes which affect distinct processes, such as cell proliferation and cell expansion.\n\n## Introduction\n\nSince Bateson introduced the term epistasis to describe the phenomenon that some mutations seemed to be \u2018stopping\u2019 or \u2018standing above\u2019 the effect of other mutations (Bateson, 1909), it became clear that interactions between multiple genes influence many traits. Epistasis, or interaction between genes, therefore corresponds to any deviation from the expected phenotype, predicted by combining the effects of individual alleles or mutations (Fisher, 1918; Phillips, 2008). Only by identifying and understanding the nature of these underlying gene interactions, we will gain better insights in the regulation of complex traits and be able to dissect the architecture of biological networks.\n\nIn the last decade, numerous studies on the effect of pairwise gene perturbations have been conducted, primarily in the budding yeast Saccharomyces cerevisiae, to systematically evaluate epistasis for several characteristics, such as fitness or synthetic lethality (Tong et al., 2004; Jasnos and Korona, 2007; St Onge et al., 2007; Dixon et al., 2009; Costanzo et al., 2010, 2011). These genome-scale genetic interactions studies were facilitated by the availability of large collections of deletion strains and the development of automated platforms to analyze the phenotypes of double mutants (Scherens and Goffeau, 2004). Since the first large-scale genetic interaction study in yeast identified 4000 genetic interactions among 1000 genes when analyzing synthetic lethality in double deletion mutants (Tong et al., 2004), the field advanced considerably. Currently, about 170,000 interactions are known among 5.4 million gene pairs screened to affect fitness (Baryshnikova et al., 2010; Costanzo et al., 2010). Interestingly, these studies have shown that the majority of the genes are infrequently connected in the genetic interaction network, while a small fraction of genes shows many interactions (Baryshnikova et al., 2010; Costanzo et al., 2010, 2011).\n\nIn higher organisms, large collections of mutants often do not exist and/or the generation of double mutants is much more labor-intensive and time-consuming. However, in the nematode Caenorhabditis elegans, in Drosophila cell cultures and in human cell lines, global analysis of genetic interactions have been performed by making use of RNA interference libraries to generate double mutants (Lehner et al., 2006; Byrne et al., 2007; Barbie et al., 2009; Horn et al., 2011). In C. elegans, systematic mapping of interactions between genes functioning in the signaling and the transcriptional networks that regulate development also revealed high connectivity of a small proportion of genes in the network, while most genes have few interactions (Lehner et al., 2006). In plants, although large collections of mutants are available for some species such as Arabidopsis (Alonso et al., 2003; http://www.arabidopsis.org/), large-scale epistasis studies on double mutants are experimentally and practically virtually impossible to achieve. On a smaller scale, newly identified mutants in Arabidopsis are crossed with known mutants with similar phenotypes or within the same biological process to test for allelic interaction or epistasis. For example, genetic interactions among late flowering Arabidopsis mutants have been studied by generating double mutants (Koornneef et al., 1998). Further, genetic modifier screens are performed frequently through a random mutagenesis of individuals harboring one mutant gene to screen for second-site mutations that either enhance or suppress the primary phenotype. An example in relation to leaf size is the identification of enhancer mutations of da1-1 further increasing leaf and seed size (Li et al., 2008; Yao et al., 2008; Xu and Li, 2011; Fang et al., 2012). While epistasis can easily be detected for qualitative traits, such as synthetic lethality, which are fairly straightforward to visually inspect, genetic interactions from quantitative traits, such as organ growth or gene expression, are more difficult to identify, especially in multicellular organisms (Kroymann and Mitchell-Olds, 2005; Malmberg et al., 2005; Xu and Jia, 2007; Chapman et al., 2012; Steinhoff et al., 2012; Huang et al., 2014). Estimating epistasis for quantitative categories of phenotypes implies calculating how much the phenotype of a double mutant deviates from an expected additive value based on the effect of the single mutations (Fisher, 1918), therefore requiring accurate measurements of the phenotype of the single and double mutants. Although enabling the identification of subtle interactions, these quantitative analyses of gene interactions are not easily amenable to large-scale studies of complex traits.\n\nOne example of such a complex quantitative trait in higher plants is leaf growth. Leaves are essential to capture solar radiation and convert it into chemical energy by photosynthesis, therefore contributing to a large part of plant biomass production. As for most plant organs, their determinate growth pattern results in a relatively constant size within a fixed environment. Leaf growth is mediated by a cell proliferation phase followed by a cell expansion phase that initiates at the leaf top and proceeds basipetally (Donnelly et al., 1999; Andriankaja et al., 2012). At least five different parameters contribute to the final leaf size (Gonzalez et al., 2012): the number of cells incorporated in leaf primordia; the rate of cell division; the developmental window of cell proliferation; the timing of meristemoid division; and the extent of cell expansion. Several genes have been described to, when downregulated or ectopically (over)expressed, increase the final leaf size in Arabidopsis (Gonzalez et al., 2009; Krizek, 2009; Breuninger and Lenhard, 2010) by affecting one or more processes governing leaf growth. Whereas much research has been done on single genes affecting leaf size, the interactions between these growth regulators remain unexplored. So far, only one case of positive epistasis in Arabidopsis leaf growth has been described when a dominant-negative point mutation in DA1, encoding an ubiquitin receptor, is combined with the knock-out of the ENHANCER OF DA1 (EOD)1/BIG BROTHER, coding for an E3 ubiquitin ligase (Li et al., 2008).\n\nIn this study, we performed a combinatorial screen of transgenic Arabidopsis plants producing larger leaves to identify positive epistatic effects on leaf growth. We aimed to gain further insight in the links between genes controlling growth and the mechanisms driving leaf development. We obtained binary combinations by crossing 13 transgenic lines with an increased leaf size and measured leaf and rosette area of the single and double transgenics. We found that the leaf area of 38% of all combinations was larger than the sum of those of the single mutants, resulting in positive epistatic effects, whereas 23% of the combinations were smaller, showing a negative epistatic effect.\n\n## Results\n\n### Gene selection and experimental setup\n\nTo identify positive epistatic effects on leaf growth, we analyzed pairwise perturbations of 13 genes positively affecting final leaf size in a gain- or loss-of-function situation (Table 1) by measuring the individual and total leaf area. We used lines in the Col-0 background, homozygous for a single-locus insertion of the transgene of interest and shown to have a positive effect on all rosette leaves or a subset of those (Cho and Cosgrove, 2000; Gonzalez et al., 2010; Spartz et al., 2012). This enhanced leaf growth can result from the perturbation of genes affecting cell division and/or cell expansion. The downregulation of SAMBA disturbs the early stage of leaf development, since larger meristems are formed resulting in larger leaves containing more cells (Eloy et al., 2012). A point mutation in DA1 or the downregulation of its enhancer, EOD1, leads to the production of larger leaves with more cells due to an extended cell proliferation phase (Li et al., 2008). Similarly, in plants overexpressing ANGUSTIFOLIA3 (AN3), AINTEGUMENTA (ANT), ARABIDOPSIS VACUOLAR-PYROPHOSPHATASE (AVP1), GROWTH-REGULATING FACTOR5 (GRF5) under the control of the constitutive 35S promoter or BRASSINOSTEROID INSENSITIVE 1 (BRI1) under the control of its own promoter, larger leaves containing more cells are formed because of an extension of the cell proliferation phase (Wang et al., 2001; Horiguchi et al., 2005; Li et al., 2005). On the other hand, an increased cell proliferation at the edge of the leaf and a prolonged period of meristemoid division are observed when the miRNA JAW is overexpressed and the PEAPOD (PPD) genes are downregulated (Palatnik et al., 2003; White, 2006). When GIBBERELLIN 20-OXIDASE 1 (GA20OX1) is overexpressed, an increase in cell number and cell size leads to the formation of larger leaves (Huang et al., 1998; Gonzalez et al., 2010). Finally, in plants overexpressing EXPANSIN 10 (EXP10) and SMALL AUXIN UP-REGULATED RNA 19 (SAUR19) fused to a GFP tag, bigger leaves containing larger cells are produced (Cho and Cosgrove, 2000; Spartz et al., 2012). Several of these leaf growth-promoting genes are involved in hormonal pathways, confirming the importance of plant hormones in the regulation of growth processes: BRI1 encodes a brassinosteroid receptor, GA20OX1 catalyzes rate-limiting steps in late gibberellic acid (GA) biosynthesis, ANT has been suggested to be involved in auxin signal transduction and both AVP1 and SAUR19 in auxin transport (Huang et al., 1998; Mizukami and Fischer, 2000; Wang et al., 2001; Li et al., 2005; Spartz et al., 2012). To obtain pairwise perturbations, our strategy was to cross the homozygous transgenic lines and to analyze the heterozygous progeny. We produced 102 heterozygous combinations, consisting of 78 paired combinations and 24 back-crosses with the wild type (WT) used as controls (Figure 1\u2014figure supplement 1). Because the homozygous line can be used as pollen donor or receptor, care was taken that the crosses with the wild-type plants, producing the heterozygous control line, maintained the same directionality. For example, a cross between ami-ppd (\u2640) and SAUR19OE (\u2642) was compared to the offspring of the crosses ami-ppd (\u2640) X WT (\u2642) and WT (\u2640) X SAUR19OE (\u2642). This approach standardizes for possible maternal effects (Scott et al., 1998). Next, we checked the expression levels of the transgenes in the obtained heterozygous double mutants as well as in the heterozygous control lines. In the majority of the combinations, transgene expression levels were comparable with those of the heterozygous controls (Figure 1\u2014figure supplement 2). In total, 61 combinations were used for further growth analysis. Sixteen plants per genotype were grown in three independent repeats and at 21 days after stratification (DAS), the size of each individual leaf of the rosette was measured, resulting in 56,505 data-points, enabling us to estimate potential gene interactions for these quantitative traits (Figure 1\u2014figure supplement 3). Leaf area (LA) of the paired combinations was compared to a theoretical, expected if non-interacting value (EXPni), based on the size of the WT and both heterozygous controls. To estimate the EXPni, we applied an additive model on a multiplicative scale by transforming the data on log2 scale (Koornneef et al., 1998; Phillips, 2008; Horn et al., 2011):log2(LAEXPni)=log2(LAheterozygous\u2009control\u20091)+log2(LAheterozygous\u2009control\u20092)\u2212log2(LAwild\u2009type)\n\n**Table 1.**\n Growth regulators and transgenics used for the binary combinations\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene name</th>\n      <th>Gene symbol</th>\n      <th>Gene ID</th>\n      <th>Line name</th>\n      <th>Perturbation</th>\n      <th>Cellular process promoted</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ANGUSTIFOLIA3</td>\n      <td>AN3</td>\n      <td>AT5G28640</td>\n      <td>AN3OE</td>\n      <td>OE</td>\n      <td>Cell division</td>\n      <td>(Horiguchi et al., 2005)</td>\n    </tr>\n    <tr>\n      <td>AINTEGUMENTA</td>\n      <td>ANT</td>\n      <td>AT4G37750</td>\n      <td>ANTOE</td>\n      <td>OE</td>\n      <td>Cell division</td>\n      <td>(Mizukami and Fischer, 2000)</td>\n    </tr>\n    <tr>\n      <td>ARABIDOPSIS V-PYROPHOSPHATASE</td>\n      <td>AVP1</td>\n      <td>AT1G15690</td>\n      <td>AVP1OE</td>\n      <td>OE</td>\n      <td>Cell division</td>\n      <td>(Li et al., 2005)</td>\n    </tr>\n    <tr>\n      <td>BRASSINOSTEROID INSENSITIVE 1</td>\n      <td>BRI1</td>\n      <td>AT4G39400</td>\n      <td>BRI1OE</td>\n      <td>OE</td>\n      <td>Cell division</td>\n      <td>(Wang et al., 2001; Gonzalez et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>DA1</td>\n      <td>DA1</td>\n      <td>AT1G19270</td>\n      <td>da1-1</td>\n      <td>LOF</td>\n      <td>Cell division</td>\n      <td>(Li et al., 2008)</td>\n    </tr>\n    <tr>\n      <td>ENHANCER OF DA1-1/BIG BROTHER</td>\n      <td>EOD/BB</td>\n      <td>AT3G63530</td>\n      <td>eod1-2</td>\n      <td>LOF</td>\n      <td>Cell division</td>\n      <td>(Li et al., 2008)</td>\n    </tr>\n    <tr>\n      <td>EXPANSIN 10</td>\n      <td>EXP10</td>\n      <td>AT1G26770</td>\n      <td>EXP10OE</td>\n      <td>OE</td>\n      <td>Cell expansion</td>\n      <td>(Cho and Cosgrove, 2000)</td>\n    </tr>\n    <tr>\n      <td>GIBBERELLIN 20 OXIDASE 1</td>\n      <td>GA20OX1</td>\n      <td>AT4G25420</td>\n      <td>GA20OX1OE</td>\n      <td>OE</td>\n      <td>Cell division and expansion</td>\n      <td>(Huang et al., 1998; Gonzalez et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>GROWTH REGULATING FACTOR5</td>\n      <td>GRF5</td>\n      <td>AT3G13960</td>\n      <td>GRF5OE</td>\n      <td>OE</td>\n      <td>Cell division</td>\n      <td>(Horiguchi et al., 2005)</td>\n    </tr>\n    <tr>\n      <td>miR-JAW/ miRNA 319</td>\n      <td>miR-JAW</td>\n      <td>AT4G23713</td>\n      <td>jaw-D</td>\n      <td>OE</td>\n      <td>Cell division</td>\n      <td>(Palatnik et al., 2003)</td>\n    </tr>\n    <tr>\n      <td>PEAPOD</td>\n      <td>PPD</td>\n      <td>AT4G14713 and AT4G14720</td>\n      <td>ami-ppd</td>\n      <td>LOF</td>\n      <td>Meristemoid division</td>\n      <td>(White, 2006; Gonzalez et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>SAMBA</td>\n      <td>SAMBA</td>\n      <td>AT1G32310</td>\n      <td>samba</td>\n      <td>LOF</td>\n      <td>Cell division and expansion</td>\n      <td>(Eloy et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>SMALL AUXIN UP RNA 19</td>\n      <td>SAUR19</td>\n      <td>AT5G18010</td>\n      <td>SAUR19OE</td>\n      <td>OE</td>\n      <td>Cell expansion</td>\n      <td>(Spartz et al., 2012)</td>\n    </tr>\n  </tbody>\n</table>\n\n_OE: over-expression, LOF: loss of function._\n\nIn order to identify combinations with synergistic or negative effects on leaf growth, we searched for significant leaf\u2013genotype interactions (FDR <0.05). The significance of the difference between the EXPni and the observed value was determined using a mixed model (\u2018Materials and methods\u2019). This calculation and comparison was done for each combination (Figure 1\u2014figure supplement 4\u201364). The LAs were analyzed using repeated measurements to take into account dependencies between the different leaves of the rosette. We also calculated the total rosette area, defined as the sum of all individual leaves. Similarly as for leaf area, a rosette EXPni was calculated.\n\n### Identification of positive and negative epistasis effects on leaf growth\n\nAmong the 61 combinations analyzed, 23 pairwise crosses, almost 38%, were found to have a rosette size significantly exceeding the EXPni value (FDR <0.05, Figures 1 and 2). In the strongest synergistic combinations, such as BRI1OE-eod1-2, BRI1OE-EXP10OE, BRI1OE-SAUR19OE, GRF5OE-SAUR19OE, BRI1OE-da1-1, ami-ppd-SAUR19OE and samba-eod1-2 (at least 20% larger than the EXPni), the positive effect on size was observed for all rosette leaves. Remarkably, although out of the 13 genes that were selected for this screen only two are involved in increasing cell size (EXP10OE and SAUR19OE), almost half of the synergistic combinations arose from combining cell proliferation-stimulating gene perturbations with these two cell expansion-promoting genes, particularly with SAUR19OE (Figure 2; Table 1). We also observed a positive epistasis in the majority of the combinations with samba, BRI1OE or SAUR19OE, suggesting that these growth regulators are more prone to lead to synergistic effects in binary combinations (Figure 2\u2014figure supplement 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-v2.jpg)\n\n**Figure 1.:** The outer ring shows the percentage of the rosette size of the combinations compared to the WT (C/W). In the middle rings, percentages of the observed sizes of the cotyledons (L0) until leaf 6 (L6) and the complete rosette are shown compared to the expected if non-interacting value (EXPni). Significant differences to the rosette EXPni value (FDR <0.05) allowed identifying synergistic interactions (black line) and negative interactions (dashed line) between two transgenic lines. The inner circle shows the color code with dark pink being the lowest and deep green being the highest value. Combinations that are at least 5% larger than each of their heterozygous controls are marked in bold.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Horizontally, the pollen donors are shown and vertically the pollen receptors. The samba mutant plants were mostly used as a pollen receptor because they produce little pollen. The heterozygous gene combinations are shown in light green and their controls in darker green. Reciprocal heterozygous crosses are shown in blue and the homozygous combinations are indicated with an (*).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Each graph represents the relative expression of a gene of interest in Col-0, the heterozygous control and the heterozygous combinations.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** 16 plants per genotype were grown in three independent repeats and at 21 DAS (1), leaf series were made (2) to measure the individual leaf size (5). Images of the leaf series were pre-processed (3\u20134) and the individual leaf area was measured (5) with ImageJ v1.45 (NIH; http://rsb.info.nih.gov/ij/). The data was analyzed using a mixed model and the effect size for the genotypes were calculated (\u2018Materials and methods\u2019). Finally, these estimates of the single control lines and the double transgenics were plotted in graphs (6) and compared to the wild-type and a calculated expected if additive value in heatmaps (6).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1-L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp9-v2.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp10-v2.jpg)\n\n**Figure 1\u2014figure supplement 10.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp11-v2.jpg)\n\n**Figure 1\u2014figure supplement 11.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp12-v2.jpg)\n\n**Figure 1\u2014figure supplement 12.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp13-v2.jpg)\n\n**Figure 1\u2014figure supplement 13.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 14.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp14-v2.jpg)\n\n**Figure 1\u2014figure supplement 14.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 15.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp15-v2.jpg)\n\n**Figure 1\u2014figure supplement 15.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 16.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp16-v2.jpg)\n\n**Figure 1\u2014figure supplement 16.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 17.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp17-v2.jpg)\n\n**Figure 1\u2014figure supplement 17.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 18.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp18-v2.jpg)\n\n**Figure 1\u2014figure supplement 18.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 19.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp19-v2.jpg)\n\n**Figure 1\u2014figure supplement 19.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 20.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp20-v2.jpg)\n\n**Figure 1\u2014figure supplement 20.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 21.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp21-v2.jpg)\n\n**Figure 1\u2014figure supplement 21.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 22.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp22-v2.jpg)\n\n**Figure 1\u2014figure supplement 22.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 23.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp23-v2.jpg)\n\n**Figure 1\u2014figure supplement 23.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 24.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp24-v2.jpg)\n\n**Figure 1\u2014figure supplement 24.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 25.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp25-v2.jpg)\n\n**Figure 1\u2014figure supplement 25.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 26.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp26-v2.jpg)\n\n**Figure 1\u2014figure supplement 26.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 27.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp27-v2.jpg)\n\n**Figure 1\u2014figure supplement 27.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 28.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp28-v2.jpg)\n\n**Figure 1\u2014figure supplement 28.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 29.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp29-v2.jpg)\n\n**Figure 1\u2014figure supplement 29.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 30.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp30-v2.jpg)\n\n**Figure 1\u2014figure supplement 30.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 31.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp31-v2.jpg)\n\n**Figure 1\u2014figure supplement 31.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 32.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp32-v2.jpg)\n\n**Figure 1\u2014figure supplement 32.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 33.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp33-v2.jpg)\n\n**Figure 1\u2014figure supplement 33.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 34.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp34-v2.jpg)\n\n**Figure 1\u2014figure supplement 34.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 35.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp35-v2.jpg)\n\n**Figure 1\u2014figure supplement 35.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 36.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp36-v2.jpg)\n\n**Figure 1\u2014figure supplement 36.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 37.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp37-v2.jpg)\n\n**Figure 1\u2014figure supplement 37.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 38.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp38-v2.jpg)\n\n**Figure 1\u2014figure supplement 38.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 39.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp39-v2.jpg)\n\n**Figure 1\u2014figure supplement 39.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 40.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp40-v2.jpg)\n\n**Figure 1\u2014figure supplement 40.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 41.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp41-v2.jpg)\n\n**Figure 1\u2014figure supplement 41.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 42.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp42-v2.jpg)\n\n**Figure 1\u2014figure supplement 42.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 43.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp43-v2.jpg)\n\n**Figure 1\u2014figure supplement 43.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 44.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp44-v2.jpg)\n\n**Figure 1\u2014figure supplement 44.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 45.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp45-v2.jpg)\n\n**Figure 1\u2014figure supplement 45.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 46.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp46-v2.jpg)\n\n**Figure 1\u2014figure supplement 46.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 47.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp47-v2.jpg)\n\n**Figure 1\u2014figure supplement 47.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 48.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp48-v2.jpg)\n\n**Figure 1\u2014figure supplement 48.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 49.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp49-v2.jpg)\n\n**Figure 1\u2014figure supplement 49.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 50.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp50-v2.jpg)\n\n**Figure 1\u2014figure supplement 50.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 51.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp51-v2.jpg)\n\n**Figure 1\u2014figure supplement 51.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 52.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp52-v2.jpg)\n\n**Figure 1\u2014figure supplement 52.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 53.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp53-v2.jpg)\n\n**Figure 1\u2014figure supplement 53.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 54.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp54-v2.jpg)\n\n**Figure 1\u2014figure supplement 54.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 55.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp55-v2.jpg)\n\n**Figure 1\u2014figure supplement 55.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 56.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp56-v2.jpg)\n\n**Figure 1\u2014figure supplement 56.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 57.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp57-v2.jpg)\n\n**Figure 1\u2014figure supplement 57.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 58.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp58-v2.jpg)\n\n**Figure 1\u2014figure supplement 58.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 59.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp59-v2.jpg)\n\n**Figure 1\u2014figure supplement 59.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 60.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp60-v2.jpg)\n\n**Figure 1\u2014figure supplement 60.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 61.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp61-v2.jpg)\n\n**Figure 1\u2014figure supplement 61.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 62.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp62-v2.jpg)\n\n**Figure 1\u2014figure supplement 62.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 63.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp63-v2.jpg)\n\n**Figure 1\u2014figure supplement 63.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 1\u2014figure supplement 64.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig1-figsupp64-v2.jpg)\n\n**Figure 1\u2014figure supplement 64.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig2-v2.jpg)\n\n**Figure 2.:** (A) The connections between two transgenics indicate the observation of a synergistic effect on rosette size. Two transgenics producing larger leaves resulting from an increased cell area are SAUR19OE and EXP10OE. (B) Both synergistic (GRF5OE-SAUR19OE and ANTOE-SAUR19OE) and additive combinations (da1-1-GA20ox1OE and ANTOE-AVP1OE) lead to plants strongly enlarged up to 39% compared to the WT. In order to flatten the leaves for area measurements, cuts were made in the blade.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The values indicate for each gene the % of synergistic effect observed in all its combinations. For example, 83% of all combinations with eod1-2 synergistically enhance leaf growth.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Leaf series to illustrate the size increase compared to the WT. (B) Percentages of the observed sizes of the cotyledons (L0) until leaf 6 (L6) and the complete rosette (R) are shown compared to the WT.\n\nOf all binary crosses analyzed, 39.2% resulted in plants with a rosette size exceeding that of both heterozygous control lines and the WT (Figure 1; Supplementary file 1). Interestingly, 16 combinations resulted from a synergistic effect, while eight were the result of an additive effect. Among the largest plants, synergistic (GRF5OE-SAUR19OE and ANTOE-SAUR19OE, 39% and 38% larger than the WT, respectively) and additive (da1-1-GA20ox1OE and ANTOE-AVP1OE, 38% and 36% larger than the WT, respectively) effects could be found.\n\nIn addition, we also found that 23% of the combinations led to the formation of smaller rosettes than expected. We observed that mainly combinations with jaw-D and ami-ppd led to cases of negative epistasis. The total rosette area of these combinations was similar or much smaller than that of WT plants, such as GRF5-jaw-D (46% smaller than the WT), with the exception of da1-1-ami-ppd, which was larger than the WT, but smaller than da1-1-Col-0. (Figure 1).\n\nIn conclusion, from this screen, we found that more than one third of the combinations showed positive epistasis on leaf growth, resulting from combining either two genes both stimulating cell proliferation, or either one gene enhancing cell proliferation and the other cell expansion.\n\n### Reciprocal and homozygous combinations\n\nTo strengthen the observed effects of pairwise perturbations and to further exclude that the observed phenotypes were influenced by maternal effects, we made reciprocal crosses of selected synergistic combinations (SAUR19OE-ami-ppd, EXP10OE-BRI1OE, SAUR19OE-BRI1OE). We measured the leaf area at 21 DAS and could confirm the synergistic effects for all three combinations (Figure 3A, Figure 3\u2014figure supplement 1\u20133). Next, we generated homozygous lines for two synergistic combinations, ami-ppd-SAUR19OE and samba-eod1-2, and one additive combination, producing nevertheless a very large rosette, da1-1-SAUR19OE. Transgene expression levels in these homozygous lines were verified and found comparable to those in the homozygous single lines (Figure 3\u2014figure supplement 4). We confirmed a synergistic effect on the rosette sizes in homozygous ami-ppd-SAUR19OE and samba-eod1-2 plants (24% and 8% larger than the rosette EXPni respectively) (Figure 3B, Figure 3\u2014figure supplement 5,6). The combination da1-1-SAUR19OE, which produced among the largest plants in the screen, but did not enhance leaf size synergistically, was also found to be particularly large when homozygous, since its rosette size was 61% larger than that of the WT (Figure 3B, Figure 3\u2014figure supplement 7, Figure 2\u2014figure supplement 2). From these experiments we could confirm the observed positive epistatic effects in a selected set of double mutants from our screen of heterozygous combinations in a reciprocal direction and/or homozygous status.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig3-v2.jpg)\n\n**Figure 3.:** C/W represents the percentage of the rosette size of the combinations compared to the WT. Percentages of the observed sizes of the cotyledons (L0) until leaf 6 (L6) and the complete rosette are shown compared to the expected if non-interacting value (EXPni). The color code represents the range of differences with dark pink being the lowest and deep green being the highest value.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (b), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Each graph represents the relative expression of a gene of interest in Col-0, the homozygous control and the homozygous combinations.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Top left panel (A): p1/w, p2/w, c/w: percentage of the area to the WT (w) of parent 1 (p1), parent 2 (p2) and the combination (C) respectively. c/e: percentage of the area of the combination (C) to the expected if non-interacting value (EXPni) (e). Top right panel (B), corresponding FDRs for the percentages presented in the top left panel. The cotyledons (L0), first six leaves (L1\u2013L6) and the rosette (R) are represented. Bottom left panel (C): graphs representing leaf areas for the WT (green), the combination (red) and both single lines (dark and light blue) in mm2. Bottom right panel: graph showing the leaf area of the combination (red) and the WT (green) compared to the calculated EXPni (dotted red).\n\n### Cellular analysis of ami-ppd-SAUR19OE\n\nIn order to explain the cause for the observed synergistic phenotype at a cellular level, we quantified cell numbers and cell size in the homozygous combination ami-ppd-SAUR19OE. In the ami-ppd line, in which PPD1 and PPD2 expression is downregulated, the increased leaf size results from a prolonged division of meristemoids (White, 2006), whereas overexpression of SAUR19 leads to cell enlargement (Spartz et al., 2012). Samples of leaf 3 were harvested at 21 DAS, cleared and cell drawings of the abaxial epidermis were analyzed. As shown in Figure 4, the larger leaves of SAUR19OE contain less but larger cells, whereas in leaves of ami-ppd more cells are produced. In the latter, an observed reduction in average cell area results from the presence of a larger amount of smaller cells surrounding the stomata which do not reach the mature wild-type size (Figure 4B). In the homozygous ami-ppd-SAUR19OE line, we observed an increased cell number compared to the WT, but to a lower extend than in the ami-ppd line, and an increased cell area similar to that of SAUR19OE. Thus the effect of SAUR19OE allows for an increased cell expansion of the many small cells resulting from PPD downregulation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02252/elife-02252-fig4-v2.jpg)\n\n**Figure 4.:** (A) The graphs represent the percentage difference of leaf area, cell number and cell area between a transgenic and the WT. (n = 3; *p<0.05). (B) Representative drawing of cells in the different lines. Cells are colored in function of their area. Red: cells smaller than 1.25 E\u22124 mm2, light green: cell area ranging from 1.25 E\u22124 mm2 to 1.6 E\u22123 mm2, medium green: cell area ranging from 1.6 E\u22123 mm2 to 3.2 E\u22123 mm2, dark green: cells larger than 6.4 E\u22123 mm2, stomata are marked in grey.\n\n## Discussion\n\nIn order to identify potential interactions existing within the genetic network regulating leaf growth, we pairwised combined 13 gene perturbations each leading to an enhanced leaf size and looked for positive interactions resulting in an increased leaf area larger than the additive combination of the single perturbations.\n\nFrom this screen, we found that 61% of the paired perturbations showed epistasis: 38% of the studied gene combinations further enhanced leaf organ size synergistically and 23% negatively influenced leaf size. Studies using limited numbers of mutations, random or affecting a specific trait, also showed that epistasis is common, although lower levels of interactions were found (Clark and Wang, 1997; Magwire et al., 2010). In D. melanogaster, for example, 35 of 128 (27%) of random paired mutations showed epistasis (Clark and Wang, 1997). Larger-scale studies, in systems allowing automated quantitative assays, identified between 13 and 35% of epistatic effects (Byrne et al., 2007; St Onge et al., 2007). The large number of interactions we identified could be explained by the fact that we studied a set of perturbations, including loss and gain of function, leading to one particular phenotype, namely an increase of leaf area. In model systems permitting genome-wide genetic interactions assays, all genes are either knocked down or knocked out and these perturbations can therefore affect the studied trait, for example fitness, by increasing it or decreasing it. In D. melanogaster, the study of ten mutations leading to an increased life span showed that paired combinations have high levels of connections, with 21 significant epistatic interactions in males and/or females (47%) observed (Magwire et al., 2010).\n\nInterestingly, three genes, SAMBA, BRI1 and SAUR19, were found to lead to a synergistic effect in the majority of combinations they were part of. Large-scale genetic interaction studies in yeast and nematodes have shown that most genes in a network have only a few interactions, while a limited number of genes show multiple interactions and are therefore considered as network hubs mediating across-process connections (Lehner et al., 2006; Baryshnikova et al., 2010; Costanzo et al., 2010). Despite the relative small scale of the study presented here, our observations suggest that SAMBA, BRI1 and SAUR19 play a central role in the leaf growth regulatory networks.\n\nTwo of these highly connected genes in synergistic combinations, BRI1 and SAUR19, have a known role in hormone signaling. Interestingly, yeast studies have shown that highly connected genes in a genetic network tend to be pleiotropic and multi-functional (Costanzo et al., 2010), similar to plant hormones which regulate multiple processes. BRI1 is a receptor of the brassinosteroid (BR) hormone which plays a crucial role in several biological processes, including leaf growth, as severe dwarfism is observed in bri1 mutants and other mutants of the BR biosynthesis and signaling pathways (Clouse et al., 1996; Vert et al., 2008). BRI1 is highly expressed in all organs during early seedling development (Friedrichsen et al., 2000) similarly to highly connected genes in yeast which show high mRNA levels (Costanzo et al., 2010). Additionally, introduction of BRI1OE into P10-CKX3OE, which has a smaller rosette size than WT plants, results in positive epistatic effects on shoot growth (Vercruyssen et al., 2011), highlighting the importance of this gene in leaf growth regulation. SAUR19 belongs to the family of SAUR genes known to be rapidly and strongly induced by auxin (Hagen and Guilfoyle, 2002), which plays a major role in the initiation of leaf primordia, the formation of vascular patterns and leaf shape, but also in the regulation of leaf cell expansion (Chen et al., 2001; Wilmoth et al., 2005; Scarpella et al., 2010). SAUR19 is a positive regulator of cell expansion, most likely through the modulation of auxin transport (Spartz et al., 2012). Our findings therefore suggest that alterations of BR or auxin signaling in the binary combinations could potentiate the effect of several growth-promoting genes.\n\nInteractions between BR and other plant hormones have been shown for several physiological and developmental processes (Choudhary et al., 2012; Li and He, 2013; Zhu et al., 2013). BR and auxin interactions exist at multiple levels, including hormone synthesis, transport, signal transduction, and gene transcription. For example, microarray studies have revealed similar effects of BR and auxin on a large number of genes, including a member of the SAUR family, SAUR15 (Goda et al., 2004; Nemhauser et al., 2004; Walcher and Nemhauser, 2012). Interestingly, exogenous application of both hormones leads to a synergistic induction of many common targets (Nemhauser et al., 2004; Vert et al., 2008). In addition, auxin can increase the biosynthesis of BRs (Chung et al., 2011; Yoshimitsu et al., 2011) and the BR-regulated BIN2 kinase contributes to a synergistic increase in auxin-induced gene expression (Vert et al., 2008). The overexpression of both BRI1 and SAUR19, involved in BR perception and auxin transport, respectively, could therefore amplify the effect of both hormones, hereby leading to the observed synergism in leaf growth.\n\nStudies in yeast have shown that most genetic interactions occur between genes involved in the same biological process, except for highly connected genes (Tong et al., 2004; Costanzo et al., 2010). In agreement with these studies, we found that by combining AN3OE with GRF5OE, shown to interact in a yeast two-hybrid assay (Horiguchi et al., 2005), the leaf size is increased more than expected. A similar effect is seen when BRI1OE and ami-ppd, both producing enlarged and curled leaves (Wang et al., 2001; White, 2006), are combined. Moreover, PPD genes regulate the division of dispersed meristemoid cells in the leaf epidermis, which will give rise to the stomatal lineage (White, 2006) and BRs have been shown to control stomatal development (Gudesblat et al., 2012; Kim et al., 2012; Khan et al., 2013). In addition, in BRI1 overexpressing seedlings, PPD2 has been reported to be downregulated (Gonzalez et al., 2010). In literature, the combination of da1-eod has been reported to show a positive epistatic effect on leaf growth. Both proteins are suggested to work in ubiquitin-mediated proteolysis that could modulate the activity of a shared, yet unknown target (Li et al., 2008). However, not only combining growth-regulating genes that are interconnected can lead to larger phenotypes than expected, also combining cell proliferation with cell expansion leads to positive effects on leaf size as found in the combinations ami-ppd-SAUR19OE, GRF5OE-SAUR19OE and samba-EXP10OE. In addition, the combination of lines positively affecting distinct growth processes seems to allow compensating negative effects sometimes observed when constitutively expressing or strongly downregulating growth regulators, such as observed in ami-ppd-SAUR19OE (Figure 4). In plants overexpressing GRF5 and jaw-D, each promoting cell proliferation, a reduction in cell area has also been reported (Gonzalez et al., 2010). Interestingly, when these genes are combined with SAUR19OE, a synergistic effect on growth can be observed, similar to ami-ppd-SAUR19OE. This suggests that the double transgenic line can acquire the benefits from both genes and therefore enhance leaf size more than expected. Such compensation could be lacking in the negative combinations we observed, therefore leading to the formation of smaller plants than expected. For example, by combining GRF5 and jaw-D, both producing more but smaller cells, the negative effect on leaf size could be caused by overstimulation of cell division that affects the overall growth as observed when E2Fa and DPa are overexpressed simultaneously (De Veylder et al., 2002). These findings highlight the challenge of studying genetic interactions in multicellular organisms, compared to single cell systems such as yeast. Genetic interactions observed at the organ level can reflect connections between genes working in the same pathway, but also the interconnection of several processes such as cell division and cell expansion which occur in different cell types and tissues, at different rates and developmental stages. Although yeast is heavily used as a model to identify genetic interactions, it will be essential to also use multicellular organisms as a model for genetic interactions to capture the complex relationship between developmental processes.\n\nIn this study we searched for binary combinations of growth-regulating genes exhibiting an increase in leaf growth larger than the addition of the two single transgenic parents. In plants and animals, the phenomenon of heterosis or hybrid vigor corresponds to the increased performance of a hybrid offspring compared to its parents (Schnable and Springer, 2013). Heterosis has been proposed to arise from various mechanisms such as intra-allelic dominance and intra-allelic over-dominance, but emerging evidence also exists for the contribution of inter-gene interactions, or epistasis (Kaeppler, 2012; Chen, 2013; Schnable and Springer, 2013). Our findings suggest that differences in expression of growth-promoting genes in natural variants could lead to synergistic effects in hybrids. For example, one could imagine that in one variant, PPD is lowly expressed, whereas in another variant SAUR19 is highly expressed. The combination of both genes in a cross of natural variants could lead to a synergistic increase in leaf size as observed in our study. Heterosis could therefore originate, in part, from the assembly of the effects of various pairwised combinations of growth-regulating genes. Another theory to explain heterosis describes the fact that hybrid vigor allows for the compensation of small negative alleles (Kaeppler, 2012; Chen, 2013; Schnable and Springer, 2013). In our study, we also found that negative effects of some perturbations can be compensated in pairwised combinations, allowing the appearance of a synergistic effect on growth, such as in the cross ami-ppd-SAUR19OE.\n\nSo far, genetic engineering of crops mainly has been commercially successful for input traits, such as insect tolerance and herbicide resistance (http://www.isaaa.org). Engineering quantitative, yield-related traits, such as drought tolerance and enhanced biomass production, turned out to be much more difficult. The current study illustrates that gene combinations have great promise to successfully engineer quantitative traits. Furthermore, the observation that genes stimulating cell proliferation combine remarkably well with genes enhancing cell expansion, argues for a need for further in-depth analysis of how single genes promote organ growth. A better understanding of the mode of action of growth- and/or yield-enhancing genes will allow for rationalizing which gene stacks have the highest probability to give successful results. Future prospects of combining multiple genes or even entire circuits of networks using synthetic biology approaches offer great perspectives to further enhance crop yield and to deliver sufficient food for the growing world demand.\n\n## Materials and methods\n\n### Plant material\n\nSeeds of A. thaliana (L) Heyhn. ecotype Columbia-0 (Col-0) and all mutants (Table 1) were grown on soil and kept in the same growth room for 25 days, when flower stalks started to emerge. For all single insertion locus transgenic lines, binary crosses were made in one direction; for a selection of these lines, reciprocal crosses were made and homozygous lines were produced.\n\n### Growth analysis\n\nAll plants were grown on plates containing half-strength MS medium (Murashige and Skoog, 1962) supplemented with 1% sucrose with a density of one plant per 4 cm2. The seeds were stratified for 2 days at 4\u00b0C and placed in growth rooms kept at 21\u00b0C and 16-hr day/8-hr night cycles. Plants were grown in three experiments, consisting of 16 replicates per experiment. To ensure environmental conditions are similar between the experiments, they were performed consecutively in the same growth chamber on the same shelf. To prevent positional effects on plant growth, all plates were randomized every 2 days. We set out to grow all genotypes simultaneously in three repeats, but due to germination issues with some seed batches, a total of 5 experiments have been performed to obtain three repeats for each genotype, with the exception of the cross ANTOE-da1-1 for which we could obtain results in one repeat. At 21 DAS, individual leaves (cotyledons and rosette leaves) were dissected at the base of the petiole and their area was measured with ImageJ v1.45 (NIH; http://rsb.info.nih.gov/ij/).\n\n### RNA extraction, cDNA preparation and q-RT-PCR\n\nTotal RNA was extracted from flash-frozen seedlings with TRIzol reagent (Invitrogen, Belgium). To eliminate the residual genomic DNA present in the preparation, the RNA was treated by RQ1 RNAse-free DNase according to the manufacturer's instructions (Promega, The Netherlands, http://www.promega.com) and purified with the RNeasy Mini kit (Qiagen, The Netherlands, http://www.qiagen.com). Complementary DNA was made with the iScript cDNA Synthesis kit from Biorad (Biorad, Belgium, http://www.bio-rad.com) according to the manufacturer's instructions. Q-RT-PCR was done on a LightCycler 480 (Roche, Belgium, http://www.roche.com) in 384-well plates with LightCycler 480 SYBR Green I Master (Roche) according to the manufacturer's instructions. Primers were designed with the Primer3 (http://frodo.wi.mit.edu/) (Supplementary file 2). Data analysis was performed using the \u0394\u0394CT method (Pfaffl, 2001), taking the primer efficiency into account. The data was normalized using six normalization genes (UBQ10, CDKA1, CBP20, AT1G13320, AT2G32170, and AT2G28390) according to the GeNorm algorithm (Vandesompele et al., 2002).\n\n### Microscopy for epidermal cell size measurements\n\nFor the cellular analysis, samples of leaf 3 were cleared in 70% ethanol and mounted in lactic acid on a microscope slide. The total leaf blade area was measured for 10 representative leaves under a dark-field binocular microscope. Abaxial epidermal cells along the complete proximal\u2013distal axis of the leaves were drawn with a microscope equipped with differential interference contrast optics (DM LB with 403 and 633 objectives; Leica) and a drawing tube. Photographs of leaves and scanned cell drawings were used to measure leaf and cell area, respectively, with ImageJ v1.45 (NIH; http://rsb.info.nih.gov/ij/), from which the cell numbers were calculated (De Veylder et al., 2001).\n\n### Statistical analysis\n\nThe leaf series data analysis yields the size of each individual leaf of the rosette. From this data, the rosette area was calculated by summating the area of all separate leaves. A mixed model analysis was performed on the log2 transformed rosette areas using Genotype as a fixed factor. Each experiment was repeated three times. This Experiment effect was included as a random factor in the model to account for correlation between measurements done within the same experiment. The Genotype*Experiment interaction was included in the model when it was found to be significant (p<0.05), based on a likelihood ratio test. For all described combinations the variation attributed to the Genotype was much larger than that attributed to the interaction between Genotype and Experiment. Severe outliers, caused by germination problems, were removed prior to the analysis. Least square means estimates for the rosette area were calculated.\n\nSignificant differences between the rosette area (RA) of the cross and its parental lines, as well as with the reference plants, were determined using the described mixed model (WALD-type III tests of fixed effects). To test for synergistic effects following null hypothesis was set up:\n\n$$\nlog_{2}(RA^_{cross})=log_{2}(RA^_{control1})+log_{2}(RA^_{control2})\u2212log_{2}(RA^_{wildtype})\n$$\n\nThrough log-transformation of the data, we apply an additive model with a multiplicative scale (Koornneef et al., 1998; Phillips, 2008; Horn et al., 2011). As control lines the appropriate heterozygous parental lines were used.\n\nBy rearranging terms we get:\n\n$$\nlog_{2}(RA^_{cross})\u2212log_{2}(RA^_{control1})\u2212log_{2}(RA^_{control2})+log_{2}(RA^_{wildtype})=0\n$$\n\nA FDR multiple testing correction was applied. Synergistic effects were assumed when the null hypothesis was rejected at a FDR level of 0.05. The model was fit with the mixed procedure from SAS. To estimate repeatability (broad sense heritabilities at the individual level), the mixed model was refit with genotype, experiment and genotype*experiment as random terms in the model (Supplementary file 3).\n\nThe leaf series data was analyzed using repeated measurements analysis with either the hpmixed or mixed procedure from SAS. Data for leaves up to leaf 6 was included in the analysis. The four variance-covariance structures available in the procedure were tested and the best structure was determined based on the AIC values. For all combinations the unstructured structure was selected as the best. The mean model included the main effects Genotype and Leaf, and their interaction term. To account for dependencies of observations made within the same experiment, experiment was added as random factor in the model. Based on a likelihood ratio test the Genotype*Experiment interaction was incorporated in the model when p<0.05. Several contrast hypotheses were set up. For all leaves, the area in the reference line was compared to that in the cross and both parental lines. Synergistic effects of the cross were determined for each leaf, as described previously.\n\nFor the cross ANTOE-da1-1, there was only one experiment that yielded results, therefore Experiment was not included as a factor in the model.\n\nAll statistical analyses were performed with SAS 9.3 (SAS Institute Inc., 2011, Cary, North Carolina). Residual diagnostics were carefully examined.\n",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "6bfc50a3-8331-45ba-a82b-f161f753fac9",
+      "submission_id": "1ca2838b-51d2-44da-8103-997e72a9bb48",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel J Kliebenstein, University of California, Davis , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02252.084](https://doi.org/10.7554/eLife.02252.084)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cBetter together: Combining plant growth-promoting genes leads to positive epistasis\u201d for consideration at eLife. Your article has been favorably evaluated by Deputy Editor Detlef Weigel and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe data provide an important beginning to the understanding of how genetic loci in plants may be stacked to control quantitative phenotypes. Additionally it connects this to a preliminary analysis of molecular connections. This will serve to help stimulate a new avenue of research in both basic and applied plant biology.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\n1) The description of the experimental design needs to be clarified to allow the reader to understand how the data was improved. Be as explicit as possible.\n\n2) Both reviewers were confused by what was and was not considered significant in Figure 1 as there was discussion of a linear model with FDR but then a threshold was utilized. This needs to be clarified.\n\n3) There should be much better use of the existing yeast data on the same topic to help this paper in a compare and contrast fashion.\n\n4) Commentary on both negative and positive epistasis should be included as both were observed.\n",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b484b587-1fb2-4389-9ca0-cc30a62b2280",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C1",
+      "claim": "Epistasis was introduced by Bateson to describe the phenomenon that some mutations seemed to be 'stopping' or 'standing above' the effect of other mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Bateson introduced the term epistasis to describe the phenomenon that some mutations seemed to be 'stopping' or 'standing above' the effect of other mutations (Bateson, 1909), it became clear that interactions between multiple genes influence many traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bateson, 1909.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "14a25db6-30a7-4832-a67d-f33c635fe91c",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C2",
+      "claim": "Epistasis corresponds to any deviation from the expected phenotype predicted by combining the effects of individual alleles or mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Epistasis, or interaction between genes, therefore corresponds to any deviation from the expected phenotype, predicted by combining the effects of individual alleles or mutations (Fisher, 1918; Phillips, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fisher, 1918 and Phillips, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "1561ba8f-b5ca-4005-a786-4bd8eb0b729e",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C3",
+      "claim": "Numerous studies on the effect of pairwise gene perturbations have been conducted in budding yeast Saccharomyces cerevisiae to systematically evaluate epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the last decade, numerous studies on the effect of pairwise gene perturbations have been conducted, primarily in the budding yeast Saccharomyces cerevisiae, to systematically evaluate epistasis for several characteristics, such as fitness or synthetic lethality (Tong et al., 2004; Jasnos and Korona, 2007; St Onge et al., 2007; Dixon et al., 2009; Costanzo et al., 2010, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "2052a89b-5187-4fd9-bd18-dbfe2ea1d1bf",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C4",
+      "claim": "The first large-scale genetic interaction study in yeast identified 4000 genetic interactions among 1000 genes when analyzing synthetic lethality in double deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the first large-scale genetic interaction study in yeast identified 4000 genetic interactions among 1000 genes when analyzing synthetic lethality in double deletion mutants (Tong et al., 2004), the field advanced considerably.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tong et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "e1a91907-752a-43ce-a983-38cd2c3941b1",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C5",
+      "claim": "About 170,000 interactions are known among 5.4 million gene pairs screened to affect fitness in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, about 170,000 interactions are known among 5.4 million gene pairs screened to affect fitness (Baryshnikova et al., 2010; Costanzo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Baryshnikova et al., 2010 and Costanzo et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "d1996ddd-2601-4ba2-be8f-807733c4c909",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C6",
+      "claim": "The majority of genes are infrequently connected in the genetic interaction network, while a small fraction of genes shows many interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these studies have shown that the majority of the genes are infrequently connected in the genetic interaction network, while a small fraction of genes shows many interactions (Baryshnikova et al., 2010; Costanzo et al., 2010, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to yeast genetic interaction studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "a801ccee-3163-40d8-9d95-a455730eefa5",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C7",
+      "claim": "In C. elegans, systematic mapping of interactions between genes revealed high connectivity of a small proportion of genes in the network, while most genes have few interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, systematic mapping of interactions between genes functioning in the signaling and the transcriptional networks that regulate development also revealed high connectivity of a small proportion of genes in the network, while most genes have few interactions (Lehner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lehner et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "0a41e7dc-be21-45ce-8e9f-2e2f6780f480",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C8",
+      "claim": "Leaf growth is mediated by a cell proliferation phase followed by a cell expansion phase that initiates at the leaf top and proceeds basipetally.",
+      "claim_type": "EXPLICIT",
+      "source": "As for most plant organs, their determinate growth pattern results in a relatively constant size within a fixed environment. Leaf growth is mediated by a cell proliferation phase followed by a cell expansion phase that initiates at the leaf top and proceeds basipetally (Donnelly et al., 1999; Andriankaja et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Donnelly et al., 1999 and Andriankaja et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "d812fe76-7306-4df8-b07a-65f76ba0a4d8",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C9",
+      "claim": "At least five different parameters contribute to the final leaf size: the number of cells incorporated in leaf primordia; the rate of cell division; the developmental window of cell proliferation; the timing of meristemoid division; and the extent of cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "At least five different parameters contribute to the final leaf size (Gonzalez et al., 2012): the number of cells incorporated in leaf primordia; the rate of cell division; the developmental window of cell proliferation; the timing of meristemoid division; and the extent of cell expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gonzalez et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8a3f6382-2fd8-44fe-b182-0c543da29f08",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C10",
+      "claim": "One case of positive epistasis in Arabidopsis leaf growth has been described when a dominant-negative point mutation in DA1 is combined with the knock-out of EOD1/BIG BROTHER.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, only one case of positive epistasis in Arabidopsis leaf growth has been described when a dominant-negative point mutation in DA1, encoding an ubiquitin receptor, is combined with the knock-out of the ENHANCER OF DA1 (EOD)1/BIG BROTHER, coding for an E3 ubiquitin ligase (Li et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Li et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "e32f4d5c-c930-4e84-9978-472c0b877992",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C11",
+      "claim": "A combinatorial screen was performed with 13 transgenic Arabidopsis lines with an increased leaf size.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we performed a combinatorial screen with 13 transgenic Arabidopsis lines with an increased leaf size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "08ee885d-7fff-4b76-b7f6-4f8f658fef00",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C12",
+      "claim": "From 61 analyzed combinations, 39% showed an additional increase in leaf size.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that from 61 analyzed combinations, 39% showed an additional increase in leaf size and most resulted from a positive epistasis on growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "96e8bf22-0b65-45a1-b1a0-6c860a8a690d",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C13",
+      "claim": "Only few genes were highly connected in synergistic combinations, with positive epistasis observed in the majority of combinations with samba, BRI1OE or SAUR19OE.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what is found in other organisms in which such an epistasis assay was performed, only few genes were highly connected in synergistic combinations as we observed a positive epistasis in the majority of the combinations with samba, BRI1OE or SAUR19OE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "86773d61-93b4-49ac-95b2-2fdb5994d23f",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C14",
+      "claim": "Positive epistasis was found with combinations of genes with a similar mode of action, but also with genes which affect distinct processes, such as cell proliferation and cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, positive epistasis was found with combinations of genes with a similar mode of action, but also with genes which affect distinct processes, such as cell proliferation and cell expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "b052fb42-9588-480a-be10-bb14c560e530",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C15",
+      "claim": "13 genes positively affecting final leaf size in a gain- or loss-of-function situation were selected for pairwise perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify positive epistatic effects on leaf growth, we analyzed pairwise perturbations of 13 genes positively affecting final leaf size in a gain- or loss-of-function situation (Table 1) by measuring the individual and total leaf area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "98ae6b13-77cf-4f20-a609-4165faf3a27a",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C16",
+      "claim": "Lines in the Col-0 background, homozygous for a single-locus insertion of the transgene of interest, were used.",
+      "claim_type": "EXPLICIT",
+      "source": "We used lines in the Col-0 background, homozygous for a single-locus insertion of the transgene of interest and shown to have a positive effect on all rosette leaves or a subset of those (Cho and Cosgrove, 2000; Gonzalez et al., 2010; Spartz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "9ab1e1d4-86c8-4b3d-ba53-fea1c873eec5",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C17",
+      "claim": "102 heterozygous combinations were produced, consisting of 78 paired combinations and 24 back-crosses with the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We produced 102 heterozygous combinations, consisting of 78 paired combinations and 24 back-crosses with the wild type (WT) used as controls (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "5eb1cac4-0b3e-4a91-9bda-aff1db73c7c4",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C18",
+      "claim": "In total, 61 combinations were used for further growth analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 61 combinations were used for further growth analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "3aa92459-1223-442e-a075-c0b217638b47",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C19",
+      "claim": "Sixteen plants per genotype were grown in three independent repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen plants per genotype were grown in three independent repeats and at 21 days after stratification (DAS), the size of each individual leaf of the rosette was measured, resulting in 56,505 data-points, enabling us to estimate potential gene interactions for these quantitative traits (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "201e56ac-508e-4248-a4cf-3c2adce656fd",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C20",
+      "claim": "At 21 days after stratification, the size of each individual leaf of the rosette was measured, resulting in 56,505 data-points.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen plants per genotype were grown in three independent repeats and at 21 days after stratification (DAS), the size of each individual leaf of the rosette was measured, resulting in 56,505 data-points, enabling us to estimate potential gene interactions for these quantitative traits (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "3d8cf72e-453a-47b6-932a-d9b115508ccf",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C21",
+      "claim": "Among the 61 combinations analyzed, 23 pairwise crosses (almost 38%) were found to have a rosette size significantly exceeding the EXPni value (FDR <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 61 combinations analyzed, 23 pairwise crosses, almost 38%, were found to have a rosette size significantly exceeding the EXPni value (FDR <0.05, Figures 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data and statistical analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "63fbcc11-54f5-4a3b-aa18-1a1f7114ae38",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C22",
+      "claim": "In the strongest synergistic combinations, such as BRI1OE-eod1-2, BRI1OE-EXP10OE, BRI1OE-SAUR19OE, GRF5OE-SAUR19OE, BRI1OE-da1-1, ami-ppd-SAUR19OE and samba-eod1-2, the positive effect on size was observed for all rosette leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "In the strongest synergistic combinations, such as BRI1OE-eod1-2, BRI1OE-EXP10OE, BRI1OE-SAUR19OE, GRF5OE-SAUR19OE, BRI1OE-da1-1, ami-ppd-SAUR19OE and samba-eod1-2 (at least 20% larger than the EXPni), the positive effect on size was observed for all rosette leaves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "2a366a60-f7a1-4650-b71d-36e3b6bbf9c8",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C23",
+      "claim": "Almost half of the synergistic combinations arose from combining cell proliferation-stimulating gene perturbations with cell expansion-promoting genes, particularly with SAUR19OE.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, although out of the 13 genes that were selected for this screen only two are involved in increasing cell size (EXP10OE and SAUR19OE), almost half of the synergistic combinations arose from combining cell proliferation-stimulating gene perturbations with these two cell expansion-promoting genes, particularly with SAUR19OE (Figure 2; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data and analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "25aec088-bf42-48f1-8ddc-7aabc9f32c5d",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C24",
+      "claim": "Positive epistasis was observed in the majority of the combinations with samba, BRI1OE or SAUR19OE.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a positive epistasis in the majority of the combinations with samba, BRI1OE or SAUR19OE, suggesting that these growth regulators are more prone to lead to synergistic effects in binary combinations (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "f197aefd-86b7-43c4-9a8b-51fae57445c9",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C25",
+      "claim": "39.2% of all binary crosses analyzed resulted in plants with a rosette size exceeding that of both heterozygous control lines and the WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all binary crosses analyzed, 39.2% resulted in plants with a rosette size exceeding that of both heterozygous control lines and the WT (Figure 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 1 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "19f0f9ea-0dc9-4cd9-a8dc-db9938b60583",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C26",
+      "claim": "16 combinations resulted from a synergistic effect, while eight were the result of an additive effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 16 combinations resulted from a synergistic effect, while eight were the result of an additive effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data and analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8950b458-a4b6-42c6-855f-bbce5fa89ef7",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C27",
+      "claim": "23% of the combinations led to the formation of smaller rosettes than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also found that 23% of the combinations led to the formation of smaller rosettes than expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "39a74702-bbb5-4c9a-8e39-e4cf891bd177",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C28",
+      "claim": "Reciprocal crosses of selected synergistic combinations (SAUR19OE-ami-ppd, EXP10OE-BRI1OE, SAUR19OE-BRI1OE) confirmed the synergistic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "To strengthen the observed effects of pairwise perturbations and to further exclude that the observed phenotypes were influenced by maternal effects, we made reciprocal crosses of selected synergistic combinations (SAUR19OE-ami-ppd, EXP10OE-BRI1OE, SAUR19OE-BRI1OE). We measured the leaf area at 21 DAS and could confirm the synergistic effects for all three combinations (Figure 3A, Figure 3\u2014figure supplement 1\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 3A and Figure 3\u2014figure supplements 1\u20133.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "75ecf3b4-4a29-4325-b4b4-730295a96a9f",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C29",
+      "claim": "A synergistic effect on the rosette sizes was confirmed in homozygous ami-ppd-SAUR19OE and samba-eod1-2 plants (24% and 8% larger than the rosette EXPni respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed a synergistic effect on the rosette sizes in homozygous ami-ppd-SAUR19OE and samba-eod1-2 plants (24% and 8% larger than the rosette EXPni respectively) (Figure 3B, Figure 3\u2014figure supplement 5,6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 3B and Figure 3\u2014figure supplements 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "fc1e37b5-4239-4bcf-ad24-e9c4fa49add0",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C30",
+      "claim": "The combination da1-1-SAUR19OE produced among the largest plants in the screen, with its rosette size 61% larger than that of the WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination da1-1-SAUR19OE, which produced among the largest plants in the screen, but did not enhance leaf size synergistically, was also found to be particularly large when homozygous, since its rosette size was 61% larger than that of the WT (Figure 3B, Figure 3\u2014figure supplement 7, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 3B, Figure 3\u2014figure supplement 7, and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "ccdb15d3-ca8f-4a4a-931d-2849d0e2ccb8",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C31",
+      "claim": "In SAUR19OE, the larger leaves contain less but larger cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4, the larger leaves of SAUR19OE contain less but larger cells, whereas in leaves of ami-ppd more cells are produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the cellular analysis data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "2e9bbb89-a1ad-4564-923e-eb6b967ca419",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C32",
+      "claim": "In ami-ppd leaves, more cells are produced.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4, the larger leaves of SAUR19OE contain less but larger cells, whereas in leaves of ami-ppd more cells are produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the cellular analysis data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "56428ee2-c333-40b7-8c61-2ad0a3ae94b9",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C33",
+      "claim": "In ami-ppd, an observed reduction in average cell area results from the presence of a larger amount of smaller cells surrounding the stomata which do not reach the mature wild-type size.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter, an observed reduction in average cell area results from the presence of a larger amount of smaller cells surrounding the stomata which do not reach the mature wild-type size (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the cellular analysis data and Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "9f23c25b-16d2-4205-9278-f5c692f601e6",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C34",
+      "claim": "In the homozygous ami-ppd-SAUR19OE line, an increased cell number compared to the WT was observed, but to a lower extent than in the ami-ppd line, and an increased cell area similar to that of SAUR19OE.",
+      "claim_type": "EXPLICIT",
+      "source": "In the homozygous ami-ppd-SAUR19OE line, we observed an increased cell number compared to the WT, but to a lower extend than in the ami-ppd line, and an increased cell area similar to that of SAUR19OE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the cellular analysis data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "a6d0314a-6bf6-43e8-8d08-7c52cde4a005",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C35",
+      "claim": "The effect of SAUR19OE allows for an increased cell expansion of the many small cells resulting from PPD downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the effect of SAUR19OE allows for an increased cell expansion of the many small cells resulting from PPD downregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the cellular analysis data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "bd9d47a3-0201-46d9-b032-c546f6a6f7f3",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C36",
+      "claim": "61% of the paired perturbations showed epistasis: 38% of the studied gene combinations further enhanced leaf organ size synergistically and 23% negatively influenced leaf size.",
+      "claim_type": "EXPLICIT",
+      "source": "From this screen, we found that 61% of the paired perturbations showed epistasis: 38% of the studied gene combinations further enhanced leaf organ size synergistically and 23% negatively influenced leaf size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data and analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "1c08b607-a1c3-4246-acdb-abe737a47788",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C37",
+      "claim": "Three genes, SAMBA, BRI1 and SAUR19, were found to lead to a synergistic effect in the majority of combinations they were part of.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, three genes, SAMBA, BRI1 and SAUR19, were found to lead to a synergistic effect in the majority of combinations they were part of.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data and analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "e5946294-91a6-40d4-8b05-6296e99a1934",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C38",
+      "claim": "SAMBA, BRI1 and SAUR19 play a central role in the leaf growth regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the relative small scale of the study presented here, our observations suggest that SAMBA, BRI1 and SAUR19 play a central role in the leaf growth regulatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing these genes are highly connected in synergistic combinations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "b699086c-c5a9-438d-a22d-7032395ea066",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C39",
+      "claim": "BRI1 is a receptor of the brassinosteroid (BR) hormone which plays a crucial role in several biological processes, including leaf growth.",
+      "claim_type": "EXPLICIT",
+      "source": "BRI1 is a receptor of the brassinosteroid (BR) hormone which plays a crucial role in several biological processes, including leaf growth, as severe dwarfism is observed in bri1 mutants and other mutants of the BR biosynthesis and signaling pathways (Clouse et al., 1996; Vert et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Clouse et al., 1996 and Vert et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "4cccbced-4750-472e-a920-37f4728e3ca1",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C40",
+      "claim": "BRI1 is highly expressed in all organs during early seedling development.",
+      "claim_type": "EXPLICIT",
+      "source": "BRI1 is highly expressed in all organs during early seedling development (Friedrichsen et al., 2000) similarly to highly connected genes in yeast which show high mRNA levels (Costanzo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Friedrichsen et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "66e250cf-dd86-4293-b0bf-a9b6c13bf50b",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C41",
+      "claim": "Introduction of BRI1OE into P10-CKX3OE results in positive epistatic effects on shoot growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, introduction of BRI1OE into P10-CKX3OE, which has a smaller rosette size than WT plants, results in positive epistatic effects on shoot growth (Vercruyssen et al., 2011), highlighting the importance of this gene in leaf growth regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Vercruyssen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "d43a4f70-4951-46ba-9bc8-9ee1dc2b2119",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C42",
+      "claim": "SAUR19 belongs to the family of SAUR genes known to be rapidly and strongly induced by auxin.",
+      "claim_type": "EXPLICIT",
+      "source": "SAUR19 belongs to the family of SAUR genes known to be rapidly and strongly induced by auxin (Hagen and Guilfoyle, 2002), which plays a major role in the initiation of leaf primordia, the formation of vascular patterns and leaf shape, but also in the regulation of leaf cell expansion (Chen et al., 2001; Wilmoth et al., 2005; Scarpella et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hagen and Guilfoyle, 2002 and other references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "e533c54a-1e00-4cf3-b407-631ef0871a5c",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C43",
+      "claim": "SAUR19 is a positive regulator of cell expansion, most likely through the modulation of auxin transport.",
+      "claim_type": "EXPLICIT",
+      "source": "SAUR19 is a positive regulator of cell expansion, most likely through the modulation of auxin transport (Spartz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Spartz et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "680f78c5-49ce-44b1-b7dc-553428ce76fa",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C44",
+      "claim": "Alterations of BR or auxin signaling in the binary combinations could potentiate the effect of several growth-promoting genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings therefore suggest that alterations of BR or auxin signaling in the binary combinations could potentiate the effect of several growth-promoting genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental findings and the known roles of BRI1 and SAUR19.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "70ff6e35-e8a3-44ac-a0ad-df1fe70ae43f",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C45",
+      "claim": "Interactions between BR and other plant hormones have been shown for several physiological and developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between BR and other plant hormones have been shown for several physiological and developmental processes (Choudhary et al., 2012; Li and He, 2013; Zhu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Choudhary et al., 2012; Li and He, 2013; Zhu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "5f4d7c00-cfa9-46ac-826f-4f62ad4f752f",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C46",
+      "claim": "BR and auxin interactions exist at multiple levels, including hormone synthesis, transport, signal transduction, and gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "BR and auxin interactions exist at multiple levels, including hormone synthesis, transport, signal transduction, and gene transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about hormone interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "cc58f2c5-1cc2-4c43-9cd7-915d93af2eba",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C47",
+      "claim": "Microarray studies have revealed similar effects of BR and auxin on a large number of genes, including a member of the SAUR family, SAUR15.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, microarray studies have revealed similar effects of BR and auxin on a large number of genes, including a member of the SAUR family, SAUR15 (Goda et al., 2004; Nemhauser et al., 2004; Walcher and Nemhauser, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Goda et al., 2004; Nemhauser et al., 2004; Walcher and Nemhauser, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "3b7b0b5d-3299-493d-8aac-ededf8505480",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C48",
+      "claim": "Exogenous application of both BR and auxin leads to a synergistic induction of many common targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, exogenous application of both hormones leads to a synergistic induction of many common targets (Nemhauser et al., 2004; Vert et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nemhauser et al., 2004 and Vert et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "a1f9471a-bd78-42c8-bff1-a191bac0de8d",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C49",
+      "claim": "Auxin can increase the biosynthesis of BRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, auxin can increase the biosynthesis of BRs (Chung et al., 2011; Yoshimitsu et al., 2011) and the BR-regulated BIN2 kinase contributes to a synergistic increase in auxin-induced gene expression (Vert et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chung et al., 2011 and Yoshimitsu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "00014bd3-f23e-462a-b8cd-26f9617d583f",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C50",
+      "claim": "The BR-regulated BIN2 kinase contributes to a synergistic increase in auxin-induced gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, auxin can increase the biosynthesis of BRs (Chung et al., 2011; Yoshimitsu et al., 2011) and the BR-regulated BIN2 kinase contributes to a synergistic increase in auxin-induced gene expression (Vert et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Vert et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8f0599c1-a8c3-4385-85be-99a772bbc593",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C51",
+      "claim": "Most genetic interactions occur between genes involved in the same biological process, except for highly connected genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in yeast have shown that most genetic interactions occur between genes involved in the same biological process, except for highly connected genes (Tong et al., 2004; Costanzo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to yeast studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "b19e87de-64b2-4b5a-9fdc-1dfbcf7a9ba9",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C52",
+      "claim": "Combining AN3OE with GRF5OE, shown to interact in a yeast two-hybrid assay, increases leaf size more than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these studies, we found that by combining AN3OE with GRF5OE, shown to interact in a yeast two-hybrid assay (Horiguchi et al., 2005), the leaf size is increased more than expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data and a citation to Horiguchi et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "4130f74c-1b73-49fb-bb5b-8cc99cdf5a3c",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C53",
+      "claim": "A similar effect is seen when BRI1OE and ami-ppd, both producing enlarged and curled leaves, are combined.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar effect is seen when BRI1OE and ami-ppd, both producing enlarged and curled leaves (Wang et al., 2001; White, 2006), are combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data and citations to Wang et al., 2001 and White, 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "2cf194a9-08b8-4db4-9df5-45eedd9f246f",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C54",
+      "claim": "PPD genes regulate the division of dispersed meristemoid cells in the leaf epidermis, which will give rise to the stomatal lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, PPD genes regulate the division of dispersed meristemoid cells in the leaf epidermis, which will give rise to the stomatal lineage (White, 2006) and BRs have been shown to control stomatal development (Gudesblat et al., 2012; Kim et al., 2012; Khan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to White, 2006 and other references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "2e9b09a4-b341-4f5c-a485-44cef4ed8066",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C55",
+      "claim": "BRs have been shown to control stomatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, PPD genes regulate the division of dispersed meristemoid cells in the leaf epidermis, which will give rise to the stomatal lineage (White, 2006) and BRs have been shown to control stomatal development (Gudesblat et al., 2012; Kim et al., 2012; Khan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gudesblat et al., 2012; Kim et al., 2012; Khan et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "1d8f7c09-0d3d-4a91-aac2-ec3b775d1f1a",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C56",
+      "claim": "In BRI1 overexpressing seedlings, PPD2 has been reported to be downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in BRI1 overexpressing seedlings, PPD2 has been reported to be downregulated (Gonzalez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gonzalez et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "14a1d509-9fea-4c7c-8bfb-d81c10034e80",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C57",
+      "claim": "The combination of da1-eod has been reported to show a positive epistatic effect on leaf growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In literature, the combination of da1-eod has been reported to show a positive epistatic effect on leaf growth. Both proteins are suggested to work in ubiquitin-mediated proteolysis that could modulate the activity of a shared, yet unknown target (Li et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Li et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "4770cd78-2a3a-4914-9512-dc28e2ae1d0e",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C58",
+      "claim": "Combining cell proliferation with cell expansion leads to positive effects on leaf size as found in the combinations ami-ppd-SAUR19OE, GRF5OE-SAUR19OE and samba-EXP10OE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, not only combining growth-regulating genes that are interconnected can lead to larger phenotypes than expected, also combining cell proliferation with cell expansion leads to positive effects on leaf size as found in the combinations ami-ppd-SAUR19OE, GRF5OE-SAUR19OE and samba-EXP10OE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "370d5df3-9445-4441-b8f0-961e7c5407b2",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C59",
+      "claim": "The combination of lines positively affecting distinct growth processes seems to allow compensating negative effects sometimes observed when constitutively expressing or strongly downregulating growth regulators, such as observed in ami-ppd-SAUR19OE.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the combination of lines positively affecting distinct growth processes seems to allow compensating negative effects sometimes observed when constitutively expressing or strongly downregulating growth regulators, such as observed in ami-ppd-SAUR19OE (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "1e223a31-5c2c-477e-8b6b-bf6ebb9b740a",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C60",
+      "claim": "In plants overexpressing GRF5 and jaw-D, each promoting cell proliferation, a reduction in cell area has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants overexpressing GRF5 and jaw-D, each promoting cell proliferation, a reduction in cell area has also been reported (Gonzalez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gonzalez et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "f538c9f6-51ce-4dd9-a63c-a85428ba57b1",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C61",
+      "claim": "When GRF5 and jaw-D are combined with SAUR19OE, a synergistic effect on growth can be observed, similar to ami-ppd-SAUR19OE.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when these genes are combined with SAUR19OE, a synergistic effect on growth can be observed, similar to ami-ppd-SAUR19OE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "7dfc232d-9dde-49d8-b8d2-cb8a493a5923",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C62",
+      "claim": "The double transgenic line can acquire the benefits from both genes and therefore enhance leaf size more than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the double transgenic line can acquire the benefits from both genes and therefore enhance leaf size more than expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "9a42128d-c820-44e1-b928-ce69a4ebfc82",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C63",
+      "claim": "Combining GRF5 and jaw-D, both producing more but smaller cells, could lead to smaller plants than expected due to overstimulation of cell division that affects the overall growth.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, by combining GRF5 and jaw-D, both producing more but smaller cells, the negative effect on leaf size could be caused by overstimulation of cell division that affects the overall growth as observed when E2Fa and DPa are overexpressed simultaneously (De Veylder et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data and supported by a citation to De Veylder et al., 2002.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "09a73fd9-58b8-4d91-845a-3f3b589b915c",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C64",
+      "claim": "Heterosis or hybrid vigor corresponds to the increased performance of a hybrid offspring compared to its parents.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants and animals, the phenomenon of heterosis or hybrid vigor corresponds to the increased performance of a hybrid offspring compared to its parents (Schnable and Springer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Schnable and Springer, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8eb8a828-75f6-4b13-8ad7-33798528873e",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C65",
+      "claim": "Heterosis has been proposed to arise from various mechanisms such as intra-allelic dominance and intra-allelic over-dominance, but emerging evidence also exists for the contribution of inter-gene interactions, or epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterosis has been proposed to arise from various mechanisms such as intra-allelic dominance and intra-allelic over-dominance, but emerging evidence also exists for the contribution of inter-gene interactions, or epistasis (Kaeppler, 2012; Chen, 2013; Schnable and Springer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kaeppler, 2012; Chen, 2013; Schnable and Springer, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "fdf5fcda-b6c7-4e31-b69d-a6372c0e5424",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C66",
+      "claim": "Differences in expression of growth-promoting genes in natural variants could lead to synergistic effects in hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that differences in expression of growth-promoting genes in natural variants could lead to synergistic effects in hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "443b6f82-a204-411e-a94b-213ed96c2059",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C67",
+      "claim": "Heterosis could originate, in part, from the assembly of the effects of various pairwised combinations of growth-regulating genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterosis could therefore originate, in part, from the assembly of the effects of various pairwised combinations of growth-regulating genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "226d636e-9890-45d5-8084-aae80ee4cccf",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C68",
+      "claim": "Gene combinations have great promise to successfully engineer quantitative traits.",
+      "claim_type": "EXPLICIT",
+      "source": "The current study illustrates that gene combinations have great promise to successfully engineer quantitative traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "44bdf165-6a9b-4690-8907-572ce39926b8",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "claim_id": "C69",
+      "claim": "Genes stimulating cell proliferation combine remarkably well with genes enhancing cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the observation that genes stimulating cell proliferation combine remarkably well with genes enhancing cell expansion, argues for a need for further in-depth analysis of how single genes promote organ growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ee61dc33-a6ec-41d8-98cc-ead514202338",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Epistasis is defined as any deviation from the expected phenotype predicted by combining the effects of individual alleles or mutations, a concept introduced by Bateson and formalized by Fisher.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 provide historical context and a formal definition of epistasis, both supported by appropriate citations (Bateson 1909, Fisher 1918, Phillips 2008). These are well-established definitions in genetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "85e96a60-25ab-4dc4-95a6-5297f1f52d88",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Large-scale genetic interaction studies in yeast and C. elegans have revealed that most genes have few interactions while a small fraction shows many interactions, with approximately 170,000 interactions known among 5.4 million gene pairs in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 describe prior work on epistasis in model organisms, all supported by appropriate citations. These establish the context and precedent for the current study's approach in plants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8e233e64-6b7d-406f-8a6a-2dbee463982b",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Leaf growth in Arabidopsis proceeds through cell proliferation followed by cell expansion phases, with at least five parameters contributing to final leaf size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 describe established knowledge about leaf development, supported by citations to Donnelly et al. 1999, Andriankaja et al. 2012, and Gonzalez et al. 2012. This provides biological context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8aaf8f91-f36f-4a86-9e30-5520d5040fce",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior to this study, only one case of positive epistasis in Arabidopsis leaf growth had been described, involving DA1 and EOD1/BIG BROTHER mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 establishes the novelty of the current work by noting the limited prior knowledge of epistasis in Arabidopsis leaf growth, supported by citation to Li et al. 2008.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "9a087d55-5dc3-44ef-aa25-5d016e944566",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors performed a combinatorial screen with 13 transgenic Arabidopsis lines showing increased leaf size, producing 102 heterozygous combinations (78 paired, 24 controls), with 61 combinations analyzed using 16 plants per genotype in three independent repeats, measuring 56,505 data points at 21 days after stratification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C15-C20 describe the experimental design with specific numbers and methodology. The approach is clearly documented with appropriate sample sizes and replication. The experimental design appears sound for detecting epistatic interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "900ea141-9c76-4abf-ad5b-f8ee78325f48",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "From 61 analyzed combinations, 39% showed rosette sizes exceeding both heterozygous controls and wild-type, with 38% showing positive epistasis (16 synergistic, 8 additive) and 23% showing negative epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C21, C25, C26, and C36 present the main quantitative findings with consistent percentages across claims. Statistical significance is reported (FDR <0.05), and the numbers are internally consistent. The mixed model analysis appears appropriate for the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "2e134b94-7026-45ab-a459-276c5074ce75",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Three genes (SAMBA, BRI1, and SAUR19) were highly connected in synergistic combinations, showing positive epistasis in the majority of combinations they participated in, suggesting they play central roles in leaf growth regulatory networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C24, C37, and C38 identify hub genes in the epistatic network. The data support the identification of these highly connected genes, though C38's inference about 'central role' is somewhat speculative given the limited scale. The conclusion is reasonable but should be considered preliminary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "bf3656d7-1a78-4167-9545-e38f23b9a3a8",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Positive epistasis was observed both between genes with similar modes of action and between genes affecting distinct processes, with nearly half of synergistic combinations arising from pairing cell proliferation genes with cell expansion genes (particularly SAUR19OE).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C23, C58, and C69 describe patterns in the epistatic interactions. The observation that cell proliferation and expansion genes combine well is supported by the data and represents an important biological insight about compensatory mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "9314143a-da50-4758-8fe1-e92650a003f4",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The strongest synergistic combinations (BRI1OE-eod1-2, BRI1OE-EXP10OE, BRI1OE-SAUR19OE, GRF5OE-SAUR19OE, BRI1OE-da1-1, ami-ppd-SAUR19OE, samba-eod1-2) showed positive effects on all rosette leaves and were at least 20% larger than expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 identifies specific strong synergistic combinations with quantitative thresholds. The data in the figures support these specific combinations showing consistent effects across all leaves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8a290a9e-4b74-4b22-af08-67909cffdee8",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "23% of gene combinations resulted in smaller rosettes than expected, showing negative epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 reports negative epistatic interactions. This is consistent with the overall 61% showing epistasis (38% positive + 23% negative), and the statistical analysis appears appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "d5145de1-a7ce-4cbd-8b86-d8ce87b01183",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Reciprocal crosses of three selected synergistic combinations (SAUR19OE-ami-ppd, EXP10OE-BRI1OE, SAUR19OE-BRI1OE) confirmed the synergistic effects and excluded maternal effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 describes validation experiments. The reciprocal crosses are an appropriate control for maternal effects, and the confirmation strengthens the main findings. The data in Figure 3A and supplements support this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "4decc595-b395-401f-ad8b-40ca73ca7bf6",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Homozygous ami-ppd-SAUR19OE and samba-eod1-2 plants confirmed synergistic effects with rosette sizes 24% and 8% larger than expected, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 presents validation in homozygous lines. The data in Figure 3B and supplements support these specific quantitative findings, confirming that the epistatic effects persist in homozygous state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "a1a144a9-a910-4e6d-b29c-0b470e21505c",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The da1-1-SAUR19OE combination produced among the largest plants (61% larger than wild-type) but did not show synergistic enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 distinguishes between large size and synergistic epistasis. This is an important distinction showing that additive effects can produce very large plants without true synergy. The data support this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "9c131daf-c017-4db2-8d92-2267a4c08eca",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cellular analysis of ami-ppd-SAUR19OE revealed that SAUR19OE increases cell size while ami-ppd increases cell number, and their combination shows increased cell number (less than ami-ppd alone) with increased cell area (similar to SAUR19OE), explaining the synergistic effect through enhanced expansion of the numerous small cells from PPD downregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 provide mechanistic insight through cellular analysis. The data in Figure 4 support these cellular measurements. The interpretation (C35) that SAUR19OE allows expansion of small cells from ami-ppd is logical and supported by the quantitative data, though it remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "8fa8efe7-8033-4080-af94-abee351050a0",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "BRI1 is a brassinosteroid receptor crucial for leaf growth, highly expressed during early development, and its overexpression produces positive epistatic effects in multiple genetic backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 describe BRI1's known function and expression, supported by appropriate citations. This contextualizes why BRI1 might be a hub gene in the epistatic network.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "3ec1df29-a8dd-4fee-801b-83b8e712c21a",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SAUR19 belongs to the auxin-induced SAUR gene family and acts as a positive regulator of cell expansion, likely through modulation of auxin transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C43 describe SAUR19's known function, supported by citations to Hagen and Guilfoyle 2002 and Spartz et al. 2012. This provides context for its role in the epistatic network.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "228b023a-3965-4664-9fdb-cf84f1d71ad2",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings suggest that alterations in BR or auxin signaling could potentiate growth-promoting gene effects, consistent with known interactions between BR and auxin at multiple levels including synthesis, transport, signaling, and transcription, with synergistic induction of common targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 connect the experimental findings to known hormone interactions. C44 is an inference from the data, while C45-C50 cite established knowledge. The connection is logical but somewhat speculative regarding the specific mechanism in these combinations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "6764e562-ba0f-45ac-9491-ebba941db391",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Synergistic effects were observed between genes in the same biological process (AN3OE-GRF5OE, BRI1OE-ami-ppd) and between functionally related genes (PPD and BRI1 both affecting stomatal development), consistent with patterns observed in yeast studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 connect specific synergistic combinations to known functional relationships. The data support these specific combinations showing synergy, and the functional connections are supported by citations. This provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "24f2435e-60f7-4a9b-9607-bdb3a6d4ddcc",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Combining genes affecting distinct growth processes (proliferation and expansion) appears to compensate for negative effects observed in single perturbations, allowing double transgenic lines to acquire benefits from both genes, as seen with ami-ppd-SAUR19OE, GRF5OE-SAUR19OE, and jaw-D-SAUR19OE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 propose a compensation mechanism for synergy. The cellular data (Figure 4) support this interpretation for ami-ppd-SAUR19OE. The inference (C62) is logical but somewhat speculative. The pattern appears consistent across multiple combinations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "158c84ad-05cd-42fb-a1a4-6cd6d0e4f8c8",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Negative epistasis in combinations like GRF5-jaw-D may result from overstimulation of cell division affecting overall growth, similar to effects observed with E2Fa and DPa overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 proposes a mechanism for negative epistasis based on analogy to prior work (De Veylder et al. 2002). However, no direct cellular or molecular evidence is provided for this specific mechanism in the GRF5-jaw-D combination. The inference is plausible but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "2767d697-8be2-41ba-a783-c809d07c3d3e",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The findings suggest that heterosis could originate from differences in expression of growth-promoting genes in natural variants leading to synergistic effects in hybrids, with heterosis potentially arising from assembled effects of various pairwise gene combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C67 connect the findings to heterosis. C64-C65 cite established knowledge about heterosis, but C66-C67 are speculative extrapolations from the transgenic data to natural variation and heterosis. No direct evidence for this connection is provided in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    },
+    {
+      "id": "0aaf5089-4fa0-412c-9990-df7c6512ae6f",
+      "content_id": "f58d0672-35d4-48fd-9731-44eaf43902c2",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Gene combinations show great promise for successfully engineering quantitative traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is a general conclusion supported by the demonstration that multiple gene combinations produce larger plants than single perturbations. This is a reasonable inference from the data, though practical application would require additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:01.886949Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b484b587-1fb2-4389-9ca0-cc30a62b2280",
+      "result_id": "ee61dc33-a6ec-41d8-98cc-ead514202338"
+    },
+    {
+      "claim_id": "14a25db6-30a7-4832-a67d-f33c635fe91c",
+      "result_id": "ee61dc33-a6ec-41d8-98cc-ead514202338"
+    },
+    {
+      "claim_id": "1561ba8f-b5ca-4005-a786-4bd8eb0b729e",
+      "result_id": "85e96a60-25ab-4dc4-95a6-5297f1f52d88"
+    },
+    {
+      "claim_id": "2052a89b-5187-4fd9-bd18-dbfe2ea1d1bf",
+      "result_id": "85e96a60-25ab-4dc4-95a6-5297f1f52d88"
+    },
+    {
+      "claim_id": "e1a91907-752a-43ce-a983-38cd2c3941b1",
+      "result_id": "85e96a60-25ab-4dc4-95a6-5297f1f52d88"
+    },
+    {
+      "claim_id": "d1996ddd-2601-4ba2-be8f-807733c4c909",
+      "result_id": "85e96a60-25ab-4dc4-95a6-5297f1f52d88"
+    },
+    {
+      "claim_id": "a801ccee-3163-40d8-9d95-a455730eefa5",
+      "result_id": "85e96a60-25ab-4dc4-95a6-5297f1f52d88"
+    },
+    {
+      "claim_id": "0a41e7dc-be21-45ce-8e9f-2e2f6780f480",
+      "result_id": "8e233e64-6b7d-406f-8a6a-2dbee463982b"
+    },
+    {
+      "claim_id": "d812fe76-7306-4df8-b07a-65f76ba0a4d8",
+      "result_id": "8e233e64-6b7d-406f-8a6a-2dbee463982b"
+    },
+    {
+      "claim_id": "8a3f6382-2fd8-44fe-b182-0c543da29f08",
+      "result_id": "8aaf8f91-f36f-4a86-9e30-5520d5040fce"
+    },
+    {
+      "claim_id": "e32f4d5c-c930-4e84-9978-472c0b877992",
+      "result_id": "9a087d55-5dc3-44ef-aa25-5d016e944566"
+    },
+    {
+      "claim_id": "b052fb42-9588-480a-be10-bb14c560e530",
+      "result_id": "9a087d55-5dc3-44ef-aa25-5d016e944566"
+    },
+    {
+      "claim_id": "98ae6b13-77cf-4f20-a609-4165faf3a27a",
+      "result_id": "9a087d55-5dc3-44ef-aa25-5d016e944566"
+    },
+    {
+      "claim_id": "9ab1e1d4-86c8-4b3d-ba53-fea1c873eec5",
+      "result_id": "9a087d55-5dc3-44ef-aa25-5d016e944566"
+    },
+    {
+      "claim_id": "5eb1cac4-0b3e-4a91-9bda-aff1db73c7c4",
+      "result_id": "9a087d55-5dc3-44ef-aa25-5d016e944566"
+    },
+    {
+      "claim_id": "3aa92459-1223-442e-a075-c0b217638b47",
+      "result_id": "9a087d55-5dc3-44ef-aa25-5d016e944566"
+    },
+    {
+      "claim_id": "201e56ac-508e-4248-a4cf-3c2adce656fd",
+      "result_id": "9a087d55-5dc3-44ef-aa25-5d016e944566"
+    },
+    {
+      "claim_id": "08ee885d-7fff-4b76-b7f6-4f8f658fef00",
+      "result_id": "900ea141-9c76-4abf-ad5b-f8ee78325f48"
+    },
+    {
+      "claim_id": "3d8cf72e-453a-47b6-932a-d9b115508ccf",
+      "result_id": "900ea141-9c76-4abf-ad5b-f8ee78325f48"
+    },
+    {
+      "claim_id": "f197aefd-86b7-43c4-9a8b-51fae57445c9",
+      "result_id": "900ea141-9c76-4abf-ad5b-f8ee78325f48"
+    },
+    {
+      "claim_id": "19f0f9ea-0dc9-4cd9-a8dc-db9938b60583",
+      "result_id": "900ea141-9c76-4abf-ad5b-f8ee78325f48"
+    },
+    {
+      "claim_id": "bd9d47a3-0201-46d9-b032-c546f6a6f7f3",
+      "result_id": "900ea141-9c76-4abf-ad5b-f8ee78325f48"
+    },
+    {
+      "claim_id": "96e8bf22-0b65-45a1-b1a0-6c860a8a690d",
+      "result_id": "2e134b94-7026-45ab-a459-276c5074ce75"
+    },
+    {
+      "claim_id": "25aec088-bf42-48f1-8ddc-7aabc9f32c5d",
+      "result_id": "2e134b94-7026-45ab-a459-276c5074ce75"
+    },
+    {
+      "claim_id": "1c08b607-a1c3-4246-acdb-abe737a47788",
+      "result_id": "2e134b94-7026-45ab-a459-276c5074ce75"
+    },
+    {
+      "claim_id": "e5946294-91a6-40d4-8b05-6296e99a1934",
+      "result_id": "2e134b94-7026-45ab-a459-276c5074ce75"
+    },
+    {
+      "claim_id": "86773d61-93b4-49ac-95b2-2fdb5994d23f",
+      "result_id": "bf3656d7-1a78-4167-9545-e38f23b9a3a8"
+    },
+    {
+      "claim_id": "2a366a60-f7a1-4650-b71d-36e3b6bbf9c8",
+      "result_id": "bf3656d7-1a78-4167-9545-e38f23b9a3a8"
+    },
+    {
+      "claim_id": "4770cd78-2a3a-4914-9512-dc28e2ae1d0e",
+      "result_id": "bf3656d7-1a78-4167-9545-e38f23b9a3a8"
+    },
+    {
+      "claim_id": "44bdf165-6a9b-4690-8907-572ce39926b8",
+      "result_id": "bf3656d7-1a78-4167-9545-e38f23b9a3a8"
+    },
+    {
+      "claim_id": "63fbcc11-54f5-4a3b-aa18-1a1f7114ae38",
+      "result_id": "9314143a-da50-4758-8fe1-e92650a003f4"
+    },
+    {
+      "claim_id": "8950b458-a4b6-42c6-855f-bbce5fa89ef7",
+      "result_id": "8a290a9e-4b74-4b22-af08-67909cffdee8"
+    },
+    {
+      "claim_id": "39a74702-bbb5-4c9a-8e39-e4cf891bd177",
+      "result_id": "d5145de1-a7ce-4cbd-8b86-d8ce87b01183"
+    },
+    {
+      "claim_id": "75ecf3b4-4a29-4325-b4b4-730295a96a9f",
+      "result_id": "4decc595-b395-401f-ad8b-40ca73ca7bf6"
+    },
+    {
+      "claim_id": "fc1e37b5-4239-4bcf-ad24-e9c4fa49add0",
+      "result_id": "a1a144a9-a910-4e6d-b29c-0b470e21505c"
+    },
+    {
+      "claim_id": "ccdb15d3-ca8f-4a4a-931d-2849d0e2ccb8",
+      "result_id": "9c131daf-c017-4db2-8d92-2267a4c08eca"
+    },
+    {
+      "claim_id": "2e9bbb89-a1ad-4564-923e-eb6b967ca419",
+      "result_id": "9c131daf-c017-4db2-8d92-2267a4c08eca"
+    },
+    {
+      "claim_id": "56428ee2-c333-40b7-8c61-2ad0a3ae94b9",
+      "result_id": "9c131daf-c017-4db2-8d92-2267a4c08eca"
+    },
+    {
+      "claim_id": "9f23c25b-16d2-4205-9278-f5c692f601e6",
+      "result_id": "9c131daf-c017-4db2-8d92-2267a4c08eca"
+    },
+    {
+      "claim_id": "a6d0314a-6bf6-43e8-8d08-7c52cde4a005",
+      "result_id": "9c131daf-c017-4db2-8d92-2267a4c08eca"
+    },
+    {
+      "claim_id": "b699086c-c5a9-438d-a22d-7032395ea066",
+      "result_id": "8fa8efe7-8033-4080-af94-abee351050a0"
+    },
+    {
+      "claim_id": "4cccbced-4750-472e-a920-37f4728e3ca1",
+      "result_id": "8fa8efe7-8033-4080-af94-abee351050a0"
+    },
+    {
+      "claim_id": "66e250cf-dd86-4293-b0bf-a9b6c13bf50b",
+      "result_id": "8fa8efe7-8033-4080-af94-abee351050a0"
+    },
+    {
+      "claim_id": "d43a4f70-4951-46ba-9bc8-9ee1dc2b2119",
+      "result_id": "3ec1df29-a8dd-4fee-801b-83b8e712c21a"
+    },
+    {
+      "claim_id": "e533c54a-1e00-4cf3-b407-631ef0871a5c",
+      "result_id": "3ec1df29-a8dd-4fee-801b-83b8e712c21a"
+    },
+    {
+      "claim_id": "680f78c5-49ce-44b1-b7dc-553428ce76fa",
+      "result_id": "228b023a-3965-4664-9fdb-cf84f1d71ad2"
+    },
+    {
+      "claim_id": "70ff6e35-e8a3-44ac-a0ad-df1fe70ae43f",
+      "result_id": "228b023a-3965-4664-9fdb-cf84f1d71ad2"
+    },
+    {
+      "claim_id": "5f4d7c00-cfa9-46ac-826f-4f62ad4f752f",
+      "result_id": "228b023a-3965-4664-9fdb-cf84f1d71ad2"
+    },
+    {
+      "claim_id": "cc58f2c5-1cc2-4c43-9cd7-915d93af2eba",
+      "result_id": "228b023a-3965-4664-9fdb-cf84f1d71ad2"
+    },
+    {
+      "claim_id": "3b7b0b5d-3299-493d-8aac-ededf8505480",
+      "result_id": "228b023a-3965-4664-9fdb-cf84f1d71ad2"
+    },
+    {
+      "claim_id": "a1f9471a-bd78-42c8-bff1-a191bac0de8d",
+      "result_id": "228b023a-3965-4664-9fdb-cf84f1d71ad2"
+    },
+    {
+      "claim_id": "00014bd3-f23e-462a-b8cd-26f9617d583f",
+      "result_id": "228b023a-3965-4664-9fdb-cf84f1d71ad2"
+    },
+    {
+      "claim_id": "8f0599c1-a8c3-4385-85be-99a772bbc593",
+      "result_id": "6764e562-ba0f-45ac-9491-ebba941db391"
+    },
+    {
+      "claim_id": "b19e87de-64b2-4b5a-9fdc-1dfbcf7a9ba9",
+      "result_id": "6764e562-ba0f-45ac-9491-ebba941db391"
+    },
+    {
+      "claim_id": "4130f74c-1b73-49fb-bb5b-8cc99cdf5a3c",
+      "result_id": "6764e562-ba0f-45ac-9491-ebba941db391"
+    },
+    {
+      "claim_id": "2cf194a9-08b8-4db4-9df5-45eedd9f246f",
+      "result_id": "6764e562-ba0f-45ac-9491-ebba941db391"
+    },
+    {
+      "claim_id": "2e9b09a4-b341-4f5c-a485-44cef4ed8066",
+      "result_id": "6764e562-ba0f-45ac-9491-ebba941db391"
+    },
+    {
+      "claim_id": "1d8f7c09-0d3d-4a91-aac2-ec3b775d1f1a",
+      "result_id": "6764e562-ba0f-45ac-9491-ebba941db391"
+    },
+    {
+      "claim_id": "14a1d509-9fea-4c7c-8bfb-d81c10034e80",
+      "result_id": "6764e562-ba0f-45ac-9491-ebba941db391"
+    },
+    {
+      "claim_id": "370d5df3-9445-4441-b8f0-961e7c5407b2",
+      "result_id": "24f2435e-60f7-4a9b-9607-bdb3a6d4ddcc"
+    },
+    {
+      "claim_id": "1e223a31-5c2c-477e-8b6b-bf6ebb9b740a",
+      "result_id": "24f2435e-60f7-4a9b-9607-bdb3a6d4ddcc"
+    },
+    {
+      "claim_id": "f538c9f6-51ce-4dd9-a63c-a85428ba57b1",
+      "result_id": "24f2435e-60f7-4a9b-9607-bdb3a6d4ddcc"
+    },
+    {
+      "claim_id": "7dfc232d-9dde-49d8-b8d2-cb8a493a5923",
+      "result_id": "24f2435e-60f7-4a9b-9607-bdb3a6d4ddcc"
+    },
+    {
+      "claim_id": "9a42128d-c820-44e1-b928-ce69a4ebfc82",
+      "result_id": "158c84ad-05cd-42fb-a1a4-6cd6d0e4f8c8"
+    },
+    {
+      "claim_id": "09a73fd9-58b8-4d91-845a-3f3b589b915c",
+      "result_id": "2767d697-8be2-41ba-a783-c809d07c3d3e"
+    },
+    {
+      "claim_id": "8eb8a828-75f6-4b13-8ad7-33798528873e",
+      "result_id": "2767d697-8be2-41ba-a783-c809d07c3d3e"
+    },
+    {
+      "claim_id": "fdf5fcda-b6c7-4e31-b69d-a6372c0e5424",
+      "result_id": "2767d697-8be2-41ba-a783-c809d07c3d3e"
+    },
+    {
+      "claim_id": "443b6f82-a204-411e-a94b-213ed96c2059",
+      "result_id": "2767d697-8be2-41ba-a783-c809d07c3d3e"
+    },
+    {
+      "claim_id": "226d636e-9890-45d5-8084-aae80ee4cccf",
+      "result_id": "0aaf5089-4fa0-412c-9990-df7c6512ae6f"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Quiescent neuroblasts have a unique molecular profile that retains Deadpan and Miranda but lacks other progenitor markers (Worniu, Asense, CycE) and differentiation markers (Prospero, Elav, Repo). This profile is distinct from both proliferating neuroblasts (which express all progenitor markers) and differentiated neurons/glia (which express differentiation markers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C33, C76-C88 provide comprehensive immunofluorescence data from Figure 1 and supplements showing the molecular profile of quiescent neuroblasts in both embryonic (NB3-3T) and larval stages. The data consistently demonstrate loss of most progenitor markers while retaining Deadpan, and absence of differentiation markers. Multiple markers were tested across different developmental stages with appropriate controls (proliferating NB3-3A), providing robust support for this novel molecular signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C5",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A transient pulse of low-level nuclear Prospero occurs at stage 15 in NB3-3T concurrent with entry into quiescence. This pulse is absent in proliferating NB3-3A and its timing shifts predictably with genetic manipulations that alter quiescence timing (earlier in pdm mutants, later in cas mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C39, C42 are supported by immunofluorescence data in Figure 2 showing temporal correlation between nuclear Prospero and quiescence entry. Claims C5, C40-C42 demonstrate that this correlation is maintained even when quiescence timing is experimentally shifted using temporal identity factor mutants, strongly supporting a functional relationship. The quantification in Figure 2\u2014figure supplement 1 confirms Prospero levels are significantly lower in neuroblasts than GMCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Prospero is required for neuroblast entry into quiescence. Loss-of-function prospero mutants fail to enter quiescence at stage 16, as demonstrated by continued EdU incorporation in parental neuroblasts identified by the m\u03b3-LacZ reporter. This requirement is specific to Prospero among basal cell fate determinants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50-C51, C54-C55 are supported by genetic loss-of-function experiments in Figure 3 using the m\u03b3-LacZ reporter to distinguish parental neuroblasts from de-differentiated GMCs (C43-C49 provide methodological justification). The data show prospero mutants maintain EdU incorporation at stage 16 while wild-type neuroblasts cease proliferation. Claims C52-C53 demonstrate specificity by showing other basal determinants (numb, brat, string) do not affect quiescence timing. The experimental design appropriately addresses the confounding issue of GMC de-differentiation in prospero mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A pulse of low-level nuclear Prospero is sufficient to induce reversible neuroblast quiescence. Transient Prospero expression in proliferating larval neuroblasts induces quiescence at 12 hours (loss of EdU incorporation and Worniu), followed by reactivation and re-expression of progenitor markers at 24 hours. Low Prospero levels induce quiescence while high levels trigger differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C60-C62, C89-C95 are supported by gain-of-function experiments in Figure 4 using the TARGET system for temporal control. The data show dose-dependent effects: low Prospero induces quiescence (Dpn+ Elav\u2212) while high Prospero induces differentiation (Dpn\u2212 Elav+) (C90-C92). The reversibility of quiescence (C62, C95) is critical evidence distinguishing it from differentiation. Claims C57, C63 provide additional supporting evidence. The experimental design with multiple timepoints and markers provides strong support for sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C24",
+      "C25",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose a dose-dependent model where Prospero levels determine three distinct progenitor fates: absent for self-renewal, low for quiescence (repressing most progenitor genes except deadpan), and high for differentiation (additionally repressing deadpan and activating neuronal genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C24-C25, C68-C69 present a mechanistic model that integrates the experimental findings. While the three-state model (C8) is well-supported by the data showing dose-dependent effects, the specific molecular mechanism (C24-C25, C68-C69) regarding differential repression of deadpan versus other targets is explicitly speculative. The model is plausible and consistent with the observation that quiescent neuroblasts retain Deadpan, but direct evidence for differential binding affinity or target gene regulation is not provided. Testing this model would require ChIP-seq or reporter assays at different Prospero concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Misexpression of progenitor markers Worniu, Asense, or CycE does not affect the timing of NB3-3T quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by gain-of-function experiments shown in Figure 1\u2014figure supplement 2 demonstrating that overexpression of these progenitor markers does not alter quiescence timing. This negative result is important for establishing that loss of these markers is a consequence rather than a cause of quiescence entry, and helps focus attention on Prospero as the key regulator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The level of Prospero required for neuroblast quiescence is lower than that in prospero haplo-insufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by data in Figure 3C,E showing that prospero heterozygotes enter quiescence normally at stage 16, while null mutants fail to enter quiescence. This inference is reasonable given the dose-dependent effects demonstrated elsewhere in the study, though direct measurement of Prospero levels in heterozygotes would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Miranda protein marks quiescent neuroblasts, though mira transcription is down-regulated based on in situ database analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by immunofluorescence data in Figure 1 confirming prior reports of Miranda protein in quiescent neuroblasts, combined with database evidence (C30) suggesting transcriptional downregulation. The persistence of protein despite transcriptional downregulation is consistent with protein perdurance, though the functional significance of Miranda in quiescent neuroblasts remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prospero can transiently arrest cell cycle without inducing differentiation in other systems (embryonic longitudinal glial progenitors), and the vertebrate ortholog Prox1 shows dose-dependent effects on target gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by citations to prior work establishing that Prospero/Prox1 can have dose-dependent effects in other cellular contexts. These claims provide important evolutionary and mechanistic context for the current findings, though they represent prior knowledge rather than new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The mechanisms by which temporal transcription factors (Pdm, Cas) and Grh regulate Prospero nuclear localization remain unknown, though Caliban is known to promote Prospero nuclear export in S2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 accurately identify important knowledge gaps and potential mechanisms for future investigation. These claims are appropriately framed as unknowns (C71, C73, C75) or established knowledge from other systems (C70, C72, C74). They provide valuable context for understanding the upstream regulation of Prospero localization but do not present new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background and context claims establishing Drosophila neuroblasts as a model system for studying stem cell quiescence, describing the developmental biology of neuroblasts, and the known functions of Prospero and Miranda in asymmetric cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C23, C26-C28 represent established knowledge from prior work, appropriately cited and providing necessary context for the study. These claims accurately represent the state of the field and justify the experimental approach. They are not new findings but rather set up the knowledge gap (C2) that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Mature quiescent neuroblasts do not express nuclear Prospero, Elav, or Repo differentiation markers in either embryonic or larval stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by immunofluorescence data showing absence of differentiation markers in quiescent neuroblasts. This negative result is important for establishing that quiescent neuroblasts are distinct from differentiating cells, complementing the positive finding of transient Prospero during quiescence entry (C3, C37).",
+    "result_type": "MINOR"
+  }
+]

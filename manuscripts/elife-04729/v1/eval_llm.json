@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C78"
+    ],
+    "result": "The study successfully generated RNA-seq data from 63 wild baboons and applied eQTL mapping and ASE analyses using linear mixed models (GEMMA) and Bayesian sparse linear mixed models (BSLMM), analyzing 10,409 genes and 2,280 genes for ASE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C18-C21, and C71-C78 collectively describe the study design, sample collection, sequencing output, and analytical methods. The data generation and analytical pipeline are well-documented with specific numbers and methods, providing strong support for the feasibility of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C70"
+    ],
+    "result": "The study identified eQTL for 1,787 genes (17.2%) and ASE for 510 genes (23.4%) at a 10% FDR, with eQTL enriched near transcription start sites and gene bodies, and strong concordance between eQTL and ASE results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C30, and C70 provide converging evidence from both eQTL mapping and ASE analysis. The spatial enrichment patterns (C26, C70), statistical concordance (C27, C28), and factors affecting detection (C29, C30) are all internally consistent and well-supported by the data and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Genotype calling from RNA-seq data achieved high accuracy, with approximately 97% of variants estimated as true positives and 98.7% median correlation with true genotypes, validated using human HapMap data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C79-C81 describe validation of the RNA-seq-based genotyping approach using parallel human data. The validation metrics (97% true positive rate, 98.7% correlation, 3.1% novel variants with lower ti/tv ratio) provide strong support for genotype accuracy, though the validation is indirect (based on human data rather than direct baboon validation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The baboon population showed surprisingly high power to detect eQTL compared to a similarly-sized human YRI dataset, with a 2.35-fold increase attributable to differences in MAF spectrum (1.34\u00d7), SNP density (1.21\u00d7), and LD patterns (1.43\u00d7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 present a comprehensive simulation-based analysis decomposing the sources of increased eQTL detection power. The simulations systematically test MAF, SNP density, and LD effects, with the combined 2.35-fold estimate closely matching the empirical 6.16-fold difference when effect sizes are considered. The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C5",
+      "C6",
+      "C7",
+      "C60",
+      "C61",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Genes with eQTL in both baboons and humans showed significant overlap and were less conserved (lower phyloP scores, more lineage-specific), suggesting that tolerance to genetic perturbation may be a conserved property across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C5-C7, and C60-C61 provide converging evidence from cross-species comparison, conservation analysis, and gene ontology enrichment. The statistical support is strong (p = 2.39\u00d710\u207b\u2077 for overlap, p < 10\u207b\u2075\u00b3 for phyloP), and the interpretation (C7) is well-supported by the data. Claims C95-C98 provide additional mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "While a strong negative correlation exists between eQTL effect size and minor allele frequency (r = -0.723, p < 10\u207b\u00b2\u2078\u2070), simulations suggest this pattern is largely explained by winner's curse rather than negative selection on gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C83-C86 present evidence for and against selection. The negative correlation (C45) is strong, but the simulation results (C46) and additional analyses (C83-C86) showing no directional bias and MAF-dependent effects provide compelling evidence that winner's curse, not selection, explains the pattern. The reasoning is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C67"
+    ],
+    "result": "The median additive genetic proportion of variance explained (PVE) for gene expression in baboons was 28.4%, with trans effects (23.8%) contributing more than cis effects (2.9%), and genetic effects were more pervasive than demographic or environmental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C67 provide heritability estimates using BSLMM. The estimates are comparable to human studies and internally consistent. The partitioning into cis and trans components is methodologically sound, though the interpretation that genetic effects are 'more pervasive' (C67) is somewhat subjective but supported by the magnitude differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C68",
+      "C69"
+    ],
+    "result": "Age explained modest variance in gene expression (median PVE = 1.89%, significantly greater than chance), while sex did not (median PVE = 0.82%, p = 0.100). Maternal social connectedness to males explained significant variance (median PVE = 1.9%, p = 4.19\u00d710\u207b\u00b3), suggesting persistent early environmental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 and C68-C69 describe demographic and environmental effects. The statistical support is adequate for age and maternal social connectedness to males, with permutation tests confirming significance. The interpretation of persistent environmental effects (C69) is supported by the data and prior literature, though the effect sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "The study establishes the feasibility of eQTL mapping using RNA-seq data alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is a methodological conclusion supported by the successful identification of 1,787 eQTL genes using only RNA-seq-derived genotypes. The validation analyses (C22-C23) and comparison to human data (C32-C33) provide strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Recent admixture in the Amboseli baboon population appears to have had only a modest impact on eQTL detection, with controlling for local structure reducing eQTL discoveries by 11.4% in baboons and comparably in YRI, and eQTL locations remaining similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C91-C94 address the potential confound of admixture. The analyses controlling for local structure (C91-C94) show that admixture has a modest but not dominant effect on eQTL detection. The ~7\u00d7 fold increase in eQTL detection persists after controlling for local structure, supporting the interpretation in C59.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Humans exhibit unusual demographic history compared to other primates (low genetic diversity, recent population expansion), which may reduce power to detect genotype-phenotype associations, though demographic history does not impact overall trait heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are all supported by citations to prior research (Chen and Li 2001, Hernandez et al. 2007, Perry et al. 2012, Keinan and Clark 2012, Tennessen et al. 2012, Lohmueller 2014, Simons et al. 2014). These claims provide important context for interpreting the baboon results but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "eQTL identified using the RNA-seq pipeline versus conventional genotyping do not differ in sequence conservation or effect size, and effect sizes are highly correlated (r = 0.874, p < 10\u207b\u2075\u2077) when eQTL are discovered in both pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 provide validation that the RNA-seq-based pipeline does not introduce systematic biases in the types of eQTL detected. The high correlation (C89) and lack of differences in conservation and effect size (C87-C88) support the robustness of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Power to detect ASE scales primarily with total read coverage rather than number of heterozygous individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by the analysis showing that sites with significant ASE were not more likely to have more heterozygotes when partitioned by read depth (Figure 1\u2014figure supplement 14). This is a methodological finding that informs ASE detection strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior research has established that gene regulatory variation contributes to phenotypic variation and evolution, but no estimates of heritability of gene expression exist for natural nonhuman primate populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C9-C17 provide background context from prior research, all supported by citations. Claim C17 identifies a gap in knowledge that motivates the current study. These claims are well-supported but represent prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The Amboseli baboon population has been studied for 43 years and established as a model for human social behavior, health, and aging, with protocols developed for gene expression analysis and known effects of social variables on fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe the study system and prior research on the Amboseli population, all supported by citations (Alberts and Altmann 2012, Tung et al. 2009, Babbitt et al. 2012, Runcie et al. 2013, Altmann and Alberts 2005, Charpentier et al. 2008, Silk et al. 2003-2010, Archie et al. 2014). These provide important context but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

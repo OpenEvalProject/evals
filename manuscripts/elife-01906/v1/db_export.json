@@ -1,0 +1,2052 @@
+{
+  "submission": {
+    "id": "3f0bb007-9a0e-4203-82aa-8672d24d005e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:16:03.077310Z",
+    "updated_at": "2025-11-28T20:16:03.077310Z"
+  },
+  "content": [
+    {
+      "id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "submission_id": "3f0bb007-9a0e-4203-82aa-8672d24d005e",
+      "content_type": "manuscript",
+      "content_text": "# The Brm-HDAC3-Erm repressor complex suppresses dedifferentiation in Drosophila type II neuroblast lineages\n\n## Authors\n\n- Chwee Tat Koe<sup>2</sup>\n- Song Li<sup>2</sup>\n- Fabrizio Rossi<sup>3</sup>\n- Jack Jing Lin Wong<sup>1</sup>\n- Yan Wang<sup>1</sup>\n- Zhizhuo Zhang<sup>5</sup>\n- Keng Chen<sup>2</sup>\n- Sherry Shiying Aw<sup>2</sup>\n- Helena E Richardson<sup>6</sup>\n- Paul Robson<sup>8</sup>\n- Wing-Kin Sung<sup>8</sup>\n- Fengwei Yu<sup>2</sup>\n- Cayetano Gonzalez<sup>3</sup>\n- Hongyan Wang<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Neuroscience and Behavioral Disorders Program Duke-NUS Graduate Medical School Singapore Singapore Singapore\n2. NUS Graduate School for Integrative Sciences and Engineering National University of Singapore Singapore Singapore\n3. Cell Division Group Institute for Research in Biomedicine Barcelona Spain\n4. Temasek Life Sciences Laboratory Singapore Singapore\n5. Department of Computer Science National University of Singapore Singapore Singapore\n6. Peter MacCallum Cancer Centre East Melbourne Australia\n7. Biochemistry and Molecular Biology Department University of Melbourne Parkville Australia\n8. Genome Institute of Singapore Singapore Singapore\n9. Department of Biological Sciences National University of Singapore Singapore Singapore\n10. Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats (ICREA) Barcelona Spain\n11. Department of Physiology, Yong Loo Lin School of Medicine National University of Singapore Singapore Singapore\n12. Sir Peter MacCallum Department of Oncology University of Melbourne Parkville Australia\n13. Anatomy and Neuroscience Department University of Melbourne, Parkville Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe control of self-renewal and differentiation of neural stem and progenitor cells is a crucial issue in stem cell and cancer biology. Drosophila type II neuroblast lineages are prone to developing impaired neuroblast homeostasis if the limited self-renewing potential of intermediate neural progenitors (INPs) is unrestrained. Here, we demonstrate that Drosophila SWI/SNF chromatin remodeling Brahma (Brm) complex functions cooperatively with another chromatin remodeling factor, Histone deacetylase 3 (HDAC3) to suppress the formation of ectopic type II neuroblasts. We show that multiple components of the Brm complex and HDAC3 physically associate with Earmuff (Erm), a type II-specific transcription factor that prevents dedifferentiation of INPs into neuroblasts. Consistently, the predicted Erm-binding motif is present in most of known binding loci of Brm. Furthermore, brm and hdac3 genetically interact with erm to prevent type II neuroblast overgrowth. Thus, the Brm-HDAC3-Erm repressor complex suppresses dedifferentiation of INPs back into type II neuroblasts.\n\n## Introduction\n\nThe mechanism by which self-renewal and differentiation are balanced is a crucial issue in stem cell and cancer biology. The neural stem cells, or neuroblasts, of the Drosophila larval brain have emerged as a new model for studying stem cell self-renewal and tumorigenesis. In Drosophila larval central brains, there are at least two classes of neuroblast lineages (Bello et al., 2008; Boone and Doe, 2008; Bowman et al., 2008). A type I neuroblast that expresses both Deadpan (Dpn) and Asense (Ase) divides asymmetrically to generate a self-renewing neuroblast and a ganglion mother cell (GMC), which is committed to a differentiation pathway. In contrast, a type II neuroblast that expresses Dpn, but not Ase, divides asymmetrically to generate a neuroblast and a transient amplifying cell known as an intermediate neural progenitor (INP) (Bello et al., 2008; Boone and Doe, 2008; Bowman et al., 2008). Following maturation, the INP undergoes a limited number of asymmetric divisions to self-renew and to produce multiple GMCs (Weng et al., 2010). In both types of lineages, asymmetric division is dependent on apically localized proteins, including atypical protein kinase C (aPKC); basally localized proteins, such as Miranda and Numb; as well as several cell cycle regulators (Chang et al., 2012; Gonzalez, 2013). The failure of asymmetric division in either type of neuroblast can result in the hyperproliferation of these cells and the induction of brain tumors (Caussinus and Gonzalez, 2005; Wang et al., 2006, 2007, 2009, 2011; Lee et al., 2006a, 2006b; Cabernard and Doe, 2009; Chabu and Doe, 2009, 2011; Chang et al., 2010).\n\nThe type II neuroblast lineage is highly analogous to the mammalian neural stem cell lineages, because both involve transient amplifying cells that are used to expand the progenitor cell population. It is prone to impaired neuroblast homeostasis, if the limited self-renewing potential of INPs is unrestrained. Brain tumor (Brat) and the Notch antagonist Numb function cooperatively to ensure that immature INPs undergo maturation and commit to the INP fate (Boone and Doe, 2008; Bowman et al., 2008). Notch signaling maintains neuroblast identity and its overactivation leads to dedifferentiation of INPs to ectopic neuroblasts (Wang et al., 2006; Bowman et al., 2008; Weng et al., 2010). A small number of transcription factors have been implicated in the control of INP identity and proliferative potential (Carney et al., 2012). Specifically expressed in INPs, a Zinc-finger transcription factor Earmuff (Erm) plays a critical role in maintaining the restricted developmental potential of the INPs (Weng et al., 2010). The Ets transcription factor Pointed (PntP1) is specifically expressed in type II neuroblasts and INPs and is both necessary and sufficient for the suppression of Ase in type II neuroblasts and the generation of INPs (Zhu et al., 2011). Prospero that is basally localized in mitotic type I neuroblast, but absent from type II neuroblasts, triggers cell cycle exit and GMC differentiation (Bello et al., 2006; Betschinger et al., 2006; Choksi et al., 2006; Lee et al., 2006c). However, the underlying mechanism by which Erm prevents dedifferentiation is poorly understood.\n\nATP-dependent chromatin-remodeling factors are critical for the expression of the eukaryotic genome. Four major classes of ATP-dependent chromatin remodeling complexes have been identified, including the extensively studied SWI/SNF complexes (Narlikar et al., 2002; Reisman et al., 2009). The mammalian SWI/SNF complex termed the Brahma (Brm or Brg1) complex regulates critical cellular processes such as differentiation and cell cycle arrest (Klochendler-Yeivin et al., 2002). Drosophila Brm complex acts similarly to control cell proliferation (Brumby et al., 2002) and differentiation (Marenda et al., 2003). A genome-wide RNAi study in Drosophila neuroblasts showed that the knockdown of genes encoding several core subunits of the SWI/SNF Brahma (Brm) remodeling complex may lead to neuroblast overproliferation (Neumuller et al., 2011). However, the precise role of the Brm remodeling complex during neuroblast self-renewal and the mechanism that underlying underlies this effect mechanism remain to be elucidated. Besides ATP-dependent chromatin remodeling complexes, the other major class of chromatin remodelers is histone modifiers. Histone deacetylases (HDACs) remove acetyl groups from the tails of core histones in the nucleosome and are often associated with transcriptional co-repressors (Dokmanovic et al., 2007). However, despite the critical role for histone modifiers in transcriptional regulation, it is unknown whether histone modifications play any role in Drosophila larval brain neuroblasts.\n\nIn this study, we report the critical role of a central chromatin remodeler, the Brm complex in preventing the formation of ectopic neuroblasts in type II lineages. We show that another chromatin remodeling factor, HDAC3 functions cooperatively with the Brm complex to suppress the formation of ectopic type II neuroblasts. Interestingly, multiple components of the Brm complex and HDAC3 physically associate with Erm. brm and hdac3 interact genetically with erm to prevent type II neuroblast overgrowth. Thus, the Brm-HDAC3-Erm complex is a novel repressor complex that suppresses dedifferentiation of INPs back into type II neuroblasts.\n\n## Results\n\n### The Brm complex suppresses the formation of ectopic neuroblasts in type II neuroblast lineages\n\nWe independently identified brm from a RNA interference (RNAi) screen in which brm RNAi knockdown in larval brains resulted in an increase of Miranda-positive neuroblast-like cells in larval central brains (Figure 1\u2014figure supplement 1A), showing a phenotype similar to one previously reported (Neumuller et al., 2011). Brm is a DNA-dependent ATPase and a major component of a multi-protein SWI/SNF chromatin remodeling complex, which controls gene expression by altering chromatin structure (Klochendler-Yeivin et al., 2002). The number of cells expressing the proto-oncogene dMyc was significantly increased upon brm RNAi knockdown (Figure 1\u2014figure supplement 1B), consistent with the neuroblast overgrowth phenotype. To determine the function of Brm in different neuroblast lineages, we generated MARCM clones in two brm loss-of-function alleles. Type I wild-type (wt) clones always contained one neuroblast that is positive for both Dpn and Ase (data not shown). Similarly, only one neuroblast was present in both amorphic brm2 and hypomorphic brmT362 type I clones (data not shown), indicating that Brm has no significant effect on type I neuroblast numbers. Each wt type II MARCM clone also possessed only one neuroblast that was positive for Dpn, but negative for Ase (Figure 1A; n = 25). Unlike the wt control, 6.4 \u00b1 3.3 and 4.5 \u00b1 2.6 ectopic neuroblasts were observed in brm2 (Figure 1B,B\u2032,D; 88.6%, n = 34) brmT362 (Figure 1C,C\u2032,D; 75.9%, n = 58) type II clones, respectively. These phenotypes in brm alleles could be rescued by expressing a wild-type brm transgene (Figure 1\u2014figure supplement 1C). Consistent with phenotypes in brm clones, knockdown of brm by RNAi using a type II neuroblast-specific neuroblast driver worniu (wor)-Gal4, ase-Gal80 (henceforth referred to as \u2018type II driver\u2019; \u2018Materials and methods\u2019) was sufficient to produce ectopic neuroblasts in 97.4% of type II neuroblast lineages (Figure 1F,K; 7 \u00b1 3.4 neuroblasts/lineage, n = 38), while each control clone always has one neuroblast (Figure 1E,K; n = 80). We therefore conclude that Brm suppresses the formation of ectopic neuroblasts in type II neuroblast lineages.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013C) Type II MARCM clones of control (the MARCM driver; D), brm2 (B, B\u2032) and brmT362 (C, C\u2032) were labeled with Dpn (blue), Ase (red) and CD8::GFP (green). (D) Quantification of neuroblast number per type II MARCM clone for A\u2013C. (E\u2013H) Type II neuroblast lineage from control (\u2018the type II driver\u2019: wor-Gal4 ase-Gal80; E), brm knockdown (F), snr1 knockdown (108599 KK; G), and bap60 knockdown (H) were labeled with Dpn (blue), Ase (red) and CD8 (green). (I\u2013J\u2032) type II MARCM clone of control (I) and bap55LL05955 (J, J\u2032) were labeled with Dpn (blue), Ase (red) and CD8 (green). (K) Quantification of neuroblast number per type II lineage for E\u2013I. Arrows indicate neuroblasts. Clones are marked by CD8::GFP and indicated by white dotted line. Scale bars, 10 \u00b5m. *** indicates p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A and B) Larval brains of control (elav-Gal4 driver) and brm knockdown under the control of elav-Gal4 driver were labeled with Insc and Mira (A) and dMyc (B). Central brain is to the left of white dotted line. (C) Type II MARCM clones of brmT362, brm2 with or without the expression of UAS-Brm were labeled with Dpn, Ase and CD8. (D) Type II driver control, snr1 TRiP RNAi (BDRC#32372), and snr1 VDRC RNAi (12645GD) under the type II driver were labeled with Dpn, Ase and CD8. (E) Control (MARCM driver) and snr1R3 type II MARCM clones were labeled with Dpn, Ase and CD8. (F) Control (MARCM driver) and bap55LL5955 type I MARCM clones were labeled with Dpn, Ase and CD8. (G) Type II neuroblast lineages of control (type II driver), iswi knockdown, nurf301 knockdown and acf1 knockdown were labeled with Dpn, Ase and CD8. Arrows, neuroblasts. Clone outline is indicated by white dotted line (C\u2013G). Scale bars, 10 \u03bcm.\n\nConcomitantly with the formation of supernumerary neuroblasts, the number of mature INPs that are positive for Dpn and Ase were dramatically reduced in both brm2 (Figure 2B,B\u2032,D; 5.3 \u00b1 4.3/clone, n = 39) and brmT362 (Figure 2C,C\u2032,D; 9.6 \u00b1 4.6/clone, n = 56), compared with the control type II clones (Figure 2A,A\u2032,D; 18.9 \u00b1 3.7, n = 22). The number of Dpn\u2212 PntP1+ immature INPs and early mature INPs appeared to be normal or slightly increased in brm2 (Figure 2F; 8.4 \u00b1 2.5, n = 26) and brmT362 (Figure 2G; 7.1 \u00b1 2.1, n = 33) clones compared with the control (Figure 2E; 5.9 \u00b1 1.1, n = 26). These results suggested that ectopic neuroblasts in brm\u2212 clones likely originate from INPs that fail to undergo maturation. To further determine whether INPs undergo dedifferentiation back into neuroblast, we used INP-specific RNAi to knock down brm in INPs by erm-Gal4, an INP-specific driver. In 42.5% of INP clones with brm knockdown, ectopic Dpn+ Ase\u2212 neuroblasts were observed (Figure 2I,I\u2032; 1.2 \u00b1 1.6 neuroblasts /INP clone, n = 40). In contrast, none of the INP clones from the driver control contained any neuroblasts (Figure 2H; 0 neuroblast/INP clone, n = 53). The relatively weak phenotype is likely due to incomplete knockdown of Brm, as shown by the reduced Brm staining in the INP clones (Figure 2\u2014figure supplement 1). Thus, our data suggest that Brm functions in INPs to prevent INP dedifferentiation back into neuroblasts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C\u2032) Type II MARCM clones of control (the MARCM driver; A, A\u2032), brm2 (B, B\u2032) and brmT362 (C, C\u2032) were labeled with Dpn (blue), Ase (red) and CD8::GFP (green). (D) Quantifications of INP number per type II clone for A\u2013C\u2032. *** indicates p<0.001. (E\u2013G) Type II MARCM clones of control (E), brm2 (F) and brmT362 (G) were labeled with Dpn (blue), PntP1 (red) and CD8::GFP (green). (H\u2013I\u2032) INP clones of a control (driver: erm-Gal4 [II]; erm-Gal4 [III]; (H) and brm RNAi under erm-Gal4 (II); erm-Gal4 (III) with UAS-Dcr2 UAS-CD8-GFP (I, I\u2032) were labeled with Dpn (blue), Ase (red) and CD8 (green). White arrows indicate neuroblasts, yellow arrows indicate Dpn+ Ase+ mature INPs and yellow arrowheads indicate Dpn\u2212 PntP1+ INPs. Clones are marked by CD8::GFP and indicated by white dotted line. Scale bars, 10 \u00b5m (A\u2013G) and 5 \u00b5m (H\u2013I\u2032).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Left panels, INP clones of a control (driver: erm-Gal4 [II]; erm-Gal4 [III]) and brm RNAi under erm-Gal4 (II); erm-Gal4 (III) with UAS-Dcr2 UAS-CD8-GFP were labeled with Brm (red) and CD8 (green). Right panels, Brm is absent in type II neuroblast clones under the type II driver. Clones are indicated by white dotted line. Scale bars, 10 \u00b5m.\n\nTo assess whether Brm was affecting apico-basal cell polarity, we examined the localization of aPKC, Numb and Brat, which are asymmetrically localized in wild-type neuroblasts in prometaphase/metaphase. brm2 MARCM clones did not show any defects in the localization of these markers (Figure 3\u2014figure supplement 1A\u2013C), suggesting that Brm is not important for the apical-basal polarity regulation in neuroblasts.\n\nWe then assessed the function of other core subunits of the Brm remodeling complex using RNAi knockdown in larval brains. Knock down either of the three core components snr1 (Figure 1G,K, 9.5 \u00b1 5.5 neuroblasts/lineage, 64.5%, n = 34), bap60 (Figure 1H,K, 5.1 \u00b1 2.8 neuroblasts/lineage, 87.0%, n = 52), and moira (data not shown; also reported in Neumuller et al. (2011)) resulted in prominent phenotypes with ectopic Dpn+ Ase\u2212 neuroblasts in type II neuroblast lineages. Two additional snr1 RNAi lines under the control of the type II driver also displayed excess type II neuroblasts (Figure 1\u2014figure supplement 1D). Furthermore, bap55LL5955 MARCM clones also showed ectopic neuroblasts in type II (Figure 1J,J\u2032, 2.3 \u00b1 1.7 neuroblasts/clone; 30.5%, n = 57), but not type I neuroblast lineages (Figure 1\u2014figure supplement 1F; n = 20). The number of Dpn+ Ase+ mature INPs in bap55LL5955 was significantly reduced (13.8 \u00b1 4.1; n = 49) compared with the control (18.9 \u00b1 3.7, n = 22), while the number of Dpn\u2212 PntP1+ immature and early mature INPs (4.2 \u00b1 1.9, n = 26) was similar to the control (5.9 \u00b1 1.1, n = 26). In various mutants and RNAi lines described above, we also observed an increased number of Dpn+ PntP1+ cells (data not shown), which serves as an independent set of marker for type II neuroblasts. This data further supports that loss-of-function of the Brm complex caused the phenotype of ectopic type II neuroblasts. We conclude that core components of the Brm remodeling complex are required to suppress ectopic neuroblast formation in type II neuroblast lineages.\n\nNext, we ascertained whether other chromatin remodeling complexes such as Nucleosome remodeling factor (NURF) and ACF complex (ATP-utilizing chromatin assembly and remodeling factor), play any role during neuroblast self-renewal. RNAi knockdown of nurf301 or ACF complex components iswi and acf1 (Figure 1\u2014figure supplement 1G) in the type II neuroblast lineages did not result in any obvious neuroblast overgrowth. These data suggest that they may not be important for type II neuroblast lineages or their RNAi targeting was insufficient to induce an effect.\n\n### HDAC3 acts cooperatively with the Brm complex to suppress the formation of ectopic type II neuroblasts\n\nTo assess the involvement of histone modifications in type II neuroblast lineages, we screened a collection of 43 histone modifiers (Table 1; Kirilly et al., 2011) by RNAi under the control of a type II-specific driver but failed to identify any RNAi lines with ectopic neuroblasts. We reasoned that histone modifiers may act cooperatively with the Brm complex in type II neuroblast lineages and the phenotype may be masked due to the presence of the functional Brm complex. We therefore re-screened the same collection of potential histone modifiers in a brm RNAi background and showed that the simultaneous knockdown of both brm and hdac3 under the control of the type II driver resulted in a more severe phenotype of ectopic neuroblasts (Figure 3D,E; 22.1 \u00b1 7.4 neuroblasts/clone, n = 21) compared with brm RNAi (Figure 3B,E; 10.3 \u00b1 5.6 neuroblasts/clone, n = 30) or hdac3 RNAi knockdown alone (Figure 3C,E; 1.1 \u00b1 0.5 neuroblasts/clone, n = 85). This finding suggests that HDAC3 functions cooperatively with Brm to regulate type II neuroblast lineages. Next, we took advantage of an existing deletion mutant snr16c hdac36c, which removes the entire snr1 coding region and the C-terminal region of hdac3. Type II neuroblast MARCM clones from snr16c hdac36c homozygotes possessed a large number of ectopic neuroblasts (Figure 3G,H, 22 \u00b1 11.5 neuroblasts/clone, 83.0%, n = 22). The number of mature Dpn+ Ase+ INPs in each snr16c hdac36c type II neuroblast clone was modestly reduced to 15.6 \u00b1 4.4 (n = 22) compared with 20.3 \u00b1 3/clone (n = 20) in control, while the number of Dpn\u2212 PntP1+ immature and early mature INPs (6.3 \u00b1 3/clone, n = 21) are slightly greater compared with the control clones (4.1 \u00b1 0.9, n = 21). In contrast, type I neuroblast clones of this double mutant appeared normal, as there was only one neuroblast per clone (Figure 3\u2014figure supplement 1D, n = 17). Similar to hdac3 RNAi (Figure 3C), neither type I nor type II neuroblast mutant clones of a loss-of-function hdac3N allele had ectopic neuroblasts (Figure 3\u2014figure supplement 1E and data not shown). Despite that ectopic neuroblasts were observed in multiple snr1 RNAi lines (Figure 1\u2014figure supplement 1D), snr1R3 MARCM clones did not show obvious ectopic type II neuroblasts (Figure 1\u2014figure supplement 1E). Because Snr1 protein was speculated to have extended perdurance in somatic clones of its null allele (Marenda et al., 2004), the lack of phenotype in snr1R3 is likely due to protein perdurance in the neuroblast clones. Our data suggest that HDAC3 acts cooperatively with the Brm complex to suppress the formation of ectopic type II neuroblasts. To ascertain whether snr16c hdac36c causes tumorigenesis, larval brain tissues carrying snr16c hdac36c MARCM clones were transplanted into the abdomen of wild-type hosts. A significant portion of the mutant tissue (Figure 3J; 21%, n = 14) proliferated massively and formed malignant tumors, whilst control clones did not proliferate after the implantation (Figure 3I; n = 25). In subsequent rounds of transplantation, 70% (T1, n = 10) and 80% (T2, n = 5) of the snr16c hdac36c mutant brain tissues developed tumors, suggesting that snr16c hdac36c can induce malignant tumor-like growth after allograft culture.\n\n**Table 1.**\n Histone modifiers and their RNAi lines\n\n\n<table>\n  <thead>\n    <tr>\n      <th>S/No.</th>\n      <th>Gene name</th>\n      <th>Full name</th>\n      <th>CG #</th>\n      <th>Main function</th>\n      <th>VDRC RNAi lines</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>enok</td>\n      <td>Enoki mmushroom</td>\n      <td>CG11290</td>\n      <td>HAT</td>\n      <td>KK108400, GD37527</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>nej</td>\n      <td>Nejire/CBP</td>\n      <td>CG15319</td>\n      <td>HAT</td>\n      <td>KK105115</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>CG1894</td>\n      <td></td>\n      <td>CG1894</td>\n      <td>HAT</td>\n      <td>GD41575, GD41574</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>CG2051</td>\n      <td></td>\n      <td>CG2051</td>\n      <td>HAT</td>\n      <td>GD33458</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>Mof</td>\n      <td>Males absent on the first</td>\n      <td>CG3025</td>\n      <td>HAT</td>\n      <td>KK105370</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>Rpb4</td>\n      <td>Rpb4</td>\n      <td>CG33520</td>\n      <td>HAT</td>\n      <td>GD21985, GD23308</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>Pcaf</td>\n      <td>Gcn</td>\n      <td>CG4107</td>\n      <td>HAT</td>\n      <td>KK108943, GD21786</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>YL-1</td>\n      <td>YL-1</td>\n      <td>CG4621</td>\n      <td>HAT</td>\n      <td>GD21903</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>Chm</td>\n      <td>Chameau</td>\n      <td>CG5229</td>\n      <td>HAT</td>\n      <td>KK105542</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>Dik</td>\n      <td>Diskette</td>\n      <td>CG7098</td>\n      <td>HAT</td>\n      <td>GD46320</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>lid</td>\n      <td>Little imaginal discs</td>\n      <td>CG9088</td>\n      <td>HAT</td>\n      <td>GD42203, KK103830</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>Ada2b</td>\n      <td></td>\n      <td>CG9638</td>\n      <td>HAT</td>\n      <td>GD24076</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>Sirt7</td>\n      <td></td>\n      <td>CG11305</td>\n      <td>HDAC</td>\n      <td>GD18043, GD18045</td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>HDAC4</td>\n      <td></td>\n      <td>CG1770</td>\n      <td>HDAC</td>\n      <td>GD20522</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>HDAC3</td>\n      <td></td>\n      <td>CG2128</td>\n      <td>HDAC</td>\n      <td>KK107073</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>HDACX</td>\n      <td></td>\n      <td>CG31119</td>\n      <td>HDAC</td>\n      <td>KK108098</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>Sirt4</td>\n      <td></td>\n      <td>CG3187</td>\n      <td>HDAC</td>\n      <td>GD40295, KK110639</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>Sirt2</td>\n      <td></td>\n      <td>CG5085</td>\n      <td>HDAC</td>\n      <td>KK103790</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>Sir2</td>\n      <td></td>\n      <td>CG5216</td>\n      <td>HDAC</td>\n      <td>GD23199, KK108241, KK105502</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>Bin1</td>\n      <td>Bicoid interacting protein</td>\n      <td>CG6046</td>\n      <td>HDAC</td>\n      <td>KK105352, GD15710</td>\n    </tr>\n    <tr>\n      <td>21</td>\n      <td>Sirt6</td>\n      <td></td>\n      <td>CG6284</td>\n      <td>HDAC</td>\n      <td>GD22483</td>\n    </tr>\n    <tr>\n      <td>22</td>\n      <td>Gug</td>\n      <td>Grunge</td>\n      <td>CG6964</td>\n      <td>HDAC</td>\n      <td>GD13687</td>\n    </tr>\n    <tr>\n      <td>23</td>\n      <td>Rpd3</td>\n      <td>HDAC1</td>\n      <td>CG7471</td>\n      <td>HDAC</td>\n      <td>GD46929, GD30600, GD46929</td>\n    </tr>\n    <tr>\n      <td>24</td>\n      <td>Sin3a</td>\n      <td></td>\n      <td>CG8815</td>\n      <td>HDAC</td>\n      <td>KK105852</td>\n    </tr>\n    <tr>\n      <td>25</td>\n      <td>Rtf1</td>\n      <td></td>\n      <td>CG10955</td>\n      <td>Methyl transferase</td>\n      <td>KK110392</td>\n    </tr>\n    <tr>\n      <td>26</td>\n      <td>Vig2</td>\n      <td></td>\n      <td>CG11844</td>\n      <td>Methyl transferase</td>\n      <td>KK107081, GD17245</td>\n    </tr>\n    <tr>\n      <td>27</td>\n      <td>egg</td>\n      <td>eggless</td>\n      <td>CG12196</td>\n      <td>Methyl transferase</td>\n      <td>KK101677, GD33730</td>\n    </tr>\n    <tr>\n      <td>28</td>\n      <td>esc</td>\n      <td>extra sexcombs</td>\n      <td>CG14941</td>\n      <td>Methyl transferase</td>\n      <td>GD5690, GD5692</td>\n    </tr>\n    <tr>\n      <td>29</td>\n      <td>set2</td>\n      <td></td>\n      <td>CG1716</td>\n      <td>Methyl transferase</td>\n      <td>GD30707</td>\n    </tr>\n    <tr>\n      <td>30</td>\n      <td>g9a</td>\n      <td></td>\n      <td>CG2995</td>\n      <td>Methyl transferase</td>\n      <td>GD25474</td>\n    </tr>\n    <tr>\n      <td>31</td>\n      <td>pr-set7</td>\n      <td></td>\n      <td>CG3307</td>\n      <td>Methyl transferase</td>\n      <td>KK105422</td>\n    </tr>\n    <tr>\n      <td>32</td>\n      <td>trr</td>\n      <td>trithorax-related</td>\n      <td>CG3848</td>\n      <td>Methyl transferase</td>\n      <td>GD10749, KK110276</td>\n    </tr>\n    <tr>\n      <td>33</td>\n      <td>CG40351</td>\n      <td></td>\n      <td>CG40351</td>\n      <td>Methyl transferase</td>\n      <td>GD40683, GD10833, GD45267</td>\n    </tr>\n    <tr>\n      <td>34</td>\n      <td>CG4565</td>\n      <td></td>\n      <td>CG4565</td>\n      <td>Methyl transferase</td>\n      <td>GD5665</td>\n    </tr>\n    <tr>\n      <td>35</td>\n      <td>mes-4</td>\n      <td></td>\n      <td>CG4976</td>\n      <td>Methyl transferase</td>\n      <td>GD10836</td>\n    </tr>\n    <tr>\n      <td>36</td>\n      <td>Art4</td>\n      <td>Arginine methyl transferase 4</td>\n      <td>CG5358</td>\n      <td>Methyl transferase</td>\n      <td>KK107009</td>\n    </tr>\n    <tr>\n      <td>37</td>\n      <td>Su(var)3\u20139</td>\n      <td>auppressor of variegation 3\u20139</td>\n      <td>CG6476</td>\n      <td>Methyl transferase</td>\n      <td>GD39377</td>\n    </tr>\n    <tr>\n      <td>38</td>\n      <td>Art1</td>\n      <td>Arginine methyl transferase 11</td>\n      <td>CG6554</td>\n      <td>Methyl transferase</td>\n      <td>GD40388, KK110391</td>\n    </tr>\n    <tr>\n      <td>39</td>\n      <td>ash2</td>\n      <td>absent, small or homeotic discs 2</td>\n      <td>CG6677</td>\n      <td>Methyl transferase</td>\n      <td>KK100718</td>\n    </tr>\n    <tr>\n      <td>40</td>\n      <td>LKR</td>\n      <td>Lysine ketoglutarate reductase</td>\n      <td>CG7144</td>\n      <td>Methyl transferase</td>\n      <td>GD51346</td>\n    </tr>\n    <tr>\n      <td>41</td>\n      <td>Su(z)12</td>\n      <td>Suppressor of Zeste 205</td>\n      <td>CG8013</td>\n      <td>Methyl transferase</td>\n      <td>GD42422, GD42423</td>\n    </tr>\n    <tr>\n      <td>42</td>\n      <td>Su(var)205</td>\n      <td>Suppressor of variegation 205</td>\n      <td>CG8409</td>\n      <td>Methyl transferase</td>\n      <td>KK107477</td>\n    </tr>\n    <tr>\n      <td>43</td>\n      <td>Ash1</td>\n      <td>Absent, small or homeotic discs 1</td>\n      <td>CG8887</td>\n      <td>Methyl transferase</td>\n      <td>GD28928</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013D) The driver control (A), brm RNAi (B), hdac3 RNAi (C), brm hdac3 double knockdown (D) under the type II driver were labeled with Dpn, Ase, and CD8. (E) Quantification of neuroblast number per type II MARCM clone in A\u2013D. (F\u2013G) Type II MARCM clones from the driver control (F) and snr16c hdac36c (G) homozygous MARCM clones were labeled with Dpn, Ase and CD8. Arrows indicate neuroblasts. (H) Quantification of neuroblast number per type II MARCM clone in F\u2013G. *** indicates p<0.001. (I\u2013J) Clones are marked by CD8::GFP and indicated by white dotted line. Larval brain tissues from the wild-type MARCM clones (I) and snr16c hdac36c MARCM clones (J) were implanted into the abdomen of wild-type hosts. Scale bar, 10 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Neuroblast of control MARCM clones and brm2 MARCM clones were co-labeled with aPKC (white), CD8 (green) and Phospho-Histone H3 (PH3; green) (A) or Numb, GFP and DNA (B) or Brat, GFP and DNA (C). Lower panels are enlarged images of the boxed region. (D) Type I MARCM clones from control (MARCM driver) and snr16c hdac36c were labeled with Dpn, Ase and CD8. (E) Type II MARCM clones from control (driver) and hdac3N were labeled with Dpn, Ase and CD8. Arrows, neuroblasts. Scale bars, 5 \u00b5m (A\u2013C), 10 \u03bcm (D\u2013E).\n\n### The Brm remodeling complex physically associates with Erm and HDAC3\n\nGiven that Brm is ubiquitously expressed in various cell types of larval brains, including neuroblasts, INPs, GMCs and neurons (Figure 2\u2014figure supplement 1 and data not shown), it is conceivable that the Brm complex may associate with regulatory protein(s) or co-factor(s) that is/are specifically expressed in type II neuroblast lineages to suppress the formation of ectopic neuroblasts. We therefore assessed whether Brm could associate with two such type II-specific transcription factors, Erm and PntP1. Flag-tagged Brm was co-transfected with Myc-tagged Erm in S2 cells. Following immunoprecipitation (IP) of Flag-Brm, Erm can be specifically detected in the immune complex (Figure 4A). Consistently, Flag-Brm was detected in the immune complex following the IP of Myc-Erm (Figure 4A). In contrast, Myc-Brm did not associate with Flag-PntP1 in similar co-IP experiments (Figure 4\u2014figure supplement 1A), suggesting that Brm specifically associates in a protein complex with Erm, but not with PntP1. Since full-length Erm had very low expression levels in S2 cells, we expressed two truncated proteins, Erm N-terminal 1-441aa (Erm-N containing N-terminal region and four of six zinc-finger domains) and Erm C-terminal 332-611aa (Erm-C containing the last four zinc-finger domains and its C-terminus), and used them for the subsequent co-IP analysis (Figure 4B). In co-IP experiments, Myc-Brm associated strongly with Flag-Erm-N and weakly with Flag-Erm-C (Figure 4C). Furthermore, we ascertained whether Brm could associate with Erm in a protein pull-down assay. Full-length Erm could not be efficiently expressed when fused with Maltose-Binding Protein (MBP) in bacteria; we therefore expressed truncated MBP-Erm-N or MBP-Erm-C. These fusion proteins were then bound to amylose resin, and subsequently incubated with protein extracts from S2 cells transfected with Myc-Brm. Following the pull-down of amylose resin, Myc-Brm associated intensely with MBP-Erm-N and weakly with Erm-C, but not with the MBP control (Figure 4H). These data suggest that Brm physically associates with Erm and Erm N-terminus appears to be more important for this association.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig4-v1.jpg)\n\n**Figure 4.:** (A) Co-immunoprecipitation (Co-IP) between Flag-Brm and Myc-Erm. (B) An illustration of Erm domains and truncated constructs. (C) Co-IP between Myc-Brm and Flag-Erm-N or Flag-Erm-C. (D) Co-IP between Flag-Bap60 and Myc-Erm-N or Myc-Erm-C. (E) Co-IP between Myc-Snr1 and Flag-Erm-N or Flag-Erm-C. (F) Co-IP was Flag-HDAC3 and Myc-Brm. (G) Co-IP between Flag-HDAC3 and Myc-Erm-N or Myc-Erm-C. IP was performed using anti-Flag or anti-Myc antibodies. Western blot was performed using anti-Flag and anti-Myc antibodies. (H) Protein pull-down assay. MBP, MBP-Erm-N and MBP-ErmC bound beads were incubated with protein extracts from S2 cells expressing Myc-Brm, Myc-Snr1 or Myc-HDAC3. Western blot was performed using an anti-Myc antibody. Coomassie blue (CB) staining showed 10% input of various purified MBP or MBP fusion proteins.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Co-IP was performed using S2 cells expressing Flag-PntP1 and Myc-Brm. IP was performed using anti-Flag or anti-Myc antibodies. Western blot was performed using anti-Flag and anti-Myc antibodies. (B) The DNA binding preferences of the first zinc-finger \u2018GTAG\u2019 and the fourth zinc-finger \u2018RAAA\u2019. They are observed to be enriched in 270 Brm binding sites. (C) The distant distribution between the ChIP\u2013chip peak and the occurrences of the motif in (D). (D) The de novo Erm-binding motif learned by SEME based on the 270 Brm binding sites.\n\nWe next ascertained whether Erm associates with other components of the Brm remodeling complex, such as BAP60 and Snr1. In co-IP experiments, Flag-BAP60 was detected in the immune complex following IP of Myc-Erm-N but not Myc-Erm-C (Figure 4D). Likewise, Myc-Erm-N was detected in the immune complex when IP was performed using Flag-BAP60 (Figure 4D). Moreover, Myc-Snr1 associated with Flag-Erm-N or Flag-Erm-C in co-IP experiments (Figure 4E). Consistently, Myc-Snr1 associated with MBP-Erm-N and weakly with MBP-Erm-C in protein pull-down assays (Figure 4H). Therefore, we conclude that the several components of the Brm remodeling complex specifically associates with Erm.\n\nGiven that HDAC3 functions cooperatively with the Brm complex to suppress the generation of ectopic neuroblasts, we ascertained whether HDAC3 can physically associate with both Brm and Erm. Flag-HDAC3 and Myc-Brm were co-transfected in S2 cells. Following immunoprecipitation of Flag-HDAC3, Myc-Brm was clearly detected in the immune complex (Figure 4F). Similarly, Flag-HDAC3 was detected in the immune complex after IP of Myc-Brm (Figure 4F). Interestingly, HDAC3 also physically associates with Erm-N, but not Erm-C, in both co-IP (Figure 4G) and protein pull-down assay (Figure 4H). Taken together, these results show that Brm physically associates with Erm and HDAC3 in the protein complex.\n\n### brm and hdac3 genetically interact with erm to prevent dedifferentiation of INPs to neuroblasts\n\nGiven that Brm and Erm associate in a protein complex, and both of them suppress the formation of ectopic neuroblasts, we assessed whether brm genetically interacts with erm to prevent dedifferentiation of INPs to neuroblasts. First, we ascertained whether erm knockdown can exacerbate the brm RNAi phenotype in type II neuroblast lineages. The simultaneous knockdown of brm and erm resulted in a much more severe phenotype with a large number of ectopic neuroblasts in each lineage (Figure 5D,E; 37.1 \u00b1 7.6 neuroblasts/lineage, n = 20), in contrast to brm knockdown alone (Figure 5B,E; 9.5 \u00b1 2.8, n = 32). It was reported that in erm- mutants, dedifferentiated neuroblasts can establish ectopic type II neuroblast lineages and form ectopic glial chambers (Weng et al., 2010). Presumably due to incomplete knockdown of erm that only led to weak ectopic type II neuroblasts phenotypes, erm RNAi under the type II driver resulted in ectopic type II lineages with each lineage containing one type II neuroblast (Figure 5C,E; 1 neuroblast/lineage, n = 60). This dramatic enhancement suggests that brm and erm genetically interact to prevent the dedifferentiation of INPs back to neuroblasts. Furthermore, knock down of erm by RNAi in the brmT362 MARCM clones (Figure 5\u2014figure supplement 1A,B; 9.9 \u00b1 5.5 neuroblasts/clone, n = 32) also significantly enhanced neuroblast overgrowth compared with brmT362 clones (Figure 5\u2014figure supplement 1A,B; 4.1 \u00b1 2.4 neuroblasts/clone, n = 30). However, the size of the brmT362 clones with erm knockdown remained smaller than the control clones, probably due to the reduced number of INPs that are required to expand the clonal size. Erm overexpression has previously been shown to result in premature differentiation of type II neuroblasts (Weng et al., 2010). Similarly, we found that overexpression of Erm in type II MARCM clones caused 100% of the neuroblasts to undergo premature differentiation; 29.3% of the clones contained a neuroblast that gained Ase expression and 41.5% of the clones contained a neuroblast that had gained Ase expression with strongly reduced Dpn expression, while the rest of the clones showed no obvious neuroblasts (Figure 5G and data not shown; n = 41). To assess whether this effect is dependent on its association with Brm, we overexpressed Erm in brm2 type II neuroblast clones. The premature differentiation of type II neuroblasts was dramatically suppressed in a brm loss-of-function mutant background, as there were still 37.8% of clones contained ectopic neuroblasts (Figure 5I), while 62.2% of type II neuroblasts underwent premature differentiation (Figure 5H; n = 37). Similarly, the simultaneous knockdown of both erm and snr1 resulted in a more severe phenotype of ectopic neuroblasts (Figure 5M\u2013N; 862 \u00b1 106.8 neuroblasts/brain lobe, n = 20) compared with either erm knockdown (Figure 5K,N; 76.6 \u00b1 14.2 neuroblasts/brain lobe, n = 20) or snr1 knockdown (Figure 5L,N; 219.5 \u00b1 52.2 neuroblasts/brain lobe, n = 20). Thus, we conclude that brm and snr1 genetically interact with erm to prevent dedifferentiation of INPs to neuroblasts. Furthermore, the simultaneous knockdown of hdac3 and erm under the control of type II driver also resulted in a more dramatic increase of ectopic type II neuroblasts (Figure 5Q,R; 565.4 \u00b1 68.1 type II neuroblasts/brain lobe, n = 20) compared with either erm knockdown (Figure 5P,R; 76.0 \u00b1 7.7 type II neuroblasts/brain lobe, n = 20) or hdac3 knockdown (Figure 5R; 8 type II neuroblasts/brain lobe, n = 20), suggesting that hdac3 and erm genetically interact in type II neuroblast lineages. Taken together, these results indicate that Brm, HDAC3, and Erm function as a repressor complex to prevent INP dedifferentiation into type II neuroblasts.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013D) Type II clones of control (the type II driver; A), brm knockdown (B), erm knockdown (C) and brm erm double knockdown (D) were labeled with Dpn (blue), Ase (red) and CD8 (green). (E) Quantifications of neuroblast number per type II neuroblast lineage for A\u2013D. (F\u2013I) Type II MARCM clones of brm2 (F, F\u2032), UAS-Erm (G) and UAS-Erm, brm2 (H\u2013I) were labeled with Dpn (blue), Ase (red) and CD8 (green). (J\u2013M) Larval brains of control (J, elav-Gal4 driver), erm knockdown (K), snr1 knockdown (L) and erm snr1 double knockdown (M) were labeled with Dpn (blue), Ase (red) and Mira (green). (N) Quantifications of the number of type II neuroblasts per brain hemisphere in various genotypes in J\u2013M. Control (elav-Gal4), 7 \u00b1 0; erm RNAi, 76.6 \u00b1 14.2; snr1 RNAi, 219.5 \u00b1 52.2; erm snr1 double knockdown (KD), 862.0 \u00b1 106.7. (O\u2013Q) Larval brains of control (driver; O), erm knockdown (P) and erm hdac3 double knockdown (Q) under the type II driver were labeled with Dpn (blue), Ase (red) and CD8 (green). (R) Quantifications of neuroblast number per brain hemisphere in O\u2013Q. Central brain is to the left of white dotted lines. Arrows indicate neuroblasts. Clones were indicated by white dotted lines. Scale bars, 10 \u00b5m. *** indicates p<0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01906/elife-01906-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Type II MARCM clones of brmT362 and UAS-Dcr2; erm RNAi, brmT362 were labeled with Dpn, Ase and CD8. Arrows, neuroblasts. Clone outline is indicated by white dotted line. Scale bar, 10 \u00b5m. (B) Quantification of neuroblast number per type II MARCM clone. MARCM Control, 1.0 \u00b1 0; brmT362, 4.1 \u00b1 2.4; erm RNAi, brmT362, 9.9 \u00b1 5.5. (C) Simultaneous knockdown of brm and notch in type II neuroblast lineages partially suppressed the ectopic neuroblast phenotype, compared with brm knockdown alone. Type II neuroblast lineages are labeled with Dpn, Ase and CD8. (D) Quantification of genotypes in C. brm notch double knockdown, 6.0 \u00b1 4.7 neuroblasts/lineage, n = 76; brm knockdown, 10.8 \u00b1 4 neuroblasts/lineage, n = 39. *** indicates p<0.001.\n\n## Discussion\n\nHere, we report a critical function of the Drosophila Brm remodeling complex in suppressing the formation of ectopic type II neuroblasts in larval brains. Mutants of major components of the Brm complex, including Brm and Bap55, and RNAi targeting of several Brm components formed ectopic type II neuroblasts. Therefore, the Drosophila Brm remodeling complex displays a tumor suppressor-like function in larval brains. Multiple subunits of the SWI/SNF complex are associated with various cancers. BAP47 (homologous to Snr1) is a bona fide tumor suppressor and the gene is deleted in pediatric rhabdoid tumors (Reisman et al., 2009). Mutations in epigenetic regulators are found in approximately half of hepatocellular carcinoma and bladder cancers, and represent a significant portion of mutated genes in medulloblastoma (Gui et al., 2011; Fujimoto et al., 2012; Pugh et al., 2012). Drosophila Brm complex is essential for intestinal stem cell proliferation and commitment in the adult intestine (Jin et al., 2013; Zeng et al., 2013). Two other chromatin remodeling factors, Iswi and Domino control germline stem cell and somatic stem cell self-renewal in the ovary (Xi and Xie, 2005).\n\nWe have demonstrated that Brm physically associates with Erm, a type II-specific transcription factor that prevents the dedifferentiation of INPs back into neuroblasts. Furthermore, Bap60 and Snr1, two other components of the Brm complex, also physically associate with Erm in a protein complex. Therefore, we have provided the first molecular link during the regulation of type II neuroblast lineages. We speculate that the association with Erm may provide functional specificity of the Brm remodeling complex in type II neuroblast lineages. We have also shown that brm genetically interacts with the type II-specific transcription factor erm. Ectopic neuroblast phenotype resulting from brm knockdown was dramatically enhanced by simultaneous knockdown of erm. Furthermore, brm knockdown, similar to erm\u2212 (Weng et al., 2010), can be partially suppressed by loss of notch (Figure 5\u2014figure supplement 1C,D). These functional data suggest that Erm is a co-factor of the Brm remodeling complex in type II neuroblast lineages. However, it is uncertain how the Brm\u2013Erm protein complex functions to prevent dedifferentiation in type II neuroblast lineages.\n\nOur bioinformatic analysis has identified a 14 bp-long motif as the de novo Erm DNA-binding motif (Figure 4\u2014figure supplement 1B\u2013D; and Supplementary methods) and 202 sites out of the 270 known genomic loci harboring Brm (Negre et al., 2011) also contain the de novo Erm DNA-binding motif (Table 2, Gene list). As there are many genes that are potentially co-occupied by Brm and Erm, it is possible that Brm\u2013Erm complex results in a unique configuration of the chromatin \u2018landscape\u2019 in INPs to prevent INP dedifferentiation into neuroblasts. Therefore, disruption of chromatin remodelers may cause widespread changes to the transcriptome, thus amplifying the effect of the single genetic mutation.\n\n**Table 2.**\n Predicted common target genes of Brm and Erm\n\n\n<table>\n  <thead>\n    <tr>\n      <th>S/No.</th>\n      <th>CG name</th>\n      <th>Gene name</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>CG10033</td>\n      <td>for</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>CG10117</td>\n      <td>ttv</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>CG10137</td>\n      <td>CG10137</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>CG10159</td>\n      <td>BEAF-32</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>CG10388</td>\n      <td>Ubx</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>CG10610</td>\n      <td>ECSIT</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>CG1071</td>\n      <td>E2f2</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>CG10844</td>\n      <td>RyR</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>CG1100</td>\n      <td>Rpn5</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>CG11228</td>\n      <td>hpo</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>CG11309</td>\n      <td>CG11309</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>CG11589</td>\n      <td>VhaM9.7-c</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>CG12165</td>\n      <td>Incenp</td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>CG12321</td>\n      <td>CG12321</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>CG12333</td>\n      <td>CG12333</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>CG12387</td>\n      <td>zetaTry</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>CG12797</td>\n      <td>Ciao1</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>CG12818</td>\n      <td>CG12818</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>CG12819</td>\n      <td>sle</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>CG12855</td>\n      <td>HPS1</td>\n    </tr>\n    <tr>\n      <td>21</td>\n      <td>CG12994</td>\n      <td>CG12994</td>\n    </tr>\n    <tr>\n      <td>22</td>\n      <td>CG13004</td>\n      <td>CG13004</td>\n    </tr>\n    <tr>\n      <td>23</td>\n      <td>CG13016</td>\n      <td>CG13016</td>\n    </tr>\n    <tr>\n      <td>24</td>\n      <td>CG13018</td>\n      <td>CG13018</td>\n    </tr>\n    <tr>\n      <td>25</td>\n      <td>CG13117</td>\n      <td>CG13117</td>\n    </tr>\n    <tr>\n      <td>26</td>\n      <td>CG1322</td>\n      <td>zfh1</td>\n    </tr>\n    <tr>\n      <td>27</td>\n      <td>CG13316</td>\n      <td>Mnt</td>\n    </tr>\n    <tr>\n      <td>28</td>\n      <td>CG13350</td>\n      <td>Ctf4</td>\n    </tr>\n    <tr>\n      <td>29</td>\n      <td>CG13366</td>\n      <td>CG13366</td>\n    </tr>\n    <tr>\n      <td>30</td>\n      <td>CG13432</td>\n      <td>qsm</td>\n    </tr>\n    <tr>\n      <td>31</td>\n      <td>CG13472</td>\n      <td>CG13472</td>\n    </tr>\n    <tr>\n      <td>32</td>\n      <td>CG13688</td>\n      <td>Ipk2</td>\n    </tr>\n    <tr>\n      <td>33</td>\n      <td>CG13900</td>\n      <td>CG13900</td>\n    </tr>\n    <tr>\n      <td>34</td>\n      <td>CG13919</td>\n      <td>CG13919</td>\n    </tr>\n    <tr>\n      <td>35</td>\n      <td>CG14291</td>\n      <td>CG14291</td>\n    </tr>\n    <tr>\n      <td>36</td>\n      <td>CG14463</td>\n      <td>CG14463</td>\n    </tr>\n    <tr>\n      <td>37</td>\n      <td>CG1453</td>\n      <td>Klp10A</td>\n    </tr>\n    <tr>\n      <td>38</td>\n      <td>CG14813</td>\n      <td>deltaCOP</td>\n    </tr>\n    <tr>\n      <td>39</td>\n      <td>CG14814</td>\n      <td>CG14814</td>\n    </tr>\n    <tr>\n      <td>40</td>\n      <td>CG14938</td>\n      <td>crol</td>\n    </tr>\n    <tr>\n      <td>41</td>\n      <td>CG14939</td>\n      <td>CycY</td>\n    </tr>\n    <tr>\n      <td>42</td>\n      <td>CG15010</td>\n      <td>ago</td>\n    </tr>\n    <tr>\n      <td>43</td>\n      <td>CG15027</td>\n      <td>CG15027</td>\n    </tr>\n    <tr>\n      <td>44</td>\n      <td>CG15120</td>\n      <td>CG15120</td>\n    </tr>\n    <tr>\n      <td>45</td>\n      <td>CG15387</td>\n      <td>CG15387</td>\n    </tr>\n    <tr>\n      <td>46</td>\n      <td>CG15701</td>\n      <td>CG15701</td>\n    </tr>\n    <tr>\n      <td>47</td>\n      <td>CG15706</td>\n      <td>CG15706</td>\n    </tr>\n    <tr>\n      <td>48</td>\n      <td>CG15845</td>\n      <td>Adf1</td>\n    </tr>\n    <tr>\n      <td>49</td>\n      <td>CG1600</td>\n      <td>Drat</td>\n    </tr>\n    <tr>\n      <td>50</td>\n      <td>CG1616</td>\n      <td>dpa</td>\n    </tr>\n    <tr>\n      <td>51</td>\n      <td>CG17033</td>\n      <td>elgi</td>\n    </tr>\n    <tr>\n      <td>52</td>\n      <td>CG17035</td>\n      <td>GXIVsPLA2</td>\n    </tr>\n    <tr>\n      <td>53</td>\n      <td>CG17052</td>\n      <td>obst-A</td>\n    </tr>\n    <tr>\n      <td>54</td>\n      <td>CG17233</td>\n      <td>CG17233</td>\n    </tr>\n    <tr>\n      <td>55</td>\n      <td>CG17249</td>\n      <td>CG17249</td>\n    </tr>\n    <tr>\n      <td>56</td>\n      <td>CG17259</td>\n      <td>CG17259</td>\n    </tr>\n    <tr>\n      <td>57</td>\n      <td>CG17260</td>\n      <td>CG17260</td>\n    </tr>\n    <tr>\n      <td>58</td>\n      <td>CG1765</td>\n      <td>EcR</td>\n    </tr>\n    <tr>\n      <td>59</td>\n      <td>CG17803</td>\n      <td>CG17803</td>\n    </tr>\n    <tr>\n      <td>60</td>\n      <td>CG1785</td>\n      <td>CG1785</td>\n    </tr>\n    <tr>\n      <td>61</td>\n      <td>CG1817</td>\n      <td>Ptp10D</td>\n    </tr>\n    <tr>\n      <td>62</td>\n      <td>CG18292</td>\n      <td>CG18292</td>\n    </tr>\n    <tr>\n      <td>63</td>\n      <td>CG1845</td>\n      <td>Br140</td>\n    </tr>\n    <tr>\n      <td>64</td>\n      <td>CG18660</td>\n      <td>Nckx30C</td>\n    </tr>\n    <tr>\n      <td>65</td>\n      <td>CG18675</td>\n      <td>CG18675</td>\n    </tr>\n    <tr>\n      <td>66</td>\n      <td>CG2004</td>\n      <td>CG2004</td>\n    </tr>\n    <tr>\n      <td>67</td>\n      <td>CG2019</td>\n      <td>disp</td>\n    </tr>\n    <tr>\n      <td>68</td>\n      <td>CG2051</td>\n      <td>CG2051</td>\n    </tr>\n    <tr>\n      <td>69</td>\n      <td>CG2146</td>\n      <td>didum</td>\n    </tr>\n    <tr>\n      <td>70</td>\n      <td>CG2189</td>\n      <td>Dfd</td>\n    </tr>\n    <tr>\n      <td>71</td>\n      <td>CG2446</td>\n      <td>Amun</td>\n    </tr>\n    <tr>\n      <td>72</td>\n      <td>CG2698</td>\n      <td>CG2698</td>\n    </tr>\n    <tr>\n      <td>73</td>\n      <td>CG2720</td>\n      <td>Hop</td>\n    </tr>\n    <tr>\n      <td>74</td>\n      <td>CG2813</td>\n      <td>cold</td>\n    </tr>\n    <tr>\n      <td>75</td>\n      <td>CG2977</td>\n      <td>Inx7</td>\n    </tr>\n    <tr>\n      <td>76</td>\n      <td>CG3059</td>\n      <td>NTPase</td>\n    </tr>\n    <tr>\n      <td>77</td>\n      <td>CG3127</td>\n      <td>Pgk</td>\n    </tr>\n    <tr>\n      <td>78</td>\n      <td>CG31481</td>\n      <td>pb</td>\n    </tr>\n    <tr>\n      <td>79</td>\n      <td>CG3157</td>\n      <td>gammaTub23C</td>\n    </tr>\n    <tr>\n      <td>80</td>\n      <td>CG3165</td>\n      <td>CG3165</td>\n    </tr>\n    <tr>\n      <td>81</td>\n      <td>CG3166</td>\n      <td>aop</td>\n    </tr>\n    <tr>\n      <td>82</td>\n      <td>CG31712</td>\n      <td>CG31712</td>\n    </tr>\n    <tr>\n      <td>83</td>\n      <td>CG31713</td>\n      <td>Apf</td>\n    </tr>\n    <tr>\n      <td>84</td>\n      <td>CG3178</td>\n      <td>Rrp1</td>\n    </tr>\n    <tr>\n      <td>85</td>\n      <td>CG31794</td>\n      <td>Pax</td>\n    </tr>\n    <tr>\n      <td>86</td>\n      <td>CG31852</td>\n      <td>Tap42</td>\n    </tr>\n    <tr>\n      <td>87</td>\n      <td>CG31855</td>\n      <td>CG31855</td>\n    </tr>\n    <tr>\n      <td>88</td>\n      <td>CG31911</td>\n      <td>Ent2</td>\n    </tr>\n    <tr>\n      <td>89</td>\n      <td>CG32022</td>\n      <td>CG32022</td>\n    </tr>\n    <tr>\n      <td>90</td>\n      <td>CG32556</td>\n      <td>chas</td>\n    </tr>\n    <tr>\n      <td>91</td>\n      <td>CG32592</td>\n      <td>hiw</td>\n    </tr>\n    <tr>\n      <td>92</td>\n      <td>CG33116</td>\n      <td>CG33116</td>\n    </tr>\n    <tr>\n      <td>93</td>\n      <td>CG33162</td>\n      <td>SrpRbeta</td>\n    </tr>\n    <tr>\n      <td>94</td>\n      <td>CG3587</td>\n      <td>CG3587</td>\n    </tr>\n    <tr>\n      <td>95</td>\n      <td>CG3666</td>\n      <td>Tsf3</td>\n    </tr>\n    <tr>\n      <td>96</td>\n      <td>CG3842</td>\n      <td>CG3842</td>\n    </tr>\n    <tr>\n      <td>97</td>\n      <td>CG3857</td>\n      <td>CG3857</td>\n    </tr>\n    <tr>\n      <td>98</td>\n      <td>CG3920</td>\n      <td>Reph</td>\n    </tr>\n    <tr>\n      <td>99</td>\n      <td>CG42254</td>\n      <td>CG42254</td>\n    </tr>\n    <tr>\n      <td>100</td>\n      <td>CG42311</td>\n      <td>grh</td>\n    </tr>\n    <tr>\n      <td>101</td>\n      <td>CG42334</td>\n      <td>comm3</td>\n    </tr>\n    <tr>\n      <td>102</td>\n      <td>CG42362</td>\n      <td>CG42362</td>\n    </tr>\n    <tr>\n      <td>103</td>\n      <td>CG42363</td>\n      <td>CG42363</td>\n    </tr>\n    <tr>\n      <td>104</td>\n      <td>CG42365</td>\n      <td>CG42365</td>\n    </tr>\n    <tr>\n      <td>105</td>\n      <td>CG42379</td>\n      <td>CG42379</td>\n    </tr>\n    <tr>\n      <td>106</td>\n      <td>CG42380</td>\n      <td>CG42380</td>\n    </tr>\n    <tr>\n      <td>107</td>\n      <td>CG42381</td>\n      <td>CG42381</td>\n    </tr>\n    <tr>\n      <td>108</td>\n      <td>CG4400</td>\n      <td>CG4400</td>\n    </tr>\n    <tr>\n      <td>109</td>\n      <td>CG4590</td>\n      <td>Inx2</td>\n    </tr>\n    <tr>\n      <td>110</td>\n      <td>CG4619</td>\n      <td>CG4619</td>\n    </tr>\n    <tr>\n      <td>111</td>\n      <td>CG4645</td>\n      <td>CG4645</td>\n    </tr>\n    <tr>\n      <td>112</td>\n      <td>CG4798</td>\n      <td>l(2)k01209</td>\n    </tr>\n    <tr>\n      <td>113</td>\n      <td>CG4996</td>\n      <td>CG4996</td>\n    </tr>\n    <tr>\n      <td>114</td>\n      <td>CG5229</td>\n      <td>chm</td>\n    </tr>\n    <tr>\n      <td>115</td>\n      <td>CG5393</td>\n      <td>apt</td>\n    </tr>\n    <tr>\n      <td>116</td>\n      <td>CG5505</td>\n      <td>scny</td>\n    </tr>\n    <tr>\n      <td>117</td>\n      <td>CG5548</td>\n      <td>CG5548</td>\n    </tr>\n    <tr>\n      <td>118</td>\n      <td>CG5588</td>\n      <td>Mtl</td>\n    </tr>\n    <tr>\n      <td>119</td>\n      <td>CG5599</td>\n      <td>CG5599</td>\n    </tr>\n    <tr>\n      <td>120</td>\n      <td>CG5611</td>\n      <td>CG5611</td>\n    </tr>\n    <tr>\n      <td>121</td>\n      <td>CG5613</td>\n      <td>CG5613</td>\n    </tr>\n    <tr>\n      <td>122</td>\n      <td>CG5824</td>\n      <td>l(3)07882</td>\n    </tr>\n    <tr>\n      <td>123</td>\n      <td>CG5836</td>\n      <td>SF1</td>\n    </tr>\n    <tr>\n      <td>124</td>\n      <td>CG6022</td>\n      <td>Cchl</td>\n    </tr>\n    <tr>\n      <td>125</td>\n      <td>CG6202</td>\n      <td>Surf4</td>\n    </tr>\n    <tr>\n      <td>126</td>\n      <td>CG6218</td>\n      <td>CG6218</td>\n    </tr>\n    <tr>\n      <td>127</td>\n      <td>CG6235</td>\n      <td>tws</td>\n    </tr>\n    <tr>\n      <td>128</td>\n      <td>CG6241</td>\n      <td>CG6241</td>\n    </tr>\n    <tr>\n      <td>129</td>\n      <td>CG6272</td>\n      <td>CG6272</td>\n    </tr>\n    <tr>\n      <td>130</td>\n      <td>CG6322</td>\n      <td>U4-U6-60K</td>\n    </tr>\n    <tr>\n      <td>131</td>\n      <td>CG6343</td>\n      <td>ND42</td>\n    </tr>\n    <tr>\n      <td>132</td>\n      <td>CG6401</td>\n      <td>CG6401</td>\n    </tr>\n    <tr>\n      <td>133</td>\n      <td>CG6511</td>\n      <td>CG6511</td>\n    </tr>\n    <tr>\n      <td>134</td>\n      <td>CG6556</td>\n      <td>cnk</td>\n    </tr>\n    <tr>\n      <td>135</td>\n      <td>CG6565</td>\n      <td>CG6565</td>\n    </tr>\n    <tr>\n      <td>136</td>\n      <td>CG6604</td>\n      <td>H15</td>\n    </tr>\n    <tr>\n      <td>137</td>\n      <td>CG6634</td>\n      <td>mid</td>\n    </tr>\n    <tr>\n      <td>138</td>\n      <td>CG6829</td>\n      <td>Ark</td>\n    </tr>\n    <tr>\n      <td>139</td>\n      <td>CG6948</td>\n      <td>Clc</td>\n    </tr>\n    <tr>\n      <td>140</td>\n      <td>CG6951</td>\n      <td>CG6951</td>\n    </tr>\n    <tr>\n      <td>141</td>\n      <td>CG6983</td>\n      <td>CG6983</td>\n    </tr>\n    <tr>\n      <td>142</td>\n      <td>CG7082</td>\n      <td>papi</td>\n    </tr>\n    <tr>\n      <td>143</td>\n      <td>CG7085</td>\n      <td>l(2)s5379</td>\n    </tr>\n    <tr>\n      <td>144</td>\n      <td>CG7186</td>\n      <td>SAK</td>\n    </tr>\n    <tr>\n      <td>145</td>\n      <td>CG7191</td>\n      <td>CG7191</td>\n    </tr>\n    <tr>\n      <td>146</td>\n      <td>CG7372</td>\n      <td>CG7372</td>\n    </tr>\n    <tr>\n      <td>147</td>\n      <td>CG7379</td>\n      <td>CG7379</td>\n    </tr>\n    <tr>\n      <td>148</td>\n      <td>CG7564</td>\n      <td>CG7564</td>\n    </tr>\n    <tr>\n      <td>149</td>\n      <td>CG7597</td>\n      <td>Cdk12</td>\n    </tr>\n    <tr>\n      <td>150</td>\n      <td>CG7632</td>\n      <td>CG7632</td>\n    </tr>\n    <tr>\n      <td>151</td>\n      <td>CG7685</td>\n      <td>CG7685</td>\n    </tr>\n    <tr>\n      <td>152</td>\n      <td>CG7734</td>\n      <td>shn</td>\n    </tr>\n    <tr>\n      <td>153</td>\n      <td>CG7771</td>\n      <td>sim</td>\n    </tr>\n    <tr>\n      <td>154</td>\n      <td>CG7828</td>\n      <td>APP-BP1</td>\n    </tr>\n    <tr>\n      <td>155</td>\n      <td>CG7845</td>\n      <td>CG7845</td>\n    </tr>\n    <tr>\n      <td>156</td>\n      <td>CG7849</td>\n      <td>CG7849</td>\n    </tr>\n    <tr>\n      <td>157</td>\n      <td>CG7957</td>\n      <td>MED17</td>\n    </tr>\n    <tr>\n      <td>158</td>\n      <td>CG7961</td>\n      <td>alphaCop</td>\n    </tr>\n    <tr>\n      <td>159</td>\n      <td>CG8067</td>\n      <td>CG8067</td>\n    </tr>\n    <tr>\n      <td>160</td>\n      <td>CG8241</td>\n      <td>pea</td>\n    </tr>\n    <tr>\n      <td>161</td>\n      <td>CG8287</td>\n      <td>Rab8</td>\n    </tr>\n    <tr>\n      <td>162</td>\n      <td>CG8360</td>\n      <td>CG8360</td>\n    </tr>\n    <tr>\n      <td>163</td>\n      <td>CG8372</td>\n      <td>CG8372</td>\n    </tr>\n    <tr>\n      <td>164</td>\n      <td>CG8396</td>\n      <td>Ssb-c31a</td>\n    </tr>\n    <tr>\n      <td>165</td>\n      <td>CG8409</td>\n      <td>Su(var)205</td>\n    </tr>\n    <tr>\n      <td>166</td>\n      <td>CG8481</td>\n      <td>CG8481</td>\n    </tr>\n    <tr>\n      <td>167</td>\n      <td>CG8790</td>\n      <td>Dic1</td>\n    </tr>\n    <tr>\n      <td>168</td>\n      <td>CG8798</td>\n      <td>Lon</td>\n    </tr>\n    <tr>\n      <td>169</td>\n      <td>CG8817</td>\n      <td>lilli</td>\n    </tr>\n    <tr>\n      <td>170</td>\n      <td>CG9042</td>\n      <td>Gpdh</td>\n    </tr>\n    <tr>\n      <td>171</td>\n      <td>CG9054</td>\n      <td>Ddx1</td>\n    </tr>\n    <tr>\n      <td>172</td>\n      <td>CG9063</td>\n      <td>Rich</td>\n    </tr>\n    <tr>\n      <td>173</td>\n      <td>CG9065</td>\n      <td>CG9065</td>\n    </tr>\n    <tr>\n      <td>174</td>\n      <td>CG9243</td>\n      <td>CG43345</td>\n    </tr>\n    <tr>\n      <td>175</td>\n      <td>CG9243</td>\n      <td>CG43346</td>\n    </tr>\n    <tr>\n      <td>176</td>\n      <td>CG9244</td>\n      <td>Acon</td>\n    </tr>\n    <tr>\n      <td>177</td>\n      <td>CG9249</td>\n      <td>CG9249</td>\n    </tr>\n    <tr>\n      <td>178</td>\n      <td>CG9250</td>\n      <td>Mpp6</td>\n    </tr>\n    <tr>\n      <td>179</td>\n      <td>CG9305</td>\n      <td>CG9305</td>\n    </tr>\n    <tr>\n      <td>180</td>\n      <td>CG9376</td>\n      <td>CG9376</td>\n    </tr>\n    <tr>\n      <td>181</td>\n      <td>CG9473</td>\n      <td>MED6</td>\n    </tr>\n    <tr>\n      <td>182</td>\n      <td>CG9596</td>\n      <td>CG9596</td>\n    </tr>\n    <tr>\n      <td>183</td>\n      <td>CG9635</td>\n      <td>RhoGEF2</td>\n    </tr>\n    <tr>\n      <td>184</td>\n      <td>CG9641</td>\n      <td>CG9641</td>\n    </tr>\n    <tr>\n      <td>185</td>\n      <td>CG9730</td>\n      <td>mRpL21</td>\n    </tr>\n    <tr>\n      <td>186</td>\n      <td>CG9750</td>\n      <td>rept</td>\n    </tr>\n    <tr>\n      <td>187</td>\n      <td>CG9829</td>\n      <td>poly</td>\n    </tr>\n    <tr>\n      <td>188</td>\n      <td>CG9865</td>\n      <td>CG9865</td>\n    </tr>\n  </tbody>\n</table>\n\nMost class I HDACs are recruited into large multi-subunit co-repressor complexes for maximal activity (Wen et al., 2000). HDAC1 and 2 are found in multiple co-repressor complexes, while to date HDAC3 appears to be uniquely recruited to the Silencing mediator of retinoic and thyroid receptors (SMRT)/Nuclear receptor co-repressor (N-CoR) complex (Guenther et al., 2000; Li et al., 2000). Here, we report that Drosophila HDAC3 is recruited to a novel multi-subunit complex containing Brm and Erm and that this co\u2013repressor complex prevents dedifferentiation of INPs into type II neuroblasts. The SMRT complex appears not to be important for type II neuroblasts, as knockdown of smrter that encodes a core component of the SMRT complex (Heck et al., 2012) neither resulted in any ectopic type II neuroblasts nor enhanced the phenotype of ectopic neuroblasts by brm knockdown (data not shown). We also showed that HDAC3 dramatically enhanced the phenotype of ectopic neuroblast upon loss of brm or snr1, two core components of the Brm complex. By identifying this novel repressor complex, we have provided a mechanistic link between transcriptional repression and histone deacetylation during the suppression of dedifferentiation. HDACs are typically recruited by oncogenic protein complexes in lymphoma and leukemia and HDAC3 inhibitors are synergistic or additive with anticancer agents for therapeutics (Dokmanovic et al., 2007). Our finding that HDAC3 functions cooperatively with the Brm complex in suppressing suppressing dedifferentiation of INPs into neuroblasts and induces tumors in the allograph transplantation revealed an unexpected potential involvement of HDAC3 in tumor suppression in brain tissue. It will be of interest to determine whether this effect is conserved in the mammalian central nervous system and whether it occurs in tissues other than the brain.\n\n## Materials and methods\n\n### Fly stocks and antibodies\n\nThe following flies were used in this study: brmT362 is from J Treisman; erm1, erm2, UAS-ErmCTHA, UAS-Brm (AK Dingwall), 9D11-Gal4 (erm-Gal4; GM Rubin). brm2, bap55LL05905, Erm RNAi (#26778; BDSC) are from Bloomington Drosophila stock center. VDRC RNAi lines used: Brm (GD37720 and 37721GD), Bap60 (KK103634), Snr1 (KK108599, GD12645, and BDRC#32372), Bap55 (GD24704), Moira (GD6969), Bap180 (KK108618), dMi-2 (KK107204), nurf301 (GD46645), Acf1 (GD33446) and ISWI (GD24505). The type II neuroblast driver: w; UAS-Dicer 2, wor-Gal4, ase-Gal80/CyO; UAS-mCD8-GFP/TM3, Ser (Neumuller et al., 2011).\n\nThe primary antibodies used were: guinea-pig anti-Dpn (1:1000, J Skeath), anti-Insc (1:1000); rabbit anti-aPKC\u03b6 C20 (1:100; Santa Cruz Biotechnologies, Dallas, TX); guinea-pig anti-Numb (1:1000; J Skeath); mouse anti-Mira (1:50; F Matsuzaki); rat anti-CD8 (1:250; Caltag laboratories, United Kingdom); rabbit anti-GFP (1:500; Molecular Probes, Eugene, OR); rabbit anti-Asense (1:1000; YN Jan); rabbit anti-PntP1 (1:100; J Skeath); rabbit anti-Brm (1:100; L Zhang); rat anti-phospho-Histone H3 (1:1000; Cell Signaling, Danvers, MA); rabbit anti-phospho-Histone H3 (1:200; Sigma, St Louis, MO); mouse anti-dMyc (1:5; B Edgar). Antibodies for western blotting used were: mouse anti-Myc (1:2000; Abcam, United Kingdom) and mouse anti-Flag (1:1000; Sigma).\n\n### Immunohistochemistry and immunoblotting\n\nThird instar larval brains were dissected and fixed with 3.7% formaldehyde in PBS. Fixed brains were blocked with 3% BSA for one hour and then incubated with primary antibody in 3% BSA (in 0.3% PBS-T) over night at 4\u00b0C. Following three times washing (10 min each), larval brains were incubated with secondary antibody diluted in 0.3% PBS-T for 1.5 hr. After two times washing (10 min each), DNA was labeled by ToPro-3 (1:5000; Invitrogen, Carlsbad, CA) in 0.3% PBS-T for 20 min. Larval brains were mounted in vector shield (Vector Laboratory, Burlingame, CA) for confocal microscopy. Images were obtained using a Zeiss LSM 700 confocal microscope and processed with Adobe Photoshop CS5.1.\n\n### Clonal analysis\n\nMARCM clones were generated as previously described (Lee and Luo, 1999). Briefly, larvae were heat shocked at 37\u00b0C for 90 min at 24 hr ALH and at 10\u201316 hr after the first heat shock. Larvae were further aged for 3 days at 25\u00b0C, and larval brains were dissected and processed for immunohistochemistry. To generate type II neuroblast clones, UAS lines were crossed to the type II driver at 25\u00b0C and shifted to 29\u00b0C at 24 hr ALH. Wandering third instar larvae were dissected after incubation for 3 or 4 days at 29\u00b0C.\n\n### S2 cell culture, transfection and co-immunoprecipitation\n\nDrosophila S2 cells were cultured in Shields and Sang M3 insect medium (Sigma-Aldich), and supplemented with 10% fetal bovine serum (FBS; Hyclone, Logan, UT). Flag-Erm or Myc-Brm generated by Gateway cloning was transfected into S2 cells using Effectene Transfection Reagent (QIAGEN, The Netherlands). S2 cells were collected 48 hr after transfection for protein homogenization. 80 \u03bcg S2 cells are homogenized with lysis buffer (25 mM Tris pH8/27.5 mM NaCl/20 mM KCl/25 mM sucrose/10 mM EDTA/10 Mm EGTA/1 mM DTT/ 10% (vol/vol) glycerol/0.5% Nonidet P40) with Proteases inhibitors (Complete, Boeringher; PMSF 10 \u03bcg/ml, Sodium orthovanadate 10 \u03bcg/ml). The supernatants were used for immunoprecipitation with anti-Myc or anti-Flag for overnight at 4\u00b0C, followed by incubation with protein A/G beads for two hours (Pierces, Rockford, IL). Protein A/G beads were washed with cold PBS for three times. Bound proteins were separated by SDS-PAGE and analyzed by western blotting.\n\n### Protein pull-down assay\n\nMBP or MBP fusion proteins were expressed in BL21 cells and bound on amylose resin (Cart# E8021L; NEW ENGLAND Biolabs Inc., United Kingdom). 50 \u03bcg of purified MBP fusion proteins bound on amylose resin were incubated for 3 hr at 4\u00b0C with protein extracts from 100 \u03bcg S2 cells that were homogenized in lysis buffer with proteases inhibitors. After washing amylose resin three times for 7 min each with 1 ml lysis buffer, bound proteins were separated by SDS-PAGE and analyzed by western blotting.\n\n### Transplantation\n\nAllograft culture of larval brain tissue was carried out as previously described (Castellanos et al., 2008). Third instar larval brains are dissected and the tissue is cut into pieces. A piece of tissue is collected with the tip of a glass needle and injected in the mid-ventral abdomen of a young female fly.\n\n### Generation of plasmid constructs\n\nPlasmid constructs were generated using either pENTR Directional TOPO Cloning Kit (Invitrogen) or In-Fusion HD Cloning Kit (Clontech, Mountain View, CA). ESTs used in this study were GH14092 (Erm), LD36356 (Brm), LD09078 (Bap60), GH08712 (Snr1) (Drosophila Genomics Resource Centre [DGRC], Bloomington, IN). Briefly, coding region of genes were amplified by PCR, inserted into the pENTR/D-TOPO vector (Invitrogen) and destination vectors (pAMW or PAFW) were generated by LR recombination.\n\n### Bioinformatics\n\nFrom the previously reported ChIP\u2013chip data, we obtained a list of 270 Brm binding sites. To determine if Erm also binds to these binding sites, we first analyzed the DNA binding domains of Erm, which contain 6 zinc fingers. Each zinc-finger domain was assigned a DNA binding preference (position weighted matrix) based on published methods (Kaplan et al., 2005). We then scanned these six DNA binding preferences of approximately +/\u2212200 bp around the 270 Brm binding sites and found the DNA binding preferences of the 1st zinc-finger \u2018GTAG\u2019 and the 4th zinc-finger \u2018RAAA\u2019 are enriched in the 270 Brm binding sites. The sites enriched with these two binding preferences were subjected to further analysis using the de novo motif-finding program SEME (Zhang et al., 2013), and a 14 bp-long motif was identified as the de novo Erm DNA-binding motif. We scanned +/\u2212200 bp around the 270 Brm binding sites with the de novo Erm DNA-binding motif. Among them, 202 sites (FDR<0.0001) were identified as putative Erm-binding sites with an AUC score of 0.73, which is significantly higher than the AUC score computed for random motifs (0.5). As a negative control, the same approach was also applied to predict the motif of Zinc-finger protein (Zif), which regulates asymmetric division of neuroblasts and therefore is unlikely to be a co-factor with Brm. The predicted Zif DNA-binding motif differs dramatically with the predicted Erm DNA-binding motif in sequence. Furthermore, it was not significantly enriched in the 270 Brm binding sites and had an AUC score of 0.54, similar to the AUC score (0.5) for random motifs. Thus, our data suggests that Brm and Erm can potentially regulate a set of common downstream targets.\n",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "73435928-3960-468a-8c81-f210e6f36a9e",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C1",
+      "claim": "Drosophila type II neuroblast lineages are prone to developing impaired neuroblast homeostasis if the limited self-renewing potential of intermediate neural progenitors (INPs) is unrestrained.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila type II neuroblast lineages are prone to developing impaired neuroblast homeostasis if the limited self-renewing potential of intermediate neural progenitors (INPs) is unrestrained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known characteristic of type II neuroblast lineages, drawing from established scientific knowledge about these cell types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "2d66c4c4-2275-45c4-a1a3-baec64ccb6e7",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C2",
+      "claim": "Drosophila SWI/SNF chromatin remodeling Brahma (Brm) complex functions cooperatively with Histone deacetylase 3 (HDAC3) to suppress the formation of ectopic type II neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that Drosophila SWI/SNF chromatin remodeling Brahma (Brm) complex functions cooperatively with another chromatin remodeling factor, Histone deacetylase 3 (HDAC3) to suppress the formation of ectopic type II neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through experimental data presented in the manuscript, including genetic interaction studies and phenotypic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a7ce5391-509e-4dbd-9e50-7384030d68d9",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C3",
+      "claim": "Multiple components of the Brm complex and HDAC3 physically associate with Earmuff (Erm).",
+      "claim_type": "EXPLICIT",
+      "source": "We show that multiple components of the Brm complex and HDAC3 physically associate with Earmuff (Erm), a type II-specific transcription factor that prevents dedifferentiation of INPs into neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation and protein pull-down assays shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "9c0cfe51-5cb4-48f7-85b2-a852c688940e",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C4",
+      "claim": "The predicted Erm-binding motif is present in most of known binding loci of Brm.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the predicted Erm-binding motif is present in most of known binding loci of Brm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic analysis described in the manuscript showing that 202 out of 270 Brm binding sites contain the predicted Erm-binding motif.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "84955ee7-c2e7-4782-8133-024c1688049f",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C5",
+      "claim": "brm and hdac3 genetically interact with erm to prevent type II neuroblast overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, brm and hdac3 genetically interact with erm to prevent type II neuroblast overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through genetic interaction experiments showing enhanced phenotypes when these genes are simultaneously knocked down.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "aa5823e2-abb9-4f91-bcff-f434aeba91b6",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C6",
+      "claim": "The Brm-HDAC3-Erm repressor complex suppresses dedifferentiation of INPs back into type II neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Brm-HDAC3-Erm repressor complex suppresses dedifferentiation of INPs back into type II neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the physical association data, genetic interaction data, and phenotypic analyses presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a650facc-adcf-495e-85e3-1e01ee8d8f88",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C7",
+      "claim": "In Drosophila larval central brains, there are at least two classes of neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila larval central brains, there are at least two classes of neuroblast lineages (Bello et al., 2008; Boone and Doe, 2008; Bowman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "abd35aff-2d4e-445a-93bc-4a3587cd88cc",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C8",
+      "claim": "A type I neuroblast expresses both Deadpan (Dpn) and Asense (Ase).",
+      "claim_type": "EXPLICIT",
+      "source": "A type I neuroblast that expresses both Deadpan (Dpn) and Asense (Ase) divides asymmetrically to generate a self-renewing neuroblast and a ganglion mother cell (GMC), which is committed to a differentiation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about type I neuroblasts cited from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "d2c60daa-c8c2-4282-b30a-8cb217da915c",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C9",
+      "claim": "A type II neuroblast expresses Dpn, but not Ase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a type II neuroblast that expresses Dpn, but not Ase, divides asymmetrically to generate a neuroblast and a transient amplifying cell known as an intermediate neural progenitor (INP) (Bello et al., 2008; Boone and Doe, 2008; Bowman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about type II neuroblasts cited from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "b3c294fb-3d95-4711-9145-654e27e836af",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C10",
+      "claim": "Following maturation, the INP undergoes a limited number of asymmetric divisions to self-renew and to produce multiple GMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Following maturation, the INP undergoes a limited number of asymmetric divisions to self-renew and to produce multiple GMCs (Weng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "94f2d7af-c881-4cbf-91ed-cfca6f086dab",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C11",
+      "claim": "The failure of asymmetric division in either type of neuroblast can result in the hyperproliferation of these cells and the induction of brain tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of asymmetric division in either type of neuroblast can result in the hyperproliferation of these cells and the induction of brain tumors (Caussinus and Gonzalez, 2005; Wang et al., 2006, 2007, 2009, 2011; Lee et al., 2006a, 2006b; Cabernard and Doe, 2009; Chabu and Doe, 2009, 2011; Chang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a959d7e4-7e37-4522-b58d-d60b164f8605",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C12",
+      "claim": "The type II neuroblast lineage is highly analogous to the mammalian neural stem cell lineages, because both involve transient amplifying cells that are used to expand the progenitor cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "The type II neuroblast lineage is highly analogous to the mammalian neural stem cell lineages, because both involve transient amplifying cells that are used to expand the progenitor cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement based on established knowledge about both systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "169dfb13-1a5c-4c7a-87fb-c7fc5fe5b260",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C13",
+      "claim": "Brain tumor (Brat) and the Notch antagonist Numb function cooperatively to ensure that immature INPs undergo maturation and commit to the INP fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain tumor (Brat) and the Notch antagonist Numb function cooperatively to ensure that immature INPs undergo maturation and commit to the INP fate (Boone and Doe, 2008; Bowman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "88d62eb6-ee6c-4ecc-860b-7479a84389dd",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C14",
+      "claim": "Notch signaling maintains neuroblast identity and its overactivation leads to dedifferentiation of INPs to ectopic neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Notch signaling maintains neuroblast identity and its overactivation leads to dedifferentiation of INPs to ectopic neuroblasts (Wang et al., 2006; Bowman et al., 2008; Weng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "04051919-1252-485f-9bfa-194d2c85ffaf",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C15",
+      "claim": "Earmuff (Erm) is specifically expressed in INPs and plays a critical role in maintaining the restricted developmental potential of the INPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically expressed in INPs, a Zinc-finger transcription factor Earmuff (Erm) plays a critical role in maintaining the restricted developmental potential of the INPs (Weng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "9bdccce9-e7b4-46a2-a462-ac3dc06642b3",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C16",
+      "claim": "The Ets transcription factor Pointed (PntP1) is specifically expressed in type II neuroblasts and INPs and is both necessary and sufficient for the suppression of Ase in type II neuroblasts and the generation of INPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ets transcription factor Pointed (PntP1) is specifically expressed in type II neuroblasts and INPs and is both necessary and sufficient for the suppression of Ase in type II neuroblasts and the generation of INPs (Zhu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "76398d69-5166-4f8e-86da-663b3da7b30b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C17",
+      "claim": "Prospero is basally localized in mitotic type I neuroblast, but absent from type II neuroblasts, and triggers cell cycle exit and GMC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Prospero that is basally localized in mitotic type I neuroblast, but absent from type II neuroblasts, triggers cell cycle exit and GMC differentiation (Bello et al., 2006; Betschinger et al., 2006; Choksi et al., 2006; Lee et al., 2006c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "d9ce809c-1b22-47ec-ada1-c33f9aafb9b6",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C18",
+      "claim": "The mammalian SWI/SNF complex termed the Brahma (Brm or Brg1) complex regulates critical cellular processes such as differentiation and cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian SWI/SNF complex termed the Brahma (Brm or Brg1) complex regulates critical cellular processes such as differentiation and cell cycle arrest (Klochendler-Yeivin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "9f6cac94-68c9-40be-bb06-fe075975fefc",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C19",
+      "claim": "Drosophila Brm complex acts similarly to control cell proliferation and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Brm complex acts similarly to control cell proliferation (Brumby et al., 2002) and differentiation (Marenda et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "8b6d5972-129f-4ac8-a6ea-0cfe7a3a974c",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C20",
+      "claim": "A genome-wide RNAi study in Drosophila neuroblasts showed that the knockdown of genes encoding several core subunits of the SWI/SNF Brahma (Brm) remodeling complex may lead to neuroblast overproliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide RNAi study in Drosophila neuroblasts showed that the knockdown of genes encoding several core subunits of the SWI/SNF Brahma (Brm) remodeling complex may lead to neuroblast overproliferation (Neumuller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "7a4ed54b-22a7-41f2-911e-4a9307573375",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C21",
+      "claim": "Histone deacetylases (HDACs) remove acetyl groups from the tails of core histones in the nucleosome and are often associated with transcriptional co-repressors.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone deacetylases (HDACs) remove acetyl groups from the tails of core histones in the nucleosome and are often associated with transcriptional co-repressors (Dokmanovic et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HDACs supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "df9c4c5e-8907-4ca3-9850-02c632668241",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C22",
+      "claim": "brm RNAi knockdown in larval brains resulted in an increase of Miranda-positive neuroblast-like cells in larval central brains.",
+      "claim_type": "EXPLICIT",
+      "source": "We independently identified brm from a RNA interference (RNAi) screen in which brm RNAi knockdown in larval brains resulted in an increase of Miranda-positive neuroblast-like cells in larval central brains (Figure 1\u2014figure supplement 1A), showing a phenotype similar to one previously reported (Neumuller et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "8a400a36-b2f8-4bf5-abaa-f1042dc0870b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C23",
+      "claim": "The number of cells expressing the proto-oncogene dMyc was significantly increased upon brm RNAi knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of cells expressing the proto-oncogene dMyc was significantly increased upon brm RNAi knockdown (Figure 1\u2014figure supplement 1B), consistent with the neuroblast overgrowth phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "b7195d5e-2dcf-46d2-8976-3ef0be9e1e4d",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C24",
+      "claim": "Brm has no significant effect on type I neuroblast numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I wild-type (wt) clones always contained one neuroblast that is positive for both Dpn and Ase (data not shown). Similarly, only one neuroblast was present in both amorphic brm2 and hypomorphic brmT362 type I clones (data not shown), indicating that Brm has no significant effect on type I neuroblast numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations of type I neuroblast clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "4fb0e8cb-0a5c-4109-999d-b3b28facb59f",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C25",
+      "claim": "Each wild-type type II MARCM clone possessed only one neuroblast that was positive for Dpn, but negative for Ase.",
+      "claim_type": "EXPLICIT",
+      "source": "Each wt type II MARCM clone also possessed only one neuroblast that was positive for Dpn, but negative for Ase (Figure 1A; n = 25).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "c68416f6-f987-489b-9c3e-f46e3b8bb491",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C26",
+      "claim": "6.4 \u00b1 3.3 ectopic neuroblasts were observed in brm2 type II clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the wt control, 6.4 \u00b1 3.3 and 4.5 \u00b1 2.6 ectopic neuroblasts were observed in brm2 (Figure 1B,B\u2032,D; 88.6%, n = 34) brmT362 (Figure 1C,C\u2032,D; 75.9%, n = 58) type II clones, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1B,B\u2032,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "7301512c-8277-480b-9583-032baccf31a1",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C27",
+      "claim": "4.5 \u00b1 2.6 ectopic neuroblasts were observed in brmT362 type II clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the wt control, 6.4 \u00b1 3.3 and 4.5 \u00b1 2.6 ectopic neuroblasts were observed in brm2 (Figure 1B,B\u2032,D; 88.6%, n = 34) brmT362 (Figure 1C,C\u2032,D; 75.9%, n = 58) type II clones, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1C,C\u2032,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "6fbdc7ea-31b4-4c11-bd28-8197cdaebd61",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C28",
+      "claim": "The phenotypes in brm alleles could be rescued by expressing a wild-type brm transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenotypes in brm alleles could be rescued by expressing a wild-type brm transgene (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a7011447-75d6-4b37-8895-758c1f11fd6b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C29",
+      "claim": "Knockdown of brm by RNAi using a type II neuroblast-specific driver was sufficient to produce ectopic neuroblasts in 97.4% of type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with phenotypes in brm clones, knockdown of brm by RNAi using a type II neuroblast-specific neuroblast driver worniu (wor)-Gal4, ase-Gal80 (henceforth referred to as 'type II driver'; 'Materials and methods') was sufficient to produce ectopic neuroblasts in 97.4% of type II neuroblast lineages (Figure 1F,K; 7 \u00b1 3.4 neuroblasts/lineage, n = 38), while each control clone always has one neuroblast (Figure 1E,K; n = 80).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "80d176b5-4cfc-401b-a183-6d3b236bb4ed",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C30",
+      "claim": "Brm suppresses the formation of ectopic neuroblasts in type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that Brm suppresses the formation of ectopic neuroblasts in type II neuroblast lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from multiple experimental observations showing ectopic neuroblasts in brm mutants and knockdowns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "5a48a09f-35a1-4b32-aad6-604d384bb090",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C31",
+      "claim": "The number of mature INPs that are positive for Dpn and Ase were dramatically reduced in both brm2 and brmT362 compared with the control type II clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly with the formation of supernumerary neuroblasts, the number of mature INPs that are positive for Dpn and Ase were dramatically reduced in both brm2 (Figure 2B,B\u2032,D; 5.3 \u00b1 4.3/clone, n = 39) and brmT362 (Figure 2C,C\u2032,D; 9.6 \u00b1 4.6/clone, n = 56), compared with the control type II clones (Figure 2A,A\u2032,D; 18.9 \u00b1 3.7, n = 22).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 2B,B\u2032,C,C\u2032,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "e14bd185-c362-48b9-bf18-98c552b6cad9",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C32",
+      "claim": "The number of Dpn\u2212 PntP1+ immature INPs and early mature INPs appeared to be normal or slightly increased in brm2 and brmT362 clones compared with the control.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of Dpn\u2212 PntP1+ immature INPs and early mature INPs appeared to be normal or slightly increased in brm2 (Figure 2F; 8.4 \u00b1 2.5, n = 26) and brmT362 (Figure 2G; 7.1 \u00b1 2.1, n = 33) clones compared with the control (Figure 2E; 5.9 \u00b1 1.1, n = 26).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 2E,F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "dd84c6f4-e5c6-4ac5-93ae-77d879cef5ed",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C33",
+      "claim": "Ectopic neuroblasts in brm\u2212 clones likely originate from INPs that fail to undergo maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that ectopic neuroblasts in brm\u2212 clones likely originate from INPs that fail to undergo maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that mature INPs are reduced while immature INPs are normal or increased.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "52c792e5-967b-4f2d-bc50-c86923173440",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C34",
+      "claim": "In 42.5% of INP clones with brm knockdown, ectopic Dpn+ Ase\u2212 neuroblasts were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "To further determine whether INPs undergo dedifferentiation back into neuroblast, we used INP-specific RNAi to knock down brm in INPs by erm-Gal4, an INP-specific driver. In 42.5% of INP clones with brm knockdown, ectopic Dpn+ Ase\u2212 neuroblasts were observed (Figure 2I,I\u2032; 1.2 \u00b1 1.6 neuroblasts /INP clone, n = 40).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2I,I\u2032.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "6962348f-0e1f-487c-9562-cb54d8a846bb",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C35",
+      "claim": "None of the INP clones from the driver control contained any neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, none of the INP clones from the driver control contained any neuroblasts (Figure 2H; 0 neuroblast/INP clone, n = 53).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "d1a2b3af-2ec7-4a16-815b-daabf828a57a",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C36",
+      "claim": "Brm functions in INPs to prevent INP dedifferentiation back into neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data suggest that Brm functions in INPs to prevent INP dedifferentiation back into neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from INP-specific knockdown experiments showing ectopic neuroblasts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "715fef88-8f83-457a-a746-6c36e7e668b7",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C37",
+      "claim": "brm2 MARCM clones did not show any defects in the localization of aPKC, Numb and Brat.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether Brm was affecting apico-basal cell polarity, we examined the localization of aPKC, Numb and Brat, which are asymmetrically localized in wild-type neuroblasts in prometaphase/metaphase. brm2 MARCM clones did not show any defects in the localization of these markers (Figure 3\u2014figure supplement 1A\u2013C), suggesting that Brm is not important for the apical-basal polarity regulation in neuroblasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "5709f41b-9363-4fe3-aee1-7f1f59da0c2f",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C38",
+      "claim": "Brm is not important for the apical-basal polarity regulation in neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "brm2 MARCM clones did not show any defects in the localization of these markers (Figure 3\u2014figure supplement 1A\u2013C), suggesting that Brm is not important for the apical-basal polarity regulation in neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that polarity markers localize normally in brm mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "f9a60561-431a-4f8b-aa6c-43812d95ce8b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C39",
+      "claim": "Knock down of snr1 resulted in prominent phenotypes with ectopic Dpn+ Ase\u2212 neuroblasts in type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We then assessed the function of other core subunits of the Brm remodeling complex using RNAi knockdown in larval brains. Knock down either of the three core components snr1 (Figure 1G,K, 9.5 \u00b1 5.5 neuroblasts/lineage, 64.5%, n = 34), bap60 (Figure 1H,K, 5.1 \u00b1 2.8 neuroblasts/lineage, 87.0%, n = 52), and moira (data not shown; also reported in Neumuller et al. (2011)) resulted in prominent phenotypes with ectopic Dpn+ Ase\u2212 neuroblasts in type II neuroblast lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "e54acc4c-1321-4335-b9b7-793df89e15b6",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C40",
+      "claim": "Knock down of bap60 resulted in prominent phenotypes with ectopic Dpn+ Ase\u2212 neuroblasts in type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock down either of the three core components snr1 (Figure 1G,K, 9.5 \u00b1 5.5 neuroblasts/lineage, 64.5%, n = 34), bap60 (Figure 1H,K, 5.1 \u00b1 2.8 neuroblasts/lineage, 87.0%, n = 52), and moira (data not shown; also reported in Neumuller et al. (2011)) resulted in prominent phenotypes with ectopic Dpn+ Ase\u2212 neuroblasts in type II neuroblast lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1H,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a2b115da-d43b-43ee-9d1b-c0eaefd734dd",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C41",
+      "claim": "Knock down of moira resulted in prominent phenotypes with ectopic Dpn+ Ase\u2212 neuroblasts in type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock down either of the three core components snr1 (Figure 1G,K, 9.5 \u00b1 5.5 neuroblasts/lineage, 64.5%, n = 34), bap60 (Figure 1H,K, 5.1 \u00b1 2.8 neuroblasts/lineage, 87.0%, n = 52), and moira (data not shown; also reported in Neumuller et al. (2011)) resulted in prominent phenotypes with ectopic Dpn+ Ase\u2212 neuroblasts in type II neuroblast lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "b78ca3f6-d4ee-4b4f-8840-634b5667f0ee",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C42",
+      "claim": "bap55LL5955 MARCM clones showed ectopic neuroblasts in type II but not type I neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bap55LL5955 MARCM clones also showed ectopic neuroblasts in type II (Figure 1J,J\u2032, 2.3 \u00b1 1.7 neuroblasts/clone; 30.5%, n = 57), but not type I neuroblast lineages (Figure 1\u2014figure supplement 1F; n = 20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1J,J\u2032 and Figure 1\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "3b16120e-f61e-4004-8992-b8cd901f353f",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C43",
+      "claim": "The number of Dpn+ Ase+ mature INPs in bap55LL5955 was significantly reduced compared with the control.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of Dpn+ Ase+ mature INPs in bap55LL5955 was significantly reduced (13.8 \u00b1 4.1; n = 49) compared with the control (18.9 \u00b1 3.7, n = 22), while the number of Dpn\u2212 PntP1+ immature and early mature INPs (4.2 \u00b1 1.9, n = 26) was similar to the control (5.9 \u00b1 1.1, n = 26).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "eb1ec4d1-db5f-4a0c-9fe7-be67f79aac0a",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C44",
+      "claim": "Core components of the Brm remodeling complex are required to suppress ectopic neuroblast formation in type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that core components of the Brm remodeling complex are required to suppress ectopic neuroblast formation in type II neuroblast lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from multiple experiments showing ectopic neuroblasts upon loss of various Brm complex components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "ed8e605b-93b3-4679-a147-04bbe5fe3b8a",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C45",
+      "claim": "RNAi knockdown of nurf301, iswi, or acf1 in the type II neuroblast lineages did not result in any obvious neuroblast overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we ascertained whether other chromatin remodeling complexes such as Nucleosome remodeling factor (NURF) and ACF complex (ATP-utilizing chromatin assembly and remodeling factor), play any role during neuroblast self-renewal. RNAi knockdown of nurf301 or ACF complex components iswi and acf1 (Figure 1\u2014figure supplement 1G) in the type II neuroblast lineages did not result in any obvious neuroblast overgrowth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "2a4d57be-5437-4d50-a8d5-70a8ccd2227c",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C46",
+      "claim": "The simultaneous knockdown of both brm and hdac3 under the control of the type II driver resulted in a more severe phenotype of ectopic neuroblasts compared with brm RNAi or hdac3 RNAi knockdown alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore re-screened the same collection of potential histone modifiers in a brm RNAi background and showed that the simultaneous knockdown of both brm and hdac3 under the control of the type II driver resulted in a more severe phenotype of ectopic neuroblasts (Figure 3D,E; 22.1 \u00b1 7.4 neuroblasts/clone, n = 21) compared with brm RNAi (Figure 3B,E; 10.3 \u00b1 5.6 neuroblasts/clone, n = 30) or hdac3 RNAi knockdown alone (Figure 3C,E; 1.1 \u00b1 0.5 neuroblasts/clone, n = 85).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 3B,C,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "3bbf2fae-6275-4a39-bd05-173b3ef93a92",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C47",
+      "claim": "HDAC3 functions cooperatively with Brm to regulate type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that HDAC3 functions cooperatively with Brm to regulate type II neuroblast lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enhanced phenotype observed when both genes are knocked down simultaneously.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "1884e8df-4de6-4cdf-9b0a-06867b6c0ea6",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C48",
+      "claim": "Type II neuroblast MARCM clones from snr16c hdac36c homozygotes possessed a large number of ectopic neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we took advantage of an existing deletion mutant snr16c hdac36c, which removes the entire snr1 coding region and the C-terminal region of hdac3. Type II neuroblast MARCM clones from snr16c hdac36c homozygotes possessed a large number of ectopic neuroblasts (Figure 3G,H, 22 \u00b1 11.5 neuroblasts/clone, 83.0%, n = 22).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 3G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a25a9f54-888a-4e65-9ee1-91f2e64dbf44",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C49",
+      "claim": "The number of mature Dpn+ Ase+ INPs in each snr16c hdac36c type II neuroblast clone was modestly reduced compared with control.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of mature Dpn+ Ase+ INPs in each snr16c hdac36c type II neuroblast clone was modestly reduced to 15.6 \u00b1 4.4 (n = 22) compared with 20.3 \u00b1 3/clone (n = 20) in control, while the number of Dpn\u2212 PntP1+ immature and early mature INPs (6.3 \u00b1 3/clone, n = 21) are slightly greater compared with the control clones (4.1 \u00b1 0.9, n = 21).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "e051065c-cc01-4c69-a59b-3b094392c8f0",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C50",
+      "claim": "Type I neuroblast clones of snr16c hdac36c double mutant appeared normal, as there was only one neuroblast per clone.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, type I neuroblast clones of this double mutant appeared normal, as there was only one neuroblast per clone (Figure 3\u2014figure supplement 1D, n = 17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a882b05b-45e1-473b-978f-13d5c72d142f",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C51",
+      "claim": "Neither type I nor type II neuroblast mutant clones of a loss-of-function hdac3N allele had ectopic neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to hdac3 RNAi (Figure 3C), neither type I nor type II neuroblast mutant clones of a loss-of-function hdac3N allele had ectopic neuroblasts (Figure 3\u2014figure supplement 1E and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "03284bc4-2b45-45d0-9be9-4e7f595b5e06",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C52",
+      "claim": "HDAC3 acts cooperatively with the Brm complex to suppress the formation of ectopic type II neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that HDAC3 acts cooperatively with the Brm complex to suppress the formation of ectopic type II neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from genetic interaction experiments showing enhanced phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "7056ea76-24ab-40b7-a1e0-47fc033a54aa",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C53",
+      "claim": "A significant portion of snr16c hdac36c mutant tissue proliferated massively and formed malignant tumors after transplantation into wild-type hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "To ascertain whether snr16c hdac36c causes tumorigenesis, larval brain tissues carrying snr16c hdac36c MARCM clones were transplanted into the abdomen of wild-type hosts. A significant portion of the mutant tissue (Figure 3J; 21%, n = 14) proliferated massively and formed malignant tumors, whilst control clones did not proliferate after the implantation (Figure 3I; n = 25).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transplantation experiment data shown in Figure 3I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "dad17510-8a2d-4317-abda-acf4ff7a0a46",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C54",
+      "claim": "In subsequent rounds of transplantation, 70% (T1) and 80% (T2) of the snr16c hdac36c mutant brain tissues developed tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In subsequent rounds of transplantation, 70% (T1, n = 10) and 80% (T2, n = 5) of the snr16c hdac36c mutant brain tissues developed tumors, suggesting that snr16c hdac36c can induce malignant tumor-like growth after allograft culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by serial transplantation experiment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "c5eeaa79-492f-435c-92b3-36bf6105f680",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C55",
+      "claim": "snr16c hdac36c can induce malignant tumor-like growth after allograft culture.",
+      "claim_type": "EXPLICIT",
+      "source": "In subsequent rounds of transplantation, 70% (T1, n = 10) and 80% (T2, n = 5) of the snr16c hdac36c mutant brain tissues developed tumors, suggesting that snr16c hdac36c can induce malignant tumor-like growth after allograft culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the serial transplantation results showing sustained tumor growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "e17fd710-912d-45ef-a8a8-b084807a2188",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C56",
+      "claim": "Brm is ubiquitously expressed in various cell types of larval brains, including neuroblasts, INPs, GMCs and neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Brm is ubiquitously expressed in various cell types of larval brains, including neuroblasts, INPs, GMCs and neurons (Figure 2\u2014figure supplement 1 and data not shown), it is conceivable that the Brm complex may associate with regulatory protein(s) or co-factor(s) that is/are specifically expressed in type II neuroblast lineages to suppress the formation of ectopic neuroblasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "9d43f1d3-c69d-4c51-a8cd-4be1ae9c0e3e",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C57",
+      "claim": "Flag-tagged Brm co-immunoprecipitates with Myc-tagged Erm in S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Flag-tagged Brm was co-transfected with Myc-tagged Erm in S2 cells. Following immunoprecipitation (IP) of Flag-Brm, Erm can be specifically detected in the immune complex (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "b2319ce7-bec6-4fe2-9c22-1e5e12a21e69",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C58",
+      "claim": "Flag-Brm was detected in the immune complex following the IP of Myc-Erm.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Flag-Brm was detected in the immune complex following the IP of Myc-Erm (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "01d04e29-e615-4c1d-9895-2f9eacd2a1ac",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C59",
+      "claim": "Myc-Brm did not associate with Flag-PntP1 in co-IP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Myc-Brm did not associate with Flag-PntP1 in similar co-IP experiments (Figure 4\u2014figure supplement 1A), suggesting that Brm specifically associates in a protein complex with Erm, but not with PntP1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "bdbe6cb8-c1fa-4131-8241-7c3036338692",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C60",
+      "claim": "Brm specifically associates in a protein complex with Erm, but not with PntP1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Myc-Brm did not associate with Flag-PntP1 in similar co-IP experiments (Figure 4\u2014figure supplement 1A), suggesting that Brm specifically associates in a protein complex with Erm, but not with PntP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential co-IP results with Erm and PntP1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "15d0736a-4d28-468f-9f9f-b1a1ad1e12d7",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C61",
+      "claim": "Myc-Brm associated strongly with Flag-Erm-N and weakly with Flag-Erm-C in co-IP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In co-IP experiments, Myc-Brm associated strongly with Flag-Erm-N and weakly with Flag-Erm-C (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "d909bca2-4a18-4b21-b307-1c528cf96179",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C62",
+      "claim": "Myc-Brm associated intensely with MBP-Erm-N and weakly with Erm-C, but not with the MBP control in protein pull-down assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the pull-down of amylose resin, Myc-Brm associated intensely with MBP-Erm-N and weakly with Erm-C, but not with the MBP control (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein pull-down assay data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "bd8fc527-d7ad-4aeb-b2cd-761a88ae2bbc",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C63",
+      "claim": "Brm physically associates with Erm and Erm N-terminus appears to be more important for this association.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Brm physically associates with Erm and Erm N-terminus appears to be more important for this association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stronger association observed with Erm-N compared to Erm-C in both co-IP and pull-down assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "ae337091-a49b-4be6-8c4c-f4bef2b9810d",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C64",
+      "claim": "Flag-BAP60 was detected in the immune complex following IP of Myc-Erm-N but not Myc-Erm-C.",
+      "claim_type": "EXPLICIT",
+      "source": "In co-IP experiments, Flag-BAP60 was detected in the immune complex following IP of Myc-Erm-N but not Myc-Erm-C (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "8a78d4a8-f4c6-473f-9702-ab85de22b675",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C65",
+      "claim": "Myc-Erm-N was detected in the immune complex when IP was performed using Flag-BAP60.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, Myc-Erm-N was detected in the immune complex when IP was performed using Flag-BAP60 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "af7a4f03-eb6b-40f8-b0b5-cf866bba0e91",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C66",
+      "claim": "Myc-Snr1 associated with Flag-Erm-N or Flag-Erm-C in co-IP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Myc-Snr1 associated with Flag-Erm-N or Flag-Erm-C in co-IP experiments (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "2fcc6c95-3ef1-466c-8a7a-7563bc453d5f",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C67",
+      "claim": "Myc-Snr1 associated with MBP-Erm-N and weakly with MBP-Erm-C in protein pull-down assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Myc-Snr1 associated with MBP-Erm-N and weakly with MBP-Erm-C in protein pull-down assays (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein pull-down assay data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "604fa2d1-022b-4628-9397-c32d16bdd8a8",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C68",
+      "claim": "Several components of the Brm remodeling complex specifically associates with Erm.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that the several components of the Brm remodeling complex specifically associates with Erm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from multiple co-IP and pull-down experiments showing association of Brm, BAP60, and Snr1 with Erm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a9483d99-fe29-4a9f-98a3-2bbde9af0241",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C69",
+      "claim": "Myc-Brm was clearly detected in the immune complex following immunoprecipitation of Flag-HDAC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Flag-HDAC3 and Myc-Brm were co-transfected in S2 cells. Following immunoprecipitation of Flag-HDAC3, Myc-Brm was clearly detected in the immune complex (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "2f7cd1c2-a399-413c-8f6f-a6612d295e8b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C70",
+      "claim": "Flag-HDAC3 was detected in the immune complex after IP of Myc-Brm.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Flag-HDAC3 was detected in the immune complex after IP of Myc-Brm (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "a29d76ae-c461-4b30-8883-64deb487175d",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C71",
+      "claim": "HDAC3 physically associates with Erm-N, but not Erm-C, in both co-IP and protein pull-down assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HDAC3 also physically associates with Erm-N, but not Erm-C, in both co-IP (Figure 4G) and protein pull-down assay (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation and protein pull-down data shown in Figure 4G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "0eaf56c6-56a0-4c25-b529-199ae26c1547",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C72",
+      "claim": "Brm physically associates with Erm and HDAC3 in the protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that Brm physically associates with Erm and HDAC3 in the protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from multiple co-IP and pull-down experiments showing associations among Brm, Erm, and HDAC3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "0a8861cf-30ae-4561-9673-01b682a94ead",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C73",
+      "claim": "The simultaneous knockdown of brm and erm resulted in a much more severe phenotype with a large number of ectopic neuroblasts in each lineage compared to brm knockdown alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The simultaneous knockdown of brm and erm resulted in a much more severe phenotype with a large number of ectopic neuroblasts in each lineage (Figure 5D,E; 37.1 \u00b1 7.6 neuroblasts/lineage, n = 20), in contrast to brm knockdown alone (Figure 5B,E; 9.5 \u00b1 2.8, n = 32).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 5B,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "7fa53782-1f00-4cc9-bb7b-29729a3df174",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C74",
+      "claim": "erm RNAi under the type II driver resulted in ectopic type II lineages with each lineage containing one type II neuroblast.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably due to incomplete knockdown of erm that only led to weak ectopic type II neuroblasts phenotypes, erm RNAi under the type II driver resulted in ectopic type II lineages with each lineage containing one type II neuroblast (Figure 5C,E; 1 neuroblast/lineage, n = 60).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "1474c8ec-f78c-4e3b-a4ec-317a7b00ff9c",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C75",
+      "claim": "brm and erm genetically interact to prevent the dedifferentiation of INPs back to neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "This dramatic enhancement suggests that brm and erm genetically interact to prevent the dedifferentiation of INPs back to neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enhanced phenotype observed when both genes are knocked down simultaneously.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "43f49e97-5356-4ad1-ad64-e60e186a14bb",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C76",
+      "claim": "Knock down of erm by RNAi in the brmT362 MARCM clones significantly enhanced neuroblast overgrowth compared with brmT362 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knock down of erm by RNAi in the brmT362 MARCM clones (Figure 5\u2014figure supplement 1A,B; 9.9 \u00b1 5.5 neuroblasts/clone, n = 32) also significantly enhanced neuroblast overgrowth compared with brmT362 clones (Figure 5\u2014figure supplement 1A,B; 4.1 \u00b1 2.4 neuroblasts/clone, n = 30).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 5\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "157e2598-a40b-4ed0-8dd3-3d0fb506a53b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C77",
+      "claim": "Overexpression of Erm in type II MARCM clones caused 100% of the neuroblasts to undergo premature differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that overexpression of Erm in type II MARCM clones caused 100% of the neuroblasts to undergo premature differentiation; 29.3% of the clones contained a neuroblast that gained Ase expression and 41.5% of the clones contained a neuroblast that had gained Ase expression with strongly reduced Dpn expression, while the rest of the clones showed no obvious neuroblasts (Figure 5G and data not shown; n = 41).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "ce138426-6c4d-4f5b-8305-44d28634153a",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C78",
+      "claim": "The premature differentiation of type II neuroblasts was dramatically suppressed in a brm loss-of-function mutant background when Erm was overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether this effect is dependent on its association with Brm, we overexpressed Erm in brm2 type II neuroblast clones. The premature differentiation of type II neuroblasts was dramatically suppressed in a brm loss-of-function mutant background, as there were still 37.8% of clones contained ectopic neuroblasts (Figure 5I), while 62.2% of type II neuroblasts underwent premature differentiation (Figure 5H; n = 37).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "6a84a021-13b2-4557-8603-fdaab9c93b01",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C79",
+      "claim": "The simultaneous knockdown of both erm and snr1 resulted in a more severe phenotype of ectopic neuroblasts compared with either erm knockdown or snr1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the simultaneous knockdown of both erm and snr1 resulted in a more severe phenotype of ectopic neuroblasts (Figure 5M\u2013N; 862 \u00b1 106.8 neuroblasts/brain lobe, n = 20) compared with either erm knockdown (Figure 5K,N; 76.6 \u00b1 14.2 neuroblasts/brain lobe, n = 20) or snr1 knockdown (Figure 5L,N; 219.5 \u00b1 52.2 neuroblasts/brain lobe, n = 20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 5K,L,M,N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "7140fa56-5456-4c5f-b016-97cd261dcfee",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C80",
+      "claim": "brm and snr1 genetically interact with erm to prevent dedifferentiation of INPs to neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that brm and snr1 genetically interact with erm to prevent dedifferentiation of INPs to neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from genetic interaction experiments showing enhanced phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "3dd6a47c-2b3c-4a0d-b699-44409c5fe68b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C81",
+      "claim": "The simultaneous knockdown of hdac3 and erm under the control of type II driver resulted in a more dramatic increase of ectopic type II neuroblasts compared with either erm knockdown or hdac3 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the simultaneous knockdown of hdac3 and erm under the control of type II driver also resulted in a more dramatic increase of ectopic type II neuroblasts (Figure 5Q,R; 565.4 \u00b1 68.1 type II neuroblasts/brain lobe, n = 20) compared with either erm knockdown (Figure 5P,R; 76.0 \u00b1 7.7 type II neuroblasts/brain lobe, n = 20) or hdac3 knockdown (Figure 5R; 8 type II neuroblasts/brain lobe, n = 20), suggesting that hdac3 and erm genetically interact in type II neuroblast lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 5P,Q,R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "8cdf0ce4-c3bc-417f-8866-a95fadc23452",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C82",
+      "claim": "hdac3 and erm genetically interact in type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the simultaneous knockdown of hdac3 and erm under the control of type II driver also resulted in a more dramatic increase of ectopic type II neuroblasts (Figure 5Q,R; 565.4 \u00b1 68.1 type II neuroblasts/brain lobe, n = 20) compared with either erm knockdown (Figure 5P,R; 76.0 \u00b1 7.7 type II neuroblasts/brain lobe, n = 20) or hdac3 knockdown (Figure 5R; 8 type II neuroblasts/brain lobe, n = 20), suggesting that hdac3 and erm genetically interact in type II neuroblast lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enhanced phenotype observed when both genes are knocked down simultaneously.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "90a02c53-97ca-45e2-8231-b12868a56473",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C83",
+      "claim": "Brm, HDAC3, and Erm function as a repressor complex to prevent INP dedifferentiation into type II neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that Brm, HDAC3, and Erm function as a repressor complex to prevent INP dedifferentiation into type II neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from physical association data and genetic interaction experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "6eeda099-1f33-4cbd-9081-aff4a09407ca",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C84",
+      "claim": "The Drosophila Brm remodeling complex displays a tumor suppressor-like function in larval brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report a critical function of the Drosophila Brm remodeling complex in suppressing the formation of ectopic type II neuroblasts in larval brains. Mutants of major components of the Brm complex, including Brm and Bap55, and RNAi targeting of several Brm components formed ectopic type II neuroblasts. Therefore, the Drosophila Brm remodeling complex displays a tumor suppressor-like function in larval brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that loss of Brm complex components leads to ectopic neuroblasts and tumor formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "c8cc586c-c8d4-4f72-9837-ce93da45f4b4",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C85",
+      "claim": "BAP47 (homologous to Snr1) is a bona fide tumor suppressor and the gene is deleted in pediatric rhabdoid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "BAP47 (homologous to Snr1) is a bona fide tumor suppressor and the gene is deleted in pediatric rhabdoid tumors (Reisman et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "ff61993a-0b1d-49bc-be9e-b2500b14b6fb",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C86",
+      "claim": "Mutations in epigenetic regulators are found in approximately half of hepatocellular carcinoma and bladder cancers, and represent a significant portion of mutated genes in medulloblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in epigenetic regulators are found in approximately half of hepatocellular carcinoma and bladder cancers, and represent a significant portion of mutated genes in medulloblastoma (Gui et al., 2011; Fujimoto et al., 2012; Pugh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "d257d03d-40a3-4a7d-b326-4aa1c0be84c2",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C87",
+      "claim": "Drosophila Brm complex is essential for intestinal stem cell proliferation and commitment in the adult intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Brm complex is essential for intestinal stem cell proliferation and commitment in the adult intestine (Jin et al., 2013; Zeng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "24d3076c-a177-4f98-a32f-d635d4ed17e6",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C88",
+      "claim": "Iswi and Domino control germline stem cell and somatic stem cell self-renewal in the ovary.",
+      "claim_type": "EXPLICIT",
+      "source": "Two other chromatin remodeling factors, Iswi and Domino control germline stem cell and somatic stem cell self-renewal in the ovary (Xi and Xie, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "fad62e7c-3b6d-4dcd-8a12-7ebbf67fdbc2",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C89",
+      "claim": "The association with Erm may provide functional specificity of the Brm remodeling complex in type II neuroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the association with Erm may provide functional specificity of the Brm remodeling complex in type II neuroblast lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the mechanism by which Brm achieves specificity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "14dbb378-4136-4a19-b17c-def0e99d9de2",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C90",
+      "claim": "202 sites out of the 270 known genomic loci harboring Brm also contain the de novo Erm DNA-binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Our bioinformatic analysis has identified a 14 bp-long motif as the de novo Erm DNA-binding motif (Figure 4\u2014figure supplement 1B\u2013D; and Supplementary methods) and 202 sites out of the 270 known genomic loci harboring Brm (Negre et al., 2011) also contain the de novo Erm DNA-binding motif (Table 2, Gene list).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioinformatic analysis described in the manuscript and shown in Figure 4\u2014figure supplement 1B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "8bd0cb4b-1d8f-48b4-84b1-52ff28d86063",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C91",
+      "claim": "It is possible that Brm\u2013Erm complex results in a unique configuration of the chromatin 'landscape' in INPs to prevent INP dedifferentiation into neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "As there are many genes that are potentially co-occupied by Brm and Erm, it is possible that Brm\u2013Erm complex results in a unique configuration of the chromatin 'landscape' in INPs to prevent INP dedifferentiation into neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the mechanism of action.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "44229f9d-b1af-461e-a335-3734f4c9fe81",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C92",
+      "claim": "Disruption of chromatin remodelers may cause widespread changes to the transcriptome, thus amplifying the effect of the single genetic mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, disruption of chromatin remodelers may cause widespread changes to the transcriptome, thus amplifying the effect of the single genetic mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the consequences of disrupting chromatin remodelers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "df0f9d07-8555-434f-a935-359a80028197",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C93",
+      "claim": "Most class I HDACs are recruited into large multi-subunit co-repressor complexes for maximal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most class I HDACs are recruited into large multi-subunit co-repressor complexes for maximal activity (Wen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "80854462-c7fa-4e14-bdfd-423e40986dd3",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C94",
+      "claim": "HDAC1 and 2 are found in multiple co-repressor complexes, while to date HDAC3 appears to be uniquely recruited to the SMRT/N-CoR complex.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC1 and 2 are found in multiple co-repressor complexes, while to date HDAC3 appears to be uniquely recruited to the Silencing mediator of retinoic and thyroid receptors (SMRT)/Nuclear receptor co-repressor (N-CoR) complex (Guenther et al., 2000; Li et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "e44d48ca-b261-49bd-891d-0d9006ec8fac",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C95",
+      "claim": "Drosophila HDAC3 is recruited to a novel multi-subunit complex containing Brm and Erm and that this co\u2013repressor complex prevents dedifferentiation of INPs into type II neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that Drosophila HDAC3 is recruited to a novel multi-subunit complex containing Brm and Erm and that this co\u2013repressor complex prevents dedifferentiation of INPs into type II neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by physical association and functional data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "aeff35a9-b9cb-4681-8501-0384b9be6aa8",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C96",
+      "claim": "The SMRT complex appears not to be important for type II neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The SMRT complex appears not to be important for type II neuroblasts, as knockdown of smrter that encodes a core component of the SMRT complex (Heck et al., 2012) neither resulted in any ectopic type II neuroblasts nor enhanced the phenotype of ectopic neuroblasts by brm knockdown (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations that smrter knockdown did not produce relevant phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "dce3771a-8fb0-431b-b963-10764bd7da7e",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C97",
+      "claim": "HDAC3 dramatically enhanced the phenotype of ectopic neuroblast upon loss of brm or snr1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that HDAC3 dramatically enhanced the phenotype of ectopic neuroblast upon loss of brm or snr1, two core components of the Brm complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic interaction experiments showing enhanced phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "90d0e79a-a923-4dc8-b403-c22348a9e575",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C98",
+      "claim": "HDACs are typically recruited by oncogenic protein complexes in lymphoma and leukemia and HDAC3 inhibitors are synergistic or additive with anticancer agents for therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs are typically recruited by oncogenic protein complexes in lymphoma and leukemia and HDAC3 inhibitors are synergistic or additive with anticancer agents for therapeutics (Dokmanovic et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "6eb4abac-1dbb-4879-b08c-74aec2472c59",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C99",
+      "claim": "The finding that HDAC3 functions cooperatively with the Brm complex in suppressing dedifferentiation of INPs into neuroblasts and induces tumors in the allograph transplantation revealed an unexpected potential involvement of HDAC3 in tumor suppression in brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that HDAC3 functions cooperatively with the Brm complex in suppressing suppressing dedifferentiation of INPs into neuroblasts and induces tumors in the allograph transplantation revealed an unexpected potential involvement of HDAC3 in tumor suppression in brain tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings showing HDAC3's role in preventing ectopic neuroblasts and tumor formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "7e8194a4-071f-4d45-96e6-d88788540c3a",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C100",
+      "claim": "brm knockdown can be partially suppressed by loss of notch.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, brm knockdown, similar to erm\u2212 (Weng et al., 2010), can be partially suppressed by loss of notch (Figure 5\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "6cefb363-3c3a-4f84-9385-59f968eb1610",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "claim_id": "C101",
+      "claim": "Simultaneous knockdown of brm and notch in type II neuroblast lineages partially suppressed the ectopic neuroblast phenotype, compared with brm knockdown alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous knockdown of brm and notch in type II neuroblast lineages partially suppressed the ectopic neuroblast phenotype, compared with brm knockdown alone. Type II neuroblast lineages are labeled with Dpn, Ase and CD8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acb755a9-7d34-4dad-bee4-3773e957ffa4",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Loss of Brm function specifically causes ectopic neuroblast formation in type II but not type I neuroblast lineages. Multiple brm alleles and RNAi knockdown produce 4-7 ectopic neuroblasts per type II clone, while type I clones remain normal with a single neuroblast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C30 provide converging evidence from multiple experimental approaches (RNAi screen, MARCM clones with two different alleles, rescue experiments, and type II-specific driver) all showing consistent ectopic neuroblast phenotypes specifically in type II lineages. The quantitative data, rescue experiments (C28), and lineage specificity (C24) strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "d03a4659-1d8c-4a56-85e0-69ee2010ba21",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Brm functions cell-autonomously in INPs to prevent their dedifferentiation back into neuroblasts. Loss of brm reduces mature INPs while maintaining or increasing immature INPs, and INP-specific brm knockdown produces ectopic neuroblasts in 42.5% of clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 demonstrate the mechanism through complementary approaches: quantitative analysis of INP populations (C31-C32) suggests a maturation defect, and INP-specific knockdown (C34-C35) directly demonstrates cell-autonomous function. The relatively weak phenotype in INP-specific knockdown (C34: 42.5%) is appropriately attributed to incomplete knockdown with supporting evidence (Figure 2\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "bf17aafc-5831-49f9-adc6-ceb0abbfb68b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Brm does not affect apical-basal cell polarity in neuroblasts, as polarity markers aPKC, Numb, and Brat localize normally in brm mutant clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 provide negative control data showing that the ectopic neuroblast phenotype is not due to polarity defects. The examination of multiple established polarity markers and their normal localization in brm mutants supports this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "547ed998-a27d-40c2-b2b9-cd1db71079d9",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple core components of the Brm remodeling complex (Snr1, Bap60, Moira, Bap55) are required to suppress ectopic neuroblast formation in type II lineages, with knockdown or mutation of each component producing similar phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 demonstrate that the phenotype is not specific to Brm but extends to other core complex components. Multiple RNAi lines for snr1 (C39, Figure 1\u2014figure supplement 1D) and MARCM analysis of bap55 (C42-C43) provide independent validation. The consistency across components supports that the intact Brm complex is required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "bcf26281-394c-4fe5-b046-d716e851d95c",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Other chromatin remodeling complexes (NURF and ACF) do not appear to play a role in type II neuroblast regulation, as knockdown of their components did not produce neuroblast overgrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C45 presents negative data, but the authors acknowledge that lack of phenotype could be due to insufficient RNAi knockdown rather than true lack of function. Without validation of knockdown efficiency or use of genetic mutants, this result remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "49fd60bc-05b2-4f12-b684-688f69d2443b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HDAC3 functions cooperatively with the Brm complex to suppress ectopic type II neuroblast formation. Double knockdown of brm and hdac3 produces more severe phenotypes (22.1 neuroblasts/clone) than either single knockdown, and the snr16c hdac36c double mutant shows extensive ectopic neuroblasts specifically in type II lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 demonstrate genetic interaction through multiple approaches: RNAi double knockdown (C46), analysis of a deletion mutant affecting both genes (C48-C49), and appropriate controls showing hdac3 alone has minimal effect (C46, C51). The lineage specificity (C50) and consistency across methods support cooperative function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "53db6ba8-7126-4713-9cfd-a4343dab2b0a",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The snr16c hdac36c double mutant induces malignant tumor-like growth in allograft transplantation assays, with 21% of primary transplants and 70-80% of serial transplants forming tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 demonstrate tumorigenic potential through transplantation assays with appropriate controls (C53: control clones did not proliferate). The serial transplantation data (C54) showing sustained tumor growth across multiple rounds provides strong evidence for malignant transformation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "2c21f933-d4d8-46ee-bf83-cde077d0ae5c",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Brm physically associates with Erm but not with PntP1 in co-immunoprecipitation experiments, suggesting specific interaction with Erm among type II-specific transcription factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 demonstrate physical interaction through reciprocal co-IP experiments (C57-C58) and include an important negative control with PntP1 (C59-C60). The specificity of interaction supports a functional relationship, though the experiments are performed in S2 cells rather than in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "245d0cfb-f178-4594-a011-0d5ef56ef6f8",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Brm associates more strongly with the N-terminal region of Erm (Erm-N) than the C-terminal region (Erm-C) in both co-IP and protein pull-down assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 map the interaction domain using two independent biochemical approaches (co-IP and pull-down). The consistent results across methods and the use of purified proteins in pull-down assays (C62) support direct or stable indirect interaction through the N-terminus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "75b2558f-2f0b-4043-b4f1-5d69cb76b042",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multiple components of the Brm complex (BAP60 and Snr1) physically associate with Erm, with BAP60 showing specificity for Erm-N and Snr1 associating with both Erm-N and Erm-C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 extend the physical interaction analysis to other Brm complex components using reciprocal co-IP (C64-C65 for BAP60, C66 for Snr1) and pull-down assays (C67). The demonstration that multiple complex components associate with Erm supports formation of a multi-protein complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "d1a3ff17-a612-451a-a6df-dd7fa2547f83",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HDAC3 physically associates with both Brm and Erm-N in co-immunoprecipitation and protein pull-down assays, forming a tripartite protein complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 demonstrate physical association of HDAC3 with both Brm (C69-C70) and Erm (C71) through reciprocal co-IP and pull-down assays. The convergence of biochemical and genetic interaction data (from previous result) strongly supports formation of a Brm-HDAC3-Erm complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "1098b173-28be-4ab5-8ea7-60361b95559c",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "brm and erm genetically interact to prevent INP dedifferentiation, as simultaneous knockdown produces dramatically enhanced phenotypes (37.1 neuroblasts/lineage) compared to single knockdowns, and erm knockdown enhances the brmT362 mutant phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 demonstrate genetic interaction through RNAi double knockdown (C73) and enhancement of a hypomorphic allele (C76). The dramatic synergy (C73: 37.1 vs 9.5 neuroblasts) supports functional cooperation. The weak erm RNAi phenotype alone (C74) is appropriately attributed to incomplete knockdown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "6ebdc58b-abe1-45fa-bbdb-97dc2b959566",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Erm overexpression causes premature differentiation of type II neuroblasts, and this effect is partially suppressed in brm mutant background, demonstrating functional dependence on Brm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 provide gain-of-function evidence for the Brm-Erm interaction. The suppression of Erm overexpression phenotype in brm mutants (C78: 37.8% clones retain ectopic neuroblasts vs 0% in wild-type) demonstrates that Erm requires Brm for its full activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "ad8b9fce-3538-4fbf-87b6-3713ed86ca99",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Both snr1 and hdac3 genetically interact with erm to prevent INP dedifferentiation, with double knockdowns producing dramatically enhanced phenotypes (862 neuroblasts/brain for erm+snr1; 565 for erm+hdac3) compared to single knockdowns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 extend the genetic interaction analysis to other complex components (Snr1) and HDAC3. The massive enhancement in double knockdowns (C79: 862 vs 76.6 or 219.5; C81: 565 vs 76.0 or 8) provides strong evidence for cooperative function of all three factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "83dcb9c7-174d-40fe-ba68-76a6f75e0345",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Brm, HDAC3, and Erm function as a repressor complex to prevent INP dedifferentiation into type II neuroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 represents the main conclusion integrating physical association data (C57-C72), genetic interactions (C73-C82), and functional phenotypes (C22-C36). The convergence of biochemical, genetic, and phenotypic evidence strongly supports this model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "4136556d-2d95-444e-a79e-56a2aaefc01b",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Bioinformatic analysis identified a predicted Erm-binding motif present in 202 of 270 known Brm binding sites, suggesting potential co-occupancy of genomic loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C90 present computational analysis predicting Erm binding sites overlap with Brm ChIP-chip data. The methods appear sound (using zinc-finger binding preferences and de novo motif finding), and the enrichment (202/270 sites, AUC 0.73) is statistically significant. However, this remains a prediction requiring experimental validation through ChIP experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "c3620de4-947c-418a-8380-14cb5935d3bd",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Loss of Notch partially suppresses the brm knockdown phenotype, similar to erm mutants, suggesting Brm functions upstream or parallel to Notch signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 demonstrate genetic interaction with Notch signaling through double knockdown experiments. The partial suppression connects Brm function to the known Notch-dependent dedifferentiation pathway, though the mechanistic relationship requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "3c5b6bda-e999-46a6-bb06-2baa18905625",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The Drosophila Brm remodeling complex displays a tumor suppressor-like function in larval brains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is supported by the ectopic neuroblast phenotypes (C22-C44), tumor formation in transplantation assays (C53-C55), and analogy to mammalian systems where SWI/SNF components are tumor suppressors. This represents a major interpretive conclusion of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "b608dfaf-7bd3-4802-b738-2de9039cb891",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Drosophila HDAC3 is recruited to a novel multi-subunit complex containing Brm and Erm that prevents INP dedifferentiation, distinct from the canonical SMRT/N-CoR complex which appears not important for type II neuroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 establish novelty of the HDAC3-containing complex. The physical association data (C69-C71), functional data (C46-C52), and negative result with smrter knockdown (C96) support that HDAC3 functions in a non-canonical complex in this context. However, the smrter result (C96) is based on unpublished data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "6bd5ec31-f0a6-43ce-8a75-c271b2986de7",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "HDAC3 has an unexpected potential involvement in tumor suppression in brain tissue, as it cooperatively suppresses INP dedifferentiation and the double mutant induces tumors in transplantation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 represents an important interpretive conclusion supported by the genetic interaction data (C46-C52), tumor formation (C53-C55), and contrast with HDAC3's typical oncogenic roles in other contexts (C98). This finding challenges conventional understanding of HDAC3 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the type II neuroblast system, chromatin remodeling complexes, and relevance to cancer based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C21, C85-C88, C93-C94, and C98 provide established background knowledge supported by appropriate citations. These contextual claims are well-supported by the literature and provide necessary framework for interpreting the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    },
+    {
+      "id": "1249291b-f3a1-472c-81c0-b456409bd76f",
+      "content_id": "a6db67ce-17ea-4b6e-97d9-81ec9143840f",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Speculative mechanistic proposals about how the Brm-Erm complex might function through chromatin landscape configuration and transcriptome changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89, C91, and C92 are explicitly speculative statements about mechanism. While reasonable hypotheses based on the data, they lack direct experimental support and represent future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:03.077310Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "df9c4c5e-8907-4ca3-9850-02c632668241",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "8a400a36-b2f8-4bf5-abaa-f1042dc0870b",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "b7195d5e-2dcf-46d2-8976-3ef0be9e1e4d",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "4fb0e8cb-0a5c-4109-999d-b3b28facb59f",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "c68416f6-f987-489b-9c3e-f46e3b8bb491",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "7301512c-8277-480b-9583-032baccf31a1",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "6fbdc7ea-31b4-4c11-bd28-8197cdaebd61",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "a7011447-75d6-4b37-8895-758c1f11fd6b",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "80d176b5-4cfc-401b-a183-6d3b236bb4ed",
+      "result_id": "acb755a9-7d34-4dad-bee4-3773e957ffa4"
+    },
+    {
+      "claim_id": "5a48a09f-35a1-4b32-aad6-604d384bb090",
+      "result_id": "d03a4659-1d8c-4a56-85e0-69ee2010ba21"
+    },
+    {
+      "claim_id": "e14bd185-c362-48b9-bf18-98c552b6cad9",
+      "result_id": "d03a4659-1d8c-4a56-85e0-69ee2010ba21"
+    },
+    {
+      "claim_id": "dd84c6f4-e5c6-4ac5-93ae-77d879cef5ed",
+      "result_id": "d03a4659-1d8c-4a56-85e0-69ee2010ba21"
+    },
+    {
+      "claim_id": "52c792e5-967b-4f2d-bc50-c86923173440",
+      "result_id": "d03a4659-1d8c-4a56-85e0-69ee2010ba21"
+    },
+    {
+      "claim_id": "6962348f-0e1f-487c-9562-cb54d8a846bb",
+      "result_id": "d03a4659-1d8c-4a56-85e0-69ee2010ba21"
+    },
+    {
+      "claim_id": "d1a2b3af-2ec7-4a16-815b-daabf828a57a",
+      "result_id": "d03a4659-1d8c-4a56-85e0-69ee2010ba21"
+    },
+    {
+      "claim_id": "715fef88-8f83-457a-a746-6c36e7e668b7",
+      "result_id": "bf17aafc-5831-49f9-adc6-ceb0abbfb68b"
+    },
+    {
+      "claim_id": "5709f41b-9363-4fe3-aee1-7f1f59da0c2f",
+      "result_id": "bf17aafc-5831-49f9-adc6-ceb0abbfb68b"
+    },
+    {
+      "claim_id": "f9a60561-431a-4f8b-aa6c-43812d95ce8b",
+      "result_id": "547ed998-a27d-40c2-b2b9-cd1db71079d9"
+    },
+    {
+      "claim_id": "e54acc4c-1321-4335-b9b7-793df89e15b6",
+      "result_id": "547ed998-a27d-40c2-b2b9-cd1db71079d9"
+    },
+    {
+      "claim_id": "a2b115da-d43b-43ee-9d1b-c0eaefd734dd",
+      "result_id": "547ed998-a27d-40c2-b2b9-cd1db71079d9"
+    },
+    {
+      "claim_id": "b78ca3f6-d4ee-4b4f-8840-634b5667f0ee",
+      "result_id": "547ed998-a27d-40c2-b2b9-cd1db71079d9"
+    },
+    {
+      "claim_id": "3b16120e-f61e-4004-8992-b8cd901f353f",
+      "result_id": "547ed998-a27d-40c2-b2b9-cd1db71079d9"
+    },
+    {
+      "claim_id": "eb1ec4d1-db5f-4a0c-9fe7-be67f79aac0a",
+      "result_id": "547ed998-a27d-40c2-b2b9-cd1db71079d9"
+    },
+    {
+      "claim_id": "ed8e605b-93b3-4679-a147-04bbe5fe3b8a",
+      "result_id": "bcf26281-394c-4fe5-b046-d716e851d95c"
+    },
+    {
+      "claim_id": "2a4d57be-5437-4d50-a8d5-70a8ccd2227c",
+      "result_id": "49fd60bc-05b2-4f12-b684-688f69d2443b"
+    },
+    {
+      "claim_id": "3bbf2fae-6275-4a39-bd05-173b3ef93a92",
+      "result_id": "49fd60bc-05b2-4f12-b684-688f69d2443b"
+    },
+    {
+      "claim_id": "1884e8df-4de6-4cdf-9b0a-06867b6c0ea6",
+      "result_id": "49fd60bc-05b2-4f12-b684-688f69d2443b"
+    },
+    {
+      "claim_id": "a25a9f54-888a-4e65-9ee1-91f2e64dbf44",
+      "result_id": "49fd60bc-05b2-4f12-b684-688f69d2443b"
+    },
+    {
+      "claim_id": "e051065c-cc01-4c69-a59b-3b094392c8f0",
+      "result_id": "49fd60bc-05b2-4f12-b684-688f69d2443b"
+    },
+    {
+      "claim_id": "a882b05b-45e1-473b-978f-13d5c72d142f",
+      "result_id": "49fd60bc-05b2-4f12-b684-688f69d2443b"
+    },
+    {
+      "claim_id": "03284bc4-2b45-45d0-9be9-4e7f595b5e06",
+      "result_id": "49fd60bc-05b2-4f12-b684-688f69d2443b"
+    },
+    {
+      "claim_id": "7056ea76-24ab-40b7-a1e0-47fc033a54aa",
+      "result_id": "53db6ba8-7126-4713-9cfd-a4343dab2b0a"
+    },
+    {
+      "claim_id": "dad17510-8a2d-4317-abda-acf4ff7a0a46",
+      "result_id": "53db6ba8-7126-4713-9cfd-a4343dab2b0a"
+    },
+    {
+      "claim_id": "c5eeaa79-492f-435c-92b3-36bf6105f680",
+      "result_id": "53db6ba8-7126-4713-9cfd-a4343dab2b0a"
+    },
+    {
+      "claim_id": "e17fd710-912d-45ef-a8a8-b084807a2188",
+      "result_id": "2c21f933-d4d8-46ee-bf83-cde077d0ae5c"
+    },
+    {
+      "claim_id": "9d43f1d3-c69d-4c51-a8cd-4be1ae9c0e3e",
+      "result_id": "2c21f933-d4d8-46ee-bf83-cde077d0ae5c"
+    },
+    {
+      "claim_id": "b2319ce7-bec6-4fe2-9c22-1e5e12a21e69",
+      "result_id": "2c21f933-d4d8-46ee-bf83-cde077d0ae5c"
+    },
+    {
+      "claim_id": "01d04e29-e615-4c1d-9895-2f9eacd2a1ac",
+      "result_id": "2c21f933-d4d8-46ee-bf83-cde077d0ae5c"
+    },
+    {
+      "claim_id": "bdbe6cb8-c1fa-4131-8241-7c3036338692",
+      "result_id": "2c21f933-d4d8-46ee-bf83-cde077d0ae5c"
+    },
+    {
+      "claim_id": "15d0736a-4d28-468f-9f9f-b1a1ad1e12d7",
+      "result_id": "245d0cfb-f178-4594-a011-0d5ef56ef6f8"
+    },
+    {
+      "claim_id": "d909bca2-4a18-4b21-b307-1c528cf96179",
+      "result_id": "245d0cfb-f178-4594-a011-0d5ef56ef6f8"
+    },
+    {
+      "claim_id": "bd8fc527-d7ad-4aeb-b2cd-761a88ae2bbc",
+      "result_id": "245d0cfb-f178-4594-a011-0d5ef56ef6f8"
+    },
+    {
+      "claim_id": "ae337091-a49b-4be6-8c4c-f4bef2b9810d",
+      "result_id": "75b2558f-2f0b-4043-b4f1-5d69cb76b042"
+    },
+    {
+      "claim_id": "8a78d4a8-f4c6-473f-9702-ab85de22b675",
+      "result_id": "75b2558f-2f0b-4043-b4f1-5d69cb76b042"
+    },
+    {
+      "claim_id": "af7a4f03-eb6b-40f8-b0b5-cf866bba0e91",
+      "result_id": "75b2558f-2f0b-4043-b4f1-5d69cb76b042"
+    },
+    {
+      "claim_id": "2fcc6c95-3ef1-466c-8a7a-7563bc453d5f",
+      "result_id": "75b2558f-2f0b-4043-b4f1-5d69cb76b042"
+    },
+    {
+      "claim_id": "604fa2d1-022b-4628-9397-c32d16bdd8a8",
+      "result_id": "75b2558f-2f0b-4043-b4f1-5d69cb76b042"
+    },
+    {
+      "claim_id": "a9483d99-fe29-4a9f-98a3-2bbde9af0241",
+      "result_id": "d1a3ff17-a612-451a-a6df-dd7fa2547f83"
+    },
+    {
+      "claim_id": "2f7cd1c2-a399-413c-8f6f-a6612d295e8b",
+      "result_id": "d1a3ff17-a612-451a-a6df-dd7fa2547f83"
+    },
+    {
+      "claim_id": "a29d76ae-c461-4b30-8883-64deb487175d",
+      "result_id": "d1a3ff17-a612-451a-a6df-dd7fa2547f83"
+    },
+    {
+      "claim_id": "0eaf56c6-56a0-4c25-b529-199ae26c1547",
+      "result_id": "d1a3ff17-a612-451a-a6df-dd7fa2547f83"
+    },
+    {
+      "claim_id": "0a8861cf-30ae-4561-9673-01b682a94ead",
+      "result_id": "1098b173-28be-4ab5-8ea7-60361b95559c"
+    },
+    {
+      "claim_id": "7fa53782-1f00-4cc9-bb7b-29729a3df174",
+      "result_id": "1098b173-28be-4ab5-8ea7-60361b95559c"
+    },
+    {
+      "claim_id": "1474c8ec-f78c-4e3b-a4ec-317a7b00ff9c",
+      "result_id": "1098b173-28be-4ab5-8ea7-60361b95559c"
+    },
+    {
+      "claim_id": "43f49e97-5356-4ad1-ad64-e60e186a14bb",
+      "result_id": "1098b173-28be-4ab5-8ea7-60361b95559c"
+    },
+    {
+      "claim_id": "157e2598-a40b-4ed0-8dd3-3d0fb506a53b",
+      "result_id": "6ebdc58b-abe1-45fa-bbdb-97dc2b959566"
+    },
+    {
+      "claim_id": "ce138426-6c4d-4f5b-8305-44d28634153a",
+      "result_id": "6ebdc58b-abe1-45fa-bbdb-97dc2b959566"
+    },
+    {
+      "claim_id": "6a84a021-13b2-4557-8603-fdaab9c93b01",
+      "result_id": "ad8b9fce-3538-4fbf-87b6-3713ed86ca99"
+    },
+    {
+      "claim_id": "7140fa56-5456-4c5f-b016-97cd261dcfee",
+      "result_id": "ad8b9fce-3538-4fbf-87b6-3713ed86ca99"
+    },
+    {
+      "claim_id": "3dd6a47c-2b3c-4a0d-b699-44409c5fe68b",
+      "result_id": "ad8b9fce-3538-4fbf-87b6-3713ed86ca99"
+    },
+    {
+      "claim_id": "8cdf0ce4-c3bc-417f-8866-a95fadc23452",
+      "result_id": "ad8b9fce-3538-4fbf-87b6-3713ed86ca99"
+    },
+    {
+      "claim_id": "90a02c53-97ca-45e2-8231-b12868a56473",
+      "result_id": "83dcb9c7-174d-40fe-ba68-76a6f75e0345"
+    },
+    {
+      "claim_id": "9c0cfe51-5cb4-48f7-85b2-a852c688940e",
+      "result_id": "4136556d-2d95-444e-a79e-56a2aaefc01b"
+    },
+    {
+      "claim_id": "14dbb378-4136-4a19-b17c-def0e99d9de2",
+      "result_id": "4136556d-2d95-444e-a79e-56a2aaefc01b"
+    },
+    {
+      "claim_id": "7e8194a4-071f-4d45-96e6-d88788540c3a",
+      "result_id": "c3620de4-947c-418a-8380-14cb5935d3bd"
+    },
+    {
+      "claim_id": "6cefb363-3c3a-4f84-9385-59f968eb1610",
+      "result_id": "c3620de4-947c-418a-8380-14cb5935d3bd"
+    },
+    {
+      "claim_id": "6eeda099-1f33-4cbd-9081-aff4a09407ca",
+      "result_id": "3c5b6bda-e999-46a6-bb06-2baa18905625"
+    },
+    {
+      "claim_id": "e44d48ca-b261-49bd-891d-0d9006ec8fac",
+      "result_id": "b608dfaf-7bd3-4802-b738-2de9039cb891"
+    },
+    {
+      "claim_id": "aeff35a9-b9cb-4681-8501-0384b9be6aa8",
+      "result_id": "b608dfaf-7bd3-4802-b738-2de9039cb891"
+    },
+    {
+      "claim_id": "dce3771a-8fb0-431b-b963-10764bd7da7e",
+      "result_id": "b608dfaf-7bd3-4802-b738-2de9039cb891"
+    },
+    {
+      "claim_id": "6eb4abac-1dbb-4879-b08c-74aec2472c59",
+      "result_id": "6bd5ec31-f0a6-43ce-8a75-c271b2986de7"
+    },
+    {
+      "claim_id": "73435928-3960-468a-8c81-f210e6f36a9e",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "a650facc-adcf-495e-85e3-1e01ee8d8f88",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "abd35aff-2d4e-445a-93bc-4a3587cd88cc",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "d2c60daa-c8c2-4282-b30a-8cb217da915c",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "b3c294fb-3d95-4711-9145-654e27e836af",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "94f2d7af-c881-4cbf-91ed-cfca6f086dab",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "a959d7e4-7e37-4522-b58d-d60b164f8605",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "169dfb13-1a5c-4c7a-87fb-c7fc5fe5b260",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "88d62eb6-ee6c-4ecc-860b-7479a84389dd",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "04051919-1252-485f-9bfa-194d2c85ffaf",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "9bdccce9-e7b4-46a2-a462-ac3dc06642b3",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "76398d69-5166-4f8e-86da-663b3da7b30b",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "d9ce809c-1b22-47ec-ada1-c33f9aafb9b6",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "9f6cac94-68c9-40be-bb06-fe075975fefc",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "8b6d5972-129f-4ac8-a6ea-0cfe7a3a974c",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "7a4ed54b-22a7-41f2-911e-4a9307573375",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "c8cc586c-c8d4-4f72-9837-ce93da45f4b4",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "ff61993a-0b1d-49bc-be9e-b2500b14b6fb",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "d257d03d-40a3-4a7d-b326-4aa1c0be84c2",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "24d3076c-a177-4f98-a32f-d635d4ed17e6",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "df0f9d07-8555-434f-a935-359a80028197",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "80854462-c7fa-4e14-bdfd-423e40986dd3",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "90d0e79a-a923-4dc8-b403-c22348a9e575",
+      "result_id": "361ac53c-d3ba-4376-a2d5-77fc97a8ffa3"
+    },
+    {
+      "claim_id": "fad62e7c-3b6d-4dcd-8a12-7ebbf67fdbc2",
+      "result_id": "1249291b-f3a1-472c-81c0-b456409bd76f"
+    },
+    {
+      "claim_id": "8bd0cb4b-1d8f-48b4-84b1-52ff28d86063",
+      "result_id": "1249291b-f3a1-472c-81c0-b456409bd76f"
+    },
+    {
+      "claim_id": "44229f9d-b1af-461e-a335-3734f4c9fe81",
+      "result_id": "1249291b-f3a1-472c-81c0-b456409bd76f"
+    }
+  ],
+  "comparisons": []
+}

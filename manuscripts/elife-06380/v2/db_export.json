@@ -1,0 +1,2188 @@
+{
+  "submission": {
+    "id": "174c80a9-499b-4b0c-8a27-56cd2b51df7a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:41:37.267291Z",
+    "updated_at": "2025-11-28T22:41:37.267291Z"
+  },
+  "content": [
+    {
+      "id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "submission_id": "174c80a9-499b-4b0c-8a27-56cd2b51df7a",
+      "content_type": "manuscript",
+      "content_text": "# 2.8 \u00c5 resolution reconstruction of the Thermoplasma acidophilum 20S proteasome using cryo-electron microscopy\n\n## Authors\n\n- Melody G Campbell<sup>1</sup>\n- David Veesler<sup>1</sup>\n- Anchi Cheng<sup>1</sup>\n- Clinton S Potter<sup>1</sup>\n- Bridget Carragher<sup>1</sup> \u2020\n\n### Affiliations\n\n1. National Resource for Automated Molecular Microscopy, The Scripps Research Institute La Jolla United States\n2. Department of Integrative Structural and Computational Biology The Scripps Research Institute La Jolla United States\n3. Department of Biochemistry University of Washington Seattle United States\n4. New York Structural Biology Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent developments in detector hardware and image-processing software have revolutionized single particle cryo-electron microscopy (cryoEM) and led to a wave of near-atomic resolution (typically \u223c3.3 \u00c5) reconstructions. Reaching resolutions higher than 3 \u00c5 is a prerequisite for structure-based drug design and for cryoEM to become widely interesting to pharmaceutical industries. We report here the structure of the 700 kDa Thermoplasma acidophilum 20S proteasome (T20S), determined at 2.8 \u00c5 resolution by single-particle cryoEM. The quality of the reconstruction enables identifying the rotameric conformation adopted by some amino-acid side chains (rotamers) and resolving ordered water molecules, in agreement with the expectations for crystal structures at similar resolutions. The results described in this manuscript demonstrate that single particle cryoEM is capable of competing with X-ray crystallography for determination of protein structures of suitable quality for rational drug design.\n\n## Introduction\n\nSingle-particle cryo-electron microscopy (cryoEM) is currently undergoing a revolution due to the recent development of a new generation of detectors using the complementary metal-oxide semiconductors (CMOS) technology (Kuhlbrandt, 2014). These cameras directly detect incoming electrons without the need for a scintillator converting the electrons into photons and are characterized by improved detective quantum efficiencies at all spatial frequencies compared to traditional charge-coupled device cameras (CCDs) or photographic films (Ruskin et al., 2013; McMullan et al., 2014). The fast read-out rate of these devices also allows for recording movies composed of multiple frames during typical image exposure times enabling correction of beam-induced sample motion and stage drift to reduce image blurring (Brilot et al., 2012; Shigematsu and Sigworth, 2013).\n\nSeveral algorithms have been developed for tracking beam-induced motion and stage drift in movies recorded with direct detectors (Campbell et al., 2012; Bai et al., 2013; Li et al., 2013). These data processing strategies have been used to produce a multitude of high-resolution reconstructions of samples in the MDa mass range (Amunts et al., 2014; Fernandez et al., 2014; Voorhees et al., 2014; Wong et al., 2014; Allegretti et al., 2014) as well as of protein complexes once considered too small for single-particle cryoEM (\u2264300 kDa) (Cao et al., 2013; Liao et al., 2013; Lu et al., 2014). These achievements constitute a tremendous leap forward for single-particle cryoEM. This method can now compete with X-ray crystallography for determination of protein structures at near-atomic resolution while also offering the unique advantage of enabling the characterization of heterogeneous or flexible protein complexes (Scheres et al., 2007). High-resolution cryoEM can thus provide information about protein dynamics, which is key to understanding the functions of many macromolecular complexes.\n\nWe report here the structure of the Thermoplasma acidophilum 20S proteasome (T20S), determined at 2.8 \u00c5 resolution by single-particle cryoEM. This enzyme is a key component of the cell metabolism carrying out degradation of ubiquitinylated polypeptides to regulate the concentration of specific proteins as well as eliminating misfolded products. The T20S proteasome forms a 700 kDa complex comprising 14 \u03b1 and 14 \u03b2 subunits organized with D7 symmetry. Our reconstruction enables identification of the conformational preference of some amino-acid side chains (rotamers) and resolves ordered water molecules, in agreement with the expectations for crystal structures at similar resolutions. These outcomes constitute a significant step forward in overcoming the resolution limit achievable by single particle cryoEM, which can now provide protein structures of suitable quality for rational drug design.\n\n## Results and discussion\n\nCareful alignment of the microscope was performed before data collection to ensure Thon rings were visible up to \u223c2.5 \u00c5 resolution in the power spectrum of micrographs collected over amorphous carbon using the same conditions as for data acquisition. Prior to beginning data collection, coma-free alignment was carried out to align the beam to the column optical axis with the assistance of a Zemlin tableau (Glaeser et al., 2011). Automated data collection was carried out using Leginon (Suloway et al., 2005) to control both the FEI Titan Krios microscope and the Gatan K2 Summit camera operated in \u2018super-resolution\u2019 mode. A subset of micrographs was automatically selected using a filter built into the Appion pipeline (Lander et al., 2009) that accepts images based on the resolution limit to which Thon rings can be confidently identified in the image power spectra. This is achieved by computing cross-correlation coefficients (CC) between the 1-D radially averaged power spectrum of each micrograph and the calculated Contrast Transfer Function (CTF). Only those micrographs showing a CC \u2265 80% at a resolution of 4 \u00c5 or better were retained for further processing. One of these micrographs and its corresponding power spectrum are shown in Figure 1. Using this selection criterion, 196 micrographs were selected, from which a total of 87,066 particles were automatically picked using FindEM (Roseman, 2004). These movies have been deposited in the EMPIAR database with the accession number EMPIAR-10025. Particle images were sorted and selected based on mean and standard deviation pixel values within Appion (Lander et al., 2009) and using Xmipp cl2d reference-free alignment and clustering (Sorzano et al., 2010) to yield a stack of 59,864 particles containing both top and side views that were then used for refinement and reconstruction.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06380/elife-06380-fig1-v2.jpg)\n\n**Figure 1.:** (A) Micrograph of T20S after movie-frame alignment. Inset: Reference free 2D class averages showing a side view (left) and a top view (right). (B) Thon rings are visible well beyond 4 \u00c5\u22121 resolution in the power spectrum of the micrograph shown in (A).\n\nThe selected substack of T20S particles was refined starting from a low-pass filtered initial model to high resolution using the gold standard procedure implemented in Relion (Scheres and Chen, 2012; Scheres, 2012b; Bai et al., 2013). This projection-matching refinement step provided a reconstruction at 2.98 \u00c5 resolution (estimated angular accuracy 1.3\u00b0) using all 38 movie frames and the full exposure of 53 e\u2212/\u00c52. Previous measurements using catalase crystals have suggested that exposures as low as 11 e\u2212/\u00c52 might be necessary to attain 3 \u00c5 maps (Baker and Rubinstein, 2010; Baker et al., 2010). However, the loss of signal due to radiation must be balanced against the need for sufficient contrast in the images to allow for accurate alignment of the individual particles. Collecting data in movie mode using direct detectors has profoundly changed the way data is acquired and processed: many reported reconstructions have been obtained after eliminating sub-optimal frames (Li et al., 2013) or applying a frequency-dependent weighting scheme to the frames (Scheres, 2014). We emphasize that we were able to obtain a T20S reconstruction at 2.98 \u00c5 resolution using the full exposure of 53 e\u2212/\u00c52 and prior to weighting individual movie frames. We obtained similar results in determining the structure of an icosahedral virus to 3.7 \u00c5 resolution using an exposure of 38 e\u2212/\u00c52 with a microscope operated at 200 kV (Campbell et al., 2014). These results contrast with previous measurements and demonstrate that useful high-resolution information may survive much higher exposures than previously thought for single particle cryoEM.\n\nWe subsequently used the particle polishing procedure implemented in version 1.3 of the Relion software to account for individual beam-induced particle translations and to calculate a frequency-dependent weight for the contribution of individual movie frames to the reconstruction (Scheres, 2014). Plots of the relative B factor and Cf intersect, derived from the Guinier plots for each single frame reconstruction, along with the corresponding frequency-dependent weights are presented in Figure 2. The first frame of each movie featured a large movement in comparison with the following ones, which we and others interpret as the initial settling of beam-induced motion during exposure. This processing scheme improved the resolution of the reconstruction to 2.83 \u00c5 (estimated angular accuracy 1.0\u00b0), and this was supported by a significant enhancement of map quality.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06380/elife-06380-fig2-v2.jpg)\n\n**Figure 2.:** (A) Gold-standard FSC curves for the T20S reconstructions before and after particle polishing as well as after excluding particles based on the uncertainty of the angular assignments. Estimated resolutions are 2.98 \u00c5, 2.83 \u00c5, and 2.81 \u00c5, respectively. The FSC curve computed between the atomic model and the test map is shown in blue. The FSC reaches 0.5 at 2.86 \u00c5 resolution, in agreement with the resolution estimated by gold standard refinement in Relion. (B) Estimated values for Bf (top) and Cf (bottom) during the particle polishing procedure. (C) Frequency-dependent relative weights for all movie frames. The first, third, and final movie frames are highlighted in green, red, and blue, respectively.\n\nIn a final round of refinement, we discarded particle images with the greatest angular uncertainty based on the height of the probability distributions at their maximum. An empirically determined cutoff of 0.07 was used, which gave a stack of 49,954 particle images (699,356 asymmetric units). Refinement of this smaller dataset under otherwise identical conditions produced a map with a slightly improved resolution of 2.81 \u00c5 (estimated angular accuracy 0.8\u00b0). This result suggests that analyzing the probability distributions over all orientations is a convenient way of discarding particles that are not contributing positively to the reconstruction (\u223c10,000 particles in this case). This map has been deposited in the EMDB with the accession number EMD-6287.\n\nWe fitted the T20S atomic coordinates obtained from a crystal structure at 1.9 \u00c5 resolution (Forster et al., 2005) into our cryoEM reconstruction. The density is continuous from residues 13 to 233 and residues 1 to 203 for \u03b1 and \u03b2 subunits, respectively, with most side chains being resolved (Figure 3). In line with previous studies (Allegretti et al., 2014; Bartesaghi et al., 2014), many negatively charged residues had lost their carboxylate groups, likely due to radiation sensitivity. Our T20S reconstruction shows many features supporting the resolution claim of 2.8 \u00c5. Differences between the crystal structure and the cryoEM reconstruction are easily discernable at the level of the backbone and can be adjusted accordingly using real-space refinement procedures. The rotameric conformations of many amino-acid side chains are clearly visible in the electron potential map (Figure 4) and reveal differences with a crystal structure of the T20S determined at 3.4 \u00c5 resolution (Lowe et al., 1995). The quality of our reconstruction allows distinguishing between Phe and Tyr amino-acid residues based on the appearance of the density for their side chains (Figure 4), as shown previously (Zhang et al., 2010). The presence of a hydroxyl group para to the phenyl group of Tyr residues unambiguously establishes the presence of the Tyr residue as opposed to the Phe residue in our reconstruction. This level of resolvability is decisive for de novo building of atomic models of proteins of unknown structures.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06380/elife-06380-fig3-v2.jpg)\n\n**Figure 3.:** (A) Isosurface representation of the T20S map. (B) An \u03b1-helical segment from one \u03b2 subunit is shown in ribbon representation docked into the corresponding region of the reconstruction. (C) Same \u03b1-helical segment as in (B) shown in atom representation docked into the corresponding region of the reconstruction. Several water molecules are visible.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06380/elife-06380-fig4-v2.jpg)\n\n**Figure 4.:** (A) Different rotameric conformations adopted by the Met-14 side chain (\u03b2-subunit) between a crystal structure of the T20S determined at 3.4 \u00c5 resolution (left, PDB 1PMA) and the EM density (right). (B) Unambiguous establishment of the rotameric conformations of two different isoleucine residues: Ile70 (left, \u03b1-subunit) and Ile37 (right, \u03b2-subunit). (C) The additional density accounting for the hydroxyl group of tyrosine side chains (left, Tyr132, \u03b1-subunit) is prominent when compared to phenylalanine side chains (right, Phe91, \u03b1-subunit). (D) Numerous water molecules are resolved in the T20S cryoEM map. Left: a water molecule hydrogen-bonded to the carbonyl group of Val87 (\u03b1-subunit). Right: a water molecule hydrogen-bonded to the side chain hydroxyl of Thr102 (\u03b1-subunit). The cross-validation of the assignment of these water molecules using gold-standard half maps can be found in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06380/elife-06380-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Water molecule hydrogen-bonded to Val87. Left: The EM density reconstructed using all particles (49,954). Middle and right: gold standard half-maps. (B) Water molecule hydrogen-bonded to Thr102. Left: EM density reconstructed using all particles. Middle and right: gold standard half-maps. In each case, the density attributed to water is present in both half maps confirming that it is not due to random noise. Furthermore the position of these water molecules matches those observed in a crystal structure of the proteasome determined to 1.9 \u00c5 resolution (PDB 1YAR).\n\nIn X-ray crystallography, when a structure is determined at a resolution significantly better than 3 \u00c5, one expects to observe ordered water molecules interacting with amino-acid residues located at the protein surface (Carugo and Bordo, 1999). The higher the resolution the more ordered water molecules are visible. Analysis of our T20S reconstruction at 2.8 \u00c5 resolution revealed that many ordered water molecules are resolved, in agreement with the estimated resolution. They are positioned in appropriate chemical environments and within hydrogen-bonding distance (2.8\u20133.5 \u00c5) of the surrounding atoms with which they interact. All the reconstructions described in this manuscript used the RELION gold standard refinement procedure (Scheres and Chen, 2012). In this protocol, two half datasets are refined completely independently throughout, and after each cycle the new reference volumes are low-pass filtered to the resolution where the Fourier shell correlation (FSC) between the two volumes drops to 0.143 (Rosenthal and Henderson, 2003), thus preventing overfitting of noise. As a result, the noise present in each independent map is not correlated. We were therefore able to cross-validate our assignment of water molecules as they are accounted for by the density in both maps derived from half datasets despite the reduced number of particle images contributing to each map (Figure 4\u2014figure supplement 1) (DiMaio et al., 2013). Finally, the 1.9 \u00c5 crystal structure of the T20S proteasome also unequivocally supports the assignment of the water molecules identified in the cryoEM map as an independent cross-validation metric (Forster et al., 2005).\n\nThe structure presented here demonstrates that cryoEM is now capable of producing structures at better than 3 \u00c5 resolution, which is a prerequisite for structure-based drug design (Anderson, 2003). The possibility to resolve the conformational preference of some amino-acid side chains (rotamers) and identify ordered water molecules opens new horizons for cryoEM and structural biology in general. This level of information is required for drug lead design as these chemical entities mediate key biological processes such as catalysis, protein/protein and protein/substrate recognition. State-of-the-art cryoEM is now in a position to expedite structure-based drug discovery and will likley become increasingly important for pharmaceutical industries.\n\nWe believe several factors contributed to obtaining the resolution reported here. The proteasome itself is a rigid and homogenous sample, which is ideal for high-resolution reconstruction. For data collection, we used a relatively high electron dose, which may have been key to properly aligning particles. Furthermore, we used the mechanical stage instead of beam-tilt to move to targets for high magnification exposure in order to avoid introducing any phase shift in the images. Images of each square and each hole were examined by-eye for perceived ice thickness and only those which were judged to have very thin ice were selected for final high magnification exposures. Finally, we benefited from the availability of algorithmic advances (projection matching, particle polishing), which allows optimization of the doses used for alignment and final reconstruction.\n\nAs the potential of cryoEM has been steadily growing in the past few years, the prospect of achieving reconstructions at \u223c2 \u00c5 resolution is very attractive. Remarkably, we used only 10% of the particle images present in the dataset discussed in this manuscript. Including more particle images could further improve the resolution of the T20S reconstruction and experiments are ongoing to determine if this is the case. Finally, 3D classification approaches have also proven useful for sorting particle images (Scheres, 2012a; Lyumkis et al., 2013) and implementing such approaches may also help to improve the final resolution of our reconstruction.\n\n## Materials and methods\n\n### Data collection\n\nThe T. acidophilum 20S proteasome was expressed and purified from Escherichia coli according to established protocols (Rabl et al., 2008; Yu et al., 2010). Three microliters of sample were applied to a 1.2/1.3 C-flat grid (Protochips, Raleigh, North Carolina), which had been plasma-cleaned for 6 s at 20 mA using a Gatan Solarus (Pleasanton, California). Thereafter, grids were plunge-frozen in liquid ethane using a Gatan CP3 and a blotting time of 2.5 s. Data were acquired using an FEI Titan Krios (Hillsboro, Oregon) transmission electron microscope operated at 300 kV and equipped with a Gatan K2 Summit direct detector. The extraction voltage was 4500, the gun lens setting 3 and the spotsize 8. A condenser aperture of 70 \u00b5m and an objective aperture of 100 \u00b5m were used. Coma-free alignment was performed using the Leginon software (Glaeser et al., 2011). Automated data collection was carried out using Leginon (Suloway et al., 2005) to control both the FEI Titan Krios (used in microprobe mode at a nominal magnification of 22,500\u00d7) and the Gatan K2 Summit operated in \u2018super-resolution\u2019 mode (super-resolution pixel size: 0.6575 \u00c5) at a dose rate of \u223c9 counts/physical pixel/s which corresponds to \u223c12 electrons/physical pixel/s (when accounting for coincidence loss). We waited 40 s after physically moving the stage to each new position to allow settling before acquiring a new video. A single movie was taken per hole. Each movie had a total accumulated exposure of 53 e\u2212/\u00c52 fractionated into 38 frames of 200 ms (yielding movies of 7.6 s duration). A dataset of \u223c1000 micrographs was acquired for the T20S in a single session using a defocus range between 0.9 and 2.4 \u00b5m.\n\n### Data processing\n\nWhole frame alignment was carried out using the software developed by Li et al. (2013), which is integrated into the Appion pipeline (Lander et al., 2009), to account for stage drift and beam-induced motion. We used a frame offset of seven along with a B factor of 1000 pixels2 for aligning the movie frames (Li et al., 2013). The parameters of the microscope contrast transfer function were estimated for each micrograph using ctffind3 (Mindell and Grigorieff, 2003). Particles were automatically picked using FindEM (Roseman, 2004) integrated into the Appion pipeline (Lander et al., 2009) before sorting and selection based on mean and standard deviation pixel values and using Xmipp cl2d reference-free alignment and clustering (Sorzano et al., 2010). Extraction of particle images for projection-matching refinements was performed using Relion 1.3 with an initial box size of 448 pixels2 and applying a windowing operation in Fourier space to downsize the particles images to yield a final box size of 300 pixels2 (corresponding to a pixel size of 0.98 \u00c5). The final pixel size was chosen to optimize the balance between the Nyquist frequency limit and the memory requirements for computational steps. Projection-matching refinements were performed with the Relion software (Bai et al., 2013; Scheres, 2012a, 2012b, 2014) imposing D7 symmetry. Reported resolutions are based on the gold-standard FSC = 0.143 criterion (Scheres and Chen, 2012) and Fourier shell correction curves were corrected for the effects of soft masking by high-resolution noise substitution (Chen et al., 2013).\n\n### Model building\n\nThe T20S crystal structure (PDB 1YAR) was rigid body fitted into the cryoEM map using UCSF Chimera (Goddard et al., 2007) and then iteratively refined using Rosetta (DiMaio et al., 2009) and Coot (Emsley et al., 2010). We used Rosetta tools recently developed for cryoEM (DiMaio et al., 2015; Wang et al., 2015) to perform fragment rebuilding, torsion angles and cartesian minimization of atomic positions and B factor refinement. At each iteration, the best model was visually inspected in Coot and a few amino acid side chain rotamers were manually adjusted to best fit the density. Water molecules were also manually added using Coot after the first iteration of Rosetta refinement. Rosetta and Coot refinements were performed using a training map corresponding to one of the two maps generated by the gold-standard refinement procedure in Relion. The second map (testing map) was used only for calculation of the FSC compared to the atomic model (DiMaio et al., 2013). The quality of the final model was analyzed with Molprobity (Chen et al., 2010).\n",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "5e927afc-fecf-4e24-b5be-e12d6113531c",
+      "submission_id": "174c80a9-499b-4b0c-8a27-56cd2b51df7a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sjors HW Scheres, Medical Research Council Laboratory of Molecular Biology , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06380.008](https://doi.org/10.7554/eLife.06380.008)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201c2.8 \u00c5 resolution reconstruction of the Thermoplasma acidophilum 20 S proteasome using cryo-electron microscopy\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Sjors Scheres (Reviewing editor) and Hong Zhou (peer reviewer). A third reviewer remains anonymous.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nWhere many other cryo-EM reconstructions have recently been solved at just above 3 \u00c5 resolution, the 20S proteasome structure at 2.8 \u00c5 resolution in this paper goes significantly beyond that. There was strong consensus among the reviewers that this structure represents another significant step forward in the recent, fast advances in cryo-EM structure determination, and that therefore the paper should be published in eLife as soon as possible.\n\nThe following two things were discussed that would improve the manuscript.\n\n1) All 3 reviewers mentioned in some form that it would be good if you could elaborate somewhat on the obtained atomic model. Are there any differences in the rotamer conformations between your cryo-EM structure and the 1.9 \u00c5 X-ray structure? And at this resolution do you observe similar effects of radiation damage on specific side chain densities as for example in (Allegretti et al., eLife 3, e01963, 2014; Bartesaghi et al., PNAS 111, 11709-14, 2014), who have shown that the majority of carboxylate chains are missing in cryo-EM maps, supposedly due to their high radiation sensitivity? It would also be useful to see plots of the FSC between the fitted model and the map. Do you think there may be any overfitting of the model at this resolution?\n\n2) In the Discussion, the authors hint that further improvements in the reconstruction may still be possible from this data set using 3D classification approaches. In these times of rapid progress, it would not be good to publish a structure based on a data set, and then later obtain an improved map from the very same data set. It has been observed in multiple studies lately that 3D classification is a powerful tool to select the best particles and thereby improve resolution of cryo-EM maps. As resolution is the main point of this paper, the authors should try their best in getting as high a resolution as possible from this data set. Therefore, they should consider to at least try the classification route.\n\nMinor comments:\n\nSome have argued that using beam-tilt to illuminate multiple areas per hole would prohibit high-resolution structure determination. Therefore, it would be interesting to know whether beam-tilt was used to collect the data, or whether only stage movement was used?\n\nWhat does the following sentence mean? \u201cwe discarded particle images with the greatest angular uncertainty\u201d. And also how did the authors \u201canalyz[e] the probability distributions over all orientations\u201d? In RELION, those distributions are never written out for the user to assess. I suspect the authors applied a cutoff based on the height of the probability distributions at their maximum (rlnMaxValueProbDistribution)? This should be made clearer, and perhaps the authors could describe how the cutoff was chosen.\n\nMany complexes show local variations in resolution. I guess the 20S proteasome is rather rigid, but it would be good to have a local-resolution map (from bsoft or resmap) anyway.\n\nOthers have observed relatively poor densities for negatively charged residues and have blamed radiation damage. How does this look in this higher resolution map? And did these side chains get better from the total-dose map to the radiation-damaged-weighted map after polishing?\n\nIn the Discussion, it would be interesting to hear the authors' opinion on why they got significantly beyond the resolution limits observed by others. Is it only the high number of asymmetric units, combined with a symmetrical, rigid particle? Or is there something that others could/should change in their procedures?\n\nGiven the uniquely high resolution, I would encourage the authors to submit their 197 selected movies to the EMPIAR archive at EMDB, to enable others to learn from these data.\n",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b708dd16-cc22-4b3c-bb1d-357218c52b1e",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C1",
+      "claim": "Recent developments in detector hardware and image-processing software have revolutionized single particle cryo-electron microscopy (cryoEM) and led to a wave of near-atomic resolution (typically \u223c3.3 \u00c5) reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent developments in detector hardware and image-processing software have revolutionized single particle cryo-electron microscopy (cryoEM) and led to a wave of near-atomic resolution (typically \u223c3.3 \u00c5) reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field and is presented as a general statement about recent technological advances.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "bec0248d-b09e-44c0-9bac-8ff99142328d",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C2",
+      "claim": "Reaching resolutions higher than 3 \u00c5 is a prerequisite for structure-based drug design.",
+      "claim_type": "EXPLICIT",
+      "source": "Reaching resolutions higher than 3 \u00c5 is a prerequisite for structure-based drug design and for cryoEM to become widely interesting to pharmaceutical industries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge about the resolution requirements for drug design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "636aea88-5583-4a4a-988e-746363fbde10",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C3",
+      "claim": "The structure of the 700 kDa Thermoplasma acidophilum 20S proteasome (T20S) was determined at 2.8 \u00c5 resolution by single-particle cryoEM.",
+      "claim_type": "EXPLICIT",
+      "source": "We report here the structure of the 700 kDa Thermoplasma acidophilum 20S proteasome (T20S), determined at 2.8 \u00c5 resolution by single-particle cryoEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary experimental finding of the manuscript, supported by the data presented throughout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "adbd8b2f-033e-4d9c-87cd-bbd36ba5e66a",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C4",
+      "claim": "The quality of the 2.8 \u00c5 reconstruction enables identifying the rotameric conformation adopted by some amino-acid side chains (rotamers).",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the reconstruction enables identifying the rotameric conformation adopted by some amino-acid side chains (rotamers) and resolving ordered water molecules, in agreement with the expectations for crystal structures at similar resolutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 4 demonstrating rotamer identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "2eeae160-89df-40ec-af28-45ac6249677a",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C5",
+      "claim": "The 2.8 \u00c5 reconstruction resolves ordered water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the reconstruction enables identifying the rotameric conformation adopted by some amino-acid side chains (rotamers) and resolving ordered water molecules, in agreement with the expectations for crystal structures at similar resolutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3 and 4, demonstrating resolved water molecules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "1e4e9b01-3c53-407f-a425-3b74e12d26cf",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C6",
+      "claim": "Single particle cryoEM is capable of competing with X-ray crystallography for determination of protein structures of suitable quality for rational drug design.",
+      "claim_type": "EXPLICIT",
+      "source": "The results described in this manuscript demonstrate that single particle cryoEM is capable of competing with X-ray crystallography for determination of protein structures of suitable quality for rational drug design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results showing 2.8 \u00c5 resolution with features comparable to crystal structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "7866c9b9-9930-4f71-92a4-76ea3b24079a",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C7",
+      "claim": "Direct electron detectors using CMOS technology have improved detective quantum efficiencies at all spatial frequencies compared to traditional CCDs or photographic films.",
+      "claim_type": "EXPLICIT",
+      "source": "These cameras directly detect incoming electrons without the need for a scintillator converting the electrons into photons and are characterized by improved detective quantum efficiencies at all spatial frequencies compared to traditional charge-coupled device cameras (CCDs) or photographic films (Ruskin et al., 2013; McMullan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "2d652955-81f2-48be-948a-9fd7631c29eb",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C8",
+      "claim": "The fast read-out rate of direct detectors allows for recording movies composed of multiple frames during typical image exposure times enabling correction of beam-induced sample motion and stage drift.",
+      "claim_type": "EXPLICIT",
+      "source": "The fast read-out rate of these devices also allows for recording movies composed of multiple frames during typical image exposure times enabling correction of beam-induced sample motion and stage drift to reduce image blurring (Brilot et al., 2012; Shigematsu and Sigworth, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "c289c569-259f-456b-905b-0043de794f58",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C9",
+      "claim": "Several algorithms have been developed for tracking beam-induced motion and stage drift in movies recorded with direct detectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several algorithms have been developed for tracking beam-induced motion and stage drift in movies recorded with direct detectors (Campbell et al., 2012; Bai et al., 2013; Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "a2a523e4-779c-4249-b975-35ba5429b461",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C10",
+      "claim": "Data processing strategies using motion correction have been used to produce high-resolution reconstructions of samples in the MDa mass range.",
+      "claim_type": "EXPLICIT",
+      "source": "These data processing strategies have been used to produce a multitude of high-resolution reconstructions of samples in the MDa mass range (Amunts et al., 2014; Fernandez et al., 2014; Voorhees et al., 2014; Wong et al., 2014; Allegretti et al., 2014) as well as of protein complexes once considered too small for single-particle cryoEM (\u2264300 kDa) (Cao et al., 2013; Liao et al., 2013; Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior published works.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "524c75f2-a0a0-470d-a186-c846a9cac368",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C11",
+      "claim": "Data processing strategies using motion correction have been used to produce high-resolution reconstructions of protein complexes \u2264300 kDa, once considered too small for single-particle cryoEM.",
+      "claim_type": "EXPLICIT",
+      "source": "These data processing strategies have been used to produce a multitude of high-resolution reconstructions of samples in the MDa mass range (Amunts et al., 2014; Fernandez et al., 2014; Voorhees et al., 2014; Wong et al., 2014; Allegretti et al., 2014) as well as of protein complexes once considered too small for single-particle cryoEM (\u2264300 kDa) (Cao et al., 2013; Liao et al., 2013; Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "9d2e548a-a9b6-4548-87d0-343d29d0b12d",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C12",
+      "claim": "CryoEM can compete with X-ray crystallography for determination of protein structures at near-atomic resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This method can now compete with X-ray crystallography for determination of protein structures at near-atomic resolution while also offering the unique advantage of enabling the characterization of heterogeneous or flexible protein complexes (Scheres et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from recent achievements in the field and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "cf61bbac-bd97-487a-96ca-aa19150953db",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C13",
+      "claim": "CryoEM offers the unique advantage of enabling the characterization of heterogeneous or flexible protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This method can now compete with X-ray crystallography for determination of protein structures at near-atomic resolution while also offering the unique advantage of enabling the characterization of heterogeneous or flexible protein complexes (Scheres et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and established knowledge about cryoEM capabilities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "e597e9f9-20f7-4225-8c32-5b77ea954723",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C14",
+      "claim": "High-resolution cryoEM can provide information about protein dynamics, which is key to understanding the functions of many macromolecular complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution cryoEM can thus provide information about protein dynamics, which is key to understanding the functions of many macromolecular complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the capabilities of cryoEM and established knowledge about the importance of dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "7b92e601-2731-4357-b2f5-703720d54f8c",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C15",
+      "claim": "The T20S proteasome is a key component of cell metabolism carrying out degradation of ubiquitinylated polypeptides to regulate the concentration of specific proteins and eliminate misfolded products.",
+      "claim_type": "EXPLICIT",
+      "source": "This enzyme is a key component of the cell metabolism carrying out degradation of ubiquitinylated polypeptides to regulate the concentration of specific proteins as well as eliminating misfolded products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about proteasome function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "5e7745ea-5393-4115-8c02-1452cbbaa7d2",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C16",
+      "claim": "The T20S proteasome forms a 700 kDa complex comprising 14 \u03b1 and 14 \u03b2 subunits organized with D7 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The T20S proteasome forms a 700 kDa complex comprising 14 \u03b1 and 14 \u03b2 subunits organized with D7 symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about the T20S proteasome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "e6f75ba9-70e9-4e3c-88d1-5d84a589471d",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C17",
+      "claim": "Careful alignment of the microscope was performed before data collection to ensure Thon rings were visible up to \u223c2.5 \u00c5 resolution in the power spectrum of micrographs collected over amorphous carbon.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful alignment of the microscope was performed before data collection to ensure Thon rings were visible up to \u223c2.5 \u00c5 resolution in the power spectrum of micrographs collected over amorphous carbon using the same conditions as for data acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "ab6e30e2-d824-4cd8-b241-cc9f38bef5ba",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C18",
+      "claim": "Coma-free alignment was carried out to align the beam to the column optical axis with the assistance of a Zemlin tableau.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to beginning data collection, coma-free alignment was carried out to align the beam to the column optical axis with the assistance of a Zemlin tableau (Glaeser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "8f902335-97ff-4a9c-b918-ce253f58a465",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C19",
+      "claim": "Automated data collection was carried out using Leginon to control both the FEI Titan Krios microscope and the Gatan K2 Summit camera operated in 'super-resolution' mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated data collection was carried out using Leginon (Suloway et al., 2005) to control both the FEI Titan Krios microscope and the Gatan K2 Summit camera operated in 'super-resolution' mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "41d1424a-d180-4404-952d-58b05767a9ac",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C20",
+      "claim": "196 micrographs were selected based on a cross-correlation coefficient \u2265 80% at a resolution of 4 \u00c5 or better.",
+      "claim_type": "EXPLICIT",
+      "source": "Only those micrographs showing a CC \u2265 80% at a resolution of 4 \u00c5 or better were retained for further processing. One of these micrographs and its corresponding power spectrum are shown in Figure 1. Using this selection criterion, 196 micrographs were selected, from which a total of 87,066 particles were automatically picked using FindEM (Roseman, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "aab5ffb0-28a6-476e-a9b8-b4db83924240",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C21",
+      "claim": "87,066 particles were automatically picked from the selected micrographs using FindEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this selection criterion, 196 micrographs were selected, from which a total of 87,066 particles were automatically picked using FindEM (Roseman, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "0c923d11-fa74-4722-8533-daa3814b5920",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C22",
+      "claim": "The movies have been deposited in the EMPIAR database with the accession number EMPIAR-10025.",
+      "claim_type": "EXPLICIT",
+      "source": "These movies have been deposited in the EMPIAR database with the accession number EMPIAR-10025.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "f0c01af9-bcdc-470f-a8a1-18408e35f1e2",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C23",
+      "claim": "59,864 particles containing both top and side views were used for refinement and reconstruction after particle sorting and selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Particle images were sorted and selected based on mean and standard deviation pixel values within Appion (Lander et al., 2009) and using Xmipp cl2d reference-free alignment and clustering (Sorzano et al., 2010) to yield a stack of 59,864 particles containing both top and side views that were then used for refinement and reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "6d31e1d8-b906-4abc-8459-2226f73b3dd5",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C24",
+      "claim": "Thon rings are visible well beyond 4 \u00c5\u22121 resolution in the power spectrum of the micrograph shown in Figure 1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Thon rings are visible well beyond 4 \u00c5\u22121 resolution in the power spectrum of the micrograph shown in (A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "bc2ba5d2-2e79-4077-98ef-317b7d900401",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C25",
+      "claim": "The selected substack of T20S particles was refined using the gold standard procedure implemented in Relion.",
+      "claim_type": "EXPLICIT",
+      "source": "The selected substack of T20S particles was refined starting from a low-pass filtered initial model to high resolution using the gold standard procedure implemented in Relion (Scheres and Chen, 2012; Scheres, 2012b; Bai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "6859d16e-a910-4a46-8a68-4a77547a4905",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C26",
+      "claim": "Projection-matching refinement provided a reconstruction at 2.98 \u00c5 resolution with an estimated angular accuracy of 1.3\u00b0 using all 38 movie frames and the full exposure of 53 e\u2212/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "This projection-matching refinement step provided a reconstruction at 2.98 \u00c5 resolution (estimated angular accuracy 1.3\u00b0) using all 38 movie frames and the full exposure of 53 e\u2212/\u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results from data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "e05f7dce-cab2-407d-9b3f-b02e135bcda4",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C27",
+      "claim": "Previous measurements using catalase crystals have suggested that exposures as low as 11 e\u2212/\u00c52 might be necessary to attain 3 \u00c5 maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous measurements using catalase crystals have suggested that exposures as low as 11 e\u2212/\u00c52 might be necessary to attain 3 \u00c5 maps (Baker and Rubinstein, 2010; Baker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "552c59dc-b027-49f3-8c82-3bc290052638",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C28",
+      "claim": "The loss of signal due to radiation must be balanced against the need for sufficient contrast in the images to allow for accurate alignment of the individual particles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the loss of signal due to radiation must be balanced against the need for sufficient contrast in the images to allow for accurate alignment of the individual particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge and inference about the trade-offs in cryoEM data collection.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "16ea6ee5-1953-45fa-92e3-b6ca3099de50",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C29",
+      "claim": "A T20S reconstruction at 2.98 \u00c5 resolution was obtained using the full exposure of 53 e\u2212/\u00c52 and prior to weighting individual movie frames.",
+      "claim_type": "EXPLICIT",
+      "source": "We emphasize that we were able to obtain a T20S reconstruction at 2.98 \u00c5 resolution using the full exposure of 53 e\u2212/\u00c52 and prior to weighting individual movie frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results from data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "12855f07-1e30-4ea7-9a16-b209b865a69e",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C30",
+      "claim": "Similar results were obtained in determining the structure of an icosahedral virus to 3.7 \u00c5 resolution using an exposure of 38 e\u2212/\u00c52 with a microscope operated at 200 kV.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained similar results in determining the structure of an icosahedral virus to 3.7 \u00c5 resolution using an exposure of 38 e\u2212/\u00c52 with a microscope operated at 200 kV (Campbell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "691742a3-1523-4dc0-a3c4-3545c9048b5c",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C31",
+      "claim": "The results demonstrate that useful high-resolution information may survive much higher exposures than previously thought for single particle cryoEM.",
+      "claim_type": "EXPLICIT",
+      "source": "These results contrast with previous measurements and demonstrate that useful high-resolution information may survive much higher exposures than previously thought for single particle cryoEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results showing high resolution at high exposure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "34a0c677-e6d7-4982-8312-6eb3a4097428",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C32",
+      "claim": "The particle polishing procedure was used to account for individual beam-induced particle translations and to calculate a frequency-dependent weight for the contribution of individual movie frames to the reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "We subsequently used the particle polishing procedure implemented in version 1.3 of the Relion software to account for individual beam-induced particle translations and to calculate a frequency-dependent weight for the contribution of individual movie frames to the reconstruction (Scheres, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "32ef8c11-1ddd-4785-a1ca-2a17408fa347",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C33",
+      "claim": "The first frame of each movie featured a large movement in comparison with the following ones, interpreted as the initial settling of beam-induced motion during exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The first frame of each movie featured a large movement in comparison with the following ones, which we and others interpret as the initial settling of beam-induced motion during exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data observation and inference about the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "298bd18a-ae39-45a7-882e-b23397768ad5",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C34",
+      "claim": "The particle polishing processing scheme improved the resolution of the reconstruction to 2.83 \u00c5 with an estimated angular accuracy of 1.0\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "This processing scheme improved the resolution of the reconstruction to 2.83 \u00c5 (estimated angular accuracy 1.0\u00b0), and this was supported by a significant enhancement of map quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results from data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "240760dd-90b6-4bd7-9081-358468a938a8",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C35",
+      "claim": "Plots of the relative B factor and Cf intersect, derived from the Guinier plots for each single frame reconstruction, along with the corresponding frequency-dependent weights are presented in Figure 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Plots of the relative B factor and Cf intersect, derived from the Guinier plots for each single frame reconstruction, along with the corresponding frequency-dependent weights are presented in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "a2837c5f-f877-42f0-94ea-7a8e77d7b575",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C36",
+      "claim": "Discarding particle images with the greatest angular uncertainty based on the height of the probability distributions at their maximum produced a map with a slightly improved resolution of 2.81 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In a final round of refinement, we discarded particle images with the greatest angular uncertainty based on the height of the probability distributions at their maximum. An empirically determined cutoff of 0.07 was used, which gave a stack of 49,954 particle images (699,356 asymmetric units). Refinement of this smaller dataset under otherwise identical conditions produced a map with a slightly improved resolution of 2.81 \u00c5 (estimated angular accuracy 0.8\u00b0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results from data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "a8a3d222-ce5a-486d-b42a-9a00cd3e12c6",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C37",
+      "claim": "An empirically determined cutoff of 0.07 for angular uncertainty gave a stack of 49,954 particle images (699,356 asymmetric units).",
+      "claim_type": "EXPLICIT",
+      "source": "An empirically determined cutoff of 0.07 was used, which gave a stack of 49,954 particle images (699,356 asymmetric units).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "ce206125-eaf1-44c5-9776-90ea1985fa4d",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C38",
+      "claim": "Analyzing the probability distributions over all orientations is a convenient way of discarding particles that are not contributing positively to the reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that analyzing the probability distributions over all orientations is a convenient way of discarding particles that are not contributing positively to the reconstruction (\u223c10,000 particles in this case).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "f9cec7eb-9df1-4978-8101-335153015da4",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C39",
+      "claim": "Approximately 10,000 particles were not contributing positively to the reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that analyzing the probability distributions over all orientations is a convenient way of discarding particles that are not contributing positively to the reconstruction (\u223c10,000 particles in this case).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results from data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "8f284e0f-e23d-4524-a83c-921431c47ac7",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C40",
+      "claim": "The 2.81 \u00c5 map has been deposited in the EMDB with the accession number EMD-6287.",
+      "claim_type": "EXPLICIT",
+      "source": "This map has been deposited in the EMDB with the accession number EMD-6287.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "cd8f122d-97ba-43f4-8b27-8cda4dec802b",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C41",
+      "claim": "The T20S atomic coordinates obtained from a crystal structure at 1.9 \u00c5 resolution were fitted into the cryoEM reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted the T20S atomic coordinates obtained from a crystal structure at 1.9 \u00c5 resolution (Forster et al., 2005) into our cryoEM reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "2e02ce55-1689-4b64-b7c4-597622043b06",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C42",
+      "claim": "The density is continuous from residues 13 to 233 and residues 1 to 203 for \u03b1 and \u03b2 subunits, respectively, with most side chains being resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "The density is continuous from residues 13 to 233 and residues 1 to 203 for \u03b1 and \u03b2 subunits, respectively, with most side chains being resolved (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "a2f77992-aa9f-4718-8a45-28e70ece28e5",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C43",
+      "claim": "Many negatively charged residues had lost their carboxylate groups, likely due to radiation sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous studies (Allegretti et al., 2014; Bartesaghi et al., 2014), many negatively charged residues had lost their carboxylate groups, likely due to radiation sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observation, inference about the cause, and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "93a26a0b-3f63-40c6-8a6d-cdb10d047e51",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C44",
+      "claim": "Differences between the crystal structure and the cryoEM reconstruction are easily discernable at the level of the backbone and can be adjusted accordingly using real-space refinement procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences between the crystal structure and the cryoEM reconstruction are easily discernable at the level of the backbone and can be adjusted accordingly using real-space refinement procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results and inference about refinement procedures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "61e35606-5fa3-4bb6-bbbc-d9095b3b5667",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C45",
+      "claim": "The rotameric conformations of many amino-acid side chains are clearly visible in the electron potential map.",
+      "claim_type": "EXPLICIT",
+      "source": "The rotameric conformations of many amino-acid side chains are clearly visible in the electron potential map (Figure 4) and reveal differences with a crystal structure of the T20S determined at 3.4 \u00c5 resolution (Lowe et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 4 with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "01c38c2a-a7e8-49a9-924e-aad924f3487b",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C46",
+      "claim": "The rotameric conformations reveal differences with a crystal structure of the T20S determined at 3.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The rotameric conformations of many amino-acid side chains are clearly visible in the electron potential map (Figure 4) and reveal differences with a crystal structure of the T20S determined at 3.4 \u00c5 resolution (Lowe et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 4 with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "ed1074c5-7123-4671-a545-564449f7ef02",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C47",
+      "claim": "The quality of the reconstruction allows distinguishing between Phe and Tyr amino-acid residues based on the appearance of the density for their side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of our reconstruction allows distinguishing between Phe and Tyr amino-acid residues based on the appearance of the density for their side chains (Figure 4), as shown previously (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 4 with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "65e1073b-6b53-4657-a78f-845c747699e8",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C48",
+      "claim": "The presence of a hydroxyl group para to the phenyl group of Tyr residues unambiguously establishes the presence of the Tyr residue as opposed to the Phe residue in the reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a hydroxyl group para to the phenyl group of Tyr residues unambiguously establishes the presence of the Tyr residue as opposed to the Phe residue in our reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results and inference about amino acid identification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "40b1602f-bb69-490e-92a0-c32fdf7b4601",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C49",
+      "claim": "This level of resolvability is decisive for de novo building of atomic models of proteins of unknown structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This level of resolvability is decisive for de novo building of atomic models of proteins of unknown structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the implications of the resolution achieved.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "9cc0b04d-b42c-4188-9488-d3754be1b95d",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C50",
+      "claim": "In X-ray crystallography, when a structure is determined at a resolution significantly better than 3 \u00c5, one expects to observe ordered water molecules interacting with amino-acid residues located at the protein surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In X-ray crystallography, when a structure is determined at a resolution significantly better than 3 \u00c5, one expects to observe ordered water molecules interacting with amino-acid residues located at the protein surface (Carugo and Bordo, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in crystallography with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "83b713e6-b105-4565-b883-56873fc9be48",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C51",
+      "claim": "The higher the resolution the more ordered water molecules are visible in crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher the resolution the more ordered water molecules are visible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in structural biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "c82c3682-def1-41d0-8d33-31dbd9269bfd",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C52",
+      "claim": "Analysis of the T20S reconstruction at 2.8 \u00c5 resolution revealed that many ordered water molecules are resolved, in agreement with the estimated resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of our T20S reconstruction at 2.8 \u00c5 resolution revealed that many ordered water molecules are resolved, in agreement with the estimated resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "8acb5bb6-9f81-486a-9aba-4f271901367c",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C53",
+      "claim": "The resolved water molecules are positioned in appropriate chemical environments and within hydrogen-bonding distance (2.8\u20133.5 \u00c5) of the surrounding atoms with which they interact.",
+      "claim_type": "EXPLICIT",
+      "source": "They are positioned in appropriate chemical environments and within hydrogen-bonding distance (2.8\u20133.5 \u00c5) of the surrounding atoms with which they interact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results and validation of water molecule assignments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "181e3e11-8825-400b-8035-bcfa7deec3cc",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C54",
+      "claim": "All the reconstructions described in this manuscript used the RELION gold standard refinement procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "All the reconstructions described in this manuscript used the RELION gold standard refinement procedure (Scheres and Chen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "c9530fae-8ad1-4918-89b4-571191f28d3e",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C55",
+      "claim": "In the gold standard protocol, two half datasets are refined completely independently throughout, and after each cycle the new reference volumes are low-pass filtered to the resolution where the FSC between the two volumes drops to 0.143.",
+      "claim_type": "EXPLICIT",
+      "source": "In this protocol, two half datasets are refined completely independently throughout, and after each cycle the new reference volumes are low-pass filtered to the resolution where the Fourier shell correlation (FSC) between the two volumes drops to 0.143 (Rosenthal and Henderson, 2003), thus preventing overfitting of noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the gold standard refinement procedure with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "02293754-3c95-4364-8bb7-c70f3e864ec6",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C56",
+      "claim": "The gold standard refinement procedure prevents overfitting of noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In this protocol, two half datasets are refined completely independently throughout, and after each cycle the new reference volumes are low-pass filtered to the resolution where the Fourier shell correlation (FSC) between the two volumes drops to 0.143 (Rosenthal and Henderson, 2003), thus preventing overfitting of noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the gold standard refinement procedure with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "d143abf6-9e79-4371-9c39-43de5ccbe57e",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C57",
+      "claim": "The noise present in each independent map is not correlated in the gold standard procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the noise present in each independent map is not correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the gold standard refinement procedure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "f8009fd6-7b8e-4c32-8200-cf58764e9183",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C58",
+      "claim": "Water molecules were cross-validated as they are accounted for by the density in both maps derived from half datasets despite the reduced number of particle images contributing to each map.",
+      "claim_type": "EXPLICIT",
+      "source": "We were therefore able to cross-validate our assignment of water molecules as they are accounted for by the density in both maps derived from half datasets despite the reduced number of particle images contributing to each map (Figure 4\u2014figure supplement 1) (DiMaio et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental validation procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "91acd5c0-6dc5-48c9-8ec4-4008540252db",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C59",
+      "claim": "The 1.9 \u00c5 crystal structure of the T20S proteasome unequivocally supports the assignment of the water molecules identified in the cryoEM map as an independent cross-validation metric.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the 1.9 \u00c5 crystal structure of the T20S proteasome also unequivocally supports the assignment of the water molecules identified in the cryoEM map as an independent cross-validation metric (Forster et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation of experimental results using a crystal structure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "5b77a0cb-1f46-412a-adf3-b76adcdd51b8",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C60",
+      "claim": "CryoEM is now capable of producing structures at better than 3 \u00c5 resolution, which is a prerequisite for structure-based drug design.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure presented here demonstrates that cryoEM is now capable of producing structures at better than 3 \u00c5 resolution, which is a prerequisite for structure-based drug design (Anderson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results with citation support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "b5cc0dd2-65f7-4781-9bd2-8de46aa13c23",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C61",
+      "claim": "The possibility to resolve the conformational preference of some amino-acid side chains (rotamers) and identify ordered water molecules opens new horizons for cryoEM and structural biology in general.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility to resolve the conformational preference of some amino-acid side chains (rotamers) and identify ordered water molecules opens new horizons for cryoEM and structural biology in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results about future implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "70543ba6-91be-4f47-9d07-525bd9a18e31",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C62",
+      "claim": "This level of information is required for drug lead design as these chemical entities mediate key biological processes such as catalysis, protein/protein and protein/substrate recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This level of information is required for drug lead design as these chemical entities mediate key biological processes such as catalysis, protein/protein and protein/substrate recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about drug design requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "ba88cc6b-926e-457d-b3fd-57beb5aa193b",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C63",
+      "claim": "State-of-the-art cryoEM is now in a position to expedite structure-based drug discovery and will likely become increasingly important for pharmaceutical industries.",
+      "claim_type": "EXPLICIT",
+      "source": "State-of-the-art cryoEM is now in a position to expedite structure-based drug discovery and will likley become increasingly important for pharmaceutical industries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about future implications of the technology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "686eecfd-377b-4157-929c-42cd133f2f0b",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C64",
+      "claim": "The proteasome itself is a rigid and homogenous sample, which is ideal for high-resolution reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteasome itself is a rigid and homogenous sample, which is ideal for high-resolution reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge about the sample properties and inference about their impact on reconstruction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "4195441e-708f-41f1-b7f8-c0ce553d25c4",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C65",
+      "claim": "A relatively high electron dose may have been key to properly aligning particles.",
+      "claim_type": "EXPLICIT",
+      "source": "For data collection, we used a relatively high electron dose, which may have been key to properly aligning particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about factors contributing to the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "f7b37512-539f-43a3-a29c-abf4f2dbcb88",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C66",
+      "claim": "The mechanical stage was used instead of beam-tilt to move to targets for high magnification exposure in order to avoid introducing any phase shift in the images.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we used the mechanical stage instead of beam-tilt to move to targets for high magnification exposure in order to avoid introducing any phase shift in the images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure and the reasoning behind it.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "1aac3b9d-820d-4085-be8c-709f6605e40b",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C67",
+      "claim": "Images of each square and each hole were examined by-eye for perceived ice thickness and only those which were judged to have very thin ice were selected for final high magnification exposures.",
+      "claim_type": "EXPLICIT",
+      "source": "Images of each square and each hole were examined by-eye for perceived ice thickness and only those which were judged to have very thin ice were selected for final high magnification exposures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "d75d219a-eca0-46ef-8a91-2080a92d22b6",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C68",
+      "claim": "Algorithmic advances (projection matching, particle polishing) allow optimization of the doses used for alignment and final reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we benefited from the availability of algorithmic advances (projection matching, particle polishing), which allows optimization of the doses used for alignment and final reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the benefits of algorithmic advances.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "2935963d-a382-4386-907b-176aff11a9ec",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C69",
+      "claim": "The prospect of achieving reconstructions at \u223c2 \u00c5 resolution is very attractive.",
+      "claim_type": "EXPLICIT",
+      "source": "As the potential of cryoEM has been steadily growing in the past few years, the prospect of achieving reconstructions at \u223c2 \u00c5 resolution is very attractive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about future possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "ae7aee09-3ad6-4c18-a3d3-ff44fdd973d8",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C70",
+      "claim": "Only 10% of the particle images present in the dataset were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we used only 10% of the particle images present in the dataset discussed in this manuscript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "56e8f583-b758-4fe2-b197-8f37532f39a1",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C71",
+      "claim": "Including more particle images could further improve the resolution of the T20S reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Including more particle images could further improve the resolution of the T20S reconstruction and experiments are ongoing to determine if this is the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about potential improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "4e4b7d08-06b8-4130-87d1-23e053099cdf",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C72",
+      "claim": "3D classification approaches have proven useful for sorting particle images.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, 3D classification approaches have also proven useful for sorting particle images (Scheres, 2012a; Lyumkis et al., 2013) and implementing such approaches may also help to improve the final resolution of our reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "0402d70b-94b6-4702-bb1f-77c89d7a053f",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C73",
+      "claim": "Implementing 3D classification approaches may help to improve the final resolution of the reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, 3D classification approaches have also proven useful for sorting particle images (Scheres, 2012a; Lyumkis et al., 2013) and implementing such approaches may also help to improve the final resolution of our reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about potential improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "e314bd66-82f8-4df2-9bda-7080d8b1df30",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C74",
+      "claim": "The T. acidophilum 20S proteasome was expressed and purified from Escherichia coli according to established protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The T. acidophilum 20S proteasome was expressed and purified from Escherichia coli according to established protocols (Rabl et al., 2008; Yu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "0ac1f7d9-aafe-4f3a-b195-87b90d3f3d85",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C75",
+      "claim": "Three microliters of sample were applied to a 1.2/1.3 C-flat grid.",
+      "claim_type": "EXPLICIT",
+      "source": "Three microliters of sample were applied to a 1.2/1.3 C-flat grid (Protochips, Raleigh, North Carolina), which had been plasma-cleaned for 6 s at 20 mA using a Gatan Solarus (Pleasanton, California).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "f1306928-a952-4a27-82cd-60296e785dae",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C76",
+      "claim": "Grids were plunge-frozen in liquid ethane using a Gatan CP3 and a blotting time of 2.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, grids were plunge-frozen in liquid ethane using a Gatan CP3 and a blotting time of 2.5 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "8555c647-f9d4-49aa-a794-8946cd091688",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C77",
+      "claim": "Data were acquired using an FEI Titan Krios transmission electron microscope operated at 300 kV and equipped with a Gatan K2 Summit direct detector.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were acquired using an FEI Titan Krios (Hillsboro, Oregon) transmission electron microscope operated at 300 kV and equipped with a Gatan K2 Summit direct detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "cc539712-f4fd-4ae3-98fb-fba20a53a797",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C78",
+      "claim": "A condenser aperture of 70 \u00b5m and an objective aperture of 100 \u00b5m were used.",
+      "claim_type": "EXPLICIT",
+      "source": "A condenser aperture of 70 \u00b5m and an objective aperture of 100 \u00b5m were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "fd9da53d-2d76-4af2-bf1b-adcc44f4c462",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C79",
+      "claim": "Coma-free alignment was performed using the Leginon software.",
+      "claim_type": "EXPLICIT",
+      "source": "Coma-free alignment was performed using the Leginon software (Glaeser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "5a54a1ab-c121-4671-8ddb-a530fd5b4cc5",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C80",
+      "claim": "The microscope was used in microprobe mode at a nominal magnification of 22,500\u00d7.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated data collection was carried out using Leginon (Suloway et al., 2005) to control both the FEI Titan Krios (used in microprobe mode at a nominal magnification of 22,500\u00d7) and the Gatan K2 Summit operated in 'super-resolution' mode (super-resolution pixel size: 0.6575 \u00c5) at a dose rate of \u223c9 counts/physical pixel/s which corresponds to \u223c12 electrons/physical pixel/s (when accounting for coincidence loss).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "4eddaf38-b396-4ea7-a0db-80f29a4581a3",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C81",
+      "claim": "The super-resolution pixel size was 0.6575 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated data collection was carried out using Leginon (Suloway et al., 2005) to control both the FEI Titan Krios (used in microprobe mode at a nominal magnification of 22,500\u00d7) and the Gatan K2 Summit operated in 'super-resolution' mode (super-resolution pixel size: 0.6575 \u00c5) at a dose rate of \u223c9 counts/physical pixel/s which corresponds to \u223c12 electrons/physical pixel/s (when accounting for coincidence loss).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "0439a49b-909c-4ecf-9f03-7bf530d760bc",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C82",
+      "claim": "The dose rate was \u223c9 counts/physical pixel/s which corresponds to \u223c12 electrons/physical pixel/s (when accounting for coincidence loss).",
+      "claim_type": "EXPLICIT",
+      "source": "Automated data collection was carried out using Leginon (Suloway et al., 2005) to control both the FEI Titan Krios (used in microprobe mode at a nominal magnification of 22,500\u00d7) and the Gatan K2 Summit operated in 'super-resolution' mode (super-resolution pixel size: 0.6575 \u00c5) at a dose rate of \u223c9 counts/physical pixel/s which corresponds to \u223c12 electrons/physical pixel/s (when accounting for coincidence loss).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "965255f9-1d6c-41e6-921b-0ad731f8272e",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C83",
+      "claim": "The researchers waited 40 s after physically moving the stage to each new position to allow settling before acquiring a new video.",
+      "claim_type": "EXPLICIT",
+      "source": "We waited 40 s after physically moving the stage to each new position to allow settling before acquiring a new video.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "f85ad994-041d-4d3d-a6b9-a8d366c9fa1b",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C84",
+      "claim": "A single movie was taken per hole.",
+      "claim_type": "EXPLICIT",
+      "source": "A single movie was taken per hole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "b2def942-9f6d-4dbd-8139-783f63262117",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C85",
+      "claim": "Each movie had a total accumulated exposure of 53 e\u2212/\u00c52 fractionated into 38 frames of 200 ms (yielding movies of 7.6 s duration).",
+      "claim_type": "EXPLICIT",
+      "source": "Each movie had a total accumulated exposure of 53 e\u2212/\u00c52 fractionated into 38 frames of 200 ms (yielding movies of 7.6 s duration).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "c9512f2e-ae11-4a17-8f59-ddf1d9248b59",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C86",
+      "claim": "A dataset of \u223c1000 micrographs was acquired for the T20S in a single session using a defocus range between 0.9 and 2.4 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "A dataset of \u223c1000 micrographs was acquired for the T20S in a single session using a defocus range between 0.9 and 2.4 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "16f10bcd-22d9-4c0f-b1b8-30b654257d7a",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C87",
+      "claim": "Whole frame alignment was carried out using the software developed by Li et al. (2013), which is integrated into the Appion pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole frame alignment was carried out using the software developed by Li et al. (2013), which is integrated into the Appion pipeline (Lander et al., 2009), to account for stage drift and beam-induced motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "fba34258-7b68-44f6-85e6-382c5cb25887",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C88",
+      "claim": "A frame offset of seven along with a B factor of 1000 pixels2 were used for aligning the movie frames.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a frame offset of seven along with a B factor of 1000 pixels2 for aligning the movie frames (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "3f06334d-ef79-4d59-950c-8271cd0ee347",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C89",
+      "claim": "The parameters of the microscope contrast transfer function were estimated for each micrograph using ctffind3.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameters of the microscope contrast transfer function were estimated for each micrograph using ctffind3 (Mindell and Grigorieff, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "4deaa266-dc97-417e-8f3a-81c38a8a0f0d",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C90",
+      "claim": "Extraction of particle images for projection-matching refinements was performed using Relion 1.3 with an initial box size of 448 pixels2 and applying a windowing operation in Fourier space to downsize the particles images to yield a final box size of 300 pixels2 (corresponding to a pixel size of 0.98 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Extraction of particle images for projection-matching refinements was performed using Relion 1.3 with an initial box size of 448 pixels2 and applying a windowing operation in Fourier space to downsize the particles images to yield a final box size of 300 pixels2 (corresponding to a pixel size of 0.98 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "e55104aa-c638-489e-ab92-7f679a624efa",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C91",
+      "claim": "The final pixel size was chosen to optimize the balance between the Nyquist frequency limit and the memory requirements for computational steps.",
+      "claim_type": "EXPLICIT",
+      "source": "The final pixel size was chosen to optimize the balance between the Nyquist frequency limit and the memory requirements for computational steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reasoning behind the experimental data processing procedure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "76d04380-175d-4e77-85eb-d1044f4190a8",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C92",
+      "claim": "Projection-matching refinements were performed with the Relion software imposing D7 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Projection-matching refinements were performed with the Relion software (Bai et al., 2013; Scheres, 2012a, 2012b, 2014) imposing D7 symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "ab711507-6478-46d2-816f-d5a3f8910c1b",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C93",
+      "claim": "Reported resolutions are based on the gold-standard FSC = 0.143 criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported resolutions are based on the gold-standard FSC = 0.143 criterion (Scheres and Chen, 2012) and Fourier shell correction curves were corrected for the effects of soft masking by high-resolution noise substitution (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "a3f6425a-1f2d-4a64-81f4-3b64e05c2d4c",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C94",
+      "claim": "Fourier shell correction curves were corrected for the effects of soft masking by high-resolution noise substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported resolutions are based on the gold-standard FSC = 0.143 criterion (Scheres and Chen, 2012) and Fourier shell correction curves were corrected for the effects of soft masking by high-resolution noise substitution (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data processing procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "11e4a354-85c9-4f6c-a59c-67c410a4de0c",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C95",
+      "claim": "The T20S crystal structure (PDB 1YAR) was rigid body fitted into the cryoEM map using UCSF Chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "The T20S crystal structure (PDB 1YAR) was rigid body fitted into the cryoEM map using UCSF Chimera (Goddard et al., 2007) and then iteratively refined using Rosetta (DiMaio et al., 2009) and Coot (Emsley et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model building procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "3ae96713-39c7-4ae6-9e50-ea86db7cc4a2",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C96",
+      "claim": "The fitted structure was iteratively refined using Rosetta and Coot.",
+      "claim_type": "EXPLICIT",
+      "source": "The T20S crystal structure (PDB 1YAR) was rigid body fitted into the cryoEM map using UCSF Chimera (Goddard et al., 2007) and then iteratively refined using Rosetta (DiMaio et al., 2009) and Coot (Emsley et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model building procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "8d3f79d0-687b-453d-b1f1-d340712a6abb",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C97",
+      "claim": "Rosetta tools recently developed for cryoEM were used to perform fragment rebuilding, torsion angles and cartesian minimization of atomic positions and B factor refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Rosetta tools recently developed for cryoEM (DiMaio et al., 2015; Wang et al., 2015) to perform fragment rebuilding, torsion angles and cartesian minimization of atomic positions and B factor refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model building procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "53b5c232-aee8-4f0e-a030-dcc56a41acc7",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C98",
+      "claim": "At each iteration, the best model was visually inspected in Coot and a few amino acid side chain rotamers were manually adjusted to best fit the density.",
+      "claim_type": "EXPLICIT",
+      "source": "At each iteration, the best model was visually inspected in Coot and a few amino acid side chain rotamers were manually adjusted to best fit the density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model building procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "8b939b9c-77fe-4574-9183-29688c016c20",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C99",
+      "claim": "Water molecules were manually added using Coot after the first iteration of Rosetta refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Water molecules were also manually added using Coot after the first iteration of Rosetta refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model building procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "ff01c514-d812-48ff-9375-57d188daedf3",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C100",
+      "claim": "Rosetta and Coot refinements were performed using a training map corresponding to one of the two maps generated by the gold-standard refinement procedure in Relion.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosetta and Coot refinements were performed using a training map corresponding to one of the two maps generated by the gold-standard refinement procedure in Relion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model building procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "ac3e1770-4461-4753-8ced-4b636416bb4f",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C101",
+      "claim": "The second map (testing map) was used only for calculation of the FSC compared to the atomic model.",
+      "claim_type": "EXPLICIT",
+      "source": "The second map (testing map) was used only for calculation of the FSC compared to the atomic model (DiMaio et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental validation procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "2b6e2cf9-c34f-49cc-819e-eb7ffdf91b24",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C102",
+      "claim": "The quality of the final model was analyzed with Molprobity.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the final model was analyzed with Molprobity (Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental validation procedure with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "45fd6e41-8034-4464-ac0b-0d708f9af796",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C103",
+      "claim": "The FSC between the atomic model and the test map reaches 0.5 at 2.86 \u00c5 resolution, in agreement with the resolution estimated by gold standard refinement in Relion.",
+      "claim_type": "EXPLICIT",
+      "source": "The FSC reaches 0.5 at 2.86 \u00c5 resolution, in agreement with the resolution estimated by gold standard refinement in Relion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental validation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "6e507ce5-83de-4fc2-9337-89cef59647dd",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C104",
+      "claim": "Different rotameric conformations are adopted by the Met-14 side chain (\u03b2-subunit) between a crystal structure of the T20S determined at 3.4 \u00c5 resolution and the EM density.",
+      "claim_type": "EXPLICIT",
+      "source": "Different rotameric conformations adopted by the Met-14 side chain (\u03b2-subunit) between a crystal structure of the T20S determined at 3.4 \u00c5 resolution (left, PDB 1PMA) and the EM density (right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "5e1a2289-0b21-4d70-bbb5-1af11661e279",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C105",
+      "claim": "The rotameric conformations of Ile70 (\u03b1-subunit) and Ile37 (\u03b2-subunit) can be unambiguously established.",
+      "claim_type": "EXPLICIT",
+      "source": "Unambiguous establishment of the rotameric conformations of two different isoleucine residues: Ile70 (left, \u03b1-subunit) and Ile37 (right, \u03b2-subunit).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "188cede5-513a-44a5-89c6-df81862e2633",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C106",
+      "claim": "The additional density accounting for the hydroxyl group of tyrosine side chains is prominent when compared to phenylalanine side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional density accounting for the hydroxyl group of tyrosine side chains (left, Tyr132, \u03b1-subunit) is prominent when compared to phenylalanine side chains (right, Phe91, \u03b1-subunit).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "cf063ecb-e415-46ef-9dc9-89b4ffdde760",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C107",
+      "claim": "A water molecule is hydrogen-bonded to the carbonyl group of Val87 (\u03b1-subunit).",
+      "claim_type": "EXPLICIT",
+      "source": "Left: a water molecule hydrogen-bonded to the carbonyl group of Val87 (\u03b1-subunit).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "304144f7-1701-4eb3-912f-85458b64e061",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C108",
+      "claim": "A water molecule is hydrogen-bonded to the side chain hydroxyl of Thr102 (\u03b1-subunit).",
+      "claim_type": "EXPLICIT",
+      "source": "Right: a water molecule hydrogen-bonded to the side chain hydroxyl of Thr102 (\u03b1-subunit).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental results shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "b89d8f3c-8423-42bb-a43d-40e6c43c2663",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C109",
+      "claim": "The density attributed to water molecules is present in both half maps confirming that it is not due to random noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the density attributed to water is present in both half maps confirming that it is not due to random noise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental validation shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "a2d66053-df9b-4cfe-915a-23a0e4242d8c",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "claim_id": "C110",
+      "claim": "The position of the water molecules matches those observed in a crystal structure of the proteasome determined to 1.9 \u00c5 resolution (PDB 1YAR).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore the position of these water molecules matches those observed in a crystal structure of the proteasome determined to 1.9 \u00c5 resolution (PDB 1YAR).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental validation shown in Figure 4\u2014figure supplement 1 with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6520f220-1562-4c7d-b8e4-542d82f02f6c",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors achieved a 2.8 \u00c5 resolution reconstruction of the T20S proteasome using single-particle cryoEM. Initial refinement yielded 2.98 \u00c5 resolution, which improved to 2.83 \u00c5 after particle polishing and further to 2.81 \u00c5 after discarding particles with high angular uncertainty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C26, C29, C34, and C36 provide a clear progression of resolution improvements through different processing steps, all using the gold-standard FSC criterion. The final 2.81 \u00c5 map (C40) represents a well-documented achievement with appropriate validation metrics shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The 2.8 \u00c5 resolution reconstruction enables identification of amino acid side chain rotameric conformations. The map quality allows distinguishing between Phe and Tyr residues based on the presence of the hydroxyl group, and reveals differences in rotameric conformations compared to lower-resolution crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C42, C45-C48, and C104-C106 are well-supported by visual evidence in Figures 3 and 4 showing clear side chain density. The ability to distinguish Phe from Tyr (C47, C48, C106) and identify specific rotamers (C104, C105) demonstrates the quality expected at this resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "0e54d1b5-bcbd-4354-a614-4587d06696ca",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The reconstruction resolves ordered water molecules positioned in appropriate chemical environments within hydrogen-bonding distance of surrounding atoms. Water molecule assignments were cross-validated using gold-standard half-maps and independently confirmed by comparison with a 1.9 \u00c5 crystal structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C52, C53, and C107-C110 demonstrate resolved water molecules with proper validation. The cross-validation using independent half-maps (C58, C109) and agreement with crystal structure (C59, C110) shown in Figure 4\u2014figure supplement 1 provides strong evidence against overfitting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "71c3a586-1ab0-4c06-99c2-296c7c3e51f3",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors conclude that single-particle cryoEM is now capable of competing with X-ray crystallography for structure-based drug design, as the ability to resolve rotamers and water molecules provides information required for drug lead design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C60-C62 represent reasonable conclusions based on the demonstrated resolution and map quality. The achievement of <3 \u00c5 resolution with resolved rotamers and water molecules (established in other result groups) supports the inference that cryoEM can now provide structures suitable for drug design applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "5c359c6d-c751-42bf-b6df-ac1c661704f0",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors achieved high-resolution reconstruction using a relatively high electron dose (53 e\u207b/\u00c5\u00b2), contrasting with previous suggestions that exposures as low as 11 e\u207b/\u00c5\u00b2 might be necessary for 3 \u00c5 maps. This demonstrates that useful high-resolution information may survive higher exposures than previously thought.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 present a well-supported finding that challenges prior assumptions. The achievement of 2.98 \u00c5 resolution with full 53 e\u207b/\u00c5\u00b2 exposure (C29) and similar results with virus at 38 e\u207b/\u00c5\u00b2 (C30) provide evidence that the dose requirements may be less stringent than previously measured with catalase crystals (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "d76c9e26-bdb5-454c-a249-a6b6a42af608",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Particle polishing accounting for beam-induced motion and frequency-dependent weighting of movie frames improved resolution from 2.98 \u00c5 to 2.83 \u00c5. The first frame showed large movement interpreted as initial settling of beam-induced motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 describe a well-documented processing improvement with clear before/after resolution metrics (C34) and supporting data in Figure 2 (C35). The observation about first-frame movement (C33) is consistent with known beam-induced motion behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "4cc8804e-1b6e-4969-8d64-95673e6c18e0",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Discarding particles with high angular uncertainty (using an empirically determined cutoff of 0.07) removed approximately 10,000 particles and slightly improved resolution from 2.83 \u00c5 to 2.81 \u00c5, suggesting this is a useful method for particle selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 describe a modest but documented improvement. The empirical nature of the cutoff selection (C37) is acknowledged, and the small improvement (0.02 \u00c5) is appropriately characterized as 'slight' (C36). The inference about utility (C38) is reasonable given the positive outcome.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "e463e206-5e65-411c-8c83-88654900c942",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Careful microscope alignment enabled Thon rings visible to ~2.5 \u00c5 in test micrographs. From ~1000 acquired micrographs, 196 were selected based on CC \u226580% at 4 \u00c5 resolution, yielding 87,066 automatically picked particles, which were further refined to 59,864 particles for reconstruction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21, C23-C24 describe standard but rigorous data collection and selection procedures. The Thon ring visibility (C17, C24) and systematic selection criteria (C20) demonstrate appropriate quality control. The particle numbers are clearly documented through the processing pipeline.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "d6850a21-e35e-4094-a9b9-e9d97cdb8cf8",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "All reconstructions used the RELION gold-standard refinement procedure, which refines two half-datasets independently and prevents overfitting by filtering to FSC=0.143. Resolution estimates are based on this gold-standard FSC criterion with correction for soft masking effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57, C93-C94 describe well-established methodology with appropriate citations. The gold-standard procedure is a recognized best practice for preventing overfitting in cryoEM, and the authors correctly applied it throughout their work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "b203192a-12b7-4a6f-8656-c9125be6f6b4",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A 1.9 \u00c5 crystal structure was fitted into the cryoEM map and refined using Rosetta and Coot with proper train/test map separation. Many negatively charged residues lost carboxylate groups likely due to radiation damage. The FSC between model and test map reaches 0.5 at 2.86 \u00c5, consistent with the gold-standard resolution estimate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44, C95-C103 describe appropriate model building and validation procedures. The train/test map separation (C100, C101) prevents overfitting, and the FSC validation (C103) confirms resolution. The observation about radiation damage to carboxylates (C43) is consistent with prior studies and properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "e6125a67-d79b-4de2-ad50-7fd4c31c668a",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors attribute their success to several factors: the proteasome is a rigid, homogeneous sample ideal for high-resolution reconstruction; relatively high electron dose may have aided particle alignment; use of mechanical stage instead of beam-tilt avoided phase shifts; careful ice thickness selection; and algorithmic advances enabled dose optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C68 represent reasonable speculation about contributing factors, but most are not rigorously tested. The sample properties (C64) are known, but the importance of high dose (C65), stage movement (C66), and ice selection (C67) are presented as possibilities ('may have been key') without controlled comparisons. These represent informed hypotheses rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "0dc01c07-2c55-49d0-b3de-89aa0e2d4059",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Only 10% of particle images in the dataset were used for the final reconstruction. The authors speculate that including more particles or implementing 3D classification approaches could further improve resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is a factual statement about data usage, but C71 and C73 are explicitly speculative ('could,' 'may help'). While these are reasonable suggestions for future work, they represent untested hypotheses. The low particle usage (10%) does suggest potential for improvement, but this remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "c8b930ba-062e-4a8c-ac11-1b672c773632",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Recent developments in direct electron detectors and motion correction algorithms have revolutionized single-particle cryoEM, enabling near-atomic resolution reconstructions of large complexes and smaller proteins previously considered too small for the technique. CryoEM can now compete with crystallography while offering advantages for heterogeneous/flexible complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C14 provide appropriate context about the field's recent advances, all supported by multiple citations to prior work. These represent accurate summaries of established knowledge and recent achievements in the cryoEM field, providing proper background for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "742f1392-63cb-4a61-a74b-de6828572136",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establish that: resolutions >3 \u00c5 are required for structure-based drug design; the proteasome is a key metabolic enzyme with known structure; and the ability to resolve rotamers and water molecules is decisive for de novo model building and drug design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15, C16, C49-C51, C62 represent established knowledge in structural biology and drug design, appropriately cited where applicable. These provide necessary context for understanding the significance of achieving 2.8 \u00c5 resolution with resolved rotamers and water molecules.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "04578e33-2915-44e6-bc79-98a2afd92411",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that state-of-the-art cryoEM will become increasingly important for pharmaceutical industries and that achieving ~2 \u00c5 resolution reconstructions is an attractive prospect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63 and C69 are explicitly speculative statements about future developments ('will likely become,' 'is very attractive'). While reasonable given the demonstrated capabilities, these represent opinions about future trends rather than supported scientific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "8bccfa45-323c-4662-97b3-5c2032d6ab6d",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Data and maps have been deposited in public databases (EMPIAR-10025 for movies, EMD-6287 for the final map).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C40 are factual statements about data deposition that can be verified through the respective databases. This represents appropriate data sharing practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Detailed materials and methods describe sample preparation, grid freezing, data acquisition parameters (300 kV, K2 Summit detector, super-resolution mode, 53 e\u207b/\u00c5\u00b2 total dose over 38 frames), and data processing procedures (motion correction, CTF estimation, particle extraction, refinement with D7 symmetry).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C92 provide comprehensive methodological details with appropriate citations. These represent standard procedures properly documented to enable reproducibility. The level of detail is appropriate for the methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    },
+    {
+      "id": "d26b08d4-c7a2-469c-8205-eb4662b09b18",
+      "content_id": "d4cfc65d-81c6-4b08-bec3-083323960b23",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "3D classification approaches have proven useful for sorting particle images in prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is a factual statement about prior work, properly supported by citations to Scheres 2012a and Lyumkis et al. 2013. This represents accurate attribution of established methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:41:37.267291Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "636aea88-5583-4a4a-988e-746363fbde10",
+      "result_id": "6520f220-1562-4c7d-b8e4-542d82f02f6c"
+    },
+    {
+      "claim_id": "6859d16e-a910-4a46-8a68-4a77547a4905",
+      "result_id": "6520f220-1562-4c7d-b8e4-542d82f02f6c"
+    },
+    {
+      "claim_id": "16ea6ee5-1953-45fa-92e3-b6ca3099de50",
+      "result_id": "6520f220-1562-4c7d-b8e4-542d82f02f6c"
+    },
+    {
+      "claim_id": "298bd18a-ae39-45a7-882e-b23397768ad5",
+      "result_id": "6520f220-1562-4c7d-b8e4-542d82f02f6c"
+    },
+    {
+      "claim_id": "a2837c5f-f877-42f0-94ea-7a8e77d7b575",
+      "result_id": "6520f220-1562-4c7d-b8e4-542d82f02f6c"
+    },
+    {
+      "claim_id": "8f284e0f-e23d-4524-a83c-921431c47ac7",
+      "result_id": "6520f220-1562-4c7d-b8e4-542d82f02f6c"
+    },
+    {
+      "claim_id": "adbd8b2f-033e-4d9c-87cd-bbd36ba5e66a",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "2e02ce55-1689-4b64-b7c4-597622043b06",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "61e35606-5fa3-4bb6-bbbc-d9095b3b5667",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "01c38c2a-a7e8-49a9-924e-aad924f3487b",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "ed1074c5-7123-4671-a545-564449f7ef02",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "65e1073b-6b53-4657-a78f-845c747699e8",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "6e507ce5-83de-4fc2-9337-89cef59647dd",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "5e1a2289-0b21-4d70-bbb5-1af11661e279",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "188cede5-513a-44a5-89c6-df81862e2633",
+      "result_id": "d8ca008e-85fd-475a-8ab1-5c91d1fb8782"
+    },
+    {
+      "claim_id": "2eeae160-89df-40ec-af28-45ac6249677a",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "c82c3682-def1-41d0-8d33-31dbd9269bfd",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "8acb5bb6-9f81-486a-9aba-4f271901367c",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "f8009fd6-7b8e-4c32-8200-cf58764e9183",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "91acd5c0-6dc5-48c9-8ec4-4008540252db",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "cf063ecb-e415-46ef-9dc9-89b4ffdde760",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "304144f7-1701-4eb3-912f-85458b64e061",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "b89d8f3c-8423-42bb-a43d-40e6c43c2663",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "a2d66053-df9b-4cfe-915a-23a0e4242d8c",
+      "result_id": "0e54d1b5-bcbd-4354-a614-4587d06696ca"
+    },
+    {
+      "claim_id": "1e4e9b01-3c53-407f-a425-3b74e12d26cf",
+      "result_id": "71c3a586-1ab0-4c06-99c2-296c7c3e51f3"
+    },
+    {
+      "claim_id": "5b77a0cb-1f46-412a-adf3-b76adcdd51b8",
+      "result_id": "71c3a586-1ab0-4c06-99c2-296c7c3e51f3"
+    },
+    {
+      "claim_id": "b5cc0dd2-65f7-4781-9bd2-8de46aa13c23",
+      "result_id": "71c3a586-1ab0-4c06-99c2-296c7c3e51f3"
+    },
+    {
+      "claim_id": "70543ba6-91be-4f47-9d07-525bd9a18e31",
+      "result_id": "71c3a586-1ab0-4c06-99c2-296c7c3e51f3"
+    },
+    {
+      "claim_id": "e05f7dce-cab2-407d-9b3f-b02e135bcda4",
+      "result_id": "5c359c6d-c751-42bf-b6df-ac1c661704f0"
+    },
+    {
+      "claim_id": "552c59dc-b027-49f3-8c82-3bc290052638",
+      "result_id": "5c359c6d-c751-42bf-b6df-ac1c661704f0"
+    },
+    {
+      "claim_id": "16ea6ee5-1953-45fa-92e3-b6ca3099de50",
+      "result_id": "5c359c6d-c751-42bf-b6df-ac1c661704f0"
+    },
+    {
+      "claim_id": "12855f07-1e30-4ea7-9a16-b209b865a69e",
+      "result_id": "5c359c6d-c751-42bf-b6df-ac1c661704f0"
+    },
+    {
+      "claim_id": "691742a3-1523-4dc0-a3c4-3545c9048b5c",
+      "result_id": "5c359c6d-c751-42bf-b6df-ac1c661704f0"
+    },
+    {
+      "claim_id": "34a0c677-e6d7-4982-8312-6eb3a4097428",
+      "result_id": "d76c9e26-bdb5-454c-a249-a6b6a42af608"
+    },
+    {
+      "claim_id": "32ef8c11-1ddd-4785-a1ca-2a17408fa347",
+      "result_id": "d76c9e26-bdb5-454c-a249-a6b6a42af608"
+    },
+    {
+      "claim_id": "298bd18a-ae39-45a7-882e-b23397768ad5",
+      "result_id": "d76c9e26-bdb5-454c-a249-a6b6a42af608"
+    },
+    {
+      "claim_id": "240760dd-90b6-4bd7-9081-358468a938a8",
+      "result_id": "d76c9e26-bdb5-454c-a249-a6b6a42af608"
+    },
+    {
+      "claim_id": "a2837c5f-f877-42f0-94ea-7a8e77d7b575",
+      "result_id": "4cc8804e-1b6e-4969-8d64-95673e6c18e0"
+    },
+    {
+      "claim_id": "a8a3d222-ce5a-486d-b42a-9a00cd3e12c6",
+      "result_id": "4cc8804e-1b6e-4969-8d64-95673e6c18e0"
+    },
+    {
+      "claim_id": "ce206125-eaf1-44c5-9776-90ea1985fa4d",
+      "result_id": "4cc8804e-1b6e-4969-8d64-95673e6c18e0"
+    },
+    {
+      "claim_id": "f9cec7eb-9df1-4978-8101-335153015da4",
+      "result_id": "4cc8804e-1b6e-4969-8d64-95673e6c18e0"
+    },
+    {
+      "claim_id": "e6f75ba9-70e9-4e3c-88d1-5d84a589471d",
+      "result_id": "e463e206-5e65-411c-8c83-88654900c942"
+    },
+    {
+      "claim_id": "ab6e30e2-d824-4cd8-b241-cc9f38bef5ba",
+      "result_id": "e463e206-5e65-411c-8c83-88654900c942"
+    },
+    {
+      "claim_id": "8f902335-97ff-4a9c-b918-ce253f58a465",
+      "result_id": "e463e206-5e65-411c-8c83-88654900c942"
+    },
+    {
+      "claim_id": "41d1424a-d180-4404-952d-58b05767a9ac",
+      "result_id": "e463e206-5e65-411c-8c83-88654900c942"
+    },
+    {
+      "claim_id": "aab5ffb0-28a6-476e-a9b8-b4db83924240",
+      "result_id": "e463e206-5e65-411c-8c83-88654900c942"
+    },
+    {
+      "claim_id": "f0c01af9-bcdc-470f-a8a1-18408e35f1e2",
+      "result_id": "e463e206-5e65-411c-8c83-88654900c942"
+    },
+    {
+      "claim_id": "6d31e1d8-b906-4abc-8459-2226f73b3dd5",
+      "result_id": "e463e206-5e65-411c-8c83-88654900c942"
+    },
+    {
+      "claim_id": "181e3e11-8825-400b-8035-bcfa7deec3cc",
+      "result_id": "d6850a21-e35e-4094-a9b9-e9d97cdb8cf8"
+    },
+    {
+      "claim_id": "c9530fae-8ad1-4918-89b4-571191f28d3e",
+      "result_id": "d6850a21-e35e-4094-a9b9-e9d97cdb8cf8"
+    },
+    {
+      "claim_id": "02293754-3c95-4364-8bb7-c70f3e864ec6",
+      "result_id": "d6850a21-e35e-4094-a9b9-e9d97cdb8cf8"
+    },
+    {
+      "claim_id": "d143abf6-9e79-4371-9c39-43de5ccbe57e",
+      "result_id": "d6850a21-e35e-4094-a9b9-e9d97cdb8cf8"
+    },
+    {
+      "claim_id": "ab711507-6478-46d2-816f-d5a3f8910c1b",
+      "result_id": "d6850a21-e35e-4094-a9b9-e9d97cdb8cf8"
+    },
+    {
+      "claim_id": "a3f6425a-1f2d-4a64-81f4-3b64e05c2d4c",
+      "result_id": "d6850a21-e35e-4094-a9b9-e9d97cdb8cf8"
+    },
+    {
+      "claim_id": "cd8f122d-97ba-43f4-8b27-8cda4dec802b",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "a2f77992-aa9f-4718-8a45-28e70ece28e5",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "93a26a0b-3f63-40c6-8a6d-cdb10d047e51",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "11e4a354-85c9-4f6c-a59c-67c410a4de0c",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "3ae96713-39c7-4ae6-9e50-ea86db7cc4a2",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "8d3f79d0-687b-453d-b1f1-d340712a6abb",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "53b5c232-aee8-4f0e-a030-dcc56a41acc7",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "8b939b9c-77fe-4574-9183-29688c016c20",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "ff01c514-d812-48ff-9375-57d188daedf3",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "ac3e1770-4461-4753-8ced-4b636416bb4f",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "2b6e2cf9-c34f-49cc-819e-eb7ffdf91b24",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "45fd6e41-8034-4464-ac0b-0d708f9af796",
+      "result_id": "b203192a-12b7-4a6f-8656-c9125be6f6b4"
+    },
+    {
+      "claim_id": "686eecfd-377b-4157-929c-42cd133f2f0b",
+      "result_id": "e6125a67-d79b-4de2-ad50-7fd4c31c668a"
+    },
+    {
+      "claim_id": "4195441e-708f-41f1-b7f8-c0ce553d25c4",
+      "result_id": "e6125a67-d79b-4de2-ad50-7fd4c31c668a"
+    },
+    {
+      "claim_id": "f7b37512-539f-43a3-a29c-abf4f2dbcb88",
+      "result_id": "e6125a67-d79b-4de2-ad50-7fd4c31c668a"
+    },
+    {
+      "claim_id": "1aac3b9d-820d-4085-be8c-709f6605e40b",
+      "result_id": "e6125a67-d79b-4de2-ad50-7fd4c31c668a"
+    },
+    {
+      "claim_id": "d75d219a-eca0-46ef-8a91-2080a92d22b6",
+      "result_id": "e6125a67-d79b-4de2-ad50-7fd4c31c668a"
+    },
+    {
+      "claim_id": "ae7aee09-3ad6-4c18-a3d3-ff44fdd973d8",
+      "result_id": "0dc01c07-2c55-49d0-b3de-89aa0e2d4059"
+    },
+    {
+      "claim_id": "56e8f583-b758-4fe2-b197-8f37532f39a1",
+      "result_id": "0dc01c07-2c55-49d0-b3de-89aa0e2d4059"
+    },
+    {
+      "claim_id": "0402d70b-94b6-4702-bb1f-77c89d7a053f",
+      "result_id": "0dc01c07-2c55-49d0-b3de-89aa0e2d4059"
+    },
+    {
+      "claim_id": "b708dd16-cc22-4b3c-bb1d-357218c52b1e",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "7866c9b9-9930-4f71-92a4-76ea3b24079a",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "2d652955-81f2-48be-948a-9fd7631c29eb",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "c289c569-259f-456b-905b-0043de794f58",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "a2a523e4-779c-4249-b975-35ba5429b461",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "524c75f2-a0a0-470d-a186-c846a9cac368",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "9d2e548a-a9b6-4548-87d0-343d29d0b12d",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "cf61bbac-bd97-487a-96ca-aa19150953db",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "e597e9f9-20f7-4225-8c32-5b77ea954723",
+      "result_id": "c8b930ba-062e-4a8c-ac11-1b672c773632"
+    },
+    {
+      "claim_id": "bec0248d-b09e-44c0-9bac-8ff99142328d",
+      "result_id": "742f1392-63cb-4a61-a74b-de6828572136"
+    },
+    {
+      "claim_id": "7b92e601-2731-4357-b2f5-703720d54f8c",
+      "result_id": "742f1392-63cb-4a61-a74b-de6828572136"
+    },
+    {
+      "claim_id": "5e7745ea-5393-4115-8c02-1452cbbaa7d2",
+      "result_id": "742f1392-63cb-4a61-a74b-de6828572136"
+    },
+    {
+      "claim_id": "40b1602f-bb69-490e-92a0-c32fdf7b4601",
+      "result_id": "742f1392-63cb-4a61-a74b-de6828572136"
+    },
+    {
+      "claim_id": "9cc0b04d-b42c-4188-9488-d3754be1b95d",
+      "result_id": "742f1392-63cb-4a61-a74b-de6828572136"
+    },
+    {
+      "claim_id": "83b713e6-b105-4565-b883-56873fc9be48",
+      "result_id": "742f1392-63cb-4a61-a74b-de6828572136"
+    },
+    {
+      "claim_id": "70543ba6-91be-4f47-9d07-525bd9a18e31",
+      "result_id": "742f1392-63cb-4a61-a74b-de6828572136"
+    },
+    {
+      "claim_id": "ba88cc6b-926e-457d-b3fd-57beb5aa193b",
+      "result_id": "04578e33-2915-44e6-bc79-98a2afd92411"
+    },
+    {
+      "claim_id": "2935963d-a382-4386-907b-176aff11a9ec",
+      "result_id": "04578e33-2915-44e6-bc79-98a2afd92411"
+    },
+    {
+      "claim_id": "0c923d11-fa74-4722-8533-daa3814b5920",
+      "result_id": "8bccfa45-323c-4662-97b3-5c2032d6ab6d"
+    },
+    {
+      "claim_id": "8f284e0f-e23d-4524-a83c-921431c47ac7",
+      "result_id": "8bccfa45-323c-4662-97b3-5c2032d6ab6d"
+    },
+    {
+      "claim_id": "e314bd66-82f8-4df2-9bda-7080d8b1df30",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "0ac1f7d9-aafe-4f3a-b195-87b90d3f3d85",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "f1306928-a952-4a27-82cd-60296e785dae",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "8555c647-f9d4-49aa-a794-8946cd091688",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "cc539712-f4fd-4ae3-98fb-fba20a53a797",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "fd9da53d-2d76-4af2-bf1b-adcc44f4c462",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "5a54a1ab-c121-4671-8ddb-a530fd5b4cc5",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "4eddaf38-b396-4ea7-a0db-80f29a4581a3",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "0439a49b-909c-4ecf-9f03-7bf530d760bc",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "965255f9-1d6c-41e6-921b-0ad731f8272e",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "f85ad994-041d-4d3d-a6b9-a8d366c9fa1b",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "b2def942-9f6d-4dbd-8139-783f63262117",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "c9512f2e-ae11-4a17-8f59-ddf1d9248b59",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "16f10bcd-22d9-4c0f-b1b8-30b654257d7a",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "fba34258-7b68-44f6-85e6-382c5cb25887",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "3f06334d-ef79-4d59-950c-8271cd0ee347",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "4deaa266-dc97-417e-8f3a-81c38a8a0f0d",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "e55104aa-c638-489e-ab92-7f679a624efa",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "76d04380-175d-4e77-85eb-d1044f4190a8",
+      "result_id": "5853d39c-b9b4-4fd1-9788-93f048aa2be5"
+    },
+    {
+      "claim_id": "4e4b7d08-06b8-4130-87d1-23e053099cdf",
+      "result_id": "d26b08d4-c7a2-469c-8205-eb4662b09b18"
+    }
+  ],
+  "comparisons": []
+}

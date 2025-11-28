@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C91",
+      "C92"
+    ],
+    "result": "Membrane tension is elevated in mitotic cells. The authors measured tether force using optical trapping and found it increased from 19.2 \u00b1 1.5 pN in interphase to 27 \u00b1 2.8 pN in metaphase (p=0.027), consistent with previous reports. This increased tension requires more energy from the CME machinery to overcome the increased load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C31 provide direct experimental measurements with appropriate statistical testing (C30: p=0.027) and comparison to prior work. The methodology (C91, C92) is well-established. The inference about energy requirements (C33) logically follows from biophysical principles (C32). The measurements are consistent with cited prior work (C22, C23, C29, C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C93",
+      "C94"
+    ],
+    "result": "Proteomic analysis reveals cortactin is lost from mitotic clathrin-coated structures. Mass spectrometry of purified CCSs from interphase vs mitotic cells (1253 proteins compared) showed cortactin was most consistently reduced (LFQ ratio = 46.2). Microscopy confirmed cortactin and HIP1 were diffusely localized in mitosis while HIP1R remained associated with CCSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic approach (C93) analyzed a large dataset across four independent experiments. The cortactin finding (C36) is validated by independent microscopy (C45, C46, C94). The differential regulation of HIP1/HIP1R (C41, C45, C46) is consistent with their known functional coupling to cortactin (C43). Other findings (C39, C40, C44) are noted as consistent with prior work or for future exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Ect2 depletion restarts CME in mitotic cells by increasing actin availability. Two independent siRNAs against Ect2 reversed mitotic CME shutdown, with rescue experiments confirming specificity. Ect2 depletion reduced cortical F-actin ratio and increased cytosolic G-actin, indicating increased actin availability without affecting cortex formation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this result: two independent siRNAs (C48), rescue with siRNA-resistant constructs (C49, C50), quantitative F-actin measurements (C52), and G-actin analysis (C53). The interpretation about actin availability (C54) is reasonably inferred from the data. The use of two siRNAs and rescue experiments addresses potential off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C95"
+    ],
+    "result": "Membrane tension remains high in Ect2-depleted mitotic cells. Tether force measurements showed no significant difference between Ect2-depleted and control mitotic cells (relative tether force 1.02 \u00b1 0.15, p=0.921), ruling out that CME restoration occurs through indirect reduction of membrane tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 provides direct measurements with appropriate statistical testing showing no significant difference. This is a critical control experiment that rules out an alternative explanation (C95). The conclusion (C56) is directly supported by the data and strengthens the main hypothesis about actin availability rather than tension reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C96"
+    ],
+    "result": "Restored CME in Ect2-depleted mitotic cells is actin-dependent. Latrunculin B treatment blocked restored CME in Ect2-depleted mitotic cells but not in interphase cells. Latrunculin B did not restart CME in control mitotic cells, arguing against direct cortex inhibition of CME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential sensitivity to latrunculin B (C57) between restored mitotic CME and interphase CME is compelling evidence. The negative control (C58) rules out that actin depolymerization alone restarts CME (C96). The conclusion (C59, C60) that restored mitotic CME is uniquely actin-dependent is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Constitutively active Rap1(Q63E) prevents cortex formation and increases actin availability in mitotic cells. Expression of Rap1(Q63E), but not inactive Rap1(S17A), caused mitotic cells to remain flat with reduced cortical F-actin ratio and ~20% more cytosolic G-actin compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of both active (Q63E) and inactive (S17A) mutants (C63) provides appropriate controls. Quantitative measurements of F-actin (C64) and G-actin (C65) support the conclusion about increased actin availability. The findings are consistent with cited prior work on Rap1 function (C61, C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C97"
+    ],
+    "result": "Membrane tension remains high in Rap1(Q63E)-expressing mitotic cells. Tether force measurements showed no significant difference from controls (relative tether force 1.15 \u00b1 0.08, p=0.21), indicating that CME restoration occurs through increased actin availability rather than reduced membrane tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Similar to the Ect2 depletion result, this provides a critical control (C66, C67) with appropriate statistical testing. The conclusion (C97) that actin availability rather than tension reduction explains CME restoration is well-supported and parallels the Ect2 findings, strengthening the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Rap1(Q63E) expression restarts CME in mitotic cells in a cortactin-dependent manner. Mitotic cells expressing Rap1(Q63E) showed transferrin uptake comparable to interphase. Cortactin depletion blocked this restored CME but had no effect on interphase CME. Specificity was confirmed with two siRNAs and rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transferrin uptake data (C68) demonstrates CME restoration. The differential cortactin dependence (C69, C70) between mitotic and interphase CME is compelling. Rigorous controls including two siRNAs and rescue experiments (C71, C72) address off-target concerns. The analogy to Ect2/latrunculin B experiments (C98) strengthens the overall conclusion (C99, C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Restored CME in Rap1(Q63E)-expressing mitotic cells is not specific to transferrin receptor. CD8 chimeras with all three main endocytic motifs (YXX\u03a6, [DE]XXXL[LI], FXNPXY) showed intracellular puncta and antibody uptake in Rap1(Q63E)-expressing mitotic cells, indicating global CME restoration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Two independent assays (steady-state distribution C74 and antibody uptake C75) demonstrate CME of multiple cargo types. Testing all three major endocytic motifs provides comprehensive evidence that CME restoration is not cargo-specific. This addresses a potential limitation of relying solely on transferrin uptake.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Direct mitotic phosphorylation of endocytic proteins does not account for CME shutdown. Dab2 remained phosphorylated in Rap1(Q63E)-expressing mitotic cells with restored CME. Brief Cdk1 inhibition with flavopiridol reversed Dab2 phosphorylation but did not restart CME in control mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The western blot data (C78) shows maintained phosphorylation during restored CME. The flavopiridol experiment (C80) is a critical test: if phosphorylation directly inhibited CME, Cdk1 inhibition should restart it, but it does not. This effectively rules out direct phosphorylation as the primary mechanism (C81). The logic connecting C79 and C81 is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C101",
+      "C102"
+    ],
+    "result": "Mitotic CME shutdown results from a two-layer inhibition: increased membrane tension creates an actin requirement, but actin is unavailable due to cortex formation. Both Ect2 depletion and Rap1(Q63E) expression restart CME by making actin available despite high membrane tension, supporting a model where unmet actin requirement causes shutdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes multiple experimental findings. The two-layer model (C84, C86, C87, C102) is well-supported by: (1) membrane tension measurements showing elevation in mitosis (C4, C84), (2) actin availability measurements in both experimental systems (C6, C86), (3) maintained high tension during CME restoration (C56, C66), and (4) actin-dependence of restored CME (C57, C69). The conclusion (C3, C101) represents the main finding and is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on CME and its mitotic inhibition. CME is the major internalization route in mammalian cells and has been known for decades to be inhibited during early mitosis, with shallow clathrin-coated pits arrested at the surface. The mechanism underlying this inhibition was unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are well-supported by citations to established literature (C1, C2, C10, C12, C13, C15, C16, C17). They accurately represent prior knowledge and set up the research question (C11). This is standard background material appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior hypotheses and evidence linking actin, membrane tension, and CME. Two main mechanisms were previously proposed: direct phosphorylation of CME machinery and increased membrane tension. Actin's role in CME is context-dependent, with increased requirement under high membrane tension conditions in interphase cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior work with appropriate citations (C18-C28). They establish the conceptual framework for the current study by reviewing: (1) the phosphorylation hypothesis (C18-C20), (2) the membrane tension hypothesis (C21-C23), and (3) actin's conditional role in CME (C24-C28). This provides essential context for interpreting the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C88",
+      "C89",
+      "C90",
+      "C103"
+    ],
+    "result": "Speculation and broader context. The authors note that phosphorylation may have a minor modulatory role, that Cdk1 orchestrates mitosis at a higher level, that local actin nucleation could provide an override mechanism, and that actin's unavailability represents a 'moonlighting' function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are explicitly speculative (C82, C88) or represent broader conceptual framing (C83, C103). While C89 and C90 cite prior work on EGF receptor internalization, the connection to the current findings is speculative. These represent reasonable interpretations and future directions but are not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

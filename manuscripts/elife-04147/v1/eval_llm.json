@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "iPNs and ePNs exhibit distinct but overlapping anatomical projection patterns. iPNs (~50 neurons) are located in the ventral cell cluster and project via the mACT to the LH, bypassing the MBc. ePNs are located anterodorsally/laterally and project via iACT/oACT to both MBc and LH. In the AL, 75% of glomeruli (40/53) are innervated by MZ699+ iPNs and 70% (37/53) by GH146+ ePNs, with 55% overlap. iPN innervation is non-homogeneous, with selective targeting of specific glomerular subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C13-C17 are well-supported by dual-labeling experiments (Figure 1), systematic glomerular reconstruction, and citations to prior anatomical studies. The quantitative data on glomerular innervation patterns is directly measured and visualized. The selective innervation pattern is clearly demonstrated with specific examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Functional Ca2+ imaging in the LH reveals three spatially distinct, stereotypic odor response domains (ORDs): LH-PM (posterior-medial), LH-AM (anterior-medial), and LH-AL (anterior-lateral). These domains were extracted using NNMF analysis and are highly reproducible within and across individuals. Odor-evoked responses segregate in an odor-specific and concentration-dependent manner, with LH-PM showing robust responses across concentrations while LH-AM and LH-AL are mainly activated at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 are strongly supported by systematic functional imaging experiments (Figure 2) with multiple odors at multiple concentrations across multiple animals (n=6-7). The NNMF computational approach is appropriate and well-described in methods. The reproducibility is demonstrated both within animals (repeated measurements) and across individuals. The three-domain structure is validated with 14 different odorants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Single-neuron tracing using photoactivatable GFP reveals that MZ699+ iPNs can be classified into two major morphological classes based on their LH innervation patterns. One class targets LH-PM (8/25 iPNs) and another targets LH-AM (10/25 iPNs). These classes are statistically distinct (p<0.001, ANOSIM) and exhibit different glomerular innervation patterns in the AL. iPNs are predominantly oligoglomerular, innervating on average 5.4\u00b13.9 glomeruli. LH-PM iPNs innervate ventro/dorsomedial AL glomeruli while LH-AM iPNs innervate ventro/dorsoanterior to dorsocentral glomeruli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 are well-supported by systematic single-neuron reconstructions (n=25 iPNs) using PA-GFP photoactivation (Figure 3). The morphological classification is validated by multiple statistical approaches (cluster analysis, PCA, ANOSIM). The spatial segregation in both AL and LH is clearly demonstrated. However, the sample size of 25 neurons from a population of ~50 iPNs represents only half the population, and the MZ699-GAL4 line labels only 86% of iPNs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Two-photon laser-mediated transection experiments demonstrate that LH-PM and LH-AM activity derives from MZ699+ iPNs (via mACT), while LH-AL activity is mainly evoked by vlPr neurons (via plF). Transecting the mACT significantly reduced responses in LH-PM and LH-AM, while plF ablation abolished LH-AL responses. Some LH-AL responses increased after mACT transection, confirming iPN inhibition of vlPr neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by well-designed transection experiments (Figure 4) with bilateral imaging controls (n=4-5). The experimental design allows within-animal comparisons between intact and lesioned hemispheres. Statistical significance is demonstrated with paired t-tests. The increased LH-AL activity after mACT transection provides additional validation and is consistent with prior work (Liang et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C73",
+      "C108"
+    ],
+    "result": "Behavioral experiments using RNAi-mediated silencing of GABA production in MZ699+ iPNs demonstrate that iPNs are crucial for mediating odor attraction behavior. Flies with silenced iPN GABA production showed neutral or aversive responses to attractive odors and enhanced aversion to repellent odors. All behavioral response indices shifted in a negative direction compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C73, C108 are supported by systematic T-maze behavioral assays with appropriate controls (wild-type, parental lines, n=12 replicates of 30 flies each). GABA knockdown was confirmed by immunostaining (Figure 5B). Statistical analysis used appropriate non-parametric tests (Wilcoxon, Dunn's). The behavioral phenotype is consistent and specific. However, RNAi knockdown may not be complete, and off-target effects cannot be entirely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Correlation analysis reveals that the three LH ORDs encode distinct odor features. LH-PM shows significant positive correlation with odor valence (r=0.45, p<0.05) and is independent of concentration. LH-AM shows positive but non-significant correlation with valence and significant correlation with intensity (r=0.67, p<0.001). LH-AL shows strong negative correlation with valence (r=-0.68, p<0.001) and positive correlation with intensity (r=0.59, p<0.001). Attractive and aversive odor representations form separate clusters in 3D ORD space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 are supported by systematic correlation analysis combining functional imaging data with behavioral response indices from T-maze assays (Figure 6). The statistical approach is appropriate (Pearson correlation, Student's t-test). The sample size is adequate (14 odors at 2-3 concentrations, n=6-7 animals). The clustering analysis and 3D visualization provide clear support. However, the behavioral assays used (T-maze) may not perfectly reflect innate preferences for all odors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Odor representations in the LH cluster into three separated domains reflecting the observed ORDs, but this LH coding similarity does not predict AL activity patterns. Correlation matrices show clear segregation in the LH but not in the AL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by correlation matrix analysis comparing AL and LH activity patterns (Figure 6E, Figure 6-supplement 3). The analysis includes functional imaging of both AL (using Orco-GAL4) and LH for the same odor set. The finding that LH organization differs from AL organization is clearly demonstrated and supports the concept of feature extraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Neurotransmitter characterization reveals that GH146+ PNs include ~6 GABAergic iPNs in the ventral cluster and cholinergic ePNs. MZ699+ iPNs (~45 neurons) are GABAergic as shown by GAD1 in situ hybridization and immunostaining. Both PN populations have dendritic regions in the AL (input site) and axonal terminals in the LH (output site).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 are supported by citations to multiple prior studies (Wilson and Laurent 2005, Shang et al. 2007, Okada et al. 2009, Liang et al. 2013, Parnas et al. 2013, Jefferis et al. 2001) that established these properties. The polarity and neurotransmitter identity are well-established in the field. This represents accurate reporting of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Discussion claims that MZ699+ iPNs' oligoglomerular innervation pattern suggests they extract common features rather than convey precise odor identity. iPNs selectively innervate attraction-coding glomeruli while omitting aversion-coding glomeruli, suggesting extraction of positive odor traits. The iPN population is split into two morphological classes with spatial segregation maintained from AL to LH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 represent interpretations and synthesis of the experimental findings (C29-C39, C65-C66 based on data, C64 cites Knaden et al. 2012, C68 cites Fisek and Wilson 2014). The interpretations are logical and well-supported by the data. The comparison to ePNs (uniglomerular, topographic) strengthens the argument. The selective innervation pattern provides strong support for feature extraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C85",
+      "C86",
+      "C107",
+      "C109"
+    ],
+    "result": "The study concludes that iPNs extract specific features from the AL combinatorial code and that odors with opposing hedonic valences are encoded by distinct processing pathways. The LH exhibits a feature-based spatial arrangement decoding hedonic valence and odor intensity, expanding its role as a center for integrating behaviorally relevant olfactory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76, C85, C86, C107, C109 represent the main conclusions synthesizing all experimental findings. These are well-supported by the convergence of anatomical (C29-C39), functional (C18-C28, C40-C44, C49-C59), and behavioral (C45-C48) evidence. The conclusions are appropriately cautious and acknowledge the integrative nature of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Discussion contextualizes findings within prior literature, noting that spatial segregation of opposing valences in the LH has been suggested (Min et al. 2013), that iPNs selectively suppress vlPr neurons for food odors (Liang et al. 2013), that the LH is sufficient for basic olfactory behavior (de Belle and Heisenberg 1994), and that similar principles exist in other insects (locusts: Gupta and Stopfer 2012; honeybees: Roussel et al. 2014). The proposed mechanism is that iPNs mediate attraction by inhibiting aversive circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C84 accurately cite and interpret prior literature to contextualize the current findings. The citations are appropriate and the interpretations are consistent with the cited work. C82 is appropriately marked as speculative ('might be') and acknowledges the need for further validation. The comparative analysis with other insect species strengthens the generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Introduction establishes background knowledge about the Drosophila olfactory system, including its similarity to mammalian systems, the organization of the AL, the roles of MBc and LH, the existence of dual olfactory pathways (iPNs and ePNs), and prior evidence for compartmentalization in the LH and module-specific inhibitory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C106 represent accurate reporting of established background knowledge with appropriate citations to foundational studies in the field. These claims provide necessary context for the current work and are well-supported by the cited literature. This is standard background material rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

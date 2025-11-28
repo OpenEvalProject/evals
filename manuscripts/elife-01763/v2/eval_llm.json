@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "MELK was identified as a novel oncogenic kinase from an in vivo tumorigenesis screen using a kinome-wide ORF library. The screen identified 26 kinases enriched in tumors, including several previously known oncogenes and mitotic regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30-C32 describe the kinome-wide screen methodology and results. The screen design is appropriate, using HMEC-DD-NeuT cells and qPCR validation of enriched kinases in tumors versus pre-injection cells. The identification of known oncogenes (IKBKE, RET) and mitotic kinases (PLK1, NEK6) serves as positive validation of the screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MELK is highly overexpressed in breast cancer, particularly in basal-like breast cancer (BBC), and this overexpression correlates with higher tumor grade. MELK expression ranks in the top 1% of overexpressed genes in breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C40-C42 present consistent findings across multiple independent cohorts (TCGA and 5+ additional cohorts with >1500 patients). The statistical significance is strong (p=4.6\u00d710\u207b\u2075\u2074 for tumor vs normal; p<0.0001 for BBC vs other subtypes), and the grade-stratified analysis (C41) controls for confounding by tumor grade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C104"
+    ],
+    "result": "High MELK expression strongly correlates with poor clinical outcomes including earlier metastasis and increased mortality across multiple independent breast cancer cohorts, regardless of treatment modality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C104 present survival analysis from multiple independent cohorts with consistent results (all p<0.05, hazard ratios >2). The findings hold across different patient populations (lymph-node-negative, treated with chemotherapy/hormone therapy) and outcome measures (metastasis-free survival, overall survival), strengthening the robustness of the association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "MELK expression inversely correlates with ER/PR expression and is highest in triple-negative breast cancer (TNBC). ER/PR+ tumors lack detectable MELK protein while ER/PR- tumors have abundant MELK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 demonstrate consistent inverse correlation between MELK and ER/PR across multiple cohorts at both mRNA and protein levels. The immunoblotting data (C44) provides strong protein-level validation showing complete absence of MELK in all 4 ER/PR+ samples tested, though the sample size is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Gene amplification of MELK occurs in breast cancer, particularly in ER-negative samples, and correlates with high MELK expression, but occurs at low frequency and does not explain widespread MELK overexpression in BBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 appropriately characterize gene amplification as a contributing but insufficient mechanism for MELK overexpression. The data show correlation between copy number and expression (C48) but acknowledge the low frequency (C49), motivating investigation of alternative regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C111",
+      "C112"
+    ],
+    "result": "MELK overexpression in BBC is largely dependent on FoxM1, a master mitotic transcription factor also highly overexpressed in BBC. FoxM1 and MELK show extremely tight correlation, FoxM1 knockdown reduces MELK expression, and ChIP assays demonstrate FoxM1 binding to the MELK promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C50-C54, C111-C112 provide multiple lines of evidence for FoxM1 regulation of MELK: correlation analysis across cohorts, knockdown/inhibitor experiments, identification of FoxM1 binding motif, and ChIP validation. The mechanistic evidence is strong, though the ChIP experiment uses only one cell line and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MELK is a mitotic kinase in BBC cells with expression pattern similar to Cyclin B1 and Aurora kinases. MELK protein levels during M phase are much higher in BBC cells compared to luminal cells, while other mitotic factors are comparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 demonstrate cell cycle-dependent MELK expression through synchronization experiments. The comparison between BBC and luminal cells (C57-C58) is particularly important, showing selective elevation of MELK but not other mitotic markers in BBC, suggesting a unique role for MELK in BBC mitosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C99"
+    ],
+    "result": "Overexpression of wild-type MELK induces robust oncogenic transformation in vitro and in vivo with potency comparable to oncogenic PIK3CA H1047R. The transforming ability requires MELK kinase activity, as kinase-dead mutants fail to transform cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65, C99 demonstrate MELK's oncogenic potential through multiple complementary assays: tumor formation in HMEC-DD-NeuT cells, increased proliferation, anchorage-independent growth, and Rat1 transformation. The kinase-dead mutant controls (C64-C65) establish requirement for catalytic activity. The comparison to PIK3CA H1047R provides important context for the magnitude of transforming activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C100"
+    ],
+    "result": "MELK is selectively essential for proliferation of basal-like breast cancer cells but not luminal breast cancer cells. MELK knockdown strongly impairs growth of all six BBC cell lines tested but has no effect on five luminal cell lines. Rescue with wild-type but not kinase-dead MELK confirms specificity and requirement for kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71, C100 demonstrate selective dependency through systematic knockdown experiments across multiple cell lines (6 BBC, 5 luminal). The rescue experiments (C70-C71) with shRNA-resistant MELK and kinase-dead mutant provide critical specificity controls and establish requirement for catalytic activity. The consistency across multiple BBC lines strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Depletion of MELK in BBC cells induces caspase-dependent apoptosis, as evidenced by increased cleaved caspase-3, cleaved PARP, and DNA fragmentation. The pan-caspase inhibitor zVad rescues cell death. MELK knockdown or inhibition has little effect on luminal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C72-C75 demonstrate apoptosis through multiple markers and functional rescue with caspase inhibitor. The selective effect on BBC vs luminal cells is consistent across genetic (shRNA) and pharmacological (OTSSP167) approaches. The zVad rescue experiment (C73) establishes causal role of caspases in executing cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Cell death induced by MELK depletion is preceded by defective mitosis, including accumulation of 4n DNA content, elevated mitotic markers, increased binucleated cells, asymmetric division, and failure to progress through metaphase. Time-lapse imaging reveals that cell death events are often preceded by division abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C76-C80, C82-C87 provide comprehensive characterization of mitotic defects through flow cytometry, immunoblotting, microscopy, and time-lapse imaging. The quantification from time-lapse imaging (C86-C87: 16/27 failed mitoses in knockdown vs 1/37 in control) provides strong statistical evidence. The temporal relationship between mitotic defects and cell death is well-established through time-lapse analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "MELK is required for oncogenic growth of BBC cells in vitro and in vivo. MELK knockdown nearly completely inhibits colony formation in soft agar, prevents tumor formation when administered before injection, and causes substantial regression of established BBC tumors but has little effect on luminal tumors. The MELK inhibitor OTSSP167 recapitulates these selective effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 demonstrate therapeutic potential through multiple in vitro and in vivo assays. The experiments with established tumors (C90-C91) are particularly important for therapeutic relevance. The consistency between genetic (shRNA) and pharmacological (OTSSP167) approaches strengthens the conclusions. However, the xenograft experiments lack statistical details (sample sizes, p-values) in some cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C101"
+    ],
+    "result": "Melk is not required for mouse development and physiology. Melk-deficient mice are viable, fertile, produce normal litters, and show normal mammary gland morphology and function. Immune cell populations and hematopoietic stem/progenitor cells are indistinguishable from wild-type mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C92-C96, C101 demonstrate that Melk is dispensable for normal physiology through comprehensive characterization of knockout mice. The analysis of hematopoietic populations is particularly important given bone marrow toxicity concerns with mitotic kinase inhibitors. This finding strongly supports MELK as a selective therapeutic target, though the manuscript does not address potential compensatory mechanisms in knockout mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C102",
+      "C103",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "MELK is a normally non-essential kinase that is critical for BBC and represents a promising selective therapeutic target. Unlike other essential mitotic kinases (Aurora A/B, PLK1), MELK is only required by a subset of cancer cells, making it an excellent therapeutic target for the most aggressive subtype of breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C102-C103, C122, C124-C125 synthesize the key findings into a therapeutic conclusion. The conclusion is well-supported by the collective data: selective dependency of BBC cells, requirement for kinase activity, dispensability in normal mice, and efficacy in xenograft models. The comparison to other mitotic kinases appropriately contextualizes MELK's unique properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "MELK overexpression has been associated with tumor aggressiveness and poor outcome in other cancers (glioblastoma, astrocytoma, prostate cancer). The prognostic feature of MELK expression is likely due to its correlation with cell proliferation, as MELK is a top-ranking proliferation signature gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 appropriately contextualize MELK's prognostic value by citing published studies in other cancers and acknowledging the confounding relationship with proliferation. The citation of Venet et al. 2011 regarding proliferation signatures is appropriate and provides important context for interpreting prognostic associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "The authors propose that one or more MELK-related kinases are required for cell division in vertebrate cells, but BBC cells have become uniquely dependent on MELK, perhaps due to down-regulation of redundant kinases. In other cells, MELK may function during division but is not essential due to redundancy with related kinases like AMPK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119, C121 present a speculative model to explain MELK's selective essentiality in BBC cells. While the hypothesis is reasonable and consistent with the data, it lacks direct experimental support. The manuscript does not test whether redundant kinases are down-regulated in BBC cells or whether AMPK can compensate for MELK loss in other cell types. This remains an interesting hypothesis requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establishing the clinical challenge of treating basal-like breast cancer, the characteristics of BBC/TNBC, the role of kinases in cancer, and the limitations of current mitotic kinase inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C16-C29 present established knowledge from the literature with appropriate citations. These background claims provide context for the study but do not represent novel findings. The citations appear appropriate and the characterization of the field is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C108",
+      "C109",
+      "C110",
+      "C114",
+      "C115",
+      "C116",
+      "C120",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background claims about MELK from prior literature, including its classification as an AMPK family member, regulation, substrates, expression in other systems, and previous screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C108-C110, C114-C116, C120, C123, C126-C129 appropriately cite prior literature on MELK. The acknowledgment that MELK substrates mediating oncogenic activity remain unknown (C110) is important for contextualizing the mechanistic understanding. The citations to C. elegans and frog studies provide evolutionary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "FoxM1 was recently proposed as a transcriptional driver of proliferation-associated genes in BBC by the TCGA study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 appropriately cites the TCGA 2012 study, which is consistent with the authors' findings on FoxM1 regulation of MELK. This provides independent validation of FoxM1's role in BBC from a large-scale genomic study.",
+    "result_type": "MINOR"
+  }
+]

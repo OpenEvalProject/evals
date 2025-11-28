@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8"
+    ],
+    "result": "Recombinant ChaC1 efficiently degrades reduced glutathione (GSH) in vitro with high selectivity, while oxidized glutathione (GSSG) is not a substrate. The E116Q mutation abolishes enzymatic activity, and the cysteine-free ChaC1CtoS mutant retains full enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C8 are well-supported by in vitro enzymatic assays (Figures 1A-E, 2C) demonstrating concentration-dependent GSH degradation, substrate selectivity, and retention of activity in the CtoS mutant. The data are quantitative and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C84"
+    ],
+    "result": "Wild-type ChaC1 forms inappropriate disulfide bonds when targeted to the ER, but structural modeling suggests cysteines are not essential for catalysis. The cysteine-free ChaC1CtoS mutant eliminates disulfide formation in the ER and lacks predicted N-glycosylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by SDS-PAGE data (Figure 2A, Figure 2\u2014supplement 1) showing heterogeneous migration of wild-type but not CtoS mutant. Claim C6 relies on structural modeling which is reasonable but indirect. Claim C84 is a straightforward sequence prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Grx1 fusion dramatically accelerates roGFP2 equilibration with glutathione in vitro, with Kmax0.5 of ~18 \u00b5M GSSG. Without Grx1, roGFP2 oxidation by glutathione is slow and dominated by PDI, while Grx1-roGFP2 responds primarily to glutathione with minimal PDI contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 are well-supported by in vitro kinetic measurements (Figures 3B-D) showing differential oxidation rates and concentration-dependent kinetics. The Kmax0.5 determination appears properly fitted. The distinction between PDI-dependent and glutathione-dependent oxidation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C22",
+      "C64",
+      "C66"
+    ],
+    "result": "In live cells, ER-Grx1-roGFP2 recovers faster than ER-roGFP2 after DTT reduction (75.3\u00b17.7s vs 167.3\u00b116.8s), consistent with lumenal glutathione contribution. Expression of active ER-ChaC1CtoS abolishes this kinetic advantage, indicating profound depletion of ER glutathione to micromolar levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C22, C64, C66 are supported by live cell imaging (Figures 3E-H) with quantitative kinetic analysis. The inference that glutathione is depleted to <18 \u00b5M (based on the in vitro Kmax0.5) is logical given the abolition of the Grx1-roGFP2 kinetic advantage. Statistical significance is reported for C15.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C65"
+    ],
+    "result": "Cytosolic ChaC1 markedly depletes total cellular glutathione, while ER-localized ChaC1CtoS has modest effects on total pools but enhances BSO-mediated depletion. This indicates slow equilibration between cytosolic and ER glutathione pools and slow transport of glutathione into the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C65 are supported by ensemble glutathione measurements (Figure 3I) in stable cell lines. The differential effects of cytosolic vs ER-localized ChaC1 on total cellular glutathione logically support the inference of slow inter-compartmental equilibration, though direct transport measurements are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "LDL-R maturation, which requires disulfide rearrangement involving ERdj5, proceeds normally (t1/2 ~1 hr) in the presence of active ER-ChaC1CtoS. Glutathione depletion affects neither the oxidative nor reductive phases of LDL-R maturation, even with combined ER-ChaC1CtoS and BSO treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are well-supported by pulse-chase experiments (Figures 4A-E) showing identical LDL-R maturation kinetics with active vs inactive ChaC1, on both reducing and non-reducing gels. Claims C23-C24 cite prior literature appropriately. The experiments include proper controls and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "In cells genetically deficient in ERO1 and PRDX4 oxidases, expression of active ER-ChaC1 has no effect on roGFP2 re-oxidation kinetics following DTT reduction, demonstrating that glutathione is dispensable for thiol oxidation in the mammalian ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by live cell imaging in oxidase-deficient cells (Figures 4F-G). This is a strong experimental design testing glutathione's role under sensitized conditions. The lack of effect on oxidation kinetics despite glutathione depletion supports the conclusion, though C30 is a broad inference from specific experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "NHK-A1AT degradation, which requires reduced ERdj5, proceeds with identical kinetics in the presence of active vs inactive ER-ChaC1CtoS in both HeLa and 293T cells. Combined ER-ChaC1CtoS and BSO treatment also has no effect, indicating glutathione is dispensable for ER-associated degradation of this substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by pulse-chase experiments in two cell types (Figures 5A-F). Claim C31 appropriately cites prior work. The experiments include proper controls and show no effect of glutathione depletion on NHK-A1AT half-life. The inference in C34 is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neither active nor inactive ER-ChaC1CtoS affects basal or tunicamycin-induced UPR activity measured by CHOP::GFP reporter. This indifference across a broad range of ER stress and ChaC1 expression suggests glutathione dispensability extends to bulk ER protein folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by FACS analysis (Figure 6A) showing no shift in UPR reporter activity with ChaC1 expression. Claims C35-C36 appropriately cite prior work establishing the UPR-redox connection. The inference in C39 is reasonable but extrapolates from the absence of a UPR response to broader conclusions about protein folding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Hyperactive ERO1* (C104A, C133A) modestly activates the UPR, but co-expression of active ChaC1CtoS shows no synergistic effect beyond that of inactive ChaC1, indicating glutathione is dispensable even under hyperoxidizing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by multi-channel FACS analysis (Figure 6B, Figure 6\u2014supplement 1) showing ERO1*-induced UPR activation is unaffected by glutathione depletion. The experimental design properly controls for ChaC1 expression levels using mCherry and CD2 markers. The conclusion in C42 is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The manuscript provides extensive background on ER protein folding machinery, including PDI-mediated disulfide formation and editing, upstream oxidases (ERO1, PRDX4, VKOR), the requirement for reduced PDI, and the prevailing belief that reduced glutathione fuels reductive processes in the eukaryotic ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C61 represent established knowledge appropriately cited from the literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Prior studies in yeast, plants, and mammalian cells have provided hints about glutathione's role in ER redox, including GSH1 deletion effects, ERO1-deficient cell phenotypes, and impacts on specific proteins like Notch and Factor VIII, though the extent of ER glutathione depletion in these studies was often unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C72-C78 appropriately cite and discuss prior literature, providing context for the current study. Claim C63 appropriately notes limitations of previous approaches. These are accurate representations of prior work based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "The authors speculate that glutathione redundancy could be explained by other small molecule thiols (possibly including cysteinyl-glycine) or by a protein-driven apparatus similar to bacterial DsbD. They suggest glutathione may equilibrate with protein thiols too slowly to be essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67, C68, and C71 are explicitly speculative explanations for the observed glutathione dispensability. These are reasonable hypotheses but lack experimental support in the current study. They represent potential mechanisms that would require future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Despite its dispensability, ER glutathione equilibrates with protein thiols, indicating it functions as a redox buffer in the organelle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 cite prior work (Appenzeller-Herzog et al., 2010) demonstrating glutathione-protein thiol equilibration. The inference that this makes glutathione a redox buffer (C70) is reasonable, though the current study shows this buffering is not essential for the processes examined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The authors conclude that ER glutathione is not generally required to maintain protein thiol redox or folding homeostasis in the ER of cultured mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 represents the main conclusion, supported by the collective evidence from LDL-R maturation (C25-C28), NHK-A1AT degradation (C32-C34), roGFP2 oxidation in oxidase-deficient cells (C29), and UPR measurements (C37-C39). The qualification 'in cultured mammalian cells' is appropriate given the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "ChaC1 is a glutathione-specific \u03b3-glutamyl cyclotransferase with millimolar-range substrate affinity. The mCherry-tagged ChaC1CtoS retains enzymatic activity and purges ER glutathione, and was predicted to function in the ER based on lack of N-glycosylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by citations and experimental data (Figures 1D, 3G). Claim C85 represents a reasonable prediction based on sequence analysis that was subsequently validated experimentally. These claims establish the tool used for the study.",
+    "result_type": "MINOR"
+  }
+]

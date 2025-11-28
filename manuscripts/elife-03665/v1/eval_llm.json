@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10"
+    ],
+    "result": "Beam-induced motion in cryo-EM is caused by electron beam interactions with the sample, which blurs images and limits resolution in single-particle analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C10 establish well-known phenomena in cryo-EM that are supported by multiple citations and represent established knowledge in the field. These are foundational observations that motivate the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Previous movie processing algorithms have successfully achieved near-atomic resolution structures for various specimens, including ribosomes and other large complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C11-C15 are all supported by appropriate citations to prior published work. These establish the state of the field and provide context for the current advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The original beam-induced movement correction algorithm has limitations: it does not work well for particles smaller than ribosomes due to low SNR, while the Li et al. (2013) approach is less suited to model complex movement patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 accurately describe limitations of prior methods. C17 is an inference supported by the data presented (Table 1, C56), C18-C19 are supported by citations and Figure 1 demonstrating complex movement patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "Low-frequency signals in cryo-EM survive higher electron doses than high-frequency signals, and standard B-factor estimation methods have limitations for low-resolution reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C35, and C37 are supported by appropriate citations to established literature. C38 is a reasonable observation that motivates the alternative approach developed in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The new algorithm addresses small particle limitations by fitting straight movement tracks through translations of multiple neighboring particles using weighted least-squares fits, omitting rotational searches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, C27-C32 describe the core methodological innovation. The approach is clearly described mathematically and demonstrated in Figure 1. The weighted neighbor approach is a logical solution to the noise problem in small particles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The new algorithm implements a resolution-dependent radiation damage model using relative B-factors estimated for each movie frame to weight frequency contributions appropriately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23, C36, C39-C42 describe the dose-dependent weighting scheme. The mathematical formulation is provided, and Figure 2 demonstrates the estimated parameters and resulting weights across all test cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The algorithm produces 'polished' particles with increased SNR by applying fitted translational tracks and frequency-dependent weights without overall sharpening or dampening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe the output and properties of the algorithm. C44 is supported by resolution improvements in Table 1. C45 is a mathematical consequence of the normalization scheme described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "The new approach was tested on four cryo-EM datasets of varying particle sizes (170 kDa to 1.9 MDa) recorded on different detectors with appropriate experimental protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52, C54-C55 describe the experimental design. All details are documented in Table 1 and are supported by citations to the original data sources. The hybrid approach for \u03b3-secretase (C52) is appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The new approach yields significant resolution improvements for all four test cases, including particles smaller than 500 kDa where the original algorithm fails, and successfully captures complex movement patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are strongly supported by Table 1 showing quantitative resolution improvements and Figure 1 visualizing movement patterns. The original algorithm shows no improvement or worsening for smaller particles, while the new approach improves all cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Optimal running average parameters depend on particle size, with larger particles requiring ~5 e\u207b/\u00c5\u00b2 and smaller particles requiring larger doses (7-17 e\u207b/\u00c5\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 provide practical recommendations based on the four test cases. These are empirical observations supported by the successful application shown in Table 1, though they represent guidelines rather than strict rules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Relative B-factors decrease with electron dose due to radiation damage, but are also low for initial frames due to large beam-induced movements, which is extremely detrimental to high-resolution structure determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by Figure 2 showing B-factor trends and by multiple citations (C66-C67). C68 provides quantitative support from literature. C69 is a logical inference combining rapid damage with initial movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Stopping initial beam-induced movement would be powerful for improving resolution but has not yet been achieved with existing techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 represent reasonable speculation (C70) and an accurate assessment of the current state of the field (C71). These motivate the algorithmic approach as an alternative solution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The algorithm down-weights high-frequency contributions from early and late frames, representing an attractive alternative to frame omission since these frames contribute useful low-resolution information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by Figure 2 showing frequency-dependent weights. C73-C74 represent reasonable inferences about the advantages of weighting versus omission, with citations to alternative approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The new approach significantly improves reconstructed density for all four datasets, allowing identification of finer biological details like separated \u03b2-strands and RNA bases, and outperforms the original algorithm for smaller complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are strongly supported by Figure 3 showing visual improvements in density maps and Table 1 showing quantitative resolution improvements for \u03b3-secretase (4.9\u21924.5 \u00c5), \u03b2-galactosidase (4.3\u21924.0 \u00c5), and complex-I (5.9\u21924.8 \u00c5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "For the mitoribosome LSU, the new approach yields slightly lower resolution (0.05 \u00c5) than the original, possibly because omitting rotational searches affects results for very large particles where rotation determination is sufficiently accurate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80 acknowledge a limitation. C78 is supported by Table 1 data. However, C79-C80 are speculative explanations without direct experimental validation. The difference is marginal and hard to appreciate visually (per manuscript), making the interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "For small particles, alignment accuracy is the limiting factor and omitting rotational searches likely has no noticeable effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 represent reasonable inferences based on the successful application to small particles. The logic is sound: if alignment accuracy limits resolution, then rotational searches cannot improve results beyond this limit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The new approach provides significant computational speed-up (6-fold for mitoribosome) compared to the original, making it preferable even for large particles despite marginal resolution differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by CPU time data in Table 1 showing substantial speed improvements across all datasets. C84 is a reasonable inference about practical utility given the speed-resolution trade-off.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C85",
+      "C86"
+    ],
+    "result": "The major advance of the new algorithm is its applicability to a much wider range of specimens, bringing \u03b2-strand resolution within reach for particles smaller than 200 kDa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7, C85-C86 represent the main conclusion. This is strongly supported by the \u03b3-secretase results (170 kDa, 4.9\u21924.5 \u00c5) showing visible \u03b2-strands in Figure 3, and by improvements across the size range tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The method has limitations for non-straight movement tracks (bent or zig-zag), but a hybrid approach combining whole-field correction with particle-based correction can address this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 acknowledge methodological limitations and propose solutions. C33 is a logical consequence of the straight-track assumption. C34 is demonstrated through the \u03b3-secretase example combining Li et al. and the new approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The new approach has been implemented in RELION 1.3 as 'particle polishing' and has already been successfully applied to additional structures including P. falciparum ribosome at 3.2 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 document software availability and additional applications. C87 provides implementation details with citation. C88 is supported by citation to Wong et al., 2014, demonstrating broader utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Comprehensive materials and methods are provided including data collection parameters, quality control procedures, and data processing workflows using standard software tools with appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C101 provide methodological details necessary for reproducibility. All are straightforward descriptions of experimental procedures with appropriate software citations. These enable independent verification of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Direct-electron detectors yield higher SNR than conventional detectors and are fast enough to record movies during typical exposures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 describe established detector capabilities supported by citation (C8) and general knowledge (C9). These provide context for why movie processing is feasible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Previous observations showed beam-induced rotations for ribosomes are only a few degrees, comparable to orientation determination accuracy, which motivated the translation-only approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide rationale for the methodological choice. C24 and C26 are supported by citations to prior work. C25 is a reasonable inference that justifies omitting rotational searches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "\u03b3-secretase has 170 kDa of protein plus 60 kDa of disordered glycosylation that is not visible in the EM map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 provide important clarification about the effective molecular mass for EM analysis. This explains why \u03b3-secretase at 170 kDa protein represents a challenging small particle case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C22",
+      "C60",
+      "C61"
+    ],
+    "result": "The new approach successfully models complex movement patterns that cannot be described as single correlated movements, as demonstrated by fitted linear tracks in Figure 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C60-C61 demonstrate a key capability. Figure 1 clearly shows varied movement directions across fields of view that are captured by the white fitted tracks, validating the multi-particle fitting approach.",
+    "result_type": "MAJOR"
+  }
+]

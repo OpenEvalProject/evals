@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "Synonymous codon substitutions in sinR, specifically between TCN codons and AGC/AGT codons, differentially affect biofilm formation, SinR protein levels, and matrix gene expression. TCN codons lower SinR levels and enhance biofilm formation, while AGC/AGT codons increase SinR levels and impair biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C22-C25, C33-C34, and C36 collectively demonstrate through multiple experimental approaches (Western blots, colony morphology, \u03b2-galactosidase assays) that synonymous codon changes in sinR have consistent, codon-type-specific effects on biofilm formation and gene expression. The data show clear phenotypic differences between TCN and AGC/AGT variants across multiple independent measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Genome-wide ribosome profiling reveals condition-specific increases in ribosome density at serine codons during biofilm entry. The four UCN codons show 1.9-2.1-fold higher ribosome density compared to AGC/AGU codons (1.1-1.3-fold), suggesting reduced translation speed at UCN codons specifically during biofilm formation but not during exponential growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C51 are supported by ribosome profiling data showing differential ribosome density at serine codons between exponential phase and biofilm entry. The statistical robustness is demonstrated by position-independence analysis (C51). However, C44 acknowledges a technical limitation that individual transcript analysis (including sinR) was not possible, requiring inference from genome-wide patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Serine starvation experiments in a serine auxotroph recapitulate the codon-specific effects observed during biofilm formation, with increased ribosome density at UCN codons but not AGC/AGU codons, and differential SinR-YFP protein production among synonymous variants only under starvation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56-C59 demonstrate that serine starvation mimics biofilm entry conditions through ribosome profiling and YFP fluorescence measurements. The condition-specificity (differential effects only during starvation, not serine-rich growth) strengthens the causal link between serine availability and codon-specific translation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C60"
+    ],
+    "result": "The increased ribosome density at serine and cysteine codons during biofilm entry is attributed to depletion of intracellular amino acid pools rather than intrinsic mRNA or polypeptide features. Serine is a precursor for cysteine biosynthesis, and exogenous addition of serine or cysteine blocks biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52, C54-C55, and C60 present a mechanistic hypothesis supported by the biosynthetic relationship between serine and cysteine (C54) and the amino acid supplementation experiment (C60). However, C52 explicitly acknowledges that direct measurement of intracellular serine levels was unsuccessful, leaving open alternative explanations such as sequestration or altered aminoacylation rates. The hypothesis is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "SlrR protein levels are inversely correlated with SinR levels among sinR synonymous variants, with larger fold-changes in SlrR than in SinR. This amplification is attributed to the ultrasensitive response of SinR-repressed genes to small changes in SinR protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by Western blot data (C29-C30) and prior characterization of SinR ultrasensitivity (C31). The inference that small SinR changes cause large SlrR changes (C32) is logical given the established ultrasensitivity mechanism, though it remains an inference rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Gene expression changes during biofilm entry and serine starvation are positively correlated (R\u00b2=0.27), but 68 genes show preferential induction during biofilm entry, including anaerobic metabolism genes and sulfur metabolism genes, suggesting additional regulatory inputs beyond serine depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by ribosome profiling data comparing the two conditions. The modest correlation (R\u00b2=0.27) and identification of condition-specific genes appropriately acknowledge that serine depletion is not the sole signal for biofilm formation. The enrichment of anaerobic metabolism genes is consistent with prior work (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors propose that serine depletion is sensed through a simple mechanism based on codon usage bias in sinR, without requiring dedicated sensor proteins or RNAs. This mechanism operates through reduced translation speed at UCN serine codons, contributing to biofilm formation alongside other environmental cues sensed by histidine kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C67, C93-C94 represent the central conclusion of the manuscript. The collective experimental evidence (codon substitution effects, ribosome profiling, serine starvation experiments) supports this model. However, the claim that no dedicated sensor is required (C7, C67) is an inference from the sufficiency of codon changes, not a direct demonstration that other regulatory factors are absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Codon usage patterns in other biofilm-regulated genes (pyrAA, purB, ldh, spo0A) correlate with their expression changes during biofilm entry. TCN-enriched genes are downregulated while TCN-depleted genes are upregulated. Synonymous codon changes in spo0A confirm functional consequences of codon bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 extend the codon-based regulation model to other genes. The codon usage analysis (C85, C88) and expression data (C86, C89) are supported by ribosome profiling. The spo0A codon substitution experiment (C91) provides functional validation. However, the mechanistic interpretations (C87, C90) remain speculative inferences about optimization strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The sinR gene has a slightly higher frequency of TCN serine codons compared to the genome average, though this difference is not statistically significant (p=0.22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 accurately reports the statistical analysis showing a non-significant trend. The p-value of 0.22 indicates the observed difference could easily occur by chance, which the authors appropriately acknowledge. This modest enrichment is consistent with the functional effects observed but does not represent strong evolutionary selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Serine is one of the first amino acids depleted during stationary phase in both B. subtilis and E. coli, and increased ribosome density at serine codons has been observed in E. coli. The authors speculate that codon-based serine sensing may be a general regulatory strategy for adapting to nutrient depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C77-C78 are supported by citations to prior studies. Claim C79 is explicitly speculative about broader significance. The speculation is reasonable given the conservation of serine depletion patterns across species, but remains untested beyond the specific context of B. subtilis biofilm formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The TCN codon bias relevant for biofilm formation is not captured by standard codon adaptation index (CAI), which reflects exponential growth preferences. The codon hierarchy is conserved between B. subtilis and E. coli despite divergent tRNA gene copy numbers, possibly due to similar tRNA abundances or regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by CAI analysis and citations. Claims C72-C74 appropriately cite prior work on tRNA-mediated translation speed and comparative genomics. Claims C75-C76 are explicitly speculative explanations for the conserved hierarchy, acknowledging uncertainty about the underlying mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C26",
+      "C27",
+      "C28",
+      "C92"
+    ],
+    "result": "Background information on B. subtilis biofilm formation regulatory circuit, including the roles of histidine kinases (KinA-D), Spo0A, SinI, SinR, SlrR, and matrix operons, as established by prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20, C26-C28, and C92 summarize established knowledge from the literature, appropriately cited throughout. These provide necessary context for interpreting the novel findings but do not represent new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors argue that context-specific mechanisms (affecting translation initiation or mRNA stability) are unlikely to explain the observed effects because synonymous substitutions at multiple positions in sinR have stereotypical effects. Instead, they propose that ribosome elongation rate, which varies inversely with ribosome density, is the relevant mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 accurately summarize prior knowledge about synonymous codon effects. Claims C41-C42 present logical inferences: the position-independence of effects (C41) argues against context-specific mechanisms, and the inverse relationship between elongation rate and ribosome density (C42) is established knowledge that justifies the ribosome profiling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ribosome profiling yielded sufficient reads for genome-wide analysis but not for individual transcript analysis. The authors reasoned that global patterns should reflect individual transcripts and validated their approach by reproducing known features of ribosome density near Shine-Dalgarno sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 transparently describe the technical capabilities and limitations of the ribosome profiling data. The validation by reproducing prior observations (C46) strengthens confidence in the methodology. The inference that global patterns reflect individual transcripts (C45) is reasonable but represents an assumption rather than direct verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Three sinR synonymous variants did not conform to the TCN vs AGC/AGT hierarchy, potentially due to alterations in mRNA sequence context rather than codon identity per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 acknowledges exceptions to the general pattern and offers a speculative explanation. This transparent reporting of non-conforming data strengthens the overall credibility of the study, though the specific mechanism for these exceptions remains unexplored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The authors presume that UCN codons lower SinR levels by slowing ribosome elongation, but acknowledge that downstream events such as ribosome rescue or mRNA decay might also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 present mechanistic hypotheses about how increased ribosome density leads to reduced protein levels. While C65 is a reasonable presumption based on the data, C66 appropriately acknowledges alternative or additional mechanisms that were not directly tested. The actual molecular mechanism remains incompletely characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The authors contrast their proposed mechanism with transcriptional attenuation, another amino acid sensing mechanism that relies on translation speed but involves structured leader RNAs and peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 accurately describe transcriptional attenuation based on cited literature. This comparison highlights the novelty of the proposed mechanism, which operates without dedicated regulatory RNAs or peptides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The authors note that amino acid depletion affects developmental transitions in eukaryotes and speculate that codon-based sensing mechanisms might also operate in eukaryotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 cites prior work on eukaryotic amino acid sensing. Claim C81 is explicitly speculative about potential parallels in eukaryotes, representing a suggestion for future research rather than a tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Methodological details: A \u0394epsH strain was used for biofilm ribosome profiling to ensure dispersed growth, a \u0394serA strain was used for serine starvation experiments, and the initial observation came from a genetic screen that recovered a silent mutation in sinR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe experimental design choices and the origin of the study. These are straightforward methodological details appropriately documented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The authors note that ribosome density is proportional to mRNA levels in the absence of translational regulation, so fold-changes in ribosome density primarily reflect transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 state an important caveat for interpreting ribosome profiling data. This is established knowledge about the technique and is appropriately acknowledged for interpreting gene expression comparisons (e.g., Figure 3D).",
+    "result_type": "MINOR"
+  }
+]

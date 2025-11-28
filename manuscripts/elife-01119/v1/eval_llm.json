@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Overexpression of IKK\u03b5 and TBK1 in 3T3-L1 adipocytes reduces \u03b2-adrenergic signaling by decreasing Ucp1 induction, lipolysis, cAMP levels, and phosphorylation of HSL and perilipin in response to isoproterenol, CL-316,243, or forskolin. The kinase-inactive mutants (K38A) are less effective, suggesting kinase activity is required for these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C43 provide converging evidence from multiple readouts (Ucp1 expression, glycerol release, cAMP levels, HSL/perilipin phosphorylation, p38 phosphorylation) showing that IKK\u03b5/TBK1 overexpression attenuates \u03b2-adrenergic signaling. The kinase-inactive mutant data (C32, C38, C41, C43) support that kinase activity is required. The data are internally consistent and shown in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "TNF\u03b1 treatment of 3T3-L1 adipocytes for 24 hours induces IKK\u03b5 and TBK1 expression and reduces \u03b2-adrenergic signaling, lipolysis, and cAMP production. These inhibitory effects are rescued by pretreatment with IKK\u03b5/TBK1 inhibitors amlexanox or CAY10576. Similar effects are observed with Poly(I:C) treatment, though amlexanox rescue is less complete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C69 demonstrate a biphasic response to TNF\u03b1 (initial stimulation followed by inhibition after 24h) that correlates with IKK\u03b5/TBK1 induction. The rescue experiments with two structurally unrelated inhibitors (C61, C62, C65) provide strong evidence for causality. Data shown in Figure 2 and supplements are consistent across multiple readouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "IKK\u03b5 and TBK1 directly phosphorylate PDE3B in vitro and in cells, and PDE inhibitors (IBMX, Zardaverine) rescue the inhibitory effects of IKK\u03b5/TBK1 overexpression on cAMP levels. PDE3B is preferentially phosphorylated by noncanonical IKKs compared to IKK\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 provide multiple lines of evidence: PDE inhibitors rescue IKK\u03b5/TBK1 effects (C76, C77), in vitro kinase assays show direct phosphorylation (C79, C80), and specificity is demonstrated by comparison with IKK\u03b2 (C83, C84). The data in Figure 3 are internally consistent and support PDE3B as a direct substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "IKK\u03b5 and TBK1 bind to PDE3B through their ubiquitin-like domain (ULD), and this interaction is stronger with kinase-inactive mutants, suggesting that the kinases associate with substrates and dissociate upon phosphorylation. Phosphorylation causes a mobility shift in PDE3B that is reversed by phosphatase treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 demonstrate phosphorylation-dependent changes in PDE3B mobility (C86, C87, C89, C90) and preferential binding of kinase-inactive mutants (C94), supporting a model where kinases bind, phosphorylate, and release substrates. GST-ULD pulldown (C93) confirms direct interaction. Data in Figure 3 supplements are consistent with this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Mass spectrometry identifies seven serine residues on PDE3B phosphorylated by IKK\u03b5 and TBK1, with serine 318 being critical for 14-3-3\u03b2 binding and mediating the inhibitory effects on \u03b2-adrenergic signaling. The S318A mutant fails to bind 14-3-3\u03b2 and cannot mediate TNF\u03b1-induced inhibition of cAMP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C110 provide strong evidence for S318 as the key regulatory site: mass spec identifies phosphorylation sites (C97), S318A mutant loses 14-3-3\u03b2 binding (C104) despite being phosphorylated on other sites (C105), and functionally cannot mediate TNF\u03b1 effects (C107, C108). The data in Figure 4 are internally consistent and support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C126",
+      "C127"
+    ],
+    "result": "In vivo treatment of diet-induced obese mice with amlexanox for 4 days reverses catecholamine resistance, restoring lipolytic response to CL-316,243 injection as measured by serum FFA/glycerol levels, tissue cAMP levels, HSL phosphorylation, and energy expenditure. Effects are observed both in vivo and ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C127 demonstrate that amlexanox treatment reverses obesity-induced catecholamine resistance across multiple readouts: serum metabolites (C114-C117), ex vivo lipolysis (C118-C120), tissue cAMP (C122), HSL phosphorylation (C123), and energy expenditure (C126). The data in Figure 5 are consistent and show weight-matched comparisons, strengthening the conclusion that effects are independent of weight loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C135",
+      "C143",
+      "C147"
+    ],
+    "result": "This study demonstrates a novel mechanism of catecholamine resistance operating distal to the \u03b2-adrenergic receptor, where IKK\u03b5 and TBK1 reduce adipocyte sensitivity to \u03b2-adrenergic stimulation in a cell-autonomous manner, potentially accounting for decreased energy expenditure in obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 and C135 represent the key conceptual advance: demonstrating post-receptor mechanisms of catecholamine resistance. This is supported by the cell-autonomous effects in cultured adipocytes (C47) and the correlation with obesity phenotypes (C48). The novelty claim (C46) is justified given prior work focused on receptor-level mechanisms (C44, C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "The authors acknowledge they cannot demonstrate increased catalytic activity of PDE3B due to phosphorylation in vitro, and speculate that phosphorylation-dependent 14-3-3 binding may alter PDE3B localization or substrate access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C151 is an important limitation: despite showing phosphorylation correlates with decreased cAMP in cells, direct measurement of PDE3B enzymatic activity increase is lacking. The proposed mechanism involving 14-3-3-mediated localization changes (C152) is speculative. This gap weakens the mechanistic understanding but does not invalidate the functional effects observed in cells and in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "Both IKK\u03b5 and TBK1 phosphorylate PDE3B on the same residues with equal efficiency, but their relative roles in controlling this pathway remain uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 is supported by mass spec data showing identical phosphorylation sites (C97, C98). However, C149 acknowledges uncertainty about relative contributions, which is appropriate given that most experiments use overexpression or dual inhibitors. The evaluation is honest about the limitations while supporting what can be concluded from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C157"
+    ],
+    "result": "The authors propose that IKK\u03b5 and TBK1 are part of a 'counter-inflammatory' program that attenuates inflammatory signals and conserves energy by repressing lipolysis and fatty acid oxidation through PDE3B activation, co-opting insulin signaling targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C155 represent an interpretive framework for the findings, supported by the biphasic TNF\u03b1 response (C53-C55) and the observation that PDE3B is also an insulin target (C156). However, this 'counter-inflammatory' model is speculative (C154 explicitly states this) and would require additional experiments to test directly, such as examining other inflammatory endpoints or energy conservation under different conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Background context: Obesity produces chronic inflammation involving NF\u03baB pathway activation, leading to induction of noncanonical I\u03baB kinases IKK\u03b5 and TBK1. Previous work showed IKK\u03b5 deletion protects against high-fat diet effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C18, C136-C139 establish the background context, primarily citing previous literature and the authors' prior work. These are appropriately supported by citations and provide necessary context for the current study. The claims about IKK\u03b5/TBK1 induction in obesity (C15, C16) and effects of IKK\u03b5 deletion (C18) are from the authors' previous publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C158"
+    ],
+    "result": "The authors speculate that blocking IKK\u03b5 and TBK1 activity has therapeutic potential for treating obesity and type 2 diabetes by increasing energy expenditure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20, C21, and C158 are explicitly speculative about therapeutic potential. While the amlexanox data (C6, C127) provide proof-of-concept, these are short-term studies (4 days) before weight loss occurs. Long-term efficacy, safety, and whether the mechanism translates to humans remain unknown. The speculation is reasonable but requires substantial additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C34"
+    ],
+    "result": "Background on \u03b2-adrenergic signaling and previous findings: Sympathetic activation stimulates lipolysis and Ucp1 expression via cAMP. IKK\u03b5-deficient mice showed increased energy expenditure and Ucp1 expression only on high-fat diet, suggesting IKK\u03b5 represses adaptive thermogenesis during obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 and C33-C34 provide background on \u03b2-adrenergic signaling (C22-C24, supported by citations) and summarize the authors' previous findings (C25-C28, C33, supported by citation to Chiang et al., 2009). The inference that IKK\u03b5 represses thermogenesis (C28, C34) is reasonable given the diet-specific phenotype (C27) but remains an inference from correlative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C111",
+      "C112",
+      "C113",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Background on catecholamine resistance and PDE3B: Previous studies identified receptor-level mechanisms of catecholamine resistance in obesity. PDE3B is the major adipocyte phosphodiesterase, regulated by insulin via Akt and by cAMP via PKA in a negative feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C49-C52, C72-C75, C111-C113, C128-C134 provide literature context on catecholamine resistance mechanisms and PDE3B regulation. All are appropriately supported by citations to previous work. This background establishes the novelty of the current findings by showing prior focus on receptor-level mechanisms (C44, C45, C130) rather than post-receptor mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C124",
+      "C125",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Summary and integration with previous work: The authors' previous studies showed IKK\u03b5 deletion and amlexanox treatment increase Ucp1 expression, energy expenditure, lipolysis, and PKA substrate phosphorylation in obese mice. Amlexanox was previously shown to inhibit phosphodiesterase activity in mast cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C124-C125, C140-C142 summarize the authors' previous findings (Chiang et al., 2009; Reilly et al., 2013) and note a prior observation about amlexanox's PDE inhibitory activity (C142). These provide context for the current mechanistic studies and are appropriately supported by citations. The integration helps explain how the current findings connect to previous phenotypic observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C70"
+    ],
+    "result": "Poly(I:C) activates IKK\u03b5 and TBK1 and reduces \u03b2-adrenergic signaling, but amlexanox rescue is less complete than with TNF\u03b1, suggesting additional pathways may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 show that Poly(I:C), which directly activates IKK\u03b5/TBK1 (C67, supported by citations), produces similar but not identical effects to TNF\u03b1. The incomplete rescue by amlexanox (C69) leads to reasonable speculation about additional pathways (C70). This is a minor observation that supports the main findings while acknowledging complexity.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1354 @@
+{
+  "submission": {
+    "id": "861c9188-52c5-4abd-8d03-52a5c84c96d3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:35:05.379274Z",
+    "updated_at": "2025-11-28T22:35:05.379274Z"
+  },
+  "content": [
+    {
+      "id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "submission_id": "861c9188-52c5-4abd-8d03-52a5c84c96d3",
+      "content_type": "manuscript",
+      "content_text": "# Corelease of acetylcholine and GABA from cholinergic forebrain neurons\n\n## Authors\n\n- Arpiar Saunders<sup>1</sup>\n- Adam J Granger<sup>1</sup>\n- Bernardo L Sabatini<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Howard Hughes Medical Institute, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeurotransmitter corelease is emerging as a common theme of central neuromodulatory systems. Though corelease of glutamate or GABA with acetylcholine has been reported within the cholinergic system, the full extent is unknown. To explore synaptic signaling of cholinergic forebrain neurons, we activated choline acetyltransferase expressing neurons using channelrhodopsin while recording post-synaptic currents (PSCs) in layer 1 interneurons. Surprisingly, we observed PSCs mediated by GABAA receptors in addition to nicotinic acetylcholine receptors. Based on PSC latency and pharmacological sensitivity, our results suggest monosynaptic release of both GABA and ACh. Anatomical analysis showed that forebrain cholinergic neurons express the GABA synthetic enzyme Gad2 and the vesicular GABA transporter (Slc32a1). We confirmed the direct release of GABA by knocking out Slc32a1 from cholinergic neurons. Our results identify GABA as an overlooked fast neurotransmitter utilized throughout the forebrain cholinergic system. GABA/ACh corelease may have major implications for modulation of cortical function by cholinergic neurons.\n\n## Introduction\n\nFor many years, neurons were thought to release only a single fast neurotransmitter (Strata and Harvey, 1999). This assumption led to classifying neuronal subtypes based on released neurotransmitter, a convention which helped predict a neuron's circuit function. However, many neuronal subtypes that release multiple fast neurotransmitters have now been described (Hnasko and Edwards, 2012). In some cases, the coreleased neurotransmitters have similar post-synaptic effects, such as inhibition mediated by GABA and glycine from spinal interneurons (Jonas et al., 1998). In other instances, the effects of the two neurotransmitters may be different and synergistic. For example, coreleased GABA and glutamate are thought to control the balance of excitation and inhibition in the lateral habenula (Root et al., 2014; Shabel et al., 2014). In neuromodulatory systems, synaptic release of fast neurotransmitters along with slow neuromodulators has emerged as a common theme. In addition to the impact of dopamine, stimulation of dopaminergic terminals from the ventral tegmental area and substantia nigra compacta activates glutamate-mediated excitatory currents in the nucleus accumbens (Stuber et al., 2010; Tecuapetla et al., 2010) and GABA-mediated inhibitory currents in the striatum (Tritsch et al., 2012, 2014). Likewise, serotonergic neurons of the dorsal raphe can trigger glutamate-mediated currents in post-synaptic neurons of the ventral tegmentum and nucleus accumbens which contributes to the signaling of reward (Liu et al., 2014).\n\nSeveral cholinergic neuron populations also release multiple neurotransmitters. Retinal starburst amacrine cells (SACs) differentially release GABA and acetylcholine (ACh) based on the pattern of light stimulation (Lee et al., 2010). In the central brain, selective activation of striatal cholinergic interneurons results in cholinergic and glutamatergic responses (Gras et al., 2008; Higley et al., 2011; Nelson et al., 2014). Similarly, the cholinergic projection from habenula excites interpeduncular neurons through glutamate and ACh (Ren et al., 2011). Some evidence suggests that the basal forebrain cholinergic (BFC) system, which provides the major source of ACh to cortex, may corelease GABA. The dorsal-most BFC neurons, which belong to the globus pallidus externus (GP), express molecular markers for GABA synthesis and vesicular packaging and trigger GABAA receptor currents in GP and cortex when activated (Tkatch et al., 1998; Saunders et al., 2015). We therefore asked whether GABA corelease was a general feature of forebrain cholinergic neurons.\n\nTo address this question, we selectively activated cholinergic fibers in the cortex, with the goal of identifying synaptic events triggered by endogenous release from forebrain cholinergic neurons. Recording from layer 1 interneurons, we observed not only the expected excitatory post-synaptic currents (EPSCs) mediated by nicotinic ACh receptors (nAChRs), but an unexpected inhibitory post-synaptic current (IPSC) mediated by GABAA receptors. IPSCs insensitive to nAChR antagonists had onset latencies slightly faster than the nicotinic EPSCs (nEPSCs), and could be directly evoked under pharmacological conditions in which action potentials were blocked, suggesting cholinergic neurons were directly releasing GABA in addition to ACh. Indeed, we found that cholinergic neurons throughout the forebrain commonly coexpressed the GABA synthetic enzyme GAD65 (Gad2), and the vesicular GABA transporter (Slc32a1), indicating that these neurons possess the necessary cell machinery for GABA transmission. Finally, we show that conditional deletion of Slc32a1 selectively in cholinergic neurons eliminates monosynaptic IPSCs while leaving nEPSCs intact, confirming the direct release of GABA from cholinergic terminals. These experiments suggest a previously overlooked capability of the cholinergic system to use GABA in synaptic signaling.\n\n## Results\n\nTo explore the effects that cholinergic neurons have on cortical circuitry, we used double transgenic mice to optogenetically activate neurons that express endogenous choline acetyltransferase (Chat). These mice carried a knock-in allele linking Cre recombinase expression to the Chat locus through an internal-ribosome entry site (Chat i-Cre) as well as a Cre-activated channelrhodopsin-EYFP fusion allele (Rosa26 lsl-ChR2-EYFP). Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice expressed ChR2-EYFP throughout the forebrain, recapitulating known patterns of Chat expression in cortex (Ctx), striatum, globus pallidus externus (GP), and nucleus basalis (NB, Figure 1A). To test whether ChR2+ cells express endogenous Chat, we performed ChAT immunohistochemistry on sections of Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice (Figure 1B). We focused on those Chat+ forebrain neurons positioned to innervate the cortex, including local Chat+ interneurons and the subcortical projections arising from the GP/NB. In both regions, ChR2+ neurons were immunopositive for ChAT, confirming our ability to selectively activate endogenous Chat+ inputs to cortex.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06412/elife-06412-fig1-v2.jpg)\n\n**Figure 1.:** (A) Low-magnification view of sagittal section from Chat i-Cre; Rosa26 lsl-ChR2-EYFP mouse forebrain. ChR2-EYFP (green) is expressed in the nucleus basalis (NB), globus pallidus externus (GP), striatum and cortex (Ctx). (B) Higher-magnification view of ChR2-EYFP expression combined with ChAT immunostaining (magenta) in frontal cortex (top) and nucleus basalis (bottom). Arrowheads indicate cells immunopositive for ChAT. (C) Example 2-photon stack from a layer 1 interneuron following whole-cell recording and dialysis with Alexa Fluor 594. (D) High-magnification view of ChR2-EYFP+ somata and fibers in layers 1 and 2/3 of frontal cortex. NeuN immunostain (magenta) highlights the distribution of neuronal somata across layers. Arrowhead indicates an example layer 1 interneuron surrounded by ChR2-EYFP fibers. (E) Example PSCs from voltage-clamp recordings of three different layer 1 interneurons in response to blue light stimulation (blue bar) of ChR2+ cholinergic fibers. Neurons were voltage-clamped at \u221270 mV (left) to isolate EPSCs or at 0 mV (middle and right) to isolate IPSCs. PSCs recorded in the presence of glutamate receptor antagonists CPP and NBQX are shown in black and after bath application of nAChR antagonists (MEC, MLA, and DH\u03b2E) in red. (F) Example light-evoked IPSCs from a layer 1 interneuron in a Chat i-Cre; Rosa26 lsl-ChR2-EYFP mouse voltage-clamped at 0 mV in the presence of CPP and NBQX (baseline) and following subsequent bath application of (from left to right) nAChR antagonists, TTX, 4AP, and SR95531. (G) Summary graph of IPSC peaks normalized to baseline (n = 5 cells from 4 mice). Asterisk, condition vs baseline p < 0.05, Mann\u2013Whitney test). (H) Onset latencies for monosynaptic nEPSCs (n = 41 cells), monosynaptic IPSCs (n = 9 cells), and polysynaptic IPSCs (n = 19 cells from 9 mice). Mean (\u00b1sem) are shown in green. Asterisk, p < 0.05, Mann\u2013Whitney test.\n\nTo identify the synaptic signaling mechanisms engaged by activation of the cortical cholinergic system, we targeted layer 1 interneurons for whole-cell voltage-clamp recordings in acute brain slices. Layer 1 is strongly innervated by ChAT+ cells of the basal forebrain across species (Mesulam, 1995; Mechawar et al., 2000) including in Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice, where ChR2-EYFP is expressed in a dense plexus (Figure 1C,D). As expected, in a subset of interneurons (n = 41 of 58 cells from 9 mice), we observed robust excitatory postsynaptic currents (EPSCs) at \u221270 mV in response to brief pulses of blue light (2\u20137 ms, Figure 1E, left). These EPSCs were not blocked by NBQX and CPP, ruling out a glutamatergic source, but were blocked by the nicotinic ACh receptor (nAChR) antagonists DH\u03b2E, MLA, and MEC, confirming their cholinergic identity (nEPSCs). nEPSCs displayed a typical biphasic response, with a fast component, likely mediated by synaptic receptors containing the low-affinity \u03b17 nAChR subunit, and a slow component, likely mediated by non-synaptic receptors expressing the high-affinity non-\u03b17 subunits (Bennett et al., 2012).\n\nIn addition to the expected nEPSCs recorded at \u221270 mV, we also observed barrages of outward inhibitory postsynaptic currents (IPSCs) at 0 mV, indicative of signaling through GABA receptors (n = 28 of 58 cells, Figure 1E, center). One possible explanation for these IPSCs could be ACh-mediated feed-forward activation of local interneurons, resulting in disynaptic release of GABA. Indeed, when nAChR antagonists were applied, the delayed outward IPSCs disappeared. However, in a subset of recorded cells IPSCs remained (n = 9 of 58 cells, Figure 1F, right), suggesting that these PSCs were not dependent on nAChR signaling.\n\nTo test if nAChR-resistant IPSCs are caused by direct release of GABA from cholinergic fibers, we bath applied the voltage-gated sodium channel antagonist TTX, which blocked light-evoked IPSCs (Figure 1F,G). In the presence of TTX, IPSCs could be rescued by enhancing ChR2-mediated depolarization with the voltage-gated potassium channel blocker 4AP. Rescued IPSCs were subsequently blocked by the GABAA receptor antagonist SR95531 (n = 5 cells from 4 mice). Moreover, nAChR-resistant \u2018direct\u2019 IPSCs had faster average onsets than both nEPSCs and nAChR-sensitive \u2018indirect\u2019 IPSCs (nEPSCs, 4.0 \u00b1 0.2 ms, n = 41 cells; direct IPSCs, 2.5 \u00b1 0.2, n = 9 cells; indirect IPSCs, 11.8 \u00b1 2.3, n = 19 cells from 9 mice, Figure 1H). These data suggest direct IPSCs are independent of nAChR signaling and mediated by GABAA receptors, consistent with monosynaptic release of GABA by cholinergic neurons. In support of this possibility, gene expression analyses have suggested some populations of Chat+ subcortical neurons contain the synthetic machinery for GABA (Kosaka et al., 1988; Tkatch et al., 1998).\n\nGABA corelease has been observed in other neuromodulatory systems, namely from dopaminergic neurons of the substantia nigra (Tritsch et al., 2012). In those neurons, GABA is co-packaged with dopamine into vesicles by the transporter VMAT2 (Slc18a2), instead of by the typical vesicular transporter for GABA (VGAT, encoded by Slc32a1), which is necessary for packaging in most GABAergic neurons (Wojcik et al., 2006; Tong et al., 2008; Kozorovitskiy et al., 2012). To assess whether cholinergic neurons could use VGAT to package GABA into vesicles, we tested for Slc32a1/ChAT co-expression throughout the brain, including in cortex, GP, NB, diagonal band of broca (DBB)/medial septum (MS), and pedunculopontine nucleus (PPN, Figure 2A, top). We labeled cells expressing endogenous Slc32a1 using double-transgenic mice that link Cre recombinase expression to the Slc32a1 locus (Slc32a1i-Cre) and carry a zsGreen Cre reporter allele (Rosa26 lsl-zsGreen). Subsequent ChAT immunolabeling on sagittal and coronal sections from Slc32a1i-Cre; Rosa26 lsl-zsGreen mice was used to examine coexpression. Since zsGreen accumulates in somata and does not diffuse throughout the cytoplasm, this strategy allowed the clear identification of ChAT+ soma free from background fluorescence caused by Cre+ axons and dendrites. In cortex, GP, NB, and MS/DBB, nearly all of ChAT+ cell were Slc32a1+ (zsGreen+/ChAT+, from 3 mice: Ctx, 628/628; GP, 238/243; NB, 598/624; MS/DBB; 560/601, Figure 2A,B). In contrast, ChAT+ cells of the PPN very rarely expressed Slc32a1 (3/157, Figure 2B). These data suggest that in both cortical and subcortical forebrain regions, ChAT+ cells express the canonical molecular machinery to package GABA into vesicles. However, since ChAT+ neurons in the brainstem PPN do not express Slc32a1, this GABAergic marker is not a ubiquitous feature of the central cholinergic system.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06412/elife-06412-fig2-v2.jpg)\n\n**Figure 2.:** (A) Top, sagittal and coronal schematic views of a mouse brain showing cholinergic regions of interest. Red boxes indicate approximate locations for magnified regions below. Bottom, example single-plane image from a confocal stack from sections of a Slc32a1i-Cre; Rosa26 lsl-zsGreen mouse immunostained for ChAT (magenta) and reporting Cre expression (green). Ctx, cortex; GP, globus pallidus externus; NB, nucleus basalis; MS/DBB, medial septum/diagonal band of broca; PPN, pedunculopontine nucleus. Insets show magnified view of individual neurons indicated by the white arrowhead. (B) Quantification of colocalization between cells expressing zsGreen Cre reporter and ChAT immunostain by brain region (zsGreen+/ChAT+, from 3 mice: Ctx, 628/628; GP, 238/243; NB, 598/624; MS/DBB, 560/601; PPN, 3/157).\n\nGABA is synthesized by one of two GABA synthetic enzymes, GAD65 or GAD67, encoded by the genes Gad2 or Gad1, respectively. GAD67 is expressed largely in cell bodies and is thought to be responsible for synthesizing GABA for general metabolic cell functions, whereas GAD65 expression is more prominent in axon terminals and is thought to mediate the majority of synthesis of synaptic GABA (Soghomonian and Martin, 1998). We examined if cholinergic neurons expressed GAD67 by immunostaining for ChAT in brain sections from knock-in mice where GFP replaces the first exon of the Gad1 gene (Gad1GFP). We detected only minor overlap between neurons that stained positive for ChAT and those that expressed GFP in the NB, GP, MS/DBB, or PPN, except for cortical ChAT+ interneurons, where we observed significant overlap (GFP+/ChAT + neurons: Ctx: 122/136; MS/DBB, 1/573; NB, 0/439; GP, 7/413; PPN, 12/246, Figure 3\u2014figure supplement 1). This suggests that within the major subcortical cholinergic projections, GAD67-mediated GABA synthesis does not occur in cholinergic neurons. To test for coexpression of ChAT and GAD65, we immunostained sections of knock-in mice where Cre recombinase was targeted to the endogenous Gad2 gene (Gad2 i-Cre) and visualized Cre expression with the zsGreen Cre reporter. In contrast to Gad1, in cortex, GP, NB, and MS/DBB of Gad2 i-Cre; Rosa26 lsl-zsGreen mice, most ChAT+ neurons were Gad2+ (zsGreen+/ChAT+, from 4 mice: Ctx, 518/519; GP, 273/372; NB, 860/934; MS/DBB, 673/685, Figure 3A,B). In the brainstem, however, few of the ChAT+ cells were Gad2+ (PPN, 6/110, Figure 3A,B). This ChAT co-expression pattern for Gad2 is similar to Slc32a1, suggesting that forebrain cholinergic neurons possess the necessary cellular machinery to both synthesize and package synaptic GABA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06412/elife-06412-fig3-v2.jpg)\n\n**Figure 3.:** (A) Top, sagittal and coronal schematic views of a mouse brain showing cholinergic regions of interest. Red boxes indicate approximate locations for magnified regions below. Bottom, example single-plane image from a confocal stack from sections of a Gad2 i-Cre; Rosa26 lsl-zsGreen mouse immunostained for ChAT (magenta) and reporting Cre expression (green). Ctx, cortex; GP, globus pallidus externus; NB, nucleus basalis; MS/DBB, medial septum/diagonal band of broca; PPN, pedunculopontine nucleus. Insets show magnified view of individual neurons indicated by the white arrowhead. (B) Quantification of colocalization between cells expressing zsGreen Cre reporter and ChAT immunostain by brain region (zsGreen+/ChAT+, from 4 mice: Ctx, 518/519; GP, 273/372; NB, 860/934;MS/DBB, 673/685; PPN, 6/110).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06412/elife-06412-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Top, sagittal and coronal schematic views of a mouse brain showing cholinergic regions of interest. Red boxes indicate approximate locations for magnified regions below. Bottom, example single-plane image from a confocal stack from sections of a Gad1GFP (green) mouse immunostained for ChAT (magenta). Ctx, cortex; GP, globus pallidus externus; NB, nucleus basalis; MS/DBB, medial septum/diagonal band of broca; PPN, pedunculopontine nucleus. Insets show magnified view of individual neurons indicated by the white arrowhead. (B) Quantification of colocalization between cells expressing GFP and ChAT immunostain by brain region (GFP+/ChAT+, from 4 mice: Ctx, 122/135; GP, 7/413; NB, 0/439;MS/DBB, 1/573; PPN, 12/246).\n\nThough the fast onset and persistence of GABAergic IPSCs in the presence of nAChR antagonists and TTX/4AP argues strongly for direct release of GABA from cholinergic terminals, we wished to confirm this finding using conditional genetics. To determine if GABA release is indeed monosynaptic, we took advantage of the observation that cholinergic neurons express Slc32a1. If GABA is released directly from cholinergic neurons, then conditional knock-out of Slc32a1 selectively in these cells should abolish GABA release. We therefore bred triple transgenic mice which carried conditional (floxed) Slc32a1 alleles in addition to Chat i-Cre and Rosa26 lsl-ChR2-EYFP. These mice allowed us to compare the optogenetic stimulation of wild-type cholinergic neurons (Slc32a1+/+) to those lacking Slc32a1 (Slc32a1fl/fl) in acute brain slices. In voltage-clamp recordings from layer 1 interneurons, we observed fast onset IPSCs in 31% of cells recorded in Chat i-Cre; Slc32a1+/+ mice (n = 5 of 16 from 2 mice), but no direct IPSCs in Chat i-Cre; Slc32a1fl/fl mice (n = 0 of 34 cells from 4 mice, Figure 4A,B). In contrast, the proportion and average peak amplitude of nAChR responses remains unchanged between Slc32a1+/+ and Slc32a1fl/fl mice (Figure 4A,B). These data demonstrate that GABA but not ACh release from cholinergic neurons relies on cell autonomous Slc32a1, ruling out a disynaptic mechanism.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06412/elife-06412-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example light-evoked nEPSCs and IPSCs from four different layer 1 interneurons voltage-clamped at \u221270 or 0 mV from Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice with wild-type cholinergic neurons (Slc32a1+/+) or conditional Slc32a1 knock-out (Slc32a1fl/fl). (B) Top, the number and proportion of layer 1 interneurons in which light-evoked nEPSCs or direct IPSCs were detected from Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice with wild-type Slc32a1 alleles (Slc32a1+/+, from 2 mice) or following conditional Slc32a1 knock-out (Slc32a1fl/fl, from 4 mice). Bottom, PSC peaks for each condition. Means (\u00b1sem) are shown in green.\n\n## Discussion\n\nHere, we provide evidence that the cortical cholinergic system is capable of GABAergic neurotransmission. In response to optogenetic stimulation of neurons expressing endogenous Chat, we observed PSCs mediated by both nAChRs and GABAA receptors in layer 1 interneurons. A subset of the evoked IPSCs appeared to be monosynaptic, based on latency and pharmacological analyses. In support of their GABAergic nature, the ChAT+ neurons which innervate cortex\u2014local interneurons and subcortical projections arising from the GP/NB\u2014express Gad2 and Slc32a1, the canonical molecular machinery for GABA synthesis and vesicular packaging. Indeed, conditional knock-out of Slc32a1 selectively in cholinergic neurons eliminates light-evoked monosynaptic IPSCs. These genetic results confirm that cholinergic neurons release GABA directly. Cholinergic GABA release is likely to be a feature of most, but not all, central cholinergic neurons: the ChAT+ neurons of the MS and DBB\u2014which innervate the hippocampus\u2014also express Gad2 and Slc32a1, whereas those of the midbrain PPN do not.\n\nThe mode of neurotransmitter corelease can vary across neuron classes. In some instances, both neurotransmitters are released from the same synaptic vesicles. This is the case for GABA/glutamate corelease onto neurons of the lateral habenula, where individual miniature EPSCs can be observed with dual GABA/glutamate components (Shabel et al., 2014). Copackaging in individual vesicles is also the case when the same vesicular transporter loads both neurotransmitters. For example, GABA is packaged in dopaminergic neurons by VMAT2, which also packages dopamine (Tritsch et al., 2012). Similarly, both GABA and glycine packaging in spinal interneurons rely on VGAT (Wojcik et al., 2006). However, corelease from separate pools of synaptic vesicles also occurs. In retinal SACs, release of GABA and ACh can be functionally separated through patterned light stimulation or pharmacology. In Chat+ GP axons in cortex, GABA and ACh appear to be released from distinct vesicular pools which can be located within the same or neighboring pre-synaptic terminals (Saunders et al., 2015). Though the precise mechanism by which each forebrain cholinergic population coreleases GABA and ACh remain unclear and further experiments are merited to explore how GABA/ACh cotransmission is regulated, the differences in the proportion of layer 1 interneurons showing ACh and GABA responses suggest some form of segregated release.\n\nThe cholinergic system's function in promoting attention, alertness, and learning has classically been attributed to acetylcholine and its action as a diffuse volume transmitter, affecting cortical activity at relatively slow time scales. This model is supported by anatomical evidence showing widespread distribution of cholinergic fibers through all cortical layers with significant separation between the sites of release and ACh receptors (Descarries and Mechawar, 2000; Mechawar et al., 2000). In addition, many in vitro pharmacological experiments have shown that ACh receptors can shape the signaling of other neurotransmitter systems, by altering properties of presynaptic release, synaptic plasticity, or the intrinsic excitability of targeted neurons (Picciotto et al., 2012). However, more recent work has focused on the participation of ACh in rapid, wired neurotransmission, acting at tightly apposed synapses (Sarter et al., 2009; Poorthuis et al., 2014; Sarter et al., 2014). Behaviorally relevant sensory cues can cause a fast, time-locked spike in ACh concentration, suggesting that ACh may mediate detection of that cue (Parikh et al., 2007). In addition, fast onset currents mediated by nAChRs can be recorded in cortical interneurons following optogenetic activation of cholinergic fibers (Arroyo et al., 2012; Bennett et al., 2012). Our finding that cholinergic neurons also elicit fast-onset synaptic GABAA responses lends further support to the notion that the cholinergic system can rapidly affect cortical computations by acting at classical synapses.\n\nGABA corelease from cholinergic forebrain neurons may affect cortical function in several ways. First, at the circuit level, GABA release could act in a manner that reinforces the emerging concept that the cholinergic system disinhibits cortical firing. ACh release from basal forebrain neurons excites layer 1 and VIP+ interneurons, which in turn inhibit local interneurons that target principle neurons of the cortex (Letzkus et al., 2011; Pinto et al., 2013; Fu et al., 2014). Depending on the timing and targeted cell types, GABA corelease could conceivably enhance this effect by inhibiting local interneurons, thereby promoting cortical activity. Second, nAChRs can regulate both pre and post-synaptic GABAergic signaling. For example, in hippocampal interneurons, post-synaptic nAChRs are present in inhibitory synapses (Fabian-Fine et al., 2001) and when activated, reduce GABAA receptor-mediated IPSCs in a Ca2+ and PKC-dependent manner (Wanaverbecq et al., 2007; Zhang and Berg, 2007). Thus coreleased ACh and GABA could interact to modulate local synaptic signaling. Lastly, experiments poisoning or stimulating the basal forebrain cholinergic system have demonstrated that activity within this projection is necessary and sufficient for plasticity in sensory cortices (Kilgard and Merzenich, 1998; Weinberger, 2004; Ramanathan et al., 2009). While ACh alone can induce functional changes in cortical circuits (Metherate and Weinberger, 1990), GABA may also contribute to synaptic rewiring in vivo. Addressing these questions experimentally will benefit from future work to clarify the basic synaptic anatomy and biochemical regulation of ACh/GABA corelease. Given the presence of GABA signaling machinery throughout the distinct forebrain cholinergic systems, corelease likely has a significant and fundamental effect on brain activity and cognition.\n\n## Materials and methods\n\n### Mice\n\nCre recombinase was targeted to specific cell types using knock-in mice to drive Cre expression under endogenous gene-specific regulatory elements using an internal ribosome entry site. Cre knock-in mice for choline acetyltransferase (Chat) (Rossi et al., 2011) and vesicular GABA transporter (Slc32a1) (Tong et al., 2008) were provided by Brad Lowell (Beth Israel Deaconess Medical Center) and are available from the Jackson Labs (Bar Harbor, ME; Chat i-Cre, stock #006410; Slc32a1i-Cre, stock #016962). Gad2 i-Cre mice were purchased from Jackson Labs (stock #010802) (Taniguchi et al., 2011). Gad1GFP knock-in mice replace elements of Gad1 coding sequence with GFP (Tamamaki et al., 2003). We did not distinguish between mice hetero or homozygous for transgenic alleles except where indicated. All experimental manipulations were performed in accordance with a protocol (#03551) approved by the Harvard Standing Committee on Animal Care following guidelines described in the US National Institutes of Health Guide for the Care and Use of Laboratory Animals.\n\n### Fixed tissue preparation, immunohistochemistry, and imaging\n\nMice aged post-natal day 25\u2013124 were deeply anesthetized with isoflurane and transcardially perfused with 4% paraformaldehyde (PFA) in 0.1 M sodium phosphate buffer (1\u00d7 PBS). Brains were post-fixed for 1\u20133 days, washed in 1\u00d7 PBS, and sectioned (40\u201350 \u03bcm) coronally or sagittally using a Vibratome (Leica Microsystems, Buffalo Grove, IL). For ChAT or NeuN immunohistochemistry, slices were incubated in a 1\u00d7 PBS blocking solution containing 5% normal horse serum and 0.3% Triton X-100 for 1 hr at room temperature. Slices were then incubated overnight at 4\u00b0C in the same solution containing anti-choline acetyltransferase antibody (AB144P; 1:100; Millipore, Billerica, MA) or NeuN (MAB377; 1:100; Millipore). The next morning, sections were washed three times for five minutes in 1\u00d7 PBS and then incubated for 1 hr at room temperature in the blocking solution containing donkey anti-goat Alexa 647 or Alexa 594 (for ChAT) or anti-mouse Alexa 647 (for NeuN) (1:500; Molecular Probes, Eugene, OR). Slices were then mounted on slides (Super Frost). After drying, slices were coverslipped with ProLong antifade mounting media containing DAPI (Molecular Probes) and imaged with an Olympus VS110 slide scanning microscope using the 10\u00d7 objective. Confocal images (1\u20132 \u03bcm optical sections) were acquired with an Olympus FV1000 laser scanning confocal microscope (Harvard Neurobiology Imaging Facility) through a 60\u00d7 objective. Colabeling quantification was carried on images obtained from the Olympus VS110 slide scanning microscope using ImageJ.\n\n### Slice preparation\n\nAcute brain slices were obtained from mice aged post-natal day 30\u2013128 using standard techniques. Mice were anesthetized by isoflurane inhalation and perfused through the heart with ice-cold artificial cerebrospinal fluid (ACSF) containing (in mM) 125 NaCl, 2.5 KCl, 25 NaHCO3, 2 CaCl2, 1 MgCl2, 1.25 NaH2PO4, and 11 glucose (\u223c308 mOsm\u00b7kg\u22121). Cerebral hemispheres were removed, placed in ice-cold choline-based cutting solution (consisting of [in mM]: 110 choline chloride, 25 NaHCO3, 2.5 KCl, 7 MgCl2, 0.5 CaCl2, 1.25 NaH2PO4, 25 glucose, 11.6 ascorbic acid, and 3.1 pyruvic acid), blocked, and transferred into a slicing chamber containing ice-cold choline-based cutting solution. Sagittal slices (300\u2013350 \u03bcm thick) were cut with a Leica VT1000s vibratome and transferred to a holding chamber containing ACSF at 34\u00b0C for 30 min and then subsequently at room temperature. Both cutting solution and ACSF were constantly bubbled with 95% O2/5% CO2.\n\n### Acute slice electrophysiology and two-photon imaging\n\nIndividual slices were transferred to a recording chamber mounted on a custom built two-photon laser scanning microscope (Olympus BX51WI) equipped for whole-cell patch-clamp recordings and optogenetic stimulation. Slices were continuously superfused (3.5\u20134.5 ml\u00b7min\u22121) with ACSF warmed to 32\u201334\u00b0C through a feedback-controlled heater (TC-324B; Warner Instruments). Cells were visualized through a water-immersion 60\u00d7 objective using differential interference contrast (DIC) illumination. Epifluorescence illumination was used to identify those layer 1 interneurons surrounded by ChR2-EYFP processes. Patch pipettes (2\u20134 M\u03a9) pulled from borosilicate glass (G150F-3; Warner Instruments) were filled with a Cs+-based low Cl\u2013internal solution containing (in mM) 135 CsMeSO3, 10 HEPES, 1 EGTA, 3.3 QX-314 (Cl\u2013salt), 4 Mg-ATP, 0.3 Na-GTP, 8 Na2-Phosphocreatine (pH 7.3 adjusted with CsOH; 295 mOsm\u00b7kg\u22121) for voltage-clamp recordings. Series resistance (<25 M\u03a9) was measured with a 5-mV hyperpolarizing pulse in voltage-clamp and left uncompensated. Membrane potentials were corrected for a \u223c7 mV liquid junction potential. In some cases after the recording was complete, cellular morphology was captured in a volume stack using 740 nm two-photon laser light (Coherent). To activate ChR2 in acute slices from ChAT i-Cre; Rosa26 lsl-ChR2-EYFP mice, 473 nm laser light (Optoengine) was focused onto the back aperture of the 60\u00d7 water immersion objective to produce collimated whole-field illumination. Square pulses of laser light were delivered every 20 s and power (2\u20137 ms; 4.4 mW\u00b7mm\u22122) was quantified for each stimulation by measuring light diverted to a focal plane calibrated photodiode through a low-pass dichroic filter. Following bath application of TTX and 4AP, in some cases, light power or duration was increased slightly to recover currents (e.g., changing the duration from 2 to 4 ms).\n\n### Reagents\n\nDrugs (all from Tocris, United Kingdom) were applied via bath perfusion: SR95531 (10 \u03bc\u039c), tetrodotoxin (TTX; 1 \u03bc\u039c), 4-aminopyridine (4AP; 500 \u03bcM), scopolamine (10 \u03bc\u039c), 2,3-dihydroxy-6-nitro-7-sulfamoyl-benzo(f)quinoxaline (NBQX; 10 \u03bcM), R,S-3-(2-carboxypiperazin-4-yl)propyl-1-phosphonic acid (CPP; 10 \u03bcM), N,2,3,3-Tetramethylbicyclo[2.2.1]heptan-2-amine, (MEC; 10 \u03bcM), [1\u03b1,4(S),6\u03b2,14\u03b1,16\u03b2]-20-Ethyl-1,6,14,16-tetramethoxy-4-[[[2-(3-methyl-2,5-dioxo-1-pyrrolidinyl)benzoyl]oxy]methyl]aconitane-7,8-diol (MLA; 0.1 \u03bcM), (2S,13bS)-2-Methoxy-2,3,5,6,8,9,10,13-octahydro-1H,12H-benzo[i]pyrano[3,4-g]indolizin-12-one (DH\u03b2E; 10 \u03bcM). CPP and NBQX were combined to make a cocktail of antagonists to target ionotropic glutamate receptors, while MEC, MLA, and DH\u03b2E were combined to make a cocktail to antagonize nicotinic receptors.\n\n### Acute slice data acquisition and analysis\n\nMembrane currents and potentials were recorded using an Axoclamp 700B amplifier (Molecular Devices, Sunnyvale, CA) filtered at 3 kHz and digitized at 10 kHz using National Instruments acquisition boards and ScanImage (available at: scanimage.org) written in MATLAB (Mathworks, Natick, MA). Electrophysiology and imaging data were analyzed offline using Igor Pro (Wavemetrics, Lake Oswego, OR), ImageJ (NIH, Bethesda, MD) and GraphPad Prism (GraphPad Software, La Jolla, CA). In figures, voltage-clamp traces represent the average waveform of 3\u20136 acquisitions. Peak current amplitudes were calculated by averaging over a 1 ms window around the peak. For pharmacological analyses, 3\u20137 consecutive acquisitions (20 s inter-stimulus interval) were averaged following a 3-min wash-in period for NBQX and CPP or a 4-min wash-in period for MEC, MLA, and DH\u03b2E. For TTX and 4AP conditions, current averages were composed of the acquisitions following full block or first-recovery of ChR2 evoked currents, respectively. Data (reported in text and figures as mean \u00b1 sem) were compared statistically using the Mann\u2013Whitney test. p values smaller than 0.05 were considered statistically significant.\n",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "e77b5f76-9ea8-4d3a-be5e-89948c321458",
+      "submission_id": "861c9188-52c5-4abd-8d03-52a5c84c96d3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06412.008](https://doi.org/10.7554/eLife.06412.008)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCorelease of acetylcholine and GABA from cholinergic forebrain neurons\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and three reviewers, one of whom, Sacha Nelson, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nBecause the reviews are concise and raise only minor concerns the Reviewing editor has included them in full here.\n\nReviewer 1:\n\nThis is a short straightforward report that uses mouse genetics, anatomical colocalization and physiology and pharmacology in brain slices to demonstrate that most forebrain cholinergic neurons are also GABAergic. Although there was one prior report hinting at this relationship based on marker expression, the results are largely surprising and change the way that we think about the function of cholinergic input to the cortex and other forebrain regions.\n\nI have no substantive concerns except that it would be important to insure that there is not significant overlap with the other paper from this group currently in press.\n\nThere are two more minor suggestions for improvement:\n\n1) It is slightly surprising that only 9/58 cells exhibited direct IPSCs (vs. 41/58 cholinergic EPSCs) while the overwhelming majority of cholinergic neurons examined expressed Vgat and Gad2. What if anything additional do the authors know about this? Did they try stimulating repeatedly to see if multiple action potentials may be required to release GABA at some synapses? Do they think there may be small IPSCs to which they are insensitive? Is it feasible that some of the presynaptic neurons do not express Vgat and Gad2 at the protein level? This latter point would be easy to test with immunohistochemistry.\n\nIf the authors have negative results that constrain the answers to these questions, describing them would be a useful addition. But at the very least they should speculate about the reason for the discrepancy.\n\n2) What have the authors examined with respect to the identity of the L1 neurons that receive and don't receive GABAergic input? Are they indistinguishable in terms of firing properties, morphology etc.? Again, even negative information would be useful.\n\nReviewer #2:\n\nThe authors examine the putative corelease properties of cholinergic synapses in the cortex using a combination of transgenic and optogenetic approaches. Post-synaptic currents were recorded in layer 1 interneurons following the selective activation of ChAT+ inputs in acute slice. The authors present several lines of evidence which support the direct release of GABA from cholinergic terminals, including: 1) light-induced, nAChR-antagonist resistant IPSCs, 2) expression of the enzymatic machinery for GABA biosynthesis and packaging, and 3) elimination of putative monosynaptic IPSCs in conditional Vgat knockout mice. These findings may lead us to re-evaluate the role of the basal forebrain cholinergic system in modulating cortical excitability and thus, are of interest to a broad neuroscience community. The specific functional implications of ACh/GABA cotransmission in the cortex are somewhat unclear and warrant further study.\n\nMinor comments:\n\n1) It appears that nAChR-resistant IPSCs are observed only in a subpopulation (approximately 15%) of recorded cells (as described in the Results section). However, IHC data suggest that molecular machinery for the synthesis and packaging of GABA are co-expressed in nearly all cortical ChAT+ cells. How might this discrepancy be explained? Since the direct release of GABA occurs at few cholinergic synapses, can we expect that this phenomenon will have significant impact on cortical function?\n\n2) Can the quality of images in Figures 2 and 3 be improved, perhaps by higher magnification photomicrographs, to more clearly represent the quantification in panels B?\n\n3) The current onset data (see panel H in Figure 1 for reference) should be included in Figure 4 to demonstrate the specific loss of direct, monosynaptic IPSCs in Vgat-deficient mice?\n\n4) Were ACh-mediated EPSCs prolonged in Vgat-deficient mice? It appears so based on the trace shown in Figure 4. What would be the explanation of this result?\n\nReviewer #3:\n\nThe authors report the corelease of GABA and ACh onto cortical layer 1 interneurons. This is a meticulous study employing several transgenic mice, immunohistochemistry, pharmacology, optogenics and electrophysiology. The resulting interpretation of corelease is convincing.\n\nMinor comments:\n\nThe only minor question is whether individual neurons release both transmitters. This seems highly likely as all presynaptic neurons, i.e., those expressing ChR2, are Chat positive and many/most are also positive for Gad2 and Vgat (though why only \u223c20% of the postsynaptic cells that have AChergic EPSCs also have GABAergic IPSCs is unclear; maybe the cited Nature paper explains this). Formally, however, an absolute demonstration of corelease would require the excitation of single presynaptic neuron or finding that minis have both components. This is a minor comment and certainly not necessary for this paper.\n\nAlso, the stated rationale for performing the experiment in Figure 4 (\u201cthe possibility remains that the direct IPSCs [\u2026] were due to nicotinic axon-axonic synapses onto GABAergic terminals\u201d) seems to be incorrect. While multiple experiments leading to the same conclusion is always more satisfying that single experiments, it would seem that the nicotinic blocker experiment would also rule out the axo-axonic connections. Maybe a more reasonable introduction to Figure 4 would be something like: \u201cConsistent with the pharmacology\u2026\u201d That said, the experiments in Figure 4 are elegant and convincing and should be included.\n\nDo the authors have to use \u201cimpact\u201d as a verb (in the Discussion)? Whatever happened to \u201caffect\u201d?\n",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4d9e9f92-d546-4da4-a05f-f02b451230a1",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C1",
+      "claim": "Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice expressed ChR2-EYFP throughout the forebrain, recapitulating known patterns of Chat expression in cortex (Ctx), striatum, globus pallidus externus (GP), and nucleus basalis (NB).",
+      "claim_type": "EXPLICIT",
+      "source": "Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice expressed ChR2-EYFP throughout the forebrain, recapitulating known patterns of Chat expression in cortex (Ctx), striatum, globus pallidus externus (GP), and nucleus basalis (NB, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1A showing ChR2-EYFP expression pattern in mouse forebrain sections, and by established knowledge of Chat expression patterns.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "e43d4afe-efd8-48cb-b89d-6c904211b19b",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C2",
+      "claim": "ChR2+ neurons in cortex and nucleus basalis are immunopositive for ChAT.",
+      "claim_type": "EXPLICIT",
+      "source": "In both regions, ChR2+ neurons were immunopositive for ChAT, confirming our ability to selectively activate endogenous Chat+ inputs to cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChAT immunohistochemistry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "f39115c2-e3c6-4cdd-9d7b-9a0585b4fc44",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C3",
+      "claim": "Layer 1 is strongly innervated by ChAT+ cells of the basal forebrain across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Layer 1 is strongly innervated by ChAT+ cells of the basal forebrain across species (Mesulam, 1995; Mechawar et al., 2000) including in Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice, where ChR2-EYFP is expressed in a dense plexus (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to prior literature and by imaging data in Figure 1C,D showing dense ChR2-EYFP expression in layer 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "617fcab1-bdcd-45cc-b797-a003c391abb0",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C4",
+      "claim": "In a subset of layer 1 interneurons (n = 41 of 58 cells from 9 mice), robust excitatory postsynaptic currents (EPSCs) were observed at \u221270 mV in response to brief pulses of blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in a subset of interneurons (n = 41 of 58 cells from 9 mice), we observed robust excitatory postsynaptic currents (EPSCs) at \u221270 mV in response to brief pulses of blue light (2\u20137 ms, Figure 1E, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiological recordings shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "1f029fbf-94f7-4969-a3f8-358dadc345c8",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C5",
+      "claim": "Light-evoked EPSCs in layer 1 interneurons were not blocked by NBQX and CPP, ruling out a glutamatergic source.",
+      "claim_type": "EXPLICIT",
+      "source": "These EPSCs were not blocked by NBQX and CPP, ruling out a glutamatergic source, but were blocked by the nicotinic ACh receptor (nAChR) antagonists DH\u03b2E, MLA, and MEC, confirming their cholinergic identity (nEPSCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pharmacological experiments showing EPSCs persist in presence of glutamate receptor antagonists but are blocked by nAChR antagonists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "d9dadce8-f972-430f-b502-7cae8571ba84",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C6",
+      "claim": "Light-evoked EPSCs in layer 1 interneurons were blocked by the nicotinic ACh receptor (nAChR) antagonists DH\u03b2E, MLA, and MEC, confirming their cholinergic identity.",
+      "claim_type": "EXPLICIT",
+      "source": "These EPSCs were not blocked by NBQX and CPP, ruling out a glutamatergic source, but were blocked by the nicotinic ACh receptor (nAChR) antagonists DH\u03b2E, MLA, and MEC, confirming their cholinergic identity (nEPSCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pharmacological experiments demonstrating blockade by nAChR antagonists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "9c94002f-8d72-4502-ac30-0cbf3cc66e0b",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C7",
+      "claim": "nEPSCs displayed a typical biphasic response, with a fast component likely mediated by synaptic receptors containing the low-affinity \u03b17 nAChR subunit, and a slow component likely mediated by non-synaptic receptors expressing the high-affinity non-\u03b17 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "nEPSCs displayed a typical biphasic response, with a fast component, likely mediated by synaptic receptors containing the low-affinity \u03b17 nAChR subunit, and a slow component, likely mediated by non-synaptic receptors expressing the high-affinity non-\u03b17 subunits (Bennett et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observed biphasic kinetics in recordings and cited literature on nAChR subtypes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "e26e7b48-d1c0-4394-9204-70bfb250b153",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C8",
+      "claim": "Barrages of outward inhibitory postsynaptic currents (IPSCs) were observed at 0 mV in layer 1 interneurons (n = 28 of 58 cells), indicative of signaling through GABA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the expected nEPSCs recorded at \u221270 mV, we also observed barrages of outward inhibitory postsynaptic currents (IPSCs) at 0 mV, indicative of signaling through GABA receptors (n = 28 of 58 cells, Figure 1E, center).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by voltage-clamp recordings at 0 mV showing outward currents characteristic of GABA receptor activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "3aa5cc8b-10f8-4eba-8bb4-eedf27862f19",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C9",
+      "claim": "In a subset of recorded cells, IPSCs remained after application of nAChR antagonists (n = 9 of 58 cells), suggesting these PSCs were not dependent on nAChR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a subset of recorded cells IPSCs remained (n = 9 of 58 cells, Figure 1F, right), suggesting that these PSCs were not dependent on nAChR signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pharmacological experiments showing persistence of IPSCs after nAChR blockade.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "09974c95-a405-40a4-9eab-5586db1ba1a1",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C10",
+      "claim": "Bath application of TTX blocked light-evoked nAChR-resistant IPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if nAChR-resistant IPSCs are caused by direct release of GABA from cholinergic fibers, we bath applied the voltage-gated sodium channel antagonist TTX, which blocked light-evoked IPSCs (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pharmacological experiments shown in Figure 1F,G demonstrating TTX blockade of IPSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "07871cfb-5512-4529-8566-03974a2cfc72",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C11",
+      "claim": "In the presence of TTX, IPSCs could be rescued by enhancing ChR2-mediated depolarization with the voltage-gated potassium channel blocker 4AP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of TTX, IPSCs could be rescued by enhancing ChR2-mediated depolarization with the voltage-gated potassium channel blocker 4AP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pharmacological experiments showing recovery of IPSCs with 4AP application after TTX blockade.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "5263eca7-e103-4a7e-9a3a-5843a6fe7b86",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C12",
+      "claim": "Rescued IPSCs in the presence of TTX and 4AP were blocked by the GABAA receptor antagonist SR95531 (n = 5 cells from 4 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Rescued IPSCs were subsequently blocked by the GABAA receptor antagonist SR95531 (n = 5 cells from 4 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pharmacological experiments demonstrating SR95531 blockade of rescued IPSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "f2bfd493-2787-4a80-be7b-39568e9df773",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C13",
+      "claim": "nAChR-resistant 'direct' IPSCs had faster average onsets (2.5 \u00b1 0.2 ms, n = 9 cells) than both nEPSCs (4.0 \u00b1 0.2 ms, n = 41 cells) and nAChR-sensitive 'indirect' IPSCs (11.8 \u00b1 2.3 ms, n = 19 cells from 9 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, nAChR-resistant 'direct' IPSCs had faster average onsets than both nEPSCs and nAChR-sensitive 'indirect' IPSCs (nEPSCs, 4.0 \u00b1 0.2 ms, n = 41 cells; direct IPSCs, 2.5 \u00b1 0.2, n = 9 cells; indirect IPSCs, 11.8 \u00b1 2.3, n = 19 cells from 9 mice, Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by latency measurements from electrophysiological recordings shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "61b6b2be-d40e-481c-ba76-15fb458a1285",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C14",
+      "claim": "The faster onset latencies of direct IPSCs compared to nEPSCs and indirect IPSCs are consistent with monosynaptic release of GABA by cholinergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest direct IPSCs are independent of nAChR signaling and mediated by GABAA receptors, consistent with monosynaptic release of GABA by cholinergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of fast onset latencies, pharmacological independence from nAChR signaling, and GABAA receptor mediation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "f56fe895-0802-459c-b4f6-3262331602e1",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C15",
+      "claim": "In cortex, GP, NB, and MS/DBB, nearly all ChAT+ cells were Slc32a1+ (zsGreen+/ChAT+, from 3 mice: Ctx, 628/628; GP, 238/243; NB, 598/624; MS/DBB; 560/601).",
+      "claim_type": "EXPLICIT",
+      "source": "In cortex, GP, NB, and MS/DBB, nearly all of ChAT+ cell were Slc32a1+ (zsGreen+/ChAT+, from 3 mice: Ctx, 628/628; GP, 238/243; NB, 598/624; MS/DBB; 560/601, Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of colocalization between zsGreen Cre reporter and ChAT immunostaining shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "dae411b9-85d9-47c1-8f1a-55b9113809d9",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C16",
+      "claim": "ChAT+ cells of the PPN very rarely expressed Slc32a1 (3/157).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ChAT+ cells of the PPN very rarely expressed Slc32a1 (3/157, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of colocalization in PPN shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "6231a2e7-c2b1-43cb-aa06-19dcabade14f",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C17",
+      "claim": "In both cortical and subcortical forebrain regions, ChAT+ cells express the canonical molecular machinery to package GABA into vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that in both cortical and subcortical forebrain regions, ChAT+ cells express the canonical molecular machinery to package GABA into vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that ChAT+ cells in these regions express Slc32a1, the vesicular GABA transporter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "8294492f-9245-477f-84a4-333b9ead11b9",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C18",
+      "claim": "GABAergic marker Slc32a1 is not a ubiquitous feature of the central cholinergic system, as ChAT+ neurons in the brainstem PPN do not express Slc32a1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since ChAT+ neurons in the brainstem PPN do not express Slc32a1, this GABAergic marker is not a ubiquitous feature of the central cholinergic system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that PPN ChAT+ neurons lack Slc32a1 expression while other forebrain cholinergic populations express it.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "a4ab8c6e-8cd9-4d95-a482-1384ba22c8ed",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C19",
+      "claim": "GAD67 is expressed largely in cell bodies and is thought to be responsible for synthesizing GABA for general metabolic cell functions.",
+      "claim_type": "EXPLICIT",
+      "source": "GAD67 is expressed largely in cell bodies and is thought to be responsible for synthesizing GABA for general metabolic cell functions, whereas GAD65 expression is more prominent in axon terminals and is thought to mediate the majority of synthesis of synaptic GABA (Soghomonian and Martin, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature on GAD67 function and localization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "5bd59d99-6736-479c-b3fe-51acef64e4d1",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C20",
+      "claim": "GAD65 expression is more prominent in axon terminals and is thought to mediate the majority of synthesis of synaptic GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "GAD67 is expressed largely in cell bodies and is thought to be responsible for synthesizing GABA for general metabolic cell functions, whereas GAD65 expression is more prominent in axon terminals and is thought to mediate the majority of synthesis of synaptic GABA (Soghomonian and Martin, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature on GAD65 function and localization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "5f04656e-b028-4663-aa74-895b8863d236",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C21",
+      "claim": "Only minor overlap was detected between neurons that stained positive for ChAT and those that expressed GFP (Gad1) in the NB, GP, MS/DBB, or PPN (GFP+/ChAT + neurons: MS/DBB, 1/573; NB, 0/439; GP, 7/413; PPN, 12/246).",
+      "claim_type": "EXPLICIT",
+      "source": "We detected only minor overlap between neurons that stained positive for ChAT and those that expressed GFP in the NB, GP, MS/DBB, or PPN, except for cortical ChAT+ interneurons, where we observed significant overlap (GFP+/ChAT + neurons: Ctx: 122/136; MS/DBB, 1/573; NB, 0/439; GP, 7/413; PPN, 12/246, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of colocalization between GFP and ChAT in Gad1GFP mice shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "be8da0b2-44a6-4bb2-9629-c0b64a4c52a7",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C22",
+      "claim": "Significant overlap was observed between neurons that stained positive for ChAT and those that expressed GFP (Gad1) in cortical ChAT+ interneurons (122/136).",
+      "claim_type": "EXPLICIT",
+      "source": "We detected only minor overlap between neurons that stained positive for ChAT and those that expressed GFP in the NB, GP, MS/DBB, or PPN, except for cortical ChAT+ interneurons, where we observed significant overlap (GFP+/ChAT + neurons: Ctx: 122/136; MS/DBB, 1/573; NB, 0/439; GP, 7/413; PPN, 12/246, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of colocalization in cortex shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "9ba2f7c5-86ef-41ed-89be-adbcb03d3768",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C23",
+      "claim": "Within the major subcortical cholinergic projections, GAD67-mediated GABA synthesis does not occur in cholinergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that within the major subcortical cholinergic projections, GAD67-mediated GABA synthesis does not occur in cholinergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of Gad1/ChAT colocalization in subcortical cholinergic regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "87a99b5f-8a0f-42b9-a554-ad06d392b523",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C24",
+      "claim": "In cortex, GP, NB, and MS/DBB of Gad2 i-Cre; Rosa26 lsl-zsGreen mice, most ChAT+ neurons were Gad2+ (zsGreen+/ChAT+, from 4 mice: Ctx, 518/519; GP, 273/372; NB, 860/934; MS/DBB, 673/685).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Gad1, in cortex, GP, NB, and MS/DBB of Gad2 i-Cre; Rosa26 lsl-zsGreen mice, most ChAT+ neurons were Gad2+ (zsGreen+/ChAT+, from 4 mice: Ctx, 518/519; GP, 273/372; NB, 860/934; MS/DBB, 673/685, Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of colocalization between zsGreen Cre reporter and ChAT immunostaining in Gad2 i-Cre mice shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "ef38e0d5-8e55-4ad1-8a71-57abaaf7bc7c",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C25",
+      "claim": "In the brainstem PPN, few of the ChAT+ cells were Gad2+ (6/110).",
+      "claim_type": "EXPLICIT",
+      "source": "In the brainstem, however, few of the ChAT+ cells were Gad2+ (PPN, 6/110, Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of colocalization in PPN shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "37ec2def-77c1-4b37-9f14-02b3265c36c6",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C26",
+      "claim": "The ChAT co-expression pattern for Gad2 is similar to Slc32a1, suggesting that forebrain cholinergic neurons possess the necessary cellular machinery to both synthesize and package synaptic GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "This ChAT co-expression pattern for Gad2 is similar to Slc32a1, suggesting that forebrain cholinergic neurons possess the necessary cellular machinery to both synthesize and package synaptic GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the similar colocalization patterns of Gad2 and Slc32a1 with ChAT in forebrain regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "ea2bde44-0738-4026-b09b-9cee29515e54",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C27",
+      "claim": "Fast onset IPSCs were observed in 31% of layer 1 interneurons recorded in Chat i-Cre; Slc32a1+/+ mice (n = 5 of 16 from 2 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In voltage-clamp recordings from layer 1 interneurons, we observed fast onset IPSCs in 31% of cells recorded in Chat i-Cre; Slc32a1+/+ mice (n = 5 of 16 from 2 mice), but no direct IPSCs in Chat i-Cre; Slc32a1fl/fl mice (n = 0 of 34 cells from 4 mice, Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiological recordings from wild-type mice shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "256c2444-ab48-4ef8-a3db-f9f2952cc88d",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C28",
+      "claim": "No direct IPSCs were observed in Chat i-Cre; Slc32a1fl/fl mice (n = 0 of 34 cells from 4 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In voltage-clamp recordings from layer 1 interneurons, we observed fast onset IPSCs in 31% of cells recorded in Chat i-Cre; Slc32a1+/+ mice (n = 5 of 16 from 2 mice), but no direct IPSCs in Chat i-Cre; Slc32a1fl/fl mice (n = 0 of 34 cells from 4 mice, Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiological recordings from Slc32a1 conditional knockout mice shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "f3d47d75-371c-4256-889c-e116b222a8cd",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C29",
+      "claim": "The proportion and average peak amplitude of nAChR responses remains unchanged between Slc32a1+/+ and Slc32a1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the proportion and average peak amplitude of nAChR responses remains unchanged between Slc32a1+/+ and Slc32a1fl/fl mice (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of nEPSC amplitudes between genotypes shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "e3e61b97-f02d-4202-8568-c3c3a2ef473d",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C30",
+      "claim": "GABA release from cholinergic neurons relies on cell autonomous Slc32a1, ruling out a disynaptic mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that GABA but not ACh release from cholinergic neurons relies on cell autonomous Slc32a1, ruling out a disynaptic mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the selective elimination of IPSCs but not nEPSCs in Slc32a1 conditional knockout mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "a80c984e-2430-4328-a54f-d50eb8603008",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C31",
+      "claim": "ACh release from cholinergic neurons does not rely on cell autonomous Slc32a1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that GABA but not ACh release from cholinergic neurons relies on cell autonomous Slc32a1, ruling out a disynaptic mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the persistence of nEPSCs in Slc32a1 conditional knockout mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "f97ff379-4cda-4285-97f4-4170ea248a6b",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C32",
+      "claim": "Cholinergic neurons release GABA directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, conditional knock-out of Slc32a1 selectively in cholinergic neurons eliminates light-evoked monosynaptic IPSCs. These genetic results confirm that cholinergic neurons release GABA directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by conditional knockout experiments showing elimination of IPSCs when Slc32a1 is deleted from cholinergic neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "ccb45c1d-2e9b-4353-a9d8-ddf4d264f15e",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C33",
+      "claim": "Cholinergic GABA release is likely to be a feature of most, but not all, central cholinergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinergic GABA release is likely to be a feature of most, but not all, central cholinergic neurons: the ChAT+ neurons of the MS and DBB\u2014which innervate the hippocampus\u2014also express Gad2 and Slc32a1, whereas those of the midbrain PPN do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential expression patterns of Gad2 and Slc32a1 across cholinergic populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "f145c13a-f227-4a7b-8573-380b2571d730",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C34",
+      "claim": "ChAT+ neurons of the MS and DBB express Gad2 and Slc32a1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinergic GABA release is likely to be a feature of most, but not all, central cholinergic neurons: the ChAT+ neurons of the MS and DBB\u2014which innervate the hippocampus\u2014also express Gad2 and Slc32a1, whereas those of the midbrain PPN do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by colocalization data showing Gad2 and Slc32a1 expression in MS/DBB ChAT+ neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "1e94f1ce-8c93-411b-9d0e-ee5b2b1ad81e",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C35",
+      "claim": "ChAT+ neurons of the midbrain PPN do not express Gad2 and Slc32a1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinergic GABA release is likely to be a feature of most, but not all, central cholinergic neurons: the ChAT+ neurons of the MS and DBB\u2014which innervate the hippocampus\u2014also express Gad2 and Slc32a1, whereas those of the midbrain PPN do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by colocalization data showing lack of Gad2 and Slc32a1 expression in PPN ChAT+ neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "a7354289-2f3d-40b2-ada5-f2f725eaed22",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C36",
+      "claim": "In retinal SACs, release of GABA and ACh can be functionally separated through patterned light stimulation or pharmacology.",
+      "claim_type": "EXPLICIT",
+      "source": "In retinal SACs, release of GABA and ACh can be functionally separated through patterned light stimulation or pharmacology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior findings in retinal starburst amacrine cells, drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "67968a55-f93c-4c08-a3df-7416e3bd034e",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C37",
+      "claim": "In Chat+ GP axons in cortex, GABA and ACh appear to be released from distinct vesicular pools which can be located within the same or neighboring pre-synaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "In Chat+ GP axons in cortex, GABA and ACh appear to be released from distinct vesicular pools which can be located within the same or neighboring pre-synaptic terminals (Saunders et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work on GP cholinergic neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "72351fd1-1db1-4d67-98f6-ff19935af2fd",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C38",
+      "claim": "The differences in the proportion of layer 1 interneurons showing ACh and GABA responses suggest some form of segregated release.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the precise mechanism by which each forebrain cholinergic population coreleases GABA and ACh remain unclear and further experiments are merited to explore how GABA/ACh cotransmission is regulated, the differences in the proportion of layer 1 interneurons showing ACh and GABA responses suggest some form of segregated release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that different proportions of cells show ACh vs GABA responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "c7d33500-b8f7-4c37-9966-a66908a81be3",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C39",
+      "claim": "Anatomical evidence shows widespread distribution of cholinergic fibers through all cortical layers with significant separation between the sites of release and ACh receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is supported by anatomical evidence showing widespread distribution of cholinergic fibers through all cortical layers with significant separation between the sites of release and ACh receptors (Descarries and Mechawar, 2000; Mechawar et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "b0233983-ed90-4dd5-a49d-f8a7d47aed90",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C40",
+      "claim": "Behaviorally relevant sensory cues can cause a fast, time-locked spike in ACh concentration, suggesting that ACh may mediate detection of that cue.",
+      "claim_type": "EXPLICIT",
+      "source": "Behaviorally relevant sensory cues can cause a fast, time-locked spike in ACh concentration, suggesting that ACh may mediate detection of that cue (Parikh et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior behavioral and neurochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "c5f2a3b3-5ccf-4545-b1c9-5c1fa19fe3df",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C41",
+      "claim": "Fast onset currents mediated by nAChRs can be recorded in cortical interneurons following optogenetic activation of cholinergic fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, fast onset currents mediated by nAChRs can be recorded in cortical interneurons following optogenetic activation of cholinergic fibers (Arroyo et al., 2012; Bennett et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior optogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "7946d6bd-235a-4531-a03e-64ab1043d7e7",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C42",
+      "claim": "The finding that cholinergic neurons elicit fast-onset synaptic GABAA responses lends further support to the notion that the cholinergic system can rapidly affect cortical computations by acting at classical synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that cholinergic neurons also elicit fast-onset synaptic GABAA responses lends further support to the notion that the cholinergic system can rapidly affect cortical computations by acting at classical synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of fast GABA responses observed in this study and prior evidence of fast cholinergic signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "cb8b1eed-9dee-4225-a009-d3469d5e1820",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C43",
+      "claim": "ACh release from basal forebrain neurons excites layer 1 and VIP+ interneurons, which in turn inhibit local interneurons that target principle neurons of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "ACh release from basal forebrain neurons excites layer 1 and VIP+ interneurons, which in turn inhibit local interneurons that target principle neurons of the cortex (Letzkus et al., 2011; Pinto et al., 2013; Fu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on cholinergic disinhibition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "0e7b8f81-f883-4008-9172-ab7d8ce375e2",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C44",
+      "claim": "Depending on the timing and targeted cell types, GABA corelease could conceivably enhance the disinhibitory effect by inhibiting local interneurons, thereby promoting cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the timing and targeted cell types, GABA corelease could conceivably enhance this effect by inhibiting local interneurons, thereby promoting cortical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential circuit-level effects of GABA corelease.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "0b2f68e7-950e-4427-a5ca-15a52fc482df",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C45",
+      "claim": "In hippocampal interneurons, post-synaptic nAChRs are present in inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in hippocampal interneurons, post-synaptic nAChRs are present in inhibitory synapses (Fabian-Fine et al., 2001) and when activated, reduce GABAA receptor-mediated IPSCs in a Ca2+ and PKC-dependent manner (Wanaverbecq et al., 2007; Zhang and Berg, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior anatomical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "654f4cbb-cc69-463f-9f76-7397d3c78e24",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C46",
+      "claim": "When activated, post-synaptic nAChRs in hippocampal interneurons reduce GABAA receptor-mediated IPSCs in a Ca2+ and PKC-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in hippocampal interneurons, post-synaptic nAChRs are present in inhibitory synapses (Fabian-Fine et al., 2001) and when activated, reduce GABAA receptor-mediated IPSCs in a Ca2+ and PKC-dependent manner (Wanaverbecq et al., 2007; Zhang and Berg, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "ddf8d4ea-0c91-407a-8e6c-070a4a534c46",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C47",
+      "claim": "Coreleased ACh and GABA could interact to modulate local synaptic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus coreleased ACh and GABA could interact to modulate local synaptic signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from prior evidence of nAChR modulation of GABA signaling and the finding of ACh/GABA corelease.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "105cfe2e-fc4f-4e40-a8ed-3002850b9fa4",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C48",
+      "claim": "Activity within the basal forebrain cholinergic projection is necessary and sufficient for plasticity in sensory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, experiments poisoning or stimulating the basal forebrain cholinergic system have demonstrated that activity within this projection is necessary and sufficient for plasticity in sensory cortices (Kilgard and Merzenich, 1998; Weinberger, 2004; Ramanathan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior experimental studies on cholinergic system and plasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "eaff5b70-9ef8-493a-8b99-64dba80b2130",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C49",
+      "claim": "ACh alone can induce functional changes in cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "While ACh alone can induce functional changes in cortical circuits (Metherate and Weinberger, 1990), GABA may also contribute to synaptic rewiring in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study on ACh-induced plasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "02490abf-0751-466a-a9e0-2fd6ddfefd08",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C50",
+      "claim": "GABA may contribute to synaptic rewiring in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While ACh alone can induce functional changes in cortical circuits (Metherate and Weinberger, 1990), GABA may also contribute to synaptic rewiring in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential role of GABA in plasticity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "2c4a2a6c-dbe0-4b6e-9ebf-1ec57c6c611e",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C51",
+      "claim": "Given the presence of GABA signaling machinery throughout the distinct forebrain cholinergic systems, corelease likely has a significant and fundamental effect on brain activity and cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the presence of GABA signaling machinery throughout the distinct forebrain cholinergic systems, corelease likely has a significant and fundamental effect on brain activity and cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the widespread expression of GABA machinery in forebrain cholinergic neurons and speculative reasoning about functional implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "037949ce-b47e-463f-b917-7ff36c8e759c",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C52",
+      "claim": "Neurotransmitter corelease is emerging as a common theme of central neuromodulatory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurotransmitter corelease is emerging as a common theme of central neuromodulatory systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "7d3c0a7d-a79b-444f-984a-fc36c97f202e",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C53",
+      "claim": "Corelease of glutamate or GABA with acetylcholine has been reported within the cholinergic system.",
+      "claim_type": "EXPLICIT",
+      "source": "Though corelease of glutamate or GABA with acetylcholine has been reported within the cholinergic system, the full extent is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior reports in the literature, drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "262c39be-2438-4de8-ba33-47f6ce42426d",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C54",
+      "claim": "Retinal starburst amacrine cells (SACs) differentially release GABA and acetylcholine (ACh) based on the pattern of light stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal starburst amacrine cells (SACs) differentially release GABA and acetylcholine (ACh) based on the pattern of light stimulation (Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study on retinal SACs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "aaf43f2e-0fe6-40b1-8a7e-922e37f1bc7c",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C55",
+      "claim": "Selective activation of striatal cholinergic interneurons results in cholinergic and glutamatergic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In the central brain, selective activation of striatal cholinergic interneurons results in cholinergic and glutamatergic responses (Gras et al., 2008; Higley et al., 2011; Nelson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on striatal cholinergic neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "b4b436ad-c94c-4610-b29b-c42e27d278bc",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C56",
+      "claim": "The cholinergic projection from habenula excites interpeduncular neurons through glutamate and ACh.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the cholinergic projection from habenula excites interpeduncular neurons through glutamate and ACh (Ren et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study on habenula cholinergic neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "292063da-d308-459c-8c9e-042521b67702",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C57",
+      "claim": "The dorsal-most BFC neurons, which belong to the globus pallidus externus (GP), express molecular markers for GABA synthesis and vesicular packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsal-most BFC neurons, which belong to the globus pallidus externus (GP), express molecular markers for GABA synthesis and vesicular packaging and trigger GABAA receptor currents in GP and cortex when activated (Tkatch et al., 1998; Saunders et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on GP cholinergic neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "34a02819-6a7d-42b8-9a3e-9545208482dd",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C58",
+      "claim": "The dorsal-most BFC neurons trigger GABAA receptor currents in GP and cortex when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsal-most BFC neurons, which belong to the globus pallidus externus (GP), express molecular markers for GABA synthesis and vesicular packaging and trigger GABAA receptor currents in GP and cortex when activated (Tkatch et al., 1998; Saunders et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on GP cholinergic neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "4f0f4fe1-51d1-4b65-94bc-fa8d96e3d701",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C59",
+      "claim": "Stimulation of dopaminergic terminals from the ventral tegmental area and substantia nigra compacta activates glutamate-mediated excitatory currents in the nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the impact of dopamine, stimulation of dopaminergic terminals from the ventral tegmental area and substantia nigra compacta activates glutamate-mediated excitatory currents in the nucleus accumbens (Stuber et al., 2010; Tecuapetla et al., 2010) and GABA-mediated inhibitory currents in the striatum (Tritsch et al., 2012, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on dopaminergic neuron corelease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "9a397e8d-2bde-43cf-b226-fc810b646332",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C60",
+      "claim": "Stimulation of dopaminergic terminals from the ventral tegmental area and substantia nigra compacta activates GABA-mediated inhibitory currents in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the impact of dopamine, stimulation of dopaminergic terminals from the ventral tegmental area and substantia nigra compacta activates glutamate-mediated excitatory currents in the nucleus accumbens (Stuber et al., 2010; Tecuapetla et al., 2010) and GABA-mediated inhibitory currents in the striatum (Tritsch et al., 2012, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on dopaminergic neuron corelease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "5c973a78-e45f-4795-ac29-0e1637b22905",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C61",
+      "claim": "Serotonergic neurons of the dorsal raphe can trigger glutamate-mediated currents in post-synaptic neurons of the ventral tegmentum and nucleus accumbens which contributes to the signaling of reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, serotonergic neurons of the dorsal raphe can trigger glutamate-mediated currents in post-synaptic neurons of the ventral tegmentum and nucleus accumbens which contributes to the signaling of reward (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study on serotonergic neuron corelease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "10e12e71-8a06-463b-9134-4d809051a15a",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C62",
+      "claim": "In dopaminergic neurons of the substantia nigra, GABA is co-packaged with dopamine into vesicles by the transporter VMAT2 (Slc18a2).",
+      "claim_type": "EXPLICIT",
+      "source": "In those neurons, GABA is co-packaged with dopamine into vesicles by the transporter VMAT2 (Slc18a2), instead of by the typical vesicular transporter for GABA (VGAT, encoded by Slc32a1), which is necessary for packaging in most GABAergic neurons (Wojcik et al., 2006; Tong et al., 2008; Kozorovitskiy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on GABA packaging in dopaminergic neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "09233aae-ddbc-430c-9f72-837b651f6c42",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C63",
+      "claim": "VGAT (encoded by Slc32a1) is necessary for GABA packaging in most GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In those neurons, GABA is co-packaged with dopamine into vesicles by the transporter VMAT2 (Slc18a2), instead of by the typical vesicular transporter for GABA (VGAT, encoded by Slc32a1), which is necessary for packaging in most GABAergic neurons (Wojcik et al., 2006; Tong et al., 2008; Kozorovitskiy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on VGAT function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "7f55a1a0-f99a-41a0-b6f1-30256816c00c",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C64",
+      "claim": "Both GABA and glycine packaging in spinal interneurons rely on VGAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, both GABA and glycine packaging in spinal interneurons rely on VGAT (Wojcik et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study on spinal interneuron neurotransmitter packaging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "ff49200f-ee05-45b5-9965-1fa30ed20798",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C65",
+      "claim": "Coreleased GABA and glutamate are thought to control the balance of excitation and inhibition in the lateral habenula.",
+      "claim_type": "EXPLICIT",
+      "source": "In other instances, the effects of the two neurotransmitters may be different and synergistic. For example, coreleased GABA and glutamate are thought to control the balance of excitation and inhibition in the lateral habenula (Root et al., 2014; Shabel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on lateral habenula neurotransmission.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "a474d766-2e47-4374-990d-c426e42c60f6",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "claim_id": "C66",
+      "claim": "In GABA/glutamate corelease onto neurons of the lateral habenula, individual miniature EPSCs can be observed with dual GABA/glutamate components.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the case for GABA/glutamate corelease onto neurons of the lateral habenula, where individual miniature EPSCs can be observed with dual GABA/glutamate components (Shabel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study demonstrating co-packaging of GABA and glutamate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "63d9bd98-b577-4a90-81ca-bbea20625367",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Chat i-Cre; Rosa26 lsl-ChR2-EYFP mice express ChR2-EYFP in cholinergic neurons throughout the forebrain, including cortex, striatum, GP, and NB, with ChR2+ neurons confirmed to be immunopositive for ChAT. Layer 1 is densely innervated by these cholinergic fibers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by anatomical data (Figure 1A-D) showing ChR2-EYFP expression patterns matching known Chat expression, ChAT immunohistochemistry confirming colocalization, and established literature on cholinergic innervation patterns. The genetic strategy and validation are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "3ced7917-72ed-4c2c-bd17-7e0a65c2f6ea",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic activation of cholinergic fibers evokes robust nicotinic EPSCs in layer 1 interneurons (41/58 cells) that are blocked by nAChR antagonists but not glutamate receptor antagonists, displaying biphasic kinetics consistent with \u03b17 and non-\u03b17 nAChR subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 are supported by electrophysiological recordings (Figure 1E) with appropriate pharmacological controls. The sample size is adequate (n=41 cells from 9 mice), and the biphasic kinetics interpretation is supported by cited literature on nAChR subtypes. The pharmacological dissection is rigorous.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "ba1897de-ee2e-43ab-b8ae-2ab5e8a996e7",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic activation of cholinergic fibers evokes GABAergic IPSCs in layer 1 interneurons, with a subset (9/58 cells) showing nAChR-independent IPSCs that are TTX-sensitive, 4AP-rescuable, SR95531-blockable, and have faster onset latencies (2.5\u00b10.2 ms) than nEPSCs (4.0\u00b10.2 ms), consistent with monosynaptic GABA release from cholinergic neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14 provide converging evidence for direct GABA release through pharmacological dissection (TTX/4AP rescue, SR95531 blockade) and latency analysis. The faster onset of direct IPSCs compared to nEPSCs and indirect IPSCs (Figure 1H, p<0.05) strongly supports monosynaptic transmission. Sample sizes are adequate (n=5-41 cells).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "417d3b1d-15aa-499e-a233-cdc0d87b1c04",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Forebrain cholinergic neurons (cortex, GP, NB, MS/DBB) nearly universally express Slc32a1 (VGAT), while PPN cholinergic neurons rarely express it (3/157), indicating that VGAT expression is a feature of forebrain but not all central cholinergic populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are supported by extensive colocalization analysis using Slc32a1i-Cre reporter mice (Figure 2). The quantification is thorough with large sample sizes (>500 cells per region from 3 mice), showing near-complete colocalization in forebrain regions and minimal colocalization in PPN. The regional specificity is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "62910695-3a99-4cfd-bed0-218aefad0067",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Subcortical forebrain cholinergic neurons show minimal coexpression with Gad1 (GAD67), while cortical cholinergic interneurons show significant overlap (122/136), suggesting GAD67-mediated GABA synthesis does not occur in major subcortical cholinergic projections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 are supported by colocalization analysis in Gad1GFP mice (Figure 3\u2014supplement 1) with large sample sizes. The differential expression between cortical interneurons and subcortical populations is clearly demonstrated. The interpretation regarding GAD67 function is appropriately based on cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "18629762-81b5-4557-9d10-b1a7b6c6997b",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Forebrain cholinergic neurons (cortex, GP, NB, MS/DBB) predominantly express Gad2 (GAD65), while PPN neurons rarely do (6/110), with the coexpression pattern similar to Slc32a1, suggesting forebrain cholinergic neurons possess machinery to synthesize and package synaptic GABA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by extensive colocalization analysis using Gad2 i-Cre reporter mice (Figure 3) with large sample sizes (>500 cells per region from 4 mice). The parallel expression patterns of Gad2 and Slc32a1 across regions strengthen the conclusion about GABA synthesis and packaging machinery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "e3b65d3b-37dc-445e-a910-8d4db93a4259",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Conditional knockout of Slc32a1 in cholinergic neurons eliminates direct GABAergic IPSCs (0/34 cells in knockout vs 5/16 in wildtype) while preserving nicotinic EPSCs, confirming that cholinergic neurons directly release GABA in a cell-autonomous, Slc32a1-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 provide definitive genetic evidence through conditional knockout experiments (Figure 4). The selective elimination of IPSCs but not nEPSCs in Slc32a1fl/fl mice (n=34 cells from 4 mice) conclusively demonstrates cell-autonomous GABA release. The control comparison with wildtype is appropriate and sample sizes are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "b75c16b0-212a-44b5-9689-6a6a3ca172a4",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GABA corelease is a feature of most but not all central cholinergic neurons, with MS/DBB neurons expressing Gad2 and Slc32a1 while PPN neurons do not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 appropriately synthesize the anatomical findings showing differential expression patterns across cholinergic populations. The conclusion is well-supported by the colocalization data from multiple brain regions and is appropriately qualified as applying to 'most but not all' cholinergic neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "a07936b6-55a1-4d69-a452-b5e2c3911417",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The differential proportions of layer 1 interneurons showing ACh versus GABA responses suggest segregated release mechanisms, similar to other corelease systems where neurotransmitters can be functionally separated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 draw reasonable inferences from the observation that different proportions of cells respond to ACh (41/58) versus direct GABA (9/58). The comparison to retinal SACs and GP neurons is appropriately cited. However, the mechanism remains speculative and requires further investigation as acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "d37e1f44-6d5a-468b-93d0-cd536b9044b6",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The finding of fast-onset GABAergic responses from cholinergic neurons supports the emerging view that the cholinergic system can rapidly affect cortical computations through classical synaptic transmission, in addition to volume transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 appropriately contextualize the findings within existing literature on cholinergic signaling modes. The fast GABA responses observed in this study complement prior evidence of fast nicotinic signaling, supporting a dual-mode model of cholinergic transmission. The interpretation is well-grounded in cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "74ae6ab0-d3c8-4497-a94b-3ab9a67a692f",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GABA corelease from cholinergic neurons could enhance cortical disinhibition by directly inhibiting local interneurons, and coreleased ACh and GABA could interact through nAChR modulation of GABAergic signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C47 present plausible circuit-level hypotheses based on cited literature about cholinergic disinhibition and nAChR-GABA interactions. However, these remain speculative as the authors have not directly tested these mechanisms. The claims appropriately use conditional language ('could conceivably') but lack experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "ee75ff15-ea89-4ad4-bb17-f017843ee38e",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Given the necessity and sufficiency of basal forebrain cholinergic activity for cortical plasticity and the widespread expression of GABA machinery in forebrain cholinergic systems, GABA corelease likely has significant effects on brain activity and cognition, potentially contributing to synaptic rewiring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C51 extrapolate from the anatomical and physiological findings to propose functional significance. While C48-C49 are supported by cited literature on cholinergic plasticity, C50-C51 are speculative regarding GABA's role. The widespread expression of GABA machinery is demonstrated, but functional consequences remain to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    },
+    {
+      "id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa",
+      "content_id": "e463d0ec-bb2c-44e0-a03c-f8fd5bad70e8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Neurotransmitter corelease is an emerging theme in neuromodulatory systems, with various examples of GABA, glutamate, or other transmitters being coreleased with primary neuromodulators in dopaminergic, serotonergic, and cholinergic systems, utilizing different vesicular packaging mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C66 provide appropriate literature context for the study, citing established examples of corelease in other systems. These claims accurately represent prior work and are well-supported by the cited references. They establish the broader significance of the current findings within the corelease literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:35:05.379274Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4d9e9f92-d546-4da4-a05f-f02b451230a1",
+      "result_id": "63d9bd98-b577-4a90-81ca-bbea20625367"
+    },
+    {
+      "claim_id": "e43d4afe-efd8-48cb-b89d-6c904211b19b",
+      "result_id": "63d9bd98-b577-4a90-81ca-bbea20625367"
+    },
+    {
+      "claim_id": "f39115c2-e3c6-4cdd-9d7b-9a0585b4fc44",
+      "result_id": "63d9bd98-b577-4a90-81ca-bbea20625367"
+    },
+    {
+      "claim_id": "617fcab1-bdcd-45cc-b797-a003c391abb0",
+      "result_id": "3ced7917-72ed-4c2c-bd17-7e0a65c2f6ea"
+    },
+    {
+      "claim_id": "1f029fbf-94f7-4969-a3f8-358dadc345c8",
+      "result_id": "3ced7917-72ed-4c2c-bd17-7e0a65c2f6ea"
+    },
+    {
+      "claim_id": "d9dadce8-f972-430f-b502-7cae8571ba84",
+      "result_id": "3ced7917-72ed-4c2c-bd17-7e0a65c2f6ea"
+    },
+    {
+      "claim_id": "9c94002f-8d72-4502-ac30-0cbf3cc66e0b",
+      "result_id": "3ced7917-72ed-4c2c-bd17-7e0a65c2f6ea"
+    },
+    {
+      "claim_id": "e26e7b48-d1c0-4394-9204-70bfb250b153",
+      "result_id": "ba1897de-ee2e-43ab-b8ae-2ab5e8a996e7"
+    },
+    {
+      "claim_id": "3aa5cc8b-10f8-4eba-8bb4-eedf27862f19",
+      "result_id": "ba1897de-ee2e-43ab-b8ae-2ab5e8a996e7"
+    },
+    {
+      "claim_id": "09974c95-a405-40a4-9eab-5586db1ba1a1",
+      "result_id": "ba1897de-ee2e-43ab-b8ae-2ab5e8a996e7"
+    },
+    {
+      "claim_id": "07871cfb-5512-4529-8566-03974a2cfc72",
+      "result_id": "ba1897de-ee2e-43ab-b8ae-2ab5e8a996e7"
+    },
+    {
+      "claim_id": "5263eca7-e103-4a7e-9a3a-5843a6fe7b86",
+      "result_id": "ba1897de-ee2e-43ab-b8ae-2ab5e8a996e7"
+    },
+    {
+      "claim_id": "f2bfd493-2787-4a80-be7b-39568e9df773",
+      "result_id": "ba1897de-ee2e-43ab-b8ae-2ab5e8a996e7"
+    },
+    {
+      "claim_id": "61b6b2be-d40e-481c-ba76-15fb458a1285",
+      "result_id": "ba1897de-ee2e-43ab-b8ae-2ab5e8a996e7"
+    },
+    {
+      "claim_id": "f56fe895-0802-459c-b4f6-3262331602e1",
+      "result_id": "417d3b1d-15aa-499e-a233-cdc0d87b1c04"
+    },
+    {
+      "claim_id": "dae411b9-85d9-47c1-8f1a-55b9113809d9",
+      "result_id": "417d3b1d-15aa-499e-a233-cdc0d87b1c04"
+    },
+    {
+      "claim_id": "6231a2e7-c2b1-43cb-aa06-19dcabade14f",
+      "result_id": "417d3b1d-15aa-499e-a233-cdc0d87b1c04"
+    },
+    {
+      "claim_id": "8294492f-9245-477f-84a4-333b9ead11b9",
+      "result_id": "417d3b1d-15aa-499e-a233-cdc0d87b1c04"
+    },
+    {
+      "claim_id": "a4ab8c6e-8cd9-4d95-a482-1384ba22c8ed",
+      "result_id": "62910695-3a99-4cfd-bed0-218aefad0067"
+    },
+    {
+      "claim_id": "5bd59d99-6736-479c-b3fe-51acef64e4d1",
+      "result_id": "62910695-3a99-4cfd-bed0-218aefad0067"
+    },
+    {
+      "claim_id": "5f04656e-b028-4663-aa74-895b8863d236",
+      "result_id": "62910695-3a99-4cfd-bed0-218aefad0067"
+    },
+    {
+      "claim_id": "be8da0b2-44a6-4bb2-9629-c0b64a4c52a7",
+      "result_id": "62910695-3a99-4cfd-bed0-218aefad0067"
+    },
+    {
+      "claim_id": "9ba2f7c5-86ef-41ed-89be-adbcb03d3768",
+      "result_id": "62910695-3a99-4cfd-bed0-218aefad0067"
+    },
+    {
+      "claim_id": "87a99b5f-8a0f-42b9-a554-ad06d392b523",
+      "result_id": "18629762-81b5-4557-9d10-b1a7b6c6997b"
+    },
+    {
+      "claim_id": "ef38e0d5-8e55-4ad1-8a71-57abaaf7bc7c",
+      "result_id": "18629762-81b5-4557-9d10-b1a7b6c6997b"
+    },
+    {
+      "claim_id": "37ec2def-77c1-4b37-9f14-02b3265c36c6",
+      "result_id": "18629762-81b5-4557-9d10-b1a7b6c6997b"
+    },
+    {
+      "claim_id": "ea2bde44-0738-4026-b09b-9cee29515e54",
+      "result_id": "e3b65d3b-37dc-445e-a910-8d4db93a4259"
+    },
+    {
+      "claim_id": "256c2444-ab48-4ef8-a3db-f9f2952cc88d",
+      "result_id": "e3b65d3b-37dc-445e-a910-8d4db93a4259"
+    },
+    {
+      "claim_id": "f3d47d75-371c-4256-889c-e116b222a8cd",
+      "result_id": "e3b65d3b-37dc-445e-a910-8d4db93a4259"
+    },
+    {
+      "claim_id": "e3e61b97-f02d-4202-8568-c3c3a2ef473d",
+      "result_id": "e3b65d3b-37dc-445e-a910-8d4db93a4259"
+    },
+    {
+      "claim_id": "a80c984e-2430-4328-a54f-d50eb8603008",
+      "result_id": "e3b65d3b-37dc-445e-a910-8d4db93a4259"
+    },
+    {
+      "claim_id": "f97ff379-4cda-4285-97f4-4170ea248a6b",
+      "result_id": "e3b65d3b-37dc-445e-a910-8d4db93a4259"
+    },
+    {
+      "claim_id": "ccb45c1d-2e9b-4353-a9d8-ddf4d264f15e",
+      "result_id": "b75c16b0-212a-44b5-9689-6a6a3ca172a4"
+    },
+    {
+      "claim_id": "f145c13a-f227-4a7b-8573-380b2571d730",
+      "result_id": "b75c16b0-212a-44b5-9689-6a6a3ca172a4"
+    },
+    {
+      "claim_id": "1e94f1ce-8c93-411b-9d0e-ee5b2b1ad81e",
+      "result_id": "b75c16b0-212a-44b5-9689-6a6a3ca172a4"
+    },
+    {
+      "claim_id": "a7354289-2f3d-40b2-ada5-f2f725eaed22",
+      "result_id": "a07936b6-55a1-4d69-a452-b5e2c3911417"
+    },
+    {
+      "claim_id": "67968a55-f93c-4c08-a3df-7416e3bd034e",
+      "result_id": "a07936b6-55a1-4d69-a452-b5e2c3911417"
+    },
+    {
+      "claim_id": "72351fd1-1db1-4d67-98f6-ff19935af2fd",
+      "result_id": "a07936b6-55a1-4d69-a452-b5e2c3911417"
+    },
+    {
+      "claim_id": "c7d33500-b8f7-4c37-9966-a66908a81be3",
+      "result_id": "d37e1f44-6d5a-468b-93d0-cd536b9044b6"
+    },
+    {
+      "claim_id": "b0233983-ed90-4dd5-a49d-f8a7d47aed90",
+      "result_id": "d37e1f44-6d5a-468b-93d0-cd536b9044b6"
+    },
+    {
+      "claim_id": "c5f2a3b3-5ccf-4545-b1c9-5c1fa19fe3df",
+      "result_id": "d37e1f44-6d5a-468b-93d0-cd536b9044b6"
+    },
+    {
+      "claim_id": "7946d6bd-235a-4531-a03e-64ab1043d7e7",
+      "result_id": "d37e1f44-6d5a-468b-93d0-cd536b9044b6"
+    },
+    {
+      "claim_id": "cb8b1eed-9dee-4225-a009-d3469d5e1820",
+      "result_id": "74ae6ab0-d3c8-4497-a94b-3ab9a67a692f"
+    },
+    {
+      "claim_id": "0e7b8f81-f883-4008-9172-ab7d8ce375e2",
+      "result_id": "74ae6ab0-d3c8-4497-a94b-3ab9a67a692f"
+    },
+    {
+      "claim_id": "0b2f68e7-950e-4427-a5ca-15a52fc482df",
+      "result_id": "74ae6ab0-d3c8-4497-a94b-3ab9a67a692f"
+    },
+    {
+      "claim_id": "654f4cbb-cc69-463f-9f76-7397d3c78e24",
+      "result_id": "74ae6ab0-d3c8-4497-a94b-3ab9a67a692f"
+    },
+    {
+      "claim_id": "ddf8d4ea-0c91-407a-8e6c-070a4a534c46",
+      "result_id": "74ae6ab0-d3c8-4497-a94b-3ab9a67a692f"
+    },
+    {
+      "claim_id": "105cfe2e-fc4f-4e40-a8ed-3002850b9fa4",
+      "result_id": "ee75ff15-ea89-4ad4-bb17-f017843ee38e"
+    },
+    {
+      "claim_id": "eaff5b70-9ef8-493a-8b99-64dba80b2130",
+      "result_id": "ee75ff15-ea89-4ad4-bb17-f017843ee38e"
+    },
+    {
+      "claim_id": "02490abf-0751-466a-a9e0-2fd6ddfefd08",
+      "result_id": "ee75ff15-ea89-4ad4-bb17-f017843ee38e"
+    },
+    {
+      "claim_id": "2c4a2a6c-dbe0-4b6e-9ebf-1ec57c6c611e",
+      "result_id": "ee75ff15-ea89-4ad4-bb17-f017843ee38e"
+    },
+    {
+      "claim_id": "037949ce-b47e-463f-b917-7ff36c8e759c",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "7d3c0a7d-a79b-444f-984a-fc36c97f202e",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "262c39be-2438-4de8-ba33-47f6ce42426d",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "aaf43f2e-0fe6-40b1-8a7e-922e37f1bc7c",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "b4b436ad-c94c-4610-b29b-c42e27d278bc",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "292063da-d308-459c-8c9e-042521b67702",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "34a02819-6a7d-42b8-9a3e-9545208482dd",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "4f0f4fe1-51d1-4b65-94bc-fa8d96e3d701",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "9a397e8d-2bde-43cf-b226-fc810b646332",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "5c973a78-e45f-4795-ac29-0e1637b22905",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "10e12e71-8a06-463b-9134-4d809051a15a",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "09233aae-ddbc-430c-9f72-837b651f6c42",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "7f55a1a0-f99a-41a0-b6f1-30256816c00c",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "ff49200f-ee05-45b5-9965-1fa30ed20798",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    },
+    {
+      "claim_id": "a474d766-2e47-4374-990d-c426e42c60f6",
+      "result_id": "040ce3e4-1a95-4933-a6ca-93404e40fdfa"
+    }
+  ],
+  "comparisons": []
+}

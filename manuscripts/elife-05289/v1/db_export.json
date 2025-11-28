@@ -1,0 +1,1814 @@
+{
+  "submission": {
+    "id": "3a0d93ce-57e3-456c-a15e-03ca2fd4b905",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:31:17.682999Z",
+    "updated_at": "2025-11-28T22:31:17.682999Z"
+  },
+  "content": [
+    {
+      "id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "submission_id": "3a0d93ce-57e3-456c-a15e-03ca2fd4b905",
+      "content_type": "manuscript",
+      "content_text": "# The stress-responsive kinases MAPKAPK2/MAPKAPK3 activate starvation-induced autophagy through Beclin 1 phosphorylation\n\n## Authors\n\n- Yongjie Wei<sup>1</sup>\n- Zhenyi An<sup>1</sup>\n- Zhongju Zou<sup>1</sup>\n- Rhea Sumpter<sup>1</sup>\n- Minfei Su<sup>3</sup>\n- Xiao Zang<sup>4</sup>\n- Sangita Sinha<sup>3</sup>\n- Matthias Gaestel<sup>5</sup>\n- Beth Levine<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Center for Autophagy Research, Department of Internal Medicine UT Southwestern Medical Center Dallas United States\n2. Howard Hughes Medical Institute, UT Southwestern Medical Center Dallas United States\n3. Department of Chemistry and Biochemistry North Dakota State University Fargo United States\n4. Department of Clinical Sciences UT Southwestern Medical Center Dallas United States\n5. Institute of Physiological Chemistry Hannover Medical School Hannover Germany\n6. Department of Microbiology UT Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAutophagy is a fundamental adaptive response to amino acid starvation orchestrated by conserved gene products, the autophagy (ATG) proteins. However, the cellular cues that activate the function of ATG proteins during amino acid starvation are incompletely understood. Here we show that two related stress-responsive kinases, members of the p38 mitogen-activated protein kinase (MAPK) signaling pathway MAPKAPK2 (MK2) and MAPKAPK3 (MK3), positively regulate starvation-induced autophagy by phosphorylating an essential ATG protein, Beclin 1, at serine 90, and that this phosphorylation site is essential for the tumor suppressor function of Beclin 1. Moreover, MK2/MK3-dependent Beclin 1 phosphorylation (and starvation-induced autophagy) is blocked in vitro and in vivo by BCL2, a negative regulator of Beclin 1. Together, these findings reveal MK2/MK3 as crucial stress-responsive kinases that promote autophagy through Beclin 1 S90 phosphorylation, and identify the blockade of MK2/3-dependent Beclin 1 S90 phosphorylation as a mechanism by which BCL2 inhibits the autophagy function of Beclin 1.\n\n## Introduction\n\nWhen eukaryotic cells are deprived of amino acids, they activate autophagy, a conserved lysosomal degradation pathway that enables cells to survive short-term periods of starvation by recycling nutrients and maintaining energy homeostasis (Levine and Klionsky, 2004; Mizushima and Komatsu, 2011). The autophagy pathway is mediated by a set of evolutionary conserved proteins, the ATG proteins, that include proteins involved in the Atg1/ULK1 serine/threonine kinase protein complex, the Beclin 1/VPS34 class III phosphatidylinositol kinase (PI3K) complex, and the ATG5/ATG12/ATG16 and Atg8/LC3 protein conjugation complexes (Levine and Klionsky, 2004). The activity of these ATG protein complexes can be regulated by protein\u2013protein interactions, post-translational modifications (e.g., ubiquitination, phosphorylation, acetylation), and at the transcriptional level (Kroemer et al., 2010; Abrahamsen et al., 2012; Norris and Yao, 2012; B\u00e1nr\u00e9ti et al., 2013; Webster et al., 2014).\n\nDespite extensive research over the past several years into the molecular mechanisms of autophagy, very little is understood about stress-responsive signals that regulate activation of autophagy protein complexes during amino acid deprivation. Inactivation of the autophagy repressor kinase mTOR (mechanistic target of rapamycin) in response to amino acid starvation contributes to autophagy through phosphorylation of ULK1/2 and ATG13 (resulting in their dissociation) and of ATG14 (Meijer et al., 2014). The low-energy sensing kinase, AMPK, also acts directly on components of the autophagy machinery (ULK1, Beclin 1, VPS34) to positively regulate glucose starvation-induced autophagy (Egan et al., 2011; Kim et al., 2013), but does not appear to function similarly in amino acid starvation-induced autophagy (Kim et al., 2013). Thus, an important open question is whether any stress-responsive signals directly regulate autophagy proteins to promote autophagy during amino acid starvation.\n\nThe autophagy protein, Beclin 1, is a central regulator of autophagy and functions through its interaction with the Class III PI3K VPS34, VPS15, and the autophagy protein ATG14 in the initial stages of autophagosome formation (Funderburk et al., 2010; He and Levine, 2010; Abrahamsen et al., 2012; Fu et al., 2013). It is a haploinsufficient tumor suppressor important for breast cancer and also acts in various other biological processes, including differentiation and development, innate immunity, lifespan extension, protein against neurodegeneration, and exercise-mediated effects on glucose metabolism (Cao and Klionsky, 2007; Levine and Kroemer, 2008; He et al., 2012). During amino acid starvation, Beclin 1-associated VPS34 autophagy complex activity is negatively regulated by the direct binding of Beclin 1 to BCL2 or BCL2L1 (Sinha and Levine, 2008), and by inhibitory interactions with the oncogenic kinases, AKT and EGFR (Wang et al., 2012; Wei et al., 2013), the Golgi-associated protein, GLIPR2/GAPR-1 (Shoji-Kawata et al., 2013), and the kinase MST1 (Maejima et al., 2013). Several proteins positively regulate the Beclin 1-associated VPS34 autophagy complex, including those that disrupt BCL2/BCL2L1-Beclin 1 binding by either Beclin 1 phosphorylation (e.g., DAPK, ROCK [Zalckvar et al., 2009; Gurkar et al., 2013]) or BCL2 phosphorylation (e.g., JNK1 [Wei et al., 2008]) and proteins that are part of the core autophagy machinery, such as ULK1 and AMBRA1 (Fimia et al., 2007; Di Bartolomeo et al., 2010; Russell et al., 2013). These observations suggest that Beclin 1 may be a central target that is \u2018turned on\u2019 or \u2018turned off\u2019 in order to properly coordinate autophagosome formation with the needs of the cell to increase or decrease autophagy in a context-dependent manner.\n\nHowever, it remains unknown whether stress-activated kinases directly phosphorylate Beclin 1 (or other ATG proteins) to positively regulate autophagy in response to amino acid starvation. Here we describe a novel role for members of the stress-activated protein kinase (p38 MAPK) signaling pathway, MAPKAPK2 (MK2) and MAPKAPK3 (MK3) (Cargnello and Roux, 2011), in mediating Beclin 1 S90 phosphorylation, which we show is essential for its autophagy and tumor suppressor function. This MK2/3-dependent Beclin 1 S90 phosphorylation is inhibited by a mutant form of BCL2 that cannot be phosphorylated by the MAPK family member, JNK1.\n\nOur findings reveal a crucial link between an evolutionarily conserved family of stress-activated protein kinases, MK2 and MK3, and a component of the autophagy machinery, Beclin 1, that plays an essential role in starvation-induced autophagy. Moreover, we demonstrate that blockade of MK2/MK3-dependent Beclin 1 phosphorylation is a mechanism by which BCL2 family proteins inhibit autophagy. These finding have important implications for understanding how cells respond to amino acid starvation and turn on autophagy.\n\n## Results\n\n### Nutrient starvation enhances Beclin 1 S90 phosphorylation\n\nActivation of the Beclin 1/VPS34 complex is an essential event for starvation-induced autophagy (Funderburk et al., 2010). To gain insights into potential mechanisms that regulate starvation-induced autophagy, we sought to identify post-translational modifications of Beclin 1 that occur specifically in response to the autophagy-inducing condition, amino acid starvation. Mass spectrometry analysis of SKNSH human neuroblastoma cells stably transfected with Flag epitope-tagged Beclin 1 grown in normal growth or starvation conditions identified only one phosphorylation event that increased specifically in response to amino acid deprivation\u2014phosphorylation of the serine 90 residue of Beclin 1 (data not shown).\n\nWe confirmed starvation-induced phosphorylation of Beclin 1 S90 using HeLa cells transiently transfected with either Flag epitope-tagged wild-type Beclin 1 or Flag epitope-tagged mutant Beclin 1 containing a non-phosphorylatable alanine substitution at residue 90 of human Beclin 1 (Beclin 1 S90A). Following metabolic labeling with 33P, immunoprecipitation with an anti-Flag antibody and autoradiography, minimal phosphorylation was detected during nutrient-rich conditions, whereas Beclin 1 phosphorylation increased in response to starvation (Figure 1A, upper gel). Mutation of S90 to alanine almost completely abolished the 33P signal of Beclin 1, indicating that S90 is a major starvation-induced phosphorylation site (Figure 1A, upper gel). We confirmed that starvation induces Beclin 1 S90 phosphorylation by generating a phosphospecific antibody that recognizes Beclin 1 p-S90. Beclin 1 p-S90 reactivity of wild-type Beclin 1, but not Beclin 1 S90A, increased after nutrient starvation (Figure 1A, middle gel).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig1-v1.jpg)\n\n**Figure 1.:** (A) Detection of Beclin 1 S90 phosphorylation in HeLa cells transfected with indicated Flag-Beclin 1 construct by radiolabeling, immunoprecipitation with an anti-Flag antibody and autoradiography (upper gel) or by western blot analysis using an anti-Beclin 1 S90 phosphospecific antibody (middle gel). Starvation (\u2212) refers to growth in normal medium and starvation (+) refers to growth in HBSS for 2 hr. (B) Detection of endogenous Beclin 1 S90 phosphorylation in HeLa cells by immunoprecipitation with anti-Beclin 1 followed by immunoblot analysis with anti-Beclin 1 p-S90 phosphospecific antibody and detection of autophagy by p62 and LC3 immunoblot analysis in HeLa cells at indicated time points after starvation in HBSS. Actin is shown as a loading control.\n\nWe next evaluated whether endogenous Beclin 1 undergoes S90 phosphorylation in response to nutrient (amino acid) starvation using the Beclin 1 S90 phosphospecific antibody. Beclin 1 S90 phosphorylation was detected in HeLa cell lysates within 30 min after starvation and gradually increased over a 2 hr period (Figure 1B). This increase in Beclin 1 S90 phosphorylation was accompanied by starvation-induced autophagy as measured by a time-dependent decrease in levels of the autophagy substrate, SQSTMI/p62 (herein referred to as p62), and increase in the conversion of the autophagy protein LC3-I to the lipidated, autophagosome-associated form, LC3-II (Figure 1B). Thus, endogenous Beclin 1 undergoes phosphorylation at residue S90 in response to nutrient starvation in parallel with autophagy induction.\n\n### The Beclin 1 S90 phosphorylation site is required for starvation-induced autophagy\n\nNext, we asked whether Beclin 1 S90 phosphorylation is essential for starvation-induced autophagy. To evaluate this question, we used two different cell lines that are deficient in Beclin 1 expression and starvation-induced autophagy, including human MCF7 breast carcinoma cells (Liang et al., 1999) and U2OS cells that inducibly express shRNA targeted against beclin 1 (Sun et al., 2008).\n\nMCF7 cells were derived from a patient with allelic loss of beclin 1, have low levels of endogenous Beclin 1 expression, and are defective in starvation-induced autophagy in the absence of exogenous beclin 1 gene transfer (Liang et al., 1999, 2001; Furuya et al., 2005; Pattingre et al., 2005; Wang et al., 2012). As reported, enforced expression of wild-type Beclin 1 rescued starvation-induced autophagy, as measured by decreased levels of p62, increased LC3-II conversion and increased numbers of GFP-LC3 puncta (a marker for autophagosomes) (Figure 2A\u2013C). These readouts represented an increase in autophagic flux rather than a block in autophagosomal maturation, as treatment with the lysosomal inhibitor bafilomycin A1 blocked p62 degradation and further increased LC3-II accumulation and numbers of GFP-LC3 puncta (Figure 2B,C). In contrast, enforced expression of the Beclin 1 S90A mutant failed to induce autophagy in response to starvation (Figure 2A\u2013C), indicating that the Beclin 1 S90 phosphorylation site is essential for autophagy induction in response to nutrient starvation. Moreover, a phosphomimetic mutant Beclin 1 S90E increased autophagy in basal conditions, suggesting that Beclin 1 S90 phosphorylation may be sufficient to induce autophagy (Figure 2A\u2013C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig2-v1.jpg)\n\n**Figure 2.:** (A) Western blot results of MCF7 cells transiently transfected with empty vector, and Flag epitope-tagged wild-type Beclin 1, Beclin 1 S90A, or Beclin 1 S90E. The cells were grown in normal medium (starvation\u2212) or HBSS (starvation+) for 3 hr in the presence or absence of 100 nM bafilomycin A1. (B) Representative images of GFP-LC3 puncta (autophagosomes) in MCF7 cells transiently co-transfected with indicated Flag-Beclin 1 constructs and a plasmid expressing GFP-LC3 and grown in normal medium or in HBSS for 3 hr (starvation) in the presence or absence of 100 nM bafilomycin A1. (C) Quantification of GFP-LC3 puncta in MCF7 cells in conditions shown in (B). Bars are mean + SEM of triplicate samples (>50 cells analyzed per sample). Similar results were observed in three independent experiments. ***p < 0.001, **p < 0.01, NS, not significant; one-way ANOVA. (D) Western blot detection of Beclin 1, p62 and LC3 in U2OS cells expressing doxycycline-inducible shRNA against beclin 1 (beclin 1 shRNA U2OS cells) following treatment with 1 \u03bcg/ml doxycycline for 4 days in cells transduced with retroviral constructs expressing indicated shRNA-resistant Flag-Beclin 1 (NTm, non-targetable mutant) plasmids. Cells were either grown in normal medium (starvation\u2212) or in HBSS for 3 hr (starvation+) in the presence or absence of 100 nM bafilomycin A1. See Figure 2\u2014figure supplement 1 for comparison of Beclin 1, p62, and LC3 western blots in the presence and absence of doxycycline. (E) Quantification of GFP-LC3 puncta (autophagosomes) in beclin 1 shRNA U2OS cells treated with 1 \u03bcg/ml doxycycline for 4 days and co-transfected with plasmids expressing GFP-LC3 and indicated shRNA-resistant Flag-Beclin 1 construct and grown in normal medium or in EBSS for 3 hr (starvation) in the presence or absence of 100 nM bafilomycin A1. Bars are mean + SEM of triplicate samples (>50 cells analyzed per sample). Similar results were observed in three independent experiments. **p < 0.01, *p < 0.05, NS, not significant; one-way ANOVA. (F) Beclin 1-associated VPS34 in vitro lipid kinase assay and amounts of VPS34 and ATG14 in anti-Beclin 1 immunoprecipitates of beclin 1 shRNA U2OS cells following treatment with 1 \u03bcg/ml doxycycline for 4 days and transfection with indicated shRNA-resistant Flag-Beclin 1 (NTm, non-targetable mutant) plasmids. Cells were either grown in normal medium (starvation\u2212) or in HBSS for 2 hr (starvation+). Dots shown in upper panel represent the amount of PI3P generated in an in vitro VPS34 lipid kinase assay using anti-Flag-Beclin 1 immunoprecipitates as input. (G) Densometric quantitation of VPS34 in vitro lipid kinase activity in anti-Beclin 1 immunoprecipitates in conditions described in (F). Results shown represent mean + SEM of values in three independent experiments. Similar results were observed in each independent experiment. Shown are the relative values of VPS34 lipid kinase activity compared to those observed in cells expressing WT Beclin 1 in normal media (defined as 100%). To control for input in Beclin 1 anti-immunoprecipitates, values used to calculate VPS34 lipid kinase activity were normalized for levels of Beclin 1 determined by densitometric quantification of Beclin 1 western blot bands in anti-Beclin 1 immunoprecipitates. ***p < 0.001, **p < 0.01, NS, not significant; one-way ANOVA. See also Figure 2\u2014figure supplement 1, Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Detection of Beclin 1 and autophagy levels (as measured by p62 and LC3 immunoblots) in U2OS that express doxycycline-inducible beclin 1 shRNA. Cells were cultured in the presence or absence of 1 \u03bcg/ml doxycycline for 4 days and subjected to starvation in HBSS for the indicated time period.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** HeLa cells were either untreated, pre-treated or not pre-treated with 5 mM N-acetyl-L-cysteine for 1 hr, followed by culture either in the presence or absence 100 nM Bafilomycin A1 for 3 hr. Baf A1, bafilomycin A1; NAC, N-acetyl-L-cysteine.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Subcellular localization of Beclin 1, VPS34, and ATG14 in normal media or after starvation for 2 hr in HBSS in beclin 1 shRNA U2OS cells following treatment with 1 \u03bcg/ml doxycycline for 4 days and transfection with indicated shRNA-resistant Flag-Beclin 1 non-targetable wild-type (WT) or indicated mutant plasmids. Loading controls for the cytosol, mitochondria, and microscome fractions are GAPDH, TOM20, and PDI, respectively. Asterix denotes non-specific signal due to membrane edge artifact.\n\nWe observed similar results in U2OS cells with doxycycline inducible shRNA knockdown of endogenous Beclin 1. Doxycycline treatment of these cells resulted in undetectable levels of Beclin 1 and lack of starvation-induced p62 degradation. Consistent with previous reports of Beclin 1 knockdown or knockout in other mammalian cells (Matsui et al., 2007; He et al., 2013; Mandell et al., 2014) and knockout of Atg6 in yeast (Suzuki et al., 2004), knockdown of Beclin 1 did not block LC3 lipidation (Figure 2\u2014figure supplement 1) but it did block the formation of GFP-LC3 puncta (Figure 2D, data not shown) (Atg6/Beclin 1 are not invariably required for LC3 lipidation, but they are required for the localization of lipidated LC3 to the autophagosome [Mizushima et al., 2010]). Expression of shRNA-resistant wild-type Beclin 1, but not shRNA-resistant Beclin 1 S90A, rescued starvation-induced autophagic flux as measured by p62 degradation and quantification of GFP-LC3 puncta in the presence and absence of bafilomycin A1 (Figure 2D,E). Expression of the phosphomimetic mutant Beclin 1 S90E increased autophagy in basal conditions to levels similar to those observed in starvation in cells expressing wild-type Beclin 1 (Figure 2D,E). Taken together, the data in MCF7 cells and U2OS cells provide strong evidence that Beclin 1 S90 phosphorylation is both necessary and sufficient for autophagy induction. We note that there is not a complete block in autophagic flux in empty vector transfected MCF7 cells or in U2OS cells treated with doxycycline, presumably due to the presence of low levels of Beclin 1 expression.\n\nIn both MCF7 cells and U2OS cells, we observed that bafilomycin A1 treatment resulted in Flag-Beclin 1 S90 phosphorylation in the absence of starvation. To determine whether bafilomycin A1 also induces phosphorylation of endogenous Beclin 1 S90 and whether such effects are due to reactive oxygen species (ROS) generation that occurs as a consequence of inhibition of vacuolar-type-H+-ATPases (Zhdanov et al., 2011; Yokomakura et al., 2012), we measured the effects of bafilomycin A1 treatment on Beclin 1 S90 phosphorylation in HeLa cells in the presence or absence of the ROS scavenger, N-acetyl-L-cysteine (Figure 2\u2014figure supplement 2). Our results indicate that bafilomycin A1 results in endogenous Beclin 1 S90 phosphorylation which is blocked by N-acetyl-L-cysteine. Thus, ROS generation, as well as starvation, results in Beclin 1 S90 phosphorylation. We also observed Beclin 1 S90 phosphorylation in response to other stress stimuli (data not shown), but chose to focus on starvation, given the crucial physiological importance of starvation in autophagy induction.\n\nTo address the mechanism by which Beclin 1 S90 phosphorylation induces autophagy, we compared U2OS cells expressing wild-type Beclin 1, the non-phosphorylatable Beclin 1 S90A mutant, and the phosphomimetic Beclin 1 S90E mutant with respect to (1) Beclin 1-associated VPS34 lipid kinase activity; (2) Beclin 1 immunoprecipitation of ATG14 and VPS34, and (3) the membrane localization of Beclin 1, ATG14, and VPS34. Our results show that the amounts of VPS34 and ATG14 that co-immunoprecipitate with Beclin 1 are not altered by starvation or by mutation of the Beclin 1 S90 site (Figure 2F). In addition, no apparent differences were observed in the localization of Beclin 1, ATG14, or VPS34 to membrane fractions (e.g., mitochondrial-enriched, microsomal) in cells expressing wild-type Beclin 1, Beclin 1 S90A, or Beclin 1 S90E (Figure 2\u2014figure supplement 3). However, despite similar levels of Beclin 1/ATG14 and Beclin 1/VPS34 binding, marked differences were observed in the VPS34 lipid kinase activity associated with wild-type and mutant forms of Beclin 1 (Figure 2F\u2013G). In cells expressing the phosphorylation-defective Beclin 1 S90A mutant, no increase was observed in Beclin 1-associated VPS34 lipid kinase activity in response to starvation. In cells expressing the Beclin 1 S90E phosphomimetic mutant, Beclin 1-associated VPS34 lipid kinase activity was higher in baseline and in starvation conditions than in cells expressing wild-type Beclin 1. Thus, Beclin 1 S90 phopshorylation increases the lipid kinase activity of the Beclin 1/VPS34 complex.\n\n### The Beclin 1 S90 phosphorylation site is required for tumor suppressor function\n\nBeclin 1 is a tumor suppressor protein that inhibits the growth of MCF7 human breast carcinoma cells in immunodeficient mice (Liang et al., 1999, 2001; Furuya et al., 2005). We investigated whether the Beclin 1 S90 phosphorylation site required for starvation-induced autophagy is also required for the tumor suppressor activity of Beclin 1. MCF7 cells were transduced with retroviruses that express Flag epitope-tagged wild-type Beclin 1 or Beclin 1 S90A; injected into nu/nu mice implanted with slow release estrogen tablets; and monitored for their rate of tumor growth. Levels of Beclin 1 expression were comparable in MCF7 cells transduced with both Beclin 1-expressing viruses (Figure 3A). Even in normal growth conditions, Beclin 1 S90 phosphorylation could be detected in MCF7 cells expressing wild-type Beclin 1, presumably due to high levels of expression of the protein using a retroviral vector; such phosphorylation was absent in MCF7 cells transduced with a retrovirus expressing mutant Beclin 1 S90A.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig3-v1.jpg)\n\n**Figure 3.:** (A) Western blot detection of Beclin 1 p-S90, Flag-Beclin 1, p62, and LC3 in MCF7 cells stably transduced with retroviruses expressing indicated Beclin 1 construct. (B) Xenograft growth of cells in (A) in nu/nu mice. Tumor volumes shown represent mean + SEM for at least 11 mice per group. Differences in tumor growth among the different groups were analyzed using a linear mixed effect model; P = NS for Beclin 1 S90A vs empty vector; p < 0.001 for Beclin 1 WT vs empty vector. (C) Representative images of p62 staining, Ki67 staining, and TUNEL-labeling of indicated MCF7 xenograft tumor genotype. (D\u2013F) Quantification of relative reciprocal p62 intensity per high-power field (D), percentage of Ki67-positive nuclei per high-power field (E) and number of TUNEL-positive nuclei per high power field (F). At least 10 randomly selected fields per xenograft section were analyzed by an observer blinded to genotype. Bars are mean + SEM for 5\u20138 xenografts per MCF7 xenograft tumor genotype. ***p < 0.001, **p < 0.01, *p < 0.05, NS, not significant; one-way ANOVA with Dunnett's test.\n\nStriking differences in the rate of MCF7 xenograft growth in nude mice were observed in cells expressing wild-type Beclin 1 as compared to Beclin 1 S90A; MCF7 cells expressing Beclin 1 S90A grew as rapidly as MCF7 control cells, whereas a marked reduction in tumor growth was observed in MCF7 cells expressing wild-type Beclin 1 (Figure 3B). In xenografts expressing wild-type Beclin 1, but not Beclin 1 S90A, there was a significant reduction in tumor p62 staining as compared with empty vector controls (Figure 3C,D), suggesting increased levels of autophagy in the tumors. In parallel with decreased growth and decreased p62 staining, xenografts expressing wild-type Beclin 1, but not Beclin 1 S90A, had decreased rates of cell proliferation (Figure 3C,E), as measured by the percentage of cells with Ki67 staining. Xenografts expressing wild-type Beclin 1 also had decreased cell death (Figure 3C,F), as measured by the percentage of TUNEL-positive cells. Together, these data confirm previous reports demonstrating that Beclin 1 simultaneously increases cell survival and decreases cell proliferation, resulting in a net decrease in tumor cell growth (Wei et al., 2013), and provide new evidence that the S90 phosphorylation site is essential for the tumor suppressor function of Beclin 1.\n\n### Beclin 1 S90 is phosphorylated by MAPKAPK2 (MK2) and MAPKAPK3 (MK3)\n\nNext, we sought to identify the upstream kinase(s) that mediate starvation-induced phosphorylation of Beclin 1 S90. Therefore, we performed an in vitro kinase screen using a 15 amino acid peptide corresponding to Beclin 1 amino acid residues 83\u201397 as a substrate. Among a pool of 190 serine/threonine kinases, MAPKAPK3, also known as and herein referred to as MK3, was the only kinase with significant activity against the Beclin 1 peptide substrate (Figure 4\u2014figure supplement 1, Supplementary file 1). Since there are other serine and threonine residues in the Beclin 1 83\u201397 peptide, we repeated the in vitro kinase assay with MK3 using a Beclin 1 peptide spanning from amino acid residues 83\u2013103 with either a wild-type sequence or an alanine substitution mutation at amino acid residue 90. This mutation completely abrogated MK3-mediated phosphorylation of the Beclin 1 peptide, indicating that serine 90 is essential for it to serve as a substrate for MK3 (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig4-v1.jpg)\n\n**Figure 4.:** (A) In vitro kinase activity of MK3 using indicated Beclin 1 peptides as a substrate. (B) In vitro kinase activity of MK2, MK3, and MK5 using the wild-type (WT) Beclin 1 peptide shown in A as a substrate. (C) In vitro kinase activity of MK2 and MK3 using Flag epitope-tagged wild-type Beclin 1 or Beclin 1 S90 purified from HEK293T cells as a substrate. See also Figure 4\u2014figure supplement 1 and Supplementary file 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Kinases included in screen are listed in alphabetical order on the x-axis. See Supplementary file 1 for details.\n\nMK3 is highly homologous to MK2, another MAP kinase-activated protein kinase, and shares \u223c75% sequence identity and displays functional redundancy (Gaestel, 2006). We found that MK2, but not MK5\u2014another MAP kinase-activated protein kinase that is less structurally related to MK3 (Cargnello and Roux, 2011)\u2014also phosphorylated the Beclin 1 83\u201397 peptide in vitro (Figure 4B). Furthermore, both MK2 and MK3 demonstrated in vitro kinase activity, resulting in Beclin 1 S90 phosphorylation, using Flag-Beclin 1 purified from HEK293T cells as a substrate (Figure 4C). To investigate whether MK2 phosphorylates Beclin 1 S90 in cultured cells, we expressed either dominant-negative MK2 (MK2 K/R) (containing an arginine substitution at a lysine position at amino acid residue 76 that is conserved between MK2 and MK3), (Winzen et al., 1999) or constitutively active MK2 (MK2 T205E/T317E; herein referred to as MK2 EE) (Engel et al., 1995) in HeLa cells. Dominant-negative MK2 blocked starvation-induced Beclin 1 S90 phosphorylation, whereas constitutively active MK2 increased Beclin 1 S90 phosphorylation during nutrient-rich conditions (Figure 5A). By measuring phosphorylation of the downstream MK2/MK3 substrate, p-HSP27, we confirmed that starvation activated MK2/MK3 and that this was blocked by dominant negative MK2 expression. Taken together, these data indicate that MK2 and MK3 directly phosphorylate Beclin 1 S90 in vitro, and that MK2-like kinase activity also mediates starvation-induced Beclin 1 S90 phosphorylation in cultured cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig5-v1.jpg)\n\n**Figure 5.:** (A) Effects of wild-type, dominant negative (K/R) and constitutively active (EE) MK2 on endogenous Beclin 1 S90 phosphorylation, MK2/MK3 activation (levels of p-HSP27) and autophagy (levels of p62 degradation and LC3-II conversion) in HeLa cells grown in normal medium (starvation\u2212) or HBSS for 2 hr (starvation+). Actin is shown as a loading control. (B) Effects of wild-type, dominative negative (K/R) and constitutively active (EE) MK2 on autophagy (GFP-LC3 puncta numbers in the presence or absence of 100 nM bafilomycin A1) in HeLa cells grown in normal medium (starvation\u2212) or HBSS for 3 hr (starvation+). Bars are mean + SEM of triplicate samples (>50 cells analyzed per sample). Similar results were observed in three independent experiments. **p < 0.01, *p < 0.05, NS, not significant; one-way ANOVA for indicated comparisons. (C) Beclin 1 S90 phosphorylation and autophagy (levels of p62 degradation and LC3-II conversion) in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs and MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs stably transformed with wild-type MK2. Cells were grown in normal medium (starvation\u2212) or HBSS for 2 hr (starvation+). (D) Quantitation of GFP-LC3 puncta (autophagosomes) in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs and MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs stably transformed with wild-type MK2 during growth in normal media or HBSS (starvation) for 3 hr in the presence or absence of 100 nM bafilomycin A1. Bars are mean + SEM of triplicate samples (>50 cells analyzed per sample). Similar results were observed in three independent experiments. ***p < 0.001, NS, not significant; one-way ANOVA. p < 0.001 for the magnitude of change between normal and starvation conditions in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs vs that in in MK2\u2212/\u2212/MK3\u2212/\u2212 + MK2 MEFs; two-way ANOVA. See also Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Effects of dominant-negative (DN) JNK1 and DN p38\u03b1 on Beclin 1 S90 phosphorylation, MK2 activation (MK2 band shift and p-HSP27) and autophagy (p62 degradation and LC3-II conversion) in HeLa cells grown in normal media (starvation\u2212) or HBSS for 2 hr (starvation+). (B) Constitutively active MK2 (MK2 EE) blocks DN p38\u03b1 suppression of starvation-induced Beclin 1 S90 phosphorylation. HeLa cells were co-transfected with plasmids expressing Flag-DN p38\u03b1 and either empty vector or MK2 EE and grown in normal media (starvation\u2212) or HBSS for 2 hr (starvation+).\n\n### MK2 positively regulates starvation-induced autophagy\n\nTo study the effects of MK2 and MK3 on autophagy regulation, we first evaluated autophagy in HeLa cells transfected with dominant negative MK2 (which blocks the kinase activity of both MK2 and MK3) or constitutively active MK2. As measured by LC3-II conversion, p62 degradation, and numbers of GFP-LC3 puncta in the presence and absence of bafilomycin A1, dominant-negative MK2 decreased starvation-induced autophagy (Figure 5A,B). Conversely, constitutively active MK2 increased basal autophagy in HeLa cells (Figure 5A,B). Thus, in parallel with regulation of starvation-induced Beclin 1 S90 phosphorylation (Figure 5A), MK2 regulates starvation-induced autophagy.\n\nThe best-characterized kinase upstream of MK2/MK3 is p38 MAPK (Freshney et al., 1994; Rouse et al., 1994). Therefore, we asked whether dominant negative p38\u03b1 could block starvation-induced MK2 activation, Beclin 1 S90 phosphorylation, and autophagy. In HeLa cells transfected with a plasmid expressing dominant negative p38\u03b1, we failed to observe starvation-induced MK2 activation (i.e., an MK2 band shift or phosphorylation of its substrate HSP27), Beclin 1 S90 phosphorylation, or autophagy (Figure 5\u2014figure supplement 1A). This block in Beclin 1 S90 phosphorylation in cells expressing dominant negative p38\u03b1 was reversed by overexpression of constitutively active MK2 (Figure 5\u2014figure supplement 1B), providing additional proof that MK2 functions downstream of p38\u03b1 to mediate Beclin 1 S90 phosphorylation in response to amino acid starvation.\n\nTo determine whether endogenous MK2/MK3 function in the regulation of Beclin 1 S90 phosphorylation and autophagy, we evaluated Mapkapk2\u2212/\u2212/Mapkapk3\u2212/\u2212 (herein referred to as MK2\u2212/\u2212/MK3\u2212/\u2212) MEFs retrovirally transduced with empty vector compared to MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs retrovirally transduced with MK2 (Ronkina et al., 2011). In MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs, there was a marked decrease in starvation-induced Beclin 1 S90 phosphorylation which was rescued by MK2 expression (Figure 5C). Low levels of Beclin 1 S90 phosphorylation were still detected in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs following starvation, suggesting either that other members of the MAPKAPK family may partially compensate for the developmental loss of both MK2 and MK3 and/or that other unidentified kinase families may also play a minor role in the regulation of phosphorylation at this site of Beclin 1. Nonetheless, loss of MK2 and MK3 was sufficient to decrease both basal and starvation-induced autophagy as assessed by p62 degradation, LC3-II conversion, and quantification of GFP-LC3 puncta in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs as compared to MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs that stably express MK2 (Figure 5C,D). The increase in GFP-LC3 puncta with MK2 reconstitution was not due to a block in autophagic maturation, as numbers further increased upon treatment with the lysosomal inhibitor, bafilomycin A1. Also, we note that the decreased levels of total LC3 (with an increased ratio of LC3-II to LC3-I) in MK2 reconstituted cells during starvation conditions is consistent with a marked increase in autophagic flux, as LC3 (similar to p62) is degraded by the autophagy pathway. Thus, these results in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs demonstrate that endogenous MK2 and MK3 function in the positive regulation of Beclin 1 S90 phosphorylation and autophagy.\n\n### MK2 positively regulates starvation-induced autophagy through a mechanism involving the Beclin 1 S90 phosphorylation site\n\nTo examine whether MK2/3 positively regulate autophagy through a mechanism that involves Beclin 1 S90 phosphorylation, we examined the effects of retroviral gene transfer of wild-type Beclin 1, Beclin 1 S90A (a non-phosphorylatable mutant), or Beclin 1 S90E (a predicted phosphomimetic mutant) on autophagy in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs. Whereas expression of Beclin 1 S90A did not increase levels of basal or starvation-induced autophagy (and expression of wild-type Beclin 1 had only minimal effects), Beclin 1 S90E expression was sufficient to markedly increase basal autophagy in cells lacking both MK2 and MK3 (Figure 6A,B). The magnitude of this increase was almost comparable to that observed with enforced expression of MK2. The observation that a Beclin 1 S90 phosphomimetic mutant can substitute for MK2/3 in MK2/3-deficient cells in regulating levels of autophagy is consistent with a model in which MK2/3 regulates autophagy through the phosphorylation of Beclin 1 S90.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig6-v1.jpg)\n\n**Figure 6.:** (A) Western blot detection of Beclin 1 S90 phosphorylation and autophagy (p62 degradation and LC3-II conversion) in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs retrovirally transduced with indicated expression constructs and grown in normal media or HBSS (starvation) for 4 hr. (B) Quantification of GFP-LC3 puncta (autophagosomes) in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs retrovirally transduced with indicated expression constructs and grown in normal media or HBSS (starvation) for 4 hr. Bars are mean + SEM of triplicate samples (>50 cells analyzed per sample). Similar results were obtained in two independent experiments. ***p < 0.01, NS, not-significant; one-way ANOVA with Dunnett's test. (C) Effects of constitutively active MK2 (MK2 EE) on Beclin 1 S90 phosphorylation and autophagy (as measured by p62 and LC3 western blot analysis) in U2OS doxycycline-inducible beclin 1 shRNA knockdown cells expressing either shRNA-resistant wild-type Flag-Beclin 1 or mutant Flag-Beclin 1 S90A. Cells were treated with 1 \u03bcg/ml doxycycline for 4 days prior to western blot analyses with indicated antibodies and transfected with indicated shRNA-resistant plasmids after 2 days of doxycycline treatment. Cells were grown in normal media or HBSS (starvation) for 2 hr. NTm, non-targeting mutant. (D) Effects of dominant-negative MK2 (MK2 K/R) on Beclin 1 S90 phosphorylation and autophagy (as measured by p62 and LC3 western blot analysis) in U2OS doxycycline-inducible beclin 1 shRNA knockdown cells expressing either shRNA-resistant wild-type Flag-Beclin 1 or mutant Flag-Beclin 1 S90A. Cells were treated with 1 \u03bcg/ml doxycycline for 4 days prior to western blot analyses with indicated antibodies, and transfected with indicated shRNA-resistant plasmids after 2 days of doxycycline treatment. Cells were grown in normal media or HBSS (starvation) for 2 hr. NTm, non-targeting mutant.\n\nTo more directly test the hypothesis that MK2/3 regulate autophagy through the Beclin 1 S90 phosphorylation site, we investigated whether active MK2 can induce autophagy in cells that lack detectable endogenous Beclin 1 and only express an shRNA-resistant mutant Beclin 1 S90A construct (Figure 6C). U2OS cells with doxycycline treatment-induced knockdown of Beclin 1 fail to undergo increased autophagy (as assessed by p62 degradation and LC3-II conversion) in response to starvation, active MK2 expression, or both starvation and active MK2 expression. In cells that express an shRNA-resistant wild-type Beclin 1, there is an increase in autophagy with starvation and active MK2 expression, and a further increase in autophagy with combined starvation and active MK2 expression. In contrast, in cells that express an shRNA resistant Beclin 1 S90A mutant construct, no increase in autophagy is observed in response to any of these treatment conditions. Thus, MK2-induced upregulation of autophagy requires the Beclin 1 S90 phosphorylation site.\n\nConversely, we asked whether expression of a Beclin 1 S90E phosphomimetic mutant in cells lacking detectable endogenous Beclin 1 could bypass the inhibitory effects of dominant negative MK2 (Figure 6D). In doxycline-treated beclin 1 shRNA U2OS cells that express shRNA-resistant wild-type Beclin 1, dominant negative MK2 nearly completely suppressed starvation-induced autophagy, as assessed by p62 degradation and LC3-II conversion. However, in cells expressing shRNA-resistant Beclin 1 S90E, starvation induced a decrease in p62 levels and conversion of LC3-I to LC3-II even in the presence of dominant negative MK2 expression. This suggests that Beclin 1 S90 phosphorylation may be sufficient to partially bypass the inhibitory effects of MK2/3 inhibition on starvation-induced autophagy.\n\nTaken together, these data in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs and in doxycycline-inducible beclin 1 shRNA U2OS cells (reconstituted with wild-type Beclin 1, the non-phosphorylatable Beclin 1 S90A mutant or the phosphomimetic Beclin 1 S90E mutant) strongly suggest that MK2/3 regulate autophagy through a mechanism involving Beclin 1 S90 phosphorylation.\n\n### BCL2 negatively regulates MK2-Mediated Beclin 1 serine 90 phosphorylation\n\nBCL2 inhibits autophagy through a direct interaction with the BH3 domain of Beclin 1, which consists of amino acid residues 105\u2013128 (Oberstein et al., 2007). Given the proximity of the BH3 domain to Beclin 1 S90, we postulated that BCL2 binding to Beclin 1 might affect MK2-dependent Beclin 1 phosphorylation. In addition, the possibility that BCL2 binding to Beclin 1 (a process disrupted by JNK1-mediated multisite phosphorylation of BCL2 during amino acid starvation [Wei et al., 2008]) might block MK2-dependent phosphorylation was suggested by two observations in this study, including (1) dominant-negative JNK1 blocked starvation-induced Beclin 1 S90 phosphorylation and autophagy but not starvation-induced MK2 activation (Figure 5\u2014figure supplement 1); and (2) the amount of active MK2-dependent Beclin 1 S90 phosphorylation was greater in starvation conditions than in normal nutrient conditions (Figure 6C).\n\nTo directly test the hypothesis that BCL2 binding to Beclin 1 blocks MK2-mediated Beclin 1 S90 phosphorylation, we performed an in vitro kinase assay to assess the effects of MK2 on Beclin 1 S90 phosphorylation in the presence of recombinant GST-BCL2. We found that with increasing amounts of GST-BCL2, there was decreased in vitro MK2-mediated phosphorylation of Beclin 1 S90 (Figure 7A). These data provide direct evidence that BCL2 inhibits MK2-dependent Beclin 1 S90 phosphorylation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig7-v1.jpg)\n\n**Figure 7.:** (A) In vitro kinase activity of MK2 using Flag-Beclin 1 purified from HEK293 cells as a substrate in the presence of the indicated amount of GST-BCL2. (B) Structural model showing that steric hindrance may prevent simultaneous binding of BCL2/BCL2L1 and MK2 to Beclin 1. MK2 (residues 44\u2013216, 236\u2013284 and 288\u2013345), BCL2L1 (residues 2\u201325 and 83\u2013198) and Beclin 1 (residues 79\u2013181) are shown in cyan, pink and grey ribbon, respectively. MK2 residues important for catalysis and Beclin 1 residues important for binding to BCL2L1, or for phosphorylation (S90 and R87) are shown in stick, with atoms colored by element type: oxygen, red; nitrogen, blue; sulfur, green; and carbon, cyan or grey for MK2 or Beclin 1 respectively. Numbers indicate the last residue preceding or following regions missing from this model, that might cause further steric conflicts. (C) Detection of Beclin 1 S90 phosphorylation and autophagy levels (as measured by p62 and LC3 immunoblots) in HeLa cells stably transfected with empty vector (HeLa/control), wild-type BCL2 (HeLa/BCL2), or a BCL2 T69A/S70A/S87A mutant (HeLa/BCL2 AAA) and subjected to starvation in HBSS for the indicated time period. p-Hsp27 protein levels are shown as an indicator of MK2 activation. (D) Detection of Beclin 1 S90 phosphorylation and autophagy levels (as measured by p62 and LC3 immunoblots) in HeLa/Control, HeLa/BCL2, and HeLa/BCL2 AAA cells transiently transfected with a control empty vector or constitutively active MK2 (MK2 EE) and grown in normal medium (starvation\u2212) or HBSS for 2 hr (starvation+). (E) Starvation-induced Beclin 1 S90 phosphorylation and autophagy induction in vastus lateralis muscle of Bcl2AAA mice and control wild-type littermates. Mice were subjected to starvation for 48 hr prior to tissue collection and western blot analysis of muscle lysates with indicated antibodies. Each lane represents a muscle sample from an independent mouse.\n\nTo better understand how binding of BCL2 family proteins to Beclin 1 may inhibit MK2-mediated phosphorylation, we constructed a structure-based model (Figure 7B) to determine whether both BCL2 and MK2 could bind simultaneously to Beclin 1. The structure of the BCL2-related anti-apoptotic protein, BCL2L1 (which also inhibits autophagy through its interaction with Beclin 1), bound to the helical BH3 domain of Beclin 1 has been solved (Oberstein et al., 2007) (PDV ID: 2P1L), as has the structure of a region of MK2 bound to its auto-inhibitory peptide (Meng et al., 2002) (PDB ID: 1KWP). Based on sequence analysis suggesting that Beclin 1 residues 80\u2013104 that precede the BH3 domain are helical when bound to a suitable partner (Mei et al., 2014), a model for this region was built by \u2018in silico\u2019 mutagenesis of the MK2-bound auto-inhibitory peptide to correspond to Beclin 1 residues 80\u201395, such that S90 was positioned optimally for phosphorylation. This helix was then extended to include Beclin 1 residues 96\u2013131 and BCL2L1 positioned by superposition of the bound Beclin 1 BH3 domain (residues 105\u2013128) on the modeled Beclin 1 extended helix. This model suggests that steric hindrance may prevent simultaneous binding of BCL2L1 (or BCL2) and MK2 to Beclin 1, thereby inhibiting MK2-dependent Beclin 1 S90 phosphorylation. Of note, residues 216\u2013236 and the N- and C-terminal regions of MK2 and BCL2L1 residues 26\u201381, were not present in the structures used to build this model, but in the full-length proteins these residues likely result in additional steric conflicts (Figure 7B). Furthermore, the BCL2L1 C-terminal membrane-anchoring helix that was removed in the construct crystallized may provide cellular localization constraints that prevent MK2-mediated phosphorylation of Beclin 1 S90.\n\nNext, we assessed whether BCL2 binding to Beclin 1 in cultured cells regulates Beclin 1 S90 phosphorylation (Figure 7C,D). In HeLa cells stably transfected with wild-type BCL2, the starvation-induced increase in Beclin 1 S90 phosphorylation was delayed and blunted compared to that observed in HeLa control cells; however, by 2 hr after starvation when there was complete disruption of BCL2 and Beclin 1 binding (as measured by co-immunoprecipitation), an appreciable increase in Beclin 1 S90 phosphorylation was observed (Figure 7C). In contrast, in HeLa cells stably transfected with the mutant BCL2 T69A/S70A/S87A (BCL2 AAA), which lacks the JNK1 phosphorylation sites and fails to dissociate with Beclin 1 during starvation (Wei et al., 2008), there was no increase in Beclin 1 S90 phosphorylation in response to starvation. The levels of starvation-induced autophagy, as assessed by p62 degradation and LC3-II conversion paralleled the levels of Beclin 1 S90 phosphorylation. Starvation-induced autophagy was delayed and attenuated in HeLa/BCL2 cells compared to HeLa/control cells, and completely blocked in HeLa/BCL2 AAA cells. These effects of BCL2 on starvation-induced Beclin 1 S90 phosphorylation and autophagy were not due to a blockade of MK2/MK3 activation, as levels of phospho-HSP27 increased similarly during starvation in HeLa/control, HeLa/BCL2 and HeLa/BCL2 AAA cells. Furthermore, even in the absence of starvation, active MK2 was able to increase Beclin 1 S90 phosphorylation and induce autophagy in HeLa/control cells but not in HeLa/BCL2 or HeLa/BCL2 AAA cells (Figure 7D). Thus, BCL2 blocks both starvation- and active MK2-mediated upregulation of Beclin 1 S90 phosphorylation and autophagy.\n\nTo confirm whether BCL2 regulates starvation-induced Beclin 1 S90 phosphorylation in vivo, we examined the levels of Beclin 1 S90 phosphorylation in Bcl2AAA mice that contain a T69A/S70A/S84A knock-in mutation in Bcl2 (S84 is homologous to human S87) (Figure 7E). Previously, we showed that this mutation blocks starvation-induced disruption of Bcl2/Beclin 1 binding and starvation-induced autophagy, including in cardiac and skeletal muscle of Bcl2AAA mice (He et al., 2012). Following a 48 hr starvation period, we found the skeletal muscle of wild-type mice had activation of MK2 (as evidenced by a band shift in MK2 and phosphorylation of the substrate, HSP27), increased autophagy (as detected by p62 degradation and LC3-II conversion), and increased Beclin 1 S90 phosphorylation. In contrast, in the muscles of Bcl2AAA mice, activation of MK2 appeared similar to that observed in wild-type muscles, but this was not accompanied by an increase in Beclin 1 S90 phosphorylation or in levels of autophagy. Thus, the constitutive binding of Bcl2 AAA to Beclin 1 during starvation in vivo is sufficient to block the effects of activated MK2 on Beclin 1 S90 phosphorylation. Based on our data above in cultured cells, we propose that this block in MK2-regulated Beclin 1 S90 phosphorylation may contribute to the mechanism by which Bcl2 inhibits autophagy in vivo.\n\n## Discussion\n\n### MK2/MK3 are crucial kinases for starvation-induced autophagy\n\nAutophagy is a fundamental cellular survival response during nutrient starvation, permitting cells to maintain nutrient and energy homeostasis when external food supply is limited (Levine and Klionsky, 2004). The negative regulation of this process by mTORC1 has been extensively studied, but less is known about stress-activated signals that turn on autophagy during starvation (Kroemer et al., 2010). While AMPK activates components of the autophagy machinery during glucose starvation (phosphorylating ULK1, Beclin 1, and VPS34), it does not appear to regulate the Beclin 1/VPS34 complex in response to complete (nitrogen and glucose) starvation (Kim et al., 2013). The signaling molecules that activate Beclin 1/VPS34 to rapidly initiate autophagosome formation during complete starvation have been heretofore unknown.\n\nUsing unbiased approaches, we identified Beclin 1 S90 as a key phosphorylation site in starvation-induced autophagy and identified two stress-activated protein kinase signaling pathway family members, the p38 MAPK-activated protein kinases MK2 and MK3, as crucial kinases that mediate Beclin 1 S90 phosphorylation. A previous study showed that Beclin 1 S90 is phosphorylated during starvation and may function in autophagy (based on a ubiquitin-p62 degradation assay) (Fogel et al., 2013), but did not identify the kinase(s) responsible for this phosphorylation. In the present study, we found that alanine substitution of Beclin 1 serine 90 is sufficient to block detection of starvation-induced Beclin 1 phosphorylation, and sufficient to block Beclin 1-mediated rescue of starvation-induced autophagy in multiple different beclin 1-deficient cells using multiple different autophagic flux assays. The structurally and functionally-related p38 MAPK-activated protein kinase family members, MK2 and MK3 (Cargnello and Roux, 2011), but not the more distant family member, MK5, are strong inducers of Beclin 1 S90 phosphorylation. MK2 and MK3 phosphorylate a Beclin 1 peptide spanning S90 in vitro; MK2 and MK3 phosphorylate Beclin 1 immunoprecipitated from cells in vitro; dominant negative MK2 blocks starvation-induced Beclin 1 S90 phosphorylation and constitutively active MK2 induces Beclin 1 S90 starvation during basal conditions; and MEFs from MK2/MK3 knockout mice are deficient in starvation-induced Beclin 1 S90 phosphorylation. Moreover, MK2 positively regulates autophagy through a mechanism that requires the Beclin 1 S90 phosphorylation site.\n\nThese findings describe a previously unidentified direct link between specific members of the MAPK signaling pathway and the positive regulation of a core component of the autophagy machinery during starvation. MK2 was originally discovered as an ERK1/2 activated protein kinase that phosphorylates HSP25 and HSP27 (Stokoe et al., 1992), and was later found to be stimulated by p38 in response to stress stimuli (Freshney et al., 1994; Rouse et al., 1994). MK3 was discovered independently through a yeast two-hybrid screen for p38-interacting proteins (McLaughlin et al., 1996) and through an analysis of genes commonly deleted in small-cell lung cancer (Sithanandam et al., 1996). The substrate spectrum of MK2 and MK3 are virtually indistinguishable, and both enzymes modulate proteins involved in cytokine production, endocytosis, actin remodeling, cell migration, cell cycle control, chromatin remodeling, and transcriptional regulation (Cargnello and Roux, 2011). The role of MK2 and MK3 in LPS-induced inflammatory signaling is well-established in vivo; MK2 knockout mice show increased resistance to endotoxic shock and increased susceptibility to infections (Kotlyarov et al., 1999; Lehner et al., 2002) and this phenotype is exacerbated by simultaneous deletion of MK3 (Ronkina et al., 2007). To our knowledge, MK2 and MK3 have not been previously linked to starvation-induced stress responses or to phosphorylation of specific substrates involved in starvation-induced stress response pathways such as autophagy. The newly described role of these kinases in regulating starvation-induced autophagy raises the possibility that this arm of the MAPKAPK family (sometimes referred to as the \u2018p38 module\u2019) may have evolved to integrate autophagy induction with diverse other cellular functions required for cellular adaption to stress.\n\nOur data also suggest that MK2/MK3 are activated during amino acid starvation by the well-characterized upstream kinase, p38\u03b1. Several reports have shown that p38 functions in the positive regulation of autophagy in response to other stress stimuli such as glucose starvation (Moruno-Manchon et al., 2013), interferon-\u03b3 stimulation (Matsuzawa et al., 2012) reservatrol (Chang et al., 2014) or accumulation of mutant gilal fibrillary acidic protein in astrocytes (Tang et al., 2008). However, Webber and Tooze found that p38\u03b1 functions in the negative regulation of basal and starvation-induced autophagy in HEK293 cells (Webber and Tooze, 2010). The basis for the apparent discrepancy between this previous report and our current findings may reflect that p38\u03b1 functions differently in different cell types or may reflect other differences in experimental design. For example, we did not directly examine the effects of p38\u03b1 overexpression or p38\u03b1 siRNA knockdown on MK2/MK3 activation and autophagy; instead, we used a dominant-negative p38\u03b1 plasmid. One possibility is that there may be compensatory activation of different p38 isoforms that have different substrate signaling specificity in different experiments. In support of the concept that different p38 isoforms have different effects on starvation-induced MK2/MK3 activation, we found that dominant-negative p38\u03b2, but not dominant-negative p38\u03b3, also blocks starvation-induced MK2/MK3 activation (unpublished data). Another possibility is that p38\u03b1 may function upstream of MK2/MK3 in amino acid starvation, but its effects on other substrates may, in some contexts, counterbalance such effects in terms of autophagy regulation. Given our findings that dominant negative p38\u03b1 blocks starvation-induced MK2/MK3 activation, further studies are warranted to more clearly define the role of this signaling event in amino acid starvation-induced autophagy.\n\n### Beclin 1 S90 phosphorylation is essential for its tumor suppression function\n\nBeclin 1 is a haploinsufficient tumor suppressor; it is frequently monoallelically deleted in human breast and ovarian cancers (Aita et al., 1999); heterozygous loss in mice results in an increased incidence of breast and other spontaneous tumors (Qu et al., 2003; Yue et al., 2003; Cicchini et al., 2014); decreased beclin 1 mRNA expression is associated with aggressive clinic-pathological features and poor prognosis in human breast cancer (Tang et al., 2015); and beclin 1 gene transfer impairs the ability of MCF7 human breast tumor cells to form tumor xenografts in immunodeficient mice (Liang et al., 1999). Previous studies have shown that mutation of the nuclear export signal of Beclin 1 (resulting in its nuclear retention) or deletion of the evolutionary conserved domain of Beclin 1 (which abrogates it binding to VPS34 and autophagy function) blocks its tumor suppressor activity (Liang et al., 2001; Furuya et al., 2005). Our observation that a single point mutation in Beclin 1 that abrogates starvation-induced autophagy, Beclin 1 S90A, also eliminates it ability to suppress MCF7 mammary tumorigenesis provides additional support for the concept that Beclin 1 functions as a tumor suppressor through its autophagy activity. However, as this mutation impairs Beclin 1-associated VPS34 lipid kinase activity, we cannot rule out the possibility that the mutation blocks a VPS34-dependent, autophagy-independent function of the Beclin 1/VPS34 complex in tumor suppression.\n\nRegardless of the precise mechanisms by which the Beclin 1 S90A mutation blocks the tumor suppressor function of Beclin 1, our data show a strong association between decreased autophagy, increased tumor growth, and increased cellular proliferation in human mammary tumor xenografts. This association occurs despite the presence of increased cell death in tumors with decreased autophagy, and is consistent with our previous findings showing that enhanced suppression of autophagy in non-small cell lung carcinomas is associated with enhanced tumor growth despite increased cell death (Wei et al., 2013). Taken together, these findings suggest that the pro-survival function of autophagy in established tumors may not be the most important determinant of net tumor growth; other factors such as the effects of autophagy on cell growth control and genomic stability may be more important.\n\nAnother implication of our finding relates to the potential relationship of MK3 deletion and Beclin 1 S90 phosphorylation in cancer development. Given the requirement of the Beclin 1 S90 site for the tumor suppressor activity of Beclin 1, it will be interesting to determine whether the lack of MK3-dependent Beclin 1 S90 phosphorylation contributes to the pathogenesis of small cell lung carcinomas that commonly harbor deletions in MK3 (Sithanandam et al., 1996) or of other cancers with frequent heterozygous loss of MK3 such as invasive breast carcinomas, ovarian carcinomas, lung adenocarcinomas and lung squamous cell carcinomas (www.cbioportal.org).\n\n### Beclin 1 S90 phosphorylation may stimulate autophagy by modulating the activity of the class III phosphatidylinositol 3-kinase complex I (PI3KC3\u2013C1)\n\nPI3KC3-C1 consists of the lipid kinase, VPS34; the scaffolding protein, VPS15; and two autophagy proteins containing coiled-coil domains, ATG14 and Beclin 1. Our data show that Beclin 1 S90 phosphorylation increases the VPS34 lipid kinase activity of this complex, without altering its composition or membrane localization. These data are consistent with predictions from a recent EM reconstitution of the ordered domains of the PI3KC3-C1 complex (Baskaran et al., 2014). The architecture of the EM reconstituted complex predicts that signaling inputs at the N-terminus of Beclin 1 are likely to function in the allosteric regulation of its lipid kinase activity. There are no direct interactions between ATG14 and Beclin 1 and VPS34; however, the unstructured N-terminal region of Beclin 1 is predicted to be in proximity to the catalytic subunit of VPS34, leading to the proposal that signals in the region of the Beclin 1 N-terminus regulate the activity of VPS34 lipid kinase domain. We speculate that MK2/MK3-dependent phosphorylation of Beclin 1 S90 may function to initiate autophagy precisely through the mechanism predicted by the recently solved structure of the PI3KC3-C1 complex, that is, through allosteric interactions that increase the activity of the VPS34 lipid kinase domain.\n\n### BCL2 inhibits autophagy through a mechanism involving suppression of MK2/MK3-dependent Beclin 1 S90 phosphorylation\n\nBeclin 1 was originally identified as a BCL2-interacting protein (Liang et al., 1998), and BCL2 and BCL2L1 inhibit autophagy by binding to the BH3 domain of Beclin 1 (Pattingre et al., 2005; Maiuri et al., 2007). Bcl2 plays a crucial role in the regulation of stimulus-induced autophagy in vivo, as mice that contain non-phosphorylatable mutations in Bcl2 that prevent disruption of its binding to Beclin 1 are deficient in both starvation- and exercise-induced induced autophagy (He et al., 2012). Despite the importance of BCL2/BCL2L1 as negative regulators of autophagy, little is understood about the precise molecular mechanism by which their binding to Beclin 1 inhibits its autophagy function. The BH3 domain is in the N-terminal half of Beclin 1 and is not required for interaction with ATG14 or VPS34 or for the autophagy function of Beclin 1. Homodimerization of Beclin 1 favors binding BCL2/BCL2L1 and disfavors binding ATG14 or UVRAG (Noble et al., 2008), but the temporal order of Beclin 1 homodimerization and binding BCL2/BCL2L1 are not known. Even if BCL2/BCL2L1 binding to Beclin 1 precedes its homodimerization, it is not yet established that the promotion of Beclin 1 homodimerization and consequent prevention of binding to ATG14 is an important mechanism by which these proteins inhibit the autophagy function of Beclin 1.\n\nOur data uncover a previously undescribed mechanism by which BCL2 inhibits the autophagy function of Beclin 1. BCL2 binding to the BH3 domain of Beclin 1 blocks an essential step in the positive regulation of starvation-induced autophagy\u2014MK2/MK3-dependent Beclin 1 S90 phosphorylation. Our structure-based model predicts that this may occur via steric hindrance of MK2/MK3 binding to Beclin 1 when BCL2 is bound to the BH3 domain of Beclin 1, which is in close proximity to Beclin 1 serine 90. While further studies will be required to test this structural model, our data provide strong functional evidence that BCL2 binding to Beclin 1 blocks Beclin 1 S90 phosphorylation, both in vitro and in vivo. BCL2 inhibits MK2-dependent in vitro phosphorylation of Beclin 1 S90 in a dose-dependent manner; BCL2 binding to Beclin 1 in cultured cells prevents starvation and active MK2-dependent Beclin 1 S90 phosphorylation; and Bcl2 AAA mice have deficient starvation-induced Beclin 1 S90 phosphorylation despite starvation-induced activation (phosphorylation) of MK2.\n\n### MAPK signaling pathway molecules converge on Beclin 1 activation in starvation-induced autophagy\n\nTaken together, our findings describe a central regulatory loop underlying starvation-induced activation of autophagy. This loop involves two distinct arms of the MAPK signaling pathway, which act in parallel to activate the autophagy function of Beclin 1 in response to starvation (Figure 8). Previously defined JNK1-mediated BCL2 multisite phosphorylation, leading to disruption of BCL2/Beclin 1 binding (Wei et al., 2008), is a requisite event for subsequent for MK2/MK3-dependent Beclin 1 S90 phosphorylation and Beclin 1-dependent autophagy. The dual functions of two arms of the MAPK signaling pathway, JNK1 and MK2/MK3, in mediating starvation-induced autophagy at the level of Beclin 1 S90 phosphorylation underscore the crucial importance of the interaction between the MAPK signaling pathway and Beclin 1 in starvation-induced autophagy. More broadly, these findings suggest that activation of autophagy is intricately coordinated with other MAPK signaling stress responses.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05289/elife-05289-fig8-v1.jpg)\n\n**Figure 8.:** In response to nutrient starvation, JNK1 results in multi-site phosphorylation of BCL2 and disruption of BCL2/Beclin 1 binding (Wei et al., 2008). This permits active MK2/3 to phosphorylate Beclin 1 at residue serine 90 (Figures 4\u20135), which is essential for the autophagy and tumor suppressor function of Beclin 1 (Figures 2\u20133). Mutations in BCL2 that block multi-site phosphorylation by JNK1 (and block starvation-induced disruption of BCL2/Beclin 1 binding [He et al., 2012]) block MK2-mediated Beclin 1 S90 phosphorylation both in vitro and in vivo (Figure 7). The MAPK signaling molecule, p38, may function upstream to activate MK2/MK3 during amino acid starvation (Figure 5\u2014figure supplement 1); however, a definitive role for other kinases has not been excluded. Together, our data suggest a model in which autophagy activation during amino acid starvation requires two simultaneous functions of MAPK signaling molecules: (1) MK2/MK3-mediated Beclin 1 S90 phosphoryation; and (2) JNK1-mediated disruption of BCL2 binding to Beclin 1 (which functions to block MK2/MK3-mediated Beclin 1 S90 phosphorylation).\n\n## Materials and methods\n\n### Cell culture\n\nHeLa, HEK293T, and MCF7 cells and SV40 immortalized murine embryonic fibroblasts (MEFs) retrovirally transduced with pMMP-IRES empty vector or pMMP-IRES MK2 (Ronkina et al., 2011) were grown in DMEM supplemented with 10% FBS, 100 U/ml penicillin and 100 \u03bcg/ml streptomycin. Doxycycline-inducible beclin 1 shRNA U2OS cells (Sun et al., 2008) were grown in DMEM supplemented with 10% tetracycline-free FBS. HeLa/Control, HeLa/BCL2, HeLa/BCL2 AAA, and SKNSH/3xFlag-Beclin 1 cells were generated by transfection of the parental cells with pIRES.Neo, pIRES.Neo/Myc-BCL2, pIRES.Neo/Myc-BCL2 AAA or pBICEP-CMV2-Beclin 1, and selection with 0.5 \u03bcg/ml G418. MCF7 cells retrovirally transduced with pBABE-puro empty vector or Flag-Beclin 1 (WT or S90A) were grown in DMEM supplemented with 10% FBS, 0.01 mg/ml human recombinant insulin and 1 \u03bcg/ml puromycin. MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs retrovirally transduced with pBABE-puro empty vector or Flag-Beclin 1 (WT or S90 mutants) were grown in DMEM supplemented with 10% FBS and 1 \u03bcg/ml puromycin. For autophagy assays, cells were grown in either the DMEM media described above for each cell line supplemented with 2\u00d7 non-essential amino acids and 2 mM glutamine (nutrient-rich conditions) or in HBSS (starvation conditions) for the indicated time period. The HBSS used in starvation conditions contained glucose.\n\n### Plasmids\n\nThe human beclin 1 gene was inserted into the EcoRI/BamH1 restriction site of the pBICEP-CMV2 vector. pBICEP-CMV2-Beclin 1 S90 mutants and pBABE-puro-Beclin 1 S90 mutants were constructed using a QuickChange site mutagenesis kit (Agilent Technologies, Santa Clara, CA). The shRNA non-targetable Beclin 1 constructs harbor silent mutations (mutated sequence: GGAAGCAAAACTAGTAACA) in the region of beclin 1 targeted by shRNA (GGGTCTAAGACGTCCAACA) (sense strand) in order to rescue the effects of knockdown of endogenous Beclin 1. All of the constructs were confirmed by sequencing. Other plasmids used in this study have been previously described, and include plasmids expressing GFP-LC3 (Mizushima et al., 2004), dominant-negative MK2 (MK2K76R) (Winzen et al., 1999), constitutively active MK2 (T205E/T317E) (Engel et al., 1995), dominant-negative Flag-p38\u03b1 (Addgene plasmid #20352 [Enslen et al., 1998]), and dominant-negative JNK1 (Lei et al., 2002).\n\n### Antibodies\n\nFlag was detected using an anti-Flag M2 HRP antibody (1:2000) (Sigma-Aldrich, St. Louis, MO). The phosphospecific Beclin 1 S90 antibody was produced by PhosphoSolutions (Aurora, CO). Briefly, synthetic peptides corresponding to phosphorylated and dephosphorylated S90 of Beclin 1 were injected to two rabbits and sera were purified using a phosphopeptide affinity column followed by a dephosphopeptide affinity column. The phosphospecific Beclin 1 S90 antibody was used at a concentration of 1:500. Beclin 1, HSP27, p-HSP27, Actin, MK2, p62, LC3, TOM20, PDI, and GAPDH were detected using a rabbit or goat anti-Beclin 1 antibody (Santa Cruz Biotechnology, Dallas, TX, 1:1000 dilution), a rabbit anti-HSP27 antibody (Santa Cruz Biotechnology, 1:200 dilution), a rabbit anti-p-HSP27 antibody (Santa Cruz Biotechnology, 1:200 dilution), an anti-\u03b2-Actin HRP antibody (Santa Cruz Biotechnology, 1:2000 dilution), a rabbit anti-MK2 antibody (Cell Signaling Technology, Beverly, MA; 1:1000 dilution), a mouse anti-p62 antibody (Abnova, Walnut, CA; 1:2000 dilution) a rabbit anti-LC3 antibody (Novus Biologicals, Littleton, CO; 1:1000 dilution), a rabbit anti-TOM20 antibody (Santa Cruz Biotechnology; 1:1000 dilution), a rabbit anti-PDI antibody (Cell Signaling Techology; 1:1000 dilution), and a mouse anti-GAPDH antibody (Chemicon International, Temecula, CA; 1:000 dilution).\n\n### Transient transfection\n\nLipofectamine 2000 (Life Technologies, Grand Island, NY) was used for cell transfection according to the manufacturer's protocol. For the GFP-LC3 assay, GFP-LC3 and Beclin 1 (or Beclin 1 S90 mutants) were co-transfected at a molecular ratio of 1:2. For western blot analyses in beclin 1 shRNA U2OS cells, shRNA non-targetable Beclin 1 (or Beclin 1 S90 mutants) and MK2 mutants were co-transfected at a molecular ratio of 1:1.\n\n### Protein extraction and immunoblotting\n\nCells were lysed in lysis buffer (100 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100) with protease inhibitors (Roche Life Sciences, Indianapolis, IN) and Pierce phosphatase inhibitors (Thermo Fisher Scientific, Rockford, IL) for 30 min. Cell lysates were separated on 4\u201315% TGX gels (Bio-Rad Laboratories, Hercules, CA), transferred to PVDF membranes (Bio-Rad Laboratories), and probed with the indicated antibodies. For immunoblotting levels of proteins in subcellular fractions, cytsolic, mitochondrial, and microsomal fractions were separated with a Qiagen Qproteome Mitochondrial Isolation Kit (Qiagen, Valencia, CA), and resuspended in an equal volume of storage buffer.\n\n### Radioactive isotope labeling\n\nHeLa cells were plated on 6 cm dishes, and transfected the following day with pBICEP-CMV2, pBICEP-CMV2-Beclin 1, or pBICEP-CMV2-Beclin 1 S90A using lipofectamine 2000. On the second day after transfection, cells were grown in phosphate-free medium (phosphate free DMEM + 10% FBS) for 3 hr. The cells were then washed with phosphate-free EBSS three times and were grown in phosphate-free EBSS or phosphate-free normal medium supplemented with 40 \u03bcCi 33P-orthophosphate for 2 hr. The cells were washed three times with PBS, and lysed with lysis buffer (100 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100 with protease and phosphatase inhibitors) for 30 min. Lysates were centrifuged for 10 min at 13,000 rpm at 4\u00b0C. The supernatants were collected and adjusted to equal protein concentrations using the Bradford assay. 9 \u03bcl \u03b1-Flag (M2) agarose (Sigma-Aldrich) was added to each sample and samples were rotated at 4\u00b0C overnight. The agarose was washed three times with PBS. 30 \u03bcl SDS loading buffer was added to each sample and the samples were boiled at 95\u00b0C for 5 min. 10 \u03bcl of each sample were loaded on 4\u201315% TGX gels (Biorad Laboratories).\n\n### Peptide synthesis and kinase screen\n\nPeptides based on amino acid sequences of human Beclin 1 83\u201397 were synthesized (JPT Peptide Technologies, Berlin, Germany) and used as substrates for an in vitro protein kinase screen. The peptides were dissolved in 50 mM HEPES, pH 7.5 at a concentration of 200 \u03bcM. A radiometric Streptavidin-FlashPlate-based protein kinase assay was performed to measure the kinase activity of 190 serine/threonine kinases (ProQinase, Freiburg, Germany). For mutational analysis, peptides (wild-type and S90A) based on amino acid sequences of human Beclin 1 83\u2013103 were used.\n\n### Immunoprecipitation\n\nImmunoprecipitation of endogenous Beclin 1 was performed using a polyclonal goat anti-Beclin 1 antibody (Santa Cruz Biotechnology; 1:50 dilution) and immunoprecipitation of Flag-tagged Beclin 1 was performed using a monoclonal anti-Flag M2 antibody pre-conjugated to agarose (Sigma\u2013Aldrich; 1:20 dilution). For co-immunoprecipitation of Beclin 1 and BCL2, immunoprecipitation was performed using a polyclonal rabbit anti-Beclin 1 antibody (Santa Cruz Biotechnology; 1:50 dilution) and BCL2 was probed with a monoclonal HRP antibody (Santa Cruz Biotechnology; 1:200 dilution).\n\n### MK2/3 and VPS34 in vitro kinase assays\n\nFor MK2/3 in vitro kinase assays, HEK293T cells were transfected with pBICEP-CMV2-Beclin 1 or pBICEP-CMV2-Beclin 1 S90A using lipofectamine 2000 (Invitrogen; Grand Island, NY); 6 \u03bcg DNA was transfected into each 10 cm dish. After 24 hr, each dish of cells was lysed with 500 \u03bcl lysis buffer (100 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100 with protease inhibitors) for 30 min at 4\u00b0C. Flag-Beclin 1 was immunoprecipitated using 75 \u03bcl anti-Flag (M2) agarose (Sigma-Aldrich) for 3 hr at 4\u00b0C. The beads were washed twice with lysis buffer and another two times with phosphatase buffer. The samples were then treated with \u03bb-protein phosphatase (New England Biolabs, Ipswich, MA) according to the manufacturer's protocol. For 60 \u03bcl Flag-agarose, 4 \u03bcl \u03bb-protein phosphatase was used. The agarose was washed twice with lysis buffer with phosphatase inhibitors, and another two times with kinase reaction buffer (60 mM HEPES, pH 7.6, 3 mM MgCl2, 3 mM MnCl2, 3 mM Na3VO4, 1.2 mM DTT). For each in vitro kinase reaction, 15 \u03bcl Flag-agarose was mixed with 15 \u03bcl kinase buffer (with 1 \u03bcM ATP). The kinases were added to a final concentration of 0.16 \u03bcM. The reactions were incubated at 30\u00b0C for 30 min. 30 \u03bcl SDS loading buffer was added to each reaction and the samples were incubated at 95\u00b0C for 2 min. After brief centrifugation, the supernatants were loaded onto 4\u201315% TGX gels (Bio-Rad Laboratories), transferred to PVDF membranes and incubated with the indicated antibodies. To assess whether BCL2 blocks MK2-mediated phosphorylation of Beclin 1 in vitro, 5 \u03bcg GST (negative control) or various amounts of GST-BCL2 recombinant protein were added to each reaction tube.\n\nTo measure Beclin 1-associated VPS34 in vitro lipid kinase activity, Beclin 1-VPS34 complexes were immunoprecipitated from U2OS cells with anti-Flag and used as substrates for a VPS34 in vitro lipid kinase assay as described (Wang et al., 2012; Wei et al., 2013). The thin layer chromatography spots and western blot band intensities were measured by densitometry (Visionworks LS image acquisition and analysis software, UVP LLC).\n\n### Tumor xenograft studies\n\nA 60-day slow-release 1.7 mg estrogen pellet (Innovative Research of America, Sarasota, Florida) was injected in the neck region of 7-week old female nu/nu mice. After 1 week, 5 \u00d7 106 MCF7 cells retrovirally transduced with Beclin 1 (WT or S90 mutants) were injected into the upper right mammary fat pad of each mouse. Tumor width and length were measured twice a week for a total experimental duration of 8 weeks. Each group contained 11 mice. All animal experiments were performed in accordance with institutional guidelines and approved by the UT Southwestern Medical Center Institutional Animal Care and Use Committee.\n\n### Histology\n\nMouse tumor xenografts were fixed in 4% PFA, embedded in paraffin, and sectioned (\u223c5 microns in thickness). Immunohistochemical staining of paraffin-embedded tumor tissues was performed using anti-p62 (PROGEN Biotechnik, Heidelberg, Germany; 1:2000 dilution) or anti-Ki67 (Abcam, Cambridge, MA; 1:200 dilution) primary antibodies and the ABC Elite immunoperoxidase kit (Vector Laboratories, Burlingame, CA) according to the manufacturer's instructions. TUNEL staining was performed according to the manufacturer's instructions, using Sigma FAST 3, 3\u2032-diaminobenzidine (DAB) tablets as the peroxidase substrate. Reciprocal intensity of p62 was quantified using the ImageJ 1.47v software (http://imagej.nih.gov/ij).\n\n### Mouse starvation and tissue preparation\n\n8-week-old Bcl2AAA knock-in and littermate control C57/BL6 mice (He et al., 2012) were starved for 48 hr and thigh muscles were snap-frozen in liquid nitrogen. The thigh muscles (vastus lateralis) were homogenized and protein was extracted in lysis buffer (100 mM Tris, pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100) with protease (Roche Life Sciences) and Pierce phosphatase inhibitors cocktail (Thermo Fisher Scientific) prior to western blot analyses with indicated antibodies.\n",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "40889c12-8e8d-44d2-9ca3-191d63ee3f39",
+      "submission_id": "3a0d93ce-57e3-456c-a15e-03ca2fd4b905",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vivek Malhotra, Center for Genomic Regulation , Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05289.017](https://doi.org/10.7554/eLife.05289.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cStress-Responsive MAPK Family Members, MK2/MK3, Activate Starvation-Induced Autophagy through Beclin 1 Phosphorylation\u201d for consideration at eLife. Your article has been favorably evaluated by Vivek Malhotra (Senior editor) and three reviewers. Vivek Malhotra also acted as Reviewing editor.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers agreed on the significance of the findings and the high quality of the data presented. But how starvation activated MK2/MK3 and how activation of Beclin2 by MK2 initiated autophagy was not clear from the data presented. It was generally agreed that addressing some aspect of this would strengthen the conclusions.\n\nWe suggest that you address the following three major issues:\n\n1) How activation of Beclin 1 by MK2 results in the initiation of autophagy? Results shown in Figure 2F suggest a possible model, as cells expressing S90A display reduced VPS34 lipid kinase activity. However, additional mechanistic insight is needed. Might Beclin 1 S90 phosphorylation stabilize the Beclin 1/VPS34/ATG14 complex? The authors should blot for VPS34 in their immuno-precipitation experiments to monitor the interaction of VPS34 with wild type Beclin 1 and the S90A and S90E mutant proteins. In an alternative model, does S90 phosphorylation stabilize interaction of the Beclin 1/VPS34/ATG14 complex with membranes, similar to a previously suggested model for ATG14 regulation (Fogel et al., 2013)? The authors should monitor membrane binding of wild type Beclin 1 and the S90A and S90E mutant proteins using cellular fractionation approaches and in vivo localization experiments. In yet another possible model, might Beclin 1 S90 phosphorylation induce autophagy by stimulating VPS34 lipid kinase activity, similar to ULK1-mediated phosphorylation of Beclin 1 (Russell et al., 2013)?\n\n2) MK2 and MK3 have not been previously implicated in amino acid starvation stress responses. Moreover, the best-characterized kinase that activates MK2/MK3, p38 MAPK, is thought to negatively regulate starvation-induced autophagy (Weber and Tooze, 2010). It would be very interesting and important to provide some new insight into how amino acid starvation results in MK2/MK3 activation.\n\n3) Why bafilomycin A1 treatment alone induces Beclin1 phosphorylation as seen in Figure 2A, D?\n",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8c07996e-f55b-45cb-8101-59bc5020fb2e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C1",
+      "claim": "Autophagy is a fundamental adaptive response to amino acid starvation orchestrated by conserved gene products, the autophagy (ATG) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy is a fundamental adaptive response to amino acid starvation orchestrated by conserved gene products, the autophagy (ATG) proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in the field supported by the cited literature and general scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "42a57a73-4c59-4db2-9425-0cad622deb38",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C2",
+      "claim": "Two related stress-responsive kinases, MAPKAPK2 (MK2) and MAPKAPK3 (MK3), positively regulate starvation-induced autophagy by phosphorylating Beclin 1 at serine 90.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that two related stress-responsive kinases, members of the p38 mitogen-activated protein kinase (MAPK) signaling pathway MAPKAPK2 (MK2) and MAPKAPK3 (MK3), positively regulate starvation-induced autophagy by phosphorylating an essential ATG protein, Beclin 1, at serine 90",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented throughout the manuscript including in vitro kinase assays, phosphospecific antibody detection, and genetic studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "30223367-1321-4b30-85d8-1e77ec0a9124",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C3",
+      "claim": "The Beclin 1 serine 90 phosphorylation site is essential for the tumor suppressor function of Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "this phosphorylation site is essential for the tumor suppressor function of Beclin 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by xenograft tumor growth experiments showing that Beclin 1 S90A mutant fails to suppress tumor growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "f17ffda4-f735-4b1a-956b-130c91191363",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C4",
+      "claim": "MK2/MK3-dependent Beclin 1 phosphorylation and starvation-induced autophagy is blocked in vitro and in vivo by BCL2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MK2/MK3-dependent Beclin 1 phosphorylation (and starvation-induced autophagy) is blocked in vitro and in vivo by BCL2, a negative regulator of Beclin 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro kinase assays with recombinant BCL2 and in vivo studies using Bcl2AAA mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "19abd32d-7cfe-4ca2-bc3d-e6b855c315cd",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C5",
+      "claim": "Blockade of MK2/3-dependent Beclin 1 S90 phosphorylation is a mechanism by which BCL2 inhibits the autophagy function of Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "identify the blockade of MK2/3-dependent Beclin 1 S90 phosphorylation as a mechanism by which BCL2 inhibits the autophagy function of Beclin 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing BCL2 blocks MK2-mediated Beclin 1 S90 phosphorylation in vitro and in cells, and structural modeling suggesting steric hindrance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "15361b59-bd45-4776-8137-59c2d08f603d",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C6",
+      "claim": "Mass spectrometry analysis identified phosphorylation of serine 90 residue of Beclin 1 as the only phosphorylation event that increased specifically in response to amino acid deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry analysis of SKNSH human neuroblastoma cells stably transfected with Flag epitope-tagged Beclin 1 grown in normal growth or starvation conditions identified only one phosphorylation event that increased specifically in response to amino acid deprivation\u2014phosphorylation of the serine 90 residue of Beclin 1 (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on mass spectrometry data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "599215c5-a6ed-4069-b06d-c8f1929c4d25",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C7",
+      "claim": "Mutation of S90 to alanine almost completely abolished the 33P signal of Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of S90 to alanine almost completely abolished the 33P signal of Beclin 1, indicating that S90 is a major starvation-induced phosphorylation site (Figure 1A, upper gel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radioactive labeling experiments shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "65f4df93-f99e-42e7-8213-ad908105a17d",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C8",
+      "claim": "Beclin 1 p-S90 reactivity of wild-type Beclin 1, but not Beclin 1 S90A, increased after nutrient starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Beclin 1 p-S90 reactivity of wild-type Beclin 1, but not Beclin 1 S90A, increased after nutrient starvation (Figure 1A, middle gel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis using a phosphospecific antibody shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "50c88d86-7126-4f8e-97e8-dde6b4f8514b",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C9",
+      "claim": "Endogenous Beclin 1 undergoes S90 phosphorylation in response to nutrient starvation in parallel with autophagy induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, endogenous Beclin 1 undergoes phosphorylation at residue S90 in response to nutrient starvation in parallel with autophagy induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-course experiments showing Beclin 1 S90 phosphorylation increases with starvation alongside markers of autophagy (p62 degradation and LC3-II conversion).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "0a6e1d50-cc73-4f7c-a9f2-869327d5cb83",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C10",
+      "claim": "Beclin 1 S90 phosphorylation was detected in HeLa cell lysates within 30 min after starvation and gradually increased over a 2 hr period.",
+      "claim_type": "EXPLICIT",
+      "source": "Beclin 1 S90 phosphorylation was detected in HeLa cell lysates within 30 min after starvation and gradually increased over a 2 hr period (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by time-course western blot analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "139630b4-bb98-403f-82bc-4d8f95cd7062",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C11",
+      "claim": "MCF7 cells were derived from a patient with allelic loss of beclin 1, have low levels of endogenous Beclin 1 expression, and are defective in starvation-induced autophagy in the absence of exogenous beclin 1 gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "MCF7 cells were derived from a patient with allelic loss of beclin 1, have low levels of endogenous Beclin 1 expression, and are defective in starvation-induced autophagy in the absence of exogenous beclin 1 gene transfer (Liang et al., 1999, 2001; Furuya et al., 2005; Pattingre et al., 2005; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "8e49728b-880a-4ecc-8483-fe65c4867879",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C12",
+      "claim": "Enforced expression of wild-type Beclin 1 rescued starvation-induced autophagy in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported, enforced expression of wild-type Beclin 1 rescued starvation-induced autophagy, as measured by decreased levels of p62, increased LC3-II conversion and increased numbers of GFP-LC3 puncta (a marker for autophagosomes) (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by multiple autophagy assays shown in Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "3b784263-513e-447a-a405-84caf2a25446",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C13",
+      "claim": "Enforced expression of the Beclin 1 S90A mutant failed to induce autophagy in response to starvation in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, enforced expression of the Beclin 1 S90A mutant failed to induce autophagy in response to starvation (Figure 2A\u2013C), indicating that the Beclin 1 S90 phosphorylation site is essential for autophagy induction in response to nutrient starvation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by autophagy assays in MCF7 cells shown in Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "eb4a7215-3bdd-4cb9-8473-40453bc11a09",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C14",
+      "claim": "A phosphomimetic mutant Beclin 1 S90E increased autophagy in basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a phosphomimetic mutant Beclin 1 S90E increased autophagy in basal conditions, suggesting that Beclin 1 S90 phosphorylation may be sufficient to induce autophagy (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by autophagy assays in MCF7 cells shown in Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "a1fb7e2b-9cc6-4308-83aa-efcee23a592e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C15",
+      "claim": "Expression of shRNA-resistant wild-type Beclin 1, but not shRNA-resistant Beclin 1 S90A, rescued starvation-induced autophagic flux in U2OS cells with Beclin 1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of shRNA-resistant wild-type Beclin 1, but not shRNA-resistant Beclin 1 S90A, rescued starvation-induced autophagic flux as measured by p62 degradation and quantification of GFP-LC3 puncta in the presence and absence of bafilomycin A1 (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by autophagy assays in U2OS cells shown in Figures 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "8b1fac45-5379-4296-9304-dde48fe6bb87",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C16",
+      "claim": "Beclin 1 S90 phosphorylation increases the VPS34 lipid kinase activity of the Beclin 1/VPS34 complex without altering its composition or membrane localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that Beclin 1 S90 phosphorylation increases the VPS34 lipid kinase activity of this complex, without altering its composition or membrane localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by VPS34 lipid kinase assays and co-immunoprecipitation experiments shown in Figures 2F-G and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "a78fb411-416f-4174-94c1-dbd18afb1d11",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C17",
+      "claim": "In cells expressing the phosphorylation-defective Beclin 1 S90A mutant, no increase was observed in Beclin 1-associated VPS34 lipid kinase activity in response to starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing the phosphorylation-defective Beclin 1 S90A mutant, no increase was observed in Beclin 1-associated VPS34 lipid kinase activity in response to starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by VPS34 lipid kinase assays shown in Figures 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "c55383ae-bd60-4a1e-8613-93dbba8a8b15",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C18",
+      "claim": "In cells expressing the Beclin 1 S90E phosphomimetic mutant, Beclin 1-associated VPS34 lipid kinase activity was higher in baseline and in starvation conditions than in cells expressing wild-type Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing the Beclin 1 S90E phosphomimetic mutant, Beclin 1-associated VPS34 lipid kinase activity was higher in baseline and in starvation conditions than in cells expressing wild-type Beclin 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by VPS34 lipid kinase assays shown in Figures 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "4883a0cc-d999-48d3-a50a-85b7e5ffb8e5",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C19",
+      "claim": "Beclin 1 is a tumor suppressor protein that inhibits the growth of MCF7 human breast carcinoma cells in immunodeficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Beclin 1 is a tumor suppressor protein that inhibits the growth of MCF7 human breast carcinoma cells in immunodeficient mice (Liang et al., 1999, 2001; Furuya et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "da2a9c5d-401c-4978-a50f-a16c7fd388bf",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C20",
+      "claim": "MCF7 cells expressing Beclin 1 S90A grew as rapidly as MCF7 control cells in nude mice xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "MCF7 cells expressing Beclin 1 S90A grew as rapidly as MCF7 control cells, whereas a marked reduction in tumor growth was observed in MCF7 cells expressing wild-type Beclin 1 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by tumor xenograft growth curves shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "03f619fe-f0f0-406b-b466-b26d0d5686c7",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C21",
+      "claim": "In xenografts expressing wild-type Beclin 1, but not Beclin 1 S90A, there was a significant reduction in tumor p62 staining as compared with empty vector controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In xenografts expressing wild-type Beclin 1, but not Beclin 1 S90A, there was a significant reduction in tumor p62 staining as compared with empty vector controls (Figure 3C,D), suggesting increased levels of autophagy in the tumors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunohistochemistry and quantification shown in Figures 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "7a1a4c1b-785c-48f3-9d62-560674525e7a",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C22",
+      "claim": "Xenografts expressing wild-type Beclin 1, but not Beclin 1 S90A, had decreased rates of cell proliferation as measured by Ki67 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with decreased growth and decreased p62 staining, xenografts expressing wild-type Beclin 1, but not Beclin 1 S90A, had decreased rates of cell proliferation (Figure 3C,E), as measured by the percentage of cells with Ki67 staining.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Ki67 immunohistochemistry and quantification shown in Figures 3C and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "f7a4c688-0e85-4eb3-9633-ab6a45b8ef7d",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C23",
+      "claim": "Xenografts expressing wild-type Beclin 1 had decreased cell death as measured by TUNEL-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Xenografts expressing wild-type Beclin 1 also had decreased cell death (Figure 3C,F), as measured by the percentage of TUNEL-positive cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TUNEL staining and quantification shown in Figures 3C and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "e7286dd2-b39d-495d-9b39-d4651a838a1e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C24",
+      "claim": "Among a pool of 190 serine/threonine kinases, MAPKAPK3 (MK3) was the only kinase with significant activity against the Beclin 1 peptide substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Among a pool of 190 serine/threonine kinases, MAPKAPK3, also known as and herein referred to as MK3, was the only kinase with significant activity against the Beclin 1 peptide substrate (Figure 4\u2014figure supplement 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on an in vitro kinase screen shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "f1f8f389-076a-49f6-a290-f13de4fecf8c",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C25",
+      "claim": "Alanine substitution mutation at amino acid residue 90 completely abrogated MK3-mediated phosphorylation of the Beclin 1 peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation completely abrogated MK3-mediated phosphorylation of the Beclin 1 peptide, indicating that serine 90 is essential for it to serve as a substrate for MK3 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro kinase assays shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "8505230c-4e11-47b0-9481-c635c7e7a995",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C26",
+      "claim": "MK2, but not MK5, also phosphorylated the Beclin 1 83\u201397 peptide in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MK2, but not MK5\u2014another MAP kinase-activated protein kinase that is less structurally related to MK3 (Cargnello and Roux, 2011)\u2014also phosphorylated the Beclin 1 83\u201397 peptide in vitro (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro kinase assays shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "7947acc6-3454-423c-8669-f1defbe76372",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C27",
+      "claim": "Both MK2 and MK3 demonstrated in vitro kinase activity resulting in Beclin 1 S90 phosphorylation using Flag-Beclin 1 purified from HEK293T cells as a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both MK2 and MK3 demonstrated in vitro kinase activity, resulting in Beclin 1 S90 phosphorylation, using Flag-Beclin 1 purified from HEK293T cells as a substrate (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro kinase assays shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "33ab80b9-6120-4b56-823c-54bb64bf4a88",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C28",
+      "claim": "Dominant-negative MK2 blocked starvation-induced Beclin 1 S90 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Dominant-negative MK2 blocked starvation-induced Beclin 1 S90 phosphorylation, whereas constitutively active MK2 increased Beclin 1 S90 phosphorylation during nutrient-rich conditions (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis in HeLa cells shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "8bc0a5f5-feee-4266-925a-6c00e89b2b90",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C29",
+      "claim": "Constitutively active MK2 increased Beclin 1 S90 phosphorylation during nutrient-rich conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Dominant-negative MK2 blocked starvation-induced Beclin 1 S90 phosphorylation, whereas constitutively active MK2 increased Beclin 1 S90 phosphorylation during nutrient-rich conditions (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis in HeLa cells shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "ae5d8f19-c445-4c5c-9c1f-91abd419c66e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C30",
+      "claim": "Dominant negative MK2 decreased starvation-induced autophagy as measured by LC3-II conversion, p62 degradation, and numbers of GFP-LC3 puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "As measured by LC3-II conversion, p62 degradation, and numbers of GFP-LC3 puncta in the presence and absence of bafilomycin A1, dominant-negative MK2 decreased starvation-induced autophagy (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by multiple autophagy assays shown in Figures 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "c4de8ab5-1dac-4344-8929-c0856d5ddb7c",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C31",
+      "claim": "Constitutively active MK2 increased basal autophagy in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, constitutively active MK2 increased basal autophagy in HeLa cells (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by autophagy assays shown in Figures 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "68cfc878-3086-44ec-895a-77c9b7f5b888",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C32",
+      "claim": "Dominant negative p38\u03b1 blocked starvation-induced MK2 activation, Beclin 1 S90 phosphorylation, and autophagy in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In HeLa cells transfected with a plasmid expressing dominant negative p38\u03b1, we failed to observe starvation-induced MK2 activation (i.e., an MK2 band shift or phosphorylation of its substrate HSP27), Beclin 1 S90 phosphorylation, or autophagy (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "b316556d-50da-486c-81a4-9a360538629a",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C33",
+      "claim": "The block in Beclin 1 S90 phosphorylation in cells expressing dominant negative p38\u03b1 was reversed by overexpression of constitutively active MK2.",
+      "claim_type": "EXPLICIT",
+      "source": "This block in Beclin 1 S90 phosphorylation in cells expressing dominant negative p38\u03b1 was reversed by overexpression of constitutively active MK2 (Figure 5\u2014figure supplement 1B), providing additional proof that MK2 functions downstream of p38\u03b1 to mediate Beclin 1 S90 phosphorylation in response to amino acid starvation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "cb32a1c8-3a44-48fa-8b09-444e8d226c79",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C34",
+      "claim": "In MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs, there was a marked decrease in starvation-induced Beclin 1 S90 phosphorylation which was rescued by MK2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs, there was a marked decrease in starvation-induced Beclin 1 S90 phosphorylation which was rescued by MK2 expression (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis in MK2/MK3 knockout MEFs shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "8ebc5c78-1315-497a-b3f6-76c2b2a00462",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C35",
+      "claim": "Loss of MK2 and MK3 was sufficient to decrease both basal and starvation-induced autophagy in MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, loss of MK2 and MK3 was sufficient to decrease both basal and starvation-induced autophagy as assessed by p62 degradation, LC3-II conversion, and quantification of GFP-LC3 puncta in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs as compared to MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs that stably express MK2 (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by autophagy assays shown in Figures 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "1ded0492-708a-4db5-9e10-8909cd2e7194",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C36",
+      "claim": "Expression of Beclin 1 S90A did not increase levels of basal or starvation-induced autophagy in MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas expression of Beclin 1 S90A did not increase levels of basal or starvation-induced autophagy (and expression of wild-type Beclin 1 had only minimal effects), Beclin 1 S90E expression was sufficient to markedly increase basal autophagy in cells lacking both MK2 and MK3 (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by autophagy assays in MK2/MK3 knockout MEFs shown in Figures 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "18d94576-2af9-4973-9d02-894558e277d6",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C37",
+      "claim": "Beclin 1 S90E expression was sufficient to markedly increase basal autophagy in cells lacking both MK2 and MK3.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas expression of Beclin 1 S90A did not increase levels of basal or starvation-induced autophagy (and expression of wild-type Beclin 1 had only minimal effects), Beclin 1 S90E expression was sufficient to markedly increase basal autophagy in cells lacking both MK2 and MK3 (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by autophagy assays in MK2/MK3 knockout MEFs shown in Figures 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "5be75f7f-2f6a-4a7d-a8c8-6844ee0d9f1b",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C38",
+      "claim": "Active MK2 cannot induce autophagy in cells that lack detectable endogenous Beclin 1 and only express an shRNA-resistant mutant Beclin 1 S90A construct.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells that express an shRNA resistant Beclin 1 S90A mutant construct, no increase in autophagy is observed in response to any of these treatment conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot analysis in U2OS cells with Beclin 1 knockdown shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "fbf891df-d7d4-4319-bd84-9d9c9812cf11",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C39",
+      "claim": "Expression of shRNA-resistant Beclin 1 S90E can partially bypass the inhibitory effects of dominant negative MK2 on starvation-induced autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in cells expressing shRNA-resistant Beclin 1 S90E, starvation induced a decrease in p62 levels and conversion of LC3-I to LC3-II even in the presence of dominant negative MK2 expression. This suggests that Beclin 1 S90 phosphorylation may be sufficient to partially bypass the inhibitory effects of MK2/3 inhibition on starvation-induced autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot analysis in U2OS cells shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "3dfe2390-38ae-441d-8058-cf37cea18e00",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C40",
+      "claim": "BCL2 inhibits autophagy through a direct interaction with the BH3 domain of Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "BCL2 inhibits autophagy through a direct interaction with the BH3 domain of Beclin 1, which consists of amino acid residues 105\u2013128 (Oberstein et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "befbecc4-1b2c-40dd-ba4d-ca51279fe69c",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C41",
+      "claim": "With increasing amounts of GST-BCL2, there was decreased in vitro MK2-mediated phosphorylation of Beclin 1 S90.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that with increasing amounts of GST-BCL2, there was decreased in vitro MK2-mediated phosphorylation of Beclin 1 S90 (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro kinase assays shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "55a35875-8b39-4eab-ae0a-731757f73c96",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C42",
+      "claim": "Steric hindrance may prevent simultaneous binding of BCL2/BCL2L1 and MK2 to Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "This model suggests that steric hindrance may prevent simultaneous binding of BCL2L1 (or BCL2) and MK2 to Beclin 1, thereby inhibiting MK2-dependent Beclin 1 S90 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a structure-based model described in the text and shown in Figure 7B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "b5914a30-37e2-416a-9e05-30ff06670550",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C43",
+      "claim": "In HeLa cells stably transfected with wild-type BCL2, the starvation-induced increase in Beclin 1 S90 phosphorylation was delayed and blunted compared to HeLa control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In HeLa cells stably transfected with wild-type BCL2, the starvation-induced increase in Beclin 1 S90 phosphorylation was delayed and blunted compared to that observed in HeLa control cells; however, by 2 hr after starvation when there was complete disruption of BCL2 and Beclin 1 binding (as measured by co-immunoprecipitation), an appreciable increase in Beclin 1 S90 phosphorylation was observed (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by time-course western blot analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "f31d154f-5073-4a0e-8056-32d704b07a77",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C44",
+      "claim": "In HeLa cells stably transfected with the mutant BCL2 T69A/S70A/S87A (BCL2 AAA), there was no increase in Beclin 1 S90 phosphorylation in response to starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in HeLa cells stably transfected with the mutant BCL2 T69A/S70A/S87A (BCL2 AAA), which lacks the JNK1 phosphorylation sites and fails to dissociate with Beclin 1 during starvation (Wei et al., 2008), there was no increase in Beclin 1 S90 phosphorylation in response to starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "2bdf3504-6c4b-4767-ac67-c89c1154e4e2",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C45",
+      "claim": "Even in the absence of starvation, active MK2 was able to increase Beclin 1 S90 phosphorylation and induce autophagy in HeLa/control cells but not in HeLa/BCL2 or HeLa/BCL2 AAA cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, even in the absence of starvation, active MK2 was able to increase Beclin 1 S90 phosphorylation and induce autophagy in HeLa/control cells but not in HeLa/BCL2 or HeLa/BCL2 AAA cells (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "325eb3e6-afa3-4645-9fd7-5a2700fd3a83",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C46",
+      "claim": "Following a 48 hr starvation period, skeletal muscle of wild-type mice had activation of MK2, increased autophagy, and increased Beclin 1 S90 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a 48 hr starvation period, we found the skeletal muscle of wild-type mice had activation of MK2 (as evidenced by a band shift in MK2 and phosphorylation of the substrate, HSP27), increased autophagy (as detected by p62 degradation and LC3-II conversion), and increased Beclin 1 S90 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot analysis of mouse muscle lysates shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "dcbfa514-2cbf-4c88-a5d6-64caf5fc4429",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C47",
+      "claim": "In the muscles of Bcl2AAA mice, activation of MK2 appeared similar to that observed in wild-type muscles, but this was not accompanied by an increase in Beclin 1 S90 phosphorylation or in levels of autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the muscles of Bcl2AAA mice, activation of MK2 appeared similar to that observed in wild-type muscles, but this was not accompanied by an increase in Beclin 1 S90 phosphorylation or in levels of autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot analysis of mouse muscle lysates shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "5a104636-ebbd-465b-b134-7afa2a5c751b",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C48",
+      "claim": "The constitutive binding of Bcl2 AAA to Beclin 1 during starvation in vivo is sufficient to block the effects of activated MK2 on Beclin 1 S90 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the constitutive binding of Bcl2 AAA to Beclin 1 during starvation in vivo is sufficient to block the effects of activated MK2 on Beclin 1 S90 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing Bcl2AAA mice have deficient Beclin 1 S90 phosphorylation despite MK2 activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "5e2360a6-95d5-44d1-9248-254c368170c6",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C49",
+      "claim": "AMPK activates components of the autophagy machinery during glucose starvation by phosphorylating ULK1, Beclin 1, and VPS34.",
+      "claim_type": "EXPLICIT",
+      "source": "While AMPK activates components of the autophagy machinery during glucose starvation (phosphorylating ULK1, Beclin 1, and VPS34), it does not appear to regulate the Beclin 1/VPS34 complex in response to complete (nitrogen and glucose) starvation (Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "dee63b3d-9825-4472-a115-b719f69b3762",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C50",
+      "claim": "AMPK does not appear to regulate the Beclin 1/VPS34 complex in response to complete (nitrogen and glucose) starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "While AMPK activates components of the autophagy machinery during glucose starvation (phosphorylating ULK1, Beclin 1, and VPS34), it does not appear to regulate the Beclin 1/VPS34 complex in response to complete (nitrogen and glucose) starvation (Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "b8526d4a-7c71-4eb7-a7d0-6b507c1c39aa",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C51",
+      "claim": "Inactivation of the autophagy repressor kinase mTOR in response to amino acid starvation contributes to autophagy through phosphorylation of ULK1/2 and ATG13 and of ATG14.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of the autophagy repressor kinase mTOR (mechanistic target of rapamycin) in response to amino acid starvation contributes to autophagy through phosphorylation of ULK1/2 and ATG13 (resulting in their dissociation) and of ATG14 (Meijer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "5acbf6e9-a90d-498e-9ee5-65b616712a66",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C52",
+      "claim": "Beclin 1 is a central regulator of autophagy and functions through its interaction with the Class III PI3K VPS34, VPS15, and the autophagy protein ATG14 in the initial stages of autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The autophagy protein, Beclin 1, is a central regulator of autophagy and functions through its interaction with the Class III PI3K VPS34, VPS15, and the autophagy protein ATG14 in the initial stages of autophagosome formation (Funderburk et al., 2010; He and Levine, 2010; Abrahamsen et al., 2012; Fu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "44c10276-53f9-47bd-96c1-0fa1b16f9423",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C53",
+      "claim": "Beclin 1 is a haploinsufficient tumor suppressor important for breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a haploinsufficient tumor suppressor important for breast cancer and also acts in various other biological processes, including differentiation and development, innate immunity, lifespan extension, protein against neurodegeneration, and exercise-mediated effects on glucose metabolism (Cao and Klionsky, 2007; Levine and Kroemer, 2008; He et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "dbff44bf-8310-45fa-9942-7de29b18ef9e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C54",
+      "claim": "During amino acid starvation, Beclin 1-associated VPS34 autophagy complex activity is negatively regulated by the direct binding of Beclin 1 to BCL2 or BCL2L1.",
+      "claim_type": "EXPLICIT",
+      "source": "During amino acid starvation, Beclin 1-associated VPS34 autophagy complex activity is negatively regulated by the direct binding of Beclin 1 to BCL2 or BCL2L1 (Sinha and Levine, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "0fb424ae-0b5c-4083-ad4e-d87b9842cb51",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C55",
+      "claim": "Beclin 1-associated VPS34 autophagy complex activity is negatively regulated by inhibitory interactions with the oncogenic kinases, AKT and EGFR.",
+      "claim_type": "EXPLICIT",
+      "source": "and by inhibitory interactions with the oncogenic kinases, AKT and EGFR (Wang et al., 2012; Wei et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "4f30bdd0-a1a5-401a-98be-90351d974d0d",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C56",
+      "claim": "Beclin 1-associated VPS34 autophagy complex activity is negatively regulated by the Golgi-associated protein, GLIPR2/GAPR-1.",
+      "claim_type": "EXPLICIT",
+      "source": "the Golgi-associated protein, GLIPR2/GAPR-1 (Shoji-Kawata et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "8c014b36-e9b6-41c9-8a94-f24267647990",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C57",
+      "claim": "Beclin 1-associated VPS34 autophagy complex activity is negatively regulated by the kinase MST1.",
+      "claim_type": "EXPLICIT",
+      "source": "and the kinase MST1 (Maejima et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "e034c58a-b5d3-41b1-8da0-39544830ca5e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C58",
+      "claim": "Several proteins positively regulate the Beclin 1-associated VPS34 autophagy complex, including those that disrupt BCL2/BCL2L1-Beclin 1 binding by Beclin 1 phosphorylation (e.g., DAPK, ROCK).",
+      "claim_type": "EXPLICIT",
+      "source": "Several proteins positively regulate the Beclin 1-associated VPS34 autophagy complex, including those that disrupt BCL2/BCL2L1-Beclin 1 binding by either Beclin 1 phosphorylation (e.g., DAPK, ROCK [Zalckvar et al., 2009; Gurkar et al., 2013])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "dfa5cecb-1871-4a68-bc97-9821eef5bec3",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C59",
+      "claim": "Several proteins positively regulate the Beclin 1-associated VPS34 autophagy complex, including those that disrupt BCL2/BCL2L1-Beclin 1 binding by BCL2 phosphorylation (e.g., JNK1).",
+      "claim_type": "EXPLICIT",
+      "source": "or BCL2 phosphorylation (e.g., JNK1 [Wei et al., 2008])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "dd4ab484-3d75-4dd1-a704-614066813906",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C60",
+      "claim": "ULK1 and AMBRA1 are proteins that are part of the core autophagy machinery and positively regulate the Beclin 1-associated VPS34 autophagy complex.",
+      "claim_type": "EXPLICIT",
+      "source": "and proteins that are part of the core autophagy machinery, such as ULK1 and AMBRA1 (Fimia et al., 2007; Di Bartolomeo et al., 2010; Russell et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "f03d6e31-8014-49a5-abd0-a9de11b1f146",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C61",
+      "claim": "MK2 was originally discovered as an ERK1/2 activated protein kinase that phosphorylates HSP25 and HSP27.",
+      "claim_type": "EXPLICIT",
+      "source": "MK2 was originally discovered as an ERK1/2 activated protein kinase that phosphorylates HSP25 and HSP27 (Stokoe et al., 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "400d5cf1-326b-444a-b5f0-36e2757b5327",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C62",
+      "claim": "MK2 was later found to be stimulated by p38 in response to stress stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "and was later found to be stimulated by p38 in response to stress stimuli (Freshney et al., 1994; Rouse et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "def47267-598b-48b5-9c27-8a6978066afc",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C63",
+      "claim": "MK3 was discovered independently through a yeast two-hybrid screen for p38-interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "MK3 was discovered independently through a yeast two-hybrid screen for p38-interacting proteins (McLaughlin et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "e4ce7ec9-1251-4b85-beb6-25142b7c590e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C64",
+      "claim": "MK3 was discovered through an analysis of genes commonly deleted in small-cell lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "and through an analysis of genes commonly deleted in small-cell lung cancer (Sithanandam et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "e39d017c-4691-41fe-92a1-9810ba138a8b",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C65",
+      "claim": "MK2 knockout mice show increased resistance to endotoxic shock and increased susceptibility to infections.",
+      "claim_type": "EXPLICIT",
+      "source": "MK2 knockout mice show increased resistance to endotoxic shock and increased susceptibility to infections (Kotlyarov et al., 1999; Lehner et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "45ff1224-07d8-4381-9a57-6fff76a67415",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C66",
+      "claim": "The phenotype of MK2 knockout mice is exacerbated by simultaneous deletion of MK3.",
+      "claim_type": "EXPLICIT",
+      "source": "and this phenotype is exacerbated by simultaneous deletion of MK3 (Ronkina et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "e4d2d0ac-fd67-4afb-9c37-e635d9d70346",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C67",
+      "claim": "Beclin 1 is frequently monoallelically deleted in human breast and ovarian cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "it is frequently monoallelically deleted in human breast and ovarian cancers (Aita et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "f131b843-8961-4a61-b99f-03635c0d6c34",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C68",
+      "claim": "Heterozygous loss of Beclin 1 in mice results in an increased incidence of breast and other spontaneous tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "heterozygous loss in mice results in an increased incidence of breast and other spontaneous tumors (Qu et al., 2003; Yue et al., 2003; Cicchini et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "1d02e62e-4240-497e-8b31-58883633586e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C69",
+      "claim": "Decreased beclin 1 mRNA expression is associated with aggressive clinic-pathological features and poor prognosis in human breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "decreased beclin 1 mRNA expression is associated with aggressive clinic-pathological features and poor prognosis in human breast cancer (Tang et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "d602d44d-aea5-4c1b-bd1a-87046aa046fc",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C70",
+      "claim": "Beclin 1 gene transfer impairs the ability of MCF7 human breast tumor cells to form tumor xenografts in immunodeficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and beclin 1 gene transfer impairs the ability of MCF7 human breast tumor cells to form tumor xenografts in immunodeficient mice (Liang et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "96036eaa-41bf-408d-878f-5c34819cd9d8",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C71",
+      "claim": "Mutation of the nuclear export signal of Beclin 1 blocks its tumor suppressor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that mutation of the nuclear export signal of Beclin 1 (resulting in its nuclear retention) or deletion of the evolutionary conserved domain of Beclin 1 (which abrogates it binding to VPS34 and autophagy function) blocks its tumor suppressor activity (Liang et al., 2001; Furuya et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "3fc99b3c-50b4-4de1-b0b4-e1004a059262",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C72",
+      "claim": "Deletion of the evolutionary conserved domain of Beclin 1 blocks its tumor suppressor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that mutation of the nuclear export signal of Beclin 1 (resulting in its nuclear retention) or deletion of the evolutionary conserved domain of Beclin 1 (which abrogates it binding to VPS34 and autophagy function) blocks its tumor suppressor activity (Liang et al., 2001; Furuya et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "56a481e3-a827-4a0a-96ec-9f7a4b096a6e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C73",
+      "claim": "Bafilomycin A1 treatment results in endogenous Beclin 1 S90 phosphorylation which is blocked by N-acetyl-L-cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that bafilomycin A1 results in endogenous Beclin 1 S90 phosphorylation which is blocked by N-acetyl-L-cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "f104d3d8-7f32-4438-8a7f-45f4f7dcb0e9",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C74",
+      "claim": "ROS generation, as well as starvation, results in Beclin 1 S90 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ROS generation, as well as starvation, results in Beclin 1 S90 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that bafilomycin A1-induced Beclin 1 S90 phosphorylation is blocked by the ROS scavenger N-acetyl-L-cysteine.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "6d09362f-7635-4e40-a757-ba6b3120cc2d",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C75",
+      "claim": "Knockdown of Beclin 1 did not block LC3 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports of Beclin 1 knockdown or knockout in other mammalian cells (Matsui et al., 2007; He et al., 2013; Mandell et al., 2014) and knockout of Atg6 in yeast (Suzuki et al., 2004), knockdown of Beclin 1 did not block LC3 lipidation (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "8f85ad6c-a113-4b81-82c0-d69f7fe34ca2",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C76",
+      "claim": "Knockdown of Beclin 1 blocked the formation of GFP-LC3 puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "but it did block the formation of GFP-LC3 puncta (Figure 2D, data not shown)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GFP-LC3 puncta quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "b38c1c96-d994-462d-97cd-e14e442f92a1",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C77",
+      "claim": "Atg6/Beclin 1 are not invariably required for LC3 lipidation, but they are required for the localization of lipidated LC3 to the autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "(Atg6/Beclin 1 are not invariably required for LC3 lipidation, but they are required for the localization of lipidated LC3 to the autophagosome [Mizushima et al., 2010])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "4f6598b1-54af-45dc-8ccd-6c393eeb716d",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C78",
+      "claim": "Beclin 1 simultaneously increases cell survival and decreases cell proliferation, resulting in a net decrease in tumor cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data confirm previous reports demonstrating that Beclin 1 simultaneously increases cell survival and decreases cell proliferation, resulting in a net decrease in tumor cell growth (Wei et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study and data from xenograft experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "a0af7351-205f-4cec-ba92-b7b758b566f1",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C79",
+      "claim": "The architecture of the EM reconstituted PI3KC3-C1 complex predicts that signaling inputs at the N-terminus of Beclin 1 are likely to function in the allosteric regulation of its lipid kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of the EM reconstituted complex predicts that signaling inputs at the N-terminus of Beclin 1 are likely to function in the allosteric regulation of its lipid kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural predictions from a recent study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "6a5c4423-7538-49b1-b5c5-1e0f87711307",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C80",
+      "claim": "The unstructured N-terminal region of Beclin 1 is predicted to be in proximity to the catalytic subunit of VPS34.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the unstructured N-terminal region of Beclin 1 is predicted to be in proximity to the catalytic subunit of VPS34, leading to the proposal that signals in the region of the Beclin 1 N-terminus regulate the activity of VPS34 lipid kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural predictions from a recent study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "d0250d29-05c3-46e2-b371-f5990d384a85",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C81",
+      "claim": "Beclin 1 was originally identified as a BCL2-interacting protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Beclin 1 was originally identified as a BCL2-interacting protein (Liang et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "0993ca65-c7ca-4b10-880c-6c4ff55112de",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C82",
+      "claim": "BCL2 and BCL2L1 inhibit autophagy by binding to the BH3 domain of Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "and BCL2 and BCL2L1 inhibit autophagy by binding to the BH3 domain of Beclin 1 (Pattingre et al., 2005; Maiuri et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "daae3ae0-e1d5-4fec-b4aa-019049e7a462",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C83",
+      "claim": "Mice that contain non-phosphorylatable mutations in Bcl2 that prevent disruption of its binding to Beclin 1 are deficient in both starvation- and exercise-induced autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcl2 plays a crucial role in the regulation of stimulus-induced autophagy in vivo, as mice that contain non-phosphorylatable mutations in Bcl2 that prevent disruption of its binding to Beclin 1 are deficient in both starvation- and exercise-induced induced autophagy (He et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "4e10a9fc-c007-4131-a35f-2c2026f3fa0f",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C84",
+      "claim": "The BH3 domain is in the N-terminal half of Beclin 1 and is not required for interaction with ATG14 or VPS34 or for the autophagy function of Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The BH3 domain is in the N-terminal half of Beclin 1 and is not required for interaction with ATG14 or VPS34 or for the autophagy function of Beclin 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Beclin 1 structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "3c26bf90-00c5-4671-b472-a4e0063bdf9c",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C85",
+      "claim": "Homodimerization of Beclin 1 favors binding BCL2/BCL2L1 and disfavors binding ATG14 or UVRAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Homodimerization of Beclin 1 favors binding BCL2/BCL2L1 and disfavors binding ATG14 or UVRAG (Noble et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "e28de4e7-9264-4510-939f-f10e0e7cf6fb",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C86",
+      "claim": "JNK1-mediated BCL2 multisite phosphorylation leads to disruption of BCL2/Beclin 1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously defined JNK1-mediated BCL2 multisite phosphorylation, leading to disruption of BCL2/Beclin 1 binding (Wei et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "a260d874-b8dd-414e-8cb0-c04745a658b6",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C87",
+      "claim": "JNK1-mediated BCL2 multisite phosphorylation is a requisite event for subsequent MK2/MK3-dependent Beclin 1 S90 phosphorylation and Beclin 1-dependent autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously defined JNK1-mediated BCL2 multisite phosphorylation, leading to disruption of BCL2/Beclin 1 binding (Wei et al., 2008), is a requisite event for subsequent for MK2/MK3-dependent Beclin 1 S90 phosphorylation and Beclin 1-dependent autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that JNK1 and MK2/MK3 function in parallel to activate Beclin 1 during starvation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "82b4896b-e3d9-44ad-8eee-4ecc03906051",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "claim_id": "C88",
+      "claim": "Autophagy activation during amino acid starvation requires two simultaneous functions of MAPK signaling molecules: MK2/MK3-mediated Beclin 1 S90 phosphorylation and JNK1-mediated disruption of BCL2 binding to Beclin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data suggest a model in which autophagy activation during amino acid starvation requires two simultaneous functions of MAPK signaling molecules: (1) MK2/MK3-mediated Beclin 1 S90 phosphoryation; and (2) JNK1-mediated disruption of BCL2 binding to Beclin 1 (which functions to block MK2/MK3-mediated Beclin 1 S90 phosphorylation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the collective data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fd4ceb12-65e3-4beb-871d-6ab7b77b2e1e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Beclin 1 undergoes phosphorylation at serine 90 (S90) in response to nutrient starvation. Mass spectrometry identified S90 as the only phosphorylation site that increased specifically during amino acid deprivation. Radioactive labeling and phosphospecific antibody detection confirmed that S90 mutation to alanine abolishes starvation-induced phosphorylation, and endogenous Beclin 1 S90 phosphorylation increases within 30 minutes of starvation in parallel with autophagy induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 provide converging evidence from multiple independent methods (mass spectrometry, radioactive labeling, phosphospecific antibody) demonstrating starvation-induced Beclin 1 S90 phosphorylation. The temporal correlation with autophagy markers (p62 degradation, LC3-II conversion) and the specificity of the S90A mutation support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "384f45a0-6ed9-4672-9fb9-6fed586771a3",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Beclin 1 S90 phosphorylation site is essential for starvation-induced autophagy. In Beclin 1-deficient cells (MCF7 and U2OS), wild-type Beclin 1 rescues starvation-induced autophagy, but the S90A mutant fails to do so. The phosphomimetic S90E mutant increases autophagy under basal conditions. Mechanistically, S90 phosphorylation increases VPS34 lipid kinase activity without altering complex composition or membrane localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C18 demonstrate necessity and sufficiency of S90 phosphorylation for autophagy using complementary approaches in two independent cell systems. Multiple autophagy readouts (p62, LC3-II, GFP-LC3 puncta, bafilomycin A1 flux assays) consistently support the conclusion. The VPS34 kinase activity data provide a mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "00e1340e-8c88-4bc3-b8d4-58d6383398f5",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Beclin 1 S90 phosphorylation site is essential for tumor suppressor function. In MCF7 xenograft studies, wild-type Beclin 1 suppresses tumor growth, decreases p62 staining (indicating increased autophagy), reduces proliferation (Ki67), and decreases cell death (TUNEL). The S90A mutant fails to suppress tumor growth and shows no reduction in p62 staining or proliferation compared to empty vector controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19-C23 provide in vivo evidence linking S90 phosphorylation to tumor suppression. The xenograft data with multiple histological markers are internally consistent. However, the study uses only one tumor model (MCF7 in nude mice), and statistical analysis details are limited in the text. The conclusion is well-supported within the scope tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "fe331740-37fd-4729-a1de-49b0665b7775",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MK2 and MK3 (but not MK5) directly phosphorylate Beclin 1 at S90 in vitro. An unbiased kinase screen of 190 serine/threonine kinases identified MK3 as the only kinase with significant activity against a Beclin 1 peptide substrate. Alanine substitution at S90 completely abrogates MK3-mediated phosphorylation. Both MK2 and MK3 phosphorylate full-length Flag-Beclin 1 at S90 in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 provide strong biochemical evidence for direct phosphorylation by MK2/MK3. The unbiased kinase screen, peptide specificity studies, and full-length protein assays are complementary and consistent. The use of phosphospecific antibodies confirms S90 as the target site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "056c6ad7-b066-41b1-9e25-6449dab74f0b",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MK2/MK3 positively regulate starvation-induced Beclin 1 S90 phosphorylation and autophagy in cells. Dominant-negative MK2 blocks starvation-induced Beclin 1 S90 phosphorylation and autophagy, while constitutively active MK2 increases both under basal conditions. Dominant-negative p38\u03b1 blocks starvation-induced MK2 activation, Beclin 1 S90 phosphorylation, and autophagy, and this block is reversed by constitutively active MK2. MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs show markedly decreased starvation-induced Beclin 1 S90 phosphorylation and autophagy, which is rescued by MK2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 provide comprehensive genetic and pharmacological evidence in multiple cell systems. The use of dominant-negative and constitutively active constructs, combined with knockout MEFs, provides strong support. The p38\u03b1 experiments suggest upstream regulation, though the role of p38\u03b1 is less definitively established than that of MK2/MK3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "cc8205d0-32a7-4e55-ad61-699bc06bfaea",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MK2/MK3 regulate autophagy through a mechanism requiring the Beclin 1 S90 phosphorylation site. In MK2\u2212/\u2212/MK3\u2212/\u2212 MEFs, the S90A mutant fails to increase autophagy, while the S90E phosphomimetic mutant markedly increases basal autophagy. In U2OS cells with Beclin 1 knockdown, active MK2 cannot induce autophagy when only S90A is expressed, but S90E can partially bypass dominant-negative MK2 inhibition of starvation-induced autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 provide epistasis experiments demonstrating that S90 phosphorylation is downstream of MK2/MK3 in the autophagy pathway. The genetic rescue and bypass experiments in two independent cell systems support the mechanistic model. The data are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "ae54f39f-2f89-486c-b276-4354aa197c96",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BCL2 negatively regulates MK2-mediated Beclin 1 S90 phosphorylation. In vitro, increasing amounts of GST-BCL2 decrease MK2-mediated Beclin 1 S90 phosphorylation. Structural modeling suggests steric hindrance prevents simultaneous binding of BCL2 and MK2 to Beclin 1. In HeLa cells, wild-type BCL2 delays and blunts starvation-induced Beclin 1 S90 phosphorylation, while the non-dissociable BCL2 AAA mutant completely blocks it. Active MK2 cannot increase Beclin 1 S90 phosphorylation in BCL2 or BCL2 AAA expressing cells. In Bcl2AAA mice, starvation-induced Beclin 1 S90 phosphorylation is blocked despite MK2 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 provide multi-level evidence (in vitro, cell culture, in vivo) that BCL2 binding blocks MK2-mediated Beclin 1 S90 phosphorylation. The structural model (C42) is speculative but supported by functional data. The Bcl2AAA mouse experiments provide strong in vivo validation. The mechanism is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "215ab8ed-5f78-4391-9927-271635fe3dd2",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ROS generation, in addition to starvation, results in Beclin 1 S90 phosphorylation. Bafilomycin A1 treatment induces endogenous Beclin 1 S90 phosphorylation, which is blocked by the ROS scavenger N-acetyl-L-cysteine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 demonstrate that Beclin 1 S90 phosphorylation can be induced by ROS in addition to starvation. The use of N-acetyl-L-cysteine to block bafilomycin A1-induced phosphorylation supports the ROS-dependence. However, this is a secondary observation and the mechanism linking ROS to MK2/MK3 activation is not explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "6c0d86b4-6dd9-4ac6-be47-9e04da15cbc9",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Beclin 1 knockdown blocks GFP-LC3 puncta formation but not LC3 lipidation. This is consistent with previous reports that Atg6/Beclin 1 are required for localization of lipidated LC3 to autophagosomes but not for LC3 lipidation itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 describe a technical observation about the differential effects of Beclin 1 knockdown on LC3 lipidation versus puncta formation. This is well-supported by the data and consistent with prior literature. This clarifies the autophagy phenotype in the rescue experiments but is not a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "6f884ae4-62f2-4be3-8fd4-559210ae8d4f",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on autophagy and Beclin 1. Autophagy is a fundamental adaptive response to amino acid starvation orchestrated by ATG proteins. Beclin 1 is a central regulator of autophagy that functions through interaction with VPS34, VPS15, and ATG14 in autophagosome formation. Beclin 1 is a haploinsufficient tumor suppressor important for breast cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C52, C53 provide established background information supported by extensive prior literature. These are not novel findings but provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "c0a0b411-e0ab-45c7-a0b0-b59e8ecbd9a7",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work on kinase regulation of autophagy. AMPK activates autophagy components during glucose starvation but does not regulate the Beclin 1/VPS34 complex during complete starvation. mTOR inactivation contributes to autophagy through phosphorylation of ULK1/2, ATG13, and ATG14.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 accurately summarize prior work on AMPK and mTOR in autophagy regulation, supported by appropriate citations. This provides context for the novelty of the MK2/MK3 findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "3f731491-72e5-4f1c-b5bf-d765d8eda13b",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work on Beclin 1 regulation. The Beclin 1/VPS34 complex is negatively regulated by BCL2/BCL2L1 binding, AKT, EGFR, GLIPR2, and MST1. It is positively regulated by kinases that disrupt BCL2/Beclin 1 binding (DAPK, ROCK, JNK1) and by core autophagy machinery proteins (ULK1, AMBRA1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 accurately summarize the extensive prior literature on Beclin 1 regulation, supported by appropriate citations. This provides context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "7bccda22-b378-4345-9d67-a5f11cf3d504",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on MK2 and MK3. MK2 was originally discovered as an ERK1/2-activated kinase and later found to be stimulated by p38 in response to stress. MK3 was discovered through yeast two-hybrid screening and analysis of genes deleted in small-cell lung cancer. MK2 knockout mice show altered responses to endotoxic shock and infections, phenotypes exacerbated by MK3 deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 provide accurate background on MK2/MK3 discovery and function, supported by appropriate citations. This contextualizes the novelty of linking these kinases to autophagy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "decce6da-e57c-4d17-b0d7-87f76d8de2d5",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work on Beclin 1 as a tumor suppressor. Beclin 1 is frequently monoallelically deleted in human breast and ovarian cancers. Heterozygous loss in mice increases tumor incidence. Decreased beclin 1 expression is associated with poor prognosis in breast cancer. Beclin 1 gene transfer impairs MCF7 xenograft formation. Mutations affecting nuclear export or VPS34 binding block tumor suppressor activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 accurately summarize prior work on Beclin 1 tumor suppressor function, supported by appropriate citations. This provides context for the tumor suppressor experiments in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "d40c94bb-d392-471f-ab90-6856b7d4cbb5",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Beclin 1 simultaneously increases cell survival and decreases cell proliferation, resulting in net decreased tumor growth. This is confirmed by the xenograft data showing decreased proliferation (Ki67) and decreased cell death (TUNEL) in wild-type Beclin 1 tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is supported by the xenograft histology data (C21-C23) and is consistent with prior work. This interpretation reconciles the seemingly paradoxical effects on survival and proliferation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "f2602e72-709e-458a-b1e1-5d8c7664f580",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Structural predictions suggest that the N-terminal region of Beclin 1 is positioned to allosterically regulate VPS34 lipid kinase activity. The unstructured N-terminal region is predicted to be in proximity to the VPS34 catalytic subunit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are based on structural predictions from a recent EM study. These predictions are consistent with the functional data showing that S90 phosphorylation increases VPS34 activity without altering complex composition. However, these are inferences from structural modeling rather than direct experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "cdd78cd6-f812-412b-9415-cb264881f3a1",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on BCL2/Beclin 1 interaction. Beclin 1 was originally identified as a BCL2-interacting protein. BCL2 and BCL2L1 inhibit autophagy by binding the BH3 domain of Beclin 1. Bcl2AAA mice are deficient in starvation- and exercise-induced autophagy. The BH3 domain is not required for ATG14/VPS34 interaction or autophagy function. Beclin 1 homodimerization favors BCL2 binding and disfavors ATG14/UVRAG binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 accurately summarize prior work on BCL2/Beclin 1 interaction, supported by appropriate citations. This provides context for the mechanism by which BCL2 blocks MK2-mediated phosphorylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "4f90f4af-c101-4feb-b3c3-61f5b7411c6d",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Model for coordinated MAPK regulation of autophagy. JNK1-mediated BCL2 phosphorylation disrupts BCL2/Beclin 1 binding and is a requisite event for MK2/MK3-dependent Beclin 1 S90 phosphorylation. Autophagy activation during starvation requires both MK2/MK3-mediated Beclin 1 S90 phosphorylation and JNK1-mediated disruption of BCL2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 present an integrative model based on the current findings and prior work on JNK1. The model is well-supported by the data showing that BCL2 blocks MK2-mediated phosphorylation and that dominant-negative JNK1 blocks Beclin 1 S90 phosphorylation. This represents a synthesis of the findings into a coherent mechanistic framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "05822b23-35c9-4b4b-8343-7f08abd4167c",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "MCF7 cells have allelic loss of beclin 1, low Beclin 1 expression, and defective starvation-induced autophagy without exogenous beclin 1 gene transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C11 describes the well-established characteristics of MCF7 cells, supported by multiple prior studies. This justifies the use of MCF7 cells as a model system for rescue experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    },
+    {
+      "id": "83279866-aff6-4503-8714-01b82540b20e",
+      "content_id": "e1a5f8ac-2520-4782-8809-eedc10b94932",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "BCL2 inhibits autophagy through direct interaction with the BH3 domain of Beclin 1 (residues 105-128).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is an established fact from prior literature, appropriately cited. This provides the basis for investigating how BCL2 binding affects MK2-mediated phosphorylation at S90.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:31:17.682999Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "15361b59-bd45-4776-8137-59c2d08f603d",
+      "result_id": "fd4ceb12-65e3-4beb-871d-6ab7b77b2e1e"
+    },
+    {
+      "claim_id": "599215c5-a6ed-4069-b06d-c8f1929c4d25",
+      "result_id": "fd4ceb12-65e3-4beb-871d-6ab7b77b2e1e"
+    },
+    {
+      "claim_id": "65f4df93-f99e-42e7-8213-ad908105a17d",
+      "result_id": "fd4ceb12-65e3-4beb-871d-6ab7b77b2e1e"
+    },
+    {
+      "claim_id": "50c88d86-7126-4f8e-97e8-dde6b4f8514b",
+      "result_id": "fd4ceb12-65e3-4beb-871d-6ab7b77b2e1e"
+    },
+    {
+      "claim_id": "0a6e1d50-cc73-4f7c-a9f2-869327d5cb83",
+      "result_id": "fd4ceb12-65e3-4beb-871d-6ab7b77b2e1e"
+    },
+    {
+      "claim_id": "8e49728b-880a-4ecc-8483-fe65c4867879",
+      "result_id": "384f45a0-6ed9-4672-9fb9-6fed586771a3"
+    },
+    {
+      "claim_id": "3b784263-513e-447a-a405-84caf2a25446",
+      "result_id": "384f45a0-6ed9-4672-9fb9-6fed586771a3"
+    },
+    {
+      "claim_id": "eb4a7215-3bdd-4cb9-8473-40453bc11a09",
+      "result_id": "384f45a0-6ed9-4672-9fb9-6fed586771a3"
+    },
+    {
+      "claim_id": "a1fb7e2b-9cc6-4308-83aa-efcee23a592e",
+      "result_id": "384f45a0-6ed9-4672-9fb9-6fed586771a3"
+    },
+    {
+      "claim_id": "8b1fac45-5379-4296-9304-dde48fe6bb87",
+      "result_id": "384f45a0-6ed9-4672-9fb9-6fed586771a3"
+    },
+    {
+      "claim_id": "a78fb411-416f-4174-94c1-dbd18afb1d11",
+      "result_id": "384f45a0-6ed9-4672-9fb9-6fed586771a3"
+    },
+    {
+      "claim_id": "c55383ae-bd60-4a1e-8613-93dbba8a8b15",
+      "result_id": "384f45a0-6ed9-4672-9fb9-6fed586771a3"
+    },
+    {
+      "claim_id": "30223367-1321-4b30-85d8-1e77ec0a9124",
+      "result_id": "00e1340e-8c88-4bc3-b8d4-58d6383398f5"
+    },
+    {
+      "claim_id": "4883a0cc-d999-48d3-a50a-85b7e5ffb8e5",
+      "result_id": "00e1340e-8c88-4bc3-b8d4-58d6383398f5"
+    },
+    {
+      "claim_id": "da2a9c5d-401c-4978-a50f-a16c7fd388bf",
+      "result_id": "00e1340e-8c88-4bc3-b8d4-58d6383398f5"
+    },
+    {
+      "claim_id": "03f619fe-f0f0-406b-b466-b26d0d5686c7",
+      "result_id": "00e1340e-8c88-4bc3-b8d4-58d6383398f5"
+    },
+    {
+      "claim_id": "7a1a4c1b-785c-48f3-9d62-560674525e7a",
+      "result_id": "00e1340e-8c88-4bc3-b8d4-58d6383398f5"
+    },
+    {
+      "claim_id": "f7a4c688-0e85-4eb3-9633-ab6a45b8ef7d",
+      "result_id": "00e1340e-8c88-4bc3-b8d4-58d6383398f5"
+    },
+    {
+      "claim_id": "e7286dd2-b39d-495d-9b39-d4651a838a1e",
+      "result_id": "fe331740-37fd-4729-a1de-49b0665b7775"
+    },
+    {
+      "claim_id": "f1f8f389-076a-49f6-a290-f13de4fecf8c",
+      "result_id": "fe331740-37fd-4729-a1de-49b0665b7775"
+    },
+    {
+      "claim_id": "8505230c-4e11-47b0-9481-c635c7e7a995",
+      "result_id": "fe331740-37fd-4729-a1de-49b0665b7775"
+    },
+    {
+      "claim_id": "7947acc6-3454-423c-8669-f1defbe76372",
+      "result_id": "fe331740-37fd-4729-a1de-49b0665b7775"
+    },
+    {
+      "claim_id": "33ab80b9-6120-4b56-823c-54bb64bf4a88",
+      "result_id": "056c6ad7-b066-41b1-9e25-6449dab74f0b"
+    },
+    {
+      "claim_id": "8bc0a5f5-feee-4266-925a-6c00e89b2b90",
+      "result_id": "056c6ad7-b066-41b1-9e25-6449dab74f0b"
+    },
+    {
+      "claim_id": "ae5d8f19-c445-4c5c-9c1f-91abd419c66e",
+      "result_id": "056c6ad7-b066-41b1-9e25-6449dab74f0b"
+    },
+    {
+      "claim_id": "c4de8ab5-1dac-4344-8929-c0856d5ddb7c",
+      "result_id": "056c6ad7-b066-41b1-9e25-6449dab74f0b"
+    },
+    {
+      "claim_id": "68cfc878-3086-44ec-895a-77c9b7f5b888",
+      "result_id": "056c6ad7-b066-41b1-9e25-6449dab74f0b"
+    },
+    {
+      "claim_id": "b316556d-50da-486c-81a4-9a360538629a",
+      "result_id": "056c6ad7-b066-41b1-9e25-6449dab74f0b"
+    },
+    {
+      "claim_id": "cb32a1c8-3a44-48fa-8b09-444e8d226c79",
+      "result_id": "056c6ad7-b066-41b1-9e25-6449dab74f0b"
+    },
+    {
+      "claim_id": "8ebc5c78-1315-497a-b3f6-76c2b2a00462",
+      "result_id": "056c6ad7-b066-41b1-9e25-6449dab74f0b"
+    },
+    {
+      "claim_id": "1ded0492-708a-4db5-9e10-8909cd2e7194",
+      "result_id": "cc8205d0-32a7-4e55-ad61-699bc06bfaea"
+    },
+    {
+      "claim_id": "18d94576-2af9-4973-9d02-894558e277d6",
+      "result_id": "cc8205d0-32a7-4e55-ad61-699bc06bfaea"
+    },
+    {
+      "claim_id": "5be75f7f-2f6a-4a7d-a8c8-6844ee0d9f1b",
+      "result_id": "cc8205d0-32a7-4e55-ad61-699bc06bfaea"
+    },
+    {
+      "claim_id": "fbf891df-d7d4-4319-bd84-9d9c9812cf11",
+      "result_id": "cc8205d0-32a7-4e55-ad61-699bc06bfaea"
+    },
+    {
+      "claim_id": "befbecc4-1b2c-40dd-ba4d-ca51279fe69c",
+      "result_id": "ae54f39f-2f89-486c-b276-4354aa197c96"
+    },
+    {
+      "claim_id": "55a35875-8b39-4eab-ae0a-731757f73c96",
+      "result_id": "ae54f39f-2f89-486c-b276-4354aa197c96"
+    },
+    {
+      "claim_id": "b5914a30-37e2-416a-9e05-30ff06670550",
+      "result_id": "ae54f39f-2f89-486c-b276-4354aa197c96"
+    },
+    {
+      "claim_id": "f31d154f-5073-4a0e-8056-32d704b07a77",
+      "result_id": "ae54f39f-2f89-486c-b276-4354aa197c96"
+    },
+    {
+      "claim_id": "2bdf3504-6c4b-4767-ac67-c89c1154e4e2",
+      "result_id": "ae54f39f-2f89-486c-b276-4354aa197c96"
+    },
+    {
+      "claim_id": "325eb3e6-afa3-4645-9fd7-5a2700fd3a83",
+      "result_id": "ae54f39f-2f89-486c-b276-4354aa197c96"
+    },
+    {
+      "claim_id": "dcbfa514-2cbf-4c88-a5d6-64caf5fc4429",
+      "result_id": "ae54f39f-2f89-486c-b276-4354aa197c96"
+    },
+    {
+      "claim_id": "5a104636-ebbd-465b-b134-7afa2a5c751b",
+      "result_id": "ae54f39f-2f89-486c-b276-4354aa197c96"
+    },
+    {
+      "claim_id": "56a481e3-a827-4a0a-96ec-9f7a4b096a6e",
+      "result_id": "215ab8ed-5f78-4391-9927-271635fe3dd2"
+    },
+    {
+      "claim_id": "f104d3d8-7f32-4438-8a7f-45f4f7dcb0e9",
+      "result_id": "215ab8ed-5f78-4391-9927-271635fe3dd2"
+    },
+    {
+      "claim_id": "6d09362f-7635-4e40-a757-ba6b3120cc2d",
+      "result_id": "6c0d86b4-6dd9-4ac6-be47-9e04da15cbc9"
+    },
+    {
+      "claim_id": "8f85ad6c-a113-4b81-82c0-d69f7fe34ca2",
+      "result_id": "6c0d86b4-6dd9-4ac6-be47-9e04da15cbc9"
+    },
+    {
+      "claim_id": "b38c1c96-d994-462d-97cd-e14e442f92a1",
+      "result_id": "6c0d86b4-6dd9-4ac6-be47-9e04da15cbc9"
+    },
+    {
+      "claim_id": "8c07996e-f55b-45cb-8101-59bc5020fb2e",
+      "result_id": "6f884ae4-62f2-4be3-8fd4-559210ae8d4f"
+    },
+    {
+      "claim_id": "5acbf6e9-a90d-498e-9ee5-65b616712a66",
+      "result_id": "6f884ae4-62f2-4be3-8fd4-559210ae8d4f"
+    },
+    {
+      "claim_id": "44c10276-53f9-47bd-96c1-0fa1b16f9423",
+      "result_id": "6f884ae4-62f2-4be3-8fd4-559210ae8d4f"
+    },
+    {
+      "claim_id": "5e2360a6-95d5-44d1-9248-254c368170c6",
+      "result_id": "c0a0b411-e0ab-45c7-a0b0-b59e8ecbd9a7"
+    },
+    {
+      "claim_id": "dee63b3d-9825-4472-a115-b719f69b3762",
+      "result_id": "c0a0b411-e0ab-45c7-a0b0-b59e8ecbd9a7"
+    },
+    {
+      "claim_id": "b8526d4a-7c71-4eb7-a7d0-6b507c1c39aa",
+      "result_id": "c0a0b411-e0ab-45c7-a0b0-b59e8ecbd9a7"
+    },
+    {
+      "claim_id": "dbff44bf-8310-45fa-9942-7de29b18ef9e",
+      "result_id": "3f731491-72e5-4f1c-b5bf-d765d8eda13b"
+    },
+    {
+      "claim_id": "0fb424ae-0b5c-4083-ad4e-d87b9842cb51",
+      "result_id": "3f731491-72e5-4f1c-b5bf-d765d8eda13b"
+    },
+    {
+      "claim_id": "4f30bdd0-a1a5-401a-98be-90351d974d0d",
+      "result_id": "3f731491-72e5-4f1c-b5bf-d765d8eda13b"
+    },
+    {
+      "claim_id": "8c014b36-e9b6-41c9-8a94-f24267647990",
+      "result_id": "3f731491-72e5-4f1c-b5bf-d765d8eda13b"
+    },
+    {
+      "claim_id": "e034c58a-b5d3-41b1-8da0-39544830ca5e",
+      "result_id": "3f731491-72e5-4f1c-b5bf-d765d8eda13b"
+    },
+    {
+      "claim_id": "dfa5cecb-1871-4a68-bc97-9821eef5bec3",
+      "result_id": "3f731491-72e5-4f1c-b5bf-d765d8eda13b"
+    },
+    {
+      "claim_id": "dd4ab484-3d75-4dd1-a704-614066813906",
+      "result_id": "3f731491-72e5-4f1c-b5bf-d765d8eda13b"
+    },
+    {
+      "claim_id": "f03d6e31-8014-49a5-abd0-a9de11b1f146",
+      "result_id": "7bccda22-b378-4345-9d67-a5f11cf3d504"
+    },
+    {
+      "claim_id": "400d5cf1-326b-444a-b5f0-36e2757b5327",
+      "result_id": "7bccda22-b378-4345-9d67-a5f11cf3d504"
+    },
+    {
+      "claim_id": "def47267-598b-48b5-9c27-8a6978066afc",
+      "result_id": "7bccda22-b378-4345-9d67-a5f11cf3d504"
+    },
+    {
+      "claim_id": "e4ce7ec9-1251-4b85-beb6-25142b7c590e",
+      "result_id": "7bccda22-b378-4345-9d67-a5f11cf3d504"
+    },
+    {
+      "claim_id": "e39d017c-4691-41fe-92a1-9810ba138a8b",
+      "result_id": "7bccda22-b378-4345-9d67-a5f11cf3d504"
+    },
+    {
+      "claim_id": "45ff1224-07d8-4381-9a57-6fff76a67415",
+      "result_id": "7bccda22-b378-4345-9d67-a5f11cf3d504"
+    },
+    {
+      "claim_id": "e4d2d0ac-fd67-4afb-9c37-e635d9d70346",
+      "result_id": "decce6da-e57c-4d17-b0d7-87f76d8de2d5"
+    },
+    {
+      "claim_id": "f131b843-8961-4a61-b99f-03635c0d6c34",
+      "result_id": "decce6da-e57c-4d17-b0d7-87f76d8de2d5"
+    },
+    {
+      "claim_id": "1d02e62e-4240-497e-8b31-58883633586e",
+      "result_id": "decce6da-e57c-4d17-b0d7-87f76d8de2d5"
+    },
+    {
+      "claim_id": "d602d44d-aea5-4c1b-bd1a-87046aa046fc",
+      "result_id": "decce6da-e57c-4d17-b0d7-87f76d8de2d5"
+    },
+    {
+      "claim_id": "96036eaa-41bf-408d-878f-5c34819cd9d8",
+      "result_id": "decce6da-e57c-4d17-b0d7-87f76d8de2d5"
+    },
+    {
+      "claim_id": "3fc99b3c-50b4-4de1-b0b4-e1004a059262",
+      "result_id": "decce6da-e57c-4d17-b0d7-87f76d8de2d5"
+    },
+    {
+      "claim_id": "4f6598b1-54af-45dc-8ccd-6c393eeb716d",
+      "result_id": "d40c94bb-d392-471f-ab90-6856b7d4cbb5"
+    },
+    {
+      "claim_id": "a0af7351-205f-4cec-ba92-b7b758b566f1",
+      "result_id": "f2602e72-709e-458a-b1e1-5d8c7664f580"
+    },
+    {
+      "claim_id": "6a5c4423-7538-49b1-b5c5-1e0f87711307",
+      "result_id": "f2602e72-709e-458a-b1e1-5d8c7664f580"
+    },
+    {
+      "claim_id": "d0250d29-05c3-46e2-b371-f5990d384a85",
+      "result_id": "cdd78cd6-f812-412b-9415-cb264881f3a1"
+    },
+    {
+      "claim_id": "0993ca65-c7ca-4b10-880c-6c4ff55112de",
+      "result_id": "cdd78cd6-f812-412b-9415-cb264881f3a1"
+    },
+    {
+      "claim_id": "daae3ae0-e1d5-4fec-b4aa-019049e7a462",
+      "result_id": "cdd78cd6-f812-412b-9415-cb264881f3a1"
+    },
+    {
+      "claim_id": "4e10a9fc-c007-4131-a35f-2c2026f3fa0f",
+      "result_id": "cdd78cd6-f812-412b-9415-cb264881f3a1"
+    },
+    {
+      "claim_id": "3c26bf90-00c5-4671-b472-a4e0063bdf9c",
+      "result_id": "cdd78cd6-f812-412b-9415-cb264881f3a1"
+    },
+    {
+      "claim_id": "e28de4e7-9264-4510-939f-f10e0e7cf6fb",
+      "result_id": "4f90f4af-c101-4feb-b3c3-61f5b7411c6d"
+    },
+    {
+      "claim_id": "a260d874-b8dd-414e-8cb0-c04745a658b6",
+      "result_id": "4f90f4af-c101-4feb-b3c3-61f5b7411c6d"
+    },
+    {
+      "claim_id": "82b4896b-e3d9-44ad-8eee-4ecc03906051",
+      "result_id": "4f90f4af-c101-4feb-b3c3-61f5b7411c6d"
+    },
+    {
+      "claim_id": "139630b4-bb98-403f-82bc-4d8f95cd7062",
+      "result_id": "05822b23-35c9-4b4b-8343-7f08abd4167c"
+    },
+    {
+      "claim_id": "3dfe2390-38ae-441d-8058-cf37cea18e00",
+      "result_id": "83279866-aff6-4503-8714-01b82540b20e"
+    }
+  ],
+  "comparisons": []
+}

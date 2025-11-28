@@ -1,0 +1,1708 @@
+{
+  "submission": {
+    "id": "67aa8b15-e7b0-4abe-89a7-a143f1dfa311",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:19:15.052835Z",
+    "updated_at": "2025-11-28T21:19:15.052835Z"
+  },
+  "content": [
+    {
+      "id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "submission_id": "67aa8b15-e7b0-4abe-89a7-a143f1dfa311",
+      "content_type": "manuscript",
+      "content_text": "# Reconstitution of bacterial autotransporter assembly using purified components\n\n## Authors\n\n- Giselle Roman-Hernandez<sup>1</sup>\n- Janine H Peterson<sup>1</sup>\n- Harris D Bernstein<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Genetics and Biochemistry Branch National Institute of Diabetes and Digestive and Kidney Diseases, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAutotransporters are a superfamily of bacterial virulence factors consisting of an N-terminal extracellular (\u2018passenger\u2019) domain and a C-terminal \u03b2 barrel (\u2018\u03b2\u2019) domain that resides in the outer membrane (OM). The mechanism by which the passenger domain is secreted is poorly understood. Here we show that a conserved OM protein insertase (the Bam complex) and a molecular chaperone (SurA) are both necessary and sufficient to promote the complete assembly of the Escherichia coli O157:H7 autotransporter EspP in vitro. Our results indicate that the membrane integration of the \u03b2 domain is the rate-limiting step in autotransporter assembly and that passenger domain translocation does not require the input of external energy. Furthermore, experiments using nanodiscs strongly suggest that autotransporter assembly is catalyzed by a single copy of the Bam complex. Finally, we describe a method to purify a highly active form of the Bam complex that should facilitate the elucidation of its function.\n\n## Introduction\n\nThe autotransporter (type Va) pathway is the most widespread virulence factor secretion pathway in Gram-negative bacteria (Leyton et al., 2012). Autotransporters are single polypeptides that consist of two domains, an N-terminal domain (\u2018passenger domain\u2019) that is exposed on the cell surface and that often mediates a virulence function, and a C-terminal domain (\u2018\u03b2 domain\u2019) that resides in the outer membrane (OM). Following their translocation across the OM, many passenger domains are released from the cell surface by a proteolytic cleavage. Passenger domains vary widely in sequence and size (\u223c20\u2013400 kD), but almost always form an unusual repetitive structure known as a \u03b2 helix (Junker et al., 2006). \u03b2 domains are typically \u223c30 kD in size and, like the vast majority of bacterial integral OM proteins, fold into a \u03b2 barrel structure. While the sequences of \u03b2 domains are also very heterogeneous, the structures of all of the \u03b2 domains that have been solved to date are nearly superimposable (Oomen et al., 2004; Barnard et al., 2007; van den Berg, 2010; Zhai et al., 2011). After autotransporters are translocated across the inner membrane (IM) through the Sec complex they interact with molecular chaperones that presumably maintain them in an assembly-competent state (Ieva and Bernstein, 2009; Ruiz-Perez et al., 2009; Ieva et al., 2011). Subsequently the \u03b2 domain is targeted to the Bam complex, an essential heterooligomer consisting of an integral OM protein (BamA) and four lipoproteins (BamBCDE) that catalyzes the membrane insertion of \u03b2 barrel proteins (Voulhoux et al., 2003; Wu et al., 2005; Sauri et al., 2009; Hagan et al., 2010; Ieva et al., 2011). X-ray crystallographic analysis suggests that the BamA \u03b2 barrel domain is unstable and may open laterally to allow the escape of client proteins into the lipid bilayer (Noinaj et al., 2013, 2014).\n\nAlthough it has been shown that the passenger domain is translocated across the OM in a C-to-N-terminal fashion (Ieva and Bernstein, 2009; Junker et al., 2009), the mechanism of translocation is poorly understood. Based on the observation that deletion of the \u03b2 domain abolishes passenger domain translocation, it was originally proposed that the \u03b2 domain serves as the transport channel for the passenger domain (whence the name \u2018autotransporter\u2019) (Pohlner et al., 1987). At first glance, this hypothesis seems to be supported by crystallographic studies showing that upon completion of translocation the two domains are connected by an \u03b1-helical linker that is embedded inside the \u03b2 domain pore (Oomen et al., 2004; Barnard et al., 2007; van den Berg, 2010). The same studies, however, revealed that the \u03b2 domain pore is only \u223c10 \u00c5 in diameter. Because the directionality of translocation presumably requires the formation of a C-terminal hairpin followed by the sliding of medial and N-terminal segments past a static strand, both strands of the hairpin would have to be in a fully extended conformation to fit inside the pore. On the contrary, available evidence indicates that the polypeptide that resides inside the \u03b2 domain forms an \u03b1 helix prior to the completion of translocation (Ieva et al., 2008; Peterson et al., 2010). Furthermore, small folded polypeptides have been shown to be secreted efficiently by the autotransporter pathway and a subset of naturally occurring passenger domains undergo disulfide bonding in the periplasm (Skillman et al., 2005; Jong et al., 2007). Finally, BamA has been shown to interact with the passenger domain during the translocation reaction (Ieva and Bernstein, 2009). While the \u03b2 domain does appear to play a role in translocation (Saur\u00ed et al., 2011; Pavlova et al., 2013), these and other results strongly suggest that autotransporter assembly is more complex than originally envisioned. In one scenario, the Bam complex might facilitate the membrane insertion of the \u03b2 domain and the translocation of the passenger domain in a concerted reaction, but it is also possible that other factors are also required to transport the passenger domain across the OM.\n\nThe energy source for passenger domain translocation has also remained poorly understood. Although most protein translocation reactions require external energy in the form of ATP or a membrane potential, the periplasm is devoid of ATP and there is no membrane potential across the bacterial OM. It is conceivable that an IM protein that derives energy from the hydrolysis of cytoplasmic ATP or from the electrochemical gradient across the IM interacts with the passenger domain and drives translocation, but such a protein has never been identified. To explain the energetics of secretion, it has been proposed that the sequential folding of segments of the \u03b2 helix in the extracellular space drives translocation and prevents retrograde movement into the periplasm (Klauser et al., 1992; Junker et al., 2006). Consistent with this vectorial folding model, mutations that impair the folding of C-terminal segments of two different passenger domains significantly reduce the efficiency of secretion (Peterson et al., 2010; Renn et al., 2012). Mutations that perturb the folding of medial and N-terminal segments of the passenger domain, however, produce only a modest translocation defect (Kang\u2019ethe and Bernstein, 2013b). Furthermore, the intrinsically disordered receptor domain (RD) of the Bordetella pertussis RTX toxin has been shown to be secreted efficiently by the autotransporter pathway (Kang\u2019ethe and Bernstein, 2013a). Interestingly, the presence of a large number of acidic residues is critical for the secretion of the RD. This observation, together with the finding that naturally occurring passenger domains are predominantly acidic, suggests that charge interactions may play a significant role in driving the translocation reaction.\n\nTo gain further insight into both the mechanism and energetics of passenger domain translocation, we sought to reconstitute autotransporter assembly in vitro using purified components. In our experiments, we used the Escherichia coli O157:H7 autotransporter EspP, as a model protein. Following the completion of translocation, the passenger domain of EspP and other members of the SPATE (serine protease autotransporters of Enterobacteriaceae) family is released in an unusual intrabarrel cleavage reaction that requires accurate folding of the \u03b2 domain and precise positioning of the passenger domain-\u03b2 domain junction (Dautin et al., 2007; Barnard et al., 2012). Although it was previously shown that the insertion of small E. coli \u03b2 barrel proteins such as OmpT and OmpA into proteoliposomes can be catalyzed by the purified Bam complex and the periplasmic chaperone SurA (Hagan et al., 2010; Hagan and Kahne, 2011; Hagan et al., 2013), we did not observe assembly of EspP using the same methodology. Using an alternative expression and purification strategy, however, we obtained an apparently more active form of the Bam complex that, together with SurA, was both necessary and sufficient to promote the membrane integration of the EspP \u03b2 domain and the translocation and cleavage of the EspP passenger domain. Remarkably, passenger domain translocation did not require the input of any additional energy. In addition to defining the minimal set of factors required for autotransporter assembly, our work provides a valuable resource for future studies on the function of the Bam complex and its role in the biogenesis of the broader class of OM proteins.\n\n## Results\n\n### The Bam complex and SurA are necessary and sufficient to promote the assembly of an EspP derivative that contains a minimal passenger domain fragment\n\nIt has long been known that large N-terminal segments of autotransporter passenger domains can be deleted without affecting the integration of the \u03b2 domain into the OM or the secretion of the remaining passenger domain fragment (Dautin and Bernstein, 2007). The native EspP passenger domain is 968 residues in length (Figure 1A), but a derivative that contains only 26 residues of the \u223c28 residue C-terminal segment that reside inside the \u03b2 domain in an \u03b1-helical conformation (EspP\u03945) is assembled as efficiently as the wild-type protein in vivo (Pavlova et al., 2013). The modification or deletion of residues in the \u03b1-helical segment, however, can profoundly perturb the folding and integration of the \u03b2 domain into the OM and/or the proteolytic release of the passenger domain, which requires precise alignment of the cleavage junction with key catalytic residues (Dautin et al., 2007; Ieva et al., 2008; Barnard et al., 2012). Because EspP\u03945 and other derivatives that expose no more than a short segment on the cell surface are structurally similar to generic \u03b2 barrel proteins such as OmpT, it might be expected that they would have similar assembly requirements. Indeed any autotransporter-specific assembly factors might only be required once the passenger domain reaches a threshold size. Based on this reasoning, we first analyzed the assembly of an EspP derivative designated EspP(46+\u03b2) that consists of EspP\u03945 plus 20 N-terminal residues derived from the cloning vector (Figure 1B). We expected that the accurate assembly of EspP(46+\u03b2) would result in the proteolytic release of the 46 residue passenger domain and the accumulation of a folded \u223c30 kD \u03b2 domain that, as previously shown, is resistant to SDS denaturation unless heated (Skillman et al., 2005).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig1-v2.jpg)\n\n**Figure 1.:** (A) EspP consists of a signal peptide (SP; residues 1\u201355), an extracellular (\u2018passenger\u2019) domain (residues 56\u20131023) and a \u03b2 barrel (\u2018\u03b2\u2019) domain (residues 1024\u20131300) (Brunder et al., 1997). While most of the passenger domain forms a long \u03b2 helix, the N-terminus (residues 56\u2013313) forms a discrete globular domain (Khan et al., 2011). (B) Illustration of EspP(46+\u03b2). Prior to the release of the passenger domain in an intrabarrel cleavage reaction, \u223c28 residues of the 46 residue passenger domain are embedded inside the \u03b2 domain pore. (C) Available evidence indicates that the EspP passenger domain is secreted in a hairpin conformation while distinct regions of the \u03b2 domain interact with BamA, BamB and BamD (Ieva et al., 2011). Components of the transport channel likely include the open \u03b2 domain and/or the BamA \u03b2 barrel, which has been proposed to open laterally (Noinaj et al., 2013, 2014). In any case, the finding that proteolytic maturation and the release of the \u03b2 domain from the Bam complex both require the completion of translocation (Peterson et al., 2010; Ieva et al., 2011; Pavlova et al., 2013) strongly suggests that the active site cannot form during the passage of the passenger domain across the OM. BamC and BamE hve been omitted from the model for the sake of clarity.\n\nInitially we tested whether EspP(46+\u03b2) would assemble in vitro using a previously described OM protein assembly assay (Hagan et al., 2010). In this assay, E. coli BamAB and BamCDE are first expressed and isolated independently. The two subcomplexes are then mixed together to form a holocomplex and reconstituted into proteoliposomes. In the presence of the proteoliposomes and a molar excess of SurA, denatured OmpT folds into a stable structure that is enzymatically active and resistant to SDS denaturation. We attempted to express and purify the Bam complex exactly as described, but for reasons that are unclear we did not observe efficient formation of the Bam holocomplex unless we purified BamAB through an additional step. Nevertheless, we ultimately obtained a single peak on a gel filtration column that was highly enriched in the reconstructed complex, which we designated Bam(AB)(CDE) (Figure 2\u2014figure supplement 1A,B). After the peak fractions were pooled, most of the Bam holocomplex could be reconstituted into proteoliposomes (Figure 2\u2014figure supplement 1C). Subsequently we purified SurA to homogeneity as described (Hagan et al., 2010) (Figure 2\u2014figure supplement 2). To assess the folding of OmpT, we used an activity assay in which the cleavage of a fluorogenic peptide leads to an increase in fluorescence intensity over time. Consistent with previous results, we observed a fluorescent signal when OmpT was incubated in the presence of Bam(AB)(CDE) and SurA (Figure 2E, purple curve). EspP(46+\u03b2) purified from inclusion bodies (Figure 3\u2014figure supplement 1) was mixed with the same components, and the proteolytic maturation of the protein was assessed by Western blotting using an antiserum against an EspP C-terminal peptide. No free \u03b2 domain was detected, however, even after a prolonged incubation (Figure 2\u2014figure supplement 1D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig2-v2.jpg)\n\n**Figure 2.:** (A) Chromatogram of BamABCDE on S-200 gel filtration column. (B) SDS-PAGE analysis of the peak fractions in (A). Proteins were visualized by Coomassie Blue staining. (C) The peak fractions in (B) were pooled and analyzed by Blue Native PAGE. (D) Purified BamABCDE was centrifuged in the absence of liposomes or after reconstitution into liposomes. The pellet (P) and supernatant (S) fractions were analyzed by SDS-PAGE. (E) Urea denatured OmpT was diluted and incubated with SurA and proteoliposomes containing either BamABCDE (green) or Bam(AB)(CDE) (purple), proteoliposomes containing BamABCDE alone (red) or SurA alone (blue). OmpT activity was assessed by measuring the fluorescent signal generated by the cleavage of a fluorogenic peptide.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Chromatogram of Bam(AB)(CDE) on S-200 gel filtration column. (B) The peak fractions in part A were pooled and analyzed by SDS-PAGE. Proteins were visualized by Coomassie Blue staining. (C) Purified Bam(AB)(CDE) was centrifuged in the absence of liposomes or after reconstitution into liposomes. The pellet (P) and supernatant (S) fractions were analyzed by SDS-PAGE. (D) Urea-denatured EspP(46+\u03b2) was incubated with SurA and proteoliposomes containing Bam(AB)(CDE). Aliquots were placed on ice at various time points, heated to 95\u00b0C or maintained at room temperature after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** His-tagged SurA was purified by affinity chromatography and analyzed by SDS-PAGE. The protein was visualized by Coomassie Blue staining.\n\nPartly because we had difficulty reconstructing the Bam complex from BamAB and BamCDE subcomplexes, we next cloned the genes encoding all five subunits into a single expression plasmid. An octahistidine tag was introduced at the C-terminus of BamE to facilitate Bam complex purification. All of the proteins co-eluted on gel filtration columns (Figure 2A,B). This observation strongly suggests that Bam holocomplexes were formed efficiently in vivo. When the peak fractions were pooled and analyzed by Blue Native PAGE, a single band that migrated slightly slower than the 242 kDa marker was seen (Figure 2C). The Bam complex is only \u223c200 kDa, but it has previously been shown to migrate slower than its actual molecular weight on Blue Native gels (Hagan et al., 2013). In the presence of E. coli phospolipids, almost all of the purified protein, which we designated BamABCDE, could be reconstituted into proteoliposomes (Figure 2D). Remarkably, the intensity of the fluorescent signal in the fluorogenic peptide cleavage assay indicated that OmpT folded much more efficiently in the presence of BamABCDE than Bam(AB)(CDE) (Figure 2E, compare green and purple curves). These results suggested that the activity of the Bam complex is optimized when all of the subunits are expressed together.\n\nInterestingly, we found that BamABCDE also stimulated the assembly of EspP(46+\u03b2). The urea-denatured EspP derivative was incubated at 30\u00b0C with proteoliposomes containing the Bam complex and SurA, and samples were removed at various time points. Folding of the protein and subsequent proteolytic maturation were monitored by Western blot using the anti-EspP C-terminal antiserum and a fluorescently-labeled secondary antibody. A rapidly migrating (\u223c27 kD) band that corresponds to the folded form of the free EspP \u03b2 domain appeared within 5 min and was more prominent at later time points when the samples were not heated (Figure 3A). When the samples were heated, a much more intense \u223c30 kD band that corresponds to the unfolded \u03b2 domain was observed. This marked difference in intensity has been observed previously (Barnard et al., 2007; Pavlova et al., 2013) and presumably results from the occlusion of the C-terminal epitope in the folded form of the \u03b2 domain. No proteolytic processing was observed if either SurA or BamABCDE was omitted from the reaction or if BamAB or BamCDE subomplexes were used in place of the holocomplex (Figure 3B). Single plasmids were also used to produce Bam complexes that lack either BamB or BamC, but curiously only \u223c50\u201370% of the purified partial complexes could be reconstituted into proteoliposomes (Figure 3\u2014figure supplement 2A). BamABDE and BamACDE both promoted the assembly EspP(46+\u03b2), but less effectively than BamABCDE (Figure 3\u2014figure supplement 2B). Finally, the addition of purified Skp to reactions containing BamABCDE and SurA inhibited EspP(46+\u03b2) assembly (Figure 3\u2014figure supplement 3) and ATP (0.1 mM) blocked assembly altogether (data not shown).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig3-v2.jpg)\n\n**Figure 3.:** (A) Urea-denatured EspP(46+\u03b2) was incubated with SurA and proteoliposomes containing BamABCDE. Aliquots were placed on ice at various time points, heated to 95\u00b0C or maintained at room temperature after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. (B) Urea-denatured EspP(46+\u03b2) was incubated with the indicated factors. Aliquots were removed after 0 and 30 min and analyzed as in (A). (C) Urea-denatured EspP*(46+\u03b2) was diluted and incubated with SurA and proteoliposomes containing BamABCDE. Aliquots were removed at various time points and analyzed as in (A).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The indicated EspP derivatives were purified from inclusion bodies and analyzed by SDS-PAGE. The proteins were visualized by Coomassie Blue staining.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Purified BamABDE and BamACDE were centrifuged after reconstitution into liposomes. The pellet (P) and supernatant (S) fractions were analyzed by SDS-PAGE. (B) Urea-denatured EspP(46+\u03b2) was incubated with SurA and proteoliposomes containing BamABCDE, BamABDE or BamACDE. Aliquots were placed on ice at various time points, heated to 95\u00b0C after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. A quantitation of the data is shown.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Urea-denatured EspP(46+\u03b2) was incubated with SurA, proteoliposomes containing BamABCDE, and the indicated concentration of Skp. Aliquots were placed on ice after 0 and 30 min, heated to 95\u00b0C after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Urea-denatured EspP(46+\u03b2) was incubated with SurA and proteoliposomes containing the indicated concentration of BamABCDE. Aliquots were placed on ice at various time points, heated to 95\u00b0C after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. A quantitation of the data is shown. (B) Urea-denatured EspP(46+\u03b2) (0.1 \u03bcM) was mixed with SurA and proteoliposomes containing 0.2 \u03bcM BamABCDE, and the mixture was divided into two equal reactions. After 5 min fresh EspP(46+\u03b2) (0.2 \u03bcM) was added to one reaction. Aliquots from both reactions were placed on ice at various time points, heated to 95\u00b0C after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. The graph shows a quantitation of the signal produced by the binding of a fluorescently labeled secondary antibody to the cleaved \u03b2 domain on the Western blot.\n\nTo confirm that the \u223c30 kDa fragment we observed was identical to the polypeptide that results from proteolytic maturation in vivo, we examined the assembly of a non-cleavable version of EspP(46+\u03b2). This derivative, which is designated EspP*(46+\u03b2), contains a mutation at the cleavage site that abolishes proteolysis but does not affect folding (Skillman et al., 2005). A polypeptide that migrated slower than the folded \u03b2 domain (\u223c30 kDa vs \u223c27 kDa) and that corresponds to the folded form of EspP*(46+\u03b2) was observed when the samples were not heated (Figure 3C). As expected, this band disappeared when the samples were heated because in the absence of cleavage the denatured form of EspP*(46+\u03b2) co-migrates with the unassembled protein.\n\nQuantitation of the relative fluorescent signal produced by the denatured form of the EspP \u03b2 domain and unprocessed EspP(46+\u03b2) on Western blots indicated that \u223c10\u201320% of the protein was typically assembled under our experimental conditions. The efficiency of assembly did not appear to be limited by the concentration of either reconstituted BamABCDE or SurA. A moderate increase in efficiency was observed when the BamABCDE concentration was increased from 0.05 \u03bcM to 0.2 \u03bcM (the concentration used in the experiments described here), but no increase was observed at higher concentrations (Figure 3\u2014figure supplement 4A). Interestingly, if we added fresh substrate 5\u02b9 after the start of the incubation, the total yield of assembled EspP(46+\u03b2) increased in proportion to the amount of added substrate (Figure 3\u2014figure supplement 4B). This observation is consistent with other evidence that the Bam complex can catalyze multiple rounds of assembly in vitro (Hagan and Kahne, 2011). In light of our results, it is likely that the efficiency of EspP(46+\u03b2) assembly was limited by the inherent ability of the denatured protein to remain assembly competent after dilution out of 8 M urea.\n\n### The Bam complex and SurA catalyze the assembly of larger EspP derivatives\n\nWe next wished to determine whether the factors that promote the assembly of the EspP \u03b2 domain can also promote the translocation of substantial passenger domain fragments. To this end, we expressed and purified EspP derivatives that contain progressively longer portions of the native passenger domain plus 20 N-terminal residues derived from the cloning vector (Figure 3\u2014figure supplement 1). Because proteolytic maturation of EspP is absolutely dependent on the completion of passenger domain translocation in vivo (Ieva and Bernstein, 2009; Peterson et al., 2010; Pavlova et al., 2013), we initially assessed translocation by monitoring the appearance of the cleaved \u03b2 domain. Indeed available evidence strongly suggests that the completion of \u03b2 domain assembly (and the assembly of the active site) is a late event in autotransporter biogenesis (Ieva et al., 2011), possibly because the \u03b2 domain forms at least part of the passenger domain transport channel (Figure 1C). As Western blot analysis using the anti-EspP C-terminal antiserum indicated, EspP derivatives that have passenger domains ranging in size from 72\u2013734 residues were all processed with approximately the same efficiency as EspP(46+\u03b2) (Figure 4). The largest derivative lacks the N-terminal globular segment of the EspP passenger domain, but contains the entire \u03b2 helical segment (Figure 1A). These results not only suggest that BamABCDE and SurA are sufficient to promote passenger domain translocation, but also suggest that the passenger domain does not readily adopt a translocation-incompetent conformation that independently limits the efficiency of autotransporter assembly.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig4-v2.jpg)\n\n**Figure 4.:** The indicated urea-denatured EspP derivative was incubated with SurA and proteoliposomes containing BamABCDE. Aliquots were removed at various time points, heated to 95\u00b0C or maintained at room temperature after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. The \u223c27 kDa polypeptide observed at the 0 min time point on the bottom two gels is an unidentified background band.\n\nTo obtain additional evidence that EspP derivatives that contain significant passenger domain fragments assemble correctly in the in vitro assay, we selected a few derivatives for further analysis. Initially we found that after incubating EspP(96+\u03b2) with proteoliposomes containing BamABCDE and SurA for 30 min, the cleaved \u03b2 domain was both subject to heat denaturation in SDS and resistant to proteinase K (PK) digestion (Figure 5A). This result provided direct evidence that the \u03b2 domain was not only properly folded, but also inserted into the proteoliposomes. Subsequently we examined the assembly of EspP*(96+\u03b2), a non-cleavable version of EspP(96+\u03b2), under the same conditions. In the absence of PK, a band that migrates slower than the folded \u03b2 domain (\u223c35 kDa vs \u223c27 kDa) and that corresponds to the folded form of the full-length protein was observed (Figure 5B). The finding that the \u223c35 kDa polypeptide was resistant to PK digestion unless detergent was added showed that the passenger domain was translocated into the lumen of the proteoliposomes. We also performed an initial analysis of the assembly of EspP(HA-251+\u03b2), a derivative that contains 251 residues of the EspP passenger domain plus an N-terminal HA tag (14 additional residues). After we incubated the protein with proteoliposomes containing BamABCDE and SurA we detected the \u03b2 domain and the cleaved passenger domain on Western blots probed with anti-EspP C-terminal and anti-HA antisera, respectively, and both fragments were resistant to PK digestion unless detergent was added (Figure 5C). Because the epitope tag is the last segment of the protein that traverses the membrane, these results confirm that the translocation reaction went to completion.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig5-v2.jpg)\n\n**Figure 5.:** (A) Urea-denatured EspP(96+\u03b2) was incubated with SurA and proteoliposomes containing BamABCDE. Aliquots were placed on ice after 0 and 30 min and either treated with PK or left untreated. After the addition of SDS-PAGE buffer samples were heated to 95\u00b0C or maintained at room temperature and analyzed by Western blot using an anti-EspP C-terminal peptide. (B) The experiment described in (A) was repeated with EspP*(96+\u03b2), except that n-dodecyl \u03b2-D-maltoside (DDM) was added to one sample prior to PK treatment, and none of the samples were heated after the addition of SDS-PAGE buffer. (C) The experiment described in (A) was repeated with EspP(HA-251+\u03b2), except that DDM was added to one sample prior to PK treatment, and all of the samples were heated to 95\u00b0C after the addition of SDS-PAGE buffer. Samples were divided in half and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum or an anti-HA antiserum.\n\n### \u03b2 domain assembly is the rate-limiting step in EspP biogenesis\n\nTo examine the biogenesis of EspP derivatives that have different length passenger domains in more detail, we next performed a kinetic analysis of the assembly of EspP(46+\u03b2) and EspP(HA-251+\u03b2). We used 0.2 \u03bcM substrate in these experiments because we found that doubling the EspP concentration moderately increased the efficiency of assembly. As suggested by a study on OmpT, the enhancement of assembly might be a fortuitous effect of increasing the concentration of urea, which presumably helps to maintain the folding-competence of the substrate (Hagan and Kahne, 2011). Western blot analysis using the anti-EspP C-terminal antiserum showed that EspP(46+\u03b2) underwent substantial proteolytic processing within 2 min (Figure 6A, top and Figure 6B, blue curve). Interestingly, EspP(HA-251+\u03b2) was processed at a very similar rate (Figure 6C, top and Figure 6D, blue curve). Indeed the rate constants obtained by fitting the assembly data for the two EspP derivatives to either a single exponential or two-step model were nearly identical (Supplementary file 1). In the case of the EspP(HA-251+\u03b2) derivative, a PK-resistant \u223c30 kD polypeptide that corresponds to the cleaved passenger domain accumulated in parallel with the cleaved \u03b2 domain (Figure 6E, top). This observation confirmed that the passenger domain was translocated into the lumen of the proteoliposomes during the assembly reaction. We also introduced a mutation (G1066A) that slightly impairs folding of the \u03b2 domain and thereby delays the initiation of passenger domain translocation by \u223c1 min in vivo (Pavlova et al., 2013) into EspP(46+\u03b2) and EspP(HA-251+\u03b2). The mutation caused a similar delay in the assembly of both EspP derivatives in vitro (Figure 6 and Supplementary file 1). This observation corroborates the conclusion that defects in the folding of the \u03b2 domain affect the ability of the Bam complex to catalyze subsequent steps in EspP assembly.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig6-v2.jpg)\n\n**Figure 6.:** (A) Urea-denatured EspP(46+\u03b2) or EspP(46+\u03b2)G1066A was incubated with SurA and proteoliposomes containing BamABCDE. Aliquots were placed on ice at various time points, heated to 95\u00b0C after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. (B) Quantitation of the data shown in (A). (C) The experiment shown in (A) was repeated with EspP(HA-251+\u03b2) or EspP(HA-251+\u03b2). (D) Quantitation of the data shown in (C). (E) A second aliquot from the experiment shown in (C) was placed on ice at each time point and treated with PK. After the addition of SDS-PAGE buffer the samples were heated to 95\u00b0C and analyzed by Western blot using an anti-HA antiserum.\n\nInterestingly, we found that an EspP derivative that contains an HA-tagged version of the full-length \u03b2 helix [EspP(HA-714+\u03b2)] was also assembled very rapidly. Despite the presence of a much larger passenger domain, EspP(HA-714+\u03b2) was processed only slightly more slowly than EspP(46+\u03b2) (Figure 7A,B). Furthermore, the assembly data could be fit equally well to the same kinetic models and did not suggest the existence of an additional slow step (Supplementary file 1). A PK-resistant \u223c80 kDa polypeptide that corresponds to the cleaved passenger domain accumulated during the assembly reaction (Figure 7C). As expected, this polypeptide was degraded when the proteoliposomes were solubilized with detergent (Figure 7D). Taken together, the results indicate that passenger domain translocation is relatively fast, and that the assembly of the \u03b2 domain is the rate-limiting step in autotransporter biogenesis. Curiously, the introduction of a short linker into EspP(HA-714+\u03b2) that impairs passenger domain folding and stalls translocation in vivo (Ieva and Bernstein, 2009) only modestly affected assembly in vitro (Figure 7\u2014figure supplement 1). This observation, along with the finding that an EspP chimera containing a >200 residue intrinsically disordered passenger domain segment that is secreted efficiently in vivo could also assemble in the in vitro assay (Figure 7\u2014figure supplement 2), suggests that in the absence of an exogenous energy source translocation is not driven exclusively by protein folding.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig7-v2.jpg)\n\n**Figure 7.:** (A) Urea-denatured EspP(HA-714+\u03b2) was incubated with SurA and proteoliposomes containing BamABCDE. Aliquots were placed on ice at various time points, heated to 95\u00b0C after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. (B) Quantitation of the data shown in (A). (C) A second aliquot from the experiment shown in (A) was placed on ice at each time point and treated with PK. After the addition of SDS-PAGE buffer the samples were heated to 95\u00b0C and analyzed by Western blot using an anti-HA antiserum. (D) The experiment described in (A) was repeated. Two equal aliquots were placed on ice after 30 min and DDM was added to one aliquot. The samples were then treated with PK and analyzed by Western blot as described in (C). In (C and D) the asterisk denotes an unidentified background band.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Urea-denatured EspP(HA-714+\u03b2)TEV586 was incubated with SurA and proteoliposomes containing BamABCDE. Aliquots were placed on ice at various time points, heated to 95\u00b0C after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. (B) Quantitation of the data shown in part A (red curve) and Figure 7A (blue curve).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Urea-denatured RD1512\u20131619-EspP(51+\u03b2) and RD1457\u20131677-EspP(51+\u03b2), which contain 108 and 221 residue fragments of the intrinsically disordered receptor domain (RD) of the B. pertussis RTX toxin fused to the C-terminus of EspP, were incubated with SurA and proteoliposomes containing BamABCDE. Aliquots were placed on ice at various time points, heated to 95\u00b0C or maintained at room temperature after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. Chimeric RD-EspP passenger domains have been shown to be secreted efficiently in vivo (Kang\u2019ethe and Bernstein, 2013a).\n\n### Assembly of EspP into nanodiscs\n\nAlthough it is often assumed that OM protein assembly is catalyzed by a Bam complex monomer, this notion has never been tested. Furthermore, given that autotransporter assembly is inherently more complicated than the assembly of generic \u03b2 barrel proteins, it is conceivable that the Bam complex exists in a distinctive oligomeric state during its interaction with autotransporters. To determine whether a single copy of the Bam complex can mediate the assembly of EspP derivatives, we reconstituted BamABCDE into \u223c10\u201312 nm nanodiscs using conditions that facilitate the incorporation of a single copy of the ABC transporter MalFGK2 (Bao et al., 2012). The nanodiscs eluted at about the same position on gel filtration columns as BamABCDE monomers (Figure 8A). Analysis of the peak fractions by SDS-PAGE suggested that the scaffold protein MSP1D1 was present in excess over the Bam complex proteins (Figure 8B). Because nanodiscs are stabilized by two copies of the scaffold protein (Denisov et al., 2004), however, this observation is consistent with the prediction that they contained a single copy of the Bam complex. In addition, the nanodiscs produced a single band on Blue Native PAGE that migrated only slightly slower than a BamABCDE monomer (compare Figure 8C to Figure 1C). Western blot analysis using the anti-EspP C-terminal antiserum revealed that both EspP(46+\u03b2) and EspP(HA-251+\u03b2) were assembled into nanodiscs about as efficiently as they were assembled into proteoliposomes (Figure 8D). Although the non-vesicular nature of nanodiscs precluded assessment of passenger domain translocation using a PK-sensitivity assay, we found that the \u223c30 kDa passenger domain of EspP(HA-251+\u03b2) accumulated in parallel with the cleaved \u03b2 domain (Figure 8E). These results not only provide evidence that a Bam complex monomer is sufficient to catalyze autotransporter assembly, but also show that the curvature of the proteoliposome membrane is not itself required for the assembly process.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04234/elife-04234-fig8-v2.jpg)\n\n**Figure 8.:** (A) Chromatograms of nanodiscs and BamABCDE in DDM on Superdex 75 gel filtration column. (B) SDS-PAGE analysis of the peak fractions in (A). Proteins were visualized by staining the gel with Coomassie Blue. (C) The peak fractions in (B) were pooled and analyzed by Blue Native PAGE. (D) Urea-denatured EspP(HA-251+\u03b2) or EspP(46+\u03b2) was incubated with SurA and nanodiscs containing BamABCDE. Aliquots were placed on ice at various time points, heated to 95\u00b0C or maintained at room temperature after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-EspP C-terminal peptide antiserum. The \u223c27 kDa polypeptide observed at the 0 min time point on the top gel is an unidentified background band. (E) An additional aliquot from the EspP(HA-251+\u03b2) assembly reaction shown in (D) was removed at each time point, heated to 95\u00b0C after the addition of SDS-PAGE buffer, and analyzed by Western blot using an anti-HA antiserum.\n\n## Discussion\n\nIn this study we identified the minimal set of factors that are required for the complete assembly of the model autotransporter EspP. Initially we showed that the Bam complex reconstituted into proteoliposomes and SurA and both necessary and sufficient to catalyze the folding and proteolytic processing of a simplified version of EspP that consists of the \u03b2 domain plus a short passenger domain fragment that protrudes only slightly from the \u03b2 domain pore. This derivative is similar to generic \u03b2 barrel proteins such as OmpT that reside almost entirely in the OM, except that it contains an internal \u03b1-helical segment. In subsequent experiments we found that the same two factors are sufficient to catalyze the translocation of passenger domain fragments associated with much larger EspP derivatives. Interestingly, the efficiency and kinetics of assembly was largely independent of the length of the derivative. While this observation does not exclude the possibility that there are other factors that stimulate passenger domain secretion in vivo, it does suggest that they would either play a limited role in the translocation reaction per se or serve to prevent misfolding in the crowded periplasmic space. Finally, experiments using nanodiscs provided evidence that EspP assembly is catalyzed by a single copy of the Bam complex. Overall, our results are consistent with a model in which the passenger domain is secreted through a channel consisting of the open \u03b2 domain and/or the BamA \u03b2 barrel in an open conformation (Figure 1C).\n\nOur work demonstrates that passenger domain secretion does not require either an input of exogenous energy or the presence of IM proteins that transduce energy from the cytoplasm or the membrane potential. The results are surprising because ATP hydrolysis is required to drive protein translocation through the Sec complex in an analogous reconstituted assay system (Brundage et al., 1990) and because other types of protein translocation reactions appear to require a significant energy expenditure (Alder and Theg, 2003; Shi and Theg, 2013). The high energy cost may result in part from a tendency of proteins to slide backwards at specific stages of the translocation reaction (Schiebel et al., 1991; Bauer et al., 2014). In the autotransporter pathway, the folding of the passenger domain in the extracellular space has been shown to play a role in driving translocation in vivo, and folding may also promote translocation in the in vitro assay. Available evidence, however, neither supports the notion that stepwise folding alone drives translocation nor explains the efficient secretion of the intrinsically disordered RD domain or polypeptides that fold in the periplasm. As previously suggested (Kang\u2019ethe and Bernstein, 2013a), electrostatic or other types of interactions between passenger domains and the Bam complex or membrane lipids may facilitate translocation. Like the FimD protein that secretes type I pilus subunits, the Bam complex might also guide passenger domains along a low-energy pathway (Geibel et al., 2013). Alternatively, the Bam complex might catalyze at least the initial stages of translocation and the assembly of the \u03b2 domain in a concerted fashion. Indeed a model in which a polypeptide segment is pushed across the membrane during the membrane integration of the \u03b2 domain might explain the efficient secretion of \u223c100 residue fragments that are too short to fold (Skillman et al., 2005; Pavlova, et al., 2013). While the coupling of translocation to \u03b2 domain assembly might also explain the assembly of a folding-deficient mutant such as EspP(HA-714+\u03b2)586TEV in vitro, the observation that stalled translocation reactions can be restarted in vivo (Ieva and Bernstein, 2009; JHP and HDB, unpublished results) strongly suggests that energy can be harnessed after the insertion of the \u03b2 domain is largely complete.\n\nOur results also indicate that the assembly of the \u03b2 domain is the rate-limiting step in autotransporter biogenesis. Pulse-chase labeling and photocrosslinking experiments have previously provided evidence that \u03b2 domain assembly is slower than passenger domain translocation in vivo (Ieva et al., 2011), but the interpretation of these experiments is complicated by the fact that the synthesis of the 1300 residue EspP protein is itself rather slow (\u223c45 s). The use of fully synthesized EspP derivatives in the in vitro assay has enabled us to circumvent this problem and assess the contribution of the translocation step to the overall reaction kinetics more effectively. It is noteworthy that the ability of the \u03b2 domain to remain assembly-competent also appeared to limit the efficiency of the assembly reaction. This observation corroborates the conclusion that even long passenger domain segments fold slowly and consequently resist aggregation, at least in vitro (Junker et al., 2006). Furthermore, given that the \u03b2 domain clearly interacts with Skp in vivo (Ieva et al., 2011; Pavlova et al., 2013), it is striking that the presence of the chaperone inhibited assembly in vitro. Presumably we could not recapitulate the productive interaction between Skp and the \u03b2 domain that occurs in vivo, or a factor that is required to release Skp from client proteins was not present (or was present but not fully functional) in our assay.\n\nFinally, the strategy that we have described to purify the Bam complex may facilitate future studies on the assembly of both autotransporters and many other OM proteins. It is striking that, at least in our hands, BamABCDE was more active than Bam(AB)(CDE). While this disparity may simply be due to technical issues, our results also raise the possibility that the structure of the Bam complex assembled in vivo differs from that of the Bam complex reconstructed from BamAB and BamCDE subcomplexes in vitro. Indeed it is conceivable that while a stable heterooligomer can be formed from the two subcomplexes, the Bam complex is actually assembled by a different pathway inside living cells. In this regard it should be noted that in preliminary experiments we obtained evidence that the Bam complex remains intact in vivo and does not undergo a dynamic cycle in which BamAB and BamCDE subcomplexes rapidly dissocate and reassociate (JHP and HDB, unpublished results).\n\n## Materials and methods\n\n### Plasmid construction\n\nPreviously described plasmids (Hagan et al., 2010) that encode the BamAB and BamCD subcomplexes, His-tagged BamE, SurA and the His-tagged OmpT G236K/K237G mutant (pSK38, pSK46, pBamE-His, pSK257 and pCH28) were reconstructed. To generate plasmid pJH113, a new Nde I site was introduced into the polylinker of a derivative of pTRC99a that lacks the endogenous Nde I site (Szabady et al., 2005) using the QuikChange Mutagenesis Kit (Agilent, Santa Clara, CA) with the oligonucleotide pTRC/Nde and its complement (all oligonucleotides used in this study are listed in Supplementary file 2). The genes that encode all five subunits of the Bam complex were then cloned sequentially into pJH113 to create plasmid pJH114. Each gene was amplified by PCR using genomic DNA from E. coli strain AD202 as a template (Akiyama and Ito, 1990). BamA was first cloned into the Nde I and BamH I sites of pJH113, and the other genes were then cloned into the BamH I site of the resulting plasmid. In the final round of cloning an octahistidine tag was added to the C terminus of BamE during PCR amplification. Plasmids pJH115, pJH116 and pJH117, which encode BamACDE(His8), BamABDE(His8), and BamCDE(His8), respectively, were constructed in the same fashion except that one or more of the cloning steps were omitted. Plasmid pJH118, which encodes (His6)BamAB, was made by first introducing an Eag I site into pJH113-bamA using oligonucleotide BamA.Eag(+) and its complement. A hexahistidine tag was then introduced at the N-terminus of the mature region of BamA using oligonucleotides BamAHis(+) and BamAHis(\u2212). Finally, a Kpn I-Xba I fragment encoding the C-terminus of BamA and BamB was excised from pJH113-bamAB and cloned into the cognate sites of this plasmid. A plasmid encoding the MSP1D1 protein was previously described (Denisov et al., 2004) and was obtained from Addgene (plasmid 20061).\n\nTo make plasmids that express His6-tagged EspP derivatives, fragments of espP were amplified by PCR using the primer EspP(\u2212) and an appropriate upstream oligonucleotide and pRLS5, pJH62 or pKMS3 as a template (Skillman et al., 2005; Szabady et al., 2005). The resulting PCR products were digested with Nde I and BamH I and cloned into the cognate sites of pET28b. To construct plasmids encoding HA-tagged EspP derivatives, the oligonucleotides HA tag(+) and HA tag(\u2212) (Supplementary file 2) were cloned into the Nco I and Nde I sites of plasmids encoding EspP(271+\u03b2) and EspP(734+\u03b2). To make plasmids expressing RD-EspP chimeras, fragments of the RD gene were amplified using appropriate primers and pWK2 (Kang\u2019ethe and Bernstein, 2013a) as a template. PCR products were then digested with Nco I and Nde I and cloned into the cognate sites of pET28b encoding EspP(51+\u03b2).\n\n### Assembly of the Bam complex from BamAB and BamCDE subcomplexes\n\nBamAB and BamCDE(His8) were produced independently essentially as described (Hagan et al., 2010). BL21(DE3) transformed with pSK38 were grown at 37\u00b0C in a 1 l volume to OD600 = 0.3. Cultures were shifted to 25\u00b0C over 30 min and bamAB overexpression was induced by the addition of 0.1 mM IPTG at OD600 = 0.5\u20130.6. Cells were then incubated in the presence of the inducer for 3 hr. BL21(DE3) transformed with both pSK46 and pBamE-His were grown at 37\u00b0C in a 1 l volume to OD600 = 0.5\u20130.6. BamCD and bamE(His8) expression was induced by the addition of 0.1 mM IPTG, and incubation was continued for an additional 3\u20134 hr. Cells were pelleted in a Beckman JLA-8.1000 rotor (4000\u00d7g, 15 min), resuspended in 10 ml cold 20 mM Tris\u2013HCl pH 8 and lysed using an Avestin EmulsiFlex C3 (3\u20134 passes). Lysates were centrifuged at 5000\u00d7g at 4\u00b0C for 10 min to remove unbroken cells. The supernatants were centrifuged in a Beckman Ti70 rotor (50,000 rpm, 30 min, 4\u00b0C) to pellet the membranes, which were solubilized in 10 ml TBS (25 mM Tris, pH 7.4137 mM NaCl, 3 mM KCl) containing 2% Triton X-100, 10 mM EDTA, and 10 \u03bcg/ml lysozyme for 30 min at room temperature. The ultracentrifugation step was repeated and the resulting supernatants were dialyzed overnight against cold buffer A (TBS/0.5% Triton X-100). BamAB was then further enriched by gel filtration on an S-200 column (GE Healthcare) equilibrated with buffer A. Partially purified BamAB and BamCDE were mixed in at least a 5:1 ratio and rotated in the presence of 2 ml Ni-NTA agarose for 1 hr at 4\u00b0C. The Ni-NTA beads were washed with one column volume buffer A containing 50 mM imidazole. The assembled Bam(AB)(CDE) complex was eluted with 3.5 ml buffer A containing 500 mM Imidazole and injected into an S-200 column equilibrated with TBS pH 8, 0.03% n-dodecyl-\u03b2-D-maltoside (DDM), 1 mM tris(2-carboxyethyl)phosphine (TCEP). The column was run at 0.5 ml/min and 1 ml fractions were collected. Portions of each fraction were analyzed by SDS-PAGE to identify fractions that contained complete Bam complexes. Typically 5\u20137 fractions were pooled and concentrated \u223c10-fold using Amicon Ultra-15 centrifugal filters (Millipore, Billerica, MA). The concentration of the purified Bam complex was then determined using the Bio-Rad DC Protein Assay following the manufacturer's instructions.\n\n### Expression and purification of SurA\n\nHis-tagged SurA was overproduced and purified essentially as described (Hagan et al., 2010). In brief, 1 l cultures of BL21(DE3) transformed with pSK257 were grown at 37\u00b0C to OD600 = 1 and shifted to 16\u00b0C. Cultures were incubated overnight after the addition of 0.1 mM IPTG (0.1 mM). Cells were then harvested as described above, resuspended in 10 ml cold 20 mM Tris HCl pH 8, and lysed using an EmulsiFlex C3. Lysates were clarified by centrifugation at 35,000\u00d7g at 4\u00b0C for 20 min. SurA was purified from the resulting supernatant using two consecutive rounds of TALON affinity chromatography (Clontech, Mountain View, CA) following the manufacturer's instructions. The purified protein was dialyzed overnight against 20 mM Tris\u2013HCl pH 8 to remove the imidazole.\n\n### Expression and purification of BamABCDE\n\nE. coli strain HDB150 (MC4100 ompT::spc \u0394araBAD leuD::kan) transformed with pJH114 was grown overnight at 37\u00b0C in LB containing 100 \u03bcg/ml ampicillin. The cells were washed and diluted 1:80 into 1\u20132 l of fresh medium. When the cultures reached OD600 = 0.5\u20130.6, 0.4 mM IPTG was added to induce the expression of bamABCDE. Cells were grown in the presence of the inducer for 1.5 hr and then harvested as described above. Cell pellets were resuspended in 10 ml/l cold 20 mM Tris\u2013HCl pH 8 and cells were lysed using an EmulsiFlex C3. Lysates were centrifuged at 6000\u00d7g at 4\u00b0C for 10 min. The supernatants were centrifuged in a Ti 70 rotor as described above to isolate total membranes. After the pellets were incubated in 10 ml/l cold 50 mM Tris pH 8, 150 mM NaCl, 1% DDM on ice for 1 hr the centrifugation step was repeated. Supernatants containing the soluble membrane proteins were then rotated in the presence of 2 ml/l Ni-NTA agarose for 1.5 hr at 4\u00b0C. Ni-NTA beads were washed with one column volume buffer B (50 mM Tris pH 8, 150 mM NaCl, 0.03% DDM) containing 50 mM imidazole. BamABCDE was then eluted in 3.5 ml buffer A containing 500 mM imidazole and injected onto a S-200 column equilibrated with buffer A. The column was run at 0.5 ml/min and 1 ml fractions were collected. Fractions that contained complete BamABCDE complexes were identified, pooled and concentrated, and the concentration of the purified protein was determined as described above. NativePAGE (Blue Native) 4\u201316% Bis-Tris gels (Life Technologies, Grand Island, NY) were run to verify that the complex was intact. The same protocol was used to produce and purify BamACDE, BamABDE and the BamCDE and BamAB subcomplexes used in Figure 3B and Figure 3\u2014figure supplement 2, except that cells were transformed with pJH115, pJH116, pJH117 or pJH118.\n\n### Reconstitution of the Bam complex into proteoliposomes\n\nE. coli phospholipids (E. coli Polar Lipid Extract, Avanti Polar Lipids, Alabaster, AL) were suspended in water at a concentration of 20 mg/ml and sonicated until well dispersed. A portion of the phospholipid suspension (40 \u03bcl) was added to 200 \u03bcl of the purified Bam(AB)(CDE) or BamABCDE (20 \u03bcM) and incubated on ice for 5 min. The mixture was then diluted with 4 ml of 20 mM Tris HCl pH 8 and incubated on ice for 30 min to reduce the detergent concentration and promote proteoliposome formation. The proteoliposomes were pelleted in a Beckman TLA100.4 rotor (50,000 rpm, 4\u00b0C, 30 min) and resuspended in 200 \u03bcl 20 mM Tris HCl pH 8. Aliquots of the proteoliposomes were flash frozen in liquid nitrogen and stored at \u221280\u00b0C.\n\n### Expression and purification of MSP1D1\n\nBL21(DE3) transformed with pMSP1D1 (Denisov et al., 2004) were grown in 1 l cultures at 37\u00b0C, and 0.5 mM IPTG was added at OD600 = 0.7\u20130.8. Cultures were incubated for 3 hr after the addition of the inducer. Cells were harvested, resuspended in 10 ml cold 20 mM Tris\u2013HCl pH 8 and lysed as described above, and lysates were centrifuged at 35,000\u00d7g at 4\u00b0C for 20 min. Clarified supernatants were mixed with 2 ml NiNTA agarose and rotated for 1.5 hr at 4\u00b0C. The beads were washed with one column volume buffer D (40 mM Tris HCl pH 8, 300 mM NaCl) containing 50 mM imidazole. MSP1D1 was then eluted with 5 ml buffer D containing 500 mM imidazole and dialyzed overnight against cold buffer E (20 mM Tris HCl pH 7.4, 100 mM NaCl, 0.5 mM EDTA). The purified protein was then flash frozen and stored at \u221280\u00b0C. The concentration of MSP1D1 was determined spectrophotometrically using a previously determined \u03b5280 value (http://sligarlab.life.uiuc.edu/nanodisc/protocols.html). Before the protein was used to assemble nanodiscs it was diluted to 0.3 mM in TSGD buffer (50 mM Tris HCl pH 8, 100 mM NaCl, 0.03% DDM, 10% glycerol) (Bao et al., 2012).\n\n### Reconstitution of the Bam complex into nanodiscs\n\nInitially 10\u201315 ml (dry volume) Bio-Beads (Bio-Beads SM-2 Adsorbent, Bio-Rad, Hercules, CA) were washed and stored at 4\u00b0C in TS buffer (50 mM Tris HCl pH 8, 50 mM NaCl) as previously described (Bao et al., 2012). Nanodisc reconstitution was performed in a final volume of 300 \u03bcl essentially as described (Bao et al., 2012) by adding 6 \u03bcM purified Bam complex, 18 \u03bcM MSP1D1 and 360 \u03bcM phospholipids (E. coli Polar Lipid Extract, Avanti Polar Lipids) to TSGD buffer. The mixture was then incubated with Bio-Beads (50 \u03bcl) overnight at 4\u00b0C on a rocking platform. The Bio-Beads were then allowed to settle out, and the supernatant was loaded onto a Superdex 75 gel filtration column equilibrated with buffer F (50 mM Tris HCl pH8, 100 mM NaCl, 10% glycerol). The column was run at a flow rate was 0.5 ml/min, and 0.5 ml fractions were collected. Peak fractions were pooled and concentrated to a volume of 300 \u03bcl using Amicon Ultra-15 centrifugal filters.\n\n### Expression and purification of OM proteins\n\nOmpT and all EspP derivatives were synthesized without their signal peptides and purified from inclusion bodies. BL21(DE3) transformed with an appropriate plasmid were grown overnight at 37\u00b0C in LB containing 50 \u03bcg/ml kanamycin and diluted 1:80 into 1 l fresh medium. When the cultures reached OD600 = 0.7, 0.5 mM IPTG was added. The cultures were incubated in the presence of the inducer for 3 hr. The cells were then harvested, resuspended in 10 ml cold TBS, and lysed as described above. Lysates were centrifuged at 5000\u00d7g at 4\u00b0C for 10 min. Pellets containing the inclusion bodies were resuspended in 10 ml TBS and washed twice by repeating the centrifugation step. After the final wash, pellets were resuspended in 5 ml 8 M urea and incubated at room temperature for 1 hr. Samples were then chilled briefly on ice and centrifuged in a Beckman TLA100.4 rotor (26,000 rpm, 4\u00b0C, 20 min). The concentration of the overexpressed OM proteins, which were highly enriched in the supernatants, were determined using the Bio-Rad DC Protein Assay.\n\n### OmpT folding assays\n\nThe folding of OmpT was monitored by slightly modifying a previously described assay (Hagan et al., 2010). OmpT was diluted from a 293 \u03bcM stock to a final concentration of 20 \u03bcM and incubated with SurA (final concentration 140 \u03bcM) in 50 \u03bcl 20 mM Tris pH 6.5 for 10 min at room temperature. The Bam complex and the fluorogenic peptide Abz-Ala-Arg-Arg-Ala-Tyr(NO2)-NH2 (New England Peptide, Gardner, MA) were diluted in 50 \u03bcl of the same buffer to a final concentration of 16 \u03bcM and 2 mM, respectively. The two sub-reactions were then mixed together and the increase in fluorescence at 30\u00b0C was monitored on a Spectramax M5 fluorescent plate reader for 1 hr with readings every 20 s. Fluorescence emission was recorded at 430 nm following excitation at 325 nm.\n\n### EspP assembly assays\n\nAn appropriate EspP derivative, SurA and proteoliposomes containing Bam complex were added successively to 20 mM Tris HCl pH 8. Reaction components were mixed after each addition. In the experiment shown in Figure 3\u2014figure supplement 3, Skp (obtained as a highly purified native trimer from MyBioSource.com, San Diego, CA) was added at the indicated concentration before SurA. In general the final concentration of reaction components was 0.1 \u03bcM EspP (diluted from a 6 \u03bcM stock solution in 8 M urea), 1 \u03bcM SurA and 0.2 \u03bcM Bam complex. In the experiments shown in Figures 6 and 7 and Figure 7\u2014figure supplement 1, the EspP and SurA concentrations were raised to 0.2 \u03bcM and 2 \u03bcM, respectively. All assembly reactions were performed at 30\u00b0C. At each time point, aliquots were removed and either mixed with an equal volume of 2\u00d7 SDS-PAGE sample buffer or incubated on ice for 5 min with PK (5 \u03bcg/ml). In some experiments, 1% DDM was added prior to PK treatment. Protease digestions were stopped by the addition of 1 mM PMSF and 2\u00d7 SDS-PAGE sample buffer. To assess the sensitivity of the EspP \u03b2 domain to SDS denaturation, half of each sample was heated at 95\u00b0C for 5 min while the other half was maintained at room temperature. Proteins were resolved by SDS-PAGE and transferred to nitrocellulose using an iBlot apparatus (Life Technologies). Western blotting was conducted using antisera generated against an EspP C-terminal peptide (Szabady et al., 2005) or the HA (Y-11) peptide (Santa Cruz Biotechnology, Dallas, TX). Antibody-antigen complexes were detected by incubating filters with an IRDye 680-conjugated goat anti-rabbit antiserum and monitoring fluorescence at 700 nM using an Odyssey infrared imaging system (Licor, Lincoln, NE). Percent substrate cleavage at each time point was defined as 100 \u00d7 (cleaved \u03b2 domain/unprocessed substrate + cleaved \u03b2 domain).\n\n### SDS-PAGE\n\nNovex 8\u201316% minigels (Life Technologies) were used to monitor protein purifications and to resolve the products of all EspP assembly reactions.\n\n### Kinetic analysis of EspP assembly\n\nData from EspP assembly experiments was fit to single exponential and lag-phase kinetic models using KaleidaGraph 4.1 (Synergy Software, Reading, PA). The percent substrate cleavage at the 30 min time point was defined as maximum assembly and was used to determine a rate constant k1 (or two rate constants k1 and k2 for a sequential two-step model). As in classical enzyme kinetics, t1/2 = ln2/k.\n",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "856d9230-f9b4-44b1-86ca-50c2e0fe2f94",
+      "submission_id": "67aa8b15-e7b0-4abe-89a7-a143f1dfa311",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ramanujan S Hegde, MRC Laboratory of Molecular Biology , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04234.021](https://doi.org/10.7554/eLife.04234.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cReconstitution of bacterial autotransporter assembly using purified components\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript was felt to be an important advance that provides new insights into autotransporter assembly and opens up new directions for future study. The topic is important, and the results were judged to be of interest to the wide readership of eLife. Minor suggestions for improvement are provided in the unedited referee comments below. These can all be handled with changes to the manuscript text and do not appear to require additional experimental work. Based on these comments, I anticipate you should have no difficulty preparing a revised manuscript that should be acceptable for publication in eLife. We look forward to receiving the revision.\n\nReviewer #1:\n\nThis carefully performed and well written study describes the reconstitution of autotransporter assembly and function with purified factors composed of the Bam complex and SurA. The advance in this paper lies partially in its technical aspects and partially in the conceptual insights. The technical advance relates to the optimization of highly functional Bam complex purification and reconstitution, while the conceptual advances relate to defining the minimal factors for autotransporter assembly and resolving key issues such as lack of an energy requirement. There is little to criticize about the experiments shown in this study, and the technical advance should now make it possible to perform detailed mechanistic analysis, for example by applying biophysical assays for different steps and interactions in the pathway. The insights into autotransporter assembly appear to largely support contemporary models based on earlier in vivo and structural work.\n\nMinor comments:\n\n1) Is it worth including BamC and BamD in the diagram in Figure 1C?\n\n2) In the longest two constructs in Figure 4, the folded beta domain band is apparently confounded by a co-migrating background band, but only in the zero timepoint. This is worth pointing out so a reader isn't confused. Also, why does it disappear?\n\n3) In some of the experiments with longer passengers, the starting protein preparation is a bit heterogeneous (e.g., Figure 4 or Figure 6). Do the authors know if these are N- or C-terminal truncations? How then do the authors know that the beta domain is arising only from the full length product?\n\n4) In Figure 7, the passenger band in the HA blot seems to appear slightly before the beta domain. It may be worth plotting both on the same graph and explaining this apparent discrepancy with the model of passenger cleavage only occurring after beta domain assembly.\n\nReviewer #2:\n\nAutotransporters are outer membrane proteins composed of a beta-barrel domain that anchors them to the outer membrane and a passenger domain that is translocated into the environment. This architecture led to models postulating that the beta-barrel domain was the translocator for the passenger domain and that the folding of the passenger domain drove translocation. The dependence of autotransporter biogenesis on the Bam (beta-barrel assembly machine) complex shifted the field of autotransporter biogenesis away from these models. Recently, the Bernstein lab has proposed a model stating that the beta-barrel domain is inserted in the outer membrane by the Bam complex and that the translocation of the passenger domain involves Bam and an intermediate in the folding of the beta-barrel domain. Furthermore, they have also proposed that the energy driving translocation is provided in part by the folding of the passenger domains and uncharacterized interactions involving acidic residues in the passenger domain. Much of this model is based on cross-linking experiments, which can be hard to interpret. In addition, it was not clear if other factors assist in this process. Here, using an in vitro reconstitution system, the Bernstein lab shows that the chaperone SurA and the Bam complex are required and sufficient for the assembly of the EspP autotransporter into proteoliposomes and nanodiscs. This is a major accomplishment and a significant contribution to the field that can be used to study the mechanistic details of autotransporter biogenesis. Indeed, the authors perform kinetic measurements and conclude that the assembly of the beta-barrel domain is the rate-limiting step in the biogenesis of this autotransporter. These findings are consistent with their aforementioned model of translocation of the passenger domain occurring during the assembly of the beta-domain.\n\nOverall, the manuscript is well written, the data are of the very high quality, and the work constitutes solid step forward in autotransporter biogenesis research. Well done.\n\nMinor comments:\n\nThe only minor issue I have with this work refers to the fact that the authors highlight the development of a novel method to purify a highly active form of the Bam complex (e.g., in the Abstract). Their new method is based on the co-expression and co-purification of all 5 components of the Bam complex, as opposed to the separate expression of two sub-complexes of two and three Bam members that are later assembled together. It is clear that in their hands their new method yields a more active Bam complex. I assume this is a reproducible finding across different preparations, but I am not sure if this is a lab-specific phenomenon or not. I agree with the two possible explanations (technical issue vs biological significant) given in the last paragraph of the Discussion, although I recommend the authors remove the last sentence as it is based on being unable to detect something. Their comparison of the two methods should remain in the manuscript but I suggest that the authors tone down the development of a novel method (for example, remove the last sentence of the Abstract).\n\nReviewer #3:\n\nThis manuscript by Roman-Hernandez, Peterson & Bernstein describes experiments that show that the Bam complex plus SurA are sufficient for assembly of a model autotransporter protein (EspP) into (outer) membranes. The authors describe a method for producing a purified Bam complex that has increased function over Bam complexes produced using previous purification/reconstitution methods. They use this Bam complex with purified SurA to demonstrate that these proteins are sufficient for assembly of EspP proteins into proteoliposomes and PK-digestion experiments provide evidence that the passenger domains are translocated across the membranes. The results demonstrate that no external energy is needed for the assembly/translocation process. The results are supported by experiments using nanodiscs and the nanodisc experiments provide compelling evidence that a single copy of the Bam complex is sufficient to translocate EspP. The manuscript is extremely well written and easy to follow, which is especially commendable given the complexity of the experiments and the data. The experimental design is appropriate for the questions being addressed, appropriate controls were included, and conclusions drawn were justified by the data. The results represent a large step forward in understanding how proteins of the autotransporter family are inserted into the outer membrane in their proper orientation and in membrane protein biogenesis in general. The results, and the approaches used in this manuscript, will be of interest to a broad audience.\n\nSpecific criticism:\n\n1) The Results described in the section \u201c\u2026the introduction of a short linker into EspP\u2026\u201d are somewhat unsatisfying. Up to this point in the manuscript, the data suggest that the in vitro system reflects what happens in vivo. However, here, two proteins that show altered or impaired translocation in vivo are able to be assembled/translocated in vitro almost as efficiently as 'wild-type' proteins. Do these results mean that the in vitro system does not accurately reflect what is happening in vivo? The authors touch on this point only briefly in their discussion \u2013 I think this point should be expanded a bit.\n\nMinor criticisms:\n\n1) In the Introduction, the authors discuss autotransporter proteins as if they were all virulence factors. Although most that have been studied do play roles in pathogenesis, analyses have been skewed by the fact that most bacteria in which AT proteins have been studied are pathogens. It is highly likely that many, if not most, AT proteins perform other functions (and hence the authors' work is more broadly relevant than suggested by the Introduction).\n\n2) The authors should add a reference to the new paper by Noinaj et al in Structure. (Also note that Buchanan was misspelled in the Noinaj et al (2013) reference.)\n",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eceb00e2-a4bf-496c-969d-88dc83c3de74",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C1",
+      "claim": "Autotransporters are a superfamily of bacterial virulence factors consisting of an N-terminal extracellular ('passenger') domain and a C-terminal \u03b2 barrel ('\u03b2') domain that resides in the outer membrane (OM).",
+      "claim_type": "EXPLICIT",
+      "source": "Autotransporters are a superfamily of bacterial virulence factors consisting of an N-terminal extracellular ('passenger') domain and a C-terminal \u03b2 barrel ('\u03b2') domain that resides in the outer membrane (OM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about autotransporters that represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "dffa4958-139a-41c9-b33b-872678e8d196",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C2",
+      "claim": "A conserved OM protein insertase (the Bam complex) and a molecular chaperone (SurA) are both necessary and sufficient to promote the complete assembly of the Escherichia coli O157:H7 autotransporter EspP in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that a conserved OM protein insertase (the Bam complex) and a molecular chaperone (SurA) are both necessary and sufficient to promote the complete assembly of the Escherichia coli O157:H7 autotransporter EspP in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "61a51011-f52d-4e46-b28a-9f15a0ae1462",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C3",
+      "claim": "The membrane integration of the \u03b2 domain is the rate-limiting step in autotransporter assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the membrane integration of the \u03b2 domain is the rate-limiting step in autotransporter assembly and that passenger domain translocation does not require the input of external energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by kinetic analysis data presented in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "9a2d8d2e-e7d9-425d-bb70-06c7f4fbc294",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C4",
+      "claim": "Passenger domain translocation does not require the input of external energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the membrane integration of the \u03b2 domain is the rate-limiting step in autotransporter assembly and that passenger domain translocation does not require the input of external energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the successful reconstitution of autotransporter assembly in vitro without ATP or membrane potential.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "f3648bf1-fe13-4d9b-9ed4-f8a7826b3ff0",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C5",
+      "claim": "Autotransporter assembly is catalyzed by a single copy of the Bam complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, experiments using nanodiscs strongly suggest that autotransporter assembly is catalyzed by a single copy of the Bam complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from nanodisc reconstitution experiments shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "f0f69f38-c030-4c8e-8852-9acce53d7e4f",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C6",
+      "claim": "The autotransporter (type Va) pathway is the most widespread virulence factor secretion pathway in Gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The autotransporter (type Va) pathway is the most widespread virulence factor secretion pathway in Gram-negative bacteria (Leyton et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Leyton et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "5b4b8015-ad3b-45df-9f61-c5ef72a5a60a",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C7",
+      "claim": "Passenger domains vary widely in sequence and size (\u223c20\u2013400 kD), but almost always form an unusual repetitive structure known as a \u03b2 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Passenger domains vary widely in sequence and size (\u223c20\u2013400 kD), but almost always form an unusual repetitive structure known as a \u03b2 helix (Junker et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Junker et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "ecf3a354-3c17-4cb3-9ff8-6eddc253bf3e",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C8",
+      "claim": "\u03b2 domains are typically \u223c30 kD in size and fold into a \u03b2 barrel structure.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2 domains are typically \u223c30 kD in size and, like the vast majority of bacterial integral OM proteins, fold into a \u03b2 barrel structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about \u03b2 domain structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "8d79290f-7914-4201-bc13-db0c775a991a",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C9",
+      "claim": "The structures of all of the \u03b2 domains that have been solved to date are nearly superimposable.",
+      "claim_type": "EXPLICIT",
+      "source": "While the sequences of \u03b2 domains are also very heterogeneous, the structures of all of the \u03b2 domains that have been solved to date are nearly superimposable (Oomen et al., 2004; Barnard et al., 2007; van den Berg, 2010; Zhai et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "49599b25-d2e6-48dc-9540-6541b952b964",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C10",
+      "claim": "After autotransporters are translocated across the inner membrane (IM) through the Sec complex they interact with molecular chaperones that presumably maintain them in an assembly-competent state.",
+      "claim_type": "EXPLICIT",
+      "source": "After autotransporters are translocated across the inner membrane (IM) through the Sec complex they interact with molecular chaperones that presumably maintain them in an assembly-competent state (Ieva and Bernstein, 2009; Ruiz-Perez et al., 2009; Ieva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "4442ff1a-d31b-413a-8b57-f831c33ed64e",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C11",
+      "claim": "The \u03b2 domain is targeted to the Bam complex, an essential heterooligomer consisting of an integral OM protein (BamA) and four lipoproteins (BamBCDE) that catalyzes the membrane insertion of \u03b2 barrel proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently the \u03b2 domain is targeted to the Bam complex, an essential heterooligomer consisting of an integral OM protein (BamA) and four lipoproteins (BamBCDE) that catalyzes the membrane insertion of \u03b2 barrel proteins (Voulhoux et al., 2003; Wu et al., 2005; Sauri et al., 2009; Hagan et al., 2010; Ieva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "dd97a36f-1c20-46a5-a3b9-aff50f4475e2",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C12",
+      "claim": "X-ray crystallographic analysis suggests that the BamA \u03b2 barrel domain is unstable and may open laterally to allow the escape of client proteins into the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray crystallographic analysis suggests that the BamA \u03b2 barrel domain is unstable and may open laterally to allow the escape of client proteins into the lipid bilayer (Noinaj et al., 2013, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "e1abe0d1-453c-4f9e-81b8-84e645d50784",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C13",
+      "claim": "The passenger domain is translocated across the OM in a C-to-N-terminal fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it has been shown that the passenger domain is translocated across the OM in a C-to-N-terminal fashion (Ieva and Bernstein, 2009; Junker et al., 2009), the mechanism of translocation is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "1bb6eb3d-18e6-4c35-81f0-25c7af518964",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C14",
+      "claim": "Deletion of the \u03b2 domain abolishes passenger domain translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the observation that deletion of the \u03b2 domain abolishes passenger domain translocation, it was originally proposed that the \u03b2 domain serves as the transport channel for the passenger domain (whence the name 'autotransporter') (Pohlner et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pohlner et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "cefff68f-f6e4-4ed3-8dc1-c81e29aee5aa",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C15",
+      "claim": "Upon completion of translocation the two domains are connected by an \u03b1-helical linker that is embedded inside the \u03b2 domain pore.",
+      "claim_type": "EXPLICIT",
+      "source": "At first glance, this hypothesis seems to be supported by crystallographic studies showing that upon completion of translocation the two domains are connected by an \u03b1-helical linker that is embedded inside the \u03b2 domain pore (Oomen et al., 2004; Barnard et al., 2007; van den Berg, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "a1c36181-fa90-4597-a560-1a66481ab4f6",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C16",
+      "claim": "The \u03b2 domain pore is only \u223c10 \u00c5 in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The same studies, however, revealed that the \u03b2 domain pore is only \u223c10 \u00c5 in diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystallographic data from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "1c6d638c-158c-44c7-9592-5011f40dabb7",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C17",
+      "claim": "The polypeptide that resides inside the \u03b2 domain forms an \u03b1 helix prior to the completion of translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, available evidence indicates that the polypeptide that resides inside the \u03b2 domain forms an \u03b1 helix prior to the completion of translocation (Ieva et al., 2008; Peterson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "e37127eb-8906-432d-8ed8-c6d992c189dc",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C18",
+      "claim": "Small folded polypeptides have been shown to be secreted efficiently by the autotransporter pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, small folded polypeptides have been shown to be secreted efficiently by the autotransporter pathway and a subset of naturally occurring passenger domains undergo disulfide bonding in the periplasm (Skillman et al., 2005; Jong et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "add99245-219f-4df5-99eb-3cdad0291c01",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C19",
+      "claim": "A subset of naturally occurring passenger domains undergo disulfide bonding in the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, small folded polypeptides have been shown to be secreted efficiently by the autotransporter pathway and a subset of naturally occurring passenger domains undergo disulfide bonding in the periplasm (Skillman et al., 2005; Jong et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "1aa1a2e1-897d-412a-b44f-5e58ae3d0c61",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C20",
+      "claim": "BamA has been shown to interact with the passenger domain during the translocation reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, BamA has been shown to interact with the passenger domain during the translocation reaction (Ieva and Bernstein, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "20ab3d6d-e5c8-4c19-8fea-69df9b74d61e",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C21",
+      "claim": "The \u03b2 domain does appear to play a role in translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the \u03b2 domain does appear to play a role in translocation (Saur\u00ed et al., 2011; Pavlova et al., 2013), these and other results strongly suggest that autotransporter assembly is more complex than originally envisioned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "2a9213ed-5529-4e8a-8733-a8bcf056b78a",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C22",
+      "claim": "The periplasm is devoid of ATP and there is no membrane potential across the bacterial OM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most protein translocation reactions require external energy in the form of ATP or a membrane potential, the periplasm is devoid of ATP and there is no membrane potential across the bacterial OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial cell structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "6ae909cb-88ce-4a5e-90e3-780c067c01ee",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C23",
+      "claim": "The sequential folding of segments of the \u03b2 helix in the extracellular space drives translocation and prevents retrograde movement into the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain the energetics of secretion, it has been proposed that the sequential folding of segments of the \u03b2 helix in the extracellular space drives translocation and prevents retrograde movement into the periplasm (Klauser et al., 1992; Junker et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from previous studies cited.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "99c3a184-3615-4a7b-a065-3f050d7e3e7a",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C24",
+      "claim": "Mutations that impair the folding of C-terminal segments of two different passenger domains significantly reduce the efficiency of secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this vectorial folding model, mutations that impair the folding of C-terminal segments of two different passenger domains significantly reduce the efficiency of secretion (Peterson et al., 2010; Renn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "c5a16e2b-2da6-425d-8b13-fff5131fecf5",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C25",
+      "claim": "Mutations that perturb the folding of medial and N-terminal segments of the passenger domain produce only a modest translocation defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that perturb the folding of medial and N-terminal segments of the passenger domain, however, produce only a modest translocation defect (Kang'ethe and Bernstein, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "2126bfe3-e2df-4a3d-8d7b-ca0416107928",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C26",
+      "claim": "The intrinsically disordered receptor domain (RD) of the Bordetella pertussis RTX toxin has been shown to be secreted efficiently by the autotransporter pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the intrinsically disordered receptor domain (RD) of the Bordetella pertussis RTX toxin has been shown to be secreted efficiently by the autotransporter pathway (Kang'ethe and Bernstein, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "57a3aa8c-31ee-4f9d-9dad-014f00e3534a",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C27",
+      "claim": "The presence of a large number of acidic residues is critical for the secretion of the RD.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the presence of a large number of acidic residues is critical for the secretion of the RD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous findings about the RD domain.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "564467a7-55c3-4baa-bebb-a146aa436683",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C28",
+      "claim": "Naturally occurring passenger domains are predominantly acidic.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation, together with the finding that naturally occurring passenger domains are predominantly acidic, suggests that charge interactions may play a significant role in driving the translocation reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about passenger domain composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "9610f7da-4afa-4786-8f4a-2e29c50403a4",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C29",
+      "claim": "Following the completion of translocation, the passenger domain of EspP and other members of the SPATE family is released in an unusual intrabarrel cleavage reaction that requires accurate folding of the \u03b2 domain and precise positioning of the passenger domain-\u03b2 domain junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the completion of translocation, the passenger domain of EspP and other members of the SPATE (serine protease autotransporters of Enterobacteriaceae) family is released in an unusual intrabarrel cleavage reaction that requires accurate folding of the \u03b2 domain and precise positioning of the passenger domain-\u03b2 domain junction (Dautin et al., 2007; Barnard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "4b9fe5a0-f29f-4149-bee1-cb1a73827af6",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C30",
+      "claim": "The insertion of small E. coli \u03b2 barrel proteins such as OmpT and OmpA into proteoliposomes can be catalyzed by the purified Bam complex and the periplasmic chaperone SurA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was previously shown that the insertion of small E. coli \u03b2 barrel proteins such as OmpT and OmpA into proteoliposomes can be catalyzed by the purified Bam complex and the periplasmic chaperone SurA (Hagan et al., 2010; Hagan and Kahne, 2011; Hagan et al., 2013), we did not observe assembly of EspP using the same methodology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "33f8ef2a-ceaf-45b6-b24c-f3ba319bead7",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C31",
+      "claim": "Large N-terminal segments of autotransporter passenger domains can be deleted without affecting the integration of the \u03b2 domain into the OM or the secretion of the remaining passenger domain fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been known that large N-terminal segments of autotransporter passenger domains can be deleted without affecting the integration of the \u03b2 domain into the OM or the secretion of the remaining passenger domain fragment (Dautin and Bernstein, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "2e3aeba0-65be-4c11-93a0-eff407cf1c71",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C32",
+      "claim": "The native EspP passenger domain is 968 residues in length.",
+      "claim_type": "EXPLICIT",
+      "source": "The native EspP passenger domain is 968 residues in length (Figure 1A), but a derivative that contains only 26 residues of the \u223c28 residue C-terminal segment that reside inside the \u03b2 domain in an \u03b1-helical conformation (EspP\u03945) is assembled as efficiently as the wild-type protein in vivo (Pavlova et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "5f03c716-2b31-4be3-aa99-baeb2e6a7264",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C33",
+      "claim": "EspP\u03945 is assembled as efficiently as the wild-type protein in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The native EspP passenger domain is 968 residues in length (Figure 1A), but a derivative that contains only 26 residues of the \u223c28 residue C-terminal segment that reside inside the \u03b2 domain in an \u03b1-helical conformation (EspP\u03945) is assembled as efficiently as the wild-type protein in vivo (Pavlova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pavlova et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "c03ecbeb-11bc-465b-b74e-15ceb5e0ed43",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C34",
+      "claim": "The modification or deletion of residues in the \u03b1-helical segment can profoundly perturb the folding and integration of the \u03b2 domain into the OM and/or the proteolytic release of the passenger domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The modification or deletion of residues in the \u03b1-helical segment, however, can profoundly perturb the folding and integration of the \u03b2 domain into the OM and/or the proteolytic release of the passenger domain, which requires precise alignment of the cleavage junction with key catalytic residues (Dautin et al., 2007; Ieva et al., 2008; Barnard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "cbbd52e8-a651-413a-908b-d31c25ca029e",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C35",
+      "claim": "The accurate assembly of EspP(46+\u03b2) results in the proteolytic release of the 46 residue passenger domain and the accumulation of a folded \u223c30 kD \u03b2 domain that is resistant to SDS denaturation unless heated.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected that the accurate assembly of EspP(46+\u03b2) would result in the proteolytic release of the 46 residue passenger domain and the accumulation of a folded \u223c30 kD \u03b2 domain that, as previously shown, is resistant to SDS denaturation unless heated (Skillman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an expectation based on previous findings cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "fe49c215-6071-4ed4-8236-b5231347bd2f",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C36",
+      "claim": "OmpT folds into a stable structure that is enzymatically active and resistant to SDS denaturation in the presence of proteoliposomes and a molar excess of SurA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of the proteoliposomes and a molar excess of SurA, denatured OmpT folds into a stable structure that is enzymatically active and resistant to SDS denaturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the expected outcome of the OmpT folding assay.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "e5f4c6c8-310e-4cb5-a08a-61bce00eb831",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C37",
+      "claim": "BamABCDE stimulated the assembly of EspP(46+\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that BamABCDE also stimulated the assembly of EspP(46+\u03b2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "f1ff3520-fa11-46a8-aa0f-960d6698966b",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C38",
+      "claim": "A rapidly migrating (\u223c27 kD) band that corresponds to the folded form of the free EspP \u03b2 domain appeared within 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "A rapidly migrating (\u223c27 kD) band that corresponds to the folded form of the free EspP \u03b2 domain appeared within 5 min and was more prominent at later time points when the samples were not heated (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the Western blot data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "ba0a13f7-4e4b-47f2-a8b5-5c9459e5658a",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C39",
+      "claim": "No proteolytic processing was observed if either SurA or BamABCDE was omitted from the reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "No proteolytic processing was observed if either SurA or BamABCDE was omitted from the reaction or if BamAB or BamCDE subomplexes were used in place of the holocomplex (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "0e8a676e-2d26-428c-892f-2673316396c0",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C40",
+      "claim": "BamABDE and BamACDE both promoted the assembly EspP(46+\u03b2), but less effectively than BamABCDE.",
+      "claim_type": "EXPLICIT",
+      "source": "BamABDE and BamACDE both promoted the assembly EspP(46+\u03b2), but less effectively than BamABCDE (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "3a1b3b60-4676-496b-aa4b-ea23a49d0b8b",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C41",
+      "claim": "The addition of purified Skp to reactions containing BamABCDE and SurA inhibited EspP(46+\u03b2) assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the addition of purified Skp to reactions containing BamABCDE and SurA inhibited EspP(46+\u03b2) assembly (Figure 3\u2014figure supplement 3) and ATP (0.1 mM) blocked assembly altogether (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "61d72d03-a568-4a6e-a52c-2650100e2cc3",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C42",
+      "claim": "ATP (0.1 mM) blocked assembly altogether.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the addition of purified Skp to reactions containing BamABCDE and SurA inhibited EspP(46+\u03b2) assembly (Figure 3\u2014figure supplement 3) and ATP (0.1 mM) blocked assembly altogether (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "d3f69f73-28e6-4850-9bc7-62a86ade2c3b",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C43",
+      "claim": "EspP derivatives that have passenger domains ranging in size from 72\u2013734 residues were all processed with approximately the same efficiency as EspP(46+\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "As Western blot analysis using the anti-EspP C-terminal antiserum indicated, EspP derivatives that have passenger domains ranging in size from 72\u2013734 residues were all processed with approximately the same efficiency as EspP(46+\u03b2) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "608d977c-e45e-4797-b369-eab02b1fe1ce",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C44",
+      "claim": "After incubating EspP(96+\u03b2) with proteoliposomes containing BamABCDE and SurA for 30 min, the cleaved \u03b2 domain was both subject to heat denaturation in SDS and resistant to proteinase K (PK) digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially we found that after incubating EspP(96+\u03b2) with proteoliposomes containing BamABCDE and SurA for 30 min, the cleaved \u03b2 domain was both subject to heat denaturation in SDS and resistant to proteinase K (PK) digestion (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "2a956864-86d8-482d-8318-4ce80cebc7f0",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C45",
+      "claim": "The \u03b2 domain was not only properly folded, but also inserted into the proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This result provided direct evidence that the \u03b2 domain was not only properly folded, but also inserted into the proteoliposomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the PK resistance data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "705d77fc-1d04-496c-b572-1faa05e623e6",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C46",
+      "claim": "The passenger domain was translocated into the lumen of the proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that the \u223c35 kDa polypeptide was resistant to PK digestion unless detergent was added showed that the passenger domain was translocated into the lumen of the proteoliposomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the PK resistance data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "3bf81257-7deb-487c-9330-de485c0dbb59",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C47",
+      "claim": "The epitope tag is the last segment of the protein that traverses the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the epitope tag is the last segment of the protein that traverses the membrane, these results confirm that the translocation reaction went to completion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known directionality of translocation and the position of the HA tag.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "d602d0c0-c369-4dfa-87fe-0916625553a6",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C48",
+      "claim": "EspP(HA-251+\u03b2) was processed at a very similar rate to EspP(46+\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, EspP(HA-251+\u03b2) was processed at a very similar rate (Figure 6C, top and Figure 6D, blue curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the kinetic data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "bd19dccf-062e-4a43-8f0a-fe70ae5b0a13",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C49",
+      "claim": "The rate constants obtained by fitting the assembly data for the two EspP derivatives to either a single exponential or two-step model were nearly identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed the rate constants obtained by fitting the assembly data for the two EspP derivatives to either a single exponential or two-step model were nearly identical (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on kinetic analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "fd97476e-02c8-4e65-ad17-8d2dca2b8ce1",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C50",
+      "claim": "A PK-resistant \u223c30 kD polypeptide that corresponds to the cleaved passenger domain accumulated in parallel with the cleaved \u03b2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the EspP(HA-251+\u03b2) derivative, a PK-resistant \u223c30 kD polypeptide that corresponds to the cleaved passenger domain accumulated in parallel with the cleaved \u03b2 domain (Figure 6E, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "8f8ef996-630d-427a-b743-947bda987c20",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C51",
+      "claim": "The G1066A mutation caused a similar delay in the assembly of both EspP derivatives in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation caused a similar delay in the assembly of both EspP derivatives in vitro (Figure 6 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the kinetic data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "3daf079b-0401-4159-9bb1-23e79c89de80",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C52",
+      "claim": "Defects in the folding of the \u03b2 domain affect the ability of the Bam complex to catalyze subsequent steps in EspP assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation corroborates the conclusion that defects in the folding of the \u03b2 domain affect the ability of the Bam complex to catalyze subsequent steps in EspP assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the G1066A mutation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "2e5eab6b-c8f7-4c23-acbf-20fae86cf04f",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C53",
+      "claim": "EspP(HA-714+\u03b2) was processed only slightly more slowly than EspP(46+\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the presence of a much larger passenger domain, EspP(HA-714+\u03b2) was processed only slightly more slowly than EspP(46+\u03b2) (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the kinetic data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "9275d466-2670-4695-b66b-4a3adb17fa7c",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C54",
+      "claim": "Passenger domain translocation is relatively fast, and the assembly of the \u03b2 domain is the rate-limiting step in autotransporter biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results indicate that passenger domain translocation is relatively fast, and that the assembly of the \u03b2 domain is the rate-limiting step in autotransporter biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the kinetic data in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "e5e48fdf-0726-432f-a9d4-a42662b7498f",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C55",
+      "claim": "The introduction of a short linker into EspP(HA-714+\u03b2) that impairs passenger domain folding and stalls translocation in vivo only modestly affected assembly in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, the introduction of a short linker into EspP(HA-714+\u03b2) that impairs passenger domain folding and stalls translocation in vivo (Ieva and Bernstein, 2009) only modestly affected assembly in vitro (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "423b594f-0d9c-4e8a-b348-ca488bb74d65",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C56",
+      "claim": "In the absence of an exogenous energy source translocation is not driven exclusively by protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation, along with the finding that an EspP chimera containing a >200 residue intrinsically disordered passenger domain segment that is secreted efficiently in vivo could also assemble in the in vitro assay (Figure 7\u2014figure supplement 2), suggests that in the absence of an exogenous energy source translocation is not driven exclusively by protein folding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the data on folding-deficient and disordered passenger domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "66965ccf-6b80-4647-be39-bca6b111955d",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C57",
+      "claim": "Both EspP(46+\u03b2) and EspP(HA-251+\u03b2) were assembled into nanodiscs about as efficiently as they were assembled into proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis using the anti-EspP C-terminal antiserum revealed that both EspP(46+\u03b2) and EspP(HA-251+\u03b2) were assembled into nanodiscs about as efficiently as they were assembled into proteoliposomes (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "52a95777-71c4-414b-a9fc-602d619cc6ef",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C58",
+      "claim": "The curvature of the proteoliposome membrane is not itself required for the assembly process.",
+      "claim_type": "EXPLICIT",
+      "source": "These results not only provide evidence that a Bam complex monomer is sufficient to catalyze autotransporter assembly, but also show that the curvature of the proteoliposome membrane is not itself required for the assembly process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the successful assembly in nanodiscs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "bc583be2-26ba-47bf-b5d8-09c679c1964b",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C59",
+      "claim": "Passenger domain secretion does not require either an input of exogenous energy or the presence of IM proteins that transduce energy from the cytoplasm or the membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that passenger domain secretion does not require either an input of exogenous energy or the presence of IM proteins that transduce energy from the cytoplasm or the membrane potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the successful reconstitution with only purified components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "17a048fa-ecfe-487b-bb4b-3891937e62a7",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C60",
+      "claim": "ATP hydrolysis is required to drive protein translocation through the Sec complex in an analogous reconstituted assay system.",
+      "claim_type": "EXPLICIT",
+      "source": "The results are surprising because ATP hydrolysis is required to drive protein translocation through the Sec complex in an analogous reconstituted assay system (Brundage et al., 1990) and because other types of protein translocation reactions appear to require a significant energy expenditure (Alder and Theg, 2003; Shi and Theg, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "e6c60e71-7a75-4e9f-8549-a08df4d488c1",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C61",
+      "claim": "The folding of the passenger domain in the extracellular space has been shown to play a role in driving translocation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In the autotransporter pathway, the folding of the passenger domain in the extracellular space has been shown to play a role in driving translocation in vivo, and folding may also promote translocation in the in vitro assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous findings about the role of folding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "6ea2d3c1-a7fe-4c77-9ed9-1d099d270713",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C62",
+      "claim": "Electrostatic or other types of interactions between passenger domains and the Bam complex or membrane lipids may facilitate translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously suggested (Kang'ethe and Bernstein, 2013a), electrostatic or other types of interactions between passenger domains and the Bam complex or membrane lipids may facilitate translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion based on previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "bf4db01f-44e0-47fa-a7e4-6989d4412e28",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C63",
+      "claim": "The Bam complex might guide passenger domains along a low-energy pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the FimD protein that secretes type I pilus subunits, the Bam complex might also guide passenger domains along a low-energy pathway (Geibel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion based on analogy to FimD.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "1512339e-a0c5-40b1-b6ce-5c7605dcba08",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C64",
+      "claim": "The Bam complex might catalyze at least the initial stages of translocation and the assembly of the \u03b2 domain in a concerted fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the Bam complex might catalyze at least the initial stages of translocation and the assembly of the \u03b2 domain in a concerted fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "33b8a6ed-90d0-4c5a-928a-78613a94af41",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C65",
+      "claim": "Stalled translocation reactions can be restarted in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While the coupling of translocation to \u03b2 domain assembly might also explain the assembly of a folding-deficient mutant such as EspP(HA-714+\u03b2)586TEV in vitro, the observation that stalled translocation reactions can be restarted in vivo (Ieva and Bernstein, 2009; JHP and HDB, unpublished results) strongly suggests that energy can be harnessed after the insertion of the \u03b2 domain is largely complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation and unpublished results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "c92087ff-de74-4dc6-aa42-5db98006da1d",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C66",
+      "claim": "Pulse-chase labeling and photocrosslinking experiments have previously provided evidence that \u03b2 domain assembly is slower than passenger domain translocation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulse-chase labeling and photocrosslinking experiments have previously provided evidence that \u03b2 domain assembly is slower than passenger domain translocation in vivo (Ieva et al., 2011), but the interpretation of these experiments is complicated by the fact that the synthesis of the 1300 residue EspP protein is itself rather slow (\u223c45 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "4ba9ac67-81a8-4b40-a99b-153dbe504491",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C67",
+      "claim": "Long passenger domain segments fold slowly and consequently resist aggregation, at least in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation corroborates the conclusion that even long passenger domain segments fold slowly and consequently resist aggregation, at least in vitro (Junker et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "cb76193d-d3fd-4078-9dff-45c340ab17b5",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C68",
+      "claim": "The \u03b2 domain clearly interacts with Skp in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, given that the \u03b2 domain clearly interacts with Skp in vivo (Ieva et al., 2011; Pavlova et al., 2013), it is striking that the presence of the chaperone inhibited assembly in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "978eed6d-fc1a-4b64-8331-9f57b32b8dcd",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C69",
+      "claim": "BamABCDE was more active than Bam(AB)(CDE).",
+      "claim_type": "EXPLICIT",
+      "source": "It is striking that, at least in our hands, BamABCDE was more active than Bam(AB)(CDE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the OmpT folding assay data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "7de1da60-c5ae-4238-bc84-c8ffb36ddf02",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C70",
+      "claim": "The structure of the Bam complex assembled in vivo differs from that of the Bam complex reconstructed from BamAB and BamCDE subcomplexes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "While this disparity may simply be due to technical issues, our results also raise the possibility that the structure of the Bam complex assembled in vivo differs from that of the Bam complex reconstructed from BamAB and BamCDE subcomplexes in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the activity difference.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "46b14c0d-78d5-46a3-ae26-bd82b5726fd0",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C71",
+      "claim": "The Bam complex remains intact in vivo and does not undergo a dynamic cycle in which BamAB and BamCDE subcomplexes rapidly dissociate and reassociate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard it should be noted that in preliminary experiments we obtained evidence that the Bam complex remains intact in vivo and does not undergo a dynamic cycle in which BamAB and BamCDE subcomplexes rapidly dissocate and reassociate (JHP and HDB, unpublished results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on unpublished preliminary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "a1b33ac5-3936-4eac-b1c0-3a56f736ab95",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C72",
+      "claim": "EspP consists of a signal peptide (SP; residues 1\u201355), an extracellular ('passenger') domain (residues 56\u20131023) and a \u03b2 barrel ('\u03b2') domain (residues 1024\u20131300).",
+      "claim_type": "EXPLICIT",
+      "source": "(A) EspP consists of a signal peptide (SP; residues 1\u201355), an extracellular ('passenger') domain (residues 56\u20131023) and a \u03b2 barrel ('\u03b2') domain (residues 1024\u20131300) (Brunder et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1A, with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "a06b2482-4c43-49e4-8726-6c16c73c28ea",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C73",
+      "claim": "Most of the passenger domain forms a long \u03b2 helix, while the N-terminus (residues 56\u2013313) forms a discrete globular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "While most of the passenger domain forms a long \u03b2 helix, the N-terminus (residues 56\u2013313) forms a discrete globular domain (Khan et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1A, with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "752c34f2-bad8-4df2-aade-986681318cf3",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C74",
+      "claim": "Prior to the release of the passenger domain in an intrabarrel cleavage reaction, \u223c28 residues of the 46 residue passenger domain are embedded inside the \u03b2 domain pore.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Illustration of EspP(46+\u03b2). Prior to the release of the passenger domain in an intrabarrel cleavage reaction, \u223c28 residues of the 46 residue passenger domain are embedded inside the \u03b2 domain pore.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "766a1d0d-3f26-4472-85aa-976af0440c65",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C75",
+      "claim": "The EspP passenger domain is secreted in a hairpin conformation while distinct regions of the \u03b2 domain interact with BamA, BamB and BamD.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Available evidence indicates that the EspP passenger domain is secreted in a hairpin conformation while distinct regions of the \u03b2 domain interact with BamA, BamB and BamD (Ieva et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1C, with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "268fa54a-5297-45e5-9537-f1b393b5b96a",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C76",
+      "claim": "Proteolytic maturation and the release of the \u03b2 domain from the Bam complex both require the completion of translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "In any case, the finding that proteolytic maturation and the release of the \u03b2 domain from the Bam complex both require the completion of translocation (Peterson et al., 2010; Ieva et al., 2011; Pavlova et al., 2013) strongly suggests that the active site cannot form during the passage of the passenger domain across the OM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "254a444e-55b3-4049-94d2-ac2cb9fd1c51",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C77",
+      "claim": "The active site cannot form during the passage of the passenger domain across the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "In any case, the finding that proteolytic maturation and the release of the \u03b2 domain from the Bam complex both require the completion of translocation (Peterson et al., 2010; Ieva et al., 2011; Pavlova et al., 2013) strongly suggests that the active site cannot form during the passage of the passenger domain across the OM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from cited findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "72edefe4-4dc1-4257-b8df-738ee81d7beb",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C78",
+      "claim": "OmpT folded much more efficiently in the presence of BamABCDE than Bam(AB)(CDE).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the intensity of the fluorescent signal in the fluorogenic peptide cleavage assay indicated that OmpT folded much more efficiently in the presence of BamABCDE than Bam(AB)(CDE) (Figure 2E, compare green and purple curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "1e38817f-3ecf-430e-a067-d2d6e0f3c1f9",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C79",
+      "claim": "The activity of the Bam complex is optimized when all of the subunits are expressed together.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that the activity of the Bam complex is optimized when all of the subunits are expressed together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of BamABCDE and Bam(AB)(CDE) activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "e1bf69a7-07c6-4356-bfde-4ce15b380f1c",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C80",
+      "claim": "\u223c10\u201320% of the protein was typically assembled under our experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of the relative fluorescent signal produced by the denatured form of the EspP \u03b2 domain and unprocessed EspP(46+\u03b2) on Western blots indicated that \u223c10\u201320% of the protein was typically assembled under our experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the Western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "26babe2f-21cb-4c20-b9ed-a1b117f58b44",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C81",
+      "claim": "A moderate increase in efficiency was observed when the BamABCDE concentration was increased from 0.05 \u03bcM to 0.2 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "A moderate increase in efficiency was observed when the BamABCDE concentration was increased from 0.05 \u03bcM to 0.2 \u03bcM (the concentration used in the experiments described here), but no increase was observed at higher concentrations (Figure 3\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "051e7b31-56ee-434d-803c-86436bcb7b5a",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C82",
+      "claim": "If fresh substrate was added 5\u02b9 after the start of the incubation, the total yield of assembled EspP(46+\u03b2) increased in proportion to the amount of added substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, if we added fresh substrate 5\u02b9 after the start of the incubation, the total yield of assembled EspP(46+\u03b2) increased in proportion to the amount of added substrate (Figure 3\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "732d4b73-cd62-4dee-a0c0-2312d6900859",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C83",
+      "claim": "The Bam complex can catalyze multiple rounds of assembly in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with other evidence that the Bam complex can catalyze multiple rounds of assembly in vitro (Hagan and Kahne, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and the observation about substrate addition.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "e6e7087a-da5f-4301-aea5-55bcdc2cf6b5",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C84",
+      "claim": "The efficiency of EspP(46+\u03b2) assembly was limited by the inherent ability of the denatured protein to remain assembly competent after dilution out of 8 M urea.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of our results, it is likely that the efficiency of EspP(46+\u03b2) assembly was limited by the inherent ability of the denatured protein to remain assembly competent after dilution out of 8 M urea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the concentration dependence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "d356402d-0e43-42f0-b195-821b468a2f6c",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C85",
+      "claim": "Nanodiscs are stabilized by two copies of the scaffold protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Because nanodiscs are stabilized by two copies of the scaffold protein (Denisov et al., 2004), however, this observation is consistent with the prediction that they contained a single copy of the Bam complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Denisov et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "07aad310-9442-47f2-b76d-4663d1ff85c5",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C86",
+      "claim": "The nanodiscs produced a single band on Blue Native PAGE that migrated only slightly slower than a BamABCDE monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the nanodiscs produced a single band on Blue Native PAGE that migrated only slightly slower than a BamABCDE monomer (compare Figure 8C to Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the Blue Native PAGE data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "851dcb1f-0be2-4ae6-8ca3-82cb1231a899",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C87",
+      "claim": "The \u223c30 kDa passenger domain of EspP(HA-251+\u03b2) accumulated in parallel with the cleaved \u03b2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the non-vesicular nature of nanodiscs precluded assessment of passenger domain translocation using a PK-sensitivity assay, we found that the \u223c30 kDa passenger domain of EspP(HA-251+\u03b2) accumulated in parallel with the cleaved \u03b2 domain (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "49a7d925-b735-4850-a5a1-0a3d49e75341",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "claim_id": "C88",
+      "claim": "A Bam complex monomer is sufficient to catalyze autotransporter assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These results not only provide evidence that a Bam complex monomer is sufficient to catalyze autotransporter assembly, but also show that the curvature of the proteoliposome membrane is not itself required for the assembly process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the nanodisc assembly data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Bam complex (BamABCDE) and SurA are both necessary and sufficient to promote the complete assembly of EspP in vitro. BamABCDE stimulated assembly of EspP derivatives with passenger domains ranging from 46 to 734 residues, resulting in proteolytic processing, \u03b2 domain folding and membrane insertion, and passenger domain translocation into proteoliposomes. No assembly occurred when either SurA or BamABCDE was omitted, or when BamAB or BamCDE subcomplexes were used instead of the holocomplex. BamABCDE expressed as a single complex was more active than Bam(AB)(CDE) reconstituted from subcomplexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37-C39, C43-C46, C57, C78-C79 collectively demonstrate that BamABCDE and SurA are necessary and sufficient for EspP assembly through multiple lines of evidence: proteolytic processing (C38), requirement for both components (C39), assembly of various passenger domain sizes (C43), membrane insertion (C44-C45), translocation (C46), and superior activity of co-expressed BamABCDE (C78-C79). The data from Figures 3-5 and 8 provide strong converging support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "\u03b2 domain assembly is the rate-limiting step in autotransporter biogenesis. Kinetic analysis showed that EspP(46+\u03b2) and EspP(HA-251+\u03b2) were processed at nearly identical rates despite the 5-fold difference in passenger domain size. Even EspP(HA-714+\u03b2) with a much larger passenger domain was processed only slightly more slowly. A G1066A mutation that impairs \u03b2 domain folding caused similar delays in assembly of both small and large EspP derivatives, confirming that \u03b2 domain folding defects affect subsequent assembly steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C48-C54 provide strong kinetic evidence that \u03b2 domain assembly is rate-limiting. The similar assembly rates for derivatives with vastly different passenger domain sizes (C48-C49, C53), parallel accumulation of cleaved products (C50), and consistent effects of \u03b2 domain mutations across derivatives (C51-C52) all support this conclusion. The kinetic data in Figures 6-7 and Supplementary file 1 provide quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "70d80d5c-083e-4519-829a-79dbe9044302",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Passenger domain translocation does not require external energy input. Assembly was successfully reconstituted using only purified BamABCDE, SurA, and proteoliposomes without ATP or membrane potential. ATP (0.1 mM) actually blocked assembly. A folding-deficient mutant and an intrinsically disordered passenger domain chimera both assembled in vitro, suggesting translocation is not driven exclusively by protein folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C42, C55-C56, C59 demonstrate that external energy is not required for translocation. The successful reconstitution with purified components alone (C59), inhibition by ATP (C42), and assembly of folding-deficient/disordered constructs (C55-C56) provide strong evidence. However, the mechanism by which translocation occurs without energy input remains unclear, and alternative energy sources (electrostatic interactions, low-energy pathways) are speculated but not proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "ee98ac3b-18f1-4c21-b8cd-166406b17e41",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Autotransporter assembly is catalyzed by a single copy of the Bam complex. EspP derivatives were assembled into nanodiscs as efficiently as into proteoliposomes. Nanodiscs are stabilized by two copies of scaffold protein and produced a single band on Blue Native PAGE migrating slightly slower than a BamABCDE monomer, consistent with containing a single Bam complex. The passenger domain accumulated in parallel with the cleaved \u03b2 domain in nanodiscs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C57-C58, C85-C88 provide evidence that a Bam complex monomer is sufficient. The efficient assembly in nanodiscs (C57), which are designed to contain single membrane protein complexes (C85), combined with Blue Native PAGE analysis (C86) and parallel accumulation of products (C87), support this conclusion. However, the evidence is indirect\u2014the authors acknowledge they cannot definitively prove single-copy stoichiometry, only that it is consistent with the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "0c701707-6ecc-4e05-a65b-f65c64779e41",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BamABCDE co-expressed from a single plasmid is more active than Bam(AB)(CDE) reconstituted from subcomplexes. OmpT folded much more efficiently with BamABCDE than Bam(AB)(CDE). This suggests the structure of the Bam complex assembled in vivo may differ from that reconstituted in vitro, and preliminary evidence indicates the complex remains intact in vivo without dynamic subcomplex dissociation/reassociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69, C79 are supported by the OmpT folding data in Figure 2E showing superior activity of BamABCDE. However, claims C70-C71 about structural differences and complex stability are speculative interpretations based on unpublished preliminary data. The authors acknowledge technical issues may explain the activity difference. The mechanistic basis for the activity difference requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "cda48d0a-fef3-43c1-811f-8ebe9a6ff884",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BamABDE and BamACDE partial complexes promoted EspP assembly less effectively than BamABCDE. Addition of Skp inhibited assembly in vitro, despite the \u03b2 domain clearly interacting with Skp in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41, C68 are supported by data in Figure 3\u2014figure supplements 2-3. The reduced activity of partial complexes (C40) and inhibition by Skp (C41) are clearly demonstrated. The authors appropriately note the paradox that Skp inhibits in vitro but interacts productively in vivo (C68), suggesting the in vitro system does not fully recapitulate productive Skp interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "4a5e95b9-bd05-40c5-a5f7-cecbbeda6581",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Assembly efficiency was ~10-20% under standard conditions and was limited by substrate stability rather than Bam complex or SurA concentration. Efficiency increased moderately when BamABCDE concentration was raised from 0.05 to 0.2 \u03bcM but not at higher concentrations. Adding fresh substrate after 5 minutes increased total yield proportionally, confirming the Bam complex can catalyze multiple rounds of assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 are supported by quantitative Western blot analysis and concentration-dependence experiments in Figure 3\u2014figure supplement 4. The conclusion that substrate stability limits efficiency (C84) is a reasonable inference from the concentration data. The multiple turnover capability (C82-C83) is clearly demonstrated and consistent with prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work on autotransporter structure, assembly pathway, and translocation mechanism. This includes the domain organization of autotransporters, the role of the Bam complex and chaperones, structural features of \u03b2 domains and passenger domains, the vectorial folding model, and previous in vitro reconstitution studies with other \u03b2 barrel proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C6-C34, C72-C77) represent established knowledge and prior work that is appropriately cited. They provide essential context for interpreting the current results. The claims are well-supported by the cited literature and are not contested in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "15fa5c3d-b391-40fe-8f8d-c42f58df3f2c",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Expected outcomes for EspP(46+\u03b2) assembly based on prior work: proteolytic release of the 46-residue passenger domain and accumulation of a folded ~30 kD \u03b2 domain resistant to SDS denaturation unless heated. OmpT was expected to fold into an enzymatically active, SDS-resistant structure in the presence of proteoliposomes and SurA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 describe expected outcomes based on prior work (Skillman et al., 2005 and Hagan et al., 2010). These expectations were confirmed by the experimental results shown in Figures 2-3, validating the assay system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "38f16e41-d68b-49e5-9152-8032a737dbf6",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The HA epitope tag is the last segment of the protein to traverse the membrane, confirming translocation went to completion when the tag is protected from protease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is a logical inference based on the known C-to-N directionality of translocation and the N-terminal position of the HA tag. The protease protection data in Figure 5C confirms this interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    },
+    {
+      "id": "eda66ee6-fe66-4b89-8be9-e02927e302f0",
+      "content_id": "a8d6ef7f-45b4-4411-8161-8403f3f97867",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Discussion of translocation energetics and mechanisms. ATP hydrolysis is required for Sec-mediated translocation. Passenger domain folding may contribute to driving translocation. Alternative mechanisms include electrostatic interactions, low-energy pathways guided by the Bam complex, or concerted translocation/\u03b2 domain assembly. Stalled translocation can be restarted in vivo, suggesting energy can be harnessed after \u03b2 domain insertion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C67 mix established facts (C60, C66 with citations), reasonable speculation based on the current data (C61, C67), and hypothetical mechanisms (C62-C64). Claim C65 cites unpublished results. While these discussions are appropriate for contextualizing the findings, the proposed mechanisms remain speculative and require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:19:15.052835Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dffa4958-139a-41c9-b33b-872678e8d196",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "e5f4c6c8-310e-4cb5-a08a-61bce00eb831",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "f1ff3520-fa11-46a8-aa0f-960d6698966b",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "ba0a13f7-4e4b-47f2-a8b5-5c9459e5658a",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "d3f69f73-28e6-4850-9bc7-62a86ade2c3b",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "608d977c-e45e-4797-b369-eab02b1fe1ce",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "2a956864-86d8-482d-8318-4ce80cebc7f0",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "705d77fc-1d04-496c-b572-1faa05e623e6",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "66965ccf-6b80-4647-be39-bca6b111955d",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "72edefe4-4dc1-4257-b8df-738ee81d7beb",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "1e38817f-3ecf-430e-a067-d2d6e0f3c1f9",
+      "result_id": "5ebcf003-e0af-4fb7-8c22-a17babe0bff7"
+    },
+    {
+      "claim_id": "61a51011-f52d-4e46-b28a-9f15a0ae1462",
+      "result_id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49"
+    },
+    {
+      "claim_id": "d602d0c0-c369-4dfa-87fe-0916625553a6",
+      "result_id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49"
+    },
+    {
+      "claim_id": "bd19dccf-062e-4a43-8f0a-fe70ae5b0a13",
+      "result_id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49"
+    },
+    {
+      "claim_id": "fd97476e-02c8-4e65-ad17-8d2dca2b8ce1",
+      "result_id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49"
+    },
+    {
+      "claim_id": "8f8ef996-630d-427a-b743-947bda987c20",
+      "result_id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49"
+    },
+    {
+      "claim_id": "3daf079b-0401-4159-9bb1-23e79c89de80",
+      "result_id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49"
+    },
+    {
+      "claim_id": "2e5eab6b-c8f7-4c23-acbf-20fae86cf04f",
+      "result_id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49"
+    },
+    {
+      "claim_id": "9275d466-2670-4695-b66b-4a3adb17fa7c",
+      "result_id": "dfe872a2-dde8-4ca9-a330-214b05f1ab49"
+    },
+    {
+      "claim_id": "9a2d8d2e-e7d9-425d-bb70-06c7f4fbc294",
+      "result_id": "70d80d5c-083e-4519-829a-79dbe9044302"
+    },
+    {
+      "claim_id": "61d72d03-a568-4a6e-a52c-2650100e2cc3",
+      "result_id": "70d80d5c-083e-4519-829a-79dbe9044302"
+    },
+    {
+      "claim_id": "e5e48fdf-0726-432f-a9d4-a42662b7498f",
+      "result_id": "70d80d5c-083e-4519-829a-79dbe9044302"
+    },
+    {
+      "claim_id": "423b594f-0d9c-4e8a-b348-ca488bb74d65",
+      "result_id": "70d80d5c-083e-4519-829a-79dbe9044302"
+    },
+    {
+      "claim_id": "bc583be2-26ba-47bf-b5d8-09c679c1964b",
+      "result_id": "70d80d5c-083e-4519-829a-79dbe9044302"
+    },
+    {
+      "claim_id": "f3648bf1-fe13-4d9b-9ed4-f8a7826b3ff0",
+      "result_id": "ee98ac3b-18f1-4c21-b8cd-166406b17e41"
+    },
+    {
+      "claim_id": "66965ccf-6b80-4647-be39-bca6b111955d",
+      "result_id": "ee98ac3b-18f1-4c21-b8cd-166406b17e41"
+    },
+    {
+      "claim_id": "52a95777-71c4-414b-a9fc-602d619cc6ef",
+      "result_id": "ee98ac3b-18f1-4c21-b8cd-166406b17e41"
+    },
+    {
+      "claim_id": "d356402d-0e43-42f0-b195-821b468a2f6c",
+      "result_id": "ee98ac3b-18f1-4c21-b8cd-166406b17e41"
+    },
+    {
+      "claim_id": "07aad310-9442-47f2-b76d-4663d1ff85c5",
+      "result_id": "ee98ac3b-18f1-4c21-b8cd-166406b17e41"
+    },
+    {
+      "claim_id": "851dcb1f-0be2-4ae6-8ca3-82cb1231a899",
+      "result_id": "ee98ac3b-18f1-4c21-b8cd-166406b17e41"
+    },
+    {
+      "claim_id": "49a7d925-b735-4850-a5a1-0a3d49e75341",
+      "result_id": "ee98ac3b-18f1-4c21-b8cd-166406b17e41"
+    },
+    {
+      "claim_id": "978eed6d-fc1a-4b64-8331-9f57b32b8dcd",
+      "result_id": "0c701707-6ecc-4e05-a65b-f65c64779e41"
+    },
+    {
+      "claim_id": "7de1da60-c5ae-4238-bc84-c8ffb36ddf02",
+      "result_id": "0c701707-6ecc-4e05-a65b-f65c64779e41"
+    },
+    {
+      "claim_id": "46b14c0d-78d5-46a3-ae26-bd82b5726fd0",
+      "result_id": "0c701707-6ecc-4e05-a65b-f65c64779e41"
+    },
+    {
+      "claim_id": "1e38817f-3ecf-430e-a067-d2d6e0f3c1f9",
+      "result_id": "0c701707-6ecc-4e05-a65b-f65c64779e41"
+    },
+    {
+      "claim_id": "0e8a676e-2d26-428c-892f-2673316396c0",
+      "result_id": "cda48d0a-fef3-43c1-811f-8ebe9a6ff884"
+    },
+    {
+      "claim_id": "3a1b3b60-4676-496b-aa4b-ea23a49d0b8b",
+      "result_id": "cda48d0a-fef3-43c1-811f-8ebe9a6ff884"
+    },
+    {
+      "claim_id": "cb76193d-d3fd-4078-9dff-45c340ab17b5",
+      "result_id": "cda48d0a-fef3-43c1-811f-8ebe9a6ff884"
+    },
+    {
+      "claim_id": "e1bf69a7-07c6-4356-bfde-4ce15b380f1c",
+      "result_id": "4a5e95b9-bd05-40c5-a5f7-cecbbeda6581"
+    },
+    {
+      "claim_id": "26babe2f-21cb-4c20-b9ed-a1b117f58b44",
+      "result_id": "4a5e95b9-bd05-40c5-a5f7-cecbbeda6581"
+    },
+    {
+      "claim_id": "051e7b31-56ee-434d-803c-86436bcb7b5a",
+      "result_id": "4a5e95b9-bd05-40c5-a5f7-cecbbeda6581"
+    },
+    {
+      "claim_id": "732d4b73-cd62-4dee-a0c0-2312d6900859",
+      "result_id": "4a5e95b9-bd05-40c5-a5f7-cecbbeda6581"
+    },
+    {
+      "claim_id": "e6e7087a-da5f-4301-aea5-55bcdc2cf6b5",
+      "result_id": "4a5e95b9-bd05-40c5-a5f7-cecbbeda6581"
+    },
+    {
+      "claim_id": "eceb00e2-a4bf-496c-969d-88dc83c3de74",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "f0f69f38-c030-4c8e-8852-9acce53d7e4f",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "5b4b8015-ad3b-45df-9f61-c5ef72a5a60a",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "ecf3a354-3c17-4cb3-9ff8-6eddc253bf3e",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "8d79290f-7914-4201-bc13-db0c775a991a",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "49599b25-d2e6-48dc-9540-6541b952b964",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "4442ff1a-d31b-413a-8b57-f831c33ed64e",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "dd97a36f-1c20-46a5-a3b9-aff50f4475e2",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "e1abe0d1-453c-4f9e-81b8-84e645d50784",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "1bb6eb3d-18e6-4c35-81f0-25c7af518964",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "cefff68f-f6e4-4ed3-8dc1-c81e29aee5aa",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "a1c36181-fa90-4597-a560-1a66481ab4f6",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "1c6d638c-158c-44c7-9592-5011f40dabb7",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "e37127eb-8906-432d-8ed8-c6d992c189dc",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "add99245-219f-4df5-99eb-3cdad0291c01",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "1aa1a2e1-897d-412a-b44f-5e58ae3d0c61",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "20ab3d6d-e5c8-4c19-8fea-69df9b74d61e",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "2a9213ed-5529-4e8a-8733-a8bcf056b78a",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "6ae909cb-88ce-4a5e-90e3-780c067c01ee",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "99c3a184-3615-4a7b-a065-3f050d7e3e7a",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "c5a16e2b-2da6-425d-8b13-fff5131fecf5",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "2126bfe3-e2df-4a3d-8d7b-ca0416107928",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "57a3aa8c-31ee-4f9d-9dad-014f00e3534a",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "564467a7-55c3-4baa-bebb-a146aa436683",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "9610f7da-4afa-4786-8f4a-2e29c50403a4",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "4b9fe5a0-f29f-4149-bee1-cb1a73827af6",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "33f8ef2a-ceaf-45b6-b24c-f3ba319bead7",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "2e3aeba0-65be-4c11-93a0-eff407cf1c71",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "5f03c716-2b31-4be3-aa99-baeb2e6a7264",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "c03ecbeb-11bc-465b-b74e-15ceb5e0ed43",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "a1b33ac5-3936-4eac-b1c0-3a56f736ab95",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "a06b2482-4c43-49e4-8726-6c16c73c28ea",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "752c34f2-bad8-4df2-aade-986681318cf3",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "766a1d0d-3f26-4472-85aa-976af0440c65",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "268fa54a-5297-45e5-9537-f1b393b5b96a",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "254a444e-55b3-4049-94d2-ac2cb9fd1c51",
+      "result_id": "5fe6a1bb-6c3e-43c4-b938-3acf5ff6e5ba"
+    },
+    {
+      "claim_id": "cbbd52e8-a651-413a-908b-d31c25ca029e",
+      "result_id": "15fa5c3d-b391-40fe-8f8d-c42f58df3f2c"
+    },
+    {
+      "claim_id": "fe49c215-6071-4ed4-8236-b5231347bd2f",
+      "result_id": "15fa5c3d-b391-40fe-8f8d-c42f58df3f2c"
+    },
+    {
+      "claim_id": "3bf81257-7deb-487c-9330-de485c0dbb59",
+      "result_id": "38f16e41-d68b-49e5-9152-8032a737dbf6"
+    },
+    {
+      "claim_id": "17a048fa-ecfe-487b-bb4b-3891937e62a7",
+      "result_id": "eda66ee6-fe66-4b89-8be9-e02927e302f0"
+    },
+    {
+      "claim_id": "e6c60e71-7a75-4e9f-8549-a08df4d488c1",
+      "result_id": "eda66ee6-fe66-4b89-8be9-e02927e302f0"
+    },
+    {
+      "claim_id": "6ea2d3c1-a7fe-4c77-9ed9-1d099d270713",
+      "result_id": "eda66ee6-fe66-4b89-8be9-e02927e302f0"
+    },
+    {
+      "claim_id": "bf4db01f-44e0-47fa-a7e4-6989d4412e28",
+      "result_id": "eda66ee6-fe66-4b89-8be9-e02927e302f0"
+    },
+    {
+      "claim_id": "1512339e-a0c5-40b1-b6ce-5c7605dcba08",
+      "result_id": "eda66ee6-fe66-4b89-8be9-e02927e302f0"
+    },
+    {
+      "claim_id": "33b8a6ed-90d0-4c5a-928a-78613a94af41",
+      "result_id": "eda66ee6-fe66-4b89-8be9-e02927e302f0"
+    },
+    {
+      "claim_id": "c92087ff-de74-4dc6-aa42-5db98006da1d",
+      "result_id": "eda66ee6-fe66-4b89-8be9-e02927e302f0"
+    },
+    {
+      "claim_id": "4ba9ac67-81a8-4b40-a99b-153dbe504491",
+      "result_id": "eda66ee6-fe66-4b89-8be9-e02927e302f0"
+    }
+  ],
+  "comparisons": []
+}

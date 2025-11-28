@@ -1,0 +1,2424 @@
+{
+  "submission": {
+    "id": "47bfb70d-172e-41de-add1-3d24e592a6a9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:32:24.674386Z",
+    "updated_at": "2025-11-28T20:32:24.674386Z"
+  },
+  "content": [
+    {
+      "id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "submission_id": "47bfb70d-172e-41de-add1-3d24e592a6a9",
+      "content_type": "manuscript",
+      "content_text": "# Brassinosteroids control root epidermal cell fate via direct regulation of a MYB-bHLH-WD40 complex by GSK3-like kinases\n\n## Authors\n\n- Yinwei Cheng<sup>1</sup>\n- Wenjiao Zhu<sup>1</sup>\n- Yuxiao Chen<sup>1</sup>\n- Shinsaku Ito<sup>2</sup>\n- Tadao Asami<sup>2</sup>\n- Xuelu Wang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Genetic Engineering, and Institute of Plant Biology, School of Life Sciences Fudan University Shanghai China\n2. Graduate School of Agricultural and Life Sciences The University of Tokyo Tokyo Japan\n3. College of Life Science and Technology Huazhong Agricultural University Wuhan China\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn Arabidopsis, root hair and non-hair cell fates are determined by a MYB-bHLH-WD40 transcriptional complex and are regulated by many internal and environmental cues. Brassinosteroids play important roles in regulating root hair specification by unknown mechanisms. Here, we systematically examined root hair phenotypes in brassinosteroid-related mutants, and found that brassinosteroid signaling inhibits root hair formation through GSK3-like kinases or upstream components. We found that with enhanced brassinosteroid signaling, GL2, a cell fate marker for non-hair cells, is ectopically expressed in hair cells, while its expression in non-hair cells is suppressed when brassinosteroid signaling is reduced. Genetic analysis demonstrated that brassinosteroid-regulated root epidermal cell patterning is dependent on the WER-GL3/EGL3-TTG1 transcriptional complex. One of the GSK3-like kinases, BIN2, interacted with and phosphorylated EGL3, and EGL3s mutated at phosphorylation sites were retained in hair cell nuclei. BIN2 phosphorylated TTG1 to inhibit the activity of the WER-GL3/EGL3-TTG1 complex. Thus, our study provides insights into the mechanism of brassinosteroid regulation of root hair patterning.\n\n## Introduction\n\nThe Arabidopsis root epidermal cell types are defined by position in a predictable manner (Ishida et al., 2008). Hair (H) cells, or trichoblasts, are specified early from root epidermal cells that lie over clefts between two underlying cortical cells, whereas the root epidermal cells that lie over a single cortical cell develop as non-hair (N) cells, or atrichoblasts (Ishida et al., 2008). Hair cell and non-hair cell files are patterned alternately in rows within the Arabidopsis root epidermis, with columns of hair cells interspersed with columns of non-hair cells (Schiefelbein et al., 2009). Prior to root hair outgrowth, root epidermal cells in the H position can be distinguished from those in the N position by many visible cellular features, including a greater rate of cell division (Berger et al., 1998), reduced cell length and vacuolation (Dolan et al., 1994; Galway et al., 1994), and enhanced cytoplasmic density (Dolan et al., 1994). It is proposed that positional signals and a putative receptor-like kinase SCRAMBLED (SCM) (Kwak et al., 2005) function through a MYB-bHLH-WD40 repeat transcriptional complex to determine root epidermal cell fate (Schiefelbein et al., 2009). Based on this model, in N cells, WEREWOLF (WER) (Lee and Schiefelbein, 1999), a R2R3 MYB-domain transcription factor, forms a complex with basic helix-loop-helix transcription factors, GLABRA3 (GL3)/ENHANCER OF GLABRA3 (EGL3) (Bernhardt et al., 2003; Zhang et al., 2003), and a WD40 repeat protein, TRANSPARENT TESTA GLABRA1 (TTG1) (Galway et al., 1994), to promote expression of GLABRA2 (GL2) and CAPRICE (CPC) (Ryu et al., 2005; Song et al., 2011). GL2, a homeodomain/leucine zipper transcription factor, negatively regulates H cell fate and positively regulates N cell fate (Masucci et al., 1996). CPC (Wada et al., 1997), a MYB-type transcription factor, moves from N cells to H cells (Kurata et al., 2005a) to compete with WER for binding to GL3/EGL3 to form a CPC-GL3/EGL3-TTG1 complex, which is unable to induce GL2 expression (Song et al., 2011). In addition to CPC, the bHLH transcription factor GL3 is also a mobile protein (Bernhardt et al., 2005). GL3 and its homologue EGL3 are both expressed in H cells, but GL3 protein is only localized in the N cell nucleus, indicating that GL3 protein moves into the adjoining N cell nucleus to determine N cell fate (Bernhardt et al., 2003, 2005). Integration of existing genetic and biochemical data also supports an alternative mechanism centered on the movement of transcriptional factors between epidermal cells rather than a putative local activation of the WER gene function to determine root epidermis pattern formation (Savage et al., 2008).\n\nIn addition, root hair development is highly regulated by many external and internal cues, including phytohormones. For instance, abscisic acid (ABA) plays a role in the early stage of root epidermal cell specification (Van Hengel et al., 2004) and in inhibiting root hair tip growth in Arabidopsis (Schnall and Quatrano, 1992), while both ethylene and auxin may act downstream of TTG1 and GL2 to promote root hair formation and elongation (Masucci and Schiefelbein, 1994, 1996). Moreover, jasmonic acids (JAs) promote root hair formation through their interaction with ethylene (Zhu et al., 2006). However, the underlying cellular and molecular mechanisms of how these internal hormones integrate with environmental cues to regulate root hair cell fate determination are still poorly understood.\n\nThe plant steroid hormones, brassinosteroids (BRs), play essential roles in regulating many developmental processes, including shoot, root, and reproductive development (Savaldi-Goldstein et al., 2007; Ye et al., 2010; Hacham et al., 2011; Yang et al., 2011). BRs are perceived by the receptor kinase BRASSINOSTEROID INSENSITIVE 1 (BRI1) (Li and Chory, 1997; Hothorn et al., 2011; She et al., 2011). The BR-activated BRI1 phosphorylates BRI1 KINASE INHIBITOR 1 (BKI1) to release its inhibition (Wang and Chory, 2006), and then BKI1 acts as a positive regulator by binding to a subset of 14-3-3 proteins (Wang et al., 2011). Another BRI1 substrate, BR-SIGNALING KINASE (BSK), transduces the BR signaling through bri1 SUPPRESSORS 1 (BSU1) to inactivate a GSK3-like kinase BRASSINOSTEROID INSENSITIVE 2 (BIN2), which leads to accumulation of the dephosphorylated form of transcriptional factors BRI1 EMS SUPPRESSOR 1 (BES1)/BRASSINAZOLE RESISTANT 1 (BZR1) in the nucleus to regulate gene expression (Yang et al., 2011). A previous study suggests that BRs play an important role in determining root epidermal cell fate by regulating WER and GL2 expression (Kuppusamy et al., 2009). However, the elaborate molecular mechanism by which BRs regulate root epidermal cell fate and development is still unknown.\n\nHere, we first systematically examined root epidermal cell patterning and PGL2::GUS expression in a series of BR-deficient and signaling mutants. We found that BRs regulate root epidermal cell fate through promoting GL2 expression in both H and N cells, which is mediated by GSK3-like kinases and the WER-GL3/EGL3-TTG1 complex as indicated by genetic analysis and biochemical studies. Our study further demonstrated that BIN2, one of the GSK3-like kinases, interacted with and phosphorylated EGL3 on T399 and T209/T213, leading to its trafficking from nucleus to cytosol in H cells, which may facilitate its movement from H cells to N cells. BIN2 also phosphorylated TTG1 to inhibit the activity of the WER-GL3/EGL3-TTG1 transcriptional complex. These results explain how BR signaling regulates both the formation and activity of the WER-GL3/EGL3-TTG1 complex through GSK3-like kinases to coordinate root epidermal cell fate specification.\n\n## Results\n\n### BRs regulate root epidermal cell patterning through GSK3-like kinases\n\nTo broadly explore the role of BRs in root hair formation, we systematically examined the root hair phenotype of BR-biosynthetic mutants, det2-1 and cpd, and BR-responsive mutants, including bri1-116, BRI1-OX (a BRI1-overexpression line), bin2-3 bil1 bil2 (a triple knockout mutant of BIN2 and its two closest homologues), and a BES1-RNAi line. We found that the relative hair number (=root hair density \u00d7 root hair cell length) was higher in bri1-116 (4.67 \u00b1 0.47), det2-1 (4.75 \u00b1 0.52), and cpd (4.65 \u00b1 0.54), and significantly lower in BRI1-OX (3.40 \u00b1 0.46) and bin2-3 bil1 bil2 (2.86 \u00b1 0.39) than in their corresponding wild types Col-0 (3.89 \u00b1 0.43) and WS-2 (3.85 \u00b1 0.41) (Figure 1\u2014source data 1). However, there was no significant difference between BES1-RNAi and Col-0. Images at the highest magnification (\u00d7100; Figure 1) showed that in the wild type root (Figure 1A), the H cells and N cells were arranged in alternating files with the H cell columns regularly interspaced with the N cell columns; no adjacent H cell columns were found. However, in the BR signaling-inhibited mutants, including bri1-116, det2-1, and cpd (Figure 1B\u2013D), many root hair columns were next to each other, leading to more root hairs, suggesting that some N cell fate might be changed into H cell fate. In contrast, the BR signaling-enhanced plants, including BRI1-OX and bin2-3 bil1 bil2, grew fewer root hairs than the wild type, due to the fact that they lacked root hairs in many H cell positions (Figure 1A,E\u2013G). Interestingly, the BES1-RNAi line showed a similar root hair pattern as the wild type (Figure 1A,H).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013H) Root hair patterning of the BR-related mutants and their wild type counterparts. bin2-3 bil1 bil2 is in the WS-2 background, and all of the others are in the Col-0 background. (I\u2013L) Root hair phenotype of the wild type plants grown on 1/2 MS (Murashige and Skoog) medium with DMSO (mock) (I), 100 nM epibrassinolide (eBL) (J), 30 \u03bcM bikinin (Bik) (K), or 1 \u03bcM brassinazole (Brz) (L). Right images are the outlined areas of left images with higher magnification. Arrows indicate ectopic root hair cells, and arrowheads indicate ectopic non-hair cells. Areas outlined with blue lines indicate the ectopic non-hair cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Root hair phenotype of the bin2-3 bil1 bil2 mutants grown on medium with DMSO (mock) (A) or 30 \u03bcM bikinin (B); right images are the outlined areas of left images with higher magnification. (C) The root hair density, cell length, and relative hair number of the bin2-3 bil1 bil2 mutants treated with bikinin. Values are means \u00b1 SD. The two-tailed t test with equal variance or unequal variance was used to determine the significance level of the difference between the bin2-3 bil1 bil2 mutants treated with 30 \u03bcM bikinin and mock medium. *p<0.05; **p<0.01.\n\nTo further test whether exogenously applied eBL (epibrassinolide), bikinin (a specific GSK3 kinase inhibitor) (De Rybel et al., 2009), or Brz (brassinazole, an inhibitor of BR biosynthesis) regulate root hair specification, we planted seeds on 1/2 MS (Murashige and Skoog) medium containing each of these chemicals or DMSO (as the mock treatment), and carefully observed their root hair phenotypes. We found that compared with plants grown on the mock medium (3.80 \u00b1 0.45), the relative root hair number of plants grown on medium containing 100 nM eBL (3.22 \u00b1 0.42) or 30 \u03bcM bikinin (2.71 \u00b1 0.50) was significantly reduced, while it was greatly increased in plants grown on medium containing 1 \u03bcM Brz (4.17 \u00b1 0.43) (Figure 1\u2014source data 1). Images at higher magnification (\u00d7100) show that, compared to seedlings grown on the mock medium (Figure 1I), those grown on medium containing eBL or bikinin produced fewer root hairs in the H position of epidermal cells (Figure 1J,K), while those grown on medium containing Brz grew more root hairs in the N position (Figure 1L). We also found that the bin2-3 bil1 bil2 seedlings grown on medium containing 30 \u03bcM bikinin produced very few root hairs (Figure 1\u2014figure supplement 1), suggesting that besides BIN2, BIL1, and BIL2, other GSK3-like kinases may also be involved in root hair specification in Arabidopsis. Taken together, these findings indicate that the BR-mediated root epidermal cell pattern formation largely relies on GSK3-like kinases and/or their upstream components.\n\n### BR signaling promotes N cell fate and inhibits H cell fate\n\nGL2 has been widely used as a molecular maker of N cell fate determination (Masucci et al., 1996; Kuppusamy et al., 2009). In order to test whether the disordered root hair patterning in the BR-related mutants resulted from an altered root epidermal cell fate, we analyzed the GL2 expression pattern in these mutants using PGL2::GUS as a reporter. We found that in the wild type, 1.3% of epidermal cells in the N position lacked GL2 expression in cross-sections (Figure 2A,B), and in the longitudinal view of root epidermis, the root epidermal cell files were arranged regularly, with GL2-expressing columns (N cell columns) interspaced with columns without GL2 expression (H cell columns) (Figure 2C). However, about 15.3% of bri1-116 and 18.8% of det2-1 cells showed suppressed PGL2::GUS expression, and there were adjacent root epidermal cells without GL2 expression in both bri1-116 and det2-1 (Figure 2D\u2013I), which supports a previous finding with bri1-116 and the Brz-treated wild type (Kuppusamy et al., 2009). These results indicated that adjacent root hairs in bri1-116 and det2-1 were caused by some N cell fate changing to H cell fate. In contrast, GL2 was ectopically expressed in about 13.5% of H cells in BRI1-OX plants (Figure 2J\u2013L) and in about 19.6% in bin2-3 bil1 bil2 (Figure 2M\u2013O), as compared with only 3.2% in the wild type (Figure 2A\u2013C), indicating that lack of GL2 expression in N cells may correspond to the ectopic root hairs observed in bri1-116 and det2-1, and that the ectopically expressed GL2 in H cells partially inhibits H cell fate in BRI1-OX and bin2-3 bil1 bil2 plants. Taken together, the above results suggested that BR signaling has an important role in suppressing H cell fate and promoting N cell fate in both the N and the H positions, and BR signaling regulates root epidermal cell fate by controlling GL2 expression through GSK3-like kinases, or their upstream components, but not through downstream transcription factors.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig2-v2.jpg)\n\n**Figure 2.:** Transverse sections from root meristem of Col-0 (A), bri1-116 (D), det2-1 (G), BRI1-OX (J), and bin2-3 bil1 bil2 (M). Frequency of cells without PGL2::GUS expression in the N cell position (open bars) and cells with ectopically expressed PGL2::GUS in the H cell position (solid bars) of Col-0 (B), bri1-116 (E), det2-1 (H), BRI1-OX (K), and bin2-3 bil1 bil2 (N). Longitudinal images of the root epidermal cells in Col-0 (C), bri1-116 (F), det2-1 (I), BRI1-OX (L), and bin2-3 bil1 bil2 (O). Scale bars, 25 \u03bcm. Red arrows indicate N cells without PGL2::GUS expression, and red arrowheads indicate H cells ectopically expressing PGL2::GUS. For each genotype, n = 8. Error bars indicate standard deviation (SD).\n\n### BR signaling acts upstream of WER and CPC to regulate root epidermal cell fate\n\nIt was known that GL2 expression is directly regulated by the WER-GL3/EGL3-TTG1 but not the CPC-GL3/EGL3-TTG1 transcriptional complex (Schiefelbein et al., 2009). To explore whether the BR-regulated GL2 expression and root epidermal cell fate determination are dependent on these complexes, we first created a set of double mutants of cpc-1, a mutant with fewer root hairs than its counterpart (Figure 3A,B), with bri1-116 or cpd (Figure 3C,D). Similar to cpc-1, both double mutants bri1-116 cpc-1 (Figure 3E) and cpd cpc-1 (Figure 3F) produced few root hairs. We also generated double or multiple mutants of wer-1, a mutant with more root hairs than Col-0 (Figure 3G,H), with BRI1-OX or bin2-3 bil1 bil2 (Figure 3I,J), and found that both BRI1-OX wer-1 and bin2-3 bil1 bil2 wer-1 (Figure 3K,L) were similar to wer-1, with many ectopic root hairs formed at the N cell position. These genetic analyses indicated that the WER-GL3/EGL3-TTG1 and CPC-GL3/EGL3-TTG1 transcriptional complexes act downstream of BR early signaling.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig3-v2.jpg)\n\n**Figure 3.:** Root hair phenotype of the wild type WS-2 (A) and double mutants of cpc-1 (B) with bri1-116 (C) or cpd (D), including bri1-116 cpc-1 (E) and cpd cpc-1 (F). Root hair phenotype of the wild type Col-0 (G) and the double/multiple mutants of wer-1 (H) with BRI1-OX (I) or bin2-3 bil1 bil2 (J), including BRI1-OX wer-1 (K) and bin2-3 bil1 bil2 wer-1 (L). cpc-1 is in the WS-2 background. BR: brassinosteroid.\n\n### BIN2 phosphorylates EGL3 and TTG1\n\nTherefore, we inferred that BR-mediated root epidermal cell fate may be dependent on GSK3-like kinases, the key negative components in the BR signaling pathway, acting upstream of the WER-EGL3/GL3-TTG1 or CPC-EGL3/GL3-TTG1 transcriptional complex. We then conducted yeast two-hybrid assays to test whether any components in the WER-EGL3/GL3-TTG1 or CPC-EGL3/GL3-TTG1 complex interact with BIN2, a well-studied GSK3-like kinase, and found that BIN2 can interact with EGL3 (Figure 4A) but not with CPC in yeast (Figure 4\u2014figure supplement 1). However, due to strong auto-activation of WER and TTG1 fused with GAL4-DNA binding domain (DB) in yeast two-hybrid assays (Figure 4\u2014figure supplement 1), we conducted GST pull-down and BiFC (biomolecular fluorescence complementation) assays to test their interactions, and found that BIN2 can interact with WER, EGL3, and TTG1 (Figure 4B,C). Furthermore, because BIN2 can regulate many transcription factors by phosphorylation (Saidi et al., 2012), and WER or CPC can interact with EGL3/GL3-TTG1 in vivo to form WER-EGL3/GL3-TTG1 or CPC-EGL3/GL3-TTG1 complexes, respectively (Zhao et al., 2008; Song et al., 2011), we then conducted in vitro kinase assays to test whether BIN2 can phosphorylate any of these components. We found that BIN2 did not phosphorylate WER and CPC, but was able to phosphorylate EGL3 and TTG1 (Figure 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig4-v2.jpg)\n\n**Figure 4.:** (A) BIN2 interacts with EGL3 in yeast two-hybrid assays. (B) The interaction of BIN2-His with CPC-GST, EGL3-GST, TTG1-GST, and WER-GST in vitro. The BIN2-His pulled-down by CPC-GST, EGL3-GST, TTG1-GST, and WER-GST, or GST was detected by western blotting with anti-His antibody (top). The purified BIN2-His protein was used as inputs. An equal loading of recombinant proteins was indicated by Coomassie brilliant blue (CBB) staining (bottom). (C) BiFC assays of the interaction between BIN2 with EGL3, TTG1, and WER. Scale bars, 20 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The full-length cDNA of each corresponding gene was fused with the GAL4-BD or AD domain. Yeast cells harboring the indicated constructs were grown on the synthetic media lacking Trp and Leu, or Trp, Leu, and His with an additional 1 mM 3AT.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig5-v2.jpg)\n\n**Figure 5.:** An equal amount of recombinant BIN2 kinase indicated by Coomassie brilliant blue (CBB) staining (bottom) was incubated with recombinant MBP, WER-MBP, CPC-MBP, EGL3-MBP, or TTG1-MBP, separated by SDS\u2013PAGE, and followed by autoradiography (top).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Putative phosphorylation sites are in T399PEET403 (A) and T209TIST213 fragments (B).\n\n### GSK3-like kinase phosphorylates EGL3 to promote its movement to N cells\n\nTo investigate the biological relevance of EGL3 phosphorylation by a GSK3-like kinase BIN2, we used mass spectrometry and identified four potential phosphorylation sites (T209, T213, T399, and T403) of EGL3 by BIN2 (Figure 5\u2014figure supplement 1), which are located in two regions that contain typical recognition sites of GSK3 kinases (Cohen and Frame, 2001). We then mutated threonine residues into alanine to make single- or double-site mutated forms of EGL3. In vitro phosphorylation assays showed that phosphorylation levels of EGL3T399A and EGL3T209A/T213A by BIN2 were significantly reduced (Figure 6A), indicating that T399 and T209/T213 are the main phosphorylated residues. To investigate the biological function of EGL3 phosphorylation, we transformed EGL3 and its mutated forms driven by its own promoter into Col-0 to examine their subcellular localization. We found that the EGL3-GFP signal in N cells was apparently higher than that in H cells, and that it was mainly localized to cytosol in H cells, but to both cytosol and nucleus in N cells (Figure 6B). As EGL3 mRNA is only expressed in H cells (Bernhardt et al., 2005), this result indicated that, like its homologue GL3, EGL3 is also a mobile protein that moves from H cells to N cells. However, the EGL3T399A-GFP and EGL3T209A/T213A-GFP were solely localized to the nuclei of H cells (Figure 6C,D), indicating that EGL3 phosphorylation is required not only for its cytoplasmic accumulation, but also for its movement from H cells to N cells. In addition, we found that the root hair patterning of EGL3-GFP transgenic plants was not altered (Figure 6E; Table 1), indicating that correctly localized EGL3, mainly in N cell nuclei to promote N cell fate and less in H cell nuclei not to promote N cell fate, has no influence on root epidermal fate. Moreover, although root epidermal patterning in the EGL3T399A-GFP transgenic plants was normal (Figure 6F; Table 1), the number of root hairs in EGL3T209A/T213A-GFP plants was significantly reduced, likely due to a misspecification of non-hair cells in the H position (Figure 6G; Table 1), suggesting that the nucleus-localized EGL3 in H cells may determine N cell fate specification. Taken together, our results indicate that BIN2 phosphorylation on T399, T209, and/or T213 of EGL3 in H cells promotes EGL3 cytoplasmic localization, which likely helps its movement from H to N cells to regulate root epidermal cell fate.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig6-v2.jpg)\n\n**Figure 6.:** (A) BIN2 phosphorylates EGL3 on T399 and T209/T213. An equal amount of recombinant protein, as indicated by Coomassie brilliant blue (CBB) staining (bottom panel), was incubated in phosphorylation buffer, separated by SDS\u2013PAGE, and followed by autoradiography (top panel). (B) EGL3-GFP is predominantly localized in N cell nuclei. Both EGL3T399A-GFP (C) and EGL3T209A/T213A-GFP (D) are solely localized in H cell nuclei. For (B\u2013D), the 5-day-old roots were stained with propidium iodide (red) for 10 s for visualizing the cell wall. The top panels show the underlying cortex. The stars indicate H cells. Scale bars, 20 \u03bcm. (E\u2013G) Root hair patterns of EGL3-GFP (E), EGL3T399A-GFP (F), and EGL3T209A/T213A-GFP (G) transgenic plants. Outlined areas in the left images are magnified in the right images. Red arrowheads and areas outlined with blue lines indicate ectopic non-root hair cells in the H position.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The sequences underlined in red indicate the 209TTIST213 and 399TPEET403 regions of EGL3.\n\n**Table 1.**\n The effect of EGL3 and its two mutated forms on root epidermal cell pattern formation\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Genotype</th>\n      <th colspan=\"2\">Cells in the H position</th>\n      <th colspan=\"2\">Cells in the N position</th>\n    </tr>\n    <tr>\n      <th>Hair cells (%)</th>\n      <th>Non-hair cells (%)</th>\n      <th>Hair cells (%)</th>\n      <th>Non-hair cells (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Col-0</td>\n      <td>98.9 \u00b1 3.3</td>\n      <td>1.1 \u00b1 3.3</td>\n      <td>2.0 \u00b1 4.5</td>\n      <td>98.0 \u00b1 4.5</td>\n    </tr>\n    <tr>\n      <td>PEGL3::EGL3-GFP</td>\n      <td>95.8 \u00b1 6.1</td>\n      <td>4.2 \u00b1 6.1</td>\n      <td>1.9 \u00b1 4.2</td>\n      <td>98.1 \u00b1 4.2</td>\n    </tr>\n    <tr>\n      <td>PEGL3::EGL3T399A-GFP</td>\n      <td>93.1 \u00b1 6.4</td>\n      <td>6.9 \u00b1 6.4</td>\n      <td>2.8 \u00b1 6.0</td>\n      <td>97.2 \u00b1 6.0</td>\n    </tr>\n    <tr>\n      <td>PEGL3::EGL3T209A/T213A-GFP</td>\n      <td>85.5 \u00b1 4.4*</td>\n      <td>14.5 \u00b1 4.4*</td>\n      <td>1.0 \u00b1 3.2</td>\n      <td>99.0 \u00b1 3.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_At least 10 different 5-day-old roots were examined for each strain. Values represent means \u00b1 SD. For statistical analysis, the F test was used to determine the variance, and the two-tailed t test with equal variance or unequal variance was used to determine the significance level of the difference among the transgenic plants.*p<0.05._\n\n### GSK3-like kinases phosphorylate TTG1 to suppress the transcriptional activity of the WER-EGL3-TTG1 complex\n\nTTG1 is required for a normal expression level of GL2 (Di Cristina et al., 1996) but not for its expression pattern (Hung et al., 1998). Transgenic TTG1-GFP plants driven by its own promoter indicated that TTG1 was preferentially localized in the cytoplasm and slightly in the nucleus of both N and H cells (Figure 7\u2014figure supplement 1), which was consistent with the subcellular localization of its petunia homologue AN11 (De Vetten et al., 1997). To understand the biological relevance of TTG1 phosphorylation by a GSK3-like kinase, we conducted transient transcription assays in Nicotiana benthamiana leaves to examine whether BIN2 regulated the complex's activity in a TTG1-dependent manner. We constructed a dual-luciferase reporter system using PGL2::LUC as a reporter gene and 35S::REN as an internal control (Figure 7A). Because the protein of the gain-of-function mutation bin2-1 (E263K) is more stable and has higher activity than the wild type BIN2 (Peng et al., 2008), and GSK3-like kinases are quite conserved among different species (Saidi et al., 2012), we used bin2-1 to conduct this study. As shown in Figure 7B, transient expression of WER alone was able to slightly induce PGL2::LUC gene expression. In contrast, transient expression of EGL3 alone was unable to induce reporter gene expression. Co-expression of WER and EGL3 can dramatically promote LUC expression, which is consistent with a previous study (Song et al., 2011). Additional bin2-1 did not alter the effect of WER, EGL3, or both WER and EGL3 on PGL2::LUC expression. When WER, EGL3, and TTG1 were used together, the expression of PGL2::LUC was further enhanced, indicating that TTG1 can promote the activity of the WER-EGL3 complex. Interestingly, additional bin2-1 significantly inhibited reporter gene expression regulated by the WER-EGL3-TTG1 complex (Figure 7B), indicating that TTG1 is mediating the negative effect of BIN2 on this transcriptional complex.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic diagram of the dual-luciferase reporter construct. The firefly luciferase (LUC) reporter gene was driven by GL2 promoter. The Renillia luciferase (REN) reporter gene was controlled by Cauliflower mosaic virus promoter (35S) and terminator (Ter). (B) bin2-1 inhibits PGL2::LUC expression only when TTG1 is co-expressed with WER and EGL3. Relative reporter activity in Nicotiana benthamiana leaf cells transiently transformed with the indicated effector, reporter, and regulatory constructs. G, W, E, and T indicate GL2, WER, EGL3, and TTG1, respectively. Error bars indicate SD. **p<0.01 determined by the two-tailed Student's t test.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Stars indicate H cells. Scale bars, 20 \u03bcm.\n\n## Discussion\n\n### BR signaling depends on GSK3-like kinases and the WER-EGL3-TTG1 complex to modulate root epidermal patterning\n\nWe provide several lines of evidence to strongly support an important role for BR signaling in directly regulating root hair cell fate. First, root hair patterning in the BR-biosynthetic and responsive mutants or in the wild type grown on eBL, bikinin, or BRZ, was dramatically altered, demonstrating that GSK3 kinases and/or their upstream components are mediating this regulation. Second, the expression pattern of the non-hair cell fate marker PGL2::GUS indicates that BR early signaling promotes N cell fate in the whole root epidermis, which is a reasonable explanation for the abnormal root hair patterning in the BR-related mutants: when BR signaling is enhanced, fewer root hairs are formed in the H position; when BR signaling is inhibited, more ectopic root hairs are produced in the N position. This finding supports the previous report that BRs positively regulate the expression of WER and GL2 (Kuppusamy et al., 2009). Third, genetic analysis revealed that major components of the WER-EGL3-TTG1 or CPC-EGL3-TTG1 complex act downstream of BR signaling-mediated root epidermis patterning. Finally, BIN2 phosphorylation on EGL3 and TTG1 suggested that GSK3-like kinases directly regulate EGL3 movement and the transcription activity of the WER-EGL3-TTG1 complex to mediate root hair development.\n\n### Phosphorylation of EGL3 regulates its intercellular movement and controls root epidermal cell fate\n\nThis study revealed a key mechanism in the regulation of intercellular communication of transcription factors by a hormonal signal to determine epidermal cell specification. Non-cell autonomous movement of some transcriptional factors is an important mechanism to regulate some developmental processes (Kurata et al., 2005b), and cytoplasmic localization of these mobile proteins may be required for their intercellular movement. For example, in maize shoot apical meristem, a mutation in its potential nuclear localization signal (NLS) of KNOTTED 1 abolished its intercellular movement (Vollbrecht et al., 1991; Lucas et al., 1995), and cytoplasmic localization of LEAFY (Schultz and Haughn, 1991), a transcriptional factor in floral identity, is also strongly correlated with its adjacent cell movement (Wu et al., 2003). Moreover, the movement of SHORT-ROOT, another mobile transcriptional factor in root radical patterning (Helariutta et al., 2000), was abolished when it was fused to a NLS, leading to its diminished cytoplasmic localization (Gallagher et al., 2004). However, it is largely unknown how the nuclear-cytoplasmic trafficking of transcription factors is regulated by internal cues to influence their intercellular movement. Although the intercellular movement of mobile factors in the WER/CPC-EGL3/GL3-TTG1 complex may determine root epidermis patterning (Savage et al., 2008), it is not clear how their movement is regulated by internal cues. Because EGL3 mRNA was expressed only in H cells, the major nuclear localization of EGL3 protein in N cells indicated that, like GL3 and CPC, EGL3 can also move from H to N cells. In addition, we found that EGL3T399A and EGL3T209A/T213A with abolished phosphorylation sites were solely localized in the nucleus of H cells, indicating that the unphosphorylated EGL3 may not move between cells. Although we do not know how T209/T213 phosphorylation regulated EGL3 subcellular localization, the T399 phosphorylation likely affected a NLS, because T399 is located in a predicted non-canonical NLS (Figure 6\u2014source data 1), which is found in many other plant bHLHs (Galstyan et al., 2012). Although the EGL3T399A-GFP plants showed normal root hair patterning, this can be explained by the close proximity of T399 to its bHLH domain, which may have affected its interaction with TTG1 and MYB (Zhang et al., 2003), leading to the nucleus-localized EGL3T399A in H cells unable to induce GL2 expression. However, EGL3T209A/T213A-GFP may still interact with TTG1 and have DNA-binding activity, because T209/T213 was located in the N-terminal region far away from the bHLH domain (Figure 6\u2014figure supplement 1), which led to GL2 expression in H cells and EGL3T209A/T213A-GFP plants growing fewer root hairs (Figure 6G; Table 1).\n\n### GSK3-like kinases inhibit GL2 expression through TTG1, which is required for the transcriptional activity of WER-EGL3-TTG1 complex\n\nBesides the regulation of EGL3 nuclear-cytoplasmic trafficking, we also provided strong evidence to support GSK3-like kinases\u2019 inhibition on the transcriptional activity of the WER-EGL3-TTG1 complex through TTG1. In Nicotiana benthamiana pavement cells, it was demonstrated that BIN2 has a negative role in WER-EGL3-TTG1 transcriptional activity, but has no effect on the activity of WER, EGL3, or both WER and EGL3. Although BIN2 phosphorylates EGL3, its failure to regulate WER-EGL3 transcriptional activity can be explained by a possible ubiquitous expression of WER, EGL3, and GSK3-like kinases in Nicotiana benthamiana leaves. Furthermore, it was reported that TTG1 interacts with EGL3 (Zhang et al., 2003), and TTG1 is necessary for the full functioning of other bHLH partners, such as GL3 and TRANSPARENT TESTA8 (Baudry et al., 2004; Zhao et al., 2008). Therefore, it is very likely that TTG1 phosphorylation by GSK3-like kinases may affect its regulation of EGL3 and the activity of the WER-EGL3-TTG1 complex.\n\n### BR signaling promotes the N cell fate of root epidermis\n\nOur data also support the suggestion that the N cell is a default cell type in root epidermis, and that H cell fate is produced due to inhibition of N cell fate by internal or external cues. First, we observed that WER, a positive regulator for GL2 expression, is expressed in both N and H cells in the early root meristem (Figure 8\u2014figure supplement 1), which is also supported by a previous report that WER exhibits uniform promoter activity in both N and H cells proximal to the initial cells (Savage et al., 2008). Second, in Arabidopsis, both EGL3 and GL3 are expressed in H cells, but their proteins move to adjacent cells to promote N cell fate (Bernhardt et al., 2005). If they stay in H cells with the ability to interact with WER and TTG1, the H cells may develop into N cells as shown in the EGL3T209A/T213A-GFP transgenic plants. Moreover, over-expression of GL3 and EGL3 promoted non-hair cell fate (Bernhardt et al., 2003). Third, TTG1 is localized in both N and H cells, and TTG1 and EGL3 may synergistically promote WER-EGL3 transcriptional activity and enhance N cell fate. Apparently, BR signaling can promote N cell fate in several ways. Besides the inhibition of BR signaling on EGL3 cell\u2013cell movement and the promotion of TTG1 activity, BR signaling also promotes WER expression as WER up-regulation in bin2-3 bil1 bil2 (Figure 8\u2014figure supplement 1), which is consistent with the positive role of BRs in WER expression (Kuppusamy et al., 2009).\n\nThus, we proposed a model to illustrate how BR signaling regulates WER-EGL3-TTG1 complex formation and activity to control root epidermal cell fate. As shown in Figure 8, without BRs, WER-GL3/EGl3-TTG1 complex formation and activity is inhibited in both N and H cells, as WER expression is reduced in both H and N cells, and the activated GSK3-like kinases phosphorylate EGL3 in H cells to promote its cytoplasmic localization in both H cells and N cells, both of which lead to less WER-GL3/EGL3-TTG1 complex formation in nuclei and suppression of GL2 expression. The activity of some formed WER-bHLH-TTG1 complexes may be further inhibited by GSK3-like kinases phosphorylating TTG1. In contrast, enhanced BR early signaling inhibits GSK3-like kinases, leading to nuclear accumulation of the unphosphorylated EGL3 in H cells and normal function of unphosphorylated TTG1 in both cell types. Although CPC can move into H cells, due to enhanced WER expression and more efficient interaction of EGL3 with WER than with CPC (Song et al., 2011), more WER-EGL3-TTG1 complex is formed in H cells to promote GL2 expression and determine N cell fate. In N cells, the nucleus-localized GL3 can interact with WER and TTG1 to promote GL2 expression and maintain N cell fate. However, it remains to be investigated how TTG1 and WER expression is regulated by BR signaling. It is also not clear how BR signaling coordinates with positional signals and other phytohormones to regulate root hair patterning.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig8-v2.jpg)\n\n**Figure 8.:** Without BR early signaling, WER expression is reduced, and the activated GSK3-like kinases phosphorylate EGL3 and TTG1 in both H and N cells, leading to reduced formation and/or activity of the WER-EGL3/GL3-TTG1 complex, which inhibits GL2 expression in some N cells. With enhanced BR early signaling, WER expression is enhanced in both H and N cells, and the GSK3-like kinases activity is inhibited, leading to reduced phosphorylation of EGL3 and TTG1 in both cell types. Thus, WER-EGL3-TTG1 and WER-GL3-TTG1 complexes with transcriptional activity are formed in H and N cells, respectively, to promote GL2 expression and non-root hair cell fate. BR: brassinosteroid.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02525/elife-02525-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Transverse section from the root meristem of the PWER::GUS transgenic plant. Scale bar, 25 \u03bcm. (B) The WER expression level was enhanced in the bin2-3 bil1 bil2 mutant. CPD (CONSTITUTIVE PHOTOMORPHOGENIC DWARF), a BR biosynthetic gene feedback inhibited by BR signaling, was used as a control. The expression level of CPD and WER in WS-2 was normalized to \u20181\u2019, and a U-BOX gene (At5g15400) was used as an internal control. Error bars indicate SD. **p<0.01 with a two-tailed Student's t test. BR: brassinosteroid.\n\n## Materials and methods\n\n### Plant materials and growth conditions\n\nThe seeds of the wer-1 and PGL2::GUS lines were obtained from Dr John Schiefelbein (University of Michigan), the bin2-3 bil1 bil2 seeds were obtained from Jianming Li (University of Michigan), and the cpc-1 seeds (CS6399) were obtained from the Arabidopsis Biological Resource Center (Ohio State University). Combinations of the BR-related mutants with the root hair mutants or the PGL2::GUS line were generated by crossing and selected by GUS staining based on the mutant phenotype, or antibiotic selection marker analysis. For root hair observation, seeds were grown on 1/2 MS medium (pH 5.8) with 1% sucrose, chilled for 3 d at 4\u00b0C, and grown for 5 d at 23\u00b0C under long-day conditions (16 hr light/8 hr dark). Nicotiana benthamiana plants were grown at 28\u00b0C under long-day conditions (16 hr light/8 hr dark).\n\n### Construction of double or multiple mutants\n\nThe double mutants or multiple mutants were derived from genetic crosses of the parental mutants (or transgenic lines). For generation of the BRI1-OX wer-1 and bil1 bil2 bil3 wer-1 double/multiple mutants, the wer-1 was genotyped with its point mutation-derived cleaved amplified polymorphic sequence (CAPS) marker (Lee and Schiefelbein, 1999) (Supplementary file 1), the bin2-3 bil1 bil2 was genotyped as described (Yan et al., 2009), and the BRI1-OX was selected by the antibiotic selection markers. For generation of bri1-116 cpc-1 and cpd cpc-1 double mutants, the cpc-1 was identified by PCR and phenotypic analysis, and the bri1-116 and the cpd were isolated by phenotype.\n\n### Plasmid construction and recombined protein purification\n\nFor GST pull-down assays, BIN2 was cloned into the PET28a vector, and EGL3 was cloned into the pGEX4T-1 vector. For in vitro kinase assays, WER, TTG1, CPC, and EGL3 were cloned into the pMAL-C2X vector. His-fused BIN2 (BIN2-His), GST-fused EGL3 (EGL3-GST), and MBP-fused WER (WER-MBP), TTG1 (TTG1-MBP), CPC (CPC-MBP), and EGL3 (EGL3-MBP) were expressed in BL21 (DE3) pLySs strain and purified with either Ni-NTA agarose (Clontech, Mountain View, CA), glutathione resin (Genescript, Piscataway, NJ), or amylase resin (NEB, Ipswich, MA), respectively.\n\n### Plant transformation and selection of transgenic plants\n\nTo generate plants expressing GFP-tagged EGL3 or mutated EGL3T399A and EGL3T209A/T213A, the various EGL3 cDNAs were cloned in-frame with GFP into the pCAMBIA2302 vector and driven by the EGL3 promoter (2 kb upstream of the start codon), and the plants expressing GFP-tagged TTG1 were generated by cloning the TTG1 cDNA in-frame with GFP into the pCAMBIA2302 vector and driven by the TTG1 promoter (2 kb upstream of the start codon). The constructs were transformed into Agrobacterium tumefaciens GV3101 strains. All transgenic plants were generated by floral dip transformation. T0 seeds were harvested and screened by germinating on MS solid medium with antibiotic selection. For each transformation, at least five individual T1 transgenic lines were selected. Transgenic lines of PEGL3::EGL3-GFP, PEGL3::EGL3T399A-GFP, PEGL3::EGL3T209A/T213A-GFP, and PTTG1::TTG1-GFP with T2 or higher generations were used for further analysis.\n\n### Microscopy and histochemical analysis\n\nThe root hair pattern of the 5-day-old seedlings was observed, and images at \u00d7100 magnification were taken with a Leica MZ FLIII stereomicroscope (Leica Microsystems). The root hair density was counted as described (Galway et al., 1994; Jones et al., 2002) with some modifications. Any visible protrusion from the epidermal cell was regarded as a root hair, regardless of length. The number of root hairs was counted from one side of a 1 mm segment from the imitated differentiation region of the 5-day-old roots, and at least eight roots were measured for each stain. The hair cell length was measured along the longitudinal plane at \u00d7100 magnification using the software Scion Image, and at least 10 root hair cells were measured for each root. The relative root number was calculated as root hair density \u00d7 root hair cell length for each root as described (Wada et al., 1997).\n\nThe histochemical staining of 5-day-old roots harboring the GUS reporter was performed as described (Masucci et al., 1996). Transverse sections of root meristem were prepared as described (Ye et al., 2010) with modifications. The proportion of cells expressing or not expressing PGL2::GUS reporter in H cells or N cells was measured by examining sections at least from eight seedlings in each strain. For protein localization of EGL3-GFP and its mutated forms, the 5-day-old transgenic plants were examined by confocal microscope (Zeiss) after staining with 5 \u03bcg/ml propidium iodide (PI) (Sigma, St. Louis, MO) for 10 s at room temperature, and images were captured at 489 nm and 538 nm laser excitation and at 509 nm and 617 nm emission for GFP and PI staining. The pattern of epidermal cell types was determined as described (Lee and Schiefelbein, 2002).\n\n### Yeast two-hybrid assay\n\nFor yeast two-hybrid assays, the full length cDNA of BIN2 was cloned into vector pEXP-AD502 (BIN2-AD) and used as a prey, and the full length cDNAs of EGL3, WER, TTG1, and CPC were cloned into the pDBLeu vector (EGL3-DB, WER-DB, TTG1-DB, CPC-DB), respectively, and used as a bait. The prey and bait plasmids were transformed into the yeast strains AH109 and Y187, respectively. After yeast mating, the protein\u2013protein interactions were tested on SD medium minus Leu, Trp, and His, and containing 2 mM 3-amino-1, 2, 4-triazole (3AT) (Sigma, St. Louis, MO).\n\n### Transient expression assays in Nicotiana benthamiana leaves\n\nTo generate the vector system for BiFC analysis, the full length cDNAs of EGL3, WER, TTG1, and CPC were cloned into the pXY104 vector (cYFP), respectively, to generate EGL3-cYFP, WER-cYFP, TTG1-cYFP, and CPC-cYFP constructs, and BIN2 cDNA was cloned into the pXY106 (nYFP) vector to generate BIN2-nYFP construct. For transient expression, Agrobacterium strains (GV3101) carrying the constructs for testing the specific interaction were transformed into 4\u20135-week-old Nicotiana benthamiana leaves as described previously (Walter et al., 2004). After infiltration for 4 d, the lower leaf epidermis cells were used for analyzing the fluorescence signal by confocal microscopy (Zeiss).\n\nFor dual-luciferase assays, cDNAs of the effectors WER, EGL3, and TTG1, and the regulator bin2-1 were cloned with Flag tag into pCAMBIA2302 driven by a 35S promoter. GL2 promoter (2 kb upstream of the start codon) was cloned into the pGreenII 0800-LUC vector to be used as the reporter. The method of transient expression used was as previously described (Hellens et al., 2005).\n\n### GST pull-down assays\n\nThe purified proteins, EGL3-GST, WER-GST, TTG1-GST, CPC-GST, and GST, were bound with 25 \u03bcl GST resin in binding buffer (10 mM phosphate buffer, pH 7.4, 140 mM NaCl, 3 mM KCl, 0.1% Triton X-100) for 2 hr at 4\u00b0C. After washing three times with the binding buffer, an equal amount of BIN2-His was added and rebound for 2 hr at 4\u00b0C. After boiling in SDS loading buffer for 5 min, the pull-down proteins were separated on 10% SDS\u2013PAGE gels and detected by immunoblotting with anti-His antibody (Abmart, Shanghai, China).\n\n### In vitro kinase assays and phosphorylation site identification\n\nIn vitro kinase assays were performed in 24 \u03bcl reaction buffer (20 mM Tris, pH 7.5, 10 mM MgCl2, 5 mM DTT) containing 20 \u03bcM ATP and 1 \u03bcl of 10 \u03bcCi [32P] \u03b3ATP (PerkinElmer, Waltham, Massachusetts) and purified proteins. The reaction was carried out at 30\u00b0C for 1 hr and terminated by adding 6 \u03bcl of 5 \u00d7 SDS loading buffer. After boiling for 3 min, proteins were separated on 10% SDS\u2013PAGE. Gels were stained with Coomassie brilliant blue, and then dried and autoradiographed. For phosphorylation site identification, in vitro kinase assays were performed, and protein bands were excised to be used for mass spectrometry analysis.\n\n### Site-directed mutagenesis of EGL3\n\nThe mutated forms of EGL3 were generated by a PCR-based site-directed mutagenesis (Supplementary file 1).\n",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "90d8ffcb-7f02-4305-89a6-4e979dfdbcbf",
+      "submission_id": "47bfb70d-172e-41de-add1-3d24e592a6a9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sheila McCormick, University of California, Berkeley and USDA Agricultural Research Service , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02525.021](https://doi.org/10.7554/eLife.02525.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cBrassinosteroid signaling control root epidermal cell fate by GSK3-like kinases regulating WER-GL3/EGL3-TTG1 complex\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor (Detlef Weigel) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Sheila McCormick (Reviewing editor) and John Schiefelbein (peer reviewer).\n\nThe Reviewing editor and the other reviewer discussed their comments before reaching this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis paper provides a significant advance in our understanding of the mechanism of brassinosteroid control of root hair cell pattern in Arabidopsis. While the first evidence for BR involvement in root hair patterning was published by Kuppusamy et al. (2009), this paper goes significantly beyond this early work, to include a broad array of experiments (including more BR-biosynthetic and signaling mutants, greater variety of BR inhibitors, and analysis of more epidermal patterning genes) and, most importantly, providing a clear mechanistic explanation (including evidence that the non-hair BR effect is mediated by GSK3-like kinases and evidence for interaction/phosphorylation of EGL3 and TTG1 by BIN2). Particularly exciting is that the work reveals an example of a core BR-signaling component targeting a non-BR transcription factor.\n\nNo additional experiments are required; the requested revisions are related to how the manuscript is written. It is not written with a general plant biologist in mind (i.e., someone who does not work on this system). There is a lot of jargon and thus the importance of the work may be obscure to some readers. The authors do not make it clear enough what is new about their work (compared to previous work), and they comment on previous work in an unconventional way. For example, the phrasing \u201cthis finding is also supported by a previous report\u201d; more typically the phrasing would be \u201cour results support the previously published result.\u201d It is certainly fine to emphasize how your results are more substantial than those of Kuppusamy et al.\n\nThe quality of the English needs improvement. We suggest that you seek additional help from a native English speaker; the eLife editorial office can also give you advice or help to improve the writing.\n",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "188b0b9b-73de-4936-b95b-e985304b33f5",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C1",
+      "claim": "In Arabidopsis, root hair and non-hair cell fates are determined by a MYB-bHLH-WD40 transcriptional complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, root hair and non-hair cell fates are determined by a MYB-bHLH-WD40 transcriptional complex and are regulated by many internal and environmental cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about Arabidopsis root hair development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "e813f70b-eea0-45dd-8233-fcba060a2cdb",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C2",
+      "claim": "Root hair and non-hair cell fates are regulated by many internal and environmental cues.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, root hair and non-hair cell fates are determined by a MYB-bHLH-WD40 transcriptional complex and are regulated by many internal and environmental cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "5929786a-2fc5-4de9-b468-060dc9ddf986",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C3",
+      "claim": "Brassinosteroids play important roles in regulating root hair specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Brassinosteroids play important roles in regulating root hair specification by unknown mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact, though the mechanisms were previously unknown.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "33076881-9904-42d0-bf08-f84d35197d55",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C4",
+      "claim": "Brassinosteroid signaling inhibits root hair formation through GSK3-like kinases or upstream components.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we systematically examined root hair phenotypes in brassinosteroid-related mutants, and found that brassinosteroid signaling inhibits root hair formation through GSK3-like kinases or upstream components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on systematic examination of mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "b8e8f1f6-dc10-4ed4-b24b-4b503bd62169",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C5",
+      "claim": "With enhanced brassinosteroid signaling, GL2 is ectopically expressed in hair cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that with enhanced brassinosteroid signaling, GL2, a cell fate marker for non-hair cells, is ectopically expressed in hair cells, while its expression in non-hair cells is suppressed when brassinosteroid signaling is reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "6e66b011-7b29-4e0b-b71e-984edf44be26",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C6",
+      "claim": "GL2 expression in non-hair cells is suppressed when brassinosteroid signaling is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that with enhanced brassinosteroid signaling, GL2, a cell fate marker for non-hair cells, is ectopically expressed in hair cells, while its expression in non-hair cells is suppressed when brassinosteroid signaling is reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "35ebc921-b1be-43e2-9d99-0d2c59a3088a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C7",
+      "claim": "GL2 is a cell fate marker for non-hair cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that with enhanced brassinosteroid signaling, GL2, a cell fate marker for non-hair cells, is ectopically expressed in hair cells, while its expression in non-hair cells is suppressed when brassinosteroid signaling is reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "63c8c991-f0ac-4292-a5a0-6773e542f98a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C8",
+      "claim": "Brassinosteroid-regulated root epidermal cell patterning is dependent on the WER-GL3/EGL3-TTG1 transcriptional complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic analysis demonstrated that brassinosteroid-regulated root epidermal cell patterning is dependent on the WER-GL3/EGL3-TTG1 transcriptional complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on genetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "801e4b4e-2967-4d6b-a648-dbebda205a2a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C9",
+      "claim": "BIN2 interacted with EGL3.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the GSK3-like kinases, BIN2, interacted with and phosphorylated EGL3, and EGL3s mutated at phosphorylation sites were retained in hair cell nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "5089011f-27d7-4473-be30-0086847f2ed4",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C10",
+      "claim": "BIN2 phosphorylated EGL3.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the GSK3-like kinases, BIN2, interacted with and phosphorylated EGL3, and EGL3s mutated at phosphorylation sites were retained in hair cell nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "c749ddee-ff4d-46f3-80a0-9fa0d4a28e66",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C11",
+      "claim": "EGL3s mutated at phosphorylation sites were retained in hair cell nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the GSK3-like kinases, BIN2, interacted with and phosphorylated EGL3, and EGL3s mutated at phosphorylation sites were retained in hair cell nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8cc38380-53f6-44b8-ab8e-fd1eb9ce830a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C12",
+      "claim": "BIN2 phosphorylated TTG1 to inhibit the activity of the WER-GL3/EGL3-TTG1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "BIN2 phosphorylated TTG1 to inhibit the activity of the WER-GL3/EGL3-TTG1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "4b9c4a82-51e3-41d6-a47f-3466396c3fbe",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C13",
+      "claim": "Hair cells (trichoblasts) are specified early from root epidermal cells that lie over clefts between two underlying cortical cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hair (H) cells, or trichoblasts, are specified early from root epidermal cells that lie over clefts between two underlying cortical cells, whereas the root epidermal cells that lie over a single cortical cell develop as non-hair (N) cells, or atrichoblasts (Ishida et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "c48f6733-6b7a-456a-891e-1293967f3383",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C14",
+      "claim": "Root epidermal cells that lie over a single cortical cell develop as non-hair cells (atrichoblasts).",
+      "claim_type": "EXPLICIT",
+      "source": "Hair (H) cells, or trichoblasts, are specified early from root epidermal cells that lie over clefts between two underlying cortical cells, whereas the root epidermal cells that lie over a single cortical cell develop as non-hair (N) cells, or atrichoblasts (Ishida et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "397b8728-6569-478b-b666-f7ada234a584",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C15",
+      "claim": "Hair cell and non-hair cell files are patterned alternately in rows within the Arabidopsis root epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hair cell and non-hair cell files are patterned alternately in rows within the Arabidopsis root epidermis, with columns of hair cells interspersed with columns of non-hair cells (Schiefelbein et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "bd6c2bd7-8b41-4dac-9520-794ad67c8193",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C16",
+      "claim": "Root epidermal cells in the H position have a greater rate of cell division than those in the N position.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to root hair outgrowth, root epidermal cells in the H position can be distinguished from those in the N position by many visible cellular features, including a greater rate of cell division (Berger et al., 1998), reduced cell length and vacuolation (Dolan et al., 1994; Galway et al., 1994), and enhanced cytoplasmic density (Dolan et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "61864d86-ed80-4b5f-a4ad-8fd33b34bcb0",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C17",
+      "claim": "Root epidermal cells in the H position have reduced cell length and vacuolation compared to those in the N position.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to root hair outgrowth, root epidermal cells in the H position can be distinguished from those in the N position by many visible cellular features, including a greater rate of cell division (Berger et al., 1998), reduced cell length and vacuolation (Dolan et al., 1994; Galway et al., 1994), and enhanced cytoplasmic density (Dolan et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "21aedd12-8934-4231-91c7-9f9644edbea1",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C18",
+      "claim": "Root epidermal cells in the H position have enhanced cytoplasmic density compared to those in the N position.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to root hair outgrowth, root epidermal cells in the H position can be distinguished from those in the N position by many visible cellular features, including a greater rate of cell division (Berger et al., 1998), reduced cell length and vacuolation (Dolan et al., 1994; Galway et al., 1994), and enhanced cytoplasmic density (Dolan et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "e7ca4cfc-7c32-424c-ac68-99d832609475",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C19",
+      "claim": "Positional signals and SCRAMBLED (SCM) function through a MYB-bHLH-WD40 repeat transcriptional complex to determine root epidermal cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is proposed that positional signals and a putative receptor-like kinase SCRAMBLED (SCM) (Kwak et al., 2005) function through a MYB-bHLH-WD40 repeat transcriptional complex to determine root epidermal cell fate (Schiefelbein et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed model with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "d2c9f822-7533-4c81-851a-a755119f7909",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C20",
+      "claim": "In N cells, WEREWOLF (WER) forms a complex with GL3/EGL3 and TTG1 to promote expression of GLABRA2 (GL2) and CAPRICE (CPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this model, in N cells, WEREWOLF (WER) (Lee and Schiefelbein, 1999), a R2R3 MYB-domain transcription factor, forms a complex with basic helix-loop-helix transcription factors, GLABRA3 (GL3)/ENHANCER OF GLABRA3 (EGL3) (Bernhardt et al., 2003; Zhang et al., 2003), and a WD40 repeat protein, TRANSPARENT TESTA GLABRA1 (TTG1) (Galway et al., 1994), to promote expression of GLABRA2 (GL2) and CAPRICE (CPC) (Ryu et al., 2005; Song et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of an established model with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "12f5f803-f06b-460b-b545-2e47b2ea6aa6",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C21",
+      "claim": "GL2 negatively regulates H cell fate and positively regulates N cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "GL2, a homeodomain/leucine zipper transcription factor, negatively regulates H cell fate and positively regulates N cell fate (Masucci et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ed78e84d-7de5-40f9-9f3d-458d2fc3aef4",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C22",
+      "claim": "CPC moves from N cells to H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CPC (Wada et al., 1997), a MYB-type transcription factor, moves from N cells to H cells (Kurata et al., 2005a) to compete with WER for binding to GL3/EGL3 to form a CPC-GL3/EGL3-TTG1 complex, which is unable to induce GL2 expression (Song et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "38cafa54-dfb5-445b-9fa9-ecb4f30d88f3",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C23",
+      "claim": "CPC competes with WER for binding to GL3/EGL3 to form a CPC-GL3/EGL3-TTG1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "CPC (Wada et al., 1997), a MYB-type transcription factor, moves from N cells to H cells (Kurata et al., 2005a) to compete with WER for binding to GL3/EGL3 to form a CPC-GL3/EGL3-TTG1 complex, which is unable to induce GL2 expression (Song et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "b66ad7eb-1927-4434-a014-692d1ac75b77",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C24",
+      "claim": "The CPC-GL3/EGL3-TTG1 complex is unable to induce GL2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "CPC (Wada et al., 1997), a MYB-type transcription factor, moves from N cells to H cells (Kurata et al., 2005a) to compete with WER for binding to GL3/EGL3 to form a CPC-GL3/EGL3-TTG1 complex, which is unable to induce GL2 expression (Song et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "22a2ccbf-416b-4f8d-96c5-947a2c73b8ed",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C25",
+      "claim": "GL3 is a mobile protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to CPC, the bHLH transcription factor GL3 is also a mobile protein (Bernhardt et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "e77a1be7-e2a6-4509-a8b5-58dd30423c2b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C26",
+      "claim": "GL3 and EGL3 are both expressed in H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GL3 and its homologue EGL3 are both expressed in H cells, but GL3 protein is only localized in the N cell nucleus, indicating that GL3 protein moves into the adjoining N cell nucleus to determine N cell fate (Bernhardt et al., 2003, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "3533705b-f426-4964-9adf-0a2def9cc676",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C27",
+      "claim": "GL3 protein is only localized in the N cell nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "GL3 and its homologue EGL3 are both expressed in H cells, but GL3 protein is only localized in the N cell nucleus, indicating that GL3 protein moves into the adjoining N cell nucleus to determine N cell fate (Bernhardt et al., 2003, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "eac039c6-4dae-4bb8-9460-baa985623697",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C28",
+      "claim": "GL3 protein moves into the adjoining N cell nucleus to determine N cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "GL3 and its homologue EGL3 are both expressed in H cells, but GL3 protein is only localized in the N cell nucleus, indicating that GL3 protein moves into the adjoining N cell nucleus to determine N cell fate (Bernhardt et al., 2003, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "63466bf8-10ff-4e38-be61-4b850ab43718",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C29",
+      "claim": "Abscisic acid (ABA) plays a role in the early stage of root epidermal cell specification.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, abscisic acid (ABA) plays a role in the early stage of root epidermal cell specification (Van Hengel et al., 2004) and in inhibiting root hair tip growth in Arabidopsis (Schnall and Quatrano, 1992), while both ethylene and auxin may act downstream of TTG1 and GL2 to promote root hair formation and elongation (Masucci and Schiefelbein, 1994, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "2334821a-2a8f-43ba-b0d4-49efbfe9629d",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C30",
+      "claim": "ABA inhibits root hair tip growth in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, abscisic acid (ABA) plays a role in the early stage of root epidermal cell specification (Van Hengel et al., 2004) and in inhibiting root hair tip growth in Arabidopsis (Schnall and Quatrano, 1992), while both ethylene and auxin may act downstream of TTG1 and GL2 to promote root hair formation and elongation (Masucci and Schiefelbein, 1994, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "d400e96c-ba77-453d-8a8a-cbb419d1c4cd",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C31",
+      "claim": "Ethylene and auxin may act downstream of TTG1 and GL2 to promote root hair formation and elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, abscisic acid (ABA) plays a role in the early stage of root epidermal cell specification (Van Hengel et al., 2004) and in inhibiting root hair tip growth in Arabidopsis (Schnall and Quatrano, 1992), while both ethylene and auxin may act downstream of TTG1 and GL2 to promote root hair formation and elongation (Masucci and Schiefelbein, 1994, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "37f70014-afef-44ce-9c65-33f5ba50b67c",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C32",
+      "claim": "Jasmonic acids (JAs) promote root hair formation through their interaction with ethylene.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, jasmonic acids (JAs) promote root hair formation through their interaction with ethylene (Zhu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "b2d79620-a508-4ff6-814a-804ce840c1fb",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C33",
+      "claim": "Brassinosteroids (BRs) play essential roles in regulating shoot, root, and reproductive development.",
+      "claim_type": "EXPLICIT",
+      "source": "The plant steroid hormones, brassinosteroids (BRs), play essential roles in regulating many developmental processes, including shoot, root, and reproductive development (Savaldi-Goldstein et al., 2007; Ye et al., 2010; Hacham et al., 2011; Yang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "974d49ea-0d31-4443-ba3e-14a74fb79af1",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C34",
+      "claim": "BRs are perceived by the receptor kinase BRASSINOSTEROID INSENSITIVE 1 (BRI1).",
+      "claim_type": "EXPLICIT",
+      "source": "BRs are perceived by the receptor kinase BRASSINOSTEROID INSENSITIVE 1 (BRI1) (Li and Chory, 1997; Hothorn et al., 2011; She et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "2dc8c926-44f9-4bfa-bab2-91305bd7d6ed",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C35",
+      "claim": "BR-activated BRI1 phosphorylates BRI1 KINASE INHIBITOR 1 (BKI1) to release its inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The BR-activated BRI1 phosphorylates BRI1 KINASE INHIBITOR 1 (BKI1) to release its inhibition (Wang and Chory, 2006), and then BKI1 acts as a positive regulator by binding to a subset of 14-3-3 proteins (Wang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "064b2de9-92da-469a-bbb7-8d2e1e730918",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C36",
+      "claim": "BKI1 acts as a positive regulator by binding to a subset of 14-3-3 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The BR-activated BRI1 phosphorylates BRI1 KINASE INHIBITOR 1 (BKI1) to release its inhibition (Wang and Chory, 2006), and then BKI1 acts as a positive regulator by binding to a subset of 14-3-3 proteins (Wang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "9ee6a856-b48a-49d2-87fc-4f8189a51ffb",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C37",
+      "claim": "BR-SIGNALING KINASE (BSK) transduces the BR signaling through bri1 SUPPRESSORS 1 (BSU1) to inactivate BIN2.",
+      "claim_type": "EXPLICIT",
+      "source": "Another BRI1 substrate, BR-SIGNALING KINASE (BSK), transduces the BR signaling through bri1 SUPPRESSORS 1 (BSU1) to inactivate a GSK3-like kinase BRASSINOSTEROID INSENSITIVE 2 (BIN2), which leads to accumulation of the dephosphorylated form of transcriptional factors BRI1 EMS SUPPRESSOR 1 (BES1)/BRASSINAZOLE RESISTANT 1 (BZR1) in the nucleus to regulate gene expression (Yang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "48f44a23-26b2-4c1a-8168-7914dd8ced8e",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C38",
+      "claim": "Inactivation of BIN2 leads to accumulation of the dephosphorylated form of BES1/BZR1 in the nucleus to regulate gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Another BRI1 substrate, BR-SIGNALING KINASE (BSK), transduces the BR signaling through bri1 SUPPRESSORS 1 (BSU1) to inactivate a GSK3-like kinase BRASSINOSTEROID INSENSITIVE 2 (BIN2), which leads to accumulation of the dephosphorylated form of transcriptional factors BRI1 EMS SUPPRESSOR 1 (BES1)/BRASSINAZOLE RESISTANT 1 (BZR1) in the nucleus to regulate gene expression (Yang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "81ca9711-f045-4d94-90dd-7ef4339dc66c",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C39",
+      "claim": "BRs play an important role in determining root epidermal cell fate by regulating WER and GL2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study suggests that BRs play an important role in determining root epidermal cell fate by regulating WER and GL2 expression (Kuppusamy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous finding with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "9552f5ff-2d45-4ba6-ab61-101ce03fb5e9",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C40",
+      "claim": "The relative hair number was higher in bri1-116 (4.67 \u00b1 0.47) than in Col-0 (3.89 \u00b1 0.43).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative hair number (=root hair density \u00d7 root hair cell length) was higher in bri1-116 (4.67 \u00b1 0.47), det2-1 (4.75 \u00b1 0.52), and cpd (4.65 \u00b1 0.54), and significantly lower in BRI1-OX (3.40 \u00b1 0.46) and bin2-3 bil1 bil2 (2.86 \u00b1 0.39) than in their corresponding wild types Col-0 (3.89 \u00b1 0.43) and WS-2 (3.85 \u00b1 0.41) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "b9af5757-8357-4c5a-9014-471035e31aa8",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C41",
+      "claim": "The relative hair number was higher in det2-1 (4.75 \u00b1 0.52) than in Col-0 (3.89 \u00b1 0.43).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative hair number (=root hair density \u00d7 root hair cell length) was higher in bri1-116 (4.67 \u00b1 0.47), det2-1 (4.75 \u00b1 0.52), and cpd (4.65 \u00b1 0.54), and significantly lower in BRI1-OX (3.40 \u00b1 0.46) and bin2-3 bil1 bil2 (2.86 \u00b1 0.39) than in their corresponding wild types Col-0 (3.89 \u00b1 0.43) and WS-2 (3.85 \u00b1 0.41) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "18953bc7-4810-4a8a-bb78-05b073e005e0",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C42",
+      "claim": "The relative hair number was higher in cpd (4.65 \u00b1 0.54) than in Col-0 (3.89 \u00b1 0.43).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative hair number (=root hair density \u00d7 root hair cell length) was higher in bri1-116 (4.67 \u00b1 0.47), det2-1 (4.75 \u00b1 0.52), and cpd (4.65 \u00b1 0.54), and significantly lower in BRI1-OX (3.40 \u00b1 0.46) and bin2-3 bil1 bil2 (2.86 \u00b1 0.39) than in their corresponding wild types Col-0 (3.89 \u00b1 0.43) and WS-2 (3.85 \u00b1 0.41) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "92dda6cb-310f-4b77-94c3-402dbfb39865",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C43",
+      "claim": "The relative hair number was significantly lower in BRI1-OX (3.40 \u00b1 0.46) than in Col-0 (3.89 \u00b1 0.43).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative hair number (=root hair density \u00d7 root hair cell length) was higher in bri1-116 (4.67 \u00b1 0.47), det2-1 (4.75 \u00b1 0.52), and cpd (4.65 \u00b1 0.54), and significantly lower in BRI1-OX (3.40 \u00b1 0.46) and bin2-3 bil1 bil2 (2.86 \u00b1 0.39) than in their corresponding wild types Col-0 (3.89 \u00b1 0.43) and WS-2 (3.85 \u00b1 0.41) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "31525b36-75ec-45cc-b979-2576a7845c9a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C44",
+      "claim": "The relative hair number was significantly lower in bin2-3 bil1 bil2 (2.86 \u00b1 0.39) than in WS-2 (3.85 \u00b1 0.41).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative hair number (=root hair density \u00d7 root hair cell length) was higher in bri1-116 (4.67 \u00b1 0.47), det2-1 (4.75 \u00b1 0.52), and cpd (4.65 \u00b1 0.54), and significantly lower in BRI1-OX (3.40 \u00b1 0.46) and bin2-3 bil1 bil2 (2.86 \u00b1 0.39) than in their corresponding wild types Col-0 (3.89 \u00b1 0.43) and WS-2 (3.85 \u00b1 0.41) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "b8b84bae-ca77-44ed-aacb-033154169718",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C45",
+      "claim": "There was no significant difference in relative hair number between BES1-RNAi and Col-0.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no significant difference between BES1-RNAi and Col-0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "52326b28-e717-4bde-834e-de5d89ff598b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C46",
+      "claim": "In the wild type root, H cells and N cells are arranged in alternating files with H cell columns regularly interspaced with N cell columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Images at the highest magnification (\u00d7100; Figure 1) showed that in the wild type root (Figure 1A), the H cells and N cells were arranged in alternating files with the H cell columns regularly interspaced with the N cell columns; no adjacent H cell columns were found.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "740989d6-579f-4387-a175-89320e2cfef6",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C47",
+      "claim": "In BR signaling-inhibited mutants (bri1-116, det2-1, and cpd), many root hair columns are next to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the BR signaling-inhibited mutants, including bri1-116, det2-1, and cpd (Figure 1B\u2013D), many root hair columns were next to each other, leading to more root hairs, suggesting that some N cell fate might be changed into H cell fate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "55f14dd9-2bf0-4b3e-aeef-860e7d8ac9dd",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C48",
+      "claim": "In BR signaling-inhibited mutants, some N cell fate might be changed into H cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the BR signaling-inhibited mutants, including bri1-116, det2-1, and cpd (Figure 1B\u2013D), many root hair columns were next to each other, leading to more root hairs, suggesting that some N cell fate might be changed into H cell fate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observation of adjacent root hair columns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "957b0245-9cc6-4b1d-8f1e-84c835ab198f",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C49",
+      "claim": "BR signaling-enhanced plants (BRI1-OX and bin2-3 bil1 bil2) grew fewer root hairs than the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the BR signaling-enhanced plants, including BRI1-OX and bin2-3 bil1 bil2, grew fewer root hairs than the wild type, due to the fact that they lacked root hairs in many H cell positions (Figure 1A,E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "f25fb202-d5f1-468c-85c3-7dfa79362751",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C50",
+      "claim": "BRI1-OX and bin2-3 bil1 bil2 lacked root hairs in many H cell positions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the BR signaling-enhanced plants, including BRI1-OX and bin2-3 bil1 bil2, grew fewer root hairs than the wild type, due to the fact that they lacked root hairs in many H cell positions (Figure 1A,E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "96402ecd-3d30-411a-b6da-bfb02f866ad6",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C51",
+      "claim": "The BES1-RNAi line showed a similar root hair pattern as the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the BES1-RNAi line showed a similar root hair pattern as the wild type (Figure 1A,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "49dcc4f0-6d1d-4667-90ff-98ba4baf5de3",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C52",
+      "claim": "The relative root hair number of plants grown on medium containing 100 nM eBL (3.22 \u00b1 0.42) was significantly reduced compared to plants grown on mock medium (3.80 \u00b1 0.45).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that compared with plants grown on the mock medium (3.80 \u00b1 0.45), the relative root hair number of plants grown on medium containing 100 nM eBL (3.22 \u00b1 0.42) or 30 \u03bcM bikinin (2.71 \u00b1 0.50) was significantly reduced, while it was greatly increased in plants grown on medium containing 1 \u03bcM Brz (4.17 \u00b1 0.43) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "3b8fe59f-e869-424f-965f-d0297462cf0b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C53",
+      "claim": "The relative root hair number of plants grown on medium containing 30 \u03bcM bikinin (2.71 \u00b1 0.50) was significantly reduced compared to plants grown on mock medium (3.80 \u00b1 0.45).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that compared with plants grown on the mock medium (3.80 \u00b1 0.45), the relative root hair number of plants grown on medium containing 100 nM eBL (3.22 \u00b1 0.42) or 30 \u03bcM bikinin (2.71 \u00b1 0.50) was significantly reduced, while it was greatly increased in plants grown on medium containing 1 \u03bcM Brz (4.17 \u00b1 0.43) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "2ea2c358-5f10-444a-8067-a33623ca3426",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C54",
+      "claim": "The relative root hair number was greatly increased in plants grown on medium containing 1 \u03bcM Brz (4.17 \u00b1 0.43) compared to plants grown on mock medium (3.80 \u00b1 0.45).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that compared with plants grown on the mock medium (3.80 \u00b1 0.45), the relative root hair number of plants grown on medium containing 100 nM eBL (3.22 \u00b1 0.42) or 30 \u03bcM bikinin (2.71 \u00b1 0.50) was significantly reduced, while it was greatly increased in plants grown on medium containing 1 \u03bcM Brz (4.17 \u00b1 0.43) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ca60c3d6-024c-4226-af7c-fd07522dd43b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C55",
+      "claim": "Seedlings grown on medium containing eBL or bikinin produced fewer root hairs in the H position of epidermal cells compared to seedlings grown on mock medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Images at higher magnification (\u00d7100) show that, compared to seedlings grown on the mock medium (Figure 1I), those grown on medium containing eBL or bikinin produced fewer root hairs in the H position of epidermal cells (Figure 1J,K), while those grown on medium containing Brz grew more root hairs in the N position (Figure 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "0027c030-4507-4f2c-ab08-42d6cad26518",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C56",
+      "claim": "Seedlings grown on medium containing Brz grew more root hairs in the N position compared to seedlings grown on mock medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Images at higher magnification (\u00d7100) show that, compared to seedlings grown on the mock medium (Figure 1I), those grown on medium containing eBL or bikinin produced fewer root hairs in the H position of epidermal cells (Figure 1J,K), while those grown on medium containing Brz grew more root hairs in the N position (Figure 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "591a5b59-6e2d-4f8a-be4e-50560ffb9a3b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C57",
+      "claim": "The bin2-3 bil1 bil2 seedlings grown on medium containing 30 \u03bcM bikinin produced very few root hairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the bin2-3 bil1 bil2 seedlings grown on medium containing 30 \u03bcM bikinin produced very few root hairs (Figure 1\u2014figure supplement 1), suggesting that besides BIN2, BIL1, and BIL2, other GSK3-like kinases may also be involved in root hair specification in Arabidopsis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "82055365-9713-41c6-85bc-7e6a6aab4d9b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C58",
+      "claim": "Besides BIN2, BIL1, and BIL2, other GSK3-like kinases may also be involved in root hair specification in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the bin2-3 bil1 bil2 seedlings grown on medium containing 30 \u03bcM bikinin produced very few root hairs (Figure 1\u2014figure supplement 1), suggesting that besides BIN2, BIL1, and BIL2, other GSK3-like kinases may also be involved in root hair specification in Arabidopsis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observation that bikinin treatment of bin2-3 bil1 bil2 still affects root hair formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "399a7de4-ecb3-4519-9042-6106d8b683c0",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C59",
+      "claim": "BR-mediated root epidermal cell pattern formation largely relies on GSK3-like kinases and/or their upstream components.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings indicate that the BR-mediated root epidermal cell pattern formation largely relies on GSK3-like kinases and/or their upstream components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8a50d060-7f15-4a1a-97a1-92aad827cc40",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C60",
+      "claim": "In the wild type, 1.3% of epidermal cells in the N position lacked GL2 expression in cross-sections.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in the wild type, 1.3% of epidermal cells in the N position lacked GL2 expression in cross-sections (Figure 2A,B), and in the longitudinal view of root epidermis, the root epidermal cell files were arranged regularly, with GL2-expressing columns (N cell columns) interspaced with columns without GL2 expression (H cell columns) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "686389f5-de23-4e74-b5a0-67ea3c173091",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C61",
+      "claim": "About 15.3% of bri1-116 cells showed suppressed PGL2::GUS expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, about 15.3% of bri1-116 and 18.8% of det2-1 cells showed suppressed PGL2::GUS expression, and there were adjacent root epidermal cells without GL2 expression in both bri1-116 and det2-1 (Figure 2D\u2013I), which supports a previous finding with bri1-116 and the Brz-treated wild type (Kuppusamy et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ab81909a-3a5e-4545-8814-b7f6e458f7a7",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C62",
+      "claim": "About 18.8% of det2-1 cells showed suppressed PGL2::GUS expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, about 15.3% of bri1-116 and 18.8% of det2-1 cells showed suppressed PGL2::GUS expression, and there were adjacent root epidermal cells without GL2 expression in both bri1-116 and det2-1 (Figure 2D\u2013I), which supports a previous finding with bri1-116 and the Brz-treated wild type (Kuppusamy et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "9473d75d-aad2-47e7-938b-ba8675053cf9",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C63",
+      "claim": "There were adjacent root epidermal cells without GL2 expression in both bri1-116 and det2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, about 15.3% of bri1-116 and 18.8% of det2-1 cells showed suppressed PGL2::GUS expression, and there were adjacent root epidermal cells without GL2 expression in both bri1-116 and det2-1 (Figure 2D\u2013I), which supports a previous finding with bri1-116 and the Brz-treated wild type (Kuppusamy et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "a6f9a3fe-84a0-4c2f-a99f-ca900defd17a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C64",
+      "claim": "Adjacent root hairs in bri1-116 and det2-1 were caused by some N cell fate changing to H cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that adjacent root hairs in bri1-116 and det2-1 were caused by some N cell fate changing to H cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of suppressed GL2 expression in N cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8b00ddbb-9e36-441e-a71b-c4820be8a141",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C65",
+      "claim": "GL2 was ectopically expressed in about 13.5% of H cells in BRI1-OX plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GL2 was ectopically expressed in about 13.5% of H cells in BRI1-OX plants (Figure 2J\u2013L) and in about 19.6% in bin2-3 bil1 bil2 (Figure 2M\u2013O), as compared with only 3.2% in the wild type (Figure 2A\u2013C), indicating that lack of GL2 expression in N cells may correspond to the ectopic root hairs observed in bri1-116 and det2-1, and that the ectopically expressed GL2 in H cells partially inhibits H cell fate in BRI1-OX and bin2-3 bil1 bil2 plants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ad067b3a-7d25-43f7-a7b7-1417ed3bee12",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C66",
+      "claim": "GL2 was ectopically expressed in about 19.6% of H cells in bin2-3 bil1 bil2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GL2 was ectopically expressed in about 13.5% of H cells in BRI1-OX plants (Figure 2J\u2013L) and in about 19.6% in bin2-3 bil1 bil2 (Figure 2M\u2013O), as compared with only 3.2% in the wild type (Figure 2A\u2013C), indicating that lack of GL2 expression in N cells may correspond to the ectopic root hairs observed in bri1-116 and det2-1, and that the ectopically expressed GL2 in H cells partially inhibits H cell fate in BRI1-OX and bin2-3 bil1 bil2 plants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "d71542b0-d81f-4565-9179-c7868c9f9b83",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C67",
+      "claim": "GL2 was ectopically expressed in 3.2% of H cells in the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GL2 was ectopically expressed in about 13.5% of H cells in BRI1-OX plants (Figure 2J\u2013L) and in about 19.6% in bin2-3 bil1 bil2 (Figure 2M\u2013O), as compared with only 3.2% in the wild type (Figure 2A\u2013C), indicating that lack of GL2 expression in N cells may correspond to the ectopic root hairs observed in bri1-116 and det2-1, and that the ectopically expressed GL2 in H cells partially inhibits H cell fate in BRI1-OX and bin2-3 bil1 bil2 plants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "164b29d5-7297-4a90-96c7-739d0adc509c",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C68",
+      "claim": "The ectopically expressed GL2 in H cells partially inhibits H cell fate in BRI1-OX and bin2-3 bil1 bil2 plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GL2 was ectopically expressed in about 13.5% of H cells in BRI1-OX plants (Figure 2J\u2013L) and in about 19.6% in bin2-3 bil1 bil2 (Figure 2M\u2013O), as compared with only 3.2% in the wild type (Figure 2A\u2013C), indicating that lack of GL2 expression in N cells may correspond to the ectopic root hairs observed in bri1-116 and det2-1, and that the ectopically expressed GL2 in H cells partially inhibits H cell fate in BRI1-OX and bin2-3 bil1 bil2 plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of ectopic GL2 expression in H cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "f3be5959-e3e0-4504-aa73-884df683f1f7",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C69",
+      "claim": "BR signaling has an important role in suppressing H cell fate and promoting N cell fate in both the N and the H positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the above results suggested that BR signaling has an important role in suppressing H cell fate and promoting N cell fate in both the N and the H positions, and BR signaling regulates root epidermal cell fate by controlling GL2 expression through GSK3-like kinases, or their upstream components, but not through downstream transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "2dcef85c-dca0-4ef7-a495-c093c74d40fe",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C70",
+      "claim": "BR signaling regulates root epidermal cell fate by controlling GL2 expression through GSK3-like kinases, or their upstream components, but not through downstream transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the above results suggested that BR signaling has an important role in suppressing H cell fate and promoting N cell fate in both the N and the H positions, and BR signaling regulates root epidermal cell fate by controlling GL2 expression through GSK3-like kinases, or their upstream components, but not through downstream transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "471f2923-e1e6-4f89-b995-4d8fe5586a72",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C71",
+      "claim": "GL2 expression is directly regulated by the WER-GL3/EGL3-TTG1 but not the CPC-GL3/EGL3-TTG1 transcriptional complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It was known that GL2 expression is directly regulated by the WER-GL3/EGL3-TTG1 but not the CPC-GL3/EGL3-TTG1 transcriptional complex (Schiefelbein et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "f8c3f459-b964-486a-b730-28794d661b66",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C72",
+      "claim": "cpc-1 is a mutant with fewer root hairs than its counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore whether the BR-regulated GL2 expression and root epidermal cell fate determination are dependent on these complexes, we first created a set of double mutants of cpc-1, a mutant with fewer root hairs than its counterpart (Figure 3A,B), with bri1-116 or cpd (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "767848cb-cf0c-4cfd-8b71-bd2e6eb5f574",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C73",
+      "claim": "Both double mutants bri1-116 cpc-1 and cpd cpc-1 produced few root hairs, similar to cpc-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to cpc-1, both double mutants bri1-116 cpc-1 (Figure 3E) and cpd cpc-1 (Figure 3F) produced few root hairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "aa649ecc-6d89-40d5-af44-725af0f79875",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C74",
+      "claim": "wer-1 is a mutant with more root hairs than Col-0.",
+      "claim_type": "EXPLICIT",
+      "source": "We also generated double or multiple mutants of wer-1, a mutant with more root hairs than Col-0 (Figure 3G,H), with BRI1-OX or bin2-3 bil1 bil2 (Figure 3I,J), and found that both BRI1-OX wer-1 and bin2-3 bil1 bil2 wer-1 (Figure 3K,L) were similar to wer-1, with many ectopic root hairs formed at the N cell position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "00122f9d-20a4-489b-ac3e-735d7f608b76",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C75",
+      "claim": "Both BRI1-OX wer-1 and bin2-3 bil1 bil2 wer-1 were similar to wer-1, with many ectopic root hairs formed at the N cell position.",
+      "claim_type": "EXPLICIT",
+      "source": "We also generated double or multiple mutants of wer-1, a mutant with more root hairs than Col-0 (Figure 3G,H), with BRI1-OX or bin2-3 bil1 bil2 (Figure 3I,J), and found that both BRI1-OX wer-1 and bin2-3 bil1 bil2 wer-1 (Figure 3K,L) were similar to wer-1, with many ectopic root hairs formed at the N cell position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "89f32366-45e7-4be5-a8da-aeabb4c88818",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C76",
+      "claim": "The WER-GL3/EGL3-TTG1 and CPC-GL3/EGL3-TTG1 transcriptional complexes act downstream of BR early signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These genetic analyses indicated that the WER-GL3/EGL3-TTG1 and CPC-GL3/EGL3-TTG1 transcriptional complexes act downstream of BR early signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the genetic analysis of double mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "9eac310b-6cd5-4786-b3c5-57d8978ca53d",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C77",
+      "claim": "BIN2 can interact with EGL3 in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We then conducted yeast two-hybrid assays to test whether any components in the WER-EGL3/GL3-TTG1 or CPC-EGL3/GL3-TTG1 complex interact with BIN2, a well-studied GSK3-like kinase, and found that BIN2 can interact with EGL3 (Figure 4A) but not with CPC in yeast (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from yeast two-hybrid assays with reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "51c445aa-eee1-4902-bb55-8388a5b20469",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C78",
+      "claim": "BIN2 does not interact with CPC in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We then conducted yeast two-hybrid assays to test whether any components in the WER-EGL3/GL3-TTG1 or CPC-EGL3/GL3-TTG1 complex interact with BIN2, a well-studied GSK3-like kinase, and found that BIN2 can interact with EGL3 (Figure 4A) but not with CPC in yeast (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from yeast two-hybrid assays with reference to Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ce46a969-13a6-44f2-9a9f-b57ac419a51a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C79",
+      "claim": "BIN2 can interact with WER, EGL3, and TTG1 in GST pull-down and BiFC assays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to strong auto-activation of WER and TTG1 fused with GAL4-DNA binding domain (DB) in yeast two-hybrid assays (Figure 4\u2014figure supplement 1), we conducted GST pull-down and BiFC (biomolecular fluorescence complementation) assays to test their interactions, and found that BIN2 can interact with WER, EGL3, and TTG1 (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from GST pull-down and BiFC assays with reference to Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "848f7e8a-ecdf-4861-8c17-f6e6bd78734b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C80",
+      "claim": "BIN2 did not phosphorylate WER and CPC.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that BIN2 did not phosphorylate WER and CPC, but was able to phosphorylate EGL3 and TTG1 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from in vitro kinase assays with reference to Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "46f3e936-a7e3-4719-b387-a56f54aae61a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C81",
+      "claim": "BIN2 was able to phosphorylate EGL3 and TTG1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that BIN2 did not phosphorylate WER and CPC, but was able to phosphorylate EGL3 and TTG1 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from in vitro kinase assays with reference to Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "6bd015a6-2df5-4060-adbf-141d1b1c6e3f",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C82",
+      "claim": "Four potential phosphorylation sites (T209, T213, T399, and T403) of EGL3 by BIN2 were identified using mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the biological relevance of EGL3 phosphorylation by a GSK3-like kinase BIN2, we used mass spectrometry and identified four potential phosphorylation sites (T209, T213, T399, and T403) of EGL3 by BIN2 (Figure 5\u2014figure supplement 1), which are located in two regions that contain typical recognition sites of GSK3 kinases (Cohen and Frame, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from mass spectrometry analysis with reference to Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "76669a0e-b87a-4ab7-9086-fda489d53913",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C83",
+      "claim": "The phosphorylation sites T209, T213, T399, and T403 are located in two regions that contain typical recognition sites of GSK3 kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the biological relevance of EGL3 phosphorylation by a GSK3-like kinase BIN2, we used mass spectrometry and identified four potential phosphorylation sites (T209, T213, T399, and T403) of EGL3 by BIN2 (Figure 5\u2014figure supplement 1), which are located in two regions that contain typical recognition sites of GSK3 kinases (Cohen and Frame, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to established knowledge about GSK3 kinase recognition sites.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "f7d0b3e5-542a-456f-898e-65827ecb42cf",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C84",
+      "claim": "Phosphorylation levels of EGL3T399A and EGL3T209A/T213A by BIN2 were significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro phosphorylation assays showed that phosphorylation levels of EGL3T399A and EGL3T209A/T213A by BIN2 were significantly reduced (Figure 6A), indicating that T399 and T209/T213 are the main phosphorylated residues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from in vitro phosphorylation assays with reference to Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "80164428-d66a-4186-88cd-b0e791e8ce0d",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C85",
+      "claim": "T399 and T209/T213 are the main phosphorylated residues of EGL3 by BIN2.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro phosphorylation assays showed that phosphorylation levels of EGL3T399A and EGL3T209A/T213A by BIN2 were significantly reduced (Figure 6A), indicating that T399 and T209/T213 are the main phosphorylated residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the reduced phosphorylation of mutated forms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8a9a3584-ae4b-47bb-a90a-cd53d2af75e9",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C86",
+      "claim": "The EGL3-GFP signal in N cells was apparently higher than that in H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the EGL3-GFP signal in N cells was apparently higher than that in H cells, and that it was mainly localized to cytosol in H cells, but to both cytosol and nucleus in N cells (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from transgenic plants with reference to Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "a0e6ef4d-aa97-4022-ba31-a910b01d8490",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C87",
+      "claim": "EGL3-GFP was mainly localized to cytosol in H cells, but to both cytosol and nucleus in N cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the EGL3-GFP signal in N cells was apparently higher than that in H cells, and that it was mainly localized to cytosol in H cells, but to both cytosol and nucleus in N cells (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from transgenic plants with reference to Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "a9c19801-be0d-4a05-97cd-d8289d2595da",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C88",
+      "claim": "EGL3 is a mobile protein that moves from H cells to N cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As EGL3 mRNA is only expressed in H cells (Bernhardt et al., 2005), this result indicated that, like its homologue GL3, EGL3 is also a mobile protein that moves from H cells to N cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that EGL3 protein is found in N cells despite mRNA expression only in H cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "c2bd9246-1fb6-406d-aaeb-b3b46fbb1fb1",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C89",
+      "claim": "EGL3T399A-GFP and EGL3T209A/T213A-GFP were solely localized to the nuclei of H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the EGL3T399A-GFP and EGL3T209A/T213A-GFP were solely localized to the nuclei of H cells (Figure 6C,D), indicating that EGL3 phosphorylation is required not only for its cytoplasmic accumulation, but also for its movement from H cells to N cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from transgenic plants with reference to Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "29f2254a-6a95-4aa0-9d0b-2b889c2d078e",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C90",
+      "claim": "EGL3 phosphorylation is required for its cytoplasmic accumulation and for its movement from H cells to N cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the EGL3T399A-GFP and EGL3T209A/T213A-GFP were solely localized to the nuclei of H cells (Figure 6C,D), indicating that EGL3 phosphorylation is required not only for its cytoplasmic accumulation, but also for its movement from H cells to N cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that non-phosphorylatable mutants are retained in H cell nuclei.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ed635196-b8f7-4e7b-aaee-48d2c9d19220",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C91",
+      "claim": "The root hair patterning of EGL3-GFP transgenic plants was not altered.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the root hair patterning of EGL3-GFP transgenic plants was not altered (Figure 6E; Table 1), indicating that correctly localized EGL3, mainly in N cell nuclei to promote N cell fate and less in H cell nuclei not to promote N cell fate, has no influence on root epidermal fate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from transgenic plants with reference to Figure 6E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "da85eccb-8cfc-4b62-a12c-6bfbcab77b85",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C92",
+      "claim": "Root epidermal patterning in the EGL3T399A-GFP transgenic plants was normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although root epidermal patterning in the EGL3T399A-GFP transgenic plants was normal (Figure 6F; Table 1), the number of root hairs in EGL3T209A/T213A-GFP plants was significantly reduced, likely due to a misspecification of non-hair cells in the H position (Figure 6G; Table 1), suggesting that the nucleus-localized EGL3 in H cells may determine N cell fate specification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from transgenic plants with reference to Figure 6F and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ce2ace1f-44aa-4252-9665-3d943a2dad31",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C93",
+      "claim": "The number of root hairs in EGL3T209A/T213A-GFP plants was significantly reduced, likely due to a misspecification of non-hair cells in the H position.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although root epidermal patterning in the EGL3T399A-GFP transgenic plants was normal (Figure 6F; Table 1), the number of root hairs in EGL3T209A/T213A-GFP plants was significantly reduced, likely due to a misspecification of non-hair cells in the H position (Figure 6G; Table 1), suggesting that the nucleus-localized EGL3 in H cells may determine N cell fate specification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from transgenic plants with reference to Figure 6G and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "5f2bd024-e2e6-49d6-8b8a-aa676f14db1f",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C94",
+      "claim": "The nucleus-localized EGL3 in H cells may determine N cell fate specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although root epidermal patterning in the EGL3T399A-GFP transgenic plants was normal (Figure 6F; Table 1), the number of root hairs in EGL3T209A/T213A-GFP plants was significantly reduced, likely due to a misspecification of non-hair cells in the H position (Figure 6G; Table 1), suggesting that the nucleus-localized EGL3 in H cells may determine N cell fate specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that nucleus-localized EGL3 mutants reduce root hair number.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ae0a9148-2796-45d0-b71d-82e2376655d6",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C95",
+      "claim": "BIN2 phosphorylation on T399, T209, and/or T213 of EGL3 in H cells promotes EGL3 cytoplasmic localization, which likely helps its movement from H to N cells to regulate root epidermal cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results indicate that BIN2 phosphorylation on T399, T209, and/or T213 of EGL3 in H cells promotes EGL3 cytoplasmic localization, which likely helps its movement from H to N cells to regulate root epidermal cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "d3094ac1-3830-4dd9-af0f-139a021f79da",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C96",
+      "claim": "TTG1 is required for a normal expression level of GL2.",
+      "claim_type": "EXPLICIT",
+      "source": "TTG1 is required for a normal expression level of GL2 (Di Cristina et al., 1996) but not for its expression pattern (Hung et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "70a9d128-acce-4c9a-aba5-e029acbc8041",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C97",
+      "claim": "TTG1 is not required for GL2 expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "TTG1 is required for a normal expression level of GL2 (Di Cristina et al., 1996) but not for its expression pattern (Hung et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ed37ca9c-5a54-4261-8299-7b4541ebfad5",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C98",
+      "claim": "TTG1 was preferentially localized in the cytoplasm and slightly in the nucleus of both N and H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic TTG1-GFP plants driven by its own promoter indicated that TTG1 was preferentially localized in the cytoplasm and slightly in the nucleus of both N and H cells (Figure 7\u2014figure supplement 1), which was consistent with the subcellular localization of its petunia homologue AN11 (De Vetten et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from transgenic plants with reference to Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "222b47d6-a791-4667-8c34-e4c9bfd32a4b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C99",
+      "claim": "The subcellular localization of TTG1 is consistent with the subcellular localization of its petunia homologue AN11.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic TTG1-GFP plants driven by its own promoter indicated that TTG1 was preferentially localized in the cytoplasm and slightly in the nucleus of both N and H cells (Figure 7\u2014figure supplement 1), which was consistent with the subcellular localization of its petunia homologue AN11 (De Vetten et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to established knowledge.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "67418864-114b-4b6a-838f-07880dfec70a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C100",
+      "claim": "Transient expression of WER alone was able to slightly induce PGL2::LUC gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7B, transient expression of WER alone was able to slightly induce PGL2::LUC gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from transient transcription assays with reference to Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8f03a210-003e-44de-9a23-d96c26360b6e",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C101",
+      "claim": "Transient expression of EGL3 alone was unable to induce reporter gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, transient expression of EGL3 alone was unable to induce reporter gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from transient transcription assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "49db6af0-b447-4caf-b677-ff096d3eb9a8",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C102",
+      "claim": "Co-expression of WER and EGL3 can dramatically promote LUC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of WER and EGL3 can dramatically promote LUC expression, which is consistent with a previous study (Song et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from transient transcription assays with a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "5c80c0eb-f9da-4249-917a-a76fb51ea311",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C103",
+      "claim": "Additional bin2-1 did not alter the effect of WER, EGL3, or both WER and EGL3 on PGL2::LUC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional bin2-1 did not alter the effect of WER, EGL3, or both WER and EGL3 on PGL2::LUC expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from transient transcription assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8013c198-75e0-4d7b-ad16-2a66000f3480",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C104",
+      "claim": "When WER, EGL3, and TTG1 were used together, the expression of PGL2::LUC was further enhanced.",
+      "claim_type": "EXPLICIT",
+      "source": "When WER, EGL3, and TTG1 were used together, the expression of PGL2::LUC was further enhanced, indicating that TTG1 can promote the activity of the WER-EGL3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from transient transcription assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "7142da84-58ab-431e-9377-7caab118356a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C105",
+      "claim": "TTG1 can promote the activity of the WER-EGL3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "When WER, EGL3, and TTG1 were used together, the expression of PGL2::LUC was further enhanced, indicating that TTG1 can promote the activity of the WER-EGL3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that TTG1 enhances reporter expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "e34a4646-1161-4fb9-9cc7-04070294d5b1",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C106",
+      "claim": "Additional bin2-1 significantly inhibited reporter gene expression regulated by the WER-EGL3-TTG1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, additional bin2-1 significantly inhibited reporter gene expression regulated by the WER-EGL3-TTG1 complex (Figure 7B), indicating that TTG1 is mediating the negative effect of BIN2 on this transcriptional complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from transient transcription assays with reference to Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8f13d31c-af1f-4ac4-a3d5-498b3254a982",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C107",
+      "claim": "TTG1 is mediating the negative effect of BIN2 on the WER-EGL3-TTG1 transcriptional complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, additional bin2-1 significantly inhibited reporter gene expression regulated by the WER-EGL3-TTG1 complex (Figure 7B), indicating that TTG1 is mediating the negative effect of BIN2 on this transcriptional complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that BIN2 only inhibits the complex when TTG1 is present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "62a136bc-43df-4fbb-823f-7fa893ebc1bc",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C108",
+      "claim": "BR signaling depends on GSK3-like kinases and the WER-EGL3-TTG1 complex to modulate root epidermal patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide several lines of evidence to strongly support an important role for BR signaling in directly regulating root hair cell fate. First, root hair patterning in the BR-biosynthetic and responsive mutants or in the wild type grown on eBL, bikinin, or BRZ, was dramatically altered, demonstrating that GSK3 kinases and/or their upstream components are mediating this regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple lines of evidence presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "56844850-b336-459d-bded-046e4ed2f108",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C109",
+      "claim": "BR early signaling promotes N cell fate in the whole root epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the expression pattern of the non-hair cell fate marker PGL2::GUS indicates that BR early signaling promotes N cell fate in the whole root epidermis, which is a reasonable explanation for the abnormal root hair patterning in the BR-related mutants: when BR signaling is enhanced, fewer root hairs are formed in the H position; when BR signaling is inhibited, more ectopic root hairs are produced in the N position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the PGL2::GUS expression pattern analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "5004764e-5a2a-49a8-a872-b1ce3e1a8fb6",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C110",
+      "claim": "Major components of the WER-EGL3-TTG1 or CPC-EGL3-TTG1 complex act downstream of BR signaling-mediated root epidermis patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, genetic analysis revealed that major components of the WER-EGL3-TTG1 or CPC-EGL3-TTG1 complex act downstream of BR signaling-mediated root epidermis patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from genetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "5084b995-5826-469a-b23a-a5a64be660f5",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C111",
+      "claim": "GSK3-like kinases directly regulate EGL3 movement and the transcription activity of the WER-EGL3-TTG1 complex to mediate root hair development.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, BIN2 phosphorylation on EGL3 and TTG1 suggested that GSK3-like kinases directly regulate EGL3 movement and the transcription activity of the WER-EGL3-TTG1 complex to mediate root hair development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the phosphorylation studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "ce364685-1b78-4c80-99f4-fba3014054e6",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C112",
+      "claim": "Cytoplasmic localization of mobile proteins may be required for their intercellular movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-cell autonomous movement of some transcriptional factors is an important mechanism to regulate some developmental processes (Kurata et al., 2005b), and cytoplasmic localization of these mobile proteins may be required for their intercellular movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "a7c2e555-6798-4aa0-a7b2-df020de5ef07",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C113",
+      "claim": "A mutation in the potential nuclear localization signal (NLS) of KNOTTED 1 abolished its intercellular movement in maize shoot apical meristem.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in maize shoot apical meristem, a mutation in its potential nuclear localization signal (NLS) of KNOTTED 1 abolished its intercellular movement (Vollbrecht et al., 1991; Lucas et al., 1995), and cytoplasmic localization of LEAFY (Schultz and Haughn, 1991), a transcriptional factor in floral identity, is also strongly correlated with its adjacent cell movement (Wu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "865a5b48-8312-4d67-9c0a-5029ff53f2d8",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C114",
+      "claim": "Cytoplasmic localization of LEAFY is strongly correlated with its adjacent cell movement.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in maize shoot apical meristem, a mutation in its potential nuclear localization signal (NLS) of KNOTTED 1 abolished its intercellular movement (Vollbrecht et al., 1991; Lucas et al., 1995), and cytoplasmic localization of LEAFY (Schultz and Haughn, 1991), a transcriptional factor in floral identity, is also strongly correlated with its adjacent cell movement (Wu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "a414d688-f6bc-4a3d-9841-dec154c586cd",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C115",
+      "claim": "The movement of SHORT-ROOT was abolished when it was fused to a NLS, leading to its diminished cytoplasmic localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the movement of SHORT-ROOT, another mobile transcriptional factor in root radical patterning (Helariutta et al., 2000), was abolished when it was fused to a NLS, leading to its diminished cytoplasmic localization (Gallagher et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "71689031-eb2f-4888-a250-3f6be8ee5466",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C116",
+      "claim": "T399 is located in a predicted non-canonical NLS of EGL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not know how T209/T213 phosphorylation regulated EGL3 subcellular localization, the T399 phosphorylation likely affected a NLS, because T399 is located in a predicted non-canonical NLS (Figure 6\u2014source data 1), which is found in many other plant bHLHs (Galstyan et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 6\u2014source data 1 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "d06ff706-31c5-4ce4-bbf6-5c008de954b8",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C117",
+      "claim": "Non-canonical NLS is found in many other plant bHLHs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not know how T209/T213 phosphorylation regulated EGL3 subcellular localization, the T399 phosphorylation likely affected a NLS, because T399 is located in a predicted non-canonical NLS (Figure 6\u2014source data 1), which is found in many other plant bHLHs (Galstyan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "2927b6f5-8118-4db7-a7b0-7b3b875a3385",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C118",
+      "claim": "The nucleus-localized EGL3T399A in H cells is unable to induce GL2 expression, likely because T399 is close to the bHLH domain which may have affected its interaction with TTG1 and MYB.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the EGL3T399A-GFP plants showed normal root hair patterning, this can be explained by the close proximity of T399 to its bHLH domain, which may have affected its interaction with TTG1 and MYB (Zhang et al., 2003), leading to the nucleus-localized EGL3T399A in H cells unable to induce GL2 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the normal root hair patterning in EGL3T399A-GFP plants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "fae79af7-bb6e-4cc7-9f77-fbbbcdcfd3a0",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C119",
+      "claim": "EGL3T209A/T213A may still interact with TTG1 and have DNA-binding activity because T209/T213 is located in the N-terminal region far away from the bHLH domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, EGL3T209A/T213A-GFP may still interact with TTG1 and have DNA-binding activity, because T209/T213 was located in the N-terminal region far away from the bHLH domain (Figure 6\u2014figure supplement 1), which led to GL2 expression in H cells and EGL3T209A/T213A-GFP plants growing fewer root hairs (Figure 6G; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference to explain the reduced root hair phenotype in EGL3T209A/T213A-GFP plants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "f10e35a2-9871-49a6-bea9-fc7644a0ace2",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C120",
+      "claim": "TTG1 interacts with EGL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it was reported that TTG1 interacts with EGL3 (Zhang et al., 2003), and TTG1 is necessary for the full functioning of other bHLH partners, such as GL3 and TRANSPARENT TESTA8 (Baudry et al., 2004; Zhao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "04d1458b-0335-4aa7-91dc-b8157651fff9",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C121",
+      "claim": "TTG1 is necessary for the full functioning of other bHLH partners, such as GL3 and TRANSPARENT TESTA8.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it was reported that TTG1 interacts with EGL3 (Zhang et al., 2003), and TTG1 is necessary for the full functioning of other bHLH partners, such as GL3 and TRANSPARENT TESTA8 (Baudry et al., 2004; Zhao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "379e85de-5071-4123-8a66-f00cbd2c0499",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C122",
+      "claim": "TTG1 phosphorylation by GSK3-like kinases may affect its regulation of EGL3 and the activity of the WER-EGL3-TTG1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is very likely that TTG1 phosphorylation by GSK3-like kinases may affect its regulation of EGL3 and the activity of the WER-EGL3-TTG1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "0aa2a5fc-4d4a-4d73-9a1c-5a7068e52bb6",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C123",
+      "claim": "The N cell is a default cell type in root epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also support the suggestion that the N cell is a default cell type in root epidermis, and that H cell fate is produced due to inhibition of N cell fate by internal or external cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "833eebcc-8587-4b06-9d98-07c266468085",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C124",
+      "claim": "H cell fate is produced due to inhibition of N cell fate by internal or external cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also support the suggestion that the N cell is a default cell type in root epidermis, and that H cell fate is produced due to inhibition of N cell fate by internal or external cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "6a9c2d31-480e-481d-8efe-552023228625",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C125",
+      "claim": "WER is expressed in both N and H cells in the early root meristem.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we observed that WER, a positive regulator for GL2 expression, is expressed in both N and H cells in the early root meristem (Figure 8\u2014figure supplement 1), which is also supported by a previous report that WER exhibits uniform promoter activity in both N and H cells proximal to the initial cells (Savage et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation from the study with reference to Figure 8\u2014figure supplement 1 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "27f72cb2-5d3e-4308-a3aa-d91dc492621b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C126",
+      "claim": "Over-expression of GL3 and EGL3 promoted non-hair cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, over-expression of GL3 and EGL3 promoted non-hair cell fate (Bernhardt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "67d8326c-2a2c-4d55-b603-7f0dc40c5a9f",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C127",
+      "claim": "TTG1 is localized in both N and H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, TTG1 is localized in both N and H cells, and TTG1 and EGL3 may synergistically promote WER-EGL3 transcriptional activity and enhance N cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "5517630b-3fba-4530-8a39-44394542573a",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C128",
+      "claim": "TTG1 and EGL3 may synergistically promote WER-EGL3 transcriptional activity and enhance N cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, TTG1 is localized in both N and H cells, and TTG1 and EGL3 may synergistically promote WER-EGL3 transcriptional activity and enhance N cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "6c150f7e-92ad-47d2-8b66-549509fb54fd",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C129",
+      "claim": "BR signaling promotes WER expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, BR signaling can promote N cell fate in several ways. Besides the inhibition of BR signaling on EGL3 cell\u2013cell movement and the promotion of TTG1 activity, BR signaling also promotes WER expression as WER up-regulation in bin2-3 bil1 bil2 (Figure 8\u2014figure supplement 1), which is consistent with the positive role of BRs in WER expression (Kuppusamy et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the study's findings with reference to Figure 8\u2014figure supplement 1 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "72a76ee6-881b-4b7c-badf-a772c3d84940",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "claim_id": "C130",
+      "claim": "WER is up-regulated in bin2-3 bil1 bil2.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, BR signaling can promote N cell fate in several ways. Besides the inhibition of BR signaling on EGL3 cell\u2013cell movement and the promotion of TTG1 activity, BR signaling also promotes WER expression as WER up-regulation in bin2-3 bil1 bil2 (Figure 8\u2014figure supplement 1), which is consistent with the positive role of BRs in WER expression (Kuppusamy et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study with reference to Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Brassinosteroid (BR) signaling inhibits root hair formation through GSK3-like kinases or upstream components. BR-deficient mutants (bri1-116, det2-1, cpd) showed increased root hair numbers with adjacent hair cell columns, while BR-enhanced mutants (BRI1-OX, bin2-3 bil1 bil2) showed reduced root hairs with missing hairs in H positions. Chemical treatments (eBL, bikinin, Brz) confirmed these effects, and additional GSK3-like kinases beyond BIN2/BIL1/BIL2 appear involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C40-C59 provide converging evidence from multiple BR-related mutants, chemical treatments, and quantitative measurements showing consistent effects on root hair patterning. The phenotypic observations are well-documented with microscopy images (Figure 1) and quantitative data showing statistically significant differences in relative hair numbers. The inference that additional GSK3-like kinases are involved (C58) is reasonably supported by the bikinin treatment of bin2-3 bil1 bil2 mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "85564c62-60ae-443d-8e24-62ffe0e54606",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BR signaling regulates root epidermal cell fate by controlling GL2 expression. Enhanced BR signaling causes ectopic GL2 expression in H cells (13.5% in BRI1-OX, 19.6% in bin2-3 bil1 bil2 vs 3.2% in wild type), while reduced BR signaling suppresses GL2 in N cells (15.3% in bri1-116, 18.8% in det2-1 vs 1.3% in wild type). This regulation occurs through GSK3-like kinases, not downstream transcription factors like BES1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C60-C70 are well-supported by PGL2::GUS reporter analysis with quantitative data from cross-sections and longitudinal views (Figure 2). The percentages of cells with altered GL2 expression are clearly documented, and the conclusion that BR signaling acts through GSK3-like kinases rather than BES1 is supported by the lack of phenotype in BES1-RNAi plants (C45, C51).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "8d8c5107-8d42-4db2-8e05-15cbf70add1b",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BR-regulated root epidermal cell patterning depends on the WER-GL3/EGL3-TTG1 and CPC-GL3/EGL3-TTG1 transcriptional complexes, which act downstream of BR signaling. Genetic epistasis analysis showed that double mutants of BR mutants with cpc-1 or wer-1 phenocopy the cpc-1 or wer-1 single mutants, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C72-C76 are supported by classical genetic epistasis analysis (Figure 3). The double mutant phenotypes clearly demonstrate that WER and CPC act downstream of BR signaling components. The logic is sound: if BR mutants are epistatic to cpc-1/wer-1, then the transcriptional complex would act upstream; conversely, the observed results support the opposite relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "d2cdfef8-160b-42fa-9dc9-ac6a7154db76",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BIN2 physically interacts with and phosphorylates EGL3 and TTG1, but not WER or CPC. Yeast two-hybrid assays showed BIN2-EGL3 interaction, GST pull-down and BiFC assays confirmed interactions with WER, EGL3, and TTG1, and in vitro kinase assays demonstrated that BIN2 phosphorylates EGL3 and TTG1 but not WER or CPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C77-C81 are well-supported by multiple complementary biochemical approaches (Figures 4-5). The use of different assay systems (yeast two-hybrid, GST pull-down, BiFC, in vitro kinase) provides strong converging evidence. The inability to test WER and TTG1 in yeast two-hybrid due to auto-activation is appropriately addressed by using alternative methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "134a92de-7936-432f-ab15-e4cca3891b72",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BIN2 phosphorylates EGL3 at T399, T209, and T213, promoting its cytoplasmic localization and movement from H to N cells. Mass spectrometry identified four phosphorylation sites in GSK3 recognition motifs. EGL3-GFP localizes to cytosol in H cells and nucleus in N cells, while non-phosphorylatable mutants (EGL3T399A-GFP, EGL3T209A/T213A-GFP) are retained in H cell nuclei. EGL3T209A/T213A-GFP plants show reduced root hairs due to ectopic N cell fate in H positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C95 are well-supported by mass spectrometry identification of phosphorylation sites (Figure 5 supplement), in vitro phosphorylation assays showing reduced phosphorylation of mutants (Figure 6A), and confocal microscopy showing altered localization of phospho-mutants (Figures 6B-D). The phenotypic analysis of transgenic plants (Figure 6E-G, Table 1) provides functional validation. The inference that phosphorylation promotes EGL3 movement is logically sound given the localization data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "77b292e5-e9d1-4905-a971-70763dc96561",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BIN2 phosphorylates TTG1 to inhibit the activity of the WER-EGL3-TTG1 transcriptional complex. Transient transcription assays in Nicotiana benthamiana showed that TTG1 enhances WER-EGL3 activity on the GL2 promoter, and bin2-1 significantly inhibits this activity only when TTG1 is present, indicating TTG1 mediates BIN2's negative effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C100-C107 are supported by dual-luciferase reporter assays (Figure 7B) showing that bin2-1 only inhibits reporter expression when all three components (WER, EGL3, TTG1) are present, not with WER and EGL3 alone. This provides strong evidence that TTG1 is the target mediating BIN2's effect on the complex. The use of the gain-of-function bin2-1 mutant is appropriately justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "255fe789-6c12-418c-ae67-a62933157f3d",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TTG1 is preferentially localized in the cytoplasm and slightly in the nucleus of both N and H cells, consistent with its petunia homologue AN11.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 are supported by confocal microscopy of PTTG1::TTG1-GFP transgenic plants (Figure 7 supplement 1) and citation to prior work on AN11. The observation is straightforward and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "0289cd5e-9714-4f8c-8206-ff211da46646",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "BR signaling depends on GSK3-like kinases and the WER-EGL3-TTG1 complex to modulate root epidermal patterning. BR early signaling promotes N cell fate throughout the root epidermis, and GSK3-like kinases directly regulate EGL3 movement and transcriptional complex activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C111 represent integrative conclusions drawn from the multiple lines of evidence presented in the study (mutant analysis, GL2 expression patterns, genetic epistasis, biochemical interactions). These conclusions are well-supported by the collective data and represent the main findings of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "6a6f2a83-f813-4217-908d-22cb68200258",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "T399 is located in a predicted non-canonical NLS of EGL3, and its phosphorylation likely affects nuclear localization. The differential phenotypes of EGL3T399A-GFP (normal patterning) versus EGL3T209A/T213A-GFP (reduced root hairs) are explained by T399's proximity to the bHLH domain affecting protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C116, C118-C119 involve speculative mechanistic explanations for the observed phenotypic differences between phospho-mutants. While the NLS prediction (C116) is supported by bioinformatics analysis (Figure 6 source data 1), the explanations for why EGL3T399A shows normal patterning (C118) and why EGL3T209A/T213A reduces root hairs (C119) are inferences without direct experimental validation of protein interactions or DNA binding. These remain plausible hypotheses requiring further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "08085814-d94c-421f-a305-1cca389e149d",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TTG1 phosphorylation by GSK3-like kinases may affect its regulation of EGL3 and the activity of the WER-EGL3-TTG1 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C122 is explicitly stated as speculation ('it is very likely') and lacks direct experimental evidence showing how TTG1 phosphorylation affects its interaction with EGL3 or the complex's activity. While the transient assays show BIN2 inhibits the complex when TTG1 is present, the specific molecular mechanism remains uncharacterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "0ede5a7e-ab49-407e-ad47-51332e085f8c",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The N cell is a default cell type in root epidermis, with H cell fate produced by inhibition of N cell fate. This is supported by WER expression in both cell types, EGL3/GL3 movement promoting N fate, TTG1 localization in both cell types, and BR signaling promoting WER expression (upregulated in bin2-3 bil1 bil2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C130 present a model supported by multiple observations: WER expression in both cell types (C125, Figure 8 supplement 1), prior literature on GL3/EGL3 overexpression (C126), TTG1 localization (C127), and WER upregulation in bin2-3 bil1 bil2 (C130, Figure 8 supplement 1). The 'default cell type' model is a reasonable interpretation of the collective data, though it represents a conceptual framework rather than a directly testable claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    },
+    {
+      "id": "b4152e65-05f3-405c-9502-c07cda77b3a7",
+      "content_id": "d2fa351b-75d4-4068-b067-9b32c8eff12b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge about Arabidopsis root hair development, BR signaling pathway, and transcription factor movement is accurately cited and presented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C7, C13-C39, C71, C96-C97, C112-C115, C117, C120-C121 represent established knowledge from prior literature, appropriately cited throughout the manuscript. These provide necessary context for the current study and appear to be accurately represented based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:24.674386Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "33076881-9904-42d0-bf08-f84d35197d55",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "9552f5ff-2d45-4ba6-ab61-101ce03fb5e9",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "b9af5757-8357-4c5a-9014-471035e31aa8",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "18953bc7-4810-4a8a-bb78-05b073e005e0",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "92dda6cb-310f-4b77-94c3-402dbfb39865",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "31525b36-75ec-45cc-b979-2576a7845c9a",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "b8b84bae-ca77-44ed-aacb-033154169718",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "52326b28-e717-4bde-834e-de5d89ff598b",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "740989d6-579f-4387-a175-89320e2cfef6",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "55f14dd9-2bf0-4b3e-aeef-860e7d8ac9dd",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "957b0245-9cc6-4b1d-8f1e-84c835ab198f",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "f25fb202-d5f1-468c-85c3-7dfa79362751",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "96402ecd-3d30-411a-b6da-bfb02f866ad6",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "49dcc4f0-6d1d-4667-90ff-98ba4baf5de3",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "3b8fe59f-e869-424f-965f-d0297462cf0b",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "2ea2c358-5f10-444a-8067-a33623ca3426",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "ca60c3d6-024c-4226-af7c-fd07522dd43b",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "0027c030-4507-4f2c-ab08-42d6cad26518",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "591a5b59-6e2d-4f8a-be4e-50560ffb9a3b",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "82055365-9713-41c6-85bc-7e6a6aab4d9b",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "399a7de4-ecb3-4519-9042-6106d8b683c0",
+      "result_id": "91a074cc-ecbd-42ce-bd5c-b20fd597844e"
+    },
+    {
+      "claim_id": "b8e8f1f6-dc10-4ed4-b24b-4b503bd62169",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "6e66b011-7b29-4e0b-b71e-984edf44be26",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "8a50d060-7f15-4a1a-97a1-92aad827cc40",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "686389f5-de23-4e74-b5a0-67ea3c173091",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "ab81909a-3a5e-4545-8814-b7f6e458f7a7",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "9473d75d-aad2-47e7-938b-ba8675053cf9",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "a6f9a3fe-84a0-4c2f-a99f-ca900defd17a",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "8b00ddbb-9e36-441e-a71b-c4820be8a141",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "ad067b3a-7d25-43f7-a7b7-1417ed3bee12",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "d71542b0-d81f-4565-9179-c7868c9f9b83",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "164b29d5-7297-4a90-96c7-739d0adc509c",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "f3be5959-e3e0-4504-aa73-884df683f1f7",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "2dcef85c-dca0-4ef7-a495-c093c74d40fe",
+      "result_id": "85564c62-60ae-443d-8e24-62ffe0e54606"
+    },
+    {
+      "claim_id": "63c8c991-f0ac-4292-a5a0-6773e542f98a",
+      "result_id": "8d8c5107-8d42-4db2-8e05-15cbf70add1b"
+    },
+    {
+      "claim_id": "f8c3f459-b964-486a-b730-28794d661b66",
+      "result_id": "8d8c5107-8d42-4db2-8e05-15cbf70add1b"
+    },
+    {
+      "claim_id": "767848cb-cf0c-4cfd-8b71-bd2e6eb5f574",
+      "result_id": "8d8c5107-8d42-4db2-8e05-15cbf70add1b"
+    },
+    {
+      "claim_id": "aa649ecc-6d89-40d5-af44-725af0f79875",
+      "result_id": "8d8c5107-8d42-4db2-8e05-15cbf70add1b"
+    },
+    {
+      "claim_id": "00122f9d-20a4-489b-ac3e-735d7f608b76",
+      "result_id": "8d8c5107-8d42-4db2-8e05-15cbf70add1b"
+    },
+    {
+      "claim_id": "89f32366-45e7-4be5-a8da-aeabb4c88818",
+      "result_id": "8d8c5107-8d42-4db2-8e05-15cbf70add1b"
+    },
+    {
+      "claim_id": "801e4b4e-2967-4d6b-a648-dbebda205a2a",
+      "result_id": "d2cdfef8-160b-42fa-9dc9-ac6a7154db76"
+    },
+    {
+      "claim_id": "5089011f-27d7-4473-be30-0086847f2ed4",
+      "result_id": "d2cdfef8-160b-42fa-9dc9-ac6a7154db76"
+    },
+    {
+      "claim_id": "9eac310b-6cd5-4786-b3c5-57d8978ca53d",
+      "result_id": "d2cdfef8-160b-42fa-9dc9-ac6a7154db76"
+    },
+    {
+      "claim_id": "51c445aa-eee1-4902-bb55-8388a5b20469",
+      "result_id": "d2cdfef8-160b-42fa-9dc9-ac6a7154db76"
+    },
+    {
+      "claim_id": "ce46a969-13a6-44f2-9a9f-b57ac419a51a",
+      "result_id": "d2cdfef8-160b-42fa-9dc9-ac6a7154db76"
+    },
+    {
+      "claim_id": "848f7e8a-ecdf-4861-8c17-f6e6bd78734b",
+      "result_id": "d2cdfef8-160b-42fa-9dc9-ac6a7154db76"
+    },
+    {
+      "claim_id": "46f3e936-a7e3-4719-b387-a56f54aae61a",
+      "result_id": "d2cdfef8-160b-42fa-9dc9-ac6a7154db76"
+    },
+    {
+      "claim_id": "6bd015a6-2df5-4060-adbf-141d1b1c6e3f",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "76669a0e-b87a-4ab7-9086-fda489d53913",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "f7d0b3e5-542a-456f-898e-65827ecb42cf",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "80164428-d66a-4186-88cd-b0e791e8ce0d",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "8a9a3584-ae4b-47bb-a90a-cd53d2af75e9",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "a0e6ef4d-aa97-4022-ba31-a910b01d8490",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "a9c19801-be0d-4a05-97cd-d8289d2595da",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "c2bd9246-1fb6-406d-aaeb-b3b46fbb1fb1",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "29f2254a-6a95-4aa0-9d0b-2b889c2d078e",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "ed635196-b8f7-4e7b-aaee-48d2c9d19220",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "da85eccb-8cfc-4b62-a12c-6bfbcab77b85",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "ce2ace1f-44aa-4252-9665-3d943a2dad31",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "5f2bd024-e2e6-49d6-8b8a-aa676f14db1f",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "ae0a9148-2796-45d0-b71d-82e2376655d6",
+      "result_id": "134a92de-7936-432f-ab15-e4cca3891b72"
+    },
+    {
+      "claim_id": "8cc38380-53f6-44b8-ab8e-fd1eb9ce830a",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "67418864-114b-4b6a-838f-07880dfec70a",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "8f03a210-003e-44de-9a23-d96c26360b6e",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "49db6af0-b447-4caf-b677-ff096d3eb9a8",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "5c80c0eb-f9da-4249-917a-a76fb51ea311",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "8013c198-75e0-4d7b-ad16-2a66000f3480",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "7142da84-58ab-431e-9377-7caab118356a",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "e34a4646-1161-4fb9-9cc7-04070294d5b1",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "8f13d31c-af1f-4ac4-a3d5-498b3254a982",
+      "result_id": "77b292e5-e9d1-4905-a971-70763dc96561"
+    },
+    {
+      "claim_id": "ed37ca9c-5a54-4261-8299-7b4541ebfad5",
+      "result_id": "255fe789-6c12-418c-ae67-a62933157f3d"
+    },
+    {
+      "claim_id": "222b47d6-a791-4667-8c34-e4c9bfd32a4b",
+      "result_id": "255fe789-6c12-418c-ae67-a62933157f3d"
+    },
+    {
+      "claim_id": "62a136bc-43df-4fbb-823f-7fa893ebc1bc",
+      "result_id": "0289cd5e-9714-4f8c-8206-ff211da46646"
+    },
+    {
+      "claim_id": "56844850-b336-459d-bded-046e4ed2f108",
+      "result_id": "0289cd5e-9714-4f8c-8206-ff211da46646"
+    },
+    {
+      "claim_id": "5004764e-5a2a-49a8-a872-b1ce3e1a8fb6",
+      "result_id": "0289cd5e-9714-4f8c-8206-ff211da46646"
+    },
+    {
+      "claim_id": "5084b995-5826-469a-b23a-a5a64be660f5",
+      "result_id": "0289cd5e-9714-4f8c-8206-ff211da46646"
+    },
+    {
+      "claim_id": "71689031-eb2f-4888-a250-3f6be8ee5466",
+      "result_id": "6a6f2a83-f813-4217-908d-22cb68200258"
+    },
+    {
+      "claim_id": "2927b6f5-8118-4db7-a7b0-7b3b875a3385",
+      "result_id": "6a6f2a83-f813-4217-908d-22cb68200258"
+    },
+    {
+      "claim_id": "fae79af7-bb6e-4cc7-9f77-fbbbcdcfd3a0",
+      "result_id": "6a6f2a83-f813-4217-908d-22cb68200258"
+    },
+    {
+      "claim_id": "379e85de-5071-4123-8a66-f00cbd2c0499",
+      "result_id": "08085814-d94c-421f-a305-1cca389e149d"
+    },
+    {
+      "claim_id": "0aa2a5fc-4d4a-4d73-9a1c-5a7068e52bb6",
+      "result_id": "0ede5a7e-ab49-407e-ad47-51332e085f8c"
+    },
+    {
+      "claim_id": "833eebcc-8587-4b06-9d98-07c266468085",
+      "result_id": "0ede5a7e-ab49-407e-ad47-51332e085f8c"
+    },
+    {
+      "claim_id": "6a9c2d31-480e-481d-8efe-552023228625",
+      "result_id": "0ede5a7e-ab49-407e-ad47-51332e085f8c"
+    },
+    {
+      "claim_id": "27f72cb2-5d3e-4308-a3aa-d91dc492621b",
+      "result_id": "0ede5a7e-ab49-407e-ad47-51332e085f8c"
+    },
+    {
+      "claim_id": "67d8326c-2a2c-4d55-b603-7f0dc40c5a9f",
+      "result_id": "0ede5a7e-ab49-407e-ad47-51332e085f8c"
+    },
+    {
+      "claim_id": "5517630b-3fba-4530-8a39-44394542573a",
+      "result_id": "0ede5a7e-ab49-407e-ad47-51332e085f8c"
+    },
+    {
+      "claim_id": "6c150f7e-92ad-47d2-8b66-549509fb54fd",
+      "result_id": "0ede5a7e-ab49-407e-ad47-51332e085f8c"
+    },
+    {
+      "claim_id": "72a76ee6-881b-4b7c-badf-a772c3d84940",
+      "result_id": "0ede5a7e-ab49-407e-ad47-51332e085f8c"
+    },
+    {
+      "claim_id": "188b0b9b-73de-4936-b95b-e985304b33f5",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "e813f70b-eea0-45dd-8233-fcba060a2cdb",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "5929786a-2fc5-4de9-b468-060dc9ddf986",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "35ebc921-b1be-43e2-9d99-0d2c59a3088a",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "4b9c4a82-51e3-41d6-a47f-3466396c3fbe",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "c48f6733-6b7a-456a-891e-1293967f3383",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "397b8728-6569-478b-b666-f7ada234a584",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "bd6c2bd7-8b41-4dac-9520-794ad67c8193",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "61864d86-ed80-4b5f-a4ad-8fd33b34bcb0",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "21aedd12-8934-4231-91c7-9f9644edbea1",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "e7ca4cfc-7c32-424c-ac68-99d832609475",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "d2c9f822-7533-4c81-851a-a755119f7909",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "12f5f803-f06b-460b-b545-2e47b2ea6aa6",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "ed78e84d-7de5-40f9-9f3d-458d2fc3aef4",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "38cafa54-dfb5-445b-9fa9-ecb4f30d88f3",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "b66ad7eb-1927-4434-a014-692d1ac75b77",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "22a2ccbf-416b-4f8d-96c5-947a2c73b8ed",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "e77a1be7-e2a6-4509-a8b5-58dd30423c2b",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "3533705b-f426-4964-9adf-0a2def9cc676",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "eac039c6-4dae-4bb8-9460-baa985623697",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "63466bf8-10ff-4e38-be61-4b850ab43718",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "2334821a-2a8f-43ba-b0d4-49efbfe9629d",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "d400e96c-ba77-453d-8a8a-cbb419d1c4cd",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "37f70014-afef-44ce-9c65-33f5ba50b67c",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "b2d79620-a508-4ff6-814a-804ce840c1fb",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "974d49ea-0d31-4443-ba3e-14a74fb79af1",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "2dc8c926-44f9-4bfa-bab2-91305bd7d6ed",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "064b2de9-92da-469a-bbb7-8d2e1e730918",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "9ee6a856-b48a-49d2-87fc-4f8189a51ffb",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "48f44a23-26b2-4c1a-8168-7914dd8ced8e",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "81ca9711-f045-4d94-90dd-7ef4339dc66c",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "471f2923-e1e6-4f89-b995-4d8fe5586a72",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "d3094ac1-3830-4dd9-af0f-139a021f79da",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "70a9d128-acce-4c9a-aba5-e029acbc8041",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "ce364685-1b78-4c80-99f4-fba3014054e6",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "a7c2e555-6798-4aa0-a7b2-df020de5ef07",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "865a5b48-8312-4d67-9c0a-5029ff53f2d8",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "a414d688-f6bc-4a3d-9841-dec154c586cd",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "d06ff706-31c5-4ce4-bbf6-5c008de954b8",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "f10e35a2-9871-49a6-bea9-fc7644a0ace2",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    },
+    {
+      "claim_id": "04d1458b-0335-4aa7-91dc-b8157651fff9",
+      "result_id": "b4152e65-05f3-405c-9502-c07cda77b3a7"
+    }
+  ],
+  "comparisons": []
+}

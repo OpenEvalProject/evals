@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Using FCCS, the authors demonstrate extensive physical associations between integrin adhesome proteins in the cytosol. Among 91 possible protein pairs, 18 showed significant associations (p<0.0001) in REF52 cells, with 15 replicated in NIH3T3 cells (p<0.02), indicating pre-assembled multi-protein complexes exist in the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 provide quantitative FCCS data with appropriate statistical testing and replication in two cell lines. The right-skewed distribution (C71-C72) and measurements at physiologically relevant concentrations (C70) strengthen the findings. However, the p-value thresholds differ between cell lines, and the functional significance of all detected associations remains to be validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C73"
+    ],
+    "result": "The cytosolic protein complexes are size-confined to no more than three proteins due to mutually exclusive interactions. The ILK-PINCH-\u03b1-parvin ternary complex was confirmed, and a CAS-FAK-paxillin complex was inferred. Mutual exclusivity was demonstrated for paxillin interactions with FAK and vinculin, and for VASP and zyxin interactions with multiple partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The size confinement (C14) is well-supported by systematic pairwise FCCS analysis showing no fully connected subgraphs larger than three proteins. Mutual exclusivity inferences (C16, C18-C19) are logically sound based on the absence of expected pairwise associations. However, C20 is speculative about system-level design, and alternative explanations (e.g., steric hindrance, concentration effects) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prominent building blocks were identified by combining FCCS association scores with FRAP dynamics measurements, including ILK-PINCH-\u03b1-parvin, paxillin-vinculin, CAS-FAK, VASP-zyxin, and \u03b1-actinin-VASP. Proteins in these pairs show similar diffusion speeds, suggesting predominant binding to each other. However, most proteins can participate in different building blocks, indicating combinatorial diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of FCCS and FRAP data (C21-C25) provides convergent evidence for specific building blocks. Similar diffusion speeds (C26-C27) support the interpretation of stable complexes. The conclusion about combinatorial diversity (C28-C29) is reasonable given that many protein pairs show associations without similar dynamics. However, the co-dynamics distance metric lacks validation, and similar FRAP kinetics don't definitively prove co-recruitment as a complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cytosolic building blocks correspond to functional modules spanning the vertical architecture of focal adhesions. Associations occur only between proteins from the same functional layer (integrin-signaling, force transduction, or actin regulation) or between adjacent layers, forming continuous modules along functional and vertical axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mapping of cytosolic associations to focal adhesion architecture (C30-C31) is supported by combining current FCCS data with published structural information (C75-C77). The example of paxillin-vinculin association without FAK or VASP (C74) illustrates the pattern. However, this analysis is limited to 6 of 13 proteins with known vertical positions, and the functional significance of this organization requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors define symmetric and asymmetric exchange models for material exchange between adhesion sites and cytosol. Symmetric exchange maintains protein state, while asymmetric exchange produces primed states that would generate spatial gradients. Only asymmetric exchange would enable communication between adhesion sites via primed components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C33-C40) establish a clear theoretical framework with testable predictions. The logical inferences about spatial gradients (C35) and inter-site communication (C37) follow from the definitions. This is primarily a conceptual contribution that sets up the experimental tests, making it well-supported as a theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C6"
+    ],
+    "result": "FCCS measurements of 28 protein pairs at locations near (<1.5 \u03bcm) and far from focal adhesions showed no significant spatial differences in association scores, supporting symmetric exchange. FLIM data confirmed that physical associations near focal adhesions correlate with those far away regardless of interaction state within focal adhesions. The authors conclude stationary focal adhesions release the same complexes they recruit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of spatial gradients (C41-C42) is supported by systematic FCCS measurements with appropriate statistical testing. The FLIM validation (C43) strengthens the conclusion by using an orthogonal method. However, the spatial resolution (~1.5 \u03bcm) may not detect very local gradients, and the measurements are limited to stationary focal adhesions. The conclusion (C44-C45) is reasonable but represents an inference from negative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Using a dSH2 biosensor for tyrosine phosphorylation, the authors found no spatial gradients in phosphorylation levels of FAK, paxillin, and CAS around focal adhesions. Vanadate treatment increased dSH2 associations, validating assay sensitivity. These results support symmetric exchange for stationary focal adhesions, indicating they do not alter the cytosolic pool or communicate via primed components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dSH2 biosensor approach (C47-C48) is validated by immunofluorescence (C46) and vanadate control (C51). The absence of phosphorylation gradients (C49-C50) extends the symmetric exchange model beyond protein associations to post-translational modifications. However, the biosensor may not detect all phosphorylation states, and the conclusions (C52-C54) are limited to stationary focal adhesions under the specific conditions tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors propose that multi-protein building blocks reduce assembly steps and, with proper regulation, could make adhesion site assembly faster and less sensitive to noise. Assembly is regulated by checkpoints at the plasma membrane including integrin activation, PIP2-mediated protein activation, and mechanical stretching. Symmetric exchange ensures a standardized pool of building blocks essential for correct self-assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative and inferential. While the logic is sound (C55, C63-C64), the functional advantages (C56) are not experimentally demonstrated. The proposed checkpoints (C59-C62) are supported by citations but not tested in this study. Claims C57-C58 about regulation requirements are reasonable inferences but lack experimental validation. This represents a proposed model rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Based on a cited study, the authors suggest that disassembling focal adhesions, in contrast to stationary ones, might exchange material asymmetrically. This could enable rapid destruction by releasing larger pieces and provide a mechanism for affecting other adhesion sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims rely entirely on interpretation of a single cited study (C65, C67) rather than new experimental data. The speculation about asymmetric exchange in disassembling adhesions (C66) and its functional implications (C68-C69) are not tested. The cited study used different methods and cell types, making direct comparison difficult. This represents interesting speculation requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C32"
+    ],
+    "result": "Background claims establishing that the integrin adhesome contains over 100 proteins that self-assemble into adhesion sites, which dynamically exchange components with the cytosol while maintaining steady-state structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by multiple citations to published literature. They provide appropriate context for the study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The authors conclude that multi-protein building blocks enable rapid and modular self-assembly of adhesion sites, and symmetric exchange preserves building block specifications and assembly logic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims integrate the major experimental findings (pre-assembled complexes, symmetric exchange) into a coherent model. While the mechanistic details (rapid assembly, preserved specifications) are inferred rather than directly measured, the conclusions are well-supported by the collective evidence from FCCS, FRAP, and FLIM experiments.",
+    "result_type": "MAJOR"
+  }
+]

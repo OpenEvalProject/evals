@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Hdac6 co-purifies with Tip60-p400 complex from ESCs as a stable interaction partner. The authors generated a Tip60-H3F knock-in ESC line, performed affinity purification, and identified Hdac6 by LC-MS/MS along with 16 of 17 known Tip60-p400 subunits. The interaction was confirmed by reciprocal co-immunoprecipitation and was resistant to DNase treatment and high salt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical evidence is strong and multi-faceted: LC-MS/MS identification (Table 1), reciprocal co-IP validation (Figure 1B), DNA-independence (Figure 1\u2014supplement 4), and salt resistance (Figure 1\u2014supplement 5). The endogenous tagging strategy and recovery of 16/17 known subunits supports that the tagged complex is functional. The convergence of multiple orthogonal approaches provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C3"
+    ],
+    "result": "Hdac6 exhibits nuclear localization in stem cells (ESCs, NSCs, HPCs) and some cancer cell lines, where it interacts with Tip60-p400, but is predominantly cytoplasmic in differentiated cells (MEFs, brain). During differentiation of ESCs or NSCs, Hdac6 re-localizes from nucleus to cytoplasm, and this re-localization is an early event during cellular transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The subcellular fractionation data (Figure 2B-D) and immunofluorescence (Figure 2A) clearly demonstrate differential Hdac6 localization across cell types. Co-IP experiments confirm interaction only in nuclear-Hdac6-containing cells (Figure 2E, 2G). The transformation experiment (Figure 2H) provides temporal insight. However, the mechanism controlling Hdac6 localization is not addressed, which would strengthen the mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Hdac6 is necessary for regulation of most Tip60-p400 target genes in ESCs, particularly those repressed by the complex. Microarray analysis showed highly correlated gene expression profiles upon Tip60 and Hdac6 knockdown (R=0.63), with genes upregulated upon Tip60 KD significantly overrepresented among Hdac6-dependent targets. The majority of Hdac6-dependent Tip60-p400 target genes are differentiation-induced genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The microarray data (Figure 3A-C) demonstrates strong correlation between Tip60 and Hdac6 KD effects. Statistical analysis (Figure 3D) shows significant enrichment patterns. The double KD epistasis experiment (Figure 3C) supports that Hdac6 functions within the Tip60-p400 pathway. RT-qPCR validation (Figure 3E) and Hdac6 mutant analysis (Figure 3\u2014supplements 1-3) provide orthogonal confirmation. The correlation coefficient of 0.63 is substantial but indicates Hdac6-independent Tip60 functions also exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Hdac6 and Tip60 co-localize at promoters of target genes in ESCs, with Hdac6 forming a single peak ~100bp downstream of the TSS that overlaps with the downstream Tip60 peak. Both factors are enriched at genes marked by H3K4me3, including bivalent genes, and show higher enrichment at genes misregulated upon their knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data (Figure 4A-E) provides genome-wide evidence for co-localization. The distinct binding patterns (two peaks for Tip60, one for Hdac6) are clearly shown. Enrichment at H3K4me3-marked genes (Figure 4\u2014supplement 2) is consistent with Tip60-p400 biology. The observation that Hdac6 binds cluster 3 genes but doesn't regulate them (Figure 4E) suggests binding is necessary but not sufficient, which is mechanistically informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C85"
+    ],
+    "result": "Hdac6 does not deacetylate histones at target promoters despite requiring its deacetylase domains for gene regulation. Hdac6 KD resulted in decreased (not increased) H4 and H2A acetylation at target promoters, had no effect on bulk histone acetylation, but strongly enhanced tubulin acetylation. Treatment with the Hdac6 inhibitor tubastatin A caused gene de-repression similar to Hdac6 KD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-qPCR data (Figure 5B, supplement 3) showing decreased histone acetylation upon Hdac6 KD is counterintuitive but well-documented. The lack of effect on bulk histones (Figure 5\u2014supplement 4) with strong tubulin acetylation increase confirms Hdac6 is functional but not targeting histones globally. TubA treatment effects (Figure 5A) support a role for the catalytic domains. This is a surprising finding that challenges conventional HDAC biology and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C66",
+      "C67",
+      "C86"
+    ],
+    "result": "The catalytic deacetylase domains of Hdac6 are required for its interaction with Tip60-p400 complex. Tubastatin A treatment completely abolished Hdac6 association with Tip60-p400, and TubA washes removed Hdac6 from purified complex. Mutation of deacetylase domain 1 partially disrupted the interaction, while mutation of both domains abolished it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-IP experiments with TubA treatment (Figure 5C) and TubA wash experiments (Figure 5D) provide direct evidence that TubA disrupts the interaction. The deacetylase domain mutant analysis (Figure 5E) demonstrates domain requirements. This is an unusual mechanism where catalytic domains mediate protein-protein interaction rather than enzymatic activity on the substrate. The data are clear, though the molecular mechanism of how inactive catalytic domains mediate binding remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C68",
+      "C74",
+      "C75",
+      "C87",
+      "C88"
+    ],
+    "result": "Hdac6 is required for Tip60-p400 recruitment to target genes, particularly at the downstream TSS peak. Hdac6 KD strongly reduced Tip60 and p400 enrichment downstream of the TSS at target genes, with the most severe reduction at genes whose expression is regulated by Tip60-p400. However, Tip60 KD had no effect on Hdac6 localization, indicating Hdac6 acts upstream of Tip60-p400 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq data (Figure 6A-E) clearly demonstrates reduced Tip60 and p400 binding upon Hdac6 KD, particularly at the downstream peak. The asymmetric effect (Hdac6 KD affects Tip60 binding but not vice versa, Figure 6F) establishes epistasis. ChIP-qPCR validation (Figure 6\u2014supplements 1-2) confirms the findings. This establishes a recruitment function for Hdac6, which is a novel role for an HDAC. The mechanism of recruitment remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Hdac6 is necessary for normal ESC proliferation, colony formation, and robust differentiation. Hdac6 KD ESCs showed decreased colony formation and size, reduced proliferation rate, smaller and more heterogeneous embryoid bodies, and delayed induction of differentiation markers, phenocopying Tip60 KD effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The colony formation assays (Figure 7A), proliferation curves (Figure 7B), EB formation (Figure 7C), and differentiation marker analysis (Figure 8) provide comprehensive phenotypic characterization. The similarity to Tip60 KD phenotypes supports the functional relationship. However, the phenotypes are less severe than Tip60 KD, consistent with Hdac6 being required for only a subset of Tip60-p400 functions. The data are well-controlled and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C92"
+    ],
+    "result": "Unlike Tip60 KD, Hdac6 KD does not prevent ESC self-renewal, and mice derived from Hdac6 KO ESCs are viable. This distinguishes Hdac6 from core Tip60-p400 subunits in terms of essentiality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by citation to previous work (Zhang et al., 2003) and inference from the current data showing that Hdac6 KD ESCs can continue to proliferate and form colonies. The viability of Hdac6 KO mice contrasts with the pre-implantation lethality of Tip60 deletion (C14), supporting that Hdac6 is modulatory rather than essential. This is an important distinction that contextualizes Hdac6's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C76"
+    ],
+    "result": "Hdac6-dependent Tip60 target genes in ESCs are not bound by Tip60 in MEFs, suggesting that nuclear exclusion of Hdac6 during differentiation may regulate Tip60-p400 binding to specific gene sets in differentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-qPCR data in MEFs (Figure 4\u2014supplement 3) shows loss of Tip60 binding at Hdac6-dependent ESC targets. This correlates with Hdac6 cytoplasmic localization in MEFs (Figure 2A-B). The inference that Hdac6 localization regulates Tip60-p400 target specificity is logical but remains correlative. Direct manipulation of Hdac6 localization would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background and context claims about Tip60-p400 complex composition and function, Hdac6 properties, chromatin remodeling complex modularity, and ESC regulation based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are supported by appropriate citations to prior work. The authors accurately represent the literature on Tip60-p400 function in different cell types, Hdac6's known substrates and localization, and principles of chromatin complex modularity. The exclusion of Pol II from Tip60-p400 purifications (C63) appropriately addresses a potential confounding explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C93"
+    ],
+    "result": "Hdac6 is a component of a novel, stem cell-specific form of Tip60-p400 complex that plays a major role in modulating Tip60-p400 function in stem cells, particularly for gene regulation and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the collective evidence: cell-type-specific interaction (C1, C20-C27), functional requirement for most Tip60-p400 target genes (C2, C28-C32), recruitment function (C47-C50, C68), and differentiation phenotypes (C51-C54, C89-C91). The characterization as 'stem cell-specific' is justified by the localization and interaction data. This represents a significant conceptual advance in understanding chromatin complex modularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Speculative models proposing that Hdac6 re-localization during differentiation could lead to expression of alternate Tip60-p400 target genes, and that nuclear Hdac6 in cancer cells may redirect Tip60-p400 to stem cell-specific targets, potentially promoting cancer development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims ('could lead to', 'may re-direct', 'potentially') that extend beyond the presented data. While the speculation is reasonable given the findings, no direct evidence is provided that Hdac6 re-localization causes target switching or that this mechanism operates in cancer. The cancer connection is correlative (nuclear Hdac6 in some cancers, early re-localization during transformation) but not mechanistically demonstrated. These represent hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

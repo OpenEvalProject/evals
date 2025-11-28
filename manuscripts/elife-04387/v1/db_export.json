@@ -1,0 +1,2275 @@
+{
+  "submission": {
+    "id": "445272ec-6c7d-4b97-9818-fd528104abb3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:47:49.325301Z",
+    "updated_at": "2025-11-28T21:47:49.325301Z"
+  },
+  "content": [
+    {
+      "id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "submission_id": "445272ec-6c7d-4b97-9818-fd528104abb3",
+      "content_type": "manuscript",
+      "content_text": "# Ionic selectivity and thermal adaptations within the voltage-gated sodium channel family of alkaliphilic Bacillus\n\n## Authors\n\n- Paul G DeCaen<sup>1</sup>\n- Yuka Takahashi<sup>2</sup>\n- Terry A Krulwich<sup>4</sup>\n- Masahiro Ito<sup>2</sup>\n- David E Clapham<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cardiology Howard Hughes Medical Institute, Boston Children's Hospital Boston United States\n2. Graduate School of Life Sciences Toyo University Gunma Japan\n3. Japan and Bionano Electronics Research Center Toyo University Saitama Japan\n4. Department of Pharmacology and Systems Therapeutics Icahn School of Medicine at Mount Sinai New York United States\n5. Department of Neurobiology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEntry and extrusion of cations are essential processes in living cells. In alkaliphilic prokaryotes, high external pH activates voltage-gated sodium channels (Nav), which allows Na+ to enter and be used as substrate for cation/proton antiporters responsible for cytoplasmic pH homeostasis. Here, we describe a new member of the prokaryotic voltage-gated Na+ channel family (NsvBa; Non-selective voltage-gated, Bacillus alcalophilus) that is nonselective among Na+, Ca2+ and K+ ions. Mutations in NsvBa can convert the nonselective filter into one that discriminates for Na+ or divalent cations. Gain-of-function experiments demonstrate the portability of ion selectivity with filter mutations to other Bacillus Nav channels. Increasing pH and temperature shifts their activation threshold towards their native resting membrane potential. Furthermore, we find drugs that target Bacillus Nav channels also block the growth of the bacteria. This work identifies some of the adaptations to achieve ion discrimination and gating in Bacillus Nav channels.\n\n## Introduction\n\nIon selectivity is a defining feature of ion channels. While the structural and biophysical determinants of K+ selectivity are well described (Doyle et al., 1998; Jiang et al., 2003), those of Na+ and Ca2+ are unresolved. To fill this knowledge gap, the voltage-gated sodium channels (Nav channels) from bacteria have been extensively studied by structural biologists. To date, two full-length (NavAb and NavRh) (Payandeh et al., 2011, 2012; Zhang et al., 2012) and three pore-only (NavMs, NavAe and NavCt) (McCusker et al., 2012; Tsai et al., 2013; Shaya et al., 2014) prokaryotic Na+ channel crystal structures have been solved. The full-length structures demonstrate that four identical subunits, each containing 6-transmembrane segments, assemble together to form a functional channel. The first four transmembrane segments form the voltage sensor (S1\u2013S4) while the fifth and sixth transmembrane segments (S5, S6) form the pore domain. The selectivity filter, which forms critical interactions with the permeating hydrated ions, defines the pore and is scaffolded by two pore helices (P1 and P2) from each subunit. The dipole created by the helices, and an acidic residue from each subunit, create an electronegative region that attracts cations. However, the molecular arrangement that enables Na+-selectivity in prokaryotes might differ from mammalian voltage-gated Na+ channels. Thus, it is not clear if structural features that determine ion selectivity in homotetrameric prokaryotic NaV reflect the functionally heterotetrameric eukaryotic sodium channels.\n\nThe first prokaryotic voltage-gated sodium channel, cloned from Bacillus halodurans C-125, was called NaChBac (Na+ Channel of Bacteria) (Ren et al., 2001). Since then, NaV channels from at least 9 bacterial species have been functionally characterized. All full-length channels exhibit Na+-selectivity (Ren et al., 2001; Ito et al., 2004; Koishi et al., 2004; Irie et al., 2010; Ulmschneider et al., 2013). Most bacteria require the ion-motive forces provided by H+ or Na+ ions that move through the MotAB or MotPS stator to power the rotary motor proteins to drive the motion of the flagella, (Figure 1A) (Ito et al., 2004; Fujinami et al., 2009). In soda lakes and other extremely H+-poor (pH 9\u201312; 1 nM\u20141 pM [H+]) and Na+-rich environments (up to 500 mM), alkaliphilic prokaryotes couple motility and ion transporters to Na+ rather than H+. Growth and motility of the alkaliphilic bacterium Bacillus alcalophilus AV (Vedder, 1934) are better supported in K+ rather than Na+ conditions (Terahara et al., 2012). In alkaliphilic Bacillus, either ion can drive the flagellar motor, and a single mutation in the MotS protein was identified that converted the naturally nonselective MotPS (Na+ or K+) stator into a Na+-selective stator. Presumably, bacterial Nav channels provide a source of Na+ ions that drives the stators and maintains ion homeostasis. However, it is unclear what condition or stimulus would open these channels at the very hyperpolarized resting membrane potentials (\u03a8rest \u2248 \u2212180 mV) found in bacteria.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig1-v1.jpg)\n\n**Figure 1.:** (A) A diagram depicting the membrane proteins involved in the Na+ cycle of Bacillus alcalophilus. The cation/proton antiporters, including Mrp antiporters, catalyze net proton accumulation in the cytoplasm in cells that are extruding protons during respiration. Na+ re-entry in support of pH homeostasis is achieved by Na+ solute symporters and through the voltage-gated channel, NsvBa . (B) Relatedness within functionally characterized members of the bacterial sodium channel superfamily. A rooted phylogenic tree analysis of bacterial Nav channels calculated by using the CLUSTALW program (http://clustalw.genome.jp). Branch lengths are proportional to the sequence divergence (scale bar = 0.2 substitutions per amino acid site). (C) An alignment of the selectivity filters from various Na+, K+, and nonselective ion channels. The pore region from the indicated ion channel families (italic) were aligned using the ClustalW multiple sequence alignment program applying the default color scheme with <60% conservation of character: Hydrophobic (blue); polar (green); glutamine, glutamate, aspartate (magenta). Special amino acids are designated with their own color: glycine (orange); proline (yellow) and tyrosine or histidine (cyan). The barrels indicate the regions spanning the pore helices found in the Shaker (K+-selective), NaK and NavRh crystal structures.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Left, Example traces from HEK 293T cells expressing sodium channels, NsvBa (black), NaChBac (gray) and NavBp (purple). Currents were activated by 0.5 s (NsvBa and NaChBac) or 1 s NavBp prepulses of increasing potential followed by a test pulse to \u221220 mV. (B) Resulting conductance-voltage and inactivation-voltage relationships were measured by plotting the average prepulse peak current converted to conductance, and reduction of test pulse peak current, respectively as a function of prepulse potential (n = 6\u201310, Error = \u00b1SEM) and fit to a sigmoid equation. (C) Inactivation rate (\u03c4inact) -voltage relationship was measured by fitting the current decay to a single exponential equation for NsvBa (Black), NaChBac (gray) and NavBp (purple).\n\nHere, we determine the permeation and gating properties of a voltage-gated ion channel (NsvBa) from Bacillus alcalophilus AV. While related to members of the Nav superfamily (Figure 1B), NsvBa is nonselective among cations. Using mutagenesis, we demonstrate that the nonselective filter from NsvBa can be converted into one that is more selective for Na+ or Ca2+, and that these features can be conferred onto the NaChBac filter. In addition to selectivity, we characterize the voltage-, pH- and temperature-dependence of Bacillus Nav channels. We find that a combination of higher temperature and pH are required to reduce the activation threshold of channel opening in Bacillus Nav channels, which is unique to this family of sodium channels. We also characterize Nav current antagonism by drugs that impaired the growth and motility of alkaliphilic Bacillus species at corresponding concentrations. These findings shed light on the biophysical requirements for ion channel selectivity, pharmacology, biochemical adaptations among Bacillus species, and the evolution of voltage-gated Na+ channels.\n\n## Results\n\nAmong the first alkaliphilic extremophiles described in the literature, the gram-positive, rod-shaped Bacillus alcalophilus AV was initially isolated from human feces (Vedder, 1934). We cloned NsvBa and generated plasmids for mammalian cell expression to enable measurement by patch clamp methods. Currents from NsvBa-transfected HEK293T cells were robust (\u2248119 pA/pF in 150 mM extracellular [Na+]) with voltage-dependent activation and inactivation similar to NaChBac (Figure 1\u2014figure supplement 1A,B). The time constant of NsvBa Na+ current inactivation (\u03c4inact) measured at 0 mV was 42 ms, \u223c2 times faster than NaChBac (78 ms) but \u223c6 times slower than NavMs (7 ms, Figure 1\u2014figure supplement 1C). The sequence TLESWxxG is conserved in the selectivity filters of prokaryotic Na+ channels (Figure 1C). Although the sequence of NsvBa is homologous to other prokaryotic Nav channels, the selectivity filter sequence (TLDSWGSG) deviates at the high field-strength site (SiteHFS most extracellular site; see Discussion) with an aspartate residue replacing glutamate (D186) and a flexible glycine at an extracellular position (G189). When aligned, G189 and G191 form a \u2018GxG motif\u2019 commonly found in K+-selective (Kv) and nonselective ion channels (e.g., TRP and CNG channels, Figure 1C). To determine the selectivity of the NsvBa channel, we patch clamped transiently-transfected HEK cells and measured voltage-dependent currents in the presence of monovalent alkali ions (Li+, Na+, K+, Rb+, Cs+) or divalent alkaline earth metals (Mg2+, Ca2+, Sr2+, Ba2+) (Figure 2A,B). Compared to the relatively Na+-selective NaChBac channel, NsvBa was nonselective and all cations but Cs+ and Mg2+ permeated the pore (Figure 2C,D). NsvBa Na+ and K+ single channel conductances were equivalent (30 \u00b1 3 pS and 36 \u00b1 3 pS, respectively, Figure 2\u2014figure supplement 1), indicating that the channel does not distinguish between these ions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig2-v1.jpg)\n\n**Figure 2.:** (A and C) Representative current traces from NsvBa channel (A) or from the NaChBac channel (C) showing the first 0.25 s of 0.5 s activations from \u2212180 mV holding potential: Top, 150 mM Na+ was substituted with an equal concentration of the indicated monovalent ions; Bottom, 110 mM Na+ was substituted for equal concentrations of the indicated divalent cations. (B and D) Resulting current-voltage relationships measured for the conditions tested in (A) and (C). NsvBa: n = 5\u20139, NaChBac: n = 6\u20139; Error = \u00b1SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Example single channel opening events recorded from Na+ and K+ conditions in the inside-out patch configuration. (B) Average current amplitudes plotted over the indicated potentials (n = 4, Error = \u00b1SEM). The conductance for the K+ (36 pS) and Na+ (30 pS) conditions was derived from the slope of a linear fit of the current amplitudes.\n\nGiven the 61% shared amino acid identity between NaChBac and NsvBa channels, we were able to introduce the NaChBac selectivity filter (TLESWASG) into the NsvBa channel to examine two relevant residues, D186E and G189A. These changes conferred Na+-selectivity onto the channel and abrogated all other monovalent and divalent conductances (Figure 3A,B). When tested separately, the single mutation D186E was sufficient for Na+-selectivity (Figure 3\u2014figure supplement 1A,B), whereas the single mutation of G189A substantially reduced, but did not entirely abolish, the permeability of K+ and Rb+ (Figure 3\u2014figure supplement 1C,D). Furthermore, the G189A mutant channel still conducted Ca2+ and Ba2+ divalent ions, whereas the D186E mutation did not. These data suggest that a glutamate at SiteHFS selects Na+ among other cations while the \u2018GxG motif\u2019 likely provides an extracellular K+ or Rb+ ion coordination site, possibly involving the glycine backbone carbonyls as found in the selectivity filter of the potassium and NaK channels (Doyle et al., 1998; Jiang et al., 2002; Alam and Jiang, 2009a; Alam and Jiang 2009b). Next we sought to determine whether the NsvBa filter sequence could be transferred into Na+-selective NaChBac. When the Na+-selectivity filter of NaChBac (TLESWASG) was mutated at two positions (E192D:A195 G) to conform to the NsvBa nonselective filter (TLDSWGSG), ion selectivity was identical to that of NsvBa (Figure 3C,D). This finding illustrates the mutual portability of selectivity between the voltage-gated cation channels in Bacillus species halodurans and alcalophilus AV.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) The selectivity mutant NsvBa channel containing the NaChBac selectivity filter sequence TLESWASG (D186E: G189A) or the (C, D) mutant NaChBac channel containing the NsvBa selectivity sequence TLDSWGSG (E192D:A195G). (A and C) Representative current traces from the mutant channels under the same conditions described in Figure 2. (B and D) Resulting current-voltage relationships measured for the mono- and divalent conditions. (n = 4\u20139 for both channels, Error = \u00b1SEM).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and C) Representative current traces recorded from the NsvBa selectivity filter mutations D186E (sequence TLESWGSG) and G189A (sequence TLDSWASG) in response to 10 mV depolarizing activation steps from \u2212140 mV in (top) monovalent or (bottom) divalent extracellular conditions. (B and D) Resulting current\u2013voltage relationships measured for the mono- (150 mM) or divalent (110 mM) conditions. Current amplitudes are normalized to either the maximum inward current recorded in the 150 mM or 110 mM Na+ condition (n = 4\u20139 cells for both channels, Error = \u00b1SEM).\n\nThe selectivity for Na+ ions in vertebrate Nav channels is attributed to an asymmetric ring of 4 amino acids (Asp, Glu, Lys, and Ala: DEKA) contributed by each of the pore-lining loops of the 4 domains (Catterall, 2012). Voltage gated calcium channels (CaVs) are thought to achieve Ca2+-selectivity by a symmetric ring of 4 glutamate residues (EEEE), each contributed by one domain of the polypeptide (Hess et al., 1986). In contrast, prokaryotes achieve Na+-selectivity from an apparent 4-fold symmetry of acidic residues, each from a subunit in the homomer. In previous studies, we demonstrated that the Na+-selective NaChBac (TLESWASG) filter could be converted into one that prefers the divalents Ba2+ and Ca2+ by introducing acidic residues into three positions in the filter sequence (TLDDWADG) (Yue et al., 2002). This filter sequence also was grafted into the NavAb channel (called CavAb), shown to be more Ca2+-selective, and the high-resolution structure determined (Tang et al., 2014). We tested the LDDWADG mutated filter (S187D:G189A:S190D) in the NsvBa channel and confirmed that it was divalent permeant (Ca2+, Sr2+, Ba2+) but it also had measurable permeability to monovalent cations (including K+ and Rb+), demonstrating that Ca2+-preference achieved by this filter (PCa/PNa\u223c30, Figure 4; Figure 4\u2014figure supplement 1) is much lower than mammalian CaV channels (PCa/PNa \u2273 1000) (Tsien et al., 1987). Rather, this selectivity is more analogous to some members of the TRP channel family, such as TRPV5, TRPV6 (Owsianik et al., 2006; Wu et al., 2010). A comparison of the filter mutations effects on relative permeability of the NaChBac and NsvBa channels are summarized in Figure 4 and listed in Figure 4\u2014figure supplement 2. We also attempted to convert the NsvBa channel into a K+-selective channel by changing the selectivity filter sequence (TLTSWGSG and TLTSWGYG), but these channels either did not express on the plasma membrane or did not conduct cations under our experimental conditions (data not shown).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig4-v1.jpg)\n\n**Figure 4.:** The relative permeability of monovalent and divalent cations against sodium for each channel tested. Values are listed in and Figure 4\u2014figure supplement 1. The relative permeability (Px/PNa) was estimated using the Goldman-Hodgkin-Katz equation. Dashed lines indicate the lower limit of Px/PNa detection under our experimental conditions (See \u2018Materials and methods\u2019).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The selectivity mutant NsvBa channel was replaced with the CaVBac selectivity filter sequence TLDDWADG (S187D:G189D:S190D). (A) Representative current traces from the mutant channels under the same conditions described in Figure 2. (B) Resulting current-voltage relationships measured for the mono and divalent conditions. (n = 4\u20138 for each channel, Error = \u00b1SEM).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig4-figsupp2-v1.jpg)\n\nAlkaliphilic Bacillus are estimated to have very negative resting membrane potentials (\u03a8rest \u2248 \u2212180 mV), although membrane potentials in bacteria are measured from voltage- sensitive dye studies and variability within populations can be large. Nevertheless, the activation threshold for Bacillus sodium channels is \u2248 \u221240 mV, which is extremely depolarized relative to estimates of \u03a8rest. Since alkaliphilic bacteria live in high pH environments, we tested whether their sodium channel gating shifted as a function of pH. As shown for the Na+-selective channel from Bacillus pseudofirmus OF4 (NavBp) (Ito et al., 2004), Na+ currents from NaChBac and NsvBa are also modulated by high extracellular pH (Figure 5). When extracellular pH was increased from 7.4 to 9.4, the peak current increased twofold to fourfold and the steady state voltage-dependence was negatively shifted by 28\u201334 mV (Figure 5\u2014figure supplement 1). Basic extracellular pH alone is probably insufficient to reduce this substantial energy barrier to activate these channels from \u03a8rest = \u2212180 mV (\u2248\u22123.2 kcal/mol). Thus additional influences are required to bring \u03a8rest and V1/2 closer together.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig5-v1.jpg)\n\n**Figure 5.:** Left, representative traces recorded from one cell expressing the NsvBa (black), NaChBac (gray) and hNav1.1 (green) channels in 150 mM NaCl conditions with the external pH adjusted to 6.4, 7.4, 8.4 and 9.4. Currents were activated by +10 mV steps from a holding potential of \u2212140 mV (NsvBa and NaChBac) or \u2212120 mV (hNav1.1). Right, resulting voltage current relationship normalized to the peak current measured in the 7.4 pHo condition (n = 4\u20137 for each channel, Error = \u00b1SEM).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig5-figsupp1-v1.jpg)\n\nMany alkaliphilic Bacillus species growth rates are temperature-dependent (30\u201360\u00b0C). Thus we tested the effects of temperature (20\u201337\u00b0C) at neutral and basic extracellular pH (7.4 and 9.4, respectively) on the Na+ currents conducted by Bacillus NsvBa, NaChBac and NavBp channels (Figure 6A\u2013C). At neutral pH, we observed that increasing the temperature shifted the voltage dependence of activation for these channels by \u221219 to \u221224 mV (\u221262, \u221255, \u221251 mV respectively). When tested together, temperature and basic pH effects on V1/2 for NsvBa, NaChBac and NavBp were additive, converging on \u2248\u2212100 mV (\u221295, \u2212102, \u2212100 mV respectively). Importantly, we determined that the NsvBa remains a non-selective channel at higher pH and temperature, although the Px/PNa for K+ and Ca2+ did increase slightly 2\u20133 times (Figure 6\u2014figure supplement 1). To quantify the temperature sensitivity of these channels, the relationship between the peak current during a voltage ramp and temperature was fit to a linear equation to determine the 10-degree temperature coefficient (Q10). The Q10 for NaChBac and NavBp peak currents was 3.5\u20134.4 at neutral pH and 3.5\u20134.1 at basic pH. In contrast, the voltage-dependence of activation of the hNav1.1 channel was less temperature- (Q10 = 1.2 and 1.4, Figure 6D) and pH- (\u0394 V1/2 < 8 mV, Figure 5\u2014figure supplement 1) sensitive. Thus, pH and temperature-induced increases of the peak current and reduction of the voltage-dependence of activation are distinct from eukaryotic Nav channels.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig6-v1.jpg)\n\n**Figure 6.:** Left Example INa traces conducted by (A) NsvBa, (B) NaChBac, (C) NavBp and (D) Nav1.1 channels, when the extracellular saline (pH = 7.4 or 9.4) was heated from 20 to 37\u00b0C. Channels were activated by a 0.5 Hz voltage ramp. Voltage ramps were applied for different durations to compensate for different channel kinetics of activation and inactivation: NsvBa and NaChBac (100 ms); NavBp (200 ms) and Nav1.1 (10 ms). Right, Arrhenius plots with resulting peak current (plus symbols) and V1/2 (open squares) are graphed as a function of temperature. The peak currents were fit to a linear equation and the resulting slope (Peak Q10) given for both external pH conditions (n = 4).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Top, Representative NsvBa current traces recorded at 34\u2070C under different extracellular cationic conditions with a pH = 9. Currents were activated by increasing potentials from \u221210 mV to 70 mV from a holding potential of \u2212140 mV. Bottom, Corresponding current\u2013voltage relationships measured under the conditions listed above (n = 4 or 5 for each condition, Error = \u00b1SEM). Peak inward currents were normalized to the Na+ current measured either in 110 or 150 mM extracellular solution. Erev was calculated by fitting the current from 0 mV to 60 mV to a linear equation, and determining the potential at zero current. When corrected for liquid junction potential differences in the salines, Erev under these conditions were 40 mV for 150 mM Na+; 36 mV for 110 mM Na+; 41 mV for 110 mM Ca2+ and 43 mV for 150 mM KCl. (B) The calculated relative permeability for cations measured at 22\u2070C and 34\u2070C.\n\nThe stimuli that depolarize these bacteria from \u2212180 mV to the more depolarized range where voltage-gated channels activate (\u221240 to \u2212100 mV, depending on pH and temperature), are not known. We speculate that \u03a8rest declines as bacterial pumps are starved for internal H+ or Na+ to supply the hyperpolarizing extrusion pumps. Internal [Na+] would be rapidly recharged by activation of the voltage-gated monovalent cation channels. Since cation entry into alkaliphilic bacteria is at least partially dependent on Nav channels, we hypothesized that Nav channel antagonists would attenuate bacterial growth. Under voltage clamp, we observed that sodium current from Bacillus channels NavBp, NaChBac and NsvBa are blocked by known Nav channel antagonists, the local anesthetic lidocaine, the anti-hypertensive nifedipine, and the anti-estrogen tamoxifen, with similar potencies (Figure 7A,B and Figure 7\u2014figure supplement 1). When these drugs were introduced into the culture media, growth of Bacillus species alcalophilus and pseudofirmus were severely impaired as measured by spectroscopic absorbance (Figure 7C,D). The measured half-inhibitory concentrations (IC50) of sodium current and bacterial growth were within a half-log unit (Figure 7\u2014figure supplement 1), suggesting that growth inhibition was not an off-target effect. We also examined the effect of these drugs on two matrices of Bacillus motility: tumbling frequency and swim speed. tamoxifen, nifedipine and lidocaine increased tumbling frequency and decreased swim speed of B. pseudofirmus (Figure 7E, Figure 7\u2014figure supplement 1). However, B. alcalophilus swim speed was not delayed by the three drugs and only tamoxifen and nifedipine increased tumbling frequency (EC50 = 70 \u03bcM and 375 \u03bcM, respectively).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig7-v1.jpg)\n\n**Figure 7.:** (A) Example Na+ currents from NaChBac, NsvBa and NavBp channels in the presence of vehicle control (\u22640.1% DMSO) and extracellularly applied drugs. Currents were activated by a 0.2 Hz train of 500 ms depolarizations to 0 mV from \u2212140 mV. (B) The resulting NsvBa (open circles) and NaChBac (filled triangles) Na+ current block-drug relationship by tamoxifen, nifedipine and lidocaine (n = 4\u20136 cells per concentration, Error = \u00b1SEM). (C) The effect of drugs on the time course of bacterial growth. (D) The resulting drug antagonism of growth by Bacillus alcalophilus (open circles) and Bacillus pseudofirmus (filled squares) inferred by light spectroscopy 600 \u03bb absorbance (n = 4 growth trials, Error = \u00b1SEM). Tamoxifen is a fluorescent compound which significantly absorbs 600 \u03bb light at concentrations above 30 \u03bcM, indicated by a hashtag (#). (E) The effect of nifedipine, tamoxifen, and lidocaine on Bacillus alcalophilus (open circles) and pseudofirmus (filled squares) tumbling and swim speed (n = 4 trials, Error = \u00b1SEM). Statistical significance of motility in untreated and drug-treated cells using a Student's t-test and indicated by an asterisk (p < 0.05) (*). EC50 and IC50 values for all assays are listed in Figure 7\u2014figure supplement 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04387/elife-04387-fig7-figsupp1-v1.jpg)\n\n## Discussion\n\nWe have functionally characterized NsvBa, a cation nonselective voltage-gated ion channel from Bacillus alcalophilus. Our findings demonstrate that this family of prokaryotic voltage-gated Na+ channels are not exclusively Na+-selective and that the filter sequence that controls passage of cations into the bacteria are transferable within the Bacillus genus. Through a series of mutations, we showed that the selectivity of Bacillus Nav channels can be converted from nonselective, to relatively higher Na+ or Ca2+ selectivity, suggesting that the filter is readily mutable in evolution to adapt to ionic conditions. These highly adaptable selectivity filters are critical for the Bacillus alkaliphiles, allowing for the habitation of various cation-rich environments in which they presumably evolved. It is anticipated that the ion-specificity of at least some antiporters will parallel that of the major coupling ions for the voltage-gated channels that provide a significant amount of their cytoplasmic substrate.\n\nAlthough no Na+ ions reside within the filter of the wild type NavAb crystal structures, 3 Na+ coordinating sites were proposed: glutamate side chains form a high-field-strength site (SiteHFS) near the extracellular end of the filter, while backbone carbonyls of Leu and Thr comprise central (SiteCEN) and inner sites (SiteIN) (Payandeh et al., 2011). In the CavAb structure, 3 hydrated Ca2+ ions were found coordinated within the filter and 3 sites (Sites 1\u20133) proposed within the filter. Site 1, the one closest to the extracellular surface, is formed by 4 Asp carboxyl side chains, equivalent to positions Ser 196 in NaChBac and Ser 190 in NsvBa. Site 2 (equivalent to SiteHFS in the wt NavAb crystal structure) is formed by four side chain carboxyls and four backbone carbonyls from equivalent residues of Glu 192 in NaChBac and Asp 186 in NsvBa. Our data suggest that the shorter side chain of the NsvBa Asp acidic residue at site 2 is correlated with decreased Na+-selectivity, but Na+ selectivity can be artificially endowed when replaced by a Glu (D186E) (Figure 3\u2014figure supplement 1). In agreement with this interpretation, a recent report demonstrates that when the longer side chain Glu 192 is mutated to the shorter Asp in NaChBac (E192D), the channel becomes less selective for Na+ among Ca2+ and K+ ions (Finol-Urdaneta et al., 2014). The full-length bacteria NaV from marine \u03b1-proteobacterium Rickettsiales HIMB114 (NavRh) was crystallized containing the selectivity filter TLSSWET-. Although the NavRh channel did not function when heterologously expressed in mammalian and insect cells, the filter was found to be Na+-selective when grafted into the NaChBac channel. It is surprising that although the glutamates within the NavRh and NavAb filters originate at distinct positions (See Figure 1), the carboxyl side chains from both channels occupy the same positions in space (Zhang et al., 2012). Thus, it is likely that selectivity for Na+ over other cations is partly achieved by the geometry of the arrangement of the carboxylates at Site 2 (SiteHFS) within the filter of bacterial Na+ channels. High-resolution crystal structures of Nav channels in which sodium ions are resolved are needed to confirm this hypothesis.\n\nAmong all sequenced living species, naturally occurring nonselective voltage-gated ion channels are rare. It is not clear whether cation-selective or nonselective filters arose first within prokaryotes. Analysis comparing domains of bacteria and mammalian Nav channels indicate that Na+-selectivity was independently acquired in these channels families (Liebeskind et al., 2013). Bacterial Nav channels are functionally more related to homotetrameric CatSper and Kv channels and thus may not be direct ancestors of mammalian Nav channels. Our results are consistent with this interpretation. Not surprisingly, we were not able convert Bacillus Nav channels to K+-selective channels by mutating the filter sequence, presumably since the pore architecture between Kv and bacterial Nav channels (e.g. lumen size, filter length and number of pore helices) are structurally divergent. Our results suggest that the \u2018GxG motif\u2019 found in the NsvBa filter evolved convergently within the bacterial Nav family and is only distantly related to K+-selective Kv channels. A recent report on the expression and characterization of Na+ channel homologs from the invertebrate sea anemone Nematostella vectensis (NvNaV2.1), revealed a heterotetrameric Na+ channels bearing noncanonical selectivity site (DEEA) that was not selective among K+ and Na+ ions (Gur Barzilai et al., 2012). Thus it appears that the homomeric prokaryotic NsvBa and functionally-heteromeric eukaryotic NvNaV2.1 channels are examples of evolution of Na+-selectivity to non-selectivity that occurred independently within prokaryotes and metazoans.\n\nIn excitable eukaryotic tissues such as nerves and muscle, the half-activation threshold (V1/2) of voltage-gated sodium channels is within \u223c80 mV of their cellular resting membrane potential (\u03a8rest \u223c -60 to \u221290 mV). At first glance, this appears to contrast with the 140 mV difference between the \u03a8rest and V1/2 of alkaliphilic Bacillus. But as we have shown, increasing alkalinity and temperature shift bacterial Nav V1/2's to approximately \u2212100 mV. At temperatures approaching 40\u00b0C, our patch recordings became unstable, thus limiting the temperature range we tested to <37\u00b0C. If the sodium current sensitivity is extrapolated to 60\u00b0C, the voltage dependence would likely be well within 80 mV of the most negative bacterial resting membrane potential. Since bacterial \u03a8rest is a function of metabolic state (Na+/H+ pumping) and bacteria occupy more variable ionic environments than neurons, the larger difference between \u2018optimal\u2019 a \u03a8rest and V1/2 makes physiological sense. The high temperature and pH sensitivity of bacterial Nav channels is similar to TRP and some Kv channels (Patapoutian et al., 2003; Yang and Zheng, 2014), and is not shared by vertebrate Nav channels. We suspect that the fidelity of neuronal firing in metazoans, which depend on their NaV channels, led to evolution of less sensitivity to pH and temperature, perhaps by selection of the residues that become exposed to waters within the voltage-sensing S4 and selectivity filter (Chowdhury et al., 2014). In contrast, we propose that alkaliphilic bacteria, which dwell in high temperature (35\u201360\u00b0C) and high pH (9\u201311) environments, employ homomeric Nav channels for an entirely different purpose, that of rapidly adjusting internal sodium concentration for metabolic control. This would thus impact growth rates of these Bacillus species as we have observed.\n\nConcentrations of lidocaine, nifedipine, and tamoxifen that inhibit heterologously-expressed bacterial Nav channels (NavBp and NsvBa) also block the growth of native Bacillus species (B. pseudofirmus and B. alcalophilus). Although all three drugs affected motility for B. pseudofirmus, only tamoxifen and nifedipine increased tumbling frequency of B. alcalophilus. These results suggest that in B. alcalophilus there may be other transporters or channels besides NsvBa that provide a cation source to drive flagellar motion. These finding demonstrate that block of Na+ entry via Nav, which disrupts the sodium cycle, can impair Bacillus motility and growth. The prokaryotic Nav from Magnetococcus marinus (NavMs), was recently crystalized with a brominated drugs bound and the proposed binding site validated (Bagneris et al., 2014). Thus voltage-gated channels found in pathogenic Bacillus (e.g. Bacillus cereus and anthracis) could potentially be antimicrobial targets.\n\n## Materials and methods\n\n### Whole-cell voltage-clamp experiments\n\nHEK 293T cells were transiently transfected with mammalian cell expression plasmid pTracer CMV2 containing either NsvBa or NaChBac genes. The NCBI GenBank accession number for NsvBa is JX399518.1 and is annotated as a K+ ion transporter (BalcAV3624). Cells were seeded onto glass coverslips, and placed in a perfusion chamber for experiments where extracellular conditions could be altered. With the exception of the experiments described in Figure 5, Figure 2\u2014figure supplement 1 and Figure 5\u2014figure supplement 1, the pipette electrode solution contained (in mM): NMDG (90), NaCl (20), HEPES (10), EGTA (5), CaCl2 (0.5) and pH was adjusted to 7.4 with HCl. When testing the relative permeability of monovalent cations, the bath solution contained (in mM): X-Cl (150), HEPES (10), EGTA (5), CaCl2 (0.5) and the pH was adjusted with X-OH, where the X is the indicated monovalent cation. When testing the relative permeability of divalent cations, the bath solution contained: X-Cl2 (110), HEPES (10), EGTA (5), CaCl2 (0.5) and the pH was adjusted with X-(OH)2, where the X is the indicated divalent cation. For the experiments in Figure 5, extracellular saline contained NaCl (150), HEPES (10), CaCl2 (2) and pH was adjusted with CsOH so that the concentration of permeant Na+ ion remained constant at high pH. All saline solutions were adjusted to 300 mOsm (\u00b15) with mannitol, if needed. Data were analyzed by Igor Pro 7.00 (Wavemetrics, Lake Oswego, OR). Residual leak (>\u2212100 pA) and capacitance were subtracted using a standard P/4 protocol. Current-voltage-relationships were fit with the following equation:\n\n$$\nI=\\frac{V\u2212E_{rev}}{{1+exp(\\frac{V\u2212V\\frac{1}{2}}{RT/F})}\n$$\n\nwhere I is current and Erev is the extrapolated reversal potential. Erev was used to determine the relative permeability of monovalent cation X to Na (Px/PNa) according to the following equation (Hille, 1972; Sun et al., 1997).\n\n$$\n\\frac{P_{x}}{P_{Na}}=\\frac{\\alpha_{Nae}}{\\alpha_{xe}}[exp(\\frac{\u0394E_{rev}}{RT/F})]\n$$\n\nwhere \u0394Erev, \u03b1x, R, T and F are the reversal potential, effective activity coefficients for cation x (i, internal and e, external), the universal gas constant, absolute temperature, and the Faraday constant, respectively. For these pseudo-bionic conditions, we are assuming that the internal NMDG is impermeant\u2014it has a similar ionic radius as cesium, which is impermeant in all of the Nav channels we tested. The effective activity coefficients (\u03b1x) were calculated using the following equations:\n\n$$\n\\alpha_{x}=\\gamma_{x}[X]\n$$\n\nwhere \u03b3x is the activity coefficient and [X] is the concentration of the ion. For calculations of membrane permeability, activity coefficients (\u03b3) was calculated using the Debye-H\u00fcckel equation: 0.74, 0.76, 0.72, 0.71, 0.69, 0.35, 0.29, 0.27 and 0.27 correspond to Na+, Li+, K+, Rb+, Cs+, Mg2+, Ca2+, Sr2+ and Ba2+ respectively. To determine the relative permeably of divalent cations to Na+, the following equation was used:\n\n$$\n\\frac{P_{x}}{P_{Na}}=\\frac{{\\alpha_{Nai}[exp(\\frac{E_{rev}F}{RT})][exp(\\frac{E_{rev}F}{RT})+1]}}{4\\alpha_{xe}}\n$$\n\nErev for each cation condition was corrected to the measured liquid junction potentials (\u22124.4 to 3.4 mV). In some cationic conditions, no inward (negative) voltage-dependent currents could be activated, but Erev was measured as \u2264\u22124 mV. In these cases, the lower limit of Px/PNa was reached (0.1) due to low levels of endogenous chloride and nonselective currents in HEK cells effecting Erev. The voltage-dependence of channel activation and inactivation was fit to the equation:\n\n$$\nI_{norm}=I_{max}\u2212(I_{norm}\u2212I_{min})/(1+exp[\\frac{V\u2212V\\frac{1}{2}}{k}])\n$$\n\nwhere Imax and Imin are the maximum and minimum current values, V is the applied voltage, V1/2 is the voltage at half activation, and k is the slope factor. For the single channel conductance measurements, experimental conditions were the same except that the pipette and bath saline solutions were switched. The equation for the exponential fits used in to estimate the rate of inactivation was:\n\n$$\nf(x)=B+A\u2009exp[(\\frac{1}{\\tau})x]\n$$\n\nwhere \u03c4 is the time constant.\n\nFor the experiments performed in Figure 6, where extracellular pH and/ or temperature were altered, the pipette electrode solution contained (in mM): CsMES (100), HEPES (10), NaCl (15), EGTA (6), TAPS (5), MgCl2 (2), CaCl2 (3) and pH was adjusted to 6.4\u20139.4 with CsOH or HCl. For temperature-controlled experiments, the perfusate was heated and cooled at rate of 0.4\u20132\u00b0C / s using a Warner TC-344B heater controller and Warner SHM-6 solution heater while bath temperature was monitored using a thermistor placed in close proximity to the recording electrode. A linear fit of the peak currents during the voltage ramp was used to determine Q10, as described by the Arrhenius equation:\n\n$$\nQ_{10}=[\\frac{R2}{R1}]^{10/(T2\u2212T1)}\n$$\n\nWhere R = rate and T = temperature\n\n### Alkaliphilic bacterial growth assays\n\nB. alcalophilus and B. pseudofirmus OF4 were grown in malate yeast extract (MYE) or KMYE (50 mM K2CO3 instead of Na2CO3 in MYE) medium with shaking at 37\u00b0C for 6 hr. Cells were suspended in 1.0 ml of the MYE or KMYE medium (with or without 10, 30, 100, or 300 \u00b5M nifedipine), and incubated at 37\u00b0C for 10 min. Microscopic observation was carried out immediately by the hanging drop method using a Leica DMLB100 dark field microscope (400\u00d7) and Leica DC300F camera, Leica IM50 version 1.20 software (Leica Geosystems, Tokyo), and recorded with Display capture ARE software (http://www.vector.co.jp/soft/win95/art/se221399.html). The swimming speed of 40 individual cells (swimming for more than 15 s), and swimming fractions of more than 50 individual cells were measured by 2D movement measurement capture 2D-PTV software (DigimoCo., Ltd.). All results shown are the averages of three independent experiments. Drug antagonism of bacteria growth was assessed using the equation:\n\n$$\n\\frac{Ab_{control}\u2212Ab_{drug}}{Ab_{control}}\\times100\n$$\n\nwhere Abcontrol and Abdrug are the maximum spectroscopic absorbance at 600\u03bb measured within 16 hr of bacterial growth in untreated and drug treated conditions, respectively. The growth inhibition-drug concentration relations were fit using the Hill equation described above.\n",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "d30d387c-fd77-4b8b-a7d3-9bfe5dd95156",
+      "submission_id": "445272ec-6c7d-4b97-9818-fd528104abb3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04387.018](https://doi.org/10.7554/eLife.04387.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cIonic selectivity and thermal adaptations within the voltage-gated sodium channel family of alkaliphilic Bacillus\u201d for consideration at eLife. Your article has been favorably evaluated by Vivek Malhotra (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Richard Aldrich (Reviewing editor); Youxing Jiang and Baron Chanda (peer reviewers).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn recent years, prokaryotic sodium channels have become model systems to study the structural basis of sodium ion transport and selectivity. In this study, DeCaen et al. describe a new member of this family that lacks the selectivity of the canonical prokaryotic sodium channels. They determined the permeation and gating properties of NsvBa and demonstrated that the channel is nonselective among Na+, Ca2+ and K+. Based on the filter sequence difference between NsvBa and other Na+ selective prokaryotic Nav channels, the authors performed mutagenesis and demonstrate that the nonselective filter from NsvBa can be converted into one that is selective for Na+ or Ca2+, and that these features can be conferred onto the NaChBac filter. The authors also characterized the voltage-, pH- and temperature-dependence of several Nav channels from several Bacillus species and demonstrated that a combination of higher temperature and pH are required to reduce the activation threshold of channel opening in these alkaliphilic Bacillus bacteria. This lends credence to their claim that these channels are involved in transport of sodium and other alkali metal ions at highly hyperpolarized potentials which is also the resting membrane potential of this bacterial host. In addition, the authors also characterized the pharmacological properties of Bacillus Nav channels using various Nav channel antagonists and demonstrated that these drugs inhibit the cell growth likely due to the block of Na influx through Nav channels.\n\nLike this group's previous studies on several prokaryotic Na channels, including the cloning and characterization of the 1st prokaryotic Nav channel (NaChBac) also from a Bacillus species, the characterization of NsvBa presented here is systematic and provide important insights into the selectivity and gating of the Nav channel family. In addition, this group's discovery and characterization of several members of prokaryotic homo-tetrameric Nav channel family have provided excellent model systems for structural studies of Na/Ca channels. This work is well done and nicely presented.\n\nThe only substantive concern is regarding the claim that these channels are non-selective for sodium. All the selectivity data shown here is based on experiments at neutral pH and 22 degree Celsius. We would like to see if this non-selectivity is maintained at higher temperatures and at alkaline pHs. If these channels remain truly non-selective under those conditions, then one wonders what is the role of sodium selective voltage-gated channels?\n",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5a79a303-7137-48d8-a676-f24881a64ed0",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C1",
+      "claim": "Bacillus alcalophilus AV was initially isolated from human feces.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the first alkaliphilic extremophiles described in the literature, the gram-positive, rod-shaped Bacillus alcalophilus AV was initially isolated from human feces (Vedder, 1934).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vedder, 1934",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "9e499929-71eb-4135-9cad-eb0f5b71a2b6",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C2",
+      "claim": "NsvBa currents from transfected HEK293T cells were robust at approximately 119 pA/pF in 150 mM extracellular Na+.",
+      "claim_type": "EXPLICIT",
+      "source": "Currents from NsvBa-transfected HEK293T cells were robust (\u2248119 pA/pF in 150 mM extracellular [Na+]) with voltage-dependent activation and inactivation similar to NaChBac (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements from patch clamp recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "230d63cc-c499-4914-a024-ca432f096f6b",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C3",
+      "claim": "The time constant of NsvBa Na+ current inactivation measured at 0 mV was 42 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constant of NsvBa Na+ current inactivation (\u03c4inact) measured at 0 mV was 42 ms, \u223c2 times faster than NaChBac (78 ms) but \u223c6 times slower than NavMs (7 ms, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "6a92188a-de1c-4a95-bbbc-f128998740cf",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C4",
+      "claim": "NsvBa Na+ current inactivation is approximately 2 times faster than NaChBac.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constant of NsvBa Na+ current inactivation (\u03c4inact) measured at 0 mV was 42 ms, \u223c2 times faster than NaChBac (78 ms) but \u223c6 times slower than NavMs (7 ms, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of experimental measurements (42 ms vs 78 ms)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a7d9b7e7-5749-444c-be2f-3353ecfe3e1f",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C5",
+      "claim": "NsvBa Na+ current inactivation is approximately 6 times slower than NavMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constant of NsvBa Na+ current inactivation (\u03c4inact) measured at 0 mV was 42 ms, \u223c2 times faster than NaChBac (78 ms) but \u223c6 times slower than NavMs (7 ms, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of experimental measurements (42 ms vs 7 ms)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "ae3f262a-667c-4c62-ba4c-479b858dd5c0",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C6",
+      "claim": "The sequence TLESWxxG is conserved in the selectivity filters of prokaryotic Na+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence TLESWxxG is conserved in the selectivity filters of prokaryotic Na+ channels (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0161f660-41a1-4ecf-86de-56c055aecdb2",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C7",
+      "claim": "The selectivity filter sequence of NsvBa is TLDSWGSG.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sequence of NsvBa is homologous to other prokaryotic Nav channels, the selectivity filter sequence (TLDSWGSG) deviates at the high field-strength site (SiteHFS most extracellular site; see Discussion) with an aspartate residue replacing glutamate (D186) and a flexible glycine at an extracellular position (G189).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "b8564306-2a1b-4f56-b002-f6974427cd2f",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C8",
+      "claim": "NsvBa selectivity filter deviates at the high field-strength site with an aspartate residue replacing glutamate at position D186.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sequence of NsvBa is homologous to other prokaryotic Nav channels, the selectivity filter sequence (TLDSWGSG) deviates at the high field-strength site (SiteHFS most extracellular site; see Discussion) with an aspartate residue replacing glutamate (D186) and a flexible glycine at an extracellular position (G189).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text based on sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "99d7a78f-6295-4eac-9d2a-cbbc2564bdca",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C9",
+      "claim": "NsvBa has a flexible glycine at an extracellular position (G189).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sequence of NsvBa is homologous to other prokaryotic Nav channels, the selectivity filter sequence (TLDSWGSG) deviates at the high field-strength site (SiteHFS most extracellular site; see Discussion) with an aspartate residue replacing glutamate (D186) and a flexible glycine at an extracellular position (G189).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text based on sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "d4b94955-79da-44ab-b5c2-28c690083f75",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C10",
+      "claim": "G189 and G191 form a 'GxG motif' commonly found in K+-selective and nonselective ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "When aligned, G189 and G191 form a 'GxG motif' commonly found in K+-selective (Kv) and nonselective ion channels (e.g., TRP and CNG channels, Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment and comparison to known channel families",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "c5e035a1-1f65-4548-a98a-a5afa37b27cb",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C11",
+      "claim": "NsvBa was nonselective and all cations but Cs+ and Mg2+ permeated the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the relatively Na+-selective NaChBac channel, NsvBa was nonselective and all cations but Cs+ and Mg2+ permeated the pore (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "3d35a04d-dcb2-4407-94ce-744bfd8cdeb2",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C12",
+      "claim": "NsvBa Na+ single channel conductance was 30 \u00b1 3 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "NsvBa Na+ and K+ single channel conductances were equivalent (30 \u00b1 3 pS and 36 \u00b1 3 pS, respectively, Figure 2\u2014figure supplement 1), indicating that the channel does not distinguish between these ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single channel recordings shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "5f4c91e2-e49a-47dc-b7a3-cab6f5617cce",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C13",
+      "claim": "NsvBa K+ single channel conductance was 36 \u00b1 3 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "NsvBa Na+ and K+ single channel conductances were equivalent (30 \u00b1 3 pS and 36 \u00b1 3 pS, respectively, Figure 2\u2014figure supplement 1), indicating that the channel does not distinguish between these ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single channel recordings shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "499dec95-d981-4bbd-9863-9e81dfba037a",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C14",
+      "claim": "NsvBa does not distinguish between Na+ and K+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "NsvBa Na+ and K+ single channel conductances were equivalent (30 \u00b1 3 pS and 36 \u00b1 3 pS, respectively, Figure 2\u2014figure supplement 1), indicating that the channel does not distinguish between these ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from equivalent single channel conductances for Na+ and K+",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "b4446439-49c4-4a87-b685-73c0fb857977",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C15",
+      "claim": "NaChBac and NsvBa channels share 61% amino acid identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the 61% shared amino acid identity between NaChBac and NsvBa channels, we were able to introduce the NaChBac selectivity filter (TLESWASG) into the NsvBa channel to examine two relevant residues, D186E and G189A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "6f78ccc7-0f0a-455c-8a00-61408526cbcd",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C16",
+      "claim": "Introducing the NaChBac selectivity filter (TLESWASG) into NsvBa conferred Na+-selectivity and abrogated all other monovalent and divalent conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes conferred Na+-selectivity onto the channel and abrogated all other monovalent and divalent conductances (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0ee1dd8c-5d20-49ac-9b02-ac2da92d16dd",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C17",
+      "claim": "The single mutation D186E was sufficient for Na+-selectivity in NsvBa.",
+      "claim_type": "EXPLICIT",
+      "source": "When tested separately, the single mutation D186E was sufficient for Na+-selectivity (Figure 3\u2014figure supplement 1A,B), whereas the single mutation of G189A substantially reduced, but did not entirely abolish, the permeability of K+ and Rb+ (Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "58cabb6b-345f-4425-8153-89c13bcebb7d",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C18",
+      "claim": "The single mutation G189A substantially reduced, but did not entirely abolish, the permeability of K+ and Rb+ in NsvBa.",
+      "claim_type": "EXPLICIT",
+      "source": "When tested separately, the single mutation D186E was sufficient for Na+-selectivity (Figure 3\u2014figure supplement 1A,B), whereas the single mutation of G189A substantially reduced, but did not entirely abolish, the permeability of K+ and Rb+ (Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "f30f90af-447e-4781-95e9-be55fe9872f4",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C19",
+      "claim": "The G189A mutant channel still conducted Ca2+ and Ba2+ divalent ions, whereas the D186E mutation did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the G189A mutant channel still conducted Ca2+ and Ba2+ divalent ions, whereas the D186E mutation did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "c519f412-17b1-45ca-9676-bd8f3be1492d",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C20",
+      "claim": "A glutamate at SiteHFS selects Na+ among other cations.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that a glutamate at SiteHFS selects Na+ among other cations while the 'GxG motif' likely provides an extracellular K+ or Rb+ ion coordination site, possibly involving the glycine backbone carbonyls as found in the selectivity filter of the potassium and NaK channels (Doyle et al., 1998; Jiang et al., 2002; Alam and Jiang, 2009a; Alam and Jiang 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mutagenesis data and supported by citations to structural studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "98e6a31e-6adb-468c-bc54-bb4b2438b7de",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C21",
+      "claim": "The 'GxG motif' likely provides an extracellular K+ or Rb+ ion coordination site.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that a glutamate at SiteHFS selects Na+ among other cations while the 'GxG motif' likely provides an extracellular K+ or Rb+ ion coordination site, possibly involving the glycine backbone carbonyls as found in the selectivity filter of the potassium and NaK channels (Doyle et al., 1998; Jiang et al., 2002; Alam and Jiang, 2009a; Alam and Jiang 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mutagenesis data and supported by citations to structural studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "cdf0e696-5d60-425c-8540-d17ad4519dff",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C22",
+      "claim": "When the Na+-selectivity filter of NaChBac (TLESWASG) was mutated at two positions (E192D:A195G) to conform to the NsvBa nonselective filter (TLDSWGSG), ion selectivity was identical to that of NsvBa.",
+      "claim_type": "EXPLICIT",
+      "source": "When the Na+-selectivity filter of NaChBac (TLESWASG) was mutated at two positions (E192D:A195 G) to conform to the NsvBa nonselective filter (TLDSWGSG), ion selectivity was identical to that of NsvBa (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "8b345dc6-d4ce-4b12-a62d-2f11d68ea212",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C23",
+      "claim": "The selectivity filter is portable between voltage-gated cation channels in Bacillus species halodurans and alcalophilus AV.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding illustrates the mutual portability of selectivity between the voltage-gated cation channels in Bacillus species halodurans and alcalophilus AV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from successful transfer of selectivity filter sequences between NaChBac and NsvBa",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "21b2b892-64b0-4e3a-b79f-2380d407ff32",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C24",
+      "claim": "The selectivity for Na+ ions in vertebrate Nav channels is attributed to an asymmetric ring of 4 amino acids (Asp, Glu, Lys, and Ala: DEKA).",
+      "claim_type": "EXPLICIT",
+      "source": "The selectivity for Na+ ions in vertebrate Nav channels is attributed to an asymmetric ring of 4 amino acids (Asp, Glu, Lys, and Ala: DEKA) contributed by each of the pore-lining loops of the 4 domains (Catterall, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Catterall, 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "40a88378-0358-4fbd-a921-fcaabac18b09",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C25",
+      "claim": "Voltage gated calcium channels (CaVs) are thought to achieve Ca2+-selectivity by a symmetric ring of 4 glutamate residues (EEEE).",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage gated calcium channels (CaVs) are thought to achieve Ca2+-selectivity by a symmetric ring of 4 glutamate residues (EEEE), each contributed by one domain of the polypeptide (Hess et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hess et al., 1986",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0c25e725-58fd-4575-beac-40f027ab2bd0",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C26",
+      "claim": "Prokaryotes achieve Na+-selectivity from an apparent 4-fold symmetry of acidic residues, each from a subunit in the homomer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, prokaryotes achieve Na+-selectivity from an apparent 4-fold symmetry of acidic residues, each from a subunit in the homomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural knowledge of prokaryotic Nav channels",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "f2867605-a38d-4711-b4b4-12085b23d652",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C27",
+      "claim": "The Na+-selective NaChBac (TLESWASG) filter can be converted into one that prefers the divalents Ba2+ and Ca2+ by introducing acidic residues into three positions in the filter sequence (TLDDWADG).",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, we demonstrated that the Na+-selective NaChBac (TLESWASG) filter could be converted into one that prefers the divalents Ba2+ and Ca2+ by introducing acidic residues into three positions in the filter sequence (TLDDWADG) (Yue et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Yue et al., 2002)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "576a0d39-db28-42c6-a4eb-faf76280a214",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C28",
+      "claim": "The LDDWADG mutated filter in NsvBa was divalent permeant (Ca2+, Sr2+, Ba2+) but also had measurable permeability to monovalent cations (including K+ and Rb+).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the LDDWADG mutated filter (S187D:G189A:S190D) in the NsvBa channel and confirmed that it was divalent permeant (Ca2+, Sr2+, Ba2+) but it also had measurable permeability to monovalent cations (including K+ and Rb+), demonstrating that Ca2+-preference achieved by this filter (PCa/PNa\u223c30, Figure 4; Figure 4\u2014figure supplement 1) is much lower than mammalian CaV channels (PCa/PNa \u2273 1000) (Tsien et al., 1987).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "ce4fb01e-4860-4bc6-b5fa-af1a5ce4332d",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C29",
+      "claim": "Ca2+-preference achieved by the LDDWADG filter in NsvBa (PCa/PNa\u223c30) is much lower than mammalian CaV channels (PCa/PNa \u2273 1000).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the LDDWADG mutated filter (S187D:G189A:S190D) in the NsvBa channel and confirmed that it was divalent permeant (Ca2+, Sr2+, Ba2+) but it also had measurable permeability to monovalent cations (including K+ and Rb+), demonstrating that Ca2+-preference achieved by this filter (PCa/PNa\u223c30, Figure 4; Figure 4\u2014figure supplement 1) is much lower than mammalian CaV channels (PCa/PNa \u2273 1000) (Tsien et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Tsien et al., 1987",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "08c7622c-0c4a-4c8c-ad01-0da433aed56d",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C30",
+      "claim": "The selectivity of the LDDWADG filter is more analogous to some members of the TRP channel family, such as TRPV5, TRPV6.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, this selectivity is more analogous to some members of the TRP channel family, such as TRPV5, TRPV6 (Owsianik et al., 2006; Wu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Owsianik et al., 2006 and Wu et al., 2010",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a2246c07-9822-4e59-969f-62a22a99dd59",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C31",
+      "claim": "Alkaliphilic Bacillus are estimated to have very negative resting membrane potentials (\u03a8rest \u2248 \u2212180 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Alkaliphilic Bacillus are estimated to have very negative resting membrane potentials (\u03a8rest \u2248 \u2212180 mV), although membrane potentials in bacteria are measured from voltage- sensitive dye studies and variability within populations can be large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on voltage-sensitive dye studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "f7096e6d-dda9-4b13-9cde-05d218c19f84",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C32",
+      "claim": "The activation threshold for Bacillus sodium channels is approximately \u221240 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the activation threshold for Bacillus sodium channels is \u2248 \u221240 mV, which is extremely depolarized relative to estimates of \u03a8rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "374e868d-7b2c-49c4-852e-181eb9122692",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C33",
+      "claim": "Na+ currents from NaChBac and NsvBa are modulated by high extracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown for the Na+-selective channel from Bacillus pseudofirmus OF4 (NavBp) (Ito et al., 2004), Na+ currents from NaChBac and NsvBa are also modulated by high extracellular pH (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5 and citation to Ito et al., 2004",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "19b7ee74-72c2-47a5-835b-e424d14b6eec",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C34",
+      "claim": "When extracellular pH was increased from 7.4 to 9.4, the peak current increased twofold to fourfold.",
+      "claim_type": "EXPLICIT",
+      "source": "When extracellular pH was increased from 7.4 to 9.4, the peak current increased twofold to fourfold and the steady state voltage-dependence was negatively shifted by 28\u201334 mV (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "7045efae-ad26-4f2e-a9c7-b899963b8261",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C35",
+      "claim": "When extracellular pH was increased from 7.4 to 9.4, the steady state voltage-dependence was negatively shifted by 28\u201334 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "When extracellular pH was increased from 7.4 to 9.4, the peak current increased twofold to fourfold and the steady state voltage-dependence was negatively shifted by 28\u201334 mV (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "5d0712be-6dd7-4ceb-83fc-72ce01e8a1d0",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C36",
+      "claim": "At neutral pH, increasing the temperature shifted the voltage dependence of activation for NsvBa, NaChBac and NavBp channels by \u221219 to \u221224 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "At neutral pH, we observed that increasing the temperature shifted the voltage dependence of activation for these channels by \u221219 to \u221224 mV (\u221262, \u221255, \u221251 mV respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0b6c8eb1-5528-442b-b218-08c05a09bf1f",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C37",
+      "claim": "When tested together, temperature and basic pH effects on V1/2 for NsvBa, NaChBac and NavBp were additive, converging on approximately \u2212100 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "When tested together, temperature and basic pH effects on V1/2 for NsvBa, NaChBac and NavBp were additive, converging on \u2248\u2212100 mV (\u221295, \u2212102, \u2212100 mV respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "85d9b092-734d-47ae-952f-ecf108bccbb8",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C38",
+      "claim": "NsvBa remains a non-selective channel at higher pH and temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we determined that the NsvBa remains a non-selective channel at higher pH and temperature, although the Px/PNa for K+ and Ca2+ did increase slightly 2\u20133 times (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "45c7fcd6-0378-4036-ab42-ba63fd51246e",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C39",
+      "claim": "The Q10 for NaChBac and NavBp peak currents was 3.5\u20134.4 at neutral pH and 3.5\u20134.1 at basic pH.",
+      "claim_type": "EXPLICIT",
+      "source": "The Q10 for NaChBac and NavBp peak currents was 3.5\u20134.4 at neutral pH and 3.5\u20134.1 at basic pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "26a4c4dd-f612-481e-a296-12114b44b872",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C40",
+      "claim": "The voltage-dependence of activation of the hNav1.1 channel was less temperature-sensitive (Q10 = 1.2 and 1.4) than Bacillus Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the voltage-dependence of activation of the hNav1.1 channel was less temperature- (Q10 = 1.2 and 1.4, Figure 6D) and pH- (\u0394 V1/2 < 8 mV, Figure 5\u2014figure supplement 1) sensitive.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "aa8c438e-a9a9-478e-bbf2-a68ac8e1d4e2",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C41",
+      "claim": "The voltage-dependence of activation of the hNav1.1 channel was less pH-sensitive (\u0394 V1/2 < 8 mV) than Bacillus Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the voltage-dependence of activation of the hNav1.1 channel was less temperature- (Q10 = 1.2 and 1.4, Figure 6D) and pH- (\u0394 V1/2 < 8 mV, Figure 5\u2014figure supplement 1) sensitive.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "346eed22-124c-4699-b6be-554be5f0c883",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C42",
+      "claim": "pH and temperature-induced increases of the peak current and reduction of the voltage-dependence of activation are distinct from eukaryotic Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, pH and temperature-induced increases of the peak current and reduction of the voltage-dependence of activation are distinct from eukaryotic Nav channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of Bacillus Nav channels with hNav1.1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "7d4249a0-7ec5-43df-ab31-1b899c4c2d96",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C43",
+      "claim": "Concentrations of lidocaine, nifedipine, and tamoxifen that inhibit heterologously-expressed bacterial Nav channels (NavBp and NsvBa) also block the growth of native Bacillus species (B. pseudofirmus and B. alcalophilus).",
+      "claim_type": "EXPLICIT",
+      "source": "Concentrations of lidocaine, nifedipine, and tamoxifen that inhibit heterologously-expressed bacterial Nav channels (NavBp and NsvBa) also block the growth of native Bacillus species (B. pseudofirmus and B. alcalophilus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing drug effects on channels and bacterial growth",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "fc359d38-9f5a-4173-a2b4-f417743aad4b",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C44",
+      "claim": "All three drugs (lidocaine, nifedipine, and tamoxifen) affected motility for B. pseudofirmus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all three drugs affected motility for B. pseudofirmus, only tamoxifen and nifedipine increased tumbling frequency of B. alcalophilus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data on bacterial motility",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "156e9352-868e-4aa9-849a-90a9565c6a12",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C45",
+      "claim": "Only tamoxifen and nifedipine increased tumbling frequency of B. alcalophilus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all three drugs affected motility for B. pseudofirmus, only tamoxifen and nifedipine increased tumbling frequency of B. alcalophilus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data on bacterial motility",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "bcad0525-ee4e-48f0-93f5-3e44fd09b751",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C46",
+      "claim": "B. alcalophilus swim speed was not delayed by the three drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, B. alcalophilus swim speed was not delayed by the three drugs and only tamoxifen and nifedipine increased tumbling frequency (EC50 = 70 \u03bcM and 375 \u03bcM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data on bacterial motility",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "948968c7-dd2b-4f30-a209-70d7366d1c16",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C47",
+      "claim": "The measured half-inhibitory concentrations (IC50) of sodium current and bacterial growth were within a half-log unit.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured half-inhibitory concentrations (IC50) of sodium current and bacterial growth were within a half-log unit (Figure 7\u2014figure supplement 1), suggesting that growth inhibition was not an off-target effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "ee998d0f-c4db-409f-97cc-5513173c51c5",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C48",
+      "claim": "Growth inhibition by Nav channel antagonists was not an off-target effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured half-inhibitory concentrations (IC50) of sodium current and bacterial growth were within a half-log unit (Figure 7\u2014figure supplement 1), suggesting that growth inhibition was not an off-target effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the close correspondence between IC50 values for channel block and growth inhibition",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a02a0366-c780-4042-afc8-c911676cc89d",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C49",
+      "claim": "Four identical subunits, each containing 6-transmembrane segments, assemble together to form a functional bacterial Nav channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length structures demonstrate that four identical subunits, each containing 6-transmembrane segments, assemble together to form a functional channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural studies of prokaryotic Nav channels",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "36e1ab37-c2c2-4c2e-9def-2b6497fadaf2",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C50",
+      "claim": "The first four transmembrane segments form the voltage sensor (S1\u2013S4) in bacterial Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The first four transmembrane segments form the voltage sensor (S1\u2013S4) while the fifth and sixth transmembrane segments (S5, S6) form the pore domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural studies of prokaryotic Nav channels",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "27f14a28-d82c-4b23-9085-34b063057e5b",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C51",
+      "claim": "The fifth and sixth transmembrane segments (S5, S6) form the pore domain in bacterial Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The first four transmembrane segments form the voltage sensor (S1\u2013S4) while the fifth and sixth transmembrane segments (S5, S6) form the pore domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural studies of prokaryotic Nav channels",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "e976a3e4-c71f-44af-9ba3-fd41f5de3574",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C52",
+      "claim": "The selectivity filter is scaffolded by two pore helices (P1 and P2) from each subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The selectivity filter, which forms critical interactions with the permeating hydrated ions, defines the pore and is scaffolded by two pore helices (P1 and P2) from each subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural studies of prokaryotic Nav channels",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0856776d-ffab-46f7-98e9-ee9de065dc0c",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C53",
+      "claim": "The first prokaryotic voltage-gated sodium channel was cloned from Bacillus halodurans C-125 and was called NaChBac.",
+      "claim_type": "EXPLICIT",
+      "source": "The first prokaryotic voltage-gated sodium channel, cloned from Bacillus halodurans C-125, was called NaChBac (Na+ Channel of Bacteria) (Ren et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ren et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "8dcdc3ff-f08b-4ad8-b1e8-4b8ab161f2bc",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C54",
+      "claim": "NaV channels from at least 9 bacterial species have been functionally characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then, NaV channels from at least 9 bacterial species have been functionally characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "c2399c3b-5cdf-42b2-9903-f267bb9ca433",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C55",
+      "claim": "All full-length bacterial Nav channels exhibit Na+-selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "All full-length channels exhibit Na+-selectivity (Ren et al., 2001; Ito et al., 2004; Koishi et al., 2004; Irie et al., 2010; Ulmschneider et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "d68c7874-f2e9-4a61-99ea-64f23ee4564d",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C56",
+      "claim": "Growth and motility of the alkaliphilic bacterium Bacillus alcalophilus AV are better supported in K+ rather than Na+ conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth and motility of the alkaliphilic bacterium Bacillus alcalophilus AV (Vedder, 1934) are better supported in K+ rather than Na+ conditions (Terahara et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Terahara et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "71c5a6a3-e38d-47ff-b626-59af1e27befd",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C57",
+      "claim": "In alkaliphilic Bacillus, either Na+ or K+ ion can drive the flagellar motor.",
+      "claim_type": "EXPLICIT",
+      "source": "In alkaliphilic Bacillus, either ion can drive the flagellar motor, and a single mutation in the MotS protein was identified that converted the naturally nonselective MotPS (Na+ or K+) stator into a Na+-selective stator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "152b415b-fb31-4ccf-9706-f381a3f7b786",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C58",
+      "claim": "A single mutation in the MotS protein converted the naturally nonselective MotPS (Na+ or K+) stator into a Na+-selective stator.",
+      "claim_type": "EXPLICIT",
+      "source": "In alkaliphilic Bacillus, either ion can drive the flagellar motor, and a single mutation in the MotS protein was identified that converted the naturally nonselective MotPS (Na+ or K+) stator into a Na+-selective stator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "c13fd6f2-9d62-48da-b226-da5abf067c08",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C59",
+      "claim": "Bacterial Nav channels provide a source of Na+ ions that drives the stators and maintains ion homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably, bacterial Nav channels provide a source of Na+ ions that drives the stators and maintains ion homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the role of Nav channels",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a38871e7-c5ac-4295-b0c1-82531004a498",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C60",
+      "claim": "Two full-length prokaryotic Na+ channel crystal structures (NavAb and NavRh) have been solved.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, two full-length (NavAb and NavRh) (Payandeh et al., 2011, 2012; Zhang et al., 2012) and three pore-only (NavMs, NavAe and NavCt) (McCusker et al., 2012; Tsai et al., 2013; Shaya et al., 2014) prokaryotic Na+ channel crystal structures have been solved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "273d0bfb-0d59-4c4b-b030-2895fb625253",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C61",
+      "claim": "Three pore-only prokaryotic Na+ channel crystal structures (NavMs, NavAe and NavCt) have been solved.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, two full-length (NavAb and NavRh) (Payandeh et al., 2011, 2012; Zhang et al., 2012) and three pore-only (NavMs, NavAe and NavCt) (McCusker et al., 2012; Tsai et al., 2013; Shaya et al., 2014) prokaryotic Na+ channel crystal structures have been solved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0c9c8da5-e0a1-4f98-99c6-2cb9fcc4c83a",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C62",
+      "claim": "The molecular arrangement that enables Na+-selectivity in prokaryotes might differ from mammalian voltage-gated Na+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the molecular arrangement that enables Na+-selectivity in prokaryotes might differ from mammalian voltage-gated Na+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on structural differences",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "956bc2d1-16d1-469b-92a8-ed07f7ce2fd8",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C63",
+      "claim": "It is not clear if structural features that determine ion selectivity in homotetrameric prokaryotic NaV reflect the functionally heterotetrameric eukaryotic sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is not clear if structural features that determine ion selectivity in homotetrameric prokaryotic NaV reflect the functionally heterotetrameric eukaryotic sodium channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of uncertainty about the relationship between prokaryotic and eukaryotic Nav channels",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "372d335f-09bf-4c13-a4a4-cb6ef3b9dcef",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C64",
+      "claim": "In soda lakes and other extremely H+-poor (pH 9\u201312; 1 nM\u20141 pM [H+]) and Na+-rich environments (up to 500 mM), alkaliphilic prokaryotes couple motility and ion transporters to Na+ rather than H+.",
+      "claim_type": "EXPLICIT",
+      "source": "In soda lakes and other extremely H+-poor (pH 9\u201312; 1 nM\u20141 pM [H+]) and Na+-rich environments (up to 500 mM), alkaliphilic prokaryotes couple motility and ion transporters to Na+ rather than H+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of alkaliphilic bacteria physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0a55b096-8889-485a-983f-4437c6075d80",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C65",
+      "claim": "Most bacteria require the ion-motive forces provided by H+ or Na+ ions that move through the MotAB or MotPS stator to power the rotary motor proteins to drive the motion of the flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Most bacteria require the ion-motive forces provided by H+ or Na+ ions that move through the MotAB or MotPS stator to power the rotary motor proteins to drive the motion of the flagella, (Figure 1A) (Ito et al., 2004; Fujinami et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Ito et al., 2004 and Fujinami et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "c44f1a70-accd-4cc1-89cd-64abee235db2",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C66",
+      "claim": "In alkaliphilic Bacillus, high external pH activates voltage-gated sodium channels (Nav), which allows Na+ to enter and be used as substrate for cation/proton antiporters responsible for cytoplasmic pH homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In alkaliphilic prokaryotes, high external pH activates voltage-gated sodium channels (Nav), which allows Na+ to enter and be used as substrate for cation/proton antiporters responsible for cytoplasmic pH homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the proposed role of Nav channels in alkaliphilic bacteria",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "05b4b020-09e1-4095-a849-9f7634c0896e",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C67",
+      "claim": "NsvBa is a new member of the prokaryotic voltage-gated Na+ channel family from Bacillus alcalophilus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a new member of the prokaryotic voltage-gated Na+ channel family (NsvBa; Non-selective voltage-gated, Bacillus alcalophilus) that is nonselective among Na+, Ca2+ and K+ ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "c45fa863-f5ea-4005-8c4e-4b23cd78bd45",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C68",
+      "claim": "NsvBa is nonselective among Na+, Ca2+ and K+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a new member of the prokaryotic voltage-gated Na+ channel family (NsvBa; Non-selective voltage-gated, Bacillus alcalophilus) that is nonselective among Na+, Ca2+ and K+ ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract and supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a924e44e-e048-42e7-b7be-9f41cfa32b03",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C69",
+      "claim": "Mutations in NsvBa can convert the nonselective filter into one that discriminates for Na+ or divalent cations.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NsvBa can convert the nonselective filter into one that discriminates for Na+ or divalent cations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract and supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "e519f34e-19e6-4370-b918-88c0335cf396",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C70",
+      "claim": "Filter mutations can confer ion selectivity to other Bacillus Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain-of-function experiments demonstrate the portability of ion selectivity with filter mutations to other Bacillus Nav channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract and supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "40902739-897a-4130-94a1-06c4cd656c2c",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C71",
+      "claim": "Increasing pH and temperature shifts the activation threshold of Bacillus Nav channels towards their native resting membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing pH and temperature shifts their activation threshold towards their native resting membrane potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract and supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "5ddaad42-05df-4bb3-8774-fd46c287e3a5",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C72",
+      "claim": "Drugs that target Bacillus Nav channels also block the growth of the bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find drugs that target Bacillus Nav channels also block the growth of the bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract and supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "10650247-37f3-4b74-805e-f0a875c61b45",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C73",
+      "claim": "The selectivity of Bacillus Nav channels can be converted from nonselective, to relatively higher Na+ or Ca2+ selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Through a series of mutations, we showed that the selectivity of Bacillus Nav channels can be converted from nonselective, to relatively higher Na+ or Ca2+ selectivity, suggesting that the filter is readily mutable in evolution to adapt to ionic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental mutagenesis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "49be9ca1-d0d6-4807-8c68-0731dee32f07",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C74",
+      "claim": "The filter of Bacillus Nav channels is readily mutable in evolution to adapt to ionic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Through a series of mutations, we showed that the selectivity of Bacillus Nav channels can be converted from nonselective, to relatively higher Na+ or Ca2+ selectivity, suggesting that the filter is readily mutable in evolution to adapt to ionic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ease of converting selectivity through mutations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "1ff73fbf-a013-40cb-9d9a-28f11d71dd12",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C75",
+      "claim": "These highly adaptable selectivity filters are critical for the Bacillus alkaliphiles, allowing for the habitation of various cation-rich environments in which they presumably evolved.",
+      "claim_type": "EXPLICIT",
+      "source": "These highly adaptable selectivity filters are critical for the Bacillus alkaliphiles, allowing for the habitation of various cation-rich environments in which they presumably evolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about evolutionary adaptation",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a1d44f2b-66bd-48a9-b5ed-ad27c732d5a4",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C76",
+      "claim": "It is anticipated that the ion-specificity of at least some antiporters will parallel that of the major coupling ions for the voltage-gated channels that provide a significant amount of their cytoplasmic substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is anticipated that the ion-specificity of at least some antiporters will parallel that of the major coupling ions for the voltage-gated channels that provide a significant amount of their cytoplasmic substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about the relationship between Nav channels and antiporters",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "14afb757-fb17-4bc3-933d-4d492ac4bb35",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C77",
+      "claim": "No Na+ ions reside within the filter of the wild type NavAb crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no Na+ ions reside within the filter of the wild type NavAb crystal structures, 3 Na+ coordinating sites were proposed: glutamate side chains form a high-field-strength site (SiteHFS) near the extracellular end of the filter, while backbone carbonyls of Leu and Thr comprise central (SiteCEN) and inner sites (SiteIN) (Payandeh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis cited from Payandeh et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "db9c27f5-c642-4375-ae6d-ad90a17a8c8e",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C78",
+      "claim": "3 Na+ coordinating sites were proposed in NavAb: SiteHFS, SiteCEN, and SiteIN.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no Na+ ions reside within the filter of the wild type NavAb crystal structures, 3 Na+ coordinating sites were proposed: glutamate side chains form a high-field-strength site (SiteHFS) near the extracellular end of the filter, while backbone carbonyls of Leu and Thr comprise central (SiteCEN) and inner sites (SiteIN) (Payandeh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis cited from Payandeh et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "20c301bc-5859-4c21-a0d1-b4b72ab399ce",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C79",
+      "claim": "In the CavAb structure, 3 hydrated Ca2+ ions were found coordinated within the filter.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CavAb structure, 3 hydrated Ca2+ ions were found coordinated within the filter and 3 sites (Sites 1\u20133) proposed within the filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "ac42e105-fb05-4289-9d8a-d6567e84b668",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C80",
+      "claim": "Site 1 in CavAb is formed by 4 Asp carboxyl side chains, equivalent to positions Ser 196 in NaChBac and Ser 190 in NsvBa.",
+      "claim_type": "EXPLICIT",
+      "source": "Site 1, the one closest to the extracellular surface, is formed by 4 Asp carboxyl side chains, equivalent to positions Ser 196 in NaChBac and Ser 190 in NsvBa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis and sequence alignment",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "1a0df6f8-69b3-4b2f-9490-a5abb32ecced",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C81",
+      "claim": "Site 2 in CavAb (equivalent to SiteHFS in NavAb) is formed by four side chain carboxyls and four backbone carbonyls from equivalent residues of Glu 192 in NaChBac and Asp 186 in NsvBa.",
+      "claim_type": "EXPLICIT",
+      "source": "Site 2 (equivalent to SiteHFS in the wt NavAb crystal structure) is formed by four side chain carboxyls and four backbone carbonyls from equivalent residues of Glu 192 in NaChBac and Asp 186 in NsvBa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis and sequence alignment",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "abe99f84-4e49-42c2-b8df-59f423566feb",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C82",
+      "claim": "The shorter side chain of the NsvBa Asp acidic residue at site 2 is correlated with decreased Na+-selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the shorter side chain of the NsvBa Asp acidic residue at site 2 is correlated with decreased Na+-selectivity, but Na+ selectivity can be artificially endowed when replaced by a Glu (D186E) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from mutagenesis data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0bd08622-eba8-4390-8f78-eee5ab57947f",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C83",
+      "claim": "When the longer side chain Glu 192 is mutated to the shorter Asp in NaChBac (E192D), the channel becomes less selective for Na+ among Ca2+ and K+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this interpretation, a recent report demonstrates that when the longer side chain Glu 192 is mutated to the shorter Asp in NaChBac (E192D), the channel becomes less selective for Na+ among Ca2+ and K+ ions (Finol-Urdaneta et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Finol-Urdaneta et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "388526a5-2719-4378-83ac-382db729959f",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C84",
+      "claim": "The full-length bacteria NaV from marine \u03b1-proteobacterium Rickettsiales HIMB114 (NavRh) was crystallized containing the selectivity filter TLSSWET-.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length bacteria NaV from marine \u03b1-proteobacterium Rickettsiales HIMB114 (NavRh) was crystallized containing the selectivity filter TLSSWET-.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural studies",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "f1dec679-5c5e-41d9-a6ed-f2671f55d6d9",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C85",
+      "claim": "The NavRh channel did not function when heterologously expressed in mammalian and insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the NavRh channel did not function when heterologously expressed in mammalian and insect cells, the filter was found to be Na+-selective when grafted into the NaChBac channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "193bd060-ef01-4d0b-b626-72df77bb8a5b",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C86",
+      "claim": "The NavRh filter was found to be Na+-selective when grafted into the NaChBac channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the NavRh channel did not function when heterologously expressed in mammalian and insect cells, the filter was found to be Na+-selective when grafted into the NaChBac channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "9aecb70a-6f94-47f4-ab92-1653a271e1e2",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C87",
+      "claim": "Although the glutamates within the NavRh and NavAb filters originate at distinct positions, the carboxyl side chains from both channels occupy the same positions in space.",
+      "claim_type": "EXPLICIT",
+      "source": "It is surprising that although the glutamates within the NavRh and NavAb filters originate at distinct positions (See Figure 1), the carboxyl side chains from both channels occupy the same positions in space (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural comparison cited from Zhang et al., 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "bdd55d19-5521-4592-ac18-95358ba211e5",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C88",
+      "claim": "Selectivity for Na+ over other cations is partly achieved by the geometry of the arrangement of the carboxylates at Site 2 (SiteHFS) within the filter of bacterial Na+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that selectivity for Na+ over other cations is partly achieved by the geometry of the arrangement of the carboxylates at Site 2 (SiteHFS) within the filter of bacterial Na+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural and mutagenesis data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "5e9220ef-6ab5-463e-9f8b-15f4a9cab103",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C89",
+      "claim": "Among all sequenced living species, naturally occurring nonselective voltage-gated ion channels are rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all sequenced living species, naturally occurring nonselective voltage-gated ion channels are rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on survey of known ion channels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "b2694f06-f1f0-4f47-8890-c7132b2d92c4",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C90",
+      "claim": "It is not clear whether cation-selective or nonselective filters arose first within prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not clear whether cation-selective or nonselective filters arose first within prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of uncertainty about evolutionary history",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "c0814f28-9cc5-4766-84e1-895098891d6d",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C91",
+      "claim": "Analysis comparing domains of bacteria and mammalian Nav channels indicate that Na+-selectivity was independently acquired in these channels families.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis comparing domains of bacteria and mammalian Nav channels indicate that Na+-selectivity was independently acquired in these channels families (Liebeskind et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liebeskind et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "cb51d92f-cc04-43c1-87af-c7525c5cf366",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C92",
+      "claim": "Bacterial Nav channels are functionally more related to homotetrameric CatSper and Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial Nav channels are functionally more related to homotetrameric CatSper and Kv channels and thus may not be direct ancestors of mammalian Nav channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on phylogenetic and functional analysis",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "e3719eca-4fa4-4309-a369-9d337b93ffd7",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C93",
+      "claim": "Bacterial Nav channels may not be direct ancestors of mammalian Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial Nav channels are functionally more related to homotetrameric CatSper and Kv channels and thus may not be direct ancestors of mammalian Nav channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from phylogenetic and functional analysis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "da134e14-b35b-4d02-b88e-751d7cc8a94a",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C94",
+      "claim": "The 'GxG motif' found in the NsvBa filter evolved convergently within the bacterial Nav family.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the 'GxG motif' found in the NsvBa filter evolved convergently within the bacterial Nav family and is only distantly related to K+-selective Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural and functional data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "9de08d91-7c72-4892-ae97-72b84ea85781",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C95",
+      "claim": "The 'GxG motif' in NsvBa is only distantly related to K+-selective Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the 'GxG motif' found in the NsvBa filter evolved convergently within the bacterial Nav family and is only distantly related to K+-selective Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural and functional data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "22c18c33-a329-432c-996f-95648f3c57e1",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C96",
+      "claim": "The sea anemone Nematostella vectensis Na+ channel homolog NvNaV2.1 is a heterotetrameric Na+ channel bearing noncanonical selectivity site (DEEA) that was not selective among K+ and Na+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent report on the expression and characterization of Na+ channel homologs from the invertebrate sea anemone Nematostella vectensis (NvNaV2.1), revealed a heterotetrameric Na+ channels bearing noncanonical selectivity site (DEEA) that was not selective among K+ and Na+ ions (Gur Barzilai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gur Barzilai et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "612c8d33-a410-4677-8e81-2b1df32b0912",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C97",
+      "claim": "The homomeric prokaryotic NsvBa and functionally-heteromeric eukaryotic NvNaV2.1 channels are examples of evolution of Na+-selectivity to non-selectivity that occurred independently within prokaryotes and metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it appears that the homomeric prokaryotic NsvBa and functionally-heteromeric eukaryotic NvNaV2.1 channels are examples of evolution of Na+-selectivity to non-selectivity that occurred independently within prokaryotes and metazoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of NsvBa and NvNaV2.1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a577d22b-e076-4e83-a7d8-58dbdd69a2c5",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C98",
+      "claim": "In excitable eukaryotic tissues such as nerves and muscle, the half-activation threshold (V1/2) of voltage-gated sodium channels is within approximately 80 mV of their cellular resting membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In excitable eukaryotic tissues such as nerves and muscle, the half-activation threshold (V1/2) of voltage-gated sodium channels is within \u223c80 mV of their cellular resting membrane potential (\u03a8rest \u223c -60 to \u221290 mV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of eukaryotic Nav channel physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "dc615d86-5211-45c4-ba40-bfbef09dc03c",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C99",
+      "claim": "If the sodium current sensitivity is extrapolated to 60\u00b0C, the voltage dependence would likely be well within 80 mV of the most negative bacterial resting membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "If the sodium current sensitivity is extrapolated to 60\u00b0C, the voltage dependence would likely be well within 80 mV of the most negative bacterial resting membrane potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative extrapolation from experimental data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "de86bc4f-fcf8-43bd-bdbf-e1faff3912f1",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C100",
+      "claim": "Bacterial \u03a8rest is a function of metabolic state (Na+/H+ pumping).",
+      "claim_type": "EXPLICIT",
+      "source": "Since bacterial \u03a8rest is a function of metabolic state (Na+/H+ pumping) and bacteria occupy more variable ionic environments than neurons, the larger difference between 'optimal' a \u03a8rest and V1/2 makes physiological sense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of bacterial physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a775f51d-1a8b-4be0-9559-4af2105b46d6",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C101",
+      "claim": "Bacteria occupy more variable ionic environments than neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Since bacterial \u03a8rest is a function of metabolic state (Na+/H+ pumping) and bacteria occupy more variable ionic environments than neurons, the larger difference between 'optimal' a \u03a8rest and V1/2 makes physiological sense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on general knowledge of bacterial and neuronal environments",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "ed8bf8a0-53f2-4118-987d-3dd5830febff",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C102",
+      "claim": "The high temperature and pH sensitivity of bacterial Nav channels is similar to TRP and some Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The high temperature and pH sensitivity of bacterial Nav channels is similar to TRP and some Kv channels (Patapoutian et al., 2003; Yang and Zheng, 2014), and is not shared by vertebrate Nav channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Patapoutian et al., 2003 and Yang and Zheng, 2014",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "21c8bbc0-9a2f-4855-bdc0-568cc6437889",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C103",
+      "claim": "The high temperature and pH sensitivity of bacterial Nav channels is not shared by vertebrate Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The high temperature and pH sensitivity of bacterial Nav channels is similar to TRP and some Kv channels (Patapoutian et al., 2003; Yang and Zheng, 2014), and is not shared by vertebrate Nav channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing bacterial and vertebrate Nav channels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "d1ca8054-7ba4-41f4-90bb-22aa5b65d2fd",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C104",
+      "claim": "The fidelity of neuronal firing in metazoans, which depend on their NaV channels, led to evolution of less sensitivity to pH and temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that the fidelity of neuronal firing in metazoans, which depend on their NaV channels, led to evolution of less sensitivity to pH and temperature, perhaps by selection of the residues that become exposed to waters within the voltage-sensing S4 and selectivity filter (Chowdhury et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about evolutionary adaptation, supported by citation to Chowdhury et al., 2014",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "5c57a3d2-e384-4490-9707-b850cbf6eed3",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C105",
+      "claim": "Alkaliphilic bacteria employ homomeric Nav channels for rapidly adjusting internal sodium concentration for metabolic control.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we propose that alkaliphilic bacteria, which dwell in high temperature (35\u201360\u00b0C) and high pH (9\u201311) environments, employ homomeric Nav channels for an entirely different purpose, that of rapidly adjusting internal sodium concentration for metabolic control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed based on the properties of bacterial Nav channels and their environment",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "79157a23-af7c-4e73-ab80-fb1b4f3cda8f",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C106",
+      "claim": "Alkaliphilic bacteria dwell in high temperature (35\u201360\u00b0C) and high pH (9\u201311) environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we propose that alkaliphilic bacteria, which dwell in high temperature (35\u201360\u00b0C) and high pH (9\u201311) environments, employ homomeric Nav channels for an entirely different purpose, that of rapidly adjusting internal sodium concentration for metabolic control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of alkaliphilic bacteria habitats",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "e0bdc7eb-ee13-46f8-9e0d-a2a46f010349",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C107",
+      "claim": "Rapidly adjusting internal sodium concentration would impact growth rates of Bacillus species.",
+      "claim_type": "EXPLICIT",
+      "source": "This would thus impact growth rates of these Bacillus species as we have observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations of drug effects on growth",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "3aad9360-9e07-449c-9abd-fe79aeecbbc7",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C108",
+      "claim": "Block of Na+ entry via Nav, which disrupts the sodium cycle, can impair Bacillus motility and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These finding demonstrate that block of Na+ entry via Nav, which disrupts the sodium cycle, can impair Bacillus motility and growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data on drug effects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "970b1007-3897-45ed-b6c0-5ddbf9ed5f86",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C109",
+      "claim": "The prokaryotic Nav from Magnetococcus marinus (NavMs) was recently crystalized with a brominated drugs bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The prokaryotic Nav from Magnetococcus marinus (NavMs), was recently crystalized with a brominated drugs bound and the proposed binding site validated (Bagneris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bagneris et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "047f2f3f-2e7d-44f0-b0f2-aed1b6392145",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C110",
+      "claim": "Voltage-gated channels found in pathogenic Bacillus (e.g. Bacillus cereus and anthracis) could potentially be antimicrobial targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus voltage-gated channels found in pathogenic Bacillus (e.g. Bacillus cereus and anthracis) could potentially be antimicrobial targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on drug effects on non-pathogenic Bacillus",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "2bb98891-fbdf-4557-8042-ddd65e3e1105",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C111",
+      "claim": "In B. alcalophilus there may be other transporters or channels besides NsvBa that provide a cation source to drive flagellar motion.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that in B. alcalophilus there may be other transporters or channels besides NsvBa that provide a cation source to drive flagellar motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential drug effects on motility between B. alcalophilus and B. pseudofirmus",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "0eaa91ae-b20e-41c6-a1e3-4a0c76f51799",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C112",
+      "claim": "The NCBI GenBank accession number for NsvBa is JX399518.1.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCBI GenBank accession number for NsvBa is JX399518.1 and is annotated as a K+ ion transporter (BalcAV3624).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "b19b29da-5d5a-491d-8e98-d4130c70d259",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "claim_id": "C113",
+      "claim": "NsvBa is annotated as a K+ ion transporter (BalcAV3624) in GenBank.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCBI GenBank accession number for NsvBa is JX399518.1 and is annotated as a K+ ion transporter (BalcAV3624).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "86d363fa-c974-4233-b987-ea0e38341258",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NsvBa is a nonselective voltage-gated ion channel from Bacillus alcalophilus that conducts Na+, K+, and Ca2+ with equivalent single channel conductances for Na+ (30 \u00b1 3 pS) and K+ (36 \u00b1 3 pS), indicating lack of discrimination between these ions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 and C11-C14 provide converging evidence from whole-cell recordings (C11), single channel measurements (C12-C13), and functional interpretation (C14) that NsvBa is nonselective among major cations. The experimental data are internally consistent and support the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "f5771ff9-1077-419b-b6f5-5531e326ec27",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The NsvBa selectivity filter sequence (TLDSWGSG) deviates from the conserved prokaryotic Nav sequence (TLESWxxG) by having aspartate instead of glutamate at position D186 and contains a GxG motif (G189, G191) commonly found in K+-selective and nonselective channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 describe the sequence features of NsvBa's selectivity filter based on sequence alignment data (Figure 1C). The sequence data directly support these structural claims, and the comparison to other channel families is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "b1b72376-05bc-4288-914e-a23252df5f3c",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutagenesis experiments demonstrate that the D186E mutation is sufficient to confer Na+-selectivity to NsvBa, while G189A reduces but does not eliminate K+/Rb+ permeability. The selectivity filter is portable between NsvBa and NaChBac, with reciprocal mutations producing reciprocal selectivity changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 describe a systematic mutagenesis study with clear experimental support (Figures 3A-D and supplements). The single and double mutant data converge to identify specific residues controlling selectivity, and the reciprocal experiments in NaChBac validate portability. The mechanistic interpretation (C20-C21) is appropriately qualified as inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "9b141d33-96c4-41d5-a87f-1ac11dd075f6",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The LDDWADG mutated filter in NsvBa shows preference for divalent cations (PCa/PNa~30) but retains measurable monovalent permeability, resembling TRPV5/6 channels rather than highly selective mammalian CaV channels (PCa/PNa \u2265 1000).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 describe Ca2+-preference experiments with clear quantitative data (Figure 4). The comparison to mammalian CaV channels (C29) and TRP channels (C30) is appropriately supported by citations. The modest selectivity achieved is honestly reported and contextualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "e49c88cc-3440-4931-94f0-410c0df554b8",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Increasing extracellular pH from 7.4 to 9.4 increases peak Na+ current 2-4 fold and negatively shifts voltage-dependence of activation by 28-34 mV in Bacillus Nav channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 report pH-dependent modulation with quantitative measurements supported by Figure 5 and Figure 5\u2014figure supplement 1. The data are consistent across multiple Bacillus channels and appropriately compared to prior work (C33 cites Ito et al., 2004).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a175ddde-558c-4c9b-85d6-5a4006fec190",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Temperature increases from 20-37\u00b0C shift activation voltage by -19 to -24 mV at neutral pH, with additive effects when combined with basic pH (converging on ~-100 mV). NsvBa remains nonselective at elevated pH and temperature, with Q10 values of 3.5-4.4 for Bacillus channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 describe temperature-dependent gating with clear experimental data (Figure 6). The additivity of pH and temperature effects (C37) is directly measured, and the maintenance of nonselectivity (C38) is verified. Q10 calculations are standard and appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "91814d45-f1ea-44f6-8b0b-3170cf36d66b",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Human Nav1.1 channels show much lower temperature sensitivity (Q10 = 1.2-1.4) and pH sensitivity (\u0394V1/2 < 8 mV) compared to Bacillus Nav channels, indicating that high pH and temperature sensitivity is distinct from eukaryotic Nav channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C103 provide comparative data between bacterial and mammalian Nav channels (Figures 5-6). The quantitative differences are clearly documented and the conclusion about distinct properties is appropriately supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a3d829a0-6975-4bab-92bb-4c4e9837654b",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Nav channel antagonists (lidocaine, nifedipine, tamoxifen) that block heterologously-expressed bacterial channels also inhibit growth of native Bacillus species at corresponding concentrations (IC50 within half-log unit), with differential effects on motility between B. pseudofirmus and B. alcalophilus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48, C72, and C108 describe pharmacological experiments linking channel block to bacterial growth inhibition (Figure 7). The close correspondence between IC50 values for channel block and growth inhibition (C47) supports the on-target interpretation (C48). The differential motility effects (C44-C46) are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "84c84b6e-3d28-44f4-b3c4-e7785d038979",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NsvBa produces robust currents (~119 pA/pF) in HEK293T cells with inactivation kinetics (\u03c4 = 42 ms at 0 mV) intermediate between NaChBac (78 ms) and NavMs (7 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 report basic electrophysiological characterization with quantitative measurements from Figure 1\u2014figure supplement 1. The comparisons to other bacterial channels provide appropriate context for the kinetic properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "87bd4892-bd8f-4814-af5c-9c0049a21174",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NaChBac and NsvBa channels share 61% amino acid identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 reports sequence identity that enables the mutagenesis strategy. This is a straightforward sequence comparison that supports the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "95c5bcba-6aa4-44d7-ad87-8182833a5f81",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Structural studies of NavAb and CavAb identify three ion coordination sites in the selectivity filter, with Site 2 (SiteHFS) formed by glutamate side chains in NavAb and corresponding to Glu 192 in NaChBac and Asp 186 in NsvBa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 summarize prior structural work (citing Payandeh et al., 2011 and others) and map these sites to the channels studied here. This provides essential structural context for interpreting the mutagenesis results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "20655094-aac3-494a-8274-555e11313c96",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The shorter Asp side chain at Site 2 in NsvBa correlates with decreased Na+-selectivity, and selectivity for Na+ is partly achieved by the geometry of carboxylate arrangement at SiteHFS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 and C88 integrate the current mutagenesis data with structural knowledge and prior work (Finol-Urdaneta et al., 2014). The correlation is appropriately qualified and the mechanistic interpretation is reasonable given the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "80b70e6e-b638-41c3-be47-5976c9bf64c0",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The selectivity of Bacillus Nav channels can be readily converted between nonselective, Na+-selective, and Ca2+-preferring through mutations, suggesting the filter is evolutionarily mutable to adapt to ionic conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 and C73-C74 synthesize the mutagenesis results to draw evolutionary conclusions. The experimental demonstration of facile interconversion (C73) supports the evolutionary interpretation (C74), though the latter remains somewhat speculative about actual evolutionary history.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "f97059a5-16d1-4dcb-ba78-bdba164bb40b",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis suggests bacterial Nav channels are more closely related to CatSper and Kv channels than to mammalian Nav channels, with Na+-selectivity independently acquired. The GxG motif in NsvBa evolved convergently within bacterial Nav family, and nonselective channels arose independently in prokaryotes (NsvBa) and metazoans (NvNaV2.1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C97 present evolutionary interpretations supported by phylogenetic analysis (citing Liebeskind et al., 2013) and comparison to other nonselective channels (citing Gur Barzilai et al., 2012). The conclusions about convergent evolution are appropriately qualified as inferences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "a48198ae-d871-4224-a6b8-a78ecce31676",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Alkaliphilic Bacillus have very negative resting potentials (~-180 mV) while channel activation threshold is ~-40 mV, but extrapolation to physiological temperature (60\u00b0C) would bring V1/2 within ~80 mV of resting potential, similar to the relationship in eukaryotic excitable cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C32 report measured values, but C99 involves speculative extrapolation beyond the experimental temperature range (limited to <37\u00b0C due to technical constraints). While the reasoning is plausible, the extrapolation to 60\u00b0C lacks direct experimental validation. Claims C100-C101 provide physiological context but don't resolve the uncertainty about channel function at native conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "fead0cfc-ef78-4037-8888-b8ac8ca1c36a",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The high pH and temperature sensitivity of bacterial Nav channels resembles TRP and some Kv channels but differs from vertebrate Nav channels, possibly reflecting evolutionary adaptation for metabolic control in alkaliphilic bacteria rather than neuronal signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C103 are well-supported by comparative data, but C104-C107 present speculative evolutionary and functional interpretations. While the proposal that bacterial channels serve metabolic rather than signaling functions is plausible, direct evidence for this functional role is limited. The connection to growth rates (C107) is inferred from drug effects rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "76e68773-f4b2-4fbd-b994-fb296bdb8c8b",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Bacterial Nav channels could be antimicrobial targets in pathogenic Bacillus species, though other transporters may contribute to flagellar motion in B. alcalophilus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C109 cites structural work on drug binding, but C110 is explicitly speculative about therapeutic potential. Claim C111 reasonably infers additional cation sources from differential drug effects but lacks direct identification of these transporters. These are appropriate suggestions for future work rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "b398d234-0e14-47f9-9e18-94fdeffea945",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on alkaliphilic Bacillus, bacterial Nav channels, and their physiological context including flagellar motor coupling and pH homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C53-C66 provide literature context supported by appropriate citations. These establish the biological and structural framework for the study but represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "7cfaa195-3dd0-4d04-b3e8-3dd1502b1333",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "General structural features of Nav and CaV channels including the DEKA motif in vertebrate Nav, EEEE motif in CaV, and tetrameric architecture of bacterial Nav channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 and C49-C52 summarize established structural knowledge from the literature with appropriate citations. This provides necessary background but does not constitute new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "e0c9cdab-bef7-4cfc-bfbc-0946137c7397",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Statements of uncertainty about relationships between prokaryotic and eukaryotic Nav channels, evolutionary origins, and functional coupling to antiporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63, C75-C76, C89-C90 appropriately acknowledge uncertainties and make qualified speculative statements. These represent honest assessment of knowledge gaps rather than unsupported assertions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "7afb4755-5b00-465f-b083-60af0c6e7c22",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The NavRh channel contains a different selectivity filter sequence (TLSSWET-) but achieves Na+-selectivity through similar spatial arrangement of glutamate carboxylates as NavAb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 summarize prior structural and functional work on NavRh (citing Zhang et al., 2012). This provides important context for understanding selectivity mechanisms but represents prior findings rather than new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    },
+    {
+      "id": "3dcc11a3-ed61-4bdd-8da5-440f6466e69a",
+      "content_id": "3b82a5cf-bb81-401b-ab18-e3aa83f1404a",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "NsvBa has GenBank accession number JX399518.1 and is annotated as a K+ ion transporter (BalcAV3624).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 provide database information. The annotation as K+ transporter is ironic given the demonstrated nonselectivity, highlighting the value of functional characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:47:49.325301Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05b4b020-09e1-4095-a849-9f7634c0896e",
+      "result_id": "86d363fa-c974-4233-b987-ea0e38341258"
+    },
+    {
+      "claim_id": "c45fa863-f5ea-4005-8c4e-4b23cd78bd45",
+      "result_id": "86d363fa-c974-4233-b987-ea0e38341258"
+    },
+    {
+      "claim_id": "c5e035a1-1f65-4548-a98a-a5afa37b27cb",
+      "result_id": "86d363fa-c974-4233-b987-ea0e38341258"
+    },
+    {
+      "claim_id": "3d35a04d-dcb2-4407-94ce-744bfd8cdeb2",
+      "result_id": "86d363fa-c974-4233-b987-ea0e38341258"
+    },
+    {
+      "claim_id": "5f4c91e2-e49a-47dc-b7a3-cab6f5617cce",
+      "result_id": "86d363fa-c974-4233-b987-ea0e38341258"
+    },
+    {
+      "claim_id": "499dec95-d981-4bbd-9863-9e81dfba037a",
+      "result_id": "86d363fa-c974-4233-b987-ea0e38341258"
+    },
+    {
+      "claim_id": "0161f660-41a1-4ecf-86de-56c055aecdb2",
+      "result_id": "f5771ff9-1077-419b-b6f5-5531e326ec27"
+    },
+    {
+      "claim_id": "b8564306-2a1b-4f56-b002-f6974427cd2f",
+      "result_id": "f5771ff9-1077-419b-b6f5-5531e326ec27"
+    },
+    {
+      "claim_id": "99d7a78f-6295-4eac-9d2a-cbbc2564bdca",
+      "result_id": "f5771ff9-1077-419b-b6f5-5531e326ec27"
+    },
+    {
+      "claim_id": "d4b94955-79da-44ab-b5c2-28c690083f75",
+      "result_id": "f5771ff9-1077-419b-b6f5-5531e326ec27"
+    },
+    {
+      "claim_id": "ae3f262a-667c-4c62-ba4c-479b858dd5c0",
+      "result_id": "f5771ff9-1077-419b-b6f5-5531e326ec27"
+    },
+    {
+      "claim_id": "6f78ccc7-0f0a-455c-8a00-61408526cbcd",
+      "result_id": "b1b72376-05bc-4288-914e-a23252df5f3c"
+    },
+    {
+      "claim_id": "0ee1dd8c-5d20-49ac-9b02-ac2da92d16dd",
+      "result_id": "b1b72376-05bc-4288-914e-a23252df5f3c"
+    },
+    {
+      "claim_id": "58cabb6b-345f-4425-8153-89c13bcebb7d",
+      "result_id": "b1b72376-05bc-4288-914e-a23252df5f3c"
+    },
+    {
+      "claim_id": "f30f90af-447e-4781-95e9-be55fe9872f4",
+      "result_id": "b1b72376-05bc-4288-914e-a23252df5f3c"
+    },
+    {
+      "claim_id": "c519f412-17b1-45ca-9676-bd8f3be1492d",
+      "result_id": "b1b72376-05bc-4288-914e-a23252df5f3c"
+    },
+    {
+      "claim_id": "98e6a31e-6adb-468c-bc54-bb4b2438b7de",
+      "result_id": "b1b72376-05bc-4288-914e-a23252df5f3c"
+    },
+    {
+      "claim_id": "cdf0e696-5d60-425c-8540-d17ad4519dff",
+      "result_id": "b1b72376-05bc-4288-914e-a23252df5f3c"
+    },
+    {
+      "claim_id": "8b345dc6-d4ce-4b12-a62d-2f11d68ea212",
+      "result_id": "b1b72376-05bc-4288-914e-a23252df5f3c"
+    },
+    {
+      "claim_id": "f2867605-a38d-4711-b4b4-12085b23d652",
+      "result_id": "9b141d33-96c4-41d5-a87f-1ac11dd075f6"
+    },
+    {
+      "claim_id": "576a0d39-db28-42c6-a4eb-faf76280a214",
+      "result_id": "9b141d33-96c4-41d5-a87f-1ac11dd075f6"
+    },
+    {
+      "claim_id": "ce4fb01e-4860-4bc6-b5fa-af1a5ce4332d",
+      "result_id": "9b141d33-96c4-41d5-a87f-1ac11dd075f6"
+    },
+    {
+      "claim_id": "08c7622c-0c4a-4c8c-ad01-0da433aed56d",
+      "result_id": "9b141d33-96c4-41d5-a87f-1ac11dd075f6"
+    },
+    {
+      "claim_id": "374e868d-7b2c-49c4-852e-181eb9122692",
+      "result_id": "e49c88cc-3440-4931-94f0-410c0df554b8"
+    },
+    {
+      "claim_id": "19b7ee74-72c2-47a5-835b-e424d14b6eec",
+      "result_id": "e49c88cc-3440-4931-94f0-410c0df554b8"
+    },
+    {
+      "claim_id": "7045efae-ad26-4f2e-a9c7-b899963b8261",
+      "result_id": "e49c88cc-3440-4931-94f0-410c0df554b8"
+    },
+    {
+      "claim_id": "5d0712be-6dd7-4ceb-83fc-72ce01e8a1d0",
+      "result_id": "a175ddde-558c-4c9b-85d6-5a4006fec190"
+    },
+    {
+      "claim_id": "0b6c8eb1-5528-442b-b218-08c05a09bf1f",
+      "result_id": "a175ddde-558c-4c9b-85d6-5a4006fec190"
+    },
+    {
+      "claim_id": "85d9b092-734d-47ae-952f-ecf108bccbb8",
+      "result_id": "a175ddde-558c-4c9b-85d6-5a4006fec190"
+    },
+    {
+      "claim_id": "45c7fcd6-0378-4036-ab42-ba63fd51246e",
+      "result_id": "a175ddde-558c-4c9b-85d6-5a4006fec190"
+    },
+    {
+      "claim_id": "26a4c4dd-f612-481e-a296-12114b44b872",
+      "result_id": "91814d45-f1ea-44f6-8b0b-3170cf36d66b"
+    },
+    {
+      "claim_id": "aa8c438e-a9a9-478e-bbf2-a68ac8e1d4e2",
+      "result_id": "91814d45-f1ea-44f6-8b0b-3170cf36d66b"
+    },
+    {
+      "claim_id": "346eed22-124c-4699-b6be-554be5f0c883",
+      "result_id": "91814d45-f1ea-44f6-8b0b-3170cf36d66b"
+    },
+    {
+      "claim_id": "21c8bbc0-9a2f-4855-bdc0-568cc6437889",
+      "result_id": "91814d45-f1ea-44f6-8b0b-3170cf36d66b"
+    },
+    {
+      "claim_id": "7d4249a0-7ec5-43df-ab31-1b899c4c2d96",
+      "result_id": "a3d829a0-6975-4bab-92bb-4c4e9837654b"
+    },
+    {
+      "claim_id": "fc359d38-9f5a-4173-a2b4-f417743aad4b",
+      "result_id": "a3d829a0-6975-4bab-92bb-4c4e9837654b"
+    },
+    {
+      "claim_id": "156e9352-868e-4aa9-849a-90a9565c6a12",
+      "result_id": "a3d829a0-6975-4bab-92bb-4c4e9837654b"
+    },
+    {
+      "claim_id": "bcad0525-ee4e-48f0-93f5-3e44fd09b751",
+      "result_id": "a3d829a0-6975-4bab-92bb-4c4e9837654b"
+    },
+    {
+      "claim_id": "948968c7-dd2b-4f30-a209-70d7366d1c16",
+      "result_id": "a3d829a0-6975-4bab-92bb-4c4e9837654b"
+    },
+    {
+      "claim_id": "ee998d0f-c4db-409f-97cc-5513173c51c5",
+      "result_id": "a3d829a0-6975-4bab-92bb-4c4e9837654b"
+    },
+    {
+      "claim_id": "5ddaad42-05df-4bb3-8774-fd46c287e3a5",
+      "result_id": "a3d829a0-6975-4bab-92bb-4c4e9837654b"
+    },
+    {
+      "claim_id": "3aad9360-9e07-449c-9abd-fe79aeecbbc7",
+      "result_id": "a3d829a0-6975-4bab-92bb-4c4e9837654b"
+    },
+    {
+      "claim_id": "9e499929-71eb-4135-9cad-eb0f5b71a2b6",
+      "result_id": "84c84b6e-3d28-44f4-b3c4-e7785d038979"
+    },
+    {
+      "claim_id": "230d63cc-c499-4914-a024-ca432f096f6b",
+      "result_id": "84c84b6e-3d28-44f4-b3c4-e7785d038979"
+    },
+    {
+      "claim_id": "6a92188a-de1c-4a95-bbbc-f128998740cf",
+      "result_id": "84c84b6e-3d28-44f4-b3c4-e7785d038979"
+    },
+    {
+      "claim_id": "a7d9b7e7-5749-444c-be2f-3353ecfe3e1f",
+      "result_id": "84c84b6e-3d28-44f4-b3c4-e7785d038979"
+    },
+    {
+      "claim_id": "b4446439-49c4-4a87-b685-73c0fb857977",
+      "result_id": "87bd4892-bd8f-4814-af5c-9c0049a21174"
+    },
+    {
+      "claim_id": "14afb757-fb17-4bc3-933d-4d492ac4bb35",
+      "result_id": "95c5bcba-6aa4-44d7-ad87-8182833a5f81"
+    },
+    {
+      "claim_id": "db9c27f5-c642-4375-ae6d-ad90a17a8c8e",
+      "result_id": "95c5bcba-6aa4-44d7-ad87-8182833a5f81"
+    },
+    {
+      "claim_id": "20c301bc-5859-4c21-a0d1-b4b72ab399ce",
+      "result_id": "95c5bcba-6aa4-44d7-ad87-8182833a5f81"
+    },
+    {
+      "claim_id": "ac42e105-fb05-4289-9d8a-d6567e84b668",
+      "result_id": "95c5bcba-6aa4-44d7-ad87-8182833a5f81"
+    },
+    {
+      "claim_id": "1a0df6f8-69b3-4b2f-9490-a5abb32ecced",
+      "result_id": "95c5bcba-6aa4-44d7-ad87-8182833a5f81"
+    },
+    {
+      "claim_id": "abe99f84-4e49-42c2-b8df-59f423566feb",
+      "result_id": "20655094-aac3-494a-8274-555e11313c96"
+    },
+    {
+      "claim_id": "0bd08622-eba8-4390-8f78-eee5ab57947f",
+      "result_id": "20655094-aac3-494a-8274-555e11313c96"
+    },
+    {
+      "claim_id": "bdd55d19-5521-4592-ac18-95358ba211e5",
+      "result_id": "20655094-aac3-494a-8274-555e11313c96"
+    },
+    {
+      "claim_id": "10650247-37f3-4b74-805e-f0a875c61b45",
+      "result_id": "80b70e6e-b638-41c3-be47-5976c9bf64c0"
+    },
+    {
+      "claim_id": "49be9ca1-d0d6-4807-8c68-0731dee32f07",
+      "result_id": "80b70e6e-b638-41c3-be47-5976c9bf64c0"
+    },
+    {
+      "claim_id": "a924e44e-e048-42e7-b7be-9f41cfa32b03",
+      "result_id": "80b70e6e-b638-41c3-be47-5976c9bf64c0"
+    },
+    {
+      "claim_id": "e519f34e-19e6-4370-b918-88c0335cf396",
+      "result_id": "80b70e6e-b638-41c3-be47-5976c9bf64c0"
+    },
+    {
+      "claim_id": "c0814f28-9cc5-4766-84e1-895098891d6d",
+      "result_id": "f97059a5-16d1-4dcb-ba78-bdba164bb40b"
+    },
+    {
+      "claim_id": "cb51d92f-cc04-43c1-87af-c7525c5cf366",
+      "result_id": "f97059a5-16d1-4dcb-ba78-bdba164bb40b"
+    },
+    {
+      "claim_id": "e3719eca-4fa4-4309-a369-9d337b93ffd7",
+      "result_id": "f97059a5-16d1-4dcb-ba78-bdba164bb40b"
+    },
+    {
+      "claim_id": "da134e14-b35b-4d02-b88e-751d7cc8a94a",
+      "result_id": "f97059a5-16d1-4dcb-ba78-bdba164bb40b"
+    },
+    {
+      "claim_id": "9de08d91-7c72-4892-ae97-72b84ea85781",
+      "result_id": "f97059a5-16d1-4dcb-ba78-bdba164bb40b"
+    },
+    {
+      "claim_id": "22c18c33-a329-432c-996f-95648f3c57e1",
+      "result_id": "f97059a5-16d1-4dcb-ba78-bdba164bb40b"
+    },
+    {
+      "claim_id": "612c8d33-a410-4677-8e81-2b1df32b0912",
+      "result_id": "f97059a5-16d1-4dcb-ba78-bdba164bb40b"
+    },
+    {
+      "claim_id": "a2246c07-9822-4e59-969f-62a22a99dd59",
+      "result_id": "a48198ae-d871-4224-a6b8-a78ecce31676"
+    },
+    {
+      "claim_id": "f7096e6d-dda9-4b13-9cde-05d218c19f84",
+      "result_id": "a48198ae-d871-4224-a6b8-a78ecce31676"
+    },
+    {
+      "claim_id": "a577d22b-e076-4e83-a7d8-58dbdd69a2c5",
+      "result_id": "a48198ae-d871-4224-a6b8-a78ecce31676"
+    },
+    {
+      "claim_id": "dc615d86-5211-45c4-ba40-bfbef09dc03c",
+      "result_id": "a48198ae-d871-4224-a6b8-a78ecce31676"
+    },
+    {
+      "claim_id": "de86bc4f-fcf8-43bd-bdbf-e1faff3912f1",
+      "result_id": "a48198ae-d871-4224-a6b8-a78ecce31676"
+    },
+    {
+      "claim_id": "a775f51d-1a8b-4be0-9559-4af2105b46d6",
+      "result_id": "a48198ae-d871-4224-a6b8-a78ecce31676"
+    },
+    {
+      "claim_id": "ed8bf8a0-53f2-4118-987d-3dd5830febff",
+      "result_id": "fead0cfc-ef78-4037-8888-b8ac8ca1c36a"
+    },
+    {
+      "claim_id": "d1ca8054-7ba4-41f4-90bb-22aa5b65d2fd",
+      "result_id": "fead0cfc-ef78-4037-8888-b8ac8ca1c36a"
+    },
+    {
+      "claim_id": "5c57a3d2-e384-4490-9707-b850cbf6eed3",
+      "result_id": "fead0cfc-ef78-4037-8888-b8ac8ca1c36a"
+    },
+    {
+      "claim_id": "79157a23-af7c-4e73-ab80-fb1b4f3cda8f",
+      "result_id": "fead0cfc-ef78-4037-8888-b8ac8ca1c36a"
+    },
+    {
+      "claim_id": "e0bdc7eb-ee13-46f8-9e0d-a2a46f010349",
+      "result_id": "fead0cfc-ef78-4037-8888-b8ac8ca1c36a"
+    },
+    {
+      "claim_id": "970b1007-3897-45ed-b6c0-5ddbf9ed5f86",
+      "result_id": "76e68773-f4b2-4fbd-b994-fb296bdb8c8b"
+    },
+    {
+      "claim_id": "047f2f3f-2e7d-44f0-b0f2-aed1b6392145",
+      "result_id": "76e68773-f4b2-4fbd-b994-fb296bdb8c8b"
+    },
+    {
+      "claim_id": "2bb98891-fbdf-4557-8042-ddd65e3e1105",
+      "result_id": "76e68773-f4b2-4fbd-b994-fb296bdb8c8b"
+    },
+    {
+      "claim_id": "5a79a303-7137-48d8-a676-f24881a64ed0",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "0856776d-ffab-46f7-98e9-ee9de065dc0c",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "8dcdc3ff-f08b-4ad8-b1e8-4b8ab161f2bc",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "c2399c3b-5cdf-42b2-9903-f267bb9ca433",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "d68c7874-f2e9-4a61-99ea-64f23ee4564d",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "71c5a6a3-e38d-47ff-b626-59af1e27befd",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "152b415b-fb31-4ccf-9706-f381a3f7b786",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "c13fd6f2-9d62-48da-b226-da5abf067c08",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "a38871e7-c5ac-4295-b0c1-82531004a498",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "273d0bfb-0d59-4c4b-b030-2895fb625253",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "372d335f-09bf-4c13-a4a4-cb6ef3b9dcef",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "0a55b096-8889-485a-983f-4437c6075d80",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "c44f1a70-accd-4cc1-89cd-64abee235db2",
+      "result_id": "b398d234-0e14-47f9-9e18-94fdeffea945"
+    },
+    {
+      "claim_id": "21b2b892-64b0-4e3a-b79f-2380d407ff32",
+      "result_id": "7cfaa195-3dd0-4d04-b3e8-3dd1502b1333"
+    },
+    {
+      "claim_id": "40a88378-0358-4fbd-a921-fcaabac18b09",
+      "result_id": "7cfaa195-3dd0-4d04-b3e8-3dd1502b1333"
+    },
+    {
+      "claim_id": "0c25e725-58fd-4575-beac-40f027ab2bd0",
+      "result_id": "7cfaa195-3dd0-4d04-b3e8-3dd1502b1333"
+    },
+    {
+      "claim_id": "a02a0366-c780-4042-afc8-c911676cc89d",
+      "result_id": "7cfaa195-3dd0-4d04-b3e8-3dd1502b1333"
+    },
+    {
+      "claim_id": "36e1ab37-c2c2-4c2e-9def-2b6497fadaf2",
+      "result_id": "7cfaa195-3dd0-4d04-b3e8-3dd1502b1333"
+    },
+    {
+      "claim_id": "27f14a28-d82c-4b23-9085-34b063057e5b",
+      "result_id": "7cfaa195-3dd0-4d04-b3e8-3dd1502b1333"
+    },
+    {
+      "claim_id": "e976a3e4-c71f-44af-9ba3-fd41f5de3574",
+      "result_id": "7cfaa195-3dd0-4d04-b3e8-3dd1502b1333"
+    },
+    {
+      "claim_id": "0c9c8da5-e0a1-4f98-99c6-2cb9fcc4c83a",
+      "result_id": "e0c9cdab-bef7-4cfc-bfbc-0946137c7397"
+    },
+    {
+      "claim_id": "956bc2d1-16d1-469b-92a8-ed07f7ce2fd8",
+      "result_id": "e0c9cdab-bef7-4cfc-bfbc-0946137c7397"
+    },
+    {
+      "claim_id": "1ff73fbf-a013-40cb-9d9a-28f11d71dd12",
+      "result_id": "e0c9cdab-bef7-4cfc-bfbc-0946137c7397"
+    },
+    {
+      "claim_id": "a1d44f2b-66bd-48a9-b5ed-ad27c732d5a4",
+      "result_id": "e0c9cdab-bef7-4cfc-bfbc-0946137c7397"
+    },
+    {
+      "claim_id": "5e9220ef-6ab5-463e-9f8b-15f4a9cab103",
+      "result_id": "e0c9cdab-bef7-4cfc-bfbc-0946137c7397"
+    },
+    {
+      "claim_id": "b2694f06-f1f0-4f47-8890-c7132b2d92c4",
+      "result_id": "e0c9cdab-bef7-4cfc-bfbc-0946137c7397"
+    },
+    {
+      "claim_id": "388526a5-2719-4378-83ac-382db729959f",
+      "result_id": "7afb4755-5b00-465f-b083-60af0c6e7c22"
+    },
+    {
+      "claim_id": "f1dec679-5c5e-41d9-a6ed-f2671f55d6d9",
+      "result_id": "7afb4755-5b00-465f-b083-60af0c6e7c22"
+    },
+    {
+      "claim_id": "193bd060-ef01-4d0b-b626-72df77bb8a5b",
+      "result_id": "7afb4755-5b00-465f-b083-60af0c6e7c22"
+    },
+    {
+      "claim_id": "9aecb70a-6f94-47f4-ab92-1653a271e1e2",
+      "result_id": "7afb4755-5b00-465f-b083-60af0c6e7c22"
+    },
+    {
+      "claim_id": "0eaa91ae-b20e-41c6-a1e3-4a0c76f51799",
+      "result_id": "3dcc11a3-ed61-4bdd-8da5-440f6466e69a"
+    },
+    {
+      "claim_id": "b19b29da-5d5a-491d-8e98-d4130c70d259",
+      "result_id": "3dcc11a3-ed61-4bdd-8da5-440f6466e69a"
+    }
+  ],
+  "comparisons": []
+}

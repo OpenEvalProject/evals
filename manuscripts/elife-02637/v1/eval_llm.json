@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "SCML2 contains a novel RNA-binding region (RBR) spanning amino acids 256\u2013330 that is necessary and sufficient for RNA binding in vitro. The RBR exhibits little sequence specificity but discriminates between RNA and DNA, preferring single-stranded over double-stranded RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36\u2013C41 collectively demonstrate the identification and characterization of the RBR through RIP experiments (C36), domain mapping (C38), and in vitro binding assays (C39\u2013C41). The data from Figures 1A, 1C, and 1D provide converging evidence for the RBR's RNA-binding properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The RBR can form ternary complexes with nucleosomes and RNA simultaneously, with higher affinity for RNA than nucleosomes or DNA. The RBR shows some sequence/structure preference, binding full-length HOTAIR more efficiently than isolated stem-loops or 601 RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42\u2013C51 are supported by EMSA experiments (Figure 2A\u2013C) and pull-down assays (Figure 2\u2014figure supplement 2C) demonstrating ternary complex formation and binding preferences. The super-shifted band in Figure 2C and controls excluding GST-mediated dimerization (C47) provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "SCML2A is tightly associated with chromatin through coordinated action of multiple domains: the RBR (RNA binding), MBT domains (histone mark recognition), and SPM domain (PRC1 interaction). Deletion of the RBR or mutation of the MBT domain reduces chromatin association, with the RBR deletion having a stronger effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C52\u2013C59 are supported by salt fractionation experiments (Figure 3A\u2013D) showing differential chromatin association of wild-type and mutant proteins. The quantification in Figure 3C demonstrates statistically significant differences (p-values from 2-way ANOVA), and the observation holds across different expression levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SCML2A exhibits punctate nuclear localization consistent with recruitment to specific chromatin sites, while SCML2A\u0394RBR shows diffuse nuclear distribution. The number of intense GFP spots decreased from a median of 39 per cell for SCML2A to 5 per cell for SCML2A\u0394RBR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60\u2013C62 are supported by fluorescence microscopy (Figure 3E\u2013G) with quantification showing statistically significant differences (p<0.001, unpaired t-test). The microscopy data corroborate the biochemical fractionation results, providing orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SCML2A binds to PRC1 via its SPM domain, as demonstrated by mass spectrometry showing that both SCML2AWT and SCML2A\u0394RBR co-purify with canonical PRC1 components (RING1A/B, CBX2/8, PHC2/3, BMI1), while SCML2B (lacking SPM) shows only trace PRC1 association. SCML2A also co-purifies with SCMH1 and L3MBTL3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C64\u2013C69 are supported by mass spectrometry data (Figure 4A) and immunoprecipitation experiments (Figure 4B). The observation that \u0394RBR retains PRC1 binding (C65) while SCML2B does not (C66) demonstrates the SPM domain's role. USP7 co-purification serves as an appropriate positive control (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Artificial tethering of both SCML2A and SCML2B to a reporter causes dose-dependent transcriptional repression. However, only SCML2A recruits BMI1 to the reporter, indicating that BMI1 recruitment is not necessary for SCML2-mediated repression in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70\u2013C72 are supported by luciferase assays (Figure 4C) and ChIP-qPCR (Figure 4\u2014figure supplement 1A,B). The data demonstrate that SCML2 has repressive activity independent of PRC1 recruitment, which is a key mechanistic finding. The dose-dependent response strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SCML2 occupies chromatin at sites enriched near transcription start sites (>30% within 10 kb of TSS) of genes involved in transcriptional regulation, development, and differentiation. SCML2 shares ~46% of its target genes with BMI1, representing a highly significant overlap (p=2.5\u00d710\u207b\u00b9\u00b9\u2079) that increases with more stringent p-value cutoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74\u2013C79 are supported by ChIP-seq analysis (Figure 4D\u2013F) with appropriate statistical testing (hypergeometric distribution). The GO enrichment analysis (Figure 4\u2014figure supplement 1C) and the observation that overlap increases with decreasing p-values (C79) strengthen confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Deletion of the RBR reduces SCML2A occupancy at most target genes, though a smaller subset of sites retain SCML2A\u0394RBR at WT levels. Meta-analysis of all significant ERs shows much weaker SCML2\u0394RBR signal compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C80\u2013C82 are supported by ChIP-seq comparing WT and \u0394RBR (Figure 5A,B). The meta-ER plot (Figure 5B) provides genome-wide quantification, while individual loci (Figure 5A) show both RBR-dependent and RBR-independent sites. The observation is confirmed with additional biological replicates (Figure 5\u2014figure supplement 1C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Overexpression of SCML2A\u0394RBR causes decreased BMI1 occupancy at several target sites, suggesting that SCML2A contributes to PRC1 recruitment. Out of 148 high-confidence co-occupied sites, the majority show losses in both SCML2 and BMI1 binding when the RBR is deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9, C83\u2013C86 are supported by ChIP-seq data (Figure 5A,C,E) showing coordinate loss of SCML2 and BMI1 at many sites. However, the mechanism is complex: the \u0394RBR mutant retains PRC1 binding in vitro (C65) but causes BMI1 loss on chromatin, suggesting a dominant-negative effect as discussed (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91",
+      "C92"
+    ],
+    "result": "SCML2 associates with annotated and unannotated lncRNAs via the RBR in vivo. RIP-seq shows specific interactions that distinguish SCML2AWT from controls and \u0394RBR mutant. These interactions are dynamic, changing upon cellular differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88, C91\u2013C92 are supported by RIP experiments (Figure 6A,B) and RIP-seq analysis (Figure 6C,D). The PCA analysis (Figure 6C) demonstrates specificity, and the differentiation experiments (Figure 6D) show dynamic changes. The requirement for the RBR is clearly demonstrated by the \u0394RBR control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Cell differentiation causes measurable shifts in the pool of lincRNAs associated with SCML2. Several unannotated ncRNAs enriched in SCML2 RIPs are transcribed near SCML2 enriched regions, suggesting potential cis-acting mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89\u2013C90 are supported by RIP-seq in differentiated K562 cells (Figure 6D) and examples of unannotated ncRNAs near SCML2 ERs (Figure 6E, Figure 6\u2014figure supplement 1B\u2013E). However, the authors note they could not detect genome-wide spatial correlation (C123), limiting the strength of the cis-acting hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "SCML2 knockdown results in 530 differentially expressed genes (p<0.2), with a significant fraction overlapping SCML2-bound genes (p=1.4\u00d710\u207b\u2074). The majority (341) are upregulated, consistent with SCML2's repressive function, and upregulated genes account for ~86% of DEGs at SCML2-occupied sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C93\u2013C96 are supported by RNA-seq data (Figure 7A\u2013C), but the use of a loose p-value cutoff (p<0.2) is concerning and may include many false positives. The authors acknowledge this limitation by showing more stringent analysis (Figure 7\u2014figure supplement 1), but the small number of genes with p<0.05 limits statistical power. The directional bias toward upregulation is consistent with repression, but the magnitude of effects and reproducibility across stringent cutoffs need consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "SCML2 knockdown causes gene derepression without affecting BMI1 chromatin occupancy, even at sites that lose SCML2. This demonstrates that SCML2 represses transcription independently of PRC1, and that PRC1 alone is insufficient to maintain repression at all target genes in SCML2's absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97\u2013C99 are supported by ChIP-seq for BMI1 after SCML2 knockdown (Figure 7D,E) showing maintained BMI1 levels despite SCML2 loss. Combined with the tethering data showing SCML2B represses without recruiting BMI1 (C72), this provides strong evidence for PRC1-independent repression. This is a key mechanistic finding distinguishing SCML2 function from simple PRC1 recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "SCML2A contributes to PRC1 function through two mechanisms: (1) SCML2 and PRC1 cooperate in chromatin binding, and (2) SCML2 enforces repression at some target sites independent of PRC1 presence. RNA binding is required for SCML2 chromatin localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100\u2013C102 represent the authors' synthesis of their findings in the discussion. These conclusions are well-supported by the collective data: cooperation in chromatin binding is shown by BMI1 loss upon SCML2\u0394RBR overexpression (C83\u2013C84), PRC1-independent repression is shown by maintained repression without BMI1 recruitment (C72, C97\u2013C99), and RNA-binding requirement is shown by fractionation and ChIP-seq of \u0394RBR mutants (C55, C80\u2013C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims establishing the context of Polycomb group proteins, their complexes (PRC1, PRC2), recruitment mechanisms (PREs in Drosophila, limited understanding in mammals), and prior knowledge about SCM and its mammalian homologs SCMH1 and SCML2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10\u2013C35 are background statements supported by citations to prior literature. These establish the scientific context and rationale for the study. The citations appear appropriate and the statements accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C63"
+    ],
+    "result": "SCML2 does not co-precipitate with EZH2 or MLL. Deletion of the RBR does not affect nuclear import or interaction with PRC1 components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C63 are supported by unpublished data (C37) and by the mass spectrometry showing \u0394RBR retains PRC1 binding (C63, Figure 4A) plus microscopy showing nuclear localization (Figure 3F). These are important negative controls demonstrating specificity of SCML2-RNA interactions and that RBR deletion specifically affects chromatin binding rather than general protein function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion claims about conservation of SCM-PRC1 interaction mechanisms from Drosophila to humans, SCML2's participation in PRC1.2, potential mechanisms of MBT-mediated repression, and structural properties of the RBR including its likely unstructured nature and induced-fit binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103\u2013C112 are discussion points that synthesize the current findings with prior literature. The conservation claim (C103\u2013C104) is supported by the mass spectrometry data. The PRC1.2 participation (C105) is cited from prior work. The MBT mechanism speculation (C106) is appropriately qualified as speculative. The RBR structural discussion (C109\u2013C112) is reasonable inference from the binding data and failure of structure prediction algorithms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The RBR is dispensable for PRC1 interaction in vitro, but its disruption causes SCML2A delocalization from chromatin and decreased PRC1 occupancy at target genes. The nucleoplasmic SCML2\u0394RBR might function as a dominant negative, titrating PRC1 away from chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113\u2013C115 synthesize key observations: RBR-independent PRC1 binding (C113, supported by Figure 4A), but RBR-dependent chromatin localization and PRC1 recruitment (C114, supported by Figures 3 and 5). The dominant-negative hypothesis (C115) is speculative but reasonable given that \u0394RBR retains PRC1 binding but is not chromatin-bound, and could explain why overexpression causes BMI1 loss while knockdown does not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "SCML2-RNA interactions are specific in vivo despite promiscuous binding in vitro, as demonstrated by unique RIP-seq profiles, differentiation-dependent changes, and selective enrichment of divergent ncRNAs over nearby mRNAs. Physical proximity on chromatin alone does not determine SCML2-RNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116\u2013C118 are discussion points well-supported by the RIP-seq data (Figure 6C\u2013E). The three lines of evidence for specificity are clearly demonstrated. The conclusion about physical proximity (C117) is a reasonable inference from the observation that divergent ncRNAs but not nearby mRNAs are enriched.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose that the RBR contributes to SCML2A recruitment via trans-acting or cis-acting ncRNAs, including divergent antisense ncRNAs, overlapping antisense ncRNAs, or promoter-associated ncRNAs. However, genome-wide spatial correlation between RIP-seq and ChIP-seq signals could not be detected, possibly because only a subset of SCML2-associated ncRNAs act in cis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119\u2013C124 represent a proposed model with acknowledged limitations. The examples of cis-acting ncRNAs (C90, Figure 6E) support the possibility, and the types of ncRNAs mentioned (C120\u2013C122) are well-documented in the literature. However, the lack of genome-wide correlation (C123) is a significant limitation that weakens the cis-acting hypothesis. The explanation (C124) is speculative. This represents an interesting hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "The authors propose that SCML2A is retained at target genes through interaction with PRC1 and that SCML2A contributes to stabilizing PRC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125\u2013C126 represent a proposed model based on the collective findings. The retention via PRC1 interaction (C125) is supported by the SPM-dependent chromatin association (Figure 3\u2014figure supplement 1C\u2013G) and co-localization data (Figure 4E,F). The stabilization of PRC1 (C126) is supported by the BMI1 loss upon SCML2\u0394RBR overexpression (Figure 5). This is a reasonable synthesis of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Both the MBT domains and the SPM domain contribute to the repressive activity of SCM in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is a statement about prior work in Drosophila, supported by appropriate citations. This provides context for interpreting the mammalian SCML2 data and supports the conclusion that SCML2 has intrinsic repressive activity beyond PRC1 recruitment.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The Mst2 complex regulates histone turnover at heterochromatin regions. Histone turnover assays using H3-Flag incorporation show that pericentric dh repeats have lower H3-Flag in wild-type cells compared to dcr1\u0394 cells (C8), suggesting increased turnover when heterochromatin is compromised (C9). In mst2\u0394 dcr1\u0394 cells, H3-Flag incorporation is reduced to wild-type levels (C11), indicating that Mst2 regulates histone turnover at heterochromatin (C12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C11 are directly supported by experimental data in Figure 1C. The inference that Mst2 regulates histone turnover (C12) is logically derived from the observation that mst2\u0394 suppresses the increased turnover seen in dcr1\u0394 cells. The experimental design with HU arrest to prevent replication-dependent incorporation strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C93"
+    ],
+    "result": "Mst2 prevents ectopic heterochromatin assembly and controls heterochromatin spreading at telomeres. ChIP-chip analysis shows that in wild-type cells, H3K9me2 is mainly at centromeres, telomeres, and the silent mating-type region (C13). In mst2\u0394 cells, telomeric heterochromatin spreads significantly into chromosome arms (C14), and additional ectopic H3K9me2 peaks appear across the genome (C2, C16), similar to epe1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14 are directly supported by ChIP-chip data in Figure 1D,E. The observation of ectopic H3K9me2 peaks in mst2\u0394 cells that overlap with those in epe1\u0394 cells (Figure 1D,E and Supplementary file 1) supports the inference that Mst2 prevents ectopic heterochromatin assembly (C16). The consistency with prior work (C15) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Mst2 regulates heterochromatin spreading only in the absence of boundaries. Reporter gene assays show that mst2\u0394 has no effect on boundary activity at IRC1R (C17), suggesting that Mst2 regulates spreading only where boundaries are absent (C18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is directly supported by reporter gene data in Figure 1F. The inference (C18) is reasonable given that mst2\u0394 affects spreading at telomeres (which lack boundaries) but not at IRC1R (which has a boundary). However, testing additional boundary elements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C94"
+    ],
+    "result": "Mst2 and Epe1 function redundantly to regulate heterochromatin spreading, and their combined loss causes severe growth defects. All freshly generated mst2\u0394 epe1\u0394 cells form very small colonies (C19), indicating a strong negative genetic interaction (C20). Enzymatic mutants of either Mst2 or Epe1 show similar genetic interactions (C21, C22), suggesting redundant enzymatic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C21 are directly supported by tetrad dissection data in Figures 2A and Figure 2\u2014figure supplement 1. The inference of redundant function (C22, C94) is well-supported by the observation that enzymatic mutants of either protein show similar phenotypes when combined with deletion of the other. The consistency with high-throughput epistasis data (C20) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "mst2\u0394 epe1\u0394 cells quickly recover through accumulation of a suppressor at a single genomic locus. Cells from small colonies grow comparably to wild-type (C25), and genetic crosses show that the suppressor segregates in a 1:1 ratio (C28), indicating changes at a single locus (C29). Crosses between recovered cells produce all normal progeny (C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C27, C28 are directly supported by experimental data in Figures 2B-E. The inference that a single locus is responsible (C29) is well-supported by the 1:1 segregation pattern. The persistence of the recovered phenotype and its inheritance pattern strongly suggest an epigenetic rather than genetic suppressor, though this is not definitively proven at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Heterochromatin assembly mutants suppress mst2\u0394 epe1\u0394 growth defects. A genetic screen identified that deletions of heterochromatin assembly factors (clr4\u0394, raf1\u0394, raf2\u0394, swi6\u0394, sir2\u0394, clr3\u0394) allow robust growth of mst2\u0394 epe1\u0394 cells (C30), while RNAi factors were not identified (C31), suggesting the growth defects result from misregulation of heterochromatin (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is directly supported by genetic screen data in Figure 2G and Supplementary file 2. The absence of RNAi factors (C31) is clearly stated. The inference that growth defects result from heterochromatin misregulation (C32) is well-supported by the specific enrichment of heterochromatin assembly factors in the screen. This provides strong evidence for the mechanism underlying the synthetic lethality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Uncontrolled heterochromatin spreading in mst2\u0394 epe1\u0394 swi6\u0394 cells inactivates essential genes. ChIP-chip analysis shows significant expansion of H3K9me2 at constitutive heterochromatin regions (C33) and many additional peaks across the genome (C34). Essential genes reside within or near expanded H3K9me2 domains (C35), suggesting that heterochromatin spreading inactivates essential genes and causes growth defects (C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, C35 are directly supported by ChIP-chip data in Figures 3A,B and Figure 3\u2014figure supplement 1. The inference that heterochromatin spreading inactivates essential genes (C36) is reasonable given the correlation between H3K9me2 at essential genes and growth defects. However, direct evidence of gene inactivation (e.g., expression analysis) would strengthen this conclusion. The use of swi6\u0394 as a proxy for early mst2\u0394 epe1\u0394 cells is justified but introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Blocking heterochromatin spreading prevents mst2\u0394 epe1\u0394 growth defects. The clr4-W31G mutation, which disrupts the Clr4 chromodomain and prevents heterochromatin spreading, eliminates initial growth defects in mst2\u0394 epe1\u0394 cells (C38) and prevents heterochromatin expansion (C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are directly supported by tetrad dissection (Figure 3C) and ChIP-qPCR data (Figure 3D). This result provides strong evidence that heterochromatin spreading is the cause of growth defects, as blocking spreading eliminates the phenotype. The use of clr4-W31G is more specific than swi6\u0394 for testing the spreading hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "mst2\u0394 epe1\u0394 cells recover by epigenetically silencing the clr4+ locus. Recovered cells show H3K9me2 enrichment at a 5 kb region covering clr4+ and meu6+ (C41), with reduced clr4+ mRNA and Clr4 protein levels (C42). Genetic crosses show that cells inheriting the methylated clr4+ locus grow normally (C43), while wild-type cells inheriting this locus lose H3K9me2 (C44), indicating epigenetic silencing (C45) that requires continued absence of Mst2 and Epe1 (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42 are directly supported by ChIP-chip/qPCR (Figures 3A,B, 4A) and expression data (Figures 4B,C). The genetic crosses (Figure 4D-G) provide strong evidence for epigenetic inheritance (C43-C46). The 1:1 segregation pattern and reversibility in wild-type background strongly support the epigenetic nature of the suppressor. This is a key finding demonstrating rapid epigenetic adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Heterochromatin assembly at clr4+ differs from known pathways. H3K9me2 at clr4+ persists in mst2\u0394 epe1\u0394 dcr1\u0394* cells (C47) and in mst2\u0394 epe1\u0394 mmi1\u0394* and mst2\u0394 epe1\u0394 pab2\u0394* cells (C48), indicating that RNAi, Mmi1, and Pab2 pathways are not required (C49). RNA-seq shows meu6+ is not expressed in vegetative cells and clr4+ transcript runs through meu6+ (C50, C51).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48 are directly supported by ChIP-qPCR data in Figure 5\u2014figure supplement 1. Claims C50, C51 are supported by RNA-seq data in Figure 5A. The inference that heterochromatin assembly at clr4+ differs from known pathways (C49) is well-supported by the exclusion of multiple known mechanisms. This suggests a novel heterochromatin assembly pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The intact 3'-UTR of clr4+ is required for heterochromatin assembly at this locus. Deletion of meu6+ (meu6\u0394::kanMX6) has no effect on Clr4 function (C52) but abolishes H3K9me2 at clr4+ in mst2\u0394 epe1\u0394 cells (C53). A construct preserving meu6+ coding sequence (meu6-Flag::KanMX6) also abolishes H3K9me2 (C54), indicating the meu6+ coding sequence is not responsible (C55) and suggesting the intact 3'-UTR of clr4+ is required (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C54 are directly supported by experimental data in Figures 5C and Figure 5\u2014figure supplement 2-3. The inference that the 3'-UTR is required (C56) is reasonable given that both constructs that disrupt the 3'-UTR abolish H3K9me2, while preserving the meu6+ coding sequence has no effect. However, direct testing of the 3'-UTR (e.g., by deletion or mutation) would provide stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C95"
+    ],
+    "result": "Disrupting heterochromatin at clr4+ results in ectopic heterochromatin at rik1+. When clr4+ cannot be silenced (mst2\u0394 epe1\u0394 meu6\u0394* cells), cells partially recover (C57) by forming H3K9me2 at the rik1+ locus (C59), which encodes a Clr4 complex component. This results in reduced rik1+ mRNA (C60), likely allowing partial recovery by decreasing global H3K9me (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C58, C59, C60 are directly supported by experimental data in Figures 5F-J. The inference that reduced rik1+ expression allows partial recovery (C61) is reasonable given that Rik1 is required for Clr4 function. This demonstrates the flexibility of the epigenetic adaptation system, where cells can target alternative heterochromatin assembly genes when the primary target is unavailable. The observation that H3K9me2 also appears at rik1+ in meu6-Flag* cells (C63) supports that this is not random.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Heterochromatin formation at rik1+ is less efficient than at clr4+. mst2\u0394 epe1\u0394 meu6\u0394* cells recover less well than mst2\u0394 epe1\u0394* cells (C62), possibly because heterochromatin forms less efficiently at rik1+ (C62). H3K9me2 at rik1+ also appears in meu6-Flag* cells (C63), suggesting non-random formation (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is speculative (noted as \"we suspect\" in the text) and lacks direct experimental support. While the observation that mst2\u0394 epe1\u0394 meu6\u0394* cells grow slower than mst2\u0394 epe1\u0394* cells is supported (C57), the explanation that heterochromatin forms less efficiently at rik1+ is not directly tested. Claims C63 and C64 are supported by data in Figure 5\u2014figure supplement 3, but the efficiency comparison requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Clr4 is a hyperactive H3K9 methyltransferase, and Mst2/Epe1 evolved to counteract it. Clr4 has higher enzymatic activity than mammalian counterparts (C65) and contains an arginine at position 406 (C67), corresponding to a histidine in mammalian SUV39H1 where H320R creates a hyperactive enzyme (C68). The R406H mutation drastically reduces Clr4 activity in vitro (C69) and moderately affects silencing in vivo (C70), indicating high Clr4 activity is required (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C68 are supported by cited work. Claims C67, C69, C70 are directly supported by experimental data in Figures 6A,B and Figure 6\u2014figure supplement 1. The inference that Mst2 and Epe1 evolved to counteract hyperactive Clr4 (C66) is reasonable given the functional data, though it remains somewhat speculative. The in vitro and in vivo data on R406H provide strong support for the importance of Clr4's high activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Reducing Clr4 activity suppresses mst2\u0394 epe1\u0394 growth defects. The clr4-R406H mutation eliminates initial growth defects in mst2\u0394 epe1\u0394 cells (C72), prevents H3K9me2 at clr4+ (C73), and maintains normal clr4+ expression (Figure 6E). This demonstrates that a less active Clr4 can mitigate the effects of losing both Mst2 and Epe1 (C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 are directly supported by experimental data in Figures 6C,D. This result provides strong evidence that the hyperactivity of Clr4 is a key factor in the synthetic lethality of mst2\u0394 epe1\u0394. By reducing Clr4 activity, cells can maintain proper heterochromatin levels without Mst2 and Epe1, supporting the model that these proteins evolved to counteract hyperactive Clr4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Promiscuous heterochromatin assembly generates epigenetic mutations that provide fast adaptation to heterochromatin stress. The rapid recovery of mst2\u0394 epe1\u0394 cells through epigenetic silencing of heterochromatin assembly genes demonstrates that cells can quickly adapt to heterochromatin stress through epigenetic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim synthesizes the major findings of the paper. The evidence from multiple experiments (recovery kinetics, epigenetic inheritance, targeting of heterochromatin assembly genes) strongly supports this conclusion. The demonstration that cells can target alternative genes (rik1+ when clr4+ is unavailable) further supports the adaptive nature of this response. This represents a significant conceptual advance in understanding epigenetic adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background knowledge claims about heterochromatin biology. These claims establish the scientific context for the study, including heterochromatin characteristics (C6, C7, C78), the need for regulation (C75, C76), disease relevance (C77), heterochromatin formation mechanisms (C79, C80), and prior knowledge about Epe1 (C81-C86) and Mst2 (C87-C92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by cited literature and represent established knowledge in the field. They provide necessary context for understanding the current work. Claim C92 notes that the ability of Mst2 to regulate histone turnover \"has not been directly tested,\" which the current study addresses.",
+    "result_type": "MINOR"
+  }
+]

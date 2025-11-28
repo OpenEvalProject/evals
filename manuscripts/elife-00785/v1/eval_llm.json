@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MAVS polymers recruit TRAF2, TRAF5, and TRAF6 through distinct TRAF-binding motifs, and these TRAF proteins promote ubiquitination reactions that recruit NEMO to the MAVS signaling complex, leading to activation of IKK and TBK1. Mutations of TRAF-binding motifs on MAVS abolished downstream signaling without affecting MAVS polymerization, while MAVS polymerization mutants failed to recruit TRAFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9, C25-C33 are supported by multiple complementary experimental approaches including co-immunoprecipitation (C5, C31, C32), mutagenesis studies (C6, C29, C30), triple knockout cell experiments (C7), in vitro reconstitution (C8, C32), SILAC mass spectrometry (C8, C32), and biochemical purification (C25). The data consistently demonstrate that MAVS recruits TRAFs through specific binding motifs, that polymerization is required for TRAF recruitment, and that TRAFs promote ubiquitination-dependent NEMO recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C130",
+      "C131"
+    ],
+    "result": "TRAF2, TRAF5, and TRAF6 function redundantly in vivo to activate IRF3 and NF-\u03baB in response to virus infection. Compound deletion of all three TRAF proteins completely abolished IFN\u03b2 induction by Sendai virus and VSV, while single knockouts showed normal responses. The E3 ligase activity of TRAF6 is essential for its function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C62-C65, C130-C131 are strongly supported by genetic experiments in triple knockout cells (C60, C130) showing complete loss of signaling, rescue experiments with wild-type but not catalytically inactive TRAF6 (C62-C64), and experiments with TRAF6-K0 mutant (C64) demonstrating that TRAF6 E3 ligase activity, but not its own ubiquitination, is required. The redundancy is demonstrated by normal signaling in single knockout cells (C58, C59) but complete loss in triple knockouts (C60, C130).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C147",
+      "C148"
+    ],
+    "result": "The E3 ligase activity of TRAF2 is redundant with that of LUBAC (specifically HOIP) in the TRAF2-dependent pathway downstream of MAVS. TRAF2 RING domain mutants can rescue signaling when LUBAC is present, but HOIP depletion abolishes IRF3 activation in cells expressing TRAF2-\u0394RING.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C75-C78, C147-C148 are supported by complementary genetic experiments showing that TRAF2 C34A mutant rescues signaling (C66), that HOIP depletion specifically blocks signaling in cells expressing TRAF2-\u0394RING but not wild-type TRAF2 (C75), and that catalytically inactive HOIP cannot rescue this defect (C76). The data consistently demonstrate functional redundancy between TRAF2 and HOIP E3 ligase activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C99"
+    ],
+    "result": "MAVS signals through specific TRAF-binding motifs: PVQET (143-147) binds TRAF2/5, while PGENSE (153-158) and PEENEY (455-460) bind TRAF6. Mutations of individual binding sites do not affect signaling, but mutation of all TRAF-binding sites (QN2ED) abolishes IRF3 activation, IFN\u03b2 induction, and permits higher viral replication, without affecting MAVS polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C91, C99 are supported by systematic mutagenesis experiments (C84-C87), co-immunoprecipitation studies showing specific TRAF-MAVS interactions (C88-C89), and biochemical analysis demonstrating that QN2ED mutant can still polymerize (C90) but cannot recruit TRAFs or activate signaling (C85-C87, C91). The specificity of TRAF binding is confirmed by selective co-IP with different MAVS mutants (C88-C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C138",
+      "C139"
+    ],
+    "result": "TRAF6 is indispensable for signaling through the TRAF6-binding sites on MAVS, and TRAF3 cannot substitute for TRAF6 function. In Traf6\u2212/\u2212 cells, Q145N MAVS (lacking TRAF2/5 binding) is completely defective in inducing IFN\u03b2, while in Traf2/5 DKO cells, 2ED MAVS (lacking TRAF6 binding) is defective. TRAF2 and TRAF5 can functionally substitute for each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98, C138-C139 are supported by complementary experiments in different knockout cell lines (C92, C94, C95, C97, C98) showing that specific MAVS mutants fail to signal only when their cognate TRAF binding partners are absent. The inability of TRAF3 to substitute for TRAF6 is demonstrated by complete loss of signaling with Q145N MAVS in Traf6\u2212/\u2212 cells (C92, C138). The functional redundancy between TRAF2 and TRAF5 is shown by rescue experiments in single knockout cells (C95, C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "MAVS polymerization is required for recruitment of TRAF proteins. Point mutations in the CARD domain (E26A, R64A, R65A) that disrupt MAVS polymerization also abolish virus-induced interactions with TRAF6, TRAF2, and TRAF5, and prevent IRF3 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 are supported by multiple complementary assays including luciferase reporter assays (C100), SDD-AGE and sucrose gradient analysis showing loss of polymerization (C101-C102), and co-immunoprecipitation experiments demonstrating loss of TRAF binding (C103-C104). The data consistently show that polymerization is required for TRAF recruitment but not vice versa (as shown by QN2ED mutant in C90-C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "K63 polyubiquitination is important for IRF3 and IKK activation by MAVS in vitro. MAVS and TRAF2 form a ubiquitination-dependent signaling complex with NEMO through NEMO's ubiquitin-binding domains. SILAC experiments identified MAVS and TRAF2 as common NEMO-interacting proteins in both in vitro and cell-based systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C115 are supported by in vitro reconstitution experiments with ubiquitin mutants (C106), temperature-dependent co-IP experiments (C107), deubiquitinase treatment (C108), experiments with NEMO ubiquitin-binding domain mutants (C109), and comprehensive SILAC mass spectrometry analysis (C111-C115). The convergence of in vitro and cell-based SILAC data on MAVS and TRAF2 (C115) provides strong support for their role in NEMO recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C153",
+      "C154"
+    ],
+    "result": "NEMO ubiquitin-binding domains are essential for IRF3 activation, but NEMO ubiquitination per se is dispensable. NEMO mutants lacking multiple ubiquitination sites (K285/309R, 6KR, 13KR) can still support virus-induced cytokine production and IRF3 activation, while ubiquitin-binding domain mutants cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127, C153-C154 are supported by systematic mutagenesis experiments showing that NEMO K285/309R (C122), 6KR (C125), and 13KR (C126) mutants support normal signaling, while UBDm mutants are defective (C123). Mass spectrometry identified ubiquitination sites (C124), but mutation of these sites does not impair function (C125-C127, C154). This demonstrates that NEMO functions as a ubiquitin sensor rather than a ubiquitination target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Five ubiquitination sites on TRAF2 (K31, K148, K195, K313, K481) were identified by mass spectrometry. TRAF2-5KR mutant can rescue cytokine induction, but requires HOIP when these ubiquitination sites are mutated, suggesting ubiquitinated TRAF2 functions redundantly with another HOIP ubiquitination target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116, C118-C120 are supported by mass spectrometry identification of ubiquitination sites (C116), rescue experiments showing TRAF2-5KR can support signaling (C118), and genetic experiments demonstrating HOIP requirement specifically when TRAF2 ubiquitination sites are mutated (C119). However, the identity of the alternative HOIP target remains speculative (C120, C155).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C151"
+    ],
+    "result": "TRAF2, TRAF5, and TRAF6 are essential for activation of both IKK and TBK1 by MAVS, whereas TRAF3 is dispensable. This challenges the prevailing view that TRAF2/5/6 mediate NF-\u03baB activation while TRAF3 mediates IRF3 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136, C151 are supported by experiments in triple knockout cells showing complete loss of both IRF3 and IKK activation (C7, C60, C130, C150), experiments in Traf3\u2212/\u2212 cells showing normal IRF3 activation (C97, C136), and knockdown experiments showing TRAF3 is not required (C71). This represents a major conceptual advance challenging prior models (C133-C134).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A cell-free system was established to study MAVS signaling, demonstrating that crude mitochondrial fractions from virus-infected cells can activate IRF3 and I\u03baB\u03b1 phosphorylation when incubated with cytosolic extracts. NEMO and TBK1 complex function together in IRF3 activation in an IKK-independent manner, and TRAF6 supports IRF3 activation in this system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C47 are supported by in vitro reconstitution experiments showing IRF3 dimerization and I\u03baB\u03b1 phosphorylation (C34-C35), experiments with NEMO\u0394N demonstrating IKK-independent function (C40-C41), pull-down experiments showing NEMO-TBK1 interaction (C42), depletion-reconstitution experiments (C43-C44), and TRAF6 requirement (C46-C47). This system provides a valuable tool for mechanistic studies, though it does not fully recapitulate cellular redundancy (C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In vitro, cytosolic extracts from Traf6\u2212/\u2212 cells are severely defective in supporting IRF3 dimerization and I\u03baB\u03b1 phosphorylation, requiring both TRAF6 E3 ligase activity and TRAF-C domain for rescue. Extracts from Traf2/5 DKO cells also fail to support IRF3 activation, but TRAF2 RING deletion does not impair activity while TRAF-C deletion does. However, intact cells lacking individual TRAF proteins show normal responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 are supported by in vitro reconstitution experiments with extracts from various knockout cells (C48, C54, C57) and rescue experiments with wild-type and mutant TRAF proteins (C49, C55-C56). The discrepancy between in vitro and cellular results (C51-C53, C58-C59) is acknowledged and explained by functional redundancy that is not recapitulated in cell-free systems (C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Knockdown of LUBAC components (HOIP, Sharpin, HOIL-1) does not appreciably affect IRF3 activation by VSV in wild-type cells. Loss of Sharpin slightly reduced rather than enhanced IFN\u03b2 induction, contradicting a previous report. HOIL-1 knockdown slightly enhanced signaling, consistent with its role as a negative regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are supported by RNAi knockdown experiments in wild-type MEFs (C69-C71), experiments in Sharpin-deficient cells (C72-C73), and inducible knockdown in U2OS cells (C74). The data contradict prior reports suggesting LUBAC negatively regulates MAVS signaling (C24, C72), though the modest effects and cell-type differences warrant caution in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C156"
+    ],
+    "result": "Multiple ubiquitin E3 ligases are recruited to MAVS, and each E3 targets ubiquitination of distinct proteins, which function cooperatively and redundantly to recruit NEMO and activate IKK and TBK1. This includes ubiquitination of multiple targets as well as unanchored K63 polyubiquitin chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128 and C156 represent a speculative model synthesizing the experimental findings. While the model is consistent with the data showing multiple E3s (TRAF2, TRAF5, TRAF6, LUBAC), their redundancy, and the importance of ubiquitination, the specific targets and mechanisms remain incompletely defined. The evidence for unanchored K63 chains (C106) is from in vitro experiments only. The model requires additional validation to identify all relevant ubiquitination targets and their relative contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background knowledge about the RIG-I/MAVS pathway: RIG-I family receptors detect viral RNA and induce type-I interferons through MAVS, which forms prion-like polymers that activate IKK and TBK1. Various components including ubiquitin, NEMO, TBK1-associated proteins, and E3 ligases have been implicated in this pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C24 represent established knowledge from prior research, supported by citations throughout. These provide essential context for the current study. Some prior claims (e.g., C23-C24 regarding TRAF3 and LUBAC roles) are challenged by the current findings (C136, C71-C74), which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C132",
+      "C133",
+      "C134",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C155",
+      "C157"
+    ],
+    "result": "Discussion and mechanistic interpretation: The study resolves the enigma of TRAF protein function in MAVS signaling by demonstrating redundancy. The authors propose mechanisms for TRAF recruitment, activation, and function, including the role of MAVS polymerization in increasing avidity, TRAF oligomerization activating E3 ligase activity, and the requirement for adaptor proteins like MAVS for IRF3 specificity. Analogies are drawn to DNA repair regulation by sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129, C132-C157 include a mix of well-supported conclusions (C129, C132, C135-C136, C149-C152) and speculative mechanistic proposals (C140, C143-C145, C155). The speculation is reasonable and consistent with the data, but many mechanistic details remain to be tested. The analogy to DNA repair (C157) is illustrative but does not constitute evidence. The discussion appropriately distinguishes between demonstrated findings and proposed mechanisms.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Microbial communities in the brewery cluster by processing room and substrate type regardless of season. Specific microbial taxa show significant associations with particular locations: fermenter samples with Bacillaceae, cellar areas with Micrococcaceae, wort/malt/hotside surfaces with Enterobacteriaceae and various fungi, barrel-room floors with Staphylococcaceae, beer samples with Lactobacillaceae, and barrels with Aspergillus/Eurotium/Penicillium (Kruskal-Wallis p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C39 collectively describe beta-diversity analysis results showing substrate-driven community structuring. The clustering patterns are supported by Figures 2-3 and statistical testing (C37). The sample size (501 samples, C28) is substantial, and the statistical approach (Bray-Curtis dissimilarity with Kruskal-Wallis testing and Bonferroni correction) is appropriate for compositional microbiome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "SourceTracker Bayesian modeling predicts that raw brewing substrates (grain, hops, yeast, beer) are the main microbial sources contaminating brewery surfaces, with minimal contribution from extraneous environmental sources. Grain contributes most to hotside and coolship areas, hops to fermentation areas, yeast to fermenters and packaging, and beer to cellar surfaces. This suggests substrate contact drives microbial community composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C48 describe SourceTracker predictions, but the authors appropriately note (C46) that these are correlative associations, not causative. The analysis uses appropriate Bayesian methods (C4, C121) but relies on reference databases from other studies that may not perfectly match brewery conditions. The inference that raw materials are vectors (C48) is reasonable but speculative without experimental validation. The claim requires additional experimental work to confirm causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Brewery microbial communities showed temporal stability across seasons, unlike wineries which show significant seasonal variation. This stability is attributed to year-round beer production creating consistent substrate exposure, potentially leading to facility-specific 'house' microbial communities similar to cheese-making environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 compare temporal dynamics to previous winery studies (C50 cites Bokulich et al., 2013b). The explanation for stability (C51) is logical given continuous production schedules. However, C52 is speculative (labeled as 'may function like') and would benefit from comparative studies across multiple breweries. The core observation of temporal stability is well-supported by the clustering data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Physical mapping reveals temporal and spatial patterns of microbial dispersal. S. cerevisiae and C. santamariae spread broadly across the brewery over time, while Micrococcus, Kocuria, Acetobacter, and Lactobacillus show more localized distribution patterns associated with specific substrate exposure (beer runoff, wort, undiluted beer).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe spatial-temporal mapping results shown in Figures 5-7. The observations are descriptive and well-documented visually. The inference about substrate supporting growth (C56) is reasonable given known associations with beer spoilage (C57, citing Back 1981). The spatial resolution and temporal sampling (three seasons) provide adequate data to support these dispersal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Physical barriers and physiochemical conditions can limit microbial spread within the brewery. Non-production surfaces cleaned only by hosing may accumulate substrates supporting microbial growth. Aerosols, splashing, human and insect traffic facilitate dispersal, while physical partitions inhibit passage. The authors recommend separating packaging rooms from other operations to reduce contamination risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C64 are largely inferential (C59, C60, C61, C62 are labeled as INFERENCE). While the observations about microbial confinement (C63) are supported by the spatial data, the mechanistic explanations for dispersal (aerosols, traffic) and the effectiveness of barriers are not directly tested. The recommendations (C64) are reasonable but speculative. Experimental validation of dispersal mechanisms and barrier effectiveness would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "LAB-TRFLP analysis reveals substrate-specific LAB community composition. Wort contains diverse LAB species rarely found in beer, coolship beers are dominated by Pediococcus and L. lindneri, and floor/packaging surfaces contain mixed LAB populations. Lactobacillus spp. were detected on both filler heads, indicating cross-contamination risk between sour and conventional beer production lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C77 describe LAB-TRFLP results addressing the limitation of short 16S amplicons (C66). The method is appropriate for species-level identification (Bokulich and Mills, 2012a). Results shown in Figure 8 support substrate-driven LAB composition (C67, C75). The detection on both filler heads (C76) is a specific, concerning finding. However, C73 notes technical limitations (weak amplification from grain), and C77's generalization about cross-contamination being the 'prevailing cause' in 'any brewery' is an overreach from single-site data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C102",
+      "C103"
+    ],
+    "result": "This is the first quantification of hop-resistance genes in brewery environments. Sour beers contained the highest horC levels (2.0-4.8 \u00d7 10^4 copies/\u00b5l), with fermenter and packaging surfaces also showing substantial levels (2.8-7.8 \u00d7 10^2 copies/cm^2). No genes were detected on hops, suggesting the brewery environment itself is the site of hop-resistance gene propagation. horC was the most abundant gene detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85, C102-C103 report novel ddPCR quantification of hop-resistance genes (Figure 9). The novelty claim (C80, C102) appears valid given the literature review. The quantitative data (C81-C84) are specific and obtained using appropriate ddPCR methods (C122). The inference that the brewery is the propagation site (C103) is reasonable given absence on hops (C83) but is based on only two hop samples, which is a limitation. The finding that horC is most abundant (C85) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The abundance and functional significance of detected hop-resistance genes align with prior literature. horC correlates with hop-tolerance and beer-spoilage ability and is likely selected for in brewery environments. horB was detected at stable ratios with horC, supporting its role as a transcriptional regulator. hitA was least abundant, consistent with other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 integrate current findings with prior literature. The functional roles are well-cited (C86: Fujii et al., 2005; Iijima et al., 2006; Bergsveinson et al., 2012; C87: Bergsveinson et al., 2015; C91: Hayashi et al., 2001; Behr and Vogel, 2010; C92: Haakensen and Ziola, 2008; Bergsveinson et al., 2012). The inference about selection (C88) is reasonable given the observed abundance patterns. The horB:horC ratio observation (C89) provides functional validation. These claims appropriately contextualize the novel quantitative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Statistical correlations show hop-resistance genes horA, horB, and horC are highly intercorrelated (r=0.83-1.0, p<0.01) and correlate with Lactobacillales abundance. horA specifically correlates with Pediococcus (r=0.57, p=0.01), consistent with it being the primary hop-resistance gene in Pediococcus. No genes correlated with L. brevis, which was only a minor constituent in this brewery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 report correlation analyses with appropriate statistics (Pearson's r with p-values). The correlations are shown in Figure 9B. The high intercorrelation of horA/B/C (C93) and their correlation with Lactobacillales (C95) are well-supported. The horA-Pediococcus correlation (C97) aligns with prior knowledge (C98, citing Haakensen and Ziola, 2008). The lack of L. brevis correlation (C99) is appropriately explained by its low abundance in this specific brewery (C101), avoiding overgeneralization. Sample size for correlations appears adequate given 19 samples analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Iso-alpha-acids (the antimicrobial compounds) are generated during boiling and absent in raw hops. Since selective pressure for hop-resistance genes only exists in hopped beer, not raw hops, equipment contacting sour beer should be dedicated to sour production and not used for conventional beers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 integrate chemistry (C104-C106, well-cited: Steenackers et al., 2015; Simpson and Smith, 1992) with the finding of no resistance genes on hops (C83) to infer where selective pressure exists (C107). The recommendation (C108) logically follows from the high gene abundance on sour beer equipment (C81-C82). However, C108 is labeled as SPECULATION and represents a practical recommendation rather than an experimental finding. The reasoning is sound but the recommendation's effectiveness is untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study profiled hop-resistance gene frequencies and bacterial/fungal communities using marker-gene sequencing, LAB-TRFLP, and ddPCR. A Bayesian approach (SourceTracker) predicted contamination routes. Physical mapping illustrated dispersal patterns and identified potential reservoirs. Habitual beer exposure is associated with increased spoilage gene abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 summarize the study's methodological approach and key findings. The methods are well-described in Materials and Methods (C117-C122) and appropriately applied. The association between beer exposure and spoilage genes (C6) is supported by the quantitative data (C81-C82) showing highest levels in sour beer and associated equipment. These claims accurately represent the study design and major conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study was conducted in a North American brewery producing conventional, sour, and coolship beers. A secondary cellar building was constructed during the study period, changing the facility configuration between sampling times. A total of 445 surface swabs and 56 beer/ingredient samples were collected across three seasons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 describe the study site and sampling. The facility change (C113) is an important contextual detail that could affect temporal comparisons. The sample numbers (C116) are substantial and well-distributed across the facility (Figure 1). These methodological details are clearly documented and support the study's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Bacterial 16S rRNA V4 and fungal ITS1 regions were amplified and sequenced. OTUs were clustered at 97% identity and tables were rarefied to 400 sequences/sample for statistical tests. SourceTracker used 1000 burn-ins, 25 restarts, and rarefaction to 100 OTUs. ddPCR reactions contained 3 ng/\u00b5l DNA template with specified primer/probe concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 detail molecular and bioinformatics methods. The primer choices (C117-C118) are standard and well-cited (Caporaso et al., 2011; Bokulich and Mills, 2013b). The 97% OTU clustering (C119) is conventional. Rarefaction to 400 sequences (C120) is relatively shallow but may be appropriate given the sample type; however, this could limit detection of rare taxa. SourceTracker parameters (C121) are reasonable. ddPCR conditions (C122) are specific and appropriate. Methods are reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background context establishes that indoor microbial ecosystems differ from outdoor environments, food-production facilities are unique built environments where microbial activities affect product quality, and beer production involves specific antimicrobial properties and spoilage mechanisms. Hop-resistance genes (horA, horB, horC, hitA) are plasmid-borne and horizontally transferred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide literature-based background. All claims are appropriately cited (Kelley and Gilbert, 2013; Lax et al., 2014; Kembel et al., 2014; Bokulich et al., 2013a; Bokulich and Bamforth, 2013; Van Oevelen et al., 1976, 1977; Spaepen et al., 1978; Simpson and Fernandez, 1992, 1994; Simpson, 1993a; Behr and Vogel, 2010; Suzuki et al., 2005, 2006; Sami et al., 1997; Sakamoto et al., 2001; Iijima et al., 2006; Hayashi et al., 2001). These establish the scientific foundation and novelty of the current work. No experimental claims are made in this section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C65",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The substrate-centric community structuring observed has been seen in other food facilities. The studied brewery rarely suffers product contamination. Hop-resistance genes include ABC transporters similar to other antimicrobial-resistance genes, and studying them in breweries may inform understanding of gene transfer in other environments. Beer spoilage is not detrimental to human health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C65, C109, C111 provide important context. C49 is well-cited (Bokulich and Mills, 2013a; Bokulich et al., 2013b, 2014). C65 clarifies that findings should not cause alarm. C109 is cited (Sakamoto et al., 2001). C111 correctly notes beer spoilage is not a health hazard. C110 is speculative about broader applications but reasonable. These contextual claims appropriately frame the study's significance and limitations.",
+    "result_type": "MINOR"
+  }
+]

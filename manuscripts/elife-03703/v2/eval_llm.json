@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Plasmid-based directed evolution systems suffer from variable copy number effects that cause highly variable expression levels from cell to cell, and traditional chromosomal integration methods are too inefficient for library insertion without complex marker-dependent strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the motivation for the work by documenting known limitations of existing methods. The claims are supported by citations to prior work and Figure 1 provides visual evidence of expression variability in plasmid-based systems. These are well-established problems in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "CRISPR-Cas9 has been successfully used for genome editing in eukaryotes but had not been adapted for selection experiments, despite its ability to increase homology-directed repair rates by several 1000-fold at targeted loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 describe the state of CRISPR-Cas9 technology at the time of publication. All claims are supported by multiple citations to prior work establishing the mechanism and capabilities of CRISPR-Cas9, while noting the gap in application to selection experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "A Cas9-NLS construct efficiently localizes to the yeast nucleus, and expression from the intermediate-strength PRNR2 promoter maintains near wild-type fitness, while strong promoters like PTDH3 reduce yeast fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by experimental data shown in Figure 2A-C. The localization is demonstrated by microscopy (Figure 2B) and the fitness effects are quantified by growth curves (Figure 2C). The experimental design appropriately compares different promoter strengths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors designed a novel sgRNA architecture incorporating a 5' HDV ribozyme to protect and stabilize sgRNAs, which increased intracellular sgRNA abundance by sixfold, consistent with sgRNA abundance being rate-limiting for CRISPR/Cas targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C28-C29 describe the sgRNA design rationale and experimental validation. The sixfold increase in sgRNA abundance is measured by RT-qPCR (Figure 3E, C28) with appropriate biological replicates. The reasoning is supported by citation to prior work (C14, C29) and the functional improvement is demonstrated in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "tRNA-based RNA polymerase III promoters achieved nearly 100% efficient barcode insertion at the URA3 locus and showed high efficiency across 11 genomic targets in diploid yeast, while non-tRNA promoters were mostly ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by data in Figure 3A-B and Supplementary files. The efficiency measurements are quantified and the guide sequence-dependent effect at LEU2 (C19-C20) demonstrates appropriate troubleshooting. However, the manuscript lacks details on sample sizes and statistical analysis of the efficiency measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The tRNAPro promoter enabled highly efficient targeting in polyploid industrial yeast ATCC4124 where the PSNR52 promoter failed, demonstrating that tRNA promoter choice impacts multiplexing efficiency in a strain-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 demonstrate the system's applicability to industrial strains. The data in Figure 3C and Supplementary file 1A show clear differences between promoters and strains. The strain-dependent effect (C25) is a reasonable inference from the differential performance of tRNATyr and tRNAPro across strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C30",
+      "C31"
+    ],
+    "result": "The CRISPRm system achieved 43% and 19% efficiency for duplex and triplex targeting in diploid yeast, respectively, with the 5' HDV ribozyme being essential for higher-order multiplexing (duplex efficiency dropped to 3.5% without it).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C30-C31 demonstrate multiplexing capabilities with quantitative efficiency data (Figure 3D-F, Supplementary file 1A). The dramatic reduction in efficiency without the HDV ribozyme (C27) provides strong evidence for its functional importance. The haploid data (C30) shows better scaling, though the manuscript doesn't fully explain this difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "CRISPRm enabled one-step markerless assembly of functional genes from three DNA fragments with 85% efficiency in diploid S288C and 70% efficiency in polyploid ATCC4124, resulting in homozygous insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 demonstrate gene assembly capabilities with quantitative efficiency data (Figure 3C, Supplementary file 1A). The functional NatR cassette assembly provides a clear phenotypic readout. However, the manuscript doesn't specify how many colonies were tested to determine these efficiencies or provide statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C40",
+      "C52",
+      "C53"
+    ],
+    "result": "CRISPRm-mediated directed evolution of the cellodextrin transporter cdt-1 yielded mutants with 2.6-fold and 1.7-fold increased cellobiose utilization, with 2-3 mutations per kilobase resulting in 3-5 amino acid substitutions, and a synergistic quadruple mutant showing 3.9-fold improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C40, C52-C53 present the directed evolution results with quantitative growth data (Figure 4A). The mutation rates are measured by sequencing. The synergistic effect of combining mutations (C40) is demonstrated. However, the manuscript uses a relatively small library size and doesn't report how many clones were screened or provide statistical significance testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C76"
+    ],
+    "result": "Structural mapping of mutations in the evolved CDT-1 transporter revealed that N209S likely interacts with the sugar substrate and F262Y maps adjacent to the conserved PESPR motif involved in transporter dynamics, creating a PESPRY motif present in major S. cerevisiae hexose transporters, revealing synergy between substrate binding and transporter dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C76 provide structural interpretation of the mutations using homology modeling (Figure 4B). The mapping to functionally important regions is supported by citation to prior structural work (C38). However, these are inferences from homology models rather than direct structural determination of CDT-1, and alternative explanations (mRNA stability, translation efficiency) are acknowledged but not tested (C47-C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C74",
+      "C75"
+    ],
+    "result": "Wild-type cdt-1 integrated into the chromosome barely supported cellobiose fermentation (0.13 g/L/hr), while the quadruple and double mutants achieved complete fermentation at rates over 2.0 g/L/hr, representing over 10-fold (actually >15-fold) improvement in fermentation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45, C74-C75 present anaerobic fermentation data (Figure 4C-D) with biological triplicates and error bars. The quantitative rate measurements clearly demonstrate the functional improvement. Note that C75 claims 'over 10-fold' but the actual data shows >15-fold improvement (0.13 to >2.0 g/L/hr), which is a minor inconsistency in reporting but doesn't undermine the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Whole genome sequencing of targeted strains identified 21 sequence variants that are unlikely to result from off-target Cas9 modifications, as guide sequences had poor matches (\u226410 nucleotides) to variant sites and likely arose as natural variants during the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C67-C70 present comprehensive off-target analysis using whole genome sequencing (Supplementary file 1B). The computational analysis comparing guide sequences to potential off-target sites is thorough and the reasoning is sound. However, the conclusion that variants are 'natural' rather than off-target effects relies on computational prediction rather than direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Fluorescent protein expression variability is reduced by moving from two plasmids to one, and further reduced by chromosomal integration, with minimal difference between integrating at one or two genomic loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by visual evidence in Figure 1 comparing different expression systems. However, the evaluation is qualitative based on visual inspection rather than quantitative image analysis. The manuscript would benefit from quantitative measurements of expression variability (e.g., coefficient of variation) to support these conclusions more rigorously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C50",
+      "C51",
+      "C59",
+      "C60"
+    ],
+    "result": "CRISPRm enables rapid generation of markerless chromosomal modifications including loss-of-function alleles, heterologous insertions, and allele swaps with near-quantitative DNA library integration efficiency, eliminating expression variation from plasmid copy number, requiring the 5' HDV ribozyme and strain-specific promoter optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C50-C51, C59-C60 summarize the system's capabilities and requirements. These conclusions are well-supported by the collective experimental data presented throughout the manuscript. The key technical requirements (HDV ribozyme, promoter selection) are clearly demonstrated by comparative experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The mutations in CDT-1 may improve protein function, though it's also possible that selection enriched for improved mRNA stability or translation efficiency since selection was performed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 acknowledge alternative explanations for the observed improvements. The authors appropriately recognize this limitation but do not perform experiments to distinguish between protein-level vs. RNA-level effects. This represents an important caveat to the mechanistic interpretation but doesn't undermine the practical utility of the selected variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CRISPRm could potentially be applied to interrogate cis-regulatory elements, scale to library sizes of 10^7 or larger, enable iterative directed evolution, be adapted for FACS-based screens, improve therapeutic discovery by yeast display, map protein-protein interactions, be used in non-model fungal hosts, connect genotypes to phenotypes in industrial strains, and potentially be applicable to mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C54-C58, C61, C64-C66 are speculative statements about potential future applications. While these are reasonable extrapolations based on the demonstrated capabilities, they remain untested hypotheses. Some (like scalability to 10^7, C54) are supported by citations to transformation efficiency limits, while others are purely speculative. These represent future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

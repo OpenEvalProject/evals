@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes that oxidative protein folding in the ER, particularly via Ero1 activity, is a significant source of cellular ROS that rivals mitochondrial ROS production. These claims provide background context from prior literature about ER-derived ROS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C10 are well-supported by citations to prior literature and represent established knowledge in the field. These background claims appropriately contextualize the study's focus on ER oxidative stress and are consistently cited throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript describes existing ROS detoxification systems in mammalian cells (PRDX4, GPx7/8) and notes their absence in lower eukaryotes, while also establishing that disruption of Ero1 regulation causes severe ER redox imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by appropriate citations to prior work and provide important context for why the authors studied yeast as a model system. The claims about the absence of mammalian ROS detoxification systems in lower eukaryotes (C13) motivates the search for alternative protective mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The kar2-C63A allele (cysteine-less BiP) can complement a KAR2 deletion strain and shows normal UPR activity under both basal and DTT-induced stress conditions, indicating the conserved cysteine is not essential for basic BiP function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are well-supported by complementation assays (Figure 1C) and UPR reporter assays (Figure 1D). The data clearly demonstrate that the cysteine-less mutant is viable and maintains normal UPR responses, establishing that this residue is dispensable for essential BiP functions under standard conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The kar2-C63A mutant shows heightened sensitivity to oxidative stress induced by Ero1* overexpression or diamide treatment, but not to reductive stress (DTT), indicating the conserved cysteine has a specific role in protecting cells against oxidative but not reductive ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 are strongly supported by growth assays in Figures 2A-D. The differential sensitivity to oxidants (Ero1*, diamide) versus reductant (DTT), combined with the control showing catalytically inactive Ero1* has no effect, provides compelling evidence for a specific oxidative stress protection role. The logic connecting these observations is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Biotin-switch assays demonstrate that Kar2 undergoes a BME-reducible cysteine modification during Ero1*-induced oxidative stress, with approximately twofold increased biotinylation. This modification is cysteine-dependent and not an artifact of incomplete NEM alkylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are well-supported by the biotin-switch assay data in Figure 3B. The appropriate controls are included: cysteine-less mutant shows no signal (C30), no BME treatment shows no signal (C32), confirming specificity. The quantification of ~2-fold increase is reasonable given the visible band intensities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Multiple complementary approaches (sodium arsenite reduction in biotin-switch assays and DAz-2 probe labeling) demonstrate that the conserved BiP cysteine is oxidized to sulfenic acid by peroxide during oxidative stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are strongly supported by converging evidence from two independent methods (Figure 3C, E, F). Sodium arsenite is selective for sulfenic acid, and DAz-2 is a specific sulfenic acid probe. Both methods show cysteine- and oxidant-dependent labeling. The use of both endogenous (Ero1*) and exogenous (CHP) oxidants strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Ectopic expression of BiP alleles with bulky (C63F/Y/W) or negatively charged (C63D) amino acid substitutions at the conserved cysteine suppresses the growth defect of kar2-C63A cells during Ero1*-induced oxidative stress, with bulky substitutions providing better protection than wild-type BiP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are well-supported by growth assays in Figure 4. The key control showing that additional C63A does not rescue (C41) demonstrates the effect is not simply due to increased BiP levels. The observation that bulky substitutions outperform wild-type (C42-C43) is intriguing and suggests these may better mimic the oxidized state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The BiP cysteine substitution alleles (C63D/F/Y/W) that protect against oxidative stress are themselves defective for essential BiP functions, showing temperature-sensitive growth, impaired protein translocation, and constitutive UPR induction comparable to DTT treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are well-supported by multiple assays in Figure 5A-D: complementation tests, growth assays, translocation westerns, and UPR reporter assays. The data clearly demonstrate these alleles have compromised normal BiP function despite protecting against oxidative stress, supporting the model that cells need both oxidized and reduced BiP populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In vitro ATPase assays demonstrate that BiP cysteine substitution mutants (C63D/F/Y/W), as well as oxidized or alkylated wild-type BiP, show negligible ATP hydrolysis activity, while the C63A mutant retains normal ATPase activity. The loss of activity upon oxidation/alkylation is cysteine-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are strongly supported by the ATPase assays in Figure 5E-G. The data clearly show loss of ATPase activity for the substitution mutants and chemically modified BiP, with appropriate controls (C63A is unaffected by oxidation/alkylation). The biochemical data directly support the model that cysteine modification inhibits ATPase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Ero1* overproduction causes inhibition of protein translocation into the ER, most prominently observed in an ire1\u0394 strain background that cannot induce the UPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is supported by western blot data in Figure 6 showing precursor protein accumulation. However, the authors acknowledge the translocation block is not consistently observed in wild-type cells and they cannot definitively link it to BiP oxidation. The dependence on the ire1\u0394 background and inconsistent results in other genetic backgrounds limit confidence in this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "An ATPase-deficient BiP mutant (T249G) that lacks ATP hydrolysis activity cannot suppress the growth defect of kar2-C63A cells during Ero1*-induced oxidative stress, indicating that loss of ATPase activity alone is insufficient for protection against oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are well-supported by ATPase assays (Figure 7A) and growth assays (Figure 7B). This is a critical control experiment that distinguishes the protective cysteine substitution mutants from a generic ATPase-deficient mutant, suggesting the protective mechanism involves more than just ATPase inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Ectopic expression of Kar2-C63D/F/Y/W alleles induces the UPR in kar2-C63A cells, particularly at high temperature, but UPR induction alone is not sufficient to protect against Ero1*-induced oxidative stress, as the non-protective T249G mutant also induces UPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by UPR reporter assays in Figure 7C. The data show that while the protective alleles do induce UPR, the non-protective T249G mutant induces similar UPR levels, indicating UPR induction cannot fully account for the protective effect. This is an important negative result that helps refine the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In vitro aggregation assays with rhodanese and IgY demonstrate that BiP cysteine substitution mutants (C63D/F/Y/W) and oxidized/alkylated wild-type BiP show enhanced ability to prevent protein aggregation compared to wild-type BiP, while the T249G mutant and C63A mutant do not show enhanced holdase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are well-supported by aggregation assays in Figure 8A-E using two different substrate proteins. The enhanced holdase activity correlates with protection against oxidative stress and is cysteine-dependent. The negative results with T249G and C63A (with oxidation) provide important specificity controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "A peptide-binding domain mutation (G445D) in the protective Kar2-C63D/F/Y/W mutants reduces their ability to protect cells during oxidative stress, indicating that polypeptide binding capacity is essential for BiP-mediated protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by growth assays in Figure 8F. The G445D mutation is well-characterized in the literature as disrupting peptide binding. The decreased protection with this additional mutation provides evidence that the enhanced holdase activity observed in vitro is functionally important for cellular protection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors propose a model where BiP oxidation functions as a redox signaling circuit: ROS accumulation converts BiP from an ATP-driven chaperone to a high-avidity holdase, maintaining proteins in folding-competent states, conserving ATP, and potentially reducing nascent polypeptide flux into the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 represent the authors' mechanistic model, which is well-supported by the collective experimental evidence. The model logically integrates the observations of cysteine oxidation, ATPase inhibition, enhanced holdase activity, and cellular protection. While speculative elements remain (particularly regarding translocation), the core model is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The phenotypes of BiP cysteine mutants suggest that cells require both reduced and oxidized BiP populations to maintain viability across different redox conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is a reasonable inference from the data showing that constitutively 'oxidized' mimetics (C63D/F/Y/W) are defective under normal conditions while the 'reduced' mimetic (C63A) is defective under oxidative stress. The observation that combining C63A with C63F/Y/W restores robust growth supports this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors discuss prior work showing mammalian BiP is regulated by GPx7-mediated disulfide formation, note this pathway is mammal-specific, but highlight that mammalian BiP Cys41 (equivalent to yeast Cys63) can also be directly oxidized by peroxide to sulfonic acid, supporting BiP's capacity as a direct ROS sensor across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 appropriately cite and interpret prior work by Wei et al. (2012). The authors correctly note the species-specific nature of the GPx7 pathway while identifying the conserved capacity for direct peroxide oxidation. This contextualizes their findings within the broader literature on BiP oxidation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors place their work in the context of prior studies showing cysteine oxidation affects other Hsp70 family members, and claim this is the first demonstration of an Hsp70 modified by endogenous ROS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 appropriately cite prior literature on Hsp70 oxidation by exogenous agents. The claim of novelty (C84) regarding endogenous ROS appears reasonable based on the authors' literature knowledge and the experimental demonstration of oxidation during Ero1*-mediated ROS production.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors contrast their findings with bacterial DnaK, where oxidation inhibits rather than enhances chaperone activity, and note that bacteria use a coupled DnaK-Hsp33 system to achieve functional outcomes similar to what BiP oxidation achieves alone in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 appropriately cite and interpret prior work on bacterial DnaK oxidation. The comparison highlights interesting evolutionary differences in how organisms use Hsp70 oxidation to respond to oxidative stress, with eukaryotes achieving through BiP alone what bacteria achieve through a two-protein system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose that the proximity of the conserved cysteine to the ATP-binding pocket (<10 \u00c5) suggests oxidation disrupts nucleotide positioning, and that structural changes are allosterically propagated to the peptide-binding domain to enhance peptide affinity without ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are reasonable mechanistic proposals based on structural information from cited crystal structures and established knowledge of BiP allostery. While speculative, these proposals are well-grounded in structural biology principles and provide a plausible molecular mechanism for the observed functional changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors discuss the potential for additional BiP cysteine modifications beyond sulfenic acid, noting that sulfenic acids are reactive and can be further oxidized, and that diamide sensitivity suggests potential for non-peroxide adducts like glutathiolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are reasonable speculation based on established sulfenic acid chemistry (appropriately cited) and the observed diamide sensitivity. The authors appropriately acknowledge that their data demonstrate sulfenic acid formation but do not rule out additional modifications. This nuanced discussion is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors estimate <1% of total BiP is recovered in oxidized form, speculate that a larger pool exists in vivo but is difficult to preserve, and note that prior proteomics studies identified mammalian BiP as a glutathiolation substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a reasonable quantitative estimate from the biotin-switch data. Claim C95 is appropriate speculation given the known lability of oxidized thiols and the strong phenotypic effects observed. Claim C96 appropriately cites supporting evidence from prior proteomics work. The low recovery is acknowledged as a technical limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Modified BiP is detectable even without Ero1* overexpression, leading the authors to propose that BiP oxidation likely influences cell growth and development under normal (non-stress) conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by the biotin-switch data in Figure 3 showing basal BiP oxidation. The proposal that BiP oxidation functions under normal conditions (C98) is reasonable speculation that appropriately extends the findings beyond acute stress responses. This suggests broader physiological relevance.",
+    "result_type": "MINOR"
+  }
+]

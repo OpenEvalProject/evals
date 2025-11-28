@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The study analyzed mtDNA from 1675 tumors across 31 tumor types using whole-genome (704 samples) and whole-exome (971 samples) sequencing, identifying 1907 somatic substitutions. Whole-genome sequencing provided average mtDNA coverage of 7901\u00d7, while whole-exome sequencing provided 92.1\u00d7 coverage, with strong correlation between methods (R\u00b2=0.97 for variant allele fractions) and 71.4% sensitivity for exome sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C31-C37 collectively describe the study design, sequencing methodology, and validation. The large sample size, high coverage depths, strong correlation between sequencing methods, and explicit validation experiments (C36) provide robust support for the technical quality of the mutation catalog.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Somatic mtDNA substitutions exhibited dramatic replicative strand bias with C>T and T>C transitions constituting 90.9% of all substitutions. The C>T substitution rate was 12.6-fold higher on the H strand, while T>C rate was 4.2-fold higher on the L strand. CH>TH substitutions were enriched 8-15 fold in NpCpG context, while TL>CL showed 5-8 fold enrichment in NpTpC. This signature was broadly consistent across tumor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C54-C62 describe the mutational signature with specific quantitative data on strand bias, substitution rates, and sequence context enrichment. The consistency across tumor types (C61) and statistical significance (C62 for multiple myeloma exception) support this as a robust finding. The data are clearly presented in Figures 1 and 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The mtDNA mutational signature differs from nuclear cancer genome signatures and is driven by replication rather than transcription-coupled repair. The strand bias favors CH>TH and TL>CL regardless of transcription direction, and remarkably reverses in the D-loop region where bidirectional replication initiates from the Ori-b site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C63-C70 establish that the mutational mechanism is replication-coupled through multiple lines of evidence: independence from transcription direction (C63-C64), reversal in the D-loop (C69), and consistency with bidirectional replication models (C70). The logical inference from strand bias patterns (C64-C65) is well-supported by the data in Figures 1 and 3C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The somatic mtDNA mutational signature matches the germline process that has shaped primate mtDNA evolution. Codon usage analysis shows systematic depletion of certain codons (e.g., GCG 15.8-fold less than GCA), and evolutionary simulations under the observed signature closely approximate actual human mtDNA sequence composition (Pearson's r=0.96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 demonstrate equivalence between somatic and germline signatures through codon usage patterns (C72-C74), cross-species analysis (C75), and evolutionary simulations (C76-C77). The high correlation (r=0.96) between simulated and observed sequences (C77) provides strong quantitative support. However, the evolutionary inference relies on modeling assumptions that could be examined further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C124",
+      "C125"
+    ],
+    "result": "Missense mutations in mtDNA are selectively neutral (dN/dS=1.21, 95% CI 1.015-1.434, p=0.031) and drift toward homoplasmy over time. The 878 missense mutations showed equivalent VAFs to silent mutations (40.1% vs 40.9%, p=0.8) and similar recurrence rates (p=0.19), with no individual gene showing elevated mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C79-C90, C124-C125 establish neutrality through multiple statistical approaches: dN/dS analysis accounting for mutational signature and codon usage (C86), equivalent VAFs between missense and silent mutations (C90), similar recurrence rates (C84), and gene-by-gene analysis (C88). The dN/dS confidence interval barely excludes 1.0, suggesting very weak or no selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Protein-truncating mutations (nonsense and frameshift) undergo negative selection, occurring at expected rates (dNonsense/dS=1.004, p=0.98) but showing significantly lower variant allele fractions (26.4% for nonsense, 25.0% for frameshift vs 40.1% for missense, p<0.001). This indicates cancer cells cannot tolerate high fractions of truncated mitochondrial proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C89, C91-C95, C127-C129 demonstrate negative selection through the combination of expected mutation rates (C89, C93) but constrained VAFs (C91-C92). The statistical significance (p=6\u00d710\u207b\u2075 for nonsense) and consistency across mutation types support the inference that functional mitochondria are critical for cancer cells (C94, C129). Tumor-type variation (C95) adds nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "No mutations were found in tRNA anticodon sites despite 7.6 expected (p=0.006), suggesting these mutations confer selective disadvantage similar to protein-truncating mutations, likely due to systematic errors in protein translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 show statistically significant depletion of anticodon mutations with clear mechanistic reasoning. The p-value of 0.006 is significant, and the inference about translation errors (C99) is biologically plausible. However, with only 171 total tRNA mutations (C96), the expected number of 7.6 anticodon mutations is relatively small, so this result, while suggestive, would benefit from larger sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Among 1675 cancer samples, 976 (58.3%) harbored at least one mtDNA substitution, with 63.4% not registered in polymorphism databases. Mutations showed 6.9-fold higher recurrence than expected by chance (p<10\u207b\u00b9\u2070), and 62.5% of phased mutation pairs were linked on the same genome, with 73.3% showing temporal ordering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 describe the mutation catalog characteristics with specific quantitative data. The high recurrence rate (C44-C45) and phasing analysis (C47-C49) provide evidence for non-random mutation patterns. The comparison with polymorphism databases (C42-C43) supports somatic origin. The temporal ordering of linked mutations (C49) is particularly interesting for understanding clonal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The number of mtDNA substitutions varied significantly by tumor type (p=4.4\u00d710\u207b\u2075\u00b2), with gastric, hepatocellular, prostate, and colorectal cancers having the highest burdens and hematologic cancers the lowest. In breast cancers, mutation burden positively correlated with age at diagnosis (p=0.0004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe tumor-type variation with strong statistical support (p=4.4\u00d710\u207b\u2075\u00b2). The age correlation in breast cancer (C53) provides evidence linking mutation burden to mitochondrial generations. The statistical analysis appropriately corrected for confounding variables like sequencing coverage (C50). The biological interpretation is reasonable though alternative explanations exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Analysis of 73 paired primary-metastatic samples revealed mutations can occur throughout tumor evolution, with 49 mutations found only in metastases, 49 only in primaries, and 71 shared (25 showing drift). Modeling predicts approximately 1 homoplasmic mutation per 1000 cell generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 describe temporal dynamics of mtDNA mutations through paired sample analysis. The presence of metastasis-specific mutations (C104) supports ongoing mutation accumulation (C107). The modeling (C108) provides quantitative predictions, though it relies on simplified assumptions about mitochondrial dynamics. The data support the conclusion but the model could be more sophisticated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The endogenous mtDNA mutational mechanism dominates over external mutagens. No UV signature was detected in melanomas, no tobacco signature in lung cancers, and BRCA mutations showed no effect on mtDNA. G:C>T:A transversions (ROS signature) constituted only 4.0% of mutations, indicating ROS is not the primary mutational source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C109-C113, C116-C118 demonstrate absence of exogenous mutagen signatures through multiple comparisons shown in Figure 5C. The low frequency of ROS-associated transversions (C118) contradicts previous hypotheses (C116). The inference that endogenous rates swamp exogenous signals (C113) is supported by evolutionary simulations. This is a strong negative result with important mechanistic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C42",
+      "C43"
+    ],
+    "result": "The majority of identified variants are genuinely somatic rather than inherited heteroplasmy, supported by 73.3% of phased mutation pairs showing sub-clonal relationships and 63.4% of mutations not being registered in polymorphism databases (vs 0.05% for shared tumor-normal variants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115, C42-C43 address the critical question of whether variants are somatic or inherited. The phasing analysis showing temporal separation (C115) and dramatic difference in database registration rates (C42 vs C43, p<10\u207b\u00b9\u2070) provide strong evidence for somatic origin. However, the authors acknowledge this cannot definitively distinguish pre- vs post-transformation mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Three potential replication-coupled mechanisms are proposed to explain the mutational signature: cytosine/adenine deamination of the displaced single-stranded H strand, preferential POLG replication errors on the leading strand, and differential repair efficiency between leading and lagging strands. The pattern is consistent with bidirectional replication initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C123 propose mechanistic explanations for the observed signature. While these mechanisms are biochemically plausible and cited from relevant literature, they remain speculative (evidence_type: SPECULATION). The consistency with bidirectional replication (C123) is supported by the D-loop reversal, but the relative contributions of the three proposed mechanisms are not experimentally determined. This requires future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Among 1907 somatic substitutions, 16 (0.8%) overlapped with known disease-associated mtDNA mutations (MELAS, LHON), and 10 mutations showed significantly higher recurrence than expected from background signature, though positive selection remains uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 identify potentially functional mutations but acknowledge uncertainty about positive selection. The overlap with disease mutations (C100) is interesting but represents a very small fraction. The higher-than-expected recurrence (C101) could reflect selection or unmodeled mutational hotspots. The authors appropriately express uncertainty, and this finding requires functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The 3% VAF threshold eliminates risk of miscalls from nuclear mitochondrial pseudogenes (NuMTs) because mtDNA copy numbers are 100-1000\u00d7 higher than nuclear genomes and sequence homology with NuMTs is generally <95% (96 of 101 NuMTs >300bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 justify the methodological approach to avoid NuMT contamination. The copy number difference (C38) and sequence divergence (C39) provide strong rationale for the 3% threshold. This is a critical quality control measure that is well-justified, though the threshold choice could be more explicitly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C81"
+    ],
+    "result": "The study identified 109 somatic insertions and 142 somatic deletions, with 110 indels occurring within protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131, C81 report indel counts from the mutation catalog. These are straightforward descriptive statistics supported by Supplementary file 2. However, indels receive minimal analysis compared to substitutions, and their functional significance is not thoroughly explored beyond the frameshift analysis in C92.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims establish mitochondrial biology context: human cells contain hundreds to thousands of mitochondria with 16,569 bp circular genomes, mitochondria evolved from \u03b1-proteobacteria, the H strand is guanine-rich with 12/13 protein-coding genes, and previous cancer mtDNA studies had limited sample sizes or suggested uncertain positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C30 provide established background knowledge from cited literature. These are appropriately cited general knowledge claims (C12-C24) and accurate characterizations of prior work (C25-C30). They establish context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "171 mtDNA substitutions were found in tRNA sequences, very similar to the expected number of 168.2 (p=0.82) from the mutational signature, indicating tRNA genes mutate at the background rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 show tRNA mutations occur at expected rates with no evidence of selection (p=0.82). This is a straightforward statistical comparison that supports the overall neutral evolution model. Combined with the anticodon depletion (C98), it suggests selection acts specifically on functionally critical sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "The observation that most mtDNA mutations are passengers is consistent with nuclear genomes, where fewer than 100 of thousands of somatic mutations typically confer selective advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 provides comparative context from nuclear genome studies (Stratton et al., 2009). This is an appropriate comparison that places the mtDNA findings in broader cancer genomics context, though it is cited knowledge rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1385 @@
+{
+  "submission": {
+    "id": "c896982c-7858-472e-90ac-eda50ca4340d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:46:23.069375Z",
+    "updated_at": "2025-11-28T21:46:23.069375Z"
+  },
+  "content": [
+    {
+      "id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "submission_id": "c896982c-7858-472e-90ac-eda50ca4340d",
+      "content_type": "manuscript",
+      "content_text": "# Evolving a 24-hr oscillator in budding yeast\n\n## Authors\n\n- Gregg A Wildenberg<sup>1</sup> \u2020\n- Andrew W Murray<sup>1</sup>\n\n### Affiliations\n\n1. Faculty of Arts and Sciences Center for Systems Biology Harvard University Cambridge United States\n2. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe asked how a new, complex trait evolves by selecting for diurnal oscillations in the budding yeast, Saccharomyces cerevisiae. We expressed yellow fluorescent protein (YFP) from a yeast promoter and selected for a regular alternation between low and high fluorescence over a 24-hr period. This selection produced changes in cell adhesion rather than YFP expression: clonal populations oscillated between single cells and multicellular clumps. The oscillations are not a response to environmental cues and continue for at least three cycles in a constant environment. We identified eight putative causative mutations in one clone and recreated the evolved phenotype in the ancestral strain. The mutated genes lack obvious relationships to each other, but multiple lineages change from the haploid to the diploid pattern of gene expression. We show that a novel, complex phenotype can evolve by small sets of mutations in genes whose molecular functions appear to be unrelated to each other.\n\n## Introduction\n\nBiological oscillators demand dynamical interactions between multiple components and have evolved many times to drive various behaviors, from heartbeats, on the timescale of seconds, to circadian clocks and seasonal clocks, on the time scale of days and years. The budding yeast, Saccharomyces cerevisiae, lacks homologs to genes that make up the core oscillator or light-sensing pathways of fungal circadian rhythms (Brunner and Kaldi, 2008; Idnurm and Heitman, 2010; Salichos and Rokas, 2010) and does not display any 24-hr behavior capable of sustained autonomous oscillations in a constant environment (Eelderink-Chen et al., 2010; Robertson et al., 2013). As an example of a novel trait, we evolved a 24-hr oscillator in the budding yeast to determine how biologically complex machinery could evolve from proteins and signaling networks that lack any known connection to oscillatory behavior. Because circadian clocks can be entrained by environmental signals and have a temperature-independent period, whereas the behavior we have evolved represents an autonomous oscillator with a period of roughly 24 hr that controls a biological output, we refer to the circuit we have evolved as a diurnal oscillator, referring to its period, rather than the distinction between day and night.\n\n## Results\n\nOur initial goal was to use fluorescence activated cell sorting (FACS) and fluorescent reporters to select for diurnal regulation of gene expression. We expressed yellow fluorescent protein (YFP) from the promoter of the FLO1 gene (Verstrepen et al., 2005; Rando and Verstrepen, 2007; Verstrepen and Fink, 2009) and elevated the mutation rate about 100-fold by mutating the proof-reading activity of DNA polymerase \u2202 (POL3) (Jin et al., 2005). We used FACS to select for variation in YFP fluorescence over a 24-hr period: each cycle began with selection of the dimmest events, the selected cells were allowed to proliferate, and the population was then selected, 10 hr later; for the brightest events, the selected cells were allowed to proliferate, and the dimmest events were selected, 14 hr later, completing the cycle (Figure 1A). We evolved two parallel populations using two different strengths of selection: the top and bottom 6% (E6) or 15% (E15) of the events detected by FACS. The selected cells proliferated for roughly six divisions before the next selection. Our scheme selects for synchrony rather than entrainment: twice a day, we select the cells with high or low fluorescence, rather than varying an environmental cue and selecting for a response to it. The human analogy would be to go to a large, international airport and select only those travelers who had arrived from the same time zone, rather than taking all newly arrived passengers and using alternating light and dark cycles to entrain their clocks over a period of several days.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig1-v2.jpg)\n\n**Figure 1.:** (A) Selection scheme for a 24-hr oscillator: cells were collected from the dimmest 6% (E6) of the distribution of YFP fluorescing events, grown exponentially at <1 \u00d7 106 cells/ml for \u223c10 hr and then the brightest 6% of events were collected and the cells in this population were grown for \u223c14 hr at <1 \u00d7 106 cells/ml. The selection cycle was repeated for 30 days. The E15 population was evolved in the same manner, but the dimmest and brightest 15% of events were collected in the two phases of the selection. (B) Scheme for synchronizing YFP oscillations from an unsynchronized population: the dimmest events from an unsynchronized population (blue box) are collected, thus selecting for cells at the single cell phase of the oscillation. After 10 hr of growth, distributions are first recorded and the brightest YFP events (clump of cells) are collected, grown for 14 hr, distributions are recorded again and the dimmest events are selected to complete the cycle. This cycle is repeated to keep the population maximally synchronized. The dashed red lines represent the fluorescence distribution of the ancestral population. (C) Representative density plots showing oscillations in YFP fluorescence of a FACS-synchronized sample of the E6 and E15 populations after terminating the selection, and a clone isolated from E6 (E6-1). The red outline overlay shows the average ancestral distribution. (D) Representative DIC images of synchronized populations immediately before FACS selection for low (single-cell phase) and high (multi-cell phase) YFP fluorescence.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative density plots showing RFP oscillations of a FACS-synchronized sample of the final E6/E15 populations and a clone isolated from E6 (E6-1). (B) Ancestor cells expressing cerulean fluorescent protein (CFP+) were mixed with the populations E6, E15 and the clone E6-1 (none of which expressed CFP, (CFP\u2212)), sonicated to single cells, and imaged. There are no detectable changes in YFP or RFP levels, per cell, between ancestral and evolved populations. YFP cannot be detected by microscopy in any strain. (C) Representative YFP density plots of E6-1 cells either synchronized by FACS (synch) or passaged through the FACS by collecting cells from the entire YFP distribution (unsynch) at identical 10 and 14-hr intervals for 3 days. (D) Oscillations were quantified by calculating the log(F75/F25) ratio of synchronized and unsynchronized cultures of E6-1. See Figure 3A for a definition of the F75:F25 ratio.\n\nAfter 30 days of selection, the intensity distributions resulting from the selections for high and low fluorescence differed. To analyze the behavior of the evolved populations in more detail, we cultured them from stocks frozen that had been prepared at the end of the original selection. When they are first thawed, these populations are asynchronous, presumably because the manipulations associated with freezing and thawing disrupt the synchrony between the oscillations of different individuals. We therefore subjected these cultures to the same, twice daily, selection used for the evolution: the dimmest events are collected, cells are allowed to proliferate for 10 hr, the population distribution of fluorescence is recorded by FACS, and the brightest events are collected. After 14 hr of proliferation, distributions are recorded, and the dimmest events are collected to complete the cycle (Figure 1B). This protocol is a form of selection synchrony: it synchronizes a population by selecting those members that are at the peaks and troughs of a cycle of fluorescence intensity, rather than by applying a stimulus that alters the phase of the oscillations until all members of the population have the same phase (induction synchrony or entrainment). After synchronization, both evolved populations showed a cyclical change in the fluorescence distribution, with the E6 population giving larger shifts than the less strongly selected E15 (Figure 1C). It takes more cycles of synchronization of E15 to achieve the full amplitude of daily oscillation than it does for E6, which is largely synchronized within 24 hr of selection.\n\nOur starting strain also contained red fluorescent protein (RFP) under the control of the ACT1 (actin) promoter, allowing us to ask if RFP fluorescence, which had not been selected on, also cycled. To our surprise, the distribution of RFP also cycled (Figure 1\u2014figure supplement 1A), prompting us to examine the cells at different phases of the cycle. Just before their scheduled selection for low fluorescence, the population was predominantly single-celled, and just before their selection for high fluorescence, most cells were in multicellular clumps (Figure 1D). The fluorescence per cell is constant over 24 hr, for both YFP and RFP, and thus the cyclical variation in intensity seen by FACS is entirely due to changes in cell association (Figure 1\u2014figure supplement 1B). Because we see similar fluctuations in the fluorescence from PACT1-RFP as we do from PFLO1-YFP, we believe that we would have selected for oscillations in cell aggregation with any promoter that drove the expression of a fluorescent protein to levels that were sufficient for our FACS-based selection.\n\nThe cyclical behavior of our evolved populations could be due to interactions between two or more different genotypes. To eliminate this possibility, we isolated and analyzed fifteen clones from each population after subjecting them to FACS-based synchronization: all 30 clones produced strong oscillations in YFP and RFP distributions, and we analyzed the clone that showed the strongest oscillations (E6-1) in detail (Figure 1C,D). Except for the free-run experiments, described later in the paper, all other experiments examined populations that were subject to FACS-based selection twice a day with a 10-hr interval between the selection for the dimmest and brightest events and a 14-hr interval between the selection for the brightest and dimmest events.\n\nThe cycle is not a response to daily variations in environmental factors such as temperature. If populations were responding to environmental fluctuations, they should eventually synchronize in response to these fluctuations. To look for this behavior, we subdivided a single population of clone E6-1 and subjected it to two different treatments: synchronizing it by FACS selection, as described above, or subjecting it to identical manipulations, except that we collected all the events that passed through the FACS, without regard to their fluorescence intensity. The first population oscillated, showing primarily single cells just before the selection for low YFP fluorescence, and primarily clumps just before the selection for high YFP fluorescence, whereas the unsynchronized population showed very similar distributions at these two times (Figure 1\u2014figure supplement 1C, D). We conclude that we have evolved a cyclical change in cell association with a period of about 24 hr, and cells that show this oscillation can be synchronized by selecting on their level of fluorescence as a proxy for the number of cells in a clump.\n\nTo analyze the oscillations in cell association, we followed the behavior of E6-1 cells grown at low population density using two different labels. The first, cerulean fluorescent protein (CFP) was expressed from a constitutive promoter (PACT1) to distinguish two genetically identical subclones: one expressed CFP (CFP+) and the other did not (CFP\u2212). The second was introduced by labeling cells, just after FACS selection, by covalently linking Oregon Green 488-X, a yellow fluorescent molecule, to their cell walls (Hoch et al., 2005). Because a daughter\u2019s cell wall is entirely new, the original cells retain the yellow label and their daughters are unlabeled (Barral et al., 2000). We followed these cultures as they proliferated and eventually switched to the other phase of the morphological oscillation (Figure 2A,B and Figure 2\u2014figure supplement 1A). Single cells that were selected for by sorting for low YFP fluorescence and covalently labeled (T = 0 hr), proliferated to become clumps composed of a single yellow cell surrounded with non-yellow cells that had the same CFP expression state as the original single cell. The absence of clumps containing more than one yellow cell or both CFP+ and CFP\u2212 cells in the same clump shows that cells emerging from the single-cell phase build lineage-based clumps. Consistent with this interpretation, we saw synchronous oscillations in cell association even at very high dilution (\u223c103 cells/ml). Multicellular clumps, which were covalently labeled at the time of peak aggregation gave rise to single cells by a combination of two mechanisms: fragmenting to produce smaller clumps and proliferating to produce single-celled offspring. Smaller clumps consisting of yellow cells and newly born non-yellow cells were observed 3 hr after (T = 13 hr) the peak aggregation time (10 hr). By 18 hr, the population was a mixture of medium-sized and smaller clumps and single cells, and by 24 hr non-yellow, single cells, and small clumps were the bulk of the population, representing the completion of one cycle. When unsynchronized CFP+ and CFP\u2212 subclones were sonicated to break up all the clumps and cultured together for 90 min, clumps that re-associated were composed of a mixture of CFP+ and CFP\u2212 cells showing that clumps form by cells sticking together rather than failing to separate after division (Figure 2\u2014figure supplement 1B). These results show that cells oscillate between two states over a 24-hr period: single cells produce offspring that immediately stick to their mothers to assemble a lineage-based clump, which later produces a population of single cells and small clumps as a result of clumps fragmenting and producing single cells which divide to produce a mixture of small clumps and single cells (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative images of a synchronized E6-1 population at different points through the 24-hr cycle. The experiment contained two genetically similar subclones, one expressing cerulean fluorescent protein (CFP+) and the other not (CFP\u2212). After FACS selection (0 and 10 hr) cell walls were covalently labeled with Oregon Green 488-x N-hydroxy succinimidyl ester, making them fluoresce brightly. Yellow-labeled single cells give rise to the multicellular phase by sticking to their daughters and clumps of different lineages do not mix (i.e., there are no CFP clumps with both CFP+ and CFP\u2212 cells). Labeled clumps give rise to single cells and smaller clumps by clump fragmentation and producing single-celled daughters. Time scale is in reference to the initial collection of single cells (Low YFP selection, T = 0 hr) over a 24-hr period. (B) The population from the experiment described in (A) was quantified by calculating the frequency of clumps containing 1\u20134, 5\u201310, and >10 cells. There is a synchronous rise in clump size during the transition from single cells to clumps and a gradual decay of clump sizes during the transition from clumps to single cells. (C) Schematic representation of oscillator dynamics: single cells give rise to the multicellular phase by sticking to their progeny to form a lineage-based clump. At the peak multicellular phase, clumps give rise to the single cell phase by fragmentation and producing single-celled daughters some of which adhere to their progeny to produce small clumps.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Low magnification images of synchronized E6-1 cultures that contained two subclones, one labeled with CFP (CFP+) and one without CFP (CFP\u2212). Single cells that were selected as dim events by FACS and whose cell walls were labeled with Oregon green 488-X assemble a lineage-based clump and do not adhere to other cell lineages (i.e., no CFP (+/\u2212) clumps) (left panels). At the peak multicellular phase, clumps were labeled with Oregon green 488-X and followed. These cells give rise to the single cell stage by fragmenting and producing non-adherent daughters so that the majority of the population is single celled by the end of the complete, 24-hr cycle (right panels). (B) Schematic of the mixing experiment performed by mixing, sonicating, and incubating asynchronous CFP+ and CFP\u2212 populations: cell separation defects will result in single colored clumps but adhesive cells will stick non-specifically to each other and produce clumps containing cells of both colors. Representative image of a single clump (white outline) showing E6-1 cells form clumps by adhering to each other.\n\nBecause we typically sort populations twice every 24 hr, their behavior could reflect a damped oscillation, driven by selection, rather than a true oscillator, which should continue to cycle, even in the absence of selection. We therefore asked if our synchronized populations could free run: continue to oscillate in the absence of both entraining signals and periodic selection for cells in particular phases of the oscillation. We performed two experiments: one on populations and another to follow lineages initiating from single cells. In the population experiment, E6-1 was subjected to three different conditions. (1) Unsynchronized: cells that had been passaged without earlier synchronization were passed through the FACS machine and diluted twice every 24 hr, with intervals of 10 and 14 hr between the two dilutions, but all cells that passed through the FACS machine were collected, regardless of their fluorescence level and then diluted. (2) Synchronized: a population was synchronized by selection for 3 days with selection at alternating 10 and 14 hr intervals. The culture was synchronized by FACS for another 3 days, by FACS selection and dilution twice every 24 hr, with intervals of 10 and 14 hr between the two dilutions. (3) Free run: a population was synchronized by selection for 3 days at 10:14-hr intervals. After 3 days of synchronization (marked by a dotted line), this culture was not subject to FACs but was simply diluted twice every 24 hr, with intervals of 10 and 14 hr between the two dilutions for an additional 3 days. The initial, synchronized population used to start the free run was the same one that was used to start the population with continuing synchronization. Thus, all three conditions were diluted with intervals of 10 and 14 hr between the two daily dilutions and maintained at a density that allowed continual exponential proliferation. The free run populations continued to show detectable oscillations, which were undetectable in a control population that had not been synchronized (Unsynch) (Figure 3A). We next monitored how individual lineages oscillate without any prior FACS-based synchronization. A single cell was grown in a well of a 96-well plate and imaged every 3.5 hr. After 24 hr, the resulting population was collected and diluted back to single objects, regardless of clump size, into three separate new wells and followed every 3.5 hr for another 24 hr. This procedure was repeated one more time for each lineage (i.e., 3 cells from each of 3 sub-lineages) for a third day, as shown by the cartoon in Figure 3B. This protocol dilutes cells once every 24 hr to keep cells in exponential growth throughout the experiment. Cell lineages produced sustained oscillations for 3 days (Figure 3C) with many lineages remaining in phase with each other. In some lineages, their phase shifted within a 24-hr period, but the overall period, over 3 cycles was approximately 24 hr. These results suggest that we have evolved an autonomous oscillator capable of sustained oscillations in the absence of an environmental stimulus.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig3-v2.jpg)\n\n**Figure 3.:** (A) Three populations were compared. (1) Unsynchronized: cells that had been passaged without earlier synchronization were passed through the FACS machine and diluted twice every 24 hr, with intervals of 10 and 14 hr between the two dilutions, but all cells that passed through the FACS machine were collected, regardless of their fluorescence level and then diluted. (2) Synchronized: a population was synchronized by selection for 3 days with selection at alternating 10 and 14 hr intervals. The culture was synchronized by FACS for another 3 days, by FACS selection and dilution twice every 24 hr, with intervals of 10 and 14 hr between the two dilutions. (3) Free run: a population was synchronized by selection for 3 days at 10:14 hr intervals. After 3 days of synchronization (marked by a dotted line), this culture was not subject to FACs but was simply diluted twice every 24 hr, with intervals of 10 and 14 hr between the two dilutions for an additional 3 days. All populations were diluted to ensure the population always reached the same final, pre-dilution density of \u223c 3 \u00d7 105 cells/ml, well below the density that corresponds to the end of mid-log phase growth for budding yeast (3 \u00d7 107 cells/ml). The initial, synchronized population used to start the free run was the same one that was used to start the population with continuing synchronization (Synch). The measured variable, F75/F25 is based on the distribution of fluorescence and pulse widths at each time point. For both measurements, the lowest value is set to 0% and the highest to 100%, with values scaled linearly in between and the number of events that lie between 0 and 25% for both fluorescence intensity and pulse width is counted as F25, and the number of events that lie between 75 and 100% for both fluorescence intensity and pulse width is counted as F75, and we plot log(F75/F25). (B) Schematic of the protocol for analyzing individual lineages. A single cell is deposited in a microtiter well, and its progeny are observed every 3.5 hr for 24 hr, before taking 3 objects randomly (single cells or cell clumps), and depositing them in fresh wells, observing for 24 hr, and finally taking 3 objects randomly (cells or cell clumps), from each of the three wells and depositing them in fresh wells, and observing for 24 hr. (C) Individual traces of lineages originating from three separate cells (Lineage 1, 2, 3). An unsynchronized population was used to establish lineages that arose from single cells, which were diluted once every 24 hr and never experienced any FACS synchronization. A single cell was placed in 100 \u00b5l of medium in a microtiter well and allowed to proliferate for 24 hr that corresponds to a maximum of 16 divisions, a 64,000-fold increase in cell density from 10 cells/ml to 640,000 cells/ml, more than 40-fold below the density at which the exponential rate of cell proliferation starts to fall. Individual cells and clumps were imaged every 3.5 hr for 72 hr. At each time point, at least 50% of the cells and clumps in the wells were imaged and the average two-dimensional area was calculated. All lineages produce approximately 24-hr oscillations without any FACS-based synchronization. Some lineages alter their phase but continue to produce \u223c24-hr oscillations.\n\nBecause there could be multiple oscillating lineages, each with a different genetic basis, in our evolved population, we analyzed the behavior of four individual clones from the E6 population, focusing on the clone E6-1. We used bulk segregant analysis (Yvert et al., 2003; Segre et al., 2006; Birkeland et al., 2010; Koschwanez et al., 2013) to find candidates for the mutations that caused E6-1 to oscillate and verified them by engineering them into the ancestral, un-evolved strain. We began by crossing the evolved clone to its ancestor, putting the resulting diploid through meiosis, selecting for 24-hr oscillations on the resulting spores to isolate a pool of haploid progeny that showed robust cycling, and sequencing this pool's genomic DNA at high coverage. The full set of mutations needed to cause cycling should be present in the vast majority of the selected progeny, whereas the allele frequency of the neutral mutations that have accumulated during evolution should be \u223c50% (Birkeland et al., 2010; Koschwanez et al., 2013). We classified eight mutations that were present in \u226595% of the selected cells as putative causal mutations (Figure 4A). We recreated the evolved oscillator by engineering these eight mutations into a wild type laboratory strain. After synchronization, the oscillations of the recreated strain are indistinguishable from those of E6-1 (Figure 4B) and produce a similar free run behavior as E6-1 both as populations (Figure 4C) and as single lineages (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig4-v2.jpg)\n\n**Figure 4.:** (A) Table of putative causal mutations. The mutations lie in the coding regions of the genes, and the allele number indicates the amino acid substitution that results. An asterisk denotes creation of a stop codon before the midpoint of the open reading frame. (B) The eight putative causal mutations were engineered into a wild type laboratory strain (Recreated), which was synchronized and its oscillations were compared to the evolved E6-1 clone by plotting the log(F75/F25), as explained in the legend to Figure 3A. (C) The recreated strain shows a similar ability to oscillate without selection as the evolved clone E6-1. Both cultures were synchronized by FACS for 3 days (only the last cycle is shown) and then allowed to free run by growing them exponentially at a constant temperature in the dark. (D) Individual lineages produce 24-hr oscillations in the absence of FACS-synchronization when subjected to the protocol described in Figure 3B.\n\nWe performed three tests to investigate the role of the different mutations in producing the evolved phenotype: deleting the mutated gene, replacing it with a wild-type allele, and investigating selection for or against the mutant allele when we selected for different levels of cell association. We investigated the role of removing genes because two of the causative mutations were stop codons, suggesting that other causative mutations might also inactivate the genes in which they occurred. Each causative mutation could be individually replaced by a gene deletion without destroying the oscillation (Figure 5A). For each of these single gene deletions, the corresponding wild-type version of the same gene was added back and tested for oscillations. Surprisingly, only two genes substantially altered the oscillations: SIR4 made E6-1 single-celled and YJL070C produced constitutive clumps (Figure 5B). To determine how the mutations whose wild-type expression had no effect were contributing to the oscillator, pools of spores from a diploid heterozygous for the eight mutations were selected for four \u2018sub-traits\u2019 of the oscillator: batch culture was used to select for exponential growth and FACS to select for constitutive clumps, single cells, and stochastic clumping. After 5 days of selection, the eight mutations were PCR amplified and Sanger sequenced from genomic DNA of the surviving pool of spores to estimate the frequency of the ancestral and evolved allele (Koschwanez et al., 2013) (Figure 5C). In three independent replicate experiments, sir4-100 was selected for in all conditions, scw11-E261* was selected for in constitutive clumps, and three mutations, vps5-S520L, pet127-D650N, and whi2-R127* were positively selected for in single cells and selected against in clumping cells. Different combinations of HBN1, IDS2, and YJL070C were selected for between replicate experiments in both clumping and single cell sub-traits, making it hard to assess their significance. Because of this variability, and the absence of a phenotype when HBN1 or IDS2 were either deleted or replaced with wild-type genes, it is unclear if these genes are required for the evolved oscillations, and if they are, how they contribute to them.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig5-v2.jpg)\n\n**Figure 5.:** (A) Genes containing causal mutations were individually deleted in E6-1 and tested for oscillations after applying the standard synchronization protocol to an unsynchronized culture. The metric for oscillation, F75/F25 is described in the legend to Figure 3A. (B) E6-1 strains containing a wild type copy (WT) of the indicated gene, at the LEU2 locus, and deletion of the mutant allele from its endogenous locus were tested for oscillations after applying the standard synchronization protocol to an unsynchronized culture. (C) Effect of different mutant alleles on oscillator subtraits. The recreated strain was crossed to the ancestor to generate a pool of spores carrying all possible combinations of the wild type and evolved alleles at the genes that harbored putative causal mutations in clone E6-1. After selection, genomic DNA from the surviving spores was purified and the eight loci were PCR amplified and Sanger sequenced to estimate the relative frequency of the wild type and mutated alleles. (D) Gene expression changes in clone E6-1, relative to its ancestor. Six asynchronous E6-1 samples were analyzed as replicates against six aggregated ancestor samples. Haploid-specific genes (hsg), shown in red, are amongst the most repressed genes of E6-1. Overexpressed genes in the E6-1 are distributed among a variety of cellular processes. Data reported as the log2 ratio of E6-1 and ancestor fragments per kilobase per million fragments mapped (FPKM).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Mating competency was used as a proxy for expression of haploid specific genes. Strains were crossed to MATa or MAT\u03b1 tester strains and replica-plated to media that selects for successful mating. E6-1 cannot mate because it has lost haploid-gene expression but deletion of HML\u03b1 (hml\u03b1\u0394) restores haploid gene expression as assayed by restored mating ability. (B) Representative DIC images of unsynchronized populations. Deletion of HML\u03b1 in E6-1 reduces the frequency of large multicellular aggregates to a level indistinguishable from the ancestor.\n\nThe nature of the mutated genes does not produce simple hypotheses for the mechanism of the oscillator: they have a wide range of molecular functions and no pair of them has a previously described functional relationship. In search of other clues, we measured gene expression to look for changes in E6-1. We performed two comparisons. The first was between synchronous and asynchronous populations. We isolated RNA at the same times from three cultures: the peak periods of single cells and multicellular clumps for a synchronized E6-1 culture, an unsynchronized E6-1 culture passaged through the FACS machine, but without sorting, and an ancestral population subjected to the synchronization protocol. We compared each population to the other two and failed to find a significant excess of genes that appeared to cycle in the evolved, synchronized population.\n\nThe second comparison was to examine the mean expression of genes in the evolved and the ancestral populations. There were 155 genes whose expression differed between the ancestral and evolved populations (Figure 5D and Figure 5\u2014source data 1). The most striking of these were genes involved in sexual behavior. Haploid-specific genes (hsg), which are normally expressed in haploids and repressed in diploids, were repressed in the evolved clone; 8 of the 10 most strongly repressed genes were haploid-specific. This phenotype is due to the causal mutation that inactivates SIR4, a gene required for transcriptional silencing of sub-telomeric genes, and the mating genes at the two silenced loci, HML\u03b1 and HMRa (Rine and Herskowitz, 1987; Herskowitz, 1988; Pillus and Rine, 1989). In sir4 cells, the expression of a and \u03b1 information from these two loci mimics a diploid cell and represses haploid-specific genes. Consistent with the effect of expressing SIR4 in E6-1, deleting HML\u03b1 from the evolved clone, which removes the only source of \u03b1 information restores the haploid pattern of gene expression and eliminates cell clumping (Figure 5\u2014figure supplement 1A,B).\n\nWe investigated the evolutionary trajectory of the E6 population by asking when the causative mutations found in the E6-1 clone appeared and how widespread they were by the end of our evolution. Each mutation was PCR amplified and Sanger sequenced at different time points over the course of the evolution to determine its frequency to an accuracy of roughly 10%. None of the mutations in E6-1 reached a frequency above 0.4, two were undetectable in the overall population, and the remaining six were first detected between 12 and 30 days of evolution (Figure 6A). The low allele frequencies at the final time point of our evolution have two possible interpretations: the evolved population contains a single oscillating lineage, which has yet to eliminate a substantial fraction of non-oscillating lineages, or it is a mixture of genetically distinct oscillator lineages. All the clones from the evolved populations cycled suggesting that the populations have multiple lineages. We therefore performed bulk segregant analysis on three additional clones from the strongly selected population (E6-2,3,4) (Figure 6B and Figure 6\u2014source data 1A). Our results show that two cycling populations have evolved entirely independent, and each of these has split into two subpopulations. E6-2 contained 6 of the 8 causative mutations found in E6-1 and had three additional putative causative mutations. E6-3 and E6-4 share three mutations, but have no mutations in common with the lineage that produced E6-1 and E6-2. Analyzing the entire open reading frame of WHI2, the one gene that was mutated in all 4 sequenced clones, suggests that there are at least five independently evolved oscillators in the E6 and E15 populations, since one population (E6) contains 2 mutant and one wild-type allele, and the other contains one mutant and one wild-type allele (Figure 6\u2014source data 1B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04875/elife-04875-fig6-v2.jpg)\n\n**Figure 6.:** (A) The frequencies of the causal mutations found in E6-1 were measured by Sanger sequencing a region surrounding each mutation from frozen stocks of the E6 population taken at the indicated times during the experimental evolution. The frequencies of yjl070c-S188G and pet127-D650N were too low to measure by Sanger sequencing, whose detection threshold is an allele frequency of 10%. (B) Bulk segregant analysis and whole genome sequencing on three other isolates from the E6 population. Mutations that segregated at frequencies above 0.95 in at least one lineage are listed. All four clones contain a mutation in WHI2, but the mutation in E6-1 and E6-2 is a different allele from that in E6-3 and E6-4. Mutations with asterisks did not segregate above 95% in both lineages: WHI2-101 segregated at 80% in E6-2 and TPS1 segregated at 88% in E6-3. Given the read depth, the probability of producing these deviations from the expected frequency of a non-causal mutation (0.5) by chance is 6 \u00d7 10\u22125 and 3 \u00d7 10\u22128, respectively. (C) Quantitative PCR (qPCR) was used to compare the mRNA abundance of the two genes at HML\u03b1, which encodes two regulators of mating type- and haploid-specific gene (hsg) expression, and three representative haploid-specific genes from eight clones (E6-1,2,3,4,5 and E15-1,2,3) to the ancestor. All eight clones have increased gene expression from HML\u03b1 and reduced haploid-specific gene expression. (D) The importance of repressing haploid-specific gene expression for the evolved phenotype was assessed by comparing cells that expressed both alleles of the mating type information (HML\u03b1) to cells that expressed only MATa information (hml\u03b1\u0394). The frequency of clumps larger than 3 to 4 cells was compared in asynchronous cultures of HML\u03b1 and hml\u03b1\u0394 derivatives of each clone. Four clones from E15 and three from E6 cannot form clumps when HML\u03b1 is deleted. E6-5 was unaffected by deletion of HML\u03b1.\n\nWe asked whether the oscillations in other lineages also depend on the silencing of haploid specific genes. We measured mRNA levels of the two genes in HML\u03b1, one of which, HML\u03b12, inhibits haploid-specific gene expression, and three representative haploid-specific genes in eight other clones derived from our two evolved populations (E6 and E15). All nine clones have increased expression of HML\u03b1 and reduced expression of haploid-specific genes when compared to the ancestor (Figure 6C). Furthermore, deleting HML\u03b1 in these clones resulted in a loss of multicellular aggregates in all but one clone (Figure 6D, E6-5), even though only one of the clones (E6-2) has the sir4 allele found in E6-1.\n\n## Discussion\n\nDo the oscillations that we detect have any relationship to other oscillations that have been detected in budding yeast? Fluctuations in metabolic activity can be driven by temperature oscillations with a 24-hr period but rapidly die out at constant temperature (Eelderink-Chen et al., 2010), and a particular regime of growth to high density can induce prolonged metabolic oscillations whose period is 4\u20135 hr (Tu et al., 2005). We think it is unlikely that either of these cycles are connected to the behavior we observe: the 24-hr cycles do not free-run and the shorter cycles have the wrong period and can only be seen at cell densities higher than those that we used. We cannot, however, exclude the possibility that the behavior we see is the result of coupling changes in cell\u2013cell adhesion to a previously unknown circadian clock in budding yeast.\n\nHow similar is the diurnal oscillator we evolved to naturally occurring circadian clocks? All circadian clocks share four features: (1) a limit-cycle, cell autonomous cellular oscillator that continues to oscillate in the absence of environmental cues (free run); (2) the oscillator maintains a roughly 24-hr period over a range of temperatures (temperature compensation); (3) the period of the internal oscillator can be synchronized, or entrained, to the phase of a daily environmental cue (e.g., light, temperature); and (4) the ability to control cellular and organismal behavior (Young and Kay, 2001; Tauber et al., 2004; Bell-Pedersen et al., 2005; Rosbash, 2009). Our results show the yeast oscillator we evolved has two of these four behaviors: its roughly 24-hr period is maintained in the absence of environmental cues or selection on the output of the oscillator (Figures 2B, 3A, 3C, 4C, and 4D), and it regulates a cellular behavior, the ability of cells to form clumps. Further investigations are required to determine if the yeast oscillator uses the combination of positive and negative feedback loops that form the core of circadian clocks and could be evolved to be temperature-compensated and entrained by environmental signals.\n\nOur experiment shows that mutating genes in multiple, unrelated biochemical networks can produce evolutionary novelty and reveals that identifying adaptive mutations is often insufficient to explain the mechanism of these new phenotypes. The ability of multiple combinations of mutations to produce the same complex phenotype leads to two inferences. First, we know relatively little about the circuitry of many existing molecular pathways and evolving novel traits may help illuminate previously unknown connections between pathways. Second, that multiple mutations are capable of producing unexpected changes in cellular physiology by connecting previously unrelated pathways to produce new circuits. The few mutations that are shared between different oscillating lineages suggest that there are multiple, functionally different ways that such rearrangements can lead to the same phenotype.\n\nThe common loss of silencing despite little commonality in other mutated genes between evolved clones has two implications. First, it suggests that wild yeast may regulate their clumpiness during the diploid phase, which accounts for most of their life cycle, and that our evolved populations have exploited this regulation to respond to our selection for oscillatory behavior. Second, the independent evolution of the same trait appears to have a mixture of common and diverse features. All nine of the populations we examined have switched from the haploid- to the diploid-specific pattern of gene expression and all four lineages analyzed in detail have mutated WHI2. The repeated occurrence of these genetic changes suggests that they greatly increase the number of subsequent mutations that could lead to the appearance of an oscillator. Whether the later mutations act on a single pathway or multiple, different pathways will require the detailed dissection of the oscillator's mechanism. It would be interesting to determine whether a selection for oscillation in diploids, where the inactivation of genes requires two independent genetic changes, would take a similar trajectory and produce the same mechanism that we have uncovered in haploids.\n\nThe inconsistency among bulk segregant analysis, gene deletions and wild type reversions illustrates the difficulty in identifying the contribution of different mutations to a complex, evolved phenotype. We can nevertheless make inferences about the molecular underpinnings of evolutionary novelties. Four of the six mutations that are strongly identified as causal mutations are loss of function mutations. The mutations in SCW11 and WHI2 are nonsense mutations, whereas those in SIR4 and YJL070C can be replaced by gene deletions, but not by restoration of the wild-type gene. The preponderance of loss of function mutants suggests that sophisticated functions can be produced primarily by inactivating genes, rather than modifying or increasing their activities. Whether similar paths are followed in nature is likely to depend on the strength and unidirectionality of selection and the extent of antagonistic pleiotropy: the contrast between the benefits of a mutation in one environment and its costs in others. We speculate that short bursts of intense selection, such as those that occur when a species occupies a new and unoccupied niche, could lead to adaptation that is primarily driven by gene inactivation, whose short-term benefits exceeds its costs. These costs could later be reduced either by suppressor mutations that would minimize the harmful effects of loss of function mutations, while maintaining the evolved phenotype, or even by reversion of the original mutation, once the evolved phenotype had been stabilized by further mutations. Further investigation will be required to determine how often loss of function mutations participate in a variety of evolutionary processes, ranging from cancer to the formation of new species and forms of biological organization.\n\n## Materials and methods\n\n### S. cerevisiae strains\n\nThe W303 S. cerevisiae strain background was used for all experiments. Supplementary file 1 provides a detailed list of each strain used. Standard rich media (YPD) was used for all experiments: 2% Peptone, 2% D-Glucose, and 1% Yeast-Extract supplemented with Penicillin/Streptomycin (Sigma P0781).\n\n### Flow cytometry\n\nAnalysis and sorting was performed on a MoFlo Legacy (Dako Cytomation/Beckman Coulter) with two excitation lasers and respective filter settings: 488 nm-550/30, and 594 nm-630/40. FACS FCS files were exported as tab delimited files using FlowJo software and plotted using R.\n\n### Experimental evolution and clonal Isolation\n\nAncestral cells were inoculated into liquid media from a single colony and first grown for >12 hr in exponential phase at 30\u00b0C. At a fixed time of the day, cultures were centrifuged at 3000 rpm for 5\u201310 min and placed on ice. Cells were immediately brought to the FACS where \u223c5 \u00d7 105 cells were collected from the bottom 6% or 15% of the YFP distribution. Data were collected from the first several thousand cells to set the gates for the selection that immediately followed. Cells were grown at 30\u00b0C in 40 ml YPD in beveled flasks for \u223c10 hr rotating at 110 rpm, centrifuged, and placed on ice for FACS selection. \u223c5 \u00d7 105 cells were collected from the top 6% or 15% of the YFP distribution, grown at 30\u00b0C in beveled flasks containing 100 ml YPD for \u223c14 hr. This cycle was repeated for 30 continuous days. Cell densities were occasionally measured before FACS selection to ensure the population stayed below 1 \u00d7 106 cells/ml. A small portion of the evolving population was occasionally frozen in 15% glycerol to establish a historical record. After 30 days of selection, clonal lines were isolated by spotting single events with FACS from the top 6% or 15% of the YFP distribution onto YPD plates. Resulting colonies were restreaked again on YPD to ensure the colonies were from a single cell.\n\n### Synchronization of populations by FACS\n\nFor evolved populations, E6 and E15, a portion of the frozen stock was inoculated directly into liquid media and diluted to first grow exponentially overnight for >12 hr at 30\u00b0C. For clones, a single colony was inoculated into liquid media and diluted overnight for >12 hr, 30\u00b0C. At a fixed time of the day, which differed between different experiments, cells were centrifuged at 3000 rpm for 5\u201310 min, placed on ice, and immediately brought to the FACS machine. The dimmest 6\u201310% YFP expressing cells were collected from the unsynchronized population and grown in liquid media at <5 \u00d7 10^5 cells/ml for 10 hr at 30\u00b0C. Cells were then centrifuged, placed on ice, and brought to the FACS. Data were collected from the first several thousand cells to set the gates for the selection that immediately followed. The brightest 6\u201310% YFP cells were collected and grown at <5 \u00d7 10^5/ml for 14 hr at 30\u00b0C. Cells were prepared for FACS, data were collected while gates were set and the dimmest 6\u201310% YFP cells were collected to begin the next cycle. Unsynchronized populations were prepared for FACS in an identical manner to synchronized populations but cells were collected randomly from the entire YFP distribution. For free run experiments, populations were synchronized by FACS for 3 days and then split into two cultures. One culture was synchronized for another 3 days and the other was kept exponentially growing by transferring \u223c1 \u00d7 104 cells into fresh media and analyzing the remaining cells by FACS every 10 and 14 hr for 3 days.\n\n### Lineage oscillation free run\n\nA time 0 hr, a single cell was deposited into a well of a 96-well plate containing 10 \u00b5l of YPD and immediately imaged with an inverted microscope. 190 \u00b5l of YPD was slowly added to the well, and the plate was placed at 30\u00b0C, unshaken. Every 3.5 hr, the plate was removed from the incubator, gently tapped by hand, quickly imaged, and placed back at 30\u00b0C. After 24 hr, the cells were collected and three cells regardless of their clump size were randomly chosen from the population by depositing every 200th FACS event from the entire YFP distribution into new individual wells containing 10 \u00b5l of YPD. Cells were imaged and 190 \u00b5l of YPD was added to each well and placed at 30\u00b0C, unshaken and imaged every 3.5 hr as described above. After another 24 hr, the three populations were removed from the plate and three cells from each population were randomly deposited into new individual wells (9 total) using FACS as described above and imaged every 3.5 hr for 24 hr. For each time point, the average area of cell clumps was determined using ImageJ. A minimum of 250 cells were counted for each time point always making sure to count at least 50% of the population by choosing random fields of view to quantify.\n\n### qPCR\n\nqPCR was performed using published methods (Koschwanez et al., 2013).\n\n### Quartile plots of oscillations\n\nSee Figure 3A for a definition of the F75:F25 ratio.\n\n### Time course measurements of E6-1 clock mutations from the E6 population\n\nA small fraction of the glycerol stock from each time point of the evolved population was collected and genomic DNA was immediately purified. A small region (\u223c300 bp) surrounding each mutation was PCR amplified and Sanger sequenced. Frequencies were calculated as the ratio of the mutant and wild type peak heights on the sequencing electropherogram.\n\n### Microscopy\n\nExperimental procedures are described in the text. A description of the microscope and software used for acquisition is described elsewhere (Koschwanez et al., 2013). All images were modified for publication using imageJ.\n\n### Cell wall dye\n\nCells were centrifuged, washed twice in PBS, and incubated with 100 \u00b5g of Oregon Green 488X succinimidyl ester (Life Technologies) in 250 \u00b5l of 0.1 M Sodium Bicarbonate in PBS for 3 to 5 min at room temperature. Dye was quenched with an excess of YPD, cells centrifuged, washed, and resuspended in YPD.\n\n### Cell aggregate size comparisons\n\nFor Figure 6D, the ratio of cells above and below the pulse width (Picot et al., 2012) size of 14.5 \u00b5M polystyrene beads (Spherotech) was reported. To determine the clump size that corresponded to the pulse width of 14.5 \u00b5M beads, ancestor and E6-1 cells were collected by FACS onto a glass slide from a narrow gate that matched the 14.5 \u00b5M beads pulse width distribution. \u223c500 cells were scored for their clump size three separate times by eye with a microscope. The average clump size was the same for ancestor and E6-1 cells.\n\n### Bulk segregant analysis\n\nE6-1 was mated to yGW 556, a MAT\u03b1 derivative of its ancestor and the resulting diploid was put through meiosis. The resulting spores were released from the ascus by treating the population with 50 \u00b5l of 2 mg/ml zymolyase (Zymo Research) diluted in water for 1 hr at 30\u00b0C. 450 \u00b5l of 1% Triton X-100 diluted in water was added and cells were sonicated for 10\u201320 s. Cells were centrifuged at 6000 rpm for 1 min and resuspended in YPD and grown overnight in exponential phase. 5 \u00d7 105 spores were selected in bulk for oscillations in the same manner E6 was originally evolved. Because one of the causal mutations eliminates silencing of HML and HMR, the spores that can cycle are incapable of mating. After 10 days of selection, genomic DNA was purified from the remaining pool of cells and sequenced at high coverage. The frequency of mutations in the mapped reads was scored using published methods (Ares, 2012; Koschwanez et al., 2013). Six putative causal mutations were identified and engineered into a wild-type strain but were insufficient to recreate the oscillator phenotype. This strain was mated to E6-1, sporulated, and individual spores were tested for oscillations. Equal amounts of 30 oscillating spores were pooled and genomic DNA was sequenced to identify the remaining two putative causal mutations in SIR4 and SCW11.\n\n### Subtrait selection\n\nThe recreated oscillator strain was mated to yGW 556, a MAT\u03b1 derivative of its ancestor to produce a diploid heterozygous for the eight causal mutations. To generate a pool of spores that could not mate during bulk selection and contained all possible combinations of E6-1 mutations, PSTE2-URA3, a marker that selects for MATa spores when plated on media lacking uracil and LEU2-sir4-100, a marker that selects for the sir4-100 allele (which is sterile) when plated on media lacking leucine were introduced into the diploid strain. This strain was sporulated and the resulting spores were released from the ascus as described above and plated on either media lacking uracil or leucine. Equal numbers of cells from each media were pooled together, a fraction of this pool was frozen down to measure the initial frequency of each mutation (starting population) and the remaining cells were selected by FACS for the noted traits twice a day for 5 days. For exponential growth, cells were diluted by batch culture twice a day to keep them in exponential phase. After 5 days, genomic DNA was isolated from the pool of surviving spores, and the allele frequency of each mutation was determined by methods described above.\n\n### Whole genome sequencing and RNA-sequencing\n\nGenomic DNA (gDNA) was purified by resuspending >1 \u00d7 108 cells in 50 \u00b5l of 0.5 M EDTA (pH = 7.5 or 8.0), 200 \u00b5l filtered water, and 2.5 \u00b5l of 20 mg/ml Zymolyase and incubating at 37\u00b0C for 1 hr. 50 \u00b5l of miniprep mix (0.20 M EDTA [pH = 8.0], 0.40 M Tris [pH = 8.0], 2% SDS) was added, mixed by inversion and incubated at 65\u00b0C for 30 min. 63 \u00b5l of 5 M KAc was added, mixed by inversion, and incubated on ice for 30 min. The cell lysate was centrifuged at 15K rpm for 10 min, and the supernatant was transferred to a new tube containing 720 \u00b5l of 100% Ethanol. gDNA was pelleted by centrifugation at 15K rpm and resuspended in 100 \u00b5l of water containing 1 \u00b5l of RNaseA (10 mg/ml) (Sigma) and incubated for 1 hr at 37\u00b0C. 2 \u00b5l of Proteinase K (20 mg/ml) (Sigma) was added and incubated for 2 hr at 37\u00b0C. 300 \u00b5l of isopropanol was added, and gDNA was pelleted by centrifugation at 15K rpm, washed in 80% Ethanol, air dried for 10 min, and resuspended in 10 mM Tris, pH 8.0. Total RNA was isolated following published protocols (Ares, 2012; Koschwanez et al., 2013). Genomic DNA and RNA sequencing libraries were made using Illumina Truseq DNA and RNA kits, respectively. Genome and mRNA sequencing was performed on an Illumina Hiseq 2000, reading 150 base pair paired-end reads.\n",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "c5887e82-86ca-48e3-a695-6b0e957ece0f",
+      "submission_id": "c896982c-7858-472e-90ac-eda50ca4340d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Laub, Massachusetts Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04875.015](https://doi.org/10.7554/eLife.04875.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cEvolving a circadian oscillator in budding yeast\u201d for consideration at eLife. Your full submission has been evaluated by Detlef Weigel (Senior editor) and 3 peer reviewers, one of whom, Michael Laub, is a member of our Board of Reviewing Editors, and one of whom, Michael Rosbash, has agreed to reveal his identity.\n\nAfter careful consideration and discussion of your work, we have decided that we cannot consider it further for publication unless several issues can be resolved, through changes to the text and/or additional experiments. Most notably, there was uncertainty among the reviewers as to whether the evolved populations exhibited truly free-running oscillations. At the heart of this issue is Figure 1C showing YFP levels in several different populations over three days. The E6-1 line seems to oscillate between high and low YFP, but it was not clear whether this population was being subjected to FACS at 10 and 14 hour intervals or was simply being grown for 3 days and then analyzed periodically by flow cytometry. If it's the latter, then how long do oscillations persist? Related to this point of confusion, it was not clear why a synchronization process is required before performing the flow cytometry analysis in Figure 1C: after 30 days of selection, shouldn't the evolved population already be synchronized? In this same vein, why doesn't the entire E6 population in Figure 1C show stronger oscillations? Although it is comprised of multiple clones, weren't they all oscillating by the end of the 30 day selection scheme that produced this population? And finally, there was a concern raised about whether the evolved population was oscillating or was being entrained by the selective regime imposed (FACS-based selection at 10 and 14 hour intervals).\n\nThere was general agreement that your work is exciting and creative, and it was considered potentially suitable for further consideration by eLife, provided you can adequately address the concerns summarized above. What would be most critical is a clear, unequivocal demonstration that the evolved population exhibits free running, circadian oscillations in the absence of any selection or specific growth procedure.\n\nFurther detail is provided below:\n\nReviewer #2:\n\nIn this interesting study, budding yeast was evolved to develop circadian rhythms; or something vaguely similar. The authors attempted to generate cycles of circadian gene expression, which ended up somewhat surprisingly selecting for daily cycles of cell-cell adhesion or clumping. There is no evident oscillating gene expression, which makes a marked distinction between this (these) evolved oscillator(s) and real circadian oscillators in different biological systems. The authors mapped their phenotype to eight mutations, all of which probably correspond to hypomorphic or amorphic alleles of the eight genes. At least they can be replaced by gene knock-outs. Finally, the authors demonstrate that independently evolved yeast clones have mutations in distinct sets of genes, which do not appear related in any obvious way. By this I mean the different mutant genes are not related to each other, nor is there a relationship between the different mutant genes in the different clones. An exception is the repression of haploid-specific gene expression, which is present in all but one of the clones. The paper in general is first rate; the experiments, figures and text are models of clarity. A key judgment call is significance. I come down positive despite my comments. Requests for experiments were kept minimal, in the spirit of eLife policy.\n\nMajor comments:\n\n1) The authors might consider extending the issue of free-running oscillations as shown in Figure 1C. How long do they persist in the absence of selection, is there a rapid loss of amplitude and what is their period? Are other clones similar to E6-1, which appears to have a fairly strong period that persists for at least two days? A period determination may require higher-density time-points.\n\n2) Importantly, is the period temperature-compensated like all natural circadian oscillators?\n\n3) I would replace individual mutant genes with wild-type versions, for at least a few of the mutant genes. The question is, are the oscillations completely eliminated by eliminating a single mutant gene, i.e., are all 8 mutations required for any perceptible cycling? I would begin this with Sir4, i.e., does this prediction hold based on what has been done? In other words, are oscillations eliminated for 7 of the 8 clones when WT Sir4 is restored, i.e., all but E6-5, as predicted from the hsg expression phenotypes? This would test the importance of mating type gene expression in a different way. This replacement of the mutant gene by a WT version should then be done for 2 or 3 more of the genes, in 2 or 3 more of the clones. The request is because it is unclear whether there are really 8 required mutations in all cases and whether this number or something like it is representative of all 8 clones.\n\n4) Similarly, please check hsg in all 8 clones to see if this is really a common feature or not. This is especially important for clone E6-5, which did not respond to the deletion of HMLalpha. In other words, is it the only clone not to repress hsg? Check HMLalpha and HMLa expression too, to verify that this is truly the source of hsg regulation. Does upregulation of hsg expression itself inhibit clumping?\n\n5) I would also check diploids with these 8 genes knocked out (both copies obviously). Do they undergo oscillations of adhesion? This is related to the statement:\u201c[...]wild yeast may regulate their clumpiness during the diploid phase[...]\u201d However, diploid yeast, although capable of filamentation, show very low levels of flocculation and expression of the flocculins. What about a direct assessment, if it is possible?\n\nReviewer #3:\n\nI very much appreciate this paper and the creative nature of the science. I am bothered though by one potentially significant matter: evidence supporting the claim that the authors have evolved a circadian oscillator. There exists the possibility that the cells have adapted to the selective regime and that continuing to propagate the cells under the same 10 h and 14 h regime, even without FACS is at least in part responsible for the observed changes between single cells and clumps. I think that it is necessary to exclude this possibility. I do recognise that the authors report an experiment that attempts to rule out entrainment, but this still uses, from what I can, the 10 and 14 h regime. Perhaps take the cells and propagate them in a chemostat, or simply change duration of the cycle: take cells that are about to experience the 10 h phase and provide them with 14 h (and vice versa).\n\nI would like to see the differences in intensity distributions after 30 days. I would also like to see the dynamics that take place during the synchronisation phase.\n\nIt wasn't clear to me how many cycles were used to synchronise the cells. It would be good to see the intensity distributions arising during the sync period. Actually this whole paragraph leaves a lot of detail unclear. For example, it is not stated that the purpose of the analysis is to determine whether oscillations in fluorescence continue following termination of selection (this is though mentioned in the caption to the figure).\n\nIt struck me as odd that after 72 hours and no FACS that the oscillations were still so regular. In the absence of any means to synchronisation I would expect to see regularity of oscillations decline. It makes me think there might be cues from the environment. See comment above. What happens if you continue to run through, say 10 days?\n\nAnalysis with OG is elegant. I take it though that the cells were always subjected to either 10 or 14 h regimes (and analysed at the end point). I am looking for an indication that clumping might be independent of culture conditions.\n\nI found many aspects of the genetic analysis intriguing even if answers are few. The point that finding the mutations does not equate to doing genetics is well made. It seems quite remarkable that individual populations could contain independent oscillators. It suggests this phenotype is readily evolved and the possibility that yeast is already well set to switch between clumping and non-clumping states (the authors raise this possibility).\n\nI felt the discussion of the genetic aspects to be less that compelling and rather too speculative; out in part out of kilter (context) with the rest of the paper.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cEvolving a circadian oscillator in budding yeast\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Detlef Weigel (Senior editor), a Reviewing editor, and the original reviewers.\n\nWe had a long discussion among the two editors and the two reviewers how strong the evidence is that you have evolved de novo a circadian oscillator. In the end, we do not think that the evidence for a truly circadian, free running oscillator that reacts to entrainment and that is temperature compensated is all that strong. However, just evolving an oscillator is already an important finding that should be published in eLife. You should therefore remove the claim of a \u201ccircadian\u201d oscillator from the title and the Abstract. You may discuss in the Introduction the properties of a circadian oscillator, and then develop in the Discussion what features of the de novo evolved oscillator possibly make it a diurnal, if not circadian oscillator.\n\nIn addition, the methodological details of the experiments done in Figure 3 to provide evidence for a free-running oscillator should be described in more detail in both the text and methods section. In particular, a clear description is needed of the growth and culturing conditions and how they differ (or not) from those used during the selection process.\n",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e01d9a4-2a16-4f34-80d9-7b30636a2b30",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C1",
+      "claim": "Saccharomyces cerevisiae lacks homologs to genes that make up the core oscillator or light-sensing pathways of fungal circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "The budding yeast, Saccharomyces cerevisiae, lacks homologs to genes that make up the core oscillator or light-sensing pathways of fungal circadian rhythms (Brunner and Kaldi, 2008; Idnurm and Heitman, 2010; Salichos and Rokas, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three published studies that have investigated the presence of circadian clock genes in S. cerevisiae.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "911ac120-cccb-4d5e-81b7-a78c7f681a13",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C2",
+      "claim": "Saccharomyces cerevisiae does not display any 24-hr behavior capable of sustained autonomous oscillations in a constant environment.",
+      "claim_type": "EXPLICIT",
+      "source": "and does not display any 24-hr behavior capable of sustained autonomous oscillations in a constant environment (Eelderink-Chen et al., 2010; Robertson et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to two published studies that examined oscillatory behavior in S. cerevisiae.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "040bf200-d0a0-4503-bb36-802286165c03",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C3",
+      "claim": "Yellow fluorescent protein (YFP) was expressed from the promoter of the FLO1 gene in the experimental strain.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed yellow fluorescent protein (YFP) from the promoter of the FLO1 gene (Verstrepen et al., 2005; Rando and Verstrepen, 2007; Verstrepen and Fink, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design with citations to relevant literature about the FLO1 gene.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "80a5a069-359b-47e8-8b08-7f3a350beee9",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C4",
+      "claim": "The mutation rate was elevated about 100-fold by mutating the proof-reading activity of DNA polymerase \u03b4 (POL3).",
+      "claim_type": "EXPLICIT",
+      "source": "and elevated the mutation rate about 100-fold by mutating the proof-reading activity of DNA polymerase \u2202 (POL3) (Jin et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a specific experimental manipulation with a citation to the method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "cbe3f3a8-4c93-4afc-ab7a-8febaf72030e",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C5",
+      "claim": "Two parallel populations were evolved using selection strengths of the top and bottom 6% (E6) or 15% (E15) of events detected by FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "We evolved two parallel populations using two different strengths of selection: the top and bottom 6% (E6) or 15% (E15) of the events detected by FACS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "cf934a6f-fbfb-4083-833e-b1be5884c42a",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C6",
+      "claim": "Selected cells proliferated for roughly six divisions before the next selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The selected cells proliferated for roughly six divisions before the next selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "ee1f3834-24e5-4f5a-9a39-06394630c3b4",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C7",
+      "claim": "The selection scheme selects for synchrony rather than entrainment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our scheme selects for synchrony rather than entrainment: twice a day, we select the cells with high or low fluorescence, rather than varying an environmental cue and selecting for a response to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit interpretation of the experimental design by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "f23e0410-48a2-4576-a58f-b747e797118a",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C8",
+      "claim": "After 30 days of selection, the intensity distributions resulting from the selections for high and low fluorescence differed.",
+      "claim_type": "EXPLICIT",
+      "source": "After 30 days of selection, the intensity distributions resulting from the selections for high and low fluorescence differed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "700b1d12-a812-44d1-915e-2cb0cb4780b3",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C9",
+      "claim": "Both evolved populations showed a cyclical change in the fluorescence distribution after synchronization, with the E6 population giving larger shifts than the less strongly selected E15.",
+      "claim_type": "EXPLICIT",
+      "source": "After synchronization, both evolved populations showed a cyclical change in the fluorescence distribution, with the E6 population giving larger shifts than the less strongly selected E15 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both the text description and reference to Figure 1C showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "7c39cf28-3a41-4c9b-a15c-e2a6500c45e6",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C10",
+      "claim": "The distribution of RFP also cycled in the evolved populations.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, the distribution of RFP also cycled (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the text statement and reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "d6042f9f-587f-461a-9009-b3ecdbc6fe63",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C11",
+      "claim": "Just before selection for low fluorescence, the population was predominantly single-celled, and just before selection for high fluorescence, most cells were in multicellular clumps.",
+      "claim_type": "EXPLICIT",
+      "source": "Just before their scheduled selection for low fluorescence, the population was predominantly single-celled, and just before their selection for high fluorescence, most cells were in multicellular clumps (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both text description and microscopy images in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "70a9ac0f-36ef-42e9-9366-f9c811c0a986",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C12",
+      "claim": "The fluorescence per cell is constant over 24 hr for both YFP and RFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence per cell is constant over 24 hr, for both YFP and RFP, and thus the cyclical variation in intensity seen by FACS is entirely due to changes in cell association (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by text and reference to figure data showing fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "e5ce4d75-b039-4dfb-96f2-e1a4fc03c838",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C13",
+      "claim": "The cyclical variation in intensity seen by FACS is entirely due to changes in cell association.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence per cell is constant over 24 hr, for both YFP and RFP, and thus the cyclical variation in intensity seen by FACS is entirely due to changes in cell association (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that per-cell fluorescence is constant while total fluorescence varies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "8ab18316-6b82-45a6-9410-f740d26a95be",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C14",
+      "claim": "All 30 isolated clones (15 from each population) produced strong oscillations in YFP and RFP distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "We isolated and analyzed fifteen clones from each population after subjecting them to FACS-based synchronization: all 30 clones produced strong oscillations in YFP and RFP distributions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental results from testing multiple clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "588d7d59-e61d-4220-b9a1-d26d5d4ae81b",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C15",
+      "claim": "The cycle is not a response to daily variations in environmental factors such as temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The cycle is not a response to daily variations in environmental factors such as temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the control experiment described in the following text and Figure 1\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "7e960e16-1f6f-4720-8ebe-627b907efcd5",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C16",
+      "claim": "A population subjected to identical manipulations without fluorescence-based selection did not oscillate, while a FACS-synchronized population did oscillate.",
+      "claim_type": "EXPLICIT",
+      "source": "The first population oscillated, showing primarily single cells just before the selection for low YFP fluorescence, and primarily clumps just before the selection for high YFP fluorescence, whereas the unsynchronized population showed very similar distributions at these two times (Figure 1\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental comparison described in text and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "60d21996-fecc-4fcf-a1a1-ed46640b478f",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C17",
+      "claim": "Single cells emerging from the single-cell phase build lineage-based clumps.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of clumps containing more than one yellow cell or both CFP+ and CFP\u2212 cells in the same clump shows that cells emerging from the single-cell phase build lineage-based clumps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cell labeling experiment showing clumps contain only one labeled founder cell and cells of one CFP genotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "ae86815c-567e-4349-86b0-a02b155ce651",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C18",
+      "claim": "Synchronous oscillations in cell association were observed even at very high dilution (~10\u00b3 cells/ml).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, we saw synchronous oscillations in cell association even at very high dilution (\u223c103 cells/ml).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "ef0a529a-bdc7-4d6e-8561-a86804ad7804",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C19",
+      "claim": "Multicellular clumps give rise to single cells by fragmenting to produce smaller clumps and proliferating to produce single-celled offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicellular clumps, which were covalently labeled at the time of peak aggregation gave rise to single cells by a combination of two mechanisms: fragmenting to produce smaller clumps and proliferating to produce single-celled offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from the cell wall labeling experiments described in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "91fda88e-be66-4939-b193-4df744da768b",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C20",
+      "claim": "Clumps form by cells sticking together rather than failing to separate after division.",
+      "claim_type": "EXPLICIT",
+      "source": "When unsynchronized CFP+ and CFP\u2212 subclones were sonicated to break up all the clumps and cultured together for 90 min, clumps that re-associated were composed of a mixture of CFP+ and CFP\u2212 cells showing that clumps form by cells sticking together rather than failing to separate after division (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the mixing experiment showing that clumps can contain cells of different genotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "cfa6908f-e15f-49f3-a6e6-2c82abe67371",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C21",
+      "claim": "Cells oscillate between two states over a 24-hr period: single cells produce offspring that stick to their mothers to assemble lineage-based clumps, which later produce single cells and small clumps.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that cells oscillate between two states over a 24-hr period: single cells produce offspring that immediately stick to their mothers to assemble a lineage-based clump, which later produces a population of single cells and small clumps as a result of clumps fragmenting and producing single cells which divide to produce a mixture of small clumps and single cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary claim based on multiple experimental observations described in the text and figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "8a16dd50-c00c-4b1d-a9b9-eda6393c86ea",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C22",
+      "claim": "Free run populations continued to show detectable oscillations after synchronization was stopped.",
+      "claim_type": "EXPLICIT",
+      "source": "The free run populations continued to show detectable oscillations, which were undetectable in a control population that had not been synchronized (Unsynch) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the free run experiment data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "cb0fa879-1a97-4b02-89d4-1349c3c7d6fc",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C23",
+      "claim": "Individual cell lineages produced sustained oscillations for 3 days without FACS-based synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell lineages produced sustained oscillations for 3 days (Figure 3C) with many lineages remaining in phase with each other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the single lineage tracking experiment shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "de9c96e8-b1d8-4b40-b8c8-4db54ca979a3",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C24",
+      "claim": "Some lineages shifted their phase within a 24-hr period, but the overall period over 3 cycles was approximately 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In some lineages, their phase shifted within a 24-hr period, but the overall period, over 3 cycles was approximately 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the lineage tracking experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "bafdf786-9d41-43ef-9981-789af2f97c06",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C25",
+      "claim": "The evolved populations have an autonomous oscillator capable of sustained oscillations in the absence of an environmental stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that we have evolved an autonomous oscillator capable of sustained oscillations in the absence of an environmental stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the free run experiments showing continued oscillations without selection or environmental cues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "2fa04b8c-f6cb-4d12-8e7c-40f9c16429da",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C26",
+      "claim": "Eight mutations were classified as putative causal mutations based on being present in \u226595% of selected cells in bulk segregant analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified eight mutations that were present in \u226595% of the selected cells as putative causal mutations (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the bulk segregant analysis method and the threshold used for identifying causal mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "526fb10c-cda9-45bd-bed5-80ca20d1bb3d",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C27",
+      "claim": "Engineering the eight putative causal mutations into a wild type laboratory strain recreated the evolved oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "We recreated the evolved oscillator by engineering these eight mutations into a wild type laboratory strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental approach and result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "11764fe4-c146-4120-8917-9b74bb4a5c57",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C28",
+      "claim": "The oscillations of the recreated strain are indistinguishable from those of E6-1 after synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "After synchronization, the oscillations of the recreated strain are indistinguishable from those of E6-1 (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "82ad1100-15da-4e07-a2c7-48ee0bb02677",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C29",
+      "claim": "The recreated strain shows similar free run behavior as E6-1 both as populations and as single lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "and produce a similar free run behavior as E6-1 both as populations (Figure 4C) and as single lineages (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the free run experiments shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "9da89882-6c18-4e3e-b707-b96b3374be95",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C30",
+      "claim": "Each causative mutation could be individually replaced by a gene deletion without destroying the oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "Each causative mutation could be individually replaced by a gene deletion without destroying the oscillation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on systematic gene deletion experiments shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "b771573c-3f39-4a8b-8e12-858510bfc73e",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C31",
+      "claim": "Only two genes (SIR4 and YJL070C) substantially altered the oscillations when replaced with wild-type versions: SIR4 made E6-1 single-celled and YJL070C produced constitutive clumps.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, only two genes substantially altered the oscillations: SIR4 made E6-1 single-celled and YJL070C produced constitutive clumps (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the wild-type replacement experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "8b67b5aa-5605-46cf-bdf6-805fec14be96",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C32",
+      "claim": "sir4-100 was selected for in all conditions in the sub-trait selection experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In three independent replicate experiments, sir4-100 was selected for in all conditions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the sub-trait selection experiments described in the text and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "ed54e815-c370-463a-acda-bcb7cdeb97c1",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C33",
+      "claim": "scw11-E261* was selected for in constitutive clumps.",
+      "claim_type": "EXPLICIT",
+      "source": "scw11-E261* was selected for in constitutive clumps",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the sub-trait selection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "9d9670a0-15f2-4029-9e4d-45b66171e60f",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C34",
+      "claim": "Three mutations (vps5-S520L, pet127-D650N, and whi2-R127*) were positively selected for in single cells and selected against in clumping cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and three mutations, vps5-S520L, pet127-D650N, and whi2-R127* were positively selected for in single cells and selected against in clumping cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the sub-trait selection experiments shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "210dbd87-c58b-4a03-88bd-5a5a81b0505b",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C35",
+      "claim": "There were 155 genes whose expression differed between the ancestral and evolved populations.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 155 genes whose expression differed between the ancestral and evolved populations (Figure 5D and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on RNA-seq data comparing gene expression between strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "c8a102c1-5311-4e62-88c3-2754cd0052b9",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C36",
+      "claim": "Haploid-specific genes were repressed in the evolved clone E6-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Haploid-specific genes (hsg), which are normally expressed in haploids and repressed in diploids, were repressed in the evolved clone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on gene expression analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "275babeb-0828-4e6c-8ef9-9a5022c51976",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C37",
+      "claim": "8 of the 10 most strongly repressed genes in E6-1 were haploid-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "8 of the 10 most strongly repressed genes were haploid-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "2a0e0efb-d98f-4f9f-933c-ebcad645b110",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C38",
+      "claim": "The repression of haploid-specific genes in E6-1 is due to the causal mutation that inactivates SIR4.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype is due to the causal mutation that inactivates SIR4, a gene required for transcriptional silencing of sub-telomeric genes, and the mating genes at the two silenced loci, HML\u03b1 and HMRa (Rine and Herskowitz, 1987; Herskowitz, 1988; Pillus and Rine, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on known functions of SIR4 from the literature and the observation that sir4 mutation is present in E6-1.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "1d28c360-5472-4261-9984-cfc4f86d3748",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C39",
+      "claim": "In sir4 cells, the expression of a and \u03b1 information from HML\u03b1 and HMRa mimics a diploid cell and represses haploid-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In sir4 cells, the expression of a and \u03b1 information from these two loci mimics a diploid cell and represses haploid-specific genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about mating type regulation in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "567a1345-e2cb-4b26-bba4-9754da2f39e1",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C40",
+      "claim": "Deleting HML\u03b1 from the evolved clone E6-1 restores the haploid pattern of gene expression and eliminates cell clumping.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the effect of expressing SIR4 in E6-1, deleting HML\u03b1 from the evolved clone, which removes the only source of \u03b1 information restores the haploid pattern of gene expression and eliminates cell clumping (Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental results shown in Figure 5\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "74178333-3a01-432a-9a6b-36614c7d84a6",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C41",
+      "claim": "None of the causative mutations in E6-1 reached a frequency above 0.4 in the overall E6 population by the end of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the mutations in E6-1 reached a frequency above 0.4",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on Sanger sequencing of the E6 population at different time points, shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "637bc409-0307-4f03-805d-03125ec92f81",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C42",
+      "claim": "Two of the causative mutations in E6-1 were undetectable in the overall E6 population.",
+      "claim_type": "EXPLICIT",
+      "source": "two were undetectable in the overall population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the time course sequencing data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "6a552736-94b2-4101-9921-e0b8a1e2e239",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C43",
+      "claim": "Six causative mutations in E6-1 were first detected between 12 and 30 days of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "and the remaining six were first detected between 12 and 30 days of evolution (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the time course data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "c0df02b5-af26-4a45-b3a3-71554ea50309",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C44",
+      "claim": "All clones from the evolved populations cycled, suggesting the populations have multiple lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "All the clones from the evolved populations cycled suggesting that the populations have multiple lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that all tested clones showed cycling behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "d3c295c1-0bed-497b-909f-702a83082b07",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C45",
+      "claim": "E6-2 contained 6 of the 8 causative mutations found in E6-1 and had three additional putative causative mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "E6-2 contained 6 of the 8 causative mutations found in E6-1 and had three additional putative causative mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on bulk segregant analysis and sequencing of clone E6-2, shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "56505ba3-6e36-4223-b910-a32d784583f5",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C46",
+      "claim": "E6-3 and E6-4 share three mutations but have no mutations in common with the lineage that produced E6-1 and E6-2.",
+      "claim_type": "EXPLICIT",
+      "source": "E6-3 and E6-4 share three mutations, but have no mutations in common with the lineage that produced E6-1 and E6-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on bulk segregant analysis of multiple clones shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "3c90a0ca-f11e-4eab-aac7-145d00a64fe6",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C47",
+      "claim": "There are at least five independently evolved oscillators in the E6 and E15 populations based on WHI2 allele analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the entire open reading frame of WHI2, the one gene that was mutated in all 4 sequenced clones, suggests that there are at least five independently evolved oscillators in the E6 and E15 populations, since one population (E6) contains 2 mutant and one wild-type allele, and the other contains one mutant and one wild-type allele (Figure 6\u2014source data 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the diversity of WHI2 alleles found across different clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "078c49eb-820c-40da-a081-be898cde9955",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C48",
+      "claim": "All nine tested clones have increased expression of HML\u03b1 and reduced expression of haploid-specific genes compared to the ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "All nine clones have increased expression of HML\u03b1 and reduced expression of haploid-specific genes when compared to the ancestor (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on qPCR measurements shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "77ef77c6-c861-450e-80d1-dfa313840638",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C49",
+      "claim": "Deleting HML\u03b1 resulted in a loss of multicellular aggregates in all but one clone (E6-5).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, deleting HML\u03b1 in these clones resulted in a loss of multicellular aggregates in all but one clone (Figure 6D, E6-5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the experimental results shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "de4bda5a-de85-4109-9e39-20353c525197",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C50",
+      "claim": "Only one of the clones (E6-2) has the sir4 allele found in E6-1.",
+      "claim_type": "EXPLICIT",
+      "source": "even though only one of the clones (E6-2) has the sir4 allele found in E6-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the sequencing data from multiple clones shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "4b7501c5-ff21-4419-87ee-0309fa6065bb",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C51",
+      "claim": "The 24-hr cycles that can be driven by temperature oscillations rapidly die out at constant temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluctuations in metabolic activity can be driven by temperature oscillations with a 24-hr period but rapidly die out at constant temperature (Eelderink-Chen et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "51f08c4e-ad3c-4a95-8768-3bf85f88158c",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C52",
+      "claim": "A particular regime of growth to high density can induce prolonged metabolic oscillations with a period of 4\u20135 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "and a particular regime of growth to high density can induce prolonged metabolic oscillations whose period is 4\u20135 hr (Tu et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "2b85d6e1-b5c3-49a1-87ed-8562a2758ef8",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C53",
+      "claim": "The evolved yeast oscillator has a roughly 24-hr period that is maintained in the absence of environmental cues or selection on the output of the oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show the yeast oscillator we evolved has two of these four behaviors: its roughly 24-hr period is maintained in the absence of environmental cues or selection on the output of the oscillator (Figures 2B, 3A, 3C, 4C, and 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple figures showing free run experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "2585ca53-ceda-452b-b4f4-24ec8caa9c85",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C54",
+      "claim": "The evolved yeast oscillator regulates a cellular behavior: the ability of cells to form clumps.",
+      "claim_type": "EXPLICIT",
+      "source": "and it regulates a cellular behavior, the ability of cells to form clumps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observed phenotype throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "e5695941-ec02-4d35-88b5-15a358f66332",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C55",
+      "claim": "Multiple combinations of mutations can produce the same complex phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of multiple combinations of mutations to produce the same complex phenotype leads to two inferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that different clones with different mutations all show oscillatory behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "6473b5cc-d7b0-48a9-8a6f-14b82940365a",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C56",
+      "claim": "The few mutations that are shared between different oscillating lineages suggest that there are multiple, functionally different ways that rearrangements can lead to the same phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The few mutations that are shared between different oscillating lineages suggest that there are multiple, functionally different ways that such rearrangements can lead to the same phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genetic diversity observed among different oscillating clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "b5410452-cdcc-42de-8785-ad1a2720097e",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C57",
+      "claim": "All nine examined populations have switched from the haploid- to the diploid-specific pattern of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "All nine of the populations we examined have switched from the haploid- to the diploid-specific pattern of gene expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on gene expression analysis of multiple clones shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "c81da22c-ffd5-4bea-a6e8-f888f400053a",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C58",
+      "claim": "All four lineages analyzed in detail have mutated WHI2.",
+      "claim_type": "EXPLICIT",
+      "source": "and all four lineages analyzed in detail have mutated WHI2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on sequencing data from four clones shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "591ee0c9-c806-491b-b72e-1437af88e7a3",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C59",
+      "claim": "Four of the six mutations that are strongly identified as causal mutations are loss of function mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the six mutations that are strongly identified as causal mutations are loss of function mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of the mutations (nonsense mutations and deletions that phenocopy the evolved alleles).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "766693d7-ae37-4890-b7b8-f329ef400daa",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C60",
+      "claim": "The mutations in SCW11 and WHI2 are nonsense mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations in SCW11 and WHI2 are nonsense mutations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "13e3e50e-b0fe-4780-90dd-f83eeaba7f4c",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C61",
+      "claim": "Mutations in SIR4 and YJL070C can be replaced by gene deletions but not by restoration of the wild-type gene.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas those in SIR4 and YJL070C can be replaced by gene deletions, but not by restoration of the wild-type gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the deletion and wild-type replacement experiments shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "e7ae3260-1105-46fb-bca8-ae414e1a9b5d",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C62",
+      "claim": "The preponderance of loss of function mutants suggests that sophisticated functions can be produced primarily by inactivating genes, rather than modifying or increasing their activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The preponderance of loss of function mutants suggests that sophisticated functions can be produced primarily by inactivating genes, rather than modifying or increasing their activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that most causal mutations are loss-of-function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "554436b6-9a79-42f8-a9e2-8a39136af8c1",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C63",
+      "claim": "The W303 S. cerevisiae strain background was used for all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The W303 S. cerevisiae strain background was used for all experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "d23718a9-51c2-49ea-9eba-3a036b9658c8",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C64",
+      "claim": "Standard rich media (YPD) was used for all experiments: 2% Peptone, 2% D-Glucose, and 1% Yeast-Extract supplemented with Penicillin/Streptomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard rich media (YPD) was used for all experiments: 2% Peptone, 2% D-Glucose, and 1% Yeast-Extract supplemented with Penicillin/Streptomycin (Sigma P0781).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "d5d46415-fb19-478d-aa15-a29c7ec02f20",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C65",
+      "claim": "Analysis and sorting was performed on a MoFlo Legacy (Dako Cytomation/Beckman Coulter) with two excitation lasers.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis and sorting was performed on a MoFlo Legacy (Dako Cytomation/Beckman Coulter) with two excitation lasers and respective filter settings: 488 nm-550/30, and 594 nm-630/40.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental equipment and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "2865e723-cffd-4775-82bf-ecfe40a31932",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C66",
+      "claim": "The selection cycle was repeated for 30 continuous days during experimental evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This cycle was repeated for 30 continuous days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the duration of the experimental evolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "8ff25a04-859d-42e2-875b-4523c932101b",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "claim_id": "C67",
+      "claim": "Cell densities were occasionally measured before FACS selection to ensure the population stayed below 1 \u00d7 10\u2076 cells/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell densities were occasionally measured before FACS selection to ensure the population stayed below 1 \u00d7 106 cells/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about quality control during the experimental evolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "494114e0-d6a0-4bf7-9409-9b54fb85cb85",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "S. cerevisiae naturally lacks circadian clock machinery and does not display autonomous 24-hr oscillations in constant environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 establish the baseline state of S. cerevisiae through multiple literature citations. These claims are well-supported by prior work and provide the rationale for the experimental evolution approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors evolved yeast populations for 30 days using FACS-based selection for alternating high and low YFP fluorescence over 24-hr cycles, with elevated mutation rates and two selection strengths (E6 and E15).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C8, C66-C67 describe the experimental evolution design with clear methodological details. The approach is well-documented with appropriate controls for cell density and selection parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "56d3dd05-c457-4f04-a603-7b57f271b796",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "After 30 days of evolution, both populations showed cyclical changes in fluorescence distributions that resulted from oscillations in cell aggregation rather than changes in per-cell fluorescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 demonstrate that the evolved phenotype involves cell association rather than gene expression changes. The data from Figures 1C, 1D, and Figure 1\u2014figure supplement 1B provide strong evidence that per-cell fluorescence remains constant while clump size varies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "0931faf1-e7df-4d67-913b-3ba47961c189",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All 30 isolated clones from evolved populations showed oscillations, and the cycling behavior is not a response to environmental fluctuations but requires FACS-based synchronization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 establish that the oscillatory phenotype is heritable and not driven by environmental cues. The control experiment comparing synchronized vs. unsynchronized populations (Figure 1\u2014figure supplement 1C,D) provides strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "1e1c3edb-03be-461a-aaf1-cabdc2dbd0e3",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cells oscillate between single-cell and multicellular states over 24 hours through a mechanism where single cells produce adherent offspring that form lineage-based clumps, which later fragment and produce non-adherent offspring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 describe the mechanism of oscillation using multiple labeling approaches (CFP, Oregon Green). The experiments convincingly demonstrate lineage-based clump formation and the dual mechanism of clump dissolution (Figure 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "60c384f8-389a-4cea-bf57-a96eb6e91b5a",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The evolved oscillator shows autonomous behavior, with populations and individual lineages maintaining oscillations for at least 3 days without FACS-based selection or environmental cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 demonstrate free-running oscillations at both population and single-lineage levels (Figures 3A, 3C). The experiments show sustained oscillations without selection, though some phase drift occurs. This is critical evidence for an autonomous oscillator.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "9a3ff451-a770-4e50-823d-75c352619bf5",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Eight putative causal mutations were identified through bulk segregant analysis, and engineering these mutations into the ancestral strain recreated the oscillatory phenotype with indistinguishable behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 demonstrate successful identification and validation of causal mutations. The recreation experiment (Figure 4) provides strong evidence that these eight mutations are sufficient to produce the evolved phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "efda3a14-60aa-4d95-b543-d4d2587ee673",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Individual gene deletions maintain oscillations, but only SIR4 and YJL070C wild-type replacements abolish cycling. Sub-trait selection experiments reveal that sir4-100 is universally selected, while other mutations show trait-specific selection patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 systematically dissect the contribution of individual mutations (Figure 5A-C). The results reveal complex genetic architecture where most mutations are dispensable individually but contribute to specific sub-traits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "ea91dd37-e631-4d77-aeea-f95961655cbb",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The evolved clone E6-1 shows repression of haploid-specific genes due to sir4 mutation-mediated derepression of HML\u03b1 and HMRa, mimicking diploid gene expression. Deleting HML\u03b1 restores haploid gene expression and eliminates clumping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 identify a key molecular mechanism linking SIR4 inactivation to the oscillatory phenotype through mating-type regulation (Figure 5D, Figure 5\u2014figure supplement 1). The HML\u03b1 deletion experiment provides strong causal evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "882c7044-2c97-4c73-8c6a-f0b40ee5e2ed",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The E6 population contains at least five independently evolved oscillator lineages with different genetic architectures, as evidenced by low allele frequencies of E6-1 mutations in the population and distinct mutation profiles in clones E6-2, E6-3, and E6-4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 demonstrate parallel evolution through time-course sequencing and bulk segregant analysis of multiple clones (Figure 6A-B). The diversity of WHI2 alleles and distinct mutation profiles provide strong evidence for multiple independent solutions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "b3ef0d27-f056-4409-a180-b401d61ffcc7",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All nine examined clones from both E6 and E15 populations show increased HML\u03b1 expression and repressed haploid-specific genes, and deleting HML\u03b1 eliminates clumping in all but one clone (E6-5). All four sequenced lineages contain WHI2 mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50, C57-C58 reveal convergent evolution at the gene expression level despite genetic diversity (Figure 6C-D). The qPCR and HML\u03b1 deletion experiments demonstrate that repression of haploid-specific genes is a common feature across independent lineages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "e0e144cc-47c6-4a32-8b8f-dc70a87085a4",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The evolved yeast oscillator differs from previously reported yeast oscillations, maintains a ~24-hr period without environmental cues or selection, and regulates cell clumping behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 distinguish the evolved oscillator from prior observations and summarize its key properties. The comparison to literature (C51-C52) and experimental evidence from free-run experiments support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "4365e017-971f-4245-8229-bd4305418158",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multiple combinations of mutations can produce the same oscillatory phenotype, with most causal mutations being loss-of-function, suggesting that sophisticated functions can evolve primarily through gene inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56, C59-C62 synthesize observations about genetic architecture and mutational mechanisms. The evidence from multiple independent lineages and the predominance of nonsense mutations and functional deletions support this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    },
+    {
+      "id": "1c5a8be9-893f-4715-b057-29642dab09ef",
+      "content_id": "c894d126-5a98-4f67-ac00-6982ecd43993",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "All experiments used W303 S. cerevisiae strain background, YPD media with antibiotics, and a MoFlo Legacy flow cytometer with specified laser and filter settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 provide essential methodological details that are clearly stated and standard for yeast research. These are straightforward descriptions of materials and methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:46:23.069375Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5e01d9a4-2a16-4f34-80d9-7b30636a2b30",
+      "result_id": "494114e0-d6a0-4bf7-9409-9b54fb85cb85"
+    },
+    {
+      "claim_id": "911ac120-cccb-4d5e-81b7-a78c7f681a13",
+      "result_id": "494114e0-d6a0-4bf7-9409-9b54fb85cb85"
+    },
+    {
+      "claim_id": "040bf200-d0a0-4503-bb36-802286165c03",
+      "result_id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd"
+    },
+    {
+      "claim_id": "80a5a069-359b-47e8-8b08-7f3a350beee9",
+      "result_id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd"
+    },
+    {
+      "claim_id": "cbe3f3a8-4c93-4afc-ab7a-8febaf72030e",
+      "result_id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd"
+    },
+    {
+      "claim_id": "cf934a6f-fbfb-4083-833e-b1be5884c42a",
+      "result_id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd"
+    },
+    {
+      "claim_id": "ee1f3834-24e5-4f5a-9a39-06394630c3b4",
+      "result_id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd"
+    },
+    {
+      "claim_id": "f23e0410-48a2-4576-a58f-b747e797118a",
+      "result_id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd"
+    },
+    {
+      "claim_id": "2865e723-cffd-4775-82bf-ecfe40a31932",
+      "result_id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd"
+    },
+    {
+      "claim_id": "8ff25a04-859d-42e2-875b-4523c932101b",
+      "result_id": "f7bcf944-672e-4014-aa9d-89dbbd9811dd"
+    },
+    {
+      "claim_id": "700b1d12-a812-44d1-915e-2cb0cb4780b3",
+      "result_id": "56d3dd05-c457-4f04-a603-7b57f271b796"
+    },
+    {
+      "claim_id": "7c39cf28-3a41-4c9b-a15c-e2a6500c45e6",
+      "result_id": "56d3dd05-c457-4f04-a603-7b57f271b796"
+    },
+    {
+      "claim_id": "d6042f9f-587f-461a-9009-b3ecdbc6fe63",
+      "result_id": "56d3dd05-c457-4f04-a603-7b57f271b796"
+    },
+    {
+      "claim_id": "70a9ac0f-36ef-42e9-9366-f9c811c0a986",
+      "result_id": "56d3dd05-c457-4f04-a603-7b57f271b796"
+    },
+    {
+      "claim_id": "e5ce4d75-b039-4dfb-96f2-e1a4fc03c838",
+      "result_id": "56d3dd05-c457-4f04-a603-7b57f271b796"
+    },
+    {
+      "claim_id": "8ab18316-6b82-45a6-9410-f740d26a95be",
+      "result_id": "0931faf1-e7df-4d67-913b-3ba47961c189"
+    },
+    {
+      "claim_id": "588d7d59-e61d-4220-b9a1-d26d5d4ae81b",
+      "result_id": "0931faf1-e7df-4d67-913b-3ba47961c189"
+    },
+    {
+      "claim_id": "7e960e16-1f6f-4720-8ebe-627b907efcd5",
+      "result_id": "0931faf1-e7df-4d67-913b-3ba47961c189"
+    },
+    {
+      "claim_id": "60d21996-fecc-4fcf-a1a1-ed46640b478f",
+      "result_id": "1e1c3edb-03be-461a-aaf1-cabdc2dbd0e3"
+    },
+    {
+      "claim_id": "ae86815c-567e-4349-86b0-a02b155ce651",
+      "result_id": "1e1c3edb-03be-461a-aaf1-cabdc2dbd0e3"
+    },
+    {
+      "claim_id": "ef0a529a-bdc7-4d6e-8561-a86804ad7804",
+      "result_id": "1e1c3edb-03be-461a-aaf1-cabdc2dbd0e3"
+    },
+    {
+      "claim_id": "91fda88e-be66-4939-b193-4df744da768b",
+      "result_id": "1e1c3edb-03be-461a-aaf1-cabdc2dbd0e3"
+    },
+    {
+      "claim_id": "cfa6908f-e15f-49f3-a6e6-2c82abe67371",
+      "result_id": "1e1c3edb-03be-461a-aaf1-cabdc2dbd0e3"
+    },
+    {
+      "claim_id": "8a16dd50-c00c-4b1d-a9b9-eda6393c86ea",
+      "result_id": "60c384f8-389a-4cea-bf57-a96eb6e91b5a"
+    },
+    {
+      "claim_id": "cb0fa879-1a97-4b02-89d4-1349c3c7d6fc",
+      "result_id": "60c384f8-389a-4cea-bf57-a96eb6e91b5a"
+    },
+    {
+      "claim_id": "de9c96e8-b1d8-4b40-b8c8-4db54ca979a3",
+      "result_id": "60c384f8-389a-4cea-bf57-a96eb6e91b5a"
+    },
+    {
+      "claim_id": "bafdf786-9d41-43ef-9981-789af2f97c06",
+      "result_id": "60c384f8-389a-4cea-bf57-a96eb6e91b5a"
+    },
+    {
+      "claim_id": "2fa04b8c-f6cb-4d12-8e7c-40f9c16429da",
+      "result_id": "9a3ff451-a770-4e50-823d-75c352619bf5"
+    },
+    {
+      "claim_id": "526fb10c-cda9-45bd-bed5-80ca20d1bb3d",
+      "result_id": "9a3ff451-a770-4e50-823d-75c352619bf5"
+    },
+    {
+      "claim_id": "11764fe4-c146-4120-8917-9b74bb4a5c57",
+      "result_id": "9a3ff451-a770-4e50-823d-75c352619bf5"
+    },
+    {
+      "claim_id": "82ad1100-15da-4e07-a2c7-48ee0bb02677",
+      "result_id": "9a3ff451-a770-4e50-823d-75c352619bf5"
+    },
+    {
+      "claim_id": "9da89882-6c18-4e3e-b707-b96b3374be95",
+      "result_id": "efda3a14-60aa-4d95-b543-d4d2587ee673"
+    },
+    {
+      "claim_id": "b771573c-3f39-4a8b-8e12-858510bfc73e",
+      "result_id": "efda3a14-60aa-4d95-b543-d4d2587ee673"
+    },
+    {
+      "claim_id": "8b67b5aa-5605-46cf-bdf6-805fec14be96",
+      "result_id": "efda3a14-60aa-4d95-b543-d4d2587ee673"
+    },
+    {
+      "claim_id": "ed54e815-c370-463a-acda-bcb7cdeb97c1",
+      "result_id": "efda3a14-60aa-4d95-b543-d4d2587ee673"
+    },
+    {
+      "claim_id": "9d9670a0-15f2-4029-9e4d-45b66171e60f",
+      "result_id": "efda3a14-60aa-4d95-b543-d4d2587ee673"
+    },
+    {
+      "claim_id": "210dbd87-c58b-4a03-88bd-5a5a81b0505b",
+      "result_id": "ea91dd37-e631-4d77-aeea-f95961655cbb"
+    },
+    {
+      "claim_id": "c8a102c1-5311-4e62-88c3-2754cd0052b9",
+      "result_id": "ea91dd37-e631-4d77-aeea-f95961655cbb"
+    },
+    {
+      "claim_id": "275babeb-0828-4e6c-8ef9-9a5022c51976",
+      "result_id": "ea91dd37-e631-4d77-aeea-f95961655cbb"
+    },
+    {
+      "claim_id": "2a0e0efb-d98f-4f9f-933c-ebcad645b110",
+      "result_id": "ea91dd37-e631-4d77-aeea-f95961655cbb"
+    },
+    {
+      "claim_id": "1d28c360-5472-4261-9984-cfc4f86d3748",
+      "result_id": "ea91dd37-e631-4d77-aeea-f95961655cbb"
+    },
+    {
+      "claim_id": "567a1345-e2cb-4b26-bba4-9754da2f39e1",
+      "result_id": "ea91dd37-e631-4d77-aeea-f95961655cbb"
+    },
+    {
+      "claim_id": "74178333-3a01-432a-9a6b-36614c7d84a6",
+      "result_id": "882c7044-2c97-4c73-8c6a-f0b40ee5e2ed"
+    },
+    {
+      "claim_id": "637bc409-0307-4f03-805d-03125ec92f81",
+      "result_id": "882c7044-2c97-4c73-8c6a-f0b40ee5e2ed"
+    },
+    {
+      "claim_id": "6a552736-94b2-4101-9921-e0b8a1e2e239",
+      "result_id": "882c7044-2c97-4c73-8c6a-f0b40ee5e2ed"
+    },
+    {
+      "claim_id": "c0df02b5-af26-4a45-b3a3-71554ea50309",
+      "result_id": "882c7044-2c97-4c73-8c6a-f0b40ee5e2ed"
+    },
+    {
+      "claim_id": "d3c295c1-0bed-497b-909f-702a83082b07",
+      "result_id": "882c7044-2c97-4c73-8c6a-f0b40ee5e2ed"
+    },
+    {
+      "claim_id": "56505ba3-6e36-4223-b910-a32d784583f5",
+      "result_id": "882c7044-2c97-4c73-8c6a-f0b40ee5e2ed"
+    },
+    {
+      "claim_id": "3c90a0ca-f11e-4eab-aac7-145d00a64fe6",
+      "result_id": "882c7044-2c97-4c73-8c6a-f0b40ee5e2ed"
+    },
+    {
+      "claim_id": "078c49eb-820c-40da-a081-be898cde9955",
+      "result_id": "b3ef0d27-f056-4409-a180-b401d61ffcc7"
+    },
+    {
+      "claim_id": "77ef77c6-c861-450e-80d1-dfa313840638",
+      "result_id": "b3ef0d27-f056-4409-a180-b401d61ffcc7"
+    },
+    {
+      "claim_id": "de4bda5a-de85-4109-9e39-20353c525197",
+      "result_id": "b3ef0d27-f056-4409-a180-b401d61ffcc7"
+    },
+    {
+      "claim_id": "b5410452-cdcc-42de-8785-ad1a2720097e",
+      "result_id": "b3ef0d27-f056-4409-a180-b401d61ffcc7"
+    },
+    {
+      "claim_id": "c81da22c-ffd5-4bea-a6e8-f888f400053a",
+      "result_id": "b3ef0d27-f056-4409-a180-b401d61ffcc7"
+    },
+    {
+      "claim_id": "4b7501c5-ff21-4419-87ee-0309fa6065bb",
+      "result_id": "e0e144cc-47c6-4a32-8b8f-dc70a87085a4"
+    },
+    {
+      "claim_id": "51f08c4e-ad3c-4a95-8768-3bf85f88158c",
+      "result_id": "e0e144cc-47c6-4a32-8b8f-dc70a87085a4"
+    },
+    {
+      "claim_id": "2b85d6e1-b5c3-49a1-87ed-8562a2758ef8",
+      "result_id": "e0e144cc-47c6-4a32-8b8f-dc70a87085a4"
+    },
+    {
+      "claim_id": "2585ca53-ceda-452b-b4f4-24ec8caa9c85",
+      "result_id": "e0e144cc-47c6-4a32-8b8f-dc70a87085a4"
+    },
+    {
+      "claim_id": "e5695941-ec02-4d35-88b5-15a358f66332",
+      "result_id": "4365e017-971f-4245-8229-bd4305418158"
+    },
+    {
+      "claim_id": "6473b5cc-d7b0-48a9-8a6f-14b82940365a",
+      "result_id": "4365e017-971f-4245-8229-bd4305418158"
+    },
+    {
+      "claim_id": "591ee0c9-c806-491b-b72e-1437af88e7a3",
+      "result_id": "4365e017-971f-4245-8229-bd4305418158"
+    },
+    {
+      "claim_id": "766693d7-ae37-4890-b7b8-f329ef400daa",
+      "result_id": "4365e017-971f-4245-8229-bd4305418158"
+    },
+    {
+      "claim_id": "13e3e50e-b0fe-4780-90dd-f83eeaba7f4c",
+      "result_id": "4365e017-971f-4245-8229-bd4305418158"
+    },
+    {
+      "claim_id": "e7ae3260-1105-46fb-bca8-ae414e1a9b5d",
+      "result_id": "4365e017-971f-4245-8229-bd4305418158"
+    },
+    {
+      "claim_id": "554436b6-9a79-42f8-a9e2-8a39136af8c1",
+      "result_id": "1c5a8be9-893f-4715-b057-29642dab09ef"
+    },
+    {
+      "claim_id": "d23718a9-51c2-49ea-9eba-3a036b9658c8",
+      "result_id": "1c5a8be9-893f-4715-b057-29642dab09ef"
+    },
+    {
+      "claim_id": "d5d46415-fb19-478d-aa15-a29c7ec02f20",
+      "result_id": "1c5a8be9-893f-4715-b057-29642dab09ef"
+    }
+  ],
+  "comparisons": []
+}

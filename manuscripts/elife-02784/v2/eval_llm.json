@@ -1,0 +1,400 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SLY1 physically interacts with TANGO1 and localizes to ER exit sites. Mass spectrometry identified SLY1 in proteins cross-linked to TANGO1's cytoplasmic domain (C46), confirmed by co-immunoprecipitation (C47). A pool of SLY1-GFP colocalizes with SEC31 at ER exit sites after prepermeabilization (C48), while most SLY1 localizes to the Golgi (C49-C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide converging evidence from mass spectrometry, co-immunoprecipitation (Figure 1A), and immunofluorescence microscopy (Figure 1B) demonstrating the TANGO1-SLY1 interaction and SLY1 localization to ER exit sites. The prepermeabilization approach appropriately removes cytoplasmic protein to reveal membrane-associated pools. The data are internally consistent and support the claimed interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "SLY1 knockdown arrests Procollagen VII in the ER. SLY1 depletion reduced PC VII secretion by ~75% (C52), similar to TANGO1 knockdown at ~90% (C53). PC VII accumulated in large ER patches containing Hsp47 (C54-C55) but not in Golgi (C56), as confirmed by immunofluorescence (C54-C57) and immunoelectron microscopy showing PC VII in dilated ER (C58-C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 provide robust evidence from western blotting (Figures 2B-C), immunofluorescence (Figures 2D-E), and immunoelectron microscopy (Figure 3) demonstrating PC VII accumulation in the ER upon SLY1 knockdown. The quantitation shows significant reduction in secretion, and multiple imaging modalities confirm ER localization. The phenotype mirrors TANGO1 knockdown, supporting a shared pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "SLY1 knockdown does not affect COPII component recruitment or localization. Western blotting showed unchanged levels of SAR1, SEC23A, SEC31, \u03b2-COP, and \u03b5-COP (C62-C64). STED microscopy revealed that SEC31 localization and number at ER exit sites resembled control cells (C92), and TANGO1 localization was unaffected (C93), suggesting SLY1 acts downstream of COPII assembly (C94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C92-C94 are supported by western blot data (Figure 4) and high-resolution STED microscopy (Figure 8D). The data demonstrate that SLY1 depletion does not affect COPII component levels or recruitment to ER exit sites, distinguishing SLY1's role from COPII assembly. The conclusion that SLY1 acts after COPII assembly is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71"
+    ],
+    "result": "SLY1 knockdown does not affect bulk protein secretion. Metabolic labeling with 35S-methionine showed no appreciable effect on the secretion of newly synthesized proteins (C70), with the overall pattern of secreted polypeptides unchanged by SLY1 depletion (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by metabolic labeling data (Figure 6A) showing similar secretion patterns in control and SLY1 knockdown cells. However, this is a relatively crude assay that may miss effects on specific cargo subsets. The conclusion is appropriately qualified as showing no effect on \"bulk\" or \"general\" secretion, acknowledging the method's limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SLY1 knockdown does not affect retrograde transport. GRP78/BIP remained ER-localized (C65) and was not secreted (C66) in SLY1-depleted cells. ERGIC53 redistribution kinetics to the ER were unchanged (C67), leading to the conclusion that retrograde trafficking is unaffected (C68-C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by immunofluorescence (Figure 5A), western blotting (Figure 5B), and a rapamycin-induced trapping assay (Figure 5C). The trapping assay provides quantitative kinetic data showing no difference in ERGIC53 cycling. The conclusion that retrograde transport is unaffected is well-supported, though limited to the specific markers tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C32",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "SLY1 and TANGO1 are not required for Procollagen I export. Western blotting showed that PC I secretion was not blocked by SLY1 or TANGO1 knockdown in RDEB/FB/C7 (C74) or Saos2 cells (C75). A marginal increase in both secreted and intracellular PC I was observed (C76), suggesting a transcriptional rather than trafficking effect (C77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by western blot data (Figures 6C, 6E) showing maintained PC I secretion upon SLY1/TANGO1 depletion. The interpretation that increased PC I levels reflect transcriptional regulation (C77) is speculative but reasonable given the proportional increase in both intracellular and secreted pools. This result establishes cargo specificity for the SLY1/TANGO1 pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "Syntaxin 18, but not Syntaxin 17, is required for Procollagen VII export. STX18 and STX5 knockdown reduced PC VII secretion (C95) and caused accumulation in >80% of cells (C99), while STX17 had marginal effect (C96). Neither STX17 nor STX18 affected PC I secretion (C98, C101), demonstrating cargo specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are supported by western blotting (Figure 9B), quantitation (Figure 9C), and immunofluorescence quantification (Figures 9D-E, 9G-H). The data clearly distinguish STX18 (required) from STX17 (not required) for PC VII export, and demonstrate that STX18 is not required for PC I export. Statistical significance is reported for the accumulation data, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C35",
+      "C112",
+      "C113"
+    ],
+    "result": "Different export pathways exist for secretory cargoes from the ER. The differential requirements for SLY1/STX18 in PC VII versus PC I export (C112) demonstrate that cargo sorting is not driven solely by size (C113), revealing the existence of distinct export routes (C10-C11, C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C35, C112-C113 represent the major conceptual conclusion of the paper, supported by the cumulative evidence showing differential requirements for SLY1/STX18 in PC VII versus PC I export despite similar cargo sizes. This is a well-supported inference from the experimental data, though the mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "SLY1 and TANGO1 affect secretion of the artificial cargo ss-HRP. SLY1 depletion blocked ss-HRP secretion comparably to BFA (C72), while TANGO1 depletion reduced secretion to 50% of control (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by HRP activity assay data (Figure 6B). However, the authors appropriately note (C122-C123) that ss-HRP is an artificial cargo that may exit by multiple routes, making interpretation complex. The result is technically sound but its biological significance is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C102"
+    ],
+    "result": "SAR1 A and B are required for Procollagen VII export. Single knockdowns of SAR1A or SAR1B had marginal effects (C82-C83), but double knockdown almost completely blocked PC VII secretion (C84), causing accumulation in large ER structures (C85) with cytosolic SEC31 localization (C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 and C102 are supported by western blotting (Figure 7B) and immunofluorescence (Figure 7C). The requirement for both SAR1 isoforms is clearly demonstrated, and the phenotype (ER accumulation, loss of SEC31 puncta) is consistent with a block in COPII-dependent export. This establishes that PC VII export requires COPII machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "TANGO1 binding to PC VII is independent of SEC23/24 interaction. STED microscopy showed that in SAR1 knockdown cells, where SEC31 was cytoplasmic (C89), TANGO1 remained at collagen-enriched patches (C90), suggesting TANGO1-PC VII binding does not require TANGO1-SEC23/24 interaction. In TANGO1 knockdown, SEC31-positive sites were fewer and more randomly localized (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by high-resolution STED microscopy (Figure 8). The observation that TANGO1 remains at PC VII patches despite loss of SEC31 recruitment (due to SAR1 depletion) provides strong evidence that TANGO1-PC VII binding is independent of COPII assembly. This is an important mechanistic insight into the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Working model for PC VII export via SLY1/STX18-mediated membrane fusion. The authors propose that SAR1 initiates COPII assembly (C132), TANGO1-cTAGE5 binds PC VII and SEC23/24 (C133), retarding SEC13/31 recruitment (C134). ER exit sites concentrate to form a PC VII patch (C135), which grows by SLY1/STX18-dependent fusion of ERGIC membranes (C136). TANGO1 dissociation promotes SEC13/31 recruitment and fission (C137-C139), generating a PC VII-enriched carrier containing ERGIC membranes (C140-C141).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C141 represent a speculative working model that integrates the experimental findings. While the model is consistent with the data (SLY1/STX18 requirement, COPII assembly, PC VII accumulation), key aspects remain untested: the membrane fusion step (C136), the mechanism of TANGO1 dissociation (C137), and the composition of the export carrier (C140). The model is reasonable but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "SAR1-dependent recruitment of COPII components is required for general collagen export. This conclusion integrates the current SAR1 knockdown data with prior literature on SEC31 ubiquitination (Jin et al., 2012) and Sedlin (Venditti et al., 2012) to argue that COPII machinery is generally required for collagen export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by the SAR1 knockdown data (Figure 7) combined with cited literature. The conclusion that COPII is generally required for collagen export is well-supported, though the specific mechanisms differ between collagen types (as demonstrated by the differential SLY1/STX18 requirements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C100"
+    ],
+    "result": "STX5 affects both PC VII and PC I export. STX5 depletion reduced PC VII secretion (C95, grouped with Result 7) and caused PC I accumulation in 80% of cells (C100), distinguishing it from STX18 which only affects PC VII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C100 are supported by western blotting (Figure 9F) and immunofluorescence quantification (Figure 9H). STX5's effect on both PC VII and PC I suggests it functions in a more general pathway, consistent with its known role in ER-Golgi transport. This distinguishes STX5 from the PC VII-specific STX18.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background information on collagens, TANGO1, and SLY1. These claims establish the biological context: collagen abundance and structure (C12-C17), TANGO1's role in PC VII export (C1, C18-C29), other collagen export mechanisms (C30-C35), and SLY1's known functions (C36-C45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C45 are background information supported by appropriate citations to the literature. These establish the context for the current study and are not primary findings. The authors appropriately note gaps in knowledge (C33, C45) that motivate the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The mechanism of SLY1 recruitment to ER exit sites is unknown. The authors state they do not know whether SLY1 recruitment is by direct TANGO1 binding or indirect through other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 appropriately acknowledges a limitation of the current study. While the co-immunoprecipitation (C47) suggests interaction, it does not distinguish direct from indirect binding, especially given the crosslinking approach used. This is an honest assessment of what the data can and cannot conclude.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background on COPII assembly and cargo export mechanisms. These claims describe established knowledge about COPII coat assembly (C78-C80), TANGO1's role (C81, C106-C110), cargo receptor mechanisms (C104-C105), and gaps in understanding PC I export (C111).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81, C104-C111 are background information supported by appropriate citations. These establish the mechanistic framework for interpreting the current findings. The acknowledgment of unknowns (C111) appropriately identifies gaps the field needs to address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Speculation on cargo sorting based on destination. The authors note that TANGO1 in Drosophila localizes to basal ER exit sites (C114) and is required for basal Collagen IV secretion (C115), leading to speculation that cargoes may be sorted based on destination (C116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C116 are speculative, based on cited Drosophila data (Lerner et al., 2013) rather than the current study. While the hypothesis is interesting, it lacks direct experimental support in the current work. The authors appropriately present this as speculation (\"tempting to propose\").",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Speculation on roles of SLY1 and TANGO1 paralogs. The authors note the existence of SCFD2 (C117) and MIA2 (C118) but state their cargoes are unknown (C119), speculating they might facilitate export of other collagens (C120).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C120 are largely speculative. While the existence of paralogs is factual (C117-C118), the speculation about their functions (C119-C120) lacks experimental support. This is appropriately presented as speculation and represents a direction for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Interpretation of ss-HRP secretion data. The authors note their prior finding that TANGO1 inhibited ss-HRP secretion in Drosophila (C121), acknowledge lack of evidence for TANGO1-HRP binding (C122), and suggest ss-HRP exits by any available route (C123).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C123 represent an attempt to reconcile conflicting observations about artificial cargo secretion. The interpretation (C123) is speculative and acknowledges the limitations of using artificial cargoes. This is an honest assessment but does not provide definitive mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Background on SLY1 and SNARE function. The authors note that SLY1's precise function is unclear (C124), that it interacts with multiple SNAREs (C125), and that ER t-SNAREs have not been shown to be required for forward transport (C127).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 accurately summarize the state of knowledge about SLY1 and SNAREs, supported by appropriate citations. The acknowledgment of uncertainty (C124, C127) appropriately identifies gaps that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Argument against a retrograde recycling model. The authors consider and reject the hypothesis that SLY1/STX18 function in retrograde recycling (C128), based on evidence that retrograde transport and other cargo export are unaffected (C129) and lack of intermediate vesicles (C130).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 represent a logical argument against an alternative explanation, supported by the retrograde transport data (Figures 5, 6, 9) and microscopy observations. This strengthens the authors' preferred model by eliminating a plausible alternative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Comparison with Luini model for PC I export. The authors compare their model to prior work by Luini et al. (C142), noting similarities (C143) but also differences, particularly the requirement for COPII components (C144) and suggesting the \"protrusion\" might correspond to membrane fusion (C145).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C145 attempt to integrate the current findings with prior literature. While the comparison is reasonable, the interpretation (C145) is speculative. The relationship between the two models remains unclear and would benefit from direct experimental comparison.",
+    "result_type": "MINOR"
+  }
+]

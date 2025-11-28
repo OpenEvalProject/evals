@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C107",
+      "C108"
+    ],
+    "result": "Massive de novo recruitment of RNA polymerase II (Pol II) occurs during the midblastula transition (MBT), with Pol II and TBP recruited to approximately 4007 promoters (roughly one-third of all genes), while only around 100 genes are occupied by Pol II before the MBT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, C21, C107, and C108 are all based on ChIP-seq data from tightly staged embryos (Figure 1C). The data show reproducible enrichment across replicates (Figure 1\u2014figure supplement 2A,B) and the massive recruitment is clearly visible in the heatmap. The quantification and statistical analysis appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C18",
+      "C22",
+      "C26",
+      "C28"
+    ],
+    "result": "Approximately 117 pre-MBT genes are strongly occupied by Pol II before the MBT, and most of these genes do not show Pol II pausing at the pause site (+30-50 bp downstream from TSS), as quantified by a pausing index that is much lower than MBT genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C18, C22, C26, and C28 are supported by ChIP-seq data with manual curation to remove false positives and add genes with unannotated TSSs. The pausing index calculation is described in methods and the difference between pre-MBT and MBT genes is shown quantitatively in Figure 2A. The identification criteria (twofold enrichment across four replicates) are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Pre-MBT genes can be classified into three distinct groups based on Pol II occupancy patterns: 'not-paused' (n=77) that never become paused, 'dual' (n=30) that switch from non-paused to paused during MBT, and 'paused' (n=10) that appear paused even at pre-MBT stages, with expression timing correlating with pausing status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 and C110-C112 are supported by ChIP-seq data across developmental stages (Figure 2B,C) and RNA-seq expression data. The classification is based on objective criteria (Pol II occupancy patterns and pausing index), and the correlation with expression timing provides biological validation. The three groups show distinct and consistent patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "MBT-zygotic genes (844 genes) frequently show high Pol II occupancy at the pausing site with widespread pausing. These can be subdivided into 'MBT active' genes (251 genes, 30%) expressed during late nuclear cycle 14, and 'MBT poised' genes (593 genes) expressed at very low levels and first detected at later embryonic stages (stages 9-10 or later).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 and C113-C115 are supported by ChIP-seq data (Figure 3A), RNA-seq expression data with clear RPKM thresholds (>5 for active, <5 for poised), and in situ hybridization data from the ImaGO database (Figure 3B). The classification criteria are objective and the temporal expression patterns validate the functional distinction between active and poised genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C91"
+    ],
+    "result": "The lack of Pol II pausing at pre-MBT genes is consistent with a requirement for rapid transcription during fast nuclear cycles (8-13 minutes), supported by structural features including shorter gene length (median 1228 bp vs 6024 bp, p<10^-20), higher frequency of intronless genes (54.6% vs 9.2%, p<10^-23), and preferential use of the shortest transcript (62.9% vs 30.6%, p<0.0003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-C52, and C91 combine cited literature about nuclear cycle timing and transcript abortion with original data analysis of gene structure. The statistical tests (Mann-Whitney and Fisher tests) are appropriate and show highly significant differences. However, C52 is somewhat speculative as it proposes advantage without direct functional testing, though the correlation is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C61",
+      "C116"
+    ],
+    "result": "H3K4me3 was not found in Drosophila nuclei prior to gene activation and only starts to be detectable during the MBT in both immunostainings and ChIP-seq data, suggesting it is unlikely to have a direct role in regulating zygotic genome activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C61, and C116 are supported by both immunostaining (Figure 4A) and ChIP-seq data (Figure 1C). The absence of signal before MBT is clear in both assays. The inference that H3K4me3 does not regulate zygotic genome activation (C61) is reasonable given the temporal pattern, though it remains an inference rather than direct functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "H3K27me3 can be detected in nuclei and polar bodies at the earliest cleavage stages but is undetectable in somatic nuclei until after the MBT, with ChIP-seq signal at Polycomb response elements (PREs) increasing over time, suggesting H3K27me3 is present in oocytes but may be diluted or erased during replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C117-C119 are supported by immunostaining data (Figure 4A) and ChIP-seq data at PREs (Figure 4B). The temporal pattern is clear and consistent across methods. The interpretation about dilution/erasure (C60) is supported by citation to Petruk et al., 2012, making it a reasonable inference rather than pure speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Pre-MBT genes have particularly low levels of H3K4me3 that accumulate at downstream nucleosomes, contrasting with MBT-maternal genes that show a sharp H3K4me3 peak at the +1 nucleosome (~200 bp downstream of TSS). This difference cannot be explained by nucleosome occupancy levels, which are not dramatically different between the two groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 and C120-C122 are supported by ChIP-seq data for H3K4me3 and MNase-seq data for nucleosome occupancy (Figure 4C). The comparison between pre-MBT and MBT-maternal genes is clear and the MNase-seq control addresses the alternative explanation of differential nucleosome occupancy. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C67",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C82"
+    ],
+    "result": "The global change in Pol II pausing correlates with distinct core promoter elements: MBT-maternal genes are enriched for dispersed initiation elements (Ohler1, Ohler6, Ohler7, DRE), MBT-zygotic genes are enriched for focused initiation/pausing elements (Inr, DPE, MTE, PB, GAGA), while pre-MBT genes are enriched for TATA, with specific enrichment patterns correlating with pausing behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C67, C69, C72-C75, and C82 are supported by systematic promoter motif analysis (Figure 5A) with appropriate statistical testing (Fisher tests with multiple testing correction, p<0.05). The correlation between promoter elements and Pol II occupancy profiles is consistent and biologically coherent. The analysis includes proper controls and the patterns are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Zelda motifs are highly enriched in the promoter region of pre-MBT genes across all three pre-MBT classes, but this enrichment does not correlate with Pol II pausing pattern. De novo motif analysis identified Zelda and TATA as the top two motifs for pre-MBT non-paused genes, while GAGA and DPE/MTE/PB-like motifs were top for MBT active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by promoter motif analysis (Figure 5\u2014figure supplement 1, Figure 5A) and de novo motif discovery using MEME (Figure 5B). The enrichment analysis uses appropriate statistical methods (random sampling for Zelda, p-values reported). The finding that Zelda enrichment doesn't correlate with pausing is important and clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Zelda, Inr, and TATA significantly co-occur among all Pol II-bound genes (pre-MBT and MBT genes) but not among all annotated genes, suggesting these motifs preferentially function together during early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C84 are supported by co-occurrence analysis (Figure 5\u2014figure supplement 2) using Fisher tests. The analysis compares different gene sets (all genes vs. early genes) and shows significant co-occurrence specifically in early development genes. The inference about preferential function (C84) is reasonable given the statistical enrichment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "A model is proposed where rapid pre-MBT transcription without Pol II pausing is mediated by Zelda bound close to a TATA-enriched promoter, while paused Pol II is established through GAF during the MBT at promoters with pausing elements (DPE, MTE, PB), representing two principle modes of zygotic gene activation with some genes showing dual behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 represent a model synthesizing multiple lines of evidence from the study. While speculative in nature (C85 and C86 are marked as SPECULATION), the model is well-supported by the promoter analysis, Pol II occupancy patterns, and temporal expression data. The existence of 'dual' genes (C87) provides direct evidence for genes with elements of both modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C103"
+    ],
+    "result": "Unphosphorylated Pol II can be detected in nuclei from the earliest cleavage stages, but TBP and Ser5-P Pol II (which marks transcriptional initiation) can only be first detected during nuclear cycles 8-12 when significant transcription of pre-MBT genes occurs, indicating de novo recruitment of Pol II to promoters during zygotic genome activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, C16, C17, and C103 are supported by immunostaining data (Figure 1A). The temporal pattern is clear and the inference about de novo recruitment (C17) is reasonable. However, the resolution of immunostaining may not detect very low levels of TBP or Ser5-P Pol II at earlier stages, so the claim of 'only first detected' should be interpreted as detection above background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Pre-MBT genes identified by ChIP-seq include previously described pre-MBT genes defined by in situ hybridization and microarray data from prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by comparison with previous studies (Figure 1\u2014figure supplement 2C) showing strong overlap with genes identified by De Renzis et al., 2007 and ten Bosch et al., 2006. This validates the ChIP-seq approach and demonstrates consistency with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The 117 pre-MBT genes identified include genes with known functions in sex determination, cellularization, anterio-posterior and dorso-ventral patterning, 14 precursors of non-coding RNAs involved in maternal RNA degradation, dosage compensation, and RNA splicing, as well as many genes of unknown function that are well conserved among insect species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by functional annotation (Table 1) and conservation analysis (Figure 1\u2014figure supplement 4). The functional categories are based on established knowledge and the conservation analysis uses phastCons scores. The characterization is descriptive and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "TBP occupancy is found upstream of the transcription start site (on average -20 bp) at pre-MBT genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by ChIP-seq data analysis (Figure 2). The average position of TBP upstream of the TSS is consistent with its known role in binding the TATA box, which is typically located ~25-30 bp upstream of the TSS. The measurement appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "A small number of pre-MBT genes have a higher pausing index, lack enrichment of Pol II within the gene body, and thus may be paused.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by ChIP-seq data analysis and is consistent with the identification of the 'pre-MBT paused' group (n=10) described in C34. The inference that these genes 'may be paused' is appropriately cautious given the small number and the data showing elevated pausing index.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "MBT-maternal genes (3163 genes) are enriched for broadly expressed housekeeping genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by citation to Rach et al., 2009. This is established knowledge used to justify the classification strategy. The claim is appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Pre-MBT genes are required for very early developmental events such as sex determination or cellularization, or may be involved in early patterning events requiring feedback regulation over time. While Pol II pausing is commonly found at developmental genes and may be advantageous for precise synchronous expression, a different mode of transcription is used during pre-MBT stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by citations to previous literature about gene functions and by the data presented in this study. The interpretation about different transcription modes (C90) is well-supported by the pausing data and promoter analysis. These are reasonable inferences about biological function based on the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "TATA is a strong core promoter element that efficiently supports transcription in vitro, mediates efficient re-initiation, correlates with transcriptional 'bursts' in vivo, and promotes pTEFb activity leading to more efficient elongation rates, suggesting TATA-enriched promoters and paused promoters have different transcription dynamics and serve different purposes during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are primarily based on citations to previous literature (Aso et al., 1994; Yean and Gralla, 1997, 1999; Zenklusen et al., 2008; Amir-Zilberstein et al., 2007; Montanuy et al., 2008). The synthesis and interpretation (C96) connecting these properties to the current findings is reasonable and well-supported by the data showing TATA enrichment at non-paused pre-MBT genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The difference between TATA-enriched promoters and paused promoters is particularly evident during zygotic genome activation and is proposed to be general and apply to later development, supported by observations in muscle development and statistical analyses suggesting Inr+TATA represents a separate promoter class in adult tissues. Since TATA properties are not Drosophila-specific, differences among promoter types and their propensity for Pol II pausing are likely conserved across animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C102 extend the findings beyond the current study. C97 is supported by the data presented. C98 and C102 are speculative proposals about generality across development and species. C99 and C100 cite supporting evidence from other contexts (Gaertner et al., 2012; FitzGerald et al., 2006; Lenhard et al., 2012). While the speculation is reasonable and supported by some evidence, direct testing in other developmental stages and organisms would be needed to fully support these broader claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C15",
+      "C46",
+      "C47",
+      "C53",
+      "C54",
+      "C55",
+      "C66",
+      "C68",
+      "C70",
+      "C76",
+      "C77"
+    ],
+    "result": "Background knowledge and context from prior literature about the midblastula transition, nuclear cycle timing, histone modifications in other systems, core promoter elements, and the role of Zelda in zygotic gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10-C12, C15, C46, C47, C53-C55, C66, C68, C70, C76, and C77 are all based on citations to previous literature and represent established knowledge used to contextualize the current study. These are appropriately cited and accurately represent the prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C109"
+    ],
+    "result": "Classification of genes based on ChIP-seq and RNA-seq data: pre-MBT genes are significantly bound in pre-MBT samples, MBT-maternal genes have maternally provided transcripts (RPKM > 1 during nc 10), MBT active genes are expressed during MBT (RPKM > 5 at nc 14D), MBT poised genes are below this threshold, and paused genes are expressed at lower levels and induced later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 and C109 describe the classification criteria and are supported by ChIP-seq and RNA-seq data (Figure 1C, Figure 2B). The RPKM thresholds are clearly stated and the classifications are objective and reproducible. These are methodological details that support the main findings.",
+    "result_type": "MINOR"
+  }
+]

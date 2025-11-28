@@ -1,0 +1,1646 @@
+{
+  "submission": {
+    "id": "71ea7ae9-8ec2-4d28-b491-2d1bd2477632",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:03:34.165803Z",
+    "updated_at": "2025-11-28T22:03:34.165803Z"
+  },
+  "content": [
+    {
+      "id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "submission_id": "71ea7ae9-8ec2-4d28-b491-2d1bd2477632",
+      "content_type": "manuscript",
+      "content_text": "# Molecular insights into RNA and DNA helicase evolution from the determinants of specificity for a DEAD-box RNA helicase\n\n## Authors\n\n- Anna L Mallam<sup>1</sup>\n- David J Sidote<sup>1</sup>\n- Alan M Lambowitz<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institute for Cellular and Molecular Biology University of Texas at Austin Austin United States\n2. Department of Molecular Biosciences University of Texas at Austin Austin United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow different helicase families with a conserved catalytic \u2018helicase core\u2019 evolved to function on varied RNA and DNA substrates by diverse mechanisms remains unclear. In this study, we used Mss116, a yeast DEAD-box protein that utilizes ATP to locally unwind dsRNA, to investigate helicase specificity and mechanism. Our results define the molecular basis for the substrate specificity of a DEAD-box protein. Additionally, they show that Mss116 has ambiguous substrate-binding properties and interacts with all four NTPs and both RNA and DNA. The efficiency of unwinding correlates with the stability of the \u2018closed-state\u2019 helicase core, a complex with nucleotide and nucleic acid that forms as duplexes are unwound. Crystal structures reveal that core stability is modulated by family-specific interactions that favor certain substrates. This suggests how present-day helicases diversified from an ancestral core with broad specificity by retaining core closure as a common catalytic mechanism while optimizing substrate-binding interactions for different cellular functions.\n\n## Introduction\n\nHelicases of superfamilies (SFs) 1 and 2 use ATP or other NTPs to bind, unwind, or remodel RNA or DNA in essentially all facets of nucleic acid metabolism (Preugschat et al., 1996; Tanaka and Schwer, 2005; Singleton et al., 2007; Fairman-Williams et al., 2010; Jarmoskaite and Russell, 2014). They contain a conserved \u2018helicase core\u2019 of two RecA-like domains but act on varied substrates by different mechanisms. SF1 and SF2 helicases can be grouped into families with distinct variations in specificity, mechanism, function, and appended domains (Figure 1A) (Gorbalenya and Koonin, 1993; Singleton et al., 2007; Fairman-Williams et al., 2010). The mechanisms by which SF1 and SF2 helicases act on RNA or DNA include non-processive unwinding of short duplexes (e.g., DEAD-box RNA helicases [Jarmoskaite and Russell, 2011; Linder and Jankowsky, 2011]), unwinding coupled to directional movement (\u2018translocation\u2019) along the unwound single strand (e.g., DEAH/RHA, NS3/NPH-II, and RecQ-like helicases [Pyle, 2008]), and binding or translocation along a duplex without unwinding (e.g., RIG-I-like and Swi/Snf helicases [Durr et al., 2005; Myong et al., 2009; Rawling and Pyle, 2014]) (Figure 1A). How helicases that share a conserved catalytic core evolved such functional diversity remains unknown.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain architecture and characteristics of helicases belonging to different SF1 and SF2 families (Fairman-Williams et al., 2010). Two other SF1 (Pif1-like and Upf1-like) and four other SF2 (Ski2-like; RecG-like; T1R; and Rad3/XPD) families have been identified (Fairman-Williams et al., 2010). Helicase core domains 1 and 2 are colored light blue and green, respectively, while appended domains and insertions, which vary in size, composition, and function, are colored orange; domains are not to scale. (B) Schematic of the domain architecture of the helicase core of Mss116 (D1, blue; D2, green; C-terminal extension of D2 [CTE], orange) showing the location of conserved DEAD-box sequence motifs (Fairman-Williams et al., 2010). Full-length Mss116 contains additional unstructured N-terminal (residues 37\u201387) and C-terminal (residues 598\u2013664) extensions that are not required for helicase activity (Cao et al., 2011; Mohr et al., 2011). (C) Structure of the closed-state helicase core of Mss116 (PDB accession 3I5X) (Del Campo and Lambowitz, 2009) bound to ssRNA (U10-RNA; yellow) and adenosine nucleotide (AMP-PNP; black). (D) Model for RNA duplex binding and unwinding by Mss116. The helicase core domains of Mss116 have modular roles in substrate loading (Mallam et al., 2012). D1 captures ATP in the open-state enzyme using the Q-motif, which coordinates the adenine base, and motifs I and II, which are the conserved triphosphate-binding loop and Mg2+-binding aspartic acid motifs, respectively, present in many other ATP-binding enzymes (Walker et al., 1982; Rudolph et al., 2006; Schutz et al., 2010; Mallam et al., 2012). D2 recognizes duplex RNA (Mallam et al., 2012). When ATP and dsRNA are bound to D1 and D2, respectively, core closure occurs, leading to unwinding of the dsRNA bound to D2 by bending one RNA strand and displacing the other. During unwinding and formation of the closed-state helicase core complex, ATP bound to D1 makes additional interactions with motifs Va and VI in D2. The closed-state helicase core bound to ssRNA and ATP represents the \u2018post-unwound\u2019 state of the enzyme (Figure 1C). ATP hydrolysis occurs in the closed state, followed by dissociation of Pi and ADP, which leads to the reopening of the core and the release of the bound ssRNA, thereby regenerating the enzyme (Henn et al., 2010; Cao et al., 2011).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Examples are taken from the helicase families shown in Figure 1A. Most are in complex with nucleic acid (yellow) and domains are colored as in Figure 1A. The composition and PDB accession code are given for each structure.\n\nHere, we use the yeast DEAD-box protein Mss116 (Figure 1B,C) as a model system to pinpoint the molecular basis for the specificity and mechanism of the conserved helicase core. Mss116 functions as a general RNA chaperone in mitochondrial intron splicing by locally unwinding and disrupting stable but inactive RNA structures that impede RNA folding (Huang et al., 2005; Del Campo et al., 2009; Potratz et al., 2011). As a general RNA chaperone, Mss116 binds diverse RNA substrates non-specifically and has high RNA helicase activity in the absence of partner proteins (Halls et al., 2007; Del Campo et al., 2009). This makes it an ideal model system to study the properties of an isolated helicase core. The helicase core of Mss116 consists of two RecA-like domains (D1 and D2) that are in an extended \u2018open state\u2019 in the absence of substrates (Mallam et al., 2011) and recognize ATP and duplex RNA in a modular manner (Mallam et al., 2012) (Figure 1D). Upon substrate binding, the two core domains join to form a \u2018closed state\u2019 containing an ATPase active site, while conserved DEAD-box protein motifs in D1 promote the unwinding of short duplexes bound to D2 by excluding one RNA strand and bending the other (Figure 1D). The closed-state complex bound to ssRNA and ATP represents the \u2018post-unwound\u2019 state of the helicase core (Figure 1C). ATP hydrolysis is required for core reopening and enzyme turnover (Liu et al., 2008; Cao et al., 2011).\n\nIn this study, we determined the structural and biochemical factors that govern how analogues of NTPs (ATP, CTP, GTP, and UTP) and different nucleic acids (single-stranded [ss] RNA, ssDNA, double-stranded [ds] RNA, A-form dsDNA, and B-form dsDNA) interact with the helicase core. In this way, we identify the core\u2013substrate interactions that dictate the physiological specificity and mechanism of Mss116. Our results define the structural and biochemical determinants for the substrate specificity of a DEAD-box protein. Furthermore, they demonstrate that Mss116 has surprisingly ambiguous substrate binding and unwinding properties. Considered in the context of other SF1 and SF2 helicases, our findings show how small structural changes within conserved regions of these protein families can facilitate the emergence of specialized enzymes with new activities and cellular functions.\n\n## Results\n\n### The biochemical basis for the ATP specificity of the helicase core of Mss116\n\nWe investigated how Mss116 specifies for ATP during local unwinding by comparing the ability of the helicase core (D1D2, residues 88\u2013597) to use different nucleotides to catalyze RNA unwinding. First, we measured the concentration of different NTP analogues required by the helicase core to unwind an RNA duplex under equilibrium conditions (Figure 2A). This was done by using a 12-base pair (bp) dsRNA, which was labeled with a fluorophore and quencher at its 5\u2032 and 3\u2032 ends, respectively. A native gel-based assay was then used to monitor unwinding by the increase in fluorescence in a closed-state core containing a bound single strand (Figure 2\u2014figure supplement 1). We find that all of the non-hydrolyzable analogues NDP-BeFx, where N = A, C, G, or U, can promote the unwinding of a dsRNA. However, ADP-BeFx is the most efficient with at least sixfold higher concentrations of C-, G-, or U-analogues required for RNA duplex unwinding (K1/2 = 0.14, 0.8, 0.8, and 2.4 mM, respectively; Figure 2A and Figure 2\u2014figure supplement 1B\u2013E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig2-v2.jpg)\n\n**Figure 2.:** (A) dsRNA unwinding by the MBP-tagged helicase core measured under equilibrium conditions using a gel-based fluorescence assay to monitor the formation of a closed-state complex containing bound ssRNA at increasing concentrations of NDP-BeFx, N = A, C, G, or U (Figure 2\u2014figure supplement 1). The fraction of unwound duplex was obtained by normalizing the band intensities separately for each gel using the parameters from the fit to a one-site binding model, as the change in fluorescence upon unwinding is different under each condition. The extent of unwinding with UDP-BeFx was less than that for the other nucleotide analogs, and the maximum concentration of UDP-BeFx used in this assay was insufficient to drive unwinding to completion (Figure 2\u2014figure supplement 1). This could be because UDP-BeFx bound at saturating concentrations to D1 cannot efficiently induce a closed state. (B) Equilibrium binding of A10-RNA to the MBP-tagged helicase core determined by fluorescence anisotropy measurements at increasing concentrations of NDP-BeFx, N = A, C, G, or U. (C) Equilibrium binding of A10-RNA to the MBP-tagged helicase core determined as in (B) at increasing concentrations of ADP-BeFx, AMP-PNP, ADP, and ADP + Pi. Error bars in (A\u2013C) represent the standard error for at least three independent measurements, and the error in the K1/2 or Kd represents the standard error of the non-linear regression. NB, no appreciable binding. In (B and C), the fraction of A10-RNA bound was calculated by normalizing against the anisotropy signal for unbound and fully bound substrate obtained from the fit to a one-site binding model. (D) Normalized SEC profiles monitored by absorbance at 260 nm (red) and 280 nm (black) for the helicase core in the absence of all substrates and in the presence of A10-RNA + NDP-BeFx, N = A, C, G, or U. An A260/A280 >1 at the maximum absorbance indicates the formation of a closed-state complex.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic representation of the equilibrium unwinding reaction measured in this assay. Unwinding was probed by using a 12-bp dsRNA substrate labeled with a fluorophore (6-carboxyfluorescein; FAM) and quencher (Iowa Black FQ; IBFQ) probes at the 5\u2032 and 3\u2032 ends, respectively. An increase in fluorescence of this substrate occurs when the helicase core unwinds the dsRNA and forms a closed-state bound to ssRNA. (B\u2013E) Representative unwinding assays for dsRNA (100 nM) by the helicase core of Mss116 (2 \u03bcM) measured at increasing concentrations of NDP-BeFx with N = A, C, G, and U for B\u2013E, respectively. Samples were loaded in the reaction medium and resolved in a non-denaturing 6% polyacrylamide gel run at 4\u00b0C in 0.5\u00d7 Tris/Borate/EDTA buffer (pH 8.3). Arrows mark complexes corresponding to the open- (in the absence of NDP-BeFx) and closed-state protein bound to RNA. Proteins have an N-terminal MBP tag to increase solubility under the EMSA conditions. The double band seen in some lanes could be the result of one or two protein molecules bound to a partially unwound duplex or to a closed-state with or without a partially unwound second strand. (F) Control unwinding assay using an equivalent 12-bp 5\u2032 FAM-dsRNA with no quencher to demonstrate that, under the assay conditions, the RNA is always bound to the helicase core and widely separated from free substrate.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic representation of the unwinding reaction measured in this assay. Unwinding was probed by using a 12-bp dsRNA substrate labeled with a fluorophore (6-carboxyfluorescein; FAM) and quencher (Iowa Black FQ; IBFQ) probes at the 5\u2032 and 3\u2032 ends, respectively (IDT). An increase in fluorescence of this substrate occurs upon unwinding and re-annealing to an unlabeled strand from a duplex of the same sequence that is present in excess. (B) Representative unwinding time course for labeled dsRNA (125 nM) by the helicase core of Mss116 (2 \u03bcM) measured at 5 mM ATP-Mg2+. After the addition of stop buffer to remove any bound protein, duplex samples were resolved in a non-denaturing 20% polyacrylamide gel run at 4\u00b0C in 1\u00d7 Tris/Borate/EDTA buffer (pH 8.3). (C) Representative unwinding time course for labeled dsRNA (125 nM) by the helicase core of Mss116 (2 \u03bcM) measured at 5 mM CTP-Mg2+ with samples resolved as in (B). The last lane represents the same duplex unwound by ATP after 60 min. (D) Kinetic unwinding profiles of dsRNA by Mss116 for NTP, N = A, C, G, or U. Error bars represent the standard error for at least three independent measurements, and the error in k1 represents the standard error of the non-linear regression. NU, no appreciable unwinding. Unwinding data for ATP were normalized using the parameters obtained from the fit to a first-order reaction with a single exponential. In the case of other nucleoside triphosphates where no unwinding was observed, data were normalized against the signal for a duplex fully unwound by ATP at the same concentration (see panel C, final lane). Assays were performed in a buffer containing 5 mM free Mg2+. Additional assays were performed at 0.5 mM Mg2+, as previous data indicate that the unwinding activity of Mss116 increases at lower Mg2+ concentrations (Halls et al., 2007). These gave similar results.\n\nKinetic unwinding assays were also performed using the same dye-labeled dsRNA in the presence of an unlabeled duplex. In these experiments, an increase in fluorescence occurs upon unwinding of a labeled duplex and subsequent re-annealing to an unlabeled strand. This was measured by isolating the duplexes using native gel electrophoresis at various times after unwinding was initiated by the addition of NTP, where N = A, C, G, or U (Figure 2\u2014figure supplement 2). These assays show that only ATP, and not other NTPs, catalyzes the unwinding of the dsRNA (Figure 2\u2014figure supplement 2B\u2013D). This indicates that under our assay conditions, the diphosphate beryllium fluoride analogue is necessary to promote unwinding with nucleotide bases other than adenine. This difference likely reflects that the NDP-BeFx analogues form longer-lived, more stable complexes with RNA than do the corresponding NTPs (Liu et al., 2014).\n\nWe next examined how the stability of the ternary closed-state complex with ssRNA and the same NTP analogues correlates with the efficiency of duplex unwinding. Equilibrium fluorescence anisotropy binding assays with a fluorescein (FAM)-labeled A10-RNA were used to monitor formation of the closed state with increasing concentrations of NDP-BeFx (N = A, C, G, or U; Figure 2B). These assays show that the closed-state complex is most stable with ADP-BeFx (Kd = 0.022 mM), while CDP-BeFx, GDP-BeFx, and UDP-BeFx promote formation of the closed state only at significantly higher concentrations of nucleotide analogue (Kd = 0.09, 0.11, and 0.63 mM, respectively). Similarly, analytical size-exclusion chromatography (SEC) shows that a closed-state helicase core with A10-RNA is maintained during elution for complexes containing ADP-BeFx, CDP-BeFx, or GDP-BeFx but not those containing UDP-BeFx, consistent with the latter complex having a lower stability (Figure 2D and Table 1). Together, these findings indicate that the unwinding efficiencies and closed-state core stabilities with different NTP analogues follow the same order of A > C, G > U from higher to lower efficiency and stability.\n\n**Table 1.**\n Size exclusion chromatography analysis of the helicase core of Mss116\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Elution volume at maximum absorbance/ml</th>\n      <th>A260/A280 of peak at maximum absorbance</th>\n      <th>Likely predominant state of core</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Free protein</td>\n    </tr>\n    <tr>\n      <td>D1D2 (Mss116 helicase core)</td>\n      <td>11.4</td>\n      <td>0.6</td>\n      <td>Open</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Free nucleic acid</td>\n    </tr>\n    <tr>\n      <td>dsRNA</td>\n      <td>16.3</td>\n      <td>2.1</td>\n      <td>\u2212</td>\n    </tr>\n    <tr>\n      <td>A-DNA duplex</td>\n      <td>15.1</td>\n      <td>1.6</td>\n      <td>\u2212</td>\n    </tr>\n    <tr>\n      <td>B-DNA duplex</td>\n      <td>15.3</td>\n      <td>1.9</td>\n      <td>\u2212</td>\n    </tr>\n    <tr>\n      <td>A10-RNA</td>\n      <td>18.6</td>\n      <td>3.0</td>\n      <td>\u2212</td>\n    </tr>\n    <tr>\n      <td>A10-DNA</td>\n      <td>16.6</td>\n      <td>3.4</td>\n      <td>\u2212</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Protein\u2013RNA\u2013nucleotide complexes*</td>\n    </tr>\n    <tr>\n      <td>D1D2\u2013dsRNA\u2013ADP-BeFx</td>\n      <td>9.6</td>\n      <td>1.1</td>\n      <td>Closed</td>\n    </tr>\n    <tr>\n      <td>D1D2\u2013A-DNA-duplex\u2013ADP-BeFx</td>\n      <td>9.6</td>\n      <td>1.2</td>\n      <td>Closed</td>\n    </tr>\n    <tr>\n      <td>D1D2\u2013B-DNA-duplex\u2013ADP-BeFx</td>\n      <td>11.4</td>\n      <td>0.6</td>\n      <td>Open</td>\n    </tr>\n    <tr>\n      <td>D1D2\u2013A10-RNA\u2013ADP-BeFx</td>\n      <td>11.0</td>\n      <td>2.2</td>\n      <td>Closed</td>\n    </tr>\n    <tr>\n      <td>D1D2\u2013A10-RNA\u2013CDP-BeFx</td>\n      <td>11.1</td>\n      <td>2.2</td>\n      <td>Closed</td>\n    </tr>\n    <tr>\n      <td>D1D2\u2013A10-RNA\u2013GDP-BeFx</td>\n      <td>11.2</td>\n      <td>2.3</td>\n      <td>Closed</td>\n    </tr>\n    <tr>\n      <td>D1D2\u2013A10-RNA\u2013UDP-BeFx</td>\n      <td>11.4</td>\n      <td>1.0</td>\n      <td>Open</td>\n    </tr>\n    <tr>\n      <td>D1D2\u2013A10-DNA\u2013ADP-BeFx</td>\n      <td>11.4</td>\n      <td>0.6</td>\n      <td>Open</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Parameters are quoted for the peak containing protein as determined by A214._\n\nAdditional fluorescence anisotropy assays show that a closed-state complex with A10-RNA forms at significantly lower concentrations of ADP-BeFx compared to AMP-PNP (Kd = 0.022 and 0.12 mM, respectively; Figure 2C). This indicates a more stable closed state and accounts for the higher unwinding activity observed for ADP-BeFx compared to AMP-PNP for several DEAD-box proteins (Liu et al., 2008). Further, neither ADP nor ADP + Pi in large excess led to the formation of a stable closed state in our assays (Figure 2C), suggesting that the effective concentration of the ATP \u03b3-phosphate is critical for the stability of the closed-state. This finding explains energetically why ATP hydrolysis leads to core re-opening and enzyme turnover in DEAD-box proteins (Henn et al., 2010; Cao et al., 2011) and perhaps other SF1 and SF2 helicases. Together, our results show the unwinding efficiency of Mss116 with different nucleotides is directly correlated with the stability of the post-unwound closed-state complex.\n\n### The structural basis for the ATP specificity of the helicase core of Mss116\n\nTo investigate the structural basis for the difference in stability of the closed state with different NTP analogs, we determined crystal structures of the closed-state helicase core with A10-RNA and either ADP-BeFx, CDP-BeFx, GDP-BeFx, or UDP-BeFx at 2.2, 2.7, 2.4, and 3.2 \u00c5 resolution, respectively (Figure 3 and Table 2). These structures show that the ATP-binding motifs I and VI make similar direct contacts to the phosphate groups of all four NTP analogs (Figure 3C). Motif II (DEAD) is positioned identically in all structures and interacts indirectly via waters with the BeF3 moiety, which corresponds to the ATP \u03b3-phosphate (Figure 3B). However, each base interacts differently in the ATP-binding pocket. The purine bases (A and G) are stacked optimally with F126 in the Q-motif, which primarily confers ATP specificity in DEAD-box proteins (Linder and Jankowsky, 2011), whereas the pyrimidine bases (C and U) adopt a less favorable stacking orientation with this residue (Figure 3B). Also, fewer direct contacts are made to the C, G, and U bases than to A (Figure 3C). In particular, compared to the closed-state structure with ADP-BeFx, two hydrogen (H)-bonds from G128 and Q133 in the Q-motif to the base are absent in the complex with GDP-BeFx, and all of the direct interactions of the Q-motif with the base are missing in the structures with CDP- or UDP-BeFx. The fewer contacts of all other bases relative to adenine and the less favorable stacking of pyrimidine bases in the ATP-binding pocket explain the relative stabilities of the closed-state complexes and reveal how the helicase core of Mss116 adapted to unwind RNA most efficiently using ATP.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig3-v2.jpg)\n\n**Figure 3.:** (A) Crystal structures of the closed-state helicase core of Mss116 bound to ssRNA and different nucleotide analogues (D1D2\u2013A10-RNA\u2013NDP-BeFx for N = A, C, G, or U). Structures are colored according to the scheme in Figure 1C. (B) Comparisons of the protein\u2013substrate interactions in the NDP-BeFx binding pockets of the structures shown in (A). Side chains that make direct contacts with the NDP are shown as ball and stick models. A 2Fo \u2212 Fc electron density map contoured at 1.0 \u03c3 for the NDP-BeFx ligand is shown in gray. Mg2+ ions and water molecules are shown as green and red spheres, respectively, and the atoms of BeF3 are shown in purple (Be) and yellow (F). Motif II (\u2018DEAD\u2019) makes indirect contacts via water molecules to the BeF3 moiety, which corresponds to the \u03b3-phosphate of ATP. (C) Schematics of direct NDP\u2013protein interactions for the structures shown in (A). See also Table 2.\n\n**Table 2.**\n Crystallographic data and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Complex</th>\n      <th>D1D2\u2013A10-RNA\u2013ADP-BeFx</th>\n      <th>D1D2\u2013A10-RNA\u2013CDP-BeFx</th>\n      <th>D1D2\u2013A10-RNA\u2013GDP-BeFx</th>\n      <th>D1D2\u2013A10-RNA\u2013UDP-BeFx</th>\n      <th>D1D2\u2013A10-DNA\u2013ADP-BeFx</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"6\">Data collection</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P21212</td>\n      <td>P21212</td>\n      <td>P21212</td>\n      <td>P21212</td>\n      <td>P21212</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">Unit cell</td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>89.83, 126.26, 55.55</td>\n      <td>89.64, 126.84, 55.03</td>\n      <td>89.99, 126.61, 55.55</td>\n      <td>89.76, 126.51, 55.51</td>\n      <td>90.39, 126.19, 55.23</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 90, 90</td>\n      <td>90, 90, 90</td>\n      <td>90, 90, 90</td>\n      <td>90, 90, 90</td>\n      <td>90, 90, 90</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.0000</td>\n      <td>1.0000</td>\n      <td>1.0000</td>\n      <td>1.0000</td>\n      <td>1.0000</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>222,375</td>\n      <td>129,478</td>\n      <td>565,729</td>\n      <td>86,580</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>32,642</td>\n      <td>16,982</td>\n      <td>27,148</td>\n      <td>10,514</td>\n      <td>13,111</td>\n    </tr>\n    <tr>\n      <td>Resolution* (\u00c5)</td>\n      <td>50 \u2212 2.20 (2.24 \u2212 2.20)</td>\n      <td>50 \u2212 2.60 (2.64 \u2212 2.60)</td>\n      <td>50 \u2212 2.35 (2.39 \u2212 2.35)</td>\n      <td>50 \u2212 3.30 (3.36 \u2212 3.30)</td>\n      <td>50 \u2212 3.00 (3.05 \u2212 3.00)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>6.8 (5.4)</td>\n      <td>6.1 (5.4)</td>\n      <td>19.2 (14.1)</td>\n      <td>8.2 (8.1)</td>\n      <td>5.5 (4.9)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.4 (97.7)</td>\n      <td>99.7 (98.3)</td>\n      <td>99.5 (94.9)</td>\n      <td>99.5 (95.0)</td>\n      <td>96.7 (88.8)</td>\n    </tr>\n    <tr>\n      <td>Overall I/\u03c3(I)</td>\n      <td>19.0 (1.5)</td>\n      <td>12.1 (1.5)</td>\n      <td>26.4 (2.4)</td>\n      <td>11.1 (2.5)</td>\n      <td>7.1 (1.5)</td>\n    </tr>\n    <tr>\n      <td>Rmerge\u2020 (%)</td>\n      <td>9.7 (60.3)</td>\n      <td>13.8 (77.0)</td>\n      <td>13.3 (99.7)</td>\n      <td>19.8 (66.5)</td>\n      <td>19.8 (61.2)</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>47.24 \u2212 2.20</td>\n      <td>47.07 \u2212 2.74</td>\n      <td>47.28 \u2212 2.35</td>\n      <td>47.22 \u2212 3.21</td>\n      <td>44.15 \u2212 2.96</td>\n    </tr>\n    <tr>\n      <td>No. of reflections</td>\n      <td>32,642</td>\n      <td>16,982</td>\n      <td>27,146</td>\n      <td>10,514</td>\n      <td>13,111</td>\n    </tr>\n    <tr>\n      <td>Rwork (%)</td>\n      <td>21.6</td>\n      <td>22.3</td>\n      <td>23.09</td>\n      <td>22.16</td>\n      <td>19.6</td>\n    </tr>\n    <tr>\n      <td>Rfree\u00a7 (%)</td>\n      <td>25.4</td>\n      <td>26.7</td>\n      <td>26.00</td>\n      <td>27.43</td>\n      <td>24.4</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">No. atoms</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>7911</td>\n      <td>7519</td>\n      <td>7723</td>\n      <td>7528</td>\n      <td>7774</td>\n    </tr>\n    <tr>\n      <td>Nucleic acid</td>\n      <td>232</td>\n      <td>298</td>\n      <td>230</td>\n      <td>232</td>\n      <td>147</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>45</td>\n      <td>42</td>\n      <td>43</td>\n      <td>40</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>115</td>\n      <td>28</td>\n      <td>61</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Rmsd bonds (\u00c5)</td>\n      <td>0.003</td>\n      <td>0.003</td>\n      <td>0.003</td>\n      <td>0.004</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Rmsd angles (\u00b0)</td>\n      <td>0.696</td>\n      <td>0.629</td>\n      <td>0.710</td>\n      <td>0.968</td>\n      <td>0.751</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored# (%)</td>\n      <td>97.23</td>\n      <td>96.01</td>\n      <td>96.84</td>\n      <td>98.40</td>\n      <td>97.04</td>\n    </tr>\n    <tr>\n      <td>Ramachandran allowed (%)</td>\n      <td>2.30</td>\n      <td>1.94</td>\n      <td>2.19</td>\n      <td>1.40</td>\n      <td>1.98</td>\n    </tr>\n    <tr>\n      <td>PDB ID</td>\n      <td>4TYW</td>\n      <td>4TYY</td>\n      <td>4TZ0</td>\n      <td>4TZ6</td>\n      <td>4TYN</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The numbers in parentheses refer to the highest resolution shell.\u2020Rmerge = \u2211hkl \u2211i |Ihkl,i \u2212 \u2329Ihkl\u232a|/\u2211hkl \u2211\u2329Ihkl\u232a.\u00a7Rfree was calculated with 5% of reflections that were excluded from refinement.#Analysis by MolProbity (Chen et al., 2010)._\n\n### The biochemical basis for the RNA specificity of the helicase core of Mss116\n\nD2 of Mss116 (residues 342\u2013597) functions as an RNA-duplex recognition domain in the open-state enzyme (Mallam et al., 2012) (Figure 1D). To determine how Mss116 specifies for dsRNA, we first examined how 12-bp RNA and DNA duplexes of different geometries (Figure 4) interact with D2 in the absence of nucleotide. EMSAs using fluorescein amidite (FAM)-labeled duplexes show that D2 has surprisingly similar affinities for dsRNA (K1/2 = 400 nM) and A-DNA and B-DNA duplexes (K1/2 = 410 and 510 nM, respectively) (Figure 5A and Figure 5\u2014figure supplement 1A\u2013C). Circular dichroism (CD) measurements confirmed that the geometry of the A-DNA and B-DNA duplexes is maintained upon binding to D2, and that binding does not induce a B- to A-form transition (Figure 4E and Figure 4\u2014figure supplement 1). The B-DNA duplex also competitively displaces dsRNA bound to D2 (Ki = 1700 nM) (Figure 5B). These results indicate that D2 can bind dsRNA and dsDNA of A- or B-form geometry in the dsRNA binding pocket even with the different spacing of the backbone phosphate groups (Mallam et al., 2012). Our findings are consistent with recent studies showing that several DEAD-box proteins can interact with dsDNA (Kammel et al., 2013; Tuteja et al., 2014). D2 of Mss116 is therefore a general and flexible nucleic acid duplex binding domain.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) 12-bp model substrates of (A) dsRNA (yellow); (B) A-DNA duplex (pink); and (C) B-DNA duplex (red). The duplex geometry of the DNA substrates has been previously characterized in solution by CD measurements (Basham et al., 1995) and X-ray crystallography (Verdaguer et al., 1991). The duplexes are predicted to have similar stabilities (predicted melting temperatures are 61.0\u00b0C, 59.4\u00b0C, and 63.9\u00b0C for the dsRNA, A-DNA, and B-DNA duplexes, respectively [Owczarzy et al., 2008]). (D) CD spectra of A-DNA (pink) and B-DNA (red) duplexes, which are consistent with previously reported spectra of identical duplexes (Basham et al., 1995; Kypr et al., 2009). The CD-spectrum of the A-DNA duplex has a characteristic strong positive peak at 260 nm and negative peaks at 240 and 210 nm (Ivanov et al., 1973). The B-DNA duplex is characterized by a positive peak at 260\u2013280 nm and a negative peak at \u223c245 nm (Kypr et al., 2009). (E) CD spectra of the B-DNA duplex (100 \u03bcM) in the absence (solid red line) and presence (dashed black line) of D2 (120 \u03bcM). Spectra are shown in units of molar circular dichroism (\u0394\u03b5) and are background subtracted for the presence of protein.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Spectra are shown in units of molar circular dichroism (\u0394\u03b5) and are background subtracted for the presence of protein. The characteristic strong positive and negative peaks in the CD-spectrum of the A-DNA duplex at 260 nm and 240 nm, respectively, remain in the presence of protein.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig5-v2.jpg)\n\n**Figure 5.:** (A) Equilibrium binding of duplex substrates to MBP-tagged D2 in the absence of nucleotide determined by EMSA. (B) Competitive displacement from MBP-tagged D2 of 5\u2032 FAM-B-DNA duplex (250 nM) by unlabeled dsRNA (0\u20136 \u03bcM, yellow, Ki = 860 \u00b1 40 nM) and of 5\u2032 FAM-dsRNA (250 nM) by unlabeled B-DNA duplex (0\u20136 \u03bcM, red, Ki = 1700 \u00b1 200 nM). (C) Unwinding of duplex substrates by the MBP-tagged helicase core measured under equilibrium conditions by using a gel-based fluorescence assay to monitor the formation of a closed-state complex at increasing concentrations of ADP-BeFx (see also Figure 2\u2014figure supplement 1). NU, no appreciable unwinding. (D) Equilibrium binding of A10-DNA to the MBP-tagged helicase core determined by fluorescence anisotropy measurements at increasing concentrations of ADP-BeFx. The binding of A10-RNA under the same conditions is shown for comparison (taken from Figure 2B). In (A\u2013D), data were normalized using the signal obtained from the fit to the appropriate model outlined in the \u2018Materials and methods\u2019. (E) Normalized SEC profiles monitored by the absorbance at 260 nm (red) and 280 nm (black) for the helicase core in the absence of substrates (top) and in the presence of either A10-RNA + ADP-BeFx (middle) and A10-DNA + ADP-BeFx (bottom). An A260/A280 >1 at the maximum absorbance indicates the formation of a stable closed-state complex (Table 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative binding assays of Mss116 MBP-D2 (0\u20136 \u03bcM) to a 5\u2032 FAM-labeled 12-bp duplex substrate (100 nM) for (A) dsRNA; (B) an A-DNA duplex; and (C) a B-DNA duplex. Samples were loaded in the reaction medium and resolved in a non-denaturing 6% polyacrylamide gel run at 4\u00b0C in 0.5\u00d7 Tris/Borate/EDTA buffer (pH 8.3). Arrows mark the positions of free and bound duplex substrate. Proteins have an N-terminal MBP tag to increase solubility under the EMSA conditions. The binding data show cooperativity for all duplex substrates (Hill coefficients are 2.2, 1.5, and 1.6 for the dsRNA, A-DNA, and B-DNA duplexes, respectively, Figure 5A), which suggests that multiple molecules of D2 can bind to a single duplex substrate. The second band corresponding to bound substrate seen in some lanes could also be indicative of this. (D) Representative binding assays of Mss116 MBP-D1 (0\u20136 \u03bcM) to a 5\u2032 FAM-B-DNA duplex (100 nM) to demonstrate minimal binding of D1 to the B-DNA duplex under these experimental conditions.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Unwinding was probed by using the duplex substrates shown in Figure 4A\u2013C, which were labeled with fluorophore (FAM) and quencher (IBFQ) probes at the 5\u2032 and 3\u2032 ends, respectively (IDT). A change in fluorescence of these substrates occurs when the helicase core unwinds the duplex and forms a closed-state bound to a single-stranded region of RNA (Figure 2\u2014figure supplement 1A). (A\u2013C) Representative unwinding assays for (A) dsRNA; (B) A-DNA; and (C) B-DNA duplexes by the MBP-tagged helicase core (2 \u03bcM) measured at increasing concentrations of ADP-BeFx (0\u20134 mM), as described in Figure 2\u2014figure supplement 1A. Arrows mark the complexes corresponding to the open and closed state protein bound to nucleic acid.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Kinetic unwinding profiles of dsRNA, A-DNA, and B-DNA duplexes catalyzed by D1D2 (2 \u03bcM) and ATP (5 mM). Error bars represent the standard error for at least three independent measurements, and the error in k1 represents the standard error of the non-linear regression. NU, no appreciable unwinding. Data were normalized using the parameters obtained from the fit to a first-order reaction with a single exponential. In the case of B-DNA when no unwinding was observed, data were normalized using a signal for a fully unwound duplex. This was obtained unwinding and re-annealing a control sample containing the same amount of labeled and unlabeled duplex by heating to 94\u00b0C for 3 min and cooling to room temperature on the bench.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** SEC was performed using a Superdex 75 10/300 GL column (GE Healthcare) and a BioLogic DuoFlow chromatography system (Bio-Rad) in a buffer of 20 mM Tris\u2013HCl (pH 7.5), 200 mM KCl, 10% glycerol, 1 mM DTT, 5 mM MgCl2. Complexes were assembled as outlined in the \u2018Materials and methods\u2019 and SEC data were measured using absorbance at 260 nm (red) and 280 nm (black). Example elution profiles are shown for D1D2 in the absence of substrates; in the presence of dsRNA only; in the presence of dsRNA and ADP-BeFx; in the presence of A-DNA-duplex and ADP-BeFx; and in the presence of B-DNA duplex and ADP-BeFx. The ratio of A260/A280, which is approximately 0.5 for free protein and >1 for protein\u2013nucleic acid complexes, was used as an indicator of the formation of a closed-state complex that contains nucleic acid. However, the smaller elution volume at maximum A260 for dsRNA\u2013D1D2\u2013ADP-BeFx and A-DNA duplex-D1D2\u2013ADP-BeFx (Ve = 9.6 ml for both) suggests the formation of some higher-order closed-state complexes, possibly with two protein molecules bound on either side of a partially unwound duplex. This is consistent with the cooperativity in duplex unwinding reactions previously observed for Mss116 (Halls et al., 2007).\n\nWe next examined the ability of Mss116 to unwind the same RNA and DNA model duplexes in the presence of increasing concentrations of ADP-BeFx (Figure 5C and Figure 5\u2014figure supplement 2). Equilibrium duplex unwinding assays (Figure 2\u2014figure supplement 1A) show that Mss116 can unwind dsRNA and an A-DNA duplex, although a lower concentration of ADP-BeFx is required to unwind dsRNA (K1/2 = 0.14 and 0.25 mM, respectively). Notably, we did not observe any appreciable unwinding of the B-DNA duplex under these conditions (Figure 5C and Figure 5\u2014figure supplement 2). In this case, kinetic unwinding assays demonstrate the same trend. They show that Mss116 can unwind dsRNA and the A-DNA duplex in the presence of ATP with observed first-order rate constants (k1) of 0.46 and 0.15 min\u22121, respectively, but does not unwind the B-DNA duplex (Figure 5\u2014figure supplement 3). Similarly, analytical SEC showed elution profiles for D1D2 that are consistent with closed-state complexes when measured with ADP-BeFx and dsRNA or the A-DNA duplex but not the B-DNA duplex (Table 1 and Figure 5\u2014figure supplement 4). These data indicate that Mss116 selectively unwinds A-form duplex nucleic acids. Further, contrary to what was previously thought (Fairman-Williams et al., 2010), they demonstrate that a DEAD-box protein can unwind an all DNA duplex in a nucleotide-dependent manner if it has A-form geometry. Although D2 can bind a B-DNA duplex, a closed-state complex does not readily form with B-form DNA and unwinding of this substrate does not occur.\n\nTo further investigate why Mss116 preferentially unwinds RNA duplexes, we compared the characteristics of the closed-state helicase core with equivalent ssRNA (A10-RNA) and ssDNA (A10-DNA) substrates. Equilibrium fluorescence anisotropy assays in the presence of increasing concentrations of ADP-BeFx indicate that the closed-state complex forms with both substrates, but at a much lower concentration of ADP-BeFx for ssRNA than for ssDNA (Kd = 0.022 and 0.79 mM, respectively; Figure 5D). SEC data also demonstrate that a closed-state complex with A10-RNA and ADP-BeFx remains intact during elution, whereas an identical complex with A10-DNA dissociates on the SEC column (Figure 5E and Table 1). Thus, the closed-state core is significantly more stable and long-lived with ssRNA than with ssDNA.\n\n### The structural basis for the RNA specificity of the helicase core of Mss116\n\nTo probe the structural basis for the difference in stability of the closed-state complex with ssRNA compared to ssDNA, we determined crystal structures of the closed-state helicase core with ADP-BeFx and either A10-RNA or A10-DNA at 2.5 and 2.9 \u00c5 resolutions, respectively (Figure 6 and Table 2). These structures confirm that Mss116 can form the same closed-state complex with ssRNA and ssDNA and allow a direct comparison of the interactions made by these substrates with the same helicase core. The structures show that trajectories of the bound ssRNA and ssDNA are very similar (Figure 6B) and that most of the interactions between the conserved nucleic acid binding motifs IV\u2013V and the phosphate backbone are identical in both complexes (Figure 6C). However, the closed-state complex with ssRNA contains protein contacts to RNA 2\u2032-OH groups that are not present in the closed-state complex with ssDNA. These include four from residues in motifs Ia and Ic in D1 that form during core closure and account for the higher stability of the closed-state with ssRNA (Figure 5D,E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig6-v2.jpg)\n\n**Figure 6.:** (A) Closed state crystal structures of the helicase core of Mss116 with the ATP analogue ADP-BeFx and A10-RNA (yellow) or A10-DNA (red). The helicase core is colored as in Figure 1C. (B) A comparison of the binding trajectory of equivalent nucleotides of A10-RNA (yellow) and A10-DNA (red) bound in the closed state. (C) A schematic comparing the interactions of A10-RNA (yellow) and A10-DNA (red) with the closed-state helicase core, colored blue and green to D1 and D2, respectively. Interactions unique to each structure are colored black.\n\n## Discussion\n\nCollectively our results elucidate the basis for the physiological preference of the DEAD-box protein Mss116 for ATP and RNA, but also show that the helicase core has a surprising degree of substrate ambiguity. This is a consequence of the ability of conserved helicase motifs to interact with the phosphate groups of different NTPs or nucleic acids and promote the formation of the same closed-state complex (Figure 3A and Figure 6A). The preference of Mss116 for ATP is dictated by optimal base-stacking and H-bonding interactions between the Q-motif and adenine base (Figure 3B,C). However, interactions between conserved motifs I, II, and VI and nucleotide phosphate moieties are sufficient to promote duplex unwinding at lower efficiency irrespective of the nucleotide base (Figure 2A and Figure 3B,C).\n\nThe specificity of Mss116 for unwinding RNA duplexes is dictated by both A-form geometry (Figure 5C) and interactions by motifs Ia and Ic in D1 with 2\u2032-OH groups of ssRNA in the closed state (Figure 5D and Figure 6C). Additionally, Mss116 belongs to a subclass of DEAD-box proteins that has a CTE appended to D2 (Figure 1B) (Mohr et al., 2008). This CTE makes additional 2\u2032-OH contacts to dsRNA in the open state (Mallam et al., 2012) that may favor its binding to D2 (Figure 5B). Nevertheless, the interactions of nucleic acid-binding motifs with the phosphate backbone are sufficient to enable Mss116 to unwind A-form DNA duplexes at lower efficiency (Figure 5C and Figure 5\u2014figure supplement 3). Mss116 cannot unwind a B-form DNA duplex (Figure 5C and Figure 5\u2014figure supplement 3), and a model of the closed state with a B-DNA duplex indicates that the helicase motifs in D1 that clash with dsRNA (Mallam et al., 2012) (Figure 7A) are not positioned to catalyze the unwinding of longer, thinner B-form duplexes (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04630/elife-04630-fig7-v2.jpg)\n\n**Figure 7.:** (A) Surface representation of closed-state Mss116 with dsRNA modeled in the duplex RNA-binding pocket of D2. Sterically incompatible regions of D1 are highlighted in red, and these indicate how D1 promotes RNA unwinding upon core closure by disrupting the base pairing in the dsRNA. In particular, helicase motifs Ia, Ib, and Ic and the DEAD-box specific post-II motif in D1 displace one RNA strand and bend the other during RNA duplex unwinding (Mallam et al., 2012). (B) Surface representation of closed-state Mss116 with a B-DNA duplex, which is longer and thinner than an A-form duplex (Dickerson et al., 1982), modeled in the duplex RNA-binding pocket of D2. There are no appreciable clashes between dsDNA and the core in this model, which suggests why core closure does not promote unwinding of a B-DNA duplex (Figure 5C and Figure 5\u2014figure supplement 3). (C) Closed-state structure of D1-D3 of human RIG-I helicase (PDB = 3TMI) bound to dsRNA (Jiang et al., 2011). dsRNA is accommodated in the closed-state of RIG-I, which explains how it functions by binding and/or translocating along a duplex RNA substrate (Myong et al., 2009; Rawling and Pyle, 2014). (D) Closed-state model of Sulfolobus solfataricus Swi2/Snf2 helicase core and a B-DNA duplex adapted from Durr et al. (2005). This model suggests that the Swi2/Snf2 helicase core can accommodate a B-form DNA duplex in a closed-state conformation and explains how helicases in this family function by translocating along DNA duplexes (Figure 1A). Proteins and nucleic acids are colored as in Figure 1.\n\nImportantly, the substrate ambiguity of Mss116 suggests an evolutionary scenario for how SF1 and SF2 helicases diverged from an ancestral helicase core with broad specificity into specialized enzymes. In each case, core closure was retained as a catalytic mechanism using the interactions common to all NTP or nucleic acid substrates predicted from our results. However, the stability of the closed-state was further modulated by family-specific interactions that favor a particular NTP and nucleic acid. Thus, helicase families that display the most substrate ambiguity by utilizing all four NTPs and function on either DNA or RNA (for example the DEAH/RHA [Tanaka and Schwer, 2005] and NS3/NPH-II [Preugschat et al., 1996] families; Figure 1A) may contain a core that functions similarly to that of an ancestral helicase. Helicases that preferentially use ATP maintained the conserved interactions with nucleotide phosphate groups but acquired additional interactions with the adenine base that further stabilize the closed-state complex. Similarly, DEAD-box proteins, which act preferentially on RNA (Fairman-Williams et al., 2010), maintained conserved interactions with the nucleic acid backbone but evolved specificity for A-form duplexes and additional stabilizing interactions with RNA 2\u2032-OH groups in the closed state, as demonstrated here for Mss116. The lack of unwinding activity in some DEAD-box proteins may stem from structural changes in the helicase core that mitigate RNA bending or strand displacement (Young et al., 2013). Helicase families that function on DNA (for example, the Swi/Snf, RecQ-like, and UvrD/Rep families) could have diversified by the preservation of conserved interactions with the nucleic acid backbone combined with the selection of additional interactions that favor B-form duplexes and/or disfavor nucleic acids with 2\u2032-OH groups.\n\nSimilar inferences can be made from our data about the evolution of distinct mechanisms in SF1 and SF2 families (Figure 1A). We propose that although core-closure was retained as a mode of catalysis, the differences in the stability of the closed-state complex between helicase families allowed the diversification of the observed helicase mechanism. Thus, the localized unwinding mechanism used by DEAD-box proteins (Yang et al., 2007) likely evolved by the selection of a helicase core that is able to \u2018clamp\u2019 ssRNA and form a highly stable closed-state complex (Figure 5D,E). This mode of interaction compensates for the energy cost to locally unwind an RNA duplex, which is critical for DEAD-box protein function (Del Campo et al., 2009). In comparison, helicase cores that diverged to form less stable, more transient closed states with ssRNA or ssDNA would favor a mechanism that involved loading and translocating along a single strand (for example, NS3/NPH-II and RecQ-like helicases; Figure 1A).\n\nOur data also demonstrate that the stability of the closed state depends upon interactions with nucleotides as well as nucleic acids (Figure 2). The DEAH family of helicases are a potential example of a case where a sequence change in motif II compared to DEAD-box proteins (\u2018DEAH\u2019 instead of \u2018DEAD\u2019) might result in a weaker interaction with the ATP \u03b3-phosphate and favor the observed switch from localized to translocation-based unwinding (Figure 1A). More generally, ATP-dependent core closure to form a ternary complex with nucleic acid may have evolved from tighter to weaker binding as the helicase mechanism concurrently evolved from localized to translocation-based. This is in addition to structural features, such as extra terminal domains or \u03b2-hairpins within the helicase core, which favor translocation-based unwinding in some helicase families (Fairman-Williams et al., 2010). Protein cofactors may also play a role in helicase substrate specificity, as illustrated for the DEAD-box protein Rok1, whose cofactor Rrp5 increases the specificity of the helicase core 10-fold for a pre-rRNA duplex (Young et al., 2013).\n\nFinally, other SF2 helicases have evolved to optimally accommodate dsRNA (e.g., RIG-I) or dsDNA (e.g., Sulfolobus solfataricus Swi2/Snf2) in a closed state complex and translocate with no observable unwinding (Figure 1A, Figure 7C\u2013D) (Durr et al., 2005; Myong et al., 2009; Jiang et al., 2011). In these cases, subtle changes in the closed-state core, perhaps combined with additional flanking domains, enable the helicase to bind duplex nucleic acid without the need to overcome the energetic barrier to unwinding and lead to this distinct mechanism of action. It has been hypothesized that during evolution, progenitor enzymes of low activity and broad specificity diverge into families of more potent and highly specialized enzymes (Jensen, 1976; Khersonsky and Tawfik, 2010). Taken together, our findings suggest how a progenitor helicase core that had broad specificity and used conserved motifs to recognize the phosphate groups of NTPs and the backbone of nucleic acids diverged to present day SF1 and SF2 helicases with different cellular functions.\n\n## Materials and methods\n\n### Oligonucleotides\n\nUnlabeled self-complementary RNA or DNA oligonucleotides (Integrated DNA Technologies, IDT, Coralville, IO; Figure 4A\u2013C) were annealed to form 12-bp RNA or DNA duplexes by heating solutions at 6 mM single strands in 100 mM potassium acetate, 30 mM HEPES (pH 7.5) at 94\u00b0C for 1 min and then slowly cooling to room temperature over 1 hr. Labeled duplexes for unwinding and binding assays were annealed similarly at 200 \u03bcM single strands. Sequences for 12-bp dsDNA substrates were chosen based upon previous studies which indicated that they adopt either A-form or B-form geometry (Basham et al., 1995; Kypr et al., 2009). We further characterized these substrates by using circular dichroism (CD) to confirm that they retained the required duplex geometry under our experimental conditions in the absence and presence of protein (Figure 4D,E and Figure 4\u2014figure supplement 1).\n\n### Protein expression and purification\n\nThe helicase core of Mss116 (D1D2) and separate domains D1 and D2 were expressed as N-terminal MalE fusions in Escherichia coli Rosetta 2 (EMD Biosciences, Germany), grown in ZYP-5052 auto-inducing medium for 24 hr at 22\u00b0C, and purified at 4\u00b0C, as described (Del Campo and Lambowitz, 2009; Mallam et al., 2011, 2012). Proteins for binding and unwinding assays were exchanged into a storage buffer of 20 mM Tris\u2013HCl (pH 7.5), 200 mM KCl, 1 mM dithiothreitol (DTT), 10% glycerol during a final SEC purification step. D1D2 for crystallization was dialyzed into 10 mM Tris\u2013HCl (pH 7.5), 250 mM NaCl, 1 mM DTT, 50 mM arginine + glutamine, 50% glycerol. All proteins were stored at \u221280\u00b0C before use.\n\n### Duplex-unwinding assays in the presence of nucleotide\n\nEquilibrium unwinding of 12-bp dsRNA, A-form DNA, and B-form DNA duplexes was measured in increasing concentrations of NDP-BeFx (N = A, C, G, or U) using a gel-based fluorescence assay to monitor the formation of a closed-state complex containing a bound single-stranded substrate. Duplexes were labeled with a fluorescent probe (FAM) and quencher (Iowa Black FQ) at the 5\u2032 and 3\u2032 ends, respectively. These substrates gave a change in fluorescence upon unwinding and formation of a closed state (Figure 2\u2014figure supplement 1A). NDP-BeFx (N = A, C, G, or U) was prepared as described (Del Campo and Lambowitz, 2009). Measurements were performed using MBP-tagged D1D2 to increase protein solubility under the experimental conditions. MBP-D1D2 (2 \u03bcM) was incubated with the appropriate duplex substrate (100 nM) and increasing concentrations of NDP-BeFx-Mg2+ (ranging from 0 to 20 mM) at 22\u00b0C for at least 1 hr in a reaction medium containing 20 mM Tris\u2013HCl (pH 7.5), 100 mM KCl, 10% glycerol, 1 mM DTT, 5 mM MgCl2, and 0.1 mg/ml of bovine serum albumin. The protein concentration was chosen so that all of the duplex substrate is bound in the open state at equilibrium (Figure 5A). Samples were analyzed in a non-denaturing 6% polyacrylamide gel run at 4\u00b0C for 60 min. The fluorescence signal of the bound duplex substrate was quantified by using a Typhoon imager (GE Healthcare, UK) to measure the formation of a closed-state complex containing a single-stranded nucleic acid region, indicating duplex unwinding (Figure 2\u2014figure supplement 1). The apparent fraction of unwound duplex at increasing concentrations of NDP-BeFx was quantified by using ImageJ and fit to a one-site binding model to estimate the concentration of nucleotide at the midpoint (K1/2) of the unwinding reaction. In all cases, equilibrium was verified by additional assays for samples that were incubated for extended times (up to approximately 4 hr), which gave the same unwinding profiles as those incubated for 1 hr.\n\nKinetic-unwinding assays of 12-bp dsRNA, A-form DNA, and B-form DNA duplexes by the helicase core were performed with the same fluorophore\u2013quencher labeled probes (Figure 2\u2014figure supplement 1A) in the presence of 5 mM NTP (N = A, C, G, or U). In these assays, a change in the fluorescence of the labeled duplex was seen upon unwinding and subsequent re-annealing to form a duplex with an unlabeled strand of the same sequence without a quencher present in excess (Figure 2\u2014figure supplement 2). Annealing of these duplexes occurs within the dead time of mixing at the concentration of substrates used in these experiments. D1D2 (2 \u03bcM) was mixed with NTP-Mg2+ (5 mM), labeled duplex (125 nM), and unlabeled duplex (500 nM) at 22\u00b0C in a reaction medium containing 20 mM Tris\u2013HCl (pH 7.5), 100 mM KCl, 10% glycerol, 1 mM DTT, 5 mM MgCl2. Reactions were terminated at appropriate time points with 1 volume of stop buffer (50 mM EDTA, 1% SDS, 10% glycerol) and run in a non-denaturing 20% polyacrylamide at 22\u00b0C for 60 min. The fluorescence signal of duplex substrate was quantified by using a Typhoon imager (GE Healthcare) to measure the extent of unwinding/re-annealing. The apparent fraction of unwound duplex at various time points was quantified by using ImageJ and (where appropriate) fit to a first-order reaction to estimate an observed first-order rate constant (k1).\n\n### Single strand nucleic acid binding assays in the presence of nucleotide\n\nEquilibrium binding of A10-RNA and A10-DNA to D1D2 in increasing concentrations of NDP-BeFx was measured by fluorescence anisotropy using MBP-tagged protein to increase the change in anisotropy upon binding. 5\u2032 FAM-labeled A10-RNA or A10-DNA (10 nM; IDT) was incubated with protein (2 \u03bcM) and increasing concentrations of NDP-BeFx (N = A, C, G, or U; 0 to 10 mM) at 22\u00b0C for at least 1 hr in a reaction medium containing 20 mM Tris\u2013HCl (pH 7.5), 100 mM KCl, 10% glycerol, 1 mM DTT, 5 mM MgCl2, and 0.1 mg/ml of bovine serum albumin. The observed fluorescence anisotropy at increasing concentrations of protein was measured by using an EnVision Microplate Reader (Perkin Elmer, Waltham, MA) and was fit to a one-site binding model with a Hill coefficient to estimate the Kd of single-stranded nucleic acid in the presence of increasing nucleotide. Equilibrium was verified by carrying out assays on samples incubated for extended times up to 4 hr, which gave the same binding profiles as those incubated for 1 hr. Equivalent experiments were performed to measure the binding of A10-RNA to D1D2 in increasing concentrations of AMP-PNP or ADP (0\u201310 mM) and ADP + Pi (0\u2013100 mM Pi in the presence of 10 mM ADP).\n\n### Duplex binding assays\n\nEquilibrium binding of 12-bp RNA (A-form) and DNA (A-form and B-form) duplexes to D1 or D2 was measured by EMSA using MBP-tagged proteins to increase protein solubility as described (Mallam et al., 2012). 5\u2032 FAM-labeled 12-bp duplexes (100 nM; IDT; Figure 4A\u2013C) were incubated with increasing concentrations of protein (0\u20136 \u03bcM) at 22\u00b0C for at least 1 hr in a reaction medium containing 20 mM Tris\u2013HCl (pH 7.5), 100 mM KCl, 10% glycerol, 1 mM DTT, 5 mM MgCl2, and 0.1 mg/ml of bovine serum albumin to stabilize the protein at low concentrations. Samples were then analyzed in a non-denaturing 6% polyacrylamide gel run at 4\u00b0C for 60 min, and the fluorescence signal of the bound duplex substrate was quantified by using a Typhoon imager. The fraction of bound duplex with increasing concentrations of MBP-tagged protein was quantified by using ImageJ and fit to a one-site binding model with a Hill coefficient to estimate a Kd.\n\nCompetition assays were performed similarly by measuring the competitive displacement from MBP-D2 (500 nM) of 5\u2032 FAM-B-DNA duplex (250 nM) by unlabeled dsRNA (0\u20136 \u03bcM, Ki = 860 \u00b1 40 nM) and of 5\u2032 FAM-dsRNA (250 nM) by unlabeled B-DNA duplex (0\u20136 \u03bcM, Ki = 1700 \u00b1 200 nM). In these cases, the fraction of free substrate was quantified and a Ki was estimated from a one-site binding model.\n\n### Size-exclusion chromatography\n\nBinding of nucleotide and nucleic acid substrates to D1D2 was examined by size-exclusion chromatography. The helicase core of Mss116 does not contain tryptophan residues and its calculated extinction coefficient is small (\u03b5280 = 18,255 M\u22121 cm\u22121; ExPASy Proteomics Server ProtParam tool [Wilkins et al., 1999]). The formation of a closed-state complex in the presence of nucleic acid and NDP-BeFx therefore gives rise to a large change in A260 compared to A280. Protein samples (10 \u03bcM) were incubated at 22\u00b0C for 30 min in NDP-BeFx-Mg2+ (5 mM, N = A, C, G, or U) and single-stranded (A10-RNA or A10-DNA; 20 \u03bcM) or duplex (dsRNA, A-DNA duplex or B-DNA duplex; 10 \u03bcM) nucleic acid and loaded onto a Superdex 75 column (GE Healthcare) pre-equilibrated in a buffer containing 20 mM Tris\u2013HCl (pH 7.5), 200 mM KCl, 10% glycerol, 1 mM DTT, 5 mM MgCl2. The absorbance and elution volume of the protein complexes above the background signal of the buffer were measured at 260 and 280 nm (Table 1). Control samples of protein alone, substrate alone, or protein and either nucleotide or nucleic acid were also measured; closed-state complexes were not detected in these cases.\n\n### Circular dichroism\n\nAll measurements were performed in 20 mM Tris\u2013HCl (pH 7.5), 100 mM KCl, 10% glycerol, 1 mM DTT, 5 mM MgCl2 buffer using a thermostatically controlled 0.01-cm path-length cuvette at 25\u00b0C and a Jasco J-815 spectrometer (Jasco Inc., Easton, MD). Scans were taken between 200 and 325 nm at a scan rate of 0.5 nm s\u22121 with 30 accumulations. Measurements were made on samples of SEC-purified A-form DNA or B-form DNA duplexes (100 \u03bcM) in the absence or presence of Mss116 D2 or MBP-D2 (120 \u03bcM).\n\n### Crystallization\n\nFor the D1D2\u2013A10-RNA\u2013NDP-BeFx complexes, protein (\u223c350 \u03bcM) was incubated with A10-RNA (600 \u03bcM), NDP-BeFx-Mg2+ (5 mM; N = A, C, G, or U) and MgCl2 (1 mM) for 30 min on the desktop. Sitting drops were assembled using 0.5 \u03bcl of complex and 0.5 \u03bcl of a well solution of 0.1 M HEPES, pH 7.5, 2% tacsimate, pH 7.0, 20% PEG (polyethylene glycol) 3350 for D1D2\u2013A10-RNA\u2013ADP-BeFx; 0.2 M sodium malonate, pH 5.0, 20% PEG 3350 for D1D2\u2013A10-RNA\u2013CDP-BeFx; 4% tacsimate, pH 8.0, 12% PEG 3350 for D1D2\u2013A10-RNA\u2013GDP-BeFx; and 0.1 M DL-malic acid, pH 7.0, 12% PEG 3350 for D1D2\u2013A10-RNA\u2013UDP-BeFx (Hampton Research, Aliso Viejo, CA). Drops were stored at 22\u00b0C and plate-like crystals appeared within 1\u20132 weeks. Crystals were removed from sitting drops and flash cooled immediately in liquid N2. Crystals of D1D2\u2013A10-DNA\u2013ADP-BeFx were obtained similarly and drops were assembled with a well solution of 0.2 M ammonium acetate, 20% PEG 3350.\n\n### Structure determination\n\nX-ray diffraction data were collected at the Advanced Light Source (ALS), Lawrence Berkeley National Laboratory (mail-in service on beamlines 5.0.2 or 5.0.3; wavelength = 1.00003 \u00c5). Details of data collection and refinement are in Table 2. Diffraction intensities were indexed, integrated, and scaled with HKL-2000 (Otwinowski and Minor, 1997). Initial space groups were determined by using Pointless (Evans, 2006) and confirmed by decreases in both Rwork and Rfree after refinement of molecular replacement solutions. Molecular replacement was performed with Phaser (McCoy et al., 2007), using the previously determined structure of Mss116 D1D2 in the closed state (PDB 3I5X) as a search model. Structures were completed with cycles of manual model building in Coot (Emsley et al., 2010) and refinement in Phenix (Adams et al., 2010). Validation of protein and nucleic acid models and their contacts was done by using MolProbity (Chen et al., 2010) and indicated that at least 98% of residues are located in the most favorable region of the Ramachandran plot. Structural figures were prepared by using the PyMOL Molecular Graphics System, Version 1.4, Schr\u00f6dinger, LLC.\n\n### Accession numbers\n\nCoordinates and structure factors were deposited in the Protein Data Bank under accessions 4TYW (D1D1\u2013A10-RNA\u2013ADP-BeFx), 4TYY (D1D1\u2013A10-RNA\u2013CDP-BeFx), 4TZ0 (D1D1\u2013A10-RNA\u2013GDP-BeFx), 4TZ6 (D1D1\u2013A10-RNA\u2013UDP-BeFx), and 4TYN (D1D1\u2013A10-DNA\u2013ADP-BeFx).\n",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "136404da-2173-41f4-979b-9b9a7803cdf4",
+      "submission_id": "71ea7ae9-8ec2-4d28-b491-2d1bd2477632",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leemor Joshua-Tor, Cold Spring Harbor Laboratory , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04630.020](https://doi.org/10.7554/eLife.04630.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMolecular insights into RNA and DNA helicase evolution from the determinants of specificity for a DEAD-box RNA helicase\u201d for consideration at eLife. Your article has been favorably evaluated by James Manley (Senior editor), a Reviewing editor and 2 reviewers.\n\nLeemor Joshua-Tor (Reviewing editor) and Ben Luisi (peer reviewer) have agreed to reveal their identity.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nLambowitz and co-workers address an important question in RNA biology: how RNA helicases have become specific for RNA, even though they are structurally very similar to DNA helicases. Using structural and biochemical approaches on the DEAD-box helicase Mss116 that functions as a chaperone for the process of mitochondrial intron splicing, they show that this helicase can, in principle, bind both RNA and DNA, and a variety of nucleotides, but with a significant preference for A over the others. Crystal structures are presented of the Mss116 construct in complex with Berylium Fluoride and ADP, CDP, GDP and UDP. These structures go some way to delineate specific interactions that confer specificity for the adenine base and RNA, and show that these specificities are caused by rather small tweaks in the helicase core. Their results also suggest that the gamma phosphate of ATP pays a critical role in maintaining a 'closed state' conformation when engaging the nucleotide and RNA. The authors also show that, in addition to the known ability to bind duplex RNA, Mss116 is capable of binding to A-form double stranded DNA, but not DNA in the more common B-form, while the isolated C-terminal RecA domain (D2) can bind the B-form. Crystal structures are also presented of Mss116 in complex with A10 RNA and A10 DNA, showing a similar mechanism of interaction for both substrates.\n\nIn general, the paper is well written and the methodology is sound, and the experimental work, encompassing X-ray crystallography and in vitro binding and unwinding assays, is comprehensive. The Discussion is instructive and insightful. The figures are excellent and are very easy on the eye. Although the results are perhaps not ground breaking, the paper provides new, and in some aspects surprising, insight for a large and ubiquitous family of enzymes with central biological roles. The manuscript will thus be of interest to a diverse readership. There are a number of minor comments on specific points that will hopefully be helpful for the authors to consider, outlined below.\n\n1) Is it clear that Mss116 functions in vivo in isolation, or is the enzyme's activity directed and dependent upon other partner proteins? How might this bear on the central conclusion of the Abstract and Discussion, regarding the apparent family-specific specificity? Many of the DExD-box proteins seem to have partners that strongly affect their activity.\n\n2) A surprising finding is the ability of Mss116 to unwind pure DNA duplexes, provided these adopt A-form geometry. The unwinding is shown with ADP-BeFx, a non-hydrolysable ATP analog. It would be important to check whether unwinding is also seen with ATP, as several recent papers suggest that DEAD-box helicases, which have previously been considered as pure RNA helicases, might function on DNA.\n\n3) Unwinding of RNA with all four nucleotide diphosphate beryllium fluoride compounds is also surprising. Here, again, it would be instructive to test unwinding with the nucleotide triphosphates. These results might be influenced by the affinity of binding to the nucleotide rather than the ability of the helicase to hydrolyse a particular nucleotide and simultaneously unwind the duplex, for example. In addition, the different triphosphates have been tested in unwinding assays for many DEAD-box helicases, and it appears that no unwinding has been reported with NTPs other than ATP. It would thus be important to sort out whether one should have tested these NTPs over a larger concentration range than examined, or whether the use of the diphosphate beryllium fluoride compounds somehow biases these experiments, as has been suggested, too. If a bias were to be found, this would not invalidate any of the points made, but add a further important facet to the story.\n\n4) The authors report Kd values for ADP-BeFx binding to Mss116 in the micromolar range. Binding of ADP-BeFx to Mss116 and RNA has recently been described by Liu et al. (Biochemistry, 2014, 53, 423\u2013433). Although no Kd values were reported there, the ADP-BeFx complex with Mss116 was very long-lived. It might be prudent to specifically verify that equilibrium was reached for the Kd measurements, even after incubation of 1h. In addition, the paper by Liu et al. should probably be cited.\n\n5) In Figure 1D it might be helpful to extend the cartoon to include the final step in the unwinding cycle where the ATP is hydrolysed, and then the helicase re-enters the open state upon departure of the ADP, Pi and RNA.\n\n6) In Figure 2, perhaps it would be better to have the binding assay (Figure B) first, then the unwinding assay (A).\n\n7) Figure 3: Label G128 in Figure B? Is the Q133 oriented such that the carbonyl is forced to be pointed at the O6 of the GDP? This would be an unfavorable interaction.\n\n8) Results section, \u201cThe structural basis for the ATP specificity of the helicase core of Mss116\u201d: \u201ctwo side-chain hydrogen (H)-bonds from G128 and E133\u201d. Figure 3 has residue 133 labelled as Q. Which one is it? Also, can glycine really make a side chain H-bond?\n\n9) Summary: 'core stability'. Perhaps change the wording here, because as written this might be misinterpreted as stability of the fold, which is clearly not intended.\n\n10) Results section (\u201canalytical size-exclusion chromatography (SEC) shows that a 94 closed-state helicase\u2026\u201d), Table 1 and Figure 5\u2013figure supplement 2: do the elution volumes definitively demonstrate whether the state is open or closed? There is for example the formal possibility that the proteins are forming oligomers. Do the authors have access to SEC-MALS? This would give the molecular weights fairly precisely, which can be used to confirm that the complexes are intact.\n\n11) Results section: the sentence \u201cthe effective concentration of the ATP gamma phosphate plays a key role in maintaining the closed-state structure\u201d appears to be repetitive with \u201cthe effective concentration of the ATP gamma phosphate is critical for the stability of the closed-state\u201d.\n\n12) Table 2: the angles for the unit cell are not in Greek characters.\n\n13) Figure 2\u2013figure supplement 1 appears to be missing.\n\n14) Figure 4E: out of curiosity, what happens to the binding of the A-form DNA with D2, does it retain A-form CD spectral signature?\n",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fee9bbe5-bd2b-4954-9eec-51e69c083824",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C1",
+      "claim": "Helicases of superfamilies (SFs) 1 and 2 use ATP or other NTPs to bind, unwind, or remodel RNA or DNA in essentially all facets of nucleic acid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Helicases of superfamilies (SFs) 1 and 2 use ATP or other NTPs to bind, unwind, or remodel RNA or DNA in essentially all facets of nucleic acid metabolism (Preugschat et al., 1996; Tanaka and Schwer, 2005; Singleton et al., 2007; Fairman-Williams et al., 2010; Jarmoskaite and Russell, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "91801863-ce6a-4e5b-a59b-c3b8e2650636",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C2",
+      "claim": "SF1 and SF2 helicases contain a conserved 'helicase core' of two RecA-like domains.",
+      "claim_type": "EXPLICIT",
+      "source": "They contain a conserved 'helicase core' of two RecA-like domains but act on varied substrates by different mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about helicase structure and is referenced in the context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "7a8b6346-9206-43f0-9d3a-e3f23ee34687",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C3",
+      "claim": "SF1 and SF2 helicases can be grouped into families with distinct variations in specificity, mechanism, function, and appended domains.",
+      "claim_type": "EXPLICIT",
+      "source": "SF1 and SF2 helicases can be grouped into families with distinct variations in specificity, mechanism, function, and appended domains (Figure 1A) (Gorbalenya and Koonin, 1993; Singleton et al., 2007; Fairman-Williams et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and reference to Figure 1A showing different helicase families.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "0aeb15cd-3954-4c84-b974-aff5c9c5e7e3",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C4",
+      "claim": "DEAD-box RNA helicases perform non-processive unwinding of short duplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms by which SF1 and SF2 helicases act on RNA or DNA include non-processive unwinding of short duplexes (e.g., DEAD-box RNA helicases [Jarmoskaite and Russell, 2011; Linder and Jankowsky, 2011])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature on DEAD-box helicases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "01d555f9-2c2c-4e27-a159-28aed6834a00",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C5",
+      "claim": "DEAH/RHA, NS3/NPH-II, and RecQ-like helicases perform unwinding coupled to directional movement along the unwound single strand.",
+      "claim_type": "EXPLICIT",
+      "source": "unwinding coupled to directional movement ('translocation') along the unwound single strand (e.g., DEAH/RHA, NS3/NPH-II, and RecQ-like helicases [Pyle, 2008])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "f67995f7-99fa-4edc-bbe3-46768666b51f",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C6",
+      "claim": "RIG-I-like and Swi/Snf helicases bind or translocate along a duplex without unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "binding or translocation along a duplex without unwinding (e.g., RIG-I-like and Swi/Snf helicases [Durr et al., 2005; Myong et al., 2009; Rawling and Pyle, 2014])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "fd826167-ef57-429f-8e9f-ca13976f5a82",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C7",
+      "claim": "Mss116 is a yeast DEAD-box protein that utilizes ATP to locally unwind dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use the yeast DEAD-box protein Mss116 (Figure 1B,C) as a model system to pinpoint the molecular basis for the specificity and mechanism of the conserved helicase core. Mss116 functions as a general RNA chaperone in mitochondrial intron splicing by locally unwinding and disrupting stable but inactive RNA structures that impede RNA folding (Huang et al., 2005; Del Campo et al., 2009; Potratz et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and reference to figures showing Mss116 structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "0c8c53c4-f01c-402a-96f4-aaec31d22072",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C8",
+      "claim": "Mss116 functions as a general RNA chaperone in mitochondrial intron splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Mss116 functions as a general RNA chaperone in mitochondrial intron splicing by locally unwinding and disrupting stable but inactive RNA structures that impede RNA folding (Huang et al., 2005; Del Campo et al., 2009; Potratz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "77664e7f-b254-4db8-ae45-89e7a0be9cd3",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C9",
+      "claim": "Mss116 binds diverse RNA substrates non-specifically and has high RNA helicase activity in the absence of partner proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As a general RNA chaperone, Mss116 binds diverse RNA substrates non-specifically and has high RNA helicase activity in the absence of partner proteins (Halls et al., 2007; Del Campo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "7c9091b6-08fe-4835-96b7-1558931f16fe",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C10",
+      "claim": "The helicase core of Mss116 consists of two RecA-like domains (D1 and D2) that are in an extended 'open state' in the absence of substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The helicase core of Mss116 consists of two RecA-like domains (D1 and D2) that are in an extended 'open state' in the absence of substrates (Mallam et al., 2011) and recognize ATP and duplex RNA in a modular manner (Mallam et al., 2012) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and reference to Figure 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "3c58ea9d-d6bd-4d49-a7ba-196d15b897dc",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C11",
+      "claim": "The helicase core of Mss116 recognizes ATP and duplex RNA in a modular manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The helicase core of Mss116 consists of two RecA-like domains (D1 and D2) that are in an extended 'open state' in the absence of substrates (Mallam et al., 2011) and recognize ATP and duplex RNA in a modular manner (Mallam et al., 2012) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and reference to Figure 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "522ab383-9757-4ba1-a69f-4733b6b61900",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C12",
+      "claim": "Upon substrate binding, the two core domains of Mss116 join to form a 'closed state' containing an ATPase active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon substrate binding, the two core domains join to form a 'closed state' containing an ATPase active site, while conserved DEAD-box protein motifs in D1 promote the unwinding of short duplexes bound to D2 by excluding one RNA strand and bending the other (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1D showing the mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "85afdb8d-f370-4ae3-9567-43ffdf8f4f68",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C13",
+      "claim": "Conserved DEAD-box protein motifs in D1 promote the unwinding of short duplexes bound to D2 by excluding one RNA strand and bending the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon substrate binding, the two core domains join to form a 'closed state' containing an ATPase active site, while conserved DEAD-box protein motifs in D1 promote the unwinding of short duplexes bound to D2 by excluding one RNA strand and bending the other (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1D showing the mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "8a00d6f3-bf94-4986-a6d8-2da52db032de",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C14",
+      "claim": "ATP hydrolysis is required for core reopening and enzyme turnover in Mss116.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP hydrolysis is required for core reopening and enzyme turnover (Liu et al., 2008; Cao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "32987d8b-f9f4-4cbc-9013-69e5eb9dca1c",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C15",
+      "claim": "All non-hydrolyzable analogues NDP-BeFx (where N = A, C, G, or U) can promote the unwinding of a dsRNA by Mss116.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that all of the non-hydrolyzable analogues NDP-BeFx, where N = A, C, G, or U, can promote the unwinding of a dsRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from unwinding assays described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "f03799fc-2a4b-4953-b4fb-49e3765376fa",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C16",
+      "claim": "ADP-BeFx is the most efficient nucleotide analogue for RNA duplex unwinding by Mss116, with at least sixfold higher concentrations of C-, G-, or U-analogues required.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ADP-BeFx is the most efficient with at least sixfold higher concentrations of C-, G-, or U-analogues required for RNA duplex unwinding (K1/2 = 0.14, 0.8, 0.8, and 2.4 mM, respectively; Figure 2A and Figure 2\u2014figure supplement 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "83778c12-d263-4c53-95a1-d5dcf795125e",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C17",
+      "claim": "Only ATP, and not other NTPs, catalyzes the unwinding of dsRNA by Mss116 in kinetic unwinding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "These assays show that only ATP, and not other NTPs, catalyzes the unwinding of the dsRNA (Figure 2\u2014figure supplement 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "27a28f9b-05ac-439d-9733-a16711d09942",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C18",
+      "claim": "The diphosphate beryllium fluoride analogue is necessary to promote unwinding with nucleotide bases other than adenine under the assay conditions used.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that under our assay conditions, the diphosphate beryllium fluoride analogue is necessary to promote unwinding with nucleotide bases other than adenine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental results comparing NDP-BeFx and NTP unwinding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "bd582cad-2b52-42a8-973a-0dcac5e9fd90",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C19",
+      "claim": "The closed-state complex of Mss116 is most stable with ADP-BeFx (Kd = 0.022 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "These assays show that the closed-state complex is most stable with ADP-BeFx (Kd = 0.022 mM), while CDP-BeFx, GDP-BeFx, and UDP-BeFx promote formation of the closed state only at significantly higher concentrations of nucleotide analogue (Kd = 0.09, 0.11, and 0.63 mM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from fluorescence anisotropy binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "ee70602b-6846-458d-9a94-805a259c13cb",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C20",
+      "claim": "CDP-BeFx, GDP-BeFx, and UDP-BeFx promote formation of the closed state only at significantly higher concentrations of nucleotide analogue compared to ADP-BeFx.",
+      "claim_type": "EXPLICIT",
+      "source": "These assays show that the closed-state complex is most stable with ADP-BeFx (Kd = 0.022 mM), while CDP-BeFx, GDP-BeFx, and UDP-BeFx promote formation of the closed state only at significantly higher concentrations of nucleotide analogue (Kd = 0.09, 0.11, and 0.63 mM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from fluorescence anisotropy binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "a03df723-9a26-4c70-a729-963611fb12a4",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C21",
+      "claim": "The unwinding efficiencies and closed-state core stabilities with different NTP analogues follow the same order of A > C, G > U from higher to lower efficiency and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings indicate that the unwinding efficiencies and closed-state core stabilities with different NTP analogues follow the same order of A > C, G > U from higher to lower efficiency and stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the combined experimental data on unwinding and binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "21b5026e-dd98-4ba0-9644-3a60b4716091",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C22",
+      "claim": "A closed-state complex with A10-RNA forms at significantly lower concentrations of ADP-BeFx compared to AMP-PNP (Kd = 0.022 and 0.12 mM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Additional fluorescence anisotropy assays show that a closed-state complex with A10-RNA forms at significantly lower concentrations of ADP-BeFx compared to AMP-PNP (Kd = 0.022 and 0.12 mM, respectively; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "480ac8c1-1e3a-4242-8fc5-612d3456b301",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C23",
+      "claim": "Neither ADP nor ADP + Pi in large excess led to the formation of a stable closed state in Mss116.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, neither ADP nor ADP + Pi in large excess led to the formation of a stable closed state in our assays (Figure 2C), suggesting that the effective concentration of the ATP \u03b3-phosphate is critical for the stability of the closed-state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "cc80037d-8a65-4302-bcc5-9bf2e4fc6548",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C24",
+      "claim": "The effective concentration of the ATP \u03b3-phosphate is critical for the stability of the closed-state in Mss116.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, neither ADP nor ADP + Pi in large excess led to the formation of a stable closed state in our assays (Figure 2C), suggesting that the effective concentration of the ATP \u03b3-phosphate is critical for the stability of the closed-state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data showing that ADP and ADP+Pi do not form stable closed states.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "aa2b1cdd-a2d0-4c39-8953-9c8088745054",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C25",
+      "claim": "The unwinding efficiency of Mss116 with different nucleotides is directly correlated with the stability of the post-unwound closed-state complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results show the unwinding efficiency of Mss116 with different nucleotides is directly correlated with the stability of the post-unwound closed-state complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the combined experimental data on unwinding and closed-state stability.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "918a4728-df68-4a45-b80f-0a95c6af6a9b",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C26",
+      "claim": "The ATP-binding motifs I and VI make similar direct contacts to the phosphate groups of all four NTP analogs in Mss116.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures show that the ATP-binding motifs I and VI make similar direct contacts to the phosphate groups of all four NTP analogs (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystal structure data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "273b46fa-5158-4e4b-8dc7-86fbf1dad1d2",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C27",
+      "claim": "Motif II (DEAD) is positioned identically in all structures and interacts indirectly via waters with the BeF3 moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Motif II (DEAD) is positioned identically in all structures and interacts indirectly via waters with the BeF3 moiety, which corresponds to the ATP \u03b3-phosphate (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystal structure data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "4ba49350-1696-48f1-b78b-213d140771e4",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C28",
+      "claim": "The purine bases (A and G) are stacked optimally with F126 in the Q-motif, whereas the pyrimidine bases (C and U) adopt a less favorable stacking orientation with this residue.",
+      "claim_type": "EXPLICIT",
+      "source": "However, each base interacts differently in the ATP-binding pocket. The purine bases (A and G) are stacked optimally with F126 in the Q-motif, which primarily confers ATP specificity in DEAD-box proteins (Linder and Jankowsky, 2011), whereas the pyrimidine bases (C and U) adopt a less favorable stacking orientation with this residue (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystal structure data shown in Figure 3B and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "5f644b78-b5c1-4f54-9483-3e6559b1d0fd",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C29",
+      "claim": "Fewer direct contacts are made to the C, G, and U bases than to A in the ATP-binding pocket of Mss116.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, fewer direct contacts are made to the C, G, and U bases than to A (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystal structure data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "28d71ddb-e2c5-44dc-9c6a-f556c2c29e55",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C30",
+      "claim": "Two hydrogen bonds from G128 and Q133 in the Q-motif to the base are absent in the complex with GDP-BeFx compared to the closed-state structure with ADP-BeFx.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, compared to the closed-state structure with ADP-BeFx, two hydrogen (H)-bonds from G128 and Q133 in the Q-motif to the base are absent in the complex with GDP-BeFx, and all of the direct interactions of the Q-motif with the base are missing in the structures with CDP- or UDP-BeFx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystal structure data comparing different nucleotide complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "876f9fb7-8c90-4385-99fd-225c9f26dcc9",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C31",
+      "claim": "All of the direct interactions of the Q-motif with the base are missing in the structures with CDP- or UDP-BeFx.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, compared to the closed-state structure with ADP-BeFx, two hydrogen (H)-bonds from G128 and Q133 in the Q-motif to the base are absent in the complex with GDP-BeFx, and all of the direct interactions of the Q-motif with the base are missing in the structures with CDP- or UDP-BeFx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystal structure data comparing different nucleotide complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "814e4736-3181-416d-b70a-49127a9e453f",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C32",
+      "claim": "D2 of Mss116 functions as an RNA-duplex recognition domain in the open-state enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "D2 of Mss116 (residues 342\u2013597) functions as an RNA-duplex recognition domain in the open-state enzyme (Mallam et al., 2012) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation and reference to Figure 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "41e530da-cb78-4899-a8cd-66a8afeff020",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C33",
+      "claim": "D2 of Mss116 has similar affinities for dsRNA (K1/2 = 400 nM) and A-DNA and B-DNA duplexes (K1/2 = 410 and 510 nM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "EMSAs using fluorescein amidite (FAM)-labeled duplexes show that D2 has surprisingly similar affinities for dsRNA (K1/2 = 400 nM) and A-DNA and B-DNA duplexes (K1/2 = 410 and 510 nM, respectively) (Figure 5A and Figure 5\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from EMSAs shown in Figure 5A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "893a3b0b-62fc-457e-91e6-94916d0a6542",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C34",
+      "claim": "The geometry of the A-DNA and B-DNA duplexes is maintained upon binding to D2.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular dichroism (CD) measurements confirmed that the geometry of the A-DNA and B-DNA duplexes is maintained upon binding to D2, and that binding does not induce a B- to A-form transition (Figure 4E and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental CD data shown in Figure 4E and supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "0ec6952f-9e70-4bd0-acfc-c0df7d9f9a94",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C35",
+      "claim": "The B-DNA duplex competitively displaces dsRNA bound to D2 (Ki = 1700 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "The B-DNA duplex also competitively displaces dsRNA bound to D2 (Ki = 1700 nM) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from competitive displacement assays shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "c463d2ab-d1ba-4096-af84-1368154da944",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C36",
+      "claim": "D2 of Mss116 can bind dsRNA and dsDNA of A- or B-form geometry in the dsRNA binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that D2 can bind dsRNA and dsDNA of A- or B-form geometry in the dsRNA binding pocket even with the different spacing of the backbone phosphate groups (Mallam et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental binding data and citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "3bcb46f8-3098-45bd-ad30-c9000bdf232d",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C37",
+      "claim": "Several DEAD-box proteins can interact with dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with recent studies showing that several DEAD-box proteins can interact with dsDNA (Kammel et al., 2013; Tuteja et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "b7674cad-7e99-48a0-acd1-75544d4ce10f",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C38",
+      "claim": "D2 of Mss116 is a general and flexible nucleic acid duplex binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "D2 of Mss116 is therefore a general and flexible nucleic acid duplex binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing D2 binds multiple duplex types.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "b956a1a0-7e3f-44f7-95e9-7e7e677de5b0",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C39",
+      "claim": "Mss116 can unwind dsRNA and an A-DNA duplex, although a lower concentration of ADP-BeFx is required to unwind dsRNA (K1/2 = 0.14 and 0.25 mM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibrium duplex unwinding assays (Figure 2\u2014figure supplement 1A) show that Mss116 can unwind dsRNA and an A-DNA duplex, although a lower concentration of ADP-BeFx is required to unwind dsRNA (K1/2 = 0.14 and 0.25 mM, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from equilibrium unwinding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "f692a9f2-b4f0-4608-b357-645cae7c30ab",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C40",
+      "claim": "Mss116 does not show appreciable unwinding of the B-DNA duplex under equilibrium conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we did not observe any appreciable unwinding of the B-DNA duplex under these conditions (Figure 5C and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "11b3ba0d-7562-4b38-b4ce-14127cb1d989",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C41",
+      "claim": "Mss116 can unwind dsRNA and the A-DNA duplex in the presence of ATP with observed first-order rate constants (k1) of 0.46 and 0.15 min\u22121, respectively, but does not unwind the B-DNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, kinetic unwinding assays demonstrate the same trend. They show that Mss116 can unwind dsRNA and the A-DNA duplex in the presence of ATP with observed first-order rate constants (k1) of 0.46 and 0.15 min\u22121, respectively, but does not unwind the B-DNA duplex (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from kinetic unwinding assays shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "6986037a-d282-4cb6-a3e7-1fbddd639603",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C42",
+      "claim": "Mss116 selectively unwinds A-form duplex nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Mss116 selectively unwinds A-form duplex nucleic acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the combined experimental data on unwinding of different duplex types.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "e7926e24-d2d1-489c-88de-e5e508d28375",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C43",
+      "claim": "A DEAD-box protein can unwind an all DNA duplex in a nucleotide-dependent manner if it has A-form geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, contrary to what was previously thought (Fairman-Williams et al., 2010), they demonstrate that a DEAD-box protein can unwind an all DNA duplex in a nucleotide-dependent manner if it has A-form geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data and contradicts previous understanding cited in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "912e3e22-e3ae-427d-81ff-bf67334e6541",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C44",
+      "claim": "Although D2 can bind a B-DNA duplex, a closed-state complex does not readily form with B-form DNA and unwinding of this substrate does not occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Although D2 can bind a B-DNA duplex, a closed-state complex does not readily form with B-form DNA and unwinding of this substrate does not occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the combined experimental data on binding and unwinding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "90ebc61c-923e-4eb8-ab83-26567b10de6a",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C45",
+      "claim": "The closed-state complex forms with both A10-RNA and A10-DNA substrates, but at a much lower concentration of ADP-BeFx for ssRNA than for ssDNA (Kd = 0.022 and 0.79 mM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibrium fluorescence anisotropy assays in the presence of increasing concentrations of ADP-BeFx indicate that the closed-state complex forms with both substrates, but at a much lower concentration of ADP-BeFx for ssRNA than for ssDNA (Kd = 0.022 and 0.79 mM, respectively; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from fluorescence anisotropy assays shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "4f931ce5-4084-41cb-98b2-3534e44e1e91",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C46",
+      "claim": "A closed-state complex with A10-RNA and ADP-BeFx remains intact during SEC elution, whereas an identical complex with A10-DNA dissociates on the SEC column.",
+      "claim_type": "EXPLICIT",
+      "source": "SEC data also demonstrate that a closed-state complex with A10-RNA and ADP-BeFx remains intact during elution, whereas an identical complex with A10-DNA dissociates on the SEC column (Figure 5E and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SEC shown in Figure 5E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "b87088f3-c9c1-488f-8bd6-036f8e502e1c",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C47",
+      "claim": "The closed-state core is significantly more stable and long-lived with ssRNA than with ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the closed-state core is significantly more stable and long-lived with ssRNA than with ssDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the combined experimental data on closed-state stability.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "a6e859a0-3702-4111-a019-5062fe6f1eea",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C48",
+      "claim": "Mss116 can form the same closed-state complex with ssRNA and ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures confirm that Mss116 can form the same closed-state complex with ssRNA and ssDNA and allow a direct comparison of the interactions made by these substrates with the same helicase core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystal structure data comparing RNA and DNA complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "5315c73d-230f-4082-969f-4856d5216236",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C49",
+      "claim": "The trajectories of the bound ssRNA and ssDNA are very similar in the closed-state structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures show that trajectories of the bound ssRNA and ssDNA are very similar (Figure 6B) and that most of the interactions between the conserved nucleic acid binding motifs IV\u2013V and the phosphate backbone are identical in both complexes (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystal structure data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "4ef29548-11a3-4280-86c4-abb53724032f",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C50",
+      "claim": "Most of the interactions between the conserved nucleic acid binding motifs IV\u2013V and the phosphate backbone are identical in both ssRNA and ssDNA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures show that trajectories of the bound ssRNA and ssDNA are very similar (Figure 6B) and that most of the interactions between the conserved nucleic acid binding motifs IV\u2013V and the phosphate backbone are identical in both complexes (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystal structure data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "046b56bc-6c97-414b-8037-f747d55a3a69",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C51",
+      "claim": "The closed-state complex with ssRNA contains protein contacts to RNA 2\u2032-OH groups that are not present in the closed-state complex with ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the closed-state complex with ssRNA contains protein contacts to RNA 2\u2032-OH groups that are not present in the closed-state complex with ssDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystal structure data comparing RNA and DNA complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "be5b8440-56da-4b16-a739-74a021ba7540",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C52",
+      "claim": "Four contacts from residues in motifs Ia and Ic in D1 to RNA 2\u2032-OH groups form during core closure and account for the higher stability of the closed-state with ssRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These include four from residues in motifs Ia and Ic in D1 that form during core closure and account for the higher stability of the closed-state with ssRNA (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from crystal structure data and experimental stability measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "9a4d8c64-43c1-4434-9c4f-cc44621cd7a2",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C53",
+      "claim": "Mss116 has ambiguous substrate-binding properties and interacts with all four NTPs and both RNA and DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, they show that Mss116 has ambiguous substrate-binding properties and interacts with all four NTPs and both RNA and DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the combined experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "668b3ff7-8492-44c0-b9d4-7f8edd592f75",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C54",
+      "claim": "The efficiency of unwinding correlates with the stability of the 'closed-state' helicase core.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of unwinding correlates with the stability of the 'closed-state' helicase core, a complex with nucleotide and nucleic acid that forms as duplexes are unwound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the combined experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "3c4f9cc9-2f09-4a34-81d3-6df17f318ce5",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C55",
+      "claim": "Core stability is modulated by family-specific interactions that favor certain substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures reveal that core stability is modulated by family-specific interactions that favor certain substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on crystal structure data and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "e40991cd-aabe-4790-9907-02d092903bbe",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C56",
+      "claim": "Present-day helicases diversified from an ancestral core with broad specificity by retaining core closure as a common catalytic mechanism while optimizing substrate-binding interactions for different cellular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests how present-day helicases diversified from an ancestral core with broad specificity by retaining core closure as a common catalytic mechanism while optimizing substrate-binding interactions for different cellular functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data and evolutionary reasoning.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "533afdd3-6994-40be-a52e-12139867f2ca",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C57",
+      "claim": "The preference of Mss116 for ATP is dictated by optimal base-stacking and H-bonding interactions between the Q-motif and adenine base.",
+      "claim_type": "EXPLICIT",
+      "source": "The preference of Mss116 for ATP is dictated by optimal base-stacking and H-bonding interactions between the Q-motif and adenine base (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from crystal structure data shown in Figure 3B,C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "21ab2952-9d80-4b54-89ad-0d91b0083abf",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C58",
+      "claim": "Interactions between conserved motifs I, II, and VI and nucleotide phosphate moieties are sufficient to promote duplex unwinding at lower efficiency irrespective of the nucleotide base.",
+      "claim_type": "EXPLICIT",
+      "source": "However, interactions between conserved motifs I, II, and VI and nucleotide phosphate moieties are sufficient to promote duplex unwinding at lower efficiency irrespective of the nucleotide base (Figure 2A and Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data and crystal structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "2ce7b9ee-8e09-4521-9b93-db3b0c936996",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C59",
+      "claim": "The specificity of Mss116 for unwinding RNA duplexes is dictated by both A-form geometry and interactions by motifs Ia and Ic in D1 with 2\u2032-OH groups of ssRNA in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of Mss116 for unwinding RNA duplexes is dictated by both A-form geometry (Figure 5C) and interactions by motifs Ia and Ic in D1 with 2\u2032-OH groups of ssRNA in the closed state (Figure 5D and Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data and crystal structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "53be01f7-68dc-43fd-a455-6af9661bc3dc",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C60",
+      "claim": "Mss116 belongs to a subclass of DEAD-box proteins that has a CTE appended to D2.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Mss116 belongs to a subclass of DEAD-box proteins that has a CTE appended to D2 (Figure 1B) (Mohr et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "ca2ced03-f370-4f54-8220-40693b0f9128",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C61",
+      "claim": "The CTE of Mss116 makes additional 2\u2032-OH contacts to dsRNA in the open state that may favor its binding to D2.",
+      "claim_type": "EXPLICIT",
+      "source": "This CTE makes additional 2\u2032-OH contacts to dsRNA in the open state (Mallam et al., 2012) that may favor its binding to D2 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on citation and speculation about the role of CTE contacts.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "cdcf5b70-83e6-4145-ba8a-e3682333a2e2",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C62",
+      "claim": "The interactions of nucleic acid-binding motifs with the phosphate backbone are sufficient to enable Mss116 to unwind A-form DNA duplexes at lower efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the interactions of nucleic acid-binding motifs with the phosphate backbone are sufficient to enable Mss116 to unwind A-form DNA duplexes at lower efficiency (Figure 5C and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "13ebb218-b2e8-42d9-8178-a9f8f5e741a5",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C63",
+      "claim": "Mss116 cannot unwind a B-form DNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Mss116 cannot unwind a B-form DNA duplex (Figure 5C and Figure 5\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "9ca7c970-3fdd-45a9-aac9-cf833db31a6a",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C64",
+      "claim": "The helicase motifs in D1 that clash with dsRNA are not positioned to catalyze the unwinding of longer, thinner B-form duplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "and a model of the closed state with a B-DNA duplex indicates that the helicase motifs in D1 that clash with dsRNA (Mallam et al., 2012) (Figure 7A) are not positioned to catalyze the unwinding of longer, thinner B-form duplexes (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from structural modeling shown in Figure 7B and citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "429ae5c2-968c-491f-9fe5-10261f1b0a3f",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C65",
+      "claim": "The substrate ambiguity of Mss116 suggests an evolutionary scenario for how SF1 and SF2 helicases diverged from an ancestral helicase core with broad specificity into specialized enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the substrate ambiguity of Mss116 suggests an evolutionary scenario for how SF1 and SF2 helicases diverged from an ancestral helicase core with broad specificity into specialized enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "80e7e087-6526-4334-906a-f9cbd2d7e240",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C66",
+      "claim": "Core closure was retained as a catalytic mechanism using the interactions common to all NTP or nucleic acid substrates predicted from the results.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, core closure was retained as a catalytic mechanism using the interactions common to all NTP or nucleic acid substrates predicted from our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "3f4a3136-9858-40f2-b561-752f7c7fd738",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C67",
+      "claim": "The stability of the closed-state was further modulated by family-specific interactions that favor a particular NTP and nucleic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the stability of the closed-state was further modulated by family-specific interactions that favor a particular NTP and nucleic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "f12f1e6b-0e50-4e8c-8548-9fd60fbf8713",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C68",
+      "claim": "Helicase families that display the most substrate ambiguity by utilizing all four NTPs and function on either DNA or RNA may contain a core that functions similarly to that of an ancestral helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, helicase families that display the most substrate ambiguity by utilizing all four NTPs and function on either DNA or RNA (for example the DEAH/RHA [Tanaka and Schwer, 2005] and NS3/NPH-II [Preugschat et al., 1996] families; Figure 1A) may contain a core that functions similarly to that of an ancestral helicase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data and citations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "5d54429c-0a65-4d09-82e3-e32de9f76c06",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C69",
+      "claim": "Helicases that preferentially use ATP maintained the conserved interactions with nucleotide phosphate groups but acquired additional interactions with the adenine base that further stabilize the closed-state complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Helicases that preferentially use ATP maintained the conserved interactions with nucleotide phosphate groups but acquired additional interactions with the adenine base that further stabilize the closed-state complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "e0df16f2-7d5e-4685-b74f-eb765ef66bd3",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C70",
+      "claim": "DEAD-box proteins maintained conserved interactions with the nucleic acid backbone but evolved specificity for A-form duplexes and additional stabilizing interactions with RNA 2\u2032-OH groups in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DEAD-box proteins, which act preferentially on RNA (Fairman-Williams et al., 2010), maintained conserved interactions with the nucleic acid backbone but evolved specificity for A-form duplexes and additional stabilizing interactions with RNA 2\u2032-OH groups in the closed state, as demonstrated here for Mss116.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data and citation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "8ac6ab4e-8cf2-46b6-b1d5-0656327a39c0",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C71",
+      "claim": "The lack of unwinding activity in some DEAD-box proteins may stem from structural changes in the helicase core that mitigate RNA bending or strand displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of unwinding activity in some DEAD-box proteins may stem from structural changes in the helicase core that mitigate RNA bending or strand displacement (Young et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "a5719671-29a3-4b85-b3ae-77b35d3154c3",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C72",
+      "claim": "Helicase families that function on DNA could have diversified by the preservation of conserved interactions with the nucleic acid backbone combined with the selection of additional interactions that favor B-form duplexes and/or disfavor nucleic acids with 2\u2032-OH groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Helicase families that function on DNA (for example, the Swi/Snf, RecQ-like, and UvrD/Rep families) could have diversified by the preservation of conserved interactions with the nucleic acid backbone combined with the selection of additional interactions that favor B-form duplexes and/or disfavor nucleic acids with 2\u2032-OH groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "7ab87073-33d1-43ae-8e35-16a37c363873",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C73",
+      "claim": "Core-closure was retained as a mode of catalysis across helicase families.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that although core-closure was retained as a mode of catalysis, the differences in the stability of the closed-state complex between helicase families allowed the diversification of the observed helicase mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "db2d2a29-f30b-48d5-8fc3-9f8387c15249",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C74",
+      "claim": "The localized unwinding mechanism used by DEAD-box proteins likely evolved by the selection of a helicase core that is able to 'clamp' ssRNA and form a highly stable closed-state complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the localized unwinding mechanism used by DEAD-box proteins (Yang et al., 2007) likely evolved by the selection of a helicase core that is able to 'clamp' ssRNA and form a highly stable closed-state complex (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data and citation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "bd6b3d8a-7c57-4e41-b5cb-aa1feac31246",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C75",
+      "claim": "The stable closed-state mode of interaction compensates for the energy cost to locally unwind an RNA duplex, which is critical for DEAD-box protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "This mode of interaction compensates for the energy cost to locally unwind an RNA duplex, which is critical for DEAD-box protein function (Del Campo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "ad466be5-bbdc-4b66-990b-f2fdf212c9f1",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C76",
+      "claim": "Helicase cores that diverged to form less stable, more transient closed states with ssRNA or ssDNA would favor a mechanism that involved loading and translocating along a single strand.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, helicase cores that diverged to form less stable, more transient closed states with ssRNA or ssDNA would favor a mechanism that involved loading and translocating along a single strand (for example, NS3/NPH-II and RecQ-like helicases; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "cb1cfd44-4182-4cb5-a427-4b0951902773",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C77",
+      "claim": "A sequence change in motif II in the DEAH family of helicases ('DEAH' instead of 'DEAD') might result in a weaker interaction with the ATP \u03b3-phosphate and favor the observed switch from localized to translocation-based unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "The DEAH family of helicases are a potential example of a case where a sequence change in motif II compared to DEAD-box proteins ('DEAH' instead of 'DEAD') might result in a weaker interaction with the ATP \u03b3-phosphate and favor the observed switch from localized to translocation-based unwinding (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "092df4a6-c5cc-4250-9019-4852d1962169",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C78",
+      "claim": "ATP-dependent core closure to form a ternary complex with nucleic acid may have evolved from tighter to weaker binding as the helicase mechanism concurrently evolved from localized to translocation-based.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, ATP-dependent core closure to form a ternary complex with nucleic acid may have evolved from tighter to weaker binding as the helicase mechanism concurrently evolved from localized to translocation-based.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "bd7e1bdf-a4c9-4e9e-85a9-401c21e87991",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C79",
+      "claim": "Structural features, such as extra terminal domains or \u03b2-hairpins within the helicase core, favor translocation-based unwinding in some helicase families.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in addition to structural features, such as extra terminal domains or \u03b2-hairpins within the helicase core, which favor translocation-based unwinding in some helicase families (Fairman-Williams et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "965a5fe9-72a7-4f81-925e-323b416152db",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C80",
+      "claim": "Protein cofactors may play a role in helicase substrate specificity, as illustrated for the DEAD-box protein Rok1, whose cofactor Rrp5 increases the specificity of the helicase core 10-fold for a pre-rRNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein cofactors may also play a role in helicase substrate specificity, as illustrated for the DEAD-box protein Rok1, whose cofactor Rrp5 increases the specificity of the helicase core 10-fold for a pre-rRNA duplex (Young et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "aeb8fc0c-bc20-4a40-a01e-bcbd4fe91ae5",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C81",
+      "claim": "Other SF2 helicases have evolved to optimally accommodate dsRNA (e.g., RIG-I) or dsDNA (e.g., Sulfolobus solfataricus Swi2/Snf2) in a closed state complex and translocate with no observable unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, other SF2 helicases have evolved to optimally accommodate dsRNA (e.g., RIG-I) or dsDNA (e.g., Sulfolobus solfataricus Swi2/Snf2) in a closed state complex and translocate with no observable unwinding (Figure 1A, Figure 7C\u2013D) (Durr et al., 2005; Myong et al., 2009; Jiang et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and reference to figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "55f81db7-ba2f-4992-8031-7a8507e46316",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C82",
+      "claim": "Subtle changes in the closed-state core, perhaps combined with additional flanking domains, enable some helicases to bind duplex nucleic acid without the need to overcome the energetic barrier to unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, subtle changes in the closed-state core, perhaps combined with additional flanking domains, enable the helicase to bind duplex nucleic acid without the need to overcome the energetic barrier to unwinding and lead to this distinct mechanism of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "a574fa29-a290-4739-81dc-dcd4f51e5dfa",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C83",
+      "claim": "During evolution, progenitor enzymes of low activity and broad specificity diverge into families of more potent and highly specialized enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been hypothesized that during evolution, progenitor enzymes of low activity and broad specificity diverge into families of more potent and highly specialized enzymes (Jensen, 1976; Khersonsky and Tawfik, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "79a58cba-8183-4478-8cf6-43e7a8802a02",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "claim_id": "C84",
+      "claim": "A progenitor helicase core that had broad specificity and used conserved motifs to recognize the phosphate groups of NTPs and the backbone of nucleic acids diverged to present day SF1 and SF2 helicases with different cellular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our findings suggest how a progenitor helicase core that had broad specificity and used conserved motifs to recognize the phosphate groups of NTPs and the backbone of nucleic acids diverged to present day SF1 and SF2 helicases with different cellular functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "704b866e-dcb9-494e-8c61-61425f0cf783",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mss116 can utilize all four NDP-BeFx analogues (A, C, G, U) to unwind dsRNA under equilibrium conditions, but ADP-BeFx is the most efficient, requiring at least sixfold lower concentrations than C-, G-, or U-analogues. In kinetic assays with NTPs, only ATP catalyzes unwinding, indicating that the diphosphate beryllium fluoride analogue is necessary for unwinding with non-adenine bases under the assay conditions used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are well-supported by experimental data from equilibrium unwinding assays (Figure 2A, Figure 2\u2014figure supplement 1) and kinetic unwinding assays (Figure 2\u2014figure supplement 2). The data clearly demonstrate differential unwinding efficiency with different nucleotide analogues and establish the requirement for the BeFx moiety with non-adenine bases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "f442c621-bb2f-4109-8c49-4325d1f56981",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The stability of the closed-state complex with different nucleotide analogues correlates directly with unwinding efficiency, following the order A > C, G > U. The closed-state is most stable with ADP-BeFx (Kd = 0.022 mM) compared to CDP-BeFx, GDP-BeFx, and UDP-BeFx (Kd = 0.09, 0.11, and 0.63 mM, respectively). ADP-BeFx forms a more stable closed-state than AMP-PNP, while neither ADP nor ADP + Pi form stable closed states, indicating that the effective concentration of the ATP \u03b3-phosphate is critical for closed-state stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C25 are strongly supported by fluorescence anisotropy binding assays (Figure 2B, 2C) and SEC data (Figure 2D, Table 1). The correlation between closed-state stability and unwinding efficiency is well-established through multiple complementary experimental approaches, and the inference about the importance of the \u03b3-phosphate is logically sound given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "e079855d-ec18-44f5-b16b-1eabd49ed85b",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Crystal structures reveal that ATP-binding motifs I and VI make similar contacts to phosphate groups of all four NTP analogues, and motif II (DEAD) interacts indirectly via waters with the BeF3 moiety. However, the purine bases (A and G) stack optimally with F126 in the Q-motif, while pyrimidine bases (C and U) adopt less favorable stacking orientations. Fewer direct contacts are made to C, G, and U bases than to A, with specific hydrogen bonds from the Q-motif absent in GDP-BeFx and completely missing in CDP- and UDP-BeFx complexes. This explains ATP preference through optimal base-stacking and H-bonding, while conserved phosphate interactions allow lower-efficiency unwinding with other nucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31, C57-C58 are well-supported by high-resolution crystal structures (2.2-3.2 \u00c5) of closed-state complexes with all four NDP-BeFx analogues (Figure 3, Table 2). The structural data directly demonstrate the molecular basis for ATP specificity and provide clear mechanistic insights. The inferences about how these interactions dictate specificity are logically sound and consistent with the biochemical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "a11afab6-3ffe-4af9-bdad-fed9bb2565c5",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "D2 of Mss116 functions as a general and flexible nucleic acid duplex binding domain that binds dsRNA, A-DNA, and B-DNA duplexes with similar affinities (K1/2 = 400, 410, and 510 nM, respectively). CD measurements confirm that duplex geometry is maintained upon binding, and competitive displacement assays demonstrate that B-DNA can displace dsRNA (Ki = 1700 nM). This indicates D2 can accommodate duplexes of different geometries in the dsRNA binding pocket, consistent with recent findings that DEAD-box proteins can interact with dsDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 are well-supported by EMSA binding data (Figure 5A, Figure 5\u2014figure supplement 1), CD spectroscopy (Figure 4E, Figure 4\u2014figure supplement 1), and competitive displacement assays (Figure 5B). The data clearly demonstrate promiscuous duplex binding by D2, and the inference about flexibility is well-justified. The consistency with literature on DEAD-box protein-DNA interactions strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "3977e8d8-2443-436f-8e57-79a0e46c60cf",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mss116 selectively unwinds A-form duplex nucleic acids. The helicase can unwind dsRNA and A-DNA duplexes with different efficiencies (K1/2 = 0.14 and 0.25 mM ADP-BeFx; k1 = 0.46 and 0.15 min\u207b\u00b9 with ATP), but shows no appreciable unwinding of B-DNA duplexes under equilibrium or kinetic conditions. This demonstrates that a DEAD-box protein can unwind an all-DNA duplex if it has A-form geometry, contrary to previous understanding. Although D2 can bind B-DNA, a closed-state complex does not readily form with B-form DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are strongly supported by equilibrium unwinding assays (Figure 5C, Figure 5\u2014figure supplement 2), kinetic unwinding assays (Figure 5\u2014figure supplement 3), and SEC data (Table 1, Figure 5\u2014figure supplement 4). The data clearly demonstrate selective unwinding of A-form duplexes. The conclusion that DEAD-box proteins can unwind A-form DNA is novel and well-supported, though it contradicts prior literature (C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The closed-state complex forms with both ssRNA and ssDNA, but is significantly more stable with ssRNA (Kd = 0.022 mM) than ssDNA (Kd = 0.79 mM) in the presence of ADP-BeFx. SEC data confirm that the ssRNA complex remains intact during elution while the ssDNA complex dissociates. Crystal structures reveal that while the trajectories and most phosphate backbone interactions are similar for both substrates, the ssRNA complex contains four additional contacts from motifs Ia and Ic in D1 to RNA 2\u2032-OH groups that form during core closure and account for higher stability. This explains the specificity of Mss116 for unwinding RNA duplexes through both A-form geometry recognition and 2\u2032-OH interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52, C59 are well-supported by fluorescence anisotropy data (Figure 5D), SEC data (Figure 5E, Table 1), and crystal structures at 2.5 and 2.9 \u00c5 resolution (Figure 6, Table 2). The structural comparison directly demonstrates the molecular basis for RNA specificity. The inference that these 2\u2032-OH contacts account for differential stability is logically sound and consistent with all experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "27c05b21-9359-46bd-88b8-ceb892c435fd",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mss116 has ambiguous substrate-binding properties, interacting with all four NTPs and both RNA and DNA. The efficiency of unwinding correlates with the stability of the closed-state helicase core complex. Crystal structures reveal that core stability is modulated by family-specific interactions that favor certain substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 represent summary conclusions well-supported by the comprehensive experimental data from the study, including unwinding assays, binding assays, and crystal structures. These claims synthesize the major findings and are directly supported by the data presented in multiple figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "f901aca8-9973-481f-80ff-4edfcc5913bb",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mss116 belongs to a DEAD-box protein subclass with a CTE appended to D2 that makes additional 2\u2032-OH contacts to dsRNA in the open state, potentially favoring dsRNA binding. The interactions of nucleic acid-binding motifs with the phosphate backbone are sufficient to enable unwinding of A-form DNA duplexes at lower efficiency, but Mss116 cannot unwind B-form DNA. Structural modeling indicates that helicase motifs in D1 that clash with dsRNA are not positioned to catalyze unwinding of longer, thinner B-form duplexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C62-C64 are supported by structural data (Figure 1B, Figure 7), citations, and experimental unwinding data. C61 involves speculation about the role of CTE contacts but is based on prior structural work (citation). The modeling of B-DNA in the closed state (C64) provides a structural rationale for the lack of B-DNA unwinding observed experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "0cb503f4-ff6e-4781-8236-75b1d887197f",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The substrate ambiguity of Mss116 suggests an evolutionary scenario where present-day SF1 and SF2 helicases diversified from an ancestral helicase core with broad specificity. Core closure was retained as a common catalytic mechanism while substrate-binding interactions were optimized for different cellular functions through family-specific interactions that modulate closed-state stability. Helicase families displaying the most substrate ambiguity (e.g., DEAH/RHA, NS3/NPH-II) may contain cores functioning similarly to an ancestral helicase. Helicases preferentially using ATP acquired additional adenine base interactions, while DEAD-box proteins evolved specificity for A-form duplexes and RNA 2\u2032-OH interactions. The stability of the closed-state complex may have evolved from tighter to weaker binding as mechanisms evolved from localized to translocation-based unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56, C65-C78, C82-C84 present evolutionary hypotheses and speculation based on the experimental data. While the experimental findings on Mss116 substrate ambiguity are well-supported, the evolutionary inferences are speculative and cannot be directly tested with the data presented. These represent reasonable hypotheses consistent with the data and evolutionary theory (C83), but lack direct experimental validation. The claims appropriately use tentative language ('suggests', 'may', 'likely', 'could have').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "84ceda80-9522-47a8-8f7c-46dd4960ef90",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structural features such as extra terminal domains or \u03b2-hairpins within the helicase core favor translocation-based unwinding in some helicase families. Protein cofactors may play a role in helicase substrate specificity, as illustrated by the DEAD-box protein Rok1 whose cofactor Rrp5 increases specificity 10-fold for pre-rRNA. Other SF2 helicases have evolved to optimally accommodate dsRNA (RIG-I) or dsDNA (S. solfataricus Swi2/Snf2) in closed-state complexes and translocate with no observable unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 are supported by citations to published literature and reference to structural data (Figure 1A, Figure 7C-D). These claims provide context for the Mss116 findings by referencing established knowledge about other helicase families. The claims are appropriately attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "4c00c1fc-c756-40c6-9bc9-8a753d057f18",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SF1 and SF2 helicases use ATP or other NTPs to bind, unwind, or remodel RNA or DNA in essentially all facets of nucleic acid metabolism. They contain a conserved helicase core of two RecA-like domains but can be grouped into families with distinct variations in specificity, mechanism, function, and appended domains. Different families employ different mechanisms including non-processive unwinding of short duplexes (DEAD-box), unwinding coupled to translocation (DEAH/RHA, NS3/NPH-II, RecQ-like), and binding/translocation without unwinding (RIG-I-like, Swi/Snf).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide established background knowledge about helicase superfamilies, supported by multiple citations to published literature and reference to Figure 1A. These claims accurately represent the current understanding of helicase diversity and mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    },
+    {
+      "id": "36c62c1e-23e4-4074-b495-93b54889389f",
+      "content_id": "6802ee44-bf33-4e47-9b7b-4bfad7b86c44",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mss116 is a yeast DEAD-box protein that functions as a general RNA chaperone in mitochondrial intron splicing by locally unwinding dsRNA. It binds diverse RNA substrates non-specifically and has high helicase activity without partner proteins. The helicase core consists of two RecA-like domains (D1 and D2) in an open state without substrates that recognize ATP and duplex RNA in a modular manner. Upon substrate binding, the domains form a closed state containing an ATPase active site, with conserved DEAD-box motifs in D1 promoting unwinding by excluding one RNA strand and bending the other. ATP hydrolysis is required for core reopening and enzyme turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14 provide background on Mss116 structure and function, supported by citations to prior work and reference to Figure 1. These claims establish the foundation for the current study and accurately represent established knowledge about Mss116 from previous publications by the authors and others.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:03:34.165803Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32987d8b-f9f4-4cbc-9013-69e5eb9dca1c",
+      "result_id": "704b866e-dcb9-494e-8c61-61425f0cf783"
+    },
+    {
+      "claim_id": "f03799fc-2a4b-4953-b4fb-49e3765376fa",
+      "result_id": "704b866e-dcb9-494e-8c61-61425f0cf783"
+    },
+    {
+      "claim_id": "83778c12-d263-4c53-95a1-d5dcf795125e",
+      "result_id": "704b866e-dcb9-494e-8c61-61425f0cf783"
+    },
+    {
+      "claim_id": "27a28f9b-05ac-439d-9733-a16711d09942",
+      "result_id": "704b866e-dcb9-494e-8c61-61425f0cf783"
+    },
+    {
+      "claim_id": "bd582cad-2b52-42a8-973a-0dcac5e9fd90",
+      "result_id": "f442c621-bb2f-4109-8c49-4325d1f56981"
+    },
+    {
+      "claim_id": "ee70602b-6846-458d-9a94-805a259c13cb",
+      "result_id": "f442c621-bb2f-4109-8c49-4325d1f56981"
+    },
+    {
+      "claim_id": "a03df723-9a26-4c70-a729-963611fb12a4",
+      "result_id": "f442c621-bb2f-4109-8c49-4325d1f56981"
+    },
+    {
+      "claim_id": "21b5026e-dd98-4ba0-9644-3a60b4716091",
+      "result_id": "f442c621-bb2f-4109-8c49-4325d1f56981"
+    },
+    {
+      "claim_id": "480ac8c1-1e3a-4242-8fc5-612d3456b301",
+      "result_id": "f442c621-bb2f-4109-8c49-4325d1f56981"
+    },
+    {
+      "claim_id": "cc80037d-8a65-4302-bcc5-9bf2e4fc6548",
+      "result_id": "f442c621-bb2f-4109-8c49-4325d1f56981"
+    },
+    {
+      "claim_id": "aa2b1cdd-a2d0-4c39-8953-9c8088745054",
+      "result_id": "f442c621-bb2f-4109-8c49-4325d1f56981"
+    },
+    {
+      "claim_id": "918a4728-df68-4a45-b80f-0a95c6af6a9b",
+      "result_id": "e079855d-ec18-44f5-b16b-1eabd49ed85b"
+    },
+    {
+      "claim_id": "273b46fa-5158-4e4b-8dc7-86fbf1dad1d2",
+      "result_id": "e079855d-ec18-44f5-b16b-1eabd49ed85b"
+    },
+    {
+      "claim_id": "4ba49350-1696-48f1-b78b-213d140771e4",
+      "result_id": "e079855d-ec18-44f5-b16b-1eabd49ed85b"
+    },
+    {
+      "claim_id": "5f644b78-b5c1-4f54-9483-3e6559b1d0fd",
+      "result_id": "e079855d-ec18-44f5-b16b-1eabd49ed85b"
+    },
+    {
+      "claim_id": "28d71ddb-e2c5-44dc-9c6a-f556c2c29e55",
+      "result_id": "e079855d-ec18-44f5-b16b-1eabd49ed85b"
+    },
+    {
+      "claim_id": "876f9fb7-8c90-4385-99fd-225c9f26dcc9",
+      "result_id": "e079855d-ec18-44f5-b16b-1eabd49ed85b"
+    },
+    {
+      "claim_id": "533afdd3-6994-40be-a52e-12139867f2ca",
+      "result_id": "e079855d-ec18-44f5-b16b-1eabd49ed85b"
+    },
+    {
+      "claim_id": "21ab2952-9d80-4b54-89ad-0d91b0083abf",
+      "result_id": "e079855d-ec18-44f5-b16b-1eabd49ed85b"
+    },
+    {
+      "claim_id": "814e4736-3181-416d-b70a-49127a9e453f",
+      "result_id": "a11afab6-3ffe-4af9-bdad-fed9bb2565c5"
+    },
+    {
+      "claim_id": "41e530da-cb78-4899-a8cd-66a8afeff020",
+      "result_id": "a11afab6-3ffe-4af9-bdad-fed9bb2565c5"
+    },
+    {
+      "claim_id": "893a3b0b-62fc-457e-91e6-94916d0a6542",
+      "result_id": "a11afab6-3ffe-4af9-bdad-fed9bb2565c5"
+    },
+    {
+      "claim_id": "0ec6952f-9e70-4bd0-acfc-c0df7d9f9a94",
+      "result_id": "a11afab6-3ffe-4af9-bdad-fed9bb2565c5"
+    },
+    {
+      "claim_id": "c463d2ab-d1ba-4096-af84-1368154da944",
+      "result_id": "a11afab6-3ffe-4af9-bdad-fed9bb2565c5"
+    },
+    {
+      "claim_id": "3bcb46f8-3098-45bd-ad30-c9000bdf232d",
+      "result_id": "a11afab6-3ffe-4af9-bdad-fed9bb2565c5"
+    },
+    {
+      "claim_id": "b7674cad-7e99-48a0-acd1-75544d4ce10f",
+      "result_id": "a11afab6-3ffe-4af9-bdad-fed9bb2565c5"
+    },
+    {
+      "claim_id": "b956a1a0-7e3f-44f7-95e9-7e7e677de5b0",
+      "result_id": "3977e8d8-2443-436f-8e57-79a0e46c60cf"
+    },
+    {
+      "claim_id": "f692a9f2-b4f0-4608-b357-645cae7c30ab",
+      "result_id": "3977e8d8-2443-436f-8e57-79a0e46c60cf"
+    },
+    {
+      "claim_id": "11b3ba0d-7562-4b38-b4ce-14127cb1d989",
+      "result_id": "3977e8d8-2443-436f-8e57-79a0e46c60cf"
+    },
+    {
+      "claim_id": "6986037a-d282-4cb6-a3e7-1fbddd639603",
+      "result_id": "3977e8d8-2443-436f-8e57-79a0e46c60cf"
+    },
+    {
+      "claim_id": "e7926e24-d2d1-489c-88de-e5e508d28375",
+      "result_id": "3977e8d8-2443-436f-8e57-79a0e46c60cf"
+    },
+    {
+      "claim_id": "912e3e22-e3ae-427d-81ff-bf67334e6541",
+      "result_id": "3977e8d8-2443-436f-8e57-79a0e46c60cf"
+    },
+    {
+      "claim_id": "90ebc61c-923e-4eb8-ab83-26567b10de6a",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "4f931ce5-4084-41cb-98b2-3534e44e1e91",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "b87088f3-c9c1-488f-8bd6-036f8e502e1c",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "a6e859a0-3702-4111-a019-5062fe6f1eea",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "5315c73d-230f-4082-969f-4856d5216236",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "4ef29548-11a3-4280-86c4-abb53724032f",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "046b56bc-6c97-414b-8037-f747d55a3a69",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "be5b8440-56da-4b16-a739-74a021ba7540",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "2ce7b9ee-8e09-4521-9b93-db3b0c936996",
+      "result_id": "a7002d67-bac0-4129-9ed6-47d588e7a4d7"
+    },
+    {
+      "claim_id": "9a4d8c64-43c1-4434-9c4f-cc44621cd7a2",
+      "result_id": "27c05b21-9359-46bd-88b8-ceb892c435fd"
+    },
+    {
+      "claim_id": "668b3ff7-8492-44c0-b9d4-7f8edd592f75",
+      "result_id": "27c05b21-9359-46bd-88b8-ceb892c435fd"
+    },
+    {
+      "claim_id": "3c4f9cc9-2f09-4a34-81d3-6df17f318ce5",
+      "result_id": "27c05b21-9359-46bd-88b8-ceb892c435fd"
+    },
+    {
+      "claim_id": "53be01f7-68dc-43fd-a455-6af9661bc3dc",
+      "result_id": "f901aca8-9973-481f-80ff-4edfcc5913bb"
+    },
+    {
+      "claim_id": "ca2ced03-f370-4f54-8220-40693b0f9128",
+      "result_id": "f901aca8-9973-481f-80ff-4edfcc5913bb"
+    },
+    {
+      "claim_id": "cdcf5b70-83e6-4145-ba8a-e3682333a2e2",
+      "result_id": "f901aca8-9973-481f-80ff-4edfcc5913bb"
+    },
+    {
+      "claim_id": "13ebb218-b2e8-42d9-8178-a9f8f5e741a5",
+      "result_id": "f901aca8-9973-481f-80ff-4edfcc5913bb"
+    },
+    {
+      "claim_id": "9ca7c970-3fdd-45a9-aac9-cf833db31a6a",
+      "result_id": "f901aca8-9973-481f-80ff-4edfcc5913bb"
+    },
+    {
+      "claim_id": "e40991cd-aabe-4790-9907-02d092903bbe",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "429ae5c2-968c-491f-9fe5-10261f1b0a3f",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "80e7e087-6526-4334-906a-f9cbd2d7e240",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "3f4a3136-9858-40f2-b561-752f7c7fd738",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "f12f1e6b-0e50-4e8c-8548-9fd60fbf8713",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "5d54429c-0a65-4d09-82e3-e32de9f76c06",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "e0df16f2-7d5e-4685-b74f-eb765ef66bd3",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "8ac6ab4e-8cf2-46b6-b1d5-0656327a39c0",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "a5719671-29a3-4b85-b3ae-77b35d3154c3",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "7ab87073-33d1-43ae-8e35-16a37c363873",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "db2d2a29-f30b-48d5-8fc3-9f8387c15249",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "bd6b3d8a-7c57-4e41-b5cb-aa1feac31246",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "ad466be5-bbdc-4b66-990b-f2fdf212c9f1",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "cb1cfd44-4182-4cb5-a427-4b0951902773",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "092df4a6-c5cc-4250-9019-4852d1962169",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "55f81db7-ba2f-4992-8031-7a8507e46316",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "a574fa29-a290-4739-81dc-dcd4f51e5dfa",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "79a58cba-8183-4478-8cf6-43e7a8802a02",
+      "result_id": "0cb503f4-ff6e-4781-8236-75b1d887197f"
+    },
+    {
+      "claim_id": "bd7e1bdf-a4c9-4e9e-85a9-401c21e87991",
+      "result_id": "84ceda80-9522-47a8-8f7c-46dd4960ef90"
+    },
+    {
+      "claim_id": "965a5fe9-72a7-4f81-925e-323b416152db",
+      "result_id": "84ceda80-9522-47a8-8f7c-46dd4960ef90"
+    },
+    {
+      "claim_id": "aeb8fc0c-bc20-4a40-a01e-bcbd4fe91ae5",
+      "result_id": "84ceda80-9522-47a8-8f7c-46dd4960ef90"
+    },
+    {
+      "claim_id": "fee9bbe5-bd2b-4954-9eec-51e69c083824",
+      "result_id": "4c00c1fc-c756-40c6-9bc9-8a753d057f18"
+    },
+    {
+      "claim_id": "91801863-ce6a-4e5b-a59b-c3b8e2650636",
+      "result_id": "4c00c1fc-c756-40c6-9bc9-8a753d057f18"
+    },
+    {
+      "claim_id": "7a8b6346-9206-43f0-9d3a-e3f23ee34687",
+      "result_id": "4c00c1fc-c756-40c6-9bc9-8a753d057f18"
+    },
+    {
+      "claim_id": "0aeb15cd-3954-4c84-b974-aff5c9c5e7e3",
+      "result_id": "4c00c1fc-c756-40c6-9bc9-8a753d057f18"
+    },
+    {
+      "claim_id": "01d555f9-2c2c-4e27-a159-28aed6834a00",
+      "result_id": "4c00c1fc-c756-40c6-9bc9-8a753d057f18"
+    },
+    {
+      "claim_id": "f67995f7-99fa-4edc-bbe3-46768666b51f",
+      "result_id": "4c00c1fc-c756-40c6-9bc9-8a753d057f18"
+    },
+    {
+      "claim_id": "fd826167-ef57-429f-8e9f-ca13976f5a82",
+      "result_id": "36c62c1e-23e4-4074-b495-93b54889389f"
+    },
+    {
+      "claim_id": "0c8c53c4-f01c-402a-96f4-aaec31d22072",
+      "result_id": "36c62c1e-23e4-4074-b495-93b54889389f"
+    },
+    {
+      "claim_id": "77664e7f-b254-4db8-ae45-89e7a0be9cd3",
+      "result_id": "36c62c1e-23e4-4074-b495-93b54889389f"
+    },
+    {
+      "claim_id": "7c9091b6-08fe-4835-96b7-1558931f16fe",
+      "result_id": "36c62c1e-23e4-4074-b495-93b54889389f"
+    },
+    {
+      "claim_id": "3c58ea9d-d6bd-4d49-a7ba-196d15b897dc",
+      "result_id": "36c62c1e-23e4-4074-b495-93b54889389f"
+    },
+    {
+      "claim_id": "522ab383-9757-4ba1-a69f-4733b6b61900",
+      "result_id": "36c62c1e-23e4-4074-b495-93b54889389f"
+    },
+    {
+      "claim_id": "85afdb8d-f370-4ae3-9567-43ffdf8f4f68",
+      "result_id": "36c62c1e-23e4-4074-b495-93b54889389f"
+    },
+    {
+      "claim_id": "8a00d6f3-bf94-4986-a6d8-2da52db032de",
+      "result_id": "36c62c1e-23e4-4074-b495-93b54889389f"
+    }
+  ],
+  "comparisons": []
+}

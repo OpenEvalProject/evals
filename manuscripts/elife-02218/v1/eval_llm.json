@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Hsp70 proteins are ubiquitous ATP-driven molecular chaperones that function as monomers and supervise diverse cellular processes including protein translation, trafficking, complex disassembly, signaling, and degradation, all of which depend on high-affinity substrate binding during an ATP-driven cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C11 establish the background on Hsp70 function and are well-supported by established knowledge and appropriate citations. These are standard facts about Hsp70 biology that provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C18"
+    ],
+    "result": "The nucleotide-bound state (ATP vs ADP) affects Hsp70 substrate affinity and binding/unbinding kinetics, with Hsp70\u00b7ADP binding substrate more stably than Hsp70\u00b7ATP, and Hsp70\u00b7ATP exchanging substrate 2-3 orders of magnitude faster than Hsp70\u00b7ADP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C17-C18 describe well-established properties of Hsp70 nucleotide states supported by multiple citations and illustrated in Figure 1. These form the foundation for understanding the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Experimental evidence suggests that the effective affinity of Hsp70 for substrates during its ATP-hydrolysis cycle is significantly higher than either Hsp70\u00b7ATP or Hsp70\u00b7ADP alone, which would not be possible at thermodynamic equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 cite experimental observations (Laufen et al., 1999; Wittung-Stafshede et al., 2003) that motivate the study. The inference that this violates equilibrium thermodynamics is sound and provides the key rationale for the theoretical investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "J-domain proteins (JDPs) enhance ATP hydrolysis by binding substrate and subsequently interacting with Hsp70, while nucleotide exchange factors (NEFs) catalyze nucleotide release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe the roles of cochaperones, supported by appropriate citations and established knowledge. This provides necessary context for how the model parameters are modulated in cellular conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ATP hydrolysis results in net production of ADP and loss of ATP, and in cells, ATP/ADP concentrations are maintained by energy-consuming chemostats, making ATP hydrolysis an intrinsically non-equilibrium process in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 establish the thermodynamic basis for treating ATP hydrolysis as a non-equilibrium process. This is well-grounded in biochemical knowledge and is critical for the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "In the absence of ATP hydrolysis, all reactions of the Hsp70 cycle are at equilibrium, where detailed balance holds and each branch of the cycle is individually balanced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 correctly describe equilibrium thermodynamics principles. This establishes the baseline for comparison with the non-equilibrium case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The equilibrium dissociation constant can be measured using Hsp70 hydrolysis-deficient mutants at varying nucleotide concentration ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by citation to McCarty and Walker, 1991, and represents a valid experimental approach for measuring equilibrium constants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "When ATP hydrolysis is active, dissipated energy must be included in the energy budget, detailed balance is broken, and a steady-state (but non-equilibrium) solution of the cycle exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 correctly describe non-equilibrium thermodynamics. The existence of a steady-state solution is demonstrated in the Materials and methods section with appropriate mathematical derivations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The ATP hydrolysis flux increases with the hydrolysis acceleration ratio (k_h^S/k_h) before saturating at a regime dominated by the rate-limiting exchange process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by Figure 2A and citation to Gassler et al., 2001. The saturation behavior is consistent with kinetic expectations when exchange becomes rate-limiting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Energy consumption via ATP hydrolysis can decrease the dissociation constant by several orders of magnitude beyond equilibrium limits (ultra-affinity), with a theoretical lower bound of k_ADP^off/k_ATP^on that depends on kinetic properties rather than equilibrium dissociation constants, though this theoretical limit is likely not accessible to Hsp70s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37, C40-C42 present the core theoretical finding supported by Figure 2B and mathematical analysis. The model correctly shows how non-equilibrium conditions enable ultra-affinity. The mathematical derivation appears sound, though experimental validation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Ultra-affinity can only be achieved when k_ADP^off/k_ATP^off < 1, and is more pronounced for larger time-scale separations between ATP and ADP states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by Figure 3A, which systematically explores the parameter space. The requirement for time-scale separation is logically consistent with the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "Ultra-affinity depends on substrate concentration, with a sharp transition at [S]tot/[Hsp70]tot = 1; ultra-affinity is observed when chaperone is in excess, but not when substrate is in excess because substrate binding to the ADP-bound state becomes dominant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C50 are supported by Figure 3B and provide important mechanistic insight. The concentration dependence is a non-trivial prediction of the non-equilibrium model and the mechanistic explanation is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C56"
+    ],
+    "result": "Experimental characterization of non-equilibrium Hsp70-substrate dissociation is limited, but ultra-affinity was implicitly suggested in studies with co-localized JDPs where substrates bound more efficiently with ATP than ADP, suggesting ultra-affinity requires coupling of substrate binding with enhanced hydrolysis acceleration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C56 appropriately cite experimental literature (Misselwitz et al., 1998; Laufen et al., 1999; Sullivan et al., 2001) that provides indirect support for ultra-affinity. The authors correctly note the limited direct experimental evidence while identifying relevant observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Three conditions are required for ultra-affinity: (i) ADP-bound state must have significantly slower substrate exchange than ATP-bound state, (ii) ATP hydrolysis must be enhanced by orders of magnitude, and (iii) chaperone must be in excess over substrate. All these conditions are typically met by canonical Hsp70s in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 synthesize the model predictions with known cellular conditions. The three requirements are well-supported by the theoretical analysis (Figures 2B, 3A, 3B), and the assertion that cellular conditions meet these requirements is supported by citations and established knowledge about Hsp70 abundance and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C64"
+    ],
+    "result": "The biochemical requirements for ultra-affinity coincide with physiological cellular conditions, which are optimal for ultra-affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C64 represent a key conclusion that connects the theoretical predictions to biological relevance. This is well-supported by the analysis of cellular conditions relative to model requirements, though direct in vivo validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "ATP hydrolysis can be exploited to overcome equilibrium thermodynamic constraints, and energy consumption's role in driving biochemical cycles is well-established in various cellular processes including sensing, signaling, and adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 place the findings in broader context with appropriate citations. This represents valid contextualization of the work within non-equilibrium thermodynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Ultra-affinity shares similarities with kinetic proofreading in using energy consumption to increase binding affinity beyond equilibrium, but differs mechanistically: kinetic proofreading enhances pre-existing affinity differences through multiple steps, while ultra-affinity arises from substrate-induced non-equilibrium transitions in the receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide a valid conceptual comparison with kinetic proofreading (Hopfield, 1974). The distinction drawn between the mechanisms is appropriate and helps clarify the novelty of the ultra-affinity concept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Similar approaches may be applicable to other Hsp70s (e.g., HscA), other chaperones with complex cycles (GroEL/S, Hsp100s, Hsp90s), and potentially other molecular machines working on similar principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 are speculative about future applications. While reasonable, these represent hypotheses rather than demonstrated results and would require additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Deterministic mass-balance equations are appropriate for the Hsp70 system due to high abundance of chaperones and substrates, though stochastic descriptions would be needed for less abundant species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 provide appropriate methodological justification. The choice of deterministic vs. stochastic modeling is well-reasoned based on molecular abundances, with appropriate citation (Ge et al., 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model uses experimentally-determined parameters from the DnaK/DnaJ system, with nucleotide release rates much slower than binding rates, implicit treatment of DnaJ dimerization, negligible reverse ATP synthesis rate, and ATP/ADP ratio of 10 matching physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C78-C80 describe model parameterization with appropriate citations and justifications. The parameters are taken from experimental literature (Table 1) and approximations are reasonable and well-justified.",
+    "result_type": "MINOR"
+  }
+]

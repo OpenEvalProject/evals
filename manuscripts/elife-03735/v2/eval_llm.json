@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed a novel RRT (Ribosome Residence Time) analytical method that identifies genomic windows where a codon occurs uniquely, calculates relative footprint frequencies across 10 positions, and compares these to a baseline to quantify ribosome dwell time at each codon-position combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 describe the methodological innovation clearly. The approach addresses known limitations of previous analyses (C21) by using independent windows rather than weighting by expression. The RRT metric definition is mathematically sound and interpretable. However, the choice of parameters (window size, minimum reads) lacks systematic justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "RRT analysis was validated using simulated negative controls (random codon assignment), simulated positive controls (biased AAA reads), real negative controls (naked RNA fragments), and real positive controls (E. coli starved for serine), all showing expected patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 demonstrate appropriate validation strategy. The controls span computational (C29-C30) and experimental (C31-C33) approaches. The E. coli serine starvation experiment (C33) provides strong biological validation. The enzymatic bias at termini (C32) is appropriately acknowledged and supported by citations. The different A-site position in E. coli vs yeast (C34) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C39",
+      "C42",
+      "C43",
+      "C85",
+      "C104"
+    ],
+    "result": "Different codons are decoded at different rates at the A-site (position 6), with frequent codons decoded more quickly than rare codons. The correlation between codon usage frequency and RRT is r = -0.52. The slowest codon is CTC (RRT ~1.9) and fastest is ACC (RRT ~0.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C35-C36, C39, C42-C43, C85, C104 collectively establish the main finding. The correlation of r = -0.52 (C39) is statistically meaningful though moderate. Position 6 assignment as A-site (C36) is supported by control experiments and proline data. The range of RRT values (0.70-1.9) represents biologically significant variation. However, the correlation was corrected from an earlier r = -0.7, raising questions about analytical robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41"
+    ],
+    "result": "AT-rich codons are decoded faster than GC-rich codons. Codons with 3 or 2 GC residues have mean RRT of 1.23, while codons with 1 or 0 GC residues have mean RRT of 1.01 (p < 0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C41 establish a secondary pattern beyond codon frequency. The statistical test (C41) provides appropriate support with p < 0.003. However, this effect is weaker than the frequency effect and may be partially confounded since rare codons tend to be GC-rich. The mechanistic interpretation (C66-C67) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C106"
+    ],
+    "result": "Proline is slow in forming peptide bonds at the P-site (position 5). All four proline codons show high RRT values at position 5, with CCT, CCA, and CCC being the three slowest codons at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C45-C48, C106 demonstrate proline-specific effects at position 5. This finding is consistent with established biochemistry (C46-C47) and provides internal validation for the P-site assignment. The consistency across all four proline codons strengthens the conclusion. The result helps confirm the positional assignments (A-site at 6, P-site at 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Proline codons also show high RRT at position 6 (A-site). When ProPro dipeptides are excluded, proline remains slow at both positions 5 and 6. ProPro-containing footprints show a very large peak at position 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 address a potential confound (ProPro dipeptides) with appropriate control analysis. The persistence of proline effects after excluding ProPro (C52) and the extreme peak for ProPro specifically (C53) are both informative. This suggests proline has effects both in peptide bond formation (P-site) and potentially in the A-site, consistent with its unique chemistry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "RRT analysis gave qualitatively similar results across five datasets, with pairwise correlations ranging from 0.22 to 0.96. The poorest correlation (0.22) was with the Ingolia et al. dataset generated using different methods (cycloheximide before harvesting vs flash-freezing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 address reproducibility but reveal concerning variability. While qualitative similarity is claimed, correlations ranging from 0.22 to 0.96 indicate substantial quantitative differences. The low correlation with Ingolia data (C55) may reflect methodological differences, but correlations among the authors' own datasets also vary considerably (Table 3: 0.35-0.96). This variability undermines confidence in precise RRT values, though general trends may be robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "For codons sharing the same tRNA, RRT values are often but not always similar. TGC (RRT 1.23) vs TGT (RRT 0.81) and GGC (RRT 1.22) vs GGT (RRT 0.93) show significant differences despite sharing tRNAs, with the perfect match decoded more slowly than the wobble match in both cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 identify an important exception to the tRNA concentration hypothesis. The consistency across all five datasets (C63) strengthens this finding. The pattern that perfect matches are slower than wobble matches (C64) is intriguing but mechanistically unclear. This suggests RRT depends on more than tRNA concentration (C65), though alternative explanations (C66-C67) remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Analysis of short footprints (20-22 nt) from anisomycin-treated cells shows high reproducibility (correlations 0.89-0.998) but no correlation with long footprint RRT values, suggesting the two footprint types report on different translational processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 appropriately analyze published data from Lareau et al. The high internal consistency (C73) and lack of correlation with long footprints (C74-C75) support the interpretation of different processes. However, the modest correlation (0.23) between untreated and anisomycin-treated short footprints (C83) raises questions about whether anisomycin-induced footprints represent normal translation states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Short footprints show amino acid-specific RRT patterns (glycine at position 3, small hydrophobic amino acids at position 5, Arg/Lys at position 6), while long footprints show codon-specific patterns. This difference suggests long footprints report on decoding and short footprints report on post-decoding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80, C114-C117 establish a clear distinction between footprint types using appropriate statistical methods (codon coherence analysis). The amino acid-specificity of short footprints (C76, C114) vs codon-specificity of long footprints (C115) is well-demonstrated in Figure 8. The interpretation that this reflects decoding vs post-decoding events (C116-C117) is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C99",
+      "C100",
+      "C101",
+      "C107"
+    ],
+    "result": "Short footprints from anisomycin-treated cells show peaks for basic amino acids (Arg, Lys) at position 6, which may reflect interactions with the ribosome exit tunnel. Small hydrophobic amino acids and glycine at other positions might similarly interact with the exit tunnel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82, C99-C101, C107 present speculative interpretations explicitly acknowledged as such (C99). The correlation with known exit tunnel interactions for basic amino acids (C81, C100) provides some support. However, the basis of anisomycin arrest is not fully understood, making interpretation difficult. The extension to other amino acids (C101) is highly speculative. This represents hypothesis generation rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The findings suggest at least three processes (tRNA sampling, GC-rich codon decoding, peptide bond formation) occur on similar timescales during translation. This may reflect evolutionary optimization where no single process is entirely rate-limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 present mechanistic interpretation and evolutionary reasoning. While the logic is sound (C94), this remains inferential. The similar magnitudes of different effects (C93) could support this interpretation, but alternative explanations exist. The mechanistic proposals (C92) about tRNA sampling are reasonable but not directly tested. This represents thoughtful discussion rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Based on RRT measurements and mRNA abundance data, yeast requires approximately 5% fewer ribosomes due to codon usage bias compared to using synonymous codons equally. This provides evolutionary rationale for codon bias despite translation being initiation-limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 present a calculation with important caveats. The 5% estimate (C97) is explicitly described as 'rough' and makes simplifying assumptions (equal initiation rates). The logic that faster codons reduce ribosome requirements genome-wide (C96) is sound, but the quantitative estimate lacks error bounds or sensitivity analysis. The conclusion that 5% provides 'sufficient reason' for codon bias (C98) is debatable without knowing selection coefficients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C102",
+      "C103"
+    ],
+    "result": "This represents the first in vivo measurement of differential translation rates for all 61 codons, contradicting recent studies that found no codon-specific effects. RRT analysis is proposed as a sensitive, generalizable method applicable to diverse organisms and experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C86, C102-C103 appropriately contextualize the work's significance. The novelty claim (C84) appears justified given prior negative results (C17, C86). The methodological contribution (C102) is supported by the validation experiments. However, the generalizability claim (C103) is aspirational rather than demonstrated, as application has been limited to yeast and E. coli data. The contradiction with prior work may reflect methodological improvements or analytical differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "There are strong correlations between codon usage, tRNA gene number, and tRNA abundance in yeast, where 61 sense codons are decoded by 42 tRNAs with 12 codon pairs sharing single tRNAs. This is consistent with tRNA concentration partially limiting decoding rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 establish relevant background knowledge from the literature. These are well-established facts about the yeast translation system that provide context for interpreting the results. The inference about tRNA concentration (C57) is appropriately qualified as consistent with but not proven by correlation. This provides important framework for the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Four ribosome profiling datasets were generated using S. cerevisiae BY4741 in different growth conditions (YPD rich media and synthetic media lacking lysine or histidine), using modified Ingolia methods with flash-freezing before cycloheximide addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 describe the experimental design clearly. The use of multiple independent biological replicates in different conditions strengthens the work. The methodological modification (flash-freezing before cycloheximide) is a key difference from prior work that may explain improved results. However, detailed protocols are appropriately relegated to Methods, and some technical details (e.g., nuclease digestion conditions) could affect results but are not fully evaluated.",
+    "result_type": "MINOR"
+  }
+]

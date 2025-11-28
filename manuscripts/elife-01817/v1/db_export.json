@@ -1,0 +1,1687 @@
+{
+  "submission": {
+    "id": "b9f41d50-6988-4712-892c-04ae27fc305d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:42:56.842679Z",
+    "updated_at": "2025-11-28T20:42:56.842679Z"
+  },
+  "content": [
+    {
+      "id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "submission_id": "b9f41d50-6988-4712-892c-04ae27fc305d",
+      "content_type": "manuscript",
+      "content_text": "# Local cell interactions and self-amplifying individual cell ingression drive amniote gastrulation\n\n## Authors\n\n- Octavian Voiculescu<sup>1</sup> \u2020\n- Lawrence Bodenstein<sup>2</sup>\n- I-Jun Lau<sup>1</sup>\n- Claudio D Stern<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell and Developmental Biology University College London London United Kingdom\n2. Division of Pediatric Surgery Morgan Stanley Children's Hospital of New York-Presbyterian New York United States\n3. Department of Surgery, College of Physicians and Surgeons Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGastrulation generates three layers of cells (ectoderm, mesoderm, endoderm) from a single sheet, while large scale cell movements occur across the entire embryo. In amniote (reptiles, birds, mammals) embryos, the deep layers arise by epithelial-to-mesenchymal transition (EMT) at a morphologically stable midline structure, the primitive streak (PS). We know very little about how these events are controlled or how the PS is maintained despite its continuously changing cellular composition. Using the chick, we show that isolated EMT events and ingression of individual cells start well before gastrulation. A Nodal-dependent \u2018community effect\u2019 then concentrates and amplifies EMT by positive feedback to form the PS as a zone of massive cell ingression. Computer simulations show that a combination of local cell interactions (EMT and cell intercalation) is sufficient to explain PS formation and the associated complex movements globally across a large epithelial sheet, without the need to invoke long-range signalling.\n\n## Introduction\n\nBefore gastrulation, the embryo of reptiles, birds and most mammals is a large flat disc of epithelial cells (epiblast) (Pasteels, 1940). In the chick, the 50,000 or so cells that comprise the embryonic epiblast (area pellucida, 3\u20135 mm in diameter) move as two bilaterally symmetrical whorls, known as the \u2018Polonaise\u2019 pattern (Gr\u00e4per, 1929; Wetzel, 1929) (Figure 1, stage EGK XI-XIV). The movements continue for 8\u201310 hr, culminating in the formation of a stable morphological structure in the posterior midline, the primitive streak (PS) (Figure 1, stage HH2). Stage HH2 is very brief, as the PS then quickly narrows and elongates along the midline of the embryo, reaching about 2/3 of the diameter of the area pellucida in a further 8\u201310 hr (Figure 1, stages HH3 and 3+). Once the PS forms, cells in the epiblast lateral to the PS start moving directly into it along trajectories perpendicular to its axis (for reviews see Spratt, 1946; Nicolet, 1971; Bellairs, 1986; Stern, 2004b) (Figure 1, stages HH3-3+). The PS acts as a gateway for gastrulation as epiblast cells internalize via epithelial-to-mesenchymal transition (EMT) (Nieto, 2011) and generate mesoderm and endoderm beneath the epiblast layer. At present we do not understand the cellular or molecular mechanisms of any of these events, nor do we know whether they are controlled separately or represent the manifestation of a single underlying process.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig1-v1.jpg)\n\n**Figure 1.:** The upper row of diagrams shows embryos at stages XI-XIV (pre-primitive streak), 2 (early streak), 3 (mid-streak) and 3+ (mid- to late streak), viewed from the dorsal (epiblast) side. The arrows denote the main morphogenetic movements (\u2018Polonaise\u2019) occurring within the plane of the epiblast. After stage 4 (end of gastrulation), convergence of cells towards and ingression through the anterior part of the streak slows down or ceases (although these movements continue through the middle and posterior parts of the streak), while the epiblast anterior to the streak (prospective neural plate) elongates (Sheng et al., 2003); later, the streak starts to regress, further lengthening the neural plate posteriorly (Spratt, 1947). The lower row of diagrams shows an exploded view of the embryos at each of the above stages, with the top row of diagrams representing the upper layer (epiblast, shades of yellow), the bottom row showing the lower layer (shades of blue/green: hypoblast in dark green, endoblast in light green, definitive or gut endoderm in blue) and the centre row showing the middle (mesodermal) layer (primitive streak, in red). Within the epiblast, the central (yellow) region is the area pellucida and the outer (mustard) region the extraembryonic, area opaca.\n\nMany theories have been proposed to account for the early movements of the epiblast (Table 1 in Chuai and Weijer, 2009). One type of model invokes long-range, diffusible chemotactic attractants or repellents emanating from various parts of the embryo, to which epiblast cells respond as individuals. For example, (Vasiev et al., 2010) suggested that the tip of the PS produces repellents for cells in the rest of the epiblast, while (Sandersius et al., 2011) proposed that the PS acts as a \u2018chemotactic dipole\u2019, secreting repellents at the tip and attractors at the base, to which epiblast cells respond. Differential adhesion between cells destined to ingress and the rest of the epiblast is also invoked by some models (Vasiev et al., 2010). All of these models are complicated by the fact that the extracellular matrix, presumed to be the substrate over which the epiblast moves, is secreted by both epiblast and underlying hypoblast and actually moves along with the cells (Harrisson et al., 1985a; Harrisson et al., 1985b; Zamir et al., 2006; Zamir et al., 2008). Some models do not envision the extracellular matrix as a substrate for cell movements. One of these (Wei and Mikawa, 2000) focused on streak elongation, proposing that oriented cell division could drive this process. Another class of mechanism involves epithelial intercalation of epiblast cells at right angles to the future midline in the presumptive domain of the PS, which is initially located along the posterior edge of the epiblast: this could drive the elongation of this domain and may also contribute to the Polonaise movements (Voiculescu et al., 2007). However none of these models is sufficient to account for all four major movements of chick gastrulation: the Polonaise of the early epiblast, the elongation of the PS, the movement of epiblast cells towards the streak and their ingression through the streak (Table 1). To date, only a very complex combination of various unrelated mechanisms, involving oriented cell division in the streak, secretion of signals by the streak that repel its tip (\u2018mechanism M3\u2019 of Vasiev et al. (2010)), induced cell polarization of the epiblast and differential adhesion of the prospective mesendoderm to neighbouring cells (\u2018mechanism 11\u2019 of Table 1 in Vasiev et al. (2010)), has come close to delivering the full repetoire of key movement patterns.\n\n**Table 1.**\n Summary of the four main classes of model (with an example of each) proposed to explain aspects of chick gastrulation\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>Mechanism(s)</th>\n      <th>PS elongation</th>\n      <th>Early epiblast movements (Polonaise)</th>\n      <th>Late epiblast movements</th>\n      <th>Ingression</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wei and Mikawa, 2000</td>\n      <td>oriented cell division in PS</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bodenstein and Stern, 2005</td>\n      <td>movement and incorporation of lateral cells into PS +/\u2212 active movement within PS</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Voiculescu, et al., 2007</td>\n      <td>intercalation in PS region</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Vasiev, et al. 2010</td>\n      <td>repulsion by tip of PS</td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sandersius, et al., 2011</td>\n      <td>repulsion and attraction by PS</td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_The last four columns summarise the specific cell movements that are explained (x) or not explained (blank) by each model. None of the existing classes of model is sufficient by itself to account for all the movements observed._\n\nSeveral other problems are not addressed by any current model. One of these is how the PS is maintained as a morphologically stable structure despite the fact that cells are continuously moving into and out of it. We know very little about the dynamics of EMT for individual cells, how collective EMT arises and how the PS is maintained as a stable structure despite its constantly changing cellular composition. The PS acts like the blastopore (a canal connecting the outer and inner layers of the embryo) of lower vertebrates, but the PS does not have an obvious opening, raising the question of how cells are internalized through an apparently solid structure. It is also unclear how the epiblast preserves its integrity and characteristic columnar epithelial organisation of cells with apical-basal polarity during this process.\n\nHere we address these questions and provide evidence that the epiblast is highly dynamic and that local cell interactions are sufficient to explain global morphogenetic movements across a large epithelial sheet without the need for long-range signalling.\n\n## Results\n\nConventional time-lapse video microscopy reveals that the PS appears abruptly, forming a triangular structure within 10\u201330 min (Figure 2A\u2013E, Video 1). This event defines the transition between stages XIV (Eyal-Giladi and Kochav, 1976) and 2 (Hamburger and Hamilton, 1951) (Figure 1). Scanning Electron Microscopy (SEM) of embryos at successive stages, fractured perpendicular to the forming streak, reveals a growing population of middle layer cells (prospective mesoderm and endoderm) underlying an uninterrupted flat sheet of epiblast (Figure 2F\u2013K). Close to the PS, the epiblast displays cells with various degrees of apical narrowing and baso-lateral expansion (designated 1\u20135 in Figure 2L\u2013P), indicative of bottle-like cells undergoing EMT. The PS only develops a marked midline groove many hours later, by which time it contains many deep cells and its length has extended to about 2/3 of the diameter of the area pellucida (stage 3+, Hamburger and Hamilton, 1951; Figure 1); even then, it does not contain a blastopore-like opening that could act as a portal for gastrulation (Bancroft and Bellairs, 1974; Vakaet, 1984; Figure 2K).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013E) Images from a time-lapse sequence of entire embryos (Video 1), showing the uniform epiblast 6 hr (A, stage EG&K XII) and just before primitive streak formation (B, stage EG&K XIV), the first appearance of the primitive streak (C, stage HH2), accumulation of mesoderm beneath the flat streak (D, stage HH3), appearance of a groove in the PS and emigration of mesoderm (E, stage HH3+). (F\u2013K) SEM of fractured embryos before (F\u2013H) and after (I\u2013K) streak formation. White arrows indicate possible EMT before PS formation. (L\u2013P) SEM of fractured PS, showing EMT cells with various degrees of apical constriction and basolateral expansion (classified as \u2018ingression stages 1\u20135\u2019). (Q) This embryo was cultured for 1 hr after electroporation of a control, fluorescent morpholino into the entire epiblast at stage XI, then sectioned sagitally and viewed under fluorescence. Labelled cells in the epiblast show similar morphologies to those in SEMs (panels L\u2013P, \u2018ingression stages 1\u20135\u2019). (R) This embryo was cultured for 4 hr after electroporation of a control, fluorescent morpholino into the entire epiblast at stage XI, then fixed (at stage XII), sectioned sagitally and stained with anti-fluorescein antibody (brown). The section shows several cells that have left the epiblast and are now in the underlying space throughout the anterior-posterior extent of the embryo (arrows).\n\n![Video 1.](https://cdn.elifesciences.org/articles/01817/elife-01817-media1.avi.jpg)\n\n**Video 1.:** Chick embryo development from late blastula to full primitive-streak stages. Time is indicated in hh:mm. The video shows the entire embryo (about 3 mm in diameter) and was made using a 2.5x objective and a conventional upright compound microscope with bright field optics.\n\nTo examine when EMT begins, we labelled cells in the epiblast before PS formation (stages X-XIII, Eyal-Giladi and Kochav, 1976) by widespread electroporation of a fluorescein-labelled control Morpholino. Within 1 hr after labelling and at all embryonic stages examined, all regions of the epiblast contain some cells at different stages of EMT: Figure 2Q shows an example, where cells with different morphologies have been classified into five \u2018ingression stages\u2019 (1\u20135) equivalent to those seen by SEM (see above). 4 hr after labelling (Figure 2R), some cells have left the epiblast but can be distinguished from hypoblast cells because the latter are much larger. Multi-photon time-lapse sequences reveal individual ingression events widely distributed in the epiblast, as early as stages X-XII, 6\u201315 hr before streak formation (Figure 3A; Video 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) Uniform distribution of EMT in the epiblast before PS formation (A) and acceleration of EMT as the PS appears (B). Locations are plotted from 6 hr time-lapse sequences (see Videos 3 and 4, respectively) and the time of ingression is colour-coded (numbers represent minutes). Each field of view is 600 \u00d7 600 \u03bcm, in the central posterior epiblast (where the primitive streak arises). (C and D) Apical surface of the epiblast seen in SEM at PS formation stages. (E) An individual epiblast cell followed in time-lapse before (see Video 5) undergoing repeated attempts at full EMT. (F) Multi-photon time-lapse sequence of EMT at PS stages. The top left-hand panel shows a diagram of the embryo with the area imaged enclosed in a square. The other panels represent views in the x-z (top right), y-z (bottom-left) and x-y (bottom-right). The positions of selected, colour-coded cells at successive time points (10 min intervals) are connected with lines.\n\n![Video 2.](https://cdn.elifesciences.org/articles/01817/elife-01817-media2.avi.jpg)\n\n**Video 2.:** Multi-photon time-lapse sequence of the posterior epiblast at pre-primitive streak stages. The embryo was labelled by electroporation of a fluorescein-coupled control morpholino at stage EG&K XI, imaged every 10 min until stage EG&K XII (time indicated in hh:mm). Top view perpendicular to the epiblast (maximum intensity projection, scan depth 100 \u03bcm, z-spacing of 3 \u03bcm; scanned area 600 \u03bcm \u00d7 600 \u03bcm). Prospective ingressing cells in this sequence are marked by a blue dot; a red dot marks each ingression event. Relates to Figure 2A,B.\n\nWhat underlies the transition from isolated EMT scattered across the epiblast to massive internalization at the PS? Using SEM, we observed that the apical surface of the epiblast displays depressions 3\u20134 cells wide (Bancroft and Bellairs, 1974) at stages XIII-2 (just before and as the PS appears); these increase in width and depth by stage 3 (Figure 3C,D), suggesting coordinated apical constriction. In multi-photon time-lapse sequences, ingression events can be seen to accelerate as the streak forms (Figure 3B, Figure 4; Videos 3, 4). Individual cells scattered throughout the epiblast undergo repeated cycles of incomplete delamination as they move towards the streak; this continues even at later PS stages (Video 5; Figure 3E). Few cells far from the streak complete their delamination (Video 6). Ingression increases as cells approach the PS so that most of them ingress within 1 hr; however, cells reaching it at the same time do not necessarily ingress synchronously (Video 7; Figure 3B,F) and some ingressions occur away from the PS midline. For example in Figure 3F, a cluster of cells highlighted with different colours at the far left of the lower right hand panel (dorsal view of the epiblast) shows that cells that are close to each other ingress at different times and different positions along their trajectory towards the PS (middle of the panel): one of the red cells (higher in the panel) ingresses furthest from the streak and earliest, whereas the other red cell (the lowest in the group) ingresses only when it reaches the streak. Together, these observations show that ingression of epiblast cells occurs throughout the epiblast at a low rate, but this rate increases markedly in the region of the forming streak.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig4-v1.jpg)\n\n**Figure 4.:** Cell ingression accelerates as the PS forms and cells approach its midline. (A) the first and last frames of Video 4 (left and right panels, respectively), highlighting the triangles used for measuring. (B) relative change in surface area of each triangle over time (min). (C) relative change in surface area of each triangle as a function of distance to the midline (in \u03bcm). (D) correlation coefficient (r2) of the size reduction plotted against initial distance to the midline (\u03bcm).\n\n![Video 3.](https://cdn.elifesciences.org/articles/01817/elife-01817-media3.avi.jpg)\n\n**Video 3.:** Multi-photon time-lapse sequence of the posterior epiblast around the time of primitive streak formation. The embryo was labelled by electroporation of a plasmid driving the expression of H2B-EGFP, imaged every 10 min between stages EG&K XIII and HH 3 (time indicated in hh:mm). The upper panel is a top view of the epiblast (maximum intensity projection, scan depth 100 \u03bcm, z-spacing of 3 \u03bcm; scanned area 600 \u03bcm \u00d7 600 \u03bcm). The lower panel is a side view (YZ projection, along the forming primitive streak). Prospective ingressing cells are marked by a blue dot in this sequence and a red dot marks each ingression event. Relates to Figure 2A,B and Video 4.\n\n![Video 4.](https://cdn.elifesciences.org/articles/01817/elife-01817-media4.avi.jpg)\n\n**Video 4.:** The coloured dots mark some cells which do not ingress and which could be followed throughout the sequence in Video 3. 15 triangles were drawn to connect sets of three cells. The surface area of each of these triangles was measured at each time point (every 10 min), and the relative changes used to assess the net rate of ingression in each region; the results are plotted in Figure 4.\n\n![Video 5.](https://cdn.elifesciences.org/articles/01817/elife-01817-media5.avi.jpg)\n\n**Video 5.:** Multi-photon time-lapse sequence of an embryo at stage HH 3+, whose epiblast was electroporated with a plasmid driving DsRed-Express, imaged every 10 min (time indicated in hh:mm). 3D-reconstruction with the basal side of the epiblast towards the viewer and the axis of the primitive streak running from top (anterior) to bottom (posterior). Cells of the wire-frame grid cells are squares 30 \u03bcm \u00d7 30 \u03bcm. One cell attempting EMT is highlighted in green and shown magnified in the insert to the right.\n\n![Video 6.](https://cdn.elifesciences.org/articles/01817/elife-01817-media6.avi.jpg)\n\n**Video 6.:** Multi-photon imaging of another embryo at stage HH 3+, which had been electroporated with DsRed-Express plasmid around the primitive streak and imaged at 10 min intervals (time indicated in hh:mm). 3D-reconstruction with the basal side of the epiblast towards the viewer (similar to the one in Video 5), with the primitive streak running from upper right (posterior) to lower left (anterior). The arrow in the first frame points to a cell which will ingress outside the primitive streak.\n\n![Video 7.](https://cdn.elifesciences.org/articles/01817/elife-01817-media7.avi.jpg)\n\n**Video 7.:** Tracking of cell nuclei in an embryo at stage HH 3+, which had been electroporated with H2B-EGFP plasmid and imaged at 10 min intervals. Time indicated in hh:mm; the tracks are colour-coded as indicated in the time bar (lower-right; time indicated in hh:mm). The green balls show the positions of chosen nuclei at each time point. To allow visualization of all tracks, two views are shown from slightly different angles in the left and right main panels. In both, the apical side of the epiblast is towards the viewer and its basal side away; the primitive streak runs along the middle (anterior towards the top, posterior towards the bottom). The black insets (top right corner of each main panel) show an overview of the entire volume scanned. Cells of the grid box are squares, 50 mm \u00d7 50 mm.\n\nThe increase in ingression rate in the proximity of the future PS territory suggests that cells that have already ingressed may favour ingression of their neighbours. To test this, we grafted small groups of ingressed cells from the posterior early PS (stage 2\u20133) of quail embryos, under the epiblast of pre-PS stage chick embryos (stage XII\u2013XIII) (Figure 5A). We chose these cells because they only contribute to lateral mesoderm and not to axial tissue (Hatada and Stern, 1994; Psychoyos and Stern, 1996); this differs from grafts of organizer or Koller's sickle (Izpisua-Belmonte et al., 1993; Bachvarova et al., 1998), both of which contribute to and induce an organizer (Izpisua-Belmonte et al., 1993; Bachvarova et al., 1998; Streit et al., 2000). The grafted cells induce PS markers in the adjacent epiblast within 4 hr (cBra, 8/8 embryos, cSnail2, 10/10) and massive ingression ensues (Figure 5B). After 14 hr, a second, host-derived streak develops from the graft site (8/11; Figure 5C), whereas the grafted cells (prospective lateral mesoderm [Hatada and Stern, 1994; Psychoyos and Stern, 1996]) migrate away. When a similar graft is made using mesoderm from more lateral cells that have emerged from the PS, no such induction occurs (see below). This is consistent with a previous study (Vakaet, 1973) using full-thickness grafts of posterior mature PS (\u2018nodus posterior\u2019). Our results implicate the mesoderm as the source of the inductive signals. Early ingressed cells induce mesendodermal identity and increase the probability of other epiblast cells undergoing EMT, suggesting that the PS forms and maintains itself by positive feedback mediated by a community effect (Gurdon, 1988).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig5-v1.jpg)\n\n**Figure 5.:** (A) EMT cells from the early PS of a quail embryo (left) are grafted under the epiblast of a pre-PS chick embryo (right). (B) Grafted cells (brown stain, thin black arrow) upregulate EMT markers (cSnail2, purple) and trigger EMT from the epiblast above, after 4 hr. (C) Grafted embryo after 15 hr. The grafted quail cells (brown) have migrated away, and the new PS they triggered (\u20182o PS\u2019) is composed of host cells. The PS developing along the original orientation is labelled \u20181o PS\u2019. In grafts combined with COS cells secreting Cerberus (E) or Cer-S (F), or beads soaked in SB431542 (H) or SB505124 (I), EMT (thickening) from the epiblast and induction of cSnail2 (purple) in the epiblast (red arrows) are abolished. Control COS cells (D) or beads soaked in DMSO (G) do not abolish the induction by the grafted mesoderm (black arrows). Mesoderm from a region lateral to the PS cannot induce EMT or cSnail2 either alone (not shown) or in the presence of GFP-transfected COS cells (J) or beads soaked in solvent alone (K) (red arrows).\n\nWhat is the molecular basis of this community effect? Candidates include pathways implicated in mesendoderm induction (FGF, TGF\u03b2/Nodal) and/or patterning (canonical Wnt, BMP) (Carnac and Gurdon, 1997; Standley et al., 2001; Stern, 2004a). We co-transplanted recently ingressed cells with COS cells secreting specific inhibitors (Figure 5E\u2013F) or beads soaked in chemical modulators of each pathway (Figure 5H\u2013I). SU5402 (FGF-inhibitor), Crescent, Dkk and alsterpaullone (canonical-Wnt-modulators), chordin and noggin (BMP-inhibitors) did not inhibit induction (n = 9 each except Dkk, n = 7). However, Cerberus (BMP- and Nodal-inhibitor, 9/9; Figure 5E) and Cerberus-Short (Nodal-inhibitor, 8/9; Figure 5F), as well as SB4315412 (10/12; Figure 5H) and SB505124 (11/12; Figure 5I) (inhibitors of TGF\u03b2 superfamily receptors ALK4/ALK7) all prevented both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft. Importantly, they can do this without loss of the markers in the graft cells themselves (Figure 5E\u2013F). Control COS cells (Figure 5D) and beads (Figure 5G) do not prevent induction by the grafted mesoderm. Grafts of mesoderm from outside the PS do not induce the markers either in the presence (Figure 5J,K) or absence (not shown) of beads or COS cells. These results suggest that TGF\u03b2-related factors, and most likely Nodal, are required for the community effect by newly-ingressed mesendoderm. Nodal is expressed before streak formation in a posterior domain of the epiblast (Bertocchini and Stern, 2002; Skromne and Stern, 2002), but its activity is initially blocked by Cerberus (Bertocchini and Stern, 2002), an antagonist produced by the hypoblast. This expression domain seems to be identical to the region in which we previously found cells to undergo intercalation parallel to the marginal zone, driven by the Wnt-PCP pathway (Voiculescu et al., 2007). The domain of Nodal expression and intercalation adopts the shape of the forming streak.\n\nThus, two separable local cell interactions (intercalation and EMT amplified by a community effect) are necessary for PS formation. Are they sufficient to explain PS shape and appearance as well as the complex pattern of tissue movements before and during gastrulation? To address this question we used an agent-based model where these cell behaviours are explicitly added to a simple representation of a bounded epithelial sheet (\u2018Materials and methods\u2013Description of the model\u2019). The model assigns various states (e.g., Wnt-PCP, Nodal) to cells (Figure 6; Table 2); cells modify their states and execute behaviours based upon their current internal state and interactions with their neighbours (e.g., oriented intercalation, self-amplifying EMT; see Table 3 for a summary of the model rules).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig6-v1.jpg)\n\n**Figure 6.:** These diagrams provide an explanatory key for the simulation videos and illustrate the principal signals, cell behaviours and the major tissues involved in gastrulation. Three time points are shown: stage XI, stage 2 and stage 3+. The upper 7 rows are dorsal views onto the epiblast; the lower 3 rows are oblique views. Colours are additive when a cell is positive for more than one displayed state (see e.g., the row labelled \u2018combined\u2019, which symbolises the sum of all features in the rows above it for the forming primitive streak). Nodal(+) cells are shown in red (top row), Wnt-PCP(+) cells in yellow (second row). Cells positive for both Nodal and Wnt-PCP appear orange (third row). At Stage XI all cells in the future streak-forming region are Nodal and Wnt-PCP positive. Later, most continue to have both activities but some cells are only positive for Nodal (red). Cells undergoing EMT are shown in blue and \u2018mesendodermal\u2019 cells in aquamarine (fourth row). For combinations of Nodal, Wnt-PCP, EMT and mesendoderm, note that Nodal(+)-EMT cells appear purple (red + blue); if also Wnt-PCP(+) then approximately violet (red + yellow + blue) (\u2018combined\u2019). The hypoblast is shown chocolate-coloured and the endoblast greenish-slate (rows 6 and 8). Hypoblast displacement by the endoblast (at stage XIV; between stages XI and 2 in the Figure) disinhibits Nodal in the overlying epiblast (see text). Sequential cell positions are integrated by remembering all previous time points to form \u2018trails\u2019, as shown in row 7. For clarity, trails made from 15% of the cells are shown. The last three rows depict the embryo viewed from an oblique angle. In row 8 (\u2018hypoblast and endoblast\u2019), the position of the lower layer can be seen (also see above, lower layer). Initially this consists only of hypoblast (chocolate). At later stages, endoblast (greenish-slate) partially displaces the hypoblast. The epiblast is also seen from below (\u2018epiblast ventral view\u2019, row 9), allowing clear visualization of EMT (blue/purple/violet) and emerging and emerging middle layer (aquamarine) cells. The final row, \u2018epiblast dorsal view\u2019 (row 10), displays the epiblast from above with a pseudo-surface applied, simulating indentations caused by ingressing cells. These indentations sum as cells approach the posterior midline, generating a midline groove at the PS. The pseudo-surface is created by tessellating points representing the top of each epithelial cell (using the cell body for cells undergoing EMT).\n\n![Figure 6\u2014figure Supplement 1.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure Supplement 1.:** Time is represented as \u2018ticks\u2019. Each simulation tick executes activities that include a set of actions for the entire embryo (\u2018organism tick\u2019). The organism tick in turn executes activities including a cell tick for each cell in the organism. Cell ticks calculate and execute activities for each cell. Note that many of these calculations and activities are themselves iterative.\n\n![Figure 6\u2014figure Supplement 2.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure Supplement 2.:** For each MZ cell a displacement vector (white arrowhead) is calculated as the vector sum of \u2018curvature\u2019 (orange), \u2018density\u2019 (green) and \u2018area correction\u2019 (blue) vectors. A mark (red dot) identifies the common origin of each. Vectors are shown magnified 50x for illustration.\n\n![Figure 6\u2014figure Supplement 3.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure Supplement 3.:** (A) Shown is a schematic representation of EMT in the model. Right side: Nodal(\u2212) epithelial cells (grey) may convert to emt cells (blue) which at first are tethered to the epithelium (t-emt) but then become untethered (u-emt) as they descend into the middle layer. They complete the transition as mesenchymal (meso) cells (aquamarine). While still tethered and with cell body above the basement membrane (BM), some will revert and rejoin the epithelium (double-headed arrow). Left side: Nodal(\u2212) epithelial cells convert to Nodal(+) (red) in the region of the PS. The rate of EMT increases with increasing Nodal activity from the cell and its neighbours; Nodal-active emt cells (red + blue = purple) lose the ability to rejoin the epithelium (thicker, single-headed arrow). Conversion to Nodal-positivity and the enhanced rate of EMT is inhibited by the hypoblast and disinhibited when the endoblast displaces the hypoblast. (B) Shown are cell interactions leading to Nodal expression. Nodal(\u2212) epithelial cells (grey) are converted to Nodal(+) cells by near-neighbour Nodal(+) epithelial cells (red) and local neighbour Nodal(+) emt cells (purple = blue[emt] + red[Nodal]). For local neighbours the effect falls off with distance but is particularly enhanced for near-neighbour epithelial cells (arrow widths). A similar scheme (not shown) applies to Wnt-PCP conversion and to EMT recruitment. Numbers of cells, distances and proportions not to scale. BM: basement membrane, t-emt: tethered emt cell, u-emt: untethered emt cell, meso: mesenchymal cell.\n\n![Figure 6\u2014figure Supplement 4.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure Supplement 4.:** (A) Schematic diagram of the equilibration algorithm. Cells (solid circles) are distributed in a hexagonal array. Voronoi regions (VR) are transiently generated around these cells (solid lined hexagons). Cell centroids and VR centroids correspond (dot) and the tissue is at equilibrium. When cell \u2018A\u2019 shifts to a new position (dashed circle), new VR's are generated (dotted hexagons), making the centroid of the new VR for neighbouring cell \u2018B\u2019 move to a new position (cross). Cell \u2018B\u2019 then shifts towards this new position to reestablish equilibrium (arrow). The vector from the original centroid of cell \u2018B\u2019 to the centroid of the new VR of cell B is the equilibrium displacement vector (vequil). (B) Propagation of oriented intercalation orientation vectors. MZ-cells maintain a reference OI-orientation vector state perpendicular to the MZ (determined by the local curvature). Epiblast cells calculate their individual OI-orientation vector states by averaging their current vector with the consensus of their near-neighbours, including MZ-cells (see text). Since the MZ-cell vectors are fixed, epiblast cells abutting the MZ will tend to align their vectors to those of the MZ-cells. Note that although this state is stored as a vector in the model, it has angular but not heads vs tails orientation. (C) Diagram of the oriented intercalation algorithm. A cell and its near-neighbour (NN) both possess OI-orientation information (double-headed arrows). A sequential displacement vector is calculated, oriented from the cell to its target and with a magnitude equal to |sin\u03b8|. This is applied iteratively for all cells.\n\n**Table 2.**\n List of model cell states which include anatomic cell types as well as signalling mediators and behavioural descriptors\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>State</th>\n      <th>Type</th>\n      <th>Visualization</th>\n      <th>Description</th>\n      <th>Initiation, maintenance and propagation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">Cell Types</td>\n      <td>MZ</td>\n      <td>boolean</td>\n      <td>green</td>\n      <td>MZ pseudo-cells surround the epiblast and form a boundary</td>\n      <td>initial ring of cells with shape altered to minimize local curvature and epiblast cell density, then adjusted to control epiblast area</td>\n    </tr>\n    <tr>\n      <td>epiblast</td>\n      <td>boolean</td>\n      <td>grey</td>\n      <td>epiblast epithelial cells</td>\n      <td>initial disc of cells; increased by cell division; decreased by ingression</td>\n    </tr>\n    <tr>\n      <td>emt</td>\n      <td>boolean</td>\n      <td>magenta</td>\n      <td>epiblast cells undergoing EMT</td>\n      <td>cells attempting to ingress from the epiblast in a Nodal-dependent process</td>\n    </tr>\n    <tr>\n      <td>tethered</td>\n      <td>boolean</td>\n      <td>by shape</td>\n      <td>flags whether or not EMT cell remains tethered to epiblast epithelium</td>\n      <td>tethered emt cells may re-incorporate into the epithelium whereas untethered cells are committed to progress to mesenchyme</td>\n    </tr>\n    <tr>\n      <td>meso</td>\n      <td>boolean</td>\n      <td>blue</td>\n      <td>cells which have completed transition to mesenchyme</td>\n      <td>end result of EMT; a terminal, inactive state in these simulations</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Other States</td>\n      <td>Nodal</td>\n      <td>boolean</td>\n      <td>red</td>\n      <td>cells expressing/ secreting Nodal</td>\n      <td>initially present in PS forming region; cells may be converted to positive by neighbours</td>\n    </tr>\n    <tr>\n      <td>Wnt-PCP</td>\n      <td>boolean</td>\n      <td>yellow</td>\n      <td>Wnt-PCP(+) cells capable of oriented intercalation</td>\n      <td>initially present in the PS forming region; cells may be converted to positive by neighbours</td>\n    </tr>\n    <tr>\n      <td>OI-vector</td>\n      <td>vector</td>\n      <td>line segment</td>\n      <td>orients intercalation of Wnt-PCP(+) cells</td>\n      <td>calculated by consensus among Wnt-PCP(+) cells</td>\n    </tr>\n  </tbody>\n</table>\n\n_Colour codes can be matched to simulation images in Figures 6 and 7 and Supplementary Videos._\n\n**Table 3.**\n Description of the rules used in the model\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Tissue Structure</td>\n    </tr>\n    <tr>\n      <td>cells in the epiblast are arranged in a flat epithelial layer; cells undergoing EMT descend beneath this layer</td>\n    </tr>\n    <tr>\n      <td>the epiblast is surrounded by a ring of marginal zone (MZ) cells that acts as a malleable boundary</td>\n    </tr>\n    <tr>\n      <td>Cell State Activities</td>\n    </tr>\n    <tr>\n      <td>an initial cohort of cells in the posterior epiblast is positive for Nodal and the Wnt-PCP system</td>\n    </tr>\n    <tr>\n      <td>Nodal-negative cells may become Nodal-positive if they receive a Nodal signal from neighbours</td>\n    </tr>\n    <tr>\n      <td>Wnt-PCP-negative, Nodal-positive cells may be converted to Wnt-PCP-positive if surrounded by Wnt-PCP-positive neighbours</td>\n    </tr>\n    <tr>\n      <td>epithelial cells are more likely to undergo EMT if neighbouring cells are undergoing EMT (a community effect mediated in the model by Nodal)</td>\n    </tr>\n    <tr>\n      <td>the appearance of the endoblast at Stage XIV displaces the hypoblast (which secretes the Nodal antagonist Cerberus) resulting in Nodal disinhibition in the posterior part of the embryo</td>\n    </tr>\n    <tr>\n      <td>Cell Physical Activities</td>\n    </tr>\n    <tr>\n      <td>epithelial cells undergo a cell cycle and divide in the plane of the epiblast</td>\n    </tr>\n    <tr>\n      <td>epithelial cells maintain spatial equilibrium by centring themselves amongst their near-neighbours</td>\n    </tr>\n    <tr>\n      <td>epithelial cells may convert to EMT cells which are initially tethered to the epithelium</td>\n    </tr>\n    <tr>\n      <td>some EMT cells may become untethered, exit the epithelium and ingress to become mesenchyme</td>\n    </tr>\n    <tr>\n      <td>cells not experiencing Nodal activity (either by being far from the primitive streak (PS) where Nodal is expressed, or by having Nodal inhibited by Cerberus from the hypoblast) undergo EMT at a low rate and may revert back to epithelium</td>\n    </tr>\n    <tr>\n      <td>Nodal-active epiblast cells undergo EMT at an enhanced rate and do not back-convert</td>\n    </tr>\n    <tr>\n      <td>Wnt-PCP-positive cells undergo oriented intercalation with an orientation based on a consensus of the contiguous cohort of intercalating cells, oriented relative to the MZ (intercalation occurs at approximately right angles to the tissue radius)</td>\n    </tr>\n  </tbody>\n</table>\n\n_For details, including mathematical formulations, see \u2018Material and methods\u2014Description of the Model\u2019._\n\nIn the model, the localized intercalation behaviour, first appearing in the pre-PS epiblast, can recreate movements similar to the early Polonaise seen in real embryos (Figure 7A\u2013E,F\u2013H,K\u2013M; Videos 8, 9); the isolated, uniform EMT occurring at these stages has minimal effect. When cooperativity of EMT is triggered in the intercalation domain (by disinhibition of Nodal activity [Bertocchini and Stern, 2002], because of the displacement of the hypoblast away from the posterior Nodal-expressing zone), massive ingression occurs. In line with experimental observations, this causes the movement pattern to be altered, with cells now entering the PS along direct lateral-to-medial trajectories. The simulations faithfully recreate the large-scale Polonaise movements as well as PS formation and its role as a gateway for gastrulation via cell ingression. Importantly, the global Polonaise movements follow passively from active events localized to the posterior PS-forming region and then the PS itself.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013E) Epithelial intercalation in a posterior domain (orange) and EMT (blue, isolated events, cooperative in the pink domain) are sufficient to explain the formation of the PS. (A\u2013C) sequence in time, vertical view; (D) ventral view of the epiblast; (E) apical view of the epiblast. (F\u2013H) Sequence from a time-lapse experiment, with cells in the intercalation domain electroporated with control morpholino (green) and other locations in the epiblast labelled with DiI (red). (F) initial condition, 6 hr before streak formation; (G) movements prior to streak formation; (H) movements over 6 hr after PS forms. (I and J) Movements observed in the same time-frame as in F\u2013H, when intercalation is blocked by electroporating morpholinos (green) against the Wnt-PCP pathway. (K\u2013O) The computer model correctly simulates the observed movements both in normal embryos (K\u2013M) and in intercalation-compromised condition (N and O). (P\u2013R) Hypoblast rotation at pre-PS stages leads to bending of the PS. (P) Experimental embryo, with the PS marked by Bra expression; the model accounts for this result (red in Q) by the induction of a new intercalation domain (yellow in R) which deforms the original one and the field of cooperative ingression (orange in R). (S and T) EMT cells can trigger a chain reaction of EMT and initiate a new PS in both experimental embryos (S) and in the model (T).\n\n![Figure 7\u2014figure Supplement 1.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure Supplement 1.:** The figure shows the composite effects of changing the value of mN and \u03c3d on PS morphology.\n\n![Figure 7\u2014figure Supplement 2.](https://cdn.elifesciences.org/articles/01817/elife-01817-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure Supplement 2.:** Spratt: global epiblast movements as described by Spratt from carbon-particle marking experiments (Spratt, 1946) (adapted from Spratt 1946). The diagrams combine a movement schematic and a representation of the PS. Model: a series of stages in a normal simulation showing the fates of horizontal bands of marked cells (upper row) and formation of the PS (lower row). The simulated pattern is also consistent with more recent analysis of epiblast cell movements and the Polonaise (Foley et al., 2000; Wei and Mikawa, 2000; Voiculescu et al., 2007).\n\n![Video 8.](https://cdn.elifesciences.org/articles/01817/elife-01817-media8.avi.jpg)\n\n**Video 8.:** Cells in a posterior crescent of the epiblast were electroporated with control morpholino (green), and various locations in the rest of the epiblast labelled with DiI (red) at stage EG&K XII and the embryo filmed in a conventional fluorescence microscope in time-lapse. Time indicated as hh:mm before (negative values) and after primitive streak formation.\n\n![Video 9.](https://cdn.elifesciences.org/articles/01817/elife-01817-media9.avi.jpg)\n\n**Video 9.:** Different views of videos showing simulations of normal embryo development (the videos are synchronised with each other). Left column: all cells in the embryonic epiblast are shown in white, confined by the marginal zone (green). In the upper panel, the lower layers are displayed in the background, the hypoblast in pale brown and the endoblast in pale green; in the lower panel, only the epiblast cells are shown. The epiblast cells performing oriented intercalation in the posterior crescent are shown in orange and the early ingressing cells in blue. Cells ingressing by a community effect are displayed in pink. See also Figures 6, 7, Tables 2 and 3, and \u2018Materials and methods\u2014Description of the Model for details and colour codes. Middle column: cell movements in the epiblast. In the upper panel, horizontal bands of cells are coloured differently, to allow comparisons with the results in Gr\u00e4per 1929; in the lower panel, cells in the posterior domain were coloured green and groups of cells in other epiblast locations in red, allowing comparisons with the experimental observations presented here (Video 8). Lower right panel: global movements in the epiblast. A uniform grid of individual objects were tracked over time, and their trajectories are time-coded in rainbow colours. Top right: pattern of ingression in the epiblast. The apical aspect of the epiblast is shown at the top, and its basal side in the lower side of the panel. Cells engaged in EMT are shown in blue, and the locations of completed EMTs in turquoise. Time indicated as hh:mm before (negative values) and after primitive streak formation, as for the experimental observations in Video 8. See also Figure 7F\u2013H,K\u2013J.\n\nWe tested the effect of changing several parameters. As expected, increasing the strength of intercalation causes the streak to converge and elongate more rapidly, and vice versa. We also examined the kinetics of ingression by changing the mean of the logistic curve defining the probability of ingression (mN in Equation 5.1, \u2018Materials and methods\u2013Description of the model\u2019) which effectively alters the community effect threshold and by changing the spatial range of effector cells (\u03c3d in Equation 5.2; dmax was co-modified to remain 4 \u00d7 \u03c3d). Figure 7\u2014figure supplement 1 shows images from simulations in which mN is varied from 6.0 to 10.0 (bracketing 8.0 used in the study) and images from simulations where \u03c3d is varied from 5.0 to 20.0 \u03bcm (bracketing the 10.0 \u03bcm used in this study). Parameter changes that increase the strength of the ingression community effect (smaller mN or larger \u03c3d) tend to produce more diminutive streaks since incorporation of new cells into the streak (Equations 6.1, 6.2, 7.1, 7.2) is less able to compensate for increased loss by ingression.\n\nIn the model, events in the PS (intercalation and ingression) coupled with the cells in the non-PS epiblast spatially equilibrating amongst themselves results in the global epiblast movement pattern. As the PS converges, cells just lateral and anterior shift posteriorly and medially to \u2018fill-in\u2019 the area being evacuated. This shifting is propagated to successively more distant cells. The anterior and lateral epiblast thus sweeps posteriorly and medially. At the same time, convergence and extension in the PS generates movement along the midline; this is mainly directed anteriorly, as the marginal zone limits posterior extension. Together these processes yield both the circumferential (lateral epiblast) and anterior (posterior midline epiblast) components of the Polonaise movement pattern as seen in normal embryos (Spratt, 1946; Figure 7\u2014figure supplement 2).\n\nTo distinguish the roles of intercalation and ingression (EMT) in the global Polonaise cell movements, we blocked medio-lateral intercalation by electroporation of a mixture of morpholinos against components of the Wnt-PCP pathway (Voiculescu et al., 2007) and followed the movement of cells elsewhere in the epiblast by using the carbocyanine dye DiI to label a lattice of cells throughout the epiblast (Figure 7I\u2013J). At pre-streak stages, we observe a complete arrest of the Polonaise movements (Gr\u00e4per, 1929; Wetzel, 1929) across the entire epiblast (Videos 8, 10; in Figure 7 compare G, normal embryo, with I, where Wnt-PCP was blocked in the intercalation domain). Massive ingression is still triggered at the appropriate time, but in a posterior domain close to the margin of the embryo rather than at the midline. In these experiments, cells move posteriorly towards this zone of concentrated ingression along abnormal, straight-line trajectories (in Figure 7 compare H, normal embryo, with J, blocked intercalation). These findings suggest that shaping of the early PS in the normal embryo is mainly driven by intercalation, which results in coalescence and extension in the midline and the Polonaise movement pattern. After its formation, the PS is maintained as a zone of massive ingression that generates a more direct pattern of cell convergence, with cell trajectories perpendicular to the axis of the PS (Video 8; see Figure 1, stage 3+). We used the model to simulate this experiment. With standard parameters and without changing any other conditions, the model faithfully reproduces the altered movement pattern associated with the abrogation of intercalation using Wnt-PCP-Morpholinos in posterior cells (Voiculescu et al., 2007; Video 11; Figure 7N\u2013O).\n\n![Video 10.](https://cdn.elifesciences.org/articles/01817/elife-01817-media10.avi.jpg)\n\n**Video 10.:** Cells in the posterior crescent of the epiblast electroporated with a combination of morpholinos blocking the Wnt-PCP pathway (green), and various locations in the rest of the epiblast labelled with DiI (red) at stage EG&K XII. Embryo filmed by conventional epifluorescence in time-lapse. Time indicated as hh:mm before (negative values) and after primitive streak formation.\n\n![Video 11.](https://cdn.elifesciences.org/articles/01817/elife-01817-media11.avi.jpg)\n\n**Video 11.:** In this simulation, oriented intercalation was abolished in 50% of the cells in the domain where this normally occurs (to simulate the Morpholino experiment, Video 10 and Figure 7). Cell states, domains and trajectories are represented in the same way as for the normal embryos, lower row in Video 10. The middle panel allows direct comparison with the experimental blockage of Wnt-PCP pathway in the posterior crescent (Video 10) with electroporated cells depicted in green and dots at random locations labelled in red (to simulate the DiI labelled cells). See also Figure 7I,J,N,O.\n\nAll above experiments and simulations suggest that just two cell behaviours, cell intercalation and EMT, the latter subsequently amplified locally by a community effect, are sufficient to account for the movements of gastrulation. To test whether they can also account for other reported experimental manipulations, we simulated the effects of hypoblast rotation. In real embryos, rotation of the hypoblast by 90\u00b0 bends the PS (Waddington, 1932) because of altered cell movements (Foley et al., 2000). Signals from the hypoblast can induce a new domain of PCP activity which was proposed to account for these events (Voiculescu et al., 2007). We used the model to test whether this is a sufficient explanation for bending of the PS; simulations suggest that it is (Video 12; Figure 7P\u2013R). Finally, we tested whether the model can also account for our present finding that an ectopic streak can be induced by a graft of ingressed cells. Again, the model can simulate this result without changing any parameters (see above, Video 13; Figure 7S\u2013T).\n\n![Video 12.](https://cdn.elifesciences.org/articles/01817/elife-01817-media12.avi.jpg)\n\n**Video 12.:** Based on experimental findings (Voiculescu et al., 2007), hypoblast rotation by 90\u00b0 induces a supplementary domain of Wnt-PCP gene expression and oriented intercalation (shown here in yellow) was added to the simulation, to mimic the rotation of hypoblast. As in experimental cases (Waddington, 1932; Foley et al., 2000; Voiculescu et al., 2007), hypoblast rotation leads to bending of the primitive streak. The colour coding follows the scheme employed in Video 9, lower left panel. See also Figure 7P\u2013R.\n\n![Video 13.](https://cdn.elifesciences.org/articles/01817/elife-01817-media13.avi.jpg)\n\n**Video 13.:** A group of ingressing cells (pink, as in the colour scheme in Video 9, lower left panel) was \u2018grafted\u2019 at pre-primitive streak stages to a lateral region of a simulated normal embryo. As in the experiments presented in Figure 5 (see also Figure 7S,T), this results in the induction of an ectopic primitive streak from host cells.\n\nIn conclusion, our experimental observations and computer model suggest that just two cell behaviours, cell intercalation localized to a posterior domain of the area pellucida epiblast (future streak forming region) together with EMT events, amplified by a community effect mediated by Nodal, are sufficient to explain all four major movements of chick gastrulation: the Polonaise of the early epiblast, the elongation of the PS, the movement of epiblast cells towards the streak and their ingression through the streak.\n\n## Discussion\n\nSeveral theories have been put forward to account for the origin of the PS and for the associated cell movements. In the chick, some argue that all precursors of the streak arise from and multiply in a very small region of the posterior epiblast (Wei and Mikawa, 2000), whereas others propose that the precursors of the early mesendoderm are present in all regions of the early epiblast, based on the observation that HNK1+/Acetylcholinesterase+ cells are scattered randomly throughout the pre-PS epiblast (Drews, 1975; Canning and Stern, 1988), contribute to mesendoderm and are required for PS formation (Stern and Canning, 1990). Here we show that ingression of cells starts well before gastrulation, by individual cells sparsely scattered across the epiblast, in a pattern similar to the HNK1+ cells. Our results strongly suggest that the early ingressing cells correspond to, or are a subset of the HNK1+ population, which also explains why early ingressed mesoderm cells can rescue PS formation in embryos from which HNK1+ cells have been ablated (Stern and Canning, 1990). There are interesting parallels with the sea urchin, where gastrulation is initiated by maternally specified \u2018pioneer\u2019 cells, the Primary Mesenchyme cells (PMCs) (Sherwood and McClay, 1999; McClay et al., 2000; Sweet et al., 2002), also characterised by their expression of Acetylcholinesterase (Drews, 1975), which carries the HNK1 epitope (Bon et al., 1987; Canning and Stern, 1988). At present, it is not known when and how HNK1+ cells are specified in the chick epiblast, but they share two key characteristics with their sea urchin counterparts: they are required for proper gastrulation (mesendoderm formation) and have inductive abilities. We propose that as in the sea urchin, amniote mesendoderm formation is initiated before the PS forms by \u2018pioneer\u2019 cells that ingress as individuals at relatively low frequency throughout the epiblast.\n\nOur results indicate that, in the presence of Nodal activity, these early ingressing cells can trigger a chain reaction of EMT, induce the expression of mesendodermal markers and PS formation. In zebrafish, when the Nodal pathway is compromised, only about 60 cells still ingress instead of the \u223c2500 that normally do (Keller et al., 2008), consistent with a community-effect mediated by Nodal being conserved in vertebrates. In sea urchin, however, the inductive effect of PMCs on gastrulation is mediated by Notch signalling (Sherwood and McClay, 1999; McClay et al., 2000; Sweet et al., 2002).\n\nThe amniote hypoblast (a transient layer of cells) plays a crucial role in coordinating the timing of PS formation with other cell movements. Medio-lateral intercalation in the epiblast prior to the start of gastrulation acts to displace and re-shape the Nodal domain and the prospective mesendodermal territory to the midline. Later in development, cell intercalation seems to continue to play a role in axial elongation by driving convergence/extension movements in the midline mesoderm and the overlying neuroectoderm (prospective floor plate), after the initial appearance of notochord cells. These later movements in the mesoderm and prospective floor plate are also found in anamniotes, as has been demonstrated in Xenopus and zebrafish (Yeo et al., 2001; Ezin et al., 2006), whereas the early (pre-gastrulation) movements are unique to amniotes. Our results provide a mechanistic explanation for how the displacement of the chick hypoblast (Bertocchini and Stern, 2002) (expressing Cerberus) by the endoblast, or of the mouse anterior visceral endoderm (AVE (Perea-Gomez et al., 2002), expressing Cerberus and Lefty1) leads to extensive EMT and PS formation. We propose that apart from a role in nutrition of the embryo, the hypoblast/AVE acquired the function of delaying PS formation while repositioning the streak precursor cells to the midline (Stern and Downs, 2012). This occurs because the Nodal-expressing domain also expresses components of the Wnt-PCP pathway and undergoes intercalation, independently of ingression (Voiculescu et al., 2007). Distinct molecular pathways mediate the dual role of the hypoblast: FGF, which controls the Wnt-PCP pathway and positions the PS (Voiculescu et al., 2007), and Nodal antagonism (perhaps together with Wnt antagonism), which regulates the timing of PS formation (Bertocchini and Stern, 2002).\n\nWe suggest the following model of amniote gastrulation. (I) In the stages leading up to gastrulation, cells in a crescent-shaped posterior region of the epiblast express Nodal and the Wnt-PCP system. The Wnt-PCP system drives oriented intercalation of epithelial cells, parallel to the marginal zone (perpendicular to the future body axis). Nodal is a potent enhancer of EMT activity (ingression) and sensitizes cells to activity in neighbouring cells (community effect). However, underlying the epiblast is the hypoblast, a suppressor of Nodal activity (through Cerberus). Thus cells outside the posterior region (Nodal-negative) and cells within the region (Nodal-positive but hypoblast suppressed) only attempt EMT at a low rate, and most of these attempts are unsuccessful: they do not result in cell ingression. The Wnt-PCP system causes this posterior cohort of Nodal-positive cells to converge to, and extend along, the midline. Movement of these cells towards the midline draws in neighbouring cells, the displacements are propagated outwards and, through the geometry of the roughly circular epiblast confined within the marginal zone, the Polonaise movement pattern ensues. (II) Endoblast derived from the posterior germ wall (the deep, yolky cells of the area opaca, Stern, 1990) displaces the hypoblast away from the posterior part of the embryo, unleashing Nodal activity in the Nodal-positive population, now localized at the posterior midline. Under the influence of Nodal, ingression accelerates and becomes self-reinforcing, generating the PS. The now massive loss of cells through ingression within the midline PS pulls in lateral neighbours and the displacements are propagated laterally, resulting in a transverse movement pattern. As lateral cells enter the PS, they become Nodal and Wnt-PCP positive and fuel the process. The PS continues to elongate through incorporation of lateral cells and oriented intercalation.\n\nTogether, our results suggest that amniote gastrulation is a population event. The PS is not a fixed gateway for cell internalization but rather a dynamic, self-reinforcing concentration of individually ingressing cells. These results provide a mechanism for the self-maintenance of stable morphological structures as their cell composition changes (Joubin and Stern, 1999). They also demonstrate that large-scale movements and morphogenesis of entire epithelial sheets can be driven by local cell interactions, without the need for signalling over long distances.\n\n## Materials and methods\n\nEmbryos were cultured by a modification of the New culture technique (Stern and Ireland, 1981). Standard methods were used for electroporation with fluorescein-tagged morpholinos (1 mM) or with pCMV-H2B-EGFP (1 mg/ml, kind gift from K Hadjantonakis) (Voiculescu et al., 2007; Voiculescu et al., 2008) and in situ hybridisation (Streit and Stern, 2001). For multi-photon imaging, fertile chick embryos (Henry Stewart & Co. or Winter Egg Farm, UK) were incubated at 38\u00b0C for 2 hr or 14\u201316 hr, to reach stages EG&K XI (Eyal-Giladi and Kochav, 1976) or early stage HH3+ (Hamburger and Hamilton, 1951) respectively, electroporated, reincubated for 4 hr in the case of PS stage embryos, then placed in imaging chambers (Voiculescu and Stern, 2012). Imaging was performed with either a Leica SP2 or MP2 microscope, fitted with a Tsunami XI infrared laser tuned at 895 nm, using a x40 (N.A. = 0.8) lens. Image processing was done using ImageJ, Volocity and Imaris software. For labelling small groups of cells in the embryo, stock CM-DiI (Molecular Probes, 1 mg/ml in ethanol) was diluted 1:20 in 0.25 M sucrose and applied with a finely-drawn microcapillary attached to a mouth tube.\n\nMesoderm grafts were done essentially as described (Stern and Canning, 1990; Izpisua-Belmonte et al., 1993; Streit et al., 2000). Using insect pins, the endoderm of donor quail embryos at early stage HH3 (Hamburger and Hamilton, 1951) was removed, then the mesoderm underlying the posterior PS was dissected out. The graft was transferred onto the ventral surface of pre-streak stage chick embryos, and inserted into a small pocket made under the hypoblast, either alone or in combination with clumps of COS cells or AG1X2 beads. Aggregates of transfected COS cells (Skromne and Stern, 2001), cut with insect pins to match the size of the grafted mesoderm, or AG1X2 beads soaked in chemical inhibitors (Streit et al., 2000) (25 \u00b5M SU5402, 50 \u00b5M SB43142, 5 \u00b5M SB505124), were placed adjacent to the graft, the saline withdrawn from the glass culture ring, and the embryos immediately incubated at 38\u00b0C in culture as described above.\n\n### Description of the model\n\nNudge++TM (a product of Olana Technologies, Inc. \u2013 info@olanatech.com) is an agent-based modelling system designed to study multi-cellular morphogenesis. The current model builds on previously described versions (Bodenstein and Stern, 2005; Fisher and Bodenstein, 2006). Simulated biological cells are the model agents. A two- or three-dimensional simulated tissue is constructed as a cohort of these model cells. Cells execute individual cellular programs leading to actions. The cellular programs reference internal states and external cues, the latter of which may include the states and actions of neighbouring cells. The pooled behaviour of the entire cohort of cells leads to tissue morphogenesis (Bodenstein, 1986).\n\n#### Simulations overview\n\nComputer simulations were run under Redhat Linux on a Dell M4600 multi-core workstation. For the current study, a spherical cell model was used although a cylindrical extension (tether) is added for cells undergoing epithelial-to-mesenchymal transition (EMT) but still attached to the epiblast. Cell\u2013cell interactions are defined by local neighbour relations and by near-neighbour (abutting) relations. Cells in the epithelial layer calculate near-neighbours by transient polygonal constructions (an approximate Voronoi tessellation). Cells independently cycle and divide. They maintain a variety of internal states which may be altered by cell\u2013cell interactions (Figure 6; Tables 2, 3). These states refer to known molecular mediators (e.g., Nodal, Wnt-PCP), or cell types and/or behaviours (e.g., EMT, intercalation orientation). Mediator states generally influence cells on a stochastic basis with probability distributions that are affected by cell interactions.\n\n#### Time and space considerations\n\nThe model uses a hierarchical time structure to reconcile simulated events with real events (Figure 6\u2014figure supplement 1). \u2018Ticks\u2019 represent the smallest model time unit corresponding to biological real time. During each tick the simulation performs certain global functions; each cell is addressed individually and its actions are based partly on the combined effects of the various influences described above. Many of these actions involve iterative processes. This hierarchical structure generates a checkpoint system whereby various actions that are not necessarily correlated within the model can be coordinated and the model tissue can be time-matched to the biological tissue. This also allows model parameters to be specified in simple real-world terms (e.g., the length of G2 is 30 \u00b1 3 min) without the need to specify details of how the program manages the underlying mechanics. In the current simulations a tick is designed to mimic 10 min of biological time. In similar fashion, the model divides space into \u2018clicks\u2019 which correspond to specified real-world dimensions. Unlike ticks, clicks are divisible and space is not quantized beyond the floating-point limits of the computer platform. In the current simulations, a click is defined as 1.0 \u03bcm.\n\n#### Embryonic stages\n\nSimulations are designed to model the chick epiblast from about Stage XI (Eyal-Giladi and Kochav, 1976) to about Stage 3+ (Hamburger and Hamilton, 1951) and correspond to about 12 hr of embryonic time. Stage 2 is reached approximately halfway through the simulation.\n\n#### Embryonic layers\n\nThe model simulates three embryonic layers (Stern, 2004a) with different levels of detail. The \u2018upper layer\u2019 consists of the epiblast proper and marginal zone (MZ). Upper layer cells interact with each other in terms of behaviour (e.g., maintain separation, divide, grow, move) as well as information (e.g., integrating the signals received by a cell and responding appropriately). The \u2018middle layer\u2019 is made up of cells that ingress from the epiblast and convert to mesenchyme. Middle layer cells are represented as discrete objects and interact with the overlying epiblast on an informational basis; however, their post-ingression behaviours and movements are not modelled here. The \u2018lower layer\u2019 is a schematized representation of the hypoblast/endoblast layer and does not contain model cells. Polygons representing the expanding endoblast and retreating hypoblast are animated over the course of the simulation relative to events occurring in the other layers.\n\n#### Initial conditions\n\nSimulations begin at Stage XI when the chick epiblast is about 3\u20136 mm across and contains on the order of 25,000\u201350,000 cells (Stern, 2004a). The initial model epiblast contains about 1000 cells confined to a plane (Figure 6, Stage XI column). A circular array of boundary cells surrounds the epiblast in the same plane and represents the MZ. A cohort of about 90\u2013100 cells in the posterior epiblast is initialized to represent epiblast adjacent to Koller's sickle, or SAE (Bodenstein and Stern, 2005). This area expresses both Nodal and the planar cell polarity (PCP) mediators Prickle-1, Flamingo-1 and Vangl2 and undergoes medio-lateral intercalation (Voiculescu et al., 2007).\n\nInitially the lower layer contains only the hypoblast, represented as a circular domain of similar dimensions as the epiblast; the middle layer is empty. Over time the endoblast partially displaces the hypoblast in the lower layer and the middle layer becomes colonised by cells ingressing from the upper layer (Figure 6).\n\n#### Cell structure, division and growth\n\nCells are modelled as spheres with a radius of 5 clicks (5.0 \u03bcm). Cells \u2018swell\u2019 during metaphase and divide symmetrically, with each daughter cell being half the parental volume before growing to full size. In the model, cell division occurs throughout the epiblast at a homogeneous rate corresponding to a mean cell cycle time of 6 hr (Derrick, 1937; Stern, 1979; Sanders et al., 1993; Voiculescu et al., 2007; Chuai and Weijer, 2009). The orientation of cell division is random within the plane of the epiblast.\n\n#### Marginal zone\n\nThe MZ consists of a ring of \u2018pseudo-cells\u2019 (green in Figure 6) surrounding the active epiblast and forming a boundary. Epiblast cells interact with MZ cells using the standard cell\u2013cell mechanics (see below). MZ cells themselves are provided as a growing boundary: they do not divide but their number is modified as needed to surround a growing epiblast, maintaining their intercellular spacing.\n\nMZ shape is determined by application of a displacement vector to individual MZ pseudo-cells (Figure 6\u2014figure supplement 2). This displacement vector (vMZ) is the sum of a curvature vector (vcurv), an epiblast density vector (vdens) and an area correction vector (varea) (Equation 1.1); these vectors are calculated and applied once at the beginning of each tick. The curvature vector (vcurv, Equation 1.2) has direction and magnitude based on the local curvature and acts to flatten the MZ ring at each point. The density vector (vdens, Equation 1.3) is directed outwards from the epiblast with a direction based on the local curvature and a magnitude based on the local density of epiblast cells. In essence, a high local cell density abutting the MZ will push the MZ outwards in that location. The area correction vector (varea, Equation 1.4) is calculated to manage overall cell density of the epiblast despite local changes in the shape of the MZ. The curvature vector is in line with the density vector and either subtracts (if the MZ is locally convex) or adds (if locally concave). (Equations 1.1\u20131.4). Overall cell density rises slowly during the simulations by use of a logarithmic function, which becomes less prominent at later stages when tissue growth by cell division is mitigated by significant ingression (Equation 1.5).\n\n$$\nv_{MZ}=v_{curv}+v_{dens}+v_{area}\n$$\n\n\n\n$$\nv_{curv}=k_{curv}\u03bav^_{local}\n$$\n\n\n\n$$\nv_{dens}=k_{dens}(\\sumi=1N(d<d_{max})e^{\u2212d_{i}^{2}/(2\\sigma_{d}^{2})})v^_{out}\n$$\n\n\n\n$$\nv_{area}=f(A_{t}^{epi})v^_{out}\n$$\n\n\n\n$$\nA_{t}^{epi}=max(A_{t\u22121}^{epi},(A_{t}^{cells}/A_{0}^{cells})A_{0}^{epi}(1\u2212k_{area}log_{10}(1+9t/k_{t})))\n$$\n\nwhere, \u03bdlocal = unit normal (directed towards curvature center), \u03bdout = unit normal (directed outwards from epiblast), \u03ba = local curvature, kcurv, kdens = 70.0, 0.10, f(area) = iterative function that adjusts epiblast area, N(d < dmax) = number of epiblast cells at distance d < dmax, di = distance of ith cell (centre-to-centre), dmax = 55.0 \u03bcm, \u03c3d = 15.0 \u03bcm, $A_{0}^{epi}$ $A_{t}^{epi}$= epiblast area at times 0 and t, respectively, $A_{0}^{cells}$ $A_{t}^{cells}$ = summed cross-sectional area of epiblast cells at times 0 and t, respectively, karea, kt = 0.15, 4.0 hr, t = time from simulation initiation (hr).\n\n#### Cell states\n\nNudge++TM allows creation of an arbitrary number of cell \u2018states\u2019 which may be binary flags, quantitative variables or more complex types such as vectors or larger data structures. Several cell states have been defined for these simulations (Table 2, Figure 6). Some states represent descriptors of specific cell behaviours (i.e., orientation of intercalation) or expression of a particular gene (e.g., Nodal). Other states refer to an anatomically defined cohort of cells (e.g., MZ) or cell type (e.g., mesenchyme). In the current simulations, daughters inherit their parental states when cells divide (Sarge and Park-Sarge, 2005).\n\n##### Mediator states\n\nA binary \u2018Nodal\u2019 state marks cells that express/secrete Nodal. Among other actions the model associates active Nodal with an increased propensity for cells to undergo EMT (see below). Nodal activity is inhibited by the hypoblast, which secretes Cerberus (Bertocchini and Stern, 2002), a protein that binds to and antagonises Nodal in the intercellular space (Piccolo et al., 1999). The model integrates the effects of Nodal activity at the receiving, or target, cell. Cells that express/secrete Nodal are deemed Nodal-positive. Cells capable of responding to Nodal (e.g., not inhibited by the hypoblast) are Nodal-receptive. Nodal-receptive cells actually encountering Nodal and performing Nodal-dependent activities are Nodal-active. The corresponding \u2018off\u2019 states are Nodal-negative, Nodal-refractory and Nodal-inactive. Note that Nodal-receptive and Nodal-active cells need not be Nodal-positive. Nodal-refractory cells may retain some receptivity, albeit markedly reduced, and Nodal-inactive cells may show some response, albeit much muted. A cell inhibited by the hypoblast (and hence Nodal-refractory) will have a reduced or absent response to Nodal signalling regardless of whether it is Nodal-positive itself.\n\nA binary \u2018Wnt-PCP\u2019 state marks cells that express components of the Wnt- planar cell polarity system such as FMI1 (flamingo-1), PRICKLE1 (prickle-1) and VANGL2 (vanGogh-like-2). Here, the single Wnt-PCP state represents the combined active pathway. Cells that are Wnt-PCP-positive undergo oriented intercalation (OI) in association with their Wnt-PCP-positive near-neighbours (Voiculescu et al., 2007).\n\nA vector \u2018OI-orientation\u2019 state is used by Wnt-PCP-positive cells in association with Wnt-PCP-positive near-neighbours to establish the direction of local intercalation (see below).\n\n##### Cell-type states\n\nA binary \u2018MZ\u2019 state defines pseudo-cells that encircle the epiblast and form a boundary.\n\nA binary \u2018epithelium\u2019 state defines cells that form the epiblast epithelial layer. Epithelial cell interactions can distinguish near-neighbours (abutting in the epiblast plane) from other local neighbours.\n\nA binary \u2018emt\u2019 (EMT) state defines cells that initiate ingression and attempt to leave the plane of the epiblast to descend into the deeper layers (Figure 6\u2014figure supplement 3A). These cells may remain tethered to neighbouring epiblast cells (t-emt) or break free, become untethered (u-emt) and then convert to mesenchyme. EMT cells maintain the Nodal and Wnt-PCP states of the epithelial cell from which they derive but lose positivity if they become mesenchyme.\n\nA binary \u2018tethered\u2019 state flags whether or not an EMT cell maintains an attachment to the epithelial plane. While EMT cells remain tethered they display an up-and-down motion, often changing direction, until they either re-incorporate into the epithelium or break free and enter the middle layer. The probability of changing direction is modelled using a logistic function with different parameters for descending and ascending cells (Equation 2.1). As cells descend further from the epithelial plane (more negative z-value) their bias to continue downwards increases, and, if moving upwards, they become more likely to change direction.\n\n$$\np_{\u0394dir}=p_{min}+(p_{max}\u2212p_{min})/(1+e^{\u2212(z\u2212m_{z})/s_{z}})\n$$\n\nwhere, p\u0394dir = probability/hr of a directional change, z = depth of cell from epithelial plane (z = 0.0 \u03bcm), mz = \u22125.0 \u03bcm, sz = 1.0 \u03bcm, pmin, pmax = 0.8, 0.0 per hr (for cells moving upwards), pmin, pmax = 0.0, 0.4 per hr (for cells moving downwards).\n\nTethered EMT cells may re-incorporate into the epithelium. To reverse EMT, some of the cell body must be above the BM and Nodal activity must be below a threshold (defined below). For cells eligible to re-incorporate, the probability of re-incorporation follows a logistic function that decreases with increasing distance from the epiblast plane (Equation 3.1).\n\n$$\np_{emt\u2212>epi}=p_{min}+(p_{max}\u2212p_{min})/(1+e^{\u2212(z\u2212m_{z})/s_{z}})\n$$\n\nwhere, pemt->epi = probability/hr of reversion of t-emt to epithelial cell, z = depth of cell centre from epithelial plane (z = 0.0 \u03bcm), pmin, pmax = 0.0, 0.0 per hr (for z < \u221210 or untethered or Nodal activity \u2265 threshold) [= prohibited], pmin, pmax = 0.30, 0.90 per hr (for z >=\u221210 and tethered and Nodal activity < threshold), mz = \u22125.0 \u03bcm, sz = 1.5 \u03bcm.\n\nEMT cells initially remain tethered to the epithelium (t-emt). They remain so as long as at least some of the cell body is above the BM (z >\u221210.0 um). Once completely below the BM, the probability of untethering increases with increasing depth according to a logistic function (Equation 4.1).\n\n$$\np_{untether}=p_{min}+(p_{max}\u2212p_{min})/(1+e^{\u2212(z\u2212m_{z})/s_{z}})\n$$\n\nwhere, puntether = probability/hr of untethering of emt cell (t-emt to u-emt), z = depth of cell centre from epithelial plane (z = 0.0 \u03bcm), pmin, pmax = 0.0, 0.0 per hr (z >=\u221210 \u03bcm) [= prohibited], pmin, pmax = 0.0, 0.999 per hr (z <\u221210 \u03bcm), mz = \u221212.5 \u03bcm, sz = 1.0 \u03bcm.\n\nA binary \u2018meso\u2019 (mesenchyme, or mesendoderm) state defines a cell type that has fully converted from epithelium (epiblast) to mesenchyme by EMT. In these simulations, meso cells have no interacting states and mesenchyme cell behaviours are not modelled.\n\n#### Cell\u2013cell interactions\n\nCells perform activities or modify their states based upon an internal calculus and interactions with their neighbours\u2014effector cells produce an effector that influences the receiving (or target) cell. Generally these interactions bias the probability of some action (e.g., change in state, new behaviour), which then occurs on a stochastic basis (Losick and Desplan, 2008).\n\n##### EMT conversion\n\nIn the model, conversion of epithelial cells to EMT cells is enhanced by Nodal. This is formulated using a logistic function with \u2018effective neighbour equivalents\u2019 (Neff) as the dependent variable (Equation 5.1). Neff in turn includes components representing the cell itself, near-neighbours in the epiblast plane and more distant local neighbours whose effect is attenuated with distance (Equation 5.2). Three classes of Nodal-secreting effector cells are distinguished: (i) the receiving cell itself (if already secreting Nodal); (ii) near-neighbour cells (those directly abutting the receiving cell in the epithelial layer), and (iii) local neighbour cells (those within some proximity, excluding near-neighbours). For local neighbours the effect falls off with distance. Each of these classes is assigned a coefficient that modulates their relative effect. Inhibitors may impact the effect of each of these classes by modification of the coefficients. Inhibition of Nodal by Cerberus from the hypoblast (Bertocchini and Stern, 2002) is modelled by decreasing the coefficient for the neighbour effects when the hypoblast is present, the decrease in the local neighbour effect being greater than that of the near-neighbour effect. This formulation is designed to be consistent with the action of hypoblast derived Cerberus [Bertocchini and Stern, 2002] which binds to and blocks Nodal in the extracellular space [Piccolo et al., 1999].\n\n$$\np_{emt}=p_{min}+(p_{max}\u2212p_{min})/(1+e^{\u2212(N_{eff}\u2212m_{N})/s_{N}})\n$$\n\n\n\n$$\nN_{eff}=k_{self}N_{self}+k_{nn}N_{nn}+k_{n}\\sumi=1N_{n}(d<d_{max})e^{\u2212d_{i}^{2}/(2\\sigma_{d}^{2})}\n$$\n\nwhere, pemt = probability/hr of conversion of epithelial to t-emt cell, Neff = neighbour effect, Nself = 0 (Nodal-negative), Nself = 1 (Nodal-positive), Nnn = number of Nodal-positive near-neighbours, Nn(d < d0) = number of Nodal-positive neighbours of distance d < dmax, excluding Nnn, di = distance of ith neighbour (centre-to-centre), pmin, pmax = 0.02, 0.999 per hr, mN = 8.0, sN = 1.0, kself = 1.0 (Nodal-active), 0.6 (Nodal-inactive), knn = 1.0 (Nodal-active), 0.6 (Nodal-inactive), kn = 1.0 (Nodal-active), 0.0 (Nodal-inactive), dmax = 40.0 \u03bcm, \u03c3d = 10.0 \u03bcm.\n\nIn the model, epithelial cells initiate EMT on a stochastic basis, but epithelial cells in proximity to other cells undergoing EMT are more likely to undergo EMT themselves, a community effect (Gurdon, 1988). This community effect on cell ingression is modelled using Nodal as the direct effector. However the model can accommodate one or more other effectors that become active either secondary to Nodal action or by a mechanism involving disinhibition after the hypoblast becomes replaced by endoblast. The base rate of ingression is low for cells in Nodal-negative regions (anterior and lateral epiblast) or Nodal-positive but refractory regions (the PS forming region prior to hypoblast withdrawal). When the hypoblast withdraws, cells in the PS region become Nodal-active and the rate of ingression increases. As the process continues, Nodal-positive ingressing cells accumulate beneath the epithelium and cooperativity accelerates. As the steep region of the logistic curve is reached, massive ingression occurs. The influx and incorporation of lateral epiblast into this zone of massive ingression fuels the process and helps to keep it localized. Nodal-active t-emt cells where exposure to Nodal is at or beyond a threshold are prohibited from rejoining the epithelium, as are cells where the cell body has descended fully beneath the BM. The threshold is chosen as the magnitude of the Nodal effect that a Nodal-positive cell would have on itself in the absence of hypoblast inhibition. Thus, reversion is prohibited for disinhibited Nodal-positive cells, but also for disinhibited Nodal-negative cells if surrounded by numerous Nodal-positive neighbours. This mechanism contributes to the enhanced rate of ingression at the PS.\n\n##### Nodal conversion\n\nNodal also stimulates Nodal production in neighbouring cells (6.1\u20136.2, Figure 6\u2014figure supplement 3B). Cerberus from the hypoblast decreases this effect. As with EMT, this is modelled by a decrease in the effect of near-neighbours (knn 1.0\u21920.6) and elimination of the local neighbour effect (kn 1.0\u21920.0).\n\n$$\np_{Nodal}=p_{min}+(p_{max}\u2212p_{min})/(1+e^{\u2212(N_{eff}\u2212m_{N})/s_{N}})\n$$\n\n\n\n$$\nN_{eff}=k_{nn}N_{nn}+k_{n}\\sumi=1N_{n}(d<d_{max})e^{\u2212d_{i}^{2}/(2\\sigma_{d}^{2})}\n$$\n\nwhere, pNodal = probability/hr of conversion of epithelial cell from Nodal-negative to Nodal-positive, Neff = effective neighbour equivalents, Nnn = number of Nodal-positive epithelial or t-emt near-neighbours, Nn(d < dmax) = number of Nodal-positive local neighbours of distance, d < dmax, excluding Nnn, di = distance of ith neighbour (centre-to-centre), pmin, pmax = 0.0, 0.999 per hr, mN = 2.0, sN = 0.25, knn = 1.0 (without hypoblast inhibition), 0.6 (with inhibition), kn = 1.0 (without hypoblast inhibition), 0.0 (with inhibition), dmax = 40.0 \u03bcm, \u03c3d = 10.0 \u03bcm.\n\n##### Wnt-PCP conversion\n\nA strategy analogous to that for Nodal conversion is used to model the effect of Wnt-PCP positive cells on Wnt-PCP negative neighbours (Equations 7.1.\u2013.Equations 7.2). In the model, epithelial cells must also be Nodal-positive to become Wnt-PCP-positive under normal conditions. Although the threshold is lower for Wnt-PCP conversion than Nodal conversion (mN of 1.0 vs 2.0), Wnt-PCP conversion is limited by this requirement for prior Nodal-positivity.\n\n$$\np_{Wnt\u2212PCP}=p_{min}+(p_{max}\u2212p_{min})/(1+e^{\u2212(N_{eff}\u2212m_{N})/s_{N}})\n$$\n\n\n\n$$\nN_{eff}=k_{nn}N_{nn}+k_{n}\\sumi=1N_{n}(d<d_{max})e^{\u2212d_{i}^{2}/(2\\sigma_{d}^{2})}\n$$\n\nwhere, pWnt-PCP = probability/hr of conversion of Nodal-positive epithelial cell from Wnt-PCP-negative to Wnt-PCP-positive, Neff = effective neighbour equivalents, Nnn = number of Wnt-PCP-positive epithelial/t-emt near-neighbours, Nn(d < dmax) = number of Wnt-PCP-positive local neighbours of distance d < dmax, excluding Nnn, di = distance of ith neighbour (centre-to-centre), pmin, pmax = 0.0, 0.999 per hr, mN = 1.0, sN = 0.25, knn = 1.0 (without hypoblast inhibition), knn = 0.6 (with inhibition), kn = 1.0 (without hypoblast inhibition), kn = 0.0 (with inhibition), dmax = 40.0 \u03bcm, \u03c3d = 10.0 \u03bcm.\n\n##### Oriented intercalation coordination\n\nUnlike cell\u2013cell interactions involving Nodal and Wnt-PCP, which include contributions from local neighbours, the alignment of oriented intercalation orientation vectors (as described below) uses a juxtacrine strategy where only near-neighbours are considered.\n\n#### Planar cell movements\n\nThe model uses two algorithms to define the movement of cells within the plane of the epiblast.\n\n##### Equilibration (or centring)\n\nNon-MZ epiblast cells (i.e., epithelium or t-emt) are displaced or move according to an equilibration vector, which serves to centre cells among near-neighbours. For each cell, a polygon is calculated such that each edge is perpendicular to and passes though a line connecting the centre of the cell with that of its near-neighbour and bisects the separation between the cells. This polygon is roughly analogous to a Voronoi region (VR) and is termed the pseudo-Voronoi region (pseudo-VR). Voronoi regions often are termed \u2018cells\u2019. To avoid confusion with biological cells, the term region will be used here. For a true Voronoi region, each edge should maintain equal distance from the physical cell [Okabe et al., 2000]. For biological cells schematized as variable size spheres (circles in two-dimensions) the edges would therefore be curved (Li et al., 2006). The straight-sided polygons used here are simplifications adequate for the proposed cell behaviours and computationally simpler. The centroid of the pseudo-VR is then determined and a displacement vector created from the current cell centroid to the polygon centroid (Figure 6\u2014figure supplement 4A). A single near-neighbour is highlighted in this diagram, but all near-neighbours are involved. Each near-neighbour movement causes its own pseudo-VR to change and the process is propagated across the tissue. Although here cells begin in a regular array, cells in the model are not so constrained. Application of this vector acts to move the cell to a more \u2018central\u2019 location among its near-neighbours and when applied to the cell population in iterative fashion tends to make cell density homogeneous throughout the tissue. This is recognizable as a form of Lloyd\u2019s algorithm or Voronoi iteration (Du et al., 1999).\n\nLloyd's algorithm is asymptotic and customarily run to some arbitrary convergence criterion. In the current simulations, OI continuously alters the positions of a subset of cells in the posterior epiblast. Since OI and equilibration (Voronoi iteration, or VI) occur simultaneously, the latter never approaches equilibrium\u2014there is no fixed endpoint and the non-OI (i.e., anterior and lateral epiblast) cells are continuously \u2018playing catch-up\u2019. Hence the algorithm is run for a fixed number of iterations (1000 per tick) rather than to some equilibrium criterion.\n\n##### Oriented intercalation\n\nAn \u2018OI-orientation\u2019 vector state is maintained for cells programmed to undergo intercalation (i.e., Wnt-PCP-positive). During each tick, the vector for each cell is re-calculated as the normalized sum of the cell's current OI-orientation vector and the normalized sum of the OI-orientation vectors of the cell's near-neighbours. This gives equal weight to the cell's current vector and the consensus orientation of its neighbours. Iterative re-calculation of these vectors is done until a stable arrangement is reached among the Wnt-PCP-positive cells (consensus).\n\nWhen Wnt-PCP-positive cells divide, each daughter inherits both the positive Wnt-PCP state and the OI-orientation vector of the parent cell, the latter then being refined by interaction with its near-neighbours. By the same mechanism, newly Wnt-PCP-positive cells are seamlessly incorporated into the existing cohort.\n\nMZ cells maintain a reference OI-orientation vector derived from the local curvature. Wnt-PCP cells abutting the MZ cue off of these MZ cells and this acts to orient the contiguous cohort of Wnt-PCP cells (Figure 6\u2014figure supplement 4B). Intercalation uses an OI-movement vector (voi) for each Wnt-PCP-positive cell, which is re-calculated \u2018on the fly\u2019 as a function of the position of the cell, that of its near-neighbours and their various OI-orientation vectors (Figure 6\u2014figure supplement 4C). Both the cell and at least one of its near-neighbours must be Wnt-PCP positive for this interaction to occur.\n\nThe magnitude of the voi vector is equal to |sin\u03b8|; thus, displacement ceases when (if) the target is reached (\u03b8 = 0) and is maximum if the cells are side-by-side (furthest from the ideal position). Only one near-neighbour is shown for simplicity, but the displacement vectors to all near-neighbours are summed to produce the final oriented intercalation displacement vector. Since the algorithm is applied iteratively to all cells, during the each iteration the near-neighbour(s) will also move according to the same algorithm. Thus, rather than the cell moving completely to align with near-neighbours, the cell and its neighbours will both incrementally move towards an equilibrium position. In the illustration both cell and near-neighbour have parallel orientation vectors although this is not necessary (or even common) in the simulations.\n\nIterative application of this vector-directed movement causes neighbouring cells to realign with each other and produces convergence and extension of the involved population (Wallingford et al., 2002; Keller and Davidson, 2004; Voiculescu et al., 2007).\n",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "49d4f98e-e6a9-4926-9d55-e75f588b9d1c",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C1",
+      "claim": "In amniote (reptiles, birds, mammals) embryos, the deep layers arise by epithelial-to-mesenchymal transition (EMT) at a morphologically stable midline structure, the primitive streak (PS).",
+      "claim_type": "EXPLICIT",
+      "source": "In amniote (reptiles, birds, mammals) embryos, the deep layers arise by epithelial-to-mesenchymal transition (EMT) at a morphologically stable midline structure, the primitive streak (PS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about amniote embryo development in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "6e924919-87a3-4963-8994-f005241c9d2d",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C2",
+      "claim": "Isolated EMT events and ingression of individual cells start well before gastrulation in the chick embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the chick, we show that isolated EMT events and ingression of individual cells start well before gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study presented in the abstract and supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "b71a5ead-34c8-473d-a3d1-704c920f3298",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C3",
+      "claim": "A Nodal-dependent 'community effect' concentrates and amplifies EMT by positive feedback to form the PS as a zone of massive cell ingression.",
+      "claim_type": "EXPLICIT",
+      "source": "A Nodal-dependent 'community effect' then concentrates and amplifies EMT by positive feedback to form the PS as a zone of massive cell ingression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 5 showing that Nodal inhibitors block EMT induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "c7cf22b2-10d7-4854-82a4-b9dbda595357",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C4",
+      "claim": "A combination of local cell interactions (EMT and cell intercalation) is sufficient to explain PS formation and the associated complex movements globally across a large epithelial sheet, without the need to invoke long-range signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer simulations show that a combination of local cell interactions (EMT and cell intercalation) is sufficient to explain PS formation and the associated complex movements globally across a large epithelial sheet, without the need to invoke long-range signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion based on computer modeling simulations shown in Figures 6 and 7 and Videos 8-13.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "a5e0ba51-3c00-4cfe-bbb7-4db3d46a23d9",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C5",
+      "claim": "Before gastrulation, the embryo of reptiles, birds and most mammals is a large flat disc of epithelial cells (epiblast).",
+      "claim_type": "EXPLICIT",
+      "source": "Before gastrulation, the embryo of reptiles, birds and most mammals is a large flat disc of epithelial cells (epiblast) (Pasteels, 1940).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Pasteels, 1940.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "2922e2aa-807c-4ea6-a5a1-5d6d6cc61fdd",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C6",
+      "claim": "In the chick, the 50,000 or so cells that comprise the embryonic epiblast (area pellucida, 3\u20135 mm in diameter) move as two bilaterally symmetrical whorls, known as the 'Polonaise' pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "In the chick, the 50,000 or so cells that comprise the embryonic epiblast (area pellucida, 3\u20135 mm in diameter) move as two bilaterally symmetrical whorls, known as the 'Polonaise' pattern (Gr\u00e4per, 1929; Wetzel, 1929) (Figure 1, stage EGK XI-XIV).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge cited from Gr\u00e4per, 1929 and Wetzel, 1929, and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "81551a17-9ae9-4d34-ac9f-43246f743d1d",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C7",
+      "claim": "The Polonaise movements continue for 8\u201310 hr, culminating in the formation of a stable morphological structure in the posterior midline, the primitive streak (PS).",
+      "claim_type": "EXPLICIT",
+      "source": "The movements continue for 8\u201310 hr, culminating in the formation of a stable morphological structure in the posterior midline, the primitive streak (PS) (Figure 1, stage HH2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about chick development timing, illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "7067487f-869b-48ab-af24-1973025b47aa",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C8",
+      "claim": "Once the PS forms, cells in the epiblast lateral to the PS start moving directly into it along trajectories perpendicular to its axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the PS forms, cells in the epiblast lateral to the PS start moving directly into it along trajectories perpendicular to its axis (for reviews see Spratt, 1946; Nicolet, 1971; Bellairs, 1986; Stern, 2004b) (Figure 1, stages HH3-3+).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge cited from multiple review sources and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "29357ec2-268e-4fc2-b57b-2bab4f516aad",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C9",
+      "claim": "The PS acts as a gateway for gastrulation as epiblast cells internalize via epithelial-to-mesenchymal transition (EMT) and generate mesoderm and endoderm beneath the epiblast layer.",
+      "claim_type": "EXPLICIT",
+      "source": "The PS acts as a gateway for gastrulation as epiblast cells internalize via epithelial-to-mesenchymal transition (EMT) (Nieto, 2011) and generate mesoderm and endoderm beneath the epiblast layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PS function, cited from Nieto, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "68834ec6-e0e3-43ec-88e2-6015bd99409f",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C10",
+      "claim": "The PS appears abruptly, forming a triangular structure within 10\u201330 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional time-lapse video microscopy reveals that the PS appears abruptly, forming a triangular structure within 10\u201330 min (Figure 2A\u2013E, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from time-lapse microscopy shown in Figure 2A-E and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "c2fc51c1-3c87-415a-8514-0a392bb6c6e9",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C11",
+      "claim": "Scanning Electron Microscopy (SEM) of embryos at successive stages, fractured perpendicular to the forming streak, reveals a growing population of middle layer cells (prospective mesoderm and endoderm) underlying an uninterrupted flat sheet of epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "Scanning Electron Microscopy (SEM) of embryos at successive stages, fractured perpendicular to the forming streak, reveals a growing population of middle layer cells (prospective mesoderm and endoderm) underlying an uninterrupted flat sheet of epiblast (Figure 2F\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from SEM imaging shown in Figure 2F-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "1bdc0f80-1541-4882-82af-e1115464afbe",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C12",
+      "claim": "Close to the PS, the epiblast displays cells with various degrees of apical narrowing and baso-lateral expansion, indicative of bottle-like cells undergoing EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Close to the PS, the epiblast displays cells with various degrees of apical narrowing and baso-lateral expansion (designated 1\u20135 in Figure 2L\u2013P), indicative of bottle-like cells undergoing EMT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from SEM imaging shown in Figure 2L-P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "ebaf9240-6dfe-465b-9ee1-aeccee969a07",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C13",
+      "claim": "The PS only develops a marked midline groove many hours later, by which time it contains many deep cells and its length has extended to about 2/3 of the diameter of the area pellucida (stage 3+).",
+      "claim_type": "EXPLICIT",
+      "source": "The PS only develops a marked midline groove many hours later, by which time it contains many deep cells and its length has extended to about 2/3 of the diameter of the area pellucida (stage 3+, Hamburger and Hamilton, 1951; Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, referencing staging from Hamburger and Hamilton, 1951, and shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "5b96bc29-49aa-4f91-a232-c8b1884ba035",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C14",
+      "claim": "The PS does not contain a blastopore-like opening that could act as a portal for gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "even then, it does not contain a blastopore-like opening that could act as a portal for gastrulation (Bancroft and Bellairs, 1974; Vakaet, 1984; Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by citations from Bancroft and Bellairs, 1974 and Vakaet, 1984, and shown in Figure 2K.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "7236ea0e-a46b-44cd-a28a-89a3fe5a39f0",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C15",
+      "claim": "Within 1 hr after labelling and at all embryonic stages examined, all regions of the epiblast contain some cells at different stages of EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Within 1 hr after labelling and at all embryonic stages examined, all regions of the epiblast contain some cells at different stages of EMT: Figure 2Q shows an example, where cells with different morphologies have been classified into five 'ingression stages' (1\u20135) equivalent to those seen by SEM (see above).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments using fluorescein-labelled morpholinos, shown in Figure 2Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "17263129-60ed-4198-bda8-4537250155a7",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C16",
+      "claim": "4 hr after labelling, some cells have left the epiblast but can be distinguished from hypoblast cells because the latter are much larger.",
+      "claim_type": "EXPLICIT",
+      "source": "4 hr after labelling (Figure 2R), some cells have left the epiblast but can be distinguished from hypoblast cells because the latter are much larger.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments shown in Figure 2R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "eef5a2cc-d689-4df8-b672-6cabf608a859",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C17",
+      "claim": "Multi-photon time-lapse sequences reveal individual ingression events widely distributed in the epiblast, as early as stages X-XII, 6\u201315 hr before streak formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-photon time-lapse sequences reveal individual ingression events widely distributed in the epiblast, as early as stages X-XII, 6\u201315 hr before streak formation (Figure 3A; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from multi-photon time-lapse imaging shown in Figure 3A and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "447c4673-dcb4-4080-8b68-f799f61fc138",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C18",
+      "claim": "The apical surface of the epiblast displays depressions 3\u20134 cells wide at stages XIII-2 (just before and as the PS appears).",
+      "claim_type": "EXPLICIT",
+      "source": "Using SEM, we observed that the apical surface of the epiblast displays depressions 3\u20134 cells wide (Bancroft and Bellairs, 1974) at stages XIII-2 (just before and as the PS appears)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from SEM, with a citation to Bancroft and Bellairs, 1974.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "7b3396b0-61bb-4c12-a271-b09a8df91acb",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C19",
+      "claim": "The depressions in the apical surface of the epiblast increase in width and depth by stage 3.",
+      "claim_type": "EXPLICIT",
+      "source": "these increase in width and depth by stage 3 (Figure 3C,D), suggesting coordinated apical constriction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from SEM shown in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "7d466b55-beac-4948-a902-614b0058df0d",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C20",
+      "claim": "In multi-photon time-lapse sequences, ingression events can be seen to accelerate as the streak forms.",
+      "claim_type": "EXPLICIT",
+      "source": "In multi-photon time-lapse sequences, ingression events can be seen to accelerate as the streak forms (Figure 3B, Figure 4; Videos 3, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from multi-photon time-lapse imaging shown in Figure 3B, Figure 4, and Videos 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "46a89a66-a1a6-4742-9679-afc5782fb69e",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C21",
+      "claim": "Individual cells scattered throughout the epiblast undergo repeated cycles of incomplete delamination as they move towards the streak.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual cells scattered throughout the epiblast undergo repeated cycles of incomplete delamination as they move towards the streak; this continues even at later PS stages (Video 5; Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from time-lapse imaging shown in Video 5 and Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "caf2d738-ce2e-485b-be37-bf6a04c092a1",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C22",
+      "claim": "Few cells far from the streak complete their delamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Few cells far from the streak complete their delamination (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from time-lapse imaging shown in Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "70a2b05b-99d5-4265-ac3d-18e05bb19437",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C23",
+      "claim": "Ingression increases as cells approach the PS so that most of them ingress within 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Ingression increases as cells approach the PS so that most of them ingress within 1 hr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from time-lapse imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "26f44f4e-9321-4475-885d-e0184e6bb0eb",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C24",
+      "claim": "Cells reaching the PS at the same time do not necessarily ingress synchronously.",
+      "claim_type": "EXPLICIT",
+      "source": "however, cells reaching it at the same time do not necessarily ingress synchronously (Video 7; Figure 3B,F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from time-lapse imaging shown in Video 7 and Figure 3B,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "7310e3e1-7159-4196-847f-dff5546b0887",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C25",
+      "claim": "Some ingressions occur away from the PS midline.",
+      "claim_type": "EXPLICIT",
+      "source": "and some ingressions occur away from the PS midline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from time-lapse imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "f2716401-52f2-4b9e-8439-52d6d7acb817",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C26",
+      "claim": "Ingression of epiblast cells occurs throughout the epiblast at a low rate, but this rate increases markedly in the region of the forming streak.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations show that ingression of epiblast cells occurs throughout the epiblast at a low rate, but this rate increases markedly in the region of the forming streak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations presented in Figures 3 and 4 and Videos 2-7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "05e2625e-1fe6-4c6a-a90f-a52d18b11d89",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C27",
+      "claim": "Grafted cells from the posterior early PS of quail embryos induce PS markers in the adjacent epiblast within 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The grafted cells induce PS markers in the adjacent epiblast within 4 hr (cBra, 8/8 embryos, cSnail2, 10/10) and massive ingression ensues (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from grafting experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "9ba63e60-5b80-434e-85e4-85f9d4c51658",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C28",
+      "claim": "After 14 hr, a second, host-derived streak develops from the graft site.",
+      "claim_type": "EXPLICIT",
+      "source": "After 14 hr, a second, host-derived streak develops from the graft site (8/11; Figure 5C), whereas the grafted cells (prospective lateral mesoderm [Hatada and Stern, 1994; Psychoyos and Stern, 1996]) migrate away.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from grafting experiments shown in Figure 5C, with citations to Hatada and Stern, 1994 and Psychoyos and Stern, 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "e0cee2d3-fa1c-460a-ac26-f7b70e1c8e6d",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C29",
+      "claim": "When a similar graft is made using mesoderm from more lateral cells that have emerged from the PS, no such induction occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "When a similar graft is made using mesoderm from more lateral cells that have emerged from the PS, no such induction occurs (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct experimental result from grafting experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "35fd3e3a-3b07-495c-98da-7169eb1e4dea",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C30",
+      "claim": "Early ingressed cells induce mesendodermal identity and increase the probability of other epiblast cells undergoing EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Early ingressed cells induce mesendodermal identity and increase the probability of other epiblast cells undergoing EMT, suggesting that the PS forms and maintains itself by positive feedback mediated by a community effect (Gurdon, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the grafting experiments shown in Figure 5, with a citation to Gurdon, 1988 for the concept of community effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "3e499d6e-c067-4f88-9313-b635b9fbd300",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C31",
+      "claim": "Cerberus (BMP- and Nodal-inhibitor) prevents both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cerberus (BMP- and Nodal-inhibitor, 9/9; Figure 5E) and Cerberus-Short (Nodal-inhibitor, 8/9; Figure 5F), as well as SB4315412 (10/12; Figure 5H) and SB505124 (11/12; Figure 5I) (inhibitors of TGF\u03b2 superfamily receptors ALK4/ALK7) all prevented both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from grafting experiments with inhibitors shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "7bef5ac2-cdcd-4871-b4f7-019708cc72e6",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C32",
+      "claim": "Cerberus-Short (Nodal-inhibitor) prevents both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cerberus (BMP- and Nodal-inhibitor, 9/9; Figure 5E) and Cerberus-Short (Nodal-inhibitor, 8/9; Figure 5F), as well as SB4315412 (10/12; Figure 5H) and SB505124 (11/12; Figure 5I) (inhibitors of TGF\u03b2 superfamily receptors ALK4/ALK7) all prevented both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from grafting experiments with inhibitors shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "eb4c5dc5-9f9a-490d-90bc-40c4bf79683c",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C33",
+      "claim": "SB4315412 (inhibitor of TGF\u03b2 superfamily receptors ALK4/ALK7) prevents both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cerberus (BMP- and Nodal-inhibitor, 9/9; Figure 5E) and Cerberus-Short (Nodal-inhibitor, 8/9; Figure 5F), as well as SB4315412 (10/12; Figure 5H) and SB505124 (11/12; Figure 5I) (inhibitors of TGF\u03b2 superfamily receptors ALK4/ALK7) all prevented both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from grafting experiments with inhibitors shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "3f7095ec-e2d9-4a2d-8690-4b1afe5870c7",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C34",
+      "claim": "SB505124 (inhibitor of TGF\u03b2 superfamily receptors ALK4/ALK7) prevents both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cerberus (BMP- and Nodal-inhibitor, 9/9; Figure 5E) and Cerberus-Short (Nodal-inhibitor, 8/9; Figure 5F), as well as SB4315412 (10/12; Figure 5H) and SB505124 (11/12; Figure 5I) (inhibitors of TGF\u03b2 superfamily receptors ALK4/ALK7) all prevented both the induction of PS markers (cBra, cSnail2) and ingression of epiblast cells adjacent to the graft.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from grafting experiments with inhibitors shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "e12af597-ac9e-4522-99c1-81c4ef17ee93",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C35",
+      "claim": "Cerberus and Cerberus-Short can prevent induction of PS markers and ingression without loss of the markers in the graft cells themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, they can do this without loss of the markers in the graft cells themselves (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments shown in Figure 5E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "cc7f994f-6329-475d-88a5-2554509a29af",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C36",
+      "claim": "Control COS cells do not prevent induction by the grafted mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Control COS cells (Figure 5D) and beads (Figure 5G) do not prevent induction by the grafted mesoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from control experiments shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "0052ed6d-4e34-46a2-9609-3adb09388e05",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C37",
+      "claim": "Control beads do not prevent induction by the grafted mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Control COS cells (Figure 5D) and beads (Figure 5G) do not prevent induction by the grafted mesoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from control experiments shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "20540a26-a884-4f10-8484-b28c3f945cd4",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C38",
+      "claim": "Grafts of mesoderm from outside the PS do not induce the markers either in the presence or absence of beads or COS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Grafts of mesoderm from outside the PS do not induce the markers either in the presence (Figure 5J,K) or absence (not shown) of beads or COS cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from grafting experiments shown in Figure 5J,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "e634e411-2083-4226-a727-e8522665be2c",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C39",
+      "claim": "TGF\u03b2-related factors, and most likely Nodal, are required for the community effect by newly-ingressed mesendoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that TGF\u03b2-related factors, and most likely Nodal, are required for the community effect by newly-ingressed mesendoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the inhibitor experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "ddb96236-6a12-48f7-ae7f-261ddf48679e",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C40",
+      "claim": "Nodal is expressed before streak formation in a posterior domain of the epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal is expressed before streak formation in a posterior domain of the epiblast (Bertocchini and Stern, 2002; Skromne and Stern, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Bertocchini and Stern, 2002 and Skromne and Stern, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "3bae8611-46f5-4465-a7f6-e65b57c53956",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C41",
+      "claim": "Nodal activity is initially blocked by Cerberus, an antagonist produced by the hypoblast.",
+      "claim_type": "EXPLICIT",
+      "source": "but its activity is initially blocked by Cerberus (Bertocchini and Stern, 2002), an antagonist produced by the hypoblast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Bertocchini and Stern, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "d34d5d1f-40e9-44fa-9f53-0f4e08663774",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C42",
+      "claim": "The Nodal expression domain is identical to the region in which cells undergo intercalation parallel to the marginal zone, driven by the Wnt-PCP pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This expression domain seems to be identical to the region in which we previously found cells to undergo intercalation parallel to the marginal zone, driven by the Wnt-PCP pathway (Voiculescu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison with previous findings cited from Voiculescu et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "7246cdb2-328c-4231-b656-09c8301cb1cb",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C43",
+      "claim": "The domain of Nodal expression and intercalation adopts the shape of the forming streak.",
+      "claim_type": "EXPLICIT",
+      "source": "The domain of Nodal expression and intercalation adopts the shape of the forming streak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "87c50630-062c-47ac-a0b4-d2dba385a06e",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C44",
+      "claim": "Two separable local cell interactions (intercalation and EMT amplified by a community effect) are necessary for PS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, two separable local cell interactions (intercalation and EMT amplified by a community effect) are necessary for PS formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "c7e92b26-4940-4fd4-a1e4-070ae8aca23a",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C45",
+      "claim": "The computer model simulations faithfully recreate the large-scale Polonaise movements as well as PS formation and its role as a gateway for gastrulation via cell ingression.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations faithfully recreate the large-scale Polonaise movements as well as PS formation and its role as a gateway for gastrulation via cell ingression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computer modeling results shown in Figures 6 and 7 and Videos 8-13.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "44dc0736-fc23-4419-8dd1-ebcbc2c1b91f",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C46",
+      "claim": "The global Polonaise movements follow passively from active events localized to the posterior PS-forming region and then the PS itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the global Polonaise movements follow passively from active events localized to the posterior PS-forming region and then the PS itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computer modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "121ee1c5-0d65-4ac0-b735-763a20ec5758",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C47",
+      "claim": "Blocking medio-lateral intercalation by electroporation of morpholinos against components of the Wnt-PCP pathway results in a complete arrest of the Polonaise movements across the entire epiblast at pre-streak stages.",
+      "claim_type": "EXPLICIT",
+      "source": "At pre-streak stages, we observe a complete arrest of the Polonaise movements (Gr\u00e4per, 1929; Wetzel, 1929) across the entire epiblast (Videos 8, 10; in Figure 7 compare G, normal embryo, with I, where Wnt-PCP was blocked in the intercalation domain).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from morpholino experiments shown in Figure 7I and Videos 8 and 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "bb21a6b7-9cab-4ba0-b4a6-bfd0d4621581",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C48",
+      "claim": "When intercalation is blocked, massive ingression is still triggered at the appropriate time, but in a posterior domain close to the margin of the embryo rather than at the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "Massive ingression is still triggered at the appropriate time, but in a posterior domain close to the margin of the embryo rather than at the midline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct experimental result from morpholino experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "233c8a7d-a8dc-41d8-b92b-0b4fd57f5e2e",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C49",
+      "claim": "When intercalation is blocked, cells move posteriorly towards the zone of concentrated ingression along abnormal, straight-line trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, cells move posteriorly towards this zone of concentrated ingression along abnormal, straight-line trajectories (in Figure 7 compare H, normal embryo, with J, blocked intercalation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from morpholino experiments shown in Figure 7J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "8997a2a1-51f7-4ec6-8762-344b48b7ec43",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C50",
+      "claim": "Shaping of the early PS in the normal embryo is mainly driven by intercalation, which results in coalescence and extension in the midline and the Polonaise movement pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that shaping of the early PS in the normal embryo is mainly driven by intercalation, which results in coalescence and extension in the midline and the Polonaise movement pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the morpholino experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "bac87e06-e191-4eef-8f39-1435ae42ce83",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C51",
+      "claim": "After its formation, the PS is maintained as a zone of massive ingression that generates a more direct pattern of cell convergence, with cell trajectories perpendicular to the axis of the PS.",
+      "claim_type": "EXPLICIT",
+      "source": "After its formation, the PS is maintained as a zone of massive ingression that generates a more direct pattern of cell convergence, with cell trajectories perpendicular to the axis of the PS (Video 8; see Figure 1, stage 3+).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations shown in Video 8 and Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "0086bb0e-deb8-4d56-9a36-2f5db220c01f",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C52",
+      "claim": "The model faithfully reproduces the altered movement pattern associated with the abrogation of intercalation using Wnt-PCP-Morpholinos in posterior cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the model to simulate this experiment. With standard parameters and without changing any other conditions, the model faithfully reproduces the altered movement pattern associated with the abrogation of intercalation using Wnt-PCP-Morpholinos in posterior cells (Voiculescu et al., 2007; Video 11; Figure 7N\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from computer modeling simulations shown in Video 11 and Figure 7N-O, with citation to Voiculescu et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "3bf30342-a675-403a-8edb-3f49cb6039e0",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C53",
+      "claim": "Just two cell behaviours, cell intercalation and EMT (the latter subsequently amplified locally by a community effect), are sufficient to account for the movements of gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "All above experiments and simulations suggest that just two cell behaviours, cell intercalation and EMT, the latter subsequently amplified locally by a community effect, are sufficient to account for the movements of gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "8edfa341-405e-464e-9af5-3d5c2856bf8f",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C54",
+      "claim": "Rotation of the hypoblast by 90\u00b0 bends the PS in real embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In real embryos, rotation of the hypoblast by 90\u00b0 bends the PS (Waddington, 1932) because of altered cell movements (Foley et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Waddington, 1932 and Foley et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "725df002-4840-4d68-99d1-7dea53bbcb1b",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C55",
+      "claim": "Signals from the hypoblast can induce a new domain of PCP activity which accounts for the bending of the PS after hypoblast rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Signals from the hypoblast can induce a new domain of PCP activity which was proposed to account for these events (Voiculescu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism cited from Voiculescu et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "f28dbb4b-bdc7-4e46-9799-836bb9bca384",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C56",
+      "claim": "The model can simulate the bending of the PS after hypoblast rotation without changing any parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the model to test whether this is a sufficient explanation for bending of the PS; simulations suggest that it is (Video 12; Figure 7P\u2013R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from computer modeling simulations shown in Video 12 and Figure 7P-R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "6cfe3892-8d0d-482d-8ed7-7f35c530fa55",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C57",
+      "claim": "The model can account for the induction of an ectopic streak by a graft of ingressed cells without changing any parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested whether the model can also account for our present finding that an ectopic streak can be induced by a graft of ingressed cells. Again, the model can simulate this result without changing any parameters (see above, Video 13; Figure 7S\u2013T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from computer modeling simulations shown in Video 13 and Figure 7S-T.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "bb25e0b8-0ccc-4e6c-b4df-2692275e5b77",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C58",
+      "claim": "Just two cell behaviours, cell intercalation localized to a posterior domain of the area pellucida epiblast together with EMT events amplified by a community effect mediated by Nodal, are sufficient to explain all four major movements of chick gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our experimental observations and computer model suggest that just two cell behaviours, cell intercalation localized to a posterior domain of the area pellucida epiblast (future streak forming region) together with EMT events, amplified by a community effect mediated by Nodal, are sufficient to explain all four major movements of chick gastrulation: the Polonaise of the early epiblast, the elongation of the PS, the movement of epiblast cells towards the streak and their ingression through the streak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "1857fcd1-d2c1-450f-858b-5a910b9496b3",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C59",
+      "claim": "Ingression of cells starts well before gastrulation, by individual cells sparsely scattered across the epiblast, in a pattern similar to the HNK1+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that ingression of cells starts well before gastrulation, by individual cells sparsely scattered across the epiblast, in a pattern similar to the HNK1+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, comparing to previously described HNK1+ cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "0e27acc1-db42-4914-ae2e-a1779a5de051",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C60",
+      "claim": "The early ingressing cells correspond to, or are a subset of the HNK1+ population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results strongly suggest that the early ingressing cells correspond to, or are a subset of the HNK1+ population, which also explains why early ingressed mesoderm cells can rescue PS formation in embryos from which HNK1+ cells have been ablated (Stern and Canning, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings, with citation to Stern and Canning, 1990.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "09ca0b64-fdd5-4ce1-9b21-e2fa46f9bc69",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C61",
+      "claim": "In the sea urchin, gastrulation is initiated by maternally specified 'pioneer' cells, the Primary Mesenchyme cells (PMCs).",
+      "claim_type": "EXPLICIT",
+      "source": "There are interesting parallels with the sea urchin, where gastrulation is initiated by maternally specified 'pioneer' cells, the Primary Mesenchyme cells (PMCs) (Sherwood and McClay, 1999; McClay et al., 2000; Sweet et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sea urchin development, cited from Sherwood and McClay, 1999; McClay et al., 2000; Sweet et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "1e2adc0b-a0de-4897-be90-7ded80d98c18",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C62",
+      "claim": "Sea urchin Primary Mesenchyme cells are characterised by their expression of Acetylcholinesterase, which carries the HNK1 epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "also characterised by their expression of Acetylcholinesterase (Drews, 1975), which carries the HNK1 epitope (Bon et al., 1987; Canning and Stern, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Drews, 1975; Bon et al., 1987; Canning and Stern, 1988.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "cbcb2992-5249-4fed-9e70-8e16a45dd597",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C63",
+      "claim": "Chick HNK1+ cells share two key characteristics with sea urchin Primary Mesenchyme cells: they are required for proper gastrulation (mesendoderm formation) and have inductive abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, it is not known when and how HNK1+ cells are specified in the chick epiblast, but they share two key characteristics with their sea urchin counterparts: they are required for proper gastrulation (mesendoderm formation) and have inductive abilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison drawn from the study's findings and established knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "f44bae50-915b-499d-a97d-323658c25b40",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C64",
+      "claim": "Amniote mesendoderm formation is initiated before the PS forms by 'pioneer' cells that ingress as individuals at relatively low frequency throughout the epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that as in the sea urchin, amniote mesendoderm formation is initiated before the PS forms by 'pioneer' cells that ingress as individuals at relatively low frequency throughout the epiblast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the study's findings and comparison with sea urchin development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "f1847f89-4090-4783-ad58-b76deb83cae6",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C65",
+      "claim": "In the presence of Nodal activity, early ingressing cells can trigger a chain reaction of EMT, induce the expression of mesendodermal markers and PS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that, in the presence of Nodal activity, these early ingressing cells can trigger a chain reaction of EMT, induce the expression of mesendodermal markers and PS formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "7a270ce8-7bad-4c46-97e9-9864ecee58dc",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C66",
+      "claim": "In zebrafish, when the Nodal pathway is compromised, only about 60 cells still ingress instead of the \u223c2500 that normally do.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, when the Nodal pathway is compromised, only about 60 cells still ingress instead of the \u223c2500 that normally do (Keller et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about zebrafish development, cited from Keller et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "9f9b03f1-8f41-45ad-a2e7-a511af91b495",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C67",
+      "claim": "A community-effect mediated by Nodal is conserved in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, when the Nodal pathway is compromised, only about 60 cells still ingress instead of the \u223c2500 that normally do (Keller et al., 2008), consistent with a community-effect mediated by Nodal being conserved in vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparison with zebrafish data cited from Keller et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "1484b985-accc-4cb4-922a-0d40f825f54d",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C68",
+      "claim": "In sea urchin, the inductive effect of PMCs on gastrulation is mediated by Notch signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In sea urchin, however, the inductive effect of PMCs on gastrulation is mediated by Notch signalling (Sherwood and McClay, 1999; McClay et al., 2000; Sweet et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sea urchin development, cited from Sherwood and McClay, 1999; McClay et al., 2000; Sweet et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "a3b0b1f1-9072-4cc1-84cb-92b1b19a3b0d",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C69",
+      "claim": "The amniote hypoblast plays a crucial role in coordinating the timing of PS formation with other cell movements.",
+      "claim_type": "EXPLICIT",
+      "source": "The amniote hypoblast (a transient layer of cells) plays a crucial role in coordinating the timing of PS formation with other cell movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "1a1585aa-020e-4567-b36c-40406256d248",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C70",
+      "claim": "Medio-lateral intercalation in the epiblast prior to the start of gastrulation acts to displace and re-shape the Nodal domain and the prospective mesendodermal territory to the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "Medio-lateral intercalation in the epiblast prior to the start of gastrulation acts to displace and re-shape the Nodal domain and the prospective mesendodermal territory to the midline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "333f3421-fd91-4c11-b71f-b51708fcf8bc",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C71",
+      "claim": "Cell intercalation continues to play a role in axial elongation by driving convergence/extension movements in the midline mesoderm and the overlying neuroectoderm (prospective floor plate), after the initial appearance of notochord cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Later in development, cell intercalation seems to continue to play a role in axial elongation by driving convergence/extension movements in the midline mesoderm and the overlying neuroectoderm (prospective floor plate), after the initial appearance of notochord cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings and inference about later developmental stages.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "00613ad2-29fd-4bdf-8fab-6da0e136a84f",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C72",
+      "claim": "Later convergence/extension movements in the mesoderm and prospective floor plate are found in anamniotes, as has been demonstrated in Xenopus and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "These later movements in the mesoderm and prospective floor plate are also found in anamniotes, as has been demonstrated in Xenopus and zebrafish (Yeo et al., 2001; Ezin et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about anamniote development, cited from Yeo et al., 2001 and Ezin et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "d11a8dfc-641e-46f8-b1ae-99c090265e24",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C73",
+      "claim": "The early (pre-gastrulation) intercalation movements are unique to amniotes.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the early (pre-gastrulation) movements are unique to amniotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparison with anamniote development.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "c7cb6aac-9af9-4eda-9c02-d5e0eafccb34",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C74",
+      "claim": "The displacement of the chick hypoblast by the endoblast leads to extensive EMT and PS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide a mechanistic explanation for how the displacement of the chick hypoblast (Bertocchini and Stern, 2002) (expressing Cerberus) by the endoblast, or of the mouse anterior visceral endoderm (AVE (Perea-Gomez et al., 2002), expressing Cerberus and Lefty1) leads to extensive EMT and PS formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings, with citations to Bertocchini and Stern, 2002 and Perea-Gomez et al., 2002.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "dfd87904-1b8e-4afc-9c61-fa03379c4650",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C75",
+      "claim": "The hypoblast/AVE acquired the function of delaying PS formation while repositioning the streak precursor cells to the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that apart from a role in nutrition of the embryo, the hypoblast/AVE acquired the function of delaying PS formation while repositioning the streak precursor cells to the midline (Stern and Downs, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the study's findings, with citation to Stern and Downs, 2012.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "49bf15e5-9a9e-4984-a83d-2cb4d2371b9b",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C76",
+      "claim": "The Nodal-expressing domain also expresses components of the Wnt-PCP pathway and undergoes intercalation, independently of ingression.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs because the Nodal-expressing domain also expresses components of the Wnt-PCP pathway and undergoes intercalation, independently of ingression (Voiculescu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on findings cited from Voiculescu et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "1e37ac30-0a17-46ee-8bd6-b76f7eeb3ece",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C77",
+      "claim": "FGF controls the Wnt-PCP pathway and positions the PS.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct molecular pathways mediate the dual role of the hypoblast: FGF, which controls the Wnt-PCP pathway and positions the PS (Voiculescu et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Voiculescu et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "4307568c-c46a-4959-b254-250d75eb2ed5",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C78",
+      "claim": "Nodal antagonism (perhaps together with Wnt antagonism) regulates the timing of PS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "and Nodal antagonism (perhaps together with Wnt antagonism), which regulates the timing of PS formation (Bertocchini and Stern, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on findings cited from Bertocchini and Stern, 2002.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "2442fdfc-9d48-4c44-91c1-b302c0792936",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C79",
+      "claim": "The PS is not a fixed gateway for cell internalization but rather a dynamic, self-reinforcing concentration of individually ingressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that amniote gastrulation is a population event. The PS is not a fixed gateway for cell internalization but rather a dynamic, self-reinforcing concentration of individually ingressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "49c4f432-e0d4-463f-8450-7c9bbae07a87",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C80",
+      "claim": "The results provide a mechanism for the self-maintenance of stable morphological structures as their cell composition changes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide a mechanism for the self-maintenance of stable morphological structures as their cell composition changes (Joubin and Stern, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings, with citation to Joubin and Stern, 1999.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "d318a85c-7307-4093-a103-88463bef8548",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C81",
+      "claim": "Large-scale movements and morphogenesis of entire epithelial sheets can be driven by local cell interactions, without the need for signalling over long distances.",
+      "claim_type": "EXPLICIT",
+      "source": "They also demonstrate that large-scale movements and morphogenesis of entire epithelial sheets can be driven by local cell interactions, without the need for signalling over long distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "d03a3dfa-fc32-49f3-8279-9ce75cc4d18a",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C82",
+      "claim": "The initial model epiblast contains about 1000 cells confined to a plane.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial model epiblast contains about 1000 cells confined to a plane (Figure 6, Stage XI column).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the computer model's initial conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "2f6ddce7-a165-45a0-b95e-49b4493165af",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C83",
+      "claim": "A cohort of about 90\u2013100 cells in the posterior epiblast is initialized to represent epiblast adjacent to Koller's sickle, or SAE.",
+      "claim_type": "EXPLICIT",
+      "source": "A cohort of about 90\u2013100 cells in the posterior epiblast is initialized to represent epiblast adjacent to Koller's sickle, or SAE (Bodenstein and Stern, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computer model's initial conditions, with citation to Bodenstein and Stern, 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "07e0e63e-6108-4659-939e-80d4a2a25b7b",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C84",
+      "claim": "The area adjacent to Koller's sickle expresses both Nodal and the planar cell polarity (PCP) mediators Prickle-1, Flamingo-1 and Vangl2 and undergoes medio-lateral intercalation.",
+      "claim_type": "EXPLICIT",
+      "source": "This area expresses both Nodal and the planar cell polarity (PCP) mediators Prickle-1, Flamingo-1 and Vangl2 and undergoes medio-lateral intercalation (Voiculescu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Voiculescu et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "3a44ed26-8f23-4379-b52d-94d5d93ebca6",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C85",
+      "claim": "Cell division occurs throughout the epiblast at a homogeneous rate corresponding to a mean cell cycle time of 6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model, cell division occurs throughout the epiblast at a homogeneous rate corresponding to a mean cell cycle time of 6 hr (Derrick, 1937; Stern, 1979; Sanders et al., 1993; Voiculescu et al., 2007; Chuai and Weijer, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter in the computer model based on established knowledge cited from multiple sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "9a6d2f0e-08ee-47d9-91c8-1acd51227ceb",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "claim_id": "C86",
+      "claim": "The orientation of cell division is random within the plane of the epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation of cell division is random within the plane of the epiblast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter in the computer model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0d88179-d659-4514-acc0-d8ffedefee4f",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Individual EMT events and cell ingression occur throughout the epiblast well before primitive streak (PS) formation, starting as early as stages X-XII (6-15 hours before PS formation). These isolated ingression events are widely distributed across the epiblast at low frequency, with cells undergoing repeated cycles of incomplete delamination. As cells approach the forming PS, the rate of ingression increases markedly, with most cells ingressing within 1 hour of reaching the PS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C10-C26 provide converging evidence from multiple imaging modalities (time-lapse microscopy, SEM, multi-photon imaging) showing early, scattered EMT events before gastrulation. The observations are consistent across different techniques and developmental stages, with quantitative data on timing and spatial distribution. The progression from low-frequency scattered ingression to concentrated ingression at the PS is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Early ingressed mesoderm cells from the posterior PS induce PS markers (cBra, cSnail2) and trigger massive ingression in adjacent epiblast cells through a Nodal-dependent community effect. This induction is blocked by Nodal inhibitors (Cerberus, Cerberus-Short, SB431542, SB505124) but not by inhibitors of other pathways (FGF, canonical Wnt, BMP), and requires cells specifically from the PS region rather than lateral mesoderm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C39 present a systematic series of grafting experiments with appropriate controls (C36-C38) and specific pathway inhibitors. The results consistently implicate Nodal signaling in the community effect, with multiple independent inhibitors (C31-C34) producing the same phenotype. Sample sizes are reported (e.g., 8/8, 10/10, 9/9) and controls demonstrate specificity of the effect. The conclusion that TGF\u03b2/Nodal mediates the community effect is well-supported by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "6b028aea-26f9-42d5-955b-04ad7d88c3c4",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A Nodal-dependent 'community effect' concentrates and amplifies EMT by positive feedback, whereby early ingressed cells increase the probability of neighboring epiblast cells undergoing EMT, leading to the formation of the PS as a zone of massive cell ingression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C30, C39, and C65 synthesize the experimental findings into a coherent model of PS formation. The community effect concept is supported by grafting experiments (C27-C29), pharmacological inhibition studies (C31-C34), and is consistent with the observed acceleration of ingression near the forming PS (C20, C26). The positive feedback mechanism is directly demonstrated by the ability of grafted ingressed cells to induce new PS formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "93d91b19-ebd7-4340-8450-bf060c2e021b",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Computer simulations demonstrate that just two local cell behaviors\u2014cell intercalation (driven by Wnt-PCP) and EMT (amplified by Nodal-dependent community effect)\u2014are sufficient to explain all four major movements of chick gastrulation: the Polonaise movements, PS elongation, cell convergence toward the PS, and ingression through the PS. The global Polonaise movements emerge passively from these localized active events without requiring long-range signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C44-C46, C52-C53, C56-C58, and C81 describe computational modeling results that successfully recapitulate experimental observations. The model reproduces normal development (C45), experimental perturbations (C52: Wnt-PCP morpholino; C56: hypoblast rotation; C57: ectopic grafts), all without parameter changes. This parsimony strengthens the conclusion that local interactions are sufficient. However, the model's validation relies on qualitative matching rather than quantitative metrics, and some model parameters are not independently validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "dd9be3fa-3c40-4476-911a-674ed09eb0fb",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Blocking medio-lateral intercalation by morpholinos against Wnt-PCP pathway components arrests the Polonaise movements across the entire epiblast at pre-streak stages. Massive ingression still occurs but in an abnormal posterior location near the embryo margin rather than at the midline, with cells moving along straight-line trajectories. This demonstrates that intercalation drives early PS shaping and the Polonaise pattern, while the PS is subsequently maintained as a zone of massive ingression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 present experimental perturbation results that dissect the contributions of intercalation versus ingression to gastrulation movements. The phenotype is clearly documented (Figure 7I-J, Videos 8, 10) and the interpretation is logical: intercalation shapes the early PS and generates Polonaise movements, while ingression maintains the PS later. The model successfully reproduces this phenotype (C52), providing independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The hypoblast plays a crucial role in coordinating PS formation timing and positioning. Nodal is expressed in a posterior epiblast domain before streak formation but is initially inhibited by Cerberus from the hypoblast. This domain undergoes Wnt-PCP-driven intercalation that repositions cells to the midline. Displacement of the hypoblast by the endoblast disinhibits Nodal, triggering extensive EMT and PS formation. FGF controls Wnt-PCP and PS positioning, while Nodal antagonism regulates PS formation timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43, C69-C70, C74-C78 integrate prior published work (extensively cited) with current findings to explain the hypoblast's role. The model is consistent with experimental observations: Nodal inhibitors block PS formation (C31-C34), intercalation repositions the Nodal domain (C42-C43, C70), and hypoblast displacement correlates with PS formation timing. However, some aspects are inferred from prior work rather than directly tested here (e.g., C77-C78).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "a66fedfb-04b0-4e01-8205-c6b660cfe092",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Early ingressing cells correspond to, or are a subset of, the previously described HNK1+ cell population. The authors propose that amniote mesendoderm formation is initiated before PS formation by 'pioneer' cells that ingress individually at low frequency throughout the epiblast, analogous to Primary Mesenchyme Cells in sea urchin development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60, C63-C64 connect current observations to prior work on HNK1+ cells and draw parallels with sea urchin development. The spatial and temporal pattern of early ingression matches the HNK1+ cell distribution, and the ability of early ingressed cells to rescue PS formation in HNK1+-depleted embryos (cited from prior work) supports the correspondence. The 'pioneer cell' model is a reasonable interpretation, though the specification mechanism remains unknown (acknowledged in C63).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "583b0577-400c-4b09-82c1-3a8d3dbbd7a6",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The primitive streak is not a fixed gateway for cell internalization but rather a dynamic, self-reinforcing concentration of individually ingressing cells. This provides a mechanism for the self-maintenance of stable morphological structures despite continuously changing cellular composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 present a conceptual synthesis of the findings. The dynamic nature of the PS is supported by observations of continuous cell ingression (C21-C25), the community effect maintaining high ingression rates (C30, C39), and the ability of grafted cells to induce new PS formation (C27-C28). The model of self-maintenance through local positive feedback is consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "385f9249-8416-4d83-9bfa-1fb255ee59c9",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In zebrafish, when the Nodal pathway is compromised, only about 60 cells ingress instead of ~2500 normally, consistent with a Nodal-mediated community effect being conserved in vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 cite published zebrafish data (Keller et al., 2008) to support conservation of the Nodal-mediated community effect across vertebrates. The dramatic reduction in ingressing cells when Nodal is compromised is consistent with the chick findings. However, this is comparative inference based on literature rather than direct experimental evidence from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "df2ddebf-b019-431c-b9bf-a4c6f95507fd",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge about amniote gastrulation: the embryo begins as a flat disc of epithelial cells (epiblast) that undergoes characteristic 'Polonaise' movements for 8-10 hours, culminating in PS formation. The PS acts as a gateway for gastrulation where cells internalize via EMT to generate mesoderm and endoderm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C9 present established knowledge about amniote development, appropriately cited from classical literature (Pasteels 1940, Gr\u00e4per 1929, Wetzel 1929, etc.). These provide necessary context for the study and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "226f6076-fad4-4c31-913b-a6d28ccde1b3",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In sea urchin, gastrulation is initiated by maternally specified Primary Mesenchyme Cells (PMCs) that express Acetylcholinesterase (carrying the HNK1 epitope) and induce gastrulation through Notch signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62, C68 present established knowledge about sea urchin development, appropriately cited from the literature (Sherwood and McClay 1999, McClay et al. 2000, Sweet et al. 2002, Drews 1975, Bon et al. 1987, Canning and Stern 1988). This provides comparative context for interpreting the chick findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "ef03c6fb-433d-473a-9b04-fcc6278eb40c",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cell intercalation continues to play a role in later axial elongation through convergence/extension movements in midline mesoderm and prospective floor plate. These later movements are conserved in anamniotes (Xenopus, zebrafish), whereas the early pre-gastrulation intercalation movements are unique to amniotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C73 make inferences about later developmental stages and evolutionary conservation. C71 is speculative (\"seems to continue\"), C72 cites literature on anamniotes, and C73 draws a comparative conclusion. While plausible, these claims extend beyond the direct observations of this study and would benefit from additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    },
+    {
+      "id": "3f88b21c-a5e6-4f54-84e7-f9f670e32510",
+      "content_id": "1b408019-ece5-462d-b0dd-2a6f9ab53ea9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The computational model initializes with ~1000 epiblast cells, with 90-100 posterior cells representing the region adjacent to Koller's sickle that expresses Nodal and Wnt-PCP mediators. Cell division occurs at a homogeneous rate with 6-hour mean cell cycle time and random orientation within the epiblast plane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C86 describe model parameters and initial conditions. These are clearly specified and based on published literature (C83-C85 cite appropriate sources). The model structure is well-documented in the Materials and Methods section with detailed equations and parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:42:56.842679Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6e924919-87a3-4963-8994-f005241c9d2d",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "68834ec6-e0e3-43ec-88e2-6015bd99409f",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "c2fc51c1-3c87-415a-8514-0a392bb6c6e9",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "1bdc0f80-1541-4882-82af-e1115464afbe",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "ebaf9240-6dfe-465b-9ee1-aeccee969a07",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "5b96bc29-49aa-4f91-a232-c8b1884ba035",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "7236ea0e-a46b-44cd-a28a-89a3fe5a39f0",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "17263129-60ed-4198-bda8-4537250155a7",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "eef5a2cc-d689-4df8-b672-6cabf608a859",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "447c4673-dcb4-4080-8b68-f799f61fc138",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "7b3396b0-61bb-4c12-a271-b09a8df91acb",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "7d466b55-beac-4948-a902-614b0058df0d",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "46a89a66-a1a6-4742-9679-afc5782fb69e",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "caf2d738-ce2e-485b-be37-bf6a04c092a1",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "70a2b05b-99d5-4265-ac3d-18e05bb19437",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "26f44f4e-9321-4475-885d-e0184e6bb0eb",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "7310e3e1-7159-4196-847f-dff5546b0887",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "f2716401-52f2-4b9e-8439-52d6d7acb817",
+      "result_id": "e0d88179-d659-4514-acc0-d8ffedefee4f"
+    },
+    {
+      "claim_id": "05e2625e-1fe6-4c6a-a90f-a52d18b11d89",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "9ba63e60-5b80-434e-85e4-85f9d4c51658",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "e0cee2d3-fa1c-460a-ac26-f7b70e1c8e6d",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "35fd3e3a-3b07-495c-98da-7169eb1e4dea",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "3e499d6e-c067-4f88-9313-b635b9fbd300",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "7bef5ac2-cdcd-4871-b4f7-019708cc72e6",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "eb4c5dc5-9f9a-490d-90bc-40c4bf79683c",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "3f7095ec-e2d9-4a2d-8690-4b1afe5870c7",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "e12af597-ac9e-4522-99c1-81c4ef17ee93",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "cc7f994f-6329-475d-88a5-2554509a29af",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "0052ed6d-4e34-46a2-9609-3adb09388e05",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "20540a26-a884-4f10-8484-b28c3f945cd4",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "e634e411-2083-4226-a727-e8522665be2c",
+      "result_id": "8b620c44-f5e2-4dba-b9eb-22b88dfc443c"
+    },
+    {
+      "claim_id": "b71a5ead-34c8-473d-a3d1-704c920f3298",
+      "result_id": "6b028aea-26f9-42d5-955b-04ad7d88c3c4"
+    },
+    {
+      "claim_id": "35fd3e3a-3b07-495c-98da-7169eb1e4dea",
+      "result_id": "6b028aea-26f9-42d5-955b-04ad7d88c3c4"
+    },
+    {
+      "claim_id": "e634e411-2083-4226-a727-e8522665be2c",
+      "result_id": "6b028aea-26f9-42d5-955b-04ad7d88c3c4"
+    },
+    {
+      "claim_id": "f1847f89-4090-4783-ad58-b76deb83cae6",
+      "result_id": "6b028aea-26f9-42d5-955b-04ad7d88c3c4"
+    },
+    {
+      "claim_id": "c7cf22b2-10d7-4854-82a4-b9dbda595357",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "87c50630-062c-47ac-a0b4-d2dba385a06e",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "c7e92b26-4940-4fd4-a1e4-070ae8aca23a",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "44dc0736-fc23-4419-8dd1-ebcbc2c1b91f",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "0086bb0e-deb8-4d56-9a36-2f5db220c01f",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "3bf30342-a675-403a-8edb-3f49cb6039e0",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "f28dbb4b-bdc7-4e46-9799-836bb9bca384",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "6cfe3892-8d0d-482d-8ed7-7f35c530fa55",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "bb25e0b8-0ccc-4e6c-b4df-2692275e5b77",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "d318a85c-7307-4093-a103-88463bef8548",
+      "result_id": "93d91b19-ebd7-4340-8450-bf060c2e021b"
+    },
+    {
+      "claim_id": "121ee1c5-0d65-4ac0-b735-763a20ec5758",
+      "result_id": "dd9be3fa-3c40-4476-911a-674ed09eb0fb"
+    },
+    {
+      "claim_id": "bb21a6b7-9cab-4ba0-b4a6-bfd0d4621581",
+      "result_id": "dd9be3fa-3c40-4476-911a-674ed09eb0fb"
+    },
+    {
+      "claim_id": "233c8a7d-a8dc-41d8-b92b-0b4fd57f5e2e",
+      "result_id": "dd9be3fa-3c40-4476-911a-674ed09eb0fb"
+    },
+    {
+      "claim_id": "8997a2a1-51f7-4ec6-8762-344b48b7ec43",
+      "result_id": "dd9be3fa-3c40-4476-911a-674ed09eb0fb"
+    },
+    {
+      "claim_id": "bac87e06-e191-4eef-8f39-1435ae42ce83",
+      "result_id": "dd9be3fa-3c40-4476-911a-674ed09eb0fb"
+    },
+    {
+      "claim_id": "ddb96236-6a12-48f7-ae7f-261ddf48679e",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "3bae8611-46f5-4465-a7f6-e65b57c53956",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "d34d5d1f-40e9-44fa-9f53-0f4e08663774",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "7246cdb2-328c-4231-b656-09c8301cb1cb",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "a3b0b1f1-9072-4cc1-84cb-92b1b19a3b0d",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "1a1585aa-020e-4567-b36c-40406256d248",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "c7cb6aac-9af9-4eda-9c02-d5e0eafccb34",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "dfd87904-1b8e-4afc-9c61-fa03379c4650",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "49bf15e5-9a9e-4984-a83d-2cb4d2371b9b",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "1e37ac30-0a17-46ee-8bd6-b76f7eeb3ece",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "4307568c-c46a-4959-b254-250d75eb2ed5",
+      "result_id": "fd6d32d6-134c-4e98-96c4-1bcb5854d63f"
+    },
+    {
+      "claim_id": "1857fcd1-d2c1-450f-858b-5a910b9496b3",
+      "result_id": "a66fedfb-04b0-4e01-8205-c6b660cfe092"
+    },
+    {
+      "claim_id": "0e27acc1-db42-4914-ae2e-a1779a5de051",
+      "result_id": "a66fedfb-04b0-4e01-8205-c6b660cfe092"
+    },
+    {
+      "claim_id": "cbcb2992-5249-4fed-9e70-8e16a45dd597",
+      "result_id": "a66fedfb-04b0-4e01-8205-c6b660cfe092"
+    },
+    {
+      "claim_id": "f44bae50-915b-499d-a97d-323658c25b40",
+      "result_id": "a66fedfb-04b0-4e01-8205-c6b660cfe092"
+    },
+    {
+      "claim_id": "2442fdfc-9d48-4c44-91c1-b302c0792936",
+      "result_id": "583b0577-400c-4b09-82c1-3a8d3dbbd7a6"
+    },
+    {
+      "claim_id": "49c4f432-e0d4-463f-8450-7c9bbae07a87",
+      "result_id": "583b0577-400c-4b09-82c1-3a8d3dbbd7a6"
+    },
+    {
+      "claim_id": "7a270ce8-7bad-4c46-97e9-9864ecee58dc",
+      "result_id": "385f9249-8416-4d83-9bfa-1fb255ee59c9"
+    },
+    {
+      "claim_id": "9f9b03f1-8f41-45ad-a2e7-a511af91b495",
+      "result_id": "385f9249-8416-4d83-9bfa-1fb255ee59c9"
+    },
+    {
+      "claim_id": "49d4f98e-e6a9-4926-9d55-e75f588b9d1c",
+      "result_id": "df2ddebf-b019-431c-b9bf-a4c6f95507fd"
+    },
+    {
+      "claim_id": "a5e0ba51-3c00-4cfe-bbb7-4db3d46a23d9",
+      "result_id": "df2ddebf-b019-431c-b9bf-a4c6f95507fd"
+    },
+    {
+      "claim_id": "2922e2aa-807c-4ea6-a5a1-5d6d6cc61fdd",
+      "result_id": "df2ddebf-b019-431c-b9bf-a4c6f95507fd"
+    },
+    {
+      "claim_id": "81551a17-9ae9-4d34-ac9f-43246f743d1d",
+      "result_id": "df2ddebf-b019-431c-b9bf-a4c6f95507fd"
+    },
+    {
+      "claim_id": "7067487f-869b-48ab-af24-1973025b47aa",
+      "result_id": "df2ddebf-b019-431c-b9bf-a4c6f95507fd"
+    },
+    {
+      "claim_id": "29357ec2-268e-4fc2-b57b-2bab4f516aad",
+      "result_id": "df2ddebf-b019-431c-b9bf-a4c6f95507fd"
+    },
+    {
+      "claim_id": "09ca0b64-fdd5-4ce1-9b21-e2fa46f9bc69",
+      "result_id": "226f6076-fad4-4c31-913b-a6d28ccde1b3"
+    },
+    {
+      "claim_id": "1e2adc0b-a0de-4897-be90-7ded80d98c18",
+      "result_id": "226f6076-fad4-4c31-913b-a6d28ccde1b3"
+    },
+    {
+      "claim_id": "1484b985-accc-4cb4-922a-0d40f825f54d",
+      "result_id": "226f6076-fad4-4c31-913b-a6d28ccde1b3"
+    },
+    {
+      "claim_id": "333f3421-fd91-4c11-b71f-b51708fcf8bc",
+      "result_id": "ef03c6fb-433d-473a-9b04-fcc6278eb40c"
+    },
+    {
+      "claim_id": "00613ad2-29fd-4bdf-8fab-6da0e136a84f",
+      "result_id": "ef03c6fb-433d-473a-9b04-fcc6278eb40c"
+    },
+    {
+      "claim_id": "d11a8dfc-641e-46f8-b1ae-99c090265e24",
+      "result_id": "ef03c6fb-433d-473a-9b04-fcc6278eb40c"
+    },
+    {
+      "claim_id": "d03a3dfa-fc32-49f3-8279-9ce75cc4d18a",
+      "result_id": "3f88b21c-a5e6-4f54-84e7-f9f670e32510"
+    },
+    {
+      "claim_id": "2f6ddce7-a165-45a0-b95e-49b4493165af",
+      "result_id": "3f88b21c-a5e6-4f54-84e7-f9f670e32510"
+    },
+    {
+      "claim_id": "07e0e63e-6108-4659-939e-80d4a2a25b7b",
+      "result_id": "3f88b21c-a5e6-4f54-84e7-f9f670e32510"
+    },
+    {
+      "claim_id": "3a44ed26-8f23-4379-b52d-94d5d93ebca6",
+      "result_id": "3f88b21c-a5e6-4f54-84e7-f9f670e32510"
+    },
+    {
+      "claim_id": "9a6d2f0e-08ee-47d9-91c8-1acd51227ceb",
+      "result_id": "3f88b21c-a5e6-4f54-84e7-f9f670e32510"
+    }
+  ],
+  "comparisons": []
+}

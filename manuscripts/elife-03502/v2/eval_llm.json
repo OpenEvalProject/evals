@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Trx is specifically required to maintain type II neuroblast identity. Loss of trx function causes type II neuroblasts to progressively adopt type I neuroblast molecular markers and lose the ability to generate INPs, while type I neuroblasts remain unaffected by trx mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 provide converging evidence through time-course analysis showing progressive marker changes (C36-C38), altered progeny composition (C40-C42), and type-specific requirements (C33-C35). The data demonstrate both molecular (marker expression) and functional (progeny type) identity changes, with appropriate controls showing type I neuroblasts are unaffected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "trx mutant type II neuroblasts lose the functional competence to generate INPs, as demonstrated by genetic epistasis with brat and erm mutations. Unlike wild-type type II neuroblasts that generate supernumerary neuroblasts in brat/erm mutant backgrounds, trx mutant type II neuroblasts generate differentiated cells instead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis experiments (C48-C51) provide strong functional evidence that trx mutant type II neuroblasts have lost INP-generating competence. The logic is sound: if trx mutants generate GMCs instead of INPs, their progeny should be insensitive to loss of INP specification factors (brat/erm), which is exactly what is observed. The quantitative data support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "trx mutant type II neuroblasts adopt type I neuroblast functional identity as evidenced by Prospero localization and genetic interaction with pros mutation. Pros localizes asymmetrically in trx mutant type II neuroblasts (unlike wild-type type II), and removing pros function leads to supernumerary type I neuroblast formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide direct functional evidence through Pros localization (a type I-specific feature) and genetic interaction showing pros-dependent GMC specification. This complements the brat/erm epistasis data and confirms functional identity conversion. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The histone methyltransferase activity of Trx is essential for maintaining type II neuroblast identity. The trxZ11 allele, which carries a SET domain mutation reducing methyltransferase activity, causes 27% of type II neuroblasts to adopt type I identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 provides quantitative data showing partial penetrance with the hypomorphic trxZ11 allele, which is consistent with reduced but not abolished methyltransferase activity. The use of a catalytic mutant rather than null allele specifically tests the enzymatic requirement. However, the incomplete penetrance (27%) suggests either partial activity retention or additional Trx functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Trx maintains type II neuroblast identity through the SET1/MLL complex and its H3K4 methylation activity. Core complex components (Ash2, Rbbp5, Wds) are required, and rbbp5 mutants phenocopy trx mutants. Wild-type but not catalytically inactive Rbbp5 rescues the rbbp5 mutant phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence is comprehensive: knockdown of complex components phenocopies trx (C64), rbbp5 null mutants show identical phenotypes to trx (C67-C68), H3K4 methylation is lost in rbbp5 mutants (C69), and critically, wild-type Rbbp5 rescues while catalytically inactive Rbbp5SG does not (C71-C72, C119). This structure-function analysis strongly supports the methylation-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Trx regulates type II neuroblast identity through locus-specific rather than global H3K4 methylation. Removing trx function does not affect global H3K4 methylation patterns, while knocking down trr or dset1 eliminates global H3K4 methylation but does not affect type II neuroblast identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 and C121-C122 provide clear differential effects: trr/dset1 affect global methylation without phenotype, while trx affects phenotype without global methylation changes. This double dissociation strongly supports locus-specific regulation. The logic leading to hypothesis C78/C123 is sound and sets up the search for specific target genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "btd is a direct transcriptional target of Trx in type II neuroblasts. btd transcripts are enriched in type II neuroblasts, Trx binds to the btd promoter, the btd locus shows H3K4 di-methylation, and btd expression is reduced in rbbp5 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP data (C81-C83) demonstrate direct Trx binding with appropriate negative controls. The H3K4me2 enrichment (C82) is consistent with active chromatin. The btd-Gal4 reporter shows type II-specific expression (C85) that is reduced in rbbp5 mutants (C86), linking Trx/SET1/MLL complex function to btd regulation. The evidence converges to support direct regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "btd is necessary for type II neuroblast functional identity. btd mutant type II neuroblasts maintain type II molecular markers but progressively lose INP generation capacity, producing non-functional Ase- immature INP-like cells that are insensitive to brat loss and likely adopt GMC identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The loss-of-function analysis (C88-C92) shows btd mutants maintain molecular identity (Dpn+Ase-PntP1+) but lose functional identity (reduced INPs, altered progeny). The brat epistasis experiment (C93-C94) provides strong functional evidence that btd mutant progeny are not true INPs. The phenotype is distinct from trx mutants (molecular markers maintained), suggesting btd acts downstream in a specific pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "btd is sufficient to induce type II neuroblast functional characteristics in type I neuroblasts. Overexpression of btd in type I neuroblasts causes 18-28% to lose Ase expression and generate INP-like progeny that are sensitive to brat/erm loss, indicating functional INP generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain-of-function data (C97-C98) show btd overexpression induces type II characteristics in a subset of type I neuroblasts. The brat/erm epistasis experiments (C100-C103) provide functional validation that these are genuine INPs requiring specification factors. The incomplete penetrance (18-28%) is acknowledged and discussed. Together with loss-of-function data, this establishes btd sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "btd functions downstream of Trx to maintain type II neuroblast identity. Overexpression of btd in trx mutant type II neuroblasts restores type II characteristics in 40% of neuroblasts and significantly increases INP generation, demonstrating btd can bypass the requirement for Trx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiment (C107-C108) provides critical epistasis data showing btd acts downstream of Trx. The 40% rescue rate is substantial though incomplete, which could reflect: (1) additional Trx targets beyond btd, (2) timing issues with overexpression, or (3) requirement for proper chromatin context. Despite incomplete rescue, the significant restoration of both molecular and functional identity strongly supports the Trx\u2192btd pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C28",
+      "C32",
+      "C114",
+      "C115"
+    ],
+    "result": "Trx epigenetically maintains type II neuroblast functional identity by promoting Btd expression through H3K4 methylation at the btd locus, thereby maintaining neuroblast functional heterogeneity. This represents the first mechanistic insight into stem cell heterogeneity maintenance within an organ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C6, C32, C114-C115) is well-supported by the combined evidence: Trx binds btd locus, maintains H3K4 methylation there, btd is necessary and sufficient for type II identity, and btd overexpression rescues trx mutants. The claim of novelty (C115) regarding stem cell heterogeneity maintenance is reasonable given the comprehensive mechanistic characterization, though the assessment of 'first' depends on literature not fully evaluated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "pnt functions in INP specification rather than type II neuroblast identity maintenance. Knocking down pnt causes supernumerary neuroblast formation, genetically interacts with brat/erm, and fails to rescue trx mutants, indicating pnt promotes INP identity specification downstream of Trx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pnt knockdown phenotype (C134-C135) is opposite to trx/btd (supernumerary neuroblasts vs. loss of INPs), suggesting a different function. The genetic interactions with brat/erm (C137) and failure to rescue trx mutants (C138) support the revised model (C136, C139-C140) that pnt acts in INP specification. This represents good scientific practice in revising hypotheses based on unexpected data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Removing trx or btd function suppresses brain tumor formation in brat/erm mutant backgrounds by reducing supernumerary neuroblast expansion and promoting differentiation, demonstrating that reprogramming cancer stem cell functional identity can alter tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144 and C146 provide experimental evidence that trx or btd loss suppresses tumor phenotypes in established Drosophila brain tumor models. The data show reduced supernumerary neuroblasts and increased differentiation. While the connection to mammalian cancer (C147) is speculative, the demonstration that altering stem cell functional identity affects tumor growth in this model system is well-supported and conceptually important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on stem cell heterogeneity and Drosophila neuroblast biology: Stem cells employ multiple strategies to generate cellular diversity, including temporal identity changes and maintaining functionally heterogeneous populations. Type I and II neuroblasts are functionally distinct, with type II neuroblasts uniquely generating INPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C7-C14) establish background knowledge supported by appropriate citations. They define the biological context and key distinctions between neuroblast types that motivate the study. The claims are well-established in the field based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "PntP1 is uniquely expressed in type II neuroblasts and can induce type II characteristics when misexpressed, but its physiological function in maintaining type II identity remains unclear due to the complexity of the pnt locus encoding multiple isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by citations to prior work. Claim C17 identifies a knowledge gap that motivates investigating pnt function, which is addressed later in the manuscript. This appropriately sets up the rationale for studying pnt alongside other regulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on epigenetic regulation: H3K4 methylation by SET1/MLL complexes plays central roles in cell fate specification. In Drosophila, Trx, Trr, and dSet1 can form SET1/MLL complexes with distinct functions, with Trx selectively regulating Hox genes, though its other targets are poorly characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C19-C25) are well-supported by citations and establish the epigenetic context for the study. Claim C25 identifies the knowledge gap regarding Trx targets beyond Hox genes, which directly motivates the current investigation. The background is accurate and appropriately frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Background on INP specification: The competence to generate INPs distinguishes type II from type I neuroblasts. brat and erm function in immature INPs to promote INP identity, and their loss causes supernumerary neuroblast formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C44-C46) establish key background on INP specification supported by appropriate citations. This background is essential for interpreting the genetic epistasis experiments used throughout the study to assess functional identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Discussion context: Maintaining functionally distinct stem cell populations is important for organogenesis across organisms, including mammalian brain development and other organs. However, mechanisms maintaining stem cell heterogeneity have not been previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 provide appropriate context supported by citations. Claim C113 positions the current work as addressing an unmet need in the field. While the claim of 'never been reported' is strong, it is reasonable given the comprehensive mechanistic characterization provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The homologs of Trx and Btd play critical roles in vertebrate neural stem cell function, suggesting the SET1/MLL complex might contribute to stem cell heterogeneity maintenance in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is supported by citations, but claim C117 is explicitly speculative. While the speculation is reasonable given the conservation of the molecular players, it remains to be tested whether the specific mechanism of heterogeneity maintenance is conserved. The authors appropriately frame this as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Discussion of Btd mechanism: btd encodes a conserved C2H2 zinc finger transcription factor required for embryonic head patterning. Its role in neuroblasts and mechanisms of action are unclear. Possible explanations for incomplete btd overexpression effects include cofactor requirements, epigenetic differences, or parallel pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is supported by citations. Claims C127-C128 accurately identify knowledge gaps. Claims C129-C131 present reasonable speculative explanations for the incomplete penetrance of btd overexpression effects. These are appropriately framed as possibilities rather than conclusions and represent thoughtful consideration of the data limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Btd is highly conserved, and future studies on how Btd regulates type II neuroblast identity will provide insight into neural stem cell heterogeneity regulation in both invertebrates and vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by citations. Claim C133 is a reasonable statement about future directions given the conservation of Btd and the mechanistic insights provided. This appropriately identifies important follow-up questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C148"
+    ],
+    "result": "Discussion of therapeutic implications: Targeting cancer stem cell functional properties could revolutionize cancer treatment. Reprogramming cancer stem cell identity to bypass amplifying cell types should halt tumor growth. Understanding stem cell heterogeneity maintenance might inform therapies to switch cancer stem cells to non-cancerous types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141 and C143 are speculative statements about potential therapeutic applications. Claim C142 is supported by a citation. Claim C148 extends the speculation to therapeutic design. While the Drosophila tumor model data (C144, C146) support the concept in principle, the translation to human cancer therapy is highly speculative and would require extensive additional work. The speculation is reasonable but should be clearly distinguished from demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

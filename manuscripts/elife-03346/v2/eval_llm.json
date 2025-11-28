@@ -1,0 +1,410 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A large-scale TF overexpression screen of 734 transcription factors in 3T3-L1 pre-adipocytes identified 26 TFs that significantly enhance adipogenesis (\u22651.5-fold, Bonferroni < 0.05), of which 22 were novel pro-adipogenic regulators. ZEB1 showed the strongest effect, and PPAR\u03b3 served as a positive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen methodology is well-described (C35-C42), with appropriate technical replicates (C38), automated quantification (C41), and stringent statistical criteria (C43). The identification of PPAR\u03b3 as a positive control (C46) validates the approach. The claim of 22 novel regulators (C44) is supported by literature review, though the novelty assessment relies on author knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Expression analysis revealed that 18 of 26 candidate TFs (69%) are actively transcribed during 3T3-L1 differentiation, 9 are significantly enriched in adipose tissue, and 15 (83%) have human orthologs highly expressed in human adipose stromal cells, suggesting conserved regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression analysis integrates multiple data types (microarray, POLII ChIP-seq, Expression Atlas) to characterize candidate TFs (C47-C48). The tissue enrichment (C48) and cross-species conservation (C50) provide biological validation. However, the inference of conserved regulation (C51) is based solely on expression correlation without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Validation experiments using stable 3T3-L1 cell lines confirmed that 6 of 8 follow-up TFs increased lipid accumulation and induced adipogenic gene expression (Pparg2, Cebpa, Adipoq). These TFs were expressed at maximal levels at the onset of adipogenesis, suggesting roles as early regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation approach using stable cell lines with Oil Red O staining (C53-C54) and qPCR (C55) provides orthogonal confirmation of the screen results. The expression timing analysis (C56) supports the inference of early regulatory roles (C58), though this remains correlative rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ZEB1 knockdown using three distinct shRNAs reduced Zeb1 expression by 80-90% and dramatically reduced or abolished adipocyte differentiation, mimicking PPAR\u03b3 knockdown effects, establishing ZEB1 as an important mediator of 3T3-L1 differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The loss-of-function experiments use multiple independent shRNAs (C59) with PPAR\u03b3 as a positive control (C60), achieving substantial knockdown (C61). The phenotypic effects (C62-C63) are dramatic and comparable to the master regulator PPAR\u03b3, strongly supporting ZEB1's essential role (C64-C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ZEB1 expression analysis revealed high mRNA levels in pre-adipocytes that moderately decrease during differentiation (p=0.009), while ZEB1 protein levels increase 1.4-2.1-fold at day 2, suggesting post-transcriptional regulation and early activity in adipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression characterization combines qPCR (C66), published microarray data (C67), and quantitative proteomics (C69-C70) to establish ZEB1's expression pattern. The statistical testing (C66) and consistency across datasets (C67) strengthen the findings. The inference of post-transcriptional regulation (C73) is speculative but reasonable given the mRNA-protein discordance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ZEB1 overexpression increased Pparg2 and Cebpa expression, while ZEB1 knockdown prevented their induction. RNA-seq analysis revealed 3,426 and 3,221 genes significantly de-regulated at days 0 and 2, respectively, with equal proportions up- and down-regulated, consistent with ZEB1's versatile, context-dependent regulatory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq experiments include appropriate controls and replicates (C76), with validation by qPCR showing high correlation (C78, r\u22650.95). The scale of transcriptional changes (C79-C80) and bidirectional regulation (C81) are well-documented. The interpretation of context-dependent function (C82) is supported by citation but the data alone show correlation, not mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Pathway enrichment analysis of ZEB1 knockdown RNA-seq data revealed that down-regulated genes at day 2 enriched for fat-cell-specific pathways, while genes down-regulated in pre-adipocytes enriched for developmental pathways (TGF-beta/EMT, ESR1/AP1, WNT, Notch). ZEB1 knockdown strongly impacted expression of adipogenic master regulators (Cebpa, Cebpd) and novel screen candidates (Zfp30, Ebf3, Msx1, Atoh8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pathway enrichment analysis (C83-C85) provides biological context for the transcriptional changes, with appropriate statistical methods. The impact on known regulators (C86) and novel candidates (C87) demonstrates ZEB1's broad regulatory influence. The inference that novel candidates belong to the same regulatory module (C88) is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Analysis of previously defined gene expression clusters revealed that ZEB1 knockdown up-regulated genes normally repressed upon confluence (enriched in cluster 2, mitosis/cell cycle genes) and down-regulated genes normally induced upon confluence (enriched in cluster 3, cell adhesion/ECM genes, including EMT factors Snai2, Twist1, Id2, Id3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration with published gene expression clusters (C89-C93) provides temporal context for ZEB1's regulatory effects. The enrichment patterns are statistically significant and biologically coherent. The identification of EMT factors (C94) is well-supported, with Snai2's adipogenic role validated by citation (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ZEB1 knockdown preferentially down-regulated positive regulators of adipogenesis while up-regulating negative regulators (p=0.007). Integration with SMRT knockdown data showed significant negative correlation (\u03c1=-0.36, p<10^-16) and >40% overlap in regulated genes (p<0.004), indicating ZEB1 promotes expression of key adipogenic regulators (PPAR\u03b3, C/EBP\u03b1) and balances pathways controlling terminal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential regulation of positive vs. negative regulators (C96) is statistically significant and supports ZEB1's pro-adipogenic role (C97). The integration with SMRT data (C98-C100) provides mechanistic insight, though the negative correlation suggests opposing rather than cooperative functions. The conclusions (C101-C103) are well-supported by the comprehensive transcriptional analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "ZEB1 ChIP-seq in 3T3-L1 pre-adipocytes identified 27,854 binding regions with high reproducibility (\u03c1\u22650.83), including at the Pparg locus. ZEB1 preferentially bound gene-proximal locations, with ~25% overlapping TSSs and most regions within 10 kb of genes, showing highly significant association with promoters, CpG islands, and exons (p<10^-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq experiments include appropriate replicates and controls (C105), with high correlation supporting data quality. The scale of binding (C106) and genomic distribution (C108) are well-characterized with statistical validation (C109). The binding at Pparg (C107) provides a key mechanistic link to adipogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "De novo motif discovery identified the canonical ZEB1 E-box motif (TOMTOM p=10^-8) preferentially located near peak summits, though only 24% of regions contained this motif. Extended motif analysis (100 bp) revealed enrichment for AP1, NF1, RUNX, C/EBP\u03b2, and SMAD3 motifs (p\u226410^-12), suggesting ZEB1 is recruited to regulatory regions by or in cooperation with other DNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motif discovery uses appropriate computational methods (MEME, HOMER) with statistical validation (C110, C113). The low frequency of canonical ZEB1 motifs (C112) and enrichment of other TF motifs (C113-C114) support the inference of cooperative DNA binding (C115), though direct evidence of protein-protein interactions is needed for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Almost one-third of ZEB1-bound regions were co-bound by C/EBP\u03b2 (p\u226410^-12), and 27% were bound by AP1 factors (p\u226410^-12). Co-bound regions showed high enrichment for both factors, AP1 binding, DNase I signal, and POLII. This co-localization pattern was conserved in human HepG2 and lymphoblastoid cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overlap analysis uses appropriate statistical tests (Fisher's exact test) with highly significant p-values (C116, C118). The characterization of co-bound regions (C117, C119-C120) integrates multiple genomic datasets. The conservation in human cell lines (C121) strengthens the biological relevance, though these are non-adipogenic cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Mass spectrometry analysis of ZEB1 immunoprecipitates identified 89 interaction partners, including known partners (CtBP1/2, HDAC1/2) and C/EBP\u03b2 at similar stringency. RUNX2, NFIX, and AP1 members (ATF2, ATF7) were detected in one replicate, suggesting ZEB1 forms complexes with major adipogenic regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mass spectrometry approach is validated by recovery of known ZEB1 partners (C123-C124). The detection of C/EBP\u03b2 (C125) provides direct evidence for physical interaction, supporting the ChIP-seq co-localization data. However, RUNX2, NFIX, and AP1 factors (C126) were only detected in one replicate, requiring validation. The inference of functional cooperation (C127) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "ChIP-qPCR after C/EBP\u03b2 knockdown revealed that C/EBP\u03b2 was enriched at most ZEB1-bound regions, including presumed ZEB1-only sites. C/EBP\u03b2 knockdown decreased both C/EBP\u03b2 and ZEB1 binding at most tested regions and reduced Zeb1 mRNA levels two-fold. C/EBP\u03b2 directly targets the Zeb1 gene, suggesting the decreased ZEB1 binding may result from reduced cellular ZEB1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The ChIP-qPCR experiments (C128-C131) provide evidence for widespread ZEB1-C/EBP\u03b2 co-localization and suggest ZEB1 binding depends on C/EBP\u03b2 (C132). However, the confounding effect of reduced Zeb1 expression (C133-C135) prevents definitive conclusions about direct binding cooperativity vs. indirect effects through reduced ZEB1 protein levels (C136). Additional experiments with maintained ZEB1 expression are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "In committed pre-adipocytes, ZEB1 binds to open/active regulatory regions before adipogenesis onset. Many regions are co-targeted by first-wave adipogenic TFs (C/EBP\u03b2, AP1 factors), implying a functional relationship, especially between ZEB1 and C/EBP\u03b2, in early adipogenic regulatory events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates the ChIP-seq (C137), co-localization (C138), and mass spectrometry data (C139) into a coherent model. The evidence for ZEB1 binding to open chromatin and co-localization with early TFs is strong. However, the functional relationship (C139) is inferred from correlative data rather than direct mechanistic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Time-course ZEB1 ChIP-seq during 3T3-L1 differentiation revealed that the vast majority of 42,050 ZEB1-bound regions showed consistent enrichment across all time points (\u03c1\u22650.75). However, 552 early-only and 803 late-only regions were detected (FC\u22652, FDR 0.1), with late-only regions including loci of adipogenic regulators (Pparg, Klf15, Zbtb16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-course ChIP-seq design (C140) enables analysis of dynamic binding. The high correlation (C141) and clustering (C142) are well-documented. The differential binding analysis uses appropriate statistical criteria (C143), and the identification of adipogenic regulator loci (C144) provides biological validation. The relatively small number of dynamic sites compared to static binding is clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Differential motif analysis revealed early-only regions enriched for non-adipogenic motifs (RUNX1/2, TEAD1), while late-only regions enriched for adipogenic motifs (C/EBP\u03b1/\u03b2, NFIC, PPAR\u03b3::RXR). Late-only regions showed strong C/EBP\u03b2, PPAR\u03b3, RXR\u03b1 binding and high DHS/POLII signals upon differentiation, suggesting ZEB1 relocates to adipogenic regulatory regions to mediate gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential motif enrichment (C145-C146) is statistically significant and biologically coherent, supporting the inference of ZEB1 relocation (C147). The characterization of late-only regions (C148-C149) integrates multiple genomic datasets. The inference that these regions become active during differentiation (C150) is well-supported. However, the speculation about ZEB1 mediating gene activation (C153) requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Late-only ZEB1 peaks associated with genes important for fat cell differentiation, insulin response, and lipid storage. Late-only genes enriched for strong induction during adipogenesis (clusters 7, 5), and almost a quarter were significantly down-regulated upon ZEB1 knockdown at day 2 (three-fold enrichment vs. static genes, p\u226410^-12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GO term enrichment (C154) and expression cluster analysis (C155-C156) provide functional context for dynamic ZEB1 binding. The integration with knockdown RNA-seq data (C157) demonstrates functional consequences of late-only binding, with strong statistical support. This establishes a clear link between dynamic binding and gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "ZEB1 DNA binding is largely static during adipogenesis and may contribute to establishing the regulatory landscape in pre- and mature adipocytes. However, a subset of sites is dynamically bound, with late-acquired binding associated with C/EBP\u03b2 co-binding, up-regulation, sensitivity to ZEB1 levels, and adipogenic functions, suggesting ZEB1 mediates the regulatory switch toward terminal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis (C158-C162) integrates the time-course ChIP-seq, motif analysis, and RNA-seq data into a coherent model. The conclusion about predominantly static binding (C158) is well-supported. The inference about establishing regulatory landscape (C159) is reasonable given the DNase overlap. The characterization of dynamic binding (C160-C161) and its functional implications (C162) are supported by the data, though mechanistic details remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Integration of ZEB1 ChIP-seq and RNA-seq data with a manually curated adipogenic gene regulatory network revealed that the vast majority of network members are directly targeted by ZEB1 and significantly down-regulated upon knockdown (p=2\u00d710^-4). The number of bound and regulated genes significantly exceeds chance expectation, and most ZEB1 targets are co-bound by C/EBP\u03b2, establishing ZEB1 as a central aGRN component that targets master regulators (C/EBP\u03b1, PPAR\u03b3), first-wave regulators (KLF4, CREB), and early commitment factors (ZFP423, TCF7L1, EVI1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The network analysis (C163-C169) integrates multiple datasets with appropriate statistical testing (C164-C165). The conclusion that ZEB1 is a central aGRN component (C166) is well-supported by the enrichment analysis. The characterization of ZEB1 targets across different regulatory stages (C169) demonstrates its broad influence. The inference of cooperation with C/EBP\u03b2 (C168) is supported by co-binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Analysis of adipogenic commitment genes revealed that 48% were significantly affected by ZEB1 knockdown (87% down-regulated), with most directly targeted by ZEB1 in pre-adipocytes. In C3H10T1/2 MSCs, ZEB1 knockdown significantly impaired differentiation and reduced expression of adipogenic TFs/markers (Cebpa, Pparg2, Ebf1, Adipoq), while overexpression slightly increased differentiation and strongly up-regulated Pparg2, Zfp423 mRNA and PPAR\u03b3 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of commitment genes (C170-C171) demonstrates ZEB1's role in early adipogenesis. The MSC experiments (C172-C175) extend findings beyond 3T3-L1 cells, with appropriate controls (BMP-2 addition). The knockdown effects (C172-C173) are dramatic, while overexpression effects (C174-C175) are more modest but consistent. The conclusion (C176) is well-supported across both cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "In vivo transplantation experiments using SVF cells showed that ZEB1 overexpression significantly increased mature fat cell formation (p=0.05), while knockdown almost halved fat cell formation compared to controls. The effect does not involve major changes in cell proliferation capacity, establishing ZEB1's importance for in vivo adipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo experiments (C178-C179) provide critical validation of ZEB1's function beyond cell culture, using an established transplantation model (C177 citation). The statistical significance for overexpression (C178, p=0.05) is marginal but acceptable. The proliferation analysis (C181) addresses a potential confounding mechanism, though the authors acknowledge more studies are needed. The conclusion (C180) is supported but would benefit from stronger statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "In human obese patients, Zeb1 mRNA expression in subcutaneous SVF showed strong positive correlations with adipocyte differentiation potential (\u03c1\u22650.40, p\u22640.03), total fat mass, and adiponectin levels, contrasting with Rorg's inverse correlation. These correlations are consistent with ZEB1's positive effect on adipogenesis in mice, demonstrating functional relevance in both mouse and human adipocyte biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The human patient data (C183) provides translational relevance with statistically significant correlations. The comparison with Rorg (C184) serves as a control showing specificity. The genetic association data (C182) provides additional support. However, the correlations are observational and do not establish causation. The conclusion (C185-C186) appropriately frames these as indicative rather than definitive, though functional validation in human cells would strengthen the claims.",
+    "result_type": "MAJOR"
+  }
+]

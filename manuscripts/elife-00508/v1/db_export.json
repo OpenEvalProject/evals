@@ -1,0 +1,2303 @@
+{
+  "submission": {
+    "id": "59794b83-3a05-40d5-be6d-64843f00f33b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:41:25.697690Z",
+    "updated_at": "2025-11-28T19:41:25.697690Z"
+  },
+  "content": [
+    {
+      "id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "submission_id": "59794b83-3a05-40d5-be6d-64843f00f33b",
+      "content_type": "manuscript",
+      "content_text": "# Imaging-based chemical screening reveals activity-dependent neural differentiation of pluripotent stem cells\n\n## Authors\n\n- Yaping Sun<sup>1</sup>\n- Zhiqiang Dong<sup>1</sup>\n- Taihao Jin<sup>4</sup>\n- Kean-Hooi Ang<sup>7</sup>\n- Miller Huang<sup>9</sup>\n- Kelly M Haston<sup>4</sup>\n- Jisong Peng<sup>1</sup>\n- Tao P Zhong<sup>12</sup>\n- Steven Finkbeiner<sup>4</sup>\n- William A Weiss<sup>9</sup>\n- Michelle R Arkin<sup>7</sup>\n- Lily Y Jan<sup>4</sup>\n- Su Guo<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Bioengineering and Therapeutic Science University of California, San Francisco San Francisco United States\n2. Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research University of California, San Francisco San Francisco United States\n3. Programs in Human Genetics and Biological Sciences University of California, San Francisco San Francisco United States\n4. Department of Physiology University of California, San Francisco San Francisco United States\n5. Department of Biochemistry University of California, San Francisco San Francisco United States\n6. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n7. Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States\n8. Small Molecule Discovery Center University of California, San Francisco San Francisco United States\n9. Department of Neurology University of California, San Francisco San Francisco United States\n10. Department of Neurological Surgery University of California, San Francisco San Francisco United States\n11. Department of Pediatrics University of California, San Francisco San Francisco United States\n12. State Key Laboratory of Genetic Engineering, Department of Genetics Fudan University School of Life Sciences Shanghai China\n13. Keck Foundation Program in Brain Cell Engineering, Roddenberry Center for Stem Cell Biology and Medicine Gladstone Institutes of Neurological Disease San Francisco United States\n14. Taube\u2013Koret Center for Neurodegenerative Disease Research San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMammalian pluripotent stem cells (PSCs) represent an important venue for understanding basic principles regulating tissue-specific differentiation and discovering new tools that may facilitate clinical applications. Mechanisms that direct neural differentiation of PSCs involve growth factor signaling and transcription regulation. However, it is unknown whether and how electrical activity influences this process. Here we report a high throughput imaging-based screen, which uncovers that selamectin, an anti-helminthic therapeutic compound with reported activity on invertebrate glutamate-gated chloride channels, promotes neural differentiation of PSCs. We show that selamectin\u2019s pro-neurogenic activity is mediated by \u03b32-containing GABAA receptors in subsets of neural rosette progenitors, accompanied by increased proneural and lineage-specific transcription factor expression and cell cycle exit. In vivo, selamectin promotes neurogenesis in developing zebrafish. Our results establish a chemical screening platform that reveals activity-dependent neural differentiation from PSCs. Compounds identified in this and future screening might prove therapeutically beneficial for treating neurodevelopmental or neurodegenerative disorders.\n\n## Introduction\n\nMouse embryonic stem cells (mESCs), capable of generating most cell types that constitute the entire organism, have made important contributions to our understanding of mammalian biology (Smith, 2001). How mESCs differentiate into neural lineages is a fascinating question that remains incompletely understood (Okano and Temple, 2009; Gaspard and Vanderhaeghen, 2010). Neural induction, the first step in neural differentiation of mESCs, requires active FGF signaling (Ying et al., 2003) and inhibition of the BMP/TGF-beta pathway (Chambers et al., 2009). Subsequent regional identity and lineage-guided differentiation are further regulated by the presence or absence of various morphogens or transcription factors (Lee et al., 2000; Wichterle et al., 2002; Andersson et al., 2006; Martinat et al., 2006). However, it is unknown whether mechanisms additional to growth factors and transcription regulators direct the differentiation of mESCs into neural lineages.\n\nEffective means for perturbing a complex biological system are key to gaining new insights into the underlying molecular and cellular mechanisms. Small organic molecules have proven to be invaluable tools for probing biological mechanisms, owing to their versatile nature and ease of application and removal from the system under study (Stockwell, 2004; Zon and Peterson, 2005). These features also make bioactive small molecules highly attractive for therapeutic applications. One critical challenge in small molecule discovery is that the chemical space is infinite, thereby requiring high throughput screening for speed and bioassays that are of sufficient specificity and sensitivity to distinguish active small molecules from background noise.\n\nHere we report an imaging-based screen of \u223c2000 bioactive compounds in mESC monolayer cultures labeled with the anti-tyrosine hydroxylase (TH) antibody (a marker for dopaminergic, noradrenergic, and adrenergic neurons). We identified small molecules that increased the appearance of TH+ neurons in the assay, including those with known neurotrophic activity and those that are functionally novel. Notably, we show that the anti-parasitic compound selamectin, with reported activity on invertebrate glutamate-gated chloride channels, increased not only TH+ neurons, but also multiple other neural types including the serotonergic (5-HT), GABAergic, and Islet+ motor neurons as well as Olig2+ oligodendrocytes. We further reveal, through pharmacology, genetics, single-cell electrophysiological recordings and clonal analyses, that selamectin acts by enhancing GABAA receptor signaling, increasing the expression of proneural and lineage-specific transcription factors, and promoting cell cycle exit and differentiation of neural progenitors. We also demonstrate that selamectin can increase neuronal differentiation in human ESCs and induced pluripotent stem cells (iPSCs) as well as in vivo in the developing zebrafish.\n\n## Results\n\n### High throughput chemical screen\n\nIn order to apply chemistry to probe the basic biology of neural differentiation from pluripotent stem cells (PSCs), we designed a high content screen to isolate small molecules that can increase the total number of TH+ neurons derived from mESC monolayer cultures. The system was chosen for several reasons: First, the mESC culture system is an established model for understanding neural development, with much insight gained in recent years (Okano and Temple, 2009; Gaspard and Vanderhaeghen, 2010). Second, mESCs can be cultured in large quantities and in multi-well plates in a high throughput manner. Finally, our adaptation of the mESC monolayer culture and differentiation method (Ying and Smith, 2003) showed that a relatively low and consistent number of TH+ neurons were detected in the culture system (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig1-v1.jpg)\n\n**Figure 1.:** (A) Scheme of the three-stage mESC neuronal differentiation-based chemical screening. (B) E14 mESC cultures express neural progenitor makers (Sox2, Lmx1A, and Nestin) after 7-day stage one culture. 46C mESC cultures, in which GFP is driven by the sox1 promoter, are GFP positive after 7-day stage one culture. (C) The quantification analysis of TH+ neurons among total cells using the INCell Developer software. (D) Summary of coefficient of variation (C.V.) of the DMSO control. (E) Representative images of immunostaining in control (left, treated with DMSO) and a hit compound (right). (F) A schematic summary of the chemical screen. Scale bar, 10 \u03bcm.\n\nA three-stage protocol was devised (\u2018Materials and methods\u2019 for details) (Figure 1A). The mESCs of both E14 and 46C lines (Ying and Smith, 2003) were used, the latter of which expresses GFP reporter under the control of sox1 promoter. During stage one, undifferentiated mESCs were cultured on a gelatin-coated surface and in the media without LIF, resulting in neural progenitors that express Sox2, Lmx1a, Nestin, and Sox1 (Figure 1B). At stage two, neural progenitors were plated into multi-well plates and treated with chemicals for three days. Finally, chemical treatment was withdrawn and cells were cultured for additional three days before immunostaining with anti-TH antibody (Stage three).\n\nThis protocol was further subjected to automation at multiple steps, including cell dispensing into 96-well plate using Thermo Matrix Well Plate, compound distribution into wells using Biomek FXP Laboratory Automation Workstation, immunostaining using Thermo Matrix PlateMate Plus, image capture using GE INCell 1000/2000, and image quantification using INCell Developer software (\u2018Materials and methods\u2019 for details). We then screened a library containing 2080 biologically active and structurally diverse compounds, including many FDA approved and currently marketed drugs. Compounds were screened at a final concentration of 1 \u03bcM in a volume of 120 \u03bcl per well containing 0.67% DMSO (vol/vol). After automated immunostaining, image acquisition, and image analysis, the percentage of TH+ cells in each well was calculated (Figure 1C). We did not use actual cell count (as cells in the well are not well separated, making \u2018cell count\u2019 inaccurate); instead, we calculated the area of each segmented target. The percentage of TH signal in each well was expressed as a ratio of TH-covered area over DNA-covered area. The final readout was calculated as fold change compared to the DMSO-treated control. The cut-off for selecting primary hits was set as fold change > mean + 3 S.D. relative to DMSO control, which is a rather stringent selection criteria based on previous studies (Borowiak et al., 2009).\n\nTo assess assay performance, the coefficient of variation (C.V.) of DMSO control was calculated for each of the twenty-six 96-well plates screened, and all C.V.s but one were smaller than 20%, suggesting an acceptable variation during this cell-based screen (Figure 1D). Out of 2080 chemicals screened, 26 led to a fold change of TH+ cells larger than mean + 3 S.D. (1.16%) (Figure 1E for an example), and 20 out of the 26 were neither cytotoxic nor auto-fluorescent (Figure 1F).\n\nAfter two rounds of validation, two compounds were selected as hits, yielding an overall hit rate of 0.09%. One identified molecule is Dihydrodeoxygedunin (DOG), which is a natural product with known neurotrophic activity via activating the TrkB receptor and its downstream signaling cascades (Jang et al., 2010a). Both DOG and 7,8-dihydroxyflavone (DHF, another selective TrkB agonist [Jang et al., 2010b]) increased TH+ cells in mESC cultures, albeit modestly (Figure 2). This data suggest that our screen is capable of identifying compounds with neuronal promoting activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig2-v1.jpg)\n\n**Figure 2.:** (A) Structure of DHF and DOG. (B) DHF and DOG increase TH% in mESCs (t test, p<0.05, n = 4).\n\n### Selamectin increases the differentiation of multiple neural lineages from mESCs\n\nThe other hit from our screen is selamectin, whose role in promoting ESC differentiation into TH+ neurons is novel, and was selected for further study. We first determined whether selamectin-induced increase of TH+ neurons is selective for these subtypes by immunocytochemistry with the pan-neuronal marker NeuN. Treatment with selamectin increased the percentage of total neurons, compared to the DMSO-treated control (Figure 3A\u2013B). This result suggests that the effect of selamectin is not specific to TH+ neuronal subtypes. Further analysis showed that selamectin also significantly increased the production of 5-HT neurons (Figure 3C), GABAergic neurons (Figure 3D), and Islet+ motor neurons (Figure 3E). The increase of 5-HT neurons was remarkably high (\u223csevenfold), suggesting that selamectin might have a preferential activity for inducing 5-HT neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative images of TH and NeuN staining in control (DMSO) and selamectin-treated cultures. (B) Quantification shows increased production of both TH+ and total neurons by selamectin (t-test, n = 4, p<0.001). (C\u2013F) Selamectin treatment also increases the production of 5-HT neurons (C), GABAergic neurons (D), islet+ motor neurons (E), and Olig2+ oligodendocyte precursors (F) (t-test, n = 4, *p<0.05, **p<0.01, ***p<0.001).\n\nSince neuronal differentiation precedes that of gliogenesis in the vertebrate central nervous system (Alvarez-Buylla et al., 2001; Mehler, 2002), we wondered whether the increased neuronal production by selamectin is at a cost of later-born glial cells. As our culturing protocol largely favors the differentiation of neurons, we were able to observe only a small numbers of Oligo2+ cells at a much later stage (Day 18), suggesting that they were likely to be oligodendrocytes or their precursors. After treatment with selamectin, the percentage of Oligo2+ cells also increased compared with the DMSO-treated control (Figure 3F), suggesting that the increase of neuronal production is not at the expense of glial production. Taken together, selamectin appears capable of promoting mESC differentiation into both neuronal and oligodendrocyte lineages.\n\n### Dose response and time course of selamectin action\n\nTo determine the dose response and time course of selamectin action, we tested a wide range of selamectin concentrations (from 32 nM to 500 nM). The result showed that selamectin functions in a dose-dependent manner with an effector concentration for half-maximum response EC50 = 293 nM (Figure 4A). When the concentration of selamectin was higher than 500 nM, it became toxic to cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig4-v1.jpg)\n\n**Figure 4.:** (A) Dose response curve of selamectin (based on TH immunostaining). Cells were treated from Day 8 to Day 11. Selamectin is toxic above 500 nM. The EC50 value and curve fitting were performed with GraphPad Prism using a Sigmoidal dose-response (variable slope). Data are presented as mean \u00b1 S.D., n = 4. (B) Time course of selamectin\u2019s action. Only cells treated with selamectin from Day 7 to Day 10 show significant increase of TH+ neurons (t-test, n = 4).\n\nImportantly, analysis of the temporal response showed that when cells were treated with selamectin at different stages, its effect was quite different. Treatment during Stage one (from Day 4 to Day 7, mainly composed of undifferentiated ESCs) suppressed cell proliferation, resulting in insufficient number of cells on Day 7 for further evaluation. Treatment during Stage two (from Day 7 to Day 10, mainly composed of neural progenitors) led to a significant increase of neurons evaluated on Day 13 (Figure 4B). Shortening the treatment regimen to one day (i.e., from Day 7 to Day 8) or treatment during Stage three (from Day 10 to Day 13, mainly composed of differentiating neurons) showed no significant effect of selamectin (Figure 4B). These results suggest that selamectin\u2019s proneurogenic activity is likely due to its action on mESC-derived neural progenitors.\n\n### Pharmacological evidence points to an action of selamectin on GABAA receptors\n\nSelamectin belongs to a chemical family of macrocyclic lactones used to treat nematode infections that cause onchocerciasis (also known as the river blindness) in humans (Goa et al., 1991) and as topical or oral parasiticide and antihelminthic on dogs and cats (Bishop et al., 2000). This class of drugs disables parasites by displacing glutamate in their muscle synapses through acting on the glutamate-gated chloride (GluCl) channels (Bloomquist, 2003), which have no orthologues in vertebrates. A better-studied example of this family is avermectin (for the structures of selamectin and avermectin, Figure 5A), which, when tested for its activity in promoting neuronal differentiation, showed a less potent effect than selamectin with a marginal significance achieved at 0.25 \u03bcM (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig5-v1.jpg)\n\n**Figure 5.:** (A) Selamectin and avermectin belong to a chemical family of macrocyclic lactones and have the same structural backbone. (B) Avermectin has less potent proneurogenic activity than selamectin. Only 250 nM avermectin shows a significant effect, which was much less potent compared to that of 250 nM selamectin (t-test, n = 4, p=0.034 for Avermetin vs p=0.002 for selamectin). (C) Taurine, the most abundant endogenous ligand for glycine receptors during neocortical development has no proneurogenic activity in mESC cultures. (D) Muscimol, a GABAA receptor agonist, has a significant proneurogenic activity (t-test, n = 4, p<0.001). (E) Chlordiazepoxide (CDZ), a positive allosteric modulator of GABAA receptor, also has a significant proneurogenic activity (t-test, p<0.05), but there was no obvious additive effect when cells were treated with both selamectin and CDZ (t-test, p=0.480). (F) The GABAA receptor antagonist bicucullin and non-competitive blockers picrotoxin and pentylenetetrazol alone had no effect on neuronal production (white columns, control group were normalized to fold change = 1, displayed as the red dot line). However, when tested together with selamectin, the effect of selamectin was blocked (gray columns). In contrast, the glycine receptor inhibitor strychnine does not block the effect of selamectin. Final concentration: Bicuculline (Bicu) = 100 \u03bcM; Picrotoxin (PTX) = 500 \u03bcM; Pentylenetetrazol (PTZ) = 5 mM; Strychnine (STY) = 100 \u03bcM; Selamectin (Sela) = 0.3 \u03bcM; Muscimol (Musci) = 10 \u03bcM (t-test, n = 4).\n\nSince GluCl channels are not found in vertebrates, selamectin must act on other protein targets in mESC cultures. Based on gene structure and phylogenetic analyses, vertebrate glycine channels are thought to be orthologous to the invertebrate GluCl channels (Vassilatis et al., 1997). It has been reported that ivermectin (an avermectin derivative) can act as an agonist of the glycine receptor (Shan et al., 2001). Moreover, non-synaptically released taurine can activate the endogenous glycine receptor during neocortical development (Flint et al., 1998). Therefore, we first tested whether taurine, the most abundant endogenous ligand for glycine receptors during neocortical development (Agrawal et al., 1971), the deficiency of which affects cortical development in kittens (Palackal et al., 1986), has the same proneurogenic effect as selamectin. We treated cells from Day 7 to Day 11 with a wide range of taurine concentrations, none of which, however, showed any effect in increasing TH% among total cells (Figure 5C). This result suggests that selamectin does not act through glycine receptors to promote neuronal differentiation from mESCs.\n\nNext we turned to another potential candidate, the GABAA receptor, since some reports in the literature suggest that avermectin can bind to the GABAA receptor in rat brain membranes or cultured cerebellar neuronal assays (Pong et al., 1982; Huang and Casida, 1997), and avermectin exhibits an anticonvulsant action in a mouse seizure model (Dawson et al., 2000). We first tested the effect of the GABAA receptor agonist Muscimol at a wide range of concentrations (from 1 \u03bcM to 100 \u03bcM). Remarkably, all of them had proneurogenic activity like selamectin (Figure 5D). We also tested the effect of Chlordiazepoxide (CDZ), a positive allosteric modulator of the GABAA receptor. When cells were treated alone with 10 \u03bcM Chlordiazepoxide or 0.3 \u03bcM Selamectin, significant proneurogenic activity was observed as compared to the DMSO control (p<0.05, t-test, Figure 5E). When cells were treated with both Selamectin (0.3 \u03bcM) and CDZ (10 \u03bcM), no significant additive effect was observed (p=0.480, t-test, Figure 5F), suggesting a lack of synergistic or cooperative action between these two compounds.\n\nTo determine whether the proneurogenic activity of selamectin is indeed mediated through the GABAA receptor, we asked whether it could be blocked by bicuculline (Bicu, GABAA receptor antagonist), picrotoxin (PTX), or pentylenetetrazol (PTZ) (non-competitive blockers of the GABAA receptor). When cells were treated alone with these chemicals, no effect on baseline differentiation of TH+ neurons was observed, suggesting that at this stage of the mESC culture, GABA might not be released in sufficient quantities to affect neuronal differentiation (Figure 5F, white columns, all control were normalized to fold change = 1, displayed as the red dotted line). When cells were treated with selamectin together with these antagonists or blockers (500 \u03bcM PTX, 5 mM PTZ, or 100 \u03bcM Bicu), the effect of selamectin was blocked, leading to no significant difference between the treated group and control (Figure 5F, gray columns). In contrast, the glycine receptor inhibitor strychnine (STY, 100 \u03bcM) failed to block the effect of selamectin (Figure 5F). Together, these pharmacological data suggest that selamectin promotes multi-lineage neuronal differentiation from mESCs through the activation of GABAA receptor signaling.\n\n### The \u03b32 subunit of GABAA receptor is required for the proneurogenic activity of selamectin\n\nTo determine whether GABAA receptor is required genetically to mediate the effects of selamectin, we used an EsiRNA approach to perturb the activity of genes encoding various GABAA receptor subunits. The mammalian CNS expresses nineteen GABAA receptor subunits (\u03b11-6, \u03b21-3, \u03b31-3, \u03b4, \u03b5, \u03b8, \u03c0, \u03c11\u22123), the combinatorial co-assembly of which enables a potentially enormous molecular and functional heterogeneity of GABAA receptor subtypes (Farrant and Nusser, 2005). Through analyzing the expression profiles of all nineteen receptor subunits in mESC cultures, six genes were identified to display high expression level in mESC-derived neural progenitors (data not shown) and were therefore chosen for esiRNA knockdown. Transfection of gene-specific esiRNAs on Day 6/9 and qRT-PCR analysis on Day 8/11 (Figure 6A) showed that esiRNAs targeting the \u03b11 (encoded by the gabara1 gene), \u03b22 (gabarb2 gene), \u03b32 (gabarg2), and \u03c0 (gabarp gene) subunits were highly effective in reducing the transcript levels of respective genes (Figure 6B). Furthermore, treatment with the esiRNA targeting gabarg2 abolished the effect of selamectin in inducing NeuN+ and TH+ neurons (Figure 6C\u2013H). Treatment with the esiRNAs targeting gabara1, gabarb2, and gabarp genes did not noticeably block the effect of selamectin, suggesting that either the reduction of transcript levels is not sufficient to abrogate their gene activity or these subunits do not mediate the effect of selamectin. Together, these results provide genetic evidence that selamectin acts through the \u03b32-containing GABAA receptor to promote neuronal differentiation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig6-v1.jpg)\n\n**Figure 6.:** (A) Scheme of the EsiRNA transfection and cell harvest for qRT-PCR. (B) qRT-PCR shows fold change of the expression of different GABAA receptor subunits after EsiRNA transfection. ***p<0.001 vs non-transfection control, $$$p<0.001 vs GFP RNA transfection control. (C) Scheme of the EsiRNA knockdown experiment to identify the GABAA receptor subunit that mediates selamectin\u2019s activity. (D\u2013F) Representative images of NeuN and TH staining in DMSO and selamectin-treated cultures of non-transfected (D), \u03b11 EsiRNA transfected (E), and \u03b32 EsiRNA transfected (F). (G) Quantification shows knockdown of \u03b32 subunit but not \u03b11\u03b21 and \u03c0 subunits abolishes the effect of selamectin in increasing neurons (n = 4, **p<0.01, ***p<0.001 vs DMSO). (H) Quantification shows knockdown of \u03b32 subunit but not \u03b11\u03b21 and \u03c0 subunits abolishes the effect of selamectin in increasing TH+ neurons neurons (n = 4, **p<0.01, ***p<0.001 vs DMSO). Scale bar, 100 \u03bcm.\n\n### A subset of neural rosette cells in mESC cultures respond to GABA and selamectin\n\nOpposite to its inhibitory roles in adult neurons, GABA signaling mediated by the activation of GABAA receptors can depolarize cells in the ventricular zone of the rat embryonic cortex (LoTurco et al., 1995), neural progenitor/stem cells in the postnatal mouse sub-ventricular zone (Liu et al., 2005) or sub-granular zone (Tozuka et al., 2005), due to the elevated internal Cl\u2212 concentrations in progenitor cells and young neurons (Owens and Kriegstein, 2002; Spitzer, 2006; Ben-Ari et al., 2007; Ge et al., 2007). Based on this information, we sought to identify the cell types in mESC cultures that might be responsive to GABA and selamectin by performing single-cell electrophysiological recordings of neural activity.\n\nThe mESC cell line 46C that expresses GFP driven by Sox1 promoter was used. Based on the observed temporal effect of selamectin in mESC cultures, we focused our attention on neural rosettes, a functionally distinct type of neural stem cells suggested to represent the earliest NSC stage in vivo (Elkabetz et al., 2008). Neural rosettes are easily recognizable because of their characteristic bipolar morphology and radial floral-like arrangement. For the majority of neural rosettes, we also verified their GFP signals (Figure 7A). In addition, we examined some non-rosette cells with the morphology of young neurons (Figure 7E). For a majority of cells recorded, we tested both GABA and selamectin-induced currents.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig7-v1.jpg)\n\n**Figure 7.:** (A) Bright field (BF) image (left) and green fluorescent protein (GFP) signal (right) of neural rosette cells. Majority of the cells in the view are neural rosette cells, and one of them with typical morphology is indicated by a red arrow. (B) An example of reduction of GABA (500 \u03bcM) induced currents by bicuculline (BICC, 200 \u03bcM). (C) Upper trace, an example of neural rosette cell displaying GABA (100 \u03bcM) induced currents that also displayed selamectin induced current. Lower trace, an example of neural rosette cell displaying GABA (100 \u03bcM) induced currents that did not display selamectin induced current. 16 \u03bcM Selamectin solution contains 0.4% DMSO, therefore 0.4% DMSO containing bath solution was used as the control solution as indicated in the figure. (D) A pie chart of the numbers of the four groups of neural rosette cell based on whether they displayed GABA and selamectin induced currents. The four groups are: 1) GABA+; Sela+, 2) GABA+; Sela\u2212, 3) GABA\u2212; Sela+, 4) GABA\u2212; Sela\u2212. The number of the cells in each group is indicated in the figure, except the group GABA\u2212; Sela+, which is zero. (E) Bright field (BF) image (left) and green fluorescent protein (GFP) signal (right) of non-rosette cells. One cell with typical young neuron morphology is indicated by a red arrow. (F) Example of the inhibition of GABA (100 \u03bcM) induced currents by bicuculline (BICC, 100 \u03bcM). (G) Upper trace, an example of non-rosette cell displaying GABA (4 mM) induced current that also displayed salemectin (8 \u03bcM) induced current. Lower trace, an example of non-rosette cell displaying GABA (400 \u03bcM) responsive induced current that did not display salemectin (16 \u03bcM) induced current. (H) A pie chart of the numbers of four groups of non-rosette cells based on whether they displayed GABA and selamectin induced currents. The four groups are: 1) GABA+; Sela+, 2) GABA+; Sela\u2212, 3) GABA\u2212; Sela+, 4) GABA\u2212; Sela\u2212. The number of the cells in each group is indicated in the figure, except the group GABA\u2212; Sela+, which is zero. The application time courses of the control solution (BATH), GABA, bicuculline (BICC) and selamectin (Sela) are indicated by horizontal bars in the figure. The membrane potential was holding at \u221270 mV in all recordings. The scales for time (horizontal) and currents (vertical) are indicated for each recording in the figure.\n\nBoth neural rosettes and non-rosette cells displayed similar passive membrane properties. For neural rosettes, we observed membrane capacitance Cm = 9.4 \u00b1 12.5 pF (mean \u00b1 S.D., n = 106), input resistance Rm = 772.5 \u00b1 1037.1 M\u03a9 (mean \u00b1 S.D., n = 106), and resting membrane potential ERev = \u2212 20.9 \u00b1 8.3 mV (mean \u00b1 S.D., n = 71). For non-rosette cells, we observed membrane capacitance Cm = 9.5 \u00b1 6.2 pF (mean \u00b1 S.D., n = 74), input resistance Rm = 1.2 \u00b1 1.2 G\u03a9 (mean \u00b1 S.D., n = 74), and resting membrane potential ERev = \u2212 22.4 \u00b1 9.2 mV (mean \u00b1 S.D., n = 63). The resting membrane potentials of both groups of cells are similar to what has been observed in neural progenitors using similar internal and external recording solutions, either in acute slices (Wang et al., 2003) or in vitro (Stewart et al., 2002).\n\nTo test whether neural progenitors in neural rosettes respond to GABA, we measured the whole cell currents upon GABA applications when membrane potentials of the cells were held at \u221270 mV. In approximately 21% of the cells (24 out of 111), applications of GABA induced inward currents. The GABA induced currents are sensitive to bicucculin (Bicu, 200 \u03bcM), but in some cases the application of 200 \u03bcM Bicu did not completely block the GABA induced currents (Figure 7B). To determine whether selamectin regulates membrane electrophysiological properties in neural rosette cells, we analyzed responses of the whole-cell currents to the applications of selamectin. Selamectin indeed induced inward currents in neural rosette cells (Figure 7C), but the response was heterogeneous. We grouped the cells into four groups based on whether they displayed detectable GABA and selamectin-induced currents. They were GABA+;Sela+ (the cells that displayed both GABA and selamectin induced currents), GABA+;Sela\u2212 (the cells that displayed only GABA induced currents), GABA\u2212;Sela+ (the cells that displayed only selamectin induced currents), and GABA\u2212;Sela\u2212 (the cells that displayed neither GABA nor selamectin induced currents). The numbers of cells belonging to each group were shown in Figure 7D. Among the 77 recorded cells, the largest group (43 cells, 64.2%) was those that did not display induced currents by either GABA or selamectin. The second largest group (14 cells, 20.9%) is those that displayed induced currents only by GABA. The third group (10 cells, 14.9%) was those that displayed both GABA and selamectin induced currents. No cells displayed only selamectin-induced currents.\n\nSlightly higher percentage (27 out of 73 cells, 37%) of non-rosette cells (Figure 7E) displayed GABA induced currents, which could be blocked by Bicu (Figure 7F). Examples of the cells that displayed (upper trace) or did not display (lower trace) selamectin-induced currents were shown in Figure 7G and their frequency distribution was shown in Figure 7H. Out of 44 non-rosette cells that we tested both GABA and selamectin induced currents, the largest group (20 cells, 45.5%) was the one that displayed only GABA-induced currents. The second group (17 cells, 38.6%) was the one that displayed neither GABA nor selamectin induced currents. The third group (7 cells, 15.9%) displayed both GABA- and selamectin-induced currents. Similar to neural rosette cells, no non-rosette cells displayed only selamectin-induced currents. Taken together, our results uncover considerable heterogeneity in the response of neural rosettes and young neurons to GABA or selamectin and indicate that a subset of GABA-responsive neural rosette cells in mESC cultures respond to selamectin.\n\n### Selamectin decreases proliferation through increased expression of proneural and lineage-associated transcription factors\n\nAlthough GABA-induced depolarization in postnatal neural progenitors causes reduced proliferation, its effect on neurogenesis has been controversial. While one study shows that GABA could promote neuronal differentiation in adult hippocampal progenitor cells (Tozuka et al., 2005), another found an inhibitory role on neuronal production in the postnatal sub-ventricular zone (Liu et al., 2005). To further probe the mechanisms by which selamectin promotes neuronal differentiation, we performed BrdU incorporation experiment in mESC cultures on Day 11 after the treatment with selamectin for 4 days. Significantly fewer BrdU+ cells were detected in selamectin-treated groups, suggesting decreased proliferation (Figure 8A\u2013B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig8-v1.jpg)\n\n**Figure 8.:** (A) Representative fields show the BrdU incorporation on Day 11 after cells were treated with selamectin (right panel) or DMSO (left panel) for 4 days. Significantly fewer BrdU+ cells were detected in the selamectin-treated group. (B) Quantification as the percentage of BrdU+ cells among total cells (t-test, n = 4, p=0.008). (C) qRT-PCR detects increased expression of proneural (Ascl1, NeurD) and lineage-associated transcription factors (Lmx1a, Lmx1b and Nurr1) in selamectin-treated group. \u03b2-actin was used as an input control and data was normalized to expression level on Day 8. (D) Representative fields show the TUNEL staining on Day 14 in cell cultures treated with DMSO or selamectin, with NeuN staining as a control to confirm selamectin efficacy in this experiment. (E) Quantification shows significant difference in NeuN% (p<0.001) and no significant difference in TUNEL% (p=0.058) (t-test, n = 4). Scale bar, 10 \u03bcm.\n\nSince electrical activity in neural progenitor cells can lead to neurotransmitter re-specification through regulating transcription factor expression (Spitzer, 2012), we asked whether selamectin exerts an effect on the expression of transcription factors that regulate neuronal specification. At Day 8, cells were sampled for qRT-PCR while the rest were split into two groups for further treatment with either DMSO or selamectin. The gene expression levels were examined by qRT-PCR on Day 11 and the results were compared to that of Day 8. We detected an increased expression of the proneural genes ascl1 and neurod, as well as the DA lineage- associated genes lmx1a, lmx1b, and nurr1 in Day 11 culture compared to Day 8 culture, and such increase was further enhanced by selamectin (Figure 8C). These results are consistent with the idea that selamectin activates GABAA receptor and enhances the electrical activity of neural progenitors, thereby increasing the expression of proneural and lineage-associated transcription factors, leading to increased neuronal differentiation.\n\nWe also tested whether decreased cell death (or improved neuronal survival) might also contribute to increased neurons detected in selamectin-treated mESC cultures. Cells were treated with selamectin or DMSO from Day 8 to Day 11 and cultured for 4 more days. On Day 14, TUNEL labeling was carried out. The result showed no significant difference in cell death between control and selamectin-treated cultures (Figure 8D\u2013E), suggesting that alteration in cell death contributes little to selamectin\u2019s pro-neurogenic activity.\n\n### Clonal analysis of mESC-derived neural progenitor cells reveals that selamectin promotes progenitor cell cycle exit toward terminal differentiation\n\nSelamectin-induced decrease of proliferation in mESC cultures could be due to either prolonged cell cycle length or increased cell cycle exit. To further probe the underlying cellular mechanisms, we carried out clonal analysis. Day 6 mESC cultures were transfected with pCAG-GFP that resulted in sparse labeling of clonally related cells (Figure 9A). Cultured cells were treated with DMSO or 0.3 \u03bcM selamectin from Day 8 to Day 11. Time-lapse live imaging was performed on sparsely labeled neural progenitors from Day 8 to Day 14, followed by fixation and immunostaining (Figure 9A). We found that the cell cycle length exhibited no significant difference between DMSO- (25.61 \u00b1 6.99 hr, n = 31) and selamectin-treated cells (24 \u00b1 6.53 hr, n = 28) (Figure 9B, left panel, Videos 1, 2). We also quantified the number of cells within single clones and detected no difference between DMSO- (13.46 \u00b1 4.14 cells per clone, n = 56 clones) and selamectin- (15.15 \u00b1 4.67 per clone, n = 59 clones) treated groups (Figure 9B, right panel). The results suggest that selamectin does not change the cell cycle length or the proliferation rate of mESC-derived neural progenitors.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig9-v1.jpg)\n\n**Figure 9.:** (A) Scheme of clonal culture analyses. (B) Quantification of cell cycle length and number of cells within single clones. (C\u2013E) Representative images of double immunostaining of GFP with NeuN (C), TH (D), or the proliferation marker Ki67 (E) within single clones. (F) Quantification of the percentage of NeuN+ (left, DMSO n = 49, selamectin n = 51), TH+ (middle, DMSO n = 6, selamectin n = 7), and Ki67+ cells (right, DMSO n = 46, selamectin n = 41) within single clones. ***p<0.001 vs DMSO). Scale bar, 100 \u03bcm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/00508/elife-00508-media1.avi.jpg)\n\n**Video 1.:** Time-lapse of a single GFP labeled neural progenitor derived from mESC. The progenitors were treated with DMSO from Day 8 to Day 11. The interval between each frame is 2 hr.\n\n![Video 2.](https://cdn.elifesciences.org/articles/00508/elife-00508-media2.avi.jpg)\n\n**Video 2.:** Time-lapse of a single GFP labeled neural progenitor derived from mESC. The progenitors were treated with 0.3 \u03bcM Selamectin from Day 8 to Day 11. The interval between each frame is 2 hr.\n\nTo determine the cell fates within single clones, we performed co-immunostaining of GFP and NeuN (or TH) as well as the proliferation marker Ki67 (Figure 9C\u2013E). Clonal quantification of cell fates showed a significant increase of NeuN+ (or TH+) neurons and a concurrent decrease of Ki67+ progenitor cells within single clones treated with selamectin (Figure 9F). Taken together, these findings suggest that selamectin acts to promote progenitor cell cycle exit toward terminal differentiation.\n\n### Selamectin promotes the differentiation of multiple neuronal lineages from human pluripotent stem cells (hPSCs)\n\nIn order to test the effects of selamectin on neuronal differentiation from hPSCs, we devised a three-stage neuronal differentiation protocol and used the H9 line of hESC (Thomson et al., 1998) and a human induced pluripotent stem cell line (hiPSC) (Kreitzer et al., 2013) (Figure 10A). In agreement with the results from mESCs, treatment with selamectin (0.25 \u03bcM, 0.5 \u03bcM, 0.75 \u03bcM) significantly increased the percentage of total neurons, TH and 5-HT neurons compared to the DMSO-treated control in both H9 hESCs (Figure 10B\u2013C) and hiPSCs (Figure 10D\u2013E).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig10-v1.jpg)\n\n**Figure 10.:** (A) Scheme of the three-stage neuronal differentiation protocol for H9 hESCs and hiPSCs. (B) Representative images of NeuN and TH staining in control (DMSO) and selamectin-treated cultures of H9 hESCs. (C) Quantification shows increased production of both TH+ and total neurons by selamectin in H9 hESCs. (n = 4, *p<0.05, **p<0.01, ***p<0.001 vs DMSO). (D) Representative images of NeuN and TH staining in control (DMSO) and selamectin-treated cultures of hiPSCs. (E) Quantification shows increased production of both TH+ and total neurons by selamectin in hiPSCs. (n = 4, *p<0.05, **p<0.01, ***p<0.001 vs DMSO). Scale bar, 100 \u03bcm.\n\n### Selamectin promotes neurogenesis in vivo in the developing zebrafish brain\n\nTo determine whether selamectin has a pro-neurogenic activity in developing embryos in vivo, we tested its effect on zebrafish. A transgenic line carrying the HuC:GFP transgene (Park et al., 2000) was used. HuC/ELAVL3 is a neuron-specific RNA binding protein that is expressed in most differentiating neurons. We treated embryos with selamectin starting at \u223c75% epiboly (8 hr post fertilization, hpf), when the neuro-ectodermal fate has been determined. The treatment of selamectin lasted until 22 hpf, when nascent neurons began to emerge but not yet became too numerous to quantify (Figure 11A). We noted an obvious increase of the overall HuC-GFP+ neurons in the selamectin-treated embryos as compared to the DMSO control (Figure 11B). Quantification of the midbrain cluster (boxed) showed a highly significant difference between the selamectin-treated and the control (Figure 11C, n =20, t-test, p<0.001).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/00508/elife-00508-fig11-v1.jpg)\n\n**Figure 11.:** (A) Scheme of the selamectin treatment on HuC:GFP transgenic zebrafish embryos. (B) Representative images show that selamectin (2 \u03bcM, 14 hr from 8 hpf to 22 hpf) increases Huc-GFP signal. (C) Quantification of the midbrain cluster (boxed) shows a significant difference between two groups (t-test, n = 20, p<0.001). (D) Representative images show increased DA neurons in selamectin-treated embryos (2 \u03bcM for 40 hr from 8 hpf to 48 hpf). (E) Quantification of the ventral forebrain DA neurons shows a significant difference between two groups (t-test, n = 10, p<0.001). (F) A schematic model shows the effect of selamectin on neuronal differentiation from mESCs.\n\nWe also examined the effect of selamectin on DA neurons, by treating embryos with selamectin from 8 hpf to 48 hpf followed by immunostaining with the anti-TH antibody (Figure 11A). The number of ventral forebrain DA neurons was significantly increased in selamectin-treated embryos as compared to the DMSO control (Figure 11D\u2013E). These results suggest that selamectin has pro-neurogenic activity in vivo.\n\n## Discussion\n\nIn this study, we have undertaken a chemical genetic approach to identify new mechanisms that regulate neuronal differentiation from PSCs. Three significant advancements are reported here: First, we have established an imaging-based high content small molecule screening method for identifying chemicals that increase the production of TH+ DA neurons from mESCs. We have further shown that compounds identified through mESC-based screening are applicable to hPSCs. Second, It has been previously reported that mild electrical stimulation influences mESCs to assume a neuronal fate (Yamada et al., 2007). Through the identification of selamectin, we reveal a novel mechanism underlying the activity-dependent regulation of neuronal differentiation from PSCs. Third, by employing single-cell electrophysiological recordings of mESC-derived neural rosette cells, we uncover for the first time the heterogeneity of neural progenitor responses to GABA and selamectin, which has provided a plausible explanation for paradoxical observations of GABA\u2019s effects on in vivo neurogenesis (Liu et al., 2005; Tozuka et al., 2005; Song et al., 2012).\n\nCompared to previous high content chemical screening for neuronal enhancers in embryonic stem/progenitor cultures (Ding et al., 2003; Saxe et al., 2007; Desbordes et al., 2008; Zhou et al., 2010), the advances of our method are the following: First, Instead of using culture systems that require either feeder cells or neurosphere formation, our assay uses the monolayer differentiation method (Ying and Smith, 2003), thus is simple and easy to carry out. Second, the use of monolayer differentiation also renders the background noise fairly low, with baseline TH+ cells of 0.5\u20133% in control (DMSO) conditions. Third, compared to previous screening that uses either pluripotency markers (e.g., Oct4) or general neuronal differentiation markers (e.g., a-tubulin or TuJ1), we used the neuronal subtype specific marker TH. The small number of TH+ cells makes the quantification convenient and accurate, thereby significantly increasing the sensitivity of our assay. Finally, our assay is the first that offers the prospect for identifying compounds that regulate neuronal subtype differentiation, since previous assays use only general pluripotency or neuronal markers.\n\nThis screening platform has enabled us to identify selamectin and show that it increases the production of multiple neuronal lineage types including DA, 5-HT, GABA, and Islet+ neurons as well as olig2+ oligodendrocytes. Selamectin is known to target invertebrate glutamate-guided chloride channels that have no orthologues in vertebrates. Our pharmacological, genetic and clonal studies provide first evidence that selamectin targets the \u03b32 subunit-containing GABAA receptor to promote progenitor cell cycle exit toward terminal differentiation. Single-cell electrophysiological recordings further show that a subset of neural rosette cells responds to GABA and selamectin via functional GABAA receptors. The blocking of GABA-induced current by bicuculline (the GABAA receptor antagonist), however, is incomplete, suggesting that GABA receptors other than GABAA are also expressed in neural rosette progenitors. Expression of functional GABAB receptors has been demonstrated in ES cells (Schwirtlich et al., 2010). Interestingly, many recorded neural rosette cells display very low membrane input resistance (less than 100 M\u03a9), and high membrane capacitances (up to 50 pF). Furthermore, applications of 100 \u03bcM meclofenamic acid (MFA) (Liu et al., 2005) could reversibly reduce the inward currents when the membrane potential of the cells are held at \u221270 mV. These observations suggest that neural rosette cells may be electrically connected, similar to neural progenitor cells in the ventricular zone of embryonic brains (LoTurco et al., 1995) and those in the sub-ventricular zone of adult brains (Liu et al., 2005). Thus, it is possible that functional GABA receptors expressed in one cell may render other electrically connected cells to display apparent GABA-induced currents.\n\nOur data reveal that selamectin increases the expression of proneural and lineage-specific transcription factors while reducing proliferation in mESC cultures. Clonal analysis and time-lapse live imaging further uncover the role of selamectin (hence, likely GABA) in promoting progenitor cell cycle exit toward terminal differentiation. These molecular and cellular findings, together with the pharmacogenetic and electrophysiological studies, lead us to propose that selamectin-potentiated activation of the \u03b32-containing GABAA receptor in mESC-derived neural progenitor cells causes Cl\u2212 outflow (due to the high internal chloride levels in these progenitor cells), thereby leading to the depolarization of neural progenitors and calcium influx. This further activates proneural and lineage-specific transcription factors, which have established roles in promoting cell cycle exit toward terminal neuronal differentiation (Bertrand et al., 2002) (Figure 8F). Such neural activity-dependent regulation of transcription factor expression has been reported in developing Xenopus embryos (Demarque and Spitzer, 2010; Marek et al., 2010). Our findings suggest that this is an evolutionarily conserved phenomenon.\n\nGABA signaling influences embryonic cortical neural progenitor proliferation (Owens and Kriegstein, 2002) and regulates adult neurogenesis (Ge et al., 2007). Paradoxically, either an increase or a decrease of neurogenesis by GABA activation has been observed (Liu et al., 2005; Tozuka et al., 2005). Recently, in the context of adult neurogenesis, GABA released by local interneurons has been shown to promote the exit of adult neural stem cells from quiescence (thereby promote their proliferation) (Song et al., 2012). Our single neural rosette cell recordings, which reveal the heterogeneous responses among progenitors, provide an explanation as to why the influence of GABA signaling on neurogenesis appears cell type- and context-dependent.\n\nIt is worth pointing out that our screen of 2000 compounds was not successful in identifying chemicals that specifically increase DA neuronal production, suggesting that these compounds may be rare, and large compound libraries need to be screened in order to find them. The high throughput capability of our assay will enable such screen to be carried out, and is thus an important future direction.\n\n## Materials and methods\n\n### Cell culture and high throughput chemical screen\n\nThe mouse ESC lines E14Tg2a and 46C were used. 46C was a generous gift from Dr Austin Smith, in which GFP was knocked into the sox1 locus (Ying and Smith, 2003). mESCs were cultured in GMEM media (G5154, Sigma, St. Louis, MO) supplemented with glutamine, sodium pyruvate, 0.1 mM MEM non-essential amino acids, 10% (vol/vol) fetal bovine serum (characterized, Hyclone, Thermo Scientific, Waltham, MA), beta-mercaptoethanol, and 500\u20131000 units per ml of leukocyte inhibitory factor (ESG1107, Chemicon, Billerica, MA), on gelatinized cell culture surface without feeder cells.\n\nTo induce neuronal differentiation, the monolayer differentiation protocol developed by Ying et al. (Ying et al., 2003) was used. Briefly, E14 cells was dissociated with Trypsin-EDTA (TE) into single cells and plated onto gelatinized cell culture dish at a density of 1.0 \u00d7 104 cell/cm2 in N2B27 media. Cells were cultured in N2B27 media for 7 days, with media change every other day. On day 7, cells were dissociated with TE again and re-plated onto poly-L-ornithine-laminin coated 96-well plate in N2B27 media, at a density of 2\u223c5 \u00d7 104/cm2. Media was changed every 2 days after re-plating.\n\nFor high throughput screening, on Day 7, cells were dissociated in TE and re-suspended in fresh N2B27 media. The cell suspension was then dispensed into 96-well micro-clear imaging plates (Greiner cat.no 655956) with the WellMate liquid dispenser (Thermo Matrix), at a density of 1.5 \u00d7 104/ well. These assay plates were incubated in 37\u00b0C overnight for cell settling and adherence to the surface. On Day 8, screening compounds were dispensed into assay plates with Biomek FXP Laboratory Automation Workstation (Beckman Coulter, Brea, CA), at a final concentration of 1 \u03bcM. Chemical treatment lasted for 3 days from Day 8 to Day 11. On Day 11, chemical treatment was withdrawn via change of media. Cells were cultured in assay plates for additional 3 days until Day 14 before automated immunostaining using PlateMate Plus (Thermo Matrix) and image acquisitioning with INCell 1000 or 2000 (G.E. Healthcare, Little Chalfont, UK).\n\nThe chemical library was obtained from the UCSF SMDC, which is composed of FDA-approved drugs, bioactive compounds, and natural products (Microsource Spectrum Collection).\n\n### Immunocytochemistry\n\nPrimary antibodies for immunocytochemistry include: Rabbit-anti-TH (AB152, Millipore, Billerica, MA); Mouse-anti-NeuN, (MAB377, Millipore); mouse anti-sox2 (MAB2018, R&D); Rabbit-anti-Lmx1 (a generous gift from Dr. German, UCSF); mouse-anti-Nestin (MAB353, Chemicon); mouse-anti-islet (DSHB 39.4D5); Rabbit anti-GABA (A2052, Sigma); Rabbit-anti-Olig2 (AB9610, Millipore). After immunostaining, images were taken using the automatic system INCell 1000 or 2000 (GE). 20 field of views on three different channels (For TH, NeuN and DAPI) were taken for each well. Images were analyzed using the INCell Developer software (G.E. Healthcare). The percentage of TH in each well was expressed as a ratio. Fold change of chemical-treated well was calculated relative to the average of DMSO control wells. The percentage of other neuronal types was calculated similarly.\n\n### Pharmacology\n\nThe following pharmacological compounds were used in this study: selamectin (01503720, Microsource), avermectin (31732-100 MG, Sigma), taurine (T8691-25 G, Sigma), muscimol (M1523-5MG, Sigma), Chlordiazepoxide (C2517, Sigma), picrotoxin (R284556-50 MG, Sigma), Pentylenetetrazole (P6500-25 G, Sigma), bicuculine (14340-25 MG, Sigma), STY (Strychnine, S0532-5G, sigma). Drugs were prepared as 10 mM stock and diluted to appropriate concentrations as indicated in the text.\n\n### EsiRNA knockdown of GABAA receptor subunits\n\nThe algorithm Deqor is used to design esiRNA, which can be found at http://www.mpi-cbg.de/esiRNA/.\n\nTwo rounds of PCR were done to obtain the template for in vitro synthesis of double-stranded RNAs. cDNAs from day 3 mESC-derived neural progenitors was used as template for the first round PCR. Primers for first round PCR begin with T7 \u2018anchor\u2019 sequence: 5\u2032 GGGCGGGT 3\u2032, to which the T7 Anchor primer will anneal in the second round PCR. T7 promoter was incorporated in the primers for the second round PCR. The product from the second round PCR was used as template for in vitro transcription with T7 RNA polymerase. Annealing is done in the same program immediately after in vitro transcription: 1) 37\u00b0C, 5.5 hr; 2) 90\u00b0C, 3 min; 3) Ramp (0.1\u00b0C/s) to 70\u00b0C; 4) 70\u00b0C, 3 min; 5) Ramp (0.1\u00b0C/s) to 50\u00b0C; 6) 50\u00b0C, 3 min; 7) Ramp (0.1\u00b0C/s) to 25\u00b0C; 8) 25\u00b0C, 3 min. Double-stranded RNA was digested with Shortcut RNAse III (NEB) and purified for transfection. The EsiRNAs targeting different GABAA receptor subunits were transfected into mESC-derived neural progenitors on day 6 and day 9 using Lipofectamine 2000 Reagent (Invitrogen) following the manufacturer\u2019s protocol.\n\n### BrdU incorporation and TUNEL staining\n\nCells were labeled with 10 \u03bcM BrdU for 6 hr before immunostaining. Rat-anti-BrdU antibody (ab6326, Abcam, Cambridge, MA) was diluted 1:2000. An in situ cell death detection kit from Roche (Cat. # 12,156 792 910) was used. Staining was performed following manufacturer\u2019s instruction.\n\n### Real time RT-PCR\n\nTotal RNA was isolated using TRIzol reagent (Invitrogen) and qPCR was carried out following manufacturer\u2019s instructions (Applied Bio-systems). Primer sequences are: ascl1 (GenBank accession number NM_008553.4), forward, 5\u2032-GAAGCAGGATGGCAGCAGAT-3\u2032, reverse,5\u2032-TCGGGCTTAGGTTCAGACAC-3\u2032; neuroD1 (GenBank accession number NM_010894.2), forward, 5\u2032-AGCCACGGATCAATCTTCTC-3\u2032, reverse, 5\u2032-ACTGTACGCACAGTGGATTC-3\u2032; lmx1a (GenBank accession number NM_033652), forward, 5\u2032- ACCCCTATGGTGCTGAACCT- 3\u2032, reverse, 5\u2032- CAGCAACCCTTCACACAGTA -3\u2032; lmx1b (GenBank accession number NM_010725), forward, 5\u2032-CTGGGCCAAGAGGTTCTGTC-3\u2032, reverse, 5\u2032-GAAGAGCCGAGGAAGCAGTC-3\u2032; nurr1 (GenBank accession number NM_013613), forward, 5\u2032-CTGGCTATGGTCACAGAGAGACAC-3\u2032, reverse, 5\u2032-GGTACCAAGTCTTCCAATTTCAGG-3\u2032; \u03b2-actin (GenBank accession number NM_007393), forward, 5\u2032-TCCTTCTTGGGTATGGAATCCTG-3\u2032 reverse, 5\u2032-GGAGGAGCAATGATCTTGATCTTC-3\u2032. Ct values were the means of triplicate replicates. Each sample was normalized with loading reference \u03b2-actin (\u0394Ct), and then normalized with expression on Day 8. For relative expression level comparison, the difference in cycle threshold (\u0394\u0394Ct) between D11 and D8 was evaluated.\n\n### Clonal analysis of mESC-derived neural progenitor cells\n\nDay 5 mESC culture was transfected with low concentration pCAG-GFP plasmid to sparsely label mESC-derived neural progenitors. Transfection was done with Lipofectamine 2000 Reagent (Invitrogen) following the manufacturer\u2019s protocol. Briefly, 0.8-\u03bcg pCAG-GFP plasmid DNA was used for a single confluent well of a 6-well plate. On day 7, cells were dissociated with Trypsin-EDTA and re-plated onto poly-L-ornithine-laminin coated 96-well plate in N2B27 media, at a density of 2\u223c5 \u00d7 104/cm2. Time-lapse live imaging was performed with a 2-hr interval from Day 8 to Day 14, using a third generation automated robotic microscopy system that incorporated several advances over earlier systems (Arrasate et al., 2004; Arrasate and Finkbeiner, 2005; Sharma et al., 2012). Multiple images were taken for each condition and stitched together using a custom designed plugin for the open source image processing package Fiji (Schindelin et al., 2012). The cells were fixed for immunostaining on day 14.\n\n### Electrophysiology in mESC-derived neural rosette progenitors\n\nNeural rosettes are recognized because of the cells\u2019 characteristic bipolar morphology and their radial floral-like arrangement. We used cell line that expresses GFP under SOX1 promoter. For majority of neural rosettes, we also verified their GFP signals. There are also non-rosette GFP positive cells, among which are new born neurons. New born neurons were identified based on their characteristic morphology, round-shaped cell body. The whole-cell recordings were performed at room temperature. Pipette electrodes (Sutter, Novato, CA) were fabricated using a Sutter P-97 horizontal puller and fire-polished and had final tip resistances of 2\u20134 M\u03a9. All recording have been performed using gap free protocol while the membrane potential was holding at \u221270 mV. The bath solution contained (in mM) NaCl 110, KCl 30, CaCl2 1.8, MgCl2 0.5, HEPES 5, and glucose 10, pH adjusted to 7.4 with NaOH. The internal solution for patch recordings contained (in mM) NaCl 10, KCl 130, MgCl2 0.5, HEPES 5, EGTA 1,and MgATP 5, pH adjusted to 7.3 with KOH. The applications of the activation and inhibition reagents were performed by a pressurized micro-perfusion system. The pressure was typically 7\u201310 kPa. The stock solutions were made by dissolving the reagents in the bath solution (GABA) or DMSO (bicuculline and selamectin). The stock solutions were kept at \u221280\u00b0C and were diluted to the working concentration using bath solution before each experiment. Unless otherwise indicated, we used 100 \u03bcM GABA, 100 \u03bcM bicuculline and 8 \u03bcM selamectin. The working solutions of bicuculline and selamectin contained up to 0.5% DMSO, therefore the bath solutions containing the corresponding concentration of DMSO were routinely used as control solution prior to the applications of bicuculline or selamectin.\n\n### Differentiation of multiple neuronal lineages from human pluripotent stem cells\n\nThe human ESC lines H9 (Thomson et al., 1998) and a human iPSC line (a gift from Dr Bruce Conklin) (Kreitzer et al., 2013) were used. Stem Cells were cultured on growth factor reduced Matrigel (BD Biosciences, Franklin Lakes, NJ) in mTeSR1 media (Stemcell Technologies, Vancouver, Canada) with the media changed daily. To initiate differentiation, H9 and WTC-10 cells were plated at a density of 2 \u00d7 104 cells/cm2 in N2B27 media (DMEM/F12:Neurobasal [1:1], N2 supplement (1:100), B27 supplement without vitamin A (1:50), Glutamax, Insulin (20 \u03bcg/ml), beta-mercaptoethanol (110 \u03bcM), BSA Fraction V (20 \u03bcg/ml), bFGF (20 ng/ml) supplemented with Rock Inhibitor Y-27632 (10 \u03bcM, Millipore)). Media was changed with fresh N2B27 media every other day until Day 11. Cells were plated at 3 \u00d7 104 cells/cm2 in N2B27 media supplemented with Rock inhibitor on Day 11. Media was changed on Day 12 to neuronal differentiation media (Neurobasal, B27 without vitamin A (1:50), BDNF (20 ng/ml, Peprotech, Rocky Hill, NJ), GDNF (10 ng/ml, Peprotech), cAMP (500 \u03bcM, Sigma Aldrich), Ascorbic Acid (200 \u03bcM, Sigma Aldrich)). Cells were treated with DMSO or Selamectin from Day 12 to Day 19, and were fixed on Day 26 for immunostaining. All reagents were purchased from LIfe Technologies, unless otherwise stated.\n\n### In vivo zebrafish treatment and immunostaining\n\nA transgenic line (Hu-GFP) marking nascent neurons was used. At 10 hpf, embryos were de-chorionated with forceps and transferred to a glass vial with 3 ml Embryo Solution, and Selamectin was added into solution to a final concentration of 2 \u03bcM. Embryos were incubated at 28\u00b0C until 22 hpf and then fixed with 4% PFA and mounted onto slides for confocal imaging.\n\nEmbryos were also incubated at 28\u00b0C until 48 hpf to evaluate the effect of selamectin on TH differentiation (selamectin treatment lasted from 8 hpf to 48 hpf). At 48 hpf, embryos were stained with anti-TH antibody (custom made, 1:1000).\n",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "3a170c35-17a2-4573-ba14-69e5715274ad",
+      "submission_id": "59794b83-3a05-40d5-be6d-64843f00f33b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hideyuki Okano, Keio University School of Medicine , Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00508.016](https://doi.org/10.7554/eLife.00508.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cImaging-based chemical screening reveals activity-dependent neural differentiation in mouse embryonic stem cells\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\n1) As already discussed by the authors themselves, the effects of selamectin should be tested for the neuronal differentiation of human pluripotent stem cells.\n\n2) It is likely that selamectin induced mESC differentiation into multiple neural lineages. However, it is not clear whether this effect is due to the heterogeneity of neural progenitor cells derived from mESCs. In the former case, selamectin could have just induced the terminal differentiation of precursor cells already committed toward particular neuronal lineages. Alternatively, selamectin must have induced the mESC differentiation into multiple neural lineages by different mechanisms. This issue should be investigated by clonal analysis of mESC-derived neuronal progenitor cells to examine the effects of selamectin.\n\n3) One of the primary conclusions of the paper is that selamectin is functioning as a GABAA agonist. The most compelling evidence for this was pharmacological: the structurally unrelated GABA agonist muscimol had a similar effect, while GABA antagonists reduced the effect of selamectin. It would likely strengthen the case if there were some non-pharmacological (e.g., genetic) evidence.\n\n4) In the present assay, authors used TH as a readout marker to address neuronal subtype (dopaminergic neuron)-directed differentiation, but their hit compounds increased the differentiation of multiple neuronal lineages without selectivity for specific neuronal subsets. In this point, their screening was not successful in getting subtype-selective compounds. Authors should make comments for this criticism and should discuss in the text.\n\n5) Because the present assay focuses on ratio of TH positivity instead of cell number, compounds that reduce viability of a non-neuronal cell type could also appear to be increasing neural differentiation.\n",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c14e6cc7-36d1-4ddf-8b3c-f97598885e27",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C1",
+      "claim": "Mouse embryonic stem cells (mESCs) are capable of generating most cell types that constitute the entire organism",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse embryonic stem cells (mESCs), capable of generating most cell types that constitute the entire organism, have made important contributions to our understanding of mammalian biology (Smith, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "fac1c2d6-543f-4898-a6d2-fceb4667999f",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C2",
+      "claim": "Neural induction requires active FGF signaling",
+      "claim_type": "EXPLICIT",
+      "source": "Neural induction, the first step in neural differentiation of mESCs, requires active FGF signaling (Ying et al., 2003) and inhibition of the BMP/TGF-beta pathway (Chambers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ying et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "50c6f6b9-cf61-48c8-8afc-e707334ff87c",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C3",
+      "claim": "Neural induction requires inhibition of the BMP/TGF-beta pathway",
+      "claim_type": "EXPLICIT",
+      "source": "Neural induction, the first step in neural differentiation of mESCs, requires active FGF signaling (Ying et al., 2003) and inhibition of the BMP/TGF-beta pathway (Chambers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chambers et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "f335c969-f27a-45f3-b4c1-0b0dc59934e6",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C4",
+      "claim": "Regional identity and lineage-guided differentiation are regulated by the presence or absence of various morphogens or transcription factors",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent regional identity and lineage-guided differentiation are further regulated by the presence or absence of various morphogens or transcription factors (Lee et al., 2000; Wichterle et al., 2002; Andersson et al., 2006; Martinat et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Lee et al., 2000; Wichterle et al., 2002; Andersson et al., 2006; Martinat et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "78402737-209b-486b-87e7-78b88c5f84fe",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C5",
+      "claim": "A relatively low and consistent number of TH+ neurons were detected in the mESC monolayer culture system",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our adaptation of the mESC monolayer culture and differentiation method (Ying and Smith, 2003) showed that a relatively low and consistent number of TH+ neurons were detected in the culture system (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1 and citation to Ying and Smith, 2003",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "3fb28785-7ef6-4227-a0eb-fe506cd0a624",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C6",
+      "claim": "E14 mESC cultures express neural progenitor markers (Sox2, Lmx1A, and Nestin) after 7-day stage one culture",
+      "claim_type": "EXPLICIT",
+      "source": "E14 mESC cultures express neural progenitor makers (Sox2, Lmx1A, and Nestin) after 7-day stage one culture.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1B showing immunostaining results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "9056fa65-71df-4507-9f19-d6d40c5d83d5",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C7",
+      "claim": "46C mESC cultures are GFP positive after 7-day stage one culture",
+      "claim_type": "EXPLICIT",
+      "source": "46C mESC cultures, in which GFP is driven by the sox1 promoter, are GFP positive after 7-day stage one culture.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1B showing GFP expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "0ea3d439-9488-41dd-bc1d-fa0550d22c85",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C8",
+      "claim": "All coefficient of variation (C.V.) values but one were smaller than 20%",
+      "claim_type": "EXPLICIT",
+      "source": "To assess assay performance, the coefficient of variation (C.V.) of DMSO control was calculated for each of the twenty-six 96-well plates screened, and all C.V.s but one were smaller than 20%, suggesting an acceptable variation during this cell-based screen (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1D showing C.V. data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "ffd613b8-561e-462e-8fe3-e6d90d0e7c85",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C9",
+      "claim": "Out of 2080 chemicals screened, 26 led to a fold change of TH+ cells larger than mean + 3 S.D. (1.16%)",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 2080 chemicals screened, 26 led to a fold change of TH+ cells larger than mean + 3 S.D. (1.16%) (Figure 1E for an example), and 20 out of the 26 were neither cytotoxic nor auto-fluorescent (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by screening data and Figure 1E-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e7c3443c-5834-4aac-9d0d-206127b720b9",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C10",
+      "claim": "20 out of the 26 primary hits were neither cytotoxic nor auto-fluorescent",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 2080 chemicals screened, 26 led to a fold change of TH+ cells larger than mean + 3 S.D. (1.16%) (Figure 1E for an example), and 20 out of the 26 were neither cytotoxic nor auto-fluorescent (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by screening data and Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "8bf71b28-0a41-4685-bb71-f0fa6b394391",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C11",
+      "claim": "The overall hit rate was 0.09%",
+      "claim_type": "EXPLICIT",
+      "source": "After two rounds of validation, two compounds were selected as hits, yielding an overall hit rate of 0.09%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from screening results: 2 hits out of 2080 compounds",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "684dc49f-808e-4a41-b7ba-4639af4eb5a5",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C12",
+      "claim": "Dihydrodeoxygedunin (DOG) is a natural product with known neurotrophic activity via activating the TrkB receptor and its downstream signaling cascades",
+      "claim_type": "EXPLICIT",
+      "source": "One identified molecule is Dihydrodeoxygedunin (DOG), which is a natural product with known neurotrophic activity via activating the TrkB receptor and its downstream signaling cascades (Jang et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jang et al., 2010a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "eaf008bf-9730-430a-b77b-2f1555406853",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C13",
+      "claim": "Both DOG and 7,8-dihydroxyflavone (DHF) increased TH+ cells in mESC cultures, albeit modestly",
+      "claim_type": "EXPLICIT",
+      "source": "Both DOG and 7,8-dihydroxyflavone (DHF, another selective TrkB agonist [Jang et al., 2010b]) increased TH+ cells in mESC cultures, albeit modestly (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2 showing experimental results",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "7bf390af-c7e9-44cc-8c84-1c2d41506c53",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C14",
+      "claim": "Treatment with selamectin increased the percentage of total neurons, compared to the DMSO-treated control",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with selamectin increased the percentage of total neurons, compared to the DMSO-treated control (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 3A-B showing NeuN immunostaining results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "1bfb1654-e186-49a7-9cce-ff7d5cb25742",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C15",
+      "claim": "Selamectin significantly increased the production of 5-HT neurons",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis showed that selamectin also significantly increased the production of 5-HT neurons (Figure 3C), GABAergic neurons (Figure 3D), and Islet+ motor neurons (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 3C showing 5-HT immunostaining results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "977cd733-f621-463c-88fc-83fa68427ab5",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C16",
+      "claim": "Selamectin significantly increased the production of GABAergic neurons",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis showed that selamectin also significantly increased the production of 5-HT neurons (Figure 3C), GABAergic neurons (Figure 3D), and Islet+ motor neurons (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 3D showing GABA immunostaining results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "df69591d-36f8-49b6-a2b3-02edf8cf2d83",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C17",
+      "claim": "Selamectin significantly increased the production of Islet+ motor neurons",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis showed that selamectin also significantly increased the production of 5-HT neurons (Figure 3C), GABAergic neurons (Figure 3D), and Islet+ motor neurons (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 3E showing Islet immunostaining results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "f0fe753f-877c-45c7-a90b-88ac1e2d16fb",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C18",
+      "claim": "The increase of 5-HT neurons was remarkably high (\u223csevenfold)",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of 5-HT neurons was remarkably high (\u223csevenfold), suggesting that selamectin might have a preferential activity for inducing 5-HT neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantification of 5-HT neurons in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "fa5021cd-656f-4361-bf2b-0a8b8326dd1b",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C19",
+      "claim": "Selamectin might have a preferential activity for inducing 5-HT neurons",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of 5-HT neurons was remarkably high (\u223csevenfold), suggesting that selamectin might have a preferential activity for inducing 5-HT neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the sevenfold increase in 5-HT neurons",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "bdd69bcd-7e46-4ef7-9b54-bb8b693a9bbb",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C20",
+      "claim": "The percentage of Oligo2+ cells increased after treatment with selamectin compared with the DMSO-treated control",
+      "claim_type": "EXPLICIT",
+      "source": "After treatment with selamectin, the percentage of Oligo2+ cells also increased compared with the DMSO-treated control (Figure 3F), suggesting that the increase of neuronal production is not at the expense of glial production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 3F showing Olig2 immunostaining results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "53087a53-d076-4b2e-9fea-300a07a6fab2",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C21",
+      "claim": "The increase of neuronal production is not at the expense of glial production",
+      "claim_type": "EXPLICIT",
+      "source": "After treatment with selamectin, the percentage of Oligo2+ cells also increased compared with the DMSO-treated control (Figure 3F), suggesting that the increase of neuronal production is not at the expense of glial production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that both neurons and oligodendrocytes increased",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "b008e571-bbe1-4ccc-b62f-8ea4f39064e2",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C22",
+      "claim": "Selamectin functions in a dose-dependent manner with an EC50 = 293 nM",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that selamectin functions in a dose-dependent manner with an effector concentration for half-maximum response EC50 = 293 nM (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response curve in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "efee18c3-a1a3-412e-b679-84ead4df0d8d",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C23",
+      "claim": "Selamectin is toxic above 500 nM",
+      "claim_type": "EXPLICIT",
+      "source": "When the concentration of selamectin was higher than 500 nM, it became toxic to cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from dose-response experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "5753989c-4e63-4864-9ccd-d6f34afb8c57",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C24",
+      "claim": "Treatment during Stage one (from Day 4 to Day 7) suppressed cell proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment during Stage one (from Day 4 to Day 7, mainly composed of undifferentiated ESCs) suppressed cell proliferation, resulting in insufficient number of cells on Day 7 for further evaluation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from time course experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e9b40d8a-72e5-4e3b-8c38-d3b1ef1f821b",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C25",
+      "claim": "Treatment during Stage two (from Day 7 to Day 10) led to a significant increase of neurons evaluated on Day 13",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment during Stage two (from Day 7 to Day 10, mainly composed of neural progenitors) led to a significant increase of neurons evaluated on Day 13 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 4B showing time course results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "d96725aa-fa22-49d8-a094-e7fee1edd4c1",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C26",
+      "claim": "Shortening the treatment regimen to one day (from Day 7 to Day 8) showed no significant effect of selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Shortening the treatment regimen to one day (i.e., from Day 7 to Day 8) or treatment during Stage three (from Day 10 to Day 13, mainly composed of differentiating neurons) showed no significant effect of selamectin (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 4B showing time course results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "0f498e91-be5f-407e-8d44-bf7d6a0de079",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C27",
+      "claim": "Treatment during Stage three (from Day 10 to Day 13) showed no significant effect of selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Shortening the treatment regimen to one day (i.e., from Day 7 to Day 8) or treatment during Stage three (from Day 10 to Day 13, mainly composed of differentiating neurons) showed no significant effect of selamectin (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 4B showing time course results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "0af9eb04-9bfb-4430-9bc5-10c4be6d3940",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C28",
+      "claim": "Selamectin's proneurogenic activity is likely due to its action on mESC-derived neural progenitors",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that selamectin's proneurogenic activity is likely due to its action on mESC-derived neural progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from time course experiments showing effect only during neural progenitor stage",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "913a524d-13c1-432b-954e-e7e7ffef9e3c",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C29",
+      "claim": "Selamectin belongs to a chemical family of macrocyclic lactones used to treat nematode infections",
+      "claim_type": "EXPLICIT",
+      "source": "Selamectin belongs to a chemical family of macrocyclic lactones used to treat nematode infections that cause onchocerciasis (also known as the river blindness) in humans (Goa et al., 1991) and as topical or oral parasiticide and antihelminthic on dogs and cats (Bishop et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goa et al., 1991 and Bishop et al., 2000",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "15ddfc92-ccda-4a33-892b-be1b7c9baf6b",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C30",
+      "claim": "Macrocyclic lactones disable parasites by displacing glutamate in their muscle synapses through acting on the glutamate-gated chloride (GluCl) channels",
+      "claim_type": "EXPLICIT",
+      "source": "This class of drugs disables parasites by displacing glutamate in their muscle synapses through acting on the glutamate-gated chloride (GluCl) channels (Bloomquist, 2003), which have no orthologues in vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bloomquist, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "6f6a02bc-93ee-4c30-bbe7-e65715fca37f",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C31",
+      "claim": "Glutamate-gated chloride (GluCl) channels have no orthologues in vertebrates",
+      "claim_type": "EXPLICIT",
+      "source": "This class of drugs disables parasites by displacing glutamate in their muscle synapses through acting on the glutamate-gated chloride (GluCl) channels (Bloomquist, 2003), which have no orthologues in vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bloomquist, 2003",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "7d91a879-d653-4ed0-9cc2-c763336ae0a8",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C32",
+      "claim": "Avermectin has less potent proneurogenic activity than selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "A better-studied example of this family is avermectin (for the structures of selamectin and avermectin, Figure 5A), which, when tested for its activity in promoting neuronal differentiation, showed a less potent effect than selamectin with a marginal significance achieved at 0.25 \u03bcM (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 5B showing comparative dose-response data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "596727bb-7e84-45e0-adc5-23ec2e84eb68",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C33",
+      "claim": "Vertebrate glycine channels are thought to be orthologous to the invertebrate GluCl channels",
+      "claim_type": "EXPLICIT",
+      "source": "Based on gene structure and phylogenetic analyses, vertebrate glycine channels are thought to be orthologous to the invertebrate GluCl channels (Vassilatis et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vassilatis et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "bd70b2d6-dc6c-42f1-876a-a6663b459bfe",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C34",
+      "claim": "Ivermectin can act as an agonist of the glycine receptor",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that ivermectin (an avermectin derivative) can act as an agonist of the glycine receptor (Shan et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shan et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "7ebc69f6-86cd-4d40-85ec-b3d97d8f4852",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C35",
+      "claim": "Non-synaptically released taurine can activate the endogenous glycine receptor during neocortical development",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, non-synaptically released taurine can activate the endogenous glycine receptor during neocortical development (Flint et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Flint et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "80849a2b-db24-45e1-abe9-d13058de1c28",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C36",
+      "claim": "Taurine at a wide range of concentrations showed no effect in increasing TH% among total cells",
+      "claim_type": "EXPLICIT",
+      "source": "We treated cells from Day 7 to Day 11 with a wide range of taurine concentrations, none of which, however, showed any effect in increasing TH% among total cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 5C showing taurine dose-response data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "0431f630-64ba-48b7-812d-f577b05eedad",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C37",
+      "claim": "Selamectin does not act through glycine receptors to promote neuronal differentiation from mESCs",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that selamectin does not act through glycine receptors to promote neuronal differentiation from mESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of effect of taurine, a glycine receptor agonist",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "4edfa03c-68d8-4c88-8963-c0a72d5ad951",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C38",
+      "claim": "Avermectin can bind to the GABAA receptor in rat brain membranes or cultured cerebellar neuronal assays",
+      "claim_type": "EXPLICIT",
+      "source": "Next we turned to another potential candidate, the GABAA receptor, since some reports in the literature suggest that avermectin can bind to the GABAA receptor in rat brain membranes or cultured cerebellar neuronal assays (Pong et al., 1982; Huang and Casida, 1997), and avermectin exhibits an anticonvulsant action in a mouse seizure model (Dawson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pong et al., 1982 and Huang and Casida, 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "425fdbae-68da-4809-9791-50c3116e4a19",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C39",
+      "claim": "Avermectin exhibits an anticonvulsant action in a mouse seizure model",
+      "claim_type": "EXPLICIT",
+      "source": "Next we turned to another potential candidate, the GABAA receptor, since some reports in the literature suggest that avermectin can bind to the GABAA receptor in rat brain membranes or cultured cerebellar neuronal assays (Pong et al., 1982; Huang and Casida, 1997), and avermectin exhibits an anticonvulsant action in a mouse seizure model (Dawson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dawson et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "18099951-f9ce-4240-9832-532b6f7530cb",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C40",
+      "claim": "All concentrations of Muscimol (from 1 \u03bcM to 100 \u03bcM) had proneurogenic activity like selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested the effect of the GABAA receptor agonist Muscimol at a wide range of concentrations (from 1 \u03bcM to 100 \u03bcM). Remarkably, all of them had proneurogenic activity like selamectin (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 5D showing Muscimol dose-response data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "01f55248-d1af-4826-aa57-bdc2bbfb7353",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C41",
+      "claim": "Chlordiazepoxide (CDZ) at 10 \u03bcM had significant proneurogenic activity",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated alone with 10 \u03bcM Chlordiazepoxide or 0.3 \u03bcM Selamectin, significant proneurogenic activity was observed as compared to the DMSO control (p<0.05, t-test, Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 5E showing CDZ effect",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "0c9449b9-7aab-434f-9b93-a3ecad84df0a",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C42",
+      "claim": "No significant additive effect was observed when cells were treated with both Selamectin (0.3 \u03bcM) and CDZ (10 \u03bcM)",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with both Selamectin (0.3 \u03bcM) and CDZ (10 \u03bcM), no significant additive effect was observed (p=0.480, t-test, Figure 5F), suggesting a lack of synergistic or cooperative action between these two compounds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 5E showing combined treatment data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "6d04a800-84f2-4c66-a149-98e504933dd5",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C43",
+      "claim": "There is a lack of synergistic or cooperative action between selamectin and chlordiazepoxide",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with both Selamectin (0.3 \u03bcM) and CDZ (10 \u03bcM), no significant additive effect was observed (p=0.480, t-test, Figure 5F), suggesting a lack of synergistic or cooperative action between these two compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of additive effect",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "28658312-5b47-4ec1-b76b-3316c72bd9e3",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C44",
+      "claim": "Treatment with bicuculline, picrotoxin, or pentylenetetrazol alone had no effect on baseline differentiation of TH+ neurons",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated alone with these chemicals, no effect on baseline differentiation of TH+ neurons was observed, suggesting that at this stage of the mESC culture, GABA might not be released in sufficient quantities to affect neuronal differentiation (Figure 5F, white columns, all control were normalized to fold change = 1, displayed as the red dotted line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 5F showing antagonist effects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "c7c7c5d2-b85b-4a6d-bf33-a6e72578e06e",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C45",
+      "claim": "At the neural progenitor stage of mESC culture, GABA might not be released in sufficient quantities to affect neuronal differentiation",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated alone with these chemicals, no effect on baseline differentiation of TH+ neurons was observed, suggesting that at this stage of the mESC culture, GABA might not be released in sufficient quantities to affect neuronal differentiation (Figure 5F, white columns, all control were normalized to fold change = 1, displayed as the red dotted line).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of effect of GABAA receptor antagonists alone",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "2d1b187c-9d94-485e-98a7-a14849893294",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C46",
+      "claim": "The effect of selamectin was blocked when cells were treated with selamectin together with picrotoxin, pentylenetetrazol, or bicuculline",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with selamectin together with these antagonists or blockers (500 \u03bcM PTX, 5 mM PTZ, or 100 \u03bcM Bicu), the effect of selamectin was blocked, leading to no significant difference between the treated group and control (Figure 5F, gray columns).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 5F showing blocking experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e1a3505d-6ead-4122-b048-fbf92f2f9b23",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C47",
+      "claim": "The glycine receptor inhibitor strychnine failed to block the effect of selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the glycine receptor inhibitor strychnine (STY, 100 \u03bcM) failed to block the effect of selamectin (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 5F showing strychnine blocking experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "c2c2eb7a-ed7f-47ac-97d7-09cf40b2ca40",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C48",
+      "claim": "Selamectin promotes multi-lineage neuronal differentiation from mESCs through the activation of GABAA receptor signaling",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these pharmacological data suggest that selamectin promotes multi-lineage neuronal differentiation from mESCs through the activation of GABAA receptor signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from pharmacological blocking experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "362877e2-8622-4802-bca6-9260a94f55f6",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C49",
+      "claim": "The mammalian CNS expresses nineteen GABAA receptor subunits",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian CNS expresses nineteen GABAA receptor subunits (\u03b11-6, \u03b21-3, \u03b31-3, \u03b4, \u03b5, \u03b8, \u03c0, \u03c11\u22123), the combinatorial co-assembly of which enables a potentially enormous molecular and functional heterogeneity of GABAA receptor subtypes (Farrant and Nusser, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Farrant and Nusser, 2005",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "28827775-01b7-4096-be98-0c9645494694",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C50",
+      "claim": "Six GABAA receptor subunit genes display high expression level in mESC-derived neural progenitors",
+      "claim_type": "EXPLICIT",
+      "source": "Through analyzing the expression profiles of all nineteen receptor subunits in mESC cultures, six genes were identified to display high expression level in mESC-derived neural progenitors (data not shown) and were therefore chosen for esiRNA knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on expression profiling data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "6bfae635-c6d6-4bc5-8ce7-a2c5f9428cdd",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C51",
+      "claim": "EsiRNAs targeting the \u03b11, \u03b22, \u03b32, and \u03c0 subunits were highly effective in reducing the transcript levels of respective genes",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection of gene-specific esiRNAs on Day 6/9 and qRT-PCR analysis on Day 8/11 (Figure 6A) showed that esiRNAs targeting the \u03b11 (encoded by the gabara1 gene), \u03b22 (gabarb2 gene), \u03b32 (gabarg2), and \u03c0 (gabarp gene) subunits were highly effective in reducing the transcript levels of respective genes (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 6B showing qRT-PCR results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "2e9623a8-ad7f-49af-bd34-adaabf25a10a",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C52",
+      "claim": "Treatment with the esiRNA targeting gabarg2 abolished the effect of selamectin in inducing NeuN+ and TH+ neurons",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, treatment with the esiRNA targeting gabarg2 abolished the effect of selamectin in inducing NeuN+ and TH+ neurons (Figure 6C\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 6C-H showing knockdown results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "fc94fafc-086f-4f90-9dc4-3e52fc597d8d",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C53",
+      "claim": "Treatment with the esiRNAs targeting gabara1, gabarb2, and gabarp genes did not noticeably block the effect of selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with the esiRNAs targeting gabara1, gabarb2, and gabarp genes did not noticeably block the effect of selamectin, suggesting that either the reduction of transcript levels is not sufficient to abrogate their gene activity or these subunits do not mediate the effect of selamectin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by knockdown experiments in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "2c818850-0f2d-4e57-9075-ff3a0c92f853",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C54",
+      "claim": "Selamectin acts through the \u03b32-containing GABAA receptor to promote neuronal differentiation",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results provide genetic evidence that selamectin acts through the \u03b32-containing GABAA receptor to promote neuronal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from esiRNA knockdown experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "5f7d4d99-68ca-4796-a913-bdd4e609b201",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C55",
+      "claim": "GABA signaling mediated by the activation of GABAA receptors can depolarize cells in the ventricular zone of the rat embryonic cortex",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to its inhibitory roles in adult neurons, GABA signaling mediated by the activation of GABAA receptors can depolarize cells in the ventricular zone of the rat embryonic cortex (LoTurco et al., 1995), neural progenitor/stem cells in the postnatal mouse sub-ventricular zone (Liu et al., 2005) or sub-granular zone (Tozuka et al., 2005), due to the elevated internal Cl\u2212 concentrations in progenitor cells and young neurons (Owens and Kriegstein, 2002; Spitzer, 2006; Ben-Ari et al., 2007; Ge et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to LoTurco et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "926c713a-96dc-4ade-b919-74f4176a6b39",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C56",
+      "claim": "GABA signaling can depolarize neural progenitor/stem cells in the postnatal mouse sub-ventricular zone",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to its inhibitory roles in adult neurons, GABA signaling mediated by the activation of GABAA receptors can depolarize cells in the ventricular zone of the rat embryonic cortex (LoTurco et al., 1995), neural progenitor/stem cells in the postnatal mouse sub-ventricular zone (Liu et al., 2005) or sub-granular zone (Tozuka et al., 2005), due to the elevated internal Cl\u2212 concentrations in progenitor cells and young neurons (Owens and Kriegstein, 2002; Spitzer, 2006; Ben-Ari et al., 2007; Ge et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "902ede9e-fa95-439b-add5-3e48b8a3692e",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C57",
+      "claim": "GABA signaling can depolarize neural progenitor/stem cells in the postnatal mouse sub-granular zone",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to its inhibitory roles in adult neurons, GABA signaling mediated by the activation of GABAA receptors can depolarize cells in the ventricular zone of the rat embryonic cortex (LoTurco et al., 1995), neural progenitor/stem cells in the postnatal mouse sub-ventricular zone (Liu et al., 2005) or sub-granular zone (Tozuka et al., 2005), due to the elevated internal Cl\u2212 concentrations in progenitor cells and young neurons (Owens and Kriegstein, 2002; Spitzer, 2006; Ben-Ari et al., 2007; Ge et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tozuka et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "1a744edf-c9a9-4b0a-ae9c-7cf0e264883e",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C58",
+      "claim": "GABA depolarization is due to the elevated internal Cl\u2212 concentrations in progenitor cells and young neurons",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to its inhibitory roles in adult neurons, GABA signaling mediated by the activation of GABAA receptors can depolarize cells in the ventricular zone of the rat embryonic cortex (LoTurco et al., 1995), neural progenitor/stem cells in the postnatal mouse sub-ventricular zone (Liu et al., 2005) or sub-granular zone (Tozuka et al., 2005), due to the elevated internal Cl\u2212 concentrations in progenitor cells and young neurons (Owens and Kriegstein, 2002; Spitzer, 2006; Ben-Ari et al., 2007; Ge et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Owens and Kriegstein, 2002; Spitzer, 2006; Ben-Ari et al., 2007; Ge et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "2034c698-a4c7-44c1-bf01-0b8f98df3612",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C59",
+      "claim": "Neural rosettes are a functionally distinct type of neural stem cells suggested to represent the earliest NSC stage in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the observed temporal effect of selamectin in mESC cultures, we focused our attention on neural rosettes, a functionally distinct type of neural stem cells suggested to represent the earliest NSC stage in vivo (Elkabetz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Elkabetz et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "949bd0a0-961c-4947-9ff6-44162108188d",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C60",
+      "claim": "Neural rosettes are easily recognizable because of their characteristic bipolar morphology and radial floral-like arrangement",
+      "claim_type": "EXPLICIT",
+      "source": "Neural rosettes are easily recognizable because of their characteristic bipolar morphology and radial floral-like arrangement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on morphological observations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "23a113b5-c244-433a-b901-cb1bfb779b5a",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C61",
+      "claim": "For neural rosettes, membrane capacitance Cm = 9.4 \u00b1 12.5 pF (mean \u00b1 S.D., n = 106)",
+      "claim_type": "EXPLICIT",
+      "source": "For neural rosettes, we observed membrane capacitance Cm = 9.4 \u00b1 12.5 pF (mean \u00b1 S.D., n = 106), input resistance Rm = 772.5 \u00b1 1037.1 M\u03a9 (mean \u00b1 S.D., n = 106), and resting membrane potential ERev = \u2212 20.9 \u00b1 8.3 mV (mean \u00b1 S.D., n = 71).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "cb766c15-910a-4000-b7d7-cc93414c2950",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C62",
+      "claim": "For neural rosettes, input resistance Rm = 772.5 \u00b1 1037.1 M\u03a9 (mean \u00b1 S.D., n = 106)",
+      "claim_type": "EXPLICIT",
+      "source": "For neural rosettes, we observed membrane capacitance Cm = 9.4 \u00b1 12.5 pF (mean \u00b1 S.D., n = 106), input resistance Rm = 772.5 \u00b1 1037.1 M\u03a9 (mean \u00b1 S.D., n = 106), and resting membrane potential ERev = \u2212 20.9 \u00b1 8.3 mV (mean \u00b1 S.D., n = 71).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "eee22fe8-7bd3-4b62-8c32-e79027e05b7d",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C63",
+      "claim": "For neural rosettes, resting membrane potential ERev = \u2212 20.9 \u00b1 8.3 mV (mean \u00b1 S.D., n = 71)",
+      "claim_type": "EXPLICIT",
+      "source": "For neural rosettes, we observed membrane capacitance Cm = 9.4 \u00b1 12.5 pF (mean \u00b1 S.D., n = 106), input resistance Rm = 772.5 \u00b1 1037.1 M\u03a9 (mean \u00b1 S.D., n = 106), and resting membrane potential ERev = \u2212 20.9 \u00b1 8.3 mV (mean \u00b1 S.D., n = 71).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "b3726f13-9184-40cf-a0de-c1ed35811206",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C64",
+      "claim": "For non-rosette cells, membrane capacitance Cm = 9.5 \u00b1 6.2 pF (mean \u00b1 S.D., n = 74)",
+      "claim_type": "EXPLICIT",
+      "source": "For non-rosette cells, we observed membrane capacitance Cm = 9.5 \u00b1 6.2 pF (mean \u00b1 S.D., n = 74), input resistance Rm = 1.2 \u00b1 1.2 G\u03a9 (mean \u00b1 S.D., n = 74), and resting membrane potential ERev = \u2212 22.4 \u00b1 9.2 mV (mean \u00b1 S.D., n = 63).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e23bcc44-385a-498f-aad4-fd7844e9e3aa",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C65",
+      "claim": "For non-rosette cells, input resistance Rm = 1.2 \u00b1 1.2 G\u03a9 (mean \u00b1 S.D., n = 74)",
+      "claim_type": "EXPLICIT",
+      "source": "For non-rosette cells, we observed membrane capacitance Cm = 9.5 \u00b1 6.2 pF (mean \u00b1 S.D., n = 74), input resistance Rm = 1.2 \u00b1 1.2 G\u03a9 (mean \u00b1 S.D., n = 74), and resting membrane potential ERev = \u2212 22.4 \u00b1 9.2 mV (mean \u00b1 S.D., n = 63).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "59d02893-7bc1-45a6-b693-2b9b785ac7c3",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C66",
+      "claim": "For non-rosette cells, resting membrane potential ERev = \u2212 22.4 \u00b1 9.2 mV (mean \u00b1 S.D., n = 63)",
+      "claim_type": "EXPLICIT",
+      "source": "For non-rosette cells, we observed membrane capacitance Cm = 9.5 \u00b1 6.2 pF (mean \u00b1 S.D., n = 74), input resistance Rm = 1.2 \u00b1 1.2 G\u03a9 (mean \u00b1 S.D., n = 74), and resting membrane potential ERev = \u2212 22.4 \u00b1 9.2 mV (mean \u00b1 S.D., n = 63).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "01d3f2e2-9bf4-4a35-a64a-69c4dbe38c40",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C67",
+      "claim": "In approximately 21% of neural rosette cells (24 out of 111), applications of GABA induced inward currents",
+      "claim_type": "EXPLICIT",
+      "source": "In approximately 21% of the cells (24 out of 111), applications of GABA induced inward currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "ed6352a6-27ba-4515-82f9-fe2b6060a8e1",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C68",
+      "claim": "GABA induced currents are sensitive to bicuculline",
+      "claim_type": "EXPLICIT",
+      "source": "The GABA induced currents are sensitive to bicucculin (Bicu, 200 \u03bcM), but in some cases the application of 200 \u03bcM Bicu did not completely block the GABA induced currents (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 7B showing bicuculline blocking",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "2a7f1b6a-ec04-4a0a-be19-84e880b19cb6",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C69",
+      "claim": "Selamectin induced inward currents in neural rosette cells",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether selamectin regulates membrane electrophysiological properties in neural rosette cells, we analyzed responses of the whole-cell currents to the applications of selamectin. Selamectin indeed induced inward currents in neural rosette cells (Figure 7C), but the response was heterogeneous.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 7C showing selamectin-induced currents",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "2235ab0c-12b3-4694-bba1-b2a914976e33",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C70",
+      "claim": "Among 77 recorded neural rosette cells, 43 cells (64.2%) did not display induced currents by either GABA or selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 77 recorded cells, the largest group (43 cells, 64.2%) was those that did not display induced currents by either GABA or selamectin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings summarized in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "8135c3f6-7d1a-4964-97a1-7373e55d97e5",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C71",
+      "claim": "Among 77 recorded neural rosette cells, 14 cells (20.9%) displayed induced currents only by GABA",
+      "claim_type": "EXPLICIT",
+      "source": "The second largest group (14 cells, 20.9%) is those that displayed induced currents only by GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings summarized in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "351bab09-b172-446a-8b3e-03ac79b167cc",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C72",
+      "claim": "Among 77 recorded neural rosette cells, 10 cells (14.9%) displayed both GABA and selamectin induced currents",
+      "claim_type": "EXPLICIT",
+      "source": "The third group (10 cells, 14.9%) was those that displayed both GABA and selamectin induced currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings summarized in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "4e317311-63d2-4e29-9517-acc12e06d191",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C73",
+      "claim": "No neural rosette cells displayed only selamectin-induced currents",
+      "claim_type": "EXPLICIT",
+      "source": "No cells displayed only selamectin-induced currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings summarized in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "70244fa0-70a2-4467-a8d1-2fe0cabb6a1c",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C74",
+      "claim": "27 out of 73 non-rosette cells (37%) displayed GABA induced currents",
+      "claim_type": "EXPLICIT",
+      "source": "Slightly higher percentage (27 out of 73 cells, 37%) of non-rosette cells (Figure 7E) displayed GABA induced currents, which could be blocked by Bicu (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "721dff45-1e01-4f43-b624-0051604c8da1",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C75",
+      "claim": "Out of 44 non-rosette cells tested for both GABA and selamectin, 20 cells (45.5%) displayed only GABA-induced currents",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 44 non-rosette cells that we tested both GABA and selamectin induced currents, the largest group (20 cells, 45.5%) was the one that displayed only GABA-induced currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings summarized in Figure 7H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "17bb93a5-a928-4824-abaf-f297883af2a8",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C76",
+      "claim": "Out of 44 non-rosette cells tested for both GABA and selamectin, 17 cells (38.6%) displayed neither GABA nor selamectin induced currents",
+      "claim_type": "EXPLICIT",
+      "source": "The second group (17 cells, 38.6%) was the one that displayed neither GABA nor selamectin induced currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings summarized in Figure 7H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "4776538d-4b23-44d5-a0fb-ceebef57a3d4",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C77",
+      "claim": "Out of 44 non-rosette cells tested for both GABA and selamectin, 7 cells (15.9%) displayed both GABA- and selamectin-induced currents",
+      "claim_type": "EXPLICIT",
+      "source": "The third group (7 cells, 15.9%) displayed both GABA- and selamectin-induced currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings summarized in Figure 7H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "d22940db-50a7-4d97-aa78-efe1bdd6ecf2",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C78",
+      "claim": "No non-rosette cells displayed only selamectin-induced currents",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to neural rosette cells, no non-rosette cells displayed only selamectin-induced currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on electrophysiological recordings summarized in Figure 7H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "33df3033-8b28-481a-8bb4-5a31cb30a8a3",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C79",
+      "claim": "A subset of GABA-responsive neural rosette cells in mESC cultures respond to selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results uncover considerable heterogeneity in the response of neural rosettes and young neurons to GABA or selamectin and indicate that a subset of GABA-responsive neural rosette cells in mESC cultures respond to selamectin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from electrophysiological recordings showing heterogeneous responses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "431c2cda-db23-4600-87d6-d8da18b1b97e",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C80",
+      "claim": "GABA could promote neuronal differentiation in adult hippocampal progenitor cells",
+      "claim_type": "EXPLICIT",
+      "source": "While one study shows that GABA could promote neuronal differentiation in adult hippocampal progenitor cells (Tozuka et al., 2005), another found an inhibitory role on neuronal production in the postnatal sub-ventricular zone (Liu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tozuka et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "2487f5ed-07c7-4c8a-937f-cd71de54742d",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C81",
+      "claim": "GABA has an inhibitory role on neuronal production in the postnatal sub-ventricular zone",
+      "claim_type": "EXPLICIT",
+      "source": "While one study shows that GABA could promote neuronal differentiation in adult hippocampal progenitor cells (Tozuka et al., 2005), another found an inhibitory role on neuronal production in the postnatal sub-ventricular zone (Liu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "441f9211-01b5-4c12-97c9-f8da5a8861d9",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C82",
+      "claim": "Significantly fewer BrdU+ cells were detected in selamectin-treated groups, suggesting decreased proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "To further probe the mechanisms by which selamectin promotes neuronal differentiation, we performed BrdU incorporation experiment in mESC cultures on Day 11 after the treatment with selamectin for 4 days. Significantly fewer BrdU+ cells were detected in selamectin-treated groups, suggesting decreased proliferation (Figure 8A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 8A-B showing BrdU incorporation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "c107691e-7edf-4430-84fd-b53046782481",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C83",
+      "claim": "Selamectin increases the expression of proneural genes ascl1 and neurod",
+      "claim_type": "EXPLICIT",
+      "source": "We detected an increased expression of the proneural genes ascl1 and neurod, as well as the DA lineage- associated genes lmx1a, lmx1b, and nurr1 in Day 11 culture compared to Day 8 culture, and such increase was further enhanced by selamectin (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 8C showing qRT-PCR results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "55783767-df1c-4847-a19f-6a41f452361a",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C84",
+      "claim": "Selamectin increases the expression of DA lineage-associated genes lmx1a, lmx1b, and nurr1",
+      "claim_type": "EXPLICIT",
+      "source": "We detected an increased expression of the proneural genes ascl1 and neurod, as well as the DA lineage- associated genes lmx1a, lmx1b, and nurr1 in Day 11 culture compared to Day 8 culture, and such increase was further enhanced by selamectin (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 8C showing qRT-PCR results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "80612013-fcc9-4c41-b66a-da099faaa0b3",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C85",
+      "claim": "There was no significant difference in cell death between control and selamectin-treated cultures",
+      "claim_type": "EXPLICIT",
+      "source": "On Day 14, TUNEL labeling was carried out. The result showed no significant difference in cell death between control and selamectin-treated cultures (Figure 8D\u2013E), suggesting that alteration in cell death contributes little to selamectin's pro-neurogenic activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 8D-E showing TUNEL staining results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e948c224-eeb1-4932-9f5a-a23680508c64",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C86",
+      "claim": "Alteration in cell death contributes little to selamectin's pro-neurogenic activity",
+      "claim_type": "EXPLICIT",
+      "source": "On Day 14, TUNEL labeling was carried out. The result showed no significant difference in cell death between control and selamectin-treated cultures (Figure 8D\u2013E), suggesting that alteration in cell death contributes little to selamectin's pro-neurogenic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of difference in TUNEL staining",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "19bfc94d-5a71-4522-9ca2-7b0350716bbb",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C87",
+      "claim": "The cell cycle length exhibited no significant difference between DMSO- (25.61 \u00b1 6.99 hr, n = 31) and selamectin-treated cells (24 \u00b1 6.53 hr, n = 28)",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cell cycle length exhibited no significant difference between DMSO- (25.61 \u00b1 6.99 hr, n = 31) and selamectin-treated cells (24 \u00b1 6.53 hr, n = 28) (Figure 9B, left panel, Videos 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 9B and time-lapse imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "2876fd98-eec6-49fc-b583-e22757335506",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C88",
+      "claim": "There was no difference in the number of cells within single clones between DMSO- (13.46 \u00b1 4.14 cells per clone, n = 56 clones) and selamectin- (15.15 \u00b1 4.67 per clone, n = 59 clones) treated groups",
+      "claim_type": "EXPLICIT",
+      "source": "We also quantified the number of cells within single clones and detected no difference between DMSO- (13.46 \u00b1 4.14 cells per clone, n = 56 clones) and selamectin- (15.15 \u00b1 4.67 per clone, n = 59 clones) treated groups (Figure 9B, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 9B showing clonal analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e6270efa-1941-45fb-837e-3a9918730eff",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C89",
+      "claim": "Selamectin does not change the cell cycle length or the proliferation rate of mESC-derived neural progenitors",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that selamectin does not change the cell cycle length or the proliferation rate of mESC-derived neural progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from clonal analysis showing no change in cell cycle length or clone size",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "83629dfc-96c5-467b-8622-4acf1effb5cb",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C90",
+      "claim": "Clonal quantification showed a significant increase of NeuN+ neurons within single clones treated with selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal quantification of cell fates showed a significant increase of NeuN+ (or TH+) neurons and a concurrent decrease of Ki67+ progenitor cells within single clones treated with selamectin (Figure 9F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 9F showing clonal fate analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "a62319a8-a146-450a-85ac-026d01150463",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C91",
+      "claim": "Clonal quantification showed a significant increase of TH+ neurons within single clones treated with selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal quantification of cell fates showed a significant increase of NeuN+ (or TH+) neurons and a concurrent decrease of Ki67+ progenitor cells within single clones treated with selamectin (Figure 9F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 9F showing clonal fate analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "fef5c99f-e633-4f3c-9742-6a1d3f36fc9b",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C92",
+      "claim": "Clonal quantification showed a concurrent decrease of Ki67+ progenitor cells within single clones treated with selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal quantification of cell fates showed a significant increase of NeuN+ (or TH+) neurons and a concurrent decrease of Ki67+ progenitor cells within single clones treated with selamectin (Figure 9F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 9F showing clonal fate analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e3cc58b2-3729-4c74-a588-3d96947875e8",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C93",
+      "claim": "Selamectin acts to promote progenitor cell cycle exit toward terminal differentiation",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that selamectin acts to promote progenitor cell cycle exit toward terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from clonal analysis showing increased neurons and decreased Ki67+ cells without change in proliferation rate",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "9130b7e1-cefc-4fff-8a6d-13b63c94bc8c",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C94",
+      "claim": "Treatment with selamectin (0.25 \u03bcM, 0.5 \u03bcM, 0.75 \u03bcM) significantly increased the percentage of total neurons in H9 hESCs compared to the DMSO-treated control",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results from mESCs, treatment with selamectin (0.25 \u03bcM, 0.5 \u03bcM, 0.75 \u03bcM) significantly increased the percentage of total neurons, TH and 5-HT neurons compared to the DMSO-treated control in both H9 hESCs (Figure 10B\u2013C) and hiPSCs (Figure 10D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 10B-C showing H9 hESC results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "133e65dc-d0f8-481b-b6c3-a84fc5d71929",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C95",
+      "claim": "Treatment with selamectin significantly increased the percentage of TH neurons in H9 hESCs compared to the DMSO-treated control",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results from mESCs, treatment with selamectin (0.25 \u03bcM, 0.5 \u03bcM, 0.75 \u03bcM) significantly increased the percentage of total neurons, TH and 5-HT neurons compared to the DMSO-treated control in both H9 hESCs (Figure 10B\u2013C) and hiPSCs (Figure 10D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 10B-C showing H9 hESC results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "c8b4c756-d8d0-4ce3-869f-0a624ac650c0",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C96",
+      "claim": "Treatment with selamectin significantly increased the percentage of 5-HT neurons in H9 hESCs compared to the DMSO-treated control",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results from mESCs, treatment with selamectin (0.25 \u03bcM, 0.5 \u03bcM, 0.75 \u03bcM) significantly increased the percentage of total neurons, TH and 5-HT neurons compared to the DMSO-treated control in both H9 hESCs (Figure 10B\u2013C) and hiPSCs (Figure 10D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 10B-C showing H9 hESC results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "f0a7f9d5-f790-4449-ab73-6a48a0a341f0",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C97",
+      "claim": "Treatment with selamectin significantly increased the percentage of total neurons in hiPSCs compared to the DMSO-treated control",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results from mESCs, treatment with selamectin (0.25 \u03bcM, 0.5 \u03bcM, 0.75 \u03bcM) significantly increased the percentage of total neurons, TH and 5-HT neurons compared to the DMSO-treated control in both H9 hESCs (Figure 10B\u2013C) and hiPSCs (Figure 10D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 10D-E showing hiPSC results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "57ce062a-64f7-4557-9327-baa435201591",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C98",
+      "claim": "Treatment with selamectin significantly increased the percentage of TH neurons in hiPSCs compared to the DMSO-treated control",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results from mESCs, treatment with selamectin (0.25 \u03bcM, 0.5 \u03bcM, 0.75 \u03bcM) significantly increased the percentage of total neurons, TH and 5-HT neurons compared to the DMSO-treated control in both H9 hESCs (Figure 10B\u2013C) and hiPSCs (Figure 10D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 10D-E showing hiPSC results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "a992d1fc-77b5-48fe-bcc8-483cfd63b19f",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C99",
+      "claim": "Treatment with selamectin significantly increased the percentage of 5-HT neurons in hiPSCs compared to the DMSO-treated control",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results from mESCs, treatment with selamectin (0.25 \u03bcM, 0.5 \u03bcM, 0.75 \u03bcM) significantly increased the percentage of total neurons, TH and 5-HT neurons compared to the DMSO-treated control in both H9 hESCs (Figure 10B\u2013C) and hiPSCs (Figure 10D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 10D-E showing hiPSC results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "5171dd57-23dc-4a4d-aa0b-56545e845e72",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C100",
+      "claim": "There was an obvious increase of the overall HuC-GFP+ neurons in the selamectin-treated zebrafish embryos as compared to the DMSO control",
+      "claim_type": "EXPLICIT",
+      "source": "We noted an obvious increase of the overall HuC-GFP+ neurons in the selamectin-treated embryos as compared to the DMSO control (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 11B showing zebrafish imaging",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "85d78e1e-e71e-4832-9f01-a066fce76e93",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C101",
+      "claim": "Quantification of the midbrain cluster showed a highly significant difference between the selamectin-treated and the control zebrafish embryos (n =20, t-test, p<0.001)",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the midbrain cluster (boxed) showed a highly significant difference between the selamectin-treated and the control (Figure 11C, n =20, t-test, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 11C showing quantification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e84bb651-3851-4967-a133-1c2262d1e2c2",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C102",
+      "claim": "The number of ventral forebrain DA neurons was significantly increased in selamectin-treated zebrafish embryos as compared to the DMSO control",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the effect of selamectin on DA neurons, by treating embryos with selamectin from 8 hpf to 48 hpf followed by immunostaining with the anti-TH antibody (Figure 11A). The number of ventral forebrain DA neurons was significantly increased in selamectin-treated embryos as compared to the DMSO control (Figure 11D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 11D-E showing TH immunostaining in zebrafish",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e0ec7cf4-48c4-4592-ab5e-20e9e951afaf",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C103",
+      "claim": "Selamectin has pro-neurogenic activity in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that selamectin has pro-neurogenic activity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from zebrafish experiments showing increased neurons",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "1543b399-a3b2-4ea6-827c-3083c7de8cb9",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C104",
+      "claim": "Mild electrical stimulation influences mESCs to assume a neuronal fate",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously reported that mild electrical stimulation influences mESCs to assume a neuronal fate (Yamada et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yamada et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "821fd4d1-7695-4942-b0ea-56eabeb303cb",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C105",
+      "claim": "GABA released by local interneurons promotes the exit of adult neural stem cells from quiescence",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, in the context of adult neurogenesis, GABA released by local interneurons has been shown to promote the exit of adult neural stem cells from quiescence (thereby promote their proliferation) (Song et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Song et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "b5765703-7a0f-4326-bb4d-b71344b29bff",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C106",
+      "claim": "Single neural rosette cell recordings reveal heterogeneous responses among progenitors to GABA and selamectin",
+      "claim_type": "EXPLICIT",
+      "source": "Our single neural rosette cell recordings, which reveal the heterogeneous responses among progenitors, provide an explanation as to why the influence of GABA signaling on neurogenesis appears cell type- and context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from electrophysiological recordings showing heterogeneity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "cf0e0eaf-de8b-4434-bfbc-f5b0e2ea45b3",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C107",
+      "claim": "The influence of GABA signaling on neurogenesis appears cell type- and context-dependent",
+      "claim_type": "EXPLICIT",
+      "source": "Our single neural rosette cell recordings, which reveal the heterogeneous responses among progenitors, provide an explanation as to why the influence of GABA signaling on neurogenesis appears cell type- and context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from heterogeneous responses and literature showing contradictory effects",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "712f2d8c-83bd-4195-9872-9c4f524f201d",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C108",
+      "claim": "Selamectin-potentiated activation of the \u03b32-containing GABAA receptor in mESC-derived neural progenitor cells causes Cl\u2212 outflow",
+      "claim_type": "EXPLICIT",
+      "source": "These molecular and cellular findings, together with the pharmacogenetic and electrophysiological studies, lead us to propose that selamectin-potentiated activation of the \u03b32-containing GABAA receptor in mESC-derived neural progenitor cells causes Cl\u2212 outflow (due to the high internal chloride levels in these progenitor cells), thereby leading to the depolarization of neural progenitors and calcium influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on integration of multiple experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "cf8712c4-7c7f-48ee-9030-bc3e01160b4c",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C109",
+      "claim": "Selamectin-induced Cl\u2212 outflow leads to the depolarization of neural progenitors and calcium influx",
+      "claim_type": "EXPLICIT",
+      "source": "These molecular and cellular findings, together with the pharmacogenetic and electrophysiological studies, lead us to propose that selamectin-potentiated activation of the \u03b32-containing GABAA receptor in mESC-derived neural progenitor cells causes Cl\u2212 outflow (due to the high internal chloride levels in these progenitor cells), thereby leading to the depolarization of neural progenitors and calcium influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on integration of multiple experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "4baa1949-49f7-475b-8eac-2915c2cf28df",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C110",
+      "claim": "Depolarization and calcium influx activates proneural and lineage-specific transcription factors",
+      "claim_type": "EXPLICIT",
+      "source": "This further activates proneural and lineage-specific transcription factors, which have established roles in promoting cell cycle exit toward terminal neuronal differentiation (Bertrand et al., 2002) (Figure 8F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed mechanism supported by citation to Bertrand et al., 2002 and illustrated in Figure 8F",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "aaeb9e9f-0e49-49ea-9dd2-325600d31e77",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C111",
+      "claim": "Proneural and lineage-specific transcription factors have established roles in promoting cell cycle exit toward terminal neuronal differentiation",
+      "claim_type": "EXPLICIT",
+      "source": "This further activates proneural and lineage-specific transcription factors, which have established roles in promoting cell cycle exit toward terminal neuronal differentiation (Bertrand et al., 2002) (Figure 8F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bertrand et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "4078c800-ec65-41f6-9f7c-fd5323ed7faa",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C112",
+      "claim": "Neural activity-dependent regulation of transcription factor expression has been reported in developing Xenopus embryos",
+      "claim_type": "EXPLICIT",
+      "source": "Such neural activity-dependent regulation of transcription factor expression has been reported in developing Xenopus embryos (Demarque and Spitzer, 2010; Marek et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Demarque and Spitzer, 2010; Marek et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "6d519fd8-0d2d-4151-90f1-1510e336d0ee",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C113",
+      "claim": "Neural activity-dependent regulation of transcription factor expression is an evolutionarily conserved phenomenon",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that this is an evolutionarily conserved phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations in both mESCs and Xenopus embryos",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e7121068-b62c-42b3-b5e9-efd15f318522",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C114",
+      "claim": "GABA signaling influences embryonic cortical neural progenitor proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "GABA signaling influences embryonic cortical neural progenitor proliferation (Owens and Kriegstein, 2002) and regulates adult neurogenesis (Ge et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Owens and Kriegstein, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "06d65f63-1395-49bb-b88d-4e0cf1d7175f",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C115",
+      "claim": "GABA signaling regulates adult neurogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "GABA signaling influences embryonic cortical neural progenitor proliferation (Owens and Kriegstein, 2002) and regulates adult neurogenesis (Ge et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ge et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "c628f399-5633-431e-a703-265ab6684b7f",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C116",
+      "claim": "The screen of 2000 compounds was not successful in identifying chemicals that specifically increase DA neuronal production",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth pointing out that our screen of 2000 compounds was not successful in identifying chemicals that specifically increase DA neuronal production, suggesting that these compounds may be rare, and large compound libraries need to be screened in order to find them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on screening results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "9edb30ba-b1ee-4393-9152-9dedd0a8c293",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C117",
+      "claim": "Compounds that specifically increase DA neuronal production may be rare",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth pointing out that our screen of 2000 compounds was not successful in identifying chemicals that specifically increase DA neuronal production, suggesting that these compounds may be rare, and large compound libraries need to be screened in order to find them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of hits in screening",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "80bfefae-b4d5-42d0-9ae1-113af718d192",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C118",
+      "claim": "Large compound libraries need to be screened in order to find compounds that specifically increase DA neuronal production",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth pointing out that our screen of 2000 compounds was not successful in identifying chemicals that specifically increase DA neuronal production, suggesting that these compounds may be rare, and large compound libraries need to be screened in order to find them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of hits in screening of 2000 compounds",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "087c5a55-e200-49ca-a538-29e6e104556e",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "claim_id": "C119",
+      "claim": "Compounds identified in this and future screening might prove therapeutically beneficial for treating neurodevelopmental or neurodegenerative disorders",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds identified in this and future screening might prove therapeutically beneficial for treating neurodevelopmental or neurodegenerative disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential therapeutic applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1cda4113-b341-4f53-872d-9790ed6870a9",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established an imaging-based high-throughput screening platform using mESC monolayer cultures that reliably detects TH+ neurons with acceptable variation (CV<20% for 25/26 plates). Screening 2080 compounds yielded 26 primary hits (1.16%), of which 20 were non-toxic and non-autofluorescent, resulting in 2 validated hits (0.09% hit rate).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The screening platform is well-validated with appropriate quality control metrics (C8), clear hit selection criteria (mean + 3 S.D.), and systematic filtering for cytotoxicity and autofluorescence (C9-C10). The low baseline TH+ neuron percentage (C5) and consistent neural progenitor marker expression (C6-C7) support assay robustness. The hit rate and validation process are clearly documented (C11).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "8926978a-588d-484d-8df4-60d454aa0f01",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The screen identified two hit compounds: Dihydrodeoxygedunin (DOG), a known TrkB receptor agonist with neurotrophic activity, and selamectin. Both DOG and 7,8-dihydroxyflavone (DHF, another TrkB agonist) modestly increased TH+ cells in mESC cultures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of DOG validates the screening platform's ability to detect compounds with known neurotrophic activity (C12). The modest effect of both DOG and DHF (C13) is supported by Figure 2 data and serves as a positive control, though the magnitude of effect is limited compared to selamectin.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "6d11f06e-b04f-4acc-8974-bd0db7791392",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Selamectin broadly increases neuronal differentiation from mESCs, significantly enhancing production of total neurons (NeuN+), TH+ neurons, 5-HT neurons (~7-fold increase), GABAergic neurons, Islet+ motor neurons, and Olig2+ oligodendrocytes. The increase in neuronal production occurs without reducing glial production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent immunostaining experiments with different neuronal markers (C14-C17, C20) demonstrate broad pro-neurogenic effects supported by Figure 3. The remarkably high 7-fold increase in 5-HT neurons (C18) suggests preferential activity (C19), though this remains speculative. The concurrent increase in both neurons and oligodendrocytes (C20-C21) is well-documented, though the inference that neurogenesis doesn't occur at the expense of gliogenesis requires caution as the temporal dynamics differ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "73cd4192-de1e-41a5-b39a-99323ced4110",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Selamectin exhibits dose-dependent activity with EC50=293 nM and becomes toxic above 500 nM. Time-course analysis reveals that selamectin specifically acts during Stage 2 (Days 7-10, neural progenitor stage), with treatment during Stage 1 suppressing proliferation and treatment during Stage 3 showing no effect, indicating that selamectin's proneurogenic activity targets mESC-derived neural progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dose-response relationship is well-characterized with appropriate curve fitting (C22, Figure 4A). The temporal specificity is rigorously demonstrated through systematic testing of different treatment windows (C24-C27, Figure 4B), providing strong evidence that selamectin acts on neural progenitors rather than undifferentiated ESCs or differentiating neurons (C28). The toxicity threshold (C23) is clearly defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "589f198a-04b3-4ccd-96cd-36b016f81bde",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Through systematic pharmacological testing, the authors demonstrate that selamectin acts through GABAA receptors rather than its known invertebrate target (GluCl channels) or vertebrate glycine receptors. The GABAA receptor agonist muscimol and positive allosteric modulator chlordiazepoxide both show proneurogenic activity, with no additive effect when combined with selamectin. GABAA receptor antagonists (bicuculline, picrotoxin, pentylenetetrazol) block selamectin's effect, while the glycine receptor inhibitor strychnine does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The pharmacological evidence is comprehensive and systematic. The lack of effect of taurine (glycine receptor agonist) rules out glycine receptors (C36-C37). The proneurogenic activity of muscimol across a wide concentration range (C40) and chlordiazepoxide (C41), combined with lack of additivity (C42-C43), strongly suggests a common GABAA receptor mechanism. The blocking experiments (C44-C47) provide compelling evidence, though the observation that GABAA antagonists alone have no effect (C44-C45) suggests endogenous GABA may not be present at sufficient levels, which is appropriately noted as speculative. The conclusion (C48) is well-supported by the pharmacological data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "42eb6323-ceae-4958-8fb0-743dec7108f6",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Genetic knockdown experiments using esiRNAs targeting GABAA receptor subunits demonstrate that the \u03b32 subunit (gabarg2) is specifically required for selamectin's proneurogenic activity. While esiRNAs targeting \u03b11, \u03b22, \u03b32, and \u03c0 subunits effectively reduced transcript levels, only \u03b32 knockdown abolished selamectin's effect on NeuN+ and TH+ neuron production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic approach provides strong complementary evidence to the pharmacology. The esiRNA knockdown efficiency is validated by qRT-PCR (C51, Figure 6B), and the specific requirement for \u03b32 is clearly demonstrated (C52, Figure 6C-H). The lack of effect from knocking down other subunits (C53) is appropriately interpreted with caution, acknowledging that incomplete knockdown or functional redundancy could explain these results. The conclusion that selamectin acts through \u03b32-containing GABAA receptors (C54) is well-supported by the combined pharmacological and genetic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Single-cell electrophysiological recordings of neural rosette cells and non-rosette cells reveal considerable heterogeneity in GABA and selamectin responsiveness. Among 77 neural rosette cells tested, 21% responded to GABA, 14.9% responded to both GABA and selamectin, and no cells responded only to selamectin. Similar heterogeneity was observed in non-rosette cells (37% GABA-responsive, 15.9% responsive to both). GABA-induced currents were sensitive to bicuculline, confirming GABAA receptor involvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The electrophysiological characterization is rigorous with appropriate sample sizes (n=106-111 for rosettes, n=73-74 for non-rosettes) and well-documented passive membrane properties (C61-C66). The heterogeneity in responses (C67-C78) is clearly quantified and visualized (Figure 7D, H). The critical observation that no cells respond only to selamectin (C73, C78) supports the model that selamectin acts as a positive modulator of GABAA receptors rather than a direct agonist. The bicuculline sensitivity (C68) confirms GABAA receptor involvement, though incomplete blocking suggests additional receptor subtypes may be present. The conclusion about heterogeneity (C79) is well-supported and provides important context for understanding variable effects in the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "a07fb1c1-07b8-4350-98f9-30fc16771398",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mechanistic studies reveal that selamectin promotes neuronal differentiation by inducing cell cycle exit rather than altering proliferation rate. BrdU incorporation shows decreased proliferation in selamectin-treated cultures. qRT-PCR demonstrates increased expression of proneural genes (ascl1, neurod) and DA lineage genes (lmx1a, lmx1b, nurr1). Time-lapse clonal analysis shows no change in cell cycle length (DMSO: 25.61\u00b16.99 hr vs selamectin: 24\u00b16.53 hr) or clone size, but significant increases in NeuN+ and TH+ neurons and decreased Ki67+ progenitors within clones. Cell death (TUNEL) was unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mechanistic characterization is comprehensive and uses multiple complementary approaches. The BrdU data (C82) shows decreased proliferation, but the clonal analysis (C87-C89) clarifies that this is due to cell cycle exit rather than lengthened cell cycle, which is an important distinction. The increased expression of proneural and lineage-specific transcription factors (C83-C84) provides a molecular mechanism linking GABAA receptor activation to differentiation. The clonal fate analysis (C90-C92) provides the strongest evidence for increased cell cycle exit, showing more neurons and fewer Ki67+ cells within individual clones. The lack of change in cell death (C85-C86) rules out differential survival as a mechanism. The conclusion (C93) is well-supported by the integrated data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "ad3caf67-d976-4940-8d82-9cc113cf9d44",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Selamectin's proneurogenic activity translates to human pluripotent stem cells. Treatment with selamectin (0.25-0.75 \u03bcM) significantly increased the percentage of total neurons (NeuN+), TH+ neurons, and 5-HT neurons in both H9 human embryonic stem cells and human induced pluripotent stem cells compared to DMSO controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The translation to human PSCs is well-documented with appropriate dose-response testing (C94-C99, Figure 10). The effects are consistent across both hESCs and hiPSCs, and mirror the results observed in mESCs, including increases in multiple neuronal subtypes. This demonstrates that the mechanism is conserved between mouse and human systems, which is important for potential therapeutic applications. The statistical significance is clearly indicated for all comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "e95ffaa6-28c6-4161-b31d-ba820ea59e67",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In vivo validation in zebrafish embryos demonstrates that selamectin has proneurogenic activity during development. Treatment from 8 hpf to 22 hpf significantly increased HuC-GFP+ neurons in the midbrain cluster (p<0.001, n=20), and treatment from 8 hpf to 48 hpf significantly increased ventral forebrain TH+ dopaminergic neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vivo validation provides important evidence that selamectin's proneurogenic activity is not an artifact of cell culture conditions (C100-C102, Figure 11). The quantification is rigorous with appropriate sample sizes and statistical analysis (C101). The effects on both general neurogenesis (HuC-GFP+) and specific DA neurons (TH+) parallel the in vitro findings. The conclusion (C103) is well-supported, though it should be noted that the mechanism in zebrafish (e.g., specific GABAA receptor subtypes involved) was not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "cccbc3a6-b239-4714-957d-2235c9ba586c",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose an integrated mechanistic model: selamectin potentiates \u03b32-containing GABAA receptors in neural progenitors, causing Cl- outflow and depolarization due to elevated internal Cl- concentrations, leading to calcium influx and activation of proneural and lineage-specific transcription factors that promote cell cycle exit and terminal differentiation. This represents an evolutionarily conserved mechanism of activity-dependent neuronal fate specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The proposed model (C108-C110) integrates multiple lines of evidence: pharmacological and genetic identification of \u03b32-GABAA receptors, electrophysiological demonstration of depolarizing responses, increased transcription factor expression, and promotion of cell cycle exit. The model is consistent with established knowledge about high internal Cl- in progenitors causing depolarizing GABA responses (C55-C58) and the role of proneural transcription factors in promoting differentiation (C111). The heterogeneity observed in single-cell recordings (C106) provides a plausible explanation for context-dependent effects of GABA on neurogenesis (C107). The evolutionary conservation claim (C113) is supported by observations in both mESCs and Xenopus (C112), though direct mechanistic testing in other species is limited. The model is well-reasoned but remains partially speculative regarding the precise sequence of events from depolarization to transcription factor activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "7a40562d-1bc6-4f4e-a764-1b6d9850d2be",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors contextualize their findings within the broader literature on GABA signaling in neurogenesis and discuss limitations and future directions. They note that the screen did not identify compounds specifically increasing DA neuron production, suggesting such compounds may be rare and require larger library screening. They speculate that identified compounds might have therapeutic potential for neurodevelopmental or neurodegenerative disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The discussion appropriately places the work in context of prior literature on GABA's role in embryonic and adult neurogenesis (C114-C115). The acknowledgment that the screen did not identify DA-specific compounds (C116) is honest and appropriately interpreted as suggesting rarity of such compounds (C117) and need for larger screens (C118). The therapeutic speculation (C119) is appropriately tentative and represents reasonable future direction rather than overclaiming current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "8498b612-77ad-423f-9898-e3b27f29e091",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors provide background on mESC biology and neural differentiation, noting that mESCs can generate most cell types, neural induction requires FGF signaling and BMP/TGF-\u03b2 inhibition, and subsequent regional identity is regulated by morphogens and transcription factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established facts in the field, appropriately cited to primary literature (C1-C4). They provide necessary context for the study but represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "a373e23e-6698-4bd9-b5e2-c28d45649ac9",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors provide background on the relationship between invertebrate GluCl channels and vertebrate glycine receptors, noting phylogenetic orthology and that ivermectin can act as a glycine receptor agonist, with taurine activating glycine receptors during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are appropriately cited to prior literature (C33-C35) and provide important context for the pharmacological experiments testing whether selamectin acts through glycine receptors. This represents background knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    },
+    {
+      "id": "20d640e7-df88-4106-a32b-ea9b09b14caf",
+      "content_id": "ba126dbe-2301-4abd-a90a-3aef78288d5b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors cite prior literature suggesting avermectin can bind GABAA receptors in rat brain membranes and cerebellar neurons, and exhibits anticonvulsant action in mouse seizure models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are appropriately cited (C38-C39) and provide rationale for testing GABAA receptors as potential targets. This represents background knowledge that motivated the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:41:25.697690Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "78402737-209b-486b-87e7-78b88c5f84fe",
+      "result_id": "1cda4113-b341-4f53-872d-9790ed6870a9"
+    },
+    {
+      "claim_id": "3fb28785-7ef6-4227-a0eb-fe506cd0a624",
+      "result_id": "1cda4113-b341-4f53-872d-9790ed6870a9"
+    },
+    {
+      "claim_id": "9056fa65-71df-4507-9f19-d6d40c5d83d5",
+      "result_id": "1cda4113-b341-4f53-872d-9790ed6870a9"
+    },
+    {
+      "claim_id": "0ea3d439-9488-41dd-bc1d-fa0550d22c85",
+      "result_id": "1cda4113-b341-4f53-872d-9790ed6870a9"
+    },
+    {
+      "claim_id": "ffd613b8-561e-462e-8fe3-e6d90d0e7c85",
+      "result_id": "1cda4113-b341-4f53-872d-9790ed6870a9"
+    },
+    {
+      "claim_id": "e7c3443c-5834-4aac-9d0d-206127b720b9",
+      "result_id": "1cda4113-b341-4f53-872d-9790ed6870a9"
+    },
+    {
+      "claim_id": "8bf71b28-0a41-4685-bb71-f0fa6b394391",
+      "result_id": "1cda4113-b341-4f53-872d-9790ed6870a9"
+    },
+    {
+      "claim_id": "684dc49f-808e-4a41-b7ba-4639af4eb5a5",
+      "result_id": "8926978a-588d-484d-8df4-60d454aa0f01"
+    },
+    {
+      "claim_id": "eaf008bf-9730-430a-b77b-2f1555406853",
+      "result_id": "8926978a-588d-484d-8df4-60d454aa0f01"
+    },
+    {
+      "claim_id": "7bf390af-c7e9-44cc-8c84-1c2d41506c53",
+      "result_id": "6d11f06e-b04f-4acc-8974-bd0db7791392"
+    },
+    {
+      "claim_id": "1bfb1654-e186-49a7-9cce-ff7d5cb25742",
+      "result_id": "6d11f06e-b04f-4acc-8974-bd0db7791392"
+    },
+    {
+      "claim_id": "977cd733-f621-463c-88fc-83fa68427ab5",
+      "result_id": "6d11f06e-b04f-4acc-8974-bd0db7791392"
+    },
+    {
+      "claim_id": "df69591d-36f8-49b6-a2b3-02edf8cf2d83",
+      "result_id": "6d11f06e-b04f-4acc-8974-bd0db7791392"
+    },
+    {
+      "claim_id": "f0fe753f-877c-45c7-a90b-88ac1e2d16fb",
+      "result_id": "6d11f06e-b04f-4acc-8974-bd0db7791392"
+    },
+    {
+      "claim_id": "fa5021cd-656f-4361-bf2b-0a8b8326dd1b",
+      "result_id": "6d11f06e-b04f-4acc-8974-bd0db7791392"
+    },
+    {
+      "claim_id": "bdd69bcd-7e46-4ef7-9b54-bb8b693a9bbb",
+      "result_id": "6d11f06e-b04f-4acc-8974-bd0db7791392"
+    },
+    {
+      "claim_id": "53087a53-d076-4b2e-9fea-300a07a6fab2",
+      "result_id": "6d11f06e-b04f-4acc-8974-bd0db7791392"
+    },
+    {
+      "claim_id": "b008e571-bbe1-4ccc-b62f-8ea4f39064e2",
+      "result_id": "73cd4192-de1e-41a5-b39a-99323ced4110"
+    },
+    {
+      "claim_id": "efee18c3-a1a3-412e-b679-84ead4df0d8d",
+      "result_id": "73cd4192-de1e-41a5-b39a-99323ced4110"
+    },
+    {
+      "claim_id": "5753989c-4e63-4864-9ccd-d6f34afb8c57",
+      "result_id": "73cd4192-de1e-41a5-b39a-99323ced4110"
+    },
+    {
+      "claim_id": "e9b40d8a-72e5-4e3b-8c38-d3b1ef1f821b",
+      "result_id": "73cd4192-de1e-41a5-b39a-99323ced4110"
+    },
+    {
+      "claim_id": "d96725aa-fa22-49d8-a094-e7fee1edd4c1",
+      "result_id": "73cd4192-de1e-41a5-b39a-99323ced4110"
+    },
+    {
+      "claim_id": "0f498e91-be5f-407e-8d44-bf7d6a0de079",
+      "result_id": "73cd4192-de1e-41a5-b39a-99323ced4110"
+    },
+    {
+      "claim_id": "0af9eb04-9bfb-4430-9bc5-10c4be6d3940",
+      "result_id": "73cd4192-de1e-41a5-b39a-99323ced4110"
+    },
+    {
+      "claim_id": "913a524d-13c1-432b-954e-e7e7ffef9e3c",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "15ddfc92-ccda-4a33-892b-be1b7c9baf6b",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "6f6a02bc-93ee-4c30-bbe7-e65715fca37f",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "7d91a879-d653-4ed0-9cc2-c763336ae0a8",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "596727bb-7e84-45e0-adc5-23ec2e84eb68",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "bd70b2d6-dc6c-42f1-876a-a6663b459bfe",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "7ebc69f6-86cd-4d40-85ec-b3d97d8f4852",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "80849a2b-db24-45e1-abe9-d13058de1c28",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "0431f630-64ba-48b7-812d-f577b05eedad",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "4edfa03c-68d8-4c88-8963-c0a72d5ad951",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "425fdbae-68da-4809-9791-50c3116e4a19",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "18099951-f9ce-4240-9832-532b6f7530cb",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "01f55248-d1af-4826-aa57-bdc2bbfb7353",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "0c9449b9-7aab-434f-9b93-a3ecad84df0a",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "6d04a800-84f2-4c66-a149-98e504933dd5",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "28658312-5b47-4ec1-b76b-3316c72bd9e3",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "c7c7c5d2-b85b-4a6d-bf33-a6e72578e06e",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "2d1b187c-9d94-485e-98a7-a14849893294",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "e1a3505d-6ead-4122-b048-fbf92f2f9b23",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "c2c2eb7a-ed7f-47ac-97d7-09cf40b2ca40",
+      "result_id": "589f198a-04b3-4ccd-96cd-36b016f81bde"
+    },
+    {
+      "claim_id": "362877e2-8622-4802-bca6-9260a94f55f6",
+      "result_id": "42eb6323-ceae-4958-8fb0-743dec7108f6"
+    },
+    {
+      "claim_id": "28827775-01b7-4096-be98-0c9645494694",
+      "result_id": "42eb6323-ceae-4958-8fb0-743dec7108f6"
+    },
+    {
+      "claim_id": "6bfae635-c6d6-4bc5-8ce7-a2c5f9428cdd",
+      "result_id": "42eb6323-ceae-4958-8fb0-743dec7108f6"
+    },
+    {
+      "claim_id": "2e9623a8-ad7f-49af-bd34-adaabf25a10a",
+      "result_id": "42eb6323-ceae-4958-8fb0-743dec7108f6"
+    },
+    {
+      "claim_id": "fc94fafc-086f-4f90-9dc4-3e52fc597d8d",
+      "result_id": "42eb6323-ceae-4958-8fb0-743dec7108f6"
+    },
+    {
+      "claim_id": "2c818850-0f2d-4e57-9075-ff3a0c92f853",
+      "result_id": "42eb6323-ceae-4958-8fb0-743dec7108f6"
+    },
+    {
+      "claim_id": "5f7d4d99-68ca-4796-a913-bdd4e609b201",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "926c713a-96dc-4ade-b919-74f4176a6b39",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "902ede9e-fa95-439b-add5-3e48b8a3692e",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "1a744edf-c9a9-4b0a-ae9c-7cf0e264883e",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "2034c698-a4c7-44c1-bf01-0b8f98df3612",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "949bd0a0-961c-4947-9ff6-44162108188d",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "23a113b5-c244-433a-b901-cb1bfb779b5a",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "cb766c15-910a-4000-b7d7-cc93414c2950",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "eee22fe8-7bd3-4b62-8c32-e79027e05b7d",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "b3726f13-9184-40cf-a0de-c1ed35811206",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "e23bcc44-385a-498f-aad4-fd7844e9e3aa",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "59d02893-7bc1-45a6-b693-2b9b785ac7c3",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "01d3f2e2-9bf4-4a35-a64a-69c4dbe38c40",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "ed6352a6-27ba-4515-82f9-fe2b6060a8e1",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "2a7f1b6a-ec04-4a0a-be19-84e880b19cb6",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "2235ab0c-12b3-4694-bba1-b2a914976e33",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "8135c3f6-7d1a-4964-97a1-7373e55d97e5",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "351bab09-b172-446a-8b3e-03ac79b167cc",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "4e317311-63d2-4e29-9517-acc12e06d191",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "70244fa0-70a2-4467-a8d1-2fe0cabb6a1c",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "721dff45-1e01-4f43-b624-0051604c8da1",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "17bb93a5-a928-4824-abaf-f297883af2a8",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "4776538d-4b23-44d5-a0fb-ceebef57a3d4",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "d22940db-50a7-4d97-aa78-efe1bdd6ecf2",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "33df3033-8b28-481a-8bb4-5a31cb30a8a3",
+      "result_id": "6c6d5406-8bee-4ac1-8942-6ccd55af5447"
+    },
+    {
+      "claim_id": "431c2cda-db23-4600-87d6-d8da18b1b97e",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "2487f5ed-07c7-4c8a-937f-cd71de54742d",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "441f9211-01b5-4c12-97c9-f8da5a8861d9",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "c107691e-7edf-4430-84fd-b53046782481",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "55783767-df1c-4847-a19f-6a41f452361a",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "80612013-fcc9-4c41-b66a-da099faaa0b3",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "e948c224-eeb1-4932-9f5a-a23680508c64",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "19bfc94d-5a71-4522-9ca2-7b0350716bbb",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "2876fd98-eec6-49fc-b583-e22757335506",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "e6270efa-1941-45fb-837e-3a9918730eff",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "83629dfc-96c5-467b-8622-4acf1effb5cb",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "a62319a8-a146-450a-85ac-026d01150463",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "fef5c99f-e633-4f3c-9742-6a1d3f36fc9b",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "e3cc58b2-3729-4c74-a588-3d96947875e8",
+      "result_id": "a07fb1c1-07b8-4350-98f9-30fc16771398"
+    },
+    {
+      "claim_id": "9130b7e1-cefc-4fff-8a6d-13b63c94bc8c",
+      "result_id": "ad3caf67-d976-4940-8d82-9cc113cf9d44"
+    },
+    {
+      "claim_id": "133e65dc-d0f8-481b-b6c3-a84fc5d71929",
+      "result_id": "ad3caf67-d976-4940-8d82-9cc113cf9d44"
+    },
+    {
+      "claim_id": "c8b4c756-d8d0-4ce3-869f-0a624ac650c0",
+      "result_id": "ad3caf67-d976-4940-8d82-9cc113cf9d44"
+    },
+    {
+      "claim_id": "f0a7f9d5-f790-4449-ab73-6a48a0a341f0",
+      "result_id": "ad3caf67-d976-4940-8d82-9cc113cf9d44"
+    },
+    {
+      "claim_id": "57ce062a-64f7-4557-9327-baa435201591",
+      "result_id": "ad3caf67-d976-4940-8d82-9cc113cf9d44"
+    },
+    {
+      "claim_id": "a992d1fc-77b5-48fe-bcc8-483cfd63b19f",
+      "result_id": "ad3caf67-d976-4940-8d82-9cc113cf9d44"
+    },
+    {
+      "claim_id": "5171dd57-23dc-4a4d-aa0b-56545e845e72",
+      "result_id": "e95ffaa6-28c6-4161-b31d-ba820ea59e67"
+    },
+    {
+      "claim_id": "85d78e1e-e71e-4832-9f01-a066fce76e93",
+      "result_id": "e95ffaa6-28c6-4161-b31d-ba820ea59e67"
+    },
+    {
+      "claim_id": "e84bb651-3851-4967-a133-1c2262d1e2c2",
+      "result_id": "e95ffaa6-28c6-4161-b31d-ba820ea59e67"
+    },
+    {
+      "claim_id": "e0ec7cf4-48c4-4592-ab5e-20e9e951afaf",
+      "result_id": "e95ffaa6-28c6-4161-b31d-ba820ea59e67"
+    },
+    {
+      "claim_id": "1543b399-a3b2-4ea6-827c-3083c7de8cb9",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "821fd4d1-7695-4942-b0ea-56eabeb303cb",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "b5765703-7a0f-4326-bb4d-b71344b29bff",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "cf0e0eaf-de8b-4434-bfbc-f5b0e2ea45b3",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "712f2d8c-83bd-4195-9872-9c4f524f201d",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "cf8712c4-7c7f-48ee-9030-bc3e01160b4c",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "4baa1949-49f7-475b-8eac-2915c2cf28df",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "aaeb9e9f-0e49-49ea-9dd2-325600d31e77",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "4078c800-ec65-41f6-9f7c-fd5323ed7faa",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "6d519fd8-0d2d-4151-90f1-1510e336d0ee",
+      "result_id": "cccbc3a6-b239-4714-957d-2235c9ba586c"
+    },
+    {
+      "claim_id": "e7121068-b62c-42b3-b5e9-efd15f318522",
+      "result_id": "7a40562d-1bc6-4f4e-a764-1b6d9850d2be"
+    },
+    {
+      "claim_id": "06d65f63-1395-49bb-b88d-4e0cf1d7175f",
+      "result_id": "7a40562d-1bc6-4f4e-a764-1b6d9850d2be"
+    },
+    {
+      "claim_id": "c628f399-5633-431e-a703-265ab6684b7f",
+      "result_id": "7a40562d-1bc6-4f4e-a764-1b6d9850d2be"
+    },
+    {
+      "claim_id": "9edb30ba-b1ee-4393-9152-9dedd0a8c293",
+      "result_id": "7a40562d-1bc6-4f4e-a764-1b6d9850d2be"
+    },
+    {
+      "claim_id": "80bfefae-b4d5-42d0-9ae1-113af718d192",
+      "result_id": "7a40562d-1bc6-4f4e-a764-1b6d9850d2be"
+    },
+    {
+      "claim_id": "087c5a55-e200-49ca-a538-29e6e104556e",
+      "result_id": "7a40562d-1bc6-4f4e-a764-1b6d9850d2be"
+    },
+    {
+      "claim_id": "c14e6cc7-36d1-4ddf-8b3c-f97598885e27",
+      "result_id": "8498b612-77ad-423f-9898-e3b27f29e091"
+    },
+    {
+      "claim_id": "fac1c2d6-543f-4898-a6d2-fceb4667999f",
+      "result_id": "8498b612-77ad-423f-9898-e3b27f29e091"
+    },
+    {
+      "claim_id": "50c6f6b9-cf61-48c8-8afc-e707334ff87c",
+      "result_id": "8498b612-77ad-423f-9898-e3b27f29e091"
+    },
+    {
+      "claim_id": "f335c969-f27a-45f3-b4c1-0b0dc59934e6",
+      "result_id": "8498b612-77ad-423f-9898-e3b27f29e091"
+    },
+    {
+      "claim_id": "596727bb-7e84-45e0-adc5-23ec2e84eb68",
+      "result_id": "a373e23e-6698-4bd9-b5e2-c28d45649ac9"
+    },
+    {
+      "claim_id": "bd70b2d6-dc6c-42f1-876a-a6663b459bfe",
+      "result_id": "a373e23e-6698-4bd9-b5e2-c28d45649ac9"
+    },
+    {
+      "claim_id": "7ebc69f6-86cd-4d40-85ec-b3d97d8f4852",
+      "result_id": "a373e23e-6698-4bd9-b5e2-c28d45649ac9"
+    },
+    {
+      "claim_id": "4edfa03c-68d8-4c88-8963-c0a72d5ad951",
+      "result_id": "20d640e7-df88-4106-a32b-ea9b09b14caf"
+    },
+    {
+      "claim_id": "425fdbae-68da-4809-9791-50c3116e4a19",
+      "result_id": "20d640e7-df88-4106-a32b-ea9b09b14caf"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "AD cortical nuclei display increased DNA content variation (DCV) averaging ~8% over non-diseased controls and ~6% over age-matched samples, with >90% of AD cortex samples showing net increases. This increase is subgenomic (less than tetraploid but more than single chromosome gain), region-specific to cortex vs cerebellum, and independent of age, Braak score, postmortem interval, and nuclear size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DNA content findings are well-supported by multiple lines of evidence: (1) propidium iodide flow cytometry validated by whole genome amplification (C39-40), (2) consistent findings across 32 AD samples with appropriate controls (C43-44), (3) paired cortex-cerebellum comparisons from same individuals (C47), and (4) statistical significance with proper controls for confounding variables (C47-48). The quantitative estimates are reasonable and the subgenomic nature is appropriately characterized (C49-50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Neurons are the major cellular locus for increased DCV in AD, with NeuN-positive cortical neurons showing ~9% DNA content gain over NeuN-negative nuclei and significantly increased DNA content compared to cerebellar neurons from the same brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specificity is demonstrated through NeuN immunolabeling combined with flow cytometry (C53-55), showing statistically significant differences between neuronal and non-neuronal populations. The paired comparison design (cortex vs cerebellum from same individual) strengthens the conclusion. However, the authors appropriately note this doesn't exclude effects on non-neuronal cells (C56), showing appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Three of six AD samples showed significant APP copy number increases (3.9-6.3 copies) in small population qPCR compared to paired cerebellar samples, with no similar amplification in non-diseased brains. AD samples displayed substantial variability in APP copies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the small population qPCR shows APP amplification in 50% of AD samples (C57) with appropriate controls (C58), the substantial variability (C59) and limited sample size (N=6 AD, N=4 control) raise concerns about statistical power and reproducibility. The authors acknowledge this variability highlights limitations of small population analysis and necessity for single-cell approaches, which is appropriate scientific reasoning. However, the 50% detection rate requires explanation - is this technical limitation or biological heterogeneity?",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C79",
+      "C96",
+      "C97"
+    ],
+    "result": "Increased DNA content and APP copy number in AD are not due to trisomy 21. FISH analysis of ~7,550 nuclei (4,974 AD, 2,576 control) from 14 brains showed no statistically significant changes in chromosome 21 aneuploidy rates between AD and non-diseased brains, despite using liberal counting criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trisomy 21 exclusion is well-supported by: (1) large sample size with blinded counting by multiple observers (C60), (2) liberal counting criteria that would favor detection if present, (3) validated FISH methodology using dual probes, and (4) consistency with prior literature showing ~2N APP levels in bulk tissue (C96). The conclusion that alternative CNV mechanisms must explain APP copy numbers >3 is logically sound (C61-62). This is a critical negative result that rules out a major alternative hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C85"
+    ],
+    "result": "Single-cell qPCR analysis of 154 neuronal nuclei from 6 brains (3 AD, 3 control) identified mosaic APP copy number increases up to 12 copies in individual AD cortical neurons. AD cortical nuclei showed increased average copy numbers (~3.8-4 copies) over controls (~1.7-2.2 copies), with ~4-fold increase in nuclei with >2 APP copies (55-66% vs 12-15%) and significantly higher copy numbers in amplified nuclei (~5 vs ~3 copies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-cell qPCR data are supported by: (1) optimized microfluidic protocol with high replication (18 replicates per assay per nucleus), (2) concordance between two APP exons separated by 178kb (C64), (3) appropriate normalization to reference genes, (4) statistically significant differences between AD cortex and all control groups (C65-67), and (5) reasonable sample size of 154 nuclei. The methodology addresses limitations of bulk analysis. However, concerns include: potential amplification bias, reliance on reference gene stability in mosaic populations, and whether 154 nuclei adequately samples the heterogeneity suggested by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "PNA-FISH combined with super-resolution microscopy provides independent validation of APP amplification, detecting threshold signals in 56% of AD neuronal nuclei vs 22% in non-diseased and 14% in Down syndrome. The fluorescence intensity distributions parallel single-cell qPCR results, and the method requires no amplification or normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The PNA-FISH approach is innovative and provides amplification-free validation (C87), with intensity distributions resembling qPCR data (C76, C88). However, several concerns limit confidence: (1) the method required extensive optimization and cannot detect single copies (C70, C75), raising questions about detection threshold and quantification accuracy, (2) the 56% detection rate in AD is lower than the 55-66% with >2 copies by qPCR, suggesting potential false negatives, (3) the empirical threshold determination (C71) may introduce bias, (4) super-resolution microscopy interpretation is subjective, and (5) the variable morphologies and intensities (C73) complicate quantitative interpretation. While this provides important orthogonal validation, the technical limitations prevent this from being fully conclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C77",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that somatic genomic mosaicism, including mosaic APP amplification, has functionality in the CNS and provides a mechanism linking familial AD pathogenicity to sporadic AD. Concomitant DCV increases suggest effects on other loci beyond APP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This mechanistic interpretation (C77, C81) is based on convergent evidence from five methods (C78), which is a strength. However, the claim of 'functionality' (C10) is not directly demonstrated - the data show association with disease but not causation or functional consequences. The authors appropriately acknowledge they cannot exclude downstream effects (C82), but the functional claim remains speculative. The suggestion of effects on other loci (C80) is reasonable given DCV exceeds what APP amplification alone would produce, but these loci are not identified. This represents a working hypothesis rather than a proven mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C83",
+      "C84",
+      "C89",
+      "C90"
+    ],
+    "result": "Five independent experimental approaches were used to assess genomic variation, chosen because single-cell sequencing technology has insufficient resolution (~2-5 Mb) to detect APP locus changes (<0.3 Mb). Current techniques cannot assess intact neurons, histological organization, or precise CNV structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological justification is sound: single-cell sequencing resolution (C83) is indeed insufficient for the APP locus size (C84), making the targeted approaches necessary. The acknowledgment of limitations (C89-90) demonstrates appropriate scientific rigor. The use of five independent methods (C36) with orthogonal validation is a major strength. However, each method has specific limitations that should be considered when interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The findings support the amyloid hypothesis by providing an explanation for universal A\u03b2 plaques in sporadic AD despite absence of constitutive APP copy number gain. Rare APP amplifications in non-diseased aged brains may explain occasional plaques in normal aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This interpretation connects the findings to the amyloid hypothesis (C91-92) in a logical way (C93), and the explanation for plaques in aged normal brains (C94) is reasonable. However, this remains correlative - the data show APP amplification and separately note the presence of plaques, but do not directly demonstrate that the amplified neurons produce the plaques or that amplification is sufficient for plaque formation. The inference is plausible but not proven by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The subgenomic DNA increases (~8.2% average, ~21% maximum) are consistent with absence of adult cortical neurogenesis and may involve subgenomic DNA synthesis in post-mitotic neurons. Genomic alterations could occur through developmental or aging processes, possibly via dysfunction of DNA repair mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The quantitative characterization of subgenomic increases (C98) is data-supported, and consistency with absence of neurogenesis (C99) is a reasonable inference. However, the mechanistic proposals (C100-104) are largely speculative, appropriately indicated by language like 'could be,' 'may,' and 'possible.' The connection to DNA repair dysfunction (C103) and cell death avoidance (C104) are hypotheses requiring testing. The citations to developmental processes (C101-102) provide context but don't prove the mechanism in AD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "DNA content changes vary by brain region and cell type, with post-mitotic neurons showing more DCV than proliferating lymphocytes. This may reflect selection against genomic variation in dividing cells, with DCV potentially enabling diverse neuronal functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of regional and cell-type variation (C105) is data-supported. The comparison with lymphocytes (C107) is interesting, and the speculation about selection in dividing cells (C109-110, supported by citations) is reasonable. However, the functional interpretation (C111-112) is speculative. The authors appropriately use conditional language ('may,' 'would suggest'), but these remain hypotheses. The cited support for aneuploid cell elimination (C110) provides some mechanistic plausibility but doesn't prove the proposed model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors hypothesize that diverse AD risk factors (age, trauma) might converge on genomic mosaicism, that other genomic loci may contribute to AD presentation, and that other sporadic brain diseases could arise through similar mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly presented as hypotheses and speculation (C113, C115) extending beyond the data. While the ideas are scientifically interesting and the citations provide some support (C113), these claims are not tested in the current study. The suggestion about other loci (C114) is reasonable given the DCV data but remains unproven. These represent future directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background context establishing that neuronal genomic mosaicism exists in various forms (aneuploidy, LINE elements, CNVs, DCV), that AD is characterized by amyloid plaques and affects the prefrontal cortex, that APP gene dosage is linked to AD pathogenesis in familial cases and Down syndrome, but that prior studies failed to detect APP amplification in sporadic AD bulk tissues, leading to the study hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to established literature (C1, C11-14, C15-29, C30, C32). The definition of DCV (C33) is clear. The gap in knowledge (C30-31) appropriately motivates the study. The hypothesis (C34-35) logically follows from the background. This provides appropriate scientific context.",
+    "result_type": "MINOR"
+  }
+]

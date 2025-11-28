@@ -1,0 +1,2036 @@
+{
+  "submission": {
+    "id": "8083a7a7-83c5-43a3-a6be-3b6b9dd2a4ad",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:07:28.506358Z",
+    "updated_at": "2025-11-28T22:07:28.506358Z"
+  },
+  "content": [
+    {
+      "id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "submission_id": "8083a7a7-83c5-43a3-a6be-3b6b9dd2a4ad",
+      "content_type": "manuscript",
+      "content_text": "# A genuine layer 4 in motor cortex with prototypical synaptic circuit connectivity\n\n## Authors\n\n- Naoki Yamawaki<sup>1</sup>\n- Katharine Borges<sup>1</sup>\n- Benjamin A Suter<sup>1</sup> ([ORCID: 0000-0002-9885-6936](https://orcid.org/0000-0002-9885-6936))\n- Kenneth D Harris<sup>2</sup>\n- Gordon M G Shepherd<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Physiology, Feinberg School of Medicine Northwestern University Chicago United States\n2. Institute of Neurology University College London London United Kingdom\n3. Department of Neuroscience, Physiology, and Pharmacology University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe motor cortex (M1) is classically considered an agranular area, lacking a distinct layer 4 (L4). Here, we tested the idea that M1, despite lacking a cytoarchitecturally visible L4, nevertheless possesses its equivalent in the form of excitatory neurons with input\u2013output circuits like those of the L4 neurons in sensory areas. Consistent with this idea, we found that neurons located in a thin laminar zone at the L3/5A border in the forelimb area of mouse M1 have multiple L4-like synaptic connections: excitatory input from thalamus, largely unidirectional excitatory outputs to L2/3 pyramidal neurons, and relatively weak long-range corticocortical inputs and outputs. M1-L4 neurons were electrophysiologically diverse but morphologically uniform, with pyramidal-type dendritic arbors and locally ramifying axons, including branches extending into L2/3. Our findings therefore identify pyramidal neurons in M1 with the expected prototypical circuit properties of excitatory L4 neurons, and question the traditional assumption that motor cortex lacks this layer.\n\n## Introduction\n\n\u2018Agranular\u2019 cortical regions such as the primary motor cortex (M1; area 4) are so named as they are commonly held to lack layer 4 (L4) (Brodmann, 1909). The apparent absence of L4 has strongly influenced theories of cortical organization (Shipp, 2005; Bastos et al., 2012; Shipp et al., 2013). Nevertheless, various observations\u2014such as subtle changes in cell density, expression patterns of various molecular markers, branching patterns of thalamocortical axons, and retrograde labeling termination\u2014suggest that motor cortex might contain some sort of L4 homolog (Krieg, 1946; von Bonin, 1949; Caviness, 1975; Desch\u00eanes et al., 1979; Skoglund et al., 1997; Cho et al., 2004; Kuramoto et al., 2009; Rowell et al., 2010; Mao et al., 2011; Kaneko, 2013; Garc\u00eda-Cabezas and Barbas, 2014). For example, Rorb expression in mouse S1 is highest in L4 (Schaeren-Wiemers et al., 1997) (Figure 1A), and a similar if weaker and thinner pattern is seen in M1 (Figure 1B), coincident with the L3/5A border (Schaeren-Wiemers et al., 1997; Shepherd, 2009; Rowell et al., 2010). In primate M1, Rorb is also expressed but at lower levels than in sensory cortices (Bernard et al., 2012), and a recent report presented evidence for the existence of L4 based on cytoarchitecture and SMI-32 labeling patterns (Garc\u00eda-Cabezas and Barbas, 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05422/elife-05422-fig1-v2.jpg)\n\n**Figure 1.:** Images are from the Allen Mouse Brain Atlas (http://mouse.brain-map.org/) (Lein et al., 2007) showing coronal sections for Rorb in situ hybridization (probe Rorb-RP_071018_01_H03) and corresponding Nissl stains. (A) S1 labeling. In a Nissl-stained section (left), L4 is readily identifiable due to cell density differences across layers. In situ hybridization labeling of Rorb (center, with corresponding expression intensity image shown on the right) is the strongest in L4 (long arrow, with borders indicated by lines), with weaker labeling present in L5A/B (short arrow). (B) M1 labeling. Nissl stain (left) showing a region of the lateral agranular cortex corresponding to the forelimb representation area of M1 (same section as in panel A). L4 is not readily identifiable based on cell density differences alone. Nevertheless, in situ hybridization against Rorb (center and right) shows the strongest labeling in a laminar zone corresponding to L4 in S1 (long arrow, with borders indicated by lines), with weaker labeling present in L5A/B (short arrow). Scale on the far right shows the normalized cortical distance from pia to white matter (WM). The approximate location of the cortical layers is indicated, based on prior quantitative analysis of the bright-field optical appearance of M1 layers (Weiler et al., 2008).\n\nAlthough evidence based on markers is useful and highly suggestive, establishing that M1 truly possesses a functional L4 requires showing that neurons in this band have the same input\u2013output connectivity as their counterparts in sensory areas (Alfano and Studer, 2012; Feldmeyer et al., 2013). In barrel and other sensory cortices in rodents, L4 is characterized by strong input from primary thalamus, an extensive and largely unidirectional projection to the superficial cortical layers, a paucity of inputs from other cortical areas, and a paucity of long-range cortical outputs (Petersen, 2007; Svoboda et al., 2010; Feldmeyer, 2012). We found that mouse M1 contains pyramidal neurons in a thin laminar zone at the L3/5A border with all these properties.\n\n## Results\n\n### Thalamocortical (TC) input to M1-L4 neurons\n\nIn sensory cortical areas, L4 neurons receive strong thalamocortical (TC) excitation from primary sensory thalamic nuclei (Douglas and Martin, 2004; Feldmeyer, 2012; Harris and Mrsic-Flogel, 2013). If the Rorb-expressing zone in M1 is similarly organized, then neurons in that laminar location should receive strong TC input from the primary motor thalamic nuclei, particularly the ventrolateral nucleus (VL). This is suggested by previous anatomical work (Strick and Sterling, 1974; Jones, 1975; Cho et al., 2004; Kuramoto et al., 2009; Kaneko, 2013); however, while monosynaptic VL input to pyramidal neurons in the upper layers of vibrissal M1 was recently demonstrated using an optogenetic-electrophysiological approach (Hooks et al., 2013), it was not possible to determine if this input terminated in a putative L4 or L2/3, as vibrissal M1 is highly compressed due to its location at a cortical flexure (von Economo, 1929; Hooks et al., 2011).\n\nIn this study, we focused on the forelimb area of M1 (Weiler et al., 2008; Tennant et al., 2010), located in the lateral agranular cortex (area 4) (Caviness, 1975) where the upper layers are not compressed in this manner, and putative L4 can be more easily distinguished from more superficial layers. (For convenience, we henceforth refer to this forelimb region simply as \u2018M1\u2019.) To map input connections, we used an optogenetic strategy (Hooks et al., 2013), injecting AAV-ChR2-Venus in VL and subsequently preparing coronal slices containing M1; recording conditions were set to isolate monosynaptic inputs (Petreanu et al., 2009).\n\nLaminar profiles of the fluorescence intensity of labeled VL axons showed three peaks, in L1, the L3/5A border, and the L5B/6 border, similar to vibrissal M1 (Hooks et al., 2013) (Figure 2A). In each slice, we recorded from neurons at the L3/5A border (i.e., putative L4 neurons) and from additional neurons across other layers, thereby obtaining a laminar profile of the excitatory TC input from VL (Figure 2B,C). This analysis revealed two distinct peaks of TC input, the uppermost of which coincided with the L3/5A border (normalized cortical depth, \u223c1/3) (Figure 2C,D,E). These data thus indicate that M1 contains neurons in a laminar zone corresponding to L4 that receives strong monosynaptic excitatory TC input from a primary thalamic nucleus associated with this cortical area, thereby fulfilling one important circuit-level criterion for the identification of L4 in M1. For convenience, we henceforth refer to these as M1-L4 neurons.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05422/elife-05422-fig2-v2.jpg)\n\n**Figure 2.:** (A) Epifluorescence image of coronal slice containing M1, showing laminar pattern of labeled thalamocortical axons following injection of AAV carrying ChR2 and GFP in the ventrolateral (VL) region of the thalamus. S1 cortex is located laterally (to the left, as indicated). Scale shows normalized cortical distance. Yellow arrow indicates laminar zone of labeling where strong photostimulation-evoked electrophysiological responses were also detected. Plot to the right shows laminar profile of fluorescence intensity, in arbitrary units (A.U.), across layers (normalized distance from pia). (B) Responses recorded (sequentially) in vitro in multiple M1 neurons in different layers (as indicated) to photostimulation of ChR2-labeled axons originating from motor thalamus (VL) neurons (Hooks et al., 2013). (C) Laminar profile of VL input to M1 neurons. The profile exhibits two peaks, one in the upper \u223c1/3 of the cortex (corresponding to L4) and the other in the lower part (corresponding to L5B). (D) Laminar profiles obtained from multiple slices (n = 6). Most profiles show a clear peak at a normalized depth of \u223c1/3 (black arrow). (E) Average laminar profile (black; bars: s.e.m.), calculated by binning the data for each profile (bin width: 1/10 of the normalized cortical depth), averaging within each bin, and then averaging across all profiles. The individual profiles are also shown (gray).\n\nPrior to investigating the intracortical circuits of M1-L4 neurons (next section), we extended this analysis of TC inputs to address whether M1-L4 neurons also receive inputs from the posterior nucleus (PO) of the thalamus. The fluorescence intensity of the labeled PO axons showed peaks corresponding to L1 and the L3/5A border (but, unlike the VL profile, not the L5B/6 border), similar to the pattern in vibrissal M1 (Hooks et al., 2013) (Figure 3A). Laminar profiles of the relative amount of monosynaptic TC input from PO axons to M1 neurons (Figure 3B,C) showed a broad peak in the upper layers that included L4 and adjacent layers (Figure 3D,E). Thus, PO's laminar input pattern in M1 resembled its laminar innervation of secondary somatosensory cortex (S2) (Pouchelon et al., 2014) and the septum-related columns of rat barrel cortex (Lu and Lin, 1993; Feldmeyer, 2012), rather than its innervation of S1 barrel-related columns themselves (Feldmeyer, 2012).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05422/elife-05422-fig3-v2.jpg)\n\n**Figure 3.:** (A) Epifluorescence image of coronal slice containing M1, showing laminar pattern of labeled thalamocortical axons following injection of AAV carrying ChR2 and GFP in the PO region of the thalamus. S1 cortex is located laterally (to the left, as indicated). Scale shows normalized cortical distance. Yellow arrow indicates laminar zone of labeling where strong photostimulation-evoked electrophysiological responses were also detected. Plot to the right shows laminar profile of fluorescence intensity, in arbitrary units (A.U.), across layers (normalized distance from pia). (B) Responses recorded (sequentially) in vitro in multiple M1 neurons in different layers (as indicated) to photostimulation of ChR2-labeled axons originating from sensory thalamus (posterior nucleus; PO) neurons (Hooks et al., 2013). (C) Response amplitudes of the same neurons plotted as a function of laminar location, providing a laminar profile of VL input to M1 neurons. The profile exhibits one peak, situated in the upper \u223c1/3 of the cortex, somewhat wider (vertically) compared with the peak of VL input, spanning the laminar zone corresponding to L4. (D) The laminar profiles obtained from multiple slices (n = 4). Profiles show a broad peak at a normalized depth of \u223c0.2\u20130.5 (black arrow). (E) Average laminar profile (black; bars: s.e.m.), calculated by binning the data for each profile (bin width: 1/10 of the normalized cortical depth), averaging within each bin, and then averaging across all profiles. The individual profiles are also shown (gray).\n\n### Excitatory output from M1-L4 neurons to L2/3\n\nNext, we tested whether M1-L4 neurons project to L2/3, as L4 neurons do in sensory cortex (Feldmeyer, 2012). Previous studies in mouse forelimb M1 using glutamate uncaging and laser scanning photostimulation (glu-LSPS) to map local circuits have suggested that neurons around L3/5A border zone can excite L2/3 neurons (Weiler et al., 2008; Wood et al., 2009; Wood and Shepherd, 2010) but lacked the spatial specificity to isolate a putative L4. We examined this pathway by mapping local input to L2/3 neurons at high spatial sampling density (75 \u00b5m grid spacing) both in M1 and, for comparison, in the adjacent S1 (Figure 4A). To facilitate this side-by-side comparison, in these experiments (only), we used sagittal instead of coronal slices. Synaptic input maps for M1-L2/3 neurons showed a local peak of excitatory input strength arising at the location of the hypothesized L4 (Figure 4B). Synaptic input maps for S1-L2/3 neurons were generally similar, but with stronger and spatially more focused excitation from L4, roughly the size and shape of a L4 barrel (Figure 4C). The stronger input may partly reflect the higher cell density in barrels (Figure 1A,B) (Hooks et al., 2011). The laminar profile of L4 input to L2/3 neurons was topographically similar in M1 and S1 (Figure 4D,E); that is, the M1 profile was a scaled version of the S1 profile, with a distinct locus of input from L4 (plot in Figure 4D). Thus, in M1, the strongest ascending input to the L2/3 neurons arose from the L3/5A border, at a normalized cortical depth of \u223c1/3, confirming the presence of a L4\u21922/3 excitatory projection in M1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05422/elife-05422-fig4-v2.jpg)\n\n**Figure 4.:** (A) Top: bright-field image of a parasagittal slice containing motor (M1) and somatosensory (S1) cortex. In S1, L4 barrels are easily discernable, but are absent from M1, where L5A (lighter-appearing laminar zone) appears wider than in S1. Graduated scale indicates cortical depth in normalized units, from the pia (0) to the white matter (1). Yellow boxes indicate placement of photostimulation grid for mapping inputs to L2/3 neurons in both cortical areas. Bottom: Schematic indicating the major areas and layers of interest in the image. (B) Example of a synaptic input map recorded in a L2/3 neuron in M1. Grid spacing was set to 75 \u00b5m, the top of the grid was flush with the pial surface, and the grid was horizontally centered over the soma (triangle). Cortical layers indicated to the left, with the location of the L3/5A border (as observed under bright-field) marked by a horizontal line. Inputs arise from both this L4-like laminar zone and the lateral sites in L2/3. Photosimulation sites where the postsynaptic neuron's dendrites were directly stimulated were excluded from analysis and are shown as black pixels. (C) Example of a synaptic input map recorded in a L2/3 neuron in S1. Same mapping parameters as in B. The input pattern is similar to that of the M1 example shown in B, but with weaker L2/3 and stronger ascending input from the subjacent region corresponding to the L4 barrel layer. (D): Mean input map for M1 neurons (n = 14). The laminar profile (plotted to the right of the map; red, M1; gray, S1) shows a peak at the level of the L3/5A border (black arrow), \u223c0.5 mm deep, corresponding to \u223c1/3 of the normalized cortical depth (DN) in both M1 and S1. The bottom plot shows the L4 region of the same plot, with the input profiles normalized (IN) to their peak values in L4 (arrow); the scaled M1 profile closely resembles the S1 profile. (E): Mean input map for S1 neurons (n = 13).\n\nA characteristic feature of L4 in sensory cortex is that the projection from L4 to L2/3 is primarily unidirectional, as L4 neurons receive primarily intralaminar excitatory input (Lorente de N\u00f3, 1949; Feldmeyer et al., 2002; Schubert et al., 2003; Lefort et al., 2009; Hooks et al., 2011; Feldmeyer, 2012). To assess whether this also applies to M1, we drew on a previously acquired data set of glu-LSPS input maps (Weiler et al., 2008) to further analyze the subset of maps from neurons located in the L4-like zone in M1. The input maps of these neurons typically showed an overall paucity of input, which arose mainly from nearby intralaminar sites (Figure 5A). Plotting the median input map of these 10 neurons confirmed that inputs to these L4 neurons arose mostly from L4, with relatively weak input from L2/3 and other layers (Figure 5B). Only 2 of 10 neurons received distinct loci of input from other layers: one neuron received relatively weak inputs from L5B/6 (Figure 5C) and a second received strong input from L2/3 (Figure 5D). These two neurons were at similar laminar locations as the others, suggesting some heterogeneity among M1-L4 neurons' local circuits. Nevertheless, input maps of L4 neurons were generally distinct from those of neurons in mid-L2/3 (see above), and from those of neurons in low-L5A, which typically, and in sharp contrast to the L4 neurons studied here, receive strong L2/3 input (Weiler et al., 2008; Anderson et al., 2010). Statistical analysis confirmed that L4 input to L2/3 neurons was greater than L2/3 input to L4 neurons by a factor of nearly 4 (L4\u21922/3: \u22123.9 pA median amplitude, n = 17; L2/3\u21924: \u22121.0 pA, n = 10; p = 0.0062, rank-sum test) (Figure 5E). These analyses thus confirm that L4 neurons in M1 receive mostly intralaminar, rather than interlaminar, excitatory input, and that L4\u21922/3 projections are predominantly unidirectional.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05422/elife-05422-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example of a typical synaptic input map recorded from a M1-L4 neuron, showing mostly intralaminar excitatory input (arrow), and little L2/3 input. The triangle marks the location of the soma, and the black pixels represent photostimulation sites resulting in direct dendritic responses. (B) Median input map for M1-L4 neurons (n = 10). Excitatory input arose mostly from intralaminar sources, with notably little from L2/3 sites. The laminar profile (plotted to the right of the map; red, median \u00b1 median absolute deviation; gray, individual cells) shows a peak at the level of the L3/5A border, \u223c0.5 mm deep, corresponding to \u223c1/3 of the normalized cortical depth (DN). (C) A M1-L4 neuron showing both intralaminar sources of excitation and ascending excitation from L5B/6 sites (arrow). (D) An exceptional M1-L4 neuron. (E) Comparison of the individual (gray circles) and median (black lines) amplitudes of L4 input to M1-L2/3 neurons vs L2/3 input to M1-L4 neurons (*p < 0.05, rank-sum test).\n\n### M1-L4 neurons receive and send relatively little long-range corticocortical input\n\nL4 neurons in primary sensory areas receive long-range inputs mostly from thalamus but not other cortical areas. In barrel cortex, for example, interhemispheric (callosal) axons from contralateral S1 excite neurons in all layers except L4 (Petreanu et al., 2007). We therefore assessed whether M1-L4 neurons similarly receive relatively little long-range cortical input from contralateral M1. We used the same optogenetic-electrophysiological paradigm employed in the TC experiments described above, with AAV-ChR2-Venus injections targeted to contralateral M1. The fluorescence intensity of the labeled corticocallosal axons showed a dip at the location of putative L4 (Figure 6A), and laminar profiles of electrophysiologically measured callosal input (Figure 6B,C) indicated a nadir at the level of the L3/5A border (Figure 6C,D,E). This pattern was complementary to that of thalamic input from VL, that is, callosal input was strong to neurons in L2/3 and weak to those in L4, and vice versa for VL input (Figure 6F). Thus, L4 neurons in M1, similar to S1, receive relatively little long-range corticocallosal input from contralateral M1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05422/elife-05422-fig6-v2.jpg)\n\n**Figure 6.:** (A) Epifluorescence image of coronal slice containing M1, showing laminar pattern of labeled interhemispheric corticocortical axons following injection of AAV carrying ChR2 and GFP in the contralateral M1. Scale shows normalized cortical distance. Arrow indicates laminar zone of labeling where weakest photostimulation-evoked electrophysiological responses were also detected. Plot to the right shows laminar profile of fluorescence intensity, in arbitrary units (A.U.), across layers (normalized distance from pia). (B) Responses recorded (sequentially) in vitro in multiple M1 neurons in different layers (as indicated) to photostimulation of ChR2-labeled axons of contralateral M1 neurons infected with AAV-ChR2. (C) Response amplitudes of the same neurons plotted as a function of laminar location, providing a laminar profile of contralateral M1 input to M1 neurons. The profile exhibits a dip in the upper \u223c1/3 of the cortex (corresponding to L4) (arrow). (D) The laminar profiles were obtained from multiple slices (n = 4). Profiles show a dip \u223c1/3 deep in the cortex (in normalized coordinates). (E) Average laminar profile (black; bars: s.e.m.), calculated by binning the data for each profile (bin width: 1/10 of the normalized cortical depth), averaging within each bin, and then averaging across all profiles. The individual profiles are also shown (gray). (F) Comparison of input from callosal axons (from contralateral M1; n = 4 slices) vs thalamic axons (from VL; n = 6 slices), recorded in postsynaptic L2/3 and L4 neurons in M1 (*p < 0.01, rank-sum test). For each slice, values within each laminar zone (in units of normalized cortical depth: L2/3, 0.1 to 0.25; L4, 0.29 to 0.37) were averaged to obtain a single value per profile; these were averaged and plotted with error bars representing the s.e.m. (G) Representative epifluorescence image (left) showing gap (marked by yellow arrows) at the level of L4 (\u223c1/3 deep in the cortex, in normalized distance units) in the retrograde labeling of M1 neurons following injection of retrograde tracers in contralateral M1. Two-photon microscopic image (right) showing the same labeling pattern at a higher resolution (different animal). Some neurons within the \u2018gap\u2019 are labeled with the retrograde tracer (green arrow). (H) Laminar profiles of fluorescence intensity of M1 neurons projecting to contralateral M1. Each trace represents the average profile for one animal, obtained by averaging several M1-containing slices. For display, the profiles were normalized to the value in L4 (specifically, the value at a normalized cortical depth of 1/3). The bold line is the average of three animals. There is a reduction in labeling intensity in the L4 region (arrow). (I) Representative epifluorescence image showing gap at the level of L4 in the retrograde labeling of M1 neurons following injection of retrograde tracers into ipsilateral M2, S1, and S2. (J) Laminar profiles of retrograde labeling pattern for ipsilateral injections. Average traces were calculated as in Panel G. The average (bold line) of three animals shows a zone of reduced labeling observed \u223c1/3 deep in the cortex, corresponding to L4 (arrow).\n\nAs well as receiving little long-range input, L4 neurons of sensory cortex typically send only weak long-range corticocortical output. Although exceptions to this rule exist, for example, in primate V1 (Nassi and Callaway, 2009), this pattern appears to hold in mouse S1, where a \u2018gap\u2019 is evident in L4 following retrograde tracer injection into ipsilateral vibrissal M1 (e.g., Sato and Svoboda, 2010). Furthermore, a similar gap has been noted in the upper layers of vibrissal M1 following retrograde tracer injections in S1, potentially corresponding to L4 (Mao et al., 2011). Consistent with this pattern, we observed relatively sparse labeling in M1-L4 following injection of retrograde tracers into contralateral M1 (Figure 6G). This laminar gap in labeling was not absolute; higher resolution imaging showed that some of the M1-L4 neurons were clearly labeled with the retrograde tracer but at lower intensity compared with cells in adjacent layers (Figure 6G). This gap was centered \u223c1/3 deep in the cortex (n = 3 mice) (Figure 6H). Similarly, following injection of retrograde tracers into multiple ipsilateral cortical areas (M2, S1, and S2, in the same animals), we observed a laminar zone with reduced labeling intensity, centered \u223c1/3 deep in the cortex (n = 3 mice) (Figure 6I,J). The overall average depth of the local minimum in L4 was 0.35 (normalized cortical depth; ipsi- and contralateral profiles pooled, n = 6). These labeling patterns indicate a relative paucity of long-range corticocortical projections originating from L4 of M1, as from L4 of sensory cortices.\n\n### Electrophysiological and morphological properties of M1-L4 neurons\n\nThe collective evidence from the preceding experiments indicated that M1 contains neurons having the expected input\u2013output circuits of L4 neurons. Having established that M1 does contain a L4 in the form of these hodologically defined L4 neurons, we next sought to characterize their cellular properties. First, we assessed the electrophysiological properties of these M1-L4 neurons. We recorded 56 neurons located across the upper layers of M1, from upper L2 through L5A. Recordings were targeted to any neurons appearing more likely to be excitatory (pyramidal/stellate) rather than inhibitory based on familiar soma features (shape and size) as observed under bright-field visualization at high magnification (Hooks et al., 2011; Apicella et al., 2012); all recorded cells had soma features typical of pyramidal neurons, as we did not observe any with stellate-like somata. For each neuron, we analyzed various passive and active membrane properties. Plotting these parameters vs soma depth showed diverse depth-dependent trends and patterns (circles in plots in Figure 7). To compare neurons in L4 to those in adjacent layers, we binned the data on the basis of the soma depths into three laminar groups, corresponding to L4, L2/3, and L5A (see \u2018Materials and methods\u2019). Statistical comparisons (Figure 7, Table 1) indicated that the electrophysiological properties of L4 neurons were not simply intermediate between those of L2/3 and L5A neurons. For example, L4 neurons were similar to L2/3 neurons but different from L5A neurons in Rinput, Ithresh, and SFA ratio. Conversely, L4 neurons resembled L5A neurons but differed from L2/3 neurons in Vr, AP width, and Vthresh \u2212 Vr. In the case of AP amplitude, the average was greater for L4 neurons than for L2/3 and L5A neurons. L4 neurons showed considerable variability in firing patterns, which ranged from regular and non-adapting to moderately and even strongly adapting, and in other cases highly irregular. From this analysis, we conclude that the properties of L4 excitatory neurons tend to differ from those of either L2/3 or L5A but with considerable cell-to-cell variability, particularly in spiking patterns. Firing pattern diversity has also previously been noted for S1-L4 neurons in rat barrel cortex (Staiger et al., 2004).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05422/elife-05422-fig7-v2.jpg)\n\n**Figure 7.:** (A) Resting membrane potential (Vr), plotted as a function of the cortical depth of the soma (normalized distance from pia). A total of 56 neurons were sampled across layers 2/3 through 5A. For analysis, neurons were binned into three main laminar groups corresponding to L2/3, L4, and L5A. The blue lines indicate the laminar range of each group, and also represent their mean \u00b1 s.e.m. values. Significant differences between groups are marked (*, rank-sum test). See \u2018Materials and methods\u2019 for additional details. (B) Input resistance (Rinput) vs soma depth. (C) Action potential (AP) width vs soma depth. (D) AP amplitude vs soma depth. (E) (Vthresh \u2212 Vr) vs soma depth. (F) Current (I) threshold vs soma depth. (G) Rinput vs Ithresh. (H) Slope of the frequency\u2013current (F\u2013I) relationship. (I) Spike-frequency adaptation (SFA) ratio. (J) Example traces, representing the various types of repetitive firing patterns observed among L4 neurons.\n\n**Table 1.**\n Electrophysiological properties of L2/3, L4, and L5A neurons in M1\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>L2/3 neurons (n = 15)</th>\n      <th>L4 neurons (n = 18)</th>\n      <th>L5A neurons (n = 8)</th>\n      <th>L2/3 vs L4</th>\n      <th>L4 vs L5A</th>\n      <th>L2/3 vs L5A</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Vr (mV)</td>\n      <td>\u221278 \u00b1 1</td>\n      <td>\u221272 \u00b1 1</td>\n      <td>\u221269 \u00b1 2</td>\n      <td>*0.00079</td>\n      <td>0.089</td>\n      <td>*0.00095</td>\n    </tr>\n    <tr>\n      <td>Rinput (Mohm)</td>\n      <td>65 \u00b1 4</td>\n      <td>71 \u00b1 7</td>\n      <td>148 \u00b1 17</td>\n      <td>0.99</td>\n      <td>*0.00095</td>\n      <td>*0.00034</td>\n    </tr>\n    <tr>\n      <td>Cm (pF)</td>\n      <td>146 \u00b1 12</td>\n      <td>109 \u00b1 11</td>\n      <td>90 \u00b1 7</td>\n      <td>0.038</td>\n      <td>0.42</td>\n      <td>*0.0061</td>\n    </tr>\n    <tr>\n      <td>Sag (%)</td>\n      <td>2.8 \u00b1 0.3</td>\n      <td>4.3 \u00b1 0.6</td>\n      <td>6.0 \u00b1 1.0</td>\n      <td>0.057</td>\n      <td>0.13</td>\n      <td>*0.0088</td>\n    </tr>\n    <tr>\n      <td>f-I slope (Hz/nA)</td>\n      <td>63 \u00b1 4</td>\n      <td>80 \u00b1 8</td>\n      <td>103 \u00b1 16</td>\n      <td>0.12</td>\n      <td>0.19</td>\n      <td>*0.0045</td>\n    </tr>\n    <tr>\n      <td>Ithresh (pA)</td>\n      <td>267 \u00b1 19</td>\n      <td>295 \u00b1 26</td>\n      <td>163 \u00b1 23</td>\n      <td>0.45</td>\n      <td>*0.0030</td>\n      <td>*0.0038</td>\n    </tr>\n    <tr>\n      <td>SFA ratio</td>\n      <td>0.89 \u00b1 0.02</td>\n      <td>0.89 \u00b1 0.02</td>\n      <td>0.74 \u00b1 0.05</td>\n      <td>0.91</td>\n      <td>*0.0054</td>\n      <td>*0.0080</td>\n    </tr>\n    <tr>\n      <td>Vthresh (mV)</td>\n      <td>\u221233 \u00b1 1</td>\n      <td>\u221235 \u00b1 1</td>\n      <td>\u221232 \u00b1 1</td>\n      <td>0.19</td>\n      <td>0.21</td>\n      <td>0.85</td>\n    </tr>\n    <tr>\n      <td>AP amplitude (mV)</td>\n      <td>72 \u00b1 2</td>\n      <td>79 \u00b1 2</td>\n      <td>66 \u00b1 2</td>\n      <td>*0.015</td>\n      <td>*0.00078</td>\n      <td>0.028</td>\n    </tr>\n    <tr>\n      <td>AP width (msec)</td>\n      <td>1.21 \u00b1 0.08</td>\n      <td>0.98 \u00b1 0.01</td>\n      <td>1.03 \u00b1 0.02</td>\n      <td>*0.0060</td>\n      <td>0.23</td>\n      <td>0.19</td>\n    </tr>\n    <tr>\n      <td>Vthresh \u2212 Vr (mV)</td>\n      <td>46 \u00b1 2</td>\n      <td>38 \u00b1 2</td>\n      <td>37 \u00b1 2</td>\n      <td>* 0.00028</td>\n      <td>0.32</td>\n      <td>* 0.0041</td>\n    </tr>\n  </tbody>\n</table>\n\n_Values under each cell group are mean \u00b1 s.e.m. Numbers in the last three columns are p-values for comparisons between the indicated groups (rank-sum test; asterisks indicate significant differences). Vr, resting membrane potential; Rinput, input resistance; Cm, cell capacitance; Ithresh, current threshold for evoking action potential(s); SFA ratio, spike-frequency accommodation ratio; Vthresh, voltage threshold for action potential; AP amplitude, action potential peak minus threshold; AP width, action potential duration. See \u2018Materials and methods\u2019 for additional details._\n\nLastly, we assessed the morphological properties of M1-L4 neurons. Neurons in slices were filled with biocytin during whole-cell recordings, processed, and imaged with two-photon microscopy (Figure 8A). The fluorescently labeled neurons were then digitally reconstructed as three-dimensional tracings (n = 6) (Figure 8B,C). The morphology of M1-L4 neurons consistently had pyramidal-like dendritic morphology, including a basal arbor with multiple dendrites emerging from the soma, and an apical dendrite extending towards the pia and branching into a small apical tuft in L1 (Figure 8B,C). These impressions were borne out by quantitative analysis of dendritic length density across layers (Figure 8D). The axonal morphology of these neurons was variable but typically included branches in multiple layers, especially L2/3, L4, and L5A, a pattern evident from inspection of the reconstructions (Figure 8B,C) and borne out by length density analysis (Figure 8E). This laminar profile of axonal density peaked in L4 and steadily declined in the ascending direction across L2/3 towards zero in L1 and also in the descending direction across L5A towards a low baseline level in L5B and L6. The main trunk of each neuron's axon descended towards the white matter (Figure 8A\u2013C), a feature that can also be seen in reconstructed L4 axons from the sensory cortex (e.g., L\u00fcbke et al., 2000; Staiger et al., 2004). In most cases, this descending axon could be traced into the white matter, typically coursing laterally, and sometimes but not always sending a branch medially towards the corpus callosum (Figure 8B). Overall, this morphological analysis thus indicates that M1-L4 neurons are generally pyramidal neurons, with intracortical axons that ramify mainly in the upper half of the cortex.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05422/elife-05422-fig8-v2.jpg)\n\n**Figure 8.:** (A) Example fluorescence image of M1-L4 neurons. The neurons were filled with biocytin during whole-cell recordings, fixed and fluorescently labeled, and imaged with a two-photon microscope. The image is a maximum-intensity projection of multiple aligned image stacks. (B) Three-dimensional reconstructions of the two L4 neurons in the center and right of the image are shown in panel A. Dendrites are blue, axons are red, and the pia is drawn across the top. (C) Three more examples. (D) Quantitative analysis of dendritic morphology. The three-dimensional digital reconstructions (n = 6 neurons) of L4 neurons' dendrites were converted to two-dimensional length\u2013density maps and averaged. Plot to the right shows the same data as a vertical profile (black: group mean \u00b1 s.e.m.; colored lines, individual neurons). (E) Same analysis, for the axons of the same neurons.\n\n## Discussion\n\nWe tested the hypothesis that M1, despite lacking a cytoarchitecturally distinct granular layer, nevertheless contains the circuit-level equivalent of L4 in the form of a layer of excitatory neurons at the layer 3/5A border having the same basic synaptic circuit organization as L4 neurons in sensory cortex. Our findings support this hypothesis and additionally reveal area-specific features of these M1-L4 neurons.\n\nThe familiar hallmarks of L4 neurons' circuits in sensory areas include (1) input from primary thalamocortical (TC) axons; (2) output to excitatory neurons in other layers, especially L2/3; (3) largely unidirectional L4\u21922/3 projections (i.e., little input in return from L2/3), and often, although not as a strict rule, (4) a paucity of long-range corticocortical inputs and outputs. Our results provide evidence for each of these features in M1-L4 neurons.\n\nOur results also revealed features that appear distinct from their S1 barrel counterparts. For one, these neurons received TC input not only from VL but also from PO. This contrasts with S1 barrels, where VPM and PO axons target L4 and L5A, respectively (Feldmeyer, 2012), but is consistent with previous findings of PO input to neurons in L4 of S2 (Herkenham, 1980; Theyel et al., 2010; Pouchelon et al., 2014) and inter-barrel septa in L4 of rat S1. Another difference from S1-L4 neurons was that the M1-L4 neurons were all pyramidal neurons; we did not detect star pyramids or spiny stellate cells, as are found in rodent S1 (Staiger et al., 2004; Feldmeyer, 2012). In this respect, M1-L4 is more similar to the primary visual and auditory cortices of rodents, which also do not contain spiny stellate cells (Peters and Kara, 1985; Smith and Populin, 2001). Indeed, as shown in ferret visual cortex, spiny stellate cells first develop as pyramidal neurons and subsequently lose their apical dendrites through developmental sculpting, indicating a spectrum of L4 morphological subtypes, with \u2018pyramidal\u2019 as the default or prototypical structure (Callaway and Borrell, 2011). The finding that all M1-L4 neurons in our sample extended an axon towards and often into the subcortical white matter does not however represent a difference, as this is also commonly observed for S1-L4 neurons (e.g., L\u00fcbke et al., 2000; Staiger et al., 2004; Shepherd et al., 2005), and L4 neurons (including stellates) with callosal projections have been described in cat V1 (e.g., Vercelli et al., 1992).\n\nIn several ways, M1-L4 neurons displayed properties that more closely resembled pyramidal than spiny stellate neurons in rodent S1-L4. For example, the axonal projections of S1-L4 stellate neurons tend to be more focused in a dense beam to L2/3; in contrast, those of S1-L4 pyramidal neurons tend to show more horizontal spread, lower density in L2/3, and more branching in L5A (Brecht and Sakmann, 2002; Bender et al., 2003; L\u00fcbke et al., 2003; Staiger et al., 2004; Feldmeyer, 2012). Such a pattern is also observed for S1-L4 neurons located in the inter-barrel septa (in rats), which are pyramidal neurons (Brecht and Sakmann, 2002; Bureau et al., 2004; Shepherd et al., 2005). In rat S1, thalamocortical axons from PO branch in L4 in septum-related columns (similar to our finding of PO innervation of M1-L4 neurons) but not in barrel-related columns in rat S1, where they instead branch in L5A (and L1) (Lu and Lin, 1993; Wimmer et al., 2010; Feldmeyer, 2012). The septal region of rat S1 has been proposed to be hodologically organized as a higher order rather than primary sensory cortical area (Killackey and Sherman, 2003). Consistent with this, PO projects to L4 in S2 in addition to septal-S1 (Theyel et al., 2010; Pouchelon et al., 2014). Thus, our findings are generally suggestive that, at least in terms of its L4-related organization, the \u2018primary\u2019 motor cortex more closely resembles higher order than primary sensory cortex.\n\nThe apparent absence of L4 in M1 and other agranular cortical areas has long been of interest for its implication that the circuit organization of these areas differs fundamentally from that of sensory areas (Shipp, 2005; Feldmeyer et al., 2013; Shipp et al., 2013; Garc\u00eda-Cabezas and Barbas, 2014). Our results suggest that L4 in M1 has been \u2018lost\u2019 only at the level of cytoarchitecture but not of cellular connectivity, as it is present in the form of a layer of pyramidal neurons with the expected input\u2013output connections of prototypical L4 neurons. This accords with the general notion that cortical circuit organization tends to be conserved rather than reinvented across areas, with variations arising mostly through quantitative differences in a core set of existing circuits (Harris and Shepherd, 2015). For example, rodent M1 possesses not only a thin L4 but an expanded L5B (Brecht et al., 2004; Weiler et al., 2008; Yu et al., 2008; Anderson et al., 2010; Hooks et al., 2013). In rodent S1 barrel cortex, it is L4 that is instead expanded and shows the most overtly specialized connectivity (Feldmeyer, 2012); similarly, L4 in V1 of highly visual mammals is often elaborately differentiated (Fitzpatrick, 1996; Nassi and Callaway, 2009). Thus, L4 appears to be most elaborate in the primary sensory cortices of modalities that are particularly ethologically relevant to an animal. Motor cortex contains a L4 circuit that is smaller and simpler but retains the same prototypical connectivity patterns. We speculate that like their sensory cortical counterparts, L4 neurons in M1 are specialized for processing of thalamic input before this information is integrated with the activity of other cell classes (which may also be thalamorecipient) downstream in the local M1 network. Our results should facilitate further studies of M1-L4 by enabling a shift of focus away from the question of whether L4 neurons are present in M1 to questions of what types of information they process, how they do so, and how this relates to motor behavior.\n\n## Materials and methods\n\nAnimal studies were approved by the Northwestern University Animal Care and Use Committee. In vivo stereotaxic injections of retrograde tracers (fluorescent microspheres, Lumafluor, Durham, NC) or AAV viruses encoding channelrhodopsin-2 (AAV-ChR2-Venus) were performed as described (Anderson et al., 2010; Hooks et al., 2013). Retrograde tracer injections were made in either the contralateral M1 or ipsilateral M2, S1, and S2 of 6- to 7-week-old mice, to label corticocortical projection neurons in M1; brain slices were prepared 3\u20137 days later and imaged as described below. Viral injections were made in the motor thalamus of 3- to 4-week-old mice, targeting the ventrolateral nucleus, and optogenetic experiments in brain slices were performed \u223c3 weeks later.\n\nBrain slice preparation and electrophysiology were performed as previously described (Weiler et al., 2008; Anderson et al., 2010). Whole-cell patch-electrode recordings were made from neurons in 0.3-mm-thick brain slices containing M1. Data were sampled at 10 kHz (most experiments) or 40 kHz (for intrinsic electrophysiology measurements) and filtered at 4 kHz. For optogenetic experiments, recordings in L4 (and other layers) were generally targeted to neurons with \u2018pyramidal\u2019 somata. For experiments aimed at characterizing intrinsic and morphological properties, recordings were targeted to L4 neurons with any soma shape or size except those suggestive of common types of interneurons, particularly basket cells (Apicella et al., 2012). Data acquisition was controlled by Ephus software (www.ephus.org) (Suter et al., 2010).\n\nStandard electrophysiological stimulus protocols were delivered to assess intrinsic properties, as previously described (Suter et al., 2013). For each cell, after measuring the resting membrane potential, current was injected as needed to set the membrane potential to \u221270 mV, and then stimulus protocols were delivered to measure electrophysiological properties. Spike-frequency accommodation (SFA) ratio was calculated as the ratio of the third to fifth inter-spike interval in the first trace containing \u22656 spikes. Current threshold was defined as the amplitude of the current step that was sufficient to evoke one or more action potentials.\n\nFor group analyses of electrophysiological properties (Figure 7, Table 1), statistical comparisons were performed by pooling neurons into laminar groups corresponding to L4, L2/3, and L5A. Based on the results of the circuit analyses (Figures 1\u20136), we defined \u2018L4\u2019 as a thin zone centered on 0.33 (in units of normalized cortical depth) and spanning 0.05 the cortical thickness (i.e., depth range 0.305\u20130.355). We defined \u2018L2/3\u2019 as the laminar zone spanning 0.14\u20130.26, and \u2018L5A\u2019 as the zone 0.37\u20130.42. These laminar zones were separated by small gaps (0.045 between L2/3 and L4, and 0.015 between L4 and L5A), which reduced (but did not necessarily eliminate) the likelihood that some neurons were wrongly classified due to slice-to-slice variability in layer thicknesses. A small number of neurons thus fell outside these groups and were excluded from group analyses (but not from the plots; all data are plotted as circles in Figure 7).\n\nGlutamate uncaging and laser scanning photostimulation (glu-LSPS) were performed as previously described (Weiler et al., 2008; Wood et al., 2009; Wood and Shepherd, 2010; Shepherd, 2012), using 3- to 5-week-old mice. As described in \u2018Results\u2019, in one set of experiments, we acquired sets of input maps for L2/3 neurons in M1 or S1; in another set, we further analyzed a subset of glu-LSPS mapping data from a previous study (Weiler et al., 2008). Temporal windowing was used to detect photostimulation sites where the postsynaptic neuron's dendrites were directly stimulated (defined as excitatory events arriving within 7 msec post-stimulus) (Schubert et al., 2001), and these sites were excluded from analysis (shown in the figures as black pixels).\n\nOptogenetic photostimulation in brain slices was performed as previously described (Kiritani et al., 2012; Hooks et al., 2013), exploiting the retained photoexcitability of ChR2-expressing long-range axons in slices (Petreanu et al., 2007) and using conditions (in particular, tetrodotoxin and 4-aminopyridine in the bath solution) that isolate monosynaptic inputs (Petreanu et al., 2009). Responses to blue-LED photostimulation were sampled in voltage-clamp mode for each neuron, and multiple neurons were recorded per slice. Traces were analyzed to determine the average response amplitude in a 50-msec post-stimulus window. For the set of neurons recorded in the same slice, responses were normalized to the strongest response, resulting in a normalized laminar profile for each slice. Profiles from different slices and animals were pooled for group analyses.\n\nImaging and morphological reconstructions were performed as previously described (Suter et al., 2013), by acquiring two-photon image stacks of neurons that had been biocytin filled during slice recordings, fixed, and processed for fluorescent labeling. Three-dimensional reconstructions of axons and dendrites were manually traced (Neurolucida, MBF Bioscience, Williston, VT) and further analyzed using custom Matlab routines (Source code 1) to quantify dendritic and axonal length density, as previously described (Shepherd et al., 2005).\n\nImages of expression patterns of molecular markers were obtained from the Allen Mouse Brain Atlas (http://mouse.brain-map.org) (Lein et al., 2007).\n\nMany analyses involved plotting a parameter of interest as a function of cortical depth, providing a laminar profile of that parameter. To facilitate comparisons across slices, we converted from absolute cortical depth (distance from pia) to a normalized scale, with pia defined as zero and the cortex\u2013white matter border defined as one. To the extent that the thicknesses of individual cortical layers vary as a constant fraction of the total cortical thickness, this normalization procedure is assumed to reduce some of the slice-to-slice variability; for example, due to small differences in slice angle.\n\nUnless noted otherwise, statistical comparisons were performed using non-parametric tests (rank-sum or signed-rank tests, as appropriate) with significance defined as p < 0.05. For the group analyses shown in Figure 7 and Table 1, significance was defined as p < 0.05/3 (multiple-comparison correction).\n",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "856d5184-b524-4726-8d87-6b4b830b766c",
+      "submission_id": "8083a7a7-83c5-43a3-a6be-3b6b9dd2a4ad",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05422.013](https://doi.org/10.7554/eLife.05422.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA genuine layer 4 in motor cortex with prototypical synaptic circuit connectivity\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Sacha Nelson (Reviewing editor); Kevan Martin (peer reviewer).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nBoth reviewers thought the experiments performed were valuable and well carried out. One reviewer had mostly minor suggestions for improvement. His only substantive comment centered on the fact that the way that the normalized laminar boundaries was calculated was not adequately justified in terms of slice-to-slice variability. For example in the authors\u2019 prior work (Suter et al.), the SDs of the layer boundaries are given and these are larger than the gaps between the currently assigned layers.\n\nThe second reviewer had additional concerns. First, he thought that there was inadequate citation of prior literature. Specifically, he noted \u201cKrieg saw layer 4 in M1 of the albino rat in 1946 and the 1997 analyses of Skogland et al in the rat indicated there are indeed cytoarchitectural features consistent with a layer 4 in M1. Skoglund et al demonstrated quantitatively a middle layer that had higher density and small cells reminiscent of layer 4 in 'granular' cortices. Indeed, their paper is entitled, 'The existence of a layer IV in rat motor cortex'). Cajal reported that human M1 has a layer 4, but thanks to Brodmann it was then was lost to primates and their 'agranular' cortex became a defining feature of M1; see e.g. Shipp, 2005. Fortunately Garcia-Cabezas and Barbas have just rediscovered layer 4 in the macaque M1.\u201d\n\nPerhaps more importantly, the reviewer was concerned that the case for separating L4 neurons from, for example L3 or L5 neurons was not strong enough and that the criteria were not inadequately specified. Specifically, since the location of the thalamic input has long been known, if the primary criterion is that it is thalamorecipient, this seems like a rather modest advance. On the other hand, one might argue that although the location of the axons was known, the functional strength of input to neurons in different layers that might contact those axons with their basal or apical dendrites was arguably not known.\n\nFinally, the reviewer was concerned about the need for further discussion to indicate whether the authors' prior views of a fundamentally different circuit organization leading to a different laminar sequence of processing for motor cortex (as compared to sensory cortex) is now in need of revision.\n",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aa46e6fe-df48-4dcd-8021-80516feaa56c",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C1",
+      "claim": "The motor cortex (M1) is classically considered an agranular area, lacking a distinct layer 4 (L4).",
+      "claim_type": "EXPLICIT",
+      "source": "The motor cortex (M1) is classically considered an agranular area, lacking a distinct layer 4 (L4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific consensus about M1 classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "b4540cd3-9e43-44ee-88c9-178f819eea0a",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C2",
+      "claim": "Neurons located in a thin laminar zone at the L3/5A border in the forelimb area of mouse M1 have excitatory input from thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we found that neurons located in a thin laminar zone at the L3/5A border in the forelimb area of mouse M1 have multiple L4-like synaptic connections: excitatory input from thalamus, largely unidirectional excitatory outputs to L2/3 pyramidal neurons, and relatively weak long-range corticocortical inputs and outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data from optogenetic mapping showing thalamic input to these neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "6e76a9a8-2e5b-4210-9abc-08b3205d30ca",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C3",
+      "claim": "Neurons at the L3/5A border in mouse M1 have largely unidirectional excitatory outputs to L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we found that neurons located in a thin laminar zone at the L3/5A border in the forelimb area of mouse M1 have multiple L4-like synaptic connections: excitatory input from thalamus, largely unidirectional excitatory outputs to L2/3 pyramidal neurons, and relatively weak long-range corticocortical inputs and outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data from glutamate uncaging experiments showing this connectivity pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "8bee3d87-0c7f-4253-8a9e-64cb7676be59",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C4",
+      "claim": "Neurons at the L3/5A border in mouse M1 have relatively weak long-range corticocortical inputs and outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we found that neurons located in a thin laminar zone at the L3/5A border in the forelimb area of mouse M1 have multiple L4-like synaptic connections: excitatory input from thalamus, largely unidirectional excitatory outputs to L2/3 pyramidal neurons, and relatively weak long-range corticocortical inputs and outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data from optogenetic and retrograde tracing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ee215a07-4c7e-4a66-89e2-4ccd180568ec",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C5",
+      "claim": "M1-L4 neurons are electrophysiologically diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "M1-L4 neurons were electrophysiologically diverse but morphologically uniform, with pyramidal-type dendritic arbors and locally ramifying axons, including branches extending into L2/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents electrophysiological recordings from multiple M1-L4 neurons showing variability in their properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ea8e7bf1-e8f0-4056-9192-1484a6c8041e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C6",
+      "claim": "M1-L4 neurons are morphologically uniform, with pyramidal-type dendritic arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "M1-L4 neurons were electrophysiologically diverse but morphologically uniform, with pyramidal-type dendritic arbors and locally ramifying axons, including branches extending into L2/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents morphological reconstructions of M1-L4 neurons showing consistent pyramidal morphology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "0da3b214-0e5f-4ef0-a415-9fe00ec3861e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C7",
+      "claim": "M1-L4 neurons have locally ramifying axons, including branches extending into L2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "M1-L4 neurons were electrophysiologically diverse but morphologically uniform, with pyramidal-type dendritic arbors and locally ramifying axons, including branches extending into L2/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents morphological reconstructions showing axonal branching patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "e78e2407-3bdf-478b-8419-0e7090544e4a",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C8",
+      "claim": "The apparent absence of L4 has strongly influenced theories of cortical organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent absence of L4 has strongly influenced theories of cortical organization (Shipp, 2005; Bastos et al., 2012; Shipp et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on cortical organization theories.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "2874199f-a8b7-486a-ab64-ab1418607c33",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C9",
+      "claim": "Rorb expression in mouse S1 is highest in L4.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Rorb expression in mouse S1 is highest in L4 (Schaeren-Wiemers et al., 1997) (Figure 1A), and a similar if weaker and thinner pattern is seen in M1 (Figure 1B), coincident with the L3/5A border (Schaeren-Wiemers et al., 1997; Shepherd, 2009; Rowell et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior work and by Figure 1A showing Rorb expression pattern in S1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "7c9be588-1f74-49b1-bb47-2d2cd9286a28",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C10",
+      "claim": "A similar if weaker and thinner Rorb expression pattern is seen in M1, coincident with the L3/5A border.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Rorb expression in mouse S1 is highest in L4 (Schaeren-Wiemers et al., 1997) (Figure 1A), and a similar if weaker and thinner pattern is seen in M1 (Figure 1B), coincident with the L3/5A border (Schaeren-Wiemers et al., 1997; Shepherd, 2009; Rowell et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and by Figure 1B showing Rorb expression in M1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ff66e309-f53d-46e7-b3ec-78a0d55261f1",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C11",
+      "claim": "In primate M1, Rorb is expressed but at lower levels than in sensory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "In primate M1, Rorb is also expressed but at lower levels than in sensory cortices (Bernard et al., 2012), and a recent report presented evidence for the existence of L4 based on cytoarchitecture and SMI-32 labeling patterns (Garc\u00eda-Cabezas and Barbas, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on primate M1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "b0a38803-9568-46b2-b75b-a2ae40d090be",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C12",
+      "claim": "A recent report presented evidence for the existence of L4 in primate M1 based on cytoarchitecture and SMI-32 labeling patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In primate M1, Rorb is also expressed but at lower levels than in sensory cortices (Bernard et al., 2012), and a recent report presented evidence for the existence of L4 based on cytoarchitecture and SMI-32 labeling patterns (Garc\u00eda-Cabezas and Barbas, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Garc\u00eda-Cabezas and Barbas, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "96a14805-51e9-4f94-b527-f558dec0f343",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C13",
+      "claim": "In barrel and other sensory cortices in rodents, L4 is characterized by strong input from primary thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In barrel and other sensory cortices in rodents, L4 is characterized by strong input from primary thalamus, an extensive and largely unidirectional projection to the superficial cortical layers, a paucity of inputs from other cortical areas, and a paucity of long-range cortical outputs (Petersen, 2007; Svoboda et al., 2010; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on sensory cortex organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "26c9b1cf-1200-4e6b-8f06-74edbf278fbc",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C14",
+      "claim": "In barrel and other sensory cortices in rodents, L4 has an extensive and largely unidirectional projection to the superficial cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "In barrel and other sensory cortices in rodents, L4 is characterized by strong input from primary thalamus, an extensive and largely unidirectional projection to the superficial cortical layers, a paucity of inputs from other cortical areas, and a paucity of long-range cortical outputs (Petersen, 2007; Svoboda et al., 2010; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on sensory cortex organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "c523b6a4-3fb1-4076-9825-00dac9cb6cf6",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C15",
+      "claim": "In barrel and other sensory cortices in rodents, L4 has a paucity of inputs from other cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In barrel and other sensory cortices in rodents, L4 is characterized by strong input from primary thalamus, an extensive and largely unidirectional projection to the superficial cortical layers, a paucity of inputs from other cortical areas, and a paucity of long-range cortical outputs (Petersen, 2007; Svoboda et al., 2010; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on sensory cortex organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "eae9bba5-5655-4de8-9913-d5d9905f358a",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C16",
+      "claim": "In barrel and other sensory cortices in rodents, L4 has a paucity of long-range cortical outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In barrel and other sensory cortices in rodents, L4 is characterized by strong input from primary thalamus, an extensive and largely unidirectional projection to the superficial cortical layers, a paucity of inputs from other cortical areas, and a paucity of long-range cortical outputs (Petersen, 2007; Svoboda et al., 2010; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on sensory cortex organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "d62dfcff-cefd-4e2a-bc75-72337a4ef805",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C17",
+      "claim": "Mouse M1 contains pyramidal neurons in a thin laminar zone at the L3/5A border with all the prototypical L4 circuit properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mouse M1 contains pyramidal neurons in a thin laminar zone at the L3/5A border with all these properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "47c70fc5-3a76-4e92-a546-068632941d38",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C18",
+      "claim": "In sensory cortical areas, L4 neurons receive strong thalamocortical (TC) excitation from primary sensory thalamic nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory cortical areas, L4 neurons receive strong thalamocortical (TC) excitation from primary sensory thalamic nuclei (Douglas and Martin, 2004; Feldmeyer, 2012; Harris and Mrsic-Flogel, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on sensory cortex.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "e04f49c9-61cd-4968-8d90-ea4ff0f410a0",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C19",
+      "claim": "Monosynaptic VL input to pyramidal neurons in the upper layers of vibrissal M1 was recently demonstrated using an optogenetic-electrophysiological approach.",
+      "claim_type": "EXPLICIT",
+      "source": "This is suggested by previous anatomical work (Strick and Sterling, 1974; Jones, 1975; Cho et al., 2004; Kuramoto et al., 2009; Kaneko, 2013); however, while monosynaptic VL input to pyramidal neurons in the upper layers of vibrissal M1 was recently demonstrated using an optogenetic-electrophysiological approach (Hooks et al., 2013), it was not possible to determine if this input terminated in a putative L4 or L2/3, as vibrissal M1 is highly compressed due to its location at a cortical flexure (von Economo, 1929; Hooks et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hooks et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "84a4703d-7939-4ed7-b48f-57e0f55fd629",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C20",
+      "claim": "Vibrissal M1 is highly compressed due to its location at a cortical flexure.",
+      "claim_type": "EXPLICIT",
+      "source": "This is suggested by previous anatomical work (Strick and Sterling, 1974; Jones, 1975; Cho et al., 2004; Kuramoto et al., 2009; Kaneko, 2013); however, while monosynaptic VL input to pyramidal neurons in the upper layers of vibrissal M1 was recently demonstrated using an optogenetic-electrophysiological approach (Hooks et al., 2013), it was not possible to determine if this input terminated in a putative L4 or L2/3, as vibrissal M1 is highly compressed due to its location at a cortical flexure (von Economo, 1929; Hooks et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "1ba9f61e-3411-43c3-8f46-e29f775145d7",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C21",
+      "claim": "Laminar profiles of the fluorescence intensity of labeled VL axons showed three peaks, in L1, the L3/5A border, and the L5B/6 border.",
+      "claim_type": "EXPLICIT",
+      "source": "Laminar profiles of the fluorescence intensity of labeled VL axons showed three peaks, in L1, the L3/5A border, and the L5B/6 border, similar to vibrissal M1 (Hooks et al., 2013) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A and comparison to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "5fea2977-ff59-41b3-b95b-3b39bc073157",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C22",
+      "claim": "The laminar profile of excitatory TC input from VL revealed two distinct peaks, the uppermost of which coincided with the L3/5A border (normalized cortical depth, \u223c1/3).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed two distinct peaks of TC input, the uppermost of which coincided with the L3/5A border (normalized cortical depth, \u223c1/3) (Figure 2C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2C, D, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a3f72665-c7da-4906-9af3-fe6b6101f0b1",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C23",
+      "claim": "M1 contains neurons in a laminar zone corresponding to L4 that receives strong monosynaptic excitatory TC input from VL.",
+      "claim_type": "EXPLICIT",
+      "source": "These data thus indicate that M1 contains neurons in a laminar zone corresponding to L4 that receives strong monosynaptic excitatory TC input from a primary thalamic nucleus associated with this cortical area, thereby fulfilling one important circuit-level criterion for the identification of L4 in M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on VL input.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a39616c0-e5ec-489f-a3b0-8adb96b76062",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C24",
+      "claim": "The fluorescence intensity of labeled PO axons showed peaks corresponding to L1 and the L3/5A border.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence intensity of the labeled PO axons showed peaks corresponding to L1 and the L3/5A border (but, unlike the VL profile, not the L5B/6 border), similar to the pattern in vibrissal M1 (Hooks et al., 2013) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3A and comparison to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "9a6fcbc5-1b13-411e-a39b-2ffdc2b470a0",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C25",
+      "claim": "Laminar profiles of monosynaptic TC input from PO axons to M1 neurons showed a broad peak in the upper layers that included L4 and adjacent layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Laminar profiles of the relative amount of monosynaptic TC input from PO axons to M1 neurons (Figure 3B,C) showed a broad peak in the upper layers that included L4 and adjacent layers (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "37ff9e7c-3e6b-4f7d-82bc-4887399b9e81",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C26",
+      "claim": "PO's laminar input pattern in M1 resembled its laminar innervation of secondary somatosensory cortex (S2).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PO's laminar input pattern in M1 resembled its laminar innervation of secondary somatosensory cortex (S2) (Pouchelon et al., 2014) and the septum-related columns of rat barrel cortex (Lu and Lin, 1993; Feldmeyer, 2012), rather than its innervation of S1 barrel-related columns themselves (Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison to cited prior work on PO innervation patterns.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "90e13fe1-fbaa-4642-9895-a4462b64a803",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C27",
+      "claim": "PO's laminar input pattern in M1 resembled its innervation of septum-related columns of rat barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PO's laminar input pattern in M1 resembled its laminar innervation of secondary somatosensory cortex (S2) (Pouchelon et al., 2014) and the septum-related columns of rat barrel cortex (Lu and Lin, 1993; Feldmeyer, 2012), rather than its innervation of S1 barrel-related columns themselves (Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison to cited prior work on PO innervation patterns.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "bb87f91b-1009-43eb-8c39-1706ce1cddf1",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C28",
+      "claim": "L4 neurons in sensory cortex project to L2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tested whether M1-L4 neurons project to L2/3, as L4 neurons do in sensory cortex (Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature on sensory cortex.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a921d0d3-c71b-4562-874b-ef9eee1bf789",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C29",
+      "claim": "Previous studies in mouse forelimb M1 using glutamate uncaging and laser scanning photostimulation suggested that neurons around L3/5A border zone can excite L2/3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in mouse forelimb M1 using glutamate uncaging and laser scanning photostimulation (glu-LSPS) to map local circuits have suggested that neurons around L3/5A border zone can excite L2/3 neurons (Weiler et al., 2008; Wood et al., 2009; Wood and Shepherd, 2010) but lacked the spatial specificity to isolate a putative L4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work using glu-LSPS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "6f019f89-d71d-42a3-b634-a65b1fb6c3f8",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C30",
+      "claim": "Synaptic input maps for M1-L2/3 neurons showed a local peak of excitatory input strength arising at the location of the hypothesized L4.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic input maps for M1-L2/3 neurons showed a local peak of excitatory input strength arising at the location of the hypothesized L4 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ed863ae5-bc76-4c34-a7ca-a0229eb4b900",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C31",
+      "claim": "Synaptic input maps for S1-L2/3 neurons were generally similar to M1, but with stronger and spatially more focused excitation from L4.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic input maps for S1-L2/3 neurons were generally similar, but with stronger and spatially more focused excitation from L4, roughly the size and shape of a L4 barrel (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C and comparison to M1 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "b7b27fa5-be81-4d8b-b2c4-8f110367aefe",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C32",
+      "claim": "The stronger input from L4 to L2/3 in S1 may partly reflect the higher cell density in barrels.",
+      "claim_type": "EXPLICIT",
+      "source": "The stronger input may partly reflect the higher cell density in barrels (Figure 1A,B) (Hooks et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation based on known differences in cell density and cited prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "4c1e9b42-e019-4492-aa3f-541ea9119cb1",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C33",
+      "claim": "The laminar profile of L4 input to L2/3 neurons was topographically similar in M1 and S1.",
+      "claim_type": "EXPLICIT",
+      "source": "The laminar profile of L4 input to L2/3 neurons was topographically similar in M1 and S1 (Figure 4D,E); that is, the M1 profile was a scaled version of the S1 profile, with a distinct locus of input from L4 (plot in Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "1ff4a34b-85bd-47f8-93c2-0b319acfd0df",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C34",
+      "claim": "In M1, the strongest ascending input to the L2/3 neurons arose from the L3/5A border, at a normalized cortical depth of \u223c1/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in M1, the strongest ascending input to the L2/3 neurons arose from the L3/5A border, at a normalized cortical depth of \u223c1/3, confirming the presence of a L4\u21922/3 excitatory projection in M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on L4 to L2/3 connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "e4a41ece-54a8-42ce-988a-257b935bb22f",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C35",
+      "claim": "A characteristic feature of L4 in sensory cortex is that the projection from L4 to L2/3 is primarily unidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "A characteristic feature of L4 in sensory cortex is that the projection from L4 to L2/3 is primarily unidirectional, as L4 neurons receive primarily intralaminar excitatory input (Lorente de N\u00f3, 1949; Feldmeyer et al., 2002; Schubert et al., 2003; Lefort et al., 2009; Hooks et al., 2011; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on sensory cortex connectivity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "d29402c3-2fef-4675-a280-8debecd522e6",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C36",
+      "claim": "L4 neurons in sensory cortex receive primarily intralaminar excitatory input.",
+      "claim_type": "EXPLICIT",
+      "source": "A characteristic feature of L4 in sensory cortex is that the projection from L4 to L2/3 is primarily unidirectional, as L4 neurons receive primarily intralaminar excitatory input (Lorente de N\u00f3, 1949; Feldmeyer et al., 2002; Schubert et al., 2003; Lefort et al., 2009; Hooks et al., 2011; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on sensory cortex connectivity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "fb96b4bc-2359-4684-ba97-1d121e47cef6",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C37",
+      "claim": "The input maps of M1-L4 neurons typically showed an overall paucity of input, which arose mainly from nearby intralaminar sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The input maps of these neurons typically showed an overall paucity of input, which arose mainly from nearby intralaminar sites (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "926372c4-95e9-4527-9478-4558f46aac56",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C38",
+      "claim": "The median input map of M1-L4 neurons confirmed that inputs to these L4 neurons arose mostly from L4, with relatively weak input from L2/3 and other layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the median input map of these 10 neurons confirmed that inputs to these L4 neurons arose mostly from L4, with relatively weak input from L2/3 and other layers (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "afc12fd3-3ede-4921-8047-61f7f72e51cf",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C39",
+      "claim": "Only 2 of 10 M1-L4 neurons received distinct loci of input from other layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 2 of 10 neurons received distinct loci of input from other layers: one neuron received relatively weak inputs from L5B/6 (Figure 5C) and a second received strong input from L2/3 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "aec4fc43-19e6-4de5-8a23-e04cae31d1ba",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C40",
+      "claim": "The two exceptional M1-L4 neurons were at similar laminar locations as the others, suggesting some heterogeneity among M1-L4 neurons' local circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These two neurons were at similar laminar locations as the others, suggesting some heterogeneity among M1-L4 neurons' local circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of variability in input patterns despite similar laminar locations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "8413823e-4eee-4c63-b8cf-c4cbcfd7de90",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C41",
+      "claim": "Input maps of M1-L4 neurons were generally distinct from those of neurons in mid-L2/3 and from those of neurons in low-L5A.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, input maps of L4 neurons were generally distinct from those of neurons in mid-L2/3 (see above), and from those of neurons in low-L5A, which typically, and in sharp contrast to the L4 neurons studied here, receive strong L2/3 input (Weiler et al., 2008; Anderson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison to data from other layers and cited prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "890005e7-901f-4777-921a-d5eb2f5dc380",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C42",
+      "claim": "L4 input to L2/3 neurons was greater than L2/3 input to L4 neurons by a factor of nearly 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analysis confirmed that L4 input to L2/3 neurons was greater than L2/3 input to L4 neurons by a factor of nearly 4 (L4\u21922/3: \u22123.9 pA median amplitude, n = 17; L2/3\u21924: \u22121.0 pA, n = 10; p = 0.0062, rank-sum test) (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "c92c6722-df8a-42fc-b192-4045afbab417",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C43",
+      "claim": "L4 neurons in M1 receive mostly intralaminar, rather than interlaminar, excitatory input.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses thus confirm that L4 neurons in M1 receive mostly intralaminar, rather than interlaminar, excitatory input, and that L4\u21922/3 projections are predominantly unidirectional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on local circuit connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "28630f98-d82d-46bc-a7b0-5fdfc5622251",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C44",
+      "claim": "L4\u21922/3 projections in M1 are predominantly unidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses thus confirm that L4 neurons in M1 receive mostly intralaminar, rather than interlaminar, excitatory input, and that L4\u21922/3 projections are predominantly unidirectional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on local circuit connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "c09bf0a1-460d-4190-a19e-ba45a1b11e08",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C45",
+      "claim": "L4 neurons in primary sensory areas receive long-range inputs mostly from thalamus but not other cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "L4 neurons in primary sensory areas receive long-range inputs mostly from thalamus but not other cortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about sensory cortex organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ce7e706c-9be5-4b94-a7fb-06391dbd2343",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C46",
+      "claim": "In barrel cortex, interhemispheric (callosal) axons from contralateral S1 excite neurons in all layers except L4.",
+      "claim_type": "EXPLICIT",
+      "source": "In barrel cortex, for example, interhemispheric (callosal) axons from contralateral S1 excite neurons in all layers except L4 (Petreanu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on barrel cortex connectivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "06bccf60-b038-45a6-a36a-b04f13b619b3",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C47",
+      "claim": "The fluorescence intensity of labeled corticocallosal axons showed a dip at the location of putative L4 in M1.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence intensity of the labeled corticocallosal axons showed a dip at the location of putative L4 (Figure 6A), and laminar profiles of electrophysiologically measured callosal input (Figure 6B,C) indicated a nadir at the level of the L3/5A border (Figure 6C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "e255a06e-6d55-43f7-b7f8-8df239ab590f",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C48",
+      "claim": "Laminar profiles of electrophysiologically measured callosal input indicated a nadir at the level of the L3/5A border.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence intensity of the labeled corticocallosal axons showed a dip at the location of putative L4 (Figure 6A), and laminar profiles of electrophysiologically measured callosal input (Figure 6B,C) indicated a nadir at the level of the L3/5A border (Figure 6C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 6B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "4a295abf-53a9-4881-9c8b-b11ff3908f91",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C49",
+      "claim": "The pattern of callosal input was complementary to that of thalamic input from VL.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern was complementary to that of thalamic input from VL, that is, callosal input was strong to neurons in L2/3 and weak to those in L4, and vice versa for VL input (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "1d4cc7ed-5de3-47ca-ab74-efed8d1a69e2",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C50",
+      "claim": "L4 neurons in M1, similar to S1, receive relatively little long-range corticocallosal input from contralateral M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, L4 neurons in M1, similar to S1, receive relatively little long-range corticocallosal input from contralateral M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on callosal input.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a795da16-7493-48c6-8483-703e8380c13e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C51",
+      "claim": "L4 neurons of sensory cortex typically send only weak long-range corticocortical output.",
+      "claim_type": "EXPLICIT",
+      "source": "As well as receiving little long-range input, L4 neurons of sensory cortex typically send only weak long-range corticocortical output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about sensory cortex organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "0b217498-1a81-4dbe-b710-8488cdcebd61",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C52",
+      "claim": "Exceptions to the rule that L4 neurons send weak long-range output exist, for example, in primate V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although exceptions to this rule exist, for example, in primate V1 (Nassi and Callaway, 2009), this pattern appears to hold in mouse S1, where a 'gap' is evident in L4 following retrograde tracer injection into ipsilateral vibrissal M1 (e.g., Sato and Svoboda, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on primate V1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "e662671a-4809-4945-8564-a582e9b68180",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C53",
+      "claim": "A 'gap' is evident in L4 of mouse S1 following retrograde tracer injection into ipsilateral vibrissal M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although exceptions to this rule exist, for example, in primate V1 (Nassi and Callaway, 2009), this pattern appears to hold in mouse S1, where a 'gap' is evident in L4 following retrograde tracer injection into ipsilateral vibrissal M1 (e.g., Sato and Svoboda, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on mouse S1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "759f2617-b703-4a1a-a192-21c604673476",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C54",
+      "claim": "A similar gap has been noted in the upper layers of vibrissal M1 following retrograde tracer injections in S1, potentially corresponding to L4.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a similar gap has been noted in the upper layers of vibrissal M1 following retrograde tracer injections in S1, potentially corresponding to L4 (Mao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on vibrissal M1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "907d11ab-d752-41ed-8749-3216a946baba",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C55",
+      "claim": "Relatively sparse labeling was observed in M1-L4 following injection of retrograde tracers into contralateral M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this pattern, we observed relatively sparse labeling in M1-L4 following injection of retrograde tracers into contralateral M1 (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "dbb2168b-c2f5-44db-bd52-0bad700c3acc",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C56",
+      "claim": "The laminar gap in retrograde labeling in M1-L4 was not absolute; some M1-L4 neurons were clearly labeled with the retrograde tracer but at lower intensity compared with cells in adjacent layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This laminar gap in labeling was not absolute; higher resolution imaging showed that some of the M1-L4 neurons were clearly labeled with the retrograde tracer but at lower intensity compared with cells in adjacent layers (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "f758d3c8-c19c-431f-8f8a-b822269c3ab1",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C57",
+      "claim": "The gap in retrograde labeling from contralateral M1 was centered \u223c1/3 deep in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This gap was centered \u223c1/3 deep in the cortex (n = 3 mice) (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "bebd18a7-b961-457e-983c-7ef0a58982b2",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C58",
+      "claim": "Following injection of retrograde tracers into multiple ipsilateral cortical areas (M2, S1, and S2), a laminar zone with reduced labeling intensity was observed, centered \u223c1/3 deep in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, following injection of retrograde tracers into multiple ipsilateral cortical areas (M2, S1, and S2, in the same animals), we observed a laminar zone with reduced labeling intensity, centered \u223c1/3 deep in the cortex (n = 3 mice) (Figure 6I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 6I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "2eca7287-94d1-4daa-8895-415d90f98687",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C59",
+      "claim": "The overall average depth of the local minimum in L4 retrograde labeling was 0.35 (normalized cortical depth).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall average depth of the local minimum in L4 was 0.35 (normalized cortical depth; ipsi- and contralateral profiles pooled, n = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the retrograde labeling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "29d5cfea-7ba6-44a8-aa63-28d437de9efc",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C60",
+      "claim": "The retrograde labeling patterns indicate a relative paucity of long-range corticocortical projections originating from L4 of M1.",
+      "claim_type": "EXPLICIT",
+      "source": "These labeling patterns indicate a relative paucity of long-range corticocortical projections originating from L4 of M1, as from L4 of sensory cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the retrograde labeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "27ded937-f012-41e2-a4b5-cb6572e402be",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C61",
+      "claim": "M1 contains neurons having the expected input\u2013output circuits of L4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The collective evidence from the preceding experiments indicated that M1 contains neurons having the expected input\u2013output circuits of L4 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from all the circuit mapping experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "268dfdc5-931b-4437-ad17-32dc91d2e5ed",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C62",
+      "claim": "56 neurons were recorded across the upper layers of M1, from upper L2 through L5A.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded 56 neurons located across the upper layers of M1, from upper L2 through L5A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental sample for electrophysiological characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "bf55658d-0fff-4224-b6d1-48a402af607b",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C63",
+      "claim": "All recorded cells had soma features typical of pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were targeted to any neurons appearing more likely to be excitatory (pyramidal/stellate) rather than inhibitory based on familiar soma features (shape and size) as observed under bright-field visualization at high magnification (Hooks et al., 2011; Apicella et al., 2012); all recorded cells had soma features typical of pyramidal neurons, as we did not observe any with stellate-like somata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ade94ef7-e829-483c-aeb6-48e837d53b27",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C64",
+      "claim": "No neurons with stellate-like somata were observed in M1-L4.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were targeted to any neurons appearing more likely to be excitatory (pyramidal/stellate) rather than inhibitory based on familiar soma features (shape and size) as observed under bright-field visualization at high magnification (Hooks et al., 2011; Apicella et al., 2012); all recorded cells had soma features typical of pyramidal neurons, as we did not observe any with stellate-like somata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "c4e01b84-f001-4024-b91d-391b114fb1f7",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C65",
+      "claim": "The electrophysiological properties of L4 neurons were not simply intermediate between those of L2/3 and L5A neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical comparisons (Figure 7, Table 1) indicated that the electrophysiological properties of L4 neurons were not simply intermediate between those of L2/3 and L5A neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from statistical analysis of electrophysiological data shown in Figure 7 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "5b969f88-94d9-404b-8d47-b355522f42bd",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C66",
+      "claim": "L4 neurons were similar to L2/3 neurons but different from L5A neurons in Rinput, Ithresh, and SFA ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, L4 neurons were similar to L2/3 neurons but different from L5A neurons in Rinput, Ithresh, and SFA ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "0b58da12-40fc-4e4e-88e2-5468843c69cc",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C67",
+      "claim": "L4 neurons resembled L5A neurons but differed from L2/3 neurons in Vr, AP width, and Vthresh \u2212 Vr.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, L4 neurons resembled L5A neurons but differed from L2/3 neurons in Vr, AP width, and Vthresh \u2212 Vr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a9b67602-cb90-4ec5-8bfe-ed6148d19d78",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C68",
+      "claim": "The average AP amplitude was greater for L4 neurons than for L2/3 and L5A neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of AP amplitude, the average was greater for L4 neurons than for L2/3 and L5A neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "b49eb4eb-7e6a-4a85-8441-a40081847348",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C69",
+      "claim": "L4 neurons showed considerable variability in firing patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "L4 neurons showed considerable variability in firing patterns, which ranged from regular and non-adapting to moderately and even strongly adapting, and in other cases highly irregular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a4774622-324e-4dc3-8457-7829d8cc692a",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C70",
+      "claim": "The properties of L4 excitatory neurons tend to differ from those of either L2/3 or L5A but with considerable cell-to-cell variability, particularly in spiking patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis, we conclude that the properties of L4 excitatory neurons tend to differ from those of either L2/3 or L5A but with considerable cell-to-cell variability, particularly in spiking patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the electrophysiological analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "11162d5d-722d-4a64-a303-73de52604798",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C71",
+      "claim": "Firing pattern diversity has previously been noted for S1-L4 neurons in rat barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Firing pattern diversity has also previously been noted for S1-L4 neurons in rat barrel cortex (Staiger et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on S1-L4 neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a38a3b1e-e2b4-4500-944d-8cd790a618f2",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C72",
+      "claim": "The morphology of M1-L4 neurons consistently had pyramidal-like dendritic morphology, including a basal arbor with multiple dendrites emerging from the soma, and an apical dendrite extending towards the pia and branching into a small apical tuft in L1.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology of M1-L4 neurons consistently had pyramidal-like dendritic morphology, including a basal arbor with multiple dendrites emerging from the soma, and an apical dendrite extending towards the pia and branching into a small apical tuft in L1 (Figure 8B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphological reconstructions shown in Figures 8B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "c0bbfb9b-fdd1-4827-bfb8-3ec64ba39a5e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C73",
+      "claim": "The axonal morphology of M1-L4 neurons was variable but typically included branches in multiple layers, especially L2/3, L4, and L5A.",
+      "claim_type": "EXPLICIT",
+      "source": "The axonal morphology of these neurons was variable but typically included branches in multiple layers, especially L2/3, L4, and L5A, a pattern evident from inspection of the reconstructions (Figure 8B,C) and borne out by length density analysis (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphological reconstructions and analysis shown in Figures 8B, C, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "3e259ac7-6202-48d1-bc8d-d8c440b84dd2",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C74",
+      "claim": "The laminar profile of axonal density of M1-L4 neurons peaked in L4 and steadily declined in the ascending direction across L2/3 towards zero in L1 and also in the descending direction across L5A towards a low baseline level in L5B and L6.",
+      "claim_type": "EXPLICIT",
+      "source": "This laminar profile of axonal density peaked in L4 and steadily declined in the ascending direction across L2/3 towards zero in L1 and also in the descending direction across L5A towards a low baseline level in L5B and L6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of axonal morphology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "91ae4e3c-4476-410b-8b94-e90dfca00bf3",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C75",
+      "claim": "The main trunk of each M1-L4 neuron's axon descended towards the white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "The main trunk of each neuron's axon descended towards the white matter (Figure 8A\u2013C), a feature that can also be seen in reconstructed L4 axons from the sensory cortex (e.g., L\u00fcbke et al., 2000; Staiger et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphological reconstructions shown in Figures 8A-C and comparison to cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "951201c0-50a6-460b-8f24-0bf22439427c",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C76",
+      "claim": "In most cases, the descending axon of M1-L4 neurons could be traced into the white matter, typically coursing laterally, and sometimes but not always sending a branch medially towards the corpus callosum.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, this descending axon could be traced into the white matter, typically coursing laterally, and sometimes but not always sending a branch medially towards the corpus callosum (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from morphological reconstructions shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "1bca2a2c-1615-4289-b7b9-75fc704cda49",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C77",
+      "claim": "M1-L4 neurons are generally pyramidal neurons, with intracortical axons that ramify mainly in the upper half of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this morphological analysis thus indicates that M1-L4 neurons are generally pyramidal neurons, with intracortical axons that ramify mainly in the upper half of the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the morphological analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ad04ffd5-121d-471c-9f79-70476ff93926",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C78",
+      "claim": "The findings support the hypothesis that M1 contains the circuit-level equivalent of L4 in the form of a layer of excitatory neurons at the layer 3/5A border having the same basic synaptic circuit organization as L4 neurons in sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the hypothesis that M1, despite lacking a cytoarchitecturally distinct granular layer, nevertheless contains the circuit-level equivalent of L4 in the form of a layer of excitatory neurons at the layer 3/5A border having the same basic synaptic circuit organization as L4 neurons in sensory cortex. Our findings support this hypothesis and additionally reveal area-specific features of these M1-L4 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by all the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "b69e2f8c-94c4-468b-8fbc-d204c8f7b29e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C79",
+      "claim": "M1-L4 neurons received TC input not only from VL but also from PO.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also revealed features that appear distinct from their S1 barrel counterparts. For one, these neurons received TC input not only from VL but also from PO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on thalamic inputs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "948f1fcc-3836-422a-9472-0c97771855a5",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C80",
+      "claim": "The pattern of PO input to M1-L4 contrasts with S1 barrels, where VPM and PO axons target L4 and L5A, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with S1 barrels, where VPM and PO axons target L4 and L5A, respectively (Feldmeyer, 2012), but is consistent with previous findings of PO input to neurons in L4 of S2 (Herkenham, 1980; Theyel et al., 2010; Pouchelon et al., 2014) and inter-barrel septa in L4 of rat S1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work on S1 barrel cortex organization.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "d773d3f2-adb1-4ab7-ae37-2c1ca85fb194",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C81",
+      "claim": "The M1-L4 neurons were all pyramidal neurons; no star pyramids or spiny stellate cells were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Another difference from S1-L4 neurons was that the M1-L4 neurons were all pyramidal neurons; we did not detect star pyramids or spiny stellate cells, as are found in rodent S1 (Staiger et al., 2004; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the morphological analysis and comparison to cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "2eb5f315-150f-4018-879e-4500329fbe34",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C82",
+      "claim": "M1-L4 is more similar to the primary visual and auditory cortices of rodents, which also do not contain spiny stellate cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, M1-L4 is more similar to the primary visual and auditory cortices of rodents, which also do not contain spiny stellate cells (Peters and Kara, 1985; Smith and Populin, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to cited prior work on other cortical areas.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a63bb0e6-2ffe-435e-a5be-a761535029cb",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C83",
+      "claim": "Spiny stellate cells first develop as pyramidal neurons and subsequently lose their apical dendrites through developmental sculpting.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as shown in ferret visual cortex, spiny stellate cells first develop as pyramidal neurons and subsequently lose their apical dendrites through developmental sculpting, indicating a spectrum of L4 morphological subtypes, with 'pyramidal' as the default or prototypical structure (Callaway and Borrell, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on developmental neuroscience.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "3a2f90bc-e8ce-4b6d-b915-e1aa47c32304",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C84",
+      "claim": "All M1-L4 neurons extending an axon towards and often into the subcortical white matter does not represent a difference from S1-L4 neurons, as this is also commonly observed for S1-L4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that all M1-L4 neurons in our sample extended an axon towards and often into the subcortical white matter does not however represent a difference, as this is also commonly observed for S1-L4 neurons (e.g., L\u00fcbke et al., 2000; Staiger et al., 2004; Shepherd et al., 2005), and L4 neurons (including stellates) with callosal projections have been described in cat V1 (e.g., Vercelli et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to cited prior work on S1-L4 and V1 neurons.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "e79b94cd-93b6-4486-8746-7f63f539aeeb",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C85",
+      "claim": "M1-L4 neurons displayed properties that more closely resembled pyramidal than spiny stellate neurons in rodent S1-L4.",
+      "claim_type": "EXPLICIT",
+      "source": "In several ways, M1-L4 neurons displayed properties that more closely resembled pyramidal than spiny stellate neurons in rodent S1-L4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of M1-L4 properties to known properties of S1-L4 neuron subtypes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "22d23432-aee6-4622-a758-ffce30e5b934",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C86",
+      "claim": "The axonal projections of S1-L4 stellate neurons tend to be more focused in a dense beam to L2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the axonal projections of S1-L4 stellate neurons tend to be more focused in a dense beam to L2/3; in contrast, those of S1-L4 pyramidal neurons tend to show more horizontal spread, lower density in L2/3, and more branching in L5A (Brecht and Sakmann, 2002; Bender et al., 2003; L\u00fcbke et al., 2003; Staiger et al., 2004; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on S1-L4 neuron morphology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "4bce6e00-c503-4cdd-b330-e9353ba63c02",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C87",
+      "claim": "The axonal projections of S1-L4 pyramidal neurons tend to show more horizontal spread, lower density in L2/3, and more branching in L5A.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the axonal projections of S1-L4 stellate neurons tend to be more focused in a dense beam to L2/3; in contrast, those of S1-L4 pyramidal neurons tend to show more horizontal spread, lower density in L2/3, and more branching in L5A (Brecht and Sakmann, 2002; Bender et al., 2003; L\u00fcbke et al., 2003; Staiger et al., 2004; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on S1-L4 neuron morphology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "099012af-48bd-4571-a6da-a926c95ecef1",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C88",
+      "claim": "S1-L4 neurons located in the inter-barrel septa (in rats) are pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a pattern is also observed for S1-L4 neurons located in the inter-barrel septa (in rats), which are pyramidal neurons (Brecht and Sakmann, 2002; Bureau et al., 2004; Shepherd et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on septal S1-L4 neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "7803116a-cbb2-454e-b2eb-1bbc5dd38c51",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C89",
+      "claim": "In rat S1, thalamocortical axons from PO branch in L4 in septum-related columns but not in barrel-related columns, where they instead branch in L5A (and L1).",
+      "claim_type": "EXPLICIT",
+      "source": "In rat S1, thalamocortical axons from PO branch in L4 in septum-related columns (similar to our finding of PO innervation of M1-L4 neurons) but not in barrel-related columns in rat S1, where they instead branch in L5A (and L1) (Lu and Lin, 1993; Wimmer et al., 2010; Feldmeyer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on PO innervation patterns in rat S1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "f29ad7e0-a7a6-43b4-9d35-e0dd8dfdcde0",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C90",
+      "claim": "The septal region of rat S1 has been proposed to be hodologically organized as a higher order rather than primary sensory cortical area.",
+      "claim_type": "EXPLICIT",
+      "source": "The septal region of rat S1 has been proposed to be hodologically organized as a higher order rather than primary sensory cortical area (Killackey and Sherman, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "a9deaa9d-ccbb-4de5-9684-7033c6ab7d5f",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C91",
+      "claim": "PO projects to L4 in S2 in addition to septal-S1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, PO projects to L4 in S2 in addition to septal-S1 (Theyel et al., 2010; Pouchelon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on PO projections.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "6345af34-ae20-49a0-bdee-0af1ccc8a783",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C92",
+      "claim": "The findings are generally suggestive that, at least in terms of its L4-related organization, the 'primary' motor cortex more closely resembles higher order than primary sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings are generally suggestive that, at least in terms of its L4-related organization, the 'primary' motor cortex more closely resembles higher order than primary sensory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings based on comparison to known organizational principles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ff0a00ca-54c8-45c9-bc22-a0acf251dda5",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C93",
+      "claim": "The apparent absence of L4 in M1 and other agranular cortical areas has long been of interest for its implication that the circuit organization of these areas differs fundamentally from that of sensory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent absence of L4 in M1 and other agranular cortical areas has long been of interest for its implication that the circuit organization of these areas differs fundamentally from that of sensory areas (Shipp, 2005; Feldmeyer et al., 2013; Shipp et al., 2013; Garc\u00eda-Cabezas and Barbas, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on cortical organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "3d2f8468-fb50-47ff-ac41-cd2f5a7a676b",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C94",
+      "claim": "L4 in M1 has been 'lost' only at the level of cytoarchitecture but not of cellular connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that L4 in M1 has been 'lost' only at the level of cytoarchitecture but not of cellular connectivity, as it is present in the form of a layer of pyramidal neurons with the expected input\u2013output connections of prototypical L4 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "4e3d6188-2c86-4efe-9e6f-c1326b3cf2ed",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C95",
+      "claim": "Cortical circuit organization tends to be conserved rather than reinvented across areas, with variations arising mostly through quantitative differences in a core set of existing circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "This accords with the general notion that cortical circuit organization tends to be conserved rather than reinvented across areas, with variations arising mostly through quantitative differences in a core set of existing circuits (Harris and Shepherd, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a theoretical framework.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "e6abec3a-8881-4d8a-90d5-32c894b68e56",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C96",
+      "claim": "Rodent M1 possesses not only a thin L4 but an expanded L5B.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, rodent M1 possesses not only a thin L4 but an expanded L5B (Brecht et al., 2004; Weiler et al., 2008; Yu et al., 2008; Anderson et al., 2010; Hooks et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on M1 organization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "4c4398f6-614d-4577-845d-82e4d73ca765",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C97",
+      "claim": "In rodent S1 barrel cortex, L4 is expanded and shows the most overtly specialized connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodent S1 barrel cortex, it is L4 that is instead expanded and shows the most overtly specialized connectivity (Feldmeyer, 2012); similarly, L4 in V1 of highly visual mammals is often elaborately differentiated (Fitzpatrick, 1996; Nassi and Callaway, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on S1 barrel cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "8b3112f6-d137-421e-a370-4e579d1f81e9",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C98",
+      "claim": "L4 in V1 of highly visual mammals is often elaborately differentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodent S1 barrel cortex, it is L4 that is instead expanded and shows the most overtly specialized connectivity (Feldmeyer, 2012); similarly, L4 in V1 of highly visual mammals is often elaborately differentiated (Fitzpatrick, 1996; Nassi and Callaway, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on V1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "57b79630-43bd-4501-8f5a-70c397a8506e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C99",
+      "claim": "L4 appears to be most elaborate in the primary sensory cortices of modalities that are particularly ethologically relevant to an animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, L4 appears to be most elaborate in the primary sensory cortices of modalities that are particularly ethologically relevant to an animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of L4 organization across different cortical areas and species.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "3e9bff68-d17f-4f20-96ac-5fbf1aa1b75c",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C100",
+      "claim": "Motor cortex contains a L4 circuit that is smaller and simpler but retains the same prototypical connectivity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor cortex contains a L4 circuit that is smaller and simpler but retains the same prototypical connectivity patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ffd2d39b-0af8-4099-8c3d-91ebeaebf4c0",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C101",
+      "claim": "Like their sensory cortical counterparts, L4 neurons in M1 are specialized for processing of thalamic input before this information is integrated with the activity of other cell classes downstream in the local M1 network.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that like their sensory cortical counterparts, L4 neurons in M1 are specialized for processing of thalamic input before this information is integrated with the activity of other cell classes (which may also be thalamorecipient) downstream in the local M1 network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation about the functional role of M1-L4 neurons.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "f53742bf-dc03-4883-8f7a-3deb8a19e834",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "claim_id": "C102",
+      "claim": "The results should facilitate further studies of M1-L4 by enabling a shift of focus away from the question of whether L4 neurons are present in M1 to questions of what types of information they process, how they do so, and how this relates to motor behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results should facilitate further studies of M1-L4 by enabling a shift of focus away from the question of whether L4 neurons are present in M1 to questions of what types of information they process, how they do so, and how this relates to motor behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implications of the findings for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "700ae67b-1387-4710-b783-8539e70d25ae",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "M1 is classically considered agranular (lacking L4), but molecular markers like Rorb suggest a potential L4 homolog at the L3/5A border in mouse M1, similar to but weaker than S1 L4 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C12 establish the historical context and provide molecular evidence (Rorb expression patterns) from both the current study (C9-C10, Figure 1) and prior literature (C11-C12) supporting the existence of a potential L4 zone in M1. The data and citations converge to support this background result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In sensory cortex, L4 is characterized by strong primary thalamic input, largely unidirectional projection to L2/3, primarily intralaminar excitatory input, and weak long-range corticocortical inputs and outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16, C18, C28, C35-C36, C45-C46, and C51 collectively describe the established circuit properties of L4 in sensory cortex, supported by multiple citations to prior literature. These serve as the reference standard for evaluating M1-L4 properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "e2daaf53-b5d4-4f39-b5c0-c110c8ec7fb8",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neurons at the L3/5A border in mouse M1 receive strong monosynaptic excitatory thalamocortical input from the ventrolateral (VL) nucleus, with a peak at normalized cortical depth ~1/3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C21-C23 are supported by optogenetic-electrophysiological experiments (Figures 2A-E) showing VL axon labeling patterns and laminar profiles of TC input. The data demonstrate a clear peak of VL input at the L3/5A border, fulfilling one criterion for L4 identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "4153970c-4fb3-483f-925f-2746434e1b72",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "M1-L4 neurons also receive thalamocortical input from the posterior nucleus (PO), with a broad peak in upper layers including L4, resembling PO innervation of S2 and septal S1 rather than barrel S1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27, C79-C80 are supported by optogenetic experiments (Figures 3A-E) showing PO axon patterns and input profiles. The comparison to S2 and septal S1 (C26-C27, C80) is appropriately qualified as an inference based on cited literature, distinguishing M1-L4 from barrel S1-L4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "1850c72f-c091-411f-a11f-a48a5c19d189",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "M1-L4 neurons provide excitatory output to L2/3 pyramidal neurons, with the strongest ascending input to L2/3 arising from the L3/5A border at normalized depth ~1/3, similar to but weaker than S1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29-C34 are supported by glutamate uncaging experiments (Figures 4A-E) showing synaptic input maps for L2/3 neurons in both M1 and S1. The data demonstrate a clear L4\u2192L2/3 projection in M1, with quantitative comparison to S1 showing topographic similarity but scaled amplitude.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "M1-L4 neurons receive primarily intralaminar excitatory input with relatively weak input from L2/3, and the L4\u2192L2/3 projection is predominantly unidirectional (nearly 4-fold stronger than L2/3\u2192L4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 are supported by glutamate uncaging input mapping data (Figures 5A-E) showing that M1-L4 neurons receive mostly intralaminar input, with statistical analysis (C42, p=0.0062) confirming the asymmetry. The observation of heterogeneity (C39-C40) is appropriately noted but does not undermine the general pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "885ee61e-8c5b-411a-a6a5-4dc7595cbe1e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "M1-L4 neurons receive relatively little long-range corticocallosal input from contralateral M1, with a nadir at the L3/5A border that is complementary to VL thalamic input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C47-C50 are supported by optogenetic experiments with callosal axon stimulation (Figures 6A-F) showing both anatomical (fluorescence) and functional (electrophysiological) evidence for reduced callosal input to L4. The complementary pattern with VL input (C49) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "338d558b-22c5-4bbc-bf3f-786982580a64",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Retrograde tracing reveals a relative paucity of long-range corticocortical projections originating from M1-L4, with a gap in labeling centered at normalized depth ~0.35 following injections in both contralateral and ipsilateral cortical areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 are supported by retrograde tracing experiments (Figures 6G-J) showing reduced labeling in M1-L4 from multiple cortical targets. The quantification (C59) and acknowledgment that the gap is not absolute (C56) appropriately characterize the data. This complements the input data to establish weak long-range connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "70b67b89-f591-4b34-85e0-c97948385c7e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "M1-L4 neurons are electrophysiologically diverse, with properties that differ from both L2/3 and L5A neurons in complex ways, showing considerable cell-to-cell variability particularly in firing patterns, and all recorded cells had pyramidal soma features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C62-C71 are supported by whole-cell recordings from 56 neurons (Figure 7, Table 1) with statistical comparisons showing that L4 properties are not simply intermediate between L2/3 and L5A. The diversity in firing patterns (C69-C70) and comparison to prior S1 data (C71) are appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "ee85e993-bb29-4d5c-a863-b923f96f291e",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "M1-L4 neurons are morphologically uniform pyramidal neurons with apical dendrites extending to L1, locally ramifying axons with branches in L2/3, L4, and L5A, and descending axons toward white matter; no stellate cells were observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C72-C77, C81 are supported by morphological reconstructions (n=6, Figure 8) showing consistent pyramidal dendritic morphology and quantitative axonal length density analysis. The absence of stellate cells (C81) is clearly stated and distinguishes M1-L4 from barrel S1-L4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "11494086-88bf-4c0a-ae55-47166371319f",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mouse M1 contains pyramidal neurons at the L3/5A border with all prototypical L4 circuit properties, representing a circuit-level L4 that has been 'lost' only at the cytoarchitectural level but retained in terms of cellular connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C61, C78, C94, C100 represent the main conclusion, supported by the convergence of all experimental results (thalamic input, L4\u2192L2/3 output, unidirectional connectivity, weak long-range connections, and appropriate cellular properties). This is the central finding integrating all major results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "1a69d2f9-b903-4311-bd93-ca271f962dd7",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "M1-L4 neurons resemble pyramidal rather than stellate S1-L4 neurons in their properties, similar to primary visual and auditory cortices in rodents, and share features with septal S1-L4 neurons including PO innervation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C89 provide comparative context supported by citations to prior literature on other cortical areas and S1 subtypes. The comparisons are appropriately qualified as inferences based on known properties from cited work, helping to position M1-L4 within the broader cortical organization framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "b5f4cba6-8b82-463c-9203-477e4aa7b741",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The findings suggest that M1, in terms of its L4-related organization, more closely resembles higher-order than primary sensory cortex, based on similarities to septal S1 and S2 organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C92 represent a speculative interpretation (C92 explicitly states 'suggestive') based on comparisons to cited literature about cortical hierarchy. While the comparison is reasonable, the claim about M1 resembling higher-order cortex requires additional functional or anatomical evidence beyond L4 organization alone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "6e818d1c-1357-456b-85c2-9e6d81aaa2de",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cortical circuit organization is conserved across areas with quantitative variations, and L4 elaboration varies across cortical areas, being most elaborate in primary sensory cortices of ethologically relevant modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93, C95-C99 provide theoretical context supported by citations to prior literature. These claims frame the findings within established principles of cortical organization and comparative neuroanatomy, appropriately distinguishing between conservation of basic circuits and area-specific specializations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "bb2f0438-7408-42dd-88d7-951452555b43",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work demonstrated monosynaptic VL input to upper layer pyramidal neurons in vibrissal M1, but could not distinguish L4 from L2/3 due to cortical compression at the flexure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 accurately cite and contextualize prior work (Hooks et al., 2013), explaining the motivation for studying forelimb M1 where layers are not compressed. This appropriately acknowledges prior findings while justifying the current experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "d99f3f2f-5400-4751-87bb-17583892e2b1",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work shows that L4 neurons in sensory cortex typically send weak long-range output, with some exceptions (e.g., primate V1), and gaps in L4 labeling have been observed in mouse S1 and vibrissal M1 following retrograde tracing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 accurately cite prior literature establishing the expected pattern of weak L4 long-range output and providing precedent for the retrograde tracing approach. These claims appropriately contextualize the current retrograde tracing experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "f4f8815b-8a68-44b0-a9ba-18183da534ad",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "L4 neurons in M1 are specialized for processing thalamic input before integration with other cell classes downstream in the local M1 network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C101 is explicitly stated as speculation in the manuscript. While the circuit properties support this functional interpretation, no direct functional experiments (e.g., during behavior, sensory stimulation, or motor output) were performed to test this hypothesis. This remains an untested inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    },
+    {
+      "id": "381caa51-e6f2-4934-b63e-d3eac0efb109",
+      "content_id": "ce06339d-a25e-43f7-a05d-cf8603415f4b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The results should facilitate future studies by shifting focus from whether L4 exists in M1 to questions about information processing and behavioral relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 is a reasonable statement about the implications of the findings for future research directions. The establishment of M1-L4's existence and properties does logically enable such functional studies, though this is a forward-looking claim rather than a current result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:28.506358Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa46e6fe-df48-4dcd-8021-80516feaa56c",
+      "result_id": "700ae67b-1387-4710-b783-8539e70d25ae"
+    },
+    {
+      "claim_id": "e78e2407-3bdf-478b-8419-0e7090544e4a",
+      "result_id": "700ae67b-1387-4710-b783-8539e70d25ae"
+    },
+    {
+      "claim_id": "2874199f-a8b7-486a-ab64-ab1418607c33",
+      "result_id": "700ae67b-1387-4710-b783-8539e70d25ae"
+    },
+    {
+      "claim_id": "7c9be588-1f74-49b1-bb47-2d2cd9286a28",
+      "result_id": "700ae67b-1387-4710-b783-8539e70d25ae"
+    },
+    {
+      "claim_id": "ff66e309-f53d-46e7-b3ec-78a0d55261f1",
+      "result_id": "700ae67b-1387-4710-b783-8539e70d25ae"
+    },
+    {
+      "claim_id": "b0a38803-9568-46b2-b75b-a2ae40d090be",
+      "result_id": "700ae67b-1387-4710-b783-8539e70d25ae"
+    },
+    {
+      "claim_id": "96a14805-51e9-4f94-b527-f558dec0f343",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "26c9b1cf-1200-4e6b-8f06-74edbf278fbc",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "c523b6a4-3fb1-4076-9825-00dac9cb6cf6",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "eae9bba5-5655-4de8-9913-d5d9905f358a",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "47c70fc5-3a76-4e92-a546-068632941d38",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "bb87f91b-1009-43eb-8c39-1706ce1cddf1",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "e4a41ece-54a8-42ce-988a-257b935bb22f",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "d29402c3-2fef-4675-a280-8debecd522e6",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "c09bf0a1-460d-4190-a19e-ba45a1b11e08",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "ce7e706c-9be5-4b94-a7fb-06391dbd2343",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "a795da16-7493-48c6-8483-703e8380c13e",
+      "result_id": "4ca405b0-74dc-4f5f-8563-aaefa89f02be"
+    },
+    {
+      "claim_id": "b4540cd3-9e43-44ee-88c9-178f819eea0a",
+      "result_id": "e2daaf53-b5d4-4f39-b5c0-c110c8ec7fb8"
+    },
+    {
+      "claim_id": "1ba9f61e-3411-43c3-8f46-e29f775145d7",
+      "result_id": "e2daaf53-b5d4-4f39-b5c0-c110c8ec7fb8"
+    },
+    {
+      "claim_id": "5fea2977-ff59-41b3-b95b-3b39bc073157",
+      "result_id": "e2daaf53-b5d4-4f39-b5c0-c110c8ec7fb8"
+    },
+    {
+      "claim_id": "a3f72665-c7da-4906-9af3-fe6b6101f0b1",
+      "result_id": "e2daaf53-b5d4-4f39-b5c0-c110c8ec7fb8"
+    },
+    {
+      "claim_id": "a39616c0-e5ec-489f-a3b0-8adb96b76062",
+      "result_id": "4153970c-4fb3-483f-925f-2746434e1b72"
+    },
+    {
+      "claim_id": "9a6fcbc5-1b13-411e-a39b-2ffdc2b470a0",
+      "result_id": "4153970c-4fb3-483f-925f-2746434e1b72"
+    },
+    {
+      "claim_id": "37ff9e7c-3e6b-4f7d-82bc-4887399b9e81",
+      "result_id": "4153970c-4fb3-483f-925f-2746434e1b72"
+    },
+    {
+      "claim_id": "90e13fe1-fbaa-4642-9895-a4462b64a803",
+      "result_id": "4153970c-4fb3-483f-925f-2746434e1b72"
+    },
+    {
+      "claim_id": "b69e2f8c-94c4-468b-8fbc-d204c8f7b29e",
+      "result_id": "4153970c-4fb3-483f-925f-2746434e1b72"
+    },
+    {
+      "claim_id": "948f1fcc-3836-422a-9472-0c97771855a5",
+      "result_id": "4153970c-4fb3-483f-925f-2746434e1b72"
+    },
+    {
+      "claim_id": "6e76a9a8-2e5b-4210-9abc-08b3205d30ca",
+      "result_id": "1850c72f-c091-411f-a11f-a48a5c19d189"
+    },
+    {
+      "claim_id": "a921d0d3-c71b-4562-874b-ef9eee1bf789",
+      "result_id": "1850c72f-c091-411f-a11f-a48a5c19d189"
+    },
+    {
+      "claim_id": "6f019f89-d71d-42a3-b634-a65b1fb6c3f8",
+      "result_id": "1850c72f-c091-411f-a11f-a48a5c19d189"
+    },
+    {
+      "claim_id": "ed863ae5-bc76-4c34-a7ca-a0229eb4b900",
+      "result_id": "1850c72f-c091-411f-a11f-a48a5c19d189"
+    },
+    {
+      "claim_id": "b7b27fa5-be81-4d8b-b2c4-8f110367aefe",
+      "result_id": "1850c72f-c091-411f-a11f-a48a5c19d189"
+    },
+    {
+      "claim_id": "4c1e9b42-e019-4492-aa3f-541ea9119cb1",
+      "result_id": "1850c72f-c091-411f-a11f-a48a5c19d189"
+    },
+    {
+      "claim_id": "1ff4a34b-85bd-47f8-93c2-0b319acfd0df",
+      "result_id": "1850c72f-c091-411f-a11f-a48a5c19d189"
+    },
+    {
+      "claim_id": "fb96b4bc-2359-4684-ba97-1d121e47cef6",
+      "result_id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4"
+    },
+    {
+      "claim_id": "926372c4-95e9-4527-9478-4558f46aac56",
+      "result_id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4"
+    },
+    {
+      "claim_id": "afc12fd3-3ede-4921-8047-61f7f72e51cf",
+      "result_id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4"
+    },
+    {
+      "claim_id": "aec4fc43-19e6-4de5-8a23-e04cae31d1ba",
+      "result_id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4"
+    },
+    {
+      "claim_id": "8413823e-4eee-4c63-b8cf-c4cbcfd7de90",
+      "result_id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4"
+    },
+    {
+      "claim_id": "890005e7-901f-4777-921a-d5eb2f5dc380",
+      "result_id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4"
+    },
+    {
+      "claim_id": "c92c6722-df8a-42fc-b192-4045afbab417",
+      "result_id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4"
+    },
+    {
+      "claim_id": "28630f98-d82d-46bc-a7b0-5fdfc5622251",
+      "result_id": "cc94ab12-99c8-4e45-879f-cfd78cdd4fc4"
+    },
+    {
+      "claim_id": "8bee3d87-0c7f-4253-8a9e-64cb7676be59",
+      "result_id": "885ee61e-8c5b-411a-a6a5-4dc7595cbe1e"
+    },
+    {
+      "claim_id": "06bccf60-b038-45a6-a36a-b04f13b619b3",
+      "result_id": "885ee61e-8c5b-411a-a6a5-4dc7595cbe1e"
+    },
+    {
+      "claim_id": "e255a06e-6d55-43f7-b7f8-8df239ab590f",
+      "result_id": "885ee61e-8c5b-411a-a6a5-4dc7595cbe1e"
+    },
+    {
+      "claim_id": "4a295abf-53a9-4881-9c8b-b11ff3908f91",
+      "result_id": "885ee61e-8c5b-411a-a6a5-4dc7595cbe1e"
+    },
+    {
+      "claim_id": "1d4cc7ed-5de3-47ca-ab74-efed8d1a69e2",
+      "result_id": "885ee61e-8c5b-411a-a6a5-4dc7595cbe1e"
+    },
+    {
+      "claim_id": "907d11ab-d752-41ed-8749-3216a946baba",
+      "result_id": "338d558b-22c5-4bbc-bf3f-786982580a64"
+    },
+    {
+      "claim_id": "dbb2168b-c2f5-44db-bd52-0bad700c3acc",
+      "result_id": "338d558b-22c5-4bbc-bf3f-786982580a64"
+    },
+    {
+      "claim_id": "f758d3c8-c19c-431f-8f8a-b822269c3ab1",
+      "result_id": "338d558b-22c5-4bbc-bf3f-786982580a64"
+    },
+    {
+      "claim_id": "bebd18a7-b961-457e-983c-7ef0a58982b2",
+      "result_id": "338d558b-22c5-4bbc-bf3f-786982580a64"
+    },
+    {
+      "claim_id": "2eca7287-94d1-4daa-8895-415d90f98687",
+      "result_id": "338d558b-22c5-4bbc-bf3f-786982580a64"
+    },
+    {
+      "claim_id": "29d5cfea-7ba6-44a8-aa63-28d437de9efc",
+      "result_id": "338d558b-22c5-4bbc-bf3f-786982580a64"
+    },
+    {
+      "claim_id": "ee215a07-4c7e-4a66-89e2-4ccd180568ec",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "268dfdc5-931b-4437-ad17-32dc91d2e5ed",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "bf55658d-0fff-4224-b6d1-48a402af607b",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "ade94ef7-e829-483c-aeb6-48e837d53b27",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "c4e01b84-f001-4024-b91d-391b114fb1f7",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "5b969f88-94d9-404b-8d47-b355522f42bd",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "0b58da12-40fc-4e4e-88e2-5468843c69cc",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "a9b67602-cb90-4ec5-8bfe-ed6148d19d78",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "b49eb4eb-7e6a-4a85-8441-a40081847348",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "a4774622-324e-4dc3-8457-7829d8cc692a",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "11162d5d-722d-4a64-a303-73de52604798",
+      "result_id": "70b67b89-f591-4b34-85e0-c97948385c7e"
+    },
+    {
+      "claim_id": "ea8e7bf1-e8f0-4056-9192-1484a6c8041e",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "0da3b214-0e5f-4ef0-a415-9fe00ec3861e",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "a38a3b1e-e2b4-4500-944d-8cd790a618f2",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "c0bbfb9b-fdd1-4827-bfb8-3ec64ba39a5e",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "3e259ac7-6202-48d1-bc8d-d8c440b84dd2",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "91ae4e3c-4476-410b-8b94-e90dfca00bf3",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "951201c0-50a6-460b-8f24-0bf22439427c",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "1bca2a2c-1615-4289-b7b9-75fc704cda49",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "d773d3f2-adb1-4ab7-ae37-2c1ca85fb194",
+      "result_id": "ee85e993-bb29-4d5c-a863-b923f96f291e"
+    },
+    {
+      "claim_id": "d62dfcff-cefd-4e2a-bc75-72337a4ef805",
+      "result_id": "11494086-88bf-4c0a-ae55-47166371319f"
+    },
+    {
+      "claim_id": "27ded937-f012-41e2-a4b5-cb6572e402be",
+      "result_id": "11494086-88bf-4c0a-ae55-47166371319f"
+    },
+    {
+      "claim_id": "ad04ffd5-121d-471c-9f79-70476ff93926",
+      "result_id": "11494086-88bf-4c0a-ae55-47166371319f"
+    },
+    {
+      "claim_id": "3d2f8468-fb50-47ff-ac41-cd2f5a7a676b",
+      "result_id": "11494086-88bf-4c0a-ae55-47166371319f"
+    },
+    {
+      "claim_id": "3e9bff68-d17f-4f20-96ac-5fbf1aa1b75c",
+      "result_id": "11494086-88bf-4c0a-ae55-47166371319f"
+    },
+    {
+      "claim_id": "2eb5f315-150f-4018-879e-4500329fbe34",
+      "result_id": "1a69d2f9-b903-4311-bd93-ca271f962dd7"
+    },
+    {
+      "claim_id": "a63bb0e6-2ffe-435e-a5be-a761535029cb",
+      "result_id": "1a69d2f9-b903-4311-bd93-ca271f962dd7"
+    },
+    {
+      "claim_id": "3a2f90bc-e8ce-4b6d-b915-e1aa47c32304",
+      "result_id": "1a69d2f9-b903-4311-bd93-ca271f962dd7"
+    },
+    {
+      "claim_id": "e79b94cd-93b6-4486-8746-7f63f539aeeb",
+      "result_id": "1a69d2f9-b903-4311-bd93-ca271f962dd7"
+    },
+    {
+      "claim_id": "22d23432-aee6-4622-a758-ffce30e5b934",
+      "result_id": "1a69d2f9-b903-4311-bd93-ca271f962dd7"
+    },
+    {
+      "claim_id": "4bce6e00-c503-4cdd-b330-e9353ba63c02",
+      "result_id": "1a69d2f9-b903-4311-bd93-ca271f962dd7"
+    },
+    {
+      "claim_id": "099012af-48bd-4571-a6da-a926c95ecef1",
+      "result_id": "1a69d2f9-b903-4311-bd93-ca271f962dd7"
+    },
+    {
+      "claim_id": "7803116a-cbb2-454e-b2eb-1bbc5dd38c51",
+      "result_id": "1a69d2f9-b903-4311-bd93-ca271f962dd7"
+    },
+    {
+      "claim_id": "f29ad7e0-a7a6-43b4-9d35-e0dd8dfdcde0",
+      "result_id": "b5f4cba6-8b82-463c-9203-477e4aa7b741"
+    },
+    {
+      "claim_id": "a9deaa9d-ccbb-4de5-9684-7033c6ab7d5f",
+      "result_id": "b5f4cba6-8b82-463c-9203-477e4aa7b741"
+    },
+    {
+      "claim_id": "6345af34-ae20-49a0-bdee-0af1ccc8a783",
+      "result_id": "b5f4cba6-8b82-463c-9203-477e4aa7b741"
+    },
+    {
+      "claim_id": "ff0a00ca-54c8-45c9-bc22-a0acf251dda5",
+      "result_id": "6e818d1c-1357-456b-85c2-9e6d81aaa2de"
+    },
+    {
+      "claim_id": "4e3d6188-2c86-4efe-9e6f-c1326b3cf2ed",
+      "result_id": "6e818d1c-1357-456b-85c2-9e6d81aaa2de"
+    },
+    {
+      "claim_id": "e6abec3a-8881-4d8a-90d5-32c894b68e56",
+      "result_id": "6e818d1c-1357-456b-85c2-9e6d81aaa2de"
+    },
+    {
+      "claim_id": "4c4398f6-614d-4577-845d-82e4d73ca765",
+      "result_id": "6e818d1c-1357-456b-85c2-9e6d81aaa2de"
+    },
+    {
+      "claim_id": "8b3112f6-d137-421e-a370-4e579d1f81e9",
+      "result_id": "6e818d1c-1357-456b-85c2-9e6d81aaa2de"
+    },
+    {
+      "claim_id": "57b79630-43bd-4501-8f5a-70c397a8506e",
+      "result_id": "6e818d1c-1357-456b-85c2-9e6d81aaa2de"
+    },
+    {
+      "claim_id": "e04f49c9-61cd-4968-8d90-ea4ff0f410a0",
+      "result_id": "bb2f0438-7408-42dd-88d7-951452555b43"
+    },
+    {
+      "claim_id": "84a4703d-7939-4ed7-b48f-57e0f55fd629",
+      "result_id": "bb2f0438-7408-42dd-88d7-951452555b43"
+    },
+    {
+      "claim_id": "0b217498-1a81-4dbe-b710-8488cdcebd61",
+      "result_id": "d99f3f2f-5400-4751-87bb-17583892e2b1"
+    },
+    {
+      "claim_id": "e662671a-4809-4945-8564-a582e9b68180",
+      "result_id": "d99f3f2f-5400-4751-87bb-17583892e2b1"
+    },
+    {
+      "claim_id": "759f2617-b703-4a1a-a192-21c604673476",
+      "result_id": "d99f3f2f-5400-4751-87bb-17583892e2b1"
+    },
+    {
+      "claim_id": "ffd2d39b-0af8-4099-8c3d-91ebeaebf4c0",
+      "result_id": "f4f8815b-8a68-44b0-a9ba-18183da534ad"
+    },
+    {
+      "claim_id": "f53742bf-dc03-4883-8f7a-3deb8a19e834",
+      "result_id": "381caa51-e6f2-4934-b63e-d3eac0efb109"
+    }
+  ],
+  "comparisons": []
+}

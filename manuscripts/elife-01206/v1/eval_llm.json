@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes the current state of knowledge regarding asynchronous and synchronous neurotransmitter release. The prevailing model posits that synchronous release is triggered by highly localized calcium transients from calcium channels near active zones, while asynchronous release results from slowly decaying calcium accumulation during repetitive stimulation. This model is supported by differential sensitivity to calcium buffers (EGTA vs BAPTA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 accurately represent established knowledge in the field, supported by multiple citations. These claims provide necessary background context for the study and correctly characterize the prevailing hypotheses that the authors seek to challenge. The differential buffer sensitivity (C17-C19) is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "At the zebrafish neuromuscular junction, synchronous release strictly depends on P/Q-type calcium channels, as demonstrated by pharmacological blockade with \u03c9-conotoxin GVIA and genetic manipulation (tb204a mutant). Unexpectedly, blocking P/Q channels nearly abolished synchronous release but left asynchronous release intact with greatly delayed onset. The delay in asynchronous release onset was longest in \u03c9-conotoxin GVIA-treated fish, intermediate in tb204a mutants, and shortest in wild-type controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C30-C39 are well-supported by paired patch-clamp recordings shown in Figures 1 and 2. The pharmacological and genetic manipulations provide converging evidence that P/Q channels are essential for synchronous but not asynchronous release. Statistical significance (p<0.001) is demonstrated for the delayed onset. The rank order of delays inversely correlates with P/Q channel function, supporting the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "SynaptopHluorin imaging reveals that exocytosis at synaptic boutons shows immediate fluorescence increase in control neurons but greatly delayed onset in \u03c9-conotoxin GVIA-treated neurons. The distributions of time to 50% maximal intensity were non-overlapping between control and toxin-treated fish, and the signal was reduced in toxin-treated fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by synaptopHluorin imaging data in Figure 3. The optical measurements of exocytosis corroborate the electrophysiological findings, providing independent validation of delayed asynchronous release. The non-overlapping distributions (C44) strengthen the conclusion that the delay is a robust phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Calcium imaging with Fluo-4 and Fluo-5F reveals that in control neurons, calcium signal onset is simultaneous across axon initial segment and distal boutons. In \u03c9-conotoxin GVIA-treated fish, signal onset is delayed in all regions except the axon initial segment, with longer delays at greater distances from the soma. The delay is independent of calcium indicator affinity, as both Fluo-4 and Fluo-5F show similar results in toxin-treated fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by calcium imaging data in Figures 5 and 6. The use of two calcium indicators with different affinities (C48-C50) addresses the important control that the observed delays are not artifacts of indicator competition with endogenous buffers. The distance-dependent delay (C47) is a key finding supporting calcium propagation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C66"
+    ],
+    "result": "In \u03c9-conotoxin GVIA-treated neurons, there is a quasi-linear relationship between time to 20% calcium signal rise and distance from a reference point in boutons, yielding a mean propagation velocity of 74 \u03bcm/s. Control neurons show no distance dependence. In toxin-treated neurons, the proximal axon shows no distance dependence, suggesting different signaling mechanisms in proximal axon versus distal terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55, C66 are supported by quantitative analysis in Figure 7 using 3D morphological reconstruction. The linear distance-velocity relationship (C51-C52) provides strong evidence for propagating calcium signals. The lack of distance dependence in control (C53) and proximal axon (C54) regions is appropriately interpreted as reflecting action potential coordination. The calculated velocity (74 \u03bcm/s) is a key quantitative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Using a 'killswitch' protocol where stimulation is terminated before or at the onset of asynchronous release, both the asynchronous release and calcium signal persist well beyond stimulus termination. The calcium signal in distal boutons peaks after stimulus termination, strongly supporting involvement of a propagating calcium signal triggered at the soma rather than continued accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by killswitch experiments in Figure 8. This is a critical experiment that rules out the alternative hypothesis of slow calcium accumulation. The persistence of release and calcium signal after stimulus termination (C56-C57) provides compelling evidence for propagating calcium waves. The inference (C58) is logically sound given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Simultaneous paired recording and calcium imaging in \u03c9-conotoxin GVIA-treated fish shows that the onset of calcium signal and asynchronous release are temporally coincident (within 0.4 \u00b1 0.3 s). A large difference in delay onset was observed between 0.5 mM and 5 mM EGTA conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by simultaneous measurements in Figure 9. The temporal coincidence (C59) directly links the propagating calcium signal to asynchronous release, though the sample size is small (n=3). The EGTA concentration effect (C60) foreshadows the detailed buffer experiments and is well-documented in the figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "EGTA concentration has profound effects on calcium propagation and asynchronous release. In \u03c9-conotoxin GVIA-treated fish, 5 mM EGTA causes 2-3 fold greater delay in calcium signal onset compared to 0.5 mM EGTA, with propagation velocities of 35 \u03bcm/s and 74 \u03bcm/s respectively. The time to peak release is more than twofold larger with 5 mM versus 0.5 mM EGTA. At 25 mM EGTA, transmission is nearly eliminated. In control fish, distance-dependence is not observed, but 5 mM EGTA slows the calcium signal rise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C72 are supported by extensive data in Figure 10 and Table 1. The EGTA dose-response (C61-C63, C69-C71) demonstrates that asynchronous release and calcium propagation are highly sensitive to slow calcium buffers, consistent with involvement of bulk cytoplasmic calcium changes. Statistical significance is demonstrated (p<0.001). The near-complete block at 25 mM EGTA (C70) supports the calcium-dependence of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C105"
+    ],
+    "result": "The authors propose a novel model where asynchronous release is boosted by a propagating intracellular calcium source initiated at off-synaptic locations in axons and branch points, which fully accounts for the persistence after stimulus termination and EGTA sensitivity. This model challenges the prevailing view that asynchronous release results exclusively from expansion of calcium domains around the same channels governing synchronous release. The differential EGTA sensitivity reflects involvement of bulk cytoplasmic calcium changes from distal sources rather than solely highly restricted domains from P/Q channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C87-C88, C91-C94, C105 represent the central thesis supported by the cumulative experimental evidence. The killswitch experiments (supporting C6), EGTA sensitivity experiments (supporting C7, C91-C93), and distance-dependent calcium propagation all converge to support this model. The interpretation (C93-C94) appropriately acknowledges that the model provides an alternative explanation while not excluding some contribution from local P/Q channel calcium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C95",
+      "C98"
+    ],
+    "result": "Pharmacological characterization of the calcium source yielded inconclusive results. High concentrations of Cd2+ required to inhibit calcium signals also blocked sodium channels. Some blockers (Mibefradil, Ni2+, Nimodipine) reduced calcium signals, but other L-type blockers and R-type blockers were ineffective. Calcium store inhibitors (thapsigargin, IP3 receptor antagonists) had no effect. Ryanodine receptor inhibitors gave variable results. The authors suggest the propagation may have a large safety factor requiring near-extinction of calcium for termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C80, C95, C98 describe negative or inconclusive pharmacological results. While the experiments were performed, the lack of clear pharmacological profile (C95) limits mechanistic understanding. The interpretation about safety factors (C98) is speculative. These results highlight a significant gap in understanding the molecular mechanism, though they do not invalidate the main findings about calcium propagation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "TTX experiments show that calcium propagation can be elicited by prolonged depolarization in the absence of action potentials, but with much slower velocity (3-10 \u03bcm/s) compared to \u03c9-conotoxin GVIA conditions (74 \u03bcm/s). Multiple propagating signals and occasional back-propagation were observed. This difference indicates a dominant role of axonal action potentials in coordinating calcium signaling in the axon, with calcium propagation being less dependent on action potential coordination in boutons than in axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86, C99-C101 are supported by TTX experiments in Figure 11 and Videos 3-4. The slower propagation velocity in TTX (C83-C85) compared to normal conditions provides important mechanistic insight about the role of action potentials in coordinating the calcium signal. The interpretation (C86, C100-C101) is reasonable given the data, though the complexity of the signals (multiple waves, back-propagation, C82) makes velocity measurements challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors acknowledge that the pharmacological conditions (\u03c9-conotoxin GVIA blockade) revealing calcium propagation most clearly are non-physiological. Under physiological conditions, the distance for calcium propagation would be less due to action potential participation, and P/Q channels also contribute to calcium generation with secondary sources near boutons, minimizing the need for long-distance propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 represent appropriate caveats about the experimental conditions. The acknowledgment that P/Q blockade is non-physiological (C102) is important for interpretation. The inference that under normal conditions both sources work synergistically (C104) is consistent with the data showing intermediate delays in tb204a mutants and is a reasonable interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors conclude that their finding of robust propagating calcium signals in motor neurons was unexpected, as such signals have been largely limited to postsynaptic cells in published accounts. They suggest that secondary calcium sources may be common among synapses with prominent asynchronous release, including CNS neurons, and call for future studies to determine whether similar mechanisms operate in the central nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9, C106-C110 represent broader implications and future directions. While the novelty of presynaptic calcium waves is appropriately noted (C106-C107), the generalization to other synapses (C8-C9) is speculative and based on limited comparative data. The suggestion that similar mechanisms may operate in CNS (C110) is reasonable but requires future validation. These are appropriate concluding statements but represent hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Paired patch-clamp recordings show a stereotypic transition from exclusively synchronous to principally asynchronous transmission at stimulation frequencies greater than 20 Hz. At 100 Hz, >95% of responses are phase-locked during the first second, with asynchronous release onset after 1 second. Each mode accounts for approximately half of total transmission, and asynchronous event amplitudes are indistinguishable from spontaneous events, consistent with quantal release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 are supported by data in Figure 1 and previous publication (Wen et al., 2010). The characterization of the transition from synchronous to asynchronous release provides essential baseline data. The quantal nature of asynchronous events (C28-C29) is supported by amplitude distribution analysis. The physiological relevance is established by noting that 20-100 Hz corresponds to behaviorally evoked muscle contractures (C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C21"
+    ],
+    "result": "The manuscript reviews established knowledge that asynchronous release is typically smaller than synchronous release but becomes more prominent with repetitive stimulation. The functional significance is thought to be persistent transmitter release when phase-locking is not required. At zebrafish NMJ, asynchronous release may augment release during prolonged swimming. One recent case reported an unusual voltage-dependent calcium channel providing persistent calcium entry for asynchronous release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C21 accurately represent prior knowledge from the literature with appropriate citations. These provide context for the current study. The speculation about zebrafish NMJ function (C13) is reasonable given the physiology. The citation of Few et al. 2012 (C21) provides precedent for alternative calcium sources for asynchronous release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study used zebrafish larvae aged 72-96 hours post-fertilization. A transgenic line expressing synaptopHluorin in CaP motor neurons was generated using the Tol2 transposon system, with synaptopHluorin constructed by fusing super-ecliptic pHluorin to the C-terminus of zebrafish Vamp2 with an 8-amino acid linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are methodological details from the Materials and Methods section. These are straightforward descriptions of experimental procedures and transgenic line generation. The methods are clearly described and appropriate for the experiments performed.",
+    "result_type": "MINOR"
+  }
+]

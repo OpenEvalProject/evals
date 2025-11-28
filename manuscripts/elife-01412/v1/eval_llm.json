@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29"
+    ],
+    "result": "MjNhaP1 is an archaeal electroneutral Na+/H+ antiporter that resembles the human antiporter NHE1 and plays a critical role in pH homeostasis, enabling M. jannaschii to survive at low pH (4\u20136) and sodium concentrations up to 0.9 M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C23-C26, and C29 establish the identity, function, and physiological role of MjNhaP1. These claims are well-supported by citations to prior work and are consistent with established knowledge about this protein family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C147",
+      "C148"
+    ],
+    "result": "In the absence of sodium, changes in pH (between pH 4, 6, and 8) had no major effect on MjNhaP1 conformation at the level of secondary structure, with only minor differences observed in projection difference maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C53, C147-C148 are directly supported by experimental data shown in Figure 3. The projection difference maps show minimal changes upon pH variation in the absence of Na+, indicating no significant pH-triggered conformational switch at the secondary structure level. This is a key finding that contrasts with some existing models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Changes in Na+ concentration caused marked, substrate-specific conformational changes in MjNhaP1 that were largely pH-independent, as evidenced by three sets of positive/negative difference peaks that became progressively stronger with increasing NaCl concentration (20-500 mM at pH 8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54-C66 are well-supported by extensive experimental data shown in Figures 4 and 5. The progressive nature of the changes, substrate specificity (Na+ and Li+ but not Mg2+), and unit cell dimension changes provide strong evidence for Na+-induced conformational changes. Control experiments with non-substrate ions strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C132",
+      "C141",
+      "C158"
+    ],
+    "result": "MjNhaP1 shows approximately 10-fold stronger Na+ binding at pH 8 (KD ~30 mM) than at pH 4 (KD ~280 mM), consistent with substrate competition for a common ion-binding site, as determined from crystallographically-derived apparent dissociation constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C67-C73, C132, C141, and C158 are supported by quantitative analysis of difference peak heights as a function of Na+ concentration (Figure 6). The 10-fold difference in apparent KD values between pH 8 and pH 4 is consistent with competitive binding. The methodology of using difference peak heights to estimate binding constants is reasonable for down-regulated states where the protein is rigid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Projection difference maps indicated helix movements by approximately 2 \u00c5 in the 6-helix bundle region, specifically a joint lateral movement of helix segments 5c and 12e toward TMH 10 and 13, occurring in the physiological pH and Na+ concentration range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C76-C83 are supported by the projection difference maps (Figures 4-5) and interpretation based on the 3D model. The assignment of the strongest difference peaks (set 1) to helix segments 5c/12e is well-justified, and the ~2 \u00c5 displacement estimate is reasonable given the resolution and peak intensities. The physiological relevance is supported by citation C79.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "TMH 6 undergoes a reorientation in response to Na+ binding, with the extracellular half becoming tilted so that the entire helix becomes more straight and perpendicular to the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by the second-strongest set of difference peaks (set 2) in Figure 5 and the change in peak shape in Figure 4. The interpretation that the elongated peak becomes round upon Na+ binding, indicating helix reorientation, is reasonable and consistent with the 3D model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Helix 5e is either highly tilted or disordered at low Na+ but becomes ordered and perpendicular to the membrane upon Na+ binding, while TMH 13 becomes more tilted with increasing Na+ concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by the third set of difference peaks (set 3) in Figure 5 and inspection of projection maps in Figure 4. The interpretation that helix 5e is disordered/tilted at low Na+ and becomes ordered at high Na+ is consistent with the appearance of a clear peak only at \u2265100 mM NaCl. The increased elongation of the TMH 13 peak at high Na+ supports the tilting interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "At pH 4 above 150 mM NaCl, a Na+-induced movement of the group of helices on the outside of the bundle (TMH 4, 11, and helix 12c) shifts by approximately 2 \u00c5 toward the dimer interface, a movement largely absent at pH 8 or 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by the broad difference peak observed in Figure 5C at pH 4. The pH-specific nature of this movement (present at pH 4 but not pH 8 or 6) is clearly shown in the data. The ~2 \u00c5 displacement estimate is consistent with the methodology used for other helix movements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "A positive difference peak above 100 mM NaCl at pH 8 or 250 mM at pH 4 indicates a gain of order in the region between the 6-helix bundle and TMH 10, with no significant differences recorded in the central part of the dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by the unmatched positive peak in Figure 5A,C (C61-C62) and the absence of differences in the dimer center. The interpretation of a gain of order is reasonable for an unmatched positive peak.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The observed helix movements convert the antiporter from the proton-bound, outward-open state (in the absence of Na+) to the Na+-bound, inward-open state, with oscillation between the two states resulting in Na+/H+ antiport via an alternating access mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C122-C125, C160-C163 present the proposed transport mechanism based on the experimental observations. The interpretation that the Na+-free state is outward-open and the Na+-bound state is inward-open is well-supported by the helix movements that change access to the proposed substrate binding site (Figure 7). The alternating access mechanism is a well-established framework (C163 cites Jardetzky, 1966).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C159"
+    ],
+    "result": "At pH 6, where MjNhaP1 is fully active, the helices involved in ion translocation appear disordered due to averaging over many slightly different conformations on the crystal lattice as the protein oscillates between sodium-free and sodium-bound states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 and C159 provide a reasonable explanation for the weaker and more diffuse difference peaks observed at pH 6 (Figure 5B). The interpretation that the apparent disorder reflects dynamic oscillation between conformational states during active transport is consistent with the data and provides a mechanistic link between structure and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C157"
+    ],
+    "result": "At pH 4 and 8, where MjNhaP1 is down-regulated and rigid, the Na+-induced differences reflect a progressive change in the relative population of sodium-free and sodium-bound states as Na+ concentration increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 and C157 provide a reasonable interpretation for the progressive nature of the Na+-induced changes at pH 4 and 8. The interpretation that the maps represent population averages is consistent with the data and enables the determination of apparent binding constants (C132, C158).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The conformational changes observed in MjNhaP1 are consistent with events known to occur in the related antiporter EcNhaA, particularly in regions corresponding to the ion-binding site (TMH 6 in MjNhaP1, TMH V in EcNhaA) and the flexible periplasmic half helix (helix 5e in MjNhaP1, TMH IV in EcNhaA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C108 establish the relationship between MjNhaP1 and EcNhaA and show that the observed conformational changes are consistent with prior work on EcNhaA. The structural and functional similarities are well-supported by citations, and the correspondence between specific helices is based on structural alignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "A 20\u00b0 in-plane rotation of the 6-helix bundle, as proposed by Lee et al. (2013) based on comparison of TtNapA structures, does not occur in MjNhaP1 or likely in EcNhaA, as the predicted difference peaks from such a rotation bear no resemblance to the experimental difference maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C121 present a critical evaluation of the Lee et al. (2013) model. The comparison of predicted difference maps (Figure 5\u2014figure supplement 2B) with experimental maps (Figure 5) provides strong evidence against the 20\u00b0 rotation model. The argument that such a massive domain movement is inconsistent with high turnover rates (C118) is reasonable. This is an important negative result that refines understanding of the transport mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "MjNhaP1 is down-regulated at both pH 8 (experimentally shown) and pH 4 (inferred from physiological considerations), consistent with a simple kinetic model where down-regulation at pH 4 occurs due to H+/Na+ competition for a common binding site and at pH 8 due to proton depletion, resulting in a bell-shaped pH dependence of transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C140 present a mechanistic model for pH-dependent regulation. While down-regulation at pH 8 is experimentally supported (C133), down-regulation at pH 4 has not been directly demonstrated (C134) but is inferred from physiological considerations (C135). The proposed mechanisms (C138-C140) are speculative and require further experimental validation. The consistency with the Mager et al. model for EcNhaA (C136-C137) provides some support but is not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C149",
+      "C156"
+    ],
+    "result": "In addition to substrate competition, the transport rate of MjNhaP1 may be modulated by protonation states of amino acid sidechains involved in ion-binding and translocation, rendering the antiporter more flexible at pH 6 than at pH 4 or 8, though such sidechain movements would not be visible at 6 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C144, C149, and C156 propose a mechanism for pH-dependent modulation of transport activity beyond simple substrate competition. This is speculative (evidence_type includes SPECULATION) and cannot be directly tested with the current data due to resolution limitations. While the proposal is reasonable, it requires higher-resolution structural data or other experimental approaches for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C155"
+    ],
+    "result": "The findings contrast with current models of Na+/H+ antiporter regulation that postulate a significant pH-triggered conformational switch at the level of secondary structure, as reported for EcNhaA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 and C155 establish the context of prior models and highlight the contrast with the current findings. The lack of a pH-triggered conformational switch in MjNhaP1 (C147-C148) is well-supported by the data and represents an important difference from some existing models for EcNhaA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The differences observed by Vinothkumar et al. (2005) in an earlier study were due to both Na+ and pH changes rather than pH alone, as the crystals had been grown in the presence of NaCl, and these differences were reproduced in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 provide important clarification of prior work. The reinterpretation of the Vinothkumar et al. (2005) results is well-justified given the experimental design differences, and the reproduction of those differences (C153, Figure 5\u2014figure supplement 3) validates the reinterpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C154"
+    ],
+    "result": "By growing 2D crystals of MjNhaP1 in the absence of sodium, it was possible to separate effects of the two substrate ions, Na+ and H+, on its conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 describes the key experimental strategy that enabled the main findings of the study. This approach is well-supported by the data and represents a significant methodological advance over prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C164"
+    ],
+    "result": "It is likely that the mammalian NHE antiporters, which share many similarities with the archaeal Na+/H+ exchangers, work in the same way as MjNhaP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C164 is speculative (evidence_type includes SPECULATION) and extrapolates the findings to mammalian NHE antiporters based on sequence and functional similarities (C26-C28). While the similarities provide some basis for this speculation, direct experimental evidence for mammalian NHE antiporters would be needed to support this claim definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "MjNhaP1 was purified and crystallized under Na+-free conditions, yielding 2D crystals that were more highly ordered than those obtained earlier, diffracting up to 6 \u00c5 resolution, with 29 data sets collected at different pH and salt concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 describe the experimental methods and data collection. These are well-documented in the Results and Materials and methods sections, with details provided in Supplementary file 1. The improved crystal quality is an important technical achievement that enabled the study.",
+    "result_type": "MINOR"
+  }
+]

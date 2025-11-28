@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Molecular dynamics simulations of amyloid proteins under amyloidogenic conditions reveal formation of \u03b1-sheet structure in regions that coincide with experimentally determined amyloidogenic regions. Specifically, transthyretin residues 105-121 convert from \u03b2-hairpin to \u03b1-sheet structure during 30 ns MD simulation, with corresponding changes in Ramachandran plot occupancy from \u03b2-region to \u03b1L/\u03b1R regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C87-C90 collectively demonstrate \u03b1-sheet formation in MD simulations with supporting structural data from Figure 1A. The correlation between \u03b1-sheet formation sites and experimentally determined amyloidogenic regions (C15) strengthens the computational predictions. The Ramachandran analysis provides quantitative support for the conformational transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "\u03b1-sheet is a secondary structure originally predicted by Pauling and Corey but deemed energetically unfavorable. It differs from \u03b2-sheet by having aligned NH groups on one side and carbonyls on the other, creating a molecular dipole. The structure features alternating \u03b1L and \u03b1R dihedral angles that form an extended chain with uniform electrostatic faces, and could potentially convert to \u03b2-sheet via peptide plane flip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 provide a comprehensive structural description of \u03b1-sheet supported by historical citations (Pauling and Corey, 1951) and computational work (Daggett, 2006; Armen et al., 2004b). The structural characterization is internally consistent and well-referenced, though the conversion mechanism (C24) remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "\u03b1-sheet structure has been observed in a peptide crystal structure and short stretches of \u03b1-strand exist in various Protein Data Bank entries, but extensive \u03b1-sheet formation has not been observed in native proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by appropriate citations (Di Blasio et al., 1994; Daggett, 2006) and represent accurate statements about the limited experimental observation of \u03b1-sheet in native protein structures. This provides important context for why \u03b1-sheet might be associated with non-native, aggregation-prone states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "MD simulations demonstrate that L-alanine preferentially adopts \u03b1R conformation while D-alanine favors \u03b1L conformation. Peptides with alternating D- and L-amino acids form extended structures that populate similar conformational space as \u03b1-sheet sequences composed solely of L-amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by MD simulation data (Beck et al., 2008) shown in Figure 1B and historical literature on alternating D/L peptides (De Santis et al., 1974; Heitz et al., 1981). This provides the rational basis for using D-amino acids to stabilize \u03b1-sheet structures in the designed peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "\u03b1-sheet peptides \u03b11 and \u03b13 inhibit TTR aggregation by 72% and 56% respectively at 48 hr, while control peptides show minimal inhibition. TTR becomes toxic after 24 hr aggregation (reducing cell viability by ~20%), and addition of \u03b11 or \u03b13 to pre-aggregated toxic TTR inhibits 81% and 77% of remaining aggregation respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are supported by Congo red binding data (Figure 2A) and MTT toxicity assays (Figure 2B). The controls (rc and \u03b2) show appropriate negative results. Statistical significance is indicated (p<0.05) for toxicity measurements. The experimental design appropriately tests both co-incubation and addition to pre-aggregated samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "\u03b1-sheet peptides inhibit A\u03b2 fibril formation with \u03b11 showing 87% inhibition and \u03b13 showing 66% inhibition at 22 hr. The \u03b2-sheet control shows 62% inhibition but acts early (0-6 hr) while \u03b11 becomes inhibitory after 6 hr. A\u03b2 reduces cell viability to <50% after 6 hr, and addition of \u03b11 or \u03b13 to pre-aggregated toxic A\u03b2 shows 97% and 96% inhibition respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by ThT fluorescence data (Figure 2C) and MTT toxicity assays (Figure 2D). The temporal differences between \u03b2 and \u03b11 inhibition mechanisms are clearly demonstrated. Controls show peptides alone do not affect ThT fluorescence (C46, Figure 2\u2014figure supplement 4). Statistical significance is indicated for toxicity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Immobilized \u03b1-sheet designs (\u03b11, \u03b12, \u03b13) preferentially bind toxic oligomer-containing TTR and A\u03b2 solutions over fresh samples, while \u03b2 and rc controls show minimal binding. The \u03b2 control preferentially binds fresh monomeric A\u03b2 over toxic samples, indicating different binding mechanisms. \u03b1-sheet designs do not bind mature fibrils from either TTR or A\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 are supported by dot blot analysis data (Figures 3A-D and supplements). Statistical analysis confirms significant differences between \u03b1-sheet designs and controls (Figure 3\u2014figure supplements 1 and 3). The differential binding to toxic vs. non-toxic and fibrillar species provides strong evidence for specific recognition of oligomeric intermediates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Spectroscopic predictions for \u03b1-sheet include: CD spectra should be nearly featureless due to cancellation of \u03b1L and \u03b1R signals; FTIR should show distinct bands at 1675-1680 cm\u207b\u00b9 and 1640 cm\u207b\u00b9; NMR should show strong sequential dNN NOEs but not the long-range dNN or strong sequential d\u03b1N NOEs characteristic of \u03b2-sheets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide testable predictions based on structural principles and computational work (Torii, 2008; Koeppe et al., 1992; Barth and Zscherp, 2002). While some predictions are speculative (C58, C61, C62), they are logically derived from the unique structural features of \u03b1-sheet and provide a framework for experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CD and FTIR spectroscopy confirm designed peptide structures: rc shows random coil, \u03b2 shows \u03b2-sheet structure (1632 cm\u207b\u00b9), and \u03b11/\u03b12/\u03b13 show featureless CD spectra with FTIR bands at 1640 and 1675-1680 cm\u207b\u00b9 consistent with \u03b1-sheet. The \u03b1-sheet peptides do not form \u03b1-helix, \u03b2-sheet, or extensive random coil structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 are supported by experimental CD (Figure 4A) and FTIR (Figure 4B) data. The spectroscopic signatures match predictions and distinguish \u03b1-sheet from conventional secondary structures. The weaker FTIR bands in \u03b13 (C69) are explained by potential structural distortion from cyclization (C70), supported by literature precedent (Clark et al., 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "NMR spectroscopy reveals multiple sequential dNN NOEs along the backbones of \u03b11 and \u03b13, with no long-range dNN or d\u03b1N NOEs characteristic of \u03b1-helix or \u03b2-sheet. Calculated NH-NH distances in \u03b1-sheet are much shorter than in \u03b2-sheet, consistent with observed strong dNN NOEs. The NMR data support \u03b1-sheet structure and are inconsistent with \u03b1-helix, random coil, or \u03b2-sheet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by experimental NMR data (Figure 4C,D) and computational distance calculations (Figure 4\u2014figure supplements 1-3). The pattern of NOEs is distinctive and consistent with \u03b1-sheet structure. The comparison with calculated distances from MD simulations strengthens the structural assignment, though the authors acknowledge inability to generate well-converged solution structures due to lack of long-range restraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Three computationally designed \u03b1-sheet peptides adopt \u03b1-sheet structure (by FTIR, CD, NMR) and inhibit aggregation of both TTR and A\u03b2 in solution. When immobilized, they preferentially bind toxic oligomeric species over monomers or fibrils. These results support the hypothesis that \u03b1-sheet structure is involved in the toxic oligomeric stage of aggregation and introduce a novel class of broad-spectrum amyloid inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 and C86 represent the main conclusions supported by the comprehensive experimental data. The convergence of structural characterization (CD, FTIR, NMR), functional inhibition assays (TTR and A\u03b2), selective binding to toxic species, and lack of binding to fibrils or monomers provides strong support for the \u03b1-sheet hypothesis. The broad-spectrum activity across two different amyloid systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on amyloid diseases: Over 40 human amyloid diseases exist, mature fibrils have cross \u03b2-sheet structure, but soluble oligomeric intermediates (not fibrils) are preferentially responsible for toxicity. Fibrils may be protective as their breakdown yields greater toxicity, supported by compounds that promote inclusion formation while reducing toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide well-established background information supported by appropriate citations to the amyloid literature. These claims accurately represent the current understanding of amyloid diseases and the toxic oligomer hypothesis, providing essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C76",
+      "C77"
+    ],
+    "result": "The A11 antibody recognizes a common backbone structure in soluble oligomeric intermediates from diverse amyloid proteins but does not bind fibrils or native precursors. This antibody inhibits toxicity, suggesting a common mechanism. However, oligomers are conformationally heterogeneous and the precise structure remains elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C76-C77 accurately describe prior work on the A11 antibody (Kayed et al., 2003; Glabe and Kayed, 2006) and the challenge of oligomer heterogeneity (Carulla et al., 2009; Bitan et al., 2005). This provides important motivation for the current study's approach to identifying a common structural feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "TTR and A\u03b2(1-42) have well-characterized aggregation profiles and aggregate under mild, non-denaturing conditions. \u03b2-hairpins are known inhibitors of A\u03b2 aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by appropriate citations and provide justification for the choice of experimental systems and control peptides. This represents standard background information for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "AFM imaging confirms the presence of small aggregates and fibrils in TTR solutions aggregated for 72 hr and in aggregated A\u03b2 solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by AFM images (Figure 2\u2014figure supplements 2 and 4) that provide visual confirmation of fibril formation. This validates that the aggregation assays are detecting actual fibril formation rather than artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The \u03b1-sheet designs may aid in capture of elusive toxic oligomeric species for in-depth characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is speculative about future applications. While the binding data support that \u03b1-sheet designs can capture oligomeric species, whether this will enable 'in-depth characterization' remains to be demonstrated. This represents a reasonable hypothesis for future work but is not validated by the current study.",
+    "result_type": "MINOR"
+  }
+]

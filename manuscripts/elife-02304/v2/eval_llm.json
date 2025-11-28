@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A maximum likelihood phylogeny of LDH and MDH proteins reveals five distinct clades and demonstrates that LDH enzymes evolved convergently from MDHs at least four times, including twice independently within the Apicomplexa (in Plasmodium-related species and in Cryptosporidium). The phylogeny is rooted with strong statistical support (aLRT confidence >0.99985) indicating canonical LDHs evolved from an ancestral MDH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C42-C49 are well-supported by phylogenetic analysis with strong statistical support (Figure 3A, aLRT values). The identification of five clades, convergent LDH evolution events, and horizontal gene transfer from \u03b1-proteobacteria to Apicomplexa are backed by both phylogenetic data and citations to prior work. The rooting analysis provides robust statistical evidence (aLRT >0.99985) for the evolutionary relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Apicomplexan LDHs are distinguished from MDHs by a unique, conserved five-residue insertion in the active site loop. This insertion causes two major structural changes: exclusion of Lys102 from the active site and positioning of Trp107f (part of the insertion) in the same space occupied by Arg102 in MDHs. The insertion likely arose from expansion of the Met106 codon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C55, C62-C65 are strongly supported by structural data (Figure 2) and sequence analysis (Figure 2\u2014figure supplement 1). The structural changes induced by the insertion are clearly documented through crystal structures. The proposed mechanism for insertion origin (C61) is reasonable inference from sequence conservation patterns, though it remains speculative about the exact mutational mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Trp107f is the functional specificity residue in apicomplexan LDHs. Alanine scanning mutagenesis shows that mutating Trp107f to Ala reduces pyruvate activity by five orders of magnitude (affecting both kcat and Km), while mutations at all other positions in the specificity loop, including the canonical position 102, have effects less than one order of magnitude. Crystal structure of the W107fA mutant shows the specificity loop in an open conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 are well-supported by systematic mutagenesis data (Figure 2\u2014figure supplement 2) and crystal structure analysis (Figure 2\u2014figure supplement 3). The dramatic effect of the W107fA mutation (5 orders of magnitude) compared to other positions (<1 order of magnitude) provides strong quantitative evidence. The structural data showing loop disorder in the mutant is consistent with the kinetic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In modern apicomplexan enzymes, substrate specificity cannot be switched by manipulating the loop insertion and position 102 alone. Adding the six-residue insertion to modern MDHs (PfMDH-INS, CpMDH-INS) reduces oxaloacetate activity >100-fold without gaining pyruvate activity. Conversely, deleting the insertion from modern LDHs (PfLDH-DEL, TgLDH2-DEL) abolishes pyruvate activity without gaining oxaloacetate activity, indicating additional residues govern substrate preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 are supported by comprehensive kinetic data (Figure 4) testing multiple constructs in both directions (MDH\u2192LDH and LDH\u2192MDH). The failure to swap specificity in modern enzymes despite successful swapping in ancestral enzymes (see later results) provides strong evidence for epistatic constraints. The quantitative data (>100-fold effects) are clearly presented with error bars.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Four reconstructed ancestral proteins (AncMDH1, AncMDH2, AncMDH3, AncLDH) are highly active with substrate preferences and catalytic efficiencies similar to modern descendants, despite sharing only 49-71% sequence identity. AncMDH1-3 are highly specific MDHs with negligible pyruvate activity and greater oxaloacetate activity than modern MDHs. AncLDH is a highly active and specific LDH with very low oxaloacetate activity, differing from AncMDH2 by 66 residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by kinetic data (Figure 5) and sequence analysis (Figure 5\u2014figure supplement 1). The ancestral proteins show robust enzymatic activity comparable to modern enzymes, validating the ancestral reconstruction approach. The substrate specificities are clearly quantified and match expectations based on the phylogeny. The sequence identity data provides context for the evolutionary distance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In the ancestral AncMDH2 background, the six-residue loop insertion alone confers significant pyruvate activity with minimal effect on oxaloacetate activity, creating a bifunctional enzyme (AncMDH2-INS). The Arg102Lys mutation alone reduces oxaloacetate activity >100-fold without increasing pyruvate activity. The combination of both mutations (AncMDH2-INS-R102K) is sufficient to confer pyruvate activity and specificity comparable to AncLDH. Only two changes (Lys102Arg and loop deletion) are sufficient to convert AncLDH to a highly active MDH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 are strongly supported by systematic kinetic analysis of multiple constructs (Figure 6). The data demonstrate that the ancestral background permits functional switching with just the insertion and R102K mutation, in stark contrast to modern enzymes. The quantitative effects (>100-fold changes) are clearly documented. The bidirectional conversion (MDH\u2192LDH and LDH\u2192MDH) provides strong evidence for the sufficiency of these two mutations in the ancestral context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Alternative ancestral reconstructions (AncMDH2* and AncLDH*) differing by 27 and 19 residues respectively from the primary reconstructions show similar kinetic behavior. AncMDH2* is a strict MDH and AncLDH* is a strict LDH. Adding the six-residue insertion to AncMDH2* (AncMDH2*-INS) confers pyruvate specificity without adversely affecting oxaloacetate activity, confirming the robustness of the primary results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by kinetic data from alternative reconstructions (Figure 6, Figure 6\u2014figure supplement 7). The consistency between primary and alternative reconstructions despite sequence differences validates the ancestral reconstruction methodology and demonstrates that the key findings are robust to reconstruction uncertainty. The ambiguous positions are documented (C100) and shown to be outside the active site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Crystal structures of ancestral proteins show that AncMDH2 closely resembles modern CpMDH (0.6 \u00c5 RMSD) with identical first-shell active site residues. AncLDH* closely resembles modern apicomplexan LDHs (0.8 \u00c5 RMSD) with identical first-shell residues except for position 102/Trp107f. In both ancestral and modern LDH structures, Trp107f and Arg109 are the only specificity loop residues interacting with substrate, while Lys102 points away from the active site. Modern Plasmodium LDHs have a two-residue deletion in the opposing loop that may contribute to their unusually strict specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C117 are well-supported by high-resolution crystal structures (Figure 7, Table with crystallographic statistics). The structural similarity between ancestral and modern enzymes (low RMSD values) despite moderate sequence identity validates the reconstructions. The identification of active site residues and their conformations is based on direct structural observation. The correlation between the opposing loop deletion and strict specificity (C117) is appropriately presented as inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The crystal structure of the bifunctional intermediate AncMDH2-INS shows the specificity loop adopts an LDH-like conformation with Trp107f occupying the specificity position and Arg102 oriented into solution. The lactate and oxamate structures are highly similar (0.2 \u00c5 RMSD). The three ancestral proteins (AncMDH2, AncLDH*, AncMDH2-INS) are highly similar overall (1.20 \u00c5 RMSD) with main differences in the specificity loop conformation, and have identical first-shell active site residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by crystal structure data (Figure 7E, 7F). The structure of the bifunctional intermediate provides direct evidence for how the insertion enables pyruvate activity while maintaining the MDH scaffold. The low RMSD values and identical active site residues demonstrate structural conservation despite functional differences. However, the authors note complications with substrate identity in some crystals (malate converting to pyruvate/lactate), which adds some uncertainty to substrate-specific interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Position 102 differs across the four convergent LDH families (Gln in canonical, Lys in apicomplexan, Gly in Cryptosporidium, Leu in trichomonad LDHs). Testing these mutations in AncMDH2 shows each increases pyruvate activity but none produce a highly specific LDH. The canonical Arg102Gln mutation produces the largest pyruvate gain (2800-fold) and smallest oxaloacetate loss (2500-fold). The Arg102Trp mutation abolishes activity toward both substrates, indicating the loop insertion was necessary to switch the specificity residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 are supported by systematic mutagenesis data (Figure 8) testing alternative evolutionary paths. The comparison across convergent LDH families is based on sequence analysis. The kinetic data clearly show that while position 102 mutations can increase pyruvate activity, they cannot alone create a specific LDH in the ancestral background. The Arg102Trp result (C125) provides strong evidence that the insertion was required to accommodate Trp at the specificity position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Apicomplexan LDHs evolved from a horizontally transferred proteobacterial MDH by classic neofunctionalization. During evolution, the six-residue insertion in the active site loop shifted both the position and identity of the 'specificity residue' from Arg102 to Trp107f, representing an alternative molecular mechanism for achieving pyruvate specificity compared to canonical LDHs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 represent the major conclusions synthesized from phylogenetic (C30-C49), structural (C105-C121), and kinetic data (C93-C99). The evidence for neofunctionalization is strong: the ancestral MDH was highly specific (not promiscuous), and pyruvate activity increased by >7 orders of magnitude. The mechanistic shift from Arg102 to Trp107f is directly demonstrated by structural and mutagenesis data. This is appropriately classified as a major integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The reconstructed AncMDH2 is a highly active and specific MDH, preferring oxaloacetate over pyruvate by seven orders of magnitude. Its pyruvate activity is negligible (kcat = 0.07 s\u207b\u00b9, Km = 20 mM, reducing one pyruvate per hour at physiological concentrations) and unlikely to have been subjected to selection in vivo. This refutes specialization hypotheses requiring a promiscuous ancestor and indicates neofunctionalization, with pyruvate activity increasing by over seven orders of magnitude between AncMDH2 and AncLDH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 are supported by kinetic data (Figure 6) and physiological reasoning. The quantitative specificity (7 orders of magnitude) is clearly measured. The calculation of one pyruvate molecule reduced per hour (C132) is based on the kinetic parameters and physiological pyruvate concentration (cited from Garrett and Grisham, 2005). The inference that this negligible activity was not under selection (C133) is reasonable given the extremely low rate. The conclusion against specialization models (C134) logically follows from the lack of ancestral promiscuity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The bifunctional intermediates AncMDH2-INS and AncMDH2-INS-59Mut have high levels of both MDH and LDH activity in a single protein scaffold. The presence of these bifunctional intermediates and the high specificity of AncMDH2 conflict with fundamental predictions of the EAC (escape from adaptive conflict) specialization model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 are supported by kinetic data (Figure 6) showing robust dual activity. The existence of highly active bifunctional intermediates contradicts the EAC model's premise that conflicting functions cannot be simultaneously optimized. However, the evaluation of the EAC model (C137) is somewhat limited\u2014the authors show their data conflict with EAC predictions but don't extensively test alternative specialization models or discuss whether modified versions of EAC might still apply.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The evolution of apicomplexan LDHs involved strong epistasis, as demonstrated by the different effects of the same mutations in ancestral vs. modern backgrounds. Despite identical active site sequences and nearly indistinguishable structures between ancestral and modern enzymes, residues remote from the active site necessarily affect substrate specificity. This epistasis is likely a general phenomenon in the LDH/MDH superfamily, as the Arg102Gln mutation fails to effectively switch specificity in MDHs from multiple species (H. marismortui, E. coli), with only B. subtilis LDH being an exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C145 are supported by comparing kinetic data from modern (Figure 4) and ancestral (Figure 6) enzymes, structural data showing identical active sites (Figure 7), and literature data on other species (C141-C144, with appropriate citations). The epistasis is clearly demonstrated: the insertion works in ancestral but not modern backgrounds despite identical active sites. The generalization to the superfamily (C145) is appropriately cautious, based on data from multiple species. The B. subtilis exception (C141) is properly noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Each convergent LDH evolution event resulted in a different change at position 102 within the catalytic loop. Due to epistatic constraints and different sets of permissive mutations in different lineages, LDH activity evolved from MDH by a different mechanism four separate times. In general, position 102 is not solely responsible for the MDH to LDH transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 are supported by sequence analysis across convergent LDH families (C122) and kinetic data from multiple species showing position 102 mutations are insufficient alone (C123-C125, C143-C144). The conclusion that different mechanisms were used (C148) logically follows from the combination of epistatic constraints and different residues at position 102 in different LDH families. This represents a well-supported synthesis of phylogenetic and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The evolution from AncMDH2 to AncLDH involves a 12 orders-of-magnitude shift in substrate specificity, with just two mutations responsible for the majority of this switch: the six-residue insertion and the Arg102Lys point mutation. Within the insertion, only Trp107f contributes strongly to pyruvate activity and specificity. The insertion is an exceptionally large gain-of-function mutation, enhancing pyruvate activity by more than four orders of magnitude (12,000-fold) while barely affecting oxaloacetate activity. The Arg102Lys mutation reduces oxaloacetate activity by >2500-fold with minimal effect on pyruvate activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 are strongly supported by systematic kinetic analysis (Figure 6) and mutagenesis data (Figure 2\u2014figure supplement 2). The 12 orders-of-magnitude total shift is calculated from the kinetic data. The dissection of contributions from the insertion (C152) vs. Arg102Lys (C153) is clearly demonstrated. The characterization of the insertion as an exceptionally large gain-of-function mutation (C154) is justified by comparison to other known examples (C155-C161). The quantitative effects are precisely measured with error bars.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The apicomplexan LDH six-residue insertion represents an unusually large gain-of-function mutation compared to other well-studied examples. The textbook example (Gln102Arg in BsLDH) causes a 10\u2077-fold specificity change but primarily through loss of pyruvate activity (>8000-fold) rather than gain of oxaloacetate activity (1000-fold). In E. coli IDH, seven mutations are needed for cofactor switching. In previous ancestral reconstruction studies, large-effect mutations are usually loss-of-function rather than gain-of-function, and function-enhancing mutations typically have effects <50-fold gain in kcat/KM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C161 are supported by appropriate citations to the literature. The comparisons provide important context for evaluating the significance of the apicomplexan insertion. The characterization of the BsLDH mutation (C155-C156) and other examples (C157-C161) are properly cited. The contrast between the apicomplexan insertion (large gain-of-function) and typical large-effect mutations (loss-of-function) strengthens the claim that this is an exceptional evolutionary event. This contextualizes the main findings effectively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "While epistasis constrains evolutionary options locally, there are multiple ways to achieve the same function in distant regions of protein sequence space, as evidenced by four independent LDH evolution events. The apicomplexan enzymes provide a clear example of neofunctionalization in protein evolution, validating the plausibility of this mechanism. Specialization mechanisms may be more common, but the evolution of novel function does not require a promiscuous genesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C164 represent the major conceptual conclusions of the study. C162 is supported by the observation of four convergent LDH evolution events using different mechanisms (C146-C148). C163 is justified by the comprehensive demonstration of neofunctionalization through phylogenetic, kinetic, and structural data. C164 appropriately acknowledges that specialization may be more common while asserting that neofunctionalization is a viable mechanism, supported by the specific example studied. These are well-supported synthetic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The Apicomplexa evolved nearly 1 billion years ago and comprise a large phylum of intracellular parasites causing diseases including malaria, toxoplasmosis, and cryptosporidiosis. A key early event was acquisition of MDH via lateral gene transfer from \u03b1-proteobacteria, followed by gene duplication 700-900 Mya where one copy evolved into a highly specific LDH essential to many modern apicomplexans. This unique LDH has attracted attention as a potential drug target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide essential background context and are supported by appropriate citations to the literature (Douzery et al., 2004; Golding and Dean, 1998; Madern, 2002; Zhu and Keithly, 2002; Royer et al., 1986; Gomez et al., 1997; Read et al., 1999; Cameron et al., 2004; Conners et al., 2005). These are well-established facts in the field that frame the study's significance. The claims about disease relevance (C2) and drug target potential (C6) provide important biomedical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "LDH and MDH are homologous 2-ketoacid oxidoreductases sharing a protein fold and catalytic mechanism. MDH catalyzes oxaloacetate/malate interconversion in the citric acid cycle, while LDH converts pyruvate to lactate in anaerobic glycolysis. Despite structural and catalytic similarities, modern apicomplexan LDHs and MDHs have extraordinarily strict substrate specificity, with P. falciparum MDH and LDH each preferring their respective substrates by over six orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 provide essential biochemical background supported by appropriate citations (Rossmann et al., 1975; Birktoft and Banaszak, 1983; Clarke et al., 1986; Hart et al., 1987a, 1987b; Clarke et al., 1988; Waldman et al., 1988) and reference to Figure 1. The substrate specificity of P. falciparum enzymes (C11) is a specific quantitative claim that sets up the central question of the study. These are well-established facts that frame the research problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "In the LDH/MDH superfamily, active site loop closure is rate-limiting and mutations in this loop have large effects on activity and specificity. Position 102 has been called the 'specificity residue': all known MDHs have Arg102, canonical LDHs have Gln102, and the Gln102Arg mutation in B. stearothermophilus LDH switches specificity from 10\u00b3-fold pyruvate preference to 10\u2074-fold oxaloacetate preference. However, attempts to convert MDH to LDH by Arg102Gln mutation have had limited success. In apicomplexan LDHs, position 102 is Lys rather than Gln, and it is not understood why these LDHs lack oxaloacetate activity despite having a positively charged residue at position 102.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 provide crucial background on the 'specificity residue' concept and set up the central mystery of the study. These are supported by appropriate citations (Waldman et al., 1988; Wilks et al., 1988; Chapman et al., 1999; Nicholls et al., 1992; Cendrin et al., 1993; Gomez et al., 1997; Dando et al., 2001; Winter et al., 2003; Brown et al., 2004; Kavanagh et al., 2004; Shoemark et al., 2007). The observation that apicomplexan LDHs have Lys102 (C21) and the lack of understanding about their specificity (C22) directly motivate the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Apicomplexan LDH evolved from duplication of an ancestral MDH gene. Gene duplication is widely considered the major force driving protein functional diversity, with three mechanisms: dosage selection, subfunctionalization, or neofunctionalization. However, duplicated genes typically degrade to pseudogenes before acquiring beneficial mutations, so classical neofunctionalization has fallen out of favor for models beginning with multifunctional proteins. The molecular mechanisms creating novel functions in gene duplicates are fiercely debated, and there are few clear examples of classic neofunctionalization or gain-of-function mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 provide essential theoretical background on gene duplication mechanisms and are supported by appropriate citations (Golding and Dean, 1998; Zhu and Keithly, 2002; Innan and Kondrashov, 2010; Ohno, 1970; Walsh, 1995; Lynch and Conery, 2000; Force et al., 1999; Conant and Wolfe, 2008; Soskine and Tawfik, 2010; Zhang and Rosenberg, 2002; Bridgham et al., 2008; Voordeckers et al., 2012). This background is crucial for understanding the significance of the study's findings regarding neofunctionalization. The claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The HicDH clade members are close sequence homologs of hydroxyisocaproate dehydrogenase, all possessing a residue other than Gln or Arg at position 102 and insertions of varying lengths in the catalytic loop, while conserving other catalytic residues (Arg109, Asp168, Arg171, His195). Only one taxon (DHL2_LACCO) has been functionally characterized as a specific hydroxyisocaproate dehydrogenase, suggesting the clade features dehydrogenases with altered substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by sequence analysis and citation to Feil et al., 1994 for the characterized enzyme. The observations about sequence features (C32-C34) are based on direct sequence analysis. The inference about altered substrate specificity (C36) is reasonable given the sequence features and the one characterized example. This provides interesting context about diversity in the superfamily, though it's not central to the main story about apicomplexan LDH evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Within the Apicomplexa, enzymes split into two main groups: LDHs (Toxoplasma, Plasmodium, related protists) and MDHs (Plasmodium, Cryptosporidium). Apicomplexan MDHs appear as typical \u03b1-proteobacterial 'LDH-like' MDHs with all key catalytic residues including Arg102. Cryptosporidium LDHs are nested within the MDH clade, have Gly at position 102, and are thought to be a product of an independent convergent duplication event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by phylogenetic analysis (Figure 3B) and sequence analysis, with citation to Madern et al., 2004 for the interpretation of Cryptosporidium LDHs. The phylogenetic placement and sequence features are based on direct data analysis. The identification of Cryptosporidium LDHs as a separate convergent event is important for understanding the evolutionary history and is well-supported by the phylogeny.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Trp107f is positioned where it could presumably interact with the C3 methyl of pyruvate substrate, while MDH Arg102 interacts with the C4 carboxylate of oxaloacetate. As a bulky, hydrophobic residue, Trp107f could recognize pyruvate over oxaloacetate by two mechanisms: hydrophobic interaction with the pyruvate methyl vs. the negatively charged oxaloacetate carboxylate, and steric occlusion of the oxaloacetate methylene carboxylate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 are based on structural observations (C66, supported by Figure 2 and citation to Chapman et al., 1999) and mechanistic speculation (C67). While the positioning of Trp107f is directly observed in crystal structures, the proposed mechanisms for substrate discrimination (C67) are speculative and not directly tested. The authors appropriately use cautious language ('could recognize', 'could...by two mechanisms'). Direct experimental tests of these mechanisms (e.g., through specific mutations or computational analysis) would be needed to elevate this from speculation to supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1755 @@
+{
+  "submission": {
+    "id": "bdf151fe-71d0-456a-843b-1741b28d21d2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:50:56.548043Z",
+    "updated_at": "2025-11-28T20:50:56.548043Z"
+  },
+  "content": [
+    {
+      "id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "submission_id": "bdf151fe-71d0-456a-843b-1741b28d21d2",
+      "content_type": "manuscript",
+      "content_text": "# Reconstitution of dynein transport to the microtubule plus end by kinesin\n\n## Authors\n\n- Anthony J Roberts<sup>1</sup> \u2020\n- Brian S Goodman<sup>1</sup>\n- Samara L Reck-Peterson<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell Biology Harvard Medical School Boston United States\n2. Astbury Centre for Structural Molecular Biology School of Molecular and Cellular Biology, University of Leeds Leeds United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCytoplasmic dynein powers intracellular movement of cargo toward the microtubule minus end. The first step in a variety of dynein transport events is the targeting of dynein to the dynamic microtubule plus end, but the molecular mechanism underlying this spatial regulation is not understood. Here, we reconstitute dynein plus-end transport using purified proteins from S. cerevisiae and dissect the mechanism using single-molecule microscopy. We find that two proteins\u2013homologs of Lis1 and Clip170\u2013are sufficient to couple dynein to Kip2, a plus-end-directed kinesin. Dynein is transported to the plus end by Kip2, but is not a passive passenger, resisting its own plus-end-directed motion. Two microtubule-associated proteins, homologs of Clip170 and EB1, act as processivity factors for Kip2, helping it overcome dynein's intrinsic minus-end-directed motility. This reveals how a minimal system of proteins transports a molecular motor to the start of its track.\n\n## Introduction\n\nCytoskeletal motor proteins transport and position a variety of macromolecules, organelles and mRNAs in the cell interior (Vale, 2003), but how these motors are themselves targeted to specific locations within the cell is an important unsolved question. Cytoplasmic dynein, a large and complex AAA+ motor protein (Carter, 2013), uses the energy from ATP hydrolysis to move cargoes toward the minus end of microtubules (typically toward the cell center). In addition, dyneins can act while anchored at the cell cortex, where they pull the microtubule network toward them (Moore et al., 2009). Live-cell imaging in diverse organisms reveals that, surprisingly for a minus-end-directed motor, dynein accumulates at the plus ends of microtubules that grow and shrink near the cell periphery (Vaughan et al., 1999; Han et al., 2001; Ma and Chisholm, 2002; Lee et al., 2003; Sheeman et al., 2003; Lenz et al., 2006; Kobayashi and Murayama, 2009). By localizing to dynamic microtubule plus ends (Howard and Hyman, 2009), dynein is thought to \u2018search-and-capture\u2019 (Kirschner and Mitchison, 1986) cargo molecules, before transporting them toward the minus end (Wu et al., 2006). The targeting of the dynein machinery to the microtubule plus end is crucial for proper dynein function in budding yeast (Moore et al., 2009), filamentous fungi (Wu et al., 2006), and a subset of metazoan cells, including mammalian neurons (Lomakin et al., 2009; Lloyd et al., 2012; Moughamian and Holzbaur, 2012; Moughamian et al., 2013). However, the molecular mechanisms that target dynein to the microtubule plus end are poorly understood.\n\nMicrotubule plus ends are dynamic binding platforms for a variety of proteins, collectively referred to as +TIPs (plus-end tracking proteins) (Akhmanova and Steinmetz, 2008). Previous studies have illuminated two general mechanisms by which proteins can be targeted to microtubule plus ends. First, a subset of +TIPs preferentially bind to unique structural features present at the plus end vs the body of the microtubule, and can recruit additional proteins to these sites. The prototypical example of this class of +TIP are EBs (end-binding proteins), which are involved in recruiting binding partners such as Clip170 and the dynein regulator dynactin to plus ends in metazoans (Watson and Stephens, 2006; Bieling et al., 2007; Dixit et al., 2009; Zanic et al., 2009; Maurer et al., 2012; Moughamian et al., 2013). Second, kinesin motor proteins can power the vectorial transport of proteins along the microtubule body to the plus end (Bieling et al., 2007; Subramanian et al., 2013). These two mechanisms (direct recruitment and vectorial transport) are not mutually exclusive, and evidence suggests that both may contribute to the plus-end targeting of dynein (Wu et al., 2006).\n\nIn the yeast Saccharomyces cerevisiae, genetic studies implicate at least three proteins in targeting dynein to the microtubule plus end: Lis1, a regulator of dynein motility (Lee et al., 2003; Sheeman et al., 2003); Bik1, a homolog of Clip170 (Sheeman et al., 2003; Markus et al., 2009); and Kip2, a plus-end-directed kinesin motor (Carvalho et al., 2004; Caudron et al., 2008; Markus et al., 2009). Deletion of the EB homolog (Bim1) in S. cerevisiae appears to have little effect on the plus-end targeting of dynein and its co-factors (Carvalho et al., 2004; Caudron et al., 2008; Markus et al., 2011), despite (1) Bim1 binding directly to Bik1, an essential factor for dynein plus-end targeting (Sheeman et al., 2003; Blake-Hodek et al., 2010); and (2) The homologs of Kip2, Bik1 and Bim1 functioning together as a plus-end tracking system in fission yeast (Bieling et al., 2007). While dynein plus-end targeting can persist in the absence of Bim1, it is unknown if Bim1 is involved in the dynein pathway in the native situation, because +TIPs often interact in an interconnected and, in some cases, redundant manner (Caudron et al., 2008). More generally, how a system of molecules can function together to target dynein to the plus end is not clear in any system. This problem is particularly pressing for S. cerevisiae dynein: a forceful minus-end-directed motor with constitutive activity in motility assays (Reck-Peterson et al., 2006; Gennerich et al., 2007).\n\nIn vitro reconstitution can provide powerful mechanistic insights into cellular processes, complementary to those derived from the complex in vivo environment (Liu and Fletcher, 2009). Here, we have reconstituted kinesin-driven transport of dynein to the microtubule plus end using purified proteins, allowing us to dissect the mechanism using single-molecule imaging, protein engineering and DNA origami.\n\n## Results\n\n### Dynein-Lis1 and Bik1-Bim1-Kip2 form interacting sub-complexes\n\nWe began by purifying the S. cerevisiae proteins Lis1, Bik1, Bim1 and Kip2, in addition to a well-characterized dynein motor construct (GST-dynein331 kDa; referred to herein as \u2018dynein\u2019) (Reck-Peterson et al., 2006). This dynein construct lacks the cargo-binding tail, which is dispensable for plus-end targeting in vivo (Markus et al., 2009), and is dimerized by GST to yield a motor with highly-similar motile properties to full-length dynein (Reck-Peterson et al., 2006). Each purified protein migrated as a single band by SDS-PAGE (Figure 1A) with the exception of Kip2, which migrated as a doublet. The Kip2 bands correspond to differently phosphorylated forms of the protein; after treatment with \u03bb phosphatase, the Kip2 doublet collapsed into a single band (Figure 1A, inset).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig1-v1.jpg)\n\n**Figure 1.:** (A) SDS-PAGE and diagrams of purified proteins. Kip2 from S. cerevisiae migrates as a doublet of bands, corresponding to differently phosphorylated isoforms as verified by phosphatase treatment (right panel). (B) Analysis of sub-complex formation by size-exclusion chromatography. Elution volumes of the individual proteins are shown on the top axis. V0: void volume. Dynein and Lis1 co-elute as a complex (green trace), as do Bik1, Bim1 and Kip2 (magenta trace). A mixture of all five proteins elutes as dynein-Lis1 and Bik1-Bim1-Kip2 sub-complexes, rather than one stable assembly (blue trace). SDS-PAGE analysis of the fractions is shown below, pseudo-colored to match the traces. (C) TIRF microscopy microtubule recruitment assay. Fluorescently labeled wild-type (WT) dynein or a mutant with weak microtubule affinity (K3116A, K3117A, E3122A, R3124A: Weak) were incubated with microtubules in the presence of the indicated proteins. Representative microtubule images and the corresponding dynein channel are shown in each condition. The width of each panel corresponds to 5.4 \u03bcm. Mean dynein fluorescence intensity \u00b1 SEM is shown below (N = 30\u201350 microtubules).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The void volume (V0) and elution volumes of the individual proteins are shown on the top axis. SDS-PAGE analysis of the corresponding fractions is shown below, pseudo-colored to match the traces. Bik1 and Bim1 co-elute as a complex that is upshifted relative to the individual proteins, in agreement with Blake-Hodek et al. (2010). There is a partial upshift and co-elution of Kip2 with Bik1, whereas Bim1 and Kip2 do not co-elute as a stable complex. However, all three proteins (Bik1, Bim1 and Kip2) together co-elute as an upshifted ternary complex. Removal of Bik1's C-terminal zinc knuckle domain (Bik1\u0394C) does not prevent its ability to form a complex with Bim1 and Kip2.\n\nTo explore the interactions within this putative dynein plus-end transport machinery, we mixed the proteins in different combinations and analyzed their behavior by size-exclusion chromatography. Dynein and Lis1 co-elute in a complex, as verified by SDS-PAGE of the fractions (Figure 1B; Huang et al., 2012). We also found that Bik1, Bim1 and Kip2 co-elute in a ternary complex (Figure 1B), resembling the behavior of related proteins from Schizosaccharomyces pombe (Bieling et al., 2007; Table 1). A pair-wise mixture of Kip2 with Bim1 did not elute as a complex under the same conditions (Figure 1\u2014figure supplement 1), suggesting that Bim1 binds with higher affinity to the Kip2-Bik1 complex. In summary, these first experiments with all five purified components demonstrate that dynein-Lis1 and Bik1-Bim1-Kip2 each form complexes that are sufficiently stable to co-elute by size-exclusion chromatography.\n\n**Table 1.**\n Protein homolog names\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Generic</th>\n      <th>S. cerevisiae</th>\n      <th>S. pombe</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Kinesin</td>\n      <td>Kip2</td>\n      <td>Tea2</td>\n    </tr>\n    <tr>\n      <td>Clip170</td>\n      <td>Bik1</td>\n      <td>Tip1</td>\n    </tr>\n    <tr>\n      <td>EB1</td>\n      <td>Bim1</td>\n      <td>Mal3</td>\n    </tr>\n    <tr>\n      <td>Lis1</td>\n      <td>Pac1</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\nGiven that the dynein-Lis1 and Bik1-Bim1-Kip2 sub-complexes did not stably associate in solution (Figure 1B), we hypothesized that these two assemblies might interact dynamically on the microtubule. To test this idea, we devised a microtubule recruitment assay. When wild-type dynein is mixed with microtubules in the absence of nucleotide, it binds strongly to the microtubule, as visualized by total internal reflection fluorescence (TIRF) microscopy in Figure 1C (lane 1). In order to monitor dynein recruitment to the microtubule by other proteins, we introduced four mutations into its microtubule-binding domain (Koonce and Tikhonenko, 2000; Carter et al., 2008; Redwine et al., 2012), which severely weakened its association with microtubules (Figure 1C, lane 2; see also Figure 2\u2014figure supplement 2). However, the weak-binding dynein could be recruited efficiently to the microtubule by the combined presence of Lis1, Bik1, Kip2 and Bim1 (Figure 1C, lane 3). This dynein recruitment depended strictly on the presence of Lis1 and Bik1 (Figure 1C, lanes 4 and 5), consistent with the idea that Lis1 and Bik1/Clip170 interact directly (Coquelle et al., 2002; Sheeman et al., 2003; Lansbergen et al., 2004). To determine if the reported interaction between Lis1 and the C-terminal zinc-knuckle of Bik1/Clip170 (Coquelle et al., 2002; Sheeman et al., 2003; Lansbergen et al., 2004) is involved in connecting the dynein-Lis1 and Bik1-Bim1-Kip2 complexes, we purified a Bik1\u0394C construct lacking the C-terminal region. The Bik1\u0394C construct retained the ability to bind Kip2 and Bim1 (Figure 1\u2014figure supplement 1). However, its ability to recruit the weak-dynein to the microtubule in the presence of Lis1, Kip2 and Bim1 was abolished (Figure 1C, lane 6). Together, these results suggest that dynein-Lis1 and Bik1-Bim1-Kip2 each form sub-complexes, which in turn interact in a manner dependent on Lis1 and the C-terminal region of Bik1.\n\n### Reconstitution of dynein transport to the microtubule plus end with purified proteins\n\nHaving established a potential chain of connection between dynein and Kip2 with purified proteins, we next sought to visualize the emergent motile behavior of these opposite polarity motors on dynamic microtubules. We first monitored the motility of dynein and Kip2 together, but in the absence of the other proteins, on dynamic microtubules grown from stabilized seeds using three-color TIRF microscopy (Figure 2A). Dynein and Kip2 were labeled with different-colored fluorophores (tetramethylrhodamine and Atto647, respectively), while microtubules contained a fraction of tubulin labeled with a third color (Alexa488). In the absence of Lis1, Bik1, and Bim1, dynein moved toward the minus end of the microtubule, and Kip2 moved toward the plus end, as expected (Figure 2B). Notably, upon reaching the minus end of the microtubule, dynein accumulated at, and moved with, the slowly growing end of the polymer (Figure 2B). Dynein showed the same behavior in the absence of Kip2, indicating that dynein has the intrinsic ability to track dynamic microtubule minus ends.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig2-v1.jpg)\n\n**Figure 2.:** (A) Diagram of dynamic microtubule assay, after Bieling et al. (2007). A bright, biotinylated, GMP-CPP-stabilized microtubule seed is attached to the coverslip via streptavidin and biotin-PEG. Dimly labeled microtubule extensions grow from this seed in the presence of tubulin and GTP. Tubulin, dynein and Kip2 are visualized using TIRF microscopy, and motor protein movement on the dynamic extensions is analyzed. (B) Dynein and Kip2 motility on dynamic microtubules. Kymographs of the dynein and microtubule channels are overlaid, and the Kip2 channel is shown separately for clarity. Plus (+) and minus (\u2212) denote microtubule polarity. Dynein moves to the minus end and Kip2 moves to the plus end. Scale bar, 5 \u03bcm. (C) In the presence of Lis1, Bik1, Bim1 and Kip2, dynein moves to the plus end of the microtubule (lane 1). Weakening dynein\u2019s microtubule affinity via mutagenesis (Figure 2\u2014figure supplement 2) increases its plus-end velocity and accumulation (lane 2). In the absence of Lis1, Bik1 or Kip2, dynein resumes minus-end-directed motion (lanes 3\u20135). Arrows mark microtubule catastrophe events seen in the absence of Kip2 (lane 5). When Bim1 is omitted, dynein displays both plus- and minus-end-directed movements (lane 6). Mean velocities \u00b1 SD for dynein and free Kip2 (without dynein bound) are shown at bottom (N = 36\u2013122).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Dynein at the growing microtubule plus end is marked with arrowheads. Plus (+) and minus (\u2212) denote microtubule polarity.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Four charged amino acids were mutated to weaken dynein's microtubule affinity (K3116A, K3117A, E3122A and R3124A). These residues are depicted in red sphere representation using the cryo-EM derived model of dynein's microtubule-binding domain bound to an \u03b1/\u03b2-tubulin dimer (PDB 3J1T) (Redwine et al., 2012). The inset shows the location of dynein's microtubule-binding domain (boxed) in relation to the rest of the molecule. (B) These mutations substantially weaken, but do not abolish, the binding of S. cerevisiae dynein to the microtubule in the absence of nucleotide, as shown by a microtubule co-sedimentation assay. Under conditions in which wild-type (WT) dynein is fully bound to the microtubule ([\u03b1/\u03b2-tubulin]: 600 nM), the weak binding mutant only partially co-sediments with the microtubule in the pellet (P) and partially remains in the supernatant (S). See also Figure 1C. (C) In the presence of Lis1, Bik1, Bim1 and Kip2, both the WT and weak binding dynein constructs are transported by Kip2 to the plus-end of the microtubule (Figure 2C). However, the plus-end velocity of the weak-binding construct is increased relative to the wild-type dynein (p<0.0001, Student's t test), becoming close to that of free Kip2. This suggests that wild-type dynein can resist its own transport to the plus end through its microtubule-binding domain.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Plus (+) and minus (\u2212) denote microtubule polarity.\n\nNext, we explored the effect of adding the remaining factors. Strikingly, in the presence of Lis1, Bik1, Bim1 and Kip2, the large majority of dynein movements along the body of the microtubule were directed to the plus end (Figure 2C, lane 1) (90 \u00b1 3%; proportion \u00b1 SE, N = 122). Moreover, on 63 \u00b1 7% of microtubules, dynein was present at the growing plus end itself (Figure 2\u2014figure supplement 1), reminiscent of dynein localization in living yeast cells (Lee et al., 2003; Sheeman et al., 2003; Markus et al., 2009). Minus-end-directed dynein movements were now rare (10 \u00b1 3% of events). We observed similar behavior for the full-length dynein complex purified from S. cerevisiae (Reck-Peterson et al., 2006; Figure 2\u2014figure supplement 1). Thus, we conclude that a system of four proteins (Lis1, Bik1, Bim1, and Kip2) is sufficient to strongly bias dynein's movement toward the microtubule plus end.\n\n### Dynein can resist its transport to the plus end though its microtubule-binding domain\n\nDynein's plus-end-directed motion depended strictly on Kip2 (Figure 2C, lane 5), but was slower than that of free Kip2 (Figure 2\u2014figure supplement 2), leading us to hypothesize that dynein might have the capacity to resist its own transport to the plus end. To test this model, we repeated the reconstitution using the dynein mutant engineered to have weak affinity for the microtubule. Strikingly, the plus-end velocity of the weak-binding dynein was increased relative to the wild-type protein, becoming close to that of Kip2 (Figure 2C, Figure 2\u2014figure supplement 2). Moreover, the weak-binding dynein also showed strong accumulation at the plus end of the microtubule (Figure 2C, lane 2). These results indicate that wild-type dynein is not a passive passenger during its plus-end-directed transport. Instead, the data support a model in which wild-type dynein and Kip2 have the potential to engage simultaneously with the microtubule in a \u2018tug-of-war\u2019-like mechanism.\n\nIf dynein's plus-end-directed movement is driven directly by Kip2, these two species should colocalize and move together on the microtubule. As expected from our biochemical data (Figure 1B), binding events between the dynein and Kip2 subcomplexes were extremely rare when both species were diluted to the sub-nanomolar concentrations required for single-molecule imaging. However, by exploiting the weak-binding dynein construct that does not bind appreciably to the microtubule at low nanomolar concentrations (Figure 1C, lane 2), we were able to observe clear co-localized movements of dynein with Kip2 in the presence of Bik1 and Lis1 (Figure 2\u2014figure supplement 3). Notably, the dynein construct frequently localized with Kip2 midway through a run, and dissociated before its end, consistent with transient binding as indicated by our biochemical experiments (Figure 1B). These observations suggest that the movement of dynein toward the plus end is driven directly by Kip2.\n\n### Lis1 and Bik1 couple dynein to Kip2, and Bim1 regulates the efficiency of dynein plus-end transport\n\nTo probe the roles played by individual components in the plus-end-directed transport of dynein, we performed dropout experiments in which proteins were selectively omitted from the reconstitutions (Figure 2C). Lis1 and Bik1 were critical for dynein's plus-end-directed movement (Figure 2C, lanes 3 and 4). In their absence, dynein moved to the minus end of the microtubule, despite the continued movement of Kip2 to the plus end. These results indicate that Lis1 and Bik1 are required to connect dynein to Kip2. Omitting Kip2 abolished dynein's plus-end-directed movement, showing that the pathway we have reconstituted is kinesin dependent (Figure 2C, lane 5). Interestingly, removal of Kip2 also increased the frequency of microtubule catastrophes (the conversion from growth to shrinkage; Figure 2C, arrows), consistent with the short microtubule phenotype caused by Kip2 deletion in vivo (Cottingham and Hoyt, 1997). Finally, we observed an unexpected influence of Bim1 (Figure 2C, lane 6). In the absence of Bim1, dynein could still be transported to the plus end, but the fraction of plus- vs minus-end-directed dynein movements was roughly balanced (47 vs 53 \u00b1 5%, respectively). Thus, Lis1, Bik1 and Kip2 constitute the minimal machinery for transporting dynein to the plus end, and Bim1 can regulate this machinery to increase the fraction of dynein movements that are directed to the plus end.\n\n### Bik1 and Bim1 enhance Kip2 processivity\n\nBecause Bim1 forms a ternary complex with Bik1 and Kip2 (Figure 1B), we suspected that the influence of Bim1 on dynein's plus-end transport might be exerted through these proteins. Furthermore, analysis of the Kip2 amino acid sequence revealed that there is an SxIP motif within an extension N-terminal to the kinesin motor domain (Figure 3A). The SxIP motif is a signature sequence that interacts with EB-family proteins such as Bim1 (Honnappa et al., 2009), suggesting that Bim1 may interact with Kip2 through this motif. Bim1 also binds to the Cap-Gly domain of Bik1 (Blake-Hodek et al., 2010) and the microtubule lattice (Zimniak et al., 2009), while Bik1's coiled coil is thought to interact with Kip2 (Newman et al., 2000; Carvalho et al., 2004). These observations suggest that a network of interactions exists within the Bik1-Bim1-Kip2 complex (Figure 3A), consistent with our pairwise binding analysis (Figure 1\u2014figure supplement 1). Therefore, we wanted to test if Bik1 and Bim1 could promote Kip2's microtubule interactions by providing additional, transient microtubule-binding sites (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig3-v1.jpg)\n\n**Figure 3.:** (A) Top: diagram of Kip2, Bik1 and Bim1 domain structure. Arrows indicate reported and putative interactions (see main text for details). Bottom: Kip2 contains an SxIP motif (orange) within an N-terminal extension to its kinesin motor domain. The SxIP motif is flanked by serine residues (blue) that can be phosphorylated (Holt et al., 2009; Bodenmiller et al., 2010). (B) Top: kymographs showing the movement of Kip2-Atto647 along Taxol-stabilized microtubules in the absence and presence of Bik1 and Bim1. Scale bars, 1 min and 5 \u03bcm. Bottom: histograms showing the distribution of Kip2 run lengths in each condition. Orange curves show single exponential fits, based on the cumulative distribution function of each dataset. Average run lengths were determined from the decay constant. Standard errors were determined by bootstrapping, with each dataset resampled 200 times. (C) Bar chart of run length \u00b1 SE of dynein and Kip2 toward the minus and plus end of the microtubule, respectively, in the indicated conditions (N = 233\u2013331).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Impact of Bik1/Bim1 on dynein and Kip2 velocity on Taxol-stabilized microtubules. Graphs show mean velocity \u00b1 SEM (N = 175\u2013331 events per condition). Bik1 and Bim1 together confer a small reduction in the velocity of Kip2\u2019s plus-end-directed movement (p < 0.0001, Student\u2019s t test). (B) Bik1 and Bim1 do not change Kip2 copy number, as judged by average fluorescence intensity per Kip2 spot. Graphs show mean intensity \u00b1 SEM (N = 29\u201340 spots per condition). Fluorescence intensity per Kip2 spot does not change upon addition of Bik1 and Bim1 (P = 0.1529).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Left: kymographs showing Kip2 at a fixed concentration in the absence or presence of Bik1 and Bim1. Right: quantification of Kip2 landing rate on the microtubule, expressed as events per micron of microtubule per nM Kip2 per minute. Bik1 and Bim1 increase Kip2's microtubule landing rate. Orange lines show mean \u00b1 SEM. (B) Histograms showing the duration of Kip2 runs in the absence or presence of Bik1 and Bim1. Orange curves show single exponential fits, based on the cumulative distribution function of each dataset. The average run duration and off-rate were determined from the decay constant. Standard errors were determined by bootstrapping, with each dataset resampled 200 times. Bik1 and Bim1 reduce Kip2's microtubule off-rate.\n\nTo directly visualize the impact of Bik1 and Bim1 on Kip2's motility, we fluorescently labeled Kip2 with Atto647 and tracked the movement of single molecules along Taxol-stabilized microtubules (Figure 3B). In the absence of regulators, the average distance traveled by Kip2 per microtubule encounter was 1.2 \u00b1 0.1 \u03bcm (Figure 3C). The addition of Bik1 or Bim1 individually had minor effects on Kip2 run length. However, in the presence of both Bik1 and Bim1, the run length of Kip2 increased fourfold, to 4.8 \u00b1 0.3 \u03bcm (Figure 3C). Concomitantly, there was a small decrease in Kip2 velocity, while the Kip2 copy number (judged by fluorescence intensity per spot) was unchanged (Figure 3\u2014figure supplement 1). These effects were specific to Kip2: Bik1 and Bim1 had minimal effects on dynein motility (Figure 3\u2014figure supplement 1). Analysis of Kip2 landing events and run durations revealed that Bik1 and Bim1 increase the on-rate and reduce the off-rate of Kip2's microtubule encounters (Figure 3\u2014figure supplement 2), indicating that these factors augment Kip2's microtubule affinity. In summary, we conclude that Bik1 and Bim1 together act as processivity factors for Kip2.\n\n### The outcome of a tug-of-war between dynein and Kip2 is tuned by Bim1 and Bik1\n\nFinally, we sought to investigate if regulation of Kip2\u2018s processivity could affect its ability to overcome dynein in a tug-of-war. Our reconstitutions show that Bik1 is required to connect dynein to Kip2: thus, any additional role of Bik1 in regulating the tug-of-war was obscured. Therefore, we used DNA origami (Shih and Lin, 2010) to couple dynein and Kip2 directly, independent of any other proteins (Figure 4A). Dynein and Kip2 were attached at opposite ends of a 225 nm long DNA structure comprising a 12-helix bundle, which we call the \u2018chassis\u2019 (Derr et al., 2012). Under this regime, the large majority (80 \u00b1 2%; mean \u00b1 SEM) of dynein/Kip2-chassis movements on the microtubule were in the minus-end (dynein) direction, as visualized by the incorporation of fluorescently labeled DNA strands (Figure 4B,C). Velocity analysis indicated that the chassis-coupled motors were in a tug-of-war: both minus- and plus-end-directed runs exhibited reduced velocity compared to single-motor chassis (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig4-v1.jpg)\n\n**Figure 4.:** (A) Coupling dynein and Kip2 to a DNA origami \u2018chassis\u2019 allows them to be pitted directly against each other in a tug-of-war. Single-stranded DNA oligonucleotides were attached to dynein and Kip2 via SNAP tags at their N- or C-terminus, respectively (Derr et al., 2012). These DNA oligonucleotides base pair with complementary sequences extending from the chassis. (B) Top: kymographs of dynein/Kip2-chassis motility on Taxol-stabilized microtubules in the presence and absence of Bik1 and Bim1. Bottom: Color-coded schematics, highlighting runs that are minus-end-directed (green), plus-end-directed (purple), bi-directed (orange) or non-mobile (black). (C) Quantification of the different types of dynein/Kip2-chassis behavior in the indicated conditions, expressed as the average percentage \u00b1 SEM (N = 3 separate dynein/Kip2-chassis assembly reactions, with 306\u2013353 runs analyzed in each case). The addition of Bik1 and Bim1 causes the fraction of plus-end-directed runs to increase relative to dynein/Kip2-chassis alone (p < 0.05; Student\u2019s t test). Scale bar, 20%.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Graph shows the average velocity \u00b1 SD of chassis movements toward the microtubule minus end (gray bars) or plus end (purple bars). 1D denotes a chassis with one dynein-attachment site. 1K denotes a chassis with one Kip2-attachment site. 1D1K denotes a chassis with one dynein and one Kip2 attachment site. The velocity of the 1D1K chassis in the minus-end (dynein) direction is reduced compared to the 1D chassis, suggesting that Kip2 resists transport to the minus end (p < 0.0001, Student\u2019s t test). The converse is also true for the velocity in the plus-end direction (p < 0.0001).\n\nThe DNA chassis allowed us to directly determine if Bik1 and Bim1 influence the outcome of the tug-of-war. The addition of either Bik1 or Bim1 alone had a modest effect on the motility of the dynein/Kip2-chassis complex: the fraction of minus- and plus-end-directed runs was changed little (Figure 4C). In contrast, inclusion of Bik1 and Bim1 together caused the fraction of plus-end-directed runs to markedly increase (Figure 4C). Under these conditions, the dynein/Kip2-chassis also underwent switches in direction during a run (Figure 4B; orange trace; 10 \u00b1 1% of events). These results reveal that regulatory proteins can tune the outcome of a tug-of-war between dynein and the kinesin Kip2.\n\n## Discussion\n\nThrough in vitro reconstitution, protein engineering and DNA origami, we have elucidated a mechanism that spatially targets dynein toward the microtubule plus end\u2014the start of its track (Figure 5). The essence of the mechanism involves coupling dynein's motor domain to a plus-end-directed kinesin, Kip2. By reconstituting the functional coupling between these opposite-polarity motors for the first time, we show that two proteins, Lis1 and Bik1, are sufficient to connect dynein and Kip2. This connection is capable of bearing load on the microtubule, but is not stable enough to be observed by size-exclusion chromatography. As is the case for interactions found in other self-organizing systems (Kirschner et al., 2000), a high off-rate between dynein and Kip2 might allow for dynamic regulation, for example enabling dynein to readily detach from Kip2 following targeting. Indeed, in vivo, the timescale of dynein \u2018offloading\u2019 from the microtubule plus end onto its receptor on the cell cortex is on the order of seconds (Markus and Lee, 2011).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02641/elife-02641-fig5-v1.jpg)\n\n**Figure 5.:** Based on results from this study and earlier work. Dynein is connected to the plus-end-directed motor Kip2 by Lis1 and Bik1. Specifically, Lis1's \u00df-propeller domain binds to the AAA4 subdomain of dynein's motor domain (Huang et al., 2012). The dynein/Lis1 complex interacts dynamically with the C-terminal zinc-knuckle domain of Bik1/Clip170 (Coquelle et al., 2002; Sheeman et al., 2003; Lansbergen et al., 2004; Markus et al., 2011) as indicated by the double arrow. Bik1's coiled coil is posited to interact with Kip2 (Newman et al., 2000; Carvalho et al., 2004). Bim1 is not strictly required for dynein's plus-end transport, but together with Bik1, it can enhance Kip2's processivity and help Kip2 overcome dynein's intrinsic minus-end-directed motility. As depicted with dotted lines, it is likely that the C-terminal tail of Bim1 interacts with the N-terminal Cap-Gly domain of Bik1 (Weisbrich et al., 2007), and the cargo-binding domain of Bim1 interacts with the SxIP motif of Kip2 (Honnappa et al., 2009). This arrangement would leave the calponin-homolgy domain of Bim1 (Slep and Vale, 2007) free to interact transiently with the microtubule lattice, and thus promote Kip2's microtubule association. A single copy of each molecule is shown for clarity; interplay with the numerous other + TIPs in S. cerevisiae (not shown) is expected.\n\nOur experiments show that dynein has the potential to resist its plus-end transport through its microtubule-binding domain. We also find that regulatory factors can tune the efficiency with which Kip2 \u2018wins\u2019 a tug-of-war against dynein. Bik1 and Bim1 can promote Kip2's microtubule interactions and help this kinesin to overcome dynein's intrinsic minus-end-directed motility. The effect of these factors is recapitulated when dynein and Kip2 are connected synthetically using DNA origami, suggesting that it is mechanical in its basis and not contingent on a specific coupling geometry. Moreover, our biochemical demonstration of Kip2 phosphorylation suggests that additional layers of regulation may exist. Specifically, the addition and removal of phosphate groups on the N-terminal extension of Kip2's motor domain has the potential to influence its interaction with Bim1 (Figure 3A; Honnappa et al., 2009), as well as the negatively charged microtubule surface, both of which could impact Kip2 motility.\n\nIt remains to be seen if additional factors mitigate resistance from dynein during its plus-end transport in vivo, akin to the mutations in dynein's microtubule-binding domain that we found to enhance plus-end targeting in vitro. For example, dynein's tail domain is crucial for events downstream of plus-end targeting (Markus et al., 2009), but it is conceivable that the tail and its associated factors regulate the transport process as well. Once dynein reaches the plus end, the high local concentration of Lis1 at plus ends in S. cerevisiae (Markus et al., 2011) may help retain dynein by prolonging its microtubule attachments (Huang et al., 2012; McKenney et al., 2010; Yamada et al., 2008). Nudel, a Lis1 and dynein binding partner, may also promote dynein plus-end targeting by tethering Lis1 to dynein (Li et al., 2005; McKenney et al., 2010; Wang and Zheng, 2011; Zylkiewicz et al., 2011; Huang et al., 2012). Notably, genetic studies indicate there is a second pathway for targeting dynein directly from the cytoplasm to the plus end that does not require Kip2 (Caudron et al., 2008; Markus et al., 2009). Overlap between these pathways in vivo may explain why Bim1's capacity to regulate dynein plus-end transport was previously hidden. In summary, these results provide a vivid example of how the interplay between dynein, kinesin and microtubule-associated proteins can give rise to a coherent behavior: the recycling of a molecular motor to the start of its track.\n\n## Materials and methods\n\n### Protein purification\n\n#### Dynein, Lis1 and Kip2\n\nS. cerevisiae strains used for the purification of dynein, Lis1 and Kip2 are listed in Table 2. Purification of the dimeric dynein motor domain construct (GST-dynein331 kDa) and full-length dynein, and labeling with tetramethylrhodamine and DNA oligonucleotides have been described (Reck-Peterson et al., 2006; Derr et al., 2012; Qiu et al., 2012). Lis1 was also purified as described (Huang et al., 2012). For Kip2, the genomic kip2 locus was modified using homologous recombination to add an inducible Gal1 promoter, an N-terminal His8-ZZ tag and Tev cleavage site, and a C-terminal SNAP tag. Expression of the Kip2 construct was induced by shifting cells from YP-raffinose media to YP-galactose and culturing for a further 16 hr at 30\u00b0C. Harvested cell paste was frozen in liquid nitrogen. Kip2 was typically affinity purified via its ZZ-tag as described for dynein (Reck-Peterson et al., 2006). For fluorescent labeling of the SNAP tag on Kip2, benzyl-guanine (BG) conjugated Atto647N dye (NEB; Ipswich, MA) was added to a final concentration of 10\u201330 \u03bcM while the Kip2 was bound to IgG-sepharose beads and the reaction was incubated for 20 min at ambient temperature. DNA labeling of Kip2 was carried out in the same way using 60 \u03bcM BG-oligonucleotide. After returning the mixture to 4\u00b0C, unbound dye/DNA was removed by two washes with TEV buffer (50 mM Tris\u2013HCl [pH 8.0], 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 10% glycerol, 5 mM \u03b2-mercaptoethanol, 1 mM PMSF, and 0.1 mM Mg-ATP). Kip2 was released from beads via incubation with TEV protease for 1 hr at 16\u00b0C, resulting in cleavage from the His8-ZZ tag.\n\n**Table 2.**\n Yeast strains used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Genotype</th>\n      <th>Used to purify</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RPY753</td>\n      <td>PGAL1-ZZ-Tev-GFP-3xHA-GST-DYN1331kDa-gs-DHA-KanR; pac1\u0394::klURA3; ndl1\u0394::cgLEU2</td>\n      <td>GST-dynein331 kDa</td>\n      <td>(Huang et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>RPY780</td>\n      <td>ZZ-Tev-3xHA-DYN1-gs-DHA-KanR nip100\u0394 pac1\u0394::HygroR ndl1\u0394::cgLEU2</td>\n      <td>Full-length dynein</td>\n      <td>(Huang et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>RPY816</td>\n      <td>PGAL1-8HIS-ZZ-Tev-PAC1; dyn1D::cgLEU2; ndl1D::HPH</td>\n      <td>Lis1</td>\n      <td>Julie Huang</td>\n    </tr>\n    <tr>\n      <td>RPY1084</td>\n      <td>PGAL1-ZZ-Tev-GFP-3xHA-SNAP-gs-GST-DYN1331kDa-gs-DHA-KanR</td>\n      <td>Dynein for DNA labeling</td>\n      <td>(Derr et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>RPY1099</td>\n      <td>PGAL1-8HIS-ZZ-Tev-KIP2-g-FLAG-ga-SNAP\u2212KanR</td>\n      <td>Kip2</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>RPY1235</td>\n      <td>PGAL1-ZZ-Tev-GFP-3xHA-GST-DYN1E3197K-gs-DHA-KanR</td>\n      <td>Polarity marker dynein for chassis experiments</td>\n      <td>(Redwine et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>RPY1536</td>\n      <td>PGAL1-ZZ-Tev-GFP-3xHA-GST-DYN1K3116A, K3117A, E3122A, R3124A-gs-DHA-KanR</td>\n      <td>Weak dynein</td>\n      <td>This work</td>\n    </tr>\n  </tbody>\n</table>\n\n_All strains were made in the W303a background (MATa his3-11,15 ura3-1 leu2-3,112 ade2-1 trp1-1) with genes encoding the proteases Pep4 and Prb1 deleted (prb1\u0394; pep4\u0394::HIS5). DHA and SNAP refer to the HaloTag (Promega) and SNAP-tag (NEB), respectively. Tev indicates a Tev protease cleavage site. PGAL1 denotes the galactose promoter, which was used to induce protein expression. Amino acid spacers are indicated by g (glycine), ga (glycine\u2013alanine), and gs (glycine\u2013serine)._\n\nFor size-exclusion chromatography experiments Kip2 was purified using a two-step method, which gave a higher final yield and concentration. Cells were lysed in an electric coffee grinder pre-chilled with liquid nitrogen, and resuspended in phosphate lysis buffer (final concentrations: 50 mM potassium phosphate [pH 8.0], 150 mM potassium acetate, 150 mM NaCl, 5 mM \u03b2-mercaptoethanol, 10% glycerol, 0.2% TritonX-100, 1 mM PMSF, and 0.1 mM MgATP) supplemented with 10 mM imidazole (pH 7.5). Subsequent steps were at 4\u00b0C unless indicated. The lysate was clarified by centrifugation at 264,900\u00d7g for 1 hr. The supernatant was incubated with Ni-NTA agarose (Qiagen; Germantown, MD) for 1 hr, transferred into a column, washed three times with phosphate lysis buffer supplemented with 20 mM imidazole, and eluted with phosphate lysis buffer supplemented with 250 mM imidazole. The eluate was incubated with IgG sepharose beads for 1 hr, transferred into a column, and washed twice with phosphate lysis buffer and once with TEV buffer. Kip2 was released from beads via TEV cleavage as described above.\n\n#### Bik1 and Bik1\u0394C\n\nThe Bik1 open-reading frame (ORF) was amplified from S. cerevisiae genomic DNA and inserted into the vector pKL with an N-terminal His8-ZZ tag for expression using the Baculovirus system (Fitzgerald et al., 2006). A Bik1\u0394C construct lacking the C-terminal 40 amino acids was also constructed. Virus production and protein expression were carried out using sf21 insect cells. Proteins were purified essentially as described (Blake-Hodek et al., 2010). All steps were performed at 4\u00b0C. Cell pellets were resuspended in lysis buffer (50 mM Tris pH 8.5, 300 mM KCl, 5% glycerol, 10 mM imidazole, 1% NP40, 5 mM BME) and lysed using a Dounce homogenizer (10 strokes with loose plunger, 10 strokes with tight plunger). The lysate was clarified by ultracentrifugation at 183,960\u00d7g for 30 min, and incubated with Ni-NTA agarose in batch for 1 hr. Following transfer into a disposable column, the agarose was washed with Buffer A (20 mM Tris pH 8.5, 500 mM KCl, 20 mM imidazole, 5 mM BME), Buffer B (20 mM Tris pH 8.5, 1 M KCl, 20 mM imidazole, 5 mM BME), Buffer A then Buffer D (20 mM Tris pH 7.5, 200 mM KCl, 5 mM BME). Finally, Bik1 was eluted with Buffer D supplemented with 300 mM imidazole and 10% (vol/vol) glycerol.\n\n#### Bim1\n\nThe Bim1 ORF was amplified from S. cerevisiae genomic DNA and inserted into the pDEST17 expression vector with an N-terminal His6-Strep tag and a TEV cleavage site. Expression was induced in E. coli (BL-21[DE3]) at OD 0.6 with 0.1 mM IPTG for 16 hr at 18\u00b0C. Cell pellets were resuspended in lysis buffer with 1 mg/ml lysozyme and lysed by sonication. Subsequent steps were at 4\u00b0C unless indicated. The lysate was clarified by ultracentrifugation at 154,980\u00d7g for 30 min at 4\u00b0C, then passed twice over Strep-Tactin resin in a disposable column. The resin was washed twice with Buffer B and twice with TEV buffer. Bim1 was released from the resin via incubation with TEV protease for 1 hr at 16\u00b0C, resulting in cleavage from the His6-Strep tag.\n\n### Protein analysis\n\nProteins were analyzed by SDS-PAGE on 4\u201312% Tris-Bis gels with Sypro Red staining (Invitrogen; Carlsbad, CA), and imaged using an ImageQuant 300 gel imaging system (Bio-Rad; Hercules, CA). Protein concentrations were determined by comparisons with standards using Bradford protein assays. All protein concentrations are expressed for the monomer, with the exception of \u03b1/\u03b2-tubulin, for which the dimer concentration is given. To verify Kip2 phosphorylation, purified Kip2 (2 \u03bcg) was incubated \u00b1280 units of \u03bb phosphatase (NEB) with 1 mM MnCl2 in PMP NEBuffer for 30 min at 25\u00b0C. With the exception of Figure 1A (inset), the Kip2 used in all experiments was not treated with phosphatase.\n\n### Size-exclusion chromatography\n\nFor size-exclusion chromatography, indicated combinations of purified protein (100 picomoles each) were pre-incubated at a concentration of 1.1 \u03bcM for 10 min at 4\u00b0C. Samples were fractionated on a Superose 6 PC 3.2/30 column using an \u00c4KTAmicro system (GE Healthcare; Piscataway, NJ) that had been equilibrated with gel filtration buffer (50 mM Tris\u2013HCl [pH 8.0], 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 5% glycerol, and 1 mM DTT). Fractions (50 \u03bcl) were analyzed by SDS-PAGE.\n\n### Microtubule recruitment assay\n\nTaxol-stabilized microtubules containing 10% Alexa488-tubulin and biotin-tubulin were prepared using standard methods (http://mitchison.med.harvard.edu/protocols.html). Flow chambers for total internal reflection fluorescence (TIRF) microscopy were assembled using biotin-PEG cover glasses from MicroSurfaces, Inc. (Englewood, NJ) or prepared as described (Bieling et al., 2010). Chambers were incubated sequentially with the following solutions, interspersed with two washes with assay buffer (BRB80 [80 mM PIPES-KOH pH 6.8, 1 mM MgCl2, 1 mM EGTA], 0.5 mg/ml casein and 1 mM DTT) with 20 \u03bcM taxol: (1) 0.5 mg/ml streptavidin in BRB80 (4 min incubation); (2) a 1:100 dilution of microtubule solution (2 min incubation). Finally, TMR-labeled dynein (2.5 nM) was added with Lis1 (50 nM), Bik1 (50 nM), Bim1 (5 nM) and Kip2 (2.5 nM) as indicated. The final reaction solution contained no nucleotide, 20 \u03bcM taxol and an oxygen scavenging system (Yildiz et al., 2003) in assay buffer. Alexa488-microtubules and dynein-TMR were visualized using an Olympus IX-81 TIRF microscope with a 100x 1.45 N.A. oil immersion TIRF objective and CW 491 nm and 561 nm lasers, controlled by Metamorph software (Qiu et al., 2012). Images were recorded with a 100 ms exposure on a back-thinned electron multiplier CCD camera, giving 159 nm/pixel at the specimen level. All conditions were imaged with identical microscope settings (491 nm laser power: 0.65 mW; 561 nm laser power: 0.35 mW; EMCCD gain: 150). Dynein fluorescence intensity on the microtubule was quantified using ImageJ. Background signal was subtracted using a rolling ball radius of 5 pixels. Intensities were determined over a 20-pixel wide line drawn perpendicular to the long axis of the microtubule, and averaged for n = 30\u201350 microtubules in each condition.\n\n### Dynamic microtubule assays\n\nDynamic microtubule assays and visualization by TIRF microscopy were performed essentially as described (Bieling et al., 2010). Brightly-labeled, biotinylated microtubule seeds were polymerized by mixing Alexa488-tubulin (10 \u03bcM), biotin-tubulin (10 \u03bcM) and unlabeled tubulin (10 \u03bcM) with 0.5 mM GMP-CPP (Jena Bioscience) in BRB80 and incubating for 30 min at 37\u00b0C. Following the addition of 10 vol of BRB80, polymerized seeds were pelleted in a benchtop centrifuge (15 min at 16,100\u00d7g) and resuspended in a volume of BRB80 equal to the original polymerization volume. Flow chambers for TIRF microscopy were assembled using biotin-PEG cover glasses. Chambers were incubated sequentially with the following solutions, interspersed with two washes with assay buffer: (1) 1% plurionic F-127 and 5 mg/ml casein in BRB80 (8 min incubation); (2) 0.5 mg/ml streptavidin in BRB80 (4 min incubation); (3) a fresh 1:2000 dilution of microtubule seed solution (2 min incubation). The final reaction solution contained 1 mM Mg-ATP, 1 mM GTP, 0.1% methylcellulose, an oxygen scavenging system, and 15 \u03bcM tubulin (7.5% Alexa488 labeled, 92.5% unlabeled) in assay buffer. Dynein-TMR (0.04\u20130.3 nM), Lis1 (50 nM), Bim1 (5 nM), Bik1 (50 nM) and Kip2-Atto647 (1 nM) were added as indicated. After sealing with vacuum grease, flow chambers were imaged immediately. Three-color TIRF movies (capturing Alexa488, TMR and Atto647 fluorescence) were recorded with 3 s intervals per channel for 10 min using the microscopy setup described above and in Qiu et al. (2012). Microtubule plus ends were assigned based on two criteria, which were consistent: (1) the direction of Kip2 movement and (2) the microtubule end with faster growth rate. Only motility on the dimly labeled plus-end extension of the microtubule was analyzed. Dynein velocities and directionalities were calculated from kymographs using an ImageJ macro (provided in Supplementary file 1). The density of Kip2 on the microtubule precluded measuring the velocity of every run in each kymograph. Hence the velocity of a subset of discrete runs was determined as an estimate of the population velocity. These velocities match closely those of Kip2 at single-molecule concentrations in equivalent conditions (Figure 3\u2014figure supplement 1). In some cases, minor image drift was corrected using the ImageJ plugin Turboreg. Movies showing significant drift were discarded.\n\n### Motility assays on Taxol-stabilized microtubules\n\nFlow chambers were assembled using cover glasses (Corning no. 1\u00bd) and Taxol-stabilized microtubules containing 10% Alexa488- and biotin-tubulin were immobilized on the glass surface with Biotin-BSA and streptavidin as described (Derr et al., 2012; Huang et al., 2012). Atto647-labeled Kip2 (0.01\u20130.05 nM) was added with Bik1 (100 nM) and Bim1 (5 nM) as indicated, in BRB80 supplemented with 1 mM Mg-ATP, 1 mM DTT, 20 \u03bcM taxol, 2.5 mg/ml casein, and an oxygen scavenging system. Motility assays were imaged as described (Derr et al., 2012; Huang et al., 2012). Motor velocities and run lengths were calculated from kymographs. For landing rate quantification, Kip2 was analyzed at 0.01 and 0.02 nM in the presence or absence of Bik1 (100 nM) and Bim1 (5 nM). Landing events were determined from kymographs and the rate was calculated as the number of events per micron of microtubule per nM Kip2 per minute.\n\nFor visualizing the colocalization of weak dynein with Kip2, assay chambers were prepared as for dynamic microtubule assays except taxol-stabilized microtubules were attached to the biotin-PEG surface instead of GMP-CPP stabilized seeds, and all buffers contained 20 \u03bcM taxol. The final reaction contained the weak dynein construct (2 nM), Lis1 (2 nM), Bik1 (2 nM) and Kip2-Atto647 (0.2 nM).\n\n### DNA origami\n\nThe 12 helix-bundle DNA origami \u2018chassis\u2019 was made as described (Derr et al., 2012), by rapidly heating and slowly cooling an 8064-nucleotide, single-strand DNA (ssDNA) \u2018scaffold\u2019 in the presence of short ssDNA \u2018staples\u2019 that base-pair with the scaffold to fold it into a desired shape. The folded chassis was purified by glycerol gradient centrifugation as described (Derr et al., 2012). The chassis contained five TAMRA-labeled ssDNAs for fluorescent visualization. The chassis also had two projecting \u2018handle\u2019 sequences of ssDNA at opposite ends, termed \u2018A\u2019 and \u2018B\u2019, which were used to attach DNA-labeled dynein and Kip2 respectively. The sequences for the scaffold and all oligonucleotides are listed in Derr et al. (2012). Motor-chassis complexes were assembled by incubating dynein labeled with oligo A\u2032 (complementary to handle A) and Kip2 labeled with oligo B\u2032 (complementary to handle B) with the chassis for 30 min on ice. Complex assembly was verified by agarose gel shift (Derr et al., 2012). Chassis motility was visualized in the presence of Bik1 (100 nM) and Bim1 (5 nM) on taxol-stabilized microtubules as indicated. To determine microtubule polarity, a low concentration (\u223c0.1 nM) of a highly processive dynein mutant (E3197K) labeled with a different fluorophore (Atto647) was included. Chassis velocities and directionalities were determined from kymographs using ImageJ. To determine the fraction of motile events, the number of observations for a given event (e.g., the number of plus end runs) was tallied and divided by the total number of observations. Fractions are expressed as the average percentage \u00b1 SEM for three separate dynein/Kip2-chassis assembly reactions, with 306\u2013353 runs analyzed in each case.\n",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "14f1b116-fc55-4ee1-81fd-ee8adf2737bf",
+      "submission_id": "bdf151fe-71d0-456a-843b-1741b28d21d2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mohan Balasubramanian, University of Warwick , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02641.018](https://doi.org/10.7554/eLife.02641.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMechanism of dynein targeting to the microtubule plus end by kinesin\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nWe believe that with the appropriate changes your work will make an excellent contribution to the field of microtubule motors and one that eLife will be pleased to publish. Major points to consider in the revision:\n\n1) \u201cFigure 1: Dynein-Lis1 and Bim1-Bik1-Kip2 form sub-complexes that interact on microtubules\u201d. I did not find the evidence for this statement, which can also be found in modified forms in the text, sufficiently strong from the data presented in Figure 1.\n\nThe authors do not rule out a mechanism in which Bim1-Bik1-Kip2 modulate binding of dynein to the microtubule indirectly, e.g., by modulating dynein's microtubule binding activity in solution or the structure of the MT lattice. The fluorescently labelled Kip2 could be used to assess colocalization of dynein and Kip2 in the same puncta in this assay in which higher resolution images are scrutinized. This should be attempted. Higher resolution images will also allow the authors to assess if increased binding of the weak MT-binding mutant of dynein in the presence of Lis1, Kip2, Bim1 and Bik1 is correlated with increased oligomerization or dynein (analogous to the experiments presented for Kip2 in Figure S3B). This would be a welcome addition to the paper.\n\nThe data in Figure 2 are consistent with a complex formed on microtubules that consists of dynein and Kip2 and is bridged by the other proteins. However, it is not possible to see traces of motile complexes that contain fluorescent dynein and Kip2 due to the excess of Kip2 in the assays. These experiments should be supplemented with at least one protein combination (plus any appropriate controls) in which Kip2 concentration is reduced. Plus end-directed movements of dynein may be rare, but they presumably would occur. If the authors' model is correct these puncta should contain Kip2.\n\n2) I understand that the authors need to use the weak MT binding mutant in the absence of ATP to assess the influence of the other proteins on MT association of dynein. Showing stronger evidence that the same affect also occurs for the wild-type dynein in the presence of ATP would strengthen the manuscript significantly. The authors state in the Materials and methods section: \u201cIn particular, when Lis1 and Bik1 was omitted, an elevated dynein concentration (0.3 nM) was needed to observe runs, consistent with the finding that Lis1 and Bik1 can couple dynein to Kip2 and thus can help recruit dynein onto the microtubule\u201d. It would appear that this observation forms a nice basis for a quantitative assay to assess the influence of these factors on the association of wild-type dynein with MTs. Such an assay should be attempted.\n\n3) Presumably the polarity of the MT in Figure 2 is assigned by assuming that the plus end is growing more rapidly in all conditions. In the kymographs shown most dynein puncta on a single microtubule are moving in the same direction. An important control would be to show that the proteins added to dynein do not affect MT dynamics such that in some MTs the minus end grows more rapidly than the plus end, thus leading to erroneous conclusions about the directionality of dynein. Although I judge this an unlikely scenario it is presumably not too challenging to assess by placing the dynamic microtubules on a glass surface coupled to an immobilized motor of known directionality (such as kinesin-1). Such a control needs only to be done for one key condition.\n\n4) The model that Kip2's MT affinity is increased by Bik1 and Bim1 is very interesting. It would seem straightforward to test this model by assessing the frequency of MT binding events or an assay similar to that used in Figure 1. The authors may have other ideas for how to assess the influence of Bik1 and Bim1 on Kip2's MT affinity.\n\n5) It is unclear how the velocity of Kip2 can be accurately determined from the kymographs in Figure 2. The traces are densely packed and discontinuous. A convincing account of how quantification was performed needs to be included in the methods. Perhaps adding a description of how the custom software deals with these traces would also help.\n\n6) A major inference of the paper is that the plus end targeting of dynein has been reconstituted. However, it seems that one can be more confident that plus end-directed motility has been achieved. The authors state that dynein was present at \u223c60% of microtubules of the growing plus end itself, reminiscent of dynein localization in living yeast cells. No images of wild-type dynein enrichment at the plus ends are shown so it is not clear if there is more dynein at the plus end than on the rest of the lattice. Representative Kymographs can also be shown to bolster this point.\n\nDepending on the situation observed, the authors may wish to modify their language to talk about reconstitution of \u201cplus end-directed movement\u201d rather than \u201ctargeting to the plus end\u201d.\n\n7) There is a potential caveat that the dynein here is truncated and is a GST fusion, with the GST driving dimerisation to at least some extent. Some discussion on how potentially significant this caveat is will be useful.\n",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5073ec00-1f5e-4351-ab39-ebe862fbdf1d",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C1",
+      "claim": "Cytoplasmic dynein powers intracellular movement of cargo toward the microtubule minus end.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic dynein powers intracellular movement of cargo toward the microtubule minus end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about dynein function stated in the abstract and supported by general scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6361ddfd-5f35-4f31-bca9-efd22df9db3a",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C2",
+      "claim": "Two proteins\u2013homologs of Lis1 and Clip170\u2013are sufficient to couple dynein to Kip2, a plus-end-directed kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that two proteins\u2013homologs of Lis1 and Clip170\u2013are sufficient to couple dynein to Kip2, a plus-end-directed kinesin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the reconstitution experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "60d3d3b0-e198-4b46-a2bb-39073e4cf749",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C3",
+      "claim": "Dynein is transported to the plus end by Kip2, but is not a passive passenger, resisting its own plus-end-directed motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein is transported to the plus end by Kip2, but is not a passive passenger, resisting its own plus-end-directed motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by experimental data showing that weakening dynein's microtubule affinity increases its plus-end velocity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "64aa42d7-7408-463f-9a21-ef8d960ec9d8",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C4",
+      "claim": "Two microtubule-associated proteins, homologs of Clip170 and EB1, act as processivity factors for Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Two microtubule-associated proteins, homologs of Clip170 and EB1, act as processivity factors for Kip2, helping it overcome dynein's intrinsic minus-end-directed motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data showing increased Kip2 run length in the presence of Bik1 and Bim1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "815008f5-5dc5-4971-a6d6-345cf01115ab",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C5",
+      "claim": "Dynein accumulates at the plus ends of microtubules in diverse organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell imaging in diverse organisms reveals that, surprisingly for a minus-end-directed motor, dynein accumulates at the plus ends of microtubules that grow and shrink near the cell periphery (Vaughan et al., 1999; Han et al., 2001; Ma and Chisholm, 2002; Lee et al., 2003; Sheeman et al., 2003; Lenz et al., 2006; Kobayashi and Murayama, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "8d3fdc15-74a0-4448-bb0c-9ab1fb4f8723",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C6",
+      "claim": "Dynein uses the energy from ATP hydrolysis to move cargoes toward the minus end of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic dynein, a large and complex AAA+ motor protein (Carter, 2013), uses the energy from ATP hydrolysis to move cargoes toward the minus end of microtubules (typically toward the cell center).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about dynein's mechanism, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "70e864fd-b53e-4ef2-bbfe-efb8db5dc0ad",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C7",
+      "claim": "Dynein can act while anchored at the cell cortex, where it pulls the microtubule network toward it.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, dyneins can act while anchored at the cell cortex, where they pull the microtubule network toward them (Moore et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "128c6acf-7f24-4bb2-936f-d262905392c6",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C8",
+      "claim": "The targeting of the dynein machinery to the microtubule plus end is crucial for proper dynein function in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The targeting of the dynein machinery to the microtubule plus end is crucial for proper dynein function in budding yeast (Moore et al., 2009), filamentous fungi (Wu et al., 2006), and a subset of metazoan cells, including mammalian neurons (Lomakin et al., 2009; Lloyd et al., 2012; Moughamian and Holzbaur, 2012; Moughamian et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "e3b56064-727d-4aca-988b-5ba919f415d5",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C9",
+      "claim": "EBs (end-binding proteins) preferentially bind to unique structural features present at the plus end vs the body of the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a subset of +TIPs preferentially bind to unique structural features present at the plus end vs the body of the microtubule, and can recruit additional proteins to these sites. The prototypical example of this class of +TIP are EBs (end-binding proteins), which are involved in recruiting binding partners such as Clip170 and the dynein regulator dynactin to plus ends in metazoans (Watson and Stephens, 2006; Bieling et al., 2007; Dixit et al., 2009; Zanic et al., 2009; Maurer et al., 2012; Moughamian et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing EB protein function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "c13ca415-ad25-4ea4-9c21-b02e8943c850",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C10",
+      "claim": "Kinesin motor proteins can power the vectorial transport of proteins along the microtubule body to the plus end.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, kinesin motor proteins can power the vectorial transport of proteins along the microtubule body to the plus end (Bieling et al., 2007; Subramanian et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "68f57146-56e2-4db1-9c7f-6b7c11fc7f26",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C11",
+      "claim": "In S. cerevisiae, genetic studies implicate at least three proteins in targeting dynein to the microtubule plus end: Lis1, Bik1, and Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the yeast Saccharomyces cerevisiae, genetic studies implicate at least three proteins in targeting dynein to the microtubule plus end: Lis1, a regulator of dynein motility (Lee et al., 2003; Sheeman et al., 2003); Bik1, a homolog of Clip170 (Sheeman et al., 2003; Markus et al., 2009); and Kip2, a plus-end-directed kinesin motor (Carvalho et al., 2004; Caudron et al., 2008; Markus et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "71f01d18-2103-422f-8b15-8257fc553ae8",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C12",
+      "claim": "Deletion of the EB homolog (Bim1) in S. cerevisiae appears to have little effect on the plus-end targeting of dynein and its co-factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the EB homolog (Bim1) in S. cerevisiae appears to have little effect on the plus-end targeting of dynein and its co-factors (Carvalho et al., 2004; Caudron et al., 2008; Markus et al., 2011), despite (1) Bim1 binding directly to Bik1, an essential factor for dynein plus-end targeting (Sheeman et al., 2003; Blake-Hodek et al., 2010); and (2) The homologs of Kip2, Bik1 and Bim1 functioning together as a plus-end tracking system in fission yeast (Bieling et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "1f9ba0ed-1afd-4c2f-9b50-3f3efce2384c",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C13",
+      "claim": "S. cerevisiae dynein is a forceful minus-end-directed motor with constitutive activity in motility assays.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem is particularly pressing for S. cerevisiae dynein: a forceful minus-end-directed motor with constitutive activity in motility assays (Reck-Peterson et al., 2006; Gennerich et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous motility studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "ce8b1196-b780-4fb5-8548-2a87408ddb43",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C14",
+      "claim": "Kip2 from S. cerevisiae migrates as a doublet of bands corresponding to differently phosphorylated isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Each purified protein migrated as a single band by SDS-PAGE (Figure 1A) with the exception of Kip2, which migrated as a doublet. The Kip2 bands correspond to differently phosphorylated forms of the protein; after treatment with \u03bb phosphatase, the Kip2 doublet collapsed into a single band (Figure 1A, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by phosphatase treatment experiment shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "cf3aac7b-f4d4-42c1-af83-8d9c288dbbaf",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C15",
+      "claim": "Dynein and Lis1 co-elute as a complex in size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein and Lis1 co-elute in a complex, as verified by SDS-PAGE of the fractions (Figure 1B; Huang et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by size-exclusion chromatography data in Figure 1B and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "9124c073-23cd-4c99-b17c-e3b5cf214a2d",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C16",
+      "claim": "Bik1, Bim1 and Kip2 co-elute in a ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that Bik1, Bim1 and Kip2 co-elute in a ternary complex (Figure 1B), resembling the behavior of related proteins from Schizosaccharomyces pombe (Bieling et al., 2007; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by size-exclusion chromatography data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "ff9f96b7-15b0-4ef2-8c59-70c4c737467a",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C17",
+      "claim": "A pair-wise mixture of Kip2 with Bim1 did not elute as a complex under the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A pair-wise mixture of Kip2 with Bim1 did not elute as a complex under the same conditions (Figure 1\u2014figure supplement 1), suggesting that Bim1 binds with higher affinity to the Kip2-Bik1 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by size-exclusion chromatography data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "a46a5408-52b1-4eba-84dc-169ed88398aa",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C18",
+      "claim": "Bim1 binds with higher affinity to the Kip2-Bik1 complex than to Kip2 alone.",
+      "claim_type": "IMPLICIT",
+      "source": "A pair-wise mixture of Kip2 with Bim1 did not elute as a complex under the same conditions (Figure 1\u2014figure supplement 1), suggesting that Bim1 binds with higher affinity to the Kip2-Bik1 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that Bim1 and Kip2 do not co-elute alone but do co-elute when Bik1 is present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "1af5711d-9b4c-4a08-8a0d-8c2e1990b96f",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C19",
+      "claim": "Dynein-Lis1 and Bik1-Bim1-Kip2 each form complexes that are sufficiently stable to co-elute by size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these first experiments with all five purified components demonstrate that dynein-Lis1 and Bik1-Bim1-Kip2 each form complexes that are sufficiently stable to co-elute by size-exclusion chromatography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the size-exclusion chromatography data presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "4046d116-f46c-4c15-9ae6-526da75328dc",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C20",
+      "claim": "The dynein-Lis1 and Bik1-Bim1-Kip2 sub-complexes did not stably associate in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the dynein-Lis1 and Bik1-Bim1-Kip2 sub-complexes did not stably associate in solution (Figure 1B), we hypothesized that these two assemblies might interact dynamically on the microtubule.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by size-exclusion chromatography data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "010cc959-13f6-4e0b-87c1-c677ce72940d",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C21",
+      "claim": "Wild-type dynein binds strongly to the microtubule in the absence of nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "When wild-type dynein is mixed with microtubules in the absence of nucleotide, it binds strongly to the microtubule, as visualized by total internal reflection fluorescence (TIRF) microscopy in Figure 1C (lane 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIRF microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "0ea1d58e-136f-4e84-b058-8a8e0998abed",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C22",
+      "claim": "Four mutations in dynein's microtubule-binding domain (K3116A, K3117A, E3122A, R3124A) severely weaken its association with microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to monitor dynein recruitment to the microtubule by other proteins, we introduced four mutations into its microtubule-binding domain (Koonce and Tikhonenko, 2000; Carter et al., 2008; Redwine et al., 2012), which severely weakened its association with microtubules (Figure 1C, lane 2; see also Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "29a03cba-2092-4b99-af23-94dce1d56934",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C23",
+      "claim": "Weak-binding dynein can be recruited efficiently to the microtubule by the combined presence of Lis1, Bik1, Kip2 and Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the weak-binding dynein could be recruited efficiently to the microtubule by the combined presence of Lis1, Bik1, Kip2 and Bim1 (Figure 1C, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIRF microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6894ed4d-ca47-4574-8585-94d7eff172a2",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C24",
+      "claim": "Dynein recruitment to microtubules depends strictly on the presence of Lis1 and Bik1.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynein recruitment depended strictly on the presence of Lis1 and Bik1 (Figure 1C, lanes 4 and 5), consistent with the idea that Lis1 and Bik1/Clip170 interact directly (Coquelle et al., 2002; Sheeman et al., 2003; Lansbergen et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIRF microscopy data shown in Figure 1C and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "8dce8e25-9486-4255-aefe-85a8cc54589f",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C25",
+      "claim": "Lis1 and Bik1/Clip170 interact directly.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynein recruitment depended strictly on the presence of Lis1 and Bik1 (Figure 1C, lanes 4 and 5), consistent with the idea that Lis1 and Bik1/Clip170 interact directly (Coquelle et al., 2002; Sheeman et al., 2003; Lansbergen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6ba17daf-de89-433a-a1a2-706021f249a6",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C26",
+      "claim": "Bik1\u0394C construct lacking the C-terminal region retained the ability to bind Kip2 and Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bik1\u0394C construct retained the ability to bind Kip2 and Bim1 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by size-exclusion chromatography data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "48e6ca23-2b40-4a21-a47f-f73d8196e3fd",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C27",
+      "claim": "Bik1\u0394C construct's ability to recruit weak-dynein to the microtubule in the presence of Lis1, Kip2 and Bim1 was abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its ability to recruit the weak-dynein to the microtubule in the presence of Lis1, Kip2 and Bim1 was abolished (Figure 1C, lane 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIRF microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "b392e409-b065-471f-a43c-77ee46c62e5c",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C28",
+      "claim": "Dynein-Lis1 and Bik1-Bim1-Kip2 interact in a manner dependent on Lis1 and the C-terminal region of Bik1.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that dynein-Lis1 and Bik1-Bim1-Kip2 each form sub-complexes, which in turn interact in a manner dependent on Lis1 and the C-terminal region of Bik1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that Bik1\u0394C cannot recruit dynein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "0c1f57b9-21f1-407b-89b7-a3d64cbef063",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C29",
+      "claim": "Dynein moved toward the minus end of the microtubule in the absence of Lis1, Bik1, and Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Lis1, Bik1, and Bim1, dynein moved toward the minus end of the microtubule, and Kip2 moved toward the plus end, as expected (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dynamic microtubule assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "7b6ad241-2edc-4623-bdbf-a9fc1f9f8b54",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C30",
+      "claim": "Kip2 moved toward the plus end of the microtubule in the absence of Lis1, Bik1, and Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Lis1, Bik1, and Bim1, dynein moved toward the minus end of the microtubule, and Kip2 moved toward the plus end, as expected (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dynamic microtubule assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "30c71235-27a3-4f1b-ba50-cfe95ce6285d",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C31",
+      "claim": "Dynein has the intrinsic ability to track dynamic microtubule minus ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, upon reaching the minus end of the microtubule, dynein accumulated at, and moved with, the slowly growing end of the polymer (Figure 2B). Dynein showed the same behavior in the absence of Kip2, indicating that dynein has the intrinsic ability to track dynamic microtubule minus ends.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dynamic microtubule assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "a98b21dc-d06b-4d17-971f-399a48bf4d79",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C32",
+      "claim": "In the presence of Lis1, Bik1, Bim1 and Kip2, the large majority of dynein movements along the body of the microtubule were directed to the plus end.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in the presence of Lis1, Bik1, Bim1 and Kip2, the large majority of dynein movements along the body of the microtubule were directed to the plus end (Figure 2C, lane 1) (90 \u00b1 3%; proportion \u00b1 SE, N = 122).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dynamic microtubule assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "4c207dc2-9cd9-40cc-a9b5-aaf0c9fba55e",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C33",
+      "claim": "On 63 \u00b1 7% of microtubules, dynein was present at the growing plus end itself in the presence of Lis1, Bik1, Bim1 and Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, on 63 \u00b1 7% of microtubules, dynein was present at the growing plus end itself (Figure 2\u2014figure supplement 1), reminiscent of dynein localization in living yeast cells (Lee et al., 2003; Sheeman et al., 2003; Markus et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dynamic microtubule assay data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "b12bf100-7c32-44d2-bb0e-120644a4da8f",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C34",
+      "claim": "A system of four proteins (Lis1, Bik1, Bim1, and Kip2) is sufficient to strongly bias dynein's movement toward the microtubule plus end.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that a system of four proteins (Lis1, Bik1, Bim1, and Kip2) is sufficient to strongly bias dynein's movement toward the microtubule plus end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the reconstitution experiments with purified proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "4bd7c464-bcae-4bf8-8f87-7c94bee5b3c4",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C35",
+      "claim": "Dynein's plus-end-directed motion depended strictly on Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein's plus-end-directed motion depended strictly on Kip2 (Figure 2C, lane 5), but was slower than that of free Kip2 (Figure 2\u2014figure supplement 2), leading us to hypothesize that dynein might have the capacity to resist its own transport to the plus end.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dynamic microtubule assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "69661a40-65ad-413f-b736-847194716df6",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C36",
+      "claim": "Dynein's plus-end-directed motion was slower than that of free Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynein's plus-end-directed motion depended strictly on Kip2 (Figure 2C, lane 5), but was slower than that of free Kip2 (Figure 2\u2014figure supplement 2), leading us to hypothesize that dynein might have the capacity to resist its own transport to the plus end.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by velocity measurements shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6bc014d0-6b6f-40b0-8ef2-017cb794d538",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C37",
+      "claim": "The plus-end velocity of the weak-binding dynein was increased relative to the wild-type protein, becoming close to that of Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the plus-end velocity of the weak-binding dynein was increased relative to the wild-type protein, becoming close to that of Kip2 (Figure 2C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by velocity measurements shown in Figure 2C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "96262b87-05af-4caf-bc48-a06b0f711c8d",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C38",
+      "claim": "The weak-binding dynein showed strong accumulation at the plus end of the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the weak-binding dynein also showed strong accumulation at the plus end of the microtubule (Figure 2C, lane 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dynamic microtubule assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "082b1a34-17b0-4268-8aaf-a39150104ec8",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C39",
+      "claim": "Wild-type dynein is not a passive passenger during its plus-end-directed transport.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that wild-type dynein is not a passive passenger during its plus-end-directed transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that weakening dynein's microtubule affinity increases its plus-end velocity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "f0b7837a-5f46-418d-b6bd-90742589c2a3",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C40",
+      "claim": "Wild-type dynein and Kip2 have the potential to engage simultaneously with the microtubule in a 'tug-of-war'-like mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the data support a model in which wild-type dynein and Kip2 have the potential to engage simultaneously with the microtubule in a 'tug-of-war'-like mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the velocity data showing that dynein can resist its transport by Kip2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "b4052be5-adaf-45d3-a52d-d4bc7c8eae99",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C41",
+      "claim": "Weak dynein construct frequently localized with Kip2 midway through a run, and dissociated before its end.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the dynein construct frequently localized with Kip2 midway through a run, and dissociated before its end, consistent with transient binding as indicated by our biochemical experiments (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by colocalization experiments shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "7244937a-04d1-45b5-8330-ccd2c1eb2bdb",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C42",
+      "claim": "The movement of dynein toward the plus end is driven directly by Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the movement of dynein toward the plus end is driven directly by Kip2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from colocalization data showing dynein and Kip2 moving together.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "c25c53ea-f514-4560-a0c4-52daf63a677a",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C43",
+      "claim": "Lis1 and Bik1 are critical for dynein's plus-end-directed movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Lis1 and Bik1 were critical for dynein's plus-end-directed movement (Figure 2C, lanes 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dropout experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "873f12de-f0e3-494e-8b2b-aef11f5942bc",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C44",
+      "claim": "In the absence of Lis1 or Bik1, dynein moved to the minus end of the microtubule, despite the continued movement of Kip2 to the plus end.",
+      "claim_type": "EXPLICIT",
+      "source": "In their absence, dynein moved to the minus end of the microtubule, despite the continued movement of Kip2 to the plus end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by dropout experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "e6a72c8b-ac9e-44d6-806e-b83209de7aa4",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C45",
+      "claim": "Lis1 and Bik1 are required to connect dynein to Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Lis1 and Bik1 are required to connect dynein to Kip2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dynein moves to the minus end in the absence of Lis1 or Bik1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "abec0cb4-0b27-467a-b053-2ee1aa0bc0a9",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C46",
+      "claim": "Omitting Kip2 abolished dynein's plus-end-directed movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Omitting Kip2 abolished dynein's plus-end-directed movement, showing that the pathway we have reconstituted is kinesin dependent (Figure 2C, lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dropout experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "660ddfcf-3b5d-4a28-bf2b-949ccce386a8",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C47",
+      "claim": "Removal of Kip2 increased the frequency of microtubule catastrophes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, removal of Kip2 also increased the frequency of microtubule catastrophes (the conversion from growth to shrinkage; Figure 2C, arrows), consistent with the short microtubule phenotype caused by Kip2 deletion in vivo (Cottingham and Hoyt, 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dynamic microtubule assay data shown in Figure 2C and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "e21c7a69-18f1-477d-b8e9-cc2e17add6ae",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C48",
+      "claim": "In the absence of Bim1, dynein could still be transported to the plus end, but the fraction of plus- vs minus-end-directed dynein movements was roughly balanced.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed an unexpected influence of Bim1 (Figure 2C, lane 6). In the absence of Bim1, dynein could still be transported to the plus end, but the fraction of plus- vs minus-end-directed dynein movements was roughly balanced (47 vs 53 \u00b1 5%, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dropout experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "49e3da01-1f8f-4229-b812-68e941e8802f",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C49",
+      "claim": "Lis1, Bik1 and Kip2 constitute the minimal machinery for transporting dynein to the plus end.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Lis1, Bik1 and Kip2 constitute the minimal machinery for transporting dynein to the plus end, and Bim1 can regulate this machinery to increase the fraction of dynein movements that are directed to the plus end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the dropout experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "8cbf2817-f373-4c1b-ae23-e8011c0f09b6",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C50",
+      "claim": "Bim1 can regulate the dynein transport machinery to increase the fraction of dynein movements that are directed to the plus end.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Lis1, Bik1 and Kip2 constitute the minimal machinery for transporting dynein to the plus end, and Bim1 can regulate this machinery to increase the fraction of dynein movements that are directed to the plus end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the dropout experiments showing Bim1's effect on directionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "0a8ebd0d-e1f0-4db9-a0b2-c5263066a739",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C51",
+      "claim": "There is an SxIP motif within an extension N-terminal to the kinesin motor domain of Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, analysis of the Kip2 amino acid sequence revealed that there is an SxIP motif within an extension N-terminal to the kinesin motor domain (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis of Kip2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "ce35f2a8-2dd0-4eab-903d-d0b0505b5b3d",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C52",
+      "claim": "The SxIP motif is a signature sequence that interacts with EB-family proteins such as Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "The SxIP motif is a signature sequence that interacts with EB-family proteins such as Bim1 (Honnappa et al., 2009), suggesting that Bim1 may interact with Kip2 through this motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work on SxIP motifs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "0187130a-2a9d-4029-a42c-ad5f84283fae",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C53",
+      "claim": "Bim1 binds to the Cap-Gly domain of Bik1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bim1 also binds to the Cap-Gly domain of Bik1 (Blake-Hodek et al., 2010) and the microtubule lattice (Zimniak et al., 2009), while Bik1's coiled coil is thought to interact with Kip2 (Newman et al., 2000; Carvalho et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "85b930dd-4bae-49db-b037-4a8c558d2e8c",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C54",
+      "claim": "Bim1 binds to the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Bim1 also binds to the Cap-Gly domain of Bik1 (Blake-Hodek et al., 2010) and the microtubule lattice (Zimniak et al., 2009), while Bik1's coiled coil is thought to interact with Kip2 (Newman et al., 2000; Carvalho et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "a958fa57-387e-437c-a72d-d77219c0db5b",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C55",
+      "claim": "Bik1's coiled coil is thought to interact with Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Bim1 also binds to the Cap-Gly domain of Bik1 (Blake-Hodek et al., 2010) and the microtubule lattice (Zimniak et al., 2009), while Bik1's coiled coil is thought to interact with Kip2 (Newman et al., 2000; Carvalho et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "14d627a0-b32e-4d0f-a51f-8a3f302b6b17",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C56",
+      "claim": "In the absence of regulators, the average distance traveled by Kip2 per microtubule encounter was 1.2 \u00b1 0.1 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of regulators, the average distance traveled by Kip2 per microtubule encounter was 1.2 \u00b1 0.1 \u03bcm (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by single-molecule motility assays shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "853b9284-801b-4570-bbc6-185007ab94c7",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C57",
+      "claim": "The addition of Bik1 or Bim1 individually had minor effects on Kip2 run length.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of Bik1 or Bim1 individually had minor effects on Kip2 run length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by single-molecule motility assays shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "29d04a58-92a0-49ce-9149-f441428794a4",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C58",
+      "claim": "In the presence of both Bik1 and Bim1, the run length of Kip2 increased fourfold, to 4.8 \u00b1 0.3 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the presence of both Bik1 and Bim1, the run length of Kip2 increased fourfold, to 4.8 \u00b1 0.3 \u03bcm (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by single-molecule motility assays shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "c85677a0-1da0-4bea-8d9f-67ea84c94a4b",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C59",
+      "claim": "There was a small decrease in Kip2 velocity in the presence of both Bik1 and Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, there was a small decrease in Kip2 velocity, while the Kip2 copy number (judged by fluorescence intensity per spot) was unchanged (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by velocity measurements shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "c3779558-d676-4b32-8226-83b8669445cd",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C60",
+      "claim": "The Kip2 copy number (judged by fluorescence intensity per spot) was unchanged in the presence of both Bik1 and Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, there was a small decrease in Kip2 velocity, while the Kip2 copy number (judged by fluorescence intensity per spot) was unchanged (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by fluorescence intensity measurements shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "bbf0ba02-9e51-4b7a-bc52-f5fda5ce9e65",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C61",
+      "claim": "Bik1 and Bim1 had minimal effects on dynein motility.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were specific to Kip2: Bik1 and Bim1 had minimal effects on dynein motility (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by motility assays shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "b63807bf-0f81-413c-9319-2043df2732ec",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C62",
+      "claim": "Bik1 and Bim1 increase the on-rate and reduce the off-rate of Kip2's microtubule encounters.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Kip2 landing events and run durations revealed that Bik1 and Bim1 increase the on-rate and reduce the off-rate of Kip2's microtubule encounters (Figure 3\u2014figure supplement 2), indicating that these factors augment Kip2's microtubule affinity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analysis of landing events and run durations shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "b1c767c3-e4f4-4c9f-89b9-164b9d216d93",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C63",
+      "claim": "Bik1 and Bim1 augment Kip2's microtubule affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Kip2 landing events and run durations revealed that Bik1 and Bim1 increase the on-rate and reduce the off-rate of Kip2's microtubule encounters (Figure 3\u2014figure supplement 2), indicating that these factors augment Kip2's microtubule affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Bik1 and Bim1 increase on-rate and reduce off-rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "2a3726dc-d7ce-4557-a057-0e8084a7cc95",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C64",
+      "claim": "Bik1 and Bim1 together act as processivity factors for Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we conclude that Bik1 and Bim1 together act as processivity factors for Kip2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the motility data showing increased run length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "8d507256-75ee-4f9e-b64b-bbfa89b7677f",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C65",
+      "claim": "The large majority (80 \u00b1 2%; mean \u00b1 SEM) of dynein/Kip2-chassis movements on the microtubule were in the minus-end (dynein) direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this regime, the large majority (80 \u00b1 2%; mean \u00b1 SEM) of dynein/Kip2-chassis movements on the microtubule were in the minus-end (dynein) direction, as visualized by the incorporation of fluorescently labeled DNA strands (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by DNA origami chassis experiments shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "34257ec8-3cb0-4020-b39e-d48a45bcbb4d",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C66",
+      "claim": "Chassis-coupled motors were in a tug-of-war: both minus- and plus-end-directed runs exhibited reduced velocity compared to single-motor chassis.",
+      "claim_type": "EXPLICIT",
+      "source": "Velocity analysis indicated that the chassis-coupled motors were in a tug-of-war: both minus- and plus-end-directed runs exhibited reduced velocity compared to single-motor chassis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by velocity analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "ead2445d-676f-4cce-8700-93ea95f06674",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C67",
+      "claim": "The addition of either Bik1 or Bim1 alone had a modest effect on the motility of the dynein/Kip2-chassis complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of either Bik1 or Bim1 alone had a modest effect on the motility of the dynein/Kip2-chassis complex: the fraction of minus- and plus-end-directed runs was changed little (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by DNA origami chassis experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "9dbd2a9c-6b3d-408a-becf-3bbec61f381b",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C68",
+      "claim": "Inclusion of Bik1 and Bim1 together caused the fraction of plus-end-directed runs to markedly increase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, inclusion of Bik1 and Bim1 together caused the fraction of plus-end-directed runs to markedly increase (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by DNA origami chassis experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "09d797ec-8aac-4857-ae1d-4752b807fe90",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C69",
+      "claim": "In the presence of Bik1 and Bim1, the dynein/Kip2-chassis underwent switches in direction during a run (10 \u00b1 1% of events).",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, the dynein/Kip2-chassis also underwent switches in direction during a run (Figure 4B; orange trace; 10 \u00b1 1% of events).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by DNA origami chassis experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "ed7177f9-a10f-4fdc-9444-1befd2882169",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C70",
+      "claim": "Regulatory proteins can tune the outcome of a tug-of-war between dynein and the kinesin Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that regulatory proteins can tune the outcome of a tug-of-war between dynein and the kinesin Kip2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the DNA origami chassis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "f3fa4ca9-57cf-432c-bee9-de37dc21c7ad",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C71",
+      "claim": "The connection between dynein and Kip2 is capable of bearing load on the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "This connection is capable of bearing load on the microtubule, but is not stable enough to be observed by size-exclusion chromatography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the tug-of-war experiments and the lack of stable complex formation in solution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6d76e87b-2359-4e62-a75c-39645482a21b",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C72",
+      "claim": "The connection between dynein and Kip2 is not stable enough to be observed by size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "This connection is capable of bearing load on the microtubule, but is not stable enough to be observed by size-exclusion chromatography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the size-exclusion chromatography data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "c975c30b-28ca-4f76-b909-769facb5ce8a",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C73",
+      "claim": "A high off-rate between dynein and Kip2 might allow for dynamic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case for interactions found in other self-organizing systems (Kirschner et al., 2000), a high off-rate between dynein and Kip2 might allow for dynamic regulation, for example enabling dynein to readily detach from Kip2 following targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed transient interaction and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "813ec7a5-ae09-4237-9908-0b0e071a3a93",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C74",
+      "claim": "The timescale of dynein 'offloading' from the microtubule plus end onto its receptor on the cell cortex is on the order of seconds in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in vivo, the timescale of dynein 'offloading' from the microtubule plus end onto its receptor on the cell cortex is on the order of seconds (Markus and Lee, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "3ea0c6ba-33a5-4f5d-8deb-51c0716d0eac",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C75",
+      "claim": "Lis1's \u00df-propeller domain binds to the AAA4 subdomain of dynein's motor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Lis1's \u00df-propeller domain binds to the AAA4 subdomain of dynein's motor domain (Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "90144bc0-6f51-448c-a87b-26960c72f9a0",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C76",
+      "claim": "The dynein/Lis1 complex interacts dynamically with the C-terminal zinc-knuckle domain of Bik1/Clip170.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynein/Lis1 complex interacts dynamically with the C-terminal zinc-knuckle domain of Bik1/Clip170 (Coquelle et al., 2002; Sheeman et al., 2003; Lansbergen et al., 2004; Markus et al., 2011) as indicated by the double arrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "39f83f57-513c-4530-b981-3ce5c25811b4",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C77",
+      "claim": "The C-terminal tail of Bim1 likely interacts with the N-terminal Cap-Gly domain of Bik1.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted with dotted lines, it is likely that the C-terminal tail of Bim1 interacts with the N-terminal Cap-Gly domain of Bik1 (Weisbrich et al., 2007), and the cargo-binding domain of Bim1 interacts with the SxIP motif of Kip2 (Honnappa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "b6adfd4f-f8b8-4b76-96cf-4e948f851787",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C78",
+      "claim": "The cargo-binding domain of Bim1 likely interacts with the SxIP motif of Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted with dotted lines, it is likely that the C-terminal tail of Bim1 interacts with the N-terminal Cap-Gly domain of Bik1 (Weisbrich et al., 2007), and the cargo-binding domain of Bim1 interacts with the SxIP motif of Kip2 (Honnappa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "40d28368-51b9-4248-a04b-047b84d19de1",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C79",
+      "claim": "The calponin-homology domain of Bim1 is likely free to interact transiently with the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement would leave the calponin-homolgy domain of Bim1 (Slep and Vale, 2007) free to interact transiently with the microtubule lattice, and thus promote Kip2's microtubule association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proposed arrangement of interactions and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "08859c13-9f6d-4689-88a7-4b1bfed2fcfb",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C80",
+      "claim": "The SxIP motif of Kip2 is flanked by serine residues that can be phosphorylated.",
+      "claim_type": "EXPLICIT",
+      "source": "The SxIP motif is flanked by serine residues (blue) that can be phosphorylated (Holt et al., 2009; Bodenmiller et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "32323dd6-c0f6-4575-b44f-5fdfced274a6",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C81",
+      "claim": "The addition and removal of phosphate groups on the N-terminal extension of Kip2's motor domain has the potential to influence its interaction with Bim1.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the addition and removal of phosphate groups on the N-terminal extension of Kip2's motor domain has the potential to influence its interaction with Bim1 (Figure 3A; Honnappa et al., 2009), as well as the negatively charged microtubule surface, both of which could impact Kip2 motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the presence of phosphorylation sites and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6d53d694-0f11-4858-ac6b-cfe70bbc624f",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C82",
+      "claim": "The high local concentration of Lis1 at plus ends in S. cerevisiae may help retain dynein by prolonging its microtubule attachments.",
+      "claim_type": "EXPLICIT",
+      "source": "Once dynein reaches the plus end, the high local concentration of Lis1 at plus ends in S. cerevisiae (Markus et al., 2011) may help retain dynein by prolonging its microtubule attachments (Huang et al., 2012; McKenney et al., 2010; Yamada et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "e2d98f09-a1fd-475d-8812-2a696c439f12",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C83",
+      "claim": "Nudel may promote dynein plus-end targeting by tethering Lis1 to dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Nudel, a Lis1 and dynein binding partner, may also promote dynein plus-end targeting by tethering Lis1 to dynein (Li et al., 2005; McKenney et al., 2010; Wang and Zheng, 2011; Zylkiewicz et al., 2011; Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "5cfb67c2-4535-4d42-a035-2caf28bcdcd5",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C84",
+      "claim": "Genetic studies indicate there is a second pathway for targeting dynein directly from the cytoplasm to the plus end that does not require Kip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, genetic studies indicate there is a second pathway for targeting dynein directly from the cytoplasm to the plus end that does not require Kip2 (Caudron et al., 2008; Markus et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "90874c71-fcb0-4119-bf15-c2e4490c5023",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C85",
+      "claim": "Overlap between dynein targeting pathways in vivo may explain why Bim1's capacity to regulate dynein plus-end transport was previously hidden.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap between these pathways in vivo may explain why Bim1's capacity to regulate dynein plus-end transport was previously hidden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the existence of multiple pathways.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6ecfe0a9-cc20-47cf-9803-42206fbc5dfe",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C86",
+      "claim": "The dynein construct used lacks the cargo-binding tail, which is dispensable for plus-end targeting in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynein construct lacks the cargo-binding tail, which is dispensable for plus-end targeting in vivo (Markus et al., 2009), and is dimerized by GST to yield a motor with highly-similar motile properties to full-length dynein (Reck-Peterson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "e8ee9b3b-242e-4c71-80e7-ac6a838a2630",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "claim_id": "C87",
+      "claim": "The GST-dynein331 kDa construct is dimerized by GST to yield a motor with highly-similar motile properties to full-length dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynein construct lacks the cargo-binding tail, which is dispensable for plus-end targeting in vivo (Markus et al., 2009), and is dimerized by GST to yield a motor with highly-similar motile properties to full-length dynein (Reck-Peterson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9fbf7e8c-9bc4-4260-af37-43d1bd98e9c5",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Dynein-Lis1 and Bik1-Bim1-Kip2 form stable sub-complexes in solution that can be detected by size-exclusion chromatography, but these two sub-complexes do not stably associate with each other in solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C16, C19, and C20 are directly supported by size-exclusion chromatography data shown in Figure 1B. The data clearly demonstrate that dynein-Lis1 co-elute as a complex, Bik1-Bim1-Kip2 co-elute as a ternary complex, but when all five proteins are mixed, they elute as separate sub-complexes rather than one large assembly. This is a well-controlled biochemical experiment with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "53f3244e-3b95-4efd-aefe-df711f3ac0e5",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bim1 binds with higher affinity to the Kip2-Bik1 complex than to Kip2 alone, as evidenced by the lack of co-elution between Kip2 and Bim1 in the absence of Bik1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C18 are supported by size-exclusion chromatography data in Figure 1\u2014figure supplement 1. The observation that Kip2 and Bim1 do not co-elute as a stable complex in pairwise mixtures, but do co-elute when Bik1 is present, provides direct evidence for the inference that Bim1 has higher affinity for the Kip2-Bik1 complex. The logic is sound and the data are clear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "c5680d40-d402-4b0b-afc3-4951bfe80e61",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Weak-binding dynein can be recruited to microtubules by Lis1, Bik1, Kip2, and Bim1, and this recruitment depends strictly on Lis1 and the C-terminal region of Bik1, suggesting that dynein-Lis1 and Bik1-Bim1-Kip2 interact in a manner dependent on these domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24, C26-C28 are well-supported by the microtubule recruitment assay data in Figure 1C. The experiments systematically test the requirement for each component and show that wild-type dynein binds strongly to microtubules, the weak-binding mutant does not, but the mutant can be recruited by the four-protein system. The deletion of Bik1's C-terminal region abolishes recruitment, providing strong evidence for the proposed interaction mechanism. The controls are appropriate and the logic is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "3f9e9a11-8754-470e-a674-e1d28a7d46f9",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the absence of Lis1, Bik1, and Bim1, dynein moves toward the minus end and Kip2 moves toward the plus end of dynamic microtubules, and dynein has the intrinsic ability to track dynamic microtubule minus ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by dynamic microtubule assay data in Figure 2B. The kymographs clearly show minus-end-directed dynein movement and plus-end-directed Kip2 movement. The observation that dynein accumulates at and tracks the growing minus end is a novel finding that is well-documented in the data. The experiments are properly controlled and the imaging is clear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "2f1db118-51d4-4c32-9358-ee1ee01e5dc0",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the presence of Lis1, Bik1, Bim1, and Kip2, 90% of dynein movements are directed to the plus end, and dynein is present at the growing plus end on 63% of microtubules, demonstrating that these four proteins are sufficient to strongly bias dynein's movement toward the microtubule plus end.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are strongly supported by quantitative data from dynamic microtubule assays shown in Figure 2C and Figure 2\u2014figure supplement 1. The authors provide specific percentages with error estimates (90 \u00b1 3% plus-end-directed, N=122; 63 \u00b1 7% at plus ends) and show representative kymographs. This is a key finding of the paper and is well-supported by the data. Sample sizes are adequate and the measurements are clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6a2404e4-d237-48cd-a095-2931a32313a8",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dynein's plus-end-directed motion depends on Kip2 but is slower than free Kip2, and weakening dynein's microtubule affinity increases its plus-end velocity to approach that of Kip2, indicating that wild-type dynein resists its own transport through a 'tug-of-war'-like mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 are well-supported by velocity measurements in Figure 2C and Figure 2\u2014figure supplement 2. The key observation that the weak-binding dynein mutant moves faster toward the plus end than wild-type dynein provides strong evidence for the tug-of-war model. The logic is sound: if dynein were a passive passenger, weakening its microtubule binding should not increase velocity. The data are quantitative and the inference is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "00aa81a6-a75e-4b0d-ab23-bd89c82cf67b",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The weak dynein construct frequently colocalizes with Kip2 midway through a run and dissociates before its end, suggesting that dynein's plus-end-directed movement is driven directly by Kip2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C42 are supported by colocalization data in Figure 2\u2014figure supplement 3. The observation of transient colocalization between dynein and Kip2 during plus-end-directed runs provides direct evidence that Kip2 drives dynein transport. The transient nature of the interaction is consistent with the biochemical data showing no stable complex formation in solution. The inference is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "99b2c7a8-ef4b-4ba8-a9c8-4397b152d2e9",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lis1 and Bik1 are critical for dynein's plus-end-directed movement and are required to connect dynein to Kip2, as demonstrated by dropout experiments showing that dynein moves to the minus end in their absence despite continued plus-end movement of Kip2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are strongly supported by systematic dropout experiments shown in Figure 2C. The data clearly show that removing Lis1, Bik1, or Kip2 abolishes plus-end-directed dynein movement, while Kip2 continues to move to the plus end in the absence of Lis1 or Bik1. This provides strong evidence that Lis1 and Bik1 are essential for coupling dynein to Kip2. The experimental design is rigorous and the conclusions are well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "d139ba75-4512-49a7-b179-b076f909c5f6",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Removal of Kip2 increases the frequency of microtubule catastrophes, consistent with the short microtubule phenotype caused by Kip2 deletion in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by observations in Figure 2C (arrows marking catastrophe events) and is consistent with cited in vivo data. While this is a secondary observation, it provides validation that the in vitro system recapitulates known in vivo phenotypes. The observation is clear in the kymographs and is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "b29b9ab6-2819-498f-ba78-625a3caf124f",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In the absence of Bim1, dynein can still be transported to the plus end, but the fraction of plus- versus minus-end-directed movements is roughly balanced (47% vs 53%), demonstrating that Lis1, Bik1, and Kip2 constitute the minimal machinery for dynein transport, while Bim1 regulates this machinery to increase the efficiency of plus-end transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by dropout experiments in Figure 2C, lane 6. The quantitative data showing balanced directionality in the absence of Bim1 (47% vs 53% \u00b1 5%) provides clear evidence that Bim1 is not strictly required but enhances the efficiency of plus-end transport. This is an important finding that reveals the regulatory role of Bim1. The data are quantitative and the conclusions are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "df5695b8-47c9-49c3-b6a1-808734489468",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bik1 and Bim1 together act as processivity factors for Kip2, increasing its run length fourfold (from 1.2 \u00b1 0.1 \u03bcm to 4.8 \u00b1 0.3 \u03bcm) by increasing the on-rate and reducing the off-rate of Kip2's microtubule encounters, while having minimal effects on dynein motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C64 are strongly supported by single-molecule motility assays in Figure 3B-C and Figure 3\u2014figure supplement 1-2. The data show a clear and substantial (fourfold) increase in Kip2 run length when both Bik1 and Bim1 are present, with quantitative measurements of on-rates and off-rates. The specificity for Kip2 (minimal effects on dynein) strengthens the conclusion. The experiments are well-controlled, sample sizes are adequate (N=233-331), and the statistical analysis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "f5ffa377-b872-4843-92b9-7827c6bb1f95",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "When dynein and Kip2 are coupled via DNA origami chassis, they engage in a tug-of-war with 80% of movements in the minus-end direction, but the addition of both Bik1 and Bim1 markedly increases the fraction of plus-end-directed runs, demonstrating that regulatory proteins can tune the outcome of the tug-of-war.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 are well-supported by DNA origami chassis experiments in Figure 4B-C and Figure 4\u2014figure supplement 1. The use of DNA origami to synthetically couple the motors is an elegant approach that allows direct testing of the tug-of-war model independent of the natural coupling mechanism. The quantitative data showing changes in directionality with Bik1/Bim1 addition, along with velocity analysis confirming tug-of-war behavior, provide strong support for the conclusions. The experiments are well-designed with appropriate replicates (N=3 assembly reactions, 306-353 runs each).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "00538842-8d89-4ac6-830a-35f642bc4042",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The connection between dynein and Kip2 is capable of bearing load on the microtubule but is not stable enough to be observed by size-exclusion chromatography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71 and C72 are supported by the combination of tug-of-war data (showing load-bearing capacity) and size-exclusion chromatography data (showing no stable complex in solution). The inference that the connection can bear load is well-supported by the DNA origami chassis experiments and the observation of reduced velocities in both directions. The transient nature of the interaction is consistent with all the biochemical and motility data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "5ee0bcaa-dee4-48e5-8f9d-bc4994e7988f",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Kip2 from S. cerevisiae migrates as a doublet of bands corresponding to differently phosphorylated isoforms, as demonstrated by phosphatase treatment collapsing the doublet into a single band.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is directly supported by the phosphatase treatment experiment shown in Figure 1A inset. The observation that \u03bb phosphatase treatment collapses the doublet into a single band provides clear evidence that the doublet represents differently phosphorylated forms. This is a straightforward biochemical observation with appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "8a82839f-cb34-471a-be2a-2c7450c4752e",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Kip2 contains an SxIP motif that interacts with EB-family proteins like Bim1, and a network of interactions exists within the Bik1-Bim1-Kip2 complex involving Bim1 binding to Bik1's Cap-Gly domain and the microtubule lattice, and Bik1's coiled coil interacting with Kip2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by sequence analysis (C51) and multiple citations to previous structural and biochemical studies (C52-C55). While the authors do not directly test all these interactions, the cited literature provides strong support for these known interactions. The identification of the SxIP motif in Kip2 is a straightforward sequence analysis result shown in Figure 3A. The proposed network of interactions is consistent with the biochemical data showing ternary complex formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "6285f3dc-d59b-488e-8fe1-59498bbf38f3",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The high off-rate between dynein and Kip2 might allow for dynamic regulation, phosphorylation of Kip2's N-terminal extension has the potential to influence its interaction with Bim1, high local concentration of Lis1 at plus ends may help retain dynein, Nudel may promote dynein plus-end targeting, and overlap between targeting pathways may explain why Bim1's role was previously hidden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73, C81, C82, C83, and C85 are explicitly speculative (using words like 'might,' 'may,' 'has the potential'). While these are reasonable hypotheses based on the data and cited literature, they are not directly tested in this study. The speculation about phosphorylation (C81) is based on the observation of phosphorylated Kip2 and the presence of phosphorylation sites near the SxIP motif, but no functional experiments test this. These represent interesting future directions but are not supported by direct experimental evidence in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    },
+    {
+      "id": "553b9e11-bfdc-4ea2-82d3-720c24131553",
+      "content_id": "01c50b63-b126-4792-8af7-00b8f108a0d4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims about dynein function, plus-end targeting mechanisms, and protein interactions based on prior literature and general knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C13, C25, C74-C80, C84, C86-C87 are all supported by citations to previous work or represent established knowledge in the field. These provide important context for the current study but are not novel findings. The authors appropriately cite the relevant literature and these claims appear to accurately represent the cited work. These are essential for establishing the rationale and context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:50:56.548043Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cf3aac7b-f4d4-42c1-af83-8d9c288dbbaf",
+      "result_id": "9fbf7e8c-9bc4-4260-af37-43d1bd98e9c5"
+    },
+    {
+      "claim_id": "9124c073-23cd-4c99-b17c-e3b5cf214a2d",
+      "result_id": "9fbf7e8c-9bc4-4260-af37-43d1bd98e9c5"
+    },
+    {
+      "claim_id": "1af5711d-9b4c-4a08-8a0d-8c2e1990b96f",
+      "result_id": "9fbf7e8c-9bc4-4260-af37-43d1bd98e9c5"
+    },
+    {
+      "claim_id": "4046d116-f46c-4c15-9ae6-526da75328dc",
+      "result_id": "9fbf7e8c-9bc4-4260-af37-43d1bd98e9c5"
+    },
+    {
+      "claim_id": "ff9f96b7-15b0-4ef2-8c59-70c4c737467a",
+      "result_id": "53f3244e-3b95-4efd-aefe-df711f3ac0e5"
+    },
+    {
+      "claim_id": "a46a5408-52b1-4eba-84dc-169ed88398aa",
+      "result_id": "53f3244e-3b95-4efd-aefe-df711f3ac0e5"
+    },
+    {
+      "claim_id": "010cc959-13f6-4e0b-87c1-c677ce72940d",
+      "result_id": "c5680d40-d402-4b0b-afc3-4951bfe80e61"
+    },
+    {
+      "claim_id": "0ea1d58e-136f-4e84-b058-8a8e0998abed",
+      "result_id": "c5680d40-d402-4b0b-afc3-4951bfe80e61"
+    },
+    {
+      "claim_id": "29a03cba-2092-4b99-af23-94dce1d56934",
+      "result_id": "c5680d40-d402-4b0b-afc3-4951bfe80e61"
+    },
+    {
+      "claim_id": "6894ed4d-ca47-4574-8585-94d7eff172a2",
+      "result_id": "c5680d40-d402-4b0b-afc3-4951bfe80e61"
+    },
+    {
+      "claim_id": "6ba17daf-de89-433a-a1a2-706021f249a6",
+      "result_id": "c5680d40-d402-4b0b-afc3-4951bfe80e61"
+    },
+    {
+      "claim_id": "48e6ca23-2b40-4a21-a47f-f73d8196e3fd",
+      "result_id": "c5680d40-d402-4b0b-afc3-4951bfe80e61"
+    },
+    {
+      "claim_id": "b392e409-b065-471f-a43c-77ee46c62e5c",
+      "result_id": "c5680d40-d402-4b0b-afc3-4951bfe80e61"
+    },
+    {
+      "claim_id": "0c1f57b9-21f1-407b-89b7-a3d64cbef063",
+      "result_id": "3f9e9a11-8754-470e-a674-e1d28a7d46f9"
+    },
+    {
+      "claim_id": "7b6ad241-2edc-4623-bdbf-a9fc1f9f8b54",
+      "result_id": "3f9e9a11-8754-470e-a674-e1d28a7d46f9"
+    },
+    {
+      "claim_id": "30c71235-27a3-4f1b-ba50-cfe95ce6285d",
+      "result_id": "3f9e9a11-8754-470e-a674-e1d28a7d46f9"
+    },
+    {
+      "claim_id": "a98b21dc-d06b-4d17-971f-399a48bf4d79",
+      "result_id": "2f1db118-51d4-4c32-9358-ee1ee01e5dc0"
+    },
+    {
+      "claim_id": "4c207dc2-9cd9-40cc-a9b5-aaf0c9fba55e",
+      "result_id": "2f1db118-51d4-4c32-9358-ee1ee01e5dc0"
+    },
+    {
+      "claim_id": "b12bf100-7c32-44d2-bb0e-120644a4da8f",
+      "result_id": "2f1db118-51d4-4c32-9358-ee1ee01e5dc0"
+    },
+    {
+      "claim_id": "4bd7c464-bcae-4bf8-8f87-7c94bee5b3c4",
+      "result_id": "6a2404e4-d237-48cd-a095-2931a32313a8"
+    },
+    {
+      "claim_id": "69661a40-65ad-413f-b736-847194716df6",
+      "result_id": "6a2404e4-d237-48cd-a095-2931a32313a8"
+    },
+    {
+      "claim_id": "6bc014d0-6b6f-40b0-8ef2-017cb794d538",
+      "result_id": "6a2404e4-d237-48cd-a095-2931a32313a8"
+    },
+    {
+      "claim_id": "96262b87-05af-4caf-bc48-a06b0f711c8d",
+      "result_id": "6a2404e4-d237-48cd-a095-2931a32313a8"
+    },
+    {
+      "claim_id": "082b1a34-17b0-4268-8aaf-a39150104ec8",
+      "result_id": "6a2404e4-d237-48cd-a095-2931a32313a8"
+    },
+    {
+      "claim_id": "f0b7837a-5f46-418d-b6bd-90742589c2a3",
+      "result_id": "6a2404e4-d237-48cd-a095-2931a32313a8"
+    },
+    {
+      "claim_id": "b4052be5-adaf-45d3-a52d-d4bc7c8eae99",
+      "result_id": "00aa81a6-a75e-4b0d-ab23-bd89c82cf67b"
+    },
+    {
+      "claim_id": "7244937a-04d1-45b5-8330-ccd2c1eb2bdb",
+      "result_id": "00aa81a6-a75e-4b0d-ab23-bd89c82cf67b"
+    },
+    {
+      "claim_id": "c25c53ea-f514-4560-a0c4-52daf63a677a",
+      "result_id": "99b2c7a8-ef4b-4ba8-a9c8-4397b152d2e9"
+    },
+    {
+      "claim_id": "873f12de-f0e3-494e-8b2b-aef11f5942bc",
+      "result_id": "99b2c7a8-ef4b-4ba8-a9c8-4397b152d2e9"
+    },
+    {
+      "claim_id": "e6a72c8b-ac9e-44d6-806e-b83209de7aa4",
+      "result_id": "99b2c7a8-ef4b-4ba8-a9c8-4397b152d2e9"
+    },
+    {
+      "claim_id": "abec0cb4-0b27-467a-b053-2ee1aa0bc0a9",
+      "result_id": "99b2c7a8-ef4b-4ba8-a9c8-4397b152d2e9"
+    },
+    {
+      "claim_id": "660ddfcf-3b5d-4a28-bf2b-949ccce386a8",
+      "result_id": "d139ba75-4512-49a7-b179-b076f909c5f6"
+    },
+    {
+      "claim_id": "e21c7a69-18f1-477d-b8e9-cc2e17add6ae",
+      "result_id": "b29b9ab6-2819-498f-ba78-625a3caf124f"
+    },
+    {
+      "claim_id": "49e3da01-1f8f-4229-b812-68e941e8802f",
+      "result_id": "b29b9ab6-2819-498f-ba78-625a3caf124f"
+    },
+    {
+      "claim_id": "8cbf2817-f373-4c1b-ae23-e8011c0f09b6",
+      "result_id": "b29b9ab6-2819-498f-ba78-625a3caf124f"
+    },
+    {
+      "claim_id": "14d627a0-b32e-4d0f-a51f-8a3f302b6b17",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "853b9284-801b-4570-bbc6-185007ab94c7",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "29d04a58-92a0-49ce-9149-f441428794a4",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "c85677a0-1da0-4bea-8d9f-67ea84c94a4b",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "c3779558-d676-4b32-8226-83b8669445cd",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "bbf0ba02-9e51-4b7a-bc52-f5fda5ce9e65",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "b63807bf-0f81-413c-9319-2043df2732ec",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "b1c767c3-e4f4-4c9f-89b9-164b9d216d93",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "2a3726dc-d7ce-4557-a057-0e8084a7cc95",
+      "result_id": "df5695b8-47c9-49c3-b6a1-808734489468"
+    },
+    {
+      "claim_id": "8d507256-75ee-4f9e-b64b-bbfa89b7677f",
+      "result_id": "f5ffa377-b872-4843-92b9-7827c6bb1f95"
+    },
+    {
+      "claim_id": "34257ec8-3cb0-4020-b39e-d48a45bcbb4d",
+      "result_id": "f5ffa377-b872-4843-92b9-7827c6bb1f95"
+    },
+    {
+      "claim_id": "ead2445d-676f-4cce-8700-93ea95f06674",
+      "result_id": "f5ffa377-b872-4843-92b9-7827c6bb1f95"
+    },
+    {
+      "claim_id": "9dbd2a9c-6b3d-408a-becf-3bbec61f381b",
+      "result_id": "f5ffa377-b872-4843-92b9-7827c6bb1f95"
+    },
+    {
+      "claim_id": "09d797ec-8aac-4857-ae1d-4752b807fe90",
+      "result_id": "f5ffa377-b872-4843-92b9-7827c6bb1f95"
+    },
+    {
+      "claim_id": "ed7177f9-a10f-4fdc-9444-1befd2882169",
+      "result_id": "f5ffa377-b872-4843-92b9-7827c6bb1f95"
+    },
+    {
+      "claim_id": "f3fa4ca9-57cf-432c-bee9-de37dc21c7ad",
+      "result_id": "00538842-8d89-4ac6-830a-35f642bc4042"
+    },
+    {
+      "claim_id": "6d76e87b-2359-4e62-a75c-39645482a21b",
+      "result_id": "00538842-8d89-4ac6-830a-35f642bc4042"
+    },
+    {
+      "claim_id": "ce8b1196-b780-4fb5-8548-2a87408ddb43",
+      "result_id": "5ee0bcaa-dee4-48e5-8f9d-bc4994e7988f"
+    },
+    {
+      "claim_id": "0a8ebd0d-e1f0-4db9-a0b2-c5263066a739",
+      "result_id": "8a82839f-cb34-471a-be2a-2c7450c4752e"
+    },
+    {
+      "claim_id": "ce35f2a8-2dd0-4eab-903d-d0b0505b5b3d",
+      "result_id": "8a82839f-cb34-471a-be2a-2c7450c4752e"
+    },
+    {
+      "claim_id": "0187130a-2a9d-4029-a42c-ad5f84283fae",
+      "result_id": "8a82839f-cb34-471a-be2a-2c7450c4752e"
+    },
+    {
+      "claim_id": "85b930dd-4bae-49db-b037-4a8c558d2e8c",
+      "result_id": "8a82839f-cb34-471a-be2a-2c7450c4752e"
+    },
+    {
+      "claim_id": "a958fa57-387e-437c-a72d-d77219c0db5b",
+      "result_id": "8a82839f-cb34-471a-be2a-2c7450c4752e"
+    },
+    {
+      "claim_id": "c975c30b-28ca-4f76-b909-769facb5ce8a",
+      "result_id": "6285f3dc-d59b-488e-8fe1-59498bbf38f3"
+    },
+    {
+      "claim_id": "32323dd6-c0f6-4575-b44f-5fdfced274a6",
+      "result_id": "6285f3dc-d59b-488e-8fe1-59498bbf38f3"
+    },
+    {
+      "claim_id": "6d53d694-0f11-4858-ac6b-cfe70bbc624f",
+      "result_id": "6285f3dc-d59b-488e-8fe1-59498bbf38f3"
+    },
+    {
+      "claim_id": "e2d98f09-a1fd-475d-8812-2a696c439f12",
+      "result_id": "6285f3dc-d59b-488e-8fe1-59498bbf38f3"
+    },
+    {
+      "claim_id": "90874c71-fcb0-4119-bf15-c2e4490c5023",
+      "result_id": "6285f3dc-d59b-488e-8fe1-59498bbf38f3"
+    },
+    {
+      "claim_id": "5073ec00-1f5e-4351-ab39-ebe862fbdf1d",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "8d3fdc15-74a0-4448-bb0c-9ab1fb4f8723",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "70e864fd-b53e-4ef2-bbfe-efb8db5dc0ad",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "815008f5-5dc5-4971-a6d6-345cf01115ab",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "128c6acf-7f24-4bb2-936f-d262905392c6",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "e3b56064-727d-4aca-988b-5ba919f415d5",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "c13ca415-ad25-4ea4-9c21-b02e8943c850",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "68f57146-56e2-4db1-9c7f-6b7c11fc7f26",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "71f01d18-2103-422f-8b15-8257fc553ae8",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "1f9ba0ed-1afd-4c2f-9b50-3f3efce2384c",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "8dce8e25-9486-4255-aefe-85a8cc54589f",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "813ec7a5-ae09-4237-9908-0b0e071a3a93",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "3ea0c6ba-33a5-4f5d-8deb-51c0716d0eac",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "90144bc0-6f51-448c-a87b-26960c72f9a0",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "39f83f57-513c-4530-b981-3ce5c25811b4",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "b6adfd4f-f8b8-4b76-96cf-4e948f851787",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "40d28368-51b9-4248-a04b-047b84d19de1",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "08859c13-9f6d-4689-88a7-4b1bfed2fcfb",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "5cfb67c2-4535-4d42-a035-2caf28bcdcd5",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "6ecfe0a9-cc20-47cf-9803-42206fbc5dfe",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    },
+    {
+      "claim_id": "e8ee9b3b-242e-4c71-80e7-ac6a838a2630",
+      "result_id": "553b9e11-bfdc-4ea2-82d3-720c24131553"
+    }
+  ],
+  "comparisons": []
+}

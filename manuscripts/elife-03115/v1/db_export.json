@@ -1,0 +1,1955 @@
+{
+  "submission": {
+    "id": "b2b6041c-d6e9-4f54-be1e-e89d4d360ed8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:25:34.282165Z",
+    "updated_at": "2025-11-28T21:25:34.282165Z"
+  },
+  "content": [
+    {
+      "id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "submission_id": "b2b6041c-d6e9-4f54-be1e-e89d4d360ed8",
+      "content_type": "manuscript",
+      "content_text": "# A receptor-like kinase mutant with absent endodermal diffusion barrier displays selective nutrient homeostasis defects\n\n## Authors\n\n- Alexandre Pfister<sup>1</sup>\n- Marie Barberon<sup>1</sup>\n- Julien Alassimone<sup>1</sup>\n- Lothar Kalmbach<sup>1</sup>\n- Yuree Lee<sup>1</sup>\n- Joop EM Vermeer<sup>1</sup>\n- Misako Yamazaki<sup>1</sup>\n- Guowei Li<sup>2</sup>\n- Christophe Maurel<sup>2</sup>\n- Junpei Takano<sup>3</sup>\n- Takehiro Kamiya<sup>4</sup>\n- David E Salt<sup>4</sup>\n- Daniele Roppolo<sup>1</sup>\n- Niko Geldner<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Plant Molecular Biology University of Lausanne Lausanne Switzerland\n2. Biochimie et Physiologie Mol\u00e9culaire des Plantes CNRS/INRA/SupAgro/Universit\u00e9 Montpellier Montpellier France\n3. Research Faculty of Agriculture Hokkaido University Hokkaido Japan\n4. Institute of Biological and Environmental Sciences University of Aberdeen Aberdeen United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe endodermis represents the main barrier to extracellular diffusion in plant roots, and it is central to current models of plant nutrient uptake. Despite this, little is known about the genes setting up this endodermal barrier. In this study, we report the identification and characterization of a strong barrier mutant, schengen3 (sgn3). We observe a surprising ability of the mutant to maintain nutrient homeostasis, but demonstrate a major defect in maintaining sufficient levels of the macronutrient potassium. We show that SGN3/GASSHO1 is a receptor-like kinase that is necessary for localizing CASPARIAN STRIP DOMAIN PROTEINS (CASPs)\u2014major players of endodermal differentiation\u2014into an uninterrupted, ring-like domain. SGN3 appears to localize into a broader band, embedding growing CASP microdomains. The discovery of SGN3 strongly advances our ability to interrogate mechanisms of plant nutrient homeostasis and provides a novel actor for localized microdomain formation at the endodermal plasma membrane.\n\n## Introduction\n\nThe plant root is a highly selective filter that forages the soil environment for nutrients and water. Its function has been likened to that of an \u2018inverted gut\u2019, displaying a very similar dual role in uptake and protection (Waisel et al., 2002). Selectivity of roots is thought to crucially depend on the endodermis, an inner cell layer that surrounds the central vascular strand of the root and represents the main paracellular (apoplastic) transport barrier in young roots (Geldner, 2013). This apoplastic diffusion barrier is set up by the \u2018Casparian strips\u2019, lignin-like, hydrophobic impregnations of the primary cell wall that form a supracellular net-like structure around the central vasculature. In analogy to the tight junction of gut epithelia, this net-like arrangement provides a seal of the extracellular space, while still allowing for nutrient and water transport across outer and inner plasma membrane surfaces. The Casparian strip-bearing endodermis therefore represents an independent development of a polarized epithelium, evolved in the context of multi-cellular organisms with wall-bearing cells.\n\nLater during endodermal development, hydrophobic (cork-like) suberin lamellae form all around the endodermal surface. This protective suberization should eventually abolish direct transport across the endodermal plasma membrane, forcing symplastic passage through plasmodesmata from outer cell layers. Despite being a central, conserved feature of higher plants, nothing was known until recently about the factors that build and position the Casparian strip. This led to the frustrating situation of not being able to test the many supposed roles of the endodermis and its Casparian strip, because of an absence of specific mutants. Recent papers established that a family of previously undescribed four-transmembrane-span proteins, called CASPs, forms a central, ring-like membrane domain in the endodermis, called the Casparian strip membrane domain (CSD). This domain acts as a lateral diffusion barrier and separates the endodermal plasma membrane into two distinct polar domains (Roppolo et al., 2011; Alassimone et al., 2010). Upon localization, the CASPs show extreme stability and a lack of endocytosis or lateral diffusion. Moreover, CASPs show extensive pair-wise interactions and associate strongly with cell walls. Multiple knock-outs of CASP family members display strongly disorganized formation of Casparian strips, demonstrating their functional importance. It is thought that the CASPs act as scaffolds that spatially organize cell wall biosynthetic enzymes. CASP1 was shown to determine the subcellular localization of a secreted peroxidase, PER64 (Lee et al., 2013). In current models, the role of CASPs is to assemble a specific NADPH oxidase with peroxidases, leading to oxidation of mono-lignols and local polymerization of lignin. Lignin formation in vivo must implicate numerous other cell wall proteins and ENHANCED SUBERIN 1 (ESB1), a dirigent-like protein is a cell wall protein that has also been demonstrated to be crucial for the correct formation of Casparian strips (Hosmani et al., 2013).\n\nThese recent breakthroughs held the promise that we might finally be able to investigate the functional relevance of the Casparian strip through analysis of the different mutants obtained. This however, turned out to be more difficult than expected. Multiple mutants of the CASP family display interrupted Casparian strips in the beginning, but rather quickly deposit more cell wall material in a delocalized fashion, eventually sealing the apoplast. A very similar phenotype occurs in the esb1 mutant (Hosmani et al., 2013). Moreover, both mutants display an earlier and stronger production of suberin lamellae (esb1 was named based on this phenomenon). This makes it difficult to use these mutants for assessing the importance of Casparian strips, since the partial defect on Casparian strip formation will always be confounded with the effect of ectopic/enhanced production of suberin in the same cells. In the rbohf mutant, the Casparian strip defect is only partial and restricted to the young part of the root. Moreover, RBOHF has roles in many different aspects of plant development and it would be hard to distinguish what phenotype is directly caused by defects in Casparian strip formation (Lee et al., 2013).\n\nHere, we report the discovery of a novel Casparian strip mutant, schengen3 (sgn3). SGN3 encodes a receptor-like kinase with strong expression in the root endodermis. The SGN3 protein accumulates in the plasma membrane in a broad band within which the CSD forms. In its absence, only discontinuous patches of CASPs are observed. SGN3 loss-of-function leads to the strongest defects in Casparian strips known to date, with no indication of a compensatory upregulation of suberin, as seen for other mutants (Hosmani et al., 2013). Our analysis reveals a surprising capacity of the mutant to maintain homeostatic control in the absence of the major root diffusion barrier and challenges views according to which the root should lose its ability for selective nutrient uptake, because of a generalized, non-selective bypass of nutrients into the vasculature.\n\n## Results\n\n### An endodermis-enriched receptor-like kinase is necessary for Casparian strip formation\n\nIn a forward genetic, GUS-based screen for endodermal barrier mutants (Lee et al., 2013) (Alassimone et al., unpublished), we discovered one mutant, sgn3 that displayed a dramatic defect in endodermal barrier formation, as visualized by penetration of the apoplastic tracer propidium iodide (PI) into the stele along the entire length of the root. This resembled a phenotype of T-DNA insertion lines in an endodermis-enriched gene that we had analyzed in parallel (Figure 1A, Figure 1\u2014figure supplement 1A) (Birnbaum et al., 2003; Brady et al., 2007). Complementation analysis and sequencing confirmed that the causal mutation in sgn3-2 was an early stop codon in the open reading frame of At4g20140. SGN3 encodes for a leucine-rich-repeat receptor-like kinase (LRR-RLK) of subfamily XI that had previously been described as GASSHO1 (GSO1) (Figure 1B, Figure 1\u2014figure supplement 2, Figure 1\u2014source data 1) (Tsuwamoto et al., 2008). In the previous publication, this LRR-RLK was investigated because of embryonic expression of a putative ortholog in Brassica napus, but no single mutant phenotype was found. A phenotype was only observed when gso1 (sgn3) was combined with a mutant of its closest homolog, At5g44700 (named GSO2). This gso1 gso2 double mutant displayed a protodermal phenotype, characterized by a defective cuticle and fusion of cotyledons (Tsuwamoto et al., 2008). True leaves did not differ from wild type. In contrast to SGN3/GSO1, GSO2 was shown to be expressed only in shoots, but not in roots, explaining the exclusive root phenotype in the sgn3 single mutant that we report here and that had escaped detection earlier on. In order to investigate the cause of this phenotype, we investigated formation of the Casparian strip and found that it is still formed and correctly positioned, but that it is repeatedly interrupted, forming irregularly-sized \u2018holes\u2019 of several micrometer in length (Figure 1C, Figure 1\u2014figure supplement 1B). Suberin lamellae formation, by contrast, appeared at a position and in a manner very similar to wild type (Figure 1D,E, Figure 1\u2014figure supplement 1C,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig1-v1.jpg)\n\n**Figure 1.:** (A) Lack of endodermal diffusion barrier in sgn3-3 visualized by presence of propidium iodide (PI) in stele. (B) Diagram of the SGN3 protein showing the different domains, T-DNA insertion lines (indicated with triangles) and the ethyl methanesulfonate (EMS)-induced mutations (see also Figure 1\u2014figure supplement 2). (C) Surface view of Casparian strip, visualized by autofluorescence after clearing. Note discontinuous lignin deposition in sgn3-3. Pictures are maximum projections of confocal z-stacks. Arrowheads indicate discontinuities in sgn3. Spiral-like signal in WT is from deeper-lying xylem vessel. (D) Fluorol yellow staining of suberin lamellae deposition in sgn3-3 and WT. Pictures are overlays of transmitted light image (gray) with fluorescent signal from suberin dye (yellow). (E) Occurrence of suberin deposition along the root is not altered in sgn3-3. Suberin lamellae deposition was quantified considering three different zones: non-suberized zone, zone of patchy suberization, and zone of continuous suberization (n = 5, one representative experiment presented). (F) Surface view of CSD network visualized with CASP1-GFP expressed under CASP1 promoter showing the net-like structure with discontinuities in sgn3-3. Projections as in C. (G) Absence of a lateral diffusion barrier in sgn3-3 visualized with plasma membrane marker line CASP1::mCherry-SYP122 (intensity color coded). Confocal pictures were taken at the surface of an endodermal cell. Note the mutually exclusive localization with the CSD marker CASP1-GFP (green). Two right images are magnification of the two leftmost images. (H) Localization of the outer marker PDR6-Venus expressed under CASP1 promoter is still polar in sgn3-3. Pictures are median longitudinal sections of endodermal cells. Scale bars: A, C, F, G, H = 20 \u03bcm; D = 50 \u03bcm. ep, epidermis; co, cortex; en, endodermis; st, stele; LRR, Leucine-rich repeat.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Lack of endodermal diffusion barrier in sgn3-3 and sgn3-4 visualized by free diffusion of propidium iodide (PI) into stele. (B) Surface view of Casparian strips by autofluorescence after clearing shows discontinuous lignin deposition in sgn3-3 and sgn3-4. Pictures are maximum projections of confocal z-stacks. (C) Fluorol yellow staining in WT, sgn3-3, and sgn3-4. (D) Suberin deposition along the root is not altered in sgn3-3 and sgn3-4. Suberin lamellae deposition was quantified as in Figure 1E (n = 5, one representative experiment shown). (E) Surface view of CSD network visualized with CASP1-GFP, CASP2-GFP, CASP3-GFP, CASP4-mCherry, and CASP5-GFP under CASP1 promoter showing the discontinuous net-like structures in sgn3-3. Projections as in B. Scale bars: A, B, E, 20 \u03bcm; C, 50 \u03bcm. ep, epidermis; co, cortex; en, endodermis; st, stele.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Schematic of SGN3 genomic region showing the insertions sites of the three T-DNA mutants and the EMS mutants. sgn3-2 was found in a forward genetic, GUS-based screen (Alassimone et al., unpublished), sgn3-5 to sgn3-18 were found in additional forward genetic screen (Kalmbach et al., unpublished). sgn3-3, sgn3-4, and sgn3-19 are T-DNA insertion mutants in the first exon of SGN3.\n\n### The Casparian strip membrane domain and lateral diffusion barrier is defective in the sgn3 receptor-like kinase mutant\n\nWe asked whether the Casparian strip cell wall defect is caused by a defect in the formation of the CSD, or whether the function of SGN3 lies downstream of the CASPs, as has been demonstrated for the NADPH oxidase SGN4/RBOHF (Lee et al., 2013). In the sgn3 background, CASP1-GFP showed a pattern of interrupted patches that was strikingly similar to that of the Casparian strip itself. This suggests that it is the incorrect localization of the CASPs that causes the Casparian strip defects of the mutant (Figure 1F). Interestingly, in a novel forward genetic screen in which we scored directly for mutants with altered CASP1-GFP localization (Kalmbach et al., unpublished), we found 14 novel alleles of sgn3 (Figure 1B, Figure 1\u2014figure supplement 2, Figure 1\u2014source data 1). This suggests that SGN3 is one of the major non-redundant genes necessary for CASP localization in the Arabidopsis genome. We could show that not only CASP1-GFP, but all four other CASPs (CASP2-5) display identical defects in sgn3 (Figure 1\u2014figure supplement 1E).\n\nAn interrupted CSD should abolish the lateral diffusion barrier in the plasma membrane of endodermal cells that we had previously described (Alassimone et al., 2010). Indeed, a generic plasma membrane protein that is excluded from the CSD in wild type (Alassimone et al., 2010) (Figure 1G) shows a pattern of exclusion in the mutant that represents a perfect negative image to the CASP1-GFP islands (Figure 1G). This illustrates that the lateral diffusion barrier between inner and outer plasma membrane domain is absent in sgn3 mutants, but that the remaining CSD islands are still able to exclude other proteins. To our surprise, this defect did not affect the polar localization of PDR6, a transporter that localizes to the outer polar domain in the endodermis (Figure 1H). This indicates that a strict polarity in the endodermis can be maintained in the absence of a diffusion barrier, further supporting the notion that polarity of transmembrane proteins in plants might simply be maintained by generally low lateral diffusion, high rates of endocytosis, or both (Geldner, 2009).\n\n### CASP stability and cell wall attachment remain intact in the sgn3 mutant\n\nWe had shown previously that during endodermal differentiation, CASP1-GFP changes from a protein that displays endocytic cycling and lateral diffusion to one that is highly stable and immobile in the CSD (Roppolo et al., 2011). In this process, CASP1-GFP localization passes through a \u2018string of pearls\u2019 stage, in which individual islands or \u2018patches\u2019 of CASP1-GFP are aligned in a band before eventually fusing (Figure 2A). Comparison of 3D-time-lapse observations of endodermal differentiation revealed that sgn3 is not able to progress from this \u2018string of pearls\u2019 stage, but only undergoes partial fusion of individual islands, leading to CASP1-GFP patches of heterogenous size (Figure 2A). We further found by fluorescence recovery after photobleaching (FRAP) that these CASP1-GFP islands have similar stability and turnover as wild type (Figure 2B). Another feature of the CSD is its very strong adherence to the cell wall, leading to the long-described phenomenon of \u2018band plasmolysis\u2019 in endodermal cells (Kr\u00f6mer, 1903; Behrisch, 1926; Alassimone et al., 2010). The inability of the CASP1-GFP ring to retract from the Casparian strip upon plasmolysis (Figure 2\u2014figure supplement 1) allow for easy visualization of this phenomenon. This adhesion leads to greatly flattened, often fenestrated protoplasts, that looked very unlike the usual, rounded protoplasts of epidermal cells (Alassimone et al., 2010). sgn3 showed the very same inability of CASP1-GFP to retract from the strips, demonstrating that plasma membrane-to-cell wall attachment remains intact in the mutant (Figure 2\u2014figure supplement 1). We conclude that sgn3 does not cause a general defect in CASP1-GFP trafficking, polymerization or cell wall attachment, but rather a specific defect in the progression of already stable CASP islands towards a contiguous band.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig2-v1.jpg)\n\n**Figure 2.:** (A) 3D-confocal time lapse imaging of CASP1::CASP1-GFP in Col-0 and sgn3-3 background reveals problems with progression of CASP1-GFP localization in sgn3-3. Images show median and surface image of endodermal cells of the same root. Arrowhead indicates CSD, dotted box in sgn3-3 shows immobility of CSD islands. Time in hours. (B) Fluorescence recovery after photobleaching (FRAP) with pCASP1::CASP1\u2013GFP in WT (gray) and sgn3-3 (white). The fifth cell after the onset of CASP1 expression was used. Similar very low recoveries are observed in both genotypes after 15 min. n = 8 independent assays for each series, error bars = s.d. (C) SGN3 is expressed before the onset of CASP1 expression in the endodermis. Quantification was done using pSGN3::SGN3-mVenus and pCASP1::CASP1-GFP. The onset of expression corresponds to the first cell in the endodermis file with a clear fluorescent signal not visible in WT. n = 10. Error bars = s.d. (D) Localization of SGN3-mVenus under its own promoter in elongating endodermal cells. (E) In differentiated endodermal cells, SGN3-mVenus accumulates in the transversal and anticlinal sides of the plasma membrane, but is depleted from the CSD. Left panel shows a transition from a median (top) to a surface (bottom) view of an endodermal cell. Right panel shows a close-up of a median view with SGN3 surrounding the CSD. Arrowheads indicate the CSD. (F) Maximum projection of a z-stack showing the localization of SGN3 on both sides of the CSD. Note the CSD surrounded by two SGN3-mVenus \u2018lines\u2019 (white arrowheads). (G) Localization of SGN3-GFP under CASP1 promoter in the \u2018string of pearls\u2019 stage. SGN3 surrounds individual CSD patches preceding their fusion (left panel). Close-up showing the CSD patches (red arrowhead) surrounded by SGN3-GFP (right panel). (H) Schematic of SGN3 putative mode of action. The SGN3 kinase might promote addition of new CASP units to already formed CASP microdomains. Scale bars: A, G (left panel), 10 \u03bcm; D, E (left panel), F, 20 \u03bcm; E (right panel), G (right panel), 5 \u03bcm. Ep, epidermis; co, cortex; en, endodermis; st, stele.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The CSD highlighted by CASP1-GFP is still attached to the cell wall in sgn3-3 upon plasmolysis. Localization of the generic plasma membrane marker Cit-SYP122 expressed under CASP1 promoter in water and in 0.8 M mannitol (panel 1 and 2, respectively). CASP1-GFP network still attached to the cell wall upon plasmolysis both in WT (panel 3) and sgn3-3 (panel 4). Pictures were taken 15 endodermal cells after the onset of CASP1 expression. Scale bars: 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) C-terminal mVenus fusion with a 9.4-Kb genomic fragment including intron, 5\u2032UTR, and the upstream neighboring gene used to complement sgn3. (B) Complementation of the sgn3-3 PI phenotype in two independent T2 lines containing the pSGN3::SGN3-mVenus construct shown in A (n \u2265 10), no PI block was observed in sgn3-3.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Counting in Figure 2C (\u2018cells after the onset of elongation\u2019) was done as described in Alassimone et al. (2010). The onset of elongation was determined as the point where an endodermal cell in a median, longitudinal section reached a length more than twice its width. At this point, cells were counted in order to quantitate relative timing of expression between CASP1 and SGN3, as illustrated on the schematic.\n\n### SGN3 localizes to the plasma membrane and is expressed early during endodermal differentiation\n\nWe then generated lines of tagged SGN3 variants in order to investigate its expression and subcellular localization. Only a C-terminal mVenus fusion with a 9.4-kb genomic fragment containing intron, 5\u2032UTR, and the upstream neighboring gene, provided full complementation of the mutant phenotype, indicating functionality of the protein fusion and of its regulatory sequences (Figure 2\u2014figure supplement 2A,B). In transgenic lines of this construct, expression of SGN3 could be observed in endodermal cells shortly after the onset of elongation, preceding the onset of CASP1 expression (Figure 2C, Figure 2\u2014figure supplement 3). This is consistent with a function of SGN3 in establishing correct CASP1 localization. Initially, SGN3 could be found on all cell sides, but it then quickly accumulated in the transversal and anticlinal sides of the plasma membrane, yet became excluded from the CSD itself\u2014a hitherto unknown subcellular localization pattern (Figure 2D\u2013F). In 3D-reconstructions this leads to the appearance of a broader ring-like domain that flanks the more restricted, median CSD (Figure 2F). During the critical phase of CASP domain progression from isolated islands towards a fused ring\u2014at which the sgn3 phenotype becomes apparent\u2013SGN3 is seen to surround individual CASP islands on all sides (Figure 2G). Such localization would fit with a role of SGN3 in promoting fusion of growing CASP islands, such that an uninterrupted band can be formed (Figure 2H).\n\n### SGN3 is required for the enhanced suberin production of other Casparian strip-defective mutants\n\nIn order to establish the functional relationships between SGN3 and other previously characterized genes, we combined sgn3 with casp1 casp3 double and esb1 single mutants. ESB1 is an extracellular protein that localizes to the site of Casparian strip formation and whose absence causes a phenotype resembling that of sgn3 insofar as both the Casparian strip itself and CASP1-GFP are localized in interrupted bands (Hosmani et al., 2013). In contrast to sgn3, however, esb1 mutants additionally display increased, delocalized deposition of additional autofluorescent cell wall material as well as enhanced and earlier deposition of suberin (Hosmani et al., 2013). We found ESB1-mCherry in sgn3 to be both present and correctly localized, that is, specifically accumulating at the remaining CASP1-GFP islands (Figure 3A). Thus, ESB1 does not require SGN3 for its accumulation and localization and the Casparian strip discontinuities in esb1 and sgn3 might be caused by independent mechanisms. Consistently, we found that sgn3 esb1 double mutant formed less and/or smaller Casparian strip patches than each single mutant, indicating additivity of the two mutations in this common aspect of their phenotypes (Figure 3B,C). Intriguingly however, sgn3 esb1 double mutants neither display an increased or delocalized deposition of autofluorescent cell wall material, nor an enhanced and earlier formation of suberin. This indicates a full epistasis of sgn3 over esb1 for this phenotype (Figure 3B,D). The same epistatic relationship was found between sgn3 and casp1 casp3 double mutants (Figure 3B\u2013D). The enhanced and ectopic formation of autofluorescence and suberin is thought to be due to a feedback and crosstalk between cell wall components, connecting correct Casparian strip formation to the further deposition of lignin and suberin lamellae formation (Hosmani et al., 2013). The epistasis of sgn3 suggests that the perception/signaling that leads to enhanced autofluorescence and suberin formation in esb1 and casp1 casp3 is mediated by\u2014or at least requires\u2014the SGN3 receptor-like kinase.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig3-v1.jpg)\n\n**Figure 3.:** (A) ESB1-mCherry localizes to the CASP1-GFP microdomains in sgn3. ESB1-mCherry and CASP1-GFP are expressed under their own promoters. Pictures are maximum projections of confocal z-stacks. (B) Surface view of Casparian strip, visualized by autofluorescence after clearing. Top and bottom panels correspond to the early and late stages of endodermal differentiation, 15 and 30 cells after onset of elongation, respectively. When sgn3 is crossed to casp1 casp3 or esb1, note the additive effect of these mutants concerning the CS patches (quantified in C). Note also the absence of enhance/ectopic deposition of lignin in sgn3 esb1 and sgn3 casp1 casp3. Pictures are maximum projections as in A. Strong spiral-like signals are from protoxylem cells. (C) Quantification of Casparian strip presence shows an additive effect in sgn3 esb1 and sgn3 casp1 casp3. Casparian strips were quantified as the percentage of cell wall showing autofluorescence along a line of Casparian strip signal of a given length. n = 10. (D) sgn3 is epistatic to esb1 and casp1 casp3 for ectopic suberin deposition. 5-day-old seedlings were stained with Fluorol Yellow. Quantification was done as in Figure 1E. Bars represent the percentage for each zone along the root (n = 5, one representative experiment). C, Error bars = s.d., different letters indicate significant differences between genotypes, determined by analysis of variance (ANOVA) and Tukey test as post hoc analyses (p < 0.05). Scale bars: A, B, 10 \u00b5m. sgn3 is sgn3-3, esb1 is esb1-1, casp1 is casp1-1 and casp3 is casp3-1.\n\n### sgn3 growth phenotypes are extremely sensitive to environmental conditions\n\nConsidering the strength of the barrier phenotype of sgn3 and its inability to initiate potentially compensatory suberization, we were surprised to observe a rather mild growth phenotype of sgn3 under certain conditions (Figure 4A, Figure 4\u2014figure supplement 1A). Yet we noticed that sgn3 growth is extremely sensitive to changes in environmental conditions that are non-stressful to wild type (Figure 4A, Figure 4\u2014figure supplement 1A). We ensured that the endodermal barrier phenotype persisted in developed root systems of rosette stage plants both on soil and on hydroponics, thus excluding that the weak phenotype is caused by an eventual repair of the barrier in older plants (Figure 4\u2014figure supplement 1B). A systematic variation of day length, temperature, and light-intensity revealed that growth differences to wild type are more pronounced at higher temperature, as well as under long-day conditions (Figure 4B, Figure 4\u2014figure supplement 1C). In general, sensitivity of sgn3 to growth conditions is such that we observed everything from a near absence of phenotypes to severely dwarfed plants that did not reproduce when grown in different, standard growth chambers that all well supported wild type growth. We wanted to ascertain that the observed growth phenotypes of sgn3 are indeed caused by the Casparian strip defect in the roots and not by some hypothetical, non-redundant function of SGN3 in shoots. We therefore expressed SGN3 under the control of the CASP1 promoter that shows specific expression in differentiating root endodermis, with some expression in the endodermis of the lower hypocotyl and none detectable anywhere else in the plant. These CASP1::SGN3-GFP sgn3 plants could fully rescue the growth phenotype of sgn3 plants (Figure 4C), demonstrating that it is the root endodermal defect of sgn3 that is causative for the overall growth defect of the mutant.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig4-v1.jpg)\n\n**Figure 4.:** (A) Phenotype of 3-week-old WT, sgn3-3, and sgn3-4 plants grown at 22 or 24\u00b0C in long days. Representative pictures are presented. (B) Analysis of shoots fresh weight of WT, sgn3-3, and sgn3-4 plants (n = 15) grown 3 weeks at different temperatures (17, 21, or 25\u00b0C). (C) Phenotype of 4-week-old WT, sgn3-3, sgn3-3/pSGN3::SGN3-mVenus (lines 8 and 46), and sgn3-3/pCASP1::SGN3-GFP (lines 3 and 4) grown at 24\u00b0C in long days. Representative pictures are presented. Fresh weight average from n > 8 plants. (D) Transpiration of WT, sgn3-3, and sgn3-4 plants determined as water loss from 3-week-old plants. Error bars = s.d. (n = 10). (E) Root pressure analysis determined as the volume of xylem sap released in 30 min from decapitated WT, sgn3-3, and sgn3-4 plants grown in short day condition (n = 7). (F) Guttation was collected from WT and sgn3-3 plants grown for 6 weeks in short day conditions (n = 15). (G) Mean hydrostatic hydraulic conductivity of roots (Lpr-h) from WT, sgn3-3, and sgn3-4 plants. Lpr-h was measured during the daytime. Values correspond to means \u00b1 SD (n > 14). B, C, E, F, G. Error bars = s.d. For multiple comparison, different letters indicate significant differences between genotypes, determined by analysis of variance (ANOVA) and Tukey test as post hoc analyses; (B, p < 0.01) (E, G, p < 0.05). For single comparison in F, stars (***) indicate significant difference determined by Student test (p < 0.001).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Growth conditions considered as \u2018standard condition\u2019 are: temperature 21\u00b0C, day length 16 hr, and light intensity of 150 \u03bcE. Modification of one of those parameters is indicated, the other parameters remaining unchanged. (A) Phenotype of 3-week-old WT, sgn3-3, and sgn3-4 plants grown at 22, 24, or 26\u00b0C. (B) Lack of the apoplastic endodermal diffusion barrier in sgn3-3 visualized with PI is still present when plants were grown in hydroponics or in soil. (C) Analysis of shoot fresh weight of WT, sgn3-3, and sgn3-4 plants (n = 15) grown 3 weeks at different day length (8 hr, 16 hr or 24 hr), light intensity (30 \u03bcE, 90 \u03bcE or 300 \u03bcE) or in combination with higher temperature (25\u00b0C). Error bars = s.d.; different letters indicate significant differences between genotypes, determined by analysis of variance (ANOVA) and Tukey test as post hoc analyses (p < 0.01). Scale bars: B, 50 \u03bcm. ep, epidermis; co, cortex; en, endodermis; st, stele.\n\n### sgn3 mutants display normal transpiration but altered water transport and root pressure\n\nThe numerous, repeated Casparian strip discontinuities in sgn3 must generate an apoplastic bypass for both water and solutes in the mutant root. Especially under conditions of high transpiration, this would be expected to lead to a strong, uncontrolled and possibly detrimental influx of elements into the transpiration stream. We observed that transpiration rate per surface area in sgn3 mutants are very similar to wild type (Figure 4D) revealing that there is no compensatory downregulation of transpiration. Another predicted consequence of interrupted Casparian strips is an inability to build up root pressure, a process necessary for vascular transport of nutrients and water in the absence of transpiration and for transport into non-transpiring organs (Wegner, 2014). Root pressure build-up in the dead xylem vessels is thought to involve an osmotic gradient, generated by living neighbors, that draws water into the vessels. Pressure build-up, however, is thought to crucially depend on the presence of the Casparian strips as an apoplastic diffusion barrier, without which xylem pressure should quickly dissipate into the cortex. We indeed found that root pressure, as estimated by xylem sap exudation from hypocotyls after decapitation, was lower in the sgn3 mutant (Figure 4E). sgn3 also showed a decreased rate of leaf guttation, a process more indirectly dependent on root pressure, but that can be observed less invasively (Figure 4F). As a more direct measure of apoplastic water flow, we inserted excised roots in a pressure chamber and found a significant increase in root hydrostatic hydraulic conductivity (Lpr-h) in sgn3 mutants compared to wild type (Figure 4G). The defects of Casparian strip formation may allow an apoplastic bypass for water in pressurized sgn3 roots thereby explaining its increased Lpr-h. Our findings are the first genetic evidence that Casparian strips can be relevant for root pressure buildup and impose a hydraulic resistance; the magnitude of the observed effects nevertheless indicates that an intact Casparian strip is not an absolute requirement and that unmodified walls and/or suberized cells can generate a sufficiently high resistance to radial waterflow so that the positive root pressure can be maintained. sgn3 might be very useful to dissect the mechanisms of root pressure formation and its role in nutrient transport in the future.\n\n### Transcriptional profiles suggest a latent potassium deficiency in sgn3 mutants\n\nIn order to identify some potential stress and/or compensatory responses in the sgn3 mutant, we generated a general transcriptional profile of sgn3 mutant rosettes, grown under conditions in which wild type and sgn3 were indistinguishable. Only little differences between sgn3 and wild type were observed. Yet, all of the seven more highly expressed genes in sgn3 were found to be also induced by potassium starvation, suggesting a latent, weak potassium deficiency stress under these conditions (Figure 5A, Figure 5\u2014source data 1). Based on this indication, we tested well-established transcriptional read-outs of potassium deficiency in roots, the potassium influx transport proteins AKT1 and HAK5, and found that both were upregulated in sgn3 (Figure 5B,C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig5-v1.jpg)\n\n**Figure 5.:** (A) Expression of genes upregulated in 4 week-old sgn3 leaves. The seven genes presented here are the ones whose expression level was significantly increased in sgn3 (p < 0.15). Those genes were investigated in Genevestigator for responses in leaves to nutritional stresses such as potassium starvation, drought, nitrate deficiency, Fe deficiency, S deficiency, P deficiency, and salt stress. Color-code indicates the effect of growth condition to their expression level (yellow up, gray unchanged, blue down). For numerical values see Figure 5\u2014source data 1. (B and C) Quantitative RT-PCR analysis of AKT1 (B) and HAK5 (C) transcript levels in WT, sgn3-3, and sgn3-4 roots (n = 3). Error bars = s.d, different letters indicate significant differences between genotypes, determined by analysis of variance (ANOVA) and Tukey test as post hoc analyses (p < 0.05). (D) Overview of ionomic analysis performed in sgn3 leaves (sgn3-3, sgn3-4, and sgn3-19 alleles) in three independent laboratories (Hokkaido, Lausanne, Aberdeen), using 2 growth systems (hydroponics or soil) and 2 day-length conditions (short or long days). Elements were determined by ICP-MS (Hokkaido, Lausanne 05/12 and Aberdeen) or ion chromatography (Lausanne 03/11). Color-code indicates significant changes of accumulation in sgn3 mutants compared to WT (p < 0.05; yellow up, gray unchanged, blue down). For the numerical values, see Figure 5\u2014source data 2. (E and F) Phenotype of 3-week-old WT, sgn3-3, and sgn3-4 plants grown in potassium (K) deficiency. Plants were watered from germination with a nutritive solution with or without 1.5 mM KNO3 (+K or \u2212K). Representative picture are presented. Arrow indicates a chlorotic leave. (F) Occurrence of K deficiency phenotype determined as the percentage of plants displaying at least one yellow leaf (yellow) vs percentage of plants displaying only green leaves (green). Error bars = s.d.; data correspond to the mean of two independent experiments with a total of n \u2265 50 plants.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03115/elife-03115-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Ionomic analysis performed on WT, sgn3-3, and sgn3-4 plants grown in a poor gravel-like substrate and watered from germination with a nutritive solution with potassium (+K) or without (\u2212K). The different elements were analyzed by ICP-MS (Aberdeen) with a NexION 300D. Each bar represents the mean \u00b1 SD of three biological replicates with n \u2265 17 plants. Different letters indicate significant differences between genotype for a given element, determined by analysis of variance (ANOVA) and Tukey test as post hoc analysis (p < 0.01).\n\n### An impaired endodermal barrier causes surprisingly specific defects in elemental homeostasis\n\nIn order to directly measure how sgn3 root barrier defects affect elemental homeostasis in leaves, we undertook a number of elemental profiling experiments using inductively coupled plasma\u2013mass spectrometry (ICP-MS) on rosette leaves in different laboratories under different growth conditions. Surprisingly, concentrations of most elements remained essentially unaltered in sgn3. Despite the dramatic apoplastic bypass in sgn3 roots, the mutants managed to maintain wild type levels of sodium (Na), calcium (Ca), or boron (B), for example. Among the measured transition elements (Mo, Co, Mn, Zn, Fe, Cu, Zn) only zinc showed a significant decrease in some measurements (Figure 5D, Figure 5\u2014source data 2). However, matching the transcriptional profiling results, we invariably found lower levels of potassium (K) in the mutant (ranging from 1.4\u20133.0 fold reduction). Inversely, levels of magnesium (Mg) and cesium (Cs) accumulated to higher levels than in wild type, ranging from 1.5\u20132.1 and 1.3- to 1.4-fold increase, respectively (Figure 5D, Figure 5\u2014source data 2). These findings nicely corroborated the results of our microarrays, but left us wondering about the absence of potassium deficiency symptoms in sgn3, since the mutant phenotypes under most conditions are simply those of a reduction and delay in growth.\n\n### The sgn3 mutant is strongly hypersensitive to low potassium conditions\n\nWe then tested growth of sgn3 plants on a nutrient-poor, gravel-like substrate, which we watered with a nutrient solution with or without potassium. Wild type plants coped well with conditions of low potassium nutrition, with most plants displaying no or only very weak chlorosis on older rosette leaves, indicative of potassium deficiency (Figure 5E,F). Consistently, wild type also maintained higher potassium concentration than sgn3 under these conditions (Figure 5\u2014figure supplement 1). The sgn3 mutant in contrast, developed severe chlorosis of its rosette leaf margins, characteristic of strong potassium deficiency (Marschner and Marschner, 2012). sgn3 therefore has an impaired capacity to accumulate sufficient potassium under conditions of low supply of this element.\n\n## Discussion\n\n### The SGN3 receptor-like kinase is important for microdomain organization and enhanced suberization in the endodermis\n\nThe deposition of cell wall material with subcellular precision is crucial for the correct function of many plant cell types (Roppolo and Geldner, 2012). How this localized deposition is achieved is only rarely understood in any mechanistic detail, with the notable exception of wall deposition in metaxylem cells (Oda and Fukuda, 2012). Localized wall deposition should implicate the formation of microdomains in the plasma membrane that localize cell wall biosynthetic activity. Walls, in turn, signal back to the cell, and this process informs about mechanical stresses, wall polymer breakdown or for regulated expansion growth (Cheung and Wu, 2011; Lindner et al., 2012). The precisely localized, ring-like Casparian strip can be used as a model for studying localized wall deposition (Lee et al., 2013). The SGN3 LRR-RLK appears to be involved in both the formation of the CSD and the signaling of defective Casparian strips. Lack of SGN3 causes an inability of CASP1-GFP patches to fuse into a contiguous band, without affecting the positioning of the patches along a median ring, nor the stability or functionality of the already established patches. SGN3 localization to the transversal and anticlinal, but not the periclinal membrane domains further increases the complexity of subdomains present at the endodermal plasma membrane. It embeds the forming CASP domain into a larger subdomain within which the narrower CSD is formed. Direct interaction of CASPs and SGN3 could take place early during CASP accumulation at the membrane and occur at the rims of forming CASP patches, possibly promoting patch growth and fusion. This can now be tested in future experiments. A second, currently unrelated role for SGN3 is the induction of increased lignin and suberin formation in other Casparian strip mutants, such as esb1 or casp1 casp3. We speculate that SGN3 acts as a kinase that reports CSD integrity, signaling an upregulation of lignin, and suberin production. A surveillance of Casparian strip integrity could be of great importance for unimpeded root function and would parallel the surveillance of tight junctions that has been reported for animal epithelia (Balda and Matter, 2009).\n\n### SGN3 has redundant activities outside the endodermis\n\nWe could demonstrate that exclusive expression of SGN3 in the differentiating root endodermis is sufficient to rescue the overall growth defect of sgn3. This indicates that the endodermal function that we describe here is the only specific, non-redundant activity of this receptor in the plant. The earlier described function of SGN3/GSO1 in the formation of an embryonic cuticle by contrast is fully redundant with that of its homolog GSO2. The dramatic cotyledonary phenotype of the double mutant is bound to have secondary consequences on seedling growth, making it very difficult to dissect primary from secondary effects. A recent investigation of root meristem defects of the double mutants, for example, could entirely be explained as secondary consequences of the primary defect in embryonic cuticle formation (Racolta et al., 2014). It is nevertheless important to speculate how the two functions of endodermal Casparian strip formation and protodermal cuticle formation could be explained by a common molecular activity. By genetic analysis, the GSO1 GSO2 pair has been assigned to a signaling pathway that depends on an endosperm-expressed subtilase (ABNORMAL LEAF-SHAPE1, ALE1) (Xing et al., 2013). In a currently speculative scenario, subtilases might be involved in processing of peptide hormones that could act as ligands for SGN3/GSO1, promoting formation of a functional cuticle. Yet, the endodermal, lignified Casparian strip and the protodermal, cutin-based embryonic cuticle are two chemically different cell wall modifications that also show distinct modes and sites of deposition within the primary cell wall. These differences make it difficult to perceive a common denominator for SGN3 action in these two cell types. Moreover, our data suggest that a primary function of SGN3/GSO1 is the formation of a continuous band of CASP membrane proteins. No CASP homologs have been implicated in cuticle formation up-to-now, nor are there any indications for the presence of a highly scaffolded membrane protein domain in the epidermis/protodermis that would resemble the CSD. Another SGN3/GSO1 function that we could establish is the promotion of suberin formation in response to a defective Casparian strip. Enhanced suberin formation in esb1 appears to be entirely dependent on SGN3 activity, although the normal developmental progression of suberin formation is not affected in the mutant. Suberin and cutin are chemically closely related polymers whose monomers are formed by sets of homologous enzymes. A common role of SGN3 might be to mediate a cross-talk between cell wall components, possibly regulating suberin production in endodermis and cutin production in epidermis/protodermis. Identification of the SGN3 ligands and downstream kinase substrates will be crucial for an understanding of the common mechanism that might underlie these apparently divergent functions.\n\n### sgn3 is the strongest and most specific Casparian strip mutant known to date\n\nRegardless of the fact that SGN3 has other roles in the plant, the sgn3 single mutant defect reported here remains exquisitely specific to the endodermis. This is supported by the fact that it is only in the endodermis where SGN3 expression is non-overlapping with its close homolog, GSO2 (Tsuwamoto et al., 2008). Moreover, exclusive expression of SGN3 in the endodermis is able to rescue the overall growth defects observed in aerial parts (this study). In addition to its specificity, the sgn3 phenotype turns out to be strong and robust, that is, it displays penetration of tracer along the whole length of a seedling root and the phenotype is stable in the different growth conditions that we tested. Finally, sgn3 does not show any of the enhanced suberin formation that has been observed in other mutants and which confounds interpretation of phenotypes. We therefore propose that the sgn3 mutant is uniquely suited to obtain insights into the specific role of Casparian strips in plants. This mutant might be very useful for investigating not only root nutrient and water uptake, but also for addressing the role of the endodermal barrier in pathogen resistance, hormonal transport, stress, or general growth responses.\n\n### sgn3 nutrient homeostatic defects are surprisingly specific\n\nOur first analysis of the sgn3 mutant has revealed an unexpected robustness of Arabidopsis growth towards a complete lack of its main root diffusion barrier. While still able to grow and complete its life cycle, the mutant nevertheless displays greatly exacerbated growth reductions to non-stressful changes in environmental conditions. This indicates the presence of homeostatic backup systems in the plant that are incompletely compensating for the absence of Casparian strips. Homeostasis of many elements is kept in the sgn3 mutant, and it is intriguing that it is specifically potassium that shows a reproducibly strong decrease in concentration. Potassium (K) is the only macronutrient (N,P,K,S) that is not integrated into polymers and that remains highly mobile within the plants. It is being used as a counter ion in many transport process and is recycled back to the root along with the phloem sap. At the same time, concentrations of potassium required for plant growth are high and potassium often needs to be concentrated 10\u2013100 fold over the concentration found in the soil (Marschner and Marschner, 2012; Wang and Wu, 2013). It therefore makes a lot of sense that potassium is an element that cannot be kept at sufficiently high levels in Casparian strip defective plants. We propose that potassium located in the stelar apoplast is continuously lost to the outer cell layers and the soil in the absence of functional Casparian strips. Upregulation of potassium influx carriers in cortex/epidermis, as we have observed in sgn3 roots, would certainly be able to recuperate large parts of the potassium being lost. However, a chronic condition of very low external potassium would lead to a breakdown in this transporter-mediated \u2018potassium recycling\u2019 and eventually cause the deficiency phenotypes that we observe. From this scenario, it follows that there should be a higher rate of potassium flux out-of and into the root stele in a sgn3 mutant and that potassium homeostasis in the mutant is extremely dependent on increased activity of potassium transporters. We are currently working on substantiating this \u2018potassium recycling\u2019 model by specific interference with and visualization of potassium transporters in the mutant. Further analysis of sgn3 will be instructive for a better understanding of root potassium transport in general and this analysis should also be extended to other macronutrients in the future.\n\nWhat could be the reasons for the lack of effects on many other elements? It can be expected that similar compensatory responses as seen for potassium exist for other elements. If these elements need to be less concentrated over their external concentration\u2014or if they are less mobile within the plant\u2014the compensatory responses might be sufficient for maintaining homeostasis in the mutant. Interestingly, we found an increase in the levels of the divalent cation magnesium, while concentrations of the divalent calcium, for example, were not affected in sgn3 mutants. This could be explained by a lower concentration gradient between the xylem sap and the external environment and a lower mobility of Calcium within the cell wall space (Clarkson, 1984; White and Broadley, 2003). Nevertheless, calcium concentration within the symplast is kept extremely low for cellular signaling purposes. Therefore, calcium delivery to aerial tissues is thought to occur either entirely through the apoplast\u2013using the few apoplastic \u2018bypasses\u2019 of the endodermis at the root tip or at lateral root emergence sites (White, 2001)\u2014or to employ a very short symplastic route passing exclusively through endodermal cells (Clarkson, 1984). In both scenarios, it is surprising that the opening of a massive apoplastic bypass in the sgn3 mutant has no effect on calcium homeostasis, while it did affect levels of magnesium. Possibly, magnesium is more mobile in the apoplast than Calcium and undergoes increased apoplastic transport into the transpiration stream in sgn3 (Thibault and Rinaudo, 1985). Identifying conditions in which calcium homeostasis also breaks down in sgn3 would greatly advance our understanding of the calcium uptake mechanisms in plants.\n\nThe sgn3 mutant represents a powerful new tool to better understand root uptake and transport mechanism of most other plant nutrients as well. Our initial analysis of the sgn3 mutant challenges the current notions of the role of the Casparian strip as a required barrier for most or all elements. The ability to selectively disrupt this strict endodermal barrier will allow for direct investigations of other mechanisms that maintain and buffer ion homeostasis. Unmodified cell walls, by their properties as ion exchange matrices, in conjunction with vacuolar storage of elements, can play pivotal roles in maintaining homeostasis of many elements. Cytoplasmic magnesium levels, for example, might well remain unaltered in sgn3, the increased magnesium levels being entirely absorbed by the vacuole. Having taken away the \u2018first lock\u2019 of the Casparian strip now puts the focus on the existence of \u2018second locks\u2019 that can be studied using the sgn3 mutant as a sensitized background.\n\n## Materials and methods\n\n### Plant material\n\nArabidopsis thaliana ecotype Columbia was used for all experiments. For details of knockout mutants, see Table 1.\n\n**Table 1.**\n Details of knockout mutants\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene number</th>\n      <th>Accession</th>\n      <th>Mutant number</th>\n      <th>Mutant name</th>\n      <th>Genotyping primer sequence</th>\n      <th>References</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AT4G20140</td>\n      <td>Col-0</td>\n      <td>SALK_043282</td>\n      <td>sgn3-3</td>\n      <td>LP: ATTCTACGAGCCTTCCCATTC RP: CGCAGTGAACACAGTGAGATC</td>\n      <td>Present work</td>\n    </tr>\n    <tr>\n      <td>AT4G20140</td>\n      <td>Col-0</td>\n      <td>SALK_064029</td>\n      <td>sgn3-4 or gso1-1</td>\n      <td>LP: CTCGGCTCCCTCGTTAATATC RP: GTTACCTAAACTGGCGGGAAG</td>\n      <td>Tsuwamoto et al. (2008) The Plant Journal</td>\n    </tr>\n    <tr>\n      <td>AT4G20140</td>\n      <td>Col-0</td>\n      <td>SALK_103965</td>\n      <td>sgn3-19</td>\n      <td>LP: TCCATTATGTGGTTCGAGCTC RP: CTTGTAAACCTTCCCAGAGCC</td>\n      <td>Present work</td>\n    </tr>\n    <tr>\n      <td>AT2G28670</td>\n      <td>Col-0</td>\n      <td>n.a.</td>\n      <td>esb1-1</td>\n      <td>n.a.</td>\n      <td>Baxter I et al. (2009) PLOS Genet, Lahner B et al. (2003) Nat Biotechnol</td>\n    </tr>\n    <tr>\n      <td>AT2G36100</td>\n      <td>Col-0</td>\n      <td>SAIL_265_H05</td>\n      <td>casp1-1</td>\n      <td>LP: GCGTTTCAGTACGTCCCTTC RP: CACGTGAGGGAAGTGAGTCTC</td>\n      <td>Roppolo et al. (2011) Nature</td>\n    </tr>\n    <tr>\n      <td>AT2G27370</td>\n      <td>Col-0</td>\n      <td>SALK_011092</td>\n      <td>casp3-1</td>\n      <td>LP: GACTCTTCCTTTCTTCACTC RP: GACCAACACAACCGTACGAAC</td>\n      <td>Roppolo et al. (2011) Nature</td>\n    </tr>\n  </tbody>\n</table>\n\n### Vector construction and transgenic lines\n\nFor generation of expression constructs, Gateway Cloning Technology (Invitrogen, Carlsbad, CA) or standard molecular biology procedures were used. pESB1::ESB1-mCherry plasmid (Hosmani et al., 2013) was transformed in sgn3-3 background. pSGN3 (5583 bp before ATG)::SGN3 gDNA-mVenus was cloned by integrating a 9.4-kb genomic fragment including the intron and the 5\u2032UTR into a Basta-resistance pGREENII vector containing mVenus. pCASP1::NLS-GFP-GUS and pCASP4::NLS-GFP-GUS reporters were cloned into a Basta-resistance pGREENII vector and contain 1048 bp and 695 bp promoter fragments, respectively. pCASP1::SGN3 cDNA-GFP was cloned with Gateway using a 1207 promoter fragment followed by SGN3 cDNA without the unique intron and GFP. pCASP1 (1207 bp)::PDR6 gDNA-Venus-4G (4 glycine extension) was cloned using Gateway in a pB7m34 GW,3 expression vector (http://gateway.psb.ugent.be). pCASP1 (1207 bp)::mCherry-SYP122 was constructed with Gateway by cloning the AtSYP122 (At3g52400) cDNA into pH7m42 GW,3. pCASP1::CASP2-GFP-4G, pCASP1::CASP3-GFP-4G, pCASP1::CASP4-mCherry and pCASP1::CASP5-GFP-4G were cloned with Gateway using the pB7m34 GW,3 expression clone. Transgenic plants were generated by introduction of the plant expression constructs into an Agrobacterium tumefaciens strain GV3101 and transformation was done by floral dipping (Clough and Bent, 1998).\n\n### Growth conditions\n\nFor in vitro assays, plants were germinated on 0.5 MS (Murashige and Skoog) agar plates after 2 days in dark at 4\u00b0C. Seedlings were grown vertically in growth chambers at 22\u00b0C, under long days (16-hr light/8-hr dark), 100 \u03bcE light, and were used at 5 days after shift to room temperature. For microarray, transpiration, hydraulic conductivity, and ionomic analysis in Lausanne (May 2012) assays, plant were germinated on hydroponic conditions after 2 days in dark at 4\u00b0C. Nutrient solution was changed weekly and contained 0.5 mM KNO3, 0.25 mM Ca(NO3)2, 1 mM KH2PO4, 1 mM MgSO4, FeNH4-EDTA 0.1 mM, KCl 50 \u03bcM, H3BO3 30 \u03bcM, MnSO4 5 \u03bcM, ZnSO4 1 \u03bcM, CuSO4 1 \u03bcM, (NH4)6Mo7O24 0.1 \u03bcM. Light/dark cycle was 16 hr/8 hr, 23\u00b0C/18\u00b0C, 100 \u03bcE light.\n\nFor xylem sap and guttation assays, plants were germinated after 2 days in dark at 4\u00b0C on soil in short day condition and irrigated with water. Light/dark cycle was 10 hr/14 hr, 22\u00b0C/18\u00b0C, 100 \u03bcE light.\n\nFor phenotypic assays at different light intensities (30, 90, 150, or 300 \u03bcE), temperatures (17, 21, or 25\u00b0C), or day lengths (8, 16 or 24 hr), plants were germinated after 2 days in dark at 4\u00b0C on soil and irrigated with water. The standard condition was: light/dark cycle 16 hr/8 hr, 21\u00b0C/19\u00b0C with light intensity of 150 \u03bcE. Temperature difference between day and night was always kept at 2\u00b0C.\n\nFor ionomic assays plants were grown in different laboratories as indicated. For the Hokkaido experiments plants were grown hydroponically as described in Takano et al. (2001), with slight modifications. Environmental parameters in a growth chamber are as follows: 10-hr/14-hr light/dark cycle, 22\u00b0C under fluorescent lamps, 70% humidity. The seeds were sown on rockwool and grown supplied with hydroponic media (Fujiwara et al., 1992) supplemented with 50 \u00b5M Fe-EDTA. After 15 days, the plants were additionally supplied with 3 \u00b5M CsCl and 10 \u00b5M SrCl2. The media were changed twice a week. For the Aberdeen experiment plants were grown in short day conditions, in Bulrush multi-purpose compost (http://www.bulrush.co.uk/retail-range/all-purpose-composts.html) spiked with various elements as detailed in Lahner et al. (2003), and bottom watered using \u00bc Hoagland solution containing Fe as 10 \u03bcM Fe-HBED as described in Baxter et al. (2008). 1\u20132 adult rosette leaves were harvested 36 days after planting. For the Lausanne experiment in soil (March 2011), plants were grown in long days 16-hr/8-hr light/dark, 23\u00b0C/19\u00b0C, and leaves were harvested after 5 weeks.\n\nFor potassium deficiency assay plants were germinated after 2 days in dark at 4\u00b0C on a poor gravel-like substrate (OIL DRI US-Special) watered with a \u00bd Hoagland based solution containing : 1.5 mM NH4NO3 or 1.5 mM KNO3 (\u2212K or +K).\n\n### Confocal microscopy\n\nConfocal laser scanning microscopy experiments were performed either on a Leica SP2, a Zeiss LSM 700, a Zeiss LSM 710, or a Zeiss LSM 710 NLO 2-Photon microscope. Excitation and detection windows were set as follows: Leica SP2: GFP 488 nm, 500\u2013600 nm; propidium iodide 488 nm, 600\u2013700. Zeiss LSM 700: GFP/mVenus 488 nm, 490\u2013555 nm; mCherry/propidium iodide 555 nm, SP 640. LSM 710: GFP/mVenus 488 nm, 495\u2013554 nm; mCherry/propidium iodide 561 nm, 573\u2013681 nm. Zeiss LSM 710 NLO 2-Photon: GFP/mVenus, 960 nm, 500\u2013550 nm (NDD). For visualization of the apoplastic barrier, seedlings were incubated in the dark for 10 min in a fresh solution of 15 mM (10 mg/ml) Propidium Iodide (PI) and rinsed two times in water (Alassimone et al., 2010, Naseer et al., 2012). For quantification, \u2018onset of elongation\u2019 was defined as the point where an endodermal cell in a median, longitudinal section reached a length more than twice its width. From this point, cells in the file were counted until the PI signal was blocked in the endodermal cells. For plants grown in hydroponic and in soil, roots of 13 and 14 days were used, respectively.\n\nCasparian strip autofluorescence after clearing was visualized as described (Alassimone et al., 2010, Naseer et al., 2012).\n\nFluorescence recovery after photobleaching (FRAP) was performed with 5-day-old seedlings and imaged with a Leica SP2 confocal microscope as described (Roppolo et al., 2011).\n\nPlasmolysis was induced by incubating 5-day-old seedlings for 1 hr in 0.8 M mannitol and then mounted in the same solution. Plasmolyzed cells were imaged at 15 cells after the onset of CASP1 expression.\n\nFor time-lapse imaging of CASP1::CASP1-GFP in Col-0 and sgn3-3, 5-day-old seedlings were into a Lab-Tek II chambered coverglass (Nunc) and covered with a small block of agar to prevent drying. Subsequently, slides were mounted and imaged on an upright Zeiss LSM710 NLO confocal microscope. Excitation was provided by a Ti-Sapphire Chameleon II Ultra (Coherent) with 960 nm and fluorescence was detected using non-descanned detection (NDD) between 500 and 550 nm. Image stacks were taken every 15 min for a total time of 16 hr. Confocal images were analyzed and contrast and brightness were adjusted with the FIJI package (http://fiji.sc/Fiji) and Adobe Photoshop CS5.\n\nFor the percentage quantification of Casparian strips, autofluorescence after clearing was performed on ten seedlings for each genotype investigated. For each individual seedling, Casparian strips were imaged by confocal microscopy by doing one z-stack and measurements were done using ImageJ. The percentage of Casparian strip was the portion where autofluorescence was visible along a line showing Casparian strip signal. A minimum of 3.5 mm of Casparian strip was quantified in each genotype.\n\n### Suberin lamellae analysis\n\nSuberin lamella was observed in 5-day-old roots after Fluorol Yellow staining as described in Naseer et al. (2012). Seedlings were incubated in Fluorol Yellow 088 (0.01% wt/vol, lactic acid) at 70\u00b0C for 30 min, rinsed with water, and counterstained with aniline blue (0.5% wt/vol, water) at RT for 30 min in darkness, washed, mounted on slides with glycerol and observed with epifluorescence microscope. Suberin pattern were observed and counted from the hypocotyl junction to the onset of endodermal cell elongation. Three distinct patterns were considered: continuous suberin lamellae, discontinuous suberin lamellae (corresponding to the area where suberin lamellae establish), and non- suberized (corresponding to the young part of the root). Experiments were repeated at least four times.\n\n### Water transport assay\n\n#### Transpiration\n\nFor transpiration assays, 3-week-old plants grown in hydroponic conditions were transferred to airtight containers isolating the root and nutritive solution from the air while plant shoots remain out of the container (potometer). Transfer to potometer was performed 24 hr prior to transpiration measurement. Transpiration was determined as the loss of weight measured every 2 hr during 14 hr and was expressed relatively to the plant's leaf area. Leaf area was measured for each individual plant, with ImageJ from pictures of detached leaves at the end of the transpiration assay.\n\n#### Root pressure\n\nPlants were grown 6 weeks in short day condition and decapitated with scalpel at the hypocotyl junction. The decapitated hypocotyl was immediately introduced into a 100 \u03bcl microcapillary. Root pressure was determined as the volume of xylem sap collected within 30 min from decapitated plants.\n\n#### Guttation\n\nPlants were grown 6 weeks in short day condition. To induce guttation, plants were transferred to 15\u00b0C in the dark for 12 hr, covered with a lid to maintain high humidity. The liquid was harvested from 15 individual plants for each genotype, using a micropipette.\n\n#### Hydrostatic hydraulic conductivity\n\nMeasurements of root hydrostatic hydraulic conductivity (Lpr-h) were performed as described previously (Javot et al., 2003; Postaire et al., 2010).\n\n### Ionomic analysis\n\nFor ionomic assays plants were grown in different laboratories as indicated. For the Hokkaido and Lausanne experiments (hydroponic conditions), the shoots of plants were harvested, dried in an air incubator at 60\u00b0C for more than 60 hr, and the dry weights were measured. The tissues were digested with 3 ml of 61% HNO3 (for boron determination; Wako Pure Chemicals, Osaka, Japan) in a tube at 110\u00b0C in a DigiPREP apparatus (SCP Science, Quebec, Canada) until complete dryness. The residues were dissolved in 10 ml of 2% HNO3 and analyzed for elements by inductively coupled plasma mass spectrometry (ICP-MS) (ELAN, DRC-e; Perkin\u2013Elmer, Waltham, MA, USA).\n\nFor Aberdeen assays, the leaves were cleaned by rinsing with ultrapure water and placed into Pyrex digestion tubes. Samples were dried in an oven at 88\u00b0C for 20 hr. After cooling, seven reference samples from each planted block were weighed. The samples together with blank controls were digested with 0.90 ml concentrated nitric acid (Baker Instra-Analyzed; Avantor Performance Materials) and diluted to 10.0 ml with ultrapure water (18.2 M\u03a9cm). The internal standard Indium (In) was added to the acid prior to digestion for monitoring technical errors and plasma stability in the ICP-MS instrument. After samples and controls were prepared, elemental analysis was performed with an ICP-MS (NexION 300D; PerkinElmer) coupled to Apex desolvation system and SC-4 DX autosampler (Elemental Scientific Inc., Omaha, NE, USA), monitoring these elements: B, Na, Mg, P, K, Ca, Mn, Fe, Co, Cu, Zn, Sr, and Mo. All samples were normalized to calculated weights, as determined with a heuristic algorithm using the best-measured elements, the weights of the seven weighed samples and the solution concentrations (Lahner et al., 2003), detailed at www.ionomicshub.org.\n\nFor ionic chromatography, for each sample one rosette leaf of a 5-week-old plant was harvested, put in 30 ml Nanopure water and incubated at 80\u00b0C for 1 hr. Each sample was then filtered with a 0.45-\u00b5m non-pyrogenic sterile filter (Sarstedt, Germany). The samples were then diluted to reach a final concentration of 0.83 mg fresh weight per 1 ml. Ion concentrations were obtained with an ion chromatography system (ICS-1100/2100, Dionex-Thermo Fischer).\n\n### Expression analysis\n\n#### Microarray analysis\n\nWT and sgn3-3 plants were grown in hydroponic conditions and material was harvested 24 days post-stratification. Roots and rosettes were collected separately, and each sample is a mix of three plants. Each type of sample was harvested in triplicate. In these growth conditions, sgn3-3 was nearly indistinguishable from wild type. Total RNAs were isolated and purified with RNeasy Plant Mini Kit (Qiagen, Venlo, The Netherlands). RNA quantities were assessed with a NanoDropND-1000 spectrophotometer and RNA qualities with an RNA 6000 NanoChips with the Agilent 2100 Bioanalyzer (Agilent, Palo Alto, USA). For each sample, 300 ng of total RNA were amplified using the message amp II enhanced (AM1791, Ambion) kit. 12.5 \u03bcg of the resulting biotin-labeled cRNA was chemically fragmented. Affymetrix ATH1 arrays (Affymetrix, Santa Clara, CA) were hybridized with 11 \u03bcg of fragmented target at 45\u00b0C for 17 hr washed and stained according to the protocol described in Affymetrix GeneChip Expression Analysis Manual (Fluidics protocol FS450_0007). The arrays were scanned using the GeneChip Scanner 3000 7 G (Affymetrix). All statistical analyses were performed using the free high-level interpreted statistical language R and various Bioconductor packages (http://www.Bioconductor.org). Hybridization quality was assessed using the Expression Console software (Affymetrix). Normalized expression signals were calculated from Affymetrix CEL files using RMA normalization method. Differential hybridized features were identified using Bioconductor package \u2018limma\u2019 that implements linear models for microarray data (Smyth, 2004). The p-values were adjusted for multiple testing with Benjamini and Hochberg's method to control the false discovery rate (FDR) (Benjamini and Hochberg, 1995). Genevestigator was used to analyze the effect of nutritional stress on the expression of genes deregulated in sgn3 (Hruz et al., 2008).\n\n#### Real time Q-PCR\n\nTotal RNA was extracted using TRIzol reagent (Invitrogen) and purified using RNeasy MinElute Cleanup Kit (Qiagen) after DNase treatment (Qiagen). The integrity of DNA-free RNA was verified by PCR, agarose gel electrophresis, and nanodrop.\n\nAn equal amount of total RNA (3 \u03bcg) was used for RT with anchored oligo(dT23). Real time Q-PCR was performed using a Stratagene MxPro 3005P Real-Time PCR System (Stratagene, La Jolla, CA). Three biological replicates performed in three technical replicates were analyzed for each sample. The specificity of each amplification product was verified by DNA melting curve analysis and gel electrophoresis of the amplified products. Relative transcript levels (RTL) were calculated relative to the transcript level of the reference gene EF1\u03b1, as follows: RTL = 1000 \u00d7 2\u2212\u0394Ct with \u0394Ct, the change in cycle threshold between the target gene and the reference gene. The following oligonucleotides were used EF1\u03b1 (At1g07920, At1g07930, At1g07940) 5\u2032-GTCGATTCTGGAAAGTCGACC-3\u2032 and 5\u2032-AATGTCAATGGTGATACCACGC-3\u2032; CASP1 (At2g36100) 5\u2032-AGAGAGGTTTGGCTATATT-3\u2032 and 5\u2032-CTACGGCTATCACAAAGTA-3\u2032; CASP4 (At5g06200) 5\u2032-AGACTTCTCTTGCTTGTTCT-3\u2032 and 5\u2032-GACAGAAATCTCCAAACTG-3\u2032; AKT1 (At2G26650) 5\u2032-TCTAAATTGTGTTCTTCTTCTGTTGGA-3\u2032 and 5\u2032-CCTTCCGCGTCTCTGCAA-3\u2032; HAK5 (At4g13420) 5\u2032-CGAGACGGACAAAGAAGAGGAACC-3\u2032 and 5\u2032- CACGACCCTTCCCGACCTAATCT-3\u2032.\n\n### Statistical analysis\n\nAll statistical analyses were done in the R environment (http://www.R-project.org/). Binary comparisons between wild type and sgn3 were performed using Student's t-test. Multiple comparisons between wild type, sgn3-3, and sgn3-4 mutants, one-way ANOVA was performed, and Tukey's test was subsequently used as a multiple comparison procedure.\n\n### SGN3 domain identification\n\nThe different features were predicted using the following web resources. Signal peptide, Leucine-rich repeats, transmembrane domain, and kinase domain: http://www.uniprot.org/uniprot/C0LGQ5; LRR N-terminal domain: http://pfam.sanger.ac.uk/search/sequence; kinase sub-domains were defined with reference to Hanks and Hunter (1995) and by aligning to the BRI1 kinase domain (Vert et al., 2005). Borders between kinase sub-domains were set manually by comparison of amino acids in the respective border regions for PKA C alpha and BRI1. In case of conflict, the BRI1 annotation was considered as more meaningful because of its plant origin.\n",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "bc60414a-5ab4-4643-ad83-cbfaafa0f0fc",
+      "submission_id": "b2b6041c-d6e9-4f54-be1e-e89d4d360ed8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maria J Harrison, Boyce Thompson Institute for Plant Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03115.019](https://doi.org/10.7554/eLife.03115.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA receptor-like kinase mutant with absent endodermal diffusion barrier displays selective nutrient homeostasis defects\u201d for consideration at eLife. Your article has been favorably evaluated by Detlef Weigel (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this interesting study the authors identify a receptor-like kinase gene, SGN3/GASSHO1, that is essential for Casparian strip formation. Through a series of elegant cell biology and genetics experiment they demonstrate that SGN3 is an upstream signaling component that plays a role in the progression of stable CASP islands during Casparian strip formation. sgn3 is the first mutant with a permanently discontinuous Casparian strip and this enabled the authors to demonstrate the functional significance of the Casparian strip in controlling root pressure, hydroponic conductivity and mineral nutrient homeostasis. The reviewers' main concerns relate to the claims about mineral nutrient phenotypes and the following revisions are required.\n\n1) The authors place tremendous emphasis on potassium (K) and conclude that this is the only macronutrient that is greatly affected in the mutant. However, data for nitrogen (N) or sulfur (S) are not included while limited phosphorus (P) data suggest an approximately 60% reduction in P accumulation when plants are grown in soil. Thus, it is possible that both macro-nutrients K and P are affected. This requires further evaluation and additional data for K and P levels in soil grown plants should be included. In addition, the lack of evaluation of N and S should be acknowledged and the claims about the specificity of the K phenotype should be removed.\n\n2) The low and high K experiment (Figure 5 E/F) shows a difference in plant growth which is attributed to differences in K levels. In order to support this, the leaf K levels of these plants should be presented. (The yellow leaf phenotype could arise from differences in nitrate, which appear to differ in the low and high K treatment as KNO3 was omitted from the low K treatment.)\n\n3) The iron levels are higher than potassium levels in the hydroponics experiments (Figure 5\u2013figure supplement 2). It would be helpful to readers to add a comment on this observation.\n\n4) The authors' statements, that the lack of effects on most nutrients counters the present (\u201ctext book\u201d) understanding of plant nutrition, do not appear to be up-to-date, especially for micronutrients. It is known that high-affinity (secondary) active transporters and endodermal exporters are important for micronutrient uptake and ultimate transfer to the xylem (and phloem) and a somewhat leaky Casparian strip should have either little or perhaps only small secondary effects on nutrient accumulation, especially for those using (secondary) active transport. It is likely that out-of-date text books can be found, but the old model referenced by the authors does not conform to the present understanding of the electrical and energetic properties of many nutrient transporters. These over-statements should be removed.\n\n5) The nutrient content of the media and fertilizers used are important for the conclusions and should be provided fully for all experiments in the Methods section.\n\n6) The text of the manuscript should be edited to make it more concise.\n\n7) As shown in Figure 5A, the sgn3 transcript data are similar to drought and salt responses. The latter could be further evaluated by running a salt stress experiment and assessing plant growth and ion content of roots and leaves. As salt stress occurs at high millimolar NaCl concentrations, by-pass transport is likely to be more relevant in the sgn3 mutant, similar to NaCl transfer in natural rice variants. This experiment is not essential but the reviewers felt that this would strengthen the case for ion-related phenotypes in sgn3. The experiment is not difficult and could be run in parallel with the experiment that further evaluates K and P levels in soil/gravel grown plants as requested in point 1.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cA receptor-like kinase mutant with absent endodermal diffusion barrier displays selective nutrient homeostasis defects\u201d for further consideration at eLife. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) You elected to focus on changes in potassium in sgn3. At a minimum, leaf potassium levels should be provided for the low and high K experiment (soil-like substrate grown plants) shown in Figure 5 E/F. This is needed to support the claim that the growth and leaf chlorosis phenotypes observed in sgn3 are the result of a reduction in K levels. Analysis of other nutrients in soil grown plants is optional, but it could provide useful evidence to support other nutrient defects in sgn3.\n\n2) If changes in nutrients other than potassium are not confirmed, it might be more accurate to alter the title to reflect potassium rather than selective nutrients.\n",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6f2bf9d5-c43a-4122-b224-017b02c654da",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C1",
+      "claim": "The sgn3 mutant displays a dramatic defect in endodermal barrier formation, as visualized by penetration of the apoplastic tracer propidium iodide (PI) into the stele along the entire length of the root.",
+      "claim_type": "EXPLICIT",
+      "source": "In a forward genetic, GUS-based screen for endodermal barrier mutants (Lee et al., 2013) (Alassimone et al., unpublished), we discovered one mutant, sgn3 that displayed a dramatic defect in endodermal barrier formation, as visualized by penetration of the apoplastic tracer propidium iodide (PI) into the stele along the entire length of the root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation using propidium iodide as a tracer, as described in the text and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "5e444f02-776b-4dce-89f0-4d264ad11b55",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C2",
+      "claim": "SGN3 encodes a leucine-rich-repeat receptor-like kinase (LRR-RLK) of subfamily XI.",
+      "claim_type": "EXPLICIT",
+      "source": "SGN3 encodes for a leucine-rich-repeat receptor-like kinase (LRR-RLK) of subfamily XI that had previously been described as GASSHO1 (GSO1) (Figure 1B, Figure 1\u2014figure supplement 2, Figure 1\u2014source data 1) (Tsuwamoto et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequencing data and complementation analysis, with reference to previous characterization by Tsuwamoto et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "cf3aa99e-de34-4223-b6b1-a5971de00406",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C3",
+      "claim": "The Casparian strip in sgn3 mutants is still formed and correctly positioned, but is repeatedly interrupted, forming irregularly-sized 'holes' of several micrometer in length.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate the cause of this phenotype, we investigated formation of the Casparian strip and found that it is still formed and correctly positioned, but that it is repeatedly interrupted, forming irregularly-sized 'holes' of several micrometer in length (Figure 1C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy observations of Casparian strip autofluorescence shown in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "1f676185-f9ed-439e-8bd5-3824f19e2fe9",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C4",
+      "claim": "Suberin lamellae formation in sgn3 mutants appeared at a position and in a manner very similar to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Suberin lamellae formation, by contrast, appeared at a position and in a manner very similar to wild type (Figure 1D,E, Figure 1\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Fluorol yellow staining data shown in Figure 1D,E and Figure 1\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "173b48b0-3c9c-4aa7-8802-9a467c4b00b6",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C5",
+      "claim": "In the sgn3 background, CASP1-GFP showed a pattern of interrupted patches that was strikingly similar to that of the Casparian strip itself.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sgn3 background, CASP1-GFP showed a pattern of interrupted patches that was strikingly similar to that of the Casparian strip itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by confocal microscopy observations of CASP1-GFP localization shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "cf0d7f57-b12e-4655-8460-301799b6ff85",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C6",
+      "claim": "The incorrect localization of the CASPs causes the Casparian strip defects of the sgn3 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that it is the incorrect localization of the CASPs that causes the Casparian strip defects of the mutant (Figure 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that CASP1-GFP localization defects mirror Casparian strip defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "7116a8e7-0335-4a27-9757-bb0034bcf074",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C7",
+      "claim": "In a novel forward genetic screen scoring for mutants with altered CASP1-GFP localization, 14 novel alleles of sgn3 were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in a novel forward genetic screen in which we scored directly for mutants with altered CASP1-GFP localization (Kalmbach et al., unpublished), we found 14 novel alleles of sgn3 (Figure 1B, Figure 1\u2014figure supplement 2, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from a forward genetic screen, with alleles documented in Figure 1B and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "bf9be8bc-f856-4c07-ae40-0b87df5bbe71",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C8",
+      "claim": "SGN3 is one of the major non-redundant genes necessary for CASP localization in the Arabidopsis genome.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that SGN3 is one of the major non-redundant genes necessary for CASP localization in the Arabidopsis genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the discovery of 14 novel alleles in a screen for CASP localization defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "23e406f9-e7e9-47a2-a9e9-2fd0b8729244",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C9",
+      "claim": "All four other CASPs (CASP2-5) display identical defects in sgn3.",
+      "claim_type": "EXPLICIT",
+      "source": "We could show that not only CASP1-GFP, but all four other CASPs (CASP2-5) display identical defects in sgn3 (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "dff65555-8330-48a6-9369-0fd065b5fddd",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C10",
+      "claim": "An interrupted CSD abolishes the lateral diffusion barrier in the plasma membrane of endodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "An interrupted CSD should abolish the lateral diffusion barrier in the plasma membrane of endodermal cells that we had previously described (Alassimone et al., 2010). Indeed, a generic plasma membrane protein that is excluded from the CSD in wild type (Alassimone et al., 2010) (Figure 1G) shows a pattern of exclusion in the mutant that represents a perfect negative image to the CASP1-GFP islands (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy observations of plasma membrane marker localization shown in Figure 1G, with reference to previous work by Alassimone et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "19234181-0c9f-426d-8cd7-98fae3624860",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C11",
+      "claim": "The lateral diffusion barrier between inner and outer plasma membrane domain is absent in sgn3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This illustrates that the lateral diffusion barrier between inner and outer plasma membrane domain is absent in sgn3 mutants, but that the remaining CSD islands are still able to exclude other proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that a generic plasma membrane marker shows exclusion patterns that are the negative image of CASP1-GFP islands.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "4cfab786-16a7-4115-a85d-ef35f32a2947",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C12",
+      "claim": "The defect in lateral diffusion barrier did not affect the polar localization of PDR6, a transporter that localizes to the outer polar domain in the endodermis.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, this defect did not affect the polar localization of PDR6, a transporter that localizes to the outer polar domain in the endodermis (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy observations of PDR6-Venus localization shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "ec1ad286-4a1b-4aec-8f81-25abf067847e",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C13",
+      "claim": "A strict polarity in the endodermis can be maintained in the absence of a diffusion barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that a strict polarity in the endodermis can be maintained in the absence of a diffusion barrier, further supporting the notion that polarity of transmembrane proteins in plants might simply be maintained by generally low lateral diffusion, high rates of endocytosis, or both (Geldner, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that PDR6 maintains polar localization in sgn3, with reference to previous work by Geldner, 2009.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "5a613761-7d63-4848-9e94-484142d34e92",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C14",
+      "claim": "During endodermal differentiation, CASP1-GFP changes from a protein that displays endocytic cycling and lateral diffusion to one that is highly stable and immobile in the CSD.",
+      "claim_type": "EXPLICIT",
+      "source": "We had shown previously that during endodermal differentiation, CASP1-GFP changes from a protein that displays endocytic cycling and lateral diffusion to one that is highly stable and immobile in the CSD (Roppolo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to previous work by Roppolo et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "680862cd-e166-4bde-9178-badedcfb3af7",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C15",
+      "claim": "CASP1-GFP localization passes through a 'string of pearls' stage, in which individual islands or 'patches' of CASP1-GFP are aligned in a band before eventually fusing.",
+      "claim_type": "EXPLICIT",
+      "source": "In this process, CASP1-GFP localization passes through a 'string of pearls' stage, in which individual islands or 'patches' of CASP1-GFP are aligned in a band before eventually fusing (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy observations shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "8e78c092-ac53-443b-ad84-769321f3c7af",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C16",
+      "claim": "sgn3 is not able to progress from the 'string of pearls' stage, but only undergoes partial fusion of individual islands, leading to CASP1-GFP patches of heterogenous size.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of 3D-time-lapse observations of endodermal differentiation revealed that sgn3 is not able to progress from this 'string of pearls' stage, but only undergoes partial fusion of individual islands, leading to CASP1-GFP patches of heterogenous size (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 3D time-lapse confocal microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "4cb427e2-2173-44a5-bf9b-024fa8b875a0",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C17",
+      "claim": "CASP1-GFP islands in sgn3 have similar stability and turnover as wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found by fluorescence recovery after photobleaching (FRAP) that these CASP1-GFP islands have similar stability and turnover as wild type (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FRAP experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "33259331-f3ed-4dc7-b080-63deec0900a0",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C18",
+      "claim": "The CSD shows very strong adherence to the cell wall, leading to the long-described phenomenon of 'band plasmolysis' in endodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Another feature of the CSD is its very strong adherence to the cell wall, leading to the long-described phenomenon of 'band plasmolysis' in endodermal cells (Kr\u00f6mer, 1903; Behrisch, 1926; Alassimone et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to historical observations (Kr\u00f6mer, 1903; Behrisch, 1926) and recent work (Alassimone et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "1f76f4b3-f9b5-414f-b007-d0feeedb1148",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C19",
+      "claim": "sgn3 showed the inability of CASP1-GFP to retract from the strips upon plasmolysis, demonstrating that plasma membrane-to-cell wall attachment remains intact in the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "sgn3 showed the very same inability of CASP1-GFP to retract from the strips, demonstrating that plasma membrane-to-cell wall attachment remains intact in the mutant (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by plasmolysis experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "c559f032-bdb7-45ac-b2d2-48bec5cb9fa6",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C20",
+      "claim": "sgn3 does not cause a general defect in CASP1-GFP trafficking, polymerization or cell wall attachment, but rather a specific defect in the progression of already stable CASP islands towards a contiguous band.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that sgn3 does not cause a general defect in CASP1-GFP trafficking, polymerization or cell wall attachment, but rather a specific defect in the progression of already stable CASP islands towards a contiguous band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple observations: normal CASP stability (FRAP), normal cell wall attachment (plasmolysis), but defective fusion of CASP islands.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "c75acfbd-e5eb-4cea-bc91-80398c692613",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C22",
+      "claim": "SGN3 expression in endodermal cells shortly after the onset of elongation precedes the onset of CASP1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In transgenic lines of this construct, expression of SGN3 could be observed in endodermal cells shortly after the onset of elongation, preceding the onset of CASP1 expression (Figure 2C, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy observations of SGN3-mVenus expression shown in Figure 2C and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "4152e003-98b3-492b-8bb4-1b76d7d3669a",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C23",
+      "claim": "The early expression of SGN3 before CASP1 is consistent with a function of SGN3 in establishing correct CASP1 localization.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a function of SGN3 in establishing correct CASP1 localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the temporal sequence of SGN3 and CASP1 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "f08a8f38-7c8c-4016-b001-58344edb81c8",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C24",
+      "claim": "Initially, SGN3 could be found on all cell sides, but it then quickly accumulated in the transversal and anticlinal sides of the plasma membrane, yet became excluded from the CSD itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, SGN3 could be found on all cell sides, but it then quickly accumulated in the transversal and anticlinal sides of the plasma membrane, yet became excluded from the CSD itself\u2014a hitherto unknown subcellular localization pattern (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy observations of SGN3-mVenus localization shown in Figure 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "bf25a987-cdb0-4539-b017-9638820af395",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C25",
+      "claim": "In 3D-reconstructions, SGN3 localization leads to the appearance of a broader ring-like domain that flanks the more restricted, median CSD.",
+      "claim_type": "EXPLICIT",
+      "source": "In 3D-reconstructions this leads to the appearance of a broader ring-like domain that flanks the more restricted, median CSD (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 3D confocal microscopy reconstructions shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "a740e7c4-09e9-4514-b091-07c766bdc793",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C26",
+      "claim": "During the critical phase of CASP domain progression from isolated islands towards a fused ring, SGN3 is seen to surround individual CASP islands on all sides.",
+      "claim_type": "EXPLICIT",
+      "source": "During the critical phase of CASP domain progression from isolated islands towards a fused ring\u2014at which the sgn3 phenotype becomes apparent\u2013SGN3 is seen to surround individual CASP islands on all sides (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy observations shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "81acb29f-bbe5-48bb-bebf-06df60173e59",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C27",
+      "claim": "SGN3 localization surrounding CASP islands would fit with a role of SGN3 in promoting fusion of growing CASP islands, such that an uninterrupted band can be formed.",
+      "claim_type": "EXPLICIT",
+      "source": "Such localization would fit with a role of SGN3 in promoting fusion of growing CASP islands, such that an uninterrupted band can be formed (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a speculative interpretation of the localization data, illustrated in the model shown in Figure 2H.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "c5e7710a-06d7-41c8-be00-c9e219c659d6",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C28",
+      "claim": "ESB1 is an extracellular protein that localizes to the site of Casparian strip formation.",
+      "claim_type": "EXPLICIT",
+      "source": "ESB1 is an extracellular protein that localizes to the site of Casparian strip formation and whose absence causes a phenotype resembling that of sgn3 insofar as both the Casparian strip itself and CASP1-GFP are localized in interrupted bands (Hosmani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to previous work by Hosmani et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "23747127-50e5-46f9-aa7d-4a31cc41fd63",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C29",
+      "claim": "In contrast to sgn3, esb1 mutants additionally display increased, delocalized deposition of additional autofluorescent cell wall material as well as enhanced and earlier deposition of suberin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to sgn3, however, esb1 mutants additionally display increased, delocalized deposition of additional autofluorescent cell wall material as well as enhanced and earlier deposition of suberin (Hosmani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to previous work by Hosmani et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "b0092f5f-f8b8-496a-8bec-c940516a11a4",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C30",
+      "claim": "ESB1-mCherry in sgn3 is both present and correctly localized, specifically accumulating at the remaining CASP1-GFP islands.",
+      "claim_type": "EXPLICIT",
+      "source": "We found ESB1-mCherry in sgn3 to be both present and correctly localized, that is, specifically accumulating at the remaining CASP1-GFP islands (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy observations of ESB1-mCherry localization shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "1d83b6e5-83eb-4d5e-9979-9d8b0a29590f",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C31",
+      "claim": "ESB1 does not require SGN3 for its accumulation and localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ESB1 does not require SGN3 for its accumulation and localization and the Casparian strip discontinuities in esb1 and sgn3 might be caused by independent mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that ESB1 localizes correctly in sgn3 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "41f0f77b-bb82-4b0a-b5ff-a124c903b6c2",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C32",
+      "claim": "The Casparian strip discontinuities in esb1 and sgn3 might be caused by independent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ESB1 does not require SGN3 for its accumulation and localization and the Casparian strip discontinuities in esb1 and sgn3 might be caused by independent mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the observation that ESB1 localizes correctly in sgn3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "2f53009a-d1b7-44ae-84bd-77bf61767f5b",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C33",
+      "claim": "sgn3 esb1 double mutant formed less and/or smaller Casparian strip patches than each single mutant, indicating additivity of the two mutations in this common aspect of their phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we found that sgn3 esb1 double mutant formed less and/or smaller Casparian strip patches than each single mutant, indicating additivity of the two mutations in this common aspect of their phenotypes (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of Casparian strip presence shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "27005642-a5b7-46aa-9855-2188edb1d89c",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C34",
+      "claim": "sgn3 esb1 double mutants neither display an increased or delocalized deposition of autofluorescent cell wall material, nor an enhanced and earlier formation of suberin.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly however, sgn3 esb1 double mutants neither display an increased or delocalized deposition of autofluorescent cell wall material, nor an enhanced and earlier formation of suberin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy observations and suberin staining shown in Figure 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "7ce325b3-3ed3-48dd-871d-22080043ce7e",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C35",
+      "claim": "sgn3 is fully epistatic over esb1 for the phenotype of enhanced and ectopic formation of autofluorescence and suberin.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates a full epistasis of sgn3 over esb1 for this phenotype (Figure 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that the double mutant lacks the enhanced suberin phenotype of esb1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "0d95d3ee-fc82-4945-a521-c3711f049460",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C36",
+      "claim": "The same epistatic relationship was found between sgn3 and casp1 casp3 double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The same epistatic relationship was found between sgn3 and casp1 casp3 double mutants (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy observations and quantification shown in Figure 3B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "1992c24b-0c3f-418e-a0ad-e6d31b85390f",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C37",
+      "claim": "The enhanced and ectopic formation of autofluorescence and suberin is thought to be due to a feedback and crosstalk between cell wall components, connecting correct Casparian strip formation to the further deposition of lignin and suberin lamellae formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced and ectopic formation of autofluorescence and suberin is thought to be due to a feedback and crosstalk between cell wall components, connecting correct Casparian strip formation to the further deposition of lignin and suberin lamellae formation (Hosmani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to previous work by Hosmani et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "82263a8e-08a3-452c-9817-e3aa9180962d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C38",
+      "claim": "The epistasis of sgn3 suggests that the perception/signaling that leads to enhanced autofluorescence and suberin formation in esb1 and casp1 casp3 is mediated by\u2014or at least requires\u2014the SGN3 receptor-like kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "The epistasis of sgn3 suggests that the perception/signaling that leads to enhanced autofluorescence and suberin formation in esb1 and casp1 casp3 is mediated by\u2014or at least requires\u2014the SGN3 receptor-like kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the epistatic relationship observed in double mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "ad6ceab4-340d-4599-a06d-6e583c70f57d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C39",
+      "claim": "sgn3 displays a rather mild growth phenotype under certain conditions despite the strength of the barrier phenotype and its inability to initiate potentially compensatory suberization.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the strength of the barrier phenotype of sgn3 and its inability to initiate potentially compensatory suberization, we were surprised to observe a rather mild growth phenotype of sgn3 under certain conditions (Figure 4A, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth observations shown in Figure 4A and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "2b6ce9c1-7a3d-4a3d-b036-75d94d0d696d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C40",
+      "claim": "sgn3 growth is extremely sensitive to changes in environmental conditions that are non-stressful to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet we noticed that sgn3 growth is extremely sensitive to changes in environmental conditions that are non-stressful to wild type (Figure 4A, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth observations under different conditions shown in Figure 4A and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "5451197d-9c12-4fb4-af8f-50872d35b373",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C41",
+      "claim": "The endodermal barrier phenotype persisted in developed root systems of rosette stage plants both on soil and on hydroponics.",
+      "claim_type": "EXPLICIT",
+      "source": "We ensured that the endodermal barrier phenotype persisted in developed root systems of rosette stage plants both on soil and on hydroponics, thus excluding that the weak phenotype is caused by an eventual repair of the barrier in older plants (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by propidium iodide permeability assays shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "5f8d40d2-a4c6-471a-ad50-2be2b263cdad",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C42",
+      "claim": "Growth differences between sgn3 and wild type are more pronounced at higher temperature, as well as under long-day conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A systematic variation of day length, temperature, and light-intensity revealed that growth differences to wild type are more pronounced at higher temperature, as well as under long-day conditions (Figure 4B, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of shoot fresh weight under different growth conditions shown in Figure 4B and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "6358d938-e55f-425e-8b4e-2ae4db4d2994",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C43",
+      "claim": "CASP1::SGN3-GFP sgn3 plants could fully rescue the growth phenotype of sgn3 plants.",
+      "claim_type": "EXPLICIT",
+      "source": "These CASP1::SGN3-GFP sgn3 plants could fully rescue the growth phenotype of sgn3 plants (Figure 4C), demonstrating that it is the root endodermal defect of sgn3 that is causative for the overall growth defect of the mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth phenotype observations and fresh weight measurements shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "7dd78b68-d398-4ede-9d58-912d63a53a8a",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C44",
+      "claim": "It is the root endodermal defect of sgn3 that is causative for the overall growth defect of the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "These CASP1::SGN3-GFP sgn3 plants could fully rescue the growth phenotype of sgn3 plants (Figure 4C), demonstrating that it is the root endodermal defect of sgn3 that is causative for the overall growth defect of the mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the rescue experiment showing that endodermis-specific expression of SGN3 is sufficient to restore normal growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "55ca3fd0-1555-4413-adf1-0ab18ae3d5bf",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C45",
+      "claim": "The numerous, repeated Casparian strip discontinuities in sgn3 must generate an apoplastic bypass for both water and solutes in the mutant root.",
+      "claim_type": "EXPLICIT",
+      "source": "The numerous, repeated Casparian strip discontinuities in sgn3 must generate an apoplastic bypass for both water and solutes in the mutant root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural defects observed in the Casparian strip.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "8f484772-385e-4749-a46d-5f4f8431b898",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C46",
+      "claim": "Transpiration rate per surface area in sgn3 mutants are very similar to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that transpiration rate per surface area in sgn3 mutants are very similar to wild type (Figure 4D) revealing that there is no compensatory downregulation of transpiration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transpiration measurements shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "5c2893e5-8a29-42d9-8749-3d2158d5271b",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C47",
+      "claim": "There is no compensatory downregulation of transpiration in sgn3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that transpiration rate per surface area in sgn3 mutants are very similar to wild type (Figure 4D) revealing that there is no compensatory downregulation of transpiration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that transpiration rates are similar to wild type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "d17eb1ea-661a-47c4-b2fe-677e2ba31859",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C48",
+      "claim": "Root pressure, as estimated by xylem sap exudation from hypocotyls after decapitation, was lower in the sgn3 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found that root pressure, as estimated by xylem sap exudation from hypocotyls after decapitation, was lower in the sgn3 mutant (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by xylem sap exudation measurements shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "9d33252f-497d-4a5d-90d8-c2396e06ff76",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C49",
+      "claim": "sgn3 showed a decreased rate of leaf guttation, a process more indirectly dependent on root pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "sgn3 also showed a decreased rate of leaf guttation, a process more indirectly dependent on root pressure, but that can be observed less invasively (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by guttation measurements shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "d68ebd14-cc9c-463e-87a4-35c89fb6dd29",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C50",
+      "claim": "sgn3 mutants show a significant increase in root hydrostatic hydraulic conductivity (Lpr-h) compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As a more direct measure of apoplastic water flow, we inserted excised roots in a pressure chamber and found a significant increase in root hydrostatic hydraulic conductivity (Lpr-h) in sgn3 mutants compared to wild type (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by hydraulic conductivity measurements shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "8276cfa0-c3a5-41f0-89c1-b71bd52d291a",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C51",
+      "claim": "The defects of Casparian strip formation may allow an apoplastic bypass for water in pressurized sgn3 roots thereby explaining its increased Lpr-h.",
+      "claim_type": "EXPLICIT",
+      "source": "The defects of Casparian strip formation may allow an apoplastic bypass for water in pressurized sgn3 roots thereby explaining its increased Lpr-h.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative interpretation of the increased hydraulic conductivity data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "9b796097-b22e-4a9e-94f3-43b750429d08",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C52",
+      "claim": "The findings are the first genetic evidence that Casparian strips can be relevant for root pressure buildup and impose a hydraulic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are the first genetic evidence that Casparian strips can be relevant for root pressure buildup and impose a hydraulic resistance; the magnitude of the observed effects nevertheless indicates that an intact Casparian strip is not an absolute requirement and that unmodified walls and/or suberized cells can generate a sufficiently high resistance to radial waterflow so that the positive root pressure can be maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the water transport measurements in sgn3 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "33bf5989-61b4-4aff-bc1d-09fa56b8a8bd",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C53",
+      "claim": "An intact Casparian strip is not an absolute requirement for root pressure, and unmodified walls and/or suberized cells can generate a sufficiently high resistance to radial waterflow so that positive root pressure can be maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are the first genetic evidence that Casparian strips can be relevant for root pressure buildup and impose a hydraulic resistance; the magnitude of the observed effects nevertheless indicates that an intact Casparian strip is not an absolute requirement and that unmodified walls and/or suberized cells can generate a sufficiently high resistance to radial waterflow so that the positive root pressure can be maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that sgn3 mutants still maintain some root pressure despite lacking intact Casparian strips.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "3573ce28-1331-4ed4-b2e5-dcb8b3ce84f6",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C54",
+      "claim": "All of the seven more highly expressed genes in sgn3 were found to be also induced by potassium starvation, suggesting a latent, weak potassium deficiency stress under these conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Only little differences between sgn3 and wild type were observed. Yet, all of the seven more highly expressed genes in sgn3 were found to be also induced by potassium starvation, suggesting a latent, weak potassium deficiency stress under these conditions (Figure 5A, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microarray data shown in Figure 5A and analysis using Genevestigator.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "3db530ba-e481-4acb-9330-04e8bd776a05",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C55",
+      "claim": "Both AKT1 and HAK5, well-established transcriptional read-outs of potassium deficiency in roots, were upregulated in sgn3.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this indication, we tested well-established transcriptional read-outs of potassium deficiency in roots, the potassium influx transport proteins AKT1 and HAK5, and found that both were upregulated in sgn3 (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative RT-PCR data shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "666a9d89-56f8-4371-95aa-fffa28a74705",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C56",
+      "claim": "Concentrations of most elements remained essentially unaltered in sgn3 despite the dramatic apoplastic bypass in sgn3 roots.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, concentrations of most elements remained essentially unaltered in sgn3. Despite the dramatic apoplastic bypass in sgn3 roots, the mutants managed to maintain wild type levels of sodium (Na), calcium (Ca), or boron (B), for example.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ionomic analysis data shown in Figure 5D and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "ad0fdee8-992f-4c46-bab4-abde46b92da1",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C57",
+      "claim": "sgn3 mutants managed to maintain wild type levels of sodium (Na), calcium (Ca), or boron (B).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the dramatic apoplastic bypass in sgn3 roots, the mutants managed to maintain wild type levels of sodium (Na), calcium (Ca), or boron (B), for example.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ionomic analysis data shown in Figure 5D and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "a3f69a48-1213-4c49-8f11-d1d912bb555f",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C58",
+      "claim": "Among the measured transition elements (Mo, Co, Mn, Zn, Fe, Cu, Zn) only zinc showed a significant decrease in some measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the measured transition elements (Mo, Co, Mn, Zn, Fe, Cu, Zn) only zinc showed a significant decrease in some measurements (Figure 5D, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ionomic analysis data shown in Figure 5D and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "92e38f4b-d8b9-43cb-bffa-b54e6ca4a977",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C59",
+      "claim": "Lower levels of potassium (K) were invariably found in the sgn3 mutant (ranging from 1.4\u20133.0 fold reduction).",
+      "claim_type": "EXPLICIT",
+      "source": "However, matching the transcriptional profiling results, we invariably found lower levels of potassium (K) in the mutant (ranging from 1.4\u20133.0 fold reduction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ionomic analysis data shown in Figure 5D and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "a2bf5810-cd3f-42b7-a957-d51296048575",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C60",
+      "claim": "Levels of magnesium (Mg) and cesium (Cs) accumulated to higher levels than in wild type, ranging from 1.5\u20132.1 and 1.3- to 1.4-fold increase, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, levels of magnesium (Mg) and cesium (Cs) accumulated to higher levels than in wild type, ranging from 1.5\u20132.1 and 1.3- to 1.4-fold increase, respectively (Figure 5D, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ionomic analysis data shown in Figure 5D and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "996e67a8-fb0e-4daa-a964-524c19a30a69",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C61",
+      "claim": "Wild type plants coped well with conditions of low potassium nutrition, with most plants displaying no or only very weak chlorosis on older rosette leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type plants coped well with conditions of low potassium nutrition, with most plants displaying no or only very weak chlorosis on older rosette leaves, indicative of potassium deficiency (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth observations under low potassium conditions shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "08bfe091-c5c6-4132-a963-148e92269ce1",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C62",
+      "claim": "Wild type maintained higher potassium concentration than sgn3 under low potassium conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, wild type also maintained higher potassium concentration than sgn3 under these conditions (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ionomic analysis under low potassium conditions shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "ed86d1c2-71c3-491f-b49c-ec88b7165f59",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C63",
+      "claim": "The sgn3 mutant developed severe chlorosis of its rosette leaf margins under low potassium conditions, characteristic of strong potassium deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The sgn3 mutant in contrast, developed severe chlorosis of its rosette leaf margins, characteristic of strong potassium deficiency (Marschner and Marschner, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by growth observations shown in Figure 5E,F, with reference to Marschner and Marschner, 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "d4e4cca6-3548-4830-836a-23cfc39df0cb",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C64",
+      "claim": "sgn3 has an impaired capacity to accumulate sufficient potassium under conditions of low supply of this element.",
+      "claim_type": "EXPLICIT",
+      "source": "sgn3 therefore has an impaired capacity to accumulate sufficient potassium under conditions of low supply of this element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the severe potassium deficiency symptoms observed in sgn3 under low potassium conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "502f5fef-aa66-4ab1-b233-99fea9a7b78f",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C65",
+      "claim": "The sgn3 mutant represents a powerful new tool to better understand root uptake and transport mechanism of most other plant nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "The sgn3 mutant represents a powerful new tool to better understand root uptake and transport mechanism of most other plant nutrients as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about the potential utility of the mutant for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "722817da-4e56-44c9-998a-9d28ca0db69d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C66",
+      "claim": "The initial analysis of the sgn3 mutant challenges the current notions of the role of the Casparian strip as a required barrier for most or all elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial analysis of the sgn3 mutant challenges the current notions of the role of the Casparian strip as a required barrier for most or all elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that most elements maintain homeostasis in sgn3 despite the barrier defect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "5ac9bf85-a8d3-4da1-8d54-fb45f07d047a",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C67",
+      "claim": "Potassium is the only macronutrient (N,P,K,S) that is not integrated into polymers and that remains highly mobile within the plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Potassium (K) is the only macronutrient (N,P,K,S) that is not integrated into polymers and that remains highly mobile within the plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about potassium biochemistry in plants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "8756001f-3a08-4e2d-96d2-0c6940f857a9",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C68",
+      "claim": "Potassium is being used as a counter ion in many transport process and is recycled back to the root along with the phloem sap.",
+      "claim_type": "EXPLICIT",
+      "source": "It is being used as a counter ion in many transport process and is recycled back to the root along with the phloem sap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about potassium transport in plants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "e3e03a68-0aac-4125-969c-ffbce005f6b4",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C69",
+      "claim": "Concentrations of potassium required for plant growth are high and potassium often needs to be concentrated 10\u2013100 fold over the concentration found in the soil.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, concentrations of potassium required for plant growth are high and potassium often needs to be concentrated 10\u2013100 fold over the concentration found in the soil (Marschner and Marschner, 2012; Wang and Wu, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to Marschner and Marschner, 2012 and Wang and Wu, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "4046abdb-1c09-4df9-8040-99d8cb8e0f1a",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C70",
+      "claim": "It makes sense that potassium is an element that cannot be kept at sufficiently high levels in Casparian strip defective plants.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore makes a lot of sense that potassium is an element that cannot be kept at sufficiently high levels in Casparian strip defective plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the properties of potassium and the observations in sgn3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "20b85c13-b262-43c0-b033-5e49d250cd10",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C71",
+      "claim": "Potassium located in the stelar apoplast is continuously lost to the outer cell layers and the soil in the absence of functional Casparian strips.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that potassium located in the stelar apoplast is continuously lost to the outer cell layers and the soil in the absence of functional Casparian strips.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative model proposed to explain the potassium deficiency in sgn3.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "e990f701-c45e-40a2-88f7-3478d44a65f2",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C72",
+      "claim": "Upregulation of potassium influx carriers in cortex/epidermis would be able to recuperate large parts of the potassium being lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulation of potassium influx carriers in cortex/epidermis, as we have observed in sgn3 roots, would certainly be able to recuperate large parts of the potassium being lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative interpretation of the observed upregulation of potassium transporters.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "32738e85-aaed-45d8-aa9d-38ae443925b8",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C73",
+      "claim": "A chronic condition of very low external potassium would lead to a breakdown in transporter-mediated 'potassium recycling' and eventually cause the deficiency phenotypes observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a chronic condition of very low external potassium would lead to a breakdown in this transporter-mediated 'potassium recycling' and eventually cause the deficiency phenotypes that we observe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative model proposed to explain the potassium deficiency phenotype in sgn3 under low potassium conditions.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "6376ce40-8f84-43c4-8807-6671647a8917",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C74",
+      "claim": "There should be a higher rate of potassium flux out-of and into the root stele in a sgn3 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "From this scenario, it follows that there should be a higher rate of potassium flux out-of and into the root stele in a sgn3 mutant and that potassium homeostasis in the mutant is extremely dependent on increased activity of potassium transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction derived from the proposed 'potassium recycling' model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "8ab113bf-c18e-4696-8533-7df8865b14c3",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C75",
+      "claim": "Potassium homeostasis in the sgn3 mutant is extremely dependent on increased activity of potassium transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "From this scenario, it follows that there should be a higher rate of potassium flux out-of and into the root stele in a sgn3 mutant and that potassium homeostasis in the mutant is extremely dependent on increased activity of potassium transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction derived from the proposed 'potassium recycling' model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "e4e07cd7-2ec3-4968-baad-132ab4752b33",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C76",
+      "claim": "An increase in the levels of magnesium could be explained by a lower concentration gradient between the xylem sap and the external environment and a lower mobility of Calcium within the cell wall space.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by a lower concentration gradient between the xylem sap and the external environment and a lower mobility of Calcium within the cell wall space (Clarkson, 1984; White and Broadley, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation for the differential effects on magnesium vs. calcium, with references to Clarkson, 1984 and White and Broadley, 2003.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "1d8e914b-9ef2-4abb-9e5d-9ec5b5f2faab",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C77",
+      "claim": "Calcium delivery to aerial tissues is thought to occur either entirely through the apoplast or to employ a very short symplastic route passing exclusively through endodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, calcium delivery to aerial tissues is thought to occur either entirely through the apoplast\u2013using the few apoplastic 'bypasses' of the endodermis at the root tip or at lateral root emergence sites (White, 2001)\u2014or to employ a very short symplastic route passing exclusively through endodermal cells (Clarkson, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established models of calcium transport, with references to White, 2001 and Clarkson, 1984.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "22e519fc-ba7f-4ddd-b98e-900a58a8f789",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C78",
+      "claim": "It is surprising that the opening of a massive apoplastic bypass in the sgn3 mutant has no effect on calcium homeostasis, while it did affect levels of magnesium.",
+      "claim_type": "EXPLICIT",
+      "source": "In both scenarios, it is surprising that the opening of a massive apoplastic bypass in the sgn3 mutant has no effect on calcium homeostasis, while it did affect levels of magnesium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an observation that challenges current understanding of calcium transport.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "7e3169b8-62bb-4e99-9881-3452e1374df8",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C79",
+      "claim": "Magnesium is more mobile in the apoplast than Calcium and undergoes increased apoplastic transport into the transpiration stream in sgn3.",
+      "claim_type": "EXPLICIT",
+      "source": "Possibly, magnesium is more mobile in the apoplast than Calcium and undergoes increased apoplastic transport into the transpiration stream in sgn3 (Thibault and Rinaudo, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation for the differential effects on magnesium vs. calcium, with reference to Thibault and Rinaudo, 1985.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "219734d6-1453-4bf3-a76c-83803eb49f9d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C80",
+      "claim": "The endodermis represents the main barrier to extracellular diffusion in plant roots.",
+      "claim_type": "EXPLICIT",
+      "source": "The endodermis represents the main barrier to extracellular diffusion in plant roots, and it is central to current models of plant nutrient uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about root anatomy and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "74021b3f-5e19-4dd1-b4fd-d5ff3485d2cc",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C81",
+      "claim": "SGN3/GASSHO1 is a receptor-like kinase that is necessary for localizing CASPARIAN STRIP DOMAIN PROTEINS (CASPs) into an uninterrupted, ring-like domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that SGN3/GASSHO1 is a receptor-like kinase that is necessary for localizing CASPARIAN STRIP DOMAIN PROTEINS (CASPs)\u2014major players of endodermal differentiation\u2014into an uninterrupted, ring-like domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple lines of experimental evidence including localization studies and mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "1767dc95-f17c-418e-a5be-079573df413e",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C82",
+      "claim": "SGN3 appears to localize into a broader band, embedding growing CASP microdomains.",
+      "claim_type": "EXPLICIT",
+      "source": "SGN3 appears to localize into a broader band, embedding growing CASP microdomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by confocal microscopy observations shown in Figure 2D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "c862cadb-c4f1-46bb-a9b3-09f8dc09a1f2",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C83",
+      "claim": "The sgn3 mutant demonstrates a major defect in maintaining sufficient levels of the macronutrient potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a surprising ability of the mutant to maintain nutrient homeostasis, but demonstrate a major defect in maintaining sufficient levels of the macronutrient potassium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ionomic analysis and potassium deficiency experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "d78b607e-2d8c-4ed0-91c9-40277a4dc866",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C84",
+      "claim": "The plant root is a highly selective filter that forages the soil environment for nutrients and water.",
+      "claim_type": "EXPLICIT",
+      "source": "The plant root is a highly selective filter that forages the soil environment for nutrients and water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about root function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "57f69198-abbf-4cc7-9028-7f9d6dcc091d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C85",
+      "claim": "The function of roots has been likened to that of an 'inverted gut', displaying a very similar dual role in uptake and protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Its function has been likened to that of an 'inverted gut', displaying a very similar dual role in uptake and protection (Waisel et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to Waisel et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "7fd2b625-33b1-4ea8-98d4-1e6100fd773d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C86",
+      "claim": "Selectivity of roots is thought to crucially depend on the endodermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Selectivity of roots is thought to crucially depend on the endodermis, an inner cell layer that surrounds the central vascular strand of the root and represents the main paracellular (apoplastic) transport barrier in young roots (Geldner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge with reference to Geldner, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "78832172-2a8f-43dc-afc4-79595de08389",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C87",
+      "claim": "The apoplastic diffusion barrier is set up by the 'Casparian strips', lignin-like, hydrophobic impregnations of the primary cell wall that form a supracellular net-like structure around the central vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "This apoplastic diffusion barrier is set up by the 'Casparian strips', lignin-like, hydrophobic impregnations of the primary cell wall that form a supracellular net-like structure around the central vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Casparian strip structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "4a387ab5-e417-4f3b-b297-fe6295b1eeb9",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C88",
+      "claim": "The net-like arrangement of Casparian strips provides a seal of the extracellular space, while still allowing for nutrient and water transport across outer and inner plasma membrane surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "In analogy to the tight junction of gut epithelia, this net-like arrangement provides a seal of the extracellular space, while still allowing for nutrient and water transport across outer and inner plasma membrane surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established understanding of Casparian strip function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "680631ef-a156-44c4-b1a2-da6f6de2fc09",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C89",
+      "claim": "The Casparian strip-bearing endodermis represents an independent development of a polarized epithelium, evolved in the context of multi-cellular organisms with wall-bearing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Casparian strip-bearing endodermis therefore represents an independent development of a polarized epithelium, evolved in the context of multi-cellular organisms with wall-bearing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on evolutionary and comparative biology knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "9507b765-69b2-4e92-b599-ff99ccb0ddcb",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C90",
+      "claim": "Later during endodermal development, hydrophobic (cork-like) suberin lamellae form all around the endodermal surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Later during endodermal development, hydrophobic (cork-like) suberin lamellae form all around the endodermal surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about endodermal development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "df7ef822-54cf-4862-ad40-c8b41a7e5253",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C91",
+      "claim": "Protective suberization should eventually abolish direct transport across the endodermal plasma membrane, forcing symplastic passage through plasmodesmata from outer cell layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This protective suberization should eventually abolish direct transport across the endodermal plasma membrane, forcing symplastic passage through plasmodesmata from outer cell layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established understanding of suberin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "030afc80-a475-4649-b38d-c117b91a92b9",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C92",
+      "claim": "A family of previously undescribed four-transmembrane-span proteins, called CASPs, forms a central, ring-like membrane domain in the endodermis, called the Casparian strip membrane domain (CSD).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent papers established that a family of previously undescribed four-transmembrane-span proteins, called CASPs, forms a central, ring-like membrane domain in the endodermis, called the Casparian strip membrane domain (CSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to recent publications on CASPs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "56050660-fe27-4742-9196-521d1b118848",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C93",
+      "claim": "The CSD acts as a lateral diffusion barrier and separates the endodermal plasma membrane into two distinct polar domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This domain acts as a lateral diffusion barrier and separates the endodermal plasma membrane into two distinct polar domains (Roppolo et al., 2011; Alassimone et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to Roppolo et al., 2011 and Alassimone et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "a242c705-f979-4568-b7f2-f5e9c8bd9754",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C94",
+      "claim": "Upon localization, the CASPs show extreme stability and a lack of endocytosis or lateral diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon localization, the CASPs show extreme stability and a lack of endocytosis or lateral diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from previous CASP studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "946f1cef-76c0-49a7-afde-fda41679308d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C95",
+      "claim": "CASPs show extensive pair-wise interactions and associate strongly with cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CASPs show extensive pair-wise interactions and associate strongly with cell walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from previous CASP studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "97febd9e-04a8-404d-ba89-4915b38466df",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C96",
+      "claim": "Multiple knock-outs of CASP family members display strongly disorganized formation of Casparian strips, demonstrating their functional importance.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple knock-outs of CASP family members display strongly disorganized formation of Casparian strips, demonstrating their functional importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from previous CASP studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "93dff59d-ab58-4e00-9d34-ac0b1b533d68",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C97",
+      "claim": "The CASPs act as scaffolds that spatially organize cell wall biosynthetic enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that the CASPs act as scaffolds that spatially organize cell wall biosynthetic enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a model based on previous research on CASPs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "110b2b55-3997-4db0-82d2-ee23af2cf45c",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C98",
+      "claim": "CASP1 was shown to determine the subcellular localization of a secreted peroxidase, PER64.",
+      "claim_type": "EXPLICIT",
+      "source": "CASP1 was shown to determine the subcellular localization of a secreted peroxidase, PER64 (Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "14ced844-33bf-4272-9f92-d88d2926fdde",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C99",
+      "claim": "In current models, the role of CASPs is to assemble a specific NADPH oxidase with peroxidases, leading to oxidation of mono-lignols and local polymerization of lignin.",
+      "claim_type": "EXPLICIT",
+      "source": "In current models, the role of CASPs is to assemble a specific NADPH oxidase with peroxidases, leading to oxidation of mono-lignols and local polymerization of lignin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on current models of Casparian strip formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "aa6be14a-8025-4a26-9225-70f2b750d761",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C100",
+      "claim": "ENHANCED SUBERIN 1 (ESB1), a dirigent-like protein is a cell wall protein that has been demonstrated to be crucial for the correct formation of Casparian strips.",
+      "claim_type": "EXPLICIT",
+      "source": "Lignin formation in vivo must implicate numerous other cell wall proteins and ENHANCED SUBERIN 1 (ESB1), a dirigent-like protein is a cell wall protein that has also been demonstrated to be crucial for the correct formation of Casparian strips (Hosmani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to Hosmani et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "498a2f21-ecc7-4f6f-9745-351e39bd7bc4",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C101",
+      "claim": "Multiple mutants of the CASP family display interrupted Casparian strips in the beginning, but rather quickly deposit more cell wall material in a delocalized fashion, eventually sealing the apoplast.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple mutants of the CASP family display interrupted Casparian strips in the beginning, but rather quickly deposit more cell wall material in a delocalized fashion, eventually sealing the apoplast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of CASP mutant phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "ab0f0a82-a7ca-4f00-80e6-48588673c63a",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C102",
+      "claim": "Both CASP mutants and esb1 mutant display an earlier and stronger production of suberin lamellae.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both mutants display an earlier and stronger production of suberin lamellae (esb1 was named based on this phenomenon).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of CASP and esb1 mutant phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "8a84c851-daaa-4247-b02f-c619d1eb4450",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C103",
+      "claim": "In the rbohf mutant, the Casparian strip defect is only partial and restricted to the young part of the root.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rbohf mutant, the Casparian strip defect is only partial and restricted to the young part of the root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of rbohf mutant phenotype, with reference to Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "b4dded92-90dd-4711-94bb-e4b996a0a078",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C104",
+      "claim": "RBOHF has roles in many different aspects of plant development.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RBOHF has roles in many different aspects of plant development and it would be hard to distinguish what phenotype is directly caused by defects in Casparian strip formation (Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "51d1001c-6c84-4bc1-b71b-dc40a533d291",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C105",
+      "claim": "SGN3 loss-of-function leads to the strongest defects in Casparian strips known to date.",
+      "claim_type": "EXPLICIT",
+      "source": "SGN3 loss-of-function leads to the strongest defects in Casparian strips known to date, with no indication of a compensatory upregulation of suberin, as seen for other mutants (Hosmani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of sgn3 phenotype with other Casparian strip mutants, with reference to Hosmani et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "548b84e4-1c3c-4eff-9232-a03a72a2790b",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C106",
+      "claim": "The sgn3 mutant shows no indication of a compensatory upregulation of suberin, as seen for other mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "SGN3 loss-of-function leads to the strongest defects in Casparian strips known to date, with no indication of a compensatory upregulation of suberin, as seen for other mutants (Hosmani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by suberin staining data shown in Figure 1D,E, with reference to Hosmani et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "da1b6839-0631-4638-bd41-2f7463073679",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C107",
+      "claim": "The analysis reveals a surprising capacity of the sgn3 mutant to maintain homeostatic control in the absence of the major root diffusion barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals a surprising capacity of the mutant to maintain homeostatic control in the absence of the major root diffusion barrier and challenges views according to which the root should lose its ability for selective nutrient uptake, because of a generalized, non-selective bypass of nutrients into the vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ionomic analysis showing maintenance of most element concentrations in sgn3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "7d362145-77a7-4841-a073-68bc6609e67e",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C108",
+      "claim": "The sgn3 mutant challenges views according to which the root should lose its ability for selective nutrient uptake, because of a generalized, non-selective bypass of nutrients into the vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals a surprising capacity of the mutant to maintain homeostatic control in the absence of the major root diffusion barrier and challenges views according to which the root should lose its ability for selective nutrient uptake, because of a generalized, non-selective bypass of nutrients into the vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that most elements maintain homeostasis in sgn3 despite the barrier defect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "52a720ed-dafe-483d-b6ed-e9ce5bf90ce3",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C109",
+      "claim": "Only a C-terminal mVenus fusion with a 9.4-kb genomic fragment containing intron, 5\u2032UTR, and the upstream neighboring gene, provided full complementation of the sgn3 mutant phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a C-terminal mVenus fusion with a 9.4-kb genomic fragment containing intron, 5\u2032UTR, and the upstream neighboring gene, provided full complementation of the mutant phenotype, indicating functionality of the protein fusion and of its regulatory sequences (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by complementation data shown in Figure 2\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "0d6a79fb-41e6-468b-be42-185601ecee4d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "claim_id": "C110",
+      "claim": "The C-terminal mVenus fusion construct indicates functionality of the protein fusion and of its regulatory sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a C-terminal mVenus fusion with a 9.4-kb genomic fragment containing intron, 5\u2032UTR, and the upstream neighboring gene, provided full complementation of the mutant phenotype, indicating functionality of the protein fusion and of its regulatory sequences (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the successful complementation of the mutant phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4a87b1aa-ce06-4777-a5d7-a8bbff9f863c",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SGN3 encodes a leucine-rich-repeat receptor-like kinase (LRR-RLK) of subfamily XI that is essential for endodermal barrier formation. The sgn3 mutant displays dramatic defects in barrier function as visualized by propidium iodide penetration, and 14 novel alleles were identified in a forward genetic screen, indicating SGN3 is a major non-redundant gene for CASP localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7, and C8 are well-supported by complementary experimental approaches including forward genetic screens, sequencing, complementation analysis, and PI permeability assays (Figure 1A,B). The identification of 14 independent alleles provides strong genetic evidence for SGN3's non-redundant role. The molecular characterization is consistent with previous work (Tsuwamoto et al., 2008).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "4a3fa10f-d3e2-4aed-b6af-489bdb165486",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In sgn3 mutants, the Casparian strip is still formed and correctly positioned but is repeatedly interrupted, forming irregularly-sized gaps. All five CASPs (CASP1-5) show identical interrupted localization patterns that mirror the Casparian strip defects, while suberin lamellae formation appears normal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 and C9 are supported by multiple imaging modalities including autofluorescence microscopy (Figure 1C), Fluorol Yellow staining (Figure 1D,E), and confocal microscopy of CASP-GFP fusions (Figure 1F, Figure 1\u2014figure supplement 1E). The correlation between CASP localization defects and Casparian strip discontinuities is compelling, though the causal inference in C6 could benefit from additional functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "26c62833-4df8-4269-899d-47df30f354ee",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The interrupted Casparian strip domain (CSD) in sgn3 abolishes the lateral diffusion barrier between inner and outer plasma membrane domains, yet polar localization of the transporter PDR6 is maintained, indicating that strict polarity can be maintained in the absence of a diffusion barrier.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by plasma membrane marker localization studies (Figure 1G,H). The observation that generic membrane proteins show exclusion patterns that are the negative image of CASP islands is elegant evidence for loss of the diffusion barrier. However, the conclusion in C13 about polarity maintenance mechanisms is somewhat speculative and would benefit from additional mechanistic investigation of PDR6 localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "6a71ee81-78f3-4f61-be5d-6a07d59e9306",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "sgn3 mutants fail to progress from the 'string of pearls' stage of CASP localization, undergoing only partial fusion of CASP islands. However, CASP stability (measured by FRAP) and cell wall attachment (measured by plasmolysis) remain intact, indicating a specific defect in CASP island fusion rather than general trafficking or polymerization defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17, C19-C20 are well-supported by time-lapse microscopy (Figure 2A), FRAP experiments (Figure 2B), and plasmolysis assays (Figure 2\u2014figure supplement 1). The combination of these complementary approaches provides strong evidence for the specific nature of the sgn3 defect. The FRAP data showing similar recovery kinetics in wild-type and mutant is particularly convincing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SGN3 is expressed before CASP1 in differentiating endodermal cells and localizes to a broader plasma membrane domain that flanks and embeds the CSD, surrounding individual CASP islands during the critical fusion phase. This localization pattern is consistent with a role in promoting CASP island fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 are supported by expression analysis (Figure 2C) and detailed confocal microscopy of SGN3-mVenus localization (Figure 2D-G). The complementation data (C109-C110, Figure 2\u2014figure supplement 2) validates the functionality of the tagged construct. However, C27 is speculative about SGN3's mechanism of action\u2014the localization is consistent with but does not prove a role in promoting fusion. Direct functional tests would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "37600b1d-091f-4543-ae98-53af492a59e8",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ESB1 localizes correctly in sgn3 mutants, and sgn3 esb1 double mutants show additive effects on Casparian strip discontinuities but complete epistasis of sgn3 over esb1 for enhanced suberin formation. The same epistatic relationship exists between sgn3 and casp1 casp3, suggesting SGN3 mediates the signaling that leads to compensatory suberin formation in other Casparian strip mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 and C38 are supported by genetic analysis and microscopy (Figure 3). The epistasis analysis is well-designed and the quantification of Casparian strip presence (Figure 3C) and suberin deposition (Figure 3D) is rigorous. However, the mechanistic interpretation in C38 about SGN3 mediating perception/signaling is an inference that requires additional molecular evidence. The epistasis could also be explained by other models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "96544327-d7bb-401a-a909-2f8f247c515d",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Despite severe barrier defects, sgn3 displays relatively mild growth phenotypes under certain conditions but is extremely sensitive to non-stressful environmental changes (temperature, day length). Endodermis-specific expression of SGN3 fully rescues the growth phenotype, demonstrating that the root endodermal defect is causative for overall growth defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by systematic growth analysis under varied conditions (Figure 4A,B, Figure 4\u2014figure supplement 1) and tissue-specific complementation (Figure 4C). The rescue experiment with CASP1::SGN3-GFP is particularly strong evidence for C44. However, the extreme environmental sensitivity raises questions about whether all experiments were conducted under sufficiently controlled conditions, and whether some phenotypic variability might reflect experimental variation rather than biological sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "sgn3 mutants maintain normal transpiration rates but show decreased root pressure (measured by xylem sap exudation and guttation) and increased root hydrostatic hydraulic conductivity (Lpr-h). These findings provide the first genetic evidence that Casparian strips contribute to root pressure buildup and impose hydraulic resistance, though an intact Casparian strip is not absolutely required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by multiple water transport assays (Figure 4D-G). The measurements are technically sound and use appropriate methods. However, C51 is speculative about the mechanism, and the interpretation in C52-C53 should be more cautious\u2014the data show that Casparian strips contribute to but are not essential for root pressure, but the magnitude of effects is modest and statistical significance is not always clearly demonstrated (e.g., Figure 4E shows overlap in error bars).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ionomic analysis reveals that sgn3 mutants maintain homeostasis for most elements (Na, Ca, B, and most transition metals) despite the dramatic apoplastic bypass, but consistently show reduced potassium levels (1.4-3.0 fold reduction) and increased magnesium and cesium levels. This challenges the notion that the Casparian strip is a required barrier for most elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 are supported by comprehensive ionomic analysis across multiple laboratories, growth conditions, and analytical methods (Figure 5A-D, Figure 5\u2014source data 1-2). The microarray data (C54) and qRT-PCR validation (C55) provide transcriptional support. The reproducibility across different experimental setups is impressive. However, the interpretation in C66, C107-C108 should acknowledge that 'homeostasis' may mask compensatory mechanisms\u2014similar tissue concentrations don't necessarily mean normal physiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Under low potassium conditions, sgn3 mutants develop severe chlorosis characteristic of strong potassium deficiency, while wild-type plants cope well. This demonstrates that sgn3 has an impaired capacity to accumulate sufficient potassium under low supply conditions, which is consistent with potassium's unique properties as a highly mobile macronutrient that requires 10-100 fold concentration from soil.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 are supported by growth experiments under K+ limitation (Figure 5E,F, Figure 5\u2014figure supplement 1). The phenotypic observations are clear and well-documented. Claims C67-C70 provide appropriate biochemical context from the literature. However, the sample sizes for the ionomic analysis under low K+ conditions (Figure 5\u2014figure supplement 1) appear limited, and more replicates would strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "68229e14-7643-4ffc-9ff4-cd6ae63ac90c",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a 'potassium recycling' model where potassium in the stelar apoplast is continuously lost to outer cell layers and soil in sgn3, and upregulated potassium influx carriers can partially recuperate this loss. Under chronic low external potassium, this recycling breaks down, causing deficiency phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C75 are entirely speculative models proposed to explain the potassium phenotype. While the model is plausible and consistent with the observations, there is no direct experimental evidence for increased potassium flux, the proposed recycling mechanism, or the dependence on transporter activity. The authors acknowledge this is a scenario that 'follows' from their observations. This requires direct testing through flux measurements, transporter localization studies, or genetic manipulation of K+ transporters in the sgn3 background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    },
+    {
+      "id": "43e2626c-9ebc-42c2-bb1f-366a31aaf9cb",
+      "content_id": "d3c164c3-02b5-47b5-98e9-a127f3a17999",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The differential effects on magnesium (increased) versus calcium (unchanged) in sgn3 are surprising given current models of calcium transport. The authors speculate this could be explained by differences in apoplastic mobility and concentration gradients between these divalent cations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C79 are largely speculative interpretations of the ionomic data. While the observation in C78 is valid and interesting, the explanations in C76 and C79 are not supported by direct experimental evidence. The references to Clarkson (1984), White and Broadley (2003), and Thibault and Rinaudo (1985) provide theoretical context but don't validate the specific mechanisms proposed. This would require direct measurements of apoplastic mobility and transport kinetics for Mg2+ and Ca2+.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:25:34.282165Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6f2bf9d5-c43a-4122-b224-017b02c654da",
+      "result_id": "4a87b1aa-ce06-4777-a5d7-a8bbff9f863c"
+    },
+    {
+      "claim_id": "5e444f02-776b-4dce-89f0-4d264ad11b55",
+      "result_id": "4a87b1aa-ce06-4777-a5d7-a8bbff9f863c"
+    },
+    {
+      "claim_id": "7116a8e7-0335-4a27-9757-bb0034bcf074",
+      "result_id": "4a87b1aa-ce06-4777-a5d7-a8bbff9f863c"
+    },
+    {
+      "claim_id": "bf9be8bc-f856-4c07-ae40-0b87df5bbe71",
+      "result_id": "4a87b1aa-ce06-4777-a5d7-a8bbff9f863c"
+    },
+    {
+      "claim_id": "74021b3f-5e19-4dd1-b4fd-d5ff3485d2cc",
+      "result_id": "4a87b1aa-ce06-4777-a5d7-a8bbff9f863c"
+    },
+    {
+      "claim_id": "51d1001c-6c84-4bc1-b71b-dc40a533d291",
+      "result_id": "4a87b1aa-ce06-4777-a5d7-a8bbff9f863c"
+    },
+    {
+      "claim_id": "548b84e4-1c3c-4eff-9232-a03a72a2790b",
+      "result_id": "4a87b1aa-ce06-4777-a5d7-a8bbff9f863c"
+    },
+    {
+      "claim_id": "cf3aa99e-de34-4223-b6b1-a5971de00406",
+      "result_id": "4a3fa10f-d3e2-4aed-b6af-489bdb165486"
+    },
+    {
+      "claim_id": "1f676185-f9ed-439e-8bd5-3824f19e2fe9",
+      "result_id": "4a3fa10f-d3e2-4aed-b6af-489bdb165486"
+    },
+    {
+      "claim_id": "173b48b0-3c9c-4aa7-8802-9a467c4b00b6",
+      "result_id": "4a3fa10f-d3e2-4aed-b6af-489bdb165486"
+    },
+    {
+      "claim_id": "cf0d7f57-b12e-4655-8460-301799b6ff85",
+      "result_id": "4a3fa10f-d3e2-4aed-b6af-489bdb165486"
+    },
+    {
+      "claim_id": "23e406f9-e7e9-47a2-a9e9-2fd0b8729244",
+      "result_id": "4a3fa10f-d3e2-4aed-b6af-489bdb165486"
+    },
+    {
+      "claim_id": "dff65555-8330-48a6-9369-0fd065b5fddd",
+      "result_id": "26c62833-4df8-4269-899d-47df30f354ee"
+    },
+    {
+      "claim_id": "19234181-0c9f-426d-8cd7-98fae3624860",
+      "result_id": "26c62833-4df8-4269-899d-47df30f354ee"
+    },
+    {
+      "claim_id": "4cfab786-16a7-4115-a85d-ef35f32a2947",
+      "result_id": "26c62833-4df8-4269-899d-47df30f354ee"
+    },
+    {
+      "claim_id": "ec1ad286-4a1b-4aec-8f81-25abf067847e",
+      "result_id": "26c62833-4df8-4269-899d-47df30f354ee"
+    },
+    {
+      "claim_id": "680862cd-e166-4bde-9178-badedcfb3af7",
+      "result_id": "6a71ee81-78f3-4f61-be5d-6a07d59e9306"
+    },
+    {
+      "claim_id": "8e78c092-ac53-443b-ad84-769321f3c7af",
+      "result_id": "6a71ee81-78f3-4f61-be5d-6a07d59e9306"
+    },
+    {
+      "claim_id": "4cb427e2-2173-44a5-bf9b-024fa8b875a0",
+      "result_id": "6a71ee81-78f3-4f61-be5d-6a07d59e9306"
+    },
+    {
+      "claim_id": "1f76f4b3-f9b5-414f-b007-d0feeedb1148",
+      "result_id": "6a71ee81-78f3-4f61-be5d-6a07d59e9306"
+    },
+    {
+      "claim_id": "c559f032-bdb7-45ac-b2d2-48bec5cb9fa6",
+      "result_id": "6a71ee81-78f3-4f61-be5d-6a07d59e9306"
+    },
+    {
+      "claim_id": "c75acfbd-e5eb-4cea-bc91-80398c692613",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "4152e003-98b3-492b-8bb4-1b76d7d3669a",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "f08a8f38-7c8c-4016-b001-58344edb81c8",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "bf25a987-cdb0-4539-b017-9638820af395",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "a740e7c4-09e9-4514-b091-07c766bdc793",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "81acb29f-bbe5-48bb-bebf-06df60173e59",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "1767dc95-f17c-418e-a5be-079573df413e",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "52a720ed-dafe-483d-b6ed-e9ce5bf90ce3",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "0d6a79fb-41e6-468b-be42-185601ecee4d",
+      "result_id": "7eebf1b5-5a30-4cb4-a6d8-be7fca470396"
+    },
+    {
+      "claim_id": "b0092f5f-f8b8-496a-8bec-c940516a11a4",
+      "result_id": "37600b1d-091f-4543-ae98-53af492a59e8"
+    },
+    {
+      "claim_id": "1d83b6e5-83eb-4d5e-9979-9d8b0a29590f",
+      "result_id": "37600b1d-091f-4543-ae98-53af492a59e8"
+    },
+    {
+      "claim_id": "41f0f77b-bb82-4b0a-b5ff-a124c903b6c2",
+      "result_id": "37600b1d-091f-4543-ae98-53af492a59e8"
+    },
+    {
+      "claim_id": "2f53009a-d1b7-44ae-84bd-77bf61767f5b",
+      "result_id": "37600b1d-091f-4543-ae98-53af492a59e8"
+    },
+    {
+      "claim_id": "27005642-a5b7-46aa-9855-2188edb1d89c",
+      "result_id": "37600b1d-091f-4543-ae98-53af492a59e8"
+    },
+    {
+      "claim_id": "7ce325b3-3ed3-48dd-871d-22080043ce7e",
+      "result_id": "37600b1d-091f-4543-ae98-53af492a59e8"
+    },
+    {
+      "claim_id": "0d95d3ee-fc82-4945-a521-c3711f049460",
+      "result_id": "37600b1d-091f-4543-ae98-53af492a59e8"
+    },
+    {
+      "claim_id": "82263a8e-08a3-452c-9817-e3aa9180962d",
+      "result_id": "37600b1d-091f-4543-ae98-53af492a59e8"
+    },
+    {
+      "claim_id": "ad6ceab4-340d-4599-a06d-6e583c70f57d",
+      "result_id": "96544327-d7bb-401a-a909-2f8f247c515d"
+    },
+    {
+      "claim_id": "2b6ce9c1-7a3d-4a3d-b036-75d94d0d696d",
+      "result_id": "96544327-d7bb-401a-a909-2f8f247c515d"
+    },
+    {
+      "claim_id": "5451197d-9c12-4fb4-af8f-50872d35b373",
+      "result_id": "96544327-d7bb-401a-a909-2f8f247c515d"
+    },
+    {
+      "claim_id": "5f8d40d2-a4c6-471a-ad50-2be2b263cdad",
+      "result_id": "96544327-d7bb-401a-a909-2f8f247c515d"
+    },
+    {
+      "claim_id": "6358d938-e55f-425e-8b4e-2ae4db4d2994",
+      "result_id": "96544327-d7bb-401a-a909-2f8f247c515d"
+    },
+    {
+      "claim_id": "7dd78b68-d398-4ede-9d58-912d63a53a8a",
+      "result_id": "96544327-d7bb-401a-a909-2f8f247c515d"
+    },
+    {
+      "claim_id": "8f484772-385e-4749-a46d-5f4f8431b898",
+      "result_id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb"
+    },
+    {
+      "claim_id": "5c2893e5-8a29-42d9-8749-3d2158d5271b",
+      "result_id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb"
+    },
+    {
+      "claim_id": "d17eb1ea-661a-47c4-b2fe-677e2ba31859",
+      "result_id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb"
+    },
+    {
+      "claim_id": "9d33252f-497d-4a5d-90d8-c2396e06ff76",
+      "result_id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb"
+    },
+    {
+      "claim_id": "d68ebd14-cc9c-463e-87a4-35c89fb6dd29",
+      "result_id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb"
+    },
+    {
+      "claim_id": "8276cfa0-c3a5-41f0-89c1-b71bd52d291a",
+      "result_id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb"
+    },
+    {
+      "claim_id": "9b796097-b22e-4a9e-94f3-43b750429d08",
+      "result_id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb"
+    },
+    {
+      "claim_id": "33bf5989-61b4-4aff-bc1d-09fa56b8a8bd",
+      "result_id": "ecf9cef8-ae43-4b1a-93cd-c11757020ceb"
+    },
+    {
+      "claim_id": "3573ce28-1331-4ed4-b2e5-dcb8b3ce84f6",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "3db530ba-e481-4acb-9330-04e8bd776a05",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "666a9d89-56f8-4371-95aa-fffa28a74705",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "ad0fdee8-992f-4c46-bab4-abde46b92da1",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "a3f69a48-1213-4c49-8f11-d1d912bb555f",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "92e38f4b-d8b9-43cb-bffa-b54e6ca4a977",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "a2bf5810-cd3f-42b7-a957-d51296048575",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "722817da-4e56-44c9-998a-9d28ca0db69d",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "c862cadb-c4f1-46bb-a9b3-09f8dc09a1f2",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "da1b6839-0631-4638-bd41-2f7463073679",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "7d362145-77a7-4841-a073-68bc6609e67e",
+      "result_id": "d87d9c8e-eb86-4a96-b4b9-80d2105f3b35"
+    },
+    {
+      "claim_id": "996e67a8-fb0e-4daa-a964-524c19a30a69",
+      "result_id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18"
+    },
+    {
+      "claim_id": "08bfe091-c5c6-4132-a963-148e92269ce1",
+      "result_id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18"
+    },
+    {
+      "claim_id": "ed86d1c2-71c3-491f-b49c-ec88b7165f59",
+      "result_id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18"
+    },
+    {
+      "claim_id": "d4e4cca6-3548-4830-836a-23cfc39df0cb",
+      "result_id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18"
+    },
+    {
+      "claim_id": "5ac9bf85-a8d3-4da1-8d54-fb45f07d047a",
+      "result_id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18"
+    },
+    {
+      "claim_id": "8756001f-3a08-4e2d-96d2-0c6940f857a9",
+      "result_id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18"
+    },
+    {
+      "claim_id": "e3e03a68-0aac-4125-969c-ffbce005f6b4",
+      "result_id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18"
+    },
+    {
+      "claim_id": "4046abdb-1c09-4df9-8040-99d8cb8e0f1a",
+      "result_id": "e6124fa6-35c8-4e85-a8d6-0f10496cab18"
+    },
+    {
+      "claim_id": "20b85c13-b262-43c0-b033-5e49d250cd10",
+      "result_id": "68229e14-7643-4ffc-9ff4-cd6ae63ac90c"
+    },
+    {
+      "claim_id": "e990f701-c45e-40a2-88f7-3478d44a65f2",
+      "result_id": "68229e14-7643-4ffc-9ff4-cd6ae63ac90c"
+    },
+    {
+      "claim_id": "32738e85-aaed-45d8-aa9d-38ae443925b8",
+      "result_id": "68229e14-7643-4ffc-9ff4-cd6ae63ac90c"
+    },
+    {
+      "claim_id": "6376ce40-8f84-43c4-8807-6671647a8917",
+      "result_id": "68229e14-7643-4ffc-9ff4-cd6ae63ac90c"
+    },
+    {
+      "claim_id": "8ab113bf-c18e-4696-8533-7df8865b14c3",
+      "result_id": "68229e14-7643-4ffc-9ff4-cd6ae63ac90c"
+    },
+    {
+      "claim_id": "e4e07cd7-2ec3-4968-baad-132ab4752b33",
+      "result_id": "43e2626c-9ebc-42c2-bb1f-366a31aaf9cb"
+    },
+    {
+      "claim_id": "1d8e914b-9ef2-4abb-9e5d-9ec5b5f2faab",
+      "result_id": "43e2626c-9ebc-42c2-bb1f-366a31aaf9cb"
+    },
+    {
+      "claim_id": "22e519fc-ba7f-4ddd-b98e-900a58a8f789",
+      "result_id": "43e2626c-9ebc-42c2-bb1f-366a31aaf9cb"
+    },
+    {
+      "claim_id": "7e3169b8-62bb-4e99-9881-3452e1374df8",
+      "result_id": "43e2626c-9ebc-42c2-bb1f-366a31aaf9cb"
+    }
+  ],
+  "comparisons": []
+}

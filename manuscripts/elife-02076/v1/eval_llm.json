@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "During VOR-increase training, climbing fiber activity on one trial predicted changes in Purkinje cell output on the next trial. A climbing fiber spike on trial n led to an ~8 spikes/s reduction in Purkinje cell firing on trial n+1, while trials without climbing fiber spikes showed no such change. This trial-by-trial correlation was not explained by differences in sensory error (retinal slip).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C57-C60 provide converging evidence from trial-by-trial analysis showing a tight correlation between climbing fiber spikes and subsequent Purkinje cell plasticity during VOR-increase training. The data in Figure 3B,C demonstrate the effect with appropriate controls (No CF-No CF pairs) and rule out confounding by sensory error differences (Figure 3\u2014figure supplement 1). Statistical significance is established via bootstrap confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "During VOR-decrease training, there was no trial-by-trial correlation between climbing fiber activity and changes in Purkinje cell output, despite gradual adaptive changes in Purkinje cell responses over the full training session. The same Purkinje cells that showed climbing fiber-dependent plasticity during VOR-increase training showed no such trial-by-trial effects during VOR-decrease training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61-C63, C65-C66 demonstrate a dissociation between climbing fiber activity and plasticity during VOR-decrease training. Figure 3D,E shows absence of trial-by-trial correlation, while Figure 4 demonstrates gradual learning-related changes occur over longer timescales. The within-cell comparison (same cells tested in both paradigms) strengthens the conclusion that climbing fiber efficacy is context-dependent. Lesion studies (C64) confirm these cells participate in VOR-decrease learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C79",
+      "C80",
+      "C84",
+      "C87"
+    ],
+    "result": "Optogenetic activation of climbing fibers during the ipsiversive phase of vestibular stimulation induced VOR-increase learning. The effect was long-lasting (persisting 2 hr post-training), graded with stimulation intensity (stronger with 3 vs 1 pulse per cycle), and significantly exceeded vestibular-only habituation controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C79-C80, C84, C87 are supported by optogenetic experiments in Figures 6-7 showing dose-dependent VOR-increase learning. Multiple stimulation protocols (bilateral/unilateral, 1x/3x pulses) all induced learning when timed to mimic VOR-increase training. Statistical comparisons to vestibular-only controls and measurements at multiple timepoints (immediate and 2hr) demonstrate robust, persistent effects. The graded response to stimulation intensity supports a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C82",
+      "C85",
+      "C86"
+    ],
+    "result": "Optogenetic climbing fiber stimulation during the contraversive phase of vestibular stimulation did not induce VOR-decrease learning. Multiple stimulation protocols (1x and 3x pulses, unilateral and bilateral) all failed to produce associative VOR-decrease learning below vestibular-only habituation levels, either immediately or 2 hr post-training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C82, C85-C86 are supported by negative results from optogenetic experiments (Figures 6-7). Despite testing multiple stimulation intensities and configurations, none induced VOR-decrease learning beyond habituation. The positive control showing visually-induced VOR-decrease learning was possible (C83) rules out a ceiling/floor effect. The same climbing fiber stimulation that induced robust VOR-increase learning had no effect when timed for VOR-decrease, supporting context-dependent gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C10",
+      "C90",
+      "C91",
+      "C96",
+      "C97",
+      "C103",
+      "C115",
+      "C117",
+      "C118"
+    ],
+    "result": "The ability of climbing fibers to induce plasticity is dynamically gated in vivo, even when climbing fibers are robustly activated by performance errors. This gating occurs downstream of error encoding and represents a novel component of the cerebellar learning algorithm, with climbing fiber-triggered plasticity regulated at two stages: olivary spiking and the efficacy of climbing fiber spikes to induce plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C10, C90-C91, C96-C97, C103, C115, C117-C118 represent the main conclusion synthesizing results from both recording and optogenetic experiments. The conclusion is well-supported by: (1) equal climbing fiber error responses during both training paradigms (C32, C35, C50), (2) differential plasticity induction (VOR-increase: yes, VOR-decrease: no), (3) within-cell/within-animal comparisons ruling out individual differences, and (4) convergent evidence from trial-by-trial analysis and optogenetic manipulation. The two-stage gating model (C117) integrates current findings with prior work on olivary regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Climbing fibers in the floccular complex encode retinal slip errors during both VOR-increase and VOR-decrease training with equal amplitude. The same climbing fibers respond to contraversive retinal slip in both paradigms, with increased firing probability 75-250 ms after stimulus onset. What distinguishes the paradigms is whether climbing fiber activation occurs during ipsiversive (VOR-increase) or contraversive (VOR-decrease) vestibular stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C35-C36, C47-C50 establish that climbing fiber error encoding is equivalent across paradigms. Figure 2E-F shows similar response amplitudes (t(9)=1.77, p=0.11), and all cells responding in one paradigm also responded in the other (C32). This is critical for interpreting the differential plasticity results\u2014the gating cannot be explained by differences in error signal strength. The characterization is supported by both current data and extensive prior literature (C35, C43, C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C105"
+    ],
+    "result": "Complex spike waveforms during VOR-decrease training had more spikelets and longer duration than during VOR-increase training, ruling out shorter complex spike duration as an explanation for reduced climbing fiber efficacy during VOR-decrease learning. Post-complex spike pause duration was similar between paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C105 are supported by waveform analysis in Figure 5A-B showing significantly longer complex spikes (more spikelets, longer duration, p<0.05) during VOR-decrease vs VOR-increase training. This finding is surprising given prior in vitro work (C70) suggesting shorter complex spikes reduce plasticity induction. The result rules out one potential mechanism for differential climbing fiber efficacy and suggests other circuit-level factors must be responsible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C108",
+      "C109"
+    ],
+    "result": "Simple spike firing rate decreased relative to baseline during both training paradigms, but the reduction was smaller during VOR-decrease than VOR-increase training. This indicates no floor effect limiting plasticity during VOR-decrease training, but suggests different patterns of excitatory/inhibitory input that might regulate climbing fiber-triggered plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C108-C109 are supported by simple spike analysis in Figures 2G-H and 5C showing significant differences in firing rate modulation between paradigms (t(9)=3.39, p<0.01). The higher firing rate during VOR-decrease training rules out a floor effect (C75) and suggests differential E/I balance (C76, C109). However, the mechanistic link to plasticity gating remains speculative\u2014the data show correlation but not causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C92",
+      "C93",
+      "C95",
+      "C100",
+      "C102",
+      "C114"
+    ],
+    "result": "Convergent evidence from trial-by-trial recordings and optogenetic stimulation demonstrates that climbing fiber error signals drive VOR-increase but not VOR-decrease learning. The same cells and animals showed context-dependent coupling between climbing fiber activity and plasticity induction, extending previous work to demonstrate selective contribution of all climbing fiber-dependent plasticity mechanisms (not just pf-Pk LTD) to VOR-increase learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C92-C93, C95, C100, C102, C114 synthesize the complementary evidence from recording (trial-by-trial) and manipulation (optogenetic) experiments. The within-subject design (C102) is particularly powerful for ruling out alternative explanations. The extension beyond pf-Pk LTD (C100) is important because optogenetic stimulation would recruit all climbing fiber-dependent mechanisms. The consistency across experimental approaches and timescales (C114) strengthens causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The convergent evidence from recording, stimulation, and previous perturbation studies strengthens interpretation of the results. VOR-increase learning provides a positive control demonstrating the experimental approaches could detect climbing fiber-triggered plasticity, which is critical for interpreting negative VOR-decrease results. The findings are consistent with previous work showing mice with impaired pf-Pk LTD are selectively impaired on VOR-increase but not VOR-decrease learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99, C101 address methodological considerations and integration with prior literature. The positive control argument (C101) is essential for interpreting negative results\u2014the same methods that detected climbing fiber effects in VOR-increase failed to detect them in VOR-decrease, supporting genuine absence rather than methodological failure. Consistency with Boyden et al. 2006 (C99) provides independent validation using a different approach (genetic perturbation vs. recording/optogenetics).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113",
+      "C114"
+    ],
+    "result": "Changes in Purkinje cell activity observed on single trials (~10% of average firing rate) are consistent in direction with changes observed over 90s training periods and after hours/days of training. The trial-by-trial analysis results parallel the optogenetic stimulation results across different timescales, suggesting mechanistic relationships between short-term and long-term plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111, C113-C114 address the relationship between plasticity at different timescales. The consistency in direction across timescales (C113) is well-documented with citations. However, the magnitude analysis (C111) reveals a puzzle: 10% changes per trial should accumulate to massive changes over 1000 trials, but observed learning is <50%, suggesting most single-trial changes decay rapidly. The claim of mechanistic relationship (C110) is supported by parallel findings but remains somewhat speculative regarding underlying mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C77",
+      "C78"
+    ],
+    "result": "Recordings were made from 10 Purkinje cells in two rhesus monkeys during VOR training. For optogenetic experiments, AAV-ChR2 was injected into the inferior olive, and ChR2 expression in climbing fibers was verified anatomically and functionally via optrode recordings showing light-evoked complex spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C77-C78 describe core methodological details. Sample size (n=10 cells, 2 monkeys) is stated clearly. Optogenetic validation (C78, Figure 6\u2014figure supplement 1) is appropriate, demonstrating both anatomical expression and functional efficacy. However, the small sample size (2 animals, 10 cells) for the recording experiments is a limitation, though within-cell comparisons across paradigms partially mitigate this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C33",
+      "C34",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The VOR circuit involves vestibular inputs driving eye movements through vestibular nuclei, with cerebellar modulation via Purkinje cells that receive parallel fiber and climbing fiber inputs. Climbing fibers encode retinal slip errors, and VOR gain can be adaptively increased or decreased through motor learning that depends on the cerebellar floccular complex. Purkinje cell recordings provide simultaneous access to climbing fiber activity (complex spikes) and Purkinje cell output (simple spikes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26, C33-C34, C42-C46 provide essential background on VOR circuitry and learning paradigms. These are well-established facts supported by extensive prior literature (multiple citations) and illustrated in Figures 1-2. The description of recording methodology (C25-C26, C42) is standard and well-validated. This background is necessary context but not a novel finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The cerebellum is thought to implement supervised learning with climbing fibers providing error signals, but evidence has been conflicting. Climbing fibers are activated by errors during many tasks, reliably trigger complex spikes, and can induce plasticity in vitro and replace teaching signals in vivo. However, some studies show dissociations between error encoding and learning, and perturbation of pf-Pk LTD has inconsistent effects across tasks. Recent work suggests Purkinje cell responses to climbing fibers can be graded, potentially regulating plasticity induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C19 provide literature review establishing the controversial state of the field regarding climbing fiber roles in learning. All claims are appropriately supported by citations to prior work. This contextualizes why the current study's question (whether climbing fiber efficacy is gated in vivo) is important and unresolved. The review accurately represents both supporting and conflicting evidence from prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C104",
+      "C106",
+      "C107",
+      "C116"
+    ],
+    "result": "Prior work has shown that Purkinje cell responses change during VOR learning in a manner consistent with climbing fiber-triggered LTD or potentiation of inhibition. Optogenetic climbing fiber activation can induce VOR-increase learning, but previous attempts at VOR-decrease learning failed. Studies of pf-Pk LTD mutants show inconsistent VOR learning impairments. Mossy fiber inputs and Purkinje cell responses are present during both contraversive and ipsiversive vestibular stimuli. Complex spike duration and inhibitory input levels can regulate climbing fiber-induced plasticity in reduced preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C52-C56, C64, C67-C70, C104, C106-C107, C116 review relevant prior findings that inform interpretation of current results. All are appropriately cited. These establish: (1) expected circuit mechanisms (C52-C55), (2) prior evidence for climbing fiber roles (C37-C38, C56), (3) prior negative results (C39-C40), (4) availability of synaptic substrates (C67-C69), and (5) potential regulatory mechanisms (C70, C104, C106-C107). This contextualizes the current findings within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "VOR-increase training pairs visual stimuli with vestibular stimuli in opposite directions, while VOR-decrease training pairs them in the same direction. Both paradigms produce retinal slip reflecting performance errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe the training paradigms illustrated in Figure 2A-D. These are standard, well-established VOR training protocols appropriately cited to prior literature. The description is accurate and necessary for understanding the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C83"
+    ],
+    "result": "VOR gain increased between end of training and 2hr retest for both optogenetic VOR-increase and vestibular-only training, presumably reflecting decay of non-associative habituation. Visual-vestibular VOR-decrease training produced greater VOR gain decrease than vestibular-only training, demonstrating associative VOR-decrease learning was possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C83 describe control observations. C81 (habituation decay) is supported by data in Figures 6B and 7, though the mechanistic explanation is speculative. C83 provides an important positive control (Figure 7A) demonstrating that VOR-decrease learning is possible in these animals when appropriate sensory feedback is provided, ruling out a general inability to undergo VOR-decrease learning. Both claims are well-supported by data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Dynamic gating of neural error signals controlling learning induction may be a general feature of neural learning algorithms and merits systematic investigation in cerebellum and other circuits. Defining factors influencing cerebellar receptivity to error signals will be critical for developing learning theories and strategies to optimize plasticity for learning or recovery from injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120 are speculative statements about broader implications and future directions. While the speculation is reasonable given the findings, these claims go beyond what the data directly support. C119 generalizes from one specific case (VOR learning) to all neural learning algorithms without supporting evidence. C120 makes claims about future importance that cannot be evaluated from current data. These are appropriate discussion points but not supported results.",
+    "result_type": "MINOR"
+  }
+]

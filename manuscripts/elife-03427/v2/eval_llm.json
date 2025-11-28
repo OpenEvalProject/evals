@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C29",
+      "C56",
+      "C61"
+    ],
+    "result": "The preB\u00f6tC putatively drives inspiratory breathing rhythms, and Dbx1-derived neurons in the preB\u00f6tC are predominantly inspiratory and glutamatergic. Dbx1-null mice fail to breathe at birth, supporting the hypothesis that Dbx1 neurons comprise the core inspiratory rhythm generator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C14, C29, C56, and C61 collectively establish the foundational context from prior work that Dbx1 neurons in the preB\u00f6tC are critical for respiratory rhythm generation. These claims are well-supported by multiple citations to established literature and are consistent with the current understanding of the respiratory CPG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C59",
+      "C60",
+      "C64"
+    ],
+    "result": "Sequential laser ablation of approximately 85 Dbx1 preB\u00f6tC neurons progressively decreased respiratory frequency, caused cycle period fluctuations, diminished XII nerve discharge amplitude, and ultimately stopped rhythmic motor output. This demonstrates that the oscillator was continuously degraded until it could no longer sustain spontaneous function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C17-C21, C59, C60, and C64 describe the core experimental findings showing that ablation of ~85 Dbx1 neurons stops respiratory rhythm and impairs motor output. The data are internally consistent, include appropriate statistical measures (SD, SEM, range, n=5 slices), and are supported by figures showing progressive degradation of frequency and amplitude. The conclusion that the oscillator was degraded is well-justified by the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C57",
+      "C58"
+    ],
+    "result": "Laser ablation of Dbx1 neurons in the ventral respiratory column (control slices) had minimal effects on respiratory frequency and regularity, with only a minor decrease in XII motor output amplitude. The ablation protocol exhausted all targets without stopping the rhythm, demonstrating that laser-tissue interactions are not generally deleterious for respiratory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28, C57, and C58 describe the control experiments that validate the specificity of the preB\u00f6tC ablation effects. The control data show no significant change in frequency (p=0.49, Mann-Whitney U-test) and stable regularity scores, with all targets exhausted without rhythm cessation. This provides strong negative control evidence that the effects observed in preB\u00f6tC ablations are specific to that region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C82",
+      "C83"
+    ],
+    "result": "Substance P transiently revived respiratory rhythm in lesioned preB\u00f6tC slices but the effects were significantly briefer and more irregular than in unlesioned slices, and lesioned slices ultimately fell silent. This indicates that while NK1R-expressing Dbx1 neurons can evoke transient activity, the loss of ~85 Dbx1 neurons renders the oscillator nonfunctional, though the rhythmogenic core does not appear to be completely destroyed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39, C82, and C83 describe the substance P experiments that test whether loss of excitatory drive versus destruction of the CPG core explains rhythm cessation. The data show transient, irregular revival (RS 2-10) that is significantly briefer than controls (p=0.02, Mann-Whitney U-test), supporting the interpretation that the oscillator is degraded but not completely destroyed. The experimental design and statistical analysis are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Computational modeling using Erd\u0151s-R\u00e9nyi G(n,p) graphs with Rubin-Hayes preB\u00f6tC neuron models showed that sequential deletion of neurons decreased frequency until rhythm stopped, but with two key discrepancies from experiments: network output amplitude did not diminish, and rhythm cessation required deletion of only ~41 neurons (versus ~85 experimentally).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C44-C46, and C113-C120 describe the computational modeling approach and results. The methodology is clearly described with appropriate parameters (n=200-400, p=0.1-0.2, Runge-Kutta integration with 0.25 ms time step). The model successfully recapitulates some experimental features (e.g., ~4 s cycle periods, burst triggering by focal stimulation) but shows discrepancies that are explicitly acknowledged and discussed. The modeling is rigorous and appropriately parameterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C84",
+      "C85",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Network topology analysis showed that cumulative ablations caused no major changes in local metrics (cluster coefficient, closeness centrality, betweenness centrality) or global metrics (K-core), and the number of strongly connected components remained at unity. This indicates that network structure breakdown cannot explain the cessation of rhythmic function, suggesting that preB\u00f6tC function depends on non-trivial properties emerging from non-linear synaptic and intrinsic membrane properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C84, C85, C122-C124 describe the network topology analysis and its interpretation. The analysis appropriately applies graph theory metrics to assess whether structural breakdown explains functional loss. The finding that connectivity remains intact while function is lost is well-documented and leads to a reasonable inference about non-linear properties. The computational methods are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C77"
+    ],
+    "result": "Some Dbx1 preB\u00f6tC neurons with inspiratory modulation can be antidromically activated from the XII nucleus and send axons ipsilaterally toward the XII nucleus, consistent with a premotor role. This suggests that a non-negligible fraction of ablated Dbx1 neurons were inspiratory modulated but non-rhythmogenic, likely constituting XII premotor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C69-C72, and C77 describe the evidence for premotor function in Dbx1 neurons. The antidromic activation data (2 of 8 neurons tested) and axonal projection patterns provide direct evidence for premotor connectivity. This is supported by prior literature (C70, C71) and explains the discrepancy between experimental and modeling results regarding amplitude changes. The inference that some ablated neurons were premotor is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C68",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C81"
+    ],
+    "result": "The preB\u00f6tC core in vitro is very sensitive to loss of <100 constituent interneurons. After accounting for ~10% Dbx1 glia and ~10% premotor neurons among the 705 detected targets, the estimated size of the essential preB\u00f6tC core is ~564 neurons, and spontaneous rhythm generation is sensitive to deletion of 85\u00b140 Dbx1 interneurons (8-22% of the core).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65, C67, C68, C73, C74, C75, C76, and C81 involve quantitative estimates of the preB\u00f6tC core size and sensitivity to neuron loss. While the experimental data on ablation tallies are solid (C81: 85\u00b11.96(20) neurons), the estimate of core size (C73: N=564) relies on assumptions about the fraction of glia and premotor neurons (~10% each) that the authors explicitly acknowledge lack quantitative certainty. The calculation is reasonable but speculative. The comparison to prior estimates (C74: ~600 from rat studies, C75-C76: ~325 from prior mouse study) provides some validation, but the uncertainty in the assumptions limits confidence in the precise core size estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C22",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "The experimental methodology involved detecting and mapping Dbx1 neurons in preB\u00f6tC-surface slices using transgenic mice with tamoxifen-inducible Cre-mediated tdTomato expression, followed by sequential laser ablation while monitoring XII nerve output. The methodology included appropriate controls, validation criteria, and statistical analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C15, C16, C22, and C92-C112 describe the experimental methodology in detail. The methods are clearly described, include appropriate controls (e.g., circularity test for target validation, control slices), and use established techniques (two-photon laser ablation, electrophysiology, transgenic mouse models). The statistical methods are appropriate (Shapiro-Wilk test for normality, Mann-Whitney U-test for non-normal data). The methodology is rigorous and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C62",
+      "C63"
+    ],
+    "result": "A previous study using Ca2+ imaging to identify rhythmic preB\u00f6tC neurons found that destroying ~120 neurons stopped the rhythm after a ~30 min delay, but the transmitter phenotype of ablated targets was unknown. Inspiratory rhythms do not require synaptic inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C62, and C63 describe prior work that provides context for the current study. These claims are well-supported by citations to the literature (Hayes et al., 2012 for C6, C62, C63; multiple citations for C7) and accurately represent the limitations of prior work that motivated the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C43"
+    ],
+    "result": "In simulations assigning only rhythm-generating function to preB\u00f6tC neurons, cumulative ablations decreased frequency and stopped rhythmogenesis at lower tallies without perturbing output amplitude. Model networks generated bursts within 200-300 ms following focal glutamatergic stimulation of 5+ neurons, consistent with prior glutamate uncaging experiments showing 4-9 neurons can trigger bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C43 describe model validation and discrepancies with experiments. The model validation against prior experimental data (Kam et al., 2013b) is appropriate and strengthens confidence in the model. The discrepancies between model and experiment are explicitly acknowledged and used to generate hypotheses about premotor function. This is good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C78",
+      "C79",
+      "C86"
+    ],
+    "result": "Two-photon lasers can destroy cells with minimal damage to surrounding tissues. Dbx1 neurons in spinal locomotor systems coordinate left-right limb alternation, while Dbx1 preB\u00f6tC neurons appear more similar to excitatory Shox2 interneurons that contribute to locomotor rhythm generation and premotor circuits. In a group pacemaker mechanism, constituent neurons form recurrent connections and amplify excitatory drive via synaptically triggered inward currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C78, C79, and C86 provide contextual information from prior literature about laser ablation techniques, comparative neurobiology, and theoretical mechanisms. These claims are well-supported by appropriate citations and provide useful context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The acute sensitivity to neuron loss observed in vitro may not apply to the preB\u00f6tC network in vivo. Arrhythmic respiratory networks retain considerable neurons and interconnectivity, suggesting potential for therapeutic interventions. Dbx1 respiratory neurons represent potential targets for pharmacological intervention or gene therapy to treat respiratory pathologies including obstructive sleep apnea, central apneas of prematurity, opiate respiratory depression, and effects of neurodegenerative diseases or aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66 and C87-C91 involve speculation about in vivo applicability and therapeutic potential. C66 appropriately acknowledges uncertainty about in vivo applicability and calls for future experiments. C87 makes a reasonable inference from the modeling data. However, C88-C91 are highly speculative about therapeutic applications without supporting data. While these represent reasonable future directions, they are not supported by the current study's findings and should be considered speculative hypotheses rather than established results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,455 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "ARF6 ChIP-Seq identified 2037 binding sites linked to 2675 genes, predominantly in promoter regions. ARF6 targets include 40 of 49 early auxin-induced genes but only 1 of 16 auxin-repressed genes, indicating ARF6 functions primarily as a transcriptional activator. 255 ARF6 targets are auxin-activated genes involved in cell elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 are well-supported by ChIP-Seq data (C2-C4), comparison with published auxin-responsive gene datasets (C5), and functional inference consistent with prior literature (C6-C7). The experimental design appears sound with appropriate controls and the conclusions follow logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "ARF6 binding targets show extensive overlap with BZR1 (51%) and PIF4 (71%) targets, with 42% shared among all three factors. ChIP-reChIP experiments confirm ARF6 and BZR1 co-occupy SAUR15 and IAA19 promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by comparative ChIP-Seq analysis showing statistically significant overlap. C11 is validated by ChIP-reChIP experiments with appropriate negative controls. The convergence of multiple transcription factors at shared targets is a key finding supporting the integration model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Cis-element analysis reveals enrichment of E-box motifs (G-box and HUD) and canonical ARF binding motifs (AuxRE and TGTCGG) in ARF6 binding regions. About half of auxin-activated ARF6 peaks contain both AuxRE and E-box motifs within \u00b1100 bp, with E-box motifs typically within 20 bp of AuxRE. Regions with both motifs are more frequently associated with auxin-activated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 are supported by systematic cis-element analysis of ChIP-Seq data with appropriate statistical comparisons to random expectation. The spatial clustering analysis (C17) and functional association analysis (C18) provide strong evidence for cooperative binding. The motif enrichment is consistent with the proposed model of transcription factor cooperation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "ARF6 directly interacts with BZR1 (via BZR1 C-terminal domain) and PIF4 (via PIF4 bHLH domain) in yeast two-hybrid and in vivo co-immunoprecipitation assays. Both middle and C-terminal domains of ARF6 are required for these interactions. BZR1-PIF4 interaction enhances PIF4 binding to ARF6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by multiple complementary approaches: yeast two-hybrid (C19-C21), co-IP (C22), and gain-of-function analysis (C23). Domain mapping experiments (C21) provide mechanistic insight. The convergence of in vitro and in vivo evidence strengthens the conclusions about direct protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "BZR1 and PIF4 specifically interact with ARF8 but not ARF1 or ARF7, suggesting they mediate specific auxin responses like hypocotyl elongation through selective ARF interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by yeast two-hybrid data showing specificity. However, C25 is an inference that could benefit from additional functional validation. The specificity is important for understanding pathway selectivity but the functional conclusion remains somewhat speculative without direct testing of ARF8 function in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "BZR1 (bzr1-1D) and PIF4 overexpression enhance ARF6 DNA-binding to common target promoters but not ARF6-specific targets. ARF6 occupancy is higher at regions containing both E-box and AuxRE motifs compared to AuxRE alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by ChIP assays showing enhanced ARF6 binding in genetic backgrounds with activated BZR1 or PIF4. The specificity for common targets (C26-C27) and correlation with motif composition (C28) provide strong evidence for cooperative DNA binding. The experimental design appropriately includes both common and ARF6-specific targets as controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "RNA-Seq analysis reveals 2664 BR-responsive genes and 4725 genes differentially expressed in iaa3 mutant. 55% of BR-regulated genes are affected by iaa3 in opposite directions (correlation = -0.6). Of 2482 BZR1/PIF co-regulated genes, 976 are affected by iaa3. Only 17% of BR-activated genes remain activated in iaa3, while 30% of BR-repressed genes remain repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are supported by comprehensive RNA-Seq analysis with appropriate statistical thresholds. The differential effect on BR-activated vs. BR-repressed genes (C34-C35) is particularly informative, suggesting auxin signaling is specifically required for BR activation but not repression. The large sample sizes and clear statistical differences support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "qRT-PCR validation shows bzr1-1D activation of BR/auxin-induced genes is abolished by iaa3, while BR-repressed DWF4 is unaffected. BZR1 phosphorylation status is unchanged in iaa3. In arf6;arf8, BR-activated genes show reduced activation while BR-repressed genes are normally repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by qRT-PCR and immunoblot data validating RNA-Seq findings. The demonstration that BZR1 activity itself is not affected by iaa3 (C38) is important for ruling out indirect effects. The parallel results in arf6;arf8 (C39-C40) strengthen the conclusion that the effect is through ARF function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "BR activation of hypocotyl elongation genes depends on auxin-activated ARFs, while BR feedback repression of biosynthesis genes is auxin-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are well-supported inferences from the differential effects observed in C34-C40. The distinction between BR-activated and BR-repressed gene regulation provides important mechanistic insight. However, these are interpretive conclusions that synthesize multiple observations rather than direct experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Auxin-activated genes show reduced activation in bri1-116 BR receptor mutant, but bzr1-1D rescues this defect, indicating BR promotes auxin-responsive genes through BZR1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by qRT-PCR data in bri1-116 background. The genetic rescue experiment (C44) provides strong evidence for the proposed mechanism. However, the inference in C45 assumes BZR1 is the primary mediator, which may oversimplify given the complexity of BR signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Auxin activation of genes is reduced in pif quadruple mutant and abolished by PAR1 overexpression, which inhibits PIF activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by qRT-PCR data and consistent with cited literature. The stronger effect of PAR1-OX compared to pifq suggests additional PAR1 targets beyond the four PIFs, which is explored in subsequent claims. The data quality appears sound with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Genetic interaction studies show bri1 auxin insensitivity is rescued by bzr1-1D, while bzr1-1D auxin hypersensitivity is abolished by iaa3. Both iaa3 and arf6;arf8 show reduced BR sensitivity. ARF6/8 are required for BZR1-promoted hypocotyl elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are supported by systematic genetic interaction analysis using hypocotyl elongation assays. The reciprocal rescue experiments (C48-C52) provide strong evidence for mutual dependence. The triple mutant analysis (C54) directly tests the requirement for ARF6/8 in BZR1 function. Sample sizes appear adequate (n=10) with error bars shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "pifq shows reduced auxin sensitivity while PAR1-OX is nearly insensitive to auxin. ARF, BZR1, and PIFs are interdependent in promoting hypocotyl elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by hypocotyl elongation data. The graded response (pifq < PAR1-OX) suggests additional complexity. C57 is a synthesis claim that integrates multiple genetic interaction results. The conclusion of interdependence is well-supported by the totality of genetic evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "PAR1 interacts with bHLH factors BEE2 and HBI1, which also interact with ARF6. HBI1-SRDX overexpression reduces auxin sensitivity, supporting a positive role for HBI1 in auxin-promoted hypocotyl elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by yeast two-hybrid data and hypocotyl elongation assays. The use of a dominant-negative approach (HBI1-SRDX) in C60-C61 provides functional validation. However, the inference about HBI1's positive role could be strengthened with loss-of-function analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "ARF6 interacts with multiple bHLH transcription factors as co-regulators. PAR1 attenuates auxin response through direct inactivation of these bHLH factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are reasonable inferences from the interaction data (C58-C61) and functional studies. However, these are synthetic conclusions rather than direct experimental observations. The mechanism of PAR1 attenuation through bHLH inactivation is inferred from the HLH/bHLH module model but not directly demonstrated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Knockdown of PREs or overexpression of IBH1 reduces auxin sensitivity. PRE1 expression is high in young/growing tissues while IBH1 is high in mature tissues. Auxin induces larger fold-changes in young vs. mature stems. Overexpression of PRE1, HBI1, or PIF4 restores auxin sensitivity in mature stems, indicating developmental regulation of PREs/IBH1 impacts auxin sensitivity through PIF4/HBI1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by transgenic plant analysis, tissue-specific expression profiling, and rescue experiments. The developmental regulation data (C65-C67) are well-documented in cited literature. The rescue experiments (C68) provide functional validation. This represents a comprehensive analysis linking developmental stage to auxin sensitivity through the HLH/bHLH module.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "DWF4 expression and BZR1 dephosphorylation are higher in young vs. mature stems, indicating greater BZR1 activation in young tissues. bzr1-1D increases auxin sensitivity in mature stems. Developmental regulation of BZR1 and HLH factors contributes to changes in auxin sensitivity during organ development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by expression analysis, phosphorylation assays, and functional tests. The correlation between DWF4 expression, BZR1 phosphorylation status, and auxin sensitivity is logical and well-supported. C74 is a synthetic conclusion that integrates developmental regulation of both BZR1 and HLH factors, providing a comprehensive model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "GA-activated genes are enriched among common targets of ARF6, BZR1, and PIF4, suggesting ARF6 involvement in GA response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by comparative genomic analysis. However, C76 is an inference that requires functional validation, which is provided in subsequent claims. The enrichment analysis provides a reasonable hypothesis that motivates the GA-ARF interaction studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "RGA (DELLA protein) interacts with ARF6 middle domain and DNA-binding domain in yeast two-hybrid assays. RGA interacts with activator ARFs (ARF6, ARF7, ARF8) but not repressor ARF1. Direct interaction is confirmed by in vitro pull-down and in vivo co-IP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by multiple complementary approaches: yeast two-hybrid, in vitro pull-down, and in vivo co-IP. The specificity for activator ARFs (C78) is important for understanding DELLA function. The convergence of evidence from different experimental systems strongly supports direct RGA-ARF6 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "RGA likely competes with PIF4/BZR1 for ARF6 interaction based on shared binding to ARF6 middle domain. Stable RGA (rga-\u039417) reduces ARF6-PIF4 interaction, suggesting RGA disrupts this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is a reasonable inference from domain mapping data. C82 is supported by co-IP experiments with rga-\u039417. However, direct competition assays would strengthen the conclusion. The evidence is consistent with the competition model but doesn't definitively rule out other mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "RGA inhibits ARF6 binding to IAA19 promoter in DNA pull-down assays and in vivo ChIP. ARF6 increases IAA19 promoter activity in reporter assays, but this effect is abolished by RGA co-transfection. DELLA interacts with ARF6 and inhibits ARF6 DNA-binding to modulate target gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by DNA pull-down, ChIP, and reporter assays. The multiple lines of evidence (biochemical, chromatin-based, and functional) converge to support DELLA inhibition of ARF6 DNA-binding. C88 is a well-supported synthesis of the mechanistic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "DELLA inhibition of ARF6 suggests GA promotes cell elongation by enhancing auxin/ARF responses. GA-promoted hypocotyl elongation is reduced in iaa3 and arf6;arf8 mutants, supporting that auxin-activated ARFs are necessary for GA promotion of hypocotyl elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is a logical inference from DELLA-ARF6 interaction data. Claims C90-C91 are supported by hypocotyl elongation assays in auxin signaling mutants. The genetic evidence strongly supports the requirement for auxin signaling in GA response. This represents a key finding linking GA and auxin pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Auxin-promoted hypocotyl elongation is compromised in GA-insensitive gai-1 mutant and in wild-type plants treated with GA biosynthesis inhibitor PAC, both accumulating DELLA proteins. Auxin response is normal in PAC-treated della pentuple mutant lacking all DELLAs, indicating DELLA accumulation inhibits auxin sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by hypocotyl elongation assays in multiple genetic backgrounds and chemical treatments. The use of della pentuple mutant (C94) provides strong genetic evidence that DELLA proteins are responsible for the inhibition. The experimental design appropriately controls for GA biosynthesis vs. DELLA function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "GA-induced DELLA degradation allows ARF6, together with BZR1 and PIF4, to bind target DNA and activate gene expression and hypocotyl cell elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is a well-supported synthesis integrating DELLA-ARF6 interaction, DNA-binding inhibition, and genetic interaction data. This represents the core mechanistic model for GA-auxin-BR integration. The claim is supported by the totality of evidence but represents an interpretive model rather than a single experimental result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Hypocotyl cell elongation is controlled by major hormonal and environmental pathways through a central circuit of interacting transcription regulators. The auxin and BR pathways converge mainly through BZR-ARF interaction at shared target promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are high-level synthesis statements supported by the totality of genomic, biochemical, and genetic evidence. C98 specifically addresses auxin-BR convergence and is well-supported by ChIP-Seq overlap, co-occupancy, and genetic interaction data. These represent the main conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Light signaling via phytochromes induces PIF degradation. ARF6 shares most binding targets with PIF4 and they interdependently activate shared promoters, explaining PIF requirement for auxin responses and auxin requirement for skotomorphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is established knowledge from cited literature. Claims C100-C103 are supported by ChIP-Seq overlap data, genetic interactions, and functional studies. The interdependence model (C101) integrates multiple lines of evidence. This explains the light-auxin connection through the BAP module.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PIFs are considered a central hub for integrating environmental and developmental signals. Temperature and circadian clock transcriptionally regulate PIF family members and consequently alter auxin synthesis and sensitivity through the BAP module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by cited literature. Claim C106 is an inference connecting PIF regulation to auxin responses through the BAP module. While the logic is sound, this represents an extension of the model rather than direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "GA, BR, auxin, and PIF4 increase transcription of PRE members, forming positive feedback loops that reinforce BAP module activation and maintain growth conditions in darkness or young organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is supported by cited literature. Claim C108 is an inference about feedback regulation that is logical but not directly tested in this study. The positive feedback model is plausible given the regulatory relationships but would benefit from dynamic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Decreased HBI1 expression mediates growth arrest and defense activation in response to pathogen infection. GA promotes hypocotyl elongation by removing DELLA repression of BZR1 and PIF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by cited literature and represents context for the HLH/bHLH module. Claim C110 is established knowledge that provides background for the current study's findings on DELLA-ARF6 interaction. Both are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "DELLA inhibits both protein-DNA and protein-protein interactions of the BAP module, providing coordinated control of all three components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a synthesis statement integrating findings that DELLA inhibits ARF6 DNA-binding (current study) with prior knowledge of DELLA inhibition of BZR1 and PIF4. The claim of coordinated control is well-supported by the mechanistic data showing DELLA affects multiple aspects of the BAP module.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The major growth-regulation pathways (auxin, BR, GA, phytochrome) converge at the BAP/D module to control hypocotyl cell elongation. The BAP/D module coupled with HLH/bHLH module forms a central growth regulation network integrating hormonal, environmental, and developmental inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 represent the overarching conclusions of the study, synthesizing all experimental findings into a comprehensive model. These are well-supported by the totality of evidence including genomic overlap, protein interactions, genetic dependencies, and functional studies. The model is illustrated in Figure 7 and represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  }
+]

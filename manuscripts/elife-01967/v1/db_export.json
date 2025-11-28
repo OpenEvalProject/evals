@@ -1,0 +1,1489 @@
+{
+  "submission": {
+    "id": "634aac32-387b-41cd-9227-0a6f7a4e9990",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:26:16.184518Z",
+    "updated_at": "2025-11-28T20:26:16.184518Z"
+  },
+  "content": [
+    {
+      "id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "submission_id": "634aac32-387b-41cd-9227-0a6f7a4e9990",
+      "content_type": "manuscript",
+      "content_text": "# Subcellular and supracellular mechanical stress prescribes cytoskeleton behavior in Arabidopsis cotyledon pavement cells\n\n## Authors\n\n- Arun Sampathkumar<sup>1</sup>\n- Pawel Krupinski<sup>3</sup>\n- Raymond Wightman<sup>2</sup>\n- Pascale Milani<sup>4</sup>\n- Alexandre Berquand<sup>5</sup>\n- Arezki Boudaoud<sup>4</sup>\n- Olivier Hamant<sup>4</sup> \u2020\n- Henrik J\u00f6nsson<sup>2</sup> \u2020\n- Elliot M Meyerowitz<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n2. Sainsbury Laboratory University of Cambridge Cambridge United Kingdom\n3. Computational Biology and Biological Physics Group, Department of Astronomy and Theoretical Physics Lund University Lund Sweden\n4. Laboratoire de Reproduction et D\u00e9veloppement des Plantes INRA-CNRS-UCBL-ENS Lyon Lyon France\n5. Bruker AXS Bruker Nano GmbH Mannheim Germany\n6. Division of Biology and Biological Engineering Howard Hughes Medical Institute, California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough it is a central question in biology, how cell shape controls intracellular dynamics largely remains an open question. Here, we show that the shape of Arabidopsis pavement cells creates a stress pattern that controls microtubule orientation, which then guides cell wall reinforcement. Live-imaging, combined with modeling of cell mechanics, shows that microtubules align along the maximal tensile stress direction within the cells, and atomic force microscopy demonstrates that this leads to reinforcement of the cell wall parallel to the microtubules. This feedback loop is regulated: cell-shape derived stresses could be overridden by imposed tissue level stresses, showing how competition between subcellular and supracellular cues control microtubule behavior. Furthermore, at the microtubule level, we identified an amplification mechanism in which mechanical stress promotes the microtubule response to stress by increasing severing activity. These multiscale feedbacks likely contribute to the robustness of microtubule behavior in plant epidermis.\n\n## Introduction\n\nEpithelia have a crucial role during the development of most multicellular organisms. Consistently, several mechanisms ensure some level of coordination between epithelial cells. In addition to biochemical signals, such as morphogens that diffuse and provide regional coordination across several cell files (Wolpert, 1969; Jonsson et al., 2006; Jaeger et al., 2008; Wartlick et al., 2009), mechanical stress also contributes to growth coordination, for instance by synchronizing cell proliferation rate (Shraiman, 2005) and orientation (Thery et al., 2007), or by prescribing cell polarity (Asnacios and Hamant, 2012) and cell fate (Engler et al., 2006). In theory, these coordinating mechanisms could lead to relatively homogeneous cell shapes. While this is observed in some classic cases, such as the cells of Drosophila ommatidia or Arabidopsis petals, most epithelia exhibit variable cell sizes and shapes, demonstrating that each cell retains the ability to regulate its own growth and shape (Roeder et al., 2010, 2012). This heterogeneity has been studied in several systems. In Drosophila embryos, stochastic actomyosin-dependent constrictions of cells occur during gastrulation (Martin et al., 2009) and dorsal closure (Solon et al., 2009), and this stochasticity has been proposed to play a key role in invagination events (Pouille et al., 2009). In Arabidopsis sepals, stochastic events including cell division and entry into endoreduplication also play a critical role in the distribution of cells of different shapes (Roeder et al., 2010). Altogether this suggests that cell behavior results from both local and supracellular cues. The exact role of such heterogeneity remains poorly explored, and how cells can differentiate between local and global cues is completely unknown. In this study, we show that mechanical stress act as a common instructing signal for microtubule (MT) orientation at both subcellular and tissue scales.\n\nMechanical forces have been proposed to provide directional information in control of MT orientation in plant cells and changes in mechanical forces are known to affect microtubule alignment (Green, 1980; Williamson, 1990; Schopfer, 2006). MT arrays have been proposed to align along maximal mechanical stress directions in the shoot apical meristem, as prescribed by tissue shape, assuming tension in the epidermis (Hamant et al., 2008). Mechanical forces were recently found to modify MT organization in leaf epidermal cell layers (Jacques et al., 2013). In Arabidopsis and most angiosperms, the cotyledon and leaf epidermal cells, also called pavement cells, exhibit typical jigsaw puzzle shapes, with indented regions and lobe-like outgrowths. The intracellular effectors of these morphologies are being described in many reports. In particular, indenting regions are enriched in cortical MTs, which are thought to restrain growth expansion via the presumptive localized deposition of stiff cellulose microfibrils (CMF) (Fu et al., 2005; Yang, 2008). Although this model seems relatively parsimonious, these biophysical assumptions have not been tested. The MT severing enzyme katanin is required for local MT ordering in pavement cell indenting regions, downstream of the plant hormone auxin and Rho GTPases (Lin et al., 2013). How robust shapes could derive from such regulation is however a subject of debate.\n\nThe complex morphology of pavement cells is a system of choice to decipher the contribution of cell and tissue shape-derived mechanical stresses in MT behavior. In this study, we have combined computational models and experiments to determine the relation between physical forces, material elasticity, and the behavior of cortical MT. We first relate MT behavior to cell wall reinforcements. Second, we confirm (in a different tissue than investigated in the past and at a different scale) that MTs orient along the predicted maximal tensile stress direction\u2014and in this case, that they can do so at a subcellular or a supracellular scale, depending on the stresses involved. Lastly, we take advantage of the large size of the pavement cells to show how the MT response to stress depends on MT severing-dependent self-organization events. Altogether, this provides a scenario, in which not only tissue shape, but also cell shape, depends on a mechanical feedback loop. Based on our results, we propose that cells sense mechanical stresses at the subcellular scale, and that they are hence able to integrate cell shape-derived stresses and tissue shape-derived stresses, with a single mechanism.\n\n## Results\n\n### Pavement cell shape correlates with microtubule organization and consistent mechanical reinforcements in cell walls\n\nThe presence of parallel bundles of MTs in pavement cells is spatially correlated with indenting neck regions of the cell (Figure 1A, Figure 1\u2014figure supplement 1; Fu et al., 2005). However, this correlation is debated, as MT orientations can be very noisy and pavement cell growth has even been proposed to be rather isotropic (Zhang et al., 2011). To quantify MT behavior in pavement cells, we used a nematic tensor-based tool to measure MT anisotropy (Uyttewaal et al., 2012; Boudaoud et al., 2014). This showed that MT arrays in indenting regions were more anisotropic than the MT arrays in lobes (mean \u00b1 SE is 0.40 \u00b1 0.02 for indenting region and 0.20 \u00b1 0.02 for lobes, n = 18 cells; 3 seedlings; p<0.01, t test; Figure 1A,B, Figure 1\u2014figure supplement 1). Time lapse imaging of pavement cells showed that the anisotropy of MTs was maintained in indenting regions after 3 hr (mean \u00b1 SE is 0.47 \u00b1 0.01, n = 14 cells; 3 seedlings), consistent with previous studies (Zhang et al., 2011) (Figure 1A,B, Figure 1\u2014figure supplement 1). Note that we focused our analysis on a stage where cells have already attained their jigsaw puzzle shape and are still growing; our conclusions do not necessarily apply to these cells at a younger, undifferentiated stage or at an older, fully grown stage. The correlation between pavement cell shape and the presence of stably aligned MTs in indenting regions suggests that pavement cell shape relies on the impact of MTs on the mechanical anisotropy of the cell wall in these regions. This however has never been demonstrated. To directly measure mechanical properties of the outer wall with sufficient resolution, we used atomic force microscopy (AFM) to probe different regions of pavement cells, using an established protocol (Milani et al., 2011). First, we probed guard cells, in which the presence of transverse MT and CMF is unequivocally established (Marcus et al., 2001). The stiffness map of the outer wall of guard cells revealed the presence of transverse wall reinforcements matching the CMF orientation (Figure 1C). Therefore, our AFM approach has sufficient spatial resolution to reveal mechanical heterogeneities in cell walls. The AFM-based stiffness map of pavement cells also revealed the presence of mechanical heterogeneities, with apparent elastic moduli spanning the range 2\u20138 MPa. In particular, we found fibrous patterns of higher elastic modulus congregating at sites of indenting regions (Figure 1D, Figure 1\u2014figure supplement 2). These lines are independent of small-scale topography (Figure 1E). Note that with AFM, we are measuring the mechanical properties of the wall in the normal direction to the wall surface with an isotropic probe, and therefore, we are not assessing the very local mechanical anisotropy of the cell wall in-plane. Yet, our data reveal a spatial pattern of mechanical anisotropy at a larger scale, and thus can be used as a proxy for mechanical anisotropy in sub-regions of the cell\u2019s outer wall. Staining for cellulose in mesophyll cells of wheat that exhibit alternating patterns of lobe like outgrowth and indenting regions has shown a strong presence of cellulose in the constricted regions of the cells (Jung and Wernicke, 1990). Altogether, this suggests that CMFs act as a brace around the indenting regions providing mechanical reinforcement of those regions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig1-v1.jpg)\n\n**Figure 1.:** (A) Microtubule bundling persits in indenting regions of pavement cells over time. Scale bars 20 \u03bcm. (B) Microtubule anisotropy over time, lines represent average orientation of microtubule arrays at different time points within the region of interest (dashed box in A). Longer lines indicate higher degree of anisotropy. (C) Stiffness map of the outer walls in two guard cells obtained by atomic force microscopy revealing transverse wall reinforcements. Gray scale bar represents scale of the observed elastic modulus in MPa. (D) Siffness map of the outer walls in pavement cells obtained by atomic force microscopy (same scale bar). Indenting regions exhibit striations with increased values of elastic modulus, reflecting regions with strong mechanical anisotropy. (E) 3D rendering of pavement cell topography as obtained by atomic force microscopy.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Additional examples of microtubule bundling persisting along the indenting regions of pavement cells over time, far right panels shows lines representing the average orientation of microtubule arrays at different time points within the region of interest (dashed box). Length of the line indicates strength of anisotropy (longer lines indicate higher degree of anisotropy). Scale bars 25 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Additional example of stiffness map of the outer walls in another cotyledon obtained with AFM.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A and B) Microtubule orientation on the outer (A) and inner (B) side of epidermal pavement cells Scale bar 25 \u03bcm.\n\nRecent reports suggest that MT and cellulose synthase orientation could have different behaviors on the inner and outer face of hypocotyl epidermal cells (Chan et al., 2010; Crowell et al., 2011) and stems (Fujita et al., 2011). To test if this is the case in pavement cells, we visualized MT organization on the inner face of the pavement cells in confocal Z sections. The inner MT arrays appear to be identical to those observed on the outer face, thereby suggesting the cell walls of the indenting regions are reinforced on both faces of the cell (Figure 1\u2014figure supplement 3A,B). These data thus consolidate a model in which pavement cell shape is maintained by localized MT-dependent wall reinforcements in indenting regions (Fu et al., 2005).\n\n### Microtubule organization correlates with cell geometry-derived mechanical stresses\n\nNext, we investigated whether mechanical stress can act as an instructive signal in this MT organization. Physical models of the shoot apical meristem as a pressurized vessel have shown that the supracellular mechanical stress pattern can prescribe global MT organization and tissue morphology (Hamant et al., 2008). Scaling down, this model implicitly predicts that mechanical cues also contribute to single cell morphology. However, this question still remains to be explored.\n\nTo address this, we first computed the expected patterns of stress in pavement cells using a three-dimensional (3D) finite element model representing the outer face of the wall as a curved surface. Tensile stress experienced by the walls is caused by turgor pressure within the cells, therefore the main question was whether cell shape affects the anisotropy of stress in the wall. The 3D geometries of the cells were extracted from confocal microscope images of pavement cells processed with MorphographX and meshed with quadrilateral shell elements (Kierzkowski et al., 2012). The boundaries of the cells contain additional beam elements that account for increase in stiffness due to the presence of the anticlinal walls. For the material properties, we used a constitutive model of hyperelastic transversely isotropic material. To account for the mechanical anisotropy of the wall (Baskin et al., 1999), elasticity of the tissue was represented by the behavior of an isotropic matrix combined with the resistance of CMF oriented in a single-preferred direction per element. In the simulations, we have assumed that stress pattern arises due to turgor pressure in individual cells accompanied by tension in the epidermal layer (Dumais and Steele, 2000; Kutschera and Niklas, 2007; Hamant et al., 2008). The displacement of the anticlinal walls was restricted in z direction.\n\nThe outcome of the model with mechanically isotropic cell walls showed a strong anisotropic arrangement of stresses focused in indenting regions of the pavement cells (Figure 2A,C, Figure 2\u2014figure supplement 1A). Despite the noisy behavior of MTs in pavement cells, visualization of MT organization with YFP:MBD (Wightman and Turner, 2007) showed a good correlation between the largest stress direction and MT arrangement, aggregating in indenting regions of the pavement cells (Figure 2B,D, Figure 2\u2014figure supplement 1B). Furthermore, the clustering of MT arrays in the indenting regions also correlated with regions of predicted higher magnitude of stress (Figure 1E, Figure 2\u2014figure supplement 1C). Stress directions were also computed in a model representing a 3D pavement cell shape along with the anticlinal and bottom walls. The model generated principal stress tensor direction pattern similar to the curved surface model (Figure 2\u2014figure supplement 2A\u2013C). Both cases showed a higher magnitude of tensile stresses in the indenting neck-like regions, matching the local MT pattern; compression forces at approximately 10% of the tension value were observed in some regions close to the cell boundary with no clear relation with MT behavior (Figure 2\u2014figure supplement 2D\u2013F). This suggests that tensile stress influences MT organization at a subcellular level in pavement cells, thereby indicating that the perception of stress must involve a mechanism that acts locally within each cell, rather than on a cell-wide or tissue-wide basis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig2-v1.jpg)\n\n**Figure 2.:** (A) Mesh showing stress directions, with the corresponding microtubule organization shown in panel B. Highlighted cells in green are represented in panels C\u2013E and Figure 2\u2014figure supplement 1A\u2013C. (C) Largest stress direction (red) and second principal stress direction (green) in mechanical models of the pavement cell. White arrowheads indicate regions of convergence of directional tensile stresses in necks of pavement cells. (D) Microtubule (YFP-MBD) orientations correlate with the maximal stress direction predicted in the mechanical model. (E) Heat map showing the magnitude of stress distribution in the mechanical model. Arrowheads indicate regions of highest stress magnitude in neck regions. Scale bars 20 \u03bcm. (F) Circumferential distribution of microtubules surrounding elevated guard cells represented as a depth color-coded Z-stack. (G) Mechanical model of stress patterns around a stomata reproduce the observed arrangements of microtubules surrounding guard cells. (H) Microtubule organization around a non-elevated stoma and a mechanical model of stress patterns of the same (I). Scale bars 25 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Example cell from Figure 2A showing correlation between predicted physical stresses and microtubule organization. Scale bars 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** 3D cell with epidermal, bottom, and anticlinal wall. (B and E) The bottom wall removed and replaced with boundary conditions at the bottom of the anticlinal wall. (C and F) Surface model of epidermal wall only with anticlinal walls replaced by boundary condition. (A\u2013C) The color map (Blue to Red) shows the value of the first principal stresses. (D\u2013F) The color map shows the value of second principal stresses. Blue to red mark positive values (tension). The black is negative values (compression).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Color map of the cosine of angle between first principal stress without (white lines) and with anisotropic material and feedback to stress direction (black lines).\n\nTo check whether the mechanical anisotropy of the wall could alter stress direction in pavement cell models, we introduced a CMF direction with five times higher stiffness and subjected the cells to elastic expansion again. A feedback model between the stress perceived by a cell and orientation of the CMFs, which assumes an alignment of the CMF in the direction of maximal stress results in a very minor deviation of the stress pattern from the stress orientation obtained in the case of an isotropic material (Figure 2\u2014figure supplement 3). The simulations thus suggest that for small elastic deformations the overall stress pattern is affected more strongly by the geometry of the cells than by the mechanical anisotropy of the existing cell wall material.\n\nThe model also predicts that the topography of the epidermis impact stress patterns and can have a dominant role on MT behavior as compared to cell shape. In particular, assuming that the epidermis is under tension, the largest stress direction should be circumferential around a local bump. Stomata being often in such an elevated position, we analyzed the MT arrays around guard cells and we found circumferential orientations, consistent with the predicted stress directions (Figure 2F,G). Conversely, no circumferential MT pattern could be observed near stomata that were not elevated (Figures 2H,I).\n\nThe results suggest that, analogously to what was observed in the shoot meristem, patterns of cellular and supracellular mechanical stress and MT orientation are correlated. Furthermore, we find that this correlation holds down to the sub-cellular level.\n\n### Mechanical compression of cotyledon pavement cells affects microtubule anisotropy\n\nRecent observations of MT organization in epidermal cells of leaves shows a supracellular response of MTs after changes in physical forces (Jacques et al., 2013). Application of compressive forces resulted in hyper-alignment of MTs. We tested whether mechanical stress can act as an instructive signal to organize MTs in cotyledon pavement cells by performing mechanical perturbations. Our finite element model predicts that when subjected to compression from above, there is an increase in overall stress in physical models (Figure 3\u2014figure supplement 1A,B). Note that this response would however largely depend on the ability of the epidermis epidermal wall to maintain a constant volume while under compression. We directly applied compressive forces to pavement cells by using a coverslip that was pressed on the surface of the cotyledons and kept in place using adhesive silicone applied on the margins (Figure 3\u2014figure supplement 1C). Depth color-coded Z stacks of MT organization and transects of the confocal Z-stack showed flattening of cells due to compression (Figure 3\u2014figure supplement 1C,D). Imaging of MTs in the cells immediately after and 7 hr after compression showed rearrangement of MTs into more aligned arrays by 7 hr (Figure 3\u2014figure supplement 1C,D,F; Video 1; mean \u00b1 SE is 0.37 \u00b1 0.06 for 0 hr, n = 95 cells, 5 seedlings and 0.57 \u00b1 0.06 for 7 hr, n = 95 cells; 5 seedlings; p<0.0001; Mann\u2013Whitney U test; Figure 3H). This increased MT anisotropy persisted for longer periods when the tissue was maintained in the compressed condition (Figure 3\u2014figure supplement 2). This response was also reversible: 24 hr following removal of compression, nematic tensor values for MT anisotropy were reduced to a value close to that obtained during the time point immediately after compression (mean \u00b1 SE is 0.24 \u00b1 0.02; Figure 3E,G,H). It should be noted that the nematic tensor values between the 0 hr time point and the recovery state are not identical which could be the result of changes in imaging conditions (\u2018Materials and methods\u2019). However, despite this the reported nematic tensor values clearly show a trend in the increase and decrease of the MT anisotropy in the compression experiments. These results on cotyledon epidermal cells are thus consistent with the recently published report on contribution of mechanical stress in controlling MT behavior in leaf epidermal cells (Jacques et al., 2013).\n\n![Video 1.](https://cdn.elifesciences.org/articles/01967/elife-01967-media1.mov.jpg)\n\n**Video 1.:** Scale bar 20 \u00b5m.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) Mechanical models showing changes in stress directions upon ablation. (C) Large scale ablation of cotyledons result in circumferential distribution of microtubule arrays around the site of physical perturbations, reproducing the results of the physical model. (D) Microtubule arrays in pavement cells of mutant botero 1-7 shows random organization 7 hr after perturbation. Asterisk marks site of laceration. Scale bar 25 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and B) Mechanical models predict an increase in mechanical stress compression. (C and D) Depth color-coded Z-stack of microtubules, immediately after applying compressive forces (C) and after 7 hr of compression (D). (E) Recovery of microtubule arrays 24 hr after release of compression. Lower panels show orthogonal projections along dashed lines showing flattening of cells due to compression, and recovery from compression. Arrowhead indicates flattened region. Far right panel shows color bar representing scale along the Z axis. (F and G) Scatter plots comparing nematic tensor values of individual cells showing increase of microtubule anisotropy 7 hr after compression (F) and decrease following release of compression (G). Colored boxes represent identical cells in both plots. (H) Histogram of average microtubule anisotropy values under each condition. Error bars represent standard error. Asterisk shows significance (p values derived from Mann\u2013Whitney U test), N = 5 seedlings, 95 cells per treatment. Scale bar 50 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Note the increased MT anisotropy during compression and reduced MT anisotropy upon release of compression.Scale bars 25 \u03bcm.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Time series images of a cut cotyledon. Scale bar 500 \u03bcm. (B) Kymograph along the dashed red line in panel (A) showing gap opening immediately after physical laceration of the cotyledon, and consistent with release of tension. Dashed line indicates point of laceration and red arrows indicate displacement of the tissue in either direction. Scale bar 100 \u03bcm. (C) Removal of epidermis in the microtubule reporter line (MBD:GFP) by laser ablation shows an upward shift in the position of mesophyll cells of cotyledon tissue, consistent with mesophyll being under compression. Scale bar 20 \u03bcm.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Depth color-coded Z stack of microtubule arrays before (A) and 8 hr after compression in botero 1-7 (B). Scale bar 50 \u03bcm. (C) Transect along dashed line in (B) showing flattening of cell due to compression. Crosses represent strength of microtubule alignment in one direction or the other. Scale bar 25 \u03bcm.\n\n### Large scale changes in tissue-wide stresses can override cell shape-derived stresses\n\nA limit of the compression test is that water movements may be induced, and while it is extremely difficult to monitor, water flow may alter turgor pressure in the long term and thus the predicted stress pattern. So to further investigate the link between MT behavior and stress in pavement cells, we next induced large cuts to change stress patterns in cotyledons and observed the resulting MT pattern. The observation of tissue deformations after large cuts has long been used to deduce the stress pattern (Dumais and Steele, 2000) and has recently been adapted to calculate solid stresses in animal tumors (Stylianopoulos et al., 2012). Macroscopically, large cuts in cotyledons resulted in an immediate outward displacement of the cut edges, consistent with release of tension (Figure 3\u2014figure supplement 3A,B; Video 2). We also observed upward movement of mesophyll cells from the layer below (Figure 3\u2014figure supplement 3C), consistent with the epidermis being under tension as observed in other plant tissues (Kutschera and Niklas, 2007). Simulation of such a large-scale nick in physical models was done with the assumption that laceration would lead to removal of turgor pressure from the cut cells followed by a reduction of wall elasticity, as previously published in more local (Hamant et al., 2008) and more global (Dumais and Steele, 2000; Kutschera and Niklas, 2007) tissue contexts. Our physical model suggests that maximal stress directions become circumferential to the laceration after treatment and independent of cell geometry (Figure 3A,B; Video 3). To test the model predictions, we performed similar lacerations on cotyledons of seedlings expressing fluorescent reporters of MTs. Time series imaging of MT rearrangements showed a progressive change in the organization of MT arrays around the site. After 3.5 hr, we observed hyper-aligned MT arrays in cells adjacent to the damaged region and at 7 hr the alignment advanced to cell layers farther away from the site of laceration, independently of cell shape (Figure 3C). Quantification of MT anisotropy showed a significant increase in MT anisotropy 7 hr after laceration (mean \u00b1 SE is 0.080 \u00b1 0.007 for 0 hr, n = 61 cells and 0.37 \u00b1 0.02 for 7 hr, n = 65 cells; 3 seedlings each; p<0.0001; Mann\u2013Whitney U test), indicating that changes in tissue-wide stresses could override cellular level control of MT anisotropy.\n\n![Video 2.](https://cdn.elifesciences.org/articles/01967/elife-01967-media2.mov.jpg)\n\n**Video 2.:** Scale bar 500 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/01967/elife-01967-media3.mov.jpg)\n\n### Microtubule response to mechanical perturbation is dependent on the magnitude of change in stress intensity\n\nTo decipher if the response of MTs to mechanical perturbation depended on the intensity of stress imposed on the tissue, we performed simulation in which single cells were removed and the resulting patterns of stress computed. Similar to the large scale laceration experiments, a circumferential rearrangement of stresses was observed. However, the rearrangement was less pronounced than after cotyledon dissection, and observed in cells only adjacent to the site of perturbation (Figure 4A,B). To test this experimentally, we ablated single cells using a pulsed dye-coupled laser to see if small-scale perturbations could decouple the cellular level control of microtubule organization. 7 hr after ablation, we observed that MT alignment had responded to treatment by tending toward a circumferential alignment around the ablated cell site. The MTs around the site of ablation were not completely circumferential, consistent with a scenario in which stress anisotropy is weaker in single cell ablation cases than in cases of large-scale dissection, therefore leading to a comparatively reduced alignment of MTs around the site of ablation (Figure 4C,D,E). The alignment observed after single-cell ablation was significantly different from that resulting from large-scale perturbation, in which a strong circumferential response was obtained.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig4-v1.jpg)\n\n**Figure 4.:** (A and B) Simulation showing less pronounced circumferential rearrangements of stresses after ablation of single cell. Images of microtubule reporter line before (C) and 7 hr after (D) ablation of single cell, showing aligned microtubule arrays not completely circumferential after ablation of single cell. Scale bars 50 \u03bcm. (E) Magnified images of cells in figure D (Images not to scale). Asterisk shows the location of the ablated cell.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Close up image of microtubule arrays in guard cell before (A) and 7 hr after (B) large-scale ablation. Majority of the guard cells retain the transverse pattern of microtubule arrays after laceration. Scale bars 25 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Changes in microtubule arrays before (A) and after treatment with 40 \u03bcM isoxaben for 16 hr (B). (C) Histogram showing increase in nematic tensor values after isoxaben treatment. Error bars represent standard error, asterisk shows significance (Mann\u2013Whitney U test; p<0.0001). Scale bars 20 \u03bcm.\n\nTo further test if a directional force field could alter transverse MT organization observed in guard cells, we monitored MT arrays in guard cells adjacent to the region of large scale laceration. Single optical sections show that MT arrays still remain transverse in majority of the guard cells (Figure 4\u2014figure supplement 1) indicating that these cells retain a certain degree of control of their MTs while being under the influence of a directional force field.\n\nThe observed rearrangement of MTs around the site of laceration supports our hypothesis but several other possibilities could exist. The changes observed could be due to a modified pattern of mechanical stress but also to the biochemical consequences of wounding of the sample. To investigate this we used the cellulose synthase inhibitor isoxaben, as a pharmacological means of increasing mechanical stress in pavement cells. Isoxaben was shown previously to induce hyperbundling and hyperalignment of cortical microtubules along the predicted directions of maximal stress in shoot meristem cells (Heisler et al., 2010), consistent with increased stress levels in the cell walls compared to non-treated plants. Treatment of 3-day-old seedlings with 40 \u03bcM isoxaben for 16 hr led to a sizeable increase in the anisotropy of microtubules (mean \u00b1 SE is 0.27 \u00b1 0.04 for 0 hr, n = 53 cells and 0.54 \u00b1 0.08 for 16 hr, n = 53 cells; 3 seedlings; p<0.0001, Mann\u2013Whitney U test; Figure 4\u2014figure supplement 2A\u2013C). These observations add further evidence that mechanical forces are responsible for MT rearrangement. However, it should be noted that a much more complex scenario, involving both mechanics and wound responses, could govern this aspect of MT rearrangements.\n\n### The microtubule response to subcellular and supracellular stresses depends on katanin-dependent severing activity\n\nHomozygotes for the katanin loss-of-function allele ktn1-3 exhibit severe pavement cell shape defects, consistent with the role of MTs in neck formation (Lin et al., 2013). When quantifying MT anisotropy in the bot 1-7 katanin allele, we found a 60% reduction when compared to the wild type (Mean \u00b1 SE is 0.09 \u00b1 0.01 for bot 1-7, n = 83 cells; 4 seedling and 0.23 \u00b1 0.05 for WT, n = 53 cells; 3 seedlings), thus confirming the relation between MT ordering and pavement cell shape. It has been shown in the shoot meristem that the response of MTs to tissue stress relies on MT self-organization. In particular, MT rearrangement after changes in mechanical stress is promoted by katanin-dependent MT severing (Uyttewaal et al., 2012). To test whether, as in the shoot meristem, katanin activity is required for the MT response to stress in pavement cells, we performed lacerations and compressions in the katanin mutant background bot1-7. In both assays, MT arrays in pavement cells remained relatively isotropic after the micromechanical perturbations (Figure 3D, Figure 3\u2014figure supplement 4A\u2013C; Video 4). Measurement of MT anisotropy showed no significant difference before and 7 hr after ablation in bot 1-7 (mean \u00b1 SE is 0.09 \u00b1 0.02 for 0 hr, n = 83 cells and 0.10 \u00b1 0.02 for 7 hr, n = 74 cells; 3 seedlings; p>0.05, t test; Figure 3D). Only subtle alignments could be detected in the immediate vicinity of the ablated zone in large-scale lacerations, but no alignment over several cell files was observed (Figure 3D). These results are consistent with observations made in the shoot apical meristem (Uyttewaal et al., 2012) and suggest that the MT response to stress is not only conserved in different tissues and at different scales, but also relies on a similar mechanism.\n\n![Video 4.](https://cdn.elifesciences.org/articles/01967/elife-01967-media4.mov.jpg)\n\n**Video 4.:** Scale bar 50 \u00b5m.\n\nAs quantification of severing events in meristems is impractical due to difficulties in accessing the cells for high-resolution imaging, we took advantage of the large size of pavement cells to further test this conclusion. To do so, we directly scored single MT-severing events in YFP-MBD cells adjacent to the lacerated region in pavement cells (Figure 4A). Using time-series imaging of MT arrays, we could observe severing of MTs occurring at sites of crossover points of MTs (Figure 5A; Wightman and Turner, 2007; Lindeboom et al., 2013; Wightman et al., 2013; Zhang et al., 2013). The severing rate in mock-treated control seedlings of 0.08 \u00b1 0.02 \u00d7 10\u22123 events \u03bcm\u22122 min\u22121 (mean \u00b1 SD, N = 16 cells, 4 seedlings, total area of 2.99 \u00d7 104 \u03bcm2) is in agreement with what has been previously published (Wightman and Turner, 2007; Wightman et al., 2013; Zhang et al., 2013). However, in seedlings subjected to changes in mechanical forces, cell files close to the site of ablation showed a significant increase in severing rate to 0.93 \u00b1 0.45 \u00d7 10\u22123 events \u03bcm\u22122 min\u22121 (mean \u00b1 SD, N = 16 cells, 4 seedlings, total area of 1.5 \u00d7 104\u03bcm2, p<0.01, t test) 3 hr after ablation (Figure 5B; Video 5). Measurement of number of crossover points (i.e., two polymerizing MT crossing each other without experiencing severing or catastrophe) immediately after and 3 hr after mock treatment showed a 9% increase (mean \u00b1 SE is 11.0 \u00b1 1.4 per 10 \u03bcm2 for 0 hr, n = 6 cells and 12 \u00b1 1.5 per 10 \u00b5m2 for 3 hr) whereas the cells experiencing changes in mechanical stress showed a 65% decrease in the number of cross over points (mean \u00b1 SE is 15 \u00b1 3 per 10 \u03bcm2 for 0 hr, n = 6 cells and 5 \u00b1 2 per 10 \u03bcm2 for 3 hr). These measurements demonstrate an up-regulation in the severing of MTs at crossover sites after changes in mechanical stress. This mechanism could enrich the population of free MTs, while removing the MTs that do not align parallel to maximal tensile stress, thereby resulting in the generation of anisotropic MT arrays.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig5-v1.jpg)\n\n**Figure 5.:** 3D surface plot of YFP microtubule time series images representing a typical microtubule severing event (A), arrowheads indicate microtubule-severing at a crossover sites. Scale bar 5 \u03bcm. (B) Histogram representing microtubule severing rates of mock treated seedlings and in seedling of cells adjacent to site of ablation after 4 hours. Error bars represent standard deviation. Asterisk shows significance. (Student\u2019s t test). N = 16 cells, 4 seedlings, total area of 2.99 \u00d7 10 \u03bcm for mock and N = 16 cells, 4 seedlings, total area of 1.5 \u00d7 10 \u03bcm for ablation.\n\n![Video 5.](https://cdn.elifesciences.org/articles/01967/elife-01967-media5.mov.jpg)\n\n**Video 5.:** Scale bar 25 \u00b5m.\n\n## Discussion\n\nThe role of mechanical stress in animals has mainly been investigated in single cells. Some pioneering studies in Drosophila have investigated the role of mechanical stress in tissues, and most notably in germ band extension (Lecuit and Lenne, 2007; Sherrard et al., 2010), dorsal closure (Martin et al., 2009; Solon et al., 2009), and gastrulation (Pouille et al., 2009) in relation to actomyosin reorganization. However the mechanical properties of these tissues have not been studied, notably because of the difficult physical access to these embedded tissues, and because the rapid growth dynamics of these tissues is not compatible with high resolution mechanical measurements, using for instance, atomic force microscopy. Because plant growth is much slower and because tissues are easily accessible, such measurements are possible in plants. Here, we could correlate the behavior of the microtubular cytoskeleton with the predicted stress pattern and with quantified mechanical properties. This validates a number of previous studies assuming that pavement cell shape depends on mechanical heterogeneities (Fu et al., 2005), albeit relying only on MT behavior, and further supports plant tissues as facile systems to investigate the relation between the biophysics of growth and development.\n\nCurrent models on pavement cell morphology suggest an influence of a ROP-based signaling mechanism on the cytoskeletal network (Fu et al., 2005; Yang, 2008). The findings suggest that growth is restricted in pavement cell indenting regions due to localized accumulation of anticlinal MT arrays by regulating CMF deposition, whereas local outgrowths are associated with the presence of an actin cytoskeleton that promotes growth. More recently it has been proposed that an auxin-dependent self-organizing mechanism controls the ROP-based signaling network (Xu et al., 2010). This model of differential growth is challenged by time lapse-imaging studies of pavement cell development, which shows an initial phase of multiple lobe initiations, followed by a phase of isotropic expansion during which the cell shape is maintained (Zhang et al., 2011). These studies do not take into account the mechanical aspects of the cell. In our study we show how subcellular mechanical stresses control MT organization, which in turn affects the mechanical anisotropy of the cell wall thereby contributing to cell shape irrespective of the previously proposed mechanisms. We believe that such a signaling module could add robustness to shape changes at the cellular scale.\n\nOur studies further shed light on two theories that are at the center of many debates in biology. The organismal theory of multicellular organisms states that comprehension of tissue properties is essential to understanding the development of the organism, as opposed the view of cell theory, that proposes that the function of individual cells is what dictates development of the entire organism (Kaplan, 1992; Baluska et al., 2004). Previous findings on the shoot meristem suggest that MT organization depends on tissue shape-derived stresses (Hamant et al., 2008). Here, we found that cells can also interpret mechanical signals that are generated by their own shape. As this response is lost in large-scale mechanical perturbations, we propose that MT behavior depends on stress intensity, which is cell autonomous as long as tissue stresses do not override it. Such a balance between cell autonomous and non-cell autonomous stresses could control subcellular events in animal systems too.\n\nMechanical forces are known to cause changes to single MT dynamics in vivo by regulating the activity of MT-associated proteins (Trushko et al., 2013). In several organisms tensile forces acting on the kinetochore complex-attached MT ends are known to influence MT elongation rates during mitosis (Nicklas, 1988; Skibbens et al., 1993; Gardner et al., 2005; Franck et al., 2007). It remains to be tested if changes in mechanical forces could alter single MT dynamics in whole organism based studies. Previous studies on the shoot apical meristem show that katanin-mediated MT severing is required for MT response to changes in mechanical stresses (Uyttewaal et al., 2012). Our data not only show that a similar mechanism is present in pavement cells, but also show that severing itself is promoted by mechanical stress. One possible mechanism for stress-dependent regulation of MT alignment, where each MT is stressed due to their coupling with CMFs potentially by means of the cellulose synthesizing complexes which ride along the MT synthesizing the CMFs parallel to the MTs (Paredez et al., 2006; Bringmann et al., 2012). In such a scenario, a MT under tension is strained producing a conformational change to the MT lattice, which then could bias the binding of katanin to the less strained MTs at crossover sites, leading to preferential severing of the MTs that are not aligned to the principal stress direction. Reports have shown that conformation changes to the MT lattice act as hotspots promoting katanin binding and activity (Davis et al., 2002; D\u00edaz-Valencia et al., 2011). As a result, this strain in MTs would lead to a MT alignment parallel to the anisotropic stress, not to overall cellular strain. MT behavior would thus depend on two parameters of mechanical stress (Figure 6): stress direction from cell and tissue shape determine the dominant MT orientation, which dictates wall reinforcement, and thus in turn contributes to cell and tissue shape; and stress intensity modulates severing activity, which controls the response of MTs to stress. Based on these results, there is no need for several rules to explain MT behaviors at different scales or in different tissues in response to mechanical signals and perturbations, and this parsimony might be one of the defining features of mechanical signaling, when compared to molecular signaling. As shape rather relies on the actomyosin network in animals, the impact of mechanical forces on actin dynamics may in principle have a similar multiscale role in animals.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01967/elife-01967-fig6-v1.jpg)\n\n## Materials and methods\n\n### Plant material and growth conditions\n\nArabidopsis thaliana lines expressing microtubule (MT) reporters YFP:MBD (Landsberg erecta) was previously used by Wightman and Turner (2007) and MBD:GFP (Col-0) was used by Hamant et al. (2008). botero 1-7 (WS) was isolated previously by Bichet et al. (2001), YFP:MBD in a botero 1-7 background and YFP:MBD (Wassilewskija) (Wightman et al., 2013) was a kind gift from Simon Turner (University of Manchester). All seeds were surface sterilized, stratified for 2 days, and grown vertically on plates containing half strength Murashige and Skoog (MS) media in light (16-hr photoperiod) at 21\u00b0C for 5 days for confocal microscopy.\n\n### Specimen preparation and confocal imaging\n\n5 days after germination plants were transferred to sterile plastic boxes containing MS media. The plants were fixed by adding lukewarm 1% agarose to the hypocotyls and roots submerging them, thereby exposing the cotyledons. Plants were imaged using a Zeiss LSM-780 or Zeiss LSM-700 as described in Heisler et al. (2010).\n\n### Mechanical perturbations\n\nLaser-induced ablation was performed using an Andor Micropoint ablation laser fitted to a Zeiss LSM-780 scanning confocal microscope as described (Hamant et al., 2008) using a 63X or 40X water dipping objective. Compression was achieved by placing cotyledons tightly mounted between a cover glass and slide with silicon grease. Imaging of the compressed tissue was performed using an oil immersion lens. To image MT recovery after compression, seedlings were transferred to MS media containing Petri dishes after carefully removing the coverslip and treated as described above before imaging with a water-dipping lens. Laceration of the cotyledon was performed using a sharp forceps or a scalpel. Isoxaben treatment was preformed as described in Heisler et al. (2010).\n\n### Image processing\n\nAll images were processed and analyzed using the FIJI or ImageJ software. Background subtraction was performed using the \u2018Subtract Background\u2019 tool (rolling ball radius 30\u201340 pixels), and the \u2018StackReg\u2019 plugin was used to correct focal drift of the sample. Depth color-coding was performed using the \u2018Temporal-color code\u2019 tool. Cell boundaries in Figure 2B are pseudo projection of the lower most stack in a different color. Walking average function was performed on time series data sets used for analysis of severing events.\n\n### Quantification of MT alignments for anisotropy\n\nQuantification of MT alignments for anisotropy was done using the ImageJ macro described in Uyttewaal et al. (2012) and Boudaoud et al. (2014) for Figure 1 and for the laceration experiments in which a score of 0 indicates completely isotropic pattern and 1, a case of completely aligned pattern. For all other experiments, the macro was modified in order to include in the output the visual and numerical measure of anisotropy of the nematic and texture tensors. The modified macro displays directions of both eigenvectors of the tensor of which relative length is an indication of the anisotropy of the signal. The score is calculated as a difference between the principal eigenvalues divided by the sum of diagonal elements of the tensor. The score gives 0 in case of completely isotropic pattern and 2 in case of completely aligned pattern. Analysis was carried out in each cell by drawing an outline of the region of interest, using the \u2018Polygon selection\u2019 tool in ImageJ. The outlines covered the entire area of the cell, without the anticlinal wall signal. These regions were then recorded using the \u2018ROI manager\u2019 tool in ImageJ and saved for automatic selection of the same cells in other time points.\n\n### Severing quantification\n\nSevering quantification was preformed manually using ImageJ, where severing events are scored using the point picker tool in ImageJ based on the criteria described in Wightman et al. (2013). Quantification was carried out in cell files extending up to four layers from the site of ablation. A total of 15 events were observed in the mock treated samples in a total of 27.2 min and 66 events 3 hr after ablation in a total of 20.9 min.\n\n### Statistical analysis\n\nStatistics is preformed in Excel or OriginPro. For data sets that do not have a normal distribution, we have preformed Mann\u2013Whitney U test, a non-parametric test of the null hypothesis; for normally distributed data sets, we have used the t test to estimate statistical significance.\n\n### Atomic force microscopy\n\nAFM indentation experiments were carried out with a Catalyst Bioscope (Bruker Nano Surface, Santa Barbara, CA), that was mounted on a optical macroscope (MacroFluo, Leica) using an objective (5x plano objective, Leica). To record surface topology and to create an elastic modulus map, PeakForce QNM AFM mode is used. A Nanoscope V controller and Nanoscope software versions 8.15 were utilized. All quantitative measurements were performed using standard pyramidal tips (ScanAsyst Air, Bruker, Inc.). The tip radius is given by the manufacturer to be between 2 nm and 10 nm. The spring constant of cantilevers was measured using the thermal tuning method (Hutter and Bechhoefer, 1993; Levy and Maaloum, 2002) and was ranged from 0.3\u20130.5 N/m. The deflection sensitivity of cantilevers was calibrated against a clean silicon wafer. All measurements were made under water at room temperature and the standard cantilever holder for operation in liquid was used. Cotyledons were detached from the stem with a fine blade and the abaxial (lower) side of the cotyledon was used for the measurement. The upper side of the sample was adhered to a Petri dish using a tissue section adhesive (Biobond, Ted Pella, Inc.). Then the Petri dish was positioned on an XY motorized stage and held by a magnetic clamp. Then, the AFM head was mounted on the stage and an approximated positioning with respect to the cantilever was done using the optical macroscope.\n\nThe foundation of material property mapping with PeakForce QNM is the ability of the system to acquire and analyze the individual force curves from each tap that occurs during the imaging process. In this mode, the probe is oscillated at a low frequency (0.5 kHz), capturing a force curve each time the AFM tip taps on the sample\u2019s surface. The maximum force during imaging was 1 \u03bcN. For each sample, the topology and elastic modulus images were collected from different places of the sample over sizes of 70 \u00d7 70 to 150 \u00d7 150 \u00b5m2 and at a digital resolution of 128 pixels \u00d7 128 pixels. The 0.3 Hz scanning rate was used. In this QNM mode technique, the elastic modulus is derived from the force\u2013indentation curves by using 2 different models: (i) the Hertz\u2013Sneddon model (Sneddon, 1965) or (ii) the Derjaguin-Muller-Toporov (DMT) model (Derjaguin et al., 1975). Both assumed a rigid cone indenting a flat surface. Unlike the Hertz\u2013Sneddon model (Equation 1) that is applied on the approach curve, the DMT model is applied on the retract curve and accounts for adhesion (Equation 2).\n\n$$\nF=\\frac{2}{\\pi}\\frac{E}{(1\u2212\u03bd^{2})}\u2009tan(\\alpha)\\delta^{2}\n$$\n\nF is the force from force curve, E is the Young\u2019s modulus, \u03bd is the Poisson\u2019s ratio, \u03b1 is the half-angle of the indenter and \u03b4 is the indentation.\n\n$$\nF\u2212F_{adh}=\\frac{4}{3}E*\\sqrt{R(d\u2212d_{0})^{3}}\n$$\n\nF \u2212 Fadh is the force on the cantilever relative to the adhesion force, R is the tip end radius, and d \u2212 d0 is the deformation of the sample. For this last model, the result of the fit is the reduced modulus E*. Moreover, if the Poisson\u2019s ratio is known, the software can use that information to calculate the Young\u2019s Modulus of the sample by the equation (Equation 3):\n\n$$\nE*=\\frac{E}{(1\u2212\u03bd^{2})}\n$$\n\nHere, we assumed our sample is perfectly incompressible so that the Poisson\u2019s ratio used is 0.5. However, since neither the Poisson\u2019s ratio nor the tip shape is accurately known, we report in this work only an \u2018apparent modulus\u2019 (Ea).\n\n### Computational models\n\nFor simulations of tissue mechanics, we have used a nonlinear Finite Element Method which provides an approximate solution of continuum elasticity problems on domains with complex geometry (Zienkiewicz et al., 2005). Simulations involving pavement cell geometries were performed with in-house written software, which is specialized and optimized for cellular geometries. The software is based on a procedure of minimization of nonlinear strain energy for a given constitutive model of the material (Bonet and Wood, 1997). We have used a hyperelastic transversely isotropic model of the material, which is particularly suited for description of fibrillar tissues (Weiss et al., 1996). For the matrix part of the material, we employed the Saint Venant\u2013Kirchhoff model. The epidermal cell wall surface was modeled with shell elements, designed to handle thin curved surfaces. Additional beam elements accounting for the presence of the anticlinal cell walls were placed along the projections of the individual cell boundaries on the epidermal surface. These beam elements were assumed to have Young\u2019s modulus of the matrix part of the material and thickness of 1/5 of the epidermal wall. For the model on feedback between wall anisotropy and mechanical stresses we have set the material anisotropy axis at each step of the Newton\u2013Raphson iteration aligned with maximal principal stress measured in the previous step. The model parameter values were chosen from different experimental estimates of plant cell wall elasticity based on measurements of in vivo samples (Suslov et al., 2009; Hayot et al., 2012; Nezhad et al., 2013) and synthetic bio-composites (Chanliaud et al., 2002). We set Young\u2019s modulus equal to 40 MPa for the matrix part of the material. The Young\u2019s modulus of the CMF was assumed to be five times larger than the matrix. Turgor pressure was set to 0.2 MPa and thickness of the epidermal wall was assumed to be 1 \u03bcm. We have also tested different values of these parameters varying them in the range 0.5\u20132 times the presented values and found the results of the simulations to be qualitatively consistent within these limits. To account for tension in the epidermal layer the outer boundary of the templates was expanded by 1% in the x-y plane. The inner boundaries of individual cells were free in the x-y plane and restricted in the z direction. Pressure was applied on the surface of each cell. The choice of low turgor pressure was mainly dictated by convergence requirements of our model. Large turgor pressures caused instability of the model with respect to x-y movement of the cell boundaries, as a result of our approximate treatment of anticlinal walls. We have found, however, that the stress pattern does not show major qualitative changes for larger pressures. Thus, we have used the turgor within low range of experimentally reported values assuring good convergence with reasonable computational cost.\n\nMost of the simulations involving the cell shapes extracted from experimental data were started from a flat geometry. The boundaries of the cells were obtained from the experimental data using MorphographX software (Kierzkowski et al., 2012) and the meshes constrained to those boundaries were constructed with the use of the CGAL algorithms (CGAL, 2014). For the stomata simulations (Figure 2), we have extracted information about the three-dimensional geometry of the cell surfaces using the three-dimensional confocal microscopy data and MorphographX software. In this case, the initial mesh was projected on the estimated real cell surface.\n\nSimulations involving simpler geometries were performed with Abaqus (Simulia, Providence, RI) finite element modeling software (Figure 2\u2014figure supplement 2, Figure 3\u2014figure supplement 1), using the same material model as in other simulations and shell finite elements. These compression simulations were performed with a constant volume assumption and node to surface frictionless contact. Similar results were obtainable with a constant pressure assumption, but in that case the outcome of the simulation was dependent on material properties and the degree of deformation from pressing. To investigate the importance of the anticlinal walls on the stiffness of the epidermal wall model, we performed simulations with a simplified pavement cell shape including anticlinal walls in Abaqus (Dassault Systemes; Figure 2\u2014figure supplement 2). The results were quantitatively consistent with our approximate model of the anticlinal walls. A detailed description of models is provided in supplemental information (Supplementary file 1).\n",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "dddd6107-d94f-459e-b024-1a658bd99cff",
+      "submission_id": "634aac32-387b-41cd-9227-0a6f7a4e9990",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dominique Bergmann, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01967.027](https://doi.org/10.7554/eLife.01967.027)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cSubcellular and supracellular mechanical stress prescribes cytoskeleton behavior in Arabidopsis cotyledon pavement cells\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, Detlef Weigel, and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nMechanical influences on developmental and cellular properties are an important topic of broad impact in plants and animals. After having been out of fashion for a few decades, this topic (aided by new tools) is experiencing a renaissance. This manuscript complements recent work on tissue-level dynamics in the plant shoot meristem by examining the relationships between growth, stress patterns and microtubules (MTs) in crenulated pavement cells of the leaf epidermis. New data here provide more convincing experimental support that MTs respond to stress, and novel work with an AFM system shows that MT patterns and cellulose MF patterns match. Exploiting the large size of pavement cells and using mechanical manipulations (ablations), the authors show a correlation between the frequency of katanin-mediated MT severing events and reactions to mechanical stress. Their observation that tissue level stress can override cell level stress was also documented in a recent paper from Jacques et al. (2013). Altogether these experiments and models have the potential to have a broad impact on our thinking about mechanical influences on development.\n\nThere are a number of improvements that should be made to the models, and the manuscript could benefit from some clearer writing and some further analysis of data already collected. Specific major issues to be addressed in a revised manuscript are enumerated below.\n\n1) Re-evaluation of models used to represent cells.\n\nReviewers were concerned about the models used to represent cells in this manuscript, specifically what appears to be a balloon-type model representing only the surface cell wall, whose stresses reported may not be representative of real pavement cells. When looking at the finer details of stress patterns of individual cells, the patterns do not look like what would be expected from a proper 3D model of a cell \u2013 the necks should be under compression and the lobes under tension (see for example Dumais and Steele 2000 paper, which the authors cite). In the presented model all stresses are tensional, even after ablation, which may not be realistic. Moreover, the text is misleading in making this appear to be a 3D model when it may be a 2D surface of cells, tethered to a substrate by springs at the anticlinal walls. If it is too difficult or inappropriate to apply the 3D model based on their previous shoot apex work (where cells have a very different shape), please explain. Similarly, the model used (and assumptions) should be much more clearly explained in the main text, as the difference between a 2D model with springs and a full 3D model is potentially very important. It is a bit hard to justify making a fine-grained analysis of stresses in a situation where the geometry of the model itself has not been shown to be representative of the system. For example, in 3D one would expect the neck of a pressurized, isolated pavement cell to be under compression.\n\nMinimal additions to the models include:\n\nBegin by representing the compressional stresses in the model in a different color. If the neck regions are indeed under compression (at least after ablation of neighbor), this would be a satisfactory test of the utility of the model. A hand-drawn model with a few pavement cells in Abaqus would be OK. The cells do not have to be perfect, just qualitatively similar in shape (with lobes and necks). Then apply similar loading conditions as in previous simulations and compare it with the simulation where one cell is removed. Please show both tangential stresses, with a color scheme that also indicates compression.\n\nCorrect (or explain) why in Figure panels 4A and B (the model ablation) the cell outlines exactly overlap. Shouldn't the borders move a bit in B next to the cells that are ablated? What exactly does ablation change in the model, if not the boundary next to the ablated cells?\n\n2) Dissect the cell vs. tissue response to stress\n\nA major conceptual advance would come from a deeper analysis of the continuum of cell and tissue responsiveness to stress. The authors propose that \u201cMT behavior depends on stress intensity, which is cell autonomous as long as tissue stresses do not override it\u201d. It would be extremely valuable to calculate or model under what conditions a tissue-level stress would override a cellular stress.\n\nAlong these lines, the authors might test whether pavement cell lobes that differ in their orientation relative to the overall growth direction of the leaf and/or relative to the cut sites, have different sensitivities or degrees of MT anisotropies. The answer to this will give a parameter to address the cell autonomy vs. tissue response. Another simple test would be to look at whether guard cell MTs respond to cuts. Given the evidence that GCs created their own local zones of stress and oriented MTs, my guess would be no, but there might be an interesting correlation with \u201celevated\u201d vs. planar and open vs. closed stomata with respect to responsiveness. This could provide another example of differential \u201cset points\u201d in the cell vs. tissue continuum.\n\nAlso, if cutting experiments release tension globally, then wouldn't the MTs be expected to become less oriented?\n\n3) Formulate a compelling argument for how plant cells sense stress and how this generates shape.\n\nThe Abstract states \u201cForce patterns in plant tissues control cell shapes...\u201d. In support, the authors point to their (very nice) previous work that suggests that MT orientation is controlled by stresses in the tissue, which can be deduced from organ shape (Introduction, paragraph 2). However, this is difficult to reconcile even in the shoot apex. If cells start out with a random orientation creating isotropic growth, why doesn't the plant just create a globular structure? How can MTs be responsible for both tissue shape and cell shape if their orientation is primarily controlled by stress? Another interpretation would be that MT orientation is specified by a mechanism other than stress. Genetically defined organizing centers could control tissue and cell polarity, controlling the orientation of MTs. The shape change induced by the MT orientation would then direct the cellulose orientation, and thus cell wall anisotropy, and create non-trivial shapes. The resulting shape would then have a stress pattern that correlates with the MT orientation, which the authors observe. What is the mechanism for sensing stress? It is relatively easy to sense strains, but how can you sense stress, without invoking strain at some point?\n\n4) Reword section on cell-wall anisotropy to reflect indirect measure of this property.\n\nThe claim that pavement cell shape relies on oriented MTs affecting cell wall anisotropy has not actually been clearly demonstrated. The AFM results that show the technique can see the CMF bundles in walls. The results are very nice and convincing, and it is believable that you are indeed making a map of the CMF network with the AFM. However this are not measuring cell wall anisotropy in-plane with these experiments as the text seems to claim. However I see nothing wrong with using this data as a proxy for cell wall anisotropy. One should also note that this still does not show a causal relationship between MT and CMF orientation in this system, but it is convincing correlative data given what is already know about the interaction there.\n\n5) Separate the effects of material properties from those that arise from cellular geometry.\n\nThe authors propose that lack of movement of the necks after ablation proves that they are stiffer in this region (second paragraph of the Results section entitled \u201cPavement cell wall shape correlates with microtubule organization\u2026\u201d). However, intuitively, effects of geometry would dominate stiffness here. I would be surprised if the ablation of a neighbor cell in a model with uniform material properties would show an equal displacement in necks and lobes, and this should be tested.\n\n6) Revisit cell-pressing experiments with better images and proper citations of previous literature.\n\nIt is difficult to see the differences in the experiments were cells are pressed by slides (Figure 3). In the text the differences are reported to be 0.37 vs 0.57 by their anisotropy measure. They report the same amount of difference (0.2) for necks vs lobes where the orientation is obvious. Why is it so much harder to see here? Also it is claimed that the effect is reversible, and that the value goes to 0.24 a day after the slide is removed. But this is quite a bit less than the starting point of 0.37, unless 0.13 of the difference appears instantly. If this is the case, the \u201cbefore\u201d condition needs to be quantified and presented for comparison. Jacques et al. (2013) have done similar experiments pressing on leaf epidermal cells; these previous results need to be mentioned and evaluated more extensively in this manuscript.\n\n7) A devil's advocate position would be that the stress sensing mechanism the authors observe is just a secondary role for MTs in case of damage, etc. and that their orientation is primarily determined by other factors (i.e., geometry, genes, gradients, etc.). The authors should point to data to rule out this hypothesis, or an explicit statement that this position cannot be ruled out should be made.\n\n[Editors' note: further clarifications were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cSubcellular and supracellular mechanical stress prescribes cytoskeleton behavior in Arabidopsis cotyledon pavement cells\u201d for further consideration at eLife.\n\nYour revised article has been favorably evaluated by a Senior editor, Detlef Weigel, and two reviewers, one of whom is a member of the Board of Reviewing Editors. We appreciate the careful consideration of review comments and the new models included in the rebuttal letter. Some of the data provided only in the rebuttal letter we felt would be useful to the readers of the manuscript and so we ask you to make a few minor revisions before acceptance, as outlined below:\n\n1) There is one point regarding the modeling that should be addressed more directly in the paper, and not just the rebuttal, and that is the choice of low turgor pressure (2 bar) in the models. This was used to explain why there wasn't more movement in the model after ablation, and why this level was necessitated by their model (if it is higher they get larger deformations and the models do not converge).\n\nA more realistic model seems simply not to be possible with the technology available and our expert reviewer agrees that that a more realistic model would probably behave in a qualitatively similar way, and thus would not change their results. However, it is important for the reader to be aware why the low turgor choice was made, the difficulties in model convergence in such a system, and the issue with anticlinal walls. This information should be in the paper in either the main text or as supplemental material, not just in the rebuttal letter.\n\n2) The experiments in which single cells were ablated (Author response image 6 and in revised text) and in which guard cell MTs were monitored after ablation (Author response image 7) were quite informative and the latter should also be included in the manuscript in either the main text or as supplemental material.\n",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "284c85ac-70c4-4e97-8659-9fdde15ad74c",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C1",
+      "claim": "Microtubule arrays in indenting regions of pavement cells are more anisotropic than microtubule arrays in lobes, with mean \u00b1 SE of 0.40 \u00b1 0.02 for indenting regions and 0.20 \u00b1 0.02 for lobes (n = 18 cells; 3 seedlings; p<0.01, t test).",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that MT arrays in indenting regions were more anisotropic than the MT arrays in lobes (mean \u00b1 SE is 0.40 \u00b1 0.02 for indenting region and 0.20 \u00b1 0.02 for lobes, n = 18 cells; 3 seedlings; p<0.01, t test; Figure 1A,B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative measurements using nematic tensor-based analysis, with statistical significance testing (t test, p<0.01).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "d90a0d23-b295-4eaa-843f-5265df23b17b",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C2",
+      "claim": "The anisotropy of microtubules is maintained in indenting regions after 3 hours, with mean \u00b1 SE of 0.47 \u00b1 0.01 (n = 14 cells; 3 seedlings).",
+      "claim_type": "EXPLICIT",
+      "source": "Time lapse imaging of pavement cells showed that the anisotropy of MTs was maintained in indenting regions after 3 hr (mean \u00b1 SE is 0.47 \u00b1 0.01, n = 14 cells; 3 seedlings), consistent with previous studies (Zhang et al., 2011) (Figure 1A,B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by time-lapse imaging data and quantitative measurements, and is consistent with previously published studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "13129a6d-4b81-48aa-983d-fd3aff0a9bd4",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C3",
+      "claim": "Guard cells exhibit transverse microtubule and cellulose microfibril orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we probed guard cells, in which the presence of transverse MT and CMF is unequivocally established (Marcus et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Marcus et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "c6295da9-7493-410e-a7b6-0d2c0de0f44d",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C4",
+      "claim": "The stiffness map of the outer wall of guard cells reveals transverse wall reinforcements matching cellulose microfibril orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The stiffness map of the outer wall of guard cells revealed the presence of transverse wall reinforcements matching the CMF orientation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by AFM stiffness mapping data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "e26f2ead-f485-47fa-983e-94654fc8a49a",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C5",
+      "claim": "AFM-based stiffness maps of pavement cells reveal mechanical heterogeneities with apparent elastic moduli spanning 2\u20138 MPa.",
+      "claim_type": "EXPLICIT",
+      "source": "The AFM-based stiffness map of pavement cells also revealed the presence of mechanical heterogeneities, with apparent elastic moduli spanning the range 2\u20138 MPa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by AFM measurements of cell wall mechanical properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "96f54cee-462a-4430-a6ae-3426f53f9374",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C6",
+      "claim": "Fibrous patterns of higher elastic modulus congregate at sites of indenting regions in pavement cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we found fibrous patterns of higher elastic modulus congregating at sites of indenting regions (Figure 1D, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by AFM stiffness mapping data shown in Figure 1D and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "7b836633-0e49-4632-a427-c561e0672087",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C7",
+      "claim": "Staining for cellulose in mesophyll cells of wheat that exhibit alternating patterns of lobe-like outgrowth and indenting regions shows a strong presence of cellulose in the constricted regions of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining for cellulose in mesophyll cells of wheat that exhibit alternating patterns of lobe like outgrowth and indenting regions has shown a strong presence of cellulose in the constricted regions of the cells (Jung and Wernicke, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jung and Wernicke, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "14831276-ad1e-43c6-8175-d40836213bd0",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C8",
+      "claim": "Cellulose microfibrils act as a brace around the indenting regions providing mechanical reinforcement of those regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this suggests that CMFs act as a brace around the indenting regions providing mechanical reinforcement of those regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined evidence of AFM stiffness maps, cellulose staining, and microtubule organization patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "1953f0ad-04b5-4a2f-ae49-951c89a85581",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C9",
+      "claim": "Inner microtubule arrays in pavement cells appear to be identical to those observed on the outer face.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner MT arrays appear to be identical to those observed on the outer face, thereby suggesting the cell walls of the indenting regions are reinforced on both faces of the cell (Figure 1\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy imaging of microtubules on both inner and outer faces of pavement cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "6e58bd59-e3b4-4886-a0e9-885fb8b9e0c8",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C10",
+      "claim": "Pavement cell shape is maintained by localized microtubule-dependent wall reinforcements in indenting regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data thus consolidate a model in which pavement cell shape is maintained by localized MT-dependent wall reinforcements in indenting regions (Fu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined data from AFM, microtubule imaging, and is consistent with a previously published model.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "56c89336-d2a6-4aa0-bf64-0c7b50431e52",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C11",
+      "claim": "Physical models of the shoot apical meristem as a pressurized vessel show that supracellular mechanical stress pattern can prescribe global microtubule organization and tissue morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Physical models of the shoot apical meristem as a pressurized vessel have shown that the supracellular mechanical stress pattern can prescribe global MT organization and tissue morphology (Hamant et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hamant et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "b54b4b62-a728-4c3c-a57d-a058e554b900",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C12",
+      "claim": "The 3D finite element model shows a strong anisotropic arrangement of stresses focused in indenting regions of pavement cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The outcome of the model with mechanically isotropic cell walls showed a strong anisotropic arrangement of stresses focused in indenting regions of the pavement cells (Figure 2A,C, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results shown in Figure 2A,C and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "45835dd2-11d4-40a9-8b72-4b1017b2bee8",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C13",
+      "claim": "There is a good correlation between the largest stress direction and microtubule arrangement in pavement cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the noisy behavior of MTs in pavement cells, visualization of MT organization with YFP:MBD (Wightman and Turner, 2007) showed a good correlation between the largest stress direction and MT arrangement, aggregating in indenting regions of the pavement cells (Figure 2B,D, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of computational model predictions with experimental microtubule imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "7c505168-cef2-4752-b016-38f363f327be",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C14",
+      "claim": "The clustering of microtubule arrays in the indenting regions correlates with regions of predicted higher magnitude of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the clustering of MT arrays in the indenting regions also correlated with regions of predicted higher magnitude of stress (Figure 1E, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of computational model predictions with experimental microtubule imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "fb601e06-d6b4-419e-b9ed-b8a18c81dfb3",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C15",
+      "claim": "A 3D pavement cell model including anticlinal and bottom walls generates principal stress tensor direction patterns similar to the curved surface model.",
+      "claim_type": "EXPLICIT",
+      "source": "Stress directions were also computed in a model representing a 3D pavement cell shape along with the anticlinal and bottom walls. The model generated principal stress tensor direction pattern similar to the curved surface model (Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results comparing different model geometries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "3127c677-f06d-4bfb-b079-dd98e4f0c48b",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C16",
+      "claim": "Higher magnitude of tensile stresses are observed in the indenting neck-like regions, matching the local microtubule pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cases showed a higher magnitude of tensile stresses in the indenting neck-like regions, matching the local MT pattern; compression forces at approximately 10% of the tension value were observed in some regions close to the cell boundary with no clear relation with MT behavior (Figure 2\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results shown in Figure 2\u2014figure supplement 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "00958332-3360-4ec4-af3c-4ace6e30b19f",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C17",
+      "claim": "Tensile stress influences microtubule organization at a subcellular level in pavement cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that tensile stress influences MT organization at a subcellular level in pavement cells, thereby indicating that the perception of stress must involve a mechanism that acts locally within each cell, rather than on a cell-wide or tissue-wide basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the correlation between predicted stress patterns and observed microtubule organization at subcellular resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "59371a70-5fa0-40b3-82bc-01422c3025d1",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C18",
+      "claim": "For small elastic deformations, the overall stress pattern is affected more strongly by the geometry of the cells than by the mechanical anisotropy of the existing cell wall material.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations thus suggest that for small elastic deformations the overall stress pattern is affected more strongly by the geometry of the cells than by the mechanical anisotropy of the existing cell wall material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling results comparing isotropic and anisotropic material properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "d17e96dc-e6c3-4521-808d-80e4414f01ae",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C19",
+      "claim": "Assuming the epidermis is under tension, the largest stress direction should be circumferential around a local bump.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, assuming that the epidermis is under tension, the largest stress direction should be circumferential around a local bump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational modeling predictions under specific assumptions about tissue mechanics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "34396e85-797f-4f6d-b009-44547e35ce83",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C20",
+      "claim": "Microtubule arrays around elevated guard cells show circumferential orientations, consistent with predicted stress directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Stomata being often in such an elevated position, we analyzed the MT arrays around guard cells and we found circumferential orientations, consistent with the predicted stress directions (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of computational model predictions with experimental microtubule imaging data around stomata.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "21a07bdd-63a0-47a3-a3b9-3e9c112a1c00",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C21",
+      "claim": "No circumferential microtubule pattern is observed near stomata that are not elevated.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, no circumferential MT pattern could be observed near stomata that were not elevated (Figures 2H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental microtubule imaging data comparing elevated and non-elevated stomata.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "e147d522-4bf0-40d6-9a4e-c2291e885175",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C22",
+      "claim": "Patterns of cellular and supracellular mechanical stress and microtubule orientation are correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that, analogously to what was observed in the shoot meristem, patterns of cellular and supracellular mechanical stress and MT orientation are correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined evidence of computational modeling and experimental observations, and is consistent with previous findings in shoot meristem.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "39797bf4-356b-43b8-997f-6d0e4b94260e",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C23",
+      "claim": "The correlation between mechanical stress patterns and microtubule orientation holds down to the sub-cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that this correlation holds down to the sub-cellular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of stress-microtubule correlations at subcellular resolution in pavement cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "54097168-f923-4908-8e54-c53a09406782",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C24",
+      "claim": "Application of compressive forces results in an increase in overall stress in physical models.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finite element model predicts that when subjected to compression from above, there is an increase in overall stress in physical models (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "50b27855-0276-43c9-a9ce-8858a46ef7f0",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C25",
+      "claim": "Compression of cotyledon pavement cells results in flattening of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Depth color-coded Z stacks of MT organization and transects of the confocal Z-stack showed flattening of cells due to compression (Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy imaging data showing cell morphology changes under compression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "383980cb-c2ff-4b9d-91b3-0d5794c72b39",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C26",
+      "claim": "Microtubule anisotropy increases significantly 7 hours after compression, with mean \u00b1 SE of 0.37 \u00b1 0.06 at 0 hr (n = 95 cells, 5 seedlings) and 0.57 \u00b1 0.06 at 7 hr (n = 95 cells; 5 seedlings; p<0.0001; Mann\u2013Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging of MTs in the cells immediately after and 7 hr after compression showed rearrangement of MTs into more aligned arrays by 7 hr (Figure 3\u2014figure supplement 1C,D,F; Video 1; mean \u00b1 SE is 0.37 \u00b1 0.06 for 0 hr, n = 95 cells, 5 seedlings and 0.57 \u00b1 0.06 for 7 hr, n = 95 cells; 5 seedlings; p<0.0001; Mann\u2013Whitney U test; Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements of microtubule anisotropy with statistical significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "c4171c5b-b10f-43d4-b0cc-23755636c666",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C27",
+      "claim": "Increased microtubule anisotropy persists for longer periods when the tissue is maintained in the compressed condition.",
+      "claim_type": "EXPLICIT",
+      "source": "This increased MT anisotropy persisted for longer periods when the tissue was maintained in the compressed condition (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "095bd92d-e766-4f99-b7d6-d74b16cd3360",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C28",
+      "claim": "The microtubule response to compression is reversible: 24 hours following removal of compression, nematic tensor values for microtubule anisotropy are reduced to a value close to that obtained during the time point immediately after compression (mean \u00b1 SE is 0.24 \u00b1 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "This response was also reversible: 24 hr following removal of compression, nematic tensor values for MT anisotropy were reduced to a value close to that obtained during the time point immediately after compression (mean \u00b1 SE is 0.24 \u00b1 0.02; Figure 3E,G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements of microtubule anisotropy before, during, and after compression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "58c1053a-7695-4d40-84fa-903c145069c9",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C29",
+      "claim": "Large cuts in cotyledons result in immediate outward displacement of the cut edges, consistent with release of tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Macroscopically, large cuts in cotyledons resulted in an immediate outward displacement of the cut edges, consistent with release of tension (Figure 3\u2014figure supplement 3A,B; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data showing tissue deformation after cutting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "97b4fa97-174c-405e-8e48-99e8fe7ed0ab",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C30",
+      "claim": "Upward movement of mesophyll cells is observed after large cuts, consistent with the epidermis being under tension.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed upward movement of mesophyll cells from the layer below (Figure 3\u2014figure supplement 3C), consistent with the epidermis being under tension as observed in other plant tissues (Kutschera and Niklas, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations and is consistent with previously published findings in other plant tissues.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "6db34e4e-2058-4460-9f17-7566c96b7a67",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C31",
+      "claim": "The physical model predicts that maximal stress directions become circumferential to the laceration after treatment and independent of cell geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our physical model suggests that maximal stress directions become circumferential to the laceration after treatment and independent of cell geometry (Figure 3A,B; Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results shown in Figure 3A,B and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "0f40b8e9-ca10-4b19-94b6-a9bdd16f5afc",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C32",
+      "claim": "After large-scale laceration, hyper-aligned microtubule arrays are observed in cells adjacent to the damaged region at 3.5 hours, and the alignment advances to cell layers farther away from the site of laceration at 7 hours, independently of cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Time series imaging of MT rearrangements showed a progressive change in the organization of MT arrays around the site. After 3.5 hr, we observed hyper-aligned MT arrays in cells adjacent to the damaged region and at 7 hr the alignment advanced to cell layers farther away from the site of laceration, independently of cell shape (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data showing progressive microtubule reorganization after laceration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "4aec6352-37a6-492b-ab06-e19ffebcec3e",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C33",
+      "claim": "Microtubule anisotropy increases significantly 7 hours after laceration, with mean \u00b1 SE of 0.080 \u00b1 0.007 at 0 hr (n = 61 cells) and 0.37 \u00b1 0.02 at 7 hr (n = 65 cells; 3 seedlings each; p<0.0001; Mann\u2013Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of MT anisotropy showed a significant increase in MT anisotropy 7 hr after laceration (mean \u00b1 SE is 0.080 \u00b1 0.007 for 0 hr, n = 61 cells and 0.37 \u00b1 0.02 for 7 hr, n = 65 cells; 3 seedlings each; p<0.0001; Mann\u2013Whitney U test), indicating that changes in tissue-wide stresses could override cellular level control of MT anisotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative measurements of microtubule anisotropy with statistical significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "0c2155ad-5164-4076-b5c5-390d06ea0826",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C34",
+      "claim": "Changes in tissue-wide stresses can override cellular level control of microtubule anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of MT anisotropy showed a significant increase in MT anisotropy 7 hr after laceration (mean \u00b1 SE is 0.080 \u00b1 0.007 for 0 hr, n = 61 cells and 0.37 \u00b1 0.02 for 7 hr, n = 65 cells; 3 seedlings each; p<0.0001; Mann\u2013Whitney U test), indicating that changes in tissue-wide stresses could override cellular level control of MT anisotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that tissue-level perturbations cause microtubule reorganization that is independent of cell shape.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "d70165df-4f53-4e10-b32b-e8e025c146dc",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C35",
+      "claim": "After single-cell ablation, a circumferential rearrangement of stresses is observed, but less pronounced than after large-scale laceration, and observed only in cells adjacent to the site of perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the large scale laceration experiments, a circumferential rearrangement of stresses was observed. However, the rearrangement was less pronounced than after cotyledon dissection, and observed in cells only adjacent to the site of perturbation (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results comparing single-cell and large-scale ablations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "ef1b4c10-b6a4-4db8-a182-596d63eae7e9",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C36",
+      "claim": "Seven hours after single-cell ablation, microtubule alignment tends toward circumferential alignment around the ablated cell site, but is not completely circumferential.",
+      "claim_type": "EXPLICIT",
+      "source": "7 hr after ablation, we observed that MT alignment had responded to treatment by tending toward a circumferential alignment around the ablated cell site. The MTs around the site of ablation were not completely circumferential, consistent with a scenario in which stress anisotropy is weaker in single cell ablation cases than in cases of large-scale dissection, therefore leading to a comparatively reduced alignment of MTs around the site of ablation (Figure 4C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental microtubule imaging data after single-cell ablation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "1c019238-c901-469f-8e4c-b471352b5514",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C37",
+      "claim": "The microtubule alignment observed after single-cell ablation is significantly different from that resulting from large-scale perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "The alignment observed after single-cell ablation was significantly different from that resulting from large-scale perturbation, in which a strong circumferential response was obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparison of microtubule responses to different scales of mechanical perturbation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "0b13896f-1057-4812-9688-0edfcd8a06d6",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C38",
+      "claim": "The majority of guard cells retain transverse microtubule arrays after large-scale ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Single optical sections show that MT arrays still remain transverse in majority of the guard cells (Figure 4\u2014figure supplement 1) indicating that these cells retain a certain degree of control of their MTs while being under the influence of a directional force field.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental microtubule imaging data in guard cells after laceration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "dccb0580-619a-4ee9-b9ff-348d35c1d826",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C39",
+      "claim": "Guard cells retain a certain degree of control of their microtubules while being under the influence of a directional force field.",
+      "claim_type": "EXPLICIT",
+      "source": "Single optical sections show that MT arrays still remain transverse in majority of the guard cells (Figure 4\u2014figure supplement 1) indicating that these cells retain a certain degree of control of their MTs while being under the influence of a directional force field.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that guard cell microtubules maintain their transverse orientation despite tissue-level stress changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "5e31a3a9-c3d3-4993-a858-b4e422e39369",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C40",
+      "claim": "Treatment with 40 \u03bcM isoxaben for 16 hours leads to a sizeable increase in microtubule anisotropy, with mean \u00b1 SE of 0.27 \u00b1 0.04 at 0 hr (n = 53 cells) and 0.54 \u00b1 0.08 at 16 hr (n = 53 cells; 3 seedlings; p<0.0001, Mann\u2013Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of 3-day-old seedlings with 40 \u03bcM isoxaben for 16 hr led to a sizeable increase in the anisotropy of microtubules (mean \u00b1 SE is 0.27 \u00b1 0.04 for 0 hr, n = 53 cells and 0.54 \u00b1 0.08 for 16 hr, n = 53 cells; 3 seedlings; p<0.0001, Mann\u2013Whitney U test; Figure 4\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements of microtubule anisotropy after isoxaben treatment with statistical significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "e4e49812-3c89-42c1-a3d1-d803eda8c4f6",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C41",
+      "claim": "Isoxaben treatment induces hyperbundling and hyperalignment of cortical microtubules along predicted directions of maximal stress in shoot meristem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Isoxaben was shown previously to induce hyperbundling and hyperalignment of cortical microtubules along the predicted directions of maximal stress in shoot meristem cells (Heisler et al., 2010), consistent with increased stress levels in the cell walls compared to non-treated plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Heisler et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "6de8e146-c8b4-436d-908b-4644c9a5299c",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C42",
+      "claim": "Homozygotes for the katanin loss-of-function allele ktn1-3 exhibit severe pavement cell shape defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygotes for the katanin loss-of-function allele ktn1-3 exhibit severe pavement cell shape defects, consistent with the role of MTs in neck formation (Lin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "34a8d80f-8fc3-4db5-90f1-c23bcaab08d9",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C43",
+      "claim": "Microtubule anisotropy in the bot 1-7 katanin allele shows a 60% reduction compared to wild type, with mean \u00b1 SE of 0.09 \u00b1 0.01 for bot 1-7 (n = 83 cells; 4 seedlings) and 0.23 \u00b1 0.05 for WT (n = 53 cells; 3 seedlings).",
+      "claim_type": "EXPLICIT",
+      "source": "When quantifying MT anisotropy in the bot 1-7 katanin allele, we found a 60% reduction when compared to the wild type (Mean \u00b1 SE is 0.09 \u00b1 0.01 for bot 1-7, n = 83 cells; 4 seedling and 0.23 \u00b1 0.05 for WT, n = 53 cells; 3 seedlings), thus confirming the relation between MT ordering and pavement cell shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative measurements comparing microtubule anisotropy in mutant and wild-type plants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "450056b1-76c4-47d1-a842-d10a9d81ae86",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C44",
+      "claim": "In the shoot meristem, microtubule rearrangement after changes in mechanical stress is promoted by katanin-dependent microtubule severing.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown in the shoot meristem that the response of MTs to tissue stress relies on MT self-organization. In particular, MT rearrangement after changes in mechanical stress is promoted by katanin-dependent MT severing (Uyttewaal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Uyttewaal et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "e87e6861-cad2-4534-9a4c-97fa599d7bf4",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C45",
+      "claim": "In bot1-7 mutants, microtubule arrays in pavement cells remain relatively isotropic after micromechanical perturbations (lacerations and compressions).",
+      "claim_type": "EXPLICIT",
+      "source": "In both assays, MT arrays in pavement cells remained relatively isotropic after the micromechanical perturbations (Figure 3D, Figure 3\u2014figure supplement 4A\u2013C; Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental microtubule imaging data in katanin mutant background after mechanical perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "b5e71356-e311-483b-bfd3-d4f7227b639d",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C46",
+      "claim": "In bot 1-7 mutants, there is no significant difference in microtubule anisotropy before and 7 hours after ablation, with mean \u00b1 SE of 0.09 \u00b1 0.02 at 0 hr (n = 83 cells) and 0.10 \u00b1 0.02 at 7 hr (n = 74 cells; 3 seedlings; p>0.05, t test).",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of MT anisotropy showed no significant difference before and 7 hr after ablation in bot 1-7 (mean \u00b1 SE is 0.09 \u00b1 0.02 for 0 hr, n = 83 cells and 0.10 \u00b1 0.02 for 7 hr, n = 74 cells; 3 seedlings; p>0.05, t test; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements of microtubule anisotropy in katanin mutants with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "0db9bfa8-49d6-475f-a83b-ba065e19dd33",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C47",
+      "claim": "The microtubule response to stress is conserved in different tissues and at different scales, and relies on a similar mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with observations made in the shoot apical meristem (Uyttewaal et al., 2012) and suggest that the MT response to stress is not only conserved in different tissues and at different scales, but also relies on a similar mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparison of results in pavement cells with previously published results in shoot apical meristem.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "2cfa707d-57cd-40e9-92e9-6a65a8d15ed9",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C48",
+      "claim": "Microtubule severing occurs at sites of crossover points of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Using time-series imaging of MT arrays, we could observe severing of MTs occurring at sites of crossover points of MTs (Figure 5A; Wightman and Turner, 2007; Lindeboom et al., 2013; Wightman et al., 2013; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data and is consistent with previously published observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "262ce613-9976-49c7-bf3a-e4c659da80ce",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C49",
+      "claim": "The severing rate in mock-treated control seedlings is 0.08 \u00b1 0.02 \u00d7 10\u22123 events \u03bcm\u22122 min\u22121 (mean \u00b1 SD, N = 16 cells, 4 seedlings, total area of 2.99 \u00d7 104 \u03bcm2).",
+      "claim_type": "EXPLICIT",
+      "source": "The severing rate in mock-treated control seedlings of 0.08 \u00b1 0.02 \u00d7 10\u22123 events \u03bcm\u22122 min\u22121 (mean \u00b1 SD, N = 16 cells, 4 seedlings, total area of 2.99 \u00d7 104 \u03bcm2) is in agreement with what has been previously published (Wightman and Turner, 2007; Wightman et al., 2013; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative measurements of severing events and is consistent with previously published values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "95ab2e0f-65ae-4fa8-8f3d-6d2b988ed21f",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C50",
+      "claim": "In seedlings subjected to changes in mechanical forces, cell files close to the site of ablation show a significant increase in severing rate to 0.93 \u00b1 0.45 \u00d7 10\u22123 events \u03bcm\u22122 min\u22121 (mean \u00b1 SD, N = 16 cells, 4 seedlings, total area of 1.5 \u00d7 104\u03bcm2, p<0.01, t test) 3 hours after ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in seedlings subjected to changes in mechanical forces, cell files close to the site of ablation showed a significant increase in severing rate to 0.93 \u00b1 0.45 \u00d7 10\u22123 events \u03bcm\u22122 min\u22121 (mean \u00b1 SD, N = 16 cells, 4 seedlings, total area of 1.5 \u00d7 104\u03bcm2, p<0.01, t test) 3 hr after ablation (Figure 5B; Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements of severing events after mechanical perturbation with statistical significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "b9caaf83-1901-43a4-9c1c-b0126c055779",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C51",
+      "claim": "Cells experiencing changes in mechanical stress show a 65% decrease in the number of crossover points, with mean \u00b1 SE of 15 \u00b1 3 per 10 \u03bcm2 at 0 hr (n = 6 cells) and 5 \u00b1 2 per 10 \u03bcm2 at 3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of number of crossover points (i.e., two polymerizing MT crossing each other without experiencing severing or catastrophe) immediately after and 3 hr after mock treatment showed a 9% increase (mean \u00b1 SE is 11.0 \u00b1 1.4 per 10 \u03bcm2 for 0 hr, n = 6 cells and 12 \u00b1 1.5 per 10 \u00b5m2 for 3 hr) whereas the cells experiencing changes in mechanical stress showed a 65% decrease in the number of cross over points (mean \u00b1 SE is 15 \u00b1 3 per 10 \u03bcm2 for 0 hr, n = 6 cells and 5 \u00b1 2 per 10 \u03bcm2 for 3 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative measurements of microtubule crossover points before and after mechanical perturbation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "3e141119-e1f6-4efe-ab3b-70b4c05b36a5",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C52",
+      "claim": "There is an up-regulation in the severing of microtubules at crossover sites after changes in mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements demonstrate an up-regulation in the severing of MTs at crossover sites after changes in mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined measurements of increased severing rate and decreased crossover points after mechanical perturbation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "903e52be-9cd5-4029-9a3b-e84aa8504a5f",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C53",
+      "claim": "Increased microtubule severing at crossover sites can enrich the population of free microtubules while removing microtubules that do not align parallel to maximal tensile stress, resulting in the generation of anisotropic microtubule arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism could enrich the population of free MTs, while removing the MTs that do not align parallel to maximal tensile stress, thereby resulting in the generation of anisotropic MT arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed mechanism inferred from the observed increase in severing and resulting microtubule alignment.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "5a151cfd-9a40-4fb2-aadb-07bbbc835cf4",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C54",
+      "claim": "Pavement cell shape depends on mechanical heterogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we could correlate the behavior of the microtubular cytoskeleton with the predicted stress pattern and with quantified mechanical properties. This validates a number of previous studies assuming that pavement cell shape depends on mechanical heterogeneities (Fu et al., 2005), albeit relying only on MT behavior, and further supports plant tissues as facile systems to investigate the relation between the biophysics of growth and development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined evidence from computational modeling, AFM measurements, and microtubule imaging, and validates previous assumptions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "e6802f8f-b83f-4797-9ac3-dd34880cdd02",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C55",
+      "claim": "Current models on pavement cell morphology suggest an influence of a ROP-based signaling mechanism on the cytoskeletal network.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models on pavement cell morphology suggest an influence of a ROP-based signaling mechanism on the cytoskeletal network (Fu et al., 2005; Yang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fu et al., 2005 and Yang, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "18f1d016-568a-47e2-a620-602508b9fbe7",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C56",
+      "claim": "An auxin-dependent self-organizing mechanism controls the ROP-based signaling network.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently it has been proposed that an auxin-dependent self-organizing mechanism controls the ROP-based signaling network (Xu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Xu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "cd8eff57-fd08-4ca3-8d22-6679b50ba83c",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C57",
+      "claim": "Time lapse-imaging studies of pavement cell development show an initial phase of multiple lobe initiations, followed by a phase of isotropic expansion during which the cell shape is maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "This model of differential growth is challenged by time lapse-imaging studies of pavement cell development, which shows an initial phase of multiple lobe initiations, followed by a phase of isotropic expansion during which the cell shape is maintained (Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "82f38543-dfd8-41aa-9368-68220159a1e8",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C58",
+      "claim": "Subcellular mechanical stresses control microtubule organization, which in turn affects the mechanical anisotropy of the cell wall thereby contributing to cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study we show how subcellular mechanical stresses control MT organization, which in turn affects the mechanical anisotropy of the cell wall thereby contributing to cell shape irrespective of the previously proposed mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined evidence of stress modeling, microtubule imaging, and AFM measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "58d8b385-7d7e-49a6-a632-32ffa638350f",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C59",
+      "claim": "Microtubule organization in the shoot meristem depends on tissue shape-derived stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous findings on the shoot meristem suggest that MT organization depends on tissue shape-derived stresses (Hamant et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hamant et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "fe5b6129-ff24-4773-8ed4-385527686e99",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C60",
+      "claim": "Cells can interpret mechanical signals that are generated by their own shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that cells can also interpret mechanical signals that are generated by their own shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that cell shape-derived stresses correlate with subcellular microtubule organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "6a2cf021-4d45-4e72-9633-02d5163dc0b8",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C61",
+      "claim": "Microtubule behavior depends on stress intensity, which is cell autonomous as long as tissue stresses do not override it.",
+      "claim_type": "EXPLICIT",
+      "source": "As this response is lost in large-scale mechanical perturbations, we propose that MT behavior depends on stress intensity, which is cell autonomous as long as tissue stresses do not override it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of microtubule responses to cell-scale versus tissue-scale mechanical perturbations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "2d1a07a3-27c1-4873-90a8-7e3c44d92cf9",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C62",
+      "claim": "Mechanical forces cause changes to single microtubule dynamics in vivo by regulating the activity of microtubule-associated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical forces are known to cause changes to single MT dynamics in vivo by regulating the activity of MT-associated proteins (Trushko et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Trushko et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "3f3b7043-0c2a-40d9-b823-f1710e3bb3d1",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C63",
+      "claim": "Tensile forces acting on the kinetochore complex-attached microtubule ends influence microtubule elongation rates during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In several organisms tensile forces acting on the kinetochore complex-attached MT ends are known to influence MT elongation rates during mitosis (Nicklas, 1988; Skibbens et al., 1993; Gardner et al., 2005; Franck et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nicklas, 1988; Skibbens et al., 1993; Gardner et al., 2005; Franck et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "b4ee8f1a-de04-4fe2-b9b7-3f4717b7e57e",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C64",
+      "claim": "Katanin-mediated microtubule severing is required for microtubule response to changes in mechanical stresses in the shoot apical meristem.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on the shoot apical meristem show that katanin-mediated MT severing is required for MT response to changes in mechanical stresses (Uyttewaal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Uyttewaal et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "e43fa592-de0d-4d18-bb5c-10d77c40b664",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C65",
+      "claim": "Severing itself is promoted by mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data not only show that a similar mechanism is present in pavement cells, but also show that severing itself is promoted by mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the quantitative measurements showing increased severing rate after mechanical perturbation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "5f7dbc71-2199-4423-8f90-92c6d56691c1",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C66",
+      "claim": "Conformation changes to the microtubule lattice act as hotspots promoting katanin binding and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports have shown that conformation changes to the MT lattice act as hotspots promoting katanin binding and activity (Davis et al., 2002; D\u00edaz-Valencia et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Davis et al., 2002 and D\u00edaz-Valencia et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "c5d299b4-abe5-4a25-add3-403986d0450a",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C67",
+      "claim": "Microtubule behavior depends on two parameters of mechanical stress: stress direction from cell and tissue shape determines the dominant microtubule orientation, and stress intensity modulates severing activity, which controls the response of microtubules to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "MT behavior would thus depend on two parameters of mechanical stress (Figure 6): stress direction from cell and tissue shape determine the dominant MT orientation, which dictates wall reinforcement, and thus in turn contributes to cell and tissue shape; and stress intensity modulates severing activity, which controls the response of MTs to stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a proposed model inferred from the combined experimental and computational results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "e81e40fb-c4b4-4b3a-8480-b87122180fe1",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C68",
+      "claim": "There is no need for several rules to explain microtubule behaviors at different scales or in different tissues in response to mechanical signals and perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, there is no need for several rules to explain MT behaviors at different scales or in different tissues in response to mechanical signals and perturbations, and this parsimony might be one of the defining features of mechanical signaling, when compared to molecular signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that similar mechanisms operate at different scales and in different tissues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "f1e47c62-181e-493a-93a3-3da4559d27dd",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "claim_id": "C69",
+      "claim": "The impact of mechanical forces on actin dynamics may have a similar multiscale role in animals as microtubules have in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "As shape rather relies on the actomyosin network in animals, the impact of mechanical forces on actin dynamics may in principle have a similar multiscale role in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a potential parallel mechanism in animal systems based on the findings in plants.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04cf7781-fba0-4bd9-a67b-fb145122995a",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microtubule arrays in indenting regions of pavement cells are significantly more anisotropic than in lobes (0.40 \u00b1 0.02 vs 0.20 \u00b1 0.02, p<0.01), and this anisotropy is maintained over time (0.47 \u00b1 0.01 at 3 hours). This pattern is consistent on both inner and outer cell faces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C9 provide converging quantitative evidence from nematic tensor analysis and time-lapse imaging showing differential microtubule organization in pavement cells. The statistical significance (p<0.01), adequate sample sizes (n=18 cells, 3 seedlings), and consistency with prior literature support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "6117769e-86e4-433e-b817-83060f34f039",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AFM measurements reveal mechanical heterogeneities in pavement cell walls (2-8 MPa), with fibrous patterns of higher elastic modulus concentrated at indenting regions. These mechanical reinforcements correlate with microtubule organization and cellulose deposition, supporting a model where localized MT-dependent wall reinforcements maintain pavement cell shape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C10 provide complementary evidence from AFM stiffness mapping, cellulose staining, and microtubule imaging. The AFM data directly demonstrate mechanical anisotropy matching predicted cellulose microfibril patterns, validating the mechanical basis of the shape maintenance model. The guard cell validation (C3, C4) establishes the reliability of the AFM approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "3D finite element modeling predicts that cell geometry generates anisotropic stress patterns focused in indenting regions, and these predicted stress directions correlate well with observed microtubule arrangements. The stress pattern is determined primarily by cell geometry rather than material anisotropy for small elastic deformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 present computational modeling results that are validated against experimental observations. The correlation between predicted stress patterns and observed microtubule organization is demonstrated across multiple model geometries. However, the model relies on several assumptions (turgor pressure, material properties, boundary conditions) that are acknowledged but not fully validated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "afe8b0bd-eabf-4531-8c7f-4ec07b84f89c",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Microtubule organization responds to tissue topography: elevated stomata show circumferential microtubule patterns consistent with predicted stress directions, while non-elevated stomata do not. This correlation between mechanical stress and microtubule orientation extends from supracellular to subcellular scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 provide experimental validation of model predictions using stomata as a natural test case. The presence of circumferential patterns only around elevated stomata (C20, C21) supports the mechanical stress hypothesis. The inference that this mechanism operates at multiple scales (C22, C23) is reasonable given the combined evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "b25ab113-e2a3-4e7e-95db-3fb2958de223",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mechanical compression of cotyledon pavement cells results in cell flattening and a significant, reversible increase in microtubule anisotropy (from 0.37 \u00b1 0.06 to 0.57 \u00b1 0.06 at 7 hours, p<0.0001). Upon release of compression, microtubule anisotropy returns to near-baseline levels (0.24 \u00b1 0.02 at 24 hours).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 demonstrate a causal relationship between mechanical stress and microtubule organization through experimental manipulation. The quantitative measurements with appropriate statistical testing (Mann-Whitney U test, p<0.0001) and adequate sample sizes (n=95 cells, 5 seedlings) support the result. The authors acknowledge that imaging conditions differ between timepoints, which could affect absolute values, but the trend is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "2220fcc2-d79b-4d9a-b003-cca02955b9f5",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Large-scale tissue laceration causes immediate tissue deformation consistent with tension release and induces progressive circumferential microtubule alignment around the wound site. Microtubule anisotropy increases significantly (from 0.080 \u00b1 0.007 to 0.37 \u00b1 0.02 at 7 hours, p<0.0001), demonstrating that tissue-wide stresses can override cellular-level control of microtubule organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 provide strong evidence through combined modeling, tissue deformation analysis, and time-lapse imaging. The progressive nature of the response (3.5 to 7 hours) and independence from cell shape support the interpretation that tissue-level stresses dominate. Statistical significance is well-established (p<0.0001). However, the authors acknowledge that wound responses could involve both mechanical and biochemical signals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "26605e30-9fb8-476b-8fb2-885c8224a274",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Single-cell ablation produces weaker, more localized stress rearrangements and correspondingly weaker microtubule responses compared to large-scale perturbations. Microtubules show partial circumferential alignment around ablated cells but not complete reorganization, indicating that microtubule response depends on stress magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 demonstrate scale-dependent responses through comparison of single-cell versus tissue-level perturbations. Both computational modeling and experimental observations support the conclusion that stress intensity affects microtubule response magnitude. This provides important evidence for the hierarchical nature of mechanical control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "68860e44-32bd-44ec-ae0a-9723df962a9c",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Guard cells retain transverse microtubule arrays even after large-scale tissue ablation, indicating cell-type-specific control of microtubule organization that can resist tissue-level mechanical signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C39 provide evidence for cell-autonomous control mechanisms that can override tissue-level mechanical signals. The observation is clearly documented through imaging, though the mechanism underlying this resistance is not explored. This represents an important exception to the general stress-response model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "03c941cb-b161-4bef-9cfa-745d048c39a1",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Treatment with the cellulose synthase inhibitor isoxaben (40 \u03bcM for 16 hours) causes a significant increase in microtubule anisotropy (from 0.27 \u00b1 0.04 to 0.54 \u00b1 0.08, p<0.0001), consistent with increased mechanical stress in cell walls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C41 provide pharmacological evidence supporting the mechanical stress hypothesis. The significant increase in microtubule anisotropy with appropriate statistical testing supports the interpretation. The connection to prior work in shoot meristem (C41) strengthens the conclusion, though the authors acknowledge that more complex scenarios involving both mechanics and other responses cannot be ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "2b0a1097-97cd-44e8-b700-0d9bb350ae30",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The katanin mutant bot1-7 shows 60% reduced microtubule anisotropy compared to wild-type and fails to reorganize microtubules in response to mechanical perturbations (compression and laceration). This demonstrates that katanin-dependent microtubule severing is required for stress-responsive microtubule reorganization in pavement cells, similar to the shoot meristem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 provide strong genetic evidence for the mechanism of microtubule response to stress. The quantitative comparison between wild-type and mutant (C43), lack of response to perturbations (C45, C46), and consistency with prior work in different tissues (C44, C47) all support the conclusion. Sample sizes are adequate and statistical testing appropriate (p>0.05 for no difference in mutant).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "867cdb43-9cac-418f-8d1e-afe87fa718e2",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mechanical stress increases microtubule severing rate at crossover sites from 0.08 \u00b1 0.02 \u00d7 10\u207b\u00b3 to 0.93 \u00b1 0.45 \u00d7 10\u207b\u00b3 events \u03bcm\u207b\u00b2 min\u207b\u00b9 (p<0.01) within 3 hours of ablation. This is accompanied by a 65% decrease in crossover points, demonstrating stress-dependent upregulation of severing activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 provide direct quantitative evidence for the mechanism linking stress to microtubule reorganization. The baseline severing rate (C49) is consistent with published values, and the significant increase after perturbation (C50) with appropriate statistical testing supports the conclusion. The complementary measurement of crossover point reduction (C51) strengthens the interpretation of increased severing activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "36d3e137-d2da-461e-a33f-a263a6d1d378",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Increased microtubule severing at crossover sites is proposed to enrich free microtubules while removing those not aligned with maximal tensile stress, generating anisotropic microtubule arrays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 presents a mechanistic model that is plausible given the observed increase in severing and resulting alignment, but it remains speculative. The authors appropriately use conditional language ('could enrich'). Direct evidence for the proposed enrichment mechanism (e.g., tracking individual microtubule dynamics, measuring free microtubule populations) is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "70fa2925-8031-497e-90d2-1c4edf1d7004",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Subcellular mechanical stresses derived from cell shape control microtubule organization, which affects cell wall mechanical anisotropy and contributes to cell shape maintenance. Cells can interpret mechanical signals from their own shape, and this cell-autonomous response persists unless overridden by stronger tissue-level stresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C58, C60, and C61 synthesize the major findings into a coherent model. The integration of AFM data, computational modeling, and perturbation experiments provides strong support. The hierarchical nature of mechanical control (cell vs. tissue level) is well-demonstrated through the scale-dependent perturbation experiments. This represents the central conceptual advance of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "9b19aebc-9597-4e93-8f99-812b946ea8cd",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Microtubule behavior depends on two parameters of mechanical stress: stress direction (from cell and tissue shape) determines dominant microtubule orientation, and stress intensity modulates severing activity. This unified mechanism operates across scales and tissues without requiring multiple distinct rules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C68 present an integrative model supported by the combined experimental and computational results. The parsimony of the model (single mechanism across scales) is supported by the consistency of observations in pavement cells with prior work in shoot meristem. However, C67 includes speculative elements about the precise relationship between stress and katanin activity that are not fully validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "3689bfbb-d654-456d-ad5b-934ac7ee38dc",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior models of pavement cell morphology invoke ROP-based signaling, auxin-dependent self-organization, and differential growth mechanisms, but time-lapse studies challenge the differential growth model by showing isotropic expansion after initial lobe formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 accurately summarize prior work through appropriate citations. These claims provide context for the current study but do not present new findings. The accuracy of these summaries depends on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "539a339a-fcc9-466b-9ea1-2092d573eec9",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Previous work in shoot meristem demonstrates that microtubule organization depends on tissue shape-derived stresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 accurately cites prior work (Hamant et al., 2008) that established the stress-microtubule relationship in a different tissue context. This provides important precedent for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "ee2471b4-ddec-4c0b-a86a-7bc758a1fcd4",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work demonstrates that mechanical forces affect microtubule dynamics through regulation of microtubule-associated proteins, including effects on elongation rates during mitosis and katanin-mediated severing in shoot meristem. Conformational changes to the microtubule lattice promote katanin binding and activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C63, C64, and C66 accurately cite relevant prior work establishing precedents for mechanosensitive microtubule regulation. These provide important context and mechanistic hypotheses for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "482fa9fb-a3d6-45c2-a0a5-e6ca4e7d8912",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Severing activity itself is promoted by mechanical stress in pavement cells, extending beyond previous findings that severing is required for stress response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 represents a novel finding supported by the quantitative severing measurements (C50). This advances understanding beyond prior work showing that katanin is required for stress response, by demonstrating that stress actively promotes severing activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    },
+    {
+      "id": "194a9945-979c-4a70-9c1a-573e4125e68d",
+      "content_id": "96013ad2-246f-4034-a538-df3af12d975d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The impact of mechanical forces on actin dynamics may have a similar multiscale role in animals as microtubules have in plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is explicitly speculative ('may in principle'), proposing a potential parallel in animal systems. No evidence is provided to support this speculation, and the authors appropriately present it as a hypothesis rather than a conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:26:16.184518Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "284c85ac-70c4-4e97-8659-9fdde15ad74c",
+      "result_id": "04cf7781-fba0-4bd9-a67b-fb145122995a"
+    },
+    {
+      "claim_id": "d90a0d23-b295-4eaa-843f-5265df23b17b",
+      "result_id": "04cf7781-fba0-4bd9-a67b-fb145122995a"
+    },
+    {
+      "claim_id": "1953f0ad-04b5-4a2f-ae49-951c89a85581",
+      "result_id": "04cf7781-fba0-4bd9-a67b-fb145122995a"
+    },
+    {
+      "claim_id": "13129a6d-4b81-48aa-983d-fd3aff0a9bd4",
+      "result_id": "6117769e-86e4-433e-b817-83060f34f039"
+    },
+    {
+      "claim_id": "c6295da9-7493-410e-a7b6-0d2c0de0f44d",
+      "result_id": "6117769e-86e4-433e-b817-83060f34f039"
+    },
+    {
+      "claim_id": "e26f2ead-f485-47fa-983e-94654fc8a49a",
+      "result_id": "6117769e-86e4-433e-b817-83060f34f039"
+    },
+    {
+      "claim_id": "96f54cee-462a-4430-a6ae-3426f53f9374",
+      "result_id": "6117769e-86e4-433e-b817-83060f34f039"
+    },
+    {
+      "claim_id": "7b836633-0e49-4632-a427-c561e0672087",
+      "result_id": "6117769e-86e4-433e-b817-83060f34f039"
+    },
+    {
+      "claim_id": "14831276-ad1e-43c6-8175-d40836213bd0",
+      "result_id": "6117769e-86e4-433e-b817-83060f34f039"
+    },
+    {
+      "claim_id": "6e58bd59-e3b4-4886-a0e9-885fb8b9e0c8",
+      "result_id": "6117769e-86e4-433e-b817-83060f34f039"
+    },
+    {
+      "claim_id": "56c89336-d2a6-4aa0-bf64-0c7b50431e52",
+      "result_id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9"
+    },
+    {
+      "claim_id": "b54b4b62-a728-4c3c-a57d-a058e554b900",
+      "result_id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9"
+    },
+    {
+      "claim_id": "45835dd2-11d4-40a9-8b72-4b1017b2bee8",
+      "result_id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9"
+    },
+    {
+      "claim_id": "7c505168-cef2-4752-b016-38f363f327be",
+      "result_id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9"
+    },
+    {
+      "claim_id": "fb601e06-d6b4-419e-b9ed-b8a18c81dfb3",
+      "result_id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9"
+    },
+    {
+      "claim_id": "3127c677-f06d-4bfb-b079-dd98e4f0c48b",
+      "result_id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9"
+    },
+    {
+      "claim_id": "00958332-3360-4ec4-af3c-4ace6e30b19f",
+      "result_id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9"
+    },
+    {
+      "claim_id": "59371a70-5fa0-40b3-82bc-01422c3025d1",
+      "result_id": "a6ba1e56-5e90-40d8-8c8a-694dbafdd0e9"
+    },
+    {
+      "claim_id": "d17e96dc-e6c3-4521-808d-80e4414f01ae",
+      "result_id": "afe8b0bd-eabf-4531-8c7f-4ec07b84f89c"
+    },
+    {
+      "claim_id": "34396e85-797f-4f6d-b009-44547e35ce83",
+      "result_id": "afe8b0bd-eabf-4531-8c7f-4ec07b84f89c"
+    },
+    {
+      "claim_id": "21a07bdd-63a0-47a3-a3b9-3e9c112a1c00",
+      "result_id": "afe8b0bd-eabf-4531-8c7f-4ec07b84f89c"
+    },
+    {
+      "claim_id": "e147d522-4bf0-40d6-9a4e-c2291e885175",
+      "result_id": "afe8b0bd-eabf-4531-8c7f-4ec07b84f89c"
+    },
+    {
+      "claim_id": "39797bf4-356b-43b8-997f-6d0e4b94260e",
+      "result_id": "afe8b0bd-eabf-4531-8c7f-4ec07b84f89c"
+    },
+    {
+      "claim_id": "54097168-f923-4908-8e54-c53a09406782",
+      "result_id": "b25ab113-e2a3-4e7e-95db-3fb2958de223"
+    },
+    {
+      "claim_id": "50b27855-0276-43c9-a9ce-8858a46ef7f0",
+      "result_id": "b25ab113-e2a3-4e7e-95db-3fb2958de223"
+    },
+    {
+      "claim_id": "383980cb-c2ff-4b9d-91b3-0d5794c72b39",
+      "result_id": "b25ab113-e2a3-4e7e-95db-3fb2958de223"
+    },
+    {
+      "claim_id": "c4171c5b-b10f-43d4-b0cc-23755636c666",
+      "result_id": "b25ab113-e2a3-4e7e-95db-3fb2958de223"
+    },
+    {
+      "claim_id": "095bd92d-e766-4f99-b7d6-d74b16cd3360",
+      "result_id": "b25ab113-e2a3-4e7e-95db-3fb2958de223"
+    },
+    {
+      "claim_id": "58c1053a-7695-4d40-84fa-903c145069c9",
+      "result_id": "2220fcc2-d79b-4d9a-b003-cca02955b9f5"
+    },
+    {
+      "claim_id": "97b4fa97-174c-405e-8e48-99e8fe7ed0ab",
+      "result_id": "2220fcc2-d79b-4d9a-b003-cca02955b9f5"
+    },
+    {
+      "claim_id": "6db34e4e-2058-4460-9f17-7566c96b7a67",
+      "result_id": "2220fcc2-d79b-4d9a-b003-cca02955b9f5"
+    },
+    {
+      "claim_id": "0f40b8e9-ca10-4b19-94b6-a9bdd16f5afc",
+      "result_id": "2220fcc2-d79b-4d9a-b003-cca02955b9f5"
+    },
+    {
+      "claim_id": "4aec6352-37a6-492b-ab06-e19ffebcec3e",
+      "result_id": "2220fcc2-d79b-4d9a-b003-cca02955b9f5"
+    },
+    {
+      "claim_id": "0c2155ad-5164-4076-b5c5-390d06ea0826",
+      "result_id": "2220fcc2-d79b-4d9a-b003-cca02955b9f5"
+    },
+    {
+      "claim_id": "d70165df-4f53-4e10-b32b-e8e025c146dc",
+      "result_id": "26605e30-9fb8-476b-8fb2-885c8224a274"
+    },
+    {
+      "claim_id": "ef1b4c10-b6a4-4db8-a182-596d63eae7e9",
+      "result_id": "26605e30-9fb8-476b-8fb2-885c8224a274"
+    },
+    {
+      "claim_id": "1c019238-c901-469f-8e4c-b471352b5514",
+      "result_id": "26605e30-9fb8-476b-8fb2-885c8224a274"
+    },
+    {
+      "claim_id": "0b13896f-1057-4812-9688-0edfcd8a06d6",
+      "result_id": "68860e44-32bd-44ec-ae0a-9723df962a9c"
+    },
+    {
+      "claim_id": "dccb0580-619a-4ee9-b9ff-348d35c1d826",
+      "result_id": "68860e44-32bd-44ec-ae0a-9723df962a9c"
+    },
+    {
+      "claim_id": "5e31a3a9-c3d3-4993-a858-b4e422e39369",
+      "result_id": "03c941cb-b161-4bef-9cfa-745d048c39a1"
+    },
+    {
+      "claim_id": "e4e49812-3c89-42c1-a3d1-d803eda8c4f6",
+      "result_id": "03c941cb-b161-4bef-9cfa-745d048c39a1"
+    },
+    {
+      "claim_id": "6de8e146-c8b4-436d-908b-4644c9a5299c",
+      "result_id": "2b0a1097-97cd-44e8-b700-0d9bb350ae30"
+    },
+    {
+      "claim_id": "34a8d80f-8fc3-4db5-90f1-c23bcaab08d9",
+      "result_id": "2b0a1097-97cd-44e8-b700-0d9bb350ae30"
+    },
+    {
+      "claim_id": "450056b1-76c4-47d1-a842-d10a9d81ae86",
+      "result_id": "2b0a1097-97cd-44e8-b700-0d9bb350ae30"
+    },
+    {
+      "claim_id": "e87e6861-cad2-4534-9a4c-97fa599d7bf4",
+      "result_id": "2b0a1097-97cd-44e8-b700-0d9bb350ae30"
+    },
+    {
+      "claim_id": "b5e71356-e311-483b-bfd3-d4f7227b639d",
+      "result_id": "2b0a1097-97cd-44e8-b700-0d9bb350ae30"
+    },
+    {
+      "claim_id": "0db9bfa8-49d6-475f-a83b-ba065e19dd33",
+      "result_id": "2b0a1097-97cd-44e8-b700-0d9bb350ae30"
+    },
+    {
+      "claim_id": "2cfa707d-57cd-40e9-92e9-6a65a8d15ed9",
+      "result_id": "867cdb43-9cac-418f-8d1e-afe87fa718e2"
+    },
+    {
+      "claim_id": "262ce613-9976-49c7-bf3a-e4c659da80ce",
+      "result_id": "867cdb43-9cac-418f-8d1e-afe87fa718e2"
+    },
+    {
+      "claim_id": "95ab2e0f-65ae-4fa8-8f3d-6d2b988ed21f",
+      "result_id": "867cdb43-9cac-418f-8d1e-afe87fa718e2"
+    },
+    {
+      "claim_id": "b9caaf83-1901-43a4-9c1c-b0126c055779",
+      "result_id": "867cdb43-9cac-418f-8d1e-afe87fa718e2"
+    },
+    {
+      "claim_id": "3e141119-e1f6-4efe-ab3b-70b4c05b36a5",
+      "result_id": "867cdb43-9cac-418f-8d1e-afe87fa718e2"
+    },
+    {
+      "claim_id": "903e52be-9cd5-4029-9a3b-e84aa8504a5f",
+      "result_id": "36d3e137-d2da-461e-a33f-a263a6d1d378"
+    },
+    {
+      "claim_id": "5a151cfd-9a40-4fb2-aadb-07bbbc835cf4",
+      "result_id": "70fa2925-8031-497e-90d2-1c4edf1d7004"
+    },
+    {
+      "claim_id": "82f38543-dfd8-41aa-9368-68220159a1e8",
+      "result_id": "70fa2925-8031-497e-90d2-1c4edf1d7004"
+    },
+    {
+      "claim_id": "fe5b6129-ff24-4773-8ed4-385527686e99",
+      "result_id": "70fa2925-8031-497e-90d2-1c4edf1d7004"
+    },
+    {
+      "claim_id": "6a2cf021-4d45-4e72-9633-02d5163dc0b8",
+      "result_id": "70fa2925-8031-497e-90d2-1c4edf1d7004"
+    },
+    {
+      "claim_id": "c5d299b4-abe5-4a25-add3-403986d0450a",
+      "result_id": "9b19aebc-9597-4e93-8f99-812b946ea8cd"
+    },
+    {
+      "claim_id": "e81e40fb-c4b4-4b3a-8480-b87122180fe1",
+      "result_id": "9b19aebc-9597-4e93-8f99-812b946ea8cd"
+    },
+    {
+      "claim_id": "e6802f8f-b83f-4797-9ac3-dd34880cdd02",
+      "result_id": "3689bfbb-d654-456d-ad5b-934ac7ee38dc"
+    },
+    {
+      "claim_id": "18f1d016-568a-47e2-a620-602508b9fbe7",
+      "result_id": "3689bfbb-d654-456d-ad5b-934ac7ee38dc"
+    },
+    {
+      "claim_id": "cd8eff57-fd08-4ca3-8d22-6679b50ba83c",
+      "result_id": "3689bfbb-d654-456d-ad5b-934ac7ee38dc"
+    },
+    {
+      "claim_id": "58d8b385-7d7e-49a6-a632-32ffa638350f",
+      "result_id": "539a339a-fcc9-466b-9ea1-2092d573eec9"
+    },
+    {
+      "claim_id": "2d1a07a3-27c1-4873-90a8-7e3c44d92cf9",
+      "result_id": "ee2471b4-ddec-4c0b-a86a-7bc758a1fcd4"
+    },
+    {
+      "claim_id": "3f3b7043-0c2a-40d9-b823-f1710e3bb3d1",
+      "result_id": "ee2471b4-ddec-4c0b-a86a-7bc758a1fcd4"
+    },
+    {
+      "claim_id": "b4ee8f1a-de04-4fe2-b9b7-3f4717b7e57e",
+      "result_id": "ee2471b4-ddec-4c0b-a86a-7bc758a1fcd4"
+    },
+    {
+      "claim_id": "5f7dbc71-2199-4423-8f90-92c6d56691c1",
+      "result_id": "ee2471b4-ddec-4c0b-a86a-7bc758a1fcd4"
+    },
+    {
+      "claim_id": "e43fa592-de0d-4d18-bb5c-10d77c40b664",
+      "result_id": "482fa9fb-a3d6-45c2-a0a5-e6ca4e7d8912"
+    },
+    {
+      "claim_id": "f1e47c62-181e-493a-93a3-3da4559d27dd",
+      "result_id": "194a9945-979c-4a70-9c1a-573e4125e68d"
+    }
+  ],
+  "comparisons": []
+}

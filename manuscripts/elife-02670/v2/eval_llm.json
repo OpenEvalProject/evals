@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C125",
+      "C139",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The manuscript establishes the theoretical framework for understanding choice probabilities (CPs), noting that CPs are thought to be determined by both selective decoding and correlated noise, but that experimental evidence dissociating these factors has been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 and C125-C143 provide comprehensive background from established literature and theory (Haefner et al., 2013) showing that both correlated noise and selective decoding can contribute to CPs. The claims accurately represent the state of the field and the controversy, supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "MSTd neurons exhibit a peculiar pattern of CPs where congruent cells (matched visual/vestibular preferences) show CPs >0.5 in both modalities, while opposite cells (mismatched preferences) show CPs >0.5 in vestibular but <0.5 in visual conditions, providing a unique system to dissociate correlation and decoding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C29, C53-C57, and C145-C147 describe well-documented experimental findings from previous studies (Gu et al., 2008; Chen et al., 2013) showing the peculiar CP pattern in MSTd. This pattern is illustrated in Figure 2B and provides the empirical foundation for the modeling work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A pure-correlation model was developed where pool 2 neurons (decoding weight=0) exhibit significant CPs solely through correlations with pool 1 neurons (decoding weight=1), with CP magnitude depending on the slope of the noise-signal correlation relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C45 describe the pure-correlation model implementation with clear methodological details. The model successfully demonstrates that CPs can arise from correlated noise alone, as shown in Figure 1B. The approach is theoretically sound and consistent with previous work (Cohen and Newsome, 2009).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A selective decoding model was developed where pool 2 neurons have no correlations with pool 1, requiring non-zero decoding weights to produce CPs, with CP polarity depending on whether neurons are decoded relative to their preferred or anti-preferred stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe the selective decoding model with clear implementation details shown in Figure 1C-D. The model demonstrates that CPs can arise from selective weighting of neural responses, providing a mechanistic alternative to the pure-correlation explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Both pure-correlation and selective decoding models can qualitatively reproduce the peculiar CP pattern in MSTd (opposite cells with CP >0.5 in vestibular, <0.5 in visual), but through fundamentally different mechanisms: modality-specific correlation structure versus modality-specific decoding weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C76 demonstrate that both models can account for the basic CP pattern (Figures 2D, 2F), establishing that the single-cue CP data alone cannot distinguish between mechanisms. This is a critical finding showing the need for additional discriminating evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Experimental noise correlation data from MSTd show that rnoise depends on signal correlations for both visual and vestibular tuning (avestibular=0.12, avisual=0.09), with strong dependence for matched-congruency pairs but weak dependence for mismatched pairs, significantly favoring the selective decoding model's correlation structure (p=0.0003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 present rigorous statistical analysis (sequential F-test, type II linear regression) of noise correlations from 127 neuron pairs. The data in Figure 3A and statistical comparisons clearly support that correlations depend on both modalities, consistent with the selective decoding model but not the pure-correlation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Using biologically-constrained simulations based on 129 real MSTd neurons, both models reproduce the CP pattern in single-cue conditions, with the selective decoding model requiring a Readout Index (RI) of ~0.5 to match experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 describe simulations using real neural data with appropriate resampling methods. Figure 4 shows both models can reproduce single-cue CP patterns, with the selective decoding model's RI parameter providing a quantitative measure of opposite cell contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In the combined (visual+vestibular) condition, the pure-correlation model predicts a bimodal CP distribution for opposite cells (puni<<0.001), while the selective decoding model predicts a unimodal distribution centered at 0.5, matching MSTd data (puni>0.05) and significantly favoring the selective decoding model (p<<0.001, Ansari-Bradley test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 present a critical discriminating test between models. The statistical analysis (modality test, Ansari-Bradley test) clearly shows the pure-correlation model's bimodal prediction is inconsistent with data, while the selective decoding model matches observations (Figure 5D). This is strong evidence favoring selective decoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The relationship between CP and neuronal threshold in the combined condition shows a significantly stronger correlation for the selective decoding model (R=-0.67) than the pure-correlation model (R=-0.41), more closely matching MSTd data (R=-0.65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 provide additional quantitative evidence from Figure 5E-H. The correlation coefficients with confidence intervals show the selective decoding model better captures the CP-threshold relationship observed in real neurons, providing converging evidence beyond the distribution analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The selective decoding model with RI=0.5 predicts behavioral thresholds matching monkey performance (vestibular: 2.33\u00b0, visual: 2.40\u00b0, combined: 1.58\u00b0, near-optimal), while the pure-correlation model predicts mismatched thresholds (visual 42% lower than vestibular). Critically, the RI value that matches behavior is the same value that matches CP patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C124 demonstrate convergence of evidence from independent analyses. Figure 6 shows the selective decoding model simultaneously accounts for both behavioral performance and CP patterns with a single parameter value (RI=0.5), while the pure-correlation model fails to match behavioral thresholds. This convergence strongly supports the selective decoding interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Three main lines of evidence favor the selective decoding model: (1) the pure-correlation model predicts noise correlations inconsistent with MSTd data, (2) it predicts bimodal CP distributions inconsistent with data, and (3) it fails to match behavioral thresholds, while the selective decoding model is consistent with all observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 synthesize the main findings. Each of the three discriminating features is supported by rigorous statistical analysis and multiple independent lines of evidence presented throughout the manuscript. The conclusion that selective decoding plays important roles alongside correlated noise is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C144"
+    ],
+    "result": "The pattern of CPs in MSTd is more compatible with a model where both selective decoding and correlated noise contribute than a model where CPs are determined solely from correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C8, and C144 represent the main conclusion, which is supported by the convergence of multiple independent analyses: noise correlation structure (C77-C85), CP distributions (C97-C104), CP-threshold relationships (C105-C108), and behavioral performance (C109-C124). The evidence is comprehensive and mutually reinforcing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The selective decoding strategy of reading out neurons according to vestibular preferences may provide a near-optimal solution for robust heading estimation in the presence of moving objects, with adjustable weighting allowing tradeoffs between robustness and sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 provide functional interpretation supported by a separate study (Kim et al., 2014). While speculative regarding the ultimate purpose, the interpretation is consistent with the modeling results and provides a plausible computational rationale for the observed decoding strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "CPs can be interpreted through bottom-up mechanisms (neural variability driving decisions, reflecting selective decoding) or top-down mechanisms (feedback from decision areas), with these interpretations not being mutually exclusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 accurately summarize different theoretical perspectives on CP interpretation from the literature (Parker and Newsome, 1998; Nienborg and Cumming, 2009, 2010; Bosking and Maunsell, 2011). This provides appropriate context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

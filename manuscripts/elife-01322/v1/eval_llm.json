@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "E. coli populations evolved extreme ionizing radiation (IR) resistance through directed laboratory evolution, achieving 3-4 orders of magnitude increase in survival at 3000 Gy after 20 rounds of selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C20-C23 collectively establish that directed evolution successfully generated IR-resistant E. coli populations with dramatic increases in survival. The experimental design (20 rounds, ~99% kill per round, four independent populations) and quantitative survival data provide strong support for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C91"
+    ],
+    "result": "Three mutations in DNA repair genes (recA D276N, dnaB P80H, yfjK A151D) account for nearly all of the IR resistance phenotype in isolate CB2000, with each contributing 1-2 log increases in survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C58-C65, and C91 demonstrate through forward genetics (introducing mutations) and reverse genetics (reverting mutations) that three DNA repair gene mutations are necessary and largely sufficient for the IR resistance phenotype. The data from Figures 2A-D and competition experiments (Figure 3) provide converging evidence. This is the central mechanistic finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C62",
+      "C64"
+    ],
+    "result": "Four additional mutations (gsiB N104S, rsxB K121E, wcaK Y132C, glpD V255M) make small but measurable contributions (2-7 fold) to IR resistance in CB2000.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C57, C62, and C64 are supported by experimental data showing modest increases in IR resistance when these mutations are introduced individually or in combination. The effects are statistically significant but quantitatively minor compared to the three DNA repair mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The recA and dnaB mutations affect the same pathway (non-additive effects), while yfjK affects a different pathway (additive with recA/dnaB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by epistasis analysis shown in Figure 2A,D. The lack of additivity between recA and dnaB mutations suggests they function in the same pathway, while the additive effect of yfjK indicates a distinct mechanism. This genetic interaction analysis is well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Competition experiments confirm that the three DNA repair mutations (recA, dnaB, yfjK) confer at least a 2-log survival advantage at high IR doses, and reverting these mutations eliminates the competitive advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by direct competition experiments (Figure 3) that validate the survival assay results. The authors acknowledge limitations in colony counting at extreme fitness differences but the overall trend strongly supports the importance of these three mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Deletion of the e14 prophage is universal across all evolved strains, occurs early in selection, and contributes ~10-fold increase in IR resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by genomic sequencing data showing universal e14 deletion and previous experimental characterization of its contribution. This represents an important early adaptation, though not the focus of the current mechanistic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Mutations in replication restart primosome components (priA, priC, dnaB, dnaT) appear in every evolved isolate, and recA mutations appear in 13 of 22 isolates from the original four populations, showing convergent evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by comprehensive genomic sequencing data (Table 2, Supplementary files). The pattern of convergent evolution across independent populations strongly suggests these mutations are adaptive. The appearance of identical mutations (e.g., RecA D276N) in independently evolved populations is particularly compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Genomic sequencing reveals 44-77 mutations in isolates from the original four populations and 242-267 mutations in further-evolved CB1000 derivatives, with transition mutations dominating and evidence of clonal interference in IR-1-20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 are supported by comprehensive genomic sequencing data (Table 1, Supplementary files). The mutational spectrum analysis and population structure characterization provide important context for understanding the evolutionary dynamics, though some interpretation of clonal interference relies on unpublished analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Gene deletion experiments suggest wcaK and glpD mutations are loss-of-function, while the yfjK A151D mutation confers greater resistance than complete deletion, suggesting altered rather than lost function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by deletion analysis (Figure 2C). The observation that the yfjK point mutation provides 10-fold greater resistance than deletion is particularly interesting and well-documented. The speculation about partial loss-of-function (C75) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C92"
+    ],
+    "result": "RNA-Seq analysis reveals minimal transcriptional changes in evolved strains compared to the founder, with only a few genes showing >1.5-fold expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 and C92 are supported by RNA-Seq data (Supplementary file 1C). The finding that IR resistance is not accompanied by major transcriptional reprogramming is important for understanding the mechanism. However, the analysis only examines baseline expression without irradiation, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "NMR metabolite analysis shows no significant changes in metabolite concentrations between founder and evolved strains, and no accumulation of antioxidant metabolites as seen in D. radiodurans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by NMR data (Figure 4A). The absence of metabolite changes, particularly antioxidants, contrasts with the D. radiodurans mechanism and supports the authors' conclusion that DNA repair adaptation rather than metabolic changes underlies IR resistance in these E. coli strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Trace metal analysis reveals no significant universal change in Mn/Fe ratio in most evolved strains, contrasting with the mechanism described for D. radiodurans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by trace metal analysis data (Figure 4B, Figure 4\u2014figure supplement 1). The absence of increased Mn/Fe ratio in most strains is an important negative result that distinguishes the E. coli adaptation mechanism from that of D. radiodurans. Minor Mn elevation in some strains (C87) is noted but not universal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Biochemical characterization of mutant RecA proteins shows they nucleate filaments more rapidly, extend more slowly, function better as shorter filaments, and are less sensitive to ADP inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 describe unpublished biochemical characterization of RecA mutants. While the functional alterations are described in detail and appear rationalized in context (C104), the data supporting these claims are not presented in the manuscript. The claims rely entirely on unpublished work, making independent evaluation impossible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C89",
+      "C90",
+      "C94"
+    ],
+    "result": "The study demonstrates that genetic innovations in pre-existing DNA repair functions, rather than novel repair pathways or metabolic changes, can play a predominant role in acquiring extreme IR resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C89-C90, and C94 represent the major conceptual conclusion of the paper. This interpretation is well-supported by the combined evidence: (1) three DNA repair mutations account for most resistance, (2) minimal transcriptional/metabolic changes, (3) no Mn/Fe ratio increase, and (4) convergent evolution of DNA repair mutations across populations. This challenges the prevailing emphasis on protein protection mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Evolution of extreme IR resistance involves multiple paths with contributions from multiple cellular systems, and protein oxidation amelioration may play varying roles in different populations through mechanisms potentially different from D. radiodurans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 acknowledge the complexity of IR resistance evolution while emphasizing the DNA repair mechanism. The inference that protein oxidation amelioration may be important in other populations (C99-C100) is reasonable given mutations in rsxB, gsiB, and other oxidative stress genes, though speculative. The caveat about different mechanisms (C101) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mutations in genes involved in oxidative stress response (rsxB, gsiB), cell wall biogenesis (wcaK, nanE), and other cellular processes are present in evolved populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 describe the functions of mutated genes based on established knowledge and citations. These claims provide important context for understanding the mutational landscape, though the functional significance of most of these mutations is shown to be minor in CB2000.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mutations in clpXP proteolytic system and fnr regulatory gene appear in multiple populations, suggesting potential roles in IR resistance through protein turnover and metabolic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by genomic data (Table 2) and established knowledge about gene functions. The convergent appearance of these mutations across populations suggests importance, though their functional contribution to IR resistance was not experimentally tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on D. radiodurans IR resistance mechanisms: the bacterium survives >5 kGy through mechanisms including condensed nucleoid, protein damage amelioration (especially increased Mn/Fe ratio), and potentially specialized DNA repair, with protein protection receiving the most experimental support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C19 provide literature-based background on IR resistance mechanisms, particularly in D. radiodurans. These claims are well-supported by citations and represent accurate summaries of prior work. They establish the context for the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C42",
+      "C43"
+    ],
+    "result": "Previous and current genomic sequencing efforts characterized multiple isolates, revealing 40-80 mutations per isolate, no mutator phenotypes, variation in resistance levels, and CB2000 as a highly resistant isolate from a population lacking clonal interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 and C42-C43 describe the experimental scope and rationale for focusing on CB2000. These methodological and descriptive claims are well-supported by data from both the current and previous studies. The characterization of CB2000 as an ideal isolate for detailed analysis is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "DNA repair systems are generally similar across bacterial species but with important distinctions, and D. radiodurans has a standard set of repair functions with some unique features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by citations and represent accurate general knowledge about bacterial DNA repair systems. These claims provide important context for interpreting the significance of DNA repair mutations in the evolved E. coli strains.",
+    "result_type": "MINOR"
+  }
+]

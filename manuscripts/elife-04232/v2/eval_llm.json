@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CD8+ T cells play an essential protective role against blood-stage PyNL malaria infection, with their depletion leading to significantly increased parasitemia and mortality in both C57BL/6 and BALB/c mice. The kinetics of infection differ between CD8+ and CD4+ T cell depletion, suggesting distinct effector mechanisms, with CD8+ T cells being particularly important during the early phase of infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 provide strong experimental evidence from multiple mouse strains showing that CD8+ T cell depletion results in lethal infection with significantly increased parasitemia (Figures 1A, 1\u2014figure supplement 1C,D). The differential kinetics between CD8+ and CD4+ T cell depletion (C19-C21) support the inference that these cells have distinct mechanisms (C22-C23). Statistical significance is demonstrated with appropriate p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "PyNL infection activates CD8+ T cells, as evidenced by increased expression of activation markers (CD25, CD69) and cytotoxicity-related molecules (FasL, LAMP1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by flow cytometry data in Figure 1B showing statistically significant increases in activation and cytotoxicity markers on CD8+ T cells following infection. The data directly demonstrate CD8+ T cell activation during malaria infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "FasL plays a crucial role in CD8+ T cell-mediated protection against blood-stage malaria. FasL-mutant gld mice show similar infection kinetics to CD8+ T cell-depleted mice, and adoptive transfer experiments demonstrate that gld CD8+ T cells fail to provide full protection while gld CD4+ T cells retain protective capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are well-supported by converging evidence from gld mice infection studies (Figure 1C) and adoptive transfer experiments (Figure 1E,F). The observation that FasL expression increases specifically on CD8+ but not CD4+ T cells (C28), combined with the differential protective capacity of gld CD8+ versus CD4+ T cells (C30-C31), provides strong mechanistic evidence for FasL's role in CD8+ T cell-mediated immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "CD8+ T cells are solely responsible for transferred protection in adoptive transfer experiments, with contaminating CD4+ T cells present at levels too low (<0.1%) to contribute to protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide rigorous controls demonstrating CD8+ T cell purity and excluding CD4+ T cell contribution. Flow cytometry data (Figure 1\u2014figure supplement 2B,C) show <0.1% CD4+ contamination, and dose-response experiments (C36) demonstrate that 10^6 CD4+ T cells cannot protect, making the 10^4 contaminating cells insufficient (C37). This careful exclusion of confounding variables strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Malaria-infected erythroblasts in the spleen express Fas, with approximately 50% of splenic parasitized cells being Fas+ before peak parasitemia. Fas-expressing cells are MHC class I^hi erythroblasts, and infection may induce Fas expression on erythroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by flow cytometry data in Figure 2 showing tissue-specific Fas expression patterns. The identification of Fas+ cells as MHC class I^hi erythroblasts (C43-C44) is well-supported. The inference that infection induces Fas expression (C45) is reasonable based on the reduction of Fas\u2212 erythroblasts among infected cells (41% to 14%), though alternative explanations exist (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Phosphatidylserine (PS) exposure is significantly increased on splenic infected erythroblasts in a CD8+ T cell- and FasL-dependent manner, with the majority of infected Fas+ splenic erythroblasts displaying PS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by flow cytometry data in Figure 3 showing increased PS+ cells in infected spleens and significant reduction in CD8+ T cell-depleted and gld mice. The correlation between Fas expression and PS exposure (C49) and the tissue-specific pattern (spleen vs. peripheral blood) strengthen the mechanistic link between CD8+ T cells, FasL, and PS externalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CD8+ T cells from infected wild-type mice efficiently induce PS exposure on infected erythroblasts in vitro in a dose-dependent manner, and this activity requires FasL expression on CD8+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by in vitro coculture experiments (Figure 4B,C) demonstrating dose-dependent PS induction by activated CD8+ T cells. The requirement for FasL is clearly shown by the failure of gld CD8+ T cells to induce PS exposure (C56), providing strong mechanistic evidence. The specificity for infected cells (C55) further validates the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Recombinant FasL-Strep induces PS externalization on infected splenic erythroblasts in a dose-dependent manner, with PS+ cells being MHC class I^hi erythroblasts and FasL-Strep converting Fas+ PS\u2212 erythroblasts to PS+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by in vitro experiments with recombinant FasL (Figure 4E,F) showing dose-dependent PS induction. The characterization of PS+ cells as MHC class I^hi erythroblasts (C59) and the shift in MHC class I^hi cells from PS\u2212 to PS+ populations (C60-C61) provide strong evidence for FasL-mediated PS externalization on erythroblasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "PS exposure is not observed on infected peripheral blood cells even in the presence of CD8+ T cells or FasL-Strep, presumably due to lack of Fas expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by in vitro experiments (Figure 5) and is consistent with the lack of Fas expression on peripheral blood cells (C41, Figure 2). This negative control strengthens the mechanistic model by demonstrating tissue specificity and Fas-dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C107"
+    ],
+    "result": "CD8+ T cell-induced PS externalization on infected erythroblasts requires direct cell-to-cell contact and is not mediated by soluble factors, occurring in a FasL-dependent manner during blood-stage malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C107 are supported by Transwell experiments (Figure 6) demonstrating the requirement for cell contact. This finding is important for understanding the mechanism, though the authors appropriately note that exosome-mediated FasL delivery cannot be completely ruled out (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Macrophage depletion results in rapid death with high parasitemia, and PS exposure on infected cells correlates positively with phagocytosis by macrophages. Infected cells from CD8+ T cell-depleted or gld mice show reduced phagocytosis compared to wild-type controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by macrophage depletion experiments (Figure 7A,B) and in vitro phagocytosis assays (Figure 7C-E). The positive correlation between PS exposure and phagocytosis (C69, R\u00b2=0.97466) provides strong quantitative evidence linking CD8+ T cell-induced PS externalization to enhanced phagocytosis. The reduction in phagocytosis with cells from CD8+ T cell-depleted or gld mice (C68) directly supports the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Phagocytosis of infected cells occurs primarily in the spleen, with F4/80+ red pulp macrophages being responsible for parasite ingestion. CD8+ T cell depletion significantly reduces the proportion of phagocytosed infected cells in the spleen without affecting macrophage subset numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are supported by in vivo flow cytometry analysis (Figure 8) showing tissue-specific phagocytosis and macrophage subset identification. The finding that CD8+ T cell depletion reduces phagocytosis without affecting macrophage numbers (C77-C78) supports the model that CD8+ T cells enhance target cell susceptibility rather than macrophage activation. The identification of F4/80+ macrophages as the primary phagocytic population (C75-C76) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Macrophage activation is similar in CD8+ T cell-depleted and control mice during malaria, suggesting that differences in phagocytosis correspond to differences in PS exposure on infected cells rather than macrophage activation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by MHC class I and II expression analysis on macrophages (Figure 9). This finding is important for establishing that CD8+ T cells act primarily by modifying target cells rather than activating macrophages, though the inference (C80) could benefit from additional functional assays of macrophage activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Tim-4 expression on splenic macrophages is upregulated during PyNL infection, and Tim-4 contributes to phagocytosis of infected RBCs as demonstrated by dose-dependent inhibition with anti-Tim-4 antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 and C124-C126 are supported by flow cytometry showing increased Tim-4 expression (Figure 10A) and antibody blocking experiments (Figure 10B,C). The ~20% inhibition by anti-Tim-4 antibodies is consistent with the proportion of Tim-4+ macrophages in uninfected mice (C125), and the authors appropriately note that Tim-4 upregulation during infection may increase its role (C126). The identification of Tim-4 as a PS receptor for infected cells is novel and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "CD8+ T cells interact with infected erythroblasts and induce PS display in a FasL-dependent manner, enhancing susceptibility to phagocytosis and contributing to parasite elimination through collaboration with macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C90-C92 represent the main conclusions synthesizing the experimental findings. These are well-supported by the convergence of evidence from CD8+ T cell depletion, gld mice, in vitro PS induction, phagocytosis assays, and the demonstration of FasL-dependence throughout. The mechanistic model linking CD8+ T cells, FasL, PS externalization, and enhanced phagocytosis is coherent and supported by multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The PyNL clone used in this study appears more virulent than the 17\u00d7 clone 1.1 based on higher peak parasitemia and prolonged parasite elimination, which may explain discrepancies with previous studies regarding CD8+ T cell importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 are speculative (C89 explicitly marked as speculation) and attempt to reconcile conflicting literature. While the comparison of infection parameters is reasonable (C88), the causal link to CD8+ T cell dependence (C89) is not directly tested. This represents a plausible hypothesis but lacks experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "CD8+ T cell-mediated protection targeting parasitized erythroblasts operates primarily in the early phase of infection when infected erythroblasts are relatively more abundant compared to infected RBCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by the infection kinetics showing early parasitemia differences in CD8+ T cell-depleted mice (C20, C23) and previous findings about constant erythroblast infection proportions (C94). The inference that early targeting of erythroblasts is efficient (C96) is logical given their relative abundance, though direct quantification of erythroblast targeting efficiency would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "This protective mechanism might effectively control malaria parasites in humans, where parasitemia is lower than in animal models, and parasitized erythroblasts have been found in human patients and can be infected in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97 and C100 are speculative about human relevance, while C98-C99 cite evidence for erythroblast infection in humans. The speculation is reasonable given the supporting citations, but lacks direct experimental validation in human systems. The translational potential is plausible but uncertain without human studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Two possible mechanisms for Fas expression on infected erythroblasts are proposed: infection-induced Fas expression or preferential infection of Fas+ erythroblasts. Erythroblasts physiologically express Fas, which is involved in negative regulation of erythropoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 present alternative hypotheses for Fas expression patterns. C101 is supported by the reduction in Fas\u2212 erythroblasts among infected cells (C45), while C102 is presented as an alternative. C103-C104 are supported by citations establishing baseline Fas expression on erythroblasts. The authors appropriately present both possibilities without definitively resolving the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Activated CD8+ T cells expressing FasL might interact with uninfected Fas+ erythroblasts causing bystander damage, potentially underlying malarial anemia pathogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 are speculative about potential pathogenic mechanisms. While the presence of uninfected Fas+ erythroblasts and activated FasL+ CD8+ T cells is established, the bystander damage hypothesis is not directly tested. This represents an important potential side effect of the protective mechanism but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Although CD8+ T cells and erythroblasts normally occupy different splenic compartments (white pulp vs. red pulp), malaria infection disrupts splenic architecture, potentially enabling their interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by citations regarding normal splenic architecture (C108) and malaria-induced changes (C109). The inference that interaction becomes possible during infection (C110) is reasonable given the architectural disruption, though direct visualization of CD8+ T cell-erythroblast interactions would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Unlike viruses, malaria parasites may not require host cellular machinery for replication, suggesting apoptosis may not directly affect parasite growth. Instead, parasite elimination requires phagocytosis of infected cells, with PS externalization via Fas/FasL playing an important role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 present a mechanistic model distinguishing malaria from viral infections. C111 states general knowledge about malaria parasites, C112 is a reasonable inference, C113 provides supporting evidence from related parasites, and C114-C115 synthesize the experimental findings. The model is well-supported by the data showing that PS externalization enhances phagocytosis rather than directly killing parasites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Erythroblasts are distributed in erythroblastic islands in the splenic red pulp, where central macrophages normally phagocytose nuclei after enucleation. These macrophages may rapidly engulf infected erythroblasts after PS exposure following CD8+ T cell interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 state established knowledge about erythroblastic islands (supported by citation C119), while C120 is speculation about rapid engulfment. The speculation is reasonable given the known function of these macrophages and the demonstrated PS-dependent phagocytosis, though direct temporal analysis would strengthen this inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "PS exposure on infected RBCs has been reported in response to various stressors during malaria, and the FasL- and CD8+ T cell-dependent system might contribute to this PS exposure as part of the protective mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 is supported by citation, while C122-C123 are speculative about the contribution of the CD8+/FasL system to PS exposure on RBCs. The speculation is reasonable but uncertain given that Fas is not expressed on peripheral blood RBCs (C41, C62), suggesting alternative mechanisms may be more important for RBC PS exposure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Other known PS receptors such as PS receptor and Del-1 might also be involved in phagocytosis of infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is speculation about additional PS receptors, supported by citations establishing their PS-binding function. The incomplete inhibition by anti-Tim-4 antibodies (C84, ~20%) suggests other receptors are involved, making this speculation reasonable but requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "These findings suggest novel vaccine strategies based on CD8+ T cell activation, which may avoid the strain-specific immunity problem of antibody-based vaccines since CD8+ T cells can recognize conserved intracellular antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C132 discuss vaccine implications. C129-C131 state general immunological principles, while C128 and C132 speculate about vaccine applications. The speculation is reasonable given the demonstrated protective role of CD8+ T cells, but translating these findings to vaccine development requires substantial additional work including identification of protective antigens and demonstration of efficacy.",
+    "result_type": "MINOR"
+  }
+]

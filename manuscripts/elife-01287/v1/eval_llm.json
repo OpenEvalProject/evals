@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C76"
+    ],
+    "result": "C. owczarzaki exhibits an aggregative multicellular stage, representing the first reported case of aggregative multicellularity in a close unicellular relative of metazoans. The life cycle includes a filopodial stage with active DNA replication and cell proliferation, followed by either encystment or aggregation. Aggregates form through active cell aggregation (not clonal division), as demonstrated by dual-staining experiments and cell division inhibitor studies, with cells producing cohesive extracellular material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C34, and C76 collectively provide strong experimental evidence for aggregative multicellularity in C. owczarzaki. The dual-staining experiments (C31), cell division inhibitor studies (C32), flow cytometry data (C22, C23, C33), and microscopy observations (C27-C29) converge to demonstrate that aggregation occurs through active cell-cell adhesion rather than clonal division. This is the first such observation in a close unicellular relative of metazoans (C34, C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C49",
+      "C50",
+      "C80"
+    ],
+    "result": "C. owczarzaki exhibits stage-specific transcriptomic profiles across its life cycle, with 4486 of 8637 genes showing differential regulation. The filopodial stage is characterized by upregulation of signaling genes (tyrosine kinase, GPCR), transcription factors, and genes involved in protein synthesis and DNA replication. The aggregative stage shows upregulation of integrin adhesome components and associated signaling proteins. The cystic stage shows downregulation of metabolic genes but upregulation of autophagy, vesicle transport, and ubiquitin pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 and C80 are well-supported by RNA-Seq data with three biological replicates and appropriate statistical analysis using multiple methods (DESeq, EdgeR, CuffDiff, NOISeq). GO enrichment analysis and Pfam domain analysis provide functional context. The stage-specific expression patterns are consistent with the observed cellular behaviors and are visualized in multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C80"
+    ],
+    "result": "Transition to the aggregative stage is associated with significant upregulation of orthologs of genes known to establish multicellularity and tissue architecture in metazoans, particularly the integrin adhesome and associated tyrosine kinase signaling genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49, and C80 are supported by RNA-Seq data showing upregulation of integrin adhesome components, tyrosine kinases, and cell adhesion proteins during aggregation (Figure 8). The inference that these genes play an important role in aggregate formation (C49) is reasonable given the observed expression patterns and known functions in metazoans, though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C81",
+      "C82"
+    ],
+    "result": "C. owczarzaki exhibits extensive differential intron retention across life cycle stages, with 797 introns showing differential retention in the filopodial stage and 259 in the cystic stage, but none in the aggregative stage. Filopodial-specific retained introns have similar lengths to constitutive introns, while cystic-specific retained introns are significantly longer with weaker splice sites. Multiple introns within genes can be retained in a stage-specific and combinatorial manner. Differential intron retention likely acts to control transcript levels, probably through nonsense-mediated decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C65, C81-C82 are well-supported by RNA-Seq analysis with 80% RT-PCR validation rate (C56). Statistical analyses of intron length and splice site strength are appropriate (Wilcoxon rank sum tests with reported p-values). The inference that retained introns reduce mRNA levels through NMD (C58, C82) is reasonable based on the low fraction of read-through introns and citation to similar mechanisms in metazoans, though direct experimental validation of NMD is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Filopodial-specific differentially retained introns show enrichment of a T/G-rich motif resembling the Elav-like protein binding site in mammals. The C. owczarzaki Elav-like ortholog shows lowest expression in the filopodial stage, suggesting it may negatively regulate filopodial-specific intron retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 are supported by MEME motif analysis and RNA-Seq expression data. However, C68 is explicitly speculative and lacks experimental validation. The inverse correlation between Elav-like expression and intron retention is suggestive but not conclusive evidence of negative regulation. Functional experiments (e.g., RNAi or gene targeting) would be required to test this hypothesis, as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "C. owczarzaki exhibits differential exon skipping across life cycle stages, with 29 cassette exons showing \u226515% PSI differences. Genes with differential exon skipping are significantly enriched in protein kinase activity, suggesting coordinated exon skipping plays a role in modulating cell signaling. This represents the first example of a regulated exon network linked to a specific biological function in a unicellular organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69-C75 are supported by RNA-Seq analysis with 7/8 (87.5%) RT-PCR validation rate (C70). GO enrichment analysis showing significant enrichment in protein kinase activity (C73) supports the inference of a role in cell signaling modulation (C74). The claim that this is the first such network in a unicellular organism (C75) is a strong conclusion based on literature review, though it depends on the completeness of that review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "C. owczarzaki deploys an exon network associated with signaling (enriched in protein kinase genes), a feature of splicing regulation previously only observed in metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73-C75 are supported by the observation of coordinated exon skipping in protein kinase genes. However, the claim that this feature was \"so far only observed in metazoans\" (C6) is strong and depends on comprehensive literature review. The enrichment in protein kinases is statistically significant and functionally coherent, supporting the existence of a regulated network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C51",
+      "C83",
+      "C84"
+    ],
+    "result": "Features of aggregative behavior in an ancestral protist may have been co-opted to develop multicellular properties in metazoans. The observed diversity of cell behaviors in unicellular relatives suggests that regulated temporal cell differentiation was present in the unicellular ancestor of animals, and these may have been integrated into metazoan multicellularity through spatial rather than temporal control. The emergence of exon networks and differential splicing may have provided regulatory complexity key to the evolution of cell type complexity in metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C35-C39, C51, C83-C84 are explicitly speculative interpretations (marked as SPECULATION in evidence_type) about evolutionary scenarios. While the observations of aggregative behavior and regulated gene expression/splicing in C. owczarzaki are well-supported, the evolutionary inferences about ancestral states and co-option require additional comparative data from other unicellular relatives and cannot be directly tested with the current data. These are reasonable hypotheses but remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C91",
+      "C92"
+    ],
+    "result": "C. owczarzaki is a close unicellular relative of metazoans, belonging to the clade Filasterea (sister-group of Metazoa and choanoflagellates). It was originally isolated as an endosymbiont of the snail Biomphalaria glabrata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C20, C91-C92 are supported by citations to phylogenetic studies and represent established phylogenetic relationships. The taxonomic placement is well-established in the literature and shown in Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on multicellularity evolution: The genetic repertoire of the metazoan unicellular ancestor was more complex than previously thought. Multicellularity evolved independently in >20 eukaryotic lineages through either aggregation or clonal division. Complex multicellular organisms (plants, metazoans) arose through clonal division, while aggregative multicellularity is typically transient and arose in multiple clades. Within opisthokonts, only Fonticula alba was previously known to have aggregative behavior, while close unicellular relatives of metazoans only showed clonal multicellularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C17 are background information supported by citations to previous studies. These represent established knowledge in the field and provide context for the current findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The current evolutionary framework based on phylogenomic analyses discards the possibility that C. owczarzaki derives from a more complex multicellular lineage. The sister-group of opisthokonts is the unicellular Apusozoa, and complex multicellularity has not been observed in non-metazoan holozoan lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by citations to phylogenomic studies and represent the current understanding of opisthokont phylogeny. This provides important context for interpreting the aggregative behavior as potentially ancestral rather than derived from a more complex multicellular ancestor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C46"
+    ],
+    "result": "The cystic stage may represent a dispersal resistance form, with gene expression differences reflecting recycling of intracellular components triggered by starvation or adverse conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26 and C46 are explicitly speculative interpretations of the observed cystic stage and gene expression patterns. While the upregulation of autophagy and vesicle transport genes is consistent with this interpretation, direct experimental evidence (e.g., testing survival under starvation or stress conditions) is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Methodological details: C. owczarzaki cells were cultured in ATCC medium 1034 at 23\u00b0C. Different life cycle stages were obtained using specific culture conditions. RNA-Seq generated 197M 76-base paired reads from nine libraries, with 90% average mapping rate using Tophat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 describe experimental methods that are clearly documented in the Materials and Methods section. The RNA-Seq experimental design with three biological replicates per stage and high mapping rate is appropriate for the analyses performed.",
+    "result_type": "MINOR"
+  }
+]

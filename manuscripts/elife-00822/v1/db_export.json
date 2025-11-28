@@ -1,0 +1,1684 @@
+{
+  "submission": {
+    "id": "06acf9b3-5ef4-4527-a04b-b781f180d896",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:45:48.682056Z",
+    "updated_at": "2025-11-28T19:45:48.682056Z"
+  },
+  "content": [
+    {
+      "id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "submission_id": "06acf9b3-5ef4-4527-a04b-b781f180d896",
+      "content_type": "manuscript",
+      "content_text": "# A component of the mir-17-92 polycistronic oncomir promotes oncogene-dependent apoptosis\n\n## Authors\n\n- Virginie Olive<sup>1</sup>\n- Erich Sabio<sup>1</sup>\n- Margaux J Bennett<sup>1</sup>\n- Caitlin S De Jong<sup>1</sup>\n- Anne Biton<sup>2</sup>\n- James C McGann<sup>1</sup>\n- Samantha K Greaney<sup>1</sup>\n- Nicole M Sodir<sup>3</sup>\n- Alicia Y Zhou<sup>4</sup>\n- Asha Balakrishnan<sup>4</sup>\n- Mona Foth<sup>1</sup>\n- Micah A Luftig<sup>5</sup>\n- Andrei Goga<sup>4</sup>\n- Terence P Speed<sup>2</sup>\n- Zhenyu Xuan<sup>6</sup>\n- Gerard I Evan<sup>3</sup>\n- Ying Wan<sup>7</sup>\n- Alex C Minella<sup>8</sup>\n- Lin He<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. Department of Statistics University of California, Berkeley Berkeley United States\n3. Department of Biochemistry University of Cambridge Cambridge United Kingdom\n4. Department of Cell and Tissue Biology University of California, San Francisco San Francisco United States\n5. Department of Molecular Genetics and Microbiology Duke University Durham United States\n6. Department of Molecular and Cell Biology Center for Systems Biology, University of Texas at Dallas Dallas United States\n7. Department of Medicine The Third Military Medical University Chongqing China\n8. Driskill Graduate Program, Department of Medicine, Hematology and Oncology Division Northwestern University Feinberg School of Medicine Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nmir-17-92, a potent polycistronic oncomir, encodes six mature miRNAs with complex modes of interactions. In the E\u03bc-myc Burkitt\u2019s lymphoma model, mir-17-92 exhibits potent oncogenic activity by repressing c-Myc-induced apoptosis, primarily through its miR-19 components. Surprisingly, mir-17-92 also encodes the miR-92 component that negatively regulates its oncogenic cooperation with c-Myc. This miR-92 effect is, at least in part, mediated by its direct repression of Fbw7, which promotes the proteosomal degradation of c-Myc. Thus, overexpressing miR-92 leads to aberrant c-Myc increase, imposing a strong coupling between excessive proliferation and p53-dependent apoptosis. Interestingly, miR-92 antagonizes the oncogenic miR-19 miRNAs; and such functional interaction coordinates proliferation and apoptosis during c-Myc-induced oncogenesis. This miR-19:miR-92 antagonism is disrupted in B-lymphoma cells that favor a greater increase of miR-19 over miR-92. Altogether, we suggest a new paradigm whereby the unique gene structure of a polycistronic oncomir confers an intricate balance between oncogene and tumor suppressor crosstalk.\n\n## Introduction\n\nMicroRNAs (miRNAs) are a class of small, non-coding RNAs that regulate post-transcriptional gene repression in a variety of developmental and pathological processes (Ambros, 2004; Zamore and Haley, 2005; Bartel, 2009; Kim et al., 2009). Due to their small size and the imperfect nature of target recognition, miRNAs have the capacity to regulate many target mRNAs through translational repression and mRNA degradation, thereby acting as global regulators of gene expression (Lewis et al., 2005; Filipowicz et al., 2008). Unlike mammalian protein-coding genes that follow the one-transcript, one-protein paradigm, many miRNA genes are expressed as polycistronic primary transcripts, generating multiple mature miRNAs under the same transcriptional regulation (Megraw et al., 2007). miRNA polycistrons further expand the gene regulatory capacity, since different miRNA components can confer specific yet overlapping biological effects, and their functional interactions can yield unusual complexity.\n\nPolycistronic miRNAs often exhibit pleiotropic biological functions with unique gene regulatory mechanisms (Megraw et al., 2007). One of the best example is mir-17-92, a potent oncomir (i.e., miRNA oncogene), whose genomic amplification and aberrant overexpression have been observed in many human tumors including Burkitt\u2019s lymphoma, diffuse large B-cell lymphoma (DLBCL), and lung cancer (Lu et al., 2005; Mendell, 2008). mir-17-92 regulates multiple cellular processes during tumor development, including proliferation, survival, angiogenesis, differentiation, and metastasis (He et al., 2007; Uziel et al., 2009; Conkrite et al., 2011; Nittner et al., 2012). As a polycistronic oncomir, mir-17-92 produces a single precursor that yields six individual mature miRNAs (Figure 1A, Figure1\u2014figure supplement 1A) (Tanzer and Stadler, 2004). Based on the seed sequence homology, the six mir-17-92 components are categorized into four miRNA families (Figure 1A, Figure 1\u2014figure supplement 1A): miR-17 (miR-17 and 20), miR-18, miR-19 (miR-19a and 19b), and miR-92a (we will designate miR-92a as miR-92 in the remainder of our paper). Interestingly, miR-92 has a more ancient evolutionary history compared to the other mir-17-92 components (Tanzer and Stadler, 2004). miR-92 is evolutionarily conserved in vertebrates, chordates, and invertebrates, while the remaining mir-17-92 components are only found in vertebrates (Figure 1\u2014figure supplement 1B,C). Conceivably, the distinct mature miRNA sequence of each mir-17-92 component determines the specificity of the target regulation. However, the functional significance of the mir-17-92 polycistronic gene structure remains largely unknown.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig1-v1.jpg)\n\n**Figure 1.:** (A) The gene structure of the mir-17-92 polycistron and its mutated derivatives. Light colored boxes, pre-miRNAs; dark colored boxes, mature miRNAs. Homologous miRNA components are indicated by the same color. (B) Schematic representation of the adoptive transfer protocol using E\u03bc-myc hematopoietic stem and progenitor cells (HSPCs). E\u03bc-myc/+ HSPCs were extracted from E13.5\u2013E15.5 mouse embryos, infected with MSCV retroviral vectors overexpressing mir-17-92 and its derivatives, and finally transplanted into lethally irradiated recipient mice. Lymphoma onset of the adoptive transferred mice was monitored to evaluate the oncogenic collaboration between c-Myc and a specific miRNA. (C) miR-92 deficiency specifically accelerates the oncogenic activity of mir-17-92 in the E\u03bc-myc model. Using the E\u03bc-myc adoptive transfer model, we compared the oncogenic effects between mir-17-92 and mir-17-92\u039492 and observed a significant acceleration of tumor onset in E\u03bc-myc/mir-17-92\u039492 mice (p<0.0001, left). When the oncogenic effects of mir-17-92, mir-17-92\u039492 and mir-17-92Mut92 were compared in the same adoptive transfer model, mir-17-92\u039492 and mir-17-92Mut92 similarly accelerated E\u03bc-myc-induced lymphomagenesis compared to mir-17-92 (p<0.0001 for both comparisons, middle). Deficiency of miR-20 failed to affect the oncogenic cooperation between mir-17-92 and E\u03bc-myc, having minimal effects on tumor onset (right). (D) The mutation of miR-92 has minimal effects on the levels of the remaining mir-17-92 components. E\u03bc-myc B-lymphoma cells were infected with MSCV retrovirus overexpressing mir-17-92, mir-17-92\u039492 and mir-17-92Mut92 at an MOI (multiplicity of infection) of 1. Expression levels of miR-17, 18a, 19a, 20a, 19b and 92 were subsequently determined using Taqman miRNA assays. Error bars indicate standard deviation (n = 3). **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A diagram represents the gene structure of mir-17-92 and its two mammalian homologs. The six mir-17-92 components are classified into four distinct miRNA families based on the seed sequence conservation. (B and C) miR-92 has a more ancient evolutionary history compared to the rest of mir-17-92 components. miR-92 is evolutionarily conserved in Deuterostome, Ecdysozoa and Lophotrochozoa, yet the remaining mir-17-92 components only have vertebrate homologs. (D) The mutation of miR-92 or miR-20 in the mir-17-92 retroviral construct has minimal effects on the expression levels of the remaining mir-17-92 components. 3T3 cells were infected with MSCV retrovirus at an MOI (multiplicity of infection) of 1 to overexpress mir-17-92, mir-17-92\u039492 and mir-17-92Mut92 (left), or overexpress mir-17-92Mut20 (right). Expression levels of miR-17, 18a, 19a, 20a, 19b and 92 were each determined using Taqman miRNA assays. Error bars indicate standard deviation (n = 3).\n\nThe structural analogy to prokaryotic operons has led to the speculation that the co-transcribed mir-17-92 components can collectively contribute to oncogenesis. However, our studies reveal an unexpected functional interaction among mir-17-92 components. In the E\u03bc-myc mouse B-cell lymphoma model, while the intact mir-17-92 acts as an oncogene, its miR-92 component negatively regulates the oncogenic cooperation with c-Myc. This effect, at least in part, results from the ability of miR-92 to yield aberrant c-Myc dosage, which promotes a strong coupling between oncogene stress and p53-dependent apoptosis. Surprisingly, miR-92 functionally antagonizes miR-19, a key oncogenic mir-17-92 component, in the context of c-Myc-induced oncogenesis. During B-cell transformation, this miR-19:miR-92 antagonism is disrupted to favor a greater increase of miR-19 than miR-92. Thus, the polycistronic mir-17-92 employs an antagonistic interaction among its encoded miRNA components to confer an intricate crosstalk between the oncogene and tumor suppressor networks.\n\n## Results\n\nSince mir-17-92 is overexpressed in human Burkitt\u2019s lymphomas (Tagawa et al., 2007), we set out to functionally dissect mir-17-92 components in the E\u03bc-myc model of Burkitt\u2019s lymphoma (Figure 1B). The E\u03bc-myc mice carry a c-myc transgene downstream of the immunoglobulin (Ig) heavy chain enhancer E\u03bc (Langdon, 1986; Adams et al., 1985), which functionally resembles the Ig-MYC translocations that occur frequently in Burkitt\u2019s lymphomas (Tagawa et al., 2007). The resulting B-cell specific, aberrant c-Myc activation promotes excessive proliferation, yet also evokes potent, p53-dependent apoptosis (Schmitt et al., 2002; Hemann et al., 2003). Thus, c-Myc-induced apoptosis enables a self-defense mechanism against malignant transformation, producing B-lymphomas with a late onset (Lowe et al., 2004). In our adoptive transfer model (Olive et al., 2009), E\u03bc-myc/+ hematopoietic stem and progenitor cells (HSPCs) were transplanted into lethally irradiated recipient mice, generating chimeric mice that faithfully recapitulated the late tumor onset of the E\u03bc-myc transgenic mice (Figure 1B).\n\nWhen E\u03bc-myc/+ HSPCs were infected with MSCV (murine stem cell virus) retrovirus to overexpress the intact mir-17-92 oncomir, we observed a considerable acceleration in tumor onset compared to the E\u03bc-myc/MSCV control mice (p<0.01, Figure 1C). Unexpectedly, the oncogenic cooperation between c-Myc and mir-17-92 was significantly stronger when miR-92 was deleted within this oncomir (Figure 1C). The average survival of E\u03bc-myc/17-92\u039492 mice was 66 days, significantly shorter than that of E\u03bc-myc/17-92 mice (112 days, p<0.0001). mir-17-92\u039492 carried a deletion of miR-92 pre-miRNA and its flanking sequences, which might alter the expression of the remaining mir-17-92 components (Figure 1D, Figure 1\u2014figure supplement 1D). We then engineered a 12-nucleotide miR-92 seed mutation within mir-17-92 to abolish the functional miR-92 with minimal disruption to the overall gene structure. The resulting mir-17-92Mut92 phenocopied mir-17-92\u039492 in vivo (Figure 1C), significantly enhancing the oncogenic cooperation with c-Myc without altering the level of any remaining mir-17-92 components (Figure 1D, Figure 1\u2014figure supplement 1D). This unexpected effect was specifically attributable to miR-92. Mutations of miR-20 or miR-17 failed to affect oncogenesis in the E\u03bc-myc model (Figure 1C, Figure 1\u2014figure supplement 1D and data not shown), and mutations of both miR-19 miRNAs nearly abolished this oncogenic cooperation (Olive et al., 2009). This finding suggests that, although mir-17-92 acted as a potent oncogene as a whole, its miR-92 component confers an internal negative regulation on its oncogenic cooperation with c-Myc. This effect of miR-92 clearly contrasts with that of miR-19, a key oncogenic mir-17-92 component that promotes c-Myc-induced lymphomagenesis by repressing apoptosis (Mu et al., 2009; Olive et al., 2009; Mavrakis et al., 2010).\n\nIn the E\u03bc-myc model, a strong oncogenic lesion often leads to the B-cell transformation at an earlier developmental stage (Hemann et al., 2003). The greater oncogenic activity of mir-17-92Mut92 in comparison with mir-17-92 was consistent with mir-17-92Mut92 preferentially transforming IgM negative progenitor B-cells, and mir-17-92 frequently transforming IgM positive B-cells (Figure 2A; Table 1). In comparison to E\u03bc-myc/17-92 mice, both E\u03bc-myc/17-92\u039492 and E\u03bc-myc/17-92Mut92 mice developed more aggressive B-lymphomas, characterized by massive lymph node enlargement, splenic hyperplasia, leukemia, and widespread dissemination into visceral organs outside of the lymphoid compartment (Figure 2B, data not shown).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig2-v1.jpg)\n\n**Figure 2.:** (A) The percentage of IgM positive and IgM negative B-lymphomas was calculated for each genotype (E\u03bc-myc/MSCV, n = 10; E\u03bc-myc/17-92, n = 9; E\u03bc-myc/17-92\u039492, n = 10; E\u03bc-myc/17-92Mut92, n = 10). (B) The E\u03bc-myc/17-92Mut92 and E\u03bc-myc/17-92\u039492 mice developed high grade B-lymphomas that were frequently disseminated into the liver. When compared to E\u03bc-myc/MSCV and E\u03bc-myc/17-92 mice, E\u03bc-myc/17-92Mut92 and E\u03bc-myc/17-92\u039492 lymphomas gave rise to more liver dissemination, as indicated by H&E and B220 staining. (C) E\u03bc-myc/17-92Mut92 and E\u03bc-myc/17-92\u039492 lymphomas exhibited a decreased apoptosis compared to E\u03bc-myc/MSCV or E\u03bc-myc/17-92 lymphomas. Representative lymphomas were stained for H&E, cleaved caspase-3 and PCNA. Arrow, \u2018starry sky\u2019 feature of apoptotic lymphoma cells; arrowhead, apoptotic cells with positive staining for cleaved caspase-3; scale bar, 50 \u03bcm. (D and E) Apoptosis was quantitatively measured in representative lymphomas of each genotype using the \u2018starry sky\u2019 features (D) and cleaved caspase-3 staining (E). *p<0.05, **p<0.01, ***p<0.001.\n\n**Table 1.**\n Flow cytometric immunophenotyping of E\u03bc-myc lymphomas with enforced expression of different mir-17-92 derivatives\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype</th>\n      <th>n</th>\n      <th>Percentage (%)</th>\n      <th>Immunotype</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">E\u03bc-myc/MSCV</td>\n      <td>4</td>\n      <td>40</td>\n      <td>B220+, IgM\u2212, CD19+, CD4\u2212, CD8\u2212</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>60</td>\n      <td>B220+, IgM+, CD19+, CD4\u2212, CD8\u2212 *</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">E\u03bc-myc/17\u201392</td>\n      <td>4</td>\n      <td>40</td>\n      <td>B220+, IgM\u2212, CD19+, CD4\u2212, CD8\u2212</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>50</td>\n      <td>B220+, IgM+, CD19+, CD4\u2212, CD8\u2212 \u2020</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>10</td>\n      <td>B220\u2212, IgM\u2212, CD19\u2212, CD4+, CD8+</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">E\u03bc-myc/17\u201392Mut92</td>\n      <td>7</td>\n      <td>70</td>\n      <td>B220+, IgM\u2212, CD19+, CD4\u2212, CD8\u2212</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>30</td>\n      <td>B220+, IgM+, CD19+, CD4\u2212, CD8\u2212 \u2021</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">E\u03bc-myc/1792\u039492</td>\n      <td>8</td>\n      <td>80</td>\n      <td>B220+, IgM\u2212, CD19+, CD4\u2212, CD8\u2212</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>20</td>\n      <td>B220+, IgM+, CD19+, CD4\u2212, CD8\u2212 \u00a7</td>\n    </tr>\n  </tbody>\n</table>\n\n_*1 out of 6 samples predominantly contains IgM+ cells, with a small percentage of IgM\u2212 cells.\u20203 out of 5 samples predominantly contain IgM+ cells, with a small percentage of IgM\u2212 cells.\u20211 out of 3 samples predominantly contains IgM+ cells, with a small percentage of IgM\u2212 cells.\u00a71 out of 2 samples predominantly contains IgM+ cells, with a small percentage of IgM\u2212 cells._\n\nDuring Myc-induced tumorigenesis, aberrant c-Myc dosage yields simultaneous induction of proliferation and apoptosis, imposing a unique selective pressure for pro-survival lesions (Evan and Vousden, 2001). Thus, we compared the extent of Myc-induced apoptosis in the E\u03bc-myc/17-92, E\u03bc-myc/17-92\u039492, E\u03bc-myc/17-92Mut92, and control E\u03bc-myc/MSCV lymphomas. The control E\u03bc-myc/MSCV lymphomas invariably exhibited a high proliferation index accompanied by extensive cell death, as evidenced by the widespread \u2018starry sky\u2019 pathology (Figure 2C,D) and cleaved caspase 3 staining (Figure 2C,E). The potent oncogenic activity of mir-17-92\u039492 and mir-17-92Mut92 was consistent with the strong reduction of apoptosis in the lymph node tumors. In comparison, the intact miR-92 significantly attenuated the repression of c-Myc-induced apoptosis by mir-17-92 in vivo (Figure 2C\u2013E).\n\nWe next investigated the effect of miR-92 alone in regulating c-Myc-induced apoptosis. In the E\u03bc-myc model, miR-92 overexpression significantly enhanced c-Myc-induced apoptosis in vivo (Figure 3A,B, Figure 3\u2014figure supplement 1A), consistent with a rapid depletion of miR-92-infected cells in premalignant E\u03bc-myc B-cells (Figure 3\u2014figure supplement 1B). Similar miR-92 effects on c-Myc-induced apoptosis were observed in vitro. The R26MER/MER mouse embryonic fibroblasts (MEFs) carry a switchable variant of Myc, MycERT2, downstream of the constitutive Rosa26 promoter, which allows acute activation of the MycER transgene by 4-OHT (4-Hydroxytamoxifen) induced nuclear translocation (Murphy et al., 2008). The R26MER/MER MEFs recapitulate c-Myc-induced apoptosis in vitro, as activated MycERT2 induces p53-dependent apoptosis in response to serum starvation (Murphy et al., 2008). Enforced miR-92 expression in R26MER/MER MEFs invariably enhanced Myc-induced apoptosis (Figure 3C, Figure 3\u2014figure supplement 1C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig3-v1.jpg)\n\n**Figure 3.:** (A) The schematic representation of the adoptive transfer model to evaluate the miR-92 effects on the E\u03bc-myc premalignant B-cells in vivo. (B) miR-92 overexpression enhances the apoptotic response in the premalignant E\u03bc-myc B-cells in vivo. Using the E\u03bc-myc adoptive transfer model, we generated well-controlled E\u03bc-myc/MSCV and E\u03bc-myc/92 mice reconstituted from donor matched E\u03bc-myc HSPCs. Premalignant E\u03bc-myc splenic B-cells were isolated from the E\u03bc-myc/MSCV and E\u03bc-myc/92 mice 6 weeks after reconstitution. The in vivo apoptosis was measured by the level of caspase activation using Red-VAD-FMK, a fluorescently labeled caspase inhibitor that specifically bound to cleaved caspases. The percentage of E\u03bc-myc B-cells positive for cleaved caspases was shown for four independent experiments. (C) Enforced miR-92 expression in R26MER/MER MEFs significantly enhanced c-Myc-induced apoptosis. miR-92 overexpressing and the control R26MER/MER MEFs were serum starved, and the MycERT2 transgene was activated by 4-OHT treatment. The level of apoptosis of each MEF was measured using Annexin V staining before (left) and after (middle) 4-OHT treatment and serum starvation. Quantification of c-Myc-induced apoptosis was performed in three independent MEF lines that overexpressed MSCV or miR-92 (right panel, error bars represent SEM). (D) Enforced miR-92 expression in R26MER/MER MEFs significantly enhanced c-Myc-induced proliferation. Proliferative effects of miR-92 was measured by BrdU incorporation in MycERT2 activated R26MER/MER MEFs. miR-92 cooperated with c-Myc to promote BrdU incorporation in both 10% (left) and 0.2% (middle) serum culture conditions. Quantification of BrdU incorporation was performed in two independent experiments (right). (E) miR-92 is a potent mir-17-92 component to promote primary B-cell proliferation. The proliferative effects of all mir-17-92 miRNAs were measured individually in primary B-cells using BrdU incorporation. (F) The quantification of BrdU incorporation in experiments described in (E) was performed in four independent experiments. Error bars represent standard deviation, *p<0.05, **p<0.01.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) miR-92 enhances the apoptotic response in the premalignant E\u03bc-myc B-cells in vivo. Using the E\u03bc-myc adoptive transfer model, we generated well-controlled E\u03bc-myc/MSCV and E\u03bc-myc/92 mice that were reconstituted from the same E\u03bc-myc HSPCs. The in vivo apoptosis was measured by the level of caspase activation 6 weeks after the transplantation. The percentage of E\u03bc-myc B-cells positive for cleaved caspases was shown for four independent experiments. (B) miR-92 infected, premalignant E\u03bc-myc B-cells is significantly depleted in the E\u03bc-myc adoptive transfer model. We generated well-controlled E\u03bc-myc/MSCV and E\u03bc-myc/92 mice reconstituted from the same E\u03bc-myc HSPCs. We measured the percentage of retrovirally infected cells (GFP+) before reconstitution (left), and demonstrated similar infection efficiency in E\u03bc-myc/MSCV and E\u03bc-myc/92 mice. At day 33 post adoptive transfer, we isolated white blood cells from the peripheral blood of these mice, and measured the percentage of retrovirally infected, E\u03bc-myc B-cells (B-220-positive; GFP-positive cells) using FACS. Error bars indicate standard deviation, n = 4, **p<0.01. (C) Enforced miR-92 expression in R26MER/MER MEFs significantly enhanced c-Myc-induced apoptosis. The miR-92 effect was most evident when the infected R26MER/MER MEFs were serum starved and treated with 4-OHT. (D) miR-92 is required for the potent proliferative effect of mir-17-92 in primary B-cells. miR-92 deficient mir-17-92 miRNA polycistrons exhibited a reduced BrdU incorporation in primary B-cell culture in vitro.\n\nIn addition to promoting c-Myc-induced apoptosis, miR-92 unexpectedly enhanced c-Myc-induced cell proliferation. A significant increase of BrdU incorporation was observed in R26MER/MER MEFs overexpressing miR-92, both under normal culture conditions and, more evidently, under serum starvation (Figure 3D). The same proliferative effect of miR-92 was also observed in primary B-cells. Comparison of the proliferative effect of each mir-17-92 component in bone marrow derived primary B-cells revealed that the miR-92 component yielded one of the strongest effects (Figure 3E,F). In addition, miR-92 deficiency significantly compromised the ability of mir-17-92 to promote cell cycle progression in B-cells (Figure 3\u2014figure supplement 1D). Interestingly, strong proliferative effects have been reported for nearly all mir-17-92 components, yet the exact cell type and biological context can select specific components as the predominant drivers for cell proliferation. Taken together, our data suggest that miR-92 is a unique mir-17-92 component that functionally couples c-Myc-induced cell proliferation and c-Myc-induced apoptosis in the B-cell compartment.\n\nTo investigate the molecular mechanism underlying miR-92 functions, we performed microarray analyses comparing gene expression profiles of R26MER/MER MEFs overexpressing miR-92 or the control MSCV vector. These MEFs were serum starved and 4-OHT treated to trigger strong Myc-induced apoptosis. miR-92-upregulated genes were significantly enriched for the cell cycle pathway, including ccnd1, ccnb1, ccnb2, cdc25b, cdc25c, and cdk4 (Figure 4A,B), consistent with the ability of miR-92 to promote Myc-induced cell proliferation. Genes upregulated by miR-92 were also enriched for the p53 pathway, including the classic p53 target mdm2, as well as the pro-apoptotic p53 targets\u2014noxa, bax, puma, perp, and bid (Figure 4A,B, Figure 4\u2014figure supplement 1A). Since aberrant c-Myc activation triggered a p53-dependent apoptotic response (Lowe et al., 2004), our observation is consistent with miR-92 further enhancing p53 activation downstream of c-Myc. Interestingly, p21, a canonical p53 target, was not induced by miR-92 in the MycERT2 activated R26MER/MER MEFs (Figure 4\u2014figure supplement 1A). It is likely that the transcriptional repression of p21 by c-Myc renders p21 irresponsive to p53 activation under this biological context (Heasley et al., 2002). Using real-time PCR, we validated the ability of miR-92 to induce cell cycle genes and activate p53 targets in both R26MER/MER MEFs, as well as primary B-cells (Figure 4C, Figure 4\u2014figure supplement 1A,B). Hence, the molecular signature imposed by miR-92 overexpression is consistent with its functional readout.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig4-v1.jpg)\n\n**Figure 4.:** (A) The genes upregulated by miR-92 were enriched for the cell cycle pathway and the p53 pathway. Microarray analyses compared gene expression profiles of serum starved and 4-OHT treated R26MER/MER MEFs overexpressing either miR-92 or a control MSCV vector (n = 3). The differentially expressed genes were defined as those with at least 1.5-fold expression level change using SAM (Significance analysis of microarrays, false discovery rate <1%). Pathway analyses were performed on upregulated and downregulated genes using the KEGG database. (B) The heatmaps of the miR-92 upregulated genes enriched for the cell cycle and p53 pathways. (C) Components of the cell cycle and p53 pathways were upregulated upon miR-92 overexpression in both MEFs (left) and primary B-cells (right). The quantitation of gene expression was performed using real time PCR. (D) miR-92 overexpression induces the accumulation of Arf and p53 proteins in MEFs and primary B-cells from bone marrow. Western analyses were performed on the R26MER/MER MEFs (left) and primary B-cells (right) that overexpressed miR-92 or a control MSCV vector in two independent experiments. The infected R26MER/MER MEFs were assayed at 6 hr after serum starvation and 4-OHT treatment; the infected primary B-cells were collected 72 hr post infection. (E) The apoptotic effect of miR-92 requires an intact p53 pathway. We infected R26MER/MER MEFs with two MSCV retrovirus, MSCV-p53shRNA and MSCV-92, to obtain doubly infected cells. Knocking down p53 in R26MER/MER MEFs abolished the ability of miR-92 to enhance c-Myc-induced apoptosis, as measured by Annexin V staining (two left panels). The percentage of apoptotic MEFs of each experimental condition was quantitatively measured (right). (F) The induction of the p53 pathway components by miR-92 is dependent on an intact p53. Knocking down p53 in R26MER/MER MEFs abolished the ability of miR-92 to induce pro-apoptotic p53 targets and other canonical p53 targets, including noxa, perp and mdm2. Error bars represent standard deviation, *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) miR-92 overexpression in R26MER/MER MEFs induced several p53 target genes in addition to those described in Figure 3C, including mdm2, Gtse1 and Bid, but not p21. (B) Induction of p53 targets by miR-92 in R26MER/MER MEFs with and without MycERT2 activation. (C) miR-92 overexpression alone enhanced Arf and p53 protein level in R26MER/MER MEFs with and without 4-OHT treatment. (D) miR-92 overexpression did not affect p53 mRNA levels in either primary B-cells or in R26MER/MER MEFs. Error bars indicate standard deviation, n = 3, *p<0.05; **p<0.01.\n\nThe activation of the p53 pathway by c-Myc is essential for the induction of the apoptotic response in the E\u03bc-myc model (Schmitt et al., 2002). A major mechanism that governs Myc-induced p53 activation is the transcriptional induction of the gene encoding Arf, which inhibits Mdm2-mediated p53 ubiquitination and degradation (Lowe et al., 2004; Campaner and Amati, 2012). The ability of miR-92 to enhance c-Myc-induced apoptosis and to increase the expression of p53 targets raised the possibility that miR-92 overexpression activates p53 possibly through elevated Arf. In both R26MER/MER MEFs and wild-type primary B-cells, miR-92 overexpression alone caused significant accumulation of Arf mRNA and protein (Figure 4C,D, Figure 4\u2014figure supplement 1C), consistent with the rapid stabilization of the p53 protein (Figure 4D, Figure 4\u2014figure supplement 1C) without alteration of p53 mRNA (Figure 4\u2014figure supplement 1D). Notably, the ability of miR-92 to induce p53 activation occurred not only in 4-OHT treated R26MER/MER MEFs with MycERT2 activation, but also in untreated R26MER/MER MEFs with normal c-Myc level. This was clearly demonstrated by the elevation of p53 protein level, as well as the increased p53 target expression (Figure 4\u2014figure supplement 1B,C).\n\nThe induction of p53 by miR-92 prompted us to investigate the functional importance of p53 in miR-92-induced apoptotic response. Knockdown of p53 in R26MER/MER MEFs not only led to a suppression of c-Myc-induced apoptosis, but also completely abolished the effect of miR-92 to enhance c-Myc-induced apoptosis (Figure 4E). These findings suggested that an intact p53 pathway is required for the apoptotic effect of miR-92. Consistently, the miR-92 induction of the pro-apoptotic genes, including noxa, perp, and mdm2, also was mediated by the intact p53 (Figure 4F). Thus, aberrant c-Myc activation triggers an apoptotic response through p53 activation; and co-expression of miR-92 with c-Myc leads to an even stronger p53 activation, and subsequently apoptotic response.\n\nOur findings suggest parallels between c-myc and miR-92: both are potent oncogenes that promote excessive cell proliferation coupled with p53-dependent apoptosis, and both are capable to induce expression of cell cycle genes (ccnb1, ccnd1, cdk4, and cdc25) (Lowe et al., 2004; Campaner and Amati, 2012) and p53 pathway components (Arf, puma, noxa, perp, and mdm2) (Lowe et al., 2004; Campaner and Amati, 2012). The functional analogy between c-Myc and miR-92, as well as the molecular overlap between their downstream pathways, led us to investigate the effect of miR-92 on c-Myc. Intriguingly, miR-92 expression significantly enhanced c-Myc protein level both in MEFs and in primary B-cells (Figure 5A), without affecting the c-myc mRNA level (Figure 5\u2014figure supplement 1A, data not shown). Consistent with the stabilization of endogenous c-Myc, miR-92 overexpression in R26MER/MER MEFs stabilized the MycERT2 protein (Figure 5B). The dosage of c-Myc protein is crucial for its biological readout (Murphy et al., 2008). While c-Myc dosage determines the extent of cell cycle gene induction and cell proliferation, it also regulates the degree of p53 activation and subsequent apoptosis (Murphy et al., 2008) (Figure 5\u2014figure supplement 1B). Thus, the ability of miR-92 to induce aberrant c-Myc accumulation likely constitutes the molecular basis for its ability to promote both cell proliferation and p53-dependent apoptosis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig5-v1.jpg)\n\n**Figure 5.:** (A) miR-92 enhances the accumulation of c-Myc protein in synchronized R26MER/MER MEFs (upper), as well as primary B-cells (lower). The miR-92 overexpression and the control R26MER/MER MEFs were synchronized by serum starvation and were collected 12 hr after being released into serum culture conditions to determine the c-Myc protein level. This synchronization approach in R26MER/MER MEFs has provided us with the most consistent measurement for c-Myc protein level, because it is regulated in a cell-cycle-dependent manner. (B) miR-92 overexpression decreases the turnover of c-Myc protein. Serum-synchronized R26MER/MER MEFs that overexpress either miR-92 or the control MSCV vector were released into the serum for 6 hr, treated with cycloheximide, collected at the indicated time points, then analyzed by western blot to determine the levels of MycER and the endogenous c-Myc protein. (C) Schematic representation of the two miR-92 binding sites in the murine fbw7 3\u2032UTR. Additionally, a luciferase reporter and a FLAG tagged fbw7 ORF were each placed upstream of a wild-type fbw7 3\u2032UTR, or a mutated fbw7 3\u2032UTR that abolished the predicted miR-92 binding. (D) The expression of Luc-fbw7-3\u2032UTR was specifically repressed by miR-92 in Dicer\u2212/\u2212 HCT116, while mutations of the two putative miR-92 binding sites within the fbw7-3\u2032UTR (Luc-fbw7-3\u2032UTRMut) abolished this repression. (E) The endogenous fbw7 gene was downregulated by miR-92 post-transcriptionally. Both the endogenous fbw7 mRNA (left) and the endogenous Fbw7 protein (right) were repressed upon miR-92 overexpression in R26MER/MER MEFs. Due to the lack of a proper antibody to detect endogenous Fbw7 in regular western analysis, we demonstrated the downregulation of endogenous Fbw7 by miR-92 using immunoprecipitation followed by immunoblotting with a polyclonal anti-Fbw7 antibody. (F) miR-92 enhances the accumulation of Cyclin E protein. Overexpression of miR-92 increased the accumulation of Cyclin E protein, which was further confirmed by the increased Cyclin E-dependent kinase activity. (G) The knockdown of fbw7 resembles the effect of miR-92 to enhance c-Myc-induced apoptosis. Knocking down fbw7 in R26MER/MER MEFs enhanced c-Myc-induced apoptosis, partially recapitulating the phenotype caused by miR-92 overexpression. Apoptosis was quantitatively measured by Annexin V staining in two independent lines of R26MER/MER MEFs upon serum starvation and 4-OHT treatment. (H) Overexpression of fbw7 abolished the apoptotic effects of miR-92 in R26MER/MER MEFs. R26MER/MER MEFs were doubly infected by pRetro-fbw7\u03b1\u03943\u2032UTR-IRES-dsRed and MSCV-miR-92. The c-Myc-induced apoptosis was quantitatively measured by Annexin V staining in doubly infected R26MER/MER MEFs upon serum starvation and 4-OHT treatment. Error bars represent standard deviation). *p<0.05; **p<0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) miR-92 overexpression did not affect c-myc mRNA levels in two independent primary B-cells. (B) The c-Myc dosage determines the degree of c-Myc-induced apoptosis in R26MER/MER MEFs. When R26MER/MER MEFs were compared with R26MER/+ MEFs, a twofold increase in the MycERT2 dosage significantly enhanced the c-Myc-induced apoptotic response upon serum starvation. This effect was observed in R26MER/MER MEFs either with or without miR-92 overexpression. (C) Negative regulators of c-Myc that contain a putative miR-92 binding site(s) were screened for miR-92-mediated repression in R26MER/MER MEFs that overexpress miR-92 or a control MSCV vector. Only fbw7 exhibited a miR-92\u2013mediated repression. (Error bars indicate standard deviation, n = 3, **p<0.01). (D) The expression of FLAG-fbw7-3\u2032UTR was significantly repressed by miR-92 in Dicer\u2212/\u2212 HCT116 cells. (E) fbw7 is downregulated in E\u03bc-myc lymphomas that overexpress miR-92. A panel of E\u03bc-myc/MSCV (n = 9), E\u03bc-myc/17-92 (n = 7), E\u03bc-myc/17-92\u039492 (n = 6) and E\u03bc-myc/17-92Mut92 (n = 5) lymphomas were compared for their expression level of endogenous fbw7. E\u03bc-myc/17\u201392 lymphomas exhibited a specific decrease of fbw7 compared to the other genotypes, possibly due to the miR-92 overexpression. (F) The c-MYC upregulation by miR-92 requires an intact fbw7. The effect of miR-92 to upregulate c-MYC protein level was observed in wild-type Hct116 cells, but largely absent in FBW7\u2212/\u2212 Hct116 cells. (G) fbw7 knockdown by RNAi in R26MER/MER MEFs recapitulated the c-Myc upregulation by miR-92. (H) fbw7 expression level in R26MER/MER MEFs infected with pRetroX-fbw7-IRES-DsRedExpress. Error bars indicate standard deviation, *p<0.05; **p<0.01.\n\nBased on our findings, we speculated that miR-92 targets could include negative regulators of c-Myc protein accumulation. Therefore, we searched genes known to negatively regulate c-myc for the presence of putative miR-92 binding sites. Using the Targetscan and RNA22 algorithms (Lewis et al., 2005; Miranda et al., 2006; Bartel, 2009), we identified eight candidate miR-92 targets, each of which contained one or more predicted miR-92 binding sites in the 3\u2032 untranslated region (3\u2032UTR). Real-time PCR analysis of these candidate genes confirmed fbw7 (F-box and WD repeat domain-containing 7) as a likely target of miR-92 (Figure 5C, Figure 5\u2014figure supplement 1C). fbw7, which contains two miR-92 target sites within its 3\u2032UTR (Figure 5C), is the substrate recognition component of an SCF-type E3 ubiquitin ligase that mediates the degradation of several proto-oncoproteins, including Myc, Cyclin E, c-Jun, and Notch (Welcker and Clurman, 2008; Crusio et al., 2010; Wang et al., 2012). A luciferase reporter or a FLAG-tagged fbw7-encoding ORF (open reading frame), when fused to the wild-type fbw7 3\u2032 UTR, were both significantly repressed in a miR-92 dependent manner (Figure 5D, Figure 5\u2014figure supplement 1D). Yet enforced miR-92 expression failed to repress the luciferase reporter that contained an fbw7 3\u2032UTR with two mutated miR-92 binding sites (Figure 5D), suggesting that miR-92 binding to fbw7 3\u2032UTR is required for this repression. Furthermore, miR-92 effectively repressed endogenous Fbw7 protein level, as demonstrated by the decreased fbw7 mRNA level and Fbw7 immunoprecipitation (Figure 5E). Consistent with fbw7 as an important target for miR-92, enforced miR-92 expression upregulated multiple Fbw7 substrates at their protein levels, including c-Myc and cyclinE (Figure 5F). Observations from our in vivo experiments also supported this post-transcriptional regulation of Fbw7 by miR-92, as we observed an inverse correlation between the level of miR-92 and fbw7 when comparing E\u03bc-myc/17-92\u039492 and E\u03bc-myc/17-92 lymphoma cells (Figure 5\u2014figure supplement 1E).\n\nfbw7 has previously been postulated as a potential miR-92 target based on the presence of miR-92 target sites (Mavrakis et al., 2011), yet it remains unclear how fbw7 mediated the pro-apoptotic effects of miR-92, given its well-characterized functions as a tumor suppressor. Recent findings indicate that the acute inactivation of tumor suppressor Fbw7 imposes a strong oncogenic stress to induce p53-dependent apoptosis, conferring a selective advantage to cells with deficient p53 function (Minella et al., 2007; Onoyama et al., 2007; Matsuoka et al., 2008; Grim et al., 2012). This p53-dependent apoptosis is, at least in part, due to an aberrant increase of c-Myc dosage (Onoyama et al., 2007; Matsuoka et al., 2008). These findings suggested that a major mechanism through which miR-92 enhanced the c-Myc protein level, and subsequently, c-Myc-induced apoptosis, could be through its direct repression of Fbw7. In support of this hypothesis, miR-92 overexpression significantly increased the c-Myc protein level in wild-type Hct116 cells, but not in FBW7\u2212/\u2212 Hct116 cells (Figure 5\u2014figure supplement 1F), suggesting FBW7 was essential for miR-92 to induce c-MYC increase. Functionally, acute fbw7 knockdown in R26MER/MER MEFs partially phenocopied the effect of miR-92 to enhance c-Myc-induced apoptosis (Figure 5G, Figure 5\u2014figure supplement 1G); while overexpression of an fbw7\u03b1 open reading frame (ORF), albeit above its physiological level, completely abolished this apoptotic effect of miR-92 (Figure 5H, Figure 5\u2014figure supplement 1H). Nevertheless, it is still likely that additional mechanisms downstream of miR-92 also promote its apoptotic effects, because fbw7 knockdown largely recapitulated the extent of c-Myc upregulation by miR-92 (Figure 5\u2014figure supplement 1G), yet only partially phenocopied its pro-apoptotic effects (Figure 5G). In addition, overexpression of fbw7 above its physiological level might amplify the extent of functional interactions between fbw7 and miR-92 in regulating apoptosis. Despite these caveats, our results strongly argue that the miR-92-Fbw7 axis constitutes a major mechanism underlying the pro-apoptotic effects of miR-92.\n\nDownregulation of Fbw7 by miR-92 significantly enhanced the protein level of c-Myc in R26MER/MER MEFs and in primary B-cells (Figure 5A). It is conceivable that the ability of miR-92 to repress Fbw7 in vivo could similarly enhance the c-Myc accumulation in the E\u03bc-myc/92 premalignant B-cells, promoting rapid cell proliferation and a p53-dependent apoptotic response. Unfortunately, due to technical limitations, we were not able to demonstrate an increased c-Myc protein level as a result of miR-92 overexpression in the E\u03bc-myc premalignant B-cells. There was a significant depletion of the E\u03bc-myc/92 premalignant B-cells due to excessive apoptosis (Figure 3\u2014figure supplement 1B), making it difficult to collect enough cells to analyze the c-Myc protein level by western analyses. Similarly, we could not obtain enough cells to compare the protein level of c-Myc in the premalignant B-cells from the E\u03bc-myc/17-92, E\u03bc-myc/17-92\u039492, and Eu-myc/MSCV animals. Nevertheless, our functional studies in cell culture, combined with the inverse expression correlation between fbw7 and miR-92 in vivo, strongly argue the importance of the miR-92-Fbw7-Myc axis to promote the pro-apoptotic effects of miR-92.\n\nIn the context of the c-Myc cooperation, mir-17-92 encodes miRNA components with opposing biological functions. While miR-19 miRNAs repress c-Myc-induced apoptosis to promote E\u03bc-myc lymphomagenesis (Mu et al., 2009; Olive et al., 2009), miR-92 enhances c-Myc-induced apoptosis to attenuate the tumorigenic effects. Consistent with the opposing effects of miR-19 and miR-92, co-expression of these two miRNAs as a dicistron attenuated the apoptotic effect of miR-92 in premalignant E\u03bc-myc B-cells in vivo (Figure 6A,B, Figure 6\u2014figure supplement 1A). A similar antagonistic interaction was also observed in R26MER/MER MEFs; and introducing a miR-19b mutation within mir-19b-92 dicistron abolished this interaction (Figure 6C). Since miR-19 represses pten to promote the PI3K/AKT pathway, the activation of AKT signaling would lead to increased phosphorylation of Mdm2, thus destabilizing p53 to dampen the apoptotic response induced by miR-92 (Gottlieb et al., 2002; Ogawara et al., 2002). Consistent with this hypothesis, we observed a decreased p53 induction and an unaltered c-Myc level when miR-92 was co-expressed with miR-19 (Figure 6D, Figure 6\u2014figure supplement 1B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig6-v1.jpg)\n\n**Figure 6.:** (A) The schematic representation of the E\u03bc-myc adoptive transfer model to evaluate the functional interaction between miR-92 and miR-19 in vivo. Light colored boxes, pre-miRNAs; dark colored boxes, mature miRNAs. (B) miR-19 antagonizes the apoptotic effects of miR-92 in vivo. miR-92 overexpression in the E\u03bc-myc adoptive transfer model enhanced apoptosis in premalignant E\u03bc-myc splenic B-cells, while the mir-19b-92 dicistron expression abolished this apoptotic effect (left three panels). A quantitative analysis of apoptosis by FACS was shown for three independent, well-controlled experiments (right). (C) miR-19b dampens the miR-92-induced apoptosis in MycERT2 activated R26MER/MER MEFs. R26MER/MER MEFs were infected by miR-92, mir-19b-92, mir-19b-92Mut19b and the MSCV control vector, and were subsequently serum starved and treated with 4-OHT to activate MycERT2. Apoptosis in these samples was measured quantitatively using Annexin V staining (left four panels). The extent of apoptosis induced by MSCV, miR-92, mir-19b-92, mir-19b-92Mut19b was normalized to that of MSCV infected R26MER/MER MEFs and then averaged from four independent experiments (right). (D) miR-19b dampens the miR-92-induced p53 activation. R26MER/MER MEFs that overexpress the indicated constructs (miR-92, mir-19b-92Mut19b and mir-19b-92) were collected 48 hr after infection and then analyzed by western blot to determine the level of p53 protein. (E) miR-92 and miR-19 exhibit antagonistic effects to regulate hydroxyurea (HU)-induced cell death in Xenopus embryos. Representative images of HU-treated Xenopus embryos that were co-injected with human Ago2 and the indicated miRNA mimics (left). Co-injection of miR-92 dampened the cell survival effects of miR-19 on HU-induced apoptosis (right, n = 3, with >20 embryos in each group). (F) miR-92 exhibits a specific antagonistic interaction with miR-19. Injection of miR-19a or miR-19b rescued HU-induced apoptosis in Xenopus embryos. Co-injection of miR-92, but not a mutated miR-92, or other mir-17-92 components, dampened the cell survival effect of miR-19 (n = 3, with >20 embryos in each group). Error bars represent standard deviation, *p<0.05; **p<0.01.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) miR-19 antagonizes the apoptotic effects of miR-92 in vivo. miR-92 overexpression enhanced apoptosis in premalignant E\u03bc-myc bone marrow B-cells in vivo, while co-expression of miR-19 and miR-92 as a dicistron (mir-19b-92) abolished this apoptotic effect (left three panels). A quantitative analysis of apoptosis by FACS was shown for three independent experiments (right). (B) miR-19 has no effects on the level of c-Myc protein. While miR-92 overexpression significantly enhanced the level of c-Myc in R26MER/MER MEFs, co-expression of miR-19b and miR-92 did not reverse the increase in c-Myc expression. In addition, miR-19b expression alone did not impact the dosage of c-Myc protein. (C) Xenopus fbw7 contains one predicted target site for miR-92. This predicted miR-92 binding site is conserved between Xenopus and mouse.\n\nThis miR-19:miR-92 antagonism appears to be conserved evolutionarily. In Xenopus laevis, miR-19 and miR-92 have identical sequence to their mammalian orthologs (Figure 1\u2014figure supplement 1B). Based on Targetscan and RNA22 miRNA target prediction algorisms (Lewis et al., 2003, 2005; Miranda et al., 2006; Grimson et al., 2007), their target specificity is also conserved for key miRNA targets, although the exact binding sites may or may not be conserved (Olive et al., 2009) (Figure 6\u2014figure supplement 1C). In addition, the biological functions of miR-19 and miR-92 exhibit evolutionary conservation between Xenopus laevis and mammals. Individual injection of miR-19 promoted cell survival of hydroxyurea-treated Xenopus embryos, while co-injection of miR-19a and miR-92 significantly attenuated this pro-survival effect (Figure 6E). This functional antagonism was specific for miR-92 and miR-19, since co-injection of other mir-17-92 components or a mutated miR-92 did not yield any functional interactions in combination with miR-19 (Figure 6F).\n\nGiven the opposing biological effects of miR-19 and miR-92 during c-Myc-induced lymphoma development, differential regulation of these two miRNA families could determine the oncogenic activity of mir-17-92. Under normal physiological conditions, this miR-19:miR-92 antagonism could attenuate the detrimental oncogenic signaling by inducing apoptosis in cells with inappropriate mir-17-92 induction. During malignant transformation, and particularly during c-Myc-induced oncogenesis, this miR-19:miR-92 antagonism could be disrupted to favor cell survival. Using real time PCR analyses, we compared the relative abundance of miR-19a, miR-19b, and miR-92 in normal splenic B-cells, premalignant E\u03bc-myc B-cells, and E\u03bc-myc lymphomas (Figure 7A). Comparing to normal splenic B-cells, the levels of all three mature miRNA species were elevated in both premalignant and malignant E\u03bc-myc B-cells, possibly due to transcriptional activation of mir-17-92 by c-Myc (Donnell et al., 2005). However, the miR-19 to miR-92 ratios significantly increased during c-Myc-induced lymphomagenesis (Figure 7B). In other words, when normalized to the respective miRNA levels in normal splenic B-cells, mature miR-19 (including miR-19a and miR-19b) exhibited a greater increase in premalignant and malignant E\u03bc-myc B-cells than mature miR-92 (Figure 7A\u2013C). This differential increase was most evident in premalignant E\u03bc-myc B-cells; the fully transformed E\u03bc-myc B-lymphoma cells exhibited a lesser difference (Figure 7A,B). This observation is consistent with premalignant E\u03bc-myc B-cells having an intact p53-dependent apoptotic response, thus a stronger selective pressure for a greater miR-19:miR-92 ratio. In comparison, most E\u03bc-myc B-lymphomas have a defective p53 response, hence a less strong selective pressure to maintain a high miR-19:miR-92 ratio. We also validated this observation using northern analysis. Comparing normal splenic B-cells and multiple E\u03bc-myc lymphoma cells, the levels of the mature miR-19a, miR-19b and miR-92 were all elevated in transformed B-cells; however, the degree of increase for miR-19a and miR-19b was significantly higher than that of miR-92 (Figure 7C). This differential increase of miR-19 and miR-92 was also observed in human Burkitt\u2019s lymphoma cell lines when compared to normal B-cells isolated from the periphery blood (Figure 7D). More importantly, this phenomenon was not limited to c-myc driven B-lymphomas. In the LT2-MYC murine model of hepatocellular carcinoma (HCC), where tumor development was initiated by tetracycline-inducible c-Myc expression, miR-19a and miR-19b also exhibited a stronger increase than miR-92 when comparing tumor cells and the normal counterpart (Figure 7E).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00822/elife-00822-fig7-v1.jpg)\n\n**Figure 7.:** (A and B) Compared to normal splenic B-cells, premalignant and malignant E\u03bc-myc B-cells favored a greater increase in mature miR-19 (miR-19a and miR-19b) than miR-92. The purified normal splenic B-cells, premalignant E\u03bc-myc bone marrow B-cells and malignant E\u03bc-myc B-lymphoma cells were subjected to Taqman miRNA assays to determine the expression level of miR-19a, miR-19b and miR-92. Comparing premalignant/malignant E\u03bc-myc B-cells vs normal splenic B-cells, all three miRNAs exhibited an increased level, although the increase in miR-19a or miR-19b was significantly higher than that of miR-92 (A). In the same experiment, the relative ratios for miR-19a:miR-92 and miR-19b:miR-92 were measured for all normal splenic B-cells and E\u03bc-myc B-cells (B). (C) Mature miR-19 and miR-92 are differentially expressed in normal splenic B-cells and E\u03bc-myc B-lymphoma cells. The normal splenic B-cells, immortalized human B-cells, premalignant E\u03bc-myc/+ B-cells, and E\u03bc-myc/+ B-lymphoma cells were subjected to Northern analysis. Compared to normal splenic B-cells, both malignant and premalignant E\u03bc-myc/+ B-cells favored a greater increase of miR-19 than miR-92. (D) Compared to normal B-cells isolated from peripheral blood, human Burkitt\u2019s lymphoma cell lines favor a greater increase in mature miR-19 than miR-92. (E) Compared to normal livers (LT2), mouse hepatocellular carcinomas caused by the inducible c-Myc over-expression (LT2-myc) favor a greater increase in mature miR-19 than miR-92. (F) A diagram describes our proposed model to explain the functional interactions between miR-92 and miR-19 in c-Myc-induced B-lymphomagenesis. Aberrant c-Myc expression couples rapid proliferation and p53-dependent apoptosis. miR-92 overexpression further increases c-Myc dosage to strengthen this coupling, at least in part by repressing Fbw7. This miR-92 effect ensures a potent mechanism to eliminate premalignant c-Myc overexpressing cells. Interestingly, miR-92 and can be antagonized by the survival effects of the miR-19 miRNAs encoded by the same mir-17-92 miRNA polycistron. Taken together, while miR-19 miRNAs repressed c-Myc-induced apoptosis to promote the oncogenic cooperation between mir-17-92 and c-Myc, miR-92 exhibits a negative regulation. Thus, the antagonistic interactions between miR-92 and miR-19 confer an intricate crosstalk between proliferation and apoptosis. Error bars represent standard deviation, *p<0.05; **p<0.01, ***p<0.001.\n\nThese observations were consistent with a previous finding, where the inducible c-myc activation in a human Burkitt\u2019s lymphoma cell line induced both miR-19a and miR-19b to a greater extent than miR-92 (Donnell et al., 2005). Although miR-19 and miR-92 are co-transcribed from the mir-17-92 precursor, the differential increase of miR-19 vs miR-92 occurs in multiple c-Myc-driven tumor types. Thus, the relative abundance of miR-19 and miR-92 could constitute an important molecular basis to regulate the initiation and progression of c-Myc-induced tumor development.\n\n## Discussion\n\nThe unique polycistronic structure of mir-17-92 constitutes the basis for its pleiotropic functions and the complex mode of interactions among its miRNA components. A high level of mir-17-92 in normal or premalignant cells could lead to suboptimal consequences that are counter-balanced through an intrinsic negative regulation by miR-92 (Figure 7F). As we demonstrated in vitro where miR-92, by directly downregulating Fbw7, enhances c-Myc protein level to promote apoptosis, the ability of miR-92 to repress Fbw7 in vivo could similarly constitute a major mechanism to enhance c-Myc-induced apoptosis. This effect of miR-92 is a double edged sword in c-Myc driven tumors, as its overexpression gives rise to a strong and obligated coupling between excessive proliferation and a potent, p53-dependent apoptosis (Figure 7F). This coupling is consistent with the previous observation that a lower level of constitutive c-Myc acts more effectively to promote tumor initiation, while a higher level of c-Myc is selected by the terminal tumors with defective apoptosis machinery (Murphy et al., 2008). Therefore, mir-17-92 encodes an internal component to confer a negative regulatory feedback on its oncogenic activity, imposing a strong selection for anti-apoptotic lesions to shape the path of malignant transformation. More interestingly, c-Myc transcriptionally activates mir-17-92 that encodes miR-92 (Hemann et al., 2005), which in turn enhances c-Myc dosage, at least in part, by repression Fbw7. It is possible that aberrant c-Myc activation triggers a positive feedback loop to further increase c-Myc dosage to strengthen the apoptotic response and to eliminate cells with oncogenic potential. It is worth noting that the miR-92 apoptotic effect described in this study depends on an intact p53 response. Consequently, in terminal E\u03bc-myc B-lymphoma cells that often carry a defective p53 response, miR-92 failed to enhance c-Myc-induced apoptosis (Mu et al., 2009).\n\nThe functional readout of miR-92 heavily depends on cell types and biological contexts. It is important to recognize that miR-92 is not a tumor suppressor miRNA. Like c-Myc, miR-92 elicits potent oncogene stress to engage tumor suppressor response, at least in part, by activating p53. In the premalignant E\u03bc-myc/92 B-cells, the effect of miR-92 to repress Fbw7 most likely results in an increase of c-Myc level, which coupled with the intact p53 response to strongly sensitize the cells to miR-92-induced apoptosis. Under other contexts when proliferation becomes a rate-limiting event for oncogenesis, or when p53-dependent apoptosis is compromised, miR-92 could render a pro-proliferative effect that is strictly oncogenic (Tsuchida et al., 2011). Likewise, the functional readout of other mir-17-92 components also heavily depends on cell types and biological contexts. miR-19 promotes c-Myc-induced B-lymphomas by repressing apoptosis (Mu et al., 2009; Olive et al., 2009), yet has little effects in promoting Rb-deficient retinoblastomas (Conkrite et al., 2011); miR-17 allows the bypass of Ras-induced senescence by promoting proliferation (Hong et al., 2010), yet fails to affect c-Myc-induced lymphomas, possibly due to its functional redundancy with c-Myc.\n\nBoth cooperative and antagonistic interactions operate among subsets of mir-17-92 components. The miR-19:miR-92 antagonism constitutes a novel mechanism to confer an intricate balance between oncogene signaling and innate tumor suppressor responses (Figure 7F). This balance can be disrupted in premalignant and malignant cells that exhibit c-Myc overexpression, as an increase in the miR-19:miR-92 ratio is likely to favor the suppression of c-Myc-induced apoptosis and to promote oncogenesis. Although all mir-17-92 components are co-transcriptionally regulated, different changes of miR-19 vs miR-92 during oncogenesis could be a result of differential miRNA biogenesis and/or turn-over. It has been shown that specific RNA-binding proteins, such as hnRNP A1, promote the processing of a specific mir-17-92 component, miR-18 (Guil and C\u00e1ceres, 2007). Future studies are likely to reveal important mechanisms underlying cell type- and context-dependent differential regulation of mir-17-92 components, which will generate important insights on the biology of polycistronic miRNAs.\n\nOur current study mostly focuses on the antagonistic interaction between miR-19 and miR-92 in c-Myc driven oncogenesis, yet it reveals a more general mechanism underlying the structural function relationship of polycistronic miRNAs. It is likely that the complex interactions among polycistronic miRNA components can coordinate and balance a multitude of cellular and molecular processes during normal development and disease. Interestingly, in the case of mir-17-92, miR-92 has a different evolutionary history compared to the other mir-17-92 components. miR-92 is evolutionary conserved in Deuterostome (including vertebrates and chordates), Ecdysozoa (including flies and worms), and Lophotrochozoa, yet the remaining mir-17-92 components are only found in vertebrates (Figure 1\u2014figure supplement 1C). The functional antagonism between the more ancient miR-92 and the newly evolved mir-19 might result from the convergence of these two separate evolutionary paths at the origin of vertebrates. This antagonism could evolve to regulate cell proliferation and cell death downstream or independent of c-Myc in both normal development and disease. Thus, our studies suggest a novel mechanism by which a crosstalk between oncogene and tumor suppressor pathways has been hardwired through evolution into the unique gene structure of a polycistronic oncomir.\n\n## Materials and methods\n\n### Molecular cloning\n\nmir-17-92 \u039492 and mir-17-92 were amplified by PCR and subsequently cloned into the XhoI and EcoRI sites of the MSCV retrovirus vectors. In these vectors, miRNAs were placed downstream of the LTR promoter, which is followed either by a SV40-GFP cassette (for all in vivo experiments), a PGK-Puro-IRES-GFP cassette, or a SV40-CD4 cassette (for in vitro experiments) (Hemann et al., 2005). To construct MSCV-17-92Mut92, MSCV-17-92Mut20, and MSCV-17-92Mut19b vectors, a 12-nucleotide mutation was introduced into the seed region of the mature miR-92, miR-20, or miR-19b using the Quikchange XL mutagenesis kit (200521; Stratagene) and the following primers:\n\nMut20 primers: GACAGCTTCTGTAGCACTAAtaaacaataatcGCAGGTAGTGTTTAGTTATC and GATAACTAAACACTACCTGCGATTATTGTTTATTAGTGCTACAGAAGCTGTC.\n\nMut92 primers: CAATGCTGTGTTTCTGTATGGTtaacattaacatCCGGCCTGTTGAGTTTG and CAAACTCAACAGGCCGGATGTTAATGTTAACCATACAGAAACACAGCATTG.\n\nMut19b primers: CTGTGTGATATTCTGCTGacatttaagtacCAAAACTGACTGTGGTAGTG and CACTACCACAGTCAGTTTTGGTACTTAAATGTCAGCAGAATATCACACAG.\n\nThe loss of miR-92, miR-20 or miR-19b expression and the intact expression level of the remaining mir-17-92 components were validated using the TaqMan MicroRNA Assays (4427975; Applied Biosystems, Foster City, CA). mir-19b-92, mir-19bMut92, and mir-19b-92Mut19b were similarly amplified by PCR (ACTGCTCGAGAGCTTCGGCCTGTCGCCC and GTAGAATTCATGTATCTTGTAC) from the mir-17-92, mir-17-92Mut92, and mir-17-92Mut19b construct described above and subsequently cloned into the XhoI and EcoRI sites of the MSCV retrovirus vectors.\n\nTo construct the MSCV-Shp53 vector, shRNA against p53 was placed downstream of the LTR promoter of the MSCV-SV40-HuCD4 retroviral vector (Xue et al., 2007). MSCV-Shfbw7 construct was kindly provided by Dr Hans Guido Wendel (Mavrakis et al., 2011). To construct the pRetroX-fbw7-IRES-DsRedExpress (Xu et al., 2010), fbw7\u03b1 ORF was placed downstream of the LTR promoter followed by an IRES-DsRed cassette.\n\n### Adoptive transfer of E\u03bc-myc HSPCs for lymphomagenesis\n\nThe hematopoietic stem and progenitor cells (HSPCs) were isolated from E13.5-E15.5 E\u03bc-myc/+ mouse embryos and were transduced with MSCV alone or MSCV vectors expressing various mir-17-92 derivatives. The MSCV retroviral vector used in our adoptive transfer model contains a SV40-GFP cassette that allows us to monitor transduced HSPCs both in vitro and in vivo. Infected HSPCs were subsequently transplanted into an 8- to 10-week-old, lethally irradiated C57BL/6 recipient mice. Tumor onset was subsequently monitored by weekly palpation, and tumor samples were either collected into formalin for histopathological studies, or prepared as single cell suspension for FACS analysis and for cell culture studies. Both the E\u03bc-myc/+ mice and the recipient mice are on C57BL/6 background.\n\n### LT2-MYC mouse liver tumor model\n\nThe LT2-MYC mouse model for human hepatocellular carcinoma (HCC) is a double transgenic mouse model, in which the tetracycline transactivator protein (tTA) is driven by the hepatocyte-specific promoter, the liver activator protein (LAP) promoter, while the human c-MYC gene is driven by the tetracycline response element (TRE). The LT2-MYC model exhibits \u2018dox-off\u2019 regulation, where c-Myc expression is turned on in hepatocytes in the absence of doxycycline.\n\nLT2-MYC mice taken off doxycycline-containing food, between 3\u20135 weeks of age, develop distinct tumor nodules around 8\u201312 weeks on an average (Kistner et al., 1996; Shachaf et al., 2004). Total RNA was extracted from liver tumor samples from three independent mice, as well as normal livers from the doxycycline treated LT2 mice. Total RNAs were prepared using Trizol (15596018; Invitrogen) and subjected to real time PCR analyses as described below.\n\n### Cell culture and retroviral infection\n\nPrimary murine B-cells were prepared from bone marrows of 4- to 6-week-old mice and were cultured in RPMI with 10% fetal bovine serum (FBS), 50 \u03bcM beta-mercaptoethanol (M3148; Sigma) and 2 ng/ml Il-7 (407-ML-005; R&D). R26MER/MER and R26MER/+ MEFs were kindly provided by Gerald Evan\u2019s laboratory. MEFs were cultured in DMEM with 10% fetal bovine serum. E\u03bc-myc tumor cells were derived from lymphomas from the terminal-stage E\u03bc-myc animals. E\u03bc-myc lymphoma cells overexpressing various mir-17-92 derivatives were cultured in 45% DMEM, 45% IMDM with 10% fetal bovine serum, and 50 \u03bcM \u03b2-mercaptoethanol (M3148; Sigma) on irradiated NIH-3T3 feeder cells. Immortalized human B-cell lines were cultured in RPMI with 10% FBS and 90 \u03bcM beta-mercaptoethanol. Dicer-deficient Hct116 cells, kindly provided by Dr Bert Vogelstein (Cummins et al., 2006), and Fbxw7-deficient Hct116 cells (Grim et al., 2012) were cultured in McCoy\u2019s 5A media with 10% fetal bovine serum. Human Burkitt\u2019s lymphoma cell lines, including BL41, BL2, MutuI, Daudi, Raji (provided by Dr Terry Rabbitts), Manca, and Jiyoje were cultured in RPMI with 10% FBS.\n\nMouse primary B-cell cultures or MEFs were infected by MSCV retroviruses expressing various mir-17-92 derived miRNA clusters, shRNA against p53 (Xue et al., 2007), shRNA against fbw7 (Mavrakis et al., 2011), or fbw7 cDNA (pRetroX-fbw7-IRES-DsRedExpress). In Figure 4E,F, double infection was performed to obtain R26MER/MER MEFs that co-expressed shRNA p53 and miR-92. In this experiment, MEFs were initially infected with an ecotropic MSCV-p53shRNA-SV40huCD4 retrovirus to a nearly 100% infection efficiency, as validated by FACS analysis using huCD4 antibody. The second infection was achieved using an amphotropic MSCV-miR-92-PGK-Puro-IRES-GFP retrovirus. Doubly infected cells were then selected using puromycin. In Figure 5H, double infection of R26MER/MER MEFs with pRetroX-fbw7-IRES-DsRedExpress and MSCV-miR-92-PGK-Puro-IRES-GFP were similarly performed. For all experiments with primary murine B-cells, bone marrow cells were cultured for 48 hr before retroviral infection and collected or analyzed 72 hr after infection. After 5 days in culture, the percentage of B220-positive cell is 100%. In Figure 3E, Figure 3\u2014figure supplement 1, B-cells were infected with MSCV retrovirus containing a PGK-Puro-IRES-GFP cassette. FACS analysis was performed after gating on the GFP-positive population. In Figure 5A, the collected B-cells were infected with retrovirus containing SV40-CD4 cassette. Infected cells were purified with Human CD4 Micro-beads (130-045-101; Miltenyi Biotec) using MACS Purification Columns MS (130-042-201; Miltenyi Biotec).\n\n### The collection of normal and malignant B-cells in vivo\n\nNormal mouse B-cells were isolated from the spleen or the bone marrow of 4- to 6-week-old C57B/6J mice, using CD19 Micro-Beads (Miltenyi Biotec) or by negative selection (Easysep 19754; STEMCELL). Similarly, premalignant E\u03bc-myc B-cells were extracted from the bone marrow of 5- to 6-week-old E\u03bc-myc transgenic mice. Malignant E\u03bc-myc B-cells were extracted from the lymph node tumors of terminal-stage E\u03bc-myc mice. In addition, the normal human B-cells from peripheral blood were FACS sorted from the peripheral blood of healthy donors.\n\n### Histopathology and immunotyping\n\nMouse tissue samples were fixed in formalin (SF100-4; Fisher), embedded in paraffin (AC41677-0020; Fisher), sectioned into 5 \u00b5m tissue samples, and stained with hematoxylin and eosin (7211 & 7111, Fisher). For caspase-3 (AF835, 1:200; R&D Systems), PCNA (MS-106P, 1:200; Lab Vision Corp.), and B220 (14-0452-85, 1:100; eBioscience) detection, representative sections were deparaffinized and rehydrated in graded alcohols before subjected to antigen retrieval treatment with 10 mM sodium citrate buffer 10 min in a pressure cooker. Detection of antibody staining was carried out following standard procedures from the avidin-biotin immunoperoxidase methods. Diaminobenzidine (002014, Invitrogen) was used as the chromogen and hematoxylin as the nuclear counter stain. Quantitation of apoptosis was evaluated by counting the number of starry sky foci in three fields (40X) from seven representative animals of each genotype, as well as by counting the number of caspase-3 positive cells in three fields (40X) from five representative animals of each genotype.\n\nTo determine the cell surface markers of the lymphoma cells harvested from the animals, cells were resuspended in 10% FBS/PBS to reach a concentration of 107 cells/ml. 20 \u03bcl of this cell suspension was stained with antibodies diluted in 10% FBS/PBS for 1 hr. Subsequently, cells were washed with 2% FBS/PBS and resuspended in 10% FBS/PBS for flow cytometry analysis. Antibodies used for FACS analyses include PE anti-mouse IgM (12-5790, 1:200; eBioscience), APC-Cy7 anti-mouse B220 (552094, 1:200; BD Pharmingen), APC-Cy7 anti-mouse CD4 (552051, BD Pharmingen, 1:200), PE anti-mouse CD8 (553032, 1:200; BD Pharmingen), PE anti-mouse CD25 (553866, 1:200; BD Pharmingen), and APC anti-mouse CD19 (115511, 1:100; Biolegend).\n\n### Apoptosis assays and proliferation assays\n\nSubconfluent MSCV- or miR-92-infected R26MER/MER MEFs were induced and serum starved by incubating the cells with 100 nM of 4-hydroxytamoxifen (H6278; Sigma) in DMEM with 0.2% fetal bovine serum for 12\u201324 hr before harvesting the cells for apoptosis analyses using APC-Annexin V antibody (550475, 1:50; BD Pharmingen) and 7AAD staining solution (559925; BD Pharmingen). To evaluate the apoptotic effects of miR-92 in our adoptive transfer model in vivo, we collected premalignant E\u03bc-myc B-cells from spleen or bone marrow of well-controlled E\u03bc-myc/92 and E\u03bc-myc/MSCV mice at 5 weeks after adoptive transfer and measured the extent of apoptosis by FACS. Apoptosis in GFP-positive B220-positive premalignant B-cells was measured using the Caspase Detection Kit (Calbiochem, Red-VAD-FMK) following the manufacturer\u2019s instructions. To quantitate cell proliferation, 10 \u03bcM of BrdU was used to label primary B-cells for 4 hr and MEFs for 30 min. The percentage of BrdU-positive cells was determined using the Flow BrdU kit (552598; BD Pharmingen).\n\n### Real time PCR and western analyses\n\nTaqMan MicroRNA Assays (Applied Biosystems) were used to measure the level of mature miRNAs, including miR-17, 18, 19a, 20, 19b, and 92 (4427975; ABI). mRNA level for perp (GACCCCAGATGCTTGTTTTC, GGGTTATCGTGAAGCCTGAA), noxa (GGAGTGCACCGGACATAACT, TGAGCACACTCGTCCTTCAA), puma (GCGGCGGAGACAAGAAGA, AGTCCCATGAAGAGATTGTAC), p21 (ACGGTGGAACTTTGACTTCG, CAGGGCAGAGGAAGTACTGG), bax (GTTTCATCCAGGATCGAGCAG, CCCCAGTTGAAGTTGCCATC), mdm2 (CTCTGGACTCGGAAGATTACAGCC, CCTGTCTGATAGACTGTCACCCG), p53 (AACCGCCGACCTATCCTTAC, TCTTCTGTACGGCGGTCTCT), ccnb1 (AAGGTGCCTGTGTGTGAACC, GTCAGCCCCATCATCTGCG), ccnb2 (GCCAAGAGCCATGTGACTATC, CAGAGCTGGTACTTTGGTGTTC), cdc20 (AGACCACCCCTAGCAAACCT, GACCAGGCTTTCTGATGCTC), cdc25b (ATTCTCGTCTGAGCGTGGAC, GCTGTGGGAAGAACTCCTTG), fbw7 (CGGCTCAGACTTGTCGATACT, CTTGATGTGCAACGGTTCAT), gtse1 (GCTTTGCCTGTGAGAGGAAG, CACTCTGGGATCCCTTTTCA), bid (CTGCCTGTGCAAGCTTACTG, GTCTGGCAATGTTGTGGATG), pten (CACAATTCCCAGTCAGAGGCG, GCTGGCAGACCACAAACTGAG), bim (ACCACTATCTCAGTGCAATGGCTTCC, CGGTAATCATTTGCAAACACCCTCCTTG), cdk4 (TGGTACCGAGCTCCTGAAGT, GTCGGCTTCAGAGTTTCCAC), c-myc (GTGCTGCATGAGGAGACACCGCC, GCCCGACTCCGACCTCTTGGC), Pirh2 (TGCAGTGCATCAACTGTGAA, CAAACAGGTGGCAAATACTGC), Ppp2r5d (CCGTGATGTTGTCACTGAGG, ACTCTGCTCCTGTGGGATTC), Dyrk2 (CCAGCAACGCTACCACTACA, AACAGCTGCTGAACCTGGAT), Romo1 (ATTCGGAGTGAGACGTCGAG, TGACGAAGCCCATCTTCAC), Pak2 (TTGGCTTTGATGCTGTTACG, CACTGCCTGAGGGTTCTTCT), Trpc4ap (CGCAAATGTCCTTCCTCTTC, GCCAGCATCAGGATTACCAG), and Axin1 (AGGACGCTGAGAAGAACCAG, CTGCTTCCTCAACCCAGAAG) were determined using real time PCR analyses with SYBR (KK4605; Kapa Biosystems). Actin (GATCTGGCACCACACCTTCT, GGGGTGTTGAAGGTCTCAAA) was used as a normalization control in all our real time PCR analysis with SYBR. U6 snRNA assay (4427975; ABI) was used as a normalization control in all our TaqMan MicroRNA Assays (Applied Biosystems).\n\nFor western analyses, all samples were directly collected into Laemmli buffer. p53 (1C12; Cell Signaling), Arf (5-C3-1; Novus), and c-Myc (1472-1; Epitomics) antibodies were used at 1:1000 dilution. FLAG (M2; Sigma) and Tubulin (12G10) were used at 1:2500 dilution. HRP conjugated secondary antibodies (Santa Cruz Biotechnology, sc-2004 sc-2005 and sc-2006) were used at 1:5000.\n\n### Microarray analyses\n\nThree independent R26MER/MER MEF lines were infected by MSCV vector alone or by MSCV vector encoding miR-92. These MEFs were induced and serum starved by incubating the cells with 100 nM of 4-hydroxytamoxifen (H6278; Sigma) in DMEM with 0.2% fetal bovine serum for 12 hr before harvesting the cells for RNA preparation. Total RNAs were prepared using Trizol (15596018; Invitrogen), and subjected to microarray analysis using Affymetrix chip Mouse 430_2. To identify differentially expressed genes that could be regulated by miR-92, we used gcRMA in the bioconductor package (Wu et al., 2004) and SAM (Significance Analysis of Microarrays) (Tusher et al., 2001) for statistical analysis of our microarray data. Gene expression signals were estimated from the probe signal values in the CEL files using statistical algorithm gcRMA. This data processing at the probe level includes background signal subtraction and quantile normalization to facilitate the comparison among microarrays. SAM was then used to identify the genes with significant expression level alterations between miR-92 overexpressing MEFs and the control MEFs. The genes with at least 1.5-fold expression level change and FDR <1% were regarded as differentially expressed genes. Pathway analyses were performed on upregulated and downregulated genes using the KEGG database (Dennis et al., 2003).\n\n### Xenopus embryo apoptosis assays\n\nXenopus laevis eggs were collected, fertilized, and embryos cultured by standard procedures. The miR-19b mimics were produced from the annealing products of 5\u2032UGUGCAAAUCCAUGCAAAACUGA3\u2032 and 5\u2032AGUUUUGCAGGUUUGCAUCCAUU3\u2032 (IDT).\n\nThe miR-17 mimics were produced from the annealing products of 5\u2032CAAAGUGCUUACAGUGCAGGUAGU3\u2032 and 5\u2032UACUGCAGUGAAGGCACUUGUAG3\u2032(IDT).\n\nThe miR-18 mimics were produced from the annealing products of 5\u2032UAAGGUGCAUCUAGUGCAGAUAG3\u2032 and 5\u2032ACUGCCCUAAGUGCUCCUUCUG3\u2032(IDT).\n\nThe miR-19a mimics were produced from the annealing products of 5\u2032AGUUUUGCAUAGUUGCACUA3\u2032 and 5\u2032UGUGCAAAUCUAUGCAAAACUGA3\u2032(IDT).\n\nThe miR-20 mimics were produced from the annealing products of 5\u2032UAAAGUGCUUAUAGUGCAGGUAG3\u2032 and 5\u2032ACUGCAUAAUGAGCACUUAAAGU3\u2032(IDT).\n\nThe miR-92 mimics were produced from the annealing products of 5\u2032UAUUGCACUUGUCCCGGCCUG3\u2032 and 5\u2032AGGUUGGGAUUUGUCGCAAUGCU3\u2032(IDT).\n\nThe annealing of miRNA mimics were performed by combining two complimentary RNA oligos at a stock concentration of 1 \u03bcg/\u03bcl, heating the oligos to 80\u00b0C for 1 min, and then cooling down to room temperature to allow duplexes to form. The same was done for generating the mutated miR-19 mimics (Mut-miR-19), by annealing 5\u2032UCAGGUAAUCCAUGCAAAACUGA3\u2032 and 5\u2032AGUUUUGCAGGUUACCUUCGAUU3\u2032, and mutated miR-92 mimics (Mut-miR-92) by annealing 5\u2032UUAUCGACUUGUCCCGG3\u2032 and 5\u2032GGUUGGGAUUGGUUCGA 3\u2032.\n\nXenopus embryos were injected into both cells at the two-cell stage with 2 ng of each RNA (Walker and Harland, 2009). The pcDNA3-myc-AGO2 vector, kindly provided by Dr Greg Hannon, was cut using ScaI; and the synthetic hAGO2 mRNAs were transcribed using mMessage mMachine T7 kit (Ambion). When indicated, a total of 0.5 ng hAGO2 mRNA (Liu et al., 2004) was injected into two-cell stage embryos either alone or with 2 ng of each miRNA (Lund et al., 2011). The embryos were then treated with hydroxyurea (H8627; Sigma) at a final concentration of 5 mM from stage 3 until stage 10. Apoptotic embryos were scored as those containing any apoptotic cells based on morphological changes.\n\n### Luciferase assays\n\nA luciferase reporter fused with the fbw7 3\u2032UTR was kindly provided by Dr Hans-Guido Wendel (Mavrakis et al., 2011). In this psiCHECK-2 based reporter, the fbw7 3\u2032UTR was cloned downstream of the Renilla luciferase reporter, and a separate firefly luciferase cassette was used as a transfection control. Because the two predicted miR-92 binding sites are close to each end of the 3\u2032UTR, we mutated the miR-92 binding sites by PCR using the following primers:\n\n3\u2032UTR-Fbw7-Mut-Xho1-F (GATCTCGAGCAAGACGACTCTCTAAATCCAACTATTCTTT) and 3\u2032UTR-Fbw7-mut-Not1-R (ATGCGGCCGCAACACATTTAGTTATAAGAAAATAAAATTT). The PCR fragment was subsequently cloned into the XhoI and Not1 sites of the psiCHECK-2 vector. The reporter construct, together with 50 nM miR-92 mimics, was transfected into Dicer-deficient Hct116 cells (Cummins et al., 2006), with transfection of miR-17 or miR-18 as negative controls. Luciferase activity of each construct was determined by dual luciferase assay (E19100; Promega) 48 hr post-transfection following the manufacturer\u2019s instructions. The miR-17 mimics were produced by annealing 5\u2032CAAAGUGCUUACAGUGCAGGUAGU3\u2032 and 5\u2032UACUGCAGUGAAGGCACUUGUAG3\u2032. The miR-18 mimics were produced by annealing 5\u2032UAAGGUGCAUCUAGUGCAGAUAG3\u2032 and 5\u2032ACUGCCCUAAGUGCUCCUUCUG3\u2032.\n\nThe miR-92 mimics were produced by annealing 5\u2032UAUUGCACUUGUCCCGGCCUG3\u2032 and 5\u2032AGGUUGGGAUUUGUCGCAAUGCU3\u2032.\n\n### Fbw7\u03b1 immunoprecipitation and western analyses\n\nBecause Fbxw7-substrate degradation was regulated in a cell-cycle-dependent manner, we used serum starvation synchronized MEFs to study Fbw7 regulation by miR-92 during cell cycle progression. MEFs were made quiescent by serum starvation; then Fbw7 expression was examined following release into serum. Cells were lysed in NP-40 buffer supplemented with protease inhibitors. Lysates were normalized and immunoprecipitated with polyclonal anti-Fbw7 antibody kindly provided by Dr Bruce Clurman (Grim et al., 2008), followed by immunoblotting with polyclonal anti-Fbw7 antibody (A301-720A; Bethyl Laboratories). Wild-type and FBW7\u2212/\u2212 Hct116 cells were used, respectively, as positive and negative controls.\n\nThe construction of the pFLAG-Fbw7\u03b1-3\u2032UTR plasmid was previously described (Xu et al., 2010). The construct was transfected into the Dicer-deficient Hct116 cells together with 50 nM of miR-92 mimics or siRNA against GFP as indicated. Anti-FLAG (M2; Sigma) antibody was used to detect the FLAG-Fbw7\u03b1 by western blot 48 hr after transfection.\n\n### Cyclin E-dependent kinase assays\n\nCyclin E-CDK complexes were immunoprecipitated from MSCV or miR-92 infected Rosa26MER/MER MEFs extracts using affinity-purified polyclonal antibody, provided by Dr Bruce Clurman (Minella et al., 2008). Cyclin E immunoprecipitates were then incubated with purified histone subunit H1 (Sigma) and (gamma-32P)ATP to measure cyclin E-dependent kinase activity. The anti-Grb2 monoclonal (BD Biosciences) antibody was used a normalization control.\n",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "2dbb347f-6498-45f0-ba95-22b61a881681",
+      "submission_id": "06acf9b3-5ef4-4527-a04b-b781f180d896",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chi Van Dang, University of Pennsylvania , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00822.016](https://doi.org/10.7554/eLife.00822.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA component of the mir-17-92 polycistronic oncomir promotes oncogene-dependent apoptosis\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom, Chi Van Dang, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript by Olive et al. describes a very intriguing finding: while as a whole the miR-17\u223c92 cluster accelerates Myc-driven lymphomagenesis, its miR-92 component acts as a built-in damper, which induces apoptosis. Furthermore, deleting this component results in earlier-onset lymphomas. This central discovery was made using a model developed by Dr. He and her collaborators (Nature 2005; G&D 2009), wherein premalignant hematopoietic progenitors from E\u03bc-myc mice are transduced with various miR-encoding retroviruses and used to reconstitute irradiated recipients. The key data presented in Figures 1\u20133 are generally crisp, compelling, and easy to interpret. However several issues remain to be resolved.\n\nSpecificity of miR-92 activity:\n\n1) The authors documented that miR-92 targets Fbw7 and thereby enhances MYC protein levels. While Figure 5D shows that miR-92 can repress a Fbw7 3'UTR luciferase reporter construct or Fbw7 cDNA expression construct, specificity of miR-92 should be established via mutating the predicted miR-92 binding site(s) within the 3'UTR and determine whether they are required for this repression.\n\n2) Further experiments are needed to show whether the miR-92-Fbw7-Myc axis is fully responsible for miR-92's pro-apoptotic effects. In Figure 5F, it is shown that Fbw7 shRNA partially recapitulates the effect of miR-92 expression on Myc-mediated apoptosis in MEFs. The levels of Myc protein should be shown in this experiment. If Fbw7 knockdown fully recapitulates the miR-92-induced Myc levels yet does not fully recapitulate the degree of miR-92-induced apoptosis, it suggests that miR-92 engages additional mechanisms to induce apoptosis. To further investigate this issue, the authors should express ectopic Fbw7 (which does not have the miR seed sequence) at physiologic levels and see if this rescues the apoptotic phenotype of miR-92. These experiments should establish whether upregulation of Myc by miR-92 is the entire story or whether additional pro-apoptotic mechanisms exist. The authors are not required to identify such additional mechanisms in the current paper but it is important to know whether they exist.\n\n3) To further substantiate their model, the authors should measure Fbw7 and Myc protein levels in E\u03bc-myc lymphoma cells expressing wild-type miR-17-92 versus those expressing miR-17-92\u039492. If miR-92-mediated Fbw7 repression/Myc induction cannot be demonstrated in this setting, the proposed mechanism, while elegant, could be completely irrelevant.\n\n4) Along the same lines, what is the evidence that the effects of miR-92 on Myc levels are Fbw7-mediated? Perhaps Fbw7-null HCT116 cells could be used to establish causality.\n\n5) The authors make a claim that that miR-92 is processed less efficiently in murine and human lymphomas than miR-19, the main oncogenic component of the cluster. This is an important claim, however, some of the quantifications are difficult to understand. For example, in panel 7D, miR-19 and -92 levels in Burkitt's cell lines are normalized separately for those found in \u201cnormal PB-cells\u201d. Assuming that PB stands for \u201cperipheral blood\u201d, this does not appear to be a relevant control, since a circulating lymphocyte is not a cell of origin for Burkitt's \u2013 or other human lymphomas, for that matter. A direct comparison between miR-19 and miR-92 levels would be more helpful. According to a recent profiling paper [doi:10.1038/bcj.2012.1], miR-19b and miR-92 are overexpressed at comparable levels in Burkitt's samples.\n\nConceptual framework:\n\n1) Although the authors focused on this \u2018oncoMir\u2019 cluster and studied its oncogenic properties, it would be terrific for the authors to discuss the potential physiological importance of this cluster with regard to its evolution as presented in the manuscript. In particular, it would be safe to assume that this cluster evolved to regulate cell growth and proliferation downstream or independent of MYC. Hence, the different miRs in the cluster might be subject to regulation via microRNA processing in addition to the expression of the cluster mRNA precursor. In this regard, are the relative levels of miR-92 to other miRs in the cluster differentially affected by cellular stresses that lead to apoptosis (serum or growth factor deprivation, nutrient deprivation?)? Some discussion on this aspect of miR-17-92 function could be very useful for the field.\n\n2) In the Discussion, the authors describe miR-92 as conferring negative feedback on the oncogenic activity of miR-17-92. Given that miR-17-92 is transcriptionally activated by Myc and Myc dosage is positively regulated by miR-92, a positive feedback loop is also established. This concept should be discussed.\n\nInfluence of miR-92 on the miR cluster:\n\n1) The expression of the miRNAs derived from the various MSCV constructs (miR-17-92; miR-17-92\u039492; miR-17-92Mut92) is tested by transducing 3T3 cells with these retroviruses (Figure 1B). However, the conclusions of the paper rest heavily upon the assumption that mutating miR-92 does not affect the expression of other miRNAs in the cluster in B cells (where the oncogenic activity is examined most extensively). Therefore it is important to examine the miRNA levels in E\u03bc-Myc lymphoma cells or primary B cells infected with the various viruses to confirm their findings in 3T3 cells.\n",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "296a5aa0-f1d9-4471-b394-2f051e0c1486",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C1",
+      "claim": "mir-17-92 is a potent polycistronic oncomir that encodes six mature miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "mir-17-92, a potent polycistronic oncomir, encodes six mature miRNAs with complex modes of interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the abstract and supported by Figure 1A showing the gene structure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "6bcf0c16-8a36-47e7-84d5-3632ca8ebd85",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C2",
+      "claim": "In the E\u03bc-myc Burkitt's lymphoma model, mir-17-92 exhibits potent oncogenic activity by repressing c-Myc-induced apoptosis, primarily through its miR-19 components.",
+      "claim_type": "EXPLICIT",
+      "source": "In the E\u03bc-myc Burkitt's lymphoma model, mir-17-92 exhibits potent oncogenic activity by repressing c-Myc-induced apoptosis, primarily through its miR-19 components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by experimental data in adoptive transfer experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "c78e8066-84e6-4108-b390-b13944b09367",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C3",
+      "claim": "mir-17-92 encodes the miR-92 component that negatively regulates its oncogenic cooperation with c-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, mir-17-92 also encodes the miR-92 component that negatively regulates its oncogenic cooperation with c-Myc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and demonstrated by survival data showing mir-17-92\u039492 accelerates tumor onset compared to intact mir-17-92.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "03aa534c-f419-4d2c-bbea-520e292cf4c8",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C4",
+      "claim": "The miR-92 effect is mediated by its direct repression of Fbw7.",
+      "claim_type": "EXPLICIT",
+      "source": "This miR-92 effect is, at least in part, mediated by its direct repression of Fbw7, which promotes the proteosomal degradation of c-Myc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by luciferase reporter assays and protein level measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "2cb87d45-6696-41ee-b317-e45b7919c01b",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C5",
+      "claim": "Overexpressing miR-92 leads to aberrant c-Myc increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, overexpressing miR-92 leads to aberrant c-Myc increase, imposing a strong coupling between excessive proliferation and p53-dependent apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and demonstrated by western blot data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "a96436e7-da4d-4b3c-8708-36b1e5e6ff8f",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C6",
+      "claim": "miR-92 antagonizes the oncogenic miR-19 miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, miR-92 antagonizes the oncogenic miR-19 miRNAs; and such functional interaction coordinates proliferation and apoptosis during c-Myc-induced oncogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and demonstrated by apoptosis assays showing miR-19 dampens miR-92-induced apoptosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "178efafb-1336-425e-86b1-df834b011b7d",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C7",
+      "claim": "The miR-19:miR-92 antagonism is disrupted in B-lymphoma cells that favor a greater increase of miR-19 over miR-92.",
+      "claim_type": "EXPLICIT",
+      "source": "This miR-19:miR-92 antagonism is disrupted in B-lymphoma cells that favor a greater increase of miR-19 over miR-92.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by real-time PCR data in Figure 7A-B showing differential expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "af15b54e-b798-48cd-bd13-0a179f8714d8",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C8",
+      "claim": "mir-17-92 genomic amplification and aberrant overexpression have been observed in many human tumors including Burkitt's lymphoma, diffuse large B-cell lymphoma (DLBCL), and lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the best example is mir-17-92, a potent oncomir (i.e., miRNA oncogene), whose genomic amplification and aberrant overexpression have been observed in many human tumors including Burkitt's lymphoma, diffuse large B-cell lymphoma (DLBCL), and lung cancer (Lu et al., 2005; Mendell, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "9ca2e4dc-d7a2-4caf-b558-a197b0e31268",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C9",
+      "claim": "mir-17-92 regulates multiple cellular processes during tumor development, including proliferation, survival, angiogenesis, differentiation, and metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "mir-17-92 regulates multiple cellular processes during tumor development, including proliferation, survival, angiogenesis, differentiation, and metastasis (He et al., 2007; Uziel et al., 2009; Conkrite et al., 2011; Nittner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "eb5f43f2-ed0d-4fad-be69-f0e25cdb841c",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C10",
+      "claim": "mir-17-92 produces a single precursor that yields six individual mature miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "As a polycistronic oncomir, mir-17-92 produces a single precursor that yields six individual mature miRNAs (Figure 1A, Figure1\u2014figure supplement 1A) (Tanzer and Stadler, 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 1A and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "93957b84-1cec-47bf-9d0b-8a39febbbf4b",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C11",
+      "claim": "The six mir-17-92 components are categorized into four miRNA families based on seed sequence homology.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the seed sequence homology, the six mir-17-92 components are categorized into four miRNA families (Figure 1A, Figure 1\u2014figure supplement 1A): miR-17 (miR-17 and 20), miR-18, miR-19 (miR-19a and 19b), and miR-92a (we will designate miR-92a as miR-92 in the remainder of our paper).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "d65e4520-815f-4f37-a7ac-fbd4c6612579",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C12",
+      "claim": "miR-92 has a more ancient evolutionary history compared to the other mir-17-92 components.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, miR-92 has a more ancient evolutionary history compared to the other mir-17-92 components (Tanzer and Stadler, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "7bf6f286-b979-4779-8ed1-b2e34cbbd476",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C13",
+      "claim": "miR-92 is evolutionarily conserved in vertebrates, chordates, and invertebrates, while the remaining mir-17-92 components are only found in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-92 is evolutionarily conserved in vertebrates, chordates, and invertebrates, while the remaining mir-17-92 components are only found in vertebrates (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "d71e1d02-bc54-488f-b9af-41f7ce472d05",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C14",
+      "claim": "The E\u03bc-myc mice carry a c-myc transgene downstream of the immunoglobulin (Ig) heavy chain enhancer E\u03bc.",
+      "claim_type": "EXPLICIT",
+      "source": "The E\u03bc-myc mice carry a c-myc transgene downstream of the immunoglobulin (Ig) heavy chain enhancer E\u03bc (Langdon, 1986; Adams et al., 1985), which functionally resembles the Ig-MYC translocations that occur frequently in Burkitt's lymphomas (Tagawa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "471fe242-0249-457d-912e-df8ffb5b3efe",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C15",
+      "claim": "c-Myc-induced apoptosis enables a self-defense mechanism against malignant transformation, producing B-lymphomas with a late onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, c-Myc-induced apoptosis enables a self-defense mechanism against malignant transformation, producing B-lymphomas with a late onset (Lowe et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "dc02f46e-8da8-49af-b7b4-be247c8404b4",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C16",
+      "claim": "Overexpression of mir-17-92 in E\u03bc-myc/+ HSPCs resulted in a considerable acceleration in tumor onset compared to the E\u03bc-myc/MSCV control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "When E\u03bc-myc/+ HSPCs were infected with MSCV (murine stem cell virus) retrovirus to overexpress the intact mir-17-92 oncomir, we observed a considerable acceleration in tumor onset compared to the E\u03bc-myc/MSCV control mice (p<0.01, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 1C showing survival curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "36f0ce56-6a0f-4503-8c80-8833850b8669",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C17",
+      "claim": "The oncogenic cooperation between c-Myc and mir-17-92 was significantly stronger when miR-92 was deleted within this oncomir.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the oncogenic cooperation between c-Myc and mir-17-92 was significantly stronger when miR-92 was deleted within this oncomir (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 1C showing survival data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "1bd965bf-eaab-42a0-aab8-8a16aaf9a992",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C18",
+      "claim": "The average survival of E\u03bc-myc/17-92\u039492 mice was 66 days, significantly shorter than that of E\u03bc-myc/17-92 mice (112 days, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The average survival of E\u03bc-myc/17-92\u039492 mice was 66 days, significantly shorter than that of E\u03bc-myc/17-92 mice (112 days, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in text with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "022eeb38-3c0a-4288-8e47-559eb6ce2792",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C19",
+      "claim": "mir-17-92Mut92 phenocopied mir-17-92\u039492 in vivo, significantly enhancing the oncogenic cooperation with c-Myc without altering the level of any remaining mir-17-92 components.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting mir-17-92Mut92 phenocopied mir-17-92\u039492 in vivo (Figure 1C), significantly enhancing the oncogenic cooperation with c-Myc without altering the level of any remaining mir-17-92 components (Figure 1D, Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 1C and 1D showing survival and expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "3f40b58b-c097-4319-8e22-acf46d987de4",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C20",
+      "claim": "Mutations of miR-20 or miR-17 failed to affect oncogenesis in the E\u03bc-myc model.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations of miR-20 or miR-17 failed to affect oncogenesis in the E\u03bc-myc model (Figure 1C, Figure 1\u2014figure supplement 1D and data not shown)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "40cd6371-2fcf-474a-8d4a-3c0cbaf8b207",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C21",
+      "claim": "Mutations of both miR-19 miRNAs nearly abolished the oncogenic cooperation between mir-17-92 and c-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "mutations of both miR-19 miRNAs nearly abolished this oncogenic cooperation (Olive et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "f6509ab0-bbb8-4ab2-9eb3-0ffad56a102f",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C22",
+      "claim": "The greater oncogenic activity of mir-17-92Mut92 in comparison with mir-17-92 was consistent with mir-17-92Mut92 preferentially transforming IgM negative progenitor B-cells, and mir-17-92 frequently transforming IgM positive B-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The greater oncogenic activity of mir-17-92Mut92 in comparison with mir-17-92 was consistent with mir-17-92Mut92 preferentially transforming IgM negative progenitor B-cells, and mir-17-92 frequently transforming IgM positive B-cells (Figure 2A; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 2A and Table 1 showing immunophenotyping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "7d83adf2-82a2-455b-922e-5b51b71aaf5b",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C23",
+      "claim": "E\u03bc-myc/17-92\u039492 and E\u03bc-myc/17-92Mut92 mice developed more aggressive B-lymphomas, characterized by massive lymph node enlargement, splenic hyperplasia, leukemia, and widespread dissemination into visceral organs outside of the lymphoid compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to E\u03bc-myc/17-92 mice, both E\u03bc-myc/17-92\u039492 and E\u03bc-myc/17-92Mut92 mice developed more aggressive B-lymphomas, characterized by massive lymph node enlargement, splenic hyperplasia, leukemia, and widespread dissemination into visceral organs outside of the lymphoid compartment (Figure 2B, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 2B showing histology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "3ed2d930-0863-43cb-8ae2-b9de1082112c",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C24",
+      "claim": "The control E\u03bc-myc/MSCV lymphomas invariably exhibited a high proliferation index accompanied by extensive cell death, as evidenced by the widespread 'starry sky' pathology and cleaved caspase 3 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "The control E\u03bc-myc/MSCV lymphomas invariably exhibited a high proliferation index accompanied by extensive cell death, as evidenced by the widespread 'starry sky' pathology (Figure 2C,D) and cleaved caspase 3 staining (Figure 2C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 2C, 2D, and 2E showing histology and quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "f7656a22-91b9-4a79-8ea7-6bbecf39f334",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C25",
+      "claim": "The potent oncogenic activity of mir-17-92\u039492 and mir-17-92Mut92 was consistent with the strong reduction of apoptosis in the lymph node tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The potent oncogenic activity of mir-17-92\u039492 and mir-17-92Mut92 was consistent with the strong reduction of apoptosis in the lymph node tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text and supported by histological data in Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "a3cb4009-ca38-40c7-a6d5-f7885dc18a01",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C26",
+      "claim": "The intact miR-92 significantly attenuated the repression of c-Myc-induced apoptosis by mir-17-92 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the intact miR-92 significantly attenuated the repression of c-Myc-induced apoptosis by mir-17-92 in vivo (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 2C-E showing apoptosis measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "55f5996f-3afe-415a-ace4-825cc1c6ae2f",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C27",
+      "claim": "miR-92 overexpression significantly enhanced c-Myc-induced apoptosis in vivo in the E\u03bc-myc model.",
+      "claim_type": "EXPLICIT",
+      "source": "In the E\u03bc-myc model, miR-92 overexpression significantly enhanced c-Myc-induced apoptosis in vivo (Figure 3A,B, Figure 3\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 3A, 3B, and Figure 3\u2014figure supplement 1A showing apoptosis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "07bbaa59-e089-41ae-99df-2c216c7f1b08",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C28",
+      "claim": "miR-92 overexpression was consistent with a rapid depletion of miR-92-infected cells in premalignant E\u03bc-myc B-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with a rapid depletion of miR-92-infected cells in premalignant E\u03bc-myc B-cells (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 3\u2014figure supplement 1B showing cell depletion data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "73c74b84-fb62-4c57-8e57-f5af1d5553a2",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C29",
+      "claim": "Enforced miR-92 expression in R26MER/MER MEFs invariably enhanced Myc-induced apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Enforced miR-92 expression in R26MER/MER MEFs invariably enhanced Myc-induced apoptosis (Figure 3C, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 3C and Figure 3\u2014figure supplement 1C showing apoptosis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "2bb6310d-4ade-4d1d-b630-fb4205d84094",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C30",
+      "claim": "miR-92 unexpectedly enhanced c-Myc-induced cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to promoting c-Myc-induced apoptosis, miR-92 unexpectedly enhanced c-Myc-induced cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text and supported by BrdU incorporation data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "f522271f-e2c0-4d12-9170-6d0ef417613c",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C31",
+      "claim": "A significant increase of BrdU incorporation was observed in R26MER/MER MEFs overexpressing miR-92, both under normal culture conditions and, more evidently, under serum starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase of BrdU incorporation was observed in R26MER/MER MEFs overexpressing miR-92, both under normal culture conditions and, more evidently, under serum starvation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 3D showing BrdU incorporation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "7d174eac-dfae-488b-b581-aa291bc592b0",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C32",
+      "claim": "miR-92 deficiency significantly compromised the ability of mir-17-92 to promote cell cycle progression in B-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, miR-92 deficiency significantly compromised the ability of mir-17-92 to promote cell cycle progression in B-cells (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 3\u2014figure supplement 1D showing BrdU incorporation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "59d3119c-60d7-4561-8481-9f8324b42a47",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C33",
+      "claim": "miR-92 is a unique mir-17-92 component that functionally couples c-Myc-induced cell proliferation and c-Myc-induced apoptosis in the B-cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that miR-92 is a unique mir-17-92 component that functionally couples c-Myc-induced cell proliferation and c-Myc-induced apoptosis in the B-cell compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the proliferation and apoptosis data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "ea65a33b-0c3f-4bf2-9d88-a979afe2a779",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C34",
+      "claim": "miR-92-upregulated genes were significantly enriched for the cell cycle pathway, including ccnd1, ccnb1, ccnb2, cdc25b, cdc25c, and cdk4.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-92-upregulated genes were significantly enriched for the cell cycle pathway, including ccnd1, ccnb1, ccnb2, cdc25b, cdc25c, and cdk4 (Figure 4A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 4A,B showing microarray pathway analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "c16f8370-d519-4b7b-a97b-d2094210648f",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C35",
+      "claim": "Genes upregulated by miR-92 were also enriched for the p53 pathway, including the classic p53 target mdm2, as well as the pro-apoptotic p53 targets\u2014noxa, bax, puma, perp, and bid.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes upregulated by miR-92 were also enriched for the p53 pathway, including the classic p53 target mdm2, as well as the pro-apoptotic p53 targets\u2014noxa, bax, puma, perp, and bid (Figure 4A,B, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 4A,B and Figure 4\u2014figure supplement 1A showing microarray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "a56b3af9-454b-409b-bb2d-8e0fdb3fd242",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C36",
+      "claim": "miR-92 overexpression alone caused significant accumulation of Arf mRNA and protein in both R26MER/MER MEFs and wild-type primary B-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In both R26MER/MER MEFs and wild-type primary B-cells, miR-92 overexpression alone caused significant accumulation of Arf mRNA and protein (Figure 4C,D, Figure 4\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 4C,D and Figure 4\u2014figure supplement 1C showing RT-PCR and western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "02af4966-5e5b-4d26-a142-fc075374dced",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C37",
+      "claim": "miR-92 overexpression caused rapid stabilization of the p53 protein without alteration of p53 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the rapid stabilization of the p53 protein (Figure 4D, Figure 4\u2014figure supplement 1C) without alteration of p53 mRNA (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 4D, Figure 4\u2014figure supplement 1C, and Figure 4\u2014figure supplement 1D showing protein and mRNA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "028a0ffe-1d23-4b09-8d09-ce28c4e35729",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C38",
+      "claim": "Knockdown of p53 in R26MER/MER MEFs completely abolished the effect of miR-92 to enhance c-Myc-induced apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of p53 in R26MER/MER MEFs not only led to a suppression of c-Myc-induced apoptosis, but also completely abolished the effect of miR-92 to enhance c-Myc-induced apoptosis (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 4E showing apoptosis data with p53 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "856b4559-e965-41f6-8e6b-79e4f4e12353",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C39",
+      "claim": "An intact p53 pathway is required for the apoptotic effect of miR-92.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggested that an intact p53 pathway is required for the apoptotic effect of miR-92.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on p53 knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "38305f10-332a-4287-b236-9628784acfc0",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C40",
+      "claim": "The miR-92 induction of the pro-apoptotic genes, including noxa, perp, and mdm2, was mediated by the intact p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the miR-92 induction of the pro-apoptotic genes, including noxa, perp, and mdm2, also was mediated by the intact p53 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 4F showing gene expression data with p53 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "1e52bc91-b3c9-48ac-99c5-929e62600835",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C41",
+      "claim": "miR-92 expression significantly enhanced c-Myc protein level both in MEFs and in primary B-cells without affecting the c-myc mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, miR-92 expression significantly enhanced c-Myc protein level both in MEFs and in primary B-cells (Figure 5A), without affecting the c-myc mRNA level (Figure 5\u2014figure supplement 1A, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5A and Figure 5\u2014figure supplement 1A showing protein and mRNA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "0152a55b-7b97-40b2-b4d8-f1283c2bb97c",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C42",
+      "claim": "miR-92 overexpression in R26MER/MER MEFs stabilized the MycERT2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the stabilization of endogenous c-Myc, miR-92 overexpression in R26MER/MER MEFs stabilized the MycERT2 protein (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5B showing protein turnover data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "4a221553-2c05-4e11-bf5c-c8d513c84cf0",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C43",
+      "claim": "fbw7 contains two miR-92 target sites within its 3\u2032UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Real-time PCR analysis of these candidate genes confirmed fbw7 (F-box and WD repeat domain-containing 7) as a likely target of miR-92 (Figure 5C, Figure 5\u2014figure supplement 1C). fbw7, which contains two miR-92 target sites within its 3\u2032UTR (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5C showing the target sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "b3876caf-15f8-4677-b076-0223300856b2",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C44",
+      "claim": "A luciferase reporter or a FLAG-tagged fbw7-encoding ORF, when fused to the wild-type fbw7 3\u2032 UTR, were both significantly repressed in a miR-92 dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "A luciferase reporter or a FLAG-tagged fbw7-encoding ORF (open reading frame), when fused to the wild-type fbw7 3\u2032 UTR, were both significantly repressed in a miR-92 dependent manner (Figure 5D, Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5D and Figure 5\u2014figure supplement 1D showing luciferase and western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "9134f1c3-52e8-4f3e-baea-9200fb026a9d",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C45",
+      "claim": "Enforced miR-92 expression failed to repress the luciferase reporter that contained an fbw7 3\u2032UTR with two mutated miR-92 binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet enforced miR-92 expression failed to repress the luciferase reporter that contained an fbw7 3\u2032UTR with two mutated miR-92 binding sites (Figure 5D), suggesting that miR-92 binding to fbw7 3\u2032UTR is required for this repression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5D showing luciferase data with mutated binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "137eb54d-d374-473c-b870-e526e75c9dc4",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C46",
+      "claim": "miR-92 effectively repressed endogenous Fbw7 protein level, as demonstrated by the decreased fbw7 mRNA level and Fbw7 immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, miR-92 effectively repressed endogenous Fbw7 protein level, as demonstrated by the decreased fbw7 mRNA level and Fbw7 immunoprecipitation (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5E showing mRNA and protein data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "d8327a3d-0d67-441b-aed2-08e64c107e6e",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C47",
+      "claim": "Enforced miR-92 expression upregulated multiple Fbw7 substrates at their protein levels, including c-Myc and cyclinE.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with fbw7 as an important target for miR-92, enforced miR-92 expression upregulated multiple Fbw7 substrates at their protein levels, including c-Myc and cyclinE (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5F showing protein and kinase activity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "87e88855-bba4-4786-a52f-47bcb5c48506",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C48",
+      "claim": "Acute fbw7 knockdown in R26MER/MER MEFs partially phenocopied the effect of miR-92 to enhance c-Myc-induced apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, acute fbw7 knockdown in R26MER/MER MEFs partially phenocopied the effect of miR-92 to enhance c-Myc-induced apoptosis (Figure 5G, Figure 5\u2014figure supplement 1G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5G and Figure 5\u2014figure supplement 1G showing apoptosis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "332809c7-7df0-4ffb-8303-0e7597fa80b1",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C49",
+      "claim": "Overexpression of an fbw7\u03b1 open reading frame completely abolished the apoptotic effect of miR-92.",
+      "claim_type": "EXPLICIT",
+      "source": "while overexpression of an fbw7\u03b1 open reading frame (ORF), albeit above its physiological level, completely abolished this apoptotic effect of miR-92 (Figure 5H, Figure 5\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5H and Figure 5\u2014figure supplement 1H showing apoptosis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "070b93ab-053a-4bb0-b2f7-4f04d412d588",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C50",
+      "claim": "Co-expression of miR-19 and miR-92 as a dicistron attenuated the apoptotic effect of miR-92 in premalignant E\u03bc-myc B-cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the opposing effects of miR-19 and miR-92, co-expression of these two miRNAs as a dicistron attenuated the apoptotic effect of miR-92 in premalignant E\u03bc-myc B-cells in vivo (Figure 6A,B, Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 6A,B and Figure 6\u2014figure supplement 1A showing apoptosis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "586e81bb-e745-4a72-a971-2058419cd858",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C51",
+      "claim": "A similar antagonistic interaction between miR-19 and miR-92 was observed in R26MER/MER MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar antagonistic interaction was also observed in R26MER/MER MEFs; and introducing a miR-19b mutation within mir-19b-92 dicistron abolished this interaction (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 6C showing apoptosis data in MEFs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "674b8348-6242-4eb4-82ec-a64026f2a5d8",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C52",
+      "claim": "When miR-92 was co-expressed with miR-19, there was a decreased p53 induction and an unaltered c-Myc level.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, we observed a decreased p53 induction and an unaltered c-Myc level when miR-92 was co-expressed with miR-19 (Figure 6D, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 6D and Figure 6\u2014figure supplement 1B showing western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "efca510b-ca85-4ad5-9b72-015795cab354",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C53",
+      "claim": "In Xenopus laevis, miR-19 and miR-92 have identical sequence to their mammalian orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus laevis, miR-19 and miR-92 have identical sequence to their mammalian orthologs (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 1\u2014figure supplement 1B showing sequence alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "ec285974-df5b-4e07-b899-d6e69fc3dcc1",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C54",
+      "claim": "Individual injection of miR-19 promoted cell survival of hydroxyurea-treated Xenopus embryos, while co-injection of miR-19a and miR-92 significantly attenuated this pro-survival effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual injection of miR-19 promoted cell survival of hydroxyurea-treated Xenopus embryos, while co-injection of miR-19a and miR-92 significantly attenuated this pro-survival effect (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 6E showing Xenopus embryo survival data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "7815ee59-8991-492d-bda7-fdb34c5b924a",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C55",
+      "claim": "The functional antagonism between miR-19 and miR-92 was specific, since co-injection of other mir-17-92 components or a mutated miR-92 did not yield any functional interactions in combination with miR-19.",
+      "claim_type": "EXPLICIT",
+      "source": "This functional antagonism was specific for miR-92 and miR-19, since co-injection of other mir-17-92 components or a mutated miR-92 did not yield any functional interactions in combination with miR-19 (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 6F showing Xenopus embryo survival data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "49fdb624-f1b0-49b6-a056-20a125648f81",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C56",
+      "claim": "The levels of miR-19a, miR-19b, and miR-92 were elevated in both premalignant and malignant E\u03bc-myc B-cells compared to normal splenic B-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing to normal splenic B-cells, the levels of all three mature miRNA species were elevated in both premalignant and malignant E\u03bc-myc B-cells, possibly due to transcriptional activation of mir-17-92 by c-Myc (Donnell et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation and supported by data in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "f76c1050-7d46-4438-90c1-936004779a44",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C57",
+      "claim": "The miR-19 to miR-92 ratios significantly increased during c-Myc-induced lymphomagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the miR-19 to miR-92 ratios significantly increased during c-Myc-induced lymphomagenesis (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 7B showing ratio data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "ae24dc10-8a68-42e3-b741-d48f8f566bd8",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C58",
+      "claim": "When normalized to the respective miRNA levels in normal splenic B-cells, mature miR-19 (including miR-19a and miR-19b) exhibited a greater increase in premalignant and malignant E\u03bc-myc B-cells than mature miR-92.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, when normalized to the respective miRNA levels in normal splenic B-cells, mature miR-19 (including miR-19a and miR-19b) exhibited a greater increase in premalignant and malignant E\u03bc-myc B-cells than mature miR-92 (Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figures 7A-C showing expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "372f0c84-61b6-44a3-8c0b-74a9fc0de1cb",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C59",
+      "claim": "This differential increase of miR-19 and miR-92 was also observed in human Burkitt's lymphoma cell lines when compared to normal B-cells isolated from the periphery blood.",
+      "claim_type": "EXPLICIT",
+      "source": "This differential increase of miR-19 and miR-92 was also observed in human Burkitt's lymphoma cell lines when compared to normal B-cells isolated from the periphery blood (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 7D showing expression data in human cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "fc9c6dd6-033c-4ea0-bd37-ed601d7bd710",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C60",
+      "claim": "In the LT2-MYC murine model of hepatocellular carcinoma (HCC), miR-19a and miR-19b exhibited a stronger increase than miR-92 when comparing tumor cells and the normal counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "In the LT2-MYC murine model of hepatocellular carcinoma (HCC), where tumor development was initiated by tetracycline-inducible c-Myc expression, miR-19a and miR-19b also exhibited a stronger increase than miR-92 when comparing tumor cells and the normal counterpart (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 7E showing expression data in HCC model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "07c5fb68-5654-4733-8e6f-becc792c4988",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C61",
+      "claim": "miR-92 is evolutionarily conserved in Deuterostome (including vertebrates and chordates), Ecdysozoa (including flies and worms), and Lophotrochozoa, yet the remaining mir-17-92 components are only found in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-92 is evolutionary conserved in Deuterostome (including vertebrates and chordates), Ecdysozoa (including flies and worms), and Lophotrochozoa, yet the remaining mir-17-92 components are only found in vertebrates (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 1\u2014figure supplement 1C showing evolutionary conservation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "053abf39-1626-43ea-b0be-83e8301bfa24",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C62",
+      "claim": "The polycistronic mir-17-92 employs an antagonistic interaction among its encoded miRNA components to confer an intricate crosstalk between the oncogene and tumor suppressor networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the polycistronic mir-17-92 employs an antagonistic interaction among its encoded miRNA components to confer an intricate crosstalk between the oncogene and tumor suppressor networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion in the Introduction based on the findings presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "d40146e9-4a43-4be4-af6c-8e1c69e291de",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C63",
+      "claim": "fbw7 is the substrate recognition component of an SCF-type E3 ubiquitin ligase that mediates the degradation of several proto-oncoproteins, including Myc, Cyclin E, c-Jun, and Notch.",
+      "claim_type": "EXPLICIT",
+      "source": "fbw7, which contains two miR-92 target sites within its 3\u2032UTR (Figure 5C), is the substrate recognition component of an SCF-type E3 ubiquitin ligase that mediates the degradation of several proto-oncoproteins, including Myc, Cyclin E, c-Jun, and Notch (Welcker and Clurman, 2008; Crusio et al., 2010; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "1c7fcd12-e543-45f5-ba4b-bac15c9d965f",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C64",
+      "claim": "The acute inactivation of tumor suppressor Fbw7 imposes a strong oncogenic stress to induce p53-dependent apoptosis, conferring a selective advantage to cells with deficient p53 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent findings indicate that the acute inactivation of tumor suppressor Fbw7 imposes a strong oncogenic stress to induce p53-dependent apoptosis, conferring a selective advantage to cells with deficient p53 function (Minella et al., 2007; Onoyama et al., 2007; Matsuoka et al., 2008; Grim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "1235f62f-3d32-4a09-959a-7b72b7dd37f1",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C65",
+      "claim": "The p53-dependent apoptosis induced by Fbw7 inactivation is, at least in part, due to an aberrant increase of c-Myc dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "This p53-dependent apoptosis is, at least in part, due to an aberrant increase of c-Myc dosage (Onoyama et al., 2007; Matsuoka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "4168e1f9-f958-4a68-9bcd-2684dc6fa477",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C66",
+      "claim": "miR-92 overexpression significantly increased the c-Myc protein level in wild-type Hct116 cells, but not in FBW7\u2212/\u2212 Hct116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, miR-92 overexpression significantly increased the c-Myc protein level in wild-type Hct116 cells, but not in FBW7\u2212/\u2212 Hct116 cells (Figure 5\u2014figure supplement 1F), suggesting FBW7 was essential for miR-92 to induce c-MYC increase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5\u2014figure supplement 1F showing western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "244df7bc-32f0-4374-aa40-bdb0e0f88dd7",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C67",
+      "claim": "There was an inverse correlation between the level of miR-92 and fbw7 when comparing E\u03bc-myc/17-92\u039492 and E\u03bc-myc/17-92 lymphoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Observations from our in vivo experiments also supported this post-transcriptional regulation of Fbw7 by miR-92, as we observed an inverse correlation between the level of miR-92 and fbw7 when comparing E\u03bc-myc/17-92\u039492 and E\u03bc-myc/17-92 lymphoma cells (Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with reference to Figure 5\u2014figure supplement 1E showing expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "3a919402-b42c-4e61-868f-4831319adb9f",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C68",
+      "claim": "The miR-92-Fbw7-Myc axis constitutes a major mechanism underlying the pro-apoptotic effects of miR-92.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these caveats, our results strongly argue that the miR-92-Fbw7 axis constitutes a major mechanism underlying the pro-apoptotic effects of miR-92.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the functional studies presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "d007f83e-c8e7-43c2-a8ae-f353cc993f7f",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C69",
+      "claim": "The activation of AKT signaling by miR-19 would lead to increased phosphorylation of Mdm2, thus destabilizing p53 to dampen the apoptotic response induced by miR-92.",
+      "claim_type": "EXPLICIT",
+      "source": "Since miR-19 represses pten to promote the PI3K/AKT pathway, the activation of AKT signaling would lead to increased phosphorylation of Mdm2, thus destabilizing p53 to dampen the apoptotic response induced by miR-92 (Gottlieb et al., 2002; Ogawara et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to prior literature explaining the mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "2571850b-26ea-4d65-b677-a66ed4f9a5db",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C70",
+      "claim": "The functional readout of miR-92 heavily depends on cell types and biological contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional readout of miR-92 heavily depends on cell types and biological contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "0a05252d-c5c0-45e0-9c8e-c98fbf4487e0",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C71",
+      "claim": "miR-92 is not a tumor suppressor miRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to recognize that miR-92 is not a tumor suppressor miRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "965b4b52-824f-4392-be6f-fc00a770ccac",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C72",
+      "claim": "Like c-Myc, miR-92 elicits potent oncogene stress to engage tumor suppressor response, at least in part, by activating p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Like c-Myc, miR-92 elicits potent oncogene stress to engage tumor suppressor response, at least in part, by activating p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section based on the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "5f80baff-0a69-4cbc-9769-1d2d38f7346b",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C73",
+      "claim": "Under contexts when proliferation becomes a rate-limiting event for oncogenesis, or when p53-dependent apoptosis is compromised, miR-92 could render a pro-proliferative effect that is strictly oncogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Under other contexts when proliferation becomes a rate-limiting event for oncogenesis, or when p53-dependent apoptosis is compromised, miR-92 could render a pro-proliferative effect that is strictly oncogenic (Tsuchida et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "5f1e43cd-a67a-4d38-80e3-240b06738db1",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C74",
+      "claim": "The miR-19:miR-92 antagonism constitutes a novel mechanism to confer an intricate balance between oncogene signaling and innate tumor suppressor responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The miR-19:miR-92 antagonism constitutes a novel mechanism to confer an intricate balance between oncogene signaling and innate tumor suppressor responses (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the Discussion section with reference to Figure 7F showing a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "1055c698-8969-4e4f-9c44-69c4e9ff0ae5",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C75",
+      "claim": "An increase in the miR-19:miR-92 ratio is likely to favor the suppression of c-Myc-induced apoptosis and to promote oncogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This balance can be disrupted in premalignant and malignant cells that exhibit c-Myc overexpression, as an increase in the miR-19:miR-92 ratio is likely to favor the suppression of c-Myc-induced apoptosis and to promote oncogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section based on the expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "a60717c5-ef10-440e-86a7-6c75e31bac93",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C76",
+      "claim": "Different changes of miR-19 vs miR-92 during oncogenesis could be a result of differential miRNA biogenesis and/or turn-over.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all mir-17-92 components are co-transcriptionally regulated, different changes of miR-19 vs miR-92 during oncogenesis could be a result of differential miRNA biogenesis and/or turn-over.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a possible explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "58e68871-3881-45e9-8ffe-18e496895849",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C77",
+      "claim": "Specific RNA-binding proteins, such as hnRNP A1, promote the processing of a specific mir-17-92 component, miR-18.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that specific RNA-binding proteins, such as hnRNP A1, promote the processing of a specific mir-17-92 component, miR-18 (Guil and C\u00e1ceres, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "24100fc5-bd12-4c4f-a79d-fbfbad8a9aec",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C78",
+      "claim": "The functional antagonism between the more ancient miR-92 and the newly evolved mir-19 might result from the convergence of these two separate evolutionary paths at the origin of vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional antagonism between the more ancient miR-92 and the newly evolved mir-19 might result from the convergence of these two separate evolutionary paths at the origin of vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "ce24f470-bd37-4935-a4b0-df5ee203be5e",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C79",
+      "claim": "The complex interactions among polycistronic miRNA components can coordinate and balance a multitude of cellular and molecular processes during normal development and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the complex interactions among polycistronic miRNA components can coordinate and balance a multitude of cellular and molecular processes during normal development and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a general principle.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "db06edb7-c5d5-407d-be4d-53bc9a600b38",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "claim_id": "C80",
+      "claim": "A crosstalk between oncogene and tumor suppressor pathways has been hardwired through evolution into the unique gene structure of a polycistronic oncomir.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our studies suggest a novel mechanism by which a crosstalk between oncogene and tumor suppressor pathways has been hardwired through evolution into the unique gene structure of a polycistronic oncomir.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b93daaff-8c3b-4a89-9c04-57f19d618b98",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "mir-17-92 is a polycistronic oncomir that produces six mature miRNAs categorized into four families based on seed sequence homology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10, and C11 are well-supported by Figure 1A showing the gene structure and seed sequences. The classification into four families (miR-17, miR-18, miR-19, miR-92) is clearly demonstrated with appropriate visual and textual evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "0d479d88-ee83-4ff3-9422-e9d4768c3481",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "miR-92 has a more ancient evolutionary history than other mir-17-92 components, being conserved across vertebrates, chordates, invertebrates, and multiple phyla, while other components are vertebrate-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C13, and C61 are supported by Figure 1\u2014figure supplement 1B,C showing evolutionary conservation patterns and cited literature (Tanzer and Stadler, 2004). The phylogenetic data clearly demonstrates the broader conservation of miR-92.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "b71178c7-f345-442f-abbe-15b68fe1ed7c",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "miR-92 negatively regulates the oncogenic cooperation between mir-17-92 and c-Myc, as deletion or mutation of miR-92 significantly accelerates tumor onset in the E\u03bc-myc model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17, C18, C19, and C20 are strongly supported by survival data in Figure 1C showing significantly shorter survival with miR-92 deletion/mutation (66 days vs 112 days, p<0.0001). The specificity is demonstrated by lack of effect with miR-20 or miR-17 mutations. Statistical significance is properly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "83673780-ca74-40d9-8c05-55c6fca00ac0",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "miR-92 deficiency leads to more aggressive B-lymphomas with reduced apoptosis, as evidenced by transformation of earlier progenitor cells, widespread dissemination, and decreased 'starry sky' pathology and cleaved caspase-3 staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 are supported by immunophenotyping data (Figure 2A, Table 1), histology (Figure 2B), and quantitative apoptosis measurements (Figure 2C-E). The data consistently show that intact miR-92 attenuates the anti-apoptotic effects of mir-17-92, with appropriate statistical comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "d5a9cca2-99bd-4be0-8e40-6f7134b27017",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "miR-92 overexpression enhances c-Myc-induced apoptosis both in vivo in the E\u03bc-myc model and in vitro in R26MER/MER MEFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, and C29 are supported by multiple apoptosis assays (Figures 3A-C, Figure 3\u2014figure supplement 1A-C) showing increased apoptosis and cell depletion with miR-92 overexpression. The consistency across in vivo and in vitro systems strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "4897fc50-d18d-460f-a7a4-e7ac60e63647",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "miR-92 couples c-Myc-induced proliferation and apoptosis by enhancing both processes, as demonstrated by increased BrdU incorporation and requirement for mir-17-92's proliferative effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by BrdU incorporation data (Figure 3D-F, Figure 3\u2014figure supplement 1D) showing miR-92 promotes proliferation in both MEFs and primary B-cells. The dual function of miR-92 in promoting both proliferation and apoptosis is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "c7266036-4291-40e8-8319-89407b4ee8c7",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "miR-92 upregulates genes in the cell cycle pathway (ccnd1, ccnb1, ccnb2, cdc25b, cdc25c, cdk4) and p53 pathway (mdm2, noxa, bax, puma, perp, bid).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C35 are supported by microarray data (Figure 4A,B) showing significant enrichment of these pathways, with validation by real-time PCR (Figure 4C, Figure 4\u2014figure supplement 1A,B). The pathway analysis methodology is appropriate and results are consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "ce19eb43-8183-47db-9af6-f296ea6a59c2",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "miR-92 activates the p53 pathway through Arf induction and p53 protein stabilization, and this p53 activation is required for miR-92's apoptotic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by western blot data (Figure 4D, Figure 4\u2014figure supplement 1C) showing Arf and p53 protein accumulation, and p53 knockdown experiments (Figure 4E,F) demonstrating requirement for p53 in miR-92-induced apoptosis. The mechanistic link is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "d20ee191-329e-4a2d-87ae-ce1b50702ac1",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "miR-92 increases c-Myc protein levels without affecting c-myc mRNA, through stabilization of the c-Myc protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C42 are supported by western blot data (Figure 5A) showing increased c-Myc protein in MEFs and B-cells, protein turnover assays (Figure 5B), and RT-PCR data (Figure 5\u2014figure supplement 1A) showing no mRNA change. The post-transcriptional regulation is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "2c78fb3b-ad7c-4d38-b736-203a08154463",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "miR-92 directly targets fbw7 through two binding sites in its 3'UTR, leading to decreased Fbw7 protein and increased levels of Fbw7 substrates including c-Myc and cyclin E.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by luciferase reporter assays (Figure 5D), western blots (Figure 5E), and functional assays (Figure 5F) showing Fbw7 repression and substrate accumulation. The requirement for intact binding sites (C45) demonstrates specificity. The mechanistic chain is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "3a90901d-fb2e-494a-84a7-b86423d94e3c",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The miR-92-Fbw7-Myc axis constitutes a major mechanism for miR-92's pro-apoptotic effects, as demonstrated by fbw7 knockdown phenocopying miR-92 effects and fbw7 overexpression abolishing them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C49, C66, C67, and C68 are supported by functional rescue experiments (Figures 5G,H, Figure 5\u2014figure supplement 1F-H) showing fbw7 knockdown partially phenocopies miR-92 and fbw7 overexpression blocks miR-92 effects. The inverse correlation in vivo (C67) provides additional support. However, the authors acknowledge caveats about physiological levels and partial phenocopy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "00523805-0928-4fef-805c-7c9e9d0c1f19",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "miR-19 antagonizes miR-92's apoptotic effects through decreased p53 induction, as demonstrated in both E\u03bc-myc B-cells and R26MER/MER MEFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, and C52 are supported by apoptosis assays (Figures 6A-C, Figure 6\u2014figure supplement 1A) showing miR-19 dampens miR-92-induced apoptosis, and western blots (Figure 6D, Figure 6\u2014figure supplement 1B) showing decreased p53 with co-expression. The mutation control (C51) demonstrates specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "14dfb157-23f3-4116-b02b-a7c7572c370f",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The miR-19:miR-92 antagonism is evolutionarily conserved in Xenopus laevis, where miR-92 specifically attenuates miR-19's pro-survival effects in hydroxyurea-treated embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, and C55 are supported by Xenopus embryo survival assays (Figures 6E,F) showing miR-92 specifically antagonizes miR-19 but not other mir-17-92 components. The sequence conservation (Figure 1\u2014figure supplement 1B) and specificity controls strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "3c9d20cd-1c8a-4090-84d0-bc90a8b34fd5",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "During c-Myc-induced lymphomagenesis, the miR-19:miR-92 ratio increases significantly, with miR-19 showing greater elevation than miR-92 in both premalignant and malignant E\u03bc-myc B-cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C57, and C58 are supported by real-time PCR data (Figures 7A,B) and northern blot analysis (Figure 7C) showing differential expression patterns. The quantitative measurements clearly demonstrate the increased ratio, with appropriate normalization to normal B-cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "0067fc82-d9a2-4e08-9078-706b96b27719",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The differential increase of miR-19 over miR-92 is observed in human Burkitt's lymphoma cell lines and in the LT2-MYC hepatocellular carcinoma model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C60 are supported by real-time PCR data (Figures 7D,E) showing similar patterns in human Burkitt's lymphoma and mouse HCC. This extends the finding beyond the E\u03bc-myc model and demonstrates broader relevance to c-Myc-driven cancers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "c8365320-53fd-4678-8bd1-b77df5887bfd",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "mir-17-92 exhibits oncogenic activity in the E\u03bc-myc model primarily through its miR-19 components, as mutations of both miR-19 miRNAs nearly abolish oncogenic cooperation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C21 are supported by survival data (Figure 1C) and prior work (Olive et al., 2009). The contrast with miR-92's negative regulatory role highlights the complexity of the polycistronic structure. The citation to prior work is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "6f3b7b94-6105-4580-99ee-cebf37390aac",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The polycistronic mir-17-92 employs antagonistic interactions among its components to confer intricate crosstalk between oncogene and tumor suppressor networks, representing a mechanism hardwired through evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C74, and C80 represent the overarching conclusion supported by the collective data showing miR-19:miR-92 antagonism, evolutionary conservation, and functional consequences. The model in Figure 7F integrates the findings. This is a well-supported synthesis of the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "614cf41e-a181-4dfb-a30a-10728c9c45f6",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about mir-17-92 amplification in human tumors, its pleiotropic functions, the E\u03bc-myc model, and Fbw7 function are cited from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C14, C15, C63, C64, and C65 are appropriately cited to prior literature and represent established knowledge used to contextualize the current work. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "592700fb-bd25-4ec6-a4e6-ef0cf7022b46",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The mechanism by which miR-19 antagonizes miR-92 involves AKT-mediated Mdm2 phosphorylation leading to p53 destabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is proposed as a mechanism based on prior knowledge about miR-19's repression of PTEN and AKT signaling, but is not directly tested in this manuscript. While the hypothesis is reasonable and supported by citations, the specific mechanism linking miR-19 to p53 destabilization in this context is inferred rather than demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "47c65aaa-32b5-48b8-8846-21388f89ff15",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "miR-92 is not a tumor suppressor but rather elicits oncogene stress that engages p53-dependent tumor suppressor responses, with context-dependent functional outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 represent interpretive conclusions in the Discussion that are well-supported by the data showing miR-92's dual effects on proliferation and apoptosis. The context-dependency is demonstrated by the requirement for intact p53 and the differential effects in various settings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    },
+    {
+      "id": "3377b16d-a2b7-4e50-98ea-7e867d3d6760",
+      "content_id": "6a3f471c-0f4e-4d4a-98ca-4ad3a9d8afef",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The disruption of miR-19:miR-92 balance during oncogenesis may result from differential miRNA biogenesis/turnover, potentially involving RNA-binding proteins, and represents an evolutionary convergence at the origin of vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C79 are largely speculative interpretations in the Discussion. While C75 is supported by the expression data, C76-C79 propose mechanisms and evolutionary scenarios that are not directly tested. C77 cites prior work on hnRNP A1, but the specific mechanisms for differential miR-19/miR-92 regulation remain to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:45:48.682056Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "296a5aa0-f1d9-4471-b394-2f051e0c1486",
+      "result_id": "b93daaff-8c3b-4a89-9c04-57f19d618b98"
+    },
+    {
+      "claim_id": "eb5f43f2-ed0d-4fad-be69-f0e25cdb841c",
+      "result_id": "b93daaff-8c3b-4a89-9c04-57f19d618b98"
+    },
+    {
+      "claim_id": "93957b84-1cec-47bf-9d0b-8a39febbbf4b",
+      "result_id": "b93daaff-8c3b-4a89-9c04-57f19d618b98"
+    },
+    {
+      "claim_id": "d65e4520-815f-4f37-a7ac-fbd4c6612579",
+      "result_id": "0d479d88-ee83-4ff3-9422-e9d4768c3481"
+    },
+    {
+      "claim_id": "7bf6f286-b979-4779-8ed1-b2e34cbbd476",
+      "result_id": "0d479d88-ee83-4ff3-9422-e9d4768c3481"
+    },
+    {
+      "claim_id": "07c5fb68-5654-4733-8e6f-becc792c4988",
+      "result_id": "0d479d88-ee83-4ff3-9422-e9d4768c3481"
+    },
+    {
+      "claim_id": "c78e8066-84e6-4108-b390-b13944b09367",
+      "result_id": "b71178c7-f345-442f-abbe-15b68fe1ed7c"
+    },
+    {
+      "claim_id": "36f0ce56-6a0f-4503-8c80-8833850b8669",
+      "result_id": "b71178c7-f345-442f-abbe-15b68fe1ed7c"
+    },
+    {
+      "claim_id": "1bd965bf-eaab-42a0-aab8-8a16aaf9a992",
+      "result_id": "b71178c7-f345-442f-abbe-15b68fe1ed7c"
+    },
+    {
+      "claim_id": "022eeb38-3c0a-4288-8e47-559eb6ce2792",
+      "result_id": "b71178c7-f345-442f-abbe-15b68fe1ed7c"
+    },
+    {
+      "claim_id": "3f40b58b-c097-4319-8e22-acf46d987de4",
+      "result_id": "b71178c7-f345-442f-abbe-15b68fe1ed7c"
+    },
+    {
+      "claim_id": "f6509ab0-bbb8-4ab2-9eb3-0ffad56a102f",
+      "result_id": "83673780-ca74-40d9-8c05-55c6fca00ac0"
+    },
+    {
+      "claim_id": "7d83adf2-82a2-455b-922e-5b51b71aaf5b",
+      "result_id": "83673780-ca74-40d9-8c05-55c6fca00ac0"
+    },
+    {
+      "claim_id": "3ed2d930-0863-43cb-8ae2-b9de1082112c",
+      "result_id": "83673780-ca74-40d9-8c05-55c6fca00ac0"
+    },
+    {
+      "claim_id": "f7656a22-91b9-4a79-8ea7-6bbecf39f334",
+      "result_id": "83673780-ca74-40d9-8c05-55c6fca00ac0"
+    },
+    {
+      "claim_id": "a3cb4009-ca38-40c7-a6d5-f7885dc18a01",
+      "result_id": "83673780-ca74-40d9-8c05-55c6fca00ac0"
+    },
+    {
+      "claim_id": "55f5996f-3afe-415a-ace4-825cc1c6ae2f",
+      "result_id": "d5a9cca2-99bd-4be0-8e40-6f7134b27017"
+    },
+    {
+      "claim_id": "07bbaa59-e089-41ae-99df-2c216c7f1b08",
+      "result_id": "d5a9cca2-99bd-4be0-8e40-6f7134b27017"
+    },
+    {
+      "claim_id": "73c74b84-fb62-4c57-8e57-f5af1d5553a2",
+      "result_id": "d5a9cca2-99bd-4be0-8e40-6f7134b27017"
+    },
+    {
+      "claim_id": "2bb6310d-4ade-4d1d-b630-fb4205d84094",
+      "result_id": "4897fc50-d18d-460f-a7a4-e7ac60e63647"
+    },
+    {
+      "claim_id": "f522271f-e2c0-4d12-9170-6d0ef417613c",
+      "result_id": "4897fc50-d18d-460f-a7a4-e7ac60e63647"
+    },
+    {
+      "claim_id": "7d174eac-dfae-488b-b581-aa291bc592b0",
+      "result_id": "4897fc50-d18d-460f-a7a4-e7ac60e63647"
+    },
+    {
+      "claim_id": "59d3119c-60d7-4561-8481-9f8324b42a47",
+      "result_id": "4897fc50-d18d-460f-a7a4-e7ac60e63647"
+    },
+    {
+      "claim_id": "ea65a33b-0c3f-4bf2-9d88-a979afe2a779",
+      "result_id": "c7266036-4291-40e8-8319-89407b4ee8c7"
+    },
+    {
+      "claim_id": "c16f8370-d519-4b7b-a97b-d2094210648f",
+      "result_id": "c7266036-4291-40e8-8319-89407b4ee8c7"
+    },
+    {
+      "claim_id": "a56b3af9-454b-409b-bb2d-8e0fdb3fd242",
+      "result_id": "ce19eb43-8183-47db-9af6-f296ea6a59c2"
+    },
+    {
+      "claim_id": "02af4966-5e5b-4d26-a142-fc075374dced",
+      "result_id": "ce19eb43-8183-47db-9af6-f296ea6a59c2"
+    },
+    {
+      "claim_id": "028a0ffe-1d23-4b09-8d09-ce28c4e35729",
+      "result_id": "ce19eb43-8183-47db-9af6-f296ea6a59c2"
+    },
+    {
+      "claim_id": "856b4559-e965-41f6-8e6b-79e4f4e12353",
+      "result_id": "ce19eb43-8183-47db-9af6-f296ea6a59c2"
+    },
+    {
+      "claim_id": "38305f10-332a-4287-b236-9628784acfc0",
+      "result_id": "ce19eb43-8183-47db-9af6-f296ea6a59c2"
+    },
+    {
+      "claim_id": "1e52bc91-b3c9-48ac-99c5-929e62600835",
+      "result_id": "d20ee191-329e-4a2d-87ae-ce1b50702ac1"
+    },
+    {
+      "claim_id": "0152a55b-7b97-40b2-b4d8-f1283c2bb97c",
+      "result_id": "d20ee191-329e-4a2d-87ae-ce1b50702ac1"
+    },
+    {
+      "claim_id": "4a221553-2c05-4e11-bf5c-c8d513c84cf0",
+      "result_id": "2c78fb3b-ad7c-4d38-b736-203a08154463"
+    },
+    {
+      "claim_id": "b3876caf-15f8-4677-b076-0223300856b2",
+      "result_id": "2c78fb3b-ad7c-4d38-b736-203a08154463"
+    },
+    {
+      "claim_id": "9134f1c3-52e8-4f3e-baea-9200fb026a9d",
+      "result_id": "2c78fb3b-ad7c-4d38-b736-203a08154463"
+    },
+    {
+      "claim_id": "137eb54d-d374-473c-b870-e526e75c9dc4",
+      "result_id": "2c78fb3b-ad7c-4d38-b736-203a08154463"
+    },
+    {
+      "claim_id": "d8327a3d-0d67-441b-aed2-08e64c107e6e",
+      "result_id": "2c78fb3b-ad7c-4d38-b736-203a08154463"
+    },
+    {
+      "claim_id": "87e88855-bba4-4786-a52f-47bcb5c48506",
+      "result_id": "3a90901d-fb2e-494a-84a7-b86423d94e3c"
+    },
+    {
+      "claim_id": "332809c7-7df0-4ffb-8303-0e7597fa80b1",
+      "result_id": "3a90901d-fb2e-494a-84a7-b86423d94e3c"
+    },
+    {
+      "claim_id": "4168e1f9-f958-4a68-9bcd-2684dc6fa477",
+      "result_id": "3a90901d-fb2e-494a-84a7-b86423d94e3c"
+    },
+    {
+      "claim_id": "244df7bc-32f0-4374-aa40-bdb0e0f88dd7",
+      "result_id": "3a90901d-fb2e-494a-84a7-b86423d94e3c"
+    },
+    {
+      "claim_id": "3a919402-b42c-4e61-868f-4831319adb9f",
+      "result_id": "3a90901d-fb2e-494a-84a7-b86423d94e3c"
+    },
+    {
+      "claim_id": "070b93ab-053a-4bb0-b2f7-4f04d412d588",
+      "result_id": "00523805-0928-4fef-805c-7c9e9d0c1f19"
+    },
+    {
+      "claim_id": "586e81bb-e745-4a72-a971-2058419cd858",
+      "result_id": "00523805-0928-4fef-805c-7c9e9d0c1f19"
+    },
+    {
+      "claim_id": "674b8348-6242-4eb4-82ec-a64026f2a5d8",
+      "result_id": "00523805-0928-4fef-805c-7c9e9d0c1f19"
+    },
+    {
+      "claim_id": "efca510b-ca85-4ad5-9b72-015795cab354",
+      "result_id": "14dfb157-23f3-4116-b02b-a7c7572c370f"
+    },
+    {
+      "claim_id": "ec285974-df5b-4e07-b899-d6e69fc3dcc1",
+      "result_id": "14dfb157-23f3-4116-b02b-a7c7572c370f"
+    },
+    {
+      "claim_id": "7815ee59-8991-492d-bda7-fdb34c5b924a",
+      "result_id": "14dfb157-23f3-4116-b02b-a7c7572c370f"
+    },
+    {
+      "claim_id": "49fdb624-f1b0-49b6-a056-20a125648f81",
+      "result_id": "3c9d20cd-1c8a-4090-84d0-bc90a8b34fd5"
+    },
+    {
+      "claim_id": "f76c1050-7d46-4438-90c1-936004779a44",
+      "result_id": "3c9d20cd-1c8a-4090-84d0-bc90a8b34fd5"
+    },
+    {
+      "claim_id": "ae24dc10-8a68-42e3-b741-d48f8f566bd8",
+      "result_id": "3c9d20cd-1c8a-4090-84d0-bc90a8b34fd5"
+    },
+    {
+      "claim_id": "372f0c84-61b6-44a3-8c0b-74a9fc0de1cb",
+      "result_id": "0067fc82-d9a2-4e08-9078-706b96b27719"
+    },
+    {
+      "claim_id": "fc9c6dd6-033c-4ea0-bd37-ed601d7bd710",
+      "result_id": "0067fc82-d9a2-4e08-9078-706b96b27719"
+    },
+    {
+      "claim_id": "6bcf0c16-8a36-47e7-84d5-3632ca8ebd85",
+      "result_id": "c8365320-53fd-4678-8bd1-b77df5887bfd"
+    },
+    {
+      "claim_id": "40cd6371-2fcf-474a-8d4a-3c0cbaf8b207",
+      "result_id": "c8365320-53fd-4678-8bd1-b77df5887bfd"
+    },
+    {
+      "claim_id": "053abf39-1626-43ea-b0be-83e8301bfa24",
+      "result_id": "6f3b7b94-6105-4580-99ee-cebf37390aac"
+    },
+    {
+      "claim_id": "5f1e43cd-a67a-4d38-80e3-240b06738db1",
+      "result_id": "6f3b7b94-6105-4580-99ee-cebf37390aac"
+    },
+    {
+      "claim_id": "db06edb7-c5d5-407d-be4d-53bc9a600b38",
+      "result_id": "6f3b7b94-6105-4580-99ee-cebf37390aac"
+    },
+    {
+      "claim_id": "af15b54e-b798-48cd-bd13-0a179f8714d8",
+      "result_id": "614cf41e-a181-4dfb-a30a-10728c9c45f6"
+    },
+    {
+      "claim_id": "9ca2e4dc-d7a2-4caf-b558-a197b0e31268",
+      "result_id": "614cf41e-a181-4dfb-a30a-10728c9c45f6"
+    },
+    {
+      "claim_id": "d71e1d02-bc54-488f-b9af-41f7ce472d05",
+      "result_id": "614cf41e-a181-4dfb-a30a-10728c9c45f6"
+    },
+    {
+      "claim_id": "471fe242-0249-457d-912e-df8ffb5b3efe",
+      "result_id": "614cf41e-a181-4dfb-a30a-10728c9c45f6"
+    },
+    {
+      "claim_id": "d40146e9-4a43-4be4-af6c-8e1c69e291de",
+      "result_id": "614cf41e-a181-4dfb-a30a-10728c9c45f6"
+    },
+    {
+      "claim_id": "1c7fcd12-e543-45f5-ba4b-bac15c9d965f",
+      "result_id": "614cf41e-a181-4dfb-a30a-10728c9c45f6"
+    },
+    {
+      "claim_id": "1235f62f-3d32-4a09-959a-7b72b7dd37f1",
+      "result_id": "614cf41e-a181-4dfb-a30a-10728c9c45f6"
+    },
+    {
+      "claim_id": "d007f83e-c8e7-43c2-a8ae-f353cc993f7f",
+      "result_id": "592700fb-bd25-4ec6-a4e6-ef0cf7022b46"
+    },
+    {
+      "claim_id": "2571850b-26ea-4d65-b677-a66ed4f9a5db",
+      "result_id": "47c65aaa-32b5-48b8-8846-21388f89ff15"
+    },
+    {
+      "claim_id": "0a05252d-c5c0-45e0-9c8e-c98fbf4487e0",
+      "result_id": "47c65aaa-32b5-48b8-8846-21388f89ff15"
+    },
+    {
+      "claim_id": "965b4b52-824f-4392-be6f-fc00a770ccac",
+      "result_id": "47c65aaa-32b5-48b8-8846-21388f89ff15"
+    },
+    {
+      "claim_id": "5f80baff-0a69-4cbc-9769-1d2d38f7346b",
+      "result_id": "47c65aaa-32b5-48b8-8846-21388f89ff15"
+    },
+    {
+      "claim_id": "1055c698-8969-4e4f-9c44-69c4e9ff0ae5",
+      "result_id": "3377b16d-a2b7-4e50-98ea-7e867d3d6760"
+    },
+    {
+      "claim_id": "a60717c5-ef10-440e-86a7-6c75e31bac93",
+      "result_id": "3377b16d-a2b7-4e50-98ea-7e867d3d6760"
+    },
+    {
+      "claim_id": "58e68871-3881-45e9-8ffe-18e496895849",
+      "result_id": "3377b16d-a2b7-4e50-98ea-7e867d3d6760"
+    },
+    {
+      "claim_id": "24100fc5-bd12-4c4f-a79d-fbfbad8a9aec",
+      "result_id": "3377b16d-a2b7-4e50-98ea-7e867d3d6760"
+    },
+    {
+      "claim_id": "ce24f470-bd37-4935-a4b0-df5ee203be5e",
+      "result_id": "3377b16d-a2b7-4e50-98ea-7e867d3d6760"
+    }
+  ],
+  "comparisons": []
+}

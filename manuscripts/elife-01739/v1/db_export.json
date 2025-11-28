@@ -1,0 +1,1754 @@
+{
+  "submission": {
+    "id": "08063ce5-7f95-4a39-8ac7-297cba100812",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:24:59.840982Z",
+    "updated_at": "2025-11-28T20:24:59.840982Z"
+  },
+  "content": [
+    {
+      "id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "submission_id": "08063ce5-7f95-4a39-8ac7-297cba100812",
+      "content_type": "manuscript",
+      "content_text": "# FRET-based reporters for the direct visualization of abscisic acid concentration changes and distribution in Arabidopsis\n\n## Authors\n\n- Rainer Waadt<sup>1</sup>\n- Kenichi Hitomi<sup>3</sup>\n- Noriyuki Nishimura<sup>1</sup>\n- Chiharu Hitomi<sup>3</sup>\n- Stephen R Adams<sup>5</sup>\n- Elizabeth D Getzoff<sup>3</sup>\n- Julian I Schroeder<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Biological Sciences, Cell and Developmental Biology Section University of California, San Diego La Jolla United States\n2. Food and Fuel for the 21st Century University of California, San Diego La Jolla United States\n3. Department of Integrative Structural and Computational Biology The Scripps Research Institute La Jolla United States\n4. The Skaggs Institute for Chemical Biology The Scripps Research Institute La Jolla United States\n5. Department of Pharmacology University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAbscisic acid (ABA) is a plant hormone that regulates plant growth and development and mediates abiotic stress responses. Direct cellular monitoring of dynamic ABA concentration changes in response to environmental cues is essential for understanding ABA action. We have developed ABAleons: ABA-specific optogenetic reporters that instantaneously convert the phytohormone-triggered interaction of ABA receptors with PP2C-type phosphatases to send a fluorescence resonance energy transfer (FRET) signal in response to ABA. We report the design, engineering and use of ABAleons with ABA affinities in the range of 100\u2013600 nM to map ABA concentration changes in plant tissues with spatial and temporal resolution. High ABAleon expression can partially repress Arabidopsis ABA responses. ABAleons report ABA concentration differences in distinct cell types, ABA concentration increases in response to low humidity and NaCl in guard cells and to NaCl and osmotic stress in roots and ABA transport from the hypocotyl to the shoot and root.\n\n## Introduction\n\nPlant hormones control plant growth and development. Knowledge of the locations of hormone synthesis and transport, and the resulting hormone gradients and distributions in plants is important for understanding how plants respond to their environment via hormone signaling and cross talk of hormone and other small molecule signaling pathways (Hetherington and Woodward, 2003; Israelsson et al., 2006; Nemhauser et al., 2006; Muday et al., 2012). Among plant hormones, auxin is best characterized in terms of its distribution and transport (Vanneste and Friml, 2009), analyzed using reporter constructs for auxin-induced gene expression or protein degradation (Ulmasov et al., 1997; Brunoud et al., 2012; Wend et al., 2013). Reporter genes developed for ABA-induced gene expression (pRD29A/B, pRAB18 and pAtHB6) are also used (L\u00e5ng and Palva, 1992; Yamaguchi-Shinozaki and Shinozaki, 1993; Ishitani et al., 1997; Christmann et al., 2005; Kim et al., 2011; Duan et al., 2013). Despite their potential, such promoter-linked reporters respond indirectly and slowly to their respective plant hormone. To unequivocally investigate dynamic models of hormone distribution and dissect the complex functions and interconnection of these signaling molecules, direct plant hormone reporters that act instantaneously and reversibly are essential.\n\nOptogenetic reporters provide a potential solution. These genetically engineered chromogenic proteins (often fluorescent proteins) respond to a specific environmental change via conformationally linked changes in their spectral properties measurable with optical instruments (Giepmans et al., 2006; Alford et al., 2013). Such reporters have been developed for a whole palette of molecules and physiochemical processes (Okumoto et al., 2012). However, no reporters for direct visualization of any plant hormone have yet been developed.\n\nDuring land colonization, plants adopted ABA as a hormone to signal stress due to limited water supply (Cutler et al., 2010; Raghavendra et al., 2010; Hauser et al., 2011). ABA is integrated into a complex signaling network that transcriptionally and post-translationally regulates seed germination, root development and stomatal aperture (Hetherington and Woodward, 2003; Cutler et al., 2010; Kim et al., 2010; Raghavendra et al., 2010; Tanaka et al., 2013). ABA biosynthesis is a multi-step reaction involving Zeaxanthin epoxidation, isomerization and cleavage to Xanthoxin in the plastid, followed by conversion to abscisic aldehyde and oxidization to ABA in the cytoplasm (Nambara and Marion-Poll, 2005). In Arabidopsis, ABA is synthesized primarily in vascular tissues of roots and leaves, in guard cells and in seeds (Sauter et al., 2001; Endo et al., 2008; Seo and Koshiba, 2011; Bauer et al., 2013; Boursiac et al., 2013). ABA catabolism includes hydroxylation pathways and glucose conjugation leading to less- or inactive compounds (Nambara and Marion-Poll, 2005; Kepka et al., 2011). ABA-glucose ester is stored in the vacuole and was reported to be rapidly hydrolyzed by \u03b2-glucosidases (Lee et al., 2006). However, direct measurements of rapid ABA release are missing.\n\nABA moves throughout the plant and crosses cell borders as a function of pH. This \u2018ionic trap model\u2019 explains the movement, but excludes cellular efflux of ABA due to low apoplastic pH (Sauter et al., 2001; Seo and Koshiba, 2011; Boursiac et al., 2013). Recently identified ABA transporters contribute to ABA export from the vasculature and import into guard cells (Kang et al., 2010; Kuromori et al., 2010, 2011; Kanno et al., 2012; Boursiac et al., 2013). Two non-mutually exclusive current models describe how water limitations in the root induce stomatal closure in the leaf: (1) ABA acts as a chemical signal synthesized in the root and transported to the shoot (Sauter et al., 2001; Wilkinson and Davies, 2002), and (2) a hydraulic signal from the root induces ABA synthesis in the shoot (Christmann et al., 2005, 2007; Ikegami et al., 2009).\n\nIn response to water limitations ABA concentrations increase (Harris et al., 1988; Harris and Outlaw, 1991; Christmann et al., 2007; Forcat et al., 2008; Ikegami et al., 2009; Geng et al., 2013) and decrease upon stress relief (Harris and Outlaw, 1991; Endo et al., 2008). Despite recent progress on ABA synthesis and transport, direct evidence for conditionally triggered changes in local ABA concentrations and time-resolved data for ABA re-distribution in vivo are lacking.\n\nABA is perceived by members of a protein family designated as PYRABACTIN RESISTANCE 1 (PYR1)/PYR1-LIKE (PYL)/REGULATORY COMPONENT OF ABA RECEPTOR (RCAR), which in the presence of ABA negatively regulate Clade A TYPE 2C PROTEIN PHOSPHATASES (PP2Cs) (Ma et al., 2009; Park et al., 2009). Inhibition of PP2Cs enables the activation of SNF1-RELATED KINASES 2 (SnRK2s) (Fujii et al., 2009; Umezawa et al., 2009; Vlad et al., 2009), that target transcription factors, ion channels and NADPH oxidases (Kobayashi et al., 2005; Furihata et al., 2006; Geiger et al., 2009; Lee et al., 2009; Sato et al., 2009; Sirichandra et al., 2009, 2010; Brandt et al., 2012).\n\nPYR/PYL/RCARs contain an internal ligand-binding pocket flanked by two conserved loops, the \u2018Pro-cap/gate\u2019 and the \u2018Leu-lock/latch\u2019 (Melcher et al., 2009; Nishimura et al., 2009; Santiago et al., 2009a). ABA binding triggers these loops to rearrange, closing the lid over ABA. The conformational change and rearranged protein surface favors PP2C binding over receptor dimerization (Melcher et al., 2009; Nishimura et al., 2009; Yin et al., 2009). In the resultant ABA receptor\u2013phosphatase complex, a conserved Trp residue from the PP2C inserts between the \u2018Pro-cap/gate\u2019 and the \u2018Leu-lock/latch\u2019 to further enclose the ABA (Melcher et al., 2009; Miyazono et al., 2009; Yin et al., 2009).\n\nHere, we report the design, development and application of optogenetic FRET-based reporters for ABA (ABAleons), in which covalently attached PYR1 and the PP2C ABI1 are modulated upon ABA binding, triggering changes in fluorescence emission from attached fluorescent proteins. ABAleons can affect ABA responses at high concentrations and enable the analysis of time-dependent changes in ABA concentration, distribution and transport in live plants with appropriate resolution to monitor endogenous ABA concentration changes.\n\n## Results\n\n### ABAleon design and in vitro characterization\n\nBased on structural analyses of PYR1 (Nishimura et al., 2009) and the PYL1-ABA-ABI1 complex (Miyazono et al., 2009) and a FRET cassette consisting of the fluorescent proteins mTurquoise (Goedhart et al., 2010) and Venus circularly permutated at amino acid 173 (cpVenus173; Nagai et al., 2004; Pilji\u0107 et al., 2011), FRET-based reporters for ABA, named ABAleons, were designed (Figure 1A). Full length PYR1 and ABI1 truncated at amino acid S125 (\u0394NABI1) were fused via a flexible ASGGSGGTS(GGGGS)4-linker (Arai et al., 2004; Nagai et al., 2004) and inserted into the mTurquoise-cpVenus173 FRET cassette using short two amino acid GP- and PG-linkers (Pilji\u0107 et al., 2011) resulting in the FRET reporter ABAleon1.1 (Figure 1A). Due to the long flexible linker between PYR1 and \u0394NABI1 (> 120 \u00c5; Arai et al., 2004; Figure 1A), \u0394NABI1 might be free for substrate access in the ABA unbound conformation. Therefore the wild type ABAleon1.1 was mutated to abolish phosphatase activity of ABI1 by introducing a D413L mutation in the catalytic metal-binding site (ABAleon2.1; http://www.uniprot.org/uniprot/P49597) (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig1-v1.jpg)\n\n**Figure 1.:** (A) mTurquoise (cyan) is fused through a GP-linker to PYR1 (gold), which is separated by a flexible ASGGSGGTS(GGGGS)4 linker from \u0394NABI1 (green) fused to cpVenus173 (yellow) through a PG linker. Structural features of the PYR1-\u0394NABI1 complex including ABA (blue and red balls), ABI1 D413 (purple ball) and loops controlling access to the ABA binding site are highlighted. Dashed lines indicate linkers and unresolved structures. (B) Without ABA, ABAleon flexibility enables FRET from mTurquoise (mT) to cpVenus173 (cpV173). ABA triggered PYR1-\u0394NABI1 binding increases the distance or orientation between the fluorescent probes, thereby reducing FRET efficiency. (C and D) Normalized (nu) emission spectra of (C) ABAleon1.1 and (D) ABAleon2.1 in absence (unbound) and in presence (bound) of ABA with indicated dynamic range (DR). (E) Emission ratios and (F) \u0394R/\u0394Rmax plotted against increasing [ABA], with indicated ABA affinity K\u2032d of each ABAleon calculated from the respective plot. (G) Time-dependent normalized emission ratios of ABAleon2.1 in response to 0 and 1 \u00b5M ABA. (H) Phosphatase activity assays of equimolar PYR1 and \u0394NABI1 combinations and indicated ABAleons in presence of 0 and 5 \u00b5M ABA (mean \u00b1 SD, n = 4).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Normalized absorbance spectrum of ABAleon2.1 in absence (cyan) and in presence of 100 \u00b5M ABA (yellow). (B) pH titration of ABAleon1.1 emission ratios (left scale) in absence (cyan) and in presence of 10 \u00b5M ABA (yellow). Curves were fitted by a four parameter Hill equation and ratio change (red, right scale) was calculated by subtraction of the 10 \u00b5M ABA from the 0 \u00b5M ABA curve. Note the dramatic ABA-independent ratio change of ABAleon1.1 below pH 6.2. However in the physiological range (pH 7.2\u20137.8) ABAleon1.1 emission is stable.\n\nIn vitro application of ABA had no impact on ABAleon2.1 absorbance (Figure 1\u2014figure supplement 1A). However, analyses of fluorescence emission spectra after application of ABA revealed an increase in mTurquoise emission (peak at 476 nm) and a decrease of cpVenus173 emission (peak at 527 nm), indicating that the distance between both fluorescent proteins is increased, or their orientation to each other is changed by the ABA-dependent interaction of PYR1 and \u0394NABI1 (Figure 1B\u2013D). Apparent ABA affinities were calculated by curve fitting of ABA-dependent emission ratio plots (Figure 1E) or from fits of the ABA-dependent ratio change (\u0394R) relative to the maximum ratio change (\u0394Rmax) (Figure 1F). For ABAleon1.1 a dynamic range of \u223c 15 % was recorded with an apparent ABA affinity K\u2032d of \u223c 300 nM (Figure 1C,E,F). Moreover, ABA-induced emission ratio changes of ABAleon1.1 were stable in the range of physiological pH conditions (e.g., pH 6.6\u20138.2; Figure 1\u2014figure supplement 1B). ABAleon2.1 exhibited a dynamic range of \u223c 9 % and a K\u2032d of \u223c 100 nM (Figure 1D\u2013F). In plate reader-based analyses, application of ABA rapidly and clearly induced emission ratio changes of \u223c 8 % when analyzing ABAleon2.1 at 1 \u00b5M ABA (Figure 1G). ABAleon1.1 exhibited phosphatase activity comparable to PYR1 and \u0394NABI1 when combined in a 1:1 molar ratio (Figure 1H). In the presence of 5 \u00b5M ABA phosphatase activity was inhibited to 50 % of initial activity (Figure 1H; Ma et al., 2009; Park et al., 2009; Santiago et al., 2009b). However, the predicted phosphatase inactive ABI1D413L mutation in ABAleon2.1 enabled the design of an ABA-reporter without detectable phosphatase activity (Figure 1H), which was considered to be preferable for use in plants.\n\n### Application of ABA induces ABAleon2.1 emission ratio changes in Arabidopsis\n\nABAleon2.1 was transformed into the Arabidopsis Columbia 0 accession (Col-0) to determine whether it can detect ABA level changes in planta. In a macroscopic view ABAleon2.1 emission ratio maps were recorded from 5 day-old seedlings before (Figure 2A) or 2 h after ABA application (Figure 2B). Emission ratios were also recorded from guard cells of 33-day-old soil-grown plants (Figure 2C). As indicated in the color code of the calibration bar (Figure 2), low ABAleon2.1 ratios (blue) indicate high ABA concentrations and high ratios (red) indicate low ABA concentrations. Comparison of the emission ratio maps before and after ABA application revealed visible ABA uptake into the entire seedling (Figure 2A,B). However the most prominent ratio changes were observed in the root elongation- and early maturation zone, where the yellow-coded regions showed an ABA concentration increase, which is indicated by the yellow-to-blue color shift (Figure 2A,B). Visible ratio changes were also observed in the lower hypocotyl. Here an upward-directed ABA accumulation was detected (Figure 2A,B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig2-v1.jpg)\n\n**Figure 2.:** (A and B) Manually assembled ABAleon2.1 ratio images (A) before and (B) 2 h after application of 50 \u00b5M ABA. (C) Ratio image of untreated guard cells from lower epidermis of 33-day-old soil grown plants. Images were calibrated to the indicated calibration bar. Blue colors indicate low ABAleon2.1 emission ratios, corresponding to high ABA concentrations, and red colors indicate high ABAleon2.1 emission ratios corresponding to low ABA concentrations. Shown is a representative of four experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Confocal images of pRAB18-GFP expression in the intact lower epidermis of 27-day-old plants show highest expression (GFP emission) in guard cells. (A) Representative image of plants grown at 70 % relative humidity (RH) conditions, (B) 4 h after leaf floating in 50 \u00b5M ABA and (C) 2 days after plant transfer to 25 % RH conditions. Note that pRAB18-GFP expression appears in the epidermal cells only after ABA application (B). (D) Images were calibrated to background fluorescence (lowest value) and to the maximum value recorded in guard cells (highest value). (E) Quantified pRAB18-GFP emission in guard cells from the same analyses as in (A\u2013D) (means \u00b1 SEM, n = 3 with \u2265 34 guard cells/n).\n\nABAleon2.1 emission ratios in guard cells were low (Figure 2C, blue), indicating elevated ABA concentrations under the imposed conditions. High ABA concentrations in guard cells were consistent with the constitutive guard cell expression of the ABA-induced reporter pRAB18-GFP when plants were grown at 70 % relative humidity (Figure 2\u2014figure supplement 1A). Expression of pRAB18-GFP was further induced by ABA (Figure 2\u2014figure supplement 1B), however with stronger induction 2 days after transfer to 25 % relative humidity (Figure 2\u2014figure supplement 1C,E).\n\nABA-induced ABAleon2.1 responses were then analyzed with higher time- and spatial resolution in guard cells of 45-day-old plants (Figure 3A\u2013C) and in three differentially color-coded regions of the hypocotyl (Figure 3D\u2013F), root differentiation\u2013(Figure 3G\u2013I), root maturation\u2013(Figure 3J\u2013L) and root elongation-zone (Figure 3M\u2013O) of 5-day-old seedlings. Application of ABA induced increases in mTurquoise (Figure 3A,D,G,J,M, mT, solid lines) and decreases in cpVenus173 emission (Figure 3D,G,J,M, cpV, dashed lines), resulting in an up to 12 % decrease in the emission ratios (Figure 3B,E,H,K,N). The ABA-induced ABAleon2.1 emission ratio changes indicate increases in the ABA concentration in all investigated Arabidopsis tissues. These in planta analyses were consistent with in vitro analyses (Figure 1E,G). The ABA-induced ABAleon2.1 ratio changes in guard cells (3\u20136 %; Figure 3B) and in the root differentiation zone (6 %; Figure 3H) were low compared to changes in the hypocotyl and lower root tissues (9\u201312 %; Figure 3E,K,N), consistent with data indicating elevated ABA concentrations prior to ABA application (Figure 2A,C). While ABA uptake into guard cells (Figure 3B) and into the root occurred simultaneously (Video 1) in all three analyzed regions (Figure 3H,K,N), a delay in the ABAleon2.1 response was observed in the hypocotyl (Figure 3E; Video 1). These data suggest a directional \u2018wave-like\u2019 ABA transport in the hypocotyl, which was also indicated in the ratio images (Figure 3F, Video 1). To describe the ABA transport in the hypocotyl more quantitatively, ABAleon2.1 response curves of all three analyzed regions were fitted by a four parameter logistic curve R=Rmin+Rmax\u2212Rmin1+(tt1/2)n. From these fits the t1/2 values measure the time point when ABAleon2.1 is half-saturated. These values were used to calculate the delay in ABAleon2.1 responses between the analyzed regions which is a measure for the speed of ABA transport. From three independent experiments the rate of ABA transport in the hypocotyl was calculated as 16.4 \u00b1 0.8 \u00b5m/min.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig3-v1.jpg)\n\n**Figure 3.:** Time-resolved ABAleon2.1 responses to 10 \u00b5M ABA in (A\u2013C) guard cells of 45-day-old plants and (D\u2013F) the hypocotyl, (G\u2013I) the root differentiation-, (J\u2013L) maturation- and (M\u2013O) elongation-zone of 5-day-old seedlings. (A, D, G, J, M) Time course of mTurquoise (mT, solid lines) and cpVenus173 emission (cpV, dashed lines) and (B, E, H, K, N) the corresponding normalized emission ratios colored according to the analyzed regions boxed in the in initial t = 0 min images (C, F, I, L, O). Each analysis is a representative of 3\u20134 experiments. Note, that there is a slight sample drift, which causes cpVenus173 emission increases in (A).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Time-resolved responses of ABAleon2.1 in (A\u2013C) the hypocotyl and (D\u2013F) the root maturation zone, and of (G\u2013I) the empty FRET cassette in the hypocotyl. (A, D, G) Time course of mTurquoise (solid lines) and cpVenus173 emission (dashed lines) and (B, E, H) the respective normalized emission ratios colored according to the analyzed regions (blue, yellow and red boxes) given in the t = 0 min ratio images (C, F, I). (C, F, I) Emission ratio images from indicated time points after solvent control (0.05 % EtOH), buffer or ABA application calibrated to the scale given in the final ratio images. Shown are representative analyses of one to three experiments.\n\n![Video 1.](https://cdn.elifesciences.org/articles/01739/elife-01739-media1.mp4.jpg)\n\n**Video 1.:** Video of 10 \u00b5M ABA-induced ABAleon2.1 responses in (A) guard cells, (B) the hypocotyl, (C) the root maturation- and (D) elongation-zone. ABA was applied at timepoint 00:00:00 of the indicated timescale. Single videos represent data of analyses in Figure 3. Emission ratio changes to blue color indicate ABA concentration increase. (B) Emission ratio changes in the hypocotyl propagate gradually from the hypocotyl base towards the shoot.\n\nAs ABA was dissolved in EtOH, responses to EtOH as solvent control were analyzed in the hypocotyl (Figure 3\u2014figure supplement 1A\u2013C) and the root maturation zone (Figure 3\u2014figure supplement 1D\u2013F). These treatments did not induce measurable emission ratio changes of ABAleon2.1 (Figure 3\u2014figure supplement 1B,E). In contrast, subsequent application of ABA induced ABAleon2.1 emission ratio changes similar to previous data (Figure 3E,K, Figure 3\u2014figure supplement 1B,E). In control seedlings expressing only the empty FRET-cassette no response to ABA was detected (Figure 3\u2014figure supplement 1G\u2013I). These data support, that PYR1-\u0394NABI1D413L incorporated in ABAleon2.1 (Figure 1A) are responsible for the ABA-induced emission ratio changes in Arabidopsis. Taken together, these data clearly demonstrate the direct and instantaneous ABA detection by ABAleon2.1 in various tissues and the visualization of ABA transport in planta.\n\n### Accelerated ABA-induced ABAleon2.1 responses in roots of an ABA receptor quadruple mutant\n\nABAleon2.1 was transformed into a PYR/PYL/RCAR ABA receptor quadruple mutant pyr1-1/pyl1-1/pyl2-1/pyl4-1 (pyl4ple; Park et al., 2009; Nishimura et al., 2010). ABA response curves of Col-0 wild type (Figure 4A) and pyl4ple (Figure 4B) were fitted by a four parameter logistic curve using data of four single measurements (Figure 4A,B) or the combined datasets (Figure 4C). Data show that in the pyl4ple mutant ABAleon2.1 exhibited a faster response to 10 \u00b5M ABA in the root maturation zone when compared to Col-0 wild type (Figure 4A\u2013C). This finding is also reflected in the t1/2 values (Figure 4D). Half saturation of ABAleon2.1 was reached 16 min after ABA application in Col-0, while this appeared within 7 min in the pyl4ple mutant (Figure 4C,D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig4-v1.jpg)\n\n**Figure 4.:** Normalized 10 \u00b5M ABA-induced ABAleon2.1 emission ratio changes in the root maturation zone of Col-0 (A, C cyan line) and pyr1-1/pyl1-1/pyl2-1/pyl4-1 (pyl4ple) (B, C yellow line). (A and B) Data points from single measurements fitted by the respective four parameter logistic curve. (C) Combined data from four experiments in (A and B) fitted by the respective four parameter logistic curve. (D) t1/2 values (means \u00b1 SEM, n = 4) calculated from the fitted curves in (A and B).\n\n### Arabidopsis plants expressing ABAleon2.1 are ABA hyposensitive\n\nTo investigate whether ABAleon2.1 might affect ABA responses in general, two ABAleon2.1 lines (line 3 and line 10) were compared to Col-0 wild type, YFP-PYR1 and abi1-3/YFP-ABI1 (Nishimura et al., 2010) over-expression lines. Analyses of the cpVenus173/YFP fluorescence emissions of the investigated lines indicated, that ABAleon2.1 (line 3) exhibited a \u223c fivefold higher fluorescence emission (expression) when compared to ABAleon2.1 (line 10) (Figure 5A) while emission of YFP-ABI1 was \u223c 7 % compared to YFP-PYR1 (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig5-v1.jpg)\n\n**Figure 5.:** From left to right, Col-0 wild type, ABAleon2.1 (line 3), ABAleon2.1 (line 10), YFP-PYR1 and abi1-3/YFP-ABI1. (A) Analyses of cpVenus173/YFP fluorescence emission in the leaf epidermis. Numerical fluorescence intensity values in the images represent means \u00b1 SEM of n = 4 images. (B and C) 7-day-old seedlings germinated and grown on 0.5 MS media supplemented with (B) 0 and (C) 0.8 \u00b5M ABA. (D and E) 9-day-old seedlings 5 days after transfer to 0.5 MS media supplemented with (D) 0 and (E) 10 \u00b5M ABA. (F\u2013H) 7 day time course of (F and G) seed germination and (H) cotyledon expansion in presence of (F) 0 and (G and H) 0.8 \u00b5M ABA normalized to the seed count of each replicate (means \u00b1 SEM, n = 4 technical replicates with 49 seeds/n). (I) Fresh weight of seedlings from (D and E) normalized to the 0 \u00b5M ABA control conditions (means \u00b1 SEM, n = 5 technical replicates with seven seedlings/n). (J) Stomatal aperture of 20-23-day old seedlings exposed to 10 \u00b5M ABA normalized to the 0 \u00b5M ABA control conditions (means \u00b1 SEM, n = 3 with \u2265 24 stomata/n).\n\nIn seed germination (Figure 5F,G) and cotyledon expansion assays (Figure 5B,C,H) ABAleon2.1 lines were hyposensitive to 0.8 \u00b5M ABA when compared to Col-0 wild type and YFP-PYR1. However, the ABAleon2.1 lines exhibited a less pronounced ABA hypersensitivity when compared to abi1-3/YFP-ABI1 (Figure 5G,H). Interestingly, the degree of ABA hyposensitivity of both ABAleon2.1 lines correlated with ABAleon2.1 expression levels (fluorescence emission), as the stronger expressing line 3 exhibited a reduced ABA sensitivity when compared to the lower expressing line 10 (Figure 5).\n\nIn seedling assays 10 \u00b5M ABA inhibited growth of all investigated lines (Figure 5D,E,I). Fresh weight of ABAleon2.1 and abi1-3/YFP-ABI1 plants, when grown on media supplemented with 10 \u00b5M ABA, was less reduced compared to Col-0 wild type (Figure 5I). Again, the degree of ABA sensitivity of the ABAleon2.1 lines correlated with ABAleon2.1 expression levels (Figure 5A,I). Interestingly, growth and root length of YFP-PYR1 plants was drastically reduced, when grown on 10 \u00b5M ABA media (Figure 5D,E,I), suggesting a strong ABA hypersensitivity when over-expressing this receptor.\n\nIn ABA-induced stomatal closure assays ABA sensitivity of ABAleon2.1 lines was comparable to Col-0 wild type responses (Figure 5J), suggesting potential tissue or cell specific effects of ABAleon2.1 on ABA responses, which may be linked to a higher basal ABA concentration in these cells (Figure 2C, Figure 2\u2014figure supplement 1). Taken together, ABAleon2.1 plants exhibit a reduced ABA sensitivity in seed germination and seedling growth which correlated with ABAleon2.1 expression levels.\n\n### Visualization of long-distance ABA transport\n\nTo study long-distance ABA transport, modeling clay was placed into the middle of each imaging chamber to generate two isolated chambers (Figure 6A). Seedlings were placed such that the hypocotyl base and root differentiation zone laid over the isolating modeling clay, which isolated the shoot (top chamber) from the root (bottom chamber). Ratio images of the shoot/upper hypocotyl (Figure 6E) and the root maturation zone (Figure 6F) were recorded before and after application of 50 \u00b5M ABA. Three regions in the upper hypocotyl and the root maturation zone, indicated by boxes in the t = 0 min ratio images (Figure 6E,F), were used to measure time dependent ratio changes (Figure 6B). Upon ABA application to the upper chamber, ABA concentrations increased in the shoot/upper hypocotyl, as seen by an immediate decrease of the ABAleon2.1 emission ratios (Figure 6B,E). In the root maturation zone a decrease in the emission ratio was observed starting \u223c 90 min after the treatment (Figure 6B,F).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig6-v1.jpg)\n\n**Figure 6.:** (A) ABAleon2.1 seedlings were transferred to microscope dishes, which were divided into two isolated experimental chambers by a horizontal block of modeling clay. (B, E, F) Shoot-to-root, (C, G, H) hypocotyl-to-root and (D, I, J) root-to-hypocotyl ABA transport after application of 50 \u00b5M ABA. (B\u2013D) Time-dependent normalized emission ratios (means \u00b1 SEM, n = 3) in the hypocotyl (cyan) and root (yellow) were quantified in three regions indicated by boxes in the initial images (E\u2013J). The calibration bar in the final t = 180 min image indicates the scale of the emission ratios. Decreasing ratios indicate ABA accumulation. Shown are representative analyses of 3\u20134 experiments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Time-dependent normalized ABAleon2.1 emission ratios (mean \u00b1 SEM, n = 3) in the hypocotyl (cyan) and root (yellow) in response to 0.05 % EtOH as solvent control for ABA were quantified in three regions indicated by boxes in the initial images of (B and C). The calibration bar in the t = 180 min image indicates the scale of the emission ratios. Shown are representative analyses of four experiments.\n\nIn additional experiments seedlings were placed such that the hypocotyl and root differentiation zone were located in the top chamber and the root maturation zone in the bottom chamber (Figure 6A, left seedling). In control experiments where 0.05 % EtOH as solvent control was added to the top chamber, no emission ratio changes were detected in the hypocotyl and the root maturation zone, indicating that in these experimental conditions endogenous ABA concentrations were stable (Figure 6\u2014figure supplement 1). However, ABA application to the top chamber induced an ABAleon2.1 emission ratio change in the hypocotyl after 30 min which did not drastically change for the remaining time period (Figure 6C,G). ABA application to the hypocotyl (top chamber) led to a gradual decrease of the ABAleon2.1 emission ratios in the root maturation zone (bottom chamber; Figure 6C,H), providing evidence that ABA is actively transported to the root maturation zone. When ABA was applied to the root maturation zone (bottom chamber), ABAleon2.1 emission ratios rapidly dropped, indicating ABA uptake into the root (Figure 6D,J). However, ABA was not transported upwards to the hypocotyl (top chamber) within 180 min under the imposed conditions (Figure 6D,I). The above data indicate a shoot to root ABA transport (Figure 6B,C). A root to shoot ABA transport could not be detected within 180 min after ABA application (Figure 6D) possibly due to low transpiration when whole seedlings were perfused with buffer solution (\u2018Materials and methods and Discussion\u2019).\n\n### Mutations in PYR1 modulate ABA affinity and stereospecificity of ABAleons\n\nBased on structural models (Figure 7A, Figure 7\u2014figure supplement 1A), mutations in PYR1 and \u0394NABI1D413L of ABAleon2.1 were selected that potentially reduce but not abolish PYR1-\u0394NABI1D413L interaction (Melcher et al., 2009; Miyazono et al., 2009; Mosquna et al., 2011; Zhang et al., 2012) resulting in the new constructs ABAleon2.11\u2013ABAleon2.17 (Figure 7\u2014figure supplement 1A; Table 1). In addition shorter linker versions between PYR1 and \u0394NABI1D413L were generated (ABAleon2.2 and ABAleon2.3; Table 1). Recombinant empty FRET control (F3) and all ABAleon versions were purified (Figure 7\u2014figure supplement 2) and biochemical characteristics of these proteins are provided in Table 1.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig7-v1.jpg)\n\n**Figure 7.:** (A) Structural model of the PYR1(gold)-ABA(purple)-ABI1(green) complex, indicating mutations in ABAleon2.1 that were analyzed in (B\u2013G): H60P monomer-inducing, V83H in Pro-Cap and H115A in Leu-Lock of PYR1 (grey balls) and D413L phosphatase-inactivating in ABI1 (purple ball). Emission spectra of (B) ABAleon2.11, (D) ABAleon2.13 and (F) ABAleon2.15 in the absence (unbound) and presence of (+)-ABA (bound) with indicated dynamic range (DR). (B) ABAleon2.11 exhibited no clear response to ABA. (C) (+)-ABA titrations of ABAleon2.11 compared to ABAleon2.1 suggest saturation of ABAleon2.11 in the absence of ABA. (E and G) \u0394R/\u0394Rmax plots of ABAleon titrations with (E) naturally occurring (+)-ABA and (G) its enantiomer (\u2212)-ABA, which binds more weakly. The respective apparent ABA affinities (K\u2032d) are indicated.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Structural model of the PYR1(gold)-ABA(purple)-ABI1(green) complex with indicated mutations in PYR1 (grey balls) and ABI1 (purple balls) of ABAleon2.1 (ABI1D413L), ABAleon2.11 (PYR1H60P), ABAleon2.12 (PYR1F61L), ABAleon2.13 (PYR1V83H), ABAleon2.14 (PYR1L87F), ABAleon2.15 (PYR1H115A), ABAleon2.16 (PYR1E141Q) and ABAleon2.17 (ABI1E142Q). (B and E) Emission ratios, (C and F) ratio changes and (D and G) \u0394R/\u0394Rmax of ABAleon1.1, ABAleon2.1, ABAleon2.13 and ABAleon2.15 plotted against (B\u2013D) increasing (+)-ABA or (E\u2013G) (\u2212)-ABA concentrations. The color code and the respective mutations in the analyzed ABAleons are given above the graphs. Values in the graphs give (B and E) the dynamic range and (C and F) the apparent affinities (K\u2032d) calculated form a four parameter logistic fit or (D and G) a three parameter sigmoidal Hill fit.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A\u2013D) Purification of recombinant ABAleon2.1. (A) anti-GFP immuno-detection, (B) PageBlue stain of SDS-gel after blotting, (C) Instant Blue stain of indicated fractions after gel filtration (GF) run and (D) normalized absorbance at 280 nm (protein; cyan) and 516 nm (cpVenus173; yellow) measured during GF-run. Ex, extract; FT, flow through; W, wash; E, elution; W2, Amicon filter wash; E2, Amicon filter elution; GF, gel filtration with numbered fractions. (E) anti-GFP immuno-detection and (F) PageBlue stain of 1 \u00b5g empty FRET cassette (F3) and ABAleon proteins after purification.\n\n**Table 1.**\n Biochemical properties of ABAleons\n\n\n<table>\n  <thead>\n    <tr>\n      <th>ABAleon</th>\n      <th>Mutations/Deletions</th>\n      <th>Rmin</th>\n      <th>Rmax</th>\n      <th>DR [%]</th>\n      <th>K\u2019d (3 parameter Hill) [nM]</th>\n      <th>K\u2019d (4 parameter logistic) [nM]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>empty FRET</td>\n      <td>\u0394(PYR1-\u0394NABI1)</td>\n      <td>2.50</td>\n      <td>2.51</td>\n      <td>\u22120.69</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>ABAleon1.1</td>\n      <td>\u2013</td>\n      <td>0.87</td>\n      <td>0.98</td>\n      <td>\u221214.83</td>\n      <td>266 \u00b1 55</td>\n      <td>332 \u00b1 45</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.1</td>\n      <td>\u0394NABI1D413L</td>\n      <td>0.91</td>\n      <td>0.97</td>\n      <td>\u22128.98</td>\n      <td>79 \u00b1 29</td>\n      <td>114 \u00b1 32</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.2</td>\n      <td>\u0394[(GGGGS)3] linker</td>\n      <td>0.98</td>\n      <td>1.04</td>\n      <td>\u22128.14</td>\n      <td>121 \u00b1 38</td>\n      <td>156 \u00b1 47</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.3</td>\n      <td>\u0394(GGSGGTS) linker</td>\n      <td>0.94</td>\n      <td>0.99</td>\n      <td>\u22127.53</td>\n      <td>72 \u00b1 18</td>\n      <td>84 \u00b1 22</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.11</td>\n      <td>PYR1H60P, \u0394NABI1D413L</td>\n      <td>0.91</td>\n      <td>0.91</td>\n      <td>\u22122.39</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.12</td>\n      <td>PYR1F61L, \u0394NABI1D413L</td>\n      <td>1.05</td>\n      <td>1.12</td>\n      <td>\u22128.29</td>\n      <td>87 \u00b1 20</td>\n      <td>107 \u00b1 22</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.13</td>\n      <td>PYR1V83H, \u0394NABI1D413L</td>\n      <td>0.91</td>\n      <td>0.97</td>\n      <td>\u22127.09</td>\n      <td>8600 \u00b1 7100</td>\n      <td>2900 \u00b1 1500</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.14</td>\n      <td>PYR1L87F, \u0394NABI1D413L</td>\n      <td>0.89</td>\n      <td>0.91</td>\n      <td>\u22122.80</td>\n      <td>1200 \u00b1 1200</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.15</td>\n      <td>PYR1H115A, \u0394NABI1D413L</td>\n      <td>0.92</td>\n      <td>1.01</td>\n      <td>\u221210.09</td>\n      <td>488 \u00b1 45</td>\n      <td>510 \u00b1 41</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.16</td>\n      <td>PYR1E141Q, \u0394NABI1D413L</td>\n      <td>0.97</td>\n      <td>1.02</td>\n      <td>\u22127.30</td>\n      <td>194 \u00b1 46</td>\n      <td>229 \u00b1 48</td>\n    </tr>\n    <tr>\n      <td>ABAleon2.17</td>\n      <td>\u0394NABI1D413L,E142Q</td>\n      <td>0.78</td>\n      <td>0.82</td>\n      <td>\u22124.90</td>\n      <td>35 \u00b1 10</td>\n      <td>48 \u00b1 8</td>\n    </tr>\n  </tbody>\n</table>\n\n_Biochemical properties of the empty FRET cassette and ABAleons with indicated mutations or deletions compared to the wild type ABAleon1.1. Shown are minimum (Rmin) and maximum emission ratios (Rmax), the dynamic range (DR) calculated as Rmin\u2212RmaxRmin\u22c5100 and the apparent ABA affinity (K\u2032d) calculated from a three parameter Hill fit or a four parameter logistic fit._\n\nAnalyses showed that linker deletions slightly changed ABA affinity but also reduced the dynamic range (Table 1). Compared to other investigated ABAleon2.1 mutants, PYR1H60P in ABAleon2.11 strongly impaired ABA-induced emission changes (Figure 7B), which were comparable to ABA-bound ABAleon2.1 (Figure 7C; Table 1). Of the seven analyzed ABAleon2.1 mutants, PYR1V83H in ABAleon2.13 and PYR1H115A in ABAleon2.15 were of particular interest, as these mutants exhibited a reduced ABA affinity (K\u2032d \u223c 3\u20134 \u00b5M of ABAleon2.13 and \u223c 500\u2013600 nM of ABAleon2.15; Figure 7E; Table 1). Also the dynamic range of these ABAleons was not drastically affected (Figure 7D,F; Table 1).\n\nUnless otherwise stated, all of the above analyses have been conducted using the natural (+)-enantiomer of ABA. In additional experiments, apparent affinities for (+)-ABA (Figure 7E, Figure 7\u2014figure supplement 1B\u2013D) were compared to binding of its unnatural enantiomer (\u2212)\u2212ABA (Figure 7G, Figure 7\u2014figure supplement 1E\u2013G). In these analyses the dynamic ranges and (+)\u2212ABA affinities of ABAleon1.1 (K\u2032d \u223c 300 nM) and ABAleon2.1 (K\u2032d \u223c 100 nM) (Figure 7\u2014figure supplement 1B\u2013D) were comparable to previous analyses (Figure 1E,F; Table 1). However, the binding affinity for (\u2212)\u2212ABA was reduced by about twofold in ABAleon1.1 (K\u2032d \u223c 600 nM) and ABAleon2.1 (K\u2032d \u223c 180 nM) (Figure 7\u2014figure supplement 1E\u2013G). In case of ABAleon2.13, affinities for (+)- and (\u2212)-ABA were comparably low (K\u2032d \u223c 3\u20134 \u00b5M) and ABAleon2.13 did not reach saturating conditions at 200 \u00b5M (+)- or (\u2212)-ABA (Figure 7E,G, Figure 7\u2014figure supplement 1B\u2013G). Remarkably, ABAleon2.15 harboring the PYR1H115A mutation exhibited an apparent affinity for (\u2212)-ABA of \u223c 30 \u00b5M (Figure 7G, Figure 7\u2014figure supplement 1F,G), which was 50-fold reduced compared to the (+)-ABA affinity (K\u2032d \u223c 0.6 \u00b5 M) (Figure 7E, Figure 7\u2014figure supplement 1C,D) suggesting, that PYR1H115 has an important function in ABA stereospecificity. From these analyses, ABAleon2.13 and ABAleon2.15 could be good candidates for analyzing ABA concentration changes in cell types that have higher basal ABA concentrations.\n\n### Low affinity ABAleon2.15 reports ABA uptake in roots\n\nTo investigate the utility of low affinity ABAleons, ABAleon2.13, ABAleon2.14 and ABAleon2.15 were transformed into Arabidopsis Col-0 wild type plants. ABAleon2.14 was included in these analyses, as it exhibited an apparent K\u2032d of \u223c 1.2 \u00b5M for ABA, however with a reduced dynamic range (Table 1). Initial analyses were performed in the root maturation zone of T2 lines and compared with ABAleon2.1 (line 10) at comparable expression levels (Figure 8, Figure 8\u2014figure supplement 1). Examples of single representative measurements are presented in Figure 8\u2014figure supplement 1. All investigated ABAleons responded to externally applied 10 \u00b5M ABA with a negative emission ratio change (Figure 8, Figure 8\u2014figure supplement 1). While ABAleon2.13 and ABAleon2.14 exhibited a relatively low dynamic range in planta (Figure 8B,C,E, Figure 8\u2014figure supplement 1E,H), ABAleon2.15 responded comparable to ABAleon2.1 (line 10) (Figure 8A,D,E,F, Figure 8\u2014figure supplement 1B,K). Thus, ABAleon2.15 is the best candidate for a low affinity (K\u2032d \u223c 600 nM) ABA-reporter.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig8-v1.jpg)\n\n**Figure 8.:** 10 \u00b5M ABA-induced normalized emission ratio changes in the root maturation zone of (A, E dark blue line) ABAleon2.1 (line 10), (B, E cyan line) ABAleon2.13, (C, E yellow line) ABAleon2.14, and (D, E orange line) ABAleon2.15. (A\u2013D) Data points from single measurements fitted by the respective four parameter logistic curve. (E) Combined data from three to four experiments in (A\u2013D) fitted by the respective four parameter logistic curve. (F) t1/2 values (means \u00b1 SEM, n = 3\u20134) calculated from the fitted curves in (A\u2013D).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Responses to 10 \u00b5M ABA in the root maturation zone of (A\u2013C) ABAleon2.1 (line 10), (D\u2013F) ABAleon2.13, (G\u2013I) ABAleon2.14 and (J\u2013L) ABAleon2.15. (A, D, G, J) Time course of mTurquoise (solid lines) and cpVenus173 emission (dashed lines) and (B, E, H, K) the corresponding normalized emission ratios colored according to the analyzed regions boxed in the in initial t = 0 images (C, F, I, L). Each analysis is a representative of 3\u20134 experiments.\n\n### ABAleon2.1 reports endogenous ABA concentration changes in response to low humidity, salt and osmotic stress\n\nIt is well established that plants synthesize ABA in response to water stress (Seo and Koshiba, 2011). Recent studies reported ABA increases in shoots and roots after 3 h of water stress (Ikegami et al., 2009; Geng et al., 2013). In addition, older studies reported ABA concentration increases within 15 min in guard cells of Vicia faba (Harris and Outlaw, 1991).\n\n15 min after a drop in humidity ABAleon2.1 emission ratios decreased \u223c 3 % in guard cells and did not change when analyzed at the 30 min time point (Figure 9A,B), indicating fast ABA concentration adjustments in response to humidity changes. In 4 h stress treatments of detached leaves 100 mM NaCl and 10 \u00b5M ABA induced a 5\u20136 % ABAleon2.1 emission ratio change in guard cells (Figure 9C,D). In contrast, 300 mM sorbitol did not induce any detectable changes (Figure 9C,D).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/01739/elife-01739-fig9-v1.jpg)\n\n**Figure 9.:** ABAleon2.1 emission ratios in response to (A and B) low humidity and (C\u2013H) 4\u20136 h treatments with 0.01 % EtOH (control), 100 mM NaCl, 300 mM sorbitol and 10 \u00b5M ABA in (C and D) guard cells, (E and F) the root maturation- and (G and H) elongation zone. (A, C, E, G) Representative emission ratio images with indicated calibration bars. (B and D) Normalized emission ratios in guard cells (means \u00b1 SEM, n = 3 with \u2265 24 guard cell pairs/n). (F and H) Normalized emission ratios analyzed from two boxed regions (cyan and yellow) color-coded in the left images of (E and G) (means \u00b1 SEM, n = 8\u201310 seedlings).\n\nIn root tissues two separate regions labeled by cyan and yellow boxes (Figure 9E,G, left) were measured after 6 h stress treatments. In these analyses 100 mM NaCl or 300 mM sorbitol induced ABAleon2.1 emission ratio changes of 3\u20136 % in the root maturation zone compared to 7 % changes in response to 10 \u00b5M ABA (Figure 9F). In the root elongation zone, responses to 100 mM NaCl and 300 mM sorbitol were 7\u20138 % while 10 \u00b5M ABA induced ABAleon2.1 emission ratio changes of 5\u20136 % (Figure 9H). These analyses demonstrate the utility of ABAleon2.1 to report endogenous ABA concentration changes in response to low humidity, salt- and osmotic stress (Figure 9).\n\n## Discussion\n\n### Design of ABAleon reporters\n\nGenetically encoded fluorescent protein-based reporters are powerful tools in cell biology (Giepmans et al., 2006; Okumoto et al., 2012; Alford et al., 2013). Here we report the design, engineering and application of ABAleons, FRET-based reporters that enable the direct analysis of instantaneous ABA concentration changes in vitro and in planta.\n\nABAleons were built on the strictly ABA-dependent interaction of PP2Cs with PYR1 and its phylogenetically close relatives (Park et al., 2009; Santiago et al., 2009b; Nishimura et al., 2010), rather than the other members of the PYR/PYL/RCAR family, which have a higher probability of residing in a \u2018monomeric\u2019 state, and which can interact with PP2Cs even in the absence of ABA (Ma et al., 2009; Park et al., 2009; Dupeux et al., 2011; Hao et al., 2011). PYR1 and close homologs exhibit lower ABA affinities (Kd \u223c 50\u2013100 \u00b5M) than those of the \u2018monomeric\u2019 homologs (Kd \u223c 1 \u00b5M) (Ma et al., 2009; Miyazono et al., 2009; Santiago et al., 2009b; Dupeux et al., 2011). In comparison, the ABA affinity of PYR/PYL/RCARs when bound to PP2Cs ranges between Kd \u223c 20\u2013125 nM (Ma et al., 2009; Joshi-Saha et al., 2011). ABAleons exhibit similar ABA affinities to endogenous PYR/PYL/RCARs or PYR/PYL/RCARs in complex with PP2Cs (Figure 1E,F, Figure 7E, Figure 7\u2014figure supplement 1; Table 1), consistent with our findings, that ABAleon2.1 is able to detect changes in endogenous ABA concentrations (Figure 9).\n\nABAleons exhibit higher affinity to the naturally occurring (+)-ABA than to (\u2212)-ABA (Figure 7E,G, Figure 7\u2014figure supplement 1B\u2013G), and could potentially also bind to the synthetic ABA mimics pyrabactin and quinabactin (Park et al., 2009; Okamoto et al., 2013). One of the ABAleon derivatives, ABAleon2.15, carrying the PYR1H115A mutation, exhibited strongly reduced affinity for (\u2212)-ABA (Figure 7G, Figure 7\u2014figure supplement 1E\u2013G), suggesting an important role of this amino acid in ABA stereospecificity. These results are consistent with recent findings that the homologous H139 in PYL3 was important for ABA stereospecificity (Zhang et al., 2013). ABAleon2.11, carrying the PYR1H60P mutation (Dupeux et al., 2011), exhibited spectral characteristics comparable to ABA-bound ABAleon2.1 (Figure 7C). This is consistent with the notion, that the PYR1H60P protein may form an alternative interaction interface with PP2Cs, even in the absence of ABA (Dupeux et al., 2011).\n\nIn Arabidopsis, over-expression of the ABA receptors PYR1, PYL2 and PYL5 induces ABA hypersensitivity (Figure 5; Santiago et al., 2009b; Mosquna et al., 2011), while ectopic expression of the PP2Cs ABI1 and HAB1 decreases ABA sensitivity (Figure 5; Santiago et al., 2009b; Nishimura et al., 2010). Transgenic Arabidopsis plants expressing ABAleon2.1 exhibited a reduced sensitivity to exogenously applied ABA in seed germination, cotyledon expansion and growth assays, but not in stomatal closure assays (Figure 5). The degree of reduced ABA sensitivity correlated with increasing ABAleon2.1 expression levels in two independent transgenic lines (Figure 5). Because ABAleon2.1 did not exhibit any phosphatase activity in vitro (Figure 1H), it can be speculated, that ABAleon2.1 might sequester a certain amount of physiologically relevant ABA in certain tissues and cell types due to its high affinity (Figure 1E,F, Figure 7\u2014figure supplement 1C,D; Table 1), thus causing ABA hyposensitivity (Figure 5). Future generations of ABAleons and improved imaging sensitivity at lower ABAleon concentrations (Figure 8) could enable the reduction of ABAleon side effects.\n\n### Analyses of ABA concentration changes and long-distance ABA transport in Arabidopsis\n\nBy definition, a hormone transmits a signal from the site of hormone synthesis to its place of action. Although long-distance ABA transport has been studied for many years (Sauter et al., 2001; Wilkinson and Davies, 2002; Seo and Koshiba, 2011; Boursiac et al., 2013 and references therein), no method for the direct detection of ABA concentration changes and ABA transport rates in planta has been available. The detailed characterizations of ABAleons demonstrate the utility of ABAleon2.1 (K\u2032d \u223c 100 nM) and ABAleon2.15 (K\u2032d \u223c 600 nM), which exhibit a sufficient ABA-specificity and dynamic range (9\u201310 %) upon ABA binding to monitor instantaneous ABA-induced or environmentally-triggered ABA concentration changes.\n\nABAleon2.1 and ABAleon2.15 enabled measurements of rapid ABA-induced changes in ABA concentrations in various tissues (Figure 3, Figure 8), ABA uptake into whole seedlings (Figure 2A,B), directional ABA transport from the hypocotyl base towards the shoot (Figure 3E,F; Video 1) and from the hypocotyl or shoot to the root (Figure 6B,C,E-H). Under the imposed conditions the speed of ABA transport within the hypocotyl was \u223c 16 \u00b5m/min. Furthermore, ABA transport from the root maturation zone to the shoot could not be detected within three hours (Figure 6D,I,J). Because the experimental setup (Figure 6), in which both shoot and root were perfused with buffer, would compromise the transpirational stream, the present data do not exclude concomitant ABA transport from roots to shoots, as has been found in other plant species (Wilkinson and Davies, 2002).\n\nIn response to water stress, Arabidopsis plants synthesize ABA in the shoot, which has been reported to be transported to the root (Ikegami et al., 2009). ABA accumulation in roots and leaves was detected 2.5\u20133 h after stress initiation (Ikegami et al., 2009; Geng et al., 2013). Older studies, using manually dissected guard cells, measured ABA concentration increases in guard cells 15 min after passive dehydration of leaves (Harris and Outlaw, 1991). ABAleon2.1 enabled the rapid detection of ABA concentration changes in guard cells in response to a humidity drop (Figure 9A,B) and the visualization of long term ABA accumulation in response to salt in guard cells (Figure 9C,D) and in response to salt- and osmotic stress in roots (Figure 9E\u2013H).\n\nSurprisingly, ABA-induced ABAleon2.1 ratio changes in the root maturation zone were accelerated in the pyr1-1/pyl1-1/pyl2-1/pyl4-1 mutant (Figure 4). Mutants defective in ABA signaling may compensate by up-regulating ABA levels, as reported previously (Nakashima et al., 2009) and could also up-regulate ABA transport activity (Figure 4C,D). Alternatively, knock out of ABA receptors may also affect ABA buffering capacity (Figure 4C,D). ABA reporter analyses of ABA uptake (Figure 4) or long-distance ABA transport (Figure 3D\u2013F, Figure 6) could be utilized for the characterization or identification of ABA transporters and their regulation mechanisms in planta or in heterologous systems (Jones et al., 2014).\n\nABA induces cytoplasmic alkalinization of guard cells (Blatt and Armstrong, 1993; Islam et al., 2010). In guard cells of Vicia faba, cytoplasmic pH was found to be 7.67 and increased 0.27 units upon ABA treatment (Blatt and Armstrong, 1993). Cytoplasmic pH in roots was 7.3 and could increase to 7.7 (Bibikova et al., 1998). In these pH ranges ABA-induced ABAleon1.1 emission ratio changes were stable in vitro (Figure 1\u2014figure supplement 1B).\n\nIn vivo ABA concentrations in cellular compartments of specific plant cells and tissues are currently unknown. Overall ABA levels range from 30\u201350 ng/g dry-weight in non-stressed plants (Forcat et al., 2008; Geng et al., 2013), which can increase up to 30-fold in response to limited water conditions (Harris et al., 1988; Harris and Outlaw 1991; Christmann et al., 2007; Ikegami et al., 2009; Geng et al., 2013). ABAleon2.1 and ABAleon2.15 exhibit a sufficient dynamic range for in vitro calibrations (Figure 1E,F, Figure 7E, Figure 7\u2014figure supplement 1B\u2013D) that permit approximations of cellular ABA concentrations, for example in the range of \u2264 25 nM in the root elongation zone. In Vicia faba guard cells ABA concentrations were \u223c 0.7 fg/cell pair in unstressed and \u223c 17.7 fg/cell pair in stressed guard cells (Harris et al., 1988). ABA concentrations in stressed guard cells were estimated to be in the range of \u223c 15 \u00b5M (Harris et al., 1988; Harris and Outlaw 1991). Extrapolating from these values, unstressed guard cell ABA concentration would be \u223c 500 nM. Such approximations would be consistent with the partial saturation and reduced response of ABAleon2.1 in guard cells (Figure 3A\u2013C) and with strong expression of the ABA-induced reporter pRAB18-GFP (Figure 2\u2014figure supplement 1).\n\nOur results demonstrate that ABAleons affect ABA signaling to certain extent, but can analyze changes in ABA concentrations in diverse tissues and cell types and measure ABA transport in vivo. ABAleons will thus allow hitherto challenging investigations of ABA synthesis and transport in planta, in response to changes in environmental conditions or treatment with synthetic compounds designed to improve plant survival and crop yields under adverse climate conditions. Further, in combination with other genetically encoded reporters, ABAleons can be used to decipher the cross talk between ABA and other signaling molecules. During the course of our ABAleon research we found, that Jones et al. developed ABACUS-type ABA reporters, however with biochemical properties complementary to ABAleons (Jones et al., 2014). Thus, ABAleons and ABACUS could be utilized to study novel aspects of ABA signaling in intact plants.\n\n## Materials and methods\n\n### Construction of ABAleons\n\nFluorescent protein coding sequences were re-amplified from the pF40 plasmid (Pilji\u0107 et al., 2011) and ligated into Xba I/Apa I (mTurquoise) or Xma I/Sac I sites (cpVenus173) of a modified pUC19 plasmid (Walter et al., 2004; Waadt et al., 2008) resulting in the pUC-F3 and pUC-F3_II empty FRET-cassettes with the latter containing a Nde I-site downstream of the Xba I-site and a StrepII-tag fusion of cpVenus173 at its free end. PYR1-GGSGG and (GGGGS)4-\u0394NABI1 and mutants were cloned and inserted between Apa I/Spe I and Spe I/Xma I sites of pUC-F3 and pUC-F3_II to obtain pUC-ABAleon and pUC-ABAleon_II, respectively. Escherichia coli expression vectors were obtained by sub-cloning ABAleon_II versions Nde I/Sac I into pET-24b(+) (Novagen, Darmstadt, Germany). For expression in plants, the pUBQ10 promoter (AT4G05310; Norris et al., 1993; Krebs et al., 2012), inserted between Hind III/Spe I sites of a modified pUC19 plasmid (kindly provided by J\u00f6rg Kudla, University of M\u00fcnster), was mutated to remove a Sac I site within the pUBQ10. In addition, the HSP18.2 terminator (T) (AT5G59720; Nagaya et al., 2010) was inserted between the Sac I/Eco RI sites of pBluescript II (Stratagene, La Jolla, CA) and the Hind III site within the HSP18.2T was deleted resulting in pKS-HSP18.2T\u0394Hind III. Both pUBQ10\u0394Sac I and HSP18.2T\u0394Hind III were sub-cloned into plant compatible vectors pGPTVII.Bar, which confers glufosinate (BASTA) resistance, and pGPTVII.Hyg, which confers hygromycin resistance (Walter et al., 2004), resulting in the barII-UT and hygII-UT plasmids. Finally, ABAleon2.1, ABAleon2.1 mutants and the empty FRET-cassette were sub-cloned from pUC-ABAleon2.1, pUC-ABAleon2.1x_II and pUC-F3 plasmids into the barII-UT and hygII-UT plasmids to obtain the barII-UT-ABAleon2.1, barII-UTF3 and hygII-UT-ABAleon2.1 and mutant plasmids for expression in plants. More detailed information about oligo-nucleotides and plasmids used and generated in this work is provided in Supplementary file 1A and Supplementary file 1B.\n\n### Protein expression and purification\n\npET-F3_II (empty FRET) and pET-ABAleon_II versions in BL21-CodonPlus (DE3)-RIL cells (Stratagene) were grown at 37 \u00b0C in 2 L Luria Broth (LB) medium containing 25 \u00b5g/mL Kanamycin. At an optical density at 600 nm (OD600) of 0.5, cells were induced with 0.5 mM Isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) and shaken for additional 4-6 h at 24 \u00b0C. Cells were collected by centrifugation (15 min 5.000\u00d7g and 4 \u00b0C) and stored at \u221280 \u00b0C. Proteins were extracted by sonification after 60 min incubation in 20 mL extraction buffer (30 mM Tris\u2013HCl [pH 7.4], 250 mM NaCl, 1 mM Ethylenediaminetetraacetic acid [EDTA], 1 mM Phenylmethylsulfonyl fluoride [PMSF], 1x protease inhibitor [Roche, USA] and 1 mg/mL Lysozym). Cell debris was removed by centrifugation (2 \u00d7 30 min, 20.000\u00d7g and 4 \u00b0C) and by filtration through 0.45 \u00b5m syringe filters.\n\nProtein extracts were mixed with 2.5 ml 50 % Strep-Tactin Macroprep resin (IBA, G\u00f6ttingen, Germany) pre-equilibrated in wash buffer I (30 mM Tris\u2013HCl [pH 7.4], 250 mM NaCl, 1 mM EDTA) and protein/resin mix was incubated for 1 h at 4 \u00b0C while shaking in a 50 ml tube. The suspension was run twice through a 20 mL gravity column (BioRad, Hercules, CA) followed by two washes of the remaining protein/resin mix with 10 column volumes (CV) of wash buffer I and one wash with 10 CV of wash buffer II (30 mM Tris\u2013HCl [pH 7.4], 250 mM NaCl, 10 mM MgCl2 and 1 mM MnCl2). Proteins were eluted 3x in 1 CV wash buffer II supplemented with 2.5 mM Desthiobiotin (Sigma, USA) and concentrated to \u223c 1 mL volume by centrifugation at 3.000\u00d7g and 4 \u00b0C using Amicon Ultra-4 30K or 10K centrifugal filters (Millipore, Billerica, MA). Purified proteins were run through a Superdex 200 HiLoad 16/60 column (GE Healthcare) in wash buffer II using an \u00c4KTA purifier fast protein liquid chromatography (FPLC) system (GE Healthcare) with 0.8 MPa column pressure limit, 1 mL/min flow rate and 2 mL fraction size volume. Fractions exhibiting 280 nm, 445 nm and 516 nm absorbance were analyzed by SDS-PAGE and Instant Blue (Cole\u2013Parmer, USA) protein staining and selected for further concentration using Amicon Ultra-4 centrifugal filters. Protein aliquots were flash frozen in liquid N2 and stored at \u221280 \u00b0C. Protein purity was analyzed by SDS-PAGE, immuno-blotting using anti-GFP antibody (Life Technologies, Darmstadt, Germany) and PageBlue staining (Thermo Scientific, Rockford, IL; Waadt et al., 2014). Results of F3 empty FRET and ABAleon purifications are provided in Figure 7\u2014figure supplement 2.\n\nThe coding sequence of \u0394NABI1 corresponding to amino acid residues 125\u2013429 was inserted via Nde I/Bam HI into pET28a (Novagen; Supplementary file 1A, Supplementary file 1B) and transformed into E. coli BL21 (DE3). E. coli were grown at 37 \u00b0C, and protein expression was induced by 1 mM IPTG at OD600 of 0.6\u20130.8. After overnight incubation at 25 \u00b0C, cells were harvested by centrifugation (15 min 5.000\u00d7g and 4 \u00b0C) and re-suspended in 50 mM Tris\u2013HCl (pH 8.0) and 500 mM NaCl. Cells were sonicated on ice and lysates were obtained after centrifugation at 12,000\u00d7g for 1 h 6xHis-\u0394NABI1 extracts were applied to a Ni-NTA column (Qiagen, Hilden, Germany) and washed with five bed volumes of 50 mM Tris\u2013HCl (pH 8.0), 500 mM NaCl and 10 mM imidazole. Bound proteins were eluted in 50 mM Tris\u2013HCl (pH 8.0), 500 mM NaCl and 300 mM imidazole. 6xHis-\u0394NABI1 was further purified using Sephacryl S-200 (GE Healthcare) in 50 mM Tris\u2013HCl (pH 8.0) and 150 mM NaCl. 6xHis-PYR1 (Nishimura et al., 2009) and 6xHis-\u0394NABI1 proteins were re-buffered and concentrated into wash buffer II using Amicon Ultra-4 centrifugal filters. Protein purity and concentrations were analyzed by SDS-PAGE and PageBlue staining and quantified according to a 0\u20132000 ng BSA (NEB, Ipswich, MA) standard calibration.\n\n### In vitro analyses of ABAleons\n\nABA titration experiments were conducted in a TECAN Infinite M1000 PRO (TECAN, M\u00e4nnedorf, Switzerland) using 1 \u00b5M ABAleon protein in wash buffer II with 0.1 % EtOH or DMSO as solvent for (+)-ABA (TCI, Portland, OR), generally used in assays unless otherwise stated, or (\u2212)-ABA (Sigma). Protein samples were excited with 440 \u00b1 5 nm and emission 450\u2013700 nm was measured in 1 nm steps with 5 nm bandwidth and 10 flashes of 20 \u00b5s and 400 Hz. Gain settings to obtain optimal emission spectra were calculated by the TECAN software from unbound ABAleon emission. Emission bands of mTurquoise (470\u2013490 nm) and cpVenus173 (518\u2013538 nm) were used to calculate cpVenus173/mTurquoise emission ratios. Apparent ABA affinities (K\u2032d) were calculated from emission ratio plots by fitting a four parameter logistic curve $R=R_{min}+\\frac{R_{max}\u2212R_{min}}{1+(\\frac{[ABA]}{K^{'}d})^{n}}$ or from \u0394R/ \u0394 Rmax plots by fitting a three parameter sigmoidal Hill equation $\\frac{\u0394R}{\u0394R_{max}}=\\frac{R_{max}\u00b7[ABA]^{n}}{K_{d}^{\u2032n}\u00b7[ABA]^{n}}$ (Palmer et al., 2006) using the SigmaPlot 10.0 version (Systat, San Jose, CA). Dynamic ranges were calculated from experimentally determined values as $\\frac{R_{min}\u2212R_{max}}{R_{min}}\u00b7100$.\n\nAbsorbance spectra (275\u2013700 nm, slit 0.2 nm) of ABAleons were analyzed with a UV-VIS-Spectrophotometer (UV-2700) (Shimadzu, Columbia, MD). Absorbance at 434 nm (mTurquoise) was used to calculate concentrations of the empty FRET and ABAleon proteins (Goedhart et al., 2010) and the ratio of Abs515 (cpVenus173) and Abs434 was used to estimate protein purity.\n\npH titrations were performed by addition of 1 \u00b5L concentrated ABAleon1.1 protein (final concentration 200 nM) to 100 \u00b5L wash buffer II adjusted to a pH range between pH 5.0\u20138.2 with 1 M HCl and MES powder or with 2 M NaOH. After recordings of ABA-free ABAleon1.1 emission spectra, using the TECAN Infinite M1000 PRO as mentioned above, 1 \u00b5L of 1 mM ABA (final concentration 10 \u00b5M ABA) was added and emission spectra were recorded using identical settings. Experiments were performed in duplicate and fitted by a four parameter Hill equation $R=R_{0}+(\\frac{a\u00b7x^{n}}{c^{n}+x^{n}})$ in SigmaPlot 10.0 (Systat, San Jose, CA). Ratio change was calculated by subtraction of the ABA-free from the ABA-bound equation values.\n\nABA-induced ABAleon2.1 kinetics were analyzed using 2.77 \u00b5M ABAleon2.1 in a Berthold Mithras LB 940 (Berthold Technologies, Bad Wildbad, Germany) with the following settings: Lamp energy 5000, counting time 0.05 s, excitation 440 \u00b1 10 nm, emission 470 \u00b1 10 nm (mTurquoise) and 530 \u00b1 20 nm (cpVenus173) measured in cycles of 6.12 s. At cycle 25, 50 \u00b5L 3 \u00b5M ABA in wash buffer II and 0.3 % EtOH was applied with low injector speed to result in the final 1 \u00b5M ABA in 0.1 % EtOH.\n\nPhosphatase assays were performed using the serine/threonine phosphatase assay system (Promega, Madison, WI). In brief, 50 \u00b5L reactions containing wash buffer II, 10-50 pmol protein, 5000 pmol Ser/Thr phosphopeptide \u00b1 5 \u00b5M ABA with 0.005 % EtOH as solvent were incubated for 10\u201330 min at room temperature. Reactions were stopped by addition of 50 \u00b5L of the supplied molybdate dye/additive mixture and phosphate release was measured according to a standard curve with a Berthold Mithras LB 940 plate reader (Absorbance 600 \u00b1 10 nm, lamp energy 50,000 and counting time 2 s).\n\n### Structural modeling of ABAleon\n\nThree-dimensional coordinates of major components of ABAleon were built with known crystal structures of mTurquoise (pdb: 2YE0, Goedhart et al., 2012), PYL1-ABA-ABI1 (pdb: 3JRQ, Miyazono et al., 2009) and Venus (pdb: 1MYW, Rekas et al., 2002). Each component of ABAleon was manually assembled using COOT (Emsley et al., 2010). In the assembly, PYL1 was replaced by PYR1 (pdb: 3K3K, Nishimura et al., 2009) by tracing the C\u03b1 backbone. The unstructured C-terminus of mTurquoise was placed in distance corresponding to the PG linker and the PYR1 N-terminus. Venus was placed between ABI1 and mTurquoise with the N-terminus of Venus facing towards the C-terminus of ABI1. All structural figures were drawn with PyMOL (The PyMOL Molecular Graphics System, Version 1.5.0.4 Schr\u00f6dinger, LLC.).\n\n### Plant culture and transgenic Arabidopsis lines\n\nSeeds were sterilized in 70 % EtOH and 0.04 % sodium dodecyl sulfate (SDS), washed three times in 100 % EtOH and sown on 0.5 Murashige and Skoog (MS) media (Sigma) adjusted to pH 5.8 with 1 M KOH and supplemented with 0.8 % phytoagar. After at least 4 days of stratification in the dark at 4 \u00b0C plants were cultivated in a growth room (16 h day/8 h night cycle, 25 \u00b0C, 50\u2013100 \u00b5Em\u22122s\u22121 and 26 % relative humidity) or in a CMP4030 plant growth chamber (16 h day/8 h night cycle, 22 \u00b0C, 50 \u00b5Em\u22122s\u22121 and 25 % relative humidity; Conviron, Winnipeg, Manitoba). 6-day-old seedlings were transferred to soil and grown either in the growth room or in a CMP3244 plant growth chamber (16 h day, 22 \u00b0C/8 h night, 18 \u00b0C cycle, 50\u2013100 \u00b5Em\u22122s\u22121 and 30\u201350 % relative humidity; Conviron).\n\nbarII-UTF3 empty FRET, barII-UT-ABAleon2.1, hygII-UT-ABAleon2.13, hygII-UT-ABAleon2.14 and hygII-UT-ABAleon2.15 were transformed into Arabidopsis Columbia 0 accession and hygII-UT-ABAleon2.1 was transformed into pyl4ple [pyr1-1 (Q169 stop)/pyl1-1 (SALK_054640)/pyl2-1 (GT2864)/pyl4-1 (SAIL_517_C08)] (Park et al., 2009; Nishimura et al., 2010) by the floral dip method (Clough and Bent, 1998). Transformants were selected on 0.5 MS media supplemented with either 10 \u00b5g/mL glufosinate or 25 \u00b5g/mL hygromycin and further cultivated in soil in a CMP3244 plant growth chamber. Positive transformants were further selected by fluorescence intensity at a confocal microscope (see below). A list of transgenic Arabidopsis lines generated and used in this work is provided in Supplementary file 1C.\n\n### ABA sensitivity analyses\n\nFor ABA seed germination assays seeds were sown on 0.5 MS agar media supplemented with 0.08 % EtOH as solvent control or 0.8 \u00b5M (+)-ABA (TCI, Portland, OR). After stratification, plants were grown in the growth room. Germinated seeds and seedlings with expanded green cotyledons were counted for a time period of 7 days with blinded genotypes. Analyses represent mean values \u00b1 SEM of four technical replicates normalized to the seed count (48\u201350 seeds) of each experiment.\n\nFor growth assays, 4-day-old seedlings grown on 0.5 MS agar media were transferred to 0.5 MS agar media supplemented with 0.1 % EtOH as solvent control or 10 \u00b5M (+)-ABA and grown vertically in the growth room. Images were acquired 5 days after seedling transfer. Fresh weight was measured from pools of seven seedlings/experiment (means \u00b1 SEM, n = 5) normalized to the 0 \u00b5M ABA control conditions.\n\nABA-induced stomatal closure analyses were performed with 20-23-day-old plants grown vertically on 0.5 MS agar media in the CMP4030 plant growth chamber. Six detached leaves were floated in assay buffer (5 mM KCl, 50 \u00b5M CaCl2 and 10 mM MES-Tris pH 5.6) at 22 \u00b0C and 100 \u00b5E m\u22122s\u22121 for 2 h. Subsequently, (+)-ABA or EtOH as solvent control was added to a final concentration of 10 \u00b5M (+)-ABA in 0.1 % EtOH followed by additional 2 h incubation. Leaves were blended 4x \u223c10 s in \u223c50 ml deionized water and leaf epidermal tissue was collected through a 100 \u00b5m nylon mesh (Millipore, Billerica, MA) and mounted on a microscope slide for imaging. Images were acquired using an inverted light microscope (Nikon Eclipse TS100) equipped with a 40x/0.65 \u221e/0.17 WD. 0.57 objective and connected to the Scion camera and Scion VisiCapture Application Version1.3 (Scion Corporation, Frederick, MD). Experiments were performed with blinded genotypes and treatments and \u2265 24 stomatal apertures were measured per experiment using Fiji (Schindelin et al., 2012). Data represent mean stomatal apertures \u00b1 SEM of three experiments normalized to the solvent control.\n\n### Sample preparation and microscopic analyses\n\nFor guard cell imaging, 4-week-old detached leaves without mid vein were glued with the abaxial side on a cover glass using medical adhesive (Hollister, Libertyville, IL) and upper cell layers were dissected away with an industrial razor blade. Epidermal strips were incubated in assay buffer (5 mM KCl, 50 \u00b5M CaCl2, 10 mM MES-Tris, pH 5.6) and 0.01 % EtOH, as solvent control for ABA, for 1 h. Glass cover slips were mounted on a microscope slide with a central hole (\u00d8 = 13 mm) using vacuum grease silicone (Beckman, Pasadena, CA) and analyzed in 200 \u00b5L of buffer mentioned above. For ABA application, epidermal strips were perfused by washing (pipetting) four to five times with assay buffer supplemented with 10 \u00b5M ABA in 0.01 % EtOH. Low humidity drop experiments were conducted on 19-27-day-old seedlings grown vertically on 0.5 MS agar media in the CMP4030 plant growth chamber. Low humidity was induced by opening the lid of the 0.5 MS agar plates. At time points 0, 15 and 30 min after plate opening two seedlings were blended 4x \u223c10 s in \u223c50 mL deionized water and leaf epidermal tissue was collected through a 100 \u00b5m nylon mesh (Millipore, Billerica, MA) and mounted on a microscope slide for imaging. Experiments were performed in triplicates and \u2265 27 guard cell pairs were analyzed per experiment. Long term stress treatments were conducted on detached leaves of 20-24-day-old plants grown vertically on 0.5 MS agar media in the CMP4030 plant growth chamber. Four leaves were pre-incubated for 1\u20134 h in assay buffer at 22 \u00b0C and 100 \u00b5Em\u22122s\u22121 and treatments were performed by addition of assay buffer supplemented with 10-fold concentrated EtOH (as solvent control for ABA), ABA, NaCl or sorbitol to obtain final concentrations of 0.01 % EtOH, 10 \u00b5M ABA, 100 mM NaCl or 300 mM sorbitol. 4 h after the treatments leaves were blended (see above) and leaf epidermal tissue was collected for imaging. Experiments were performed in triplicates with blinded treatments and epidermal fractions used for ABAleon2.1 emission ratio imaging were selected using the bright field channel. 24\u201340 guard cell pairs were analyzed per experiment.\n\nFor seedling imaging, 4-day-old seedlings were transferred to glass bottom dishes (MatTek, Ashland, MA) supplemented with 200 \u00b5L 0.25 MS, 10 mM MES-Tris (pH 5.6) and 0.7 % low melting point agarose (Promega) and grown vertically for an additional day in the CMP4030 plant growth chamber. Before microscopic analyses, 90 \u00b5L assay buffer was added. Treatments were conducted by pipetting 10 \u00b5L ABA solution or the respective amount of EtOH as solvent control diluted in assay buffer to reach a final concentration of 10\u201350 \u00b5M ABA and 0.01\u20130.05 % EtOH. To apply ABA to defined tissues, transparent modeling clay was used to divide each glass bottom dish into two isolated chambers before application of the growth media. Seedlings were placed on top of the growth media and modeling clay, such that either the hypocotyl base and root differentiation zone (shoot to root transport) or the root maturation zone (hypocotyl to root and root to hypocotyl transport) laid on the dry modeling clay. Long term treatments were performed on 5-day-old seedlings, which were transferred to glass bottom dishes (MatTek, Ashland, MA) supplemented with 200 \u00b5L 0.25 MS, 10 mM MES-Tris (pH 5.6) and 0.7 % low melting point agarose with addition of 0.01 % EtOH (as solvent control for ABA), 10 \u00b5M ABA, 100 mM NaCl or 300 mM sorbitol. 6 h after transfer 100 \u00b5L assay buffer supplemented with 0.01 % EtOH, 10 \u00b5M ABA, 100 mM NaCl or 300 mM sorbitol was added before the root maturation- and elongation zone were imaged. Regions of the root maturation zone with similar distance from the root tip were selected in the bright field channel before ratio images were acquired. Treatments were performed blinded and 8\u201310 seedlings were analyzed per treatment.\n\npRAB18-GFP plants (Kim et al., 2011) were grown in soil in the CMP3244 plant growth chamber. To ensure high relative humidity (RH) conditions (70%) plants were kept under a plastic cover and sprayed with water twice a day. 2 days before the analyses, plants were removed from the growth chamber, placed in 25 % RH conditions and withheld from water supply. For the ABA treatment, detached leaves were floated for 4 h in 50 \u00b5M ABA prior to microscopic analyses.\n\nExpression analyses based on cpVenus173, YFP or GFP emission were performed using an Eclipse TE2000-U microscope equipped with Plan 20x/0.40 \u221e/0.17 WD 1.3 and Plan Apo 60x/1.20 WI \u221e/0.15\u20130.18 WD 0.22 objectives (Nikon), a CascadeII 512 camera (Photometrics), a MFC2000 z-motor (Applied Scientific Instruments, Eugene, OR), a QLC-100 spinning disc (VisiTech international, Sunderland, UK), a CL-2000 Diode pumped crystal laser (LaserPhysics Inc., West Jordan, UT), a LS 300 Kr/Ar laser (Dynamic Laser, Boston, MA) and guided by Metamorph software version 7.7.7.0 (Molecular Devices). Images were analyzed, processed and calibrated in Fiji (Schindelin et al., 2012).\n\nABAleon ratio-imaging was conducted according to Allen et al. (1999) using an Eclipse TE300 microscope equipped with a Plan Fluor 10x/0.30 DIC L \u221e/0.17 WD 16.0 for seedlings or a Plan Fluor 40x/1.30 Oil objective DIC H \u221e/0.17 WD 0.2 for guard cells (Nikon, Tokyo, Japan), a Cool SNAP HQ camera (Photometrics, Tucson, AZ), a Mac 2002 System automatic controler, a CAMELEON filter set 71007A (D440/20, D485/40, D535/30; Chroma, Bellows Falls, VT) and guided by the MetaFluor software version 7.0r3 (Molecular Devices, Sunnyvale, CA). Images were acquired in intervals of 6 s using 200-250 ms exposure, Binning 4, Gain 2x (4x) and 20 MHz transfer speed. Images were analyzed and processed using Fiji (Schindelin et al., 2012). Analyses of seedlings were standardized as treatments were performed 4 min after the experiments started and regions used for emission ratio analyses had identical areas and distances from each other. ABA response curves in the root maturation zone and the hypocotyl were analyzed by fitting $R=R_{min}+\\frac{R_{max}\u2212R_{min}}{1+(\\frac{t}{t_{1/2}})^{n}}$ , using SigmaPlot 10.0 (Systat, San Jose, CA), to either data of single measurements or combined datasets.\n",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "a0394247-3472-41bf-b554-b3933489e390",
+      "submission_id": "08063ce5-7f95-4a39-8ac7-297cba100812",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Amasino, University of Wisconsin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01739.022](https://doi.org/10.7554/eLife.01739.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cGenetically encoded reporters for the direct visualization of abscisic acid distribution and transport in Arabidopsis\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, Detlef Weigel, and 3 reviewers, one of whom, Richard Amasino, is a member of our Board of Reviewing Editors.\n\nYour paper represents an important technical advance and we will consider publication if you can address the following issues. Two of the issues require further experimentation.\n\n1) Determine whether transgenic lines expressing the sensors are able to report endogenous changes in ABA concentration. This experiment is not overly burdensome as the transgenic lines are already in place and as a reviewer notes \u201cmannitol treatment of seedlings would trigger endogenous ABA synthesis and could be used a fast/simple experiment to prove that the sensors are useful for measuring changes in endogenous ABA content.\u201d\n\n2) Determine whether transgenic lines expressing the sensors exhibit altered sensitivity to exogenous ABA. Because the sensors bind to ABA and possibly to other endogenous proteins required for ABA signal transduction, there is the issue of whether or not plants expressing the sensors exhibit altered ABA sensitivity. Again, this experiment is not overly burdensome; for example, straightforward growth inhibition assays could be used. As a reviewer notes \u201cI don't think that the lines need to have 100 % wild type ABA sensitivity to be useful. It would be ideal if this is the case, but the key point is to know their inherent properties and limitations and the caveats that come along with using them.\u201d\n\nOther issues:\n\n3) The authors show a very clear pH sensitivity titration curve showing the pH independence of the sensor above pH 7.0. Some discussion of expected pH changes in response to ABA would be useful to place this pH dependency in context for the usefulness of the sensor.\n\n4) In Figure 3A it looks like both the FRET acceptor and donor signal increase after addition of ABA in the guard cell. You would expect the donor signal to rise and acceptor to fall as ABA levels increase. Does this mean there is significant synthesis of the sensor over the time period of the experiment?\n\n5) There are quite a few papers that have attempted to estimate ABA levels in single cell types, for example, a manuscript from the Weiler lab made estimates for guard cells after stress (Harris et al. 1988). I think the older literature on this topic should be cited and discussed in the Introduction and Discussion.\n",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9821fff7-cc41-4702-97fc-496a8f463bf8",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C1",
+      "claim": "Abscisic acid (ABA) is a plant hormone that regulates plant growth and development and mediates abiotic stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Abscisic acid (ABA) is a plant hormone that regulates plant growth and development and mediates abiotic stress responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in plant biology supported by extensive literature, as indicated by the references throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "3c49e956-d7fa-4131-a14f-9f3eebb00ab4",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C2",
+      "claim": "ABAleons are ABA-specific optogenetic reporters that instantaneously convert the phytohormone-triggered interaction of ABA receptors with PP2C-type phosphatases to send a fluorescence resonance energy transfer (FRET) signal in response to ABA.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed ABAleons: ABA-specific optogenetic reporters that instantaneously convert the phytohormone-triggered interaction of ABA receptors with PP2C-type phosphatases to send a fluorescence resonance energy transfer (FRET) signal in response to ABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by the design and experimental validation presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "e7aae10c-003f-42dd-9eb7-195559dba88b",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C3",
+      "claim": "ABAleons have ABA affinities in the range of 100\u2013600 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the design, engineering and use of ABAleons with ABA affinities in the range of 100\u2013600 nM to map ABA concentration changes in plant tissues with spatial and temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro characterization data showing K\u2032d values for different ABAleon variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "56daffdb-ee3b-4129-8fd5-ee1cb116d08f",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C4",
+      "claim": "High ABAleon expression can partially repress Arabidopsis ABA responses.",
+      "claim_type": "EXPLICIT",
+      "source": "High ABAleon expression can partially repress Arabidopsis ABA responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by ABA sensitivity analyses showing that ABAleon2.1 plants exhibit reduced ABA sensitivity in seed germination and seedling growth assays, with the degree of hyposensitivity correlating with expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "ecf48aa5-d667-486d-9adf-7de4bc96a47a",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C5",
+      "claim": "ABAleons report ABA concentration differences in distinct cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleons report ABA concentration differences in distinct cell types, ABA concentration increases in response to low humidity and NaCl in guard cells and to NaCl and osmotic stress in roots and ABA transport from the hypocotyl to the shoot and root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data showing different emission ratios in various tissues and cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "b6febc58-9955-4957-813c-cae36c820904",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C6",
+      "claim": "ABAleons report ABA concentration increases in response to low humidity and NaCl in guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleons report ABA concentration differences in distinct cell types, ABA concentration increases in response to low humidity and NaCl in guard cells and to NaCl and osmotic stress in roots and ABA transport from the hypocotyl to the shoot and root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing ABAleon2.1 emission ratio changes in guard cells after humidity drop and NaCl treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "fa4031f8-f8a3-4def-995b-031976ba3170",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C7",
+      "claim": "ABAleons report ABA concentration increases in response to NaCl and osmotic stress in roots.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleons report ABA concentration differences in distinct cell types, ABA concentration increases in response to low humidity and NaCl in guard cells and to NaCl and osmotic stress in roots and ABA transport from the hypocotyl to the shoot and root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing ABAleon2.1 emission ratio changes in root tissues after NaCl and sorbitol treatments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "7efdd0ef-45a5-42eb-80a0-90889873eaeb",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C8",
+      "claim": "ABAleons report ABA transport from the hypocotyl to the shoot and root.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleons report ABA concentration differences in distinct cell types, ABA concentration increases in response to low humidity and NaCl in guard cells and to NaCl and osmotic stress in roots and ABA transport from the hypocotyl to the shoot and root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by long-distance ABA transport experiments showing directional ABA movement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "4c4a2ee1-028b-473c-8677-07296bc65b7e",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C9",
+      "claim": "Auxin is best characterized among plant hormones in terms of its distribution and transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Among plant hormones, auxin is best characterized in terms of its distribution and transport (Vanneste and Friml, 2009), analyzed using reporter constructs for auxin-induced gene expression or protein degradation (Ulmasov et al., 1997; Brunoud et al., 2012; Wend et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature on auxin research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "6a0e46c3-d376-4a1b-b7c4-c9c62e85fdc8",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C10",
+      "claim": "Reporter genes for ABA-induced gene expression (pRD29A/B, pRAB18 and pAtHB6) are used to study ABA responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter genes developed for ABA-induced gene expression (pRD29A/B, pRAB18 and pAtHB6) are also used (L\u00e5ng and Palva, 1992; Yamaguchi-Shinozaki and Shinozaki, 1993; Ishitani et al., 1997; Christmann et al., 2005; Kim et al., 2011; Duan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies using these reporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "3304a26a-e051-4912-8579-228431d841fa",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C11",
+      "claim": "Promoter-linked reporters respond indirectly and slowly to their respective plant hormone.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their potential, such promoter-linked reporters respond indirectly and slowly to their respective plant hormone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of transcriptional reporters based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "6154b4e2-ec45-4d67-829d-ae82fe4a8577",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C12",
+      "claim": "No reporters for direct visualization of any plant hormone have yet been developed prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no reporters for direct visualization of any plant hormone have yet been developed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement establishes the novelty of the work and is based on the authors' knowledge of the field at the time of publication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "a72d82a1-1419-4e42-88d4-37fc68eec08d",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C13",
+      "claim": "During land colonization, plants adopted ABA as a hormone to signal stress due to limited water supply.",
+      "claim_type": "EXPLICIT",
+      "source": "During land colonization, plants adopted ABA as a hormone to signal stress due to limited water supply (Cutler et al., 2010; Raghavendra et al., 2010; Hauser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This evolutionary perspective is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "8e39f9a4-29dc-4bb2-b065-e29b2af318c0",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C14",
+      "claim": "ABA is integrated into a complex signaling network that transcriptionally and post-translationally regulates seed germination, root development and stomatal aperture.",
+      "claim_type": "EXPLICIT",
+      "source": "ABA is integrated into a complex signaling network that transcriptionally and post-translationally regulates seed germination, root development and stomatal aperture (Hetherington and Woodward, 2003; Cutler et al., 2010; Kim et al., 2010; Raghavendra et al., 2010; Tanaka et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published literature on ABA signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "3a3fd93e-fce8-427e-aaab-7833aba7ad9e",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C15",
+      "claim": "In Arabidopsis, ABA is synthesized primarily in vascular tissues of roots and leaves, in guard cells and in seeds.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, ABA is synthesized primarily in vascular tissues of roots and leaves, in guard cells and in seeds (Sauter et al., 2001; Endo et al., 2008; Seo and Koshiba, 2011; Bauer et al., 2013; Boursiac et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies on ABA biosynthesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "b444a524-d6c4-4c2b-b21d-177e720333ae",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C16",
+      "claim": "ABA catabolism includes hydroxylation pathways and glucose conjugation leading to less- or inactive compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "ABA catabolism includes hydroxylation pathways and glucose conjugation leading to less- or inactive compounds (Nambara and Marion-Poll, 2005; Kepka et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on ABA metabolism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "b1e71d00-85a7-439e-9af3-35fc49133da9",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C17",
+      "claim": "ABA-glucose ester is stored in the vacuole and was reported to be rapidly hydrolyzed by \u03b2-glucosidases.",
+      "claim_type": "EXPLICIT",
+      "source": "ABA-glucose ester is stored in the vacuole and was reported to be rapidly hydrolyzed by \u03b2-glucosidases (Lee et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "fe18331b-12df-463b-b488-6bd666439943",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C18",
+      "claim": "Direct measurements of rapid ABA release are missing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, direct measurements of rapid ABA release are missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the field that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "7bf080bc-de71-4cdc-af3d-f0528f62266e",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C19",
+      "claim": "ABA transporters contribute to ABA export from the vasculature and import into guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently identified ABA transporters contribute to ABA export from the vasculature and import into guard cells (Kang et al., 2010; Kuromori et al., 2010, 2011; Kanno et al., 2012; Boursiac et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies on ABA transporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "d1432e03-63ca-4dc6-a2c5-b5f77ac3c710",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C20",
+      "claim": "In response to water limitations ABA concentrations increase.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to water limitations ABA concentrations increase (Harris et al., 1988; Harris and Outlaw, 1991; Christmann et al., 2007; Forcat et al., 2008; Ikegami et al., 2009; Geng et al., 2013) and decrease upon stress relief (Harris and Outlaw, 1991; Endo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies measuring ABA levels under stress.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "b0509365-ff22-4362-a363-23ae6bd1a6a6",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C21",
+      "claim": "ABA concentrations decrease upon stress relief.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to water limitations ABA concentrations increase (Harris et al., 1988; Harris and Outlaw, 1991; Christmann et al., 2007; Forcat et al., 2008; Ikegami et al., 2009; Geng et al., 2013) and decrease upon stress relief (Harris and Outlaw, 1991; Endo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "125b108a-824e-44b7-a74e-de8333d843d9",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C22",
+      "claim": "Direct evidence for conditionally triggered changes in local ABA concentrations and time-resolved data for ABA re-distribution in vivo are lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite recent progress on ABA synthesis and transport, direct evidence for conditionally triggered changes in local ABA concentrations and time-resolved data for ABA re-distribution in vivo are lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the field that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "870269ad-0c8a-41ac-9b76-39143c3c7ae5",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C23",
+      "claim": "ABA is perceived by members of a protein family designated as PYRABACTIN RESISTANCE 1 (PYR1)/PYR1-LIKE (PYL)/REGULATORY COMPONENT OF ABA RECEPTOR (RCAR).",
+      "claim_type": "EXPLICIT",
+      "source": "ABA is perceived by members of a protein family designated as PYRABACTIN RESISTANCE 1 (PYR1)/PYR1-LIKE (PYL)/REGULATORY COMPONENT OF ABA RECEPTOR (RCAR), which in the presence of ABA negatively regulate Clade A TYPE 2C PROTEIN PHOSPHATASES (PP2Cs) (Ma et al., 2009; Park et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies on ABA receptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "0f3d3fa1-994c-42d1-a995-a6b26f1f2b09",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C24",
+      "claim": "PYR/PYL/RCARs in the presence of ABA negatively regulate Clade A TYPE 2C PROTEIN PHOSPHATASES (PP2Cs).",
+      "claim_type": "EXPLICIT",
+      "source": "ABA is perceived by members of a protein family designated as PYRABACTIN RESISTANCE 1 (PYR1)/PYR1-LIKE (PYL)/REGULATORY COMPONENT OF ABA RECEPTOR (RCAR), which in the presence of ABA negatively regulate Clade A TYPE 2C PROTEIN PHOSPHATASES (PP2Cs) (Ma et al., 2009; Park et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies on ABA signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "343d2cab-0f83-47cd-a183-47626b23c882",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C25",
+      "claim": "Inhibition of PP2Cs enables the activation of SNF1-RELATED KINASES 2 (SnRK2s).",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of PP2Cs enables the activation of SNF1-RELATED KINASES 2 (SnRK2s) (Fujii et al., 2009; Umezawa et al., 2009; Vlad et al., 2009), that target transcription factors, ion channels and NADPH oxidases (Kobayashi et al., 2005; Furihata et al., 2006; Geiger et al., 2009; Lee et al., 2009; Sato et al., 2009; Sirichandra et al., 2009, 2010; Brandt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies on ABA signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "f37383d1-f221-4b0e-bb8c-c0d2f792cc83",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C26",
+      "claim": "SnRK2s target transcription factors, ion channels and NADPH oxidases.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of PP2Cs enables the activation of SNF1-RELATED KINASES 2 (SnRK2s) (Fujii et al., 2009; Umezawa et al., 2009; Vlad et al., 2009), that target transcription factors, ion channels and NADPH oxidases (Kobayashi et al., 2005; Furihata et al., 2006; Geiger et al., 2009; Lee et al., 2009; Sato et al., 2009; Sirichandra et al., 2009, 2010; Brandt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "17fc0322-4697-40ce-bbdd-2cefac871c11",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C27",
+      "claim": "PYR/PYL/RCARs contain an internal ligand-binding pocket flanked by two conserved loops, the 'Pro-cap/gate' and the 'Leu-lock/latch'.",
+      "claim_type": "EXPLICIT",
+      "source": "PYR/PYL/RCARs contain an internal ligand-binding pocket flanked by two conserved loops, the 'Pro-cap/gate' and the 'Leu-lock/latch' (Melcher et al., 2009; Nishimura et al., 2009; Santiago et al., 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies of ABA receptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "9740c65c-b09f-4202-adea-befbfeb26d53",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C28",
+      "claim": "ABA binding triggers loops to rearrange, closing the lid over ABA.",
+      "claim_type": "EXPLICIT",
+      "source": "ABA binding triggers these loops to rearrange, closing the lid over ABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "94d5f42b-00b4-4d6b-8e1b-b818446fc46b",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C29",
+      "claim": "The conformational change and rearranged protein surface favors PP2C binding over receptor dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational change and rearranged protein surface favors PP2C binding over receptor dimerization (Melcher et al., 2009; Nishimura et al., 2009; Yin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "8764dcd8-4fdc-49ff-917a-bc6bf4648d6f",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C30",
+      "claim": "In the ABA receptor\u2013phosphatase complex, a conserved Trp residue from the PP2C inserts between the 'Pro-cap/gate' and the 'Leu-lock/latch' to further enclose the ABA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the resultant ABA receptor\u2013phosphatase complex, a conserved Trp residue from the PP2C inserts between the 'Pro-cap/gate' and the 'Leu-lock/latch' to further enclose the ABA (Melcher et al., 2009; Miyazono et al., 2009; Yin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "cd695c0a-b3c9-45cc-9bc5-99ac8af1a32f",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C31",
+      "claim": "ABAleon1.1 has a dynamic range of approximately 15% and an apparent ABA affinity K\u2032d of approximately 300 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For ABAleon1.1 a dynamic range of \u223c 15 % was recorded with an apparent ABA affinity K\u2032d of \u223c 300 nM (Figure 1C,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from in vitro characterization experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "c3ab129b-8af0-47ea-a902-55484a0713d3",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C32",
+      "claim": "ABAleon2.1 exhibited a dynamic range of approximately 9% and a K\u2032d of approximately 100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleon2.1 exhibited a dynamic range of \u223c 9 % and a K\u2032d of \u223c 100 nM (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from in vitro characterization experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "771b0771-cf13-49cd-9eae-1509078a468d",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C33",
+      "claim": "Application of ABA rapidly and clearly induced emission ratio changes of approximately 8% when analyzing ABAleon2.1 at 1 \u00b5M ABA.",
+      "claim_type": "EXPLICIT",
+      "source": "In plate reader-based analyses, application of ABA rapidly and clearly induced emission ratio changes of \u223c 8 % when analyzing ABAleon2.1 at 1 \u00b5M ABA (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from kinetic experiments shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "e94844d6-4bdc-4b29-be7a-da39657bbb11",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C34",
+      "claim": "ABAleon1.1 exhibited phosphatase activity comparable to PYR1 and \u0394NABI1 when combined in a 1:1 molar ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleon1.1 exhibited phosphatase activity comparable to PYR1 and \u0394NABI1 when combined in a 1:1 molar ratio (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from phosphatase activity assays shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "e7182edf-e1b3-4d93-baae-04d9ea6335f6",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C35",
+      "claim": "In the presence of 5 \u00b5M ABA phosphatase activity of ABAleon1.1 was inhibited to 50% of initial activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 5 \u00b5M ABA phosphatase activity was inhibited to 50 % of initial activity (Figure 1H; Ma et al., 2009; Park et al., 2009; Santiago et al., 2009b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from phosphatase activity assays shown in Figure 1H and is consistent with published studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "8ad7b731-964c-4556-8c77-ca3b0ce6292f",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C36",
+      "claim": "The ABI1D413L mutation in ABAleon2.1 enabled the design of an ABA-reporter without detectable phosphatase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the predicted phosphatase inactive ABI1D413L mutation in ABAleon2.1 enabled the design of an ABA-reporter without detectable phosphatase activity (Figure 1H), which was considered to be preferable for use in plants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from phosphatase activity assays shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "f0811d2f-e918-4784-95af-64674e168164",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C37",
+      "claim": "15 min after a drop in humidity ABAleon2.1 emission ratios decreased approximately 3% in guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "15 min after a drop in humidity ABAleon2.1 emission ratios decreased \u223c 3 % in guard cells and did not change when analyzed at the 30 min time point (Figure 9A,B), indicating fast ABA concentration adjustments in response to humidity changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experiments shown in Figure 9A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "ebc98871-23aa-476c-af3f-cc172885499b",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C38",
+      "claim": "In 4 h stress treatments of detached leaves 100 mM NaCl and 10 \u00b5M ABA induced a 5\u20136% ABAleon2.1 emission ratio change in guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In 4 h stress treatments of detached leaves 100 mM NaCl and 10 \u00b5M ABA induced a 5\u20136 % ABAleon2.1 emission ratio change in guard cells (Figure 9C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experiments shown in Figure 9C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "a7728265-e381-42f4-a559-510777dadc3b",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C39",
+      "claim": "300 mM sorbitol did not induce any detectable changes in ABAleon2.1 emission ratios in guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 300 mM sorbitol did not induce any detectable changes (Figure 9C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experiments shown in Figure 9C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "93c48033-5609-4e43-9c1f-cc5c8b195ac3",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C40",
+      "claim": "100 mM NaCl or 300 mM sorbitol induced ABAleon2.1 emission ratio changes of 3\u20136% in the root maturation zone.",
+      "claim_type": "EXPLICIT",
+      "source": "In these analyses 100 mM NaCl or 300 mM sorbitol induced ABAleon2.1 emission ratio changes of 3\u20136 % in the root maturation zone compared to 7 % changes in response to 10 \u00b5M ABA (Figure 9F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experiments shown in Figure 9F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "6585ddef-4e13-4751-b208-803651a84cbe",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C41",
+      "claim": "In the root elongation zone, responses to 100 mM NaCl and 300 mM sorbitol were 7\u20138% while 10 \u00b5M ABA induced ABAleon2.1 emission ratio changes of 5\u20136%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the root elongation zone, responses to 100 mM NaCl and 300 mM sorbitol were 7\u20138 % while 10 \u00b5M ABA induced ABAleon2.1 emission ratio changes of 5\u20136 % (Figure 9H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experiments shown in Figure 9H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "d7727fff-b128-4075-abe6-b6401a7dadfa",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C42",
+      "claim": "The speed of ABA transport within the hypocotyl was approximately 16 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "From three independent experiments the rate of ABA transport in the hypocotyl was calculated as 16.4 \u00b1 0.8 \u00b5m/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from time-resolved ABAleon2.1 response data in the hypocotyl.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "2d21cf12-7481-4b5a-ab9d-41adbaeddcce",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C43",
+      "claim": "ABA transport from the root maturation zone to the shoot could not be detected within three hours under the imposed conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ABA transport from the root maturation zone to the shoot could not be detected within three hours (Figure 6D,I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from long-distance transport experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "4d42f4fc-62ae-44a0-9a2c-011f8ae9da39",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C44",
+      "claim": "ABAleon2.1 plants exhibited a reduced sensitivity to exogenously applied ABA in seed germination, cotyledon expansion and growth assays, but not in stomatal closure assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic Arabidopsis plants expressing ABAleon2.1 exhibited a reduced sensitivity to exogenously applied ABA in seed germination, cotyledon expansion and growth assays, but not in stomatal closure assays (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ABA sensitivity assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "3e51531b-b59a-4422-8b65-f34640884a89",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C45",
+      "claim": "The degree of reduced ABA sensitivity correlated with increasing ABAleon2.1 expression levels in two independent transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of reduced ABA sensitivity correlated with increasing ABAleon2.1 expression levels in two independent transgenic lines (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing ABA sensitivity and expression levels in different lines shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "839e0bd3-1de6-497f-ac9d-924517749666",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C46",
+      "claim": "ABA-induced ABAleon2.1 ratio changes in the root maturation zone were accelerated in the pyr1-1/pyl1-1/pyl2-1/pyl4-1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, ABA-induced ABAleon2.1 ratio changes in the root maturation zone were accelerated in the pyr1-1/pyl1-1/pyl2-1/pyl4-1 mutant (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experiments comparing Col-0 and pyl4ple mutant shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "32b3cbc9-6d62-4a31-9ec5-e5b0512d0b2c",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C47",
+      "claim": "Half saturation of ABAleon2.1 was reached 16 min after ABA application in Col-0, while this appeared within 7 min in the pyl4ple mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Half saturation of ABAleon2.1 was reached 16 min after ABA application in Col-0, while this appeared within 7 min in the pyl4ple mutant (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from fitted response curves shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "d060d776-d89b-468f-bfd5-0ac1856ff8fe",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C48",
+      "claim": "ABAleon2.13 harboring the PYR1V83H mutation exhibited a reduced ABA affinity (K\u2032d approximately 3\u20134 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the seven analyzed ABAleon2.1 mutants, PYR1V83H in ABAleon2.13 and PYR1H115A in ABAleon2.15 were of particular interest, as these mutants exhibited a reduced ABA affinity (K\u2032d \u223c 3\u20134 \u00b5M of ABAleon2.13 and \u223c 500\u2013600 nM of ABAleon2.15; Figure 7E; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from in vitro characterization experiments shown in Figure 7E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "b3f71a44-f8d3-4981-97c4-b457d2a9dd22",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C49",
+      "claim": "ABAleon2.15 harboring the PYR1H115A mutation exhibited a reduced ABA affinity (K\u2032d approximately 500\u2013600 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the seven analyzed ABAleon2.1 mutants, PYR1V83H in ABAleon2.13 and PYR1H115A in ABAleon2.15 were of particular interest, as these mutants exhibited a reduced ABA affinity (K\u2032d \u223c 3\u20134 \u00b5M of ABAleon2.13 and \u223c 500\u2013600 nM of ABAleon2.15; Figure 7E; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from in vitro characterization experiments shown in Figure 7E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "d2a1fd62-a416-4bf8-94da-82cbc274827a",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C50",
+      "claim": "ABAleon2.15 exhibited an apparent affinity for (\u2212)-ABA of approximately 30 \u00b5M, which was 50-fold reduced compared to the (+)-ABA affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, ABAleon2.15 harboring the PYR1H115A mutation exhibited an apparent affinity for (\u2212)-ABA of \u223c 30 \u00b5M (Figure 7G, Figure 7\u2014figure supplement 1F,G), which was 50-fold reduced compared to the (+)-ABA affinity (K\u2032d \u223c 0.6 \u00b5 M) (Figure 7E, Figure 7\u2014figure supplement 1C,D) suggesting, that PYR1H115 has an important function in ABA stereospecificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from in vitro characterization experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "429b5970-798e-402a-a63a-fc965604759d",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C51",
+      "claim": "PYR1H115 has an important function in ABA stereospecificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, ABAleon2.15 harboring the PYR1H115A mutation exhibited an apparent affinity for (\u2212)-ABA of \u223c 30 \u00b5M (Figure 7G, Figure 7\u2014figure supplement 1F,G), which was 50-fold reduced compared to the (+)-ABA affinity (K\u2032d \u223c 0.6 \u00b5 M) (Figure 7E, Figure 7\u2014figure supplement 1C,D) suggesting, that PYR1H115 has an important function in ABA stereospecificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the differential binding of (+)- and (\u2212)-ABA by ABAleon2.15 with the PYR1H115A mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "06a2a744-a06a-4353-8504-9c93fd428133",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C52",
+      "claim": "ABAleon2.15 is the best candidate for a low affinity (K\u2032d approximately 600 nM) ABA-reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ABAleon2.15 is the best candidate for a low affinity (K\u2032d \u223c 600 nM) ABA-reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparing the performance of different ABAleon variants in planta.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "97ad9f81-b028-4456-b79c-c44184834081",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C53",
+      "claim": "Application of ABA had no impact on ABAleon2.1 absorbance.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro application of ABA had no impact on ABAleon2.1 absorbance (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from absorbance spectra shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "4ff91ac6-f0bc-4f4d-841e-94ccf5b379aa",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C54",
+      "claim": "ABA-induced ABAleon1.1 emission ratio changes were stable in the range of physiological pH conditions (e.g., pH 6.6\u20138.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ABA-induced emission ratio changes of ABAleon1.1 were stable in the range of physiological pH conditions (e.g., pH 6.6\u20138.2; Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from pH titration experiments shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "6faf8909-c9a4-40ff-9c65-02216bc0c059",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C55",
+      "claim": "pRAB18-GFP expression was constitutive in guard cells when plants were grown at 70% relative humidity.",
+      "claim_type": "EXPLICIT",
+      "source": "High ABA concentrations in guard cells were consistent with the constitutive guard cell expression of the ABA-induced reporter pRAB18-GFP when plants were grown at 70 % relative humidity (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from confocal images shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "d99d2ec7-380e-4aba-b55e-ca60946f591f",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C56",
+      "claim": "pRAB18-GFP expression was further induced by ABA.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of pRAB18-GFP was further induced by ABA (Figure 2\u2014figure supplement 1B), however with stronger induction 2 days after transfer to 25 % relative humidity (Figure 2\u2014figure supplement 1C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from confocal images and quantification shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "7fda9c22-76e9-443d-8541-7bc76df8ed3d",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C57",
+      "claim": "ABA uptake into guard cells and into the root occurred simultaneously in all three analyzed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "While ABA uptake into guard cells (Figure 3B) and into the root occurred simultaneously (Video 1) in all three analyzed regions (Figure 3H,K,N), a delay in the ABAleon2.1 response was observed in the hypocotyl (Figure 3E; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from time-resolved imaging data shown in Figure 3 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "b1001e3f-d8cf-4ecd-bae7-56d4a96edaa2",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C58",
+      "claim": "A delay in the ABAleon2.1 response was observed in the hypocotyl.",
+      "claim_type": "EXPLICIT",
+      "source": "While ABA uptake into guard cells (Figure 3B) and into the root occurred simultaneously (Video 1) in all three analyzed regions (Figure 3H,K,N), a delay in the ABAleon2.1 response was observed in the hypocotyl (Figure 3E; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from time-resolved imaging data shown in Figure 3 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "e4ee7f04-91ef-4ad1-a484-9d4f73920b23",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C59",
+      "claim": "The data suggest a directional 'wave-like' ABA transport in the hypocotyl.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a directional 'wave-like' ABA transport in the hypocotyl, which was also indicated in the ratio images (Figure 3F, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the time-resolved imaging data showing sequential ABA uptake along the hypocotyl.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "13cbf619-f17a-4c84-b740-ad83d8f48689",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C60",
+      "claim": "Solvent control (EtOH) did not induce measurable emission ratio changes of ABAleon2.1.",
+      "claim_type": "EXPLICIT",
+      "source": "These treatments did not induce measurable emission ratio changes of ABAleon2.1 (Figure 3\u2014figure supplement 1B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from control experiments shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "1ec3e586-111c-4506-b84b-0a501af9e569",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C61",
+      "claim": "The empty FRET-cassette showed no response to ABA.",
+      "claim_type": "EXPLICIT",
+      "source": "In control seedlings expressing only the empty FRET-cassette no response to ABA was detected (Figure 3\u2014figure supplement 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from control experiments shown in Figure 3\u2014figure supplement 1G\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "0d6864c6-9038-4b2a-ae66-75c8ecc9b6ab",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C62",
+      "claim": "PYR1-\u0394NABI1D413L incorporated in ABAleon2.1 are responsible for the ABA-induced emission ratio changes in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support, that PYR1-\u0394NABI1D413L incorporated in ABAleon2.1 (Figure 1A) are responsible for the ABA-induced emission ratio changes in Arabidopsis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of response in empty FRET cassette controls and the presence of response in ABAleon2.1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "de68145d-84fe-4cd1-ac88-0f3dc78e07bc",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C65",
+      "claim": "When ABA was applied to the root maturation zone, ABAleon2.1 emission ratios rapidly dropped, indicating ABA uptake into the root.",
+      "claim_type": "EXPLICIT",
+      "source": "When ABA was applied to the root maturation zone (bottom chamber), ABAleon2.1 emission ratios rapidly dropped, indicating ABA uptake into the root (Figure 6D,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from experiments shown in Figure 6D,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "b1e4d9af-fde0-4f6f-8181-4b66ff460146",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C66",
+      "claim": "ABA was not transported upwards from root to hypocotyl within 180 min under the imposed conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ABA was not transported upwards to the hypocotyl (top chamber) within 180 min under the imposed conditions (Figure 6D,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from experiments shown in Figure 6D,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "5ff00cf8-7717-4238-8fe1-cad421d71d28",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C67",
+      "claim": "The data indicate a shoot to root ABA transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The above data indicate a shoot to root ABA transport (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the long-distance transport experiments showing ABA movement from shoot to root.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "a2f48c9d-de4f-46b3-b1ed-3de1b630f53d",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C68",
+      "claim": "ABAleons were built on the strictly ABA-dependent interaction of PP2Cs with PYR1 and its phylogenetically close relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleons were built on the strictly ABA-dependent interaction of PP2Cs with PYR1 and its phylogenetically close relatives (Park et al., 2009; Santiago et al., 2009b; Nishimura et al., 2010), rather than the other members of the PYR/PYL/RCAR family, which have a higher probability of residing in a 'monomeric' state, and which can interact with PP2Cs even in the absence of ABA (Ma et al., 2009; Park et al., 2009; Dupeux et al., 2011; Hao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This design choice is explained and supported by citations to published studies on ABA receptor properties.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "d7fde5fc-ebcf-45c9-a2f1-ae8c56408cf5",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C69",
+      "claim": "PYR1 and close homologs exhibit lower ABA affinities (Kd approximately 50\u2013100 \u00b5M) than those of the 'monomeric' homologs (Kd approximately 1 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "PYR1 and close homologs exhibit lower ABA affinities (Kd \u223c 50\u2013100 \u00b5M) than those of the 'monomeric' homologs (Kd \u223c 1 \u00b5M) (Ma et al., 2009; Miyazono et al., 2009; Santiago et al., 2009b; Dupeux et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies on ABA receptor affinities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "ade6b5e4-e458-4841-b1c6-ce1fd712f44b",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C70",
+      "claim": "The ABA affinity of PYR/PYL/RCARs when bound to PP2Cs ranges between Kd approximately 20\u2013125 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the ABA affinity of PYR/PYL/RCARs when bound to PP2Cs ranges between Kd \u223c 20\u2013125 nM (Ma et al., 2009; Joshi-Saha et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "f64cc318-60ce-466e-9f92-b6b5adb8a357",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C71",
+      "claim": "ABAleons exhibit similar ABA affinities to endogenous PYR/PYL/RCARs or PYR/PYL/RCARs in complex with PP2Cs.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleons exhibit similar ABA affinities to endogenous PYR/PYL/RCARs or PYR/PYL/RCARs in complex with PP2Cs (Figure 1E,F, Figure 7E, Figure 7\u2014figure supplement 1; Table 1), consistent with our findings, that ABAleon2.1 is able to detect changes in endogenous ABA concentrations (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparing measured ABAleon affinities with published values and by demonstrating detection of endogenous ABA changes.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "c5a732c9-f69b-425e-91bd-64ee9b74a3c7",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C72",
+      "claim": "ABAleons exhibit higher affinity to the naturally occurring (+)-ABA than to (\u2212)-ABA.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleons exhibit higher affinity to the naturally occurring (+)-ABA than to (\u2212)-ABA (Figure 7E,G, Figure 7\u2014figure supplement 1B\u2013G), and could potentially also bind to the synthetic ABA mimics pyrabactin and quinabactin (Park et al., 2009; Okamoto et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from in vitro characterization experiments comparing (+)- and (\u2212)-ABA binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "c341ea45-bdaf-4d20-abb9-2029c4befc52",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C73",
+      "claim": "ABAleons could potentially also bind to the synthetic ABA mimics pyrabactin and quinabactin.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleons exhibit higher affinity to the naturally occurring (+)-ABA than to (\u2212)-ABA (Figure 7E,G, Figure 7\u2014figure supplement 1B\u2013G), and could potentially also bind to the synthetic ABA mimics pyrabactin and quinabactin (Park et al., 2009; Okamoto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the known binding properties of PYR1 to these compounds as reported in cited studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "0a71f5be-dd91-439a-9e25-5812fd6744a8",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C74",
+      "claim": "The homologous H139 in PYL3 was important for ABA stereospecificity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with recent findings that the homologous H139 in PYL3 was important for ABA stereospecificity (Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "212595ab-50b6-4718-8e52-6b31fde89791",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C75",
+      "claim": "ABAleon2.11, carrying the PYR1H60P mutation, exhibited spectral characteristics comparable to ABA-bound ABAleon2.1.",
+      "claim_type": "EXPLICIT",
+      "source": "ABAleon2.11, carrying the PYR1H60P mutation (Dupeux et al., 2011), exhibited spectral characteristics comparable to ABA-bound ABAleon2.1 (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from in vitro characterization experiments shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "1f3d6e33-0bd2-4436-ad07-f83a6d9b062e",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C76",
+      "claim": "The PYR1H60P protein may form an alternative interaction interface with PP2Cs, even in the absence of ABA.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the notion, that the PYR1H60P protein may form an alternative interaction interface with PP2Cs, even in the absence of ABA (Dupeux et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the spectral characteristics of ABAleon2.11 and is consistent with published structural studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "87e96170-891b-4310-b68c-eccc5da201b6",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C77",
+      "claim": "Over-expression of the ABA receptors PYR1, PYL2 and PYL5 induces ABA hypersensitivity in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, over-expression of the ABA receptors PYR1, PYL2 and PYL5 induces ABA hypersensitivity (Figure 5; Santiago et al., 2009b; Mosquna et al., 2011), while ectopic expression of the PP2Cs ABI1 and HAB1 decreases ABA sensitivity (Figure 5; Santiago et al., 2009b; Nishimura et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 5 and citations to published studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "7d2d1cf7-8615-4862-8894-ac27639fa7f8",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C78",
+      "claim": "Ectopic expression of the PP2Cs ABI1 and HAB1 decreases ABA sensitivity in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, over-expression of the ABA receptors PYR1, PYL2 and PYL5 induces ABA hypersensitivity (Figure 5; Santiago et al., 2009b; Mosquna et al., 2011), while ectopic expression of the PP2Cs ABI1 and HAB1 decreases ABA sensitivity (Figure 5; Santiago et al., 2009b; Nishimura et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 5 and citations to published studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "83d7528d-b537-44d3-8bee-fbe283c2a113",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C79",
+      "claim": "ABAleon2.1 might sequester a certain amount of physiologically relevant ABA in certain tissues and cell types due to its high affinity, thus causing ABA hyposensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ABAleon2.1 did not exhibit any phosphatase activity in vitro (Figure 1H), it can be speculated, that ABAleon2.1 might sequester a certain amount of physiologically relevant ABA in certain tissues and cell types due to its high affinity (Figure 1E,F, Figure 7\u2014figure supplement 1C,D; Table 1), thus causing ABA hyposensitivity (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the observed ABA hyposensitivity and the high affinity of ABAleon2.1 for ABA.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "2cc96106-d7dd-476e-891c-931276772a47",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C80",
+      "claim": "Mutants defective in ABA signaling may compensate by up-regulating ABA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants defective in ABA signaling may compensate by up-regulating ABA levels, as reported previously (Nakashima et al., 2009) and could also up-regulate ABA transport activity (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the observed accelerated ABA uptake in the pyl4ple mutant and is supported by a citation to a published study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "2bfd35d6-f6cf-4012-8f3a-2fe7cb6ce1a7",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C81",
+      "claim": "Knock out of ABA receptors may affect ABA buffering capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, knock out of ABA receptors may also affect ABA buffering capacity (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated as an alternative explanation for the accelerated ABA uptake in the pyl4ple mutant.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "f65e67aa-3e6c-4b0b-9f95-734b00c11189",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C82",
+      "claim": "ABA induces cytoplasmic alkalinization of guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ABA induces cytoplasmic alkalinization of guard cells (Blatt and Armstrong, 1993; Islam et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "2f798790-e77b-457a-bc1e-068731fe22c0",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C83",
+      "claim": "In guard cells of Vicia faba, cytoplasmic pH was found to be 7.67 and increased 0.27 units upon ABA treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In guard cells of Vicia faba, cytoplasmic pH was found to be 7.67 and increased 0.27 units upon ABA treatment (Blatt and Armstrong, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "4e47c82e-8d3a-47bf-86b5-135df4db740a",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C84",
+      "claim": "Cytoplasmic pH in roots was 7.3 and could increase to 7.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic pH in roots was 7.3 and could increase to 7.7 (Bibikova et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "418733b9-d75d-4fe4-9a0f-c7e5fb2fca5c",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C85",
+      "claim": "Overall ABA levels range from 30\u201350 ng/g dry-weight in non-stressed plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall ABA levels range from 30\u201350 ng/g dry-weight in non-stressed plants (Forcat et al., 2008; Geng et al., 2013), which can increase up to 30-fold in response to limited water conditions (Harris et al., 1988; Harris and Outlaw 1991; Christmann et al., 2007; Ikegami et al., 2009; Geng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies measuring ABA levels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "3d93f3e5-fee8-493b-9dc9-de8bb9656b3f",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C86",
+      "claim": "ABA levels can increase up to 30-fold in response to limited water conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall ABA levels range from 30\u201350 ng/g dry-weight in non-stressed plants (Forcat et al., 2008; Geng et al., 2013), which can increase up to 30-fold in response to limited water conditions (Harris et al., 1988; Harris and Outlaw 1991; Christmann et al., 2007; Ikegami et al., 2009; Geng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies measuring ABA levels under stress.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "35a83548-2611-48c8-a465-d688ec403a8c",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C87",
+      "claim": "In Vicia faba guard cells ABA concentrations were approximately 0.7 fg/cell pair in unstressed and approximately 17.7 fg/cell pair in stressed guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Vicia faba guard cells ABA concentrations were \u223c 0.7 fg/cell pair in unstressed and \u223c 17.7 fg/cell pair in stressed guard cells (Harris et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "2c9291a4-5b76-414b-a0f5-e3bc98db3195",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C88",
+      "claim": "ABA concentrations in stressed guard cells were estimated to be in the range of approximately 15 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "ABA concentrations in stressed guard cells were estimated to be in the range of \u223c 15 \u00b5M (Harris et al., 1988; Harris and Outlaw 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "f0a4cd15-1d13-403a-9086-dedef5a9dc60",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C89",
+      "claim": "Unstressed guard cell ABA concentration would be approximately 500 nM based on extrapolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolating from these values, unstressed guard cell ABA concentration would be \u223c 500 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by extrapolating from published measurements of ABA in stressed guard cells.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "f5e216fc-7e5d-427b-809e-010daf46b887",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C90",
+      "claim": "Such approximations would be consistent with the partial saturation and reduced response of ABAleon2.1 in guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such approximations would be consistent with the partial saturation and reduced response of ABAleon2.1 in guard cells (Figure 3A\u2013C) and with strong expression of the ABA-induced reporter pRAB18-GFP (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparing estimated ABA concentrations with ABAleon2.1 responses and pRAB18-GFP expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "7b8471f5-8eab-457e-b1b6-ab2772ad78fc",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C91",
+      "claim": "Jones et al. developed ABACUS-type ABA reporters with biochemical properties complementary to ABAleons.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of our ABAleon research we found, that Jones et al. developed ABACUS-type ABA reporters, however with biochemical properties complementary to ABAleons (Jones et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges concurrent work by another group and is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "bb9aaaf3-8a9a-4573-b808-aa90f0a83e12",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "claim_id": "C92",
+      "claim": "ABAleons and ABACUS could be utilized to study novel aspects of ABA signaling in intact plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ABAleons and ABACUS could be utilized to study novel aspects of ABA signaling in intact plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about potential applications based on the complementary properties of the two reporter systems.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed ABAleon FRET-based reporters for ABA with affinities in the 100-600 nM range. ABAleon1.1 has a K'd of ~300 nM and dynamic range of ~15%, while ABAleon2.1 has a K'd of ~100 nM and dynamic range of ~9%. ABAleon2.1 contains an ABI1D413L mutation that eliminates phosphatase activity while maintaining ABA-responsive FRET changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 provide direct in vitro measurements of ABAleon properties including affinity, dynamic range, kinetics, and phosphatase activity (Figure 1). The design is structurally informed (C2) and control experiments (C53, C54) demonstrate specificity and pH stability. The data are internally consistent and well-characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "1adb7ee6-7221-456e-b60d-c98420968f69",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ABAleon2.1 reports ABA concentration differences in distinct cell types and tissues in Arabidopsis. Guard cells show high basal ABA levels (low emission ratios), while roots show tissue-specific differences. Time-resolved imaging reveals simultaneous ABA uptake in guard cells and roots, but delayed wave-like transport in the hypocotyl. Controls with empty FRET cassette and solvent show no response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41, C55-C62 provide direct imaging evidence from multiple tissues (Figure 2, 3). The wave-like transport observation (C59) is supported by time-resolved data and Video 1. Appropriate controls (C60, C61) validate specificity. The correlation with pRAB18-GFP expression (C55, C56) provides independent validation of high guard cell ABA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "8914673f-9381-406d-b9ce-8442ff4168c0",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ABAleon2.1 detects endogenous ABA concentration increases in guard cells in response to low humidity (15 min) and NaCl treatment (4 h), but not to osmotic stress (sorbitol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are directly measured from experiments in Figure 9A-D with appropriate replication (n=3 with \u226524 guard cells). The differential response to NaCl vs sorbitol is interesting and well-documented. The 15-min humidity response is consistent with published literature on rapid ABA changes in guard cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "bbf7c55e-e8d7-4cd1-8d2c-78177974af3d",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ABAleon2.1 reports ABA concentration increases in roots in response to both NaCl and osmotic stress (sorbitol), with differential responses in root maturation vs elongation zones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 provide quantitative measurements from two distinct root zones (Figure 9E-H) with adequate replication (n=8-10 seedlings). The tissue-specific differences in response magnitude are clearly documented. Unlike guard cells, roots respond to both NaCl and sorbitol, suggesting tissue-specific ABA regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "11a638e0-78be-4916-a60f-ae5319d2c29a",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ABAleon2.1 visualizes directional ABA transport from shoot to root at ~16 \u03bcm/min in the hypocotyl. Root-to-shoot transport was not detected within 3 hours under the experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C65-C67 are supported by long-distance transport experiments (Figure 6) with appropriate chamber isolation and controls (Figure 6\u2014supplement 1). The calculated transport rate (C42) is derived from fitted curves with error estimates (16.4 \u00b1 0.8 \u03bcm/min, n=3). The lack of root-to-shoot transport (C43, C66) is appropriately qualified as being under imposed conditions that may affect transpiration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "2e1ec02e-428a-4c8c-935f-8b3575029161",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "High ABAleon2.1 expression causes ABA hyposensitivity in seed germination and seedling growth assays, with the degree of hyposensitivity correlating with expression levels. This effect is not observed in stomatal closure assays. The authors speculate this may be due to ABA sequestration by the high-affinity reporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are demonstrated by comparing two ABAleon2.1 lines with different expression levels to controls (Figure 5). The correlation between expression and hyposensitivity is clear. The tissue-specific effect (no impact on stomatal closure, C44) is interesting. The sequestration hypothesis (C79) is reasonable speculation given the lack of phosphatase activity (C36) and high affinity, though direct evidence is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "14d6dec2-b39f-4149-b875-6ba3b7ba3761",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ABA-induced ABAleon2.1 responses are accelerated in the pyr1-1/pyl1-1/pyl2-1/pyl4-1 quadruple mutant, with half-saturation reached in 7 min vs 16 min in wild-type. The authors speculate this may reflect compensatory upregulation of ABA levels or transport, or altered ABA buffering capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are directly measured from fitted curves (Figure 4) with adequate replication (n=4). The accelerated response is surprising and well-documented. However, the mechanistic explanations (C80, C81) are speculative. The observation is robust but the interpretation requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "e44dca1e-299a-4130-9d83-97afc8f27fcf",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mutations in PYR1 modulate ABAleon ABA affinity and stereospecificity. ABAleon2.13 (PYR1V83H) has reduced affinity (~3-4 \u03bcM), while ABAleon2.15 (PYR1H115A) has intermediate affinity (~600 nM) and 50-fold reduced affinity for (-)-ABA vs (+)-ABA, suggesting PYR1H115 is important for stereospecificity. ABAleon2.15 is identified as the best low-affinity reporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are supported by systematic in vitro characterization (Figure 7, Table 1) and in planta validation (Figure 8). The stereospecificity finding (C50-C51) is particularly interesting and consistent with published work on PYL3 (C74). The conclusion that ABAleon2.15 is the best low-affinity reporter (C52) is justified by the data showing good dynamic range and appropriate affinity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "b6f72a06-52bb-4b56-82ef-95bdb687b957",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ABAleons were designed using PYR1 and close relatives that require ABA for PP2C interaction, rather than monomeric PYR/PYL/RCARs that can interact with PP2Cs without ABA. The resulting ABAleons have affinities (100-600 nM) similar to endogenous receptor-PP2C complexes (20-125 nM) and can detect endogenous ABA changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 explain the design rationale with appropriate citations. The affinity comparison (C70-C71) is supported by both literature values and the demonstration that ABAleon2.1 detects endogenous ABA changes (Figure 9). This design choice is well-justified and validated by the functional data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "e01a14c8-0f1b-4014-a222-72292a4d8a71",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The introduction establishes the biological context for ABA signaling, including its role in plant stress responses, synthesis, catabolism, transport, and the molecular mechanism of ABA perception through PYR/PYL/RCAR receptors and PP2C phosphatases. The authors identify gaps in direct, time-resolved measurements of ABA distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C30 are background knowledge supported by extensive citations to published literature. These establish the scientific context and identify the gap (C12, C18, C22) that the current work addresses. The structural information (C27-C30) provides the basis for the ABAleon design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    },
+    {
+      "id": "d6844ee7-6f38-4563-8c96-a74bfa072d22",
+      "content_id": "a017d648-abcd-4aa1-9bcd-cdc3515dd7dc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discussion contextualizes ABAleon properties relative to published ABA measurements and other reporters. Estimated cellular ABA concentrations (~500 nM in unstressed guard cells, ~15 \u03bcM in stressed) are consistent with ABAleon responses. The authors acknowledge concurrent development of ABACUS reporters and suggest complementary applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C90 provide literature context for interpreting ABAleon data, with appropriate citations. The extrapolation of guard cell ABA concentration (C89) is reasonable but acknowledged as approximate. The acknowledgment of ABACUS (C91) and suggestion of complementary use (C92) is appropriate scholarly practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:24:59.840982Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3c49e956-d7fa-4131-a14f-9f3eebb00ab4",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "e7aae10c-003f-42dd-9eb7-195559dba88b",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "cd695c0a-b3c9-45cc-9bc5-99ac8af1a32f",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "c3ab129b-8af0-47ea-a902-55484a0713d3",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "771b0771-cf13-49cd-9eae-1509078a468d",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "e94844d6-4bdc-4b29-be7a-da39657bbb11",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "e7182edf-e1b3-4d93-baae-04d9ea6335f6",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "8ad7b731-964c-4556-8c77-ca3b0ce6292f",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "97ad9f81-b028-4456-b79c-c44184834081",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "4ff91ac6-f0bc-4f4d-841e-94ccf5b379aa",
+      "result_id": "cb1811e5-6639-4ecf-9b4c-e1c348d372c3"
+    },
+    {
+      "claim_id": "ecf48aa5-d667-486d-9adf-7de4bc96a47a",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "f0811d2f-e918-4784-95af-64674e168164",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "ebc98871-23aa-476c-af3f-cc172885499b",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "a7728265-e381-42f4-a559-510777dadc3b",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "93c48033-5609-4e43-9c1f-cc5c8b195ac3",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "6585ddef-4e13-4751-b208-803651a84cbe",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "6faf8909-c9a4-40ff-9c65-02216bc0c059",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "d99d2ec7-380e-4aba-b55e-ca60946f591f",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "7fda9c22-76e9-443d-8541-7bc76df8ed3d",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "b1001e3f-d8cf-4ecd-bae7-56d4a96edaa2",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "e4ee7f04-91ef-4ad1-a484-9d4f73920b23",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "13cbf619-f17a-4c84-b740-ad83d8f48689",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "1ec3e586-111c-4506-b84b-0a501af9e569",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "0d6864c6-9038-4b2a-ae66-75c8ecc9b6ab",
+      "result_id": "1adb7ee6-7221-456e-b60d-c98420968f69"
+    },
+    {
+      "claim_id": "b6febc58-9955-4957-813c-cae36c820904",
+      "result_id": "8914673f-9381-406d-b9ce-8442ff4168c0"
+    },
+    {
+      "claim_id": "f0811d2f-e918-4784-95af-64674e168164",
+      "result_id": "8914673f-9381-406d-b9ce-8442ff4168c0"
+    },
+    {
+      "claim_id": "ebc98871-23aa-476c-af3f-cc172885499b",
+      "result_id": "8914673f-9381-406d-b9ce-8442ff4168c0"
+    },
+    {
+      "claim_id": "a7728265-e381-42f4-a559-510777dadc3b",
+      "result_id": "8914673f-9381-406d-b9ce-8442ff4168c0"
+    },
+    {
+      "claim_id": "fa4031f8-f8a3-4def-995b-031976ba3170",
+      "result_id": "bbf7c55e-e8d7-4cd1-8d2c-78177974af3d"
+    },
+    {
+      "claim_id": "93c48033-5609-4e43-9c1f-cc5c8b195ac3",
+      "result_id": "bbf7c55e-e8d7-4cd1-8d2c-78177974af3d"
+    },
+    {
+      "claim_id": "6585ddef-4e13-4751-b208-803651a84cbe",
+      "result_id": "bbf7c55e-e8d7-4cd1-8d2c-78177974af3d"
+    },
+    {
+      "claim_id": "7efdd0ef-45a5-42eb-80a0-90889873eaeb",
+      "result_id": "11a638e0-78be-4916-a60f-ae5319d2c29a"
+    },
+    {
+      "claim_id": "d7727fff-b128-4075-abe6-b6401a7dadfa",
+      "result_id": "11a638e0-78be-4916-a60f-ae5319d2c29a"
+    },
+    {
+      "claim_id": "2d21cf12-7481-4b5a-ab9d-41adbaeddcce",
+      "result_id": "11a638e0-78be-4916-a60f-ae5319d2c29a"
+    },
+    {
+      "claim_id": "de68145d-84fe-4cd1-ac88-0f3dc78e07bc",
+      "result_id": "11a638e0-78be-4916-a60f-ae5319d2c29a"
+    },
+    {
+      "claim_id": "b1e4d9af-fde0-4f6f-8181-4b66ff460146",
+      "result_id": "11a638e0-78be-4916-a60f-ae5319d2c29a"
+    },
+    {
+      "claim_id": "5ff00cf8-7717-4238-8fe1-cad421d71d28",
+      "result_id": "11a638e0-78be-4916-a60f-ae5319d2c29a"
+    },
+    {
+      "claim_id": "56daffdb-ee3b-4129-8fd5-ee1cb116d08f",
+      "result_id": "2e1ec02e-428a-4c8c-935f-8b3575029161"
+    },
+    {
+      "claim_id": "4d42f4fc-62ae-44a0-9a2c-011f8ae9da39",
+      "result_id": "2e1ec02e-428a-4c8c-935f-8b3575029161"
+    },
+    {
+      "claim_id": "3e51531b-b59a-4422-8b65-f34640884a89",
+      "result_id": "2e1ec02e-428a-4c8c-935f-8b3575029161"
+    },
+    {
+      "claim_id": "87e96170-891b-4310-b68c-eccc5da201b6",
+      "result_id": "2e1ec02e-428a-4c8c-935f-8b3575029161"
+    },
+    {
+      "claim_id": "7d2d1cf7-8615-4862-8894-ac27639fa7f8",
+      "result_id": "2e1ec02e-428a-4c8c-935f-8b3575029161"
+    },
+    {
+      "claim_id": "83d7528d-b537-44d3-8bee-fbe283c2a113",
+      "result_id": "2e1ec02e-428a-4c8c-935f-8b3575029161"
+    },
+    {
+      "claim_id": "839e0bd3-1de6-497f-ac9d-924517749666",
+      "result_id": "14d6dec2-b39f-4149-b875-6ba3b7ba3761"
+    },
+    {
+      "claim_id": "32b3cbc9-6d62-4a31-9ec5-e5b0512d0b2c",
+      "result_id": "14d6dec2-b39f-4149-b875-6ba3b7ba3761"
+    },
+    {
+      "claim_id": "2cc96106-d7dd-476e-891c-931276772a47",
+      "result_id": "14d6dec2-b39f-4149-b875-6ba3b7ba3761"
+    },
+    {
+      "claim_id": "2bfd35d6-f6cf-4012-8f3a-2fe7cb6ce1a7",
+      "result_id": "14d6dec2-b39f-4149-b875-6ba3b7ba3761"
+    },
+    {
+      "claim_id": "d060d776-d89b-468f-bfd5-0ac1856ff8fe",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "b3f71a44-f8d3-4981-97c4-b457d2a9dd22",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "d2a1fd62-a416-4bf8-94da-82cbc274827a",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "429b5970-798e-402a-a63a-fc965604759d",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "06a2a744-a06a-4353-8504-9c93fd428133",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "c5a732c9-f69b-425e-91bd-64ee9b74a3c7",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "0a71f5be-dd91-439a-9e25-5812fd6744a8",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "212595ab-50b6-4718-8e52-6b31fde89791",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "1f3d6e33-0bd2-4436-ad07-f83a6d9b062e",
+      "result_id": "e44dca1e-299a-4130-9d83-97afc8f27fcf"
+    },
+    {
+      "claim_id": "a2f48c9d-de4f-46b3-b1ed-3de1b630f53d",
+      "result_id": "b6f72a06-52bb-4b56-82ef-95bdb687b957"
+    },
+    {
+      "claim_id": "d7fde5fc-ebcf-45c9-a2f1-ae8c56408cf5",
+      "result_id": "b6f72a06-52bb-4b56-82ef-95bdb687b957"
+    },
+    {
+      "claim_id": "ade6b5e4-e458-4841-b1c6-ce1fd712f44b",
+      "result_id": "b6f72a06-52bb-4b56-82ef-95bdb687b957"
+    },
+    {
+      "claim_id": "f64cc318-60ce-466e-9f92-b6b5adb8a357",
+      "result_id": "b6f72a06-52bb-4b56-82ef-95bdb687b957"
+    },
+    {
+      "claim_id": "9821fff7-cc41-4702-97fc-496a8f463bf8",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "4c4a2ee1-028b-473c-8677-07296bc65b7e",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "6a0e46c3-d376-4a1b-b7c4-c9c62e85fdc8",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "3304a26a-e051-4912-8579-228431d841fa",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "6154b4e2-ec45-4d67-829d-ae82fe4a8577",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "a72d82a1-1419-4e42-88d4-37fc68eec08d",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "8e39f9a4-29dc-4bb2-b065-e29b2af318c0",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "3a3fd93e-fce8-427e-aaab-7833aba7ad9e",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "b444a524-d6c4-4c2b-b21d-177e720333ae",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "b1e71d00-85a7-439e-9af3-35fc49133da9",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "fe18331b-12df-463b-b488-6bd666439943",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "7bf080bc-de71-4cdc-af3d-f0528f62266e",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "d1432e03-63ca-4dc6-a2c5-b5f77ac3c710",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "b0509365-ff22-4362-a363-23ae6bd1a6a6",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "125b108a-824e-44b7-a74e-de8333d843d9",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "870269ad-0c8a-41ac-9b76-39143c3c7ae5",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "0f3d3fa1-994c-42d1-a995-a6b26f1f2b09",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "343d2cab-0f83-47cd-a183-47626b23c882",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "f37383d1-f221-4b0e-bb8c-c0d2f792cc83",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "17fc0322-4697-40ce-bbdd-2cefac871c11",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "9740c65c-b09f-4202-adea-befbfeb26d53",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "94d5f42b-00b4-4d6b-8e1b-b818446fc46b",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "8764dcd8-4fdc-49ff-917a-bc6bf4648d6f",
+      "result_id": "e01a14c8-0f1b-4014-a222-72292a4d8a71"
+    },
+    {
+      "claim_id": "c341ea45-bdaf-4d20-abb9-2029c4befc52",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "f65e67aa-3e6c-4b0b-9f95-734b00c11189",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "2f798790-e77b-457a-bc1e-068731fe22c0",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "4e47c82e-8d3a-47bf-86b5-135df4db740a",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "418733b9-d75d-4fe4-9a0f-c7e5fb2fca5c",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "3d93f3e5-fee8-493b-9dc9-de8bb9656b3f",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "35a83548-2611-48c8-a465-d688ec403a8c",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "2c9291a4-5b76-414b-a0f5-e3bc98db3195",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "f0a4cd15-1d13-403a-9086-dedef5a9dc60",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "f5e216fc-7e5d-427b-809e-010daf46b887",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "7b8471f5-8eab-457e-b1b6-ab2772ad78fc",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    },
+    {
+      "claim_id": "bb9aaaf3-8a9a-4573-b808-aa90f0a83e12",
+      "result_id": "d6844ee7-6f38-4563-8c96-a74bfa072d22"
+    }
+  ],
+  "comparisons": []
+}

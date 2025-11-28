@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Msi genes are frequently overexpressed but rarely mutated in most human cancers. Analysis of TCGA data across multiple cancer types showed that Msi1 was upregulated in at least 40% of breast, lung, and prostate tumors, while Msi2 was upregulated in at least 50% of breast and prostate tumors. Kidney cancer was an exception, showing downregulation and significant mutations in Msi1 (9% of tumors, 99th percentile). The mutation/expression profile resembles oncogenes rather than tumor suppressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C31-C42 are well-supported by comprehensive TCGA analysis of matched tumor-control pairs across multiple cancer types (C31-C35), genome sequencing data (C38-C40), and statistical comparisons (C33). The bimodal distribution in breast cancer (C36-C37) and kidney cancer exception (C39-C41) are documented with appropriate data. The comparison to oncogenes vs tumor suppressors (C42) is supported by mutation and expression pattern analysis shown in Figure 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Msi genes are associated with an epithelial-luminal cell state in breast cancer and glioblastoma. Msi2 was highly expressed in luminal breast tumors, particularly Luminal B subtypes. Immunofluorescence showed MSI1 co-localized with E-cadherin in luminal tumors and ECAD-positive cells. RNA-Seq and Western blot analyses confirmed higher Msi expression in luminal/HER2+ breast cancer cell lines compared to basal lines, with downregulation following Twist-induced EMT. Similar epithelial enrichment was observed in GBM tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C44-C62 are strongly supported by multiple complementary approaches: RNA-Seq analysis of TCGA tumors (C44-C45), immunofluorescence on human tumor sections (C50-C52), RNA-Seq of breast cancer cell lines (C54-C55), Western blot analysis (C57-C59), and GBM tumor analysis (C60-C62). The association with epithelial state is demonstrated across multiple cancer types and validated with both primary tumors and cell lines. The EMT model (C58) provides functional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Msi1 overexpression causes substantial changes in translation efficiency without affecting mRNA levels. Ribosome profiling identified genes with altered translation upon Msi1 overexpression, including increased translation of Prpf3 and Kirrel3, and decreased translation of Rbm22, Dhx37, and Jag1. Few significant mRNA expression changes were observed after 48 hours, suggesting Msi proteins primarily regulate translation rather than transcription or mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are well-supported by ribosome profiling and RNA-Seq data (Figure 3C-D). The lack of mRNA changes (C63) combined with substantial TE changes (C65) provides strong evidence for translational regulation (C64). Specific targets are identified with appropriate statistical thresholds. Quality control metrics (Figure 3\u2014figure supplement 1) support data reliability. The inference that Msi proteins don't directly impact transcription/stability (C64) is reasonable given the data, though alternative explanations aren't fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Msi proteins directly bind to and translationally repress Jagged1 through UAG-containing motifs in its 3' UTR. RBNS analysis showed MSI1 binds UAG-containing sequences with high affinity (Kd ~9-15 nM for Jag1 regions). Mutation of UAG sites reduced binding by >10-fold. Msi overexpression reduced Jag1 ribosome occupancy ~5-fold and JAG1 protein levels, while knockout increased both. Luciferase reporter assays in human cells confirmed regulation is conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71-C85 are strongly supported by multiple complementary approaches: RBNS for binding specificity (C71-C72), computational analysis of Jag1 3'UTR (C73), gel-shift assays with Kd measurements (C74-C75), ribosome profiling (C77), Western blots (C79-C81), and luciferase reporters (C83). The UAG-dependence is demonstrated by mutagenesis (C75-C76). The convergence of binding, ribosome occupancy, and protein level data strongly supports direct translational repression (C85). Conservation to human cells is demonstrated (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Msi proteins regulate alternative splicing to promote an epithelial splicing pattern. RNA-Seq analysis identified several hundred alternatively spliced exons affected by Msi overexpression or knockout. Msi1 and Msi2 trigger similar splicing changes, with knockout showing inverse effects. Splicing changes in mouse NSCs are conserved in human breast cancer cell lines, with Msi-regulated exons (ERBIN, MYO18A) showing cancer-associated patterns in primary tumors that correlate with Msi expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C86-C100 are well-supported by comprehensive RNA-Seq analysis using MISO (Figure 5A-B). The consistency between Msi1 and Msi2 effects (C91-C92) and inverse correlation with knockout (C93-C94) strengthen the findings. The cytoplasmic localization (C88) supports indirect regulation (C89), though the proposed mechanism via splicing factor translation (C90) remains speculative. Cross-species conservation (C95-C96) and correlation with tumor splicing patterns (C97-C99) provide strong validation. The conservation claim (C100) is well-supported by ortholog analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Msi proteins are required to maintain epithelial-luminal state and suppress EMT in breast cancer cells. Knockdown of MSI1 or MSI2 in luminal cell lines (BT474, MCF7-Ras) caused morphological changes to basal-like appearance, decreased epithelial markers, and increased mesenchymal markers. Conversely, Msi1 overexpression in mesenchymal cells increased epithelial markers and reduced migration by 7-fold in transwell assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C9, C101-C111 are well-supported by multiple experimental approaches: morphological analysis (C101-C102), qRT-PCR for EMT markers (C106-C107), and functional migration assays (C109). The bidirectional effects (knockdown vs overexpression) strengthen the conclusions. However, the migration phenotype was context-dependent (only observed in LM2, not MDAMB231 or SUM159), which is appropriately noted (C111). The inference that Msi maintains epithelial state (C103, C108) is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Msi2 overexpression in mammary gland basal cells disrupts branching morphogenesis and expands the luminal cell layer. Ectopic Msi2 expression using K14-rtTA resulted in fewer branch points, smaller TEBs, and delayed ductal growth. This was accompanied by expansion of the luminal layer, increased luminal markers (K8, K18, Gata3, E-cadherin), decreased basal markers and EMT regulators (Slug, Twist1, Twist2), and reduced JAG1 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C116-C128 are well-supported by comprehensive in vivo analysis: whole mount staining (C116-C118), quantification of branch points and ductal length (C117, C119), immunostaining for cell type markers (C121), qRT-PCR (C123-C124), and Western blot/IHC for JAG1 (C125). The phenotype is documented at multiple time points (4 and 7 weeks). The model that Msi blocks EMT required for branching (C126) is well-supported by the molecular and morphological data. The consistency with cell culture results (C127-C128) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C135"
+    ],
+    "result": "Mammalian Msi proteins contribute to an epithelial gene expression program across neural and mammary cell types through multiple layers of RNA regulation. The study demonstrates that Msi proteins impact both translation and pre-mRNA splicing, utilizing multiple mechanisms to reshape the transcriptome for epithelial cell state maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C135 represent the overarching conclusion supported by the convergence of results across NSCs, breast cancer cell lines, and mammary gland in vivo. The demonstration of similar regulatory patterns (translational repression of Jag1, epithelial splicing program, EMT suppression) across these systems provides strong support. The claim of multiple layers of regulation (C135) is directly supported by the ribosome profiling and RNA-Seq data showing both translational and splicing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Rbfox2 and Mbnl1, known EMT regulators, are more highly expressed in luminal tumors compared to mesenchymal tumors, consistent with their role in EMT regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by TCGA expression analysis (Figure 2\u2014figure supplement 2) and citation to prior work (Venables et al., 2013). This serves as validation that the epithelial/mesenchymal classification is appropriate and that other known EMT-regulatory RBPs show expected patterns. However, this is confirmatory rather than novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Analysis of published RNA-Seq data and immunostaining confirmed that Msi1 and Msi2 are enriched in luminal cells of mouse mammary gland, with MSI2 protein showing higher levels in luminal versus basal (K14-positive) cell layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by analysis of published data (dos Santos et al., 2013) and immunostaining (Figure 7A). This provides important validation that the expression pattern observed in tumors reflects normal tissue organization. The data quality is appropriate, though C114 notes data are \"not shown\" which slightly reduces transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Unsupervised hierarchical clustering of matched breast tumor and control samples separated tumors from controls rather than clustering by patient origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by clustering analysis (Figure 1\u2014figure supplement 1B). This demonstrates that tumor vs normal differences dominate over patient-specific variation, validating the matched-pair design. This is a quality control result supporting the analysis approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "MSI1 and MSI2 proteins share over 70% amino acid identity with highly similar RNA recognition motifs, suggesting functional similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by established knowledge of protein sequences. This provides context for why Msi1 and Msi2 show similar functional effects, but is descriptive rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims about EMT, RBPs in cell state transitions, and prior knowledge of Msi expression patterns and functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C30 are background/introduction claims supported by appropriate citations to prior literature. These establish context but are not novel findings of this study. All citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C104",
+      "C105",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Background claims about Jagged1/Notch signaling in EMT and the role of post-transcriptional regulation in cell state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C104-C105, C129-C134 are supported by appropriate citations to prior literature. These provide important context for interpreting the Jag1 regulation findings but are not novel results. The citations appear accurate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C112",
+      "C113",
+      "C138"
+    ],
+    "result": "Background claims about breast cancer subtypes, mammary gland development, and Msi expression patterns across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C112-C113, C138 are supported by citations or established knowledge. These provide necessary context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C136",
+      "C139"
+    ],
+    "result": "Speculative claims about mechanisms and broader implications of Msi function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C136, C139 are explicitly speculative (C90: \"may result from\", C136: \"may reinforce\", C139: \"suggests the hypothesis\"). C90 proposes splicing changes result from translational regulation of splicing factors, which is plausible given the data but not directly tested. C136 suggests splicing effects reinforce Jag1 repression effects, which is reasonable but speculative. C139 proposes Msi as general epithelial stem cell regulators, which requires additional tissue-specific studies to confirm. These are appropriate hypotheses for future work but not demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

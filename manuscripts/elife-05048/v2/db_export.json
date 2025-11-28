@@ -1,0 +1,1796 @@
+{
+  "submission": {
+    "id": "29b1af87-1f21-4bf5-bdc4-285363ed5a18",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:19:24.662097Z",
+    "updated_at": "2025-11-28T22:19:24.662097Z"
+  },
+  "content": [
+    {
+      "id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "submission_id": "29b1af87-1f21-4bf5-bdc4-285363ed5a18",
+      "content_type": "manuscript",
+      "content_text": "# Global biogeographic sampling of bacterial secondary metabolism\n\n## Authors\n\n- Zachary Charlop-Powers<sup>1</sup> ([ORCID: 0000-0001-8816-4680](https://orcid.org/0000-0001-8816-4680))\n- Jeremy G Owen<sup>1</sup>\n- Boojala Vijay B Reddy<sup>1</sup>\n- Melinda A Ternei<sup>1</sup>\n- Denise O Guimar\u00e3es<sup>2</sup>\n- Ulysses A de Frias<sup>3</sup> ([ORCID: 0000-0002-3739-2779](https://orcid.org/0000-0002-3739-2779))\n- Monica T Pupo<sup>3</sup> ([ORCID: 0000-0003-2705-0123](https://orcid.org/0000-0003-2705-0123))\n- Prudy Seepe<sup>4</sup>\n- Zhiyang Feng<sup>5</sup>\n- Sean F Brady<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratory of Genetically Encoded Small Molecules Howard Hughes Medical Institute, Rockefeller University New York United States\n2. Laborat\u00f3rio de Produtos Naturais, Curso de Farm\u00e1cia Universidade Federal do Rio de Janeiro\u2013Campus Maca\u00e9 Rio de Janeiro Brazil\n3. School of Pharmaceutical Sciences of Ribeir\u00e3o Preto University of S\u00e3o Paulo S\u00e3o Paulo Brazil\n4. KwaZulu-Natal Research Institute for Tuberculosis and HIV Nelson R Mandela School of Medicine Durban South Africa\n5. College of Food Science and Technology Nanjing Agricultural University Nanjing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent bacterial (meta)genome sequencing efforts suggest the existence of an enormous untapped reservoir of natural-product-encoding biosynthetic gene clusters in the environment. Here we use the pyro-sequencing of PCR amplicons derived from both nonribosomal peptide adenylation domains and polyketide ketosynthase domains to compare biosynthetic diversity in soil microbiomes from around the globe. We see large differences in domain populations from all except the most proximal and biome-similar samples, suggesting that most microbiomes will encode largely distinct collections of bacterial secondary metabolites. Our data indicate a correlation between two factors, geographic distance and biome-type, and the biosynthetic diversity found in soil environments. By assigning reads to known gene clusters we identify hotspots of biomedically relevant biosynthetic diversity. These observations not only provide new insights into the natural world, they also provide a road map for guiding future natural products discovery efforts.\n\n## Introduction\n\nSoil-dwelling bacteria produce many of the most important members of our pharmacy, including the majority of our antibiotics as well as many of the cytotoxic compounds used in the treatment of cancers (Cragg and Newman, 2013). The traditional approach for characterizing the biosynthetic potential of environmental bacteria has been to examine metabolites produced by bacteria grown in monoculture in the lab. However, it is now clear that this simple approach has provided access to only a small fraction of the global microbiome's biosynthetic potential (Rappe and Giovannoni, 2003; Gilbert and Dupont, 2011; Rajendhran and Gunasekaran, 2011). In most environments uncultured bacteria outnumber their cultured counterparts by more than two orders of magnitude, and among the small fraction of bacteria that has been cultured (Torsvik et al., 1990, 1998), only a small subset of gene clusters found in these organisms is generally expressed in common fermentation broths (Bentley et al., 2002; Ikeda et al., 2003). The direct extraction and subsequent sequencing of DNA from environmental samples using metagenomic methods provides a means of seeing this \u2018biosynthetic dark matter\u2019 for the first time. Unfortunately, the genomic complexity of most metagenomes limits the use of the shotgun-sequencing and assembly approaches (Iverson et al., 2012; Howe et al., 2014) that are now routinely used to study individual microbial genomes (Donadio et al., 2007; Cimermancic et al., 2014). Although bacterial natural products represent an amazing diversity of chemical structures, the majority of bacterial secondary metabolites, including most clinically useful microbial metabolites, arise from a very small number of common biosynthetic themes (e.g., polyketides, ribosomal peptides, non-ribosomal peptides, terpenes, etc) (Dewick, 2002). Because of the functional conservation of enzymes used by these common systems, degenerate primers targeting the most common biosynthetic domains provide a means to broadly study gene cluster diversity in the uncultured majority in a way similar to what is now regularly done for bacterial species diversity using 16S rRNA gene sequences. Here we use this approach to conduct the first global examination of non-ribosomal peptide synthetase (NRPS) adenylation domain (AD) and polyketide synthase (PKS) ketosynthase (KS) domain biosynthetic diversity in soil environments. We chose to explore NRPS and PKS biosynthesis because the highly modular nature of these biosynthetic systems has provided a template for the production of a wide variety of gene clusters that give rise to a correspondingly diverse chemical repertoire, including many of the most clinically useful microbial metabolites (Cragg and Newman, 2013).\n\n## Results and discussion\n\nWith the help of a citizen science effort (www.drugsfromdirt.org), soil samples were collected from five continents (North America, South America, Africa, Asia, Australia) and several oceanic islands (Hawaii, Dominican Republic), covering biomes that include multiple rainforests, temperate forests, deserts and coastal sediments. DNA was extracted directly from these soils as previously described (Brady, 2007) and 96 samples were chosen for analysis of NRPS/PKS diversity using 454 pyro-sequencing of AD and KS domain PCR amplicons. Samples were chosen on the basis of DNA quality and biome diversity; raw sequence reads from these samples were combined with existing amplicon datasets derived from other biomes using the same DNA isolation, PCR and sequencing protocols (Charlop-Powers et al., 2014). The entire dataset representing 185 biomes was clustered into operational taxonomic units (OTUs) at a sequence distance of 5%. Despite millions of unique sequencing reads yielding a predicted Chao1 OTU estimate of greater than 350,000 for each domain, rarefaction analysis suggests that we have not yet saturated the sequence space of either domain (Figure 1A,C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05048/elife-05048-fig1-v2.jpg)\n\n**Figure 1.:** The global abundance (A and C), sample-to-sample variation (B and D), and geographic distribution (E, F, G, and H) of adenylation domains (AD) and ketosynthase domains (KS) were assessed by pyro-sequencing of amplicons generated using degenerate primers targeting AD and KS domains found in 185 soils/sediments from around the world. (A and C) Global AD (A) or KS (C) domain diversity estimates were obtained by rarefying the global OTU table (de novo clustering at 95%) for AD and KS sequences and calculating the average Chao1 diversity metric at each sampling depth. (B and D) The ecological distance (i.e., Jaccard dissimilarity) between AD (B) or KS (D) domain populations sequenced from each metagenome was determined as a function of the great circle distance between sample collection sites (km). Insets show local relationships (<500 km) in more detail. (E and F) All sample collection sites are shown on each world map and lines are used to connect sample sites that share at least the indicated fraction (3%, 10%) of AD (E) or KS (F) OTUs. (G and H) Biome-specific relationships within domain OTU populations sequenced from geographically proximal samples assessed by Jaccard similarity. Samples were collected from (G) Atlantic forest, saline or cerrado environments or from the (H) New Mexican desert topsoils or hot springs sediments.\n\nThe first question we sought to address with this data was how biosynthetic sequence composition varies by geographic distance. To do this we calculated the pairwise Jaccard distances between AD/KS sequence sets derived from each sampling site and used these metrics to compare samples. The Jaccard distance, a widely used metric for comparing the fraction of shared OTUs between samples, was chosen over alternative metrics due to its simplicity and to the lack of a comprehensive reference phylogenetic tree for AD and KS domains as exists for 16S analyses. Most Jaccard distances were found to be quite small (<3%), indicating large differences in secondary metabolite gene sequence composition between almost all sample collection sites (Figure 1B,D). Although the OTU overlap between our individual experimental samples is generally small, these relationships allow us to begin to develop a picture of how biosynthetic diversity varies globally. On a global level, the strongest biosynthetic sequence composition relationships are seen between samples collected in close physical proximity to one another (Figure 1B,D,E,F) as opposed to between samples from similar biomes in different geographic locations. For example, at a cutoff of even as low as 3% shared KS or AD OTUs, essentially all inter-sample relationships are observed between immediate geographic neighbors and not similar biomes in different global locations (Figure 1E,F). This likely explains the limited inter-sample relationships we observe between samples from the Eastern hemisphere as most samples from this part of the world were collected from sites at a significant geographic distance from one another. The only exception is the set of soil samples from South Africa, of which a number were collected in relatively close geographic proximity. These samples exhibit similar pairwise Jaccard metrics to those observed between geographically proximal samples collected in the Western hemisphere (Figure 1E,F).\n\nAlthough differences in biosynthetic composition of microbiomes appear to depend at least in part on the geographic distance between samples, our data suggests that change in the biome type is an important additional factor for the differentiation of biosynthetic diversity on a more local level (Figure 1G,H). For example, at a cutoff of 3% shared OTUs, essentially all inter-sample relationships are observed between immediate geographic neighbors; when this is raised to 10% shared OTUs (Figure 1E,F), relationships are only seen between nearby samples belonging to the same biome. This phenomenon is highlighted by the two examples shown in Figure 1G,H. In the first example, Brazilian soils were collected from Atlantic rainforest, saline or cerrado (savanna-like) sites located only a few miles from one another. Our AD and KS data show these sample are (i) distinct from other globally distributed samples, (ii) most strongly related to the samples from the same Brazilian biome and (iii) only distantly related to the samples from other Brazilian biomes. In the second example, a sample collected from a New Mexican hot spring where the soil is heated continuously by subterranean water is compared with samples derived from the dry soils of the surrounding environment. Once again our amplicon data show that these samples are (i) distinct from other globally distributed samples, (ii) most strongly related to other samples from the same biome and (iii) only distantly related to samples from other nearby biomes. Although it is possible that at a much greater sampling depth all AD and KS domains will be found at all sites as predicted by Baas-Becking's \u2018everything is everywhere but the environment selects\u2019 hypothesis of global microbial distribution (O'Malley, 2007; de Wit and Bouvier, 2006), our PCR-based data suggest that both geography and ecology play a role in determining the major biosynthetic components of a microbiome.\n\nThe vast majority of AD and KS domain sequences coming from environmental DNA (eDNA) are only distantly related to functionally characterized NRP/PK gene clusters, precluding precise predictions about the specific natural products encoded by the gene clusters from which most amplicons arise. However, in cases where eDNA sequence tags show high sequence similarity to domains found in functionally characterized gene clusters, this information can be used to predict the presence of specific gene cluster families within a specific microbiome. This type of phylogenetic analysis is the basis of the recently developed eSNaPD program, a BLAST-based algorithm for classifying the gene cluster families that are associated with eDNA-derived sequence tags (Owen et al., 2013; Reddy et al., 2014). When an eDNA sequence tag clades with, but is not identical to, a reference sequence in an eSNaPD-type analysis, it is considered to be indicative of the presence of a gene cluster that encodes a congener (i.e., a derivative) of the metabolite encoded by the reference cluster.\n\nInterestingly, eSNaPD analysis of the data from all sites reveals two distinct types of biomedically relevant natural product gene cluster \u2018hot spots\u2019 within our data (Figure 2A,B,D). These include \u2018specific gene cluster hotspots\u2019 and \u2018gene cluster family hotspots\u2019. Metagenomes from \u2018specific gene cluster hotspots\u2019 are predicted to be enriched for a gene cluster that encodes a congener of the target natural product, while metagenomes from \u2018gene cluster family hotspots\u2019 are predicted to encode multiple congeners related to the target natural product. Figure 2A shows several of the strongest examples of \u2018specific gene cluster hotspots\u2019 where reads falling into an OTU related to a specific biomedically relevant gene cluster or gene cluster family are disproportionately represented in the sequence data from individual microbiomes. These examples highlight the different enrichment patterns that we observe in the environment\u2014hotspots are either local in nature, consisting of only one or two samples containing sequence reads mapping to the target (epoxomycin, oocydin); regional (tiacumicinB); or global with punctuated increases in diversity (glycopeptides). We would predict \u2018specific gene cluster hotspots\u2019 (Figure 2D) are naturally enriched for bacteria that encode congeners of the biomedically relevant target metabolites, thereby potentially simplifying the discovery of new congeners. Figure 2B shows examples of \u2018gene cluster family hotspots\u2019, where metagenomes having a disproportionately high number of OTUs mapping to a specific biomedically relevant target molecule family (e.g., nocardicin, rifamycin, bleomycin, and daptomycin families are shown) are highlighted. This analysis identifies specific sample sites, from among those surveyed, that are predicted to contain the most diverse collection of gene clusters associated with a target molecule of interest (Figure 2B). Both types of hotspots should represent productive starting points for future natural product discovery efforts aimed at expanding the structural diversity and potential utility of specific biomedically relevant natural product families.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05048/elife-05048-fig2-v2.jpg)\n\n**Figure 2.:** Hotspot analysis of natural product biosynthetic diversity to identify samples with a high total proportion of reads corresponding to a natural product family of interest (A and D), the maximum unique OTUs corresponding to a natural product family of interest (B and D), or the estimated sample biodiversity (C and D). In A and B samples are arranged by longitude and hemisphere as is shown in the Sample Key. (A) For each sample, sequence reads assigned by eSNaPD are expressed as a percentage of total reads obtained for that sample. A sample is designated a hotspot if more than one percent (0.01; horizontal line) of its reads map to a specific gene cluster. Fractional observance data for five representative gene clusters or gene cluster families (zorbamycin, oocydin, tiacumicinB, epoxomicin, glycopeptides) that show significant sample dependent difference in read frequency are shown. (B) Hotspots of elevated gene cluster family diversity can be identified by determining the number of unique OTUs occurring in each sample that, by eSNaPD, map to a natural product gene cluster of interest. Sample specific OTU counts for nocardicin, rifamycin, bleomycin, and daptomycin clusters are shown. Samples containing greater than 50% of the maximum observed OTU value are colored and mapped in (C). OTU diversity measurements do not predict the abundance of a specific cluster in a metagenome [as predicted in (A)], but instead are used to identify locations where the largest number of congener-encoding clusters may be found. These sites are predicted to be most useful for increasing the structural diversity and therefore potential clinical utility of these medically important families of natural products. (C) Estimated diversity of AD/KS reads by sample. AD and KS OTU tables were combined and for each sample the Chao1 diversity metric was calculated at 5000 reads, providing a baseline metric for comparing sample biosynthetic diversity. The average number of unique OTUs observed over 10 rarefactions analyses is shown (also see Supplementary file 7). (D) Hotspot map of samples identified in A, B and C. (E) Representative structures of target molecule families highlighted in A and B.\n\nBiosynthetic domain sequence tag data are not only useful for pinpointing environments that are rich in specific biosynthetic targets of interest but also as a metric for natural product biosynthetic diversity in general. As only a small fraction (5\u201310%) of total AD and KS sequences can be confidently assigned by the eSNaPD algorithm, samples showing the largest collection of unique OTUs (at a common sequencing depth) might be expected to contain the most diverse collection of novel biosynthetic gene clusters (Figure 2C) and therefore be the most productive sites to target for future novel molecule discovery efforts. Once normalized for sequencing depth, the number of unique KS and AD sequence tags observed per collection site differs by almost an order of magnitude between environments (Figure 2C), with the most diverse samples mapping to Atlantic forest and Desert environments (Figure 2C,D teal spots, Supplementary file 7).\n\nThe development of cost effective high-throughput DNA sequencing methodologies and powerful biosynthesis focused bioinformatics algorithms allow for the direct interrogation and systematic mapping of global microbial biosynthetic diversity. Our analyses of 100s of distinct soil microbiomes suggests that geographic distance and local environment play important roles in the sample-to-sample differences we detected in biosynthetic gene populations. As variations in biosynthetic gene content are expected to correlate with variations in the small-molecule producing capabilities of a microbiome, the broader implication of these observations from a drug discovery perspective is that the dominant biosynthetic systems of geographically distinct soil microbiomes are expected to encode orthogonal, largely unexplored collections of natural products. Taken together, our biosynthetic domain hotspot and OTU diversity analyses represent a starting point in the creation of a global natural products atlas that will use sequence data to guide natural product discovery in the future. Based on the historical success of natural products as therapeutics, microbial \u2018biosynthetic dark matter\u2019 is likely to hold enormous biomedical potential. The key will be learning how to harvest molecules encoded by the biosynthetic diversity we are now able to find through sequencing.\n\n## Materials and methods\n\n### Soil collection\n\nSoil from the top 6 inches of earth was collected at unique locations in the continental United States, China, Brazil, Alaska, Hawaii, Costa Rica (Brady and Clardy, 2004), Ecuador, the Dominican Republic, Australia, Tanzania and South Africa. The full sample table is available in Supplementary file1.\n\n### Soil DNA extraction\n\nTo reduce the potential for cross contamination, DNA was extracted from soil using a simplified version of our previously published DNA isolation protocol (Brady, 2007; Reddy et al., 2012). The modified protocol was as follows: 250 grams of each soil sample was incubated at 70\u00b0C in 150 ml of lysis buffer (2% sodium dodecyl sulfate [wt/vol], 100 mM Tris\u2013HCl, 100 mM EDTA, 1.5 M NaCl, 1% cetyl trimethyl-ammonium bromide [wt/vol]) for 2 hr. Large particulates were then removed by centrifugation (4000\u00d7g, 30 min), and crude eDNA was precipitated from the resulting supernatant with the addition of 0.6 vol of isopropyl alcohol. Precipitated DNA was collected by centrifugation (4000\u00d7g, 30 min), washed with 70% ethanol and resuspended in a minimum volume of TE (10 mM Tris, 1 mM EDTA [pH 8]). Crude environmental DNA was passed through two rounds of column purification using the PowerClean system (MO BIO, Carlsbad, California). Purified environmental DNA was then diluted to 30 ng/\u00b5l and archived for use in PCR reactions.\n\n### PCR amplification\n\nDegenerate primers targeting conserved regions of AD [A3F (5\u2032-GCSTACSYSATSTACACSTCSGG) and A7R (5\u2032-SASGTCVCCSGTSCGGTA) (Ayuso-Sacido and Genilloud, 2005)] and KS [degKS2F.i (5\u2032-GCIATGGAYCCICARCARMGIVT) and degKS2R.i (5\u2032-GTICCIGTICCRTGISCYTCIAC) (Schirmer et al., 2005)] domains were used to amplify gene fragments from crude eDNA. Forward primers were designed to contain a 454 sequencing primer (CGTATCGCCTCCCTCGCGCCATCAG) followed by a unique 8 bp barcode that allowed simultaneous sequencing of up to 96 different AD- or KS- samples in a single GS-FLX Titanium region. PCR reaction consisted of 25 \u00b5l of FailSafe PCR Buffer G (Epicentre, Madison, Wisconsin), 1 \u00b5l recombinant Taq Polymerase (Bulldog Bio, Portsmouth, New Hampshire), 1.25 \u00b5l of each primer (100 mM), 14.5 \u00b5l of water and 6.5 \u00b5l of purified eDNA. PCR conditions for AD domain primers were as follows: 95\u00b0C for 4 min followed by 40 cycles of 94\u00b0C for 0.5 min, 67.5\u00b0C for 0.5 min, 72\u00b0C for 1 min and finally 72\u00b0C for 5 min. PCR conditions for KS domain primers were as follows: 95\u00b0C for 4 min followed by 40 cycles of 54\u00b0C for 40 s, 56.3\u00b0C for 40 s, 72\u00b0C for 75 s and finally 72\u00b0C for 5 min. PCR reactions were examined by 2% agarose gel electrophoresis to determine the concentration and purity of each amplicon. Amplicons were pooled in equal molar ratios, gel purified using the Invitrogen eGel system and DNA of the appropriate size was recovered using Agencourt Ampure XP beads (Beckman Coulter, Brea, California). Amplicons were sequenced using the 454 GS-FLX Titanium platform. Raw flowgram files from 454's shotgun processing routine were used for downstream analysis.\n\n### Processing 454 data\n\nRaw reads were assigned to samples using the unique primer barcodes and filtered by quality (50 bp rolling window PHRED cutoff of 20) using Qiime (version 1.6) (Caporaso et al., 2010). USEARCH (version 7), which implements the improved UPARSE clustering algorithm (Edgar, 2013), was used to remove Chimeric sequences with the default 1.9 value of the de novo chimera detection tool. UPARSE clustering requires all sequences to be of the same length. In an effort to balance read quality and abundance with the ability to phylogenetically discriminate gene clusters we used 419 bp as our read length cutoff. The trimmed fasta file was then clustered to 5% to compensate for sequencing error and natural polymorphism that is often observed in gene clusters found in natural bacterial populations. Clustering proceeded as per the USEARCH manual by clustering at a distance of 3% and using representative sequences from each cluster to cluster again at 5%. The resulting \u20185%\u2019 AD and KS OTU tables were used for all subsequent rarefaction and diversity analyses. Read and OTU counts available in Supplementary file 2.\n\n### Rarefaction and diversity analyses\n\nTo assess global AD and KS diversity in our sample set we sought to assess the global number of AD and KS domains we might expect to see if all of our data had been generated from a single sample. To do this, all reads assigned to an OTU were consolidated to generate a single-column OTU table where each row contains the sum of all sequences assigned to that OTU from any of the 185 samples. To assess the global diversity we subsampled this table at multiple depths using Qiime (Caporaso et al., 2010) and used the Chao1 formula to estimate the expected number of OTUs at this depth. This rarefaction analysis was performed ten times at each subsampling depth (Figure 1A,C; Supplementary files 3, 4) and the curves were fit to the data using the following equation: y = 1 + log(x) + log(x^2) + log(x^3) where x is the read value and y is the Chao1 diversity.\n\nEcological distances are calculated using the Jaccard [1 \u2212 (OTUA&B)/(OTUA + OTUB \u2212 OTUA&B)] or inverse Jaccard metric (Oksanen et al., 2013) and geographic distances were calculated using great circle (spherical) distance derived from the latitude/longitude values of each set of points (Bivand and Pebesma, 2005) (Supplementary file 5). Pairwise ecological and geographic distances were used to create Figure 1B,D. Network plots of subsamples (Figure 1G,H) were generated using Phyloseq (McMurdie and Holmes, 2013) to calculate the intersample Jaccard distance. As expected, the strongest relationships are observed between sample proximity controls where soils were collected approximately 10 meters from one another and processed independently, demonstrating that closely related samples do in fact group together in our analysis pipeline.\n\n### Assignment of AD and KS domains to known gene clusters\n\nAD and KS amplicon reads were assigned to known biosynthetic gene clusters using the eSNaPD algorithm at an e-value cutoff of 10\u221245 (Reddy et al., 2014). At this threshold eSNaPD has been used to successfully assign-and-recover gene clusters that encode congeners of multiple natural product families using only the sequence from a single domain amplicon (Owen et al., 2013; Chang and Brady, 2014; Kang and Brady, 2014). NRPS/PKS clusters typically have multiple KS or AD domains. Hits to all domains in a cluster were aggregated in our analyses. Data for eSNaPD hits broken down by sample and molecule are included as Supplementary file 6.\n\n### Hotspot analysis\n\nAD and KS OTU tables were analyzed for the presence of eSNaPD hits. For each sample the abundance of each eSNaPD hit (i.e., a particular molecule) was calculated as either a percentage of total reads (Figure 2A,C) or as the total number of unique OTUs assigned to the molecule that were found in that sample (Figure 2B,C), or as the total number of OTUs mapped to a molecule in each sample. In the read-based hotspot analysis, the number of reads assigned by eSNaPD to a specific gene cluster is expressed as a fraction of total per sample reads: (reads-to-cluster-of-interest)/total sample reads). In the OTU-based hotspot analysis we calculated the number of unique eSNaPD assigned OTUs found in each sample that map to a specific gene cluster. The full eSNaPD dataset is available in Supplementary file 6. To compare global biosynthetic diversity of each sample, the AD and KS OTU tables were combined and for each sample they were subsampled ten times to a depth of 5000 reads. The Chao1 diversity metric was calculated for each sample and the average was used to compare the expected biodiversity in different samples at the same sampling depth (Figure 1C, Supplementary file 7).\n",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "38bf6ea7-c8f5-4b79-ac77-fd67bb66e3e7",
+      "submission_id": "29b1af87-1f21-4bf5-bdc4-285363ed5a18",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Clardy, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05048.012](https://doi.org/10.7554/eLife.05048.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cGlobal Biogeography of Bacterial Secondary Metabolism\u201d for consideration at eLife. Your article has been favorably evaluated by Ian Baldwin (Senior editor) and 4 reviewers, one of whom, Jon Clardy, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers felt that the paper raised a significant point regarding the widespread understanding that \u201ceverything is everywhere, the environment selects\u201d. However, in its present form, the tone of the article overstated the extent to which the current study discredited this understanding and suggested a number of modifications that would tone down the conclusions. These began with the title, and \u201dGlobal Biogeographical Sampling of Bacterial Secondary Metabolism\u201c was suggested as more consistent with the actual research presented. Most of the comments focused on: the small sample size, and the degree to which it broadly surveyed potential ecological sites; the restricted focus on NRPS and KS pathways, which in turn select for a subset of bacteria (with an explicit reference to the recent Fischbach paper in Cell); and the ability of sequence tag data (as opposed to deeper sequencing) to serve as a metric for natural product biosynthetic diversity in general.\n\nThe reviewers agree that even with these limitations the data presented offer a significant challenge to the reigning \u201ceverything is everywhere\u201d paradigm, but they don't completely overthrow it.\n\nA concern about the degree with which the \u201ccrowd sourcing\u201d approach aligned with the Nagoya Protocol on Biological Diversity was also raised.\n",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "216bfdff-626a-404c-9f97-b37ad8a1a7b7",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C1",
+      "claim": "Recent bacterial (meta)genome sequencing efforts suggest the existence of an enormous untapped reservoir of natural-product-encoding biosynthetic gene clusters in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent bacterial (meta)genome sequencing efforts suggest the existence of an enormous untapped reservoir of natural-product-encoding biosynthetic gene clusters in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about recent sequencing efforts and their implications, drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "539f47d5-a8a4-4099-a98b-f2aa5d7cda5d",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C2",
+      "claim": "Large differences in domain populations are observed from all except the most proximal and biome-similar samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We see large differences in domain populations from all except the most proximal and biome-similar samples, suggesting that most microbiomes will encode largely distinct collections of bacterial secondary metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the study, specifically the Jaccard distance analyses shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "93fd7791-0c3b-462b-ad05-5d5a97f6fc48",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C3",
+      "claim": "Most microbiomes will encode largely distinct collections of bacterial secondary metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "We see large differences in domain populations from all except the most proximal and biome-similar samples, suggesting that most microbiomes will encode largely distinct collections of bacterial secondary metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed differences in domain populations between samples.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "5c1f35ea-01fa-44da-a88f-8796271be7ed",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C4",
+      "claim": "There is a correlation between geographic distance and biosynthetic diversity found in soil environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate a correlation between two factors, geographic distance and biome-type, and the biosynthetic diversity found in soil environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the pairwise Jaccard distance analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "e41da385-6b32-42ab-a331-cf547a80c755",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C5",
+      "claim": "There is a correlation between biome-type and biosynthetic diversity found in soil environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate a correlation between two factors, geographic distance and biome-type, and the biosynthetic diversity found in soil environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative analyses of samples from different biomes shown in Figure 1G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "3874fb7b-1654-48d0-98e4-3afcbc421ff4",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C6",
+      "claim": "Hotspots of biomedically relevant biosynthetic diversity can be identified by assigning reads to known gene clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "By assigning reads to known gene clusters we identify hotspots of biomedically relevant biosynthetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the eSNaPD analysis presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "7c2776c9-d12d-4e40-97bb-1d0019f73a5b",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C7",
+      "claim": "Soil-dwelling bacteria produce many of the most important members of our pharmacy, including the majority of our antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Soil-dwelling bacteria produce many of the most important members of our pharmacy, including the majority of our antibiotics as well as many of the cytotoxic compounds used in the treatment of cancers (Cragg and Newman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cragg and Newman, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "7abb31eb-7cab-4c0a-89b7-5949f92faa1b",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C8",
+      "claim": "Soil-dwelling bacteria produce many of the cytotoxic compounds used in the treatment of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Soil-dwelling bacteria produce many of the most important members of our pharmacy, including the majority of our antibiotics as well as many of the cytotoxic compounds used in the treatment of cancers (Cragg and Newman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cragg and Newman, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "cb5ca43c-2144-4815-acea-1d4b74b12165",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C9",
+      "claim": "The traditional approach for characterizing the biosynthetic potential of environmental bacteria has been to examine metabolites produced by bacteria grown in monoculture in the lab.",
+      "claim_type": "EXPLICIT",
+      "source": "The traditional approach for characterizing the biosynthetic potential of environmental bacteria has been to examine metabolites produced by bacteria grown in monoculture in the lab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established practices in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "2f383230-f64f-4e50-89ca-438d09c637d5",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C10",
+      "claim": "The traditional monoculture approach has provided access to only a small fraction of the global microbiome's biosynthetic potential.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is now clear that this simple approach has provided access to only a small fraction of the global microbiome's biosynthetic potential (Rappe and Giovannoni, 2003; Gilbert and Dupont, 2011; Rajendhran and Gunasekaran, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "4584f5fe-b846-45a9-8186-266385500b7f",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C11",
+      "claim": "In most environments uncultured bacteria outnumber their cultured counterparts by more than two orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In most environments uncultured bacteria outnumber their cultured counterparts by more than two orders of magnitude, and among the small fraction of bacteria that has been cultured (Torsvik et al., 1990, 1998), only a small subset of gene clusters found in these organisms is generally expressed in common fermentation broths (Bentley et al., 2002; Ikeda et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Torsvik et al., 1990, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "1b745d84-716d-44ee-83d7-bf12c8536a04",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C12",
+      "claim": "Among the small fraction of bacteria that has been cultured, only a small subset of gene clusters found in these organisms is generally expressed in common fermentation broths.",
+      "claim_type": "EXPLICIT",
+      "source": "In most environments uncultured bacteria outnumber their cultured counterparts by more than two orders of magnitude, and among the small fraction of bacteria that has been cultured (Torsvik et al., 1990, 1998), only a small subset of gene clusters found in these organisms is generally expressed in common fermentation broths (Bentley et al., 2002; Ikeda et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bentley et al., 2002 and Ikeda et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "a9747bb5-3613-42a8-9e1d-0a48c6ca2a4c",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C13",
+      "claim": "The direct extraction and subsequent sequencing of DNA from environmental samples using metagenomic methods provides a means of seeing biosynthetic dark matter for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct extraction and subsequent sequencing of DNA from environmental samples using metagenomic methods provides a means of seeing this 'biosynthetic dark matter' for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the capabilities of metagenomic methods based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "d8aafc4e-c9a7-46ab-bb96-8b28b8ff469b",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C14",
+      "claim": "The genomic complexity of most metagenomes limits the use of shotgun-sequencing and assembly approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the genomic complexity of most metagenomes limits the use of the shotgun-sequencing and assembly approaches (Iverson et al., 2012; Howe et al., 2014) that are now routinely used to study individual microbial genomes (Donadio et al., 2007; Cimermancic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iverson et al., 2012 and Howe et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "00e06a43-42c4-4d86-be6a-a1815624bb80",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C15",
+      "claim": "The majority of bacterial secondary metabolites arise from a very small number of common biosynthetic themes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although bacterial natural products represent an amazing diversity of chemical structures, the majority of bacterial secondary metabolites, including most clinically useful microbial metabolites, arise from a very small number of common biosynthetic themes (e.g., polyketides, ribosomal peptides, non-ribosomal peptides, terpenes, etc) (Dewick, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dewick, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "23dcaa60-06d4-4fe7-8164-edb96847c6e9",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C16",
+      "claim": "Most clinically useful microbial metabolites arise from a very small number of common biosynthetic themes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although bacterial natural products represent an amazing diversity of chemical structures, the majority of bacterial secondary metabolites, including most clinically useful microbial metabolites, arise from a very small number of common biosynthetic themes (e.g., polyketides, ribosomal peptides, non-ribosomal peptides, terpenes, etc) (Dewick, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dewick, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "8e0301f9-3962-4248-8288-4867f2e002c6",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C17",
+      "claim": "Degenerate primers targeting the most common biosynthetic domains provide a means to broadly study gene cluster diversity in the uncultured majority.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the functional conservation of enzymes used by these common systems, degenerate primers targeting the most common biosynthetic domains provide a means to broadly study gene cluster diversity in the uncultured majority in a way similar to what is now regularly done for bacterial species diversity using 16S rRNA gene sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the functional conservation of enzymes and established methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "3ecf858d-f66e-4ad0-9c8c-1e7e6aadb37f",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C18",
+      "claim": "This study conducts the first global examination of non-ribosomal peptide synthetase (NRPS) adenylation domain (AD) and polyketide synthase (PKS) ketosynthase (KS) domain biosynthetic diversity in soil environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use this approach to conduct the first global examination of non-ribosomal peptide synthetase (NRPS) adenylation domain (AD) and polyketide synthase (PKS) ketosynthase (KS) domain biosynthetic diversity in soil environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty and scope of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "93f8820b-b33c-4c31-8643-921ad9b116f1",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C19",
+      "claim": "NRPS and PKS biosynthesis were chosen for exploration because the highly modular nature of these biosynthetic systems has provided a template for the production of a wide variety of gene clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to explore NRPS and PKS biosynthesis because the highly modular nature of these biosynthetic systems has provided a template for the production of a wide variety of gene clusters that give rise to a correspondingly diverse chemical repertoire, including many of the most clinically useful microbial metabolites (Cragg and Newman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rationale based on established knowledge about NRPS and PKS systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "694ad309-2b93-4046-8fae-fa7123826029",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C20",
+      "claim": "NRPS and PKS biosynthetic systems give rise to a correspondingly diverse chemical repertoire, including many of the most clinically useful microbial metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to explore NRPS and PKS biosynthesis because the highly modular nature of these biosynthetic systems has provided a template for the production of a wide variety of gene clusters that give rise to a correspondingly diverse chemical repertoire, including many of the most clinically useful microbial metabolites (Cragg and Newman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cragg and Newman, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "6a8bd8c0-782b-4087-aa47-1b835230c650",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C21",
+      "claim": "Soil samples were collected from five continents (North America, South America, Africa, Asia, Australia) and several oceanic islands (Hawaii, Dominican Republic).",
+      "claim_type": "EXPLICIT",
+      "source": "With the help of a citizen science effort (www.drugsfromdirt.org), soil samples were collected from five continents (North America, South America, Africa, Asia, Australia) and several oceanic islands (Hawaii, Dominican Republic), covering biomes that include multiple rainforests, temperate forests, deserts and coastal sediments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "8aa4d104-6b81-40d5-93c8-c8b7f110066b",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C22",
+      "claim": "The collected samples cover biomes that include multiple rainforests, temperate forests, deserts and coastal sediments.",
+      "claim_type": "EXPLICIT",
+      "source": "With the help of a citizen science effort (www.drugsfromdirt.org), soil samples were collected from five continents (North America, South America, Africa, Asia, Australia) and several oceanic islands (Hawaii, Dominican Republic), covering biomes that include multiple rainforests, temperate forests, deserts and coastal sediments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the diversity of biomes sampled in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "b99623e3-b314-4d7a-a6c6-087ca7fd41c8",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C23",
+      "claim": "DNA was extracted directly from soils as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA was extracted directly from these soils as previously described (Brady, 2007) and 96 samples were chosen for analysis of NRPS/PKS diversity using 454 pyro-sequencing of AD and KS domain PCR amplicons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology with a citation to a previous protocol.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "89c4a79f-d54c-47ef-8932-91cfd51ae472",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C24",
+      "claim": "96 samples were chosen for analysis of NRPS/PKS diversity using 454 pyro-sequencing of AD and KS domain PCR amplicons.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA was extracted directly from these soils as previously described (Brady, 2007) and 96 samples were chosen for analysis of NRPS/PKS diversity using 454 pyro-sequencing of AD and KS domain PCR amplicons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "1f79506c-7365-418c-bef6-ff02d3a84a22",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C25",
+      "claim": "Samples were chosen on the basis of DNA quality and biome diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were chosen on the basis of DNA quality and biome diversity; raw sequence reads from these samples were combined with existing amplicon datasets derived from other biomes using the same DNA isolation, PCR and sequencing protocols (Charlop-Powers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "75614bda-28b4-48a5-bdc1-03f310a481d4",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C26",
+      "claim": "Raw sequence reads from the 96 samples were combined with existing amplicon datasets derived from other biomes using the same DNA isolation, PCR and sequencing protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were chosen on the basis of DNA quality and biome diversity; raw sequence reads from these samples were combined with existing amplicon datasets derived from other biomes using the same DNA isolation, PCR and sequencing protocols (Charlop-Powers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data integration approach with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "e98fb93b-85d2-4995-abbd-586081aeceb9",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C27",
+      "claim": "The entire dataset represents 185 biomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire dataset representing 185 biomes was clustered into operational taxonomic units (OTUs) at a sequence distance of 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the final dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "6259144f-d321-4574-a61e-3f362ee3edca",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C28",
+      "claim": "The dataset was clustered into operational taxonomic units (OTUs) at a sequence distance of 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire dataset representing 185 biomes was clustered into operational taxonomic units (OTUs) at a sequence distance of 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bioinformatic analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "f2c1e022-6c15-47ed-b4ad-2615dabc254e",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C29",
+      "claim": "Millions of unique sequencing reads yielded a predicted Chao1 OTU estimate of greater than 350,000 for each domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite millions of unique sequencing reads yielding a predicted Chao1 OTU estimate of greater than 350,000 for each domain, rarefaction analysis suggests that we have not yet saturated the sequence space of either domain (Figure 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the rarefaction analysis shown in Figure 1A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "561c99ab-1cda-46d1-a328-4c9cce394f99",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C30",
+      "claim": "Rarefaction analysis suggests that the sequence space of either domain has not yet been saturated.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite millions of unique sequencing reads yielding a predicted Chao1 OTU estimate of greater than 350,000 for each domain, rarefaction analysis suggests that we have not yet saturated the sequence space of either domain (Figure 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the rarefaction curves shown in Figure 1A,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "8bb758d5-e567-45aa-84b9-9cec4e281fd2",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C31",
+      "claim": "Most Jaccard distances between samples were found to be quite small (<3%), indicating large differences in secondary metabolite gene sequence composition between almost all sample collection sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Most Jaccard distances were found to be quite small (<3%), indicating large differences in secondary metabolite gene sequence composition between almost all sample collection sites (Figure 1B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the Jaccard distance analysis shown in Figure 1B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "14180aa8-1051-4918-a16b-b0d5cfa459fc",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C32",
+      "claim": "On a global level, the strongest biosynthetic sequence composition relationships are seen between samples collected in close physical proximity to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "On a global level, the strongest biosynthetic sequence composition relationships are seen between samples collected in close physical proximity to one another (Figure 1B,D,E,F) as opposed to between samples from similar biomes in different geographic locations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analyses shown in Figure 1B,D,E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "015fb1d8-c93d-4c67-ba24-7bffcfc220c9",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C33",
+      "claim": "The strongest biosynthetic sequence composition relationships are not seen between samples from similar biomes in different geographic locations.",
+      "claim_type": "EXPLICIT",
+      "source": "On a global level, the strongest biosynthetic sequence composition relationships are seen between samples collected in close physical proximity to one another (Figure 1B,D,E,F) as opposed to between samples from similar biomes in different geographic locations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "85e00297-bc87-4094-a0f5-c5d74c0b4a28",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C34",
+      "claim": "At a cutoff of 3% shared KS or AD OTUs, essentially all inter-sample relationships are observed between immediate geographic neighbors and not similar biomes in different global locations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at a cutoff of even as low as 3% shared KS or AD OTUs, essentially all inter-sample relationships are observed between immediate geographic neighbors and not similar biomes in different global locations (Figure 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the network analysis shown in Figure 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "90603df0-2ef9-4607-95d0-345220e8478f",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C35",
+      "claim": "Limited inter-sample relationships are observed between samples from the Eastern hemisphere because most samples from this part of the world were collected from sites at a significant geographic distance from one another.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely explains the limited inter-sample relationships we observe between samples from the Eastern hemisphere as most samples from this part of the world were collected from sites at a significant geographic distance from one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the observed pattern in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "d9d5466a-b5e9-48b5-9972-fc0212f57249",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C36",
+      "claim": "Soil samples from South Africa exhibit similar pairwise Jaccard metrics to those observed between geographically proximal samples collected in the Western hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exception is the set of soil samples from South Africa, of which a number were collected in relatively close geographic proximity. These samples exhibit similar pairwise Jaccard metrics to those observed between geographically proximal samples collected in the Western hemisphere (Figure 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the Jaccard distance analysis shown in Figure 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "b32b32cf-5903-46ff-a9a9-b59da32170d4",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C37",
+      "claim": "Change in the biome type is an important additional factor for the differentiation of biosynthetic diversity on a more local level.",
+      "claim_type": "EXPLICIT",
+      "source": "Although differences in biosynthetic composition of microbiomes appear to depend at least in part on the geographic distance between samples, our data suggests that change in the biome type is an important additional factor for the differentiation of biosynthetic diversity on a more local level (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the examples shown in Figure 1G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "c536e199-c321-4e13-a574-ea291b17a3ef",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C38",
+      "claim": "When the cutoff is raised to 10% shared OTUs, relationships are only seen between nearby samples belonging to the same biome.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at a cutoff of 3% shared OTUs, essentially all inter-sample relationships are observed between immediate geographic neighbors; when this is raised to 10% shared OTUs (Figure 1E,F), relationships are only seen between nearby samples belonging to the same biome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the network analysis shown in Figure 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "f9e9d119-83a0-4ee9-b939-0758209fbd61",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C39",
+      "claim": "Brazilian soils collected from Atlantic rainforest, saline or cerrado sites located only a few miles from one another are distinct from other globally distributed samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first example, Brazilian soils were collected from Atlantic rainforest, saline or cerrado (savanna-like) sites located only a few miles from one another. Our AD and KS data show these sample are (i) distinct from other globally distributed samples, (ii) most strongly related to the samples from the same Brazilian biome and (iii) only distantly related to the samples from other Brazilian biomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "ca557ba5-593a-4a62-a57b-bc771ddad189",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C40",
+      "claim": "Brazilian soils from Atlantic rainforest, saline or cerrado sites are most strongly related to samples from the same Brazilian biome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first example, Brazilian soils were collected from Atlantic rainforest, saline or cerrado (savanna-like) sites located only a few miles from one another. Our AD and KS data show these sample are (i) distinct from other globally distributed samples, (ii) most strongly related to the samples from the same Brazilian biome and (iii) only distantly related to the samples from other Brazilian biomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "2a0201d8-e3d9-484d-9282-3cedaafdb85f",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C41",
+      "claim": "Brazilian soils from Atlantic rainforest, saline or cerrado sites are only distantly related to samples from other Brazilian biomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first example, Brazilian soils were collected from Atlantic rainforest, saline or cerrado (savanna-like) sites located only a few miles from one another. Our AD and KS data show these sample are (i) distinct from other globally distributed samples, (ii) most strongly related to the samples from the same Brazilian biome and (iii) only distantly related to the samples from other Brazilian biomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "a57bd3c7-9a78-4ef5-95b6-74b241a82e98",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C42",
+      "claim": "A sample collected from a New Mexican hot spring where the soil is heated continuously by subterranean water is distinct from other globally distributed samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second example, a sample collected from a New Mexican hot spring where the soil is heated continuously by subterranean water is compared with samples derived from the dry soils of the surrounding environment. Once again our amplicon data show that these samples are (i) distinct from other globally distributed samples, (ii) most strongly related to other samples from the same biome and (iii) only distantly related to samples from other nearby biomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "0fac1896-8e97-406a-8e7b-558621801053",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C43",
+      "claim": "The New Mexican hot spring sample is most strongly related to other samples from the same biome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second example, a sample collected from a New Mexican hot spring where the soil is heated continuously by subterranean water is compared with samples derived from the dry soils of the surrounding environment. Once again our amplicon data show that these samples are (i) distinct from other globally distributed samples, (ii) most strongly related to other samples from the same biome and (iii) only distantly related to samples from other nearby biomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "059f5a59-ed46-4abd-973d-44e6c471f30e",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C44",
+      "claim": "The New Mexican hot spring sample is only distantly related to samples from other nearby biomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second example, a sample collected from a New Mexican hot spring where the soil is heated continuously by subterranean water is compared with samples derived from the dry soils of the surrounding environment. Once again our amplicon data show that these samples are (i) distinct from other globally distributed samples, (ii) most strongly related to other samples from the same biome and (iii) only distantly related to samples from other nearby biomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "d81e6565-9ea0-435f-b01a-4c5162739cdd",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C45",
+      "claim": "PCR-based data suggest that both geography and ecology play a role in determining the major biosynthetic components of a microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is possible that at a much greater sampling depth all AD and KS domains will be found at all sites as predicted by Baas-Becking's 'everything is everywhere but the environment selects' hypothesis of global microbial distribution (O'Malley, 2007; de Wit and Bouvier, 2006), our PCR-based data suggest that both geography and ecology play a role in determining the major biosynthetic components of a microbiome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the PCR-based data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "f6a4b95e-80ee-47cd-a75b-4b4a9ee7aee1",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C46",
+      "claim": "The vast majority of AD and KS domain sequences coming from environmental DNA are only distantly related to functionally characterized NRP/PK gene clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of AD and KS domain sequences coming from environmental DNA (eDNA) are only distantly related to functionally characterized NRP/PK gene clusters, precluding precise predictions about the specific natural products encoded by the gene clusters from which most amplicons arise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "82e898a2-ffe6-487d-b4cb-341a20249541",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C47",
+      "claim": "The distant relationship of most eDNA sequences to characterized gene clusters precludes precise predictions about the specific natural products encoded by the gene clusters from which most amplicons arise.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of AD and KS domain sequences coming from environmental DNA (eDNA) are only distantly related to functionally characterized NRP/PK gene clusters, precluding precise predictions about the specific natural products encoded by the gene clusters from which most amplicons arise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the analysis based on sequence similarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "bdcad511-2500-443c-a419-d0495233da75",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C48",
+      "claim": "In cases where eDNA sequence tags show high sequence similarity to domains found in functionally characterized gene clusters, this information can be used to predict the presence of specific gene cluster families within a specific microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in cases where eDNA sequence tags show high sequence similarity to domains found in functionally characterized gene clusters, this information can be used to predict the presence of specific gene cluster families within a specific microbiome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the eSNaPD analysis approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "4afbc64f-89db-4d22-b899-8dbe26a49b65",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C49",
+      "claim": "Phylogenetic analysis is the basis of the eSNaPD program, a BLAST-based algorithm for classifying the gene cluster families that are associated with eDNA-derived sequence tags.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of phylogenetic analysis is the basis of the recently developed eSNaPD program, a BLAST-based algorithm for classifying the gene cluster families that are associated with eDNA-derived sequence tags (Owen et al., 2013; Reddy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the eSNaPD program with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "4cf62b20-9094-42df-8584-737bbd1979ef",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C50",
+      "claim": "When an eDNA sequence tag clades with, but is not identical to, a reference sequence in an eSNaPD-type analysis, it is considered to be indicative of the presence of a gene cluster that encodes a congener of the metabolite encoded by the reference cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "When an eDNA sequence tag clades with, but is not identical to, a reference sequence in an eSNaPD-type analysis, it is considered to be indicative of the presence of a gene cluster that encodes a congener (i.e., a derivative) of the metabolite encoded by the reference cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of eSNaPD results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "3d1bbd80-d63b-4fa4-a7e6-6df78910b7bb",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C51",
+      "claim": "eSNaPD analysis of the data from all sites reveals two distinct types of biomedically relevant natural product gene cluster 'hot spots'.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, eSNaPD analysis of the data from all sites reveals two distinct types of biomedically relevant natural product gene cluster 'hot spots' within our data (Figure 2A,B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the hotspot analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "2ff14e3d-e17d-43c8-9922-645c43655886",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C52",
+      "claim": "The two types of hotspots include 'specific gene cluster hotspots' and 'gene cluster family hotspots'.",
+      "claim_type": "EXPLICIT",
+      "source": "These include 'specific gene cluster hotspots' and 'gene cluster family hotspots'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the two categories of hotspots identified in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "fa714ba2-934f-49cd-b11b-c9c86e1eee3f",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C53",
+      "claim": "Metagenomes from 'specific gene cluster hotspots' are predicted to be enriched for a gene cluster that encodes a congener of the target natural product.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagenomes from 'specific gene cluster hotspots' are predicted to be enriched for a gene cluster that encodes a congener of the target natural product, while metagenomes from 'gene cluster family hotspots' are predicted to encode multiple congeners related to the target natural product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the eSNaPD analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "7ba43168-aa01-422d-986b-7f69c4f3bd88",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C54",
+      "claim": "Metagenomes from 'gene cluster family hotspots' are predicted to encode multiple congeners related to the target natural product.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagenomes from 'specific gene cluster hotspots' are predicted to be enriched for a gene cluster that encodes a congener of the target natural product, while metagenomes from 'gene cluster family hotspots' are predicted to encode multiple congeners related to the target natural product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the eSNaPD analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "3d17b545-e594-4467-a5f6-5ff4d6128364",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C55",
+      "claim": "Figure 2A shows several of the strongest examples of 'specific gene cluster hotspots' where reads falling into an OTU related to a specific biomedically relevant gene cluster or gene cluster family are disproportionately represented in the sequence data from individual microbiomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2A shows several of the strongest examples of 'specific gene cluster hotspots' where reads falling into an OTU related to a specific biomedically relevant gene cluster or gene cluster family are disproportionately represented in the sequence data from individual microbiomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes what is shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "06d94a40-644e-4c40-befd-1a021fd8f4e9",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C56",
+      "claim": "Hotspots are either local in nature, consisting of only one or two samples containing sequence reads mapping to the target (epoxomycin, oocydin); regional (tiacumicinB); or global with punctuated increases in diversity (glycopeptides).",
+      "claim_type": "EXPLICIT",
+      "source": "These examples highlight the different enrichment patterns that we observe in the environment\u2014hotspots are either local in nature, consisting of only one or two samples containing sequence reads mapping to the target (epoxomycin, oocydin); regional (tiacumicinB); or global with punctuated increases in diversity (glycopeptides).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the different patterns of hotspots observed in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "ef438881-76e0-40ef-9cd9-17356d214d05",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C57",
+      "claim": "'Specific gene cluster hotspots' are predicted to be naturally enriched for bacteria that encode congeners of the biomedically relevant target metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "We would predict 'specific gene cluster hotspots' (Figure 2D) are naturally enriched for bacteria that encode congeners of the biomedically relevant target metabolites, thereby potentially simplifying the discovery of new congeners.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction based on the hotspot analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "f9c0ae4e-9956-4c47-a6f6-41cd85b07bdf",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C58",
+      "claim": "'Specific gene cluster hotspots' potentially simplify the discovery of new congeners.",
+      "claim_type": "EXPLICIT",
+      "source": "We would predict 'specific gene cluster hotspots' (Figure 2D) are naturally enriched for bacteria that encode congeners of the biomedically relevant target metabolites, thereby potentially simplifying the discovery of new congeners.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement about the utility of hotspots for discovery.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "d0619536-ea6b-4fb5-8d42-d3fddf8893a0",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C59",
+      "claim": "Figure 2B shows examples of 'gene cluster family hotspots', where metagenomes having a disproportionately high number of OTUs mapping to a specific biomedically relevant target molecule family are highlighted.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2B shows examples of 'gene cluster family hotspots', where metagenomes having a disproportionately high number of OTUs mapping to a specific biomedically relevant target molecule family (e.g., nocardicin, rifamycin, bleomycin, and daptomycin families are shown) are highlighted.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes what is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "10ac68d3-31c2-4543-8e1d-27ddaf7235b5",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C60",
+      "claim": "The hotspot analysis identifies specific sample sites that are predicted to contain the most diverse collection of gene clusters associated with a target molecule of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identifies specific sample sites, from among those surveyed, that are predicted to contain the most diverse collection of gene clusters associated with a target molecule of interest (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the utility of the gene cluster family hotspot analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "537c69f8-3257-4c74-ae95-905676726ddf",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C61",
+      "claim": "Both types of hotspots should represent productive starting points for future natural product discovery efforts aimed at expanding the structural diversity and potential utility of specific biomedically relevant natural product families.",
+      "claim_type": "EXPLICIT",
+      "source": "Both types of hotspots should represent productive starting points for future natural product discovery efforts aimed at expanding the structural diversity and potential utility of specific biomedically relevant natural product families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the utility of hotspots for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "98ee4fec-a077-49d8-9c15-346327be3d29",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C62",
+      "claim": "Biosynthetic domain sequence tag data are useful for pinpointing environments that are rich in specific biosynthetic targets of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Biosynthetic domain sequence tag data are not only useful for pinpointing environments that are rich in specific biosynthetic targets of interest but also as a metric for natural product biosynthetic diversity in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the utility of the sequence tag data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "c5cc6ab2-592a-4f0d-90aa-3814d04bd0ba",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C63",
+      "claim": "Biosynthetic domain sequence tag data are useful as a metric for natural product biosynthetic diversity in general.",
+      "claim_type": "EXPLICIT",
+      "source": "Biosynthetic domain sequence tag data are not only useful for pinpointing environments that are rich in specific biosynthetic targets of interest but also as a metric for natural product biosynthetic diversity in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the utility of the sequence tag data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "f41c0882-9c78-4877-8190-a6da857d062e",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C64",
+      "claim": "Only a small fraction (5\u201310%) of total AD and KS sequences can be confidently assigned by the eSNaPD algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "As only a small fraction (5\u201310%) of total AD and KS sequences can be confidently assigned by the eSNaPD algorithm, samples showing the largest collection of unique OTUs (at a common sequencing depth) might be expected to contain the most diverse collection of novel biosynthetic gene clusters (Figure 2C) and therefore be the most productive sites to target for future novel molecule discovery efforts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation about the limitations of the eSNaPD algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "3a2f3ef6-6028-4225-9073-eaf07f14af0b",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C65",
+      "claim": "Samples showing the largest collection of unique OTUs (at a common sequencing depth) might be expected to contain the most diverse collection of novel biosynthetic gene clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "As only a small fraction (5\u201310%) of total AD and KS sequences can be confidently assigned by the eSNaPD algorithm, samples showing the largest collection of unique OTUs (at a common sequencing depth) might be expected to contain the most diverse collection of novel biosynthetic gene clusters (Figure 2C) and therefore be the most productive sites to target for future novel molecule discovery efforts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about which samples are most diverse.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "95e53445-d2d2-4882-8a63-5441e9346822",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C66",
+      "claim": "Samples with the largest collection of unique OTUs are expected to be the most productive sites to target for future novel molecule discovery efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "As only a small fraction (5\u201310%) of total AD and KS sequences can be confidently assigned by the eSNaPD algorithm, samples showing the largest collection of unique OTUs (at a common sequencing depth) might be expected to contain the most diverse collection of novel biosynthetic gene clusters (Figure 2C) and therefore be the most productive sites to target for future novel molecule discovery efforts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement about future discovery efforts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "8fbd61ba-0416-4971-a475-98b9c8b556ed",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C67",
+      "claim": "Once normalized for sequencing depth, the number of unique KS and AD sequence tags observed per collection site differs by almost an order of magnitude between environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Once normalized for sequencing depth, the number of unique KS and AD sequence tags observed per collection site differs by almost an order of magnitude between environments (Figure 2C), with the most diverse samples mapping to Atlantic forest and Desert environments (Figure 2C,D teal spots, Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the diversity analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "0157c100-faef-45d0-9f84-d40cdd1a34e0",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C68",
+      "claim": "The most diverse samples map to Atlantic forest and Desert environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Once normalized for sequencing depth, the number of unique KS and AD sequence tags observed per collection site differs by almost an order of magnitude between environments (Figure 2C), with the most diverse samples mapping to Atlantic forest and Desert environments (Figure 2C,D teal spots, Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the diversity analysis shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "1d3ac918-4a2f-4a40-8849-2d0b8a8c7823",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C69",
+      "claim": "The development of cost effective high-throughput DNA sequencing methodologies and powerful biosynthesis focused bioinformatics algorithms allow for the direct interrogation and systematic mapping of global microbial biosynthetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of cost effective high-throughput DNA sequencing methodologies and powerful biosynthesis focused bioinformatics algorithms allow for the direct interrogation and systematic mapping of global microbial biosynthetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities enabled by technological advances.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "bac007b1-bc45-4124-9ede-cbf7f45589b8",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C70",
+      "claim": "Analyses of hundreds of distinct soil microbiomes suggest that geographic distance and local environment play important roles in the sample-to-sample differences detected in biosynthetic gene populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses of 100s of distinct soil microbiomes suggests that geographic distance and local environment play important roles in the sample-to-sample differences we detected in biosynthetic gene populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the data analyses presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "027f07ad-1d4b-48f3-9f54-953b9e01b798",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C71",
+      "claim": "Variations in biosynthetic gene content are expected to correlate with variations in the small-molecule producing capabilities of a microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "As variations in biosynthetic gene content are expected to correlate with variations in the small-molecule producing capabilities of a microbiome, the broader implication of these observations from a drug discovery perspective is that the dominant biosynthetic systems of geographically distinct soil microbiomes are expected to encode orthogonal, largely unexplored collections of natural products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between genes and metabolites.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "8153ca63-27a3-48bd-9f46-45a9e7eebadd",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C72",
+      "claim": "The dominant biosynthetic systems of geographically distinct soil microbiomes are expected to encode orthogonal, largely unexplored collections of natural products.",
+      "claim_type": "EXPLICIT",
+      "source": "As variations in biosynthetic gene content are expected to correlate with variations in the small-molecule producing capabilities of a microbiome, the broader implication of these observations from a drug discovery perspective is that the dominant biosynthetic systems of geographically distinct soil microbiomes are expected to encode orthogonal, largely unexplored collections of natural products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed biosynthetic diversity patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "f56514bb-3cc8-459c-90dc-b652959dbfdf",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C73",
+      "claim": "The biosynthetic domain hotspot and OTU diversity analyses represent a starting point in the creation of a global natural products atlas that will use sequence data to guide natural product discovery in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our biosynthetic domain hotspot and OTU diversity analyses represent a starting point in the creation of a global natural products atlas that will use sequence data to guide natural product discovery in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance and future applications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "68af29f2-7e07-40c7-b111-600e7cd182b6",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C74",
+      "claim": "Based on the historical success of natural products as therapeutics, microbial 'biosynthetic dark matter' is likely to hold enormous biomedical potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the historical success of natural products as therapeutics, microbial 'biosynthetic dark matter' is likely to hold enormous biomedical potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on historical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "15946ef9-356d-4436-a0d3-cce42da68f7b",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C75",
+      "claim": "The key will be learning how to harvest molecules encoded by the biosynthetic diversity we are now able to find through sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The key will be learning how to harvest molecules encoded by the biosynthetic diversity we are now able to find through sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future challenges in the field.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "574f89f7-86e6-47f4-90f0-32c9911679a6",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C76",
+      "claim": "Soil from the top 6 inches of earth was collected at unique locations in the continental United States, China, Brazil, Alaska, Hawaii, Costa Rica, Ecuador, the Dominican Republic, Australia, Tanzania and South Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Soil from the top 6 inches of earth was collected at unique locations in the continental United States, China, Brazil, Alaska, Hawaii, Costa Rica (Brady and Clardy, 2004), Ecuador, the Dominican Republic, Australia, Tanzania and South Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "04ef1fd2-0f95-42d6-867e-67ca0e4581e0",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C77",
+      "claim": "DNA was extracted from soil using a simplified version of a previously published DNA isolation protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce the potential for cross contamination, DNA was extracted from soil using a simplified version of our previously published DNA isolation protocol (Brady, 2007; Reddy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the DNA extraction method with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "0e58fd35-3ace-4c82-a2ac-fed191617e56",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C78",
+      "claim": "Degenerate primers targeting conserved regions of AD and KS domains were used to amplify gene fragments from crude eDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Degenerate primers targeting conserved regions of AD [A3F (5\u2032-GCSTACSYSATSTACACSTCSGG) and A7R (5\u2032-SASGTCVCCSGTSCGGTA) (Ayuso-Sacido and Genilloud, 2005)] and KS [degKS2F.i (5\u2032-GCIATGGAYCCICARCARMGIVT) and degKS2R.i (5\u2032-GTICCIGTICCRTGISCYTCIAC) (Schirmer et al., 2005)] domains were used to amplify gene fragments from crude eDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the PCR methodology with citations for the primers.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "d122936e-0c77-4b33-a7b8-3f599e9b078b",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C79",
+      "claim": "Forward primers were designed to contain a 454 sequencing primer followed by a unique 8 bp barcode that allowed simultaneous sequencing of up to 96 different AD- or KS- samples in a single GS-FLX Titanium region.",
+      "claim_type": "EXPLICIT",
+      "source": "Forward primers were designed to contain a 454 sequencing primer (CGTATCGCCTCCCTCGCGCCATCAG) followed by a unique 8 bp barcode that allowed simultaneous sequencing of up to 96 different AD- or KS- samples in a single GS-FLX Titanium region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the multiplexing strategy for sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "a47f5cd8-4a05-443e-89b3-743a0738a7eb",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C80",
+      "claim": "Amplicons were sequenced using the 454 GS-FLX Titanium platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplicons were sequenced using the 454 GS-FLX Titanium platform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing platform used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "0b80527b-c1a1-4250-bc4a-70736a61f7d6",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C81",
+      "claim": "Raw reads were assigned to samples using the unique primer barcodes and filtered by quality using Qiime (version 1.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Raw reads were assigned to samples using the unique primer barcodes and filtered by quality (50 bp rolling window PHRED cutoff of 20) using Qiime (version 1.6) (Caporaso et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bioinformatic processing with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "2617c755-26a3-4873-9c95-f215101464e7",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C82",
+      "claim": "USEARCH (version 7), which implements the improved UPARSE clustering algorithm, was used to remove Chimeric sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "USEARCH (version 7), which implements the improved UPARSE clustering algorithm (Edgar, 2013), was used to remove Chimeric sequences with the default 1.9 value of the de novo chimera detection tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the chimera removal method with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "781d3c72-0f2e-4ef6-8b8f-82bac1ff5c04",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C83",
+      "claim": "419 bp was used as the read length cutoff to balance read quality and abundance with the ability to phylogenetically discriminate gene clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "In an effort to balance read quality and abundance with the ability to phylogenetically discriminate gene clusters we used 419 bp as our read length cutoff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "f19ca6eb-db64-4ec8-9ce7-56370602f930",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C84",
+      "claim": "The trimmed fasta file was clustered to 5% to compensate for sequencing error and natural polymorphism that is often observed in gene clusters found in natural bacterial populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The trimmed fasta file was then clustered to 5% to compensate for sequencing error and natural polymorphism that is often observed in gene clusters found in natural bacterial populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering rationale and method.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "3d6ee193-ba1d-4b8a-a08b-4fe999d65307",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C85",
+      "claim": "Ecological distances are calculated using the Jaccard metric.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecological distances are calculated using the Jaccard [1 \u2212 (OTUA&B)/(OTUA + OTUB \u2212 OTUA&B)] or inverse Jaccard metric (Oksanen et al., 2013) and geographic distances were calculated using great circle (spherical) distance derived from the latitude/longitude values of each set of points (Bivand and Pebesma, 2005) (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distance calculation methods with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "a0c11705-6ebb-4564-b7fb-9086c339e27a",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C86",
+      "claim": "Geographic distances were calculated using great circle (spherical) distance derived from the latitude/longitude values of each set of points.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecological distances are calculated using the Jaccard [1 \u2212 (OTUA&B)/(OTUA + OTUB \u2212 OTUA&B)] or inverse Jaccard metric (Oksanen et al., 2013) and geographic distances were calculated using great circle (spherical) distance derived from the latitude/longitude values of each set of points (Bivand and Pebesma, 2005) (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distance calculation methods with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "127657c0-da90-40c5-b2de-58804efa9827",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C87",
+      "claim": "The strongest relationships are observed between sample proximity controls where soils were collected approximately 10 meters from one another and processed independently.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the strongest relationships are observed between sample proximity controls where soils were collected approximately 10 meters from one another and processed independently, demonstrating that closely related samples do in fact group together in our analysis pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a validation of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "17679828-8632-41a3-8281-8f6f892532f5",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C88",
+      "claim": "Closely related samples do in fact group together in the analysis pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the strongest relationships are observed between sample proximity controls where soils were collected approximately 10 meters from one another and processed independently, demonstrating that closely related samples do in fact group together in our analysis pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the proximity control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "2904d864-5b72-4930-9a89-72d06cbd3d33",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C89",
+      "claim": "AD and KS amplicon reads were assigned to known biosynthetic gene clusters using the eSNaPD algorithm at an e-value cutoff of 10\u221245.",
+      "claim_type": "EXPLICIT",
+      "source": "AD and KS amplicon reads were assigned to known biosynthetic gene clusters using the eSNaPD algorithm at an e-value cutoff of 10\u221245 (Reddy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assignment method with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "b12d84f8-fb04-4261-9460-c6ac60f786f5",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C90",
+      "claim": "At an e-value threshold of 10\u221245, eSNaPD has been used to successfully assign-and-recover gene clusters that encode congeners of multiple natural product families using only the sequence from a single domain amplicon.",
+      "claim_type": "EXPLICIT",
+      "source": "At this threshold eSNaPD has been used to successfully assign-and-recover gene clusters that encode congeners of multiple natural product families using only the sequence from a single domain amplicon (Owen et al., 2013; Chang and Brady, 2014; Kang and Brady, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations demonstrating the utility of eSNaPD.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "025acda7-31e8-4221-a8b2-a78bf83a6f01",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C91",
+      "claim": "NRPS/PKS clusters typically have multiple KS or AD domains.",
+      "claim_type": "EXPLICIT",
+      "source": "NRPS/PKS clusters typically have multiple KS or AD domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about NRPS/PKS cluster structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "20d21a87-013d-41bf-97da-da59b10bc0e1",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "claim_id": "C92",
+      "claim": "Hits to all domains in a cluster were aggregated in the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Hits to all domains in a cluster were aggregated in our analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data aggregation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors collected soil samples from five continents and multiple biomes, extracted DNA, amplified AD and KS domains using degenerate primers, and sequenced 185 samples using 454 pyrosequencing. The dataset was processed using quality filtering, chimera removal, and clustered into OTUs at 5% sequence distance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 and C76-C84 describe a comprehensive and well-documented sampling and sequencing methodology. The methods are appropriately cited, include technical details (primer sequences, software versions, parameters), and describe standard quality control procedures. The approach is sound for amplicon-based diversity surveys.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "f3ba834a-ea3a-40bf-9d75-a6792a8eaa78",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Despite obtaining millions of reads yielding Chao1 estimates exceeding 350,000 OTUs for each domain, rarefaction analysis indicates that the sequence space of AD and KS domains has not been saturated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by Figure 1A,C showing rarefaction curves that do not plateau. The Chao1 diversity estimates and the non-saturating curves provide clear evidence that additional sampling would reveal more diversity. This is a standard interpretation of rarefaction analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "de51ed64-a9fd-4b88-95c9-d5ef2cb630e5",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Most samples show small Jaccard distances (<3%), indicating large differences in biosynthetic gene composition. The strongest biosynthetic relationships are observed between geographically proximal samples rather than between similar biomes in different locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C31-C34 are well-supported by Figure 1B,D,E,F showing Jaccard distance analyses and network plots. The data clearly demonstrate that geographic proximity is a stronger predictor of biosynthetic similarity than biome type at the global scale. The 3% threshold analysis provides quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "9d2a13a1-895e-41d0-86cd-2345616af70c",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Geographic distance and biome type both correlate with biosynthetic diversity in soil environments. While geography dominates at global scales, biome type becomes important at local scales, as demonstrated by Brazilian and New Mexican examples where samples from the same biome cluster together even when geographically proximal to different biomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C37-C45, C70 are supported by comprehensive analyses in Figure 1. The Brazilian (Figure 1G) and New Mexican (Figure 1H) case studies provide clear examples of biome effects at local scales. The threshold analysis (3% vs 10% shared OTUs) effectively demonstrates the hierarchical nature of geographic and biome effects. The statistical approach using Jaccard distances is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "12638b0f-53c8-4114-9793-031d1291505d",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Limited inter-sample relationships in the Eastern hemisphere are explained by greater geographic distances between samples. South African samples collected in close proximity show similar Jaccard metrics to Western hemisphere proximal samples. Proximity controls validate that closely related samples group together in the analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C87-C88 provide important validation and interpretation of sampling effects. The proximity controls (samples ~10m apart) demonstrate methodological validity. The Eastern hemisphere explanation is reasonable given the sampling design, though this represents a limitation. The South African exception supports the geographic distance hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "a518f8dd-39b1-43f3-8122-3890420f6cfd",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Most AD and KS sequences from environmental DNA are distantly related to characterized gene clusters, limiting precise predictions. However, the eSNaPD algorithm can assign sequences with high similarity to known clusters, predicting the presence of congener-encoding gene clusters. The algorithm uses a 10^-45 e-value threshold and has been validated for congener recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50, C89-C90 accurately describe the capabilities and limitations of the eSNaPD approach. The e-value threshold is specified, and prior validation studies are cited (C90). The distinction between distant sequences (limiting prediction) and similar sequences (enabling prediction) is appropriately made. This provides important context for interpreting the hotspot analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "4923b214-f270-4717-9d25-04088f74d548",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "eSNaPD analysis identifies two types of biomedically relevant hotspots: 'specific gene cluster hotspots' enriched for single congener-encoding clusters (showing local, regional, or global patterns), and 'gene cluster family hotspots' containing multiple diverse OTUs mapping to target molecule families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C51-C56, C59-C60 are supported by Figure 2A,B showing clear examples of both hotspot types. The read abundance analysis (Figure 2A) and OTU diversity analysis (Figure 2B) use complementary approaches to identify hotspots. The examples (epoxomycin, oocydin, tiacumicinB, glycopeptides, nocardicin, rifamycin, bleomycin, daptomycin) demonstrate different spatial patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "cb4643d7-9a24-4046-bc19-4eefa64ec5d2",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Hotspots are predicted to be enriched for bacteria encoding congeners of target metabolites, potentially simplifying discovery of new congeners and representing productive starting points for future natural product discovery efforts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C58, C61, C66 are speculative predictions about the utility of hotspots for future discovery. While the logic is sound (hotspots should be enriched for target clusters), these claims require experimental validation through actual discovery efforts. The predictions are reasonable but remain untested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "93beaa6e-7bb0-438b-94ce-e340ad165f41",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Biosynthetic domain sequence tags serve as metrics for both specific targets and general biosynthetic diversity. Only 5-10% of sequences can be assigned by eSNaPD, so samples with the most unique OTUs likely contain the most diverse novel gene clusters. Diversity varies nearly 10-fold between environments, with Atlantic forest and Desert samples being most diverse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65, C67-C68 are supported by Figure 2C showing normalized OTU diversity across samples. The 5-10% assignment rate (C64) provides important context for why unassigned OTU diversity is a useful metric. The ~10-fold variation and identification of Atlantic forest and Desert as most diverse are clearly shown in the data. The rarefaction normalization to 5000 reads is appropriate for fair comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "67d74add-c0c5-4635-858d-b1352b52b2b0",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Most microbiomes encode largely distinct collections of bacterial secondary metabolites. Variations in biosynthetic gene content are expected to correlate with small-molecule producing capabilities, implying that geographically distinct soil microbiomes encode orthogonal, largely unexplored collections of natural products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C71-C72 represent reasonable inferences from the observed biosynthetic diversity patterns. The low Jaccard distances support distinct metabolite collections (C3). The gene-to-metabolite correlation (C71) is a well-established principle in natural products biology. The conclusion about orthogonal collections (C72) logically follows from the geographic and biome effects demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "828c90ba-04e2-4df9-a84b-7d3affea03c7",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes context by citing that bacterial genome sequencing reveals untapped biosynthetic potential, soil bacteria produce important pharmaceuticals, traditional monoculture approaches access only a small fraction of biosynthetic diversity, and metagenomic methods enable study of this 'biosynthetic dark matter' through amplicon sequencing of conserved domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C20 provide well-cited background establishing the rationale for the study. These claims draw on established knowledge in the field with appropriate citations (Cragg and Newman 2013, Rappe and Giovannoni 2003, Torsvik et al. 1990/1998, Bentley et al. 2002, Ikeda et al. 2003, Dewick 2002, etc.). The logic connecting uncultured diversity, limited expression, and the need for metagenomic approaches is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "9a61c1c6-db60-4c22-a78e-8f9c92f72efb",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This study represents the first global examination of NRPS AD and PKS KS domain diversity in soil environments. The work represents a starting point for a global natural products atlas to guide future discovery, with microbial biosynthetic dark matter likely holding enormous biomedical potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C69, C73-C75 appropriately frame the novelty and significance of the work. The claim of 'first global examination' (C18) appears justified given the scope (185 samples, 5 continents). The forward-looking statements (C73-C75) are appropriately speculative about future applications while being grounded in the demonstrated capabilities of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    },
+    {
+      "id": "fe44c760-4efc-4989-a9ca-f081781fe5ba",
+      "content_id": "9d875e86-1b58-4087-a25a-eb81c94b5d61",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ecological distances were calculated using Jaccard metrics and geographic distances using great circle distance. NRPS/PKS clusters typically have multiple domains, and hits to all domains in a cluster were aggregated in analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86, C91-C92 describe appropriate analytical methods with proper citations. The Jaccard metric is standard for ecological distance, great circle distance is appropriate for geographic calculations, and aggregating hits across multiple domains in a cluster is a reasonable approach given the modular nature of NRPS/PKS systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:19:24.662097Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6a8bd8c0-782b-4087-aa47-1b835230c650",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "8aa4d104-6b81-40d5-93c8-c8b7f110066b",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "b99623e3-b314-4d7a-a6c6-087ca7fd41c8",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "89c4a79f-d54c-47ef-8932-91cfd51ae472",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "1f79506c-7365-418c-bef6-ff02d3a84a22",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "75614bda-28b4-48a5-bdc1-03f310a481d4",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "e98fb93b-85d2-4995-abbd-586081aeceb9",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "6259144f-d321-4574-a61e-3f362ee3edca",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "574f89f7-86e6-47f4-90f0-32c9911679a6",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "04ef1fd2-0f95-42d6-867e-67ca0e4581e0",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "0e58fd35-3ace-4c82-a2ac-fed191617e56",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "d122936e-0c77-4b33-a7b8-3f599e9b078b",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "a47f5cd8-4a05-443e-89b3-743a0738a7eb",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "0b80527b-c1a1-4250-bc4a-70736a61f7d6",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "2617c755-26a3-4873-9c95-f215101464e7",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "781d3c72-0f2e-4ef6-8b8f-82bac1ff5c04",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "f19ca6eb-db64-4ec8-9ce7-56370602f930",
+      "result_id": "444c0639-a3d0-4efe-a7d3-e015429d9b7b"
+    },
+    {
+      "claim_id": "f2c1e022-6c15-47ed-b4ad-2615dabc254e",
+      "result_id": "f3ba834a-ea3a-40bf-9d75-a6792a8eaa78"
+    },
+    {
+      "claim_id": "561c99ab-1cda-46d1-a328-4c9cce394f99",
+      "result_id": "f3ba834a-ea3a-40bf-9d75-a6792a8eaa78"
+    },
+    {
+      "claim_id": "539f47d5-a8a4-4099-a98b-f2aa5d7cda5d",
+      "result_id": "de51ed64-a9fd-4b88-95c9-d5ef2cb630e5"
+    },
+    {
+      "claim_id": "8bb758d5-e567-45aa-84b9-9cec4e281fd2",
+      "result_id": "de51ed64-a9fd-4b88-95c9-d5ef2cb630e5"
+    },
+    {
+      "claim_id": "14180aa8-1051-4918-a16b-b0d5cfa459fc",
+      "result_id": "de51ed64-a9fd-4b88-95c9-d5ef2cb630e5"
+    },
+    {
+      "claim_id": "015fb1d8-c93d-4c67-ba24-7bffcfc220c9",
+      "result_id": "de51ed64-a9fd-4b88-95c9-d5ef2cb630e5"
+    },
+    {
+      "claim_id": "85e00297-bc87-4094-a0f5-c5d74c0b4a28",
+      "result_id": "de51ed64-a9fd-4b88-95c9-d5ef2cb630e5"
+    },
+    {
+      "claim_id": "5c1f35ea-01fa-44da-a88f-8796271be7ed",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "e41da385-6b32-42ab-a331-cf547a80c755",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "b32b32cf-5903-46ff-a9a9-b59da32170d4",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "c536e199-c321-4e13-a574-ea291b17a3ef",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "f9e9d119-83a0-4ee9-b939-0758209fbd61",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "ca557ba5-593a-4a62-a57b-bc771ddad189",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "2a0201d8-e3d9-484d-9282-3cedaafdb85f",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "a57bd3c7-9a78-4ef5-95b6-74b241a82e98",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "0fac1896-8e97-406a-8e7b-558621801053",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "059f5a59-ed46-4abd-973d-44e6c471f30e",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "d81e6565-9ea0-435f-b01a-4c5162739cdd",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "bac007b1-bc45-4124-9ede-cbf7f45589b8",
+      "result_id": "9d2a13a1-895e-41d0-86cd-2345616af70c"
+    },
+    {
+      "claim_id": "90603df0-2ef9-4607-95d0-345220e8478f",
+      "result_id": "12638b0f-53c8-4114-9793-031d1291505d"
+    },
+    {
+      "claim_id": "d9d5466a-b5e9-48b5-9972-fc0212f57249",
+      "result_id": "12638b0f-53c8-4114-9793-031d1291505d"
+    },
+    {
+      "claim_id": "127657c0-da90-40c5-b2de-58804efa9827",
+      "result_id": "12638b0f-53c8-4114-9793-031d1291505d"
+    },
+    {
+      "claim_id": "17679828-8632-41a3-8281-8f6f892532f5",
+      "result_id": "12638b0f-53c8-4114-9793-031d1291505d"
+    },
+    {
+      "claim_id": "f6a4b95e-80ee-47cd-a75b-4b4a9ee7aee1",
+      "result_id": "a518f8dd-39b1-43f3-8122-3890420f6cfd"
+    },
+    {
+      "claim_id": "82e898a2-ffe6-487d-b4cb-341a20249541",
+      "result_id": "a518f8dd-39b1-43f3-8122-3890420f6cfd"
+    },
+    {
+      "claim_id": "bdcad511-2500-443c-a419-d0495233da75",
+      "result_id": "a518f8dd-39b1-43f3-8122-3890420f6cfd"
+    },
+    {
+      "claim_id": "4afbc64f-89db-4d22-b899-8dbe26a49b65",
+      "result_id": "a518f8dd-39b1-43f3-8122-3890420f6cfd"
+    },
+    {
+      "claim_id": "4cf62b20-9094-42df-8584-737bbd1979ef",
+      "result_id": "a518f8dd-39b1-43f3-8122-3890420f6cfd"
+    },
+    {
+      "claim_id": "2904d864-5b72-4930-9a89-72d06cbd3d33",
+      "result_id": "a518f8dd-39b1-43f3-8122-3890420f6cfd"
+    },
+    {
+      "claim_id": "b12d84f8-fb04-4261-9460-c6ac60f786f5",
+      "result_id": "a518f8dd-39b1-43f3-8122-3890420f6cfd"
+    },
+    {
+      "claim_id": "3874fb7b-1654-48d0-98e4-3afcbc421ff4",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "3d1bbd80-d63b-4fa4-a7e6-6df78910b7bb",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "2ff14e3d-e17d-43c8-9922-645c43655886",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "fa714ba2-934f-49cd-b11b-c9c86e1eee3f",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "7ba43168-aa01-422d-986b-7f69c4f3bd88",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "3d17b545-e594-4467-a5f6-5ff4d6128364",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "06d94a40-644e-4c40-befd-1a021fd8f4e9",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "d0619536-ea6b-4fb5-8d42-d3fddf8893a0",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "10ac68d3-31c2-4543-8e1d-27ddaf7235b5",
+      "result_id": "4923b214-f270-4717-9d25-04088f74d548"
+    },
+    {
+      "claim_id": "ef438881-76e0-40ef-9cd9-17356d214d05",
+      "result_id": "cb4643d7-9a24-4046-bc19-4eefa64ec5d2"
+    },
+    {
+      "claim_id": "f9c0ae4e-9956-4c47-a6f6-41cd85b07bdf",
+      "result_id": "cb4643d7-9a24-4046-bc19-4eefa64ec5d2"
+    },
+    {
+      "claim_id": "537c69f8-3257-4c74-ae95-905676726ddf",
+      "result_id": "cb4643d7-9a24-4046-bc19-4eefa64ec5d2"
+    },
+    {
+      "claim_id": "95e53445-d2d2-4882-8a63-5441e9346822",
+      "result_id": "cb4643d7-9a24-4046-bc19-4eefa64ec5d2"
+    },
+    {
+      "claim_id": "98ee4fec-a077-49d8-9c15-346327be3d29",
+      "result_id": "93beaa6e-7bb0-438b-94ce-e340ad165f41"
+    },
+    {
+      "claim_id": "c5cc6ab2-592a-4f0d-90aa-3814d04bd0ba",
+      "result_id": "93beaa6e-7bb0-438b-94ce-e340ad165f41"
+    },
+    {
+      "claim_id": "f41c0882-9c78-4877-8190-a6da857d062e",
+      "result_id": "93beaa6e-7bb0-438b-94ce-e340ad165f41"
+    },
+    {
+      "claim_id": "3a2f3ef6-6028-4225-9073-eaf07f14af0b",
+      "result_id": "93beaa6e-7bb0-438b-94ce-e340ad165f41"
+    },
+    {
+      "claim_id": "8fbd61ba-0416-4971-a475-98b9c8b556ed",
+      "result_id": "93beaa6e-7bb0-438b-94ce-e340ad165f41"
+    },
+    {
+      "claim_id": "0157c100-faef-45d0-9f84-d40cdd1a34e0",
+      "result_id": "93beaa6e-7bb0-438b-94ce-e340ad165f41"
+    },
+    {
+      "claim_id": "93fd7791-0c3b-462b-ad05-5d5a97f6fc48",
+      "result_id": "67d74add-c0c5-4635-858d-b1352b52b2b0"
+    },
+    {
+      "claim_id": "027f07ad-1d4b-48f3-9f54-953b9e01b798",
+      "result_id": "67d74add-c0c5-4635-858d-b1352b52b2b0"
+    },
+    {
+      "claim_id": "8153ca63-27a3-48bd-9f46-45a9e7eebadd",
+      "result_id": "67d74add-c0c5-4635-858d-b1352b52b2b0"
+    },
+    {
+      "claim_id": "216bfdff-626a-404c-9f97-b37ad8a1a7b7",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "7c2776c9-d12d-4e40-97bb-1d0019f73a5b",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "7abb31eb-7cab-4c0a-89b7-5949f92faa1b",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "cb5ca43c-2144-4815-acea-1d4b74b12165",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "2f383230-f64f-4e50-89ca-438d09c637d5",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "4584f5fe-b846-45a9-8186-266385500b7f",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "1b745d84-716d-44ee-83d7-bf12c8536a04",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "a9747bb5-3613-42a8-9e1d-0a48c6ca2a4c",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "d8aafc4e-c9a7-46ab-bb96-8b28b8ff469b",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "00e06a43-42c4-4d86-be6a-a1815624bb80",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "23dcaa60-06d4-4fe7-8164-edb96847c6e9",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "8e0301f9-3962-4248-8288-4867f2e002c6",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "93f8820b-b33c-4c31-8643-921ad9b116f1",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "694ad309-2b93-4046-8fae-fa7123826029",
+      "result_id": "828c90ba-04e2-4df9-a84b-7d3affea03c7"
+    },
+    {
+      "claim_id": "3ecf858d-f66e-4ad0-9c8c-1e7e6aadb37f",
+      "result_id": "9a61c1c6-db60-4c22-a78e-8f9c92f72efb"
+    },
+    {
+      "claim_id": "1d3ac918-4a2f-4a40-8849-2d0b8a8c7823",
+      "result_id": "9a61c1c6-db60-4c22-a78e-8f9c92f72efb"
+    },
+    {
+      "claim_id": "f56514bb-3cc8-459c-90dc-b652959dbfdf",
+      "result_id": "9a61c1c6-db60-4c22-a78e-8f9c92f72efb"
+    },
+    {
+      "claim_id": "68af29f2-7e07-40c7-b111-600e7cd182b6",
+      "result_id": "9a61c1c6-db60-4c22-a78e-8f9c92f72efb"
+    },
+    {
+      "claim_id": "15946ef9-356d-4436-a0d3-cce42da68f7b",
+      "result_id": "9a61c1c6-db60-4c22-a78e-8f9c92f72efb"
+    },
+    {
+      "claim_id": "3d6ee193-ba1d-4b8a-a08b-4fe999d65307",
+      "result_id": "fe44c760-4efc-4989-a9ca-f081781fe5ba"
+    },
+    {
+      "claim_id": "a0c11705-6ebb-4564-b7fb-9086c339e27a",
+      "result_id": "fe44c760-4efc-4989-a9ca-f081781fe5ba"
+    },
+    {
+      "claim_id": "025acda7-31e8-4221-a8b2-a78bf83a6f01",
+      "result_id": "fe44c760-4efc-4989-a9ca-f081781fe5ba"
+    },
+    {
+      "claim_id": "20d21a87-013d-41bf-97da-da59b10bc0e1",
+      "result_id": "fe44c760-4efc-4989-a9ca-f081781fe5ba"
+    }
+  ],
+  "comparisons": []
+}

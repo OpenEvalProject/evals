@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23"
+    ],
+    "result": "BiP's ATPase domain, but not its substrate binding domain, mediates a noncanonical interaction with the luminal domains of Ire1 and Perk. Microscale thermophoresis measurements show that BiP ATPase domain binds Ire1 and Perk luminal domains with Kd values of 1.97 \u03bcM and 2.05 \u03bcM, respectively\u2014nearly identical to full-length BiP binding affinities (1.33 \u03bcM and 1.92 \u03bcM). Pull-down assays confirm these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23 provide converging evidence from two independent biophysical methods (microscale thermophoresis and pull-down assays) demonstrating that BiP binds Ire1/Perk luminal domains exclusively through its ATPase domain. The binding affinities are quantitatively measured and consistent across methods. The lack of binding to the substrate binding domain is clearly demonstrated, establishing the noncanonical nature of this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C67",
+      "C68",
+      "C78"
+    ],
+    "result": "The BiP-sensor interaction is independent of nucleotide binding. Microscale thermophoresis measurements show similar binding affinities in the presence of ATP, ADP, AMPPNP, and in the absence of nucleotides, indicating this interaction is distinct from BiP's canonical chaperone function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C27 present direct experimental evidence showing nucleotide independence of the BiP-sensor interaction. The data in Figure 2 demonstrate that various nucleotides (ATP, ADP, AMPPNP) do not affect binding affinity. This is a critical finding distinguishing this interaction from typical chaperone-substrate interactions, which are nucleotide-dependent. The conclusion that this is independent of BiP's chaperone function (C68, C78) logically follows from the nucleotide independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C81",
+      "C104"
+    ],
+    "result": "The core BiP-sensor interaction maps to luminal domain regions II-IV, with region V being dispensable. In vitro binding studies show region II-IV has essentially identical affinity to full-length luminal domains. Co-immunoprecipitation experiments confirm that Ire1 \u0394V mutant (lacking region V) still binds BiP in cells, and this interaction is reduced upon ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide strong evidence from both in vitro (microscale thermophoresis) and cellular (co-IP) experiments that region II-IV is sufficient for BiP binding. The finding that region V is dispensable (C36, C81, C104) contradicts previous models and is well-supported by quantitative binding data and cellular validation. The ER stress-dependent reduction in binding (C34) provides functional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The unfolded protein CH1 binds exclusively to BiP's substrate binding domain (Kd = 8.7 \u03bcM for full-length BiP, 5.1 \u03bcM for substrate binding domain alone) and does not interact with Ire1 or Perk luminal domains. This demonstrates that unfolded proteins are detected by BiP, not directly by the UPR sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 and C93-C96 provide clear evidence from microscale thermophoresis and pull-down assays that CH1 binds only to BiP's substrate binding domain and not to luminal domains or BiP's ATPase domain. The binding affinities are quantitatively measured. This is a critical finding that challenges alternative models proposing direct unfolded protein binding to sensors. The conclusion that unfolded proteins bind exclusively to BiP's substrate binding domain (C96) is well-supported by the data and consistent with Hsp70 chaperone biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C69"
+    ],
+    "result": "Unfolded protein CH1 binding to BiP's substrate binding domain causes complete dissociation of BiP-Ire1 and BiP-Perk complexes. The binding of CH1 and luminal domains to BiP are mutually exclusive, demonstrating allosteric communication between BiP's two domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C51-C55, and C69 present compelling evidence from pull-down assays (Figure 5) showing that CH1 addition causes complete dissociation of BiP-sensor complexes, and that BiP pre-bound to CH1 cannot bind sensors. This mutual exclusivity is clearly demonstrated and supports an allosteric mechanism. The experiments are well-controlled and the conclusions are directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In cells, BiP lacking the substrate binding domain (ATPase domain only) attenuates UPR signaling. ER-stressed cells expressing full-length BiP with Ire1 or Perk show significantly greater phosphorylation compared to cells expressing only BiP ATPase domain, supporting an allosteric mechanism in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide cellular validation of the in vitro model. The immunoblotting data in Figure 6 clearly show reduced Ire1 and Perk phosphorylation when only BiP ATPase domain is present, demonstrating that the substrate binding domain is required for efficient UPR signaling. This is consistent with the proposed allosteric mechanism and provides important functional validation in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cross-linking experiments suggest BiP impedes Ire1 luminal domain oligomerization. Ire1 luminal domain forms dimers and tetramers upon cross-linking, but addition of BiP ATPase reduces tetramer formation and produces BiP-containing heterodimers and heterotrimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C66 present cross-linking data (Figure 7) showing BiP affects Ire1 oligomerization. However, the interpretation is complicated by several factors: (1) the authors acknowledge uncertainty about stoichiometry since full-length BiP may dimerize, (2) the experiments use only BiP ATPase domain rather than full-length BiP, and (3) the functional significance of preventing tetramer formation is unclear. While the data show BiP affects oligomerization, the mechanistic details and physiological relevance remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C20",
+      "C21",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "BiP functions as a dual-functional UPR sensor that detects unfolded proteins through canonical substrate binding and transduces this signal through noncanonical ATPase domain interaction with Ire1/Perk. The authors propose an allosteric mechanism for UPR induction where substrate binding to one domain affects interaction at another domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C20-C21, C106-C108 represent the overarching model synthesized from all experimental results. The dual functionality (C5) is well-supported by the combined evidence showing both canonical substrate binding and noncanonical sensor binding. The allosteric mechanism (C7, C106) is strongly supported by the mutual exclusivity data (C51-C55) and cellular validation (C56-C59). While the precise molecular mechanism of allostery remains to be determined, the model is well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The unfolded peptide mimic \u0394EspP shows weak binding to human Ire1 and Perk luminal domains but has no effect on BiP-sensor complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 present data from ITC, SEC-MALS, and pull-down assays (Figure 4\u2014supplement 1) showing that while \u0394EspP binds weakly to luminal domains, it does not affect BiP-sensor complexes. This negative result is important for distinguishing the authentic unfolded protein CH1 from artificial peptide mimics and supports the authors' choice to use CH1 for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C37",
+      "C40",
+      "C43",
+      "C44",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "Background and context claims describing established knowledge about UPR, previous models, and prior work on BiP-sensor interactions and unfolded protein detection mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C10, C24, C28-C30, C37, C40, C43-C44, C70-C76, C82-C92, C97-C103, C105) represent background information, literature review, and context for the current study. They are appropriately cited and accurately represent prior work. These are not novel findings but provide essential context for interpreting the new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "The present study clarifies that BiP-sensor interaction occurs via the ATPase domain and is nucleotide-independent. The authors claim this is the first biophysical measurement of specific binding affinities for Ire1 luminal domain-BiP interaction and suggest previous cellular studies may have conflated ATPase and substrate binding interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C79-C80 represent meta-claims about the novelty and significance of the findings. The claim about first biophysical measurements (C80) appears reasonable given the literature review. The suggestion that previous studies couldn't separate the two types of interactions (C79) is speculative but plausible. The clarification of the interaction mechanism (C77) is well-supported by the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "BiP is likely important in mammalian ER stress sensing based on its binding to the stress-sensing region II-IV of Ire1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is a reasonable inference from the finding that BiP binds to region II-IV, which has been implicated in stress sensing in yeast (C37). The data support BiP's importance in mammalian ER stress sensing, though the claim is somewhat speculative about the broader functional significance.",
+    "result_type": "MINOR"
+  }
+]

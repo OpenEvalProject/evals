@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Nrf1 p120 is proteolytically cleaved between Trp-103 and Leu-104 to generate the p110 form. This cleavage was identified by N-terminal sequencing showing p110 starts at Leu-104, confirmed by mutagenesis showing all mutants flanking this site are defective in processing (with Trp-103 being crucial), and demonstrated by pulse-chase experiments showing p120 is converted to p110 over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide converging evidence from multiple experimental approaches (differential epitope tag detection, N-terminal sequencing, site-directed mutagenesis, and pulse-chase experiments) that consistently support proteolytic cleavage at the Trp-103/Leu-104 junction. The data are internally consistent and the experimental logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C7"
+    ],
+    "result": "Proteolytic processing of Nrf1 is essential for its transcriptional activity. Wild-type Nrf1 can restore PSM gene induction in Nrf1-/- MEFs upon MG132 treatment, whereas non-cleavable Nrf1(m1) mutant is defective in inducing PSM genes under the same conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C7 demonstrate functional importance of cleavage through rescue experiments in knockout cells. The comparison between wild-type and non-cleavable mutant provides clear evidence that processing is necessary for transcriptional activity. The experimental design appropriately controls for Nrf1 expression levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47"
+    ],
+    "result": "p97 is required for both Nrf1 processing and the proteasome bounce-back response. p97 depletion does not induce bounce-back on its own, but severely impairs MG132-mediated bounce-back. While Nrf1 accumulates in p97-depleted cells, it remains as p120 and fails to process to the active p110 form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 and C47 are supported by consistent qRT-PCR and immunoblot data showing p97 depletion blocks both PSM gene induction and p110 formation. The experiments appropriately distinguish between p97's role in Nrf1 degradation versus processing. However, the 3-4 day depletion period raises questions about indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C95"
+    ],
+    "result": "Using the reversible p97 inhibitor NMS-873, accumulated p120 Nrf1 is efficiently converted to p110 with a half-life of ~30 min upon washout in the presence of cycloheximide and MG132, demonstrating that p120 is a bona fide precursor to p110.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 address the concern about long-term p97 depletion by using acute, reversible inhibition. The pulse-chase experiment with NMS-873 washout provides strong evidence for a precursor-product relationship and confirms p97's direct role in processing. The half-life measurement adds quantitative rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C3",
+      "C67"
+    ],
+    "result": "Nrf1 topology analysis reveals that the N-terminus is constitutively cytosolic while the C-terminus orientation depends on p97 status. In mock-depleted cells, the C-terminus is cytosolic (protease-sensitive), but when p97 is depleted, the C-terminus becomes luminal (protease-resistant), indicating that the bulk of Nrf1 (amino acids 25-742) is initially translocated into the ER lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53, C3, and C67 are supported by systematic protease protection assays using differentially tagged Nrf1 constructs. The experimental design cleverly exploits N- versus C-terminal tags to map topology. The interpretation that amino acids 1-6 are cytosolic while 25-742 are luminal when p97 is blocked is logically sound given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C4",
+      "C68"
+    ],
+    "result": "Upon restoration of p97 activity (NMS-873 washout), the C-terminus of Nrf1 becomes protease-sensitive, indicating p97-dependent retrotranslocation from the ER lumen to the cytosol. The non-cleavable Nrf1(m1) mutant undergoes retrotranslocation normally, demonstrating that processing defects are not due to impaired retrotranslocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C4, and C68 use acute p97 inhibitor washout to demonstrate reversibility of topology changes, strengthening the case for p97-dependent retrotranslocation. The control experiment with the non-cleavable mutant (C56-C57) is critical for ruling out that processing defects result from retrotranslocation defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Glycosylation analysis corroborates the topology findings. Nrf1 p120 accumulated during NMS-873 treatment is Endo H-sensitive (indicating luminal glycosylation), but becomes Endo H-resistant upon chase with MG132 plus cycloheximide (indicating deglycosylation after retrotranslocation to the cytosol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 provide orthogonal biochemical evidence for the topology model using glycosylation as a marker of luminal versus cytosolic localization. The Endo H sensitivity changes are consistent with the protease protection data, strengthening the overall model. The reasoning about N-linked glycosylation is based on established ER biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Retrotranslocated and processed Nrf1 (p110) acquires additional unknown post-translational modifications beyond deglycosylation and cleavage, as evidenced by its slower-than-expected migration on SDS-PAGE compared to unmodified protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by gel mobility analysis (Figure 4\u2014figure supplement 1) comparing processed Nrf1 to in vitro translated protein. While the nature of the modifications remains unknown, the observation is clearly documented and the inference is reasonable. This represents an incomplete but honest characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors propose a model where in unperturbed cells, retrotranslocated Nrf1 is promptly degraded by the proteasome in a futile cycle, but when proteasomes are compromised, retrotranslocated Nrf1 escapes degradation and is cleaved to yield p110 that can migrate to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C5-C6 synthesize the experimental findings into a coherent model. While the model contains inferential elements, it is well-supported by the collective data showing: (1) p120 is rapidly turned over normally, (2) p120 accumulates only when proteasomes are inhibited, (3) processing to p110 occurs after retrotranslocation, and (4) p110 is transcriptionally active.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The identity of the protease responsible for Nrf1 cleavage remains unknown, but site-1/site-2 proteases (involved in SREBP processing), the proteasome itself, and ER-localized rhomboid proteases have been ruled out based on experiments with deficient cell lines or inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 report negative results that constrain possible mechanisms. However, C71 relies on unpublished personal communication, and C73 mentions unpublished data. While these exclusions are valuable, the lack of detailed methods and the reliance on unpublished data limit confidence. The protease identity remains an important unresolved question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The authors hypothesize that in unperturbed cells, p97-dependent retrotranslocation and proteasome-dependent degradation are tightly coupled, preventing cleavage, but when proteasomes are inhibited, Nrf1 accumulates on the cytosolic side where it becomes susceptible to cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 present a mechanistic hypothesis to explain why p110 only accumulates when proteasomes are inhibited. While explicitly speculative (C74 states 'reasonable working hypothesis'), the hypothesis is logical and consistent with all experimental observations. It provides a satisfying explanation for the conditional activation of Nrf1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Nrf1 activation differs fundamentally from other ER membrane-tethered transcription factors (SREBP, ATF6, OASIS, CREB-H, Spt23, Mga2). Unlike these factors where functional domains are cytosolic and cleavage liberates them, Nrf1's functional domains begin in the ER lumen and must be retrotranslocated before processing can yield an active fragment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 make a valid comparative analysis supported by the experimental data on Nrf1 topology and established knowledge about other ER-tethered transcription factors. The distinction is mechanistically significant and well-supported by the topology data. This represents an important conceptual advance in understanding transcription factor activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Nrf1 co-opts the p97-dependent ERAD pathway normally used to clear misfolded proteins, which inevitably couples retrotranslocation to rapid proteasomal degradation. This coupling prevents accumulation of active Nrf1 except when proteasome activity is insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 integrate the experimental findings with established ERAD biology to explain the regulatory logic of Nrf1 activation. The reasoning is sound and supported by citations to ERAD literature. This provides a mechanistic explanation for how Nrf1 specifically senses proteasome insufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The authors propose that retrotranslocation of p120 occurs so rapidly that only a tiny fraction of luminal p120 is detectable at steady-state unless retrotranslocation is blocked by p97 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 explains the observation of a small protease-resistant pool of p120 at steady-state (Figure 4C). The proposal is reasonable given the rapid conversion kinetics observed in the NMS-873 washout experiments (~30 min half-life). This interpretation is consistent with the overall model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The authors speculate that targeting Nrf1 to the ER ensures basal Nrf1 activity is essentially zero due to tight coupling between retrotranslocation and degradation, allowing Nrf1 to specifically respond to proteasome insufficiency and restore adequate proteasome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 present a teleological explanation for Nrf1's unusual regulatory mechanism. While explicitly speculative, the reasoning is logical and consistent with the experimental findings. This provides a satisfying biological rationale for the baroque activation mechanism, though it remains a hypothesis about evolutionary design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C18",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors suggest that blocking the Nrf1-mediated bounce-back response through p97 inhibition may enhance proteasome inhibitor therapy efficacy in cancer. This is supported by prior work showing Nrf1 depletion enhances proteasome inhibitor-mediated apoptosis, and recent reports of enhanced cancer cell killing with combined proteasome and p97 inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18, C91-C94 discuss therapeutic implications. While C91-C93 cite published work, the therapeutic speculation (C18, C94) is not directly tested in this manuscript. The logic is reasonable given that p97 is druggable and combination therapy shows promise, but these remain hypotheses requiring clinical validation. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C48",
+      "C64",
+      "C65",
+      "C66",
+      "C76",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background claims about proteasome homeostasis, Nrf1/CNC-bZIP family, p97 function, and examples of retrotranslocation are established by citations to prior literature and represent accepted scientific knowledge that contextualizes the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C23, C36-C39, C48, C64-C66, C76, C84-C87 provide background information supported by appropriate citations. These claims accurately represent prior work and established knowledge. They are not novel findings but provide necessary context for interpreting the new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The authors speculate that upon proteasome inhibition, the entire complement of ERAD substrates may mimic Nrf1 by being retrotranslocated but not degraded, potentially acquiring novel cytosolic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is explicitly speculative and not tested experimentally. While the logic is reasonable given that ERAD substrates would accumulate when proteasomes are inhibited, whether they acquire novel functions is pure speculation. This represents an interesting hypothesis for future investigation but lacks experimental support in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

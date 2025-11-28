@@ -1,0 +1,1668 @@
+{
+  "submission": {
+    "id": "a0da4d9a-74b3-4019-bb3f-8f6a81224b6b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:23:58.022503Z",
+    "updated_at": "2025-11-28T22:23:58.022503Z"
+  },
+  "content": [
+    {
+      "id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "submission_id": "a0da4d9a-74b3-4019-bb3f-8f6a81224b6b",
+      "content_type": "manuscript",
+      "content_text": "# Cofilin-induced unidirectional cooperative conformational changes in actin filaments revealed by high-speed atomic force microscopy\n\n## Authors\n\n- Kien Xuan Ngo<sup>1</sup>\n- Noriyuki Kodera<sup>2</sup> \u2020\n- Eisaku Katayama<sup>4</sup>\n- Toshio Ando<sup>2</sup>\n- Taro QP Uyeda<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Biomedical Research Institute National Institute of Advanced Industrial Science and Technology Tsukuba Japan\n2. Department of Physics and Bio-AFM Frontier Research Center Kanazawa University Kanazawa Japan\n3. Precursory Research for Embryonic Science and Technology Japan Science and Technology Agency Kawaguchi Japan\n4. Department of Biology, Graduate School of Science Osaka City University Osaka Japan\n5. Core Research for Evolutionary Science and Technology Japan Science and Technology Agency Kawaguchi Japan\n6. Graduate School of Life and Environmental Sciences University of Tsukuba Tsukuba Japan\n7. Graduate School of Medical Life Science Yokohama City University Yokohama Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nHigh-speed atomic force microscopy was employed to observe structural changes in actin filaments induced by cofilin binding. Consistent with previous electron and fluorescence microscopic studies, cofilin formed clusters along actin filaments, where the filaments were 2-nm thicker and the helical pitch was \u223c25% shorter, compared to control filaments. Interestingly, the shortened helical pitch was propagated to the neighboring bare zone on the pointed-end side of the cluster, while the pitch on the barbed-end side was similar to the control. Thus, cofilin clusters induce distinctively asymmetric conformational changes in filaments. Consistent with the idea that cofilin favors actin structures with a shorter helical pitch, cofilin clusters grew unidirectionally toward the pointed-end of the filament. Severing was often observed near the boundaries between bare zones and clusters, but not necessarily at the boundaries.\n\n## Introduction\n\nActin filaments are involved in a variety of important functions in eukaryotic cells, including muscle contraction, amoeboid movement, cytokinesis, intracellular transport, and transcriptional regulation within the nucleus. These diverse functions depend on the interaction between actin and specific actin binding proteins (ABPs), and it is generally assumed that specific biochemical signaling is involved in the spatial and temporal regulation of each actin\u2013ABP interaction. During migration of amoeboid cells, for instance, cofilin plays essential roles in continuous extension of lamellipodia by severing actin filaments to promote filament depolymerization or to initiate polymerization from new barbed ends (reviewed by Bravo-Cordero et al., 2013). Three independent biochemical mechanisms are known to inhibit cofilin activity; phosphorylation of Ser3, sequestration to phosphatidylinositol 4,5-bisphosphate (PIP2) in plasma membrane, and lower pH (Bernstein and Bamburg, 2010; Bravo-Cordero et al., 2013). These inhibitory mechanisms are implicated in the regulation of cofilin activity during cell migration, since experimental unleashing of inactive cofilin has been shown to initiate cofilin-dependent processes (Bernstein and Bamburg, 2010; Bravo-Cordero et al., 2013). Critically speaking, however, these data do demonstrate that active cofilin is required, but there is little experimental evidence that localized activation of cofilin is necessary for proper cofilin functions in cell migration. Indeed, overexpression of constitutively active S3A cofilin did not inhibit motility (Endo et al., 2003; Popow-Wozniak et al., 2012). Thus, biochemical signaling is not sufficient to explain how cofilin activities are properly regulated spatially and temporally in cells.\n\nOn the other hand, many ABPs alter the atomic structure of actin subunits within filaments, and in certain cases these conformational changes are cooperative. For instance, the pioneering work of Oosawa and his colleagues demonstrated that the increase in fluorescence intensity of a fluorophore on actin saturates when only one molecule of the myosin motor domain is added for each 10 actin subunits within filaments (Oosawa et al., 1973). Similar myosin-induced cooperative conformational changes have been detected in various other assays (Tawada, 1969; Fujime and Ishiwata, 1971; Loscalzo et al., 1975; Miki et al., 1982; Prochniewicz et al., 2010). In addition, dense binding of cofilin shortens the helical pitch of actin filaments by 25% (McGough et al., 1997; Galkin et al., 2001; Sharma et al., 2011), and time-resolved phosphorescence anisotropy (Prochniewicz et al., 2005) and differential scanning calorimetry (Dedova et al., 2004; Bobkov et al., 2006) showed that one molecule of bound cofilin changes the structure of \u223c100 actin subunits within a filament. Moreover, binding of cofilin to actin filaments is cooperative (Hawkins et al., 1993; Hayden et al., 1993; McGough et al., 1997; De La Cruz, 2005; Hayakawa et al., 2014). This implies that cooperative conformational changes induced by an ABP are propagated to neighboring actin subunits, increasing their affinity for that, or another, ABP. This could provide a novel mechanism by which actin filaments change their function by regulating their affinities for various ABPs (Tokuraku et al., 2009; Michelot and Drubin, 2011; Schoenenberger et al., 2011; Uyeda et al., 2011; Galkin et al., 2012; Romet-Lemonne and Jegou, 2013).\n\nHowever, the currently available information on structural changes to actin filaments is limited to high-resolution static images (electron microscopy), low-resolution dynamic changes (fluorescence microscopy), and bulk biochemical analyses. There is little information available in the molecular mechanism that mediates the propagation of structural changes to neighboring actin subunits. Atomic force microscope (AFM) is unique in that it enables detailed structural analysis of wet protein samples (M\u00fcller and Dufr\u00eane, 2008), and recent dramatic improvements in scanning speed now enables real time imaging of conformational changes in protein samples with high-spatial resolution (Ando et al., 2013). This high-speed AFM (HS-AFM) has been used to visualize molecular movements such as the stepping motion of myosin V along actin filaments (Kodera et al., 2010), rotary catalysis of F1 ATPase without a rotor (Uchihashi et al., 2011), and light-induced conformational changes in bacteriorhodopsin (Shibata et al., 2010). Here, we used HS-AFM to directly visualize conformational changes in actin filaments induced by cofilin binding. We found that conformational changes within cofilin clusters unidirectionally propagate to the neighboring bare actin zone in a cooperative manner and that the growth of the cofilin cluster follows this unidirectional cooperative conformational change.\n\n## Results\n\n### Observation of actin filaments on a supported lipid bilayer\n\nFor AFM, actin filaments must be immobilized on the stage, yet they must have the freedom of movement to bind cofilin and exhibit the resultant changes in the helical twist that accompany cofilin binding. We therefore formed a bilayer of positively charged lipid on the surface of freshly peeled mica (Yamamoto et al., 2010) fixed to the observation stage. A solution of actin filaments was then placed on the supported lipid bilayer and HS-AFM was performed. Right-handed double helical filaments were clearly visualized (Figure 1), as in earlier reports (Weisenhorn et al., 1990; Schmitz et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig1-v1.jpg)\n\n**Figure 1.:** (A) Control actin filaments without cofilin. (B) Actin filaments fully bound with cofilin over an extended distance. (C) Paracrystals of actin filaments. Bars: 25 nm, Z-scale: 0\u201312 nm. (D and E) Histograms of peak heights (D) and lengths of half helical pitches (E) in control actin filaments and cofilin-decorated actin segments. N was between 1722 and 2536. (F) Half helical pitches of actin paracrystals (N = 1009). Solid lines show Gaussian fittings with confidence intervals of 99.73%. For comparison, the dark line in (F) shows the Gaussian fitting of control actin filaments. Measurements were made in F buffer containing 1 mM ATP (A), 1 mM ATP, and 75 nM cofilin (B) or 1 mM ATP and 30 mM MgCl2 (C). Student's t-test comparing control and cofilin-decorated actin segments showed that the differences in peak heights and half helical pitches are statistically significant at p \u2264 0.00001. The mean of the half helical pitches of control actin filaments and paracrystals did not differ significantly. Models of control actin filaments and cofilin-decorated actin filaments with two different orientations on substrates are shown in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A and B) show predicted peak heights of control actin filaments (PDB ID 3G37; Murakami et al. (2010)), and (C and D) show fully cofilin-decorated filaments (PDB ID 3J0S; Galkin et al. (2011)). These images were generated using Chimera software. When the true crossover point coincides with the position of an actin subunit (A) or a bound cofilin molecule (C), the position of the peak is equal to that of the crossover point, and its height is the tallest of the various possible orientations of the filament on the substrate. When the true crossover point is at the middle of two actin subunits (B) or two bound cofilin molecules (D), the peak height is the shortest of the possible orientations. In this latter case, the observed peak position is away from the true crossover point by as much as \u223c2.5 nm. Depending on the orientation of the filament, therefore, the distance between the observed peak position and the true crossover point fluctuates between 0 and 2.5 nm. Random distribution of distances between the true crossover points and the highest points of the closest actin subunits would result in \u00b11.7 nm of error in the estimation of the positions of the true crossover points. If the peak positions at both ends of a half helix have this much error, the half helical pitch would have \u00b12.3 nm (\u00b11.7 nm \u00d7 \u221a2) error. This is somewhat smaller than the \u00b13.0 nm standard deviation of the half helical pitches of actin filament paracrystals, and the difference should derive from small structural fluctuations in the paracrystals and/or measurement error from various other sources. In either case, it is safe to use the 3.0 nm standard deviation as the upper limit of the combined measurement errors and to estimate the lower limit of the structural fluctuations of control and cofilin-bound filaments.\n\nWe approximated the positions of the crossover points, where the two strands of actin filament are aligned vertically, using the position of the highest point (peak) in each half helix identified in the AFM images. Quantitative analysis indicated that the height of those peaks, or the thickness of the filaments, was 8.6 \u00b1 0.8 nm (average \u00b1 SD), and the spacing between the peaks, or half helical pitch, was 36.8 \u00b1 4.3 nm (Figure 1D,E). These values, which are consistent with previously reported structural data (Hanson and Lowy, 1963; Hanson, 1973; Egelman et al., 1982), will hereafter be referred to as normal height and normal half helical pitch, respectively. The distribution of half helical pitches ranged from \u223c26 nm to \u223c45 nm and was well fit by a normal distribution with a standard deviation of 4.3 nm. This distribution should reflect natural variation in half helical pitch, as was proposed on the basis of a similar distribution of half helical pitches in electron micrographs of negatively stained specimens (Hanson, 1967; Egelman et al., 1982) and also measurement errors. To assess the overall magnitude of the measurement errors, we prepared paracrystals of actin filaments in the presence of 30 mM MgCl2 (Figure 1C) (Hanson, 1973). The distribution of the half helical pitches of the paracrystals measured under the same conditions was narrower than that of free filaments, with a mean of 36.5 nm and standard deviation of 3.0 nm (Figure 1F). In a hypothetical case where the paracrystals do not undergo spontaneous conformational changes, this distribution is the upper limit of the measurement errors in our system. Furthermore, assuming normal distributions of the true half helical pitches and measurement errors, the true standard deviation of the half helical pitches of control filaments was calculated to be 3.1 nm or larger, by subtracting the variance of the actin paracrystals from that of control filaments. This indicated that the structure of the actin filaments does indeed vary with changes in helical twist.\n\n### Observation of actin filaments fully bound with cofilin\n\nWhen 75 nM cofilin was added to actin filaments immobilized on the lipid surface, cofilin gradually bound to the actin filaments, and sections of filaments bound with cofilin molecules were easily identified, as the bound filaments appeared thicker and the peaks were taller (Figure 1B). Peak heights within long cofilin clusters (longer than eight consecutive half helices) showed a single distribution of 10.6 nm \u00b1 1.0 nm, approximately 2 nm taller than the control filaments (Figure 1D). This is consistent with electron microscopic analysis (Galkin et al., 2011), which showed that filaments fully decorated with cofilin are \u223c2.3-nm thicker than control filaments due to the presence of cofilin molecules (Figure 1\u2014figure supplement 1). Moreover, the height distribution was fit well by a single normal distribution, which suggests that within those long cofilin clusters, both actin strands are homogeneously bound with cofilin molecules.\n\nCofilin binding shortened the half helical pitch by 27% to 26.9 nm (Figure 1E), which is again consistent with earlier electron microscopic (McGough et al., 1997; Galkin et al., 2001) and AFM analyses (Sharma et al., 2011). The standard deviation of the distribution of half helical pitches of the fully cofilin-decorated filaments was 3.8 nm, and subtracting the maximum possible measurement error yielded a standard deviation of 2.3 nm or larger. This value is smaller than that of the control filaments (3.1 nm) and suggests that cofilin binding restricts torsional movements of the filaments within cofilin clusters.\n\n### Half helical pitch on either side of the cofilin cluster\n\nWe next analyzed shorter cofilin clusters along otherwise apparently bare filaments (Figure 2) so that both ends of the cluster were visible within the imaged area. Intriguingly, we noticed that the half helical pitch in the apparently bare section on one side of the cofilin cluster was short, while the pitch on the other side of the cluster was nearly normal.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig2-v1.jpg)\n\n**Figure 2.:** (A and B) HS-AFM image of a short cofilin cluster transiently associating with two S1 molecules (yellow arrowheads), which persisted for \u223c1 s, enabling identification of the filament polarity (B). Measurements were made in F buffer containing 20 nM S1, 75 nM cofilin, 1 mM ADP, and 0.1 mM ATP. Bar: 25 nm; Z-scale: 0\u201312 nm. (C and D) Time-dependent changes in the heights of the indicated peaks (white arrowheads) and half helical pitches between the indicated peaks. (E and F) Histograms of the lengths of the half helical pitches of bare actin segments immediately neighboring cofilin clusters. Filaments were incubated in F buffer containing 1 mM ADP and 0.1 mM ATP for 5 min before observation (E) as in (A and B) or were incubated in F buffer containing 1 mM ADP for 30 min before observation (F). Pitches of the half helices of the first immediate neighbor on each side of cofilin clusters were measured. These values, together with those for the second neighbors, are summarized in Table 1.\n\nThe observation buffer was then changed to F buffer containing 0.1 mM ATP, 1 mM ADP, hexokinase, glucose, 20 nM subfragment-1 (S1) of skeletal myosin II, and 75\u2013100 nM cofilin, so that the polarity of the actin filaments could be identified from the characteristic tilted binding angle seen when S1 transiently binds the filament (Huxley, 1963). This analysis revealed that the half helical pitch of the bare zone on the pointed-end side of the cofilin cluster was short, while that on the barbed-end side was slightly longer than the normal pitch (Figure 2 and Table 1). Student's t-test indicated that the differences in the mean half helical pitches between the first neighbor bare zone on either side of the cluster and the control filaments are statistically significant (p < 0.00001 and p < 0.001 for pointed-end and barbed-end side, respectively). Pitches of the neighboring half helices second from the cofilin clusters were nearly normal (Table 1).\n\n**Table 1.**\n Peak heights and lengths of half helical pitches in bare actin segments neighboring cofilin clusters\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">1 mM ADP + 0.1 mM ATP</th>\n      <th colspan=\"2\">1 mM ADP</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Peak height (nm)</th>\n      <th>Half helix (nm)</th>\n      <th>Peak height (nm)</th>\n      <th>Half helix (nm)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>First neighbor on the P-end side</td>\n      <td>9.2 \u00b1 1.0</td>\n      <td>28.8 \u00b1 4.5</td>\n      <td>8.9 \u00b1 1.0</td>\n      <td>28.7 \u00b1 4.7</td>\n    </tr>\n    <tr>\n      <td>Second neighbor on the P-end side</td>\n      <td>9.1 \u00b1 1.0</td>\n      <td>36.5 \u00b1 4.1</td>\n      <td>8.8 \u00b1 1.1</td>\n      <td>36.9 \u00b1 4.9</td>\n    </tr>\n    <tr>\n      <td>First neighbor on the B-end side</td>\n      <td>9.0 \u00b1 0.9</td>\n      <td>37.3 \u00b1 4.6</td>\n      <td>8.7 \u00b1 0.9</td>\n      <td>38.4 \u00b1 4.3</td>\n    </tr>\n    <tr>\n      <td>Second neighbor on the B-end side</td>\n      <td>9.2 \u00b1 0.6</td>\n      <td>35.4 \u00b1 3.9</td>\n      <td>8.7 \u00b1 0.8</td>\n      <td>36.7 \u00b1 4.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_Actin filaments were incubated in F buffer containing 1 mM ADP and 0.1 mM ATP for 5 min or in F buffer containing 1 mM ADP for 30 min prior to the addition of cofilin. Filaments under the latter condition were shorter than those under the former condition and were apparently in the process of spontaneous depolymerization.Each mean and SD were calculated from 423 to 446 data._\n\n### Half helical pitch around sparsely bound cofilin\n\nThe results summarized above demonstrate that cofilin clusters induce distinctively asymmetric conformational changes in bare zones immediately neighboring the clusters, but it is still uncertain whether a stretch of many bound cofilin molecules, as in clusters, is necessary to induce such conformational changes. To answer that question, we needed to visualize individual cofilin molecules bound to actin filaments, and measure the half helical pitch of the filament around those bound molecules. This has not been possible because cofilin molecules are too small to image individually using electron microscopy or AFM. We therefore engineered a fusion protein in which the N-terminal half of the rod domain of \u03b1-actinin was attached to the C-terminus of cofilin. In electron micrographs of negatively stained specimens (Figure 3A), as well as in HS-AFM images (Video 1 and Figure 3\u2014figure supplement 4), we were able to see clusters of cofilin-rod with a half helical pitch \u223c25% shorter than the bare zones, which is similar to control cofilin molecules bound to actin filaments (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013C) are electron micrographs of negatively stained samples, and (D) is a HS-AFM image of a sample similar to that shown in (B). (A) Actin filaments bound with cofilin-rod. Arrowheads show crossover points in clusters of cofilin-rod. The rod portions of the fusion proteins are not readily visible, which may be due to alignment of the rods along the cofilin clusters. Severing activity and stoichiometric binding of cofilin-rod to actin filaments were confirmed by HS-AFM (Video 1) and co-sedimentation assays (Figure 3\u2014figure supplement 3), respectively. (B) Cofilin-rod molecules sparsely bound to actin filaments, identified by the rod-like structures (black arrowheads). (C) Actin filaments with bound cofilin molecules (without rod fusion). Arrowheads show crossover points in clusters. Actin filaments and cofilin or cofilin-rod were mixed at a 2:1 (A and C) or 1:1 (B) molar ratio in F buffer containing 1 mM ATP. Bars: 25 nm. (D) HS-AFM image of an actin filament and an apparently singly bound cofilin-rod molecule (blue arrowhead in the upper image) near P2 (white arrowhead). Conditions: F buffer containing 1 mM ATP and 75 nM cofilin-rod (without His-tag). Bar: 25 nm. See Video 2. (E) shows heights of the three peaks and (F) shows spacing between them.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and B) are SDS-PAGE of supernatant and pellet fractions after ultracentrifugation of mixtures of various concentrations of cofilin with (A) or without (B) His-tag and 1 \u00b5M actin filaments, respectively. Acrylamide concentration of the gel was 12%. His-tag was removed by incubation with 1/4 (wt/wt) of His-tagged TEV protease overnight at 5\u00b0C and then passed through a Ni-column in the presence of 10 mM imidazole. Lanes 1 to 4 in (C) show His-TEV protease, mixture of His-cofilin and His-TEV after reaction over night, His-cofilin, and the reaction mixture that flowed through a Ni-NTA column (i.e., cofilin without His-tag). Co-sedimentation experiments were performed as follows. Frozen aliquots of cofilin (\u00b1His-tag) and rabbit skeletal actin were thawed on ice for 1 hr and were then clarified by ultracentrifugation at 80,000 rpm for 5 min at 5\u00b0C. The supernatant was collected, and protein concentrations were measured using Advanced Protein Assay reagent (Cytoskeleton). Actin filaments were prepared by polymerization of G-actin (20 \u00b5M) in F buffer containing 1 mM ATP on ice for 30 min. The filaments formed were diluted to 1 \u00b5M and gently mixed with the cofilin (\u00b1His-tag) of various concentrations (i.e., 0.1, 0.5, 1, and 2 \u00b5M) in F buffer containing 1 mM ATP. These protein mixtures were further incubated for 3\u20135 min at room temperature, followed by ultracentrifugation at 80,000 rpm for 5 min at 25\u00b0C. Supernatant and pellet fractions were separately run on a SDS-polyacrylamide gel and stained with Coomassie Blue. Control experiments were performed in the same manner using either 1 \u00b5M actin filament only or 2 \u00b5M cofilin or its derivative only.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Band intensities of gels shown in Figure 3\u2014figure supplement 1 were quantified, and fractions of actin-bound with cofilin ([cofilin]ppt/[actin]ppt) were shown as a function of free cofilin concentration ([cofilin]sup). Mean \u00b1 SD are shown (N = 3).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A and B) SDS-PAGE analysis of binding of cofilin-rod with and without His-tag to actin filaments, respectively. Experiments were carried out in F buffer containing 1 mM ATP, and protein concentrations used are shown above each gel. Cleavage of His-tag by TEV protease was performed as described in the legend to Figure 3\u2014figure supplement 1. Acrylamide concentration of the gel was 10%.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Red arrowheads: severing points in end half helices in cofilin clusters; white arrowheads: cofilin-rod clusters. Z-scale: 0\u201312 nm. Scale bar: 25 nm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/04806/elife-04806-media1.avi.jpg)\n\n**Video 1.:** Conditions: F buffer containing 1 mM ATP, and 300 nM cofilin-rod without His-tag, imaging rate: 2 frames/s, and playing rate: 5 frames/s. White arrowheads indicate clusters of cofilin-rod, and red and blue arrowheads show severing points inside a cluster and in a bare half helix immediately neighboring a cluster, respectively. Z-scale was 0\u201312 nm. Related to Figure 3\u2014figure supplement 4.\n\nRod-like structures were often observed to stick out from apparently bare sections of the filaments (Figure 3B). These are most likely the rod portions of the cofilin-rod molecules bound sparsely along seemingly bare sections of the filaments, because their length was \u223c10 nm, which is expected for half an \u03b1-actinin rod (Yan et al., 1993; Anson et al., 1996), and because similar rod-like structures were rarely observed in control images of cofilin added to actin filaments (Figure 3C). We therefore estimated the helical pitches on both sides of single rod-like structures sticking out from the filaments by measuring the filament length that encompassed three actin subunits along one strand on either side of the bound molecule. In addition, because we did not know the polarity of each filament, we compared the helical pitches on both sides by dividing the longer helical pitch by the shorter one. This yielded a value of 1.02 \u00b1 0.02 (average \u00b1 SD, n = 9), which was much smaller than the 1.30 \u00b1 0.18 (n = 4) measured for cofilin clusters in electron micrographs or 1.37 calculated from the AFM data (Figure 1E) and was comparable to the value of randomly selected regions along control actin filaments (1.04 \u00b1 0.05, n = 18). Furthermore, the helical pitches around the apparently singly bound cofilin-rod molecules (36.0 \u00b1 1.0 nm, n = 5) did not significantly differ from the control helical pitch (36.3 \u00b1 1.0 nm, n = 8) measured in electron micrographs.\n\nIn HS-AFM observations, we were able to observe four cases of an apparently single cofilin-rod molecule binding transiently to an actin filament (Figure 3D and Video 2). Consistent with the electron microscopic observation described above, we were unable to detect significant changes in peak heights and half helical pitches, such as those observed around cofilin clusters, around those singly bound cofilin-rod molecules (Figure 3E,F).\n\n![Video 2.](https://cdn.elifesciences.org/articles/04806/elife-04806-media2.avi.jpg)\n\n**Video 2.:** Conditions: F buffer containing 1 mM ATP and 75 nM cofilin-rod without His-tag, imaging rate: 4 frames/s, and playing rate: 5 frames/s. Transient binding of cofilin-rod to and dissociation from an actin filament was followed for approximately 90.5 s, shown by the presence and absence of a blue arrowhead. No severing was observed in all four similar cases of successful imaging of sparse binding of cofilin-rod to actin filaments. Z-scale was 0\u201312 nm. Related to Figure 3D.\n\nThese results suggest that a single cofilin molecule cannot induce conformational changes, either symmetric or asymmetric, that involve detectable changes in helical pitch when it binds to bare sections of the filament.\n\n### Growth of the cofilin clusters\n\nReal time AFM imaging taken at 1.5 or 2 frames/s enabled us to follow the growth of individual cofilin clusters along actin filaments. In the case illustrated in Figure 4A and Video 3, observed in F buffer containing 1 mM ADP and 0.1 mM ATP, P4 was already tall when imaging started (\u223c10.5 nm, average of t = 0\u20135 s), while P3 had an intermediate height (\u223c9.5 nm), and P1 and P2 were normal (\u223c8.5 nm) (Figure 4A, middle). We interpreted this to mean that the initial cofilin cluster extended beyond P4 but ended near P3. P3 gradually became taller and plateaued beyond \u223c25 s. Thereafter, P2 started to rise at \u223c15 s and plateaued at \u223c63 s, whereas P1 started to rise at \u223c60 s. The distance between P2 and P3 rapidly shortened to \u223c27 nm between 0 and 15 s, before P2 started to rise, while the distance between P1 and P2 shortened between 30 and 40 s, before P1 started to rise (Figure 4A, bottom). This sequence of events implies gradual growth of this cofilin cluster into the neighboring bare zone on the pointed-end side where the helical pitch was shortened.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig4-v1.jpg)\n\n**Figure 4.:** Growth of cofilin clusters along actin filaments in F buffer containing 1 mM ADP and 0.1 mM ATP (A), along actin filaments carrying ADP, prepared by incubating filaments in F buffer containing 1 mM ADP, hexokinase, and glucose at room temperature for 30 min (B), and along actin filaments carrying ADP and Pi, prepared by incubating filaments in 1 mM ADP and 10 mM Pi for 10 min at room temperature (C). The concentrations of cofilin were 75 nM (A and B) or 900 nM (C) and those of S1 were 20 nM (A and B) or 150 nM (C). Each panel consists of four sequential snapshots (top), a figure showing the heights of the indicated peaks (middle), and the half helical pitches between the indicated peaks (bottom). Yellow arrowheads show the transient association of S1. Note that P1 in (A) and P3 in (B) rose in two substeps. Bars: 25 nm; Z-scale: 0\u201312 nm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/04806/elife-04806-media3.avi.jpg)\n\n**Video 3.:** Imaged at 2 frames/s and played at 5 frames/s. White arrowheads show growth of the cofilin cluster, and yellow and magenta arrowheads show binding of S1. Magenta arrowheads indicate S1 molecules whose binding angle could not be determined, either for geometric reasons (i.e., binding on the upper face of the filament) or because the binding was too short-lived. Z-scale was 0\u201312 nm. For magnifications and polarity of the analyzed filaments, refer to Figure 4 in the main text. Related to Figure 4A.\n\nCofilin binds preferentially to actin subunits carrying ADP, compared to those carrying ATP or ADP and Pi (Carlier et al., 1997; Blanchoin and Pollard, 1999). Since actin filaments in F buffer containing ATP should have ATP\u2013actin caps near the barbed ends, and since subunits on the pointed-end side tend to carry ADP only due to ATP hydrolysis and Pi release (Carlier, 1990), the directional growth of cofilin clusters toward the pointed-end might reflect the asymmetric distribution of actin subunits with different nucleotides. To test this possibility, we prepared two different types of actin filaments with homogenous nucleotide states along the lengths. In the first case, filaments polymerized in buffer containing 1 mM ATP were incubated for 30 min in buffer containing 1 mM ADP, which is much longer than the 350 s required to hydrolyze ATP and release the resultant Pi from half of the polymerizing ATP\u2013actin molecules (Melki et al., 1996), so that most of the actin subunits should carry ADP only. In the second case, filaments polymerized in buffer containing 1 mM ATP were incubated for 10 min in buffer containing 1 mM ADP and 10 mM Pi. Under this condition, most of the actin subunits should carry ADP and Pi, considering a Kd of 1.5 mM for Pi (Carlier and Pantaloni, 1988). HS-AFM observations after the addition of 20 nM S1 and 75 nM cofilin or 150 nM S1 and 900 nM cofilin demonstrated that, in both cases, the growth of cofilin clusters was primarily to the pointed-end direction (Figure 4B and Video 4, and Figure 4C and Video 5). Results of a large number of observations are compiled in Figure 5.\n\n![Video 4.](https://cdn.elifesciences.org/articles/04806/elife-04806-media4.avi.jpg)\n\n**Video 4.:** Imaged at 2 frames/s and played at 5 frames/s. For color codes of arrowheads, see the legend to Video 3. Z-scale was 0\u201312 nm. For magnifications and polarity of the analyzed filaments, refer to Figure 4 in the main text. Related to Figure 4B.\n\n![Video 5.](https://cdn.elifesciences.org/articles/04806/elife-04806-media5.avi.jpg)\n\n**Video 5.:** For color codes of arrowheads, see the legend to Video 3. For magnifications and polarity of the analyzed filaments, refer to Figure 4 in the main text. Under this condition, binding of S1 was so short-lived that the tilted binding was not obvious in some cases (magenta). The S1 molecule indicated by a double magenta arrowhead appears to tilt in the direction opposite to other S1 molecules indicated by yellow arrowhead, and we speculate that this is because this S1 molecule was not stably bound to the filament when imaged. Imaged at 2 frames/s and played at 3 frames/s. Z-scale was 0\u201312 nm. Related to Figure 4C.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig5-v1.jpg)\n\n**Figure 5.:** The growth of cofilin clusters was observed under three buffer conditions: in the presence of 1 mM ADP and 0.1 mM ATP (+ADP +ATP); 1 mM ADP (+ADP) and 1 mM ADP and 10 mM Pi (+ADP +Pi), as in Figure 4. Growth of a cluster by one-half helix was counted as one growth event. The total number of observed growth events was 37, 46, and 188 for each condition. We speculate that at least some of the cluster growth events in the barbed-end direction were actually growth in the preferred direction from invisibly small clusters on the barbed side of a visible cluster.\n\nThe rate of formation and growth of cofilin clusters depended on the nucleotide state of actin subunits as well as the concentration of cofilin. In most experiments we used 75 nM cofilin since we were able to observe de novo formation of clusters and tractable growth, after mixing and settling of the system. When 1 \u00b5M cofilin was added and mixed, we were unable to find bare zones of actin filaments. When actin filaments were incubated with 1 mM ADP and 10 mM Pi, much higher concentrations of cofilin (e.g., 900 nM) was needed to induce cofilin clusters. The growth rates of cofilin clusters were within tractable range even in the presence of 1 \u00b5M cofilin, when 10 mM Pi was present (Figure 4C). These results are consistent with the weaker affinity of cofilin for actin subunits carrying ADP and Pi (Carlier et al., 1997; Blanchoin and Pollard, 1999).\n\n### Severing of filaments by cofilin\n\nCofilin is an actin filament severing protein (reviewed by Pollard (2000)), and although our experiments were performed at pH 6.8, which should suppress severing activity (Yonezawa et al., 1985; Hawkins et al., 1993; Pavlov et al., 2006), we observed frequent severing of the filaments near or within short cofilin clusters (Figure 6A\u2013C, Videos 6\u201310 and Figure 6\u2014figure supplements 1 and 2). Because a previous study by Adrianantoandro and Pollard (2006) found that severing activity is highest at 10 nM of human cofilin and that this activity sharply declines above and below 10 nM, we observed severing events at several different cofilin concentrations, including 10 nM. In the presence of 10 or 20 nM cofilin, severing was very infrequent (Video 11 and Figure 6\u2014figure supplement 3). Severing was often observed between 40 (Video 12 and Figure 6\u2014figure supplement 4) and 200 nM cofilin. In the presence of 650 nM cofilin, many of the filaments were fully decorated with cofilin when observations started, and severing was observed exclusively near the ends of the long clusters (Video 12 and Figure 6\u2014figure supplement 4). When the cofilin concentration was increased to 1 \u00b5M, all the filaments were fully decorated with cofilin, and severing was infrequent along those fully decorated filaments (Video 12). Thus, we also observed that cofilin's severing activity was highest in the medium concentration range (i.e., 40\u2013200 nM), but this concentration is at least several-fold higher than that reported by Adrianantoandro and Pollard (2006). These two studies used the same pair of proteins (i.e., skeletal muscle actin and human cofilin), and we can only speculate that this discrepancy is due to differences in experimental conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013C) Typical cases of filament severing (red arrowheads) within or near cofilin clusters (white arrowheads). The observation buffers were F-buffer containing 1 mM ADP (A and C) and 1 mM ATP (B). Concentration of cofilin was 40 nM (A and C) and 75 nM. The first break in (A) was inside a cluster, while the second was at or near the junction between a bare zone and a cluster. Red, blue, and green arrowheads show severing points within cofilin clusters, in bare zone close to cofilin clusters, and in bare zones more than half a helix away from a cofilin cluster, while white arrowheads show cofilin clusters. Bars: 25 nm; Z-scale: 0\u201312 nm. See Videos 6\u20138. (D) Classification of severing sites into four categories: (1) in \u2018far\u2019 bare zone (between a tall and a short black arrow or between two short black arrows, indicated by green bars in (E)); (2) in bare zone half helices immediately neighboring a cofilin cluster (between a tall black and a tall orange arrow, indicated by blue bars in (E)); (3) in \u2018end\u2019 cofilin cluster half helices immediately neighboring bare zones (between a tall and a short orange arrow, indicated by red bars in (E)); and (4) in \u2018inner\u2019 cofilin cluster half helices (between two short orange arrows, indicated by a red bar in (E)). Comparison of the last two categories demonstrates that severing within cofilin clusters occurs preferentially near the ends. Note, however, that this comparison does not necessarily show a quantitative difference in the susceptibility to severing between end and inner half helices, since the number of end and inner helices examined are not the same. (E) A schematic summary of the proposed distributions of bound cofilin molecules (red spheres), segments of normal (yellow) and shortened (orange) helical pitch, and normal (black arrows) and tall (orange arrows) crossover points. Free cofilin molecules tend to bind to the supertwisted bare zone on the pointed-end side of the cluster (gray arrows), driving the growth of the cluster in the pointed-end direction. This is most certainly an oversimplification, ignoring a number of complex issues, some of which are discussed in the main text.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Red, blue, and green arrowheads indicate severing in half helices in cofilin clusters, in a bare half helix immediately neighboring a cofilin cluster, and in bare zones more than half a helix away from cofilin clusters, respectively. White arrowheads: cofilin clusters. Numbers (1\u201310) refer to the sequence number in the video. Z-scale: 0\u201312 nm. Scale bar: 25 nm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Red, blue, and green arrowheads indicate severing in half helices in cofilin clusters, in a bare half helix immediately neighboring a cofilin cluster, and in bare zones more than half a helix away from cofilin clusters, respectively. White arrowheads: cofilin clusters. Numbers (1\u20137) refer to the sequence number in the video. Z-scale: 0\u201312 nm. Scale bar: 25 nm.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Blue arrowheads: severing in a bare half helix immediately neighboring a cofilin cluster; green arrowheads: severing in bare zones more than half a helix away from cofilin clusters; white arrowheads: cofilin clusters. Z-scale: 0\u201312 nm. Scale bar: 25 nm.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04806/elife-04806-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Red arrowheads: severing in half helices in cofilin clusters; blue arrowheads: severing in a bare half helix immediately neighboring a cofilin cluster; white arrowheads: cofilin clusters. Z-scale: 0\u201312 nm. Scale bar: 25 nm.\n\n![Video 6.](https://cdn.elifesciences.org/articles/04806/elife-04806-media6.avi.jpg)\n\n**Video 6.:** Conditions: F buffer containing 1 mM ADP and 40 nM cofilin. Severing of actin filaments occurred within a cofilin cluster (at 53 s) and then at or near the boundary between a bare zone and another cofilin cluster (at 64.5 s). Imaged at 2 frames/s and played at 5 frames/s. Red, blue, and green arrowheads indicate severing in half helices in cofilin clusters, in a bare half helix immediately neighboring a cofilin cluster, and in bare zones more than half a helix away from cofilin clusters, respectively. White arrowheads: cofilin clusters. Z-scale was 0\u201312 nm. Related to Figure 6A.\n\n![Video 7.](https://cdn.elifesciences.org/articles/04806/elife-04806-media7.avi.jpg)\n\n**Video 7.:** Conditions: F buffer containing 1 mM ATP and 75 nM cofilin. Severing occurred at 42 s. Imaged at 2 frames/s and played at 5 frames/s. For color codes of the arrowheads, see the legend to Video 6. Z-scale was 0\u201312 nm. Related to Figure 6B.\n\n![Video 8.](https://cdn.elifesciences.org/articles/04806/elife-04806-media8.avi.jpg)\n\n**Video 8.:** Conditions: F buffer containing 1 mM ADP and 40 nM cofilin. Severing occurred at 28 s. Imaged at 2 frames/s and played at 5 frames/s. For color codes of the arrowheads, see the legend to Video 6. Z-scale was 0\u201312 nm. Related to Figure 6C.\n\n![Video 9.](https://cdn.elifesciences.org/articles/04806/elife-04806-media9.avi.jpg)\n\n**Video 9.:** To show more general view of severing events, in addition to the small number of representative cases shown in Videos 6\u20138, 10 different image sequences from different experiments were merged. Sequence numbers are shown in the first 10 frames of each sequence. For color codes of the arrowheads, see the legend to Video 6. Conditions: F buffer containing 1 mM ATP (sequences 1\u20136), 1 mM ADP (sequence 7\u20138) or 1 mM ATP + 10 mM Pi (sequence 9\u201310). The concentration of cofilin shown in this video was 75 nM, except in sequences 9 and 10, in which it was 300 and 150 nM, respectively. Z-scale was 0\u201312 nm. Related to Figure 6\u2014figure supplement 1.\n\n![Video 10.](https://cdn.elifesciences.org/articles/04806/elife-04806-media10.avi.jpg)\n\n**Video 10.:** In this video, seven different image sequences from different filaments and experiments were merged. Conditions: F buffer containing 1 mM ATP and 75 nM cofilin, except in sequence 3 in which cofilin concentration was 150 nM. For color codes of the arrowheads, see the legend to Video 6. Z-scale was 0\u201312 nm. Related to Figure 6\u2014figure supplement 2.\n\n![Video 11.](https://cdn.elifesciences.org/articles/04806/elife-04806-media11.avi.jpg)\n\n**Video 11.:** Four independent image sequences are merged. Conditions: F buffer containing 1 mM ATP and 0, 10 or 40 nM cofilin without His-tag. In this video, three data sets which represent three cases of the absence or presence of cofilin are sequentially shown and indicated before each sequence begins as (i) Control: Without Cofilin, (ii) 10 nM Cofilin (two different image sequences), and (iii) 40 nM Cofilin. Note that severing of actin filaments was not observed not only in the absence but also in the presence of 10 nM cofilin. In the presence of 40 nM cofilin, severing was infrequently observed. For color codes of the arrowheads, see the legend to Video 6. Images were taken at 0.5 frames/s, except in the presence of 40 nM cofilin they were recorded at 0.25 frames/s, and the video is played at 5 frames/s. Z-scale was 0\u201312 nm. Related to Figure 6\u2014figure supplement 3.\n\n![Video 12.](https://cdn.elifesciences.org/articles/04806/elife-04806-media12.avi.jpg)\n\n**Video 12.:** The first three quarter of this video were taken in F buffer containing 1 mM ATP and 1 \u00b5M cofilin, and the last one quarter was taken in the presence of 650 nM cofilin. In the presence of 1 \u00b5M cofilin, filaments were fully decorated along the length, and no severing was observed. In the presence of 650 nM cofilin, there were some bare zones, and severing occurred near the boundary of the bare zone and the cofilin clusters, regardless of the size of cofilin clusters. For color codes of the arrowheads, see the legend to Video 6. Images were taken at 2 frames/s and played at 5 frames/s. Z-scale was 0\u201312 nm. Related to Figure 6\u2014figure supplement 4.\n\nWe next quantitatively analyzed the severing positions of the filaments relative to the short cofilin clusters in the presence of 40\u2013200 nM cofilin (Figure 6D). Approximately 60% of severing events occurred inside the cofilin clusters, mostly within half helices neighboring bare zones. Severing also occurred in half helices in bare zones neighboring a cofilin cluster, which accounted for approximately 40% of severing events. Overall, \u223c80% of the severing events occurred within one-half of a helix on either side of the boundary between a bare zone and a cofilin cluster. Severing in bare zones far from cofilin clusters was very rare.\n\nIn the presence of 40 nM cofilin, the lowest concentration we used for quantitative severing assay, we observed a total of 22 cases of severing events in 31 actin filaments. Among those, 18 cases occurred in half helices immediately neighboring the boundary between a bare zone and a cofilin cluster, even though cluster formation was relatively rare at this concentration of cofilin. Three cases occurred in \u2018far\u2019 bare zones more than half a helix away from the boundary, and one occurred in an \u2018inner\u2019 cofilin cluster more than half a helix away from the boundary (Video 11).\n\nBased on these observations, we conclude that severing under the present experimental condition preferentially occurs near the boundary between a bare zone and a cofilin cluster, but not necessarily at the boundary. Considering the difference in spatial resolution, this conclusion is also consistent with that made by Suarez et al. (2011), who used fluorescence microscopy and concluded that severing occurs at the boundary between cofilin clusters and bare zones.\n\n## Discussion\n\nUsing HS-AFM to visualize wet samples with high-spatial and -temporal resolution, we were able to create an image of conformational changes in actin filaments induced by cofilin binding, including asymmetric changes in the helical twist on either side of a bound cofilin cluster, growth of the clusters toward the pointed-end, and the severing of filaments near the ends of cofilin clusters.\n\n### Unidirectional propagation of the cofilin-induced supertwisted conformation\n\nThe short helical pitch in the cofilin clusters was propagated to the immediately neighboring bare zone on the pointed-end side of the cluster. Since our current analysis method only measures heights and distances between peaks, we were unable to examine if the supertwisted structure returns to a normal state abruptly or gradually. Also, we were unable to determine the positions of the ends of cofilin clusters precisely above the spatial resolution of half helices, making it difficult to estimate accurately how far the supertwisting conformational changes propagate into neighboring bare zones. Nonetheless, the fact that the pitches of the neighboring half helices second from the cofilin clusters were nearly normal suggests that the effect does not propagate longer than one-half of a helix.\n\nThe neighboring bare zone on the barbed-end side of the cluster had slightly longer helical pitch than the control. Although a t-test indicated that the untwisting was statistically significant, we are not certain if it was an active process. If interactions between actin filaments and the lipid surface produced resistive force against local rotation of the filament, supertwisting in the cluster would induce passive, compensating untwisting of the nearby helix. If that is the case, the fact that actin filaments are not necessarily free to rotate in vivo suggests similar passive untwisting may occur in vivo as well. In any case, it is noteworthy that cofilin clusters induced distinctly asymmetric cooperative conformational changes in neighboring bare zones. Propagation of the supertwisted conformation from cofilin clusters to neighbor bare zones had been suggested by image analysis of electron micrographs of cofilin\u2013actin complexes (Galkin et al., 2001).\n\n### Growth of cofilin clusters is also unidirectional and independent on actin-bound nucleotides\n\nOur observation that the cofilin clusters grew in the pointed-end direction supports the conclusion of Galkin et al. (2001) that cofilin preferentially binds to the supertwisted segments of actin subunits. This tendency of cofilin clusters to grow unidirectionally was unaffected when most of the filament subunits carried ADP or ADP+Pi, demonstrating that the directional growth of cofilin clusters does not depend on a gradient of different nucleotide states on actin subunits within each filament. Instead, it presumably depends on asymmetric cofilin-induced conformational changes in the actin filaments, which is an intrinsic property of the polar structure of the actin filaments.\n\nThe rise of peaks and shortening of half helical pitches that accompanied the growth of cofilin clusters were sometimes rapid, but at other times slow and gradual (Figure 4). If we assume that the rise was due to simple addition of cofilin molecules at the two binding sites closest to the crossover point, and if the cofilin clusters grow in perfect synchrony along two strands of the double helix, then the crossover points should rise abruptly in one step. If, on the other hand, there is a time-lag between cofilin bindings at the two critical binding sites, due to delayed growth along one strand, for example, the rise would occur in two smaller discrete substeps. Indeed, in many cases, the rise of peaks appeared to occur in two discrete substeps (Figure 4), supporting this possibility. In other cases, however, the peaks rose gradually over the course of 40 s (e.g., P2 in Figure 4A), although we have no mechanistic explanation for those events.\n\nIn certain cases the next peak (P1 in the case shown in Figure 4A) only rose when the previous peak (P2) had reached a plateau, whereas in other cases the new peak (P2) started to rise while the previous one (P3) was still rising. This latter case is more consistent with the possibility that cofilin clusters do not necessarily grow in concert along the two strands, and the delay may sometimes exceed one-half of a helix.\n\nAnother uncertainty is whether the new cofilin molecule always binds to the vacant binding site immediately neighboring the cluster. If the unidirectional cluster growth to the pointed-end is driven by the shortened helical pitch on the pointed-end side of the cluster, the new molecule is likely to bind any of the vacant binding sites in the supertwisted, apparently, bare zone on the pointed-end side of the cluster. This view is consistent with the result of recent high-resolution single molecule fluorescence microscopic assays that showed that free cofilin molecules prefer to bind within 65 nm of an already bound cofilin molecule, but not necessarily to the site immediately neighboring the already bound molecule (Hayakawa et al., 2014). We thus speculate that there are vacant binding sites behind the advancing front of cofilin clusters, which are eventually filled by other cofilin molecules to form tight clusters, and that the advances are not necessarily in concert between the two strands of the double helix.\n\n### Severing\n\nIn the presence of cofilin, actin filaments are frequently severed at or near the boundary between cofilin clusters and bare zones, at least when examined at the spatial resolution of fluorescence microscopy (Suarez et al., 2011). That observation is consistent with the idea that severing preferentially occurs at sites of structural discontinuity, such as the boundary between supertwisted and normal helical pitches (Michelot et al., 2007; De La Cruz, 2009). An alternative view is that cofilin binding weakens longitudinal contacts between actin subunits within cofilin clusters and also in neighboring bare zones, but because bound cofilin bridges two actin subunits, strengthening interactions between them, severing occurs in nearby supertwisted bare zones (Galkin et al., 2001; Bobkov et al., 2002). Roughly 40% of the severing events in our AFM observations occurred at the boundary between a cluster and a bare zone or within the neighboring bare zone, which may be explained by these hypotheses. However, more than half of the severing events occurred within the cofilin clusters, albeit close to the cluster ends. One plausible explanation is that the scattered unoccupied cofilin binding sites near the ends of the cluster, discussed above, may be easy to break due to the lack of bridging cofilin molecules. Alternatively, if growth of cofilin clusters on one of the two filament strands lags the growth on the other, conformational stress may develop between the two strands, leading to breaks in the filament near the ends of cofilin clusters.\n\n### How many bound cofilin molecules are required for severing and cluster growth?\n\nPrevious biochemical (Andrianantoandro and Pollard, 2006) and simulation studies (De La Cruz, 2005; De La Cruz, 2009) suggested that one or a few bound cofilin molecules are sufficient to sever actin filaments. However, our AFM observations are more consistent with the view that efficient severing requires a cofilin cluster longer than one-half of a helix, since most of the severing events were observed within or very near cofilin clusters that were recognizable in our AFM images. The need of contiguously bound cofilin molecules for efficient severing is consistent with our earlier mutant analysis. Within filaments in solution, D11Q mutant actin subunits rapidly exchange bound ADP for ATP in solution. Consequently, most subunits within D11Q actin filaments have ATP bound, reducing their affinity for cofilin and protecting them from severing. Interestingly, cofilin was able to bind to copolymers of D11Q and wild-type actins, but severing was inefficient (Umeki et al., 2012), suggesting that contiguous clusters of cofilin-bound actin subunits are necessary for efficient severing activity.\n\nA related question is how many bound cofilin molecules are required to induce cooperative supertwisting conformational changes in actin filaments? Answering this question is technically difficult when the imaging power is not sufficient to see individual bound cofilin molecules, but our observations using a cofilin-rod fusion protein showed that one is not enough. Consistent with this view, previous simulation studies suggested that two cofilin molecules bound close to one another along an actin filament serve as a nucleus to initiate cooperative binding of cofilin to form a cluster (Ressad et al., 1998; Blanchoin and Pollard, 1999). Future high-resolution HS-AFM studies using cofilin fused with a rod or some other structural marker to make it visible with AFM will directly test those hypotheses.\n\nEven if a singly bound cofilin molecule cannot induce supertwisting of the helix or initiate cluster growth, it does not exclude the possibility that single bound cofilin molecules induce subtler, perhaps longer range, cooperative conformational changes, such as those indirectly detected through biophysical measurements (Dedova et al., 2004; Prochniewicz et al., 2005; Bobkov et al., 2006). Apparently cofilin is able to induce at least two distinct types of cooperative conformational changes: one that requires cluster formation, involves \u223c25% supertwisting of the helix, and propagates over half a helix toward the pointed-end of the filament; and a second type that singly bound cofilin molecules can induce which involves relatively subtle conformational changes, and propagates much longer. Simulation studies by De La Cruz and Sept (2010) suggest that there are two distinct states of cofilin\u2013actin complexes, which may be correlated with the two types of cooperative conformational changes we propose here.\n\n### Physiological implications of cofilin-induced unidirectional cooperative conformational changes in actin filaments\n\nCooperativity in the binding of cofilin to actin filaments could have multiple physiological implications. Generally speaking, cooperativity would amplify small changes in the input (concentration of active cofilin) to a larger difference in output (cluster formation and severing). In addition, the cellular concentration of cofilin is lower than that of polymerized actin, and cooperativity would be a useful means of disrupting selected filaments under those conditions (Pollard et al., 2000).\n\nSecond, we propose that the propagation of cofilin-induced conformational changes into neighboring cofilin-unbound zones of actin filaments would give cofilin an advantage in competition with other ABPs, once a small cofilin cluster is established as a foothold. For example, cofilin is implicated in severing and depolymerization of aged actin filaments in lamellipodia. However, those actin filaments are often bound with tropomyosin (Gunning et al., 2008), which inhibits binding of cofilin and protects the filaments from cofilin's severing and depolymerizing activities (Bernstein and Bamburg, 1982; Ono and Ono, 2002). If cofilin forms a small cluster at a vacant site on an actin filament that is otherwise decorated and protected by tropomyosin, the cluster would induce, or apply conformational stress to induce, supertwisting on the neighboring tropomyosin-bound segment on the pointed-end side. This would accelerate dissociation of tropomyosin, resulting in faster growth of the cofilin cluster than when cluster growth needed to wait for spontaneous dissociation of neighboring tropomyosin molecules. Furthermore, that cluster growth is directed only to the pointed-end may be beneficial in selective disassembly of aged actin filaments.\n\nWithin cells, formin remains bound to the barbed-end when it catalyzes filament elongation. This causes relative rotation between the formin molecule and the filament (Mizuno et al., 2011). Thus, if the formin molecule and the filament are not free to rotate, the filament will be untwisted, and if cofilin has a lower affinity for untwisted actin filaments, rapidly polymerizing actin filaments in a formin-dependent manner will be protected from severing by cofilin (Mizuno and Watanabe, 2012). It should be noted, however, that formin bound to the barbed-end of an actin filament also allosterically changes the structure of the filament (Bugyi et al., 2006), which may interfere with the interactions of the filament with cofilin, independent of mechanically forced untwisting of the filament helix.\n\nSharma et al. (2012) discovered that the untwisted conformation of actin filaments induced by a drebrin N-terminal fragment propagates to neighboring bare zones; however, their findings seem to indicate that this propagation is in both directions from the drebrin clusters, though the authors did not address that point. It thus appears that there are multiple forms of ABP-induced cooperative conformational changes to actin filaments that propagate into bare zones, which implies there are also multiple physiological functions for such cooperative conformational changes to actin filaments.\n\n## Materials and methods\n\n### Proteins\n\ncDNA encoding human cofilin 1 was amplified from a human cDNA library using PCR with primers 5\u2032-ggtaccatggcctccggtgt and 5\u2032-tctagacaaaggcttgccctcca. After confirmation of its sequence, the amplified DNA fragment was subcloned into pColdI expression vector (Takara Bio, Otsu, Japan) at the XbaI and KpnI sites. The pColdI vector had been modified to contain a TEV cleavage site between the His tag and the multi-cloning sites, so that the amino acid sequence near the N-terminus was MNHKVHHHHHHIEGRHMENLYFQGTMASGVAVS\u2026 (italics indicate the TEV cleavage site).\n\nThe cofilin-rod fusion gene was constructed by cloning the cDNA encoding the first half of the Dictyostelium \u03b1-actinin rod downstream of the cofilin gene in pColdITEV. The amino acid sequence at the junction of the two proteins was \u2026SAVISLEGKPLEQTKSDYLKRA\u2026, and the C terminal sequence was \u2026QKIEDSLVSR (italics show extra amino acid residues derived from recognition sites for restriction enzymes). The first half of the Dictyostelium \u03b1-actinin rod, corresponding to amino acid residues 265\u2013505 of the parent molecule, forms a monomeric12-nm long rod-like structure (Yan et al., 1993) and has been used as an artificial lever arm of myosin motors (Anson et al., 1996).\n\nThe proteins were expressed in Escherichia coli, purified using Ni-NTA affinity chromatography, and dialyzed against a buffer containing 10 mM HEPES, pH 7.4, 50 mM KCl, 0.1 mM DTT, and 0.01% NaN3 overnight at 4\u00b0C. After concentrating with a centrifugal concentrator (Amicon Ultra 4), aliquots were snap-frozen in liquid nitrogen and stored at \u221280\u00b0C. Unless otherwise stated, the experiments used those His-tagged cofilin or cofilin-rod proteins. However, we repeated some key experiments after removing the His-tag by treatments with TEV protease and obtained qualitatively similar results. These experiments included asymmetric conformational changes of actin filaments on either side of a cofilin cluster, unidirectional growth of cofilin clusters in the pointed-end direction, and frequent severing of filaments near the boundary between a bare zone and a cofilin cluster. Cofilin with and without His-tag bound to actin filaments at a 1:1 molar ratio with a similar affinity (Figure 3\u2014figure supplements 1 and 2). Cofilin-rod with and without His-tag also did not sediment on its own, then bound to actin filaments with affinities similar to cofilin without the rod fusion (Figure 3\u2014figure supplement 3).\n\nRabbit skeletal muscle actin and chymotryptic subfragment-1, S1, were purified as described previously (Spudich and Watt, 1971; Margossian and Lowey, 1982) and stored in liquid nitrogen. Some experiments used G-actin that was further purified by gel filtration column chromatography, yielding identical results.\n\nBefore use, an aliquot of frozen stock was thawed for 1 hr on ice and clarified by ultracentrifugation at 80,000 rpm for 5 min at 5\u00b0C. Protein concentration was then measured using an Advanced Protein Assay (Cytoskeleton, Denver, CO), using calibrated skeletal actin as the standard.\n\n### High-speed atomic force microscopy\n\nWe used a laboratory built high-speed atomic force microscope (HS-AFM) as described previously (Ando et al., 2013). HS-AFM imaging was carried out in the tapping mode with small cantilevers (BL-AC10DS-A2, Olympus, Tokyo, Japan) whose spring constant, resonant frequency in water, and quality factor in water were \u223c0.10 N/m, \u223c400 kHz, and \u223c2, respectively. The probe tip was grown on the original tip end of a cantilever through electron beam deposition and was further sharpened using a radio frequency plasma etcher (PE-2000, South Bay Technology, Redondo Beach, CA) under an argon gas atmosphere (typically at 180 mTorr and 15 W for 3 min). During HS-AFM imaging, the free-oscillation peak-to-peak amplitude of the cantilever (A0) was set to \u223c2 nm, and the feedback amplitude set point was set at more than 0.9A0. Details of the method for HS-AFM imaging are described elsewhere (Uchihashi et al., 2012).\n\n### Mica-supported lipid bilayer\n\nWe prepared small unilamellar vesicles (SUVs) and mica-supported lipid bilayer as described previously (Yamamoto et al., 2010; Uchihashi et al., 2012). The typical lipid composition was 1,2-dipamitoyl-sn-glycero-3-phosphocholine (DPPC) and 1,2-dipalmitoyl-3-trimethylammonium-propane (DPTAP) at a weight ratio of 9:1. The lipids were purchased from Avanti Polar Lipids (Alabaster, AL). SUVs were dispersed in Milli-Q water at 2 mg/ml and stocked at \u221220\u00b0C. Before use, the SUVs were diluted in 5 mM MgCl2 to 0.5 mg/ml and sonicated with a bath sonicator (AUC-06L, AS ONE, Osaka, Japan) for 1 min. An aliquot of the sonicated SUVs was deposited on the surface of freshly cleaved mica, which had been glued onto a sample stage beforehand, and incubated for more than 3 hr at room temperature (24\u201326\u00b0C) in a humid sealed container to avoid surface drying. Up to 10 sample stages were prepared simultaneously and stored in the sealed container.\n\n### HS-AFM imaging\n\nBefore deposition of actin filaments, the surface of the sample stage was rinsed with a large amount of Milli-Q water (\u223c20 \u00b5l \u00d7 five times) to remove excess SUVs and lipid bilayers. Actin filaments were then deposited onto the lipid bilayer using one of the following methods.\n\nG-actin (5\u201310 \u00b5M) was polymerized in F buffer (40 mM KCl, 20 mM PIPES\u2013KOH, pH 6.8, 1 mM MgCl2, 0.5 mM EGTA, 0.5 mM DTT) containing 1 mM ATP for 30 min on ice. The resultant actin filaments were diluted to 0.5\u20131.0 \u03bcM in F buffer containing 1 mM ATP. Water on the lipid bilayer on a sample stage was replaced with 1\u20132 \u00b5l of F buffer containing 1 mM ATP, to which 2 \u00b5l of the diluted actin solution was added. After 5\u201310 min of incubation at room temperature, unattached actin filaments were removed by exchanging the solution with 50 \u00b5l of one of the four different F buffer-based observation buffers each containing (i) 1 mM ATP, (ii) 0.1 mM ATP and 1 mM ADP, (iii) 1 mM ADP, 5 U/ml hexokinase, and 10 mM glucose, and (iv) 1 mM ADP and 10 mM Pi. In the case (iii), incubation was continued for 30 min to ensure that all actin subunits within the filaments carried ADP.\n\nAlternatively, G-actin (20 \u00b5M) was polymerized in F buffer containing 1 mM ATP and 30 mM MgCl2 for 1 hr at room temperature. After introduction of this solution to the sample stage and 10 min of incubation at room temperature, unattached actin filaments were removed by gently exchanging the solution with F buffer containing 1 mM ATP and 30 mM MgCl2.\n\nFinally, the sample stage was mounted to the z-scanner of a HS-AFM apparatus and immersed in a liquid cell containing the same observation buffer used in the last step, and HS-AFM imaging was performed.\n\nTo follow binding of cofilin to actin filaments, 6 \u00b5l of cofilin diluted in the observation buffer was injected into the observation cell during AFM imaging. In some experiments, S1 was added in the observation buffer in the concentration of 20 nM (in cases [i], [ii], and [iii]) or 150 nM (in case [iv]) to identify the polarity of actin filaments.\n\n### Data analyses of HS-AFM image\n\nHS-AFM images were viewed and analyzed using the laboratory built software, Kodec4.4.7.39. In brief, a low-pass filter to remove spike noise and a flattening filter to make the xy-plane flat were applied to individual images. The position and height of the peak within each half helix were determined semi-automatically using the following steps. First, the most probable highest point near a crossover point was selected manually. Second, the actual highest point was automatically determined by searching a 5 \u00d7 5 pixel area (typically 7.5 \u00d7 7.5 nm2) around the selected point. Third, the peak position was refined based on a center of mass calculation using information on the heights and positions within the 5 \u00d7 5 pixel area around the selected point, after which the refined peak position and height were used to represent the peak of the half helix.\n\nThe Kodec4.4.7.39 for HS-AFM image viewing and analysis software is coded in Visual C# (Visual Studio 2010, Microsoft, USA) and is available as Source code 1. All filters and subroutines for image analysis used in the present study are included in the software. We confirmed the compatibility between the software and computers operated with Windows 7 or 8. Installer of the software, Kodec4_Setup.msi, is available in the subfolder of \u2018Kodec 4.4.7.39\\Setup\\Release\u2019. This software should be cited as: Sakashita M, M Imai, N Kodera, D Maruyama, H Watanabe, Y Moriguchi, and T Ando. 2013. Kodec4.4.7.39.\n\n### Electron microscopy\n\nActin filaments were prepared by polymerization of G-actin (20 \u00b5M) in F buffer containing 40 mM KCl, 20 mM PIPES, pH 6.8, 1 mM MgCl2, 0.5 mM EGTA, 0.5 mM DTT, and 1 mM ATP for 30 min on ice. Cofilin or cofilin-rod was added to 1 \u00b5M actin filaments in 50 \u00b5l of F buffer at a molar ratio of 1:2 or 1:1, and the solutions were mixed by gentle pipetting, after which the mixture was incubated for 3\u20135 min at room temperature. This mixture was then added to F buffer containing sodium phosphate (pH 6.8) so that the concentration of actin was 0.5\u20131 \u00b5M and that of Pi was 5 mM, and a drop of this solution was immediately placed on a copper grid. The samples were fixed and negatively stained using a solution containing 1% uranyl acetate and 20 \u00b5g/ml bacitracin (Katayama, 1989). The fixed samples were dried under an incandescent lamp to form films over the holes of the grid. Electron microscopic data were then acquired using a Hitachi H-7650 transmission electron microscope.\n",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "286aca02-96df-4306-bbe0-8f7e6babbea6",
+      "submission_id": "a0da4d9a-74b3-4019-bb3f-8f6a81224b6b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brad J Nolen, Institute of Molecular Biology, University of Oregon , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04806.032](https://doi.org/10.7554/eLife.04806.032)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCofilin-induced unidirectional cooperative conformational changes in actin filaments revealed by high-speed AFM\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor), a guest Reviewing editor, and 3 reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Brad Nolen (Reviewing editor); Roberto Dominguez and Thomas Pollard (peer reviewers). A further reviewer remains anonymous.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nHere, Ngo et al., applied high-speed AFM to visualize interactions of cofilin with actin filaments. This method offers unprecedented resolution for studying the process in real time, so there is no question about the technical advance over previous methods. They show that cofilin forms clusters along actin filaments and discovered that the shortened helical pitch propagates to the neighboring 'cofilin-free' zone towards the filament pointed end. Furthermore, they demonstrate that cofilin clusters grew unidirectionally towards the filament pointed end. Finally, they show that severing most frequently occurs within the cofilin clusters (>50%), while 1/3 of severing events were observed to occur near these clusters. Because of the critical importance of cofilin severing in nearly all actin cytoskeleton activities, these findings have general relevance and interest for the readers of eLife. However, additional experiments are required to support the authors' conclusions:\n\n1) Control experiments are needed to validate the cofilin constructs used. Specifically, the data in Figure 3\u2013figure supplement 2, should be replotted as binding density versus free cofilin, and the figure should include binding isotherms for wild type cofilin, both with His-tag cleaved and with His tag uncleaved. The authors should indicate the molar concentrations of components used instead of the ratios in Figure 3\u2013figure supplement 1 and show a control with cofilin-rod alone at the maximum concentration used in the assay to show that this protein is not sedimenting on its own. The authors also should clarify why at 1:1, there is more actin in the supernatant than in the pellet, and then at 2:1 most of the actin goes back to being in the pellet.\n\n2) The authors should repeat experiments done with a mix of Pi and ATP with only Pi. In Figures 4 and 5, adding Pi is reasonable, because it will result in ADP-Pi -bound subunits. However, there is no reason to add ATP because the bound nucleotide does not exchange on polymerized actin, and addition of ATP makes it impossible to determine the orientation of filaments since ATP dissociates S1. Therefore, the authors should repeat this experiment with Pi and no ATP, so that S1 decoration and filament orientation can be determined. In addition, the authors should clarify the issue of the nucleotide state of the filament throughout the manuscript, including in setting up the rationale for the experiments and in the interpretation of the results. For example, in the Discussion section, the authors state that \u201cThis tendency of cofilin clusters to grow unidirectionally was unaffected when most of the filament subunits carried ADP or either ATP or ADP+Pi\u201d, but the filaments would not have bound ATP under any of the conditions that they tested.\n\n3) The authors should explicitly specify in the figure legends the concentrations of cofilin used in the severing assay. If the concentrations are not at or near the optimal severing concentration for cofilin (Andrianantoandro, 2006), the severing experiments should be repeated at the optimal concentration. In addition, severing data should also be more precisely analyzed to indicate where severing occurs. The new analysis should allow the authors to make statements about where within the cluster severing is occurring (e.g. closer to the ends or evenly distributed throughout the clusters). The authors should also clarify how many severing events were analyzed (i.e. does the 'frequency' correspond to absolute numbers of the severing events?). Disagreement with previous severing models/results should be more clearly addressed.\n\nThe authors should also address the following issues in the revised manuscript:\n\n1) The strategy for the alpha-actinin-cofilin fusion construct should be better explained. Please be more specific about the region of alpha-actinin that was fused (what is meant by \u201chalf of an a-actinin rod\u201d?) State what amino acid numbers were used. Cite literature that supports the argument that the construct used will form a 6 angstrom long rod. Also, please address the possibility that the fusion protein could possibly form antiparallel dimers via spectrin repeat interactions.\n\n2) The observation that the conformational change in the filament spreads asymmetrically is an important result but is unexpected based on thermodynamic considerations. The authors are encouraged to repeat the analysis of this data using a blinded observer.\n\n3) The extent of the propagation of the supertwisted conformation from a cofilin cluster to the neighboring bare zone at the pointed end should be precisely described. How many repeats become supertwisted after a cofilin cluster? Also, is this a structural effect that decreases gradually or abruptly? The authors are encouraged to quantitatively address these questions.\n",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88d82ada-1fd8-4467-875f-2b87c69c636b",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C1",
+      "claim": "High-speed atomic force microscopy was employed to observe structural changes in actin filaments induced by cofilin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "High-speed atomic force microscopy was employed to observe structural changes in actin filaments induced by cofilin binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as the primary method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "f9fffa6f-0896-4595-95aa-5e22ba47ec63",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C2",
+      "claim": "Cofilin formed clusters along actin filaments, where the filaments were 2-nm thicker compared to control filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous electron and fluorescence microscopic studies, cofilin formed clusters along actin filaments, where the filaments were 2-nm thicker and the helical pitch was \u223c25% shorter, compared to control filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is directly stated in the abstract and supported by AFM measurements shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "9b0184f4-3a08-45ee-8712-f786d658a5e1",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C3",
+      "claim": "Cofilin binding shortened the helical pitch by approximately 25% compared to control filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous electron and fluorescence microscopic studies, cofilin formed clusters along actin filaments, where the filaments were 2-nm thicker and the helical pitch was \u223c25% shorter, compared to control filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and confirmed by measurements in Figure 1E showing a reduction from 36.8 nm to 26.9 nm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "f7a35193-e764-4f16-a0f0-2cadb6dc3bfe",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C4",
+      "claim": "The shortened helical pitch was propagated to the neighboring bare zone on the pointed-end side of the cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the shortened helical pitch was propagated to the neighboring bare zone on the pointed-end side of the cluster, while the pitch on the barbed-end side was similar to the control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by data in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "7650177b-3771-40ae-a623-d793eb312ea8",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C5",
+      "claim": "The pitch on the barbed-end side of cofilin clusters was similar to the control.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the shortened helical pitch was propagated to the neighboring bare zone on the pointed-end side of the cluster, while the pitch on the barbed-end side was similar to the control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by measurements in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "386f24bd-d25b-4c86-a41b-49b3d8433a58",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C6",
+      "claim": "Cofilin clusters induce distinctively asymmetric conformational changes in filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cofilin clusters induce distinctively asymmetric conformational changes in filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the abstract based on the observed differences in helical pitch on either side of cofilin clusters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "f6572cc8-c2ef-4a26-a579-66eef46a2f84",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C7",
+      "claim": "Cofilin favors actin structures with a shorter helical pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the idea that cofilin favors actin structures with a shorter helical pitch, cofilin clusters grew unidirectionally toward the pointed-end of the filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an interpretation of the observed unidirectional growth pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "110a017a-7ba6-4ef5-9b01-e6b9dcd14119",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C8",
+      "claim": "Cofilin clusters grew unidirectionally toward the pointed-end of the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the idea that cofilin favors actin structures with a shorter helical pitch, cofilin clusters grew unidirectionally toward the pointed-end of the filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by observations in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "1b7c1bbe-7392-4d24-b95d-23f31de5bebd",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C9",
+      "claim": "Severing was often observed near the boundaries between bare zones and clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Severing was often observed near the boundaries between bare zones and clusters, but not necessarily at the boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and quantified in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "082b9da7-cc94-401a-9e03-547dacca1f76",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C10",
+      "claim": "Severing was not necessarily observed at the boundaries between bare zones and clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Severing was often observed near the boundaries between bare zones and clusters, but not necessarily at the boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the distribution of severing events shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "8cf2e936-a081-4451-ba19-cfa0558301c0",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C11",
+      "claim": "Actin filaments are involved in muscle contraction, amoeboid movement, cytokinesis, intracellular transport, and transcriptional regulation within the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin filaments are involved in a variety of important functions in eukaryotic cells, including muscle contraction, amoeboid movement, cytokinesis, intracellular transport, and transcriptional regulation within the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about actin functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "96fec7cc-296a-4e79-b95f-6a434a9b0b37",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C12",
+      "claim": "Cofilin plays essential roles in continuous extension of lamellipodia by severing actin filaments to promote filament depolymerization or to initiate polymerization from new barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "During migration of amoeboid cells, for instance, cofilin plays essential roles in continuous extension of lamellipodia by severing actin filaments to promote filament depolymerization or to initiate polymerization from new barbed ends (reviewed by Bravo-Cordero et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "ddde06f2-fda3-46ec-afc4-35549ed46865",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C13",
+      "claim": "Three independent biochemical mechanisms are known to inhibit cofilin activity: phosphorylation of Ser3, sequestration to phosphatidylinositol 4,5-bisphosphate (PIP2) in plasma membrane, and lower pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Three independent biochemical mechanisms are known to inhibit cofilin activity; phosphorylation of Ser3, sequestration to phosphatidylinositol 4,5-bisphosphate (PIP2) in plasma membrane, and lower pH (Bernstein and Bamburg, 2010; Bravo-Cordero et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "4598a885-9869-4ee4-bae1-41cdf5623dbd",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C14",
+      "claim": "Overexpression of constitutively active S3A cofilin did not inhibit motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, overexpression of constitutively active S3A cofilin did not inhibit motility (Endo et al., 2003; Popow-Wozniak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "ad2daca2-d260-4e89-86c2-cd2779e51876",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C15",
+      "claim": "Biochemical signaling is not sufficient to explain how cofilin activities are properly regulated spatially and temporally in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, biochemical signaling is not sufficient to explain how cofilin activities are properly regulated spatially and temporally in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the introduction based on the cited evidence about S3A cofilin.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "9cd040d9-6f01-43b7-b4f3-1bec9158cebf",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C16",
+      "claim": "Dense binding of cofilin shortens the helical pitch of actin filaments by 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, dense binding of cofilin shortens the helical pitch of actin filaments by 25% (McGough et al., 1997; Galkin et al., 2001; Sharma et al., 2011), and time-resolved phosphorescence anisotropy (Prochniewicz et al., 2005) and differential scanning calorimetry (Dedova et al., 2004; Bobkov et al., 2006) showed that one molecule of bound cofilin changes the structure of \u223c100 actin subunits within a filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "84a2f6c2-8f12-4a9e-9312-ec09c8c4d76e",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C17",
+      "claim": "One molecule of bound cofilin changes the structure of approximately 100 actin subunits within a filament.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, dense binding of cofilin shortens the helical pitch of actin filaments by 25% (McGough et al., 1997; Galkin et al., 2001; Sharma et al., 2011), and time-resolved phosphorescence anisotropy (Prochniewicz et al., 2005) and differential scanning calorimetry (Dedova et al., 2004; Bobkov et al., 2006) showed that one molecule of bound cofilin changes the structure of \u223c100 actin subunits within a filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to biophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "018dc850-1db3-4f27-94d4-1c3496657663",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C18",
+      "claim": "Binding of cofilin to actin filaments is cooperative.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, binding of cofilin to actin filaments is cooperative (Hawkins et al., 1993; Hayden et al., 1993; McGough et al., 1997; De La Cruz, 2005; Hayakawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "126a7514-42ae-4cf4-a7ee-d2a4fda13c99",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C19",
+      "claim": "Right-handed double helical filaments were clearly visualized using HS-AFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Right-handed double helical filaments were clearly visualized (Figure 1), as in earlier reports (Weisenhorn et al., 1990; Schmitz et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 1 and citations to earlier AFM studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "67633ad8-664a-49ed-9d6e-e41a7ac686e8",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C20",
+      "claim": "The thickness of control actin filaments was 8.6 \u00b1 0.8 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis indicated that the height of those peaks, or the thickness of the filaments, was 8.6 \u00b1 0.8 nm (average \u00b1 SD), and the spacing between the peaks, or half helical pitch, was 36.8 \u00b1 4.3 nm (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by measurements shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "775a334e-4705-42b2-8879-0e3495ac24d6",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C21",
+      "claim": "The half helical pitch of control actin filaments was 36.8 \u00b1 4.3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis indicated that the height of those peaks, or the thickness of the filaments, was 8.6 \u00b1 0.8 nm (average \u00b1 SD), and the spacing between the peaks, or half helical pitch, was 36.8 \u00b1 4.3 nm (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by measurements shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "d8364ea7-c112-4dc1-b239-df72052b689a",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C22",
+      "claim": "The measured values of filament thickness and half helical pitch are consistent with previously reported structural data.",
+      "claim_type": "EXPLICIT",
+      "source": "These values, which are consistent with previously reported structural data (Hanson and Lowy, 1963; Hanson, 1973; Egelman et al., 1982), will hereafter be referred to as normal height and normal half helical pitch, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to earlier structural studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "1c2e06f3-293d-4755-bc64-9d2b32ecb991",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C23",
+      "claim": "The distribution of half helical pitches ranged from approximately 26 nm to approximately 45 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of half helical pitches ranged from \u223c26 nm to \u223c45 nm and was well fit by a normal distribution with a standard deviation of 4.3 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on measurements from AFM images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "13a83507-f59c-4c77-98d5-08e42112d429",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C24",
+      "claim": "The distribution of half helical pitches was well fit by a normal distribution with a standard deviation of 4.3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of half helical pitches ranged from \u223c26 nm to \u223c45 nm and was well fit by a normal distribution with a standard deviation of 4.3 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on statistical analysis of the measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "35afc19a-4d1b-43ba-bf4e-1944d79dbf8e",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C25",
+      "claim": "Actin filament paracrystals were prepared in the presence of 30 mM MgCl2.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the overall magnitude of the measurement errors, we prepared paracrystals of actin filaments in the presence of 30 mM MgCl2 (Figure 1C) (Hanson, 1973).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1C, with a citation to the method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "a165c35d-7a0b-44fb-930b-aba9b2df7121",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C26",
+      "claim": "The distribution of half helical pitches of paracrystals had a mean of 36.5 nm and standard deviation of 3.0 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the half helical pitches of the paracrystals measured under the same conditions was narrower than that of free filaments, with a mean of 36.5 nm and standard deviation of 3.0 nm (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "2362825b-b9f0-4b2f-8934-9308f25d4362",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C27",
+      "claim": "Peak heights within long cofilin clusters showed a single distribution of 10.6 nm \u00b1 1.0 nm, approximately 2 nm taller than the control filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak heights within long cofilin clusters (longer than eight consecutive half helices) showed a single distribution of 10.6 nm \u00b1 1.0 nm, approximately 2 nm taller than the control filaments (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by measurements shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "b276437a-d88a-4f85-8a7a-48b07a750f4a",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C28",
+      "claim": "The increased height of cofilin-decorated filaments is consistent with electron microscopic analysis showing filaments fully decorated with cofilin are approximately 2.3-nm thicker than control filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with electron microscopic analysis (Galkin et al., 2011), which showed that filaments fully decorated with cofilin are \u223c2.3-nm thicker than control filaments due to the presence of cofilin molecules (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by a citation and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "dc092aa9-e735-433e-a225-186c5894d23e",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C29",
+      "claim": "Within long cofilin clusters, both actin strands are homogeneously bound with cofilin molecules.",
+      "claim_type": "IMPLICIT",
+      "source": "Moreover, the height distribution was fit well by a single normal distribution, which suggests that within those long cofilin clusters, both actin strands are homogeneously bound with cofilin molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the height distribution is fit by a single normal distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "c5f9c26f-cde7-4082-9e6b-7e2fd2ae7db4",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C30",
+      "claim": "Cofilin binding shortened the half helical pitch by 27% to 26.9 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Cofilin binding shortened the half helical pitch by 27% to 26.9 nm (Figure 1E), which is again consistent with earlier electron microscopic (McGough et al., 1997; Galkin et al., 2001) and AFM analyses (Sharma et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 1E and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "76827506-3a94-4605-8ab8-502e21f6c64c",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C31",
+      "claim": "The standard deviation of the distribution of half helical pitches of fully cofilin-decorated filaments was 3.8 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard deviation of the distribution of half helical pitches of the fully cofilin-decorated filaments was 3.8 nm, and subtracting the maximum possible measurement error yielded a standard deviation of 2.3 nm or larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on statistical analysis of measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "4dae0a76-1e9a-44a2-9b94-61aeda1c8d79",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C32",
+      "claim": "Cofilin binding restricts torsional movements of the filaments within cofilin clusters.",
+      "claim_type": "IMPLICIT",
+      "source": "This value is smaller than that of the control filaments (3.1 nm) and suggests that cofilin binding restricts torsional movements of the filaments within cofilin clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of standard deviations between control and cofilin-decorated filaments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "b37d8aad-0c7c-4ecc-9a8c-7709828f407c",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C33",
+      "claim": "The half helical pitch in the apparently bare section on the pointed-end side of the cofilin cluster was short.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that the half helical pitch of the bare zone on the pointed-end side of the cofilin cluster was short, while that on the barbed-end side was slightly longer than the normal pitch (Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "69e7361f-54a8-44c3-9862-c35aa34db7f1",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C34",
+      "claim": "The half helical pitch on the barbed-end side of cofilin clusters was slightly longer than the normal pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that the half helical pitch of the bare zone on the pointed-end side of the cofilin cluster was short, while that on the barbed-end side was slightly longer than the normal pitch (Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "f9beb4a1-0e86-47a4-a30d-58cff01f95d6",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C35",
+      "claim": "The differences in the mean half helical pitches between the first neighbor bare zone on either side of the cluster and the control filaments are statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Student's t-test indicated that the differences in the mean half helical pitches between the first neighbor bare zone on either side of the cluster and the control filaments are statistically significant (p < 0.00001 and p < 0.001 for pointed-end and barbed-end side, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "e79dbb62-e0aa-4af3-964d-bab4ab9dff64",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C36",
+      "claim": "Pitches of the neighboring half helices second from the cofilin clusters were nearly normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Pitches of the neighboring half helices second from the cofilin clusters were nearly normal (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "7c9062f2-2209-4a87-9551-acc0adcd24f4",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C37",
+      "claim": "A cofilin-rod fusion protein was engineered with the N-terminal half of the rod domain of \u03b1-actinin attached to the C-terminus of cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore engineered a fusion protein in which the N-terminal half of the rod domain of \u03b1-actinin was attached to the C-terminus of cofilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "ae657e6a-7a70-49b4-a6b6-69e4665045df",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C38",
+      "claim": "Clusters of cofilin-rod showed a half helical pitch approximately 25% shorter than the bare zones, similar to control cofilin molecules bound to actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "In electron micrographs of negatively stained specimens (Figure 3A), as well as in HS-AFM images (Video 1 and Figure 3\u2014figure supplement 4), we were able to see clusters of cofilin-rod with a half helical pitch \u223c25% shorter than the bare zones, which is similar to control cofilin molecules bound to actin filaments (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 3A, Video 1, and Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "c048821e-1706-48af-99b1-d9fd23a8bb2c",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C39",
+      "claim": "Rod-like structures observed sticking out from apparently bare sections of filaments are most likely the rod portions of cofilin-rod molecules bound sparsely along the filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Rod-like structures were often observed to stick out from apparently bare sections of the filaments (Figure 3B). These are most likely the rod portions of the cofilin-rod molecules bound sparsely along seemingly bare sections of the filaments, because their length was \u223c10 nm, which is expected for half an \u03b1-actinin rod (Yan et al., 1993; Anson et al., 1996), and because similar rod-like structures were rarely observed in control images of cofilin added to actin filaments (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 3B, Figure 3C, and citations about rod length.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "759e960e-5393-406d-9692-87cf1bdcde0f",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C40",
+      "claim": "The helical pitches around apparently singly bound cofilin-rod molecules did not significantly differ from the control helical pitch measured in electron micrographs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the helical pitches around the apparently singly bound cofilin-rod molecules (36.0 \u00b1 1.0 nm, n = 5) did not significantly differ from the control helical pitch (36.3 \u00b1 1.0 nm, n = 8) measured in electron micrographs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on measurements from electron micrographs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "9ddf143e-88c2-4236-8589-2b26a2534993",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C41",
+      "claim": "A single cofilin molecule cannot induce conformational changes that involve detectable changes in helical pitch when it binds to bare sections of the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a single cofilin molecule cannot induce conformational changes, either symmetric or asymmetric, that involve detectable changes in helical pitch when it binds to bare sections of the filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Results section based on the observations of singly bound cofilin-rod.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "cdb83a6d-0273-48c1-ba0d-0918b28e888a",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C42",
+      "claim": "Real time AFM imaging taken at 1.5 or 2 frames/s enabled following the growth of individual cofilin clusters along actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Real time AFM imaging taken at 1.5 or 2 frames/s enabled us to follow the growth of individual cofilin clusters along actin filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the experimental capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "e17379f0-77d7-47b9-b044-c87258057c07",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C43",
+      "claim": "The directional growth of cofilin clusters toward the pointed-end was observed in actin filaments with homogenous nucleotide states.",
+      "claim_type": "EXPLICIT",
+      "source": "HS-AFM observations after the addition of 20 nM S1 and 75 nM cofilin or 150 nM S1 and 900 nM cofilin demonstrated that, in both cases, the growth of cofilin clusters was primarily to the pointed-end direction (Figure 4B and Video 4, and Figure 4C and Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figures 4B, 4C, Videos 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "33f08b76-7d35-41fc-ade4-9c2486fd3802",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C44",
+      "claim": "Cofilin binds preferentially to actin subunits carrying ADP, compared to those carrying ATP or ADP and Pi.",
+      "claim_type": "EXPLICIT",
+      "source": "Cofilin binds preferentially to actin subunits carrying ADP, compared to those carrying ATP or ADP and Pi (Carlier et al., 1997; Blanchoin and Pollard, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "b78f090c-c675-4aa3-b4b0-f6e946a28480",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C45",
+      "claim": "The rate of formation and growth of cofilin clusters depended on the nucleotide state of actin subunits as well as the concentration of cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of formation and growth of cofilin clusters depended on the nucleotide state of actin subunits as well as the concentration of cofilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on observations under different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "d0a0ac66-af90-459d-b5fb-32daeab13991",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C46",
+      "claim": "Severing was often observed between 40 and 200 nM cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "Severing was often observed between 40 (Video 12 and Figure 6\u2014figure supplement 4) and 200 nM cofilin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Video 12 and Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "0046372d-5a39-490a-a01e-3ba3ec2c103c",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C47",
+      "claim": "Approximately 60% of severing events occurred inside the cofilin clusters, mostly within half helices neighboring bare zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 60% of severing events occurred inside the cofilin clusters, mostly within half helices neighboring bare zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on quantitative analysis of severing positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "c92f63c8-83fe-4e86-90d6-a0f4c3628c77",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C48",
+      "claim": "Severing also occurred in half helices in bare zones neighboring a cofilin cluster, which accounted for approximately 40% of severing events.",
+      "claim_type": "EXPLICIT",
+      "source": "Severing also occurred in half helices in bare zones neighboring a cofilin cluster, which accounted for approximately 40% of severing events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on quantitative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "a6beb9c9-8815-4951-bb6b-44cb926a51f7",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C49",
+      "claim": "Overall, approximately 80% of the severing events occurred within one-half of a helix on either side of the boundary between a bare zone and a cofilin cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, \u223c80% of the severing events occurred within one-half of a helix on either side of the boundary between a bare zone and a cofilin cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on quantitative analysis of severing positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "dc700625-e73b-485f-8531-e40d29f6c0d5",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C50",
+      "claim": "Severing in bare zones far from cofilin clusters was very rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Severing in bare zones far from cofilin clusters was very rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "3e09e4f0-72cb-4f4e-8232-2f22fa31dce1",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C51",
+      "claim": "Severing under the present experimental condition preferentially occurs near the boundary between a bare zone and a cofilin cluster, but not necessarily at the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, we conclude that severing under the present experimental condition preferentially occurs near the boundary between a bare zone and a cofilin cluster, but not necessarily at the boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Results section based on the severing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "b2f7ddca-ef31-4e1f-891e-342e0a29b17c",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C52",
+      "claim": "The conclusion about severing location is consistent with that made by Suarez et al. (2011) using fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the difference in spatial resolution, this conclusion is also consistent with that made by Suarez et al. (2011), who used fluorescence microscopy and concluded that severing occurs at the boundary between cofilin clusters and bare zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section comparing the current findings with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "c09f8ef7-a025-458c-8fc7-40774a92129b",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C53",
+      "claim": "The fact that actin filaments are not necessarily free to rotate in vivo suggests similar passive untwisting may occur in vivo as well.",
+      "claim_type": "IMPLICIT",
+      "source": "If that is the case, the fact that actin filaments are not necessarily free to rotate in vivo suggests similar passive untwisting may occur in vivo as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discussion of passive untwisting mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "eaa139cf-5454-4606-b482-64730d1fa013",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C54",
+      "claim": "Propagation of the supertwisted conformation from cofilin clusters to neighbor bare zones had been suggested by image analysis of electron micrographs of cofilin\u2013actin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Propagation of the supertwisted conformation from cofilin clusters to neighbor bare zones had been suggested by image analysis of electron micrographs of cofilin\u2013actin complexes (Galkin et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "03a0cd54-d010-4836-8b6a-c626063872a0",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C55",
+      "claim": "The observation that cofilin clusters grew in the pointed-end direction supports the conclusion of Galkin et al. (2001) that cofilin preferentially binds to the supertwisted segments of actin subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that the cofilin clusters grew in the pointed-end direction supports the conclusion of Galkin et al. (2001) that cofilin preferentially binds to the supertwisted segments of actin subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section connecting the current findings to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "189be36c-5fb2-4b30-a64a-fe360b7bb90e",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C56",
+      "claim": "The directional growth of cofilin clusters does not depend on a gradient of different nucleotide states on actin subunits within each filament.",
+      "claim_type": "EXPLICIT",
+      "source": "This tendency of cofilin clusters to grow unidirectionally was unaffected when most of the filament subunits carried ADP or ADP+Pi, demonstrating that the directional growth of cofilin clusters does not depend on a gradient of different nucleotide states on actin subunits within each filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on experiments with different nucleotide conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "5e4ba134-b305-4f29-b7e6-d67ee273ad69",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C57",
+      "claim": "The directional growth of cofilin clusters presumably depends on asymmetric cofilin-induced conformational changes in the actin filaments, which is an intrinsic property of the polar structure of the actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, it presumably depends on asymmetric cofilin-induced conformational changes in the actin filaments, which is an intrinsic property of the polar structure of the actin filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "f4c7ca92-1213-4ea2-9ef6-bee155d84bfe",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C58",
+      "claim": "Previous biochemical and simulation studies suggested that one or a few bound cofilin molecules are sufficient to sever actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous biochemical (Andrianantoandro and Pollard, 2006) and simulation studies (De La Cruz, 2005; De La Cruz, 2009) suggested that one or a few bound cofilin molecules are sufficient to sever actin filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "e6d4935c-784c-4e94-a44b-c56d4092d6b0",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C59",
+      "claim": "The AFM observations are more consistent with the view that efficient severing requires a cofilin cluster longer than one-half of a helix.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our AFM observations are more consistent with the view that efficient severing requires a cofilin cluster longer than one-half of a helix, since most of the severing events were observed within or very near cofilin clusters that were recognizable in our AFM images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the severing observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "5eafa193-2da8-4e21-a6c6-c7906d7f7241",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C60",
+      "claim": "The need of contiguously bound cofilin molecules for efficient severing is consistent with earlier mutant analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The need of contiguously bound cofilin molecules for efficient severing is consistent with our earlier mutant analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section connecting to previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "0f658361-43dc-42cf-a19f-23b4ebe73a3f",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C61",
+      "claim": "Cofilin was able to bind to copolymers of D11Q and wild-type actins, but severing was inefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cofilin was able to bind to copolymers of D11Q and wild-type actins, but severing was inefficient (Umeki et al., 2012), suggesting that contiguous clusters of cofilin-bound actin subunits are necessary for efficient severing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "a41ce947-5984-4f18-b548-13fe160e0556",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C62",
+      "claim": "Previous simulation studies suggested that two cofilin molecules bound close to one another along an actin filament serve as a nucleus to initiate cooperative binding of cofilin to form a cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this view, previous simulation studies suggested that two cofilin molecules bound close to one another along an actin filament serve as a nucleus to initiate cooperative binding of cofilin to form a cluster (Ressad et al., 1998; Blanchoin and Pollard, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations to simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "639f3062-f6fb-40f2-b6d1-7d46ef08a8b7",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C63",
+      "claim": "Cofilin is able to induce at least two distinct types of cooperative conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently cofilin is able to induce at least two distinct types of cooperative conformational changes: one that requires cluster formation, involves \u223c25% supertwisting of the helix, and propagates over half a helix toward the pointed-end of the filament; and a second type that singly bound cofilin molecules can induce which involves relatively subtle conformational changes, and propagates much longer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a synthesis of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "d7a05540-b299-454a-8951-40c85fdd6ad0",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C64",
+      "claim": "Simulation studies by De La Cruz and Sept (2010) suggest that there are two distinct states of cofilin\u2013actin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation studies by De La Cruz and Sept (2010) suggest that there are two distinct states of cofilin\u2013actin complexes, which may be correlated with the two types of cooperative conformational changes we propose here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation to a simulation study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "2ca344c8-b923-4f08-99da-c6df42f424e9",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C65",
+      "claim": "Cooperativity in the binding of cofilin to actin filaments could amplify small changes in the input (concentration of active cofilin) to a larger difference in output (cluster formation and severing).",
+      "claim_type": "EXPLICIT",
+      "source": "Generally speaking, cooperativity would amplify small changes in the input (concentration of active cofilin) to a larger difference in output (cluster formation and severing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a general principle about cooperativity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "0362dc8d-3b42-422d-b464-7f79b6a7d183",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C66",
+      "claim": "The cellular concentration of cofilin is lower than that of polymerized actin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the cellular concentration of cofilin is lower than that of polymerized actin, and cooperativity would be a useful means of disrupting selected filaments under those conditions (Pollard et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "26b411b3-a96c-45f8-a96f-dcb6f8cbaf51",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C67",
+      "claim": "Tropomyosin inhibits binding of cofilin and protects the filaments from cofilin's severing and depolymerizing activities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, those actin filaments are often bound with tropomyosin (Gunning et al., 2008), which inhibits binding of cofilin and protects the filaments from cofilin's severing and depolymerizing activities (Bernstein and Bamburg, 1982; Ono and Ono, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "c9304920-4709-44a4-aac8-1fcbecb5fcff",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C68",
+      "claim": "If cofilin forms a small cluster at a vacant site on an actin filament that is otherwise decorated and protected by tropomyosin, the cluster would induce supertwisting on the neighboring tropomyosin-bound segment on the pointed-end side.",
+      "claim_type": "EXPLICIT",
+      "source": "If cofilin forms a small cluster at a vacant site on an actin filament that is otherwise decorated and protected by tropomyosin, the cluster would induce, or apply conformational stress to induce, supertwisting on the neighboring tropomyosin-bound segment on the pointed-end side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "857684b7-1822-4a0e-95c3-e8974d405caf",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C69",
+      "claim": "Supertwisting would accelerate dissociation of tropomyosin, resulting in faster growth of the cofilin cluster than when cluster growth needed to wait for spontaneous dissociation of neighboring tropomyosin molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "This would accelerate dissociation of tropomyosin, resulting in faster growth of the cofilin cluster than when cluster growth needed to wait for spontaneous dissociation of neighboring tropomyosin molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "b0c59fb3-6b12-415b-a5f1-af8c5864a537",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C70",
+      "claim": "Within cells, formin remains bound to the barbed-end when it catalyzes filament elongation, causing relative rotation between the formin molecule and the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Within cells, formin remains bound to the barbed-end when it catalyzes filament elongation. This causes relative rotation between the formin molecule and the filament (Mizuno et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "4e94b395-caeb-44e0-9be6-452a355d11f0",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C71",
+      "claim": "If the formin molecule and the filament are not free to rotate, the filament will be untwisted, and if cofilin has a lower affinity for untwisted actin filaments, rapidly polymerizing actin filaments in a formin-dependent manner will be protected from severing by cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if the formin molecule and the filament are not free to rotate, the filament will be untwisted, and if cofilin has a lower affinity for untwisted actin filaments, rapidly polymerizing actin filaments in a formin-dependent manner will be protected from severing by cofilin (Mizuno and Watanabe, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "7b1c0b53-2273-40f1-8ff7-0a104222a98f",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C72",
+      "claim": "Formin bound to the barbed-end of an actin filament also allosterically changes the structure of the filament, which may interfere with the interactions of the filament with cofilin, independent of mechanically forced untwisting of the filament helix.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted, however, that formin bound to the barbed-end of an actin filament also allosterically changes the structure of the filament (Bugyi et al., 2006), which may interfere with the interactions of the filament with cofilin, independent of mechanically forced untwisting of the filament helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "ad73db6e-3226-4279-ab0a-b3d986ca4832",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C73",
+      "claim": "Sharma et al. (2012) discovered that the untwisted conformation of actin filaments induced by a drebrin N-terminal fragment propagates to neighboring bare zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Sharma et al. (2012) discovered that the untwisted conformation of actin filaments induced by a drebrin N-terminal fragment propagates to neighboring bare zones; however, their findings seem to indicate that this propagation is in both directions from the drebrin clusters, though the authors did not address that point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "2b690e89-9ac9-464c-8db4-b27272e05127",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C74",
+      "claim": "There are multiple forms of ABP-induced cooperative conformational changes to actin filaments that propagate into bare zones.",
+      "claim_type": "EXPLICIT",
+      "source": "It thus appears that there are multiple forms of ABP-induced cooperative conformational changes to actin filaments that propagate into bare zones, which implies there are also multiple physiological functions for such cooperative conformational changes to actin filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a conclusion based on comparison with other studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "b7798402-729a-4baa-83f1-2223ce6f2c03",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C75",
+      "claim": "cDNA encoding human cofilin 1 was amplified from a human cDNA library using PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "cDNA encoding human cofilin 1 was amplified from a human cDNA library using PCR with primers 5\u2032-ggtaccatggcctccggtgt and 5\u2032-tctagacaaaggcttgccctcca.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "d6c30806-19f4-42f5-a4d4-106aec8248eb",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C76",
+      "claim": "The first half of the Dictyostelium \u03b1-actinin rod, corresponding to amino acid residues 265\u2013505 of the parent molecule, forms a monomeric 12-nm long rod-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The first half of the Dictyostelium \u03b1-actinin rod, corresponding to amino acid residues 265\u2013505 of the parent molecule, forms a monomeric12-nm long rod-like structure (Yan et al., 1993) and has been used as an artificial lever arm of myosin motors (Anson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "0f25afce-4c96-4708-941e-5532908b2d85",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C77",
+      "claim": "Cofilin with and without His-tag bound to actin filaments at a 1:1 molar ratio with a similar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cofilin with and without His-tag bound to actin filaments at a 1:1 molar ratio with a similar affinity (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Materials and methods section and supported by Figure 3\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "d688aaad-59b8-4afe-9397-25a0d1c27364",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C78",
+      "claim": "Cofilin-rod with and without His-tag did not sediment on its own, then bound to actin filaments with affinities similar to cofilin without the rod fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cofilin-rod with and without His-tag also did not sediment on its own, then bound to actin filaments with affinities similar to cofilin without the rod fusion (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Materials and methods section and supported by Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "555a2acb-58f3-4722-bd1e-432c82115b4d",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C79",
+      "claim": "A laboratory built high-speed atomic force microscope (HS-AFM) was used for imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a laboratory built high-speed atomic force microscope (HS-AFM) as described previously (Ando et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "13956081-af16-44de-aa5f-1640f75aeee3",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C80",
+      "claim": "HS-AFM imaging was carried out in the tapping mode with small cantilevers.",
+      "claim_type": "EXPLICIT",
+      "source": "HS-AFM imaging was carried out in the tapping mode with small cantilevers (BL-AC10DS-A2, Olympus, Tokyo, Japan) whose spring constant, resonant frequency in water, and quality factor in water were \u223c0.10 N/m, \u223c400 kHz, and \u223c2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "ce75a5f2-eb2f-4a2d-b873-6f52e9e12731",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C81",
+      "claim": "Small unilamellar vesicles (SUVs) and mica-supported lipid bilayer were prepared as described previously.",
+      "claim_type": "EXPLICIT",
+      "source": "We prepared small unilamellar vesicles (SUVs) and mica-supported lipid bilayer as described previously (Yamamoto et al., 2010; Uchihashi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "1701f2de-328b-478d-b297-763d7a2db60c",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "claim_id": "C82",
+      "claim": "The typical lipid composition was DPPC and DPTAP at a weight ratio of 9:1.",
+      "claim_type": "EXPLICIT",
+      "source": "The typical lipid composition was 1,2-dipamitoyl-sn-glycero-3-phosphocholine (DPPC) and 1,2-dipalmitoyl-3-trimethylammonium-propane (DPTAP) at a weight ratio of 9:1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the experimental materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "297962c4-3257-4bd4-9385-d870b82bd23e",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High-speed atomic force microscopy (HS-AFM) was successfully employed to visualize actin filaments and cofilin binding with high spatial and temporal resolution. The method used tapping mode AFM with small cantilevers on mica-supported lipid bilayers, enabling real-time observation of structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19, C79-C82 collectively establish that HS-AFM was successfully used to observe actin filaments. The methodology is well-documented with appropriate technical specifications (cantilever properties, lipid composition), and Figure 1 demonstrates clear visualization of right-handed double helical filaments consistent with earlier AFM studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "c4da9541-19b5-4499-bea2-f800b2fbe235",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cofilin binding to actin filaments produces clusters that are approximately 2 nm thicker (10.6 \u00b1 1.0 nm vs 8.6 \u00b1 0.8 nm) and have a helical pitch shortened by ~27% (26.9 nm vs 36.8 nm) compared to control filaments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C20, C21, C27, C28, and C30 provide converging quantitative evidence from AFM measurements (Figure 1D,E) that is statistically significant (p \u2264 0.00001) and consistent with previous electron microscopy studies. The measurements include appropriate controls and error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "65d731c2-8c5d-4263-aabc-78b17b53b6aa",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The distribution of half helical pitches in control filaments ranges from ~26-45 nm with a standard deviation of 4.3 nm, reflecting both natural structural variation and measurement error. Paracrystal measurements establish an upper limit of 3.0 nm for measurement error, and cofilin binding reduces torsional flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26, C31-C32 provide a rigorous assessment of measurement precision using paracrystals as controls. The statistical analysis appropriately separates measurement error from true structural variation by comparing standard deviations, though the assumption of normal distributions and independence of errors should be validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "ad94f244-58aa-40d6-8d56-9ae235b53352",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cofilin clusters induce asymmetric conformational changes in neighboring bare zones: the helical pitch on the pointed-end side is shortened (28.8 \u00b1 4.5 nm), while the barbed-end side is slightly longer than normal (37.3 \u00b1 4.6 nm), with effects propagating approximately one-half helix from cluster boundaries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C33-C36 demonstrate statistically significant asymmetric effects (p < 0.00001 for pointed-end, p < 0.001 for barbed-end) supported by Figure 2 and Table 1. The polarity was confirmed using S1 binding. However, the mechanism of the barbed-end lengthening (active vs. passive) remains uncertain as acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "065865de-98c9-4d24-8233-a2caadbbb542",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cofilin clusters induce distinctively asymmetric conformational changes in actin filaments, and cofilin preferentially binds to actin structures with shorter helical pitch. This asymmetry is an intrinsic property of the polar actin filament structure, independent of nucleotide gradients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C55-C57 synthesize the asymmetric conformational changes with the directional growth observations. The conclusion that asymmetry is intrinsic to filament polarity rather than nucleotide-dependent is well-supported by experiments with homogeneous nucleotide states (C43, C56), though the molecular mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "58bf992e-ab90-4b49-9009-62ea5acaf7f3",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Real-time HS-AFM imaging at 1.5-2 frames/s revealed that cofilin clusters grow unidirectionally toward the pointed-end of actin filaments, independent of nucleotide state, though the rate depends on both nucleotide state and cofilin concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C42, C43, C45 are supported by dynamic imaging data in Figures 4-5 and Videos 3-5. The experiments with different nucleotide conditions (ADP, ADP+ATP, ADP+Pi) demonstrate that directional growth is not nucleotide-gradient dependent. The temporal resolution is adequate to track cluster growth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "44cdf6f5-5103-4f04-8158-66782877cae5",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A cofilin-rod fusion protein was engineered and validated to visualize sparse cofilin binding. Experiments with this fusion protein demonstrate that single cofilin molecules cannot induce detectable conformational changes involving helical pitch alterations when bound to bare filament sections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41, C76-C78 describe a well-designed experimental approach using a fusion protein with appropriate controls. The binding assays (Figure 3\u2014supplements 1-3) confirm similar affinity to wild-type cofilin. Both EM and AFM observations consistently show no detectable pitch changes around singly bound cofilin-rod molecules, though the detection limit should be considered.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Severing occurs preferentially near (within one-half helix of) the boundary between bare zones and cofilin clusters, with ~60% of events inside clusters (mostly at ends) and ~40% in neighboring bare zones. Severing is concentration-dependent, being most frequent at 40-200 nM cofilin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, C46-C52 provide quantitative analysis of severing positions (Figure 6D) with adequate sample size. The spatial resolution of HS-AFM allows more precise localization than previous fluorescence studies. The concentration-dependence is well-documented, though the optimal concentration differs from some prior studies, which the authors acknowledge may reflect different experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "ad363779-c3aa-46fa-a4f2-568974f4e7ca",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Efficient severing requires a cofilin cluster longer than one-half helix, not just one or a few bound molecules as suggested by some previous studies. This requirement for contiguous binding is consistent with mutant analysis showing inefficient severing of D11Q/wild-type actin copolymers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 present a conclusion that contradicts some prior computational and biochemical studies but is well-supported by the current AFM observations and consistent with the authors' previous mutant analysis. The interpretation is reasonable given that most severing occurred near recognizable clusters, though the detection limit for very small clusters should be considered.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "a2178a24-64cb-4660-8ffd-a76465116632",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cofilin can induce at least two distinct types of cooperative conformational changes: one requiring cluster formation with ~25% supertwisting propagating over half a helix toward the pointed-end, and another that single molecules can induce involving subtler changes propagating longer distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C64 propose a two-state model synthesizing the current findings with previous biophysical studies. While the cluster-dependent supertwisting is well-documented (C4, C33), the evidence for single-molecule-induced long-range changes is indirect, relying on prior biophysical studies (C17) rather than direct observation in this work. The correlation with simulation studies (C64) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "b1d87893-5cc8-492c-9fde-a62491bff3af",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Within long cofilin clusters, both actin strands are homogeneously bound with cofilin molecules, as inferred from the single normal distribution of peak heights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 makes a reasonable inference from the single-peaked height distribution (Figure 1D). However, the spatial resolution of AFM may not be sufficient to detect all binding heterogeneities, and the inference assumes that partial decoration would produce a bimodal distribution, which may not always be true.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "6f6ab933-1b0c-465e-a648-b10edf23485b",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cofilin binds preferentially to actin subunits carrying ADP compared to those carrying ATP or ADP+Pi, as established by previous biochemical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 accurately cites prior biochemical work (Carlier et al., 1997; Blanchoin and Pollard, 1999). This is established knowledge appropriately referenced to support the experimental design with different nucleotide conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on actin functions and cofilin regulation: Actin filaments have diverse cellular functions; cofilin plays essential roles in cell migration through severing activity; biochemical regulation mechanisms exist but are insufficient to explain spatial-temporal control; cofilin binding is cooperative and induces long-range conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 provide appropriate background context with proper citations to established literature. The argument that biochemical signaling is insufficient (C15) is supported by the cited evidence about S3A cofilin (C14), though this remains an area of active investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "57c5128a-5a21-4780-9443-88259991cbaf",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Physiological implications and speculation: The observed asymmetric conformational changes may provide mechanisms for selective filament disruption, competition with tropomyosin, and protection of formin-bound filaments. Multiple forms of ABP-induced cooperative conformational changes likely serve different physiological functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53, C65-C74 present reasonable speculation about physiological implications, appropriately citing relevant literature. However, these are largely hypothetical mechanisms (C68, C69, C71) that require experimental validation. The proposals are plausible but remain speculative, and some mechanisms (e.g., passive untwisting, C53) depend on assumptions about in vivo conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "778e1067-3b01-478f-bef5-01ca403574bf",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Propagation of supertwisted conformation from cofilin clusters to neighboring bare zones had been previously suggested by electron microscopy image analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 accurately cites prior work by Galkin et al. (2001) that suggested conformational propagation, providing appropriate context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    },
+    {
+      "id": "7aa6908b-3f7a-417d-ac62-7030a08fe24f",
+      "content_id": "4caaa0b3-6969-4103-8110-219adbbbeb4f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Human cofilin 1 cDNA was cloned and expressed with appropriate molecular biology methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 describes standard molecular biology procedures with sufficient detail (primer sequences, vector information) for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:23:58.022503Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "88d82ada-1fd8-4467-875f-2b87c69c636b",
+      "result_id": "297962c4-3257-4bd4-9385-d870b82bd23e"
+    },
+    {
+      "claim_id": "126a7514-42ae-4cf4-a7ee-d2a4fda13c99",
+      "result_id": "297962c4-3257-4bd4-9385-d870b82bd23e"
+    },
+    {
+      "claim_id": "555a2acb-58f3-4722-bd1e-432c82115b4d",
+      "result_id": "297962c4-3257-4bd4-9385-d870b82bd23e"
+    },
+    {
+      "claim_id": "13956081-af16-44de-aa5f-1640f75aeee3",
+      "result_id": "297962c4-3257-4bd4-9385-d870b82bd23e"
+    },
+    {
+      "claim_id": "ce75a5f2-eb2f-4a2d-b873-6f52e9e12731",
+      "result_id": "297962c4-3257-4bd4-9385-d870b82bd23e"
+    },
+    {
+      "claim_id": "1701f2de-328b-478d-b297-763d7a2db60c",
+      "result_id": "297962c4-3257-4bd4-9385-d870b82bd23e"
+    },
+    {
+      "claim_id": "f9fffa6f-0896-4595-95aa-5e22ba47ec63",
+      "result_id": "c4da9541-19b5-4499-bea2-f800b2fbe235"
+    },
+    {
+      "claim_id": "9b0184f4-3a08-45ee-8712-f786d658a5e1",
+      "result_id": "c4da9541-19b5-4499-bea2-f800b2fbe235"
+    },
+    {
+      "claim_id": "67633ad8-664a-49ed-9d6e-e41a7ac686e8",
+      "result_id": "c4da9541-19b5-4499-bea2-f800b2fbe235"
+    },
+    {
+      "claim_id": "775a334e-4705-42b2-8879-0e3495ac24d6",
+      "result_id": "c4da9541-19b5-4499-bea2-f800b2fbe235"
+    },
+    {
+      "claim_id": "d8364ea7-c112-4dc1-b239-df72052b689a",
+      "result_id": "c4da9541-19b5-4499-bea2-f800b2fbe235"
+    },
+    {
+      "claim_id": "2362825b-b9f0-4b2f-8934-9308f25d4362",
+      "result_id": "c4da9541-19b5-4499-bea2-f800b2fbe235"
+    },
+    {
+      "claim_id": "b276437a-d88a-4f85-8a7a-48b07a750f4a",
+      "result_id": "c4da9541-19b5-4499-bea2-f800b2fbe235"
+    },
+    {
+      "claim_id": "c5f9c26f-cde7-4082-9e6b-7e2fd2ae7db4",
+      "result_id": "c4da9541-19b5-4499-bea2-f800b2fbe235"
+    },
+    {
+      "claim_id": "1c2e06f3-293d-4755-bc64-9d2b32ecb991",
+      "result_id": "65d731c2-8c5d-4263-aabc-78b17b53b6aa"
+    },
+    {
+      "claim_id": "13a83507-f59c-4c77-98d5-08e42112d429",
+      "result_id": "65d731c2-8c5d-4263-aabc-78b17b53b6aa"
+    },
+    {
+      "claim_id": "35afc19a-4d1b-43ba-bf4e-1944d79dbf8e",
+      "result_id": "65d731c2-8c5d-4263-aabc-78b17b53b6aa"
+    },
+    {
+      "claim_id": "a165c35d-7a0b-44fb-930b-aba9b2df7121",
+      "result_id": "65d731c2-8c5d-4263-aabc-78b17b53b6aa"
+    },
+    {
+      "claim_id": "76827506-3a94-4605-8ab8-502e21f6c64c",
+      "result_id": "65d731c2-8c5d-4263-aabc-78b17b53b6aa"
+    },
+    {
+      "claim_id": "4dae0a76-1e9a-44a2-9b94-61aeda1c8d79",
+      "result_id": "65d731c2-8c5d-4263-aabc-78b17b53b6aa"
+    },
+    {
+      "claim_id": "f7a35193-e764-4f16-a0f0-2cadb6dc3bfe",
+      "result_id": "ad94f244-58aa-40d6-8d56-9ae235b53352"
+    },
+    {
+      "claim_id": "7650177b-3771-40ae-a623-d793eb312ea8",
+      "result_id": "ad94f244-58aa-40d6-8d56-9ae235b53352"
+    },
+    {
+      "claim_id": "b37d8aad-0c7c-4ecc-9a8c-7709828f407c",
+      "result_id": "ad94f244-58aa-40d6-8d56-9ae235b53352"
+    },
+    {
+      "claim_id": "69e7361f-54a8-44c3-9862-c35aa34db7f1",
+      "result_id": "ad94f244-58aa-40d6-8d56-9ae235b53352"
+    },
+    {
+      "claim_id": "f9beb4a1-0e86-47a4-a30d-58cff01f95d6",
+      "result_id": "ad94f244-58aa-40d6-8d56-9ae235b53352"
+    },
+    {
+      "claim_id": "e79dbb62-e0aa-4af3-964d-bab4ab9dff64",
+      "result_id": "ad94f244-58aa-40d6-8d56-9ae235b53352"
+    },
+    {
+      "claim_id": "386f24bd-d25b-4c86-a41b-49b3d8433a58",
+      "result_id": "065865de-98c9-4d24-8233-a2caadbbb542"
+    },
+    {
+      "claim_id": "f6572cc8-c2ef-4a26-a579-66eef46a2f84",
+      "result_id": "065865de-98c9-4d24-8233-a2caadbbb542"
+    },
+    {
+      "claim_id": "03a0cd54-d010-4836-8b6a-c626063872a0",
+      "result_id": "065865de-98c9-4d24-8233-a2caadbbb542"
+    },
+    {
+      "claim_id": "189be36c-5fb2-4b30-a64a-fe360b7bb90e",
+      "result_id": "065865de-98c9-4d24-8233-a2caadbbb542"
+    },
+    {
+      "claim_id": "5e4ba134-b305-4f29-b7e6-d67ee273ad69",
+      "result_id": "065865de-98c9-4d24-8233-a2caadbbb542"
+    },
+    {
+      "claim_id": "110a017a-7ba6-4ef5-9b01-e6b9dcd14119",
+      "result_id": "58bf992e-ab90-4b49-9009-62ea5acaf7f3"
+    },
+    {
+      "claim_id": "cdb83a6d-0273-48c1-ba0d-0918b28e888a",
+      "result_id": "58bf992e-ab90-4b49-9009-62ea5acaf7f3"
+    },
+    {
+      "claim_id": "e17379f0-77d7-47b9-b044-c87258057c07",
+      "result_id": "58bf992e-ab90-4b49-9009-62ea5acaf7f3"
+    },
+    {
+      "claim_id": "b78f090c-c675-4aa3-b4b0-f6e946a28480",
+      "result_id": "58bf992e-ab90-4b49-9009-62ea5acaf7f3"
+    },
+    {
+      "claim_id": "7c9062f2-2209-4a87-9551-acc0adcd24f4",
+      "result_id": "44cdf6f5-5103-4f04-8158-66782877cae5"
+    },
+    {
+      "claim_id": "ae657e6a-7a70-49b4-a6b6-69e4665045df",
+      "result_id": "44cdf6f5-5103-4f04-8158-66782877cae5"
+    },
+    {
+      "claim_id": "c048821e-1706-48af-99b1-d9fd23a8bb2c",
+      "result_id": "44cdf6f5-5103-4f04-8158-66782877cae5"
+    },
+    {
+      "claim_id": "759e960e-5393-406d-9692-87cf1bdcde0f",
+      "result_id": "44cdf6f5-5103-4f04-8158-66782877cae5"
+    },
+    {
+      "claim_id": "9ddf143e-88c2-4236-8589-2b26a2534993",
+      "result_id": "44cdf6f5-5103-4f04-8158-66782877cae5"
+    },
+    {
+      "claim_id": "d6c30806-19f4-42f5-a4d4-106aec8248eb",
+      "result_id": "44cdf6f5-5103-4f04-8158-66782877cae5"
+    },
+    {
+      "claim_id": "0f25afce-4c96-4708-941e-5532908b2d85",
+      "result_id": "44cdf6f5-5103-4f04-8158-66782877cae5"
+    },
+    {
+      "claim_id": "d688aaad-59b8-4afe-9397-25a0d1c27364",
+      "result_id": "44cdf6f5-5103-4f04-8158-66782877cae5"
+    },
+    {
+      "claim_id": "1b7c1bbe-7392-4d24-b95d-23f31de5bebd",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "082b9da7-cc94-401a-9e03-547dacca1f76",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "d0a0ac66-af90-459d-b5fb-32daeab13991",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "0046372d-5a39-490a-a01e-3ba3ec2c103c",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "c92f63c8-83fe-4e86-90d6-a0f4c3628c77",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "a6beb9c9-8815-4951-bb6b-44cb926a51f7",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "dc700625-e73b-485f-8531-e40d29f6c0d5",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "3e09e4f0-72cb-4f4e-8232-2f22fa31dce1",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "b2f7ddca-ef31-4e1f-891e-342e0a29b17c",
+      "result_id": "206d8a3b-8cfa-4606-bda9-8429cd33ddb5"
+    },
+    {
+      "claim_id": "f4c7ca92-1213-4ea2-9ef6-bee155d84bfe",
+      "result_id": "ad363779-c3aa-46fa-a4f2-568974f4e7ca"
+    },
+    {
+      "claim_id": "e6d4935c-784c-4e94-a44b-c56d4092d6b0",
+      "result_id": "ad363779-c3aa-46fa-a4f2-568974f4e7ca"
+    },
+    {
+      "claim_id": "5eafa193-2da8-4e21-a6c6-c7906d7f7241",
+      "result_id": "ad363779-c3aa-46fa-a4f2-568974f4e7ca"
+    },
+    {
+      "claim_id": "0f658361-43dc-42cf-a19f-23b4ebe73a3f",
+      "result_id": "ad363779-c3aa-46fa-a4f2-568974f4e7ca"
+    },
+    {
+      "claim_id": "a41ce947-5984-4f18-b548-13fe160e0556",
+      "result_id": "ad363779-c3aa-46fa-a4f2-568974f4e7ca"
+    },
+    {
+      "claim_id": "639f3062-f6fb-40f2-b6d1-7d46ef08a8b7",
+      "result_id": "a2178a24-64cb-4660-8ffd-a76465116632"
+    },
+    {
+      "claim_id": "d7a05540-b299-454a-8951-40c85fdd6ad0",
+      "result_id": "a2178a24-64cb-4660-8ffd-a76465116632"
+    },
+    {
+      "claim_id": "dc092aa9-e735-433e-a225-186c5894d23e",
+      "result_id": "b1d87893-5cc8-492c-9fde-a62491bff3af"
+    },
+    {
+      "claim_id": "33f08b76-7d35-41fc-ade4-9c2486fd3802",
+      "result_id": "6f6ab933-1b0c-465e-a648-b10edf23485b"
+    },
+    {
+      "claim_id": "8cf2e936-a081-4451-ba19-cfa0558301c0",
+      "result_id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6"
+    },
+    {
+      "claim_id": "96fec7cc-296a-4e79-b95f-6a434a9b0b37",
+      "result_id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6"
+    },
+    {
+      "claim_id": "ddde06f2-fda3-46ec-afc4-35549ed46865",
+      "result_id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6"
+    },
+    {
+      "claim_id": "4598a885-9869-4ee4-bae1-41cdf5623dbd",
+      "result_id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6"
+    },
+    {
+      "claim_id": "ad2daca2-d260-4e89-86c2-cd2779e51876",
+      "result_id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6"
+    },
+    {
+      "claim_id": "9cd040d9-6f01-43b7-b4f3-1bec9158cebf",
+      "result_id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6"
+    },
+    {
+      "claim_id": "84a2f6c2-8f12-4a9e-9312-ec09c8c4d76e",
+      "result_id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6"
+    },
+    {
+      "claim_id": "018dc850-1db3-4f27-94d4-1c3496657663",
+      "result_id": "9021aad6-d64a-419f-a97e-ebb3bc0663b6"
+    },
+    {
+      "claim_id": "c09f8ef7-a025-458c-8fc7-40774a92129b",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "2ca344c8-b923-4f08-99da-c6df42f424e9",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "0362dc8d-3b42-422d-b464-7f79b6a7d183",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "26b411b3-a96c-45f8-a96f-dcb6f8cbaf51",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "c9304920-4709-44a4-aac8-1fcbecb5fcff",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "857684b7-1822-4a0e-95c3-e8974d405caf",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "b0c59fb3-6b12-415b-a5f1-af8c5864a537",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "4e94b395-caeb-44e0-9be6-452a355d11f0",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "7b1c0b53-2273-40f1-8ff7-0a104222a98f",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "ad73db6e-3226-4279-ab0a-b3d986ca4832",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "2b690e89-9ac9-464c-8db4-b27272e05127",
+      "result_id": "57c5128a-5a21-4780-9443-88259991cbaf"
+    },
+    {
+      "claim_id": "eaa139cf-5454-4606-b482-64730d1fa013",
+      "result_id": "778e1067-3b01-478f-bef5-01ca403574bf"
+    },
+    {
+      "claim_id": "b7798402-729a-4baa-83f1-2223ce6f2c03",
+      "result_id": "7aa6908b-3f7a-417d-ac62-7030a08fe24f"
+    }
+  ],
+  "comparisons": []
+}

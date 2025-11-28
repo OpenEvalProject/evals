@@ -1,0 +1,1270 @@
+{
+  "submission": {
+    "id": "c551d0c0-6095-41bd-8198-ec94554227c1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:05:19.285459Z",
+    "updated_at": "2025-11-28T20:05:19.285459Z"
+  },
+  "content": [
+    {
+      "id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "submission_id": "c551d0c0-6095-41bd-8198-ec94554227c1",
+      "content_type": "manuscript",
+      "content_text": "# A network approach to mixing delegates at meetings\n\n## Authors\n\n- Federico Vaggi<sup>1</sup> \u2020\n- Tommaso Schiavinotto<sup>2</sup>\n- Jonathan LD Lawson<sup>3</sup>\n- Anatole Chessel<sup>4</sup>\n- James Dodgson<sup>5</sup>\n- Marco Geymonat<sup>6</sup>\n- Masamitsu Sato<sup>7</sup>\n- Rafael Edgardo Carazo Salas<sup>8</sup> \u2020\n- Attila Csik\u00e1sz-Nagy<sup>9</sup> \u2020\n\n### Affiliations\n\n1. Department of Computational Biology Fondazione Edmund Mach San Michele all\u2019Adige Italy federico.vaggi@fmach.it\n2. U-Hopper Trento Italy\n3. the Gurdon Institute and the Genetics Department University of Cambridge Cambridge United Kingdom\n4. the Gurdon Institute and the Genetics Department University of Cambridge Cambridge United Kingdom\n5. the Gurdon Institute and the Genetics Department University of Cambridge Cambridge United Kingdom\n6. the Gurdon Institute and the Genetics Department University of Cambridge Cambridge United Kingdom\n7. Department of Life Science and Medical Bioscience Waseda University Tokyo Japan\n8. the Gurdon Institute and the Genetics Department University of Cambridge Cambridge United Kingdom cre20@cam.ac.uk\n9. Department of Computational Biology Fondazione Edmund Mach San Michele all\u2019Adige Italy attila.csikasz-nagy@fmach.it\n10. the Randall Division of Cell and Molecular Biophysics and Institute of Mathematical and Molecular Biomedicine King\u2019s College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nDelegates at scientific meetings can come from diverse backgrounds and use very different methods in their research. Promoting interactions between these \u2018distant\u2019 delegates is challenging but such interactions could lead to novel interdisciplinary collaborations and unexpected breakthroughs. We have developed a network-based \u2018speed dating\u2019 approach that allows us to initiate such distant interactions by pairing every delegate with another delegate who might be of interest to them, but whom they might never have encountered otherwise. Here we describe our approach and its algorithmic implementation.\n\n## Mixing delegates in a mutually interesting and novel way\n\nOver the years conference organisers have tried many approaches to improve this state of affairs. There have been attempts at using web-based technologies to improve the interaction between the audience and the speakers, and to make social mixing easier and less intimidating. People have previously trialled virtual conferences, real-time Twitter feedback, and other web 2.0 technologies (Ebner and Reinhardt, 2009; Rigutto, 2013). These approaches have been successful in some fields, particularly related to media and journalism (Briggs, 2007; Picard, 2009), but they come with their own set of problems (Boyd, 2009) not the least a lack of technical know-how in the audience, particularly in the more academic fields.\n\nThere are also approaches to facilitate the formation of interest groups at conferences (Canning et al., 2013) and to help researchers identify potential collaborators from the web (Schall, 2013). The Mathematisches Forschungsinstitut Oberwolfach in Germany organizes weekly meetings where each participant has a napkin holder with her/his name on it, and at each meal the napkin holders are randomly distributed to each seat in the dining hall. Inspired by this, we recently developed an alternative, more \u2018engineered\u2019 approach to encouraging interactions at a meeting entitled Cell Polarity in the Systems Medicine Era, that was attended by 40 people. We call this approach interdisciplinary speed dating.\n\nThis was a satellite meeting that was held immediately after a larger meeting we organised at the Royal Society in London on the topic of cell polarity. In the smaller gathering the idea was to discuss in depth several topics brought up at the larger meeting in a more intimate setting, so all the delegates (a mix of junior group leaders, senior lab heads, and postdocs) were accommodated in the same building (at Chicheley Hall, which is about 50 miles north of London) to spend two days discussing science. Since the meeting was about cell polarity, the attendees consisted of a heterogeneous group of biophysicists, mathematical modellers, biochemists, in vivo researchers, and bioinformatics researchers. The combination of wide-ranging interests among the delegates, as well as the relatively small number of people attending, made this meeting an excellent test bed for our unorthodox conference approach.\n\nTo prepare for the satellite meeting we asked all the delegates to complete a short survey and eventually received responses from all but one delegate. In the survey, we asked the participants to state which methods they were familiar with from a list of 32 relevant methods, and to state which methods they wanted to learn more about (Figure 1). There was a wide variation between the number of methods known by the different delegates (ranging from 1 to 26, out of a total of 32; mean = 6.6, standard deviation = 4.4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02273/elife-02273-fig1-v1.jpg)\n\n**Figure 1.:** Prior to the meeting, we asked each delegate to choose, from a predetermined list, which methods they were familiar with, and which methods they wanted to learn more about. (A) Methods known by delegate. Each row represents a method and each column represents an individual delegate (names omitted for reasons of confidentiality). Delegates were most familiar with microscopy (both quantitative and advanced), cells (both cancer and stem) and mathematical modelling. This information was used to calculate the knowledge distance between delegates in Figure 3. (B) Methods that delegates wanted to learn more about. The most popular methods were biophysical methods and microfluidic devices.\n\nNext, we asked which of the other delegates they had previously collaborated with. Interestingly, only about half of the relationships were mutual (51%)\u2014this difference is probably due to some delegates only counting scientists with whom they have published papers, and other delegates favouring a less formal definition. However, it was notable that the delegates formed a connected network, with every delegate having collaborated with at least one other delegate (Figure 2A). We did not observe any statistically significant links between the gender of the scientist (13 female and 27 male scientists attended) and the extent of methodological knowledge or collaboration experience.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02273/elife-02273-fig2-v1.jpg)\n\n**Figure 2.:** (A) The collaboration network before the meeting: some delegates already knew 10 or more other delegates, whereas others knew just one or two. (B) After the first round of speed dates, 20 new connections (shown in red) had been added to the network. (C, D) The network after three (C) and five (D) rounds of speed dates; \u03b1 = 0.9.\n\n## At the conference\n\nOver the two days of the conference, we dedicated two 90 minute sessions to speed dating. The first session consisted of five rounds of ice breakers in which each delegate was paired with another delegate with whom they had little in common (based on the methods they knew about and the people they had collaborated with). The intention was to cause the delegates to meet new and different people. Each round lasted 15 minutes, giving enough time for scientists to discuss their own work while still keeping the meetings brief and to the point. The atmosphere of the meetings was highly informal\u2013coffee and refreshments were provided, and scientists had the choice to sit down at small tables or simply walk around near posters and discuss each other\u2019s results.\n\nIn these five encounters, we used two criteria to match the delegates (Figure 3). The first criterion was \u2018acquaintance distance\u2019\u2014the number of steps between the delegates on the collaboration graph based on their shared previous acquaintances. The second criterion was the \u2018knowledge similarity\u2019 between the two delegates in a pair\u2013this number gave us a measure of how much knowledge the delegates had in common. We then added the inverse of the \u2018acquaintance distance\u2019 to the \u2018knowledge similarity\u2019. We used a parameter \u03b1 to determine how much weight to give to each criterion in the sum (Figure 3C\u2013F): \u03b1 = 0 meant that only \u2018acquaintance distance\u2019 was considered when matching the delegates; \u03b1 = 0.5 meant that \u2018acquaintance distance\u2019 and \u2018knowledge similarity\u2019 were considered equally; and \u03b1 = 1 meant that only \u2018knowledge similarity\u2019 was considered. Finally, pairings between delegates who had previously collaborated\u2014that is, whose acquaintance distance was equal to 1\u2014were forbidden.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02273/elife-02273-fig3-v1.jpg)\n\n**Figure 3.:** (A) Matrix showing the inverse of the \u2018acquaintance distance\u2019 between all pairs of delegates, who are arranged horizontally and vertically as in Figure 1. (B) Matrix showing the \u2018knowledge similarity\u2019 between all pairs of delegates: similarity increases with the number of methods known in common by both candidates, and decreases with the number of methods that are only known by one. The inverse acquaintance distance (A) and the knowledge similarity (B) have both been normalized to have zero mean and unit variance so that they can be added together, suitably weighted by \u03b1. (C\u2013F) The sum of inverse acquaintance distance and the knowledge similarity for pairs of delegates for different values of \u03b1. Colder colours such as blue indicate low similarity and high distance (see colour bar); hotter colours such as red and brown indicate the reverse; white squares not on the diagonal represent delegates who have previously collaborated. The similarity measure that we used (the Rogers and Tanimoto similarity measure) penalized pairs with low overlap, which led to the pronounced vertical and horizontal blue lines observed for the delegate familiar with 26 methods in B.\n\nFor each round, we sought to find the 20 pairs that would minimize the sum of the two values. In other words, we wanted to form pairs of delegates who were far away from each other in the network and who had minimal overlap in their knowledge. This means that we were looking for 20 deep blue squares in the matrices in Figure 3, subject to the constraint that we had to select one square (i.e., one delegate) from each column and from each row per round. This is a well-known problem in combinatorial optimization, and is called the Maximum-Weight Perfect Matching Problem (Edmonds, 1965); several polynomial-time exact algorithms exist for solving this problem (Gabow and Tarjan, 1991). Interestingly, the number of one-way collaborations (where one delegate reports a collaboration but the other does not) was significantly correlated with the number of methods known (r = 0.38, p-value = 0.015).\n\nAfter the pairings for one round had been solved, we added a further constraint to prevent the same pairs being selected again in future rounds. Importantly, for each round we were solving for the optimal pairs which simultaneously maximized new knowledge gained for all scientists. This was a greedy strategy: choices made in early rounds introduced constraints (by reducing the number of possible pairs), which may prevent the algorithm from finding a best solution for later rounds. Hence a future improvement of this approach could be to modify the above implementation to maximise the sum of the distances across all rounds, instead of finding the optimal match on a per-round basis. In this manner, the solution would not need to decay through successive selection rounds.\n\nTo select an appropriate value of \u03b1, we simulated what would happen during five rounds of speed dating with four different values of this number. Since the meeting was quite small and the collaboration network was already quite dense to begin with, the average shortest path decreased quite rapidly, almost irrespective of the value of \u03b1 (Figure 4A). However, the amount of new knowledge gained increased with the value of \u03b1 (Figure 4B), so we used \u03b1 = 0.9 when calculating pairs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02273/elife-02273-fig4-v1.jpg)\n\n**Figure 4.:** (A and B) Average shortest path and new knowledge gained (i.e., the total number of new methods delegates were told about in a given round) vs number of rounds of speed dating for four different values of \u03b1. The shortest average path (A) fell quickly with the number of rounds of speed dating, almost irrespective of the value of \u03b1. However, new knowledge gained (B) increased with the value of \u03b1: this is to be expected because higher values of \u03b1 mean that delegates are more likely to be paired with someone who can tell them about new methods.\n\nWhile the goal of the first five encounters was to match people who would not traditionally meet, the goal of the second round of encounters was to optimise the way people meet collaborators at conferences. Therefore, in the second round we sought to match delegates who were expert in particular methods with delegates wanting to learn about those methods (based on the data in Figure 1B). We did this by computing a \u2018matching knowledge distance\u2019, which quantified how much the methods known by one participant resembled the methods sought by another and vice-versa. We then summed the inverse of the \u2018matching knowledge distance\u2019 with the \u2018acquaintances distance\u2019, again weighted by a parameter \u03b1, and sought to maximise this sum. This was a popular approach, with a large proportion (>50%) of the people who responded to the post-meeting questionaire indicating that this part of the meeting led to the establishment of new collaborations.\n\nThe code we used to generate the pairs for this paper is available on the github repository: https://github.com/FedericoV/conference_pairings. When using our approach for very large conferences, it will be important to investigate the use of heuristics that allow the calculation of near-optimal solutions in a fraction of the time, as the current exact algorithm has O(N^3) scaling (where N is the number of delegates at the meeting).\n\n## Conclusions and perspectives\n\nWhen tweaking a successful idea, it is important to stay true to the original spirit and purpose one had in mind. Trying to improve scientific conferences, we sought to engineer a better way for scientists to become exposed to new ideas and unlikely conversation partners, meet potential collaborators, and learn more about specific methods they fancied. While our approach was decidedly unorthodox, our first attempt to implement it turned out much better than we expected: of the 24 delegates who commented on it in the post-meeting questionnaire, 21 (87.5%) were very enthusiastic and complimentary, and 12 mentioned that potential new collaborations were emerging from discussions at the meeting.\n\nOf course there is room for improvement. For example, quite a few of the delegates at our meeting were lab heads, so at larger meetings attended by a lot of junior scientists it would be interesting to use \u2018scientific seniority\u2019 as an additional criterion when calculating the distance between delegates with a view to pairing these junior scientists with senior figures in the field. Alternatively, everyone attending the meeting could be asked what they hope to get out of the meeting (e.g., to meet new people, to learn more about various methods, to meet lab heads who are recruiting, and so on), and then one could attempt to match everyone according to their own stated aims. We are eager to explore these and other applications of our approach in the future.\n",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "62e5ee29-d094-4c3e-b7fb-3b383a46e05f",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C1",
+      "claim": "Conference organisers have tried web-based technologies to improve interaction between audience and speakers.",
+      "claim_type": "EXPLICIT",
+      "source": "There have been attempts at using web-based technologies to improve the interaction between the audience and the speakers, and to make social mixing easier and less intimidating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on web-based conference technologies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "358467b1-b35a-4cfe-8e8d-354cb6918b8c",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C2",
+      "claim": "Virtual conferences, real-time Twitter feedback, and other web 2.0 technologies have been previously trialled.",
+      "claim_type": "EXPLICIT",
+      "source": "People have previously trialled virtual conferences, real-time Twitter feedback, and other web 2.0 technologies (Ebner and Reinhardt, 2009; Rigutto, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ebner and Reinhardt, 2009 and Rigutto, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "94904fe8-6f4a-4aa2-b828-4edf6cfd0e1f",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C3",
+      "claim": "Web-based conference approaches have been successful in fields related to media and journalism.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches have been successful in some fields, particularly related to media and journalism (Briggs, 2007; Picard, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Briggs, 2007 and Picard, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "8c061d1f-a72c-47b8-a8a4-5967dda050ad",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C4",
+      "claim": "Web-based conference approaches come with their own set of problems including lack of technical know-how in the audience.",
+      "claim_type": "EXPLICIT",
+      "source": "but they come with their own set of problems (Boyd, 2009) not the least a lack of technical know-how in the audience, particularly in the more academic fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boyd, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "ee7231c3-35ac-4b12-80b7-6478afc30898",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C5",
+      "claim": "There are approaches to facilitate the formation of interest groups at conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also approaches to facilitate the formation of interest groups at conferences (Canning et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Canning et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "d0169ed9-3067-4385-955e-0db70ee7dd4b",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C6",
+      "claim": "There are approaches to help researchers identify potential collaborators from the web.",
+      "claim_type": "EXPLICIT",
+      "source": "and to help researchers identify potential collaborators from the web (Schall, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schall, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "570118cb-8063-45be-b056-abf0d4863b75",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C7",
+      "claim": "The Mathematisches Forschungsinstitut Oberwolfach in Germany organizes weekly meetings where napkin holders with participant names are randomly distributed at each meal.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mathematisches Forschungsinstitut Oberwolfach in Germany organizes weekly meetings where each participant has a napkin holder with her/his name on it, and at each meal the napkin holders are randomly distributed to each seat in the dining hall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about a specific institution's practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "3dbd9591-8c70-4171-8e38-ccd9c854c8e6",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C8",
+      "claim": "The authors developed an interdisciplinary speed dating approach for a meeting entitled Cell Polarity in the Systems Medicine Era attended by 40 people.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by this, we recently developed an alternative, more 'engineered' approach to encouraging interactions at a meeting entitled Cell Polarity in the Systems Medicine Era, that was attended by 40 people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the authors' work and the meeting details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "3cb1768a-b22c-410d-aeae-5b36992b7143",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C9",
+      "claim": "The satellite meeting was held immediately after a larger meeting at the Royal Society in London on cell polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "This was a satellite meeting that was held immediately after a larger meeting we organised at the Royal Society in London on the topic of cell polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the meeting organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "b7b1f442-dd67-4657-8bed-8b606573ce6b",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C10",
+      "claim": "All delegates were accommodated in the same building at Chicheley Hall for two days.",
+      "claim_type": "EXPLICIT",
+      "source": "so all the delegates (a mix of junior group leaders, senior lab heads, and postdocs) were accommodated in the same building (at Chicheley Hall, which is about 50 miles north of London) to spend two days discussing science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the meeting logistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "47542479-c4e2-451b-82b6-17eec8fedbb4",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C11",
+      "claim": "The meeting attendees consisted of a heterogeneous group of biophysicists, mathematical modellers, biochemists, in vivo researchers, and bioinformatics researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the meeting was about cell polarity, the attendees consisted of a heterogeneous group of biophysicists, mathematical modellers, biochemists, in vivo researchers, and bioinformatics researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the composition of meeting attendees.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "14dc1c20-645e-43a1-9e5b-3c963839c7ff",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C12",
+      "claim": "All but one delegate responded to the pre-meeting survey.",
+      "claim_type": "EXPLICIT",
+      "source": "To prepare for the satellite meeting we asked all the delegates to complete a short survey and eventually received responses from all but one delegate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about survey response rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "aaa395f6-5397-4b3e-9ce2-016245d788d6",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C13",
+      "claim": "Participants were asked to state which methods they were familiar with from a list of 32 relevant methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In the survey, we asked the participants to state which methods they were familiar with from a list of 32 relevant methods, and to state which methods they wanted to learn more about (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about survey content.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "4e375635-c167-403a-98f5-bd6e27cd5334",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C14",
+      "claim": "The number of methods known by different delegates ranged from 1 to 26 out of 32 total methods.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a wide variation between the number of methods known by the different delegates (ranging from 1 to 26, out of a total of 32; mean = 6.6, standard deviation = 4.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with statistical data from the survey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "c4d52d09-f4b7-4290-b973-fc644f831646",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C15",
+      "claim": "The mean number of methods known by delegates was 6.6 with a standard deviation of 4.4.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a wide variation between the number of methods known by the different delegates (ranging from 1 to 26, out of a total of 32; mean = 6.6, standard deviation = 4.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with statistical data from the survey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "76835978-ade2-446b-8700-48fbacc0e1b1",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C16",
+      "claim": "Delegates were most familiar with microscopy (both quantitative and advanced), cells (both cancer and stem) and mathematical modelling.",
+      "claim_type": "EXPLICIT",
+      "source": "Delegates were most familiar with microscopy (both quantitative and advanced), cells (both cancer and stem) and mathematical modelling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 1A data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "2dd8ff79-709e-4aa6-b225-dcc3bfe8d131",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C17",
+      "claim": "The most popular methods delegates wanted to learn more about were biophysical methods and microfluidic devices.",
+      "claim_type": "EXPLICIT",
+      "source": "The most popular methods were biophysical methods and microfluidic devices.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 1B data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "53c0c5e9-f7f0-4b0f-b05d-28cbbf7fa768",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C18",
+      "claim": "Only about half (51%) of the collaboration relationships were mutual.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only about half of the relationships were mutual (51%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with quantitative data from the survey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "f24fe7a2-4d49-49ca-a206-d60956f80ecb",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C19",
+      "claim": "The difference in mutual collaboration reporting is probably due to some delegates only counting scientists with whom they have published papers, while others favoured a less formal definition.",
+      "claim_type": "EXPLICIT",
+      "source": "this difference is probably due to some delegates only counting scientists with whom they have published papers, and other delegates favouring a less formal definition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed data pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "d32195c4-0ac1-4107-ad3a-4f5cbd041b95",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C20",
+      "claim": "The delegates formed a connected network, with every delegate having collaborated with at least one other delegate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was notable that the delegates formed a connected network, with every delegate having collaborated with at least one other delegate (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 2A visualization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "812b25ef-afc3-448a-bc2e-9097ef1e1afd",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C21",
+      "claim": "No statistically significant links were observed between the gender of the scientist and the extent of methodological knowledge or collaboration experience.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any statistically significant links between the gender of the scientist (13 female and 27 male scientists attended) and the extent of methodological knowledge or collaboration experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "26e78637-2dcb-490e-ba79-796b3e40e589",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C22",
+      "claim": "13 female and 27 male scientists attended the meeting.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any statistically significant links between the gender of the scientist (13 female and 27 male scientists attended) and the extent of methodological knowledge or collaboration experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of demographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "961cd488-5b93-4eaa-b1b2-26763f650bdd",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C23",
+      "claim": "Two 90 minute sessions were dedicated to speed dating over the two days of the conference.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the two days of the conference, we dedicated two 90 minute sessions to speed dating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about conference schedule.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "f84c1a0b-a6a2-4d79-a218-f3c04f4cc3e6",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C24",
+      "claim": "The first session consisted of five rounds of ice breakers.",
+      "claim_type": "EXPLICIT",
+      "source": "The first session consisted of five rounds of ice breakers in which each delegate was paired with another delegate with whom they had little in common (based on the methods they knew about and the people they had collaborated with).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about session structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "16323140-b1d2-4fe2-bcb6-92cbb54db416",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C25",
+      "claim": "Each round lasted 15 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Each round lasted 15 minutes, giving enough time for scientists to discuss their own work while still keeping the meetings brief and to the point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about round duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "730f6462-2a7c-4e07-8ead-5c0f676ee207",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C26",
+      "claim": "After the first round of speed dates, 20 new connections had been added to the network.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) After the first round of speed dates, 20 new connections (shown in red) had been added to the network.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 2B visualization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "303d9f8b-46c9-4600-ba17-a5a27e9d6c89",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C27",
+      "claim": "Two criteria were used to match delegates: acquaintance distance and knowledge similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In these five encounters, we used two criteria to match the delegates (Figure 3). The first criterion was 'acquaintance distance'\u2014the number of steps between the delegates on the collaboration graph based on their shared previous acquaintances. The second criterion was the 'knowledge similarity' between the two delegates in a pair\u2013this number gave us a measure of how much knowledge the delegates had in common.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the matching algorithm criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "969f1804-f43e-47b2-b26b-b763478507b9",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C28",
+      "claim": "Acquaintance distance is the number of steps between delegates on the collaboration graph based on their shared previous acquaintances.",
+      "claim_type": "EXPLICIT",
+      "source": "The first criterion was 'acquaintance distance'\u2014the number of steps between the delegates on the collaboration graph based on their shared previous acquaintances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "64320931-be01-483d-9819-1a0c5244fe2a",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C29",
+      "claim": "Knowledge similarity is a measure of how much knowledge the delegates had in common.",
+      "claim_type": "EXPLICIT",
+      "source": "The second criterion was the 'knowledge similarity' between the two delegates in a pair\u2013this number gave us a measure of how much knowledge the delegates had in common.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "21864041-b715-4bcb-bc1b-ed38c3b83be8",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C30",
+      "claim": "The inverse of acquaintance distance was added to knowledge similarity to create a combined metric.",
+      "claim_type": "EXPLICIT",
+      "source": "We then added the inverse of the 'acquaintance distance' to the 'knowledge similarity'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "b5efcbf3-0660-44e7-afd2-ded7ed9bebf0",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C31",
+      "claim": "A parameter \u03b1 was used to determine how much weight to give to each criterion in the sum.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a parameter \u03b1 to determine how much weight to give to each criterion in the sum (Figure 3C\u2013F)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the algorithm parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "20db2d9d-2f7d-4450-8a82-60e42c3c004a",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C32",
+      "claim": "\u03b1 = 0 means that only acquaintance distance was considered when matching delegates.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1 = 0 meant that only 'acquaintance distance' was considered when matching the delegates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of parameter value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "6552cb50-006d-4ec5-bfdb-055849bb93a0",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C33",
+      "claim": "\u03b1 = 0.5 means that acquaintance distance and knowledge similarity were considered equally.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1 = 0.5 meant that 'acquaintance distance' and 'knowledge similarity' were considered equally",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of parameter value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "d65c59b9-3800-4a73-bca6-d38c545705bf",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C34",
+      "claim": "\u03b1 = 1 means that only knowledge similarity was considered.",
+      "claim_type": "EXPLICIT",
+      "source": "and \u03b1 = 1 meant that only 'knowledge similarity' was considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of parameter value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "79addf55-6054-428b-879a-7c96eee9bb46",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C35",
+      "claim": "Pairings between delegates who had previously collaborated were forbidden.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, pairings between delegates who had previously collaborated\u2014that is, whose acquaintance distance was equal to 1\u2014were forbidden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about algorithm constraint.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "bc2440c4-7d77-4905-9578-b5a0a8db3855",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C36",
+      "claim": "The Rogers and Tanimoto similarity measure penalized pairs with low overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity measure that we used (the Rogers and Tanimoto similarity measure) penalized pairs with low overlap, which led to the pronounced vertical and horizontal blue lines observed for the delegate familiar with 26 methods in B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about the similarity measure properties with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "2359d3ee-3ffe-4f23-a095-a9fdede87d40",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C37",
+      "claim": "For each round, the authors sought to find the 20 pairs that would minimize the sum of the two values.",
+      "claim_type": "EXPLICIT",
+      "source": "For each round, we sought to find the 20 pairs that would minimize the sum of the two values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the optimization objective.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "1de285e9-422e-4684-b895-5a7acee610c5",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C38",
+      "claim": "The pairing problem is a well-known problem in combinatorial optimization called the Maximum-Weight Perfect Matching Problem.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a well-known problem in combinatorial optimization, and is called the Maximum-Weight Perfect Matching Problem (Edmonds, 1965)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with citation to Edmonds, 1965.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "a176569f-5563-48ea-a443-e76ac7b6c22e",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C39",
+      "claim": "Several polynomial-time exact algorithms exist for solving the Maximum-Weight Perfect Matching Problem.",
+      "claim_type": "EXPLICIT",
+      "source": "several polynomial-time exact algorithms exist for solving this problem (Gabow and Tarjan, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with citation to Gabow and Tarjan, 1991.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "ef7731b2-75cd-4a1a-8008-9c22aa57bcdc",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C40",
+      "claim": "The number of one-way collaborations was significantly correlated with the number of methods known (r = 0.38, p-value = 0.015).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the number of one-way collaborations (where one delegate reports a collaboration but the other does not) was significantly correlated with the number of methods known (r = 0.38, p-value = 0.015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with statistical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "73442945-72a5-4109-9d93-f8915cf897a6",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C41",
+      "claim": "After pairings for one round had been solved, a further constraint was added to prevent the same pairs being selected again in future rounds.",
+      "claim_type": "EXPLICIT",
+      "source": "After the pairings for one round had been solved, we added a further constraint to prevent the same pairs being selected again in future rounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about algorithm implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "78f30088-a1ed-4d64-b96f-b174d0d88b6f",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C42",
+      "claim": "For each round, the algorithm was solving for the optimal pairs which simultaneously maximized new knowledge gained for all scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, for each round we were solving for the optimal pairs which simultaneously maximized new knowledge gained for all scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the optimization approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "0325b3d2-14c0-472c-9838-69e9fded84ad",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C43",
+      "claim": "The approach used was a greedy strategy where choices made in early rounds introduced constraints that may prevent the algorithm from finding a best solution for later rounds.",
+      "claim_type": "EXPLICIT",
+      "source": "This was a greedy strategy: choices made in early rounds introduced constraints (by reducing the number of possible pairs), which may prevent the algorithm from finding a best solution for later rounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about algorithm limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "e22c9c27-acdc-4272-8b00-0c546b4356aa",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C44",
+      "claim": "A future improvement could be to modify the implementation to maximise the sum of the distances across all rounds instead of finding the optimal match on a per-round basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence a future improvement of this approach could be to modify the above implementation to maximise the sum of the distances across all rounds, instead of finding the optimal match on a per-round basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "dfb71f43-860d-4310-a052-984c2f922459",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C45",
+      "claim": "The authors simulated what would happen during five rounds of speed dating with four different values of \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "To select an appropriate value of \u03b1, we simulated what would happen during five rounds of speed dating with four different values of this number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "6519cab2-8e37-4ef0-85a5-240979f591de",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C46",
+      "claim": "The average shortest path decreased quite rapidly, almost irrespective of the value of \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the meeting was quite small and the collaboration network was already quite dense to begin with, the average shortest path decreased quite rapidly, almost irrespective of the value of \u03b1 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 4A data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "7327abe6-a090-4763-bf3c-a8b44159ca0a",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C47",
+      "claim": "The amount of new knowledge gained increased with the value of \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the amount of new knowledge gained increased with the value of \u03b1 (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 4B data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "c84ce978-8b62-4de2-aae1-518da9dd7bdc",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C48",
+      "claim": "The authors used \u03b1 = 0.9 when calculating pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "so we used \u03b1 = 0.9 when calculating pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the parameter value used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "d3f309b2-ca92-498f-b596-5837463e9ee1",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C49",
+      "claim": "The shortest average path fell quickly with the number of rounds of speed dating, almost irrespective of the value of \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The shortest average path (A) fell quickly with the number of rounds of speed dating, almost irrespective of the value of \u03b1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "7102f814-f590-4fb1-a4ca-e9d38c045c2b",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C50",
+      "claim": "New knowledge gained increased with the value of \u03b1 because higher values of \u03b1 mean that delegates are more likely to be paired with someone who can tell them about new methods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, new knowledge gained (B) increased with the value of \u03b1: this is to be expected because higher values of \u03b1 mean that delegates are more likely to be paired with someone who can tell them about new methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with explanation supported by Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "5564f802-7c24-4909-a4fd-365eeb4eb371",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C51",
+      "claim": "In the second round of encounters, the goal was to match delegates who were expert in particular methods with delegates wanting to learn about those methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in the second round we sought to match delegates who were expert in particular methods with delegates wanting to learn about those methods (based on the data in Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the second round methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "5213eba9-13bf-4f6e-8731-1f824fdc6f5a",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C52",
+      "claim": "A 'matching knowledge distance' was computed to quantify how much the methods known by one participant resembled the methods sought by another and vice-versa.",
+      "claim_type": "EXPLICIT",
+      "source": "We did this by computing a 'matching knowledge distance', which quantified how much the methods known by one participant resembled the methods sought by another and vice-versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the metric definition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "eca285f5-5cf0-453c-99df-27d4cd1acbbc",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C53",
+      "claim": "The inverse of the matching knowledge distance was summed with the acquaintances distance, weighted by a parameter \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "We then summed the inverse of the 'matching knowledge distance' with the 'acquaintances distance', again weighted by a parameter \u03b1, and sought to maximise this sum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "286b418e-52bc-4006-9154-7338677ba062",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C54",
+      "claim": "The second round approach was popular, with a large proportion (>50%) of respondents indicating that this part of the meeting led to the establishment of new collaborations.",
+      "claim_type": "EXPLICIT",
+      "source": "This was a popular approach, with a large proportion (>50%) of the people who responded to the post-meeting questionaire indicating that this part of the meeting led to the establishment of new collaborations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with quantitative data from post-meeting questionnaire.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "3d85bedc-d0a8-43db-b4ba-28d124ed6ed6",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C55",
+      "claim": "The code used to generate the pairs is available on the github repository: https://github.com/FedericoV/conference_pairings.",
+      "claim_type": "EXPLICIT",
+      "source": "The code we used to generate the pairs for this paper is available on the github repository: https://github.com/FedericoV/conference_pairings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "28f9f466-b4d2-4da2-aaf5-96af3a622659",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C56",
+      "claim": "For very large conferences, it will be important to investigate the use of heuristics that allow the calculation of near-optimal solutions in a fraction of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "When using our approach for very large conferences, it will be important to investigate the use of heuristics that allow the calculation of near-optimal solutions in a fraction of the time, as the current exact algorithm has O(N^3) scaling (where N is the number of delegates at the meeting).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about future considerations with computational complexity reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "874c00b4-36fd-43e1-a933-633213d37036",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C57",
+      "claim": "The current exact algorithm has O(N^3) scaling where N is the number of delegates at the meeting.",
+      "claim_type": "EXPLICIT",
+      "source": "as the current exact algorithm has O(N^3) scaling (where N is the number of delegates at the meeting).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about computational complexity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "831b977c-256c-42c0-8e95-0a1ce5d821ee",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C58",
+      "claim": "Of the 24 delegates who commented on the approach in the post-meeting questionnaire, 21 (87.5%) were very enthusiastic and complimentary.",
+      "claim_type": "EXPLICIT",
+      "source": "of the 24 delegates who commented on it in the post-meeting questionnaire, 21 (87.5%) were very enthusiastic and complimentary",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with quantitative data from post-meeting questionnaire.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "83f66b4d-a3ec-4e87-a8d1-b0491ab0d203",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C59",
+      "claim": "12 delegates mentioned that potential new collaborations were emerging from discussions at the meeting.",
+      "claim_type": "EXPLICIT",
+      "source": "and 12 mentioned that potential new collaborations were emerging from discussions at the meeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with quantitative data from post-meeting questionnaire.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "8ff795ca-678a-4819-9845-8b767f7382ab",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C60",
+      "claim": "At larger meetings attended by many junior scientists, it would be interesting to use 'scientific seniority' as an additional criterion when calculating the distance between delegates.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, quite a few of the delegates at our meeting were lab heads, so at larger meetings attended by a lot of junior scientists it would be interesting to use 'scientific seniority' as an additional criterion when calculating the distance between delegates with a view to pairing these junior scientists with senior figures in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "a5918fe0-6451-4e0b-8189-12a2b6cb3ad6",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C61",
+      "claim": "Everyone attending the meeting could be asked what they hope to get out of the meeting, and then one could attempt to match everyone according to their own stated aims.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, everyone attending the meeting could be asked what they hope to get out of the meeting (e.g., to meet new people, to learn more about various methods, to meet lab heads who are recruiting, and so on), and then one could attempt to match everyone according to their own stated aims.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "81050f94-5ba6-4fc4-917f-37a5ef4abe02",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C62",
+      "claim": "Promoting interactions between 'distant' delegates at scientific meetings is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Delegates at scientific meetings can come from diverse backgrounds and use very different methods in their research. Promoting interactions between these 'distant' delegates is challenging",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "c649572c-98ef-4307-b680-e3b389ff1bec",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C63",
+      "claim": "Interactions between distant delegates could lead to novel interdisciplinary collaborations and unexpected breakthroughs.",
+      "claim_type": "EXPLICIT",
+      "source": "but such interactions could lead to novel interdisciplinary collaborations and unexpected breakthroughs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract expressing potential benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "9889db30-2912-4bfb-96f4-feb0defa0f30",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C64",
+      "claim": "The network-based speed dating approach allows initiation of distant interactions by pairing every delegate with another delegate who might be of interest to them but whom they might never have encountered otherwise.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a network-based 'speed dating' approach that allows us to initiate such distant interactions by pairing every delegate with another delegate who might be of interest to them, but whom they might never have encountered otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract about the approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "1f910c10-6423-4b7f-ae48-6c0b6615d8bc",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "claim_id": "C65",
+      "claim": "Some delegates already knew 10 or more other delegates before the meeting, whereas others knew just one or two.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) The collaboration network before the meeting: some delegates already knew 10 or more other delegates, whereas others knew just one or two.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bd8d1232-65b8-46bd-85b9-553e4987bb02",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior approaches to improving conference interactions include web-based technologies, virtual conferences, Twitter feedback, and random seating arrangements, with varying success across fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide appropriate context through citations to prior work (Ebner & Reinhardt 2009, Rigutto 2013, Briggs 2007, Picard 2009, Boyd 2009, Canning et al. 2013, Schall 2013) and describe an existing practice at Mathematisches Forschungsinstitut Oberwolfach. These establish the motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A satellite meeting with 40 interdisciplinary delegates was organized, with pre-meeting survey data showing wide variation in methodological knowledge (1-26 methods known, mean=6.6\u00b14.4) and a connected collaboration network where only 51% of relationships were mutually reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8-C22 provide descriptive statistics from the meeting setup and survey. While the data are clearly reported, C21's claim of no gender effects lacks statistical test details and may be underpowered with only 13 females. C19's explanation for asymmetric collaboration reporting is speculative. C40's correlation analysis (r=0.38, p=0.015) doesn't address multiple testing concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "646b08a1-0bab-48b0-a3b6-a11b768a2856",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The first speed dating session used a Maximum-Weight Perfect Matching algorithm to pair delegates based on weighted combination of acquaintance distance and knowledge similarity (\u03b1 parameter), optimizing for minimal overlap and maximal network distance while forbidding previous collaborators from pairing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C43 describe a well-defined algorithmic approach grounded in established combinatorial optimization theory (C38-C39 cite Edmonds 1965, Gabow & Tarjan 1991). The methodology is clearly specified with explicit definitions of metrics (C27-C29), parameter ranges (C31-C34), and constraints (C35). C43 appropriately acknowledges the greedy strategy limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "092c3d77-287b-4113-bd40-e6f293c7d1de",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulations across four \u03b1 values showed that average shortest path decreased rapidly regardless of \u03b1, while new knowledge gained increased with \u03b1, leading to selection of \u03b1=0.9 for implementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 describe simulation-based parameter selection with clear results shown in Figure 4. The rationale for choosing \u03b1=0.9 is logical given the goal of maximizing knowledge transfer. However, the simulation assumes the greedy algorithm performs similarly to optimal solutions, which C43 acknowledges may not be true.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "ad90fe51-0e27-4504-a8f3-373fa2536217",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A second speed dating round matched delegates expert in specific methods with those wanting to learn them using a 'matching knowledge distance' metric, with >50% of respondents reporting this led to new collaborations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C54 describe the second round methodology and report positive outcomes. However, C54's claim relies on self-reported questionnaire data without specifying response rate, exact percentage, or definition of 'new collaboration.' The lack of objective metrics or follow-up data makes it difficult to assess the actual impact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "020a48fd-cf85-4bd1-a6a9-3373c18829a0",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The implementation code is publicly available on GitHub, but the O(N\u00b3) computational complexity necessitates heuristic approaches for very large conferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 address reproducibility and scalability. C55 provides code availability, supporting reproducibility. C57's O(N\u00b3) complexity claim is consistent with cited algorithms (Gabow & Tarjan 1991), and C56 appropriately identifies the need for heuristics at scale. These are reasonable computational considerations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "bfb5262d-c524-427f-8d51-050b1407354d",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Post-meeting evaluation showed 87.5% (21/24) of respondents were enthusiastic about the approach, with 12 delegates reporting emerging collaborations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C59 report positive feedback but have significant limitations: only 24/40 delegates responded (60% response rate), creating potential response bias. The evaluation relies entirely on subjective self-reports without objective collaboration metrics, follow-up data, or comparison to control conditions. 'Emerging collaborations' is not operationally defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "26b81e0e-8faa-4ae7-b04a-63ede8e3097a",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Future improvements could include optimizing across all rounds simultaneously rather than greedily, incorporating scientific seniority as a matching criterion, and customizing pairings based on individual delegate goals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C60-C61 propose reasonable future directions based on identified limitations (C43's greedy strategy) and contextual considerations (meeting composition). These are appropriately framed as prospective work rather than validated improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    },
+    {
+      "id": "be80bb53-f96f-4024-8eec-826ce0a02673",
+      "content_id": "f51ead2d-9d26-4f1e-8a57-1cf0252341e9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The network-based speed dating approach addresses the challenge of promoting interactions between distant delegates at scientific meetings to facilitate interdisciplinary collaborations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 provide accurate high-level summary of the work's motivation and approach. C62 correctly identifies the challenge, C63 appropriately frames potential benefits as possibilities rather than proven outcomes, and C64 accurately describes the method. These claims are well-supported by the detailed methodology and results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:19.285459Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "62e5ee29-d094-4c3e-b7fb-3b383a46e05f",
+      "result_id": "bd8d1232-65b8-46bd-85b9-553e4987bb02"
+    },
+    {
+      "claim_id": "358467b1-b35a-4cfe-8e8d-354cb6918b8c",
+      "result_id": "bd8d1232-65b8-46bd-85b9-553e4987bb02"
+    },
+    {
+      "claim_id": "94904fe8-6f4a-4aa2-b828-4edf6cfd0e1f",
+      "result_id": "bd8d1232-65b8-46bd-85b9-553e4987bb02"
+    },
+    {
+      "claim_id": "8c061d1f-a72c-47b8-a8a4-5967dda050ad",
+      "result_id": "bd8d1232-65b8-46bd-85b9-553e4987bb02"
+    },
+    {
+      "claim_id": "ee7231c3-35ac-4b12-80b7-6478afc30898",
+      "result_id": "bd8d1232-65b8-46bd-85b9-553e4987bb02"
+    },
+    {
+      "claim_id": "d0169ed9-3067-4385-955e-0db70ee7dd4b",
+      "result_id": "bd8d1232-65b8-46bd-85b9-553e4987bb02"
+    },
+    {
+      "claim_id": "570118cb-8063-45be-b056-abf0d4863b75",
+      "result_id": "bd8d1232-65b8-46bd-85b9-553e4987bb02"
+    },
+    {
+      "claim_id": "3dbd9591-8c70-4171-8e38-ccd9c854c8e6",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "3cb1768a-b22c-410d-aeae-5b36992b7143",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "b7b1f442-dd67-4657-8bed-8b606573ce6b",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "47542479-c4e2-451b-82b6-17eec8fedbb4",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "14dc1c20-645e-43a1-9e5b-3c963839c7ff",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "aaa395f6-5397-4b3e-9ce2-016245d788d6",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "4e375635-c167-403a-98f5-bd6e27cd5334",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "c4d52d09-f4b7-4290-b973-fc644f831646",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "76835978-ade2-446b-8700-48fbacc0e1b1",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "2dd8ff79-709e-4aa6-b225-dcc3bfe8d131",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "53c0c5e9-f7f0-4b0f-b05d-28cbbf7fa768",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "f24fe7a2-4d49-49ca-a206-d60956f80ecb",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "d32195c4-0ac1-4107-ad3a-4f5cbd041b95",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "812b25ef-afc3-448a-bc2e-9097ef1e1afd",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "26e78637-2dcb-490e-ba79-796b3e40e589",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "1f910c10-6423-4b7f-ae48-6c0b6615d8bc",
+      "result_id": "d2ca75ba-df12-4c9a-9c4d-31d41a936643"
+    },
+    {
+      "claim_id": "961cd488-5b93-4eaa-b1b2-26763f650bdd",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "f84c1a0b-a6a2-4d79-a218-f3c04f4cc3e6",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "16323140-b1d2-4fe2-bcb6-92cbb54db416",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "730f6462-2a7c-4e07-8ead-5c0f676ee207",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "303d9f8b-46c9-4600-ba17-a5a27e9d6c89",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "969f1804-f43e-47b2-b26b-b763478507b9",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "64320931-be01-483d-9819-1a0c5244fe2a",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "21864041-b715-4bcb-bc1b-ed38c3b83be8",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "b5efcbf3-0660-44e7-afd2-ded7ed9bebf0",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "20db2d9d-2f7d-4450-8a82-60e42c3c004a",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "6552cb50-006d-4ec5-bfdb-055849bb93a0",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "d65c59b9-3800-4a73-bca6-d38c545705bf",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "79addf55-6054-428b-879a-7c96eee9bb46",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "bc2440c4-7d77-4905-9578-b5a0a8db3855",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "2359d3ee-3ffe-4f23-a095-a9fdede87d40",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "1de285e9-422e-4684-b895-5a7acee610c5",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "a176569f-5563-48ea-a443-e76ac7b6c22e",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "73442945-72a5-4109-9d93-f8915cf897a6",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "78f30088-a1ed-4d64-b96f-b174d0d88b6f",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "0325b3d2-14c0-472c-9838-69e9fded84ad",
+      "result_id": "646b08a1-0bab-48b0-a3b6-a11b768a2856"
+    },
+    {
+      "claim_id": "dfb71f43-860d-4310-a052-984c2f922459",
+      "result_id": "092c3d77-287b-4113-bd40-e6f293c7d1de"
+    },
+    {
+      "claim_id": "6519cab2-8e37-4ef0-85a5-240979f591de",
+      "result_id": "092c3d77-287b-4113-bd40-e6f293c7d1de"
+    },
+    {
+      "claim_id": "7327abe6-a090-4763-bf3c-a8b44159ca0a",
+      "result_id": "092c3d77-287b-4113-bd40-e6f293c7d1de"
+    },
+    {
+      "claim_id": "c84ce978-8b62-4de2-aae1-518da9dd7bdc",
+      "result_id": "092c3d77-287b-4113-bd40-e6f293c7d1de"
+    },
+    {
+      "claim_id": "d3f309b2-ca92-498f-b596-5837463e9ee1",
+      "result_id": "092c3d77-287b-4113-bd40-e6f293c7d1de"
+    },
+    {
+      "claim_id": "7102f814-f590-4fb1-a4ca-e9d38c045c2b",
+      "result_id": "092c3d77-287b-4113-bd40-e6f293c7d1de"
+    },
+    {
+      "claim_id": "5564f802-7c24-4909-a4fd-365eeb4eb371",
+      "result_id": "ad90fe51-0e27-4504-a8f3-373fa2536217"
+    },
+    {
+      "claim_id": "5213eba9-13bf-4f6e-8731-1f824fdc6f5a",
+      "result_id": "ad90fe51-0e27-4504-a8f3-373fa2536217"
+    },
+    {
+      "claim_id": "eca285f5-5cf0-453c-99df-27d4cd1acbbc",
+      "result_id": "ad90fe51-0e27-4504-a8f3-373fa2536217"
+    },
+    {
+      "claim_id": "286b418e-52bc-4006-9154-7338677ba062",
+      "result_id": "ad90fe51-0e27-4504-a8f3-373fa2536217"
+    },
+    {
+      "claim_id": "3d85bedc-d0a8-43db-b4ba-28d124ed6ed6",
+      "result_id": "020a48fd-cf85-4bd1-a6a9-3373c18829a0"
+    },
+    {
+      "claim_id": "28f9f466-b4d2-4da2-aaf5-96af3a622659",
+      "result_id": "020a48fd-cf85-4bd1-a6a9-3373c18829a0"
+    },
+    {
+      "claim_id": "874c00b4-36fd-43e1-a933-633213d37036",
+      "result_id": "020a48fd-cf85-4bd1-a6a9-3373c18829a0"
+    },
+    {
+      "claim_id": "831b977c-256c-42c0-8e95-0a1ce5d821ee",
+      "result_id": "bfb5262d-c524-427f-8d51-050b1407354d"
+    },
+    {
+      "claim_id": "83f66b4d-a3ec-4e87-a8d1-b0491ab0d203",
+      "result_id": "bfb5262d-c524-427f-8d51-050b1407354d"
+    },
+    {
+      "claim_id": "e22c9c27-acdc-4272-8b00-0c546b4356aa",
+      "result_id": "26b81e0e-8faa-4ae7-b04a-63ede8e3097a"
+    },
+    {
+      "claim_id": "8ff795ca-678a-4819-9845-8b767f7382ab",
+      "result_id": "26b81e0e-8faa-4ae7-b04a-63ede8e3097a"
+    },
+    {
+      "claim_id": "a5918fe0-6451-4e0b-8189-12a2b6cb3ad6",
+      "result_id": "26b81e0e-8faa-4ae7-b04a-63ede8e3097a"
+    },
+    {
+      "claim_id": "81050f94-5ba6-4fc4-917f-37a5ef4abe02",
+      "result_id": "be80bb53-f96f-4024-8eec-826ce0a02673"
+    },
+    {
+      "claim_id": "c649572c-98ef-4307-b680-e3b389ff1bec",
+      "result_id": "be80bb53-f96f-4024-8eec-826ce0a02673"
+    },
+    {
+      "claim_id": "9889db30-2912-4bfb-96f4-feb0defa0f30",
+      "result_id": "be80bb53-f96f-4024-8eec-826ce0a02673"
+    }
+  ],
+  "comparisons": []
+}

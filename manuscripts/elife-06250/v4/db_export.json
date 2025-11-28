@@ -1,0 +1,1390 @@
+{
+  "submission": {
+    "id": "475ddf06-0143-4fa4-9fd9-9145aa1be3ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:44:53.008080Z",
+    "updated_at": "2025-11-28T22:44:53.008080Z"
+  },
+  "content": [
+    {
+      "id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "submission_id": "475ddf06-0143-4fa4-9fd9-9145aa1be3ed",
+      "content_type": "manuscript",
+      "content_text": "# General features of the retinal connectome determine the computation of motion anticipation\n\n## Authors\n\n- Jamie Johnston<sup>1</sup> \u2020\n- Leon Lagnado<sup>1</sup>\n\n### Affiliations\n\n1. School of Life Sciences University of Sussex Brighton United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMotion anticipation allows the visual system to compensate for the slow speed of phototransduction so that a moving object can be accurately located. This correction is already present in the signal that ganglion cells send from the retina but the biophysical mechanisms underlying this computation are not known. Here we demonstrate that motion anticipation is computed autonomously within the dendritic tree of each ganglion cell and relies on feedforward inhibition. The passive and non-linear interaction of excitatory and inhibitory synapses enables the somatic voltage to encode the actual position of a moving object instead of its delayed representation. General rather than specific features of the retinal connectome govern this computation: an excess of inhibitory inputs over excitatory, with both being randomly distributed, allows tracking of all directions of motion, while the average distance between inputs determines the object velocities that can be compensated for.\n\n## Introduction\n\nThe brain estimates the location of an object in visual space by reading out which retinal ganglion cells (RGCs) respond to it. This \u2018retinotopic map\u2019 is preserved through the visual pathway and is used to guide behaviour (Hubel and Wiesel, 1962; Malpeli and Baker, 1975; Bonin et al., 2011). There is, however, a problem to overcome when this map is used to estimate the position of a moving object: the slow speed with which photoreceptors convert light into an electrical signal causes RGCs to respond \u223c70 ms after an object first appears (Baylor and Hodgkin, 1974). During this delay, a tennis ball served by a professional player will have travelled \u223c3\u20134 m. The fact that the position of the ball can be estimated precisely enough to meet it with a racquet demonstrates that the visual system is able to overcome the phototransduction delay for moving stimuli. Together, these computations are termed motion anticipation, and they begin in the inner retina (Berry et al., 1999): when a stimulus is moving, the peak-firing rate of retinal ganglion cells (RGCs) occurs earlier than expected from the delayed response to a flashed stimulus. This correction supports accurate target tracking in salamander (Leonardo and Meister, 2013).\n\nAlthough the retina is capable of processing the visual input in a variety of ways, we still do not understand how most of these transformations are achieved (Olveczky et al., 2003; M\u00fcnch et al., 2009; Gollisch and Meister, 2010; B\u00f6linger and Gollisch, 2012). One aspect of motion processing that is understood in detail is the generation of directionally selective responses peculiar to a small subset of RGCs (Borst and Euler, 2011). Analysis of neuronal connectivity using large-scale electron microscopy has demonstrated that this computation involves asymmetric connections with a specific type of inhibitory interneuron, the starburst amacrine cell (Briggman et al., 2011), which has dendrites that are themselves directionally selective (Hausselt et al., 2007; Yonehara et al., 2013). Motion anticipation appears to be a more fundamental retinal computation than directional selectivity because it is observed in the large majority of ganglion cells, of different functional types and across many species (Berry et al., 1999; Schwartz et al., 2007). We do not understand how the retina generates motion anticipation, but the ubiquity of this process across ganglion cell types suggests that it reflects general properties of the inner retinal circuit rather than the specific wiring of subtypes of neuron. A fast decrease in the gain with which signals are transmitted through the retina has been proposed to account for motion anticipation, but the site(s) of such control have not been identified (Berry et al., 1999; Schwartz et al., 2007; Chen et al., 2013). One possibility is that moving stimuli induce a fast decrease in the efficiency of excitatory transmission from bipolar cells to ganglion cells, shortening the time-course of excitation. This idea is attractive because bipolar cells are the only route by which excitatory signals are transmitted to ganglion cells, and these synapses have been identified as a major site of gain-control, with an increase in temporal contrast causing fast depression of vesicle release (Demb, 2008; Jarsky et al., 2011; Nikolaev et al., 2013). A second possibility is that some mechanism intrinsic to ganglion cells alters the time-course of the ganglion cell response (Chen et al., 2013). We now need to test these various possibilities experimentally.\n\nWe have used electrophysiology and modelling to investigate the mechanisms of motion anticipation and find that it is not usually exerted through changes in the excitatory inputs to RGCs, but rather depends on the shunting effect of inhibition that RGCs receive from amacrine cells. The non-linear interaction between excitatory and inhibitory synapses is a result of the passive properties of the dendritic tree and remains intact when active conductances are blocked. Motion anticipation operates across most ganglion cells because it depends on general rather than specific features of the retinal connectome: independent and random distributions of excitatory and inhibitory synapses on RGCs (Freed and Sterling, 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Jakobs et al., 2008; Xu et al., 2008; Schwartz et al., 2012); an excess of inhibitory inputs (West, 1976; Koontz and Hendrickson, 1987; Freed and Sterling, 1988; Marshak et al., 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Haverkamp et al., 1997; Zhu and Gibbins, 1997; Owczarzak and Pourcho, 1999; Marshak et al., 2002; Jakobs et al., 2008; Koizumi et al., 2011), and an average excitatory synaptic spacing along dendrites of \u223c5 \u00b5m (Freed and Sterling, 1988; Jakobs et al., 2008; Xu et al., 2008; Koizumi et al., 2011). The excess of inhibitory inputs allows tracking of all directions of motion, while the average distance between excitatory inputs determines the object velocities that can be compensated for. This study demonstrates how a computation fundamental to the retinal circuit can be understood in terms of general properties of the connectome and the cable properties of dendrites.\n\n## Results\n\n### Motion anticipation does not result from changes in the gain of excitatory transmission\n\nThe basic phenomenon of motion anticipation is demonstrated in Figure 1, where we recorded extracellular spikes from individual RGCs in retinal flat-mounts from goldfish. The receptive field (RF) of each ganglion cell was mapped using bars flashed in a random order across the retina (Johnston et al., 2014), and then a bar was flashed onto the centre of the receptive field: the delay to peak firing averaged 62 \u00b1 3 ms, largely reflecting the delay in phototransduction (Baylor and Hodgkin, 1974) (n = 25; Figure 1A,C). But when the same bar (\u2212100% contrast; 160 \u00b5m wide, equivalent to 2.4\u00b0 of visual angle) was moved across the retina at 500 \u03bcm s\u22121 (7.5\u00b0 s\u22121), the peak spike rate occurred 46 \u00b1 13 ms (n = 25) before the leading edge reached the receptive field centre and then activity decayed before the bar left (Figure 1B,C). The time at which a RGC responded most strongly therefore encoded the anticipated position of the bar in retinotopic space (Berry et al., 1999) (Figure 1B,C). Motion anticipation was observed across many functional types of ganglion cell, including brisk-transient, brisk-sustained and orientation selective cells. RGCs with larger RFs tended to display greater anticipation, with RF size accounting for 35% of the observed variance in the delays for motion (Pearson's r = \u22120.593, n = 25, Figure 1D). The three cells that failed to show any motion anticipation also had the smallest RF size.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06250/elife-06250-fig1-v4.jpg)\n\n**Figure 1.:** (A) An example of two ganglion cells responding to a bar flashed on their receptive field centres for 100 ms (\u2212100% contrast). (B) The response of the same cells to a bar of width 160 \u00b5m (2.4\u00ba) moving at 500 \u00b5m s\u22121 (7.5\u00ba s\u22121). The position of the bar relative to a cell's receptive field is shown above for the different time points indicated by the lettered arrows. (C) A comparison of the delay for the maximal response to a flashed stimulus (62 \u00b1 2.6 ms) and the time of maximal spiking to a moving stimulus relative to the time at which the stimulus reached the centre of the RF (\u221246 \u00b1 12.6 ms; n = 25 ganglion cells; p < 0.0001). BT = Brisk-transient, BS = Brisk Sustained, OS = Orientation-selective, see \u2018Materials and methods\u2019 for cell classification. (D) The degree of motion anticipation was correlated with the RF size (Pearson's r = \u22120.593, n = 25). (E) Schematic of retinal feedback circuits in the inner plexiform layer (IPL), excitation and inhibition are represented by green and red arrows respectively. (F) Schematic of feed-forward inhibition in the IPL. (G) The dynamics of the EPSC evoked by a \u2212100% contrast bar flashed over the RGCs RF centre for 320 ms. Individual cells were normalised before averaging (n = 12, SEM in grey). (H) Example of the EPSC recorded as a bar moves across the receptive field of an OFF ganglion cell (average of six presentations). The peak EPSC lags behind the receptive field centre by 79 \u00b1 17 \u03bcm (1.2 \u00b1 0.3\u00ba, n = 7). The purple line indicates the expected linear response obtained from convolution of the receptive field with the EPSC in F. The motion evoked EPSC was not significantly different from the expected linear response, indicating that lateral inhibition is not present (using the Kolmogorov\u2013Smirnov test, n = 7). (I) Orientation selective cells did show a clear indication of lateral inhibition (n = 2).\n\nThe timing of the peak spike response in RGCs might be brought forward if a moving stimulus caused excitation in the ganglion cell to be truncated soon after it began (Berry et al., 1999). Such a rapid decrease in the gain of the excitatory input might be caused by (i) depression intrinsic to the bipolar cell synapse, as occurs during contrast adaptation (Rieke, 2001; Demb, 2008; Nikolaev et al., 2013) and/or (ii) feedback inhibition, either reciprocal or lateral, that bipolar cell terminals receive from amacrine cells (Roska et al., 2000; Tanaka and Tachibana, 2013) (Figure 1E). Alternatively, truncation of the spike response might reflect feedforward inhibition from amacrine cells onto RGCs (Figure 1F). To differentiate between these possibilities, we began by isolating the excitatory postsynaptic current in ganglion cells and asking whether the excitatory input generated by a moving stimulus displayed any degree of motion anticipation.\n\nOur standard moving stimulus, a bar 2.4\u00b0 wide moving at 7.5\u00b0 s\u22121, spends 320 ms at any one point on the retina. When this bar was presented statically for 320 ms over the RF centre, the bipolar cell input decreased rapidly after a short delay (Figure 1G, n = 12). This decay reflects a combination of two mechanisms controlling the output from bipolar cells: feedback inhibition from amacrine cells (Roska et al., 2000; Tanaka and Tachibana, 2013) and depression intrinsic to the synaptic terminal, which reflects depletion of vesicles in a state ready for rapid fusion (Rieke, 2001; Demb, 2008; Nikolaev et al., 2013). To test whether these presynaptic mechanisms of gain control could generate motion anticipation in RGCs we measured the time-course of the EPSC in response to the moving bar. In 7 out of 9 RGCs the peak excitatory input was delayed, occurring 158 \u00b1 34 ms after the bar reached the receptive field centre (Figure 1H, black trace), demonstrating that the fast gain reduction in the EPSC was not sufficient to generate motion anticipation. Further, the time-course of the EPSC induced by motion was not significantly different from the linear response predicted by convolving the dynamics of the static EPSC measured in Figure 1F with each ganglion cell's RF (Kolmogorov\u2013Smirnov test, n = 7), indicating that there was no correction at all for the lag in phototransduction. These results rule out events at the bipolar cell terminal as a mechanism of motion anticipation, be they intrinsic depression, feedback inhibition or lateral inhibition (Figure 1E).\n\nTwo RGCs that we recorded from provided an interesting exception to this pattern: the motion-induced EPSC was significantly truncated over the latter half of the receptive field compared to the linear prediction (Figure 1I). Notably, these were the only two RGCs out of 25 that we sampled to show orientation-selective responses. However, the large majority of RGCs in goldfish and other species are not orientation-selective (Levick, 1967), indicating that most signals transmitted by bipolar cells are not corrected for the lag in phototransduction.\n\n### Feedforward inhibition is necessary for motion anticipation\n\nThe result in Figure 1 immediately suggest that the inhibitory input which RGCs receive directly from amacrine cells (Lukasiewicz and Werblin, 1990; Roska et al., 2000; Masland, 2012; Cafaro and Rieke, 2013) may be responsible for motion anticipation. To test the role of feedforward inhibition we measured the motion response of individual RGCs before and after the selective disruption of their inhibitory inputs. Figure 2A shows a RGC's spiking in response to the standard moving stimulus, recorded in cell-attached mode. As usual, firing occurred just before the leading edge reached the receptive field centre (average of 18 \u00b1 10 ms, n = 6). We then disrupted inhibition in this single ganglion cell by going into whole-cell mode and dialyzing the cell with an intracellular solution containing 120 mM Cl\u2212 (Figure 2A, grey). The advantage of this approach over pharmacology or genetic manipulation is that it acutely disrupts the inhibition impinging on a single RGC while leaving excitatory inputs and the rest of the retinal circuitry intact; a similar approach was used to demonstrate direction selectivity occurs postsynaptically in direction-selective RGCs (Taylor et al., 2000). Disrupting inhibitory inputs greatly enhanced the response to a moving bar, indicating that under normal circumstances inactivation of Nav channel does not attenuate the RGC response to motion. Importantly, with inhibition disrupted, the location of the peak firing became delayed occurring 210 \u00b1 26 ms after the stimuli had reached the RF centre (Figure 2C, p < 0.0002). In contrast, for the four cells tested, the delay for a flash was unaffected by disrupting inhibition (64.4 \u00b1 8.7 ms vs 62.7 \u00b1 5.2 ms, Figure 2D). We conclude that feedforward inhibition from amacrine cells to RGCs plays the major role in correcting for the lag in phototransduction allowing the retina to correctly signal the position of a moving object.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06250/elife-06250-fig2-v4.jpg)\n\n**Figure 2.:** (A) Top: cell-attached recording from a single RGC as a 160 \u00b5m bar moves across the retina at 500 \u00b5m s\u22121 (7.5\u00b0 s\u22121). Middle: whole-cell recording in the same cell 15 min after going whole-cell with 120 mM Cl\u2212 in the pipette. Bottom: spike-time histograms calculated from 20 repetitions of the stimulus for each condition. (B) The normalised spike rates from a plotted as a function of the distance of the bars leading edge from the RF centre, which is shown below in red. (C) When inhibition was disrupted by introduction of high Cl\u2212, the peak spike rate shifted from \u221218 \u00b1 11 ms before the leading edge reached the centre to 209 \u00b1 26 ms after the centre was traversed (n = 6; p = 0.0002). (D) The delay in response to a flash was not affected by disruption of inhibition (64.4 \u00b1 8.7 ms vs 62.7 \u00b1 5.2 ms, n = 4).\n\n### The passive properties of dendrites are sufficient to account for motion anticipation\n\nTo investigate the biophysical basis of motion anticipation we constructed computational models of three RGCs whose morphologies were recovered with 2-photon microscopy (Figure 3C). Although many neurons contain active dendritic conductances (Magee and Johnston, 1995; Bischofberger and Jonas, 1997; Hausselt et al., 2007), including some RGCs (Oesch et al., 2005; Sivyer and Williams, 2013), we began by exploring the simpler situation in which excitatory and inhibitory conductances interact with just passive properties, as this is the backbone for electrical signaling in dendrites (London and H\u00e4usser, 2005). The time-course of synaptic conductance changes used in simulations mimicked those measured experimentally (Figure 3A), and the average density of synaptic inputs over the dendritic trees also matched known distributions with around one excitatory synapse per 5 \u00b5m of dendrite (Freed and Sterling, 1988; Jakobs et al., 2008; Xu et al., 2008) and a \u223c2:1 ratio of excitatory to inhibitory synapses, reflecting the ratio of the inhibitory to excitatory conductance measured over the receptive field centre (Figure 3B, 2.1 \u00b1 0.23, n = 10). Electron microscopy has consistently demonstrated that inhibitory synapses outnumber excitatory inputs in RGCs and the 2:1 ratio we used for simulations is relatively conservative; inhibition-to-excitation (I/E) ratios up to 5:1 have been observed in some ganglion cell types (Freed and Sterling, 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Owczarzak and Pourcho, 1999). These synapses were distributed randomly over the dendritic tree, with the total numbers of 2960, 3450 and 3120 in the three reconstructed cells that we used. Full details of the simulations are provided in \u2018Materials and methods\u2019.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06250/elife-06250-fig3-v4.jpg)\n\n**Figure 3.:** (A) The time course of the synaptic inputs used in the model were constructed with piecewise functions fit to the synaptic conductance evoked from a 320 ms \u2212100% contrast step over the RF centre, equivalent to the stimulus that the moving bar generates at any one point on the retina (average data shown in black and fits in colour; see \u2018Materials and methods\u2019). (B) The inhibitory-to-excitatory conductance ratio measured over the RF centre in response to \u2212100% contrast bar was 2.1 \u00b1 0.23 (n = 10). (C) Line drawings of the 3 RGCs used for modeling, with Sholl plots to their right indicating the number of dendritic crossings for spheres of increasing distance from the soma. Excitatory synapses were placed randomly across the dendritic trees to give an average inter-synapse distance of 4.7 \u00b5m. Inhibitory synapses were also distributed randomly giving inhibitory to excitatory synapse ratios of 2.36:1, 2.04:1 and 2.41:1 for the three RGCs shown. All synapses had identical weights. (D) The output of each model RGC in response to a 160 \u00b5m bar moving across its dendritic field at 500 \u00b5m s\u22121, with (black) and without inhibition (grey), the corresponding RF is shown below in red. (E) Motion anticipation was robust to changes in the membrane resistance (Rm) and axial resistance (Ri).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06250/elife-06250-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Note the peak EPSC occurred with a delay for the three model RGCs, similar to the data in Figure 1H.\n\nWhen the receptive field of these model neurons was probed by mimicking flashed bars, it reproduced a Gaussian receptive field similar to that measured experimentally (Figures 1, 3D). Crucially, the EPSPs arriving at the soma displayed motion anticipation when tested with our standard moving bar stimulus (Figure 3D), demonstrating that the passive interactions of excitatory and inhibitory synaptic inputs are sufficient to generate motion anticipation. The model also predicted the effects observed experimentally after disrupting inhibition: when inhibitory synapses were removed, the peak EPSP was delayed, occurring 163 ms after the bar entered the receptive field. These basic features of motion anticipation were observed in all of the modelled RGCs, despite their different branching patterns (Figure 3C,D). Consistent with our observations in Figure 1, the voltage-clamped excitatory currents in these model ganglion cells failed to display motion anticipation (Figure 3\u2014figure supplement 1).\n\nThe integration of voltages in dendrites is dependent on the membrane resistance (Rm) and intracellular resistance (Ri) (Rall, 1957), and in the RGCs that we recorded from, Rm varied from 83 M\u03a9 to 580 M\u03a9, with a median of 218 M\u03a9 (n = 37). The ability of feedforward inhibition to generate motion anticipation was robust to variations in both Rm and Ri over this range, but was destroyed once Rm fell to 50 M\u03a9 (Figure 3E). These simulations therefore indicate that the passive cable properties of RGCs can account for motion anticipation across different dendritic morphologies and electrical properties of RGCs.\n\n### Active dendritic conductances are not necessary for motion anticipation\n\nVoltage-sensitive channels in dendrites can modulate integration of synaptic inputs; for example, NMDA receptors boost EPSPs that are activated in a temporal order moving towards the soma (Branco et al., 2010) and a proximal-to-distal gradient of voltage-sensitive Ca2+ channels in the dendrites of starburst amacrine cells acts to boost EPSPs moving from the soma toward distal dendrites (Hausselt et al., 2007). To test directly whether active conductances were required to generate motion anticipation, we recorded from ganglion cells whose dendrites were made passive by dialysis of 2 mM MK-801 and 10 mM QX-314-Bromide; together these, substances block NMDA receptors and voltage-sensitive Na+ and Ca2+ channels (Talbot and Sayer, 1996; Kuzmiski et al., 2010). In addition to preventing any dendritic boosting of EPSPs, the somatic Nav channels were also blocked allowing us to observe the generator potential responsible for spiking. About 10 min after achieving whole-cell access we verified that the drugs had blocked voltage-gated channels by delivering a depolarizing current injection; by this time spikes were blocked and the resultant depolarization was well fit by a single exponential (Figure 4A). In separate experiments we found that 10 min was sufficient to completely fill the dendritic tree of ganglion cells with Alexa 488, which has a molecular weight around twice that of MK-801 and QX-314. We provided our standard moving stimulus to these passive cells and compared the motion-evoked EPSP to the expected linear response, obtained by convolution of the flash response with the measured RF (Figure 4B). All cells had EPSPs that peaked significantly earlier than the expected linear response (p = 0.0002, n = 7), occurring 47 \u00b1 29 ms before the stimuli reached the RF centre and this was not significantly different to the time of peak spike rate observed for the cells in Figure 1 (47 \u00b1 29 ms, n = 7 vs 46 \u00b1 13 ms, n = 25, p = 0.9844). These results indicate that active conductances are not necessary for the computation of motion anticipation in the dendrites of RGCs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06250/elife-06250-fig4-v4.jpg)\n\n**Figure 4.:** (A) Ganglion cells were dialyzed with 2 mM MK801 and 10 mM QX-314-Bromide. The efficacy of these drugs was assessed by attempting to fit a large step depolarization with a single exponential; the depolarization was well fit after 10 min of dialysis. (B) The EPSP evoked by a 160 \u00b5m (2.4\u00ba) bar flashed for 320 ms over the RF centre of the same ganglion cell in a with passive dendrites. (C) Example of the EPSP recorded as a bar moves across the receptive field of an OFF ganglion cell (average of 10 presentations). The EPSP is plotted as a function of the bar's location within the RF and the purple trace below, shows the expected linear response obtained by convolution of the EPSP from B with the RF. (D) The average delay for EPSPs in RGCs with passive dendrites was \u221247.2 \u00b1 29.4 ms, whereas the expected linear response was always delayed with an average of 233.84 \u00b1 19.6 ms (n = 7, p = 0.0002). The delays for the three models are shown in purple, with the linear response representing the model with only excitation.\n\nThe ability of the retina to correct for the delay in phototransduction breaks down at high velocities (Berry et al., 1999). We plotted the location of maximal spiking relative to the receptive field centre as a function of velocity for 26 ganglion cells recorded on a multi-electrode array and found that motion anticipation occurred when the bar moved at velocities between 3.8\u00b0 s\u22121 (250 \u03bcm s\u22121) and 14.7\u00b0 s\u22121 (1000 \u03bcm s\u22121) but not at 27.8\u00b0 s\u22121 (2000 \u03bcm s\u22121) or higher (Figure 5A). This behaviour was closely reproduced by the model (Figure 5A), which also predicted breakdown at velocities higher than \u223c14.7\u00b0 s\u22121 (1000 \u03bcm s\u22121, Figure 5B). The velocity at which motion anticipation decreased is similar to that observed in salamander for similar sized objects (Leonardo and Meister, 2013). Passive integration of synaptic inputs is therefore sufficient to provide a quantitative account of several fundamental features of motion anticipation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06250/elife-06250-fig5-v4.jpg)\n\n**Figure 5.:** (A) Black traces show the spike histograms from a single cell for a 160 \u00b5m bar moving at different velocities plotted against the position of the leading edge relative to the RF centre (average of 30 presentations). Purple traces show the average response of the model (RGC2) to the same stimulus parameters, with an I/E ratio of 2.04:1. Note that the peak EPSP starts to lag behind the receptive field centre at higher velocities. (B) The average amount of anticipation plotted against velocity for 26 OFF ganglion cells (black, \u00b1SD). Motion anticipation operated until a velocity of about 1 mm s\u22121, as also predicted by the three models (purple).\n\n### A biophysical explanation of motion anticipation\n\nMotion anticipation causes a ganglion cell to spike preferentially when an object enters its receptive field, and we have shown that feedforward inhibition is necessary for this phenomenon (Figures 2\u20135). But why does inhibition have a stronger effect over the latter half of the receptive field? To investigate the biophysical mechanisms underlying motion anticipation in more detail, we explored a model RGC with a radially symmetric dendritic tree. Figure 6A plots the membrane potential across a dendrite spanning the receptive field as a bar moves across, and compares this to the voltage experienced by the soma. In the absence of inhibition, the somatic voltage was an accurate reflection of the depolarization seen in the dendrites (Figure 6A, left). However, with inhibition present, this was only the case for the first half of the RF, once the stimulus crossed the RF centre dendritic depolarizations had less influence on the somatic voltage. As a result, the peak excitatory drive occurred close to when the bar traversed the RF centre.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06250/elife-06250-fig6-v4.jpg)\n\n**Figure 6.:** (A) Heat plots of the voltage across the dendritic tree of a simplified model RGC as a function of time in response to a moving bar. The voltage at the soma is plotted below. Left: with only excitation present the somatic voltage follows the voltage seen in the dendrites. Right: with inhibition present, the somatic voltage only followed dendritic excitation in the first half of the RF, then hyperpolarized as the bar moved across the remainder. Note: the arrow marked a represents the stimulus entering the RF; b is time zero, when the leading edge reaches the RF centre, and c marks the leading edge reaching the distal edge of the dendritic field. (B) The positions of inhibitory synapses (red) relative to excitatory synapses (green) strongly affects the depolarisation observed at the soma. Left: For a stimulus moving across the initial half of the RF, distal inhibition is activated first attenuating depolarisation of the soma only modestly. The red voltage trace is the somatic response with inhibition present and the green trace is with only excitation. Middle: Proximal inhibition in the initial half of the receptive field has little effect on spiking as these synapses are activated later than the distal excitation. Right: For a stimulus moving across the distal half of the RF, proximal inhibition is activated before distal excitation and is very effective at reducing depolarisation of the soma by more distal excitatory synapses.\n\nWhy does the latter half of the dendritic field appear to electrically uncouple from the soma? In a landmark theoretical study Koch et al. laid out the conditions that make inhibitory synaptic inputs most effective at counteracting excitatory inputs: (a) inhibitory inputs should be located on the path between the excitatory synapse and the soma (i.e., proximally along the dendrite), and (b) inhibitory inputs should be activated before the distal excitatory synapse (Koch et al., 1983; Liu, 2004; Hao et al., 2009; Pouille et al., 2013). Satisfying these conditions depends critically on whether the object is moving towards the soma or away from it. This idea is explained further in Figure 6B where we examined the influence of a single inhibitory synapse on the ability of a single excitatory synapse to depolarize the soma. As the moving stimulus enters the receptive field an inhibitory input distal to the soma is activated first (Figure 6B, left), but it fails to attenuate depolarization because it is not on the path between the excitatory synapse and the soma (condition a). If the inhibitory input is located proximal to the excitatory input, it will still be ineffective because it is activated after the excitatory drive has reached the soma (Figure 6B, middle; condition b). Only when the stimulus is traversing the latter half of the RF does proximal inhibition occur just before distal excitation to \u2018cut-out\u2019 excitation reaching the soma (Figure 6B, right). In this way, the peak-firing rate is brought \u2018forward\u2019 in time to compensate for the delay inherent in phototransduction.\n\n### Motion anticipation depends on a general feature of the retinal connectome\n\nThe conditions in which proximal inhibition blocks excitation arriving at the soma that were laid out by Koch et al., 1983 immediately suggest a wiring rule for the generation of motion anticipation: place inhibitory synapses in positions proximal to nearby excitatory synapses. Motion anticipation operates for objects moving across the receptive field in any direction, so this pattern would be expected across the whole dendritic tree. Such an organization might be achieved if developmental processes cause inhibitory synapses to be placed systematically in positions proximal to the nearest excitatory synapse. Such a specific wiring rule does not, however, fit with anatomical studies, which consistently indicate that excitatory and inhibitory inputs are distributed independently and at uniform density along RGC dendrites (Freed and Sterling, 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Owczarzak and Pourcho, 1999; Jakobs et al., 2008; Xu et al., 2008; Schwartz et al., 2012). These two constraints, proximal inhibition across the whole dendritic tree, together with random positioning of synapses, would be satisfied if there are more inhibitory inputs per dendrite than excitatory ones, and this is observed: anatomical studies consistently demonstrate that inhibitory synapses outnumber their excitatory counterparts in the large majority of RGCs (West, 1976; Koontz and Hendrickson, 1987; Freed and Sterling, 1988; Marshak et al., 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Haverkamp et al., 1997; Zhu and Gibbins, 1997; Owczarzak and Pourcho, 1999; Marshak et al., 2002; Jakobs et al., 2008; Koizumi et al., 2011).\n\nTo investigate how the ratio of inhibition to excitation affected the generation of motion anticipation we carried out simulations in which we varied the number of inhibitory inputs in the model cells. When the ratio of inhibition to excitation (I/E) was increased, the resultant EPSPs became smaller (Figure 7A) and the peak of the EPSP shifted forward in time (Figure 7B). In two of the model ganglion cells, the temporal shift in the time-course of excitation began with I/E > 1, while in the third neuron it began with I/E > 2 (Figure 7C). These observations confirm that the generation of motion anticipation requires an excess of inhibitory inputs when synaptic sites are positioned randomly and independently over the dendritic tree.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/06250/elife-06250-fig7-v4.jpg)\n\n**Figure 7.:** (A) The output of a model RGC in response to the standard moving stimulus for various ratios of inhibitory to excitatory synapses. The number of excitatory synapses was fixed and the darkest trace represents 0 inhibitory synapses. As expected the amplitude of the response becomes smaller with increased inhibition. (B) The amplitudes of the EPSPs in a, normalised to compare the time course of the EPSPs. Note that as inhibition increases the peak of the EPSP moves forward in time, no longer occurring with a delay. (C) The amount of motion anticipation plotted as a function of the inhibition to excitation ratio (I/E). Note that motion anticipation emerges as the inhibitory synapses start to outnumber the excitatory. (D) The velocity dependence of motion anticipation was influenced by the synaptic density. The density of synapses was varied for RGC2 while keeping the I/E ratio fixed. Densities shown for excitatory (E) and inhibitory (I) as synapses \u00b5m\u22121.\n\nThe ability of the retinal circuit to extrapolate motion breaks down at higher object velocities, measured as greater than 1 mm s\u22121 in most RGCs in salamander, rabbit and goldfish (Berry et al., 1999; Figure 5B). What aspect of the circuit determines this fundamental characteristic? Our simulations demonstrated that a key variable was the average distance between excitatory and inhibitory inputs. Several authors have noted that the distance between excitatory synapses is surprisingly consistent over the dendritic tree of most ganglion cells and across many species, at \u223c1 synapse per 5 \u00b5m (Freed and Sterling, 1988; Jakobs et al., 2008; Xu et al., 2008; Koizumi et al., 2011). Together with a 2:1 I/E ratio, this characteristic distance predicted the observed critical velocity of \u223c1 mm s\u22121 in our simulations (Figure 5B). When the synaptic density was reduced to a quarter of its initial value, while maintaining a constant I/E ratio, the critical velocity at which motion anticipation broke down decreased from \u22651 mm s\u22121 to \u223c0.5 mm s\u22121 (Figure 7D). It therefore appears that the density of synaptic inputs impinging on a RGC's dendritic tree determines the critical velocity at which motion extrapolation breaks down.\n\n## Discussion\n\nThis study demonstrates how the retina compensates for the slow speed of phototransduction so that the neural image transmitted to the brain conveys information about the present position of a moving object rather than its position \u223c70 ms in the recent past. The fundamental observation is that motion anticipation arises from the passive interactions of excitatory and inhibitory inputs within the dendritic tree and three general properties of the retinal connectome: the excess of inhibitory over excitatory inputs in RGC dendrites, the average density of these inputs and their random distribution over the whole dendritic tree.\n\n### Generality of the mechanism\n\nOur measurements in goldfish indicate that the amount of motion anticipation is correlated with the RF size, with small RF exhibiting the least anticipation (Figure 1D). In primate and monkey the specialized midget ganglion cell pathway has RF smaller than those presented here, consequently they may not exhibit motion anticipation. Indeed, measurements of synapse ratios obtained from electronmicroscopy of parafoveal RGCs in monkey and human indicate that some of these small RGCs have I/E ratios of \u223c1:1 (Kolb and Dekorver, 1991; Calkins et al., 1994; Calkins and Sterling, 2007), which would further diminish their ability to perform motion anticipation. This observation may make sense in the framework of separate \u2018what\u2019 and \u2018where\u2019 visual pathways (Goodale and Milner, 1992); ganglion cells with the smallest RFs, such as the midget or parvocellular (P) pathway, are involved in coding object detail and correspondingly have the highest spatial resolution but slowest conduction velocities (Gouras, 1969). Whereas RGCs with larger RFs, the magnocellular (M) pathway, have high conduction velocities (Gouras, 1969) and are involved in coding the spatial location of an object relative to the organism, a computation that would obviously benefit from motion anticipation. For the RGCs involved in the \u2018where\u2019 pathway, three general properties of the retinal connectome that give rise to motion anticipation are observed across a wide variety of species: an excess of inhibitory over excitatory inputs, a constant density of these inputs and their random distribution over the whole dendritic tree (West, 1976; Koontz and Hendrickson, 1987; Freed and Sterling, 1988; Marshak et al., 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Weber and Stanford, 1994; Haverkamp et al., 1997; Zhu and Gibbins, 1997; Owczarzak and Pourcho, 1999; Marshak et al., 2002; Jakobs et al., 2008; Koizumi et al., 2011; Schwartz et al., 2012). The generality of these conditions across species underlines the fundamental importance of correcting for the phototransduction delay so that retinotopic mapping can be conserved when encoding the position of a moving object. This study therefore provides an example of the way in which the general rules of retinal wiring determine a key computation of visual processing.\n\n### Motion anticipation is autonomous to each ganglion cell\n\nWe find that the excitatory signal transmitted to RGCs is delayed relative to the retinotopic position of a moving object, indicating that the temporal correction occurs within the ganglion cell (Figure 1H). A priori reasoning also suggests that motion anticipation should be autonomous to each ganglion cell, rather than occurring earlier in the retinal circuitry. Consider a single bipolar cell situated between, and contacting two ganglion cells (Asari and Meister, 2012). For a stimulus traversing the retina this bipolar cell will drive one ganglion cell at its latter edge and the second ganglion cell at its initial edge. If the gain of this bipolar cell were reduced for the first ganglion cell it would also retard the second cell's ability to respond to the same stimulus. In effect the neural image on the retina would fade as the stimulus moved across visual space. Instead, motion anticipation is generated by passive interactions within the ganglion cell dendritic tree, and is therefore relatively independent of other computations carried out by the circuitry of the inner retina. It is the non-linear interaction of inhibitory and excitatory synaptic inputs within the dendritic tree that shifts the profile of excitation forward in time. Simulations indicate that the density of synaptic inputs along dendrites determines the object velocities that can be corrected.\n\nDendrites are a fundamental computational unit in the nervous system. In many brain regions they perform non-linear operations on the inputs they receive (Hausselt et al., 2007; Branco and H\u00e4usser, 2010; Smith et al., 2013), these can result simply from their passive properties or through active membrane conductances (London and H\u00e4usser, 2005). The modelling we carried out as part of this study illustrates why the classical linear-nonlinear receptive field model incompletely describes the response of a ganglion cell to a moving stimulus: excitatory and inhibitory synaptic inputs interact in a non-linear manner that depends on time and position on the dendritic tree. Koch et al., 1983 have described the shunting effect of an inhibitory input lying on the path between an excitatory input and the soma as an analogue implementation of a Boolean AND-NOT operation in which one input vetoes another. Here we find that this AND-NOT operation is activated when the object moves away from the soma and receptive field centre, aligning the time of peak excitation closer to the time when the object is in the centre of the receptive field.\n\nDendrites of retinal ganglion cells have also been shown to contribute to other non-linear transformations of the visual input. For example the local integration of excitatory and inhibitory inputs in PV-5 cells endows them with sensitivity to approaching objects (M\u00fcnch et al., 2009), whereas in directionally selective ganglion cells dendritic Nav channels are used to boost their direction sensitivity (Schachter et al., 2010; Sivyer and Williams, 2013). We show that motion anticipation emerges from the passive properties of dendrites, but it is possible that subtypes of RGCs could augment anticipation using active conductances. For example, NMDA receptors selectively boost EPSPs that move centripetally along a dendrite (Branco et al., 2010), such a mechanism could augment motion anticipation in guinea pig OFF \u03b1 RGCs where NMDA receptors make a significant contribution to visually evoked spiking but not in OFF \u2202 or ON \u03b1 RGCs where NMDA receptors are less conspicuous (Manookin et al., 2010). Additionally dendritic spikes combined with gap junction coupling allow a specific subtype of directionally selective ganglion cell to respond much earlier than expected to motion in its preferred direction (Trenholm et al., 2013).\n\n### Inhibitory wiring in the retina\n\nA fundamental finding of our study is that motion anticipation in ganglion cells arises when feedforward inhibitory synapses outnumber excitatory inputs (Figure 7C). We modelled each inhibitory synapse as purely feedforward (Figure 1F), a ubiquitous and simple circuit motif that numerous types of amacrine cell provide for example, A2 narrow-field, A8 bistratified, A13 and A22 amacrine cells (Kolb, 2005). There are, however, at least 22 different types of amacrine cell (MacNeil and Masland, 1998), but we understand little about the specific response properties of these and even less about how the different types are connected to ganglion cell dendrites. The few notable exceptions highlight the sophistication that can be achieved. For example a combination of intrinsic (Hausselt et al., 2007) and synaptic (Lee and Zhou, 2006) mechanisms endow individual dendrites of starburst amacrine cells with a directional preference for moving stimuli. Our model demonstrates (Figure 6B) that the location of an inhibitory synapse on the dendritic tree of a ganglion cell can have a large effect on the output of that ganglion cell. Indeed the operation of direction-selective ganglion cells results from the particular wiring of their starburst amacrine cell inputs (Briggman et al., 2011). It is therefore expected that a proportion of the inhibitory inputs impinging on ganglion cells may already represent complex transformations of the visual signal.\n\nA concerted effort to elucidate the functional roles of amacrine cells in the retina is now required. Genetically-encoded indicators can be used to image the synaptic output of neurons in the retina (Dreosti et al., 2009; Odermatt et al., 2012) and targeting these reporters to different subtypes of amacrine cells should reveal their functional diversity. High-resolution connectomics (Briggman et al., 2011; Helmstaedter et al., 2013) is now uncovering how amacrine cells wire to the dendritic trees of different ganglion cells. The challenge in the future is to marry these two approaches so that the functional landscape can be overlaid on the connectomic map to guide explorers of the retina.\n\n### Inhibition-to-excitation ratios\n\nThe balance between excitation and inhibition profoundly affects the gain and tuning of neural responses (Isaacson and Scanziani, 2011). For instance, in the transition from the anesthetized to the awake state, increased inhibition within the visual cortex is correlated with pyramidal cell responses that are briefer in time and more narrowly tuned in space (Haider et al., 2013). It has long been recognized that non-midget RGCs receive many more inhibitory inputs than excitatory and that these are located randomly over the dendritic tree, and independently of excitatory inputs (Freed and Sterling, 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Weber and Stanford, 1994; Owczarzak and Pourcho, 1999). This characteristic wiring can now be understood in the context of the mechanism generating motion anticipation; a surplus of inhibitory inputs on each dendrite ensures that stimuli entering a receptive field are transmitted more effectively to the soma than stimuli traversing the latter half.\n\nOur simulations (Figure 7) and the analysis of Koch et al., 1983; demonstrate that variations in the distance between inhibitory and excitatory inputs will vary the object velocity that provides the most effective shunting of excitation to the soma because this shunting depends on the time delay between these conductances. The velocity tuning of motion anticipation is therefore expected to vary within individual dendrites. Nonetheless, the average intersynaptic spacing observed over many RGCs is surprisingly constant (Jakobs et al., 2008; Koizumi et al., 2011) and reproduces the velocity tuning observed physiologically (Figure 5B and Figure 7D).\n\nIt appears that the general conditions that generate motion anticipation in the retina, topographically organized neurons receiving feedforward inhibition, also exist in downstream areas of the visual pathway, including the superior colliculus or optic tectum (Bollmann and Engert, 2009), thalamus (Blitz and Regehr, 2005) and area V1 of the visual cortex (Miller, 2003; Haider et al., 2013). A topographic organization of sensory inputs combined with feedforward inhibition onto dendrites may therefore be a general mechanism for correcting time delays in neural signals relative to events in the external world.\n\n## Materials and methods\n\n### Electrophysiology\n\nAll procedures were carried out in accordance with the UK Animals (Scientific Procedures) act 1986. Retinae were removed from goldfish (15\u201320 cm long) and placed in AMES solution (Sigma\u2013Aldrich, Gillingham, UK) diluted to 270 mOsM. Pieces of retina \u223c1 cm\u22122 were mounted photoreceptor side down in a recording chamber and perfused at 2\u20133 ml min\u22121 with AMES bubbled with 95% CO2/5% 02. Retinal ganglion cells were visualized under infrared light using a camera and recordings made with an Axopatch 200B (Molecular Devices, Sunnyvale, CA). Extracellular recordings were made in voltage-clamp mode. For whole-cell voltage-clamp recordings, the intracellular solution contained 104 mM CsMeSO4, 8 mM CsCl, 5 mM Na2 Phosphocreatine, 4 mM HEPES, 2 mM Mg.ATP, 1 mM Na.GTP, 1 mM EGTA and 2 mM QX-314-Chloride, with this solution the calculated reversal potential for Cl\u2212 was \u221259 mV. Voltage-clamping at \u221260 mV and 0 mV isolated the EPSC and IPSC respectively. For whole-cell current-clamp measurements with high Cl\u2212 the intracellular solution contained 120 mM KCl, 10 mM Na2 Phosphocreatine, 4 mM HEPES, 2 mM Mg.ATP, 1 mM Na.GTP, 0.15 mM EGTA. For the passive dendrite recordings in Figure 4 the intracellular solution contained 104 mM KMeSO4, 8 mM KCl, 10 mM Na2 Phosphocreatine, 10 mM QX-314-Bromide, 4 mM HEPES, 2 mM MK801, 2 mM Mg.ATP, 1 mM Na.GTP, 0.15 mM EGTA. Pipettes had a resistance of 5\u20136 M\u03a9. Signals were digitized using an ITC18 A-D converter and acquired on a Mac mini using Neuromatic running in Igor Pro 6 (Wavemetrics, Lake Oswego, OR).\n\n### Multi-electrode array recordings\n\nSpikes were recorded from RGCs on a 60 channel multi-electrode array (Multichannel Systems, Reutlingen, Germany) using perforated electrode arrays. Spikes were sorted as described previously (Johnston et al., 2014) using Wave_clus (Quiroga et al., 2004). Stimuli were repeated 30 times each. Only cells with responses to the standard moving bar stimulus at all velocities were included for further analysis.\n\n### Visual stimulation\n\nA 852 \u00d7 600 pixel monochromatic OLED micro-display (eMagin, part number EMA-100100, Bellevue, WA) was focused onto the photoreceptor layer of the retina through an oil condenser. Pixels measured 4 \u00d7 4 \u00b5m on the retinal surface. Visual stimuli were delivered via Matlab (Mathworks, Natick, MA) using psychophysics toolbox libraries. Visual stimulation and electrophysiology were synchronized by recording the times of screen refreshes and the timing precision was verified with PMTs. The mean irrandiance was 40 nW mm\u22122 and our standard stimulus was a bar of \u2212100% contrast measuring 160 \u00b5m by 2400 \u00b5m on the retina. To relate the retinal images to objects in the real world we measured the distance between the centre of the lens and the retina, for the goldfish used in this study (\u223c150 mm in length) this was \u223c3.8 mm. All sizes and speeds have been converted to degrees of visual angle according to the equation:\n\nR/n = tanV,\n\nwhere R is the size of the retinal image, n is the distance from the retina to the lens centre and V is visual angle. Therefore our standard stimulus of a 160 \u00b5m bar covered \u223c2.4\u00b0 of visual angle and moved at \u223c7.5\u00b0 s\u22121.\n\n### Cell classification\n\nInitially RGCs were classified as OFF vs ON and brisk-transient vs brisk-sustained by flashing full field stimuli of \u2212100 and 100% contrast for 0.5 s each. Brisk transient cells responded strongly to stimulus onset then adapted completely. Brisk-sustained cells responded strongly initially and then adapted slightly over the rest of the stimuli. No ON cells were encountered in our recordings. We also tested for both direction-selectivity and orientation-selectivity by moving a bar across the retina at four different angles. We encountered two orientation-selective cells but no direction-selective cells. The orientation selective cells responded strongly to a moving bar in their preferred orientation and failed to spike to a bar orthogonal to this axis.\n\n### Measuring RGC receptive fields\n\nSimilar to (Johnston et al., 2014), the RF of each RGC was mapped by flashing a \u2212100% contrast 80 \u00b5m (1.2\u00b0) bar at pseudo-random locations across a single axis of the retina (the same used for motion stimuli). The order was then deshuffled and the total spikes for each bar was counted in a 150 ms window starting at each flash time, a Gaussian was then fit to this data.\n\n### Digitizing RGC morphologies\n\nRGCs were filled with 50 \u00b5M alexa 488 by dialysis through the patch pipette then, subsequent to electrophysiological recording, a volume containing the RGC dendrites and soma was acquired with a custom built 2-photon microscope similar to (Esposti et al., 2013). The morphologies of each RGC were then digitized using the \u2018Simple Neurite Tracer\u2019 plugin for ImageJ; these were then exported as SWC format, down sampled using custom written scripts (available at http://www.igorexchange.com/project/DendritePruner) and imported to neuroConstruct.\n\n### Models\n\nMorphologically realistic models of RGCs with synaptic inputs were constructed in neuroConstruct (Gleeson et al., 2007) and ran in NEURON (Hines and Carnevale, 2001). The electrical properties used throughout the manuscript were: intracellular resistance (Ri) = 180 \u03a9.cm, membrane capacitance (Cm) = 1 \u00b5F cm\u22122 and membrane resistance (Rm) = 20 M\u03a9 cm\u22122, however, we found that these parameters were not critical for the appearance of motion anticipation (Figure 4). The dendrites of the retinal ganglion cells traversed a virtual inner plexiform layer that was populated with excitatory bipolar and inhibitory amacrine synapses using the \u2018cubic close packed cell packing adaptor\u2019 in neuroConstruct. Bipolar terminals were packed with an effective radius of 5.1 \u00b5m and amacrine cells with an effective radius of 4 \u00b5m. We set connections between synapses and the dendritic tree of each RGC using morphology based connections. Searches for a connection between each synaptic terminal and a target dendrite were completely random with a distance constraint of 10 \u00b5m, 300 attempts were initiated for each synapse. This gave a density of 0.182, 0.303 and 0.189 excitatory synaptic contacts \u00b5m\u22121 of dendrite for RGC1, 2 and 3 respectively, which is close to the observed density (Freed and Sterling, 1988; Jakobs et al., 2008; Xu et al., 2008). The density of inhibitory synapses was 0.426, 0.606 and 0.459 synapses \u00b5m\u22121 of dendrite for each RGC, this higher density of inhibitory contacts is a conservative estimate of the number of inhibitory contacts seen with electron microscopy which can be as high as five times the number of excitatory contacts (Freed and Sterling, 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Owczarzak and Pourcho, 1999). Each synapse was modeled as a point process, and the time-course of the currents were described by three piecewise functions obtained by fits to the measured synaptic conductances (Figure 3A). The three piecewise functions correspond to the onset of the steady state phase (a), the decay after the stimulus (b) and the adaptation to the stimulus over the steady state phase (c). The synaptic conductance was G(t) = m \u00d7 (a + b \u2212 c) where m is a scaling factor. For the excitatory conductance:\n\n$$\na(t)={\\frac{0.987}{1+e^{\\frac{(52.9+t_{0}\u2212t)}{5}}}ift_{0}<t<t_{0}+t_{d}+52.90otherwise,b(t)={0.18\u2217e^{\\frac{(t_{0}+t_{d}\u2212t)}{95.9}}ift_{0}+t_{d}+52.9<t<t_{0}+t_{d}+4750otherwise,c(t)={0.921+(\u22120.623\u2217e^{\\frac{(t_{0}+88\u2212t)}{17.3}})+(\u22120.274+e^{\\frac{t_{0}+88\u2212t}{235.6}})ift_{0}+88<t<t_{0}+t_{d}+52.90otherwise,\n$$\n\nand for the inhibitory conductance:\n\n$$\na(t)={\\frac{1}{1+e^{\\frac{(t_{0}+62.37\u2212t)}{4.5}}}ift_{0}<t<t_{0}+t_{d}+62.40otherwise,b(t)={0.2046\u2217e^{\\frac{(t_{0}+t_{d}\u2212t)}{235.6}}ift_{0}+t_{d}+1200<t<t_{0}+t_{d}+62.40otherwise,c(t)={0.7+(\u22120.63\u2217e^{\\frac{(t_{0}+82\u2212t)}{69}})ift_{0}+82<t<t_{0}+t_{d}+62.40otherwise,\n$$\n\nwhere t0 is the stimulus onset time and td is the duration of the stimulus in ms. The delays inherent to the retinal circuitry, comprising both phototransduction delay and synaptic delay, are accounted for in these functions. Scaling factor m was set to 0.00003 ns for all synapses.\n\nTo facilitate assignment of an activation time (t0) to each synapse, the array of bipolar and amacrine synapses were divided in to strips with a width of 30 \u00b5m. The RF of each model ganglion cell was measured by stimulating a single 30 \u00b5m strip and plotting the amplitude of the somatic EPSP vs space, similar to the performed physiological measurements. To simulate a bar moving across the retina each strip was given a set of values for t0 that reflected the time required for the leading edge of the bar to traverse the 30 \u00b5m strip, each synapse was then randomly assigned a value from this set. For example, for a bar moving at 0.5 mm s\u22121 the t0 values of the first strip would range from 0 ms to 60 ms and for the subsequent strip range from 60 ms to 120 ms. For the simple model used in Figure 6, the soma had a diameter of 15 \u00b5m the primary dendrite extended for 20 \u00b5m then branched into eight radially symmetric dendrites of 200 \u00b5m length with a diameter of 1 \u00b5m.\n\n#### Analysis\n\nAll electrophysiogical data was analysed in Igor Pro. For the moving bars in Figures 1, 2, spike times were detected by threshold crossings and histograms with 30 ms bins were then constructed from all presentations of the stimuli. For the analysis in Figure 5 the data were binned in space at 15 \u00b5m bins for all velocities. The peak-firing rate and peak depolarization was determined using edge statistics with a threshold of 10%. that is, when the rate comes within 10% of the max that x value is used for the peak. For voltage-clamp each trial was presented at least six times and the average current from these presentations was used.\n\n#### Statistics\n\nFor comparison between the delays for a flash and motion in Figure 1C a paired t-test was used, all data were normally distributed. For the correlation in Figure 1D the Pearson's correlation coefficient was computed by bootstrapping with 100,000 samples. We used the Kolmogorov\u2013Smirnov test to compare the measured EPSC in response to movement with that predicted by convolution of the EPSC resulting from a 320 ms flash and the receptive field (Figure 1H,I). A paired t-test was used to compare the peak firing before and after disrupted inhibition in Figure 2C and the passive EPSP with the linear response in Figure 4, data were normally distributed.\n",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "80ea37c9-f47b-46b1-939f-db072e7a22d8",
+      "submission_id": "475ddf06-0143-4fa4-9fd9-9145aa1be3ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matteo Carandini, University College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06250.011](https://doi.org/10.7554/eLife.06250.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your work entitled \u201cGeneral features of the retinal connectome determine the computation of motion anticipation\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor), Matteo Carandini (Reviewing editor), and by two reviewers, one of whom, Michael Berry, has agreed to share his identity.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this excellent study, Johnston and Lagnado tackle an important and interesting phenomenon exhibited by signals in many types of retinal ganglion cells (RGCs): motion anticipation. This is the observation that peak RGC spiking activity (or that of a population of RGCs) is reached prior to a moving object arriving at the center of the receptive field. This observation is more than a decade old now, but the mechanisms that generate it are poorly understood.\n\nTo elucidate these mechanisms, the authors record from RGCs in the goldfish retina, and show these cells, like RGCs in several other species, exhibit motion anticipation. They then use a combination of electrophysiological, pharmacological, and computational/modeling approaches to show that motion anticipation results from a very generic mechanism: shunting inhibition on the RGC dendrites. They further show that dendritic active conductances and excitation (with feedback inhibition to bipolar cells) alone are not sufficient to give rise to motion anticipation.\n\nThe authors use models of 3 RGCs where they have measured dendritic architecture, along with synaptic densities taken from literature, to show that a 2:1 ratio of randomly placed inhibitory to excitatory synapses can account for the motion anticipation they observed in their recorded cells. Motion anticipation, therefore, can result from randomly distributed synapses as long as inhibitory synapses outnumber excitatory by about 2-to-1. Such conditions are met on many RGC dendrites (although see observation below) and might well be observed in other parts of the brain, making this biophysical mechanism potentially quite general. More generally, this study makes a compelling case that feedforward inhibition plays a major role in motion anticipation.\n\nAlso, the paper goes on to add some intuition underlying the phenomenon: strong shunting that occurs when inhibitory synapses are activated just before excitatory synapses located distally (as predicted a while ago by Koch et al.). In particular, Figure 6B is a very nice demonstration of the basic biophysical effect.\n\nOverall, the manuscript makes a convincing case that feedforward inhibition is a central mechanism contributing to motion anticipation. This is a significant advance. What is less clear is whether it is the only mechanism. Below are some suggestions for improving the paper on this and other fronts. It should be possible to address these suggestions by editing the paper to highlight and discuss some of these issues, or perhaps by analyzing additional existing data, without necessarily requiring new experiments.\n\n1) The manuscript claims that a general feature of the retinal connectome is 2:1 ratio in the number of inhibitory to excitatory synapses. The literature, however, does not seem to substantiate this claim. For instance the recent paper by Abbott et al., (2012) from the laboratories of Grunert and Martin working on the marmoset retina. They show that parasol and midget RGCs across a wide range of eccentricities have a 1:1 ratio of inhibition to excitation. Several studies from old world monkeys by Calkins, Sterling, Marshak, and Kolb indicate that inhibitory synapses in the peripheral retina outnumber excitatory synapses, but that the opposite is true in the central retina. Studies of bistratified RGCs in the monkey suggest that the proportion of excitatory and inhibitory synapses depends on dendritic strata. Thus the ratio of inhibitory to excitatory synapses depends on species, ganglion cell type, and retinal location.\n\nGiven that a 2:1 ratio does not appear to be a general feature, do the RGCs probed in this study exhibit a 2:1 ratio in synapse number? This seems important to determine to validate their analysis and conclusions. The authors show that the ratio of inhibition to excitation functionally is about 2:1, but doesn't synapse position/number also matter? Also, the authors show a large range of I:E ratios in different RGCs. Does the ratio of I:E correlate with the amount of motion anticipation, with low ratios exhibiting less anticipation? This seems straightforward to test on a cell by cell basis and would help to relate inhibition directly motion anticipation rather than by the process of elimination.\n\n2) In Figure 1, signals are compared between a static bar and a moving bar. In Figure 2 they are only shown for a moving bar without inhibition. Does removing inhibition also postpone the time to a peak firing in response to a static bar? Showing this would clarify that we are looking at an interaction between a moving stimulus and inhibition, not just that inhibition shortens the response time-to-peak for any stimulus.\n\n3) It would be nice to see the degree of motion anticipation of individual RGCs before and after dialyzing the cells with MK801 and QX-314-Bromide to eliminate active conductances. The authors show active conductances are not required, but it seems like they may still augment or amplify the amount of motion anticipation. As it stands the reader is left with the impression that active conductances don't participate, but it is not clear that this is the case. This question speaks to the issue of sufficiency. Currently, Figure 4 compares the amount of motion anticipation after drug wash-in to a linear model of the cell. A possibly stronger test would be to compare the amount of motion anticipation before and after drug wash in and show that it changes minimally.\n\n4) How do the speeds of motion used in this study relate to speeds in the real world? The authors motivate their study by the important contribution the retina makes to the behavioral phenomenon of motion anticipation. However, without knowing the size of a goldfish eye, one cannot relate any of the speeds they probed experimentally to the speed of objects in the environment. The findings in this study could be more relevant to a general readership if this relationship is made explicit and speeds are quoted in units of degrees of visual angle per second. Related, it seems important to note that this will depend on the size of the animal's eye. Thus, given an equivalent amount of motion anticipation per RGC in a small eye compared to a large eye, there will be very different amounts of motion anticipation at the level of the retina. This seems worth noting in the Discussion.\n",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "20bee21b-1581-450c-9a48-9d72b29221f7",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C1",
+      "claim": "Motion anticipation allows the visual system to compensate for the slow speed of phototransduction so that a moving object can be accurately located.",
+      "claim_type": "EXPLICIT",
+      "source": "Motion anticipation allows the visual system to compensate for the slow speed of phototransduction so that a moving object can be accurately located.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational claim stated in the abstract that is supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "a03c6aec-b3d0-4277-a96d-818da4f93676",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C2",
+      "claim": "Motion anticipation correction is already present in the signal that ganglion cells send from the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "This correction is already present in the signal that ganglion cells send from the retina but the biophysical mechanisms underlying this computation are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental recordings from ganglion cells showing anticipatory responses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "eb7c1f4b-68f0-4c88-a146-1a098e94f31f",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C3",
+      "claim": "Motion anticipation is computed autonomously within the dendritic tree of each ganglion cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that motion anticipation is computed autonomously within the dendritic tree of each ganglion cell and relies on feedforward inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experiments showing that excitatory inputs are delayed and modeling showing dendritic computation is sufficient.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "ea8a8a2e-0843-4b2c-b018-4a870697996b",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C4",
+      "claim": "Motion anticipation relies on feedforward inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that motion anticipation is computed autonomously within the dendritic tree of each ganglion cell and relies on feedforward inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments where disrupting inhibition eliminated motion anticipation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "44199a7e-6234-4f1a-bc24-09b221801ba9",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C5",
+      "claim": "The passive and non-linear interaction of excitatory and inhibitory synapses enables the somatic voltage to encode the actual position of a moving object instead of its delayed representation.",
+      "claim_type": "EXPLICIT",
+      "source": "The passive and non-linear interaction of excitatory and inhibitory synapses enables the somatic voltage to encode the actual position of a moving object instead of its delayed representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling and experiments with passive dendrites showing motion anticipation persists.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "8449b50f-041d-481f-a79c-93b49657261a",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C6",
+      "claim": "An excess of inhibitory inputs over excitatory inputs allows tracking of all directions of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "General rather than specific features of the retinal connectome govern this computation: an excess of inhibitory inputs over excitatory, with both being randomly distributed, allows tracking of all directions of motion, while the average distance between inputs determines the object velocities that can be compensated for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through modeling showing that I/E ratio > 1 is necessary for motion anticipation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "d3ed1db4-89bf-45ee-953a-82d37f6578b8",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C7",
+      "claim": "The average distance between inputs determines the object velocities that can be compensated for.",
+      "claim_type": "EXPLICIT",
+      "source": "General rather than specific features of the retinal connectome govern this computation: an excess of inhibitory inputs over excitatory, with both being randomly distributed, allows tracking of all directions of motion, while the average distance between inputs determines the object velocities that can be compensated for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling showing that synaptic density affects the critical velocity for motion anticipation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "66aa2780-eac5-4f57-a1b4-8ba07e90a253",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C8",
+      "claim": "The slow speed of phototransduction causes RGCs to respond ~70 ms after an object first appears.",
+      "claim_type": "EXPLICIT",
+      "source": "There is, however, a problem to overcome when this map is used to estimate the position of a moving object: the slow speed with which photoreceptors convert light into an electrical signal causes RGCs to respond \u223c70 ms after an object first appears (Baylor and Hodgkin, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature and confirmed by experimental measurements in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "8d48c741-8515-4585-8e5d-d3ab84b9ec5f",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C9",
+      "claim": "During a 70 ms delay, a tennis ball served by a professional player will have travelled ~3-4 m.",
+      "claim_type": "EXPLICIT",
+      "source": "During this delay, a tennis ball served by a professional player will have travelled \u223c3\u20134 m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on known tennis ball velocities and the phototransduction delay.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "ebecc3ee-1a66-46c8-baa7-7c56efdd6c64",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C10",
+      "claim": "When a stimulus is moving, the peak-firing rate of retinal ganglion cells occurs earlier than expected from the delayed response to a flashed stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these computations are termed motion anticipation, and they begin in the inner retina (Berry et al., 1999): when a stimulus is moving, the peak-firing rate of retinal ganglion cells (RGCs) occurs earlier than expected from the delayed response to a flashed stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Berry et al., 1999 and confirmed by experimental data in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "31189d6f-cac6-4d33-aaf0-de1ffa3dcc85",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C11",
+      "claim": "Motion anticipation supports accurate target tracking in salamander.",
+      "claim_type": "EXPLICIT",
+      "source": "This correction supports accurate target tracking in salamander (Leonardo and Meister, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Leonardo and Meister, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "42e5f99d-b28c-4f3d-9411-5e3b8723f1e2",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C12",
+      "claim": "Motion anticipation is observed in the large majority of ganglion cells, of different functional types and across many species.",
+      "claim_type": "EXPLICIT",
+      "source": "Motion anticipation appears to be a more fundamental retinal computation than directional selectivity because it is observed in the large majority of ganglion cells, of different functional types and across many species (Berry et al., 1999; Schwartz et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature and confirmed by observations in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "65c3c8b2-ad8a-4243-af7d-98594563a64d",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C13",
+      "claim": "Directional selectivity involves asymmetric connections with starburst amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of neuronal connectivity using large-scale electron microscopy has demonstrated that this computation involves asymmetric connections with a specific type of inhibitory interneuron, the starburst amacrine cell (Briggman et al., 2011), which has dendrites that are themselves directionally selective (Hausselt et al., 2007; Yonehara et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple studies on directional selectivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "f1368a7f-42f2-454d-8818-31b86e0e5b3a",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C14",
+      "claim": "The delay to peak firing for flashed stimuli averaged 62 \u00b1 3 ms in goldfish RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptive field (RF) of each ganglion cell was mapped using bars flashed in a random order across the retina (Johnston et al., 2014), and then a bar was flashed onto the centre of the receptive field: the delay to peak firing averaged 62 \u00b1 3 ms, largely reflecting the delay in phototransduction (Baylor and Hodgkin, 1974) (n = 25; Figure 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally from 25 ganglion cells and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "e63856d8-fa0d-4308-93ff-dafc3c38e122",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C15",
+      "claim": "For a moving bar at 500 \u03bcm s\u22121, the peak spike rate occurred 46 \u00b1 13 ms before the leading edge reached the receptive field centre.",
+      "claim_type": "EXPLICIT",
+      "source": "But when the same bar (\u2212100% contrast; 160 \u00b5m wide, equivalent to 2.4\u00b0 of visual angle) was moved across the retina at 500 \u03bcm s\u22121 (7.5\u00b0 s\u22121), the peak spike rate occurred 46 \u00b1 13 ms (n = 25) before the leading edge reached the receptive field centre and then activity decayed before the bar left (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally from 25 ganglion cells and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "7222aaf5-4147-48c1-92d7-a5a4ecd5f1d0",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C16",
+      "claim": "Motion anticipation was observed across many functional types of ganglion cell, including brisk-transient, brisk-sustained and orientation selective cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Motion anticipation was observed across many functional types of ganglion cell, including brisk-transient, brisk-sustained and orientation selective cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in experimental recordings from different cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "06a4321e-63d4-44c7-988f-d5987b98aa27",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C17",
+      "claim": "RGCs with larger RFs tended to display greater anticipation, with RF size accounting for 35% of the observed variance in the delays for motion.",
+      "claim_type": "EXPLICIT",
+      "source": "RGCs with larger RFs tended to display greater anticipation, with RF size accounting for 35% of the observed variance in the delays for motion (Pearson's r = \u22120.593, n = 25, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "c1b50c79-9963-4c7c-be5b-c33a98d29ba5",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C18",
+      "claim": "The three cells that failed to show any motion anticipation also had the smallest RF size.",
+      "claim_type": "EXPLICIT",
+      "source": "The three cells that failed to show any motion anticipation also had the smallest RF size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "901c9e96-b46f-4d70-b65f-de971ac4607e",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C19",
+      "claim": "The peak EPSC lags behind the receptive field centre by 79 \u00b1 17 \u03bcm in OFF ganglion cells during motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Example of the EPSC recorded as a bar moves across the receptive field of an OFF ganglion cell (average of six presentations). The peak EPSC lags behind the receptive field centre by 79 \u00b1 17 \u03bcm (1.2 \u00b1 0.3\u00ba, n = 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally from voltage-clamp recordings shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "afac06ab-8375-49c3-a7d9-db4baea81201",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C20",
+      "claim": "The motion evoked EPSC was not significantly different from the expected linear response in most RGCs, indicating that lateral inhibition is not present.",
+      "claim_type": "EXPLICIT",
+      "source": "The motion evoked EPSC was not significantly different from the expected linear response, indicating that lateral inhibition is not present (using the Kolmogorov\u2013Smirnov test, n = 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of measured and predicted EPSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "7ab4009b-9933-4c1e-9e82-cfb2063abe9a",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C21",
+      "claim": "Orientation selective cells showed a clear indication of lateral inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Orientation selective cells did show a clear indication of lateral inhibition (n = 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in recordings from two orientation-selective cells shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "17574937-d896-4491-923b-439d289dc360",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C22",
+      "claim": "In 7 out of 9 RGCs the peak excitatory input was delayed, occurring 158 \u00b1 34 ms after the bar reached the receptive field centre.",
+      "claim_type": "EXPLICIT",
+      "source": "In 7 out of 9 RGCs the peak excitatory input was delayed, occurring 158 \u00b1 34 ms after the bar reached the receptive field centre (Figure 1H, black trace), demonstrating that the fast gain reduction in the EPSC was not sufficient to generate motion anticipation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from voltage-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "dc57b390-53e5-4415-b545-9ef86482eb25",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C23",
+      "claim": "Disrupting inhibition in a single ganglion cell by dialyzing with 120 mM Cl\u2212 greatly enhanced the response to a moving bar.",
+      "claim_type": "EXPLICIT",
+      "source": "We then disrupted inhibition in this single ganglion cell by going into whole-cell mode and dialyzing the cell with an intracellular solution containing 120 mM Cl\u2212 (Figure 2A, grey). The advantage of this approach over pharmacology or genetic manipulation is that it acutely disrupts the inhibition impinging on a single RGC while leaving excitatory inputs and the rest of the retinal circuitry intact; a similar approach was used to demonstrate direction selectivity occurs postsynaptically in direction-selective RGCs (Taylor et al., 2000). Disrupting inhibitory inputs greatly enhanced the response to a moving bar, indicating that under normal circumstances inactivation of Nav channel does not attenuate the RGC response to motion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental manipulation shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "3a762204-c5e0-4699-95aa-24a72fff3d78",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C24",
+      "claim": "With inhibition disrupted, the location of the peak firing became delayed occurring 210 \u00b1 26 ms after the stimulus had reached the RF centre.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, with inhibition disrupted, the location of the peak firing became delayed occurring 210 \u00b1 26 ms after the stimuli had reached the RF centre (Figure 2C, p < 0.0002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally after disrupting inhibition, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "7ff6757c-7b8e-438d-b94f-64be5cc92e26",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C25",
+      "claim": "The delay for a flash was unaffected by disrupting inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for the four cells tested, the delay for a flash was unaffected by disrupting inhibition (64.4 \u00b1 8.7 ms vs 62.7 \u00b1 5.2 ms, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally before and after disrupting inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "bba18af3-c35b-482f-aa00-d19914d19ec5",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C26",
+      "claim": "Feedforward inhibition from amacrine cells to RGCs plays the major role in correcting for the lag in phototransduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that feedforward inhibition from amacrine cells to RGCs plays the major role in correcting for the lag in phototransduction allowing the retina to correctly signal the position of a moving object.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experiments showing that disrupting inhibition eliminates motion anticipation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "d39347bb-85fb-4f47-b4c3-7e6c344fdb12",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C27",
+      "claim": "The inhibitory-to-excitatory conductance ratio measured over the RF centre was 2.1 \u00b1 0.23.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-course of synaptic conductance changes used in simulations mimicked those measured experimentally (Figure 3A), and the average density of synaptic inputs over the dendritic trees also matched known distributions with around one excitatory synapse per 5 \u00b5m of dendrite (Freed and Sterling, 1988; Jakobs et al., 2008; Xu et al., 2008) and a \u223c2:1 ratio of excitatory to inhibitory synapses, reflecting the ratio of the inhibitory to excitatory conductance measured over the receptive field centre (Figure 3B, 2.1 \u00b1 0.23, n = 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally from voltage-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "4ee1a4f5-1c5e-41b1-9fcb-21f9abbeb051",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C28",
+      "claim": "Passive properties of dendrites are sufficient to account for motion anticipation.",
+      "claim_type": "EXPLICIT",
+      "source": "When the receptive field of these model neurons was probed by mimicking flashed bars, it reproduced a Gaussian receptive field similar to that measured experimentally (Figures 1, 3D). Crucially, the EPSPs arriving at the soma displayed motion anticipation when tested with our standard moving bar stimulus (Figure 3D), demonstrating that the passive interactions of excitatory and inhibitory synaptic inputs are sufficient to generate motion anticipation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling with passive dendrites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "3d2dd35d-1c16-470e-9998-94a908116406",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C29",
+      "claim": "The ability of feedforward inhibition to generate motion anticipation was robust to variations in membrane resistance (Rm) and intracellular resistance (Ri), but was destroyed once Rm fell to 50 M\u03a9.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of feedforward inhibition to generate motion anticipation was robust to variations in both Rm and Ri over this range, but was destroyed once Rm fell to 50 M\u03a9 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Tested through computational modeling with varying parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "ec1706f8-ef33-40b5-b120-7d23229ac1d3",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C30",
+      "claim": "Active dendritic conductances are not necessary for motion anticipation.",
+      "claim_type": "EXPLICIT",
+      "source": "To test directly whether active conductances were required to generate motion anticipation, we recorded from ganglion cells whose dendrites were made passive by dialysis of 2 mM MK-801 and 10 mM QX-314-Bromide; together these, substances block NMDA receptors and voltage-sensitive Na+ and Ca2+ channels (Talbot and Sayer, 1996; Kuzmiski et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental manipulation blocking active conductances while motion anticipation persisted.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "e356e156-10bb-4ed5-bd5e-fae7ce552a8f",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C31",
+      "claim": "All cells with passive dendrites had EPSPs that peaked significantly earlier than the expected linear response.",
+      "claim_type": "EXPLICIT",
+      "source": "All cells had EPSPs that peaked significantly earlier than the expected linear response (p = 0.0002, n = 7), occurring 47 \u00b1 29 ms before the stimuli reached the RF centre and this was not significantly different to the time of peak spike rate observed for the cells in Figure 1 (47 \u00b1 29 ms, n = 7 vs 46 \u00b1 13 ms, n = 25, p = 0.9844).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally from cells with passive dendrites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "ea65aafc-9872-4b90-a3fb-bdafb0dcabb4",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C32",
+      "claim": "Motion anticipation operated when the bar moved at velocities between 3.8\u00b0 s\u22121 and 14.7\u00b0 s\u22121 but not at 27.8\u00b0 s\u22121 or higher.",
+      "claim_type": "EXPLICIT",
+      "source": "We plotted the location of maximal spiking relative to the receptive field centre as a function of velocity for 26 ganglion cells recorded on a multi-electrode array and found that motion anticipation occurred when the bar moved at velocities between 3.8\u00b0 s\u22121 (250 \u03bcm s\u22121) and 14.7\u00b0 s\u22121 (1000 \u03bcm s\u22121) but not at 27.8\u00b0 s\u22121 (2000 \u03bcm s\u22121) or higher (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally from multi-electrode array recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "7fd2002e-e1e8-4edd-b98f-5e2e06b57541",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C33",
+      "claim": "The computational model closely reproduced the velocity dependence of motion anticipation observed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "This behaviour was closely reproduced by the model (Figure 5A), which also predicted breakdown at velocities higher than \u223c14.7\u00b0 s\u22121 (1000 \u03bcm s\u22121, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Computational modeling results matched experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "f8df7b7e-8b64-4205-9de9-46358c088eb2",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C34",
+      "claim": "Inhibition has a stronger effect over the latter half of the receptive field during motion.",
+      "claim_type": "EXPLICIT",
+      "source": "But why does inhibition have a stronger effect over the latter half of the receptive field? To investigate the biophysical mechanisms underlying motion anticipation in more detail, we explored a model RGC with a radially symmetric dendritic tree. Figure 6A plots the membrane potential across a dendrite spanning the receptive field as a bar moves across, and compares this to the voltage experienced by the soma. In the absence of inhibition, the somatic voltage was an accurate reflection of the depolarization seen in the dendrites (Figure 6A, left). However, with inhibition present, this was only the case for the first half of the RF, once the stimulus crossed the RF centre dendritic depolarizations had less influence on the somatic voltage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "f0ffa357-85a6-49be-a505-af1a0da41391",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C35",
+      "claim": "Inhibitory inputs are most effective at counteracting excitatory inputs when they are located proximally along the dendrite and activated before the distal excitatory synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "In a landmark theoretical study Koch et al. laid out the conditions that make inhibitory synaptic inputs most effective at counteracting excitatory inputs: (a) inhibitory inputs should be located on the path between the excitatory synapse and the soma (i.e., proximally along the dendrite), and (b) inhibitory inputs should be activated before the distal excitatory synapse (Koch et al., 1983; Liu, 2004; Hao et al., 2009; Pouille et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from theoretical work by Koch et al., 1983 and others.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "7f8bf078-3970-46cd-9397-025892781cf5",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C36",
+      "claim": "Excitatory and inhibitory inputs are distributed independently and at uniform density along RGC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an organization might be achieved if developmental processes cause inhibitory synapses to be placed systematically in positions proximal to the nearest excitatory synapse. Such a specific wiring rule does not, however, fit with anatomical studies, which consistently indicate that excitatory and inhibitory inputs are distributed independently and at uniform density along RGC dendrites (Freed and Sterling, 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Owczarzak and Pourcho, 1999; Jakobs et al., 2008; Xu et al., 2008; Schwartz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "476c6599-f9fa-42e3-86fd-c7e5edee1653",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C37",
+      "claim": "Inhibitory synapses outnumber excitatory counterparts in the large majority of RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These two constraints, proximal inhibition across the whole dendritic tree, together with random positioning of synapses, would be satisfied if there are more inhibitory inputs per dendrite than excitatory ones, and this is observed: anatomical studies consistently demonstrate that inhibitory synapses outnumber their excitatory counterparts in the large majority of RGCs (West, 1976; Koontz and Hendrickson, 1987; Freed and Sterling, 1988; Marshak et al., 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Haverkamp et al., 1997; Zhu and Gibbins, 1997; Owczarzak and Pourcho, 1999; Marshak et al., 2002; Jakobs et al., 2008; Koizumi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple anatomical studies across species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "def87a2b-e9d5-4f3a-b31b-5cc0c9ef7346",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C38",
+      "claim": "When the ratio of inhibition to excitation (I/E) was increased, the resultant EPSPs became smaller and the peak of the EPSP shifted forward in time.",
+      "claim_type": "EXPLICIT",
+      "source": "When the ratio of inhibition to excitation (I/E) was increased, the resultant EPSPs became smaller (Figure 7A) and the peak of the EPSP shifted forward in time (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "defd1a95-9a60-4e1f-9de7-cc7d0beea857",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C39",
+      "claim": "The generation of motion anticipation requires an excess of inhibitory inputs when synaptic sites are positioned randomly and independently over the dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "In two of the model ganglion cells, the temporal shift in the time-course of excitation began with I/E > 1, while in the third neuron it began with I/E > 2 (Figure 7C). These observations confirm that the generation of motion anticipation requires an excess of inhibitory inputs when synaptic sites are positioned randomly and independently over the dendritic tree.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "f43a7f43-5504-4215-a914-ec50226d2b40",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C40",
+      "claim": "The distance between excitatory synapses is surprisingly consistent over the dendritic tree of most ganglion cells and across many species, at ~1 synapse per 5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Several authors have noted that the distance between excitatory synapses is surprisingly consistent over the dendritic tree of most ganglion cells and across many species, at \u223c1 synapse per 5 \u00b5m (Freed and Sterling, 1988; Jakobs et al., 2008; Xu et al., 2008; Koizumi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "9e4ef9c0-680c-41bc-95a8-e79bf503dae7",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C41",
+      "claim": "When the synaptic density was reduced to a quarter of its initial value, the critical velocity at which motion anticipation broke down decreased from \u22651 mm s\u22121 to ~0.5 mm s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "When the synaptic density was reduced to a quarter of its initial value, while maintaining a constant I/E ratio, the critical velocity at which motion anticipation broke down decreased from \u22651 mm s\u22121 to \u223c0.5 mm s\u22121 (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "5db7c9bc-f4f1-412d-bb8d-d538a270c64a",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C42",
+      "claim": "The density of synaptic inputs impinging on a RGC's dendritic tree determines the critical velocity at which motion extrapolation breaks down.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore appears that the density of synaptic inputs impinging on a RGC's dendritic tree determines the critical velocity at which motion extrapolation breaks down.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from modeling results showing relationship between synaptic density and critical velocity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "f9ab3e2b-06c5-4fdf-8aba-39be3f9ea693",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C43",
+      "claim": "Motion anticipation arises from the passive interactions of excitatory and inhibitory inputs within the dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental observation is that motion anticipation arises from the passive interactions of excitatory and inhibitory inputs within the dendritic tree and three general properties of the retinal connectome: the excess of inhibitory over excitatory inputs in RGC dendrites, the average density of these inputs and their random distribution over the whole dendritic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on experimental and modeling results throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "4b07c1b0-5199-4194-bf7a-acd18ff22a2c",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C44",
+      "claim": "The amount of motion anticipation is correlated with the RF size in goldfish, with small RF exhibiting the least anticipation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements in goldfish indicate that the amount of motion anticipation is correlated with the RF size, with small RF exhibiting the least anticipation (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "d50b4c0a-b8b2-457f-8bea-e669bc1ff1f5",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C45",
+      "claim": "Some parafoveal RGCs in monkey and human have I/E ratios of ~1:1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, measurements of synapse ratios obtained from electronmicroscopy of parafoveal RGCs in monkey and human indicate that some of these small RGCs have I/E ratios of \u223c1:1 (Kolb and Dekorver, 1991; Calkins et al., 1994; Calkins and Sterling, 2007), which would further diminish their ability to perform motion anticipation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from anatomical studies in primate retina.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "80c2dc6f-cecb-40dc-8fb4-3572ea6f86b3",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C46",
+      "claim": "Ganglion cells with the smallest RFs, such as the midget or parvocellular (P) pathway, have the highest spatial resolution but slowest conduction velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation may make sense in the framework of separate 'what' and 'where' visual pathways (Goodale and Milner, 1992); ganglion cells with the smallest RFs, such as the midget or parvocellular (P) pathway, are involved in coding object detail and correspondingly have the highest spatial resolution but slowest conduction velocities (Gouras, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature on visual pathways.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "33e5edd1-aaa2-4218-94a9-68be33d1eb24",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C47",
+      "claim": "RGCs with larger RFs, the magnocellular (M) pathway, have high conduction velocities and are involved in coding the spatial location of an object.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas RGCs with larger RFs, the magnocellular (M) pathway, have high conduction velocities (Gouras, 1969) and are involved in coding the spatial location of an object relative to the organism, a computation that would obviously benefit from motion anticipation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature and logical inference about functional roles.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "012bdcf2-94fd-40c3-96dc-0488be11a814",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C48",
+      "claim": "The excitatory signal transmitted to RGCs is delayed relative to the retinotopic position of a moving object.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the excitatory signal transmitted to RGCs is delayed relative to the retinotopic position of a moving object, indicating that the temporal correction occurs within the ganglion cell (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally through voltage-clamp recordings shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "f006cb6e-5e19-4c59-8e19-58a3eaa04ffc",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C49",
+      "claim": "Motion anticipation is generated by passive interactions within the ganglion cell dendritic tree, and is therefore relatively independent of other computations carried out by the circuitry of the inner retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, motion anticipation is generated by passive interactions within the ganglion cell dendritic tree, and is therefore relatively independent of other computations carried out by the circuitry of the inner retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental and modeling results showing autonomous computation in dendrites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "857b44d3-e8a1-4968-a5c8-91c6efa91ddd",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C50",
+      "claim": "The non-linear interaction of inhibitory and excitatory synaptic inputs within the dendritic tree shifts the profile of excitation forward in time.",
+      "claim_type": "EXPLICIT",
+      "source": "It is the non-linear interaction of inhibitory and excitatory synaptic inputs within the dendritic tree that shifts the profile of excitation forward in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through modeling and experiments showing how inhibition affects excitation timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "609d6c6c-44b4-4576-b73a-be4356367680",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C51",
+      "claim": "The classical linear-nonlinear receptive field model incompletely describes the response of a ganglion cell to a moving stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The modelling we carried out as part of this study illustrates why the classical linear-nonlinear receptive field model incompletely describes the response of a ganglion cell to a moving stimulus: excitatory and inhibitory synaptic inputs interact in a non-linear manner that depends on time and position on the dendritic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from modeling results showing non-linear interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "da56cc4e-00fa-416d-b622-ba0f1844efa0",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C52",
+      "claim": "Koch et al., 1983 described the shunting effect of an inhibitory input lying on the path between an excitatory input and the soma as an analogue implementation of a Boolean AND-NOT operation.",
+      "claim_type": "EXPLICIT",
+      "source": "Koch et al., 1983 have described the shunting effect of an inhibitory input lying on the path between an excitatory input and the soma as an analogue implementation of a Boolean AND-NOT operation in which one input vetoes another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from theoretical work by Koch et al., 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "58784b34-7ad9-406b-b86d-34a29bec9269",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C53",
+      "claim": "The AND-NOT operation is activated when the object moves away from the soma and receptive field centre, aligning the time of peak excitation closer to the time when the object is in the centre of the receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we find that this AND-NOT operation is activated when the object moves away from the soma and receptive field centre, aligning the time of peak excitation closer to the time when the object is in the centre of the receptive field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from modeling results showing how inhibition affects excitation during motion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "012a58f9-945f-4493-af8b-79bd906d6890",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C54",
+      "claim": "Local integration of excitatory and inhibitory inputs in PV-5 cells endows them with sensitivity to approaching objects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example the local integration of excitatory and inhibitory inputs in PV-5 cells endows them with sensitivity to approaching objects (M\u00fcnch et al., 2009), whereas in directionally selective ganglion cells dendritic Nav channels are used to boost their direction sensitivity (Schachter et al., 2010; Sivyer and Williams, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies on dendritic computations in specific RGC types.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "d64e5528-b4da-4576-b420-b0d6d2706ead",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C55",
+      "claim": "NMDA receptors selectively boost EPSPs that move centripetally along a dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, NMDA receptors selectively boost EPSPs that move centripetally along a dendrite (Branco et al., 2010), such a mechanism could augment motion anticipation in guinea pig OFF \u03b1 RGCs where NMDA receptors make a significant contribution to visually evoked spiking but not in OFF \u2202 or ON \u03b1 RGCs where NMDA receptors are less conspicuous (Manookin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies on NMDA receptor function in dendrites.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "aebf3cdd-8b99-4d09-8da4-1259ac77ee6f",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C56",
+      "claim": "Dendritic spikes combined with gap junction coupling allow a specific subtype of directionally selective ganglion cell to respond much earlier than expected to motion in its preferred direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally dendritic spikes combined with gap junction coupling allow a specific subtype of directionally selective ganglion cell to respond much earlier than expected to motion in its preferred direction (Trenholm et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Trenholm et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "923603b0-78ca-43f2-b849-8922c1908a52",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C57",
+      "claim": "Motion anticipation in ganglion cells arises when feedforward inhibitory synapses outnumber excitatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "A fundamental finding of our study is that motion anticipation in ganglion cells arises when feedforward inhibitory synapses outnumber excitatory inputs (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through modeling shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "b73a79d5-0165-4b4d-a45e-dce33bb852c9",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C58",
+      "claim": "The location of an inhibitory synapse on the dendritic tree of a ganglion cell can have a large effect on the output of that ganglion cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model demonstrates (Figure 6B) that the location of an inhibitory synapse on the dendritic tree of a ganglion cell can have a large effect on the output of that ganglion cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through modeling shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "5650506b-ed29-4313-9ce2-d73a2ee20041",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C59",
+      "claim": "The operation of direction-selective ganglion cells results from the particular wiring of their starburst amacrine cell inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed the operation of direction-selective ganglion cells results from the particular wiring of their starburst amacrine cell inputs (Briggman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Briggman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "f280e4d4-2180-4f46-9968-8eca8150b2a6",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C60",
+      "claim": "Non-midget RGCs receive many more inhibitory inputs than excitatory and these are located randomly over the dendritic tree, independently of excitatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been recognized that non-midget RGCs receive many more inhibitory inputs than excitatory and that these are located randomly over the dendritic tree, and independently of excitatory inputs (Freed and Sterling, 1988; Hitchcock, 1989; Kolb and Nelson, 1993; Weber and Stanford, 1994; Owczarzak and Pourcho, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "0311abcc-af8b-4e32-8318-67d47faac412",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C61",
+      "claim": "A surplus of inhibitory inputs on each dendrite ensures that stimuli entering a receptive field are transmitted more effectively to the soma than stimuli traversing the latter half.",
+      "claim_type": "EXPLICIT",
+      "source": "This characteristic wiring can now be understood in the context of the mechanism generating motion anticipation; a surplus of inhibitory inputs on each dendrite ensures that stimuli entering a receptive field are transmitted more effectively to the soma than stimuli traversing the latter half.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from modeling and experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "b3908a2d-c57b-42ca-97fd-e65a1d9d75b5",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C62",
+      "claim": "Variations in the distance between inhibitory and excitatory inputs will vary the object velocity that provides the most effective shunting of excitation to the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations (Figure 7) and the analysis of Koch et al., 1983; demonstrate that variations in the distance between inhibitory and excitatory inputs will vary the object velocity that provides the most effective shunting of excitation to the soma because this shunting depends on the time delay between these conductances.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through modeling and cited from theoretical work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "e59fbcb1-0f99-4ee9-a7ef-b70e3a5484ef",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C63",
+      "claim": "The general conditions that generate motion anticipation in the retina also exist in downstream areas of the visual pathway, including the superior colliculus or optic tectum, thalamus and area V1 of the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that the general conditions that generate motion anticipation in the retina, topographically organized neurons receiving feedforward inhibition, also exist in downstream areas of the visual pathway, including the superior colliculus or optic tectum (Bollmann and Engert, 2009), thalamus (Blitz and Regehr, 2005) and area V1 of the visual cortex (Miller, 2003; Haider et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from studies of other brain regions.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "53d43644-4720-46bf-ae21-6300ef074ea6",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "claim_id": "C64",
+      "claim": "A topographic organization of sensory inputs combined with feedforward inhibition onto dendrites may be a general mechanism for correcting time delays in neural signals relative to events in the external world.",
+      "claim_type": "EXPLICIT",
+      "source": "A topographic organization of sensory inputs combined with feedforward inhibition onto dendrites may therefore be a general mechanism for correcting time delays in neural signals relative to events in the external world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion based on observations in retina and citations from other brain regions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "80386d73-7c02-430a-a375-29d349ba41d8",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Motion anticipation is a fundamental retinal computation that compensates for the ~70 ms phototransduction delay, allowing accurate localization of moving objects. This phenomenon is observed across the majority of ganglion cell types and multiple species, with peak firing occurring earlier than expected from flashed stimulus responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8-C12 establish the biological significance and ubiquity of motion anticipation. The ~70 ms delay (C8) is well-documented in prior literature and confirmed experimentally (C14). The phenomenon is demonstrated across multiple cell types (C12, C16) and species, with functional relevance shown in salamander (C11). These foundational claims are well-supported by both citations and experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "4f9c7b34-ef6a-458f-ad35-c82951791069",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experimental characterization in goldfish RGCs shows motion anticipation with peak firing occurring 46 \u00b1 13 ms before the stimulus reaches receptive field center, compared to 62 \u00b1 3 ms delay for flashed stimuli. The degree of anticipation correlates with receptive field size (r = -0.593, accounting for 35% of variance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 present core experimental findings with appropriate sample sizes (n=25), statistical analysis (Pearson correlation), and consistent observations across cell types. The correlation between RF size and anticipation (C17) is statistically significant and mechanistically interpretable. The observation that cells with smallest RFs show least anticipation (C18) is consistent with the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "c6e9ce06-42fb-4dde-b602-e72834716ad8",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Voltage-clamp recordings reveal that excitatory inputs to RGCs are delayed (peak EPSC occurring 158 \u00b1 34 ms after bar reaches RF center in 7/9 cells), with no significant difference from linear predictions in most cells, ruling out presynaptic mechanisms of motion anticipation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 provide critical negative results that constrain the mechanism. The Kolmogorov-Smirnov test (C20) appropriately compares measured vs. predicted responses. The exception in orientation-selective cells (C21, n=2) is noted but represents a minority. These findings effectively rule out bipolar cell terminal mechanisms (feedback/lateral inhibition, synaptic depression) as the primary source of motion anticipation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "2c15cce7-8457-4c38-aee3-e541fe4f7eb0",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Disrupting inhibition in single RGCs by dialyzing with 120 mM Cl\u207b eliminates motion anticipation, shifting peak firing from -18 \u00b1 11 ms to +210 \u00b1 26 ms (p < 0.0002), while leaving flash responses unaffected. This demonstrates that feedforward inhibition is necessary for motion anticipation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 present a critical causal experiment with appropriate controls. The approach (high Cl\u207b dialysis) is validated by prior work (Taylor et al., 2000) and specifically disrupts inhibition in the recorded cell while preserving circuit function. The selective effect on motion (C24) but not flash responses (C25) strongly supports the conclusion (C26). Statistical significance is appropriate (p < 0.0002, n=6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "00faa619-7f4c-47a0-ade0-85eda063a626",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Computational modeling with passive dendrites and physiologically realistic parameters (I/E ratio ~2:1, synaptic density ~1 per 5 \u03bcm) successfully reproduces motion anticipation, demonstrating that passive dendritic properties are sufficient for this computation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 show that computational models with experimentally measured parameters (C27: I/E = 2.1 \u00b1 0.23, n=10) reproduce motion anticipation (C28). The robustness analysis (C29) demonstrates the mechanism works across physiologically relevant parameter ranges but breaks down at extreme values (Rm = 50 M\u03a9), providing boundaries. The modeling is well-constrained by experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "c68ceb8a-1ef1-4540-bb0e-241e950f54b2",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Blocking active dendritic conductances (NMDA receptors, voltage-gated Na\u207a and Ca\u00b2\u207a channels) with MK-801 and QX-314 does not eliminate motion anticipation, with EPSPs peaking 47 \u00b1 29 ms before stimulus reaches RF center (p = 0.0002, n=7), confirming that active conductances are not necessary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 provide strong experimental evidence that active conductances are dispensable. The pharmacological approach is well-validated, with verification that drugs reached dendrites (10 min dialysis, compared to Alexa 488 diffusion). The timing of anticipation in passive cells (47 \u00b1 29 ms) is statistically indistinguishable from control cells (46 \u00b1 13 ms, p = 0.9844), strongly supporting the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "c158e13c-6f1c-410b-a6cb-b7dd29108ecd",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Motion anticipation operates at velocities between 3.8\u00b0 s\u207b\u00b9 and 14.7\u00b0 s\u207b\u00b9 but breaks down at 27.8\u00b0 s\u207b\u00b9 or higher, with computational models accurately reproducing this velocity dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 demonstrate quantitative agreement between experimental data (n=26 cells, multi-electrode array) and model predictions. The velocity range is consistent with prior work in salamander (cited). The model's ability to predict breakdown velocity provides validation and suggests the mechanism captures essential biophysics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "7937b1c4-8658-4f3d-b718-c8b8bc10d17e",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Inhibition preferentially affects the latter half of the receptive field during motion because proximal inhibition activated before distal excitation effectively shunts excitatory inputs. Anatomical studies show that inhibitory synapses outnumber excitatory inputs and are randomly distributed on RGC dendrites, satisfying the conditions for effective shunting across all motion directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 integrate modeling insights (C34) with established theoretical principles (C35, Koch et al., 1983) and extensive anatomical literature (C36-C37, multiple citations across species). The mechanism explains how random synaptic placement with excess inhibition achieves direction-invariant motion anticipation. The logic is sound and well-supported by both modeling and anatomical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "a346e79b-d003-4294-adbf-5ed68df05dc5",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Computational modeling demonstrates that motion anticipation requires an excess of inhibitory over excitatory inputs (I/E > 1 in most models, I/E > 2 in one), with increasing I/E ratio causing smaller EPSPs and forward temporal shift in peak response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C57 show systematic modeling results testing the I/E ratio requirement. The finding that I/E > 1 is necessary (C39) is tested across three different RGC morphologies, providing generality. The variation (I/E > 1 vs. > 2) across models suggests some dependence on dendritic architecture, which is appropriately noted. This is a key mechanistic prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "f27a2f22-90eb-4a45-8d54-06df27fb7be8",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The density of synaptic inputs determines the critical velocity for motion anticipation. Reducing synaptic density to 25% of normal decreases critical velocity from \u22651 mm s\u207b\u00b9 to ~0.5 mm s\u207b\u00b9. The conserved excitatory synapse spacing of ~1 per 5 \u03bcm across species explains the consistent critical velocity observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C7 link anatomical observations (C40, multiple citations) to functional predictions through modeling (C41). The relationship between synaptic density and critical velocity is mechanistically interpretable and explains cross-species consistency. The modeling systematically varies density while holding I/E ratio constant, properly isolating the variable of interest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "a2a46f7c-4ef1-4148-970e-18b4208f3072",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Motion anticipation is computed autonomously within each ganglion cell's dendritic tree through passive, non-linear interactions of excitatory and inhibitory inputs, independent of other retinal circuit computations. The excitatory signal transmitted to RGCs is delayed, indicating temporal correction occurs postsynaptically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C43, C48-C50 present the central mechanistic conclusion, supported by multiple lines of evidence: delayed excitatory inputs (C48, experimental), persistence with passive dendrites (C30-C31), and modeling results (C28, C43). The autonomy claim (C3, C49) is supported by the finding that excitation is delayed while output shows anticipation, requiring dendritic computation. The logic is sound and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "393910a1-dcb4-4e2d-a2ee-4168cdbe2371",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Motion anticipation correlates with RF size in goldfish, with smaller RFs showing less anticipation. In primates, parafoveal midget RGCs have I/E ratios ~1:1 and may lack motion anticipation, consistent with their role in the 'what' pathway requiring high spatial resolution, while magnocellular pathway RGCs with larger RFs benefit from motion anticipation for spatial localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 extend findings to functional and evolutionary context. The correlation with RF size (C44) is experimentally demonstrated. The primate data (C45) comes from anatomical studies. The functional interpretation (C46-C47) regarding 'what' vs. 'where' pathways is well-grounded in established visual neuroscience and provides a coherent framework for understanding species/cell-type differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "3eb7722d-8d5c-4cd5-b2ae-309f7762c750",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The classical linear-nonlinear receptive field model incompletely describes RGC responses to motion because excitatory and inhibitory inputs interact non-linearly in a spatiotemporally dependent manner. This implements an AND-NOT operation (Koch et al., 1983) that is activated when objects move away from the soma, aligning peak excitation with the object's actual position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 provide theoretical interpretation of the mechanism. The inadequacy of linear models (C51) is demonstrated by the modeling results showing non-linear interactions. The connection to AND-NOT logic (C52-C53) appropriately cites theoretical work and applies it to explain the directional asymmetry in inhibitory effectiveness. This provides conceptual clarity to the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "8f7df8ff-c0c3-4f32-8226-519d9bd4997b",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Other RGC types use dendritic computations for different functions: PV-5 cells integrate inputs locally for approach sensitivity, direction-selective cells use dendritic Nav channels, and some DS-RGCs combine dendritic spikes with gap junctions for enhanced temporal responses. NMDA receptors could potentially augment motion anticipation in specific RGC subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 place findings in broader context of dendritic computation. These are appropriately cited from prior literature and serve to illustrate that different RGC types use dendritic mechanisms for various computations. The speculation about NMDA receptors (C55) is appropriately tentative and based on known properties. This contextualizes but does not constitute primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "12e4aa7c-7552-4be7-89eb-2c9321b15ebd",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The location of inhibitory synapses on dendritic trees significantly affects RGC output, as demonstrated for direction-selective cells with specific starburst wiring. However, motion anticipation relies on general wiring principles: random, independent distribution of excess inhibitory inputs ensures effective transmission of stimuli entering the RF while attenuating later portions, with inter-synapse distance determining velocity tuning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 contrast specific vs. general wiring principles. The importance of synapse location (C58) is demonstrated by modeling. The contrast with direction-selective cells (C59) highlights that motion anticipation uses different organizational principles. The interpretation of anatomical data (C60-C61) in light of the mechanism is logical. The velocity tuning prediction (C62) follows from modeling and theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "d5c7581b-1f55-4212-ac3e-05197f3bb891",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The general conditions for motion anticipation (topographically organized neurons receiving feedforward inhibition) exist in downstream visual areas including superior colliculus, thalamus, and V1, suggesting this may be a general mechanism for correcting neural signal delays relative to external events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C64 are speculative extrapolations beyond the retinal data. While the cited studies show feedforward inhibition exists in these areas, they do not demonstrate motion anticipation or test whether the specific mechanism operates there. The speculation is reasonable and appropriately tentative, but lacks direct experimental support. This represents a hypothesis for future work rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "78ce5420-0c99-482e-83dd-51de8d13683d",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Motion anticipation relies on feedforward inhibition, with passive non-linear interactions of excitatory and inhibitory synapses enabling accurate position encoding. An excess of inhibitory over excitatory inputs allows tracking of all motion directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 summarize key mechanistic findings that are directly supported by the experimental and modeling results detailed in other claim groups. C4 is demonstrated by the inhibition disruption experiments (C23-C26), C5 by the passive dendrite experiments (C30-C31) and modeling (C28), and C6 by the I/E ratio modeling (C38-C39). These are well-established by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    },
+    {
+      "id": "2b6f110b-25d3-4363-ad55-5000e0b05837",
+      "content_id": "9fcf09a0-ad11-4c92-90fc-d23b7c3e9223",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Directional selectivity in RGCs involves asymmetric connections with starburst amacrine cells, which have directionally selective dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 accurately summarizes well-established prior work on directional selectivity, appropriately cited from multiple studies. This provides important context for contrasting motion anticipation (a general computation) with directional selectivity (a specialized computation requiring specific wiring). The claim serves as background rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:44:53.008080Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "20bee21b-1581-450c-9a48-9d72b29221f7",
+      "result_id": "80386d73-7c02-430a-a375-29d349ba41d8"
+    },
+    {
+      "claim_id": "a03c6aec-b3d0-4277-a96d-818da4f93676",
+      "result_id": "80386d73-7c02-430a-a375-29d349ba41d8"
+    },
+    {
+      "claim_id": "66aa2780-eac5-4f57-a1b4-8ba07e90a253",
+      "result_id": "80386d73-7c02-430a-a375-29d349ba41d8"
+    },
+    {
+      "claim_id": "8d48c741-8515-4585-8e5d-d3ab84b9ec5f",
+      "result_id": "80386d73-7c02-430a-a375-29d349ba41d8"
+    },
+    {
+      "claim_id": "ebecc3ee-1a66-46c8-baa7-7c56efdd6c64",
+      "result_id": "80386d73-7c02-430a-a375-29d349ba41d8"
+    },
+    {
+      "claim_id": "31189d6f-cac6-4d33-aaf0-de1ffa3dcc85",
+      "result_id": "80386d73-7c02-430a-a375-29d349ba41d8"
+    },
+    {
+      "claim_id": "42e5f99d-b28c-4f3d-9411-5e3b8723f1e2",
+      "result_id": "80386d73-7c02-430a-a375-29d349ba41d8"
+    },
+    {
+      "claim_id": "f1368a7f-42f2-454d-8818-31b86e0e5b3a",
+      "result_id": "4f9c7b34-ef6a-458f-ad35-c82951791069"
+    },
+    {
+      "claim_id": "e63856d8-fa0d-4308-93ff-dafc3c38e122",
+      "result_id": "4f9c7b34-ef6a-458f-ad35-c82951791069"
+    },
+    {
+      "claim_id": "7222aaf5-4147-48c1-92d7-a5a4ecd5f1d0",
+      "result_id": "4f9c7b34-ef6a-458f-ad35-c82951791069"
+    },
+    {
+      "claim_id": "06a4321e-63d4-44c7-988f-d5987b98aa27",
+      "result_id": "4f9c7b34-ef6a-458f-ad35-c82951791069"
+    },
+    {
+      "claim_id": "c1b50c79-9963-4c7c-be5b-c33a98d29ba5",
+      "result_id": "4f9c7b34-ef6a-458f-ad35-c82951791069"
+    },
+    {
+      "claim_id": "901c9e96-b46f-4d70-b65f-de971ac4607e",
+      "result_id": "c6e9ce06-42fb-4dde-b602-e72834716ad8"
+    },
+    {
+      "claim_id": "afac06ab-8375-49c3-a7d9-db4baea81201",
+      "result_id": "c6e9ce06-42fb-4dde-b602-e72834716ad8"
+    },
+    {
+      "claim_id": "7ab4009b-9933-4c1e-9e82-cfb2063abe9a",
+      "result_id": "c6e9ce06-42fb-4dde-b602-e72834716ad8"
+    },
+    {
+      "claim_id": "17574937-d896-4491-923b-439d289dc360",
+      "result_id": "c6e9ce06-42fb-4dde-b602-e72834716ad8"
+    },
+    {
+      "claim_id": "dc57b390-53e5-4415-b545-9ef86482eb25",
+      "result_id": "2c15cce7-8457-4c38-aee3-e541fe4f7eb0"
+    },
+    {
+      "claim_id": "3a762204-c5e0-4699-95aa-24a72fff3d78",
+      "result_id": "2c15cce7-8457-4c38-aee3-e541fe4f7eb0"
+    },
+    {
+      "claim_id": "7ff6757c-7b8e-438d-b94f-64be5cc92e26",
+      "result_id": "2c15cce7-8457-4c38-aee3-e541fe4f7eb0"
+    },
+    {
+      "claim_id": "bba18af3-c35b-482f-aa00-d19914d19ec5",
+      "result_id": "2c15cce7-8457-4c38-aee3-e541fe4f7eb0"
+    },
+    {
+      "claim_id": "d39347bb-85fb-4f47-b4c3-7e6c344fdb12",
+      "result_id": "00faa619-7f4c-47a0-ade0-85eda063a626"
+    },
+    {
+      "claim_id": "4ee1a4f5-1c5e-41b1-9fcb-21f9abbeb051",
+      "result_id": "00faa619-7f4c-47a0-ade0-85eda063a626"
+    },
+    {
+      "claim_id": "3d2dd35d-1c16-470e-9998-94a908116406",
+      "result_id": "00faa619-7f4c-47a0-ade0-85eda063a626"
+    },
+    {
+      "claim_id": "ec1706f8-ef33-40b5-b120-7d23229ac1d3",
+      "result_id": "c68ceb8a-1ef1-4540-bb0e-241e950f54b2"
+    },
+    {
+      "claim_id": "e356e156-10bb-4ed5-bd5e-fae7ce552a8f",
+      "result_id": "c68ceb8a-1ef1-4540-bb0e-241e950f54b2"
+    },
+    {
+      "claim_id": "ea65aafc-9872-4b90-a3fb-bdafb0dcabb4",
+      "result_id": "c158e13c-6f1c-410b-a6cb-b7dd29108ecd"
+    },
+    {
+      "claim_id": "7fd2002e-e1e8-4edd-b98f-5e2e06b57541",
+      "result_id": "c158e13c-6f1c-410b-a6cb-b7dd29108ecd"
+    },
+    {
+      "claim_id": "f8df7b7e-8b64-4205-9de9-46358c088eb2",
+      "result_id": "7937b1c4-8658-4f3d-b718-c8b8bc10d17e"
+    },
+    {
+      "claim_id": "f0ffa357-85a6-49be-a505-af1a0da41391",
+      "result_id": "7937b1c4-8658-4f3d-b718-c8b8bc10d17e"
+    },
+    {
+      "claim_id": "7f8bf078-3970-46cd-9397-025892781cf5",
+      "result_id": "7937b1c4-8658-4f3d-b718-c8b8bc10d17e"
+    },
+    {
+      "claim_id": "476c6599-f9fa-42e3-86fd-c7e5edee1653",
+      "result_id": "7937b1c4-8658-4f3d-b718-c8b8bc10d17e"
+    },
+    {
+      "claim_id": "def87a2b-e9d5-4f3a-b31b-5cc0c9ef7346",
+      "result_id": "a346e79b-d003-4294-adbf-5ed68df05dc5"
+    },
+    {
+      "claim_id": "defd1a95-9a60-4e1f-9de7-cc7d0beea857",
+      "result_id": "a346e79b-d003-4294-adbf-5ed68df05dc5"
+    },
+    {
+      "claim_id": "923603b0-78ca-43f2-b849-8922c1908a52",
+      "result_id": "a346e79b-d003-4294-adbf-5ed68df05dc5"
+    },
+    {
+      "claim_id": "f43a7f43-5504-4215-a914-ec50226d2b40",
+      "result_id": "f27a2f22-90eb-4a45-8d54-06df27fb7be8"
+    },
+    {
+      "claim_id": "9e4ef9c0-680c-41bc-95a8-e79bf503dae7",
+      "result_id": "f27a2f22-90eb-4a45-8d54-06df27fb7be8"
+    },
+    {
+      "claim_id": "5db7c9bc-f4f1-412d-bb8d-d538a270c64a",
+      "result_id": "f27a2f22-90eb-4a45-8d54-06df27fb7be8"
+    },
+    {
+      "claim_id": "d3ed1db4-89bf-45ee-953a-82d37f6578b8",
+      "result_id": "f27a2f22-90eb-4a45-8d54-06df27fb7be8"
+    },
+    {
+      "claim_id": "eb7c1f4b-68f0-4c88-a146-1a098e94f31f",
+      "result_id": "a2a46f7c-4ef1-4148-970e-18b4208f3072"
+    },
+    {
+      "claim_id": "f9ab3e2b-06c5-4fdf-8aba-39be3f9ea693",
+      "result_id": "a2a46f7c-4ef1-4148-970e-18b4208f3072"
+    },
+    {
+      "claim_id": "012bdcf2-94fd-40c3-96dc-0488be11a814",
+      "result_id": "a2a46f7c-4ef1-4148-970e-18b4208f3072"
+    },
+    {
+      "claim_id": "f006cb6e-5e19-4c59-8e19-58a3eaa04ffc",
+      "result_id": "a2a46f7c-4ef1-4148-970e-18b4208f3072"
+    },
+    {
+      "claim_id": "857b44d3-e8a1-4968-a5c8-91c6efa91ddd",
+      "result_id": "a2a46f7c-4ef1-4148-970e-18b4208f3072"
+    },
+    {
+      "claim_id": "4b07c1b0-5199-4194-bf7a-acd18ff22a2c",
+      "result_id": "393910a1-dcb4-4e2d-a2ee-4168cdbe2371"
+    },
+    {
+      "claim_id": "d50b4c0a-b8b2-457f-8bea-e669bc1ff1f5",
+      "result_id": "393910a1-dcb4-4e2d-a2ee-4168cdbe2371"
+    },
+    {
+      "claim_id": "80c2dc6f-cecb-40dc-8fb4-3572ea6f86b3",
+      "result_id": "393910a1-dcb4-4e2d-a2ee-4168cdbe2371"
+    },
+    {
+      "claim_id": "33e5edd1-aaa2-4218-94a9-68be33d1eb24",
+      "result_id": "393910a1-dcb4-4e2d-a2ee-4168cdbe2371"
+    },
+    {
+      "claim_id": "609d6c6c-44b4-4576-b73a-be4356367680",
+      "result_id": "3eb7722d-8d5c-4cd5-b2ae-309f7762c750"
+    },
+    {
+      "claim_id": "da56cc4e-00fa-416d-b622-ba0f1844efa0",
+      "result_id": "3eb7722d-8d5c-4cd5-b2ae-309f7762c750"
+    },
+    {
+      "claim_id": "58784b34-7ad9-406b-b86d-34a29bec9269",
+      "result_id": "3eb7722d-8d5c-4cd5-b2ae-309f7762c750"
+    },
+    {
+      "claim_id": "012a58f9-945f-4493-af8b-79bd906d6890",
+      "result_id": "8f7df8ff-c0c3-4f32-8226-519d9bd4997b"
+    },
+    {
+      "claim_id": "d64e5528-b4da-4576-b420-b0d6d2706ead",
+      "result_id": "8f7df8ff-c0c3-4f32-8226-519d9bd4997b"
+    },
+    {
+      "claim_id": "aebf3cdd-8b99-4d09-8da4-1259ac77ee6f",
+      "result_id": "8f7df8ff-c0c3-4f32-8226-519d9bd4997b"
+    },
+    {
+      "claim_id": "b73a79d5-0165-4b4d-a45e-dce33bb852c9",
+      "result_id": "12e4aa7c-7552-4be7-89eb-2c9321b15ebd"
+    },
+    {
+      "claim_id": "5650506b-ed29-4313-9ce2-d73a2ee20041",
+      "result_id": "12e4aa7c-7552-4be7-89eb-2c9321b15ebd"
+    },
+    {
+      "claim_id": "f280e4d4-2180-4f46-9968-8eca8150b2a6",
+      "result_id": "12e4aa7c-7552-4be7-89eb-2c9321b15ebd"
+    },
+    {
+      "claim_id": "0311abcc-af8b-4e32-8318-67d47faac412",
+      "result_id": "12e4aa7c-7552-4be7-89eb-2c9321b15ebd"
+    },
+    {
+      "claim_id": "b3908a2d-c57b-42ca-97fd-e65a1d9d75b5",
+      "result_id": "12e4aa7c-7552-4be7-89eb-2c9321b15ebd"
+    },
+    {
+      "claim_id": "e59fbcb1-0f99-4ee9-a7ef-b70e3a5484ef",
+      "result_id": "d5c7581b-1f55-4212-ac3e-05197f3bb891"
+    },
+    {
+      "claim_id": "53d43644-4720-46bf-ae21-6300ef074ea6",
+      "result_id": "d5c7581b-1f55-4212-ac3e-05197f3bb891"
+    },
+    {
+      "claim_id": "ea8a8a2e-0843-4b2c-b018-4a870697996b",
+      "result_id": "78ce5420-0c99-482e-83dd-51de8d13683d"
+    },
+    {
+      "claim_id": "44199a7e-6234-4f1a-bc24-09b221801ba9",
+      "result_id": "78ce5420-0c99-482e-83dd-51de8d13683d"
+    },
+    {
+      "claim_id": "8449b50f-041d-481f-a79c-93b49657261a",
+      "result_id": "78ce5420-0c99-482e-83dd-51de8d13683d"
+    },
+    {
+      "claim_id": "65c3c8b2-ad8a-4243-af7d-98594563a64d",
+      "result_id": "2b6f110b-25d3-4363-ad55-5000e0b05837"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "S. cerevisiae naturally lacks circadian clock machinery and does not display autonomous 24-hr oscillations in constant environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 establish the baseline state of S. cerevisiae through multiple literature citations. These claims are well-supported by prior work and provide the rationale for the experimental evolution approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors evolved yeast populations for 30 days using FACS-based selection for alternating high and low YFP fluorescence over 24-hr cycles, with elevated mutation rates and two selection strengths (E6 and E15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8, C66-C67 describe the experimental evolution design with clear methodological details. The approach is well-documented with appropriate controls for cell density and selection parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "After 30 days of evolution, both populations showed cyclical changes in fluorescence distributions that resulted from oscillations in cell aggregation rather than changes in per-cell fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 demonstrate that the evolved phenotype involves cell association rather than gene expression changes. The data from Figures 1C, 1D, and Figure 1\u2014figure supplement 1B provide strong evidence that per-cell fluorescence remains constant while clump size varies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "All 30 isolated clones from evolved populations showed oscillations, and the cycling behavior is not a response to environmental fluctuations but requires FACS-based synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 establish that the oscillatory phenotype is heritable and not driven by environmental cues. The control experiment comparing synchronized vs. unsynchronized populations (Figure 1\u2014figure supplement 1C,D) provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Cells oscillate between single-cell and multicellular states over 24 hours through a mechanism where single cells produce adherent offspring that form lineage-based clumps, which later fragment and produce non-adherent offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe the mechanism of oscillation using multiple labeling approaches (CFP, Oregon Green). The experiments convincingly demonstrate lineage-based clump formation and the dual mechanism of clump dissolution (Figure 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The evolved oscillator shows autonomous behavior, with populations and individual lineages maintaining oscillations for at least 3 days without FACS-based selection or environmental cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 demonstrate free-running oscillations at both population and single-lineage levels (Figures 3A, 3C). The experiments show sustained oscillations without selection, though some phase drift occurs. This is critical evidence for an autonomous oscillator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Eight putative causal mutations were identified through bulk segregant analysis, and engineering these mutations into the ancestral strain recreated the oscillatory phenotype with indistinguishable behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 demonstrate successful identification and validation of causal mutations. The recreation experiment (Figure 4) provides strong evidence that these eight mutations are sufficient to produce the evolved phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Individual gene deletions maintain oscillations, but only SIR4 and YJL070C wild-type replacements abolish cycling. Sub-trait selection experiments reveal that sir4-100 is universally selected, while other mutations show trait-specific selection patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 systematically dissect the contribution of individual mutations (Figure 5A-C). The results reveal complex genetic architecture where most mutations are dispensable individually but contribute to specific sub-traits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The evolved clone E6-1 shows repression of haploid-specific genes due to sir4 mutation-mediated derepression of HML\u03b1 and HMRa, mimicking diploid gene expression. Deleting HML\u03b1 restores haploid gene expression and eliminates clumping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 identify a key molecular mechanism linking SIR4 inactivation to the oscillatory phenotype through mating-type regulation (Figure 5D, Figure 5\u2014figure supplement 1). The HML\u03b1 deletion experiment provides strong causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The E6 population contains at least five independently evolved oscillator lineages with different genetic architectures, as evidenced by low allele frequencies of E6-1 mutations in the population and distinct mutation profiles in clones E6-2, E6-3, and E6-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 demonstrate parallel evolution through time-course sequencing and bulk segregant analysis of multiple clones (Figure 6A-B). The diversity of WHI2 alleles and distinct mutation profiles provide strong evidence for multiple independent solutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C57",
+      "C58"
+    ],
+    "result": "All nine examined clones from both E6 and E15 populations show increased HML\u03b1 expression and repressed haploid-specific genes, and deleting HML\u03b1 eliminates clumping in all but one clone (E6-5). All four sequenced lineages contain WHI2 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C57-C58 reveal convergent evolution at the gene expression level despite genetic diversity (Figure 6C-D). The qPCR and HML\u03b1 deletion experiments demonstrate that repression of haploid-specific genes is a common feature across independent lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The evolved yeast oscillator differs from previously reported yeast oscillations, maintains a ~24-hr period without environmental cues or selection, and regulates cell clumping behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 distinguish the evolved oscillator from prior observations and summarize its key properties. The comparison to literature (C51-C52) and experimental evidence from free-run experiments support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Multiple combinations of mutations can produce the same oscillatory phenotype, with most causal mutations being loss-of-function, suggesting that sophisticated functions can evolve primarily through gene inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C59-C62 synthesize observations about genetic architecture and mutational mechanisms. The evidence from multiple independent lineages and the predominance of nonsense mutations and functional deletions support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "All experiments used W303 S. cerevisiae strain background, YPD media with antibiotics, and a MoFlo Legacy flow cytometer with specified laser and filter settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 provide essential methodological details that are clearly stated and standard for yeast research. These are straightforward descriptions of materials and methods.",
+    "result_type": "MINOR"
+  }
+]

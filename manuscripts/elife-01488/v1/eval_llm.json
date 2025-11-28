@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C54"
+    ],
+    "result": "NaV1.6 sodium channels localize to heminodes and nodes of Ranvier in SAI afferents, where they likely serve as spike initiation sites. NaV1.6 was found at 93% of myelin end points (heminodes) and 100% of myelin gaps (nodes), representing the first localization of this channel isoform in tactile end organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide quantitative immunostaining data with appropriate sample sizes (N=28/30 for heminodes, N=9/9 for nodes). The inference that spikes initiate at heminodes (C18) is reasonable given the strong NaV1.6 enrichment and analogy to Pacinian corpuscles. The novelty claim (C54) is appropriately contextualized with prior work on NaV1.6 in other neuron types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C63"
+    ],
+    "result": "Quantitative 3D reconstruction of SAI afferents reveals complex arbor architecture with 5-7 branching orders, asymmetric distribution of Merkel cell-neurite complexes among heminodes, and high variability in end-organ structure. Most touch domes (83%) were innervated by single afferents, with >85% of Merkel cells contacted by neurites and primary clusters sometimes containing \u226550% of all Merkel cells in an arbor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by systematic 3D reconstructions with appropriate sample sizes (N=15-21 touch domes from multiple mice). Quantitative morphometric data are presented with clear statistical descriptions. The observation of asymmetric clustering (C25, C63) is well-documented through multiple measurements and is central to the study's main hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "First spike latencies in SAI afferents are significantly shorter in large touch domes compared to small touch domes (10.9\u00b11.6 ms vs 40.0\u00b114.5 ms, p=0.027), with higher variance in small touch domes (p<0.0001), suggesting that more Merkel cell-neurite complexes result in faster, more reliable responses during dynamic indentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C32 report statistically significant differences with appropriate tests (one-tailed t-test, two-sample F test) and adequate sample sizes (N=57-60 stimuli). The inference (C31, C33) logically follows from the data. However, the study acknowledges that recordings and reconstructions were from different afferents, which is a limitation for directly testing this relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C40"
+    ],
+    "result": "Mechanical sensitivity varied significantly between SAI afferents (\u03ba=2.1-14.2 mm\u207b\u00b9, p<0.0001) but did not scale with total Merkel-cell number. Skin mechanics did not account for these differences as displacement-force relations were indistinguishable between recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by appropriate statistical analysis (extra sum-of-squares F test) of displacement-response relations. The lack of correlation with Merkel cell number (C35) and exclusion of skin mechanics as a confounding factor (C40) are both documented with data. This finding motivates the computational modeling to identify alternative structural features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Computational modeling predicts that asymmetric clustering of Merkel cell-neurite complexes at heminodes significantly affects firing properties. Moving just two transduction units between clusters altered firing rates by 20-25%, with firing rates increasing 7.2% per unit added to primary clusters. A skewed distribution of 12 units produced higher mechanical sensitivity than an even distribution of 20 units (\u03ba=7.7 vs 5.0, p=0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational model is well-described with appropriate validation against biological data (R\u00b2=0.96 for combined goodness of fit, C42-C43). Systematic parameter variations (C44-C48) demonstrate sensitivity to cluster arrangement. Statistical comparisons of model outputs use appropriate tests (extra sum-of-squares F test). The model successfully reproduces key features of SAI responses including spike-timing variability and biphasic firing patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C61"
+    ],
+    "result": "This study presents the first computational models of mammalian tactile afferents constrained by structural parameters from intact end organs, integrating skin mechanics (FEM), mechanotransduction, and spike initiation in a novel network model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claims (C52, C61) are appropriately contextualized with discussion of prior modeling approaches. The integration of three model components (FEM for skin mechanics, transduction functions, and LIF models for spike initiation) with anatomically-constrained parameters represents a genuine advance. The Materials and Methods section provides sufficient detail for model validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In adult mouse hindlimb, 70% of SAI afferents (19/27) innervated single touch domes, 22% (6/27) innervated two touch domes, and 7% (2/27) innervated three touch domes. This 30% rate of multi-dome innervation is much lower than reported in cats (>60%) or neonatal mouse back skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are based on systematic electrophysiological recordings with adequate sample size (N=27 afferents). The comparison to other species and developmental stages (C39) is appropriately supported by citations. This finding is important for interpreting the modeling results, which focused on single touch-dome afferents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The Gaussian distribution of Merkel cell connections to terminal neurites suggests probabilistic formation mechanisms. Evidence from Atoh1 knockout mice showing exuberant branching in the absence of Merkel cells suggests that targeting is independent of Merkel cell-derived signals, but that Merkel cell contacts are required for appropriate arbor pruning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The inference about probabilistic mechanisms (C57) is reasonable given the Gaussian distribution but remains speculative. Claims C58-C60 rely heavily on interpretation of cited work (Maricich et al., 2009) rather than data from this study. The proposed model of Merkel cell-independent targeting but Merkel cell-dependent pruning (C60) is explicitly labeled as speculation and requires direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C82"
+    ],
+    "result": "The findings provide an anatomical correlate (asymmetric clustering at heminodes) and plausible mechanism to explain the 'driver effect' in branched sensory afferents. The structural basis of receptive-field hot spots is proposed to be clusters of Merkel cell-neurite complexes at heminodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 appropriately connects the study's findings to the historical driver effect literature with proper citations. The hot spot hypothesis (C82) is well-reasoned, noting that the 3-5 hot spots observed in primates coincides with the 2-6 heminodes found per touch-dome afferent. However, direct experimental validation of this hypothesis requires future work with microstimulation techniques, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Touch-evoked firing rates, first spike latencies, and mechanical sensitivity varied widely between SAI afferents in mouse touch domes, corroborating findings in primates. This variability is likely a general feature of mammalian SAI afferents and may distort spatial feature representation, though the CNS might compensate through scaling factors or the variability might extend dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by experimental data and appropriately corroborated with primate literature. The generalization to mammals (C85) is reasonable given cross-species consistency. Claims C86-C88 appropriately distinguish between established findings from simulations (C86, cited) and speculative explanations (C87-C88) for the functional consequences of variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Variability in SAI end-organ structure is proposed to result from homeostatic mechanisms during normal skin remodeling. Given that Merkel cells renew and hair-growth cycles involve innervation changes, SAI-afferent arbors may be dynamic throughout adulthood. Simulations predict that altering Merkel cell number or arrangement changes firing, raising the possibility of homeostatic mechanisms maintaining signaling reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 about Merkel cell renewal and innervation changes are well-supported by citations. However, the extension to SAI afferents (C92) and the homeostatic mechanism hypothesis (C89, C94) are explicitly speculative. While the computational predictions (C93) support the plausibility of this hypothesis, direct experimental evidence for dynamic remodeling and homeostatic compensation in adult SAI afferents is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "NaV1.6 confers rapid sodium channel kinetics and mediates resurgent currents in DRG neurons, which is notable given that SAI afferents display unusually high instantaneous firing frequencies exceeding 1000 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by appropriate citations to prior work (Herzog et al., 2003; Cummins et al., 2005 for C55; Iggo and Muir, 1969 for C56). The connection between NaV1.6 properties and SAI firing characteristics is logical and well-reasoned, though the functional role of NaV1.6 in SAI high-frequency firing remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multiple biological advantages are proposed for distributing transduction complexes among multiple heminodes: robustness to injury, high-fidelity signal propagation over millimeter distances, and extended sensory coding range. Heminodes located 19-41 \u03bcm from lanceolate endings suggest this is a general feature of myelinated tactile afferents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation about heminode proximity to lanceolate endings (C70) is supported by data (N=7 end organs), and the generalization (C71) is reasonably inferred with appropriate citations. However, the proposed functional advantages (C67, C68, C72) are explicitly speculative. While these hypotheses are plausible and well-reasoned, they lack direct experimental support and represent future directions rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Some touch domes may be innervated by multiple sensory afferents, potentially including both typical SAI afferents and thinly myelinated A\u03b4 afferents. This has been described in rat dermatome borders and proposed for human touch domes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of dual innervation in two touch domes (C77) is documented but limited (N=2). The speculation about A\u03b4 identity (C78) is based only on morphological features without molecular confirmation. Claims C75-C76 appropriately cite prior literature, but the functional significance and prevalence of multi-afferent innervation in mouse touch domes remains unclear and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C28",
+      "C29",
+      "C62",
+      "C66",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Background knowledge claims about SAI afferents, mechanosensory neurons, and tactile coding are established in the literature and appropriately cited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature and are appropriately supported by citations to primary sources. They provide necessary context for interpreting the study's novel findings but do not constitute new results from this work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1504 @@
+{
+  "submission": {
+    "id": "86c1d3e3-28bd-4311-99cb-25a18597d595",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:34:02.677718Z",
+    "updated_at": "2025-11-28T20:34:02.677718Z"
+  },
+  "content": [
+    {
+      "id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "submission_id": "86c1d3e3-28bd-4311-99cb-25a18597d595",
+      "content_type": "manuscript",
+      "content_text": "# Robust and accurate prediction of residue\u2013residue interactions across protein interfaces using evolutionary information\n\n## Authors\n\n- Sergey Ovchinnikov<sup>1</sup>\n- Hetunandan Kamisetty<sup>1</sup>\n- David Baker<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Howard Hughes Medical Institute, University of Washington Seattle United States\n2. Molecular and Cellular Biology Program University of Washington Seattle United States\n3. Facebook Inc. Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDo the amino acid sequence identities of residues that make contact across protein interfaces covary during evolution? If so, such covariance could be used to predict contacts across interfaces and assemble models of biological complexes. We find that residue pairs identified using a pseudo-likelihood-based method to covary across protein\u2013protein interfaces in the 50S ribosomal unit and 28 additional bacterial protein complexes with known structure are almost always in contact in the complex, provided that the number of aligned sequences is greater than the average length of the two proteins. We use this method to make subunit contact predictions for an additional 36 protein complexes with unknown structures, and present models based on these predictions for the tripartite ATP-independent periplasmic (TRAP) transporter, the tripartite efflux system, the pyruvate formate lyase-activating enzyme complex, and the methionine ABC transporter.\n\n## Introduction\n\nRecent work has demonstrated the accuracy of coevolution-based contact prediction for monomeric proteins using a global statistical model (Thomas et al., 2008) to distinguish between direct and indirect couplings (Marks et al., 2011; Morcos et al., 2011; Hopf et al., 2012; Nugent and Jones, 2012; Jones et al., 2012; Lapedes et al., 2012; Marks et al., 2012; Su\u0142kowska et al., 2012; Kamisetty et al., 2013). While early approaches relied on estimating an inverse covariance matrix (Marks et al., 2011; Morcos et al., 2011; Jones et al., 2012), more recent studies have shown that a pseudo-likelihood-based approach (Balakrishnan et al., 2011) results in more accurate predictions (Ekeberg et al., 2013; Kamisetty et al., 2013) for a range of alignment sizes and protein lengths.\n\nIn contrast to this rich body of work for monomeric proteins, relatively little is known about the utility of such statistical models in predicting protein\u2013protein interactions. The more general problem of predicting if two proteins interact with each other has been studied extensively using a wide variety of approaches (de Juan et al., 2013; Hosur et al., 2012; Zhang et al., 2012; Shoemaker and Panchenko, 2007, Valencia and Pazos, 2002, Ochoa and Pazos, 2010). Amino acid residue coevolution has been used to predict residue\u2013residue interactions across interfaces with local statistical models (Pazos et al., 1997; Halperin et al., 2006). As noted above, the accuracy of these models is reduced by the confounding of direct and indirect correlations (Lapedes et al., 1999; Weigt et al., 2009); the application of global statistical models to coevolution-based contact prediction across interfaces has been limited to the case of the histidine-kinase/response-regulator two component system (Burger and van Nimwegen, 2008; Weigt et al., 2009; Schug et al., 2009; Dago et al., 2012).\n\nIn this study, we examine residue\u2013residue covariation across protein\u2013protein interfaces using a pseudo-likelihood-based statistical method. In a large set of complexes of known structure, we find that covarying pairs of positions are almost always in contact in the three-dimensional structure, provided there are sufficient aligned sequences. We find further that significant residue\u2013residue covariance occurs frequently between physically interacting protein pairs but very rarely between non-interacting pairs, and hence should be useful for predicting whether two proteins interact. We use the pseudo-likelihood method to predict contacts across protein-interfaces for 36 evolutionarily conserved complexes of unknown structure and present structure models for four of the complexes particularly well constrained by these data.\n\n## Results\n\nFor a single protein family, it is straightforward to generate a multiple sequence alignment and subsequently identify covarying residue pairs. To identify covarying residue pairs between two proteins A and B is not as easy: only organisms that contain an ortholog of protein A and protein B contribute, and in generating the alignments the protein A and protein B sequences for each organism must be properly paired. To simplify the ortholog identification problem, we focus on pairs of genes with conserved chromosomal locations separated in the genome by fewer than 20 other annotated genes. We then build GREMLIN global statistical models for sequences in the paired protein families. The models have \u2018one-body\u2019 parameters for each amino acid at each position in the two proteins, and \u2018two-body\u2019 parameters for each pair of amino acids at each pair of positions in the two proteins. These parameters are obtained by maximizing the pseudo-likelihood of the observed sequence pairs, rather than their likelihood, which makes the quite formidable estimation tractable. In the following sections, we investigate the structural contexts of residue pairs with large values of these two-body coupling parameters\n\n### Residue\u2013residue covariation in the bacterial 50S ribosomal unit\n\nWe began by studying residue\u2013residue coupling parameters in the bacterial 50S ribosomal subunit\u2014the largest evolutionarily conserved bacterial multiprotein complex with an atomic resolution structure. For each individual protein in the complex, we constructed multiple sequence alignments by querying the UniProt sequence database (Wu et al., 2006) for homologous sequences. For every pair of proteins in the complex, we then constructed a paired multiple sequence alignment (\u2018Materials and methods\u2019). For each such paired alignment, we built a GREMLIN global statistical model, computed normalized coupling strengths from the two body coupling parameters, and ranked inter protein residue pairs based on these scores (\u2018Materials and methods\u2019). A coupling strength larger than one indicates higher than average coupling between two residues.\n\nWe find that in the 50S ribosomal subunit only a small fraction of residue pairs coevolve, as indicated by coupling strengths (y axis of Figure 1A) greater than 1.5. Remarkably, the two residues in each of these pairs are almost all within 8 \u00c5 of each other in the 50S crystal structure (Figure 1A) and all are within 12 \u00c5. The locations of the covarying residue pairs in the 50S structure (with the individual proteins pulled apart for clarity) are shown in Figure 1B; yellow lines indicate distances less than 8 \u00c5 and orange lines, distances less than 12 \u00c5. For the 50S ribosome, the GREMLIN model was built using sequence data from \u223c1500 non-redundant genomes; Figure 1D suggests that for complexes with such large numbers of aligned sequence, residue\u2013residue interactions across interfaces can be predicted with quite high confidence based on amino acid sequence covariation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02030/elife-02030-fig1-v2.jpg)\n\n**Figure 1.:** (A) Coupling strengths and inter-residue distances for each residue pair in the 50S subunit (black dots). Residue pairs with coupling strength greater than 1.5 are nearly always less than 8 \u00c5 apart. (B) Locations of coevolving (high coupling strength) residue pairs in the protein component of the 50S subunit. The monomers have been pulled apart slightly for clarity. Lines connect residue pairs with coupling strength greater than 1.5; yellow, distance less than 8 \u00c5; orange, distance less than 12 \u00c5. (C) Protein pairs with strong inter-residue covariation (colors) make contact in the three-dimensional structure (black boxes). For each protein pair, the sum of the coupling strength greater than 1.5 for each pair of 50S subunit proteins is indicated; black boxes indicate contacts in the crystal structure. (D) Dependence of contact prediction accuracy on coupling strength and the number of sequences in the alignments. For each of the indicated coupling strength cutoffs (colors), the frequency of contact in the 50S structure (y axis) was computed for sub alignments with different sequence depths (x axis).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02030/elife-02030-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Top row: (A) Normalized Coupling strengths. (B) GREMLIN score obtained by fitting a sigmoidal function of normalized coupling strengths to observed frequencies on the 50S ribosome (left column) evaluated on the benchmark set (complexes from the NADH dehydrogenase, middle column and the remaining, right column). (C) The GREMLIN score is well-calibrated: the fraction of predictions with a Gremlin score of x that are correct (distance <12 \u00c5) is roughly x (x in [0, 1]). The overall behavior is similar across the three datasets.\n\nFor a large protein\u2013protein complex, can the sum of the coupling strengths between pairs of proteins in the complex be used to distinguish directly interacting and non-interacting protein pairs? In the 50S subunit, every pair of proteins with summed coupling strengths (numbers in Figure 1C) greater than 1.5 interacts with each other (boxes in Figure 1C). There are, however, several instances of protein pairs that contact in the 50S subunit for which no covariance is observed; clearly not every interaction will be identified by the sum of the coupling strengths, for example between two proteins that are held together primarily by the ribosomal RNA.\n\nHow many aligned sequences are required for accurate contact prediction? To assess the dependence on alignment depth, we generated paired sub-alignments with varying numbers of sequences for every pair of 50S proteins and recomputed coupling strengths for each sub-alignment. For each alignment depth, we calculated the fraction of residue pairs within 12 \u00c5 for different ranges of coupling strengths. We find that the greater the number of aligned sequences, the lower the value of the coupling strength above which residue pairs are likely to be in contact in the structure (Figure 1D). For example, if the number of aligned sequences is greater than the sum of the lengths of the two proteins, residue\u2013residue contact predictions are likely to be accurate if the coupling strength is 2 or greater (Figure 1D: orange dots), while if there are twice as many sequences, contact predictions are accurate above a coupling strength of 1.5 (the cutoff shown in Figure 1A). A sigmoidal function of the coupling strength and the number of sequences per position in the complex accurately fits the observed contact frequency data (\u2018Materials and methods\u2019 and Figure 1\u2014figure supplement 1); we refer to the fitted values as GREMLIN scores for the remainder of the paper.\n\n### Bacterial complex benchmark\n\nWe next generated paired-alignments for all E. coli gene-pairs that had conserved intergenic distances across genomes deposited in the UniProt (\u2018Materials and methods\u2019). As the 50S results (Figure 1D) suggested that alignment depths greater than the average of the lengths of the two proteins were required for accurate prediction, we focused on paired alignments with at least this number of sequences\u20141126 gene pairs in total excluding the ribosomal proteins. For each of these 1126 pairs, we generated GREMLIN global statistical models and determined the coupling strength for each residue pair.\n\nFor 64 of the 1126 gene pairs, at least one pair of residues had GREMLIN score >0.85. For 28 of the 64 pairs three-dimensional structures have been determined experimentally, and the locations of the residue pairs with GREMLIN score >0.6 for several of these complexes are shown in Figure 2A (pairs within 8 \u00c5 are in yellow, between 8 \u00c5 and 12 \u00c5 in orange, and greater than 12 \u00c5, in red). Almost all pairs with GREMLIN scores greater than 0.6 are in contact in the complex structures, with the notable exception of the NADH dehydrogenase subunits (Figure 2B). The complex is thought to undergo a cascade of conformational changes during electron transfer (Baradaran et al., 2013); the high GREMLIN score contacts not made in the solved structure may provide insight into the nature of these changes. As observed for the 50S complex (Figure 1C), the existence of one or more high GREMLIN scores between two proteins provides evidence that the proteins interact: 44% (28/64) of the protein pairs with high GREMLIN scores form a complex which has been solved crystallographically compared to 8% (78/1126) over the whole set.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02030/elife-02030-fig2-v2.jpg)\n\n**Figure 2.:** (A) Residue-pairs across protein chains with high GREMLIN scores almost always make contact across protein interfaces in experimentally determined complex structures. All contacts with GREMLIN scores greater than 0.6 are shown; the structures are pulled apart for clarity. Labels are according to chains in the PDB structure. (B) Complex I of the electron transport chain has an unusually large number of highly co-varying inter residue pairs not in contact in the crystal structure of 4HEA; these contacts may be formed in different state of the complex. Residue pairs within 8 \u00c5 are in yellow, between 8 \u00c5 and 12 \u00c5 in orange, and greater than 12 \u00c5, in red. Distances are the minimal distances between any side chain heavy atom. Labels are according to chains in 4HEA. (C) Dependence of inter-residue distance distributions on GREMLIN score. All residue\u2013residue pairs between subunits in the benchmark set were grouped into four bins based on their GREMLIN score (colors), and the distribution of residue\u2013residue distances (x axis) within each bin computed from the three-dimensional structures. See Figure 2\u2014source data 1 for the table of all the interfaces used in the calculation.\n\n### Contact predictions for complexes of unknown structure\n\nThe results with the 50S ribosome and the protein pairs in the benchmark suggest that interactions can be accurately predicted across protein\u2013protein interfaces given a sufficient number of aligned sequences. In Figure 3, we provide residue\u2013residue contact predictions for the 36 of the 64 complexes with currently unknown structure (the E. coli gene sequences were clustered, and hence each complex may represent multiple E. coli gene pairs). These predictions should contribute to the determination of the structures of these biologically important complexes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02030/elife-02030-fig3-v2.jpg)\n\n**Figure 3.:** Strongly co-evolving residue pairs for complexes without known structure that had at least one prediction with GREMLIN score greater than or equal to 0.85. Each row shows the residue pairs, their sequence identity and the GREMLIN score. Structure models for complexes highlighted in red are shown in Figure 5. Full dataset is provided with the deposited data.\n\n### From contacts to structural models\n\nAre the predicted contacts useful in assembling models of the protein complex from models of each component? We evaluated this on a docking test set containing 18 protein complexes from the benchmark set where at least one component (or a close homolog) had a known structure in the apo form (\u2018Materials and methods\u2019, docking test-set). We developed a docking protocol that used the predicted contacts as distance restraints and sampled the space of physically plausible structures to generate models of the protein\u2013protein complex. The model with the best restraint score had an interface that was within 4 \u00c5 (in root mean square deviation) of the native interface in 14 of the 18 cases and had more than half the native contacts in 16 of the 18 cases (Figure 4A, Figure 4\u2014figure supplement 1). Two of the cases in which the iRMSD (interface root-mean-square deviation) was the highest (bottom of table in A) are illustrated in Figure 4B\u2013C: the high iRMSD is due to large changes in the conformation of one of the monomers upon binding; despite these changes the binding interface is reasonably accurately identified. Conformational changes that hinder the rigid-body docking protocol from sampling the bound conformation also occurred for thiazole synthase/sulfur carrier and phenylalanyl-tRNA synthase with iRMSD of 4.8A and 4.3A, respectively. In Figure 4D, a second energy minimum corresponds to a second interface in the complex with a different homo-oligomer subunit. In the absence of conformational changes, predicted contact guided docking is very accurate. The same protocol, on a positive control set of known bound structures of 41 protein-pairs (including 15 protein-pairs from the NADH electron transport complex), generated models that were within 2 \u00c5 of the native complex structure in 38 cases and within 4 \u00c5 in all but one case (Figure 4\u2014source data 1, Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02030/elife-02030-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structure models for each complex were generated by docking structures of its constituents, at least one of which (blue) was not from the structure of the complex guided by coevolution derived distance restraints. The interface C-alpha RMSD (iRMSD) of the structural model with the lowest energy to the experimentally determined structure and the fraction of native contacts are shown. Structure models for cases in red are shown in B and C and D. (B and C) Comparison between native and docked structure for the two largest failures in the benchmark: the large iRMSD is due to large conformational changes in the monomers upon docking but the interface is still modeled correctly in the region not involved in conformational change. (D) Multiple minima in the docking landscape (right) correspond to distinct interfaces in the complex (left).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02030/elife-02030-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Each point represents a structure model generated by docking the subunits guided by the GREMLIN score. Dark blue points are from calculations in which at least one subunit was solved independently of the complex; light blue points, from positive control calculations in which both subunits are from the bound complex.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02030/elife-02030-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Docking landscapes with GREMLIN restraint score. X-axis, iRMSD; y-axis GREMLIN restraint score.\n\nTaken together, these results suggest that in cases with small conformational change, the docking protocol can recover the entire interface to high accuracy and in cases where binding is accompanied by a large conformational change, the protocol recovers the largest intact and/or unobstructed interface.\n\nOf the complexes with unknown structure listed in Figure 3, we selected four cases with two or more high GREMLIN score (\u22650.6) contact predictions across the interface that had experimentally determined structures for most of the subunits (\u2018Materials and methods\u2019) and generated structural models of the complexes. These models provide the basis for formulating hypotheses about the structure/function of the complex, but we emphasize they are not experimentally determined structures; in particular the assumption in the modeling procedure that there are not large backbone rearrangements could be incorrect\u2014in such cases the overall organization of the complex is still likely to be correct but the details of the interfaces could be considerably in error.\n\n### The TRAP complex\n\nThe tripartite ATP-independent periplasmic (TRAP) transporters are composed of three proteins: two integral membrane proteins YIAM and YIAN, and one periplasmic protein YIAO (Mulligan et al., 2011). The structure of the periplasmic domain is known, but the membrane portion is unknown. To generate a model of the three-dimensional structure of the complex, we built YIAM models using Rosetta de novo structure prediction (Simons et al., 1999; Raman et al., 2009) guided by the intra-monomer predicted contacts, and models for YIAN and YIAO using RosettaCM comparative modeling. For YIAN the homologous structure of 4f35 (Mancusso et al., 2012) was used. The three monomer structure models were then assembled using PatchDock (Duhovny et al., 2002) and RosettaRelax (Conway et al., 2014) guided by the predicted intersubunit contacts (\u2018Materials and methods\u2019). In the resultant model of the complex (Figure 5), YIAO interacts with both of the membrane components; this is supported by a number of intersubunit contacts (yellow lines).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02030/elife-02030-fig5-v2.jpg)\n\n**Figure 5.:** Residue pairs with GREMLIN scores \u2265 0.60 are connected by yellow bars; the structures are pulled apart for clarity. For METQ-METI and PFLA-PFLB GREMLIN scores \u2265 0.3 are shown. For each docking calculation the docking energy landscape is shown, with iRMSD to the selected model on the x-axis. The multiple minima correspond to permutations of the labels on the subunits of the homo-oligomer complex. Predicted structures of each complex are provided with the deposited data.\n\n### Tripartite efflux system\n\nTripartite efflux complexes span both the inner and outer membrane, and are widely used in bacteria to pump toxic compounds out of the cell. The mode of interactions between the outer membrane factor and the membrane fusion protein is unresolved, with reports suggesting either a tip-to-tip interaction, the insertion of one into the other, or a multistage interaction with an initial tip-to-tip interaction, followed by sliding one through the channel of the other (Long et al., 2012). We generated homology models for the subunits based on the alignments to 1yc9 (Federici et al., 2005) and 3fpp (Yum et al., 2009) and docked them to generate models of the multidrug resistance protein complex. The predicted residue\u2013residue contacts for this family of complexes support the tip-to-tip interaction (Figure 4; yellow lines); the coevolution data did not provide any evidence to support the insertion model.\n\n### Pyruvate formate lyase-activating enzyme complex\n\nPyruvate formate-lyase (PFL) catalyzes the reaction of acetyl-CoA and formate from pyruvate and CoA in the Fermentation pathway. Formate acetyltransferase 1 or Pyruvate formate-lyase 1 (PFLB) is activated by Pyruvate formate-lyase 1-activating enzyme (PFLA). The structure of the complex is unknown, but the structures of the individual proteins have been solved (PDB ids: 3c8f [Becker and Kabsch, 2002] and 1h16 [Vey et al., 2008]). We carried out rigid body docking calculations with these two proteins guided by GREMLIN predictions. Interestingly, the region that undergoes conformational change in the activating enzyme upon substrate binding (3c8f -> 3cb8 [Becker and Kabsch, 2002]) is in the region we predict to be in contact with PFL.\n\n### D-methionine transport system\n\nD-methionine transporter is an ATP-driven transport system that transports methionine. We docked the E. coli structure of METI (3tui, chain A and B, Johnson et al., 2012) with a RosettaCM model of METQ based on 3k2d (Yu et al., 2011). The resulting docked model is consistent with the top ranked GREMLIN predictions (Figure 5).\n\n## Discussion\n\nOur results demonstrate unequivocally that there is strong selective pressure at protein\u2013protein interfaces beyond simple residue conservation, and that co-evolving residue pairs are nearly always in contact in the protein complex. Not all contacting residues across protein interfaces likely co-evolve nor all protein\u2013protein interfaces. Nevertheless, as illustrated in Figures 1 and 2, there is clearly sufficient coevolutionary signal to significantly constrain models of a large number of protein complexes.\n\nThere is a notable contrast in the utility of intra-monomer and intersubunit predicted contacts for structure modeling. We found previously (Kamisetty et al., 2013) that contacts could be predicted with high accuracy for monomeric proteins, provided there were sufficient aligned sequences, but in such cases there was almost always already a structure of a family member from which comparative models could be built, limiting the utility of the predicted contacts in structure prediction (Though predicted contacts can be useful in modeling allosteric changes in protein structures [Hopf et al., 2012; Morcos et al., 2013]). In contrast, here we find that more than half of the complexes for which the protein families of the constituent subunits are sufficiently large for accurate contact prediction do not currently have three-dimensional structures. Hence, while predicted contacts can be very accurate for both monomeric globular proteins and for protein\u2013protein complexes, they are more useful for structure modeling for the latter due to the much poorer representation of protein complexes in the PDB.\n\nWhile our approach of constructing a global statistical model from paired sequence alignments is generally applicable to any taxa, the current study focuses on prokaryotes and mitochondria. Doing so allows us to largely avoid the problem of distinguishing between paralogs by exploiting the operon architecture of bacterial genomes (Jacob et al., 2005). Constructing paired-sequence alignments for more complex genomic architectures is more involved and requires the ability to distinguish orthologs from paralogs, the subject of active research (Remm et al., 2001; Datta et al., 2009). Protocols for generating paired sequence alignments more generally are an important area for development in this area.\n\n## Materials and methods\n\n### Individual alignment generation\n\nMultiple sequence alignments were generated for each of the 4303 E. coli protein genes as identified by EcoGene 3.0 (Zhou et al., 2013) using HHblits (-n 8 -e 1E-20 -maxfilt \u221e -neffmax 20 -nodiff -realign_max \u221e), and HHfilter (-id 100 -cov 75) in the HHsuite (version: 2.0.15, Remmert et al., 2011). To reduce redundancy, we constructed HMMs from each MSA and clustered genes based on the HH\u0394 (Kamisetty et al., 2013), a measure of HMM\u2013HMM similarity: a pair of genes was assigned to the same cluster if the HH\u0394 is less than 0.5. This procedure resulted in 2340 non-redundant gene clusters.\n\nFor the benchmark set, a new alignment was generated using the sequence associated with each PDB. For the 50S ribosome and NADH dehydrogenase, we used Thermus thermophilus HB8 sequences from PDB structures 3uxr (Bulkley et al., 2012) and 4hea (Baradaran et al., 2013) respectively. For paralogous NADH dehydrogenase chains L, M, and N, we used an e-value of 1E-60 in the alignment generation protocol. In addition to complexes from the E. coli analysis, we also include the GatCAB amidotransferase complex in our benchmark set, using sequences from the PDB structure 3ip4 (Nakamura et al., 2010). For cases where the PDB sequence length was much longer than average coverage, we modified the coverage filter to 50% of query. The sequences were then realigned using clustal omega v1.2 (--iterations 2 --full-iter) (Sievers et al., 2011). Residues not present in the query sequence were dropped from subsequent analysis.\n\n### Paired alignment generation\n\nWe construct alignments of paired protein sequences [x1, x2, \u2026, xp; xp+1, \u2026, xp+q] from the same genome with positions 1:p and p+1:p+q corresponding to the first and second proteins respectively. We refer to such a multiple sequence alignment of paired sequences as a paired alignment.\n\nFor gene families with a single copy in each genome such as the ribosomal proteins, constructing paired alignments is straightforward as sequence pairs from the same genome can simply be concatenated. While the process of generating paired alignments in general is complicated in the presence of multiple paralogs of a gene in a single genome, in prokaryotes, co-regulated genes are often co-located on the genome into operons. We exploit this property to avoid paralogous genes when creating paired sequences by restricting to gene pairs that have small, conserved intergenic distances. A similar approach was used to construct a database of fusion proteins in prokaryotic genomes (Suhre and Claverie, 2004). Defining \u0394gene as the number of annotated genes between a gene pair, we only consider pairs with \u0394gene conserved in 60% of genomes and less than 20. To allow for ambiguity in annotation, if the second or third most common intergenic distance is within 1 of the mode, these gene-pairs are included in the conservation calculation. Given that most UniProt accession IDs are serially assigned in a genome (UniProt Accession), \u0394gene can be rapidly evaluated by looking at the difference in accession ids. The paired alignment is then filtered to reduce redundancy to 90% sequence identity and to remove positions that have more than 75% gaps.\n\n### Identification of protein complex structures\n\nTo identify protein pairs in the same complex structure, a HMM was constructed for each E. coli protein using hmmbuild from the already generated HHblits alignments. We then used hmmsearch to scan PDB sequences in the S2C database (Wang et al.; Both hmmbuild and hmmsearch are part of the HMMER v3.1b package [Eddy, 2009]). Only hits with e-value less than 1E-10 were considered. Protein pairs found in the same complex structure (PDB file) were considered to be in contact if a $C$\u03b1 atom in one structure was within 12 Angstroms of a $C$\u03b1 atom in the other.\n\n### Gremlin model construction from paired alignments\n\nGREMLIN constructs a global statistical model of the paired alignment, assigning a probability to every amino-acid sequence in the paired alignment:\n\n$$\np(X_{1},X_{2}\u2026,X_{p};X_{p+1}\u2026X_{p+q})=\\frac{1}{Z}exp(\u03a3_{1}^{p+q}[v_{i}(X_{i})+\u03a3_{j=1}^{p+q}w_{i,j}(X_{i},X_{j})])\n$$\n\nwhere, the vi are vectors encoding position-specific amino-acid propensities and the wij are matrices encoding amino-acid coupling between positions i and j. These parameters are obtained from the aligned sequences by maximizing the regularized pseudo-likelihood (Balakrishnan et al., 2011) of the alignment as described in (Kamisetty et al., 2013):\n\n$$\nv,w=arg\u2009max\u2009\u03a3_{1}^{N}\u03a3_{1}^{p+q}log\u2009P(X_{i}|X_{1}..X_{i\u22121}X_{i+1}..X_{p+q})+R(v,w)\n$$\n\nwhere, each term in the summation is a conditional distribution capturing the probability of a particular amino-acid at a position in the context of the entire protein sequence and R(v,w) is a regularization term to prevent over-fitting.\n\nPrevious approaches (Morcos et al., 2011; Jones et al., 2012) estimated v, w using an approximate moment matching approach (Kamisetty et al., 2013) by inverting a generalized covariance matrix. These rely on a Gaussian-like approximation to the global partition function. Unlike these approaches, estimation via the pseudo-likelihood avoids this approximation relying instead on local partition functions (Balakrishnan et al., 2011; Ekeberg et al., 2013; Kamisetty et al., 2013). The resulting global optimization problem can be efficiently solved using standard convex optimization techniques and provides estimates for each vector vi and matrix wij (Kamisetty et al., 2013).\n\n### Ranking residue pairs with gremlin scores\n\nTo reduce the wij matrices to single values reflecting the strength of the coupling between positions i and j, we first compute sij, their vector 2-norm (the square root of the averages of the squares of the individual matrix elements). We correct for differences in sij due to sequence variability at different positions using the row and column averages of these values:\n\n$$\ns_{ij}^{corr}=s_{ij}\u2212\\frac{<s_{ik}>_{k}<s_{kj}>_{k}}{<s_{kl}>_{kl}}\n$$\n\nwhere brackets indicate averages taken over the indices outside the brackets in a manner similar to that of Average Product Correction (APC, Dunn et al., 2008). Unlike the APC, we account for differences in the rates of evolution in the two protein families by computing the averages only over the positions of the proteins corresponding to positions i and j: if i and j are both in the first (second) protein, the averages are computed over the positions in the first (second) protein; if i is in the first protein and j in the second, the column average is computed only over the positions of the first protein and the row average, only over the positions of the second protein. We then compute a normalized coupling strength, $ncs_{ij}$, by dividing the $s_{ij}^{corr}$ by the average of the top 3L/2 $s_{ij}^{corr}$ values across the two proteins (since there are roughly 3L/2 contacts for a protein of length L [Kamisetty et al., 2013; SI]).\n\nAs illustrated in Figure 1D, the relation between normalized coupling strength and contact frequency varies with the ratio of the number of aligned sequences to the length of the protein complex. We also observed that residues were more frequently in contact for a given coupling strength when the top score for that complex was high. To account for these dependencies, we constructed a model that estimates the probability of being in contact based on the bacterial 50S ribosomal complex:\n\n$$\nGremlinScore(x,N/L)=1/(1+exp(\u2212\u03c3(x\u2212\u03bc))\n$$\n\nwhere\n\n$$\n\u03bc=m^{N/L+1}+c\n$$\n\nand x is $\\sqrtncs_{ij}$ for the top scoring contact in each complex and $\\sqrtncs_{ij}$ scaled by the Gremlin score of the top contact in all other cases. The values of m, c, and \u03c3 (0.47, 0.96, and 9.77 respectively) were determined by a non-linear fit to the observed frequencies in the 50S ribosomal data from Figure 1D. This function accurately accounts for the observed contact frequencies (Figure 1\u2014figure supplement 1).\n\n### Conversion of gremlin scores to distance restraints\n\nWe converted coupling strengths into residue-pair specific distance restraints and included them in the Rosetta structure prediction program. We use sigmoidal distance restraints of the form:\n\n$$\nrestraint(d)=\\frac{weight}{1+exp(\u2212slope(d\u2212cutoff))}+intercept\n$$\n\nwhere, d is the distance between the constrained atoms and the weight is proportional to $ncs_{ij}$. The restraints were introduced between $C$\u03b2 atoms ($C$\u03b1 in the case of glycine) in the reduced-atom representation of Rosetta (centroid mode) and as ambiguous distance restraints (Lange et al., 2012) between side-chain heavy atoms (cutoff of 5.5 and slope of 4) in the full-atom stage of Rosetta. For the centroid mode, restraints used the amino acid pair specific $C$\u03b2-$C$\u03b2 cutoff and slopes, as described in Kamisetty et al., 2013 SI Table III. These distance restraints supplement the Rosetta all atom energy; the combination ensures the sampling of physically realistic structures consistent with the contact predictions.\n\n### Comparative modeling\n\nComparative models were built using RosettaCM (Song et al., 2013) based on alignments to homologous structures generated using HHsearch (Remmert et al., 2011). For proteins that had missing density in regions predicted to be in contact, we used RosettaCM with co-evolution derived restraints to build the missing region before docking.\n\n### De Novo modeling\n\nThe Rosetta ab initio protocol consists of two stages: in the initial stage (\u2018centroid\u2019) side-chains are represented by fixed center-of-mass atoms allowing for rapid generation and evaluation of various protein-like topologies; the second stage (\u2018full-atom\u2019) builds in explicit side-chains and carries out all atom energy minimization (Simons et al., 1999; Raman et al., 2009). YIAM, a membrane protein, was modeled with the Rosetta membrane energy function (Yarov-Yarovoy et al., 2012, Barth et al., 2007). Strong repulsive interactions (Equation 1, weight: \u2212100, cutoff: 35, slope: 2 and intercept: 100) were added between the center of the extracellular regions and the center of predicted intracellular regions, and strong attractive restraints (weight:100, cutoff:35, slope:2 and intercept: 0) within predicted intracellular regions and extracellular regions, effectively constructing a membrane-like sampling space. We used the consensus output of MESSA (Cong and Grishin, 2012) to predict transmembrane regions. 100,000 models were generated and 20 models that best fit the restraints converged to a single cluster.\n\n### Docking test set\n\nJackhammer (part of HMMER v3.1b package; Eddy, 2009) was used to identify a subset of 18 complexes in the benchmark set where at least one of the proteins or a close homolog had a solved structure of its apo form. In cases where the structure was of a homologous protein (e-value < 1E-20) and where most of the interface residues were present, we generated a structural model of the target protein using comparative modeling. We only considered cases where at least one of the structures was unbound as the bound\u2013bound docking problem is not representative of real world docking challenges (Betts and Sternberg, 1999). The positive control shown in Figure 4\u2014source data 1 was run on all protein-pairs from the benchmark set, where at least two predicted inter contacts had a high GREMLIN score (>0.6).\n\n### Complex assembly by protein\u2013protein docking\n\nFor each inter restraint pair that is in the top 3/2L predictions, we used PatchDock v1.0, with clustering parameters (rmsd 0.5; discardClustersSmaller 0) (Duhovny et al., 2002) to generate an ensemble of conformations that were then scored using all the restraints. For tripartite efflux pump, the surface segmentation parameters were further modified (low_patch_thr 0; prune_thr 0.1; flat 1), to allow for more diverse interfaces. The top 5 models by restraint score were energy-minimized in cartesian space using both inter and intra restraints with cycles of minimization and side chain repacking using Rosetta as described in Conway et al. (2014). The best scoring model by restraint score was then selected.\n\nFor fraction of native contact (Fnat) and interface root-mean-squared deviation (iRMSD) calculation, the interface residue\u2013residue contacts are those where the minimal distance between any heavy side-chain atom is less than 5 \u00c5. The Fnat calculation is performed as described in Kamisetty et al. (2013) SI Table III.\n\nAll structural figures were drawn with PyMOL (The PyMOL Molecular Graphics System, Version 1.5.0.4 Schr\u00f6dinger, LLC.).\n\n### Data Availability\n\nThe multiple sequence alignments used in the analysis and the full GREMLIN results for all the calculations described in the paper are provided at http://gremlin.bakerlab.org/complexes/ along with a web-server for paired-alignment generation, coevolution analysis and contact prediction/Rosetta restraint generation. The paired-alignments along with the PDB coordinates of the predicted structures are also available at Dryad: Ovchinnikov et al., 2014.\n",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "8d5f0527-5c70-4096-8013-c1164ef68188",
+      "submission_id": "86c1d3e3-28bd-4311-99cb-25a18597d595",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Benoit Roux, University of Chicago , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02030.013](https://doi.org/10.7554/eLife.02030.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cRobust and accurate prediction of residue-residue interactions across protein interfaces using evolutionary information\u201d for consideration at eLife. Despite some concerns, your article has been favorably evaluated by a Senior editor (John Kuriyan), a Reviewing editor, and 2 reviewers. To minimize delays, you should first respond by email to describe how you plan to revise the article before submitting a full revision. We are hopeful that by your submitting a detailed response this can be discussed by the editors and the reviewers, and that a revised manuscript need not then be submitted to re-review.\n\nThe Reviewing editor and the reviewers discussed their comments, and there is consensus that this is an interesting and potentially very influential manuscript using evolution methods to improve both protein structure prediction as well as protein-protein interactions. The manuscript describes the application of the pseudo-likelihood approach, first described by Balakrishnan et al. (2011), to the determination of interacting residues across protein-protein interfaces. The coupling information is then used for the construction of docked models for a number of biologically important systems. The results seem to be very good and interesting, at least at a qualitative level. There are, however, some concerns:\n\n1) Why were structural models built only for the unknown complexes, and why not for the ones with known structure? Quantitative results for at least some of the complexes with known structure would be helpful to better understand the accuracy of the resulting models and the impact of distance constraints.\n\n2) There is not sufficient quantitative evidence demonstrating that the method described here is far superior to previous methods such as mfDCA and plDCA.\n\n3) It is somewhat unfortunate that the paper as currently written overstates the novelty of the work, including unnecessary and unsubstantiated criticism of previous methods. Understandably, the authors did not want to repeat the discussion of the algorithm given previously by Balakrishnan et al. and also briefly in their PNAS paper (Kamisetty et al., 2013). However, considering that the primary readers of eLife are most likely biologists, it might be useful to add a few sentences in the Introduction about the innovative nature of the pseudo-likelihood approach, and why is it better than the earlier methods. More generally, there are many places in the paper where some more explanation would help the readers. Note that eLife has no limitation on the length of the paper, and hence it is possible to improve readability.\n",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a5b02f59-d7a1-4ab4-97bd-518f82293cec",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C1",
+      "claim": "Recent work has demonstrated the accuracy of coevolution-based contact prediction for monomeric proteins using a global statistical model to distinguish between direct and indirect couplings.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has demonstrated the accuracy of coevolution-based contact prediction for monomeric proteins using a global statistical model (Thomas et al., 2008) to distinguish between direct and indirect couplings (Marks et al., 2011; Morcos et al., 2011; Hopf et al., 2012; Nugent and Jones, 2012; Jones et al., 2012; Lapedes et al., 2012; Marks et al., 2012; Su\u0142kowska et al., 2012; Kamisetty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work demonstrating coevolution-based contact prediction accuracy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "f7a738f6-c323-451b-843c-b41547e4a683",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C2",
+      "claim": "Early approaches to coevolution-based contact prediction relied on estimating an inverse covariance matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "While early approaches relied on estimating an inverse covariance matrix (Marks et al., 2011; Morcos et al., 2011; Jones et al., 2012), more recent studies have shown that a pseudo-likelihood-based approach (Balakrishnan et al., 2011) results in more accurate predictions (Ekeberg et al., 2013; Kamisetty et al., 2013) for a range of alignment sizes and protein lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work using inverse covariance matrix approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "238d66e6-e63d-4e41-bb11-182630c7fc96",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C3",
+      "claim": "A pseudo-likelihood-based approach results in more accurate predictions than inverse covariance matrix methods for a range of alignment sizes and protein lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "While early approaches relied on estimating an inverse covariance matrix (Marks et al., 2011; Morcos et al., 2011; Jones et al., 2012), more recent studies have shown that a pseudo-likelihood-based approach (Balakrishnan et al., 2011) results in more accurate predictions (Ekeberg et al., 2013; Kamisetty et al., 2013) for a range of alignment sizes and protein lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies comparing pseudo-likelihood and inverse covariance approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "ff7c99e6-5d77-4d6f-8ec1-476e54121f8c",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C4",
+      "claim": "Relatively little is known about the utility of global statistical models in predicting protein\u2013protein interactions compared to monomeric proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this rich body of work for monomeric proteins, relatively little is known about the utility of such statistical models in predicting protein\u2013protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "18b0b6da-2fd3-4f78-af88-bd9863c0d259",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C5",
+      "claim": "The problem of predicting if two proteins interact with each other has been studied extensively using a wide variety of approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The more general problem of predicting if two proteins interact with each other has been studied extensively using a wide variety of approaches (de Juan et al., 2013; Hosur et al., 2012; Zhang et al., 2012; Shoemaker and Panchenko, 2007, Valencia and Pazos, 2002, Ochoa and Pazos, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work on protein interaction prediction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "12496a76-00c5-41ad-8580-ea067781321a",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C6",
+      "claim": "Amino acid residue coevolution has been used to predict residue\u2013residue interactions across interfaces with local statistical models.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acid residue coevolution has been used to predict residue\u2013residue interactions across interfaces with local statistical models (Pazos et al., 1997; Halperin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work using local statistical models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "68f3bc79-5e67-447f-9970-543a40b35ed2",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C7",
+      "claim": "The accuracy of local statistical models is reduced by the confounding of direct and indirect correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, the accuracy of these models is reduced by the confounding of direct and indirect correlations (Lapedes et al., 1999; Weigt et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work discussing limitations of local models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "ea007e27-aa0d-4eda-a51b-0c2080b1471a",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C8",
+      "claim": "The application of global statistical models to coevolution-based contact prediction across interfaces has been limited to the histidine-kinase/response-regulator two component system.",
+      "claim_type": "EXPLICIT",
+      "source": "the application of global statistical models to coevolution-based contact prediction across interfaces has been limited to the case of the histidine-kinase/response-regulator two component system (Burger and van Nimwegen, 2008; Weigt et al., 2009; Schug et al., 2009; Dago et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on this specific system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "07aa3493-4c01-4c10-83f0-57dcb04f4569",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C9",
+      "claim": "Covarying pairs of positions are almost always in contact in the three-dimensional structure of protein complexes, provided there are sufficient aligned sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In a large set of complexes of known structure, we find that covarying pairs of positions are almost always in contact in the three-dimensional structure, provided there are sufficient aligned sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on analysis of known structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "1a8a9836-fa6e-49b4-a88d-10dec4005f64",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C10",
+      "claim": "Significant residue\u2013residue covariance occurs frequently between physically interacting protein pairs but very rarely between non-interacting pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find further that significant residue\u2013residue covariance occurs frequently between physically interacting protein pairs but very rarely between non-interacting pairs, and hence should be useful for predicting whether two proteins interact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis of protein pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "7612f390-2835-4af1-89da-cf4e3b8d6216",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C11",
+      "claim": "In the 50S ribosomal subunit, only a small fraction of residue pairs coevolve, as indicated by coupling strengths greater than 1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in the 50S ribosomal subunit only a small fraction of residue pairs coevolve, as indicated by coupling strengths (y axis of Figure 1A) greater than 1.5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis of the 50S ribosome, with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "2c76b839-f0ac-4ec7-a81a-c7182b6dd7e9",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C12",
+      "claim": "Residue pairs with coupling strengths greater than 1.5 in the 50S ribosomal subunit are almost all within 8 \u00c5 of each other in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the two residues in each of these pairs are almost all within 8 \u00c5 of each other in the 50S crystal structure (Figure 1A) and all are within 12 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing coupling strengths to distances in the crystal structure, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "3b984ba4-755c-400e-854d-cb51f9187340",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C13",
+      "claim": "All residue pairs with coupling strengths greater than 1.5 in the 50S ribosomal subunit are within 12 \u00c5 of each other in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the two residues in each of these pairs are almost all within 8 \u00c5 of each other in the 50S crystal structure (Figure 1A) and all are within 12 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing coupling strengths to distances in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "b6bd0d79-c86e-40c3-b533-510117250ddd",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C14",
+      "claim": "For the 50S ribosome, the GREMLIN model was built using sequence data from approximately 1500 non-redundant genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 50S ribosome, the GREMLIN model was built using sequence data from \u223c1500 non-redundant genomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "c215e4d5-f3ed-48d5-ae2f-92a97738355e",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C15",
+      "claim": "For complexes with large numbers of aligned sequences (like the 50S ribosome), residue\u2013residue interactions across interfaces can be predicted with quite high confidence based on amino acid sequence covariation.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1D suggests that for complexes with such large numbers of aligned sequence, residue\u2013residue interactions across interfaces can be predicted with quite high confidence based on amino acid sequence covariation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "84c31682-523b-4861-b964-99d45524397f",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C16",
+      "claim": "The greater the number of aligned sequences, the lower the value of the coupling strength above which residue pairs are likely to be in contact in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the greater the number of aligned sequences, the lower the value of the coupling strength above which residue pairs are likely to be in contact in the structure (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of sub-alignments with varying sequence depths, shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "bfcb51ea-8140-4582-b3d0-719c3a49a1cd",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C17",
+      "claim": "If the number of aligned sequences is greater than the sum of the lengths of the two proteins, residue\u2013residue contact predictions are likely to be accurate if the coupling strength is 2 or greater.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if the number of aligned sequences is greater than the sum of the lengths of the two proteins, residue\u2013residue contact predictions are likely to be accurate if the coupling strength is 2 or greater (Figure 1D: orange dots)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "a71d8fe1-b540-4135-ac9f-7abce10f5c9c",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C18",
+      "claim": "If there are twice as many sequences as the sum of protein lengths, contact predictions are accurate above a coupling strength of 1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "while if there are twice as many sequences, contact predictions are accurate above a coupling strength of 1.5 (the cutoff shown in Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "5b5d4482-9be7-44c0-a25b-2a14ec501fdb",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C19",
+      "claim": "In the 50S subunit, every pair of proteins with summed coupling strengths greater than 1.5 interacts with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 50S subunit, every pair of proteins with summed coupling strengths (numbers in Figure 1C) greater than 1.5 interacts with each other (boxes in Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of protein-protein interactions in the 50S subunit, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "3f4c0db9-8802-4f1a-9563-584b8d573bf1",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C20",
+      "claim": "There are several instances of protein pairs that contact in the 50S subunit for which no covariance is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "There are, however, several instances of protein pairs that contact in the 50S subunit for which no covariance is observed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of the 50S subunit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "11e6b002-5e19-4c57-bd15-e60654149252",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C21",
+      "claim": "Not every interaction will be identified by the sum of the coupling strengths, for example between two proteins that are held together primarily by the ribosomal RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "clearly not every interaction will be identified by the sum of the coupling strengths, for example between two proteins that are held together primarily by the ribosomal RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of why some interactions are not detected.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "8594c03d-f586-4a14-8f6e-37c7bfb65b94",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C22",
+      "claim": "1126 E. coli gene pairs had paired alignments with at least as many sequences as the average of the lengths of the two proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As the 50S results (Figure 1D) suggested that alignment depths greater than the average of the lengths of the two proteins were required for accurate prediction, we focused on paired alignments with at least this number of sequences\u20141126 gene pairs in total excluding the ribosomal proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "692f3a21-047f-4d7e-9ab4-053bab07f56d",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C23",
+      "claim": "For 64 of the 1126 gene pairs, at least one pair of residues had GREMLIN score >0.85.",
+      "claim_type": "EXPLICIT",
+      "source": "For 64 of the 1126 gene pairs, at least one pair of residues had GREMLIN score >0.85.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of E. coli gene pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "039e4595-f809-4214-99ca-248e4515c647",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C24",
+      "claim": "For 28 of the 64 gene pairs with high GREMLIN scores, three-dimensional structures have been determined experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "For 28 of the 64 pairs three-dimensional structures have been determined experimentally",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability of structural data for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "bd6a2580-632e-42df-b930-ec8d3813c28d",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C25",
+      "claim": "Almost all pairs with GREMLIN scores greater than 0.6 are in contact in the complex structures, with the notable exception of the NADH dehydrogenase subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all pairs with GREMLIN scores greater than 0.6 are in contact in the complex structures, with the notable exception of the NADH dehydrogenase subunits (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing predicted contacts to known structures, with reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "be950c93-4c9a-43a2-aa47-b63a9399a5a9",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C26",
+      "claim": "The NADH dehydrogenase complex is thought to undergo a cascade of conformational changes during electron transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex is thought to undergo a cascade of conformational changes during electron transfer (Baradaran et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work on NADH dehydrogenase.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "8ed32290-d220-40e7-bfb0-9352c1963b2f",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C27",
+      "claim": "The high GREMLIN score contacts not made in the solved structure of NADH dehydrogenase may provide insight into the nature of conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "the high GREMLIN score contacts not made in the solved structure may provide insight into the nature of these changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the discrepancy between predictions and structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "3f784b0c-5b7d-4ec5-9ed2-5c1b932dd70e",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C28",
+      "claim": "44% (28/64) of the protein pairs with high GREMLIN scores form a complex which has been solved crystallographically.",
+      "claim_type": "EXPLICIT",
+      "source": "44% (28/64) of the protein pairs with high GREMLIN scores form a complex which has been solved crystallographically compared to 8% (78/1126) over the whole set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "6f5bb9c6-6c24-4372-886d-a5f09f09babb",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C29",
+      "claim": "8% (78/1126) of all E. coli gene pairs in the dataset form a complex which has been solved crystallographically.",
+      "claim_type": "EXPLICIT",
+      "source": "44% (28/64) of the protein pairs with high GREMLIN scores form a complex which has been solved crystallographically compared to 8% (78/1126) over the whole set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "f4229305-6883-4a9a-882f-640e25fd8fb6",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C30",
+      "claim": "The existence of one or more high GREMLIN scores between two proteins provides evidence that the proteins interact.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed for the 50S complex (Figure 1C), the existence of one or more high GREMLIN scores between two proteins provides evidence that the proteins interact",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data comparing high GREMLIN scores to known interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "49216065-5f65-4411-b3a7-d514f2b4906a",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C31",
+      "claim": "Interactions can be accurately predicted across protein\u2013protein interfaces given a sufficient number of aligned sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The results with the 50S ribosome and the protein pairs in the benchmark suggest that interactions can be accurately predicted across protein\u2013protein interfaces given a sufficient number of aligned sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results with the 50S ribosome and benchmark set.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "f86d3f4b-c619-40c8-a2f9-d67bbb454ca1",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C32",
+      "claim": "The docking protocol generated models with interface RMSD within 4 \u00c5 of the native interface in 14 of 18 test cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The model with the best restraint score had an interface that was within 4 \u00c5 (in root mean square deviation) of the native interface in 14 of the 18 cases and had more than half the native contacts in 16 of the 18 cases (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the docking test set analysis, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "01fe8491-f823-48e1-bc08-38c21563acc0",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C33",
+      "claim": "The docking protocol generated models with more than half the native contacts in 16 of 18 test cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The model with the best restraint score had an interface that was within 4 \u00c5 (in root mean square deviation) of the native interface in 14 of the 18 cases and had more than half the native contacts in 16 of the 18 cases (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the docking test set analysis, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "50be4b51-ba9e-4d56-abe2-db2eae509ade",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C34",
+      "claim": "In the absence of conformational changes, predicted contact guided docking is very accurate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of conformational changes, predicted contact guided docking is very accurate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the docking results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "ee5302c3-0039-4767-95fb-6dabd5b25cca",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C35",
+      "claim": "The docking protocol on a positive control set of 41 protein-pairs generated models that were within 2 \u00c5 of the native complex structure in 38 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The same protocol, on a positive control set of known bound structures of 41 protein-pairs (including 15 protein-pairs from the NADH electron transport complex), generated models that were within 2 \u00c5 of the native complex structure in 38 cases and within 4 \u00c5 in all but one case (Figure 4\u2014source data 1, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the positive control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "c93f09fa-55d0-43ac-9a12-78859e4a1028",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C36",
+      "claim": "The docking protocol on a positive control set of 41 protein-pairs generated models that were within 4 \u00c5 in all but one case.",
+      "claim_type": "EXPLICIT",
+      "source": "The same protocol, on a positive control set of known bound structures of 41 protein-pairs (including 15 protein-pairs from the NADH electron transport complex), generated models that were within 2 \u00c5 of the native complex structure in 38 cases and within 4 \u00c5 in all but one case (Figure 4\u2014source data 1, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the positive control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "6dcb3ab7-7265-4803-a9d4-81b0915bc7d0",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C37",
+      "claim": "In cases with small conformational change, the docking protocol can recover the entire interface to high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that in cases with small conformational change, the docking protocol can recover the entire interface to high accuracy",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the docking results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "67992a6e-363b-4b4a-bd88-1d93a0573919",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C38",
+      "claim": "In cases where binding is accompanied by a large conformational change, the docking protocol recovers the largest intact and/or unobstructed interface.",
+      "claim_type": "EXPLICIT",
+      "source": "and in cases where binding is accompanied by a large conformational change, the protocol recovers the largest intact and/or unobstructed interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the docking results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "a57df8a9-ea17-4b2a-be10-d0063431614e",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C39",
+      "claim": "The TRAP transporters are composed of three proteins: two integral membrane proteins YIAM and YIAN, and one periplasmic protein YIAO.",
+      "claim_type": "EXPLICIT",
+      "source": "The tripartite ATP-independent periplasmic (TRAP) transporters are composed of three proteins: two integral membrane proteins YIAM and YIAN, and one periplasmic protein YIAO (Mulligan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work on TRAP transporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "699bb71d-c12f-4496-84cf-f5c4aa66668d",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C40",
+      "claim": "The structure of the periplasmic domain of TRAP transporters is known, but the membrane portion is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the periplasmic domain is known, but the membrane portion is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the state of structural knowledge for TRAP transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "65b4ebb8-db71-4b6c-8fa0-0e4913e3d4a6",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C41",
+      "claim": "In the TRAP complex model, YIAO interacts with both of the membrane components.",
+      "claim_type": "EXPLICIT",
+      "source": "In the resultant model of the complex (Figure 5), YIAO interacts with both of the membrane components; this is supported by a number of intersubunit contacts (yellow lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the structural modeling, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "ff4f3d1b-37cd-4607-a2c2-b24de428f977",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C42",
+      "claim": "Tripartite efflux complexes span both the inner and outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Tripartite efflux complexes span both the inner and outer membrane, and are widely used in bacteria to pump toxic compounds out of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tripartite efflux systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "8857b22e-a980-4e68-abd0-3bf8060d2f7a",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C43",
+      "claim": "Tripartite efflux complexes are widely used in bacteria to pump toxic compounds out of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Tripartite efflux complexes span both the inner and outer membrane, and are widely used in bacteria to pump toxic compounds out of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tripartite efflux systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "8fa774ab-2d6d-40dd-84c8-6b983d7a0e58",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C44",
+      "claim": "The mode of interactions between the outer membrane factor and the membrane fusion protein in tripartite efflux systems is unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "The mode of interactions between the outer membrane factor and the membrane fusion protein is unresolved, with reports suggesting either a tip-to-tip interaction, the insertion of one into the other, or a multistage interaction with an initial tip-to-tip interaction, followed by sliding one through the channel of the other (Long et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work discussing different proposed interaction modes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "4738ab8a-224a-4a40-8de4-9fbb94918c01",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C45",
+      "claim": "The predicted residue\u2013residue contacts for tripartite efflux complexes support the tip-to-tip interaction model.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted residue\u2013residue contacts for this family of complexes support the tip-to-tip interaction (Figure 4; yellow lines)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the coevolution analysis and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "9ca9f569-3fc0-4338-88a7-0555364bc7a4",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C46",
+      "claim": "The coevolution data for tripartite efflux complexes did not provide any evidence to support the insertion model.",
+      "claim_type": "EXPLICIT",
+      "source": "the coevolution data did not provide any evidence to support the insertion model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the coevolution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "bf3b176d-0ba6-4623-89e0-42652c3acdba",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C47",
+      "claim": "Pyruvate formate-lyase (PFL) catalyzes the reaction of acetyl-CoA and formate from pyruvate and CoA in the Fermentation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyruvate formate-lyase (PFL) catalyzes the reaction of acetyl-CoA and formate from pyruvate and CoA in the Fermentation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about PFL.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "a64c8101-9050-4451-ba6a-e6afb7a6b307",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C48",
+      "claim": "Formate acetyltransferase 1 or Pyruvate formate-lyase 1 (PFLB) is activated by Pyruvate formate-lyase 1-activating enzyme (PFLA).",
+      "claim_type": "EXPLICIT",
+      "source": "Formate acetyltransferase 1 or Pyruvate formate-lyase 1 (PFLB) is activated by Pyruvate formate-lyase 1-activating enzyme (PFLA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about PFL activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "f2df84fa-58c8-484b-8306-7c7aa31b717f",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C49",
+      "claim": "The structure of the PFL complex is unknown, but the structures of the individual proteins have been solved.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the complex is unknown, but the structures of the individual proteins have been solved (PDB ids: 3c8f [Becker and Kabsch, 2002] and 1h16 [Vey et al., 2008]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the state of structural knowledge for the PFL complex, with citations to structures of individual proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "f6f5216b-f963-488f-bbfc-f2d75f84ff69",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C50",
+      "claim": "The region that undergoes conformational change in the activating enzyme upon substrate binding is in the region predicted to be in contact with PFL.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the region that undergoes conformational change in the activating enzyme upon substrate binding (3c8f -> 3cb8 [Becker and Kabsch, 2002]) is in the region we predict to be in contact with PFL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing the predicted contacts to known conformational changes, with citation to structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "02acb551-dd1b-402a-af59-a044fbf0e2a4",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C51",
+      "claim": "There is strong selective pressure at protein\u2013protein interfaces beyond simple residue conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate unequivocally that there is strong selective pressure at protein\u2013protein interfaces beyond simple residue conservation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "06ea31ff-bf52-4725-a142-6f40d7d7f30b",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C52",
+      "claim": "Co-evolving residue pairs are nearly always in contact in the protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "and that co-evolving residue pairs are nearly always in contact in the protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "b80dc27a-f0b5-4d20-9ac9-60153ed1ffd3",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C53",
+      "claim": "Not all contacting residues across protein interfaces likely co-evolve nor all protein\u2013protein interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all contacting residues across protein interfaces likely co-evolve nor all protein\u2013protein interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "572da1a6-37b1-4c27-ad3d-392727aee5c6",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C54",
+      "claim": "There is sufficient coevolutionary signal to significantly constrain models of a large number of protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, as illustrated in Figures 1 and 2, there is clearly sufficient coevolutionary signal to significantly constrain models of a large number of protein complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the results shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "bf8c1afa-68fa-460c-ba65-97c3617d5681",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C55",
+      "claim": "Contacts could be predicted with high accuracy for monomeric proteins, provided there were sufficient aligned sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We found previously (Kamisetty et al., 2013) that contacts could be predicted with high accuracy for monomeric proteins, provided there were sufficient aligned sequences",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "0fb2264c-4546-48fe-bb58-c7767bb67e18",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C56",
+      "claim": "For monomeric proteins with sufficient aligned sequences for accurate contact prediction, there was almost always already a structure of a family member from which comparative models could be built.",
+      "claim_type": "EXPLICIT",
+      "source": "but in such cases there was almost always already a structure of a family member from which comparative models could be built, limiting the utility of the predicted contacts in structure prediction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the practical utility of contact prediction for monomeric proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "f37eb2cb-de92-4174-b7ee-b17608e4742c",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C57",
+      "claim": "More than half of the complexes for which the protein families of the constituent subunits are sufficiently large for accurate contact prediction do not currently have three-dimensional structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, here we find that more than half of the complexes for which the protein families of the constituent subunits are sufficiently large for accurate contact prediction do not currently have three-dimensional structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of protein complexes in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "46d38bbe-9413-49c3-92c9-82079f9910f2",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C58",
+      "claim": "Predicted contacts are more useful for structure modeling for protein complexes than for monomeric proteins due to the much poorer representation of protein complexes in the PDB.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, while predicted contacts can be very accurate for both monomeric globular proteins and for protein\u2013protein complexes, they are more useful for structure modeling for the latter due to the much poorer representation of protein complexes in the PDB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the utility of contact prediction for monomers vs. complexes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "dec12b67-297b-4186-a189-e04a61edb2b8",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C59",
+      "claim": "The current study focuses on prokaryotes and mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "While our approach of constructing a global statistical model from paired sequence alignments is generally applicable to any taxa, the current study focuses on prokaryotes and mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "86b36726-89e4-4213-9071-b58243404e1a",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C60",
+      "claim": "The study exploits the operon architecture of bacterial genomes to largely avoid the problem of distinguishing between paralogs.",
+      "claim_type": "EXPLICIT",
+      "source": "Doing so allows us to largely avoid the problem of distinguishing between paralogs by exploiting the operon architecture of bacterial genomes (Jacob et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach, with citation to prior work on operons.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "d86912ab-e316-4749-ae99-609ac49e65b1",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C61",
+      "claim": "Constructing paired-sequence alignments for more complex genomic architectures is more involved and requires the ability to distinguish orthologs from paralogs.",
+      "claim_type": "EXPLICIT",
+      "source": "Constructing paired-sequence alignments for more complex genomic architectures is more involved and requires the ability to distinguish orthologs from paralogs, the subject of active research (Remm et al., 2001; Datta et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This discusses challenges for extending the approach, with citations to relevant work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "715d5bef-802f-47da-8e22-089c3a874251",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C62",
+      "claim": "Protocols for generating paired sequence alignments more generally are an important area for development in this area.",
+      "claim_type": "EXPLICIT",
+      "source": "Protocols for generating paired sequence alignments more generally are an important area for development in this area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "a65aebd7-6bb4-41d7-9470-d981f706e7be",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C63",
+      "claim": "Multiple sequence alignments were generated for each of the 4303 E. coli protein genes as identified by EcoGene 3.0 using HHblits and HHfilter.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple sequence alignments were generated for each of the 4303 E. coli protein genes as identified by EcoGene 3.0 (Zhou et al., 2013) using HHblits (-n 8 -e 1E-20 -maxfilt \u221e -neffmax 20 -nodiff -realign_max \u221e), and HHfilter (-id 100 -cov 75) in the HHsuite (version: 2.0.15, Remmert et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used for alignment generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "67f1f7ed-7d48-433e-b7ea-5cf103d13acb",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C64",
+      "claim": "The alignment generation procedure resulted in 2340 non-redundant gene clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure resulted in 2340 non-redundant gene clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the outcome of the clustering procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "ca3d4e61-66fc-4c89-ac0b-c9c0f90524c2",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C65",
+      "claim": "GREMLIN constructs a global statistical model of the paired alignment, assigning a probability to every amino-acid sequence in the paired alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "GREMLIN constructs a global statistical model of the paired alignment, assigning a probability to every amino-acid sequence in the paired alignment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the GREMLIN method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "2ad38615-34aa-465e-a7ea-c2fee13205b5",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C66",
+      "claim": "The GREMLIN model parameters are obtained by maximizing the regularized pseudo-likelihood of the alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "These parameters are obtained from the aligned sequences by maximizing the regularized pseudo-likelihood (Balakrishnan et al., 2011) of the alignment as described in (Kamisetty et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the GREMLIN method, with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "a868de24-a3ef-434d-b4fc-cfa807ed470e",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C67",
+      "claim": "Previous approaches estimated parameters using an approximate moment matching approach by inverting a generalized covariance matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous approaches (Morcos et al., 2011; Jones et al., 2012) estimated v, w using an approximate moment matching approach (Kamisetty et al., 2013) by inverting a generalized covariance matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes prior methods, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "3e0d3e4a-a94d-4181-8adb-3599971b7992",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C68",
+      "claim": "Previous approaches rely on a Gaussian-like approximation to the global partition function.",
+      "claim_type": "EXPLICIT",
+      "source": "These rely on a Gaussian-like approximation to the global partition function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of prior methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "19fff145-d98d-4bef-b5cd-b18b0b015a5e",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C69",
+      "claim": "Estimation via the pseudo-likelihood avoids the Gaussian-like approximation relying instead on local partition functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike these approaches, estimation via the pseudo-likelihood avoids this approximation relying instead on local partition functions (Balakrishnan et al., 2011; Ekeberg et al., 2013; Kamisetty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the pseudo-likelihood approach, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "262f5f2d-1cae-4b40-89e4-ba6642253348",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C70",
+      "claim": "The resulting global optimization problem can be efficiently solved using standard convex optimization techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting global optimization problem can be efficiently solved using standard convex optimization techniques and provides estimates for each vector vi and matrix wij (Kamisetty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational approach, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "850ecb5d-21d0-4b49-bcf2-8749dfe8dbec",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C71",
+      "claim": "The study only considers gene pairs with conserved intergenic distances in 60% of genomes and with fewer than 20 annotated genes between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Defining \u0394gene as the number of annotated genes between a gene pair, we only consider pairs with \u0394gene conserved in 60% of genomes and less than 20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the criteria for selecting gene pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "e20ce766-d7f2-4744-9e74-cda1bd26f971",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C72",
+      "claim": "A sigmoidal function of the coupling strength and the number of sequences per position in the complex accurately fits the observed contact frequency data.",
+      "claim_type": "EXPLICIT",
+      "source": "A sigmoidal function of the coupling strength and the number of sequences per position in the complex accurately fits the observed contact frequency data ('Materials and methods' and Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the fitting of a model to the data, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "b0e7ae52-da22-4f8e-bdc5-5ceddea41ad1",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C73",
+      "claim": "Residue pairs within 8 \u00c5 in the TRAP complex model are connected by yellow bars in Figure 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue pairs with GREMLIN scores \u2265 0.60 are connected by yellow bars; the structures are pulled apart for clarity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the visualization in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "94ddd714-bd2c-4b9c-ae2e-ddd1d898bb05",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "claim_id": "C74",
+      "claim": "The bacterial 50S ribosomal subunit is the largest evolutionarily conserved bacterial multiprotein complex with an atomic resolution structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We began by studying residue\u2013residue coupling parameters in the bacterial 50S ribosomal subunit\u2014the largest evolutionarily conserved bacterial multiprotein complex with an atomic resolution structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the 50S ribosome used to justify its selection for study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acdebcfc-8774-4e61-a3a0-3911c4b5e456",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that coevolution-based contact prediction for monomeric proteins is accurate using global statistical models, with pseudo-likelihood approaches outperforming inverse covariance matrix methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 accurately summarize the state of prior work on coevolution-based contact prediction for monomeric proteins, supported by appropriate citations. These claims establish the methodological foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "1826f669-f9bd-4470-8983-61c49b5a09d2",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The application of global statistical models to predict protein-protein interactions across interfaces has been limited compared to monomeric proteins, with prior work restricted mainly to local statistical models and one specific system (histidine-kinase/response-regulator).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 establish the gap in knowledge that motivates this study, supported by appropriate citations. The characterization of prior work on protein-protein interaction prediction and the limitations of local models is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "1873e973-ca42-4cb3-b94e-aeed4538e124",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of the bacterial 50S ribosomal subunit using ~1500 genomes shows that residue pairs with high coupling strengths (>1.5) are almost always in contact (<8-12\u00c5) in the crystal structure, with prediction accuracy depending on the ratio of aligned sequences to protein length. Protein pairs with summed coupling strengths >1.5 interact in the structure, though some contacting pairs show no covariance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C21 and C74 present the core findings from the 50S ribosome analysis with clear quantitative thresholds and are supported by Figure 1. The relationship between sequence depth and prediction accuracy is well-characterized. The acknowledgment of false negatives (C20-C21) demonstrates appropriate scientific caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Analysis of 1126 E. coli gene pairs with sufficient alignment depth identified 64 pairs with high GREMLIN scores (>0.85), of which 28 have experimentally determined structures. Almost all residue pairs with GREMLIN scores >0.6 are in contact in these structures (except NADH dehydrogenase), and high GREMLIN scores between proteins provide evidence of interaction (44% vs 8% have solved structures).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C31 present the benchmark validation results with clear statistics. The high enrichment of solved structures among high-scoring pairs (44% vs 8%) provides strong evidence that GREMLIN scores predict interactions. The NADH dehydrogenase exception is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "1be56228-b526-42d1-b06d-531acd8d9292",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The NADH dehydrogenase complex undergoes conformational changes during electron transfer, and high GREMLIN score contacts not made in the solved structure may provide insight into these changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C26 is supported by citation, but C27 is speculative. The interpretation that non-contacting high-scoring pairs reflect alternative conformational states is plausible but not validated. This requires experimental verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "c7a75639-183d-4184-9ee8-86c779343d4b",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A docking protocol using predicted contacts as restraints generated models within 4\u00c5 iRMSD in 14/18 test cases and with >50% native contacts in 16/18 cases. In a positive control of 41 bound structures, models were within 2\u00c5 in 38 cases and 4\u00c5 in all but one. The protocol accurately recovers interfaces when conformational changes are small, and recovers the largest intact interface when conformational changes are large.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 present comprehensive docking validation results with clear quantitative metrics. The distinction between test cases (unbound structures) and positive controls (bound structures) is appropriate. The performance metrics demonstrate the utility of predicted contacts for structure modeling, with appropriate caveats about conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "9a6f4aa2-1686-4b52-89ce-513567c1433e",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A structural model of the TRAP transporter complex was generated showing that the periplasmic protein YIAO interacts with both membrane components YIAM and YIAN, supported by predicted intersubunit contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 present a structural model for the TRAP complex based on coevolution predictions. The model is supported by predicted contacts shown in Figure 5. However, the authors appropriately note these are models, not experimentally determined structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "d634a093-822a-4cb5-989b-9d8a581918df",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For tripartite efflux complexes, predicted residue-residue contacts support a tip-to-tip interaction model between the outer membrane factor and membrane fusion protein, with no evidence supporting the insertion model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 present a model for tripartite efflux systems that addresses an unresolved structural question. The coevolution data supporting tip-to-tip interaction over insertion is shown in Figure 5. This represents a testable prediction that resolves competing models from the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "b2b79928-4eeb-476d-a625-7db0e23a7c8f",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A model of the pyruvate formate-lyase complex was generated by docking PFLA and PFLB. The region predicted to contact PFL corresponds to the region that undergoes conformational change in the activating enzyme upon substrate binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 present a structural model for the PFL complex with an interesting observation linking predicted contacts to known conformational changes. This provides indirect validation of the predictions and suggests functional relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "22c581c2-0377-42a0-809c-d31db398632e",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "There is strong selective pressure at protein-protein interfaces beyond simple residue conservation, and co-evolving residue pairs are nearly always in contact. While not all contacting residues or interfaces co-evolve, there is sufficient coevolutionary signal to constrain models of many protein complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 present the main conclusions of the study, appropriately balancing the strength of the findings with acknowledgment of limitations. These conclusions are well-supported by the data from the 50S ribosome, benchmark set, and docking results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "32483baf-bdac-4e71-ba5e-324ed9ac8868",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Predicted contacts are more useful for structure modeling of protein complexes than monomeric proteins because more than half of complexes with sufficient sequences for accurate prediction lack three-dimensional structures, whereas monomeric proteins with sufficient sequences typically have homologous structures available for comparative modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 present an important practical conclusion about the differential utility of contact prediction for complexes vs. monomers. The observation that >50% of complexes with good predictions lack structures (C57) is supported by the data and provides strong justification for the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "b5c5b5a9-21a4-4a09-b8f3-bf9ef5972417",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study focuses on prokaryotes and mitochondria, exploiting operon architecture to avoid paralog issues. Extension to more complex genomic architectures requires distinguishing orthologs from paralogs, and developing general protocols for paired alignment generation is an important area for future development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 appropriately describe the scope and limitations of the study. The methodological choice to focus on prokaryotes is well-justified, and the discussion of challenges for extension is appropriate. C62 is speculative about future directions but reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The GREMLIN method constructs global statistical models from paired alignments by maximizing regularized pseudo-likelihood, which avoids Gaussian approximations used in prior inverse covariance approaches. Alignments were generated for 4303 E. coli genes, resulting in 2340 non-redundant clusters. Gene pairs were selected based on conserved intergenic distances, and a sigmoidal function accurately models the relationship between coupling strength, sequence depth, and contact frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C72 describe the computational methods in detail. The GREMLIN approach is well-established (supported by citations), and the specific implementation details are clearly described. The sigmoidal scoring function (C72) is validated by fitting to the 50S data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    },
+    {
+      "id": "ae13d023-c2a0-43b1-9b94-e90c07112b45",
+      "content_id": "2dde8fc0-3b27-49be-b9b7-262690683dfa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Visualization conventions for Figure 5 are described.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is a simple methodological description that is verifiable from Figure 5.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:34:02.677718Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a5b02f59-d7a1-4ab4-97bd-518f82293cec",
+      "result_id": "acdebcfc-8774-4e61-a3a0-3911c4b5e456"
+    },
+    {
+      "claim_id": "f7a738f6-c323-451b-843c-b41547e4a683",
+      "result_id": "acdebcfc-8774-4e61-a3a0-3911c4b5e456"
+    },
+    {
+      "claim_id": "238d66e6-e63d-4e41-bb11-182630c7fc96",
+      "result_id": "acdebcfc-8774-4e61-a3a0-3911c4b5e456"
+    },
+    {
+      "claim_id": "ff7c99e6-5d77-4d6f-8ec1-476e54121f8c",
+      "result_id": "1826f669-f9bd-4470-8983-61c49b5a09d2"
+    },
+    {
+      "claim_id": "18b0b6da-2fd3-4f78-af88-bd9863c0d259",
+      "result_id": "1826f669-f9bd-4470-8983-61c49b5a09d2"
+    },
+    {
+      "claim_id": "12496a76-00c5-41ad-8580-ea067781321a",
+      "result_id": "1826f669-f9bd-4470-8983-61c49b5a09d2"
+    },
+    {
+      "claim_id": "68f3bc79-5e67-447f-9970-543a40b35ed2",
+      "result_id": "1826f669-f9bd-4470-8983-61c49b5a09d2"
+    },
+    {
+      "claim_id": "ea007e27-aa0d-4eda-a51b-0c2080b1471a",
+      "result_id": "1826f669-f9bd-4470-8983-61c49b5a09d2"
+    },
+    {
+      "claim_id": "07aa3493-4c01-4c10-83f0-57dcb04f4569",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "1a8a9836-fa6e-49b4-a88d-10dec4005f64",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "7612f390-2835-4af1-89da-cf4e3b8d6216",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "2c76b839-f0ac-4ec7-a81a-c7182b6dd7e9",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "3b984ba4-755c-400e-854d-cb51f9187340",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "b6bd0d79-c86e-40c3-b533-510117250ddd",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "c215e4d5-f3ed-48d5-ae2f-92a97738355e",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "84c31682-523b-4861-b964-99d45524397f",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "bfcb51ea-8140-4582-b3d0-719c3a49a1cd",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "a71d8fe1-b540-4135-ac9f-7abce10f5c9c",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "5b5d4482-9be7-44c0-a25b-2a14ec501fdb",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "3f4c0db9-8802-4f1a-9563-584b8d573bf1",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "11e6b002-5e19-4c57-bd15-e60654149252",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "94ddd714-bd2c-4b9c-ae2e-ddd1d898bb05",
+      "result_id": "1873e973-ca42-4cb3-b94e-aeed4538e124"
+    },
+    {
+      "claim_id": "8594c03d-f586-4a14-8f6e-37c7bfb65b94",
+      "result_id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc"
+    },
+    {
+      "claim_id": "692f3a21-047f-4d7e-9ab4-053bab07f56d",
+      "result_id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc"
+    },
+    {
+      "claim_id": "039e4595-f809-4214-99ca-248e4515c647",
+      "result_id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc"
+    },
+    {
+      "claim_id": "bd6a2580-632e-42df-b930-ec8d3813c28d",
+      "result_id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc"
+    },
+    {
+      "claim_id": "3f784b0c-5b7d-4ec5-9ed2-5c1b932dd70e",
+      "result_id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc"
+    },
+    {
+      "claim_id": "6f5bb9c6-6c24-4372-886d-a5f09f09babb",
+      "result_id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc"
+    },
+    {
+      "claim_id": "f4229305-6883-4a9a-882f-640e25fd8fb6",
+      "result_id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc"
+    },
+    {
+      "claim_id": "49216065-5f65-4411-b3a7-d514f2b4906a",
+      "result_id": "8ef68146-ff3d-4bc8-ad42-a0825b5b81fc"
+    },
+    {
+      "claim_id": "be950c93-4c9a-43a2-aa47-b63a9399a5a9",
+      "result_id": "1be56228-b526-42d1-b06d-531acd8d9292"
+    },
+    {
+      "claim_id": "8ed32290-d220-40e7-bfb0-9352c1963b2f",
+      "result_id": "1be56228-b526-42d1-b06d-531acd8d9292"
+    },
+    {
+      "claim_id": "f86d3f4b-c619-40c8-a2f9-d67bbb454ca1",
+      "result_id": "c7a75639-183d-4184-9ee8-86c779343d4b"
+    },
+    {
+      "claim_id": "01fe8491-f823-48e1-bc08-38c21563acc0",
+      "result_id": "c7a75639-183d-4184-9ee8-86c779343d4b"
+    },
+    {
+      "claim_id": "50be4b51-ba9e-4d56-abe2-db2eae509ade",
+      "result_id": "c7a75639-183d-4184-9ee8-86c779343d4b"
+    },
+    {
+      "claim_id": "ee5302c3-0039-4767-95fb-6dabd5b25cca",
+      "result_id": "c7a75639-183d-4184-9ee8-86c779343d4b"
+    },
+    {
+      "claim_id": "c93f09fa-55d0-43ac-9a12-78859e4a1028",
+      "result_id": "c7a75639-183d-4184-9ee8-86c779343d4b"
+    },
+    {
+      "claim_id": "6dcb3ab7-7265-4803-a9d4-81b0915bc7d0",
+      "result_id": "c7a75639-183d-4184-9ee8-86c779343d4b"
+    },
+    {
+      "claim_id": "67992a6e-363b-4b4a-bd88-1d93a0573919",
+      "result_id": "c7a75639-183d-4184-9ee8-86c779343d4b"
+    },
+    {
+      "claim_id": "a57df8a9-ea17-4b2a-be10-d0063431614e",
+      "result_id": "9a6f4aa2-1686-4b52-89ce-513567c1433e"
+    },
+    {
+      "claim_id": "699bb71d-c12f-4496-84cf-f5c4aa66668d",
+      "result_id": "9a6f4aa2-1686-4b52-89ce-513567c1433e"
+    },
+    {
+      "claim_id": "65b4ebb8-db71-4b6c-8fa0-0e4913e3d4a6",
+      "result_id": "9a6f4aa2-1686-4b52-89ce-513567c1433e"
+    },
+    {
+      "claim_id": "ff4f3d1b-37cd-4607-a2c2-b24de428f977",
+      "result_id": "d634a093-822a-4cb5-989b-9d8a581918df"
+    },
+    {
+      "claim_id": "8857b22e-a980-4e68-abd0-3bf8060d2f7a",
+      "result_id": "d634a093-822a-4cb5-989b-9d8a581918df"
+    },
+    {
+      "claim_id": "8fa774ab-2d6d-40dd-84c8-6b983d7a0e58",
+      "result_id": "d634a093-822a-4cb5-989b-9d8a581918df"
+    },
+    {
+      "claim_id": "4738ab8a-224a-4a40-8de4-9fbb94918c01",
+      "result_id": "d634a093-822a-4cb5-989b-9d8a581918df"
+    },
+    {
+      "claim_id": "9ca9f569-3fc0-4338-88a7-0555364bc7a4",
+      "result_id": "d634a093-822a-4cb5-989b-9d8a581918df"
+    },
+    {
+      "claim_id": "bf3b176d-0ba6-4623-89e0-42652c3acdba",
+      "result_id": "b2b79928-4eeb-476d-a625-7db0e23a7c8f"
+    },
+    {
+      "claim_id": "a64c8101-9050-4451-ba6a-e6afb7a6b307",
+      "result_id": "b2b79928-4eeb-476d-a625-7db0e23a7c8f"
+    },
+    {
+      "claim_id": "f2df84fa-58c8-484b-8306-7c7aa31b717f",
+      "result_id": "b2b79928-4eeb-476d-a625-7db0e23a7c8f"
+    },
+    {
+      "claim_id": "f6f5216b-f963-488f-bbfc-f2d75f84ff69",
+      "result_id": "b2b79928-4eeb-476d-a625-7db0e23a7c8f"
+    },
+    {
+      "claim_id": "02acb551-dd1b-402a-af59-a044fbf0e2a4",
+      "result_id": "22c581c2-0377-42a0-809c-d31db398632e"
+    },
+    {
+      "claim_id": "06ea31ff-bf52-4725-a142-6f40d7d7f30b",
+      "result_id": "22c581c2-0377-42a0-809c-d31db398632e"
+    },
+    {
+      "claim_id": "b80dc27a-f0b5-4d20-9ac9-60153ed1ffd3",
+      "result_id": "22c581c2-0377-42a0-809c-d31db398632e"
+    },
+    {
+      "claim_id": "572da1a6-37b1-4c27-ad3d-392727aee5c6",
+      "result_id": "22c581c2-0377-42a0-809c-d31db398632e"
+    },
+    {
+      "claim_id": "bf8c1afa-68fa-460c-ba65-97c3617d5681",
+      "result_id": "32483baf-bdac-4e71-ba5e-324ed9ac8868"
+    },
+    {
+      "claim_id": "0fb2264c-4546-48fe-bb58-c7767bb67e18",
+      "result_id": "32483baf-bdac-4e71-ba5e-324ed9ac8868"
+    },
+    {
+      "claim_id": "f37eb2cb-de92-4174-b7ee-b17608e4742c",
+      "result_id": "32483baf-bdac-4e71-ba5e-324ed9ac8868"
+    },
+    {
+      "claim_id": "46d38bbe-9413-49c3-92c9-82079f9910f2",
+      "result_id": "32483baf-bdac-4e71-ba5e-324ed9ac8868"
+    },
+    {
+      "claim_id": "dec12b67-297b-4186-a189-e04a61edb2b8",
+      "result_id": "b5c5b5a9-21a4-4a09-b8f3-bf9ef5972417"
+    },
+    {
+      "claim_id": "86b36726-89e4-4213-9071-b58243404e1a",
+      "result_id": "b5c5b5a9-21a4-4a09-b8f3-bf9ef5972417"
+    },
+    {
+      "claim_id": "d86912ab-e316-4749-ae99-609ac49e65b1",
+      "result_id": "b5c5b5a9-21a4-4a09-b8f3-bf9ef5972417"
+    },
+    {
+      "claim_id": "715d5bef-802f-47da-8e22-089c3a874251",
+      "result_id": "b5c5b5a9-21a4-4a09-b8f3-bf9ef5972417"
+    },
+    {
+      "claim_id": "a65aebd7-6bb4-41d7-9470-d981f706e7be",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "67f1f7ed-7d48-433e-b7ea-5cf103d13acb",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "ca3d4e61-66fc-4c89-ac0b-c9c0f90524c2",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "2ad38615-34aa-465e-a7ea-c2fee13205b5",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "a868de24-a3ef-434d-b4fc-cfa807ed470e",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "3e0d3e4a-a94d-4181-8adb-3599971b7992",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "19fff145-d98d-4bef-b5cd-b18b0b015a5e",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "262f5f2d-1cae-4b40-89e4-ba6642253348",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "850ecb5d-21d0-4b49-bcf2-8749dfe8dbec",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "e20ce766-d7f2-4744-9e74-cda1bd26f971",
+      "result_id": "a9c51946-90b8-439b-bde4-4aa57bbcc49e"
+    },
+    {
+      "claim_id": "b0e7ae52-da22-4f8e-bdc5-5ceddea41ad1",
+      "result_id": "ae13d023-c2a0-43b1-9b94-e90c07112b45"
+    }
+  ],
+  "comparisons": []
+}

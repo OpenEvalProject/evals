@@ -1,0 +1,1507 @@
+{
+  "submission": {
+    "id": "c52332e3-3667-4990-97c6-c482d627aee2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:57:12.537337Z",
+    "updated_at": "2025-11-28T19:57:12.537337Z"
+  },
+  "content": [
+    {
+      "id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "submission_id": "c52332e3-3667-4990-97c6-c482d627aee2",
+      "content_type": "manuscript",
+      "content_text": "# Spatial dilemmas of diffusible public goods\n\n## Authors\n\n- Benjamin Allen<sup>1</sup> \u2020\n- Jeff Gore<sup>3</sup>\n- Martin A Nowak<sup>2</sup>\n\n### Affiliations\n\n1. Department of Mathematics Emmanuel College Boston United States\n2. Program for Evolutionary Dynamics Harvard University Cambridge United States\n3. Department of Physics Massachusetts Institute of Technology Cambridge United States\n4. Department of Mathematics Harvard University Cambridge United States\n5. Department of Organismic and Evolutionary Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe emergence of cooperation is a central question in evolutionary biology. Microorganisms often cooperate by producing a chemical resource (a public good) that benefits other cells. The sharing of public goods depends on their diffusion through space. Previous theory suggests that spatial structure can promote evolution of cooperation, but the diffusion of public goods introduces new phenomena that must be modeled explicitly. We develop an approach where colony geometry and public good diffusion are described by graphs. We find that the success of cooperation depends on a simple relation between the benefits and costs of the public good, the amount retained by a producer, and the average amount retained by each of the producer\u2019s neighbors. These quantities are derived as analytic functions of the graph topology and diffusion rate. In general, cooperation is favored for small diffusion rates, low colony dimensionality, and small rates of decay of the public good.\n\n## Introduction\n\nPublic goods dilemmas are frequently observed in microbes. For example, the budding yeast Saccharomyces cerevisiae cooperates by producing the enzyme invertase, which hydrolyzes sucrose into monosaccharides, when yeast colonies are grown in glucose-limited media (Greig and Travisano, 2004; Gore et al., 2009). Other examples include the production of chemical agents that scavenge iron (Griffin et al., 2004; Buckling et al., 2007; Cordero et al., 2012; Julou et al., 2013), enable biofilm formation (Rainey and Rainey, 2003), eliminate competition (Le Gac and Doebeli, 2010), induce antibiotic resistance (Chuang et al., 2009; Lee et al., 2010), or facilitate infection of a host (Raymond et al., 2012).\n\nIn many cases, the benefits of public goods go primarily to cells other than the producer. For example, in a S. cerevisiae population subject to continuous mixing, only \u223c1% of monosaccharides are imported into the cell that hydrolyzes them, with the remainder diffusing away (Gore et al., 2009). Furthermore, production of public goods typically involves a metabolic cost, which may exceed the direct benefit to the producer. In this case, absent some mechanism to support cooperation (Nowak, 2006), public goods production is expected to disappear under competition from cheaters, resulting in the tragedy of the commons (Hardin, 1968).\n\nThere is growing evidence from experiments (Griffin et al., 2004; K\u00fcmmerli et al., 2009; Julou et al., 2013; Momeni et al., 2013) and simulations (Allison, 2005; Misevic et al., 2012) that spatial or group clustering can support cooperation in microbial public goods dilemmas, although this effect depends on the nature of competition for space and resources (Griffin et al., 2004; Buckling et al., 2007). These findings agree with insights from mathematical models (Nowak and May, 1992; Durrett and Levin, 1994; Santos and Pacheco, 2005; Ohtsuki et al., 2006; Szab\u00f3 and F\u00e1th, 2007; Taylor et al., 2007; Perc and Szolnoki, 2008; Fletcher and Doebeli, 2009; Korolev and Nelson, 2011) suggesting that spatial structure can promote cooperation by facilitating clustering and benefit-sharing among cooperators. However, these mathematical results focus largely on pairwise interactions rather than diffusible public goods. On the other hand, previous theoretical works that specifically explore microbial cooperation (West and Buckling, 2003; Ross-Gillespie et al., 2007; Driscoll and Pepper, 2010) use a relatedness parameter in place of an explicit spatial model, obscuring the important roles of colony geometry and spatial diffusion in determining the success of cooperation.\n\n## Results\n\nHere we present a simple spatial model of a diffusible public goods dilemma. Our model is inspired by the quasi-regular arrangements of cells in many microbial colonies (Figure 1A,B). The geometry of these arrangements depends on the shapes of cells and the dimensionality of the environment. For example, approximately spherical organisms such as S. cerevisiae arrange themselves in a hexagonal lattice-like structure when the colony is constrained to a two-dimensional plane (Figure 1A). This differs from the arrangements of rod-shaped organisms such as the bacterium Escherichia coli (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01169/elife-01169-fig1-v1.jpg)\n\n**Figure 1.:** (A) A two-dimensional colony of S. cerevisiae self-organizes into approximate hexagonal geometry due to the spherical shape of yeast cells. (B) A two-dimensional colony of E. coli, expressing green fluorescent protein, exhibits transient regular-graph-like structure. Panels C and D show idealized graph representations of colony spatial structure, and the consequent sharing of public goods, for sphere-shaped and rod-shaped organisms, respectively. Background colors show the stationary distributions \u03c8i of public goods resulting from a single cooperator (center). In each case, the diffusion parameter is set as \u03bb = 3. (C) Two-dimensional colonies of spherical organisms can be represented by triangular lattices with uniform edge weights. (D) Two-dimensional colonies of rod-shaped organisms can be represented using a triangular lattice with unequal weights. In this case, the weights are chosen as 0.1, 0.15 and 0.25, roughly proportional to the shared surface area between E. coli cells when arranged as shown.\n\nTo allow for a maximum variety of possible arrangements, we represent space as a weighted graph G (Figure 1C,D; Lieberman et al., 2005). Edges join cells to their neighbors, with edge weights eij proportional to the frequency of diffusion between neighboring cells. The graph structure thereby captures all features of cell arrangement that are relevant to the diffusion of public goods. The edge weights are normalized to satisfy \u03a3j eij = 1, so that they represent relative frequencies of diffusion to each neighbor. Since we are modeling intercellular diffusion, we set eii = 0 for each i. We also suppose that G has bi-transitive symmetry (Taylor et al., 2007), which implies that space is homogeneous (i.e., that the colony looks the same from each cell). Our model therefore applies primarily to the interiors of colonies rather than their boundaries. Bi-transitive symmetry also requires that pairwise relationships are symmetric\u2014in particular eij = eji for every pair i and j. This captures the reasonable assumption that public goods diffuse as frequently from cell i to cell j as they do from j to i.\n\nTo characterize local structure, we introduce the Simpson degree $\u03ba=(\\sum_{j\\inG}e_{ij}^{2})^{\u22121}.$ This quantity can be understood as the Simpson diversity (Simpson, 1949) of neighbors per cell, and coincides with the usual notion of degree on regular unweighted graphs. By symmetry, \u03ba does not depend on which vertex i is used in the above sum.\n\nWe consider two cells types: cooperators, C, that produce the public good, and defectors, D, that do not. These traits are passed to offspring upon reproduction. Production of the public good inflicts a cost c on its producer, and generates a total benefit b that is distributed among cells according to a diffusion process described below. Because our model is inspired by public goods that directly increase cell growth rate (such as hydrolyzed monosaccharides) it is less applicable to public goods with indirect benefits, such as quorum-sensing molecules (Waters and Bassler, 2005).\n\nCooperators produce one unit of public good per unit time. The public goods in the vicinity of a given cell either are utilized for the benefit of this cell or diffuse toward neighboring cells in proportion to edge weight. (The possibility of public goods decay is discussed below.) We quantify diffusion by the ratio \u03bb of the diffusion rate to the utilization rate. The dynamics of the local public goods concentration \u03c8i at each node i \u2208 G are given by\n\n$$\n\u03c8\u02d9_{i}=s_{i}\u2212\u03c8_{i}\u2212\\lambda\u03c8_{i}+\\lambda\\sumj\\inGe_{ji}\u03c8_{j}.\n$$\n\nAbove, si = 0,1 indicates the current type, D or C respectively, of cell i. The term si in Equation 1 represents public goods production, \u2212\u03c8i represents utilization, \u2212\u03bb\u03c8i represents diffusion outward, and the remaining term represents diffusion inward.\n\nEquation 1 is equivalent to supposing that each particle of public good performs a random walk among cells (with step probabilities equal to edge weights), and has probability 1/(1+\u03bb) of being utilized at each cell it encounters, including its producer. In this interpretation, \u03bb equals the expected number of steps a particle travels before being utilized.\n\nFor most empirical systems, diffusion and utilization occur much faster than cell division. We therefore suppose that the local public goods concentrations \u03c8i reach stationary equilibrium levels between reproductive events (\u2018Materials and methods\u2019).\n\nTwo key quantities in our analysis are the fractions, \u03d50 and \u03d51, of public goods that are retained by its producer and the producer\u2019s immediate neighbors, respectively (Figure 2). For a state in which only a single cell, i, is a cooperator, we have \u03d50 = \u03c8i and \u03d51 = \u03a3j\u2208G eij \u03c8j.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01169/elife-01169-fig2-v1.jpg)\n\n**Figure 2.:** Of the public good that a cooperator produces, a fraction \u03d50 is retained by the producer, a fraction \u03d51 is absorbed by each of the cooperator\u2019s nearest neighbors, and the remainder diffuses to cells further away. (For graphs with unequal edge weights, \u03d51 is the edge-weighted average fraction received by each neighbor.) Cooperation is favored if b/c > 1/(\u03d50 + \u03d51), that is, if the benefit b\u03d50 received by producer, plus the average benefit b\u03d51 received by each neighbor, exceeds the cost c of production. This figure shows a triangular lattice with equal edge weights and diffusion parameter \u03bb = 3.\n\nTurning now to the dynamics of evolution, we suppose that the fecundity (reproductive rate) of cell i is given by Fi = 1 + b\u03c8i \u2212 csi. In words, each individual has baseline fitness 1, plus the benefit, b\u03c8i, of public goods utilization, minus the cost, csi of public goods production. We suppose b > 0 and 0 < c < 1, so that benefits, costs, and overall fecundity are always positive. Some of our results apply to all such b and c values, while others apply only in the weak selection regime, b, c \u226a 1/\u03ba.\n\nReproductions and deaths follow the Death\u2013Birth update rule (Ohtsuki et al., 2006). At each time step, a cell is selected randomly to die, with uniform probability. A neighbor of the now-vacant position is randomly selected to reproduce, with probability proportional to fecundity times edge weight. The new offspring fills the vacancy. For the moment, we suppose that reproduction follows the same edge weights as diffusion (we will relax this assumption later). We also consider other update rules in Supplementary file 1.\n\nWe quantify the evolutionary success of cooperation in terms of the fixation probabilities \u03c1C and \u03c1D, defined as the probability that the cooperator or defector type, respectively, will fix, upon starting from a single mutant in a population initially of the opposite type. Cooperation is favored if \u03c1C > \u03c1D. This is equivalent to the condition that, for small mutation rates, cooperators have greater time-averaged frequency than would be expected from mutational equilibrium alone (Allen and Tarnita, 2012).\n\nThe assortment of cell types due to local reproduction can be studied using coalescing random walks (Wakeley, 2009; Allen et al., 2012), which represent the ancestral lineages of chosen individuals as the coalesce into the most recent common ancestor. By applying random walk theory to both diffusion and assortment, we are able to obtain exact conditions for the success of cooperation (\u2018Materials and methods\u2019; Supplementary file 1).\n\nWe find that public goods cooperation is favored, for any graph and diffusion rate, if and only if\n\n$$\n\\frac{b}{c}>\\frac{1}{\u03d5_{0}+\u03d5_{1}}.\n$$\n\nIn words, cooperation is favored if, of the public goods a cooperator produces, the benefits received by the producer, b\u03d50, plus the (edge-weighted) average benefits received by each neighbor, b\u03d51, outweigh the cost c of production (Figure 2). This result is strikingly simple, given the complex patterns of public goods sharing that result from diffusion (Figure 1). Condition (2) holds for arbitrary selection strength on complete graphs and one-dimensional lattices, and for weak selection on other graphs. This condition also holds for a variety of other diffusion processes (Supplementary file 1)\u2014including diffusion that follows a different graph structure from reproduction. (In this case, the neighbor average \u03d51 is computed using the weights for the reproduction graph.)\n\nCondition (2) can alternatively be expressed as b/c > \u03bb/[\u03d50 (1 + 2\u03bb) \u2212 1] (\u2018Materials and methods\u2019), showing how the success of cooperation depends on the relationship between the retention fraction \u03d50 and the diffusion parameter \u03bb. We have derived this relationship exactly for simple graph structures (Table 1), and present a general method for obtaining this relationship in the \u2018Materials and methods\u2019. Figure 3A,B illustrates how the critical b/c ratios vary with the diffusion parameter \u03bb and the graph topology.\n\n**Table 1.**\n Fraction of public goods retained by producer for different graph structures and diffusion rates\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Graph structure*</th>\n      <th>Fraction \u03d50 of public goods retained</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Complete (well-mixed)</td>\n      <td>11+\u03bb</td>\n    </tr>\n    <tr>\n      <td>1D lattice</td>\n      <td>11+2\u03bb</td>\n    </tr>\n    <tr>\n      <td>2D square lattice\u2020</td>\n      <td>1agm(1,1+2\u03bb)</td>\n    </tr>\n    <tr>\n      <td>n-dimensional lattice (general)\u2021</td>\n      <td>1(2\u03c0)n\u222b\u2212\u03c0\u03c0\u22ef\u222b\u2212\u03c0\u03c0dny1+\u03bb\u2212\u03bb\u2009\u03c7(y)</td>\n    </tr>\n    <tr>\n      <td>k-Bethe lattice\u00a7</td>\n      <td>(k\u22122)2(1+\u03bb)2+4(k\u22121)(1+2\u03bb)\u2212(k\u22122)(1+\u03bb)2(1+2\u03bb)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*These results are for large populations. Corrections for finite population size are given in Supplementary file 1.\u2020agm denotes the arithmetic-geometric mean.\u2021This result applies to any mathematical lattice, including triangular and von Neumann lattices. \u03c7(y) denotes the structure function of the lattice in question, defined in the \u2018Materials and methods\u2019.\u00a7A Bethe lattice (a.k.a. infinite Cayley tree), is an infinite regular graph with no cycles. In the formula, k denotes the graph degree._\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01169/elife-01169-fig3-v1.jpg)\n\n**Figure 3.:** (A) The critical b/c ratio for public goods production to be favored for various graph structures, plotted against the diffusion rate \u03bb. These results are derived from Equation 2 and the expressions for \u03d50 in Table 1. For a well-mixed population (complete graph), cooperation is favored if and only if b/c > 1 + \u03bb; for other graph structures, the critical b/c ratio is a increasing, convex function of \u03bb. In general, the conditions for cooperation become increasingly stringent with both the degree and the dimensionality of the graph. (B) Our results are confirmed by simulations on a 15 \u00d7 15 periodic triangular lattice with uniform edge weights and cost c = 5%. The critical b/c threshold from Equation 2 is plotted in black. A plus (+) indicates that the frequency of cooperator fixation exceeded the frequency of defector fixation (\u03c1C > \u03c1D), while a minus (\u2212) indicates the opposite. In all cases the results were statistically significant (two-proportion pooled z-test, p<0.05). (C) Adding decay of rate d effectively reduces both \u03bb and b by the factor 1/(1 + d), reflecting greater locality in sharing but reduced overall concentration of public good. On a graph of b/c versus \u03bb, this moves each point (b/c, \u03bb) along a straight line toward the origin. Since the increase in the critical b/c ratio with \u03bb is in all cases sublinear, this change always hinders cooperation. The critical b/c ratio for a planar triangular lattice is plotted in black. Adding a decay rate equal to the utilization rate (d = 1) changes favorable (b/c, \u03bb) combinations (marked by circles) to unfavorable ones (arrowheads).\n\nAbove, we have assumed that diffusion and replacement are both described by the same graph structure. However, this may not be the case for all microbes. In E. coli colonies, for example, it is reasonable to conjecture that diffusion occurs more frequently among cells that have a long side in common, whereas replacement may occur more frequently among end-to-end neighbors (Figure 1A,C). Additionally, some systems may follow a public goods diffusion process other than that modeled by Equation 1. To account for these variations, we consider a more general model in which diffusion is described by the fractions \u03d5ij of public goods which, if produced by cell i, would be utilized by cell j. Probabilities of replacement are described by a graph with edge weights eij as before. The diffusion fractions \u03d5ij are normalized so that \u2211j \u03d5ij = 1 for each i, and they have the same symmetries as the replacement graph; within these restrictions, they may be specified arbitrarily. Remarkably, our main result, Equation 1, remains valid in this generalized setting, with the neighbor average \u03d51 defined as \u03d51 = \u2211j eij \u03d5ij.\n\n## Discussion\n\nOur results suggest three qualitative regimes for diffusible public goods scenarios. For \u03bb \u226a 1, the benefits are almost all retained by producer, and production is favored whenever b/c > 1. Conversely, for \u03bb \u226a 1, public goods are shared indiscriminately, and production is favored only if public goods are essential for survival, in which case b is effectively infinite. Between these extremes, public goods are shared locally, and the spatial arrangement of cells plays a critical role in the success of cooperation (Figure 3A). At the smaller end of this critical regime, the expansion $b/c>1+\\lambda(\u03ba\u22121)/\u03ba+O(\\lambda^{2})$ of condition (2), derived in Supplementary file 1, shows how the difficulty of cooperation increases with the diffusion parameter \u03bb and the Simpson degree \u03ba. For the hydrolysis of monosaccharides in S. cerevisiae, we estimate \u03bb \u223c 3 (\u2018Materials and methods\u2019); thus we expect the success of invertase production to be strongly affected by colony geometry. Interestingly, this diffusion length is of the same order of magnitude as those reported in other recent experiments with diffusible public goods (Julou et al., 2013; Momeni et al., 2013).\n\nOur model predicts that the advantage of cooperation decreases with colony dimensionality; for example, less cooperation would be expected in three-dimensional structures than in flat (2D) colonies (Figure 3A). It also predicts that cooperation becomes more successful with increased viscosity of the environment and/or rate of public goods utilization, both of which would decrease \u03bb.\n\nA more subtle question is how cooperation is affected if the public good may decay (or equivalently, escape the colony) instead of being utilized. Decay reduces the absolute amount of public goods to be shared, but also restricts this sharing to a smaller circle of neighbors; thus the net effect on cooperation is at first glance ambiguous. We show in the \u2018Materials and methods\u2019 that incorporating decay effectively decreases \u03bb by a factor 1/(1 + d), reflecting the smaller neighborhood of sharing, and also effectively decreases b by the same factor, reflecting the diminished absolute amount of public goods. Here d represents the ratio of the decay rate to the utilization rate. Since the critical benefit-to-cost ratio always increases sublinearly with \u03bb, the net effect is to make cooperation more difficult (see Figure 3C). Thus decay of the public good has a purely negative effect on cooperation.\n\nOur results help elucidate recent emiprical results on microbial cooperation in viscous environments. For example, K\u00fcmmerli et al. (2009) found that increased viscosity promotes the evolution of siderophore production in Pseudomonas aeruginosa, while Le Gac and Doebeli (2010) found that viscosity had no effect on the evolution of colicin production in E. coli. In both cases, increased viscosity restricted cell movement, effectively leading to fewer neighbors per cell (lower graph degree). The crucial difference lies in the effect on public goods diffusion. In the study of K\u00fcmmerli et al. (2009), the diffusion rate decreased significantly as viscosity increased, while for Le Gac and Doebeli (2010), the diffusion rate remained large even with high viscosity. Thus the divergent outcomes can be understood as a consequence of differences in the diffusion rate, captured in our model by \u03bb.\n\nHere we have considered homotypic cooperation\u2014cooperation within a single population. Momeni et al. (2013), published previously in eLife, investigate heterotypic cooperation between distinct populations of S. cerevisiae, in the form of exchange of essential metabolites. Type R produces adenine and requires lysine, type G produces lysine and requires adenine, and type C (a cheater) requires adenine but does not produce adenine. While such heterotypic cooperation is not incorporated in our model, the results are qualitatively similar, in that spatial structure promoted the cooperative strategies G and R over the cheater C. This similarity can be understood by noting that heterotypic cooperation also entails a form of second-order homotypic cooperation. For example, G-cells aid nearby R-cells, which in turn aid nearby G-cells, so the benefit produced by a G-cell indirectly aids other G-cells nearby. Thus the conclusion that spatial structure aids cooperative strategies can apply to heterotypic cooperation as well.\n\nFinally, our model can also represent the spread of behaviors via imitation on social networks (Bala and Goyal, 1998; Bramoull\u00e9 and Kranton, 2007; Christakis and Fowler, 2007). Suppose an action generates a benefit b0 for the actor, and additionally generates further benefits that radiate outward according to some multiplier m, so that first neighbors receive a combined benefit mb0, second neighbors receive m2b0, and so on. Education, for example, exhibits this kind of social multiplier in its effect on wages (Glaeser et al., 2003). This effect can be captured using the parameter change b = b0/(1 \u2212 m), \u03bb = m/(1 \u2212 m). For non-well-mixed social networks, the action becomes more likely to spread as the multiplier increases, and can spread even if there is a net cost to the actor (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01169/elife-01169-fig4-v1.jpg)\n\n**Figure 4.:** In an alternate interpretation of our model, an action has benefits that radiate outward from the actor according to some multiplier m. Individual receiving a large amount of benefit are more likely to be imitated by social contacts. The likelihood of the action to spread\u2014and the benefits to the network as a whole\u2014both increase with the multiplier m.\n\n## Materials and methods\n\n### Stationary public goods distribution\n\nWe obtain a recurrence relation for the stationary public goods distribution in a given state by setting $\u03c8\u02d9_{i}=0$ in Equation 1. This yields\n\n$$\n(1+\\lambda)\u03c8_{i}=s_{i}+\\lambda\\sumj\\inGe_{ji}\u03c8_{j}.\n$$\n\nIn particular, for a state in which only cell i is a cooperator, we have (1 + \u03bb)\u03d50 = 1 + \u03bb\u03d51. Combining this identity with (2) yields the equivalent condition b/c > \u03bb/[\u03d50 (1 + 2\u03bb) \u2212 1].\n\n### Generating function analysis of random walks\n\nWe analyze the distribution of public goods and the assortment of cell types using the generating function for random walks (Montroll and Weiss, 1965; Lawler and Limic, 2010). For a given graph G, this generating function is given by the power series\n\n$$\nG_{ij}(z)=\\sumn=0\u221ep_{ij}^{(n)}z^{n}.\n$$\n\nAbove, $p_{ij}^{(n)}$ denotes the probability that a random walk of n steps starting at i will terminate at j.\n\nWe prove in Supplementary file 1 that the stationary concentration of public goods in a particular state are given by\n\n$$\n\u03c8_{i}=\\frac{1}{1+\\lambda}\\sumj\\inGs_{j}\u2009G_{ji}(\\frac{\\lambda}{1+\\lambda}).\n$$\n\nIn particular, the fraction \u03d50 that a cooperator retains of its own public good can be written\n\n$$\n\u03d5_{0}=\\frac{1}{1+\\lambda}G_{ii}(\\frac{\\lambda}{1+\\lambda}).\n$$\n\nSpatial assortment of types can be quantified using identity-by-descent IBD probabilities (Rousset and Billiard, 2000; Taylor et al., 2007). For this, we introduce a small probability u that each new offspring is a mutant. Then, two given cells are IBD if no mutation separates them from their most recent common ancestor. Based on the theory of coalescing random walks (Allen et al., 2012), the probability that i and j are IBD can be written\n\n$$\nq_{ij}=\\frac{G_{ij}(1\u2212u)}{G_{jj}(1\u2212u)}.\n$$\n\nConsidering the dynamics of Death\u2013Birth updating, and applying established properties of generating functions, we derive (Supplementary file 1) the success condition (2).\n\nTo obtain the expressions in Table 1, we combine (4) with previously established expressions for $G_{ij}$ on the graphs in question. A general expression is available for a lattice of any dimension. Such a lattice is defined by a finite collection of vectors v1,\u2026,vk \u2208 Rn with associated weights w1,\u2026,wk. The nodes of the lattice are all points of the form $x=m_{1}v_{1}+\u2026+m_{k}v_{k}\\inR^{n}$, where m1,\u2026,mk are integers. The edges from a node $x$ consist of the vectors $v_{1},\u2026,v_{k}$, positioned to start at the point $x$, with weights given by $w_{1},\u2026,w_{k}$, respectively. The generating function of a random walk on such a lattice, starting from the lattice origin 0, can be expressed as (Montroll and Weiss, 1965)\n\n$$\nG_{0x}(z)=\\frac{1}{(2\\pi)^{n}}\\int_{\u2212\\pi}^{\\pi}\u22ef\\int_{\u2212\\pi}^{\\pi}\\frac{e^{\u2212i\u2009x\u22c5y}}{1\u2212z\u2009\u03c7(y)}d^{n}y.\n$$\n\nAbove, \u03c7(y) is the \u2018structure function\u2019 of the lattice, defined as\n\n$$\n\u03c7(y)=\\sumj=1kw_{k}e^{i\u2009v_{j}\u22c5y}.\n$$\n\nThe argument y = (y1,\u2026,yn) of \u03c7(y) is a vector in Rn. For example, for an n-dimensional square lattice, we have\n\n$$\n\u03c7(y)=\\frac{1}{n}\\sumi=1ncos(y_{i}).\n$$\n\nFor a two-dimensional triangular lattice,\n\n$$\n\u03c7(y)=\\frac{1}{3}[cos(y_{1})+cos(y_{2})+cos(y_{1}+y_{2})].\n$$\n\nSimilar expressions for other lattices, including the square lattice with von Neumann neighbors and lattices with unequal edge weights (e.g., Figure 1B), can be readily obtained from (6).\n\n### Estimation of diffusion parameter for S. cerevisiae\n\nWe suppose that glucose uptake follows Michaelis\u2013Menten kinetics, so that the uptake rate is given by $V_{max}\u03c8/(\u03c8+K)$, where \u03c8 is the concentration of glucose, Vmax is the maximal uptake rate, and K is the concentration at which the uptake rate reaches half of its maximum. We treat fructose as equivalent to glucose. Since we are interested in the case that glucose is limited, we assume $\u03c8\u226aK$, and the uptake rate therefore simplifies to $V_{max}\u03c8/K$. Gore et al. (2009) estimated the uptake kinetics to be Vmax \u223c 2 \u00d7 107 molecules per second and K \u223c 1mM.\n\nWe calculate the lifetime L of a glucose molecule prior to absorption as the reciprocal of the fraction of glucose absorbed per unit time:\n\n$$\nL=\\frac{#\u2009glucose\u2009molecules\u2009per\u2009unit\u2009excluded\u2009volume}{(Uptake\u2009rate\u2009per\u2009cell)\\times(#\u2009cells\u2009per\u2009unit\u2009excluded\u2009volume)},\n$$\n\nwhere \u2018excluded volume\u2019 refers to the volume of water excluded by the yeast cells. Supposing that each yeast cell has volume $v\u223c4\\pi(2\\mum)^{3}/3$, and that yeast cells in a tightly-packed colony occupy approximately half of the available volume, we obtain\n\n$$\nL=\\frac{\u03c8}{(V_{max}\u2009\u03c8/K)\\times(1/v)}\n$$\n\n\n\n$$\n=\\frac{Kv}{V_{max}}\n$$\n\n\n\n$$\n\u223c1\u2009sec.\n$$\n\nThe diffusion length before uptake is calculated as $\\sqrt{D/L}$, where D is the diffusion constant, which we estimate as 100 \u03bcm2/sec in the colony environment. Combining with the above calculation of L gives a diffusion length of \u223c10 \u03bcm, which is \u223c3 cell lengths. We therefore estimate \u03bb = 3 for this system.\n\n### Decay of the public good\n\nDecay or escape of the public good can be incorporated into our model by adding a decay term to the right-hand side of Equation 1. This yields\n\n$$\n\u03c8\u02d9_{i}=s_{i}\u2212\u03c8_{i}\u2212d\u03c8_{i}\u2212\\lambda\u03c8_{i}+\\lambda\\sumj\\inGe_{ji}\u03c8_{j}.\n$$\n\nAbove, d represents the ratio of the decay rate to the utilization rate. Setting $\u03c8\u02d9_{i}=0$ and rearranging, we obtain\n\n$$\n\u03c8_{i}(1+d)(1+\\frac{\\lambda}{1+d})=s_{i}+\\frac{\\lambda}{1+d}\\sumj\\inGe_{ji}\u03c8_{j}(1+d).\n$$\n\nDefining the effective quantities $\u03c8\u02dc_{i}=\u03c8_{i}(1+d)$ and $\\lambda\u02dc=\\lambda/(1+d)$, we recover the recurrence relation (3). All of our results then carry forward using these effective quantities, except that b must also be reduced by the factor 1 + d to compensate for the rescaling of \u03c8i by this same factor.\n",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "b2595f46-c76e-495f-8c24-1741126f2587",
+      "submission_id": "c52332e3-3667-4990-97c6-c482d627aee2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carl T Bergstrom, University of Washington , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01169.009](https://doi.org/10.7554/eLife.01169.009)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cSpatial dilemmas of diffusible public goods\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom, Carl Bergstrom, is a member of our Board of Reviewing Editors.\n\nThe editors and the reviewers discussed their comments before we reached this decision, and the Senior editor has assembled the following comments to help you prepare a revised submission.\n\nMicrobes frequently face public goods dilemmas and often these dilemmas involve the production of diffusible products secreted into the extracellular environment. It is an interesting and open question to determine when and how such behavior will be favored by natural selection. The manuscript provides a technically sound and elegant mathematical analysis of the problem based on an implicit graphical structure in the spatial organization of cells that make up a colony. The main mathematical result, which is inequality (2), is nice in its simplicity and how it incorporates the three different factors within a single representation.\n\nThe reviewers had two major concerns that need to be addressed before the manuscript can be accepted:\n\nA) Whether the paper is of sufficient biological interest to merit publication in eLife. To this concern the following four comments/suggestions were provided by the reviewers:\n\n1) While graphs provide a nice means of modeling some types of structure, one reviewer was less convinced that they are a natural way to model the structure of diffusing public goods. This approach that the authors have developed extensively over the years appears forced upon the biology of the problem rather than being an natural way to model natural interactions.\n\n2) Do the results tell us much beyond what we already know in terms of the biological problem? For example, similar effects of the diffusion rate are already known from other models of public goods (some of which are cited), and the colony dimension results (which sounds really interesting at first) is also pretty obvious once it becomes clear what is meant by colony dimension. The main new insight about biology provided by the results is the role of the decay rate of the public good. To my knowledge at least, this idea has not previously been explored and it is clear that the tension between the various ways that decay rate enters the problem requires the sort of quantitative analysis presented here. Regardless, the result does seem like a rather modest advance in our understanding of the evolutionary interplay between public goods, diffusion, cooperation, etc.\n\n3) The authors might also want to delve more deeply into the literature on public goods to better position their results within the existing literature. For example, there is good work by Brown, Taylor, Buckling, West, and others. Some of this is cited but not discussed in a very thorough way, and some is not even cited. A none-exhaustive list of other potentially useful papers include:\n\nBuckling, A, Harrison, F, Vos, M, Brockhurst, MA, Gardner, A, West, SA & Griffin, AS. 2007 Siderophore-mediated cooperation and virulence in Pseudomonas aeruginosa. FEMS Microbiolol. Ecol. 62, 135-141. doi:10.1111/j.1574-6941.2007.00388.x\n\nWest, SA & Buckling, A. 2003 Cooperation, virulence and siderophore production in bacterial parasites. Proc. R. Soc. Lond. B 270, 37-44. doi:10.1098/rspb.2002.2209\n\nBramoulle, Y & Kranton, R. Public goods in networks. Journal of Economic Theory. 135 (1), 478-494\n\n4) You may also be able to address this concern by referencing and coordinating the text of your paper with the parallel submission by Shou et al.\n\nB) Avoid confusion about the use of the term \u201cBethe Lattice\u201d. A reviewer provided the following commentary/suggestions:\n\n\u201cIn order to avoid later confusion I suggest substituting the expression \u201cBethe lattice\u201d or \u201clocally Cayley tree structure\u201d for \u201cCayley tree\u201d through the whole text. For finite Cayley trees a relevant portion of the nodes are located on the periphery where each node has only one neighbor. This is the reason why the behavior of the Ising model on the Cayley tree is similar to those observed on the one-dimensional chain (no magnetic ordering at finite temperatures). On the contrary, the Ising model on Bethe lattice exhibits a mean-field type order-disorder phase transition (when increasing the temperature) that can be described exactly by several methods, e.g., by the cavity method or pair approximation [for details see the review by Dorogovtsev et al., Rev. Mod. Phys. 80 (2008) 1275-1335]. The concept of Bethe lattice neglects the effects of periphery and involves equivalence between the nodes, as it is assumed in the present work, too.\u201d\n",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "83cf61a6-b73c-4be9-a495-83e7cbbb8000",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C1",
+      "claim": "Microorganisms often cooperate by producing a chemical resource (a public good) that benefits other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Microorganisms often cooperate by producing a chemical resource (a public good) that benefits other cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about microbial cooperation supported by the examples and citations provided in the Introduction section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "531333c4-19ac-411e-8d35-06c146da4906",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C2",
+      "claim": "The sharing of public goods depends on their diffusion through space.",
+      "claim_type": "EXPLICIT",
+      "source": "The sharing of public goods depends on their diffusion through space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational assumption of the model presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "076c7775-f09f-47d8-b586-d2dbfe6ae829",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C3",
+      "claim": "Previous theory suggests that spatial structure can promote evolution of cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous theory suggests that spatial structure can promote evolution of cooperation, but the diffusion of public goods introduces new phenomena that must be modeled explicitly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior theoretical work mentioned in the Introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "21bbbfe7-5630-4fbb-b293-851250c21b36",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C4",
+      "claim": "The diffusion of public goods introduces new phenomena that must be modeled explicitly.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous theory suggests that spatial structure can promote evolution of cooperation, but the diffusion of public goods introduces new phenomena that must be modeled explicitly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key motivation for the current study, based on inference from limitations of previous models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "a2640096-6b83-41ad-93eb-d8a96fc74258",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C5",
+      "claim": "The success of cooperation depends on a simple relation between the benefits and costs of the public good, the amount retained by a producer, and the average amount retained by each of the producer's neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the success of cooperation depends on a simple relation between the benefits and costs of the public good, the amount retained by a producer, and the average amount retained by each of the producer's neighbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by mathematical derivation and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "d4c51149-735a-4eb3-99d8-e856f6c329ba",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C6",
+      "claim": "Cooperation is favored for small diffusion rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, cooperation is favored for small diffusion rates, low colony dimensionality, and small rates of decay of the public good.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is derived from the mathematical model and supported by the results shown in figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "7917ee49-c0d3-4681-993f-57a13cfb34a7",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C7",
+      "claim": "Cooperation is favored for low colony dimensionality.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, cooperation is favored for small diffusion rates, low colony dimensionality, and small rates of decay of the public good.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is derived from the mathematical model and supported by the results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "3bcebe5b-09aa-49cd-a8d0-e2d1c5b660db",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C8",
+      "claim": "Cooperation is favored for small rates of decay of the public good.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, cooperation is favored for small diffusion rates, low colony dimensionality, and small rates of decay of the public good.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is derived from the mathematical analysis of decay effects shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "750f1370-1e5e-48a6-990d-6b7846422f7a",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C9",
+      "claim": "The budding yeast Saccharomyces cerevisiae cooperates by producing the enzyme invertase, which hydrolyzes sucrose into monosaccharides, when yeast colonies are grown in glucose-limited media.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the budding yeast Saccharomyces cerevisiae cooperates by producing the enzyme invertase, which hydrolyzes sucrose into monosaccharides, when yeast colonies are grown in glucose-limited media (Greig and Travisano, 2004; Gore et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "0fd6b971-9f3c-458f-8932-c41cef37cca3",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C10",
+      "claim": "Microbes produce chemical agents that scavenge iron as public goods.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples include the production of chemical agents that scavenge iron (Griffin et al., 2004; Buckling et al., 2007; Cordero et al., 2012; Julou et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "d6a20e76-4d5a-43b2-80b6-fece11ae23db",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C11",
+      "claim": "Microbes produce public goods that enable biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples include the production of chemical agents that scavenge iron (Griffin et al., 2004; Buckling et al., 2007; Cordero et al., 2012; Julou et al., 2013), enable biofilm formation (Rainey and Rainey, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "eb450567-b686-49e2-98bb-b3d29a8e340e",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C12",
+      "claim": "Microbes produce public goods that eliminate competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples include the production of chemical agents that scavenge iron (Griffin et al., 2004; Buckling et al., 2007; Cordero et al., 2012; Julou et al., 2013), enable biofilm formation (Rainey and Rainey, 2003), eliminate competition (Le Gac and Doebeli, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "36606ae0-0e87-4f95-874f-d785d9fc5f0b",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C13",
+      "claim": "Microbes produce public goods that induce antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples include the production of chemical agents that scavenge iron (Griffin et al., 2004; Buckling et al., 2007; Cordero et al., 2012; Julou et al., 2013), enable biofilm formation (Rainey and Rainey, 2003), eliminate competition (Le Gac and Doebeli, 2010), induce antibiotic resistance (Chuang et al., 2009; Lee et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "4b9a37a4-beb5-4e79-996f-d65fa27b9a5c",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C14",
+      "claim": "Microbes produce public goods that facilitate infection of a host.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples include the production of chemical agents that scavenge iron (Griffin et al., 2004; Buckling et al., 2007; Cordero et al., 2012; Julou et al., 2013), enable biofilm formation (Rainey and Rainey, 2003), eliminate competition (Le Gac and Doebeli, 2010), induce antibiotic resistance (Chuang et al., 2009; Lee et al., 2010), or facilitate infection of a host (Raymond et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "9430fdf2-3508-4c2f-aa92-f53051d6bc10",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C15",
+      "claim": "In many cases, the benefits of public goods go primarily to cells other than the producer.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, the benefits of public goods go primarily to cells other than the producer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the specific example of S. cerevisiae that follows.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "324e607b-95a3-40eb-ad7a-9a11023c67a0",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C16",
+      "claim": "In a S. cerevisiae population subject to continuous mixing, only \u223c1% of monosaccharides are imported into the cell that hydrolyzes them, with the remainder diffusing away.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in a S. cerevisiae population subject to continuous mixing, only \u223c1% of monosaccharides are imported into the cell that hydrolyzes them, with the remainder diffusing away (Gore et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "4129c298-cea9-4732-95a3-1d9d8e80f1e0",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C17",
+      "claim": "Production of public goods typically involves a metabolic cost, which may exceed the direct benefit to the producer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, production of public goods typically involves a metabolic cost, which may exceed the direct benefit to the producer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge about metabolic costs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "647cf850-c32c-4dc1-8cf7-a619fd711208",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C18",
+      "claim": "Absent some mechanism to support cooperation, public goods production is expected to disappear under competition from cheaters, resulting in the tragedy of the commons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, absent some mechanism to support cooperation (Nowak, 2006), public goods production is expected to disappear under competition from cheaters, resulting in the tragedy of the commons (Hardin, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established theory cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "86d50720-0ce6-4d08-a9da-388f21c52de3",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C19",
+      "claim": "There is growing evidence from experiments that spatial or group clustering can support cooperation in microbial public goods dilemmas.",
+      "claim_type": "EXPLICIT",
+      "source": "There is growing evidence from experiments (Griffin et al., 2004; K\u00fcmmerli et al., 2009; Julou et al., 2013; Momeni et al., 2013) and simulations (Allison, 2005; Misevic et al., 2012) that spatial or group clustering can support cooperation in microbial public goods dilemmas",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "38c2e760-d51c-4810-bd1b-ea5a9a2e4be7",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C20",
+      "claim": "There is growing evidence from simulations that spatial or group clustering can support cooperation in microbial public goods dilemmas.",
+      "claim_type": "EXPLICIT",
+      "source": "There is growing evidence from experiments (Griffin et al., 2004; K\u00fcmmerli et al., 2009; Julou et al., 2013; Momeni et al., 2013) and simulations (Allison, 2005; Misevic et al., 2012) that spatial or group clustering can support cooperation in microbial public goods dilemmas",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "aca90503-c237-41bb-9354-37d9aca63705",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C21",
+      "claim": "The effect of spatial clustering on cooperation depends on the nature of competition for space and resources.",
+      "claim_type": "EXPLICIT",
+      "source": "There is growing evidence from experiments (Griffin et al., 2004; K\u00fcmmerli et al., 2009; Julou et al., 2013; Momeni et al., 2013) and simulations (Allison, 2005; Misevic et al., 2012) that spatial or group clustering can support cooperation in microbial public goods dilemmas, although this effect depends on the nature of competition for space and resources (Griffin et al., 2004; Buckling et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "cba4b96c-cab1-4597-a8cf-3a29e1f50617",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C22",
+      "claim": "Mathematical models suggest that spatial structure can promote cooperation by facilitating clustering and benefit-sharing among cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings agree with insights from mathematical models (Nowak and May, 1992; Durrett and Levin, 1994; Santos and Pacheco, 2005; Ohtsuki et al., 2006; Szab\u00f3 and F\u00e1th, 2007; Taylor et al., 2007; Perc and Szolnoki, 2008; Fletcher and Doebeli, 2009; Korolev and Nelson, 2011) suggesting that spatial structure can promote cooperation by facilitating clustering and benefit-sharing among cooperators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "3b0b17dc-1fd1-4337-b58b-d46fceac5109",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C23",
+      "claim": "Previous mathematical results on spatial structure and cooperation focus largely on pairwise interactions rather than diffusible public goods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these mathematical results focus largely on pairwise interactions rather than diffusible public goods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the literature based on the cited works.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "213dc6e8-310d-4448-b83c-636bb03fd152",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C24",
+      "claim": "Previous theoretical works that specifically explore microbial cooperation use a relatedness parameter in place of an explicit spatial model.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, previous theoretical works that specifically explore microbial cooperation (West and Buckling, 2003; Ross-Gillespie et al., 2007; Driscoll and Pepper, 2010) use a relatedness parameter in place of an explicit spatial model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "a4ff00f6-68b3-4a42-ab40-83c1ceecf2aa",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C25",
+      "claim": "Using a relatedness parameter in place of an explicit spatial model obscures the important roles of colony geometry and spatial diffusion in determining the success of cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, previous theoretical works that specifically explore microbial cooperation (West and Buckling, 2003; Ross-Gillespie et al., 2007; Driscoll and Pepper, 2010) use a relatedness parameter in place of an explicit spatial model, obscuring the important roles of colony geometry and spatial diffusion in determining the success of cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of previous approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "1ac5bdbb-8c6e-46ad-a55f-782d056360f3",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C26",
+      "claim": "The geometry of cell arrangements in microbial colonies depends on the shapes of cells and the dimensionality of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The geometry of these arrangements depends on the shapes of cells and the dimensionality of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge of physical packing and the examples shown in the figures.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "28852a4a-25ba-46a7-af46-f2f8900ae668",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C27",
+      "claim": "Approximately spherical organisms such as S. cerevisiae arrange themselves in a hexagonal lattice-like structure when the colony is constrained to a two-dimensional plane.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, approximately spherical organisms such as S. cerevisiae arrange themselves in a hexagonal lattice-like structure when the colony is constrained to a two-dimensional plane (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the microscopy image shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "cadf6667-4bf1-48a5-b1e8-19554b210fe1",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C28",
+      "claim": "The arrangement of S. cerevisiae differs from the arrangements of rod-shaped organisms such as the bacterium Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "This differs from the arrangements of rod-shaped organisms such as the bacterium Escherichia coli (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of the microscopy images in Figures 1A and 1B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "5aa55244-9567-4a02-8e34-87236f3f5e25",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C29",
+      "claim": "Two-dimensional colonies of S. cerevisiae self-organize into approximate hexagonal geometry due to the spherical shape of yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-dimensional colony of S. cerevisiae self-organizes into approximate hexagonal geometry due to the spherical shape of yeast cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1A showing the hexagonal arrangement.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "41d12a93-2833-4f38-9c85-52611b4be7ed",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C30",
+      "claim": "A two-dimensional colony of E. coli exhibits transient regular-graph-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-dimensional colony of E. coli, expressing green fluorescent protein, exhibits transient regular-graph-like structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1B showing the E. coli arrangement.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "4e97499c-32ce-4f95-b049-c4cf95bb4ec4",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C31",
+      "claim": "Two-dimensional colonies of spherical organisms can be represented by triangular lattices with uniform edge weights.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-dimensional colonies of spherical organisms can be represented by triangular lattices with uniform edge weights.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a modeling assumption illustrated in Figure 1C.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "268e46e9-4f2e-43b6-9a22-70aef6330cd6",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C32",
+      "claim": "Two-dimensional colonies of rod-shaped organisms can be represented using a triangular lattice with unequal weights.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-dimensional colonies of rod-shaped organisms can be represented using a triangular lattice with unequal weights.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a modeling assumption illustrated in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "230b845a-0aea-4f73-8e39-475c494e5101",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C34",
+      "claim": "Cooperation is favored if the benefits received by the producer plus the average benefits received by each neighbor outweigh the cost of production.",
+      "claim_type": "EXPLICIT",
+      "source": "In words, cooperation is favored if, of the public goods a cooperator produces, the benefits received by the producer, b\u03d50, plus the (edge-weighted) average benefits received by each neighbor, b\u03d51, outweigh the cost c of production (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the main result, illustrated in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "9ed5e3a1-37a2-4fb7-a61e-c9e193aa7dd0",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C37",
+      "claim": "Condition (2) holds for a variety of other diffusion processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This condition also holds for a variety of other diffusion processes (Supplementary file 1)\u2014including diffusion that follows a different graph structure from reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This extends the main result to more general scenarios, as detailed in supplementary materials.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "d5a3aa85-56cd-4a1e-954d-cb9a3a82c498",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C38",
+      "claim": "For a well-mixed population (complete graph), cooperation is favored if and only if b/c > 1 + \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "For a well-mixed population (complete graph), cooperation is favored if and only if b/c > 1 + \u03bb",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the main result and shown in Figure 3A and Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "ece7a0d3-1f58-47eb-a1fd-dccbee936199",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C39",
+      "claim": "For graphs other than complete graphs, the critical b/c ratio is an increasing, convex function of \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "for other graph structures, the critical b/c ratio is a increasing, convex function of \u03bb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A for various graph structures.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "0aa2ada3-9672-4fe7-b5a6-c0627e125d5e",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C40",
+      "claim": "The conditions for cooperation become increasingly stringent with both the degree and the dimensionality of the graph.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the conditions for cooperation become increasingly stringent with both the degree and the dimensionality of the graph.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3A showing different graph structures.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "c1c29cbd-12b6-4596-920c-636c4f7b268b",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C41",
+      "claim": "The theoretical predictions are confirmed by simulations on a 15 \u00d7 15 periodic triangular lattice with uniform edge weights and cost c = 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are confirmed by simulations on a 15 \u00d7 15 periodic triangular lattice with uniform edge weights and cost c = 5%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B where simulation results match theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "ccb17e72-7ac2-4be8-a95c-a5f51dd3002c",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C42",
+      "claim": "Adding decay of rate d effectively reduces both \u03bb and b by the factor 1/(1 + d).",
+      "claim_type": "EXPLICIT",
+      "source": "Adding decay of rate d effectively reduces both \u03bb and b by the factor 1/(1 + d), reflecting greater locality in sharing but reduced overall concentration of public good.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived mathematically in the Materials and methods section and illustrated in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "d743261a-c2b9-46dc-b6d9-f861ada8d9bc",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C43",
+      "claim": "The increase in the critical b/c ratio with \u03bb is in all cases sublinear.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the increase in the critical b/c ratio with \u03bb is in all cases sublinear, this change always hinders cooperation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the curves in Figure 3A and 3C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "92d52a27-df9b-4392-987b-1451ea8853cc",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C44",
+      "claim": "Decay of the public good always hinders cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the increase in the critical b/c ratio with \u03bb is in all cases sublinear, this change always hinders cooperation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the mathematical analysis and illustrated in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "ad4f2bfe-26fa-4dcd-b5d5-598c92186b92",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C45",
+      "claim": "Adding a decay rate equal to the utilization rate (d = 1) changes favorable (b/c, \u03bb) combinations to unfavorable ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding a decay rate equal to the utilization rate (d = 1) changes favorable (b/c, \u03bb) combinations (marked by circles) to unfavorable ones (arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "f0962da3-3dba-48ea-a3fa-2be398f2c7dd",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C46",
+      "claim": "For \u03bb \u226a 1, the benefits are almost all retained by producer, and production is favored whenever b/c > 1.",
+      "claim_type": "EXPLICIT",
+      "source": "For \u03bb \u226a 1, the benefits are almost all retained by producer, and production is favored whenever b/c > 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the limiting behavior of the main result.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "e04faf90-af34-4d1f-8c18-29421cdb1ebc",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C47",
+      "claim": "For \u03bb \u226b 1, public goods are shared indiscriminately, and production is favored only if public goods are essential for survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, for \u03bb \u226a 1, public goods are shared indiscriminately, and production is favored only if public goods are essential for survival, in which case b is effectively infinite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the limiting behavior of the main result.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "742da9ef-1143-42df-ab02-9c19b09ee546",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C48",
+      "claim": "Between the extremes of very small and very large \u03bb, public goods are shared locally, and the spatial arrangement of cells plays a critical role in the success of cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Between these extremes, public goods are shared locally, and the spatial arrangement of cells plays a critical role in the success of cooperation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the model results and illustrated in Figure 3A.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "40c1037a-437e-4247-8945-24a78530f6d5",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C49",
+      "claim": "For the hydrolysis of monosaccharides in S. cerevisiae, \u03bb is estimated to be approximately 3.",
+      "claim_type": "EXPLICIT",
+      "source": "For the hydrolysis of monosaccharides in S. cerevisiae, we estimate \u03bb \u223c 3 ('Materials and methods')",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated in the Materials and methods section based on experimental parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "23b4c357-c3a2-4387-9106-4c5681ebf958",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C50",
+      "claim": "The success of invertase production in S. cerevisiae is expected to be strongly affected by colony geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "thus we expect the success of invertase production to be strongly affected by colony geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the estimated diffusion length being in the critical regime.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "7a6583af-42c1-4a52-b28e-aad1914eaee3",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C51",
+      "claim": "The diffusion length for S. cerevisiae monosaccharides is of the same order of magnitude as those reported in other recent experiments with diffusible public goods.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this diffusion length is of the same order of magnitude as those reported in other recent experiments with diffusible public goods (Julou et al., 2013; Momeni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is based on citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "24724899-ede6-4664-8c7b-7cb6007eabd8",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C52",
+      "claim": "The model predicts that the advantage of cooperation decreases with colony dimensionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that the advantage of cooperation decreases with colony dimensionality; for example, less cooperation would be expected in three-dimensional structures than in flat (2D) colonies (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This prediction is based on the theoretical results shown in Figure 3A.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "bd8f559f-e935-45b7-9b8d-12bf1c54f647",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C53",
+      "claim": "Less cooperation would be expected in three-dimensional structures than in flat (2D) colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that the advantage of cooperation decreases with colony dimensionality; for example, less cooperation would be expected in three-dimensional structures than in flat (2D) colonies (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific prediction derived from the model and shown in Figure 3A.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "56d8a7a0-5025-4083-9548-8c463aaa791e",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C54",
+      "claim": "Cooperation becomes more successful with increased viscosity of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "It also predicts that cooperation becomes more successful with increased viscosity of the environment and/or rate of public goods utilization, both of which would decrease \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between viscosity and the diffusion parameter \u03bb.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "c62039b1-e6e4-47ff-be18-1e94a623a705",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C55",
+      "claim": "Cooperation becomes more successful with increased rate of public goods utilization.",
+      "claim_type": "EXPLICIT",
+      "source": "It also predicts that cooperation becomes more successful with increased viscosity of the environment and/or rate of public goods utilization, both of which would decrease \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between utilization rate and the diffusion parameter \u03bb.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "66f6dcd0-c9b7-4818-ad41-0b0a8a36dfff",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C56",
+      "claim": "Decay of the public good has a purely negative effect on cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus decay of the public good has a purely negative effect on cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the mathematical analysis of decay effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "e626e4ee-4ce6-4e39-bb1f-198c4038c7f1",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C57",
+      "claim": "K\u00fcmmerli et al. (2009) found that increased viscosity promotes the evolution of siderophore production in Pseudomonas aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, K\u00fcmmerli et al. (2009) found that increased viscosity promotes the evolution of siderophore production in Pseudomonas aeruginosa",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "e7654d5c-4c7e-4999-a511-5d2bdb5127cf",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C58",
+      "claim": "Le Gac and Doebeli (2010) found that viscosity had no effect on the evolution of colicin production in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "while Le Gac and Doebeli (2010) found that viscosity had no effect on the evolution of colicin production in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "3e61e170-7f0a-4975-9177-40cc57e746d2",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C59",
+      "claim": "In both the K\u00fcmmerli et al. and Le Gac and Doebeli studies, increased viscosity restricted cell movement, effectively leading to fewer neighbors per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, increased viscosity restricted cell movement, effectively leading to fewer neighbors per cell (lower graph degree).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental conditions in the cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "b8c1f2dc-6683-489d-af5a-8dbd14c491ff",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C60",
+      "claim": "In the study of K\u00fcmmerli et al. (2009), the diffusion rate decreased significantly as viscosity increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In the study of K\u00fcmmerli et al. (2009), the diffusion rate decreased significantly as viscosity increased",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results from the cited study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "9cb9c6ad-05d1-4edd-ba2c-8713b8d9a3f2",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C61",
+      "claim": "For Le Gac and Doebeli (2010), the diffusion rate remained large even with high viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "while for Le Gac and Doebeli (2010), the diffusion rate remained large even with high viscosity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results from the cited study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "1a0d6747-4bd6-46af-88aa-ca93ce11f450",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C62",
+      "claim": "The divergent outcomes in the K\u00fcmmerli et al. and Le Gac and Doebeli studies can be understood as a consequence of differences in the diffusion rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the divergent outcomes can be understood as a consequence of differences in the diffusion rate, captured in our model by \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results using the current model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "8203b7a9-cb5c-4df8-86f1-4f960bf27f84",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C63",
+      "claim": "Momeni et al. (2013) investigate heterotypic cooperation between distinct populations of S. cerevisiae, in the form of exchange of essential metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Momeni et al. (2013), published previously in eLife, investigate heterotypic cooperation between distinct populations of S. cerevisiae, in the form of exchange of essential metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "cf4f9520-0a3e-4363-b407-339262765ed7",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C64",
+      "claim": "In the Momeni et al. study, type R produces adenine and requires lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "Type R produces adenine and requires lysine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system from the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "280fe1ff-545b-4ea4-8048-ef9816135bb2",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C65",
+      "claim": "In the Momeni et al. study, type G produces lysine and requires adenine.",
+      "claim_type": "EXPLICIT",
+      "source": "type G produces lysine and requires adenine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system from the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "17fe0b15-5dc6-4a49-aa01-f634d9ff5d0a",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C66",
+      "claim": "In the Momeni et al. study, type C (a cheater) requires adenine but does not produce adenine.",
+      "claim_type": "EXPLICIT",
+      "source": "and type C (a cheater) requires adenine but does not produce adenine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system from the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "097f285e-67fb-4c2c-b317-f80075415c0b",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C67",
+      "claim": "In the Momeni et al. study, spatial structure promoted the cooperative strategies G and R over the cheater C.",
+      "claim_type": "EXPLICIT",
+      "source": "While such heterotypic cooperation is not incorporated in our model, the results are qualitatively similar, in that spatial structure promoted the cooperative strategies G and R over the cheater C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to experimental results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "ae95f7da-dfde-4538-a584-920056fb44c4",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C68",
+      "claim": "Heterotypic cooperation entails a form of second-order homotypic cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "This similarity can be understood by noting that heterotypic cooperation also entails a form of second-order homotypic cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the relationship between heterotypic and homotypic cooperation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "096aaf45-542d-4423-a387-358d322e7b35",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C69",
+      "claim": "G-cells aid nearby R-cells, which in turn aid nearby G-cells, so the benefit produced by a G-cell indirectly aids other G-cells nearby.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, G-cells aid nearby R-cells, which in turn aid nearby G-cells, so the benefit produced by a G-cell indirectly aids other G-cells nearby.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism of heterotypic cooperation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "b4e2ae1a-7dfc-4532-8410-1ea6b4dc881c",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C70",
+      "claim": "The conclusion that spatial structure aids cooperative strategies can apply to heterotypic cooperation as well.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the conclusion that spatial structure aids cooperative strategies can apply to heterotypic cooperation as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference extending the model's implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "19d34bc7-ab45-4a61-bd59-5727b3d21bef",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C71",
+      "claim": "The model can represent the spread of behaviors via imitation on social networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our model can also represent the spread of behaviors via imitation on social networks (Bala and Goyal, 1998; Bramoull\u00e9 and Kranton, 2007; Christakis and Fowler, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative interpretation of the model, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "e84c5aa9-c9e6-4323-976e-1e7f07b2aa93",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C72",
+      "claim": "Education exhibits a social multiplier effect on wages.",
+      "claim_type": "EXPLICIT",
+      "source": "Education, for example, exhibits this kind of social multiplier in its effect on wages (Glaeser et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to an empirical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "93a19366-eea2-47f5-832c-68fed29fca09",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C73",
+      "claim": "For non-well-mixed social networks, an action becomes more likely to spread as the multiplier increases.",
+      "claim_type": "EXPLICIT",
+      "source": "For non-well-mixed social networks, the action becomes more likely to spread as the multiplier increases, and can spread even if there is a net cost to the actor (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from applying the model to social networks, illustrated in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "a82305c0-3acf-4dbc-a35a-afbfae7c84d4",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C74",
+      "claim": "An action can spread on non-well-mixed social networks even if there is a net cost to the actor.",
+      "claim_type": "EXPLICIT",
+      "source": "For non-well-mixed social networks, the action becomes more likely to spread as the multiplier increases, and can spread even if there is a net cost to the actor (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from applying the model to social networks, illustrated in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "056a3285-df18-4533-aa48-5b60361efc52",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C76",
+      "claim": "For a state in which only cell i is a cooperator, (1 + \u03bb)\u03d50 = 1 + \u03bb\u03d51.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, for a state in which only cell i is a cooperator, we have (1 + \u03bb)\u03d50 = 1 + \u03bb\u03d51.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the recurrence relation for the special case of a single cooperator.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "b5a567da-5a17-4817-957a-a96ab43688ba",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C80",
+      "claim": "For S. cerevisiae, glucose uptake follows Michaelis-Menten kinetics with Vmax \u223c 2 \u00d7 10^7 molecules per second and K \u223c 1mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Gore et al. (2009) estimated the uptake kinetics to be Vmax \u223c 2 \u00d7 107 molecules per second and K \u223c 1mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "bc794eca-6cb9-42c0-b05c-76c41fb017a5",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C83",
+      "claim": "The diffusion length for glucose before uptake in S. cerevisiae is approximately 10 \u03bcm, which is approximately 3 cell lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining with the above calculation of L gives a diffusion length of \u223c10 \u03bcm, which is \u223c3 cell lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the diffusion constant and lifetime.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "869f3b82-aaee-4d84-8a82-8cf4c8c3d17a",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "claim_id": "C85",
+      "claim": "Yeast cells in a tightly-packed colony occupy approximately half of the available volume.",
+      "claim_type": "EXPLICIT",
+      "source": "and that yeast cells in a tightly-packed colony occupy approximately half of the available volume",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption based on packing geometry.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "abe9b9fb-ce97-40cd-9441-2618ce80e512",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microorganisms cooperate by producing diffusible public goods that benefit other cells, often at a metabolic cost to the producer. Examples include invertase production in S. cerevisiae, iron-scavenging molecules, biofilm-forming agents, and antibiotic resistance factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 establish the biological context for microbial public goods cooperation through multiple cited experimental examples (C9-C14) and quantitative data (C16). The claims are well-supported by established literature and provide appropriate motivation for the theoretical work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous theoretical work on spatial structure and cooperation has focused on pairwise interactions or used relatedness parameters rather than explicit spatial models of diffusible public goods, creating a gap that the current work addresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C25 accurately characterize prior work through appropriate citations and identify a legitimate gap in the literature. The assessment that previous models obscure the roles of colony geometry and diffusion (C25) is a reasonable inference supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "97983118-5816-4dcb-9ac6-7477c77f7638",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Microbial colonies exhibit geometry-dependent spatial arrangements: spherical organisms like S. cerevisiae form hexagonal lattice-like structures in 2D, while rod-shaped organisms like E. coli form different arrangements. These can be modeled using weighted graphs with different edge structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 are well-supported by microscopy images (Figures 1A-B) showing actual colony structures and by the graph representations (Figures 1C-D). The modeling assumptions are reasonable simplifications of observed biological structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "abdb234c-4dfc-4795-bc23-66fffad791fb",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The success of cooperation depends on a simple condition: b/c > 1/(\u03d5\u2080 + \u03d5\u2081), where \u03d5\u2080 is the fraction of public good retained by the producer and \u03d5\u2081 is the average fraction retained by each neighbor. This condition holds across various graph structures and diffusion processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C34, C37-C40 present the main theoretical result with mathematical derivation detailed in Materials and Methods. The condition is derived using generating function analysis and coalescing random walks, with appropriate mathematical rigor. Figure 3A demonstrates the relationship across multiple graph structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "0d1c2fd0-6cba-4131-b1a5-d3c86d694d92",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Theoretical predictions are confirmed by simulations on a 15\u00d715 periodic triangular lattice with uniform edge weights and cost c = 5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by Figure 3B, which shows agreement between theoretical predictions and simulation results with statistical significance (p<0.05). The simulation provides appropriate validation of the theoretical model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cooperation is favored under conditions of small diffusion rates, low colony dimensionality, and small decay rates of the public good. Decay always hinders cooperation because the critical b/c ratio increases sublinearly with \u03bb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 and C42-C45, C56 are supported by mathematical analysis and Figure 3. The decay analysis (C42) is mathematically derived in Materials and Methods, showing that decay reduces both \u03bb and b by factor 1/(1+d). Figure 3C illustrates how decay shifts favorable conditions to unfavorable ones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "54438dea-654a-4b79-8bdd-9e82e73b0096",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Three qualitative regimes exist for diffusible public goods: for \u03bb\u226a1, benefits are retained by producer (cooperation when b/c>1); for \u03bb\u226b1, goods are shared indiscriminately (cooperation only if essential); between these extremes, spatial arrangement is critical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 describe limiting behaviors derived from the main theoretical result (Equation 2). These are logical consequences of the mathematical model and are illustrated in Figure 3A showing the transition between regimes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "b3710952-10cd-4184-88e2-fb4e75377364",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For S. cerevisiae monosaccharide hydrolysis, \u03bb is estimated to be approximately 3, corresponding to a diffusion length of ~10 \u03bcm (~3 cell lengths), placing this system in the critical regime where colony geometry strongly affects cooperation success.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51, C80, C83, C85 provide a specific application to S. cerevisiae. The calculation uses cited experimental parameters (C80) and reasonable assumptions (C85) to estimate \u03bb~3. The calculation methodology is detailed in Materials and Methods and appears sound, though it relies on several approximations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "1ab0177c-3008-441d-99e4-cd98224becc0",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model predicts that cooperation advantage decreases with colony dimensionality (3D vs 2D) and increases with environmental viscosity or public goods utilization rate (both decrease \u03bb).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are testable predictions derived from the theoretical model. Figure 3A shows the dimensionality effect. The predictions follow logically from the relationship between \u03bb and cooperation success established in the main result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "5a9252ff-7158-4ad4-ad3d-e01d1e73f44a",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model explains divergent experimental results on viscosity effects: K\u00fcmmerli et al. found viscosity promoted cooperation in P. aeruginosa (diffusion decreased), while Le Gac and Doebeli found no effect in E. coli (diffusion remained high). The difference is attributable to diffusion rate changes captured by \u03bb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 provide a retrospective explanation of published experimental results using the current model. The interpretation (C59-C62) is reasonable and consistent with the model's predictions, though it would be strengthened by quantitative estimates of \u03bb in both systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "7162f477-4f82-499d-9243-c2e89cdc222e",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model's predictions extend to heterotypic cooperation (as in Momeni et al. 2013 with S. cerevisiae metabolite exchange), because heterotypic cooperation entails second-order homotypic cooperation where benefits indirectly aid cells of the same type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70 connect the homotypic model to heterotypic cooperation through a reasonable conceptual argument (C68-C69). The cited experimental results (C67) are consistent with model predictions, though the authors appropriately note that heterotypic cooperation is not explicitly incorporated in their model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "7011313f-5067-4103-9a4f-a6070a84cd1f",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model can represent behavior spread on social networks with social multiplier effects. Actions become more likely to spread as the multiplier increases and can spread even with net cost to the actor on non-well-mixed networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 present an alternative interpretation of the model for social networks. The mathematical mapping (b = b\u2080/(1-m), \u03bb = m/(1-m)) is provided, and Figure 4 illustrates the predictions. This is a valid extension of the model to a different domain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    },
+    {
+      "id": "3283e83f-1ab8-4d06-89be-b7448466c892",
+      "content_id": "7f597327-cab5-42a6-b6f6-45c172654d20",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For a state with only cell i as cooperator, the relationship (1+\u03bb)\u03d5\u2080 = 1 + \u03bb\u03d5\u2081 holds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is a mathematical identity derived from the stationary distribution equation (Equation 1) for the special case of a single cooperator. This is a correct mathematical derivation used in subsequent analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:57:12.537337Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "83cf61a6-b73c-4be9-a495-83e7cbbb8000",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "531333c4-19ac-411e-8d35-06c146da4906",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "750f1370-1e5e-48a6-990d-6b7846422f7a",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "0fd6b971-9f3c-458f-8932-c41cef37cca3",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "d6a20e76-4d5a-43b2-80b6-fece11ae23db",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "eb450567-b686-49e2-98bb-b3d29a8e340e",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "36606ae0-0e87-4f95-874f-d785d9fc5f0b",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "4b9a37a4-beb5-4e79-996f-d65fa27b9a5c",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "9430fdf2-3508-4c2f-aa92-f53051d6bc10",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "324e607b-95a3-40eb-ad7a-9a11023c67a0",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "4129c298-cea9-4732-95a3-1d9d8e80f1e0",
+      "result_id": "abe9b9fb-ce97-40cd-9441-2618ce80e512"
+    },
+    {
+      "claim_id": "076c7775-f09f-47d8-b586-d2dbfe6ae829",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "21bbbfe7-5630-4fbb-b293-851250c21b36",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "647cf850-c32c-4dc1-8cf7-a619fd711208",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "86d50720-0ce6-4d08-a9da-388f21c52de3",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "38c2e760-d51c-4810-bd1b-ea5a9a2e4be7",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "aca90503-c237-41bb-9354-37d9aca63705",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "cba4b96c-cab1-4597-a8cf-3a29e1f50617",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "3b0b17dc-1fd1-4337-b58b-d46fceac5109",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "213dc6e8-310d-4448-b83c-636bb03fd152",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "a4ff00f6-68b3-4a42-ab40-83c1ceecf2aa",
+      "result_id": "88ab4862-d68e-4ce4-9f4a-fdad1c384494"
+    },
+    {
+      "claim_id": "1ac5bdbb-8c6e-46ad-a55f-782d056360f3",
+      "result_id": "97983118-5816-4dcb-9ac6-7477c77f7638"
+    },
+    {
+      "claim_id": "28852a4a-25ba-46a7-af46-f2f8900ae668",
+      "result_id": "97983118-5816-4dcb-9ac6-7477c77f7638"
+    },
+    {
+      "claim_id": "cadf6667-4bf1-48a5-b1e8-19554b210fe1",
+      "result_id": "97983118-5816-4dcb-9ac6-7477c77f7638"
+    },
+    {
+      "claim_id": "5aa55244-9567-4a02-8e34-87236f3f5e25",
+      "result_id": "97983118-5816-4dcb-9ac6-7477c77f7638"
+    },
+    {
+      "claim_id": "41d12a93-2833-4f38-9c85-52611b4be7ed",
+      "result_id": "97983118-5816-4dcb-9ac6-7477c77f7638"
+    },
+    {
+      "claim_id": "4e97499c-32ce-4f95-b049-c4cf95bb4ec4",
+      "result_id": "97983118-5816-4dcb-9ac6-7477c77f7638"
+    },
+    {
+      "claim_id": "268e46e9-4f2e-43b6-9a22-70aef6330cd6",
+      "result_id": "97983118-5816-4dcb-9ac6-7477c77f7638"
+    },
+    {
+      "claim_id": "a2640096-6b83-41ad-93eb-d8a96fc74258",
+      "result_id": "abdb234c-4dfc-4795-bc23-66fffad791fb"
+    },
+    {
+      "claim_id": "230b845a-0aea-4f73-8e39-475c494e5101",
+      "result_id": "abdb234c-4dfc-4795-bc23-66fffad791fb"
+    },
+    {
+      "claim_id": "9ed5e3a1-37a2-4fb7-a61e-c9e193aa7dd0",
+      "result_id": "abdb234c-4dfc-4795-bc23-66fffad791fb"
+    },
+    {
+      "claim_id": "d5a3aa85-56cd-4a1e-954d-cb9a3a82c498",
+      "result_id": "abdb234c-4dfc-4795-bc23-66fffad791fb"
+    },
+    {
+      "claim_id": "ece7a0d3-1f58-47eb-a1fd-dccbee936199",
+      "result_id": "abdb234c-4dfc-4795-bc23-66fffad791fb"
+    },
+    {
+      "claim_id": "0aa2ada3-9672-4fe7-b5a6-c0627e125d5e",
+      "result_id": "abdb234c-4dfc-4795-bc23-66fffad791fb"
+    },
+    {
+      "claim_id": "c1c29cbd-12b6-4596-920c-636c4f7b268b",
+      "result_id": "0d1c2fd0-6cba-4131-b1a5-d3c86d694d92"
+    },
+    {
+      "claim_id": "d4c51149-735a-4eb3-99d8-e856f6c329ba",
+      "result_id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d"
+    },
+    {
+      "claim_id": "7917ee49-c0d3-4681-993f-57a13cfb34a7",
+      "result_id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d"
+    },
+    {
+      "claim_id": "3bcebe5b-09aa-49cd-a8d0-e2d1c5b660db",
+      "result_id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d"
+    },
+    {
+      "claim_id": "ccb17e72-7ac2-4be8-a95c-a5f51dd3002c",
+      "result_id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d"
+    },
+    {
+      "claim_id": "d743261a-c2b9-46dc-b6d9-f861ada8d9bc",
+      "result_id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d"
+    },
+    {
+      "claim_id": "92d52a27-df9b-4392-987b-1451ea8853cc",
+      "result_id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d"
+    },
+    {
+      "claim_id": "ad4f2bfe-26fa-4dcd-b5d5-598c92186b92",
+      "result_id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d"
+    },
+    {
+      "claim_id": "66f6dcd0-c9b7-4818-ad41-0b0a8a36dfff",
+      "result_id": "a75e259b-9bb4-4ea6-ae88-b8a55fac8a8d"
+    },
+    {
+      "claim_id": "f0962da3-3dba-48ea-a3fa-2be398f2c7dd",
+      "result_id": "54438dea-654a-4b79-8bdd-9e82e73b0096"
+    },
+    {
+      "claim_id": "e04faf90-af34-4d1f-8c18-29421cdb1ebc",
+      "result_id": "54438dea-654a-4b79-8bdd-9e82e73b0096"
+    },
+    {
+      "claim_id": "742da9ef-1143-42df-ab02-9c19b09ee546",
+      "result_id": "54438dea-654a-4b79-8bdd-9e82e73b0096"
+    },
+    {
+      "claim_id": "40c1037a-437e-4247-8945-24a78530f6d5",
+      "result_id": "b3710952-10cd-4184-88e2-fb4e75377364"
+    },
+    {
+      "claim_id": "23b4c357-c3a2-4387-9106-4c5681ebf958",
+      "result_id": "b3710952-10cd-4184-88e2-fb4e75377364"
+    },
+    {
+      "claim_id": "7a6583af-42c1-4a52-b28e-aad1914eaee3",
+      "result_id": "b3710952-10cd-4184-88e2-fb4e75377364"
+    },
+    {
+      "claim_id": "b5a567da-5a17-4817-957a-a96ab43688ba",
+      "result_id": "b3710952-10cd-4184-88e2-fb4e75377364"
+    },
+    {
+      "claim_id": "bc794eca-6cb9-42c0-b05c-76c41fb017a5",
+      "result_id": "b3710952-10cd-4184-88e2-fb4e75377364"
+    },
+    {
+      "claim_id": "869f3b82-aaee-4d84-8a82-8cf4c8c3d17a",
+      "result_id": "b3710952-10cd-4184-88e2-fb4e75377364"
+    },
+    {
+      "claim_id": "24724899-ede6-4664-8c7b-7cb6007eabd8",
+      "result_id": "1ab0177c-3008-441d-99e4-cd98224becc0"
+    },
+    {
+      "claim_id": "bd8f559f-e935-45b7-9b8d-12bf1c54f647",
+      "result_id": "1ab0177c-3008-441d-99e4-cd98224becc0"
+    },
+    {
+      "claim_id": "56d8a7a0-5025-4083-9548-8c463aaa791e",
+      "result_id": "1ab0177c-3008-441d-99e4-cd98224becc0"
+    },
+    {
+      "claim_id": "c62039b1-e6e4-47ff-be18-1e94a623a705",
+      "result_id": "1ab0177c-3008-441d-99e4-cd98224becc0"
+    },
+    {
+      "claim_id": "e626e4ee-4ce6-4e39-bb1f-198c4038c7f1",
+      "result_id": "5a9252ff-7158-4ad4-ad3d-e01d1e73f44a"
+    },
+    {
+      "claim_id": "e7654d5c-4c7e-4999-a511-5d2bdb5127cf",
+      "result_id": "5a9252ff-7158-4ad4-ad3d-e01d1e73f44a"
+    },
+    {
+      "claim_id": "3e61e170-7f0a-4975-9177-40cc57e746d2",
+      "result_id": "5a9252ff-7158-4ad4-ad3d-e01d1e73f44a"
+    },
+    {
+      "claim_id": "b8c1f2dc-6683-489d-af5a-8dbd14c491ff",
+      "result_id": "5a9252ff-7158-4ad4-ad3d-e01d1e73f44a"
+    },
+    {
+      "claim_id": "9cb9c6ad-05d1-4edd-ba2c-8713b8d9a3f2",
+      "result_id": "5a9252ff-7158-4ad4-ad3d-e01d1e73f44a"
+    },
+    {
+      "claim_id": "1a0d6747-4bd6-46af-88aa-ca93ce11f450",
+      "result_id": "5a9252ff-7158-4ad4-ad3d-e01d1e73f44a"
+    },
+    {
+      "claim_id": "8203b7a9-cb5c-4df8-86f1-4f960bf27f84",
+      "result_id": "7162f477-4f82-499d-9243-c2e89cdc222e"
+    },
+    {
+      "claim_id": "cf4f9520-0a3e-4363-b407-339262765ed7",
+      "result_id": "7162f477-4f82-499d-9243-c2e89cdc222e"
+    },
+    {
+      "claim_id": "280fe1ff-545b-4ea4-8048-ef9816135bb2",
+      "result_id": "7162f477-4f82-499d-9243-c2e89cdc222e"
+    },
+    {
+      "claim_id": "17fe0b15-5dc6-4a49-aa01-f634d9ff5d0a",
+      "result_id": "7162f477-4f82-499d-9243-c2e89cdc222e"
+    },
+    {
+      "claim_id": "097f285e-67fb-4c2c-b317-f80075415c0b",
+      "result_id": "7162f477-4f82-499d-9243-c2e89cdc222e"
+    },
+    {
+      "claim_id": "ae95f7da-dfde-4538-a584-920056fb44c4",
+      "result_id": "7162f477-4f82-499d-9243-c2e89cdc222e"
+    },
+    {
+      "claim_id": "096aaf45-542d-4423-a387-358d322e7b35",
+      "result_id": "7162f477-4f82-499d-9243-c2e89cdc222e"
+    },
+    {
+      "claim_id": "b4e2ae1a-7dfc-4532-8410-1ea6b4dc881c",
+      "result_id": "7162f477-4f82-499d-9243-c2e89cdc222e"
+    },
+    {
+      "claim_id": "19d34bc7-ab45-4a61-bd59-5727b3d21bef",
+      "result_id": "7011313f-5067-4103-9a4f-a6070a84cd1f"
+    },
+    {
+      "claim_id": "e84c5aa9-c9e6-4323-976e-1e7f07b2aa93",
+      "result_id": "7011313f-5067-4103-9a4f-a6070a84cd1f"
+    },
+    {
+      "claim_id": "93a19366-eea2-47f5-832c-68fed29fca09",
+      "result_id": "7011313f-5067-4103-9a4f-a6070a84cd1f"
+    },
+    {
+      "claim_id": "a82305c0-3acf-4dbc-a35a-afbfae7c84d4",
+      "result_id": "7011313f-5067-4103-9a4f-a6070a84cd1f"
+    },
+    {
+      "claim_id": "056a3285-df18-4533-aa48-5b60361efc52",
+      "result_id": "3283e83f-1ab8-4d06-89be-b7448466c892"
+    }
+  ],
+  "comparisons": []
+}

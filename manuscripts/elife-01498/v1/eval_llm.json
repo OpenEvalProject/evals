@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "C. elegans encodes a single CAMSAP homolog, PTRN-1, with conserved domain structure. PTRN-1a contains a calponin homology domain, coiled-coil repeats, and a C-terminal CKK domain required for MT binding, while PTRN-1b lacks the CKK domain. ptrn-1 is expressed in many tissues including neurons throughout development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by genomic analysis (C1), domain structure comparison with characterized CAMSAP proteins (C2), prior literature on CKK domain function (C3), and fluorescence microscopy expression data (C4). The evidence combines bioinformatic analysis, structural comparison, and experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "PTRN-1 localizes to puncta throughout neuronal processes. Three different fluorescence-tagged PTRN-1 constructs (N-terminal and C-terminal tags) showed similar punctate localization patterns in neurites, with irregularly spaced puncta in PVD dendrites and axon, and continuous fluorescence in the primary dendrite adjacent to the cell body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by consistent fluorescence microscopy data from multiple tagged constructs (C5), specific observations in PVD neurons (C6-C7). The use of multiple independent tagging strategies strengthens the conclusion that the localization pattern is not an artifact of the tag.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "PTRN-1a colocalizes with microtubules and localizes to MT ends. PTRN-1a puncta colocalized with EMTB::GFP-labeled MTs in muscle cytosol and at the sarcolemma, suggesting localization to MT ends similar to CAMSAP homologs in other species. When highly expressed, PTRN-1a also localized along the sides of MTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by colocalization experiments with the MT marker EMTB::GFP (C8-C9) and comparison to characterized CAMSAP proteins (C10). The inference that PTRN-1a localizes to MT ends (C10) is reasonable based on colocalization at punctate structures and homology to known minus-end binding proteins, though direct demonstration of minus-end binding would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "PTRN-1a localization is MT-independent and marks sites of MT stabilization in muscle cells. Acute colchicine treatment caused MT depolymerization (loss of EMTB::GFP fibers), but PTRN-1a localization remained unchanged and colocalized with remaining EMTB::GFP puncta, indicating PTRN-1a marks sites where MTs are stabilized even under depolymerizing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 are well-supported by colchicine treatment experiments showing differential effects on EMTB::GFP (depolymerization) versus PTRN-1a (stable localization). The inference that PTRN-1a marks stabilized MT sites (C16-C17) is logical given the colocalization of PTRN-1a with remaining MT puncta after colchicine treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "PTRN-1a localizes to sites of MT stabilization in neurons. In PVD neurons, acute colchicine exposure caused EMTB::GFP to dissolve into puncta, but PTRN-1a localization remained unchanged and colocalized with remaining EMTB::GFP puncta, suggesting PTRN-1a marks stabilized MT sites in neurites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 extend the muscle cell findings to neurons with similar experimental evidence. The parallel results in two different cell types strengthen the general conclusion about PTRN-1a function in MT stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The CKK domain is required for PTRN-1a to stabilize MT foci. PTRN-1a(\u0394CKK) lacking the CKK domain showed reduced colocalization with EMTB::GFP after colchicine treatment in both muscle cells and neurons, indicating that PTRN-1a itself stabilizes MT foci through its CKK domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are supported by domain deletion experiments showing loss of function when the CKK domain is removed. The comparison between full-length and \u0394CKK constructs provides strong evidence for the CKK domain's role in MT stabilization (C28), though the interpretation that MT ends are inherently more stable (C27) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "PTRN-1a puncta are associated with sites of MT polymerization initiation. Live imaging showed EBP-2::GFP (EB1) comets appearing, moving, and disappearing, with multiple movements sometimes emanating from the same position. PTRN-1a::tdTomato localized to immobile puncta, and many EBP-2::GFP movements appeared to emanate from PTRN-1a puncta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by live imaging data showing the spatial relationship between PTRN-1a and growing MT plus ends. However, the authors acknowledge that quantification is impracticable due to close spacing of PTRN-1a puncta (C32), which limits the strength of the association claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "PTRN-1 promotes MT polymerization but not MT polarity in dendrites. ptrn-1 null mutants showed grossly normal morphology but had fewer EBP-2::GFP movements in the PHC dendrite compared to wild-type, while the direction of movements remained normal. Cell-autonomous rescue confirmed PTRN-1's role in promoting MT polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are well-supported by quantitative analysis of EBP-2::GFP movements (C35-C36) and rescue experiments (C37-C38). The inference that PTRN-1 promotes MT polymerization but not polarity (C39) is logical given the reduced number but normal directionality of movements. However, the authors acknowledge alternative interpretations regarding stable versus dynamic MT populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PTRN-1 promotes MT stability through a synthetic interaction with colchicine. Growth in low-dose colchicine caused dramatic ectopic neurite sprouting in ptrn-1 mutants but not wild-type animals, affecting both DD/VD motorneurons and touch receptor neurons. This ectopic branching was rescued by cell-autonomous ptrn-1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by pharmacogenetic interaction experiments showing synthetic defects in ptrn-1 mutants grown with colchicine. The cell-autonomous rescue (C42) confirms the effect is not due to altered drug permeability. The inference that this reflects MT stabilization (C43) is reasonable given colchicine's known mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ptrn-1 mutants show decreased mec-7 promoter activity consistent with reduced MT stability. The ptrn-1 mutant exhibited decreased GFP fluorescence from a Pmec-7::gfp transgene, consistent with the known relationship between MT destabilization and reduced tubulin gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by established knowledge about MT stability and tubulin regulation (C44-C45) and fluorescence quantification data (C46). The inference that this implicates PTRN-1 in MT stability (C47) is reasonable but indirect, as the mec-7 promoter responds to multiple cellular signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ptrn-1 mutants have reduced MT number and abnormal MT structure in PLM neurons. Electron microscopy revealed that ptrn-1 mutant PLM neurons had 2-15 MTs (versus 25-50 in wild-type), increased 11-protofilament MTs, and an irregular 'S'-shaped MT structure, implicating PTRN-1 in maintaining MT integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by electron microscopy data from multiple cells showing consistent reduction in MT number and structural abnormalities. However, the sample size is small (4 cross-sections from 2 animals), which limits statistical power. The 'S'-shaped structure (C51) is particularly striking but observed in only one section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PTRN-1 is required cell-autonomously for PLM commissure formation. Approximately 20% of ptrn-1 mutant L4 animals showed defective PLM commissure extension, with ventrally directed buds instead of a complete commissure. This defect was fully rescued by cell-specific ptrn-1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by morphological analysis and rescue experiments. The incomplete penetrance (20%) suggests PTRN-1 functions redundantly with other factors or that the phenotype is sensitive to environmental conditions. The cell-autonomous rescue (C55-C56) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ptrn-1 mutants show loss of synaptic vesicle markers at the PLM synaptic patch. Both ptrn-1 alleles showed incompletely penetrant loss of mCherry::RAB-3 at the synaptic patch, with ptrn-1(wy560) showing higher penetrance than ptrn-1(tm5597), possibly due to deletion of the neighboring mbl-1 gene in the wy560 allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by fluorescence microscopy data. The difference in penetrance between alleles (C59) is explained by the larger deletion in wy560 (C60), and the speculation about mbl-1 contribution (C62) is reasonable given prior literature (C61), though this remains unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PTRN-1 functions cell-autonomously to prevent ectopic accumulation of synaptic vesicles in the PLM posterior process. Both ptrn-1 mutant strains showed fully penetrant ectopic accumulation of mCherry::RAB-3 and SNB-1::GFP in the PLM posterior process. Cell-specific rescue with two different promoters confirmed cell-autonomous function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are well-supported by fluorescence microscopy data showing consistent ectopic accumulation with two different synaptic vesicle markers (C63-C64) and rescue experiments with multiple promoters (C65-C66). The full penetrance contrasts with the partial penetrance of synaptic patch loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The DLK-1 MAPK pathway mediates ptrn-1 mutant defects in commissure formation and synaptic vesicle localization at the synaptic patch. Loss of dlk-1 or its downstream target pmk-3 completely suppressed both the PLM commissure extension defect and loss of RAB-3 from the synaptic patch in ptrn-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are well-supported by genetic interaction experiments showing complete suppression of specific ptrn-1 phenotypes by dlk-1 and pmk-3 mutations. The prior literature on DLK-1 function (C67-C69) provides context for interpreting these results. The pathway relationship is confirmed by testing both the MAPKKK (DLK-1) and downstream MAPK (PMK-3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "DLK-1 mediates colchicine-induced neurite sprouting in both ptrn-1 mutants and wild-type animals. dlk-1 mutation completely suppressed neurite sprouting in ptrn-1 mutants grown on low-dose colchicine, and also suppressed sprouting in wild-type animals grown on higher colchicine concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by morphological analysis showing dlk-1-dependent suppression of colchicine-induced sprouting. The dose-response relationship (C75) suggests that ptrn-1 and colchicine act on the same pathway to destabilize MTs, with DLK-1 mediating the cellular response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Ectopic accumulation of synaptic vesicles in the PLM posterior process is DLK-1-independent. Unlike other ptrn-1 phenotypes, the ectopic accumulation of mCherry::RAB-3 in the posterior process was not suppressed by dlk-1 mutation, indicating this phenotype is mediated by a different mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by genetic interaction data showing selective suppression of some but not all ptrn-1 phenotypes by dlk-1. This demonstrates that the synaptic vesicle mislocalization phenotypes are separable and mediated by distinct mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "DLK-1 functions partially in parallel to PTRN-1 to regulate MT dynamics. dlk-1 single mutants showed increased EBP-2::GFP movements without affecting directionality. The dlk-1; ptrn-1 double mutant showed an intermediate phenotype, suggesting DLK-1 and PTRN-1 function partially in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by quantitative analysis of EBP-2::GFP movements in single and double mutants. The intermediate phenotype in the double mutant (C80-C81) provides evidence for partial parallel function, though the interpretation is somewhat speculative (C82) and the difference between double mutant and ptrn-1 single mutant was not statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "PTRN-1 binds to MT minus ends and protects them from depolymerization in neuronal processes. Multiple lines of evidence support this conclusion: PTRN-1 localizes to puncta that bind and stabilize MTs, ptrn-1 mutants have fewer MTs with abnormal structure, ptrn-1 mutants show pharmacogenetic enhancement with colchicine, reduced MT polymerization events, and DLK-1-dependent phenotypes consistent with MT destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 represent a synthesis of multiple experimental approaches providing convergent evidence for PTRN-1's role in MT minus-end stabilization. While no single experiment directly demonstrates minus-end binding in vivo, the combination of localization, genetic, pharmacological, and ultrastructural data provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PTRN-1 likely functions in parallel with other MT stabilization mechanisms including tubulin modifications. The relatively mild phenotypes of ptrn-1 null mutants suggest redundant mechanisms. Tubulin detyrosination and CAMSAP proteins both protect against kinesin-13-mediated depolymerization, suggesting these modifications may compensate for ptrn-1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 are speculative (C91 explicitly stated as speculation) and based on indirect evidence from the literature (C92-C93). While the hypothesis is reasonable given the mild phenotypes and known biology of MT regulation, no direct experimental evidence is provided to test interactions between PTRN-1 and other MT stabilization mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "\u03b1-tubulin acetylation affects MT stability and neuronal function. Loss of \u03b1-tubulin acetyltransferases causes decreased MT abundance, irregular protofilament numbers, and abnormal MT structures in C. elegans. Loss of MEC-17 causes increased MT dynamics and synaptic vesicle mislocalization similar to ptrn-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by citations to prior literature. These claims provide context for interpreting the ptrn-1 results by describing parallel mechanisms of MT regulation, though they do not directly test interactions with PTRN-1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "MT destabilization promotes neurite branching. Prior studies show that collateral branch formation is associated with fewer, shorter MTs, and that pharmacological or genetic MT destabilization causes ectopic neurite outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by citations to prior literature and provide context for interpreting the colchicine-induced branching phenotypes observed in ptrn-1 mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "PTRN-1 represents a key factor that stabilizes MT minus ends in neurites and supports proper neuronal function. Through MT regulation, PTRN-1 promotes both stable and dynamic MTs during nervous system development and maintenance, supporting proper synaptic vesicle localization and balancing neurite stability with remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 represent the main conclusions synthesizing all experimental results. These summary claims are well-supported by the convergent evidence from multiple experimental approaches, though they represent inferences from the data rather than direct observations.",
+    "result_type": "MAJOR"
+  }
+]

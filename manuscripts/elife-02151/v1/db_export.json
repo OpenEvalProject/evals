@@ -1,0 +1,2178 @@
+{
+  "submission": {
+    "id": "66444086-ef1b-4941-9027-743a57c9e760",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:19:07.983180Z",
+    "updated_at": "2025-11-28T20:19:07.983180Z"
+  },
+  "content": [
+    {
+      "id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "submission_id": "66444086-ef1b-4941-9027-743a57c9e760",
+      "content_type": "manuscript",
+      "content_text": "# Structure of bacterial cytoplasmic chemoreceptor arrays and implications for chemotactic signaling\n\n## Authors\n\n- Ariane Briegel<sup>1</sup>\n- Mark S Ladinsky<sup>1</sup>\n- Catherine Oikonomou<sup>2</sup>\n- Christopher W Jones<sup>3</sup>\n- Michael J Harris<sup>4</sup>\n- Daniel J Fowler<sup>4</sup>\n- Yi-Wei Chang<sup>2</sup>\n- Lynmarie K Thompson<sup>4</sup>\n- Judith P Armitage<sup>3</sup>\n- Grant J Jensen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n2. Howard Hughes Medical Institute Pasadena United States\n3. Department of Biochemistry University of Oxford Oxford United Kingdom\n4. Department of Chemistry University of Massachusetts Amherst United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost motile bacteria sense and respond to their environment through a transmembrane chemoreceptor array whose structure and function have been well-studied, but many species also contain an additional cluster of chemoreceptors in their cytoplasm. Although the cytoplasmic cluster is essential for normal chemotaxis in some organisms, its structure and function remain unknown. Here we use electron cryotomography to image the cytoplasmic chemoreceptor cluster in Rhodobacter sphaeroides and Vibrio cholerae. We show that just like transmembrane arrays, cytoplasmic clusters contain trimers-of-receptor-dimers organized in 12-nm hexagonal arrays. In contrast to transmembrane arrays, however, cytoplasmic clusters comprise two CheA/CheW baseplates sandwiching two opposed receptor arrays. We further show that cytoplasmic fragments of normally transmembrane E. coli chemoreceptors form similar sandwiched structures in the presence of molecular crowding agents. Together these results suggest that the 12-nm hexagonal architecture is fundamentally important and that sandwiching and crowding can replace the stabilizing effect of the membrane.\n\n## Introduction\n\nBacteria sense and respond to their environment through a chemotactic system that translates ligand binding (stimulus) into preferential flagellar rotation (response), leading to either running in a favorable direction or tumbling to find a more favorable direction (Hazelbauer et al., 2008). Briefly, ligands bind to the periplasmic domains of the methyl-accepting chemotaxis proteins (MCPs), either directly (Milburn et al., 1991; Englert et al., 2010) or via periplasmic binding proteins (Tam and Saier, 1993). This results in conformational changes that traverse the length of the MCP, through one or more HAMP (histidine kinases, adenyl cyclases, MCPs, and some phosphatases) domains and the cytoplasmic coiled-coil signaling domain to either activate or inactivate a histidine kinase, CheA, bound at the distal tip (Wadhams and Armitage, 2004; Kentner and Sourjik, 2006; Hazelbauer et al., 2008).\n\nThe bacterial chemotactic system is best understood in Escherichia coli, where system components are located in a single operon (Silverman and Simon, 1976). In E. coli, CheA is a 5-domain (P1-P5) protein that functions as a homodimer. When activated by the MCP in unfavorable environments, CheA undergoes autophosphorylation and then transfers the phosphoryl group to one of two response regulators. One of these, CheY, binds the flagellar motor when phosphorylated, switching the motor\u2019s direction from clockwise to counter-clockwise and thus increasing the frequency of tumbling to find a more favorable direction (Turner et al., 2000). The other response regulator, CheB, is a methylesterase whose activity is stimulated by phosphorylation. Its activity is opposed by the constitutively active methyltransferase CheR and the balance of these two activities determines the methylation state of specific glutamate residues in the MCPs. These methylations confer adaptation on the system, modulating its response based on recent environmental conditions (Kleene et al., 1979; Toews et al., 1979; Lupas and Stock, 1989).\n\nIn E. coli, MCPs associate into trimers of dimers that span the inner membrane (Kim et al., 1999; Studdert and Parkinson, 2004) and complex with CheA and the coupling protein CheW (Figure 1A). This results in hexagonally packed trimers-of-receptor-dimers surrounding a ring of alternating CheA P5 domains and CheW. Neighboring rings are linked together by CheA P3 dimerization domains to form extended hexagonal lattices \u2013 the so-called transmembrane chemoreceptor arrays (Briegel et al., 2012; Liu et al., 2012). The architecture of these membrane-bound chemoreceptor arrays is not specific to E. coli, indeed it is universal among bacteria (Briegel et al., 2009). The architecture of these arrays is likely key to the high sensitivity, wide dynamic range, cooperativity, and feedback control of this system (Duke and Bray, 1999; Li and Weis, 2000; Gestwicki and Kiessling, 2002; Sourjik and Berg, 2002, 2004; Li and Hazelbauer, 2005; Endres and Wingreen, 2006).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02151/elife-02151-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic showing the topology of receptor-trimers-of-dimers (purple), CheA (domains P1\u2013P4 light gray/dark gray indicating domains in each CheA monomer, domain P5 orange), and CheW (blue) in membrane-bound arrays. The methylation region of each receptor dimer is indicated by a pink star. IM = inner membrane. (B) Top-view of the arrangement of the array components showing the interaction sites between the receptors, CheA and CheW, colored as in (A). (C) Schematic showing the topology of receptor, CheA, and CheW complexes in cytoplasmic arrays, colored as in (A). Cytoplasmic chemoreceptors assemble into two hexagonally packed arrays interacting at their presumably ligand-binding tips.\n\nBesides the single chemosensory operon encoding components of the transmembrane array, exemplified by E. coli, many bacteria contain additional chemotaxis operons, whose products are less well understood. The best-studied case is Rhodobacter sphaeroides, in which there are three operons, two of which are essential for normal chemotaxis in laboratory conditions. One of these operons, CheOp2, encodes components of the chemotaxis array associated with the transmembrane MCPs. The other, CheOp3, encodes components of a cytoplasmic chemotaxis cluster including CheB, CheR, CheY, CheW, two atypical CheA proteins (CheA3 and CheA4) (Porter et al., 2008), and a soluble chemoreceptor, TlpT. Each of the CheA proteins in the cluster lacks canonical domains compared to E. coli CheA: CheA3 contains only the P1 and P5 domains separated by a 794 amino acid sequence of unknown structure, whereas CheA4 lacks the P1 and P2 domains. CheA4 can transfer phosphoryl groups to P1 of CheA3 (Porter et al., 2008). Both CheA3 and CheA4 are required for chemotaxis (Wadhams et al., 2003; Porter et al., 2008). A second MCP homolog lacking any transmembrane domain, TlpC, is encoded in CheOp2. Fluorescent fusions of both TlpT and TlpC localize to a single cytoplasmic focus at mid-cell, which divides and is segregated during cell division (Wadhams et al., 2002, 2003). CheA3 and CheA4, along with CheW4 and a CheR, also localize to this cytoplasmic cluster (Wadhams et al., 2003). CheW4 and TlpT are required to form the cluster, and the positioning of the cluster depends on the ParA homolog PpfA, which is encoded next to TlpT in CheOp3 (Thompson et al., 2006). PpfA is a chromosome-associated ParA-like ATPase and controls the localization and segregation of the cytoplasmic cluster through an interaction with the N-terminus of TlpT, which is thought to stimulate the ATPase activity of PpfA in a ParB-like manner (Roberts et al., 2012). Sequence analysis of TlpT suggests that the 567 amino acid protein forms a classical MCP coiled-coil structure (Alexander and Zhulin, 2007). The 580 amino acid TlpC lacks significant homology to the canonical MCP structure and lacks a recognizable HAMP domain or methylation region.\n\nCytoplasmic chemoreceptors are not unique to R. sphaeroides. The genomes of many bacterial species encode MCP homologs lacking transmembrane domains (Ulrich and Zhulin, 2010; Wuichet and Zhulin, 2010). However, the organization and precise function of these cytoplasmic chemoreceptor clusters remain unknown. In the case of R. sphaeroides, it has been speculated that cytoplasmic MCPs modulate chemotactic response based on the current metabolic state of the cell (Armitage and Schmitt, 1997; Porter et al., 2008), while the inputs of cytoplasmic receptors in other organisms such as Vibrio cholerae are less clear.\n\nIn the case of E. coli transmembrane arrays, the membrane is thought to be important for proper assembly and function (Miller and Falke, 2004; Draheim et al., 2006; Amin and Hazelbauer, 2012). We were therefore interested in how cytoplasmic receptors cluster in the absence of organizing membrane. We used tomography of freeze-substituted, plastic-embedded sections; immunoelectron microscopy; electron cryotomography (ECT) of both intact cells and cryosections (Gan and Jensen, 2012); and correlated cryogenic fluorescence light microscopy and ECT (cryo-FLM/ECT) to characterize the structure of cytoplasmic chemoreceptor clusters in two bacteria: R. sphaeroides and V. cholerae. We also report the ability of normally transmembrane chemoreceptors from E. coli to form cytoplasmic-like arrays in the absence of a membrane.\n\n## Results\n\n### R. sphaeroides cells overexpressing cytoplasmic chemoreceptor array components exhibit large, curved structures\n\nWe initially tried to image cytoplasmic chemoreceptor arrays in intact R. sphaeroides by ECT. Unfortunately, we found that the size and cytoplasmic density of this species limits the achievable resolution in tomograms of intact cells, and we could not resolve the cytoplasmic clusters. To circumvent this problem, we employed two approaches that allowed us to view sections of the otherwise thick samples: cryosectioning vitreously frozen cells and room temperature sectioning of high-pressure frozen, freeze-substituted cells.\n\nTomographic reconstructions of cryosections of R. sphaeroides cells (containing the chemotaxis protein TlpC tagged with GFP to aid in future identification) revealed curved, double-layered structures that might correspond to cytoplasmic clusters (Figure 2A,B), but they were small and difficult to differentiate from the complex environment. To gain confidence in our identification, we used a strain in which some cytoplasmic chemotaxis components are overexpressed. This strain exhibited chemotaxis in swim plate assays, indicating that the limited overexpression did not significantly impair chemotactic function. By fluorescence light microscopy (FLM), short cells contained single fluorescent foci and long cells two foci, as expected (Wadhams et al., 2002). In tomograms of cryosections of these cells, we observed similar structures to those seen in WT cells but with greater length, appearing in cross-section as a curved, double-layered sandwich approximately 27 nm wide (measured from density peak-to-peak; Figure 2C\u2013E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02151/elife-02151-fig2-v1.jpg)\n\n**Figure 2.:** Tomographic slices of cryosections through R. sphaeroides cells expressing TlpC-GFP at wild-type (A and B) or overexpressed (C\u2013E) levels. (A) Tomographic slice of a cell expressing TlpC-GFP, revealing a potential cytoplasmic chemoreceptor array (black arrows), pseudo-colored red in (B). (C\u2013E) Cryosections of cells overexpressing cytoplasmic chemoreceptor components, including TlpC-GFP, contain similar structures to those observed under WT expression conditions: two curved layers approximately 27 nm apart (brackets), with perpendicular striations between them (black arrowheads).\n\nIt was difficult to identify the location of the structure in the cryosections, so we turned to a technique that would allow us to place the structure in the context of the whole cell. In tomograms of high-pressure frozen, freeze-substituted cells, we again observed extended, double-layered structures (Figure 3). Cross-sections through the structures revealed two curved layers with perpendicular striations connecting them. The positions of the structures in the cells were consistent with FLM observations (Thompson et al., 2006), strengthening our confidence in the identification of the cytoplasmic array. We did occasionally see multiple clusters at these positions, consistent with fluorescence results in cells overexpressing these proteins.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02151/elife-02151-fig3-v1.jpg)\n\n**Figure 3.:** Dual-axis tomographic reconstruction of high-pressure frozen, freeze-substituted cells reveals cytoplasmic clusters in most cells. Clusters appear as partially circular structures, typically located near storage granules. (A) Reconstruction of a longitudinally sectioned cell showing a single cluster. Inset: high-magnification detail of the cluster in a single, 6.7-nm tomographic slice. Scale bar 50 nm. (B) Cell containing two cytoplasmic clusters located next to storage granules. Inset: high-magnification detail of one cluster. (C) Model (blue) superimposed over the tomogram shown in B, highlighting the clusters. Scale bars 200 nm.\n\n### Immunogold labeling and correlated FLM/ECT confirm structures are cytoplasmic chemoreceptor arrays\n\nTo check whether the structures we observed contained the cytoplasmic chemotaxis protein TlpC, we performed immunogold labeling of the GFP tag in our sections. In this technique, gold-conjugated anti-GFP antibodies recognize and bind epitopes on the surface of the section, which is subsequently imaged by tomography. We consistently observed gold labeling of the curved structures described above, and tomography of the volume beneath the label confirmed the structural details seen in cryosections (n = 17 cells, example shown in Figure 4), indicating that these structures are indeed cytoplasmic chemoreceptor arrays.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02151/elife-02151-fig4-v1.jpg)\n\n**Figure 4.:** Sections were immunolabeled with antibodies against GFP and gold-conjugated secondary antibodies. (A\u2013C) Three examples of immunolabeled cells (left) and corresponding tomographic slices (right). Clusters (black arrowheads) were typically labeled by 1\u20133 gold particles (red arrows), depending on the amount of antigen present on the section surface. The heavily labeled cluster in (C) is likely oriented en face and near the section surface, allowing for access to a larger number of GFP antigens. Scale bars 200 nm.\n\nTo corroborate this identification, we used correlated cryo-FLM/ECT. Since whole R. sphaeroides cells are too thick and dense to image by ECT with high resolution, we flattened them by gentle lysis. However, unlike transmembrane receptors that remain well-organized following cell lysis (Briegel et al., 2009, 2012, 2013), fluorescent foci were not observed after lysis, indicating disruption of the cytoplasmic receptor cluster. We reasoned that in the absence of membrane, the density of the cytoplasm might play an important role in stabilizing cytoplasmic clusters. We therefore added molecular crowding agents, either polyethylene glycol (PEG-8000) or polyvinylpirrolidone (PVP), to the lysis protocol and used this approach to image an R. sphaeroides strain overexpressing the cytoplasmic chemoreceptor TlpT fused to YFP. We observed preservation of TlpT-YFP signals by FLM after lysis (Figure 5A\u2013C). We then froze lysed cells on an EM grid and localized a single TlpT-YFP signal by cryo-FLM, then imaged the indicated location at high resolution by ECT. We observed that the fluorescence signal corresponded to the structure previously identified (Figure 5D\u2013F), further verifying that these are indeed cytoplasmic chemoreceptor arrays containing TlpT.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02151/elife-02151-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013C) Molecular crowding preserves cytoplasmic chemoreceptor clusters during lysis. Overlay of phase contrast and TlpT-YFP fluorescence images of R. sphaeroides cells of strain JPA1558OE before (A) and after lysis either in the absence (B) or presence (C) of 10% PVP. (D\u2013F) Correlative cryo-FLM/ECT identifies a cytoplasmic array. (D) Overlay of fluorescent signal from TlpT-YFP (yellow) and a low magnification cryo-EM image of the same lysed cell. (E) Overlay of TlpT-YFP fluorescent signal (yellow) and a cross-section of a reconstructed tomogram corresponding to the same region, identifying the structure of a cytoplasmic chemoreceptor array. (F) An enlarged view of the cytoplasmic array reveals a partial ring consisting of two layers of chemoreceptors. Scale bar 100 nm. (G\u2013J) Receptor packing is identical in R. sphaeroides cytoplasmic and transmembrane arrays. (G) Top view through one of the two layers of the array imaged in D\u2013F and corresponding power spectrum (H) reveal a hexagonal receptor arrangement with center-to-center spacing of 12 nm. Scale bar 25 nm; power spectrum not to scale. (I) Top view through a membrane-bound chemoreceptor array and corresponding power spectrum (J) reveal hexagonal packing identical to that of the cytoplasmic array shown in (G\u2013H). Scale bar 25 nm; power spectrum not to scale. (K\u2013L) Additional examples of cytoplasmic chemoreceptor arrays (brackets with arrowheads) in tomograms of R. sphaeroides cells lysed with molecular crowding agents added. Distance between baseplates is approximately 30 nm. Scale bars 100 nm.\n\n### Hexagonal receptor arrangement is conserved between cytoplasmic and transmembrane arrays\n\nWe compared the structure of the cytoplasmic chemoreceptor cluster identified by correlated cryo-FLM/ECT to that of a transmembrane receptor cluster in the same cell. Interestingly, the arrangement and packing of the receptors was identical in both cases: a hexagonal lattice with center-to-center spacing of 12 nm when viewed from above (Figure 5G\u2013J). In the transmembrane array, this receptor lattice is associated with a single baseplate, whereas in the cytoplasmic array, there are two, one on either side, approximately 30 nm apart. Unfortunately, due to the tight curvature, we could only confirm the hexagonal order of one of the two layers of the cytoplasmic array.\n\n### ECT of V. cholerae reveals double-baseplate architecture of cytoplasmic arrays\n\nAs discussed above, due to the substantial density and thickness of R. sphaeroides cells, we were unable to identify cytoplasmic chemoreceptor arrays in intact cells. To obtain higher resolution information from intact cells, we turned to V. cholerae, which is also predicted to contain cytoplasmic chemoreceptors and flattens significantly during freezing for cryo-EM, yielding a thinner sample. By ECT of whole V. cholerae cells, we observed cytoplasmic chemoreceptor clusters with the same architecture as those in R. sphaeroides, though lacking curvature (Figure 6). The improved resolution in the thinner cells allowed us to clearly distinguish two hexagonal arrays of trimers-of-receptor-dimers sandwiched between two baseplates, 35 nm apart (Figure 6). The kinase-binding regions of the receptors were highly ordered, with decreasing order toward the center, as previously observed for transmembrane chemoreceptor arrays.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02151/elife-02151-fig6-v1.jpg)\n\n**Figure 6.:** Left: side view of a membrane-bound chemoreceptor array (MA) and a cytoplasmic chemoreceptor array (CA). The cytoplasmic array is composed of two parallel CheA/W baseplates approximately 35 nm apart. The chemoreceptors are sandwiched between the two baseplates and are hexagonally packed with a 12 nm center-to-center spacing. Right: top views of the receptor packing close to the CheA/CheW baseplate on either side and corresponding power spectra (top insets), as well as sixfold symmetrized subvolume averages (bottom insets) reveal that the hexagonal arrangement of the receptors is identical to that of the membrane bound array described previously (Briegel et al., 2009). Scale bars 50 nm. CA, Cytoplasmic chemoreceptor array; MA, membrane-bound chemoreceptor array; IM, inner membrane; OM, outer membrane. Power spectra not to scale.\n\n### Transmembrane E. coli chemoreceptors can form cytoplasmic-like arrays in the absence of membrane\n\nWe observed a striking similarity between the cytoplasmic arrays in R. sphaeroides and V. cholerae and an in vitro chemoreceptor preparation from E. coli. We purified a cytoplasmic fragment of the aspartate-sensing Tar receptor, as well as CheA and CheW, from E. coli (Montefusco et al., 2007; Fowler et al., 2010) and assembled complexes in vitro using these components, with CheA and CheW present in excess. The mixture of purified proteins also contained the molecular crowding agents PEG-8000 and trehalose to simulate cytoplasmic conditions. Once formed, the complexes activated the kinase as effectively as when assembled on vesicles (Fowler et al., 2010). Using ECT, we observed extended arrays with identical architecture to that of the in vivo cytoplasmic clusters described above: two baseplates, approximately 31 nm apart, flank two hexagonal lattices of chemoreceptor trimers with 12 nm center-to-center spacing (Figure 7). The receptors from the two sides interact at their methylation tips. Again, as we observed for transmembrane chemoreceptors, the kinase-binding tips were well ordered, with decreasing order towards the middle of the sandwich.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02151/elife-02151-fig7-v1.jpg)\n\n**Figure 7.:** Tomographic slice showing cytoplasmic fragments of Tar forming extended arrays in the presence of CheA, CheW, and molecular crowding agents. These arrays closely resemble the cytoplasmic chemoreceptor arrays seen in V. cholerae (Figure 6). Side-view (black arrowheads) reveals two flat, parallel CheA/W baseplates spaced approximately 31 nm apart. Top views of the chemoreceptors close to the baseplates (white arrows) reveal a well-ordered, hexagonal arrangement with a center-to-center spacing of 12 nm. Enlarged subvolume average (inset) confirms that the packing is identical to that of in vivo arrays. Scale bar 100 nm.\n\n### Curvature of R. sphaeroides cytoplasmic arrays is an intrinsic property\n\nThe most striking difference between the cytoplasmic arrays in R. sphaeroides and V. cholerae was the curvature observed in the former. In all cases observed, cytoplasmic V. cholerae arrays and arrays formed in vitro from E. coli cytoplasmic receptor fragments were flat, while those of R. sphaeroides exhibited kinks and regions of high curvature, even forming full rings in some cases. We wondered if this curvature may be induced by interactions between the fluorophores rather than being a property of the arrays themselves, as tags are known to introduce such artifacts (e.g., Swulius and Jensen, 2012). To test this, we performed tomography of high-pressure frozen, freeze-substituted cells overexpressing untagged components of the cytoplasmic cluster. We observed structures identical to those observed in the tagged strains (Figure 8A), indicating that curvature is not an artifact induced by attached fluorophores.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/02151/elife-02151-fig8-v1.jpg)\n\n**Figure 8.:** (A) Tomographic slice of a high-pressure frozen, freeze-substituted cell overexpressing native, untagged components of the cytoplasmic chemoreceptor cluster. Arrowheads indicate curved array. (B) Tomographic slice of a similarly treated cell lacking the partitioning protein PpfA. Arrowheads indicate curved cytoplasmic array. Scale bars 200 nm.\n\nCytoplasmic arrays in R. sphaeroides are segregated by a ParA homolog, PpfA, which associates with the N-terminus of TlpT and with the chromosomal DNA. To test whether this interaction imposes curvature on the cytoplasmic array, we similarly imaged cells lacking PpfA. Again, we observed structures with similar curvature, indicating that this is an intrinsic property of the array, not affected by the segregation machinery (Figure 8B).\n\n## Discussion\n\nOver half of all genomes sequenced of motile bacteria have more than one putative chemosensory pathway and many of these encode putative soluble chemoreceptors (Wuichet and Zhulin, 2010). In this study, we describe the structure of cytoplasmic chemoreceptor arrays in two distantly related bacterial species, R. sphaeroides and V. cholerae. Notably, cytoplasmic arrays in both species display a hexagonal arrangement of receptor-trimers-of-dimers, with 12 nm center-to-center spacing that is identical to that of transmembrane chemoreceptor arrays, suggesting a fundamental utility for this architecture. Whereas the transmembrane array is embedded in the membrane with a CheA/W baseplate at the receptors\u2019 membrane-distal tips and ligand-binding domains in the periplasm, the cytoplasmic arrays assemble as a sandwich, with two CheA/W baseplates flanking two sheets of MCPs that interact in the middle, presumably at their ligand-binding domains (Figure 1C). No membrane is associated with these arrays. The identity of the outer baseplates as CheA/W is supported by our observation of the same structure in in vitro preparations from E. coli, where only three proteins are present: receptor fragments, CheA, and CheW. The similarity of the array organization in membrane-bound and cytoplasmic clusters suggests a common organizational theme, in which either the membrane or the crowded environment of the cytoplasm provides necessary stability to the conserved architecture of a 12 nm hexagonal array of receptor-trimers-of-dimers.\n\nInterestingly, while transmembrane arrays remain intact upon cell lysis, presumably due to the stabilizing effect of the membrane, cytoplasmic arrays fall apart unless molecular crowding agents are added. This suggests that cellular crowding contributes to the stability of the array and may be an important factor in assembly of these, and likely other, cellular structures (Ellis, 2001; Zhou et al., 2008; Zhou, 2013). We observe the same requirement for molecular crowding (mimicking the cellular environment) in our in vitro preparation from E. coli. This supports the idea that chemoreceptor interactions can be enhanced by membrane binding (Shrout et al., 2003), but in the absence of a membrane, this can be achieved by molecular crowding and sandwiching (Fowler et al., 2010).\n\nThe hexagonal order of the R. sphaeroides and V. cholerae cytoplasmic arrays, with 12 nm center-to-center spacing, is identical to the arrangement of transmembrane chemoreceptor arrays in other bacteria (Briegel et al., 2009), as well as to arrays formed from cytoplasmic fragments of E. coli receptors. This indicates that the atypical R. sphaeroides CheA homologs (CheA3 and CheA4), despite their sequence anomalies, assemble in a similar fashion to canonical CheA proteins, including the three CheA homologs found in V. cholerae (Ulrich and Zhulin, 2010). From what is known in other organisms, R. sphaeroides CheA3 and CheA4 likely intercalate into CheA/W rings with their P5 domains (Briegel et al., 2012; Liu et al., 2012; Li et al., 2013; Natale et al., 2013). This packing would position both atypical CheA homologs in close proximity to each other, thereby facilitating phosphotransfer from the P4 domain of CheA4 to the P1 domain of CheA3.\n\nThe most striking difference between cytoplasmic chemoreceptor arrays in R. sphaeroides and V. cholerae is their curvature. In our observations, all cytoplasmic V. cholerae arrays and arrays formed in vitro from E. coli cytoplasmic receptor fragments were flat, while those of R. sphaeroides exhibited kinks and regions of high curvature, even forming full rings in some cases. This indicates that curvature may not affect performance unduly, with functioning arrays found in linear, concave, and convex conformations. However, there may be an upper limit of curvature tolerance. The discontinuities we observe in cytoplasmic arrays may result from \u2018breaking\u2019 of the CheA/W baseplate on one side under conditions of extreme curvature.\n\nIn transmembrane arrays, ligand-binding domains are located in the periplasm. In cytoplasmic arrays, we assume that these domains are located in the middle of the sandwich. This configuration is unlikely to inhibit access to signaling molecules as the receptor arrangement is much more porous than the outer membrane, which extracellular ligands need to cross in order to bind transmembrane arrays. The signaling implications of this arrangement remain unclear, but it is intriguing to think that ligand binding in the middle of the sandwich could result in CheA activation in both baseplates, facilitating amplification.\n\n## Materials and methods\n\n### Strains and growth conditions\n\nStrains used in this study are listed in Table 1. R. sphaeroides strains were cultured in succinate medium (Sistrom, 1960) supplemented with 25 \u00b5g/ml kanamycin and 30 \u00b5M IPTG (to induce expression of plasmid-borne FliA from pIND [Ind et al., 2009]) at 30\u00b0C with shaking. V. cholerae strains were cultured in LB media at 37\u00b0C with shaking. V. cholerae cells were then mixed 1:1 with another bacterial species grown in Ca-HEPES buffer (25 mM HEPES, 2 mM CaCl2 at pH 7.6) and grown for an additional 16 hr at 30\u00b0C with shaking.\n\n**Table 1.**\n Strains used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Relevant genotype</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>JPA543</td>\n      <td>WS8N TlpC-GFP</td>\n      <td>Wadhams et al., 2002</td>\n    </tr>\n    <tr>\n      <td>JPA543OE</td>\n      <td>TlpC-GFP pIND-FliA</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>JPA1558OE</td>\n      <td>TlpT-YFP pIND-FliA</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>WS8NOE</td>\n      <td>pIND-FliA</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>JPA1330OE</td>\n      <td>\u0394ppfA TlpC-GFP pIND-FliA</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MKW1383</td>\n      <td>N16961 \u0394ctxAB::kan</td>\n      <td>Matthew Waldor</td>\n    </tr>\n  </tbody>\n</table>\n\n### Light microscopy\n\nCells were immobilized on agarose pads and imaged using a Nikon Eclipse 90i microscope (Nikon Instruments Inc., Melville, NY) using a 100\u00d7 oil immersion lens and images were recorded on a Coolsnap HQ2 camera (Photometrics, Tuscon, AZ) operated using the Metamorph software (Molecular Devices, Chicago, IL).\n\n### Vitreous cryosectioning\n\nVitreous cryosections were prepared as previously described (Ladinsky et al., 2006; Ladinsky, 2010). Briefly, R. sphaeroides cells were pelleted and resuspended in \u223c100 \u03bcl of 50% dextran in SUX buffer then rapidly-frozen in a BalTec HPM-010 high-pressure freezer (Leica Microsystems, Vienna) using dome-shaped brass planchettes, then stored in liquid nitrogen. Once opened under liquid nitrogen, the sample-containing planchette was placed in a FC6/UC6 cryoultramicrotome equipped with a model M micromanipulator (Leica Microsystems). Blockfaces were trimmed with a diamond trimming knife and sections were cut with a 25\u00b0 Cryo-Platform knife (Diatome-US) at \u2212145\u00b0C. Ribbons of sections (130 nm) were transferred to carbon-coated, 200-mesh copper grids (Electron Microscopy Sciences) and stored in liquid nitrogen.\n\n### Electron cryotomography\n\n20 \u00b5l cell culture was mixed with pelleted 100 \u00b5l colloidal gold solution, BSA treated to avoid aggregation (Iancu et al., 2007). 3 \u00b5l of this cell-gold mixture was then applied to R2/2 copper Quantifoil grids (Quantifoil Micro Tools). After blotting away excess liquid using a Vitrobot (FEI), the sample was plunge-frozen in a liquid ethane-propane mixture (Iancu et al., 2007; Tivol et al., 2008). Images were collected using either an FEI G2 (FEI Company, Hillsboro, OR) 300 kV field emission gun electron microscope or an FEI TITAN Krios (FEI Company, Hillsboro, OR) 300 kV field emission gun with an image corrector for lens aberration correction. Both microscopes were equipped with Gatan image filters (Gatan, Pleasanton, CA) and K2 Summit counting electron detector cameras (Gatan, Pleasanton, CA). Data were collected using the UCSFtomo software (Zheng et al., 2007) using cumulative electron doses of \u223c160 e/A2 or less for each individual tilt-series. The images were CTF corrected, aligned, and reconstructed using weighted back projection using the IMOD software package (Kremer et al., 1996). SIRT reconstructions were calculated using TOMO3D (Agulleiro and Fernandez, 2011). Subvolume averaging and symmetrizing were done using PEET (Nicastro et al., 2006).\n\n### High-pressure freezing and freeze-substitution\n\nR. sphaeroides cells were grown at 30\u00b0C to stationary phase in SUX buffer, centrifuged and the pellets resuspended in SUX buffer +10% Ficoll (70 kD; Sigma). The cells were centrifuged gently and the supernatant was removed. Packed cells were placed in aluminum or brass planchettes (#39201, Ted Pella, Inc.) and high-pressure frozen as described above. Frozen samples in closed planchettes were transferred under liquid nitrogen to cryogenic vials (Nalge Nunc International, Rochester NY) containing 2% OsO4, 0.05% uranyl acetate in acetone. Vials were placed in an AFS freeze-substitution machine (Leica Microsystems) and processed at \u221290\u00b0C for 72 hr, warmed over 10 hr to \u221220\u00b0C and further processed at that temperature for 24 hr. The samples were brought to room temperature, rinsed four times with acetone, removed from the planchettes and infiltrated with Epon-Araldite epoxy resin (Electron Microscopy Sciences, Hatfield PA). Samples were placed in embedding molds and polymerized at 60\u00b0C for 24 hr.\n\n### Electron tomography of plastic-embedded cells\n\nEmbedded pellets of R. sphaeroides cells were serially sectioned with an EM-UC6 ultramicrotome (Leica Microsystems) using a diamond knife (Diatome-US, Hatfield PA). Thick (350 nm) sections were placed on Formvar-coated, copper-rhodium 1-mm slot grids (Electron Microscopy Sciences) and stained with 3% aqueous uranyl acetate and lead citrate. Colloidal gold particles (10 nm) were placed on both surfaces of the grid to serve as fiducial markers for image alignment. Grids were placed in a model 2040 dual-axis tomography holder (Fischione Instruments, Export PA) and imaged with a Tecnai TF30ST-FEG transmission electron microscope (FEI) at 300 keV. Dual-axis tilt-series were acquired automatically using the SerialEM software package (Mastronarde, 2005). Samples were tilted \u00b1 60\u00b0 and imaged at 1\u00b0 intervals about orthogonal axes. Images were recorded digitally with an UltraScan 994 1000XP camera (Gatan, Inc. Pleasanton CA). Tomographic data was subsequently processed, analyzed, and modeled using the IMOD software package (Kremer et al., 1996).\n\n### Immunoelectron microscopy\n\nR. sphaeroides cells were cultured to stationary phase as described above. TlpC-GFP signal was verified by fluorescence microscopy. The cells were pelleted, the supernatant was removed and the pellet was resuspended in 10% paraformaldehyde, 5% sucrose in SUX buffer. The cells were pelleted again and the supernatant was replaced with fresh fixative without disturbing the pellet. The cells were fixed overnight at 4\u00b0C. The samples were brought to room temperature, the fixative was removed and the pellets were infiltrated into 2.1M sucrose in PBS over the course of 1 day, with the sucrose solution changed at 1-hr intervals. The pellets were transferred to aluminum sectioning stubs and rapidly frozen in liquid nitrogen.\n\nSemi-thin (90 nm) cryosections were cut at \u2212110\u00b0C with a FC6/UC6 cryoultramicrotome (Leica Microsystems) using a Cryo-Immuno diamond knife (Diatome-US). Cryosections were picked up in a drop of 2.3M sucrose in PBS and transferred to Formvar-coated, carbon-coated, glow-discharged 100-mesh copper-rhodium grids. Sections were incubated for 30\u2019 with 10% calf serum in PBS to block nonspecific antibody binding sites, then labeled with a monoclonal antibody against GFP (Rockland Immunochemicals, Inc. Gilbertsville PA) diluted in 5% calf serum in PBS, followed by a colloidal gold (15 nm) conjugated anti-mouse secondary antibody (BBI International, Grand Forks ND). After labeling, the sections were negatively stained with 1% uranyl acetate and stabilized with 1% methylcellulose. Immunolabeled sections were imaged with a Tecnai T12 electron microscope at 120 keV. Tomographic tilt-series were acquired and analyzed as described above.\n\n### R. sphaeroides cell lysis\n\nMid-log phase cells of strain JPA1558 were collected by centrifugation and resuspended in crowding buffer (20% sucrose, 7% PEG-8000, 4% trehalose, 25 mM Tris\u2013HCl, pH 7.0) with 2 mg/ml lysozyme, then incubated for 15 min at room temperature. Following addition of 2 mM MgCl2, 250 \u00b5M CaCl2, and 1 mg/ml DNase I, cells were incubated for 30 min at 37\u00b0C, collected by centrifugation and resuspended in crowding buffer for imaging. Identical results were obtained with a different crowding agent, replacing the PEG-8000 and trehalose with 10% PVP and treating the cells as before.\n\n### Correlative cryo-FLM/ECT\n\nCells of strain JPA1558 were lysed as described above and plunge-frozen on copper EM finder grids (Quantifoil Micro Tools), loaded into a cryo-FLM stage (FEI company) and imaged on a Nikon 90Ti inverted microscope (Nikon Instruments Inc., Melville, NY) using a 60x ELWD air objective lens and a Neo 5.5 sCMOS camera (Andor Technology, South Windsor, USA) using the NIS Elements software (Nikon Instruments Inc., Melville, NY). The grid was then transferred to the cryo-EM and tilt series were recorded from the same cells imaged by FLM previously. The grid was kept below \u2212150\u00b0C at all times during the imaging process.\n\n### Purification and assembly of E. coli chemotaxis components\n\nCytoplasmic fragments of the Tar receptor (CF4Q), CheW, CheA, and CheY were expressed and purified as previously described (Fowler et al., 2010). The Tar fragments contained methylation-mimicking glutamine residues at the four major sites of receptor methylation. Protein purity was assessed with SDS-PAGE analysis, and protein concentrations were determined using a BCA assay (Thermo Fisher Scientific). PEG 8000 (Fluka) and D-(+)-trehalose (Sigma\u2013Aldrich) were prepared as 40% (wt/vol) stock solutions in deionized water and passed through a 0.22-\u03bcm syringe filter prior to use. A modified kinase buffer (50 mM potassium phosphate, 50 mM KCl, 5 mM MgCl2, pH 7.5) was used for sample preparation.\n\nFormation and characterization of kinase-active ternary complexes followed published methods (Fowler et al., 2010; Mudiyanselage et al., 2013), further specified as follows. PEG-mediated CF4Q complexes were prepared by incubating 50 \u03bcM CF4Q, 20 \u03bcM CheW, and 12 \u03bcM CheA with final concentrations of 7.5% wt/vol PEG 8000 and 4% wt/vol trehalose. CF4Q was added last to minimize CF-promoted aggregation (Montefusco et al., 2007) and samples were incubated overnight at 25\u00b0C in a circulating water bath and subjected to an enzyme-coupled assay and gel-based cosedimentation assay to check for phosphorylation activity and ternary complex formation. Kinase activity of PEG-mediated CF4Q complexes was similar to that observed for complexes assembled via binding to vesicles.\n",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "eee29ada-291b-4d10-8023-aec8ea92f27d",
+      "submission_id": "66444086-ef1b-4941-9027-743a57c9e760",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jodi Nunnari, University of California, Davis , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02151.012](https://doi.org/10.7554/eLife.02151.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cStructure of bacterial cytoplasmic chemoreceptor arrays and implications for chemotactic signaling\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has summarized the critical concerns that will need to be addressed in a revised manuscript.\n\nThe consensus is that the structural analysis of bacterial chemoreceptor arrays in the manuscript represents a significant advance in understanding bacterial chemosensing and chemotaxis mechanism. However, the main conclusions of the manuscript would be significantly strengthened by experiments directed at imaging native R. sphaeroides arrays and/or confirming the identity of the cholera structures by immuno-EM. The reviewers have also requested that you revise the text of your manuscript to include previous electron cryo-tomography work on bacterial chemotaxis receptor arrays with associated citations. In addition, there are several excellent suggestions made by Reviewer 3 for organizational and text revisions that would improve the clarity of the manuscript.\n\nReviewer #2:\n\nThis is a well conceived and written study that represents a fundamental new contribution to the field of bacterial chemosensing and chemotaxis. The ECT structural characterization of cytoplasmic chemotaxis arrays is novel and highly significant. Certainly the work is worthy of publication in a top journal.\n\nThis reviewer can see only two significant issues worth considering:\n\n1) The MS suggests that the planar organization of polar and cytoplasmic complexes is dominated by the CheA/W base plate. However, the fact that naked receptors form hexagonal arrays (zippers) suggests that the receptors have an intrinsic propensity to form hexagonal arrays, perhaps by providing hydrophobic binding sites arranged on the outside of the trimer with the proper symmetry for hexagonal assemblies. It is likely an oversimplification to say that the array organization is provided primarily by the base plate \u2013 the structure of the receptor trimer of dimers is essential too.\n\n2) If possible, it would be nice to include images of native R. sphaeroides arrays, in order to confirm the hypothesis that the observed curvature of the GFP-fusion arrays is due to the non-native GFP component. Perhaps these native arrays could be visualized by FLM/ECT in the lysed cell system using a non-hydrolyzable, fluorescent ATP derivative or an anti-Che antibody. However, this could be beyond the scope of the current MS.\n\nReviewer #3:\n\n1) The authors describe the architecture of cytosolic chemoreceptors in R. sphaeroides, and also present some structural data from the cytosolic chemoreceptor of V. cholera in vivo and purified E. coli Tar chemoreceptors lacking transmembrane regions. Interestingly, the authors show that these structures, previously demonstrated to localize to discrete foci in cells, all share a common back-to-back architecture of hexagonally packed arrays. They propose that the (periplasmic, in membrane-bound arrays) ligand binding domains are thus minimally exposed to the cytosol. Through the finding that soluble domains of E. coli receptors form a similar structure, the authors argue that it may represent a default, low-energy configuration of chemoreceptor arrays rather than a specific evolutionary adaptation. However, the biological significance of this architecture is not discussed. Moreover, the interesting finding that the R. sphaeroides structure is curved is clouded by the lack of data from wild-type cells \u2013 the authors acknowledge this curvature may be due to the fluorescent proteins fusions.\n\n2) The initial description of receptor topology is somewhat confusing. Would a diagram be helpful? Some detailed information about the domains may not be necessary.\n\n3) What new information does Figure 2 add? It is helpful to have an orthogonal technique, but perhaps this could be combined with Figure 1.\n\n4) The claim is made, based on Figure 2, that the receptors are localized to the 1/4 and 3/4 positions. This should be backed up by quantification, and the mentioned similarity to light microscopy appropriately cited.\n\n5) One novel aspect of the R. sphaeroides chemoreceptor arrays is that they appear to be curved (though, as already mentioned, the exact nature of this curvature was not clear to me until later in the manuscript). The authors mention that the observed curvature may be due to the fluorescent protein tag. Imaging WT cells would obviously resolve this issue and would strengthen the manuscript considerably. While data they present from other species suggests that the formation of arrays can occur without a FP tag, the possibility that array formation is mediated by this tag remains.\n\n6) What is the biological significance of arrays in general, and the cytoplasmic ones in particular? While large portions are devoted to structural details, the functional significance of these details is lacking.\n",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9b5cc68f-632c-4a4b-a81e-2e7c64f80ce8",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C1",
+      "claim": "Most motile bacteria sense and respond to their environment through a transmembrane chemoreceptor array.",
+      "claim_type": "EXPLICIT",
+      "source": "Most motile bacteria sense and respond to their environment through a transmembrane chemoreceptor array whose structure and function have been well-studied, but many species also contain an additional cluster of chemoreceptors in their cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about bacterial chemotaxis systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "81b013fa-94e4-4d6b-b246-8a8c92d23c38",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C2",
+      "claim": "Many bacterial species contain an additional cluster of chemoreceptors in their cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Most motile bacteria sense and respond to their environment through a transmembrane chemoreceptor array whose structure and function have been well-studied, but many species also contain an additional cluster of chemoreceptors in their cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "50cc2d76-e5d5-48d1-b97e-774969a06508",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C3",
+      "claim": "The cytoplasmic cluster is essential for normal chemotaxis in some organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the cytoplasmic cluster is essential for normal chemotaxis in some organisms, its structure and function remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "f0dbf757-80fb-4f7f-9d76-9009ca82e1a4",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C4",
+      "claim": "Cytoplasmic chemoreceptor clusters in Rhodobacter sphaeroides contain trimers-of-receptor-dimers organized in 12-nm hexagonal arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that just like transmembrane arrays, cytoplasmic clusters contain trimers-of-receptor-dimers organized in 12-nm hexagonal arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on electron cryotomography data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "6b6a0050-bc7a-4ad6-8217-dce902c70011",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C5",
+      "claim": "Cytoplasmic chemoreceptor clusters in Vibrio cholerae contain trimers-of-receptor-dimers organized in 12-nm hexagonal arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that just like transmembrane arrays, cytoplasmic clusters contain trimers-of-receptor-dimers organized in 12-nm hexagonal arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on electron cryotomography data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a4ec9713-cfeb-4b14-86cf-ef30a68c75e7",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C6",
+      "claim": "Cytoplasmic clusters comprise two CheA/CheW baseplates sandwiching two opposed receptor arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to transmembrane arrays, however, cytoplasmic clusters comprise two CheA/CheW baseplates sandwiching two opposed receptor arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on electron cryotomography data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "3a2395ea-2de9-49a1-8cfc-782c704264e3",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C7",
+      "claim": "Cytoplasmic fragments of normally transmembrane E. coli chemoreceptors form sandwiched structures in the presence of molecular crowding agents.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that cytoplasmic fragments of normally transmembrane E. coli chemoreceptors form similar sandwiched structures in the presence of molecular crowding agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "83c97b54-e1b2-4f47-8805-79fdddf2eddd",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C8",
+      "claim": "The 12-nm hexagonal architecture is fundamentally important for chemoreceptor arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that the 12-nm hexagonal architecture is fundamentally important and that sandwiching and crowding can replace the stabilizing effect of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a983c7f1-9ad1-4029-a6fe-d01baa26c9fc",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C9",
+      "claim": "Sandwiching and crowding can replace the stabilizing effect of the membrane for chemoreceptor arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that the 12-nm hexagonal architecture is fundamentally important and that sandwiching and crowding can replace the stabilizing effect of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "64527dc9-d638-4dae-81f4-0b0db010ca66",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C10",
+      "claim": "Ligands bind to the periplasmic domains of methyl-accepting chemotaxis proteins (MCPs).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, ligands bind to the periplasmic domains of the methyl-accepting chemotaxis proteins (MCPs), either directly (Milburn et al., 1991; Englert et al., 2010) or via periplasmic binding proteins (Tam and Saier, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "c62ce1a0-d7ef-42ab-9f2a-8d1f6bf6b721",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C11",
+      "claim": "Ligand binding to MCPs results in conformational changes that traverse the length of the MCP.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in conformational changes that traverse the length of the MCP, through one or more HAMP (histidine kinases, adenyl cyclases, MCPs, and some phosphatases) domains and the cytoplasmic coiled-coil signaling domain to either activate or inactivate a histidine kinase, CheA, bound at the distal tip (Wadhams and Armitage, 2004; Kentner and Sourjik, 2006; Hazelbauer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "aca50afa-d422-48b8-854d-a981c2363271",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C12",
+      "claim": "In E. coli, system components of the chemotactic system are located in a single operon.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial chemotactic system is best understood in Escherichia coli, where system components are located in a single operon (Silverman and Simon, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "ed7c0e14-98dc-4f44-874c-3f7115172c53",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C13",
+      "claim": "CheA is a 5-domain (P1-P5) protein that functions as a homodimer in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, CheA is a 5-domain (P1-P5) protein that functions as a homodimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about E. coli CheA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "93755b1f-109b-4b03-842c-1c4c8a6de589",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C14",
+      "claim": "When activated by the MCP in unfavorable environments, CheA undergoes autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "When activated by the MCP in unfavorable environments, CheA undergoes autophosphorylation and then transfers the phosphoryl group to one of two response regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CheA function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "7b15be2e-d16a-4b87-82ae-1ce4a51b3078",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C15",
+      "claim": "CheY binds the flagellar motor when phosphorylated, switching the motor's direction from clockwise to counter-clockwise.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these, CheY, binds the flagellar motor when phosphorylated, switching the motor's direction from clockwise to counter-clockwise and thus increasing the frequency of tumbling to find a more favorable direction (Turner et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "6b0a36d9-4fd4-4bdd-8b39-9a8e954ccfb6",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C16",
+      "claim": "CheB is a methylesterase whose activity is stimulated by phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The other response regulator, CheB, is a methylesterase whose activity is stimulated by phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CheB function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "9c613b58-e410-4412-8428-08eb1279d11d",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C17",
+      "claim": "CheB activity is opposed by the constitutively active methyltransferase CheR.",
+      "claim_type": "EXPLICIT",
+      "source": "Its activity is opposed by the constitutively active methyltransferase CheR and the balance of these two activities determines the methylation state of specific glutamate residues in the MCPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the CheB/CheR system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "09824c30-abf8-4229-8c57-45ccbcb09904",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C18",
+      "claim": "The balance of CheB and CheR activities determines the methylation state of specific glutamate residues in the MCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Its activity is opposed by the constitutively active methyltransferase CheR and the balance of these two activities determines the methylation state of specific glutamate residues in the MCPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the CheB/CheR system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a9ede575-0fc6-487a-9a67-d66e0e1260b0",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C19",
+      "claim": "Methylations confer adaptation on the chemotaxis system, modulating its response based on recent environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These methylations confer adaptation on the system, modulating its response based on recent environmental conditions (Kleene et al., 1979; Toews et al., 1979; Lupas and Stock, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "b71e3f47-b44f-47bb-a60c-33cb4941f10a",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C20",
+      "claim": "In E. coli, MCPs associate into trimers of dimers that span the inner membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, MCPs associate into trimers of dimers that span the inner membrane (Kim et al., 1999; Studdert and Parkinson, 2004) and complex with CheA and the coupling protein CheW (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "66f9c677-6a8b-4ce0-8dac-b2458389e4b5",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C21",
+      "claim": "MCPs complex with CheA and the coupling protein CheW in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, MCPs associate into trimers of dimers that span the inner membrane (Kim et al., 1999; Studdert and Parkinson, 2004) and complex with CheA and the coupling protein CheW (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "60ea89c9-7f16-4739-a689-496ac6079727",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C22",
+      "claim": "Hexagonally packed trimers-of-receptor-dimers surround a ring of alternating CheA P5 domains and CheW in transmembrane arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in hexagonally packed trimers-of-receptor-dimers surrounding a ring of alternating CheA P5 domains and CheW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about transmembrane array structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "055558ca-fc82-47f1-b9fb-d8e7b4e1ffbf",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C23",
+      "claim": "Neighboring rings in transmembrane arrays are linked together by CheA P3 dimerization domains to form extended hexagonal lattices.",
+      "claim_type": "EXPLICIT",
+      "source": "Neighboring rings are linked together by CheA P3 dimerization domains to form extended hexagonal lattices \u2013 the so-called transmembrane chemoreceptor arrays (Briegel et al., 2012; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "cebf9b4c-9ee1-49bd-905b-731ee4ed9e96",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C24",
+      "claim": "The architecture of membrane-bound chemoreceptor arrays is universal among bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of these membrane-bound chemoreceptor arrays is not specific to E. coli, indeed it is universal among bacteria (Briegel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "85bc8992-e80f-4ae9-93b8-ba0249b3bf48",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C25",
+      "claim": "The architecture of chemoreceptor arrays is likely key to the high sensitivity, wide dynamic range, cooperativity, and feedback control of the chemotaxis system.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of these arrays is likely key to the high sensitivity, wide dynamic range, cooperativity, and feedback control of this system (Duke and Bray, 1999; Li and Weis, 2000; Gestwicki and Kiessling, 2002; Sourjik and Berg, 2002, 2004; Li and Hazelbauer, 2005; Endres and Wingreen, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "08b6ae85-7680-44b5-bd58-476ce0e042c1",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C26",
+      "claim": "Many bacteria contain additional chemotaxis operons beyond the single operon exemplified by E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the single chemosensory operon encoding components of the transmembrane array, exemplified by E. coli, many bacteria contain additional chemotaxis operons, whose products are less well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "43347361-aaec-4f9d-87cf-fee474cf8d52",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C27",
+      "claim": "Rhodobacter sphaeroides has three chemotaxis operons.",
+      "claim_type": "EXPLICIT",
+      "source": "The best-studied case is Rhodobacter sphaeroides, in which there are three operons, two of which are essential for normal chemotaxis in laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about R. sphaeroides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "de5884c9-6ea8-4d22-971e-18f79afbe36e",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C28",
+      "claim": "Two of the three chemotaxis operons in R. sphaeroides are essential for normal chemotaxis in laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The best-studied case is Rhodobacter sphaeroides, in which there are three operons, two of which are essential for normal chemotaxis in laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about R. sphaeroides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "bbb92c23-c979-48af-ad25-ba46bf4fda9c",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C29",
+      "claim": "CheOp2 in R. sphaeroides encodes components of the chemotaxis array associated with the transmembrane MCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these operons, CheOp2, encodes components of the chemotaxis array associated with the transmembrane MCPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about R. sphaeroides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a87ad52e-db56-4151-99ec-b2eb33ef507b",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C30",
+      "claim": "CheOp3 in R. sphaeroides encodes components of a cytoplasmic chemotaxis cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The other, CheOp3, encodes components of a cytoplasmic chemotaxis cluster including CheB, CheR, CheY, CheW, two atypical CheA proteins (CheA3 and CheA4) (Porter et al., 2008), and a soluble chemoreceptor, TlpT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about R. sphaeroides, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "cfad0f71-0a73-4dfa-89d7-57edf3b1d1f8",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C31",
+      "claim": "CheA3 in R. sphaeroides contains only the P1 and P5 domains separated by a 794 amino acid sequence of unknown structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the CheA proteins in the cluster lacks canonical domains compared to E. coli CheA: CheA3 contains only the P1 and P5 domains separated by a 794 amino acid sequence of unknown structure, whereas CheA4 lacks the P1 and P2 domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about R. sphaeroides CheA3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "d80c9a0c-00aa-4aab-804b-7c63936e6a0b",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C32",
+      "claim": "CheA4 in R. sphaeroides lacks the P1 and P2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the CheA proteins in the cluster lacks canonical domains compared to E. coli CheA: CheA3 contains only the P1 and P5 domains separated by a 794 amino acid sequence of unknown structure, whereas CheA4 lacks the P1 and P2 domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about R. sphaeroides CheA4.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "f8187a1a-9660-4ddb-b9d6-01130f63bfec",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C33",
+      "claim": "CheA4 can transfer phosphoryl groups to P1 of CheA3 in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "CheA4 can transfer phosphoryl groups to P1 of CheA3 (Porter et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "d2f79b3a-6c1b-47e3-be4b-4bf4267be638",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C34",
+      "claim": "Both CheA3 and CheA4 are required for chemotaxis in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CheA3 and CheA4 are required for chemotaxis (Wadhams et al., 2003; Porter et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "1ebffccb-74bf-4b6d-b66d-a2ad8489c70a",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C35",
+      "claim": "TlpC is an MCP homolog lacking any transmembrane domain in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "A second MCP homolog lacking any transmembrane domain, TlpC, is encoded in CheOp2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about R. sphaeroides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "25faa1f2-388d-4e18-82e9-6f1d5a20f424",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C36",
+      "claim": "Fluorescent fusions of both TlpT and TlpC localize to a single cytoplasmic focus at mid-cell in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent fusions of both TlpT and TlpC localize to a single cytoplasmic focus at mid-cell, which divides and is segregated during cell division (Wadhams et al., 2002, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "99a93da0-0e4f-4901-9650-03469e816ce0",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C37",
+      "claim": "CheA3, CheA4, CheW4, and CheR localize to the cytoplasmic cluster in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "CheA3 and CheA4, along with CheW4 and a CheR, also localize to this cytoplasmic cluster (Wadhams et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "ab82ffa3-1da1-49b2-b86a-58f8570cc70d",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C38",
+      "claim": "CheW4 and TlpT are required to form the cytoplasmic cluster in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "CheW4 and TlpT are required to form the cluster, and the positioning of the cluster depends on the ParA homolog PpfA, which is encoded next to TlpT in CheOp3 (Thompson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "b4b3c5e1-d442-4b81-8dbc-a541c1991149",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C39",
+      "claim": "The positioning of the cytoplasmic cluster in R. sphaeroides depends on the ParA homolog PpfA.",
+      "claim_type": "EXPLICIT",
+      "source": "CheW4 and TlpT are required to form the cluster, and the positioning of the cluster depends on the ParA homolog PpfA, which is encoded next to TlpT in CheOp3 (Thompson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "df78a661-f846-46d0-a268-c6f9c119fa8c",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C40",
+      "claim": "PpfA is a chromosome-associated ParA-like ATPase in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "PpfA is a chromosome-associated ParA-like ATPase and controls the localization and segregation of the cytoplasmic cluster through an interaction with the N-terminus of TlpT, which is thought to stimulate the ATPase activity of PpfA in a ParB-like manner (Roberts et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "16216310-301b-4d1f-9e5c-d79f9e7c29b6",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C41",
+      "claim": "PpfA controls the localization and segregation of the cytoplasmic cluster through an interaction with the N-terminus of TlpT in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "PpfA is a chromosome-associated ParA-like ATPase and controls the localization and segregation of the cytoplasmic cluster through an interaction with the N-terminus of TlpT, which is thought to stimulate the ATPase activity of PpfA in a ParB-like manner (Roberts et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "24d9f429-072b-470b-abf4-c68224226a14",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C42",
+      "claim": "TlpT is thought to stimulate the ATPase activity of PpfA in a ParB-like manner in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "PpfA is a chromosome-associated ParA-like ATPase and controls the localization and segregation of the cytoplasmic cluster through an interaction with the N-terminus of TlpT, which is thought to stimulate the ATPase activity of PpfA in a ParB-like manner (Roberts et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research and described as a hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "12b076f2-dad7-4ca7-bc04-e43b580b6f66",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C43",
+      "claim": "Sequence analysis of TlpT suggests that the 567 amino acid protein forms a classical MCP coiled-coil structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence analysis of TlpT suggests that the 567 amino acid protein forms a classical MCP coiled-coil structure (Alexander and Zhulin, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "338a9f87-fbcc-491c-b7bd-61a5d9b8a13d",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C44",
+      "claim": "TlpC lacks significant homology to the canonical MCP structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The 580 amino acid TlpC lacks significant homology to the canonical MCP structure and lacks a recognizable HAMP domain or methylation region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TlpC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "6c3636cc-1a71-438b-bf92-534c76354544",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C45",
+      "claim": "TlpC lacks a recognizable HAMP domain or methylation region.",
+      "claim_type": "EXPLICIT",
+      "source": "The 580 amino acid TlpC lacks significant homology to the canonical MCP structure and lacks a recognizable HAMP domain or methylation region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TlpC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a9ab1e51-6e58-48df-b8d7-f27d30c1fb2f",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C46",
+      "claim": "Cytoplasmic chemoreceptors are not unique to R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic chemoreceptors are not unique to R. sphaeroides. The genomes of many bacterial species encode MCP homologs lacking transmembrane domains (Ulrich and Zhulin, 2010; Wuichet and Zhulin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "6bd2a99a-8c7a-4e96-97de-040f605e400d",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C47",
+      "claim": "The genomes of many bacterial species encode MCP homologs lacking transmembrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic chemoreceptors are not unique to R. sphaeroides. The genomes of many bacterial species encode MCP homologs lacking transmembrane domains (Ulrich and Zhulin, 2010; Wuichet and Zhulin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "68754548-24f2-4108-910e-86d6927005a0",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C48",
+      "claim": "It has been speculated that cytoplasmic MCPs in R. sphaeroides modulate chemotactic response based on the current metabolic state of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of R. sphaeroides, it has been speculated that cytoplasmic MCPs modulate chemotactic response based on the current metabolic state of the cell (Armitage and Schmitt, 1997; Porter et al., 2008), while the inputs of cytoplasmic receptors in other organisms such as Vibrio cholerae are less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as speculation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "4a62f999-988d-4853-ab1d-081103805aab",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C49",
+      "claim": "The membrane is thought to be important for proper assembly and function of E. coli transmembrane arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of E. coli transmembrane arrays, the membrane is thought to be important for proper assembly and function (Miller and Falke, 2004; Draheim et al., 2006; Amin and Hazelbauer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "28a2ab50-c71f-4f1f-b0b1-964526382920",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C50",
+      "claim": "R. sphaeroides cells overexpressing cytoplasmic chemoreceptor array components exhibit large, curved structures.",
+      "claim_type": "EXPLICIT",
+      "source": "R. sphaeroides cells overexpressing cytoplasmic chemoreceptor array components exhibit large, curved structures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported as a section heading and supported by imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "f567a918-0656-4210-9221-3204c96ea871",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C51",
+      "claim": "The size and cytoplasmic density of R. sphaeroides limits the achievable resolution in tomograms of intact cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, we found that the size and cytoplasmic density of this species limits the achievable resolution in tomograms of intact cells, and we could not resolve the cytoplasmic clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "9a7e2804-2a8f-4032-ae46-74cccdc8a6f3",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C52",
+      "claim": "Tomographic reconstructions of cryosections of R. sphaeroides cells revealed curved, double-layered structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Tomographic reconstructions of cryosections of R. sphaeroides cells (containing the chemotaxis protein TlpC tagged with GFP to aid in future identification) revealed curved, double-layered structures that might correspond to cytoplasmic clusters (Figure 2A,B), but they were small and difficult to differentiate from the complex environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "83c12c7b-1514-43a4-9ebc-1a179e436c1a",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C53",
+      "claim": "The strain overexpressing cytoplasmic chemotaxis components exhibited chemotaxis in swim plate assays.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain exhibited chemotaxis in swim plate assays, indicating that the limited overexpression did not significantly impair chemotactic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a77e9ad8-9bd5-4ef5-be07-d9535134bc01",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C54",
+      "claim": "Limited overexpression of cytoplasmic chemotaxis components did not significantly impair chemotactic function in R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain exhibited chemotaxis in swim plate assays, indicating that the limited overexpression did not significantly impair chemotactic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the swim plate assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "d70a6ce2-d4a6-4b5a-bc53-c42526417b3e",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C55",
+      "claim": "Short R. sphaeroides cells contained single fluorescent foci and long cells two foci by fluorescence light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "By fluorescence light microscopy (FLM), short cells contained single fluorescent foci and long cells two foci, as expected (Wadhams et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work, consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "4672cc56-25e9-4d79-8f00-bdebfb3e2c3d",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C56",
+      "claim": "In tomograms of cryosections of cells overexpressing cytoplasmic chemotaxis components, structures appeared in cross-section as a curved, double-layered sandwich approximately 27 nm wide.",
+      "claim_type": "EXPLICIT",
+      "source": "In tomograms of cryosections of these cells, we observed similar structures to those seen in WT cells but with greater length, appearing in cross-section as a curved, double-layered sandwich approximately 27 nm wide (measured from density peak-to-peak; Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "c3396a8b-a110-4463-b300-9993ccc6e366",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C57",
+      "claim": "In tomograms of high-pressure frozen, freeze-substituted R. sphaeroides cells, extended, double-layered structures were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In tomograms of high-pressure frozen, freeze-substituted cells, we again observed extended, double-layered structures (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "d627308a-5003-4863-8af9-0de5fbb75693",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C58",
+      "claim": "Cross-sections through the structures in freeze-substituted cells revealed two curved layers with perpendicular striations connecting them.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-sections through the structures revealed two curved layers with perpendicular striations connecting them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "ab5b48fe-37e8-4fa0-841b-94f644085667",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C59",
+      "claim": "The positions of the structures in R. sphaeroides cells were consistent with FLM observations.",
+      "claim_type": "EXPLICIT",
+      "source": "The positions of the structures in the cells were consistent with FLM observations (Thompson et al., 2006), strengthening our confidence in the identification of the cytoplasmic array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work, consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "fa133f6d-6656-4eb8-a2bb-34c89569e388",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C60",
+      "claim": "Multiple clusters were occasionally seen at cytoplasmic array positions in cells overexpressing these proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We did occasionally see multiple clusters at these positions, consistent with fluorescence results in cells overexpressing these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "395f0bcf-e8e7-48d6-b0a9-b6ec08ad4ec2",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C61",
+      "claim": "Gold labeling was consistently observed on the curved structures in immunogold labeling experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We consistently observed gold labeling of the curved structures described above, and tomography of the volume beneath the label confirmed the structural details seen in cryosections (n = 17 cells, example shown in Figure 4), indicating that these structures are indeed cytoplasmic chemoreceptor arrays.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "7e06368d-f817-4982-bdf3-c8bdd025d9eb",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C62",
+      "claim": "Tomography of the volume beneath the immunogold label confirmed the structural details seen in cryosections.",
+      "claim_type": "EXPLICIT",
+      "source": "We consistently observed gold labeling of the curved structures described above, and tomography of the volume beneath the label confirmed the structural details seen in cryosections (n = 17 cells, example shown in Figure 4), indicating that these structures are indeed cytoplasmic chemoreceptor arrays.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "11dab006-0044-41d4-a99d-8adba05c82f7",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C63",
+      "claim": "The immunogold-labeled structures are cytoplasmic chemoreceptor arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "We consistently observed gold labeling of the curved structures described above, and tomography of the volume beneath the label confirmed the structural details seen in cryosections (n = 17 cells, example shown in Figure 4), indicating that these structures are indeed cytoplasmic chemoreceptor arrays.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the immunogold labeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "51c78b84-5aff-46e8-8f23-8920fac3a920",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C64",
+      "claim": "Transmembrane receptors remain well-organized following cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike transmembrane receptors that remain well-organized following cell lysis (Briegel et al., 2009, 2012, 2013), fluorescent foci were not observed after lysis, indicating disruption of the cytoplasmic receptor cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "73784814-2fba-4c74-87ec-92f4e19b2611",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C65",
+      "claim": "Fluorescent foci were not observed after lysis of R. sphaeroides cells, indicating disruption of the cytoplasmic receptor cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike transmembrane receptors that remain well-organized following cell lysis (Briegel et al., 2009, 2012, 2013), fluorescent foci were not observed after lysis, indicating disruption of the cytoplasmic receptor cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "5302e76e-a552-48bc-aa6d-7cbf820e1ff3",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C66",
+      "claim": "The density of the cytoplasm might play an important role in stabilizing cytoplasmic clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that in the absence of membrane, the density of the cytoplasm might play an important role in stabilizing cytoplasmic clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "7e8ef2c9-4937-4ad7-ad3c-5ec7d02a48cd",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C67",
+      "claim": "Molecular crowding agents preserve TlpT-YFP signals by FLM after lysis of R. sphaeroides cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore added molecular crowding agents, either polyethylene glycol (PEG-8000) or polyvinylpirrolidone (PVP), to the lysis protocol and used this approach to image an R. sphaeroides strain overexpressing the cytoplasmic chemoreceptor TlpT fused to YFP. We observed preservation of TlpT-YFP signals by FLM after lysis (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "00388b96-91b4-429c-bd56-b1857c2dcd04",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C68",
+      "claim": "The fluorescence signal from TlpT-YFP corresponded to the cytoplasmic chemoreceptor array structure identified by ECT.",
+      "claim_type": "EXPLICIT",
+      "source": "We then froze lysed cells on an EM grid and localized a single TlpT-YFP signal by cryo-FLM, then imaged the indicated location at high resolution by ECT. We observed that the fluorescence signal corresponded to the structure previously identified (Figure 5D\u2013F), further verifying that these are indeed cytoplasmic chemoreceptor arrays containing TlpT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "4f1bd3be-8512-4dbb-8dbb-e4272305e9ac",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C69",
+      "claim": "The arrangement and packing of the receptors was identical in both cytoplasmic and transmembrane receptor clusters in R. sphaeroides: a hexagonal lattice with center-to-center spacing of 12 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the arrangement and packing of the receptors was identical in both cases: a hexagonal lattice with center-to-center spacing of 12 nm when viewed from above (Figure 5G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 5G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "f90f0cb3-ca0d-4fe0-b2ed-b3fdcc799636",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C70",
+      "claim": "In the transmembrane array, the receptor lattice is associated with a single baseplate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transmembrane array, this receptor lattice is associated with a single baseplate, whereas in the cytoplasmic array, there are two, one on either side, approximately 30 nm apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "67c0c95a-bd2a-458c-a326-b2ba93d7cc2a",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C71",
+      "claim": "In the cytoplasmic array, there are two baseplates, one on either side, approximately 30 nm apart.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transmembrane array, this receptor lattice is associated with a single baseplate, whereas in the cytoplasmic array, there are two, one on either side, approximately 30 nm apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "9226c922-a2c8-47b5-83f4-4108db067c21",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C72",
+      "claim": "V. cholerae is predicted to contain cytoplasmic chemoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain higher resolution information from intact cells, we turned to V. cholerae, which is also predicted to contain cytoplasmic chemoreceptors and flattens significantly during freezing for cryo-EM, yielding a thinner sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about V. cholerae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "40cea95f-dfdd-49af-83fe-ea391ac8895c",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C73",
+      "claim": "V. cholerae flattens significantly during freezing for cryo-EM, yielding a thinner sample.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain higher resolution information from intact cells, we turned to V. cholerae, which is also predicted to contain cytoplasmic chemoreceptors and flattens significantly during freezing for cryo-EM, yielding a thinner sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about V. cholerae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "e7eead62-5703-4a2c-ae5b-c5de36045e69",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C74",
+      "claim": "By ECT of whole V. cholerae cells, cytoplasmic chemoreceptor clusters with the same architecture as those in R. sphaeroides were observed, though lacking curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "By ECT of whole V. cholerae cells, we observed cytoplasmic chemoreceptor clusters with the same architecture as those in R. sphaeroides, though lacking curvature (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "53de2a7c-b4e8-4bc8-a306-02572dc92405",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C75",
+      "claim": "V. cholerae cytoplasmic arrays consist of two hexagonal arrays of trimers-of-receptor-dimers sandwiched between two baseplates, 35 nm apart.",
+      "claim_type": "EXPLICIT",
+      "source": "The improved resolution in the thinner cells allowed us to clearly distinguish two hexagonal arrays of trimers-of-receptor-dimers sandwiched between two baseplates, 35 nm apart (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "5aaff07c-ab10-4251-b801-f45852dd31ca",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C76",
+      "claim": "The kinase-binding regions of the receptors in V. cholerae cytoplasmic arrays were highly ordered, with decreasing order toward the center.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase-binding regions of the receptors were highly ordered, with decreasing order toward the center, as previously observed for transmembrane chemoreceptor arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a4fd86c9-5bae-40a3-a445-13cfa33c5c07",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C77",
+      "claim": "Decreasing order toward the center of chemoreceptor arrays was previously observed for transmembrane chemoreceptor arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase-binding regions of the receptors were highly ordered, with decreasing order toward the center, as previously observed for transmembrane chemoreceptor arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from previous observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "b2fb3640-7cd3-4fe5-bcc2-d537aeebada8",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C78",
+      "claim": "A striking similarity was observed between the cytoplasmic arrays in R. sphaeroides and V. cholerae and an in vitro chemoreceptor preparation from E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a striking similarity between the cytoplasmic arrays in R. sphaeroides and V. cholerae and an in vitro chemoreceptor preparation from E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "c4d95798-2c00-4c76-85ee-7270c294d64b",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C79",
+      "claim": "The mixture of purified E. coli proteins contained the molecular crowding agents PEG-8000 and trehalose to simulate cytoplasmic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The mixture of purified proteins also contained the molecular crowding agents PEG-8000 and trehalose to simulate cytoplasmic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a72bcaf3-3d16-4615-ba8d-191a328f7c3c",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C80",
+      "claim": "Once formed, the E. coli in vitro complexes activated the kinase as effectively as when assembled on vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Once formed, the complexes activated the kinase as effectively as when assembled on vesicles (Fowler et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "e8f88bda-714f-4f49-bcd5-62d4af9e518b",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C81",
+      "claim": "Using ECT, extended arrays with identical architecture to that of the in vivo cytoplasmic clusters were observed in E. coli in vitro preparations: two baseplates, approximately 31 nm apart, flank two hexagonal lattices of chemoreceptor trimers with 12 nm center-to-center spacing.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ECT, we observed extended arrays with identical architecture to that of the in vivo cytoplasmic clusters described above: two baseplates, approximately 31 nm apart, flank two hexagonal lattices of chemoreceptor trimers with 12 nm center-to-center spacing (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, supported by Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "5ec9a9db-fc93-4e09-a5d0-ab04ba5e7447",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C82",
+      "claim": "The receptors from the two sides of E. coli in vitro arrays interact at their methylation tips.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptors from the two sides interact at their methylation tips.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "bdd38537-eeaf-4647-9874-a025aa234737",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C83",
+      "claim": "In E. coli in vitro arrays, the kinase-binding tips were well ordered, with decreasing order towards the middle of the sandwich.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, as we observed for transmembrane chemoreceptors, the kinase-binding tips were well ordered, with decreasing order towards the middle of the sandwich.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "19d96a7b-43b4-43ed-ad31-c1efe3b12ac2",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C84",
+      "claim": "The most striking difference between the cytoplasmic arrays in R. sphaeroides and V. cholerae was the curvature observed in the former.",
+      "claim_type": "EXPLICIT",
+      "source": "The most striking difference between the cytoplasmic arrays in R. sphaeroides and V. cholerae was the curvature observed in the former.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "6d261189-e8d9-4930-8b35-4ef52b77a03a",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C85",
+      "claim": "In all cases observed, cytoplasmic V. cholerae arrays and arrays formed in vitro from E. coli cytoplasmic receptor fragments were flat.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases observed, cytoplasmic V. cholerae arrays and arrays formed in vitro from E. coli cytoplasmic receptor fragments were flat, while those of R. sphaeroides exhibited kinks and regions of high curvature, even forming full rings in some cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "fc99b6d5-7185-4e19-8c67-71d3985bb69b",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C86",
+      "claim": "R. sphaeroides cytoplasmic arrays exhibited kinks and regions of high curvature, even forming full rings in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases observed, cytoplasmic V. cholerae arrays and arrays formed in vitro from E. coli cytoplasmic receptor fragments were flat, while those of R. sphaeroides exhibited kinks and regions of high curvature, even forming full rings in some cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "ee0ba2d3-9d99-4a01-996d-d68f67e9cd43",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C87",
+      "claim": "Structures identical to those observed in tagged strains were observed in cells overexpressing untagged components of the cytoplasmic cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we performed tomography of high-pressure frozen, freeze-substituted cells overexpressing untagged components of the cytoplasmic cluster. We observed structures identical to those observed in the tagged strains (Figure 8A), indicating that curvature is not an artifact induced by attached fluorophores.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental work, supported by Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "7ce9ae50-fb5c-4c27-8d98-85eacb856c1d",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C88",
+      "claim": "Curvature of R. sphaeroides cytoplasmic arrays is not an artifact induced by attached fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed structures identical to those observed in the tagged strains (Figure 8A), indicating that curvature is not an artifact induced by attached fluorophores.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "b57e190d-b547-4694-84c5-192f895385b8",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C89",
+      "claim": "Structures with similar curvature were observed in cells lacking PpfA.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic arrays in R. sphaeroides are segregated by a ParA homolog, PpfA, which associates with the N-terminus of TlpT and with the chromosomal DNA. To test whether this interaction imposes curvature on the cytoplasmic array, we similarly imaged cells lacking PpfA. Again, we observed structures with similar curvature, indicating that this is an intrinsic property of the array, not affected by the segregation machinery (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental work, supported by Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "e6e4230c-c9a3-4ddb-834b-e3d9f6c86ef4",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C90",
+      "claim": "Curvature is an intrinsic property of the R. sphaeroides cytoplasmic array, not affected by the segregation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, we observed structures with similar curvature, indicating that this is an intrinsic property of the array, not affected by the segregation machinery (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "3aa21cc7-5fa8-4b27-814e-6b206b4063c3",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C91",
+      "claim": "Over half of all genomes sequenced of motile bacteria have more than one putative chemosensory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of all genomes sequenced of motile bacteria have more than one putative chemosensory pathway and many of these encode putative soluble chemoreceptors (Wuichet and Zhulin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "ce6aefd1-73e0-4724-b2ef-579c329ea2fa",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C92",
+      "claim": "Many genomes of motile bacteria encode putative soluble chemoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of all genomes sequenced of motile bacteria have more than one putative chemosensory pathway and many of these encode putative soluble chemoreceptors (Wuichet and Zhulin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "d2dcad00-7573-4da5-98f0-213a2cead755",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C93",
+      "claim": "Cytoplasmic arrays in both R. sphaeroides and V. cholerae display a hexagonal arrangement of receptor-trimers-of-dimers, with 12 nm center-to-center spacing that is identical to that of transmembrane chemoreceptor arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, cytoplasmic arrays in both species display a hexagonal arrangement of receptor-trimers-of-dimers, with 12 nm center-to-center spacing that is identical to that of transmembrane chemoreceptor arrays, suggesting a fundamental utility for this architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "5a478134-efbc-4c00-9ed5-388892feb089",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C94",
+      "claim": "The hexagonal arrangement of receptor-trimers-of-dimers with 12 nm center-to-center spacing suggests a fundamental utility for this architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, cytoplasmic arrays in both species display a hexagonal arrangement of receptor-trimers-of-dimers, with 12 nm center-to-center spacing that is identical to that of transmembrane chemoreceptor arrays, suggesting a fundamental utility for this architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "b6e7d643-21e4-46fc-ba1b-078fc867ebcb",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C95",
+      "claim": "The cytoplasmic arrays assemble as a sandwich, with two CheA/W baseplates flanking two sheets of MCPs that interact in the middle, presumably at their ligand-binding domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the transmembrane array is embedded in the membrane with a CheA/W baseplate at the receptors' membrane-distal tips and ligand-binding domains in the periplasm, the cytoplasmic arrays assemble as a sandwich, with two CheA/W baseplates flanking two sheets of MCPs that interact in the middle, presumably at their ligand-binding domains (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental work, with speculation about ligand-binding domain location.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "507e122a-7793-4580-8074-cd356ac29edd",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C96",
+      "claim": "No membrane is associated with cytoplasmic chemoreceptor arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "No membrane is associated with these arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a797e842-d5ff-4ac7-8077-3ccfab7829e5",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C97",
+      "claim": "The identity of the outer baseplates as CheA/W is supported by observation of the same structure in in vitro preparations from E. coli, where only three proteins are present: receptor fragments, CheA, and CheW.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of the outer baseplates as CheA/W is supported by our observation of the same structure in in vitro preparations from E. coli, where only three proteins are present: receptor fragments, CheA, and CheW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "87656047-8c10-4878-8f5f-88fcca2be228",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C98",
+      "claim": "The similarity of the array organization in membrane-bound and cytoplasmic clusters suggests a common organizational theme.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity of the array organization in membrane-bound and cytoplasmic clusters suggests a common organizational theme, in which either the membrane or the crowded environment of the cytoplasm provides necessary stability to the conserved architecture of a 12 nm hexagonal array of receptor-trimers-of-dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "d7fe3253-f763-4932-9063-3dda1da06291",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C99",
+      "claim": "Either the membrane or the crowded environment of the cytoplasm provides necessary stability to the conserved architecture of a 12 nm hexagonal array of receptor-trimers-of-dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity of the array organization in membrane-bound and cytoplasmic clusters suggests a common organizational theme, in which either the membrane or the crowded environment of the cytoplasm provides necessary stability to the conserved architecture of a 12 nm hexagonal array of receptor-trimers-of-dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "e19a2379-091f-42dd-bff7-f1a0e36e35af",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C100",
+      "claim": "Cytoplasmic arrays fall apart upon cell lysis unless molecular crowding agents are added.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while transmembrane arrays remain intact upon cell lysis, presumably due to the stabilizing effect of the membrane, cytoplasmic arrays fall apart unless molecular crowding agents are added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "10e0ad9a-b112-44ef-bcc0-fd0c18fe8b58",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C101",
+      "claim": "Cellular crowding contributes to the stability of cytoplasmic arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that cellular crowding contributes to the stability of the array and may be an important factor in assembly of these, and likely other, cellular structures (Ellis, 2001; Zhou et al., 2008; Zhou, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "ecab28e7-2217-4cf3-b192-228a2f70f2c0",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C102",
+      "claim": "Cellular crowding may be an important factor in assembly of cytoplasmic arrays and likely other cellular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that cellular crowding contributes to the stability of the array and may be an important factor in assembly of these, and likely other, cellular structures (Ellis, 2001; Zhou et al., 2008; Zhou, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "83b36ad1-92c3-49b0-933f-9b9d8bb60619",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C103",
+      "claim": "Chemoreceptor interactions can be enhanced by membrane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the idea that chemoreceptor interactions can be enhanced by membrane binding (Shrout et al., 2003), but in the absence of a membrane, this can be achieved by molecular crowding and sandwiching (Fowler et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "6aeca4ef-8666-420a-9a7a-c7626ab6557c",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C104",
+      "claim": "In the absence of a membrane, chemoreceptor interactions can be achieved by molecular crowding and sandwiching.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the idea that chemoreceptor interactions can be enhanced by membrane binding (Shrout et al., 2003), but in the absence of a membrane, this can be achieved by molecular crowding and sandwiching (Fowler et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research and the experimental results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "491d19ee-e5d6-4cb6-bc31-1c87d9c30b22",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C105",
+      "claim": "The hexagonal order of the R. sphaeroides and V. cholerae cytoplasmic arrays, with 12 nm center-to-center spacing, is identical to the arrangement of transmembrane chemoreceptor arrays in other bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The hexagonal order of the R. sphaeroides and V. cholerae cytoplasmic arrays, with 12 nm center-to-center spacing, is identical to the arrangement of transmembrane chemoreceptor arrays in other bacteria (Briegel et al., 2009), as well as to arrays formed from cytoplasmic fragments of E. coli receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "c0644f58-3f4d-48f9-8b60-c4344ea89d25",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C106",
+      "claim": "The atypical R. sphaeroides CheA homologs (CheA3 and CheA4), despite their sequence anomalies, assemble in a similar fashion to canonical CheA proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the atypical R. sphaeroides CheA homologs (CheA3 and CheA4), despite their sequence anomalies, assemble in a similar fashion to canonical CheA proteins, including the three CheA homologs found in V. cholerae (Ulrich and Zhulin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "72716d33-f6b9-42fc-866a-f4279a9de629",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C107",
+      "claim": "V. cholerae has three CheA homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the atypical R. sphaeroides CheA homologs (CheA3 and CheA4), despite their sequence anomalies, assemble in a similar fashion to canonical CheA proteins, including the three CheA homologs found in V. cholerae (Ulrich and Zhulin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "29c47b78-3517-4dba-a432-aa99ec82e6a8",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C108",
+      "claim": "R. sphaeroides CheA3 and CheA4 likely intercalate into CheA/W rings with their P5 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "From what is known in other organisms, R. sphaeroides CheA3 and CheA4 likely intercalate into CheA/W rings with their P5 domains (Briegel et al., 2012; Liu et al., 2012; Li et al., 2013; Natale et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge from other organisms, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "42ea0203-6201-47c6-abbe-53426f0f85ca",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C109",
+      "claim": "The packing of CheA3 and CheA4 in CheA/W rings would position both atypical CheA homologs in close proximity to each other, thereby facilitating phosphotransfer from the P4 domain of CheA4 to the P1 domain of CheA3.",
+      "claim_type": "EXPLICIT",
+      "source": "This packing would position both atypical CheA homologs in close proximity to each other, thereby facilitating phosphotransfer from the P4 domain of CheA4 to the P1 domain of CheA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "5ec3f183-f97f-4205-95a5-70e0f7aaaa4f",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C110",
+      "claim": "Curvature may not affect performance of cytoplasmic arrays unduly, with functioning arrays found in linear, concave, and convex conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that curvature may not affect performance unduly, with functioning arrays found in linear, concave, and convex conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "0fc3d6d7-ebb5-4449-8200-1fd9556794c4",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C111",
+      "claim": "There may be an upper limit of curvature tolerance for cytoplasmic arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there may be an upper limit of curvature tolerance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "cf95890c-a5e1-4cc5-ac42-141fd0d5d228",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C112",
+      "claim": "The discontinuities observed in cytoplasmic arrays may result from 'breaking' of the CheA/W baseplate on one side under conditions of extreme curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "The discontinuities we observe in cytoplasmic arrays may result from 'breaking' of the CheA/W baseplate on one side under conditions of extreme curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "8d88d2ba-6588-4730-a10d-5f05bbb2a490",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C113",
+      "claim": "In transmembrane arrays, ligand-binding domains are located in the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In transmembrane arrays, ligand-binding domains are located in the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "3c2b3ddf-5310-4841-86e3-2e84b1527605",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C114",
+      "claim": "In cytoplasmic arrays, ligand-binding domains are assumed to be located in the middle of the sandwich.",
+      "claim_type": "EXPLICIT",
+      "source": "In cytoplasmic arrays, we assume that these domains are located in the middle of the sandwich.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assumption based on the structural findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "af173c3e-d6c6-44cf-8a83-620a81b36f81",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C115",
+      "claim": "The receptor arrangement in cytoplasmic arrays is much more porous than the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This configuration is unlikely to inhibit access to signaling molecules as the receptor arrangement is much more porous than the outer membrane, which extracellular ligands need to cross in order to bind transmembrane arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "7e1397c4-0491-4c60-a563-6646eaba873d",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "claim_id": "C116",
+      "claim": "Ligand binding in the middle of the sandwich could result in CheA activation in both baseplates, facilitating amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "The signaling implications of this arrangement remain unclear, but it is intriguing to think that ligand binding in the middle of the sandwich could result in CheA activation in both baseplates, facilitating amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional implications of the structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "630a8caf-0362-4e5b-8a51-777118b34f4b",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cytoplasmic chemoreceptor arrays in R. sphaeroides and V. cholerae contain trimers-of-receptor-dimers organized in 12-nm hexagonal arrays, sandwiched between two CheA/CheW baseplates approximately 30-35 nm apart. This architecture was confirmed through multiple imaging techniques including ECT of cryosections, freeze-substituted cells, immunogold labeling, and correlative cryo-FLM/ECT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent imaging approaches (C52, C56, C57, C61-63, C67-68, C74-75) consistently demonstrate the double-baseplate sandwich architecture with hexagonal receptor packing. The immunogold labeling (C61-63) and correlative cryo-FLM/ECT (C67-68) provide strong validation that the observed structures are indeed cytoplasmic chemoreceptor arrays. The hexagonal spacing measurements (C69, C93) are quantitative and reproducible across both species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "dfd9d6cb-111c-405d-a759-c045cf661e15",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cytoplasmic fragments of E. coli transmembrane chemoreceptors (Tar) form sandwich structures with identical architecture to in vivo cytoplasmic arrays when assembled in vitro with CheA and CheW in the presence of molecular crowding agents (PEG-8000 and trehalose). These in vitro complexes are kinase-active and display the same double-baseplate architecture with 12-nm hexagonal receptor spacing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vitro reconstitution experiment (C7, C81-83) provides strong evidence that the sandwich architecture can form from minimal components plus crowding agents. The kinase activity assay (C80) demonstrates functional relevance. The structural identity between in vitro and in vivo arrays (C78, C81, C97) supports the interpretation that CheA/W form the baseplates. This is a well-controlled experiment with appropriate functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "d766a06d-455d-4ac8-8492-9197784a05fb",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The 12-nm hexagonal architecture is fundamentally important for chemoreceptor arrays, and either membrane association or molecular crowding combined with sandwiching can provide the necessary stability for this conserved architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conservation of 12-nm hexagonal spacing across transmembrane arrays, cytoplasmic arrays in two species, and in vitro reconstituted arrays (C8, C93-94) strongly supports fundamental importance. The lysis experiments showing array disruption without crowding agents but preservation with them (C65, C67, C100-101) provide direct evidence for the crowding/sandwiching stabilization mechanism. The interpretation is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "28e149c0-152c-4b50-a0dd-447057ba78d2",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cytoplasmic arrays require molecular crowding for stability, as they disassemble upon cell lysis unless crowding agents are added. This suggests cellular crowding contributes to array stability and may be important for assembly of cytoplasmic arrays and other cellular structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental evidence is clear: fluorescent foci disappear after lysis without crowding agents (C65) but are preserved when PEG or PVP are added (C67). This directly demonstrates the requirement for crowding. The broader speculation about other cellular structures (C102) is appropriately qualified as a hypothesis. The experimental design provides a clear test of the crowding hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "b49f7117-082d-4dc5-ad93-66b04fbfb1fa",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "R. sphaeroides cytoplasmic arrays exhibit intrinsic curvature, including kinks and regions of high curvature that can form complete rings, while V. cholerae and E. coli in vitro arrays are flat. This curvature is not an artifact of fluorescent tags or the PpfA segregation machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The curvature difference is consistently observed across multiple preparations (C84-86). The control experiments rule out two potential artifacts: fluorescent tags (C87-88, using untagged proteins) and the segregation machinery (C89-90, using \u0394ppfA strains). These controls strengthen the conclusion that curvature is an intrinsic property of R. sphaeroides arrays. However, the molecular basis for this species-specific difference remains unexplained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "cf8bb443-17ca-41f5-a933-0d260f80d9d9",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Overexpression of cytoplasmic chemotaxis components in R. sphaeroides does not significantly impair chemotactic function, and arrays can function in linear, concave, and convex conformations, suggesting curvature does not unduly affect performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The swim plate assay (C53) provides functional validation that overexpressed arrays retain chemotactic activity. The fluorescence microscopy (C55) confirms expected localization patterns. The interpretation that curvature doesn't impair function (C54, C110) is reasonable given that curved arrays in overexpressing strains still support chemotaxis. However, quantitative chemotaxis measurements would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "822a9284-a1e6-4180-bf55-9bae40c641f7",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The atypical R. sphaeroides CheA homologs (CheA3 and CheA4) assemble into arrays with the same 12-nm hexagonal spacing as canonical CheA proteins. CheA3 and CheA4 likely intercalate into CheA/W rings with their P5 domains, positioning them in close proximity to facilitate phosphotransfer from CheA4 P4 domain to CheA3 P1 domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the identical hexagonal spacing (C105) suggests similar assembly, the specific molecular arrangement of CheA3 and CheA4 (C108-109) is inferred from other organisms rather than directly demonstrated. The resolution of the current data does not allow discrimination of individual CheA domains within the baseplate. Higher-resolution structural data or biochemical experiments would be needed to confirm the proposed arrangement and phosphotransfer mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "f76aff0f-60a1-4d06-9e92-f5b7bab68391",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "R. sphaeroides cells are too thick and dense for high-resolution ECT of intact cells, while V. cholerae flattens during freezing, yielding thinner samples suitable for whole-cell imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a straightforward methodological observation (C51, C73) that explains the experimental strategy. The improved resolution achieved in V. cholerae (C74-76) validates this approach. This represents a technical limitation and solution rather than a biological finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "a1d47aef-2839-4f95-b2d9-c1780f5e13c5",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Speculative interpretations about cytoplasmic array function: there may be an upper limit of curvature tolerance, discontinuities may result from baseplate breaking under extreme curvature, ligand-binding domains are assumed to be in the middle of the sandwich, and ligand binding there could activate both baseplates for signal amplification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly speculative claims (C111-112, C114, C116) that are not directly tested. While the speculation is reasonable given the structural data, no experimental evidence is provided for curvature limits, baseplate breaking, ligand-binding domain location, or the amplification mechanism. These represent hypotheses for future investigation rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    },
+    {
+      "id": "67390598-9d31-4705-aaea-f7cd40383f4a",
+      "content_id": "73044694-65c8-4db1-a3db-9758cd6a275e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge about bacterial chemotaxis systems, including transmembrane array architecture, E. coli chemotaxis components and signaling, R. sphaeroides and V. cholerae chemotaxis operons, and the prevalence of cytoplasmic chemoreceptors across bacterial species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from prior literature, appropriately cited throughout. They provide necessary context for interpreting the novel findings but are not results of the current study. The citations appear appropriate and the background information is accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:19:07.983180Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f0dbf757-80fb-4f7f-9d76-9009ca82e1a4",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "6b6a0050-bc7a-4ad6-8217-dce902c70011",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "a4ec9713-cfeb-4b14-86cf-ef30a68c75e7",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "28a2ab50-c71f-4f1f-b0b1-964526382920",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "9a7e2804-2a8f-4032-ae46-74cccdc8a6f3",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "4672cc56-25e9-4d79-8f00-bdebfb3e2c3d",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "c3396a8b-a110-4463-b300-9993ccc6e366",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "d627308a-5003-4863-8af9-0de5fbb75693",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "ab5b48fe-37e8-4fa0-841b-94f644085667",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "fa133f6d-6656-4eb8-a2bb-34c89569e388",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "395f0bcf-e8e7-48d6-b0a9-b6ec08ad4ec2",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "7e06368d-f817-4982-bdf3-c8bdd025d9eb",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "11dab006-0044-41d4-a99d-8adba05c82f7",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "7e8ef2c9-4937-4ad7-ad3c-5ec7d02a48cd",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "00388b96-91b4-429c-bd56-b1857c2dcd04",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "4f1bd3be-8512-4dbb-8dbb-e4272305e9ac",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "f90f0cb3-ca0d-4fe0-b2ed-b3fdcc799636",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "67c0c95a-bd2a-458c-a326-b2ba93d7cc2a",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "e7eead62-5703-4a2c-ae5b-c5de36045e69",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "53de2a7c-b4e8-4bc8-a306-02572dc92405",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "5aaff07c-ab10-4251-b801-f45852dd31ca",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "d2dcad00-7573-4da5-98f0-213a2cead755",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "b6e7d643-21e4-46fc-ba1b-078fc867ebcb",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "507e122a-7793-4580-8074-cd356ac29edd",
+      "result_id": "630a8caf-0362-4e5b-8a51-777118b34f4b"
+    },
+    {
+      "claim_id": "3a2395ea-2de9-49a1-8cfc-782c704264e3",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "b2fb3640-7cd3-4fe5-bcc2-d537aeebada8",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "c4d95798-2c00-4c76-85ee-7270c294d64b",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "a72bcaf3-3d16-4615-ba8d-191a328f7c3c",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "e8f88bda-714f-4f49-bcd5-62d4af9e518b",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "5ec9a9db-fc93-4e09-a5d0-ab04ba5e7447",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "bdd38537-eeaf-4647-9874-a025aa234737",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "a797e842-d5ff-4ac7-8077-3ccfab7829e5",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "6aeca4ef-8666-420a-9a7a-c7626ab6557c",
+      "result_id": "dfd9d6cb-111c-405d-a759-c045cf661e15"
+    },
+    {
+      "claim_id": "83c97b54-e1b2-4f47-8805-79fdddf2eddd",
+      "result_id": "d766a06d-455d-4ac8-8492-9197784a05fb"
+    },
+    {
+      "claim_id": "a983c7f1-9ad1-4029-a6fe-d01baa26c9fc",
+      "result_id": "d766a06d-455d-4ac8-8492-9197784a05fb"
+    },
+    {
+      "claim_id": "5a478134-efbc-4c00-9ed5-388892feb089",
+      "result_id": "d766a06d-455d-4ac8-8492-9197784a05fb"
+    },
+    {
+      "claim_id": "87656047-8c10-4878-8f5f-88fcca2be228",
+      "result_id": "d766a06d-455d-4ac8-8492-9197784a05fb"
+    },
+    {
+      "claim_id": "d7fe3253-f763-4932-9063-3dda1da06291",
+      "result_id": "d766a06d-455d-4ac8-8492-9197784a05fb"
+    },
+    {
+      "claim_id": "10e0ad9a-b112-44ef-bcc0-fd0c18fe8b58",
+      "result_id": "d766a06d-455d-4ac8-8492-9197784a05fb"
+    },
+    {
+      "claim_id": "83b36ad1-92c3-49b0-933f-9b9d8bb60619",
+      "result_id": "d766a06d-455d-4ac8-8492-9197784a05fb"
+    },
+    {
+      "claim_id": "6aeca4ef-8666-420a-9a7a-c7626ab6557c",
+      "result_id": "d766a06d-455d-4ac8-8492-9197784a05fb"
+    },
+    {
+      "claim_id": "73784814-2fba-4c74-87ec-92f4e19b2611",
+      "result_id": "28e149c0-152c-4b50-a0dd-447057ba78d2"
+    },
+    {
+      "claim_id": "5302e76e-a552-48bc-aa6d-7cbf820e1ff3",
+      "result_id": "28e149c0-152c-4b50-a0dd-447057ba78d2"
+    },
+    {
+      "claim_id": "7e8ef2c9-4937-4ad7-ad3c-5ec7d02a48cd",
+      "result_id": "28e149c0-152c-4b50-a0dd-447057ba78d2"
+    },
+    {
+      "claim_id": "e19a2379-091f-42dd-bff7-f1a0e36e35af",
+      "result_id": "28e149c0-152c-4b50-a0dd-447057ba78d2"
+    },
+    {
+      "claim_id": "10e0ad9a-b112-44ef-bcc0-fd0c18fe8b58",
+      "result_id": "28e149c0-152c-4b50-a0dd-447057ba78d2"
+    },
+    {
+      "claim_id": "ecab28e7-2217-4cf3-b192-228a2f70f2c0",
+      "result_id": "28e149c0-152c-4b50-a0dd-447057ba78d2"
+    },
+    {
+      "claim_id": "19d96a7b-43b4-43ed-ad31-c1efe3b12ac2",
+      "result_id": "b49f7117-082d-4dc5-ad93-66b04fbfb1fa"
+    },
+    {
+      "claim_id": "6d261189-e8d9-4930-8b35-4ef52b77a03a",
+      "result_id": "b49f7117-082d-4dc5-ad93-66b04fbfb1fa"
+    },
+    {
+      "claim_id": "fc99b6d5-7185-4e19-8c67-71d3985bb69b",
+      "result_id": "b49f7117-082d-4dc5-ad93-66b04fbfb1fa"
+    },
+    {
+      "claim_id": "ee0ba2d3-9d99-4a01-996d-d68f67e9cd43",
+      "result_id": "b49f7117-082d-4dc5-ad93-66b04fbfb1fa"
+    },
+    {
+      "claim_id": "7ce9ae50-fb5c-4c27-8d98-85eacb856c1d",
+      "result_id": "b49f7117-082d-4dc5-ad93-66b04fbfb1fa"
+    },
+    {
+      "claim_id": "b57e190d-b547-4694-84c5-192f895385b8",
+      "result_id": "b49f7117-082d-4dc5-ad93-66b04fbfb1fa"
+    },
+    {
+      "claim_id": "e6e4230c-c9a3-4ddb-834b-e3d9f6c86ef4",
+      "result_id": "b49f7117-082d-4dc5-ad93-66b04fbfb1fa"
+    },
+    {
+      "claim_id": "83c12c7b-1514-43a4-9ebc-1a179e436c1a",
+      "result_id": "cf8bb443-17ca-41f5-a933-0d260f80d9d9"
+    },
+    {
+      "claim_id": "a77e9ad8-9bd5-4ef5-be07-d9535134bc01",
+      "result_id": "cf8bb443-17ca-41f5-a933-0d260f80d9d9"
+    },
+    {
+      "claim_id": "d70a6ce2-d4a6-4b5a-bc53-c42526417b3e",
+      "result_id": "cf8bb443-17ca-41f5-a933-0d260f80d9d9"
+    },
+    {
+      "claim_id": "5ec3f183-f97f-4205-95a5-70e0f7aaaa4f",
+      "result_id": "cf8bb443-17ca-41f5-a933-0d260f80d9d9"
+    },
+    {
+      "claim_id": "491d19ee-e5d6-4cb6-bc31-1c87d9c30b22",
+      "result_id": "822a9284-a1e6-4180-bf55-9bae40c641f7"
+    },
+    {
+      "claim_id": "c0644f58-3f4d-48f9-8b60-c4344ea89d25",
+      "result_id": "822a9284-a1e6-4180-bf55-9bae40c641f7"
+    },
+    {
+      "claim_id": "29c47b78-3517-4dba-a432-aa99ec82e6a8",
+      "result_id": "822a9284-a1e6-4180-bf55-9bae40c641f7"
+    },
+    {
+      "claim_id": "42ea0203-6201-47c6-abbe-53426f0f85ca",
+      "result_id": "822a9284-a1e6-4180-bf55-9bae40c641f7"
+    },
+    {
+      "claim_id": "f567a918-0656-4210-9221-3204c96ea871",
+      "result_id": "f76aff0f-60a1-4d06-9e92-f5b7bab68391"
+    },
+    {
+      "claim_id": "9226c922-a2c8-47b5-83f4-4108db067c21",
+      "result_id": "f76aff0f-60a1-4d06-9e92-f5b7bab68391"
+    },
+    {
+      "claim_id": "40cea95f-dfdd-49af-83fe-ea391ac8895c",
+      "result_id": "f76aff0f-60a1-4d06-9e92-f5b7bab68391"
+    },
+    {
+      "claim_id": "0fc3d6d7-ebb5-4449-8200-1fd9556794c4",
+      "result_id": "a1d47aef-2839-4f95-b2d9-c1780f5e13c5"
+    },
+    {
+      "claim_id": "cf95890c-a5e1-4cc5-ac42-141fd0d5d228",
+      "result_id": "a1d47aef-2839-4f95-b2d9-c1780f5e13c5"
+    },
+    {
+      "claim_id": "3c2b3ddf-5310-4841-86e3-2e84b1527605",
+      "result_id": "a1d47aef-2839-4f95-b2d9-c1780f5e13c5"
+    },
+    {
+      "claim_id": "af173c3e-d6c6-44cf-8a83-620a81b36f81",
+      "result_id": "a1d47aef-2839-4f95-b2d9-c1780f5e13c5"
+    },
+    {
+      "claim_id": "7e1397c4-0491-4c60-a563-6646eaba873d",
+      "result_id": "a1d47aef-2839-4f95-b2d9-c1780f5e13c5"
+    },
+    {
+      "claim_id": "9b5cc68f-632c-4a4b-a81e-2e7c64f80ce8",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "81b013fa-94e4-4d6b-b246-8a8c92d23c38",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "50cc2d76-e5d5-48d1-b97e-774969a06508",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "64527dc9-d638-4dae-81f4-0b0db010ca66",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "c62ce1a0-d7ef-42ab-9f2a-8d1f6bf6b721",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "aca50afa-d422-48b8-854d-a981c2363271",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "ed7c0e14-98dc-4f44-874c-3f7115172c53",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "93755b1f-109b-4b03-842c-1c4c8a6de589",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "7b15be2e-d16a-4b87-82ae-1ce4a51b3078",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "6b0a36d9-4fd4-4bdd-8b39-9a8e954ccfb6",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "9c613b58-e410-4412-8428-08eb1279d11d",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "09824c30-abf8-4229-8c57-45ccbcb09904",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "a9ede575-0fc6-487a-9a67-d66e0e1260b0",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "b71e3f47-b44f-47bb-a60c-33cb4941f10a",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "66f9c677-6a8b-4ce0-8dac-b2458389e4b5",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "60ea89c9-7f16-4739-a689-496ac6079727",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "055558ca-fc82-47f1-b9fb-d8e7b4e1ffbf",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "cebf9b4c-9ee1-49bd-905b-731ee4ed9e96",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "85bc8992-e80f-4ae9-93b8-ba0249b3bf48",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "08b6ae85-7680-44b5-bd58-476ce0e042c1",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "43347361-aaec-4f9d-87cf-fee474cf8d52",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "de5884c9-6ea8-4d22-971e-18f79afbe36e",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "bbb92c23-c979-48af-ad25-ba46bf4fda9c",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "a87ad52e-db56-4151-99ec-b2eb33ef507b",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "cfad0f71-0a73-4dfa-89d7-57edf3b1d1f8",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "d80c9a0c-00aa-4aab-804b-7c63936e6a0b",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "f8187a1a-9660-4ddb-b9d6-01130f63bfec",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "d2f79b3a-6c1b-47e3-be4b-4bf4267be638",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "1ebffccb-74bf-4b6d-b66d-a2ad8489c70a",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "25faa1f2-388d-4e18-82e9-6f1d5a20f424",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "99a93da0-0e4f-4901-9650-03469e816ce0",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "ab82ffa3-1da1-49b2-b86a-58f8570cc70d",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "b4b3c5e1-d442-4b81-8dbc-a541c1991149",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "df78a661-f846-46d0-a268-c6f9c119fa8c",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "16216310-301b-4d1f-9e5c-d79f9e7c29b6",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "24d9f429-072b-470b-abf4-c68224226a14",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "12b076f2-dad7-4ca7-bc04-e43b580b6f66",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "338a9f87-fbcc-491c-b7bd-61a5d9b8a13d",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "6c3636cc-1a71-438b-bf92-534c76354544",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "a9ab1e51-6e58-48df-b8d7-f27d30c1fb2f",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "6bd2a99a-8c7a-4e96-97de-040f605e400d",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "68754548-24f2-4108-910e-86d6927005a0",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "4a62f999-988d-4853-ab1d-081103805aab",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "51c78b84-5aff-46e8-8f23-8920fac3a920",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "a4fd86c9-5bae-40a3-a445-13cfa33c5c07",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "3aa21cc7-5fa8-4b27-814e-6b206b4063c3",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "ce6aefd1-73e0-4724-b2ef-579c329ea2fa",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "83b36ad1-92c3-49b0-933f-9b9d8bb60619",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "72716d33-f6b9-42fc-866a-f4279a9de629",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    },
+    {
+      "claim_id": "8d88d2ba-6588-4730-a10d-5f05bbb2a490",
+      "result_id": "67390598-9d31-4705-aaea-f7cd40383f4a"
+    }
+  ],
+  "comparisons": []
+}

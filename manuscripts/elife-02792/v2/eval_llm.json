@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "During eukaryotic evolution, genome size has increased disproportionately to nuclear volume, requiring organisms with larger genomes to compact chromatin to greater extents than organisms with smaller genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C12 collectively establish the evolutionary context through citations to prior work (Maul and Deaven 1977; Olmo 1982; Cavalier-Smith 2005; Vinogradov 2005). These claims are well-supported by established literature and provide the foundational rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Computational analysis of 160 eukaryotic species reveals that the H2A N-terminal domain has systematically acquired arginines at specific positions (R3, R11, R17, R20) as genome size increased, while serines/threonines at positions 10 and 15 decreased. These residues are positioned at conserved distances from the histone fold domain rather than the N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C52 describe a comprehensive bioinformatic analysis with clear statistical significance (p-values shown in Figure 1). The heat map analysis (Figure 1D), motif analysis (Figure 1E), and positional analysis (Figure 1F) provide converging evidence for the systematic acquisition of arginines correlated with genome size. The methodology is described and the data are presented with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Insertion of arginines at positions 3 and 11 into yeast H2A significantly increases chromatin compaction, with R11\u0394S15 showing the largest effect (41% decrease in interprobe distance). The effect is specific to arginines, as lysine insertions at the same positions do not significantly affect compaction, and the compaction is uniform across large genomic distances and reproducible in different strain backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C69 are supported by extensive FISH experiments in yeast with multiple probe sets (Figure 2, Table 1, Supplementary file 2). Statistical significance is demonstrated with p-values, multiple biological replicates are tested, and appropriate controls (lysine insertions, random arginine insertion at position 6) are included. The uniform compaction across genomic distances (C68) and strain-independence (C69) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "H2A arginine mutations do not affect average nucleosomal spacing as measured by MNase digestion, but more compact mutants show decreased accessibility to MNase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by MNase digestion experiments (Figure 2F, Figure 2\u2014figure supplement 1F). The data show similar nucleosomal ladder patterns but delayed digestion kinetics in compact mutants, indicating that compaction is not due to altered nucleosome spacing but rather to changes in chromatin fiber structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "H2A arginines affect nuclear volume in yeast, with R11 and R3R11 mutants showing significantly decreased nuclear volumes compared to WT, while serine deletions increase nuclear volume. Cell size is not affected by these mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 are supported by nuclear volume measurements using Nup49-GFP in multiple strain backgrounds (Figure 3, Table 1, Supplementary file 3). Statistical significance is demonstrated, and appropriate controls (cell volume measurements, C78) show specificity to nuclear volume. However, the relationship between compaction and nuclear volume is complex and not entirely consistent across all mutants (C126), which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Removal of H2A arginines R3 and R11 in human cells causes chromatin de-compaction and increased nuclear area, demonstrating that these arginines function to compact chromatin in organisms with large genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are supported by FISH and nuclear area measurements in multiple human cell lines (IMR90, MDA-MB-453, HEK293) shown in Figure 4 and Supplementary files 4-5. The experiments include appropriate controls (WT overexpression) and multiple mutants (\u0394R3, R11A, R11K, \u0394R3R11A, \u03941-12). Statistical significance is demonstrated. The results are consistent with predictions from the evolutionary analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In vitro analytical ultracentrifugation experiments demonstrate that R11 directly increases chromatin compaction. Nucleosomal arrays lacking R11 adopt a less compact conformation (lower sedimentation coefficient) than WT arrays both in the absence and presence of Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by analytical ultracentrifugation experiments with reconstituted nucleosomal arrays (Figure 5, Figure 5\u2014figure supplement 1). The use of unmodified histones and defined DNA templates demonstrates direct effects of R11 on chromatin fiber structure independent of cellular factors. Two independent experiments confirm the results. The sedimentation coefficients are consistent with prior literature for similar arrays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "H2A-mediated chromatin compaction does not significantly alter global gene expression in exponentially growing yeast cells, as demonstrated by high correlation (\u22650.99) between WT and mutant strains and similar histone gene expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by genome-wide expression microarray analysis (Figure 6A). The high correlation coefficients and lack of specific gene ontology enrichment among differentially expressed genes provide strong evidence. This is an important control demonstrating that compaction changes do not globally disrupt transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "H2A mutants show similar growth rates and no major defects in DNA replication, repair, protein synthesis, or TOR signaling pathways, but are outcompeted by WT in competition assays, suggesting that H2A NTD sequence changes affect overall cellular fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by growth curves (Figure 6B), spot tests with various drugs (Figure 6C), and competition assays (Figure 6D). The data show that while mutants have no obvious growth defects in isolation, they have reduced fitness in direct competition with WT. This is an important observation about the evolutionary constraints on H2A sequence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The H2A NTD is frequently mutated in cancer, with 71% of mutations affecting arginine motifs. R11 is the most commonly mutated residue. Cancer-associated mutations R11C, R11H, and R11P decrease chromatin compaction when overexpressed in normal human fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 are supported by analysis of the COSMIC database (Figure 7A) and FISH experiments testing cancer mutations (Figure 7B-E, Supplementary files 4-5). The enrichment of mutations in arginine motifs is striking (71%). However, the relevance to cancer is somewhat speculative (C109) as the experiments use overexpression in normal cells rather than studying endogenous mutations in cancer cells. The claim about overexpression potential (C109) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Structural analysis of nucleosome crystal structures reveals that R3 and R11 are positioned at contact distances from DNA (2.87 \u00c5 and 4.09/2.90 \u00c5 respectively), suggesting they may enable intra- and inter-nucleosomal interactions with DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by analysis of published crystal structure data (Davey et al., 2002) shown in Figure 1\u2014figure supplement 2. The distance measurements provide structural support for the proposed mechanism. However, these are static crystal structures and may not fully represent dynamic in vivo conformations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The mechanism of chromatin compaction by H2A arginines is likely due to increased linear compaction rather than chromatin looping, potentially through neutralization of DNA negative charge by arginine-DNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by multiple lines of evidence: uniform compaction across probe pairs (C68), de-compaction in human cells (C82-C87), and in vitro effects (C88-C92). The proposed mechanism of charge neutralization (C114) is reasonable but somewhat speculative. The authors appropriately acknowledge that the exact mechanism is not fully determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C119",
+      "C122"
+    ],
+    "result": "R17 and R20 do not affect compaction by themselves, likely because they are more buried in the nucleosome structure. The inability of lysines to increase compaction suggests structural constraints for H2A-mediated chromatin compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C116, C119, C122 are supported by experimental data showing no effect of R17K or K20R mutations (C62) and structural analysis (C110-C111). The inference about structural constraints (C119) is reasonable given the specificity for arginines over lysines. The speculation about additional changes needed for lysines (C122) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "While there is not a clear-cut relationship between chromatin compaction and nuclear volume across all H2A mutants, the H2A NTD is identified as a region directly or indirectly linked to nuclear volume control mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 acknowledge the complexity of the relationship between compaction and nuclear volume observed in the data (C73-C81). The authors appropriately note that the relationship is not straightforward, which is an honest assessment of the data. The conclusion that H2A NTD is linked to nuclear volume control is supported but the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "H2A-mediated chromatin compaction may have evolved to enable regulation of compaction without requiring compensatory changes to other DNA-based processes such as transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is speculative and based on the observation that compaction changes do not affect gene expression (C93-C97). While this is an interesting hypothesis, it requires additional evidence about the evolutionary pressures and mechanisms. The claim is appropriately presented as speculation ('may have evolved', 'raise the possibility').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The evolution of H2A arginines may be driven by the ratio of genome size to nuclear volume rather than absolute genome size, as evidenced by organisms like Ostreococcus tauri (small genome, small cell) and Bufo gargarizans (very large genome with additional arginines).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 provide evolutionary context and examples that support the hypothesis. The examples of O. tauri (C130) and B. gargarizans (C134) are well-documented with citations. The speculation about additional arginines enabling further compaction (C135) is reasonable but requires experimental validation. The discussion appropriately acknowledges organisms with H2A isoforms (C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Cells may dynamically regulate chromatin compaction by H2A arginines through posttranslational modifications such as methylation or citrullination. The H2A NTD is positioned near the H2B CTD, which when ubiquitylated disrupts compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C118 are speculative about potential regulatory mechanisms. While the speculation is supported by citations to prior work on arginine modifications and H2B ubiquitylation (Fierz et al., 2011), no direct experimental evidence is provided in this study. These are reasonable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "Mutations in the H2A NTD may contribute to altered chromatin compaction commonly observed in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 is speculative and based on the findings that H2A NTD mutations affect compaction (C106-C107) and are found in cancer (C103-C105). However, the experiments use overexpression in normal cells rather than studying endogenous mutations in cancer cells. The claim is appropriately cautious ('may contribute') but requires additional evidence in cancer cell contexts.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The crystal structure of the zebrafish Smoothened CRD was determined at 2.3 \u00c5 resolution, revealing a globular fold composed of four \u03b1 helices and a short two-stranded \u03b2 sheet, stabilized by five disulfide bridges. The structure includes residues 41-158, with N- and C-terminal regions missing due to lack of electron density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C51-C54 are well-supported by crystallographic data in Table 1 (R-factor 21.6%, R-free 26.0%) and structural analysis shown in Figure 5A. The resolution, structural features, and missing regions are clearly documented with appropriate validation statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The Smo CRD is both necessary and sufficient for binding to 20(S)-OHC. Deletion of the CRD abolishes binding, while the isolated CRD binds with Kd ~180 nM. The C-terminal intracellular domain is dispensable for this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C32 are strongly supported by ligand affinity chromatography data in Figures 1D and 2A-B. The experiments demonstrate that \u0394CRD-Smo fails to bind while isolated CRD-Fc and \u0394C-Smo retain binding, with quantitative Kd determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The CRD is required for Smo signaling in response to Shh and 20(S)-OHC but not SAG. \u0394CRD-Smo fails to activate Gli1 or reduce Gli3R in response to Shh and 20(S)-OHC, while retaining SAG responsiveness and cyclopamine sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37-C40 are well-supported by functional data in Figure 3A-C showing differential responses of \u0394CRD-Smo to different activators. The retention of SAG responsiveness and cyclopamine sensitivity demonstrates proper folding of the mutant protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C33",
+      "C34"
+    ],
+    "result": "20(S)-OHC binds Smo with high stereospecificity. The enantiomer ent-20(S)-OHC and epimer 20(R)-OHC fail to bind or activate signaling, while 20(S)-yne is ~10-fold more potent. 22(S)-OHC also cannot activate signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C33-C34 are supported by competition binding assays in Figures 2C-D and prior work (Nachtergaele et al., 2012). The stereospecificity is demonstrated by lack of competition by stereoisomers and regioisomers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C35",
+      "C36"
+    ],
+    "result": "The oxysterol binding site on Smo is distinct from the cyclopamine binding site. 7TM ligands SAG, SANT-1, and itraconazole do not compete with 20(S)-OHC for CRD binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C35-C36 are supported by competition assays in Figure 2E showing no inhibition of CRD-20(S)-OHC binding by 7TM ligands, and by prior literature demonstrating lack of competitive interaction with cyclopamine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The oxysterol-binding groove in Smo CRD is located at an equivalent position to the Fz8 palmitoleyl-binding groove, with similar volume (551 \u00c5\u00b3) but divergent residues. Four of five disulfide bridges are conserved across Frizzled-like CRDs, supporting evolution from an ancestral hydrophobic molecule-sensing domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C55-C56, C58-C60, C86-C89 are well-supported by structural comparisons in Figures 5 and 6A-C, phylogenetic analysis in Figure 5B, and volume calculations. The conservation of structural features with functional divergence is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Structure-guided mutagenesis identifies the oxysterol binding pocket. Mutations in residues lining the putative pocket (L112A, L112D, G115F, L116A, Y134F, G166F, P168A, F170A) substantially reduce binding, while mutations on the opposite face do not. Y134F is completely unresponsive to 20(S)-OHC but retains SAG responsiveness, and Y134F/P168A show reduced Shh responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 are strongly supported by computational docking (Figure 6\u2014supplement 1), binding assays (Figure 6E), and functional assays (Figure 6F). The differential effects of mutations provide strong evidence for the proposed binding site location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C69"
+    ],
+    "result": "The oxysterol-CRD interaction is conserved in vertebrates but not invertebrates. Drosophila Smo does not bind 20(S)-OHC, while zebrafish Smo does. Five of eight residues essential for vertebrate Smo-oxysterol interactions differ in Drosophila Smo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46, C69 are supported by binding assays in Figure 4A-B showing differential binding between species, and homology modeling in Figure 6\u2014supplement 1D identifying divergent residues. This provides a structural explanation for the functional difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "20(S)-OHC activates Hedgehog signaling in zebrafish embryos in vivo. Treatment increases eng2a:GFP expression and expands ptch2 expression domain, while cyclopamine suppresses eng2a:GFP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by in vivo data in Figure 4C and quantification in Figure 4\u2014supplement 1 showing statistically significant effects (p<0.0001) on Hh target gene expression in zebrafish embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Oxysterol-based inhibitors (OBIs) 20(R)-yne and 20-keto-yne are CRD-targeted partial agonists that block signaling by all Hh activators (Shh, 20(S)-OHC, SAG) and clinically relevant Smo mutants (mSmoM2, D477H). They bind the CRD but not the 7TM site, are weak activators alone, and require the alkyne group for competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C70-C79 are well-supported by binding assays (Figure 7B-C), functional assays (Figures 7D, 8A-E), and structure-activity relationships. The broad inhibitory activity against multiple activators and resistant mutants is clearly demonstrated with IC50 values provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "OBIs induce Smo ciliary accumulation like cyclopamine but unlike non-sterol 7TM antagonists. They do not block Shh-induced ciliary accumulation, distinguishing them from SANT-1 and Vismodegib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by immunofluorescence data in Figure 8F showing ciliary Smo localization patterns, and by prior literature (Rohatgi et al., 2009) establishing the differential effects of sterol vs. non-sterol antagonists.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Cyclopamine blocks CRD-20(S)-OHC interaction in vitro but not in cell-based assays, while tomatidine does not. This discrepancy is attributed to cyclopamine's high-affinity 7TM binding (Kd ~10 nM) dominating cell-based assays. Cyclopamine induces ciliary Smo accumulation, distinguishing it from pure 7TM inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85, C93-C95 present an unexpected finding (C84) that conflicts with cell-based data (C93). While the authors provide a plausible explanation based on assay sensitivity differences, the dual binding mode of cyclopamine requires further validation. The interpretation relies heavily on inference rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C57"
+    ],
+    "result": "The zebrafish Smo ectodomain binds 20(S)-OHC with Kd ~170 nM and behaves as a monomer in solution at low concentration (5 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C57 are supported by binding curve data in Figure 4D and multi-angle light scattering in Figure 5\u2014supplement 1D. The Kd is consistent with the mouse CRD-Fc value (~180 nM), and the monomeric state is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "There is dramatic synergy between 20(S)-OHC and SAG in activating Smo, suggesting positive allosteric coupling between CRD and 7TM domains and implying simultaneous binding of both ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by prior work (Nachtergaele et al., 2012) demonstrating synergy. However, the current manuscript does not present new data on this phenomenon, relying entirely on citation. The inference about simultaneous binding (C92) is logical but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Some CRD mutations that abolish oxysterol binding also reduce Shh responsiveness (Y134F, P168A). Stereochemical inversion at C-20 converts a potent agonist into a weak partial agonist and effective inhibitor, suggesting Smo activation depends critically on spatial orientation between the ring system and iso-octyl chain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by functional data in Figure 6F showing differential effects of mutations on Shh vs. oxysterol responses, and by structure-activity relationships in Figures 7D and 8A-C. The interpretation about spatial orientation is reasonable given the stereochemical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24"
+    ],
+    "result": "Oxysterols are endogenous lipids that fully activate Hh signaling in the absence of ligands and induce Smo accumulation in primary cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C23-C24 state that oxysterols are 'endogenous' activators, but the manuscript does not provide evidence that 20(S)-OHC or related oxysterols are physiologically relevant Smo ligands. The activation and ciliary accumulation are demonstrated (Figure 3), but whether these are endogenous regulatory mechanisms remains unproven. The authors themselves note uncertainty about whether oxysterols are the Ptch1-regulated ligand.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims about Hedgehog pathway biology, including developmental roles, disease associations, pathway components (Ptch1, Smo), and prior structural work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C22 are standard background knowledge well-supported by appropriate citations. These establish the biological and structural context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41",
+      "C99",
+      "C100"
+    ],
+    "result": "\u0394CRD-Smo shows higher basal activity in reporter assays. Partial agonists may block unrestrained signaling while preserving physiological signaling, which could be useful given that current Smo antagonists cause significant side effects leading to treatment discontinuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C99-C100 are supported by citations to prior work. C41 is consistent with previous observations (Taipale et al., 2002; Aanstad et al., 2009). C99-C100 represent reasonable speculation about therapeutic implications supported by clinical literature (Tang et al., 2012).",
+    "result_type": "MINOR"
+  }
+]

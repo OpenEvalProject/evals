@@ -1,0 +1,168 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors developed an automated quantitative histology pipeline combining high-resolution tiled imaging (1024\u00d71024 pixels at 40X), watershed segmentation (>99% accuracy), and SVM-based cell type classification (88% average accuracy, 95% median) to analyze 208 hypocotyl cross-sections containing up to 18,000 cells each.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-supported with specific performance metrics (C27, C39), computational requirements (C28), and quality control measures (C40). The segmentation accuracy is validated across different image sizes (C27, Figure 1F), and the SVM approach uses appropriate training/test splits (C37). The quality control pipeline addresses identified weaknesses in xylem cell classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C41",
+      "C42"
+    ],
+    "result": "Principal component analysis of phenoprints revealed that Col-0 and Ler follow a conserved developmental sequence but with different temporal dynamics. Col-0 showed higher absolute growth (21-fold vs 42-fold cell increase, 0.3\u21921.6mm vs 0.15\u21921.1mm diameter), while Ler showed higher relative xylem expansion (12\u219229% vs 31\u219247% xylem occupancy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PCA analysis is appropriately conducted with normalized values (C41, Supplementary file 4) and explains 76% of variance. The quantitative measurements (C20-C23, C30-C34) are presented with clear sample sizes (~20 sections per condition, C29) and show consistent patterns. The inference about conserved developmental sequence (C42) is reasonable given the PCA clustering pattern, though statistical testing of trajectory similarity would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Differential growth dynamics between genotypes are driven by phloem proliferation differences rather than xylem production. Ler shows twofold lower total cell number (C47), twofold lower phloem proliferation (C48), and phloem stagnation at 30-35 dag, while xylem proliferation rates remain similar between genotypes (C46). This explains Ler's higher xylem occupancy despite lower overall growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular-level analysis provides mechanistic insight into previously observed phenotypic differences (C15). The claims are supported by quantitative cell counts across time points (Figure 3D-E) and are internally consistent. The inference that reduced phloem proliferation causes higher xylem occupancy (C49) is logical given equal xylem production rates. However, the study lacks direct measurements of cell division rates (only inferred from cell number changes) and does not address whether reduced proliferation reflects fewer divisions or longer cell cycle times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cell incline angle analysis reveals temporal dynamics of vascular organization. In Col-0, incline distribution transitions from uniform (15 dag, p>10\u207b\u00b3) to bimodal (30 dag, p<2.2\u00d710\u207b\u2076), with vascular organization emerging at 20-25 dag as a radial xylem plateau and orthoradial cambium/phloem layers. Cambium organization completes by 30 dag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The incline angle metric is clearly defined (C50-C52) and statistically validated using Hartigans' dip test for bimodality (C53, C55). The spatial-temporal patterns are visualized effectively (Figures 4-5) and show consistent progression. The inference about cambium organization timing (C61-C62) is supported by decreasing variation in cambial cell incline. However, the study does not validate whether incline angle truly reflects cell division plane orientation, which is stated as a possibility but then contradicted by visual inspection (C63-C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Visual inspection reveals that radial expansion is driven primarily by cambial cell divisions rather than post-cambial divisions. Xylem and phloem parenchyma show practically no post-cambial divisions (C63, C66), with continuous cell files from cambium. Exceptions occur in vascular bundles with numerous post-cambial divisions (C67). Cambial divisions are predominantly periclinal with interspersed anticlinal divisions (C68-C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims rely entirely on visual inspection without quantification (C63-C69). No data are provided on the frequency of divisions, the criteria for identifying recent divisions, or inter-observer reliability. The claim of 'practically no' divisions is qualitative and unsupported by counts. Figure 5\u2014figure supplement 1 shows cell counts in a constant xylem area but doesn't directly demonstrate absence of divisions. The inference about cell orientation switching (C65) is speculative without time-lapse or lineage tracing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Phloem pole formation follows a patterned process with constant arc interspace distance of ~140 \u03bcm (C73), determined by Bayesian analysis of APL::GUS reporter intensity peaks. This suggests non-stochastic patterning (C74), potentially consistent with reaction-diffusion mechanisms (C88) or apical patterning cues (C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The constant arc distance is determined using an appropriate Bayesian model (C73, Granqvist et al., 2012) and is visualized in Figure 6. The analysis uses phloem-specific markers (APL::GUS) providing clear spatial information. The inference of patterned vs stochastic process (C74) is reasonable given the constant spacing. However, the mechanistic explanations (C88-C90) are explicitly speculative and lack experimental support. The study analyzes only 20, 25, and 30 dag sections for this analysis\u2014earlier and later time points would strengthen the conclusion about constant spacing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The machine learning approach achieves 88% average accuracy, comparable to previous studies (83-90%, C83). Limitations include difficulty identifying certain cell states (e.g., dividing cells) due to plant cell wall rigidity reducing shape variation (C84-C85). Future improvements could incorporate cell connectivity and wall thickness features (C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The performance comparison with literature (C83) provides appropriate context. The explanation of limitations based on plant cell biology (C84) is reasonable and supported by citation. The acknowledgment of what the method cannot do (C85) and suggestions for improvement (C86) demonstrate appropriate self-criticism. The claim about universal applicability (C87) is appropriately cautious, specifying requirements (segmentable cell outlines, definable reference point).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The observed cell orientation patterns may result from mechanical compression by expanding xylem forcing tangential cell elongation (C75). Molecular patterning involving receptor-kinase/peptide pairs interacting with hormones controls cambium polarity (C76), with background-dependent penetrance stronger in Ler than Col-0 (C77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanical explanation (C75) is explicitly speculative with no experimental support\u2014no mechanical measurements or perturbations are performed. The molecular mechanisms (C76-C77) are cited from prior work but not investigated in this study. While these provide useful context for interpretation, they represent discussion points rather than results of the current work. The connection between the cited molecular mechanisms and the observed phenotypes is not experimentally established.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "hTRAP1 exhibits unusual temperature-dependent conformational behavior where it remains in the open state at room temperature despite AMPPNP binding, but increasingly populates the closed state at higher temperatures. This equilibrium is kinetically trapped and does not revert upon cooling, indicating both a large thermally sensitive kinetic barrier to closure and a highly stable closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 are consistently supported by EM and SAXS data (Figures 1 and 2, Table 1) showing temperature-dependent closure with kinetic trapping. The quantitative measurements (0.4% closed at 20\u00b0C vs 84% at 43\u00b0C) and irreversibility upon cooling provide strong convergent evidence for the proposed kinetic barrier and closed state stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The N-terminal strap extension is responsible for TRAP1's unusual temperature dependence in ATPase rates through regulation of a thermally sensitive kinetic barrier. Deletion of the strap (\u0394strap) results in 6-30 fold increases in ATPase activity and complete loss of temperature sensitivity, with immediate equilibration to the closed state at all temperatures examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C39-C44 are well-supported by multiple complementary experiments. ATPase measurements (Figure 3, Table 2), SAXS data (Figure 2B), and structure-function analysis with point mutants and truncations provide consistent evidence that the strap regulates the temperature-dependent kinetic barrier. The salt bridge preservation experiment (C42) serves as an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "FRET-based kinetic measurements demonstrate that the rate of closure is proportional to temperature and that strap removal accelerates closure by up to 24-fold at lower temperatures. Arrhenius analysis reveals that the strap contributes approximately 20 kcal/mol (difference between 48.8 and 29 kcal/mol activation energies) to the kinetic barrier for closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 are supported by systematic FRET kinetic measurements across multiple temperatures (Figure 4, Table 3). The Arrhenius analysis is mathematically sound and the temperature-dependent fold changes are internally consistent. Both inter- and intra-protomer FRET constructs show concordant results, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Strap release is coupled to NTD rotation and lid dynamics. EPR spectroscopy monitoring lid mobility shows that strap deletion accelerates the rate of lid conformational change by approximately 5-fold, consistent with the fold changes observed in ATPase rates. The lid is more mobile in the nucleotide-bound closed state compared to the apo state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C66 are supported by EPR data (Figure 5) showing coordinated changes in lid mobility upon closure and acceleration with strap deletion. The correlation between EPR-derived rates and ATPase rates (C65) provides internal validation. However, the EPR experiment uses only zTRAP1 and the labeling causes minor perturbation (C61), representing minor limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The strap stabilizes both the apo and closed states, but with asymmetric effects. Strap removal accelerates reopening by ~8-fold (contributing ~1.2 kcal/mol to closed state stability) but has a larger effect on closure rate (~16-fold, contributing ~1.7 kcal/mol to the apo state kinetic barrier).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by FRET reopening experiments (Figure 6A, Table 3). The quantitative energetic calculations from rate differences are appropriate. The finding that the strap has a larger effect on the apo\u2192closed barrier than on closed state stability is consistent with the overall model and supported by the kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Decoupling closure from hydrolysis using Mg2+-free conditions reveals that closure is the rate-limiting step in the TRAP1 ATPase cycle. The strap regulates multiple steps but has its largest effect on the rate-limiting kinetic barrier between apo and closed states, with only minor effects (~1.4-fold) on the hydrolysis step itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are supported by clever experimental design using Mg2+ dependence to separate closure and hydrolysis steps (Figure 6B-E, Table 3). The measured rates match previous literature values (C75), providing external validation. The assignment of closure as rate-limiting (C76) is now directly supported rather than inferred. Claim C74 is appropriately tentative given the small effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C101"
+    ],
+    "result": "The temperature-dependent conformational equilibrium differs between zebrafish and human TRAP1, correlating with their different physiological temperatures (~29\u00b0C for zebrafish vs ~37\u00b0C for humans). zTRAP1 shows higher basal ATPase activity and a shifted temperature response compared to hTRAP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C101 are supported by comparative SAXS and ATPase data (Figure 2, Tables 1-2). The correlation with physiological temperature is compelling but remains correlative rather than causative. The shifted equilibrium and higher basal activity of zTRAP1 are well-documented, supporting the physiological relevance of the temperature sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C45",
+      "C82",
+      "C84",
+      "C85",
+      "C87",
+      "C88"
+    ],
+    "result": "The strap makes analogous cis-protomer contacts in the apo state and trans-protomer contacts in the closed state. This dual interaction mode provides a novel regulatory strategy where the strap stabilizes both conformational states, thereby increasing the kinetic barrier height between them. In the closed state, the ordered 14 residues add 757 \u00c5\u00b2 of buried surface area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C5, C45, C82, C84, C85, C87, C88 are supported by crystal structure data (C1, C84) and inference from kinetic/thermodynamic measurements combined with structural homology to other Hsp90s (C45). The model of cis/trans switching (C45, C85) is well-reasoned but remains inferential as direct structural evidence of the apo cis-contacts is not provided. The mechanistic model (C87, C88) is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C20",
+      "C21",
+      "C80",
+      "C89",
+      "C92",
+      "C93"
+    ],
+    "result": "The N-terminal strap shows clear evolutionary patterns: absent in yeast and bacteria, shortest in mammalian cytosolic Hsp90s, and longest in organellar Hsp90s (TRAP1 and Grp94). Within TRAP1, conservation is strong through the structured region but decreases toward the N-terminus. Grp94 has a very long and well-conserved strap region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C20, C21, C80, C89, C92, C93 are supported by sequence alignment data (Figure 7). The phylogenetic distribution is clearly documented and the conservation patterns within each family are well-described. This provides important evolutionary context for the functional findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose that N-terminal strap extensions provide an evolutionary mechanism to fine-tune Hsp90 activity for diverse cellular environments and functional demands. In TRAP1, the temperature sensitivity may represent a homeostatic response to heat generation in mitochondria. The extended strap in organellar homologs might compensate for the lack of co-chaperone regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81, C97, C99, C100 are explicitly speculative proposals (marked as SPECULATION in evidence_type). While these hypotheses are reasonable and consistent with the data, they lack direct experimental validation. The mitochondrial heat hypothesis (C100) is particularly speculative. These represent interesting directions for future work but are not demonstrated by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims about Hsp90 structure and function: Hsp90 interacts with ~10% of the eukaryotic proteome, exists as a homodimer with three domains (NTD binds ATP, CTD provides dimerization interface, MD facilitates hydrolysis and client binding), and dimer closure is the rate-limiting step for ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 are well-established background knowledge supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C38",
+      "C83",
+      "C91",
+      "C94"
+    ],
+    "result": "Prior work on strap/N-terminal extensions in Hsp90 homologs: Strap deletion increases ATPase activity in zTRAP1 (6-fold), Grp94 (5-fold), and a similar effect is seen with \u03b2-strand deletion in yHsp90 (1.5-fold). A 122-residue extension in an Hsp90\u03b1 splice variant also negatively regulates ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C38, C83, C91, C94 accurately represent prior published work (supported by appropriate citations). These establish the context for the current study's more detailed mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous TRAP1 crystal structures revealed marked asymmetry between protomers (essential for catalytic turnover) and an ordered 14-residue N-terminal extension of the \u03b2-strand that crosses between protomers in the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 accurately describe the authors' previous structural work (Lavery et al., 2014), providing essential background for the current functional study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C29",
+      "C55",
+      "C56"
+    ],
+    "result": "hTRAP1 has an ATPase rate similar to E. coli Hsp90 (~0.5 min\u207b\u00b9) and shows a 200-fold increase in hydrolysis rate between 25\u00b0C and 55\u00b0C. The activation energy for WT hTRAP1 (48.8 kcal/mol) is consistent with previous measurements but considerably higher than other Hsp90 homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C29, C55, C56 are supported by appropriate citations and comparison with literature values. The consistency with previous measurements (C55) and comparison with other homologs (C56, Figure 4\u2014figure supplement 2) provide important validation and context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "Background on Hsp90 regulation and functional importance: Catalytic efficiency varies ~15-fold among Hsp90s, mutations affecting ATPase rates compromise yeast viability, and organellar homologs have only one identified co-chaperone compared to multiple for cytosolic Hsp90s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C96, C98 are well-supported by appropriate citations and provide important functional context for understanding why strap-mediated kinetic regulation might be physiologically important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C90"
+    ],
+    "result": "An Hsp90\u03b1 splice variant contains a very large N-terminal extension of 122 residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C90 are supported by citation to Tripathi and Obermann, 2013. This represents an extreme example of N-terminal extension relevant to the evolutionary discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "MSL labeling for EPR causes a minor (~1.3-fold) effect on steady-state ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by direct comparison of labeled vs unlabeled protein. This is an important control demonstrating that the EPR probe does not substantially perturb function.",
+    "result_type": "MINOR"
+  }
+]

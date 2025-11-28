@@ -1,0 +1,2191 @@
+{
+  "submission": {
+    "id": "1b70d28c-5a9f-4bbc-b695-5b19ac56e492",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:14:12.904466Z",
+    "updated_at": "2025-11-28T21:14:12.904466Z"
+  },
+  "content": [
+    {
+      "id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "submission_id": "1b70d28c-5a9f-4bbc-b695-5b19ac56e492",
+      "content_type": "manuscript",
+      "content_text": "# Shared mushroom body circuits underlie visual and olfactory memories in Drosophila\n\n## Authors\n\n- Katrin Vogt<sup>1</sup>\n- Christopher Schnaitmann<sup>1</sup>\n- Kristina V Dylla<sup>1</sup>\n- Stephan Knapek<sup>1</sup>\n- Yoshinori Aso<sup>2</sup>\n- Gerald M Rubin<sup>2</sup>\n- Hiromu Tanimoto<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Max-Planck-Institute of Neurobiology Martinsried Germany\n2. Janelia Farm Research Campus, Howard Hughes Medical Institute Ashburn United States\n3. Graduate School of Life Sciences Tohoku University Sendai Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn nature, animals form memories associating reward or punishment with stimuli from different sensory modalities, such as smells and colors. It is unclear, however, how distinct sensory memories are processed in the brain. We established appetitive and aversive visual learning assays for Drosophila that are comparable to the widely used olfactory learning assays. These assays share critical features, such as reinforcing stimuli (sugar reward and electric shock punishment), and allow direct comparison of the cellular requirements for visual and olfactory memories. We found that the same subsets of dopamine neurons drive formation of both sensory memories. Furthermore, distinct yet partially overlapping subsets of mushroom body intrinsic neurons are required for visual and olfactory memories. Thus, our results suggest that distinct sensory memories are processed in a common brain center. Such centralization of related brain functions is an economical design that avoids the repetition of similar circuit motifs.\n\n## Introduction\n\nWhen animals encounter reward or harm, they form associations with concomitant environmental cues. Such associative memories allow an animal to predict upcoming events and to choose an appropriate behavior. Memory induced by appetitive and aversive events is usually not restricted to a single sensory cue. For example, a traumatic event drives aversive associative memories of concurrent auditory and visual stimuli in rats (Campeau and Davis, 1995). The same appetitive and aversive reinforcers drive both olfactory and visual memories in insects, while associative memories with different modalities are formed using the same neurotransmitter system (Unoki et al., 2005, 2006). However, the circuit mechanisms underlying memories of different sensory modalities driven by the same reinforcing stimulus are unknown. Two alternative circuit organizations are possible: each sensory modality may feed into a dedicated memory circuit, or representations of different sensory stimuli (e.g., olfactory and visual) may undergo associative modulation in a shared set of neurons in the brain (Zars, 2010).\n\nCellular mechanisms underlying associative learning have been intensely studied in various animals, including Drosophila (Keene and Waddell, 2007). However, comparisons between memories of different sensory modalities have led to contradictory results. For example, the mushroom bodies (MBs) are required for olfactory and gustatory memories (Heisenberg et al., 1985; Davis, 1993; Heisenberg, 2003; Masek and Scott, 2010), but according to previous studies, not for a visual memory task (Heisenberg et al., 1985; Wolf et al., 1998; Tang and Guo, 2001; Zhang et al., 2007). Nevertheless, other studies suggest that visual information is indeed processed in the MBs (Barth and Heisenberg, 1997; Liu et al., 1999; Brembs and Wiener, 2006; van Swinderen et al., 2009). These discrepancies are difficult to resolve because many of these studies, especially those comparing stimuli with a different physical nature (e.g., olfactory vs visual), employed different behavioral tasks (e.g., flight orientation or binary choice by walking flies) and/or conditioning designs (Brembs and Wiener, 2006; Brembs and Plendl, 2008; Pitman et al., 2009; Ofstad et al., 2011). We reasoned that a more informative comparison might be obtained using comparable learning paradigms (Scherer et al., 2003; Gerber et al., 2004a; Guo and Guo, 2005; Hori et al., 2006; Mota et al., 2011).\n\nWe previously developed appetitive and aversive visual conditioning assays (Schnaitmann et al., 2010). During appetitive training, flies receive one of the two color stimuli together with a sugar reward, whereas the other color is presented without a reward. When they are given the choice between the two colors in a subsequent test, flies show significant conditioned approach to the previously rewarded color. The same paradigm was also used with application of acid punishment during training instead of sugar reward, leading to conditioned avoidance. This visual conditioning assay, appetitive learning in particular, shares several critical features with the well-studied olfactory conditioning assay (Tempel et al., 1983; Schwaerzel et al., 2003), including the conditioning design, sugar-soaked filter paper as the reward, and the use of a binary choice between two conditioned stimuli scored as an alteration in the distribution of freely moving flies. Thus, our experimental design allows direct comparison of the mechanisms underlying appetitive visual memories with those of olfactory memories.\n\nStudies that have found distinct neuromodulator circuits underlying appetitive and aversive memories for one modality have succeeded by restricting the critical difference to reward vs punishment (Schwaerzel et al., 2003; Gerber et al., 2004a; Vergoz et al., 2007; Honjo and Furukubo-Tokunaga, 2009; von Essen et al., 2011). However, there is no established aversive visual learning assay employing the widely used potent aversive reinforcer, electric shock, in the same way as in aversive olfactory conditioning (Quinn et al., 1974; Tully and Quinn, 1985). To meet this need, we implemented electric shock punishment into our learning assay by devising a transparent shock grid that is placed beneath the flies. This allows us to pair electric shock with the same visual stimuli as used in appetitive learning (Schnaitmann et al., 2010). Using these appetitive and aversive visual learning assays, we examined the roles of distinct aminergic neurons and found a common requirement of dopamine neurons in visual and olfactory learning. Furthermore, we demonstrate a role for the MB for appetitive and aversive visual memories, suggesting significant commonality in the neuronal mechanisms underlying memories of different sensory modalities.\n\n## Results\n\n### Electric shock punishment induces aversive visual memories\n\nWe previously developed an appetitive visual learning assay that shares critical features with olfactory conditioning (Figure 1A,B; Schnaitmann et al., 2010). In our assay, the visual stimuli (LEDs; Figure 1D) are projected from below through translucent sugar-soaked filter paper, the appetitive reinforcer used in olfactory conditioning. However, the commonly used aversive reinforcer, electric shock, is more difficult to integrate, as a metal grid beneath the fly would disrupt visual stimulation from below that is used in appetitive conditioning.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013C) Experimental setups for appetitive and aversive visual learning. Scheme shows single components (B) of exchangeable conditioning arenas for sugar reward (A) and electric shock punishment (C) that share the same light source and video camera (B). (B) Appetitive setup: cylindrical Fluon-coated arena closed from top with opaque lid during training or transparent lid during test. Exchangeable Petri dish on the bottom to present sugar or water soaked filter paper during training and neutral filter paper during test. Filter paper is clamped in the dish by a plastic ring. Aversive setup: the circular arena consists of a transparent electric shock grid, removable Fluon-coated plastic ring and transparent lid. The cylinder on top isolates each setup from the others and creates a similar closed visual scene as in the appetitive setup. (D) Visual stimulus source with one blue and one green high power LED per quadrant. (E) The conditioning arena with the transparent electric shock grid and a magnification with visual stimulation and a fly. Alternating stripes marked by + and \u2212 symbols indicate electric shock application. (F) Aversive visual memory depends on shock intensity (One-way ANOVA, p < 0.001). Flies show significant memory from 15 V (One sample t test, p < 0.001) n = 15. No difference in performance is found among 30\u2013120 V (post-hoc pairwise comparisons p > 0.05) n = 16\u201330. Further parametric behavioral analyses for aversive conditioning are shown in Figure 1\u2014figure supplement 1. Bars and error bars represent mean and SEM, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) For aversive visual memory a single training trial leads to significant aversive memory (One sample t test, p < 0.001). Further repetition of training does not lead to improvement in learning (one way ANOVA, p > 0.1). n = 16. (B) A single shock (1 s) before test facilitates the memory performance at 25\u00b0C (0 V; One sample t test, p > 0.05, 30\u2013120 V; One sample t test, p < 0.001), n = 16. Bars and error bars represent mean and SEM, respectively. (C) Green preference of flies after aversive conditioning with 60 V at 25\u00b0C. During every second of the test green preference is calculated independently for both reciprocals (Blue+/Green+ represent punished color during training).\n\nWe solved this problem by fabricating a shock grid from a transparent low-resistance material, indium tin-oxide (ITO; Figure 1B,C). An alternating electrode pattern was laser-etched into a thin layer of ITO on a glass plate (Figure 1E). Other parameters of the assay were replicated from appetitive conditioning, except that the arena height was reduced so that flies could not escape the electric shock.\n\nTo characterize shock punishment using the transparent grid, we subjected flies to visual conditioning with four training trials as for appetitive training (Figure 1\u2014figure supplement 1A). During one training trial, each visual stimulus (green/blue color) was alternately presented for 1 min to the flies, one of them paired with punishment (\u2018Materials and methods\u2019). The electric shock served as potent aversive reinforcement and induced aversive visual memory at a signal to noise ratio comparable to visual memories in other paradigms (Figure 1F, Figure 1\u2014figure supplement 1A; Menne and Spatz, 1977; Wolf and Heisenberg, 1991). We found that conditioned avoidance increased with ascending voltages. A plateau was reached at approximately 30 V, and the performance did not change with more intense shock (Figure 1F). Thus, we applied 60 V for all subsequent experiments. For aversive conditioning, a single shock pulse was applied 5 s before the beginning of the test to arouse the flies (Figure 1\u2014figure supplement 1B; Menne and Spatz, 1977; Gerber and Hendel, 2006). Video analysis of the whole test period showed that the choice behavior stabilized within roughly 20 s (Figure 1\u2014figure supplement 1C). Over 90 s of the test, flies' preference for a previously shock-paired visual stimulus is decreased in comparison to an unpaired visual stimulus (Figure 1\u2014figure supplement 1C). Together with the previously developed appetitive memory assay, these behavioral tools allow us to compare the neural requirements of appetitive and aversive visual memory, as well as visual and olfactory memories.\n\n### Different sets of dopamine neurons drive appetitive and aversive visual memories\n\nMonoamine neurons were previously shown to signal reinforcement during olfactory memory formation in Drosophila (Schwaerzel et al., 2003; Claridge-Chang et al., 2009; Aso et al., 2012; Burke et al., 2012; Liu et al., 2012; Sitaraman et al., 2012) and other insects (Hammer, 1993; Unoki et al., 2005; Vergoz et al., 2007). In order to identify reinforcement signaling neurons for visual memories, we therefore blocked distinct sets of aminergic neurons by expressing shibirets1 (shits1; Kitamoto, 2001) and assessed these neurons' role in appetitive and aversive conditioning. To target these aminergic neurons, we chose TDC2-GAL4, TH-GAL4 and DDC-GAL4 driver lines that label different subsets of tyramine/octopamine and dopamine neurons (Li et al., 2000; Friggi-Grelin et al., 2003; Cole et al., 2005). We found that the requirements of these neurons for appetitive and aversive visual memories are strikingly similar to those in olfactory memories. Blocking octopamine/tyramine neurons with TDC2-GAL4 did not cause a significant defect in sucrose reward or shock punishment memory (Figure 2A). In contrast, the blockade of a large fraction of dopamine neurons with TH-GAL4 selectively reduced aversive memory (Figure 2A). As in olfactory learning (Liu et al., 2012), the blockade with DDC-GAL4 that labels different sets of dopamine and serotonin neurons substantially impaired appetitive memory, but not aversive memory (Figure 2A). The blockade with DDC-GAL4 did not significantly affect the reflexive choice of sugar, while blocking the dopamine system with TH-GAL4 caused prolonged hyperactivity that indirectly influenced shock avoidance (Lebestky et al., 2009; Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig2-v1.jpg)\n\n**Figure 2.:** (A) Different aminergic neurons are continuously blocked with corresponding GAL4 drivers. The blockade with TH-GAL4 and DDC-GAL4 selectively impaired aversive (one-way ANOVA, post-hoc pairwise comparisons, p < 0.001) and appetitive memories (Kruskal\u2013Wallis test, post-hoc pairwise comparisons, p < 0.001), respectively. Blocking octopamine and tyramine neurons does not significantly impair memory (post hoc pairwise comparisons p > 0.05). n = 8\u201345. (B and C) Scheme of the temperature shift to block the output of corresponding neurons during training (B) or test (C). (D and E) Output of DDC-GAL4 labeled neurons is only necessary in appetitive training (one-way ANOVA, post hoc pairwise comparisons, p < 0.05) but dispensable during test (one-way ANOVA, p > 0.05). n = 13\u201338. (F and G) Similarly, output of TH-GAL4 labeled neurons is only necessary during aversive training (Kruskal\u2013Wallis test, post hoc pairwise comparisons, p < 0.01) but dispensable during test (one-way ANOVA, p > 0.05). n = 12\u201316. All flies were starved prior to the experiments. Memory of the experimental group is compared to performances of the corresponding control groups. Only the most conservative statistical result of multiple pairwise comparisons is stated. Bars and error bars represent mean and SEM, respectively.\n\n**Table 1.**\n Sugar and shock response of the lines with impaired visual memories\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype</th>\n      <th>Sugar response Mean \u00b1 SEM</th>\n      <th>Shock response Mean \u00b1 SEM</th>\n      <th>* p &lt; 0.05</th>\n      <th>Control data for</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>shi/+</td>\n      <td>\u2013</td>\n      <td>\u22120.429 \u00b1 0.056</td>\n      <td></td>\n      <td>Figures 2 and 3</td>\n    </tr>\n    <tr>\n      <td>shi/TH</td>\n      <td>\u2013</td>\n      <td>\u22120.189 \u00b1 0.019</td>\n      <td>*</td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>+/TH</td>\n      <td>\u2013</td>\n      <td>\u22120.386 \u00b1 0.060</td>\n      <td></td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>shi/MB504B</td>\n      <td>\u2013</td>\n      <td>\u22120.382 \u00b1 0.041</td>\n      <td></td>\n      <td>Figure 3</td>\n    </tr>\n    <tr>\n      <td>+/MB504B</td>\n      <td>\u2013</td>\n      <td>\u22120.385 \u00b1 0.051</td>\n      <td></td>\n      <td>Figure 3</td>\n    </tr>\n    <tr>\n      <td>shi/+</td>\n      <td>0.718 \u00b1 0.020</td>\n      <td>\u2013</td>\n      <td></td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>shi/DDC</td>\n      <td>0.729 \u00b1 0.027</td>\n      <td>\u2013</td>\n      <td></td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>+/DDC</td>\n      <td>0.725 \u00b1 0.017</td>\n      <td>\u2013</td>\n      <td></td>\n      <td>Figure 2</td>\n    </tr>\n    <tr>\n      <td>shi/+</td>\n      <td>0.436 \u00b1 0.053</td>\n      <td>\u2013</td>\n      <td></td>\n      <td>Figure 3</td>\n    </tr>\n    <tr>\n      <td>shi/R58E02</td>\n      <td>0.544 \u00b1 0.033</td>\n      <td>\u2013</td>\n      <td></td>\n      <td>Figure 3</td>\n    </tr>\n    <tr>\n      <td>+/R58E02</td>\n      <td>0.563 \u00b1 0.036</td>\n      <td>\u2013</td>\n      <td></td>\n      <td>Figure 3</td>\n    </tr>\n    <tr>\n      <td>CS</td>\n      <td>0.547 \u00b1 0.041</td>\n      <td>\u22120.471 \u00b1 0.044</td>\n      <td></td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>dumb2</td>\n      <td>0.634 \u00b1 0.042</td>\n      <td>\u22120.289 \u00b1 0.031</td>\n      <td>*</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>dumb2/MB247, dumb2</td>\n      <td>\u2013</td>\n      <td>\u22120.255 \u00b1 0.028</td>\n      <td>*</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>+/MB247</td>\n      <td>\u2013</td>\n      <td>\u22120.452 \u00b1 0.067</td>\n      <td></td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>shi/+</td>\n      <td>0.569 \u00b1 0.039 \u2020</td>\n      <td>\u22120.359 \u00b1 0.034</td>\n      <td></td>\n      <td>Figure 5</td>\n    </tr>\n    <tr>\n      <td>shi/201y</td>\n      <td>0.444 \u00b1 0.039</td>\n      <td>\u22120.401 \u00b1 0.033</td>\n      <td></td>\n      <td>Figure 5</td>\n    </tr>\n    <tr>\n      <td>+/201y</td>\n      <td>0.649 \u00b1 0.064</td>\n      <td>\u22120.353 \u00b1 0.033</td>\n      <td></td>\n      <td>Figure 5</td>\n    </tr>\n    <tr>\n      <td>shi/+</td>\n      <td>0.569 \u00b1 0.039 \u2020</td>\n      <td>\u22120.387 \u00b1 0.029</td>\n      <td></td>\n      <td>Figure 5</td>\n    </tr>\n    <tr>\n      <td>shi/MB247</td>\n      <td>0.535 \u00b1 0.018</td>\n      <td>\u22120.297 \u00b1 0.038</td>\n      <td></td>\n      <td>Figure 5</td>\n    </tr>\n    <tr>\n      <td>+/MB247</td>\n      <td>0.575 \u00b1 0.048</td>\n      <td>\u22120.384 \u00b1 0.028</td>\n      <td></td>\n      <td>Figure 5</td>\n    </tr>\n    <tr>\n      <td>shi/+</td>\n      <td>0.548 \u00b1 0.024</td>\n      <td>\u22120.366 \u00b1 0.031</td>\n      <td></td>\n      <td>Figure 7</td>\n    </tr>\n    <tr>\n      <td>shi/MB010B</td>\n      <td>0.526 \u00b1 0.061</td>\n      <td>\u22120.393 \u00b1 0.052</td>\n      <td></td>\n      <td>Figure 7</td>\n    </tr>\n    <tr>\n      <td>+/MB010B</td>\n      <td>0.591 \u00b1 0.048</td>\n      <td>\u22120.353 \u00b1 0.040</td>\n      <td></td>\n      <td>Figure 7</td>\n    </tr>\n    <tr>\n      <td>shi/MB009B</td>\n      <td>0.689 \u00b1 0.067</td>\n      <td>\u22120.368 \u00b1 0.028</td>\n      <td></td>\n      <td>Figure 7</td>\n    </tr>\n    <tr>\n      <td>+/MB009B</td>\n      <td>0.739 \u00b1 0.017</td>\n      <td>\u22120.373 \u00b1 0.035</td>\n      <td></td>\n      <td>Figure 7</td>\n    </tr>\n  </tbody>\n</table>\n\n_No significant defect in na\u00efve sugar preference is detected among the experimental groups and the corresponding control groups (one-way ANOVA, p > 0.05), n = 4\u20138. No significant defect in na\u00efve shock avoidance is detected among the experimental groups and the corresponding control groups (one-way ANOVA, p > 0.05), except for shi/TH, dumb2 and dumb2/MB247, dumb2 (one-way ANOVA, post-hoc pairwise comparisons, p < 0.05). n = 6\u201310. Consistent with a study by Lebestky et al. (2009), we observe prolonged arousal after shocking these flies, and this hyperactivity rather than shock sensitivity is a likely cause of the reduced avoidance. Indeed, the DopR+ expression in the MB rescues visual memories, even though shock avoidance is still not intact.\u2020The identical data is represented, as these two sets of measurements were performed in parallel.*indicates p-value lower than 0.05. Corrected p-values for shock avoidance: shi/TH vs. shi/+: p = 0.006, shi/TH vs. +/TH: p = 0.037; CS vs. dumb2: p = 0.01, dumb2/MB247,dumb2 vs. CS/MB247: p = 0.0492_\n\nWe next analyzed the temporal requirements for neurons labeled in TH-GAL4 and DDC-GAL4 in our learning paradigm. We measured visual memories for 30 min retention and transiently blocked the neurons either during training (Figure 2B) when reinforcers were presented or during retrieval of the memory (Figure 2C). The blockade with DDC-GAL4 during training severely impaired appetitive memory, whereas the same blockade after the training did not significantly affect memory (Figure 2D,E). Similarly, the neurons labeled in TH-GAL4 were required specifically during acquisition of aversive memory (Figure 2F,G). These results suggest that the neurons differentially labeled with DDC-GAL4 and TH-GAL4 mediate the formation of appetitive and aversive visual memories, likely acting as reinforcement signals. As specific subsets of dopamine neurons in TH-GAL4 and DDC-GAL4 have been shown to signal sugar reward and shock punishment for olfactory memories (Claridge-Chang et al., 2009; Aso et al., 2012; Burke et al., 2012; Liu et al., 2012), we genetically dissected these populations further to identify the essential neurons for visual memories.\n\nTo functionally restrict the neurons in DDC-GAL4 and TH-GAL4 into smaller subsets, we selected two specific GAL4 driver lines for dopamine neurons: MB504B and R58E02. R58E02-GAL4 drives GAL4 expression in the PAM cluster neurons that signal reward for olfactory memory (Figure 3A,C; Liu, et al., 2012). This driver co-expresses with DDC-GAL4, but rarely with TH-GAL4, in the PAM cluster (Liu et al., 2012). MB504B is a Split GAL4 line we generated to specifically label four individual dopamine neurons in the PPL1 cluster: MB-MP1, MB-MV1, MB-V1, and the neuron that projects to the tip of the \u03b1 lobe (Figure 3B). These neurons are a subset of TH-GAL4 and have been shown, using a less specific line, to induce aversive olfactory memory (Aso et al., 2012). We found that the blockade of these neurons with shits1 indeed impaired aversive or appetitive visual memory, respectively (Figure 3C\u2013F), but did not significantly affect the reflexive choice of sugar and shock (Table 1). Thus, we conclude that visual and olfactory memories share neuronal substrates for appetitive and aversive reinforcements.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) Expression patterns of R58E02-GAL4 (PAM-Cluster) and MB504B-GAL4 (PPL1-Cluster) in the MB region (outlined) are visualized by mCD8::GFP (green). Neuropil counterstaining with antibody against Synapsin (magenta). Scalebar = 50 \u00b5m. (C and D) Blocking R58E02-GAL4 (C), but not MB504B-GAL4 (D) subsets of dopamine neurons impairs appetitive memories, respectively (one-way ANOVA, post-hoc pairwise comparisons, p < 0.001). n = 10\u201321. (E and F) Blocking MB504B-GAL4 (E), but not R58E02-GAL4 (F) subsets of dopamine neurons impairs aversive memories, respectively (one-way ANOVA, post-hoc pairwise comparisons, p < 0.001). n = 11\u201321. All flies were starved prior to the experiments. Bars and error bars represent mean and SEM, respectively.\n\nTo examine whether the activity of these neurons directly drives memories, or carries a regulatory role, we exerted direct control over neuronal activity with R58E02-GAL4 and MB504B-GAL4 using a temperature-sensitive cation channel dTRPA1 (Hamada et al., 2008). We paired one of the visual stimuli with thermo-activation of GAL4-expressing neurons by raising ambient temperature to 31\u00b0C and subsequently measured the flies' color preference (Figure 4A). Thermo-activation of the PAM and PPL1 cluster neurons with R58E02-GAL4 and MB504B-GAL4 was sufficient to induce appetitive and aversive memories, respectively (Figure 4B,C). Based on these results we conclude that different subsets of dopamine neurons supply appetitive and aversive reinforcement information for visual as well as olfactory memories.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scheme of reinforcement replacement. One visual stimulus is paired with temperature elevation (31\u00b0C) during training, leading to activation of dTrpA1-expressing neurons. (B and C) Thermo-activation with R58E02-GAL4 (PAM) and MB504B-GAL4 (PPL1) induces appetitive (one-way ANOVA, post-hoc pairwise comparisons test, p < 0.01) and aversive visual memories (Kruskal\u2013Wallis test, post-hoc pairwise comparisons test, p < 0.05), respectively. n = 6\u201318. (D) DopR null mutant dumb2 (which also allows dumb expression via GAL4) shows a strong defect in appetitive and aversive memory (Kruskal\u2013Wallis test, post-hoc pairwise comparisons test, p < 0.001). Expression of DopR+ in the MB restores both forms of visual memory of the dumb2 mutant (Kruskal\u2013Wallis test, post-hoc pairwise comparisons test, p < 0.05). n = 8\u201316. Visual cue discrimination for dumb2 mutant flies is shown in Figure 4\u2014figure supplement 1. All flies were starved prior to the experiments. Bars and error bars represent mean and SEM, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The blue and green bars represent the punished color during training in both reciprocals (Blue+ and Green+). Deviation from zero shows bias in visual choice, thus animals are able to discriminate visual stimuli in test. Bars and error bars represent mean and SEM, respectively.\n\nSince DopR, a D1-like dopamine receptor, is required for olfactory memories (Kim et al., 2007; Liu et al., 2012; Qin et al., 2012), we hypothesized that it is also required for visual memories. Consistent with our results from the block of dopamine neurons, we found severe appetitive and aversive visual memory defects in the mutant for DopR (dumb2; Kim et al., 2007, Figure 4D, see Table 1; Figure 4\u2014figure supplement 1 for controls). As both the PAM neurons in R58E02-GAL4 and the PPL1 neurons in MB504B-GAL4 terminate in the MBs (Figure 3A,B), we hypothesized that their output is transmitted to MB intrinsic neurons, Kenyon cells (KCs), through DopR. To express DopR+ in the mutant background, we made use of the PiggyBac insertion mutant (dumb2) that contains UAS in the first intron of the DopR gene allowing GAL4-dependent expression of the gene (Kim et al., 2007). Selective expression of DopR+ in the KCs using MB247-GAL4 significantly rescued the memory defect of the mutant (Figure 4D). Altogether, these results suggest that the same sets of dopamine neurons convey reward and punishment signals to the MBs to induce appetitive and aversive memories of the different sensory modalities.\n\n### Kenyon cells are required for visual memories\n\nIf visual information is modulated by converging dopamine signals in the MBs, the output of KCs should be essential for visual memories. To test this hypothesis, we used two distinct GAL4 drivers labeling \u03b1/\u03b2 and \u03b3 KCs, 201y (Yang et al., 1995) and MB247 (Zars et al., 2000), to express shits1 and continuously block the output of KCs during training and test. Both appetitive and aversive memories in the experimental groups were significantly impaired (Figure 5A, see Table 1 and Figure 5\u2014figure supplement 1 for controls). To control for expression of shits1 outside the MBs, we blocked GAL4 transactivation of 201y in the MBs using MB247-GAL80 (Krashes et al., 2007). Addition of MB247-GAL80 fully restored the impaired memories (Figure 5A). Thus, we conclude that visual memories require the output of KCs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig5-v1.jpg)\n\n**Figure 5.:** (A) Blocking output of KCs labeled with 201y-GAL4 and MB247-GAL4 leads to significant impairment in both appetitive and aversive memories (one-way ANOVA, post-hoc pairwise comparisons, p < 0.05). n = 10\u201314. MB247-GAL80 restores impaired memory with 201y-GAL4 (post-hoc pairwise comparisons, p > 0.05). n = 10\u201314. Visual cue discrimination of these genotypes is shown in Figure 5\u2014figure supplement 1. (B) Conditioning protocol with operant component and with visual context maintained between training and test (compare to protocol in A). Visual memories with the modified protocol require intact MBs (one-way ANOVA, post-hoc pairwise comparisons, p < 0.05). n = 14\u201315. Figure 5\u2014figure supplement 2 shows another example for the requirement of MBs with a modified aversive conditioning protocol. Bars and error bars represent mean and SEM, respectively.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The blue and green bars represent the punished color during training in both reciprocals (Blue+ and Green+). Deviation from zero shows bias in visual choice, thus animals are able to discriminate visual stimuli in test. Bars and error bars represent mean and SEM, respectively.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Test at 33\u00b0C does not require shock (Control groups: One sample t test, p < 0.01). n = 10\u201311. Visual memories without shock before test require intact MBs (one-way ANOVA, post-hoc pairwise comparison, p < 0.05). n = 10\u201311. Bars and error bars represent mean and SEM, respectively.\n\nThe MBs have been reported to be dispensable for some forms of visual memory, especially in the \u2018flight simulator\u2019 (Wolf et al., 1998; Ofstad et al., 2011) and to be required only when the learning context is changed between training and test (Liu et al., 1999; Peng et al., 2007). Our conditioning design also involves a change in the context of visual stimulation: the entire conditioning arena is homogeneously illuminated during training, whereas green and blue lights are presented in the four quadrants of the arena in the test (Figure 5A). To eliminate this context change, we modified the conditioning design by simultaneously presenting both visual cues throughout training and test (Figure 5B). This necessarily introduced an \u2018operant\u2019 component to the training similar to that of the standard flight simulator learning; flies can avoid electric shock by staying away from the paired color. 201y-GAL4 flies with blocked MBs displayed no visual memory, whereas the control flies significantly avoided the punished color (Figure 5B). Thus we conclude that visual memory in our assay requires the MBs independent of the conditioning design (classical vs operant) and of context changes between training and test. Also the additional arousal of flies prior to the test by a single pulse of electric shock did not change the requirement for MB output (Figure 5\u2014figure supplement 2).\n\n### Distinct but overlapping subsets of Kenyon cells are required for visual and olfactory memories\n\nVisual and olfactory memories use the same MB-projecting dopamine neurons. We therefore asked whether the post-synaptic MB neurons are also shared, using c305-GAL4 (Krashes et al., 2007), 17D-GAL4 (Martin et al., 1998) and 201y-GAL4 to inactivate selective KC subsets during aversive visual and olfactory conditioning. Blocking the \u03b1\u2032/\u03b2\u2032 neurons with c305a-GAL4 selectively impaired olfactory memory (Figure 6A,B). In contrast, the consequences of the blockades with 201y-GAL4 (\u03b1/\u03b2 and \u03b3 neurons) and 17D-GAL4 (\u03b1/\u03b2 neurons) were the same in visual and olfactory memories. 17D-GAL4/shits1 flies had no significant perturbation of either memory, while the blockade of the \u03b1/\u03b2 and \u03b3 neurons with 201y-GAL4 strongly impaired both visual and olfactory memories (Figure 6A,B). Hence, visual and olfactory memories recruit partially overlapping KC subsets. The specific contribution of \u03b1\u02b9/\u03b2\u02b9 neurons to olfactory learning is consistent with the preferential representation of olfactory inputs to these neurons (Turner et al., 2008).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig6-v1.jpg)\n\n**Figure 6.:** (A) Only blocking output of neurons labeled with 201y-GAL4 (\u03b1/\u03b2 and \u03b3 lobes) during visual conditioning leads to memory impairment (one-way ANOVA, post-hoc pairwise comparison, p < 0.01), n = 12\u201319. (B) In contrast, in aversive olfactory memory, blocking output of neurons labeled with 201y-GAL4 (\u03b1/\u03b2 and \u03b3 lobes) and c305-GAL4 (\u03b1\u02b9/\u03b2\u02b9 lobes) leads to significant memory impairment (one-way ANOVA, post-hoc pairwise comparison, p < 0.001). n = 10\u201322. Bars and error bars represent mean and SEM, respectively.\n\n### The \u03b3 lobe neurons are important for visual memory\n\nIn olfactory memories, the different lobes of the MBs have specific functions. To map the contributions of MB lobes to visual learning, we took a suite of Split GAL4 drivers that specifically label different lobes (Figure 7A, \u2018Materials and methods\u2019 section). Blocking the output of the \u03b3 lobe neurons (Figures 7A, MB009B-GAL4, see Table 1 and Figure 7\u2014figure supplement 1 for controls) as well as the entire KC population (Figures 7A, MB010B-GAL4, see Table 1 and Figure 7\u2014figure supplement 1 for controls) impaired both appetitive and aversive visual memories (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig7-v1.jpg)\n\n**Figure 7.:** (A) Partial projections of expression patterns of Split GAL4 lines are visualized by mCD8::GFP (green). Neuropil counterstaining with antibody against Synapsin (magenta). Scalebar = 100 \u00b5m. MB010B-GAL4 labels all lobes of the MB, MB009B-GAL4 labels \u03b3 lobes, MB186B-GAL4 labels \u03b1\u2032/\u03b2\u2032 lobes, MB008B-GAL4 labels \u03b1/\u03b2 lobes. (B) Blocking output of specific MB-lobe subsets during appetitive conditioning showed that \u03b3 lobes are specifically required (Kruskal\u2013Wallis test, post-hoc pairwise comparisons, p < 0.05). n = 10\u201323. In aversive conditioning we found similar requirement of the \u03b3 lobes (one-way ANOVA, post-hoc pairwise comparisons, p < 0.05). n = 8\u201323. Visual cue discrimination of these genotypes is shown in Figure 7\u2014figure supplement 1. Bars and error bars represent mean and SEM, respectively.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The blue and green bars represent the punished color during training in both reciprocals (Blue+ and Green+). Deviation from zero shows bias in visual choice, thus animals are able to discriminate visual stimuli in test. Bars and error bars represent mean and SEM, respectively.\n\nBlocking the output of \u03b1\u2032/\u03b2\u2032 neurons (Figures 7A, MB186B-GAL4) or \u03b1/\u03b2 neurons (Figures 7A, MB008B-GAL4) did not significantly reduce the performance compared to the controls (Figure 7B), although MB008B-GAL4/UAS-shits1 flies showed a tendency toward impairment. The required KC subsets for appetitive and aversive memories were strikingly similar. This suggests that the output of specific subsets of KCs representing visual information is differentially modulated by reward or punishment.\n\n### MB output is required during training and test\n\nNext, we explored the temporal requirements of MB output for the formation and retrieval of visual memory. We transiently blocked the output of a broad population of KCs using MB010B-GAL4 (Figure 8A\u2013D, all lobes) (Br\u00e4cker et al., 2013) and MB247-GAL4 (Figure 8A,B,E,F; \u03b1/\u03b2 and \u03b3 lobes) and found requirement for KCs in memory acquisition and retrieval. Interestingly, the transiently blocked output of a smaller set of KCs using 201y-GAL4 (\u03b1/\u03b2 and \u03b3 lobes) and MB009B-GAL4 (\u03b3 lobes) revealed a selective requirement for the retrieval but not the formation of aversive visual memory (Figure 8A,B,G,J). Output of KCs labeled by MB247-GAL4 (\u03b1/\u03b2 and \u03b3 lobes) was also required for acquisition and retrieval of appetitive memory (Figure 8A,B,K,L). We thus conclude that different KCs mediate acquisition and retrieval of visual memories.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig8-v1.jpg)\n\n**Figure 8.:** (A and B) Scheme of the temperature shift to block the output of corresponding neurons during training (A) or test (B). (C and D) Output of neurons labeled with MB010B-GAL4 is necessary during aversive training and test (one-way ANOVA, post-hoc pairwise comparisons, p < 0.05), n = 7\u201313. (E and F) Output of neurons labeled with MB247-GAL4 is necessary during aversive training and test (one-way ANOVA, post-hoc pairwise comparison, p < 0.05). n = 10\u201316. (G and H) Output of neurons labeled with 201y-GAL4 is dispensable during training (one-way ANOVA, p > 0.05), n = 20\u201322, but necessary during aversive test (one-way ANOVA, post-hoc pairwise comparisons, p < 0.01) n = 12\u201317. (I and J) Output of neurons labeled with MB009B-GAL4 is dispensable during training (one-way ANOVA, p > 0.1), n = 8, but necessary during aversive test (one-way ANOVA, post-hoc pairwise comparisons, p < 0.05) n = 8. (K and L) Output of MB247-labeled neurons is needed during appetitive training and test (one-way ANOVA, post-hoc pairwise comparison, p < 0.05). n = 10\u201328. Bars and error bars represent mean and SEM, respectively.\n\n## Discussion\n\n### High-throughput aversive visual conditioning\n\nDevising a transparent electric shock grid module made it possible to apply the same visual stimulation in aversive and appetitive conditioning assays. We also developed an integrated platform for fully automated high-throughput data acquisition using customized software to control the presentation of electric shock and visual stimuli while making video recordings of behavior (Figure 1; Schnaitmann et al., 2010, 2013). In our assays, memory performance is based on altered visual preference in walking flies, a task likely to be less demanding than the constant flight required for flight simulator learning. These advantages facilitate behavioral examination of many genotypes.\n\n### Associative memories of different modalities share mushroom body circuits\n\nCircuits underlying olfactory and visual memory can be optimally compared when the sugar reward and electric shock punishment are matched between the two modalities. We found that visual and olfactory memories share the same subsets of dopamine neurons that convey reinforcing signals (Figures 2,3 and 4). This shared requirement of the transmitter system between visual and olfactory learning has been described in crickets (Unoki et al., 2005, 2006; Mizunami et al., 2009). However, the pharmacological manipulation used in these studies does not allow further circuit dissection.\n\nFor electric shock reinforcement, identified neurons in the PPL1 cluster, such as MB-MP1, MB-MV1 and MB-V1, drive aversive memories in both visual and olfactory learning (Figures 3F and 4C; Claridge-Chang et al., 2009; Aso et al., 2010, 2012), while the MB-M3 neurons in the PAM cluster seem to be involved specifically in aversive olfactory memory (Figure 2A, data not shown) (Aso et al., 2010, 2012). Thus, overlapping sets of dopamine neurons appear to represent electric shock punishment in both visual and olfactory learning with olfactory aversive memory probably recruiting a larger set. We previously showed that the MB-M3 neurons induce aversive olfactory memory that increases stability of other memory components (Aso et al., 2012). Olfactory memories last longer than visual memories (data not shown; Schnaitmann et al., 2010) potentially due to the recruitment of additional dopamine neurons.\n\nIn appetitive conditioning, PAM cluster neurons play crucial roles in both olfactory and visual memories (Figure 2A,D,E, Figure 3C,E, Figure 4B; Burke et al., 2012; Liu et al., 2012). Which cell types in these clusters are involved and whether there is a cellular distinction between olfactory and visual memory requires further analysis at the single cell level. Most importantly, all these neurons convey dopamine signals to restricted subdomains of the MB. The blockade of octopamine neurons did not impair appetitive visual memories with sucrose (Figure 2A). The involvement of octopamine neurons may be more substantial when non-nutritious sweet taste rewards are used, as has been shown in olfactory learning (Burke et al., 2012).\n\nIn addition to these shared reinforcement circuits in the MB, the necessity of MB output for visual memory acquisition and retrieval is also consistent with olfactory conditioning (Figure 8; Dubnau et al., 2001; McGuire et al., 2001; Schwaerzel et al., 2002; Krashes et al., 2007), although the recruited KC subsets are not identical for different modalities (Figure 6). Taken together, these results suggest that the MBs harbor associative plasticity for visual memories and support the conclusion that similar coincidence detection mechanisms are used to form memories within the MBs (Figure 9) (Heisenberg, 2003; Gerber et al., 2004b; Qin et al., 2012). Centralization of similar brain functions spares the cost of maintaining similar circuit motifs in different brain areas and may be an evolutionary conserved design of information processing. Such converging inputs of different stimuli into a multisensory area have even been described in humans (Beauchamp et al., 2008).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/02395/elife-02395-fig9-v1.jpg)\n\n**Figure 9.:** Visual and olfactory information is conveyed to partially overlapping sets (\u03b3 lobe neurons) of KCs. Olfactory input to the calyx (CA) via projection neurons (PN) is well characterized, whereas the visual input to the MB has not been identified yet. Output of KCs, representing olfactory and visual information is locally modulated by the different subsets of dopamine neurons (PAM, PPL1) to form appetitive and aversive memories.\n\n\u2018Flight simulator\u2019 visual learning was shown to require the central complex but not the MBs (Wolf et al., 1998; Liu et al., 2006; Pan et al., 2009). Although this appears to contradict our study, we note that there are important differences between the behavioral paradigms employed. In the flight simulator, a single tethered flying Drosophila is trained to associate a specific visual cue with a laser beam punishment, to later on avoid flying towards this cue in the test. Although we controlled for visual context consistency and the \u2018operant component\u2019 of the flight simulator training, any other difference could account for the differential requirement of brain structures. Given that flies during flight show octopamine-mediated modulation of neurons in the optic lobe (Suver et al., 2012), similar state-dependent mechanisms might underlie different requirement of higher brain centers. Thus, it is critical to design comparable memory paradigms.\n\n### Differentiated sensory representations in the mushroom body?\n\nThis study together with the results in associative taste learning (Masek and Scott, 2010; Keene and Masek, 2012) highlights the fact that the role of the MB in associative learning is not restricted to one sensory modality or reinforcer (Figure 9). We found that olfactory and visual memories recruit overlapping, yet partly distinct, sets of Kenyon cells (Figures 6,9). In contrast to the well-described olfactory projection neurons, visual inputs to the MB remain unidentified. No anatomical evidence has been reported in Drosophila for direct connections between optic lobes and MBs (Otsuna and Ito, 2006; Mu et al., 2012) although such connections are found in other insects (Mobbs, 1982; Schildberger, 1984; Li and Strausfeld, 1997; Gronenberg and H\u00f6lldobler, 1999; Paulk and Gronenberg, 2008; Lin and Strausfeld, 2012). Also afferents originating in the protocerebrum were found to provide multi-modal input to the MB lobes of cockroaches (Li and Strausfeld, 1997). Thus, Drosophila MBs may receive indirect visual input from optic lobes, and the identification of such a visual pathway would significantly contribute to our understanding of the MB circuits.\n\nGiven the general requirement of the \u03b3 lobe neurons (Figure 7), visual and olfactory cues may be both represented in the \u03b3 neurons. Consistently, the dopamine neurons that convey appetitive and aversive memories heavily project to the \u03b3 lobe (Figure 3A,B; Claridge-Chang et al., 2009; Aso et al., 2010, 2012; Burke et al., 2012; Liu et al., 2012). In olfactory conditioning, the \u03b3 lobe was shown to contribute mainly to short-term memory (Zars et al., 2000; Isabel et al., 2004; Blum et al., 2009; Trannoy et al., 2011; Qin et al., 2012). This converging evidence from olfactory and visual memories suggests a general role for the \u03b3 lobe in short-lasting memories across different sensory modalities (Figures 6,7 and 9). Previous studies found that the MB is also involved in sensorimotor gating of visual stimuli or visual selective attention (van Swinderen and Greenspan, 2003; Xi et al., 2008; van Swinderen et al., 2009). Therefore, the MB circuits for visual associative memories might be required for sensorimotor gating and attention.\n\nInterestingly, the contribution of the \u03b1\u2032/\u03b2\u2032 lobes is selective for olfactory memories (Figure 6; Krashes et al., 2007; Cervantes-Sandoval et al., 2013). This Kenyon cell class is more specialized to odor representation, as the cells have the broadest odor tuning and the lowest response threshold among the three Kenyon cell types (Turner et al., 2008).\n\nThe role of \u03b1/\u03b2 neurons in visual memories is also limited (Figures 6A and 7B). The \u03b1/\u03b2 neurons might play more modulatory roles in specific visual memory tasks, such as context generalization, facilitation of operant learning and occasion setting (Liu et al., 1999; Tang and Guo, 2001; Brembs and Wiener, 2006; Brembs, 2009; Zhang et al., 2013). This modulatory role of the \u03b1/\u03b2 neurons is corroborated in olfactory learning, where they are preferentially required for long-lasting memories (McGuire et al., 2003; Isabel et al., 2004; Blum et al., 2009; Trannoy et al., 2011; Keleman et al., 2012; Xie et al., 2013).\n\nDifferentiated but overlapping sensory representations by KCs may be conserved among insect species. In honeybees, different sensory modalities are represented in spatially segregated areas of the calyx, whereas the basal ring region receives visual and olfactory inputs (Mobbs, 1982; Strausfeld, 2002). The MB might thus have evolved to represent the sensory space of those modalities that are subject to associative modulation.\n\n## Materials and methods\n\n### Flies and genetic crosses\n\nFlies were reared at 25\u00b0C, at 60% relative humidity under a 12\u201312 hr light\u2013dark cycle on a standard cornmeal-based food. As all transgenes were inserted into the w\u2212 mutant genome, the X chromosomes of strains were replaced with that of wild-type Canton-S (w+). We used F1 progenies of crosses between females of genotypes UAS-dTrpA1 (Hamada et al., 2008), UAS-shits (Kitamoto, 2001), MB247-GAL80;UAS-shits (Krashes et al., 2007), UAS-mCD8::GFP (Lee and Luo, 1999) or WT-females and males of genotypes TH-GAL4 (Friggi-Grelin et al., 2003), DDC-GAL4 (Li et al., 2000), R58E02-GAL4 (Liu et al., 2012), TDC2-GAL4 (Cole et al., 2005), MB247-GAL4 (Zars et al., 2000), c305a-GAL4 (Krashes et al., 2007), 17D-GAL4 (Martin et al., 1998), 201y-GAL4 (Yang et al., 1995), or Canton-S males. The expression patterns of drivers for KCs were compared previously (Aso et al., 2009). The dumb2 null mutant was used to localize the cells that receive dopamine signals (Kim et al., 2007).\n\nTo identify a role for dopamine neurons and specific lobes of the MB in visual learning we utilized specific Split GAL4 lines. Split GAL4 lines have high specificity in expression pattern, since here the DNA-binding domain (DBD) and the activation domain (AD) of the GAL4-protein were independently targeted by different promoters. In this way, the UAS transgene is only expressed where the expression patterns of the two enhancers intersect and therefore the functional GAL4-protein can be reconstituted (Luan et al., 2006; Pfeiffer et al., 2010). We used F1 progenies of crosses between females of genotypes UAS-shits (Kitamoto, 2001), UAS-mCD8::GFP (Lee and Luo, 1999), UAS-dTrpA1 (Hamada et al., 2008) or WT-females and males of genotypes MB504B-GAL4, MB010B-GAL4 (Br\u00e4cker et al., 2013), MB009B-GAL4, MB008B-GAL4, MB186B-GAL4 (Br\u00e4cker et al., 2013) or Canton-S males. Split GAL4 lines were generated using the vectors described in Pfeiffer et al. (2010) by inserting R52H03-p65ADZp into attp40 and TH-ZpGAL4DBD into attP2 (MB504B-GAL4), R13F02-p65ADZp into attP40 and R52H09-ZpGAL4DBD into attP2 (MB010B-GAL4), R13F02-p65ADZp into attP40 and R45H04-ZpGAL4DBD into attP2 (MB009B-GAL4), R13F02-p65ADZp into attP40 and R44E04-ZpGAL4DBD into attP2 (MB008B-GAL4) and R52H09-p65ADZp into attP40 and R34A03-ZpGAL4DBD into attP2 (MB186B-GAL4). Detailed methods for generating and evaluating MB Split GAL4 driver lines will be described elsewhere (Aso et al., in preparation).\n\nAs we were unable to distinguish genotype or sex in our behavioral videos, we sorted flies by genotype under CO2 anesthesia at least 2 days prior to experiments. Hence, for appetitive conditioning experiments 2\u20134 day old flies were starved in moistened empty vials to approximately 20% mortality (Schnaitmann et al., 2010). For aversive conditioning, starvation was not applied unless otherwise explicitly stated. Behavioral experiments each used 30\u201340 mixed males and females under dim red light in a custom-made plastic box, containing a heating element on the bottom and a fan for air circulation.\n\n### Apparatus for appetitive conditioning and visual stimulation\n\nOur appetitive conditioning paradigm was as previously described (Schnaitmann et al., 2010, 2013), except we used LED (instead of an LCD screen) to present visual stimuli (green and blue light) from beneath the fly (Figure 1A,B) (Schnaitmann et al., 2013). We constructed a stimulation module using computer-controlled high-power LEDs with peak wavelengths 452 nm and 520 nm (Seoul Z-Power RGB LED, Korea) or 456 nm and 520 nm (H-HP803NB, and H-HP803PG, 3W Hexagon Power LEDs, Roithner Lasertechnik, Austria) for blue and green stimulation, respectively. LEDs were housed in a base (144 mm below the arena), which allowed homogeneous illumination of a filter paper as a screen (Figure 1D) (Schnaitmann et al., 2013). Using a custom-made software and controlling device we were able to illuminate four quadrants of the arena independently when required (Schnaitmann et al., 2013). For separate illumination of each quadrant, the light paths of LEDs were separated by light-tight walls in a cylinder with air ducts (Figure 1A\u2013C). The intensities were controlled by current and calibrated using a luminance meter BM-9 (Topcon Technohouse Corporation, Japan) or a PR-655 SpectraScan Spectroradiometer, Chatsworth, CA, USA,: 14.1 Cd/m2 s (blue) and 70.7 Cd/m2 s (green) (Schnaitmann et al., 2013). Each quadrant was equipped with an IR-LED (850 nm), that was used for background illumination, for example, during the preference/avoidance test.\n\n### Apparatus for aversive conditioning\n\nFor aversive electric shock conditioning, we developed a new apparatus module containing an arena with a transparent shock grid (Figure 1E). The arena itself consisted of the transparent shock grid on the bottom, a plastic ring as a wall and a glass lid. The shock grid was a custom-made ITO-coated glass plate (9 \u00d7 9 cm; Diamond Coatings Ltd., UK). ITO is a conductive transparent substance. A grid was laser-etched onto the ITO glass in order to insulate the positive and negative electrodes (lanes in the grid were 1.6 mm spaced 0.1 mm apart, Lasermicronics GmbH, Germany). We applied alternating current. The two halves of the grid can be independently controlled. The plastic ring (wall) and the glass lid were coated with diluted Fluon (10%; Fluon GP1, Whitford Plastics Ltd., UK) to prevent flies from walking on the lid and wall. Consequently, flies were forced to stay on the shock grid on the bottom of the arena. A filter paper was clamped underneath the shock grid and served as a screen.\n\nA trigger (Universal-Impulsgenerator UPG 100, ELV Elektronik AG, Leer, Germany) for activating the custom-made electric shock generator was controlled by the same custom-made software used to control the LEDs (Schnaitmann et al., 2013). During the test phase, the shock arena was video recorded from above with a CMOS camera (Firefly MV, Point Grey, Richmond, Canada) controlled by custom-made software (Schnaitmann et al., 2010). Four setups were run in parallel.\n\n### Behavioral protocols for appetitive and aversive learning\n\nWe used equivalent experimental designs for appetitive and aversive conditioning; in each, differential conditioning was followed by binary choice without reinforcement (Figure 1, Figure 5A; Schnaitmann et al., 2010). Briefly, in a single conditioning experiment, approximately 40 flies were introduced into the arena using an aspirator. During a training trial, the whole arena was illuminated with alternating green and blue light (60 s each; conditioned stimuli = CS), one of the colors was paired with reinforcement (unconditioned stimulus = US).\n\nFor appetitive conditioning, filter paper soaked in high concentration (2 M) of sucrose and dried was presented as a reward (Schnaitmann et al., 2010). For aversive conditioning, one second of electric shock (AC 60 V) was applied 12 times in 60 s during CS+ (CS paired with reinforcement) presentation. The consecutive CS+ and CS\u2212 presentations were interspersed with 12 s intervals without illumination (Schnaitmann et al., 2010). Training trials were repeated four times per experiment if not otherwise stated (Figure 1\u2014figure supplement 1A).\n\nIn the test, administered 60 s after the end of the last training session, flies were allowed to choose between blue and green, which were each presented in two diagonally opposite quadrants of the arena (unless otherwise stated). The distribution of the flies was video recorded for 90 s at 1 frame per second (Schnaitmann et al., 2010). No US was presented in the test period. For aversive conditioning, a 1 s shock pulse (90 V) was applied 5 s before the beginning of the test to arouse the flies (Figure 1\u2014figure supplement 1B). However when testing flies at high temperature (33\u00b0C) this additional shock was dispensable for aversive memory retrieval (Figure 5\u2014figure supplement 2). Two groups trained with reciprocal CS\u2013US pairing (Green+/Blue\u2212 and Blue+/Green\u2212) were trained in the same setup consecutively. The difference in visual stimulus preference between the two groups was then used to calculate a learning index for each video frame (Schnaitmann et al., 2010). Reinforcement was paired with the first visual stimulus in half of the experiments, and with the second in the remaining experiments, to cancel any effect of order (Schnaitmann et al., 2010).\n\nControl responses to sugar and shock were measured as described previously (Schnaitmann et al., 2010). The arenas used for appetitive and aversive conditioning were backlit with IR-LEDs, and flies were given a choice between two halves of the arena, one with the US presented as in the training and one without US. Their behavior was recorded for 60 s using the same video setup. A preference index was calculated by subtracting the numbers of flies on the US half from the numbers on the control half, divided by the total number of flies.\n\nBy use of a heating element and fan we were able to raise the temperature around the apparatus to a constant 33\u00b0C. In temperature shift experiments flies were transferred into moistened empty vials and kept in darkness, while the temperature was adjusted from permissive (25/26\u00b0C) to restrictive (31/33\u00b0C) or vice versa. The test was performed 30\u201340 min after training and started 60 s after reintroduction of the flies.\n\n### Reinforcement substitution with thermo-activation by TrpA1\n\nWe established a new behavioral protocol for reinforcement substitution for visual memories using dTrpA1 expression as in olfactory conditioning (Aso et al., 2010). Flies were \u2018trained\u2019 as for conditioning, but the conditioned visual stimulus was paired not with sugar or shock but with high temperature that leads to thermo-activation of dTRPA1-expressing neurons (Figure 4A). Flies were transferred between two plastic vials with different visual stimuli (blue and green as for conditioning) and different temperatures (24\u00b0C and 31\u00b0C). 5 s before the onset of the visual stimulation, flies were gently tapped into the vial on the corresponding apparatus. The two CS presentations in each training trial were intermitted by a 60 s interval at 24\u00b0C. After four training trials, flies were kept at 24\u00b0C for 60 s in the transfer vial and 60 s in the dark test apparatus before testing at 24\u00b0C. Control flies not expressing dTrpA1 and wild-type flies did not show conditioned visual preference (Figure 4B,C). Significant memory in this assay is thus driven by appetitive or aversive reinforcement signals from thermo-activation.\n\n### Aversive conditioning without context change\n\nIn contrast to the standard classical conditioning protocol, CS+ and CS\u2212 were simultaneously presented in the two halves of the arena during training and test (Figure 5B). The half of the arena displaying CS+ was electrified. Flies were allowed to choose between the differently cued two halves for 20 s, and this training trial was repeated eight times with an inter-trial interval of 20 s without stimulus. The sides of CS/US presentation were pseudo-randomized to avoid potential prediction of the next side to be shocked. During the test, the two halves were illuminated as in training, but without shock, creating a shared context between training and test.\n\n### Olfactory conditioning\n\nStandard olfactory conditioning was applied (Tully and Quinn, 1985; Schwaerzel et al., 2002). Differential conditioning with two odors (3-octanol and benzaldehyde) followed by binary choice without reinforcement. Each odor presentation lasted 60 s, and one of the odors was paired with 12 pulses of electric shock (100 V DC). Immediately after training, flies were tested for memory performance by measuring conditioned odor avoidance in the T-maze.\n\n### Statistics\n\nStatistical analyses were performed with Prism5 software (GraphPad). Groups that did not violate the assumption of normal distribution (Shapiro\u2013Wilk test) and homogeneity of variance (Bartlett's test) were analyzed with parametric statistics: one-sample t-test or one-way analysis of variance followed by the planned pairwise multiple comparisons (Bonferroni). Experiments with data that were significantly different from the assumptions above were analyzed with non-parametric tests, such as Mann\u2013Whitney test or Kruskal\u2013Wallis test followed by Dunn's multiple pair-wise comparison. The significance level of statistical tests was set to 0.05. Only the most conservative statistical result of multiple pairwise comparisons is indicated.\n\n### Immunohistochemistry\n\nAdult fly brains were dissected, fixed and stained using standard protocols (Aso et al., 2009). Synapsin antibody (Klagges et al., 1996) combined with Cy3-conjugated goat anti-mouse antibody were used to visualize the neuropil. Anti-GFP antibody was used to increase the intensity of the GFP signal (rabbit polyclonal to GFP [Invitrogen] with Alexa Fluor488-conjugated goat anti-rabbit as the secondary antibody). Frontal optical sections of whole-mount brains were sampled with a confocal microscope (Olympus FV1000). Images of the confocal stacks were analyzed with the open-source software Fiji (Schindelin et al., 2012).\n",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "21cc0306-fdd2-4889-ae35-27f9e3e92316",
+      "submission_id": "1b70d28c-5a9f-4bbc-b695-5b19ac56e492",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin , Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02395.018](https://doi.org/10.7554/eLife.02395.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cShared mushroom body circuits underlie visual and olfactory memories in Drosophila\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor (Mani Ramaswami) and 2 reviewers.\n\nThe Reviewing editor and the two reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nBy developing behavioral assays for aversive and appetitive visual learning, the authors compare the circuitry required for visual learning with that previously established for olfactory learning. The question is interesting and assessed with the extremely good reagents and technologies expected from the authors. The conclusions mentioned in the Abstract describing dopaminergic neurons and mushroom body neurons required for visual learning, as well as how they compare with those required for olfactory learning, are interesting, significant, and deserve to be published in eLife.\n\n1) One consensus experimental requirement is to provide clear information on the specificity of PAM DA neurons are for sugar learning and the PPL1 DA neurons for shock learning. This will require (reciprocal type) experiments to show that PAM DA neurons are not required for visual forms of shock learning and that PPL1 DA neurons are not required for visual forms of sugar learning. The fact that specificity has been demonstrated for olfactory learning is appreciated, but this needs to be demonstrated for visual learning as well.\n\n2) The authors should consider a deeper discussion of the comparative roles of gamma lobes in short-term olfactory and visual forms of learning. If the authors have data on whether the gamma lobes are required for acquisition and/or retrieval of visual memory, then it will be a useful addition to the paper.\n\n3) The manuscript is well written for a select group of Drosophila neuroscientists, intimately familiar with learning. The manuscript text will benefit from being edited to make it appropriate for a broader readership of eLife.\n",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "076aa5af-9466-42c1-a53b-a1ceba6e592a",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C1",
+      "claim": "Appetitive and aversive visual learning assays for Drosophila were established that are comparable to widely used olfactory learning assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We established appetitive and aversive visual learning assays for Drosophila that are comparable to the widely used olfactory learning assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the development of new behavioral assays as a primary methodological contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "f9431f87-728a-4a3c-8a6d-1b580cd5b61d",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C2",
+      "claim": "Visual and olfactory learning assays share critical features including sugar reward and electric shock punishment as reinforcing stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "These assays share critical features, such as reinforcing stimuli (sugar reward and electric shock punishment), and allow direct comparison of the cellular requirements for visual and olfactory memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the shared features of the assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "ffe87417-d884-4c28-800a-f214a491a733",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C3",
+      "claim": "The same subsets of dopamine neurons drive formation of both visual and olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the same subsets of dopamine neurons drive formation of both sensory memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 2-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "9fce0da2-fec1-4e8b-8e32-645964b0038c",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C4",
+      "claim": "Distinct yet partially overlapping subsets of mushroom body intrinsic neurons are required for visual and olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, distinct yet partially overlapping subsets of mushroom body intrinsic neurons are required for visual and olfactory memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 5-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "ffb209d6-f58e-4976-9bc2-78c0204d7ea7",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C5",
+      "claim": "Distinct sensory memories are processed in a common brain center (the mushroom body).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that distinct sensory memories are processed in a common brain center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental findings showing shared MB circuits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "189b9183-a9c3-47ce-aef7-72501723ef21",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C6",
+      "claim": "Centralization of related brain functions is an economical design that avoids repetition of similar circuit motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such centralization of related brain functions is an economical design that avoids the repetition of similar circuit motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "da46f976-8448-4909-a846-d8d6dac452b7",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C7",
+      "claim": "A traumatic event drives aversive associative memories of concurrent auditory and visual stimuli in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a traumatic event drives aversive associative memories of concurrent auditory and visual stimuli in rats (Campeau and Davis, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "cae9f8a1-319b-4c2a-a406-bb86242fa096",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C8",
+      "claim": "The same appetitive and aversive reinforcers drive both olfactory and visual memories in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "The same appetitive and aversive reinforcers drive both olfactory and visual memories in insects, while associative memories with different modalities are formed using the same neurotransmitter system (Unoki et al., 2005, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work in insects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "8d4ccbc5-a52a-44c1-ab92-cc1db7a369f1",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C9",
+      "claim": "The circuit mechanisms underlying memories of different sensory modalities driven by the same reinforcing stimulus are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the circuit mechanisms underlying memories of different sensory modalities driven by the same reinforcing stimulus are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "4e7d3f87-2351-4209-bf49-d453a6094203",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C10",
+      "claim": "Mushroom bodies are required for olfactory and gustatory memories in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the mushroom bodies (MBs) are required for olfactory and gustatory memories (Heisenberg et al., 1985; Davis, 1993; Heisenberg, 2003; Masek and Scott, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "9d840ffa-5c1a-458b-8361-a1befff1cc4f",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C11",
+      "claim": "According to previous studies, mushroom bodies are not required for a visual memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "but according to previous studies, not for a visual memory task (Heisenberg et al., 1985; Wolf et al., 1998; Tang and Guo, 2001; Zhang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work showing no MB requirement for visual memory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "a80a49ab-2d37-4da8-b85b-f2165041d32d",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C12",
+      "claim": "Other studies suggest that visual information is indeed processed in the mushroom bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, other studies suggest that visual information is indeed processed in the MBs (Barth and Heisenberg, 1997; Liu et al., 1999; Brembs and Wiener, 2006; van Swinderen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work suggesting MB involvement in visual processing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "bc80a763-7f02-4e79-b9e2-460c1ac35efc",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C13",
+      "claim": "A transparent shock grid was fabricated from indium tin-oxide (ITO) to enable electric shock punishment during visual conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We solved this problem by fabricating a shock grid from a transparent low-resistance material, indium tin-oxide (ITO; Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the technical solution and references Figure 1 showing the apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "dcda1cc6-0fe0-4c44-8c57-e567179bb877",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C14",
+      "claim": "Electric shock served as potent aversive reinforcement and induced aversive visual memory at a signal to noise ratio comparable to visual memories in other paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "The electric shock served as potent aversive reinforcement and induced aversive visual memory at a signal to noise ratio comparable to visual memories in other paradigms (Figure 1F, Figure 1\u2014figure supplement 1A; Menne and Spatz, 1977; Wolf and Heisenberg, 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data in Figure 1F and comparison to cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "147e1d99-cc6e-434a-81b6-6237d98f53b4",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C15",
+      "claim": "Conditioned avoidance increased with ascending voltages and reached a plateau at approximately 30 V.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that conditioned avoidance increased with ascending voltages. A plateau was reached at approximately 30 V, and the performance did not change with more intense shock (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "56b7d6f8-378a-4be0-a589-ea82a688cb68",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C16",
+      "claim": "60 V was applied for all subsequent aversive conditioning experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we applied 60 V for all subsequent experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision based on the voltage response data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "c8aa99de-a033-435c-a217-60ed46840ca4",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C17",
+      "claim": "A single shock pulse was applied 5 s before the beginning of the test to arouse the flies in aversive conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "For aversive conditioning, a single shock pulse was applied 5 s before the beginning of the test to arouse the flies (Figure 1\u2014figure supplement 1B; Menne and Spatz, 1977; Gerber and Hendel, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This methodological detail is supported by reference to Figure 1\u2014figure supplement 1B and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "1227ab9e-09ae-4e82-b47e-0dd9386c3c13",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C18",
+      "claim": "Blocking octopamine/tyramine neurons with TDC2-GAL4 did not cause a significant defect in sucrose reward or shock punishment memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking octopamine/tyramine neurons with TDC2-GAL4 did not cause a significant defect in sucrose reward or shock punishment memory (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "c9c7eda3-1b55-4368-8dec-b4dfb7559ba9",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C19",
+      "claim": "Blockade of a large fraction of dopamine neurons with TH-GAL4 selectively reduced aversive memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the blockade of a large fraction of dopamine neurons with TH-GAL4 selectively reduced aversive memory (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "fd8e79a1-868a-40ec-b1ca-f687f890885d",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C20",
+      "claim": "Blockade with DDC-GAL4 substantially impaired appetitive memory, but not aversive memory.",
+      "claim_type": "EXPLICIT",
+      "source": "As in olfactory learning (Liu et al., 2012), the blockade with DDC-GAL4 that labels different sets of dopamine and serotonin neurons substantially impaired appetitive memory, but not aversive memory (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figure 2A and comparison to cited prior work in olfactory learning.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "6c57f211-adfa-43b9-9739-853038357b91",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C21",
+      "claim": "Blockade with DDC-GAL4 did not significantly affect the reflexive choice of sugar.",
+      "claim_type": "EXPLICIT",
+      "source": "The blockade with DDC-GAL4 did not significantly affect the reflexive choice of sugar, while blocking the dopamine system with TH-GAL4 caused prolonged hyperactivity that indirectly influenced shock avoidance (Lebestky et al., 2009; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Table 1 and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "33bcd534-5e49-4eec-808b-5acbba0e51e5",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C22",
+      "claim": "Blocking the dopamine system with TH-GAL4 caused prolonged hyperactivity that indirectly influenced shock avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "The blockade with DDC-GAL4 did not significantly affect the reflexive choice of sugar, while blocking the dopamine system with TH-GAL4 caused prolonged hyperactivity that indirectly influenced shock avoidance (Lebestky et al., 2009; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Table 1 and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "7a651ab1-5f2d-407a-a777-95f61ebda57f",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C23",
+      "claim": "Output of DDC-GAL4 labeled neurons is only necessary in appetitive training but dispensable during test.",
+      "claim_type": "EXPLICIT",
+      "source": "The blockade with DDC-GAL4 during training severely impaired appetitive memory, whereas the same blockade after the training did not significantly affect memory (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal requirement data shown in Figures 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "a174ba1c-11b5-4397-91b2-5674ed0c84f1",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C24",
+      "claim": "Neurons labeled in TH-GAL4 were required specifically during acquisition of aversive memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the neurons labeled in TH-GAL4 were required specifically during acquisition of aversive memory (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal requirement data shown in Figures 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "26372e18-3cf0-4faf-b753-1fd0f026e1fa",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C25",
+      "claim": "The neurons differentially labeled with DDC-GAL4 and TH-GAL4 mediate the formation of appetitive and aversive visual memories, likely acting as reinforcement signals.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the neurons differentially labeled with DDC-GAL4 and TH-GAL4 mediate the formation of appetitive and aversive visual memories, likely acting as reinforcement signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the temporal requirement data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "764ed1e0-eb7c-4d08-b40a-946c65788996",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C26",
+      "claim": "Specific subsets of dopamine neurons in TH-GAL4 and DDC-GAL4 signal sugar reward and shock punishment for olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "As specific subsets of dopamine neurons in TH-GAL4 and DDC-GAL4 have been shown to signal sugar reward and shock punishment for olfactory memories (Claridge-Chang et al., 2009; Aso et al., 2012; Burke et al., 2012; Liu et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on olfactory memory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "69e41302-2c57-46c7-a296-b8e26897b249",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C27",
+      "claim": "R58E02-GAL4 drives GAL4 expression in the PAM cluster neurons that signal reward for olfactory memory.",
+      "claim_type": "EXPLICIT",
+      "source": "R58E02-GAL4 drives GAL4 expression in the PAM cluster neurons that signal reward for olfactory memory (Figure 3A,C; Liu, et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 3A,C and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "32f564f0-b61a-464c-8dd3-d19f1da07e70",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C28",
+      "claim": "R58E02-GAL4 co-expresses with DDC-GAL4, but rarely with TH-GAL4, in the PAM cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "This driver co-expresses with DDC-GAL4, but rarely with TH-GAL4, in the PAM cluster (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work characterizing the driver.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "de771f5e-800f-4547-8aa6-185a1af58e85",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C29",
+      "claim": "MB504B is a Split GAL4 line that specifically labels four individual dopamine neurons in the PPL1 cluster: MB-MP1, MB-MV1, MB-V1, and the neuron that projects to the tip of the \u03b1 lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "MB504B is a Split GAL4 line we generated to specifically label four individual dopamine neurons in the PPL1 cluster: MB-MP1, MB-MV1, MB-V1, and the neuron that projects to the tip of the \u03b1 lobe (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes a new genetic tool generated for this study, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "52dd3ef0-9c31-467f-8c52-1998e39f6d2c",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C30",
+      "claim": "PPL1 cluster neurons labeled by MB504B have been shown to induce aversive olfactory memory.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons are a subset of TH-GAL4 and have been shown, using a less specific line, to induce aversive olfactory memory (Aso et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "21173b54-dc5f-4bbd-89c1-eaf9f05d5599",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C31",
+      "claim": "Blockade of R58E02-GAL4 neurons with shibirets1 impaired appetitive visual memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the blockade of these neurons with shits1 indeed impaired aversive or appetitive visual memory, respectively (Figure 3C\u2013F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "9a28c38d-ec88-4292-a0bd-fb661b0303ee",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C32",
+      "claim": "Blockade of MB504B-GAL4 neurons with shibirets1 impaired aversive visual memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the blockade of these neurons with shits1 indeed impaired aversive or appetitive visual memory, respectively (Figure 3C\u2013F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "af71e292-0959-4a2b-99df-f0ab467a666d",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C33",
+      "claim": "Blockade of R58E02-GAL4 and MB504B-GAL4 neurons did not significantly affect the reflexive choice of sugar and shock.",
+      "claim_type": "EXPLICIT",
+      "source": "but did not significantly affect the reflexive choice of sugar and shock (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "68a09d1b-2f98-454e-b5fe-34832f0fb571",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C34",
+      "claim": "Visual and olfactory memories share neuronal substrates for appetitive and aversive reinforcements.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that visual and olfactory memories share neuronal substrates for appetitive and aversive reinforcements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the shared requirement of specific dopamine neuron subsets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "49a3301e-8cd4-40aa-a2ef-3795a348c030",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C35",
+      "claim": "Thermo-activation of the PAM cluster neurons with R58E02-GAL4 was sufficient to induce appetitive memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermo-activation of the PAM and PPL1 cluster neurons with R58E02-GAL4 and MB504B-GAL4 was sufficient to induce appetitive and aversive memories, respectively (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "78030281-d56f-4605-be9c-385e2aab4010",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C36",
+      "claim": "Thermo-activation of the PPL1 cluster neurons with MB504B-GAL4 was sufficient to induce aversive memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermo-activation of the PAM and PPL1 cluster neurons with R58E02-GAL4 and MB504B-GAL4 was sufficient to induce appetitive and aversive memories, respectively (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "fb5e3f92-7222-4758-8e0c-bc353e9b2794",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C37",
+      "claim": "Different subsets of dopamine neurons supply appetitive and aversive reinforcement information for visual as well as olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results we conclude that different subsets of dopamine neurons supply appetitive and aversive reinforcement information for visual as well as olfactory memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the thermo-activation and blockade experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "65866f63-d615-43bb-9a2b-a184ab3d2b70",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C38",
+      "claim": "DopR, a D1-like dopamine receptor, is required for olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Since DopR, a D1-like dopamine receptor, is required for olfactory memories (Kim et al., 2007; Liu et al., 2012; Qin et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "12d1524d-3a6b-4f02-8e71-1bbcf29bda39",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C39",
+      "claim": "The dumb2 mutant for DopR shows severe appetitive and aversive visual memory defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our results from the block of dopamine neurons, we found severe appetitive and aversive visual memory defects in the mutant for DopR (dumb2; Kim et al., 2007, Figure 4D, see Table 1; Figure 4\u2014figure supplement 1 for controls).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4D and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "0547f9db-7ec8-4105-865c-61a29060569e",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C40",
+      "claim": "Selective expression of DopR+ in the Kenyon cells using MB247-GAL4 significantly rescued the memory defect of the dumb2 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective expression of DopR+ in the KCs using MB247-GAL4 significantly rescued the memory defect of the mutant (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "38793da3-1f73-465d-a6b3-a1f08d59e3e3",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C41",
+      "claim": "The same sets of dopamine neurons convey reward and punishment signals to the mushroom bodies to induce appetitive and aversive memories of different sensory modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that the same sets of dopamine neurons convey reward and punishment signals to the MBs to induce appetitive and aversive memories of the different sensory modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion integrates findings from dopamine neuron manipulation and DopR rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "5d5ade58-e7ff-446f-b1f1-dc0b0ab36cb0",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C42",
+      "claim": "Both appetitive and aversive visual memories were significantly impaired when Kenyon cells were blocked with 201y-GAL4 and MB247-GAL4.",
+      "claim_type": "EXPLICIT",
+      "source": "Both appetitive and aversive memories in the experimental groups were significantly impaired (Figure 5A, see Table 1 and Figure 5\u2014figure supplement 1 for controls).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "32677156-3983-46d6-bbdc-50eb538c9496",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C43",
+      "claim": "Addition of MB247-GAL80 fully restored the impaired memories caused by 201y-GAL4 blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of MB247-GAL80 fully restored the impaired memories (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "428cb105-73d7-489b-bbd0-7f5731ea03d6",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C44",
+      "claim": "Visual memories require the output of Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that visual memories require the output of KCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the blockade and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "affb34d5-eb8c-4b5a-b3cd-70e821473f86",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C45",
+      "claim": "Visual memory in the assay requires the mushroom bodies independent of the conditioning design (classical vs operant) and of context changes between training and test.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we conclude that visual memory in our assay requires the MBs independent of the conditioning design (classical vs operant) and of context changes between training and test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experiments with modified conditioning protocols shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "dd5e39ee-6af4-4c65-a47b-9a8f48724603",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C46",
+      "claim": "Blocking the \u03b1\u2032/\u03b2\u2032 neurons with c305a-GAL4 selectively impaired olfactory memory but not visual memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the \u03b1\u2032/\u03b2\u2032 neurons with c305a-GAL4 selectively impaired olfactory memory (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "dbfba1cb-3bdc-43d5-9f33-4319a8bc9270",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C47",
+      "claim": "Blockade with 17D-GAL4 (\u03b1/\u03b2 neurons) had no significant perturbation of either visual or olfactory memory.",
+      "claim_type": "EXPLICIT",
+      "source": "17D-GAL4/shits1 flies had no significant perturbation of either memory, while the blockade of the \u03b1/\u03b2 and \u03b3 neurons with 201y-GAL4 strongly impaired both visual and olfactory memories (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "9b46ef08-4217-486c-9ddb-ac172781a1a9",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C48",
+      "claim": "Blockade of the \u03b1/\u03b2 and \u03b3 neurons with 201y-GAL4 strongly impaired both visual and olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "17D-GAL4/shits1 flies had no significant perturbation of either memory, while the blockade of the \u03b1/\u03b2 and \u03b3 neurons with 201y-GAL4 strongly impaired both visual and olfactory memories (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "0508275b-b2fa-4529-bcfd-fafb2578b17b",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C49",
+      "claim": "Visual and olfactory memories recruit partially overlapping Kenyon cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, visual and olfactory memories recruit partially overlapping KC subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the differential requirements of KC subsets shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "b0abee71-7d0d-483f-8721-efcd18cf6e65",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C50",
+      "claim": "The specific contribution of \u03b1\u02b9/\u03b2\u02b9 neurons to olfactory learning is consistent with the preferential representation of olfactory inputs to these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific contribution of \u03b1\u02b9/\u03b2\u02b9 neurons to olfactory learning is consistent with the preferential representation of olfactory inputs to these neurons (Turner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citation to prior work on olfactory input representation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "60d87648-6143-4ae0-a258-5ceec4fe57d5",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C51",
+      "claim": "Blocking the output of the \u03b3 lobe neurons (MB009B-GAL4) impaired both appetitive and aversive visual memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the output of the \u03b3 lobe neurons (Figures 7A, MB009B-GAL4, see Table 1 and Figure 7\u2014figure supplement 1 for controls) as well as the entire KC population (Figures 7A, MB010B-GAL4, see Table 1 and Figure 7\u2014figure supplement 1 for controls) impaired both appetitive and aversive visual memories (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "a08b5c8d-36c9-4ba1-9fbc-b8cf45a653e6",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C52",
+      "claim": "Blocking the output of the entire Kenyon cell population (MB010B-GAL4) impaired both appetitive and aversive visual memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the output of the \u03b3 lobe neurons (Figures 7A, MB009B-GAL4, see Table 1 and Figure 7\u2014figure supplement 1 for controls) as well as the entire KC population (Figures 7A, MB010B-GAL4, see Table 1 and Figure 7\u2014figure supplement 1 for controls) impaired both appetitive and aversive visual memories (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "37b22345-9638-4d6c-9871-541ef8a0b2fc",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C53",
+      "claim": "Blocking the output of \u03b1\u2032/\u03b2\u2032 neurons (MB186B-GAL4) did not significantly reduce visual memory performance compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the output of \u03b1\u2032/\u03b2\u2032 neurons (Figures 7A, MB186B-GAL4) or \u03b1/\u03b2 neurons (Figures 7A, MB008B-GAL4) did not significantly reduce the performance compared to the controls (Figure 7B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "cea3b46b-1c6c-4f82-ad4e-fe6ab72adb24",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C54",
+      "claim": "Blocking the output of \u03b1/\u03b2 neurons (MB008B-GAL4) did not significantly reduce visual memory performance compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the output of \u03b1\u2032/\u03b2\u2032 neurons (Figures 7A, MB186B-GAL4) or \u03b1/\u03b2 neurons (Figures 7A, MB008B-GAL4) did not significantly reduce the performance compared to the controls (Figure 7B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "c54db045-84dd-434a-913c-cde61c980c99",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C55",
+      "claim": "The required Kenyon cell subsets for appetitive and aversive visual memories were strikingly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The required KC subsets for appetitive and aversive memories were strikingly similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is drawn from comparing the results in Figure 7B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "f2b85481-fb2f-4d38-bbef-319fc873f50b",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C56",
+      "claim": "The output of specific subsets of Kenyon cells representing visual information is differentially modulated by reward or punishment.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the output of specific subsets of KCs representing visual information is differentially modulated by reward or punishment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the similar KC requirements for appetitive and aversive memories.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "39dc3451-f09a-4b6c-9f40-76c30b7ef7ff",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C57",
+      "claim": "Output of Kenyon cells labeled by MB010B-GAL4 is necessary during aversive training and test.",
+      "claim_type": "EXPLICIT",
+      "source": "We transiently blocked the output of a broad population of KCs using MB010B-GAL4 (Figure 8A\u2013D, all lobes) (Br\u00e4cker et al., 2013) and MB247-GAL4 (Figure 8A,B,E,F; \u03b1/\u03b2 and \u03b3 lobes) and found requirement for KCs in memory acquisition and retrieval.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal requirement data shown in Figures 8C and 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "d8c0a549-af3d-4f8f-ad8e-48a50c1bb603",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C58",
+      "claim": "Output of Kenyon cells labeled by MB247-GAL4 is necessary during aversive training and test.",
+      "claim_type": "EXPLICIT",
+      "source": "We transiently blocked the output of a broad population of KCs using MB010B-GAL4 (Figure 8A\u2013D, all lobes) (Br\u00e4cker et al., 2013) and MB247-GAL4 (Figure 8A,B,E,F; \u03b1/\u03b2 and \u03b3 lobes) and found requirement for KCs in memory acquisition and retrieval.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal requirement data shown in Figures 8E and 8F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "d72dbc90-b7aa-46c9-afad-8b8bf4098f12",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C59",
+      "claim": "Output of Kenyon cells labeled by 201y-GAL4 is dispensable during training but necessary during aversive test.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the transiently blocked output of a smaller set of KCs using 201y-GAL4 (\u03b1/\u03b2 and \u03b3 lobes) and MB009B-GAL4 (\u03b3 lobes) revealed a selective requirement for the retrieval but not the formation of aversive visual memory (Figure 8A,B,G,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal requirement data shown in Figures 8G and 8H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "05200533-38c8-40ab-986b-445ba728e5f5",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C60",
+      "claim": "Output of Kenyon cells labeled by MB009B-GAL4 is dispensable during training but necessary during aversive test.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the transiently blocked output of a smaller set of KCs using 201y-GAL4 (\u03b1/\u03b2 and \u03b3 lobes) and MB009B-GAL4 (\u03b3 lobes) revealed a selective requirement for the retrieval but not the formation of aversive visual memory (Figure 8A,B,G,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal requirement data shown in Figures 8I and 8J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "bc26c8f3-4efa-443f-8c3c-a6555bf855ff",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C61",
+      "claim": "Output of Kenyon cells labeled by MB247-GAL4 is needed during appetitive training and test.",
+      "claim_type": "EXPLICIT",
+      "source": "Output of KCs labeled by MB247-GAL4 (\u03b1/\u03b2 and \u03b3 lobes) was also required for acquisition and retrieval of appetitive memory (Figure 8A,B,K,L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal requirement data shown in Figures 8K and 8L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "7d839a8a-f4db-4117-b85e-7ceb803543a8",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C62",
+      "claim": "Different Kenyon cells mediate acquisition and retrieval of visual memories.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that different KCs mediate acquisition and retrieval of visual memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the differential temporal requirements of KC subsets shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "829a7848-f58b-463b-ba1f-20e0ab3fc1ca",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C63",
+      "claim": "Circuits underlying olfactory and visual memory can be optimally compared when the sugar reward and electric shock punishment are matched between the two modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Circuits underlying olfactory and visual memory can be optimally compared when the sugar reward and electric shock punishment are matched between the two modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological principle stated in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "e29d4fce-84b1-4453-b88e-79c3c2f165d7",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C64",
+      "claim": "Visual and olfactory memories share the same subsets of dopamine neurons that convey reinforcing signals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that visual and olfactory memories share the same subsets of dopamine neurons that convey reinforcing signals (Figures 2,3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary claim supported by data in Figures 2, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "68c71eaf-626a-4862-93f1-3759cfa2f623",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C65",
+      "claim": "Shared requirement of the transmitter system between visual and olfactory learning has been described in crickets.",
+      "claim_type": "EXPLICIT",
+      "source": "This shared requirement of the transmitter system between visual and olfactory learning has been described in crickets (Unoki et al., 2005, 2006; Mizunami et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work in crickets.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "b9403691-e9a9-420d-9e65-dff1c8709048",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C66",
+      "claim": "For electric shock reinforcement, identified neurons in the PPL1 cluster (MB-MP1, MB-MV1, MB-V1) drive aversive memories in both visual and olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "For electric shock reinforcement, identified neurons in the PPL1 cluster, such as MB-MP1, MB-MV1 and MB-V1, drive aversive memories in both visual and olfactory learning (Figures 3F and 4C; Claridge-Chang et al., 2009; Aso et al., 2010, 2012)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figures 3F and 4C and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "c8998fb3-3e80-49d1-943e-1c0164cb54ea",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C67",
+      "claim": "The MB-M3 neurons in the PAM cluster seem to be involved specifically in aversive olfactory memory.",
+      "claim_type": "EXPLICIT",
+      "source": "while the MB-M3 neurons in the PAM cluster seem to be involved specifically in aversive olfactory memory (Figure 2A, data not shown) (Aso et al., 2010, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 2A and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "cc3546a4-9209-422e-a257-91461530cfee",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C68",
+      "claim": "Overlapping sets of dopamine neurons appear to represent electric shock punishment in both visual and olfactory learning with olfactory aversive memory probably recruiting a larger set.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, overlapping sets of dopamine neurons appear to represent electric shock punishment in both visual and olfactory learning with olfactory aversive memory probably recruiting a larger set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the differential dopamine neuron requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "6d05c6ea-5891-45f6-972e-73f9cf755360",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C69",
+      "claim": "The MB-M3 neurons induce aversive olfactory memory that increases stability of other memory components.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the MB-M3 neurons induce aversive olfactory memory that increases stability of other memory components (Aso et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "8b0d43bf-ccb1-4316-89b8-7f4f97da4072",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C70",
+      "claim": "Olfactory memories last longer than visual memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory memories last longer than visual memories (data not shown; Schnaitmann et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by unpublished data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "edbf0e8b-b37b-4892-9af0-950990daea97",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C71",
+      "claim": "PAM cluster neurons play crucial roles in both olfactory and visual appetitive memories.",
+      "claim_type": "EXPLICIT",
+      "source": "In appetitive conditioning, PAM cluster neurons play crucial roles in both olfactory and visual memories (Figure 2A,D,E, Figure 3C,E, Figure 4B; Burke et al., 2012; Liu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in multiple figures and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "6f0c3d39-c6ca-4d9e-9ee6-d2781f1dde37",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C72",
+      "claim": "All dopamine neurons conveying reinforcement signals project to restricted subdomains of the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, all these neurons convey dopamine signals to restricted subdomains of the MB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an anatomical observation based on the expression patterns shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "726e3cca-9f7c-4017-a2cd-fdc2763bf14e",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C73",
+      "claim": "The blockade of octopamine neurons did not impair appetitive visual memories with sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "The blockade of octopamine neurons did not impair appetitive visual memories with sucrose (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "489bc277-d0e5-4649-8634-bfdd98162aea",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C74",
+      "claim": "The involvement of octopamine neurons may be more substantial when non-nutritious sweet taste rewards are used, as has been shown in olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The involvement of octopamine neurons may be more substantial when non-nutritious sweet taste rewards are used, as has been shown in olfactory learning (Burke et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculation is supported by citation to prior work in olfactory learning.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "f8d4917e-76e3-4e5f-b058-8676cb22f7de",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C75",
+      "claim": "The necessity of mushroom body output for visual memory acquisition and retrieval is consistent with olfactory conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these shared reinforcement circuits in the MB, the necessity of MB output for visual memory acquisition and retrieval is also consistent with olfactory conditioning (Figure 8; Dubnau et al., 2001; McGuire et al., 2001; Schwaerzel et al., 2002; Krashes et al., 2007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figure 8 and citations to prior work on olfactory conditioning.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "5bc626f0-dfaa-49d7-b345-df7eea6c610a",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C76",
+      "claim": "The recruited Kenyon cell subsets are not identical for visual and olfactory modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "although the recruited KC subsets are not identical for different modalities (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "f3246245-6911-4e13-a428-0cf9c0dfbd11",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C77",
+      "claim": "The mushroom bodies harbor associative plasticity for visual memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the MBs harbor associative plasticity for visual memories",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the collective experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "2ac0193d-320d-4218-b021-7aa1a0b416d3",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C78",
+      "claim": "Similar coincidence detection mechanisms are used to form memories within the mushroom bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "and support the conclusion that similar coincidence detection mechanisms are used to form memories within the MBs (Figure 9) (Heisenberg, 2003; Gerber et al., 2004b; Qin et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is supported by the experimental findings and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "c937db49-c4c5-4c37-8f71-24a88bcfc692",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C79",
+      "claim": "Centralization of similar brain functions spares the cost of maintaining similar circuit motifs in different brain areas and may be an evolutionary conserved design of information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Centralization of similar brain functions spares the cost of maintaining similar circuit motifs in different brain areas and may be an evolutionary conserved design of information processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "32942f6f-3e22-4dbd-a822-c8da1607c735",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C80",
+      "claim": "Converging inputs of different stimuli into a multisensory area have been described in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Such converging inputs of different stimuli into a multisensory area have even been described in humans (Beauchamp et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work in humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "89f42d67-d314-492c-b601-8b5e2c25e6d8",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C81",
+      "claim": "Flight simulator visual learning was shown to require the central complex but not the mushroom bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "'Flight simulator' visual learning was shown to require the central complex but not the MBs (Wolf et al., 1998; Liu et al., 2006; Pan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work using the flight simulator.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "32bbd442-8638-48ac-9292-e5117d060715",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C82",
+      "claim": "There are important differences between the flight simulator paradigm and the visual learning assay used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this appears to contradict our study, we note that there are important differences between the behavioral paradigms employed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about methodological differences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "8ab36e78-1e23-449c-899b-47389b322be2",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C83",
+      "claim": "Flies during flight show octopamine-mediated modulation of neurons in the optic lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that flies during flight show octopamine-mediated modulation of neurons in the optic lobe (Suver et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "af52409c-375d-4d9f-96a5-cf8bae4eb52b",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C84",
+      "claim": "State-dependent mechanisms might underlie different requirement of higher brain centers in different behavioral paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "similar state-dependent mechanisms might underlie different requirement of higher brain centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the discrepancy with flight simulator studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "40439794-c449-42b7-a289-7536fe0bb0ce",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C85",
+      "claim": "The role of the mushroom body in associative learning is not restricted to one sensory modality or reinforcer.",
+      "claim_type": "EXPLICIT",
+      "source": "This study together with the results in associative taste learning (Masek and Scott, 2010; Keene and Masek, 2012) highlights the fact that the role of the MB in associative learning is not restricted to one sensory modality or reinforcer (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is supported by the current findings and citations to prior work on taste learning.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "18178f4c-09b6-401d-9567-fdf6cef51757",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C86",
+      "claim": "Olfactory and visual memories recruit overlapping, yet partly distinct, sets of Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that olfactory and visual memories recruit overlapping, yet partly distinct, sets of Kenyon cells (Figures 6,9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6 and summarized in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "d0d22b25-3bf0-481a-a5c1-00c99dbe00cc",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C87",
+      "claim": "Visual inputs to the mushroom body remain unidentified.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the well-described olfactory projection neurons, visual inputs to the MB remain unidentified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "1f94fd41-55d4-44c7-b8bc-32bbd0b70c14",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C88",
+      "claim": "No anatomical evidence has been reported in Drosophila for direct connections between optic lobes and mushroom bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "No anatomical evidence has been reported in Drosophila for direct connections between optic lobes and MBs (Otsuna and Ito, 2006; Mu et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "31c1326e-683e-411b-b731-9420df97a7d0",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C89",
+      "claim": "Direct connections between optic lobes and mushroom bodies are found in other insects.",
+      "claim_type": "EXPLICIT",
+      "source": "although such connections are found in other insects (Mobbs, 1982; Schildberger, 1984; Li and Strausfeld, 1997; Gronenberg and H\u00f6lldobler, 1999; Paulk and Gronenberg, 2008; Lin and Strausfeld, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work in other insect species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "5bd7bec2-4a23-4eae-9bd8-4347c30ffd1e",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C90",
+      "claim": "Afferents originating in the protocerebrum were found to provide multi-modal input to the mushroom body lobes of cockroaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Also afferents originating in the protocerebrum were found to provide multi-modal input to the MB lobes of cockroaches (Li and Strausfeld, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work in cockroaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "3b44ef8d-779b-4f0c-89ed-9af1dcca7aa9",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C91",
+      "claim": "Drosophila mushroom bodies may receive indirect visual input from optic lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Drosophila MBs may receive indirect visual input from optic lobes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on findings in other insects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "384a4163-3199-434d-9b92-cd9b129bbc5f",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C92",
+      "claim": "Visual and olfactory cues may be both represented in the \u03b3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the general requirement of the \u03b3 lobe neurons (Figure 7), visual and olfactory cues may be both represented in the \u03b3 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the requirement of \u03b3 lobe neurons shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "c4eda8dd-952c-4e29-887d-0e77705a08bd",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C93",
+      "claim": "The dopamine neurons that convey appetitive and aversive memories heavily project to the \u03b3 lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the dopamine neurons that convey appetitive and aversive memories heavily project to the \u03b3 lobe (Figure 3A,B; Claridge-Chang et al., 2009; Aso et al., 2010, 2012; Burke et al., 2012; Liu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data in Figure 3 and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "e9c02521-cf8a-4df1-a9b4-0710bb95f44f",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C94",
+      "claim": "In olfactory conditioning, the \u03b3 lobe was shown to contribute mainly to short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In olfactory conditioning, the \u03b3 lobe was shown to contribute mainly to short-term memory (Zars et al., 2000; Isabel et al., 2004; Blum et al., 2009; Trannoy et al., 2011; Qin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on olfactory memory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "c32fa170-fa5b-4164-8049-f3a798a5d10f",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C95",
+      "claim": "Converging evidence from olfactory and visual memories suggests a general role for the \u03b3 lobe in short-lasting memories across different sensory modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "This converging evidence from olfactory and visual memories suggests a general role for the \u03b3 lobe in short-lasting memories across different sensory modalities (Figures 6,7 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from the current findings and prior work on olfactory memory.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "01439d12-c7da-4e83-b7a7-b2fac86c145f",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C96",
+      "claim": "The mushroom body is involved in sensorimotor gating of visual stimuli or visual selective attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies found that the MB is also involved in sensorimotor gating of visual stimuli or visual selective attention (van Swinderen and Greenspan, 2003; Xi et al., 2008; van Swinderen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "a8ca8bf1-f8f0-41a6-909e-ba323fbdd2d5",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C97",
+      "claim": "The mushroom body circuits for visual associative memories might be required for sensorimotor gating and attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the MB circuits for visual associative memories might be required for sensorimotor gating and attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on prior findings about MB function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "fd06d07d-7e1a-49fe-a34d-633b1aadad01",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C98",
+      "claim": "The contribution of the \u03b1\u2032/\u03b2\u2032 lobes is selective for olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the contribution of the \u03b1\u2032/\u03b2\u2032 lobes is selective for olfactory memories (Figure 6; Krashes et al., 2007; Cervantes-Sandoval et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figure 6 and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "ea9d771d-0728-4a2f-b603-a0a6295c40fa",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C99",
+      "claim": "The \u03b1\u2032/\u03b2\u2032 Kenyon cell class is more specialized to odor representation, as the cells have the broadest odor tuning and the lowest response threshold among the three Kenyon cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This Kenyon cell class is more specialized to odor representation, as the cells have the broadest odor tuning and the lowest response threshold among the three Kenyon cell types (Turner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on odor representation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "85198652-cc15-4d33-97b1-2dd1e5be331a",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C100",
+      "claim": "The role of \u03b1/\u03b2 neurons in visual memories is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of \u03b1/\u03b2 neurons in visual memories is also limited (Figures 6A and 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 6A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "3b2b8ba5-3dc0-4a60-9f90-986f5105db1d",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C101",
+      "claim": "The \u03b1/\u03b2 neurons might play more modulatory roles in specific visual memory tasks, such as context generalization, facilitation of operant learning and occasion setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1/\u03b2 neurons might play more modulatory roles in specific visual memory tasks, such as context generalization, facilitation of operant learning and occasion setting (Liu et al., 1999; Tang and Guo, 2001; Brembs and Wiener, 2006; Brembs, 2009; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculation is supported by citations to prior work on visual memory tasks.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "59be02ad-35c4-457e-9c7f-bf263d712f91",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C102",
+      "claim": "The modulatory role of the \u03b1/\u03b2 neurons is corroborated in olfactory learning, where they are preferentially required for long-lasting memories.",
+      "claim_type": "EXPLICIT",
+      "source": "This modulatory role of the \u03b1/\u03b2 neurons is corroborated in olfactory learning, where they are preferentially required for long-lasting memories (McGuire et al., 2003; Isabel et al., 2004; Blum et al., 2009; Trannoy et al., 2011; Keleman et al., 2012; Xie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on olfactory memory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "cc68d612-705c-46f3-95a4-17a1dc842052",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C103",
+      "claim": "Differentiated but overlapping sensory representations by Kenyon cells may be conserved among insect species.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiated but overlapping sensory representations by KCs may be conserved among insect species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about evolutionary conservation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "2b275488-c3a3-4766-a95f-268d54105821",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C104",
+      "claim": "In honeybees, different sensory modalities are represented in spatially segregated areas of the calyx, whereas the basal ring region receives visual and olfactory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In honeybees, different sensory modalities are represented in spatially segregated areas of the calyx, whereas the basal ring region receives visual and olfactory inputs (Mobbs, 1982; Strausfeld, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work in honeybees.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "59b443c6-a740-40ae-8a49-6c04d74f11a1",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "claim_id": "C105",
+      "claim": "The mushroom body might have evolved to represent the sensory space of those modalities that are subject to associative modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The MB might thus have evolved to represent the sensory space of those modalities that are subject to associative modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of MB evolution and function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a8f122c3-4190-426b-9c68-e06c2fdbe21d",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel aversive visual learning assay for Drosophila using a transparent ITO shock grid that allows electric shock punishment while maintaining visual stimulation from below. The assay produces aversive visual memory comparable to other paradigms, with conditioned avoidance plateauing at approximately 30V, leading to the use of 60V for subsequent experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 provide strong methodological and empirical support for the development of the aversive visual learning assay. The transparent shock grid solution (C13) is technically sound, and the dose-response data (C14-C15) with appropriate controls justify the experimental parameters chosen (C16-C17). This represents a significant methodological advance enabling direct comparison between appetitive and aversive visual learning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "5865d799-762e-44b5-8a30-49a5f67741f0",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Different aminergic neuron populations mediate appetitive versus aversive visual memory formation. Blocking dopamine neurons with DDC-GAL4 selectively impairs appetitive memory during training but not retrieval, while blocking with TH-GAL4 selectively impairs aversive memory during training but not retrieval. Octopamine/tyramine neurons are not required for either memory type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 provide converging evidence from neuronal blockade experiments (C18-C20), control experiments (C21-C22), and temporal requirement analyses (C23-C24) that collectively support the differential roles of dopamine neuron subsets in appetitive versus aversive visual memory. The temporal specificity (training vs. test) strengthens the interpretation that these neurons mediate memory formation rather than retrieval.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "44a40bb2-ada1-44ec-a4cf-616e685a701e",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Specific dopamine neuron subsets that mediate olfactory memory also mediate visual memory: PAM cluster neurons (R58E02-GAL4) are required for appetitive visual memory, while PPL1 cluster neurons (MB504B-GAL4) are required for aversive visual memory. These neurons do not affect reflexive responses to sugar or shock.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 provide strong evidence through genetic dissection using specific GAL4 drivers, with appropriate anatomical characterization (C27, C29) and functional validation (C31-C32). The control experiments (C33) rule out non-specific effects on sensory processing. The conclusion (C34) that visual and olfactory memories share reinforcement substrates is well-supported by the convergence of these findings with prior olfactory learning studies (C26, C30).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "9b9d7c46-9feb-48ad-afea-067f4cccc0e8",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Thermo-activation of PAM cluster neurons (R58E02-GAL4) is sufficient to induce appetitive visual memory, while thermo-activation of PPL1 cluster neurons (MB504B-GAL4) is sufficient to induce aversive visual memory, demonstrating that these dopamine neurons directly supply reinforcement signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 provide sufficiency evidence complementing the necessity experiments, using dTRPA1-mediated thermo-activation to substitute for natural reinforcement. The conclusion (C37) that these dopamine neurons supply reinforcement information for both visual and olfactory memories is well-supported by the combination of necessity (blockade) and sufficiency (activation) experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "eb1eb1cb-589a-4534-a2cb-ba0609fd2f54",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The dopamine receptor DopR is required for both appetitive and aversive visual memories, and selective expression of DopR in Kenyon cells rescues the memory defect in dumb2 mutants, indicating that dopamine signals are received by mushroom body neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 provide strong genetic evidence through mutant analysis and cell-type-specific rescue experiments. The DopR requirement (C39) and MB-specific rescue (C40) together demonstrate that dopamine signals act on Kenyon cells. The conclusion (C41) integrating dopamine neuron and receptor findings is well-supported, though the rescue is described as 'significant' rather than complete, suggesting additional complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "41cf8f38-0aa6-43c2-b0d0-eb33637930e6",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Kenyon cells in the mushroom body are required for both appetitive and aversive visual memories. This requirement is independent of conditioning design (classical vs. operant) and context changes between training and test, as demonstrated by blockade experiments with 201y-GAL4 and MB247-GAL4 and rescue with MB247-GAL80.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 provide strong evidence through neuronal blockade and genetic rescue experiments that control for off-target effects. Claim C45 is supported by additional experiments with modified protocols (referenced in Figure 5B and Figure 5\u2014figure supplement 2), demonstrating robustness across different conditioning paradigms. This establishes a clear role for MBs in visual memory, resolving prior contradictions in the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "9efc41be-1c86-4b2f-bc33-187e19c4f1bd",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Visual and olfactory memories recruit partially overlapping Kenyon cell subsets. \u03b1'/\u03b2' neurons (c305a-GAL4) are selectively required for olfactory but not visual memory, while \u03b1/\u03b2 and \u03b3 neurons (201y-GAL4) are required for both modalities. \u03b1/\u03b2 neurons alone (17D-GAL4) are not required for either memory type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 provide clear differential requirements across memory modalities using multiple GAL4 drivers. The conclusion (C49) of partial overlap is well-supported by the data. The interpretation (C50) linking \u03b1'/\u03b2' specificity to preferential olfactory input representation is reasonable but relies on prior anatomical work rather than direct demonstration in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "bd256384-c5e8-4190-88f8-347dc11d8ec5",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Within visual memory, \u03b3 lobe neurons (MB009B-GAL4) are specifically required for both appetitive and aversive memories, while \u03b1'/\u03b2' neurons (MB186B-GAL4) and \u03b1/\u03b2 neurons (MB008B-GAL4) are not required. The similar requirements for appetitive and aversive memories suggest differential modulation of the same KC subsets by reward versus punishment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 provide systematic dissection of MB lobe contributions using Split GAL4 lines with high specificity. The observation (C55) of similar requirements across valences is well-documented. The interpretation (C56) of differential modulation is reasonable but remains somewhat speculative, as direct evidence for modulation mechanisms is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "f0de0d66-cf80-4093-824e-c6016c83a27a",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Different Kenyon cell populations mediate acquisition versus retrieval of visual memories. Broad KC populations (MB010B-GAL4, MB247-GAL4) are required during both training and test, while smaller subsets (201y-GAL4, MB009B-GAL4) are selectively required for retrieval but not acquisition of aversive memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 provide systematic temporal requirement analysis using temperature-shift experiments with shibirets1. The differential temporal requirements across different GAL4 drivers provide strong evidence for distinct roles of KC subsets in memory phases. The conclusion (C62) is well-supported by the convergent findings across multiple driver lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "b1a219f6-9553-4e3b-8a10-c0a4d7a1e37b",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Visual and olfactory memories are processed in a common brain center (the mushroom body) using shared dopamine reinforcement circuits and partially overlapping Kenyon cell populations, suggesting similar coincidence detection mechanisms operate across sensory modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion integrates findings from multiple experimental approaches (C3, C4, C64) demonstrating shared dopamine neurons and partially overlapping KC requirements. Claims C77-C78 synthesize these findings into a coherent model of MB function. The conclusion is well-supported by the convergence of anatomical, genetic, and functional evidence, though the specific molecular mechanisms of coincidence detection are inferred from prior work rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "7ab4b9a4-fbe4-4b81-bd53-81863e7be50e",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Centralization of visual and olfactory memory processing in the mushroom body represents an economical design that avoids repetition of similar circuit motifs and may be an evolutionarily conserved principle of information processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6 and C79 present an evolutionary/design interpretation of the findings. While the observation of shared circuits is well-supported, the claims about 'economical design' and evolutionary conservation are speculative. No comparative data across species or direct evidence for evolutionary selection is provided. This represents a reasonable hypothesis but goes beyond what the data directly demonstrate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "ce94912e-a515-418f-90ad-5a9cb023617e",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors argue that optimal comparison of visual and olfactory memory circuits requires matched reinforcers (sugar and shock) between modalities, and that differences from flight simulator studies may reflect state-dependent mechanisms or other paradigm-specific factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 articulates a sound methodological principle that is implemented throughout the study. Claims C82 and C84 provide reasonable explanations for discrepancies with prior flight simulator studies, though C84 remains speculative. The methodological approach of matching reinforcers is well-justified and represents a strength of the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "f828ef96-496e-47c4-a3e9-a63d98db8a48",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For electric shock punishment, PPL1 cluster neurons (MB-MP1, MB-MV1, MB-V1) drive both visual and olfactory aversive memories, while MB-M3 neurons in the PAM cluster are specifically involved in olfactory aversive memory. For appetitive conditioning, PAM cluster neurons are crucial for both modalities. All reinforcement-signaling dopamine neurons project to restricted MB subdomains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 integrate current findings with prior olfactory learning studies to identify shared and modality-specific dopamine neurons. Claim C68 provides a reasonable synthesis, though the interpretation of 'larger set' for olfactory memory is somewhat speculative. Claims C69-C70 offer plausible explanations for differential neuron recruitment based on memory stability. Claim C72 is well-supported by anatomical data. Overall, this represents a well-supported integration of findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "3a50e6d1-0e0d-45e8-8f8b-757a3a3c09bb",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Octopamine neurons are not required for appetitive visual memories with sucrose reward, though they may be more important when non-nutritious sweet taste rewards are used, as shown in olfactory learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is directly supported by experimental data (Figure 2A). Claim C74 is a reasonable speculation based on prior olfactory learning studies, appropriately qualified as speculative. The negative result for octopamine is important for understanding the specificity of dopamine neuron involvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "be4bcf9a-af51-475c-98bc-80dba85b2611",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The necessity of mushroom body output for visual memory acquisition and retrieval is consistent with olfactory conditioning, though the recruited Kenyon cell subsets are not identical across modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 accurately summarize key findings and their relationship to prior olfactory learning studies. The temporal requirements (C75) and differential KC recruitment (C76) are both well-supported by experimental data presented in Figures 6 and 8.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "d428830c-b795-4a72-950f-64319863f974",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The mushroom body's role in associative learning extends beyond olfaction to multiple sensory modalities (visual, gustatory), with different modalities recruiting overlapping yet partly distinct Kenyon cell populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 synthesize findings from the current study with prior work on taste learning. The conclusion is well-supported by the convergence of evidence across multiple sensory modalities, establishing the MB as a general associative learning center rather than a modality-specific structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "5289da84-e46f-4e79-bae7-ac1939be7f47",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The \u03b3 lobe plays a general role in short-lasting memories across different sensory modalities. Visual and olfactory cues may both be represented in \u03b3 neurons, which receive heavy projections from dopamine neurons conveying appetitive and aversive signals and contribute mainly to short-term memory in olfactory conditioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is a reasonable inference based on the general requirement of \u03b3 neurons (Figure 7). Claim C93 is well-supported by anatomical data. Claims C94-C95 integrate current findings with prior olfactory memory studies to propose a general role for \u03b3 lobes in short-term memory. The conclusion is well-supported by converging evidence, though direct measurement of memory duration in visual learning would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "cce8840d-d0ad-4784-9053-8ca6d73549ec",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The \u03b1'/\u03b2' lobes are selective for olfactory memories, consistent with their specialized odor representation properties. The \u03b1/\u03b2 neurons have limited roles in visual memories but may play modulatory roles in specific tasks and are preferentially required for long-lasting olfactory memories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 are well-supported by experimental data (Figures 6-7). Claims C99 and C102 appropriately cite prior work on odor representation and memory phases. Claim C101 is more speculative, proposing modulatory roles based on prior studies rather than direct demonstration. Overall, the differential contributions of MB lobes are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "97f82f0f-3e08-4ec7-b1c2-7e9acfdb879c",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Visual inputs to the mushroom body remain unidentified. No direct anatomical connections between optic lobes and MBs have been reported in Drosophila, though such connections exist in other insects. Drosophila MBs may receive indirect visual input from optic lobes via protocerebral afferents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 accurately summarize the current state of knowledge regarding visual inputs to the MB, appropriately citing prior anatomical studies. Claim C91 is a reasonable speculation based on findings in other insect species. This represents an important knowledge gap identified by the study that motivates future anatomical work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "c71d96ea-b5d0-4b7b-9fc3-dcf02ce592a5",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The mushroom body may be involved in sensorimotor gating and visual selective attention, and the MB circuits for visual associative memories might also be required for these functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C96 appropriately cites prior work on MB involvement in attention and sensorimotor gating. However, claim C97 is speculative, as the current study does not directly test attention or gating functions. The relationship between memory circuits and attention mechanisms remains to be established experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "6cb56633-0985-4d8c-83ef-1e0a8719a23c",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Differentiated but overlapping sensory representations by Kenyon cells may be conserved among insect species, with the mushroom body potentially evolving to represent sensory modalities subject to associative modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is speculative about evolutionary conservation without comparative data. Claim C104 appropriately cites prior work in honeybees showing spatial segregation of sensory inputs. Claim C105 presents an evolutionary hypothesis about MB function that, while plausible, goes beyond the data presented. These represent interesting hypotheses for future comparative studies but are not directly supported by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "882623bc-ab08-473b-92a7-6d33036f9fd6",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Prior work establishes that animals form multisensory associative memories and that mushroom bodies are required for olfactory and gustatory memories in Drosophila, but prior studies disagreed on whether MBs are required for visual memory, and the circuit mechanisms underlying memories of different sensory modalities were unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 accurately summarize relevant prior work and identify the knowledge gap motivating the study. The citations are appropriate and the characterization of contradictory findings in the literature (C11-C12) is fair. This provides solid context for the study's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "30db5276-d30b-468e-a94b-3d6fb4e629d0",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Prior flight simulator studies showed that visual learning requires the central complex but not the mushroom bodies, and that flies during flight show octopamine-mediated modulation of optic lobe neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81 and C83 accurately cite prior work on flight simulator learning and flight-state modulation. These claims provide important context for understanding apparent contradictions with the current findings and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    },
+    {
+      "id": "968ebfa5-95e9-40fa-9875-5d845acfdd3b",
+      "content_id": "26b83cbc-3b9f-44d0-9cb8-490d6f51dc7e",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Prior work in insects and other animals has established roles for specific dopamine neuron subsets in olfactory memory, shared transmitter system requirements between visual and olfactory learning in crickets, and multisensory convergence in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize relevant prior work that provides context for the current findings. The citations are appropriate and the characterization of prior results is accurate. These establish the foundation for comparing visual and olfactory memory mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:12.904466Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "076aa5af-9466-42c1-a53b-a1ceba6e592a",
+      "result_id": "a8f122c3-4190-426b-9c68-e06c2fdbe21d"
+    },
+    {
+      "claim_id": "f9431f87-728a-4a3c-8a6d-1b580cd5b61d",
+      "result_id": "a8f122c3-4190-426b-9c68-e06c2fdbe21d"
+    },
+    {
+      "claim_id": "bc80a763-7f02-4e79-b9e2-460c1ac35efc",
+      "result_id": "a8f122c3-4190-426b-9c68-e06c2fdbe21d"
+    },
+    {
+      "claim_id": "dcda1cc6-0fe0-4c44-8c57-e567179bb877",
+      "result_id": "a8f122c3-4190-426b-9c68-e06c2fdbe21d"
+    },
+    {
+      "claim_id": "147e1d99-cc6e-434a-81b6-6237d98f53b4",
+      "result_id": "a8f122c3-4190-426b-9c68-e06c2fdbe21d"
+    },
+    {
+      "claim_id": "56b7d6f8-378a-4be0-a589-ea82a688cb68",
+      "result_id": "a8f122c3-4190-426b-9c68-e06c2fdbe21d"
+    },
+    {
+      "claim_id": "c8aa99de-a033-435c-a217-60ed46840ca4",
+      "result_id": "a8f122c3-4190-426b-9c68-e06c2fdbe21d"
+    },
+    {
+      "claim_id": "1227ab9e-09ae-4e82-b47e-0dd9386c3c13",
+      "result_id": "5865d799-762e-44b5-8a30-49a5f67741f0"
+    },
+    {
+      "claim_id": "c9c7eda3-1b55-4368-8dec-b4dfb7559ba9",
+      "result_id": "5865d799-762e-44b5-8a30-49a5f67741f0"
+    },
+    {
+      "claim_id": "fd8e79a1-868a-40ec-b1ca-f687f890885d",
+      "result_id": "5865d799-762e-44b5-8a30-49a5f67741f0"
+    },
+    {
+      "claim_id": "6c57f211-adfa-43b9-9739-853038357b91",
+      "result_id": "5865d799-762e-44b5-8a30-49a5f67741f0"
+    },
+    {
+      "claim_id": "33bcd534-5e49-4eec-808b-5acbba0e51e5",
+      "result_id": "5865d799-762e-44b5-8a30-49a5f67741f0"
+    },
+    {
+      "claim_id": "7a651ab1-5f2d-407a-a777-95f61ebda57f",
+      "result_id": "5865d799-762e-44b5-8a30-49a5f67741f0"
+    },
+    {
+      "claim_id": "a174ba1c-11b5-4397-91b2-5674ed0c84f1",
+      "result_id": "5865d799-762e-44b5-8a30-49a5f67741f0"
+    },
+    {
+      "claim_id": "26372e18-3cf0-4faf-b753-1fd0f026e1fa",
+      "result_id": "5865d799-762e-44b5-8a30-49a5f67741f0"
+    },
+    {
+      "claim_id": "764ed1e0-eb7c-4d08-b40a-946c65788996",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "69e41302-2c57-46c7-a296-b8e26897b249",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "32f564f0-b61a-464c-8dd3-d19f1da07e70",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "de771f5e-800f-4547-8aa6-185a1af58e85",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "52dd3ef0-9c31-467f-8c52-1998e39f6d2c",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "21173b54-dc5f-4bbd-89c1-eaf9f05d5599",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "9a28c38d-ec88-4292-a0bd-fb661b0303ee",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "af71e292-0959-4a2b-99df-f0ab467a666d",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "68a09d1b-2f98-454e-b5fe-34832f0fb571",
+      "result_id": "44a40bb2-ada1-44ec-a4cf-616e685a701e"
+    },
+    {
+      "claim_id": "49a3301e-8cd4-40aa-a2ef-3795a348c030",
+      "result_id": "9b9d7c46-9feb-48ad-afea-067f4cccc0e8"
+    },
+    {
+      "claim_id": "78030281-d56f-4605-be9c-385e2aab4010",
+      "result_id": "9b9d7c46-9feb-48ad-afea-067f4cccc0e8"
+    },
+    {
+      "claim_id": "fb5e3f92-7222-4758-8e0c-bc353e9b2794",
+      "result_id": "9b9d7c46-9feb-48ad-afea-067f4cccc0e8"
+    },
+    {
+      "claim_id": "65866f63-d615-43bb-9a2b-a184ab3d2b70",
+      "result_id": "eb1eb1cb-589a-4534-a2cb-ba0609fd2f54"
+    },
+    {
+      "claim_id": "12d1524d-3a6b-4f02-8e71-1bbcf29bda39",
+      "result_id": "eb1eb1cb-589a-4534-a2cb-ba0609fd2f54"
+    },
+    {
+      "claim_id": "0547f9db-7ec8-4105-865c-61a29060569e",
+      "result_id": "eb1eb1cb-589a-4534-a2cb-ba0609fd2f54"
+    },
+    {
+      "claim_id": "38793da3-1f73-465d-a6b3-a1f08d59e3e3",
+      "result_id": "eb1eb1cb-589a-4534-a2cb-ba0609fd2f54"
+    },
+    {
+      "claim_id": "5d5ade58-e7ff-446f-b1f1-dc0b0ab36cb0",
+      "result_id": "41cf8f38-0aa6-43c2-b0d0-eb33637930e6"
+    },
+    {
+      "claim_id": "32677156-3983-46d6-bbdc-50eb538c9496",
+      "result_id": "41cf8f38-0aa6-43c2-b0d0-eb33637930e6"
+    },
+    {
+      "claim_id": "428cb105-73d7-489b-bbd0-7f5731ea03d6",
+      "result_id": "41cf8f38-0aa6-43c2-b0d0-eb33637930e6"
+    },
+    {
+      "claim_id": "affb34d5-eb8c-4b5a-b3cd-70e821473f86",
+      "result_id": "41cf8f38-0aa6-43c2-b0d0-eb33637930e6"
+    },
+    {
+      "claim_id": "dd5e39ee-6af4-4c65-a47b-9a8f48724603",
+      "result_id": "9efc41be-1c86-4b2f-bc33-187e19c4f1bd"
+    },
+    {
+      "claim_id": "dbfba1cb-3bdc-43d5-9f33-4319a8bc9270",
+      "result_id": "9efc41be-1c86-4b2f-bc33-187e19c4f1bd"
+    },
+    {
+      "claim_id": "9b46ef08-4217-486c-9ddb-ac172781a1a9",
+      "result_id": "9efc41be-1c86-4b2f-bc33-187e19c4f1bd"
+    },
+    {
+      "claim_id": "0508275b-b2fa-4529-bcfd-fafb2578b17b",
+      "result_id": "9efc41be-1c86-4b2f-bc33-187e19c4f1bd"
+    },
+    {
+      "claim_id": "b0abee71-7d0d-483f-8721-efcd18cf6e65",
+      "result_id": "9efc41be-1c86-4b2f-bc33-187e19c4f1bd"
+    },
+    {
+      "claim_id": "60d87648-6143-4ae0-a258-5ceec4fe57d5",
+      "result_id": "bd256384-c5e8-4190-88f8-347dc11d8ec5"
+    },
+    {
+      "claim_id": "a08b5c8d-36c9-4ba1-9fbc-b8cf45a653e6",
+      "result_id": "bd256384-c5e8-4190-88f8-347dc11d8ec5"
+    },
+    {
+      "claim_id": "37b22345-9638-4d6c-9871-541ef8a0b2fc",
+      "result_id": "bd256384-c5e8-4190-88f8-347dc11d8ec5"
+    },
+    {
+      "claim_id": "cea3b46b-1c6c-4f82-ad4e-fe6ab72adb24",
+      "result_id": "bd256384-c5e8-4190-88f8-347dc11d8ec5"
+    },
+    {
+      "claim_id": "c54db045-84dd-434a-913c-cde61c980c99",
+      "result_id": "bd256384-c5e8-4190-88f8-347dc11d8ec5"
+    },
+    {
+      "claim_id": "f2b85481-fb2f-4d38-bbef-319fc873f50b",
+      "result_id": "bd256384-c5e8-4190-88f8-347dc11d8ec5"
+    },
+    {
+      "claim_id": "39dc3451-f09a-4b6c-9f40-76c30b7ef7ff",
+      "result_id": "f0de0d66-cf80-4093-824e-c6016c83a27a"
+    },
+    {
+      "claim_id": "d8c0a549-af3d-4f8f-ad8e-48a50c1bb603",
+      "result_id": "f0de0d66-cf80-4093-824e-c6016c83a27a"
+    },
+    {
+      "claim_id": "d72dbc90-b7aa-46c9-afad-8b8bf4098f12",
+      "result_id": "f0de0d66-cf80-4093-824e-c6016c83a27a"
+    },
+    {
+      "claim_id": "05200533-38c8-40ab-986b-445ba728e5f5",
+      "result_id": "f0de0d66-cf80-4093-824e-c6016c83a27a"
+    },
+    {
+      "claim_id": "bc26c8f3-4efa-443f-8c3c-a6555bf855ff",
+      "result_id": "f0de0d66-cf80-4093-824e-c6016c83a27a"
+    },
+    {
+      "claim_id": "7d839a8a-f4db-4117-b85e-7ceb803543a8",
+      "result_id": "f0de0d66-cf80-4093-824e-c6016c83a27a"
+    },
+    {
+      "claim_id": "ffe87417-d884-4c28-800a-f214a491a733",
+      "result_id": "b1a219f6-9553-4e3b-8a10-c0a4d7a1e37b"
+    },
+    {
+      "claim_id": "9fce0da2-fec1-4e8b-8e32-645964b0038c",
+      "result_id": "b1a219f6-9553-4e3b-8a10-c0a4d7a1e37b"
+    },
+    {
+      "claim_id": "ffb209d6-f58e-4976-9bc2-78c0204d7ea7",
+      "result_id": "b1a219f6-9553-4e3b-8a10-c0a4d7a1e37b"
+    },
+    {
+      "claim_id": "e29d4fce-84b1-4453-b88e-79c3c2f165d7",
+      "result_id": "b1a219f6-9553-4e3b-8a10-c0a4d7a1e37b"
+    },
+    {
+      "claim_id": "f3246245-6911-4e13-a428-0cf9c0dfbd11",
+      "result_id": "b1a219f6-9553-4e3b-8a10-c0a4d7a1e37b"
+    },
+    {
+      "claim_id": "2ac0193d-320d-4218-b021-7aa1a0b416d3",
+      "result_id": "b1a219f6-9553-4e3b-8a10-c0a4d7a1e37b"
+    },
+    {
+      "claim_id": "189b9183-a9c3-47ce-aef7-72501723ef21",
+      "result_id": "7ab4b9a4-fbe4-4b81-bd53-81863e7be50e"
+    },
+    {
+      "claim_id": "c937db49-c4c5-4c37-8f71-24a88bcfc692",
+      "result_id": "7ab4b9a4-fbe4-4b81-bd53-81863e7be50e"
+    },
+    {
+      "claim_id": "829a7848-f58b-463b-ba1f-20e0ab3fc1ca",
+      "result_id": "ce94912e-a515-418f-90ad-5a9cb023617e"
+    },
+    {
+      "claim_id": "32bbd442-8638-48ac-9292-e5117d060715",
+      "result_id": "ce94912e-a515-418f-90ad-5a9cb023617e"
+    },
+    {
+      "claim_id": "af52409c-375d-4d9f-96a5-cf8bae4eb52b",
+      "result_id": "ce94912e-a515-418f-90ad-5a9cb023617e"
+    },
+    {
+      "claim_id": "b9403691-e9a9-420d-9e65-dff1c8709048",
+      "result_id": "f828ef96-496e-47c4-a3e9-a63d98db8a48"
+    },
+    {
+      "claim_id": "c8998fb3-3e80-49d1-943e-1c0164cb54ea",
+      "result_id": "f828ef96-496e-47c4-a3e9-a63d98db8a48"
+    },
+    {
+      "claim_id": "cc3546a4-9209-422e-a257-91461530cfee",
+      "result_id": "f828ef96-496e-47c4-a3e9-a63d98db8a48"
+    },
+    {
+      "claim_id": "6d05c6ea-5891-45f6-972e-73f9cf755360",
+      "result_id": "f828ef96-496e-47c4-a3e9-a63d98db8a48"
+    },
+    {
+      "claim_id": "8b0d43bf-ccb1-4316-89b8-7f4f97da4072",
+      "result_id": "f828ef96-496e-47c4-a3e9-a63d98db8a48"
+    },
+    {
+      "claim_id": "edbf0e8b-b37b-4892-9af0-950990daea97",
+      "result_id": "f828ef96-496e-47c4-a3e9-a63d98db8a48"
+    },
+    {
+      "claim_id": "6f0c3d39-c6ca-4d9e-9ee6-d2781f1dde37",
+      "result_id": "f828ef96-496e-47c4-a3e9-a63d98db8a48"
+    },
+    {
+      "claim_id": "726e3cca-9f7c-4017-a2cd-fdc2763bf14e",
+      "result_id": "3a50e6d1-0e0d-45e8-8f8b-757a3a3c09bb"
+    },
+    {
+      "claim_id": "489bc277-d0e5-4649-8634-bfdd98162aea",
+      "result_id": "3a50e6d1-0e0d-45e8-8f8b-757a3a3c09bb"
+    },
+    {
+      "claim_id": "f8d4917e-76e3-4e5f-b058-8676cb22f7de",
+      "result_id": "be4bcf9a-af51-475c-98bc-80dba85b2611"
+    },
+    {
+      "claim_id": "5bc626f0-dfaa-49d7-b345-df7eea6c610a",
+      "result_id": "be4bcf9a-af51-475c-98bc-80dba85b2611"
+    },
+    {
+      "claim_id": "40439794-c449-42b7-a289-7536fe0bb0ce",
+      "result_id": "d428830c-b795-4a72-950f-64319863f974"
+    },
+    {
+      "claim_id": "18178f4c-09b6-401d-9567-fdf6cef51757",
+      "result_id": "d428830c-b795-4a72-950f-64319863f974"
+    },
+    {
+      "claim_id": "384a4163-3199-434d-9b92-cd9b129bbc5f",
+      "result_id": "5289da84-e46f-4e79-bae7-ac1939be7f47"
+    },
+    {
+      "claim_id": "c4eda8dd-952c-4e29-887d-0e77705a08bd",
+      "result_id": "5289da84-e46f-4e79-bae7-ac1939be7f47"
+    },
+    {
+      "claim_id": "e9c02521-cf8a-4df1-a9b4-0710bb95f44f",
+      "result_id": "5289da84-e46f-4e79-bae7-ac1939be7f47"
+    },
+    {
+      "claim_id": "c32fa170-fa5b-4164-8049-f3a798a5d10f",
+      "result_id": "5289da84-e46f-4e79-bae7-ac1939be7f47"
+    },
+    {
+      "claim_id": "fd06d07d-7e1a-49fe-a34d-633b1aadad01",
+      "result_id": "cce8840d-d0ad-4784-9053-8ca6d73549ec"
+    },
+    {
+      "claim_id": "ea9d771d-0728-4a2f-b603-a0a6295c40fa",
+      "result_id": "cce8840d-d0ad-4784-9053-8ca6d73549ec"
+    },
+    {
+      "claim_id": "85198652-cc15-4d33-97b1-2dd1e5be331a",
+      "result_id": "cce8840d-d0ad-4784-9053-8ca6d73549ec"
+    },
+    {
+      "claim_id": "3b2b8ba5-3dc0-4a60-9f90-986f5105db1d",
+      "result_id": "cce8840d-d0ad-4784-9053-8ca6d73549ec"
+    },
+    {
+      "claim_id": "59be02ad-35c4-457e-9c7f-bf263d712f91",
+      "result_id": "cce8840d-d0ad-4784-9053-8ca6d73549ec"
+    },
+    {
+      "claim_id": "d0d22b25-3bf0-481a-a5c1-00c99dbe00cc",
+      "result_id": "97f82f0f-3e08-4ec7-b1c2-7e9acfdb879c"
+    },
+    {
+      "claim_id": "1f94fd41-55d4-44c7-b8bc-32bbd0b70c14",
+      "result_id": "97f82f0f-3e08-4ec7-b1c2-7e9acfdb879c"
+    },
+    {
+      "claim_id": "31c1326e-683e-411b-b731-9420df97a7d0",
+      "result_id": "97f82f0f-3e08-4ec7-b1c2-7e9acfdb879c"
+    },
+    {
+      "claim_id": "5bd7bec2-4a23-4eae-9bd8-4347c30ffd1e",
+      "result_id": "97f82f0f-3e08-4ec7-b1c2-7e9acfdb879c"
+    },
+    {
+      "claim_id": "3b44ef8d-779b-4f0c-89ed-9af1dcca7aa9",
+      "result_id": "97f82f0f-3e08-4ec7-b1c2-7e9acfdb879c"
+    },
+    {
+      "claim_id": "01439d12-c7da-4e83-b7a7-b2fac86c145f",
+      "result_id": "c71d96ea-b5d0-4b7b-9fc3-dcf02ce592a5"
+    },
+    {
+      "claim_id": "a8ca8bf1-f8f0-41a6-909e-ba323fbdd2d5",
+      "result_id": "c71d96ea-b5d0-4b7b-9fc3-dcf02ce592a5"
+    },
+    {
+      "claim_id": "cc68d612-705c-46f3-95a4-17a1dc842052",
+      "result_id": "6cb56633-0985-4d8c-83ef-1e0a8719a23c"
+    },
+    {
+      "claim_id": "2b275488-c3a3-4766-a95f-268d54105821",
+      "result_id": "6cb56633-0985-4d8c-83ef-1e0a8719a23c"
+    },
+    {
+      "claim_id": "59b443c6-a740-40ae-8a49-6c04d74f11a1",
+      "result_id": "6cb56633-0985-4d8c-83ef-1e0a8719a23c"
+    },
+    {
+      "claim_id": "da46f976-8448-4909-a846-d8d6dac452b7",
+      "result_id": "882623bc-ab08-473b-92a7-6d33036f9fd6"
+    },
+    {
+      "claim_id": "cae9f8a1-319b-4c2a-a406-bb86242fa096",
+      "result_id": "882623bc-ab08-473b-92a7-6d33036f9fd6"
+    },
+    {
+      "claim_id": "8d4ccbc5-a52a-44c1-ab92-cc1db7a369f1",
+      "result_id": "882623bc-ab08-473b-92a7-6d33036f9fd6"
+    },
+    {
+      "claim_id": "4e7d3f87-2351-4209-bf49-d453a6094203",
+      "result_id": "882623bc-ab08-473b-92a7-6d33036f9fd6"
+    },
+    {
+      "claim_id": "9d840ffa-5c1a-458b-8361-a1befff1cc4f",
+      "result_id": "882623bc-ab08-473b-92a7-6d33036f9fd6"
+    },
+    {
+      "claim_id": "a80a49ab-2d37-4da8-b85b-f2165041d32d",
+      "result_id": "882623bc-ab08-473b-92a7-6d33036f9fd6"
+    },
+    {
+      "claim_id": "89f42d67-d314-492c-b601-8b5e2c25e6d8",
+      "result_id": "30db5276-d30b-468e-a94b-3d6fb4e629d0"
+    },
+    {
+      "claim_id": "8ab36e78-1e23-449c-899b-47389b322be2",
+      "result_id": "30db5276-d30b-468e-a94b-3d6fb4e629d0"
+    },
+    {
+      "claim_id": "764ed1e0-eb7c-4d08-b40a-946c65788996",
+      "result_id": "968ebfa5-95e9-40fa-9875-5d845acfdd3b"
+    },
+    {
+      "claim_id": "69e41302-2c57-46c7-a296-b8e26897b249",
+      "result_id": "968ebfa5-95e9-40fa-9875-5d845acfdd3b"
+    },
+    {
+      "claim_id": "32f564f0-b61a-464c-8dd3-d19f1da07e70",
+      "result_id": "968ebfa5-95e9-40fa-9875-5d845acfdd3b"
+    },
+    {
+      "claim_id": "52dd3ef0-9c31-467f-8c52-1998e39f6d2c",
+      "result_id": "968ebfa5-95e9-40fa-9875-5d845acfdd3b"
+    },
+    {
+      "claim_id": "65866f63-d615-43bb-9a2b-a184ab3d2b70",
+      "result_id": "968ebfa5-95e9-40fa-9875-5d845acfdd3b"
+    },
+    {
+      "claim_id": "68c71eaf-626a-4862-93f1-3759cfa2f623",
+      "result_id": "968ebfa5-95e9-40fa-9875-5d845acfdd3b"
+    },
+    {
+      "claim_id": "32942f6f-3e22-4dbd-a822-c8da1607c735",
+      "result_id": "968ebfa5-95e9-40fa-9875-5d845acfdd3b"
+    }
+  ],
+  "comparisons": []
+}

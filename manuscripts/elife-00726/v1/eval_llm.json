@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A protein microarray-based competition assay was developed and used to systematically screen 1321 TFs and 210 co-factors against 154 methylated CpG-containing DNA motifs. The screen identified 41 TFs and 6 co-factors (3% of all factors) with methylated CpG-dependent DNA-binding activity, with 150 of 154 motifs (97%) showing binding to at least one protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C11-C13, C16-C20 collectively describe the experimental design, execution, and primary findings of the protein microarray screen. The methodology is clearly described (C11-C13, C16-C18), appropriate controls were included (C14-C15), and the primary quantitative results are reported (C19-C20). The data analysis approach using Z-score cutoffs is specified (C18), and reproducibility is demonstrated (Figure 1\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Among the 47 mCpG-binding proteins identified, 15% showed broad binding activity to over 50% of methylated motifs tested (including ZNF114 and ZNF416), while the majority (including 22 TFs binding fewer than three motifs) showed sequence-dependent binding. The mCpG-binding activity was widespread across TF subfamilies with no significant subfamily enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 characterize the binding specificity patterns of the identified mCpG-binding proteins. The quantitative breakdown is provided (C21, C23), specific examples are given (C22), and statistical analysis shows no subfamily enrichment (C24-C25, Figure 1\u2014figure supplement 5). These claims are well-supported by the protein microarray data and appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "There was significant enrichment for known oncogenes and tumor suppressors (10/47; p<0.01) and factors involved in tissue development (25/47; p<0.015) among the mCpG-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 report statistically significant enrichments with appropriate p-values and statistical tests (hypergeometric model). The enrichment for cancer-related genes is consistent with the known role of DNA methylation in cancer biology. The statistical analysis appears sound and the results are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C85",
+      "C95"
+    ],
+    "result": "The study identified 47 novel methylated DNA-binding proteins, demonstrating that methylation-dependent direct TF-DNA interaction is a widespread phenomenon among various TF subfamilies in humans, more prevalent than previously appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C85, and C95 represent the main conclusion from the protein microarray screen. This conclusion is well-supported by the systematic screen of the entire human TF family (C2-C3, C16-C20), the identification of 47 novel proteins (C20, C95), and the distribution across multiple TF subfamilies (C24-C25). The comparison to prior literature (C85) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C87"
+    ],
+    "result": "EMSA validation confirmed 8 of 11 tested TFs (73% validation rate) could form protein-DNA complexes with methylated motifs but not unmethylated forms, and competition assays confirmed methylation-dependent binding. This suggests either a 27% false positive rate or higher sensitivity of the protein microarray compared to EMSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C87 describe validation experiments and interpretation of validation results. The EMSA validation is appropriate and the 73% validation rate is reasonable for this type of screen. The authors appropriately acknowledge the possibility of either false positives or differential sensitivity between methods (C30, C87). The competition EMSA data (C31) provides additional support for specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "HOXA5 and DIDO1 demonstrated dose- and methylation-dependent enhancement of luciferase activity in cell-based assays, indicating these TFs can specifically bind to methylated promoters and enhance downstream gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 report functional validation using luciferase assays. The data show dose-dependent and methylation-dependent effects (Figure 1F), with appropriate negative controls (unmethylated constructs). The methylation status of the constructs was confirmed by bisulfite sequencing (Figure 1\u2014figure supplement 7). The interpretation that these TFs enhance transcription (C33) is reasonable but somewhat limited as it's based on a heterologous reporter system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Integration of methylated and unmethylated DNA binding data revealed that 17 TFs recognize both types of motifs. Of 435 protein-DNA interactions examined, only 4% showed binding irrespective of methylation status, while 74% and 22% were specific to methylated and unmethylated motifs respectively. In most cases, the sequences recognized in methylated vs unmethylated forms were distinct, suggesting many TFs have dual-specificity for different sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C40 describe the integration of current and previous datasets to identify dual-specificity TFs. The quantitative breakdown is clear (C35-C37), and the sequence analysis shows distinct motifs for methylated vs unmethylated binding (C38, Figure 2A). The conclusion about dual-specificity (C40) is well-supported by the data, though it's based on computational analysis of consensus sequences rather than direct experimental validation for all cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "EMSA validation confirmed dual-specificity for four TFs (KLF4, TFAP2A, ARID3B, ZMYM3), showing they bind methylated and unmethylated motifs of distinct sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide experimental validation of the dual-specificity phenomenon using EMSA. The data clearly show differential binding to methylated vs unmethylated motifs for multiple TFs (Figure 2B). This provides strong experimental support for the computational predictions from the integrated dataset analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Competition EMSA experiments revealed two modes of dual-specificity: some TFs (e.g., ARID3B) show competitive binding where methylated and unmethylated motifs compete with each other, while others (e.g., KLF4) show non-competitive binding, suggesting they use different domains to distinguish methylated from unmethylated motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe mechanistic insights from competition experiments. The data clearly demonstrate two different binding modes (Figures 2E-F). For ARID3B, the competitive binding is well-demonstrated (C44), though the mechanistic interpretation (C45) is speculative. For KLF4, the non-competitive binding (C46) supports the hypothesis of separate domains (C47), which is later validated by mutagenesis experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "OIRD measurements determined KD values of 460 nM, 399 nM, and 479 nM for ZMYM3, TFAP2A, and KLF4 binding to their respective methylated motifs, with no significant binding to unmethylated motifs. These affinities are comparable to MBD2b, suggesting these TFs bind methylated DNA almost as well as the canonical methylated DNA-binding protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 report quantitative binding affinity measurements using OIRD. The KD values are clearly reported with appropriate measurements at multiple protein concentrations (Figure 2G, Figure 2\u2014figure supplement 4). The comparison to MBD2b provides important context (C52-C53). The lack of binding to unmethylated motifs (C51) confirms specificity. The methodology is appropriate for measuring binding kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Structural modeling of KLF4 identified Arg458 and Asp460 in the H2C2 zinc finger as candidate residues for 5mCpG recognition. The model predicts DNA binding is stabilized by van der Waals interactions, a salt-bridge, and H-bond contacts, with local atomic environment similar to MeCP2 and ZFP57.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C59 describe computational modeling to predict key residues for methylated DNA binding. While the modeling approach is reasonable and uses existing structures (C55), the predictions (C56-C59) are entirely computational and not yet experimentally validated at this point in the manuscript. The similarity to known mCpG-binding proteins (C58) provides some support, but without experimental validation, these remain predictions. The subsequent mutagenesis experiments (C60-C61) do validate these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Site-directed mutagenesis experiments showed that mutations at R458 or D460 completely abolished KLF4's binding to methylated motif M197 while having no effect on binding to unmethylated motif M412. KLF4 truncation (\u0394432) showed the same pattern, indicating the C2H2 zinc finger mediates interaction with unmethylated motifs while the H2C2 domain mediates methylated DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe mutagenesis experiments that validate the structural predictions. The EMSA data clearly show complete loss of methylated DNA binding with all mutations (C60) while preserving unmethylated DNA binding (C61, Figure 3C, Figure 3\u2014figure supplement 3). The truncation experiment (C63) provides additional support for domain separation. The conclusion about domain-specific binding (C64) is well-supported by the mutagenesis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cell-based luciferase assays demonstrated that wild-type KLF4 shows dose-dependent, methylation-dependent transcriptional activation, while R458A and D460A mutants lost the ability to activate transcription from methylated motif M197 but retained activity on unmethylated motif M412. This demonstrates that KLF4's dual specificities are independent and achieved via two functionally separable domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 describe functional validation of the mutagenesis results in cells. The luciferase data clearly show methylation-dependent activation by wild-type KLF4 (C65-C66) and loss of methylated DNA-dependent activity in mutants while preserving unmethylated DNA activity (C67-C69, Figure 3D-E). Equal transfection efficiency was confirmed (C70). The conclusion about functionally separable domains (C71-C72) is well-supported by the combined mutagenesis and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Bioinformatics integration of KLF4 ChIP-seq and methylome data in H1 hESCs showed that 48% of KLF4-binding sites have high methylation (>80%) and 38% have low methylation (<20%). The top consensus motif (CmCpGC) in highly methylated sites matches the motif M197 (CCmCpGCC) identified in vitro, demonstrating consistency between in vitro and in vivo binding preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe bioinformatics analysis integrating published ChIP-seq and methylome datasets. The analysis appropriately uses published data (Lister et al., 2009) and identifies a bimodal distribution of methylation at KLF4 binding sites (C74). The consensus motif analysis (C75) shows good agreement with in vitro results. The conclusion about in vitro/in vivo consistency (C76) is well-supported, though it relies on computational analysis of published data rather than new experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ChIP and ChIP-bisulfite sequencing experiments in H1 hESCs confirmed KLF4 binds to selected loci with high enrichment (\u22659-fold). KLF4 bound to completely unmethylated loci containing TACpGCC and to ~100% methylated loci containing CCCpGCC, demonstrating that KLF4 binds both unmethylated and highly methylated CpGs in different sequence contexts in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe direct experimental validation of KLF4 binding to methylated and unmethylated sites in vivo. The ChIP experiments show specific enrichment (C77-C78, Figure 4C-D), and bisulfite sequencing confirms the methylation status of bound sites (C79-C80, Figure 4E). The conclusion about dual-specificity in vivo (C81) is well-supported by the ChIP-bisulfite sequencing data showing binding to both fully unmethylated and fully methylated sites in appropriate sequence contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ChIP-bisulfite sequencing at sites with intermediate methylation showed significant enrichment of methylation at CCCpGCC consensus sequences (from 30% to 65%, p=0.001; and from 55% to 73%, p=0.04) after KLF4 ChIP, while nearby CpG sites not in the consensus showed no enrichment. This provides direct evidence that KLF4 preferentially binds to CCmCpGCC consensus sequence in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe a key experiment showing preferential binding to methylated consensus sequences. The enrichment of methylation at consensus sites after ChIP (C82) with statistical significance (p=0.001 and p=0.04) provides strong evidence for sequence-specific methylation-dependent binding. The lack of enrichment at nearby non-consensus CpGs (C83) serves as an important internal control. The conclusion (C84) is well-supported by this data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C91"
+    ],
+    "result": "The authors speculate that more methylated DNA-binding proteins remain to be discovered because only a small fraction of methylated CpG space was surveyed, and simulation analysis suggests the discovery curve has not saturated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C91 represent reasonable speculation based on the limitations of the current study and simulation analysis (Figure 1\u2014figure supplement 8). The saturation analysis supports the claim that more proteins likely exist. However, these are speculative claims about future discoveries rather than current findings, so they represent limitations and future directions rather than primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "The protein microarray approach has limitations including false negatives due to the competition assay design (which only identifies proteins preferring methylated DNA), limited DNA motif coverage, and absence of TF heterodimers. Comparison with a recent mouse study showed 5 of 11 human orthologs were identified in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 appropriately acknowledge limitations of the methodology. The explanations for false negatives (C89-C90, C92) are reasonable and well-articulated. The comparison with the mouse study (C93) provides external validation and helps calibrate expectations about false negative rates. These are important methodological considerations that strengthen the overall evaluation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "ZNF114 and ZNF416 were identified as new generic methylated-DNA binding proteins with binding activity to almost all methylated DNA motifs tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 reports a specific finding about two zinc finger proteins showing broad methylated DNA binding. This is supported by the protein microarray data (C22) showing these proteins bind to almost all motifs tested. This represents a clear discovery of new generic methylated DNA-binding proteins, analogous to previously known proteins like MBD1/2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript reviews established knowledge about DNA methylation, stating it is generally considered to suppress transcription by disrupting TF-DNA interactions, and that only a few proteins (MeCP2, MBD1, MBD2, and some zinc finger proteins) were previously identified as methylated DNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10 represent background knowledge from the introduction, supported by appropriate citations to prior literature. These claims establish the context for the current study by summarizing the prevailing view that DNA methylation suppresses transcription and that few methylated DNA-binding proteins were known. This background is accurate and well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors conclude that their findings provide a new framework to understand DNA methylation-dependent regulation of gene expression, particularly in cancer, stem cell, and development biology. They propose that methylated cytosines may serve as a 'fifth alphabet' that changes the landscape of TF-DNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C98 represent broad conclusions and speculation about the implications of the findings. While the discovery of many new methylated DNA-binding proteins (C95) does provide new insights, the claim about a 'new framework' (C96) and the 'fifth alphabet' concept (C98) are somewhat speculative interpretations. The citation that CpG methylation doesn't always correlate with repression in cancers (C97) provides some support, but these remain interpretive claims about broader implications rather than direct experimental findings.",
+    "result_type": "MINOR"
+  }
+]

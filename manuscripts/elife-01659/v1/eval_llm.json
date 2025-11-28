@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Liver trNK cells develop independently of the thymus and GATA-3, distinguishing them from thymic NK cells. This is demonstrated by the presence of liver trNK cells in athymic nude mice and GATA-3-deficient mice, while thymic NK cells are absent in these models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from multiple genetic models (nude mice, GATA-3 conditional knockout) with appropriate controls. Flow cytometry data in Figures 1A-F clearly demonstrate the presence of liver trNK cells in mice lacking thymus or GATA-3, while thymic NK cells are absent. The conclusion is well-supported by the data and consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Liver trNK cells represent a separate lineage from cNK cells rather than immature precursors, as demonstrated by RNA-seq hierarchical clustering and gene set enrichment analysis showing that liver CD49a+DX5\u2212 cells are transcriptionally distinct from both mature cNK cells and immature bone marrow NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 are supported by RNA-seq data with appropriate statistical analysis (GSEA with p-values). The hierarchical clustering (Figure 2A) and gene expression analysis (Figure 2D, Figure 2\u2014supplement 2) provide strong molecular evidence. The p=0.5 for similarity between BM and liver CD49a+DX5\u2212 cells indicates they are not the same population, while p=0.01 for CD49a\u2212DX5+ cells across tissues supports their identity as circulating cNK cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Liver trNK cells display a distinct phenotype characterized by CD27+CD11blow expression, TRAIL positivity, differential Ly49 receptor expression, larger size/granularity, and constitutive expression of activation markers (CD69, CD44, CD160) compared to cNK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 are well-supported by comprehensive flow cytometry analysis shown in Figures 2B-C and 3A-C. The phenotypic characterization is thorough and uses appropriate markers. The data clearly distinguish trNK cells from cNK cells across multiple parameters, though the functional significance of some markers (e.g., activation state) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Liver trNK cells produce distinct cytokine profiles compared to cNK cells, specifically high levels of TNF\u03b1 and GM-CSF, with a significant proportion being IFN\u03b3+TNF\u03b1+ double producers. Upon target cell stimulation, degranulating trNK cells also produce TNF\u03b1, which is rare among cNK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by intracellular cytokine staining (Figure 4A-D) following PMA/ionomycin stimulation and YAC-1 target cell co-culture. The data clearly show differential cytokine production patterns. However, the functional significance of these differences and whether they reflect intrinsic programming versus tissue microenvironment effects requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Liver trNK cells express lower levels of Eomes compared to cNK cells but similar levels of Tbet, as demonstrated by both RNA-seq and flow cytometry analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by converging evidence from RNA-seq (Figure 5B) and flow cytometry (Figure 5C). The data clearly show differential Eomes expression while Tbet levels are comparable. This sets up the subsequent genetic experiments testing transcription factor requirements. The IL-15R\u03b1 requirement (C24) is clearly demonstrated in Figure 5A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38",
+      "C39"
+    ],
+    "result": "Liver trNK cells have differential transcription factor requirements compared to cNK cells: they are present in NFIL3-deficient mice but absent in Tbet-deficient mice, while cNK cells show the opposite pattern. This demonstrates that liver trNK cells are not precursors of cNK cells and represent a distinct lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33, C38-C39 provide the strongest evidence for distinct lineages through genetic dissection. Flow cytometry data in Figures 5D-E clearly show the differential requirements with appropriate quantification. The logic is sound: if trNK cells were precursors to cNK cells, they should require NFIL3 (the 'NK specification factor'). Their presence in NFIL3-deficient mice but absence in Tbet-deficient mice demonstrates distinct developmental pathways. Statistical analysis and replication are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "trNK cells from NFIL3-deficient mice retain normal phenotypic and functional characteristics, including activation markers, lack of Eomes expression, immature phenotype (CD27+CD11blow), and ability to produce IFN\u03b3 and TNF\u03b1 upon stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by flow cytometry analysis in Figures 5F-I comparing WT and NFIL3-deficient trNK cells. This is important for demonstrating that NFIL3 is not required for normal trNK cell development and function, not just their presence. The data are clear and appropriately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Liver and splenic cNK cell populations are developmentally identical based on their similar transcription factor requirements and phenotypic characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by the consistent behavior of liver and splenic CD49a\u2212DX5+ cells across all experiments, including transcription factor requirements (Figures 5D-E), RNA-seq clustering (Figure 2A), and phenotypic analysis. The inference is reasonable given the data, though formal lineage tracing would provide stronger evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CD49a+DX5\u2212 NK cells in uterus and skin are tissue-resident, as demonstrated by their predominant host origin in parabiotic mice, while CD49a\u2212DX5+ NK cells circulate between parabionts. These trNK cells express CD69 constitutively and lack DX5 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by comprehensive analysis including tissue distribution (Figure 6A-B), parabiosis experiments (Figure 6D-F), and phenotypic characterization (Figure 6C). The parabiosis data clearly demonstrate tissue residency with appropriate controls showing chimerism in spleen (Figure 6E). The experimental design is sound and the conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Skin and uterine trNK cells share key characteristics with liver trNK cells, including lack of Eomes expression, IL-15R\u03b1 dependence, IL-2 production, absence of CD127 expression, and development independent of the thymus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by flow cytometry data in Figures 7A-E. The characterization extends the liver trNK findings to other tissues. The data are clear, though the number of independent experiments could be better documented. The conclusion that these cells develop independent of thymus is well-supported by their presence in nude mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Analysis of NFIL3- and Tbet-deficient mice reveals at least two distinct trNK lineages: liver/skin trNK cells (Tbet-dependent, NFIL3-independent) and uterine trNK cells (Tbet-independent, NFIL3-independent), demonstrating that uterine trNK cells represent a separate lineage from liver and skin trNK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are strongly supported by flow cytometry analysis in Figures 8A-B showing differential transcription factor requirements across tissues. The logic is sound: the presence of uterine trNK cells in Tbet-deficient mice while liver and skin trNK cells are absent indicates distinct developmental pathways. Quantification is provided and experiments were replicated five times. This is a key finding establishing multiple trNK lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "There are at least four distinct lineages of NK cells: circulating cNK cells, thymic NK cells, liver/skin trNK cells, and uterine trNK cells, distinguished by their differential requirements for transcription factors (NFIL3, Tbet, GATA-3) and tissue distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 represent the major conclusion synthesizing all prior results. The conclusion is well-supported by the comprehensive genetic, phenotypic, and functional data presented. The differential transcription factor requirements provide strong evidence for distinct lineages. However, formal lineage tracing from progenitors would provide definitive proof, which the authors acknowledge is needed for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "trNK cells across tissues share common features distinguishing them from cNK cells: differential CD49a expression, lack of DX5, constitutive CD69 expression (unlike cNK cells which only express CD69 upon activation), and different Ly49 receptor repertoires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 summarize phenotypic characteristics supported by data throughout the manuscript (Figures 3, 6, 7). The comparison to established knowledge about cNK cells is appropriately cited. The data clearly support these distinguishing features, though the functional implications of some differences (e.g., Ly49 repertoire) remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "trNK cells may use alternative mechanisms for self-tolerance (not strictly MHC class I-dependent licensing), may contribute to inflammatory conditions through TNF\u03b1 and GM-CSF production, utilize distinct transcription factors that may confer unique functions, and likely play important roles in tissue-specific innate defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C71, C73-C74 are largely speculative about functional implications. While the differential Ly49 expression and cytokine production are well-documented, the mechanistic and functional consequences are not directly tested. These represent reasonable hypotheses for future investigation but are not demonstrated by the current data. The manuscript appropriately presents these as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Liver and skin trNK cells are more closely related to each other than to other NK lineages based on phenotypic similarity and shared Tbet-dependence, while uterine trNK cells are distinct due to Tbet-independence, possibly related to high Eomes expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by the differential transcription factor requirements (Figure 8) and phenotypic analysis. The relationship between liver and skin trNK cells is well-supported. The speculation about Eomes in uterine trNK cells (C78) is reasonable given the cited literature but not directly tested here. The conclusion about relationships is appropriately qualified as requiring formal demonstration of common precursors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "trNK cells can be distinguished from thymic NK cells by lack of high CD127 expression, presence in nude and GATA-3-deficient mice, but share with cNK cells the ability to respond to YAC-1 targets and dependence on IL-15/IL-15R\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 synthesize distinguishing features between NK lineages. The data supporting these claims are presented throughout the manuscript (Figures 1, 4, 5, 7) and appropriately cite prior literature. The shared IL-15 dependence is important for establishing that trNK cells are more related to cNK cells than to other ILCs. The evidence is strong and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "trNK cells share key features with cNK cells that distinguish them from other group 1 ILCs, including cytotoxic capacity, IL-15 dependence, and lack of IL7R\u03b1 expression, supporting their classification as NK cells rather than ILCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by the functional data (cytotoxicity in Figure 4D), IL-15 dependence (Figures 5A, 7B), and phenotypic analysis. The classification framework is appropriately cited to current literature. This is important for positioning trNK cells within the broader innate lymphoid cell field. The evidence supports the conclusion that trNK cells are more closely related to cNK cells than to ILCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "trNK cells can be distinguished from recently described ILC1 cells (which require NFIL3, Tbx21, and IL-15 but not IL-15R\u03b1) and are more related to cNK cells than ILCs, though the relationship may require further refinement given the complexity and plasticity of ILCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 appropriately position the findings within the evolving ILC field. The distinction from ILC1 cells (C90-C91) is based on differential IL-15R\u03b1 requirement, which is clearly demonstrated. The conclusion that trNK cells are more related to cNK cells (C92) is reasonable given the shared features. The acknowledgment of complexity and potential for closer relationships (C93-C95) is appropriately cautious given the evolving nature of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "trNK cells can be distinguished from ILC2s in skin (which are IL-15-independent) and from potential ILC3s in uterus (which express RORC and produce IL-22), based on differential cytokine dependence and transcription factor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 appropriately cite prior literature to distinguish trNK cells from other tissue-resident innate lymphoid populations. The IL-15 dependence of trNK cells (demonstrated in this study) contrasts with IL-15-independent ILC2s. The discussion of uterine populations is appropriately cautious, acknowledging that further characterization is needed. The distinctions are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Liver trNK cells share characteristics with NKT cells (liver residency, sinusoidal localization) and are likely related to or equivalent to previously described 'pit cells' in the liver sinusoidal space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C103 draw parallels to other liver-resident immune cells but are largely speculative. The relationship to pit cells (C103) is reasonable given anatomical considerations but has not been formally demonstrated. The comparison to NKT cells is interesting but the shared characteristics (liver residency) are superficial. These represent reasonable hypotheses but require direct investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "trNK cells display an activated phenotype similar to tissue-resident memory T cells, but whether they differentiate from circulating precursors is unclear. The transcription factor requirements make it unlikely that trNK cells derive from cells that previously differentiated into cNK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 appropriately compare trNK cells to tissue-resident memory T cells while acknowledging key uncertainties. The activated phenotype (C105) is well-documented in the data. The uncertainty about developmental origin (C106) is appropriately stated. The inference about transcription factor requirements (C107) is logical given the data showing differential requirements. The discussion appropriately identifies what remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Liver trNK cells may originate from precursors that seed the liver during embryonic/fetal life, similar to \u03b3\u03b4T cells and tissue macrophages. This is suggested by selective Ly49E expression on both fetal NK cells and adult liver trNK cells, presence of trNK precursors in adult liver, and incomplete reconstitution from adult bone marrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C113 present an interesting hypothesis about developmental origin. The Ly49E expression pattern (C108-C110) is intriguing but the connection to fetal origin is speculative. The presence of precursors in adult liver (C111) and incomplete BM reconstitution (C112) are cited from prior work but not directly demonstrated here. The hypothesis about early seeding (C113) is reasonable but requires direct testing through fate-mapping or other lineage tracing approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Background on conventional NK cell development: cNK cells require IL-15/IL-15R, develop primarily in bone marrow through defined stages, can be distinguished by CD11b/CD27 expression, require NFIL3 as a specification factor, and show overlapping roles of Tbet and Eomes in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C121 summarize established knowledge about cNK cell development, appropriately cited to prior literature. This background is accurate and provides necessary context for interpreting the trNK cell findings. These are not new findings but rather established facts that frame the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background on thymic and uterine NK cells: Thymic NK cells are cytotoxic, IL-15-dependent, express CD127, require thymus and GATA-3. Uterine NK cells are IL-15-dependent, cytotoxic, produce IFN\u03b3, appear normal in Tbet-deficient mice, and a subset can be distinguished from cNK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 summarize established knowledge about thymic and uterine NK cells, appropriately cited to prior literature. This background is accurate and provides context for the current findings. The prior knowledge about uterine NK cells in Tbet-deficient mice (C128) is particularly relevant for interpreting the current results showing Tbet-independent uterine trNK cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Background from prior work: Two populations of NK cells exist in liver distinguished by CD49a/DX5 expression, with CD49a+DX5\u2212 cells being tissue-resident and CD49a\u2212DX5+ cells circulating. Liver trNK cells appear similar to immature cNK cells in some markers but are distinct in being cytotoxic and expressing CD49a. TRAIL+ NK cells are absent in Tbet-deficient livers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C139 summarize prior work from the same laboratory (Peng et al., 2013) and others that provides the foundation for the current study. This background is appropriately cited and accurately represents the prior state of knowledge. The current manuscript builds on this foundation by providing mechanistic insights through transcription factor analysis and extending findings to other tissues.",
+    "result_type": "MINOR"
+  }
+]

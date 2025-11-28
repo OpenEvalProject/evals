@@ -1,0 +1,1922 @@
+{
+  "submission": {
+    "id": "01f9dc8b-7be0-4310-b4c4-917f2b5d53ae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:43:23.727558Z",
+    "updated_at": "2025-11-28T22:43:23.727558Z"
+  },
+  "content": [
+    {
+      "id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "submission_id": "01f9dc8b-7be0-4310-b4c4-917f2b5d53ae",
+      "content_type": "manuscript",
+      "content_text": "# Actin dynamics tune the integrated stress response by regulating eukaryotic initiation factor 2\u03b1 dephosphorylation\n\n## Authors\n\n- Joseph E Chambers<sup>1</sup>\n- Lucy E Dalton<sup>1</sup>\n- Hanna J Clarke<sup>2</sup>\n- Elke Malzer<sup>1</sup>\n- Caia S Dominicus<sup>1</sup>\n- Vruti Patel<sup>1</sup>\n- Greg Moorhead<sup>4</sup>\n- David Ron<sup>2</sup> ([ORCID: 0000-0002-3014-5636](https://orcid.org/0000-0002-3014-5636))\n- Stefan J Marciniak<sup>2</sup> ([ORCID: 0000-0001-8472-7183](https://orcid.org/0000-0001-8472-7183)) \u2020\n\n### Affiliations\n\n1. Cambridge Institute for Medical Research, Department of Medicine University of Cambridge Cambridge United Kingdom\n2. Wellcome Trust MRC Building University of Cambridge Cambridge United Kingdom\n3. Cambridge Institute for Medical Research University of Cambridge Cambridge United Kingdom\n4. Department of Biological Sciences University of Calgary Calgary Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nFour stress-sensing kinases phosphorylate the alpha subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1) to activate the integrated stress response (ISR). In animals, the ISR is antagonised by selective eIF2\u03b1 phosphatases comprising a catalytic protein phosphatase 1 (PP1) subunit in complex with a PPP1R15-type regulatory subunit. An unbiased search for additional conserved components of the PPP1R15-PP1 phosphatase identified monomeric G-actin. Like PP1, G-actin associated with the functional core of PPP1R15 family members and G-actin depletion, by the marine toxin jasplakinolide, destabilised the endogenous PPP1R15A-PP1 complex. The abundance of the ternary PPP1R15-PP1-G-actin complex was responsive to global changes in the polymeric status of actin, as was its eIF2\u03b1-directed phosphatase activity, while localised G-actin depletion at sites enriched for PPP1R15 enhanced eIF2\u03b1 phosphorylation and the downstream ISR. G-actin's role as a stabilizer of the PPP1R15-containing holophosphatase provides a mechanism for integrating signals regulating actin dynamics with stresses that trigger the ISR.\n\n## Introduction\n\nIn eukaryotes, regulation of protein biosynthesis defends against proteotoxic stress and balances anabolic growth with nutrient availability (Jackson et al., 2010). The eukaryotic translation initiation factor 2 complex recruits the initiator methionyl-tRNA to ribosomes in a GTP-dependent catalytic cycle, but phosphorylation of its alpha subunit (eIF2\u03b1) by a family of stress-sensing kinases inhibits guanine nucleotide exchange, attenuating translation initiation and with it, global protein synthesis (Clemens, 1996; Jackson et al., 2010). During endoplasmic reticulum stress, the eIF2\u03b1 kinase PERK triggers attenuation of protein synthesis (Harding et al., 1999), while other members of the family respond variously to amino acid deprivation, viral infection or heme deficiency (van 't Wout et al., 2014). This ability of eIF2\u03b1 phosphorylation to integrate signals from multiple, apparently unrelated, stresses led this pathway to be named the \u2018integrated stress response\u2019 (ISR) (Harding et al., 2003). Attenuated global protein synthesis is cytoprotective early in the stress response. The ISR also involves the translational induction of the transcription factors ATF4 and CHOP, which activate a transcriptional programme that has pro-survival effects in the short term, whilst prolonged activation leads to a switch to apoptosis (Zinszner et al., 1998; Marciniak et al., 2004; Lu et al., 2014).\n\nIn metazoans, inactivation of the ISR is mediated by a catalytic, protein phosphatase 1 (PP1) subunit in complex with a regulatory subunit (PPP1R15) responsible for targeting eIF2\u03b1 (He et al., 1998; Novoa et al., 2001; Jousse et al., 2003). In Drosophila, a single PPP1R15 has been described that is required for anabolic larval growth (Malzer et al., 2013), while in mammals, two PPP1R15 paralogues exist: a constitutively expressed isoform PPP1R15B (also known as CReP) and a stress-inducible isoform PPP1R15A (also GADD34) (Novoa et al., 2001; Jousse et al., 2003). PPP1R15 family members share significant homology in their C-terminal conserved PP1-interacting domain, constituting a core functional domain sufficient to dephosphorylate eIF2\u03b1 when over expressed in cells (Novoa et al., 2001; Malzer et al., 2013). In contrast, the less well-conserved N-terminal portion of each PPP1R15 determines protein stability (Brush and Shenolikar, 2008) and subcellular localisation (Zhou et al., 2011), although the importance of these functions in the regulation of eIF2\u03b1 phosphatase activity within the cell remains to be worked out.\n\nThe importance of eIF2\u03b1 dephosphorylation is highlighted by PPP1R15 loss-of-function phenotypes. In Drosophila, ubiquitous RNAi-mediated depletion of dPPP1R15 leads to embryonic lethality, while failure of blastocyst implantation is seen in Ppp1r15a-Ppp1r15b double knockout mouse embryos (Harding et al., 2009; Malzer et al., 2013). Deficiency of PPP1R15B in isolation permits survival to gestation but leads to defects of haematopoiesis and death in the early neonatal period (Harding et al., 2009). In contrast, PPP1R15A-deficient mice are overtly healthy when raised in standard laboratory conditions and show increased resistance to ER stress-induced tissue damage (Marciniak et al., 2004).\n\nPPP1R15A is regulated transcriptionally (Novoa et al., 2001), but relatively little is known about post-transcriptional regulation of its activity or the regulation of the constitutively expressed PPP1R15B or Drosophila dPPP1R15 (Jousse et al., 2003; Malzer et al., 2013). The literature offers numerous examples of proteins that associate with one or other of the PPP1R15 family members (Hasegawa et al., 2000a, 2000b; Wu et al., 2002; Hung et al., 2003; Shi et al., 2004), but these are largely single studies with no follow-up or physiological validation. In this study, we set out to characterise conserved elements of the PPP1R15 interactome and in doing so identified a novel mechanism for the regulation of eIF2\u03b1 phosphatases that links the ISR with cytoskeletal dynamics.\n\n## Results\n\n### PPP1R15 selectively associates with monomeric G-actin in cells\n\nImportant regulators/components of the PPP1R15-PP1 holoenzyme are likely to be conserved between species and paralogues; therefore, we set out to identify proteins that interact with both mammalian paralogues, PPP1R15A and PPP1R15B, and their non-vertebrate homologue, Drosophila dPPP1R15. GFP-tagged human PPP1R15A and PPP1R15B were expressed in human embryonic kidney (HEK) 293T cells and subjected to GFP-Trap affinity purification followed by mass spectrometry (Figure 1A,B and Figure 1\u2014figure supplements 1, 2), whereas V5-His-tagged dPPP1R15 was expressed in Drosophila Schneider 2 (S2) cells and subjected to affinity purification using anti-V5-His resin followed by mass spectrometry (Figure 1A). In addition to the anticipated association of PP1, we identified a number of other proteins that were bound to each PPP1R15 bait (as defined by >twofold enrichment over control and the detection of \u22655 identifiable peptides in the mass spectra; Figure 1\u2014figure supplements 1, 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig1-v2.jpg)\n\n**Figure 1.:** (A) Heat map of proteins associated with GFP, GFP-tagged human PPP1R15B (GFP-hR15B) and GFP-tagged human PPP1R15A (GFP-hR15A) affinity-purified from transiently transfected HEK293T cells (left panels); heat map of proteins associated with V5 and V5-tagged Drosophila PPP1R15 (dR15-V5) affinity purified from transiently transfected S2 cells (right panels). Samples were analysed by Orbitrap mass spectrometer. Intensity reflects total spectrum count of identified peptides. Proteins identified by at least five spectra and showing at least twofold enrichment over control are shown. (B) Coomassie-stained SDS-PAGE of GFP-affinity purified proteins from HEK293T cells expressing indicated proteins. Indicated bands were individually excised and identified by mass spectrometry. (C) Coomassie-stained SDS-PAGE of GFP-affinity purified proteins from HEK293T cells expressing indicated proteins. Bands were individually excised and identified by mass spectrometry. (D) Coomassie-stained SDS-PAGE of glutathione-affinity purified proteins from HEK293T cells. Indicated bands were individually excised and identified by mass spectrometry.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Actin peptides are highlighted in red. Proteins with >twofold enrichment over control and the detection of \u22655 identifiable peptides in the mass spectra are shown.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Actin peptides are highlighted in red. Proteins with >twofold enrichment over control and the detection of \u22655 identifiable peptides in the mass spectra are shown.\n\nActin emerged as the prominent partner conserved across phyla (Figure 1A,B). Confidence in this association was bolstered by finding that Drosophila dPPP1R15 also associated with mammalian actin in stoichiometric amounts (Figure 1C). This association was observed regardless of which terminus of dPPP1R15 was tagged. Actin's presence in complex with PPP1R15 was also observed using other tag combinations: an N-terminal fusion of GST with the catalytic subunit PP1A expressed in HEK293T cells alongside PPP1R15A yielded a complex containing GST-PP1A, PPP1R15A, and actin upon glutathione-affinity chromatography (Figure 1D).\n\nGFP-tagged PPP1R15A purified from HEK293T cells failed to associate with filamentous F-actin in a co-sedimentation assay (Figure 2A) suggesting selective interaction between PPP1R15 and monomers of soluble G-actin. The distribution of actin between its monomeric G or polymeric F form is influenced by physiological conditions and can be biased pharmacologically by small molecules that stabilise either form (White et al., 1983). Jasplakinolide, which stabilises F-actin filaments and depletes the cells of G-actin (Holzinger, 2009), abolished the interaction between PPP1R15A and actin (Figure 2B, lane 4). In contrast, latrunculin B, which binds to the nucleotide-binding cleft of actin, thus increasing the cytoplasmic pool of G-actin (Nair et al., 2008), potently enhanced the recovery of actin in complex with PPP1R15A (Figure 2B, lane 3). Cytochalasin D also increases the cellular pool of G-actin, but does so by engaging actin's barbed end, competing with several known G-actin-binding proteins (Miralles et al., 2003; Dominguez and Holmes, 2011; Shoji et al., 2012); exposure to cytochalasin diminished the recovery of actin in complex with PPP1R15A (Figure 2B lane 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig2-v2.jpg)\n\n**Figure 2.:** (A) Immunoblot (upper panel) and Coomassie-stained gel (lower panel) of affinity-purified GFP-tagged PPP1R15A and purified actin. Samples were incubated and centrifuged to pellet F-actin (lane 1), leaving G-actin in the supernatant (lane 2); pellet P, supernatant S. (B) Immunoblot for GFP and actin of GFP-affinity purified proteins (upper two panels) from HEK293T cells expressing GFP-tagged PPP1R15A (hR15A-GFP) treated with 2 \u00b5M of each indicated compound. Immunoblot for actin of 2% of input. (C) Fluorescence microscopy image of NIH-3T3 cell F-actin arrangement. NIH-3T3 cells were left untreated (control), cultured in serum-free medium for 24 hr (serum starved), cultured in serum-free medium for 18 hr, followed by addition of medium containing 10% vol/vol FBS for 6 hr (serum refed), then fixed and stained with Alexa-Fluor 568 phalloidin and imaged by confocal microscopy. (D) Immunoblot for GFP and actin of NIH-3T3 lysates from cells treated as in \u2018C\u2019 then subjected to GFP affinity purification (upper two panels). Immunoblot for actin of 2% of input.\n\nActin polymerisation is sensitive to physiological growth cues (Sotiropoulos et al., 1999). Serum starvation, which resulted in the anticipated conversion of F to G-actin (Figure 2C) enhanced recovery of actin in complex with PPP1R15A in NIH-3T3 cell lysates (Figure 2D). On serum re-feeding, cables of F-actin re-formed within the cytoplasm and less actin was recovered in complex with PPP1R15A. The aforementioned confirm that both mammalian and insect PPP1R15 regulatory subunits engage G-actin and that the interaction between them is sensitive to physiological changes in the availability of G-actin.\n\n### Actin associates with the conserved C-terminal functional core of PPP1R15\n\nHuman PPP1R15A is a 674 amino acid protein, comprising an N-terminal domain required for membrane interaction, a region of proline, glutamate, serine, threonine (PEST) rich repeats of uncertain function, and a C-terminal functional core domain that interacts with the PP1 catalytic subunit (Figure 3A) and is sufficient for mediating substrate-specific dephosphorylation (Novoa et al., 2001; Kojima et al., 2003; Ma and Hendershot, 2003). Deletion analysis showed that the C-terminus of PPP1R15A (residues 501\u2013674) was also sufficient for the association with actin (Figure 3B). Further deletion revealed that residues C-terminal to amino acid 615 were essential for actin association but not for PP1 binding, which was enfeebled but not abolished (Figure 3B,C). Incorporation of five residues (W616\u2013R620 of human PPP1R15A) restored fully the recovery of actin in complex with PPP1R15A (Figure 3C lane 6), while the W616A and L619A double mutation strongly enfeebled actin recovery in complex with PPP1R15A (Figure 3D). A V556E mutation of the RVxF motif, which all but abolishes PP1 binding and eIF2\u03b1 dephosphorylation in vivo (Novoa et al., 2001), also attenuated recovery of actin in complex with PPP1R15A, but failed to abolish it altogether (Figure 3C, lane 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic diagram of human PPP1R15A (R15A) constructs used. Green indicates GFP. PEST repeats (between residues 346 and 494, orange), K555VRF558 (yellow), and W616ARLR620 (purple) sequences are identified. (B) Immunoblot for GFP, actin, and PP1 of HEK293T lysates from cells expressing indicated constructs and PP1, and subjected to GFP affinity purification (upper three panels). Immunoblot for actin and PP1 of 2% of input. (C) Immunoblot for GFP, actin, and PP1 of HEK293T lysates from cells expressing indicated constructs and PP1, and subjected to GFP affinity purification (upper three panels). Immunoblot for actin of 2% of input. (D) Immunoblot for GFP and actin of HEK293T lysates from cells expressing indicated constructs and subjected to GFP affinity purification (upper two panels). Immunoblot for actin of 5% of input (lower panel). (E) Sequence alignment of C-terminal portions of human (h) and murine PPP1R15A (mR15A) and PPP1R15B (mR15B) and Drosophila dPPP1R15 (dR15) with regions of homology boxed. Specific truncations are indicated. (F) Immunoblot for GFP and actin of HEK293T lysates from cells expressing indicated constructs and subjected to GFP affinity purification (upper two panels). Immunoblot for actin and PP1 of 2% of input.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** HEK293T cells were transiently transfected with plasmids encoding the indicated constructs. After 36 hr, cells were lysed in GFP-Trap lysis buffer (150 mM NaCl, 10 mM Tris/Cl pH 7.5, 0.5 mM EDTA, 1 mM PMSF, and Protease Inhibitor Cocktail [Roche]) and post-nuclear supernatants were incubated with GFP-Trap beads at 4\u00b0C for 2 hr then washed four times in the same buffer. Next, samples were washed thrice in GFP-Trap lysis buffer supplemented with additional NaCl as indicated.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** HEK293T cells were transiently transfected with plasmids encoding the indicated constructs. After 36 hr, cells were lysed in GFP-Trap lysis buffer (150 mM NaCl, 10 mM Tris/Cl pH 7.5, 0.5 mM EDTA, 1 mM PMSF, and Protease Inhibitor Cocktail [Roche]) and post-nuclear supernatants were incubated with GFP-Trap beads at 4\u00b0C for 2 hr then washed once in the same buffer. Next, samples were washed thrice with no detergent (GFP-Trap lysis buffer), triton buffer (150 mM NaCl, 10 nM HEPES pH 7.4, 0.5% vol/vol triton X-100), RIPA buffer (150 mM NaCl, 50 mM Tris HCl pH 7.4, 1% vol/vol NP40, 0.5% vol/vol sodium deoxycholate, 0.1% vol/vol SDS) or digitonin buffer (150 mM NaCl, 50 mM Tris HCl pH 7.4, 0.1% vol/vol digitonin).\n\nThe quantities of actin and PP1 recovered in complex with PPP1R15A were sensitive to the salt concentration of the buffers used (Figure 3\u2014figure supplement 1). Actin association with PPP1R15A dropped progressively with increasing salt (75% of the actin bound at 150 mM salt was lost at 350 mM), as did PP1 association, with no detectable binding at 350 mM. The complex was stable in non-denaturing detergents (triton X-100 and digitonin), but washes in a buffer containing the harsher detergents, sodium deoxycholate (0.5% vol/vol) and SDS (0.1% vol/vol), completely abolished interaction between PPP1R15A and both PP1 and actin (Figure 3\u2014figure supplement 2).\n\nDrosophila dPPP1R15 is half the size of the mammalian PPP1R15s. When aligned, mammalian PPP1R15A, PPP1R15B, and dPPP1R15 share significant homology within their C-termini, which drops off at residue 622 of human PPP1R15A (Figure 3E). We therefore truncated the Drosophila protein within and immediately N-terminal to this region of homology (Y307\u2013H312). Partial truncations reduced the association of dPPP1R15 with actin, while deletion of the entire segment (at residue 307) completely abolished the interaction (Figure 3F). The interaction with actin, thus maps to the conserved portion of PPP1R15 family members and is favoured by a short stretch of hydrophobic residues at the extreme C-terminus of this core. Mutational analysis thus points to a measure of independent association of PP1 or actin with PPP1R15, but highlights the enhanced recovery of the three proteins in a ternary complex of PPP1R15, PP1, and actin.\n\n### Association of G-actin with PPP1R15 regulates eIF2\u03b1 phosphatase activity in vivo\n\nTo examine the relevance of G-actin to the endogenous PPP1R15 complex, wild-type Ppp1r15a+/+ and mutant Ppp1r15amut/mut mouse embryonic fibroblasts (MEFs) were treated with the ER stress promoting agent tunicamycin to induce the ISR and expression of PPP1R15A. The Ppp1r15amut/mut cells express a C-terminal truncated PPP1R15A that is incapable of binding PP1 (Novoa et al., 2003) and served as a negative control. As expected, a robust PP1 signal was found associated with endogenous wild-type PPP1R15A in the stressed cells, whilst no signal was detected in PPP1R15A immunoprecipitates from the Ppp1r15amut/mut cells (Figure 4A, lanes 2 and 5). The poor reactivity of the available antisera to actin and tendency of actin to associate non-specifically with immunoprecipitation reactions frustrated our efforts to detect actin associated with endogenous PPP1R15A in MEFs; however, treatment with jasplakinolide, which depleted the soluble pool of actin led to a marked loss of PP1 association with PPP1R15A in the stressed cells (compare lanes 2 and 3, Figure 4A). To test the converse interaction, PP1 was affinity purified from MEF lysates using microcystin\u2013agarose beads. Whilst the presence of other known PP1-actin complexes precludes meaningful interpretation of actin purified by microcystin affinity (Oliver et al., 2002; Kao et al., 2007), the PPP1R15A-PP1 interaction detected in stressed wild-type cells was attenuated by jasplakinolide-driven depletion of soluble actin (Figure 4B). Actin's role in the stability of the PPP1R15A-PP1 complex was confirmed in HEK293T cells (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig4-v2.jpg)\n\n**Figure 4.:** (A) Immunoblots of endogenous PPP1R15A (R15A) and associated PP1 immunopurified from wild type (Ppp1r15a+/+) or mutant mouse embryonic fibroblasts homozygous for a C-terminal truncation of PPP1R15A that abolishes interaction with PP1 (Ppp1r15amut/mut) with an anti-PPP1R15A antiserum (IP R15A). Where indicated, cells were treated with tunicamycin 2 \u00b5g/ml (Tm) for 8 hr to induce PPP1R15A and jasplakinolide (1 \u00b5M) for 1.5 hr before harvest. The lower three panels are immunoblots of the input of the immunoprecipitation reactions analysed in the top two panels. Closed and open triangles mark, respectively, the wild type and mutant PPP1R15A lacking the C-terminal functional core. To assess G-actin content of the input, the sample was subjected to ultracentrifugation to remove F-actin. (B) PPP1R15A and PP1 immunoblots of PP1-containing complexes purified by microcystin affinity chromatography from cells as in \u2018A\u2019 above. The lower three panels report on the content of input material. (C) As in \u2018B\u2019, above, but reporting on PP1-continaing complexes purified by microcystin affinity chromatography from HEK293T cells. (D) Immunoblots of endogenous or over-expressed GFP-tagged PPP1R15A and associated endogenous PP1 and actin immunopurified with antiserum to PPP1R15A, non-immune rabbit IgG (as a control) or antiserum to GFP from lysates of tunicamycin-treated HEK293T cells (Tm, 2.5 \u00b5g/ml for 8 hr to induce endogenous PPP1R15A) or cells transfected with plasmids expressing GFP-PPP1R15A (GFP-R15A) or GFP. The protein content of the cell lysate applied to the immunoprecipitations is noted above the immunoblots (\u2018Protein input\u2019). Endogenous PPP1R15A and the larger GFP-PPP1R15A are marked by black and grey arrowheads, respectively. Both heavy and light exposures of the actin and PP1 immunoblots are provided and the relative intensity of the signals is noted.\n\nIn order to address the association of actin with endogenous PPP1R15A directly, we used HEK293T cells, which generated less background actin signal in control immunoprecipitation reactions. Purified GFP-tagged PPP1R15 was used as a standard to determine the minimum amount of PPP1R15 that permitted detection of associated actin (Figure 4D). Scaling of input material to immunopurify similar quantities of endogenous and overexpressed PPP1R15A led to recovery of similar amounts of associated endogenous actin (Figure 4D). This supports a role for the interaction in cell physiology.\n\nA functional role for actin in PPP1R15 complexes was suggested by the observation that depletion of cellular G-actin by exposure to jasplakinolide promoted a rapid increase in the levels of phosphorylated eIF2\u03b1 (Figure 5A,B). To extend these observations, cells were treated with the SERCA pump inhibitor thapsigargin, which depletes the ER of calcium and rapidly and transiently activates the ER stress-inducible kinase PERK. As expected, this led to a robust yet transient phosphorylation of eIF2\u03b1 by PERK (Figure 5C lanes 1\u20136). The transient nature of this phosphorylation relates to the rectifying response of PERK on levels of ER stress, but also draws on the combined activities of constitutively expressed PPP1R15B and the induction of PPP1R15A that promote eIF2\u03b1 dephosphorylation (Novoa et al., 2001; Jousse et al., 2003; Novoa et al., 2003). In the presence of jasplakinolide, the elevated levels of phosphorylated eIF2\u03b1 induced by thapsigargin persisted (Figure 5C, lanes 7\u201312), while latrunculin B had no effect on the time course of eIF2\u03b1 phosphorylation (Figure 5\u2014figure supplement 1). It is noteworthy that peak levels of eIF2\u03b1 phosphorylation were higher in cells treated with jasplakinolide (compare lanes 1\u20132 with 8\u20139 of Figure 5C). This occurred well before the induction of PPP1R15A suggesting that either an endogenous basally expressed phosphatase or the kinase was affected.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig5-v2.jpg)\n\n**Figure 5.:** (A) Immunoblot for phosphorylated eIF2\u03b1 (P-eIF2\u03b1), total eIF2\u03b1, and actin. Wild-type (WT) mouse embryonic fibroblasts (MEF) were treated with jasplakinolide 1 \u00b5M for the indicated times. Lysates were subjected to sedimentation assay and immunoblot for G-actin in the supernatant (G) or F-actin in the pellet (F). (B) Immunoblot for phosphorylated eIF2\u03b1 (P-eIF2\u03b1), total eIF2\u03b1, and actin. WT MEFs were treated with the indicated concentrations of jasplakinolide for 1 hr. Lysates were analysed as in \u2018A\u2019. (C) Immunoblot for phosphorylated eIF2\u03b1 (P-eIF2\u03b1), total eIF2\u03b1, and PPP1R15A. WT MEFs were treated with thapsigargin 400 nM for the indicated times, without or with jasplakinolide 1 \u00b5M. (D) Immunoblot for P-eIF2\u03b1 and PPP1R15A (hR15A). GFP-hPPP1R15A Tet-On HeLa cells were treated with doxycycline to induce transgene expression and then with thapsigargin 400 nM for the indicated times. Cells were co-treated with jasplakinolide or latrunculin B 1 \u00b5M or vehicle as indicated. Accompanying graphs show means \u00b1SEM of n = 3 independent repeats.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** WT MEFs were treated with thapsigargin 400 nM for the indicated times, without or with latrunculin B 1 \u00b5M.\n\nInduction of PPP1R15A was observed in thapsigargin-treated cells from 2 hr onwards but was diminished in cells co-treated with jasplakinolide (likely, a consequence of profound attenuation of protein synthesis). To minimise the confounding effect of diminished PPP1R15A levels in jasplakinolide-treated cells at later time points, the regulatory subunit was conditionally over-expressed under the control of a tetracycline-responsive promoter. As expected, enforced expression of PPP1R15A abrogated the phosphorylation of eIF2\u03b1 in response to thapsigargin; however, jasplakinolide reversed the inhibitory effect of PPP1R15A over-expression restoring elevated levels of phosphorylated eIF2\u03b1 to thapsigargin-treated cells (Figure 5D).\n\nTo examine more closely the effects of the actin cytoskeleton on dephosphorylation of eIF2\u03b1 within living cells, we sought to gain temporal control over the phosphorylation phase of the cycle. To this end, we made use of a small molecule eIF2\u03b1 kinase inhibitor, GSK2606414A (Axten et al., 2012). At the concentration used, this inhibits the eIF2\u03b1 kinases PERK and PKR, but not GCN2. Thus, application of GSK2606414A to Gcn2\u2212/\u2212 fibroblasts rapidly abrogates eIF2\u03b1 phosphorylation. To measure selectively the dephosphorylation phase of the stress response, PERK-mediated phosphorylation of eIF2\u03b1 was induced by thapsigargin and further phosphorylation was then blocked with the kinase inhibitor GSK2606414A. In the absence of kinase activity, the subsequent decay of the phosphorylated eIF2\u03b1 signal reflects its de-phosphorylation (degradation of the protein is not observed over this time scale), which was markedly attenuated by jasplakinolide (Figure 6A, compare lanes 1\u20135 with lanes 6\u201310 and Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig6-v2.jpg)\n\n**Figure 6.:** (A) Immunoblot for phosphorylated eIF2\u03b1 (P-eIF2\u03b1), total eIF2\u03b1, and ATF4. Gcn2\u2212/\u2212 MEFs were pre-treated with thapsigargin 300 nM for 30 min to induce eIF2\u03b1 phosphorylation and ATF4 protein levels. GSK2606414A at 2 \u00b5M was then added for the indicated times. Protein lysates were analysed by SDS-PAGE and subjected to immunoblot. (B) Quantification of \u2018A\u2019 using ImageJ software. Mean \u00b1 SEM of n = 3 independent repeats. (C) Immunoblot for phosphorylated eIF2\u03b1 (P-eIF2\u03b1) and total eIF2\u03b1. MEFs of the indicated genotypes were treated with or without jasplakinolide 1 \u00b5M for 1 hr. Protein lysates were analysed by SDS-PAGE and subjected to immunoblot.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig6-figsupp1-v2.jpg)\n\nJasplakinolide-mediated induction of ATF4 was abrogated in cells in which the serine 51 phosphorylation site of eIF2\u03b1 had been mutated to alanine (Figure 6\u2014figure supplement 1), thus validating ATF4 as an indicator of the effects of manipulation of the actin cytoskeleton on ISR activity. ATF4, whose levels decline rapidly upon GSK2606414A-mediated shutdown of kinase activity, was also stabilised by jasplakinolide (Figure 6A, lowest panel), reflecting the functional significance of the defect in eIF2\u03b1 dephosphorylation imposed by the depletion of G-actin. Levels of phosphorylated eIF2\u03b1 induced by jasplakinolide were undiminished in cells lacking any one of the four known eIF2\u03b1 kinases (Figure 6C), suggesting that the compound's effects on levels of phosphorylated eIF2\u03b1 reflect its workings on the dephosphorylation phase of the stress cycle and not to off-pathway stress culminating in kinase activation.\n\nActin was recovered in complex with both the inducible and constitutive mammalian PPP1R15 family members (Figures 1 and 7A). To determine if the effects of G-actin were preferentially mediated by complexes containing one or the other PPP1R15 subunit, we compared the effect of jasplakinolide on levels of phosphorylated eIF2\u03b1 in wild-type MEFs and MEFs deficient in one or the other regulatory subunit. Enhanced levels of phosphorylated eIF2\u03b1 in jasplakinolide-treated cells and the synergistic effects of depleting G-actin on the response to thapsigargin were observed in wild-type cells and in cells lacking either PPP1R15A or PPP1R15B-directed eIF2\u03b1 dephosphorylation (Figure 7B\u2013D). These observations indicate that G-actin plays a functional role in holophosphatases constituted with either regulatory subunit.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig7-v2.jpg)\n\n**Figure 7.:** (A) Immunoblot for GFP and actin of HEK293T cell lysates expressing either GFP or GFP-PPP1R15B. Upper two panels indicate proteins immunoprecipitated by anti-GFP beads. Lower panel shows 2% of input lysate. (B) Immunoblot for P-eIF2\u03b1, total eIF2\u03b1, and PPP1R15A of lysates from WT or Ppp1r15btm1Dron/tm1Dron MEFs treated for 1 hr with thapsigargin 400 nM, jasplakinolide 1 \u00b5M or both. (C) Immunoblot for phosphorylated eIF2\u03b1 (P-eIF2\u03b1), total eIF2\u03b1 and actin. Ppp1r15atm1Dron/tm1Dron MEFs were treated with jasplakinolide 1 \u00b5M for the indicated times. Lysates were subjected to sedimentation assay and immunoblot for G-actin in the supernatant (G) or F-actin in the pellet (F). (D) Immunoblot for phosphorylated eIF2\u03b1 (P-eIF2\u03b1), total eIF2\u03b1, and actin. Ppp1r15atm1Dron/tm1Dron MEFs were treated with the indicated concentrations of jasplakinolide for 1 hr. Lysates were analysed as in \u2018C\u2019. Accompanying graphs show mean \u00b1 SEM of n = 3 independent repeats.\n\nTo explore in further detail the basis for the correlation between G-actin levels and eIF2\u03b1 dephosphorylation, we compared in vitro eIF2\u03b1-directed phosphatase activity of PPP1R15A-containing complexes recovered from untreated and jasplakinolide-treated cells. PPP1R15A-GFP fusion protein was expressed transiently in HEK293T cells overnight. The following day, cells were treated either with vehicle or with 1 \u00b5M jasplakinolide for 1 hr, lysed and then subjected to GFP-affinity purification using GFP-Trap beads. The resulting complexes were divided between four tubes and incubated for the indicated times at 37\u00b0C with pre-phosphorylated recombinant eIF2\u03b1 (see \u2018Materials and methods\u2019). Less actin and PP1 were recovered in complex with tagged PPP1R15A from jasplakinolide-treated cells (whilst HSP70 binding was unaffected) (Figure 8A), and the eIF2\u03b1-directed phosphatase activity of the purified complexes was likewise diminished (Figure 8A,B). Complex formation with PP1 contributes to dPPP1R15 stability; however, the decline in PPP1R15A levels in cells exposed to the translational inhibitor cycloheximide, was unaffected by the presence of jasplakinolide (Figure 8C,D) indicating that stabilisation of a complex between PPP1R15 and PP1 dominates G-actin's role in this experimental system.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig8-v2.jpg)\n\n**Figure 8.:** (A) Silver-stained SDS-PAGE or GFP-affinity purified PPP1R15A-GFP (hR15-GFP) and associated proteins. Asterisks signify identity confirmed by mass spectrometry. Purified complex incubated with phosphorylated recombinant eIF2\u03b1 N-terminal lobe (eIF2\u03b1) for incubated time. Note size shift corresponds to dephosphorylation. (B) Quantification of \u2018A\u2019 using ImageJ software. Mean \u00b1 SEM. p value calculated by two-way ANOVA, n = 3. (C) Immunoblot for PPP1R15A and eIF2\u03b1 of HEK293T cells expressing hPPP1R15A-GFP (hR15A-GFP). Treated with cycloheximide 50 \u00b5M for indicated times. (D) Quantification of \u2018C\u2019. Mean \u00b1 SEM, n = 3.\n\n### Localised changes in the polymeric status of actin modulate the ISR\n\nIn the experiments described thus far, actin polymerisation was manipulated throughout the cell, whereas in vivo the actin cytoskeleton is subject to highly localised changes. In the context of eIF2\u03b1 dephosphorylation, it seemed particularly relevant to examine the effects of actin polymerisation in the vicinity of the ER membrane, where the majority of PPP1R15 is located (Brush et al., 2003; Zhou et al., 2011; Malzer et al., 2013). Cells that conditionally expressed a constitutively active mutant of mDia2, a formin that stimulates localised polymerisation of F-actin (Pellegrin and Mellor, 2005), were generated. To direct mDia2 to the same membranous compartments as PPP1R15, we fused the membrane-targeting domain of PPP1R15B (residues 1\u2013146, devoid of catalytic activity) to mDia2 and a GFP tag to facilitate visualisation of the fusion protein. Control cells were generated expressing a PPP1R15B (1\u2013146)-GFP fusion protein lacking mDia2. Induction of eGFP-PPP1R15B (1\u2013146)-mDia2 increased polymerisation of actin adjacent to the ER, as indicated by co-localisation of GFP fluorescence with phalloidin staining (Figure 9A). In control cells, the GFP and phalloidin signals showed little correlation, but as expected, these became strongly correlated (indicating co-localisation) on expression of the mDia2 construct (Figure 9\u2014figure supplement 1). Immunoblot confirmed the expression of each fusion protein on treatment with doxycycline, but only the mDia2 construct led to the induction of ATF4 (Figure 9B compare lanes 4\u20136 with 13\u201315). ISRIB, a small molecule that renders cells unresponsive to eIF2\u03b1 phosphorylation (Sidrauski et al., 2013), blocked formin-mediated induction of ATF4 (Figure 9B, compare lanes 15 and 16), validating ATF4 as an ISR marker in this assay.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig9-v2.jpg)\n\n**Figure 9.:** (A) Fluorescence microscopy image of Flp-In T-REx HEK293 cells treated with 1 \u00b5g/ml doxycycline for 12 hr to express either ER membrane-localised GFP (GFP-R15B 1\u2013146) or ER membrane-localised GFP-mDia2 fusion (GFP-R15B 1\u2013146_mDia2) then fixed and stained with Alexa-Fluor 568 phalloidin and imaged by confocal microscopy. Bar = 5 \u00b5m. (B) Immunoblot for GFP and ATF4 in lysates of GFP-R15B 1\u2013146 or GFP-R15B 1\u2013146_mDia2 Flp-In T-REx HEK293 cells following treatment with doxycycline (Dox) 0.1 \u00b5g/ml for indicated times or with ISRIB 100 nM and or thapsigargin 300 nM for 4 hr. Immunoreactivity to ATF4 was quantified using ImageJ software (ATF4 Intensity). Proteins of the expected sizes are marked with a solid triangle GFP-R15B 1\u2013146_mDia2 or an open triangle GFP-R15B 1\u2013146. (C) Immunoblot for P-eIF2\u03b1, total eIF2\u03b1, and puromycin in lysates of GFP-R15B 1\u2013146 or GFP-R15B 1\u2013146_mDia2 Flp-In T-REx HEK293 cells following pre-treatment\u2014if indicated with doxycycline (Dox) 0.1 \u00b5g/ml for 10 hr followed by treatment with tunicamycin 2.5 \u00b5g/ml for indicated times. 10 min prior to harvesting, puromycin was added to the culture medium at a final concentration of 10 \u00b5g/ml. Immunoreactivity to puromycin within lysates served as a marker of protein translation and was quantified using ImageJ software (Puromycin intensity). Accompanying graphs of mean \u00b1 SEM of n = 3 independent repeats.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04872/elife-04872-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Confocal microscopy images of Flp-In T-REx HEK293 a cells treated with 1 \u03bcg/ml doxycycline for 12 hr. Nuclear DAPI staining is shown in blue, Alexa-Fluor 568 phalloidin staining of F-actin is shown in red, and GFP-R15B 1\u2013146 (A\u2013H) or GFP-R15B 1\u2013146_mDia2 (I\u2013P) is shown in green. The graph presents colocalisation analysis by Costes Pearson's correlation. Ten confocal fields were analysed for each cell type. Higher positive values represent increased colocalisation, whereas negative values represent exclusion of F-actin from GFP containing pixels.\n\nActin polymerisation in the vicinity of the ER also altered the dynamics of the ISR in response to gradually accruing ER stress induced by the glycosylation inhibitor tunicamycin. During ER stress, phosphorylation of eIF2\u03b1 by PERK attenuates protein translation to offload the ER (Harding et al., 1999). The degree of translational attenuation depends upon the intensity and the rapidity of ER stress (Novoa et al., 2001). Sudden and intense ER stress caused by depletion of ER calcium stores by thapsigargin induces marked inhibition of translation. In contrast, gradually escalating ER stress by the accumulation of unglycosylated proteins upon treatment with tunicamycin, attenuates translation less dramatically because induction of PPP1R15A limits the degree of eIF2\u03b1 phosphorylation (Novoa et al., 2001). In control cells (expressing the bland eGFP-PPP1R15B [1\u2013146] targeting fragment), tunicamycin induced a transient and minor decrease in translation with a nadir at 2 hr (Figure 9C, lane 5). By contrast, in cells expressing ER-targeted mDia2, tunicamycin led to a sustained drop in protein synthesis associated with a sustained increase in eIF2\u03b1 phosphorylation (Figure 9C, compare lanes 8 and 9). These experiments are consistent with a pool of G-actin localised in the vicinity of PPP1R15 in promoting eIF2\u03b1 dephosphorylation.\n\n## Discussion\n\nOver the years multiple proteins have been noted to interact with the PPP1R15-PP1 core holoenzyme, but none has proved generalizable across experimental systems or successfully implicated in the genetically well-characterised role of the complex to promote eIF2\u03b1 dephosphorylation (Hasegawa et al., 2000a, 2000b; Wu et al., 2002; Hung et al., 2003; Shi et al., 2004). In this study, an unbiased approach identified actin as a conserved binding partner of PPP1R15. The affinities of actin for PPP1R15 lay within a physiologically relevant range such that fluctuations of the G:F actin ratio affected the amount of actin recovered in the complex. Alterations to the ratio of G:F actin at the site of PPP1R15 action were seen to modulate cellular sensitivity to ISR stimuli via changes in eIF2\u03b1 phosphatase activity. Collectively, these findings establish G-actin as an important regulator of PPP1R15-mediated eIF2\u03b1 dephosphorylation in vivo.\n\nOur proteomics analysis also identified other potential binding partners of PPP1R15. In mammalian cells, tubulin and HSP70 were consistently recovered in complex with overexpressed PPP1R15 and PPP1R15-containing fusion proteins. These interactions are less conserved across phyla than the PPP1R15-actin interaction. Furthermore, in vitro experiments in the accompanying manuscript demonstrate that addition of actin is sufficient to endow the PPP1R15-PP1 complex with selectivity towards eIF2\u03b1 (Chen et al., 2015). Thus, while there is nothing in our observations to argue against tubulin or HSP70 joining the complex and modulating PPP1R15-directed phosphatase activity, the evidence at hand suggesting actin's relevance to the core activity of the eIF2\u03b1-directed phosphatase justifies the focus on actin.\n\nWith polymerisation and depolymerisation, the actin cytoskeleton is highly dynamic and levels of G-actin are subject to large fluctuations. Following polymerisation of actin to the barbed end of a filament, bound ATP is hydrolysed and eventually ADP-actin dissociates from the pointed end (Dominguez and Holmes, 2011). This dynamic is regulated by proteins that enhance depolymerisation, for example, ADF, or promote the recharging with ATP, which enhances the recycling of monomers, for example, profilin (Paavilainen et al., 2004). Capping proteins prevent the consumption of monomers and so increase free G-actin concentrations, while severing proteins can lead to filament disassembly or nucleate more filament formation depending upon the context (Wear and Cooper, 2004). In contrast, formins like mDia2 remain associated with the barbed end yet promote addition of actin monomers.\n\nOther actin-binding proteins have functions unrelated to the cytoskeleton and it is now well recognised that free G-actin can function as a second messenger. For example, MAL, a cofactor of the transcription factor SRF, cycles dynamically between the nucleus and cytoplasm in a manner regulated by its binding to G-actin in quiescent cells (Miralles et al., 2003; Vartiainen et al., 2007). By depleting G-actin, growth signal-driven actin polymerisation releases MAL to enter the nucleus, bind SRF and activate target genes. Other examples include Phactr, a PP1 regulatory subunit whose cytoplasmic localisation depends upon G-actin binding (Wiezlak et al., 2012) and RNA polymerases II and III for whom actin forms a scaffold for the assembly of enzyme complexes (Hu et al., 2004; Kukalev et al., 2005).\n\nMany actin-binding proteins including MAL interact with a hydrophobic target-binding cleft between subdomains I and III of the actin monomer (Mouilleron et al., 2008; Dominguez and Holmes, 2011; Shoji et al., 2012). This site is blocked by cytochalasin D, which inhibits such interactions. Latrunculin B increases the level of actin monomers by binding to a different site on G-actin, the nucleotide-binding cleft, and does not interfere with binding at the hydrophobic cleft. Our observation that cytochalasin D diminishes the recovery of actin in complex with PPP1R15, is consistent with interaction via the hydrophobic target-binding cleft. While the precise details remain to be worked out, structural and biochemical studies presented in the accompanying manuscript support this idea and further suggest the C-terminal most residues of the functional core of the PPP1R15 family members play an important role in actin engagement (Chen et al., 2015). A crystal structure obtained for the binary complex of PPP1R15B and PP1 demonstrated that the N-terminal half of PPP1R15's functional core extensively engages the surface of PP1 following an itinerary previously observed for the regulatory subunit PPP1R9/spinophilin (Ragusa et al., 2010; Chen et al., 2015). Interestingly, the C-terminal portion of PPP1R15's functional core, implicated here in actin binding, was not observed in a high-resolution crystal structure of the PPP1R15B-PP1 binary complex, suggesting that this portion of PPP1R15B remained unstructured in the absence of actin. The crystal structure obtained for the 1:1:1 ternary complex of PPP1R15B-PP1-actin was of too low a resolution to identify these C-terminal residues of PPP1R15's functional core, but unaccounted for density observed in the cleft between lobes I and III of actin suggests a mode of engagement of actin by this portion of PPP1R15B that would be sensitive to disruption by cytochalasin, which binds to the same region of G-actin.\n\nOur in vivo findings reported here emphasize the importance of actin binding to the stability of the PPP1R15-PP1 complex and suggest that association of PP1 and actin with PPP1R15 may be cooperative. The accompanying manuscript provides further evidence for the direct binding of PPP1R15 and actin and reveals a role for actin in augmenting the specificity of the holophosphatase for eIF2\u03b1 (Chen et al., 2015). These two mechanisms are likely to work in concert and suggest a crucial role for G-actin in establishing a biologically relevant route to eIF2\u03b1 dephosphorylation.\n\nIt would appear that under normal circumstances G-actin is not limiting to eIF2\u03b1 dephosphorylation in cultured MEFs, as latrunculin B, which enhances the pool of PPP1R15 binding-competent G-actin in some cell types, has no measurable effect on phosphorylated eIF2\u03b1 (Figure 5\u2014figure supplement 1). However, regulation of eIF2\u03b1 phosphatases via the binding of G-actin might plausibly play a role in biological processes that are accompanied by changes in the ratio of G:F actin in other differentiated cell types, for example, in circumstances of cell migration, axonal guidance, or synaptic plasticity. The latter are particularly attractive given the evidence for crosstalk between the ISR and memory formation (Costa-Mattioli et al., 2007; Ma et al., 2013; Sidrauski et al., 2013).\n\nThe role of eIF2\u03b1 phosphorylation in regulating rates of protein synthesis and the coupling of this phosphorylation event to the activation of a gene expression programme are conserved in eukaryotes. However, the mechanism for dephosphorylating eIF2\u03b1 has diverged considerably. Yeasts rely on direct recruitment of the catalytic phosphatase subunit (Glc7p) to the eIF2 substrate, with no PPP1R15 intermediate (Rojas et al., 2014), while PPP1R15 family proteins are apparent only in complex animals: insects and vertebrates (Novoa et al., 2001; Jousse et al., 2003; Malzer et al., 2013). It is tempting to speculate that this more complex mode of regulating eIF2\u03b1 dephosphorylation co-evolved with mechanisms for regulating the actin cytoskeleton and G-actin availability.\n\nCurrent models suggest that PPP1R15B, which is expressed constitutively, provides a constant background of eIF2\u03b1 phosphatase activity that is augmented by transcriptional induction of PPP1R15A during later stages of the ISR (Jousse et al., 2003). This study reveals that both PPP1R15 isoforms are poised to undergo post-translational regulation through changes in the polymeric status of actin. The focus here has been on the conserved functional core of PPP1R15, but there remains room for further modulation of both isoforms by their large, poorly characterised N-terminal regions. Our protein discovery effort has identified other interactors that may be unique to each isoform. Thus future studies to explore the possibility of differential regulation of eIF2\u03b1 phosphatase activity by the different paralogues and their unique interactors seem warranted.\n\n## Materials and methods\n\n### Materials, plasmids, and primers\n\nJasplakinolide, thapsigargin, and tunicamycin were from Calbiochem (Millipore, Hertfordshire, UK), cytochalasin D was from Tocris (Bristol, UK), latrunculin B was from Enzo Life Sciences (Exeter, UK), Alexa Fluor 568 Phalliodin was from Life Technologies (Paisley, UK). PPP1R15ApEGFP-C3 and PPP1R15ApEGFP-N1 were kind gifts from S Shenolikar (Duke-NUS Graduate Medical School Singapore, Singapore) (Zhou et al., 2011). PerkKD-pGEX4T-1, dPPP1R15pEGFP, 2aOPTx3M(1\u2013185)pET-30a(+), PPP1R15ApcDNA and dPPP1R15pEGFP have been described previously (Harding et al., 1999; Novoa et al., 2003; Ito et al., 2004; Malzer et al., 2013). PP1\u03b1pEBG was generated by ligating the human PP1\u03b1 coding sequence into BamHI and NotI digested pEBG. For inducible HeLa cell lines, GFP-PPP1R15A was excised from PPP1R15ApEGFP-C3 with NheI and XhoI and ligated into NheI and SalI digested pTRE2Hyg (Clontech Laboratories, USA) to generate GFP-PPP1R15ApTRE2Hyg. PPP1R15A-GFP was excised from PPP1R15ApEGFP-N1 with BglII and NotI and ligated into BamHI and NotI digested pTRE2Hyg to generated PPP1R15A-GFPpTRE2Hyg. For PPP1R15B-GFP, PPP1R15BpEGFP-C1 was generated by ligating the human PPP1R15B coding sequence into BglII and SalI digested pEGFP-C1. For Flp-In T-REx HEK293 cell lines expressing GFP-R15B 1\u2013146 and GFP-R15B 1\u2013146_mDia2, the coding sequence for EGFP and residues 1\u2013146 of human PPP1R15B was mobilized by digestion with NheI (partially repaired with Klenow-polymerase) and BamHI, before ligation into pcDNA5_TO_FRT (Life Technologies, USA) digested with HindIII (partially repaired with Klenow polymerase) and BamHI to generate EGFP_PPP1R15B_1\u2013146pcDNA5_TO_FRT. PCR product encoding residues 532-1171 of mDia2 was ligated into BamHI and XhoI digested EGFP_PPP1R15B_1\u2013146 pcDNA5_TO_FRT to generate EGFP_PPP1R15B_1\u2013146_mDia2_532-1171pcDNA5_TO_FRT. Primers used in this study are listing in Table 1.\n\n**Table 1.**\n Primers used in this study\n\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">hPPP1R15A truncation or point mutation</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">1\u2013615</td>\n      <td>For</td>\n      <td>CCTGCTGCCCGGGCCAGAGCCTGAGCACGCCTCAGGAACC</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>GGTTCCTGAGGCGTGCTCAGGCTCTGGCCCGGGCAGCAGG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">1\u2013620</td>\n      <td>For</td>\n      <td>CCTGGGCACGCCTCAGGTAGCCACCTTTAGCC</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>GGCTAAAGGTGGCTACCTGAGGCGTGCCCAGG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">501\u2013654</td>\n      <td>For</td>\n      <td>TAAGCTAGCACCATGGAAGCTGAGCCC</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>GTCGCGGCCGCTTTACTTGTACAGCTC</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">V556E</td>\n      <td>For</td>\n      <td>CTAAAGGCCAGAAAGGAGCGCTTCTCCGAGAAGGTCACTG</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>CAGTGACCTTCTCGGAGAAGCGCTCCTTTCTGGCCTTTAG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">W616A</td>\n      <td>For</td>\n      <td>CCGGGCCAGAGCCGCGGCACGCCTCAGGAA</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>TTCCTGAGGCGTGCCGCGGCTCTGGCCCGG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">R618A</td>\n      <td>For</td>\n      <td>GCCAGAGCCTGGGCAGCCCTCAGGAACCCA</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>TGGGTTCCTGAGGGCTGCCCAGGCTCTGGC</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">L619A</td>\n      <td>For</td>\n      <td>AGCCTGGGCACGCGCCAGGAACCCACCTTT</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>AAAGGTGGGTTCCTGGCGCGTGCCCAGGCT</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">R620A</td>\n      <td>For</td>\n      <td>CCTGGGCACGCCTCGCGAACCCACCTTTAG</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>CTAAAGGTGGGTTCGCGAGGCGTGCCCAGG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">W616A/L619A</td>\n      <td>For</td>\n      <td>CGGGCCAGAGCCGCGGCACGCGCCAGGAACCC</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>GGGTTCCTGGCGCGTGCCGCGGCTCTGGCCCG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">mDia2 fusion</td>\n      <td>For</td>\n      <td>AATCCCGGATCCGTGCCTTGCCACCTGGTACA</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>AGCTCGCTCGAGTTATAAAGCTCGTAATCTTGCCAG</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">PPP1R15B fusion</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">GFP fusion</td>\n      <td>For</td>\n      <td>AGATTAGATCTGCCACCATGGAGCCGGGGACAGG</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>GATCGTCGACACATTGCTTGAGAACATTAAGTCC</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">dPPP1R15 truncation</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">1\u2013307</td>\n      <td>For</td>\n      <td>CCAGTTCACCGAGATCGTTAGTACCAAGCTCGATTCTTGCACG</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>CGTGCAAGAATCGAGCTTGGTACTAACGATCTCGGTGAACTGG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">1\u2013312</td>\n      <td>For</td>\n      <td>CGTGTCTACCAAGCTCGATAGTTGCACGAGGACGAGC</td>\n    </tr>\n    <tr>\n      <td>Rev</td>\n      <td>GCTCGTCCTCGTGCAACTATCGAGCTTGGTAGACACG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Site-directed mutagenesis\n\nAll truncations or point mutations in the PPP1R15A coding sequence were made as follows. Fifty nanograms of plasmid template DNA were mixed with 5 \u00b5l Pfu turbo DNA polymerase reaction buffer [10\u00d7], 1 \u00b5l Pfu turbo DNA polymerase (Agilent Technologies, Santa Clara, CA), 125 ng forward primer, 125 ng reverse primer, 1 \u00b5l of 25 mM dNTPs, made up to 50 \u00b5l with water. A PCR thermocycler was run using the following program parameters: 95\u00b0C for 30 s, 95\u00b0C for 30 s, 18 cycles (54\u00b0C for 1 min, 67\u00b0C for 20 min, 94\u00b0C for 1 min, 55\u00b0C for 1 min, 72\u00b0C for 10 min). Completed reactions were treated with 1 \u00b5l Dpn1 restriction enzyme, incubated at 37\u00b0C for 2 hr before using 5 \u00b5l of the reaction mix for a standard transformation into One Shot TOP10 chemically competent E. coli (Life Technologies, Paisley, UK).\n\n### Cell culture\n\nMammalian cells, HEK293T, MEF (Ppp1r15btm1Dron/tm1Dron, Ppp1r15atm1Dron/tm1Dron, Pkr\u2212/\u2212, Hri\u2212/\u2212, Perk\u2212/\u2212, Gcn2\u2212/\u2212, eIF2\u03b1AA), and NIH3T3, were maintained in DMEM supplemented with 10% vol/vol FBS and antibiotics (100U/ml Penicillin G and 100 \u00b5g/ml Streptomycin) and incubated at 37\u00b0C with 5% vol/vol CO2 (Yang et al., 1995; Harding et al., 2000; Han et al., 2001; Novoa et al., 2003; Scheuner et al., 2005; Harding et al., 2009). HeLa Tet-On Advanced cells were purchased from Clontech Laboratories (Saint-Germain-en-Laye, France) and maintained in DMEM with 10% vol/vol tetracycline-free FBS and transfected with the expression vectors PPP1R15A-GFPpTRE2Hyg and GFP-PPP1R15ApTRE2Hyg. Stable clones were selected with 600 \u00b5M hygromycin. Transgene expression proved optimal when clones were treated with 1 \u00b5g/ml doxycycline.\n\n### Immunoblots\n\nCell lysates were prepared in Harvest lysis buffer (HEPES pH 7.9, 10 mM; NaCl 50 mM; sucrose 0.5M; EDTA 0.1 mM; Triton X-100 0.5% vol/vol) supplemented with protease inhibitor cocktail (Roche, Welwyn Garden City, UK) and 1 mM PMSF. When analysing phospho-eIF2\u03b1, the lysis buffer was supplemented with phosphatase inhibitors (10 mM tetrasodium pyrophosphate, 15.5 mM \u03b2-glycerophosphate, 100 mM NaF). Cleared cell extracts were equalized by total cell protein using Bio-Rad protein assay (Bio-Rad, Hercules, CA, USA), boiled in SDS-loading buffer (25 mM Tris pH 6.8, 7.5% vol/vol glycerol, 1% wt/vol SDS, 25 mM DTT, 0.05% wt/vol bromophenol blue), subjected to reducing SDS-PAGE, and transferred to nitrocellulose membrane.\n\nFor GFP-Trap affinity purification, cells were lysed in the manufacturer's recommended buffers (Chromotek, Planegg-Martinsried, Germany) and incubated with GFP-Trap A beads according to manufacturer's instructions. Briefly, cells were lysed in GFP-Trap lysis buffer (150 mM NaCl, 10 mM Tris/Cl pH 7.5, 0.5 mM EDTA, 1 mM PMSF, and Protease Inhibitor Cocktail [Roche]) and post-nuclear supernatants were incubated with GFP-Trap beads at 4\u00b0C for 2 hr then washed four times in the same buffer. Proteins were eluted with SDS-PAGE loading buffer.\n\nGST affinity purification was performed using Activated Thiol Sepharose 4B beads (GE Healthcare, Little Chalfont, UK). Briefly, cells were lysed with Harvest buffer, cleared by centrifugation and incubated with rotation with Activated Thiol Sepharose 4B beads for 2 hr at 4\u00b0C. Beads were then washed four times with lysis buffer and protein complexes then eluted by boiling with SDS-loading buffer or by addition of 20 mM glutathione.\n\nFor isolation of endogenous PPP1R15A by immunoprecipitation and PP1 by microcystin-affinity purification, MEF or HEK293T cells were lysed in lysis buffer (150 mM KCl, 20 mM HEPES pH 7.4, 2 mM MgCl2, 1 mM PMSF, and Protease Inhibitor Cocktail) supplemented with either 0.1% (wt/vol) digitonin (Calbiochem, MERK Millipore, Darmstadt, Germany) or 0.5% (vol/vol) triton X-100, respectively. Immunoprecipitation of PPP1R15A was carried out for 16 hr at 4\u00b0C prior to three washes with detergent supplemented lysis buffer and elution in SDS-PAGE sample buffer. PP1 isolation by microcystin affinity purification was carried out for 1 hr at 4\u00b0C in the presence of 1 mM latrunculin B prior to three washes with detergent-supplemented lysis buffer and elution in SDS-PAGE sample buffer. Lysates were centrifuged at 200,000\u00d7g for 30 min to remove contaminating F-actin in order that G-actin levels were reflected in input samples.\n\nPrimary antibodies used were: rabbit anti-PPP1R15A (10,449-1-AP, 1:1000; Proteintech, Manchester, UK) mouse anti-GFP antibody (ab1218, 1\u22361000; Abcam, Cambridge, UK), rabbit anti-PP1\u03b1 antibody (no. 2582, 1\u22361000; Cell Signaling, Danvers, MA, USA), rabbit p-eIF2\u03b1 (3597, Cell Signaling; 1\u22361000), anti-actin (ab3280, 1\u22361000; Abcam), rabbit anti-ATF4 (C-20, 1:500; SantaCruz, Santa Cruz, CA, USA), mouse anti-puromycin antiserum (PMY-2A4, Developmental Studies Hybridoma Bank, University of Iowa, USA), anti-total eIF2\u03b1 mouse monoclonal (AHO0802,1:1000; Invitrogen, Thermo Fisher Scientific, Waltham, MA, USA).\n\n### Coomassie and silver stain\n\nGels were stained with InstantBlue Coomassie stain (Expedeon, San Diego, CA, USA) as directed by the manufacturer's instructions. For silver staining: gels were fixed (10% vol/vol methanol, 7.5% vol/vol acetic acid) for 20 min with agitation followed by two quick rinses with water. Gels were then incubated with 3.25 \u00b5M DTT in water for 20 min with agitation then 0.1% wt/vol AgNO3 in water for 30 min with agitation. Following a 1-min wash with water, gels were developed using 3% wt/vol Na2CO3, 0.02% wt/vol formaldehyde in water until bands became visible and the reaction was stopped with fixative.\n\n### F-actin sedimentation assay\n\nHEK293T cells were transfected with PP1\u03b1pEBG and untagged PPP1R15ApcDNA. After 24 hr, cells were lysed in harvest buffer and subjected to GST affinity purification. Protein complexes were eluted with 20 mM reduced glutathione in 50 mM Tris pH 7.5. The eluate was mixed with 10 \u00b5M purified F-actin in actin binding buffer (20 mM Tris pH 8, 100 mM NaCl, 2 mM MgCl2, 1 mM ATP, 1 mM DTT, 0.1 mM CaCl2) in a total volume of 200 \u00b5l. Samples were centrifuged at 279,000\u00d7g for 15 min in a TLA120.1 rotor. The supernatant was removed and mixed with 50 \u00b5l of 4\u00d7 SDS loading buffer, while the pellet was re-suspended in 250 \u00b5l of 1\u00d7 SDS loading buffer. Samples were then boiled and analysed by SDS-PAGE.\n\n### In vitro eIF2\u03b1 de-phosphorylation assay\n\nPhosphorylated recombinant eIF2\u03b1 N-terminal domain (NTD) was generated as described previously (Marciniak et al., 2006). The expression plasmid PerkKD-pGEX4T-1 encoding GST-PERK kinase domain fusion protein of mouse PERK residues 537\u20131114 wild type has previously been described (Harding et al., 1999). eIF2\u03b1-NTD encoding residues 1\u2013185 of human eIF2\u03b1 with three solubilizing mutations was bacterially expressed from codon optimized vector 2aOPTx3M(1\u2013185)pET-30a(+) (Ito et al., 2004). Bacterially expressed GST-PERK immobilised on activated thiol sepharose beads was incubated with 10 \u00b5l of 1 mM ATP and bacterially expressed eIF2\u03b1-NTD at 37\u00b0C with shaking in 20 \u00b5l kinase buffer (5\u00d7: 100 mM TRIS pH 7.4, 250 mM KCl, 10 mM Mg(OAc)2, 10 mM MnCl2, and 5 mM DTT) made up to 100 \u00b5l total reaction volume. GST-PERK beads were removed by centrifugation and remaining ATP was removed by dialysis against reaction buffer. The resulting phosphorylation eIF2\u03b1-NTD was incubated with affinity-purified phosphatase in 20 mM Tris HCL pH 7.4, 50 mM KCl, 2 mM MgCl2, 0.1 mM EDTA, 0.8 mM ATP at 30\u00b0C for indicates times with shaking. Reactions were terminated by the addition of Laemmli buffer.\n\n### Immunofluorescence microscopy\n\nCells plated onto glass coverslips were washed twice with PBS and fixed with 4% formaldehyde for 20 min. Following a further two PBS washes, cells were then permeabilised with 0.5% vol/vol triton X-100 in PBS for 3 min then blocked with 1% wt/vol BSA in PBS for 1 hr. Cells were then incubated in the dark with Alexa-Fluor 568 phalloidin 1:40 for 1 hr. After three 5-min washes in PBS, the glass coverslips were mounted onto slides using ProLong Gold antifade reagent (Life Technologies) ready for visualisation.\n",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "27abbf74-ec4e-40dd-8634-adf5dd20c2ba",
+      "submission_id": "01f9dc8b-7be0-4310-b4c4-917f2b5d53ae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- W James Nelson, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04872.020](https://doi.org/10.7554/eLife.04872.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201dActin dynamics tune the integrated stress response by regulating eIF2\u03b1 dephosphorylation\u201c for consideration at eLife. Your article has been evaluated by Vivek Malhotra (Senior editor), a Reviewing editor, and three reviewers, one of whom, Richard Treisman, has agreed to reveal his identity.\n\nAll three reviewers, with different degrees of enthusiasm, thought that the work in this manuscript was interesting and potentially important. The Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe work shows that G-actin interacts with various R15 isoforms, and the data in this paper together with the data in the accompanying paper (Chen et al., 2015, eLife) support a possible model where the inclusion of G-actin in a trimeric complex is important for substrate specificity. The work is based on a fairly straightforward workflow involving protein pull-down studies, protein identification by mass spectrometry, structure-function analysis to define regions and residues that interact, then a more functional set of studies where G to F-actin dynamics are manipulated in cells. Overall the study is technically solid and the results are of potential importance.\n\nSubstantive concerns:\n\n1) The pull-down experiments identify the most abundant proteins in cells, and while a number of controls are included, there is a concern that the work relies on over-expression of proteins in model cell preparations. As the authors acknowledge in the Discussion, the artificial manipulations used to perturb G-actin, do not really inform upon any biological process where G- to F-actin dynamics are altered.\n\n2) There is little information related to replication of experiments. Representative studies are presented but little cumulative data is analyzed and quantified.\n\n3) A commercial GFP pull-down kit is used. It is important that the buffer conditions are included in the Methods section. In this regard, was G-actin binding sensitive to lysis or other buffer components including salt and detergent?\n\n4) The mass spectrometry data is not presented.\n\n5) Relative stability of trimeric complex: the authors\u2019 assertion that the ternary complex is more stable than binary complexes (at the end of the subsection \u201cActin associates with the conserved C-terminal functional core of PPP1R15\u201d) seems to be based on the analysis of the V556E mutant, but no evidence in this experiment that addresses this issue directly.\n\n6) In Figure 1, tubulin also seems to be a conserved PPP15A/B interactor, and in Figure 7A the amount of tubulin associated w/ the PPP15A-GFP complex is also decreased when purified from jasplakinolide treated cells. It would be helpful to know (and potentially a great control) if eIF2\u03b1 phosphorylation is altered in cells treated with drugs that alter levels of MT polymerization. In addition, some comment on the tubulin recovery in the experiments would be appropriate; what do the authors think is happening here?\n\n7) Since jasplakinomide perturbs actin polymerization through a specific mechanism, it is important to use another method (for example phalloidin) to ensure that the effects are not specific to jasplakinomide.\n\n8) Figure 4B: please indicate the time of treatment.\n\n9) Figure 4C and D: while a control experiment is shown in Figure 4D, it is hard to make much of a conclusion since the result in Figure 4D appears to be fully explained by the level of induced expression of R15A. In addition, in Figure 4D an important control is not shown: overall levels of eIF2\u03b1. Its absence is conspicuous as this control is shown for other analyses, including panel 4C.\n\n10) Figure 6C and D: the data for the R15A mutant cells seems non-informative since little R15A is expressed at baseline.\n\n11) Figure 7: this experiment is not explained clearly in the text (subsection headed \u201cAssociation of G-actin with PPP1R15 regulates eIF2\u03b1 phosphatase activity in vivo\u201d).\n\n12) Figure 8: do the constructs with the membrane-targeting domain of R15b displace the ER location of R15B or R15A? In addition, the cells in appear significantly different in morphology in this figure. Please show more examples, and provide some quantitation of the extent of colocalization of F-actin and GFP.\n\n13) Referencing: the use of the Sotiropoulos reference for MAL and actin is wrong. 1) Initial finding should be Miralles et al., Cell 2003 vol. 113, 329; 2) Rather than being held in the cytoplasm by actin and released for nuclear entry, MAL is actually dynamic, with the protein continually circulating through the nucleus (Vartiainen et al., 2007 Science vol. 316, 1749. 3. Structural analysis of binding to actin was initially done by Mouilleron et al., 2008 EMBO 27, 3198).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201dActin dynamics tune the integrated stress response by regulating eukaryotic initiation factor 2\u03b1 dephosphorylation\u201c for further consideration at eLife. Your revised article has been favorably evaluated by Vivek Malhotra (Senior editor) and a member of the Board of Reviewing Editors.\n\nTwo of the original three reviewers examined the revised manuscript and one of them, self-identified as Richard Treisman, found the revisions appropriate and had only one small criticism that you need to address.\n\nThe other reviewer had more substantive criticisms, many of which he/she felt were raised in the first round of reviews, that we have listed below. Specifically, he/she remains concerned about the stoichiometry of the PP1/R15 complex and actin. He/she notes that this interaction is at the core of the work and conclusions, and is not convinced from the data that the interaction is physiologically significant. This issue, therefore, remains a significant problem that needs addressing directly. The reviewer suggests, as did on the original reviews, that purified proteins would be a better basis for this analysis.\n\nReviewer #1 (Richard Treisman):\n\nPoint 6 in the rebuttal: \u201cOK, but puzzled as to the effect on Tubulin recovery. The authors should add a comment as to what they think is going on here.\u201d\n\nReviewer #2 (verbatim):\n\nThe authors have made a reasonable attempt to address the reviewers' points in the revised version of this manuscript. There were concerns that the approach used overexpression of proteins in model cell systems, that G-actin and the other proteins (tubulin, HSP70) were highly abundant and that the perturbations to G-actin/F-actin were non-physiological. While additional studies have been performed to examine endogenous PPP1R15 and PP1, the results raise some additional questions, and many of the original concerns remain.\n\nSpecific comments:\n\n1) It is a concern that actin cannot be detected in the pulldown studies added in Figure 4. There is a vague comment about the antibody not being effective enough, but this does not make a lot of sense, given that there is a supposedly \u201dstoichiometric\u201c amount of actin coming down with the PP1/R15 complex (Figure 1C and Results). If this is the case, then it should be feasible through the use of internal standards to work out how much endogenous PP1 and R15 are isolated relative to the amounts of PP1 and R15 isolated following over-expression, then to set up an assay to measure comparable amounts of actin. Is there still tubulin and HSP70 pulled down with endogenous PP1 and R15? If so, and no actin can be detected, then how does one interpret the physiological significance of the proposed G-actin interaction.\n\n2) Related to this point of stoichiometry, if there is a stoichiometric amount of G-actin bound to PP1/R15 then what does this say about how tubulin or HSP70 might also be binding to the complex?\n\n3) The questions related to the binding between the different proteins really needs evidence using purified components, which is the topic of the accompanying paper (Chen et al., 2015, eLife). In isolation it is not easy to judge the potential physiological significance of the data presented in this paper, and the Discussion really needs to make it more clear how the structural data in the other paper help interpret the data in this paper.\n\n4) Abstract: the data presented here are more supportive of G-actin being able to stabilize the PP1/R15 complex rather than being an \u201dactivator\u201d.\n",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "99a01b62-c063-4fe3-b440-bf5d0e48bd6d",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C1",
+      "claim": "Four stress-sensing kinases phosphorylate the alpha subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1) to activate the integrated stress response (ISR).",
+      "claim_type": "EXPLICIT",
+      "source": "Four stress-sensing kinases phosphorylate the alpha subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1) to activate the integrated stress response (ISR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the ISR pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "71ba39fb-b62f-41ae-8b99-ac5f5e436f9b",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C2",
+      "claim": "In animals, the ISR is antagonised by selective eIF2\u03b1 phosphatases comprising a catalytic protein phosphatase 1 (PP1) subunit in complex with a PPP1R15-type regulatory subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals, the ISR is antagonised by selective eIF2\u03b1 phosphatases comprising a catalytic protein phosphatase 1 (PP1) subunit in complex with a PPP1R15-type regulatory subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of ISR regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "b64b21f4-5906-4552-8808-599506e3fa8e",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C3",
+      "claim": "An unbiased search for additional conserved components of the PPP1R15-PP1 phosphatase identified monomeric G-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "An unbiased search for additional conserved components of the PPP1R15-PP1 phosphatase identified monomeric G-actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the mass spectrometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0fdbf3fd-3aa7-4a1e-97bf-67aefd62fba9",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C4",
+      "claim": "G-actin associates with the functional core of PPP1R15 family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Like PP1, G-actin associated with the functional core of PPP1R15 family members",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the deletion analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "1511c5a7-abd0-4abc-ba1f-869303b3cc1c",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C5",
+      "claim": "G-actin depletion by jasplakinolide destabilised the endogenous PPP1R15A-PP1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "G-actin depletion, by the marine toxin jasplakinolide, destabilised the endogenous PPP1R15A-PP1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "556f1ea9-cb4c-4458-aa8a-36f6c8477587",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C6",
+      "claim": "The abundance of the ternary PPP1R15-PP1-G-actin complex was responsive to global changes in the polymeric status of actin.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of the ternary PPP1R15-PP1-G-actin complex was responsive to global changes in the polymeric status of actin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with jasplakinolide, latrunculin B, and serum starvation shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "25b85efb-b2f9-4292-b7c3-737b1cb311e3",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C7",
+      "claim": "The eIF2\u03b1-directed phosphatase activity of the PPP1R15-PP1-G-actin complex was responsive to global changes in the polymeric status of actin.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of the ternary PPP1R15-PP1-G-actin complex was responsive to global changes in the polymeric status of actin, as was its eIF2\u03b1-directed phosphatase activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the in vitro phosphatase assays shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "454a6835-eb79-4e5b-b434-00d55423b797",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C8",
+      "claim": "Localised G-actin depletion at sites enriched for PPP1R15 enhanced eIF2\u03b1 phosphorylation and the downstream ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "while localised G-actin depletion at sites enriched for PPP1R15 enhanced eIF2\u03b1 phosphorylation and the downstream ISR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mDia2 experiments shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "7f7e004f-92b5-48a8-95e3-5872f961f133",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C9",
+      "claim": "Phosphorylation of eIF2\u03b1 by stress-sensing kinases inhibits guanine nucleotide exchange, attenuating translation initiation and global protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic translation initiation factor 2 complex recruits the initiator methionyl-tRNA to ribosomes in a GTP-dependent catalytic cycle, but phosphorylation of its alpha subunit (eIF2\u03b1) by a family of stress-sensing kinases inhibits guanine nucleotide exchange, attenuating translation initiation and with it, global protein synthesis (Clemens, 1996; Jackson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "fec32314-3bed-48cd-9df3-e6332257c293",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C10",
+      "claim": "During endoplasmic reticulum stress, the eIF2\u03b1 kinase PERK triggers attenuation of protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "During endoplasmic reticulum stress, the eIF2\u03b1 kinase PERK triggers attenuation of protein synthesis (Harding et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "8bd339f5-c9a8-4a4d-a653-c4d4cb4ba8d4",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C11",
+      "claim": "Other members of the eIF2\u03b1 kinase family respond variously to amino acid deprivation, viral infection or heme deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "while other members of the family respond variously to amino acid deprivation, viral infection or heme deficiency (van 't Wout et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "2fd92513-3f67-4259-8955-4ef5cd03e6c1",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C12",
+      "claim": "The ability of eIF2\u03b1 phosphorylation to integrate signals from multiple, apparently unrelated, stresses led this pathway to be named the 'integrated stress response' (ISR).",
+      "claim_type": "EXPLICIT",
+      "source": "This ability of eIF2\u03b1 phosphorylation to integrate signals from multiple, apparently unrelated, stresses led this pathway to be named the 'integrated stress response' (ISR) (Harding et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "a8e408c9-79ef-4b6a-b22c-cc4f3c5542a0",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C13",
+      "claim": "Attenuated global protein synthesis is cytoprotective early in the stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "Attenuated global protein synthesis is cytoprotective early in the stress response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ISR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "3c730633-3a6c-41ab-9aec-04e420ccb659",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C14",
+      "claim": "The ISR involves the translational induction of the transcription factors ATF4 and CHOP.",
+      "claim_type": "EXPLICIT",
+      "source": "The ISR also involves the translational induction of the transcription factors ATF4 and CHOP, which activate a transcriptional programme that has pro-survival effects in the short term, whilst prolonged activation leads to a switch to apoptosis (Zinszner et al., 1998; Marciniak et al., 2004; Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "7417ddd2-bedb-425a-83cd-741b3629e6bc",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C15",
+      "claim": "ATF4 and CHOP activate a transcriptional programme that has pro-survival effects in the short term, whilst prolonged activation leads to a switch to apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ISR also involves the translational induction of the transcription factors ATF4 and CHOP, which activate a transcriptional programme that has pro-survival effects in the short term, whilst prolonged activation leads to a switch to apoptosis (Zinszner et al., 1998; Marciniak et al., 2004; Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "c02e647f-656f-46db-a365-8e76469963e5",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C16",
+      "claim": "In metazoans, inactivation of the ISR is mediated by a catalytic, protein phosphatase 1 (PP1) subunit in complex with a regulatory subunit (PPP1R15) responsible for targeting eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, inactivation of the ISR is mediated by a catalytic, protein phosphatase 1 (PP1) subunit in complex with a regulatory subunit (PPP1R15) responsible for targeting eIF2\u03b1 (He et al., 1998; Novoa et al., 2001; Jousse et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "de7c25d0-ac47-47c1-a67b-062ef36b7874",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C17",
+      "claim": "In Drosophila, a single PPP1R15 has been described that is required for anabolic larval growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, a single PPP1R15 has been described that is required for anabolic larval growth (Malzer et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "ef9cf03d-76a4-4277-aec0-b3d4a6d8d551",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C18",
+      "claim": "In mammals, two PPP1R15 paralogues exist: a constitutively expressed isoform PPP1R15B (also known as CReP) and a stress-inducible isoform PPP1R15A (also GADD34).",
+      "claim_type": "EXPLICIT",
+      "source": "while in mammals, two PPP1R15 paralogues exist: a constitutively expressed isoform PPP1R15B (also known as CReP) and a stress-inducible isoform PPP1R15A (also GADD34) (Novoa et al., 2001; Jousse et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "e9452bd3-53ab-480e-a0ad-ccc7dc461a3d",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C19",
+      "claim": "PPP1R15 family members share significant homology in their C-terminal conserved PP1-interacting domain.",
+      "claim_type": "EXPLICIT",
+      "source": "PPP1R15 family members share significant homology in their C-terminal conserved PP1-interacting domain, constituting a core functional domain sufficient to dephosphorylate eIF2\u03b1 when over expressed in cells (Novoa et al., 2001; Malzer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "7fb32dc0-d567-435e-ae89-7ca6d623f38c",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C20",
+      "claim": "The C-terminal conserved PP1-interacting domain of PPP1R15 constitutes a core functional domain sufficient to dephosphorylate eIF2\u03b1 when over expressed in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PPP1R15 family members share significant homology in their C-terminal conserved PP1-interacting domain, constituting a core functional domain sufficient to dephosphorylate eIF2\u03b1 when over expressed in cells (Novoa et al., 2001; Malzer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "77d4a167-03d5-4ce6-8177-7f7bac67a580",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C21",
+      "claim": "The less well-conserved N-terminal portion of each PPP1R15 determines protein stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the less well-conserved N-terminal portion of each PPP1R15 determines protein stability (Brush and Shenolikar, 2008) and subcellular localisation (Zhou et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "696f588c-211a-4751-a123-d7c8de1c0677",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C22",
+      "claim": "The less well-conserved N-terminal portion of each PPP1R15 determines subcellular localisation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the less well-conserved N-terminal portion of each PPP1R15 determines protein stability (Brush and Shenolikar, 2008) and subcellular localisation (Zhou et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "16120a97-d369-44bb-94a3-85cce44e4f59",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C23",
+      "claim": "In Drosophila, ubiquitous RNAi-mediated depletion of dPPP1R15 leads to embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, ubiquitous RNAi-mediated depletion of dPPP1R15 leads to embryonic lethality, while failure of blastocyst implantation is seen in Ppp1r15a-Ppp1r15b double knockout mouse embryos (Harding et al., 2009; Malzer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "e2d41af4-0b83-48ba-a71d-4b95fd45cb1c",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C24",
+      "claim": "Failure of blastocyst implantation is seen in Ppp1r15a-Ppp1r15b double knockout mouse embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, ubiquitous RNAi-mediated depletion of dPPP1R15 leads to embryonic lethality, while failure of blastocyst implantation is seen in Ppp1r15a-Ppp1r15b double knockout mouse embryos (Harding et al., 2009; Malzer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "8803a37f-0e4a-42c0-b381-df658729c809",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C25",
+      "claim": "Deficiency of PPP1R15B in isolation permits survival to gestation but leads to defects of haematopoiesis and death in the early neonatal period.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficiency of PPP1R15B in isolation permits survival to gestation but leads to defects of haematopoiesis and death in the early neonatal period (Harding et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "57fd4bb5-7fae-47de-aeb0-22c35c003cf0",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C26",
+      "claim": "PPP1R15A-deficient mice are overtly healthy when raised in standard laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PPP1R15A-deficient mice are overtly healthy when raised in standard laboratory conditions and show increased resistance to ER stress-induced tissue damage (Marciniak et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "b6c06218-101d-4982-b62b-e9d1bc0210e4",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C27",
+      "claim": "PPP1R15A-deficient mice show increased resistance to ER stress-induced tissue damage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PPP1R15A-deficient mice are overtly healthy when raised in standard laboratory conditions and show increased resistance to ER stress-induced tissue damage (Marciniak et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "86215e63-fc8e-46ba-be2d-17cd536968d4",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C28",
+      "claim": "PPP1R15A is regulated transcriptionally.",
+      "claim_type": "EXPLICIT",
+      "source": "PPP1R15A is regulated transcriptionally (Novoa et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "7e565eae-60e5-4f3a-b9a1-de35633eef65",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C29",
+      "claim": "Actin emerged as the prominent partner conserved across phyla in the PPP1R15 interactome.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin emerged as the prominent partner conserved across phyla (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mass spectrometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "ac38bcba-3306-4b28-a665-93de77c7d7c8",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C30",
+      "claim": "Drosophila dPPP1R15 associates with mammalian actin in stoichiometric amounts.",
+      "claim_type": "EXPLICIT",
+      "source": "Confidence in this association was bolstered by finding that Drosophila dPPP1R15 also associated with mammalian actin in stoichiometric amounts (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "deb2719a-74c1-4712-9ae1-d9d605229c7f",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C31",
+      "claim": "An N-terminal fusion of GST with the catalytic subunit PP1A expressed in HEK293T cells alongside PPP1R15A yielded a complex containing GST-PP1A, PPP1R15A, and actin upon glutathione-affinity chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "an N-terminal fusion of GST with the catalytic subunit PP1A expressed in HEK293T cells alongside PPP1R15A yielded a complex containing GST-PP1A, PPP1R15A, and actin upon glutathione-affinity chromatography (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "017ef11e-7ef3-4952-8919-ac12be451dd6",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C32",
+      "claim": "GFP-tagged PPP1R15A purified from HEK293T cells failed to associate with filamentous F-actin in a co-sedimentation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-tagged PPP1R15A purified from HEK293T cells failed to associate with filamentous F-actin in a co-sedimentation assay (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the co-sedimentation assay shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "810f5dab-b2a5-4f7a-a53a-c25323b20aa0",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C33",
+      "claim": "PPP1R15 selectively interacts with monomers of soluble G-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-tagged PPP1R15A purified from HEK293T cells failed to associate with filamentous F-actin in a co-sedimentation assay (Figure 2A) suggesting selective interaction between PPP1R15 and monomers of soluble G-actin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the co-sedimentation assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "7d7530be-8e47-432b-b0ba-1a09f80c7f21",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C34",
+      "claim": "Jasplakinolide stabilises F-actin filaments and depletes the cells of G-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Jasplakinolide, which stabilises F-actin filaments and depletes the cells of G-actin (Holzinger, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "e28bf096-b274-47f8-8625-65199bad2d7e",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C35",
+      "claim": "Jasplakinolide abolished the interaction between PPP1R15A and actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Jasplakinolide, which stabilises F-actin filaments and depletes the cells of G-actin (Holzinger, 2009), abolished the interaction between PPP1R15A and actin (Figure 2B, lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0fd3cbca-9858-4306-8268-0a94d33bbc9f",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C36",
+      "claim": "Latrunculin B binds to the nucleotide-binding cleft of actin, thus increasing the cytoplasmic pool of G-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, latrunculin B, which binds to the nucleotide-binding cleft of actin, thus increasing the cytoplasmic pool of G-actin (Nair et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "8eb27afb-20c6-4fcf-8288-09a8d9f08641",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C37",
+      "claim": "Latrunculin B potently enhanced the recovery of actin in complex with PPP1R15A.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, latrunculin B, which binds to the nucleotide-binding cleft of actin, thus increasing the cytoplasmic pool of G-actin (Nair et al., 2008), potently enhanced the recovery of actin in complex with PPP1R15A (Figure 2B, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "2575b097-debb-4235-8fe1-57988f5f8bc3",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C38",
+      "claim": "Cytochalasin D increases the cellular pool of G-actin by engaging actin's barbed end, competing with several known G-actin-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytochalasin D also increases the cellular pool of G-actin, but does so by engaging actin's barbed end, competing with several known G-actin-binding proteins (Miralles et al., 2003; Dominguez and Holmes, 2011; Shoji et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "305f762f-9057-4d51-9a3b-b51d03bd9322",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C39",
+      "claim": "Exposure to cytochalasin diminished the recovery of actin in complex with PPP1R15A.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytochalasin D also increases the cellular pool of G-actin, but does so by engaging actin's barbed end, competing with several known G-actin-binding proteins (Miralles et al., 2003; Dominguez and Holmes, 2011; Shoji et al., 2012); exposure to cytochalasin diminished the recovery of actin in complex with PPP1R15A (Figure 2B lane 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "8ecbf7dc-0053-4e27-be88-dcd5682a6e88",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C40",
+      "claim": "Serum starvation results in the conversion of F to G-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum starvation, which resulted in the anticipated conversion of F to G-actin (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the microscopy data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "ccba80bc-51d6-4702-8d8e-460e8289b3ca",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C41",
+      "claim": "Serum starvation enhanced recovery of actin in complex with PPP1R15A in NIH-3T3 cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum starvation, which resulted in the anticipated conversion of F to G-actin (Figure 2C) enhanced recovery of actin in complex with PPP1R15A in NIH-3T3 cell lysates (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "41dfbe52-c848-4b73-abc5-6857d58b08f4",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C42",
+      "claim": "On serum re-feeding, cables of F-actin re-formed within the cytoplasm and less actin was recovered in complex with PPP1R15A.",
+      "claim_type": "EXPLICIT",
+      "source": "On serum re-feeding, cables of F-actin re-formed within the cytoplasm and less actin was recovered in complex with PPP1R15A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "dc7795a0-5360-4ea6-ad03-6316ebfe15ca",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C43",
+      "claim": "The C-terminus of PPP1R15A (residues 501\u2013674) is sufficient for the association with actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion analysis showed that the C-terminus of PPP1R15A (residues 501\u2013674) was also sufficient for the association with actin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the deletion analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "2b440b4e-6845-4ec6-8934-8f6a36accfd2",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C44",
+      "claim": "Residues C-terminal to amino acid 615 of PPP1R15A are essential for actin association but not for PP1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Further deletion revealed that residues C-terminal to amino acid 615 were essential for actin association but not for PP1 binding, which was enfeebled but not abolished (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the deletion analysis shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "39c6351a-8da5-4f8e-91d2-8e527302cad3",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C45",
+      "claim": "Incorporation of five residues (W616\u2013R620 of human PPP1R15A) restored fully the recovery of actin in complex with PPP1R15A.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of five residues (W616\u2013R620 of human PPP1R15A) restored fully the recovery of actin in complex with PPP1R15A (Figure 3C lane 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "a429b52c-565a-4a9f-8e40-b743f1d80beb",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C46",
+      "claim": "The W616A and L619A double mutation strongly enfeebled actin recovery in complex with PPP1R15A.",
+      "claim_type": "EXPLICIT",
+      "source": "while the W616A and L619A double mutation strongly enfeebled actin recovery in complex with PPP1R15A (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mutagenesis data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "9580d8e1-fbaa-44c5-be29-e7330970404b",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C47",
+      "claim": "A V556E mutation of the RVxF motif all but abolishes PP1 binding and eIF2\u03b1 dephosphorylation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "A V556E mutation of the RVxF motif, which all but abolishes PP1 binding and eIF2\u03b1 dephosphorylation in vivo (Novoa et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "f9ccc7e5-3049-414a-a264-2eddb880417f",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C48",
+      "claim": "A V556E mutation of the RVxF motif attenuated recovery of actin in complex with PPP1R15A, but failed to abolish it altogether.",
+      "claim_type": "EXPLICIT",
+      "source": "A V556E mutation of the RVxF motif, which all but abolishes PP1 binding and eIF2\u03b1 dephosphorylation in vivo (Novoa et al., 2001), also attenuated recovery of actin in complex with PPP1R15A, but failed to abolish it altogether (Figure 3C, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mutagenesis data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "3d1b1432-df93-4478-8c2f-be203d6977a0",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C49",
+      "claim": "Treatment with jasplakinolide led to a marked loss of PP1 association with PPP1R15A in stressed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "however, treatment with jasplakinolide, which depleted the soluble pool of actin led to a marked loss of PP1 association with PPP1R15A in the stressed cells (compare lanes 2 and 3, Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the immunoprecipitation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "7c968e0c-3709-4cc0-9fc4-d0f3ab5a0eed",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C50",
+      "claim": "The PPP1R15A-PP1 interaction detected in stressed wild-type cells was attenuated by jasplakinolide-driven depletion of soluble actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the presence of other known PP1-actin complexes precludes meaningful interpretation of actin purified by microcystin affinity (Oliver et al., 2002; Kao et al., 2007), the PPP1R15A-PP1 interaction detected in stressed wild-type cells was attenuated by jasplakinolide-driven depletion of soluble actin (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the microcystin affinity purification data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "596fb193-c316-4823-bcbd-8366c1a2d064",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C51",
+      "claim": "Actin plays a role in the stability of the PPP1R15A-PP1 complex in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin's role in the stability of the PPP1R15A-PP1 complex was confirmed in HEK293T cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "7180e1a0-9397-4ce3-9172-231a70b7ad7a",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C52",
+      "claim": "Endogenous PPP1R15A associates with endogenous actin in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Scaling of input material to immunopurify similar quantities of endogenous and overexpressed PPP1R15A led to recovery of similar amounts of associated endogenous actin (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the immunoprecipitation data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "1b9fb2c7-55ef-43dc-9736-c08f9b1bb980",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C53",
+      "claim": "Depletion of cellular G-actin by exposure to jasplakinolide promoted a rapid increase in the levels of phosphorylated eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "A functional role for actin in PPP1R15 complexes was suggested by the observation that depletion of cellular G-actin by exposure to jasplakinolide promoted a rapid increase in the levels of phosphorylated eIF2\u03b1 (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "175a330b-cdd0-40a8-bb77-f7b72029532b",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C54",
+      "claim": "Thapsigargin depletes the ER of calcium and rapidly and transiently activates the ER stress-inducible kinase PERK.",
+      "claim_type": "EXPLICIT",
+      "source": "To extend these observations, cells were treated with the SERCA pump inhibitor thapsigargin, which depletes the ER of calcium and rapidly and transiently activates the ER stress-inducible kinase PERK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about thapsigargin's mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "31cab923-3bb8-4206-bd2a-26143053fa5b",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C55",
+      "claim": "Thapsigargin led to a robust yet transient phosphorylation of eIF2\u03b1 by PERK.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this led to a robust yet transient phosphorylation of eIF2\u03b1 by PERK (Figure 5C lanes 1\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "a5c6788d-2f9c-4527-a1ff-6f4fc6960e0b",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C56",
+      "claim": "In the presence of jasplakinolide, the elevated levels of phosphorylated eIF2\u03b1 induced by thapsigargin persisted.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of jasplakinolide, the elevated levels of phosphorylated eIF2\u03b1 induced by thapsigargin persisted (Figure 5C, lanes 7\u201312)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "dd904a02-d382-4d24-9fca-9242a002a249",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C57",
+      "claim": "Latrunculin B had no effect on the time course of eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "while latrunculin B had no effect on the time course of eIF2\u03b1 phosphorylation (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "82d9067b-351c-4566-948d-cbabb2eddd27",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C59",
+      "claim": "Enforced expression of PPP1R15A abrogated the phosphorylation of eIF2\u03b1 in response to thapsigargin.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, enforced expression of PPP1R15A abrogated the phosphorylation of eIF2\u03b1 in response to thapsigargin; however, jasplakinolide reversed the inhibitory effect of PPP1R15A over-expression restoring elevated levels of phosphorylated eIF2\u03b1 to thapsigargin-treated cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "278efda0-4757-4054-9cd4-a46fcdd8366f",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C60",
+      "claim": "Jasplakinolide reversed the inhibitory effect of PPP1R15A over-expression restoring elevated levels of phosphorylated eIF2\u03b1 to thapsigargin-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, enforced expression of PPP1R15A abrogated the phosphorylation of eIF2\u03b1 in response to thapsigargin; however, jasplakinolide reversed the inhibitory effect of PPP1R15A over-expression restoring elevated levels of phosphorylated eIF2\u03b1 to thapsigargin-treated cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "1e150f5c-52c5-42c0-9f57-40a08a79ec98",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C61",
+      "claim": "GSK2606414A inhibits the eIF2\u03b1 kinases PERK and PKR, but not GCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we made use of a small molecule eIF2\u03b1 kinase inhibitor, GSK2606414A (Axten et al., 2012). At the concentration used, this inhibits the eIF2\u03b1 kinases PERK and PKR, but not GCN2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature and experimental conditions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0b917ea3-a2cc-4eac-a0f7-cd50d3193724",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C62",
+      "claim": "Application of GSK2606414A to Gcn2\u2212/\u2212 fibroblasts rapidly abrogates eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, application of GSK2606414A to Gcn2\u2212/\u2212 fibroblasts rapidly abrogates eIF2\u03b1 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the properties of the inhibitor and the genotype of the cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "b13160c5-456e-4a3b-b54e-76f89ccd42dd",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C63",
+      "claim": "The decay of the phosphorylated eIF2\u03b1 signal after kinase inhibition was markedly attenuated by jasplakinolide.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of kinase activity, the subsequent decay of the phosphorylated eIF2\u03b1 signal reflects its de-phosphorylation (degradation of the protein is not observed over this time scale), which was markedly attenuated by jasplakinolide (Figure 6A, compare lanes 1\u20135 with lanes 6\u201310 and Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "5f91ba4c-b57b-48dc-8c14-5323e308530f",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C64",
+      "claim": "Jasplakinolide-mediated induction of ATF4 was abrogated in cells in which the serine 51 phosphorylation site of eIF2\u03b1 had been mutated to alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Jasplakinolide-mediated induction of ATF4 was abrogated in cells in which the serine 51 phosphorylation site of eIF2\u03b1 had been mutated to alanine (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0b6612b4-0ec3-4836-b70b-aaac7df14c7f",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C65",
+      "claim": "ATF4 was stabilised by jasplakinolide.",
+      "claim_type": "EXPLICIT",
+      "source": "ATF4, whose levels decline rapidly upon GSK2606414A-mediated shutdown of kinase activity, was also stabilised by jasplakinolide (Figure 6A, lowest panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "17663ce0-f0e0-4685-b472-6f5d0bdc1443",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C66",
+      "claim": "Levels of phosphorylated eIF2\u03b1 induced by jasplakinolide were undiminished in cells lacking any one of the four known eIF2\u03b1 kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of phosphorylated eIF2\u03b1 induced by jasplakinolide were undiminished in cells lacking any one of the four known eIF2\u03b1 kinases (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "ab0e378a-d3ec-49ae-8212-507645dcf0d9",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C67",
+      "claim": "The compound's effects on levels of phosphorylated eIF2\u03b1 reflect its workings on the dephosphorylation phase of the stress cycle and not to off-pathway stress culminating in kinase activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of phosphorylated eIF2\u03b1 induced by jasplakinolide were undiminished in cells lacking any one of the four known eIF2\u03b1 kinases (Figure 6C), suggesting that the compound's effects on levels of phosphorylated eIF2\u03b1 reflect its workings on the dephosphorylation phase of the stress cycle and not to off-pathway stress culminating in kinase activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data showing jasplakinolide effects in kinase knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "bbdf4df6-231b-4498-9f3f-7812c32fa73f",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C68",
+      "claim": "Actin was recovered in complex with both the inducible and constitutive mammalian PPP1R15 family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin was recovered in complex with both the inducible and constitutive mammalian PPP1R15 family members (Figures 1 and 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figures 1 and 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "481edfff-7257-48c5-bc81-5bb34c3b2056",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C69",
+      "claim": "Enhanced levels of phosphorylated eIF2\u03b1 in jasplakinolide-treated cells and the synergistic effects of depleting G-actin on the response to thapsigargin were observed in wild-type cells and in cells lacking either PPP1R15A or PPP1R15B-directed eIF2\u03b1 dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced levels of phosphorylated eIF2\u03b1 in jasplakinolide-treated cells and the synergistic effects of depleting G-actin on the response to thapsigargin were observed in wild-type cells and in cells lacking either PPP1R15A or PPP1R15B-directed eIF2\u03b1 dephosphorylation (Figure 7B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figures 7B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "059d9f0e-3fa6-4578-98f2-51ee89e14893",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C70",
+      "claim": "G-actin plays a functional role in holophosphatases constituted with either regulatory subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that G-actin plays a functional role in holophosphatases constituted with either regulatory subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing effects in cells with different PPP1R15 genotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "8c5ce341-3895-48f0-848c-1c3f01aa37f9",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C71",
+      "claim": "Less actin and PP1 were recovered in complex with tagged PPP1R15A from jasplakinolide-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Less actin and PP1 were recovered in complex with tagged PPP1R15A from jasplakinolide-treated cells (whilst HSP70 binding was unaffected) (Figure 8A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0036bb42-b7df-495b-8523-872a15df2c5b",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C72",
+      "claim": "The eIF2\u03b1-directed phosphatase activity of the purified complexes was diminished in jasplakinolide-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and the eIF2\u03b1-directed phosphatase activity of the purified complexes was likewise diminished (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the in vitro phosphatase assay data shown in Figures 8A and 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "22509f78-6d84-4db7-86db-bd9585735ba3",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C73",
+      "claim": "The decline in PPP1R15A levels in cells exposed to the translational inhibitor cycloheximide was unaffected by the presence of jasplakinolide.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex formation with PP1 contributes to dPPP1R15 stability; however, the decline in PPP1R15A levels in cells exposed to the translational inhibitor cycloheximide, was unaffected by the presence of jasplakinolide (Figure 8C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figures 8C and 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "ad69ffb0-2167-47ef-9923-f2fd9aac5a0a",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C74",
+      "claim": "Stabilisation of a complex between PPP1R15 and PP1 dominates G-actin's role in this experimental system.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that stabilisation of a complex between PPP1R15 and PP1 dominates G-actin's role in this experimental system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cycloheximide chase experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "4ab19a02-288c-47f3-81d2-230325e85ea4",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C75",
+      "claim": "Induction of eGFP-PPP1R15B (1\u2013146)-mDia2 increased polymerisation of actin adjacent to the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of eGFP-PPP1R15B (1\u2013146)-mDia2 increased polymerisation of actin adjacent to the ER, as indicated by co-localisation of GFP fluorescence with phalloidin staining (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the microscopy data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "7d488641-ce7e-43c5-8abd-b96eb0c5435e",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C76",
+      "claim": "Only the mDia2 construct led to the induction of ATF4.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblot confirmed the expression of each fusion protein on treatment with doxycycline, but only the mDia2 construct led to the induction of ATF4 (Figure 9B compare lanes 4\u20136 with 13\u201315).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "9de88fef-2b22-4c5e-950d-81257a909e33",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C77",
+      "claim": "ISRIB blocked formin-mediated induction of ATF4.",
+      "claim_type": "EXPLICIT",
+      "source": "ISRIB, a small molecule that renders cells unresponsive to eIF2\u03b1 phosphorylation (Sidrauski et al., 2013), blocked formin-mediated induction of ATF4 (Figure 9B, compare lanes 15 and 16)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "f34ee425-1e1e-45bb-9cf2-25d51e11f356",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C78",
+      "claim": "Actin polymerisation in the vicinity of the ER altered the dynamics of the ISR in response to gradually accruing ER stress induced by tunicamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin polymerisation in the vicinity of the ER also altered the dynamics of the ISR in response to gradually accruing ER stress induced by the glycosylation inhibitor tunicamycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 9C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "22b9db8b-d1ae-4010-8838-306292820ab3",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C79",
+      "claim": "In cells expressing ER-targeted mDia2, tunicamycin led to a sustained drop in protein synthesis associated with a sustained increase in eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in cells expressing ER-targeted mDia2, tunicamycin led to a sustained drop in protein synthesis associated with a sustained increase in eIF2\u03b1 phosphorylation (Figure 9C, compare lanes 8 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 9C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "c13829f5-fbbb-46f9-9c5e-66e862604f4e",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C80",
+      "claim": "G-actin is an important regulator of PPP1R15-mediated eIF2\u03b1 dephosphorylation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings establish G-actin as an important regulator of PPP1R15-mediated eIF2\u03b1 dephosphorylation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the collective experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "5c86e6c3-9cd6-4aa2-a0e0-a5d408d1dba2",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C81",
+      "claim": "Addition of actin is sufficient to endow the PPP1R15-PP1 complex with selectivity towards eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in vitro experiments in the accompanying manuscript demonstrate that addition of actin is sufficient to endow the PPP1R15-PP1 complex with selectivity towards eIF2\u03b1 (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an accompanying manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "78ccef89-02d2-49ef-bcaf-b12357642f18",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C82",
+      "claim": "Many actin-binding proteins interact with a hydrophobic target-binding cleft between subdomains I and III of the actin monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Many actin-binding proteins including MAL interact with a hydrophobic target-binding cleft between subdomains I and III of the actin monomer (Mouilleron et al., 2008; Dominguez and Holmes, 2011; Shoji et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "61fee796-a9ee-4ecd-ba43-9f5d4d25bc1b",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C83",
+      "claim": "The hydrophobic target-binding cleft on actin is blocked by cytochalasin D.",
+      "claim_type": "EXPLICIT",
+      "source": "This site is blocked by cytochalasin D, which inhibits such interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cytochalasin D's mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "ded9a199-6e60-40fb-8ff9-3d4716214087",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C84",
+      "claim": "The observation that cytochalasin D diminishes the recovery of actin in complex with PPP1R15 is consistent with interaction via the hydrophobic target-binding cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that cytochalasin D diminishes the recovery of actin in complex with PPP1R15, is consistent with interaction via the hydrophobic target-binding cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cytochalasin D experimental results and knowledge of its mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0e3ee513-fa7e-46a9-9963-d382d1abe8d4",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C85",
+      "claim": "A crystal structure obtained for the binary complex of PPP1R15B and PP1 demonstrated that the N-terminal half of PPP1R15's functional core extensively engages the surface of PP1.",
+      "claim_type": "EXPLICIT",
+      "source": "A crystal structure obtained for the binary complex of PPP1R15B and PP1 demonstrated that the N-terminal half of PPP1R15's functional core extensively engages the surface of PP1 following an itinerary previously observed for the regulatory subunit PPP1R9/spinophilin (Ragusa et al., 2010; Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "56d01a8f-258e-49a5-9c68-f91bd0d4b17a",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C86",
+      "claim": "The C-terminal portion of PPP1R15's functional core was not observed in a high-resolution crystal structure of the PPP1R15B-PP1 binary complex, suggesting that this portion of PPP1R15B remained unstructured in the absence of actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the C-terminal portion of PPP1R15's functional core, implicated here in actin binding, was not observed in a high-resolution crystal structure of the PPP1R15B-PP1 binary complex, suggesting that this portion of PPP1R15B remained unstructured in the absence of actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural data cited from the accompanying manuscript.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0a4a9ba0-e38b-41d1-aba4-ebae26e30c84",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C87",
+      "claim": "Under normal circumstances G-actin is not limiting to eIF2\u03b1 dephosphorylation in cultured MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "It would appear that under normal circumstances G-actin is not limiting to eIF2\u03b1 dephosphorylation in cultured MEFs, as latrunculin B, which enhances the pool of PPP1R15 binding-competent G-actin in some cell types, has no measurable effect on phosphorylated eIF2\u03b1 (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the latrunculin B experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "e325722f-726c-4d26-b954-dbddd3921830",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C88",
+      "claim": "Regulation of eIF2\u03b1 phosphatases via the binding of G-actin might plausibly play a role in biological processes that are accompanied by changes in the ratio of G:F actin in other differentiated cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, regulation of eIF2\u03b1 phosphatases via the binding of G-actin might plausibly play a role in biological processes that are accompanied by changes in the ratio of G:F actin in other differentiated cell types, for example, in circumstances of cell migration, axonal guidance, or synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential biological roles.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "9796a64c-d1ca-44c3-87e0-4e1a28a2a4d4",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C89",
+      "claim": "There is evidence for crosstalk between the ISR and memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter are particularly attractive given the evidence for crosstalk between the ISR and memory formation (Costa-Mattioli et al., 2007; Ma et al., 2013; Sidrauski et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0ee2a0f2-1466-4164-a2ca-1e501b2a0adc",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C90",
+      "claim": "Yeasts rely on direct recruitment of the catalytic phosphatase subunit (Glc7p) to the eIF2 substrate, with no PPP1R15 intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeasts rely on direct recruitment of the catalytic phosphatase subunit (Glc7p) to the eIF2 substrate, with no PPP1R15 intermediate (Rojas et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "dd37e051-1d1f-4565-893f-4e02b904c652",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C91",
+      "claim": "PPP1R15 family proteins are apparent only in complex animals: insects and vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "while PPP1R15 family proteins are apparent only in complex animals: insects and vertebrates (Novoa et al., 2001; Jousse et al., 2003; Malzer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "a0b5676b-26fd-435b-a95b-5afaebd77e50",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C92",
+      "claim": "PPP1R15B, which is expressed constitutively, provides a constant background of eIF2\u03b1 phosphatase activity that is augmented by transcriptional induction of PPP1R15A during later stages of the ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models suggest that PPP1R15B, which is expressed constitutively, provides a constant background of eIF2\u03b1 phosphatase activity that is augmented by transcriptional induction of PPP1R15A during later stages of the ISR (Jousse et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "8c216a0a-1488-4335-8237-70f467d3be99",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "claim_id": "C93",
+      "claim": "Both PPP1R15 isoforms are poised to undergo post-translational regulation through changes in the polymeric status of actin.",
+      "claim_type": "EXPLICIT",
+      "source": "This study reveals that both PPP1R15 isoforms are poised to undergo post-translational regulation through changes in the polymeric status of actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4f17d69-5753-41c3-8a0f-47741da0fdba",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An unbiased proteomic screen identified G-actin as a conserved binding partner of PPP1R15 family members across mammalian and Drosophila species. Mass spectrometry analysis of affinity-purified PPP1R15A, PPP1R15B, and dPPP1R15 complexes consistently recovered actin, and this interaction was confirmed using multiple tag combinations and purification strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29, C30, and C31 are well-supported by the mass spectrometry data shown in Figure 1A-D. The identification of actin across multiple PPP1R15 family members from different species, using different tags and purification methods, provides strong converging evidence for this interaction. The data meet the criteria for an unbiased discovery (>2-fold enrichment, \u22655 peptides).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "91c784af-1b49-402b-9c03-2c8e90e3807b",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PPP1R15 selectively interacts with monomeric G-actin rather than filamentous F-actin. This selectivity was demonstrated by co-sedimentation assays and pharmacological manipulation of actin polymerization status using jasplakinolide (which depletes G-actin and abolishes the interaction), latrunculin B (which increases G-actin and enhances the interaction), and cytochalasin D (which increases G-actin but blocks the hydrophobic binding cleft and diminishes the interaction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 are supported by the experimental data in Figure 2A-B. The co-sedimentation assay (C32) directly demonstrates lack of F-actin binding, while the pharmacological experiments with three different actin-modulating compounds provide converging evidence for G-actin selectivity. The differential effects of latrunculin B versus cytochalasin D (C36-C39) further support a specific mode of G-actin engagement via the hydrophobic cleft.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "5852fece-39b9-4184-88cb-e041d39ad962",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Physiological changes in actin polymerization status regulate the PPP1R15A-actin interaction. Serum starvation, which converts F-actin to G-actin, enhanced recovery of actin in complex with PPP1R15A, while serum re-feeding reversed this effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by the microscopy and biochemical data in Figures 2C-D. The experiments demonstrate that physiologically relevant manipulations (serum starvation/re-feeding) that alter the G:F actin ratio correspondingly affect the PPP1R15A-actin interaction, establishing physiological relevance beyond pharmacological perturbations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "cac474bc-4a98-447f-824a-bd2abbd55b6f",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "G-actin associates with the conserved C-terminal functional core of PPP1R15A, with residues C-terminal to amino acid 615 being essential for actin binding. A five-residue motif (W616-R620) is sufficient to restore actin binding, and the W616A/L619A double mutation strongly impairs actin recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C43-C46 are well-supported by the deletion and mutagenesis analysis in Figure 3. The systematic truncation experiments clearly map the actin-binding region, and the rescue experiment with the five-residue motif (C45) along with the loss-of-function mutation (C46) provide strong evidence for the specific residues involved. The data are internally consistent and use appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "c9aebece-c641-4d2e-a8ab-aaa46ad70dd0",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A V556E mutation in the RVxF motif of PPP1R15A, which abolishes PP1 binding, also attenuates but does not completely abolish actin binding, suggesting some independence between PP1 and actin binding to PPP1R15A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by the mutagenesis data in Figure 3C. The partial effect of the V556E mutation on actin binding (attenuated but not abolished) compared to its complete effect on PP1 binding suggests that actin and PP1 can bind somewhat independently, though the data also suggest cooperative binding in the ternary complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "b11fa88c-65d4-44d5-a399-ae8f6fe15d79",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "G-actin depletion by jasplakinolide destabilizes the endogenous PPP1R15A-PP1 complex. Treatment with jasplakinolide led to marked loss of PP1 association with PPP1R15A in stressed cells, as demonstrated by immunoprecipitation and microcystin affinity purification experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C49-C51 are supported by the data in Figure 4A-C. The experiments use multiple approaches (immunoprecipitation of PPP1R15A, microcystin affinity purification of PP1) and cell types (MEFs, HEK293T) to demonstrate that G-actin depletion destabilizes the PPP1R15A-PP1 complex. The use of Ppp1r15a mutant cells as a negative control strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "858c04b8-4e75-411e-9226-63a813e374f5",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Endogenous PPP1R15A associates with endogenous actin in HEK293T cells at physiologically relevant stoichiometry, as demonstrated by scaling immunoprecipitation inputs to recover similar amounts of endogenous and overexpressed PPP1R15A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by the careful quantitative experiment in Figure 4D. By scaling the input to immunoprecipitate similar amounts of endogenous versus overexpressed PPP1R15A and observing similar amounts of associated actin, the authors provide evidence that the interaction occurs at endogenous protein levels and is not an artifact of overexpression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "06fe79e3-d39d-4c09-b4c5-fcfa6990652c",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Depletion of cellular G-actin by jasplakinolide promotes increased levels of phosphorylated eIF2\u03b1 and prolongs eIF2\u03b1 phosphorylation induced by ER stress. In contrast, latrunculin B had no effect on eIF2\u03b1 phosphorylation kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by the data in Figures 5A-C and Figure 5\u2014figure supplement 1. The experiments demonstrate that G-actin depletion impairs eIF2\u03b1 dephosphorylation both basally and during ER stress, while increasing G-actin with latrunculin B has no effect, suggesting G-actin is not limiting under normal conditions in MEFs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "64509493-90b3-45bc-a9c2-2284e02739ac",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Enforced expression of PPP1R15A abrogates eIF2\u03b1 phosphorylation in response to thapsigargin, but jasplakinolide reverses this inhibitory effect, restoring elevated levels of phosphorylated eIF2\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by the data in Figure 5D using a tetracycline-inducible system. The experiment demonstrates that even when PPP1R15A is overexpressed, G-actin depletion can still impair its phosphatase activity, providing strong evidence for G-actin's functional role in the phosphatase complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "2def045a-3599-46f8-8b32-e0c255fe57c6",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Using a kinase inhibitor approach to isolate the dephosphorylation phase, jasplakinolide markedly attenuated the decay of phosphorylated eIF2\u03b1 and stabilized ATF4 levels. The jasplakinolide-mediated effects on ATF4 were abrogated in eIF2\u03b1 S51A mutant cells, confirming dependence on eIF2\u03b1 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by the data in Figures 6A-B and Figure 6\u2014figure supplement 1. The use of GSK2606414A to block kinase activity allows selective measurement of phosphatase activity, and the attenuation of eIF2\u03b1 dephosphorylation by jasplakinolide provides direct evidence for G-actin's role in phosphatase function. The eIF2\u03b1 S51A control validates the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "b443ac88-8372-4fb0-ac6f-455f9a628d67",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Levels of phosphorylated eIF2\u03b1 induced by jasplakinolide were undiminished in cells lacking any one of the four known eIF2\u03b1 kinases, indicating that jasplakinolide's effects reflect impaired dephosphorylation rather than off-target kinase activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by the data in Figure 6C showing that jasplakinolide increases phospho-eIF2\u03b1 in cells lacking PKR, HRI, PERK, or GCN2. This systematic analysis across all four kinase knockouts provides strong evidence that the effect is on the phosphatase rather than kinase side of the pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "4fe81cba-ea92-473a-9a6f-40efa6132529",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "G-actin plays a functional role in holophosphatases containing either PPP1R15A or PPP1R15B. Enhanced eIF2\u03b1 phosphorylation by jasplakinolide was observed in wild-type cells and in cells lacking either PPP1R15A or PPP1R15B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by the data in Figures 1, 7A-D. The experiments demonstrate that both PPP1R15 isoforms bind actin and that G-actin depletion affects eIF2\u03b1 phosphorylation in cells with different PPP1R15 genotypes, indicating that G-actin regulates both the constitutive (PPP1R15B) and inducible (PPP1R15A) phosphatase complexes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "8949c978-d743-42e7-8f21-e4a0c343d91e",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The abundance and eIF2\u03b1-directed phosphatase activity of the PPP1R15-PP1-G-actin complex are responsive to changes in actin polymerization status. Jasplakinolide treatment reduced recovery of actin and PP1 in complex with PPP1R15A and diminished the in vitro phosphatase activity of purified complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C71, and C72 are supported by the in vitro phosphatase assay data in Figure 8A-B. The experiments directly demonstrate that G-actin depletion reduces both complex formation and enzymatic activity, providing a mechanistic link between actin binding and phosphatase function. The inclusion of HSP70 as an unaffected control strengthens the specificity of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "2cf55601-c35f-40d2-83a1-11dcddce484d",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The decline in PPP1R15A levels during cycloheximide chase was unaffected by jasplakinolide, indicating that stabilization of the PPP1R15-PP1 complex dominates G-actin's role rather than effects on PPP1R15A protein stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are supported by the cycloheximide chase data in Figure 8C-D. The experiment addresses a potential alternative mechanism (protein stability) and rules it out, strengthening the conclusion that G-actin's primary role is in complex stabilization and/or activity rather than regulating PPP1R15A turnover.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "d216fff5-b32c-4b5c-9b3e-9bd6f5093fa1",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Localized G-actin depletion at sites enriched for PPP1R15 enhanced eIF2\u03b1 phosphorylation and the downstream ISR. Expression of ER-targeted mDia2 formin increased local actin polymerization and led to ATF4 induction and sustained eIF2\u03b1 phosphorylation during ER stress, effects that were blocked by ISRIB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C75-C79 are supported by the mDia2 experiments in Figure 9. The use of ER-targeted formin to locally deplete G-actin provides strong evidence that localized changes in actin dynamics can regulate the ISR. The ISRIB control (C77) validates that the effects are mediated through eIF2\u03b1 phosphorylation. The experiments elegantly demonstrate spatial regulation of the phosphatase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "0e8346f9-3fa9-4418-97db-e362bb7b0e35",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "G-actin is an important regulator of PPP1R15-mediated eIF2\u03b1 dephosphorylation in vivo, and both PPP1R15 isoforms are poised to undergo post-translational regulation through changes in the polymeric status of actin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C93 represent the main conclusions drawn from the collective experimental findings (C3-C79). The multiple lines of evidence\u2014biochemical interaction studies, pharmacological manipulations, genetic approaches, in vitro activity assays, and localized perturbations\u2014converge to support these conclusions. The findings establish a novel regulatory mechanism linking actin dynamics to ISR control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "b6cd5eb2-5e89-4a7b-acb1-07bad7dcee8d",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Addition of actin is sufficient to endow the PPP1R15-PP1 complex with selectivity towards eIF2\u03b1, as demonstrated in an accompanying manuscript.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by citation to an accompanying manuscript (Chen et al., 2015). While the data are not presented in this manuscript, the citation to a companion paper is appropriate for supporting this mechanistic claim about substrate specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "668ba326-8904-40f9-a6c4-b8b0661d006d",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The observation that cytochalasin D diminishes recovery of actin in complex with PPP1R15 is consistent with interaction via the hydrophobic target-binding cleft between subdomains I and III of actin, a site known to be blocked by cytochalasin D.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 integrate established knowledge about actin-binding proteins (C82-C83) with the experimental observation from this study (C39) to infer the likely binding mode. The inference is reasonable given the differential effects of latrunculin B versus cytochalasin D, though direct structural evidence would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "9853aae3-54ce-42d7-84ab-c8fe1c9696cd",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Structural studies of the PPP1R15B-PP1 binary complex show that the N-terminal half of PPP1R15's functional core engages PP1, while the C-terminal portion implicated in actin binding was not observed, suggesting it remains unstructured in the absence of actin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 are supported by citations to structural studies (Ragusa et al., 2010; Chen et al., 2015). The inference that the C-terminal region is unstructured in the absence of actin (C86) is reasonable given its absence from the crystal structure, though this remains somewhat speculative without additional biophysical characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "a1f6902d-a781-4195-b17a-fcbb7f4cb2b9",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Under normal circumstances, G-actin is not limiting to eIF2\u03b1 dephosphorylation in cultured MEFs, as latrunculin B has no measurable effect on phosphorylated eIF2\u03b1 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by the latrunculin B data in Figure 5\u2014figure supplement 1. The lack of effect when G-actin is increased suggests that G-actin is not rate-limiting under basal conditions in this cell type, though it becomes functionally important when depleted or in other cellular contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "d96d3be9-95e4-4c5a-8c9a-67408e5455a3",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Regulation of eIF2\u03b1 phosphatases via G-actin binding might play a role in biological processes involving changes in G:F actin ratio in differentiated cell types, such as cell migration, axonal guidance, or synaptic plasticity, particularly given evidence for crosstalk between the ISR and memory formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89 are speculative about potential biological roles beyond the experimental systems tested. While C89 cites evidence for ISR-memory crosstalk, C88 is explicitly presented as speculation ('might plausibly play a role'). These represent reasonable hypotheses for future work but are not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    },
+    {
+      "id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0",
+      "content_id": "8d2b1a6a-b517-47e6-9d01-adff812be0be",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Background claims establishing the ISR pathway, its regulation by eIF2\u03b1 kinases and PPP1R15-PP1 phosphatases, the existence of PPP1R15 family members across species, their domain organization and functions, and phenotypes of PPP1R15 loss-of-function mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C28, and C90-C92 represent established knowledge about the ISR pathway and PPP1R15 family, supported by citations to prior literature. These provide essential context for the current study but are not novel findings. The claims are well-established in the field and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:43:23.727558Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b64b21f4-5906-4552-8808-599506e3fa8e",
+      "result_id": "d4f17d69-5753-41c3-8a0f-47741da0fdba"
+    },
+    {
+      "claim_id": "7e565eae-60e5-4f3a-b9a1-de35633eef65",
+      "result_id": "d4f17d69-5753-41c3-8a0f-47741da0fdba"
+    },
+    {
+      "claim_id": "ac38bcba-3306-4b28-a665-93de77c7d7c8",
+      "result_id": "d4f17d69-5753-41c3-8a0f-47741da0fdba"
+    },
+    {
+      "claim_id": "deb2719a-74c1-4712-9ae1-d9d605229c7f",
+      "result_id": "d4f17d69-5753-41c3-8a0f-47741da0fdba"
+    },
+    {
+      "claim_id": "017ef11e-7ef3-4952-8919-ac12be451dd6",
+      "result_id": "91c784af-1b49-402b-9c03-2c8e90e3807b"
+    },
+    {
+      "claim_id": "810f5dab-b2a5-4f7a-a53a-c25323b20aa0",
+      "result_id": "91c784af-1b49-402b-9c03-2c8e90e3807b"
+    },
+    {
+      "claim_id": "7d7530be-8e47-432b-b0ba-1a09f80c7f21",
+      "result_id": "91c784af-1b49-402b-9c03-2c8e90e3807b"
+    },
+    {
+      "claim_id": "e28bf096-b274-47f8-8625-65199bad2d7e",
+      "result_id": "91c784af-1b49-402b-9c03-2c8e90e3807b"
+    },
+    {
+      "claim_id": "0fd3cbca-9858-4306-8268-0a94d33bbc9f",
+      "result_id": "91c784af-1b49-402b-9c03-2c8e90e3807b"
+    },
+    {
+      "claim_id": "8eb27afb-20c6-4fcf-8288-09a8d9f08641",
+      "result_id": "91c784af-1b49-402b-9c03-2c8e90e3807b"
+    },
+    {
+      "claim_id": "2575b097-debb-4235-8fe1-57988f5f8bc3",
+      "result_id": "91c784af-1b49-402b-9c03-2c8e90e3807b"
+    },
+    {
+      "claim_id": "305f762f-9057-4d51-9a3b-b51d03bd9322",
+      "result_id": "91c784af-1b49-402b-9c03-2c8e90e3807b"
+    },
+    {
+      "claim_id": "8ecbf7dc-0053-4e27-be88-dcd5682a6e88",
+      "result_id": "5852fece-39b9-4184-88cb-e041d39ad962"
+    },
+    {
+      "claim_id": "ccba80bc-51d6-4702-8d8e-460e8289b3ca",
+      "result_id": "5852fece-39b9-4184-88cb-e041d39ad962"
+    },
+    {
+      "claim_id": "41dfbe52-c848-4b73-abc5-6857d58b08f4",
+      "result_id": "5852fece-39b9-4184-88cb-e041d39ad962"
+    },
+    {
+      "claim_id": "0fdbf3fd-3aa7-4a1e-97bf-67aefd62fba9",
+      "result_id": "cac474bc-4a98-447f-824a-bd2abbd55b6f"
+    },
+    {
+      "claim_id": "dc7795a0-5360-4ea6-ad03-6316ebfe15ca",
+      "result_id": "cac474bc-4a98-447f-824a-bd2abbd55b6f"
+    },
+    {
+      "claim_id": "2b440b4e-6845-4ec6-8934-8f6a36accfd2",
+      "result_id": "cac474bc-4a98-447f-824a-bd2abbd55b6f"
+    },
+    {
+      "claim_id": "39c6351a-8da5-4f8e-91d2-8e527302cad3",
+      "result_id": "cac474bc-4a98-447f-824a-bd2abbd55b6f"
+    },
+    {
+      "claim_id": "a429b52c-565a-4a9f-8e40-b743f1d80beb",
+      "result_id": "cac474bc-4a98-447f-824a-bd2abbd55b6f"
+    },
+    {
+      "claim_id": "9580d8e1-fbaa-44c5-be29-e7330970404b",
+      "result_id": "c9aebece-c641-4d2e-a8ab-aaa46ad70dd0"
+    },
+    {
+      "claim_id": "f9ccc7e5-3049-414a-a264-2eddb880417f",
+      "result_id": "c9aebece-c641-4d2e-a8ab-aaa46ad70dd0"
+    },
+    {
+      "claim_id": "1511c5a7-abd0-4abc-ba1f-869303b3cc1c",
+      "result_id": "b11fa88c-65d4-44d5-a399-ae8f6fe15d79"
+    },
+    {
+      "claim_id": "3d1b1432-df93-4478-8c2f-be203d6977a0",
+      "result_id": "b11fa88c-65d4-44d5-a399-ae8f6fe15d79"
+    },
+    {
+      "claim_id": "7c968e0c-3709-4cc0-9fc4-d0f3ab5a0eed",
+      "result_id": "b11fa88c-65d4-44d5-a399-ae8f6fe15d79"
+    },
+    {
+      "claim_id": "596fb193-c316-4823-bcbd-8366c1a2d064",
+      "result_id": "b11fa88c-65d4-44d5-a399-ae8f6fe15d79"
+    },
+    {
+      "claim_id": "7180e1a0-9397-4ce3-9172-231a70b7ad7a",
+      "result_id": "858c04b8-4e75-411e-9226-63a813e374f5"
+    },
+    {
+      "claim_id": "1b9fb2c7-55ef-43dc-9736-c08f9b1bb980",
+      "result_id": "06fe79e3-d39d-4c09-b4c5-fcfa6990652c"
+    },
+    {
+      "claim_id": "175a330b-cdd0-40a8-bb77-f7b72029532b",
+      "result_id": "06fe79e3-d39d-4c09-b4c5-fcfa6990652c"
+    },
+    {
+      "claim_id": "31cab923-3bb8-4206-bd2a-26143053fa5b",
+      "result_id": "06fe79e3-d39d-4c09-b4c5-fcfa6990652c"
+    },
+    {
+      "claim_id": "a5c6788d-2f9c-4527-a1ff-6f4fc6960e0b",
+      "result_id": "06fe79e3-d39d-4c09-b4c5-fcfa6990652c"
+    },
+    {
+      "claim_id": "dd904a02-d382-4d24-9fca-9242a002a249",
+      "result_id": "06fe79e3-d39d-4c09-b4c5-fcfa6990652c"
+    },
+    {
+      "claim_id": "82d9067b-351c-4566-948d-cbabb2eddd27",
+      "result_id": "64509493-90b3-45bc-a9c2-2284e02739ac"
+    },
+    {
+      "claim_id": "278efda0-4757-4054-9cd4-a46fcdd8366f",
+      "result_id": "64509493-90b3-45bc-a9c2-2284e02739ac"
+    },
+    {
+      "claim_id": "1e150f5c-52c5-42c0-9f57-40a08a79ec98",
+      "result_id": "2def045a-3599-46f8-8b32-e0c255fe57c6"
+    },
+    {
+      "claim_id": "0b917ea3-a2cc-4eac-a0f7-cd50d3193724",
+      "result_id": "2def045a-3599-46f8-8b32-e0c255fe57c6"
+    },
+    {
+      "claim_id": "b13160c5-456e-4a3b-b54e-76f89ccd42dd",
+      "result_id": "2def045a-3599-46f8-8b32-e0c255fe57c6"
+    },
+    {
+      "claim_id": "5f91ba4c-b57b-48dc-8c14-5323e308530f",
+      "result_id": "2def045a-3599-46f8-8b32-e0c255fe57c6"
+    },
+    {
+      "claim_id": "0b6612b4-0ec3-4836-b70b-aaac7df14c7f",
+      "result_id": "2def045a-3599-46f8-8b32-e0c255fe57c6"
+    },
+    {
+      "claim_id": "17663ce0-f0e0-4685-b472-6f5d0bdc1443",
+      "result_id": "b443ac88-8372-4fb0-ac6f-455f9a628d67"
+    },
+    {
+      "claim_id": "ab0e378a-d3ec-49ae-8212-507645dcf0d9",
+      "result_id": "b443ac88-8372-4fb0-ac6f-455f9a628d67"
+    },
+    {
+      "claim_id": "bbdf4df6-231b-4498-9f3f-7812c32fa73f",
+      "result_id": "4fe81cba-ea92-473a-9a6f-40efa6132529"
+    },
+    {
+      "claim_id": "481edfff-7257-48c5-bc81-5bb34c3b2056",
+      "result_id": "4fe81cba-ea92-473a-9a6f-40efa6132529"
+    },
+    {
+      "claim_id": "059d9f0e-3fa6-4578-98f2-51ee89e14893",
+      "result_id": "4fe81cba-ea92-473a-9a6f-40efa6132529"
+    },
+    {
+      "claim_id": "556f1ea9-cb4c-4458-aa8a-36f6c8477587",
+      "result_id": "8949c978-d743-42e7-8f21-e4a0c343d91e"
+    },
+    {
+      "claim_id": "25b85efb-b2f9-4292-b7c3-737b1cb311e3",
+      "result_id": "8949c978-d743-42e7-8f21-e4a0c343d91e"
+    },
+    {
+      "claim_id": "8c5ce341-3895-48f0-848c-1c3f01aa37f9",
+      "result_id": "8949c978-d743-42e7-8f21-e4a0c343d91e"
+    },
+    {
+      "claim_id": "0036bb42-b7df-495b-8523-872a15df2c5b",
+      "result_id": "8949c978-d743-42e7-8f21-e4a0c343d91e"
+    },
+    {
+      "claim_id": "22509f78-6d84-4db7-86db-bd9585735ba3",
+      "result_id": "2cf55601-c35f-40d2-83a1-11dcddce484d"
+    },
+    {
+      "claim_id": "ad69ffb0-2167-47ef-9923-f2fd9aac5a0a",
+      "result_id": "2cf55601-c35f-40d2-83a1-11dcddce484d"
+    },
+    {
+      "claim_id": "454a6835-eb79-4e5b-b434-00d55423b797",
+      "result_id": "d216fff5-b32c-4b5c-9b3e-9bd6f5093fa1"
+    },
+    {
+      "claim_id": "4ab19a02-288c-47f3-81d2-230325e85ea4",
+      "result_id": "d216fff5-b32c-4b5c-9b3e-9bd6f5093fa1"
+    },
+    {
+      "claim_id": "7d488641-ce7e-43c5-8abd-b96eb0c5435e",
+      "result_id": "d216fff5-b32c-4b5c-9b3e-9bd6f5093fa1"
+    },
+    {
+      "claim_id": "9de88fef-2b22-4c5e-950d-81257a909e33",
+      "result_id": "d216fff5-b32c-4b5c-9b3e-9bd6f5093fa1"
+    },
+    {
+      "claim_id": "f34ee425-1e1e-45bb-9cf2-25d51e11f356",
+      "result_id": "d216fff5-b32c-4b5c-9b3e-9bd6f5093fa1"
+    },
+    {
+      "claim_id": "22b9db8b-d1ae-4010-8838-306292820ab3",
+      "result_id": "d216fff5-b32c-4b5c-9b3e-9bd6f5093fa1"
+    },
+    {
+      "claim_id": "c13829f5-fbbb-46f9-9c5e-66e862604f4e",
+      "result_id": "0e8346f9-3fa9-4418-97db-e362bb7b0e35"
+    },
+    {
+      "claim_id": "8c216a0a-1488-4335-8237-70f467d3be99",
+      "result_id": "0e8346f9-3fa9-4418-97db-e362bb7b0e35"
+    },
+    {
+      "claim_id": "5c86e6c3-9cd6-4aa2-a0e0-a5d408d1dba2",
+      "result_id": "b6cd5eb2-5e89-4a7b-acb1-07bad7dcee8d"
+    },
+    {
+      "claim_id": "78ccef89-02d2-49ef-bcaf-b12357642f18",
+      "result_id": "668ba326-8904-40f9-a6c4-b8b0661d006d"
+    },
+    {
+      "claim_id": "61fee796-a9ee-4ecd-ba43-9f5d4d25bc1b",
+      "result_id": "668ba326-8904-40f9-a6c4-b8b0661d006d"
+    },
+    {
+      "claim_id": "ded9a199-6e60-40fb-8ff9-3d4716214087",
+      "result_id": "668ba326-8904-40f9-a6c4-b8b0661d006d"
+    },
+    {
+      "claim_id": "0e3ee513-fa7e-46a9-9963-d382d1abe8d4",
+      "result_id": "9853aae3-54ce-42d7-84ab-c8fe1c9696cd"
+    },
+    {
+      "claim_id": "56d01a8f-258e-49a5-9c68-f91bd0d4b17a",
+      "result_id": "9853aae3-54ce-42d7-84ab-c8fe1c9696cd"
+    },
+    {
+      "claim_id": "0a4a9ba0-e38b-41d1-aba4-ebae26e30c84",
+      "result_id": "a1f6902d-a781-4195-b17a-fcbb7f4cb2b9"
+    },
+    {
+      "claim_id": "e325722f-726c-4d26-b954-dbddd3921830",
+      "result_id": "d96d3be9-95e4-4c5a-8c9a-67408e5455a3"
+    },
+    {
+      "claim_id": "9796a64c-d1ca-44c3-87e0-4e1a28a2a4d4",
+      "result_id": "d96d3be9-95e4-4c5a-8c9a-67408e5455a3"
+    },
+    {
+      "claim_id": "99a01b62-c063-4fe3-b440-bf5d0e48bd6d",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "71ba39fb-b62f-41ae-8b99-ac5f5e436f9b",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "7f7e004f-92b5-48a8-95e3-5872f961f133",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "fec32314-3bed-48cd-9df3-e6332257c293",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "8bd339f5-c9a8-4a4d-a653-c4d4cb4ba8d4",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "2fd92513-3f67-4259-8955-4ef5cd03e6c1",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "a8e408c9-79ef-4b6a-b22c-cc4f3c5542a0",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "3c730633-3a6c-41ab-9aec-04e420ccb659",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "7417ddd2-bedb-425a-83cd-741b3629e6bc",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "c02e647f-656f-46db-a365-8e76469963e5",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "de7c25d0-ac47-47c1-a67b-062ef36b7874",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "ef9cf03d-76a4-4277-aec0-b3d4a6d8d551",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "e9452bd3-53ab-480e-a0ad-ccc7dc461a3d",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "7fb32dc0-d567-435e-ae89-7ca6d623f38c",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "77d4a167-03d5-4ce6-8177-7f7bac67a580",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "696f588c-211a-4751-a123-d7c8de1c0677",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "16120a97-d369-44bb-94a3-85cce44e4f59",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "e2d41af4-0b83-48ba-a71d-4b95fd45cb1c",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "8803a37f-0e4a-42c0-b381-df658729c809",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "57fd4bb5-7fae-47de-aeb0-22c35c003cf0",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "b6c06218-101d-4982-b62b-e9d1bc0210e4",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "86215e63-fc8e-46ba-be2d-17cd536968d4",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "0ee2a0f2-1466-4164-a2ca-1e501b2a0adc",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "dd37e051-1d1f-4565-893f-4e02b904c652",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    },
+    {
+      "claim_id": "a0b5676b-26fd-435b-a95b-5afaebd77e50",
+      "result_id": "2bfa757a-1c4e-4723-a1a2-9b78e0bce0b0"
+    }
+  ],
+  "comparisons": []
+}

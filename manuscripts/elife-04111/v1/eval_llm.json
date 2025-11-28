@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Bacteria propagate approximately twice as fast in serosa-less Tribolium eggs compared to wild-type eggs. Septic injury introduced similar numbers of bacteria into both egg types (~50 CFU), but after 6 hours, bacterial counts reached 7260 CFU in serosa-less eggs versus 747 CFU in wild-type eggs, corresponding to growth rates of 0.83 hr\u207b\u00b9 and 0.44 hr\u207b\u00b9 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33-C36 provide consistent quantitative data from CFU counting experiments shown in Figure 1. The bacterial growth rates are calculated using an appropriate exponential growth model, and statistical significance (p<0.01) is reported. The experimental design includes proper controls (sterile injury) and replication (n=10 plates per treatment).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RNAseq analysis of Tribolium eggs revealed an extensive transcriptional immune response. Over 970 million reads were generated with 72% mapping to gene models. Expression was detected for 14,903 of 16,541 predicted genes. Upon infection, 538 genes were differentially regulated in septically injured eggs and 415 in sterilely injured eggs compared to naive eggs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 report sequencing quality metrics and differential expression results that are internally consistent and appropriate for RNAseq studies. The high mapping rate (72%) and gene detection rate support data quality. The differential expression analysis used appropriate statistical thresholds (FDR<0.01, >2-fold change) with biological replication (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Wild-type Tribolium eggs mount a comprehensive immune response involving multiple pathways. Upon septic injury, 78 immune genes were differentially regulated in wild-type eggs and 95 in control RNAi eggs. This includes pattern recognition receptors (PGRP-SA/SB induced >200-fold, GNBP2/3), 36 induced serine proteases/serpins, Toll3 receptor upregulation, AMPs induced >500-fold, and melanization/ROS production genes (proPO1, heme peroxidase 11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C57 describe a detailed immune response profile supported by RNAseq data in Table 1, Figure 4A, and supplementary files. The magnitude of induction (>500-fold for AMPs, >200-fold for some PGRPs) is comparable to adult responses as noted. The finding that RNAi increases immune gene numbers (C45) is appropriately noted as a technical observation. The identification of Toll3 rather than Toll1 as the major immune receptor is supported by convergent evidence across life stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Twenty potential novel antimicrobial peptides were identified in Tribolium eggs based on characteristic AMP properties (small size <30 kDa, cationic, hydrophobic, high glycine/proline content) and infection-induced expression (>2-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 identifies candidate AMPs using bioinformatic criteria from the literature, which is a reasonable discovery approach. However, the authors explicitly acknowledge that 'antimicrobial properties of these peptides still have to be experimentally verified.' Without functional validation, these remain predictions rather than confirmed AMPs. The computational approach is sound but incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The immune response in Tribolium eggs is almost entirely dependent on the serosa. Of 538 infection-responsive genes, 481 (89%) require the serosa, with 276 genes differentially regulated in both wild-type and control eggs but not in serosa-less eggs. Serosa-less eggs showed only 57 differentially regulated genes upon infection, with only 9 immune genes responding and no AMP induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 demonstrate the serosa's essential role through loss-of-function analysis using Tc-zen1 RNAi. The dramatic reduction in immune gene expression (from 78-95 immune genes to only 9) and complete absence of AMP induction in serosa-less eggs provides strong evidence. The Venn diagram (Figure 4B) clearly shows the overlap patterns. The conclusion (C64) is well-supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "qPCR validation confirmed RNAseq results for 12 immune genes, showing matching fold-changes in wild-type eggs and absence of induction in Tc-zen1 RNAi eggs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe independent technical validation of the RNAseq findings using qPCR (Figure 5). The authors note the fold-changes match between methods, with the largest deviation being 156-fold vs 484-fold for TC007858\u2014still showing the same directional effect. The qPCR data independently confirms the serosa-dependence of the immune response, strengthening the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In situ hybridization demonstrates that the serosal epithelium itself expresses antimicrobial peptides upon infection. Thaumatin1 and attacin1 expression associated specifically with large polyploid serosal nuclei and not with the dense cells of the embryo proper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide spatial localization data through in situ hybridization (Figure 6) showing AMP expression specifically in serosal cells. The morphological distinction between large polyploid serosal nuclei and dense embryonic cells allows clear assignment of expression. Multiple focal planes and two different AMPs provide convergent evidence. This directly demonstrates that the serosa itself is the immune-responsive tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The serosa constitutively expresses immune genes even without infection. Comparing naive wild-type to naive serosa-less eggs revealed 44 immune genes with serosa-dependent expression, with >75% involved in microbial recognition and extracellular signal transduction (PGRP-LA, serine proteases, Spz4/5). The Toll3 receptor shows higher basal expression in eggs with a serosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 demonstrate constitutive immune competence through comparison of naive eggs (Table 3). The finding that most constitutively expressed genes are involved in recognition and signal transduction (rather than effectors) is biologically coherent\u2014the serosa is 'primed' to detect and respond to infection. The data support the conclusion (C74) that the serosa is an immune-competent epithelium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In situ hybridization of constitutively expressed genes shows Toll3 expression in both serosa and embryo, while scavenger receptor B5 (30-fold higher in eggs with serosa) shows clear serosal-specific expression. The authors propose all 44 genes in Table 3 are constitutively expressed in the serosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 provide in situ data for two genes (Figure 7), with SR-B5 showing clear serosal specificity but Toll3 showing broader expression. The authors acknowledge the limitation that in situ is not quantitative and may not detect 2-fold differences in flat serosal cells. Claim C77 extrapolates from limited validation to all 44 genes, which is reasonable but speculative. More extensive validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Tc-zen1 is not expressed at the time of experiments (only 3 RNAseq reads detected), confirming that the observed immune defects in Tc-zen1 RNAi eggs are due to absence of the serosa rather than direct effects of Tc-zen1 knockdown on immune gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 address a critical control for interpreting the RNAi experiments. The RNAseq data showing minimal Tc-zen1 expression at the experimental timepoint, combined with prior knowledge that Tc-zen1 is only expressed in early serosa (C32), supports the conclusion that phenotypes are due to serosa absence. This strengthens the causal interpretation of the serosa's immune role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Both Toll and IMD pathways are utilized in the Tribolium egg immune response, with Toll signaling playing an immune role despite being previously associated only with developmental functions at this stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by the induction of genes from both pathways shown in the RNAseq data (Figure 4A). The observation about Toll pathway involvement is appropriately contextualized with citations showing previous developmental-only associations. The finding extends understanding of Toll pathway function in early development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The number of immune-responsive genes in Tribolium eggs (538) is comparable to larvae and higher than adults, though this may reflect differences in sequencing coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 compare gene numbers across studies but appropriately note the caveat about technical differences in sequence coverage. Cross-study comparisons are inherently uncertain due to methodological variations. The comparison provides context but the caveat undermines strong conclusions about relative immune capacity across life stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C84",
+      "C93",
+      "C94"
+    ],
+    "result": "The serosa provides insect eggs with a full-range innate immune response. Tribolium eggs can mount responses involving antimicrobial peptides, melanization, and reactive oxygen species production, and this response depends entirely on the extraembryonic serosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C84, C93-C94 represent the main conclusions synthesizing all experimental evidence: bacterial growth assays (C5), comprehensive RNAseq showing induction of all major immune pathways (C43-C57), loss of response in serosa-less eggs (C59-C64), and direct demonstration of serosal expression (C67-C70). The evidence converges to support this central conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C92"
+    ],
+    "result": "The authors suggest that absence of the serosa in Schizophoran flies (including Drosophila) accounts for poor egg immune responses, and propose that early immune competence via the serosa is a general property of insect eggs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90 and C92 are explicitly speculative proposals extending findings from Tribolium to other insects. While the logic is reasonable given that the serosa is present in all insects except Schizophora (C4, C91), these are comparative evolutionary hypotheses requiring testing in additional species. The authors appropriately use tentative language ('suggest,' 'propose').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "Background knowledge claims about insect immunity, the serosa, and prior findings in Drosophila and Tribolium establish context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C29, C85-C89, C91 represent established knowledge supported by appropriate citations throughout the manuscript. These provide necessary context for interpreting the experimental findings. The citations appear appropriate and the knowledge claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Methodological background on the Tribolium system: eggs are protected by a serosa (an extraembryonic epithelium present in all insects except higher flies), and Tc-zen1 RNAi can generate serosa-less eggs that develop normally under laboratory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C30-C32 describe the experimental system with appropriate citations to prior work establishing the Tc-zen1 RNAi method. This is essential methodological context showing that serosa-less eggs are viable controls, not simply dying eggs, which is critical for interpreting immune phenotypes.",
+    "result_type": "MINOR"
+  }
+]

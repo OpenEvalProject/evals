@@ -1,0 +1,1615 @@
+{
+  "submission": {
+    "id": "3ddcfc60-6757-46d0-999e-e400457e667a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:37:15.721190Z",
+    "updated_at": "2025-11-28T22:37:15.721190Z"
+  },
+  "content": [
+    {
+      "id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "submission_id": "3ddcfc60-6757-46d0-999e-e400457e667a",
+      "content_type": "manuscript",
+      "content_text": "# Tuning myosin-driven sorting on cellular actin networks\n\n## Authors\n\n- Rizal F Hariadi<sup>1</sup>\n- Ruth F Sommese<sup>1</sup>\n- Sivaraj Sivaramakrishnan<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell and Developmental Biology University of Michigan Ann Arbor United States\n2. Department of Biophysics University of Michigan Ann Arbor United States\n3. Department of Biomedical Engineering University of Michigan Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMyosin V and VI are antagonistic motors that cohabit membrane vesicles in cells. A systematic study of their collective function, however, is lacking and forms the focus of this study. We functionally reconstitute a two-dimensional actin-myosin interface using myosin V and VI precisely patterned on DNA nanostructures, in combination with a model keratocyte actin meshwork. While scaffolds display solely unidirectional movement, their directional flux is modulated by both actin architecture and the structural properties of the myosin lever arm. This directional flux can be finely-tuned by the relative number of myosin V and VI motors on each scaffold. Pairing computation with experimental observations suggests that the ratio of motor stall forces is a key determinant of the observed competitive outcomes. Overall, our study demonstrates an elegant mechanism for sorting of membrane cargo using equally matched antagonistic motors, simply by modulating the relative number of engagement sites for each motor type.\n\n## Introduction\n\nMembrane sorting in the secretory and endocytic pathways occurs in the midst of the actin cytoskeleton, and involves a range of unconventional myosins that link membrane components to the actin network (Hartman et al., 2011). However, traditional reconstituted systems to study membrane traffic do not incorporate the effects of actin-myosin interactions (Lee et al., 2004; Zanetti et al., 2012). Additionally, while unconventional myosins are necessary for timely membrane traffic, their functional role is not apparent in live cell studies (Hasson et al., 1997; Sahlender et al., 2005; Hartman et al., 2011). The bulk of our knowledge of unconventional myosin function instead stems from single molecule biophysical and structural studies, which demonstrate distinct functional regimes for actin-myosin interactions including bi-directional motion, unidirectional transport, and mechano-sensitive anchoring (Trybus, 2008; Spudich and Sivaramakrishnan, 2010). There remains, however, a considerable gap between the insights gained from single-motor studies and a mechanistic understanding of cargo transport in living cells. Furthermore, membrane trafficking often involves multiple disparate motor types, and their collective function cannot be trivially extrapolated from single molecule studies. In this study, we focus on myosin V and VI, two opposing unconventional myosins that co-reside on membrane vesicles in neuronal growth cones (Suter et al., 2000). Myosin V has been implicated in secretory traffic, whereas myosin VI facilitates timely endocytosis (Suter et al., 2000; Kneussel and Wagner, 2013). Individual myosin V and VI molecules within a transport ensemble may coordinate, cooperate, or mechanically impede one another to influence collective movement (Rogers et al., 2009; Sivaramakrishnan and Spudich, 2009; Lu et al., 2012). Hence, studies with mixed motor ensembles are essential to define the function of myosins in membrane trafficking.\n\nAll myosins share a conserved catalytic domain that converts the chemical energy of ATP hydrolysis into a unidirectional mechanical stroke of the motor lever arm. In the case of myosin V and VI, they are considered evenly matched antagonistic motors (Trybus, 2008; Spudich and Sivaramakrishnan, 2010). Both motors are thought to bind membrane cargo as dimers; myosin V through a coiled-coil motif following its lever arm that natively homodimerizes it, and myosin VI presumably through dimeric adaptor proteins that link it to cargo (Mehta et al., 1999; Buss and Kendrick-Jones, 2008). Homodimers of either myosin move processively on actin filaments with similar step sizes (V\u201436 nm; VI\u201430 nm), stepping kinetics (V \u201312 s\u22121; VI \u20139 s\u22121), and stall forces (V \u223c3 pN; VI \u223c2 pN) albeit in opposing directions (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004). All myosin levers, with the exception of myosin VI, swing towards the barbed (plus) end of the actin filament. In the case of myosin VI, a unique insert reverses the direction of its lever stroke towards the pointed (minus) end of the actin filament (Liao et al., 2009; Spudich and Sivaramakrishnan, 2010). With the plus-ends of actin networks oriented toward the cell periphery, plus-end directed myosin V thus contributes to exocytosis, whereas minus-end directed myosin VI is critical to endocytosis (Hartman et al., 2011). Finally, despite their many similarities, myosin V and VI have structurally distinct lever arms. The myosin V lever consists of six light chain binding IQ-motifs wrapped with calmodulin light chains (Trybus, 2008). The myosin VI lever is composed of two calmodulin-binding IQ-motifs followed by a pliable proximal tail domain, and a semi-rigid single \u03b1-helical domain (Spudich and Sivaramakrishnan, 2010).\n\nTranslating the detailed structural understanding of individual myosin V and VI into cellular function, specifically when they cohabit the same scaffold, remains an outstanding challenge. Ali et al. (2011) reported that tethering a single myosin V and a single VI homodimer on a quantum dot leads to unidirectional motion on single actin filaments, with myosin V dominating the competition (79% of processive runs towards the plus-end of actin filaments). We recently extended this finding to DNA nanostructures containing two myosin V and two myosin VI molecules interacting with a keratocyte-derived actin network (Hariadi et al., 2014). While we did observe solely unidirectional movement, in contrast to Ali et al. (2011), myosin V and VI were evenly matched in our system (52% of processive runs towards the keratocyte cell periphery). Our previous study focused on trajectory shapes and did not address this observed discrepancy in the outcome of the competition. Further, the generality of these observations for different ratios of myosin V and VI and the mechanisms that control directionality remain unexplored and form the focus of this study.\n\nHere, we use DNA nanotechnology to precisely scaffold defined collections of myosin V and VI and pair it with both single actin filaments and a model cellular actin network derived from the extensive lamellipodium of fish epidermal keratocytes (Hariadi et al., 2014). Consistent with previous reports (Ali et al., 2011; Hariadi et al., 2014), we observe solely unidirectional movement regardless of actin architecture or relative myosin number. However, for matched scaffolds we find that the directional flux is dependent on both actin architecture and the structural properties of the myosin lever arm. This directional flux is finely-tuned by the relative number of myosin V and VI motors on each scaffold. By pairing computation and experiment, we identify a single mechanical parameter that defines regimes in any motor ensemble wherein this mechanism is likely to be observed. Overall, our study demonstrates an elegant mechanism for sorting of membrane cargo simply by modulating the relative number of engagement sites for each motor type. For matched, but opposing motors such as myosin V and VI, this mechanism is necessary and sufficient to precisely control sorting of tethered scaffolds.\n\n## Results\n\n### Combining DNA nanostructures with defined motor composition and 1D/2D actin tracks\n\nTo investigate the role of actin organization in trafficking, DNA nanostructures containing a defined number of antagonistic myosins (V and VI; Figure 1A; Figure 1\u2014figure supplements 1, 2; Supplementary file 1) were examined on two distinct actin architectures, namely one-dimensional actin filaments (Figure 1B,D,F) and dense two-dimensional actin networks (Svitkina and Borisy, 1998; Schaus et al., 2007) (Figure 1C,E,G). Precise positioning of myosin V and VI on the origami scaffold was achieved using myosins labeled with single-stranded DNA oligonucleotides complementary to attachment sequences projecting from the scaffold strand (1\u20136 per scaffold; Figure 3\u2014figure supplement 1). DNA nanostructures with varying numbers of myosin are denoted as xV:yVI, where \u2018x\u2019 is the number of myosin V dimers and \u2018y\u2019 is the number of myosin VI dimers per scaffold. For the 2D actin networks, we used detergent-extracted keratocytes (Hariadi et al., 2014) (Figure 1C), which have a sufficiently large surface area (\u223c10 \u03bcm \u00d7 \u223c30 \u03bcm) allowing for simultaneous tracking of multiple myosin-labeled scaffolds. Experiments involving 1D actin filaments provide a confined set of actin-myosin interactions, with each myosin having either a forward (red rectangle) or a backward (gray rectangle) binding site available (Figure 1F). The 2D actin networks, on the other hand, provide a more complex energy landscape for the myosins to navigate, as there are multiple binding sites for both forward (red arc) and backward (gray arc) steps (Figure 1G).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig1-v2.jpg)\n\n**Figure 1.:** (A) Illustration of a programmable DNA scaffold (Rothemund, 2006) with six attachment sites at the vertices of a hexagon (dashed-line, 35-nm side), yielding 122 unique myosin V and VI combinations. Myosin V and VI were engineered with SNAP tags (Hariadi et al., 2014) for covalent attachment of unique DNA oligonucleotides. These DNA oligonucleotides hybridize with complementary sequences extending from the scaffold. (B\u2013C) Representative snapshot of scaffold-motor complexes (green) on actin filaments (B) and a keratocyte actin network (C). Actin was stabilized and labeled with Alexa488-phalloidin (red). (D\u2013E) Schematics depicting the interaction of scaffolds (yellow) with 1 myosin V (red) and 1 myosin VI (blue) on an actin filament (D) and on the surface of the keratocyte actin network (E). The motors and actin tracks are drawn approximately to scale. The keratocyte actin network is depicted by actin filaments oriented at \u00b135\u00b0, which corresponds to the characteristic Arp2/3 branch angle (Maly and Borisy, 2001). Mesh size of the keratocyte actin network (\u223c30 nm) (Svitkina et al., 1995) is comparable to the step size of myosin V (\u223c35 nm) and VI (\u223c30 nm) (Rock et al., 2001; Yildiz et al., 2003). (F\u2013G) Hand-over-hand model of dimeric myosin stepping on 1D (F) and 2D (G) actin tracks. The competition between antagonistic myosins gives rise to inter-motor tension depicted as a simple harmonic spring (orange). For inter-motor tension below the stall force, the trailing head (light red) moves 36 nm forward (red arrow) to a new position within the forward-step target zone (shaded red areas), while the leading head (gray) remains stationary. High inter-motor tension induces a backward step (black arrow) of the leading head to a target site within the back-step target zone (shaded gray areas).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The main core of the nanostructure is a flat rectangular DNA origami scaffold with 10.44 bp/turn, consisting of 24 DNA helices (Woo and Rothermund, 2011). The scaffold strand is depicted as a continuous black line. The six attachment sites for myosin-DNA complexes are shown as black hexagons. The scaffold is decorated with 23 Cy3 fluorophores (shown as red light bulbs) to facilitate a high signal-to-noise ratio imaging.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The scaffold strand is displayed in dark blue. The truncated edge staples strands are shown in orange. The staple strand sequences are listed in Supplementary file 1.\n\n### Actin architecture influences competitive outcome\n\nTwo previous reports suggest that equal numbers of myosin V and VI anchored to the same scaffold display solely unidirectional movement (Ali et al., 2011; Hariadi et al., 2014). However, they disagree in the observed outcome of the competition. Myosin V dominates the competition (79%) when it is tethered to myosin VI through a quantum dot (2 total) and the two compete on a single actin filament (Ali et al., 2011). In contrast, myosin V and VI are evenly matched (myosin V wins 52%) when two of each motor (4 total) are tethered to a DNA nanostructure and they compete on a two-dimensional cellular actin network. This discrepancy between the observations could stem from either the scaffold type (quantum dot vs DNA nanostructure), the total motor number (2 vs 4), or the actin architecture (single filament vs keratocyte-derived actin network). We first tested the influence of scaffold type by assessing the competition between a single myosin V dimer and a single myosin VI dimer on 1D actin filaments (Figure 2). In positive controls, \u00d8V:2VI scaffolds (Figure 2A) move toward the minus-end of the actin filaments, whereas 2V:\u00d8VI scaffolds (Figure 2C) travel toward the plus-end. Consistent with previous reports (Ali et al., 2011; Hariadi et al., 2014), scaffolds with both myosin V and myosin VI (1V:1VI) commit to a single direction on actin filaments (>99%; Figure 2B) with no directional reversal detected. The movement of 1V:1VI scaffolds on single actin filaments is dominated by plus-end directed movement (\u03a6out = 68 \u00b1 1%; Figure 2E), which is qualitatively consistent with previous observations using quantum dot scaffolds (79% plus-end directed [Ali et al., 2011]). Hence, scaffold type (quantum dot vs DNA nanostructure) is not the key determinant of competitive outcome. We next examined the influence of actin architecture. In contrast to single actin filaments, both plus and minus-end directed movement is equally represented (\u03a6out = 52 \u00b1 1%; Figure 2E) for 1V:1VI scaffolds moving along 2D keratocyte actin networks. Hence, the discrepancy between previous reports using quantum dots (Ali et al., 2011) and DNA nanostructures (Hariadi et al., 2014) stems primarily from the actin architecture.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Kymographs showing the movement of indicated motor ensembles along actin filaments. Scaffolds with myosin V and VI display unidirectional movements toward plus-or minus-ends of the actin filament. The gray hexagon represents the organization of attachment sites on the scaffold, the red and blue arrows denote myosin V and VI, respectively. (D) Speed of plus-end (blue) and minus-end (red) directed movement of indicated scaffolds on actin filaments. Error bars are S.E.M. (E) Relative frequency of plus-end (n+) and minus-end (n\u2212) directed movement for 1V:1VI scaffolds on actin filaments and keratocyte actin networks. Outward flux (\u03a6out) is defined as the fraction of plus-end directed trajectories. Error bars are S.E.M. and were generated by bootstrapping (N \u2265 202 trajectories; \u22653 experiments).\n\n### Directional flux of scaffolds is linearly dependent on relative number of myosin V and VI\n\nIn order to assess the role of relative motor number on competitive outcome, we next tested scaffolds with varying ratios of myosin V and myosin VI motors (xV:yVI; Figure 3\u2014figure supplement 1) on 2D actin networks (Figure 3A). In every combination, the origami scaffold commits to a single direction, either towards the cell periphery or the cell center (Figure 3B). The relative number of scaffolds that move to the cell center and cell periphery (\u03a6out or \u03a6in), however, varies linearly with the fraction of myosin V or myosin VI (Figure 3B\u2013D). Thus, while the scaffolds have a dedicated direction of movement on both 1D and 2D actin landscapes, the underlying competition (tug-of-war) systematically influences the directional flux.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of scaffold-myosin movement on the surface of the keratocyte actin network. Inward (\u03a6in) and outward directional flux (\u03a6out) are calculated as the fraction of myosin scaffolds moving towards the cell center and periphery, respectively. (B) Sample trajectories of scaffolds on keratocyte actin networks with movement towards the cell center in blue and the cell periphery in red. (C) Summary plot depicting influence of relative motor number on directionality (red and blue) and speed (radius). The plot is aligned such that the y-axis represents total motor number (myosin V + myosin VI), whereas the x-axis represents the difference between the two myosin types (myosin V \u2212 myosin VI). Red or blue dashed lines correspond to scaffolds with equal numbers of myosin V or VI motors, respectively. (D) Outward flux (\u03a6out) varies linearly with the difference between the number of myosin V and VI (green line, R\u00b2 = 0.80). Positive and negative values indicate net movement towards cell periphery and cell center, respectively. Error bars are S.E.M. and were generated by bootstrapping (N = 58\u20131897 trajectories; 3\u20134 keratocytes).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Configurations of myosin V and/or VI scaffolds (xV:yVI) used in this study. The table is aligned such that Y-axis represents total motor number (x + y), whereas X-axis represents the difference between the two myosin types (x \u2212 y). Red or blue dashed lines denotes scaffolds with equal numbers of myosin V or VI motors, respectively.\n\n### Engagement of antagonistic motors with the underlying actin network\n\nThe speed of nanostructures (1V:1VI = (+) 162 \u00b1 7 nm/s; (\u2212) 66 \u00b1 5 nm/s) along actin filaments is significantly slower than nanostructures containing only two myosin V (2V:\u00d8VI = (+) 273 \u00b1 8 nm/s) or two myosin VI (\u00d8V:2VI = (\u2212) 130 \u00b1 7 nm/s) (Figure 2D). Likewise, the speed of nanostructure movement on the keratocyte network decreases as the difference in the number of the two motor types approaches zero (Figure 3C). These reductions in speed with antagonistic motors are in agreement with the previously published experiments involving quantum dots conjugated to one myosin V and one myosin VI (Ali et al., 2011). Based on the reduction in speed for antagonistic ensembles, as compared to groups of one myosin type, we hypothesized that all of the motors can continuously interact with the actin tracks and collectively engage in competition. To test this hypothesis, scaffolds were formed with three myosin V and three myosin VI (3V:3VI), where one of the motor types was attached by photo-cleavable linkers (Figure 4A\u2013B). Regardless of which motor type is cleaved, removal of one myosin type from the competition increases the speed and results in a single direction of movement (Figure 4C\u2013F). The directional switch and increase in speed after photo-cleavage indicate that all motors, regardless of type, are able to access the actin tracks and engage in continuous competition. Together, these observations suggest that the collective movement is due to a continuous interaction of both motor types, and not due to detachment of losing motors from the actin track (or scaffold), when overpowered by the winning motor. Lastly, the underlying continuous interaction is also consistent with our previous observation that myosin V changes the trajectory shape of ensembles of myosin V and VI on 2D actin tracks (Hariadi et al., 2014).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Schematics of mixed-motor scaffolds (gray hexagons) with three myosin V (A; red arrows) or three myosin VI (B; blue arrows) attached by photo-cleavable linkers. UV-induced photo-cleavage (purple lightning bolt) converts mixed-motor scaffolds to scaffolds with only myosin VI (A) or only myosin V (B). (C\u2013F) Representative scaffold trajectories for photo-cleavable experiments on keratocyte networks and their corresponding mean speed. Black squares mark the start of the trajectories, and purple circles indicate the start of photo-cleavage. Individual data points in each trajectory, before and after photo-cleavage, are indicated as open or closed circles, respectively. Disengagement of myosin V (C and D) or myosin VI (E and F) results in movement toward cell-center or cell-periphery, respectively. In all cases, photo-cleavage leads to significant increase in speed (p < 0.01). Error bars are S.E.M. (N \u2265 19 trajectories; \u2265 5 keratocytes).\n\n### Stochastic simulations identify key parameters that drive unidirectional movement\n\nTo gain insight into the structural mechanisms of the observed directional flux, a minimal stochastic simulation was used to model the contributions of inter-motor tension and intra-motor strain to the competition between opposing motors (Figure 5; \u2018Materials and methods\u2019). In the model, two opposing motors are coupled mechanically through a linear spring of strength ks (Figure 5A). Since the motor proteins are the most flexible components of the scaffold\u2013motor complex, ks is dominated by the flexibility of the myosin motors. Each motor consists of two catalytic heads that are connected by a lever arm with flexural rigidity kF. Each motor also has a comparable, albeit mismatched, stall force (1 \u2264 Fhigh/Flow \u2264 2), where Fhigh and Flow are the stall forces of the stronger (myosin V) (Mehta et al., 1999; Uemura et al., 2004) and weaker (myosin VI) (Rock et al., 2001; Nishikawa et al., 2002; Altman et al., 2004) motors, respectively. Our model assumes that a motor can only perform a forward step if the resulting inter-motor tension (T) is less than its stall force (Figure 5A). A successful step increases the inter-motor tension by \u2206T = ks\u2022s, where s is the motor step size. Initially T is set to zero and both motors take forward steps stochastically in opposite directions, increasing T with each step. This sequence of movement proceeds until a forward step increases T beyond the stall force of the stepping motor, which undergoes a conformational change that leads to its preferential back-stepping (Gebhardt et al., 2006) thereby relieving inter-motor tension (Ali et al., 2011).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig5-v2.jpg)\n\n**Figure 5.:** (A) Minimal model of coupled myosin V (red) and myosin VI (blue) movement on an actin filament (green). The net compliance in the coupled system is modeled as a simple harmonic spring with stiffness ks. Each motor takes either a forward or backward step, based on whether the inter-motor tension after the step (T) is below or above the stall force (Flow \u2212 myosin VI; Fhigh \u2212 myosin V). (B) Outward flux of the mixed-motor ensemble (\u03a6out) on single actin filaments as a function of the normalized inter-motor tension per step (\u2206T/Flow) and stall force ratio (rs = Fhigh/Flow). Based on previously reported stall forces for myosin V (Mehta et al., 1999; Uemura et al., 2004) and VI (Rock et al., 2001; Nishikawa et al., 2002; Altman et al., 2004), rs = 1.5 and is indicated by the gray shaded region (left). The corresponding experimentally measured \u03a6out (\u2297; Figure 2) and rs = 1.5 yield a \u2206T/Flow = 0.55 \u00b1 0.01. (C) Schematic forward step of a myosin with flexible (left) or rigid (right) lever arm on a digitized keratocyte actin network (green). The motor domains of the stepping motor (light blue shoes), non-stepping motor (gray shoes), lever arms, inter-motor linkage (pre-step\u2014black spring; post-step\u2014orange spring), and digitized actin network are drawn approximately to scale. The forward step results in an increase in both the inter-motor tension (\u2206T $\u221d$ ks) and the intra-motor torsion (\u03c4 $\u221d$ kF). A flexible forward stepping motor (kF/ks << 1) minimizes inter-motor tension (\u2206Tlow). A rigid forward stepping motor (kF/ks >> 1) minimizes intra-motor torsion (\u2206Thigh). (D) Simulated \u2206T as a function of kF/ks. Varying lever arm rigidity (kF/ks) is sufficient to modulate \u2206T. (E) Outward flux of the mixed-motor ensemble (\u03a6out) on the keratocyte actin network as a function of the relative tension per step of the two motors (\u2206Thigh/\u2206Tlow). Gray shaded region (left) indicates the parameter space for \u2206T/Flow = 0.55 \u00b1 0.01 (see B). The corresponding experimentally measured \u03a6out (\u2295; Figures 2, 3) yields a \u2206Thigh/\u2206Tlow = 1.20 \u00b1 0.05. This enhanced \u2206T for rigid motors evens out the competition on a branched 2D network compared to single filament tracks.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Stochastic simulations for myosin-scaffold movement along an actin network were performed in Mathematica based on the following rules (Hariadi et al., 2014). (A) TEM image of a keratocyte actin network (Hariadi et al., 2014). (B) To investigate the influence of network structure to the stepping dynamics (Figure 5\u2014figure supplement 2), the TEM image in (A) was first scaled by a factor of 0.5\u20131.25. The image was then skeletonized to derive the position of actin filaments (green lines) as described in Sivaramakrishnan and Spudich (2009). Every pixel is a possible binding site for a myosin motor head. (C) Next, we calculated the orientation of each actin filament relative to the polarity field vector for each pixel in the digitalized image. A 7 \u00d7 7 box was centered over each pixel, and based on the skeletonized filament in the search box each pixel was fit to a linear function. The local filament direction was then calculated by taking the inverse tangent of this fit. Pixels that fit poorly ($R^{2}$ < 0.25) were excluded (14% of the detected pixels in [B]) from the simulation. The energy for each binding site was calculated from these filament directions (see L). For our model, the myosin pair consisted of either two identical myosin dimers with lever arm stiffness kF. Each myosin dimer has two motor domains (gray sandals), and each myosin pair is linked through their centers of mass by a linear spring ks. Finally, in each myosin a leading (\u2460 or \u2461) and a trailing head is indicated. (D) Motor 1's trailing head is placed randomly on an actin filament. (E\u2013H) The position of the leading head (E) and the second myosin (F\u2013H) are randomly assigned with only two restrictions. First the inter-motor distance between myosin heads must be 36 \u00b1 7.2 nm (gray arc; [E and H]). Second distance between the centers of mass of a motor pair must be 65 \u00b1 15 nm (red ring; [F and H]). (I) The position of all motor heads, the centers of mass for each myosin dimer, and the center of the two centers of mass are tracked during each simulation step. (J) Myosin V and VI dimers step stochastically on actin filaments with exponentially distributed dwell times. In our simulations, an exponential distribution of mean dwell times based on the cycle rates of myosin V and VI (De La Cruz et al., 1999, De La Cruz et al., 2001) was used to derive the dwell times for each motor step. In this example, t1> t2 and myosin 2 moves first. (K) For a motor to step, the trailing head of motor (motor 2) pivots about the lead head and its binding site is determined by the following criteria: (a) The binding site must be 36 \u00b1 7.2 nm pixel from the leading head (gray arc). (b) The new center of mass for stepping motor (motor 2) must be within 65 \u00b1 15 nm (red ring) from the center of mass of the non-stepping motor (myosin 1). (c) The stepping myosin must proceed in a forward direction determined by the actin network polarity. (L) For each pixel meeting these requirements (i), the energy Gi and Boltzmann probability Pi are calculated. (M) A binding site for each new leading head is then stochastically choosen based on the calculated Boltzmann probabilities calculated in (L). (N) The change in inter-motor tension is then calculated (\u2206T = \u2206Tpost \u2212 \u2206Tpre). The simulation was repeated for \u2265400 times. The tension change \u2206T was quantified and presented in Figure 5D, Figure 5\u2014figure supplements 2, 3.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013D) The interlaced actin network used in the stochastic simulation (Figure 5D\u2013E and Figure 5\u2014figure supplement 1). The network is generated by scaling a skeletonized TEM image of the keratocyte actin network by a factor of 0.5 (A\u2014blue), 0.75 (B\u2014orange), 1 (C\u2014green), and 1.25 (D\u2014red) (Figure 5\u2014figure supplement 1). Given the mean pore size of the meshwork in the unscaled image (panel C; \u223c30 nm (Svitkina and Borisy, 1998)), the mean mesh size of the generated networks is estimated to be 15 nm (A), 23 nm (B), 30 nm (C), and 38 nm (D). (E) For realistic flexibility of motor kF / ks < 10, tension generated per step (\u2206T) of myosin with kF  / ks = 0.01\u2013100 is influenced by the network structure. In these simulations, the inter-motor stiffness was set to 0.05 pN/nm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Change in the inter-motor distance (\u2206xpost \u2212 \u2206xpre = \u2206T/ks) for the simulated steps of two myosin motors (Figure 5\u2014figure supplement 1) with flexural rigidity kF, connected by an inter-motor spring of varying stiffness (ks = 0.005 (blue), 0.015 (orange), 0.05 (green), and 0.15 (red) pN/nm).\n\nStochastic simulations that follow this model lead to solely unidirectional movement, with the relative number of plus (n+) and minus (n\u2212) end directed scaffolds dependent on the normalized inter-motor tension per step (\u2206T/Flow) and stall force ratio (rs = Fhigh/Flow) (Figure 5B). For equally matched motors (rs = 1), there is an equal probability of trajectories moving in either direction (\u03a6out = 50%). For 1 < rs < 2, the model shows that \u03a6out can be tuned from 50% to 100% depending on the value of \u2206T/Flow (Figure 5B). For \u2206T/Flow < 0.5, the inter-motor tension exceeds the stall force of the weaker motor, with the stronger motor winning most of the competitions (\u03a6out > 80%). However, for 0.5 < \u2206T/Flow < 1 and stochastic stepping, there is a finite and increasing probability of inter-motor tension exceeding the stall force of the stronger motor (\u2018Materials and methods\u2019), resulting in the weaker motor winning the competition (60% < \u03a6out < 80%). This regime captures the experimentally measured \u03a6out of 68% (\u2297; Figure 5B), given the previously reported stall forces of myosin V (Mehta et al., 1999; Uemura et al., 2004) and VI (Rock et al., 2001; Nishikawa et al., 2002; Altman et al., 2004).\n\nIn our model for movement on a 1D actin filament track, the \u2206T for myosins with equal step sizes is the same regardless of which motor steps forward (\u2206T = ks\u2022s). Parallel simulations on digitized keratocyte actin networks, however, incorporate an additional parameter, namely flexural rigidity of the myosin lever arm kF (Hariadi et al., 2014) (Figure 5C and Figure 5\u2014figure supplement 1), to account for the misalignment of the lever arm relative to the local actin filament where the myosin head is bound (Figure 5 and Figure 5\u2014figure supplement 1L). Simulations on these networks show that the mean inter-motor tension per step (\u2206T) can be significantly influenced by relative torsional stiffness (kF/ks), regardless of network mesh size or inter-motor stiffness (Figure 5C\u2013D and Figure 5\u2014figure supplements 1\u20133). On a 2D network, the higher the kF/ks of a motor, the greater the \u2206T when it steps forward. Thus one can model movement along a 2D network with a similar simulation on a 1D track by redefining \u2206T such that different \u2206T values are accrued in each step based on which motor steps forward (\u2206Thigh and \u2206Tlow for rigid and flexible motors respectively). For such simulations on 2D networks, linking a rigid motor (kF/ks >> 1; \u2206Thigh) to a more flexible one (kF/ks << 1; \u2206Tlow) is sufficient to systematically bias the competition in favor of the flexible motor (\u2193\u03a6out with \u2191\u2206Thigh/\u2206Tlow; Figure 5E). The experimentally measured \u03a6out on 2D networks is significantly lower than on single actin filaments (\u2297 vs \u2295; Figure 5E). Based on this measurement, the simulations estimate a \u2206Thigh/\u2206Tlow = 1.20 \u00b1 0.05 (\u2295; Figure 5E) that is consistent with a higher flexural rigidity for myosin V (Hariadi et al., 2014) (Figure 5D). Therefore, our simulations reveal that the greater flexural rigidity of myosin V compared to myosin VI is sufficient to equalize the competition on 2D networks.\n\n### Swapping lever arms restores the dominance of the myosin with a higher stall force\n\nAs described above, the model shows that the outward flux of scaffolds composed of opposing motors on actin is influenced by the interplay between inter-motor tension and intra-motor strain (Figure 5). To test this model, we engineered a myosin V/VI chimera containing the myosin V motor domain with the flexible myosin VI lever arm and a myosin VI/V chimera consisting of the myosin VI motor domain with a rigid myosin V lever arm. These chimeras allow us to assess the competition involving opposing motors with similar lever arm rigidity, specifically 1V/VI:1VI (Figure 6A (i); flexible vs flexible) and 1VI/V:1V (Figure 6A (ii); rigid vs rigid). In both cases, the flexural rigidities and the changes in tension per step (\u2206T) of the opposing motors were estimated to be similar. The outward flux for ensembles involving either chimera (Figure 6A; i or ii) on 2D actin networks are significantly higher than scaffolds with 1V:1VI (Figure 6B). The higher outward flux indicates that balancing the tension per step (\u2206T) between the antagonistic motors is sufficient the restore the dominance of the stronger motor (myosin V) on 2D actin networks.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05472/elife-05472-fig6-v2.jpg)\n\n**Figure 6.:** (A) Scaffold and motor schematics used in the lever arm competition experiments. Lever arm rigidity was balanced by engineering the myosin V motor domain with the flexible lever arm of myosin VI (i; flexible vs flexible competition), or the myosin VI motor domain chimera with the rigid lever arm of myosin V (ii; rigid vs rigid competition). Arrowheads and arrowtails depict the myosin heads and lever arms, respectively (red\u2014myosin V; blue\u2014myosin VI). (B) Outward flux (\u03a6out) of indicated motor ensembles. Error bars are S.E.M. and were generated by bootstrapping (N \u2265 126 trajectories; \u2265 3 keratocytes).\n\n## Discussion\n\nMyosin V and VI are antagonistic motors that cohabit membrane vesicles in neuronal growth cones (Suter et al., 2000). Myosin V is implicated in secretory traffic, whereas myosin VI is important for timely endocytosis (Suter et al., 2000; Sahlender et al., 2005; Kneussel and Wagner, 2013). While previous studies have examined the competition between myosin V and VI (Ali et al., 2011; Hariadi et al., 2014), a systematic measurement of their collective behavior is unexplored and formed the focus of this study. We report that while antagonistic motor ensembles display solely unidirectional movement, as previously reported (Ali et al., 2011; Hariadi et al., 2014), their directional sorting can be linearly tuned by the relative number of the two motor types. Further, this directional sorting can be modulated independently by the myosin lever arm and the actin architecture. These observations support a simple generalizable model, wherein competitive outcome is dependent on the ratio of the stall forces of the antagonistic motor types. Taken together, our findings provide an elegant mechanism for regulating vesicle sorting mediated by unconventional myosins, without the need to either segregate motor subtypes to distinct cargo (Hartman et al., 2011) or engage regulatory proteins that preferentially modulate the accessibility or activity of one of the motor types (Fu and Holzbaur, 2014).\n\nOne model for the observed unidirectional transport is that only a single myosin on the DNA scaffold interacts with the actin network at any given time. Under these conditions, the probability of movement towards the cell center or periphery is proportional to the relative number of myosin VI or V, respectively. However, this mechanism for the observed sorting is refuted by four distinct observations. First, as previously reported (Hariadi et al., 2014), scaffold run length linearly increases with motor number (Supplementary file 2), suggesting that multiple motors on the same scaffold are capable of interacting with the actin network. Second, scaffold speed changes substantially with varying number and type of myosin motors (Figure 3). For scaffolds with a given number of myosins, those with a single subtype move faster than those with both myosin V and VI. The reduction in speed with both myosin subtypes is consistent with the trailing myosin interacting with the actin network, despite the unidirectional movement of the scaffold. This interpretation is consistent with the coordinated back-stepping of the trailing motor observed by Ali et al. (2007). Third, for scaffolds with both subtypes the speed decreases as the numbers of myosin V and VI are more evenly matched. This systematic reduction in speed alone argues for progressive engagement of additional antagonistic motors with the actin network. Fourth, experiments with photo-cleavable myosin-scaffold linkages further show that removal of the antagonistic myosin leads to either an increase in speed (release trailing motor) or a reversal in direction (release leading motor) (Figure 4). Altogether, given these observations we propose an alternate model that emphasizes inter-motor interactions (Figure 5).\n\nOur model identifies the ratio of the stall forces (rs = Fhigh/Flow) of the antagonistic motors as the key parameter that determines the outcome of scaffold sorting on 1D or 2D actin filament tracks. For ensembles with mismatched motors (rs > 2), the model predicts unidirectional movement led solely by the stronger motor. However, for motors of similar strength (1 < rs < 2), the model predicts that either motor may lead the unidirectional motion, with the directional flux of scaffolds dependent on rs. These predictions are consistent with the unidirectional movement observed here, and in a previous report based on experiments using a single myosin V and a single myosin VI attached to a quantum dot (Ali et al., 2011). Further, the model is in agreement with a recent report of unidirectional trajectories for DNA scaffolds linked to both kinesins and dyneins on 1D microtubules (Derr et al., 2012; Roberts et al., 2014). However, it differs from the bi-directional movement of isolated endosomes that are driven by a combination of native kinesin and dynein motors (Soppina et al., 2009). We speculate, though, that bi-directional movement stems from the influence of additional regulatory elements on native endosomes (Kunwar et al., 2011). Lastly, our model explains the differences in sorting observed in actin filaments vs 2D networks, and the role of the myosin lever arm in regulating sorting. In essence, motors with greater intra-motor torsional strain (rigid lever) experience a larger inter-motor tension per step and hence lose their competitive edge on 2D networks.\n\nThe lever arm of myosin is primarily regarded as a mechanical amplifier in its chemo\u2013mechanical cycle (Spink et al., 2008). Our study, however, suggests a broader regulatory role for the lever arm in membrane trafficking. We find that the structural properties of the myosin lever arm control the directional flux of scaffolds on our model cellular actin network, thus having implications on sorting of vesicular cargo. Beyond this observation, structural elements in myosins have been shown to influence motility on actin networks. For instance, an extension of the myosin X lever arm is necessary for its preferential processive movement on parallel actin bundles, but not on single actin filaments (Brawley and Rock, 2009; Nagy and Rock, 2010). Myosin VI, on the other hand, has a unique three-helix bundle in its lever arm, which can unfold to alter the motor's structural properties (Mukherjea et al., 2014). Furthermore, for groups of myosin V and VI, the flexibility of the lever arm controls trajectory shapes on 2D actin networks (Hariadi et al., 2014). In addition to myosin structure, actin architecture also influences myosin function. For example, single myosin V and VI have different stepping dynamics at actin filament intersections (Ali et al., 2007) then on actin bundles (Ali et al., 2013). An in situ motility assay using detergent-extracted cells also reported that individual myosin V, VI, and X dimers show preferential motility on different actin architectures (Brawley and Rock, 2009). Together, these studies suggest a subtler regulation of cellular processes that emerges from unique structural features in myosins that modulate either individual or collective actin-myosin interactions.\n\n## Materials and methods\n\n### Buffer and reagents\n\n1\u00d7 Assay Buffer (AB Buffer): 25 mM imidazole (pH 7.5), 4 mM MgCl2, 1 mM EGTA, 25 mM KCl, 1 mM DTT; 1\u00d7 AB.BSA: AB buffer + 1 mg/ml BSA; 1\u00d7 AB.BSA.CAM: AB.BSA buffer + 9 \u00b5M calmodulin.\n\n### Preparation of Benzyl-guanine-labeled oligonucleotide\n\nBenzyl-guanine NHS ester (BG-GLA-NHS; NEB, Ipswich, MA) was covalently linked to the C6-amine modified oligonucleotides (BG-oligo 1 and BG-oligo 5; Supplementary file 1). Briefly, 0.17 mM C6-amine-oligo-Cy3 was incubated with 11.6 mM BG-GLA-NHS in 0.1 M NaBO3 for 2\u20134 hr at 37\u00b0C with shaking. BG-labeled oligo was purified twice through Illustra G-50 micro columns (GE Healthcare, Pittsburgh, PA) equilibrated in 2 mM Tris, pH 8.5. BG-oligo concentration was determined from absorbance at 260 nm.\n\n#### Myosin preparation and labeling\n\nMyosin V, VI, V/VI, and VI/V were constructed, expressed in Sf9 insect cells, purified, and oligo-labeled as previously described (Hariadi et al., 2014). Constructs contained from N- to C-terminus, myosin motor domain and lever arm, a GCN4 leucine zipper (for dimerization), SNAP tag, a FLAG tag (for purification), and finally a 6xHis tag (alternative purification tag). Myosin VI contained residues 1\u2013992 from Sus scrofa and myosin Va, residues 1\u20131103 from Gallus gallus. For V/VI, residues 1\u2013815 of myosin V were followed by the lever arm of myosin VI (residues 917\u2013992). For VI/V, residues 1\u2013810 of myosin VI were followed by residues 767\u20131103 of myosin V. Myosin VI and V/VI were cloned in pBiex-1 (EMD Millipore, Germany) and expressed through transient transfection using the Escort VI system (Sigma, St. Louis, MO). Myosin V and VI/V were cloned in pFastBac for calmodulin co-expression and expressed through baculovirus infection. Cells were lysed, incubated with Anti-FLAG resin (Sigma), and washed according to Hariadi et al. (2014). Myosin bound to Anti-FLAG resin was incubated with excess (>5 \u03bcM) BG-oligo-Cy3 at 37\u00b0C for 30 min followed by overnight incubation on ice. Resin was washed three times with Wash Buffer (20 mM Imidazole, 150 mM KCl, 5 mM MgCl2, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, 1 \u03bcg/ml PMSF, 10 \u03bcg/ml aprotinin, 10 \u03bcg/ml leupeptin, pH 7.4). Resin was then washed twice with Wash Buffer + 55% (vol/vol) glycerol. Finally, BG-oligo-labeled myosin was incubated with 0.2 mg/ml FLAG-peptide (Sigma). Calmodulin was added to 9 \u00b5M and protein was stored at \u221220\u00b0C. Labeling efficiency was assessed with a 10% SDS-PAGE gel as labeled myosin displayed a distinct gel-shift.\n\n### Scaffold-myosin preparation\n\nDNA nanostructures were prepared based on the detailed description in our previous work (Hariadi et al., 2014). The sequences for the scaffold and all oligonucleotides are listed in Supplementary file 1. Each origami scaffold is labeled with 23 Cy3 molecules (Figure 1\u2014figure supplements 1, 2; Figure 3\u2014figure supplement 1; Supplementary file 1) for high signal-to-noise imaging and contains a biotinylated-strand to facilitate removal of unbound myosins. Single-stranded M13mp18 DNA (NEB) were mixed with fourfold excess of short stable strands (IDT, Coralville, IA), followed by 2 hr annealing as previously described (Rothemund, 2006). Intact scaffolds were separated from excess staple strands using Amicon Ultra 100K cutoff spin columns (EMD Millipore). Purified scaffolds were mixed with excess labeled myosin, a mixture of 42-nt oligos with randomized sequences (blocking oligos), and 1\u20135 \u00b5M calmodulin in 1\u00d7 AB.BSA. After 10 min of incubation at room temperature, excess streptavidin-coated magnetic beads (NEB) were added and incubated at room temperature with shaking for 10 min. The beads were washed with AB.BSA.CAM. Finally, the beads were incubated in AB.BSA.CAM containing an imaging solution of 2 mM ATP, 1 mM phosphocreatine, 0.1 mg/ml creatine-phosphokinase, 45 \u00b5g/ml catalase, 25 \u00b5g/ml glucose oxidase, 1\u20132% glucose, and excess elution strand for strand displacement of origami from streptavidin magnetic beads.\n\n#### Single actin filament assay\n\nMotility assays were acquired at 120\u00d7 magnification on an objective-based TIRF microscope (Olympus IX81) with a 60\u00d7 NA 1.48 Apo TIRF objective (Olympus), 2\u00d7 image magnifier, EMCCD iXON Ultra, and a 488 nm laser (CUBE 488\u201350, for actin filaments), a 532 nm laser (CrystaLaser, CL532-150 mW-L, for excess Cy3-labeled myosin VI) and a 640 nm laser (Coherent, CUBE 640-100, for Cy5-labeled DNA scaffold). Motility assays were performed using plasma-cleaned rectangular capillary tubes (EMS, 75 mm \u00d7 50 \u03bcm \u00d7 1 \u03bcm). First, biotinylated, 488Alexa-phalloidin-stabilized actin filaments were immobilized to the inner surface of the capillary tube by BSA-biotin-neutravidin-linkages. Unbound actin filaments were washed with AB.BSA. Purified myosin-scaffold complexes in AB.BSA.CAM + imaging reagents (2 mM ATP, 1 mM phosphocreatine, 0.1 mg/ml creatine-phospho-kinase, 25 \u00b5g/ml glucose-oxidase, 45 \u00b5g/ml catalase, 1% glucose, 1 \u00b5M random library 42-nt ssDNA) were added to the capillary chamber. For each field of view, the polarities of the Alexa488-phalloidin stabilized actin filaments were determined from a 1 min motility movie of the remaining unbound Cy3-labeled myosin VI in solution. The purification step was estimated to remove >95% of excess myosin motors. Movies of Cy5-scaffold motility on the actin filaments were obtained at 2 Hz for \u226530 min.\n\n#### Keratocyte assay\n\nKeratocytes were derived from scales of Thorichthys meeki (Firemouth Cichlids) or Rocio octofasciata (Jack Dempsey Cichlids) as previously described (Sivaramakrishnan and Spudich, 2009). All protocols conform to the guidelines of the local animal care and use committee (IACUC). Extracted keratocytes were washed with AB.BSA and stabilized with phalloidin (50 nM Alexa-488 phalloidin [Invitrogen] and 200 nM unlabeled phalloidin [Sigma]). Purified Cy5-labeled origami-myosin scaffolds in AB.BSA.CAM buffer containing imaging reagents (2 mM ATP, 1 mM phosphocreatine, 0.1 mg/ml creatine-phospho-kinase, 25 \u00b5g/ml glucose-oxidase, 45 \u00b5g/ml catalase, 1% glucose, 1 \u00b5M random library 42-nt ssDNA) were added to extracted keratocytes as previously described (Hariadi et al., 2014). Time-lapse imaging was taken using 150\u00d7 magnification on a Nikon TiE microscope equipped with a 100 \u00d7 1.4 NA Plan-Apo oil-immersion objective, 1.5 magnifier, a mercury arc lamp, Evolve EMCCD camera (512 pixel \u00d7 512 pixel; Photometrics), Nikon Perfect Focus System, and Nikon NIS-Elements software.\n\n#### Photo-cleavable myosin experiments\n\nMyosin-scaffolds were composed of either three photo-cleavable myosin V and three myosin VI or three myosin V and three photo-cleavable myosin VI (Figure 4A\u2013B). Removal of one myosin type from the scaffold was achieved by introducing a photocleavable element in selected myosin-attachment DNA linkers (Supplementary file 1). Myosins with photo-cleavable DNA linkers were released from the scaffolds through continuous excitation with UV laser (405 nm; Coherent CUBE 405\u2013100; 0.2 mW exposure). The trajectories were classified into four classes of movement based on the position of the photo-cleavable linkers and pre/post events (Figure 4).\n\n#### Data analysis\n\nTrajectories of individual scaffold-myosin complexes were analyzed using custom MATLAB Particle Tracking software (Churchman et al., 2005) and Imaris (Bitplane). A 2D-gaussian fit was used to estimate scaffold position with sub-pixel resolution. Intensity of scaffold was used to exclude scaffold dimers. Directional flux analysis was automated with custom-code in Mathematica (available at https://github.com/rizalhariadi/DirectionalAnalysis). Analysis of directional scaffold movement was performed only to scaffold-myosin complexes that moved for more than 6 continuous frames (3 s) and covered a distance of more than 8 pixels (860 nm). For experiments on keratocytes, the directional trajectory was determined as follow. First, a local actin polarity vector was calculated for each trajectory (Hariadi et al., 2014). Then, the movement direction for each trajectory was the calculated by comparing two Euclidian distances along the actin polarity field vector; (1) distance between starting point and cell periphery, \u2206xstart, and (2) distance between finish point and cell periphery, \u2206xfinish. Trajectories away from the cell center have a negative (\u2206xfinish \u2212 \u2206xstart), whereas trajectories toward the cell-center are positive.\n\n### Simulation of competitive movement\n\nThe centers of mass of the two motors are connected by a simple linear spring of stiffness ks and initial inter-motor tension T = 0.The stall force for myosin V and VI are defined as Fhigh and Flow, respectively.The dwell time is assumed to be exponentially distributed, and a series of discrete dwell times are derived from previously measured mean dwell times for myosin V (170 ms) and VI (215 ms) (Hariadi et al., 2014).The motor with the shorter dwell time steps first.A myosin step increases T.a. For movement on an actin filament, a myosin step increases the tension by $N$(\u2206T, 0.1 \u2206T) regardless of motor type, where $N$(\u03bc, \u03c3) represents a normal distribution with mean = \u03bc and standard deviation = \u03c3.b. For movement on keratocytes, a myosin V step increases the tension by $N$(\u2206Thigh, 0.1 \u2206Thigh) whereas a myosin VI step increases the tension by $N$(\u2206Tlow, 0.1 \u2206Tlow).After each motor step, the resulting T is used to modify the dwell time of each motor as follows:a. A linear force-speed relationship is assumed for both motors.b. T is used to calculate the mean speed (\u03bd) and mean dwell time (\u221d \u03bd\u22121) for each motor. The load-dependent speed is given by v = v0 (1 \u2212 T/Fstall), where \u03bdo is the zero-strained speed, Fstall is the stall force of the stepping motor (Fhigh or Flow) and T is the inter-motor tension (0 \u2264 T \u2264 Fstall).c. The discrete dwell time distribution of each motor is modified in proportion to the estimated mean dwell time after each step.The new discrete dwell time distribution is used to identify the next stepping motor, with a repeat of steps 5-7.If T is larger than the stall force of the stepping motor (Fhigh or Flow), then this motor undergoes a conformational change that leads to preferential back-stepping (Gebhardt et al., 2006). This motor is designated as the \u2018losing\u2019 motor. The scaffold is now primed for unidirectional movement lead by the \u2018winning motor\u2019.Steps 1\u20138 are simulated over \u22651000 times for each value of \u2206T, rs (Fhigh/Flow), and for simulations on keratocytes a given value of (\u2206Thigh/\u2206Tlow). For each simulation:a. If the stronger motor (Fhigh) is the winning motor n+ = n+ + 1.b. If the weaker motor (Flow) is the winning motor n\u2212 = n\u2212 + 1.For each condition outward flux is calculated as \u03a6out = n+/(n+ + n\u2212).\u03a6out measurements are plotted over a range of normalized \u2206T (\u2206T/Flow), rs, and (\u2206Thigh/\u2206Tlow).\n\nEstimate inter-molecular tension per step (\u2206T) for movement on keratocytes as a function of kF/ks (Figure 5C\u2013D and Figure 5\u2014figure supplements 1\u20133)\u2014Stochastic simulations of movement of motor ensembles with lever arm flexural rigidity kF and inter-motor stiffness ks on the digitized actin network were performed in Mathematica (Figure 5\u2014figure supplement 1). For movement on keratoctes, \u2206T after each step is given by ks \u2022 (\u2206xpost \u2212 \u2206xpre) \u2264 ks \u2022 s, where \u2206xpost and \u2206xpre are the inter-motor extensions before and after the step and s is the myosin step size on the actin filament. Note that movement on keratocytes gives rise to lower \u2206T than the collective movement on single actin filament (\u2206T = ks \u2022 s). Mean and standard deviation in \u2206T for each kF/ks were computed from 400 simulated steps (Figure 5D).\n\n### Statistical analysis\n\n#### Bootstrap error estimates\n\nBootstrapping was used to estimate the uncertainty (S.E.M.) of a measurement X (Figures 2\u20134, 6). From the data set of size N for measurement X, a subset of data points was randomly selected of size $\u230aN/2\u230b$, where the brackets denote rounding off to the nearest integer. This was repeated \u22651000 times, and in each subset an element was never chosen more than once. An average measurement, xj, was then generated for each data set. Finally, the standard deviation of xj was calculated from these measurements and used to estimate of the uncertainty in the measurement of X.\n",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "5cf3c034-5fde-4ef4-b261-1b11d689d744",
+      "submission_id": "3ddcfc60-6757-46d0-999e-e400457e667a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan A Cooper, Fred Hutchinson Cancer Research Center , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05472.017](https://doi.org/10.7554/eLife.05472.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTuning myosin-driven sorting on cellular actin networks\u201d for consideration at eLife. Your article has been favorably evaluated by Vivek Malhotra (Senior editor), a Reviewing editor, and 3 reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\n1) All reviewers found it difficult to evaluate this paper without reference to your recent 2014 PNAS paper. In some aspects (e.g., the flexural rigidity of the motor dimers) the new paper is almost supplementary to the PNAS paper. But in other aspects (speed and direction of movement, as opposed to trajectory) the new paper makes original points. The paper also has a compelling final model that simply explains the results over various conditions of the study yet assumes only a limited number of motor properties (ratio of motor stall forces, stepping rates, stiffness of intermotor linkage and motor lever arm stiffness). The reviewers request that you more clearly distinguish the new results from the previous ones in the Introduction and Discussion, rewriting as necessary. For example, in the last paragraph of the Introduction claim 3 findings: point 3 was clearly made in the PNAS paper and point 1 was partly addressed there before.\n\n2) Please address the substantive concerns of Reviewers 1 and 2 below. It does not appear that any of these concerns will need new experiments.\n\nReviewer #1:\n\n1) In the subsection headed \u201cActin architecture influences cargo sorting of antagonistic motor assemblies\u201d, why do results differ from previous results? Please explain.\n\n2) In the same section: the track persistence is an important point that is not discussed. I understand that it discussed in the PNAS paper, but not in the same conditions of relative motor number, and it is striking from Figure 3 that the tracks are sometimes very short depending on the number of motors. The absolute velocities should be given in the text at that point, compared with single motor velocities, and discussed. It seems from Figure 2 that two same motors together move 3 times slower than a single one. Can this be explained? The number of different experiments should be indicated in the figure legend.\n\n3) Model: the yellow spring Figure 1F could be better defined. As I understand it is the spring constant of the DNA scaffold? Or is it the one of the motor tail? By the way, how much do we expect? Are we only interested in the relative value of this spring constant with the flexural rigidity? The flexural rigidity kF is not clearly defined (\u201cas previously described [in the PNAS paper]\u201d, in the subsection \u201cStochastic simulations identify key parameters that drive unidirectional movement\u201d), whereas the spring constant ks, which is very classical, is well defined in Figure 5A. More effort should be made in making clear to the author what kF exactly represents (although, again, this can be found in the PNAS paper).\n\n4) Simulations: I understand that simulations are done in 1D? One question that arises is how the structure of the actin network could influence the results? How can one myosin jump on an Arp2/3 branch? Does the length of the trajectory correspond to a single branch? These questions could be addressed by a 2D simulation. Along the same line, \u201cboth motors take forward steps stochastically in opposite directions\u201d (in the subsection \u201cStochastic simulations identify key parameters that drive unidirectional movement\u201d); is that true also on 2D networks?\n\n5) In Figure 5B, it is not clear why PHI=90% when deltaT=0. Please explain.\n\n6) In the same subsection, could the network structure explain that PHI is significantly lower than on single filaments? Could the authors compare track persistence between single filaments and 2D networks? Can the authors comment on step size compared to network mesh size?\n\n7) In the beginning of the Discussion, it is very important that motor assemblies are in steady state motion. Since the authors have simulations, I would expect some explanation. What would change directionality? Can the authors propose a way of testing it experimentally?\n\nReviewer #2:\n\n1) In the subsection \u201cActin architecture influences cargo sorting of antagonistic motor assemblies\u201d, the authors mention that the plus-end biased flux differs from their findings in Hariadi et al., PNAS, 2014; why?\n\n2) What is the physiologically relevant actin network architecture on which transport takes place? If it's the actin cortex, which is a tight meshwork of isotropically oriented filaments, then how well is it really modeled by the branched architecture of actin in the lamellipodium?\n",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "db8987f6-25c3-4fb4-afeb-e7e688127e19",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C1",
+      "claim": "Myosin V and VI are antagonistic motors that cohabit membrane vesicles in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin V and VI are antagonistic motors that cohabit membrane vesicles in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract without specific experimental data in this manuscript, but is presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "9a6ee473-7613-424d-87b6-785ed479da44",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C2",
+      "claim": "DNA nanostructures with myosin V and VI display solely unidirectional movement on both single actin filaments and keratocyte actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "While scaffolds display solely unidirectional movement, their directional flux is modulated by both actin architecture and the structural properties of the myosin lever arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figures 2 and 3, demonstrating unidirectional trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "bdef861c-4eac-49b1-b884-7047124bf535",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C3",
+      "claim": "The directional flux of scaffolds is modulated by actin architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "While scaffolds display solely unidirectional movement, their directional flux is modulated by both actin architecture and the structural properties of the myosin lever arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing 1D actin filaments vs 2D keratocyte networks shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "5671e1e5-2545-4796-80e4-6fb6564cd7b0",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C4",
+      "claim": "The directional flux of scaffolds is modulated by the structural properties of the myosin lever arm.",
+      "claim_type": "EXPLICIT",
+      "source": "While scaffolds display solely unidirectional movement, their directional flux is modulated by both actin architecture and the structural properties of the myosin lever arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with chimeric myosins shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "725c0691-68df-4801-9bef-0042b26843f4",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C5",
+      "claim": "Directional flux can be finely-tuned by the relative number of myosin V and VI motors on each scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "This directional flux can be finely-tuned by the relative number of myosin V and VI motors on each scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Figure 3 showing linear relationship between motor number and directional flux.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "c81d28c9-7727-43ad-a929-076f50a9d3c6",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C6",
+      "claim": "The ratio of motor stall forces is a key determinant of the observed competitive outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairing computation with experimental observations suggests that the ratio of motor stall forces is a key determinant of the observed competitive outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational modeling presented in Figure 5 paired with experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "67d30b53-b207-46cd-8bde-ee6047dad888",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C7",
+      "claim": "Traditional reconstituted systems to study membrane traffic do not incorporate the effects of actin-myosin interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, traditional reconstituted systems to study membrane traffic do not incorporate the effects of actin-myosin interactions (Lee et al., 2004; Zanetti et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "b251b591-8a53-4f68-a92d-179ff41a79aa",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C8",
+      "claim": "Unconventional myosins are necessary for timely membrane traffic.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while unconventional myosins are necessary for timely membrane traffic, their functional role is not apparent in live cell studies (Hasson et al., 1997; Sahlender et al., 2005; Hartman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "1ce4a43f-1f6c-4327-bfa2-78d7f94ec9da",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C9",
+      "claim": "The functional role of unconventional myosins is not apparent in live cell studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while unconventional myosins are necessary for timely membrane traffic, their functional role is not apparent in live cell studies (Hasson et al., 1997; Sahlender et al., 2005; Hartman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "a48f0385-f170-4e1a-b3d9-132a941539aa",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C10",
+      "claim": "Myosin V and VI co-reside on membrane vesicles in neuronal growth cones.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we focus on myosin V and VI, two opposing unconventional myosins that co-reside on membrane vesicles in neuronal growth cones (Suter et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Suter et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "fcc259ee-a53b-47e9-9172-2f8787fd5552",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C11",
+      "claim": "Myosin V has been implicated in secretory traffic.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin V has been implicated in secretory traffic, whereas myosin VI facilitates timely endocytosis (Suter et al., 2000; Kneussel and Wagner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "0272a579-8936-44d0-8cab-1445d3807871",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C12",
+      "claim": "Myosin VI facilitates timely endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin V has been implicated in secretory traffic, whereas myosin VI facilitates timely endocytosis (Suter et al., 2000; Kneussel and Wagner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "d45e1df4-022f-425a-a7a1-a5311653dfda",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C13",
+      "claim": "Myosin V and VI are considered evenly matched antagonistic motors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of myosin V and VI, they are considered evenly matched antagonistic motors (Trybus, 2008; Spudich and Sivaramakrishnan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "d510ba80-8f27-41dd-acc3-a11ab13bc1ae",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C14",
+      "claim": "Myosin V binds membrane cargo as dimers through a coiled-coil motif following its lever arm that natively homodimerizes it.",
+      "claim_type": "EXPLICIT",
+      "source": "Both motors are thought to bind membrane cargo as dimers; myosin V through a coiled-coil motif following its lever arm that natively homodimerizes it, and myosin VI presumably through dimeric adaptor proteins that link it to cargo (Mehta et al., 1999; Buss and Kendrick-Jones, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "21179874-9ed3-4cbf-bb3a-5d9b3e66bc3f",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C15",
+      "claim": "Myosin VI presumably binds membrane cargo through dimeric adaptor proteins that link it to cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Both motors are thought to bind membrane cargo as dimers; myosin V through a coiled-coil motif following its lever arm that natively homodimerizes it, and myosin VI presumably through dimeric adaptor proteins that link it to cargo (Mehta et al., 1999; Buss and Kendrick-Jones, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and includes speculative language ('presumably').",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "5ad2ccd8-91ee-428c-b193-55bf7afef75b",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C16",
+      "claim": "Myosin V homodimers have a step size of 36 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Homodimers of either myosin move processively on actin filaments with similar step sizes (V\u201436 nm; VI\u201430 nm), stepping kinetics (V \u201312 s\u22121; VI \u20139 s\u22121), and stall forces (V \u223c3 pN; VI \u223c2 pN) albeit in opposing directions (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "f2bdf921-0a2e-4633-b066-f5f6712d3a81",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C17",
+      "claim": "Myosin VI homodimers have a step size of 30 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Homodimers of either myosin move processively on actin filaments with similar step sizes (V\u201436 nm; VI\u201430 nm), stepping kinetics (V \u201312 s\u22121; VI \u20139 s\u22121), and stall forces (V \u223c3 pN; VI \u223c2 pN) albeit in opposing directions (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "5bbe5e5f-1429-49a2-9c9a-060e50b18305",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C18",
+      "claim": "Myosin V homodimers have stepping kinetics of 12 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Homodimers of either myosin move processively on actin filaments with similar step sizes (V\u201436 nm; VI\u201430 nm), stepping kinetics (V \u201312 s\u22121; VI \u20139 s\u22121), and stall forces (V \u223c3 pN; VI \u223c2 pN) albeit in opposing directions (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "dc118bc9-2d9f-4647-8ffa-cc14394c2802",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C19",
+      "claim": "Myosin VI homodimers have stepping kinetics of 9 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Homodimers of either myosin move processively on actin filaments with similar step sizes (V\u201436 nm; VI\u201430 nm), stepping kinetics (V \u201312 s\u22121; VI \u20139 s\u22121), and stall forces (V \u223c3 pN; VI \u223c2 pN) albeit in opposing directions (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "2f27257b-0a3a-4b9a-a7e4-c5a59191b872",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C20",
+      "claim": "Myosin V homodimers have a stall force of approximately 3 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Homodimers of either myosin move processively on actin filaments with similar step sizes (V\u201436 nm; VI\u201430 nm), stepping kinetics (V \u201312 s\u22121; VI \u20139 s\u22121), and stall forces (V \u223c3 pN; VI \u223c2 pN) albeit in opposing directions (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "39f3c5c9-d1e2-439f-95cf-4a6c17e25672",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C21",
+      "claim": "Myosin VI homodimers have a stall force of approximately 2 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Homodimers of either myosin move processively on actin filaments with similar step sizes (V\u201436 nm; VI\u201430 nm), stepping kinetics (V \u201312 s\u22121; VI \u20139 s\u22121), and stall forces (V \u223c3 pN; VI \u223c2 pN) albeit in opposing directions (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "4857516e-60b1-4df1-bc80-861e1a98e6a7",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C22",
+      "claim": "All myosin levers, with the exception of myosin VI, swing towards the barbed (plus) end of the actin filament.",
+      "claim_type": "EXPLICIT",
+      "source": "All myosin levers, with the exception of myosin VI, swing towards the barbed (plus) end of the actin filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about myosin mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "82e1372a-232a-4ca0-b499-6f746d19f5b1",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C23",
+      "claim": "A unique insert in myosin VI reverses the direction of its lever stroke towards the pointed (minus) end of the actin filament.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of myosin VI, a unique insert reverses the direction of its lever stroke towards the pointed (minus) end of the actin filament (Liao et al., 2009; Spudich and Sivaramakrishnan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "05848bcf-479b-4d48-bdf0-80b171eab0bb",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C24",
+      "claim": "The myosin V lever consists of six light chain binding IQ-motifs wrapped with calmodulin light chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The myosin V lever consists of six light chain binding IQ-motifs wrapped with calmodulin light chains (Trybus, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "6e6c6213-9f78-4a70-b067-95ea1365fd67",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C25",
+      "claim": "The myosin VI lever is composed of two calmodulin-binding IQ-motifs followed by a pliable proximal tail domain, and a semi-rigid single \u03b1-helical domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The myosin VI lever is composed of two calmodulin-binding IQ-motifs followed by a pliable proximal tail domain, and a semi-rigid single \u03b1-helical domain (Spudich and Sivaramakrishnan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "c0b9452c-fbdb-47f7-888e-aa721f27d59d",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C26",
+      "claim": "Ali et al. (2011) reported that tethering a single myosin V and a single VI homodimer on a quantum dot leads to unidirectional motion on single actin filaments, with myosin V dominating the competition (79% of processive runs towards the plus-end of actin filaments).",
+      "claim_type": "EXPLICIT",
+      "source": "Ali et al. (2011) reported that tethering a single myosin V and a single VI homodimer on a quantum dot leads to unidirectional motion on single actin filaments, with myosin V dominating the competition (79% of processive runs towards the plus-end of actin filaments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports findings from a previous study by Ali et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "e37950ea-4c25-4141-9c32-a054bd7023f4",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C27",
+      "claim": "DNA nanostructures containing two myosin V and two myosin VI molecules interacting with a keratocyte-derived actin network show solely unidirectional movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently extended this finding to DNA nanostructures containing two myosin V and two myosin VI molecules interacting with a keratocyte-derived actin network (Hariadi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "b5117502-a1be-4d0f-95c3-e5a976d10b18",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C28",
+      "claim": "On keratocyte-derived actin networks, myosin V and VI were evenly matched (52% of processive runs towards the keratocyte cell periphery).",
+      "claim_type": "EXPLICIT",
+      "source": "While we did observe solely unidirectional movement, in contrast to Ali et al. (2011), myosin V and VI were evenly matched in our system (52% of processive runs towards the keratocyte cell periphery).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "f8c7f6a1-3292-409a-8fc3-298058181f67",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C29",
+      "claim": "Scaffolds with both myosin V and myosin VI (1V:1VI) commit to a single direction on actin filaments (>99%).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Ali et al., 2011; Hariadi et al., 2014), scaffolds with both myosin V and myosin VI (1V:1VI) commit to a single direction on actin filaments (>99%; Figure 2B) with no directional reversal detected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "2231bf13-ed4c-47b8-890b-8d131f28bd05",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C30",
+      "claim": "The movement of 1V:1VI scaffolds on single actin filaments is dominated by plus-end directed movement (\u03a6out = 68 \u00b1 1%).",
+      "claim_type": "EXPLICIT",
+      "source": "The movement of 1V:1VI scaffolds on single actin filaments is dominated by plus-end directed movement (\u03a6out = 68 \u00b1 1%; Figure 2E), which is qualitatively consistent with previous observations using quantum dot scaffolds (79% plus-end directed [Ali et al., 2011]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E and compared to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "0381c672-ab8f-485e-96d7-86a7d234dec3",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C31",
+      "claim": "For 1V:1VI scaffolds moving along 2D keratocyte actin networks, both plus and minus-end directed movement is equally represented (\u03a6out = 52 \u00b1 1%).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to single actin filaments, both plus and minus-end directed movement is equally represented (\u03a6out = 52 \u00b1 1%; Figure 2E) for 1V:1VI scaffolds moving along 2D keratocyte actin networks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "08d7e98d-5946-4f25-88ca-9793ae50a20f",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C32",
+      "claim": "The discrepancy between previous reports using quantum dots and DNA nanostructures stems primarily from the actin architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the discrepancy between previous reports using quantum dots (Ali et al., 2011) and DNA nanostructures (Hariadi et al., 2014) stems primarily from the actin architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing experimental results on different actin architectures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "f2592224-4f81-466a-bf6d-d8171719b1e7",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C33",
+      "claim": "The origami scaffold commits to a single direction, either towards the cell periphery or the cell center, in every combination of myosin V and VI tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In every combination, the origami scaffold commits to a single direction, either towards the cell periphery or the cell center (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "351eecb7-dd76-4ea8-a425-ebb603c81553",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C34",
+      "claim": "The relative number of scaffolds that move to the cell center and cell periphery varies linearly with the fraction of myosin V or myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative number of scaffolds that move to the cell center and cell periphery (\u03a6out or \u03a6in), however, varies linearly with the fraction of myosin V or myosin VI (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "90551cf3-cbfd-433d-8f20-176fa0518a38",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C35",
+      "claim": "The speed of nanostructures (1V:1VI) along actin filaments is significantly slower than nanostructures containing only two myosin V (2V:\u00d8VI) or two myosin VI (\u00d8V:2VI).",
+      "claim_type": "EXPLICIT",
+      "source": "The speed of nanostructures (1V:1VI = (+) 162 \u00b1 7 nm/s; (\u2212) 66 \u00b1 5 nm/s) along actin filaments is significantly slower than nanostructures containing only two myosin V (2V:\u00d8VI = (+) 273 \u00b1 8 nm/s) or two myosin VI (\u00d8V:2VI = (\u2212) 130 \u00b1 7 nm/s) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "21dd011b-9dc5-445e-8252-00997210bd57",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C36",
+      "claim": "The speed of nanostructure movement on the keratocyte network decreases as the difference in the number of the two motor types approaches zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the speed of nanostructure movement on the keratocyte network decreases as the difference in the number of the two motor types approaches zero (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "eadf69bd-6419-4113-b0b6-2b70c557777f",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C37",
+      "claim": "All of the motors can continuously interact with the actin tracks and collectively engage in competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the reduction in speed for antagonistic ensembles, as compared to groups of one myosin type, we hypothesized that all of the motors can continuously interact with the actin tracks and collectively engage in competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on observed speed reductions, later tested with photo-cleavage experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "eafbb692-a5e6-4b04-997b-f0126805adbb",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C38",
+      "claim": "Removal of one myosin type from the competition increases the speed and results in a single direction of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of which motor type is cleaved, removal of one myosin type from the competition increases the speed and results in a single direction of movement (Figure 4C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by photo-cleavage experimental data shown in Figure 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "5ee17ae4-2832-4b45-bcaa-3ff10d621754",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C39",
+      "claim": "All motors, regardless of type, are able to access the actin tracks and engage in continuous competition.",
+      "claim_type": "EXPLICIT",
+      "source": "The directional switch and increase in speed after photo-cleavage indicate that all motors, regardless of type, are able to access the actin tracks and engage in continuous competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the photo-cleavage experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "df08a833-bb95-4520-853e-9f0a4abd2972",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C40",
+      "claim": "The collective movement is due to a continuous interaction of both motor types, and not due to detachment of losing motors from the actin track (or scaffold), when overpowered by the winning motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest that the collective movement is due to a continuous interaction of both motor types, and not due to detachment of losing motors from the actin track (or scaffold), when overpowered by the winning motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from multiple experimental observations including speed reduction and photo-cleavage experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "2aa60f52-8a16-4f52-a95d-fe13820e7495",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C41",
+      "claim": "Myosin V changes the trajectory shape of ensembles of myosin V and VI on 2D actin tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the underlying continuous interaction is also consistent with our previous observation that myosin V changes the trajectory shape of ensembles of myosin V and VI on 2D actin tracks (Hariadi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "15caaba5-260c-42bd-80b5-39fb990302d5",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C42",
+      "claim": "A motor can only perform a forward step if the resulting inter-motor tension (T) is less than its stall force.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model assumes that a motor can only perform a forward step if the resulting inter-motor tension (T) is less than its stall force (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an assumption in the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "87a6931b-bf8a-47f7-a61a-e22fbc139bba",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C43",
+      "claim": "For equally matched motors (rs = 1), there is an equal probability of trajectories moving in either direction (\u03a6out = 50%).",
+      "claim_type": "EXPLICIT",
+      "source": "For equally matched motors (rs = 1), there is an equal probability of trajectories moving in either direction (\u03a6out = 50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "f5db0d49-1e0f-4814-bd05-92d464450cf2",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C44",
+      "claim": "For \u2206T/Flow < 0.5, the inter-motor tension exceeds the stall force of the weaker motor, with the stronger motor winning most of the competitions (\u03a6out > 80%).",
+      "claim_type": "EXPLICIT",
+      "source": "For \u2206T/Flow < 0.5, the inter-motor tension exceeds the stall force of the weaker motor, with the stronger motor winning most of the competitions (\u03a6out > 80%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "48524db2-a340-4bf9-95da-8823af6aa001",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C45",
+      "claim": "For 0.5 < \u2206T/Flow < 1 and stochastic stepping, there is a finite and increasing probability of inter-motor tension exceeding the stall force of the stronger motor, resulting in the weaker motor winning the competition (60% < \u03a6out < 80%).",
+      "claim_type": "EXPLICIT",
+      "source": "However, for 0.5 < \u2206T/Flow < 1 and stochastic stepping, there is a finite and increasing probability of inter-motor tension exceeding the stall force of the stronger motor ('Materials and methods'), resulting in the weaker motor winning the competition (60% < \u03a6out < 80%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "362d67e7-1e9c-43e7-b4ab-29ca5d7b2ec3",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C46",
+      "claim": "The higher the kF/ks of a motor, the greater the \u2206T when it steps forward on a 2D network.",
+      "claim_type": "EXPLICIT",
+      "source": "On a 2D network, the higher the kF/ks of a motor, the greater the \u2206T when it steps forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from computational simulations on 2D networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "2b715acc-f9f0-4e56-a6c5-e768313fff94",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C47",
+      "claim": "Linking a rigid motor (kF/ks >> 1; \u2206Thigh) to a more flexible one (kF/ks << 1; \u2206Tlow) is sufficient to systematically bias the competition in favor of the flexible motor.",
+      "claim_type": "EXPLICIT",
+      "source": "For such simulations on 2D networks, linking a rigid motor (kF/ks >> 1; \u2206Thigh) to a more flexible one (kF/ks << 1; \u2206Tlow) is sufficient to systematically bias the competition in favor of the flexible motor (\u2193\u03a6out with \u2191\u2206Thigh/\u2206Tlow; Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from computational simulations shown in Figure 5E.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "25ce219e-c4c5-436b-b436-5ecf46316301",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C48",
+      "claim": "The greater flexural rigidity of myosin V compared to myosin VI is sufficient to equalize the competition on 2D networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our simulations reveal that the greater flexural rigidity of myosin V compared to myosin VI is sufficient to equalize the competition on 2D networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from computational simulations paired with experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "7cf2b93c-2930-4f65-b8c9-0d017f5c92ec",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C49",
+      "claim": "The outward flux for ensembles involving either chimera (1V/VI:1VI or 1VI/V:1V) on 2D actin networks are significantly higher than scaffolds with 1V:1VI.",
+      "claim_type": "EXPLICIT",
+      "source": "The outward flux for ensembles involving either chimera (Figure 6A; i or ii) on 2D actin networks are significantly higher than scaffolds with 1V:1VI (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "e0197424-e2e4-4a21-bfdc-c7db83e0de47",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C50",
+      "claim": "Balancing the tension per step (\u2206T) between the antagonistic motors is sufficient to restore the dominance of the stronger motor (myosin V) on 2D actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher outward flux indicates that balancing the tension per step (\u2206T) between the antagonistic motors is sufficient the restore the dominance of the stronger motor (myosin V) on 2D actin networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the chimera experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "5c8735fe-0f6c-471c-b74f-888b5ef1a588",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C51",
+      "claim": "Antagonistic motor ensembles display solely unidirectional movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that while antagonistic motor ensembles display solely unidirectional movement, as previously reported (Ali et al., 2011; Hariadi et al., 2014), their directional sorting can be linearly tuned by the relative number of the two motor types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "a327b238-f3d3-448d-b728-fd4cb3dda9cc",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C52",
+      "claim": "Directional sorting of antagonistic motor ensembles can be linearly tuned by the relative number of the two motor types.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that while antagonistic motor ensembles display solely unidirectional movement, as previously reported (Ali et al., 2011; Hariadi et al., 2014), their directional sorting can be linearly tuned by the relative number of the two motor types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "0bb4ca12-0e1f-4453-8d16-5c3e236e224f",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C53",
+      "claim": "Directional sorting can be modulated independently by the myosin lever arm and the actin architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this directional sorting can be modulated independently by the myosin lever arm and the actin architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing different actin architectures and chimeric myosins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "6f02cc09-9d36-485b-886b-171baa6c71ed",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C54",
+      "claim": "Competitive outcome is dependent on the ratio of the stall forces of the antagonistic motor types.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations support a simple generalizable model, wherein competitive outcome is dependent on the ratio of the stall forces of the antagonistic motor types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from computational modeling and experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "35a64753-1184-4f39-b929-d7423cbcc460",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C55",
+      "claim": "Scaffold run length linearly increases with motor number.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as previously reported (Hariadi et al., 2014), scaffold run length linearly increases with motor number (Supplementary file 2), suggesting that multiple motors on the same scaffold are capable of interacting with the actin network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to previous work and supplementary data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "7e54b74f-55bd-488a-8538-cea650534065",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C56",
+      "claim": "Multiple motors on the same scaffold are capable of interacting with the actin network.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as previously reported (Hariadi et al., 2014), scaffold run length linearly increases with motor number (Supplementary file 2), suggesting that multiple motors on the same scaffold are capable of interacting with the actin network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that run length increases with motor number.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "d1d20e89-f27f-47c3-a8b2-0f1b61be5fe3",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C57",
+      "claim": "The reduction in speed with both myosin subtypes is consistent with the trailing myosin interacting with the actin network.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in speed with both myosin subtypes is consistent with the trailing myosin interacting with the actin network, despite the unidirectional movement of the scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from speed measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "48ffbe0c-a248-4340-a4a3-9bc53a33d0ab",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C58",
+      "claim": "The coordinated back-stepping of the trailing motor was observed by Ali et al. (2007).",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is consistent with the coordinated back-stepping of the trailing motor observed by Ali et al. (2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to observations from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "e033663d-ea43-4cd9-9879-e05a9de4d153",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C59",
+      "claim": "For scaffolds with both subtypes the speed decreases as the numbers of myosin V and VI are more evenly matched.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, for scaffolds with both subtypes the speed decreases as the numbers of myosin V and VI are more evenly matched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "95618a21-83b7-4477-bc2e-8088728f428a",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C60",
+      "claim": "The systematic reduction in speed argues for progressive engagement of additional antagonistic motors with the actin network.",
+      "claim_type": "EXPLICIT",
+      "source": "This systematic reduction in speed alone argues for progressive engagement of additional antagonistic motors with the actin network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the speed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "8db2ab9e-3234-4ce4-82d4-ab4b1ef46cdf",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C61",
+      "claim": "Removal of the antagonistic myosin leads to either an increase in speed (release trailing motor) or a reversal in direction (release leading motor).",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, experiments with photo-cleavable myosin-scaffold linkages further show that removal of the antagonistic myosin leads to either an increase in speed (release trailing motor) or a reversal in direction (release leading motor) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by photo-cleavage experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "95a01510-b906-48c6-8821-638e730a8c45",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C62",
+      "claim": "The ratio of the stall forces (rs = Fhigh/Flow) of the antagonistic motors is the key parameter that determines the outcome of scaffold sorting on 1D or 2D actin filament tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model identifies the ratio of the stall forces (rs = Fhigh/Flow) of the antagonistic motors as the key parameter that determines the outcome of scaffold sorting on 1D or 2D actin filament tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "412444bf-dadf-4a00-be38-2b58a406db03",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C63",
+      "claim": "For ensembles with mismatched motors (rs > 2), the model predicts unidirectional movement led solely by the stronger motor.",
+      "claim_type": "EXPLICIT",
+      "source": "For ensembles with mismatched motors (rs > 2), the model predicts unidirectional movement led solely by the stronger motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "88adf731-d7db-4d66-8a92-26edea5d3f78",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C64",
+      "claim": "For motors of similar strength (1 < rs < 2), the model predicts that either motor may lead the unidirectional motion, with the directional flux of scaffolds dependent on rs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for motors of similar strength (1 < rs < 2), the model predicts that either motor may lead the unidirectional motion, with the directional flux of scaffolds dependent on rs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "8564f685-f581-4ecc-a640-779b4da01ffd",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C65",
+      "claim": "The model is in agreement with a recent report of unidirectional trajectories for DNA scaffolds linked to both kinesins and dyneins on 1D microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the model is in agreement with a recent report of unidirectional trajectories for DNA scaffolds linked to both kinesins and dyneins on 1D microtubules (Derr et al., 2012; Roberts et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the model predictions to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "d08667a2-d467-465f-849f-c0d1257665a0",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C66",
+      "claim": "The model differs from the bi-directional movement of isolated endosomes that are driven by a combination of native kinesin and dynein motors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it differs from the bi-directional movement of isolated endosomes that are driven by a combination of native kinesin and dynein motors (Soppina et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the model to observations from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "41eb824a-a1a4-4c1f-85aa-6f3cab15c215",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C67",
+      "claim": "Bi-directional movement of endosomes stems from the influence of additional regulatory elements on native endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate, though, that bi-directional movement stems from the influence of additional regulatory elements on native endosomes (Kunwar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "e7c24d2e-e441-4112-86c2-56d18b097d34",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C68",
+      "claim": "Motors with greater intra-motor torsional strain (rigid lever) experience a larger inter-motor tension per step and hence lose their competitive edge on 2D networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, motors with greater intra-motor torsional strain (rigid lever) experience a larger inter-motor tension per step and hence lose their competitive edge on 2D networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from computational modeling and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "16bc8fe8-9153-4292-90c8-d261e922a1f7",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C69",
+      "claim": "The structural properties of the myosin lever arm control the directional flux of scaffolds on model cellular actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the structural properties of the myosin lever arm control the directional flux of scaffolds on our model cellular actin network, thus having implications on sorting of vesicular cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data with chimeric myosins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "c5665366-f36f-43ed-a40f-ed8c52b3941f",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C70",
+      "claim": "An extension of the myosin X lever arm is necessary for its preferential processive movement on parallel actin bundles, but not on single actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, an extension of the myosin X lever arm is necessary for its preferential processive movement on parallel actin bundles, but not on single actin filaments (Brawley and Rock, 2009; Nagy and Rock, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "5f3702f4-b804-4117-8a76-f019fc101f69",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C71",
+      "claim": "Myosin VI has a unique three-helix bundle in its lever arm, which can unfold to alter the motor's structural properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin VI, on the other hand, has a unique three-helix bundle in its lever arm, which can unfold to alter the motor's structural properties (Mukherjea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "d8736782-b73f-48ee-a99a-f0bf75443ced",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C72",
+      "claim": "For groups of myosin V and VI, the flexibility of the lever arm controls trajectory shapes on 2D actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for groups of myosin V and VI, the flexibility of the lever arm controls trajectory shapes on 2D actin networks (Hariadi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "5de4ffe7-9d3a-43d5-ad02-4a63eb1d9d69",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C73",
+      "claim": "Single myosin V and VI have different stepping dynamics at actin filament intersections than on actin bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, single myosin V and VI have different stepping dynamics at actin filament intersections (Ali et al., 2007) then on actin bundles (Ali et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "d4d995ce-db28-4eab-a6b0-5cdb74fc6249",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C74",
+      "claim": "Individual myosin V, VI, and X dimers show preferential motility on different actin architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "An in situ motility assay using detergent-extracted cells also reported that individual myosin V, VI, and X dimers show preferential motility on different actin architectures (Brawley and Rock, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "88799c2b-c074-4b8e-b57d-aa68afc5e196",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C75",
+      "claim": "The mesh size of the keratocyte actin network (\u223c30 nm) is comparable to the step size of myosin V (\u223c35 nm) and VI (\u223c30 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "Mesh size of the keratocyte actin network (\u223c30 nm) (Svitkina et al., 1995) is comparable to the step size of myosin V (\u223c35 nm) and VI (\u223c30 nm) (Rock et al., 2001; Yildiz et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "e01e1967-74da-4faf-9089-e28599d9712f",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C76",
+      "claim": "The keratocyte actin network is depicted by actin filaments oriented at \u00b135\u00b0, which corresponds to the characteristic Arp2/3 branch angle.",
+      "claim_type": "EXPLICIT",
+      "source": "The keratocyte actin network is depicted by actin filaments oriented at \u00b135\u00b0, which corresponds to the characteristic Arp2/3 branch angle (Maly and Borisy, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "09bb843f-ae35-486c-87db-9d2e8c60398e",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C77",
+      "claim": "The DNA nanostructure scaffold has six attachment sites at the vertices of a hexagon (35-nm side), yielding 122 unique myosin V and VI combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Illustration of a programmable DNA scaffold (Rothemund, 2006) with six attachment sites at the vertices of a hexagon (dashed-line, 35-nm side), yielding 122 unique myosin V and VI combinations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A with citation to the DNA origami method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "0375a438-ebb2-40bd-9527-d2e2a39c5a91",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C78",
+      "claim": "Detergent-extracted keratocytes have a sufficiently large surface area (\u223c10 \u03bcm \u00d7 \u223c30 \u03bcm) allowing for simultaneous tracking of multiple myosin-labeled scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 2D actin networks, we used detergent-extracted keratocytes (Hariadi et al., 2014) (Figure 1C), which have a sufficiently large surface area (\u223c10 \u03bcm \u00d7 \u223c30 \u03bcm) allowing for simultaneous tracking of multiple myosin-labeled scaffolds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental system with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "40f20094-8f04-4214-86b6-dc978ed033cd",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C79",
+      "claim": "The main core of the nanostructure is a flat rectangular DNA origami scaffold with 10.44 bp/turn, consisting of 24 DNA helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The main core of the nanostructure is a flat rectangular DNA origami scaffold with 10.44 bp/turn, consisting of 24 DNA helices (Woo and Rothermund, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1 with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "bf1a31a5-f607-4320-8f80-4577d879b458",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C80",
+      "claim": "The scaffold is decorated with 23 Cy3 fluorophores to facilitate a high signal-to-noise ratio imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The scaffold is decorated with 23 Cy3 fluorophores (shown as red light bulbs) to facilitate a high signal-to-noise ratio imaging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "2859de9a-f77a-4519-b465-2dca7bfafdad",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C81",
+      "claim": "Myosin V and VI were engineered with SNAP tags for covalent attachment of unique DNA oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin V and VI were engineered with SNAP tags (Hariadi et al., 2014) for covalent attachment of unique DNA oligonucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "83ada9d0-663f-420a-a5a0-e1b233defc48",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C82",
+      "claim": "A linear force-speed relationship is assumed for both motors in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear force-speed relationship is assumed for both motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption stated in the Materials and methods for the simulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "c94a964e-fe8f-4c05-9b92-58a0083ac0eb",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "claim_id": "C83",
+      "claim": "The load-dependent speed is given by v = v0 (1 \u2212 T/Fstall), where \u03bdo is the zero-strained speed, Fstall is the stall force of the stepping motor and T is the inter-motor tension.",
+      "claim_type": "EXPLICIT",
+      "source": "The load-dependent speed is given by v = v0 (1 \u2212 T/Fstall), where \u03bdo is the zero-strained speed, Fstall is the stall force of the stepping motor (Fhigh or Flow) and T is the inter-motor tension (0 \u2264 T \u2264 Fstall).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical relationship used in the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0eb290cd-a55a-47e1-af6f-59e364420e3a",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DNA scaffolds with myosin V and VI display solely unidirectional movement on both 1D actin filaments and 2D keratocyte networks, but the directional flux differs between architectures. On 1D filaments, myosin V dominates (68% plus-end directed), while on 2D networks the motors are evenly matched (52% outward flux). This discrepancy stems primarily from actin architecture rather than scaffold type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C29-C32 are well-supported by experimental data in Figures 2 and 3, showing unidirectional movement with architecture-dependent directional flux. The comparison between 1D and 2D systems is systematic and includes appropriate controls (C29-C31). The conclusion that actin architecture is the primary determinant (C32) is justified by the experimental design that isolates this variable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "29fe34b1-6888-4a29-b953-36fb32930774",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Directional flux of scaffolds can be linearly tuned by the relative number of myosin V and VI motors and is independently modulated by both actin architecture and myosin lever arm structural properties. The relationship between motor number and directional flux is linear (R\u00b2 = 0.80).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C34, C52-C53 are supported by systematic experimental data in Figure 3 showing linear relationships between motor ratios and directional flux. The R\u00b2 value of 0.80 indicates good fit. Independent modulation by lever arm properties is demonstrated through chimera experiments (Figure 6). Sample sizes appear adequate (N=58-1897 trajectories).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "All motors on antagonistic scaffolds continuously engage with actin tracks during unidirectional movement, as evidenced by reduced speeds compared to single motor-type scaffolds and photo-cleavage experiments showing directional switches and speed increases upon motor removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40, C55-C61 form a coherent argument supported by multiple lines of evidence: speed reduction data (Figure 2D, 3C), run length analysis (C55), and photo-cleavage experiments (Figure 4). The photo-cleavage experiments provide particularly strong evidence for continuous engagement (C38-C40, C61). Statistical significance is reported (p < 0.01 for photo-cleavage). The logic connecting observations to conclusions is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Computational modeling identifies the ratio of motor stall forces (rs = Fhigh/Flow) as the key parameter determining competitive outcomes. For motors with similar strength (1 < rs < 2), directional flux depends on normalized inter-motor tension per step (\u0394T/Flow). On 2D networks, lever arm flexural rigidity modulates \u0394T, with rigid motors experiencing greater tension per step and losing competitive advantage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C42-C48, C54, C62-C64, C68 describe a computational model that successfully predicts experimental observations. The model assumptions (C42, C82-C83) are reasonable. Model predictions match experimental data for both 1D filaments (\u03a6out = 68%, Figure 5B) and 2D networks (\u03a6out = 52%, Figure 5E). The identification of \u0394Thigh/\u0394Tlow = 1.20 \u00b1 0.05 as explaining the 2D network behavior is quantitative and testable. However, the model is relatively simple and some parameters (ks, kF) are not independently measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "df23fe2b-eb40-401b-9c6e-02bb97d48889",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Chimeric myosins with swapped lever arms restore myosin V dominance on 2D networks by balancing tension per step between antagonistic motors. Both V/VI:VI (flexible vs flexible) and VI/V:V (rigid vs rigid) chimera pairs show significantly higher outward flux than wild-type 1V:1VI scaffolds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50, C69 are supported by experimental data in Figure 6B showing significantly higher outward flux for both chimera combinations compared to wild-type. This provides direct experimental validation of the computational model's prediction that lever arm rigidity affects competitive outcomes. The experimental design is appropriate, testing both possible chimera combinations. Sample sizes appear adequate (N \u2265 126 trajectories).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "57bbbdb6-a9de-4960-9e05-75b7e6c59da2",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Myosin V and VI are antagonistic motors that co-reside on membrane vesicles in cells, with myosin V implicated in secretory traffic and myosin VI in endocytosis. Both bind cargo as dimers and are considered evenly matched.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C15 establish biological context through citations to prior literature. These are well-established facts in the field supported by appropriate references (Suter et al., 2000; Kneussel and Wagner, 2013; Trybus, 2008; Spudich and Sivaramakrishnan, 2010; Mehta et al., 1999; Buss and Kendrick-Jones, 2008). C15 appropriately uses tentative language ('presumably') for the less certain myosin VI dimerization mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Myosin V and VI have similar biophysical properties (step sizes ~30-36 nm, stepping kinetics ~9-12 s\u207b\u00b9, stall forces ~2-3 pN) but opposite directionality due to a unique insert in myosin VI. They have structurally distinct lever arms with different flexural rigidities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C25 summarize established biophysical properties from prior literature with appropriate citations (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004; Liao et al., 2009; Trybus, 2008; Spudich and Sivaramakrishnan, 2010). These provide essential background for interpreting the current study's results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior studies show varied outcomes for antagonistic motor competitions depending on experimental conditions. The current work reconciles discrepancies between quantum dot and DNA nanostructure studies, attributing differences to actin architecture rather than scaffold type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C41, C58, C65-C67, C70-C74 appropriately cite and contextualize prior work (Ali et al., 2011; Hariadi et al., 2014; Derr et al., 2012; Roberts et al., 2014; Soppina et al., 2009; and others). The reconciliation of prior discrepancies (C26-C28, C32) is a valuable contribution. C67 appropriately identifies speculation about endosome bidirectionality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "6de7f81c-01c8-4803-98d6-2f46acbc6b6b",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Traditional reconstituted systems do not incorporate actin-myosin interactions, and while unconventional myosins are necessary for membrane traffic, their functional roles are not apparent in live cell studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 establish the knowledge gap motivating this study, supported by appropriate citations (Lee et al., 2004; Zanetti et al., 2012; Hasson et al., 1997; Sahlender et al., 2005; Hartman et al., 2011). This provides clear rationale for the reconstitution approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "00a03d06-6754-4a90-9b7f-633ed5e6e28d",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The experimental system uses DNA origami scaffolds with six attachment sites for myosins, decorated with 23 Cy3 fluorophores, on detergent-extracted keratocyte actin networks with ~30 nm mesh size and \u00b135\u00b0 filament orientation matching Arp2/3 branch angles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 describe the experimental system with appropriate technical detail and citations (Rothemund, 2006; Woo and Rothermund, 2011; Hariadi et al., 2014; Svitkina et al., 1995; Maly and Borisy, 2001). The system design is well-justified and technically sound. Figures 1 and supplements provide visual confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    },
+    {
+      "id": "324246a5-a4fb-469b-9161-0cd1a75417c7",
+      "content_id": "4dcdfc13-21cc-44d3-a700-cde55fa36c6a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The computational model assumes a linear force-speed relationship for both motors, with load-dependent speed given by v = v0(1 \u2212 T/Fstall).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 describe reasonable modeling assumptions. Linear force-velocity relationships are well-established for myosins in the literature. The mathematical formulation is standard and appropriate for this type of model. However, the model is relatively simple and does not capture all biological complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:15.721190Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9a6ee473-7613-424d-87b6-785ed479da44",
+      "result_id": "0eb290cd-a55a-47e1-af6f-59e364420e3a"
+    },
+    {
+      "claim_id": "f8c7f6a1-3292-409a-8fc3-298058181f67",
+      "result_id": "0eb290cd-a55a-47e1-af6f-59e364420e3a"
+    },
+    {
+      "claim_id": "2231bf13-ed4c-47b8-890b-8d131f28bd05",
+      "result_id": "0eb290cd-a55a-47e1-af6f-59e364420e3a"
+    },
+    {
+      "claim_id": "0381c672-ab8f-485e-96d7-86a7d234dec3",
+      "result_id": "0eb290cd-a55a-47e1-af6f-59e364420e3a"
+    },
+    {
+      "claim_id": "08d7e98d-5946-4f25-88ca-9793ae50a20f",
+      "result_id": "0eb290cd-a55a-47e1-af6f-59e364420e3a"
+    },
+    {
+      "claim_id": "f2592224-4f81-466a-bf6d-d8171719b1e7",
+      "result_id": "0eb290cd-a55a-47e1-af6f-59e364420e3a"
+    },
+    {
+      "claim_id": "5c8735fe-0f6c-471c-b74f-888b5ef1a588",
+      "result_id": "0eb290cd-a55a-47e1-af6f-59e364420e3a"
+    },
+    {
+      "claim_id": "bdef861c-4eac-49b1-b884-7047124bf535",
+      "result_id": "29fe34b1-6888-4a29-b953-36fb32930774"
+    },
+    {
+      "claim_id": "5671e1e5-2545-4796-80e4-6fb6564cd7b0",
+      "result_id": "29fe34b1-6888-4a29-b953-36fb32930774"
+    },
+    {
+      "claim_id": "725c0691-68df-4801-9bef-0042b26843f4",
+      "result_id": "29fe34b1-6888-4a29-b953-36fb32930774"
+    },
+    {
+      "claim_id": "351eecb7-dd76-4ea8-a425-ebb603c81553",
+      "result_id": "29fe34b1-6888-4a29-b953-36fb32930774"
+    },
+    {
+      "claim_id": "a327b238-f3d3-448d-b728-fd4cb3dda9cc",
+      "result_id": "29fe34b1-6888-4a29-b953-36fb32930774"
+    },
+    {
+      "claim_id": "0bb4ca12-0e1f-4453-8d16-5c3e236e224f",
+      "result_id": "29fe34b1-6888-4a29-b953-36fb32930774"
+    },
+    {
+      "claim_id": "90551cf3-cbfd-433d-8f20-176fa0518a38",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "21dd011b-9dc5-445e-8252-00997210bd57",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "eadf69bd-6419-4113-b0b6-2b70c557777f",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "eafbb692-a5e6-4b04-997b-f0126805adbb",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "5ee17ae4-2832-4b45-bcaa-3ff10d621754",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "df08a833-bb95-4520-853e-9f0a4abd2972",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "35a64753-1184-4f39-b929-d7423cbcc460",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "7e54b74f-55bd-488a-8538-cea650534065",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "d1d20e89-f27f-47c3-a8b2-0f1b61be5fe3",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "e033663d-ea43-4cd9-9879-e05a9de4d153",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "95618a21-83b7-4477-bc2e-8088728f428a",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "8db2ab9e-3234-4ce4-82d4-ab4b1ef46cdf",
+      "result_id": "4e81389a-00ec-45cf-b2b7-abf8d9b5ed7b"
+    },
+    {
+      "claim_id": "c81d28c9-7727-43ad-a929-076f50a9d3c6",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "15caaba5-260c-42bd-80b5-39fb990302d5",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "87a6931b-bf8a-47f7-a61a-e22fbc139bba",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "f5db0d49-1e0f-4814-bd05-92d464450cf2",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "48524db2-a340-4bf9-95da-8823af6aa001",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "362d67e7-1e9c-43e7-b4ab-29ca5d7b2ec3",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "2b715acc-f9f0-4e56-a6c5-e768313fff94",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "25ce219e-c4c5-436b-b436-5ecf46316301",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "6f02cc09-9d36-485b-886b-171baa6c71ed",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "95a01510-b906-48c6-8821-638e730a8c45",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "412444bf-dadf-4a00-be38-2b58a406db03",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "88adf731-d7db-4d66-8a92-26edea5d3f78",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "e7c24d2e-e441-4112-86c2-56d18b097d34",
+      "result_id": "22c62ecb-050f-43ab-ad2c-fee1856cd64c"
+    },
+    {
+      "claim_id": "7cf2b93c-2930-4f65-b8c9-0d017f5c92ec",
+      "result_id": "df23fe2b-eb40-401b-9c6e-02bb97d48889"
+    },
+    {
+      "claim_id": "e0197424-e2e4-4a21-bfdc-c7db83e0de47",
+      "result_id": "df23fe2b-eb40-401b-9c6e-02bb97d48889"
+    },
+    {
+      "claim_id": "16bc8fe8-9153-4292-90c8-d261e922a1f7",
+      "result_id": "df23fe2b-eb40-401b-9c6e-02bb97d48889"
+    },
+    {
+      "claim_id": "db8987f6-25c3-4fb4-afeb-e7e688127e19",
+      "result_id": "57bbbdb6-a9de-4960-9e05-75b7e6c59da2"
+    },
+    {
+      "claim_id": "a48f0385-f170-4e1a-b3d9-132a941539aa",
+      "result_id": "57bbbdb6-a9de-4960-9e05-75b7e6c59da2"
+    },
+    {
+      "claim_id": "fcc259ee-a53b-47e9-9172-2f8787fd5552",
+      "result_id": "57bbbdb6-a9de-4960-9e05-75b7e6c59da2"
+    },
+    {
+      "claim_id": "0272a579-8936-44d0-8cab-1445d3807871",
+      "result_id": "57bbbdb6-a9de-4960-9e05-75b7e6c59da2"
+    },
+    {
+      "claim_id": "d45e1df4-022f-425a-a7a1-a5311653dfda",
+      "result_id": "57bbbdb6-a9de-4960-9e05-75b7e6c59da2"
+    },
+    {
+      "claim_id": "d510ba80-8f27-41dd-acc3-a11ab13bc1ae",
+      "result_id": "57bbbdb6-a9de-4960-9e05-75b7e6c59da2"
+    },
+    {
+      "claim_id": "21179874-9ed3-4cbf-bb3a-5d9b3e66bc3f",
+      "result_id": "57bbbdb6-a9de-4960-9e05-75b7e6c59da2"
+    },
+    {
+      "claim_id": "5ad2ccd8-91ee-428c-b193-55bf7afef75b",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "f2bdf921-0a2e-4633-b066-f5f6712d3a81",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "5bbe5e5f-1429-49a2-9c9a-060e50b18305",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "dc118bc9-2d9f-4647-8ffa-cc14394c2802",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "2f27257b-0a3a-4b9a-a7e4-c5a59191b872",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "39f3c5c9-d1e2-439f-95cf-4a6c17e25672",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "4857516e-60b1-4df1-bc80-861e1a98e6a7",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "82e1372a-232a-4ca0-b499-6f746d19f5b1",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "05848bcf-479b-4d48-bdf0-80b171eab0bb",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "6e6c6213-9f78-4a70-b067-95ea1365fd67",
+      "result_id": "19bcbc4c-c773-481b-9397-47b4f0a7d3eb"
+    },
+    {
+      "claim_id": "c0b9452c-fbdb-47f7-888e-aa721f27d59d",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "e37950ea-4c25-4141-9c32-a054bd7023f4",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "b5117502-a1be-4d0f-95c3-e5a976d10b18",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "2aa60f52-8a16-4f52-a95d-fe13820e7495",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "48ffbe0c-a248-4340-a4a3-9bc53a33d0ab",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "8564f685-f581-4ecc-a640-779b4da01ffd",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "d08667a2-d467-465f-849f-c0d1257665a0",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "41eb824a-a1a4-4c1f-85aa-6f3cab15c215",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "c5665366-f36f-43ed-a40f-ed8c52b3941f",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "5f3702f4-b804-4117-8a76-f019fc101f69",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "d8736782-b73f-48ee-a99a-f0bf75443ced",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "5de4ffe7-9d3a-43d5-ad02-4a63eb1d9d69",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "d4d995ce-db28-4eab-a6b0-5cdb74fc6249",
+      "result_id": "0ba2724c-1c95-4322-8c65-cc3ecc8b13b9"
+    },
+    {
+      "claim_id": "67d30b53-b207-46cd-8bde-ee6047dad888",
+      "result_id": "6de7f81c-01c8-4803-98d6-2f46acbc6b6b"
+    },
+    {
+      "claim_id": "b251b591-8a53-4f68-a92d-179ff41a79aa",
+      "result_id": "6de7f81c-01c8-4803-98d6-2f46acbc6b6b"
+    },
+    {
+      "claim_id": "1ce4a43f-1f6c-4327-bfa2-78d7f94ec9da",
+      "result_id": "6de7f81c-01c8-4803-98d6-2f46acbc6b6b"
+    },
+    {
+      "claim_id": "88799c2b-c074-4b8e-b57d-aa68afc5e196",
+      "result_id": "00a03d06-6754-4a90-9b7f-633ed5e6e28d"
+    },
+    {
+      "claim_id": "e01e1967-74da-4faf-9089-e28599d9712f",
+      "result_id": "00a03d06-6754-4a90-9b7f-633ed5e6e28d"
+    },
+    {
+      "claim_id": "09bb843f-ae35-486c-87db-9d2e8c60398e",
+      "result_id": "00a03d06-6754-4a90-9b7f-633ed5e6e28d"
+    },
+    {
+      "claim_id": "0375a438-ebb2-40bd-9527-d2e2a39c5a91",
+      "result_id": "00a03d06-6754-4a90-9b7f-633ed5e6e28d"
+    },
+    {
+      "claim_id": "40f20094-8f04-4214-86b6-dc978ed033cd",
+      "result_id": "00a03d06-6754-4a90-9b7f-633ed5e6e28d"
+    },
+    {
+      "claim_id": "bf1a31a5-f607-4320-8f80-4577d879b458",
+      "result_id": "00a03d06-6754-4a90-9b7f-633ed5e6e28d"
+    },
+    {
+      "claim_id": "2859de9a-f77a-4519-b465-2dca7bfafdad",
+      "result_id": "00a03d06-6754-4a90-9b7f-633ed5e6e28d"
+    },
+    {
+      "claim_id": "83ada9d0-663f-420a-a5a0-e1b233defc48",
+      "result_id": "324246a5-a4fb-469b-9161-0cd1a75417c7"
+    },
+    {
+      "claim_id": "c94a964e-fe8f-4c05-9b92-58a0083ac0eb",
+      "result_id": "324246a5-a4fb-469b-9161-0cd1a75417c7"
+    }
+  ],
+  "comparisons": []
+}

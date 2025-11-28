@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C45",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Active human PI3KC3-C1 complex was successfully reconstituted by co-expression of all four subunits (VPS34, VPS15, BECN1, ATG14) in HEK293 cells. The reconstituted complex contained all subunits at equal stoichiometry, co-migrated as a single peak on gel filtration, and was enzymatically active as demonstrated by ATP hydrolysis and PI(3)P formation, with activity specifically blocked by wortmannin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C52-C57 provide converging biochemical evidence for successful reconstitution: SDS-PAGE shows equal stoichiometry (C52), gel filtration shows complex integrity (C53), and two independent enzymatic assays confirm activity (C54-C55). The wortmannin inhibition experiment (C56-C57) validates that the observed activity is from the lipid kinase domain rather than contaminants, providing strong support for the reconstitution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C48",
+      "C58",
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "The structure of PI3KC3-C1 was determined at 28 \u00c5 resolution by single-particle EM using random conical tilt reconstruction and refinement. The complex exhibits a V-shaped architecture with two arms of approximately 20 nm length, with a strongly preferred face-on orientation. The chirality was validated by tilt-pair analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C48, C58-C60, and C62 collectively describe the structural determination with appropriate methodological validation. The 28 \u00c5 resolution is modest but reasonable given the dynamic nature of the complex. The use of RCT for ab initio reconstruction (C60) and tilt-pair validation of chirality (C62) represent appropriate controls for EM structure determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The positions of ordered domains of VPS34, VPS15, BECN1, and ATG14 were mapped within the PI3KC3-C1 complex using MBP tagging. VPS34 occupies the right arm with its kinase domain at the tip and N-terminus near the crotch. BECN1 aligns with the left arm with N-terminus near the junction and C-terminus at the tip. VPS15 N-terminus is near VPS34 C-terminus, and ATG14 N-terminus is near BECN1 N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49, C63-C71 describe a systematic MBP tagging approach with multiple N- and C-terminal fusions successfully purified and imaged (C63-C64). The spatial assignments are internally consistent and supported by difference mapping shown in Figure 4. The approach of using multiple tags on different termini provides cross-validation of domain positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The BECN1 and ATG14 coiled coils are arranged in a parallel orientation within PI3KC3-C1, contrasting with the antiparallel arrangement observed in BECN1 homodimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is an inference from the MBP tagging data showing both N-termini in close proximity (C71), which logically requires parallel orientation. The contrast with the antiparallel BECN1 homodimer structure (C73) is appropriately cited and highlights a functionally relevant structural difference between the homodimer and the heterodimeric complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A structural model of PI3KC3-C1 was built by docking known crystal structures and homology models into the EM density, accounting for 65% of the total density (2162 of 3187 residues). The model includes VPS34 C2, HELCAT, VPS15 kinase, HEAT, WD40 domains, and BECN1 BARA domain. Tubular densities were assigned to the ATG14-BECN1 coiled coil dimer. The resulting model has a 190 \u00c5 right arm and 210 \u00c5 left arm joined at 90\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C91 describe a comprehensive docking analysis guided by MBP tags. The 65% density coverage (C74, C84) is reasonable given the presence of flexible linkers and disordered regions. The use of homology models where crystal structures are unavailable (C77, C79, C80) is appropriate and well-documented. The assignment of tubular densities to coiled coils (C85-C88) is logical given their expected structure and the MBP tag positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C148",
+      "C149"
+    ],
+    "result": "VPS15 serves as a central scaffold that organizes the PI3KC3-C1 complex and bridges the VPS34 catalytic subunit and the ATG14:BECN1 regulatory subcomplex, with no direct contacts observed between ATG14/BECN1 and VPS34.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C148-C149 are supported by the structural model showing VPS15 domains (kinase, HEAT, WD40) making contacts with both VPS34 and the BECN1/ATG14 module while no direct VPS34-BECN1/ATG14 contacts are visible. This is consistent with the V-shaped architecture and the spatial arrangement determined by MBP tagging. The conclusion about VPS15's scaffolding role is a reasonable inference from the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "HDX-MS revealed a novel 20-residue ordered region (residues 218-237) C-terminal to the VPS34 C2 domain, termed the CHIL (C2-Helical Internal Linker) motif. This region showed protection from deuterium exchange and is highly conserved from yeast to humans. The CHIL motif likely assembles with VPS15 HEAT or VPS34 helical domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C107-C112 describe the discovery of the CHIL motif with strong HDX-MS evidence showing protection from exchange (C107, C111) and evolutionary conservation (C109). The HDX data provides excellent peptide coverage (C101-C102) and appropriate controls showing complete exchange in flexible linkers (C104-C106). The inference that CHIL assembles with nearby domains (C112) is reasonable given its small size and protected state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "PI3KC3-C1 exhibits dynamic transitions where the VPS34 HELCAT domain is ejected from the complex (48.5% lodged in C1, 34.0% in C2) with a range of motion up to 18 nm. A second mode of flexibility involves VPS15 pivoting at the HEAT-WD40 junction, with the kinase domain moving relative to the WD40.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C113-C121 describe two distinct modes of flexibility supported by 2D class averages. The quantification of lodged vs. dislodged states (C116-C117) provides statistical support. The 18 nm range of motion (C118) is consistent with the calculated maximum reach based on linker length (discussed in C146-C147). The observation of VPS15 pivoting (C119-C121) is supported by multiple class averages showing different conformations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "PI3KC3-C2 (containing UVRAG instead of ATG14) was reconstituted and characterized by EM. The overall architecture is essentially identical to PI3KC3-C1 at the current resolution, with the main difference being additional density at the base of the V corresponding to the UVRAG C2 domain. Functional differences between the complexes cannot be attributed to gross architectural differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C93-C100 describe the comparative analysis of PI3KC3-C2. The 2D class averages (C95) show the same V-morphology, and the additional density (C97-C98) is logically assigned to the unique UVRAG C2 domain. The conclusion that functional differences are not due to gross structural differences (C100) is supported by the structural similarity, though the resolution limits detailed comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The N-terminus of BECN1, which is the target for multiple signaling inputs (ULK1, AMPK phosphorylation, Bcl-2 binding), resides near the pivot point at the base of the V formed by VPS15 HEAT repeats. This region may act as an allosteric reporter for ER localization and signal transmission to the VPS34 kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C151-C157 are supported by structural data and literature citations showing the N-terminus location and known signaling inputs. However, claims C158-C159 about allosteric reporting and signal transmission are explicitly speculative. While the structural positioning is consistent with such a role, no functional data are provided to test these hypotheses. The result combines well-supported structural observations with untested mechanistic speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The VPS15 kinase and HEAT domains function as a single module (KINHEAT) that contacts VPS34 HELCAT and may act as a latch to regulate lipid kinase activity. VPS15 is not obviously a pseudokinase but lacks compelling evidence for substrate phosphorylation, suggesting regulation may occur through direct protein-protein interactions rather than phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C136 describing the KINHEAT module and its contacts with VPS34 are supported by structural data. However, the regulatory latch model (C51, C139) is explicitly speculative. Claims C137-C138 about VPS15 kinase activity are based on literature but the proposed non-catalytic regulatory mechanism (C139) lacks experimental validation. The structural observations are solid but the functional implications remain hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The VPS15 HEAT-WD40 linker is completely disordered (HDX-MS), yet the WD40 domain remains firmly lodged in all class averages, indicating it does not undergo tethered diffusion. The VPS34 HELCAT is the only module observed to undergo fly-casting, with motion constrained by the anchored CHIL domain to a maximum reach of ~20 nm, consistent with the observed 18 nm displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C147 integrate HDX-MS data (C140) with EM observations (C141, C143) and structural calculations (C146). The conclusion that WD40 does not undergo fly-casting (C142) is well-supported by the consistent density in all class averages despite the disordered linker. The calculation of maximum reach (C146) based on linker length and the CHIL anchor point is sound and matches the observed displacement (C147), providing internal validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The EM reconstruction and docking model provides the first overall view of VPS15, VPS34, BECN1, and ATG14 in their functional context. Combined EM and HDX-MS analyses highlight the dynamic nature of the complex. The reconstruction provides a unified model for VPS34 complex organization applicable to both PI3KC3-C1 and PI3KC3-C2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are summary statements supported by the collective structural and dynamic data presented. The claim of being the first overall view (C122) is supported by the lack of prior quaternary structure data mentioned in C44. The unified model (C125) is justified by the structural similarity between C1 and C2 complexes (C124). These are appropriate concluding statements synthesizing the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The structural model rationalizes previous biochemical data: BECN1 BARA is essential for complex incorporation and contacts VPS15 WD40; ATG14 coiled coil is essential for VPS34 association via VPS15 scaffold; VPS34 C2 is the main incorporation locus and is integral to core architecture while HELCAT is readily dislodged; VPS34 C-terminal helix contacts VPS15 kinase-HEAT and may be sequestered for regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 connect the new structural data with previously published biochemical findings (appropriately cited). The structural observations are consistent with the cited functional data. However, C132 about inter-subunit sequestration is explicitly speculative. Overall, the integration of prior work with new structural insights is well-supported, though the regulatory speculation requires future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background information on autophagy, PI3KC3 complexes, and prior structural knowledge is established. Autophagy is a conserved pathway for cellular self-preservation with roles in starvation survival, tumor suppression, and protection against neurodegenerative diseases. PI3KC3 complexes contain core subunits (VPS34, VPS15, BECN1) with complex-specific subunits (ATG14 for C1, UVRAG for C2). Prior to this work, only individual domain structures were available, with no data on the 361.8 kDa quaternary assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C44 provide background context with appropriate citations. These are established facts from the literature rather than new findings. The claims accurately represent prior knowledge and properly cite sources. The statement about lack of quaternary structure data (C44) establishes the knowledge gap addressed by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C92",
+      "C150"
+    ],
+    "result": "PI3KC3-C1 is elongated, loosely connected, and dynamic. PI3KC3-C1 is the complex specifically involved in autophagosome initiation. VPS15 is capable of pivoting about the KINHEAT-WD40 junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by EM data showing structural heterogeneity. Claim C92 is supported by citation to prior work. Claim C150 is supported by class averages showing different conformations. These are descriptive statements well-supported by the data presented.",
+    "result_type": "MINOR"
+  }
+]

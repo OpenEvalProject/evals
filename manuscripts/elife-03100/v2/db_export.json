@@ -1,0 +1,1622 @@
+{
+  "submission": {
+    "id": "0d422024-d3d0-473e-b540-a159cc3ade36",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:49:01.289485Z",
+    "updated_at": "2025-11-28T20:49:01.289485Z"
+  },
+  "content": [
+    {
+      "id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "submission_id": "0d422024-d3d0-473e-b540-a159cc3ade36",
+      "content_type": "manuscript",
+      "content_text": "# Salmonella Typhi and Salmonella Paratyphi A elaborate distinct systemic metabolite signatures during enteric fever\n\n## Authors\n\n- Elin N\u00e4sstr\u00f6m<sup>1</sup>\n- Nga Tran Vu Thieu<sup>2</sup>\n- Sabina Dongol<sup>3</sup>\n- Abhilasha Karkey<sup>3</sup>\n- Phat Voong Vinh<sup>2</sup>\n- Tuyen Ha Thanh<sup>2</sup>\n- Anders Johansson<sup>4</sup>\n- Amit Arjyal<sup>2</sup>\n- Guy Thwaites<sup>2</sup>\n- Christiane Dolecek<sup>2</sup>\n- Buddha Basnyat<sup>3</sup>\n- Stephen Baker<sup>2</sup> \u2020\n- Henrik Antti<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Chemistry, Computational Life Science Cluster Ume\u00e5 University Ume\u00e5 Sweden\n2. Wellcome Trust Major Overseas Programme, Oxford University Clinical Research Unit The Hospital for Tropical Diseases Ho Chi Minh City Vietnam\n3. Oxford University Clinical Research Unit Patan Academy of Health Sciences Kathmandu Nepal\n4. Department of Clinical Microbiology Ume\u00e5 University Ume\u00e5 Sweden\n5. Centre for Tropical Medicine Oxford University Oxford United Kingdom\n6. The London School of Hygiene and Tropical Medicine London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe host\u2013pathogen interactions induced by Salmonella Typhi and Salmonella Paratyphi A during enteric fever are poorly understood. This knowledge gap, and the human restricted nature of these bacteria, limit our understanding of the disease and impede the development of new diagnostic approaches. To investigate metabolite signals associated with enteric fever we performed two dimensional gas chromatography with time-of-flight mass spectrometry (GCxGC/TOFMS) on plasma from patients with S. Typhi and S. Paratyphi A infections and asymptomatic controls, identifying 695 individual metabolite peaks. Applying supervised pattern recognition, we found highly significant and reproducible metabolite profiles separating S. Typhi cases, S. Paratyphi A cases, and controls, calculating that a combination of six metabolites could accurately define the etiological agent. For the first time we show that reproducible and serovar specific systemic biomarkers can be detected during enteric fever. Our work defines several biologically plausible metabolites that can be used to detect enteric fever, and unlocks the potential of this method in diagnosing other systemic bacterial infections.\n\n## Introduction\n\nEnteric fever is a serious bacterial infection caused by Salmonella enterica serovars Typhi (S. Typhi) and Paratyphi A (S. Paratyphi A) (Parry et al., 2002). S. Typhi is more prevalent than S. Paratyphi A globally, with the best estimates predicting approximately 21 and 5 million new infections with each serovar per year, respectively (Ochiai et al., 2008; Buckle et al., 2012). Both S. Typhi and S. Paratyphi A are systemic pathogens that induce clinically indistinguishable syndromes (Maskey et al., 2006). However, they exhibit contrary epidemiologies, different geographical distributions, and different propensities to develop resistance to antimicrobials (Vollaard et al., 2004; Karkey et al., 2013). Additionally, they are genetically and phenotypically distinct, having gone through a lengthy process of convergent evolution to cause an identical disease (Didelot et al., 2007; Holt et al., 2009).\n\nThe agents of enteric fever induce their effect on the human body by invading the gastrointestinal tract and spreading in the bloodstream (Everest et al., 2001). It is this systemic phase of the disease that induces the characteristic symptoms of enteric fever (Glynn et al., 1995). However, the host\u2019s reaction to this systemic spread, outside the adaptive immune response, is not well described. There is a knowledge gap related to the scope and the nature of the host\u2013pathogen interactions that are induced during enteric fever that limit our understanding of the disease and prevent the development of new diagnostic tests (Baker et al., 2010). An accurate diagnosis of enteric fever is important in clinical setting where febrile disease with multiple potential etiologies is common. A confirmative diagnostic ensures appropriate antimicrobial therapy to prevents serious complications and death and reduces inappropriate antimicrobial usage (Parry et al., 2011a; Parry et al., 2014). All currently accepted methods for enteric fever diagnosis lack reproducibility and exhibit inacceptable sensitivity and specificity under operational conditions (Moore et al., 2014; Parry et al., 2011b). The main roadblock to developing new enteric fever diagnostics is overcoming the lack of reproducible immunological and microbiological signals found in the host during infection.\n\nMetabolomics is a comparatively new in infectious disease research, yet some initial investigations have shown that metabolite signals found in biological samples may have potential as infection \u2018biomarkers\u2019 (Lv et al., 2011; Antti et al., 2013; Langley et al., 2013). As S. Typhi and S. Paratyphi A induce an phenotype via a relatively modest concentration of organisms in the blood (Wain et al., 1998; Nga et al., 2010), we hypothesized that the host/pathogen interactions during early enteric fever would provide unique metabolite profiles. Here we show that enteric fever induces distinct and reproducible serovar specific metabolite profiles in the plasma of enteric fever patients.\n\n## Results\n\n### Plasma metabolites in enteric fever\n\nTo investigate systemic metabolite profiles associated with enteric fever we selected 75 plasma samples from 50 patients with blood culture confirmed enteric fever (25 with S. Typhi and 25 with S. Paratyphi A) and 25 age range matched afebrile controls attending the same healthcare facility. Mass spectra were generated by an operator that was blinded to the sample group for each of the 75 plasma samples (n = 105 including duplicates) in a random order using performed two-dimensional gas chromatography with time-of-flight mass spectrometry (GCxGC/TOFMS). This GCxGC/TOFMS data resulted in a series of 3D landscapes of preliminary metabolites (Figure 1). Following primary data filtering, 988 unique metabolite peaks were retained.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03100/elife-03100-fig1-v2.jpg)\n\n**Figure 1.:** Image shows a two-dimensional ion chromatogram of unprocessed GCxGC/TOFMS data of a plasma sample from a patient with enteric fever. The three-dimensional landscape depicts detected metabolites peaks in the first dimension (seconds\u2013x axis), the second dimension (seconds\u2013y axis), and the concentration intensity of the peak signal (z axis).\n\nComparisons to public databases resulted in 178 GCxGC/TOFMS metabolite peaks that could be assigned a structural identity, and a further 62 peaks that could be assigned to a metabolite class. We additionally highlighted 10 metabolites, via manual inspection, that were found in less than 50 of the 75 samples, which had a diagnostic compatible profile. These 10 metabolites were excluded from the initial pattern recognition modeling, but retained for later analysis. One of these metabolites was found to be significant and was latterly added to the modeling. To further refine the metabolite profiling we aimed to identify profiles that correlated with run order, reducing the risk of instrumental variation into the recognition modeling. We identified 279 metabolites that demonstrated a significant correlation with run order (Pearson coefficient > |0.5|). These 279 metabolites were excluded from initial pattern recognition modeling but still manually investigated. Therefore, 695 unique metabolite peaks (105 samples), were retained for initial pattern recognition modeling.\n\nPrincipal components analysis (PCA) was used to summarize the systematic variation in the GCxGC/TOFMS data and to generate potential metabolite profiles from the 695 metabolite peaks. We first aimed to identify sample outliers that exhibited extreme metabolite profiles as a consequence of analytical error. We identified 11/105 samples as analytical outliers using PCA. These 11 samples were excluded from further analysis\u2013leaving a total of 94 samples for pattern recognition modeling. These remaining samples were comprised of 32 controls (including analytical replicates of seven samples), 29 S. Paratyphi A samples (including analytical replicates of four samples), and 33 S. Typhi samples (including analytical replicates of eight samples). Calculation of models excluding all analytical replicates was performed to rule out model overestimation due to replicates; no difference in terms of the model significance was observed.\n\n### Pattern recognition analysis\n\nTo investigate the potential of metabolite profiling in enteric fever diagnosis we applied an unsupervised pattern recognition analysis to the filtered metabolite dataset from the cases and controls. The resulting PCA score plot is shown in Figure 2A. The variation within the unsupervised pattern recognition model outlined obvious differences between the metabolite profiles in the plasma samples from the controls and the enteric fever patients. It was evident from these analyses that metabolite profiles in the plasma had a potential diagnostic value for enteric fever. However, the samples from patients with S. Typhi and S. Paratyphi A exhibited substantial overlap, indicating that the metabolite signatures induced by these organisms may be challenging to differentiate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03100/elife-03100-fig2-v2.jpg)\n\n**Figure 2.:** (A) PCA plot of the first two principal components (t[2] vs t[1]). The PCA plot outlines a separation between the control plasma samples (N = 32; including 7 analytical replicates) and the plasma samples from enteric fever cases (S. Typhi; N = 33 - including 8 analytical replicates, and S. Paratyphi A; N = 29\u2013including 4 analytical replicates). PCA model incorporates 695 metabolites with eight significant principal components (R2X = 0.437, Q2 = 0.255). (B) OPLS-DA scores plot of the two predictive components (tp[2] vs tp[1]; x axis and y axis, respectively) outlining a separation between the control plasma samples (N = 32; including 7 analytical replicates) and the plasma samples from enteric fever cases (S. Typhi; N = 33 - including 8 analytical replicates, and S. Paratyphi A; N = 29 - including 4 analytical replicates). OPLS-DA model includes 695 metabolites with two predictive and two orthogonal components (R2X = 0.269, R2Y = 0.837, Q2 = 0.451, p=1.7 \u00d7 10\u22126 [CV-ANOVA]).\n\nTo obtain a more comprehensive view of the differences between the plasma metabolite profiles between agents of enteric fever we applied a supervised pattern recognition approach. We fitted an extension orthogonal partial least squares with discriminant analysis (OPLS-DA) model to differentiate the GCxGC/TOFMS metabolite profiles in relation to the three sample groups (Table 1). The OPLS-DA model generated a Q2 value of 0.45, suggesting reliable differences between the metabolite profiles in relation to the three sample groups. Further validation indicated that the OPLS-DA model provided excellent predictive power for distinguishing between the sample groups (p=1.7 \u00d7 10\u22126; control vs S. Typhi vs S. Paratyphi A). The OPLS-DA method is interpreted through the scores plot (Figure 2B); the largest between group differences is found along the first component (t[1]) (x-axis) of the model, while less profound differences are found along the second component (t[2]) (y-axis).\n\n**Table 1.**\n Multivariate modeling of enteric fever metabolites\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model *</th>\n      <th>Number of metabolites included</th>\n      <th>Number of model components \u2020</th>\n      <th>R2X \u2021</th>\n      <th>R2Y \u2021</th>\n      <th>Q2 \u2021</th>\n      <th>CV-ANOVA \u00a7</th>\n      <th>AUC scores #</th>\n      <th>AUC CV scores \u00b6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PCA</td>\n      <td>695</td>\n      <td>8</td>\n      <td>0.437</td>\n      <td>\u2013</td>\n      <td>0.255</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>S. Paratyphi A, S. Typhi, control</td>\n      <td>695</td>\n      <td>2 + 2</td>\n      <td>0.269</td>\n      <td>0.837</td>\n      <td>0.451</td>\n      <td>1.7 \u00d7 10\u22126</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>S. Paratyphi A vs control</td>\n      <td>695</td>\n      <td>1 + 2</td>\n      <td>0.261</td>\n      <td>0.961</td>\n      <td>0.815</td>\n      <td>4.2 \u00d7 10\u221218</td>\n      <td>1.0</td>\n      <td>0.997</td>\n    </tr>\n    <tr>\n      <td>S. Typhi vs control</td>\n      <td>695</td>\n      <td>1 + 2</td>\n      <td>0.251</td>\n      <td>0.965</td>\n      <td>0.824</td>\n      <td>4.1x10\u221220</td>\n      <td>1.0</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>S. Paratyphi A vs S. Typhi</td>\n      <td>695</td>\n      <td>1 + 1</td>\n      <td>0.160</td>\n      <td>0.714</td>\n      <td>0.140</td>\n      <td>6.7 \u00d7 10\u22122</td>\n      <td>0.996</td>\n      <td>0.735</td>\n    </tr>\n    <tr>\n      <td>S. Paratyphi A vs control</td>\n      <td>46</td>\n      <td>1 + 1</td>\n      <td>0.416</td>\n      <td>0.794</td>\n      <td>0.718</td>\n      <td>8.8 \u00d7 10\u221215</td>\n      <td>1.0</td>\n      <td>0.999</td>\n    </tr>\n    <tr>\n      <td>S. Typhi vs control</td>\n      <td>46</td>\n      <td>1 + 1</td>\n      <td>0.305</td>\n      <td>0.823</td>\n      <td>0.749</td>\n      <td>2.2 \u00d7 10\u221217</td>\n      <td>1.0</td>\n      <td>0.996</td>\n    </tr>\n    <tr>\n      <td>S. Paratyphi A vs S. Typhi</td>\n      <td>46</td>\n      <td>1 + 1</td>\n      <td>0.385</td>\n      <td>0.565</td>\n      <td>0.420</td>\n      <td>2.3 \u00d7 10\u22126</td>\n      <td>0.951</td>\n      <td>0.898</td>\n    </tr>\n    <tr>\n      <td>S. Paratyphi A vs control</td>\n      <td>6</td>\n      <td>1 + 1</td>\n      <td>0.543</td>\n      <td>0.627</td>\n      <td>0.567</td>\n      <td>1.2 \u00d7 10\u22129</td>\n      <td>0.964</td>\n      <td>0.948</td>\n    </tr>\n    <tr>\n      <td>S. Typhi vs control</td>\n      <td>6</td>\n      <td>1 + 0</td>\n      <td>0.299</td>\n      <td>0.529</td>\n      <td>0.492</td>\n      <td>7.6 \u00d7 10\u221210</td>\n      <td>0.934</td>\n      <td>0.923</td>\n    </tr>\n    <tr>\n      <td>S. Paratyphi A vs S. Typhi</td>\n      <td>6</td>\n      <td>1 + 0</td>\n      <td>0.318</td>\n      <td>0.300</td>\n      <td>0.253</td>\n      <td>1.8 \u00d7 10\u22124</td>\n      <td>0.801</td>\n      <td>0.796</td>\n    </tr>\n  </tbody>\n</table>\n\n_*All OPLS-DA models apart from the highlighted PCA.\u2020The number of predictive components followed by the number of orthogonal model components.\u2021R2X: The amount of variation in X explained by the model, R2Y: The amount of variation in Y explained by the model, Q2: The amount of variation in Y predicted by the model.\u00a7p-value based on cross-validated scores showing the degree of significance for the separation.#Area under the curve values from receiver operating curves (ROC) calculated from model scores (t).\u00b6Area under the curve values from receiver operating curves (ROC) calculated from cross-validated models scores (tcv)._\n\nTo scrutinize the differences in plasma metabolite profiles between sample groups, new OPLS-DA models were fitted for pairwise comparisons of the sample classes. The score plots for these analyses are shown in Figure 3 and the summarized data are shown in Table 1. As predicted, the OPLS-DA models for differentiating plasma metabolite profiles between samples from the afebrile controls and the two agents of enteric fever exhibited robust and significant separation. The models between the controls and S. Typhi infections and between the controls and S. Paratyphi A infections also had high predictive power, generating Q2 values of 0.82 (p=4.1 \u00d7 10\u221220) and 0.81 (p=4.2 \u00d7 10\u221218), respectively (Figure 3A,B). The model for differentiating plasma metabolite profiles between the S. Typhi infections and the S. Paratyphi A infections generated a Q2 value of 0.14 (p=6.7 \u00d7 10\u22122) (Figure 3C), indicating that the plasma metabolite profiles can also be used to discriminate between the two enteric fever agents.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03100/elife-03100-fig3-v2.jpg)\n\n**Figure 3.:** Cross-validated OPLS-DA scores plots of the first predictive component (tcv[1]p) showing the separation between; (A) Controls (N = 32, including 7 analytical replicates) and S. Paratyphi A cases (N = 29, including 4 analytical replicates) (p=4.2 \u00d7 10\u221218). (B) Controls and S. Typhi cases (N = 33, including 8 analytical replicates) (p=4.1 \u00d7 10\u221220). (C) S. Typhi cases and S. Paratyphi A cases (p=6.7 \u00d7 10\u22122). Error bars represent mean score values with 95% confidence intervals. The OPLS-DA model is based on 695 metabolites with one predictive and two orthogonal (A and B), or one predictive and one orthogonal (C) component(s). Additional model information is shown in Table 1.\n\nUsing a combination of the OPLS-DA model variable weights (loadings) and univariate p-values we were able to precisely define the number of metabolite peaks separating the sample groups (Supplementary file 1). There were 306, 324, and 58 metabolite peaks separating the controls from the S. Typhi infections, the controls from the S. Paratyphi A infections, and the S. Typhi infections from the S. Paratyphi A infections, respectively.\n\n### S. Typhi and Paratyphi A specific metabolites\n\nThe presence of 46 metabolites could significantly distinguish between samples from enteric fever cases and control samples, and could also distinguish between samples from S. Typhi infected cases and S. Paratyphi A infected cases (p\u22640.05; two-tailed Student's t test) (Table 2). Of these 46 informative metabolites, 12 could be annotated. Three metabolites that were found to be significant in all three pairwise OPLS-DA models and annotated (phenylalanine, pipecolic acid, and 2-phenyl-2-hydroxybutanoic acid) were selected for confirmation. The chromatographic profiles of these peaks were compared using the \u2018raw\u2019 GCxGC chromatographic data from one sample in each sample group (Figure 4). Phenylalanine and phenyl-2-hydroxybutanoic acid were confirmed to have the highest concentration in the S. Typhi sample and the lowest concentration in control sample, while pipecolic acid had the highest concentration in S. Paratyphi A samples and the lowest concentration in control samples (Table 2). In total, seven metabolites (2,4-dihydroxybutanoic acid, 2-phenyl-2-hydroxypropanoic acid, cysteine, gluconic acid, glucose-6-phosphate/mannose-6-phosphate, pentitol-3-desoxy and phenylalanine) exhibited a higher concentration in the plasma from S. Typhi infected patients and five (4-methyl-pentanoic acid, ethanolamine, isoleucine, pipecolic acid, and serine) exhibited a higher concentration in the plasma of S. Paratyphi A infected patients (Table 2). Of the 34 remaining unidentified metabolites, two were classified as saccharides and exhibited a higher concentration in the plasma of S. Typhi patients. We could not assign a structural identity/class to the remaining 32 metabolites (all metabolites summarized in Supplementary file 1).\n\n**Table 2.**\n Metabolites with discriminatory power for diagnosing enteric fever\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Metabolite *</th>\n      <th>RT1 \u2020</th>\n      <th>RT2 \u2020</th>\n      <th>RI1 \u2020</th>\n      <th>p-value P vs C</th>\n      <th>p-value T vs C</th>\n      <th>p-value P vs T</th>\n      <th>Change \u2021 P vs C</th>\n      <th>Change \u2021 T vs C</th>\n      <th>Change \u2021 P vs T</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2,4-dihydroxybutanoic acid</td>\n      <td>1256.4</td>\n      <td>3.22</td>\n      <td>1429.6</td>\n      <td>6.6 \u00d7 10\u22123</td>\n      <td>4.9 \u00d7 10\u22124</td>\n      <td>4.7 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>2-phenyl-2-hydroxypropanoic acid</td>\n      <td>1724.9</td>\n      <td>2.61</td>\n      <td>1692.6</td>\n      <td>3.7 \u00d7 10\u22122</td>\n      <td>1.5 \u00d7 10\u22124</td>\n      <td>1.6 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>4-methyl-pentanoic acid</td>\n      <td>627.6</td>\n      <td>2.40</td>\n      <td>1092.8</td>\n      <td>3.1 \u00d7 10\u22122</td>\n      <td>5.9 \u00d7 10\u22121</td>\n      <td>1.1 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Cysteine</td>\n      <td>1580.0</td>\n      <td>2.96</td>\n      <td>1607.6</td>\n      <td>\u2013</td>\n      <td>1.7 \u00d7 10\u22122</td>\n      <td>3.8 \u00d7 10\u22122</td>\n      <td>-</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Ethanolamine</td>\n      <td>880.0</td>\n      <td>3.88</td>\n      <td>1233.6</td>\n      <td>1.2 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>7.8 \u00d7 10\u22123</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Gluconic acid</td>\n      <td>1985.0</td>\n      <td>0.16</td>\n      <td>1851.7</td>\n      <td>3.3 \u00d7 10\u22122</td>\n      <td>1.4 \u00d7 10\u22124</td>\n      <td>1.2 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Glucose-6-phosphate/Mannose-6-phosphate</td>\n      <td>2615.3</td>\n      <td>3.65</td>\n      <td>2303.1</td>\n      <td>6.7 \u00d7 10\u22124</td>\n      <td>5.9 \u00d7 10\u22125</td>\n      <td>4.1 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Isoleucine</td>\n      <td>1012.2</td>\n      <td>3.32</td>\n      <td>1302.9</td>\n      <td>1.1 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>4.3 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Monosaccharide_137</td>\n      <td>1622.5</td>\n      <td>4.87</td>\n      <td>1633.8</td>\n      <td>6.0 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>6.1 \u00d7 10\u22123</td>\n      <td>C</td>\n      <td>\u2013</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Pentitol-3-desoxy</td>\n      <td>1490.0</td>\n      <td>4.22</td>\n      <td>1557.9</td>\n      <td>4.4 \u00d7 10\u22129</td>\n      <td>5.5 \u00d7 10\u221213</td>\n      <td>1.1 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Phenylalanine</td>\n      <td>1784.1</td>\n      <td>2.68</td>\n      <td>1728.4</td>\n      <td>3.0 \u00d7 10\u22127</td>\n      <td>1.3 \u00d7 10\u221210</td>\n      <td>2.4 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Pipecolic acid</td>\n      <td>1130.0</td>\n      <td>3.10</td>\n      <td>1363.1</td>\n      <td>2.4 \u00d7 10\u22125</td>\n      <td>2.5 \u00d7 10\u22123</td>\n      <td>3.0 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Saccharide_181</td>\n      <td>2529.1</td>\n      <td>3.99</td>\n      <td>2237</td>\n      <td>1.6 \u00d7 0\u22125</td>\n      <td>4.3 \u00d7 10\u22122</td>\n      <td>2.7 \u00d7 10\u22122</td>\n      <td>C</td>\n      <td>C</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Serine</td>\n      <td>1070.0</td>\n      <td>2.60</td>\n      <td>1332.1</td>\n      <td>1.7 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>4.8 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_230</td>\n      <td>549.2</td>\n      <td>2.32</td>\n      <td>1036.8</td>\n      <td>1.7 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>9.5 \u00d7 10\u22123</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_231</td>\n      <td>1090.0</td>\n      <td>2.42</td>\n      <td>1342.3</td>\n      <td>2.8 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>4.3 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_242</td>\n      <td>1550.0</td>\n      <td>2.94</td>\n      <td>1590.5</td>\n      <td>4.0 \u00d7 10\u22125</td>\n      <td>1.9 \u00d7 10\u22122</td>\n      <td>4.4 \u00d7 10\u22122</td>\n      <td>C</td>\n      <td>C</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_268</td>\n      <td>1895.0</td>\n      <td>3.64</td>\n      <td>1796.1</td>\n      <td>\u2013</td>\n      <td>1.1 \u00d7 10\u22122</td>\n      <td>2.2 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_270</td>\n      <td>626.4</td>\n      <td>3.90</td>\n      <td>1093.1</td>\n      <td>1.7 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>3.2 \u00d7 10\u22123</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_281</td>\n      <td>680.0</td>\n      <td>3.38</td>\n      <td>1124.1</td>\n      <td>2.7 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>3.1 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_294</td>\n      <td>725.1</td>\n      <td>2.18</td>\n      <td>1148.5</td>\n      <td>2.1 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>1.7 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_303</td>\n      <td>1900.0</td>\n      <td>2.57</td>\n      <td>1798.5</td>\n      <td>9.1 \u00d7 10\u22123</td>\n      <td>1.5 \u00d7 10\u22124</td>\n      <td>2.0 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_334</td>\n      <td>2790.0</td>\n      <td>2.15</td>\n      <td>2443.5</td>\n      <td>1.9 \u00d7 10\u22125</td>\n      <td>2.8 \u00d7 10\u22128</td>\n      <td>7.8 \u00d7 10\u22123</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_341</td>\n      <td>523.5</td>\n      <td>2.21</td>\n      <td>1018.4</td>\n      <td>2.5 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>2.7 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_364</td>\n      <td>775.1</td>\n      <td>2.25</td>\n      <td>1176.3</td>\n      <td>6.8 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>2.3 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_377</td>\n      <td>961.1</td>\n      <td>2.43</td>\n      <td>1275.6</td>\n      <td>1.9 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>3.1 \u00d7 10\u22124</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_384</td>\n      <td>1010.1</td>\n      <td>2.48</td>\n      <td>1301.4</td>\n      <td>4.9 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>2. \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_397</td>\n      <td>1144.9</td>\n      <td>2.75</td>\n      <td>1370.6</td>\n      <td>2.1 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>2.8 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_467</td>\n      <td>1550.4</td>\n      <td>2.92</td>\n      <td>1590.7</td>\n      <td>1.6 \u00d7 10\u22124</td>\n      <td>2.4 \u00d7 10\u22122</td>\n      <td>4.7 \u00d7 10\u22122</td>\n      <td>C</td>\n      <td>C</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_470</td>\n      <td>1570.0</td>\n      <td>4.02</td>\n      <td>1602.4</td>\n      <td>2.3 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>1.9 \u00d7 10\u22122</td>\n      <td>C</td>\n      <td>\u2013</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_490</td>\n      <td>1660.6</td>\n      <td>2.27</td>\n      <td>1654.6</td>\n      <td>\u2013</td>\n      <td>1.1 \u00d7 10\u22123</td>\n      <td>2.1 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_495</td>\n      <td>1695.0</td>\n      <td>3.26</td>\n      <td>1675.4</td>\n      <td>2.9 \u00d7 10\u22125</td>\n      <td>2.3 \u00d7 10\u22126</td>\n      <td>2.0 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_547</td>\n      <td>1995.0</td>\n      <td>2.33</td>\n      <td>1859.6</td>\n      <td>\u2013</td>\n      <td>1.2 \u00d7 10\u22122</td>\n      <td>3.1 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_604</td>\n      <td>2349.5</td>\n      <td>3.27</td>\n      <td>2102.0</td>\n      <td>1.9 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>3.6 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_637</td>\n      <td>2560.7</td>\n      <td>3.99</td>\n      <td>2261.3</td>\n      <td>8.9 \u00d7 10\u22126</td>\n      <td>4.5 \u00d7 10\u22123</td>\n      <td>4.0 \u00d7 10\u22122</td>\n      <td>C</td>\n      <td>C</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_638</td>\n      <td>2561.3</td>\n      <td>2.67</td>\n      <td>2260.7</td>\n      <td>\u2013</td>\n      <td>3.2 \u00d7 10\u22123</td>\n      <td>7.7 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_676</td>\n      <td>2870.0</td>\n      <td>3.28</td>\n      <td>2511.6</td>\n      <td>1.9 \u00d7 10\u22127</td>\n      <td>2.5 \u00d7 10\u22123</td>\n      <td>4.0 \u00d7 10\u22122</td>\n      <td>C</td>\n      <td>C</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_681</td>\n      <td>2938.1</td>\n      <td>2.75</td>\n      <td>2570.3</td>\n      <td>6.6 \u00d7 10\u22124</td>\n      <td>\u2013</td>\n      <td>5.3 \u00d7 10\u22123</td>\n      <td>C</td>\n      <td>\u2013</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_745</td>\n      <td>770.0</td>\n      <td>3.17</td>\n      <td>1174.0</td>\n      <td>1.6 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>3.1 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_798</td>\n      <td>855.0</td>\n      <td>2.36</td>\n      <td>1219.7</td>\n      <td>4.6 \u00d7 10\u22123</td>\n      <td>\u2013</td>\n      <td>1.0 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>\u2013</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_811</td>\n      <td>1445.0</td>\n      <td>2.93</td>\n      <td>1532.2</td>\n      <td>3.0 \u00d7 10\u22122</td>\n      <td>3.6 \u00d7 10\u22124</td>\n      <td>2.5 \u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_914</td>\n      <td>3194.9</td>\n      <td>2.61</td>\n      <td>2802.5</td>\n      <td>\u2013</td>\n      <td>1.1 \u00d7 10\u22123</td>\n      <td>3.2 \u00d7 10\u22122</td>\n      <td>\u2013</td>\n      <td>C</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_949</td>\n      <td>2661.8</td>\n      <td>2.07</td>\n      <td>2339.1</td>\n      <td>7.1 \u00d7 10\u22126</td>\n      <td>1.9\u00d7 10\u22129</td>\n      <td>1.3\u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_961</td>\n      <td>2065.4</td>\n      <td>2.71</td>\n      <td>1905.4</td>\n      <td>2.8\u00d7 10\u22122</td>\n      <td>6.6\u00d7 10\u22124</td>\n      <td>2.2\u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n    <tr>\n      <td>Unknown_963</td>\n      <td>1045.1</td>\n      <td>2.32</td>\n      <td>1319.1</td>\n      <td>1.3\u00d7 10\u22125</td>\n      <td>3.6\u00d7 10\u22125</td>\n      <td>4.0\u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>P</td>\n    </tr>\n    <tr>\n      <td>Unknown_981</td>\n      <td>2748.2</td>\n      <td>2.05</td>\n      <td>2408.5</td>\n      <td>1.8\u00d7 10\u22124</td>\n      <td>4.9\u00d7 10\u22128</td>\n      <td>2.1\u00d7 10\u22122</td>\n      <td>P</td>\n      <td>T</td>\n      <td>T</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Metabolites with statistically significant differences in two or three pairwise comparisons according to univariate p-values (\u22640.05) and covariance loadings w* (<|0.03|). T vs C; S. Typhi vs control, P vs T; S. Paratyphi A vs S. Typhi and P vs C; S. Paratyphi A vs controls.\u2020RT1; 1st dimension retention time (s), RT2; 2nd dimension retention time (s), RI1; 1st dimension retention index.\u2021Change in metabolite concentration for each of the pairwise comparisons where P indicates higher concentration in S. Paratyphi A samples, T indicates a higher concentration in S. Typhi samples, and C indicates a higher concentration in control samples._\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03100/elife-03100-fig4-v2.jpg)\n\n**Figure 4.:** Three metabolites, in three samples from each sample group that were statistically significant in differentiating between sample classes using pattern recognition modelling, were selected for confirmation using unprocessed chromatographic data. (A) OPLS-DA scores plot (tp[2] vs tp[1]) highlighting the three selected samples (S. Typhi: 45, S. Paratyphi A: 19, and control: 60). Panel B\u2013D show one dimensional chromatographic peaks representing each metabolite from the three unprocessed plasma samples (coloured by sample group). Second dimension retention times (s) are shown along the x-axes and the peak intensities along the y-axes. (B) Phenylalanine (mass: 218, 1st retention time: 1785 s). (C) Pipecolic acid (mass: 156, 1st retention time: 1130 s). (D) 2-phenyl-2-hydroxybutanioc acid (mass: 193, 1st retention time: 1725 s). Panel E\u2013M show the corresponding two dimensional chromatographic peaks with one peak for each sample and metabolite. First and second dimension retention times (s) are shown along the x and y-axes, respectively, and the peak area is shown along the z-axes. The peaks are coloured according to area (colour scale is shown to the right) and the top colour for the two lowest peaks for each metabolite is determined according to the colour scale of the highest peak for the same metabolite. (E, H, K) Phenylalanine for sample 45, 19, and 60, respectively. (F, I, L) Pipecolic acid for sample 19, 4, 5 and 60, respectively. (G, J, M) 2-phenyl-2-hydroxybutanioc acid for sample 45, 19, and 60, respectively.\n\n### Metabolites with diagnostic potential\n\nTo investigate the diagnostic potential of the informative metabolites we fitted an OPLS-DA model using the 46 metabolites contributing to the differences between control and infected samples, and between the samples from S. Typhi and S. Paratyphi A infections (Table 1). The model was highly statistically significant for all pairwise comparisons, (p<2.6 \u00d7 10\u22126; between S. Typhi and S. Paratyphi A). Furthermore, receiver-operating characteristic (ROC) curves for the fitted and cross-validated OPLS-DA scores for each of the pairwise models verified the diagnostic capabilities of the extracted metabolite profiles (46 metabolites) (area under the curve (AUC) values >0.9 for all comparisons) (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03100/elife-03100-fig5-v2.jpg)\n\n**Figure 5.:** Panels on the left show the ROC-curves based on scores (red lines) and cross-validated scores (black lines) from OPLS-DA models using the 46 most statistically significant (S. Typhi against controls and/or S. Paratyphi A against controls) metabolites separating enteric fever samples from control samples and separating S. Typhi samples from S. Paratyphi A samples. The ROC curve showing the best individual discriminating metabolite is shown by the grey line. The scatterplots show pairwise class differences based on scores (t[1]p) (left), cross-validated scores (tcv[1]p) (centre) from OPLS-DA models using the 46 most statistically significant metabolites (as above), and the relative concentration of the best individual discriminating metabolite (right). Data presented for; (A) S. Paratyphi A vs Controls, (AUC scores: 1.0, AUC CV scores: 0.999, AUC best metabolite: 0.884). (B) S. Typhi vs Controls (AUC scores: 1.0, AUC CV scores: 0.996, AUC best metabolite: 0.925). (C) S. Paratyphi A vs S. Typhi (AUC scores: 0.951, AUC CV scores: 0.898, AUC best metabolite: 0.693. Error bars represent mean score values with 95% confidence intervals.\n\nThe best identifiable metabolite differentiating S. Typhi from S. Paratyphi A was 2-phenyl-2-hydroxypropanoic acid, which gave an AUC of 0.693 (Figure 5), and the best unidentified metabolite differentiating S. Typhi from S. Paratyphi A gave an AUC value of 0.746. The AUC values for the best individual metabolites differentiating controls from S. Typhi infections were 0.884 (phenylalanine) (Figure 5) and 0.889 (unidentified), and the AUC values for the individual metabolites best differentiating controls from S. Paratyphi A infections were 0.925 (phenylalanine) (Figure 5) and 0.926 (unidentified). Finally, we investigated the number of metabolites with confirmed identity or metabolite class required to retain diagnostic power. We found that a metabolite pattern consisting of six identified/classified metabolites (ethanolamine, gluconic acid, monosaccharide, phenylalanine, pipecolic acid and saccharide) gave ROC values >0.8 for all pairwise comparisons (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03100/elife-03100-fig6-v2.jpg)\n\n**Figure 6.:** The panels on the left show the ROC-curves based on scores (red lines) and cross-validated scores (black lines) from OPLS-DA models using the six most statistically significant (S. Typhi against controls and/or S. Paratyphi A against controls) metabolites separating enteric fever samples from control samples and separating S. Typhi samples from S. Paratyphi A samples. The scatterplots show pairwise class differences based on scores (t[1]p) (left), cross-validated scores (tcv[1]p) (right) from OPLS-DA models using the 6 most statistically significant metabolites (as above). Data presented for; (A) S. Paratyphi A vs Controls, (AUC scores: 0.964, AUC CV scores: 0.948). (B) S. Typhi vs Controls (AUC scores: 0.934, AUC CV scores: 0.923) and (C) S. Paratyphi A vs S. Typhi (AUC scores: 0.801, AUC CV scores: 0.796). Error bars represent mean score values with 95% confidence intervals.\n\n## Discussion\n\nOur work represents the first application of metabolomics to study enteric fever. The potential utility of this method can be observed by the capacity of the metabolite data to successfully identify those with this infection. Currently, the ability to accurately diagnose enteric fever is restricted to a positive microbiological culture result or PCR amplification (Nga et al., 2010; Parry et al., 2011b). However, blood culture for suspected enteric fever is commonly only positive in up to 50% of cases only, and PCR amplification on blood samples performs less well (Gilman et al., 1975). In reality, the fundamental complications of enteric fever diagnostics are the low number of organisms in the blood (Wain et al., 1998), and a lack of a generic systemic signal. If one combines these limitations with antimicrobial pretreatment and the spectrum of other potential etiological agents circulating in endemic locations, then a substantial technological advance is required to solve the problem of diagnosing enteric fever. It is worth stating that this is a problem worth solving, as enteric fever remains rampant in many low to middle-income countries. Some may argue that the use of broad-spectrum antimicrobials without diagnosis may be prudent. However, this actually compounds the problem, as individuals are often treated with inadequate drugs, inducing treatment failure and facilitating local transmission through fecal shedding (Parry et al., 2011a). Furthermore, antimicrobial resistance rates are rising in invasive Salmonella, which is associated with treatment failure and complications (Koirala et al., 2012; Walters et al., 2014).\n\nWe found that 306, 324, and 58 metabolites separated the controls from the S. Typhi infections, the controls from the S. Paratyphi A infections, and the S. Typhi infections from the S. Paratyphi A infections, respectively. The statistical analyses found that differentiating cases from controls could be performed with considerable power; this was reduced, but still significant, between S. Typhi and S. Paratyphi A. The majority of distinguishing metabolites among the three groups were unknown, however, some were annotated and had a credible explanation. For example, elevated metabolites distinguishing cases from controls included, 2,4-dihydroxybutanoic acid, phenylalanine, and pipecolic acid. 2,4-dihydroxybutanoic acid is a hydroxyl acid that can be found in low amounts in the blood and urine of healthy individuals, but is also related to hypoxia. Many pathogenic bacteria have the ability to induce the activation of hypoxia inducible factor (HIF)-1 and we surmise that invasive Salmonella also play a role in HIF-1 modulation during the inflammatory response induced during early infection (Werth et al., 2010). Phenylalanine is an essential amino acid, and higher phenylalanine to tyrosine ratios have been described in the blood of patients with various diseases including sepsis, Hepatitis C (Herndon et al., 1978; Zoller et al., 2012), and in rats challenged with a number of pathogens (Wannemacher et al., 1976). Notably, elevated phenylalanine was also found in during a recent metabolite investigation of primary dengue patients and is intrinsically linked to nitric oxide synthase during infection (Cui et al., 2013). Lastly, and most intriguingly, pipecolic acid is a non-protein amino acid and is an essential part of the inducible immunity of plants during challenge from bacterial pathogen and is elevated in the urine of malaria patients (Sengupta et al., 2011; Vogel-Adghough et al., 2013). These metabolites, which were all elevated in the plasma of enteric fever patients, may be generic markers of systemic disease and may prove to be vital in determining other bacterial bloodstream infections.\n\nOur data also allowed us to determine different metabolite profiles between those with enteric fever caused by S. Typhi and S. Paratyphi A. These organisms have a modified physiology in comparison to other Salmonella and enter human tissue with limited intestinal replication and by potentially suppressing gastrointestinal inflammation (Jones and Falkow, 1996). Consequently, one of the key features of enteric fever is a lack of gastrointestinal involvement as seen with other, non-invasive, Salmonella serovars. The majority of the metabolites distinguishing S. Typhi from S. Paratyphi A may be explained by these subtle biological differences between these organisms and partly by the presence of the virulence (Vi) capsule on the surface of S. Typhi, which is absent from S. Paratyphi A. Vi is a polysaccharide that has anti-inflammatory properties, limiting complement deposition and restricting immune activation (Jansen et al., 2011). The presence and functionality of Vi can be observed in the metabolites differentiating S. Typhi from S. Paratyphi A as the concentrations of monosaccharide and saccharide were significantly higher in the plasma samples from S. Typhi patients than from the S. Paratyphi A infections. Conversely, ethanolamine was in significantly higher concentrations in the plasma from the S. Paratyphi A patients than in S. Typhi patients' plasma. Ethanolamine is released by host tissue during inflammation and experimental work in mice has shown that Salmonella S. Typhimurium has a growth advantage in an inflamed gut (Thiennimitr et al., 2011). Therefore, the differential detection of ethanolamine in plasma samples from enteric fever patients with different infecting serovars, may be explained by Vi negative S. Paratyphi A not having the capacity to control gastrointestinal inflammation to the same extent as S. Typhi.\n\nThe main limitation of our work was that the samples were restricted to one set of enteric fever cases only. The reason we restricted analysis to enteric fever, rather than a range of bloodstream infections, we because we felt that this was the most robust test for the methodology. Furthermore, as the samples in the study we collected as part of an enteric fever clinical trial we had a range of clinical data and observations on which to link the metabolite profile with. We suggest that future studies in this area are designed to address this limitation, both for validation in different enteric fever cohort and for comparison to other bloodstream infections. The methodology present here should be applied to future \u2018fever studies\u2019 on which there may be a wide array of pathogens. The results from this study leads us to hypothesize that this method could be applied to study the differential metabolite signals between enteric fever and multiple invasive infections and could potentially differentiate between an extensive spectrum of causes of systemic disease or both bacterial, viral, and parasitic etiology. Our work strongly supports this notion, as the metabolite profiles were able to distinguish between those infected with S. Typhi and S. Paratyphi A, which until now, with the exception of microbial culture has never been a feasible goal. S. Typhi and S. Paratyphi A have subtle biochemical differences but cause an identical disease syndrome and therefore theoretically induce similar host\u2013pathogen interactions via the adaptive immune response. Consequently, we argue, that whilst our study was limited to enteric fever, the methodology should have the power to distinguish between Salmonella and other common bacterial causes of bloodstream infections with more disparate epidemiology, biochemical structure, and pathogenicity (Nga et al., 2012).\n\nThe science of metabolomics is relatively new, yet this method has previously shown some utility in human disease. In fact, similar methodology has shown potential in generating diagnostic markers for cancer, Dengue fever, Malaria, and Mycobacterium tuberculosis (du Preez and Loots, 2013; Sengupta et al., 2011; Cui et al., 2013). This study is the first where the technique has been applied specifically to enteric fever and also, to the best of our knowledge, the first to use two-dimensional gas chromatography/mass spectrometry GC/MS to interrogate plasma for potential biomarkers of infection in human blood. GCxGC/TOFMS offers an exquisite degree of resolution and sensitivity for metabolomics profiling (Baumgarner and Cooper, 2012; Hartonen et al., 2013). This technique has a substantial methodological advantage over standard GC/MS as it has the ability to span a more expansive proportion of the metabolome, but the resulting data remains compatible with existing mass spectral libraries for metabolite identification. By combining this high-level sensitivity and metabolite identification rate with a multivariate pattern recognition approach we have generated a robust tool for extracting metabolite patterns comprised of structurally identifiable metabolites with diagnostic potential. The extracted metabolite patterns exploit a correlation between relevant metabolites to define a signature that have a greater degree of diagnostic power than any individual metabolite in isolation. The fact that some of the metabolites in the patterns were structurally identifiable, and relatively few, is advantageous in that their biological relevance can be examined and validated as well and their conversion into a practical diagnostic test may be straightforward both in verification and clinical application.\n\nWe suggest that the method outlined here could be applied to other diseases with an indistinguishable syndrome of questionable etiology and the validation of these findings and the identification of metabolite signatures induced by other bacterial infections would provide greater confidence and utility. The potential drawbacks of this methodology are cost and portability; we do not advocate that every laboratory in an endemic enteric fever location should invest in a system to support this method. However, a combination of these markers may be suitable for miniaturization into a point-of-care test to measure blood concentrations in suspected enteric fever patients. The format of this diagnostic testing system is currently unclear, but simple lateral flow assays are currently able to detect small concentrations of antigens and other chemicals in whole blood. This approach requires substantial validation and development, yet we predict that the procedure has enough sensitivity to be used on small blood volumes. As an intermediate step we aim to develop this method using small blood volumes and dried blood spots on a range of febrile disease to increase utility in research investigations. A future commercial possibility would be the development of a portable system that associates metabolites in biological samples to a database of metabolites detected during known infections. Indeed, this may not be far away as similar systems are in use for bacterial identification in diagnostic microbiology laboratories (Marko et al., 2012).\n\nIn summary, we show that reproducible and serovar specific metabolite biomarkers can be detected in plasma during enteric fever. Our work outlines several novel and biologically plausible metabolites that can be used to diagnose enteric fever, and unlocks the potential of this method in understanding and diagnosing other systemic infections.\n\n## Materials and methods\n\n### Ethical approval\n\nThe institutional ethical review boards of Patan Hospital and The Nepal Health Research Council and the Oxford Tropical Research Ethics Committee in the United Kingdom approved this study. All adult participants provided written informed consent for the collection and storage of all samples and subsequent data analysis, written informed consent was given for all those under 18 years of age by a parent or guardian (Arjyal et al., 2011).\n\n### Study site and population\n\nThis study was conducted at Patan Hospital in Kathmandu, Nepal. Patan Hospital is a 318-bed government hospital providing emergency and elective outpatient and inpatient services located in Lalitpur Sub-metropolitan City (LSMC) within the Kathmandu Valley. Enteric fever is common at the outpatient clinic at Patan Hospital (Karkey et al., 2010; Baker et al., 2011), which has approximately 200,000 outpatient visits annually. The population of LSMC is generally poor, with most living in overcrowded conditions and obtaining their water from stone spouts or sunken wells.\n\nThe samples used for this study were collected from patients enrolled in a randomized controlled trial comparing gatifloxacin against ofloxacin for the treatment of uncomplicated enteric fever (ISRCTN 53258327) (Arjyal et al., 2011). The enrolment criteria were as previously described (Pandit et al., 2007). Briefly, patients who presented to the outpatient or emergency department of Patan Hospital, Lalitpur, Nepal from May 2009, to August 2011 with fever for more than 3 days who were clinically diagnosed to have enteric fever (undifferentiated fever with no clear focus of infection on preliminary physical exam and laboratory tests) whose residence was in a predesigned area of 20 km2 in urban Lalitpur and who gave fully informed written consent were eligible for the study. Exclusion criteria were pregnancy or lactation, age under 2 years or weight less than 10 kg, shock, jaundice, gastrointestinal bleeding, or any other signs of severe typhoid fever, previous history of hypersensitivity to either of the trial drugs, or known previous treatment with chloramphenicol, a quinolone, a third generation cephalosporin, or a macrolide within 1 week of hospital admission.\n\n### Microbiological culture and identification\n\nAnti-coagulated blood samples were collected from all febrile patients upon arrival in the outpatient department. For those over the age of 12 years, 10 ml of blood sample was collected; 5 ml was collected from those aged 12 years or less. The blood samples were inoculated into tryptone soya broth and sodium polyethanol sulphonate up to 50 ml. The inoculated media was incubated at 37\u00b0C and examined daily for bacterial growth over seven days. On observation of turbidity, the media was sub-cultured onto MacConkey agar. Any bacterial growth presumptive of S. Typhi or Paratyphi was identified using serogroup specific antisera (02, 09, Vi) (Murex Biotech, Dartford, UK).\n\n### Plasma samples\n\nTwo ml of peripheral blood was collected from all participants in sodium citrate tubes and were mixed well before being separated by centrifugation at 1000\u00d7g relative centrifugal force (RCF) for 15 min. The plasma and cells were separated before immediate storage at \u221280\u00b0C. Prior to metabolite analysis, 50 culture positive (25 S. Typhi and 25 S. Paratyphi A) plasma samples (with available patient metadata) were randomly selected from individual patients between the age of 12 and 22 years to in cooperate the median ages of both S. Typhi and S. Paratyphi A infections (Karkey et al., 2010). Additionally, 25 plasma samples from an age-stratified plasma bank gathered from patients attending Emergency Department of the Patan Hospital for reasons other than febrile illness throughout the same period and within the same 10-year age range as previously described were randomly selected for comparison (Karkey et al., 2013). The blood samples from these patients were collected, separated and stored as outlined above.\n\n### Sample preparation for metabolomic analysis\n\nThe 75 plasma samples were divided into two batches that were maintained throughout the analysis process (in a random order but taking the sample parameters into consideration). The sample containers were labeled with numbers to avoid awareness of sample group allocation during the sample preparation. All investigators were blinded to the source group of the plasma samples. The plasma samples were extracted and processed according to the plasma protocol for metabolomics at the Swedish Metabolomics Centre (SMC) (Jiye et al., 2005). Frozen 100 \u03bcl aliquots of plasma, in micro centrifuge tubes (Sarstedt Ref: 72.690), were thawed at room temperature and then kept on ice. Metabolite extraction was performed by addition of 900 \u03bcl methanol/water extraction mix (90:10 vol/vol) (including 11 isotopically labeled internal standards [7 ng/\u03bcl]) followed by rigorous agitation at 30 Hz for 2 min in a bead mill (MM 400; Retsch GmbH, Haan, Germany) and storage on ice for 120 min before centrifugation at 14,000 rpm for 10 min at 4\u00b0C (Centrifuge 5417R, Eppendorf, Hamburg, Germany). 200 microliters of each supernatant were transferred to gas chromatography (GC) vials and evaporated until dry in a speedvac (miVac; Quattro concentrator, Barnstead Genevac, Ipswich, UK). After evaporation the samples were stored in \u221280\u00b0C until derivatization. Prior to derivatization the extracted plasma samples were again dried briefly in a speedvac. Methoxyamination, by the addition of 30 \u03bcl methoxyamine in pyridine (15 \u03bcg/\u03bcl), 10 min of shaking and 60 min heating at 70\u00b0C, was carried out over 16 hr (at ambient temperature). Trimethylsilylation, with addition of 30 \u03bcl MSFTA (N-methyl-N-trimethylsilyl-trifluoroacetamide) + 1% TMCS (Trimethylchlorosilane), was performed for 1 hr (at ambient temperature). Finally, 30 \u03bcl heptane, including methyl stearate (15 ng/\u03bcl), was added as an injection standard.\n\n### Metabolomic analysis by GCxGC/TOFMS\n\nThe two dimensional chromatography provides an output which can be seen as a metabolite landscape where each detected potential metabolite is defined by a three-dimensional peak in this landscape (retention time 1 \u00d7 retention time 2 \u00d7 peak height) (as shown in Figure 1). Extracted and derivatized plasma samples were analyzed, in a random order (within the analytical batches), on a Pegasus 4D (Leco Corp., St Joseph, MI, USA) equipped with an Agilent 6890 gas chromatograph (Agilent Technologies, Palo Alto, GA, USA), a secondary gas chromatograph oven, a quad-jet thermal modulator, and a time-of-flight mass spectrometer. Leco\u00b4s ChromaTOF software was used for setup and data acquisition. The column set used for the GCxGC separation was a polar BPX-50 (30 m \u00d7 0.25 mm \u00d7 0.25 \u00b5m; SGE, Ringwood, Australia) as first-dimension column and a non-polar VF-1MS (1.5 m \u00d7 0.15 mm \u00d7 0.15 \u00b5m; J&W Scientific Inc., Folsom, CA, USA) for the second-dimension column. Splitless injection of 1 \u03bcl sample aliquots was performed with an Agilent 7683B auto sampler at an injection temperature of 270\u00b0C (2 respectively 5 pre/post-wash cycles were used with hexane). The purge time was 60 s with a rate of 20 ml/min and helium was used as carrier gas with a flow rate of 1 ml/min. The temperature program for the primary oven started with an initial temperature of 60\u00b0C for 2 min, followed by a temperature increase of 4\u00b0C/min up to 300\u00b0C and where the temperature was held for 2 min. The secondary oven maintained the same temperature program but with an offset of +15\u00b0C compared to the primary oven. The modulation time was 5 s with a hot pulse time of 0.8 s and a 1.7 s cooling time between the stages. The MS transfer line had a temperature of 300\u00b0C and the ion source 250\u00b0C. 70 eV electron beams were used for the ionization and masses were recorded from 50 to 550 m/z at a rate of 100 spectra/sec with the detector voltage set at 1780 V. 15 randomly selected plasma samples were unblended and run in triplicate as analytical replicates (Control: N = 4, S. Paratyphi A: N = 5, S. Typhi: N = 6). In addition to the plasma samples, several samples of methyl stearate in heptane (5 ng/\u03bcl) were run to check the sensitivity of the instrument and three n-alkane series (C8-C40) were also run to allow calculation of retention indexes, RI. The analysis time was approximately 70 min/sample.\n\n### Chemicals\n\nAll chemicals and compounds were of analytical grade unless stated otherwise. The isotopically labeled internal standards (IS) [2H7]-cholesterol, [13C4]-disodium \u03b1-ketoglutarate, [13C5,15N]-glutamic acid, [1,2,3-13C3]-myristic acid, [13C5]-proline, and [2H4]-succinic acid were purchased from Cambridge Isotope Laboratories (Andover, MA, USA); [13C4]-palmitic acid (Hexadecanoic acid), [2H4]-butanediamine\u00b72HCl (Putrescine), and [13C12]-sucrose from Campro (Veenendaal; [13C6]-glucose from Aldrich [Steinheim, Germany], The Netherlands); and [2H6]-salicylic acid from Icon (Summit, NJ, USA). Silylation grade pyridine and N-Methyl-N-trimethylsilyltrifluoroacetamide (MSTFA) with 1% trimethylchlorosilane (TMCS) were purchased from Pierce Chemical Co (Rockford, IL, USA). The stock solutions for reference compounds and IS were all prepared in 0.5 \u03bcg/\u03bcl concentrations in either Milli-Q water or methanol.\n\n### Data processing and metabolite identification\n\nLeco's ChromaTOF software was used for baseline correction, peak detection, mass spectrum deconvolution, mass spectra library search for identification and calculation of peak height/area. A signal-to-noise ratio of 10 was used for peak picking. The library search was performed against publicly available mass spectral libraries from US National Institute of Science and Technology (NIST) and from the Max Planck Institute in Golm (http://csbdb.mpimp-golm.mpg.de/csbdb/gmd/gmd.html) together with in-house libraries established at SMC. Peak information for each of the samples was exported as individual csv-files (comma-separated values). All csv-files were imported into the data processing software Guineu (1.0.3 VTT; Espoo, Finland) (Castillo et al., 2011) for alignment, normalization (with internal standards), filtering and functional group identification. After processing in Guineu all peaks were manually investigated by using the average spectra information, obtained from Guineu, in NIST MS Search 2.0 to search against the same libraries as previously used. This manual comparison was performed to additionally confirm the putative annotations of the metabolites and detect possible split peaks, which, if having comparable mass spectra and retention indices, were summed and compared to the individual peaks in the following multivariate statistical analysis to make decision about inclusion. During manual investigation, peaks were excluded from further analysis if detected in less than 50 samples, being an internal standard or silyl artifact, having few mass fragments in spectra, having mass spectra similar to another peak with a better identity match or being part of a sum. Metabolites found in less than 50 samples but still showing interesting profiles as diagnostic markers were interpreted separately.\n\n### Pattern recognition\n\nPattern recognition is based on the concept of multivariate projection methods. In metabolomics pattern recognition is used to reduce the high dimensionality of acquired analytical data for facilitated interpretation of biochemical profile alterations and detection of patterns among characterized samples based on similarities in these biochemical profiles (Holmes and Antti, 2002; Madsen et al., 2010). Among multivariate projection methods principal components analysis (PCA) (Wold et al., 1987) and partial least squares (PLS) with its extension orthogonal-PLS (OPLS) are the most commonly applied for pattern recognition in metabolomics studies. Here PCA was used initially to obtain an overview of main variations in the acquired GCxGC/TOFMS data and to detect and remove outliers. To reduce confounding from analytical drift over the time of analysis PLS was used to fit a model with run order as the response, metabolites showing a strong correlation with run order (i.e., Pearson product moment correlation coefficient > |0.5|) were excluded from further modeling. OPLS with class information (for example if a plasma sample has been sampled from a non-infected control or an infected patient) as the response was then performed to detect metabolite patterns that best discriminate between the pre-defined sample classes. This type of pattern recognition modeling is referred to as discriminant analysis (DA), thus the method used is OPLS-DA (Bylesj\u00f6 et al., 2006). OPLS-DA models were calculated in turn for (i) separation between the three sample classes (control, S. Typhi infected, and S. Paratyphi A infected), and (ii) for pairwise comparisons (control vs S. Typhi, control vs S. Paratyphi A, and S. Typhi vs S. Paratyphi A). For each model a Q2 value was calculated to reflect the predictive power of the OPLS model. In the case of a DA model the Q2 value, which can vary on a continuous scale between 0 and 1, will indicate if the classification (or metabolite pattern) is robust. A Q2 of 1 refers to a perfect classification, while a Q2 of 0 or below refers to a poor or random classification. In addition, a p-value was calculated for each OPLS-DA model using ANOVA (Eriksson and Trygg, 2008). To define which metabolites that contribute significantly to the detected metabolite patterns the OPLS-DA variable weights (covariance loadings; w*) and univariate p-values (two-tailed Student's t test) were used in combination. A metabolite was considered significant if it had a univariate p-value\u22640.05 and was important for class separation in the OPLS-DA model, according to the variable weight or covariance loading (w*) (here the significance limit was w* >|0.03| for the models separating non-infected controls and enteric fever samples and w* >|0.07| for models between S. Typhi and S. Paratyphi A).\n\nAll pattern recognition analysis was performed in SIMCA (version SIMCA-P+ 13.0; Umetrics, Ume\u00e5, Sweden). Model plots were created using SIMCA or GraphPad Prism (5.04; GraphPad Software Inc., La Jolla, CA, USA) in combination with Adobe Illustrator CS5 (15.0.0; Adobe Systems Inc., San Jose, CA, USA).\n\nReceiver operating curves (ROC) were constructed and compared for individual metabolites as well as for OPLS-DA model scores (metabolite profiles) to additionally investigate the usefulness of the obtained results. The area under the curve (AUC) can be used as an output of the ROC analysis, which can range from 0.5 to 1.0. The higher AUC value a biomarker obtains the higher is the diagnostic potential. Here the web-based online tool ROCCET (http://www.roccet.ca/ROCCET/) was used to perform univariate ROC analyses. For the individual metabolites the relative concentrations for all samples were used as input, while for the models (metabolite profiles) model scores (t) and cross-validated scores (tcv) (Stone, 1974) were used after recalculation by subtracting the lowest score value from all other score values to avoid negative values.\n",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "f0325979-46eb-4007-9f4f-3fefc487ae85",
+      "submission_id": "0d422024-d3d0-473e-b540-a159cc3ade36",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Quarraisha Abdool Karim, University of KwaZulu Natal , South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03100.012](https://doi.org/10.7554/eLife.03100.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cSalmonella Typhi and Salmonella Paratyphi A elaborate distinct systemic metabolite signatures during enteric fever\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom, Quarraisha Abdool Karim, is a member of our Board of Reviewing Editors, and we are very pleased to inform you that your article has been accepted for publication.\n\nThe authors utilize Metabolomics to identify biomarkers to differentiate causes of enteric fever by Salmonella Typhi and Paratyphi, a major bottleneck to the development of new diagnostics. Enteric fever is a substantial public health problem in resource-constrained settings. The current diagnostic tool is blood culture but it has low specificity. Accurate diagnosis of enteric fever is important particularly in settings where febrile disease from multiple aetiologies is common and notably in the context of increased microbial resistance to inform appropriate treatment.\n\nThe application of metabolomics is relatively new in infectious diseases research. In this study specimens were carefully selected 75 patients with 50 from blood culture confirmed enteric fever patients (25 with S. Typhi and 25 with S. Paratyphi A) and 25 age range matched afebrile controls. Supervised pattern recognition was used to identify significant and reproducible metabolite profiles separating out Typhi, Paratyphi and controls following mass spectrometric analysis. A \u201cfingerprint\u201d of 6 metabolites that help differentiate the aetiological agent of enteric fever is defined. The authors underscore that while mass spectrometry cannot be used routinely the \u201csignature\u201d 6 metabolites could be used to inform the development of point of care diagnostics. They further highlight the potential for use in diagnosing other systemic bacterial infections using this methodology. These findings are a substantial technological advance to solve the problem of diagnosing enteric fever. I have no substantive or significant concerns with this manuscript and recommend acceptance for publication.\n\nThe manuscript is well written. However, there are a variety of abbreviations used that are not described before and it would help the reader understand the text if they were introduced. GCxGC/TOFMS, OPLS-DA, PCA, ROC, AUC, HCV, LSMC, and several more in the Methods section. In the Discussion kindly elaborate more about future applicability of this approach in the field. The reviewers also think that it would strengthen your story if you mention why patients with other febrile conditions were excluded.\n\n[Editors\u2019 note: given the minor nature of the comments, there is not an accompanying Author response]\n",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "01634f0e-de8a-49e8-9b76-0d24de9a0dda",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C1",
+      "claim": "Enteric fever is a serious bacterial infection caused by Salmonella enterica serovars Typhi (S. Typhi) and Paratyphi A (S. Paratyphi A).",
+      "claim_type": "EXPLICIT",
+      "source": "Enteric fever is a serious bacterial infection caused by Salmonella enterica serovars Typhi (S. Typhi) and Paratyphi A (S. Paratyphi A) (Parry et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Parry et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "5a3cfb8d-a2ae-406e-887e-f185cda62f42",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C2",
+      "claim": "S. Typhi causes approximately 21 million new infections per year globally.",
+      "claim_type": "EXPLICIT",
+      "source": "S. Typhi is more prevalent than S. Paratyphi A globally, with the best estimates predicting approximately 21 and 5 million new infections with each serovar per year, respectively (Ochiai et al., 2008; Buckle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ochiai et al., 2008 and Buckle et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "f9235690-5b10-4a9c-8a37-eaa14d75fa45",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C3",
+      "claim": "S. Paratyphi A causes approximately 5 million new infections per year globally.",
+      "claim_type": "EXPLICIT",
+      "source": "S. Typhi is more prevalent than S. Paratyphi A globally, with the best estimates predicting approximately 21 and 5 million new infections with each serovar per year, respectively (Ochiai et al., 2008; Buckle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ochiai et al., 2008 and Buckle et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "191fe757-7b85-4ede-8dc2-9e28ad2790ee",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C4",
+      "claim": "S. Typhi and S. Paratyphi A induce clinically indistinguishable syndromes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both S. Typhi and S. Paratyphi A are systemic pathogens that induce clinically indistinguishable syndromes (Maskey et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maskey et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "0b11e5a2-042c-49b3-8d9f-999e24e70b75",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C5",
+      "claim": "S. Typhi and S. Paratyphi A exhibit contrary epidemiologies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they exhibit contrary epidemiologies, different geographical distributions, and different propensities to develop resistance to antimicrobials (Vollaard et al., 2004; Karkey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vollaard et al., 2004 and Karkey et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "ec9d7f1b-f80f-46f8-a239-de9cf7e92ea7",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C6",
+      "claim": "S. Typhi and S. Paratyphi A have different geographical distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they exhibit contrary epidemiologies, different geographical distributions, and different propensities to develop resistance to antimicrobials (Vollaard et al., 2004; Karkey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vollaard et al., 2004 and Karkey et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "eb275ff0-54b1-4406-967a-5f2ca3ae8a29",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C7",
+      "claim": "S. Typhi and S. Paratyphi A have different propensities to develop resistance to antimicrobials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they exhibit contrary epidemiologies, different geographical distributions, and different propensities to develop resistance to antimicrobials (Vollaard et al., 2004; Karkey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vollaard et al., 2004 and Karkey et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "156eb05d-01d9-4aac-b683-7e9de750b7b0",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C8",
+      "claim": "S. Typhi and S. Paratyphi A are genetically and phenotypically distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, they are genetically and phenotypically distinct, having gone through a lengthy process of convergent evolution to cause an identical disease (Didelot et al., 2007; Holt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Didelot et al., 2007 and Holt et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "c280799e-8e05-4576-ae2d-3b2b038c96af",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C9",
+      "claim": "S. Typhi and S. Paratyphi A have gone through a lengthy process of convergent evolution to cause an identical disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, they are genetically and phenotypically distinct, having gone through a lengthy process of convergent evolution to cause an identical disease (Didelot et al., 2007; Holt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Didelot et al., 2007 and Holt et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "00d4b4f4-d146-4ce1-a148-031467601182",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C10",
+      "claim": "The agents of enteric fever induce their effect by invading the gastrointestinal tract and spreading in the bloodstream.",
+      "claim_type": "EXPLICIT",
+      "source": "The agents of enteric fever induce their effect on the human body by invading the gastrointestinal tract and spreading in the bloodstream (Everest et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Everest et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "18f2c617-2879-458a-b1a7-6401f35645ed",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C11",
+      "claim": "The systemic phase of enteric fever induces the characteristic symptoms of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "It is this systemic phase of the disease that induces the characteristic symptoms of enteric fever (Glynn et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glynn et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "21d7a267-c085-4c23-a8d5-412e4c57efdb",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C12",
+      "claim": "Blood culture for suspected enteric fever is commonly only positive in up to 50% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, blood culture for suspected enteric fever is commonly only positive in up to 50% of cases only, and PCR amplification on blood samples performs less well (Gilman et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gilman et al., 1975",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "ff6055de-665e-4276-99ad-73444995ea73",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C13",
+      "claim": "PCR amplification on blood samples performs less well than blood culture for enteric fever diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, blood culture for suspected enteric fever is commonly only positive in up to 50% of cases only, and PCR amplification on blood samples performs less well (Gilman et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gilman et al., 1975",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "cdcbc0b9-abe4-4c8a-b2ca-20a0f74a86e2",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C14",
+      "claim": "Enteric fever is characterized by a low number of organisms in the blood.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality, the fundamental complications of enteric fever diagnostics are the low number of organisms in the blood (Wain et al., 1998), and a lack of a generic systemic signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wain et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "fdaf150c-666a-466a-b2ac-f52353cdd7f7",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C15",
+      "claim": "All currently accepted methods for enteric fever diagnosis lack reproducibility and exhibit inacceptable sensitivity and specificity under operational conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "All currently accepted methods for enteric fever diagnosis lack reproducibility and exhibit inacceptable sensitivity and specificity under operational conditions (Moore et al., 2014; Parry et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Moore et al., 2014 and Parry et al., 2011b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "b3cfb91e-7b56-40ed-89e8-594b549850cf",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C16",
+      "claim": "S. Typhi and S. Paratyphi A induce a phenotype via a relatively modest concentration of organisms in the blood.",
+      "claim_type": "EXPLICIT",
+      "source": "As S. Typhi and S. Paratyphi A induce an phenotype via a relatively modest concentration of organisms in the blood (Wain et al., 1998; Nga et al., 2010), we hypothesized that the host/pathogen interactions during early enteric fever would provide unique metabolite profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wain et al., 1998 and Nga et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "46478850-bbc0-45a5-b724-6679842cec0b",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C17",
+      "claim": "The study selected 75 plasma samples from 50 patients with blood culture confirmed enteric fever (25 with S. Typhi and 25 with S. Paratyphi A) and 25 age range matched afebrile controls.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate systemic metabolite profiles associated with enteric fever we selected 75 plasma samples from 50 patients with blood culture confirmed enteric fever (25 with S. Typhi and 25 with S. Paratyphi A) and 25 age range matched afebrile controls attending the same healthcare facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design and sample selection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "4114102b-68a6-422b-b44b-d0ce2d5c8ee8",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C18",
+      "claim": "GCxGC/TOFMS data filtering resulted in 988 unique metabolite peaks being retained.",
+      "claim_type": "EXPLICIT",
+      "source": "Following primary data filtering, 988 unique metabolite peaks were retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of metabolite peaks after data filtering",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "cc5aa56a-acc2-406e-9a19-759f05ea7c21",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C19",
+      "claim": "178 GCxGC/TOFMS metabolite peaks could be assigned a structural identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons to public databases resulted in 178 GCxGC/TOFMS metabolite peaks that could be assigned a structural identity, and a further 62 peaks that could be assigned to a metabolite class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of metabolites with structural identity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "95899bd4-2649-4123-8864-9da0216a484e",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C20",
+      "claim": "62 metabolite peaks could be assigned to a metabolite class.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons to public databases resulted in 178 GCxGC/TOFMS metabolite peaks that could be assigned a structural identity, and a further 62 peaks that could be assigned to a metabolite class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of metabolites assigned to a class",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "78ce6773-7b1f-4935-92cf-83d2894e7c7b",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C21",
+      "claim": "279 metabolites demonstrated a significant correlation with run order (Pearson coefficient > |0.5|).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 279 metabolites that demonstrated a significant correlation with run order (Pearson coefficient > |0.5|).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of metabolites correlated with run order",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "8898d4f8-95a6-46f9-bde4-ad3a1d6d769c",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C22",
+      "claim": "695 unique metabolite peaks were retained for initial pattern recognition modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, 695 unique metabolite peaks (105 samples), were retained for initial pattern recognition modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the final number of metabolites used in modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "e1576629-d650-490a-8d97-d0f996219a48",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C23",
+      "claim": "11 out of 105 samples were identified as analytical outliers using PCA.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 11/105 samples as analytical outliers using PCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of outlier samples identified",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "e7aa2560-7757-4653-8424-a91482e2ec65",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C24",
+      "claim": "94 samples remained for pattern recognition modeling after excluding outliers.",
+      "claim_type": "EXPLICIT",
+      "source": "These 11 samples were excluded from further analysis\u2013leaving a total of 94 samples for pattern recognition modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the final number of samples used in modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "392601f1-2303-4004-b331-044ca4130ef4",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C25",
+      "claim": "The PCA model incorporates 695 metabolites with eight significant principal components (R2X = 0.437, Q2 = 0.255).",
+      "claim_type": "EXPLICIT",
+      "source": "PCA model incorporates 695 metabolites with eight significant principal components (R2X = 0.437, Q2 = 0.255).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports PCA model parameters shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "1af9ffb2-a0e5-44d6-81bc-aca8873e945a",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C26",
+      "claim": "The unsupervised pattern recognition model outlined obvious differences between the metabolite profiles in the plasma samples from the controls and the enteric fever patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation within the unsupervised pattern recognition model outlined obvious differences between the metabolite profiles in the plasma samples from the controls and the enteric fever patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the results of PCA analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "4610a129-5b18-4e35-8d18-d47582cc0142",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C27",
+      "claim": "Metabolite profiles in the plasma have potential diagnostic value for enteric fever.",
+      "claim_type": "EXPLICIT",
+      "source": "It was evident from these analyses that metabolite profiles in the plasma had a potential diagnostic value for enteric fever.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from PCA results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "136e4b72-b131-4aa0-bee7-26d1f2e8bcaf",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C28",
+      "claim": "The OPLS-DA model generated a Q2 value of 0.45 for differentiating the three sample groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The OPLS-DA model generated a Q2 value of 0.45, suggesting reliable differences between the metabolite profiles in relation to the three sample groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports OPLS-DA model performance metric",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "a4eece2d-3ee8-4649-8ee4-1d589c1490d1",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C29",
+      "claim": "The OPLS-DA model provided excellent predictive power for distinguishing between the sample groups (p=1.7 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "Further validation indicated that the OPLS-DA model provided excellent predictive power for distinguishing between the sample groups (p=1.7 \u00d7 10\u22126; control vs S. Typhi vs S. Paratyphi A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports statistical significance of OPLS-DA model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "4b85a910-3cb3-4a08-b1bd-b2194a0e94b7",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C30",
+      "claim": "The OPLS-DA model for differentiating plasma metabolite profiles between controls and S. Typhi infections generated a Q2 value of 0.82 (p=4.1 \u00d7 10\u221220).",
+      "claim_type": "EXPLICIT",
+      "source": "The models between the controls and S. Typhi infections and between the controls and S. Paratyphi A infections also had high predictive power, generating Q2 values of 0.82 (p=4.1 \u00d7 10\u221220) and 0.81 (p=4.2 \u00d7 10\u221218), respectively (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports OPLS-DA model performance for S. Typhi vs controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "4fc2a088-ca27-4941-b1a3-ffa9bb4e0000",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C31",
+      "claim": "The OPLS-DA model for differentiating plasma metabolite profiles between controls and S. Paratyphi A infections generated a Q2 value of 0.81 (p=4.2 \u00d7 10\u221218).",
+      "claim_type": "EXPLICIT",
+      "source": "The models between the controls and S. Typhi infections and between the controls and S. Paratyphi A infections also had high predictive power, generating Q2 values of 0.82 (p=4.1 \u00d7 10\u221220) and 0.81 (p=4.2 \u00d7 10\u221218), respectively (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports OPLS-DA model performance for S. Paratyphi A vs controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "85efbed5-ca0f-4283-b712-761519ff41ac",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C32",
+      "claim": "The model for differentiating plasma metabolite profiles between S. Typhi infections and S. Paratyphi A infections generated a Q2 value of 0.14 (p=6.7 \u00d7 10\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "The model for differentiating plasma metabolite profiles between the S. Typhi infections and the S. Paratyphi A infections generated a Q2 value of 0.14 (p=6.7 \u00d7 10\u22122) (Figure 3C), indicating that the plasma metabolite profiles can also be used to discriminate between the two enteric fever agents.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports OPLS-DA model performance for S. Typhi vs S. Paratyphi A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "3a232570-a8b3-4855-ad58-101ee07caa1b",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C33",
+      "claim": "306 metabolite peaks separate the controls from the S. Typhi infections.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 306, 324, and 58 metabolite peaks separating the controls from the S. Typhi infections, the controls from the S. Paratyphi A infections, and the S. Typhi infections from the S. Paratyphi A infections, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of discriminatory metabolites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "65e3005e-4d5f-4647-ba82-f90d670046a2",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C34",
+      "claim": "324 metabolite peaks separate the controls from the S. Paratyphi A infections.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 306, 324, and 58 metabolite peaks separating the controls from the S. Typhi infections, the controls from the S. Paratyphi A infections, and the S. Typhi infections from the S. Paratyphi A infections, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of discriminatory metabolites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "e60649bf-9f18-48e3-823a-a501631b6dcb",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C35",
+      "claim": "58 metabolite peaks separate the S. Typhi infections from the S. Paratyphi A infections.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 306, 324, and 58 metabolite peaks separating the controls from the S. Typhi infections, the controls from the S. Paratyphi A infections, and the S. Typhi infections from the S. Paratyphi A infections, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of discriminatory metabolites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "9366a493-4bb0-4b6d-bd1d-d5555bd1de13",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C36",
+      "claim": "46 metabolites could significantly distinguish between samples from enteric fever cases and control samples, and could also distinguish between samples from S. Typhi infected cases and S. Paratyphi A infected cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of 46 metabolites could significantly distinguish between samples from enteric fever cases and control samples, and could also distinguish between samples from S. Typhi infected cases and S. Paratyphi A infected cases (p\u22640.05; two-tailed Student's t test) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports the number of metabolites with discriminatory power across all comparisons",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "92352d80-7f70-438e-9faf-a059f7e36ec0",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C37",
+      "claim": "Of the 46 informative metabolites, 12 could be annotated.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 46 informative metabolites, 12 could be annotated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports the number of annotated metabolites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "916469e9-ff8b-48d9-b5a8-493671735878",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C38",
+      "claim": "Phenylalanine was confirmed to have the highest concentration in the S. Typhi sample and the lowest concentration in control sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenylalanine and phenyl-2-hydroxybutanoic acid were confirmed to have the highest concentration in the S. Typhi sample and the lowest concentration in control sample, while pipecolic acid had the highest concentration in S. Paratyphi A samples and the lowest concentration in control samples (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by chromatographic data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "7f71bf18-9348-4d57-bce6-46731b685f28",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C39",
+      "claim": "Phenyl-2-hydroxybutanoic acid was confirmed to have the highest concentration in the S. Typhi sample and the lowest concentration in control sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenylalanine and phenyl-2-hydroxybutanoic acid were confirmed to have the highest concentration in the S. Typhi sample and the lowest concentration in control sample, while pipecolic acid had the highest concentration in S. Paratyphi A samples and the lowest concentration in control samples (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by chromatographic data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "4a5cb4de-287d-4746-9ac6-1f81e63312e2",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C40",
+      "claim": "Pipecolic acid had the highest concentration in S. Paratyphi A samples and the lowest concentration in control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenylalanine and phenyl-2-hydroxybutanoic acid were confirmed to have the highest concentration in the S. Typhi sample and the lowest concentration in control sample, while pipecolic acid had the highest concentration in S. Paratyphi A samples and the lowest concentration in control samples (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by chromatographic data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "451f6896-6124-470f-b5fc-1a9e39d57a97",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C41",
+      "claim": "Seven metabolites exhibited a higher concentration in the plasma from S. Typhi infected patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, seven metabolites (2,4-dihydroxybutanoic acid, 2-phenyl-2-hydroxypropanoic acid, cysteine, gluconic acid, glucose-6-phosphate/mannose-6-phosphate, pentitol-3-desoxy and phenylalanine) exhibited a higher concentration in the plasma from S. Typhi infected patients and five (4-methyl-pentanoic acid, ethanolamine, isoleucine, pipecolic acid, and serine) exhibited a higher concentration in the plasma of S. Paratyphi A infected patients (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports metabolites elevated in S. Typhi infections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "c6abe06c-49a7-4db1-9e65-5572bd6deb16",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C42",
+      "claim": "Five metabolites exhibited a higher concentration in the plasma of S. Paratyphi A infected patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, seven metabolites (2,4-dihydroxybutanoic acid, 2-phenyl-2-hydroxypropanoic acid, cysteine, gluconic acid, glucose-6-phosphate/mannose-6-phosphate, pentitol-3-desoxy and phenylalanine) exhibited a higher concentration in the plasma from S. Typhi infected patients and five (4-methyl-pentanoic acid, ethanolamine, isoleucine, pipecolic acid, and serine) exhibited a higher concentration in the plasma of S. Paratyphi A infected patients (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports metabolites elevated in S. Paratyphi A infections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "82bc1590-eeb1-45ce-b93d-5ba00fc6a722",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C43",
+      "claim": "The OPLS-DA model using 46 metabolites was highly statistically significant for all pairwise comparisons (p<2.6 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "The model was highly statistically significant for all pairwise comparisons, (p<2.6 \u00d7 10\u22126; between S. Typhi and S. Paratyphi A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports statistical significance of the 46-metabolite model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "0756c484-01dc-4635-afa4-bea18569cb20",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C44",
+      "claim": "ROC curves for the 46-metabolite OPLS-DA models verified the diagnostic capabilities with AUC values >0.9 for all comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, receiver-operating characteristic (ROC) curves for the fitted and cross-validated OPLS-DA scores for each of the pairwise models verified the diagnostic capabilities of the extracted metabolite profiles (46 metabolites) (area under the curve (AUC) values >0.9 for all comparisons) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports ROC analysis results shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "81e66605-b92d-40b2-96c2-982c6658994b",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C45",
+      "claim": "The best identifiable metabolite differentiating S. Typhi from S. Paratyphi A was 2-phenyl-2-hydroxypropanoic acid, which gave an AUC of 0.693.",
+      "claim_type": "EXPLICIT",
+      "source": "The best identifiable metabolite differentiating S. Typhi from S. Paratyphi A was 2-phenyl-2-hydroxypropanoic acid, which gave an AUC of 0.693 (Figure 5), and the best unidentified metabolite differentiating S. Typhi from S. Paratyphi A gave an AUC value of 0.746.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports individual metabolite diagnostic performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "579b6e6b-62fa-4dee-b000-c8601951743e",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C46",
+      "claim": "The best unidentified metabolite differentiating S. Typhi from S. Paratyphi A gave an AUC value of 0.746.",
+      "claim_type": "EXPLICIT",
+      "source": "The best identifiable metabolite differentiating S. Typhi from S. Paratyphi A was 2-phenyl-2-hydroxypropanoic acid, which gave an AUC of 0.693 (Figure 5), and the best unidentified metabolite differentiating S. Typhi from S. Paratyphi A gave an AUC value of 0.746.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports individual metabolite diagnostic performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "c1781ff3-6d2f-48e9-a5a1-5737e5d20870",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C47",
+      "claim": "Phenylalanine had an AUC of 0.884 for differentiating controls from S. Typhi infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC values for the best individual metabolites differentiating controls from S. Typhi infections were 0.884 (phenylalanine) (Figure 5) and 0.889 (unidentified), and the AUC values for the individual metabolites best differentiating controls from S. Paratyphi A infections were 0.925 (phenylalanine) (Figure 5) and 0.926 (unidentified).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports individual metabolite diagnostic performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "f6cf20f0-4a2d-4750-9665-815987792b37",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C48",
+      "claim": "Phenylalanine had an AUC of 0.925 for differentiating controls from S. Paratyphi A infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC values for the best individual metabolites differentiating controls from S. Typhi infections were 0.884 (phenylalanine) (Figure 5) and 0.889 (unidentified), and the AUC values for the individual metabolites best differentiating controls from S. Paratyphi A infections were 0.925 (phenylalanine) (Figure 5) and 0.926 (unidentified).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports individual metabolite diagnostic performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "ce0ab0f9-babd-42ca-b79f-67359341211a",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C49",
+      "claim": "A metabolite pattern consisting of six identified/classified metabolites gave ROC values >0.8 for all pairwise comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a metabolite pattern consisting of six identified/classified metabolites (ethanolamine, gluconic acid, monosaccharide, phenylalanine, pipecolic acid and saccharide) gave ROC values >0.8 for all pairwise comparisons (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports diagnostic performance of 6-metabolite panel",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "6a8bae1f-0101-475b-aea4-0d19c8256a88",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C50",
+      "claim": "2,4-dihydroxybutanoic acid is a hydroxyl acid that can be found in low amounts in the blood and urine of healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "2,4-dihydroxybutanoic acid is a hydroxyl acid that can be found in low amounts in the blood and urine of healthy individuals, but is also related to hypoxia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about this metabolite",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "c5492635-8209-4220-80b4-d794b3218272",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C51",
+      "claim": "2,4-dihydroxybutanoic acid is related to hypoxia.",
+      "claim_type": "EXPLICIT",
+      "source": "2,4-dihydroxybutanoic acid is a hydroxyl acid that can be found in low amounts in the blood and urine of healthy individuals, but is also related to hypoxia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about this metabolite",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "2d93c9ac-efa1-4d90-968c-c1c94cf439e7",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C52",
+      "claim": "Many pathogenic bacteria have the ability to induce the activation of hypoxia inducible factor (HIF)-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Many pathogenic bacteria have the ability to induce the activation of hypoxia inducible factor (HIF)-1 and we surmise that invasive Salmonella also play a role in HIF-1 modulation during the inflammatory response induced during early infection (Werth et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Werth et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "b9e72a4c-9330-4cfd-9b77-4d2cb4a6abb2",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C53",
+      "claim": "Invasive Salmonella play a role in HIF-1 modulation during the inflammatory response induced during early infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Many pathogenic bacteria have the ability to induce the activation of hypoxia inducible factor (HIF)-1 and we surmise that invasive Salmonella also play a role in HIF-1 modulation during the inflammatory response induced during early infection (Werth et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on citation to Werth et al., 2010",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "59127ca3-e370-4bff-8516-ee5c9c729004",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C54",
+      "claim": "Phenylalanine is an essential amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenylalanine is an essential amino acid, and higher phenylalanine to tyrosine ratios have been described in the blood of patients with various diseases including sepsis, Hepatitis C (Herndon et al., 1978; Zoller et al., 2012), and in rats challenged with a number of pathogens (Wannemacher et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "f7b83e3e-9fd6-4705-bf15-5395e5b24236",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C55",
+      "claim": "Higher phenylalanine to tyrosine ratios have been described in the blood of patients with sepsis and Hepatitis C.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenylalanine is an essential amino acid, and higher phenylalanine to tyrosine ratios have been described in the blood of patients with various diseases including sepsis, Hepatitis C (Herndon et al., 1978; Zoller et al., 2012), and in rats challenged with a number of pathogens (Wannemacher et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Herndon et al., 1978 and Zoller et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "459fecf3-6f53-4d15-a363-6e740c778378",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C56",
+      "claim": "Higher phenylalanine to tyrosine ratios have been described in rats challenged with a number of pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenylalanine is an essential amino acid, and higher phenylalanine to tyrosine ratios have been described in the blood of patients with various diseases including sepsis, Hepatitis C (Herndon et al., 1978; Zoller et al., 2012), and in rats challenged with a number of pathogens (Wannemacher et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wannemacher et al., 1976",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "40fe1b2d-a325-42b0-bfc8-5f37af9e250f",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C57",
+      "claim": "Elevated phenylalanine was found in primary dengue patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, elevated phenylalanine was also found in during a recent metabolite investigation of primary dengue patients and is intrinsically linked to nitric oxide synthase during infection (Cui et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cui et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "9e29213e-28f2-4ebc-b062-746a677dd47c",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C58",
+      "claim": "Phenylalanine is intrinsically linked to nitric oxide synthase during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, elevated phenylalanine was also found in during a recent metabolite investigation of primary dengue patients and is intrinsically linked to nitric oxide synthase during infection (Cui et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cui et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "4325b1b2-2c3b-473d-a069-276ae7a642c7",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C59",
+      "claim": "Pipecolic acid is a non-protein amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, and most intriguingly, pipecolic acid is a non-protein amino acid and is an essential part of the inducible immunity of plants during challenge from bacterial pathogen and is elevated in the urine of malaria patients (Sengupta et al., 2011; Vogel-Adghough et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "c18e6f49-8a4f-4d8f-8075-133fd7c793da",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C60",
+      "claim": "Pipecolic acid is an essential part of the inducible immunity of plants during challenge from bacterial pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, and most intriguingly, pipecolic acid is a non-protein amino acid and is an essential part of the inducible immunity of plants during challenge from bacterial pathogen and is elevated in the urine of malaria patients (Sengupta et al., 2011; Vogel-Adghough et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sengupta et al., 2011 and Vogel-Adghough et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "7590b876-161a-4056-8434-dead19a001d5",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C61",
+      "claim": "Pipecolic acid is elevated in the urine of malaria patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, and most intriguingly, pipecolic acid is a non-protein amino acid and is an essential part of the inducible immunity of plants during challenge from bacterial pathogen and is elevated in the urine of malaria patients (Sengupta et al., 2011; Vogel-Adghough et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sengupta et al., 2011 and Vogel-Adghough et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "64d285fa-a802-4a9c-b947-81dd524a0b39",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C62",
+      "claim": "S. Typhi and S. Paratyphi A have a modified physiology in comparison to other Salmonella and enter human tissue with limited intestinal replication.",
+      "claim_type": "EXPLICIT",
+      "source": "These organisms have a modified physiology in comparison to other Salmonella and enter human tissue with limited intestinal replication and by potentially suppressing gastrointestinal inflammation (Jones and Falkow, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jones and Falkow, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "385001d0-ee8a-4f71-b66c-c22e26756a11",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C63",
+      "claim": "S. Typhi and S. Paratyphi A potentially suppress gastrointestinal inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "These organisms have a modified physiology in comparison to other Salmonella and enter human tissue with limited intestinal replication and by potentially suppressing gastrointestinal inflammation (Jones and Falkow, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jones and Falkow, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "a7a4a87c-bcd0-4329-90da-15841c3f7695",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C64",
+      "claim": "One of the key features of enteric fever is a lack of gastrointestinal involvement as seen with other, non-invasive, Salmonella serovars.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, one of the key features of enteric fever is a lack of gastrointestinal involvement as seen with other, non-invasive, Salmonella serovars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the modified physiology of enteric fever agents",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "4b23d65a-9209-4ea0-b084-0f426a3e6c69",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C65",
+      "claim": "S. Typhi has the Vi capsule on its surface, which is absent from S. Paratyphi A.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the metabolites distinguishing S. Typhi from S. Paratyphi A may be explained by these subtle biological differences between these organisms and partly by the presence of the virulence (Vi) capsule on the surface of S. Typhi, which is absent from S. Paratyphi A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about these bacteria",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "8ce0a422-b81b-4e3a-b8fd-750c13670748",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C66",
+      "claim": "Vi is a polysaccharide that has anti-inflammatory properties, limiting complement deposition and restricting immune activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Vi is a polysaccharide that has anti-inflammatory properties, limiting complement deposition and restricting immune activation (Jansen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jansen et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "ebac41bd-313e-4f76-9d17-3261b8d9235e",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C67",
+      "claim": "The concentrations of monosaccharide and saccharide were significantly higher in the plasma samples from S. Typhi patients than from the S. Paratyphi A infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence and functionality of Vi can be observed in the metabolites differentiating S. Typhi from S. Paratyphi A as the concentrations of monosaccharide and saccharide were significantly higher in the plasma samples from S. Typhi patients than from the S. Paratyphi A infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data on metabolite concentrations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "75d1b93e-6dfd-4a65-9b69-4b5fb8481cad",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C68",
+      "claim": "Ethanolamine was in significantly higher concentrations in the plasma from the S. Paratyphi A patients than in S. Typhi patients' plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ethanolamine was in significantly higher concentrations in the plasma from the S. Paratyphi A patients than in S. Typhi patients' plasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data on metabolite concentrations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "a7f22adf-d0f7-4b4f-a97e-34d21db47697",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C69",
+      "claim": "Ethanolamine is released by host tissue during inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethanolamine is released by host tissue during inflammation and experimental work in mice has shown that Salmonella S. Typhimurium has a growth advantage in an inflamed gut (Thiennimitr et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thiennimitr et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "69e4da1a-0bbb-4872-81b5-069cf600425d",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C70",
+      "claim": "Salmonella S. Typhimurium has a growth advantage in an inflamed gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethanolamine is released by host tissue during inflammation and experimental work in mice has shown that Salmonella S. Typhimurium has a growth advantage in an inflamed gut (Thiennimitr et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thiennimitr et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "5f23711d-1322-4e33-bee3-2d86e6a308b5",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C71",
+      "claim": "The differential detection of ethanolamine in plasma samples from enteric fever patients with different infecting serovars may be explained by Vi negative S. Paratyphi A not having the capacity to control gastrointestinal inflammation to the same extent as S. Typhi.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the differential detection of ethanolamine in plasma samples from enteric fever patients with different infecting serovars, may be explained by Vi negative S. Paratyphi A not having the capacity to control gastrointestinal inflammation to the same extent as S. Typhi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on data and cited literature",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "8eb5bd39-f063-4ecc-8593-3bb3772843a5",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C72",
+      "claim": "This is the first study where metabolomics has been applied specifically to enteric fever.",
+      "claim_type": "EXPLICIT",
+      "source": "This study is the first where the technique has been applied specifically to enteric fever and also, to the best of our knowledge, the first to use two-dimensional gas chromatography/mass spectrometry GC/MS to interrogate plasma for potential biomarkers of infection in human blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' statement about novelty of their work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "d692d954-0c8a-4ccd-9dc6-9bbb0fd712b4",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C73",
+      "claim": "This is the first study to use two-dimensional gas chromatography/mass spectrometry GC/MS to interrogate plasma for potential biomarkers of infection in human blood.",
+      "claim_type": "EXPLICIT",
+      "source": "This study is the first where the technique has been applied specifically to enteric fever and also, to the best of our knowledge, the first to use two-dimensional gas chromatography/mass spectrometry GC/MS to interrogate plasma for potential biomarkers of infection in human blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' statement about novelty of their work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "bfbd047c-9106-4571-8ac6-0cf9bba9ce97",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C74",
+      "claim": "GCxGC/TOFMS offers an exquisite degree of resolution and sensitivity for metabolomics profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "GCxGC/TOFMS offers an exquisite degree of resolution and sensitivity for metabolomics profiling (Baumgarner and Cooper, 2012; Hartonen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baumgarner and Cooper, 2012 and Hartonen et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "eae31bdb-7ccf-4aec-90d0-ea534a0659b4",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C75",
+      "claim": "GCxGC/TOFMS has a substantial methodological advantage over standard GC/MS as it has the ability to span a more expansive proportion of the metabolome.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has a substantial methodological advantage over standard GC/MS as it has the ability to span a more expansive proportion of the metabolome, but the resulting data remains compatible with existing mass spectral libraries for metabolite identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on technical capabilities of the method",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "9450c4bc-11c2-4902-97f7-a82b1b9bd630",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C76",
+      "claim": "Reproducible and serovar specific metabolite biomarkers can be detected in plasma during enteric fever.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we show that reproducible and serovar specific metabolite biomarkers can be detected in plasma during enteric fever.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on all study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "97dc6311-2567-4f8b-b2ca-c1db6be18a5a",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C77",
+      "claim": "For the first time, reproducible and serovar specific systemic biomarkers can be detected during enteric fever.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first time we show that reproducible and serovar specific systemic biomarkers can be detected during enteric fever.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement from abstract based on study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "8c4addec-eb19-4052-bc41-79e18f76cb07",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C78",
+      "claim": "A combination of six metabolites could accurately define the etiological agent of enteric fever.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying supervised pattern recognition, we found highly significant and reproducible metabolite profiles separating S. Typhi cases, S. Paratyphi A cases, and controls, calculating that a combination of six metabolites could accurately define the etiological agent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement from abstract based on study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "07aa9d4b-4742-43ed-9acf-4aa5b624340c",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C79",
+      "claim": "The study identified 695 individual metabolite peaks from plasma samples.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate metabolite signals associated with enteric fever we performed two dimensional gas chromatography with time-of-flight mass spectrometry (GCxGC/TOFMS) on plasma from patients with S. Typhi and S. Paratyphi A infections and asymptomatic controls, identifying 695 individual metabolite peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement from abstract based on study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "c19005bc-6582-4fc7-9e46-817e88576247",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C80",
+      "claim": "The study found highly significant and reproducible metabolite profiles separating S. Typhi cases, S. Paratyphi A cases, and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying supervised pattern recognition, we found highly significant and reproducible metabolite profiles separating S. Typhi cases, S. Paratyphi A cases, and controls, calculating that a combination of six metabolites could accurately define the etiological agent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement from abstract based on study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "aeacb63f-a2c7-4e65-af9b-e7c7f91e802d",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C81",
+      "claim": "The study defines several biologically plausible metabolites that can be used to detect enteric fever.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work defines several biologically plausible metabolites that can be used to detect enteric fever, and unlocks the potential of this method in diagnosing other systemic bacterial infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement from abstract based on study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "434bf696-e93b-43e2-8c07-acc3b7253eed",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "claim_id": "C82",
+      "claim": "The method has potential in diagnosing other systemic bacterial infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work defines several biologically plausible metabolites that can be used to detect enteric fever, and unlocks the potential of this method in diagnosing other systemic bacterial infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on study results",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish that enteric fever is caused by S. Typhi and S. Paratyphi A, which cause clinically indistinguishable syndromes despite genetic and epidemiological differences, and that current diagnostic methods are inadequate with poor sensitivity and specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 are all supported by appropriate citations to prior literature and represent well-established background knowledge about enteric fever epidemiology, pathogenesis, and diagnostic challenges. These claims provide context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "97d466dd-8653-4b5d-8258-66417532cbe3",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study analyzed 75 plasma samples (50 enteric fever patients and 25 controls) using GCxGC/TOFMS, identifying 988 metabolite peaks initially, with 695 retained after filtering for run order correlation and outlier removal, resulting in 94 samples for final analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 describe the study design and data processing pipeline with specific numbers reported. The methodology appears sound with appropriate quality control steps including outlier detection and removal of metabolites correlated with run order. Sample sizes are modest but reasonable for a discovery study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "827859a0-5827-4834-a2aa-7b269d69f66e",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Unsupervised PCA analysis revealed obvious differences between metabolite profiles of controls and enteric fever patients, suggesting potential diagnostic value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 report PCA results with appropriate model parameters (R2X=0.437, Q2=0.255). The visual separation in Figure 2A supports the claim of obvious differences between controls and cases. However, the Q2 value of 0.255 indicates modest predictive power for the unsupervised model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "c9c96e55-8e91-41eb-bd25-92541300cf42",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Supervised OPLS-DA models demonstrated excellent discrimination between controls and each pathogen (Q2=0.82 for S. Typhi vs controls, Q2=0.81 for S. Paratyphi A vs controls, both p<10^-18), and modest but significant discrimination between the two pathogens (Q2=0.14, p=0.067).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 report OPLS-DA model performance with appropriate statistical validation. The high Q2 values and highly significant p-values for case-control comparisons are convincing. The S. Typhi vs S. Paratyphi A comparison shows weaker discrimination (Q2=0.14, p=0.067), which barely reaches significance and suggests limited ability to distinguish between the two serovars.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "de4561cd-4e5d-4917-bb19-f84260e51332",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study identified 306, 324, and 58 metabolite peaks distinguishing controls from S. Typhi, controls from S. Paratyphi A, and S. Typhi from S. Paratyphi A respectively, with 46 metabolites significantly distinguishing all three groups, of which only 12 could be annotated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 report the number of discriminatory metabolites identified through OPLS-DA modeling and statistical testing. The low annotation rate (12/46 = 26%) is a significant limitation that reduces biological interpretability and validation potential. The small number of metabolites (58) distinguishing the two pathogens is consistent with the weak Q2 value in C32.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "5bf34ced-c3d2-44f5-a271-295d9cbec3cb",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Specific metabolites showed differential concentrations across groups: phenylalanine and phenyl-2-hydroxybutanoic acid were highest in S. Typhi samples, pipecolic acid was highest in S. Paratyphi A samples, with seven metabolites elevated in S. Typhi and five in S. Paratyphi A infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 report specific metabolite patterns confirmed by chromatographic data (Figure 4). The confirmation using raw chromatographic data strengthens these findings. However, the biological significance and reproducibility of these patterns require validation in independent cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "48882f08-df98-4bbd-973b-56628ae794ff",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The 46-metabolite OPLS-DA model showed high diagnostic performance with AUC values >0.9 for all case-control comparisons, while individual metabolites showed more modest performance (best identified metabolite: 2-phenyl-2-hydroxypropanoic acid with AUC=0.693 for distinguishing S. Typhi from S. Paratyphi A; phenylalanine with AUC=0.884-0.925 for distinguishing cases from controls).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 report ROC analysis results shown in Figure 5. The high AUC values for multi-metabolite models are impressive, but the modest performance of individual metabolites (especially for distinguishing between pathogens) suggests the diagnostic utility relies on complex metabolite patterns. Cross-validation was performed, which strengthens the findings, but external validation is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "feb82d5e-bb3e-45b7-8860-2ff2be299686",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A minimal panel of six identified metabolites (ethanolamine, gluconic acid, monosaccharide, phenylalanine, pipecolic acid, saccharide) achieved ROC values >0.8 for all pairwise comparisons and could accurately define the etiological agent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C78 report that a reduced 6-metabolite panel maintains good diagnostic performance (AUC>0.8). Figure 6 supports these findings. This is practically important as it suggests a simpler diagnostic test is feasible. However, the claim that this panel can 'accurately define the etiological agent' is somewhat overstated given the AUC of 0.796-0.801 for distinguishing S. Typhi from S. Paratyphi A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study provides biological interpretations for key discriminatory metabolites: 2,4-dihydroxybutanoic acid is linked to hypoxia and HIF-1 activation; phenylalanine is elevated in various infections and linked to nitric oxide synthase; pipecolic acid is involved in plant immunity and elevated in malaria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C61 provide biological context for identified metabolites based on literature. While the cited associations are valid, the mechanistic connection to enteric fever pathogenesis is speculative (note C53 explicitly states 'we surmise'). The interpretation that these metabolites reflect specific host-pathogen interactions in enteric fever requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Metabolite differences between S. Typhi and S. Paratyphi A are attributed to the presence of the Vi capsule in S. Typhi, which has anti-inflammatory properties: higher monosaccharide/saccharide in S. Typhi samples and higher ethanolamine in S. Paratyphi A samples support this interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C71 propose a mechanistic explanation for metabolite differences based on Vi capsule presence/absence. While the observed metabolite patterns (C67-C68) are data-supported and the Vi capsule properties (C66) are established, the causal link between Vi capsule and these specific metabolite patterns (C71) is inferential and requires experimental validation. The interpretation is biologically plausible but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "a294c24b-f055-4b7a-ac8e-4bd5b8181553",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "This is the first application of metabolomics to enteric fever and the first use of GCxGC/TOFMS for infection biomarker discovery in human blood, with this technique offering superior resolution and metabolome coverage compared to standard GC/MS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 assert novelty and technical advantages. The novelty claims (C72-C73) appear reasonable given the literature search implied by 'to the best of our knowledge.' The technical advantages of GCxGC/TOFMS (C74-C75) are supported by citations and are consistent with established analytical chemistry principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "79ac4b70-acf5-4c52-a8b6-e66580d235c1",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates that reproducible and serovar-specific metabolite biomarkers can be detected in plasma during enteric fever, identifying biologically plausible metabolites for disease detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 represent the main conclusions of the study. The data support that metabolite profiles can distinguish cases from controls and show some serovar specificity. However, 'reproducible' is only demonstrated through analytical replicates and cross-validation within this single cohort, not through independent validation. The biological plausibility is argued but not experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    },
+    {
+      "id": "2573bc87-b468-4b1e-ac8e-c37a21334e3b",
+      "content_id": "b136090a-2338-41a3-b7b7-85233a7780ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The metabolomics method has potential for diagnosing other systemic bacterial infections beyond enteric fever.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is explicitly speculative about future applications. While the success in distinguishing enteric fever from controls and even between closely related serovars suggests broader applicability, this remains untested. The claim is reasonable as a hypothesis for future work but is not supported by data in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:01.289485Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "01634f0e-de8a-49e8-9b76-0d24de9a0dda",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "5a3cfb8d-a2ae-406e-887e-f185cda62f42",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "f9235690-5b10-4a9c-8a37-eaa14d75fa45",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "191fe757-7b85-4ede-8dc2-9e28ad2790ee",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "0b11e5a2-042c-49b3-8d9f-999e24e70b75",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "ec9d7f1b-f80f-46f8-a239-de9cf7e92ea7",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "eb275ff0-54b1-4406-967a-5f2ca3ae8a29",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "156eb05d-01d9-4aac-b683-7e9de750b7b0",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "c280799e-8e05-4576-ae2d-3b2b038c96af",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "00d4b4f4-d146-4ce1-a148-031467601182",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "18f2c617-2879-458a-b1a7-6401f35645ed",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "21d7a267-c085-4c23-a8d5-412e4c57efdb",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "ff6055de-665e-4276-99ad-73444995ea73",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "cdcbc0b9-abe4-4c8a-b2ca-20a0f74a86e2",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "fdaf150c-666a-466a-b2ac-f52353cdd7f7",
+      "result_id": "ef1b660e-6c59-4336-91f1-fe3d9e3dced3"
+    },
+    {
+      "claim_id": "46478850-bbc0-45a5-b724-6679842cec0b",
+      "result_id": "97d466dd-8653-4b5d-8258-66417532cbe3"
+    },
+    {
+      "claim_id": "4114102b-68a6-422b-b44b-d0ce2d5c8ee8",
+      "result_id": "97d466dd-8653-4b5d-8258-66417532cbe3"
+    },
+    {
+      "claim_id": "cc5aa56a-acc2-406e-9a19-759f05ea7c21",
+      "result_id": "97d466dd-8653-4b5d-8258-66417532cbe3"
+    },
+    {
+      "claim_id": "95899bd4-2649-4123-8864-9da0216a484e",
+      "result_id": "97d466dd-8653-4b5d-8258-66417532cbe3"
+    },
+    {
+      "claim_id": "78ce6773-7b1f-4935-92cf-83d2894e7c7b",
+      "result_id": "97d466dd-8653-4b5d-8258-66417532cbe3"
+    },
+    {
+      "claim_id": "8898d4f8-95a6-46f9-bde4-ad3a1d6d769c",
+      "result_id": "97d466dd-8653-4b5d-8258-66417532cbe3"
+    },
+    {
+      "claim_id": "e1576629-d650-490a-8d97-d0f996219a48",
+      "result_id": "97d466dd-8653-4b5d-8258-66417532cbe3"
+    },
+    {
+      "claim_id": "e7aa2560-7757-4653-8424-a91482e2ec65",
+      "result_id": "97d466dd-8653-4b5d-8258-66417532cbe3"
+    },
+    {
+      "claim_id": "392601f1-2303-4004-b331-044ca4130ef4",
+      "result_id": "827859a0-5827-4834-a2aa-7b269d69f66e"
+    },
+    {
+      "claim_id": "1af9ffb2-a0e5-44d6-81bc-aca8873e945a",
+      "result_id": "827859a0-5827-4834-a2aa-7b269d69f66e"
+    },
+    {
+      "claim_id": "4610a129-5b18-4e35-8d18-d47582cc0142",
+      "result_id": "827859a0-5827-4834-a2aa-7b269d69f66e"
+    },
+    {
+      "claim_id": "136e4b72-b131-4aa0-bee7-26d1f2e8bcaf",
+      "result_id": "c9c96e55-8e91-41eb-bd25-92541300cf42"
+    },
+    {
+      "claim_id": "a4eece2d-3ee8-4649-8ee4-1d589c1490d1",
+      "result_id": "c9c96e55-8e91-41eb-bd25-92541300cf42"
+    },
+    {
+      "claim_id": "4b85a910-3cb3-4a08-b1bd-b2194a0e94b7",
+      "result_id": "c9c96e55-8e91-41eb-bd25-92541300cf42"
+    },
+    {
+      "claim_id": "4fc2a088-ca27-4941-b1a3-ffa9bb4e0000",
+      "result_id": "c9c96e55-8e91-41eb-bd25-92541300cf42"
+    },
+    {
+      "claim_id": "85efbed5-ca0f-4283-b712-761519ff41ac",
+      "result_id": "c9c96e55-8e91-41eb-bd25-92541300cf42"
+    },
+    {
+      "claim_id": "3a232570-a8b3-4855-ad58-101ee07caa1b",
+      "result_id": "de4561cd-4e5d-4917-bb19-f84260e51332"
+    },
+    {
+      "claim_id": "65e3005e-4d5f-4647-ba82-f90d670046a2",
+      "result_id": "de4561cd-4e5d-4917-bb19-f84260e51332"
+    },
+    {
+      "claim_id": "e60649bf-9f18-48e3-823a-a501631b6dcb",
+      "result_id": "de4561cd-4e5d-4917-bb19-f84260e51332"
+    },
+    {
+      "claim_id": "9366a493-4bb0-4b6d-bd1d-d5555bd1de13",
+      "result_id": "de4561cd-4e5d-4917-bb19-f84260e51332"
+    },
+    {
+      "claim_id": "92352d80-7f70-438e-9faf-a059f7e36ec0",
+      "result_id": "de4561cd-4e5d-4917-bb19-f84260e51332"
+    },
+    {
+      "claim_id": "916469e9-ff8b-48d9-b5a8-493671735878",
+      "result_id": "5bf34ced-c3d2-44f5-a271-295d9cbec3cb"
+    },
+    {
+      "claim_id": "7f71bf18-9348-4d57-bce6-46731b685f28",
+      "result_id": "5bf34ced-c3d2-44f5-a271-295d9cbec3cb"
+    },
+    {
+      "claim_id": "4a5cb4de-287d-4746-9ac6-1f81e63312e2",
+      "result_id": "5bf34ced-c3d2-44f5-a271-295d9cbec3cb"
+    },
+    {
+      "claim_id": "451f6896-6124-470f-b5fc-1a9e39d57a97",
+      "result_id": "5bf34ced-c3d2-44f5-a271-295d9cbec3cb"
+    },
+    {
+      "claim_id": "c6abe06c-49a7-4db1-9e65-5572bd6deb16",
+      "result_id": "5bf34ced-c3d2-44f5-a271-295d9cbec3cb"
+    },
+    {
+      "claim_id": "82bc1590-eeb1-45ce-b93d-5ba00fc6a722",
+      "result_id": "48882f08-df98-4bbd-973b-56628ae794ff"
+    },
+    {
+      "claim_id": "0756c484-01dc-4635-afa4-bea18569cb20",
+      "result_id": "48882f08-df98-4bbd-973b-56628ae794ff"
+    },
+    {
+      "claim_id": "81e66605-b92d-40b2-96c2-982c6658994b",
+      "result_id": "48882f08-df98-4bbd-973b-56628ae794ff"
+    },
+    {
+      "claim_id": "579b6e6b-62fa-4dee-b000-c8601951743e",
+      "result_id": "48882f08-df98-4bbd-973b-56628ae794ff"
+    },
+    {
+      "claim_id": "c1781ff3-6d2f-48e9-a5a1-5737e5d20870",
+      "result_id": "48882f08-df98-4bbd-973b-56628ae794ff"
+    },
+    {
+      "claim_id": "f6cf20f0-4a2d-4750-9665-815987792b37",
+      "result_id": "48882f08-df98-4bbd-973b-56628ae794ff"
+    },
+    {
+      "claim_id": "ce0ab0f9-babd-42ca-b79f-67359341211a",
+      "result_id": "feb82d5e-bb3e-45b7-8860-2ff2be299686"
+    },
+    {
+      "claim_id": "8c4addec-eb19-4052-bc41-79e18f76cb07",
+      "result_id": "feb82d5e-bb3e-45b7-8860-2ff2be299686"
+    },
+    {
+      "claim_id": "6a8bae1f-0101-475b-aea4-0d19c8256a88",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "c5492635-8209-4220-80b4-d794b3218272",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "2d93c9ac-efa1-4d90-968c-c1c94cf439e7",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "b9e72a4c-9330-4cfd-9b77-4d2cb4a6abb2",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "59127ca3-e370-4bff-8516-ee5c9c729004",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "f7b83e3e-9fd6-4705-bf15-5395e5b24236",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "459fecf3-6f53-4d15-a363-6e740c778378",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "40fe1b2d-a325-42b0-bfc8-5f37af9e250f",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "9e29213e-28f2-4ebc-b062-746a677dd47c",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "4325b1b2-2c3b-473d-a069-276ae7a642c7",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "c18e6f49-8a4f-4d8f-8075-133fd7c793da",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "7590b876-161a-4056-8434-dead19a001d5",
+      "result_id": "7cb0c5d7-1a45-4cc5-b366-07274e77c064"
+    },
+    {
+      "claim_id": "64d285fa-a802-4a9c-b947-81dd524a0b39",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "385001d0-ee8a-4f71-b66c-c22e26756a11",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "a7a4a87c-bcd0-4329-90da-15841c3f7695",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "4b23d65a-9209-4ea0-b084-0f426a3e6c69",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "8ce0a422-b81b-4e3a-b8fd-750c13670748",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "ebac41bd-313e-4f76-9d17-3261b8d9235e",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "75d1b93e-6dfd-4a65-9b69-4b5fb8481cad",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "a7f22adf-d0f7-4b4f-a97e-34d21db47697",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "69e4da1a-0bbb-4872-81b5-069cf600425d",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "5f23711d-1322-4e33-bee3-2d86e6a308b5",
+      "result_id": "0a81e338-626a-43d3-bf9c-bf4aec143e4d"
+    },
+    {
+      "claim_id": "8eb5bd39-f063-4ecc-8593-3bb3772843a5",
+      "result_id": "a294c24b-f055-4b7a-ac8e-4bd5b8181553"
+    },
+    {
+      "claim_id": "d692d954-0c8a-4ccd-9dc6-9bbb0fd712b4",
+      "result_id": "a294c24b-f055-4b7a-ac8e-4bd5b8181553"
+    },
+    {
+      "claim_id": "bfbd047c-9106-4571-8ac6-0cf9bba9ce97",
+      "result_id": "a294c24b-f055-4b7a-ac8e-4bd5b8181553"
+    },
+    {
+      "claim_id": "eae31bdb-7ccf-4aec-90d0-ea534a0659b4",
+      "result_id": "a294c24b-f055-4b7a-ac8e-4bd5b8181553"
+    },
+    {
+      "claim_id": "9450c4bc-11c2-4902-97f7-a82b1b9bd630",
+      "result_id": "79ac4b70-acf5-4c52-a8b6-e66580d235c1"
+    },
+    {
+      "claim_id": "97dc6311-2567-4f8b-b2ca-c1db6be18a5a",
+      "result_id": "79ac4b70-acf5-4c52-a8b6-e66580d235c1"
+    },
+    {
+      "claim_id": "07aa9d4b-4742-43ed-9acf-4aa5b624340c",
+      "result_id": "79ac4b70-acf5-4c52-a8b6-e66580d235c1"
+    },
+    {
+      "claim_id": "c19005bc-6582-4fc7-9e46-817e88576247",
+      "result_id": "79ac4b70-acf5-4c52-a8b6-e66580d235c1"
+    },
+    {
+      "claim_id": "aeacb63f-a2c7-4e65-af9b-e7c7f91e802d",
+      "result_id": "79ac4b70-acf5-4c52-a8b6-e66580d235c1"
+    },
+    {
+      "claim_id": "434bf696-e93b-43e2-8c07-acc3b7253eed",
+      "result_id": "2573bc87-b468-4b1e-ac8e-c37a21334e3b"
+    }
+  ],
+  "comparisons": []
+}

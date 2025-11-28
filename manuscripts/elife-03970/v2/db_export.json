@@ -1,0 +1,1506 @@
+{
+  "submission": {
+    "id": "edb4e0a7-a9fe-4712-bc11-e3b2c0a1532b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:24:21.538824Z",
+    "updated_at": "2025-11-28T21:24:21.538824Z"
+  },
+  "content": [
+    {
+      "id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "submission_id": "edb4e0a7-a9fe-4712-bc11-e3b2c0a1532b",
+      "content_type": "manuscript",
+      "content_text": "# Clathrin-independent pathways do not contribute significantly to endocytic flux\n\n## Authors\n\n- Vassilis Bitsikas<sup>1</sup> ([ORCID: 0000-0002-1731-9910](https://orcid.org/0000-0002-1731-9910))\n- Ivan R Corr\u00eaa<sup>2</sup>\n- Benjamin J Nichols<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell Biology Medical Research Council Laboratory of Molecular Biology Cambridge United Kingdom\n2. New England Biolabs, Inc. Ipswich United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSeveral different endocytic pathways have been proposed to function in mammalian cells. Clathrin-coated pits are well defined, but the identity, mechanism and function of alternative pathways have been controversial. Here we apply universal chemical labelling of plasma membrane proteins to define all primary endocytic vesicles, and labelling of specific proteins with a reducible SNAP-tag substrate. These approaches provide high temporal resolution and stringent discrimination between surface-connected and intracellular membranes. We find that at least 95% of the earliest detectable endocytic vesicles arise from clathrin-coated pits. GPI-anchored proteins, candidate cargoes for alternate pathways, are also found to enter the cell predominantly via coated pits. Experiments employing a mutated clathrin adaptor reveal distinct mechanisms for sorting into coated pits, and thereby explain differential effects on the uptake of transferrin and GPI-anchored proteins. These data call for a revision of models for the activity and diversity of endocytic pathways in mammalian cells.\n\n## Introduction\n\nEndocytosis has central roles in many cell biological processes (Le Roy and Wrana, 2005; Doherty and McMahon, 2009). Since the mid-nineties evidence has accumulated to suggest that mammalian cells utilise additional endocytic mechanisms beyond clathrin-coated pits (Sandvig and van Deurs, 1994; Mayor and Pagano, 2007; Sandvig et al., 2008). Whilst the molecular detail of how clathrin-coated pits work is understood in ever-increasing detail (Kirchhausen et al., 2014), similarly complete mechanistic descriptions of how endocytosis may take place outside of clathrin-coated pits are lacking.\n\nOne central difficulty in defining clathrin-independent endocytic pathways has been the paucity of rigorously validated endocytic markers and pathway-specific cargoes. Dissection of clathrin-mediated endocytosis benefited greatly from signature cargoes such as the transferrin receptor, which are efficiently concentrated in the forming endocytic vesicle, and from the fact that the forming vesicle is marked specifically in space and time by transient assemblies of clathrin, adaptors and associated proteins (Pearse, 1982; Dautry-Varsat et al., 1983; Doxsey et al., 1987; Ehrlich et al., 2004). By contrast, clathrin independent endocytosis has largely been defined by morphological criteria, and by the persistent uptake of cargoes that may utilise multiple pathways following perturbation of the clathrin machinery (Saslowsky et al., 2010; Engel et al., 2011; Cho et al., 2012).\n\nEndocytic structures that can be defined morphologically include macropinosomes, which can readily be resolved by light microscopy (Liberali et al., 2008), and caveolae which are distinctive in electron micrographs (Parton and del Pozo, 2013). The extent to which caveolae are involved in endocytosis is, however, controversial (Parton and Howes, 2010). Morphology also forms a large part of the definition of more recently characterised endocytic membranes termed CLICs, for clathrin-independent carriers (Kirkham et al., 2005; Howes et al., 2010).\n\nGPI-anchored proteins have been extensively studied as potential cargoes for clathrin-independent endocytosis (Mayor and Pagano, 2007; Johannes and Mayor, 2010). The apparent presence of these proteins in endosomes devoid of transferrin, and uptake in the presence of inhibitors of clathrin-coated pits, provides evidence for GPI-enriched endosomal compartments (GEECs) that are fed from the cell surface independently from coated pits (Sabharanjak et al., 2002; Kumari and Mayor, 2008; Bhagatji et al., 2009). It is not clear, however, that GPI-anchored proteins are ever highly concentrated in nascent endocytic vesicles in a manner analogous to transferrin receptor, so they may enter the cell via multiple mechanisms (Mayor and Riezman, 2004; Sharma et al., 2004; Bhagatji et al., 2009; Johannes and Mayor, 2010). The extent to which other types of cargo associated with clathrin-independent endocytosis, including glycosphingolipid-binding bacterial toxins as well as various viruses, are efficiently sorted during uptake is similarly unclear (Romer et al., 2007; Ewers et al., 2010; Johannes and Mayor, 2010; Saslowsky et al., 2010; Cho et al., 2012; Lakshminarayan et al., 2014).\n\nIn the absence of demonstrably specific cargoes, much of the literature on clathrin-independent endocytosis relies on the use of overexpressed mutant proteins to perturb clathrin function, and observation of differential effects on the uptake of transferrin and potential clathrin-independent cargoes. Dominant negative mutants used in this manner include the C-terminal clathrin-binding domain of AP180/CALM (Ford et al., 2001), and the K44A mutant of dynamin, which renders this GTPase involved in the scission of clathrin coated pits enzymatically inactive (van der Bliek et al., 1993; Damke et al., 1995). Additionally, differential effects on endocytosis can be observed using overexpression of inactive forms of small GTPases such as ARF6, ARF1 or cdc42 (D'Souza-Schorey et al., 1995; Palacios et al., 2002; Sabharanjak et al., 2002; Naslavsky et al., 2004; Kumari and Mayor, 2008). Blocking one type of endocytosis may up-regulate alternative mechanisms, over-expression of mutant proteins may induce non-physiological cellular responses, and small GTPases may, via different sets of effectors, directly or indirectly control the activity of multiple endocytic pathways. Plainly, these types of experiment need to be interpreted carefully.\n\nIdeally, different types of endocytosis would be defined by the presence of specific molecular determinants analogous to clathrin or adaptor proteins in the case of clathrin coated pits (Kirchhausen et al., 2014). Candidates for such determinants include caveolin and cavin proteins which make caveolae (Ludwig et al., 2013; Parton and del Pozo, 2013), flotillin proteins which define specific plasma membrane microdomains potentially involved in endocytosis (Glebov et al., 2006), and the protein GRAF1 that may be important for the formation of CLIC/GEEC endosomes (Lundmark et al., 2008). The precise mechanisms by which these proteins are involved in endocytosis remain to be fully understood. Both flotillins and caveolins plus cavins form protein assemblies that are stable over time, and thus can not define endocytic events temporally in the way in which coordinated assembly and disassembly of the clathrin machinery can (Glebov et al., 2006; Frick et al., 2007; Taylor et al., 2011; Gambin et al., 2013; Ludwig et al., 2013).\n\nThus, although several non-clathrin endocytic pathways have garnered varying degrees of supportive evidence, none has been unambiguously established in molecular and functional terms. Furthermore, the relative contributions of the multiple putative pathways to overall endocytic flux has been unclear. To resolve some of these uncertainties, ideally one would require a means to examine endocytosis in unperturbed cells in a global manner. This would allow simultaneous evaluation of a large number of cargoes and their relationship with clathrin and putative non-clathrin markers. In this study we apply a combination of new and established methods that satisfy these requirements, and thereby provide a systematic and quantitative analysis of total endocytic protein flux in cultured mammalian cells.\n\n## Results\n\n### Experimental strategy and assay validation\n\nWe sought to establish endocytic assays and protein labelling strategies to satisfy four main requirements: (1) achieve very high topological specificity in discrimination between endocytosed and extracellular protein, (2) provide a means to analyse all, or nearly all, surface proteins simultaneously, (3) provide high signal to noise, and thereby high temporal resolution for detection of primary endocytic vesicles, and (4) allow a means to follow uptake of specific cargoes.\n\nBiotinylation of extracellular free amine groups with the small, monovalent label sulfo-NHS-SS-biotin offered a way to satisfy the first three of these requirements (Le Bivic et al., 1990). The biotin moiety can be removed from labelled proteins by reduction of the disulfide bond with membrane-impermeant sodium 2-mercaptoethanesulfonate (MESNa) at 4\u00b0C, so this approach provides a powerful way to detect internalisation of surface proteins (Bretscher and Lutter, 1988; Schmid and Smythe, 1991). We assessed the efficiency of MESNa treatment in removing biotin from sulfo-NHS-SS-biotin-labelled proteins, and compared this with two widely used alternatives, washing at low pH to remove antibodies bound to the outside of the cell and cleavage of extracellular GPI-anchors with PI-PLC (Sabharanjak et al., 2002). MESNa treatment could remove over 99.9% of biotin from cells labelled at 4\u00b0C (Figure 1A). Washes at pH3 to remove bound antibody, or PI-PLC to cleave GPI-anchors, were around two orders of magnitude less efficient, removing up to 50% and 90% of antibody bound to the GPI-anchored protein CD59 respectively (Figure 1B) (Davies et al., 1989). Reducible biotin and MESNa therefore offer a highly accurate way of assaying protein internalisation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig1-v2.jpg)\n\n**Figure 1.:** (A) Following surface biotinylation with sulfo-NHS-SS-biotin, HeLa cell lysate was serially diluted with non-biotinylated control cell lysate, and the amount of labelling was detected using streptavidin-HRP after SDS-PAGE and blotting. Incubation with 100 mM MESNa prior to cell lysis was enough to remove more than 99.9% of the initial signal. (B) Lysate from cells labelled with anti-CD59 antibody was serially diluted with non-labelled control cell lysate, and the amount of labelling was detected using an anti-mouse HRP antibody. Acid wash removed around 50% of the initial surface signal. PI-PLC, which cleaves the GPI-anchor in CD59, removed up to 90% of the initial signal. (C) Cartoon to illustrate endocytosis assay. Cell surface proteins were labelled with sulfo-NHS-SS-biotin at 4\u00b0C, then the reaction was quenched and cells were rapidly transferred to 37\u00b0C to allow endocytosis. Control cells were kept at 4\u00b0C. After defined time for endocytosis, cells were rapidly returned to 4\u00b0C, and surface-exposed biotin was removed using the membrane impermeable reducing agent MESNa. Biotin label was detected using fluorescent streptavidin, after fixation and permeabilisation. (D) Confocal images from control experiment to demonstrate total surface labelling with sulfo-NHS-SS-biotin, negative control, and labelling of endocytic vesicles, as illustrated in C. Bars are 20 \u03bcm. (E) Silver stained SDS-PAGE gel following surface biotinylation with sulfo-NHS-SS-biotin and streptavidin pull-down. Non-biotinylated cells provided a negative control. (F) Surface biotinylation labels the full range of plasma membrane proteins ranked according to their relative abundance in the plasma membrane. The relative abundance of plasma membrane proteins in HeLa cells was calculated based on a previously published study (Kulak et al., 2014). These are represented graphically ranked by abundance in blue, while proteins were detected in our experiments are shown in magenta. The data are listed in Figure 1\u2014source data 1. (G) Confocal images of HeLa cells stably expressing SNAP-GPI. Cells labelled at 4\u00b0C with BG-SS-488. Control cells were treated with MESNa to remove external fluorophore after incubation only at 4\u00b0C. Warming to 37\u00b0C for 90 s before MESNa treatment at 4\u00b0C allows identification of endocytic vesicles.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cells expressing SNAP-GPI were simultaneously labeled at 4\u00b0C with BG-SS-488 and SNAPsurface549. The latter is not reducible. They were then treated with PI-PLC or PI-PLC and then MESNa. Both treatments reduced the amount of label significantly (top row of images). However when remaining cell surface label was inspected by adjusting the intensity post-acquisition (lower panels), differential effects in the removal of the two fluorophores were observed. PI-PLC reduced the signal of both fluorophores evenly. However, when cells were treated with PI-PLC followed by MESNa the levels of reducible BG-SS-488 become practically undetectable. (B) Quantification of images from the same experiment shown in A. Images used for quantification were confocal cross sections of cells. Line profiles across the plasma membrane of the cell were combined to produce average traces of fluorescence intensity. The removal of BG-SS-488 in the MESNa + PI-PLC treated cells is clearly more efficient than removal of SNAP-surface549.\n\nTo detect internalised protein in confocal images, we labelled HeLa cells with sulfo-NHS-SS-biotin, allowed internalisation for defined periods of time, removed extracellular biotin by reduction with MESNa, and used fluorescent streptavidin to detect intracellular biotin. All subsequent experiments are also in HeLa cells unless otherwise stated. Control experiments comparing incubation at 4\u00b0C with incubation for defined periods at 37\u00b0C confirmed that there was no specific signal detected unless internalisation at 37\u00b0C was allowed to take place (Figure 1C, Figure 1D). Endocytic vesicles could be observed after as little as 20 s of internalisation. This is a significant improvement in time resolution, and hence in our confidence that the detected vesicles have just budded from the plasma membrane (Sabharanjak et al., 2002; Kirkham et al., 2005; Glebov et al., 2006).\n\nIn order to interpret uptake of proteins labelled with sulfo-NHS-SS-biotin with confidence it was necessary to confirm that the label reacts with a broad range of representative proteins. Following surface biotinylation, proteins were precipitated using streptavin-agarose beads, and eluted from the beads by reduction with 100 mM DTT. Silver staining revealed that biotinylated proteins were precipitated with high specificity (Figure 1E). LC-MS identified the full list of precipitated proteins, and this list was compared with a quantitative analysis of the HeLa cell proteome (Kulak et al., 2014). Abundant plasma membrane proteins had higher chances of being detected. Nevertheless, a wide range of rare proteins (some with estimated copy number < 100 per cell) was detected, assuring us that we achieved good coverage of the total plasma membrane protein complement. (Figure 1F, Figure 1\u2014source data 1). Therefore chemical labelling with sulfo-NHS-SS-biotin does indeed provide a way to follow endocytosis of nearly all plasma membrane proteins simultaneously.\n\nReduction of extracellular disulphide bonds with membrane impermeant reducing agents like MESNa evidently provides a good way to discriminate between intra- and extra-cellular substrates. We used the genetically encoded SNAP-tag to apply this approach to specific cargo proteins (Gautier et al., 2008; Cole and Donaldson, 2012; Correa, 2014). The SNAP moiety was labelled with a new membrane-impermeant, reducible, fluorescent SNAP-labelling reagent, benzylguanine-SS-fluorophore [where the fluorophore can be either atto-488 (BG-SS-488) or BODIPY (BG-SS-549)]. The disulfide bond linking benzylguanine to a fluorophore can be reduced with MESNa in the same way as that in sulfo-NHS-SS-biotin. Control experiments using a minimal GPI-anchored SNAP-tag construct as a model plasma membrane protein showed that BG-SS-fluorophore allows detection of internalised SNAP tag with very high efficiency and low background, and provides an improved way of discriminating between internal and external pools of tagged protein (Figure 1G, Figure 1\u2014figure supplement 1).\n\n### Biotinylated plasma membrane proteins are predominantly internalised via clathrin coated pits\n\nGlobal labelling of primary endocytic vesicles was achieved by incubation of cells with sulfo-NHS-SS-biotin at 4\u00b0C, warming to 37\u00b0C by rapid buffer exchange, and allowing uptake for 20 s. Endocytic vesicles detected after MESNa treatment were small puncta (Figure 2A). Approximately 2% of the cells also contained distinctively larger macropinosomes over 500 nm in diameter (Figure 2\u2014figure supplement 1). In order to determine the identity of the endocytic vesicles we carried out co-internalisation experiments with the archetypical high-affinity cargo for clathrin-coated pits, transferrin (Figure 2A, Figure 2\u2014figure supplement 2) (Schmid and Smythe, 1991; Hansen et al., 1992). The great majority of endocytic vesicles contained transferrin, and therefore are likely to have arisen from clathrin-coated pits. Uptake of transferrin was solely due to binding to transferrin receptor, as large, fluid-filled macropinosomes were completely devoid of transferrin (Figure 2\u2014figure supplement 1). Residual surface-bound transferrin was detected as puncta, and co-localised with clathrin, implying concentration in nascent coated pits (Figure 2\u2014figure supplement 2). We used unbiased and semi-automated quantification, involving application of a mask derived from the image of fluorescent transferrin, to determine the proportion of biotin-positive pixels that also contained transferrin in multiple cell images (Figure 2\u2014figure supplement 3). This revealed that over 95% of the total internalised biotin after 20 s uptake was present in transferrin-positive vesicles (Figure 2B). Co-localisation remained constant when times of internalisation up to 150 s were assayed (Figure 2B, Figure 2\u2014figure supplement 4). Additionally, after 20 s uptake over 80% of biotin-positive endocytic vesicles co-localised with clathrin in small puncta, defining them as clathrin-coated vesicles (Figure 2C, Figure 2D, Figure 2\u2014figure supplement 5). The proportion co-localising with clathrin fell rapidly with longer periods of uptake, as one would expect due to uncoating of primary vesicles (Figure 2D, Figure 2\u2014figure supplement 5) (Kirchhausen et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig2-v2.jpg)\n\n**Figure 2.:** (A) Confocal images of co-internalisation of all membrane proteins, labelled at 4\u00b0C with sulfo-NHS-SS-biotin, and transferrin-546. Internalisation was for 20 s at 37\u00b0C. Biotin was detected with streptavidin-488. Note that labelling with biotin and transferrin at 4\u00b0C was carried out consecutively, so transferrin was not biotinylated. The presence of external transferrin in nascent coated pits explains transferrin-positive, strepatavidin-negative puncta (see Figure 2\u2014figure supplement 2). Zoomed in area in the lower panels is indicated with a box. Bar is 20 \u03bcm. (B) Quantification of proportion of internalised protein, detected as in A, that co-localises with transferrin. Bars are mean and SD, the data are from one experiment that was repeated three times with the same overall result. (C) Confocal images of total endocytosed membrane protein, labelled at 4\u00b0C with sulfo-NHS-SS-biotin as shown, and indirect immunofluorescence staining for clathrin heavy chain. Internalisation was for 20 s at 37\u00b0C. Biotin was detected with streptavidin-488. (D) Quantification of proportion of total internalised protein that co-localises with clathrin, at the times of internalisation indicated. Bars are mean and SD, the data are from one experiment that was repeated three times with the same result. (E) Confocal images of co-internalisation of total membrane protein and transferrin-546, with 90 s at 37\u00b0C for labelling and uptake as illustrated in the cartoon. Bar is 20 \u03bcm. (F) Quantification of proportion of internalised protein, detected as in E, that co-localises with transferrin, at the times for continuous labelling and internalisation indicated. Bars are mean and SD, the data are from one experiment that was repeated three times with the same result.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells were labeled with sulfo-NHS-SS-biotin and transferrin-546, allowed to endocytose at 37\u00b0C for the times indicated, MESNA-treated, fixed, and stained with streptavidin-488. Occasionally, cells contained larger endocytic structures (>0.5 \u00b5m) that were intensely labeled with fluorescent streptavidin but did not contain transferrin, despite the presence of transferrin in the medium during incubation at 37\u00b0C. These structures correspond to macropinosomes. No clear correlation between their abundance and incubation time at 37\u00b0C was observed. Bar is 15 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Cells were transfected with clathrin light chain-GFP, cooled to 4\u00b0C, labelled with transferrin-546, fixed, and imaged. Bar is 20 \u03bcm. The boxed region is shown in the lower panels.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** All processing was carried out in Image J. Two channel raw images were acquired by confocal microscopy. The channels were separated, subjected to Gaussian blur with \u03c3 = 0.7, and then contrast adjusted using the histogram of pixel intensities as shown. In the streptavidin/biotin channel, the base of the histogram was used to set pixel intensity = 0, maximal pixel intensity was not altered. In the transferrin channel, which is used to generate a binary mask, pixel intensity = 0 and maximal pixel intensity were both set to the base of the histogram of pixel intensities as shown. Following dilation of positive pixels in the binary mask a logical \u2018AND\u2019 operation was carried out to isolate those pixels in the streptavidin channel that also are positive in the transferrin binary mask. This image was combined with the original biotin image in a two colour overlay, and manually drawn regions of interest were used to calculate total pixel intensity in the biotin channel, and total pixel intensity in the same channel from transferrin-positive pixels.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Confocal images of co-internalisation of total membrane protein, labeled at 4\u00b0C with sulfo-NHS-SS-biotin, and transferrin-546. Internalisation was for 90 s at 37\u00b0C. Biotin was detected with streptavidin-488 after MESNA treatment. Note that labelling with biotin and transferrin at 4\u00b0C was carried out consecutively, so transferrin was not biotinylated. Zoomed in area of the lower panel is indicated with a box. Bar is 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** HeLa cells labeled at 4\u00b0C with sulfo-NHS-SS-biotin, were moved to 37\u00b0C for the indicated time-points. Surface biotin was removed by MESNA treatment, the cells were fixed and permeabilised, and then stained with streptavidin-488, and antibodies against clathrin heavy chain by indirect immunofluorescence. Box indicates zoomed region, bars are 20 \u03bcm. 20 s image also shown in Figure 2.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Confocal images of co-internalisation of total membrane protein, labeled at 4\u00b0C with sulfo-NHS-SS-biotin, and transferrin-546. Internalisation was for 90 s at 37\u00b0C. Biotin was detected with streptavidin-488. Note that labelling with biotin and transferrin at 4\u00b0C was carried out consecutively, so transferrin was not biotinylated. Zoomed in area of the lower panel is indicated with a box. Bar is 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** (A) Cells were labelled with the membrane dye FM1-43FX and transferrin at 4\u00b0C, warmed to 37\u00b0C for 90 s, plasma membrane dye was removed by washes with ice-cold PBS, and were imaged at 4\u00b0C without fixation. Transferrin-positive puncta that do not contain FM1-43FX are likely to represent clathrin-coated pits that have not budded from the plasma membrane. Contrast levels have been set so that residual background plasma membrane staining with FM1-43FX is excluded. Zoomed in area of the lower panel is indicated with a box. Bar is 20 \u03bcm. (B) Quantification of the proportion of FM1-43FX signal detected in intracellular puncta that is present in transferrin-positive pixels. Note that cells where FM1-43FX clearly stained many intracellular membranes due to cell disruption were excluded from the analysis. Bars are mean, SD. Each point is one cell region.\n\nThe experiments described above depended on labelling cells at 4\u00b0C before rapid warming to 37\u00b0C to permit endocytosis. This improved signal to noise ratio and thereby improved temporal resolution, but at the same time cooling and rapid warming could have an effect on the endocytic machinery (Boucrot et al., 2010). We sought to perform the endocytic assay in unperturbed cells, under more physiological conditions, by omitting the pre-incubation step at 4\u00b0C. Cells were labelled with sulfo-NHS-SS-biotin and transferrin at 37\u00b0C (Figure 2E). The earliest time after initiation of labelling at which endocytic vesicles could be reliably detected was 90 s, presumably because of the time taken for sufficient reaction of the NHS ester with primary amines at the cell surface. Consistent with the results when labelling was carried out at 4\u00b0C, nearly all of the internalised protein labelled with biotin was indeed present in transferrin-positive vesicles (Figure 2E, Figure 2F). Another concern was that HeLa cells could be in some way atypical, so we repeated the same experiments in Cos7 and RPE cells. Again, there was near-complete co-localisation between endocytosed sulfo-NHS-SS-biotin and transferrin after 90 s uptake at 37\u00b0C (Figure 2\u2014figure supplement 6).\n\nIn order to verify that transferrin-negative endocytic vesicles are very rare we used a different labelling approach. We loaded HeLa cells with the amphiphilic styryl membrane dye FM1-43FX (Diefenbach et al., 1999), and allowed co-internalisation with transferrin for 90 s at 37\u00b0C. Extraction of the dye with label-free medium reversed plasma membrane labelling and provided a means of identifying FM1-43FX-positive intracellular vesicles. Although this may not provide such stringent topological discrimination between intracellular vesicles and surface membrane as the sulfo-NHS-SS-biotin plus MESNa approach, there was a very high degree of co-localisation between FM1-43FX-positive puncta and transferrin (Figure 2\u2014figure supplement 7). Quantification revealed that 90% of the FM1-43FX signal present in intracellular vesicles was also present in transferrin-positive pixels (Figure 2\u2014figure supplement 7).\n\nConfocal z-stacks and volume rendering were used to allow analysis at the level of individual primary endocytic vesicles. (Figure 3A, Figure 3\u2014figure supplement 1A). Biotin-positive endocytic vesicles were identified as 3D objects using the Imaris software, and the transferrin cargo load was calculated based on the mean transferrin intensity within each vesicle (Figure 3A, Figure 3B, Video 1). In order to account for background signal generated by experimental noise or random overlap, the transferrin channel was offset by 500 nm from its correct register, and transferrin intensity in the same objects was sampled for a second time. (Figure 3B). The 95th percentile of this background intensity distribution was used as a cut-off to define transferrin-negative endocytic vesicles (Figure 3B). Applying this conservative criterion, after 90 s continuous labelling and uptake 96% of 2350 vesicles contained transferrin, and after labelling at 4\u00b0C and uptake for 20 s 92% of 2387 vesicles contained transferrin (Figure 3B). A single Gaussian curve could describe the transferrin intensity distribution within most identified vesicles, consistent with stochastic incorporation of transferrin receptors into forming clathrin-coated pits (Collinet et al., 2010). A small population of transferrin-negative objects could be seen as a peak at the lowest end of the intensity distribution, showing that potential transferrin-negative endocytic vesicles, where they exist, can be detected by our method (Figure 3B). We observed no correlation between biotin intensity and the probability of that vesicle not containing transferrin, arguing against the possibility of a morphologically distinctive class of transferrin-negative endocytic vesicle (Figure 3\u2014figure supplement 1B). We also carried out experiments to test the possibility that the glycosphingolipid-binding B-subunit of cholera toxin (CTB), which has been extensively used as a marker for clathrin-independent endocytosis (Henley et al., 1998; Sandvig et al., 2004; Kirkham et al., 2005), induces the formation of transferrin-negative endocytic vesicles. Biotin-positive vesicles were identified as objects in transferrin-labeled cells as described above, with and without addition of CTB. The transferrin load in vesicles in control and CTB treated cells was the same (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig3-v2.jpg)\n\n**Figure 3.:** (A) 3D projection of cell volumes following interalisation of sulfo-NHS-SS-biotin for 90 s at 37\u00b0C. Streptavidin-488 fluorescence is shown in the left panel, vesicle objects recognised with Imaris software from the streptavidin signal are shown in the right panel. Bar 5 \u03bcm. (B) Analysis of the transferrin cargo load of endocytic vesicle objects identified as in A, after 20 s and 90 s of uptake as shown. Frequency distribution of mean transferrin intensity in individual vesicles is shown as the red line. Frequency distribution of transferrin intensities for the same vesicles after offsetting the transferrin channel by 500 nm provides a set of background intensities, shown as a black line and not plotted to the same y-axis scale. Cut-offs are shown as dotted lines and correspond to the 95 percentile for the offset values. The distribution of transferrin intensity, in the majority of endosomes, can be described by a Gaussian distribution (dark grey line). (C) Internalisation of sulfo-NHS-SS-biotin and transferrin-647, for 15 min, in cells expressing AP180C-IRES-GFP. Internalised biotin was detected by MESNa treatment and labelling with streptavidin, a wash at pH3.0 removed external transferrin. Transfected cells are outlined in white. Bars are 20 \u03bcm. (D) Internalisation of sulfo-NHS-SS-biotin and transferrin-647, for 15 min, in cells expressing dynamin-2-K44A-dsRed. Internalised biotin was detected by MESNa treatment and labelling with streptavidin, a wash at pH3.0 removed external transferrin. Transfected cells are outlined in white. Bars are 20 \u03bcm. (E) Quantification of total protein and transferrin endocytosis in cells expressing AP180C-IRES-GFP as C. Each point is mean fluorescence intensity of one cell region, after background subtraction. Background was determined empirically from control experiments with only labelling at 4\u00b0C. Values are all normalised so mean of control = 1. Bars mean and SD, data are all from one experiment, the experiment was repeated three times. (F) Quantification is for cells expressing dynamin-2-K44A-dsRed as shown in D. See E for details.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Projections of confocal z-stacks showing raw fluorescence images of internalised biotin, labelled with streptavidin, and transferrin, after 90 s internalisation. The streptavidin image was used to identify endocytic vesicles using Imaris software as displayed in the lower left panel. The lower right panel displays the software-recognised vesicle objects superimposed on streptavidin and transferrin fluorescence. Bar 15 \u03bcm. (B) Correlation between the mean fluorescence intensity of streptavidin and transferrin present in individual endosomes. Individual endosomes have has been ranked from high to low streptavidin intensity. Red dots correspond to the transferrin intensity in the particular endosome. Dotted line represents the cut-off for transferrin-positive endosomes, based on 95th percentile of background intensities as described in the main text. Transferrin positive endosomes are within in the greyed area.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Analysis of the transferrin cargo load of endocytic vesicle objects identified as in Figure 3A after 90 s of uptake in control and CTB-labeled cells as shown. Frequency distribution of transferrin intensities for the same vesicles after offsetting the transferrin channel by 500 nm provides a set of background intensities, shown as a black line and not plotted to the same y-axis scale. Cut-off is shown as a dotted line and corresponds to the 95 percentile for the offset values. The proportion of vesicles that are potentially transferrin-negative (the fraction below the dotted line) is not altered by CTB-binding.\n\n![Video 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-media1.mov.jpg)\n\n**Video 1.:** Cells were labelled for 90 s at 37\u00b0C with sulfo-NHS-SS-biotin and transferrin-546. After MESNA treatment internalised proteins were labelled with streptavidin-488. 3D reconstructions were obtained from confocal z-stacks of whole cell volumes. Streptavidin channel (green), transferrin channel (red), an overlay of both channels, and then the same overlay with objects recognised as vesicles superimposed in blue, are shown consecutively.\n\nBoth quantitative analysis of single confocal sections using pixel masks (Figure 2), and object-based quantification of all primary endocytic vesicles in 3D reconstructions (Figure 3), argue strongly that around 95% of primary endocytic vesicles are positive for the best characterised cargo of clathrin-coated pits, the transferrin receptor (Kirchhausen et al., 2014). The simplest hypothesis arising from these observations is that essentially all proteins taken up by the cell are internalised along with transferrin via clathrin-coated pits. If this is the case, then ablation of coated pit activity should effectively block total endocytosis. Overexpression of the C-terminal clathrin-binding domain of AP180/CALM (AP180-C) provides an efficient means of blocking formation of coated pits (Ford et al., 2001). In cells overexpressing AP180-C, transferrin uptake and endocytosis of total biotinylated protein were both efficiently blocked, with total protein uptake being reduced to less than 5% of control levels (Figure 3C and Figure 3E). Overexpression of the K44A mutant of dynamin blocks budding of clathrin-coated pits (van der Bliek et al., 1993; Damke et al., 1995). In cells overexpressing dynamin 2 K44A there was efficient reduction of both transferrin and total biotinylated protein uptake to less than 5% of control levels (Figure 3D and Figure 3F). Additionally, we noted that expression of very high levels of the dynamin mutant induced endocytosis of total biotinylated protein in both macropinosomes and smaller vesicular structures (see below). We conclude that formation of the primary vesicles that contribute the large majority of endocytic flux in unperturbed cells is blocked by loss of clathrin or dynamin function.\n\n### Quantitative proteomics shows that perturbation of the formation of coated pits alters the protein composition of the plasma membrane\n\nIf plasma membrane proteins are predominantly endocytosed via clathrin coated pits then one would predict that they should accumulate in the plasma membrane when coated pits are not functional. Proteomic analysis of surface-biotinylated plasma membrane proteins offered a way to test this hypothesis directly. In order to ablate coated pit activity, cells were transfected with siRNA against the alpha adaptin subunit of the clathrin adaptor AP2 (\u2018AP2 siRNA\u2019). This blocked alpha-adaptin expression, and hence AP2 function (Figure 4A, Figure 4B) (Motley et al., 2003, 2006). AP2 siRNA blocked both transferrin uptake and uptake of total biotinylated proteins to a similar extent (Figure 4B). SILAC (stable isotopic labelling by amino-acids in culture) followed by precipitation of surface biotinylated proteins with streptavidin-agarose provided a quantitative comparison of the relative abundance of plasma membrane proteins in control and AP2 siRNA treated cells. This revealed a clear and pronounced increase in the abundance of most proteins in AP2-siRNA cells (Figure 4C and Figure 4\u2014source data 1). Analysis of SILAC ratios of the non-biotinylated cytosolic proteins present in the flow-through provided an internal control and did not reveal similar changes, confirming that the effects of AP2 depletion are largely restricted to the population of plasma membrane proteins (Figure 4C). This is consistent with the majority of plasma membrane proteins entering the cell via clathrin-coated pits.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig4-v2.jpg)\n\n**Figure 4.:** (A) Western blot for the AP2 alpha subunit following non-targeting or alpha adaptin (AP2) siRNA treatment. (B) Internalisation of sulfo-NHS-SS-biotin and transferrin-647, for 15 min, in cells transfected with control and alpha adaptin (AP2) siRNAs. Internalised biotin was detected after MESNa treatment and labelling with streptavidin, a wash at pH3.0 removed external transferrin. Each point is one cell region, bars are mean and SD. Background was calculated from cells labelled at 4\u00b0C, and immunofluorescence identified those cells where the siRNA efficiently reduced alpha adaptin levels. (C) Frequency distribution of SILAC ratios for surface biotinylated (red line) and non-labelled (grey line) proteins from control (Heavy isotopes) and AP2-siRNA (Light isotopes) transfected cells. Dotted lines represent two standard deviations on either side of the mean for the SILAC ratio distribution of non-labelled proteins. (D) SILAC protein ratios comparing control (Heavy isotopes) and AP2-siRNA (Light isotopes) transfected cells, plotted against summed peptide intensities. Biotinylated plasma membrane proteins isolated by precipitation with streptavidin-agarose are shown in red. Non-biotinylated proteins corresponding to intracellular proteins are shown in grey and served as an internal control. GPI-anchored proteins, are shown in green.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Flow cytometry was used to analyse plasma membrane abundance of transferrin receptor and CD59. Cells were transfected with control siRNA or siRNA to knock down expression of the alpha adaptin subunit of the AP2 complex (\u2018AP2 siRNA\u2019) and then labeled at 4\u00b0C with anti-CD59-AlexaFluor647 and Transferrin-546.\n\nThe comparatively small list of proteins that are depleted from the plasma membrane upon AP2 siRNA treatment is heterogeneous (Figure 4\u2014source data 1), and includes proteins thought to be internalised via clathrin-coated pits such as ADAM 10 (Marcello et al., 2013). The only obvious pattern within the list is the presence of most GPI-anchored proteins detected (Figure 4D). SILAC ratios for GPI-anchored proteins detected in the cytosolic flow-through were all close to one, so this is likely to reflect a depletion restricted only to the plasma membrane (Figure 4\u2014source data 1). Flow cytometry to assay changes in plasma membrane levels of individual proteins confirmed that AP2 siRNA causes an accumulation of transferrin receptor at the plasma membrane, while levels of the GPI-anchored protein CD59 are reduced (Figure 4\u2014figure supplement 1). As GPI-anchored proteins have been studied as potential cargoes for clathrin-independent endocytic pathways, we decided to focus further on this class of protein (Nichols et al., 2001; Sabharanjak et al., 2002; Mayor and Riezman, 2004).\n\n### GPI-anchored proteins enter the cell via clathrin-coated pits\n\nWe produced plasmids for expression of SNAP-tagged versions of CD59, folate receptor and PrP, three different GPI-anchored proteins identified in our mass spectrometry data, as well a minimal SNAP-GPI construct. HeLa cells expressing each of the GPI-anchored proteins were incubated for 90 s at 37\u00b0C in the presence of BG-SS-488 to allow labelling and uptake, and extracellular fluorophore was removed by reduction with MESNa (Figure 5A). Uptake of BG-SS-488 was detected only in SNAP-expressing cells (Figure 5A). All four GPI-anchored proteins co-localised extensively with transferrin after internalisation (Figure 5A). When quantified, around 90% of all BG-SS-488 labelled, internalised GPI-anchored proteins co-localised with transferrin (Figure 5B). To assess the biological significance of the residual 10% we used precisely the same quantification method to analyse co-localisation between transferrin-alexa-647 and transferrin-alexa-546, after mixing and adding to cells for simultaneous internalisation. Again we detected around 90% co-localisation, so it is possible that the residual 10% can be accounted for by limitations in quantification rather than a biologically significant pool of GPI-anchored protein internalised separately from transferrin (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig5-v2.jpg)\n\n**Figure 5.:** (A) Confocal images of cells transfected with the SNAP-tagged GPI-anchored proteins indicated. Labelling with BG-SS-488 and transferrin-546 at 37\u00b0C for 90 s. External 488 fluorophore was removed by reduction with MESNa. Right hand panels are zoomed views of the regions indicated, bars are 10 \u03bcm. (B) Quantification of co-localisation between internalised GPI-anchored proteins revealed with BG-SS-488 and MESNa as in A, and transferrin-546. In order to provide an empirical estimate of the sensitivity of quantification, two fluorescently labelled transferrin probes were mixed and added to the cells. Bars are mean and SD.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Analysis of the transferrin cargo load of endocytic vesicle objects identified as in Figure 3A after 90 s of uptake in control and CTB-labeled cells as shown. Cells were stably expressing SNAP-CD59, endocytic vesicles were defined by BG-SS-488 labelling and MESNa treatment. Frequency distribution of transferrin intensities for the same vesicles after offsetting the transferrin channel by 500 nm provides a set of background intensities, shown as a black line and not plotted to the same y-axis scale. Cut-off is shown as a dotted line and corresponds to the 95 percentile for the offset values. The proportion of vesicles that are potentially transferrin-negative (the fraction below the dotted line) is not altered by CTB-binding.\n\nSeveral previous studies, including some from our laboratory, have suggested that GPI-anchored proteins are endocytosed in a clathrin-independent manner (Nichols et al., 2001; Nichols, 2002; Sabharanjak et al., 2002; Mayor and Riezman, 2004; Kirkham et al., 2005; Glebov et al., 2006). We sought to explain this apparent discrepancy. In several of these studies CTB has been used as a marker for clathrin-independent endocytosis. As discussed previously, it was possible that CTB induces clathrin-independent uptake of GPI-anchored proteins. Object-based analysis of the transferrin load within BG-SS-488-positive vesicles in cells expressing SNAP-CD59 argues that this is not the case (Figure 5\u2014figure supplement 1).\n\nOne type of experiment that can be interpreted as evidence for clathrin-independent endocytosis is the presence of endocytosed protein in vesicles separate from those labelled with transferrin (Sabharanjak et al., 2002; Glebov et al., 2006; Bhagatji et al., 2009). We did not observe this in the experiments outlined above (Figure 5), so we chose to pursue this further by conjugating a monoclonal antibody against CD59 to both alexa-546, and to SS-atto-488 (Figure 6A). Importantly, the disulfide bond in SS-atto-488 can be reduced with MESNa as previously. This meant we could follow uptake of endogenous CD59, and directly compare two different methods of assaying internalisation. Cells were labelled at 4\u00b0C with the doubly labelled antibody and transferrin, and then warmed to 37\u00b0C for 90 s. Subsequently cells were treated with PI-PLC to cleave GPI-anchors, and then with MESNa. The SS-atto-488 signal co-localised completely with transferrin. Alexa-546, however, was seen in many punctate structures that lack transferrin (Figure 6A). We interpret these data as strong evidence that the PI-PLC treatment did not remove all external GPI-anchored protein, while reduction with MESNa provided more stringent discrimination between internal and external pools of the antibody (Figure 1A, Figure 1B, Figure 1\u2014figure supplement 1). Therefore, endogenous CD59 is indeed internalised in transferrin-containing vesicles, and apparent internalisation in vesicles lacking transferrin may, at least under the conditions we have employed in this study, be an artifact due to incomplete removal of surface bound antibody.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig6-v2.jpg)\n\n**Figure 6.:** (A) Doubly labelled anti-CD59-546-SS-488 allows comparison of MESNa reduction and PI-PLC treatment as methods for detecting internalised GPI-anchored protein. Cells were labelled at 4\u00b0C, warmed to 37\u00b0C for 90 s, and treated consecutively with MESNa and PI-PLC. Circles indicated antibody-positive puncta that appear internalised, but are demonstrated to be extracellular by the absence of MESNa-protected 488 fluorophore. Bar is 10 \u03bcm. (B) Internalisation of BG-SS-549 and transferrin-647, for 15 min, in cells stably expressing SNAP-CD59 and transiently transfected with AP180C-IRES-GFP. Internalised BG-SS-549 was detected after MESNa treatment and wash at pH3.0 to remove external transferrin. Transfected cells are outlined in white. Bars are 10 \u03bcm. (C) Internalisation of BG-SS-488 and transferrin-647, for 15 min, in cells stably expressing SNAP-CD59 and transiently transfected with dynamin-2-K44A-dsRed. Internalised BG-SS-488 was detected by MESNa treatment, a wash at pH3.0 removed external transferrin. Transfected cells are outlined in white. Bars are 10 \u03bcm. (D) Quantification of SNAP-CD59 and transferrin endocytosis in cells expressing AP180C-IRES-GFP as A. Each point is mean fluorescence intensity of one cell region, after background subtraction. Background was determined empirically from control experiments with only labelling at 4\u00b0C. Values are all normalised so mean of control = 1. Bars mean and SEM, data are all from one experiment, the experiment was repeated three times. (E) Quantification is for cells expressing dynamin-2-K44A-dsRed as shown in C. See D for details.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Hela cells stably expressing SNAP-CD59 and transiently transfected with dynamin-2-K44A-dsRed were labeled with BG-SS-488 and transferrin-647 for 15 min at 37\u00b0C. Note that the cell shown has a very high level of dynamin-2-K44A expression, and this has induced abundant macropinosomes that are clearly larger than the normal endosomes in neighbouring cells. This is an extreme illustrative example. (B) Flow cytometry measuring internalisation of SNAP-CD59 in the population of cells transfected with dynamin-2-K44A-dsRed as in A. Note that as the expression of dynamin-2-K44A increases, SNAP-CD59 actually also goes up (Figure 6E).\n\nA second type of experiment used in many studies to provide evidence for uptake via clathrin-independent endocytosis is to perturb the function of clathrin-coated pits, and then assay continued endocytosis of a specific protein (Doherty and McMahon, 2009; Hansen and Nichols, 2009). We used overexpression of AP180-C to block formation of coated pits in a HeLa cell line stably expressing SNAP-CD59. In cells expressing AP180-C, endocytosis of SNAP-CD59 was blocked to the same extent as endocytosis of transferrin (Figure 6B and Figure 6D). Endocytosis of SNAP-CD59 was also blocked by moderate expression of dynamin-2-K44A (Figure 6C and Figure 6E). In cells expressing very high levels of the mutant dynamin, abundant macropinosomes could be detected, as well as smaller endocytic structures (Figure 6\u2014figure supplement 1) (Damke et al., 1995). These were clearly induced by high levels of dynamin-2-K44A (Figure 6\u2014figure supplement 1). Therefore moderate dynamin-2-K4AA expression does block the physiological mechanism that leads to internalisation of CD59 in unperturbed cells. As loss of both clathrin and dynamin function blocks uptake of CD59, the data imply that GPI-anchored proteins are likely to enter cells predominantly via clathrin-coated vesicles.\n\n### Labelling of the total population of endocytosed proteins and potential markers for clathrin-independent endocytosis\n\nWe used surface protein biotinylation with sulfo-NHS-SS-biotin to compare the distribution of total endocytosed protein with markers for possible clathrin-independent endocytic pathways. We examined co-localisation with flotillin 1 (Glebov et al., 2006; Stuermer, 2011), caveolin 1 (Rothberg et al., 1992; Schneider et al., 2008; Parton and Howes, 2010), GRAF1-GFP (Lundmark et al., 2008), and ARF6-GFP (Naslavsky et al., 2003, 2004) after 90 s and 15 min of endocytosis at 37\u00b0C (Figure 7, Figure 7\u2014figure supplement 1). Co-localisation was quantified using a mask generated from the streptavidin channel as explained in Figure 2\u2014figure supplement 3. Importantly, as the different markers label abundant structures it was possible that low levels of co-localisation would be detected due to chance overlap rather than specific labelling of the same structures. To control for this, we repeated the co-localisation quantification with the two channels in all images offset from each other by 500 nm. This provides an empirical way to estimate the degree of overlap between channels that arises by chance.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig7-v2.jpg)\n\n**Figure 7.:** (A, C, E, G) Confocal images showing distribution of the marker indicated (caveolin 1, flotillin 1, GRAF1, ARF6), together with total internalised protein after 90 s of endocytosis, revealed as in Figure 1D. In the case of GRAF1 and ARF6, additional images showing co-internalised transferrin are also shown. Bars are all 10 \u03bcm. (B, D, F, H) Quantification of co-localisation between the markers caveolin 1, flotillin 1, GRAF 1 and ARF6, and internalised protein labelled with sulfo-NHS-SS-biotin and MESNa treatment. Internalisation was for 90 s or 15 min. In order to establish empirically the degree of overlap between internalised protein and relevant marker expected by chance, quantification was carried out both with the images in the correct register, and also with one channel manually offset approximately 500 nm from the other. Bars are mean and SD, each point is one cell region.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A, B, C, D) Confocal images showing distribution of the marker indicated (caveolin 1, flotillin 1, GRAF1, ARF6), together with internalised biotinylated protein after 15 min of endocytosis. Labelling was done as in Figure 1D. This is the same experiment as shown in Figure 7, but a longer time-point.\n\nIn the case of caveolin 1, after both 90 s and 15 min some apparent co-localisation in punctate structures could be observed, and quantification confirmed that around 2% of caveolin 1 was present specifically in biotin-positive endosomes (Figure 7A, Figure 7B, 15 min time-point images in Figure 7\u2014figure supplement 1). In the case of flotillin 1, although some plausible co-localisation could be observed in confocal images, quantification revealed that this may arise purely by chance as the same degree of pixel overlap was found in offset and original images (Figure 7C, Figure 7D). In the case of GRAF1, internalised biotin was detected in GRAF1-GFP-positive puncta (Figure 7E). Quantification confirmed specific overlap between internalised biotin and GRAF1 (Figure 7F). The fact that our previous data show that most internalised biotin/total protein co-localises with transferrin made the strong prediction that these GRAF1-positive endosomes should also contain transferrin. This was indeed the case (Figure 7E). ARF6 showed a similar distribution to GRAF1, labelling transferrin-positive endosomes (Figure 7G, Figure 7H). We conclude that GRAF1-GFP and ARF6-GFP are present on transferrin-positive endocytic vesicles likely to have arisen from budding of clathrin-coated pits from the plasma membrane, that flotillin 1 is not detected on early endosomes, and that caveolin 1 is present on a very small fraction of endosomes. All of these observations are consistent with our general conclusion, that at least 95% of endocytosed protein enters the cell via clathrin-coated pits.\n\n### Distinct sorting mechanisms for transferrin receptor and GPI-anchored proteins lead to divergent effects on entry into coated pits\n\nOur data argue that GPI-anchored proteins enter the cell via coated pits, but, they behave differently from many other clathrin cargoes when AP2 expression is suppressed over 5 days. There are several factors potentially involved in this effect, such as rates of synthesis, degradation and endocytic recycling of proteins with GPI anchors. We investigated further the factor most relevant to the focus of this study, sorting during endocytosis. The absence of a cytosolic domain means that GPI-anchored proteins are fundamentally different from high-affinity cargoes such as the transferrin receptor, as they can not be recruited to the nascent pit via direct recognition of endocytic sorting motifs by adaptor proteins. It is likely that GPI-anchored proteins are partially excluded from coated pits by steric crowding effects (Bhagatji et al., 2009). We reasoned that perturbing the recognition of endocytic sorting motifs could therefore cause differential effects on uptake of GPI-anchored proteins and transferrin receptor. As an initial test of this hypothesis, we used siRNA to partially reduce AP2 expression. AP2 recognises two major endocytic motifs (Edeling et al., 2006; Motley et al., 2006; Kelly et al., 2008; Kirchhausen et al., 2014). We measured transferrin and SNAP-CD59 uptake by flow cytometry, 3 days after siRNA transfection. Cells still endocytosed significant amounts of both cargoes (Figure 8\u2014figure supplement 1). We compared the ratio between the two cargoes, on a cell by cell basis, for the populations of control and AP2 siRNA transfected cells (Figure 8A). AP2 siRNA caused a more pronounced reduction of transferrin than CD59 uptake. Confocal imaging confirmed the flow cytometry results. In cells where AP2 levels were reduced, the reduction in transferrin uptake appeared more severe than reduction in SNAP-CD59 uptake (Figure 8B). Using these imaging data, we correlated the amount of AP2 remaining in each cell with the total fluorescence intensity of internalised transferrin and SNAP-CD59 (Figure 8C). The uptake of both cargoes was efficiently blocked when AP2 levels became close to zero, but transferrin uptake was clearly more sensitive to reduction of AP2 levels than uptake of SNAP-CD59. (Figure 8C; see also Figure 4B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig8-v2.jpg)\n\n**Figure 8.:** (A) Frequency distribution of the ratio between internalised transferrin and internalised SNAP-CD59 in individual HeLa cells, determined by flow cytometry as in Figure 8\u2014figure supplement 1. (B) AP-2 knockdown can affect endocytosis of clathrin coated vesicle cargo proteins differentially. HeLa cells stably expressing SNAP-CD59 were transfected with AP2 siRNA and assayed at various timepoints up to 72 hr after transfection. Uptake of BG-SS-488 and transferrin-546 was for 15 min. Cells were MESNa treated, acid washed, fixed and stained with anti-alpha-adaptin. Top row; AP2 levels appear normal. Second row; AP2 levels are intermediate, transferrin uptake is blocked while SNAP-CD59 uptake is less severely inhibited. Third row; AP2 levels are very low and uptake of both SNAP-CD59 and transferrin is blocked. (C) Correlation of the amount of internalised transferrin and SNAP-CD59 with the amount of AP-2 present in each cell from the above experiment. Data were fit to a simple one-phase association. Shaded area around the curve fitted corresponds to 95% CI. (D) HeLa cells stably expressing SNAP-CD59 were transfected with \u00b52-IRES-GFP or \u00b52(F174S/D176A)-IRES-GFP. After 4 days, cells were incubated at 37\u00b0C for 150 s with transferrin-647 and BG-SS-546. The white lines outline transfected cells. The blue box highlights a region shown in E. Bars 20 \u03bcm. (E) Co-localisation between internalised SNAP-CD59 and transferrin in a cell expressing \u00b52(F174S/D176A)-IRES-GFP. (F) Frequency distribution of CD59 cargo load within individual vesicles. Cells were labelled as in D. Vesicles were identified as objects in 3D reconstructions from confocal images with Imaris software using the transferrin signal. (G) As F, but displaying transferrin cargo load in the same population of vesicles.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Cells stably expressing SNAP-CD59 were incubated at 37\u00b0C for 15 min with BG-SS-549 and transferrin-647. Surface label was removed with MESNa and acid wash and then the cells were analysed by flow cytometry.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03970/elife-03970-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Cells were transfected with plasmids expressing the \u03bc2 YXX\u03a6-binding mutant-myc as shown. Cell lysates were subjected to immunoprecipitation with anti-alpha adaptin, or as a negative control anti-GFP antibodies. Immunoprecipitates were analysed by Western blotting with anti-alpha adaptin and anti-myc antibodies.\n\nSpecific amino acid changes in the YXX\u03a6 binding site of the \u00b52 subunit of AP2 abolish binding of YXX\u03a6-containing cargoes like transferrin receptor (Honing et al., 2005; Jackson et al., 2010). Overexpression of this mutant form of \u03bc2 for 4 days resulted in incorporation into endogenous AP2 complexes, and thereby provided a tool to further investigate sorting of transferrin and GPI-anchored proteins into coated pits (Figure 8\u2014figure supplement 2). Overexpression of \u00b52(F174S/D176A), but not wild-type \u03bc2, caused a dramatic differential effect on the uptake of the two cargoes after 90 s of labelling and internalisation. As predicted, transferrin uptake was reduced (Honing et al., 2005, Motley et al., 2006). Uptake of SNAP-CD59, however, was significantly increased (Figure 8D). Importantly, this divergence did not arise from separate endocytic structures, as internalised SNAP-CD59 still co-localised well with the residual internalised transferrin (Figure 8E). Moreover, when 3D object-based analysis was used to identify transferrin-positive vesicles, and to quantify the amount of SNAP-CD59 present in these vesicles, a clear increase in the SNAP-CD59 load in mutant-expressing cells was observed (Figure 8F). This analysis also confirmed the reduced transferrin load in endocytic vesicles in mutant-expressing cells (Figure 8G). These results are in agreement with our initial hypothesis of distinctive sorting of GPI-anchored proteins into clathrin coated pits. They argue that steric exclusion of GPI-anchored proteins from the nascent pit becomes less acute when recruitment of high-affinity cargoes by AP2, or potentially other adaptors is abolished (Bhagatji et al., 2009). More generally, the data imply that rates of endocytosis of high affinity cargoes may be more susceptible to a range of perturbations of coated pit function than cargoes like GPI-anchored proteins, which have a lower affinity for the nascent pit.\n\n## Discussion\n\nAn imaging approach to studying endocytosis in unperturbed cells, where all surface proteins are labelled, is intrinsically easier to interpret than experiments where mutant proteins, siRNA, or chemical inhibitors cause loss of function, and potentially indirect or off-target effects, over days. The use of small, monovalent reducible chemical labels provides high temporal resolution, signal-to-noise ratio and efficiency of topological discrimination between intracellular and extracellular protein. This has allowed us to follow endocytosis of effectively all proteins, and thereby to observe all endocytic intermediates formed by the cell at specific time-points, starting with as little as 20 s of internalisation. Our results are at some variance with previous studies from our own and other laboratories, and with our preconceptions before being confronted with the data (Hansen and Nichols, 2009).\n\nOur data support the conclusions that the predominant pathway for endocytosis in mammalian cells, accounting for at least 95% of total protein endocytic flux, is uptake via the clathrin-coated pit. Other mechanisms are not likely to make a significant contribution. Primary endocytic vesicles involved in clathrin-independent endocytosis should not contain significant amounts of transferrin receptor, and while we can detect a class of such vesicles they account for less than 5% of total endocytosis. Further data, including perturbations of clathrin-coated pit function, assay of the endocytosis of GPI-anchored proteins, and co-localisation experiments looking at candidate markers for clathrin-independent endocytic pathways are all consistent with this conclusion. A recent systematic analysis of multiple assays for endocytosis using siRNA screens also provides indirect support, in that it reveals extensive functional and regulatory links between uptake of cargoes previously thought to enter the cell via different mechanisms (Liberali et al., 2014). In addition, this study conspicuously does not detect new linked sets of proteins likely to act together in a concerted fashion to make novel types of endocytic vesicle. Some cargoes for clathrin coated pits have been reported to be present in sub-populations of early endocytic vesicles, most likely through mechanisms related to cargo-dependent recruitment of specific adaptors (Lakadamyali et al., 2006; Mettlen et al., 2010; Henry et al., 2012). However, there is good evidence that transferrin receptor does not behave in this way (Lakadamyali et al., 2006; Kirchhausen et al., 2014), and our analysis of transferrin load in primary endocytic vesicles confirms this. In the light of these observations, it is difficult to reconcile our data with reports of abundant clathrin-independent endocytic carriers or CLICs. We note that the ultrastructure of CLICs, although clearly different from clathrin-generated vesicles, is not dissimilar to that of the early endosomes that receive cargoes taken up via coated pits (Harding et al., 1983; Willingham et al., 1984; Gruenberg et al., 1989; Hansen et al., 1991; Ullrich et al., 1996).\n\nMuch of the literature on clathrin-independent endocytosis is based on perturbations with differential effects on the uptake of transferrin and putative clathrin-independent cargoes (Puri et al., 2001; Sabharanjak et al., 2002; Sandvig et al., 2008; Doherty and McMahon, 2009; Hansen and Nichols, 2009; Lakshminarayan et al., 2014). Our data suggest a possible re-interpretation of this type of experiment. We demonstrate that GPI-anchored proteins enter mammalian cells via clathrin coated pits, and that this is fully compatible with the differential effects on endocytic uptake between transferrin receptor and GPI-anchored proteins reported here and observed in previous studies (Nichols et al., 2001; Sabharanjak et al., 2002; Naslavsky et al., 2004; Kumari and Mayor, 2008). The coated pit is a crowded environment, and GPI-anchored proteins will have to compete for a place inside the nascent pit with cargo proteins possessing high affinity sorting signals recognised directly by adaptor proteins (Kirchhausen et al., 2014). When the protein levels of adaptors such as AP2 are reduced, or when the ability to bind and recruit certain cargoes is lost, it is likely that the pit becomes less crowded, thereby becomes more populated with low affinity or passive cargoes like GPI-anchored proteins, and yet retains some ability to bud. This leads to the differential effects on transferrin and CD59 uptake that we observed experimentally. Divergent effects of coated pit perturbation on cargoes which all demonstrably enter the cell via coated pits, means that such effects need no longer be interpreted as evidence for clathrin-independent endocytosis.\n\nOur data place important constraints on models of endocytic flux. Additional endocytic mechanisms, like the still poorly understood set of protein machinery responsible for macropinocytosis, and the budding of caveolae, contribute very little to total protein uptake but can be detected by our assays. Such clathrin-independent pathways could still be functionally important when uptake of specific cargoes, and the variety of cell types and functions in vivo are considered (Commisso et al., 2013; Watanabe et al., 2013). Nevertheless, we conclude that clathrin-independent pathways do not make a significant contribution to total endocytic flux in cultured cells.\n\n## Materials and methods\n\n### Cell culture and DNA transfections\n\nHeLa, RPE and Cos7 cells where cultured at 37\u00b0C, 10% CO2, in DMEM supplemented with 10% FBS. When required, cells were transfected with FugeneHD (Promega, Madison, WI), 14\u201320 hr before imaging.\n\n### Constructs and cell lines\n\nCD59 and FOLR1 were cloned from human cDNA. PrP was a gift from Manu Hegde. The N-terminal tagging of SNAP-CD59, SNAP-FOLR1 and SNAP-PrP was obtained by inserting the SNAPtag domain following the N-terminal signal peptide of each protein. The minimal SNAP-GPI was constructed by inserting a SNAPtag domain between the N-terminal signal peptide and the \u03c9-2 site of human CD59. To obtain AP180C-IRES-GFP, AP180-C (A gift from H McMahon) was inserted into the multiple cloning site of IRES2-AcGFP1, using the XhoI and SacII sites. DynII (aa) K44A-dsRed was a gift from M Frick. GRAF1-GFP was a gift from H McMahon. AP2 \u00b52 and \u00b52(F174S/D176A) (Gifts from M Robinson) were cloned in IRES2-AcGFP1, using the XhoI and SacII sites. A typographic error for the YXX\u03a6 binding mutant is present in previous publications (Honing et al., 2005; Edeling et al., 2006; Motley et al., 2006). The mutant used and characterised in those studies was as described here (David Owen, personal communication).\n\nFollowing transfection, G418 (400 \u00b5g/ml) was used to select cells stably expressing SNAP-CD59. Resistant cells were sorted twice by flow cytometry to ensure retention of the construct and uniform expression levels.\n\n### Antibodies and other reagents\n\nantiCD59-546-ss488 was generated by conjugating anti-CD59 (MEM43) (Abcam, United Kingdom) simultaneously to NHS-ss-ATTO488 (ATTO-TEC, Germany) and NHS-AlexaFluor546 (Molecular Probes, Waltham, MA). Following conjugation the antibody was separated from unreacted reagents using size-exclusion chromatography. Antibodies and reagents were obtained from the following sources; AntiCD59-AlexaFluor647 (MEM43) (AbD Serotec, United Kingdom), mouse monoclonal (AP.6) against alpha adaptin used for immunofluorescence and immunoprecipitation (Abcam), mouse monoclonal against alpha adaptin used for western blots (BD, Franklin Lakes, NJ), rabbit polyclonal anti-caveolin 1 (BD), mouse monoclonal anti-flotillin 2 (BD), rabbit polyclonal against clathrin heavy chain (Abcam), Streptavidin-HRP (Pierce, Rockford, IL), PI-PLC from Bacillus cereus (Life Technologies, Waltham, MA), Streptavidin-488, -546 or -647 (Molecular Probes), Transferrin-546 or -647 (Molecular Probes), Cholera toxin subunit B (CTB) -647 (Molecular Probes), FM1-43FX (Molecular Probes), SNAP-surface 549 (NEB), BG-SS-488 and BG-SS-549 were kindly provided by our collaborators in NEB.\n\n### siRNA transfection\n\nTypically, non-targeting siRNA (Dharmacon, Lafayette, CO) or alpha-adaptin siRNA (Dharmacon) were delivered to the cells at a final concentration of 100 nM, using oligofectamine (Invitrogen). Transfections took place on days 1 and 3, while assays were carried out on day 5. For partial depletion of AP-2, one round of siRNA transfection took place and assays were performed at different timepoints up to 72 hr later. The siRNA targeting the alpha-subunit of AP-2, has been described previously (Robinson et al., 2010) [5\u02b9-GAG CAU GUG CAC GCU GGC CAdT dT-3\u02b9].\n\n### Immunoprecipitation\n\nAP2 complexes were immunoprecipitated with an anti-alpha adaptin antibody (AP.6) and protein G-sepharose after lysis with immunoprecipitation buffer (25 mM Tris\u2013HCl pH 7.4, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100 and 5% glycerol). To test for incorporation of the overexpressed mutant subunit into endogenous AP2 complexes, HeLa cells were transfected with \u03bc2(F174S/D176A)-IRES-GFP and maintained in culture for the indicated periods.\n\n### SILAC and mass spectrometry\n\nHeLa cells were cultured for 7 days in R0K0 or R10K8 DMEM (Dundee Cell Products, United Kingdom) supplemented with dialysed fetal bovine serum (MWCO 10 kDa\u2013Dundee Cell Products).\n\nFollowing surface biotinylation, cells were lysed in 1% Triton X-100, 1% Octyl glucoside (Sigma, United Kingdom) in TBSE buffer (50 mM Tris pH 7.4, 150 mM NaCl, 5 mM EDTA) in the presence of protease inhibitors (Roche). The lysates were left to rotate in the coldroom for 30 min, and then spun at 20.000 rcf for 20 min. The supernatant was transferred to a clean eppendorf tube and incubated for 1 hr with high capacity streptavidin-agarose resin (Pierce). Every sample was then transferred to a chromatography column (Bio-Rad) and washed with 25 ml 1%Triton in TBSE. To elute biotinylated proteins the resin was incubated for 5 min with 100 mM DTT in TBS (50 mM Tris pH 7.4, 150 mM NaCl). SDS-PAGE gels were stained with Sypro Ruby (Lonza, Switzerland) or silver stain (Pierce). Peptide identification from each sample was done using LTQ Orbitrap XL (Thermo Scientific, Waltham, MA). Calculation of SILAC ratios and further data analysis were performed using MaxQuant (Cox and Mann, 2008) and Prism (GraphPad, San Diego, CA) respectively. The AP2 siRNA SILAC experiment was repeated three times, data shown are from one experiment. The same overall trend in terms of accumulation of most plasma membrane proteins in the AP2 siRNA treated cells and depletion of GPI-anchored proteins, were observed in all three experiments.\n\n### Bioinformatic analysis of labelled plasma membrane proteins\n\nA recently published estimate for protein copy numbers in HeLa cells (Kulak et al., 2014) was correlated with a list of human plasma membrane proteins [GO:0005886]. Plasma membrane abundance (PMA) for a protein x was calculated as shown;\n\n$$\nPMA(x)=\\frac{copy\u2009number\u2009of\u2009protein\u2009x}{sum\u2009copy\u2009number\u2009of\u2009all\u2009plasma\u2009membrane\u2009proteins}\\times100\n$$\n\nWe then compared this list of plasma membrane proteins with the list of biotinylated surface proteins we detected by mass spectrometry (Figure 1\u2014source data 1).\n\n### Surface biotinylation at 4\u00b0C\n\nTo suspend endocytosis, cells were moved to a coldroom (4\u00b0C) and washed twice with ice-cold PBS pH 7.9. Primary amines at the cell surface were labelled with 0.2 mg/ml sulfo-NHS-SS biotin in PBS pH 7.9. After 20 min, remaining sulfo-NHS-SS biotin was quenched with 50 mM Tris pH 8.0 in PBS, and the cells were washed two more times with PBS. Where required a further 10 min incubation at 4\u00b0C with PBS +12.5 \u00b5g/ml transferrin was carried out. To allow endocytosis, pre-warmed medium was added to the cells and the cultures were incubated at 37\u00b0C for various time points. Fluorescent transferrin, if required, was present in the prewarmed medium at 12.5 \u00b5g/ml. At the same time, positive control cells to estimate the amount of surface labelling, and negative control cells to estimate the efficiency of reduction would remain in the coldroom.\n\nFollowing internalisation, cells were chilled with pre-cooled PBS to immediately arrest endocytosis and then washed with ice-cold MESNa buffer without BSA in the coldroom. Remaining surface exposed label was removed by incubating the cells 2 \u00d7 10 min in cold 100 mM MESNa in MESNa buffer (MESNa buffer: 50 mM Tris, 100 mM NaCl, 1 mM EDTA, 0.2wt/vol BSA, pH 8.6) Finally, transferrin, if used, was removed from the plasma membrane by acid wash at 4\u00b0C (2 \u00d7 2 min with 150 mM Glycine, pH 3.0).\n\n### Surface biotinylation at 37\u00b0C\n\nThe above protocol was modified for labelling at 37\u00b0C, with no labelling step at 4\u00b0C preceding the timeframe for endocytosis. Sulfo-NHS-SS Biotin was dissolved in pre-warmed HBSS (HBSS + calcium, magnesium, glucose\u2014Gibco) at a final concentration of 0.2 mg/ml. If required fluorescent transferrin was added, at a final concentration of 12.5 \u00b5g/ml, before addition to the cells. After incubation at 37\u00b0C for the indicated time cells were rapidly chilled using pre-cooled PBS at 4\u00b0C, and moved to the coldroom to remove surface exposed biotin or transferrin as described above.\n\n### Endocytic assay using the reducible SNAP-tag\n\nBG-SS-fluorophore and fluorescent transferrin were diluted in prewarmed DMEM supplemented with 10%FBS (Final concentrations; BG-SS-Fluorophore 2.5 nmol/ml, transferrin 12.5 \u00b5g/ml). After incubation at 37\u00b0C for the indicated time, cells were rapidly chilled using pre-cooled PBS at 4\u00b0C, and moved to the coldroom to arrest endocytosis and remove surface exposed label or transferrin as described previously.\n\n### Detection of endocytic vesicles using the amphiphilic dye FM1-43FX\n\nThe protocol used has been previously described (Diefenbach et al., 1999). Briefly, cells were labelled for 1 min at 4\u00b0C with 10 \u00b5M FM1-43FX (Invitrogen) in HBSS. Following internalisation at 37\u00b0C, excess FM1-43FX was removed from the plasma membrane by incubating the cells with PBS without FM1-43FX for 20 min at 4\u00b0C. Cells were imaged at 4\u00b0C without fixation. Temperature was maintained by addition of frozen, crushed DMEM to the cell chambers.\n\n### PI-PLC treatment\n\nGPI-anchored proteins were removed from the plasma membrane by incubating the cells at 4\u00b0C with PI-PLC (10 U/ml) in PBS for 20 min.\n\n### Flow cytometry\n\nFor flow cytometry, endocytic assays were performed as described above. Cells were then trypsinised, resuspended in cold 0.2% FBS in PBS and analysed using BD LSRFortessa.\n\n### Fluorescence microscopy\n\nFor microscopy, imaging dishes (CG 1.5\u2013Miltenyi Biotec) were coated with fibronectin (5 \u00b5g/ml in PBS) (Sigma Aldrich) overnight. The following day cells were seeded at a density of 6 \u00d7 103 cells/cm2.\n\nAfter the internalisation assays, cells were fixed and permeabilised with either 4% paraformaldehyde in PBS followed by 0.1% Saponin or with methanol at \u221220\u00b0C (required for staining with anti-flotillin antibodies). Images were acquired on a Zeiss 780 confocal microscope using a 63\u00d7 1.40NA Plan-Apochromat objective (Zeiss) and a GaAsP detector.\n\n### Image processing and quantification\n\nImages were processed in Image J. All images were subjected to noise reduction with Gaussian blur \u03c3 = 0.7, and contrast settings were adjusted for optimal visualisation of colour overlays. The black level in all images was set using levels empirically determined from negative control experiments to exclude cellular auto-fluorescence and other non-specific sources of signal. Quantification of co-localisation is explained in Figure 2\u2014figure supplement 3, and the relevant legend. In brief, one channel of a 2-colour image was converted into a binary mask that could be used to isolate those pixels from the second channel that are positive in the mask. Quantification of mean fluorescence intensity was carried out by simply drawing cell outlines as regions of interest in Image J. Importantly, empirically determined background from negative control experiments in which cells were incubated with labels only at 4\u00b0C was subtracted from all values. As there is inherent variability in both signal and background from cell to cell, this resulted in negative values in some instances.\n\nHigh resolution confocal stacks (150 nm interval) were used for volume rendering and object identification with Imaris (Bitplane). Primary endocytic vesicles were detected in the streptavidin channel using a region growing algorithm that used intensity parameters (mean, center, maximal, standard deviation) as detection criteria. To estimate and account for noise and random overlap we offset the transferrin channel by 20 voxel in x (\u223c500 nm). We then compared the updated statistics for individual endosomes with the values for the same endosomes when the two channels were correctly aligned.\n",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "44c81995-39ff-4684-93bd-95a10ae8d21c",
+      "submission_id": "edb4e0a7-a9fe-4712-bc11-e3b2c0a1532b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03970.030](https://doi.org/10.7554/eLife.03970.030)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cclathrin-independent pathways do not contribute significantly to endocytic flux\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and 3 reviewers, one of whom (Suzanne Pfeffer) is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis study is aimed at rigorously testing whether clathrin-independent endocytosis operates as a sizable parallel uptake route to clathrin-mediated endocytosis. The Introduction section frames the problem beautifully. After settling on reducible surface biotinylation for a labeling procedure, it was confirmed that this tags bulk surface constituents. Individual cargo at the surface could be followed using a reducible fluorescent ligand for the SNAP tag. Using this approach, >95% of internalized biotinylated proteins colocalized with endocytosed transferrin (Tf) after 1-2 min at 37\u00b0C. A pulse of NHS-SS-biotin at 37\u00b0C for \u223c1-2 min together with Tf also produced a high degree of overlap between Tf and streptavidin signals. The remainder of the manuscript reinforces this principal finding. The authors conclude that clathrin-mediated endocytosis represents the major route for internalization for the plasma membrane and that cargo packaging is subject to steric competition.\n\nThis is a systematic, carefully controlled, well interpreted and thought provoking study that forces serious reconsideration of a large body of previously published literature. The data are generally compelling and formally question the quantitative significance of clathrin-independent endocytosis, at least in the cell types examined.\n\nThe most paradoxical results are with regard to the CLIC/GEEC pathway, which through the work of Parton and Mayor has been suggested to account for the majority of bulk/fluid phase uptake in cells. The results from two papers in particular (Kirkham et al, 2005 (ref 17); Howes et al, 2010, which is not, but should be cited) need to be reconciled with the current findings. In these studies Parton and colleagues use quantitative electron microscopy studies with DAB reactions and surface quenching with ascorbic acid to also look at very early endocytic intermediates and identify CLIC, which have distinct morphologies and lack Tfn. Their morphometric analysis suggests that they account for the majority of bulk uptake in the cells they examined. We see two possibilities for reconciling these results:\n\n1) The lack of sensitivity of detection of nascent clathrin-independent endocytic vesicles. CME is a concentrative uptake mechanism so that B-cargo and Tfn will be \u223c20-fold more concentrated in nascent CCV derived vesicles as compared to bulk PM proteins in CLIC. While the data in Figure 3\u2013figure supplement 1B appears to argue that even vesicles with very low levels of streptavidin contain Tfn it would be important somehow ensure that diffraction limited vesicles with the same label intensity as what would be expected for bulk membrane also are enriched in Tfn. That is there should be 20-fold more Tfn than bulk membrane in these nascent vesicles. Could this be done with a bulk membrane marker such as an FM143 dye? The GPI-probes should show a >20:1 enrichment of Tfn vs GPI. Do these intensity differences match these expectations or are the authors unable to detect poorly labeled nascent CLICs?\n\n2) Another possible difference is if cholera toxin (Ctx), which is used as a CLIC marker by Parton et al, actually induces formation of CLICs. This is a very easy experiment to do, namely to repeat the experiments in Figure 2 and 5 in the presence of unlabeled Ctx. We feel this will greatly strengthen the current story.\n\nA second set of experiments not reconciled by the data are results of the effects of dominant-negative dynamin mutants and Dyn2 null cells. Damke et al., 1995 showed that bulk-endocytosis is restored in cells expressing ts-dynamin-1 within 30 minutes after shift to the nonpermissive temperature. This compensatory, clathrin-independent endocytosis occurred through nascent vesicles smaller than CCVs as judged by HRP uptake and EM studies. Liu et al., 2008 showed that dynamin-2 null cells continue to take up cholera toxin and Bodipy-LacSer even though transferrin uptake and macropinocytosis were inhibited. Can the authors show induction of clathrin-independent pathways other than macropinocytosis? Please discuss.\n\nThe next comments are listed below in the spirit of making the manuscript more complete and in allowing the non-specialist reader to fully comprehend the results and their significance.\n\n1) The GPI-anchored proteins stood out in the MS analysis as they were depleted, rather than enriched, at the cell surface in an AP-2-silenced background. The protein H/L ratios of the green-labeled GPI-anchored proteins in Figure 4D shows that these biotinylated forms of GPI-anchored proteins are clearly lower on the surface of AP-2 knocked-down cells. However, does the manuscript\u2019s whole protein data set show whether GPI-anchored proteins accumulate inside the AP-2 siRNA cell population rather than being extensively degraded? The underlying mechanistic basis for the surface loss is not really commented on directly or rationalized. It seems to me that they should explain why this occurs. GPI-anchored proteins do recycle back to the surface more slowly, but published data indicate this is due to interaction with cholesterol in the endosomal compartment. After several days, AP-2 knocked-down cells should be relatively cholesterol deficient due to LDL receptor accumulation on the cell surface and extremely limited endocytic flow. Do the GPI-anchored proteins in the intracellular fraction of AP-2-depleted cells recycle? If not, does this argue for a requirement for plasma membrane constituents, stalled at the cell surface in AP-2 knocked-down cells, for GPI-anchored protein recycling?\n\n2) One of the primary ways that the CIE pathway has been discriminated from the clathrin-mediated pathway is with Arf6. In this work, Arf6 is hardly mentioned. Perhaps the authors would like to comment on the possible role of Arf6 in the events they are documenting.\n\n3) A key set of mechanistically-revealing experiments are presented in Figure 8, were uncoupling between Tf and SNAP-CD59 as a function of AP-2 concentration is reported. The difference between the extensively and moderately AP-2-depleted cells seems very small compared with the level of AP-2 in the 'normal' cell (panel C). The white- and blue-outlined cells both have very little AP-2. It is not stated clearly what time point these cells were analyzed after AP-2 siRNA application, nor for the quantitative data in panel D. It is difficult to follow the extent of AP-2 depletion in these cells at a comparative biochemical level. Is this 'uncoupling' effect only noted when AP-2 levels are very low? The graph in panel D suggests this is not the case. Perhaps a more representative set of images could be shown?\n\n4) To our knowledge, most experiments using overexpressed mu2 subunits have been disappointing. AP-2 has a half-life of >30 hours in cultured cells. There is no direct evidence provided that the mutant mu2 protein overexpressed is actually incorporated into functional AP-2 tetramers.\n",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "381aefb6-dc92-44fe-8278-ef9688d9167a",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C1",
+      "claim": "MESNa treatment can remove over 99.9% of biotin from cells labelled with sulfo-NHS-SS-biotin at 4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "MESNa treatment could remove over 99.9% of biotin from cells labelled at 4\u00b0C (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A demonstrating serial dilution and detection of biotin after MESNa treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "e45525cd-50db-4a6a-b66a-0bb9371dda91",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C2",
+      "claim": "Washes at pH3 remove up to 50% of antibody bound to the GPI-anchored protein CD59.",
+      "claim_type": "EXPLICIT",
+      "source": "Washes at pH3 to remove bound antibody, or PI-PLC to cleave GPI-anchors, were around two orders of magnitude less efficient, removing up to 50% and 90% of antibody bound to the GPI-anchored protein CD59 respectively (Figure 1B) (Davies et al., 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B comparing efficiency of different methods for removing surface-bound antibody.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "6167a486-5163-4dc9-b348-85f5373f5200",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C3",
+      "claim": "PI-PLC treatment removes up to 90% of antibody bound to the GPI-anchored protein CD59.",
+      "claim_type": "EXPLICIT",
+      "source": "Washes at pH3 to remove bound antibody, or PI-PLC to cleave GPI-anchors, were around two orders of magnitude less efficient, removing up to 50% and 90% of antibody bound to the GPI-anchored protein CD59 respectively (Figure 1B) (Davies et al., 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B demonstrating PI-PLC cleavage efficiency.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "9722b1fc-ecc1-43b0-93fe-b39d7412ff4f",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C4",
+      "claim": "Reducible biotin and MESNa offer a highly accurate way of assaying protein internalisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducible biotin and MESNa therefore offer a highly accurate way of assaying protein internalisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the comparative efficiency data showing MESNa removes >99.9% of biotin versus 50-90% for other methods.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "860b5d0a-e472-48e7-857e-35df2afe86e6",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C5",
+      "claim": "Endocytic vesicles can be observed after as little as 20 s of internalisation using the sulfo-NHS-SS-biotin method.",
+      "claim_type": "EXPLICIT",
+      "source": "Endocytic vesicles could be observed after as little as 20 s of internalisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations described in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "fe5f7493-7ba4-4138-bbc4-726762086bea",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C6",
+      "claim": "Surface biotinylation with sulfo-NHS-SS-biotin labels a wide range of plasma membrane proteins including rare proteins with estimated copy number < 100 per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Abundant plasma membrane proteins had higher chances of being detected. Nevertheless, a wide range of rare proteins (some with estimated copy number < 100 per cell) was detected, assuring us that we achieved good coverage of the total plasma membrane protein complement. (Figure 1F, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LC-MS data comparing detected proteins with quantitative proteome analysis, shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "1bd6e456-ef31-435a-9046-a028c5de6949",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C7",
+      "claim": "Over 95% of the total internalised biotin after 20 s uptake is present in transferrin-positive vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that over 95% of the total internalised biotin after 20 s uptake was present in transferrin-positive vesicles (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis of co-localization between biotin and transferrin shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "63b7e6bb-57a0-482f-ac1e-e3ced399a0b4",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C8",
+      "claim": "After 20 s uptake over 80% of biotin-positive endocytic vesicles co-localise with clathrin in small puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, after 20 s uptake over 80% of biotin-positive endocytic vesicles co-localised with clathrin in small puncta, defining them as clathrin-coated vesicles (Figure 2C, Figure 2D, Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative co-localization analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "44a7a46d-e473-44a8-9818-a3464b4eb75e",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C9",
+      "claim": "The proportion of biotin-positive vesicles co-localising with clathrin falls rapidly with longer periods of uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion co-localising with clathrin fell rapidly with longer periods of uptake, as one would expect due to uncoating of primary vesicles (Figure 2D, Figure 2\u2014figure supplement 5) (Kirchhausen et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-course data in Figure 2D and cited literature on clathrin uncoating.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "9fa76e27-3779-403e-a078-61f4f03466e4",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C10",
+      "claim": "Approximately 2% of cells contain distinctively larger macropinosomes over 500 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 2% of the cells also contained distinctively larger macropinosomes over 500 nm in diameter (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy observations shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "afb33d9b-1432-46c8-8fc1-5a6b873a7d48",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C11",
+      "claim": "Large, fluid-filled macropinosomes are completely devoid of transferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake of transferrin was solely due to binding to transferrin receptor, as large, fluid-filled macropinosomes were completely devoid of transferrin (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy images in Figure 2\u2014figure supplement 1 showing macropinosomes without transferrin signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "522b3305-2c44-4d74-a27d-3bc70d526203",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C12",
+      "claim": "Co-localisation between internalised biotin and transferrin remains constant when times of internalisation up to 150 s are assayed.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-localisation remained constant when times of internalisation up to 150 s were assayed (Figure 2B, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 2B across multiple time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "312fe2eb-f5bf-4c0b-a92a-8f83d30a3d73",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C13",
+      "claim": "Nearly all of the internalised protein labelled with biotin is present in transferrin-positive vesicles when labelling is carried out at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results when labelling was carried out at 4\u00b0C, nearly all of the internalised protein labelled with biotin was indeed present in transferrin-positive vesicles (Figure 2E, Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E and 2F using continuous labeling at 37\u00b0C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "13684a42-e0d8-4318-b42e-599d350c3c60",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C14",
+      "claim": "There is near-complete co-localisation between endocytosed sulfo-NHS-SS-biotin and transferrin after 90 s uptake at 37\u00b0C in Cos7 and RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, there was near-complete co-localisation between endocytosed sulfo-NHS-SS-biotin and transferrin after 90 s uptake at 37\u00b0C (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 2\u2014figure supplement 6 from experiments in Cos7 and RPE cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "151c5084-8d2d-480f-9c39-af9b5b5156ef",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C15",
+      "claim": "90% of the FM1-43FX signal present in intracellular vesicles is also present in transferrin-positive pixels.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification revealed that 90% of the FM1-43FX signal present in intracellular vesicles was also present in transferrin-positive pixels (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis shown in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "ba2d1460-4c39-4e77-8663-0e14526c37e9",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C16",
+      "claim": "After 90 s continuous labelling and uptake 96% of 2350 vesicles contained transferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying this conservative criterion, after 90 s continuous labelling and uptake 96% of 2350 vesicles contained transferrin, and after labelling at 4\u00b0C and uptake for 20 s 92% of 2387 vesicles contained transferrin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 3D object-based quantification shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "7e742866-4a56-45da-9138-fec00b097465",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C17",
+      "claim": "After labelling at 4\u00b0C and uptake for 20 s, 92% of 2387 vesicles contained transferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying this conservative criterion, after 90 s continuous labelling and uptake 96% of 2350 vesicles contained transferrin, and after labelling at 4\u00b0C and uptake for 20 s 92% of 2387 vesicles contained transferrin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 3D object-based quantification shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "7120f32a-e0ed-4b63-9709-6ad16f43ff2d",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C18",
+      "claim": "A single Gaussian curve can describe the transferrin intensity distribution within most identified vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "A single Gaussian curve could describe the transferrin intensity distribution within most identified vesicles, consistent with stochastic incorporation of transferrin receptors into forming clathrin-coated pits (Collinet et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of transferrin intensity distributions and cited literature on stochastic cargo incorporation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "6353ef23-8e62-4c9d-9378-f47fd56acfa7",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C19",
+      "claim": "There is no correlation between biotin intensity and the probability of a vesicle not containing transferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no correlation between biotin intensity and the probability of that vesicle not containing transferrin, arguing against the possibility of a morphologically distinctive class of transferrin-negative endocytic vesicle (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "40b8507e-f7a3-47ec-b88e-ddf601df35be",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C20",
+      "claim": "The transferrin load in vesicles in control and CTB treated cells is the same.",
+      "claim_type": "EXPLICIT",
+      "source": "The transferrin load in vesicles in control and CTB treated cells was the same (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative comparison shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "ead82467-4ba6-4339-aa46-96f32cbecfc3",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C21",
+      "claim": "In cells overexpressing AP180-C, transferrin uptake and endocytosis of total biotinylated protein are both efficiently blocked, with total protein uptake being reduced to less than 5% of control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells overexpressing AP180-C, transferrin uptake and endocytosis of total biotinylated protein were both efficiently blocked, with total protein uptake being reduced to less than 5% of control levels (Figure 3C and Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3C and 3E from AP180-C overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "aa688d90-6bcb-4fbe-b3d7-f2890d0a4897",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C22",
+      "claim": "In cells overexpressing dynamin 2 K44A there is efficient reduction of both transferrin and total biotinylated protein uptake to less than 5% of control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells overexpressing dynamin 2 K44A there was efficient reduction of both transferrin and total biotinylated protein uptake to less than 5% of control levels (Figure 3D and Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3D and 3F from dynamin 2 K44A overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "2309a49b-e1b1-43b3-8cbf-f8021be04b4c",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C23",
+      "claim": "Expression of very high levels of dynamin 2 K44A induces endocytosis of total biotinylated protein in both macropinosomes and smaller vesicular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we noted that expression of very high levels of the dynamin mutant induced endocytosis of total biotinylated protein in both macropinosomes and smaller vesicular structures (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observations described in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "24e67492-4755-40fb-9c98-8a29f1e21b65",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C24",
+      "claim": "AP2 siRNA blocks alpha-adaptin expression and hence AP2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to ablate coated pit activity, cells were transfected with siRNA against the alpha adaptin subunit of the clathrin adaptor AP2 ('AP2 siRNA'). This blocked alpha-adaptin expression, and hence AP2 function (Figure 4A, Figure 4B) (Motley et al., 2003, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 4A and cited literature on AP2 function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "9e1e7ed7-e36a-4887-810d-2a6255173a61",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C25",
+      "claim": "AP2 siRNA blocks both transferrin uptake and uptake of total biotinylated proteins to a similar extent.",
+      "claim_type": "EXPLICIT",
+      "source": "AP2 siRNA blocked both transferrin uptake and uptake of total biotinylated proteins to a similar extent (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "88db4ec5-5d4b-42eb-abd3-98b6bc12c385",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C26",
+      "claim": "AP2 siRNA treatment causes a clear and pronounced increase in the abundance of most plasma membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a clear and pronounced increase in the abundance of most proteins in AP2-siRNA cells (Figure 4C and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SILAC proteomics data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "bf64b4a9-63eb-484e-8039-0148eebca68f",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C27",
+      "claim": "SILAC ratios of non-biotinylated cytosolic proteins do not reveal similar changes to plasma membrane proteins after AP2 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of SILAC ratios of the non-biotinylated cytosolic proteins present in the flow-through provided an internal control and did not reveal similar changes, confirming that the effects of AP2 depletion are largely restricted to the population of plasma membrane proteins (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SILAC analysis shown in Figure 4C comparing biotinylated and non-biotinylated protein populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "92df4350-4203-4d13-bc10-ab81eb346c3e",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C28",
+      "claim": "Most GPI-anchored proteins detected are depleted from the plasma membrane upon AP2 siRNA treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The only obvious pattern within the list is the presence of most GPI-anchored proteins detected (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SILAC data shown in Figure 4D highlighting GPI-anchored proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "aa1ef6d2-113c-40bf-915e-2f02334053d3",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C29",
+      "claim": "AP2 siRNA causes an accumulation of transferrin receptor at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry to assay changes in plasma membrane levels of individual proteins confirmed that AP2 siRNA causes an accumulation of transferrin receptor at the plasma membrane, while levels of the GPI-anchored protein CD59 are reduced (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "0b2ad2e9-91b5-46e5-961d-bae4e2ba8240",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C30",
+      "claim": "AP2 siRNA causes levels of the GPI-anchored protein CD59 at the plasma membrane to be reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry to assay changes in plasma membrane levels of individual proteins confirmed that AP2 siRNA causes an accumulation of transferrin receptor at the plasma membrane, while levels of the GPI-anchored protein CD59 are reduced (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "111666d6-4788-4e95-ae5e-d0b38d503319",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C31",
+      "claim": "All four GPI-anchored proteins (CD59, folate receptor, PrP, and minimal SNAP-GPI) co-localise extensively with transferrin after internalisation.",
+      "claim_type": "EXPLICIT",
+      "source": "All four GPI-anchored proteins co-localised extensively with transferrin after internalisation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal microscopy images shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "e0d90f9f-db93-4155-8d9a-edf6d0fc99ef",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C32",
+      "claim": "Around 90% of all BG-SS-488 labelled, internalised GPI-anchored proteins co-localise with transferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "When quantified, around 90% of all BG-SS-488 labelled, internalised GPI-anchored proteins co-localised with transferrin (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative co-localization analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "723fddbf-b179-483b-b32c-ed5ff7de7a80",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C33",
+      "claim": "Around 90% co-localisation is detected between transferrin-alexa-647 and transferrin-alexa-546 after simultaneous internalisation.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the biological significance of the residual 10% we used precisely the same quantification method to analyse co-localisation between transferrin-alexa-647 and transferrin-alexa-546, after mixing and adding to cells for simultaneous internalisation. Again we detected around 90% co-localisation, so it is possible that the residual 10% can be accounted for by limitations in quantification rather than a biologically significant pool of GPI-anchored protein internalised separately from transferrin (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control experiment data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "9280ff5c-99f3-4f9d-8598-fdf6980904c1",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C34",
+      "claim": "CTB-binding does not alter the proportion of vesicles that are potentially transferrin-negative in cells expressing SNAP-CD59.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of vesicles that are potentially transferrin-negative (the fraction below the dotted line) is not altered by CTB-binding.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by object-based analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "cfe1d4e6-2bdc-43ea-9243-0cbdd3a6ef86",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C35",
+      "claim": "The SS-atto-488 signal from doubly labelled anti-CD59 antibody co-localises completely with transferrin after 90s uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "The SS-atto-488 signal co-localised completely with transferrin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscopy data shown in Figure 6A using doubly-labeled antibody.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "a414790f-c43c-43f7-ad71-65330e66bc2e",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C36",
+      "claim": "Alexa-546 from doubly labelled anti-CD59 antibody is seen in many punctate structures that lack transferrin after PI-PLC treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Alexa-546, however, was seen in many punctate structures that lack transferrin (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "2bf82ea1-60f4-4efc-be64-f9298d4f5cc1",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C37",
+      "claim": "PI-PLC treatment does not remove all external GPI-anchored protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these data as strong evidence that the PI-PLC treatment did not remove all external GPI-anchored protein, while reduction with MESNa provided more stringent discrimination between internal and external pools of the antibody (Figure 1A, Figure 1B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from comparison of MESNa and PI-PLC efficiency data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "83a9a4bc-adad-4207-b313-844c25faab81",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C38",
+      "claim": "Endogenous CD59 is internalised in transferrin-containing vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, endogenous CD59 is indeed internalised in transferrin-containing vesicles, and apparent internalisation in vesicles lacking transferrin may, at least under the conditions we have employed in this study, be an artifact due to incomplete removal of surface bound antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the doubly-labeled antibody experiment results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "903f4f94-59cf-4483-851e-98e76e2b7c82",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C39",
+      "claim": "In cells expressing AP180-C, endocytosis of SNAP-CD59 is blocked to the same extent as endocytosis of transferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing AP180-C, endocytosis of SNAP-CD59 was blocked to the same extent as endocytosis of transferrin (Figure 6B and Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 6B and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "d5324935-1a4d-436f-ba93-606b2e22c40c",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C40",
+      "claim": "Endocytosis of SNAP-CD59 is blocked by moderate expression of dynamin-2-K44A.",
+      "claim_type": "EXPLICIT",
+      "source": "Endocytosis of SNAP-CD59 was also blocked by moderate expression of dynamin-2-K44A (Figure 6C and Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 6C and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "59ef7757-ab5f-46d2-802f-6fe5f4e0eb94",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C41",
+      "claim": "In cells expressing very high levels of dynamin-2-K44A, abundant macropinosomes and smaller endocytic structures can be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing very high levels of the mutant dynamin, abundant macropinosomes could be detected, as well as smaller endocytic structures (Figure 6\u2014figure supplement 1) (Damke et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 6\u2014figure supplement 1 and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "5d5f984f-95d8-4dc8-99a6-aae4cb9b1e5b",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C43",
+      "claim": "Around 2% of caveolin 1 is present specifically in biotin-positive endosomes after both 90 s and 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of caveolin 1, after both 90 s and 15 min some apparent co-localisation in punctate structures could be observed, and quantification confirmed that around 2% of caveolin 1 was present specifically in biotin-positive endosomes (Figure 7A, Figure 7B, 15 min time-point images in Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative co-localization analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "d7e50bbc-fce8-43c5-9ef1-8611fad58fd8",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C44",
+      "claim": "Flotillin 1 co-localisation with internalised biotin may arise purely by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of flotillin 1, although some plausible co-localisation could be observed in confocal images, quantification revealed that this may arise purely by chance as the same degree of pixel overlap was found in offset and original images (Figure 7C, Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis with offset controls shown in Figure 7D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "de329276-4148-4642-979f-de3314f86eeb",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C45",
+      "claim": "Internalised biotin is detected in GRAF1-GFP-positive puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of GRAF1, internalised biotin was detected in GRAF1-GFP-positive puncta (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy images shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "cc978df2-f2cd-46bd-b914-5d349b609a52",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C46",
+      "claim": "GRAF1-positive endosomes contain transferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that our previous data show that most internalised biotin/total protein co-localises with transferrin made the strong prediction that these GRAF1-positive endosomes should also contain transferrin. This was indeed the case (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by three-color microscopy data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "0e51af83-06ce-47da-ada5-e4aeaa6d60ee",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C47",
+      "claim": "ARF6 labels transferrin-positive endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "ARF6 showed a similar distribution to GRAF1, labelling transferrin-positive endosomes (Figure 7G, Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy and quantification data shown in Figure 7G and 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "a5d78c7c-9f75-4640-8ad2-4a55eb915a09",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C48",
+      "claim": "GRAF1-GFP and ARF6-GFP are present on transferrin-positive endocytic vesicles likely to have arisen from budding of clathrin-coated pits from the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that GRAF1-GFP and ARF6-GFP are present on transferrin-positive endocytic vesicles likely to have arisen from budding of clathrin-coated pits from the plasma membrane, that flotillin 1 is not detected on early endosomes, and that caveolin 1 is present on a very small fraction of endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from co-localization data with transferrin and biotin.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "4a4fea55-af74-4911-aeee-0efcad911a9c",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C49",
+      "claim": "Flotillin 1 is not detected on early endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that GRAF1-GFP and ARF6-GFP are present on transferrin-positive endocytic vesicles likely to have arisen from budding of clathrin-coated pits from the plasma membrane, that flotillin 1 is not detected on early endosomes, and that caveolin 1 is present on a very small fraction of endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from co-localization data showing no specific overlap above background.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "5a25a2fa-3c16-4c2f-9327-855c59a7d526",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C50",
+      "claim": "Caveolin 1 is present on a very small fraction of endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that GRAF1-GFP and ARF6-GFP are present on transferrin-positive endocytic vesicles likely to have arisen from budding of clathrin-coated pits from the plasma membrane, that flotillin 1 is not detected on early endosomes, and that caveolin 1 is present on a very small fraction of endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on quantitative data showing ~2% co-localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "c2209893-3154-4d2b-b448-4008aa474778",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C51",
+      "claim": "AP2 siRNA causes a more pronounced reduction of transferrin uptake than CD59 uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "AP2 siRNA caused a more pronounced reduction of transferrin than CD59 uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 8A comparing ratios of transferrin to CD59 uptake.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "f1e00d1d-09e2-4a3c-9f9c-048232b38e03",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C52",
+      "claim": "Transferrin uptake is more sensitive to reduction of AP2 levels than uptake of SNAP-CD59.",
+      "claim_type": "EXPLICIT",
+      "source": "The uptake of both cargoes was efficiently blocked when AP2 levels became close to zero, but transferrin uptake was clearly more sensitive to reduction of AP2 levels than uptake of SNAP-CD59. (Figure 8C; see also Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "efa0d022-cb2b-4ed4-9d63-d115a085607c",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C53",
+      "claim": "Overexpression of \u00b52(F174S/D176A) causes a dramatic differential effect on the uptake of transferrin and SNAP-CD59 after 90 s of labelling and internalisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of \u00b52(F174S/D176A), but not wild-type \u03bc2, caused a dramatic differential effect on the uptake of the two cargoes after 90 s of labelling and internalisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscopy and quantification data shown in Figure 8D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "bfdc5e2c-cd95-4600-b89d-22145e05c5fe",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C54",
+      "claim": "Overexpression of \u00b52(F174S/D176A) reduces transferrin uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, transferrin uptake was reduced (Honing et al., 2005, Motley et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 8G and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "2e9d5353-863b-45ef-850b-78ef8ce95d32",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C55",
+      "claim": "Overexpression of \u00b52(F174S/D176A) significantly increases uptake of SNAP-CD59.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake of SNAP-CD59, however, was significantly increased (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "1c5dbd84-384a-4066-a02e-09edff872a44",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C56",
+      "claim": "Internalised SNAP-CD59 co-localises with residual internalised transferrin in cells expressing \u00b52(F174S/D176A).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this divergence did not arise from separate endocytic structures, as internalised SNAP-CD59 still co-localised well with the residual internalised transferrin (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "dc9d7f7e-a481-4273-8df7-a283a56cc28f",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C57",
+      "claim": "There is a clear increase in the SNAP-CD59 load in transferrin-positive vesicles in cells expressing \u00b52(F174S/D176A).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when 3D object-based analysis was used to identify transferrin-positive vesicles, and to quantify the amount of SNAP-CD59 present in these vesicles, a clear increase in the SNAP-CD59 load in mutant-expressing cells was observed (Figure 8F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 3D object-based quantification shown in Figure 8F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "b2b9941a-619e-4d3f-8da4-e0e8b0f679b2",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C58",
+      "claim": "There is reduced transferrin load in endocytic vesicles in cells expressing \u00b52(F174S/D176A).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis also confirmed the reduced transferrin load in endocytic vesicles in mutant-expressing cells (Figure 8G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 3D object-based quantification shown in Figure 8G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "24acd096-5d41-439e-9b26-7a38410ba5fe",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C59",
+      "claim": "Steric exclusion of GPI-anchored proteins from the nascent pit becomes less acute when recruitment of high-affinity cargoes by AP2 is abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in agreement with our initial hypothesis of distinctive sorting of GPI-anchored proteins into clathrin coated pits. They argue that steric exclusion of GPI-anchored proteins from the nascent pit becomes less acute when recruitment of high-affinity cargoes by AP2, or potentially other adaptors is abolished (Bhagatji et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the differential effects observed with the \u00b52 mutant and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "b73445f6-75da-4c4e-898f-d73bd52ef09b",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C60",
+      "claim": "Rates of endocytosis of high affinity cargoes may be more susceptible to perturbations of coated pit function than cargoes like GPI-anchored proteins, which have a lower affinity for the nascent pit.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the data imply that rates of endocytosis of high affinity cargoes may be more susceptible to a range of perturbations of coated pit function than cargoes like GPI-anchored proteins, which have a lower affinity for the nascent pit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the differential sensitivity to AP2 depletion and mutation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "d4ac4bf6-6132-48c2-a591-766cdf5da563",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C61",
+      "claim": "At least 95% of the earliest detectable endocytic vesicles arise from clathrin-coated pits.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that at least 95% of the earliest detectable endocytic vesicles arise from clathrin-coated pits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple lines of experimental data including co-localization with transferrin and clathrin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "f8e97f28-833b-491d-a352-9d8f190191b1",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C62",
+      "claim": "GPI-anchored proteins enter the cell predominantly via coated pits.",
+      "claim_type": "EXPLICIT",
+      "source": "GPI-anchored proteins, candidate cargoes for alternate pathways, are also found to enter the cell predominantly via coated pits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by co-localization data with transferrin and perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "d32ced9d-ed2f-46e7-a26a-f0d43cbbb65e",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C63",
+      "claim": "The predominant pathway for endocytosis in mammalian cells, accounting for at least 95% of total protein endocytic flux, is uptake via the clathrin-coated pit.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support the conclusions that the predominant pathway for endocytosis in mammalian cells, accounting for at least 95% of total protein endocytic flux, is uptake via the clathrin-coated pit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comprehensive analysis of endocytic vesicles using multiple methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "8e7e0ef9-39f1-415a-8aae-27d50acc9c78",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C64",
+      "claim": "Other endocytic mechanisms are not likely to make a significant contribution to total endocytic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Other mechanisms are not likely to make a significant contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the finding that >95% of endocytosis occurs via clathrin-coated pits.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "b1891963-18f1-4b6d-854e-5eb120eb461a",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C65",
+      "claim": "Primary endocytic vesicles involved in clathrin-independent endocytosis should not contain significant amounts of transferrin receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary endocytic vesicles involved in clathrin-independent endocytosis should not contain significant amounts of transferrin receptor, and while we can detect a class of such vesicles they account for less than 5% of total endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference about what would define clathrin-independent vesicles and quantitative data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "ad28863d-f8ea-4244-b720-2279c14b13e7",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C66",
+      "claim": "A class of vesicles that do not contain significant amounts of transferrin receptor can be detected and they account for less than 5% of total endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary endocytic vesicles involved in clathrin-independent endocytosis should not contain significant amounts of transferrin receptor, and while we can detect a class of such vesicles they account for less than 5% of total endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative analysis of transferrin content in endocytic vesicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "e5c54783-c67c-4f7b-9bc7-fbb88b98bc11",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C67",
+      "claim": "Clathrin-independent pathways do not make a significant contribution to total endocytic flux in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we conclude that clathrin-independent pathways do not make a significant contribution to total endocytic flux in cultured cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comprehensive analysis showing >95% of endocytosis occurs via clathrin-coated pits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "68226ab8-846e-4726-b980-48dd79ef27ca",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C68",
+      "claim": "Clathrin-independent endocytic pathways could still be functionally important when uptake of specific cargoes and the variety of cell types and functions in vivo are considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Such clathrin-independent pathways could still be functionally important when uptake of specific cargoes, and the variety of cell types and functions in vivo are considered (Commisso et al., 2013; Watanabe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement acknowledging potential importance in specific contexts, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "bcfd48f1-1530-4c4b-b8cc-e0183e475c1b",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C69",
+      "claim": "GPI-anchored proteins are partially excluded from coated pits by steric crowding effects.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that GPI-anchored proteins are partially excluded from coated pits by steric crowding effects (Bhagatji et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the lack of cytosolic domain and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "fc4d10be-af15-4a81-8913-8ac13edebe10",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C70",
+      "claim": "The mutant \u00b52(F174S/D176A) used in this study was previously incorrectly described in publications due to a typographic error.",
+      "claim_type": "EXPLICIT",
+      "source": "A typographic error for the YXX\u03a6 binding mutant is present in previous publications (Honing et al., 2005; Edeling et al., 2006; Motley et al., 2006). The mutant used and characterised in those studies was as described here (David Owen, personal communication).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on personal communication clarifying previous publications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "64231bc9-6f88-48dc-a5dc-be52ec5f7c3c",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "claim_id": "C71",
+      "claim": "The \u00b52(F174S/D176A) mutant incorporates into endogenous AP2 complexes after overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of this mutant form of \u03bc2 for 4 days resulted in incorporation into endogenous AP2 complexes, and thereby provided a tool to further investigate sorting of transferrin and GPI-anchored proteins into coated pits (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoprecipitation data shown in Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2214e28f-fb84-42a8-a668-6a1726bc9b6a",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MESNa treatment removes over 99.9% of biotin from sulfo-NHS-SS-biotin labeled cells, which is significantly more efficient than pH3 washes (50% removal) or PI-PLC treatment (90% removal) for removing surface-bound labels. This establishes reducible biotin with MESNa as a highly accurate method for assaying protein internalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 provide quantitative experimental data (Figure 1A-B) demonstrating the superior efficiency of MESNa treatment compared to alternative methods. C4's conclusion that this combination offers high accuracy is well-supported by the comparative efficiency data showing >99.9% removal versus 50-90% for alternatives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "37f15b7b-f00a-4bcb-9221-0df5d1bb1218",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The sulfo-NHS-SS-biotin labeling method provides high temporal resolution (detecting vesicles after 20s) and labels a broad range of plasma membrane proteins including rare proteins with <100 copies per cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C5 is supported by microscopy data (Figure 1D) showing vesicle detection at 20s. C6 is supported by LC-MS data (Figure 1F) demonstrating detection of proteins across the full abundance range. Together these establish the method's temporal resolution and comprehensive coverage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "94166afe-c63f-4faf-af53-c53ee9bdfad9",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Over 95% of biotinylated proteins internalized after 20s are present in transferrin-positive vesicles, with over 80% co-localizing with clathrin. This co-localization remains constant up to 150s, is observed with labeling at both 4\u00b0C and 37\u00b0C, and is consistent across multiple cell types (HeLa, Cos7, RPE) and labeling methods (biotin, FM1-43FX).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C15 provide converging evidence from multiple experimental approaches (pixel-based quantification in Figure 2B, clathrin co-localization in Figure 2D, different cell types in Figure 2\u2014supplement 6, FM1-43FX in Figure 2\u2014supplement 7) all consistently showing >90-95% co-localization with transferrin. The consistency across methods and conditions strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "098dfdb6-de79-4a44-a5e8-1de273e9f9ea",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Approximately 2% of cells contain macropinosomes larger than 500nm that are completely devoid of transferrin, indicating these represent a distinct endocytic mechanism from transferrin receptor-mediated uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both claims are supported by microscopy data in Figure 2\u2014supplement 1. The observation that macropinosomes lack transferrin despite its presence in the medium provides strong evidence that these structures arise through a different mechanism than clathrin-mediated endocytosis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "f8fea5c8-f53c-439d-9d6a-b9dbcc9b3c45",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Object-based 3D analysis reveals that 92-96% of individual endocytic vesicles contain transferrin, with transferrin intensity following a single Gaussian distribution consistent with stochastic cargo incorporation. No correlation exists between biotin intensity and transferrin-negative status, and CTB treatment does not alter the proportion of transferrin-positive vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 are supported by rigorous 3D object-based quantification (Figure 3B, Figure 3\u2014supplements 1-2). The use of offset controls to establish background thresholds and analysis of thousands of vesicles provides strong statistical support. The Gaussian distribution analysis (C18) and lack of correlation (C19) strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "98c5a42d-73a5-4c90-b4d4-ca4e7bb2866e",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Overexpression of AP180-C or dynamin-2-K44A reduces both transferrin and total biotinylated protein uptake to less than 5% of control levels, though very high dynamin-2-K44A expression induces macropinosome formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are supported by quantitative data in Figures 3C-F showing parallel reduction of both cargoes. C23 is supported by observations in Figure 6\u2014supplement 1. These data demonstrate that blocking clathrin-coated pit formation effectively blocks the majority of endocytosis, though the caveat about high dynamin expression inducing alternative pathways is important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "4c8f20ae-a3fa-495b-b622-c00e2b925121",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AP2 siRNA blocks alpha-adaptin expression and AP2 function, reducing both transferrin and total biotinylated protein uptake similarly. SILAC proteomics reveals that most plasma membrane proteins accumulate upon AP2 depletion, while cytosolic proteins remain unchanged, confirming effects are specific to the plasma membrane population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are well-supported by Western blot (Figure 4A), uptake assays (Figure 4B), and SILAC proteomics (Figure 4C). The internal control using non-biotinylated cytosolic proteins (C27) strengthens the interpretation that effects are specific to plasma membrane proteins undergoing endocytosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "b865f277-8a99-4abd-9658-458bed6e0855",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AP2 depletion causes most GPI-anchored proteins to be depleted from the plasma membrane, contrasting with the accumulation of transferrin receptor. Flow cytometry confirms transferrin receptor accumulation and CD59 reduction at the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by SILAC data (Figure 4D) and flow cytometry (Figure 4\u2014supplement 1). The differential effects on GPI-anchored proteins versus transmembrane proteins like transferrin receptor provide important mechanistic insights, though the underlying mechanism requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "b1a4945c-658c-4abe-b825-e32e3a549558",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Four different GPI-anchored proteins (CD59, folate receptor, PrP, minimal SNAP-GPI) show extensive co-localization with transferrin after internalization, with approximately 90% of internalized GPI-anchored proteins present in transferrin-positive vesicles. Control experiments with dual-labeled transferrin achieve similar 90% co-localization, suggesting the residual 10% may reflect quantification limitations. CTB binding does not alter this pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by confocal microscopy (Figure 5A) and quantitative analysis (Figure 5B, Figure 5\u2014supplement 1). The critical control experiment (C33) using two differently labeled transferrin molecules achieving the same ~90% co-localization provides strong evidence that the residual 10% represents technical limitations rather than biological significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "6dc294c8-c0fe-4716-a176-37b77205e922",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Using doubly-labeled anti-CD59 antibody (with both reducible SS-atto-488 and non-reducible Alexa-546), the reducible fluorophore co-localizes completely with transferrin after MESNa treatment, while the non-reducible fluorophore appears in many transferrin-negative puncta after PI-PLC treatment. This demonstrates that PI-PLC does not remove all external GPI-anchored protein and that endogenous CD59 is internalized in transferrin-containing vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by the elegant doubly-labeled antibody experiment (Figure 6A) that directly compares MESNa and PI-PLC efficiency. This provides strong evidence that apparent transferrin-negative internalization of GPI-anchored proteins in previous studies may be an artifact of incomplete surface label removal, addressing a key controversy in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "849f85bf-dbc3-4780-9055-7f370d159265",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AP180-C overexpression blocks SNAP-CD59 endocytosis to the same extent as transferrin. Moderate dynamin-2-K44A expression also blocks SNAP-CD59 uptake, though very high expression levels induce abundant macropinosomes and smaller endocytic structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by quantitative data in Figures 6B-E and microscopy in Figure 6\u2014supplement 1. The parallel blocking of both cargoes by perturbations specific to clathrin-mediated endocytosis provides strong evidence that GPI-anchored proteins enter via this pathway, though the dose-dependent effects with dynamin mutant require careful interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Analysis of putative clathrin-independent markers reveals that caveolin 1 is present on only ~2% of biotin-positive endosomes, flotillin 1 shows no specific co-localization above background (using offset controls), while GRAF1-GFP and ARF6-GFP are present on transferrin-positive endocytic vesicles likely arising from clathrin-coated pits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50 are supported by systematic co-localization analysis with offset controls (Figure 7). The use of offset controls to establish background overlap (particularly important for C44) strengthens the conclusions. The finding that GRAF1 and ARF6 label transferrin-positive vesicles (C45-C48) challenges previous interpretations of these as clathrin-independent markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "e63a4dab-5d4d-49bc-a07a-22effffba994",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Partial AP2 depletion by siRNA causes a more pronounced reduction in transferrin uptake than CD59 uptake. Transferrin uptake is more sensitive to reduction of AP2 levels than SNAP-CD59 uptake, though both are blocked when AP2 levels approach zero.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by flow cytometry (Figure 8A) and correlation analysis (Figure 8C). The differential sensitivity provides important mechanistic insight into cargo sorting, though the interpretation requires consideration of multiple factors including synthesis, degradation, and recycling rates as acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Overexpression of the \u03bc2(F174S/D176A) mutant that cannot bind YXX\u03a6 motifs causes a dramatic differential effect: transferrin uptake is reduced while SNAP-CD59 uptake is significantly increased. Importantly, internalized SNAP-CD59 still co-localizes with residual transferrin, and 3D analysis confirms increased CD59 load and decreased transferrin load in the same transferrin-positive vesicles. This supports the hypothesis that GPI-anchored proteins are partially excluded from coated pits by steric crowding, which becomes less acute when high-affinity cargo recruitment is abolished.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 are supported by microscopy (Figures 8D-E), 3D object-based quantification (Figures 8F-G), and immunoprecipitation showing mutant incorporation (Figure 8\u2014supplement 2). The key observation that both cargoes remain in the same vesicles despite opposite effects on uptake (C56) strongly supports the steric exclusion model (C59-C60) over alternative explanations involving separate pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "a265ad46-e456-491b-a52b-0294eebf7e11",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "At least 95% of the earliest detectable endocytic vesicles arise from clathrin-coated pits, including GPI-anchored proteins. This represents the predominant pathway for endocytosis in mammalian cells, accounting for at least 95% of total protein endocytic flux, with other mechanisms not making a significant contribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 represent the main conclusions synthesized from multiple lines of evidence presented throughout the paper. The 95% figure is consistently supported across different experimental approaches (co-localization, perturbation studies, proteomics, multiple cargoes and cell types). The comprehensive nature of the evidence strongly supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "5e7eea05-031e-4f3b-94f3-1fa67221f060",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Primary endocytic vesicles involved in clathrin-independent endocytosis should not contain significant transferrin receptor. While a class of such vesicles can be detected, they account for less than 5% of total endocytosis. Therefore, clathrin-independent pathways do not make a significant contribution to total endocytic flux in cultured cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 follow logically from the quantitative data showing 92-96% of vesicles contain transferrin. The definition of clathrin-independent vesicles as lacking transferrin receptor (C65) is reasonable given transferrin receptor's well-established role as a clathrin cargo. The <5% figure is consistently supported across multiple experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "de144f51-e589-43dc-a1d1-c0d0aff9dea9",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Clathrin-independent endocytic pathways could still be functionally important when considering uptake of specific cargoes and the variety of cell types and functions in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C68 is explicitly speculative, acknowledging potential importance in contexts not examined in this study. While supported by citations to relevant literature, this represents a caveat rather than a tested hypothesis. The claim appropriately qualifies the main conclusions without undermining them.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "d46d8863-3db0-4373-a295-2b24edeed30b",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "GPI-anchored proteins are likely partially excluded from coated pits by steric crowding effects due to their lack of cytosolic domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C69 is supported by inference from the structural properties of GPI-anchored proteins (lack of cytosolic domain) and the differential effects observed with the \u03bc2 mutant (C53-C60). The cited literature (Bhagatji et al., 2009) provides additional support. While not directly demonstrated, this is a well-reasoned mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    },
+    {
+      "id": "65300007-1495-479e-8217-67f0ac56b19d",
+      "content_id": "98c94852-4631-46f6-af31-b922b39413c7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The \u03bc2(F174S/D176A) mutant used in this study was previously incorrectly described in publications due to a typographic error, though the actual mutant used was as described here. This mutant incorporates into endogenous AP2 complexes after overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C70 is supported by personal communication clarifying previous publications. C71 is supported by immunoprecipitation data (Figure 8\u2014supplement 2). While C70 addresses a nomenclature issue rather than new biology, both claims are important for proper interpretation and reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:24:21.538824Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "381aefb6-dc92-44fe-8278-ef9688d9167a",
+      "result_id": "2214e28f-fb84-42a8-a668-6a1726bc9b6a"
+    },
+    {
+      "claim_id": "e45525cd-50db-4a6a-b66a-0bb9371dda91",
+      "result_id": "2214e28f-fb84-42a8-a668-6a1726bc9b6a"
+    },
+    {
+      "claim_id": "6167a486-5163-4dc9-b348-85f5373f5200",
+      "result_id": "2214e28f-fb84-42a8-a668-6a1726bc9b6a"
+    },
+    {
+      "claim_id": "9722b1fc-ecc1-43b0-93fe-b39d7412ff4f",
+      "result_id": "2214e28f-fb84-42a8-a668-6a1726bc9b6a"
+    },
+    {
+      "claim_id": "860b5d0a-e472-48e7-857e-35df2afe86e6",
+      "result_id": "37f15b7b-f00a-4bcb-9221-0df5d1bb1218"
+    },
+    {
+      "claim_id": "fe5f7493-7ba4-4138-bbc4-726762086bea",
+      "result_id": "37f15b7b-f00a-4bcb-9221-0df5d1bb1218"
+    },
+    {
+      "claim_id": "1bd6e456-ef31-435a-9046-a028c5de6949",
+      "result_id": "94166afe-c63f-4faf-af53-c53ee9bdfad9"
+    },
+    {
+      "claim_id": "63b7e6bb-57a0-482f-ac1e-e3ced399a0b4",
+      "result_id": "94166afe-c63f-4faf-af53-c53ee9bdfad9"
+    },
+    {
+      "claim_id": "44a7a46d-e473-44a8-9818-a3464b4eb75e",
+      "result_id": "94166afe-c63f-4faf-af53-c53ee9bdfad9"
+    },
+    {
+      "claim_id": "522b3305-2c44-4d74-a27d-3bc70d526203",
+      "result_id": "94166afe-c63f-4faf-af53-c53ee9bdfad9"
+    },
+    {
+      "claim_id": "312fe2eb-f5bf-4c0b-a92a-8f83d30a3d73",
+      "result_id": "94166afe-c63f-4faf-af53-c53ee9bdfad9"
+    },
+    {
+      "claim_id": "13684a42-e0d8-4318-b42e-599d350c3c60",
+      "result_id": "94166afe-c63f-4faf-af53-c53ee9bdfad9"
+    },
+    {
+      "claim_id": "151c5084-8d2d-480f-9c39-af9b5b5156ef",
+      "result_id": "94166afe-c63f-4faf-af53-c53ee9bdfad9"
+    },
+    {
+      "claim_id": "9fa76e27-3779-403e-a078-61f4f03466e4",
+      "result_id": "098dfdb6-de79-4a44-a5e8-1de273e9f9ea"
+    },
+    {
+      "claim_id": "afb33d9b-1432-46c8-8fc1-5a6b873a7d48",
+      "result_id": "098dfdb6-de79-4a44-a5e8-1de273e9f9ea"
+    },
+    {
+      "claim_id": "ba2d1460-4c39-4e77-8663-0e14526c37e9",
+      "result_id": "f8fea5c8-f53c-439d-9d6a-b9dbcc9b3c45"
+    },
+    {
+      "claim_id": "7e742866-4a56-45da-9138-fec00b097465",
+      "result_id": "f8fea5c8-f53c-439d-9d6a-b9dbcc9b3c45"
+    },
+    {
+      "claim_id": "7120f32a-e0ed-4b63-9709-6ad16f43ff2d",
+      "result_id": "f8fea5c8-f53c-439d-9d6a-b9dbcc9b3c45"
+    },
+    {
+      "claim_id": "6353ef23-8e62-4c9d-9378-f47fd56acfa7",
+      "result_id": "f8fea5c8-f53c-439d-9d6a-b9dbcc9b3c45"
+    },
+    {
+      "claim_id": "40b8507e-f7a3-47ec-b88e-ddf601df35be",
+      "result_id": "f8fea5c8-f53c-439d-9d6a-b9dbcc9b3c45"
+    },
+    {
+      "claim_id": "ead82467-4ba6-4339-aa46-96f32cbecfc3",
+      "result_id": "98c5a42d-73a5-4c90-b4d4-ca4e7bb2866e"
+    },
+    {
+      "claim_id": "aa688d90-6bcb-4fbe-b3d7-f2890d0a4897",
+      "result_id": "98c5a42d-73a5-4c90-b4d4-ca4e7bb2866e"
+    },
+    {
+      "claim_id": "2309a49b-e1b1-43b3-8cbf-f8021be04b4c",
+      "result_id": "98c5a42d-73a5-4c90-b4d4-ca4e7bb2866e"
+    },
+    {
+      "claim_id": "24e67492-4755-40fb-9c98-8a29f1e21b65",
+      "result_id": "4c8f20ae-a3fa-495b-b622-c00e2b925121"
+    },
+    {
+      "claim_id": "9e1e7ed7-e36a-4887-810d-2a6255173a61",
+      "result_id": "4c8f20ae-a3fa-495b-b622-c00e2b925121"
+    },
+    {
+      "claim_id": "88db4ec5-5d4b-42eb-abd3-98b6bc12c385",
+      "result_id": "4c8f20ae-a3fa-495b-b622-c00e2b925121"
+    },
+    {
+      "claim_id": "bf64b4a9-63eb-484e-8039-0148eebca68f",
+      "result_id": "4c8f20ae-a3fa-495b-b622-c00e2b925121"
+    },
+    {
+      "claim_id": "92df4350-4203-4d13-bc10-ab81eb346c3e",
+      "result_id": "b865f277-8a99-4abd-9658-458bed6e0855"
+    },
+    {
+      "claim_id": "aa1ef6d2-113c-40bf-915e-2f02334053d3",
+      "result_id": "b865f277-8a99-4abd-9658-458bed6e0855"
+    },
+    {
+      "claim_id": "0b2ad2e9-91b5-46e5-961d-bae4e2ba8240",
+      "result_id": "b865f277-8a99-4abd-9658-458bed6e0855"
+    },
+    {
+      "claim_id": "111666d6-4788-4e95-ae5e-d0b38d503319",
+      "result_id": "b1a4945c-658c-4abe-b825-e32e3a549558"
+    },
+    {
+      "claim_id": "e0d90f9f-db93-4155-8d9a-edf6d0fc99ef",
+      "result_id": "b1a4945c-658c-4abe-b825-e32e3a549558"
+    },
+    {
+      "claim_id": "723fddbf-b179-483b-b32c-ed5ff7de7a80",
+      "result_id": "b1a4945c-658c-4abe-b825-e32e3a549558"
+    },
+    {
+      "claim_id": "9280ff5c-99f3-4f9d-8598-fdf6980904c1",
+      "result_id": "b1a4945c-658c-4abe-b825-e32e3a549558"
+    },
+    {
+      "claim_id": "cfe1d4e6-2bdc-43ea-9243-0cbdd3a6ef86",
+      "result_id": "6dc294c8-c0fe-4716-a176-37b77205e922"
+    },
+    {
+      "claim_id": "a414790f-c43c-43f7-ad71-65330e66bc2e",
+      "result_id": "6dc294c8-c0fe-4716-a176-37b77205e922"
+    },
+    {
+      "claim_id": "2bf82ea1-60f4-4efc-be64-f9298d4f5cc1",
+      "result_id": "6dc294c8-c0fe-4716-a176-37b77205e922"
+    },
+    {
+      "claim_id": "83a9a4bc-adad-4207-b313-844c25faab81",
+      "result_id": "6dc294c8-c0fe-4716-a176-37b77205e922"
+    },
+    {
+      "claim_id": "903f4f94-59cf-4483-851e-98e76e2b7c82",
+      "result_id": "849f85bf-dbc3-4780-9055-7f370d159265"
+    },
+    {
+      "claim_id": "d5324935-1a4d-436f-ba93-606b2e22c40c",
+      "result_id": "849f85bf-dbc3-4780-9055-7f370d159265"
+    },
+    {
+      "claim_id": "59ef7757-ab5f-46d2-802f-6fe5f4e0eb94",
+      "result_id": "849f85bf-dbc3-4780-9055-7f370d159265"
+    },
+    {
+      "claim_id": "5d5f984f-95d8-4dc8-99a6-aae4cb9b1e5b",
+      "result_id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53"
+    },
+    {
+      "claim_id": "d7e50bbc-fce8-43c5-9ef1-8611fad58fd8",
+      "result_id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53"
+    },
+    {
+      "claim_id": "de329276-4148-4642-979f-de3314f86eeb",
+      "result_id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53"
+    },
+    {
+      "claim_id": "cc978df2-f2cd-46bd-b914-5d349b609a52",
+      "result_id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53"
+    },
+    {
+      "claim_id": "0e51af83-06ce-47da-ada5-e4aeaa6d60ee",
+      "result_id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53"
+    },
+    {
+      "claim_id": "a5d78c7c-9f75-4640-8ad2-4a55eb915a09",
+      "result_id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53"
+    },
+    {
+      "claim_id": "4a4fea55-af74-4911-aeee-0efcad911a9c",
+      "result_id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53"
+    },
+    {
+      "claim_id": "5a25a2fa-3c16-4c2f-9327-855c59a7d526",
+      "result_id": "00fb2b6b-5dfc-4ffe-be2d-76d40e363d53"
+    },
+    {
+      "claim_id": "c2209893-3154-4d2b-b448-4008aa474778",
+      "result_id": "e63a4dab-5d4d-49bc-a07a-22effffba994"
+    },
+    {
+      "claim_id": "f1e00d1d-09e2-4a3c-9f9c-048232b38e03",
+      "result_id": "e63a4dab-5d4d-49bc-a07a-22effffba994"
+    },
+    {
+      "claim_id": "efa0d022-cb2b-4ed4-9d63-d115a085607c",
+      "result_id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9"
+    },
+    {
+      "claim_id": "bfdc5e2c-cd95-4600-b89d-22145e05c5fe",
+      "result_id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9"
+    },
+    {
+      "claim_id": "2e9d5353-863b-45ef-850b-78ef8ce95d32",
+      "result_id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9"
+    },
+    {
+      "claim_id": "1c5dbd84-384a-4066-a02e-09edff872a44",
+      "result_id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9"
+    },
+    {
+      "claim_id": "dc9d7f7e-a481-4273-8df7-a283a56cc28f",
+      "result_id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9"
+    },
+    {
+      "claim_id": "b2b9941a-619e-4d3f-8da4-e0e8b0f679b2",
+      "result_id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9"
+    },
+    {
+      "claim_id": "24acd096-5d41-439e-9b26-7a38410ba5fe",
+      "result_id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9"
+    },
+    {
+      "claim_id": "b73445f6-75da-4c4e-898f-d73bd52ef09b",
+      "result_id": "b5ee6ec3-f4fe-4500-8825-d53083ff2ab9"
+    },
+    {
+      "claim_id": "d4ac4bf6-6132-48c2-a591-766cdf5da563",
+      "result_id": "a265ad46-e456-491b-a52b-0294eebf7e11"
+    },
+    {
+      "claim_id": "f8e97f28-833b-491d-a352-9d8f190191b1",
+      "result_id": "a265ad46-e456-491b-a52b-0294eebf7e11"
+    },
+    {
+      "claim_id": "d32ced9d-ed2f-46e7-a26a-f0d43cbbb65e",
+      "result_id": "a265ad46-e456-491b-a52b-0294eebf7e11"
+    },
+    {
+      "claim_id": "8e7e0ef9-39f1-415a-8aae-27d50acc9c78",
+      "result_id": "a265ad46-e456-491b-a52b-0294eebf7e11"
+    },
+    {
+      "claim_id": "b1891963-18f1-4b6d-854e-5eb120eb461a",
+      "result_id": "5e7eea05-031e-4f3b-94f3-1fa67221f060"
+    },
+    {
+      "claim_id": "ad28863d-f8ea-4244-b720-2279c14b13e7",
+      "result_id": "5e7eea05-031e-4f3b-94f3-1fa67221f060"
+    },
+    {
+      "claim_id": "e5c54783-c67c-4f7b-9bc7-fbb88b98bc11",
+      "result_id": "5e7eea05-031e-4f3b-94f3-1fa67221f060"
+    },
+    {
+      "claim_id": "68226ab8-846e-4726-b980-48dd79ef27ca",
+      "result_id": "de144f51-e589-43dc-a1d1-c0d0aff9dea9"
+    },
+    {
+      "claim_id": "bcfd48f1-1530-4c4b-b8cc-e0183e475c1b",
+      "result_id": "d46d8863-3db0-4373-a295-2b24edeed30b"
+    },
+    {
+      "claim_id": "fc4d10be-af15-4a81-8913-8ac13edebe10",
+      "result_id": "65300007-1495-479e-8217-67f0ac56b19d"
+    },
+    {
+      "claim_id": "64231bc9-6f88-48dc-a5dc-be52ec5f7c3c",
+      "result_id": "65300007-1495-479e-8217-67f0ac56b19d"
+    }
+  ],
+  "comparisons": []
+}

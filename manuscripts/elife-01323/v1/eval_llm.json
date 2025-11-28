@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C29",
+      "C31",
+      "C32"
+    ],
+    "result": "Most mammalian genomes contain two copies of miR-1 (miR-1-1 and miR-1-2) that produce identical mature miR-1 sequences, suggesting evolutionary pressure on both alleles. In mice, deletion of miR-1-2 causes incompletely penetrant lethality and subtle cardiac defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C29, C31, and C32 are well-supported by established knowledge, citations to prior literature, and data presented in Figure 1\u2014figure supplements 1 and 2. The genomic organization and sequence conservation are documented, and the miR-1-2 knockout phenotype is cited from previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "Deletion of miR-1-1 results in a phenotype similar to miR-1-2 mutants, including strain-dependent partial lethality, reduced cardiac miR-1 levels (~40%), ventricular dilation, fibrosis, and conduction abnormalities including prolonged QRS and QT intervals, broader P waves, and intermittent atrial arrhythmias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, C48-C59, C61-C62 are supported by genotyping data (Figure 1A), qPCR (Figure 1B), echocardiography (Figure 1C), histology (Figure 1D), and EKG data (Figure 1E and supplements). The phenotypic similarity between miR-1-1 and miR-1-2 knockouts is well-documented with appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Compound miR-1 knockout mice (miR-1-1\u2212/\u2212:miR-1-2\u2212/\u2212) die uniformly before weaning (by P10) due to severe cardiac dysfunction, including chamber dilation, impaired fractional shortening, poor systolic function, ventricular thrombi, and conduction abnormalities (prolonged QRS, PR, and QT intervals, and frequent sinus pauses).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39, C74-C89 are strongly supported by survival data (Figure 2A-B), morphological analysis (Figure 2C), echocardiography (Figure 2D-E), and EKG data (Figure 2F and supplements). The uniform lethality and severe cardiac phenotype are well-documented with appropriate sample sizes and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "miR-1 is not detectable in compound-null hearts, and miR-133a expression is decreased with age-dependent worsening. Reduced RNA polymerase II occupancy at miR-1/miR-133a promoters suggests a feedback mechanism whereby miR-1 maintains appropriate expression of these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by qPCR data (Figure 2\u2014figure supplement 9) and ChIP data (Figure 2\u2014figure supplement 10). The feedback mechanism is a reasonable inference from the ChIP data showing reduced Pol II occupancy, though the exact mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "miR-1 double-knockout cardiomyocytes show extensive sarcomeric disruption at P0 (before ventricular dilation), abnormal mitochondrial morphology (decreased size and cristae complexity), and dose-dependent sarcomeric disorganization. Reintroduction of miR-1 partially rescues sarcomeric organization in cultured cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are supported by TEM data (Figure 3A and supplements 1-2), immunofluorescence quantification (Figure 3B-C), and rescue experiments (Figure 3D). The dose-dependent effect and partial rescue demonstrate causality, though the rescue is incomplete, suggesting additional factors may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "RNA-seq analysis of E18 miR-1 null hearts reveals enrichment of genes with miR-1/206 seed complementarity among upregulated genes, but not miR-133a targets. Downregulated genes include metabolic and mitochondrial pathways, while upregulated genes include actin cytoskeletal regulators. MLCK (Mylk) is identified as a highly upregulated predicted miR-1 target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C113 are supported by RNA-seq data, bioinformatics analysis (GREAT interface, GO-Elite), and target prediction algorithms (Figure 4 and supplements). The analysis appropriately identifies pathway enrichment and potential direct targets, though validation of individual targets requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The Mylk locus encodes four isoforms including Telokin, a 17-kD smooth muscle-specific isoform lacking kinase activity. MLCK regulates the cytoskeleton by phosphorylating MLC2, which increases contractile force in cardiac muscle. The 3\u2032 UTR of Mlck/Telokin is a direct miR-1 target validated by luciferase assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C124 combine established knowledge about MLCK/Telokin biology (supported by citations) with new experimental validation of direct miR-1 targeting (Figure 5B). The luciferase assay with site deletion provides strong evidence for direct targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "Telokin protein is not detectable in wild-type hearts but is highly expressed in miR-1 double-knockout hearts, as confirmed by western blot and qPCR. This misexpression is specific to miR-1 loss, as Telokin is not upregulated in miR-133a double-knockout hearts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129, C131-C132 are supported by western blot and qPCR data (Figure 5C and Figure 5\u2014figure supplement 1). The comparison with miR-133a knockouts provides important specificity controls, strengthening the conclusion that Telokin upregulation is miR-1-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Telokin inhibits MLCK and promotes MLC phosphatase activity in smooth muscle. MLC phosphorylation is dramatically decreased in miR-1 double-knockout hearts, likely contributing to cardiac dysfunction. The Telokin promoter is aberrantly active in miR-1 knockout hearts, as shown by increased Pol II occupancy. miR-1 normally represses Telokin through both direct 3\u2032 UTR targeting and transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 are supported by established knowledge (citations), western blot data (Figure 5E), and ChIP data (Figure 5F). The dual mechanism of regulation (post-transcriptional and transcriptional) is well-documented, though the relative contributions of each mechanism are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Genes upregulated in miR-1 knockout hearts are enriched for CArG boxes (SRF binding motifs). SRF is a critical regulator of cardiac and smooth muscle transcriptomes and is an upstream regulator of miR-1/133a. However, SRF expression is not dysregulated in miR-1 knockouts, suggesting that increased SRF expression does not account for upregulation of SRF target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 are supported by bioinformatics analysis (GREAT interface, Figure 6A), qPCR, and western blot data (Figure 6B). The finding that SRF levels are unchanged despite upregulation of SRF target genes is important for ruling out a simple mechanism and points to cofactor involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "MYOCD is a tissue-specific SRF cofactor necessary for smooth muscle and cardiac differentiation. Many dysregulated SRF target genes in miR-1 knockouts are known MYOCD/SRF targets, while MYOCD-independent SRF targets (Fos, Egr1) are not upregulated. Other SRF cofactors (NKX2-5, MRTF-A, BRG1, GATA4, GATA6) are unchanged, suggesting specific upregulation of MYOCD/SRF-dependent gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 are supported by established knowledge (citations) and qPCR/western blot data (Figure 6C and Figure 6\u2014figure supplement 2). The selective upregulation of MYOCD-dependent targets provides strong evidence for MYOCD involvement, though direct measurement of MYOCD activity would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Total Myocd expression is increased ~2-fold in miR-1 double-knockout hearts. miR-1 directly targets the Myocd 3\u2032 UTR, as validated by luciferase assay. The Telokin promoter is more responsive to MYOCD than the full-length Mlck promoter, predicting preferential upregulation of Telokin with increased MYOCD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C157 are supported by qPCR data (Figure 7A), luciferase assay (Figure 7B), and citations to prior literature. The direct targeting of Myocd by miR-1 is well-validated, and the differential promoter responsiveness provides a mechanistic explanation for Telokin-specific upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C168"
+    ],
+    "result": "There are two Myocd isoforms: full-length cardiac (cMYOCD) and truncated smooth muscle (smMYOCD), produced by alternative splicing. In miR-1 knockout hearts, smMyocd is upregulated 5-fold while cMyocd is upregulated 1.8-fold. smMYOCD is twice as effective as cMYOCD at activating the Telokin promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C166, C168 are supported by established knowledge (citations), qPCR data (Figure 7A), and luciferase assay (Figure 7C). The preferential upregulation of smMyocd and its greater activity on the Telokin promoter provide a mechanistic explanation for Telokin upregulation, though the mechanism of isoform-specific regulation remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C214"
+    ],
+    "result": "Many MYOCD-dependent genes upregulated in miR-1 knockouts are smooth muscle genes. Smooth muscle gene upregulation also occurs in miR-133a knockouts due to SRF upregulation, but Myocd is not upregulated in miR-133a knockouts. This suggests miR-1 and miR-133a cooperate to repress smooth muscle gene expression by independently regulating MYOCD and SRF, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173, C214 are supported by gene expression data (Figure 6\u2014figure supplement 1, Figure 5\u2014figure supplement 1) and citations to prior work. The complementary regulation by miR-1 and miR-133a is a well-supported model, though the relative contributions and potential interactions between these pathways require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C188",
+      "C189"
+    ],
+    "result": "The uniform lethality of miR-1 double-knockout mice with dilated cardiomyopathy indicates miR-1 is required for normal cardiac contractility. Sarcomere disruption underlies impaired cardiac function, and reintroduction of miR-1 partially rescues this phenotype. Aberrant Telokin upregulation and decreased MLC phosphorylation likely contribute to sarcomeric contractility defects. miR-1 regulates Telokin through direct 3\u2032 UTR targeting and by repressing its transcriptional regulator, Myocd, particularly the smMyocd isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C182, C188-C189 represent the major conclusions of the study, supported by the collective evidence from survival, cardiac function, sarcomere organization, rescue experiments, and molecular mechanism studies. The partial rescue demonstrates causality, though incomplete rescue suggests additional factors contribute to the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Double-heterozygous mice (miR-1-1+/\u2212:miR-1-2+/\u2212) show no lethality at weaning. Microarray analysis identified 201 dysregulated genes in single knockouts or double-heterozygotes, with 24 genes coordinately dysregulated in all three genotypes. Most mice with a single intact miR-1 allele are viable and fertile, though mice lacking both copies of miR-1-2 are under-represented, indicating some difference in compensatory ability between the two loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 are supported by genotyping data (Figure 2\u2014figure supplements 1 and 3) and microarray analysis (Figure 2\u2014figure supplement 2). The data suggest functional differences between the loci, though the molecular basis for these differences is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Genes related to the actin cytoskeleton are highly responsive to miR-1 expression changes. MLC phosphorylation is critical for sarcomere assembly and regulating contractile force in the heart. Phosphorylation of MLC2 results in conformational changes that increase cross-bridge formation probability. MLC2 mutations are associated with human myopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C187 combine current study findings with established knowledge from cited literature. The importance of MLC phosphorylation for cardiac function is well-established, providing context for the observed phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Telokin expression in smooth muscle maintains cells in a less contractile state. The heart employs miR-1 to ensure Telokin absence through both transcriptional and post-transcriptional mechanisms. Ectopic Telokin expression has been reported in a doxorubicin-induced rat cardiomyopathy model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C192 are supported by established knowledge (citations) and the current study's findings (Figure 8A). The dual regulatory mechanism is well-documented, though the precise contribution of Telokin to cardiac pathology in other disease models remains incompletely understood.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "miR-1 likely plays a more subtle role in skeletal muscle. Electron microscopy of P0 miR-1-null skeletal muscle showed ordered sarcomeric structures and neonatal mice were mobile. The skeletal muscle-specific miR-206 may compensate for miR-1 loss in this tissue. A skeletal muscle-specific compound deletion of miR-1-1, miR-1-2, and miR-206 would be required to fully understand the role of the miR-1 family in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C193-C197 are speculative and based on limited observations. While the data suggest skeletal muscle is less affected than cardiac muscle, the early lethality prevents thorough assessment of skeletal muscle phenotypes. The proposed compensation by miR-206 is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "The marked downregulation of miR-133a in miR-1 knockouts is a critical consideration for phenotype interpretation. Both impaired transcriptional read-through and secondary regulatory feedback appear to contribute to miR-133a downregulation. miR-1 is not required for initial cardiomyocyte differentiation in vivo, but its loss may impair further differentiation/maturation. The loosely organized sarcomeres, abnormal mitochondria, and upregulation of fetal cardiac genes support a paradigm of impaired cardiomyocyte maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C198-C208 acknowledge important caveats and propose alternative interpretations. The contribution of miR-133a downregulation to the observed phenotypes is difficult to disentangle from direct miR-1 effects. The maturation defect hypothesis is plausible but speculative, requiring additional experiments to test directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "The power of miRNAs is amplified by regulating multiple nodes within genetic networks. SRF is a direct miR-133a target upregulated in miR-133a knockouts, but SRF expression is unaffected in miR-1 knockouts despite partial miR-133a downregulation. Some smooth muscle genes are upregulated in both miR-133a and miR-1 knockouts, while others (Telokin, cMyocd, smMyocd) are uniquely upregulated in miR-1 knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C213 are supported by established knowledge and comparative gene expression data. The differential gene expression patterns between miR-1 and miR-133a knockouts help distinguish direct effects from indirect consequences of miR-133a downregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "The Telokin promoter is preferentially responsive to smMYOCD. cMyocd and smMyocd are thought to share a common 3\u2032 UTR, making direct targeting by miR-1 unlikely to explain the isoform switch. The splice factors regulating exon 2a inclusion/exclusion are unknown. miR-1 may regulate Myocd splicing by repressing a splice factor that mediates exon 2a inclusion in smooth muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C215-C220 are supported by luciferase data (Figure 7C) but the mechanism of isoform-specific regulation remains speculative. The assumption that both isoforms share a common 3\u2032 UTR needs experimental validation. The proposed splice factor mechanism is plausible but unproven and requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

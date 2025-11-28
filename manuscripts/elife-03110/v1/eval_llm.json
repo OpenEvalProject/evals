@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "AID induces homologous recombination of repeats (RR) leading to frequent deletions between direct repeats in both DT40 and CH12 cells. This was demonstrated using dual fluorescence reporter constructs where RR events were detected by changes in fluorescence patterns. The frequency of RR was comparable to somatic hypermutation in DT40 and to class switch recombination in CH12 cells. Sequence analysis showed precise deletions with no non-templated nucleotide changes, indicating error-free recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36, C38-C57, C85-C89 collectively demonstrate AID-induced RR through multiple lines of evidence: FACS analysis showing distinct fluorescent populations (C38, C40, C43, C45), blasticidin sensitivity assays confirming deletion of intervening sequences (C49, C50), PCR analysis showing expected deletion products (C54, C55), and sequence analysis of recombinants showing precise deletions (C56, C57, C89). The experimental design with dual fluorescence reporters provides a robust readout, and the results are consistent across multiple constructs and cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C92"
+    ],
+    "result": "Repeat recombination occurs at high frequencies even when homologous sequences are hundreds of bases away from AID-mediated cytidine deamination sites, suggesting DNA end resection before strand invasion. Analysis of homeologous repeat recombinants showed variable crossover positions, with evidence for preferential crossover near boundaries of sequence homology and heteroduplex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C58, C61-C66, C92 are supported by sequence analysis of recombinants from the uHS/dHS construct showing variable crossover positions (C61), preferential crossover at homology boundaries (C65), and evidence for heteroduplex formation through mismatch repair patterns (C66). The observation that RSV promoter repeats (upstream of transcription start sites) recombine at high frequency (C3, C92) supports the DNA resection model. The reduced frequency with homeologous vs. homologous sequences (C58) is consistent with known effects of sequence heterology on recombination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C65",
+      "C66"
+    ],
+    "result": "Analysis of recombinants between homeologous repeats provided evidence for heteroduplex formation and preferential migration of Holliday junctions to the boundaries of sequence homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C65, C66 are supported by sequence analysis showing that many recombinants maintained sequence identity up to the last polymorphic nucleotide at homology boundaries (C65), and that some sequences contained patches of donor-specific nucleotides upstream of recipient-specific nucleotides (C66), consistent with heteroduplex formation and mismatch repair. This provides direct molecular evidence for the proposed recombination intermediates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Gene conversion events occurred at 3-10 times lower frequency than RR deletions. R5 cells arose from dHS-templated gene conversion that erased the first ATG codon in uHS, while R6 cells arose from uHS-templated gene conversion that introduced the second ATG codon into dHS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C70, C71, C73-C75 are supported by sequence analysis of R5 and R6 subclones showing unidirectional gene conversion events (C68, C71) and quantitative FACS analysis showing lower frequencies compared to RR events (C75). The interpretation that these are unidirectional gene conversions (C70, C73, C74) is supported by the absence of reciprocal exchanges and the observed fluorescence phenotypes. This demonstrates that AID can induce both RR and gene conversion, with RR being more frequent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Both DT40 and CH12 cells carrying a construct with duplicated RSV promoters and switch regions underwent both RSV repeat recombination and switch region recombination. CH12 cells showed 5-fold higher absolute and 30-fold higher relative frequencies of switch recombination compared to DT40 cells when induced with factors that increase AID expression and CSR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 are supported by FACS analysis showing distinct R1 (CSR) and R2 (RR) populations (C76, C77), PCR analysis showing expected products for each recombination type (C80, C81), and sequence analysis confirming both switch region junctions with microhomologies (C82) and precise RSV repeat deletions (C83). The quantitative comparison between DT40 and CH12 cells (C78, C79, C84) is based on FACS data and demonstrates that the relative efficiency of CSR vs. RR differs between cell types, consistent with known differences in their recombination machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose two mechanistic models for AID-induced RR: Model 1 involves nuclease-mediated resection of a nicked strand to create a single-strand gap, while Model 2 involves replication fork collapse at the nick to create a double-strand break. Both models invoke substantial DNA resection to expose single-stranded DNA distant from the nicks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C93 present speculative mechanistic models (C90, C91) that are consistent with the observed data (C92) and with prior observations of RPA/RAD51 accumulation at AID-damaged sites (C93). However, these are proposed models rather than experimentally tested mechanisms. The manuscript does not provide direct evidence distinguishing between the two models or demonstrating the proposed intermediates. While the models are reasonable interpretations of the data, they remain speculative and would require additional experiments (e.g., analysis of inverted repeats, studies in recombination factor mutants) to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "DIVACs (Diversification Activators) strongly stimulated the frequency of RR, but RR-mediated deletions were also detectable in constructs lacking DIVACs. This indicates that AID and potentially other cytidine deaminases represent a general threat to transcribed regions of the genome through multiple mechanisms including RR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by quantitative FACS data showing 10-30 fold stimulation of RR by DIVACs (C38, C45, C99) and by the detection of RR events in control constructs lacking DIVACs (C101, Figure 2B,C). The conclusion that AID poses a general threat to transcribed regions (C102) is a reasonable inference from these observations, though the magnitude of the threat in the absence of DIVACs is lower. The data clearly establish that DIVACs enhance but are not absolutely required for RR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C103"
+    ],
+    "result": "The authors speculate that RR could be responsible for V gene replacements not associated with cryptic V(D)J signal sequences, that gene conversion and RR might share common intermediates, and that even low levels of RR could contribute to genome instability and B cell transformation given the repetitive nature of mammalian genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C96, C103 are speculative statements about potential biological implications and relationships between RR and other processes. While these are reasonable hypotheses based on the demonstrated RR activity (C94, C95) and known properties of AID-expressing cells (C96, C103), they are not directly tested in this manuscript. These represent interesting directions for future research but lack experimental support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C97",
+      "C98"
+    ],
+    "result": "The manuscript provides extensive background on AID function, the DT40 and CH12 cell line models, and prior knowledge about AID-mediated processes including somatic hypermutation, gene conversion, and class switch recombination. This establishes the context for the novel finding that AID can mediate more complex rearrangements of sequence repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C35, C97-C98 are background claims supported by appropriate citations to prior literature. These establish the scientific context and justify the experimental approach. The claims accurately represent established knowledge about AID function (C1, C6-C22), the cell line models used (C23-C33), and the gap in knowledge that this study addresses (C34, C35). These are appropriately cited and provide necessary context for interpreting the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Transfection of GFP-based hypermutation reporter constructs into DT40 suggested that multi-copy integrations underwent frequent copy number contraction during cell clone expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 is based on unpublished observations (\"data not shown\") that motivated the development of the dual fluorescence reporters. While this observation provided the impetus for the study, the lack of presented data makes it impossible to evaluate the strength of this claim. This represents preliminary observations rather than a rigorously documented result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C67"
+    ],
+    "result": "PCR and blasticidin sensitivity analysis of sorted cell populations from the uHS/dHS construct confirmed that R1 and R2 cells had undergone uHS/dHS recombination, R4 cells had undergone tdT repeat recombination, while R3, R5, and R6 cells did not carry detectable rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C67 are supported by blasticidin sensitivity assays showing selective killing of R1 and R2 subclones (C59) and PCR analysis showing expected band patterns for each cell population (C60, Figure 6C). The sequence analysis of R4 cells confirming tdT repeat deletion (C67) provides additional molecular confirmation. These results validate the interpretation of the fluorescence phenotypes and demonstrate the specificity of the different recombination events.",
+    "result_type": "MINOR"
+  }
+]

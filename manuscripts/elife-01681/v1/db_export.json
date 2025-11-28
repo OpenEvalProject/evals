@@ -1,0 +1,1838 @@
+{
+  "submission": {
+    "id": "b858292c-d21d-4b69-b667-dc798b17cb90",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:02:35.957969Z",
+    "updated_at": "2025-11-28T21:02:35.957969Z"
+  },
+  "content": [
+    {
+      "id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "submission_id": "b858292c-d21d-4b69-b667-dc798b17cb90",
+      "content_type": "manuscript",
+      "content_text": "# Designed \u03b1-sheet peptides inhibit amyloid formation by targeting toxic oligomers\n\n## Authors\n\n- Gene Hopping<sup>1</sup>\n- Jackson Kellock<sup>1</sup>\n- Ravi Pratap Barnwal<sup>2</sup>\n- Peter Law<sup>1</sup>\n- James Bryers<sup>1</sup>\n- Gabriele Varani<sup>2</sup>\n- Byron Caughey<sup>3</sup>\n- Valerie Daggett<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Bioengineering University of Washington Seattle United States\n2. Department of Chemistry University of Washington Seattle United States\n3. Laboratory of Persistent Viral Diseases Rocky Mountain Laboratories, National Institute of Allergy and Infectious Diseases, National Institutes of Health Hamilton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrevious studies suggest that the toxic soluble-oligomeric form of different amyloid proteins share a common backbone conformation, but the amorphous nature of this oligomer prevents its structural characterization by experiment. Based on molecular dynamics simulations we proposed that toxic intermediates of different amyloid proteins adopt a common, nonstandard secondary structure, called \u03b1-sheet. Here we report the experimental characterization of peptides designed to be complementary to the \u03b1-sheet conformation observed in the simulations. We demonstrate inhibition of aggregation in two different amyloid systems, \u03b2-amyloid peptide (A\u03b2) and transthyretin, by these designed \u03b1-sheet peptides. When immobilized the \u03b1-sheet designs preferentially bind species from solutions enriched in the toxic conformer compared with non-aggregated, nontoxic species or mature fibrils. The designs display characteristic spectroscopic signatures distinguishing them from conventional secondary structures, supporting \u03b1-sheet as a structure involved in the toxic oligomer stage of amyloid formation and paving the way for novel therapeutics and diagnostics.\n\n## Introduction\n\nThere are now over 40 different human amyloid diseases, each linked to the buildup of a specific precursor protein or peptide (Chiti and Dobson, 2009). These diseases involve the conversion of a protein from its soluble native state into insoluble amyloid fibrils, or, in the case of peptides, the conversion from a soluble, loosely structured form to fibrils. Given that many different sequences can form amyloid fibrils of similar architecture, there may be some common structural features of the prefibrillar amyloidogenic intermediates. X-ray fiber diffraction indicates that the insoluble, mature amyloid fibrils are composed of cross \u03b2-sheet structure (Jahn et al., 2010; Eisenberg and Jucker, 2012). Therefore, it is widely held that the formation of amyloid fibrils involves a transition to \u03b2-sheet structure in the amyloidogenic intermediate. However, the mechanism of self-assembly at the atomic level remains elusive. Another feature of these diseases is that soluble oligomeric intermediates, not the insoluble well-ordered fibrils, are preferentially responsible for cellular toxicity (Bucciantini et al., 2002; Hardy and Selkoe, 2002; Tomic et al., 2009; Xue et al., 2009). Similarly, the soluble oligomeric forms of the prion protein are the most infectious per unit protein (Silveira et al., 2005). As such, fibrils may be protective, at least up to a point, as their breakdown to smaller aggregates yields greater toxicity and infectivity. The discovery of a compound that promotes inclusion formation while reducing toxicity and cellular pathology supports this hypothesis (Bodner et al., 2006). In a similar vein, Jiang et al. (2013) demonstrated that binding the fibrillar state of A\u03b2 could reduce toxicity presumably by shifting the equilibrium from oligomer to fibril.\n\nResearch on the soluble oligomers has become critically important since there is a consensus that the soluble oligomer species is more toxic than mature fibrils (Chiti and Dobson, 2006; Tomic et al., 2009; Xue et al., 2009) and, while nontoxic, the fibrils are a reservoir for toxic oligomeric species (Shahnawaz and Soto, 2012). In fact, structural similarities between soluble oligomers from a range of unrelated proteins/peptides has been demonstrated by generation of an antibody that recognizes a common backbone structure (Kayed et al., 2003; Tomic et al., 2009). Glabe and co-workers developed an antibody (denoted A11) that is specific for soluble oligomeric intermediates derived from a variety of peptides and proteins, including A\u03b2(1-42), \u03b1-synuclein, islet amyloid polypeptide, polyglutamine, lysozyme, human insulin, and a prion peptide (Glabe and Kayed, 2006). The antibody does not, however, bind the corresponding insoluble fibrils (cross-\u03b2 structure) or the natively folded precursors (various structures). Based on the specificity of the antibody for soluble oligomers with various sequences, it was proposed that the antibody might recognize a unique conformation of the backbone. This antibody inhibits toxicity associated with the intermediates, implying a common mechanism of toxicity and offering hope for a broad-based therapeutic agent.\n\nSome years ago we \u2018discovered\u2019 a novel secondary structure, which we call \u2018\u03b1-sheet\u2019, that is populated during molecular dynamics (MD) simulations of a range of amyloid proteins (and peptides) with different structures and sequences under amyloidogenic conditions (Figure 1A) (Armen et al., 2004a, 2004b, 2005; Steward et al., 2008). The position where the \u03b1-sheet forms along the sequence coincides with the most amyloidogenic regions of the proteins, as determined experimentally (Armen et al., 2004a). Consequently, we proposed that \u03b1-sheet is a common structure involved in the early stages of protein aggregation (Armen et al., 2004a; Daggett, 2006). In the course of characterizing the structure observed by MD, we learned that \u03b1-sheet was first predicted by Pauling and Corey and called \u2018polar pleated sheet\u2019. However, they ruled the structure energetically unfavorable and concluded, correctly, that the \u03b2-sheet structure would be favored in normal proteins (Pauling and Corey, 1951). An \u03b1-sheet is similar to a \u03b2-sheet, but instead of alternating main chain NH and C = O groups along the strands, an \u03b1-sheet has the NH groups aligned on one side and the carbonyls on the other. As such, the \u03b1-sheet has a molecular dipole and a very different hydrogen-bonding pattern across the sheet compared to a \u03b2-sheet. Interestingly, the main chain (\u03a6, \u03a8) dihedral angles of the \u03b1-sheet alternate between the \u03b1L and \u03b1R conformations (Daggett, 2006) (Figure 1A). Although locally helical, the alternating dihedral angles form an extended chain resulting in the carbonyl groups and amide groups aligning in a plane. Such an arrangement creates uniform electrostatic faces to aid in the addition of further strands (Armen et al., 2004b). Once a sheet is formed, a simple peptide plane flip could convert the \u03b1-sheet into a \u03b2-sheet and ultimately a mature fibril (Daggett, 2006). \u03b1-sheet structure has been observed in a peptide crystal structure (Di Blasio et al., 1994), and short stretches of \u03b1-strand are present in various proteins in the Protein Data Bank (Daggett, 2006), although extensive \u03b1-sheet formation has not been observed in native proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig1-v1.jpg)\n\n**Figure 1.:** (A) \u03b2- to \u03b1-sheet conversion of transthyretin (as reported by Armen et al., 2004a, 2004b). The protein backbone is shown in cartoon representation with the region of interest (residues 105\u2013121) shown as sticks. At 0 ns (top left) the residues of interest form a \u03b2-hairpin. The dihedral angles for 1 ns of dynamics of these residues are found mainly in the \u03b2-region of the Ramachandran plot (top left quadrant, lower left panel; increasing frequency of occupancy is shown from blue through red) with several turn residues in the \u03b1R conformation (bottom left quadrant). After 30 ns (top right) the \u03b2-sheet has converted to an \u03b1-sheet. The dihedral angles for 1 ns of dynamics of the same residues reveal that the majority of residues have moved from the \u03b2-region to the \u03b1L (top right quadrant) or \u03b1R region of the Ramachandran plot (lower right panel). (B) Intrinsic residue propensities for L- and D-alanine were calculated from 100 ns of MD simulations of a GGXGG peptide system (Beck et al., 2008) (D-alanine was simulated using the same protocol). The backbone structure (upper panels) as well as the Ramachandran plot of the conformation of the alanine residue during the entire simulation, demonstrate the conformational preference for L-alanine to adopt the \u03b1R conformation and for D-alanine to favor the \u03b1L conformation (lower panels). (C) Peptide designs reported in this study. All designs are single turn hairpins, with the exception of \u03b13, which contains a cyclic peptide backbone resulting in two turns. Hairpin peptides are N- and C-terminally acetylated and amidated, respectively, except for \u03b2, which had a free N-terminus. D-amino acids are denoted by lower case and are underlined, and turn residues are colored red in the linear peptides and red and blue in the cyclic design.\n\nTo investigate the role of \u03b1-sheet in amyloid formation, we computationally designed numerous small, stable \u03b1-hairpin peptides. We reasoned that if \u03b1-sheet is the novel backbone structure in toxic oligomers, then \u03b1\u2212sheet peptides designed to be complementary to the structure in the oligomer should bind to the toxic oligomer and inhibit amyloidosis. Our designs began with a backbone template in an ideal \u03b1-sheet conformation. We then investigated combinations of residues with high propensities to populate desired regions of conformational space using our Structural Library of Intrinsic Residue Propensities (SLIRP), which is part of our Dynameomics project (Beck et al., 2008; van der Kamp et al., 2010). Owing to the expected transient nature of the \u03b1L conformation, we stabilized the structure using D-amino acids, which essentially have inverted conformational propensities compared with their normal L-counterparts (Figure 1B). Peptides containing alternating D- and L-amino acids have previously been shown to form extended structures (De Santis et al., 1974; Heitz et al., 1981), and they populate similar conformational space as our MD-identified \u03b1-sheet sequences consisting solely of L-amino acids. MD simulations (Beck et al., 2000\u20132014) were performed to assess the stability of the de novo designed amino acid sequences. Sequences designed to adopt \u03b2-sheet and random coil conformations were included in our experiments as controls.\n\nSeveral of the most promising peptide designs were selected for experimental characterization in two different amyloid systems: transthyretin (TTR) and beta amyloid 1-42 [A\u03b2(1\u221242) or A\u03b2 for short]. Both are associated with amyloid diseases, systemic in the case of TTR and Alzheimer's Disease in the case of A\u03b2, but they have completely different sequences and structures. A\u03b2 is a largely unstructured peptide fragment in aqueous solution, while TTR is a tetramer composed of immunoglobulin-like \u03b2-sandwich domains. Both systems have well characterized aggregation profiles and aggregate under mild, non-denaturing conditions (Quintas et al., 1997; Foss et al., 2005; Hopping et al., 2013). Here we focus on five peptide designs (\u03b2, rc, \u03b11, \u03b12, \u03b13) (Figure 1C). \u03b2 is the designed Trpzip 3 \u03b2\u2212hairpin, but with Trp to Leu substitutions to improve spectroscopic properties (Cochran et al., 2001a,b). The \u03b2-design was included as a negative control for TTR and a positive control for A\u03b2. \u03b2-hairpins are known inhibitors of A\u03b2 aggregation (Yamin et al., 2009; Cheng et al., 2012). The rc peptide was designed to be an unstructured random coil to provide a negative control; it is a randomly scrambled version of the \u03b2-sheet sequence, \u03b2. The remaining three peptides were designed to adopt \u03b1-sheet structure. \u03b11 and \u03b12 are linear hairpins containing a sheet of alternating D- and L-amino acids. \u03b11 was designed to have high \u03b1-sheet propensity. \u03b12 is a derivative of \u03b11 with modifications aimed to improve stability and the introduction of a Cys for coupling experiments. \u03b13 consists of a sheet of alternating D- and L-amino acids and two turns, creating a cyclic amide backbone. Despite our best efforts we were unable to design a soluble, random coil control based on the \u03b1-sheet peptides, i.e. the same composition and length. Shuffling of the amino acid sequences resulted in insoluble peptides that were unusable in the solution-phase assays, so we opted to use smaller but well-defined controls.\n\n## Results and discussion\n\n### Inhibitory properties of designs in two different amyloid systems\n\nFirst we tested our peptides for anti-amyloidogenic activity in a fibrillization assay using transthyretin (TTR). Four of the five designed peptides (\u03b12 was sparingly soluble and therefore not tested in any solution-phase experiments) were co-incubated with TTR (in excess 20:1, expressed relative to TTR monomer) at pH 4.5 to trigger dissociation of the native tetramer followed by aggregation (Quintas et al., 1997; Foss et al., 2005). Note that a 10:1 ratio (and higher) is common in these aggregation inhibition assays (Frydman-Marom et al., 2011; Hochdorffer et al., 2011). The aggregation was monitored via binding of Congo red (Figure 2A). The percentage inhibition of aggregation was determined at 48 hr, after the aggregation stabilized. At these concentrations, \u03b11 and \u03b13 resulted in 72 and 56% inhibition, respectively, relative to TTR alone at low pH. In contrast, the rc and \u03b2 controls resulted in little to no inhibition. The neutral pH tetrameric TTR control changed little over time. Moreover, the designs in the absence of TTR did not bind Congo red and were indistinguishable from the buffer-only controls (Figure 2\u2014figure supplement 1). To ensure that the observed increase in Congo red binding reflected the formation of amyloid fibrils, we performed atomic force microscopy (AFM) (Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig2-v1.jpg)\n\n**Figure 2.:** (A) Peptide designs (800 \u03bcM) were co-incubated at pH 4.5 with 40 \u03bc\u039c TTR (monomer) at 37\u00b0C and aggregation was monitored by Congo red binding. Error bars indicate the standard deviation. (B) Toxicity of the TTR solution after 24 hr pre-incubation at pH 4.5 against the human neuroblastoma cell line SH-SY5Y in a MTT metabolic viability assay. (C) ThT monitoring of 10 \u03bcM A\u03b2 aggregation and inhibitory effects of 100 \u03bcM peptides present from the beginning of the aggregation at 37\u00b0C. Inhibition values were taken at 12 hr due the decay in ThT fluorescence, particularly for uninhibited samples, which has been described elsewhere (Yamin et al., 2009). (D) A\u03b2 toxicity after 6 hr of aggregation, as probed using the MTT assay and the SH-SY5Y cell line. All data represent average \u00b1 SD (* indicates p<0.05, determined using Student's t test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Congo red binding of peptides incubated under identical aggregation conditions reveals that contributions to dye binding do not come from the designs.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Congo red binds multiple soluble species in addition to fibrils, so presence of fibrils was confirmed visually. Application of a TTR solution aggregated for 72 hr revealed the presence of small aggregates and fibrils. Fibrils are indicated with an arrow. Scale = 200 nm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** ThT fluorescence of peptides incubated under identical aggregation conditions indicate that the peptides do not contribute to the observed increase in fluorescence.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Application of an aggregated A\u03b2 solution reveals the presences of aggregates and fibrils. Fibrils are indicated with arrows. Scale = 200 nm.\n\nSince our aim is to target the toxic oligomer, we determined when the toxic oligomeric species was present during the course of aggregation. The toxicity of TTR was assessed by monitoring cell viability using the MTT assay after treating SH-SY5Y neuroblastoma cells with TTR that had been allowed to aggregate for different periods of time at pH 4.5. Toxicity was apparent around 24 hr, and the results from this time point are shown in Figure 2B. Under these conditions, the viability of the treated cells was reduced by approximately 20%, indicating that TTR was aggregating via the toxic pathway. Addition of the controls, rc or \u03b2, to a 24-hr pre-incubated TTR sample had little to no effect on further aggregation, as detected with the Congo red assay. However, when \u03b11 and \u03b13 were mixed with 24-hr pre-incubated, toxic TTR, they inhibited 81% and 77%, respectively, of the remaining TTR aggregation observed in the absence of inhibitor.\n\nSimilarly, we co-incubated our designs (in 10:1 excess) with A\u03b2 at pH 7.4 and followed fibril formation with thioflavin T (ThT) fluorescence changes upon binding (Figure 2C). The presence of fibrils was confirmed by AFM spectroscopy (Figure 2\u2014figure supplement 3). As observed for TTR, both \u03b11 and \u03b13 inhibited the levels of fibril formed. Again \u03b11 was more efficient, inhibiting approximately 87% of fibril formation compared with 66% for \u03b13, when measured after the reaction stabilized at 22 hr. The \u03b2-sheet design, \u03b2, also resulted in 62% inhibition of A\u03b2 fibrillization, which began exerting its effect primarily between 0 and 6 hr. In contrast, \u03b11 became inhibitory after aggregation proceeded for approximately 6 hr. The peptide designs alone did not alter the fluorescence of ThT, and, as with Congo red, they were indistinguishable from buffer\u2013only controls over the time course of the assay (Figure 2\u2014figure supplement 4). Also note that the \u03b1-sheet designs are effective at lower concentrations and the efficacy increases at lower temperature; for example, a fourfold excess of \u03b11 essentially completely abolishes A\u03b2 aggregation at 25\u00b0C (unpublished). We report the 37\u00b0C results here, though, for comparison with TTR, which aggregates more slowly at 25\u00b0C.\n\nA\u03b2 toxicity was also assessed using the MTT assay and found to reduce the viability of treated SH-SY5Y cells to less than 50% after 6 hr incubation (Figure 2D). Addition of the \u03b1-sheet designs to a pre-aggregated (6 hr), toxic sample of A\u03b2 showed essentially complete inhibition of 97% for \u03b11 and 96% for \u03b13, compared with the extent of remaining aggregation observed in the absence of inhibitor.\n\n### Immobilization of designs\n\nDespite much effort over the last few years it has not proved possible to isolate and characterize toxic soluble oligomers. So, to further probe which species our peptide designs are binding to, we immobilized the designs on agarose beads and applied solutions of either fresh or pre-incubated, toxic samples of A\u03b2 and TTR. Immobilization in this manner also allowed us to test the sparingly soluble \u03b12 design by limiting self-aggregation. The peptides were immobilized via their lysine residues on aldehyde-functionalized agarose beads. Their ability to bind TTR or A\u03b2 from solutions at various stages of aggregation was investigated using dot blot analysis of the eluents. All three immobilized \u03b1-sheet designs (\u03b11, \u03b12 and \u03b13) bound significantly more TTR from pre-incubated, toxic oligomer-containing TTR solutions (pre-incubated at low pH for 24 hr) than did the rc and \u03b2 controls (Figure 3A). Note that while \u03b12 does not perform as well as the other two designs (Figure 3A), the binding of TTR by \u03b12 relative to the \u03b2 and rc controls is significant, as shown by the statistical analysis in Figure 3\u2014figure supplement 1. The extent of TTR binding by the \u03b2 and rc controls is the same as that of the column matrix alone, which does bind some TTR in the absence of immobilized peptide (Figure 3\u2014figure supplement 2). \u03b11, \u03b12 and \u03b13 also bound pre-aggregated, toxic A\u03b2 preferentially, whereas \u03b2 and rc did not (Figure 3B, and see statistical analysis in Figure 3\u2014figure supplement 3). In the case of the \u03b2 design, it preferentially bound the fresh, monomeric A\u03b2 solutions (0 hr) over the toxic solutions (6 hr) (Figure 3C), indicating that inhibition was due to interactions with the \u2018native\u2019 form, not the toxic oligomer. \u03b2-hairpins are known inhibitors of A\u03b2 aggregation (Yamin et al., 2009). In contrast, \u03b1-sheet, as demonstrated with \u03b11, did not bind native, tetrameric TTR nor fresh, monomeric A\u03b2 but instead preferentially bound species from the toxic, aggregated 6 hr samples (Figure 3D). Moreover, the \u03b1-sheet designs did not bind the fibrillar forms of A\u03b2 or TTR acquired by allowing the aggregation reactions to continue for over 3 weeks, as illustrated with immobilized \u03b11 (Figure 3\u2014figure supplement 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig3-v1.jpg)\n\n**Figure 3.:** Peptide designs were immobilized onto agarose beads and their ability to bind TTR or A\u03b2 from solution at various stages of aggregation was probed using dot blot analysis. The presence of TTR or A\u03b2 in the initial flow through (FT), sequential buffer washes (W), and sequential guanidine hydrochloride elution steps (E1\u2013E2 and E3\u2013E4) (x-axes) was detected by the integrated peak density of the dot blot analysis (y-axes). E1\u2013W9 are within the linear range of the immunochemistry. (A) All three \u03b1-sheet designs, \u03b11, \u03b12 and \u03b13 more strongly bound species from the 24 hr pre-aggregated, toxic TTR solutions than did either control. (B) Similar results were observed with the \u03b1-sheet designs binding to toxic A\u03b2 solutions pre-aggregated for 6 hr. Despite the inhibitory effects seen with the \u03b2 design in the A\u03b2 fibrillization assay, little A\u03b2 from a pre-aggregated solution bound to the immobilized \u03b2 design. (C) Comparison of binding from a fresh (0 h), or pre-aggregated (6 hr), toxic A\u03b2 solution. \u03b2 is the only design that preferentially bound fresh A\u03b2 over the aggregated toxic form, indicating that the inhibition observed was due to interactions with monomeric A\u03b2. (D) In contrast to the \u03b2 control, \u03b11 preferentially bound the pre-aggregated, toxic form of A\u03b2 compared with fresh monomeric A\u03b2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Relative peak density values from dot blot analyses are given as average values from three independent experiments, with standard deviations. Statistical analysis for E1, E2 and W8 were performed against the corresponding values for rc and \u03b2. t tests that returned a value p\u22640.05 are indicated with an asterisk (red when tested against the corresponding value from rc, green when tested against the same value for \u03b2) and were considered significant. Values for E1, E2 and W8 were also summed and standard deviations propagated (bottom line), and the t test repeated against the corresponding values for rc and \u03b2. These results indicate that \u03b11, \u03b12 and \u03b13 all bind species present in a toxic TTR solution to a greater extent than the random coil or \u03b2-sheet control peptides.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** While the column-binding assay is not quantitative, nor was it expected to be, we can estimate the confidence in the peak densities by seeing to what extent TTR binds to the column matrix in the absence of coupled peptides. TTR aged for 24 hr was applied to agarose beads blocked only with Tris to establish the effect of the column matrix. As can be seen, the extent of binding to the column matrix (E1 and E2) is comparable to that observed with the rc and \u03b2 controls. Note also that aggregated TTR elutes earlier from columns blocked with Tris, presumably due to the increased hydrophobicity of TTR as it aggregates and the less favorable interactions with the more hydrophilic Tris matrix.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Relative peak density values from dot blot analyses are given as average values from three independent experiments, with standard deviations. Statistical analysis for E1, E2 and W8 were performed against the corresponding values for rc and \u03b2. t-tests that returned a value p\u22640.05 are indicated with an asterisk (red when tested against the corresponding value from rc, green when tested against the same value for \u03b2) and were considered significant. Values for E1, E2 and W8 were also summed and standard deviations propagated (bottom line), and the t test repeated against the corresponding values for rc and \u03b2. These results indicate that \u03b11, \u03b12 and \u03b13 all bind species present in a toxic A\u03b2 solution to a greater extent than the random coil or \u03b2-sheet control peptides.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** TTR (red) or A\u03b2 (black) fibrils were applied to agarose beads coated with the \u03b11 design. The elution profile does not show any increase in elution when guanidine is applied to the column, indicating that there are no specific interactions between the fibrils and the immobilized designs.\n\n### Biophysical characterization of designs\n\nThe instability of \u03b1-sheet structure in proteins and peptides containing solely L-amino acids leaves us with no established spectroscopic signatures with which to assess our structures. We can, however, make and test predictions based on the unique conformational and electronic environments resulting from this structure. Circular dichroism (CD) signals arise from the differential absorption of left- and right-hand polarized light by chiral molecules. For proteins, the orientation of individual amide bonds is responsible for the resulting CD spectra in the far-UV region. Mirror image structures, formed by replacing whole L-amino acid sequences with D-amino acids, such as gramicidin A, produce mirror-image CD-spectra (Koeppe et al., 1992). We anticipate that the \u03b1-sheet structure would be effectively invisible due to near equal absorbance of both left and right polarized light, with any residual signal emanating from the turns and terminal residues.\n\nThe electrostatic interactions between aligned amide groups in an \u03b1-sheet (Armen et al., 2004a; Daggett, 2006) are expected to give rise to strong Fourier-transform infrared (FTIR) signals. Torii recently performed density functional theory calculations of three slightly different orientations of \u03b1-sheet structures (Torii, 2008). All models featured a strong high-frequency absorbance in the 1675\u20131680 cm\u22121 region, with a weaker band around 1640 cm\u22121, which appears to be distinct from \u03b1-helix (\u223c1650\u20131658 cm\u22121), \u03b2-sheet (\u223c1620\u20131640 cm\u22121) and turn structures (\u223c1670 cm\u22121) (Barth and Zscherp, 2002).\n\nNuclear magnetic resonance (NMR) spectroscopy can provide site-specific conformational information. Owing to the unique alignment of the amide groups in an \u03b1-sheet, we expect to see strong sequential dNN Nuclear Overhauser Effect (NOE) crosspeaks along the backbone since the NH groups are aligned on one side of the chain instead of alternating between opposite faces as in \u03b2-sheet structure. Furthermore, we would not expect to observe the long-range dNN or the strong sequential d\u03b1N NOEs characteristic of \u03b2-sheets. Thus, CD, FTIR and NMR studies were performed to assess the structures of our peptide designs.\n\nThe CD spectrum of rc shows a random coil signal with a strong negative absorption around 200 nm (Figure 4A). In its FTIR spectrum we observe multiple small absorbance peaks not corresponding to a predominance of any specific structure (Figure 4B). Our \u03b2-sheet control is a modified version of the Trpzip peptide, which forms a stable \u03b2-hairpin in solution. In agreement with previous structural work (Cochran et al., 2001a), \u03b2 exhibits a CD spectrum reflective of \u03b2-structure and random coil, with a minimum near 220 nm and another near 200 nm (Figure 4A). The substitution of Leu for Trp removed the strong exciton-coupling between the Trp residues observed in the parent peptide thereby \u2018exposing\u2019 the \u03b2-structure CD signal. The \u03b2-sheet structure was confirmed by FTIR through its strong absorbance at 1632 cm\u22121 (Figure 4B). The CD spectra for \u03b11, \u03b12 and \u03b13 are essentially featureless, as expected for the cancellation of \u03b1L and \u03b1R signals, except for a slight dip around 200 nm consistent with turn formation (Figure 4A). \u03b11 and \u03b12 exhibited the predicted FTIR \u03b1-sheet bands at 1640 and 1675\u20131680 cm\u22121 (Figure 4B). These bands were less pronounced in \u03b13. Cyclization of the amide backbone of \u03b13 through a non-optimal turn may have caused distortion of the structure, as has been reported in other peptide systems (Clark et al., 2005), and suggests an area for improvement in future designs. Altogether, these results prove that the designed \u03b1-sheet peptides do not form \u03b1-helix or \u03b2-sheet structure, and that the random coil content is not large (compare against the scale of the rc control CD spectrum). Thus, these results are consistent with and supportive of the designed \u03b1-sheet structure.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig4-v1.jpg)\n\n**Figure 4.:** (A) CD spectra for peptide designs reveal a random coil structure for rc and \u03b2-structure spectrum with a bit of random coil for \u03b2. In contrast, \u03b11, \u03b12 and \u03b13 have largely featureless CD spectra with some random coil content expected to arise from the turns and tail residues. Note the different scales for the y-axes. All spectra are presented as molar ellipticity, highlighting the difference in intensity of the random coil component for each design compared with the rc spectrum. (B) FTIR spectra of the peptide designs, displayed as both absorbance (black line) and the second derivative (colored line), correlate well with the CD spectra. The \u03b2 design shows a strong signal at 1632 cm\u22121, as expected for \u03b2-structure. The \u03b1-sheet designs have signals near 1640 and 1675\u20131680 cm\u22121 and the absorption is more intense for \u03b11 and \u03b12. (C) Fingerprint (top) and NH region (bottom) of the 1H NOESY spectra for \u03b11. Sequential assignments are shown in red and multiple sequential NOEs are observed and labeled. (D) Fingerprint (top) and NH region (bottom) of the 1H NOESY spectra for \u03b13. The NH region reflects the predominance of NH\u2013NH interactions and lack of other main-chain interactions characteristic of the common secondary structures. Mapping backbone NOEs on computational models as green bars (E, \u03b11 and F, \u03b13) reveal in-plane alignment of the peptide groups along the majority of the sheet. NOEs in the turn regions determined whether the carbonyl or amide hydrogens pointed up in the structures as oriented in the figure (N-terminus top left). C\u03b1, C, N, H and O atoms are shown in gray, gray, blue, white and red, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** r\u22126 weighted distances calculated from MD simulations of \u03b11 in \u03b1-sheet and in \u03b2-sheet conformation. \u03b11 is not stable as a \u03b2-sheet and did not retain the structure well even in these short simulations. Consequently a \u03b2-hairpin of the same size within a protein was also used as a control for expected H\u2013H distances within a dynamic but stable hairpin. Specifically, residues 105\u2013124 of the antiparallel \u03b2-hairpin neuronal nitric oxide synthase (PDB:1QAU) was used from a 50 ns simulation at 298 K. Triplicate simulations of the isolated hairpins were performed at 298 K for 20 ns. r\u22126 intensities, which should be proportional to the NOE intensity, were calculated step by step from the distance then averaged across the pooled simulations and time points and converted back to distance (<r\u22126 >\u22121/6). Residue 117 of 1QAU is proline, preventing measurement for itself and the preceding residue. The lower values observed for \u03b11 in a \u03b2-hairpin conformation, similar to those of the anti-parallel \u03b2-hairpin in 1QAU suggest to us that our \u03b11 does not adopt \u03b2-structure. Sheet regions are highlighted.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** r\u22126 weighted distances calculated from MD simulations of \u03b11 in \u03b1-sheet and in \u03b2-sheet conformation. r\u22126 intensities, which should be proportional to the NOE intensity, were calculated for each structure then averaged across the pooled simulations and time points and converted back to distance (<r\u22126 >\u22121/6). Residue 117 of 1QAU is proline, preventing measurement for itself. Residues 113 and 115 of 1QAU, and residue 14 of \u03b11 are glycines, resulting in two measurements for H\u03b1i\u2013HNi. Sheet regions are highlighted.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01681/elife-01681-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** r\u22126 intensities, which should be proportional to the NOE intensity, were calculated for each structure and then averaged across the pooled simulations and time points and converted back to distance (<r\u22126 >\u22121/6). Residue 117 of 1QAU is proline, preventing measurement for the preceding residue. Residues 113 and 115 of 1QAU, and residue 14 of \u03b11 are glycines, resulting in two measurements for H\u03b1i\u2013HNi+1. Sheet regions are highlighted.\n\nWe performed further structural studies utilizing homonuclear NMR spectroscopy. Multiple sequential dNN NOEs were observed along the backbones of both \u03b11 and \u03b13 (\u03b12 was not soluble enough for NMR) (Figure 4C,D). No long-range dNN or d\u03b1N NOEs indicative of \u03b1-helical or \u03b2-sheet structure (W\u00fcthrich, 1986) were observed. The NH\u22efNH NOEs are mapped onto structural models of \u03b11 and \u03b13 (Figure 4E,F), highlighting the stretches of \u03b1-strand structure in both designs. As mentioned above, strong sequential dNN NOEs are expected for \u03b1-sheet, but not for \u03b2-sheet, and strong sequential d\u03b1N NOEs are expected for \u03b2-sheet, but not for \u03b1-sheet. To test this idea we calculated the ensemble-weighted NH\u2013NH, intraresidue H\u03b1-NH and sequential H\u03b1-NH distances in MD simulations for \u03b11 in an \u03b1-sheet conformation and a \u03b2-sheet conformation, as well as a natural \u03b2-hairpin within a protein (Figure 4\u2014figure supplements 1\u20133). The calculated NH\u2013NH distances in the strands are much shorter in the \u03b1-sheet, consistent with the strong dNN NOEs observed for both \u03b11 and \u03b13, and the observed breaks in the patterns (Figure 4E,F) reveal vulnerabilities in the structures and provide direction for improved designs. The bulk of the observed intraresidue and sequential d\u03b1N NOE intensities in Figure 4C,D are of similar magnitude (12/21 for \u03b11) or the intraresidue NOE is stronger (6/21 for \u03b11), consistent with \u03b1-sheet structure (Figure 4\u2014figure supplements 2,3). There are, however, three residues with strong sequential d\u03b1N NOEs in \u03b11 but all three of these are involved in dNN NOEs, which is inconsistent with \u03b2-structure.\n\nWe observed no long-range side chain-side chain NOEs despite increasing the mixing time of the NOESY experiments up to 400 ms, perhaps due to residual dynamics in the peptide. The lack of these distance restraints prevented the generation of a well-converged solution structure; however, in support of the CD and FTIR spectroscopic data, the NMR data are consistent with \u03b1-sheet secondary structure and inconsistent with \u03b1-helix, random coil, and \u03b2-sheet structures.\n\n### Conclusions\n\nTen years ago a common conformation was demonstrated among soluble oligomeric species from amyloid proteins/peptides of diverse sequence and structures that cross react with the A11 antibody (Kayed et al., 2003). Also at that time we identified a novel target structure, \u03b1-sheet, through MD simulations and proposed that it is the defining feature of the toxic oligomeric species (Armen et al., 2004a; Daggett, 2006). Unfortunately, the precise structure of this toxic intermediate remains elusive, and it has become clear that the oligomers are conformationally heterogeneous (Carulla et al., 2009; Bitan et al., 2005, and references therein). Here we have taken a different approach to probe these soluble oligomeric species through experimental test of our \u03b1-sheet hypothesis through peptides designed to be complementary to the proposed \u03b1-sheet structure in the oligomeric intermediates. Three of these computationally derived designs were synthesized and characterized experimentally, and they do indeed appear to adopt \u03b1-sheet structure (as shown by FTIR, CD and NMR). The two soluble \u03b1-sheet designs (\u03b11 and \u03b13) inhibited both TTR and A\u03b2 aggregation in solution. In addition, when immobilized to agarose beads, all three \u03b1-sheet designs bound species from the toxic TTR and A\u03b2 preparations preferentially over the nontoxic fresh samples. In contrast, the \u03b2 control formed a \u03b2-hairpin, as supported by CD and FTIR, and it preferentially bound the monomeric form of A\u03b2 and it did not react with TTR. When mature fibrils were applied to the immobilized \u03b1\u2212sheet designs, the fibrils did not bind and appeared to have no affinity for the \u03b1-sheet structure.\n\nWhile these \u03b1-sheet peptides were not designed against a specific protein target, we observed inhibition of aggregation in two very different amyloid systems. These results support our hypothesis that \u03b1-sheet structure is involved in the toxic oligomeric stage of aggregation, and they provide a reference to determine spectroscopic signatures that can now be used to investigate the structural changes amyloid proteins undergo during amyloidosis. In addition, the \u03b1-sheet designs may aid in capture of the elusive toxic oligomeric species for in-depth characterization. Having demonstrated that the \u03b1-sheet structure may constitute a broad-based inhibitor of amyloidosis, our \u03b1-sheet designs introduce a novel class of amyloid inhibitors that target the toxic soluble oligomeric state of different amyloidogenic peptides and proteins.\n\n## Materials and methods\n\n### Computational design\n\nThe \u03b1-sheet peptides were designed in silico using our database of amyloid protein MD simulations to determine preferred backbone geometries. Our SLIRP database (Beck et al., 2008; van der Kamp et al., 2010) was used to select residues with high propensity to adopt the desired structure. MD simulations were performed to assess both turn and \u03b1-sheet stability. Ideal \u03b1-sheet and \u03b2-sheet templates were created and sequences were chosen based on their intrinsic conformational preferences and to consist of a mix of polar and nonpolar amino acids to maintain good inter-strand interactions and solubility. Intrinsic conformational propensities of all 20 L-amino acids in a GGXGG peptide were determined by extensive molecular dynamics (MD) simulations (Beck et al., 2008). D-amino acid propensities were determined in a similar manner (manuscript in preparation). MD simulations were then performed to assess the stability of our designs. Multiple short simulations were performed, at least 3 \u00d7 20 ns, for each peptide at 25\u00b0C using our in-house MD package in lucem molecular mechanics (ilmm) (Beck et al., 2000\u20132014), with the Levitt et al. (1995) all atom force field and the F3C water model (Levitt et al., 1997). Standard simulation protocols were followed (Beck and Daggett, 2004). \u03b1-Sheet stability was assessed by monitoring both the secondary structure and the turn structure, based on hydrogen bonding over the duration of the simulations. Results were expressed as the fraction of simulation time the atoms were within hydrogen bonding distance. C\u03b1 RMSD was used qualitatively to monitor backbone deviation from the ideal hairpin structure in conjunction with the hydrogen bond scoring function to determine promising designs. We took an iterative approach, with the results of the analyses used to modify and refine sequences for further simulation and evaluation. We chose several sequences from a pool of well-behaved simulations for experimental evaluation. High scoring designs were synthesized and their inhibitory effects were determined.\n\n### TTR fibrillization assay\n\nAliqouts of transthyretin (TTR) (496-11; Lee Biosolutions, St. Louis MO) were made from a 1 mg/ml solution 20 mM ammonium carbonate, pH 8. Aliquots were lyophilized and stored at \u221218\u00b0C. Prior to use, TTR was dissolved to 80 \u03bcM (monomer) in acetate buffer (50 mM potassium acetate, 100 mM potassium chloride pH 4.5) and sonicated for 10 min. The stock solution was centrifuged before use. Peptide designs were added to stock TTR to a final TTR concentration of 40 \u03bcM (monomer) in acetate buffer (pH 4.5) in 500 \u03bcl microcentrifuge tubes., which were incubated at 37\u00b0C. Periodically, samples were collected from the TTR:peptide mixture by briefly centrifuging, and then carefully pipetting the solution up and down prior to withdrawing a 10 \u03bcl sample and diluting it in 190 \u03bcl of 10 \u03bcM Congo red in an individual well of a 96-well assay plate. Each measurement was performed in triplicate. Absorbance measurements were taken at 477 and 540 nm. Relative Congo red binding was determined using the method of Klunk et al. (1989) via the following relationship: rCb = (Abs540/25,295)-(Abs477/46,306). All datapoints were normalized to the value recorded for TTR alone pH 4.5 at 48 hr.\n\n### A\u03b2 fibrillization assay\n\nA\u03b2(1-42) (AMYD-002; CPC Scientific, Sunnyvale CA) was stored as 2 mg/ml stock in hexafluoroisopropanol (HFIP) at \u221218 \u00b0C. Prior to use, the stock solution was thawed, an aliquot taken and the HFIP was removed under a gentle stream of air. A 1 mg/ml stock solution of A\u03b2 was made in 5 mM NaOH and sonicated for 5\u201310 min. The stock was filtered through a 0.22 \u03bcm cellulose filter (Costar Spin-X; Corning Inc, NY). The concentration of stock A\u03b2 was determined by first diluting the stock 1:50 in 5 mM NaOH then taking the absorbance at 220 nm (\u03b5220 = 50,000 cm\u22121 M\u22121). Aliquots of the NaOH stock were placed in separate wells of a 96-well black-walled fluorescence plate (Nunc) and immediately diluted in PBS (11 mM phosphate) containing 20 \u03bcM Thioflavin T (ThT) to give 150 \u03bcl of 10 \u03bcM A\u03b2 at pH 7.5. Peptide inhibitors were added directly to 10 \u03bcM A\u03b2 samples from concentrated aqueous stocks. Covered plates were incubated at 37\u00b0C and were periodically removed for fluorescence measurements. ThT fluorescence was measured at \u03bbex = 450 nm and \u03bbem = 480 nm using a Tecan Safire2 plate reader.\n\n### Immobilization and solution binding\n\nPeptide designs were immobilized to the Pierce Amino Link resin following the manufacturer's instructions. Peptides were immobilized in a volume of 200 \u03bcl of coupling buffer (100 mM sodium phosphate, 150 mM sodium chloride, pH 7.2) and 2 \u03bcl cyanoborohydride solution (5 M sodium cyanoborohydride in 1 M NaOH) at a concentration of 358 \u03bcM overnight at 4\u00b0C. Any residual active sites were blocked with 400 \u03bcl quenching buffer (1 M tris hydrochloride, pH 7.4) and 4 \u03bcl cyanoborohydride solution for 4 hr at 25\u00b0C. Binding experiments were performed from 200 \u03bcl amyloid solution (5 \u03bcM A\u03b2 or 20 \u03bcM TTR (monomer) diluted to the desired concentration in coupling buffer), which was allowed to bind to the peptide-bound agarose beads for 2 hr at 25\u00b0C. The solution was then collected by centrifugation (flow through, FT). The beads were resuspended in 300 \u03bcl coupling buffer, vortexed to obtain a uniform slurry, and the solution was again collected by centrifugation (wash 1, W1). The wash step was performed an additional five times (W2\u2013W6). One final wash step was performed but after resuspending the resin, the solution was allowed to sit for 5 min before centrifugation (W7). The resin was next resuspended in 100 \u03bcl 2 M guanidine hydrochloride, incubated for 5 min at room temperature, then collected as before. This was performed twice (E1\u2013E2). The resin was washed again with 300 \u03bcl coupling buffer (W8) followed by two elution steps with 6 M guanidine hydrochloride (E3\u2013E4). One final wash step was performed with 300 \u03bcl coupling buffer (W9). All collected eluents were analyzed by applying triplicate 1 \u03bcl spots to nitrocellulose, and then performing standard dot blot analysis as described by Kayed et al. (9) with an anti-TTR (sc-13098, Santa Cruz Biotechnology, Santa Cruz, CA) or anti-A\u03b2 (ab39377; Abcam Inc, Cambridge, MA) primary antibody diluted 1:1000 in 5% or 10% nonfat milk, respectively.\n\n### SH-SY5Y cell viability\n\nThe toxicity of aggregates was tested against the human neuroblastoma cell line SH-SY5Y in an MTT cell viability assay. The human neuroblastoma cell line SH-SY5Y (CRL-226; American Type Culture Collection) was grown in 75 cm2 flasks in 1:1 DMEM/F12 (CellGro, Manassas, VA) supplemented with 10% FBS and 50 units/ml penicillin/50 \u03bcg/ml streptomycin (complete media), and incubated at 37\u00b0C in humidified 5% CO2 environment. Cells were routinely passaged when they reached 90% confluence by addition of trypsin (Gibco) and replated at a ratio of 1:10 in complete media. Cells were plated to a density of 25,000 cells/well in a 96-well plate (100 \u03bcl/well) and allowed to attach overnight. The cell assay was performed as described by Reixach et al. (2004).\n\n### CD spectroscopy\n\nFar UV CD spectra were recorded on an Aviv model 420 spectrometer (Aviv Biomedical) over 200\u2013260 nm in a 1 mm quartz cuvette. All samples were prepared at 100 \u03bcM, with the exception of the sparingly soluble design, \u03b12 which was prepared at 35 \u03bcM. All samples were prepared in 50 mM phosphate, 100 mM NaCl buffer, pH 5.8, and were recorded at 25\u00b0C with a resolution of 0.5 nm, a scan speed of 20 nm/min, and a 2 nm bandwidth. Average values from three scans were plotted using the Origin 8 software (Originlab, Northhampton, MA). All spectra were smoothed using the Savitzky-Golay method with 5\u201312 points/window, and polynomial order 2.\n\n### FTIR spectroscopy\n\nIR spectra were obtained using a Perkin\u2013Elmer Spectrum 100 instrument equipped with a diamond attenuated total reflectance sample unit and an MCT detector. Peptide samples were pelleted and re-suspended as a 1\u20132 \u00b5l slurry. The slurry was applied to the diamond and dried to a film over a few minutes while following the disappearance of the broad liquid water band at \u223c1636 cm\u22121 and the appearance of the protein amide I and amide II bands. The spectra were background-subtracted and comprised of 64 accumulations (4 cm\u22121 resolution; 1 cm/s OPD velocity; strong apodization). Spectra shown here were recorded as soon as successively collected spectra (each recorded over 80 s) stabilized, indicating little further evaporation of liquid water. This approach was taken to eliminate spectral contributions from free liquid water without desiccating the peptide film any more than necessary. Second derivative spectra were calculated using the instrument software and 13 data points.\n\n### NMR spectroscopy\n\nPeptides were prepared in 50 mM potassium phosphate buffer containing 100 mM KCl pH 5.8. All NMR experiments were performed on Bruker Avance 600 and/or 500 MHz spectrometers equipped with cryogenic triple resonance probes. The sample temperature was kept at 25\u00b0C. 4,4-dimethyl-4-silapentane-1-sulfonic acid (DSS) was used for proton chemical shift referencing whereas indirect referencing was used for carbon and nitrogen. The resonance assignments for peptides were carried out using 1H-1H TOCSY and [1H-1H] NOESY spectra recorded in 90% H2O and 10% 2H2O. The assignments thus obtained are translated onto the natural abundance 1H-15N HSQC and 1H-13C HSQC spectra. All spectra were processed with Topspin3.0 (Bruker) and analyzed using CARA (http://cara.nmr.ch/doku.php) or Sparky (http://www.cgl.ucsf.edu/home/sparky/); figures were made using CARA.\n\n### AFM spectroscopy\n\nAFM was performed with a Dimension 3100 atomic force microscope using tapping mode and silicon tips (FESP; Bruker; Camarillo, CA). 10 \u03bcl of 10 \u03bcM A\u03b2(1-42) or 40 \u03bcM TTR were applied directly to freshly cleaved mica and incubated for 10 min. 50 \u03bcl of water was added then removed by capillary action with a lint-free lab wipe. A further 50 \u03bcl of water was added and incubated for 5 min before removal. The mica surface was then allowed to dry under ambient conditions prior to imaging.\n",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f7fa7ea2-5faa-4df8-b63f-84da9c24399f",
+      "submission_id": "b858292c-d21d-4b69-b667-dc798b17cb90",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01681.018](https://doi.org/10.7554/eLife.01681.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cDesigned \u03b1-sheet peptides inhibit amyloid formation by targeting toxic oligomers\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, John Kuriyan, and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAll reviewers agreed that your findings that peptides with a designed \u03b1-sheet conformation are capable of inhibiting amyloid formation by targeting toxic oligomers is a very important step towards characterizing the structural nature of pre-fibrillar, oligomeric states of proteins. All reviewers recommend publication after addressing some concerns that are summarized below:\n\nSome concerns raised focus on the behaviour of the designed peptides.\n\n1) Why don't the \u03b1-sheet peptides oligomerize themselves instead of binding to the sequence diverse targets, in particular at 20:1 design/target concentration ratios?\n\n2) What is the net charge of designed peptides vs the net charge of the target? Can it be ruled out that the inhibition is not simply by electrostatic coating of the growing fibrils?\n\n3) Is the predicted burial of the solvent accessible surface area smaller for \u03b1 sheets, thus allowing the use of urea to bias away from competing \u03b2-sheet structure?\n\nOther concerns focused on the interaction of the designed peptides with the oligomers.\n\n4) Figure 3A and B. The binding of TTR to the rc and the \u03b2 peptides is explained by the background binding to the column material. However, the elution profile of the control experiment shown in Figure 3\u2013figure supplement 2 looks different. These differences in profiles should be explained.\n\n5) Figure 2C. It seems that incubation with the rc peptide leads to a significant decrease in the aggregation of A\u03b2 peptide. How can this be explained? The figure legend should be extended to better describe these results.\n\nFinally, concerns were raised regarding the NMR characterization of the \u03b1-sheet peptides\n\n6) The NMR data show that the peptides do not adopt an \u03b1-helical fold since typical sequential NOEs are missing. However, Figure 4 seems to indicate that the sequential alpha-amide NOE is stronger than the intraresidual one, which is expected for \u03b2-sheets. \u03b2-sheets can also have weak amide proton \u2013 amide proton NOEs. The authors should compare the experimental NOE intensities to those calculated from the simulations, in a population-weighted sense. Since they have the trajectories already, this should be possible with relatively little additional work. They should also compare the expected NOE patterns derived from the simulations of \u03b1-sheets and \u03b2-sheets and provide a table with the expected distances in \u03b1-sheets \u03b2-sheets.\n\n7) In addition, the assignments seem to include some inconsistencies. For example, in Figure 4C, bottom panel, the cross-peaks of 17/18 and 18/19 (which ought to be labeled 19/18) do not line up along the vertical dimension. This could possibly indicate that there is some heterogeneity in the peptide conformations. Similarly, several other cross-peaks have 'shoulders'. Is there any evidence for some heterogeneity or can this be explained differently?\n",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "990db532-7fa1-49b5-9088-8812935fb1fb",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C1",
+      "claim": "There are now over 40 different human amyloid diseases, each linked to the buildup of a specific precursor protein or peptide",
+      "claim_type": "EXPLICIT",
+      "source": "There are now over 40 different human amyloid diseases, each linked to the buildup of a specific precursor protein or peptide (Chiti and Dobson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chiti and Dobson, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "029c5b33-8916-4011-b3af-1c1fb74e7623",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C2",
+      "claim": "Mature amyloid fibrils are composed of cross \u03b2-sheet structure",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray fiber diffraction indicates that the insoluble, mature amyloid fibrils are composed of cross \u03b2-sheet structure (Jahn et al., 2010; Eisenberg and Jucker, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jahn et al., 2010 and Eisenberg and Jucker, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "a53585ec-0b4e-41f6-8143-8a3161e0ef49",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C3",
+      "claim": "Soluble oligomeric intermediates, not the insoluble well-ordered fibrils, are preferentially responsible for cellular toxicity",
+      "claim_type": "EXPLICIT",
+      "source": "Another feature of these diseases is that soluble oligomeric intermediates, not the insoluble well-ordered fibrils, are preferentially responsible for cellular toxicity (Bucciantini et al., 2002; Hardy and Selkoe, 2002; Tomic et al., 2009; Xue et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Bucciantini et al., 2002; Hardy and Selkoe, 2002; Tomic et al., 2009; Xue et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "786d7596-8546-4462-932f-e81743c7d693",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C4",
+      "claim": "The soluble oligomeric forms of the prion protein are the most infectious per unit protein",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the soluble oligomeric forms of the prion protein are the most infectious per unit protein (Silveira et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Silveira et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "c3dfc322-7429-4077-9861-e75b8a2ce4f5",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C5",
+      "claim": "Fibrils may be protective, at least up to a point, as their breakdown to smaller aggregates yields greater toxicity and infectivity",
+      "claim_type": "EXPLICIT",
+      "source": "As such, fibrils may be protective, at least up to a point, as their breakdown to smaller aggregates yields greater toxicity and infectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the preceding statement about oligomers being more toxic than fibrils",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "12faa43b-54e9-4cac-bf18-2bd88c2fa11e",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C6",
+      "claim": "A compound that promotes inclusion formation while reducing toxicity and cellular pathology supports the hypothesis that fibrils may be protective",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of a compound that promotes inclusion formation while reducing toxicity and cellular pathology supports this hypothesis (Bodner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bodner et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "b248cadd-9e24-40e7-9799-3b7d0dcec5a8",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C7",
+      "claim": "Binding the fibrillar state of A\u03b2 could reduce toxicity presumably by shifting the equilibrium from oligomer to fibril",
+      "claim_type": "EXPLICIT",
+      "source": "In a similar vein, Jiang et al. (2013) demonstrated that binding the fibrillar state of A\u03b2 could reduce toxicity presumably by shifting the equilibrium from oligomer to fibril.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "5f7d031e-2dce-4b9c-b542-66e92241f8fe",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C8",
+      "claim": "The soluble oligomer species is more toxic than mature fibrils",
+      "claim_type": "EXPLICIT",
+      "source": "Research on the soluble oligomers has become critically important since there is a consensus that the soluble oligomer species is more toxic than mature fibrils (Chiti and Dobson, 2006; Tomic et al., 2009; Xue et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chiti and Dobson, 2006; Tomic et al., 2009; Xue et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "1ba36430-8b57-4543-94ef-5732cf79f34b",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C9",
+      "claim": "Fibrils are a reservoir for toxic oligomeric species",
+      "claim_type": "EXPLICIT",
+      "source": "and, while nontoxic, the fibrils are a reservoir for toxic oligomeric species (Shahnawaz and Soto, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shahnawaz and Soto, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "8bcc1782-dcee-44b6-b40d-bfd423429632",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C10",
+      "claim": "Structural similarities between soluble oligomers from a range of unrelated proteins/peptides has been demonstrated by generation of an antibody that recognizes a common backbone structure",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, structural similarities between soluble oligomers from a range of unrelated proteins/peptides has been demonstrated by generation of an antibody that recognizes a common backbone structure (Kayed et al., 2003; Tomic et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kayed et al., 2003 and Tomic et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "31d2f37c-bb45-45a2-a49b-11cd533e5c1e",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C11",
+      "claim": "The A11 antibody is specific for soluble oligomeric intermediates derived from a variety of peptides and proteins, including A\u03b2(1-42), \u03b1-synuclein, islet amyloid polypeptide, polyglutamine, lysozyme, human insulin, and a prion peptide",
+      "claim_type": "EXPLICIT",
+      "source": "Glabe and co-workers developed an antibody (denoted A11) that is specific for soluble oligomeric intermediates derived from a variety of peptides and proteins, including A\u03b2(1-42), \u03b1-synuclein, islet amyloid polypeptide, polyglutamine, lysozyme, human insulin, and a prion peptide (Glabe and Kayed, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glabe and Kayed, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "fc60cf74-50c5-435a-addf-33e2326aa538",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C12",
+      "claim": "The A11 antibody does not bind the corresponding insoluble fibrils (cross-\u03b2 structure) or the natively folded precursors",
+      "claim_type": "EXPLICIT",
+      "source": "The antibody does not, however, bind the corresponding insoluble fibrils (cross-\u03b2 structure) or the natively folded precursors (various structures).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the specificity of the A11 antibody described in the context",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "8c542059-0af5-4645-94da-5bf8a414d62f",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C13",
+      "claim": "The A11 antibody inhibits toxicity associated with the intermediates",
+      "claim_type": "EXPLICIT",
+      "source": "This antibody inhibits toxicity associated with the intermediates, implying a common mechanism of toxicity and offering hope for a broad-based therapeutic agent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the discussion of the A11 antibody properties",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "d88b15f0-c9d8-437e-8876-5e74efc9421e",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C14",
+      "claim": "\u03b1-sheet structure is populated during molecular dynamics simulations of a range of amyloid proteins with different structures and sequences under amyloidogenic conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Some years ago we 'discovered' a novel secondary structure, which we call '\u03b1-sheet', that is populated during molecular dynamics (MD) simulations of a range of amyloid proteins (and peptides) with different structures and sequences under amyloidogenic conditions (Figure 1A) (Armen et al., 2004a, 2004b, 2005; Steward et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Armen et al., 2004a, 2004b, 2005; Steward et al., 2008 and reference to Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "8f93d64f-76ec-4e51-bcb7-d7b5107ee09b",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C15",
+      "claim": "The position where the \u03b1-sheet forms along the sequence coincides with the most amyloidogenic regions of the proteins, as determined experimentally",
+      "claim_type": "EXPLICIT",
+      "source": "The position where the \u03b1-sheet forms along the sequence coincides with the most amyloidogenic regions of the proteins, as determined experimentally (Armen et al., 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Armen et al., 2004a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "b292408f-d57d-4c0f-87ce-adc3fd2b861c",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C16",
+      "claim": "\u03b1-sheet is a common structure involved in the early stages of protein aggregation",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, we proposed that \u03b1-sheet is a common structure involved in the early stages of protein aggregation (Armen et al., 2004a; Daggett, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Armen et al., 2004a and Daggett, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "fc1c2dec-c740-46bb-96f4-98a1583e3490",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C17",
+      "claim": "\u03b1-sheet was first predicted by Pauling and Corey and called 'polar pleated sheet'",
+      "claim_type": "EXPLICIT",
+      "source": "In the course of characterizing the structure observed by MD, we learned that \u03b1-sheet was first predicted by Pauling and Corey and called 'polar pleated sheet'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on historical knowledge of protein structure predictions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "a13dc33c-5af5-4e3e-aa25-77e6234dd3ae",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C18",
+      "claim": "Pauling and Corey ruled the \u03b1-sheet structure energetically unfavorable and concluded that the \u03b2-sheet structure would be favored in normal proteins",
+      "claim_type": "EXPLICIT",
+      "source": "However, they ruled the structure energetically unfavorable and concluded, correctly, that the \u03b2-sheet structure would be favored in normal proteins (Pauling and Corey, 1951).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pauling and Corey, 1951",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "113fe794-ca54-4dda-bc7e-4f19448025b2",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C19",
+      "claim": "An \u03b1-sheet is similar to a \u03b2-sheet, but instead of alternating main chain NH and C = O groups along the strands, an \u03b1-sheet has the NH groups aligned on one side and the carbonyls on the other",
+      "claim_type": "EXPLICIT",
+      "source": "An \u03b1-sheet is similar to a \u03b2-sheet, but instead of alternating main chain NH and C = O groups along the strands, an \u03b1-sheet has the NH groups aligned on one side and the carbonyls on the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural description of \u03b1-sheet",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "da586023-1e16-4764-9a57-795537ecd3c5",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C20",
+      "claim": "The \u03b1-sheet has a molecular dipole and a very different hydrogen-bonding pattern across the sheet compared to a \u03b2-sheet",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the \u03b1-sheet has a molecular dipole and a very different hydrogen-bonding pattern across the sheet compared to a \u03b2-sheet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the structural description of \u03b1-sheet",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f294f45f-a678-4259-bf22-965855e31823",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C21",
+      "claim": "The main chain (\u03a6, \u03a8) dihedral angles of the \u03b1-sheet alternate between the \u03b1L and \u03b1R conformations",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the main chain (\u03a6, \u03a8) dihedral angles of the \u03b1-sheet alternate between the \u03b1L and \u03b1R conformations (Daggett, 2006) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Daggett, 2006 and reference to Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "3eb81fd8-b6d1-4803-a0bb-97bdfed4c6e3",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C22",
+      "claim": "The alternating dihedral angles in \u03b1-sheet form an extended chain resulting in the carbonyl groups and amide groups aligning in a plane",
+      "claim_type": "EXPLICIT",
+      "source": "Although locally helical, the alternating dihedral angles form an extended chain resulting in the carbonyl groups and amide groups aligning in a plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural description of \u03b1-sheet",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "6f716f27-2d9a-48ad-8bf1-5d03151fa256",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C23",
+      "claim": "The alignment of carbonyl and amide groups in \u03b1-sheet creates uniform electrostatic faces to aid in the addition of further strands",
+      "claim_type": "EXPLICIT",
+      "source": "Such an arrangement creates uniform electrostatic faces to aid in the addition of further strands (Armen et al., 2004b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Armen et al., 2004b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "168d6e98-c2ff-4861-86db-44dc3cf739cd",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C24",
+      "claim": "A simple peptide plane flip could convert the \u03b1-sheet into a \u03b2-sheet and ultimately a mature fibril",
+      "claim_type": "EXPLICIT",
+      "source": "Once a sheet is formed, a simple peptide plane flip could convert the \u03b1-sheet into a \u03b2-sheet and ultimately a mature fibril (Daggett, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Daggett, 2006",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "89e5e80e-64a8-4785-bbd3-e171f0dbaf17",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C25",
+      "claim": "\u03b1-sheet structure has been observed in a peptide crystal structure",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-sheet structure has been observed in a peptide crystal structure (Di Blasio et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Di Blasio et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "942c8589-1044-4cae-bca9-ab393d2db2fc",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C26",
+      "claim": "Short stretches of \u03b1-strand are present in various proteins in the Protein Data Bank",
+      "claim_type": "EXPLICIT",
+      "source": "and short stretches of \u03b1-strand are present in various proteins in the Protein Data Bank (Daggett, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Daggett, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "423f350b-5bb9-4976-89df-c48473bb2ef4",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C27",
+      "claim": "Extensive \u03b1-sheet formation has not been observed in native proteins",
+      "claim_type": "EXPLICIT",
+      "source": "although extensive \u03b1-sheet formation has not been observed in native proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of protein structures",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f9595623-1edf-4985-90a4-83f133c674f2",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C28",
+      "claim": "L-alanine has a conformational preference to adopt the \u03b1R conformation",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic residue propensities for L- and D-alanine were calculated from 100 ns of MD simulations of a GGXGG peptide system (Beck et al., 2008) (D-alanine was simulated using the same protocol). The backbone structure (upper panels) as well as the Ramachandran plot of the conformation of the alanine residue during the entire simulation, demonstrate the conformational preference for L-alanine to adopt the \u03b1R conformation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Beck et al., 2008 and reference to Figure 1B showing MD simulation data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "0fea1ea2-d45f-49a4-8c1d-b4cdba297e1e",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C29",
+      "claim": "D-alanine has a conformational preference to favor the \u03b1L conformation",
+      "claim_type": "EXPLICIT",
+      "source": "and for D-alanine to favor the \u03b1L conformation (lower panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1B showing MD simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "a7a7fbab-bca0-407c-821e-aa9fd01c22bc",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C30",
+      "claim": "Peptides containing alternating D- and L-amino acids have previously been shown to form extended structures",
+      "claim_type": "EXPLICIT",
+      "source": "Peptides containing alternating D- and L-amino acids have previously been shown to form extended structures (De Santis et al., 1974; Heitz et al., 1981)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Santis et al., 1974 and Heitz et al., 1981",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "383b9608-ccb5-48ee-bfcc-f68b56d9d359",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C31",
+      "claim": "Peptides with alternating D- and L-amino acids populate similar conformational space as MD-identified \u03b1-sheet sequences consisting solely of L-amino acids",
+      "claim_type": "EXPLICIT",
+      "source": "and they populate similar conformational space as our MD-identified \u03b1-sheet sequences consisting solely of L-amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the structural properties of alternating D- and L-amino acid peptides",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "feda65d4-2326-475d-8e7e-91a7b0c258aa",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C32",
+      "claim": "Both transthyretin and beta amyloid 1-42 have well characterized aggregation profiles and aggregate under mild, non-denaturing conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Both systems have well characterized aggregation profiles and aggregate under mild, non-denaturing conditions (Quintas et al., 1997; Foss et al., 2005; Hopping et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Quintas et al., 1997; Foss et al., 2005; Hopping et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "99be17c3-0d86-4eef-87b4-699f7984c973",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C33",
+      "claim": "\u03b2-hairpins are known inhibitors of A\u03b2 aggregation",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-hairpins are known inhibitors of A\u03b2 aggregation (Yamin et al., 2009; Cheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yamin et al., 2009 and Cheng et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "dc42002a-6448-43a7-aeb3-5306aee3b3a4",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C34",
+      "claim": "\u03b11 resulted in 72% inhibition of TTR aggregation at 48 hr",
+      "claim_type": "EXPLICIT",
+      "source": "At these concentrations, \u03b11 and \u03b13 resulted in 72 and 56% inhibition, respectively, relative to TTR alone at low pH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "110b5173-f951-4c70-9f2d-ac804fa0125c",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C35",
+      "claim": "\u03b13 resulted in 56% inhibition of TTR aggregation at 48 hr",
+      "claim_type": "EXPLICIT",
+      "source": "At these concentrations, \u03b11 and \u03b13 resulted in 72 and 56% inhibition, respectively, relative to TTR alone at low pH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "3c10fd78-4fab-488f-8c3c-861564bb3ed8",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C36",
+      "claim": "The rc and \u03b2 controls resulted in little to no inhibition of TTR aggregation",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the rc and \u03b2 controls resulted in little to no inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "9cec2705-30d7-4ef7-ba75-cd0b381b1638",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C37",
+      "claim": "The designs in the absence of TTR did not bind Congo red and were indistinguishable from the buffer-only controls",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the designs in the absence of TTR did not bind Congo red and were indistinguishable from the buffer-only controls (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "15bd6435-a508-4c0d-b6b5-009d3bfbc3c6",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C38",
+      "claim": "TTR toxicity was apparent around 24 hr of aggregation at pH 4.5",
+      "claim_type": "EXPLICIT",
+      "source": "Toxicity was apparent around 24 hr, and the results from this time point are shown in Figure 2B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "33ae4a19-3fbd-409f-bf2c-b21f0d496c61",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C39",
+      "claim": "Under aggregation conditions, the viability of SH-SY5Y cells treated with TTR was reduced by approximately 20%",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, the viability of the treated cells was reduced by approximately 20%, indicating that TTR was aggregating via the toxic pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "0ad28cbb-df8c-4a8f-9fe7-6fcc8fc83de9",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C40",
+      "claim": "\u03b11 inhibited 81% of the remaining TTR aggregation when added to 24-hr pre-incubated, toxic TTR",
+      "claim_type": "EXPLICIT",
+      "source": "However, when \u03b11 and \u03b13 were mixed with 24-hr pre-incubated, toxic TTR, they inhibited 81% and 77%, respectively, of the remaining TTR aggregation observed in the absence of inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from the aggregation assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "a1b447c1-0f0d-40cb-8035-b1812bab11e1",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C41",
+      "claim": "\u03b13 inhibited 77% of the remaining TTR aggregation when added to 24-hr pre-incubated, toxic TTR",
+      "claim_type": "EXPLICIT",
+      "source": "However, when \u03b11 and \u03b13 were mixed with 24-hr pre-incubated, toxic TTR, they inhibited 81% and 77%, respectively, of the remaining TTR aggregation observed in the absence of inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from the aggregation assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "dabc5023-928a-4ba0-9df1-a5fab2cadbda",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C42",
+      "claim": "\u03b11 inhibited approximately 87% of A\u03b2 fibril formation",
+      "claim_type": "EXPLICIT",
+      "source": "Again \u03b11 was more efficient, inhibiting approximately 87% of fibril formation compared with 66% for \u03b13, when measured after the reaction stabilized at 22 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "db094fd1-2979-49e9-a0ca-ca5e8191d2a7",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C43",
+      "claim": "\u03b13 inhibited 66% of A\u03b2 fibril formation",
+      "claim_type": "EXPLICIT",
+      "source": "Again \u03b11 was more efficient, inhibiting approximately 87% of fibril formation compared with 66% for \u03b13, when measured after the reaction stabilized at 22 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "180053d0-2c45-4984-8c18-596be955c4e9",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C44",
+      "claim": "The \u03b2-sheet design resulted in 62% inhibition of A\u03b2 fibrillization",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-sheet design, \u03b2, also resulted in 62% inhibition of A\u03b2 fibrillization, which began exerting its effect primarily between 0 and 6 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f9d5628b-e5b5-48b9-a9ed-1c7bdca6fd03",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C45",
+      "claim": "\u03b11 became inhibitory after A\u03b2 aggregation proceeded for approximately 6 hr",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, \u03b11 became inhibitory after aggregation proceeded for approximately 6 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "33b5cd67-6cba-4202-9f4e-7956a69af168",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C46",
+      "claim": "The peptide designs alone did not alter the fluorescence of ThT",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide designs alone did not alter the fluorescence of ThT, and, as with Congo red, they were indistinguishable from buffer\u2013only controls over the time course of the assay (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "725674e1-363a-4bd6-95f0-2d6b591840ae",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C47",
+      "claim": "A\u03b2 toxicity reduced the viability of treated SH-SY5Y cells to less than 50% after 6 hr incubation",
+      "claim_type": "EXPLICIT",
+      "source": "A\u03b2 toxicity was also assessed using the MTT assay and found to reduce the viability of treated SH-SY5Y cells to less than 50% after 6 hr incubation (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f7a7b201-88b3-4012-9d7d-4b5c684501d4",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C48",
+      "claim": "Addition of \u03b11 to a pre-aggregated (6 hr), toxic sample of A\u03b2 showed essentially complete inhibition of 97%",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of the \u03b1-sheet designs to a pre-aggregated (6 hr), toxic sample of A\u03b2 showed essentially complete inhibition of 97% for \u03b11 and 96% for \u03b13, compared with the extent of remaining aggregation observed in the absence of inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from the aggregation assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "797acebd-a55f-4381-a148-ccf61aac3728",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C49",
+      "claim": "Addition of \u03b13 to a pre-aggregated (6 hr), toxic sample of A\u03b2 showed essentially complete inhibition of 96%",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of the \u03b1-sheet designs to a pre-aggregated (6 hr), toxic sample of A\u03b2 showed essentially complete inhibition of 97% for \u03b11 and 96% for \u03b13, compared with the extent of remaining aggregation observed in the absence of inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from the aggregation assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "438cd992-f640-45a0-969d-5c5902fba005",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C50",
+      "claim": "All three immobilized \u03b1-sheet designs (\u03b11, \u03b12 and \u03b13) bound significantly more TTR from pre-incubated, toxic oligomer-containing TTR solutions than did the rc and \u03b2 controls",
+      "claim_type": "EXPLICIT",
+      "source": "All three immobilized \u03b1-sheet designs (\u03b11, \u03b12 and \u03b13) bound significantly more TTR from pre-incubated, toxic oligomer-containing TTR solutions (pre-incubated at low pH for 24 hr) than did the rc and \u03b2 controls (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f9c0c3b0-88bd-4d7c-aabf-a331f1f72945",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C51",
+      "claim": "The extent of TTR binding by the \u03b2 and rc controls is the same as that of the column matrix alone",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of TTR binding by the \u03b2 and rc controls is the same as that of the column matrix alone, which does bind some TTR in the absence of immobilized peptide (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "a1ff3139-68fc-4d29-9dc0-6a7182cbf97f",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C52",
+      "claim": "\u03b11, \u03b12 and \u03b13 bound pre-aggregated, toxic A\u03b2 preferentially, whereas \u03b2 and rc did not",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b11, \u03b12 and \u03b13 also bound pre-aggregated, toxic A\u03b2 preferentially, whereas \u03b2 and rc did not (Figure 3B, and see statistical analysis in Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3B and Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "99d8601d-16d2-4dec-9f47-fef46f2e8231",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C53",
+      "claim": "The \u03b2 design preferentially bound fresh, monomeric A\u03b2 solutions (0 hr) over the toxic solutions (6 hr)",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the \u03b2 design, it preferentially bound the fresh, monomeric A\u03b2 solutions (0 hr) over the toxic solutions (6 hr) (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "2b252541-4f17-489a-9d52-a8dc8f3f3eba",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C54",
+      "claim": "The \u03b2 design inhibition of A\u03b2 aggregation was due to interactions with the 'native' form, not the toxic oligomer",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that inhibition was due to interactions with the 'native' form, not the toxic oligomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the binding data shown in Figure 3C",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "bbdda6e8-feb4-4ead-8507-6ba3665b4e36",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C55",
+      "claim": "\u03b11 did not bind native, tetrameric TTR nor fresh, monomeric A\u03b2 but instead preferentially bound species from the toxic, aggregated 6 hr samples",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, \u03b1-sheet, as demonstrated with \u03b11, did not bind native, tetrameric TTR nor fresh, monomeric A\u03b2 but instead preferentially bound species from the toxic, aggregated 6 hr samples (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "5432bf16-3649-420a-bdd8-be45c434b322",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C56",
+      "claim": "The \u03b1-sheet designs did not bind the fibrillar forms of A\u03b2 or TTR acquired by allowing the aggregation reactions to continue for over 3 weeks",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the \u03b1-sheet designs did not bind the fibrillar forms of A\u03b2 or TTR acquired by allowing the aggregation reactions to continue for over 3 weeks, as illustrated with immobilized \u03b11 (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "ac612d22-14de-404e-ad34-7f76f14a296a",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C57",
+      "claim": "Mirror image structures formed by replacing whole L-amino acid sequences with D-amino acids produce mirror-image CD-spectra",
+      "claim_type": "EXPLICIT",
+      "source": "Mirror image structures, formed by replacing whole L-amino acid sequences with D-amino acids, such as gramicidin A, produce mirror-image CD-spectra (Koeppe et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koeppe et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "26cd8c87-5c79-49e4-92e7-0b3c81af9adc",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C58",
+      "claim": "The \u03b1-sheet structure would be effectively invisible in CD spectroscopy due to near equal absorbance of both left and right polarized light",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that the \u03b1-sheet structure would be effectively invisible due to near equal absorbance of both left and right polarized light, with any residual signal emanating from the turns and terminal residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about the expected CD properties of \u03b1-sheet",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "6223d92a-18b7-448c-b173-6e9a68ffd6dc",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C59",
+      "claim": "Density functional theory calculations of \u03b1-sheet structures predict a strong high-frequency absorbance in the 1675\u20131680 cm\u22121 region, with a weaker band around 1640 cm\u22121",
+      "claim_type": "EXPLICIT",
+      "source": "Torii recently performed density functional theory calculations of three slightly different orientations of \u03b1-sheet structures (Torii, 2008). All models featured a strong high-frequency absorbance in the 1675\u20131680 cm\u22121 region, with a weaker band around 1640 cm\u22121",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Torii, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "0edc5685-5ddc-45b1-b09f-f782a2d3c5c6",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C60",
+      "claim": "The predicted FTIR signature of \u03b1-sheet appears to be distinct from \u03b1-helix (\u223c1650\u20131658 cm\u22121), \u03b2-sheet (\u223c1620\u20131640 cm\u22121) and turn structures (\u223c1670 cm\u22121)",
+      "claim_type": "EXPLICIT",
+      "source": "which appears to be distinct from \u03b1-helix (\u223c1650\u20131658 cm\u22121), \u03b2-sheet (\u223c1620\u20131640 cm\u22121) and turn structures (\u223c1670 cm\u22121) (Barth and Zscherp, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barth and Zscherp, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f4a32b46-079f-4250-9945-f83b1c5d4e72",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C61",
+      "claim": "Strong sequential dNN Nuclear Overhauser Effect crosspeaks are expected along the backbone of \u03b1-sheet due to the unique alignment of the amide groups",
+      "claim_type": "EXPLICIT",
+      "source": "Owing to the unique alignment of the amide groups in an \u03b1-sheet, we expect to see strong sequential dNN Nuclear Overhauser Effect (NOE) crosspeaks along the backbone since the NH groups are aligned on one side of the chain instead of alternating between opposite faces as in \u03b2-sheet structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about expected NMR properties of \u03b1-sheet",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "babffc19-a72c-496f-b465-262222f3f40f",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C62",
+      "claim": "Long-range dNN or strong sequential d\u03b1N NOEs characteristic of \u03b2-sheets would not be expected in \u03b1-sheet",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we would not expect to observe the long-range dNN or the strong sequential d\u03b1N NOEs characteristic of \u03b2-sheets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about expected NMR properties of \u03b1-sheet",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "aa720dc0-9777-4c3a-8066-49bbd3c9e2e9",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C63",
+      "claim": "The CD spectrum of rc shows a random coil signal with a strong negative absorption around 200 nm",
+      "claim_type": "EXPLICIT",
+      "source": "The CD spectrum of rc shows a random coil signal with a strong negative absorption around 200 nm (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "09748460-dc61-4112-965e-6f9c3c999ddf",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C64",
+      "claim": "The rc peptide shows multiple small absorbance peaks in FTIR not corresponding to a predominance of any specific structure",
+      "claim_type": "EXPLICIT",
+      "source": "In its FTIR spectrum we observe multiple small absorbance peaks not corresponding to a predominance of any specific structure (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "d962677f-2859-4123-b97e-75e1e92b17ea",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C65",
+      "claim": "\u03b2 exhibits a CD spectrum reflective of \u03b2-structure and random coil, with a minimum near 220 nm and another near 200 nm",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous structural work (Cochran et al., 2001a), \u03b2 exhibits a CD spectrum reflective of \u03b2-structure and random coil, with a minimum near 220 nm and another near 200 nm (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Cochran et al., 2001a and data shown in Figure 4A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f143aa3f-4001-4150-b710-0e51c50c60b8",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C66",
+      "claim": "The \u03b2-sheet structure of \u03b2 was confirmed by FTIR through its strong absorbance at 1632 cm\u22121",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-sheet structure was confirmed by FTIR through its strong absorbance at 1632 cm\u22121 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "9c5af269-4fcb-402b-b362-7161e43df053",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C67",
+      "claim": "The CD spectra for \u03b11, \u03b12 and \u03b13 are essentially featureless, as expected for the cancellation of \u03b1L and \u03b1R signals, except for a slight dip around 200 nm consistent with turn formation",
+      "claim_type": "EXPLICIT",
+      "source": "The CD spectra for \u03b11, \u03b12 and \u03b13 are essentially featureless, as expected for the cancellation of \u03b1L and \u03b1R signals, except for a slight dip around 200 nm consistent with turn formation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "d21953d4-97b5-4aef-aeb4-47f97aeceed5",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C68",
+      "claim": "\u03b11 and \u03b12 exhibited the predicted FTIR \u03b1-sheet bands at 1640 and 1675\u20131680 cm\u22121",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b11 and \u03b12 exhibited the predicted FTIR \u03b1-sheet bands at 1640 and 1675\u20131680 cm\u22121 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "d1e5c0da-1e4b-4325-b0f6-cf014c8a4f3d",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C69",
+      "claim": "The FTIR \u03b1-sheet bands were less pronounced in \u03b13",
+      "claim_type": "EXPLICIT",
+      "source": "These bands were less pronounced in \u03b13.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "9aaa5d82-c909-4b20-aca4-3405d21c8841",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C70",
+      "claim": "Cyclization of the amide backbone of \u03b13 through a non-optimal turn may have caused distortion of the structure",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclization of the amide backbone of \u03b13 through a non-optimal turn may have caused distortion of the structure, as has been reported in other peptide systems (Clark et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Clark et al., 2005 and inference from the FTIR data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "ba2308f7-07db-4b7e-b910-703c84704e23",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C71",
+      "claim": "The designed \u03b1-sheet peptides do not form \u03b1-helix or \u03b2-sheet structure, and the random coil content is not large",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results prove that the designed \u03b1-sheet peptides do not form \u03b1-helix or \u03b2-sheet structure, and that the random coil content is not large (compare against the scale of the rc control CD spectrum).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the CD and FTIR data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "23d99c81-6762-469d-a29e-571a23fdb8aa",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C72",
+      "claim": "Multiple sequential dNN NOEs were observed along the backbones of both \u03b11 and \u03b13",
+      "claim_type": "EXPLICIT",
+      "source": "We performed further structural studies utilizing homonuclear NMR spectroscopy. Multiple sequential dNN NOEs were observed along the backbones of both \u03b11 and \u03b13 (\u03b12 was not soluble enough for NMR) (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4C and 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "bcad9dc3-98b2-49db-98fa-eb2c7ab7f95f",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C73",
+      "claim": "No long-range dNN or d\u03b1N NOEs indicative of \u03b1-helical or \u03b2-sheet structure were observed in \u03b11 and \u03b13",
+      "claim_type": "EXPLICIT",
+      "source": "No long-range dNN or d\u03b1N NOEs indicative of \u03b1-helical or \u03b2-sheet structure (W\u00fcthrich, 1986) were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR data and citation to W\u00fcthrich, 1986",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "f45a2b3f-a5d7-4710-a86f-8ccabc86ddc9",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C74",
+      "claim": "The calculated NH\u2013NH distances in the strands are much shorter in the \u03b1-sheet compared to \u03b2-sheet, consistent with the strong dNN NOEs observed for both \u03b11 and \u03b13",
+      "claim_type": "EXPLICIT",
+      "source": "The calculated NH\u2013NH distances in the strands are much shorter in the \u03b1-sheet, consistent with the strong dNN NOEs observed for both \u03b11 and \u03b13",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "aa8b650b-1cbe-4a06-bbe8-d1cee32b9ecb",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C75",
+      "claim": "The NMR data are consistent with \u03b1-sheet secondary structure and inconsistent with \u03b1-helix, random coil, and \u03b2-sheet structures",
+      "claim_type": "EXPLICIT",
+      "source": "however, in support of the CD and FTIR spectroscopic data, the NMR data are consistent with \u03b1-sheet secondary structure and inconsistent with \u03b1-helix, random coil, and \u03b2-sheet structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the NMR data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "fda4ae7f-3b3a-4b4c-807f-cfa6418f19a1",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C76",
+      "claim": "Ten years ago a common conformation was demonstrated among soluble oligomeric species from amyloid proteins/peptides of diverse sequence and structures that cross react with the A11 antibody",
+      "claim_type": "EXPLICIT",
+      "source": "Ten years ago a common conformation was demonstrated among soluble oligomeric species from amyloid proteins/peptides of diverse sequence and structures that cross react with the A11 antibody (Kayed et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kayed et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "53b43b25-d8de-4645-9201-8191924d72d2",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C77",
+      "claim": "The oligomers are conformationally heterogeneous",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the precise structure of this toxic intermediate remains elusive, and it has become clear that the oligomers are conformationally heterogeneous (Carulla et al., 2009; Bitan et al., 2005, and references therein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carulla et al., 2009 and Bitan et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "c14b7f09-64ad-4396-ab7e-99446cf46fc6",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C78",
+      "claim": "Three computationally derived \u03b1-sheet designs were synthesized and characterized experimentally, and they appear to adopt \u03b1-sheet structure",
+      "claim_type": "EXPLICIT",
+      "source": "Three of these computationally derived designs were synthesized and characterized experimentally, and they do indeed appear to adopt \u03b1-sheet structure (as shown by FTIR, CD and NMR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the FTIR, CD, and NMR data presented",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "ae8cb229-a7ee-47b9-9bed-2372c250c87f",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C79",
+      "claim": "The two soluble \u03b1-sheet designs (\u03b11 and \u03b13) inhibited both TTR and A\u03b2 aggregation in solution",
+      "claim_type": "EXPLICIT",
+      "source": "The two soluble \u03b1-sheet designs (\u03b11 and \u03b13) inhibited both TTR and A\u03b2 aggregation in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the aggregation assay data presented in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "1af02629-5542-48a6-b31d-5c489fcb5055",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C80",
+      "claim": "When immobilized to agarose beads, all three \u03b1-sheet designs bound species from the toxic TTR and A\u03b2 preparations preferentially over the nontoxic fresh samples",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when immobilized to agarose beads, all three \u03b1-sheet designs bound species from the toxic TTR and A\u03b2 preparations preferentially over the nontoxic fresh samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the binding assay data presented in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "94487a16-10b4-472e-a815-b43484fb3e1c",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C81",
+      "claim": "The \u03b2 control formed a \u03b2-hairpin and preferentially bound the monomeric form of A\u03b2 and did not react with TTR",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the \u03b2 control formed a \u03b2-hairpin, as supported by CD and FTIR, and it preferentially bound the monomeric form of A\u03b2 and it did not react with TTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the CD, FTIR, and binding assay data presented",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "62a76760-d5bd-431e-ac04-abe74968b454",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C82",
+      "claim": "When mature fibrils were applied to the immobilized \u03b1-sheet designs, the fibrils did not bind and appeared to have no affinity for the \u03b1-sheet structure",
+      "claim_type": "EXPLICIT",
+      "source": "When mature fibrils were applied to the immobilized \u03b1\u2212sheet designs, the fibrils did not bind and appeared to have no affinity for the \u03b1-sheet structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the binding assay data presented in Figure 3\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "2789aff9-c2f1-4ca5-895c-d3e4cbb84022",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C83",
+      "claim": "The \u03b1-sheet peptides were not designed against a specific protein target, yet inhibition of aggregation was observed in two very different amyloid systems",
+      "claim_type": "EXPLICIT",
+      "source": "While these \u03b1-sheet peptides were not designed against a specific protein target, we observed inhibition of aggregation in two very different amyloid systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the experimental results showing inhibition in both TTR and A\u03b2 systems",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "6ee4f432-90ce-4757-90bd-57f2ce439a59",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C84",
+      "claim": "These results support the hypothesis that \u03b1-sheet structure is involved in the toxic oligomeric stage of aggregation",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our hypothesis that \u03b1-sheet structure is involved in the toxic oligomeric stage of aggregation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from all the experimental results presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "bc84650b-923c-461f-b996-fbc7feab0e20",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C85",
+      "claim": "The \u03b1-sheet designs may aid in capture of the elusive toxic oligomeric species for in-depth characterization",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the \u03b1-sheet designs may aid in capture of the elusive toxic oligomeric species for in-depth characterization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about potential applications of the \u03b1-sheet designs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "1c1b58cb-c36e-4c23-a61b-386038e4ac2b",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C86",
+      "claim": "The \u03b1-sheet designs introduce a novel class of amyloid inhibitors that target the toxic soluble oligomeric state of different amyloidogenic peptides and proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Having demonstrated that the \u03b1-sheet structure may constitute a broad-based inhibitor of amyloidosis, our \u03b1-sheet designs introduce a novel class of amyloid inhibitors that target the toxic soluble oligomeric state of different amyloidogenic peptides and proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the experimental results showing inhibition in multiple amyloid systems",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "583c7246-1e41-4391-9075-619f99618bcc",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C87",
+      "claim": "At 0 ns, residues 105-121 of transthyretin form a \u03b2-hairpin",
+      "claim_type": "EXPLICIT",
+      "source": "At 0 ns (top left) the residues of interest form a \u03b2-hairpin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1A showing the structure at 0 ns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "1d284b18-a110-419d-8434-8f906191eed0",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C88",
+      "claim": "After 30 ns of MD simulation, the \u03b2-sheet in transthyretin residues 105-121 has converted to an \u03b1-sheet",
+      "claim_type": "EXPLICIT",
+      "source": "After 30 ns (top right) the \u03b2-sheet has converted to an \u03b1-sheet.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1A showing the structure at 30 ns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "48a79c54-192a-44ab-bbe5-8f592fcbbee1",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C89",
+      "claim": "The dihedral angles for residues 105-121 of transthyretin at 0 ns are found mainly in the \u03b2-region of the Ramachandran plot",
+      "claim_type": "EXPLICIT",
+      "source": "The dihedral angles for 1 ns of dynamics of these residues are found mainly in the \u03b2-region of the Ramachandran plot (top left quadrant, lower left panel; increasing frequency of occupancy is shown from blue through red) with several turn residues in the \u03b1R conformation (bottom left quadrant).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1A showing the Ramachandran plot at 0 ns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "b7a6b1eb-313d-4ffd-b2dc-c9a17acc0c03",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C90",
+      "claim": "After 30 ns, the majority of residues 105-121 of transthyretin have moved from the \u03b2-region to the \u03b1L or \u03b1R region of the Ramachandran plot",
+      "claim_type": "EXPLICIT",
+      "source": "The dihedral angles for 1 ns of dynamics of the same residues reveal that the majority of residues have moved from the \u03b2-region to the \u03b1L (top right quadrant) or \u03b1R region of the Ramachandran plot (lower right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1A showing the Ramachandran plot at 30 ns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "56d3e9a0-e0e2-4c1b-87b4-2cab28446808",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C91",
+      "claim": "Application of a TTR solution aggregated for 72 hr revealed the presence of small aggregates and fibrils",
+      "claim_type": "EXPLICIT",
+      "source": "Application of a TTR solution aggregated for 72 hr revealed the presence of small aggregates and fibrils.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2\u2014figure supplement 2 showing AFM images",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "1605b642-ffb4-44f1-853a-24c3f41a2f2d",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "claim_id": "C92",
+      "claim": "Application of an aggregated A\u03b2 solution reveals the presences of aggregates and fibrils",
+      "claim_type": "EXPLICIT",
+      "source": "Application of an aggregated A\u03b2 solution reveals the presences of aggregates and fibrils.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2\u2014figure supplement 4 showing AFM images",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b3dbf58c-aa3a-4095-92a7-49c0aefce9f7",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations of amyloid proteins under amyloidogenic conditions reveal formation of \u03b1-sheet structure in regions that coincide with experimentally determined amyloidogenic regions. Specifically, transthyretin residues 105-121 convert from \u03b2-hairpin to \u03b1-sheet structure during 30 ns MD simulation, with corresponding changes in Ramachandran plot occupancy from \u03b2-region to \u03b1L/\u03b1R regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 and C87-C90 collectively demonstrate \u03b1-sheet formation in MD simulations with supporting structural data from Figure 1A. The correlation between \u03b1-sheet formation sites and experimentally determined amyloidogenic regions (C15) strengthens the computational predictions. The Ramachandran analysis provides quantitative support for the conformational transition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "aca11334-1997-49de-bcac-6dd37d74364a",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "\u03b1-sheet is a secondary structure originally predicted by Pauling and Corey but deemed energetically unfavorable. It differs from \u03b2-sheet by having aligned NH groups on one side and carbonyls on the other, creating a molecular dipole. The structure features alternating \u03b1L and \u03b1R dihedral angles that form an extended chain with uniform electrostatic faces, and could potentially convert to \u03b2-sheet via peptide plane flip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 provide a comprehensive structural description of \u03b1-sheet supported by historical citations (Pauling and Corey, 1951) and computational work (Daggett, 2006; Armen et al., 2004b). The structural characterization is internally consistent and well-referenced, though the conversion mechanism (C24) remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "0d772a0b-7201-4a20-b4d4-19b9e902d13c",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03b1-sheet structure has been observed in a peptide crystal structure and short stretches of \u03b1-strand exist in various Protein Data Bank entries, but extensive \u03b1-sheet formation has not been observed in native proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by appropriate citations (Di Blasio et al., 1994; Daggett, 2006) and represent accurate statements about the limited experimental observation of \u03b1-sheet in native protein structures. This provides important context for why \u03b1-sheet might be associated with non-native, aggregation-prone states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "0c96a3f4-91b9-46df-869e-559bad2fb1e1",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MD simulations demonstrate that L-alanine preferentially adopts \u03b1R conformation while D-alanine favors \u03b1L conformation. Peptides with alternating D- and L-amino acids form extended structures that populate similar conformational space as \u03b1-sheet sequences composed solely of L-amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by MD simulation data (Beck et al., 2008) shown in Figure 1B and historical literature on alternating D/L peptides (De Santis et al., 1974; Heitz et al., 1981). This provides the rational basis for using D-amino acids to stabilize \u03b1-sheet structures in the designed peptides.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "\u03b1-sheet peptides \u03b11 and \u03b13 inhibit TTR aggregation by 72% and 56% respectively at 48 hr, while control peptides show minimal inhibition. TTR becomes toxic after 24 hr aggregation (reducing cell viability by ~20%), and addition of \u03b11 or \u03b13 to pre-aggregated toxic TTR inhibits 81% and 77% of remaining aggregation respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 are supported by Congo red binding data (Figure 2A) and MTT toxicity assays (Figure 2B). The controls (rc and \u03b2) show appropriate negative results. Statistical significance is indicated (p<0.05) for toxicity measurements. The experimental design appropriately tests both co-incubation and addition to pre-aggregated samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "\u03b1-sheet peptides inhibit A\u03b2 fibril formation with \u03b11 showing 87% inhibition and \u03b13 showing 66% inhibition at 22 hr. The \u03b2-sheet control shows 62% inhibition but acts early (0-6 hr) while \u03b11 becomes inhibitory after 6 hr. A\u03b2 reduces cell viability to <50% after 6 hr, and addition of \u03b11 or \u03b13 to pre-aggregated toxic A\u03b2 shows 97% and 96% inhibition respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 are supported by ThT fluorescence data (Figure 2C) and MTT toxicity assays (Figure 2D). The temporal differences between \u03b2 and \u03b11 inhibition mechanisms are clearly demonstrated. Controls show peptides alone do not affect ThT fluorescence (C46, Figure 2\u2014figure supplement 4). Statistical significance is indicated for toxicity measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "ca558a19-0ca0-4108-be8c-7401d358d37c",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Immobilized \u03b1-sheet designs (\u03b11, \u03b12, \u03b13) preferentially bind toxic oligomer-containing TTR and A\u03b2 solutions over fresh samples, while \u03b2 and rc controls show minimal binding. The \u03b2 control preferentially binds fresh monomeric A\u03b2 over toxic samples, indicating different binding mechanisms. \u03b1-sheet designs do not bind mature fibrils from either TTR or A\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 are supported by dot blot analysis data (Figures 3A-D and supplements). Statistical analysis confirms significant differences between \u03b1-sheet designs and controls (Figure 3\u2014figure supplements 1 and 3). The differential binding to toxic vs. non-toxic and fibrillar species provides strong evidence for specific recognition of oligomeric intermediates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "bf79c37c-657c-451d-b70c-566e450a676a",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Spectroscopic predictions for \u03b1-sheet include: CD spectra should be nearly featureless due to cancellation of \u03b1L and \u03b1R signals; FTIR should show distinct bands at 1675-1680 cm\u207b\u00b9 and 1640 cm\u207b\u00b9; NMR should show strong sequential dNN NOEs but not the long-range dNN or strong sequential d\u03b1N NOEs characteristic of \u03b2-sheets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 provide testable predictions based on structural principles and computational work (Torii, 2008; Koeppe et al., 1992; Barth and Zscherp, 2002). While some predictions are speculative (C58, C61, C62), they are logically derived from the unique structural features of \u03b1-sheet and provide a framework for experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "d77033bf-5d2d-44a2-9972-98e69156bb99",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CD and FTIR spectroscopy confirm designed peptide structures: rc shows random coil, \u03b2 shows \u03b2-sheet structure (1632 cm\u207b\u00b9), and \u03b11/\u03b12/\u03b13 show featureless CD spectra with FTIR bands at 1640 and 1675-1680 cm\u207b\u00b9 consistent with \u03b1-sheet. The \u03b1-sheet peptides do not form \u03b1-helix, \u03b2-sheet, or extensive random coil structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 are supported by experimental CD (Figure 4A) and FTIR (Figure 4B) data. The spectroscopic signatures match predictions and distinguish \u03b1-sheet from conventional secondary structures. The weaker FTIR bands in \u03b13 (C69) are explained by potential structural distortion from cyclization (C70), supported by literature precedent (Clark et al., 2005).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "6a8ccd02-3313-4943-be48-30f00f4297a4",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NMR spectroscopy reveals multiple sequential dNN NOEs along the backbones of \u03b11 and \u03b13, with no long-range dNN or d\u03b1N NOEs characteristic of \u03b1-helix or \u03b2-sheet. Calculated NH-NH distances in \u03b1-sheet are much shorter than in \u03b2-sheet, consistent with observed strong dNN NOEs. The NMR data support \u03b1-sheet structure and are inconsistent with \u03b1-helix, random coil, or \u03b2-sheet.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are supported by experimental NMR data (Figure 4C,D) and computational distance calculations (Figure 4\u2014figure supplements 1-3). The pattern of NOEs is distinctive and consistent with \u03b1-sheet structure. The comparison with calculated distances from MD simulations strengthens the structural assignment, though the authors acknowledge inability to generate well-converged solution structures due to lack of long-range restraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "5d14c200-726e-43a3-9369-2a7caa6a27ea",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Three computationally designed \u03b1-sheet peptides adopt \u03b1-sheet structure (by FTIR, CD, NMR) and inhibit aggregation of both TTR and A\u03b2 in solution. When immobilized, they preferentially bind toxic oligomeric species over monomers or fibrils. These results support the hypothesis that \u03b1-sheet structure is involved in the toxic oligomeric stage of aggregation and introduce a novel class of broad-spectrum amyloid inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C84 and C86 represent the main conclusions supported by the comprehensive experimental data. The convergence of structural characterization (CD, FTIR, NMR), functional inhibition assays (TTR and A\u03b2), selective binding to toxic species, and lack of binding to fibrils or monomers provides strong support for the \u03b1-sheet hypothesis. The broad-spectrum activity across two different amyloid systems strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "46d59156-09b6-4882-9ea5-c32ba083a0eb",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on amyloid diseases: Over 40 human amyloid diseases exist, mature fibrils have cross \u03b2-sheet structure, but soluble oligomeric intermediates (not fibrils) are preferentially responsible for toxicity. Fibrils may be protective as their breakdown yields greater toxicity, supported by compounds that promote inclusion formation while reducing toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide well-established background information supported by appropriate citations to the amyloid literature. These claims accurately represent the current understanding of amyloid diseases and the toxic oligomer hypothesis, providing essential context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "4dcea66f-adb2-4a83-9b7b-d931e3520922",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The A11 antibody recognizes a common backbone structure in soluble oligomeric intermediates from diverse amyloid proteins but does not bind fibrils or native precursors. This antibody inhibits toxicity, suggesting a common mechanism. However, oligomers are conformationally heterogeneous and the precise structure remains elusive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13, C76-C77 accurately describe prior work on the A11 antibody (Kayed et al., 2003; Glabe and Kayed, 2006) and the challenge of oligomer heterogeneity (Carulla et al., 2009; Bitan et al., 2005). This provides important motivation for the current study's approach to identifying a common structural feature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "2a2213e7-8c82-49e1-b8de-2322d816fb76",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TTR and A\u03b2(1-42) have well-characterized aggregation profiles and aggregate under mild, non-denaturing conditions. \u03b2-hairpins are known inhibitors of A\u03b2 aggregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by appropriate citations and provide justification for the choice of experimental systems and control peptides. This represents standard background information for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "72f6dc61-bf39-47f2-8660-195582f3d5b3",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "AFM imaging confirms the presence of small aggregates and fibrils in TTR solutions aggregated for 72 hr and in aggregated A\u03b2 solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are supported by AFM images (Figure 2\u2014figure supplements 2 and 4) that provide visual confirmation of fibril formation. This validates that the aggregation assays are detecting actual fibril formation rather than artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    },
+    {
+      "id": "421685d6-4ea6-4b4d-867d-951a13fbef81",
+      "content_id": "3d3eef54-e782-474f-9286-b6ed85f0e14a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The \u03b1-sheet designs may aid in capture of elusive toxic oligomeric species for in-depth characterization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is speculative about future applications. While the binding data support that \u03b1-sheet designs can capture oligomeric species, whether this will enable 'in-depth characterization' remains to be demonstrated. This represents a reasonable hypothesis for future work but is not validated by the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:35.957969Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d88b15f0-c9d8-437e-8876-5e74efc9421e",
+      "result_id": "b3dbf58c-aa3a-4095-92a7-49c0aefce9f7"
+    },
+    {
+      "claim_id": "8f93d64f-76ec-4e51-bcb7-d7b5107ee09b",
+      "result_id": "b3dbf58c-aa3a-4095-92a7-49c0aefce9f7"
+    },
+    {
+      "claim_id": "b292408f-d57d-4c0f-87ce-adc3fd2b861c",
+      "result_id": "b3dbf58c-aa3a-4095-92a7-49c0aefce9f7"
+    },
+    {
+      "claim_id": "583c7246-1e41-4391-9075-619f99618bcc",
+      "result_id": "b3dbf58c-aa3a-4095-92a7-49c0aefce9f7"
+    },
+    {
+      "claim_id": "1d284b18-a110-419d-8434-8f906191eed0",
+      "result_id": "b3dbf58c-aa3a-4095-92a7-49c0aefce9f7"
+    },
+    {
+      "claim_id": "48a79c54-192a-44ab-bbe5-8f592fcbbee1",
+      "result_id": "b3dbf58c-aa3a-4095-92a7-49c0aefce9f7"
+    },
+    {
+      "claim_id": "b7a6b1eb-313d-4ffd-b2dc-c9a17acc0c03",
+      "result_id": "b3dbf58c-aa3a-4095-92a7-49c0aefce9f7"
+    },
+    {
+      "claim_id": "fc1c2dec-c740-46bb-96f4-98a1583e3490",
+      "result_id": "aca11334-1997-49de-bcac-6dd37d74364a"
+    },
+    {
+      "claim_id": "a13dc33c-5af5-4e3e-aa25-77e6234dd3ae",
+      "result_id": "aca11334-1997-49de-bcac-6dd37d74364a"
+    },
+    {
+      "claim_id": "113fe794-ca54-4dda-bc7e-4f19448025b2",
+      "result_id": "aca11334-1997-49de-bcac-6dd37d74364a"
+    },
+    {
+      "claim_id": "da586023-1e16-4764-9a57-795537ecd3c5",
+      "result_id": "aca11334-1997-49de-bcac-6dd37d74364a"
+    },
+    {
+      "claim_id": "f294f45f-a678-4259-bf22-965855e31823",
+      "result_id": "aca11334-1997-49de-bcac-6dd37d74364a"
+    },
+    {
+      "claim_id": "3eb81fd8-b6d1-4803-a0bb-97bdfed4c6e3",
+      "result_id": "aca11334-1997-49de-bcac-6dd37d74364a"
+    },
+    {
+      "claim_id": "6f716f27-2d9a-48ad-8bf1-5d03151fa256",
+      "result_id": "aca11334-1997-49de-bcac-6dd37d74364a"
+    },
+    {
+      "claim_id": "168d6e98-c2ff-4861-86db-44dc3cf739cd",
+      "result_id": "aca11334-1997-49de-bcac-6dd37d74364a"
+    },
+    {
+      "claim_id": "89e5e80e-64a8-4785-bbd3-e171f0dbaf17",
+      "result_id": "0d772a0b-7201-4a20-b4d4-19b9e902d13c"
+    },
+    {
+      "claim_id": "942c8589-1044-4cae-bca9-ab393d2db2fc",
+      "result_id": "0d772a0b-7201-4a20-b4d4-19b9e902d13c"
+    },
+    {
+      "claim_id": "423f350b-5bb9-4976-89df-c48473bb2ef4",
+      "result_id": "0d772a0b-7201-4a20-b4d4-19b9e902d13c"
+    },
+    {
+      "claim_id": "f9595623-1edf-4985-90a4-83f133c674f2",
+      "result_id": "0c96a3f4-91b9-46df-869e-559bad2fb1e1"
+    },
+    {
+      "claim_id": "0fea1ea2-d45f-49a4-8c1d-b4cdba297e1e",
+      "result_id": "0c96a3f4-91b9-46df-869e-559bad2fb1e1"
+    },
+    {
+      "claim_id": "a7a7fbab-bca0-407c-821e-aa9fd01c22bc",
+      "result_id": "0c96a3f4-91b9-46df-869e-559bad2fb1e1"
+    },
+    {
+      "claim_id": "383b9608-ccb5-48ee-bfcc-f68b56d9d359",
+      "result_id": "0c96a3f4-91b9-46df-869e-559bad2fb1e1"
+    },
+    {
+      "claim_id": "dc42002a-6448-43a7-aeb3-5306aee3b3a4",
+      "result_id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70"
+    },
+    {
+      "claim_id": "110b5173-f951-4c70-9f2d-ac804fa0125c",
+      "result_id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70"
+    },
+    {
+      "claim_id": "3c10fd78-4fab-488f-8c3c-861564bb3ed8",
+      "result_id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70"
+    },
+    {
+      "claim_id": "9cec2705-30d7-4ef7-ba75-cd0b381b1638",
+      "result_id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70"
+    },
+    {
+      "claim_id": "15bd6435-a508-4c0d-b6b5-009d3bfbc3c6",
+      "result_id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70"
+    },
+    {
+      "claim_id": "33ae4a19-3fbd-409f-bf2c-b21f0d496c61",
+      "result_id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70"
+    },
+    {
+      "claim_id": "0ad28cbb-df8c-4a8f-9fe7-6fcc8fc83de9",
+      "result_id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70"
+    },
+    {
+      "claim_id": "a1b447c1-0f0d-40cb-8035-b1812bab11e1",
+      "result_id": "d21ca128-c56e-49d2-b01d-3ec54b3dbe70"
+    },
+    {
+      "claim_id": "dabc5023-928a-4ba0-9df1-a5fab2cadbda",
+      "result_id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156"
+    },
+    {
+      "claim_id": "db094fd1-2979-49e9-a0ca-ca5e8191d2a7",
+      "result_id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156"
+    },
+    {
+      "claim_id": "180053d0-2c45-4984-8c18-596be955c4e9",
+      "result_id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156"
+    },
+    {
+      "claim_id": "f9d5628b-e5b5-48b9-a9ed-1c7bdca6fd03",
+      "result_id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156"
+    },
+    {
+      "claim_id": "33b5cd67-6cba-4202-9f4e-7956a69af168",
+      "result_id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156"
+    },
+    {
+      "claim_id": "725674e1-363a-4bd6-95f0-2d6b591840ae",
+      "result_id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156"
+    },
+    {
+      "claim_id": "f7a7b201-88b3-4012-9d7d-4b5c684501d4",
+      "result_id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156"
+    },
+    {
+      "claim_id": "797acebd-a55f-4381-a148-ccf61aac3728",
+      "result_id": "7ce7655f-f6e7-4354-8f44-c2d2a4569156"
+    },
+    {
+      "claim_id": "438cd992-f640-45a0-969d-5c5902fba005",
+      "result_id": "ca558a19-0ca0-4108-be8c-7401d358d37c"
+    },
+    {
+      "claim_id": "f9c0c3b0-88bd-4d7c-aabf-a331f1f72945",
+      "result_id": "ca558a19-0ca0-4108-be8c-7401d358d37c"
+    },
+    {
+      "claim_id": "a1ff3139-68fc-4d29-9dc0-6a7182cbf97f",
+      "result_id": "ca558a19-0ca0-4108-be8c-7401d358d37c"
+    },
+    {
+      "claim_id": "99d8601d-16d2-4dec-9f47-fef46f2e8231",
+      "result_id": "ca558a19-0ca0-4108-be8c-7401d358d37c"
+    },
+    {
+      "claim_id": "2b252541-4f17-489a-9d52-a8dc8f3f3eba",
+      "result_id": "ca558a19-0ca0-4108-be8c-7401d358d37c"
+    },
+    {
+      "claim_id": "bbdda6e8-feb4-4ead-8507-6ba3665b4e36",
+      "result_id": "ca558a19-0ca0-4108-be8c-7401d358d37c"
+    },
+    {
+      "claim_id": "5432bf16-3649-420a-bdd8-be45c434b322",
+      "result_id": "ca558a19-0ca0-4108-be8c-7401d358d37c"
+    },
+    {
+      "claim_id": "ac612d22-14de-404e-ad34-7f76f14a296a",
+      "result_id": "bf79c37c-657c-451d-b70c-566e450a676a"
+    },
+    {
+      "claim_id": "26cd8c87-5c79-49e4-92e7-0b3c81af9adc",
+      "result_id": "bf79c37c-657c-451d-b70c-566e450a676a"
+    },
+    {
+      "claim_id": "6223d92a-18b7-448c-b173-6e9a68ffd6dc",
+      "result_id": "bf79c37c-657c-451d-b70c-566e450a676a"
+    },
+    {
+      "claim_id": "0edc5685-5ddc-45b1-b09f-f782a2d3c5c6",
+      "result_id": "bf79c37c-657c-451d-b70c-566e450a676a"
+    },
+    {
+      "claim_id": "f4a32b46-079f-4250-9945-f83b1c5d4e72",
+      "result_id": "bf79c37c-657c-451d-b70c-566e450a676a"
+    },
+    {
+      "claim_id": "babffc19-a72c-496f-b465-262222f3f40f",
+      "result_id": "bf79c37c-657c-451d-b70c-566e450a676a"
+    },
+    {
+      "claim_id": "aa720dc0-9777-4c3a-8066-49bbd3c9e2e9",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "09748460-dc61-4112-965e-6f9c3c999ddf",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "d962677f-2859-4123-b97e-75e1e92b17ea",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "f143aa3f-4001-4150-b710-0e51c50c60b8",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "9c5af269-4fcb-402b-b362-7161e43df053",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "d21953d4-97b5-4aef-aeb4-47f97aeceed5",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "d1e5c0da-1e4b-4325-b0f6-cf014c8a4f3d",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "9aaa5d82-c909-4b20-aca4-3405d21c8841",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "ba2308f7-07db-4b7e-b910-703c84704e23",
+      "result_id": "d77033bf-5d2d-44a2-9972-98e69156bb99"
+    },
+    {
+      "claim_id": "23d99c81-6762-469d-a29e-571a23fdb8aa",
+      "result_id": "6a8ccd02-3313-4943-be48-30f00f4297a4"
+    },
+    {
+      "claim_id": "bcad9dc3-98b2-49db-98fa-eb2c7ab7f95f",
+      "result_id": "6a8ccd02-3313-4943-be48-30f00f4297a4"
+    },
+    {
+      "claim_id": "f45a2b3f-a5d7-4710-a86f-8ccabc86ddc9",
+      "result_id": "6a8ccd02-3313-4943-be48-30f00f4297a4"
+    },
+    {
+      "claim_id": "aa8b650b-1cbe-4a06-bbe8-d1cee32b9ecb",
+      "result_id": "6a8ccd02-3313-4943-be48-30f00f4297a4"
+    },
+    {
+      "claim_id": "c14b7f09-64ad-4396-ab7e-99446cf46fc6",
+      "result_id": "5d14c200-726e-43a3-9369-2a7caa6a27ea"
+    },
+    {
+      "claim_id": "ae8cb229-a7ee-47b9-9bed-2372c250c87f",
+      "result_id": "5d14c200-726e-43a3-9369-2a7caa6a27ea"
+    },
+    {
+      "claim_id": "1af02629-5542-48a6-b31d-5c489fcb5055",
+      "result_id": "5d14c200-726e-43a3-9369-2a7caa6a27ea"
+    },
+    {
+      "claim_id": "94487a16-10b4-472e-a815-b43484fb3e1c",
+      "result_id": "5d14c200-726e-43a3-9369-2a7caa6a27ea"
+    },
+    {
+      "claim_id": "62a76760-d5bd-431e-ac04-abe74968b454",
+      "result_id": "5d14c200-726e-43a3-9369-2a7caa6a27ea"
+    },
+    {
+      "claim_id": "2789aff9-c2f1-4ca5-895c-d3e4cbb84022",
+      "result_id": "5d14c200-726e-43a3-9369-2a7caa6a27ea"
+    },
+    {
+      "claim_id": "6ee4f432-90ce-4757-90bd-57f2ce439a59",
+      "result_id": "5d14c200-726e-43a3-9369-2a7caa6a27ea"
+    },
+    {
+      "claim_id": "1c1b58cb-c36e-4c23-a61b-386038e4ac2b",
+      "result_id": "5d14c200-726e-43a3-9369-2a7caa6a27ea"
+    },
+    {
+      "claim_id": "990db532-7fa1-49b5-9088-8812935fb1fb",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "029c5b33-8916-4011-b3af-1c1fb74e7623",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "a53585ec-0b4e-41f6-8143-8a3161e0ef49",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "786d7596-8546-4462-932f-e81743c7d693",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "c3dfc322-7429-4077-9861-e75b8a2ce4f5",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "12faa43b-54e9-4cac-bf18-2bd88c2fa11e",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "b248cadd-9e24-40e7-9799-3b7d0dcec5a8",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "5f7d031e-2dce-4b9c-b542-66e92241f8fe",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "1ba36430-8b57-4543-94ef-5732cf79f34b",
+      "result_id": "46d59156-09b6-4882-9ea5-c32ba083a0eb"
+    },
+    {
+      "claim_id": "8bcc1782-dcee-44b6-b40d-bfd423429632",
+      "result_id": "4dcea66f-adb2-4a83-9b7b-d931e3520922"
+    },
+    {
+      "claim_id": "31d2f37c-bb45-45a2-a49b-11cd533e5c1e",
+      "result_id": "4dcea66f-adb2-4a83-9b7b-d931e3520922"
+    },
+    {
+      "claim_id": "fc60cf74-50c5-435a-addf-33e2326aa538",
+      "result_id": "4dcea66f-adb2-4a83-9b7b-d931e3520922"
+    },
+    {
+      "claim_id": "8c542059-0af5-4645-94da-5bf8a414d62f",
+      "result_id": "4dcea66f-adb2-4a83-9b7b-d931e3520922"
+    },
+    {
+      "claim_id": "fda4ae7f-3b3a-4b4c-807f-cfa6418f19a1",
+      "result_id": "4dcea66f-adb2-4a83-9b7b-d931e3520922"
+    },
+    {
+      "claim_id": "53b43b25-d8de-4645-9201-8191924d72d2",
+      "result_id": "4dcea66f-adb2-4a83-9b7b-d931e3520922"
+    },
+    {
+      "claim_id": "feda65d4-2326-475d-8e7e-91a7b0c258aa",
+      "result_id": "2a2213e7-8c82-49e1-b8de-2322d816fb76"
+    },
+    {
+      "claim_id": "99be17c3-0d86-4eef-87b4-699f7984c973",
+      "result_id": "2a2213e7-8c82-49e1-b8de-2322d816fb76"
+    },
+    {
+      "claim_id": "56d3e9a0-e0e2-4c1b-87b4-2cab28446808",
+      "result_id": "72f6dc61-bf39-47f2-8660-195582f3d5b3"
+    },
+    {
+      "claim_id": "1605b642-ffb4-44f1-853a-24c3f41a2f2d",
+      "result_id": "72f6dc61-bf39-47f2-8660-195582f3d5b3"
+    },
+    {
+      "claim_id": "bc84650b-923c-461f-b996-fbc7feab0e20",
+      "result_id": "421685d6-4ea6-4b4d-867d-951a13fbef81"
+    }
+  ],
+  "comparisons": []
+}

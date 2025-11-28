@@ -1,0 +1,2050 @@
+{
+  "submission": {
+    "id": "86e42b78-6aad-4626-b443-00332fac755e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:35:11.219110Z",
+    "updated_at": "2025-11-28T20:35:11.219110Z"
+  },
+  "content": [
+    {
+      "id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "submission_id": "86e42b78-6aad-4626-b443-00332fac755e",
+      "content_type": "manuscript",
+      "content_text": "# Systems analysis of the CO2 concentrating mechanism in cyanobacteria\n\n## Authors\n\n- Niall M Mangan<sup>1</sup> \u2020\n- Michael P Brenner<sup>1</sup> \u2020\n\n### Affiliations\n\n1. School of Engineering and Applied Sciences and Kavli Institute for Bionano Science and Technology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCyanobacteria are photosynthetic bacteria with a unique CO2 concentrating mechanism (CCM), enhancing carbon fixation. Understanding the CCM requires a systems level perspective of how molecular components work together to enhance CO2 fixation. We present a mathematical model of the cyanobacterial CCM, giving the parameter regime (expression levels, catalytic rates, permeability of carboxysome shell) for efficient carbon fixation. Efficiency requires saturating the RuBisCO reaction, staying below saturation for carbonic anhydrase, and avoiding wasteful oxygenation reactions. We find selectivity at the carboxysome shell is not necessary; there is an optimal non-specific carboxysome shell permeability. We compare the efficacy of facilitated CO2 uptake, CO2 scavenging, and HCO3\u2212 transport with varying external pH. At the optimal carboxysome permeability, contributions from CO2 scavenging at the cell membrane are small. We examine the cumulative benefits of CCM spatial organization strategies: enzyme co-localization and compartmentalization.\n\n## Introduction\n\nIntracellular compartments are critical for directing and protecting biochemical reactions. One of the simplest and most striking known examples of compartmentalization are the carboxysomes (Cannon et al., 2001; Yeates et al., 2008) of cyanobacteria and other autotrophic proteobacteria (Savage et al., 2010; Rosgaard et al., 2012). These small, 100\u2013200 nm compartments separate the principal reaction of the Calvin cycle, the RuBisCO catalyzed fixation of carbon dioxide (CO2) into 3-phosphoglycerate, from the rest of the cell (Cannon et al., 1991). CO2 and oxygen (O2) competitively bind as substrates of RuBisCO, and the reaction with O2 produces phosphoglycolate, a waste product which must be recycled by the cell (Jordan & Ogren, 1981; Tcherkez et al., 2006; Savir et al., 2010). To maximize carboxylation and minimize oxygenation, the carboxysome is believed to act as a diffusion barrier to CO2 (Reinhold et al., 1989; Dou et al., 2008). There is much interest in the design and function of such compartments and whether they can be used to enhance carbon fixation in other organisms such as plants or to improve reaction rates in other metabolic systems (Ducat & Silver, 2012; Agapakis et al., 2012; Papapostolou & Howorka, 2009; Frank et al., 2013). Increased efficiency of biochemical reactions will lead to better yield in bioengineered bacterial systems, creating new possibilities for production of high-value products such as biofuels. Enhancing carbon fixation in plants or other organisms could lead to increased carbon sequestration, or crop yield.\n\nThe concentrating mechanism in cyanobacteria relies on the interaction of a number of well characterized components, as shown in Figure 1, transferring inorganic carbon from outside the cell into cytosol and carboxysomes (Allen, 1984; Badger & Price, 2003; Kaplan & Reinhold, 1999; Price et al., 2007). Due to this mechanism, inorganic carbon concentration is elevated well above 200\u2013300 \u03bcM, the CO2 concentration required for saturating the RuBisCO. Additionally a high CO2 concentration increases the ratio of CO2 to O2 so that carboxylation dominates over oxygenation. Concentrations of 20\u201340 mM inorganic carbon, up to 4000-fold higher than external levels, have been observed (Kaplan & Reinhold, 1999; Woodger et al., 2005; Sultemeyer et al., 1995; Price et al., 1998). The bilipid outer and cell membranes are highly permeable to small uncharged molecules such as CO2 (Missner et al., 2008; Gutknecht et al., 1977), so instead the cell primarily accumulates the charged and less membrane soluble bicarbonate (HCO3\u2212) (Volokita et al., 1984; Price & Badger, 1989). Active transporters, both constitutive and inducible, bring HCO3\u2212 into the cell (Price et al., 2008, 2004; Omata et al., 1999), and mechanisms exist to actively convert CO2 to HCO3\u2212 at the thylakoid and cell membrane (Price et al., 2008; Maeda et al., 2002; Shibata et al., 2001). Once it passively diffuses into the carboxysome, HCO3\u2212 is rapidly brought into equilibrium with CO2 by the enzyme carbonic anhydrase, resulting in the production of CO2 near RuBisCO. Carbonic anhydrase is known to be localized on the interior side of the carboxysome shell (Yeates et al., 2008; Cannon et al., 1991; Cot et al., 2008; Long et al., 2008). The carboxysome shell must be permeable enough to allow HCO3\u2212 and 3-phosphoglycerate to readily diffuse in and out. The function of this system and its ability to concentrate inorganic carbon depends on the interplay between these various molecular components. Without a model, flux measurements cannot determine the components relative roles in enhancing the CO2 concentration in the carboxysome. To date, it has not been possible to directly measure the partitioning of the internal carbon concentration in the cytosol and carboxysomes. We wish to characterize the distribution of internal carbon. Visualizations of the location of the carboxysomes with fluorescent microscopy in Synechococcus elongatus PCC7942 demonstrated that the carboxysomes are evenly spaced along the centerline of the cell, (Savage et al., 2010), raising the question of how spatial organization, beyond simple partitioning, changes the efficacy of the system.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig1-v2.jpg)\n\n**Figure 1.:** Outer and cell membranes (in black), as well as, thylakoid membranes where the light reactions take place (in green) are treated together. Carboxysomes are shown as four hexagons evenly spaced along the centerline of the cell. The model treats a spherically symmetric cell, with one carboxysome at the center. Active $HCO_{3}^{\u2212}$ transport into the cell is indicated (in light blue), as well as active conversion from CO2 to $HCO_{3}^{\u2212}$, sometimes called \u2018facilitated uptake\u2019 or \u2018scavenging\u2019, at membranes (in orange). Both CO2 and $HCO_{3}^{\u2212}$ can leak in and out of the cell, with CO2 leaking out much more readily. Both species passively diffuse across the carboxysome shell. Carbonic anhydrase (red) and RuBisCO (blue) are contained in the carboxysomes and facilitate reactions as shown.\n\nThe goal of this study is to further develop a mathematical model of the CCM (Reinhold et al., 1989; Fridlyand et al., 1996; Reinhold et al., 1991) that uses recent experimental progress on the CCM to untangle the relative roles of the different molecular components, and predict the region of parameter space where efficient carbon fixation occurs. We are considering conditions where CO2 is limiting (15\u03bcM external inorganic carbon) and, for the moment, ignore other biological pressures. In this context, efficient carbon fixation requires two conditions: First, the CO2 concentration must be high enough that RuBisCO is saturated, and the competitive reaction with O2 is negligible. We emphasize that for the oxygenation reaction to be negligible the CO2 concentration should be higher than needed to merely saturate RuBisCO. Secondly, the carbonic anhydrase within the carboxysome must be unsaturated, so that extra energy isn't wasted transporting unused $HCO_{3}^{\u2212}$ into the cell.\n\nExamination of the system performance with varying expression levels of $HCO_{3}^{\u2212}$ transporters, carboxysome permeability, and conversion from CO2 to $HCO_{3}^{\u2212}$, reveals a parameter window where these conditions are simultaneously satisfied. We comment on the relation of this window to measured carbon pools, carbon fixation rates, and $HCO_{3}^{\u2212}$ transporters. We find that the $HCO_{3}^{\u2212}$ concentration in the cytosol is constant across the cell, set by the $HCO_{3}^{\u2212}$ transport and leakage rates, and depends very little on the carboxysome permeability. The carboxysome permeability does, however, set how the CO2 is partitioned between the carboxysome and cytosol. At optimal carboxysome permeability, $HCO_{3}^{\u2212}$ diffusion into the carboxysome is fast enough to supply inorganic carbon for fixation, but the rate of CO2 leakage out of the carboxysome is low. We explore the fluxes from CO2 facilitated uptake and scavenging with varying ratios of external CO2 and $HCO_{3}^{\u2212}$. Finally we discuss the proportion the carbon concentration comes from different methods of spatial organization such as co-localization, encapsulation, and spatial location of carboxysomes. Concentration of carbonic anhydrase increases the maximum rate of reaction for carbonic anhydrase per volume, causing carbonic anhydrase to saturate at a higher level of $HCO_{3}^{\u2212}$, and achieve an order of magnitude higher local CO2 concentrations. Encapsulation of the reactions in an optimally permeable carboxysome shell achieves another order of magnitude of CO2 concentration.\n\n### Reaction diffusion model\n\nWe present our mathematical model, which captures all aspects of the CCM as described above. This model is an expansion of previously developed models (Reinhold et al., 1989; Fridlyand et al., 1996; Reinhold et al., 1991). Our three dimensional model of the CCM solves for both the $HCO_{3}^{\u2212}$ and CO2 concentration throughout a spherical cell. We solve this model numerically and analytically at steady state for three different spatial organizations of carbonic anhydrase and RuBisCO in the cell (See Figure 6): enzymes distributed evenly throughout the cell, enzymes localized to the center of the cell but not encapsulated (as they would be on a scaffold), enzymes encapsulated in a carboxysome. We compare the effects of these scenarios in the discussion section, and for now consider a spherical cell of radius Rb = 0.5 \u03bcm with a single spherical carboxysome of radius Rc = 50 nm containing RuBisCO and carbonic anhydrase. Numerical computations are carried out with finite difference methods in MATLAB. The details of analytic solutions are given in the Supplementary file 1.\n\nWe include the effects of diffusion, active transport and leakage through the cell membrane, and reactions with carbonic anhydrase and RuBisCO. In the carboxysome (r < Rc), the equations governing the $HCO_{3}^{\u2212}$ and CO2, here H and C respectively, are\n\n$$\n\\partial_{t}C=D\\nabla^{2}C+R_{CA}\u2212R_{Rub}\n$$\n\n\n\n$$\n\\partial_{t}H=D\\nabla^{2}H\u2212R_{CA^{,}}\n$$\n\nwhere here D is the diffusion constant, and RCA is the carbonic anhydrase reaction, and RRub is the RuBisCO reaction. The carbonic anhydrase reaction follows reversible Michaelis\u2013Menten kinetics (Kaplan & Reinhold, 1999; Price et al., 2007),\n\n$$\nR_{CA}(H,C)=\\frac{V_{ba}K_{ca}H\u2212V_{ca}K_{ba}C}{K_{ba}K_{ca}+K_{ca}H+KL_{ba}C},\n$$\n\nwhere Vca and Vba are hydration and dehydration rates, proportional to the local carbonic anhydrase concentration. Kca and Kba are the concentration at which hydration and dehydration are half maximum. The RuBisCO reaction follows Michaelis\u2013Menten kinetics with competitive binding with O2, $R_{Rub}=V_{max}C/(C+K_{m})$, where $k_{m}=k_{m}^{\u2032}(1+O/k_{i})$. Here Vmax is the maximum rate of carbon fixation and Km is the apparent half maximum concentration value, which has been modified to include competitive binding with O2, O. Ki is the dissociation constant of O2 with the RuBisCO and $K_{m}^{\u2032}$ is the half maximum concentration with no O2 present. RuBisCO also requires ribulose-1,5-bisphosphate, the substrate which CO2 reacts with to produce 3-phosphoglycolate. Under CO2 limiting conditions it has been shown that there is sufficient ribulose-1,5-bisphosphate to saturate all RuBisCO active sites, and the reaction rates are independent of ribulose-1,5-bisphosphate concentrations (Mayo et al., 1989; Whitehead et al., 2014).\n\nIn the cytosol there is no carbonic anhydrase or RuBisCO activity, so RCA = 0 and $R_{Rub}=0$, and there is only diffusion of CO2 and $HCO_{3}^{\u2212}$. We do not include the natural, but slow, interconversion of CO2 and $HCO_{3}^{\u2212}$ in the cytosol. This assumption is a good one given that the $HCO_{3}^{\u2212}$ concentration is known to be held out of equilibrium in the cell (Volokita et al., 1984; Price & Badger, 1989). In agreement with this experimental observation, we find that all the other processes effecting the concentration of $HCO_{3}^{\u2212}$ in the cytosol happen much faster than the natural interconversion.\n\nBoundary conditions prescribe the inorganic carbon fluxes into the cell and the diffusion across the carboxysome boundary. We treat the inorganic carbon fluxes at cell and thylakoid membranes together. At this cell boundary, there is passive leakage of both CO2 and $HCO_{3}^{\u2212}$: the velocity of CO2 across the cell membrane, $k_{m}^{c}$ is about 1000-fold higher than that of $HCO_{3}^{\u2212}$, $k_{m}^{H}$, due to the lower permeability of the membrane to charged molecules. To account for active import of $HCO_{3}^{\u2212}$, we combine the total $HCO_{3}^{\u2212}$ flux, jc, from all $HCO_{3}^{\u2212}$ transporters. These transporters include BCT1 (encoded by cpm), which is thought to be powered by ATP; and BicA and SbtA which are thought to be symporters between $HCO_{3}^{\u2212}$ and Na+, driven by the highly controlled electrochemical gradient for Na+ (Price et al., 2008, 2004; Omata et al., 1999). Additionally, there are two complexes NDH-13 and NDH-14 responsible for converting CO2 to $HCO_{3}^{\u2212}$. This conversion is thought to either decrease CO2, creating a gradient across the membranes and \u2018facilitating uptake\u2019 of CO2, or \u2018scavenge\u2019 CO2 which has escaped from the carboxysome. These are localized to the thylakoid and possibly the plasma membrane. They have been linked to the photosynthetic linear and cyclic electron transport chain (Price et al., 2008; Maeda et al., 2002; Shibata et al., 2001). It has been proposed that electron transport drives the formation of local alkaline pockets where CO2 more rapidly converts to $HCO_{3}^{\u2212}$. We more simply describe the conversion with a maximal reaction rate \u03b1, and concentration of half maximal activity of K\u03b1. Combining these effects, the boundary condition setting diffusive flux of $HCO_{3}^{\u2212}$ and CO2 at the cell membrane is\n\n$$\nD\\partial_{r}C=\u2212\\frac{\\alphaC_{cytosol}}{K_{\\alpha}+C_{cytosol}}+k_{m}^{C}(C_{out}\u2212C_{cytosol})\n$$\n\n\n\n$$\nD\\partial_{r}H=j_{c}H_{out}+\\frac{\\alphaC_{cytosol}}{K_{\\alpha}+C_{cytosol}}+k_{m}^{H}(H_{out}\u2212H_{cytosol})\n$$\n\nwhere the subscript cytosol and out indicate we are taking the concentration immediately inside and outside the cell boundary respectively. The diffusion constant times partial derivatives with respect to the radial coordinate, r, define the diffusive flux at the membrane.\n\nThe carboxysome shell is composed of proteins with a radius Rc \u2248 50 nm. As of yet, there have been no direct measurements of the carboxysome permeability to small molecules. Using the carboxysome geometry, we can calculate an upper bound for the diffusive velocity across the carboxysome shell, which is directly related to the carboxysome permeability. Crystal structures (Yeates et al., 2008; Cheng et al., 2008; yeates et al., 2007) show the surface has approximately Npores = 4800 small pores with radius $r_{pore}\u22480.35$ nm, and thickness l = 1.8 nm. If kc is the characteristic velocity that small molecules pass through the shell, these numbers imply the upper bound for diffusive transport $k_{c}<\\frac{\\pir_{pore}^{2}D}{4\\piR_{c}^{2}l}(N_{pores})\u22480.02\\frac{cm}{s}$. This calculation is done by taking the probability that a molecule will encounter a pore on the carboxysome shell $(\\frac{N_{pores}\\timespore\u2009surface\u2009area}{carboxysome\u2009surface\u2009area})$ and multipling it by the speed a small molecule will diffuse through the length of the pore (D/l). Since it does not take into account any charge effects, which would add an additional energy barrier, it is an upper bound. Although there has been much speculation that the positively charged pores might enhance diffusion of negatively charged $HCO_{3}^{\u2212}$ (Yeates et al., 2008; Dou et al., 2008; Cheng et al., 2008), here we explore the simplest assumption, that both $HCO_{3}^{\u2212}$ and CO2 have the same permeability. Namely, the boundary conditions at the carboxysome shell are\n\n$$\nD\\partial_{r}C=k_{c}(C_{cytosol}\u2212C_{carboxysome})\n$$\n\n\n\n$$\nD\\partial_{r}H=k_{c}(H_{cytosol}\u2212H_{carboxysome}).\n$$\n\nWe will vary kc (henceforth called carboxysome permeability, although it is a velocity) within our model and see that there is a range of kc where the CCM is effective even with kc identical for CO2 and $HCO_{3}^{\u2212}$.\n\n## Results\n\n### Analysis of model: Finding functional parameter space\n\nNow that we have defined our model, we wish to find the range of parameters where efficient carbon fixation occurs. In what follows, we fix the enzymatic rates, cell membrane permeability, and diffusion constant as reported in the literature (Jordan & Ogren, 1981; Missner et al., 2008; Gutknecht et al., 1977; Heinhorst et al., 2006) (see Table 1 and Table 2). Note that full analytic solutions are available in Supplementary file 1 sections S3 and S4, so the effect of varying other parameters can be analyzed. We consider the efficacy of the CCM as a function of jc, the flux of HCO3\u2212 into the cell, kc, the carboxysome permeability, and the parameters (\u03b1, K\u03b1) governing the CO2 facilitated uptake mechanism. Both \u03b1 and jc can be regulated by the organism and vary depending on environmental conditions, whereas the carboxysome permeability, kc, is the parameter with the largest uncertainty and debate (Cannon et al., 2001; Yeates et al., 2008; Cheng et al., 2008).\n\n**Table 1.**\n Parameter values chosen for main set of simulations, unless otherwise indicated\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Definition</th>\n      <th>Value</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hout</td>\n      <td>concentration of bicarbonate outside the cell</td>\n      <td>14 \u03bcM*</td>\n      <td>(Price et al., 2008)</td>\n    </tr>\n    <tr>\n      <td>Cout</td>\n      <td>concentration of carbon dioxide outside of cell</td>\n      <td>0.14 \u03bcM*</td>\n      <td>(Price et al., 2008)</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>diffusion constant of small molecules, CO2 and HCO3\u2212</td>\n      <td>10\u22125 cm2s</td>\n      <td>(Fridlyand et al., 1996)</td>\n    </tr>\n    <tr>\n      <td>kmc</td>\n      <td>permeability of cell membrane to CO2</td>\n      <td>0.3 cms</td>\n      <td>(Missner et al., 2008; Gutknecht et al., 1977)</td>\n    </tr>\n    <tr>\n      <td>kmH</td>\n      <td>permeability of cell membrane to HCO3\u2212</td>\n      <td>3\u00d710\u22124cms</td>\n      <td>(Missner et al., 2008; Gutknecht et al., 1977)</td>\n    </tr>\n    <tr>\n      <td>Rc</td>\n      <td>radius of carboxysome</td>\n      <td>5\u00d710\u22126 cm</td>\n      <td>(Cheng et al., 2008; Schmid et al., 2006)</td>\n    </tr>\n    <tr>\n      <td>Rb</td>\n      <td>radius of bacteria</td>\n      <td>5 \u00d7 10\u22125 cm</td>\n      <td>(Savage et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>jc</td>\n      <td>HCO3\u2212 transport rate resulting in 30mM cytosolic HCO3\u2212 pool</td>\n      <td>0.6 cms*</td>\n      <td>calculated here</td>\n    </tr>\n    <tr>\n      <td>kc</td>\n      <td>optimal carboxysome permeability</td>\n      <td>10\u22123 cms*</td>\n      <td>calculated here</td>\n    </tr>\n    <tr>\n      <td>Vcell</td>\n      <td>cell volume</td>\n      <td>5.2\u00d710\u221210\u03bcL</td>\n      <td>calculated</td>\n    </tr>\n    <tr>\n      <td>SAcell</td>\n      <td>cell surface area</td>\n      <td>3\u00d710\u22128cm2</td>\n      <td>calculated</td>\n    </tr>\n  </tbody>\n</table>\n\n_*these parameters are varied in the text, but these values are use unless noted otherwise._\n\n**Table 2.**\n Table comparing enzymatic rates (Woodger et al., 2005; Sultemeyer et al., 1995; Heinhorst et al., 2006)\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Enzyme reaction</th>\n      <th>active sites</th>\n      <th>kcat [1s]</th>\n      <th>Vmax in \u2018cell\u2019 [\u03bcMs]</th>\n      <th>Vmax in carboxysome [\u03bcMs]</th>\n      <th>K1/2 [\u03bcM]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>carbonic anhydrase hydration</td>\n      <td>80</td>\n      <td>8 \u00d7 104</td>\n      <td>8.8 \u00d7 103</td>\n      <td>1.5 \u00d7 107</td>\n      <td>3.2 \u00d7 103</td>\n    </tr>\n    <tr>\n      <td>carbonic anhydrase dehydration</td>\n      <td>80</td>\n      <td>4.6 \u00d7 104</td>\n      <td>1.5 \u00d7 104</td>\n      <td>8.8 \u00d7 106</td>\n      <td>9.3 \u00d7 103</td>\n    </tr>\n    <tr>\n      <td>RuBisCO carboxylation</td>\n      <td>2160</td>\n      <td>26</td>\n      <td>178</td>\n      <td>1.8 \u00d7 105</td>\n      <td>270</td>\n    </tr>\n  </tbody>\n</table>\n\n_Vmax in cell and carboxysome refer to the volumetric reaction rate assuming the enzymes are distributed throughout the entire cell or only carboxysome. Vba (Vmax for carbonic anhydrase dehydration) is estimated by assuming Keq = 5 and using parameters found in (Heinhorst et al., 2006). Vca is Vmax for carbonic anhydrase hydration. Similarly, Kba, and Kca are K1/2 for dehydration and hydration respectively._\n\nFor any given pair of kc and jc, we ask whether the CO2 concentrating mechanism is effective, using the criteria of saturating RuBisCO, reducing oxidation reactions, and not increasing the HCO3\u2212 concentration beyond carbonic anhydrase saturation. Our central result is presented in Figure 2, which shows the range of kc and jc where these conditions are met, assuming that there is no facilitated uptake, \u03b1 = 0. The blue shaded region shows where RuBisCO is unsaturated, and the red shaded region shows where carbonic anhydrase is saturated. There is a crescent shaped region between these regions, where the CCM is effective according to our criteria. In the white region oxygenation reactions happen at a rate of greater than 1%. In the green shaded region oxygenation reactions occur at a rate of less than 1%. Within the white and green regions the CO2 concentration in the carboxysome varies greatly.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig2-v2.jpg)\n\n**Figure 2.:** Phase space for $HCO_{3}^{\u2212}$ transport, jc, and carboxysome permeability kc.Plotted are the parameter values at which the CO2 concentration reaches some critical value. The left most line (dark blue) indicates for what values of jc and kc the CO2 concentration in the carboxysome would half-saturate RuBisCO (Km). The middle line (light blue) indicates the parameter values which would result in a CO2 concentration where 99% of all RuBisCO reactions are carboxylation reactions and only 1% are oxygenation reactions when O2 concentration is 260 \u03bcM. The right most (red) line indicates the parameter values which result in carbonic anyhdrase saturating. Here \u03b1 = 0, so there is no CO2 scavenging or facilitated uptake. The dotted line (grey) shows the kc and jc values, where the $HCO_{3}^{\u2212}$ concentration in the cytosol is 30 mM. The $HCO_{3}^{\u2212}$ concentration in the cytosol does not vary appreciably with kc in this parameter regime, and reaches 30 mM at $j_{c}\u22480.6\\frac{cm}{s}$. All other parameters, such as reaction rates are held fixed and the value can be found in the Table 1 and Table 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Phase space for $HCO_{3}^{\u2212}$ transport and carboxysome permeability.Solid lines show lines of constant CO2 concentration in the carboxysome for $D_{c}=1e\u22125\\frac{cm^{2}}{s}$, or the diffusion constant of small molecule in water. Dashed lines show the same lines of constant CO2 concentration, bur for $D_{c}=1e\u22127\\frac{cm^{2}}{s}$, or the diffusion constant of a small molecule in a 60% sucrose solution.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Phase space for $HCO_{3}^{\u2212}$ transport, jc, and carboxysome permeability, kc.Plotted are the parameter values at which CO2 concentration reaches some critical value. The left most line (dark blue) indicates for what values of jc and kc the CO2 concentration in the carboxysome would saturate RuBisCO. The middle line (light blue) indicates the parameter values which would result in a CO2 concentration where 99% of all RuBisCO reactions are carboxylation reactions and only 1% are oxygenation reactions when O2 concentration is 260 \u00b5M. The right most (red) line indicates the parameter values which result in carbonic anyhdrase saturating. Here $\\alpha=0\\frac{cm}{s}$ (solid lines) and $\\alpha=0\\frac{cm}{s}$ (dashed line), showing the effect of CO2 scavenging or facilitated uptake on the phase space. All other parameters, such as reaction rates are held fixed and the value can be found Table 1.\n\nThe lines dividing the regions in Figure 2 are lines of constant carboxysomal CO2 concentration in jc and kc parameter space. The dark blue line is where CO2 = Km, the CO2 concentration for half-maximum RuBisCO reactions. The light blue line indicates parameter values resulting in the CO2 concentration (C99%) where rate of oxygenation reactions is 1% for O2 concentration of 260 \u03bcM. Varying carboxysome permeability, kc values, require more or less HCO3 transport, jc, to achieve the same carboxysomal CO2 concentration.\n\nWe can calculate an amplification factor for the C99% carboxysomal CO2 concentration as $A_{c}=\\frac{C_{carboxysome}}{C_{out}+H_{out}}=133$. Any combination of jc and kc which produce C = C99%, make 133 times more CO2 available in the carboxysome than there is total inorganic carbon outside the cell. Generally, increasing $HCO_{3}^{\u2212}$ transport, below the carbonic anhydrase saturation point results in higher CO2 concentration in the carboxysome.\n\n### Varying HCO3\u2212 transport saturates enzymes\n\nThe basic physics of the phase diagram Figure 2 follows from examining how CO2 and HCO3\u2212 in the carboxysome change as jc is varied. Figure 3 shows the response to varying jc, with kc=10\u22123cms (the optimal value in Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig3-v2.jpg)\n\n**Figure 3.:** $HCO_{3}^{\u2212}$ transport is varied, and all other system parameters are held constant. The CO2 concentration above which RuBisCO is saturated is Km (grey dashed line). The CO2 concentration where the oxygen reaction error rate will be 1% is C99% (grey dash-dotted line). The transition between carbonic anyhdrase being unsatruated and saturated happens where the two analytic solutions meet (where the dashed and solid red lines meet). Below a critical value of transport, $j_{c}\u224810^{\u22123}\\frac{cm}{s}$ the level of transport is lower than the $HCO_{3}^{\u2212}$ leaking through the cell membrane. A value of $k_{c}=10^{\u22123}\u2009cm/s$ for the carboxysome permeability was used for these calculations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We assume the same amount of carbonic anhydrase and RuBisCO activity for each simulation and compare the case with the enzymes evenly distributed throughout the carboxysome to the case where the carbonic anhydrase is localized to the inner carboxysome shell. The (-.-) lines are for no organization and (x) for localization with $D_{c}=10^{\u22125}\\frac{cm^{2}}{s}$. The (\u2026) lines are for no organization and (o) are for localization with $D_{c}=10^{\u22127}\\frac{cm^{2}}{s}$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig4-v2.jpg)\n\n**Figure 4.:** Numerical solution (diamonds and circles) and analytic solutions (carbonic anhydrase unsaturated, solid lines, and saturated, dashed lines) correspond well. On all plots CO2 (red circle) < $HCO_{3}^{\u2212}$ (blue diamond). Concentration in the cell along the radius, r, with carboxysome permeability $k_{c}=10^{\u22125}\\frac{cm}{s}$ (B), $k_{c}=10^{\u22123}\\frac{cm}{s}$ (C), $k_{c}=1\\frac{cm}{s}$ (D). Grey dotted lines in (B), (C), (D) indicate location of the carboxysome shell boundary. The transition from low CO2 at high permeability (D) to maximum CO2 concentration at optimal permeability (C) occurs at $k_{c}^{\u2217}=\\frac{D}{R_{c}}=2\\frac{cm}{s}$. At low carboxysome permeability (B) $HCO_{3}^{\u2212}$ diffusion into the carboxysome is slower than consumption. For all subplots $\\alpha=0\\frac{cm}{s}$ and $j_{c}=0.6\\frac{cm}{s}$. Qualitative results remain the same with varying jc, increasing \u03b1 will increase the gradient of CO2 across the cell as CO2 is converted to $HCO_{3}^{\u2212}$ at the cell membrane.\n\nWhen jc is low, the ratio of CO2 and $HCO_{3}^{\u2212}$ is constant, set by the chemical equilibrium at a given pH. In this case the rate of the carbonic anhydrase reaction is much faster than diffusion within the carboxysome, so that $V_{ba}K_{ca}H=V_{ca}K_{ba}C$. Unlike the uncatalyzed interconversion of CO2 and $HCO_{3}^{\u2212}$ in the cytosol, carbonic anhydrase brings the concentrations in the carboxysome to equilibrium very quickly. The chemical equilibrium is $K_{eq}=H/C=(K_{ba}V_{ca})/(K_{ca}V_{ba})\u22485$, for pH around 7 [Heinhorst et al., 2006; DeVoe & Kistiakowsky, 1961)], so that $HCO_{3}^{\u2212}$ > CO2 in the carboxysome. Increased pH would increase Keq and the proportion of $HCO_{3}^{\u2212}$, while decreased pH would decrease Keq and the proportion of $HCO_{3}^{\u2212}$. Such variations do not substantially effect the subsequent discussion and mechanisms, although they will change the absolute values of CO2 concentration in the carboxysome.\n\nThe Km dashed line in Figure 3 shows the CO2 level above which RuBisCO reaction is saturated: this gives the RuBisCO saturated (blue) boundary in Figure 2. We have similarly marked the concentration C99% where there is a 1% oxygen reaction error rate with a dash-doted line.\n\nAt higher levels, the CO2 concentration no longer increases with increasing jc, because the carbonic anhydrase is saturated. The saturated regime occurs in Figure 3 when $H_{carboxysome}>K_{ba}$, so that increasing $H_{carboxysome}$ (controlled directly by jc) no longer increases the rate of production of $C_{carboxysome}$. This transition from unsaturated to saturated carbonic anhydrase defines the line for the carbonic anhydrase saturated region in Figure 2.\n\n### Carboxysome permeability has optimal value\n\nFor each line of constant concentration in Figure 2 there is an optimal permeability value, where the least $HCO_{3}^{\u2212}$ transport is required to achieve the same CO2 concentration. The optimal permeability value shifts downward with increasing CO2 concentration (compare light and dark blue curves). For C99% the optimal permeability is $k_{c}=10^{\u22123}\\frac{cm}{s}$, below the calculated upper bound: $k_{c}<0.02\\frac{cm}{s}$ obtained above from the carboxysome structure. To further understand the effect of permeability, we examine the CO2 concentration in the carboxysome for varying carboxysome permeabilities and a fixed $HCO_{3}^{\u2212}$ transport rate in Figure 4. Figure 4A, shows that there is a broad range of kc where the CCM has maximal efficacy. Figure 4 shows the distribution of inorganic carbon throughout the cell when the permeability is low (B), optimal (C), and high (D). At high permeability, the CO2 produced in the carboxysome rapidly leaks out of the carboxysome, and the CO2 concentration in the cytosol, shown in Figure 4D, is relatively high. When the carboxysome permeability decreases to near the optimal value, Figure 4C, the carboxysome traps CO2, and the cytosolic levels are lower, decreasing leakage out of the cell. This transition occurs when diffusion across the cell (and carboxysome) takes a shorter time than diffusion through the carboxysome shell; or the CO2 in the carboxysome is effectively partitioned from the CO2 in the cell.\n\nIf the carboxysome permeability is below optimal, diffusion of $HCO_{3}^{\u2212}$ into the carboxysome cannot keep up with consumption from RuBisCO, Figure 4B. The existence of an optima requires RuBisCO consumption to be low enough that there is a kc where the cytosol and carboxysome are partitioned, but $HCO_{3}^{\u2212}$ diffusion in can keep up. When such an optima exists, the carboxysome permeability can improve the CO2 concentration in the carboxysome without any special selectivity between $HCO_{3}^{\u2212}$ and CO2. The location and concentrating power of the optimal regime, is dependent on the size of the cell and the membrane permeabilities to CO2 and $HCO_{3}^{\u2212}$.\n\n## Discussion\n\n### Are the fluxes and concentrations reasonable?\n\nWhile we have solved our model to describe a vast parameter space it is instructive to compare the fluxes and concentrations we find within our optimal parameter space (the green region in Figure 2) to actual numbers. At low external inorganic carbon conditions, internal inorganic carbon pools due to CCM activity are regularly measured as high as Ci = 30 mM. The inorganic carbon is predominantly in the form of HCO3\u2212, and measurements do not distinguish between the cytosol and carboxysome (Kaplan & Reinhold, 1999; Woodger et al., 2005; Sultemeyer et al., 1995; Price et al., 1998, 2008). In our model, we find that the cytosolic HCO3\u2212 concentration is 30 mM when jc=0.6cms, over a wide range of the carboxysome permeability (indicated as the dashed grey line in Figure 2). From Figure 4 we can also see that the cytosolic HCO3\u2212 concentration is the dominate form of inorganic carbon in the cell at jc=0.6cms. We examine the fate of the HCO3\u2212 transported into the cell in terms of the HCO3\u2212 leaking out, CO2 leaking out, CO2 fixation or carboxylation, and O2 fixation or oxygenation (Table 3).\n\n**Table 3.**\n Fate of carbon brought into the cell for jc = 0.6cm/s and kc = 10\u20133cm/s\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>formula</th>\n      <th>[picomoles(cell\u2009s)]</th>\n      <th>% of flux</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HCO3\u2212 transport</td>\n      <td>jcHout</td>\n      <td>3.26 \u00d7 10\u22124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HCO3\u2212 leakage</td>\n      <td>kmH(Hout\u2212Hcytosol(Rb))</td>\n      <td>3.2 \u00d7 10\u22124</td>\n      <td>98.6%</td>\n    </tr>\n    <tr>\n      <td>CO2 leakage</td>\n      <td>kmC(Cout\u2212Ccytosol(Rb))</td>\n      <td>4.5 \u00d7 10\u22124</td>\n      <td>1.4 %</td>\n    </tr>\n    <tr>\n      <td>carboxylation</td>\n      <td>VmaxCC+Km(1+OKO)</td>\n      <td>8.2 \u00d7 10\u22128</td>\n      <td>0.03 %</td>\n    </tr>\n    <tr>\n      <td>oxygenation</td>\n      <td>VmaxOCC+KmO(1+CKC)</td>\n      <td>6.7 \u00d7 10\u221210</td>\n      <td>2 \u00d7 10\u22124 %</td>\n    </tr>\n  </tbody>\n</table>\n\nFor cells grown under low inorganic carbon conditions net HCO3\u2212 fluxes (transport - leakage) are measured 105pmolmgChls, with CO2 net flux being slightly lower but the same order of magnitude (Whitehead et al., 2014; Badger et al., 1994). High external inorganic carbon conditions produce slightly higher net HCO3\u2212 rates (Tchernov et al., 1997). Assuming chlorophyll per cell volume of around 10\u221211mgChlcell for cells of our size we can convert this into a flux of 10\u22126pmol(cells) (Whitehead et al., 2014; Keren et al., 2004, 2002). The net HCO3\u2212 flux for our model cell is 6\u00d710\u22126pmol(cells), so we are about an order of magnitude too high. If we choose a HCO3\u2212 transport value one order of magnitude smaller, we will get net fluxes of the same order of magnitude as the measurements at the cost of slightly lower carboxylation rates and higher oxygenation rates (Table 4). This would also mean a lower internal HCO3\u2212 pool. Alternatively, the same internal HCO3\u2212 could be reached at a lower flux rate, if the external HCO3\u2212 is higher. Since the majority of the HCO3\u2212 transport is balanced by HCO3\u2212 leakage, we can find the transport rate needed to sustain a particular amplification by the simple formula: jc=kmH(Hout\u2212Hcytosol(Rb))/Hout.\n\n**Table 4.**\n Fate of carbon brought into the cell for jc = 0.06 cm/s and kc = 10\u20133cm/s\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>formula</th>\n      <th>[picomoles(cell\u2009s)]</th>\n      <th>% of flux</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HCO3\u2212 transport</td>\n      <td>jcHout</td>\n      <td>2.8 \u00d7 10\u22125</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HCO3\u2212 leakage</td>\n      <td>kmH(Hout\u2212Hcytosol(Rb))</td>\n      <td>2.7 \u00d7 10\u22125</td>\n      <td>96.6 %</td>\n    </tr>\n    <tr>\n      <td>CO2 leakage</td>\n      <td>kmC(Cout\u2212Ccytosol(Rb))</td>\n      <td>8.8 \u00d7 10\u22127</td>\n      <td>3.2 %</td>\n    </tr>\n    <tr>\n      <td>carboxylation</td>\n      <td>VmaxCC+Km(1+OKO)</td>\n      <td>5.4 \u00d7 10\u22128</td>\n      <td>0.2 %</td>\n    </tr>\n    <tr>\n      <td>oxygenation</td>\n      <td>VmaxOCC+KmO(1+CKC)</td>\n      <td>2.3 \u00d7 10\u22129</td>\n      <td>8 \u00d7 10\u22123 %</td>\n    </tr>\n  </tbody>\n</table>\n\nWhile we can compare the net fluxes, we have not found direct experimental evidence for the absolute $HCO_{3}^{\u2212}$ uptake rate. To determine whether this $HCO_{3}^{\u2212}$ transport rate is reasonable we perform a back of the envelope calculation. Our simulated cell has a flux of 2 \u00d7 108 molecules/s. Assuming the rate of transport per transporter of $10^{3}\\frac{molecules}{s}$ and our cell's surface area this requires about $10^{4}\\frac{transporters}{\\mum^{2}}$. This is about an order of magnitude higher than the number of ATP synthase complexes on the thylakoid membrane in spinach, $700\u2009\\frac{complexes}{\\mum^{2}}$ (Miller and Staehelin, 1979).\n\nAccording to our calculation only around 1 % of the carbon transported into the cell is fixed into 3-phosophoglycerate. Even in this highly CO2 concentrating regime, 5 \u00d7 104 2-phosophoglycolate produced per second. Cyanobacteria have been shown to have multiple pathways for recycling 2-phosophoglycolate (Hackenberg et al., 2009). Our system fixes CO2 at a rate of 0.14 pg/hour. Given the volume of our cell, and the fact that between 115\u2013300 fg/\u03bcm3 of carbon are needed to produce a new cyanobacterial cell (Mahlmann et al., 2008) we need between 0.1 and 0.3 picograms of carbon per cell. At the higher flux rate (Table 3) this means that a cell could replicate every 7\u201321 hr and the lower flux rate (Table 4) allows replication every 11\u201335 hr. Both are consistent with the division times of cyanobacteria.\n\n### Concentration profiles of CO2 and HCO3\u2212 across the cell\n\nAt $j_{c}=0.6\\frac{cm}{s}$, varying the carboxysome permeability changes how the available inorganic carbon is partitioned between the carboxysome and cytosol, thereby setting the carboxysomal CO2 concentration as shown in Figure 4. Strikingly, the $HCO_{3}^{\u2212}$ concentration is constant across the cytosol. This is because the cell membranes have low permeability to $HCO_{3}^{\u2212}$; thus, the rate of escape is slow and $HCO_{3}^{\u2212}$ equilibrates across the cell. A consequence of this flat $HCO_{3}^{\u2212}$ profile is that the carboxysome experiences the same $HCO_{3}^{\u2212}$ concentration, independent of its position in the cell. This means the incoming inorganic carbon source for the carboxysome system is invariant with the position of the carboxysome in the cell.\n\nIn contrast, there is a gradient in CO2 concentration across the cell when the carboxysome permeability is at or above the optimum (Figure 4C,D). The cell membrane is more permeable to CO2. The gradient means that the CO2 leakage out of the cell affects the CO2 leakage out of the carboxysome. Moving the carboxysome close to the cell membrane increases the leakage rate of CO2 out of the carboxysome. Notably, in S. elongatus the carboxysomes are located along the center line of the cell, away from the cell membranes (Savage et al., 2010). The spatial profiles of $HCO_{3}^{\u2212}$ and CO2 give no hint as to why the carboxysomes are spaced apart from one another. Since the gradient in $HCO_{3}^{\u2212}$ is flat, there is no competition between the carboxysomes for $HCO_{3}^{\u2212}$ (the main incoming source of inorganic carbon). In fact, since the local concentration of CO2 is higher near a carboxysome, nearby carboxysomes would \u2018feed\u2019 each other CO2. As has been shown, such clumping would reduce the probability of distributing carboxysomes equitably to daughter cells, possibly counteracting any benefit (Savage et al., 2010).\n\nThe concentration across the carboxysome is basically constant, because the carboxysome is so small that diffusion across it takes very little time. A consequence of this is that the organization of the reactions in the carboxysome does not effect the CO2 concentration in the carboxysome (Figure 3\u2014figure supplement 1). Therefore, the localization of the carbonic anhydrase to the inner carboxysome shell seems to have no effect on the CCM. It has been suggested that diffusion in the carboxysome should be slower, since the carboxysome is packed with RuBisCO. One proposed consequence of slower diffusion in the carboxysome is that it could trap CO2, making a low carboxysome permeability unnecessary. We have tested this hypothesis (Figure 2\u2014figure supplement 1), and find that assuming the diffusion constant one would expect for small molecules in a 60% sucrose solution ($D_{c}=10^{\u22127}\\frac{cm^{2}}{s}$), does reduce the optimal carboxysome permeability. However, for any carboxysome permeability a higher $HCO_{3}^{\u2212}$ transport rate is needed to achieve the same carboxsomal CO2 concentration. So if the diffusion is indeed slower in the carboxysome it does not aid the CCM. Even at this slower diffusion, the CO2 concentration across the carboxysome is flat.\n\n### Benefit of CO2 to HCO3\u2212 conversion: facilitated uptake or scavenging of CO2\n\nWe investigate the effect of CO2 to $HCO_{3}^{\u2212}$ conversion at the thylakoid and cell membranes (combined in the model). Increasing conversion, \u03b1 > 0, can facilitate uptake of CO2 from outside the cell and scavenge CO2 escaped from the carboxysome. Facilitated uptake results in saturating both carbonic anhydrase and RuBisCO at a lower level of $HCO_{3}^{\u2212}$ transport. Scavenging broadens the range of carboxysome permeability which will effectively separate the inorganic carbon pools in the carboxysome and outside. Scavenging decreases the concentration of CO2 in the cytosol, so a more permeable carboxysome can still result in a low leakage rate of inorganic carbon out of the cell (more of the inorganic carbon in the cytosol is in the form of $HCO_{3}^{\u2212}$ which leaks out less readily). However, neither of these effects is particularly strong in our current range of reaction rates, and cell membrane permeability (Figure 2\u2014figure supplement 2).\n\nThe relative effect of these two mechanisms depends on the external CO2 and HCO3\u2212 concentrations. In saltwater environments the pH is near 8 and HCO3\u2212 is the predominant inorganic carbon source. While external pH is not explicitly treated in our model, we can account for changes to pH through the external inorganic carbon concentration. To be consistent with oceanic environment, thus far we have shown results for low external inorganic carbon concentrations of [CO2] = 0.1 \u03bcM and [HCO3\u2212] = 14.9 \u03bcM. The effect of facilitated uptake, under these assumptions, is very small. In freshwater or under conditions of ocean acidification, where the pH could fall to 6 or lower, there can be a much larger proportion of CO2 (>50%). Figure 5 shows the absolute contribution of HCO3\u2212 transport, facilitated CO2 uptake, and CO2 scavenging for varying proportions of external CO2. Even though we assume the same velocity of facilitated uptake and HCO3\u2212 transport (jc=\u03b1K\u03b1=1), facilitated uptake contributes less because it is limited by CO2 diffusion across the membrane. At the same rates of transport the facilitated uptake mechanism only contributes more than active HCO3\u2212 if the CO2 concentration is greater than 80% of external inorganic carbon. This is consistent with observations that oceanic cyanobacteria such as Prochlorococcus only seem to possess gene homologs for HCO3\u2212 transport systems, while other freshwater and estuarine cyanobacteria have gene homologs for both constitutive (NDH-14) and inducible (NDH-13) CO2 uptake systems as well as inducible HCO3\u2212 transport systems (BicA, SbtA, and BCT1) (Price, 2011).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig5-v2.jpg)\n\n**Figure 5.:** Size of the $HCO_{3}^{\u2212}$ flux in one cell from varying sources, as the proportion of $CO_{2}$ to $HCO_{3}^{\u2212}$ outside the cell changes changes.We show results for three carboxysome permeabilities, $k_{c}$, and only the scavenging is effected. Total external inorganic carbon is $15\\muM$, $j_{c}=1\\frac{cm}{s}$ and $\\frac{\\alpha}{K_{\\alpha}}=1\\frac{cm}{s}$. Scavenging is negligibly small for all values of $k_{c}$ shown. Unless there is very little $HCO_{3}^{\u2212}$ in the environment, $HCO_{3}^{\u2212}$ transport seems to be more efficient than $CO_{2}$ facilitated uptake.\n\nScavenging is negligibly small for all values of $k_{c}$ shown. There is very little $CO_{2}$ in the cytosol, so there is very little $CO_{2}$ to scavenge, Figure 5. The effect of scavenging is dependent on the cell membrane permeability to $CO_{2}$ and $HCO_{3}^{\u2212}$.\n\nGiven that scavenging has no obvious affect on $HCO_{3}^{\u2212}$ concentrations, it is reasonable to wonder why this mechanism exists at all. One might assume that scavenging prevents leakage, but if the energy to bring a \u2018new\u2019 $HCO_{3}^{\u2212}$ molecule from outside the cell is the same as the energy required to save an \u2018old\u2019 CO2 molecule from leaking out, there is no obvious advantage of preventing the leakage. It is possible that since the scavenging mechanism is associated with the electron transport chain of the light reactions of photosynthesis scavenging can be ramped up more easily when there is excess light energy. If this were the case, a comparison of $j_{c}=1\\frac{cm}{s}$ and $\\frac{\\alpha}{k_{\\alpha}}=1\\frac{cm}{s}$ is deceiving and $\\frac{\\alpha}{K_{\\alpha}}$ could be much larger. Indeed it has been suggested that the cell uses this mechanism as a way to dissipate excess light energy (Tchernov et al., 1997, 2003).\n\n### Cellular organization\n\nThe most striking aspect of the CCM is the way that spatial organization is used to increase the efficacy of the reactions. Figure 6 compares the effect of different enzymatic reaction organizations. Concentrating carbonic anhydrase and RuBisCO to a small region in the center of the cell, on a scaffold for example, leads to an order of magnitude increase in the concentration of CO2. Localizing the carbonic anhydrase to a small volume concentrates it, increasing the maximum reaction rate per volume, Vca and Vba. A larger Vba increases the HCO3\u2212 concentration at which carbonic anhydrase is saturated allowing the mechanism to take advantage of a larger HCO3\u2212 flux, jc. A small increase can be gained from encapsulating the enzymes in a permeable carboxysome shell and another order of magnitude is gained at the optimal permeability. At optimal carboxysome permeability, the CO2 is effectively partitioned into the carboxysome and conversion can act only as facilitated uptake as shown in Figure 5.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02043/elife-02043-fig6-v2.jpg)\n\n**Figure 6.:** Concentration of CO2 achieved through various cellular organizations of enzymes, where we have selected the $HCO_{3}^{\u2212}$ transport level such that the $HCO_{3}^{\u2212}$ concentration in the cytosol is 30 mM.O2 concentration is 260 \u03bcM. The oxygenation error rates, as a percent of total RuBisCO reactions are indicated on the concentration bars. The cellular organizations investigated are RuBisCO and carbonic anhydrase distributed throughout the entire cytosol, co-localizing RuBisCO and carbonic anhydrase on a scaffold at the center of the cell without a carboxysome shell, RuBisCO and carbonic anhydrase encapsulated in a carboxysome with high permeability at the center of the cell, and RuBisCO and carbonic anhydrase encapsulated in a carboxysome with optimal permeability at the center of the cell.\n\nAnother advantage of localizing the enzymes in a small region at the center of the cell is separating carbonic anhydrase from the \u03b1 (CO2 to $HCO_{3}^{\u2212}$) conversion mechanism, preventing a futile cycle. The futile cycle is most detrimental when the enzymes are distributed through out the cytosol, and increases the oxygenation error rate (data not shown). Concentrating the enzymes away from the cell and thylakoid membranes, where conversion happens, removes this effect. On a scaffold the oxygenation rate is almost exactly the same with and without the \u03b1 conversion mechanism. This is consistent with the previously shown detrimental effect of having active carbonic anhydrase free within the cytosol (Price & Badger, 1989). It would be impossible to keep the cytosol completely free from carbonic anhydrase enzyme, so there must be a way of activating it within the carboxysome only. Carbonic anhydrase is inactivated under reducing conditions (Pe\u00f1a et al., 2010). Recently it was shown that carboxysomes oxidize after assembly, providing a way to keep carbonic anhydrase inactive until fully enclosed in a carboxysome (Chen et al., 2013).\n\n### Effects of pH\n\nCyanobacteria must regulate pH as almost all biochemical reactions are pH sensitive. We do not attempt to model this regulation or potential pH variation within the cell, however pH may be included implicitly in a couple ways. We have already explored the effect of varying external pH, and the effects of pH on carbonic anhydrase. Cytosolic pH would have little direct effect on the CO2 and $HCO_{3}^{\u2212}$ levels since the non-enzymatic interconversion is very slow as previously discussed. The effect of internal pH could also be explored by varying the reaction rate of RuBisCO, which is pH sensitive. Varying the reaction rate of RuBisCO greatly could change the range where a non-specific carboxysome permeability can increase the concentration of CO2 in the carboxysome. It would be unexpected that the RuBisCO rate be much faster than we assume, as we have assumed a rate on the high end. A lower RuBisCO rate would increase the range of effective carboxysome permeabilities. As previously mentioned the CO2 facilitated uptake mechanism functions by creating local alkaline pockets. Diffusion of hydrogen ions across the cell would be very fast, so such pockets would require a massive reduction from the light reactions to maintain local alkalinity. Whether such pH gradients are possible, is certainly a subject of future interest.\n\n### Conclusions\n\nWe have described and analyzed a model for the CO2 concentrating mechanism in cyanobacteria. There exists a broad range of $HCO_{3}^{\u2212}$ transport and carboxysome permeability values which result in effective CO2 concentration in the carboxysome. This effective concentration parameter space is defined by CO2 levels high enough to saturate RuBisCO and produce a favorable ratio of carboxylation to oxygenation reactions, but not so high as to saturate carbonic anhydrase (after which increasing $HCO_{3}^{\u2212}$ transport will not increase the CO2 concentration). An optimal carboxysome permeability exists, where $HCO_{3}^{\u2212}$ diffusion into the carboxysome is not substantially inhibited, but CO2 leakage is minimal. $HCO_{3}^{\u2212}$ concentrations across the cell are flat and are predominately set by the transport rate in, and leakage out. We quantitatively compare the transport rates and concentrations we predict in our optimal parameter space, and find them to be in good agreement with experiment. We also comment on the effects of external pH on CO2 versus $HCO_{3}^{\u2212}$ uptake mechanisms. Finally we describe the cumulative benefits of co-localization, encapsulation, and optimal carboxysome permeability on the CCM.\n\nFurther comparison of this model to experimental flux measurements, especially to determine the quantitative contributions of different transporters under different physiological conditions would be very interesting. Current solutions are for steady state at constant external concentration, but most gas exchange measurements, by necessity, measure the fluxes as the inorganic carbon is depleted in the media. The model could be modified to solve the time dependent problem with varying external inorganic carbon. As of yet the carboxysome permeability has not been measured directly, and it would be quite interesting to see how close it is to our \u2018optimal\u2019 prediction.\n",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b9c54b90-de46-422b-9657-ba3f67883027",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C1",
+      "claim": "Cyanobacteria are photosynthetic bacteria with a unique CO2 concentrating mechanism (CCM).",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanobacteria are photosynthetic bacteria with a unique CO2 concentrating mechanism (CCM), enhancing carbon fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about cyanobacteria presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "f8137c85-f39d-414d-aeec-ceffe39817ce",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C2",
+      "claim": "The CCM enhances carbon fixation in cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanobacteria are photosynthetic bacteria with a unique CO2 concentrating mechanism (CCM), enhancing carbon fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known function of the CCM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "972e716f-01e7-4b94-a0da-a66f16781401",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C3",
+      "claim": "Efficiency of the CCM requires saturating the RuBisCO reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficiency requires saturating the RuBisCO reaction, staying below saturation for carbonic anhydrase, and avoiding wasteful oxygenation reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a criterion for efficiency defined by the authors based on their model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "167010bd-bfe6-41bb-b2ef-a45b39be3819",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C4",
+      "claim": "Efficiency of the CCM requires staying below saturation for carbonic anhydrase.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficiency requires saturating the RuBisCO reaction, staying below saturation for carbonic anhydrase, and avoiding wasteful oxygenation reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a criterion for efficiency defined by the authors based on their model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "9dd9243e-5ebe-465a-9bf1-da9837726553",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C5",
+      "claim": "Efficiency of the CCM requires avoiding wasteful oxygenation reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficiency requires saturating the RuBisCO reaction, staying below saturation for carbonic anhydrase, and avoiding wasteful oxygenation reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a criterion for efficiency defined by the authors based on their model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "9cc1ead5-0406-4f30-9fb2-e7899923fa5a",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C6",
+      "claim": "Selectivity at the carboxysome shell is not necessary for CCM function.",
+      "claim_type": "EXPLICIT",
+      "source": "We find selectivity at the carboxysome shell is not necessary; there is an optimal non-specific carboxysome shell permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "291f5171-cf3a-4793-a84e-ab020ee4fad7",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C7",
+      "claim": "There is an optimal non-specific carboxysome shell permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "We find selectivity at the carboxysome shell is not necessary; there is an optimal non-specific carboxysome shell permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "067a1c1f-d965-4cd8-98ca-2ddbef7620d0",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C8",
+      "claim": "At the optimal carboxysome permeability, contributions from CO2 scavenging at the cell membrane are small.",
+      "claim_type": "EXPLICIT",
+      "source": "At the optimal carboxysome permeability, contributions from CO2 scavenging at the cell membrane are small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "836cdfb5-1f5e-4992-970d-c20cbd5227df",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C9",
+      "claim": "Carboxysomes are small, 100\u2013200 nm compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "These small, 100\u2013200 nm compartments separate the principal reaction of the Calvin cycle, the RuBisCO catalyzed fixation of carbon dioxide (CO2) into 3-phosphoglycerate, from the rest of the cell (Cannon et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known structural characteristic of carboxysomes supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "fd44724e-0f1b-4b0c-b081-19ae92f23f2e",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C10",
+      "claim": "Carboxysomes separate the RuBisCO catalyzed fixation of CO2 into 3-phosphoglycerate from the rest of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These small, 100\u2013200 nm compartments separate the principal reaction of the Calvin cycle, the RuBisCO catalyzed fixation of carbon dioxide (CO2) into 3-phosphoglycerate, from the rest of the cell (Cannon et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known function of carboxysomes supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "baaad0f8-a2e7-456f-8821-0ddc18d9bfaf",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C11",
+      "claim": "CO2 and O2 competitively bind as substrates of RuBisCO.",
+      "claim_type": "EXPLICIT",
+      "source": "CO2 and oxygen (O2) competitively bind as substrates of RuBisCO, and the reaction with O2 produces phosphoglycolate, a waste product which must be recycled by the cell (Jordan & Ogren, 1981; Tcherkez et al., 2006; Savir et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known biochemical property of RuBisCO supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "711daa35-9625-4a73-af60-88abf43d4a75",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C12",
+      "claim": "The reaction of RuBisCO with O2 produces phosphoglycolate, a waste product which must be recycled by the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "CO2 and oxygen (O2) competitively bind as substrates of RuBisCO, and the reaction with O2 produces phosphoglycolate, a waste product which must be recycled by the cell (Jordan & Ogren, 1981; Tcherkez et al., 2006; Savir et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known biochemical consequence of RuBisCO oxygenation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "92250b3c-89d8-4968-8244-7597c2c544a9",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C13",
+      "claim": "The carboxysome is believed to act as a diffusion barrier to CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "To maximize carboxylation and minimize oxygenation, the carboxysome is believed to act as a diffusion barrier to CO2 (Reinhold et al., 1989; Dou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about carboxysome function supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "be347bc4-a123-4f16-9766-4a7a4b2bf628",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C14",
+      "claim": "Inorganic carbon concentration in cyanobacteria is elevated well above 200\u2013300 \u03bcM, the CO2 concentration required for saturating RuBisCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to this mechanism, inorganic carbon concentration is elevated well above 200\u2013300 \u03bcM, the CO2 concentration required for saturating the RuBisCO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known effect of the CCM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "998c3249-57be-4c8e-92d4-05c532196e9c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C15",
+      "claim": "Concentrations of 20\u201340 mM inorganic carbon, up to 4000-fold higher than external levels, have been observed in cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentrations of 20\u201340 mM inorganic carbon, up to 4000-fold higher than external levels, have been observed (Kaplan & Reinhold, 1999; Woodger et al., 2005; Sultemeyer et al., 1995; Price et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "e37766b8-64c1-4bf6-beef-60b7b0eed958",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C16",
+      "claim": "The bilipid outer and cell membranes are highly permeable to small uncharged molecules such as CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "The bilipid outer and cell membranes are highly permeable to small uncharged molecules such as CO2 (Missner et al., 2008; Gutknecht et al., 1977), so instead the cell primarily accumulates the charged and less membrane soluble bicarbonate (HCO3\u2212) (Volokita et al., 1984; Price & Badger, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of biological membranes supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "7ca74cb8-978f-4f52-984f-50199330a80c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C17",
+      "claim": "The cell primarily accumulates the charged and less membrane soluble bicarbonate (HCO3\u2212).",
+      "claim_type": "EXPLICIT",
+      "source": "The bilipid outer and cell membranes are highly permeable to small uncharged molecules such as CO2 (Missner et al., 2008; Gutknecht et al., 1977), so instead the cell primarily accumulates the charged and less membrane soluble bicarbonate (HCO3\u2212) (Volokita et al., 1984; Price & Badger, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "e494dba1-ec81-4235-8904-b707c42c983e",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C18",
+      "claim": "Active transporters, both constitutive and inducible, bring HCO3\u2212 into the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Active transporters, both constitutive and inducible, bring HCO3\u2212 into the cell (Price et al., 2008, 2004; Omata et al., 1999), and mechanisms exist to actively convert CO2 to HCO3\u2212 at the thylakoid and cell membrane (Price et al., 2008; Maeda et al., 2002; Shibata et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known mechanism of the CCM supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "2f4ceccc-4106-4130-a7f3-de61719032bb",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C19",
+      "claim": "Mechanisms exist to actively convert CO2 to HCO3\u2212 at the thylakoid and cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Active transporters, both constitutive and inducible, bring HCO3\u2212 into the cell (Price et al., 2008, 2004; Omata et al., 1999), and mechanisms exist to actively convert CO2 to HCO3\u2212 at the thylakoid and cell membrane (Price et al., 2008; Maeda et al., 2002; Shibata et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known mechanism of the CCM supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "3dc3e266-c9c6-449d-8c74-c613ff022110",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C20",
+      "claim": "Once HCO3\u2212 passively diffuses into the carboxysome, it is rapidly brought into equilibrium with CO2 by the enzyme carbonic anhydrase.",
+      "claim_type": "EXPLICIT",
+      "source": "Once it passively diffuses into the carboxysome, HCO3\u2212 is rapidly brought into equilibrium with CO2 by the enzyme carbonic anhydrase, resulting in the production of CO2 near RuBisCO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known mechanism of the CCM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "b6671edf-5267-4aa8-b509-88ac69c1be0c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C21",
+      "claim": "Carbonic anhydrase is known to be localized on the interior side of the carboxysome shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Carbonic anhydrase is known to be localized on the interior side of the carboxysome shell (Yeates et al., 2008; Cannon et al., 1991; Cot et al., 2008; Long et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known structural feature supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "2bc81420-6cde-4d29-8d5d-d36f7fff2dbd",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C22",
+      "claim": "Visualizations of the location of the carboxysomes with fluorescent microscopy in Synechococcus elongatus PCC7942 demonstrated that the carboxysomes are evenly spaced along the centerline of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Visualizations of the location of the carboxysomes with fluorescent microscopy in Synechococcus elongatus PCC7942 demonstrated that the carboxysomes are evenly spaced along the centerline of the cell, (Savage et al., 2010), raising the question of how spatial organization, beyond simple partitioning, changes the efficacy of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "f3d030f7-5dc5-49c6-b887-4db0328e4363",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C23",
+      "claim": "The model treats a spherically symmetric cell, with one carboxysome at the center.",
+      "claim_type": "EXPLICIT",
+      "source": "The model treats a spherically symmetric cell, with one carboxysome at the center.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model setup shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "733b03d8-ea22-4023-a973-17c91181367c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C24",
+      "claim": "The carboxysome shell must be permeable enough to allow HCO3\u2212 and 3-phosphoglycerate to readily diffuse in and out.",
+      "claim_type": "EXPLICIT",
+      "source": "The carboxysome shell must be permeable enough to allow HCO3\u2212 and 3-phosphoglycerate to readily diffuse in and out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional requirement inferred from the system's operation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "2964e630-7190-4007-94a7-896936e52de1",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C25",
+      "claim": "The HCO3\u2212 concentration in the cytosol is constant across the cell, set by the HCO3\u2212 transport and leakage rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the HCO3\u2212 concentration in the cytosol is constant across the cell, set by the HCO3\u2212 transport and leakage rates, and depends very little on the carboxysome permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "6861e433-0e07-4f48-a0cc-b833803d428b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C26",
+      "claim": "The HCO3\u2212 concentration in the cytosol depends very little on the carboxysome permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the HCO3\u2212 concentration in the cytosol is constant across the cell, set by the HCO3\u2212 transport and leakage rates, and depends very little on the carboxysome permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "a6dda772-6a15-481e-8d21-5fae12977bdb",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C27",
+      "claim": "The carboxysome permeability sets how the CO2 is partitioned between the carboxysome and cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "The carboxysome permeability does, however, set how the CO2 is partitioned between the carboxysome and cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "3b5a07f5-83f8-4f18-b29f-c00be5a8aefd",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C28",
+      "claim": "At optimal carboxysome permeability, HCO3\u2212 diffusion into the carboxysome is fast enough to supply inorganic carbon for fixation, but the rate of CO2 leakage out of the carboxysome is low.",
+      "claim_type": "EXPLICIT",
+      "source": "At optimal carboxysome permeability, HCO3\u2212 diffusion into the carboxysome is fast enough to supply inorganic carbon for fixation, but the rate of CO2 leakage out of the carboxysome is low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis explaining the optimal permeability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "02824953-35a7-4c4d-8d0d-bf9b89158865",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C29",
+      "claim": "Concentration of carbonic anhydrase increases the maximum rate of reaction for carbonic anhydrase per volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration of carbonic anhydrase increases the maximum rate of reaction for carbonic anhydrase per volume, causing carbonic anhydrase to saturate at a higher level of HCO3\u2212, and achieve an order of magnitude higher local CO2 concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "42c12e2b-aa34-438b-b510-4d10f1f2280c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C30",
+      "claim": "Concentrating carbonic anhydrase causes it to saturate at a higher level of HCO3\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration of carbonic anhydrase increases the maximum rate of reaction for carbonic anhydrase per volume, causing carbonic anhydrase to saturate at a higher level of HCO3\u2212, and achieve an order of magnitude higher local CO2 concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "0d390782-90b5-490a-8e1f-a23890cf7cc8",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C31",
+      "claim": "Concentrating carbonic anhydrase achieves an order of magnitude higher local CO2 concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration of carbonic anhydrase increases the maximum rate of reaction for carbonic anhydrase per volume, causing carbonic anhydrase to saturate at a higher level of HCO3\u2212, and achieve an order of magnitude higher local CO2 concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "3fdc8537-7893-4260-8bad-ca1fdb40244a",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C32",
+      "claim": "Encapsulation of the reactions in an optimally permeable carboxysome shell achieves another order of magnitude of CO2 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Encapsulation of the reactions in an optimally permeable carboxysome shell achieves another order of magnitude of CO2 concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "9a0e58da-8a89-4d35-8e3e-f1b2b96d69ff",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C33",
+      "claim": "The model solves for both the HCO3\u2212 and CO2 concentration throughout a spherical cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our three dimensional model of the CCM solves for both the HCO3\u2212 and CO2 concentration throughout a spherical cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "0ed2a0d8-e6a0-46ba-a53c-e20185cfdfe2",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C34",
+      "claim": "The model considers a spherical cell of radius Rb = 0.5 \u03bcm with a single spherical carboxysome of radius Rc = 50 nm containing RuBisCO and carbonic anhydrase.",
+      "claim_type": "EXPLICIT",
+      "source": "We solve this model numerically and analytically at steady state for three different spatial organizations of carbonic anhydrase and RuBisCO in the cell (See Figure 6): enzymes distributed evenly throughout the cell, enzymes localized to the center of the cell but not encapsulated (as they would be on a scaffold), enzymes encapsulated in a carboxysome. We compare the effects of these scenarios in the discussion section, and for now consider a spherical cell of radius Rb = 0.5 \u03bcm with a single spherical carboxysome of radius Rc = 50 nm containing RuBisCO and carbonic anhydrase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "0b170295-d3a0-480a-9574-1cbc1fef605e",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C35",
+      "claim": "Crystal structures show the carboxysome surface has approximately Npores = 4800 small pores with radius rpore \u2248 0.35 nm, and thickness l = 1.8 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures (Yeates et al., 2008; Cheng et al., 2008; yeates et al., 2007) show the surface has approximately Npores = 4800 small pores with radius rpore\u22480.35 nm, and thickness l = 1.8 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is structural information from crystal structures supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "7ec9c921-fd85-402e-8722-1ae527eac946",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C39",
+      "claim": "There is a crescent shaped region in parameter space where the CCM is effective.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a crescent shaped region between these regions, where the CCM is effective according to our criteria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "eb266025-53d1-4354-8ee3-359002ef6c7b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C41",
+      "claim": "Any combination of jc and kc which produce C = C99%, make 133 times more CO2 available in the carboxysome than there is total inorganic carbon outside the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Any combination of jc and kc which produce C = C99%, make 133 times more CO2 available in the carboxysome than there is total inorganic carbon outside the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "57699881-1f18-494d-94d8-5cade5cf1598",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C43",
+      "claim": "When jc is low, the ratio of CO2 and HCO3\u2212 is constant, set by the chemical equilibrium at a given pH.",
+      "claim_type": "EXPLICIT",
+      "source": "When jc is low, the ratio of CO2 and HCO3\u2212 is constant, set by the chemical equilibrium at a given pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "16a20467-8841-44c8-ae34-93e7fd0a9a59",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C48",
+      "claim": "For each line of constant concentration in Figure 2 there is an optimal permeability value, where the least HCO3\u2212 transport is required to achieve the same CO2 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "For each line of constant concentration in Figure 2 there is an optimal permeability value, where the least HCO3\u2212 transport is required to achieve the same CO2 concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "b56a7130-780e-40b9-9a50-da876b56c865",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C51",
+      "claim": "At high permeability, the CO2 produced in the carboxysome rapidly leaks out of the carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "At high permeability, the CO2 produced in the carboxysome rapidly leaks out of the carboxysome, and the CO2 concentration in the cytosol, shown in Figure 4D, is relatively high.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "c1b8a361-64c9-49f1-bd6c-f5d58357d4fb",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C52",
+      "claim": "When the carboxysome permeability decreases to near the optimal value, the carboxysome traps CO2, and the cytosolic levels are lower, decreasing leakage out of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "When the carboxysome permeability decreases to near the optimal value, Figure 4C, the carboxysome traps CO2, and the cytosolic levels are lower, decreasing leakage out of the cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "0545b9cd-13cb-4ffa-b769-8e6669dda8bc",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C53",
+      "claim": "The transition from high to optimal permeability occurs when diffusion across the cell (and carboxysome) takes a shorter time than diffusion through the carboxysome shell.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition occurs when diffusion across the cell (and carboxysome) takes a shorter time than diffusion through the carboxysome shell; or the CO2 in the carboxysome is effectively partitioned from the CO2 in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "d40fbf33-9610-4b88-a8e9-9e812db9b8d2",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C55",
+      "claim": "At low external inorganic carbon conditions, internal inorganic carbon pools due to CCM activity are regularly measured as high as Ci = 30 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "At low external inorganic carbon conditions, internal inorganic carbon pools due to CCM activity are regularly measured as high as Ci = 30 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "cdc3b83f-e0c8-4de6-a072-48647d222b28",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C56",
+      "claim": "The inorganic carbon is predominantly in the form of HCO3\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "The inorganic carbon is predominantly in the form of HCO3\u2212, and measurements do not distinguish between the cytosol and carboxysome (Kaplan & Reinhold, 1999; Woodger et al., 2005; Sultemeyer et al., 1995; Price et al., 1998, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "b2e277ab-0727-40cc-81ac-5fb31aaa854b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C57",
+      "claim": "Measurements do not distinguish between the cytosol and carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "The inorganic carbon is predominantly in the form of HCO3\u2212, and measurements do not distinguish between the cytosol and carboxysome (Kaplan & Reinhold, 1999; Woodger et al., 2005; Sultemeyer et al., 1995; Price et al., 1998, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of experimental measurements noted by the authors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "6e55f02b-1792-449b-ab0c-d7b1b7b52390",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C58",
+      "claim": "The cytosolic HCO3\u2212 concentration is 30 mM when jc = 0.6 cm/s, over a wide range of the carboxysome permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, we find that the cytosolic HCO3\u2212 concentration is 30 mM when jc=0.6cms, over a wide range of the carboxysome permeability (indicated as the dashed grey line in Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "b05d0303-d818-4c88-bae5-f6d32222cf8b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C59",
+      "claim": "The cytosolic HCO3\u2212 concentration is the dominate form of inorganic carbon in the cell at jc = 0.6 cm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "From Figure 4 we can also see that the cytosolic HCO3\u2212 concentration is the dominate form of inorganic carbon in the cell at jc=0.6cms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "bd6dd9a1-bc5a-4d1c-a705-ea80776d7d9a",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C60",
+      "claim": "For cells grown under low inorganic carbon conditions net HCO3\u2212 fluxes are measured 105 pmol/(mg Chl s).",
+      "claim_type": "EXPLICIT",
+      "source": "For cells grown under low inorganic carbon conditions net HCO3\u2212 fluxes (transport - leakage) are measured 105pmolmgChls, with CO2 net flux being slightly lower but the same order of magnitude (Whitehead et al., 2014; Badger et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental measurement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "50e1601e-f936-4ed4-90f6-f981626a016b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C61",
+      "claim": "CO2 net flux is slightly lower but the same order of magnitude as HCO3\u2212 net flux.",
+      "claim_type": "EXPLICIT",
+      "source": "For cells grown under low inorganic carbon conditions net HCO3\u2212 fluxes (transport - leakage) are measured 105pmolmgChls, with CO2 net flux being slightly lower but the same order of magnitude (Whitehead et al., 2014; Badger et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "c35ae607-094f-490f-8d8d-0d16d0b3328e",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C62",
+      "claim": "High external inorganic carbon conditions produce slightly higher net HCO3\u2212 rates.",
+      "claim_type": "EXPLICIT",
+      "source": "High external inorganic carbon conditions produce slightly higher net HCO3\u2212 rates (Tchernov et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "54477cdd-610d-490a-85a2-53903b225103",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C63",
+      "claim": "The net HCO3\u2212 flux for the model cell is 6 \u00d7 10\u22126 pmol/(cell s).",
+      "claim_type": "EXPLICIT",
+      "source": "The net HCO3\u2212 flux for our model cell is 6\u00d710\u22126pmol(cells), so we are about an order of magnitude too high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "3456d1f9-a8f1-44f8-9165-f870fdd09e8b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C64",
+      "claim": "The model net HCO3\u2212 flux is about an order of magnitude too high compared to experimental measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The net HCO3\u2212 flux for our model cell is 6\u00d710\u22126pmol(cells), so we are about an order of magnitude too high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of model results with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "2aed31c5-89c5-45d5-a68a-0626c440713e",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C65",
+      "claim": "According to the calculation only around 1% of the carbon transported into the cell is fixed into 3-phosphoglycerate.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our calculation only around 1 % of the carbon transported into the cell is fixed into 3-phosophoglycerate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model results shown in Table 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "a23405b4-f7c1-439a-92cd-162c2f6e837f",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C66",
+      "claim": "Even in this highly CO2 concentrating regime, 5 \u00d7 104 2-phosphoglycolate are produced per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in this highly CO2 concentrating regime, 5 \u00d7 104 2-phosophoglycolate produced per second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "23924b41-9e12-4dfa-837f-cead29106f70",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C67",
+      "claim": "Cyanobacteria have been shown to have multiple pathways for recycling 2-phosphoglycolate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanobacteria have been shown to have multiple pathways for recycling 2-phosophoglycolate (Hackenberg et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known feature of cyanobacterial metabolism supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "2a512c1b-3f65-4f82-8301-a0483b1a4e3d",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C68",
+      "claim": "The system fixes CO2 at a rate of 0.14 pg/hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Our system fixes CO2 at a rate of 0.14 pg/hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "c97d29e4-654e-423d-8fb7-43d57cc6bb4c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C69",
+      "claim": "Between 115\u2013300 fg/\u03bcm3 of carbon are needed to produce a new cyanobacterial cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the volume of our cell, and the fact that between 115\u2013300 fg/\u03bcm3 of carbon are needed to produce a new cyanobacterial cell (Mahlmann et al., 2008) we need between 0.1 and 0.3 picograms of carbon per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known requirement for cell division supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "3328f3d8-cd69-47f6-9ee8-b2fd6eb56308",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C70",
+      "claim": "At the higher flux rate a cell could replicate every 7\u201321 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "At the higher flux rate (Table 3) this means that a cell could replicate every 7\u201321 hr and the lower flux rate (Table 4) allows replication every 11\u201335 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model results and carbon requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "beae14dc-37ab-4960-9f79-7e88a7900c03",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C71",
+      "claim": "At the lower flux rate a cell could replicate every 11\u201335 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "At the higher flux rate (Table 3) this means that a cell could replicate every 7\u201321 hr and the lower flux rate (Table 4) allows replication every 11\u201335 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model results and carbon requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "02188b75-e348-4bdc-9a92-e0870ba57e10",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C72",
+      "claim": "Both replication times are consistent with the division times of cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Both are consistent with the division times of cyanobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of model predictions with known biological data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "af7f0ca2-863f-416a-903c-f1ffdd9fcc31",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C77",
+      "claim": "The incoming inorganic carbon source for the carboxysome system is invariant with the position of the carboxysome in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This means the incoming inorganic carbon source for the carboxysome system is invariant with the position of the carboxysome in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "5c8966b6-8622-454e-9dbe-3e420bb4e90b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C78",
+      "claim": "There is a gradient in CO2 concentration across the cell when the carboxysome permeability is at or above the optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there is a gradient in CO2 concentration across the cell when the carboxysome permeability is at or above the optimum (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "8a0a895e-9575-4835-85ec-4f3a59ae192b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C79",
+      "claim": "The cell membrane is more permeable to CO2 than to HCO3\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell membrane is more permeable to CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of biological membranes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "6fe1f118-5514-49df-a46c-793e681a9fa0",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C80",
+      "claim": "Moving the carboxysome close to the cell membrane increases the leakage rate of CO2 out of the carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "The gradient means that the CO2 leakage out of the cell affects the CO2 leakage out of the carboxysome. Moving the carboxysome close to the cell membrane increases the leakage rate of CO2 out of the carboxysome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "e60b6fe0-2926-45e5-a80e-4f17a2cf665c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C81",
+      "claim": "In S. elongatus the carboxysomes are located along the center line of the cell, away from the cell membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in S. elongatus the carboxysomes are located along the center line of the cell, away from the cell membranes (Savage et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "5da0eb92-b064-4b0f-b912-7a725bf7942c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C83",
+      "claim": "The local concentration of CO2 is higher near a carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, since the local concentration of CO2 is higher near a carboxysome, nearby carboxysomes would 'feed' each other CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "c48fbd40-6dc3-42e6-821e-d39cde57cd71",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C84",
+      "claim": "Nearby carboxysomes would 'feed' each other CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, since the local concentration of CO2 is higher near a carboxysome, nearby carboxysomes would 'feed' each other CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "a89eea92-0cc0-472a-abbf-b6e0512706a3",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C85",
+      "claim": "Clumping of carboxysomes would reduce the probability of distributing carboxysomes equitably to daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As has been shown, such clumping would reduce the probability of distributing carboxysomes equitably to daughter cells, possibly counteracting any benefit (Savage et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known consequence of carboxysome clumping supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "902575b0-11b1-4b06-b75e-cc2c1daf162b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C86",
+      "claim": "The concentration across the carboxysome is basically constant.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration across the carboxysome is basically constant, because the carboxysome is so small that diffusion across it takes very little time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "79402198-1672-4419-ae12-c54c18d31205",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C87",
+      "claim": "The carboxysome is so small that diffusion across it takes very little time.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration across the carboxysome is basically constant, because the carboxysome is so small that diffusion across it takes very little time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "60cc35e6-7ad7-4a06-b9aa-d640884a68e8",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C88",
+      "claim": "The organization of the reactions in the carboxysome does not affect the CO2 concentration in the carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "A consequence of this is that the organization of the reactions in the carboxysome does not effect the CO2 concentration in the carboxysome (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "c1fff295-7f5f-478c-99aa-95d7beaf3b53",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C89",
+      "claim": "The localization of the carbonic anhydrase to the inner carboxysome shell seems to have no effect on the CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the localization of the carbonic anhydrase to the inner carboxysome shell seems to have no effect on the CCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "10863be4-188d-4d2e-ac86-2cbcb696df38",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C90",
+      "claim": "It has been suggested that diffusion in the carboxysome should be slower, since the carboxysome is packed with RuBisCO.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that diffusion in the carboxysome should be slower, since the carboxysome is packed with RuBisCO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis mentioned by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "bfe2f0b5-525b-41d7-92b9-c105a1cb93d5",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C93",
+      "claim": "If the diffusion is indeed slower in the carboxysome it does not aid the CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "So if the diffusion is indeed slower in the carboxysome it does not aid the CCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "10cd8555-2b54-4a32-a7aa-2daf3b8e80ee",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C94",
+      "claim": "Even at slower diffusion, the CO2 concentration across the carboxysome is flat.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at this slower diffusion, the CO2 concentration across the carboxysome is flat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "eeace30b-60c2-4a4b-921f-fbd6adbce6a6",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C95",
+      "claim": "Increasing conversion, \u03b1 > 0, can facilitate uptake of CO2 from outside the cell and scavenge CO2 escaped from the carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing conversion, \u03b1 > 0, can facilitate uptake of CO2 from outside the cell and scavenge CO2 escaped from the carboxysome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "9df5c125-3298-43e1-8556-71212d4d9bb8",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C97",
+      "claim": "Scavenging broadens the range of carboxysome permeability which will effectively separate the inorganic carbon pools in the carboxysome and outside.",
+      "claim_type": "EXPLICIT",
+      "source": "Scavenging broadens the range of carboxysome permeability which will effectively separate the inorganic carbon pools in the carboxysome and outside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "92a9d6e4-e293-4b9a-8875-cd60f95dfc24",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C99",
+      "claim": "Neither facilitated uptake nor scavenging effects are particularly strong in the current range of reaction rates and cell membrane permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither of these effects is particularly strong in our current range of reaction rates, and cell membrane permeability (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "b556cd4c-e290-4a60-a4c1-e1e489ea3eb1",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C100",
+      "claim": "The relative effect of facilitated uptake and scavenging depends on the external CO2 and HCO3\u2212 concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative effect of these two mechanisms depends on the external CO2 and HCO3\u2212 concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "bab17422-e973-4fd9-b450-e3f128c38b82",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C101",
+      "claim": "In saltwater environments the pH is near 8 and HCO3\u2212 is the predominant inorganic carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "In saltwater environments the pH is near 8 and HCO3\u2212 is the predominant inorganic carbon source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known environmental condition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "c5920646-13ed-48b1-8434-faa3343390e5",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C102",
+      "claim": "The effect of facilitated uptake under oceanic conditions is very small.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of facilitated uptake, under these assumptions, is very small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "63824782-51e5-4702-bbc8-978fff90dc1f",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C103",
+      "claim": "In freshwater or under conditions of ocean acidification, where the pH could fall to 6 or lower, there can be a much larger proportion of CO2 (>50%).",
+      "claim_type": "EXPLICIT",
+      "source": "In freshwater or under conditions of ocean acidification, where the pH could fall to 6 or lower, there can be a much larger proportion of CO2 (>50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known environmental condition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "48b35a68-429b-4f89-85ef-61a30474fa5c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C104",
+      "claim": "Even though the same velocity of facilitated uptake and HCO3\u2212 transport is assumed, facilitated uptake contributes less because it is limited by CO2 diffusion across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though we assume the same velocity of facilitated uptake and HCO3\u2212 transport (jc=\u03b1K\u03b1=1), facilitated uptake contributes less because it is limited by CO2 diffusion across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "92d8d355-a701-46d1-ba88-37762125bd36",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C105",
+      "claim": "At the same rates of transport the facilitated uptake mechanism only contributes more than active HCO3\u2212 if the CO2 concentration is greater than 80% of external inorganic carbon.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same rates of transport the facilitated uptake mechanism only contributes more than active HCO3\u2212 if the CO2 concentration is greater than 80% of external inorganic carbon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "93723a4f-c88f-4ea5-a1c6-f8cb7b6f81e0",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C106",
+      "claim": "Oceanic cyanobacteria such as Prochlorococcus only seem to possess gene homologs for HCO3\u2212 transport systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with observations that oceanic cyanobacteria such as Prochlorococcus only seem to possess gene homologs for HCO3\u2212 transport systems, while other freshwater and estuarine cyanobacteria have gene homologs for both constitutive (NDH-14) and inducible (NDH-13) CO2 uptake systems as well as inducible HCO3\u2212 transport systems (BicA, SbtA, and BCT1) (Price, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known genomic observation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "befccf1f-038f-4a12-bf11-26661971b4f6",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C107",
+      "claim": "Freshwater and estuarine cyanobacteria have gene homologs for both constitutive (NDH-14) and inducible (NDH-13) CO2 uptake systems as well as inducible HCO3\u2212 transport systems (BicA, SbtA, and BCT1).",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with observations that oceanic cyanobacteria such as Prochlorococcus only seem to possess gene homologs for HCO3\u2212 transport systems, while other freshwater and estuarine cyanobacteria have gene homologs for both constitutive (NDH-14) and inducible (NDH-13) CO2 uptake systems as well as inducible HCO3\u2212 transport systems (BicA, SbtA, and BCT1) (Price, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known genomic observation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "77c238fb-5132-4c16-b4fa-36175cb161c6",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C111",
+      "claim": "It is possible that since the scavenging mechanism is associated with the electron transport chain of the light reactions of photosynthesis scavenging can be ramped up more easily when there is excess light energy.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that since the scavenging mechanism is associated with the electron transport chain of the light reactions of photosynthesis scavenging can be ramped up more easily when there is excess light energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "9d662674-e28e-4912-9e91-a23dc25048b0",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C112",
+      "claim": "It has been suggested that the cell uses the scavenging mechanism as a way to dissipate excess light energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed it has been suggested that the cell uses this mechanism as a way to dissipate excess light energy (Tchernov et al., 1997, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from the literature supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "6d90890a-950e-4575-aca8-91ff1676581a",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C113",
+      "claim": "Concentrating carbonic anhydrase and RuBisCO to a small region in the center of the cell leads to an order of magnitude increase in the concentration of CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentrating carbonic anhydrase and RuBisCO to a small region in the center of the cell, on a scaffold for example, leads to an order of magnitude increase in the concentration of CO2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "f433bdc7-be6d-4022-a3d5-e9ddc79f59cd",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C114",
+      "claim": "Localizing the carbonic anhydrase to a small volume concentrates it, increasing the maximum reaction rate per volume, Vca and Vba.",
+      "claim_type": "EXPLICIT",
+      "source": "Localizing the carbonic anhydrase to a small volume concentrates it, increasing the maximum reaction rate per volume, Vca and Vba.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "db5cd653-676f-402e-a40a-dc1d46da40d3",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C115",
+      "claim": "A larger Vba increases the HCO3\u2212 concentration at which carbonic anhydrase is saturated allowing the mechanism to take advantage of a larger HCO3\u2212 flux, jc.",
+      "claim_type": "EXPLICIT",
+      "source": "A larger Vba increases the HCO3\u2212 concentration at which carbonic anhydrase is saturated allowing the mechanism to take advantage of a larger HCO3\u2212 flux, jc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "eb0581dd-0b7b-404b-b473-1dd5ec6c5544",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C116",
+      "claim": "A small increase can be gained from encapsulating the enzymes in a permeable carboxysome shell.",
+      "claim_type": "EXPLICIT",
+      "source": "A small increase can be gained from encapsulating the enzymes in a permeable carboxysome shell and another order of magnitude is gained at the optimal permeability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "d8110596-6e78-46f4-a62a-bb9f20cd1558",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C117",
+      "claim": "Another order of magnitude is gained at the optimal permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "A small increase can be gained from encapsulating the enzymes in a permeable carboxysome shell and another order of magnitude is gained at the optimal permeability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "cc88ce2c-9067-489c-b1a6-86ef35e6c859",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C118",
+      "claim": "At optimal carboxysome permeability, the CO2 is effectively partitioned into the carboxysome and conversion can act only as facilitated uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "At optimal carboxysome permeability, the CO2 is effectively partitioned into the carboxysome and conversion can act only as facilitated uptake as shown in Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "37ef6012-e086-4259-bbf2-557ed7258c6c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C120",
+      "claim": "The futile cycle is most detrimental when the enzymes are distributed throughout the cytosol, and increases the oxygenation error rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The futile cycle is most detrimental when the enzymes are distributed through out the cytosol, and increases the oxygenation error rate (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "ce2c5e7c-6426-4327-b180-e759f5278be4",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C121",
+      "claim": "Concentrating the enzymes away from the cell and thylakoid membranes, where conversion happens, removes the futile cycle effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentrating the enzymes away from the cell and thylakoid membranes, where conversion happens, removes this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "6fc8b2d9-2857-4aa9-af51-910e97491823",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C122",
+      "claim": "On a scaffold the oxygenation rate is almost exactly the same with and without the \u03b1 conversion mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "On a scaffold the oxygenation rate is almost exactly the same with and without the \u03b1 conversion mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "8a7bb9ab-4ff3-4de4-9210-19c5219f5e5f",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C123",
+      "claim": "It would be impossible to keep the cytosol completely free from carbonic anhydrase enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be impossible to keep the cytosol completely free from carbonic anhydrase enzyme, so there must be a way of activating it within the carboxysome only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about cellular constraints.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "9660eb2e-7f60-4c88-a379-3da63834599e",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C124",
+      "claim": "There must be a way of activating carbonic anhydrase within the carboxysome only.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be impossible to keep the cytosol completely free from carbonic anhydrase enzyme, so there must be a way of activating it within the carboxysome only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "3774295b-0564-43c3-af47-bf18b4afb73b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C125",
+      "claim": "Carbonic anhydrase is inactivated under reducing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Carbonic anhydrase is inactivated under reducing conditions (Pe\u00f1a et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known biochemical property supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "5e9ccfd4-9d72-4f38-bf39-43df35789e26",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C126",
+      "claim": "Carboxysomes oxidize after assembly, providing a way to keep carbonic anhydrase inactive until fully enclosed in a carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently it was shown that carboxysomes oxidize after assembly, providing a way to keep carbonic anhydrase inactive until fully enclosed in a carboxysome (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recent experimental finding supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "70a7aa7b-5ba3-4f56-8c1a-4a1f8150ffac",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C131",
+      "claim": "The transport rates and concentrations predicted in the optimal parameter space are in good agreement with experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantitatively compare the transport rates and concentrations we predict in our optimal parameter space, and find them to be in good agreement with experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing model results with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "10af687f-1508-4a4f-94c9-18b3e146c7b5",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "claim_id": "C132",
+      "claim": "The carboxysome permeability has not been measured directly.",
+      "claim_type": "EXPLICIT",
+      "source": "As of yet the carboxysome permeability has not been measured directly, and it would be quite interesting to see how close it is to our 'optimal' prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of experimental knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9cfd162a-7418-4f38-b0bf-310f757228a2",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The model identifies an optimal parameter space for efficient CCM function defined by three criteria: saturating RuBisCO, avoiding carbonic anhydrase saturation, and minimizing oxygenation reactions. Within this space, there exists an optimal non-specific carboxysome shell permeability where selectivity between CO2 and HCO3\u2212 is not necessary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 define efficiency criteria that are reasonable based on enzyme kinetics. Claims C6-C7 and C39 present the key finding that non-specific permeability can be optimal, supported by model analysis shown in Figure 2. Claim C48 demonstrates that for each CO2 concentration target, there is an optimal permeability minimizing HCO3\u2212 transport requirements. The model predictions are internally consistent and mechanistically justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "7182fb48-51a1-44c9-9f00-c942882797ff",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Carboxysome permeability controls CO2 partitioning between carboxysome and cytosol. At optimal permeability, HCO3\u2212 diffusion supplies sufficient inorganic carbon while minimizing CO2 leakage. The transition to optimal permeability occurs when diffusion across the cell is faster than diffusion through the carboxysome shell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 and C51-C53 describe the mechanism by which carboxysome permeability affects CO2 concentration, supported by model analysis in Figure 4. The physical explanation (C53) for the transition is mechanistically sound based on diffusion timescales. The model demonstrates how permeability balances substrate supply against product retention.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "704aa1a9-be92-47f6-8c82-ce6ce7f0a9be",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model predicts that HCO3\u2212 concentration in the cytosol is spatially uniform across the cell, set by transport and leakage rates, and largely independent of carboxysome permeability. At jc = 0.6 cm/s, cytosolic HCO3\u2212 reaches 30 mM, consistent with experimental measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 and C77 describe a key model prediction about HCO3\u2212 distribution, supported by analysis in Figures 2 and 4. Claims C58-C59 validate this against experimental data (C55-C57). The flat HCO3\u2212 profile is mechanistically justified by low membrane permeability to HCO3\u2212 allowing equilibration across the cell. This prediction is testable and has important implications for carboxysome positioning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "74e1fc7e-d2d5-42b2-bd9b-956bc69bbeb2",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model predicts net HCO3\u2212 flux of 6 \u00d7 10\u22126 pmol/(cell s), which is approximately one order of magnitude higher than experimental measurements of ~10\u22126 pmol/(cell s) for cells grown under low inorganic carbon conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 acknowledges the discrepancy between model (C63) and experiment (C60-C62). While the authors suggest this could be addressed by adjusting parameters (Table 4), the order of magnitude difference raises questions about model assumptions or parameter values. The authors do not fully resolve this discrepancy, though they show alternative parameter sets can reduce it.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "5a284e09-a136-4d6d-a0b3-67892ddc5cf5",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Concentrating carbonic anhydrase and RuBisCO to a small region (e.g., on a scaffold) increases the maximum reaction rate per volume, causing carbonic anhydrase to saturate at higher HCO3\u2212 levels and achieving an order of magnitude increase in local CO2 concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 and C113-C115 describe the benefit of enzyme co-localization, supported by model analysis in Figure 6. The mechanism is clearly explained: concentrating enzymes increases volumetric reaction rates (Vca, Vba), shifting the saturation point and enabling higher CO2 concentrations. This is a straightforward consequence of enzyme kinetics and spatial organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "f6db0c73-fd63-4c56-9e32-7e915d1eb3e0",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Encapsulation of enzymes in an optimally permeable carboxysome shell achieves an additional order of magnitude increase in CO2 concentration beyond co-localization alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C116-C117 quantify the cumulative benefit of encapsulation, supported by Figure 6. The model shows that co-localization provides ~10-fold increase, while optimal encapsulation provides another ~10-fold increase. This demonstrates the additive benefits of different organizational strategies and is consistent with the partitioning mechanism described in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "eed9f3fc-6cd4-453d-a601-9e1ae7ef4424",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CO2 to HCO3\u2212 conversion (\u03b1 > 0) can facilitate uptake and scavenge escaped CO2, but these effects are weak under the modeled conditions. Facilitated uptake is limited by CO2 diffusion across membranes and only dominates over HCO3\u2212 transport when external CO2 exceeds 80% of total inorganic carbon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C105 analyze the role of CO2 conversion mechanisms, supported by Figures 2-supplement-2 and 5. The model demonstrates that under oceanic conditions (pH ~8, low CO2), facilitated uptake contributes minimally (C102). The mechanistic explanation (C104) that diffusion limitation reduces facilitated uptake effectiveness is sound. The 80% threshold (C105) is clearly shown in Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "e72e4caf-273b-4b3a-ac55-a2d1f1a340d8",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At optimal carboxysome permeability, contributions from CO2 scavenging at the cell membrane are small, and CO2 is effectively partitioned into the carboxysome such that conversion acts only as facilitated uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C118 describe the limited role of scavenging at optimal permeability, supported by model analysis in Figures 2-supplement-2 and 5. The explanation is mechanistically sound: at optimal permeability, CO2 is trapped in the carboxysome, leaving little cytosolic CO2 to scavenge. This is consistent with the partitioning mechanism described in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "2d1a07d9-af7c-44a4-be9f-8c71a918533b",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A CO2 concentration gradient exists across the cell at optimal or higher carboxysome permeability. Moving carboxysomes closer to the cell membrane would increase CO2 leakage. Experimental observations show carboxysomes are positioned along the cell centerline, away from membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe spatial CO2 gradients and their implications for carboxysome positioning, supported by Figure 4C-D and experimental data (C81). The mechanism is clear: high membrane permeability to CO2 (C79) creates gradients that affect leakage rates (C80). The consistency with experimental carboxysome positioning (C81) strengthens the model's validity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "bf7ceba8-bef0-4cb0-8d09-103e8ca934e4",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CO2 and HCO3\u2212 concentrations are uniform within the carboxysome due to its small size (50 nm) where diffusion is rapid. Consequently, the spatial organization of reactions within the carboxysome (e.g., carbonic anhydrase localization to the shell) has no effect on CCM function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 describe concentration uniformity within carboxysomes, supported by model analysis in Figure 3-supplement-1. The mechanistic explanation (C87) based on rapid diffusion over short distances is sound. The conclusion that internal organization doesn't matter (C88-C89) follows logically from concentration uniformity, though this somewhat contradicts experimental observations of carbonic anhydrase shell localization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "9728f40d-d42e-40ad-ba2e-c45d8602589c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Even if diffusion within the carboxysome is slower (as might occur due to RuBisCO crowding), this does not aid the CCM. CO2 concentration remains flat across the carboxysome even at reduced diffusion rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 test the hypothesis that slower intra-carboxysome diffusion could enhance CO2 trapping, supported by analysis in Figure 2-supplement-1. The model shows that even with diffusion reduced to that in 60% sucrose solution, the optimal permeability shifts but higher transport is needed for the same CO2 concentration (C93). This counterintuitive result is well-supported by the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "23a61055-9da5-4f91-9b34-6aa952c55c3c",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "When enzymes are distributed throughout the cytosol, a futile cycle between carbonic anhydrase and CO2 conversion increases oxygenation error rates. Concentrating enzymes away from membranes (e.g., on a scaffold) eliminates this effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C122 describe the futile cycle problem and its solution through spatial organization. While C120 notes data are not shown, the mechanism is biochemically sound: carbonic anhydrase in the cytosol would convert CO2 produced by membrane-localized conversion back to HCO3\u2212. The solution (C121-C122) through spatial separation is logical and supported by the model framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "5431cbcc-60ef-4568-a612-78368588ba57",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model predicts that only ~1% of transported carbon is fixed, producing 5 \u00d7 10^4 phosphoglycolate molecules/second and fixing CO2 at 0.14 pg/hour. This yields predicted cell division times of 7-35 hours depending on flux rates, consistent with cyanobacterial division times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C72 present model predictions for carbon fixation rates and cell division times. The calculations are based on model outputs (Tables 3-4) and known carbon requirements (C69). The consistency with experimental division times (C72) provides validation. However, the low fixation efficiency (C65, ~1%) and high oxygenation rate (C66) despite the CCM suggest the model may overestimate some inefficiencies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "3a8daa41-0061-4e1a-adbc-a1f3f80ab604",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model predictions about facilitated uptake versus HCO3\u2212 transport are consistent with genomic observations: oceanic cyanobacteria (pH ~8, low CO2) possess only HCO3\u2212 transporters, while freshwater/estuarine species (lower pH, higher CO2) have both CO2 uptake and HCO3\u2212 transport systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 cite genomic data that aligns with model predictions about the relative effectiveness of different uptake mechanisms under varying pH conditions (C101, C103). This consistency between model and genomic observations strengthens the model's biological relevance, though it is correlative rather than mechanistic validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "2900f939-18d7-4721-a04a-1c1ba7078753",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Nearby carboxysomes would 'feed' each other CO2 due to locally elevated CO2 concentrations, but clumping would reduce equitable distribution to daughter cells during division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 describe a model prediction about carboxysome interactions, while C85 cites experimental work on the cost of clumping. The 'feeding' mechanism is a logical consequence of the CO2 gradients shown in Figure 4. The trade-off between potential biochemical benefit and segregation cost is well-reasoned.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "18cd3996-3190-4f7f-a2a8-3dd2d345b0d0",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The scavenging mechanism may serve to dissipate excess light energy, as it is associated with the photosynthetic electron transport chain and could be ramped up when light energy is abundant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C111-C112 present speculation about the physiological role of scavenging. While C112 cites literature support for this hypothesis, the model does not test this mechanism. This remains speculative and would require experimental validation or expanded modeling that incorporates light-dependent regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "76aaf78f-1f9e-4517-b2a7-fcba700517f0",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Carbonic anhydrase must be activated only within carboxysomes to avoid futile cycling. Recent evidence shows carboxysomes oxidize after assembly, providing a mechanism to keep carbonic anhydrase inactive until encapsulation, as the enzyme is inactivated under reducing conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C124 present a logical inference from the model about the need for selective activation. Claims C125-C126 cite experimental evidence for a mechanism (redox-dependent activation) that could achieve this. The integration of model predictions with experimental findings is appropriate, though the model itself does not explicitly include this regulatory mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "d30e90a9-dc9d-4830-b887-251cdec54a19",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The model's predicted transport rates and concentrations in the optimal parameter space are in good agreement with experimental measurements. However, carboxysome permeability has not been directly measured experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C131 summarizes model validation against experimental data, supported by comparisons throughout the Discussion section (e.g., C55-C64). Claim C132 acknowledges a key limitation: the optimal permeability is a prediction that awaits experimental validation. The authors appropriately distinguish between validated and untested predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "4e89026f-0999-4b29-9f58-e4df3542bda2",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims establish known features of the cyanobacterial CCM: carboxysomes are 100-200 nm compartments that separate RuBisCO from the cytosol, RuBisCO competitively binds CO2 and O2, cells accumulate HCO3\u2212 rather than CO2 due to membrane permeability differences, and various transporters and conversion mechanisms concentrate inorganic carbon 20-40 mM (up to 4000-fold above external levels).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 present established background knowledge about the CCM, all supported by appropriate citations. These provide the biological context for the model but are not novel findings of this study. They are well-established facts from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    },
+    {
+      "id": "4029562c-2551-4c03-93af-92cf1eab3d17",
+      "content_id": "7a840720-c6b8-49b4-a970-b64c7784a06d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The model is a three-dimensional reaction-diffusion system treating a spherically symmetric cell (radius 0.5 \u03bcm) with a single central carboxysome (radius 50 nm). Carboxysome structural parameters are based on crystal structures showing ~4800 pores of radius 0.35 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C35 describe the model structure and parameters. The model setup is clearly defined and based on appropriate structural data (C35). The spherical symmetry assumption is a reasonable simplification for initial analysis, though it doesn't capture the rod-shaped geometry and multiple carboxysomes of actual cells (noted in C22).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:35:11.219110Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "972e716f-01e7-4b94-a0da-a66f16781401",
+      "result_id": "9cfd162a-7418-4f38-b0bf-310f757228a2"
+    },
+    {
+      "claim_id": "167010bd-bfe6-41bb-b2ef-a45b39be3819",
+      "result_id": "9cfd162a-7418-4f38-b0bf-310f757228a2"
+    },
+    {
+      "claim_id": "9dd9243e-5ebe-465a-9bf1-da9837726553",
+      "result_id": "9cfd162a-7418-4f38-b0bf-310f757228a2"
+    },
+    {
+      "claim_id": "9cc1ead5-0406-4f30-9fb2-e7899923fa5a",
+      "result_id": "9cfd162a-7418-4f38-b0bf-310f757228a2"
+    },
+    {
+      "claim_id": "291f5171-cf3a-4793-a84e-ab020ee4fad7",
+      "result_id": "9cfd162a-7418-4f38-b0bf-310f757228a2"
+    },
+    {
+      "claim_id": "7ec9c921-fd85-402e-8722-1ae527eac946",
+      "result_id": "9cfd162a-7418-4f38-b0bf-310f757228a2"
+    },
+    {
+      "claim_id": "16a20467-8841-44c8-ae34-93e7fd0a9a59",
+      "result_id": "9cfd162a-7418-4f38-b0bf-310f757228a2"
+    },
+    {
+      "claim_id": "a6dda772-6a15-481e-8d21-5fae12977bdb",
+      "result_id": "7182fb48-51a1-44c9-9f00-c942882797ff"
+    },
+    {
+      "claim_id": "3b5a07f5-83f8-4f18-b29f-c00be5a8aefd",
+      "result_id": "7182fb48-51a1-44c9-9f00-c942882797ff"
+    },
+    {
+      "claim_id": "b56a7130-780e-40b9-9a50-da876b56c865",
+      "result_id": "7182fb48-51a1-44c9-9f00-c942882797ff"
+    },
+    {
+      "claim_id": "c1b8a361-64c9-49f1-bd6c-f5d58357d4fb",
+      "result_id": "7182fb48-51a1-44c9-9f00-c942882797ff"
+    },
+    {
+      "claim_id": "0545b9cd-13cb-4ffa-b769-8e6669dda8bc",
+      "result_id": "7182fb48-51a1-44c9-9f00-c942882797ff"
+    },
+    {
+      "claim_id": "2964e630-7190-4007-94a7-896936e52de1",
+      "result_id": "704aa1a9-be92-47f6-8c82-ce6ce7f0a9be"
+    },
+    {
+      "claim_id": "6861e433-0e07-4f48-a0cc-b833803d428b",
+      "result_id": "704aa1a9-be92-47f6-8c82-ce6ce7f0a9be"
+    },
+    {
+      "claim_id": "6e55f02b-1792-449b-ab0c-d7b1b7b52390",
+      "result_id": "704aa1a9-be92-47f6-8c82-ce6ce7f0a9be"
+    },
+    {
+      "claim_id": "b05d0303-d818-4c88-bae5-f6d32222cf8b",
+      "result_id": "704aa1a9-be92-47f6-8c82-ce6ce7f0a9be"
+    },
+    {
+      "claim_id": "af7f0ca2-863f-416a-903c-f1ffdd9fcc31",
+      "result_id": "704aa1a9-be92-47f6-8c82-ce6ce7f0a9be"
+    },
+    {
+      "claim_id": "54477cdd-610d-490a-85a2-53903b225103",
+      "result_id": "74e1fc7e-d2d5-42b2-bd9b-956bc69bbeb2"
+    },
+    {
+      "claim_id": "3456d1f9-a8f1-44f8-9165-f870fdd09e8b",
+      "result_id": "74e1fc7e-d2d5-42b2-bd9b-956bc69bbeb2"
+    },
+    {
+      "claim_id": "bd6dd9a1-bc5a-4d1c-a705-ea80776d7d9a",
+      "result_id": "74e1fc7e-d2d5-42b2-bd9b-956bc69bbeb2"
+    },
+    {
+      "claim_id": "50e1601e-f936-4ed4-90f6-f981626a016b",
+      "result_id": "74e1fc7e-d2d5-42b2-bd9b-956bc69bbeb2"
+    },
+    {
+      "claim_id": "c35ae607-094f-490f-8d8d-0d16d0b3328e",
+      "result_id": "74e1fc7e-d2d5-42b2-bd9b-956bc69bbeb2"
+    },
+    {
+      "claim_id": "02824953-35a7-4c4d-8d0d-bf9b89158865",
+      "result_id": "5a284e09-a136-4d6d-a0b3-67892ddc5cf5"
+    },
+    {
+      "claim_id": "42c12e2b-aa34-438b-b510-4d10f1f2280c",
+      "result_id": "5a284e09-a136-4d6d-a0b3-67892ddc5cf5"
+    },
+    {
+      "claim_id": "0d390782-90b5-490a-8e1f-a23890cf7cc8",
+      "result_id": "5a284e09-a136-4d6d-a0b3-67892ddc5cf5"
+    },
+    {
+      "claim_id": "6d90890a-950e-4575-aca8-91ff1676581a",
+      "result_id": "5a284e09-a136-4d6d-a0b3-67892ddc5cf5"
+    },
+    {
+      "claim_id": "f433bdc7-be6d-4022-a3d5-e9ddc79f59cd",
+      "result_id": "5a284e09-a136-4d6d-a0b3-67892ddc5cf5"
+    },
+    {
+      "claim_id": "db5cd653-676f-402e-a40a-dc1d46da40d3",
+      "result_id": "5a284e09-a136-4d6d-a0b3-67892ddc5cf5"
+    },
+    {
+      "claim_id": "3fdc8537-7893-4260-8bad-ca1fdb40244a",
+      "result_id": "f6db0c73-fd63-4c56-9e32-7e915d1eb3e0"
+    },
+    {
+      "claim_id": "eb0581dd-0b7b-404b-b473-1dd5ec6c5544",
+      "result_id": "f6db0c73-fd63-4c56-9e32-7e915d1eb3e0"
+    },
+    {
+      "claim_id": "d8110596-6e78-46f4-a62a-bb9f20cd1558",
+      "result_id": "f6db0c73-fd63-4c56-9e32-7e915d1eb3e0"
+    },
+    {
+      "claim_id": "eeace30b-60c2-4a4b-921f-fbd6adbce6a6",
+      "result_id": "eed9f3fc-6cd4-453d-a601-9e1ae7ef4424"
+    },
+    {
+      "claim_id": "9df5c125-3298-43e1-8556-71212d4d9bb8",
+      "result_id": "eed9f3fc-6cd4-453d-a601-9e1ae7ef4424"
+    },
+    {
+      "claim_id": "92a9d6e4-e293-4b9a-8875-cd60f95dfc24",
+      "result_id": "eed9f3fc-6cd4-453d-a601-9e1ae7ef4424"
+    },
+    {
+      "claim_id": "b556cd4c-e290-4a60-a4c1-e1e489ea3eb1",
+      "result_id": "eed9f3fc-6cd4-453d-a601-9e1ae7ef4424"
+    },
+    {
+      "claim_id": "c5920646-13ed-48b1-8434-faa3343390e5",
+      "result_id": "eed9f3fc-6cd4-453d-a601-9e1ae7ef4424"
+    },
+    {
+      "claim_id": "48b35a68-429b-4f89-85ef-61a30474fa5c",
+      "result_id": "eed9f3fc-6cd4-453d-a601-9e1ae7ef4424"
+    },
+    {
+      "claim_id": "92d8d355-a701-46d1-ba88-37762125bd36",
+      "result_id": "eed9f3fc-6cd4-453d-a601-9e1ae7ef4424"
+    },
+    {
+      "claim_id": "067a1c1f-d965-4cd8-98ca-2ddbef7620d0",
+      "result_id": "e72e4caf-273b-4b3a-ac55-a2d1f1a340d8"
+    },
+    {
+      "claim_id": "cc88ce2c-9067-489c-b1a6-86ef35e6c859",
+      "result_id": "e72e4caf-273b-4b3a-ac55-a2d1f1a340d8"
+    },
+    {
+      "claim_id": "5c8966b6-8622-454e-9dbe-3e420bb4e90b",
+      "result_id": "2d1a07d9-af7c-44a4-be9f-8c71a918533b"
+    },
+    {
+      "claim_id": "8a0a895e-9575-4835-85ec-4f3a59ae192b",
+      "result_id": "2d1a07d9-af7c-44a4-be9f-8c71a918533b"
+    },
+    {
+      "claim_id": "6fe1f118-5514-49df-a46c-793e681a9fa0",
+      "result_id": "2d1a07d9-af7c-44a4-be9f-8c71a918533b"
+    },
+    {
+      "claim_id": "e60b6fe0-2926-45e5-a80e-4f17a2cf665c",
+      "result_id": "2d1a07d9-af7c-44a4-be9f-8c71a918533b"
+    },
+    {
+      "claim_id": "902575b0-11b1-4b06-b75e-cc2c1daf162b",
+      "result_id": "bf7ceba8-bef0-4cb0-8d09-103e8ca934e4"
+    },
+    {
+      "claim_id": "79402198-1672-4419-ae12-c54c18d31205",
+      "result_id": "bf7ceba8-bef0-4cb0-8d09-103e8ca934e4"
+    },
+    {
+      "claim_id": "60cc35e6-7ad7-4a06-b9aa-d640884a68e8",
+      "result_id": "bf7ceba8-bef0-4cb0-8d09-103e8ca934e4"
+    },
+    {
+      "claim_id": "c1fff295-7f5f-478c-99aa-95d7beaf3b53",
+      "result_id": "bf7ceba8-bef0-4cb0-8d09-103e8ca934e4"
+    },
+    {
+      "claim_id": "10863be4-188d-4d2e-ac86-2cbcb696df38",
+      "result_id": "9728f40d-d42e-40ad-ba2e-c45d8602589c"
+    },
+    {
+      "claim_id": "bfe2f0b5-525b-41d7-92b9-c105a1cb93d5",
+      "result_id": "9728f40d-d42e-40ad-ba2e-c45d8602589c"
+    },
+    {
+      "claim_id": "10cd8555-2b54-4a32-a7aa-2daf3b8e80ee",
+      "result_id": "9728f40d-d42e-40ad-ba2e-c45d8602589c"
+    },
+    {
+      "claim_id": "37ef6012-e086-4259-bbf2-557ed7258c6c",
+      "result_id": "23a61055-9da5-4f91-9b34-6aa952c55c3c"
+    },
+    {
+      "claim_id": "ce2c5e7c-6426-4327-b180-e759f5278be4",
+      "result_id": "23a61055-9da5-4f91-9b34-6aa952c55c3c"
+    },
+    {
+      "claim_id": "6fc8b2d9-2857-4aa9-af51-910e97491823",
+      "result_id": "23a61055-9da5-4f91-9b34-6aa952c55c3c"
+    },
+    {
+      "claim_id": "2aed31c5-89c5-45d5-a68a-0626c440713e",
+      "result_id": "5431cbcc-60ef-4568-a612-78368588ba57"
+    },
+    {
+      "claim_id": "a23405b4-f7c1-439a-92cd-162c2f6e837f",
+      "result_id": "5431cbcc-60ef-4568-a612-78368588ba57"
+    },
+    {
+      "claim_id": "23924b41-9e12-4dfa-837f-cead29106f70",
+      "result_id": "5431cbcc-60ef-4568-a612-78368588ba57"
+    },
+    {
+      "claim_id": "2a512c1b-3f65-4f82-8301-a0483b1a4e3d",
+      "result_id": "5431cbcc-60ef-4568-a612-78368588ba57"
+    },
+    {
+      "claim_id": "c97d29e4-654e-423d-8fb7-43d57cc6bb4c",
+      "result_id": "5431cbcc-60ef-4568-a612-78368588ba57"
+    },
+    {
+      "claim_id": "3328f3d8-cd69-47f6-9ee8-b2fd6eb56308",
+      "result_id": "5431cbcc-60ef-4568-a612-78368588ba57"
+    },
+    {
+      "claim_id": "beae14dc-37ab-4960-9f79-7e88a7900c03",
+      "result_id": "5431cbcc-60ef-4568-a612-78368588ba57"
+    },
+    {
+      "claim_id": "02188b75-e348-4bdc-9a92-e0870ba57e10",
+      "result_id": "5431cbcc-60ef-4568-a612-78368588ba57"
+    },
+    {
+      "claim_id": "93723a4f-c88f-4ea5-a1c6-f8cb7b6f81e0",
+      "result_id": "3a8daa41-0061-4e1a-adbc-a1f3f80ab604"
+    },
+    {
+      "claim_id": "befccf1f-038f-4a12-bf11-26661971b4f6",
+      "result_id": "3a8daa41-0061-4e1a-adbc-a1f3f80ab604"
+    },
+    {
+      "claim_id": "63824782-51e5-4702-bbc8-978fff90dc1f",
+      "result_id": "3a8daa41-0061-4e1a-adbc-a1f3f80ab604"
+    },
+    {
+      "claim_id": "bab17422-e973-4fd9-b450-e3f128c38b82",
+      "result_id": "3a8daa41-0061-4e1a-adbc-a1f3f80ab604"
+    },
+    {
+      "claim_id": "5da0eb92-b064-4b0f-b912-7a725bf7942c",
+      "result_id": "2900f939-18d7-4721-a04a-1c1ba7078753"
+    },
+    {
+      "claim_id": "c48fbd40-6dc3-42e6-821e-d39cde57cd71",
+      "result_id": "2900f939-18d7-4721-a04a-1c1ba7078753"
+    },
+    {
+      "claim_id": "a89eea92-0cc0-472a-abbf-b6e0512706a3",
+      "result_id": "2900f939-18d7-4721-a04a-1c1ba7078753"
+    },
+    {
+      "claim_id": "77c238fb-5132-4c16-b4fa-36175cb161c6",
+      "result_id": "18cd3996-3190-4f7f-a2a8-3dd2d345b0d0"
+    },
+    {
+      "claim_id": "9d662674-e28e-4912-9e91-a23dc25048b0",
+      "result_id": "18cd3996-3190-4f7f-a2a8-3dd2d345b0d0"
+    },
+    {
+      "claim_id": "8a7bb9ab-4ff3-4de4-9210-19c5219f5e5f",
+      "result_id": "76aaf78f-1f9e-4517-b2a7-fcba700517f0"
+    },
+    {
+      "claim_id": "9660eb2e-7f60-4c88-a379-3da63834599e",
+      "result_id": "76aaf78f-1f9e-4517-b2a7-fcba700517f0"
+    },
+    {
+      "claim_id": "3774295b-0564-43c3-af47-bf18b4afb73b",
+      "result_id": "76aaf78f-1f9e-4517-b2a7-fcba700517f0"
+    },
+    {
+      "claim_id": "5e9ccfd4-9d72-4f38-bf39-43df35789e26",
+      "result_id": "76aaf78f-1f9e-4517-b2a7-fcba700517f0"
+    },
+    {
+      "claim_id": "70a7aa7b-5ba3-4f56-8c1a-4a1f8150ffac",
+      "result_id": "d30e90a9-dc9d-4830-b887-251cdec54a19"
+    },
+    {
+      "claim_id": "10af687f-1508-4a4f-94c9-18b3e146c7b5",
+      "result_id": "d30e90a9-dc9d-4830-b887-251cdec54a19"
+    },
+    {
+      "claim_id": "b9c54b90-de46-422b-9657-ba3f67883027",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "f8137c85-f39d-414d-aeec-ceffe39817ce",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "836cdfb5-1f5e-4992-970d-c20cbd5227df",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "fd44724e-0f1b-4b0c-b081-19ae92f23f2e",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "baaad0f8-a2e7-456f-8821-0ddc18d9bfaf",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "711daa35-9625-4a73-af60-88abf43d4a75",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "92250b3c-89d8-4968-8244-7597c2c544a9",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "be347bc4-a123-4f16-9766-4a7a4b2bf628",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "998c3249-57be-4c8e-92d4-05c532196e9c",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "e37766b8-64c1-4bf6-beef-60b7b0eed958",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "7ca74cb8-978f-4f52-984f-50199330a80c",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "e494dba1-ec81-4235-8904-b707c42c983e",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "2f4ceccc-4106-4130-a7f3-de61719032bb",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "3dc3e266-c9c6-449d-8c74-c613ff022110",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "b6671edf-5267-4aa8-b509-88ac69c1be0c",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "2bc81420-6cde-4d29-8d5d-d36f7fff2dbd",
+      "result_id": "4e89026f-0999-4b29-9f58-e4df3542bda2"
+    },
+    {
+      "claim_id": "f3d030f7-5dc5-49c6-b887-4db0328e4363",
+      "result_id": "4029562c-2551-4c03-93af-92cf1eab3d17"
+    },
+    {
+      "claim_id": "9a0e58da-8a89-4d35-8e3e-f1b2b96d69ff",
+      "result_id": "4029562c-2551-4c03-93af-92cf1eab3d17"
+    },
+    {
+      "claim_id": "0ed2a0d8-e6a0-46ba-a53c-e20185cfdfe2",
+      "result_id": "4029562c-2551-4c03-93af-92cf1eab3d17"
+    },
+    {
+      "claim_id": "0b170295-d3a0-480a-9574-1cbc1fef605e",
+      "result_id": "4029562c-2551-4c03-93af-92cf1eab3d17"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C58"
+    ],
+    "result": "At physiological temperature, endocytosis at hippocampal and cortical nerve terminals exhibits bi-phasic activity-dependence: acceleration for 15-25 APs followed by slowing with increasing burst length, creating an optimal stimulus range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C22-C23, and C58 collectively describe the bi-phasic behavior with converging evidence from Figures 1 and 2. The acceleration phase (C2) and slowing phase (C3) are both documented with quantitative data at physiological temperature, establishing this as a core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Activity-dependent acceleration of endocytosis is only prominent at physiological temperature (37\u00b0C), with 42\u00b17% acceleration from 5 to 25 APs and 18\u00b14% slowing at 100 APs, whereas this acceleration phase is not readily apparent at 30\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C25, and C59-C61 are supported by direct temperature comparison data in Figure 2D showing clear differences between 30\u00b0C and 37\u00b0C. Statistical significance is reported (p<0.01, p<0.03) with adequate sample sizes (N=8-9), providing strong evidence for temperature-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C62"
+    ],
+    "result": "Both phases of stimulus-dependent endocytosis are modulated by Ca2+, with higher external Ca2+ (4 mM vs 2 mM) increasing the slope of activity-dependent slowing by ~700% while leaving the intercept unchanged, and EGTA buffering eliminating slowing while unmasking acceleration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C49-C55, and C62 are supported by systematic Ca2+ manipulation experiments in Figures 1D-F and 2E. The 700% increase in slope (C51, N=9, p<0.004) and EGTA effects (C53-C55) provide converging evidence for Ca2+-dependent modulation of both phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C95",
+      "C121"
+    ],
+    "result": "The mechanism of activity-dependent acceleration is based on dephosphorylation of dynamin 1 at serines 774/778, as phosphomimetic (S774/778D) and phospho-deficient (S774/778A) mutants both rescue the dynamin 1/3 DKO endocytosis defect but eliminate activity-dependent acceleration by locking endocytosis in slow or fast states respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C32-C35, C83-C86, C95, and C121 are strongly supported by the phosphorylation mutant experiments in Figure 4. Both mutants rescue the major defect (C32, C83) but eliminate acceleration (C33, C84), with the phosphomimetic locked slow (C85) and phospho-deficient locked fast (C86), providing clear mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The acceleration of endocytosis persists for ~20 seconds after a 5 AP burst but is lost by 30 seconds, suggesting Ca2+ acts through a second messenger system rather than directly, given that intracellular Ca2+ elevations decay much faster (<1 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are supported by the inter-burst interval experiments in Figure 3. The persistence time data (C63-C67) show clear temporal dynamics with statistical significance (p<0.05 for 20s, not significant for 30s). The inference about second messenger involvement (C69) is reasonable given the mismatch between Ca2+ decay kinetics and acceleration persistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "At 30\u00b0C, endocytosis shows continuous slowing with increasing stimulus number from 10 to 100 APs, parameterized as a linear dependence with mean slope 0.058\u00b10.004 s/AP, with both slope and intercept varying significantly but independently across neurons (N=44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe the slowing phase at 30\u00b0C with strong support from Figure 1A-C. The linear parameterization (C45) is appropriate for the data range shown, and the large sample size (N=44) provides robust statistics for the population-level variation (C46-C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The observed single AP endocytosis time constant was slower than both the 25 AP value and the value predicted from linear regression at higher stimulus levels, revealing the acceleration phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by direct comparison data in Figure 2A-C showing single AP measurements slower than predicted, with statistical significance (p<0.01, N=10). This provides key evidence for the acceleration phase that was missed in prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C31"
+    ],
+    "result": "Dynamin 1/3 double knockout results in severe (>10-fold) impairment of endocytosis that can be fully rescued by re-introduction of dynamin 1, with mouse cortical neurons showing similar behavior to rat hippocampal neurons except for a less pronounced slowing phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 and C31 are supported by data in Figure 4A-B showing the dramatic DKO phenotype and rescue. The comparison between mouse cortical and rat hippocampal neurons (C78) is documented in Figure 4B, though the mechanistic basis for the difference in slowing phase is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C96",
+      "C97"
+    ],
+    "result": "Neurons expressing dynamin 1 phosphorylation mutants do not undergo stimulus-dependent regulation and constitutively proceed at faster (phospho-deficient) or slower (phosphomimetic) speeds, suggesting dephosphorylation tunes the mechanism rather than switching to a distinct pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 and C96-C97 are supported by Figure 4C-E showing that both mutants rescue the major defect but differ in absolute kinetics without showing acceleration. The interpretation that this represents tuning rather than pathway switching (C97) is reasonable given that the fundamental endocytic mechanism remains intact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C114"
+    ],
+    "result": "Increasing stimulus from 100 to 300 APs shows slowing of endocytosis for all conditions (control, dynamin 1 rescue, phosphomimetic, phospho-deficient), and this Ca2+-dependent slowing mechanism is not affected by setting dynamin's phosphorylation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C114 are supported by Figure 4F showing slowing at 300 AP across all genotypes (p<0.03). This demonstrates that the slowing phase operates independently of dynamin phosphorylation status, suggesting a separate Ca2+-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "No differences were detected in recycling pool size or exocytosis rate between control, dynamin 1 rescue, phosphomimetic, or phospho-deficient conditions using the bafilomycin method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by Figure 4\u2014figure supplement 1. This control experiment is important for establishing that the observed differences in endocytosis kinetics are not secondary to changes in pool size or exocytosis, though sample sizes are modest (N=5-9).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Under conditions where dynamin 1 dephosphorylation accelerates endocytosis, membrane fission or another dynamin-dependent event is the rate-limiting step, with cooperative participation of syndapin and dephosphorylated dynamin improving endocytic efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103 and C106-C108 involve mechanistic interpretations about rate-limiting steps and syndapin cooperation. While the phosphorylation mutant data (Figure 4) support the importance of these sites, direct evidence for membrane fission being rate-limiting or for syndapin's specific role in the observed acceleration is not provided. These remain plausible but unproven mechanistic hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "At 37\u00b0C, synaptic vesicle retrieval is optimized for brief action potential bursts through a balance of calcineurin activation versus Ca2+-dependent inhibition during prolonged stimulation, with dynamin centrally important in this optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 represent the main conclusions synthesizing the experimental findings. The optimization for brief bursts (C118) is supported by the bi-phasic data, the proposed balance mechanism (C119) is consistent with the Ca2+ manipulation experiments, and dynamin's central role (C120) is established by the phosphorylation mutant experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The vG-pH reporter is quenched at pH 5.6, increases ~20-fold upon exocytosis, is requenched after endocytosis, and the endocytic time constant can be deconvolved from reacidification following simple single exponential decay kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe established properties of the pHluorin reporter system supported by multiple prior studies (citations provided). These methodological foundations are well-established in the field and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C127",
+      "C128"
+    ],
+    "result": "Changes in reacidification rates minimally impact endocytosis time constant estimates (8% error for 1.6s to 2.6s change), and asynchronous release is unlikely to affect endocytosis measures under the relevant stimulus conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C127-C128 address potential confounds in the measurements. The simulation-based analysis (C127) provides quantitative support that reacidification changes cannot explain the observed effects. This is important methodological validation, though the simulations rely on assumptions from prior models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C82",
+      "C104",
+      "C105"
+    ],
+    "result": "Dynamin 1 is constitutively phosphorylated at serines 774/778 by Cdk5 and dephosphorylated by calcineurin, with phosphorylation abolishing and dephosphorylation promoting interaction with syndapin, and dephosphorylation persisting for ~40s after stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C82, and C104-C105 describe prior knowledge about dynamin phosphorylation from the literature (multiple citations provided). These established findings provide the mechanistic foundation for the current study's hypothesis and experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background context on synaptic vesicle recycling: limited recycling pool size at small CNS terminals, dynamin/clathrin/AP-2 dependent retrieval, probabilistic endocytosis with cell-wide time constants, and disputed Ca2+ modulation without established direct links to Ca2+ sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 provide literature-based background establishing the context and gaps in knowledge. All claims are appropriately supported by citations to prior work. These establish the rationale for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C75",
+      "C76",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C109",
+      "C110"
+    ],
+    "result": "Additional background on dynamin: identified as dephosphin, critical for membrane fission, S774/778 are calcineurin/CDK5 substrates, dynamin 1/3 DKO shows severe endocytosis impairment but retains vesicle recycling capability, and syndapin ablation shows phenotypes consistent with failed dynamin recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C75-C76, C98-C102, C109-C110 provide additional background on dynamin biology from prior literature. All are appropriately cited and establish the foundation for using the DKO system and interpreting the phosphorylation mutant results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The Ca2+-dependent slowing phase was more prominent at lower temperatures and agrees with previous findings showing Ca2+ inhibition of endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 connect the current findings to prior literature on Ca2+ inhibition of endocytosis. The temperature-dependence observation (C111) is supported by comparison data, and the agreement with prior studies (C112) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The Ca2+ sensor for the slowing mechanism is not known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 accurately states a limitation of the current work - while the slowing phase is documented and shown to be Ca2+-dependent, the molecular sensor remains unidentified. This is an honest acknowledgment of incomplete mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior manipulations of calcineurin and CDK5 impacted endocytosis but likely do not solely alter dynamin activity given multiple substrates, and both enzymes profoundly modulate Ca2+ influx, precluding simple interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 discuss limitations of prior pharmacological approaches and provide justification for the genetic approach used in this study. The reasoning is sound and appropriately cited, explaining why direct phosphorylation site mutations provide clearer mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Dynamin 2, which has different activity-dependent phosphorylation sites, only partially rescued the 100 AP 10 Hz time constant in dynamin 1/3 DKO neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by Figure 4E showing dynamin 2's partial rescue. This negative control strengthens the specificity of the findings for dynamin 1's phosphorylation sites, though the authors appropriately did not pursue this further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Speculation that cells might tune their endocytic profile for individual firing patterns by altering CDK5/calcineurin balance or Ca2+ entry/clearance routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C124 are explicitly speculative (\"compels one to speculate,\" \"could be achieved\"). While these are reasonable hypotheses based on the findings, they represent future directions rather than tested conclusions. The speculation is appropriately qualified in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "The dynamin phosphorylation sites (S774/778) are well conserved across species with nervous systems, suggesting endocytic optimization is a fundamental property of nervous system function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C126 make an evolutionary argument based on sequence conservation. While conservation (C125) can be verified, the inference about fundamental importance (C126) is reasonable but not directly tested. The evolutionary argument strengthens the biological significance but remains inferential.",
+    "result_type": "MINOR"
+  }
+]

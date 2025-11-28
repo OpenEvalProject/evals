@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Best ITD and best frequency (BF) are tightly correlated in ICx neurons (r\u00b2 = 0.75, p < 0.001), with neurons preferring small ITDs tuned to higher frequencies and neurons preferring large ITDs tuned to lower frequencies. The dataset included 177 single units from 138 recording sites in two barn owls, with best ITD ranging from 0 to 249 \u00b5s and BF ranging from 920 Hz to 6168 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide converging evidence for a systematic relationship between ITD and frequency tuning. The statistical correlation is strong (r\u00b2 = 0.75, p < 0.001) and the dataset is adequately described with appropriate sample size (n=177 neurons from 2 owls). The relationship is visualized in Figure 2 and the correlation holds across different analysis approaches (single units, multi-units, pooled data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "IPD variability induced by concurrent sound sources is frequency- and location-dependent, with variations up to 30% of a cycle. IPD reliability is greater at high frequencies for frontal locations and at lower frequencies for peripheral locations. This pattern is consistent across HRTFs from 10 different owls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 describe a systematic pattern of IPD variability based on HRTF analysis from 10 owls. The findings are supported by computational analysis shown in Figures 3A-D, with small variance across animals (Figure 3D) indicating robustness. The physical explanation based on head filtering and intensity gain is mechanistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Neural frequency tuning matches IPD reliability predictions: BF correlates with the frequency of maximal IPD reliability at preferred locations (r\u00b2 = 0.81, p < 0.001), and the edges of frequency tuning curves follow the boundaries of most reliable IPD (upper edge r\u00b2 = 0.72, lower edge r\u00b2 = 0.52, both p < 0.001). This relationship holds with two or three concurrent sounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide the key evidence linking neural tuning to IPD reliability. The correlations are strong and statistically significant, with consistent results across different numbers of concurrent sounds. Figure 4A visualizes the match between neural tuning boundaries and IPD reliability ranges. The normalization approach is appropriate for within-location comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C55"
+    ],
+    "result": "IPD reliability better predicts frequency tuning than acoustic gain: 82% of neurons (145/177) showed significant correlation between frequency tuning and IPD reliability, compared to only 48% (85/177) for gain. The correlation coefficients were significantly higher for IPD reliability than gain (p < 0.001, Wilcoxon rank-sum test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C55 provide a critical comparison ruling out gain as the primary driver of frequency tuning. The statistical test is appropriate (Wilcoxon rank-sum for comparing correlation coefficients), sample size is adequate (n=177), and the difference is substantial (82% vs 48%) and highly significant. Figure 4C shows the distributions clearly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Interaural correlation patterns closely match IPD reliability (r\u00b2 = 0.81, p < 0.001), with higher correlation at high frequencies for frontal locations and at lower frequencies for peripheral locations. BF correlates with the frequency of maximal interaural correlation (r\u00b2 = 0.88, p < 0.001), suggesting that weighting by reliability maintains high input coherence to ICx neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide converging evidence that IPD reliability corresponds to interaural correlation, a known sensitivity of ICx neurons (C43). The correlations are very strong (r\u00b2 = 0.81 and 0.88) and the mechanistic link to neural coherence sensitivity is well-established. This strengthens the reliability weighting hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "In ICCc neurons (upstream of ICx), spatial tuning is more affected by concurrent sounds at lower frequencies than higher frequencies for frontally-tuned cells (r\u00b2 = 0.6, p < 0.001), confirming that HRTF-induced variability is carried through the sound localization pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide experimental validation in ICCc that the predicted variability from HRTFs manifests in neural responses. The correlation is moderate but significant (r\u00b2 = 0.6, p < 0.001), and the experiment was conducted in an anechoic chamber to control for reflections. This validates the computational predictions with empirical neural data. Figures 5A-B illustrate the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Neural noise does not explain frequency-dependent ITD tuning: Fano factors spread around 1 (median = 1.06) with negligible correlation to stimulus frequency (r\u00b2 = 0.1, p = 0.03), and synchronization coefficients decreased minimally with frequency (r\u00b2 = 0.14, p < 0.001) below 7 kHz. Context-dependent auditory cues from HRTFs appear to be the main source of location-dependent variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 systematically rule out neural noise as an alternative explanation. The Fano factor analysis (n=342 curves from 70 cells) shows Poisson-like variability without frequency dependence, and synchronization coefficients show minimal frequency dependence. The one exception (C62, large ITDs) shows the opposite pattern from what would be needed to explain the results. This strengthens the HRTF-based explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Only 25% of neurons (44/177) showed significant correlation with normalized gain (gain normalized across locations for each frequency, then across frequencies for each location).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 tests an alternative hypothesis that relative gain across frequencies could drive tuning. The low percentage (25%) compared to IPD reliability (82%, C48) provides additional evidence against gain-based explanations. The normalization approach is appropriate for testing relative gain as a cue. Figure 4E shows the distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ICx neurons limit their frequency tuning to the range where IPD is most reliable, reflecting a higher-order neural code rather than simply inherited tonotopy. Neurons are tuned to frequency ranges where IPD varies least across contexts, excluding ranges where the cue is most unreliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C80-C82 represent the main interpretive conclusions of the study. These are well-supported by the convergent evidence from claims about the correlation between neural tuning and IPD reliability (C40-C42), the superiority of IPD reliability over gain (C48-C50), and the validation in ICCc (C59-C60). Figure 6 illustrates the proposed mechanism. The conclusion is logically derived from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The distribution of preferred frequency varies systematically with preferred ITD in ICx, meaning that at each frequency, preferred ITDs are limited to a narrow part of the natural range. This contrasts with the broad distribution of best ITDs across frequencies in the upstream nucleus ICCc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe the organizational principle and contrast it with upstream processing. C68 is supported by the data (C25-C27) and consistent with prior work (Knudsen, 1984). C69 is a logical inference from C68. C70 is supported by citations to Wagner et al., 2002, 2007. The contrast between ICx and ICCc is important for understanding where the reliability-based selection occurs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "ICx tuning can be adjusted by experience: neurons adjusted to facial ruff removal in juvenile and adult owls, and frequency-specific plasticity occurred in owls raised with acoustic filtering devices that altered ITD in a frequency-dependent manner (shifts >50 \u00b5s in device matched by >50 \u00b5s shifts in neural tuning).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 cite prior work (Knudsen et al., 1994; Gold and Knudsen, 2000) demonstrating plasticity of ITD and frequency tuning. These claims appropriately reference prior literature to support the possibility that reliability-based tuning could develop through experience-dependent mechanisms. The citations appear accurate based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Frequency-dependent ITD tuning is observed across multiple species (guinea pig, cat, gerbil, chinchilla, owl) and brain regions, representing a general organizational principle for sound localization coding schemes across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 place the findings in broader context with appropriate citations to comparative studies. The claim that this represents a general principle (C77) is supported by the breadth of species and brain regions cited. The citations appear appropriate and the generalization is reasonable given the evidence presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The largest ITD predicted by HRTFs at low frequencies was similar to the largest best ITD recorded in ICx, and ICCc results are consistent with HRTF predictions, suggesting the interaural canal does not have an important effect on increasing ITD magnitude or altering variability from concurrent sounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 address a potential confound (interaural canal effects in birds). The comparison between HRTF predictions and recorded ITDs (C88) and the consistency of ICCc results with HRTF predictions (C90) provide reasonable evidence that the interaural canal is not a major factor. However, this is based on indirect evidence (similarity and consistency) rather than direct measurement of interaural canal effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The dataset consisted of 177 single units from 138 recording sites in ICx of two adult barn owls, with single unit recordings validated by spike sorting software in 99 sites, and two units separated in 39 sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe the dataset composition and validation methods. The use of spike sorting software (Quiroga et al., 2004) is appropriate, and the authors transparently report both single-unit and multi-unit recordings. The sample size is adequate for the statistical analyses performed, and the authors verified that results were consistent across different analysis approaches (single units, multi-units, pooled).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C20"
+    ],
+    "result": "Background on sound localization: ITD is the primary cue for horizontal sound localization, encoded by neurons detecting IPD. ITD varies with context due to head filtering. In barn owls, ITD is the main horizontal localization cue, initially detected by frequency-tuned brainstem neurons, with spatial representation emerging in ICx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C16, and C20 provide established background knowledge about sound localization, appropriately cited to prior literature (Grothe et al., 2010; Moiseff and Konishi, 1983; Carr and Konishi, 1990; etc.). These are standard facts in the field and provide necessary context for the study. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C11"
+    ],
+    "result": "General principles of sensory cue reliability: Variability is intrinsic to sensory cues due to physics of stimuli and sensory organs. When cues are ambiguous or conflicting, less variable cues are weighted more heavily in perceptual judgments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C11 establish general principles about sensory cue reliability with appropriate citations (Carlile, 1996; Ernst and Banks, 2002; Jacobs, 2002; Alais and Burr, 2004). These provide the theoretical framework for the reliability weighting hypothesis. The citations are appropriate and the principles are well-established in sensory neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "Background on head filtering and concurrent sounds: Space-specific neurons emerge from frequency channel convergence. Head filtering causes context-dependent IPD variation, with concurrent sounds shifting IPD in a frequency-dependent manner. In barn owls, the facial ruff and ear canal act as filters (HRTFs), and concurrent sounds are a primary source of IPD variability in natural environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C28-C33, and C37 provide background on head filtering, HRTFs, and concurrent sound effects, with appropriate citations (Brainard et al., 1992; Keller and Takahashi, 2005; Keller et al., 1998; etc.). These establish the rationale for examining IPD reliability across contexts. The physics of sound source mixing (C32-C33) is correctly described. C28 is a reasonable inference supported by cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background on gain as a localization cue: Relative gain of frequency bands can be a localization cue. The owl's facial ruff increases high-frequency intensity in frontal space but has relatively small location-dependent effects at low frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide background on gain as an alternative explanation, with appropriate citations (Butler, 1987; Butler and Musicant, 1993; Keller et al., 1998; Hausmann et al., 2010). This establishes the rationale for testing gain as an alternative to IPD reliability. The citations appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Background on ICCc: ICCc is upstream of ICx and contains frequency-tuned ITD-sensitive neurons. ITD tuning varies with frequency in ICx but not in ICCc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide background on ICCc with appropriate citations (Wagner et al., 2002, 2007). This establishes the rationale for testing predictions in ICCc and explains why ICCc is an appropriate site to examine variability before frequency convergence. The contrast between ICx and ICCc is important for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "ICx neurons are highly sensitive to interaural correlation, defined as the cross-correlation of signals at the two ears.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 cites prior work (Albeck and Konishi, 1995) establishing that ICx neurons are sensitive to interaural correlation. This provides the rationale for examining whether IPD reliability corresponds to interaural correlation patterns (C44-C47). The citation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Background on theoretical models: It has been proposed that owls and small mammals use different IPD encoding strategies based on head size and frequency range. The Harper and McAlpine model proposes that optimal IPD distribution at each frequency maximizes population information about IPD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe prior theoretical work (Harper and McAlpine, 2004) that provides an alternative framework for understanding frequency-dependent ITD tuning. The description of the model appears accurate and provides important context for interpreting the current findings. The authors appropriately distinguish their reliability-based explanation from this information-theoretic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Broader interpretation: The brain represents probability distributions of natural features and synthesizes internal models of stimulus reliability, as suggested by prior work on the oblique effect in vision and the current findings on auditory cue reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 place the findings in a broader theoretical context about neural representations of natural statistics. C83 and C84 cite prior work appropriately (Fischer and Pena, 2011; Girshick et al., 2011). However, C85 is a very broad claim that extends beyond what the current data directly demonstrate. While the findings are consistent with this interpretation, the claim that the brain 'synthesizes an internal model of stimulus reliability' is a strong theoretical statement that would require additional evidence to fully support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Methodological validation: Midbrain neuron responses are stable under ketamine anesthesia, and ICx/ICCc neurons were identified by well-established physiological criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 provide methodological justification with appropriate citations (Ter-Mikaelian et al., 2007; Schumacher et al., 2011; Singheiser et al., 2012). These address potential concerns about anesthesia effects and recording site identification. The citations are appropriate and the methods are standard for the field.",
+    "result_type": "MINOR"
+  }
+]

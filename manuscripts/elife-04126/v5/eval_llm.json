@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The IME2/RCK/LF4 kinase superfamily exhibits variable +1 substrate specificity. While all members share conserved preferences for arginine at -3 and proline at -2, the +1 position varies: fungal Ime2 kinases prefer arginine (+1R), mammalian RCK kinases prefer proline (+1P), and N. crassa Ime2 and N. gruberi LF4 accept both equally (+1PR). Kinetic analysis confirms these differences, with S. cerevisiae Ime2 showing 65-fold greater efficiency for +1R peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 are supported by comprehensive PSPL data (Figure 1 and supplements) and kinetic measurements (Table 1, Figure 1B). The experimental design is appropriate, with multiple replicates and quantitative kinetic parameters. The data clearly demonstrate the variable +1 specificity across the superfamily while confirming conserved -3 and -2 preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "The reconstructed ancestral kinase AncCMGI (common ancestor of CDK, CDKL, MAPK, GSK, and IME2/RCK/LF4) has a well-defined primary specificity with strong preference for arginine at -3 and proline at -2, and a modest 5.6-fold preference for proline at +1. Importantly, AncCMGI does not require cyclin for activity and contains a MAPK-like TXY motif likely activated by autophosphorylation, indicating that cyclin dependence is a derived characteristic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20, C42, C44-C45 are well-supported by experimental PSPL data (Figure 2B), phylogenetic reconstruction (Figure 2A), and biochemical characterization. The inference that cyclin dependence is derived (C45) is logically sound based on AncCMGI lacking cyclin requirement. The reconstruction has strong statistical support (Figure 2\u2014figure supplement 1), and alternative reconstructions confirm robustness (Figure 2\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C43"
+    ],
+    "result": "The evolutionary trajectory of +1 specificity in CMGC kinases proceeded from modest +1P preference in AncCMGI through a hybrid +1PR intermediate (AncNgru) that equally accommodated proline and arginine. Subsequently, specificity diverged: reverting to +1P in mammalian RCK kinases (ICK, MAK) and shifting to +1R in fungal Ime2 lineage (AncIME2 showing moderate +1R preference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C43 are supported by experimental characterization of multiple ancestral kinases using peptide assays (Figure 3B,C) and PSPL data (Figure 3\u2014figure supplement 1). The evolutionary trajectory is robust to uncertainties in ancestral reconstruction (Figure 3\u2014figure supplement 2). The data clearly show the intermediate hybrid state and subsequent divergence, though C43 appropriately notes this is inferred from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The +1 specificity of IME2/RCK/LF4 kinases exhibits inter-positional dependence with the phosphoacceptor: serine shifts preference toward +1R while threonine shifts toward +1P. This dependence is ancestral (present in AncCMGI) and maintained throughout the family, representing an exception to models suggesting kinases display little inter-positional dependence. The DFGx residue provides a structural basis for this coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C50-C52 are supported by systematic experimental data across multiple kinases (Figure 4, Figure 4\u2014figure supplement 1, Figures 3B and 4C). The observation of phosphoacceptor-dependent +1 specificity is demonstrated across ancestral and extant kinases. The structural interpretation (C52) is reasonable given the mutagenesis data, though direct structural evidence is not provided. The claim challenges prior models (C49, C50) appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C48",
+      "C53",
+      "C54"
+    ],
+    "result": "The DFGx residue (immediately C-terminal to the DFG motif) is a key determinant of +1 specificity. Ancestral reconstructions show DFGx was leucine in AncCMGI and mutated to serine multiple times in CMGC evolution, correlating with +1P vs +1R preference. Single DFGx mutations (L\u2192S or S\u2192L) consistently shift specificity across six tested kinases without significant activity loss, representing an unusual case where single mutations drive specificity divergence without requiring stabilizing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32, C48, C53-C54 are strongly supported by mutagenesis experiments (Figure 4C, Figure 4\u2014figure supplement 2), ancestral reconstruction data (Figure 4B), and correlation analysis (C29). The consistent directional effects across multiple kinases (C32, C53) strengthen the conclusion. The claim of tolerance without activity loss (C53) is supported by kinetic data. The interpretation as unusual (C54) is reasonable given the cited literature on typical requirements for compensatory mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C58"
+    ],
+    "result": "In vivo analysis of S. cerevisiae Ime2 DFGx mutant (L231S) shows that homozygous mutant cells complete meiosis with reduced efficiency, delayed S-phase and divisions, and reduced spore viability. However, heterozygous IME2/ime2-DFGx strains show no defects, indicating the meiotic network tolerates expanded specificity when wild-type Ime2 is present. The defects in homozygotes likely result from weakened network connections rather than toxic gain-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 and C58 are supported by comprehensive in vivo experiments (Figure 5) including sporulation efficiency, spore viability, DNA replication timing, and division kinetics. The experimental design appropriately includes wild-type, heterozygous, and homozygous comparisons. The inference that defects are due to weakened rather than new connections (C40) is logically supported by the lack of dominant effects in heterozygotes (C39). Multiple biological replicates are indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Proline selectivity at +1 is unique to the CMGC group, attributed to a conserved arginine at the xAPE position in the activation loop that orients the toggle residue away from substrate, eliminating a hydrogen bond that would disfavor proline in other kinase groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by citation to Zhu et al., 2005 (C46) and established structural knowledge (C47). While the authors don't provide new structural data, this represents accepted understanding in the field and provides important context for interpreting their findings about variable +1 specificity within CMGC kinases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Prior computational analyses suggested kinases display little inter-positional dependence in primary peptide specificity, with substrate amino acids interacting independently with the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 accurately represents prior work (Joughin et al., 2012) and provides important context for the authors' findings of inter-positional dependence. This is background information rather than a new result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Following AncCMGI, gene duplication led to nearly complete divergence of substrate specificity between paralogs: Cdk1 recognizes [S/T*]-P-x-[K/R] while Ime2 recognizes R-P-x-[S/T*]-R, representing almost non-overlapping specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by phylogenetic analysis (C55), established knowledge about Cdk1 (C56), and citation plus data for Ime2 (C57, Figure 2A, Holt et al., 2007). The inference of gene duplication and divergence (C55) is reasonable from the phylogenetic context, though the specific mechanisms of retention are noted as unclear by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The DFGx specificity mutation is observed in multiple cancer kinases (Aurora A, PKCgamma, Haspin, DDR1, ITK, TRKA, IRAK3, BRAF), suggesting evolutionary amino acid changes are resampled in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is supported by citation to unpublished work (Creixell et al.), but the unpublished nature limits verification. Claim C60 is speculative inference from C59. While the observation is potentially significant, the lack of published validation and the speculative nature of the cancer connection make this uncertain. This appears in a \"Note added in proof\" suggesting late addition without full integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background context on kinase biology: the human genome encodes >500 kinases with >100,000 identified phosphorylation sites; kinase diversity expanded with metazoan evolution; kinases act as network hubs coordinating hundreds to thousands of substrates; phosphorylation sites evolve rapidly within substrates; and prior work showed S. cerevisiae Ime2 and mouse ICK differ in +1 specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by appropriate citations to prior literature. These provide essential background context for the study but represent established knowledge rather than new findings. All citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

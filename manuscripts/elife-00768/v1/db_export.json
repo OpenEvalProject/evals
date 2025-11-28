@@ -1,0 +1,2176 @@
+{
+  "submission": {
+    "id": "829d4cf5-4105-4d2a-8184-ebde027a2135",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:35:48.593401Z",
+    "updated_at": "2025-11-28T19:35:48.593401Z"
+  },
+  "content": [
+    {
+      "id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "submission_id": "829d4cf5-4105-4d2a-8184-ebde027a2135",
+      "content_type": "manuscript",
+      "content_text": "# Functional genomic characterization of neoblast-like stem cells in larval Schistosoma mansoni\n\n## Authors\n\n- Bo Wang<sup>1</sup>\n- James J Collins<sup>1</sup>\n- Phillip A Newmark<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, University of Illinois at Urbana-Champaign Urbana United States\n2. Institute for Genomic Biology University of Illinois at Urbana-Champaign Urbana United States\n3. Department of Cell and Developmental Biology University of Illinois at Urbana-Champaign Urbana United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSchistosomes infect hundreds of millions of people in the developing world. Transmission of these parasites relies on a stem cell-driven, clonal expansion of larvae inside a molluscan intermediate host. How this novel asexual reproductive strategy relates to current models of stem cell maintenance and germline specification is unclear. Here, we demonstrate that this proliferative larval cell population (germinal cells) shares some molecular signatures with stem cells from diverse organisms, in particular neoblasts of planarians (free-living relatives of schistosomes). We identify two distinct germinal cell lineages that differ in their proliferation kinetics and expression of a nanos ortholog. We show that a vasa/PL10 homolog is required for proliferation and maintenance of both populations, whereas argonaute2 and a fibroblast growth factor receptor-encoding gene are required only for nanos-negative cells. Our results suggest that an ancient stem cell-based developmental program may have enabled the evolution of the complex life cycle of parasitic flatworms.\n\n## Introduction\n\nSchistosoma flatworms infect 230 million people worldwide and cause \u223c250,000 deaths per year (van der Werf et al., 2003). These trematodes are transmitted through a life cycle that alternates between asexual and sexual generations in invertebrate intermediate and vertebrate definitive hosts, respectively (Clark, 1974; Shoop, 1988). The life cycle initiates as eggs are excreted from a mammalian host into freshwater, releasing ciliated, free-swimming larvae called miracidia that seek out and penetrate a snail intermediate host. Entry into the snail triggers a series of morphological, physiological, and biochemical transformations (Basch and DiConza, 1974; Kawamoto et al., 1989; Ludtmann et al., 2009; Wu et al., 2009; Parker-Manuel et al., 2011), followed by a clonal expansion of the larvae (called sporocysts at this stage) inside the snail host, ultimately producing thousands of infective cercariae (Figure 1A) (Cheng and Bier, 1972; Ward et al., 1988). Mature cercariae then emerge from the snail into freshwater, burrow through the epidermis of mammalian hosts, migrate to species-specific niches in the host vascular system, develop to adulthood, and begin to reproduce sexually, thereby completing the life cycle. Thus, asexual amplification inside of the snail is vital for propagation of schistosomes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00768/elife-00768-fig1-v1.jpg)\n\n**Figure 1.:** (A) A schematic timeline of schistosome asexual amplification. (B\u2013C) Maximum intensity projections of confocal stacks (top) and single optical slices (bottom) of a POPO-1 and SYTOX-Green co-stained miracidium (B) and a sporocyst 24 hr after in vitro transformation (C). (D) Representative images of cells at metaphase (M), anaphase (A), and telophase (T) (from left to right), captured in sporocysts 24 hr post-transformation. (E\u2013G) Cryosections of the tentacle of a Biomphalaria glabrata snail showing a mother sporocyst (perimeter highlighted by dashed line) with daughter sporocysts packed inside (3 weeks post infection) (E); an individual daughter sporocyst that has migrated to the digestive glands of a B. glabrata snail 6 weeks post infection (F); and cercarial embryos within a daughter sporocyst in the digestive glands of a B. glabrata snail 6 weeks post infection (G) (staged after Cheng and Bier, 1972). Actin is stained with phalloidin. Peanut agglutinin (PNA) visualizes acetabular glands and ducts of the cercariae. (H) A mature cercaria. The inset shows a magnified view of this animal\u2019s head visualized with PNA and POPO-1 staining. Scale bars are 20 \u00b5m, except in (E) which is 200 \u00b5m.\n\nA population of totipotent stem cells, historically called \u2018germinal cells\u2019, is thought to underlie this unique intramolluscan amplification by undergoing multiple rounds of proliferation and de novo embryogenesis in the absence of fertilization (Olivier and Mao, 1949; Cort et al., 1954; Whitfield and Evans, 1983). Early ultrastructural and histological studies recognized these cells by their stem cell-like morphology and rapid cycling kinetics (Schutte, 1974; Pan, 1980). In support of the totipotency of these germinal cells, serial transplantation of sporocysts into naive snail hosts led to continuous sporocyst propagation and cercarial production (Jourdane and Th\u00e9ron, 1980). These classic studies led to the model that division of these diploid presumptive totipotent stem cells in mother sporocysts produces progeny that are able to independently initiate the embryogenesis of daughter sporocysts (Whitfield and Evans, 1983). These daughter sporocysts, which are essentially sacs filled with germinal cells, can then produce more daughter sporocysts or infective cercariae in the same manner as they were generated themselves. This process represents \u2018polyembryony\u2019\u2014during which multiple embryos are produced from the same zygote with no intervening gamete production. Thus, germinal cells appear to possess a unique developmental program, and it is unknown how they are specified, maintained, and regulated molecularly.\n\nIn planarians, free-living flatworm relatives of schistosomes, a population of pluripotent stem cells called neoblasts can regenerate injured tissues and replenish a whole animal from a single cell (Newmark and S\u00e1nchez Alvarado, 2002; Wagner et al., 2011). Guided by this knowledge, we recently identified a population of neoblast-like cells in adult Schistosoma mansoni (Collins et al., 2013). These observations led us to hypothesize that germinal cells underlying schistosome asexual amplification may share a similar molecular program. Here, we show that the proliferating cells in sporocysts express many conserved stem cell genes. Using RNA interference (RNAi) we identify conserved regulators that are required to maintain the proliferative capacity of these cells. The similarity between these germinal cells in schistosome larvae, somatic stem cells in schistosome adults, and planarian neoblasts, links embryonic development and homeostatic tissue maintenance in these parasites; furthermore, it suggests that adaptation of an ancient stem cell developmental program may have enabled the evolution of complex trematode life cycles.\n\n## Results\n\n### Tracking germinal cells through the intramolluscan stages of the schistosome life cycle\n\nBased on previous studies showing that germinal cells in schistosome larvae have a distinct morphology\u2014high nuclear-to-cytoplasmic ratio, a large nucleolus, and cytoplasm densely packed with ribosomes (Pan, 1980)\u2014we reasoned that nucleic acid stains that preferentially label RNA could provide a means to label these cells specifically. Thus, we screened a number of nucleic acid-binding dyes and determined that POPO-1 clearly distinguishes the RNA-rich germinal cells from the other somatic cell types. In particular, POPO-1 strongly stains the nucleolus and cytoplasm of the germinal cells. This staining enabled us to track these cells through various stages of intramolluscan development both in vitro and in vivo (Figure 1).\n\nConsistent with previous work (Pan, 1980), we found 10\u201320 germinal cells in the posterior half of the body of free-swimming miracidia after hatching from the egg (Figure 1B). In vitro transformation of miracidia into sporocysts triggered germinal cell proliferation (Yoshino and Laursen, 1995; Ivanchenko et al., 1999; Bixler et al., 2001): we observed these cells in mitosis as early as 24 hr post-transformation (\u223c0.2 mitoses per animal) (Figure 1C,D), which is consistent with the behavior of these cells in vivo after miracidia penetrate a snail host (Schutte, 1974). Following their long-term development in vivo, POPO-1 staining identifies a similar cell type throughout various stages of schistosome asexual development, including: developing daughter sporocysts in the mother (Figure 1E); motile daughters that have broken away from the mother and migrated to the snail digestive glands (Figure 1F); and cercarial embryos developing inside the daughter sporocysts (Figure 1G). These POPO-1-labeled cells ultimately segregated into a compact cluster in cercariae (Cheng and Bier, 1972) (Figure 1H), presumably saved for the next stage of development after their penetration into mammalian hosts (Dorsey et al., 2002). These observations reveal a morphologically homogeneous presumptive stem cell population that persists through the larval stages of the schistosome life cycle.\n\n### Proliferation kinetics at the miracidium-to-sporocyst transition\n\nIn order to characterize these cells molecularly, we focused on the miracidium-to-mother sporocyst transition. To define this transition more precisely and examine the initiation of cell proliferation, at different times following in vitro transformation, we treated sporocysts with 5-ethynyl-2\u2032-deoxyuridine (EdU), a thymidine analogue that is incorporated into DNA during S-phase of the cell cycle (Salic and Mitchison, 2008). For these experiments, miracidia were transformed to mother sporocysts in vitro and co-cultured with an immortalized snail cell line (Bge cells) under hypoxic conditions (Figure 2A) (Yoshino and Laursen, 1995; Ivanchenko et al., 1999; Bixler et al., 2001). During the first 20 hr after transformation, few cells incorporated EdU. However, between 20\u201324 hr, we typically observed 1\u20132 clusters of EdU+ germinal cells, which are identified by their nucleolar and cytoplasmic POPO-1 staining. At later time points (48\u201364 hr), a large fraction of germinal cells in the sporocyst incorporated EdU, and all EdU+ cells exhibit a germinal cell-specific morphology. These cells were actively dividing as we routinely observed many mitotic figures in these samples (Figures 1D and 2A). As a result of this massive proliferative burst, these germinal cells increased dramatically in number and came to occupy most of the sporocyst body, tripling sporocyst size during the first 3 days. These results suggest that a tightly regulated, sharp developmental transition begins at \u223c20 hr post-transformation, when the first wave of proliferation starts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00768/elife-00768-fig2-v1.jpg)\n\n**Figure 2.:** (A) EdU labeling to detect proliferating cells at various time points following transformation. For these experiments sporocysts were co-cultured with Bge cells, a cell line derived from embryos of B. glabrata snails, to sustain the normal development of larval schistosomes. Arrows indicate cells weakly incorporating EdU at the early time point; arrowheads indicate proliferating Bge cells. Asterisks highlight cells in mitosis. In the absence of SYTOX-Green, POPO-1 also stains somatic nuclei, which are small and compact. Scale bars are 20 \u00b5m. (B) Transcripts expressed in sporocysts 48 hr post-transformation, ranked by abundance as measured by RNAseq. Orthologs shared between sporocyst-enriched genes and planarian neoblast-enriched transcripts are highlighted in cyan. (C) Relative expression levels of ago2-1, vlg-3, and nanos-2 during sporocyst development with respect to the expression in miracidia, measured by qPCR in biological triplicate. Error bars are standard deviations. **p<0.01. ***p<0.001 (t-test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00768/elife-00768-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Histogram of fold changes of gene expression in sporocysts 48 hr post-transformation with respect to expression in miracidia, follows a log-normal distribution. The half standard deviation is used as the threshold to define differentially expressed transcripts. (B) Expression of sporocyst-specific genes that have homologs in neoblast-enriched transcripts is plotted logarithmically in fold change vs RPKM. A group of well-characterized conserved stem cell/neoblast markers, including ago2-1, vlg-3, and fgfrA, listed in Table 1, is highlighted by open symbols. (C) Confocal sections of sporocysts 24 hr post-transformation showing the expression of various conserved neoblast genes which overlap with the expression of cell cycle-associated transcripts. From top to bottom: mago nashi homolog (Smp_103470), far upstream (fuse) binding protein (Smp_044550), nucleosome assembly protein (nap, Smp_023530), adenosylhomocysteinase (ahcy, Smp_028440), pescadillo related gene (Smp_055800), and p30 dbc protein (Smp_193440).\n\n### Transcriptional profiling identifies germinal cell-associated transcripts\n\nSince the miracidium-to-sporocyst transition is associated with both an increase in the number of proliferative germinal cells and a switch from a quiescent state to an actively proliferating state, we reasoned that the transcriptional profile of sporocysts would be enriched for mRNAs associated with germinal cells. Thus, we compared the gene expression profiles of miracidia and sporocysts 48 hr post-transformation using RNA sequencing (RNAseq). Of the 10,852 predicted genes in the annotated S. mansoni genome (Berriman et al., 2009; Protasio et al., 2012), 6677 genes were detected in 48 hr sporocysts with an RPKM (reads per kilobases of transcript per million mapped reads) value above 1 (Figure 2B); 1662 of these genes were upregulated relative to miracidia (Figure 2\u2014figure supplement 1A and Supplementary file 1A).\n\nBesides the clonal expansion of germinal cells, the transition from miracidium-to-sporocyst is associated with numerous physiological and anatomical changes. Reasoning that germinal cells and planarian neoblasts may share a similar transcriptional signature, we compared our dataset with transcripts enriched in FACS-purified planarian neoblasts (\u00d6nal et al., 2012) to identify putative germinal cell-specific transcripts. Indeed, we noticed substantial overlap between these two datasets: of the 1662 genes upregulated in sporocysts, \u223c30% of them (581 genes) shared similarity (e-value < e\u221210) with neoblast-enriched transcripts (Figure 2\u2014figure supplement 1, and Supplementary file 1C). Conversely, more than \u223c20% (864/4032) of neoblast-enriched transcripts shared similarity with sporocyst-enriched mRNAs. To better define the similarity between these datasets, we identified a total of 4749 1:1 schistosome-to-planarian orthologs using reciprocal BLAST comparisons (e-value < e\u221210) (Figure 2B). 1579 orthologs were enriched in planarian neoblasts; quite interestingly, 1525 of them (96.5%) were expressed in sporocysts as well (RPKM in sporocysts >1). We examined the overlap between neoblast-enriched transcripts and sporocyst-enriched genes and identified 331 orthologs (20% of 1662 genes that are upregulated in sporocysts) (Figure 2B, and Supplementary file 1D). This list may contain a core set of genes that are essential for stem cell proliferation and maintenance. As a comparison, 12% (1248/10,125) of the remaining schistosome transcripts have orthologs in the planarian neoblast transcriptome. Given the differences in how these datasets were generated (i.e., FACS-purified cells from planarian vs whole schistosome sporocysts), together with the fact that the miracidium-to-sporocyst transformation is expected to result in transcriptional changes independent of germinal cell number, this degree of overlap seems likely to underestimate the similarity between the transcriptomes of germinal cells and planarian neoblasts.\n\nIn addition to components of cell cycle and DNA repair machinery, examination of these overlapping gene sets identified many conserved factors associated with stem cell maintenance and germ cell development in diverse organisms (Table 1), including a pair of fibroblast growth factor receptors (fgfr) (Ogawa et al., 2002; Lanner and Rossant, 2010; Wagner et al., 2012; Collins et al., 2013), three components of PRC2 (polycomb repressive complex 2; suppressor of Zeste 12, Sm-sz12, enhancer of Zeste, Sm-ezh, and embryonic ectoderm development, Sm-eed) (Surface et al., 2010; Wagner et al., 2012; \u00d6nal et al., 2012), a p53 homolog (Pearson and S\u00e1nchez Alvarado, 2010), a bruno-like (bruli) RNA-binding protein (Guo et al., 2006), and an argonaute2-like gene (Gomes et al., 2009; Rouhana et al., 2010; Li et al., 2011; Leonardo et al., 2012). Strikingly, 11/37 DEAD-box helicases (DBHs) in the S. mansoni genome are upregulated in sporocysts (Supplementary file 1B), including three vasa/PL10 homologs (Skinner et al., 2012) that may play a similar role in flatworm parasites to that of vasa in other metazoans (Juliano et al., 2010; Tsai et al., 2013) (for consistency with previous studies [Shibata et al., 1999; Ohashi et al., 2007; Skinner et al., 2012], we will refer to these vasa/PL10 homologs as vasa-like genes [vlg]). Taken together, this comparison between parasitic and free-living flatworms suggests that proliferating germinal cells in sporocysts share some common features with planarian stem cells. Interestingly, this set of conserved germinal cell-enriched genes also contains several targets accessible with available small-molecule drugs (e.g., cyclophilin, adenosylhomocysteinase, transketolase) (Crowther et al., 2010), suggesting that these cells could serve as a potential vulnerable point to block schistosome propagation.\n\n**Table 1.**\n Expression in miracidia and sporocysts of schistosome homologs of planarian neoblast-enriched transcripts, measured by RNAseq\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene name</th>\n      <th>RPKM (miracidia)</th>\n      <th>RPKM (sporocysts)</th>\n      <th>Fold change</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>vasa-like (vlg, Smp_068440, 154320, 033710)</td>\n      <td>20.6/46.1/272.4</td>\n      <td>98.5/79.2/423.1</td>\n      <td>4.8/1.7/1.6</td>\n    </tr>\n    <tr>\n      <td>polo kinase (Smp_009600)</td>\n      <td>43.0</td>\n      <td>149.5</td>\n      <td>3.5</td>\n    </tr>\n    <tr>\n      <td>fgfr (Smp_175590, 157300)</td>\n      <td>3.5/3.0</td>\n      <td>10.2/6.4</td>\n      <td>2.9/2.1</td>\n    </tr>\n    <tr>\n      <td>sz12 (Smp_047720)</td>\n      <td>5.6</td>\n      <td>16.0</td>\n      <td>2.8</td>\n    </tr>\n    <tr>\n      <td>bruli (Smp_041350)</td>\n      <td>5.5</td>\n      <td>15.3</td>\n      <td>2.8</td>\n    </tr>\n    <tr>\n      <td>Sedt8 (Smp_055310)</td>\n      <td>1.9</td>\n      <td>4.8</td>\n      <td>2.6</td>\n    </tr>\n    <tr>\n      <td>egr (Smp_094930)</td>\n      <td>3.0</td>\n      <td>7.4</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td>cyclin B (Smp_082490)</td>\n      <td>79.7</td>\n      <td>194.0</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>nlk (Smp_074080)</td>\n      <td>7.5</td>\n      <td>18.0</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>ago2-1 (Smp_179320)</td>\n      <td>258.9</td>\n      <td>537.5</td>\n      <td>2.1</td>\n    </tr>\n    <tr>\n      <td>PCNA (Smp_046500)</td>\n      <td>194.0</td>\n      <td>395.0</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>inx (Smp_141290)</td>\n      <td>102.6</td>\n      <td>203.7</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>ezh (Smp_078900)</td>\n      <td>8.1</td>\n      <td>15.5</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>PHB (Smp_075210, 075940)</td>\n      <td>222.0/197.7</td>\n      <td>421.0/290.8</td>\n      <td>1.9/1.5</td>\n    </tr>\n    <tr>\n      <td>pp32a (Smp_010940)</td>\n      <td>641.7</td>\n      <td>1176.3</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <td>H2A (Smp_086860)</td>\n      <td>240.3</td>\n      <td>437.1</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <td>THOC (Smp_005260)</td>\n      <td>219.6</td>\n      <td>397.3</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <td>egfr (Smp_093930, 165470)</td>\n      <td>6.8/7.0</td>\n      <td>12.1/10.0</td>\n      <td>1.8/1.4</td>\n    </tr>\n    <tr>\n      <td>CHD (Smp_158050)</td>\n      <td>39.6</td>\n      <td>68.6</td>\n      <td>1.7</td>\n    </tr>\n    <tr>\n      <td>tudor-like (Smp_081570)</td>\n      <td>222.8</td>\n      <td>367.8</td>\n      <td>1.7</td>\n    </tr>\n    <tr>\n      <td>H2B (Smp_108390)</td>\n      <td>124.6</td>\n      <td>206.5</td>\n      <td>1.7</td>\n    </tr>\n    <tr>\n      <td>ef-tu (Smp_073500)</td>\n      <td>151.6</td>\n      <td>243.6</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>HSP60 (Smp_008545)</td>\n      <td>2051.5</td>\n      <td>3224.7</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>fhl (Smp_048560)</td>\n      <td>2.0</td>\n      <td>3.1</td>\n      <td>1.5</td>\n    </tr>\n    <tr>\n      <td>eed (Smp_165220)</td>\n      <td>32.7</td>\n      <td>46.3</td>\n      <td>1.4</td>\n    </tr>\n    <tr>\n      <td>junl (Smp_067520)</td>\n      <td>5.5</td>\n      <td>7.7</td>\n      <td>1.4</td>\n    </tr>\n  </tbody>\n</table>\n\n_Expression of genes in bold is confirmed in this study with qPCR or FISH._\n\n### Conserved post-transcriptional regulators define distinct populations of germinal cells\n\nIn addition to their widely appreciated roles in germ cell specification, maintenance, and differentiation, a network of conserved post-transcriptional regulators (e.g., piwi/argonaute, vasa, and nanos) are associated with multipotency in many metazoans (Juliano et al., 2010). In diverse organisms, co-expression of these \u2018germline genes\u2019 specifies progenitor cells that can contribute to both soma and germline (Juliano et al., 2010). Though piwi and vasa appear to be absent from schistosome genomes (Gomes et al., 2009; Collins et al., 2013), the S. mansoni genome has three argonaute homologs, two nanos homologs (Figure 3\u2014figure supplement 1), and three vasa/PL10 homologs (vlg) (Skinner et al., 2012; Tsai et al., 2013). These genes, with the exception of Sm-nanos-1 (Smp_057740), are all expressed abundantly in sporocysts. Among them, Sm-ago2-1, Sm-vlg-3, and Sm-nanos-2, are upregulated in sporocysts, but with different kinetics (Figure 2C and Table 1; for clarity, the prefix \u2018Sm\u2019 will be omitted from gene names for the rest of the paper): ago2-1 increases steadily in expression throughout early sporocyst development; vlg-3 expression increases sharply following transformation, then plateaus; and nanos-2 mRNA expression does not increase until 4 days post-transformation.\n\nTo examine whether these genes are expressed in germinal cells, we developed a method for whole-mount RNA fluorescence in situ hybridization (FISH) in sporocysts. Using this method, we confirmed that ago2-1 transcripts were enriched in germinal cells (Figure 3A). These cells also expressed the cell cycle-regulated gene PCNA (Figure 3A top). Following a 24 hr EdU pulse, >95% (2178/2282) of EdU+ cells expressed ago2-1 and \u223c90% (1626/1815) of the ago2-1+ cells incorporated EdU (Figure 3A, bottom). Similar observations were made with vlg-3 (Figure 3B), suggesting that both ago2-1 and vlg-3 are expressed preferentially in proliferative germinal cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00768/elife-00768-fig3-v1.jpg)\n\n**Figure 3.:** (A) Top: confocal sections showing colocalization of ago2-1 and PCNA by FISH in sporocysts 24 hr post-transformation. Bottom: cells expressing ago2-1 incorporate EdU after a pulse 48\u201372 hr post-transformation. (B) vlg-3 is co-expressed with the cell cycle-associated transcript, H2A (top), and vlg-3 is expressed in cells that incorporate EdU following a pulse at 48\u201372 hr post-transformation (1254 vlg-3+ EdU+/1362 EdU+ cells) (bottom). Arrowheads indicate proliferating Bge cells; asterisks indicate mitotic cells. Scale bars are 20 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00768/elife-00768-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The alignments are shown with respect to homologs of Drosophila melanogaster (Dm), Mus musculus (Mm), and planarian Schmidtea mediterranea (SMED) proteins. (A) PIWI domains. (B) Nanos RNA-binding domains. Blue: conserved residues, red: divergent residues.\n\nBy contrast, nanos-2 expression was detected only in a subset of ago2-1+/vlg-3+ cells (Figure 4A,B). This observation suggests the existence of two distinct populations of germinal cells: nanos-2+ or nanos-2\u2212 cells. Monitoring the ratio of these two cell populations over time, we found the nanos-2\u2212 population expanded at a higher rate (doubling time \u223c24 hr) than the nanos-2+ population (Figure 4C). To examine if these cells possess differences in their cell cycle kinetics, we pulsed sporocysts with EdU for various lengths of time and determined the fraction of nanos-2+or nanos-2\u2212 germinal cells that were EdU+ (Figure 4A,D). Following a 4-hr EdU pulse, \u223c70% of the nanos-2\u2212 cells were EdU+, whereas only \u223c5% of the nanos-2+ cells were EdU+. The fraction of nanos-2+ cells that were EdU+ increased to \u223c40% with an 8-hr pulse, and to \u223c75% with a 16-hr pulse. With either an 8-hr or 16-hr pulse, \u223c95% of nanos-2\u2212 germinal cells were EdU+. To rule out the possibility that EdU+/nanos-2+ cells are progeny of the more rapidly proliferating nanos-2\u2212 cells, we administrated a short 4-hr EdU pulse followed by a 12-hr chase period in the absence of EdU. We found that only 6% of nanos-2+ cells were EdU+. Since a similar fraction of EdU+/nanos-2+ cells is observed immediately following a pulse (Figure 4D), it is unlikely that nanos-2\u2212 germinal cells differentiate to produce nanos-2+ cells. Collectively, these observations suggest that nanos-2+ germinal cells have a longer cell cycle and enter S-phase less often than do nanos-2\u2212 germinal cells. This differential rate of proliferation likely explains why the upregulation of nanos-2 expression is delayed following transformation (Figure 2C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00768/elife-00768-fig4-v1.jpg)\n\n**Figure 4.:** (A) FISH to detect nanos-2 and ago2-1 mRNA in EdU-labeled parasites. Relative to the nanos-2\u2212 germinal cells, nanos-2+ cells require longer time periods to incorporate EdU. Germinal cells are defined as ago2-1+ cells. The open arrowheads indicate nanos-2+ cells that are EdU\u2212, whereas filled arrowheads point to those that are EdU+. Times for EdU pulses are indicated in figures. (B) FISH to detect nanos-2 and vlg-3 mRNA. Scale bars are 20 \u00b5m. (C) The ratio between nanos-2\u2212 and nanos-2+ germinal cells increases with time after transformation. (D) Fractions of cells that incorporate EdU after pulses of various lengths. All EdU pulses start at 20 hr post-transformation, and the end times are indicated in the parentheses along the x-axis.\n\n### vasa and argonaute homologs are required for germinal cell maintenance and proliferation\n\nMotivated by the pivotal role of post-transcriptional regulation in various stem cell populations and during embryonic development (Juliano et al., 2010), we characterized the functions of ago2-1 and vlg-3 using RNAi (Boyle et al., 2003; Rinaldi et al., 2009). For these experiments parasites were treated with double-stranded RNA (dsRNA) continuously while in the egg, after hatching, and during sporocyst development (Figure 5A). Using this procedure we were able to achieve robust reductions (>80%) in both ago-2 and vlg-3 mRNA levels, as measured by quantitative real-time PCR (qPCR). To assess the functions of these genes we monitored EdU incorporation in RNAi-treated parasites. Consistent with these genes regulating germinal cell proliferation, RNAi of either ago2-1 or vlg-3 resulted in significantly fewer EdU+ germinal cells following a 24-hr EdU pulse (Figure 5B,C). Inhibition of either ago-2 or vlg-3 also resulted in a significant reduction in the levels of cell cycle-associated transcripts such as polo kinase and histone H2B, as well as germinal cell-associated genes (ago2-1, vlg-3, and fgfrA) (Figure 5D). To resolve whether these effects were due to defects in cell proliferation or loss of the germinal cells, we examined the expression pattern of germinal cell markers by FISH after RNAi treatments. We observed that RNAi of vlg-3 resulted in the loss of both nanos-2+ and nanos-2\u2212 germinal cells (Figure 5E), suggesting that it promotes the maintenance of the entire germinal cell population. In contrast to vlg-3, reduction of ago2-1 levels resulted in loss of only nanos-2\u2212 germinal cells; nanos-2+ cells were still present (Figure 5F). However, the absence of proliferation after ago2-1 RNAi (Figure 5C) suggests that the remaining nanos-2+ cells fail to proliferate. These observations are consistent with qPCR quantification, in which expression of nanos-2 was reduced after vlg-3 RNAi but retained after ago2-1 RNAi (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00768/elife-00768-fig5-v1.jpg)\n\n**Figure 5.:** (A) Timeline for RNAi experiments; EdU was added to the culture at 20\u201340 hr post-transformation. (B) Average number of EdU+ nuclei per sporocyst in control, ago2-1 (RNAi), and vlg-3 (RNAi) experiments. (C) Representative confocal stacks showing EdU incorporation after RNAi. Arrowheads indicate proliferating Bge cells; asterisk indicates an EdU+ mitotic cell. (D) Relative gene expression levels measured by qPCR for control and RNAi sporocysts, both in biological triplicate. The white bars indicate the genes targeted by RNAi. Error bars represent standard deviations. **p<0.01, ***p<0.001, ****p<0.0001 (t-test). (E\u2013F) FISH to detect nanos-2 and ago2-1 expression after vlg-3 RNAi (E), and nanos-2 and vlg-3 expression after ago2-1 RNAi (F). In (E), non-specific binding of probes to the Bge cells illustrates the background levels (arrowheads). The expression patterns in control RNAi animals are unchanged. Scale bars are 20 \u00b5m.\n\n### fgfrA expression and function suggest that a similar signal transduction network functions in germinal cells and adult schistosome stem cells\n\nNoting that ago2-1 and nanos-2 are also expressed in somatic stem cells in adult schistosomes (Collins et al., 2013), we speculated that a similar network may regulate both adult stem cells and germinal cells. Indeed, fgfrA, which is essential for maintenance of adult stem cells, is also upregulated in sporocysts (Figure 6A, Figure 2\u2014figure supplement 1, and Table 1) and its expression depends on either ago2-1 or vlg-3, suggesting that fgfrA is present in germinal cells (Figure 5D). To examine the function of fgfrA we performed RNAi experiments. Disruption of fgfrA mRNA blocked germinal cell proliferation, measured by reduced EdU incorporation (Figure 6B) and downregulation of cell cycle-associated transcripts (Figure 6C). Similar to ago2-1 RNAi parasites, fgfrA RNAi also resulted in reduced ago2-1 and vlg-3 expression levels, while having no significant effect on the expression of nanos-2 (Figure 6C). These results suggest a similar role for FGF signaling in controlling the proliferation of stem cells in both larval and adult schistosomes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00768/elife-00768-fig6-v1.jpg)\n\n**Figure 6.:** (A) Relative expression levels of fgfrA during sporocyst development with respect to the expression in miracidia, measured by qPCR. (B) Average number of EdU+ nuclei per sporocyst in control and fgfrA (RNAi) parasites labeled at 20\u201340 hr post-transformation. (C) Relative gene expression levels measured by qPCR for control and fgfrA (RNAi) sporocysts. The white bar indicates efficient knockdown of fgfrA by RNAi. qPCR experiments were performed in biological triplicate. Error bars are standard deviations. ***p<0.001, ****p<0.0001 (t-test).\n\n## Discussion\n\nComparison between sporocyst germinal cells described in this study and somatic stem cells recently identified in adult schistosomes (Collins et al., 2013) reveals significant molecular similarities, suggesting that these stem cells may persist throughout the entire schistosome life cycle. These germinal cells also exhibit many transcriptional and functional similarities with the neoblasts of free-living planarians. In planarians, PRC2 components are enriched in neoblasts, and are required for neoblast self-renewal and long-term maintenance (Wagner et al., 2012; \u00d6nal et al., 2012); disruption of ago2 expression downregulates a specific set of miRNAs and blocks neoblast self-renewal (Rouhana et al., 2010; Li et al., 2011); Smed-fgfr1 is expressed in a subset of planarian neoblasts; Smed-fgfr4 (Wagner et al., 2012) and Smed-bruli (Guo et al., 2006) are both enriched in neoblasts; and vasa is required for the proliferation and expansion of neoblasts (Rouhana et al., 2010; Wagner et al., 2012). Although schistosomes do not have a true vasa ortholog, the vasa/PL10 homolog vlg3 may have assumed a \u2018vasa-like\u2019 role in schistosome stem cell maintenance (Tsai et al., 2013). Consistent with this idea, vasa/PL10 homologs in monogenean flatworms, which also lack vasa, are essential for germline development (Ohashi et al., 2007). This conservation at both the cellular and molecular levels suggests an ancient role for these genes in regulating stem cell populations in flatworms. In light of these observations, it is plausible to suggest that neoblast-driven developmental programs inherited from their free-living ancestors may have enabled the evolution of complex trematode life cycles. These pluripotent cells may help the worms adapt successfully to obligate parasitism, by enabling both rapid expansion of an infective population and long-term tissue maintenance in the hostile environments within their intermediate and definitive hosts. Thus, future studies deciphering the evolutionary relationships between various neoblast-like cell populations are essential to understand the successful transmission and pathogenesis of various parasitic flatworms.\n\nOur data revealing the existence of two germinal cell subpopulations (nanos-2+ and nanos-2\u2212 cells) are reminiscent of observations in some other trematode species, in particular Echinostoma. In these parasites, proliferating germinal cells are present as two morphologically distinguishable populations (Galaktionov and Dobrovolskij, 2003). One of these populations, smaller in cell size, was speculated to be the most \u2018undifferentiated\u2019 cell type, whereas the other was thought to have more restricted developmental potential and enter embryogenesis directly. Although this morphological heterogeneity was not observed in schistosomes (Pan, 1980), our results uncovered molecular heterogeneity in these germinal cells. The observation that germinal cells expressing nanos-2 exhibit slower cell-cycle kinetics is consistent with the conserved role of nanos in lengthening the cell cycle by repressing mitotic transcripts in primordial germ cells from many animals (Juliano et al., 2010). Along with our observations that nanos-2 is also expressed in germ cells in schistosome adult gonads (Wang and Newmark, unpublished) as well as adult somatic stem cells (Collins et al., 2013), it is reasonable to expect the nanos-2+ cells may be more totipotent or germ cell-like, whereas the nanos-2\u2212 germinal cells may be more primed towards somatic fates. Given recent advances (Dvo\u0159\u00e1k et al., 2010; Rinaldi et al., 2012), transgenic approaches to dissect the existence of such a developmental hierarchy may be possible in the future.\n\nOur results provide an initial molecular description of germinal cells in schistosome intramolluscan development. Based on the classic literature, the biology of these cells is quite unique: proliferative totipotent stem cells that directly undergo embryogenesis in the absence of fertilization. We find that, in spite of this unique developmental program, these cells possess a molecular signature similar to that of neoblasts in free-living flatworms, as well as stem cells from diverse organisms. This conserved molecular context opens access to understanding these cells, and may lead to strategies for intervening and blocking the transmission of the disease.\n\n## Materials and methods\n\n### Parasites\n\nS. mansoni (strain: NMRI) life cycle stages were provided by the Biomedical Research Institute (BRI, Rockville, MD) via the NIAID Schistosomiasis Resource Center through NIH-NIAID contract no. HHSN272201000005I. To purify S. mansoni eggs, livers from mice (6\u20138 weeks post infection) were sterilized and digested in 5% clostridial collagenase (Sigma, St. Louis, MO) solution at 37\u00b0C for \u223c20 hr (Mann et al., 2010). The digested suspension was then forced through a 105-\u00b5m sieve, followed by repeated centrifugation and washing. Remaining liver tissue was removed by Percoll sucrose gradient centrifugation (Mann et al., 2010). Purified eggs were cultured at 37\u00b0C/5% CO2 in Basch\u2019s medium 169 (Basch, 1981), supplemented with 10% heat-inactivated fetal bovine serum (FBS, Hyclone/Thermo, Logan, UT) and 1\u00d7 antibiotic-antimycotic (Gibco, Carlsbad, CA) for up to 10 days without significantly reducing the hatching rate of miracidia.\n\nFree-swimming miracidia were hatched in artificial pond water under bright light for 3 hr (Samuelson et al., 1984). Unhatched eggs (typical hatching rate \u223c70\u201380%) and empty egg shells were removed by centrifugation. Miracidia were transformed in vitro to mother sporocysts by exchanging pond water with sporocyst culture medium (Ivanchenko et al., 1999). The sporocyst suspensions were co-cultured with Bge cells at 37\u00b0C/5% CO2/5% O2. These conditions have been derived to maintain long-term cultures of sporocysts (Bixler et al., 2001).\n\nCercariae were obtained from Biomphalaria glabrata snails (Schistosomiasis Resource Center) \u223c5\u20138 weeks post infection by exposing snails to bright light at 28\u00b0C for 1\u20132 hr. Cercariae and miracidia were fixed in 4% formaldehyde in pond water supplemented with 0.2% Triton X-100 and 1% NP-40.\n\n### Cryosectioning\n\nInfected B. glabrata snails were fixed (4% formaldehyde in pond water with 0.2% Triton X-100 and 1% NP-40) at 4\u00b0C for at least 24 hr. Then the shell was crushed and removed, the snail tissue was equilibrated in 30% sucrose overnight, embedded in tissue freezing medium (TBS), and cryosectioned. 30 \u03bcm sections were stained with combinations of 10 \u00b5M phalloidin conjugated to Alexa Fluor 568, 1 \u00b5M POPO-1 iodide, 5 \u00b5M SYTOX-Green (Invitrogen, Carlsbad, CA), and/or 20 \u00b5g/ml fluorescein-labeled PNA (Vector Laboratories, Burlingame, CA) (Collins et al., 2011). Samples were cleared in scale A2 mounting solution (4M Urea, 10% glycerol, 0.1% Triton X-100 in PBS) (Hama et al., 2011). Fluorescence images were obtained on a Zeiss LSM 710 confocal microscope, with a 63\u00d7 oil immersion objective (N.A. = 1.4). Before imaging, 10 mM ascorbic acid was added freshly to the mounting solution to prevent photobleaching.\n\n### EdU labeling and detection\n\nIn vitro transformed sporocysts were cultured with 10 \u00b5M EdU (Invitrogen, Carlsbad, CA) for the indicated time periods. Following the EdU pulse, sporocysts were fixed for 30 min at room temperature or overnight at 4\u00b0C in 4% formaldehyde in Chernin\u2019s balanced salt solution (Chernin, 1963) with 0.2% Triton X-100 and 1% NP-40. Fixed sporocysts were sequentially dehydrated in 50% methanol and then pure methanol. The dehydrated samples were kept at \u221220\u00b0C overnight, and rehydrated by exchanging methanol with 50% methanol, and then PBSTx (PBS with 0.3% Triton X-100). EdU incorporation was detected by click reaction with 25 \u00b5M Alexa Fluor azide conjugates (Invitrogen) for 20 min (Salic and Mitchison, 2008).\n\n### Transcriptional profiling\n\nTotal RNA was purified from \u223c10,000 freshly hatched miracidia or sporocysts 48 hr post-transformation using Trizol (Invitrogen), and DNase treatment. For RNAseq, individually tagged libraries were prepared and pooled in a single lane. For each sample, \u223c90 million 100 bp reads were sequenced on an Illumina HiSeq2000 at the W. M. Keck Center for Comparative and Functional Genomics, and mapped to the annotated S. mansoni genome (version 5) (Protasio et al., 2012) using CLC Genomics Workbench (CLC Bio, Aarhus, Denmark). Transcriptome analyses have been submitted to NCBI under the accession number GSE48282. Comparisons between sporocyst and neoblast-enriched genes were performed using a list of 4032 transcripts whose expression was enriched in FACS-purified X1 neoblasts vs X2 neoblast progeny, and Xins differentiated cells (\u00d6nal et al., 2012).\n\nFor qPCR, total RNA was reverse transcribed to cDNA, and quantified on an Applied Biosystems Step One Plus station using GoTag qPCR reagents (Promega, Madison, WI). Experiments were performed with three independent biological replicates, each containing \u223c5000 animals. Relative expression levels were determined using the \u0394\u0394Ct calculation. The relative fold changes across samples measured by RNAseq were validated by qPCR of 10 randomly picked genes, giving R2 \u2248 0.9. Four genes, Smp_093230 (actin-related protein 10), Smp_197220 (60S ribosomal protein L35), Smp_089880 (fad oxidoreductase), and Smp_169030 (aspartyl-tRNA synthetase) served as internal controls. These genes did not show life cycle stage-specific expression and their expression was not altered following RNAi. The primers used are listed in Supplementary file 1E.\n\n### RNA FISH\n\nThe fixed, dehydrated samples were stored in methanol at \u221220\u00b0C for up to 2 weeks without noticeable signal deterioration. The parasites were transferred to baskets (35-\u00b5m mesh, Intavis, Koeln, Germany), rehydrated, treated with 2 \u00b5g/ml proteinase K (Invitrogen) for 3\u20135 min, and post-fixed for 10 min in 4% formaldehyde in PBSTx. Hybridization and detection followed the protocol developed for adult worms (Collins et al., 2013), except for the following modifications. The hybridization was carried out at 52\u00b0C overnight with \u223c500 ng/ml antisense riboprobes, synthesized with standard in vitro transcription reactions incorporating digoxigenin-12-UTP (Roche) or dinitrophenol-11-UTP (Perkin Elmer). Following stringency washes at 52\u00b0C, the samples were blocked with 1% casein and 7.5% horse serum, and incubated with anti-digoxigenin-peroxidase (1:1000; Roche, Indianapolis, IN) or anti-dinitrophenol-peroxidase (1:250; Perkin Elmer, Waltham, MA) at 4\u00b0C overnight. Detection was performed using tyramide signal amplification (TSA) with home-made tyramides (King and Newmark, 2013). For multi-color FISH, the peroxidase was quenched for 30 min in 0.1% sodium azide solution between sequential detections of different transcripts. Clones used for riboprobe and dsRNA synthesis were generated as described elsewhere (Collins et al., 2010), with oligonucleotide primers listed in Supplementary file 1F.\n\n### RNAi\n\ndsRNA was transcribed in vitro as described elsewhere (Collins et al., 2010). The newly purified eggs (\u223c5000 eggs per ml) were soaked with \u223c20 \u00b5g/ml dsRNA for 8 days, with dsRNA freshly added every other day (Figure 5A). Following hatching, the sporocysts were transformed and maintained in sporocyst medium supplemented with \u223c20 \u00b5g/ml of dsRNA. As a negative control, parasites were soaked with a 1.5 kbp dsRNA derived from an irrelevant bacterial sequence (Collins et al., 2010).\n",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9ebd6230-5334-4974-8e6c-60f0d74bb46f",
+      "submission_id": "829d4cf5-4105-4d2a-8184-ebde027a2135",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alejandro S\u00e1nchez Alvarado, Howard Hughes Medical Institute, Stowers Institute for Medical Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00768.013](https://doi.org/10.7554/eLife.00768.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cFunctional genomic characterization of neoblast-like stem cells in larval Schistosoma mansoni\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Alejandro S\u00e1nchez Alvarado (Reviewing editor) and Peter Olson (peer reviewer).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis groundbreaking work significantly expands our understanding of fundamental developmental processes regulating Schistosomes, a remarkably plastic and therapeutically refractory vector of a devastating human disease. The findings reported here should be of broad interest to developmental biologists, parasitologists, and tropical medicine researchers and physicians.\n\nBecause of the importance of the gene expression profile comparison between the non-parasitic flatworm (S. mediterranea) and Schistosome for future discovery and therapeutic research, we would like the authors to address the following:\n\n1) Please describe how the list of 4,032 S. mediterranea neoblast enriched genes was obtained/selected. The authors should provide a description of the methods/criteria used to produce this list.\n\n2) The comparison between the sporocyte sequences and the S. mediterranea neoblast should be carried out with somewhat higher granularity. By that we mean that reciprocal blasts should be performed to determine if the identified shared transcripts between the two species are either homologs or likely orthologs. For example, what percentage of the \u223c500 genes identified shared genes between the sporocytes and the planarian neoblasts reciprocally blast to each other?\n\n3) How many of the \u223c6,000 sporocyte expressed genes would hit one of the \u223c4,000 planarian genes with the blast threshold used, and how does this compare to \u223c1,600 genes selected in the paper to carry out the comparison? This would help us appreciate whether the \u223c30% overlap of genes reported is significant rather than what would be expected at random.\n\n4) Some enhancement of the gene case study discussion in the text should also be considered. e.g., references to planarian fgfr expression, vasa, and vlg data, and PRC2 gene data; and added assessment of presence or absence for other well-studied neoblast genes such as bruli. It is stated \u201cvasa is required for proliferation\u2026\u201d in comparison to the vlg3 data \u2013 is the vlg3 gene an ortholog of the vasa gene referenced or a vlg?\n",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6a9055f1-cde6-42cb-93f9-3d296919fd6d",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C1",
+      "claim": "Schistosomes infect hundreds of millions of people in the developing world.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomes infect hundreds of millions of people in the developing world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the epidemiological impact of schistosomes, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "6add30b7-656d-4661-aaa6-2bad0334387a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C2",
+      "claim": "Transmission of schistosomes relies on a stem cell-driven, clonal expansion of larvae inside a molluscan intermediate host.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission of these parasites relies on a stem cell-driven, clonal expansion of larvae inside a molluscan intermediate host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the experimental data and observations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "6b3029a1-2b52-4459-9a45-03aae1b5888a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C3",
+      "claim": "The proliferative larval cell population (germinal cells) shares molecular signatures with stem cells from diverse organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that this proliferative larval cell population (germinal cells) shares some molecular signatures with stem cells from diverse organisms, in particular neoblasts of planarians (free-living relatives of schistosomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the transcriptional profiling data comparing sporocyst and neoblast-enriched genes presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "fbaf4906-b684-422d-8556-d43c150cdb5a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C4",
+      "claim": "There are two distinct germinal cell lineages that differ in their proliferation kinetics and expression of a nanos ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify two distinct germinal cell lineages that differ in their proliferation kinetics and expression of a nanos ortholog.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments and FISH data showing differential nanos-2 expression and proliferation rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "de0f1578-55ef-450b-bd29-9c14035ff4bc",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C5",
+      "claim": "A vasa/PL10 homolog is required for proliferation and maintenance of both germinal cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a vasa/PL10 homolog is required for proliferation and maintenance of both populations, whereas argonaute2 and a fibroblast growth factor receptor-encoding gene are required only for nanos-negative cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAi experiments showing loss of both nanos-2+ and nanos-2- cells after vlg-3 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "a3678ce8-f56d-4ed2-9422-4582e0f3b8f7",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C6",
+      "claim": "Argonaute2 is required only for nanos-negative germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a vasa/PL10 homolog is required for proliferation and maintenance of both populations, whereas argonaute2 and a fibroblast growth factor receptor-encoding gene are required only for nanos-negative cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAi experiments showing that ago2-1 knockdown results in loss of only nanos-2- cells while nanos-2+ cells remain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "26de5bef-d8dd-4332-8662-5c3ba7d9302b",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C7",
+      "claim": "A fibroblast growth factor receptor-encoding gene is required only for nanos-negative germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a vasa/PL10 homolog is required for proliferation and maintenance of both populations, whereas argonaute2 and a fibroblast growth factor receptor-encoding gene are required only for nanos-negative cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAi experiments showing fgfrA knockdown has similar effects to ago2-1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "a29f946b-1b98-4701-b04d-ba35c13a3bea",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C8",
+      "claim": "An ancient stem cell-based developmental program may have enabled the evolution of the complex life cycle of parasitic flatworms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that an ancient stem cell-based developmental program may have enabled the evolution of the complex life cycle of parasitic flatworms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the molecular similarities observed between schistosome germinal cells and planarian neoblasts.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "242e59b7-4221-4258-bad0-1546588aa787",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C9",
+      "claim": "Schistosoma flatworms infect 230 million people worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosoma flatworms infect 230 million people worldwide and cause \u223c250,000 deaths per year (van der Werf et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to van der Werf et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9287c8f8-b53f-4d17-a669-4a57dfc4a67e",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C10",
+      "claim": "Schistosoma flatworms cause approximately 250,000 deaths per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosoma flatworms infect 230 million people worldwide and cause \u223c250,000 deaths per year (van der Werf et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to van der Werf et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "5dad6e39-9f86-4e57-9e76-169964ab51d2",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C11",
+      "claim": "Schistosome trematodes are transmitted through a life cycle that alternates between asexual and sexual generations in invertebrate intermediate and vertebrate definitive hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "These trematodes are transmitted through a life cycle that alternates between asexual and sexual generations in invertebrate intermediate and vertebrate definitive hosts, respectively (Clark, 1974; Shoop, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Clark, 1974 and Shoop, 1988.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "97cc075b-b017-4d7d-91b9-0b3cbeac4721",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C12",
+      "claim": "The schistosome life cycle initiates as eggs are excreted from a mammalian host into freshwater, releasing ciliated, free-swimming larvae called miracidia.",
+      "claim_type": "EXPLICIT",
+      "source": "The life cycle initiates as eggs are excreted from a mammalian host into freshwater, releasing ciliated, free-swimming larvae called miracidia that seek out and penetrate a snail intermediate host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the schistosome life cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "5a534f8f-2743-44ae-9cb1-59c0f2568eb0",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C13",
+      "claim": "Miracidia seek out and penetrate a snail intermediate host.",
+      "claim_type": "EXPLICIT",
+      "source": "The life cycle initiates as eggs are excreted from a mammalian host into freshwater, releasing ciliated, free-swimming larvae called miracidia that seek out and penetrate a snail intermediate host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the schistosome life cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9989eaeb-3f15-4c68-8cce-0e45d402b222",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C14",
+      "claim": "Entry into the snail triggers a series of morphological, physiological, and biochemical transformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Entry into the snail triggers a series of morphological, physiological, and biochemical transformations (Basch and DiConza, 1974; Kawamoto et al., 1989; Ludtmann et al., 2009; Wu et al., 2009; Parker-Manuel et al., 2011), followed by a clonal expansion of the larvae (called sporocysts at this stage) inside the snail host, ultimately producing thousands of infective cercariae (Figure 1A) (Cheng and Bier, 1972; Ward et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "03f3d482-8bc0-4a71-aae2-da90e1f458bb",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C15",
+      "claim": "Clonal expansion of larvae inside the snail host ultimately produces thousands of infective cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "Entry into the snail triggers a series of morphological, physiological, and biochemical transformations (Basch and DiConza, 1974; Kawamoto et al., 1989; Ludtmann et al., 2009; Wu et al., 2009; Parker-Manuel et al., 2011), followed by a clonal expansion of the larvae (called sporocysts at this stage) inside the snail host, ultimately producing thousands of infective cercariae (Figure 1A) (Cheng and Bier, 1972; Ward et al., 1988).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and Figure 1A showing the timeline of asexual amplification.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "5fa622b6-cbce-4586-9af4-b3ffc83f0e0a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C16",
+      "claim": "Mature cercariae emerge from the snail into freshwater and burrow through the epidermis of mammalian hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature cercariae then emerge from the snail into freshwater, burrow through the epidermis of mammalian hosts, migrate to species-specific niches in the host vascular system, develop to adulthood, and begin to reproduce sexually, thereby completing the life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the schistosome life cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "37c1337d-b962-4b30-8870-768f2c432ac9",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C17",
+      "claim": "Cercariae migrate to species-specific niches in the host vascular system.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature cercariae then emerge from the snail into freshwater, burrow through the epidermis of mammalian hosts, migrate to species-specific niches in the host vascular system, develop to adulthood, and begin to reproduce sexually, thereby completing the life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the schistosome life cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "021ce3f8-44fc-4166-a9da-ad9948451240",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C18",
+      "claim": "Asexual amplification inside of the snail is vital for propagation of schistosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, asexual amplification inside of the snail is vital for propagation of schistosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the life cycle description and the fact that thousands of cercariae are produced from a single miracidium.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "54228879-a4be-43a9-b0fc-c263cd622b8f",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C19",
+      "claim": "A population of totipotent stem cells called 'germinal cells' is thought to underlie schistosome intramolluscan amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "A population of totipotent stem cells, historically called 'germinal cells', is thought to underlie this unique intramolluscan amplification by undergoing multiple rounds of proliferation and de novo embryogenesis in the absence of fertilization (Olivier and Mao, 1949; Cort et al., 1954; Whitfield and Evans, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "01123f13-f0c6-4524-8c5c-1d98b071e29c",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C20",
+      "claim": "Germinal cells undergo multiple rounds of proliferation and de novo embryogenesis in the absence of fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "A population of totipotent stem cells, historically called 'germinal cells', is thought to underlie this unique intramolluscan amplification by undergoing multiple rounds of proliferation and de novo embryogenesis in the absence of fertilization (Olivier and Mao, 1949; Cort et al., 1954; Whitfield and Evans, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "57320fec-81f7-4d5a-951d-c92352c7b343",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C21",
+      "claim": "Early ultrastructural and histological studies recognized germinal cells by their stem cell-like morphology and rapid cycling kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Early ultrastructural and histological studies recognized these cells by their stem cell-like morphology and rapid cycling kinetics (Schutte, 1974; Pan, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schutte, 1974 and Pan, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "401e0ff7-1a62-4f66-b53a-b4ccb41926f4",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C22",
+      "claim": "Serial transplantation of sporocysts into naive snail hosts led to continuous sporocyst propagation and cercarial production.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the totipotency of these germinal cells, serial transplantation of sporocysts into naive snail hosts led to continuous sporocyst propagation and cercarial production (Jourdane and Th\u00e9ron, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jourdane and Th\u00e9ron, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "2fb18ab6-30e6-45ec-8ad8-44018dc64528",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C23",
+      "claim": "Division of diploid presumptive totipotent stem cells in mother sporocysts produces progeny that can independently initiate the embryogenesis of daughter sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "These classic studies led to the model that division of these diploid presumptive totipotent stem cells in mother sporocysts produces progeny that are able to independently initiate the embryogenesis of daughter sporocysts (Whitfield and Evans, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model based on classic studies, supported by citation to Whitfield and Evans, 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "15c2dbab-b0a8-421f-b9ae-75455dc4cc48",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C24",
+      "claim": "Daughter sporocysts can produce more daughter sporocysts or infective cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "These daughter sporocysts, which are essentially sacs filled with germinal cells, can then produce more daughter sporocysts or infective cercariae in the same manner as they were generated themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about schistosome development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "dcd45bdd-79ef-480f-bf2b-a17db7cf4d03",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C25",
+      "claim": "The process of producing multiple embryos from the same zygote with no intervening gamete production represents 'polyembryony'.",
+      "claim_type": "EXPLICIT",
+      "source": "This process represents 'polyembryony'\u2014during which multiple embryos are produced from the same zygote with no intervening gamete production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "c00ef8a7-ff6f-4b6c-a350-7d750ca3ff3e",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C26",
+      "claim": "In planarians, a population of pluripotent stem cells called neoblasts can regenerate injured tissues and replenish a whole animal from a single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In planarians, free-living flatworm relatives of schistosomes, a population of pluripotent stem cells called neoblasts can regenerate injured tissues and replenish a whole animal from a single cell (Newmark and S\u00e1nchez Alvarado, 2002; Wagner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Newmark and S\u00e1nchez Alvarado, 2002 and Wagner et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "31c44117-a3a6-43f0-ae25-3b97d60322b8",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C27",
+      "claim": "A population of neoblast-like cells was recently identified in adult Schistosoma mansoni.",
+      "claim_type": "EXPLICIT",
+      "source": "Guided by this knowledge, we recently identified a population of neoblast-like cells in adult Schistosoma mansoni (Collins et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Collins et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "6d29713a-f447-471c-91ba-5d1654f1a0b9",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C28",
+      "claim": "Germinal cells in schistosome larvae have a high nuclear-to-cytoplasmic ratio, a large nucleolus, and cytoplasm densely packed with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on previous studies showing that germinal cells in schistosome larvae have a distinct morphology\u2014high nuclear-to-cytoplasmic ratio, a large nucleolus, and cytoplasm densely packed with ribosomes (Pan, 1980)\u2014we reasoned that nucleic acid stains that preferentially label RNA could provide a means to label these cells specifically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pan, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "eb958458-2fd5-44b2-8724-ca3d6421302b",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C29",
+      "claim": "POPO-1 clearly distinguishes the RNA-rich germinal cells from other somatic cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we screened a number of nucleic acid-binding dyes and determined that POPO-1 clearly distinguishes the RNA-rich germinal cells from the other somatic cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing POPO-1 staining patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "4a0b44e8-30e5-47fe-92a9-ff3477a5fe26",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C30",
+      "claim": "POPO-1 strongly stains the nucleolus and cytoplasm of germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, POPO-1 strongly stains the nucleolus and cytoplasm of the germinal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "e825240b-a253-4b34-a586-8b91306ad73e",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C31",
+      "claim": "There are 10-20 germinal cells in the posterior half of the body of free-swimming miracidia after hatching from the egg.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Pan, 1980), we found 10\u201320 germinal cells in the posterior half of the body of free-swimming miracidia after hatching from the egg (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Pan, 1980 and imaging data in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "f7413bc9-5c88-459c-9bc0-dfbff3d5ebb9",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C32",
+      "claim": "In vitro transformation of miracidia into sporocysts triggers germinal cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro transformation of miracidia into sporocysts triggered germinal cell proliferation (Yoshino and Laursen, 1995; Ivanchenko et al., 1999; Bixler et al., 2001): we observed these cells in mitosis as early as 24 hr post-transformation (\u223c0.2 mitoses per animal) (Figure 1C,D), which is consistent with the behavior of these cells in vivo after miracidia penetrate a snail host (Schutte, 1974).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and imaging data in Figures 1C and 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "aebc2b66-1504-4e74-8933-c06a0717aaaf",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C33",
+      "claim": "Germinal cells are observed in mitosis as early as 24 hr post-transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro transformation of miracidia into sporocysts triggered germinal cell proliferation (Yoshino and Laursen, 1995; Ivanchenko et al., 1999; Bixler et al., 2001): we observed these cells in mitosis as early as 24 hr post-transformation (\u223c0.2 mitoses per animal) (Figure 1C,D), which is consistent with the behavior of these cells in vivo after miracidia penetrate a snail host (Schutte, 1974).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "dd98a336-ff8b-4c72-b85c-15236f3135a4",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C34",
+      "claim": "POPO-1 staining identifies a similar cell type throughout various stages of schistosome asexual development.",
+      "claim_type": "EXPLICIT",
+      "source": "Following their long-term development in vivo, POPO-1 staining identifies a similar cell type throughout various stages of schistosome asexual development, including: developing daughter sporocysts in the mother (Figure 1E); motile daughters that have broken away from the mother and migrated to the snail digestive glands (Figure 1F); and cercarial embryos developing inside the daughter sporocysts (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data in Figures 1E, 1F, and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "02daf756-3b8e-4f63-9640-25783ad39efe",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C35",
+      "claim": "POPO-1-labeled cells ultimately segregate into a compact cluster in cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "These POPO-1-labeled cells ultimately segregated into a compact cluster in cercariae (Cheng and Bier, 1972) (Figure 1H), presumably saved for the next stage of development after their penetration into mammalian hosts (Dorsey et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Cheng and Bier, 1972 and imaging data in Figure 1H.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "86f99a57-452f-4719-aefb-b4583c789f79",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C36",
+      "claim": "The compact cluster of cells in cercariae is presumably saved for the next stage of development after penetration into mammalian hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "These POPO-1-labeled cells ultimately segregated into a compact cluster in cercariae (Cheng and Bier, 1972) (Figure 1H), presumably saved for the next stage of development after their penetration into mammalian hosts (Dorsey et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation to Dorsey et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "839f061a-7d89-458d-8976-b64f7d37647b",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C37",
+      "claim": "During the first 20 hr after transformation, few cells incorporated EdU.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first 20 hr after transformation, few cells incorporated EdU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "98f616e5-54bd-48ce-b4ff-6bf06db6776f",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C38",
+      "claim": "Between 20-24 hr post-transformation, 1-2 clusters of EdU+ germinal cells are typically observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, between 20\u201324 hr, we typically observed 1\u20132 clusters of EdU+ germinal cells, which are identified by their nucleolar and cytoplasmic POPO-1 staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "a776b3b2-2275-4b67-bdfe-58803842b089",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C39",
+      "claim": "At 48-64 hr post-transformation, a large fraction of germinal cells in the sporocyst incorporated EdU.",
+      "claim_type": "EXPLICIT",
+      "source": "At later time points (48\u201364 hr), a large fraction of germinal cells in the sporocyst incorporated EdU, and all EdU+ cells exhibit a germinal cell-specific morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "e6bfd016-e848-4179-8beb-16f0f475e41f",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C40",
+      "claim": "All EdU+ cells exhibit a germinal cell-specific morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "At later time points (48\u201364 hr), a large fraction of germinal cells in the sporocyst incorporated EdU, and all EdU+ cells exhibit a germinal cell-specific morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments and morphological observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "2dba77d3-fb8e-40a8-9b73-0730cc35465c",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C41",
+      "claim": "Germinal cells triple sporocyst size during the first 3 days after transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this massive proliferative burst, these germinal cells increased dramatically in number and came to occupy most of the sporocyst body, tripling sporocyst size during the first 3 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "de4dac91-f5d5-4299-a99b-7efa934b0e1c",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C42",
+      "claim": "A tightly regulated, sharp developmental transition begins at approximately 20 hr post-transformation, when the first wave of proliferation starts.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a tightly regulated, sharp developmental transition begins at \u223c20 hr post-transformation, when the first wave of proliferation starts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the EdU labeling data showing the timing of proliferation onset.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "8b209bb2-1baf-4e7f-8401-cf470636d360",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C43",
+      "claim": "Of the 10,852 predicted genes in the annotated S. mansoni genome, 6677 genes were detected in 48 hr sporocysts with an RPKM value above 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 10,852 predicted genes in the annotated S. mansoni genome (Berriman et al., 2009; Protasio et al., 2012), 6677 genes were detected in 48 hr sporocysts with an RPKM (reads per kilobases of transcript per million mapped reads) value above 1 (Figure 2B); 1662 of these genes were upregulated relative to miracidia (Figure 2\u2014figure supplement 1A and Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "b9e6a1b5-a026-4891-934c-d400f3cad1c3",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C44",
+      "claim": "1662 genes were upregulated in 48 hr sporocysts relative to miracidia.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 10,852 predicted genes in the annotated S. mansoni genome (Berriman et al., 2009; Protasio et al., 2012), 6677 genes were detected in 48 hr sporocysts with an RPKM (reads per kilobases of transcript per million mapped reads) value above 1 (Figure 2B); 1662 of these genes were upregulated relative to miracidia (Figure 2\u2014figure supplement 1A and Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 2B and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "d7c796a7-15ab-4e57-873b-458299fea038",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C45",
+      "claim": "Approximately 30% of genes upregulated in sporocysts (581 genes) share similarity with neoblast-enriched transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we noticed substantial overlap between these two datasets: of the 1662 genes upregulated in sporocysts, \u223c30% of them (581 genes) shared similarity (e-value < e\u221210) with neoblast-enriched transcripts (Figure 2\u2014figure supplement 1, and Supplementary file 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative analysis of RNAseq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "11d3ef9c-8439-48a1-9ddf-34a229c475a5",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C46",
+      "claim": "More than 20% (864/4032) of neoblast-enriched transcripts share similarity with sporocyst-enriched mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, more than \u223c20% (864/4032) of neoblast-enriched transcripts shared similarity with sporocyst-enriched mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis of RNAseq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "78047b8e-0f76-410d-bc4e-e52d23b62cf3",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C47",
+      "claim": "A total of 4749 1:1 schistosome-to-planarian orthologs were identified using reciprocal BLAST comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "To better define the similarity between these datasets, we identified a total of 4749 1:1 schistosome-to-planarian orthologs using reciprocal BLAST comparisons (e-value < e\u221210) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioinformatic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "86717f97-a95d-4831-a970-901d0173fb27",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C48",
+      "claim": "1579 orthologs were enriched in planarian neoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "1579 orthologs were enriched in planarian neoblasts; quite interestingly, 1525 of them (96.5%) were expressed in sporocysts as well (RPKM in sporocysts >1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis of RNAseq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9035e1c1-df6b-44e9-b24e-7d1a1a0bdff0",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C49",
+      "claim": "96.5% (1525/1579) of neoblast-enriched orthologs were expressed in sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "1579 orthologs were enriched in planarian neoblasts; quite interestingly, 1525 of them (96.5%) were expressed in sporocysts as well (RPKM in sporocysts >1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis of RNAseq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "60083de3-9f4e-46de-a553-612f367dd74f",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C50",
+      "claim": "331 orthologs (20% of 1662 genes upregulated in sporocysts) overlap between neoblast-enriched transcripts and sporocyst-enriched genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the overlap between neoblast-enriched transcripts and sporocyst-enriched genes and identified 331 orthologs (20% of 1662 genes that are upregulated in sporocysts) (Figure 2B, and Supplementary file 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative analysis of RNAseq datasets shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "d5f109ac-348f-44cd-b830-d4a89cee82e9",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C51",
+      "claim": "The overlapping gene set may contain a core set of genes essential for stem cell proliferation and maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "This list may contain a core set of genes that are essential for stem cell proliferation and maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed overlap between datasets.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "7ba92ba0-cd6f-482f-8913-593fecafee76",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C52",
+      "claim": "11 out of 37 DEAD-box helicases in the S. mansoni genome are upregulated in sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 11/37 DEAD-box helicases (DBHs) in the S. mansoni genome are upregulated in sporocysts (Supplementary file 1B), including three vasa/PL10 homologs (Skinner et al., 2012) that may play a similar role in flatworm parasites to that of vasa in other metazoans (Juliano et al., 2010; Tsai et al., 2013) (for consistency with previous studies [Shibata et al., 1999; Ohashi et al., 2007; Skinner et al., 2012], we will refer to these vasa/PL10 homologs as vasa-like genes [vlg]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "a3c21063-98ad-4af6-8cf0-4b425f9cdc59",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C53",
+      "claim": "Three vasa/PL10 homologs are upregulated in sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 11/37 DEAD-box helicases (DBHs) in the S. mansoni genome are upregulated in sporocysts (Supplementary file 1B), including three vasa/PL10 homologs (Skinner et al., 2012) that may play a similar role in flatworm parasites to that of vasa in other metazoans (Juliano et al., 2010; Tsai et al., 2013) (for consistency with previous studies [Shibata et al., 1999; Ohashi et al., 2007; Skinner et al., 2012], we will refer to these vasa/PL10 homologs as vasa-like genes [vlg]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "8dcecd55-51c1-4f3a-911f-4d7c7b5b8da2",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C54",
+      "claim": "Vasa/PL10 homologs may play a similar role in flatworm parasites to that of vasa in other metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 11/37 DEAD-box helicases (DBHs) in the S. mansoni genome are upregulated in sporocysts (Supplementary file 1B), including three vasa/PL10 homologs (Skinner et al., 2012) that may play a similar role in flatworm parasites to that of vasa in other metazoans (Juliano et al., 2010; Tsai et al., 2013) (for consistency with previous studies [Shibata et al., 1999; Ohashi et al., 2007; Skinner et al., 2012], we will refer to these vasa/PL10 homologs as vasa-like genes [vlg]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to Juliano et al., 2010 and Tsai et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "8c5f35b3-519d-45cb-bebe-39e2ca1d69e4",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C55",
+      "claim": "Proliferating germinal cells in sporocysts share some common features with planarian stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this comparison between parasitic and free-living flatworms suggests that proliferating germinal cells in sporocysts share some common features with planarian stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the transcriptional profiling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "4e4db18e-d315-43f3-8cd9-5c4f30a6ac67",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C56",
+      "claim": "The conserved germinal cell-enriched genes contain several targets accessible with available small-molecule drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this set of conserved germinal cell-enriched genes also contains several targets accessible with available small-molecule drugs (e.g., cyclophilin, adenosylhomocysteinase, transketolase) (Crowther et al., 2010), suggesting that these cells could serve as a potential vulnerable point to block schistosome propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Crowther et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "1a67d1f9-f4cd-4fd0-b290-54456f04fc9c",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C57",
+      "claim": "Germinal cells could serve as a potential vulnerable point to block schistosome propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this set of conserved germinal cell-enriched genes also contains several targets accessible with available small-molecule drugs (e.g., cyclophilin, adenosylhomocysteinase, transketolase) (Crowther et al., 2010), suggesting that these cells could serve as a potential vulnerable point to block schistosome propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the presence of druggable targets.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9bbf8388-af16-48c7-9b86-00856781fcc6",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C58",
+      "claim": "ago2-1 transcripts are enriched in germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we confirmed that ago2-1 transcripts were enriched in germinal cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FISH data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "6cd8e398-009c-424e-a0c9-ddfbcb5bd456",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C59",
+      "claim": "Germinal cells expressing ago2-1 also express the cell cycle-regulated gene PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells also expressed the cell cycle-regulated gene PCNA (Figure 3A top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FISH data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "0b18a2cd-e393-4501-a6cc-4e72b31e2a5d",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C60",
+      "claim": "More than 95% (2178/2282) of EdU+ cells expressed ago2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a 24 hr EdU pulse, >95% (2178/2282) of EdU+ cells expressed ago2-1 and \u223c90% (1626/1815) of the ago2-1+ cells incorporated EdU (Figure 3A, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EdU labeling and FISH data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "a4da3ba8-dae4-4cf2-9dd5-6e2662a26f28",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C61",
+      "claim": "Approximately 90% (1626/1815) of ago2-1+ cells incorporated EdU.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a 24 hr EdU pulse, >95% (2178/2282) of EdU+ cells expressed ago2-1 and \u223c90% (1626/1815) of the ago2-1+ cells incorporated EdU (Figure 3A, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EdU labeling and FISH data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "81e8af14-299f-4918-aa62-ef689ff45f0a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C62",
+      "claim": "Both ago2-1 and vlg-3 are expressed preferentially in proliferative germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations were made with vlg-3 (Figure 3B), suggesting that both ago2-1 and vlg-3 are expressed preferentially in proliferative germinal cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FISH and EdU labeling data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "c9e8c246-3eaa-4b81-abfa-a5e9c94e3fb8",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C63",
+      "claim": "nanos-2 is expressed only in a subset of ago2-1+/vlg-3+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, nanos-2 expression was detected only in a subset of ago2-1+/vlg-3+ cells (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FISH data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "c0b45e01-779f-48de-9b8c-f167edd78b99",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C64",
+      "claim": "There are two distinct populations of germinal cells: nanos-2+ or nanos-2\u2212 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests the existence of two distinct populations of germinal cells: nanos-2+ or nanos-2\u2212 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the FISH data showing differential nanos-2 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "d242c3d9-50ab-48de-920a-05f842a1214a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C65",
+      "claim": "The nanos-2\u2212 population expands at a higher rate (doubling time approximately 24 hr) than the nanos-2+ population.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring the ratio of these two cell populations over time, we found the nanos-2\u2212 population expanded at a higher rate (doubling time \u223c24 hr) than the nanos-2+ population (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "8dc0b639-ccc2-44ba-adbf-6344d88d0817",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C66",
+      "claim": "Following a 4-hr EdU pulse, approximately 70% of nanos-2\u2212 cells were EdU+.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a 4-hr EdU pulse, \u223c70% of the nanos-2\u2212 cells were EdU+, whereas only \u223c5% of the nanos-2+ cells were EdU+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "2ad3c2da-eb94-4284-9165-534c301320ff",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C67",
+      "claim": "Following a 4-hr EdU pulse, only approximately 5% of nanos-2+ cells were EdU+.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a 4-hr EdU pulse, \u223c70% of the nanos-2\u2212 cells were EdU+, whereas only \u223c5% of the nanos-2+ cells were EdU+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "5f9b77f1-a048-45be-903c-92258cdab8ec",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C68",
+      "claim": "The fraction of nanos-2+ cells that were EdU+ increased to approximately 40% with an 8-hr pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of nanos-2+ cells that were EdU+ increased to \u223c40% with an 8-hr pulse, and to \u223c75% with a 16-hr pulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "1401a753-e050-4c76-9de4-1d71b74fbe55",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C69",
+      "claim": "The fraction of nanos-2+ cells that were EdU+ increased to approximately 75% with a 16-hr pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of nanos-2+ cells that were EdU+ increased to \u223c40% with an 8-hr pulse, and to \u223c75% with a 16-hr pulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "33a17837-ea7f-4aeb-ac66-23e80e5d80cd",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C70",
+      "claim": "With either an 8-hr or 16-hr pulse, approximately 95% of nanos-2\u2212 germinal cells were EdU+.",
+      "claim_type": "EXPLICIT",
+      "source": "With either an 8-hr or 16-hr pulse, \u223c95% of nanos-2\u2212 germinal cells were EdU+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU labeling experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "425c310c-382b-477e-87ef-72d866e337c9",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C71",
+      "claim": "Following a 4-hr EdU pulse and 12-hr chase, only 6% of nanos-2+ cells were EdU+.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out the possibility that EdU+/nanos-2+ cells are progeny of the more rapidly proliferating nanos-2\u2212 cells, we administrated a short 4-hr EdU pulse followed by a 12-hr chase period in the absence of EdU. We found that only 6% of nanos-2+ cells were EdU+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EdU pulse-chase experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "5a64d04b-326f-4039-9eea-cd0697abf14b",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C72",
+      "claim": "It is unlikely that nanos-2\u2212 germinal cells differentiate to produce nanos-2+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since a similar fraction of EdU+/nanos-2+ cells is observed immediately following a pulse (Figure 4D), it is unlikely that nanos-2\u2212 germinal cells differentiate to produce nanos-2+ cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the EdU pulse-chase data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "d0b73359-2268-4ec0-bde2-4cf1f66af339",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C73",
+      "claim": "nanos-2+ germinal cells have a longer cell cycle and enter S-phase less often than nanos-2\u2212 germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations suggest that nanos-2+ germinal cells have a longer cell cycle and enter S-phase less often than do nanos-2\u2212 germinal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the EdU labeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "c046db6d-c17e-41bf-9de0-3c3ee6dfea70",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C74",
+      "claim": "The differential rate of proliferation likely explains why the upregulation of nanos-2 expression is delayed following transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This differential rate of proliferation likely explains why the upregulation of nanos-2 expression is delayed following transformation (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the proliferation kinetics and gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "aaa26378-3147-47d0-8b6d-8a766c793499",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C75",
+      "claim": "RNAi of either ago2-1 or vlg-3 resulted in significantly fewer EdU+ germinal cells following a 24-hr EdU pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these genes regulating germinal cell proliferation, RNAi of either ago2-1 or vlg-3 resulted in significantly fewer EdU+ germinal cells following a 24-hr EdU pulse (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAi and EdU labeling experiments shown in Figures 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "f46defa5-53a0-435b-a1c3-5f10bcb8ffed",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C76",
+      "claim": "Inhibition of either ago-2 or vlg-3 resulted in a significant reduction in the levels of cell cycle-associated transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of either ago-2 or vlg-3 also resulted in a significant reduction in the levels of cell cycle-associated transcripts such as polo kinase and histone H2B, as well as germinal cell-associated genes (ago2-1, vlg-3, and fgfrA) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "3a1ffc0f-8622-488c-b0c8-6f68686babae",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C77",
+      "claim": "RNAi of vlg-3 resulted in the loss of both nanos-2+ and nanos-2\u2212 germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that RNAi of vlg-3 resulted in the loss of both nanos-2+ and nanos-2\u2212 germinal cells (Figure 5E), suggesting that it promotes the maintenance of the entire germinal cell population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FISH data after RNAi shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "c2ffd2f6-93d9-477e-a99a-8600545b5b8e",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C78",
+      "claim": "vlg-3 promotes the maintenance of the entire germinal cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that RNAi of vlg-3 resulted in the loss of both nanos-2+ and nanos-2\u2212 germinal cells (Figure 5E), suggesting that it promotes the maintenance of the entire germinal cell population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the RNAi phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "def8b5f5-c7d6-4bf4-8b9c-bc10a762796d",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C79",
+      "claim": "Reduction of ago2-1 levels resulted in loss of only nanos-2\u2212 germinal cells; nanos-2+ cells were still present.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to vlg-3, reduction of ago2-1 levels resulted in loss of only nanos-2\u2212 germinal cells; nanos-2+ cells were still present (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FISH data after RNAi shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "631a8d04-dc01-4681-8a44-98c2044b5fbb",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C80",
+      "claim": "The absence of proliferation after ago2-1 RNAi suggests that the remaining nanos-2+ cells fail to proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the absence of proliferation after ago2-1 RNAi (Figure 5C) suggests that the remaining nanos-2+ cells fail to proliferate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the EdU labeling data after RNAi.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "d0c655b0-69cf-4a42-82c9-ab59df208fee",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C81",
+      "claim": "Expression of nanos-2 was reduced after vlg-3 RNAi but retained after ago2-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with qPCR quantification, in which expression of nanos-2 was reduced after vlg-3 RNAi but retained after ago2-1 RNAi (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "23b9f412-9be8-4082-9936-1d3182749236",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C82",
+      "claim": "fgfrA is upregulated in sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fgfrA, which is essential for maintenance of adult stem cells, is also upregulated in sporocysts (Figure 6A, Figure 2\u2014figure supplement 1, and Table 1) and its expression depends on either ago2-1 or vlg-3, suggesting that fgfrA is present in germinal cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "1f5af6b9-2026-4f71-a48e-51628e17df3c",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C83",
+      "claim": "fgfrA expression depends on either ago2-1 or vlg-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fgfrA, which is essential for maintenance of adult stem cells, is also upregulated in sporocysts (Figure 6A, Figure 2\u2014figure supplement 1, and Table 1) and its expression depends on either ago2-1 or vlg-3, suggesting that fgfrA is present in germinal cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data after RNAi shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "5f14f96b-960a-457b-be47-e2974888c57d",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C84",
+      "claim": "fgfrA is present in germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fgfrA, which is essential for maintenance of adult stem cells, is also upregulated in sporocysts (Figure 6A, Figure 2\u2014figure supplement 1, and Table 1) and its expression depends on either ago2-1 or vlg-3, suggesting that fgfrA is present in germinal cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the gene expression and RNAi data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "679d1693-3a99-4c82-b677-38a2e1665864",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C85",
+      "claim": "Disruption of fgfrA mRNA blocked germinal cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the function of fgfrA we performed RNAi experiments. Disruption of fgfrA mRNA blocked germinal cell proliferation, measured by reduced EdU incorporation (Figure 6B) and downregulation of cell cycle-associated transcripts (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAi, EdU labeling, and qPCR data shown in Figures 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "dc2f1977-9a2b-45ce-9cae-e27a5e38ca63",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C86",
+      "claim": "fgfrA RNAi resulted in reduced ago2-1 and vlg-3 expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to ago2-1 RNAi parasites, fgfrA RNAi also resulted in reduced ago2-1 and vlg-3 expression levels, while having no significant effect on the expression of nanos-2 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "3f3d4008-3206-4b9e-8791-dbf5e5e22c32",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C87",
+      "claim": "fgfrA RNAi had no significant effect on the expression of nanos-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to ago2-1 RNAi parasites, fgfrA RNAi also resulted in reduced ago2-1 and vlg-3 expression levels, while having no significant effect on the expression of nanos-2 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "c3dfcd19-d9c3-459d-bdcc-5611089e8766",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C88",
+      "claim": "FGF signaling has a similar role in controlling the proliferation of stem cells in both larval and adult schistosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest a similar role for FGF signaling in controlling the proliferation of stem cells in both larval and adult schistosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the fgfrA RNAi results and comparison with adult stem cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "80277338-0105-4a41-b848-8c346f1cefb9",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C89",
+      "claim": "Sporocyst germinal cells and somatic stem cells in adult schistosomes reveal significant molecular similarities.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison between sporocyst germinal cells described in this study and somatic stem cells recently identified in adult schistosomes (Collins et al., 2013) reveals significant molecular similarities, suggesting that these stem cells may persist throughout the entire schistosome life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the molecular characterization and comparison with adult stem cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "2cabfbe2-07bc-40b4-858b-11c47183e949",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C90",
+      "claim": "Stem cells may persist throughout the entire schistosome life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison between sporocyst germinal cells described in this study and somatic stem cells recently identified in adult schistosomes (Collins et al., 2013) reveals significant molecular similarities, suggesting that these stem cells may persist throughout the entire schistosome life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the molecular similarities observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9a86270e-1c19-49eb-8170-9cf8bdd37314",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C91",
+      "claim": "Germinal cells exhibit many transcriptional and functional similarities with the neoblasts of free-living planarians.",
+      "claim_type": "EXPLICIT",
+      "source": "These germinal cells also exhibit many transcriptional and functional similarities with the neoblasts of free-living planarians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparative transcriptional profiling and functional studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "faa6d026-5775-4730-93ed-040e1fad3166",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C92",
+      "claim": "In planarians, PRC2 components are enriched in neoblasts and are required for neoblast self-renewal and long-term maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "In planarians, PRC2 components are enriched in neoblasts, and are required for neoblast self-renewal and long-term maintenance (Wagner et al., 2012; \u00d6nal et al., 2012); disruption of ago2 expression downregulates a specific set of miRNAs and blocks neoblast self-renewal (Rouhana et al., 2010; Li et al., 2011); Smed-fgfr1 is expressed in a subset of planarian neoblasts; Smed-fgfr4 (Wagner et al., 2012) and Smed-bruli (Guo et al., 2006) are both enriched in neoblasts; and vasa is required for the proliferation and expansion of neoblasts (Rouhana et al., 2010; Wagner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wagner et al., 2012 and \u00d6nal et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "73d9283f-ff45-49b1-b1c8-0a9908bbad5a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C93",
+      "claim": "In planarians, disruption of ago2 expression downregulates a specific set of miRNAs and blocks neoblast self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "In planarians, PRC2 components are enriched in neoblasts, and are required for neoblast self-renewal and long-term maintenance (Wagner et al., 2012; \u00d6nal et al., 2012); disruption of ago2 expression downregulates a specific set of miRNAs and blocks neoblast self-renewal (Rouhana et al., 2010; Li et al., 2011); Smed-fgfr1 is expressed in a subset of planarian neoblasts; Smed-fgfr4 (Wagner et al., 2012) and Smed-bruli (Guo et al., 2006) are both enriched in neoblasts; and vasa is required for the proliferation and expansion of neoblasts (Rouhana et al., 2010; Wagner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rouhana et al., 2010 and Li et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "8bf2b9dc-8259-4ca8-9519-09fbd3b24bbc",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C94",
+      "claim": "In planarians, Smed-fgfr1 is expressed in a subset of planarian neoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In planarians, PRC2 components are enriched in neoblasts, and are required for neoblast self-renewal and long-term maintenance (Wagner et al., 2012; \u00d6nal et al., 2012); disruption of ago2 expression downregulates a specific set of miRNAs and blocks neoblast self-renewal (Rouhana et al., 2010; Li et al., 2011); Smed-fgfr1 is expressed in a subset of planarian neoblasts; Smed-fgfr4 (Wagner et al., 2012) and Smed-bruli (Guo et al., 2006) are both enriched in neoblasts; and vasa is required for the proliferation and expansion of neoblasts (Rouhana et al., 2010; Wagner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about planarian neoblasts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "22050234-9e78-4f95-af1c-ec831ea850e5",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C95",
+      "claim": "In planarians, Smed-fgfr4 and Smed-bruli are both enriched in neoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In planarians, PRC2 components are enriched in neoblasts, and are required for neoblast self-renewal and long-term maintenance (Wagner et al., 2012; \u00d6nal et al., 2012); disruption of ago2 expression downregulates a specific set of miRNAs and blocks neoblast self-renewal (Rouhana et al., 2010; Li et al., 2011); Smed-fgfr1 is expressed in a subset of planarian neoblasts; Smed-fgfr4 (Wagner et al., 2012) and Smed-bruli (Guo et al., 2006) are both enriched in neoblasts; and vasa is required for the proliferation and expansion of neoblasts (Rouhana et al., 2010; Wagner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wagner et al., 2012 and Guo et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "53fac831-47c6-4ec3-8c0b-f3cc44cd6523",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C96",
+      "claim": "In planarians, vasa is required for the proliferation and expansion of neoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In planarians, PRC2 components are enriched in neoblasts, and are required for neoblast self-renewal and long-term maintenance (Wagner et al., 2012; \u00d6nal et al., 2012); disruption of ago2 expression downregulates a specific set of miRNAs and blocks neoblast self-renewal (Rouhana et al., 2010; Li et al., 2011); Smed-fgfr1 is expressed in a subset of planarian neoblasts; Smed-fgfr4 (Wagner et al., 2012) and Smed-bruli (Guo et al., 2006) are both enriched in neoblasts; and vasa is required for the proliferation and expansion of neoblasts (Rouhana et al., 2010; Wagner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rouhana et al., 2010 and Wagner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "2e5df879-c7d6-4428-938e-509c3241e2d2",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C97",
+      "claim": "Schistosomes do not have a true vasa ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "Although schistosomes do not have a true vasa ortholog, the vasa/PL10 homolog vlg3 may have assumed a 'vasa-like' role in schistosome stem cell maintenance (Tsai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about schistosome genomics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "8ec0b1bf-299c-408d-9cf6-90081d078f89",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C98",
+      "claim": "The vasa/PL10 homolog vlg3 may have assumed a 'vasa-like' role in schistosome stem cell maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Although schistosomes do not have a true vasa ortholog, the vasa/PL10 homolog vlg3 may have assumed a 'vasa-like' role in schistosome stem cell maintenance (Tsai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation to Tsai et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "78b89abb-6d8f-4776-aae0-2f1efeb46f15",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C99",
+      "claim": "vasa/PL10 homologs in monogenean flatworms are essential for germline development.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, vasa/PL10 homologs in monogenean flatworms, which also lack vasa, are essential for germline development (Ohashi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ohashi et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "feeebfaf-7a22-4a13-b5e5-4aa1ddfdf2c9",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C100",
+      "claim": "Conservation at both the cellular and molecular levels suggests an ancient role for these genes in regulating stem cell populations in flatworms.",
+      "claim_type": "EXPLICIT",
+      "source": "This conservation at both the cellular and molecular levels suggests an ancient role for these genes in regulating stem cell populations in flatworms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "c134c3e6-258c-4682-ba1b-70efce8f229c",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C101",
+      "claim": "Neoblast-driven developmental programs inherited from free-living ancestors may have enabled the evolution of complex trematode life cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of these observations, it is plausible to suggest that neoblast-driven developmental programs inherited from their free-living ancestors may have enabled the evolution of complex trematode life cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the evolutionary implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "08702a7d-d7a8-4ccf-8d56-199fd8176b93",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C102",
+      "claim": "Pluripotent cells may help worms adapt successfully to obligate parasitism by enabling both rapid expansion of an infective population and long-term tissue maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "These pluripotent cells may help the worms adapt successfully to obligate parasitism, by enabling both rapid expansion of an infective population and long-term tissue maintenance in the hostile environments within their intermediate and definitive hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the adaptive significance of these cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9a6da1f0-3c3c-448c-a554-d3e0a5057a8f",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C103",
+      "claim": "In Echinostoma, proliferating germinal cells are present as two morphologically distinguishable populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealing the existence of two germinal cell subpopulations (nanos-2+ and nanos-2\u2212 cells) are reminiscent of observations in some other trematode species, in particular Echinostoma. In these parasites, proliferating germinal cells are present as two morphologically distinguishable populations (Galaktionov and Dobrovolskij, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Galaktionov and Dobrovolskij, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "6c7f8221-8e98-42cd-983f-ebc6af4be33a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C104",
+      "claim": "In Echinostoma, one germinal cell population was speculated to be the most 'undifferentiated' cell type, whereas the other was thought to have more restricted developmental potential.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these populations, smaller in cell size, was speculated to be the most 'undifferentiated' cell type, whereas the other was thought to have more restricted developmental potential and enter embryogenesis directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation from previous studies on Echinostoma.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "36f65455-f066-41d3-9de8-827dd0466972",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C105",
+      "claim": "Morphological heterogeneity was not observed in schistosome germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this morphological heterogeneity was not observed in schistosomes (Pan, 1980), our results uncovered molecular heterogeneity in these germinal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pan, 1980 and the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "dbc96a87-8c6d-4f01-9b45-b37eb91ad528",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C106",
+      "claim": "The observation that germinal cells expressing nanos-2 exhibit slower cell-cycle kinetics is consistent with the conserved role of nanos in lengthening the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that germinal cells expressing nanos-2 exhibit slower cell-cycle kinetics is consistent with the conserved role of nanos in lengthening the cell cycle by repressing mitotic transcripts in primordial germ cells from many animals (Juliano et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Juliano et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "5bd7da9b-0c77-4829-b166-0aaa5a96a4a7",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C107",
+      "claim": "nanos-2 is expressed in germ cells in schistosome adult gonads.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with our observations that nanos-2 is also expressed in germ cells in schistosome adult gonads (Wang and Newmark, unpublished) as well as adult somatic stem cells (Collins et al., 2013), it is reasonable to expect the nanos-2+ cells may be more totipotent or germ cell-like, whereas the nanos-2\u2212 germinal cells may be more primed towards somatic fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by unpublished data from Wang and Newmark.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "7ea046f4-6be5-4e1c-8b3f-3ed08a290b68",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C108",
+      "claim": "nanos-2 is expressed in adult somatic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with our observations that nanos-2 is also expressed in germ cells in schistosome adult gonads (Wang and Newmark, unpublished) as well as adult somatic stem cells (Collins et al., 2013), it is reasonable to expect the nanos-2+ cells may be more totipotent or germ cell-like, whereas the nanos-2\u2212 germinal cells may be more primed towards somatic fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Collins et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "133601a5-f1a0-4a21-a99e-f564698333dd",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C109",
+      "claim": "nanos-2+ cells may be more totipotent or germ cell-like, whereas nanos-2\u2212 germinal cells may be more primed towards somatic fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with our observations that nanos-2 is also expressed in germ cells in schistosome adult gonads (Wang and Newmark, unpublished) as well as adult somatic stem cells (Collins et al., 2013), it is reasonable to expect the nanos-2+ cells may be more totipotent or germ cell-like, whereas the nanos-2\u2212 germinal cells may be more primed towards somatic fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the expression patterns and proliferation kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "769e12cf-e412-4457-baba-57a821e1995f",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C110",
+      "claim": "Germinal cells in schistosome intramolluscan development are proliferative totipotent stem cells that directly undergo embryogenesis in the absence of fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide an initial molecular description of germinal cells in schistosome intramolluscan development. Based on the classic literature, the biology of these cells is quite unique: proliferative totipotent stem cells that directly undergo embryogenesis in the absence of fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on classic literature and the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "c3541211-a41e-4a65-8c0c-49c9e36a9a0c",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C111",
+      "claim": "Despite their unique developmental program, germinal cells possess a molecular signature similar to that of neoblasts in free-living flatworms and stem cells from diverse organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, in spite of this unique developmental program, these cells possess a molecular signature similar to that of neoblasts in free-living flatworms, as well as stem cells from diverse organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparative transcriptional profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "7b1f751a-bb6d-4ec1-ab7e-91d261f4f831",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "claim_id": "C112",
+      "claim": "The conserved molecular context may lead to strategies for intervening and blocking the transmission of schistosomiasis.",
+      "claim_type": "EXPLICIT",
+      "source": "This conserved molecular context opens access to understanding these cells, and may lead to strategies for intervening and blocking the transmission of the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "26e191bb-ffc3-4f92-ae56-d8484048cfb6",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "POPO-1 staining specifically labels germinal cells throughout schistosome larval development. The dye distinguishes RNA-rich germinal cells from somatic cells by strongly staining their nucleolus and cytoplasm, enabling tracking of these cells from miracidia (10-20 cells) through various sporocyst stages to cercariae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31, C34-C35 are well-supported by imaging data (Figures 1B-H) and citation to Pan, 1980. The morphological characterization and POPO-1 staining pattern are consistently demonstrated across multiple developmental stages with clear visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vitro transformation of miracidia to sporocysts triggers a sharp developmental transition at approximately 20 hours post-transformation, initiating germinal cell proliferation. EdU labeling shows few proliferating cells before 20 hours, 1-2 clusters at 20-24 hours, and massive proliferation by 48-64 hours, tripling sporocyst size within 3 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C42 are strongly supported by EdU incorporation data (Figure 2A) showing temporal dynamics of proliferation onset. The quantitative observations and timing are consistent with cited prior work (Schutte, 1974) and provide clear evidence for the developmental transition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "841916eb-0c90-4a1e-831f-60df11ac31bf",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Transcriptional profiling reveals that sporocyst germinal cells share substantial molecular signatures with planarian neoblasts. Of 1662 genes upregulated in sporocysts, approximately 30% (581 genes) share similarity with neoblast-enriched transcripts, and 331 orthologs (20%) overlap between the datasets, with 96.5% of neoblast-enriched orthologs expressed in sporocysts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50, C55 are well-supported by RNAseq data (Figure 2B, Table 1, Supplementary files). The comparative transcriptomics analysis uses appropriate bioinformatic methods (reciprocal BLAST, e-value thresholds) and provides quantitative evidence for molecular conservation between germinal cells and neoblasts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "02dd5555-cc55-46b5-9f19-c2ac71482ec9",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Eleven of 37 DEAD-box helicases in the S. mansoni genome are upregulated in sporocysts, including three vasa/PL10 homologs. The conserved germinal cell-enriched genes contain druggable targets (cyclophilin, adenosylhomocysteinase, transketolase), suggesting germinal cells could be a vulnerable point for blocking schistosome propagation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C53 are supported by RNAseq data, but claims C56-C57 about therapeutic potential are speculative. While druggable targets are identified (citation to Crowther et al., 2010), no experimental validation of drug efficacy against germinal cells is provided. The therapeutic speculation requires additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "acafd64f-dd9d-4b3f-8b37-759d5461e68d",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ago2-1 and vlg-3 are expressed preferentially in proliferative germinal cells. Following a 24-hour EdU pulse, more than 95% of EdU+ cells expressed ago2-1, approximately 90% of ago2-1+ cells incorporated EdU, and similar patterns were observed for vlg-3 co-expression with cell cycle markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are strongly supported by FISH and EdU labeling data (Figures 3A-B). The quantitative co-localization analysis provides clear evidence that these post-transcriptional regulators mark proliferating germinal cells, with specific cell counts provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "5e611057-c722-432d-98c8-3b834247336a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Two distinct germinal cell populations exist: nanos-2+ and nanos-2\u2212 cells with different proliferation kinetics. The nanos-2\u2212 population expands faster (doubling time approximately 24 hours) and shows higher EdU incorporation (approximately 70% at 4 hours) compared to nanos-2+ cells (approximately 5% at 4 hours). Pulse-chase experiments indicate nanos-2\u2212 cells do not differentiate into nanos-2+ cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C74 are well-supported by FISH and EdU pulse-chase experiments (Figures 4A-D). The differential proliferation kinetics are quantitatively demonstrated with multiple time points. The pulse-chase experiment (C71-C72) provides evidence against a linear differentiation model, though alternative hierarchical relationships are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "7149582e-c6a3-4e1f-8a09-ce78ff07025f",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNAi functional analysis reveals differential requirements for germinal cell maintenance. vlg-3 is required for both nanos-2+ and nanos-2\u2212 populations, while ago2-1 is specifically required for nanos-2\u2212 cells. Both knockdowns result in reduced proliferation and downregulation of cell cycle-associated transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 are strongly supported by RNAi experiments with EdU labeling, FISH, and qPCR validation (Figures 5B-F). The differential phenotypes are clearly demonstrated, though the inference that remaining nanos-2+ cells after ago2-1 RNAi fail to proliferate (C80) could benefit from additional time-course analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "4a4e9ae0-2702-419e-ac8a-4b6693d0fc03",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "fgfrA is upregulated in sporocysts and required specifically for nanos-2\u2212 germinal cells. RNAi of fgfrA blocks germinal cell proliferation and reduces ago2-1 and vlg-3 expression while not affecting nanos-2 expression, similar to ago2-1 RNAi phenotype, suggesting FGF signaling controls stem cell proliferation in both larval and adult schistosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C88 are well-supported by qPCR, EdU labeling, and RNAi data (Figures 6A-C, 5D). The parallel phenotypes between fgfrA and ago2-1 RNAi provide strong evidence for their function in the same cell population. The comparison to adult stem cells (C88) is reasonable given the citation to Collins et al., 2013.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "de0a89fa-32d5-44a5-b0b8-27adcd7e07d2",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Germinal cells possess molecular signatures similar to stem cells from diverse organisms, particularly planarian neoblasts and adult schistosome somatic stem cells, despite their unique developmental program of asexual reproduction through polyembryony.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C89, C91, C111 are supported by the comprehensive transcriptional profiling and functional studies presented. The molecular conservation is demonstrated through multiple lines of evidence (RNAseq overlap, conserved gene functions), though the comparison relies partly on prior characterization of adult stem cells (Collins et al., 2013).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "2c171da9-7af1-41ec-af61-440dd5abb76a",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "An ancient stem cell-based developmental program may have enabled the evolution of complex parasitic flatworm life cycles. Conservation at cellular and molecular levels suggests neoblast-driven programs inherited from free-living ancestors enabled adaptation to obligate parasitism through rapid clonal expansion and long-term tissue maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C90, C100-C102 are evolutionary speculations based on molecular conservation data. While the conservation is well-documented, the evolutionary inferences about ancestral programs and adaptive significance lack direct phylogenetic or experimental evidence. These remain plausible hypotheses requiring additional comparative and evolutionary studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "8da5e7b8-15ce-4e37-901d-473c9954bb61",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The slower cell-cycle kinetics of nanos-2+ germinal cells is consistent with the conserved role of nanos in lengthening the cell cycle. nanos-2 expression in adult germ cells and somatic stem cells suggests nanos-2+ cells may be more totipotent or germ cell-like, while nanos-2\u2212 cells may be primed toward somatic fates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C106 is supported by citation to Juliano et al., 2010 and the proliferation data. Claims C107-C108 cite unpublished data and Collins et al., 2013. Claim C109 is speculative about cell fate potential without direct lineage tracing or functional validation. The hypothesis is reasonable but requires additional experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "33322616-c867-4571-a216-dacd9d392773",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Schistosomes infect 230 million people worldwide, causing approximately 250,000 deaths annually. Their transmission relies on a complex life cycle alternating between asexual amplification in snail intermediate hosts (producing thousands of cercariae from single miracidia) and sexual reproduction in mammalian definitive hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C18 describe established knowledge about schistosome epidemiology and life cycle, supported by appropriate citations (van der Werf et al., 2003; Clark, 1974; Shoop, 1988; and others). These provide essential context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Historical studies established that germinal cells are totipotent stem cells that undergo polyembryony\u2014multiple rounds of proliferation and de novo embryogenesis without fertilization. Serial transplantation experiments demonstrated continuous propagation, and these cells were recognized by stem cell-like morphology and rapid cycling kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27, C110 summarize prior work on germinal cells, appropriately cited (Olivier and Mao, 1949; Cort et al., 1954; Whitfield and Evans, 1983; Schutte, 1974; Pan, 1980; Jourdane and Th\u00e9ron, 1980). This provides historical context and establishes the foundation for the current molecular characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In planarians, PRC2 components, ago2, fgfr, bruli, and vasa are enriched in neoblasts and required for their self-renewal and maintenance. Schistosomes lack true vasa orthologs, but vasa/PL10 homologs may have assumed vasa-like roles, as demonstrated in monogenean flatworms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C99 summarize established knowledge about planarian neoblasts and flatworm vasa homologs, appropriately cited (Wagner et al., 2012; \u00d6nal et al., 2012; Rouhana et al., 2010; Li et al., 2011; Guo et al., 2006; Tsai et al., 2013; Ohashi et al., 2007). This provides comparative context for interpreting schistosome germinal cell data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "9eb665c2-ff73-4468-ae5c-f7afd136ef83",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In other trematode species like Echinostoma, two morphologically distinguishable germinal cell populations exist, with one speculated to be more undifferentiated. While morphological heterogeneity was not observed in schistosomes, the current study uncovered molecular heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 appropriately cite prior work on Echinostoma (Galaktionov and Dobrovolskij, 2003) and schistosomes (Pan, 1980) to contextualize the discovery of molecular heterogeneity. The comparison strengthens the interpretation of nanos-2+/\u2212 populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "f9043a8d-0097-4d79-b1a2-afae65316bc2",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The overlapping gene set between sporocysts and neoblasts may contain core genes essential for stem cell proliferation and maintenance. The conserved molecular context may lead to strategies for intervening and blocking schistosome transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51, C54, C112 are speculative statements about potential core stem cell genes and therapeutic applications. While the molecular conservation is well-documented, these claims lack experimental validation. The speculation about intervention strategies (C112) requires demonstration of efficacy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    },
+    {
+      "id": "f4840bf1-72d1-4e25-a23d-8cfe102147a8",
+      "content_id": "07f795cd-51b8-4185-82a7-1e8bf2bc48b4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The compact cluster of germinal cells in cercariae is presumably saved for the next stage of development after penetration into mammalian hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C36 is speculative, supported only by citation to Dorsey et al., 2002. While the observation of cell clustering is documented (Figure 1H), the functional significance for subsequent development lacks direct experimental evidence in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:48.593401Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6d29713a-f447-471c-91ba-5d1654f1a0b9",
+      "result_id": "26e191bb-ffc3-4f92-ae56-d8484048cfb6"
+    },
+    {
+      "claim_id": "eb958458-2fd5-44b2-8724-ca3d6421302b",
+      "result_id": "26e191bb-ffc3-4f92-ae56-d8484048cfb6"
+    },
+    {
+      "claim_id": "4a0b44e8-30e5-47fe-92a9-ff3477a5fe26",
+      "result_id": "26e191bb-ffc3-4f92-ae56-d8484048cfb6"
+    },
+    {
+      "claim_id": "e825240b-a253-4b34-a586-8b91306ad73e",
+      "result_id": "26e191bb-ffc3-4f92-ae56-d8484048cfb6"
+    },
+    {
+      "claim_id": "dd98a336-ff8b-4c72-b85c-15236f3135a4",
+      "result_id": "26e191bb-ffc3-4f92-ae56-d8484048cfb6"
+    },
+    {
+      "claim_id": "02daf756-3b8e-4f63-9640-25783ad39efe",
+      "result_id": "26e191bb-ffc3-4f92-ae56-d8484048cfb6"
+    },
+    {
+      "claim_id": "f7413bc9-5c88-459c-9bc0-dfbff3d5ebb9",
+      "result_id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5"
+    },
+    {
+      "claim_id": "aebc2b66-1504-4e74-8933-c06a0717aaaf",
+      "result_id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5"
+    },
+    {
+      "claim_id": "839f061a-7d89-458d-8976-b64f7d37647b",
+      "result_id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5"
+    },
+    {
+      "claim_id": "98f616e5-54bd-48ce-b4ff-6bf06db6776f",
+      "result_id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5"
+    },
+    {
+      "claim_id": "a776b3b2-2275-4b67-bdfe-58803842b089",
+      "result_id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5"
+    },
+    {
+      "claim_id": "e6bfd016-e848-4179-8beb-16f0f475e41f",
+      "result_id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5"
+    },
+    {
+      "claim_id": "2dba77d3-fb8e-40a8-9b73-0730cc35465c",
+      "result_id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5"
+    },
+    {
+      "claim_id": "de4dac91-f5d5-4299-a99b-7efa934b0e1c",
+      "result_id": "9cd8a602-0dca-460e-a3a8-101a719a0ae5"
+    },
+    {
+      "claim_id": "8b209bb2-1baf-4e7f-8401-cf470636d360",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "b9e6a1b5-a026-4891-934c-d400f3cad1c3",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "d7c796a7-15ab-4e57-873b-458299fea038",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "11d3ef9c-8439-48a1-9ddf-34a229c475a5",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "78047b8e-0f76-410d-bc4e-e52d23b62cf3",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "86717f97-a95d-4831-a970-901d0173fb27",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "9035e1c1-df6b-44e9-b24e-7d1a1a0bdff0",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "60083de3-9f4e-46de-a553-612f367dd74f",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "8c5f35b3-519d-45cb-bebe-39e2ca1d69e4",
+      "result_id": "841916eb-0c90-4a1e-831f-60df11ac31bf"
+    },
+    {
+      "claim_id": "7ba92ba0-cd6f-482f-8913-593fecafee76",
+      "result_id": "02dd5555-cc55-46b5-9f19-c2ac71482ec9"
+    },
+    {
+      "claim_id": "a3c21063-98ad-4af6-8cf0-4b425f9cdc59",
+      "result_id": "02dd5555-cc55-46b5-9f19-c2ac71482ec9"
+    },
+    {
+      "claim_id": "4e4db18e-d315-43f3-8cd9-5c4f30a6ac67",
+      "result_id": "02dd5555-cc55-46b5-9f19-c2ac71482ec9"
+    },
+    {
+      "claim_id": "1a67d1f9-f4cd-4fd0-b290-54456f04fc9c",
+      "result_id": "02dd5555-cc55-46b5-9f19-c2ac71482ec9"
+    },
+    {
+      "claim_id": "9bbf8388-af16-48c7-9b86-00856781fcc6",
+      "result_id": "acafd64f-dd9d-4b3f-8b37-759d5461e68d"
+    },
+    {
+      "claim_id": "6cd8e398-009c-424e-a0c9-ddfbcb5bd456",
+      "result_id": "acafd64f-dd9d-4b3f-8b37-759d5461e68d"
+    },
+    {
+      "claim_id": "0b18a2cd-e393-4501-a6cc-4e72b31e2a5d",
+      "result_id": "acafd64f-dd9d-4b3f-8b37-759d5461e68d"
+    },
+    {
+      "claim_id": "a4da3ba8-dae4-4cf2-9dd5-6e2662a26f28",
+      "result_id": "acafd64f-dd9d-4b3f-8b37-759d5461e68d"
+    },
+    {
+      "claim_id": "81e8af14-299f-4918-aa62-ef689ff45f0a",
+      "result_id": "acafd64f-dd9d-4b3f-8b37-759d5461e68d"
+    },
+    {
+      "claim_id": "c9e8c246-3eaa-4b81-abfa-a5e9c94e3fb8",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "c0b45e01-779f-48de-9b8c-f167edd78b99",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "d242c3d9-50ab-48de-920a-05f842a1214a",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "8dc0b639-ccc2-44ba-adbf-6344d88d0817",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "2ad3c2da-eb94-4284-9165-534c301320ff",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "5f9b77f1-a048-45be-903c-92258cdab8ec",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "1401a753-e050-4c76-9de4-1d71b74fbe55",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "33a17837-ea7f-4aeb-ac66-23e80e5d80cd",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "425c310c-382b-477e-87ef-72d866e337c9",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "5a64d04b-326f-4039-9eea-cd0697abf14b",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "d0b73359-2268-4ec0-bde2-4cf1f66af339",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "c046db6d-c17e-41bf-9de0-3c3ee6dfea70",
+      "result_id": "5e611057-c722-432d-98c8-3b834247336a"
+    },
+    {
+      "claim_id": "aaa26378-3147-47d0-8b6d-8a766c793499",
+      "result_id": "7149582e-c6a3-4e1f-8a09-ce78ff07025f"
+    },
+    {
+      "claim_id": "f46defa5-53a0-435b-a1c3-5f10bcb8ffed",
+      "result_id": "7149582e-c6a3-4e1f-8a09-ce78ff07025f"
+    },
+    {
+      "claim_id": "3a1ffc0f-8622-488c-b0c8-6f68686babae",
+      "result_id": "7149582e-c6a3-4e1f-8a09-ce78ff07025f"
+    },
+    {
+      "claim_id": "c2ffd2f6-93d9-477e-a99a-8600545b5b8e",
+      "result_id": "7149582e-c6a3-4e1f-8a09-ce78ff07025f"
+    },
+    {
+      "claim_id": "def8b5f5-c7d6-4bf4-8b9c-bc10a762796d",
+      "result_id": "7149582e-c6a3-4e1f-8a09-ce78ff07025f"
+    },
+    {
+      "claim_id": "631a8d04-dc01-4681-8a44-98c2044b5fbb",
+      "result_id": "7149582e-c6a3-4e1f-8a09-ce78ff07025f"
+    },
+    {
+      "claim_id": "d0c655b0-69cf-4a42-82c9-ab59df208fee",
+      "result_id": "7149582e-c6a3-4e1f-8a09-ce78ff07025f"
+    },
+    {
+      "claim_id": "23b9f412-9be8-4082-9936-1d3182749236",
+      "result_id": "4a4e9ae0-2702-419e-ac8a-4b6693d0fc03"
+    },
+    {
+      "claim_id": "1f5af6b9-2026-4f71-a48e-51628e17df3c",
+      "result_id": "4a4e9ae0-2702-419e-ac8a-4b6693d0fc03"
+    },
+    {
+      "claim_id": "5f14f96b-960a-457b-be47-e2974888c57d",
+      "result_id": "4a4e9ae0-2702-419e-ac8a-4b6693d0fc03"
+    },
+    {
+      "claim_id": "679d1693-3a99-4c82-b677-38a2e1665864",
+      "result_id": "4a4e9ae0-2702-419e-ac8a-4b6693d0fc03"
+    },
+    {
+      "claim_id": "dc2f1977-9a2b-45ce-9cae-e27a5e38ca63",
+      "result_id": "4a4e9ae0-2702-419e-ac8a-4b6693d0fc03"
+    },
+    {
+      "claim_id": "3f3d4008-3206-4b9e-8791-dbf5e5e22c32",
+      "result_id": "4a4e9ae0-2702-419e-ac8a-4b6693d0fc03"
+    },
+    {
+      "claim_id": "c3dfcd19-d9c3-459d-bdcc-5611089e8766",
+      "result_id": "4a4e9ae0-2702-419e-ac8a-4b6693d0fc03"
+    },
+    {
+      "claim_id": "6b3029a1-2b52-4459-9a45-03aae1b5888a",
+      "result_id": "de0a89fa-32d5-44a5-b0b8-27adcd7e07d2"
+    },
+    {
+      "claim_id": "80277338-0105-4a41-b848-8c346f1cefb9",
+      "result_id": "de0a89fa-32d5-44a5-b0b8-27adcd7e07d2"
+    },
+    {
+      "claim_id": "9a86270e-1c19-49eb-8170-9cf8bdd37314",
+      "result_id": "de0a89fa-32d5-44a5-b0b8-27adcd7e07d2"
+    },
+    {
+      "claim_id": "c3541211-a41e-4a65-8c0c-49c9e36a9a0c",
+      "result_id": "de0a89fa-32d5-44a5-b0b8-27adcd7e07d2"
+    },
+    {
+      "claim_id": "a29f946b-1b98-4701-b04d-ba35c13a3bea",
+      "result_id": "2c171da9-7af1-41ec-af61-440dd5abb76a"
+    },
+    {
+      "claim_id": "2cabfbe2-07bc-40b4-858b-11c47183e949",
+      "result_id": "2c171da9-7af1-41ec-af61-440dd5abb76a"
+    },
+    {
+      "claim_id": "feeebfaf-7a22-4a13-b5e5-4aa1ddfdf2c9",
+      "result_id": "2c171da9-7af1-41ec-af61-440dd5abb76a"
+    },
+    {
+      "claim_id": "c134c3e6-258c-4682-ba1b-70efce8f229c",
+      "result_id": "2c171da9-7af1-41ec-af61-440dd5abb76a"
+    },
+    {
+      "claim_id": "08702a7d-d7a8-4ccf-8d56-199fd8176b93",
+      "result_id": "2c171da9-7af1-41ec-af61-440dd5abb76a"
+    },
+    {
+      "claim_id": "dbc96a87-8c6d-4f01-9b45-b37eb91ad528",
+      "result_id": "8da5e7b8-15ce-4e37-901d-473c9954bb61"
+    },
+    {
+      "claim_id": "5bd7da9b-0c77-4829-b166-0aaa5a96a4a7",
+      "result_id": "8da5e7b8-15ce-4e37-901d-473c9954bb61"
+    },
+    {
+      "claim_id": "7ea046f4-6be5-4e1c-8b3f-3ed08a290b68",
+      "result_id": "8da5e7b8-15ce-4e37-901d-473c9954bb61"
+    },
+    {
+      "claim_id": "133601a5-f1a0-4a21-a99e-f564698333dd",
+      "result_id": "8da5e7b8-15ce-4e37-901d-473c9954bb61"
+    },
+    {
+      "claim_id": "6a9055f1-cde6-42cb-93f9-3d296919fd6d",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "6add30b7-656d-4661-aaa6-2bad0334387a",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "242e59b7-4221-4258-bad0-1546588aa787",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "9287c8f8-b53f-4d17-a669-4a57dfc4a67e",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "5dad6e39-9f86-4e57-9e76-169964ab51d2",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "97cc075b-b017-4d7d-91b9-0b3cbeac4721",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "5a534f8f-2743-44ae-9cb1-59c0f2568eb0",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "9989eaeb-3f15-4c68-8cce-0e45d402b222",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "03f3d482-8bc0-4a71-aae2-da90e1f458bb",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "5fa622b6-cbce-4586-9af4-b3ffc83f0e0a",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "37c1337d-b962-4b30-8870-768f2c432ac9",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "021ce3f8-44fc-4166-a9da-ad9948451240",
+      "result_id": "33322616-c867-4571-a216-dacd9d392773"
+    },
+    {
+      "claim_id": "54228879-a4be-43a9-b0fc-c263cd622b8f",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "01123f13-f0c6-4524-8c5c-1d98b071e29c",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "57320fec-81f7-4d5a-951d-c92352c7b343",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "401e0ff7-1a62-4f66-b53a-b4ccb41926f4",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "2fb18ab6-30e6-45ec-8ad8-44018dc64528",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "15c2dbab-b0a8-421f-b9ae-75455dc4cc48",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "dcd45bdd-79ef-480f-bf2b-a17db7cf4d03",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "c00ef8a7-ff6f-4b6c-a350-7d750ca3ff3e",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "31c44117-a3a6-43f0-ae25-3b97d60322b8",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "769e12cf-e412-4457-baba-57a821e1995f",
+      "result_id": "b637a879-ca1b-4b0f-8d60-c95ce31bb284"
+    },
+    {
+      "claim_id": "faa6d026-5775-4730-93ed-040e1fad3166",
+      "result_id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b"
+    },
+    {
+      "claim_id": "73d9283f-ff45-49b1-b1c8-0a9908bbad5a",
+      "result_id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b"
+    },
+    {
+      "claim_id": "8bf2b9dc-8259-4ca8-9519-09fbd3b24bbc",
+      "result_id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b"
+    },
+    {
+      "claim_id": "22050234-9e78-4f95-af1c-ec831ea850e5",
+      "result_id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b"
+    },
+    {
+      "claim_id": "53fac831-47c6-4ec3-8c0b-f3cc44cd6523",
+      "result_id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b"
+    },
+    {
+      "claim_id": "2e5df879-c7d6-4428-938e-509c3241e2d2",
+      "result_id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b"
+    },
+    {
+      "claim_id": "8ec0b1bf-299c-408d-9cf6-90081d078f89",
+      "result_id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b"
+    },
+    {
+      "claim_id": "78b89abb-6d8f-4776-aae0-2f1efeb46f15",
+      "result_id": "670b4cf0-2cdf-4c19-8b47-9d8e3fdf239b"
+    },
+    {
+      "claim_id": "9a6da1f0-3c3c-448c-a554-d3e0a5057a8f",
+      "result_id": "9eb665c2-ff73-4468-ae5c-f7afd136ef83"
+    },
+    {
+      "claim_id": "6c7f8221-8e98-42cd-983f-ebc6af4be33a",
+      "result_id": "9eb665c2-ff73-4468-ae5c-f7afd136ef83"
+    },
+    {
+      "claim_id": "36f65455-f066-41d3-9de8-827dd0466972",
+      "result_id": "9eb665c2-ff73-4468-ae5c-f7afd136ef83"
+    },
+    {
+      "claim_id": "d5f109ac-348f-44cd-b830-d4a89cee82e9",
+      "result_id": "f9043a8d-0097-4d79-b1a2-afae65316bc2"
+    },
+    {
+      "claim_id": "8dcecd55-51c1-4f3a-911f-4d7c7b5b8da2",
+      "result_id": "f9043a8d-0097-4d79-b1a2-afae65316bc2"
+    },
+    {
+      "claim_id": "7b1f751a-bb6d-4ec1-ab7e-91d261f4f831",
+      "result_id": "f9043a8d-0097-4d79-b1a2-afae65316bc2"
+    },
+    {
+      "claim_id": "86f99a57-452f-4719-aefb-b4583c789f79",
+      "result_id": "f4840bf1-72d1-4e25-a23d-8cfe102147a8"
+    }
+  ],
+  "comparisons": []
+}

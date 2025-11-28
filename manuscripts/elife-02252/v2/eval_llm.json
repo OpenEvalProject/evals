@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Epistasis is defined as any deviation from the expected phenotype predicted by combining the effects of individual alleles or mutations, a concept introduced by Bateson and formalized by Fisher.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 provide historical context and a formal definition of epistasis, both supported by appropriate citations (Bateson 1909, Fisher 1918, Phillips 2008). These are well-established definitions in genetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Large-scale genetic interaction studies in yeast and C. elegans have revealed that most genes have few interactions while a small fraction shows many interactions, with approximately 170,000 interactions known among 5.4 million gene pairs in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 describe prior work on epistasis in model organisms, all supported by appropriate citations. These establish the context and precedent for the current study's approach in plants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Leaf growth in Arabidopsis proceeds through cell proliferation followed by cell expansion phases, with at least five parameters contributing to final leaf size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 describe established knowledge about leaf development, supported by citations to Donnelly et al. 1999, Andriankaja et al. 2012, and Gonzalez et al. 2012. This provides biological context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Prior to this study, only one case of positive epistasis in Arabidopsis leaf growth had been described, involving DA1 and EOD1/BIG BROTHER mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 establishes the novelty of the current work by noting the limited prior knowledge of epistasis in Arabidopsis leaf growth, supported by citation to Li et al. 2008.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors performed a combinatorial screen with 13 transgenic Arabidopsis lines showing increased leaf size, producing 102 heterozygous combinations (78 paired, 24 controls), with 61 combinations analyzed using 16 plants per genotype in three independent repeats, measuring 56,505 data points at 21 days after stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C15-C20 describe the experimental design with specific numbers and methodology. The approach is clearly documented with appropriate sample sizes and replication. The experimental design appears sound for detecting epistatic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C21",
+      "C25",
+      "C26",
+      "C36"
+    ],
+    "result": "From 61 analyzed combinations, 39% showed rosette sizes exceeding both heterozygous controls and wild-type, with 38% showing positive epistasis (16 synergistic, 8 additive) and 23% showing negative epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C21, C25, C26, and C36 present the main quantitative findings with consistent percentages across claims. Statistical significance is reported (FDR <0.05), and the numbers are internally consistent. The mixed model analysis appears appropriate for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C24",
+      "C37",
+      "C38"
+    ],
+    "result": "Three genes (SAMBA, BRI1, and SAUR19) were highly connected in synergistic combinations, showing positive epistasis in the majority of combinations they participated in, suggesting they play central roles in leaf growth regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C24, C37, and C38 identify hub genes in the epistatic network. The data support the identification of these highly connected genes, though C38's inference about 'central role' is somewhat speculative given the limited scale. The conclusion is reasonable but should be considered preliminary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C23",
+      "C58",
+      "C69"
+    ],
+    "result": "Positive epistasis was observed both between genes with similar modes of action and between genes affecting distinct processes, with nearly half of synergistic combinations arising from pairing cell proliferation genes with cell expansion genes (particularly SAUR19OE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C23, C58, and C69 describe patterns in the epistatic interactions. The observation that cell proliferation and expansion genes combine well is supported by the data and represents an important biological insight about compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The strongest synergistic combinations (BRI1OE-eod1-2, BRI1OE-EXP10OE, BRI1OE-SAUR19OE, GRF5OE-SAUR19OE, BRI1OE-da1-1, ami-ppd-SAUR19OE, samba-eod1-2) showed positive effects on all rosette leaves and were at least 20% larger than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 identifies specific strong synergistic combinations with quantitative thresholds. The data in the figures support these specific combinations showing consistent effects across all leaves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "23% of gene combinations resulted in smaller rosettes than expected, showing negative epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 reports negative epistatic interactions. This is consistent with the overall 61% showing epistasis (38% positive + 23% negative), and the statistical analysis appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Reciprocal crosses of three selected synergistic combinations (SAUR19OE-ami-ppd, EXP10OE-BRI1OE, SAUR19OE-BRI1OE) confirmed the synergistic effects and excluded maternal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 describes validation experiments. The reciprocal crosses are an appropriate control for maternal effects, and the confirmation strengthens the main findings. The data in Figure 3A and supplements support this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Homozygous ami-ppd-SAUR19OE and samba-eod1-2 plants confirmed synergistic effects with rosette sizes 24% and 8% larger than expected, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 presents validation in homozygous lines. The data in Figure 3B and supplements support these specific quantitative findings, confirming that the epistatic effects persist in homozygous state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The da1-1-SAUR19OE combination produced among the largest plants (61% larger than wild-type) but did not show synergistic enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 distinguishes between large size and synergistic epistasis. This is an important distinction showing that additive effects can produce very large plants without true synergy. The data support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Cellular analysis of ami-ppd-SAUR19OE revealed that SAUR19OE increases cell size while ami-ppd increases cell number, and their combination shows increased cell number (less than ami-ppd alone) with increased cell area (similar to SAUR19OE), explaining the synergistic effect through enhanced expansion of the numerous small cells from PPD downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide mechanistic insight through cellular analysis. The data in Figure 4 support these cellular measurements. The interpretation (C35) that SAUR19OE allows expansion of small cells from ami-ppd is logical and supported by the quantitative data, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "BRI1 is a brassinosteroid receptor crucial for leaf growth, highly expressed during early development, and its overexpression produces positive epistatic effects in multiple genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe BRI1's known function and expression, supported by appropriate citations. This contextualizes why BRI1 might be a hub gene in the epistatic network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "SAUR19 belongs to the auxin-induced SAUR gene family and acts as a positive regulator of cell expansion, likely through modulation of auxin transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 describe SAUR19's known function, supported by citations to Hagen and Guilfoyle 2002 and Spartz et al. 2012. This provides context for its role in the epistatic network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The findings suggest that alterations in BR or auxin signaling could potentiate growth-promoting gene effects, consistent with known interactions between BR and auxin at multiple levels including synthesis, transport, signaling, and transcription, with synergistic induction of common targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 connect the experimental findings to known hormone interactions. C44 is an inference from the data, while C45-C50 cite established knowledge. The connection is logical but somewhat speculative regarding the specific mechanism in these combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Synergistic effects were observed between genes in the same biological process (AN3OE-GRF5OE, BRI1OE-ami-ppd) and between functionally related genes (PPD and BRI1 both affecting stomatal development), consistent with patterns observed in yeast studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 connect specific synergistic combinations to known functional relationships. The data support these specific combinations showing synergy, and the functional connections are supported by citations. This provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Combining genes affecting distinct growth processes (proliferation and expansion) appears to compensate for negative effects observed in single perturbations, allowing double transgenic lines to acquire benefits from both genes, as seen with ami-ppd-SAUR19OE, GRF5OE-SAUR19OE, and jaw-D-SAUR19OE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 propose a compensation mechanism for synergy. The cellular data (Figure 4) support this interpretation for ami-ppd-SAUR19OE. The inference (C62) is logical but somewhat speculative. The pattern appears consistent across multiple combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Negative epistasis in combinations like GRF5-jaw-D may result from overstimulation of cell division affecting overall growth, similar to effects observed with E2Fa and DPa overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 proposes a mechanism for negative epistasis based on analogy to prior work (De Veylder et al. 2002). However, no direct cellular or molecular evidence is provided for this specific mechanism in the GRF5-jaw-D combination. The inference is plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The findings suggest that heterosis could originate from differences in expression of growth-promoting genes in natural variants leading to synergistic effects in hybrids, with heterosis potentially arising from assembled effects of various pairwise gene combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C67 connect the findings to heterosis. C64-C65 cite established knowledge about heterosis, but C66-C67 are speculative extrapolations from the transgenic data to natural variation and heterosis. No direct evidence for this connection is provided in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Gene combinations show great promise for successfully engineering quantitative traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a general conclusion supported by the demonstration that multiple gene combinations produce larger plants than single perturbations. This is a reasonable inference from the data, though practical application would require additional validation.",
+    "result_type": "MAJOR"
+  }
+]

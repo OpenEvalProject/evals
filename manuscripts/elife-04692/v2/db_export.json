@@ -1,0 +1,1773 @@
+{
+  "submission": {
+    "id": "eb11e7a3-9201-43b8-9c4c-9b743521e441",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:49:28.450580Z",
+    "updated_at": "2025-11-28T21:49:28.450580Z"
+  },
+  "content": [
+    {
+      "id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "submission_id": "eb11e7a3-9201-43b8-9c4c-9b743521e441",
+      "content_type": "manuscript",
+      "content_text": "# Modelling the contribution of the hypnozoite reservoir to Plasmodium vivax transmission\n\n## Authors\n\n- Michael T White<sup>1</sup> \u2020\n- Stephan Karl<sup>2</sup>\n- Katherine E Battle<sup>4</sup>\n- Simon I Hay<sup>4</sup> ([ORCID: 0000-0002-0611-7272](https://orcid.org/0000-0002-0611-7272))\n- Ivo Mueller<sup>2</sup>\n- Azra C Ghani<sup>1</sup>\n\n### Affiliations\n\n1. MRC Centre for Outbreak Analysis and Modelling, Department of Infectious Disease Epidemiology Imperial College London London United Kingdom\n2. Department of Infection and Immunity Walter and Eliza Hall Institute Melbourne Australia\n3. Department of Medical Biology University of Melbourne Melbourne Australia\n4. Spatial Ecology and Epidemiology Group, Department of Zoology University of Oxford Oxford United Kingdom\n5. Fogarty International Center National Institutes of Health Bethesda United States\n6. Centre de Recerca en Salut Internacional de Barcelona Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nPlasmodium vivax relapse infections occur following activation of latent liver-stages parasites (hypnozoites) causing new blood-stage infections weeks to months after the initial infection. We develop a within-host mathematical model of liver-stage hypnozoites, and validate it against data from tropical strains of P. vivax. The within-host model is embedded in a P. vivax transmission model to demonstrate the build-up of the hypnozoite reservoir following new infections and its depletion through hypnozoite activation and death. The hypnozoite reservoir is predicted to be over-dispersed with many individuals having few or no hypnozoites, and some having intensely infected livers. Individuals with more hypnozoites are predicted to experience more relapses and contribute more to onwards P. vivax transmission. Incorporating hypnozoite killing drugs such as primaquine into first-line treatment regimens is predicted to cause substantial reductions in P. vivax transmission as individuals with the most hypnozoites are more likely to relapse and be targeted for treatment.\n\n## Introduction\n\nThe study of the transmission dynamics of vector-borne diseases such as Plasmodium falciparum malaria has a rich history, with a theoretical foundation based on the Ross-Macdonald models (malERA Consultative Group on Modeling, 2011; Smith et al., 2012; Reiner et al., 2013; Smith et al., 2014), a class of mathematical models describing the transmission of a pathogen between human and vector hosts. In the case of P. falciparum, the parasite has a reservoir in both the human host and the Anopheles mosquito, with transmission occurring when a mosquito takes a blood meal from a human. Ross-Macdonald models have provided insights into the dynamics of P. falciparum transmission resulting in valuable guidance for historical and contemporary malaria control programmes, most notably the large reductions in transmission that are achievable if the lifespan of the mosquito is reduced through vector control (Macdonald, 1952a; Macdonald, 1952b).\n\nIn contrast to the extensive theory of the mathematical epidemiology of P. falciparum malaria (Smith et al., 2012), P. vivax malaria has been comparatively neglected. This is in spite of P. vivax being the geographically most widely distributed species of malaria in the world, causing in the region of 80\u2013300 million clinical episodes every year (Mueller et al., 2009a; Gething et al., 2012). P. falciparum models are not applicable to P. vivax as they fail to account for the reservoir of dormant liver stages (hypnozoites) which give rise to relapsing infections\u2014one of the defining characteristics of the biology and epidemiology of P. vivax (Mueller et al., 2009a). In natural transmission settings relapses are often undistinguishable from re-infections from new mosquito bites or recrudescences of existing blood-stage infections. When the origin of renewed parasitemia following primary P. vivax infection is unknown, it can be classified as a recurrent infection (Battle et al., 2014).\n\nMost existing models of malaria transmission do not account for the additional reservoir of parasites in the liver, but the hypnozoite reservoir has been incorporated into some P. vivax transmission models as a state to denote hypnozoite infection (Ishikawa et al., 2003; Chamchod and Beier, 2013; Roy et al., 2013) or as up to two broods of hypnozoites (Dezoysa et al., 1991). Relapse patterns and their implications for transmission have also been investigated using statistical distributions for the time to first relapse (Lover et al., 2014). Here we advance on existing work by considering how the number of hypnozoites in the liver contributes to patterns of relapse infections and the epidemiology and control of P. vivax.\n\nWhen a P. vivax infected mosquito takes a blood meal from a human, sporozoites are injected into the skin and migrate to the liver, where they invade hepatocytes and develop into either actively dividing schizonts or dormant hypnozoites. The development of actively dividing schizonts may lead to a primary blood-stage infection and potentially clinical malaria (Mueller et al., 2013). Hypnozoites will lie dormant in the liver for weeks to years before activating to initiate new blood-stage infections. The biological mechanisms regulating the activation of hypnozoites remain unknown (Mueller et al., 2009a), although a number of triggers for relapses have been proposed, including fever caused by other pathogens such as P. falciparum (Shanks and White, 2013) and exposure to Anopheles-specific proteins (Hulden and Hulden, 2011).\n\nThere is considerable geographical variation in the timing and frequency of P. vivax relapse infections, with strains from tropical areas having an average time to first relapse of 3\u20136 weeks and long-latency strains from temperate areas relapsing within 6\u20139 months (Lover and Coker, 2013; Battle et al., 2014). Beyond the first relapse, periodic patterns in multiple relapses from a single mosquito bite have been observed (White, 2011). For example, following a single infection with a tropical strain of P. vivax the time until next relapse has been observed to increase with each successive relapse (Berliner et al., 1948; White, 2011). In contrast, temperate strains are associated with a long latency period until first relapse (of the order of 6 months) followed by short intervals between successive relapses (Coatney et al., 1950; Hankey et al., 1953; White, 2011). A descriptive epidemiology of P. vivax relapses will thus require estimation of three key quantities: (i) the time to first relapse, (ii) the number of relapses per primary infection, and (iii) the duration of hypnozoite carriage.\n\nIn this manuscript, a within-host model of hypnozoites in liver hepatocytes is developed to demonstrate that many of the epidemiological patterns of relapse infections can be explained by making the assumption that hypnozoites activate and die at a constant rate. This model is integrated into the existing theory of Ross-Macdonald models to account for the relapse infections characteristic of P. vivax malaria. We use this model to provide qualitative insights into the relative contribution of relapses to P. vivax transmission and illustrate the consequences for controlling P. vivax with vector control and anti-malarial drugs.\n\n## Results\n\n### Within-host relapse model\n\nFigure 1 shows the best fit within-host relapse model to data on time to first relapse infection from three ecological zones with tropical strains of P. vivax: South America, South East Asia and Melanesia (Battle et al., 2014). In each ecological zone, the number of hypnozoites N and the hypnozoite activation rate \u03b1 were correlated (see Figure 1\u2014figure supplement 1). For example, a short time to relapse could be explained by a single fast activating hypnozoite or a large number of slow activating hypnozoites. Longitudinal data where multiple relapses are observed in individuals would allow better estimation of the number of hypnozoites in the liver and the duration of hypnozoite carriage.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig1-v2.jpg)\n\n**Figure 1.:** Time to first relapse infection from the within-host model fitted to data from three ecological zones with tropical strains of P. vivax (Battle et al., 2014). The red curves show the model fits with estimated posterior median parameters.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The likelihood in Equation 12 was sampled using a Metropolis\u2013Hastings Markov Chain Monte Carlo (MCMC) algorithm and the posterior parameter distributions were estimated. 100,000 MCMC iterations were sampled and visually checked for convergence and mixing. The top row shows the MCMC chains. The middle row shows the correlation between pairs of parameters. The bottom row shows the sampled posterior distributions. Prior distributions are shown in blue. Note the high degree of correlation between N and \u03b1.\n\nThe within-host model can be used to simulate beyond the first relapse infection. Figure 2 shows some sample relapse patterns from the within-host models for tropical and temperate strains of P. vivax. This model predicts notable dose-dependency with increased numbers of hypnozoites associated with a greater number of relapses and shorter time to first relapse. Following the long latency to first relapse in temperate strains, the interval between subsequent relapses is considerably shorter. The within-host model assumes that hypnozoites act independently of each other, and hence the time to next relapsing hypnozoite is exponentially distributed. In particular we do not predict periodicity between relapsing hypnozoites (in the absence of external triggers [White, 2011; Shanks and White, 2013]). If the simulated data are censored such that relapses occurring within 14 days of a previous relapse remain undetected (due to either prophylaxis by blood-stage anti-malarials or the presence of parasites from an existing infection) then there is an apparent periodicity in detected relapses. The observed periodicity of relapses will be determined by the duration of prophylactic protection and not via the biological mechanisms considered here. The periodicity in detected relapses is most evident for large numbers of hypnozoites with the period being determined by the assumed duration of prophylactic protection (Figure 2\u2014figure supplement 1). However, as has been previously argued, periodicity in relapses could also be attributable to a cycle of fevers initiating hypnozoite activation which in turn cause new blood-stage infections and malaria-associated fevers (White, 2011).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig2-v2.jpg)\n\n**Figure 2.:** A relapse is assumed to be undetected if it occurs within 14 days of a detected relapse. Both tropical and temperate phenotypes exhibit dose dependency, with a larger number of hypnozoites giving rise to a greater number of relapses and shorter times to first relapse. For larger numbers of hypnozoites (N = 50), periodicity in detected relapses is observed. The appearance of this periodicity is due to the undetected relapses.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For the tropical phenotype the time between relapses was calculated as the mean duration between consecutive relapses over the first 6 months based on 10,000 stochastic simulations. For the temperate phenotype the time between relapses was calculated as the mean duration between consecutive relapses over the first 12 months based on 10,000 stochastic simulations. The red curves denote the time between detected relapses: it is assumed that within 14 days of a detected relapse some activating hypnozoites can go undetected due to anti-malarial prophylaxis or the presence of blood-stage parasites. The grey curve denotes the expected time between all consecutively activating hypnozoites. The dashed line denotes a 3 week duration which has been regularly been observed as a common period between consecutive relapses (White, 2011).\n\nFigure 3 shows the predicted number of relapsing hypnozoites in a population exposed to P. vivax in the absence of new infections. For tropical strains the mean number of hypnozoites in the liver is expected to decrease exponentially, but the proportion of individuals carrying hypnozoites is expected to decrease at a slower rate as an individual can relapse even if they have just one hypnozoite (Figure 3A). For temperate strains the mean number of hypnozoites in the liver decreases slowly, as hypnozoites remain in the long-latency phase for approximately 6 months (Figure 3B). The model allows estimation of time to second, third and consecutive relapses in addition to estimates of time to first relapse obtainable via survival analysis of patient data (Lover and Coker, 2013; Battle et al., 2014) (Figure 3C,D). The expected number of relapsing hypnozoites per individual is expected to follow an approximately exponential distribution (Figure 3E,F) in agreement with empirical observations (Horing, 1947; White, 2011).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) Duration of hypnozoite carriage (orange) and expected number of hypnozoites in the liver (dashed). For the temperate strain, the dashed blue line shows the number of hypnozoites in the relapsing phase. (C and D) Survival time until nth relapsing hypnozoite. The red curve is equivalent to the Kaplan\u2013Meier curve for time to first blood-stage infection that would be observed in the absence of new infections from mosquito bites. Only the curves for the first five relapses are shown. (E and F) Proportion of individuals with at least n relapsing hypnozoites following primary infection.\n\n### Dynamics and steady states of P. vivax transmission\n\nFigure 4A shows the predicted steady states (the equilibrium blood-stage prevalence in the absence of seasonally varying transmission) as a function of entomological inoculation rate (EIR). EIR is a measurement of the number of infectious bites per person per year. The proportion of people infected with hypnozoites is predicted to be higher than the proportion infected with P. vivax blood-stage parasites. For a given EIR, P. vivax blood-stage prevalence is predicted to be higher than P. falciparum prevalence as a single mosquito bite can give rise to multiple blood-stage infections. However this does not account for the longer duration of P. falciparum infections as a consequence of antigenic switching (Molineaux et al., 2001), and the important role of heterogeneity in exposure (Smith et al., 2005). With the exception of the P. vivax hypnozoite rate, these quantities can be measured in epidemiological field studies (Smith et al., 2005; Kelly-Hope and McKenzie, 2009).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig4-v2.jpg)\n\n**Figure 4.:** (A) The statics (estimated equilibrium prevalence) of P. vivax and P. falciparum transmission for different values of the entomological inoculation rate (EIR). EIR was varied by changing the number of mosquitoes per person m. (B) The number of hypnozoites per person is expected to increase with transmission intensity. The black line denotes the median number of hypnozoites, and the shaded areas denote the 50% and 95% ranges. (C) The distribution of the hypnozoite reservoir when PvPR = 50%. The grey bar represents individuals with zero hypnozoites.\n\nFigure 4B shows how the median number of hypnozoites increases with increasing P. vivax transmission. Figure 4C shows the distribution in the number of hypnozoites when PvPR = 50%. The number of hypnozoites per individual is predicted to be over-dispersed following a negative binomial distribution. Thus some individuals will harbour a large number of hypnozoites while some will have none. This phenomenon will be further amplified if there is heterogeneity in exposure where some individuals receive a large number of mosquito bites.\n\n### Control of P. vivax\n\nThe impact of malaria control interventions will depend on how effectively the parasite is targeted in each of the reservoirs in the mosquito, the blood and the liver. Figure 5 shows the qualitative effects of malaria control on the transmission dynamics of P. falciparum and P. vivax. Vector control with insecticide treated nets (ITNs) or indoor residual spraying (IRS) is assumed to increase mosquito mortality. The introduction of vector control is expected to cause a rapid decline in P. falciparum parasite rate (PfPR), and a smaller and slower decline in P. vivax (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig5-v2.jpg)\n\n**Figure 5.:** (A) The introduction of vector control with ITNs or IRS (assumed to increase mosquito mortality by 30%) is predicted to cause substantial reductions in both PvPR and PfPR. (B) Simulated effect of expanding first-line treatment with blood-stage anti-malarial drugs (e.g., chloroquine or ACTs) so that 20% and 40% of new blood-stage infections are treated. (C) Simulated effect of first-line treatment with a combined regimen of blood-stage anti-malarials and primaquine to remove liver-stage hypnozoites.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Treatment coverage \u03c7 is assumed, that is, the proportion of new blood-stage infections that receive treatment with blood-stage anti-malarials. There will be a delay between the emergence of parasites into the blood-stream and the administration of treatment following symptoms. This stage is described by treatment compartment Ti and lasts 1/\u03bd = 7 days. Importantly, transmission to mosquitoes is possible during this stage as P. vivax gametocytes (the sexual stage of the parasite that can be transmitted to mosquitoes) are present in the blood very early on in the infection. Following treatment, individuals progress to a period of prophylactic protection Pi, during which they are not susceptible to new blood-stage infections but may still acquire hypnozoites from new bites from infectious mosquitoes. It is assumed that individuals remain under prophylactic protection for 1/\u03be = 14 days after which they return to being susceptible Si.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The incorporation of primaquine into first-line treatment regimens is accounted for by assuming that treatment clears all hypnozoites from the liver as well as clearing blood-stage infections. A 14 day daily dosing regimen of primaquine which has proven efficacy at preventing relapses. In particular we assume treatment eliminates all hypnozoites, so that treated individuals move to compartment P0 (under prophylaxis from treatment and with all hypnozoites removed). The 14 day treatment regimen is assumed to provide a period of prophylactic protection against new hypnozoite infection, that is, new hypnozoites cannot be acquired while primaquine is being administered.\n\nFigure 5B shows the effect of targeting the parasite reservoir in the blood by providing first-line treatment for new blood-stage infections with anti-malarial drugs such as chloroquine or artemisinin combination therapies (ACTs). See details of how treatment was implemented in the model are provided in Figure 5\u2014figure supplement 1,2. Increasing treatment coverage leads to reductions in blood-stage prevalence of both P. falciparum and P. vivax. Notably the reduction in the P. vivax hypnozoite rate is slow as the hypnozoite reservoir is not directly targeted.\n\nThe hypnozoite reservoir can be directly targeted using a drug such as primaquine that can eliminate hypnozoites from the liver (Wells et al., 2010). The inclusion of primaquine in first-line treatment regimens is predicted to cause substantial reductions in both the P. vivax parasite rate and hypnozoite rate (Figure 5C), as individuals being treated for blood-stage P. vivax infections will also have their hypnozoites removed. A consequence of this strategy is that the hypnozoite reservoir can be targeted efficiently, as individuals with the most hypnozoites are most likely to relapse and potentially be detected by health systems. Figure 6 shows how the inclusion of primaquine in first-line treatment regimens preferentially targets the most intense infections, with the greatest reductions observed in individuals with the most hypnozoites.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig6-v2.jpg)\n\n**Figure 6.:** Proportion of the population infected with 1\u20132, 3\u20139 or 10+ hypnozoites following the introduction of a first-line treatment regimen with blood-stage anti-malarial drugs and primaquine. Individuals with large numbers of hypnozoites are more likely to experience new blood-stage infections and hence become targeted for treatment and have their hypnozoites removed. This results in a selective targeting of the most intensely infected individuals.\n\n## Discussion\n\nRelapse infections arising from the activation of hypnozoites in the human liver have important consequences for the transmission dynamics of P. vivax. Hypnozoites in the liver constitute a third malaria parasite reservoir, in addition to the reservoirs in the blood circulation and mosquito also present for P. falciparum. Relapses can be incorporated into Ross-Macdonald models of malaria transmission through the addition of a state to represent the hypnozoite reservoir (Roy et al., 2013), or as demonstrated here, through consideration of the number of hypnozoites in the liver. This allows the intensity of hypnozoite infection to be estimated which is crucial for understanding patterns of relapse infections (White, 2011) and evaluating the effect of interventions such as primaquine treatment that directly target the hypnozoite reservoir. Hypnozoites are assumed to be subjected to two processes: activation at constant rate \u03b1, and death at constant rate \u00b5. By considering infection with batches of hypnozoites, these simple processes can explain many of the complex patterns observed in P. vivax relapses (see Box 1).\n\nA key assumption in the proposed model is the constant activation of hypnozoites. This implies that relapses can occur immediately after primary P. vivax infection, in contrast to suggestions that the first relapse does not occur until 2\u20133 weeks later. The best evidence on early relapses comes from treatment efficacy studies where patients treated for P. vivax are followed for recurrent infection for 42 days (Douglas et al., 2010). Except in cases with documented chloroquine resistance (Price et al., 2014), recurrent infections are rarely observed prior to day 14, however the inclusion of long-lasting anti-malarials in treatment regimens provides prophylaxis during this period making detection of parasites unlikely. In a recent study of the slowly eliminated drug dihydroartemisinin-piperaquine (DP) Tarning et al. (2014) tested a model where relapses occur in bursts every 3 weeks, but it arguably provided no better fit to the data than a model of constant hypnozoite activation. Testing the hypothesis of constant activation would require follow up of patients treated with rapidly eliminated artemisinin monotherapy, a challenging proposition given the concerns over artemisinin resistant P. falciparum (Ashley et al., 2014).\n\nAlthough the model captures the key drivers of the dynamics of P. vivax transmission, it is a simplified representation subject to a number of limiting assumptions. The potential role of triggers of hypnozoite activation such as febrile illness (Shanks and White, 2013) are not accounted for. There is no heterogeneity or seasonality in transmission, and no age structure. Incorporation of the acquisition of natural immunity into the model will be particularly important for settings with high transmission intensity where immunity has a role in regulating blood-stage infections (Mueller et al., 2013). It is assumed that all individuals infected with blood-stage parasites are capable of transmitting to mosquitoes. Similar to the corresponding P. falciparum models, incorporation of these factors would change the quantitative predictions of the model, but not its qualitative behaviour.\n\nP. falciparum and P. vivax parasite prevalence (PfPR and PvPR) are the most widely reported and best validated metrics of malaria transmission from epidemiological studies (Gething et al., 2011a; Gething et al., 2012) providing measurements of the proportion of individuals with detectable blood-stage parasites. In settings with similar levels of P. vivax and P. falciparum transmission, the model predicts PvPR to be greater than PfPR due to the additional blood-stage infections arising from relapses. However, this does not agree with empirical observations which find PfPR to be similar to or greater than PvPR (Snounou and White, 2004; Mueller et al., 2009b). This is most likely explained by the rapid acquisition of immunity to P. vivax (Koepfli et al., 2013; Mueller et al., 2013) the low detectability of P. vivax blood-stage infections (Harris et al., 2010), and the longer durations of P. falciparum blood-stage infection (Molineaux et al., 2001) not captured in the model. Furthermore, the additional P. vivax parasite reservoir in the liver means that PfPR and PvPR are not directly comparable metrics. Thus if a parasitological survey indicates similar parasite prevalence, a greater control effort will be required to reduce P. vivax transmission than to reduce P. falciparum transmission because of the additional infections emerging from the hypnozoite reservoir. The model described here allows the proportion of individuals harbouring hypnozoites to be estimated given metrics such as PvPR. The number of hypnozoites per person is predicted to be over-dispersed with some individuals with intensely infected livers and most carrying few or no hypnozoites (Figure 4C). Estimates of the prevalence and intensity of hypnozoite infection will be dependent on both the uncertainty in the measurable data and the model assumptions.\n\nVector control with ITNs or IRS, and treatment with effective anti-malarial drugs are the cornerstones of malaria control efforts targeting the parasite in the vector and the human host, however they are predicted to have different effects on P. vivax and P. falciparum transmission. Vector control interventions that increase mosquito mortality are expected to cause greater reductions in PfPR than PvPR (Figure 5A), as higher levels of P. vivax transmission can be maintained with fewer mosquito bites. This has been observed in both Thailand (Sattabongkot et al., 2004) and Brazil (Coura et al., 2006) where increased vector control has caused greater reductions in P. falciparum than P. vivax.\n\nFirst-line treatment of new blood-stage infections with anti-malarial drugs such as chloroquine or ACTs is predicted to cause moderate reductions in blood-stage prevalence of both P. falciparum and P. vivax (Figure 5B). The addition of primaquine to first-line treatment regimens is expected to cause large reductions in P. vivax blood-stage prevalence, as individuals with the most intense hypnozoite infections are more likely to relapse and be targeted for treatment and hence have their hypnozoites eliminated. The potential to simultaneously target parasite reservoirs in the blood and liver may turn the cause of P. vivax parasites' robust transmission into its Achilles' heel.\n\nIn P. vivax and P. falciparum co-endemic regions, heterogeneity in exposure to mosquito bites may cause associations between P. falciparum fevers and the risk of future P. vivax relapses (Douglas et al., 2011). Thus the inclusion of primaquine in first-line treatment for P. falciparum may also reduce P. vivax transmission. In addition to inclusion in first-line treatment regimens, primaquine can also be administered as part of mass drug administration (MDA) programmes. In treatment-reinfection studies of Papua New Guinean children (Betuela et al., 2012; Robinson et al., unpublished), mass administration of drugs such as chloroquine or artemether-lumefantrine successfully cleared P. vivax blood-stage infections but rapid recurrence of infection was observed during follow-up\u2014most likely due to relapses. The addition of primaquine to the treatment regimen caused large reductions in the rate of recurrent infections.\n\nAlthough primaquine treatment clears the hypnozoite reservoir, it requires a difficult 14 day treatment regimen, and is not without risk due to vulnerability to haemolytic toxicity among glucose-6-phosphate dehydrogenase (G6PD) deficient patients (Howes et al., 2013). Individuals should thus be tested for G6PD deficiency (Kim et al., 2011) before the administration of primaquine. A primaquine analogue, tafenoquine, is currently undergoing phase three trials and is likely to be licensed for use by 2017 (Llanos-Cuentas et al., 2014). Tafenoquine requires a single dose alongside a 3 day chloroquine regimen, but is subject to the same risks in G6PD deficient patients. A quantitative model of P. vivax transmission will allow for the benefits of primaquine treatment to be weighed against the risks of G6PD deficiency and the costs of G6PD testing.\n\nMathematical models of malaria transmission that account for P. vivax relapses can provide valuable insights into the impact of malaria control interventions on the parasite's reservoirs in the vector, the blood and the liver. In the absence of effective diagnostics for detecting liver-stage parasites (malERA Consultative Group on Diagnoses and Diagnostics, 2011), models will play a crucial role in estimating and predicting the effectiveness of interventions that target the hypnozoite reservoir, either indirectly via vector control and blood-stage anti-malarials or directly via primaquine treatment.\n\n## Materials and methods\n\n### Within-host model for tropical relapses\n\nFollowing infection with a tropical strain of P. vivax, the population dynamics of hypnozoites in the liver can be described by a within-host model where each hypnozoite is subject to two processes: (i) activation leading to relapse infection; and (ii) death, either of the hypnozoite itself or the host hepatocyte (Malato et al., 2011). Constant activation (\u03b1) and death (\u00b5) rates are assumed implying hypnozoite residence time in the liver is exponentially distributed. The long latency of temperate strains before first relapse can be accounted for by assuming a period of dormancy during which hypnozoites must wait before they can activate. A schematic representation of the within-host model is presented in Figure 7.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig7-v2.jpg)\n\n**Figure 7.:** Hypnozoites from tropical strains of P. vivax will progress to the relapsing phase where they are subject to two processes: death and activation leading to relapse. Hypnozoites from temperate strains will begin in a temperate long-latency phase where they must wait before progressing to the relapsing phase.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Orange compartments denote the temperate long-latency phase. Green compartments denote the relapsing phase. Superscript N denotes that the infection began with N hypnozoites. In the long-latency phase, sub-script i, j denotes i hypnozoites in the jth compartment for progressing through the long-latency phase. In the relapsing phase, subscript i denotes the number of hypnozoites. An individual infected with N hypnozoites of a tropical strain begins in the HNN compartment and progresses to HN0 as hypnozoites activate or die. An individual infected with N hypnozoites of a temperate strain begins in the LNN,1 compartment, and progresses down the flow diagram through the M steps during the period of long-latency. During this time they may also move to the right along the flow diagram as the number of hypnozoites reduces due to death. After passing through the M compartments for the long-latency phase, infections will enter the relapsing phase where relapse can occur.\n\nThe tropical relapse model is assumed to begin with an initial population of N hypnozoites, each of which can either activate at rate \u03b1, or die at rate \u00b5, independently of each other. The number of hypnozoites in the liver will decay exponentially with an expected Ne\u2212(\u00b5+\u03b1)t hypnozoites at time t. Let $H_{i}^{N}(t)$ denote the probability that i of N hypnozoites remain in the liver after time t. The hypnozoite population dynamics can be described by the following set of equations:\n\n$$\n\\frac{dH_{N}^{N}}{dt}=\u2212(\\mu+\\alpha)NH_{N}^{N}\\frac{dH_{i}^{N}}{dt}=\u2212(\\mu+\\alpha)iH_{i}^{N}+(\\mu+\\alpha)(i+1)H_{i+1}^{N},i=0\u2026N\u22121\n$$\n\nEquation 1 can be solved analytically to give:\n\n$$\nH_{i}^{N}(t)=(Ni)e^{\u2212N(\\mu+\\alpha)t}(e^{(\\mu+\\alpha)t}\u22121)^{N\u2212i}\n$$\n\nDefine $P_{j}^{N}(t)$ to be the probability that j relapses have occurred by time t. This can be calculated as follows: if i hypnozoites remain in the liver, then N \u2212 i have either activated or died. The probability of each hypnozoite activating is $\\frac{\\alpha}{\\mu+\\alpha}$. The probability that j of N \u2212 i hypnozoites have activated can thus be calculated from a binomial distribution. Summing over the allowable number of hypnozoites (at least j hypnozoites must have activated or died for j relapses to be observed) gives:\n\n$$\nP_{j}^{N}(t)=\\sumi=0N\u2212j(N\u2212ij)(\\frac{\\alpha}{\\mu+\\alpha})^{j}(\\frac{\\mu}{\\mu+\\alpha})^{N\u2212i\u2212j}H_{i}^{N}(t)=(Nj)\\frac{\\alpha^{j}\\mu^{N\u2212j}}{(\\mu+\\alpha)^{N}}(1\u2212e^{\u2212(\\mu+\\alpha)t})^{N}(1+\\frac{\\mu+\\alpha}{\\mu}\\frac{1}{e^{(\\mu+\\alpha)t}\u22121})^{N\u2212j}\n$$\n\nEquations 1\u20133 describe the population dynamics of hypnozoites in a single individual with N hypnozoites in the absence of exposure to new infections. In a population of individuals, we would expect substantial variation in the numbers of hypnozoites due to heterogeneity in exposure and the variation in sporozoite inoculum from each infectious mosquito bite (Beier et al., 1991; Medica and Sinnis, 2005; White et al., 2013). Based on evidence that the number of sporozoites injected with a mosquito bite approximately follows a geometric distribution (Beier et al., 1991), we assume that the number of hypnozoites following a primary infection is also geometrically distributed. If the mean number of hypnozoites is N, then the probability of k hypnozoites is $(\\frac{N}{N+1})^{k}\\frac{1}{N+1}$. Assuming a geometrically distributed number of hypnozoites, the three quantities describing the epidemiology of relapses can be estimated in terms of the within-host parameters. The expected number of relapsing hypnozoites is:\n\n$$\nh=\\sumk=0\u221e(\\frac{N}{N+1})^{k}\\frac{1}{N+1}\ufe38probability\u2009of\u2009k\u2009initial\u2009hypnozoites\u2009\u2009k\u2009\u2009\\frac{\\alpha}{\\alpha+\\mu}\ufe38probability\u2009of\u2009each\u2009hypnozoite\u2009relapsing=N\\frac{\\alpha}{\\mu+\\alpha}\n$$\n\nThe mean duration of hypnozoite carriage is:\n\n$$\n\\frac{1}{\\gamma}=\\sumk=0\u221e(\\frac{N}{N+1})^{k}\\frac{1}{N+1}\ufe38probability\u2009of\u2009k\u2009initial\u2009hypnozoites\\sumi=1k\\frac{1}{i}\\frac{1}{\\mu+\\alpha}\ufe38duration\u2009of\u2009k\u2009hypnozoites=\\frac{log(N+1)}{\\mu+\\alpha}\n$$\n\nThe expected time to first relapse is:\n\n$$\n\\frac{1}{f}=\\sumk=1\u221e[(\\frac{N}{N+1})^{k}\\frac{1}{N}]\ufe38probability\u2009of\u2009k\u2009initial\u2009hypnozoites\\sumi=1k[(\\frac{\\mu}{\\mu+\\alpha})^{k\u2212i}\\frac{\\alpha}{\\mu+\\alpha}/(1\u2212(\\frac{\\mu}{\\mu+\\alpha})^{k})]\ufe38probability\u2009of\u2009hypnozoite\u2009i\u2009being\u2009first\u2009to\u2009relapse\\sumj=0k\u2212i\\frac{1}{k\u2212j}\\frac{1}{\\mu+\\alpha}\ufe38time\u2009to\u2009relapse\n$$\n\nThe within-host relapse model describes a baseline scenario in the absence of potential external triggers for relapse such as fever (Shanks and White, 2013). Underlying assumptions of this model are: (i) each hypnozoite acts independently of other hypnozoites, for example, hypnozoites will not activate in batches due to mechanisms such as quorum sensing; and, (ii) hypnozoite death occurs at a constant rate, due to either death of the hypnozoite within the hepatocyte or death of the hepatocyte itself (Malato et al., 2011). The activation of a hypnozoite may not directly correspond to a detected relapse. For example, an infection arising from two hypnozoites activating within a day of each other is likely to be classified as a single relapse.\n\n### Within-host model for temperate relapses\n\nThe within-host model can be extended to account for temperate strains of P. vivax. We assume that before a hypnozoite is capable of activating, it must undergo a long-latency phase of duration d. During this period hypnozoites are subject to death at rate \u00b5. In particular, we assume that the time spent in the temperate long-latency phase can be described by a gamma distribution with mean d and variance d2/M. This gamma distribution can be simulated by M successive compartments with exponential waiting times 1/\u03b4 = d/M. Increasing the number of compartments M reduces the variance in the duration of the dormancy period (Wearing et al., 2005). Following a primary infection where N hypnozoites of a temperate phenotype develop in the liver, we define $L_{i,j}^{N}$ as the probability that i of N hypnozoites are waiting in long-latency compartment number j, then the number of dormant and potentially active hypnozoites can be described by the following system of differential equations.\n\n$$\n\\frac{dL_{N,1}^{N}}{dt}=\u2212\\deltaL_{N,1}^{N}\u2212N\\muL_{N,1}^{N}\\frac{dL_{i,1}^{N}}{dt}=\u2212\\deltaL_{i,1}^{N}\u2212i\\muL_{i,1}^{N}+(i+1)\\muL_{i+1,1}^{N}i=1\u2026N\u22121\\frac{dL_{N,j}^{N}}{dt}=\u2212\\deltaL_{N,j}^{N}+\\deltaL_{N,j+1}^{N}\u2212N\\muL_{N,j}^{N}j=2\u2026M\\frac{dL_{i,j}^{N}}{dt}=\u2212\\deltaL_{i,j}^{N}+\\deltaL_{i,j+1}^{N}\u2212i\\muL_{i,j}^{N}+(i+1)\\muL_{i+1,j}^{N}i=1\u2026N\u22121,\u2009j=2\u2026M\\frac{dH_{N}^{N}}{dt}=\\deltaL_{N,M}^{N}\u2212N(\\mu+\\alpha)H_{N}^{N}\\frac{dH_{i}^{N}}{dt}=\\deltaL_{i,M}^{N}\u2212i(\\mu+\\alpha)H_{i}^{N}+(i+1)(\\mu+\\alpha)H_{i+1}^{N}i=1\u2026N\u22121\\frac{dH_{0}^{N}}{dt}=\\sumj=1M\\muL_{1,j}^{N}+(\\mu+\\alpha)H_{1}^{N}\n$$\n\nThe equations are presented schematically in Figure 7\u2014figure supplement 1. Equation 7 cannot be solved analytically and must be computed numerically to calculate $H_{i}^{N}(t)$ and $L_{i,j}^{N}(t)$. A greater deal of uncertainty surrounds the biological processes accounting for the initial long-latency phase observed in temperate strains of P. vivax. In the model implemented here, it is assumed that all hypnozoites in an infection must undergo some waiting period before any of them can activate, and that during the long-latency phase hypnozoites are at risk of death due to natural hepatocyte death.\n\n### P. vivax transmission model\n\nWe next embedded the within-host model for tropical relapses in a model for the transmission of P. vivax between humans and mosquitoes (Figure 8). The transmission dynamics are driven by two processes: (i) transmission of parasites through mosquito bites; and (ii) relapsing of liver-stage hypnozoites to cause new blood-stage infections. As per the standard Ross-Macdonald theory, the force of blood-stage infections in humans can be calculated as the product of the number of mosquitoes per human m, the rate at which each mosquito bites a human host a, the probability of transmission from mosquito to human following an infectious bite b, and the proportion of mosquitoes that are infectious IM, to give \u03bb = mabIM. Parameter values are provided in Table 1. The force of infection on mosquitoes can be calculated in a similar manner. We assume that people can be susceptible (Si) or infected with blood-stage parasites (Ii), where i denotes the number of hypnozoites in the liver.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig8-v2.jpg)\n\n**Figure 8.:** Within-host model for tropical relapses embedded in a transmission model. Si denotes the proportion of humans susceptible to blood-stage infection with i hypnozoites. Ii denotes the proportion of humans with blood-stage infections carrying i hypnozoites. Individuals in all compartments are exposed to primary infections at rate \u03bb, following which they will move down the flow diagram to a compartment representing blood-stage infection and carrying a greater number of hypnozoites.\n\n**Table 1.**\n Description of model parameters\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Description</th>\n      <th>Value</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Within-host</td>\n    </tr>\n    <tr>\n      <td>N</td>\n      <td>number of hypnozoites per infection</td>\n      <td>8.5</td>\n      <td>estimate*</td>\n    </tr>\n    <tr>\n      <td>\u03b1</td>\n      <td>rate of hypnozoite activation</td>\n      <td>1/332 day\u22121</td>\n      <td>estimate*</td>\n    </tr>\n    <tr>\n      <td>\u00b5</td>\n      <td>rate of hypnozoite/hepatocyte death</td>\n      <td>1/425 day\u22121</td>\n      <td>estimate*</td>\n    </tr>\n    <tr>\n      <td>d</td>\n      <td>duration of temperate long-latency</td>\n      <td>180 days</td>\n      <td>(Battle et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>\u03c3d</td>\n      <td>standard deviation of temperate long-latency</td>\n      <td>30 days</td>\n      <td>(Battle et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>M</td>\n      <td>number of compartments for simulating long-latency: M = (d/\u03c3d)2</td>\n      <td>36</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03b4</td>\n      <td>rate of progression through long-latency compartments: \u03b4 = M/d</td>\n      <td>0.2 day\u22121</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Humans</td>\n    </tr>\n    <tr>\n      <td>b</td>\n      <td>transmission probability: mosquito to human</td>\n      <td>0.5</td>\n      <td>(Smith et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>r</td>\n      <td>rate of clearance of blood-stage infections</td>\n      <td>1/60 day\u22121</td>\n      <td>(Collins et al., 2003)</td>\n    </tr>\n    <tr>\n      <td>f</td>\n      <td>relapse frequency (1/time to first relapse)</td>\n      <td>1/76 day\u22121</td>\n      <td>Equation 6</td>\n    </tr>\n    <tr>\n      <td>h</td>\n      <td>expected number of relapses</td>\n      <td>4.7</td>\n      <td>Equation 4</td>\n    </tr>\n    <tr>\n      <td>\u03b3</td>\n      <td>rate of hypnozoite clearance</td>\n      <td>1/420 day\u22121</td>\n      <td>Equation 5</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Mosquitoes</td>\n    </tr>\n    <tr>\n      <td>a</td>\n      <td>mosquito biting frequency</td>\n      <td>0.21 day\u22121</td>\n      <td>(Garrett-Jones, 1964)</td>\n    </tr>\n    <tr>\n      <td>g</td>\n      <td>mosquito death rate (1/mosquito life expectancy)</td>\n      <td>0.1 day\u22121</td>\n      <td>(Gething et al., 2011b)</td>\n    </tr>\n    <tr>\n      <td>m</td>\n      <td>number of mosquitoes per human</td>\n      <td>calculated</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>n</td>\n      <td>duration of sporogony in mosquito</td>\n      <td>12 days</td>\n      <td>(Gething et al., 2011b)</td>\n    </tr>\n    <tr>\n      <td>c</td>\n      <td>transmission probability: human to mosquito</td>\n      <td>0.23</td>\n      <td>(Bharti et al., 2006)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Based on estimates from South East Asian tropical strains._\n\nThe increase in hypnozoites in the liver is determined by the force of infection \u03bb and the number of hypnozoites per infection N, and the decrease is due to hypnozoite activation \u03b1 and death \u00b5. The model depicted in Figure 8 can be described by the following set of equations:\n\n$$\n\\frac{dS_{i}}{dt}=\u2212\\lambdaS_{i}\u2212i(\\mu+\\alpha)S_{i}+(i+1)\\muS_{i+1}+\u03c1_{i}I_{i}i=0\u2026\u221e\\frac{dI_{i}}{dt}=\u2212\\lambdaI_{i}+\\sumj=0i\\lambda_{j\u2192i}(S_{j}+I_{j})\u2212i(\\mu+\\alpha)I_{i}+(i+1)(\\mu+\\alpha)I_{i+1}+(i+1)\\alphaS_{i+1}\u2212\u03c1_{i}I_{i}i=0\u2026\u221e\\frac{dS_{M}}{dt}=g\u2212ac(\\sumi=0\u221eI_{i})(e^{\u2212gn}\u2212I_{M})\u2212gS_{M}\\frac{dI_{M}}{dt}=ac(\\sumi=0\u221eI_{i})(e^{\u2212gn}\u2212I_{M})\u2212gI_{M}\n$$\n\nwhere $\\lambda_{j\u2192i}=\\lambda(\\frac{N}{N+1})^{i\u2212j}\\frac{1}{N+1}$. In the absence of super-infection, the recovery from blood-stage infection is $\u03c1_{i}=r$. Accounting for super-infections (Dietz and Molineaux, 1973; Smith et al., 2012) gives $\u03c1_{i}=\\frac{\\lambda+i\\alpha}{e^{\\frac{\\lambda+i\\alpha}{r}}\u22121}$.\n\n### Model parameterisation\n\nThe within-host model for tropical relapses was fitted in a Bayesian framework to data on time to first relapse infection from three ecological zones with tropical strains of P. vivax: South America, South East Asia and Melanesia (see Source data 1). The data are described in detail by Battle et al. (2014). Individual-level data on time to first recurrence was collated from individuals exposed to P. vivax infection (either via natural exposure or artificial challenge) and mostly followed up in the absence of exposure to new infections (Battle et al., 2014). The likelihood of the tropical relapse model can be evaluated by applying the model to the data on time to first relapse infection. The first detected relapse will occur after clearance of parasites from the primary infection and after the period of prophylactic protection from anti-malarial drugs. Define QN(t) to be the probability that at least 1 of N hypnozoites has relapsed by time t.\n\n$$\nQ^{N}(t)=1\u2212P_{0}^{N}(t)=1\u2212(\\frac{\\mu+\\alphae^{\u2212(\\mu+\\alpha)t}}{\\mu+\\alpha})^{N}\n$$\n\nAccounting for a geometrically distributed number of hypnozoites gives:\n\n$$\nQ^{G(N)}(t)=\\sumk=0\u221e\\frac{1}{N+1}(\\frac{N}{N+1})^{k}Q^{k}(t)\n$$\n\nwhere G(N) denotes a geometric distribution.\n\nAn individual j followed up after a primary P. vivax infection will either relapse (Ij = 1) or avoid infection (Ij = 0). Denote \u03c4j to be the time of detection of infection, or if uninfected, the time until the end of follow up. The likelihood of the parameters \u03b8 = {N, \u03b1, \u00b5} given the data Dj = {Ij, \u03c4j} is:\n\n$$\nL(\\theta|D_{j})=(\\frac{dQ^{G(N)}}{dt}|_{t=\\tau_{j}})^{I_{j}}(1\u2212Q^{G(N)}(\\tau_{j}))^{1\u2212I_{j}}\n$$\n\nThe log-likelihood (LL) for all j individuals is:\n\n$$\nLL=\\sumj(I_{j}log(\\frac{dQ^{G(N)}}{dt}|_{t=\\tau_{j}})+(1\u2212I_{j})log(1\u2212Q^{G(N)}(\\tau_{j})))\n$$\n\nData on time to first relapse were not sufficiently informative to estimate the three parameters simultaneously and hence prior distributions were assumed. N was assumed to have an informative gamma prior distribution with median 10 (95% credible interval (CrI): 1, 28) (Beier et al., 1991). \u00b5 was assumed to have an informative gamma prior distribution with median 1/200 (95% CrI: 1/309, 1/140) day\u22121 (Malato et al., 2011). \u03b1 was assumed to have an uninformative uniform prior distribution U(0,1). The likelihood in equation (Ishikawa et al., 2003) was sampled using a Metropolis\u2013Hastings Markov Chain Monte Carlo (MCMC) algorithm and the posterior parameter distributions estimated (Figure 1\u2014figure supplement 1). The posterior median parameter estimates and 95% credible intervals are presented in Supplementary file 1.\n",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "d2b80983-46e9-4c56-9b79-3f501538d444",
+      "submission_id": "eb11e7a3-9201-43b8-9c4c-9b743521e441",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark Jit, London School of Hygiene & Tropical Medicine, and Public Health England , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04692.020](https://doi.org/10.7554/eLife.04692.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cModelling the contribution of the hypnozoite reservoir to Plasmodium vivax transmission\u201d for consideration at eLife. Your article has been favorably evaluated by Prabhat Jha (Senior editor), Mark Jit (Reviewing editor), and 3 reviewers, one of whom is a member of our Board of Reviewing Editors. Two of the reviewers have agreed to reveal their identity: Philip McQueen and Laith Yakob.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers and I felt that your report was interesting and addressed an important public health issue. The technical details were well-described despite being complex. The reviewers were mainly concerned with the plausibility of the biological assumptions behind the relapse model. Hence we expect you to either provide rigorous justification, or to modify, the following assumptions (perhaps by a closer examination of the existing data):\n\n1) Relapses: The likelihood function (equations 10-11) assumes that the relapse status of individual patients is known (I_j=0 or 1). However, the Results section discusses the importance of undetected relapses (relapses within 14 days of an earlier relapse) in producing an apparent periodicity in the temporal pattern of relapses, implying that I_j=0 during monitored time but is really equal to 1. If the effect of undetected relapses is expected to be a small correction for clinically relevant values of N and so can be ignored, then you need to state and justify that assumption in your formulation of equations 10-11.\n\n2) Constant activation of hypnozoites in the liver: this does not appear to be consistent with evidence. If activation starts immediately, then it would not fit the 3 week intervals for tropical P. vivax after rapidly eliminated drugs. It also does not explain time clustering of relapse intervals or heterologous genotypes in relapses.\n\n3) Constant death of hypnozoites: this implies random invasion that may well not be true.\n\n4) In addition to these biological assumptions, the reviewers did not feel that Figure 2 showed any obvious periodicity in relapses. The argument would be strengthened by using more formal methods to establish this, e.g. plotting the distribution of relapses for large N (to visually establish multi-modality), and/or estimating the spectral density of the time series.\n",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0d3b28b7-0a0f-4cce-812a-817f5e00b732",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C1",
+      "claim": "Plasmodium vivax relapse infections occur following activation of latent liver-stage parasites (hypnozoites) causing new blood-stage infections weeks to months after the initial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmodium vivax relapse infections occur following activation of latent liver-stages parasites (hypnozoites) causing new blood-stage infections weeks to months after the initial infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement about P. vivax biology that is established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "8bdbeab5-be56-4ccf-a8e3-e999a8a9853c",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C2",
+      "claim": "The hypnozoite reservoir is predicted to be over-dispersed with many individuals having few or no hypnozoites, and some having intensely infected livers.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypnozoite reservoir is predicted to be over-dispersed with many individuals having few or no hypnozoites, and some having intensely infected livers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is based on the mathematical model developed in the manuscript and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "77e19659-f9f4-4ed8-8b7b-b680b92e359a",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C3",
+      "claim": "Individuals with more hypnozoites are predicted to experience more relapses and contribute more to onwards P. vivax transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with more hypnozoites are predicted to experience more relapses and contribute more to onwards P. vivax transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model structure where more hypnozoites lead to more activation events, as shown in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "c0fab196-d29a-4d8d-9ec2-d7294df30bed",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C4",
+      "claim": "Incorporating hypnozoite killing drugs such as primaquine into first-line treatment regimens is predicted to cause substantial reductions in P. vivax transmission as individuals with the most hypnozoites are more likely to relapse and be targeted for treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating hypnozoite killing drugs such as primaquine into first-line treatment regimens is predicted to cause substantial reductions in P. vivax transmission as individuals with the most hypnozoites are more likely to relapse and be targeted for treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is supported by model simulations shown in Figure 5C and Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "6045a649-a2d2-4530-a3f2-13d5e7fcd3f0",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C5",
+      "claim": "P. vivax is the geographically most widely distributed species of malaria in the world, causing in the region of 80\u2013300 million clinical episodes every year.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in spite of P. vivax being the geographically most widely distributed species of malaria in the world, causing in the region of 80\u2013300 million clinical episodes every year (Mueller et al., 2009a; Gething et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mueller et al., 2009a and Gething et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "2e0c0395-410f-4589-a20e-7b13dcbccf1f",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C6",
+      "claim": "P. falciparum models are not applicable to P. vivax as they fail to account for the reservoir of dormant liver stages (hypnozoites) which give rise to relapsing infections.",
+      "claim_type": "EXPLICIT",
+      "source": "P. falciparum models are not applicable to P. vivax as they fail to account for the reservoir of dormant liver stages (hypnozoites) which give rise to relapsing infections\u2014one of the defining characteristics of the biology and epidemiology of P. vivax (Mueller et al., 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the biological differences between P. falciparum and P. vivax, supported by citation to Mueller et al., 2009a.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "b9a46f8c-7c4f-41af-8a16-7a30ff8649c2",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C7",
+      "claim": "When a P. vivax infected mosquito takes a blood meal from a human, sporozoites are injected into the skin and migrate to the liver, where they invade hepatocytes and develop into either actively dividing schizonts or dormant hypnozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "When a P. vivax infected mosquito takes a blood meal from a human, sporozoites are injected into the skin and migrate to the liver, where they invade hepatocytes and develop into either actively dividing schizonts or dormant hypnozoites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established life cycle of P. vivax parasites.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "5dd93f8e-d191-4dbb-9af5-4080097183ac",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C8",
+      "claim": "The development of actively dividing schizonts may lead to a primary blood-stage infection and potentially clinical malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of actively dividing schizonts may lead to a primary blood-stage infection and potentially clinical malaria (Mueller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mueller et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "009e8a50-fa96-494f-912d-889bf5bb40ac",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C9",
+      "claim": "Hypnozoites will lie dormant in the liver for weeks to years before activating to initiate new blood-stage infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypnozoites will lie dormant in the liver for weeks to years before activating to initiate new blood-stage infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about hypnozoite behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "4746a258-a02e-4f05-b135-e5cf246a6639",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C10",
+      "claim": "The biological mechanisms regulating the activation of hypnozoites remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological mechanisms regulating the activation of hypnozoites remain unknown (Mueller et al., 2009a), although a number of triggers for relapses have been proposed, including fever caused by other pathogens such as P. falciparum (Shanks and White, 2013) and exposure to Anopheles-specific proteins (Hulden and Hulden, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mueller et al., 2009a and represents current scientific understanding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "e4ceca15-ebdf-4c29-b042-acdce48336da",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C11",
+      "claim": "Fever caused by other pathogens such as P. falciparum has been proposed as a trigger for relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological mechanisms regulating the activation of hypnozoites remain unknown (Mueller et al., 2009a), although a number of triggers for relapses have been proposed, including fever caused by other pathogens such as P. falciparum (Shanks and White, 2013) and exposure to Anopheles-specific proteins (Hulden and Hulden, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shanks and White, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "fabdb251-5dfb-4615-8f64-ed73c79d60c4",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C12",
+      "claim": "Exposure to Anopheles-specific proteins has been proposed as a trigger for relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological mechanisms regulating the activation of hypnozoites remain unknown (Mueller et al., 2009a), although a number of triggers for relapses have been proposed, including fever caused by other pathogens such as P. falciparum (Shanks and White, 2013) and exposure to Anopheles-specific proteins (Hulden and Hulden, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hulden and Hulden, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "90a0db21-7b15-44e8-8f1e-afaf29e1bec9",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C13",
+      "claim": "Strains from tropical areas have an average time to first relapse of 3\u20136 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "There is considerable geographical variation in the timing and frequency of P. vivax relapse infections, with strains from tropical areas having an average time to first relapse of 3\u20136 weeks and long-latency strains from temperate areas relapsing within 6\u20139 months (Lover and Coker, 2013; Battle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lover and Coker, 2013 and Battle et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "ba48b0df-2fee-41a4-ae0e-e1071c358028",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C14",
+      "claim": "Long-latency strains from temperate areas relapse within 6\u20139 months.",
+      "claim_type": "EXPLICIT",
+      "source": "There is considerable geographical variation in the timing and frequency of P. vivax relapse infections, with strains from tropical areas having an average time to first relapse of 3\u20136 weeks and long-latency strains from temperate areas relapsing within 6\u20139 months (Lover and Coker, 2013; Battle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lover and Coker, 2013 and Battle et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "cee40ce1-eea7-4e53-8cd7-a8fdae2cb4ea",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C15",
+      "claim": "Following a single infection with a tropical strain of P. vivax the time until next relapse has been observed to increase with each successive relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, following a single infection with a tropical strain of P. vivax the time until next relapse has been observed to increase with each successive relapse (Berliner et al., 1948; White, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Berliner et al., 1948 and White, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "f447d8af-9c0c-4489-a89c-4cc73cecf3c8",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C16",
+      "claim": "Temperate strains are associated with a long latency period until first relapse (of the order of 6 months) followed by short intervals between successive relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, temperate strains are associated with a long latency period until first relapse (of the order of 6 months) followed by short intervals between successive relapses (Coatney et al., 1950; Hankey et al., 1953; White, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Coatney et al., 1950, Hankey et al., 1953, and White, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "b182a2be-ab77-4bb5-91b6-679a9631fa15",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C17",
+      "claim": "In each ecological zone, the number of hypnozoites N and the hypnozoite activation rate \u03b1 were correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "In each ecological zone, the number of hypnozoites N and the hypnozoite activation rate \u03b1 were correlated (see Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model fitting results shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "5d25459c-293f-425a-95b2-e7b2dc6412c0",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C18",
+      "claim": "A short time to relapse could be explained by a single fast activating hypnozoite or a large number of slow activating hypnozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a short time to relapse could be explained by a single fast activating hypnozoite or a large number of slow activating hypnozoites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the correlation between N and \u03b1 observed in the model fitting.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "973ae08e-6610-4ad0-bc9f-3e9406be0e2f",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C19",
+      "claim": "The within-host model predicts notable dose-dependency with increased numbers of hypnozoites associated with a greater number of relapses and shorter time to first relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicts notable dose-dependency with increased numbers of hypnozoites associated with a greater number of relapses and shorter time to first relapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 2 showing sample relapse patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "5fea7916-c160-46ae-b9ea-30197a704aaf",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C20",
+      "claim": "Following the long latency to first relapse in temperate strains, the interval between subsequent relapses is considerably shorter.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the long latency to first relapse in temperate strains, the interval between subsequent relapses is considerably shorter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2 for temperate strain simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "ca0b0f0b-c28c-4325-ad67-a2bd13fa002c",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C21",
+      "claim": "The within-host model assumes that hypnozoites act independently of each other, and hence the time to next relapsing hypnozoite is exponentially distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "The within-host model assumes that hypnozoites act independently of each other, and hence the time to next relapsing hypnozoite is exponentially distributed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the mathematical model described in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "6b70dee3-36da-44b0-9e75-4b78baf454b0",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C22",
+      "claim": "If the simulated data are censored such that relapses occurring within 14 days of a previous relapse remain undetected then there is an apparent periodicity in detected relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "If the simulated data are censored such that relapses occurring within 14 days of a previous relapse remain undetected (due to either prophylaxis by blood-stage anti-malarials or the presence of parasites from an existing infection) then there is an apparent periodicity in detected relapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "ac5b4b3c-1126-41a3-8ec5-e74e237bc144",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C23",
+      "claim": "The periodicity in detected relapses is most evident for large numbers of hypnozoites with the period being determined by the assumed duration of prophylactic protection.",
+      "claim_type": "EXPLICIT",
+      "source": "The periodicity in detected relapses is most evident for large numbers of hypnozoites with the period being determined by the assumed duration of prophylactic protection (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "e58c4f5c-add3-4c12-a747-32bdd351598d",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C24",
+      "claim": "Periodicity in relapses could be attributable to a cycle of fevers initiating hypnozoite activation which in turn cause new blood-stage infections and malaria-associated fevers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as has been previously argued, periodicity in relapses could also be attributable to a cycle of fevers initiating hypnozoite activation which in turn cause new blood-stage infections and malaria-associated fevers (White, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to White, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "7d64f965-3354-4d1b-a835-f8ec708a833c",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C25",
+      "claim": "For tropical strains the mean number of hypnozoites in the liver is expected to decrease exponentially.",
+      "claim_type": "EXPLICIT",
+      "source": "For tropical strains the mean number of hypnozoites in the liver is expected to decrease exponentially, but the proportion of individuals carrying hypnozoites is expected to decrease at a slower rate as an individual can relapse even if they have just one hypnozoite (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "bc23547f-224b-4b42-a92d-8c8ce75285d6",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C26",
+      "claim": "The proportion of individuals carrying hypnozoites is expected to decrease at a slower rate than the mean number of hypnozoites as an individual can relapse even if they have just one hypnozoite.",
+      "claim_type": "EXPLICIT",
+      "source": "For tropical strains the mean number of hypnozoites in the liver is expected to decrease exponentially, but the proportion of individuals carrying hypnozoites is expected to decrease at a slower rate as an individual can relapse even if they have just one hypnozoite (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and is a logical inference from the model structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "a5d33dcc-1950-4a19-8e1a-1c9d011e82a5",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C27",
+      "claim": "For temperate strains the mean number of hypnozoites in the liver decreases slowly, as hypnozoites remain in the long-latency phase for approximately 6 months.",
+      "claim_type": "EXPLICIT",
+      "source": "For temperate strains the mean number of hypnozoites in the liver decreases slowly, as hypnozoites remain in the long-latency phase for approximately 6 months (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "b7349e7a-6941-4bdf-bb20-3fe1c7c002ba",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C28",
+      "claim": "The expected number of relapsing hypnozoites per individual is expected to follow an approximately exponential distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The expected number of relapsing hypnozoites per individual is expected to follow an approximately exponential distribution (Figure 3E,F) in agreement with empirical observations (Horing, 1947; White, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3E,F and supported by citations to Horing, 1947 and White, 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "235dc697-55d6-4004-a727-75b14d9ce6f9",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C29",
+      "claim": "The proportion of people infected with hypnozoites is predicted to be higher than the proportion infected with P. vivax blood-stage parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of people infected with hypnozoites is predicted to be higher than the proportion infected with P. vivax blood-stage parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "e4df6e7e-3682-4bf4-a4b8-e295b2976e0e",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C30",
+      "claim": "For a given EIR, P. vivax blood-stage prevalence is predicted to be higher than P. falciparum prevalence as a single mosquito bite can give rise to multiple blood-stage infections.",
+      "claim_type": "EXPLICIT",
+      "source": "For a given EIR, P. vivax blood-stage prevalence is predicted to be higher than P. falciparum prevalence as a single mosquito bite can give rise to multiple blood-stage infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4A and is an inference from the model structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "13910b26-d2d4-42d8-9d69-6ff348ba1292",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C31",
+      "claim": "The median number of hypnozoites increases with increasing P. vivax transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4B shows how the median number of hypnozoites increases with increasing P. vivax transmission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "e937a69d-d285-4393-8f55-f12f15959956",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C32",
+      "claim": "The number of hypnozoites per individual is predicted to follow a negative binomial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of hypnozoites per individual is predicted to be over-dispersed following a negative binomial distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4C and is an inference from the model structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "f25fca6c-8e03-4ed1-8da7-a0e89bcb945d",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C33",
+      "claim": "The introduction of vector control is expected to cause a rapid decline in P. falciparum parasite rate (PfPR), and a smaller and slower decline in P. vivax.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of vector control is expected to cause a rapid decline in P. falciparum parasite rate (PfPR), and a smaller and slower decline in P. vivax (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "009c198f-eabf-413f-84b0-f974f487670c",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C34",
+      "claim": "Increasing treatment coverage with blood-stage anti-malarials leads to reductions in blood-stage prevalence of both P. falciparum and P. vivax.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing treatment coverage leads to reductions in blood-stage prevalence of both P. falciparum and P. vivax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "05450000-92f1-4cb2-8047-e4b002894bb1",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C35",
+      "claim": "The reduction in the P. vivax hypnozoite rate is slow when using blood-stage anti-malarials alone as the hypnozoite reservoir is not directly targeted.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably the reduction in the P. vivax hypnozoite rate is slow as the hypnozoite reservoir is not directly targeted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B and is an inference from the model structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "152b7565-e7a0-4905-81e1-01e30a5eb0b2",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C36",
+      "claim": "The inclusion of primaquine in first-line treatment regimens is predicted to cause substantial reductions in both the P. vivax parasite rate and hypnozoite rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The inclusion of primaquine in first-line treatment regimens is predicted to cause substantial reductions in both the P. vivax parasite rate and hypnozoite rate (Figure 5C), as individuals being treated for blood-stage P. vivax infections will also have their hypnozoites removed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "dd792205-dee9-47c3-bdc0-c59098273528",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C37",
+      "claim": "Individuals with the most hypnozoites are most likely to relapse and potentially be detected by health systems.",
+      "claim_type": "EXPLICIT",
+      "source": "A consequence of this strategy is that the hypnozoite reservoir can be targeted efficiently, as individuals with the most hypnozoites are most likely to relapse and potentially be detected by health systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model structure and is demonstrated in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "9eec63ad-acc8-4db9-9fb4-aac3c491e298",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C38",
+      "claim": "The inclusion of primaquine in first-line treatment regimens preferentially targets the most intense infections, with the greatest reductions observed in individuals with the most hypnozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6 shows how the inclusion of primaquine in first-line treatment regimens preferentially targets the most intense infections, with the greatest reductions observed in individuals with the most hypnozoites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "988b6f4c-9ec5-400e-ac2e-f89a85f776c2",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C39",
+      "claim": "Hypnozoites in the liver constitute a third malaria parasite reservoir, in addition to the reservoirs in the blood circulation and mosquito also present for P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypnozoites in the liver constitute a third malaria parasite reservoir, in addition to the reservoirs in the blood circulation and mosquito also present for P. falciparum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the differences between P. vivax and P. falciparum.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "621eaa2a-f8de-40d5-8134-b6c33462cbf0",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C40",
+      "claim": "Hypnozoites are assumed to be subjected to two processes: activation at constant rate \u03b1, and death at constant rate \u00b5.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypnozoites are assumed to be subjected to two processes: activation at constant rate \u03b1, and death at constant rate \u00b5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "dbc851e1-e560-4470-b177-586733672c1d",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C41",
+      "claim": "By considering infection with batches of hypnozoites, simple processes of constant activation and death can explain many of the complex patterns observed in P. vivax relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "By considering infection with batches of hypnozoites, these simple processes can explain many of the complex patterns observed in P. vivax relapses (see Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model results presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "c479852a-d75a-4991-8522-e7409b953ee3",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C42",
+      "claim": "A key assumption in the proposed model is the constant activation of hypnozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "A key assumption in the proposed model is the constant activation of hypnozoites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "a4b54a26-3451-4eec-8131-34c759dc1588",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C43",
+      "claim": "The constant activation assumption implies that relapses can occur immediately after primary P. vivax infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that relapses can occur immediately after primary P. vivax infection, in contrast to suggestions that the first relapse does not occur until 2\u20133 weeks later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the constant activation assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "6012ed15-5d6a-4008-9847-78a05dfd7ced",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C44",
+      "claim": "Except in cases with documented chloroquine resistance, recurrent infections are rarely observed prior to day 14 in treatment efficacy studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Except in cases with documented chloroquine resistance (Price et al., 2014), recurrent infections are rarely observed prior to day 14, however the inclusion of long-lasting anti-malarials in treatment regimens provides prophylaxis during this period making detection of parasites unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Price et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "ea694f8f-af02-46d5-931d-99f34a7f3ed2",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C45",
+      "claim": "In a recent study of dihydroartemisinin-piperaquine (DP), Tarning et al. (2014) tested a model where relapses occur in bursts every 3 weeks, but it arguably provided no better fit to the data than a model of constant hypnozoite activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study of the slowly eliminated drug dihydroartemisinin-piperaquine (DP) Tarning et al. (2014) tested a model where relapses occur in bursts every 3 weeks, but it arguably provided no better fit to the data than a model of constant hypnozoite activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tarning et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "09481320-a729-4665-8a4f-a39ff33e8048",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C46",
+      "claim": "The model does not account for the potential role of triggers of hypnozoite activation such as febrile illness.",
+      "claim_type": "EXPLICIT",
+      "source": "The potential role of triggers of hypnozoite activation such as febrile illness (Shanks and White, 2013) are not accounted for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a limitation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "595a3561-bf6c-4b87-9bf6-0aaac0eba752",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C47",
+      "claim": "There is no heterogeneity or seasonality in transmission, and no age structure in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no heterogeneity or seasonality in transmission, and no age structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a limitation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "df14aab4-e863-44ed-abaa-f1fd8d711174",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C48",
+      "claim": "Incorporation of the acquisition of natural immunity into the model will be particularly important for settings with high transmission intensity where immunity has a role in regulating blood-stage infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of the acquisition of natural immunity into the model will be particularly important for settings with high transmission intensity where immunity has a role in regulating blood-stage infections (Mueller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mueller et al., 2013 and represents a limitation of the current model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "d948bc4c-0359-48db-99e6-ab25b2d9ef66",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C49",
+      "claim": "It is assumed that all individuals infected with blood-stage parasites are capable of transmitting to mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is assumed that all individuals infected with blood-stage parasites are capable of transmitting to mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "7aa07bd8-2876-4d0c-ba9d-187c286ee375",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C50",
+      "claim": "P. falciparum and P. vivax parasite prevalence (PfPR and PvPR) are the most widely reported and best validated metrics of malaria transmission from epidemiological studies.",
+      "claim_type": "EXPLICIT",
+      "source": "P. falciparum and P. vivax parasite prevalence (PfPR and PvPR) are the most widely reported and best validated metrics of malaria transmission from epidemiological studies (Gething et al., 2011a; Gething et al., 2012) providing measurements of the proportion of individuals with detectable blood-stage parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gething et al., 2011a and Gething et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "095fabcd-67d3-44b9-909a-4ad78475193e",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C51",
+      "claim": "In settings with similar levels of P. vivax and P. falciparum transmission, the model predicts PvPR to be greater than PfPR due to the additional blood-stage infections arising from relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In settings with similar levels of P. vivax and P. falciparum transmission, the model predicts PvPR to be greater than PfPR due to the additional blood-stage infections arising from relapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "b96e0b60-389e-4843-b6c6-c47e8a490d37",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C52",
+      "claim": "Empirical observations find PfPR to be similar to or greater than PvPR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this does not agree with empirical observations which find PfPR to be similar to or greater than PvPR (Snounou and White, 2004; Mueller et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Snounou and White, 2004 and Mueller et al., 2009b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "36d1c1b1-0ff2-421e-a813-623e875d8ca5",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C53",
+      "claim": "The discrepancy between model predictions and empirical observations is most likely explained by the rapid acquisition of immunity to P. vivax, the low detectability of P. vivax blood-stage infections, and the longer durations of P. falciparum blood-stage infection not captured in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This is most likely explained by the rapid acquisition of immunity to P. vivax (Koepfli et al., 2013; Mueller et al., 2013) the low detectability of P. vivax blood-stage infections (Harris et al., 2010), and the longer durations of P. falciparum blood-stage infection (Molineaux et al., 2001) not captured in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Koepfli et al., 2013, Mueller et al., 2013, Harris et al., 2010, and Molineaux et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "df5c2d43-8567-4c1d-a0cb-8117b149627f",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C54",
+      "claim": "The additional P. vivax parasite reservoir in the liver means that PfPR and PvPR are not directly comparable metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the additional P. vivax parasite reservoir in the liver means that PfPR and PvPR are not directly comparable metrics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the biological differences between P. vivax and P. falciparum.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "b7543d31-8947-43d2-8da1-efae83522193",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C55",
+      "claim": "If a parasitological survey indicates similar parasite prevalence, a greater control effort will be required to reduce P. vivax transmission than to reduce P. falciparum transmission because of the additional infections emerging from the hypnozoite reservoir.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus if a parasitological survey indicates similar parasite prevalence, a greater control effort will be required to reduce P. vivax transmission than to reduce P. falciparum transmission because of the additional infections emerging from the hypnozoite reservoir.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model structure and the presence of the hypnozoite reservoir.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "7aacee68-9d5a-4ea2-a0ef-77f23eaa8911",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C56",
+      "claim": "Vector control interventions that increase mosquito mortality are expected to cause greater reductions in PfPR than PvPR, as higher levels of P. vivax transmission can be maintained with fewer mosquito bites.",
+      "claim_type": "EXPLICIT",
+      "source": "Vector control interventions that increase mosquito mortality are expected to cause greater reductions in PfPR than PvPR (Figure 5A), as higher levels of P. vivax transmission can be maintained with fewer mosquito bites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A and is an inference from the model structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "cd7d863f-b98f-4781-9bbf-1924aa19ab03",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C57",
+      "claim": "Increased vector control has caused greater reductions in P. falciparum than P. vivax in both Thailand and Brazil.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been observed in both Thailand (Sattabongkot et al., 2004) and Brazil (Coura et al., 2006) where increased vector control has caused greater reductions in P. falciparum than P. vivax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sattabongkot et al., 2004 and Coura et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "f3afa0ab-b21b-4070-8c05-4aafd810bc75",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C58",
+      "claim": "In P. vivax and P. falciparum co-endemic regions, heterogeneity in exposure to mosquito bites may cause associations between P. falciparum fevers and the risk of future P. vivax relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In P. vivax and P. falciparum co-endemic regions, heterogeneity in exposure to mosquito bites may cause associations between P. falciparum fevers and the risk of future P. vivax relapses (Douglas et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Douglas et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "4a513ec0-cc91-47ce-8751-ee8b3d5e691e",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C59",
+      "claim": "The inclusion of primaquine in first-line treatment for P. falciparum may also reduce P. vivax transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the inclusion of primaquine in first-line treatment for P. falciparum may also reduce P. vivax transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the association between P. falciparum and P. vivax infections.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "567e0123-74ad-417c-9a08-1db7c9f0d9f1",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C60",
+      "claim": "In treatment-reinfection studies of Papua New Guinean children, mass administration of drugs such as chloroquine or artemether-lumefantrine successfully cleared P. vivax blood-stage infections but rapid recurrence of infection was observed during follow-up\u2014most likely due to relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In treatment-reinfection studies of Papua New Guinean children (Betuela et al., 2012; Robinson et al., unpublished), mass administration of drugs such as chloroquine or artemether-lumefantrine successfully cleared P. vivax blood-stage infections but rapid recurrence of infection was observed during follow-up\u2014most likely due to relapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Betuela et al., 2012 and Robinson et al., unpublished.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "29c3d4c0-2ff1-4edf-8b4a-a20a9af63536",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C61",
+      "claim": "The addition of primaquine to the treatment regimen caused large reductions in the rate of recurrent infections in Papua New Guinean children.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of primaquine to the treatment regimen caused large reductions in the rate of recurrent infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to studies in Papua New Guinean children.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "de1e8600-aa43-4cd3-8c74-671edb8e4921",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C62",
+      "claim": "Primaquine treatment clears the hypnozoite reservoir but requires a difficult 14 day treatment regimen.",
+      "claim_type": "EXPLICIT",
+      "source": "Although primaquine treatment clears the hypnozoite reservoir, it requires a difficult 14 day treatment regimen, and is not without risk due to vulnerability to haemolytic toxicity among glucose-6-phosphate dehydrogenase (G6PD) deficient patients (Howes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about primaquine treatment, supported by citation to Howes et al., 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "9af4ea5e-ee73-482b-91fb-ac2eecd96a5f",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C63",
+      "claim": "Primaquine is not without risk due to vulnerability to haemolytic toxicity among glucose-6-phosphate dehydrogenase (G6PD) deficient patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Although primaquine treatment clears the hypnozoite reservoir, it requires a difficult 14 day treatment regimen, and is not without risk due to vulnerability to haemolytic toxicity among glucose-6-phosphate dehydrogenase (G6PD) deficient patients (Howes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Howes et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "38d3feb4-b908-44d8-80d6-1efb07d1613b",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C64",
+      "claim": "Individuals should be tested for G6PD deficiency before the administration of primaquine.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals should thus be tested for G6PD deficiency (Kim et al., 2011) before the administration of primaquine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kim et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "04cf732a-ce96-48b2-a72f-1a7935d4bf16",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C65",
+      "claim": "Tafenoquine is currently undergoing phase three trials and is likely to be licensed for use by 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "A primaquine analogue, tafenoquine, is currently undergoing phase three trials and is likely to be licensed for use by 2017 (Llanos-Cuentas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Llanos-Cuentas et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "554669c8-95d8-4458-91ed-d79879a2c7b2",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C66",
+      "claim": "Tafenoquine requires a single dose alongside a 3 day chloroquine regimen.",
+      "claim_type": "EXPLICIT",
+      "source": "Tafenoquine requires a single dose alongside a 3 day chloroquine regimen, but is subject to the same risks in G6PD deficient patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tafenoquine treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "589a2fd1-c9fb-4a1d-b6e3-4d70135d35f6",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C67",
+      "claim": "Tafenoquine is subject to the same risks in G6PD deficient patients as primaquine.",
+      "claim_type": "EXPLICIT",
+      "source": "Tafenoquine requires a single dose alongside a 3 day chloroquine regimen, but is subject to the same risks in G6PD deficient patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tafenoquine treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "de450a81-76fe-4b05-a36b-7b4dce15ab13",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C68",
+      "claim": "In the absence of effective diagnostics for detecting liver-stage parasites, models will play a crucial role in estimating and predicting the effectiveness of interventions that target the hypnozoite reservoir.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of effective diagnostics for detecting liver-stage parasites (malERA Consultative Group on Diagnoses and Diagnostics, 2011), models will play a crucial role in estimating and predicting the effectiveness of interventions that target the hypnozoite reservoir, either indirectly via vector control and blood-stage anti-malarials or directly via primaquine treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to malERA Consultative Group on Diagnoses and Diagnostics, 2011 and is a logical inference about the role of models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "d31fac3c-367c-46d0-b5a6-334e3942a3a1",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C69",
+      "claim": "The number of hypnozoites following a primary infection is assumed to be geometrically distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on evidence that the number of sporozoites injected with a mosquito bite approximately follows a geometric distribution (Beier et al., 1991), we assume that the number of hypnozoites following a primary infection is also geometrically distributed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption based on citation to Beier et al., 1991.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "26e7cb85-793b-48da-8cb4-306f04e2397d",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C70",
+      "claim": "The number of sporozoites injected with a mosquito bite approximately follows a geometric distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on evidence that the number of sporozoites injected with a mosquito bite approximately follows a geometric distribution (Beier et al., 1991), we assume that the number of hypnozoites following a primary infection is also geometrically distributed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Beier et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "bdf1ba12-e08d-4924-8b7e-4ba2fac35514",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C71",
+      "claim": "Each hypnozoite acts independently of other hypnozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "Underlying assumptions of this model are: (i) each hypnozoite acts independently of other hypnozoites, for example, hypnozoites will not activate in batches due to mechanisms such as quorum sensing; and, (ii) hypnozoite death occurs at a constant rate, due to either death of the hypnozoite within the hepatocyte or death of the hepatocyte itself (Malato et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "198cd858-af75-4c90-bee3-9927aa9fe2f4",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C72",
+      "claim": "Hypnozoites will not activate in batches due to mechanisms such as quorum sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Underlying assumptions of this model are: (i) each hypnozoite acts independently of other hypnozoites, for example, hypnozoites will not activate in batches due to mechanisms such as quorum sensing; and, (ii) hypnozoite death occurs at a constant rate, due to either death of the hypnozoite within the hepatocyte or death of the hepatocyte itself (Malato et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "0113a111-1173-4f87-9ecf-51866b16f404",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C73",
+      "claim": "Hypnozoite death occurs at a constant rate, due to either death of the hypnozoite within the hepatocyte or death of the hepatocyte itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Underlying assumptions of this model are: (i) each hypnozoite acts independently of other hypnozoites, for example, hypnozoites will not activate in batches due to mechanisms such as quorum sensing; and, (ii) hypnozoite death occurs at a constant rate, due to either death of the hypnozoite within the hepatocyte or death of the hepatocyte itself (Malato et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption and supported by citation to Malato et al., 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "0c3c7ea2-d58d-419d-8656-70141196b5b2",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C74",
+      "claim": "The activation of a hypnozoite may not directly correspond to a detected relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of a hypnozoite may not directly correspond to a detected relapse. For example, an infection arising from two hypnozoites activating within a day of each other is likely to be classified as a single relapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between hypnozoite activation and detected relapses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "752e48ee-11a2-4e7b-91a4-9702e3b8a2f3",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C75",
+      "claim": "An infection arising from two hypnozoites activating within a day of each other is likely to be classified as a single relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an infection arising from two hypnozoites activating within a day of each other is likely to be classified as a single relapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about detection of relapses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "6a4cd8a8-89d9-40f1-851b-73c2ed2060d8",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C76",
+      "claim": "Before a hypnozoite is capable of activating in temperate strains, it must undergo a long-latency phase of duration d.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that before a hypnozoite is capable of activating, it must undergo a long-latency phase of duration d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption for temperate strains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "bdb2c536-25c0-4fdb-9389-a7131768e8f5",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C77",
+      "claim": "During the long-latency phase hypnozoites are subject to death at rate \u00b5.",
+      "claim_type": "EXPLICIT",
+      "source": "During this period hypnozoites are subject to death at rate \u00b5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption for temperate strains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "59108721-115e-45ae-8070-08369120d173",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C78",
+      "claim": "The time spent in the temperate long-latency phase can be described by a gamma distribution with mean d and variance d2/M.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we assume that the time spent in the temperate long-latency phase can be described by a gamma distribution with mean d and variance d2/M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption for temperate strains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "8f57711a-6021-47a4-94e4-cf22c2387a43",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C79",
+      "claim": "It is assumed that all hypnozoites in an infection must undergo some waiting period before any of them can activate in temperate strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model implemented here, it is assumed that all hypnozoites in an infection must undergo some waiting period before any of them can activate, and that during the long-latency phase hypnozoites are at risk of death due to natural hepatocyte death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption for temperate strains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "57dab307-fadb-4e45-b942-c914413480c1",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C80",
+      "claim": "During the long-latency phase hypnozoites are at risk of death due to natural hepatocyte death.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model implemented here, it is assumed that all hypnozoites in an infection must undergo some waiting period before any of them can activate, and that during the long-latency phase hypnozoites are at risk of death due to natural hepatocyte death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model assumption for temperate strains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "4a11da1d-c238-4cea-a5d8-e2d6b88a50b4",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C81",
+      "claim": "The within-host model for tropical relapses was fitted to data on time to first relapse infection from three ecological zones with tropical strains of P. vivax: South America, South East Asia and Melanesia.",
+      "claim_type": "EXPLICIT",
+      "source": "The within-host model for tropical relapses was fitted in a Bayesian framework to data on time to first relapse infection from three ecological zones with tropical strains of P. vivax: South America, South East Asia and Melanesia (see Source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "520bdb48-bc10-416b-9166-68ad0e4253e0",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C82",
+      "claim": "The data are described in detail by Battle et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "The data are described in detail by Battle et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Battle et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "d7dfb871-188c-40d0-9c2a-6da1a4e2c580",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C83",
+      "claim": "Individual-level data on time to first recurrence was collated from individuals exposed to P. vivax infection and mostly followed up in the absence of exposure to new infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual-level data on time to first recurrence was collated from individuals exposed to P. vivax infection (either via natural exposure or artificial challenge) and mostly followed up in the absence of exposure to new infections (Battle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Battle et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "769e57a1-3435-4df2-9db7-fe190af15cb4",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C84",
+      "claim": "Data on time to first relapse were not sufficiently informative to estimate the three parameters simultaneously and hence prior distributions were assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "Data on time to first relapse were not sufficiently informative to estimate the three parameters simultaneously and hence prior distributions were assumed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the data and the modeling approach taken.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "d5f112f6-9171-4140-b579-98c314129673",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C85",
+      "claim": "N was assumed to have an informative gamma prior distribution with median 10 (95% credible interval (CrI): 1, 28).",
+      "claim_type": "EXPLICIT",
+      "source": "N was assumed to have an informative gamma prior distribution with median 10 (95% credible interval (CrI): 1, 28) (Beier et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the prior distribution used in the Bayesian analysis, supported by citation to Beier et al., 1991.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "dd6c81bc-6579-47ab-9f25-73fa1de65bd4",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C86",
+      "claim": "\u00b5 was assumed to have an informative gamma prior distribution with median 1/200 (95% CrI: 1/309, 1/140) day\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "\u00b5 was assumed to have an informative gamma prior distribution with median 1/200 (95% CrI: 1/309, 1/140) day\u22121 (Malato et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the prior distribution used in the Bayesian analysis, supported by citation to Malato et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "21a9eaf0-7367-4469-8c7b-ec946469e02d",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C87",
+      "claim": "\u03b1 was assumed to have an uninformative uniform prior distribution U(0,1).",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1 was assumed to have an uninformative uniform prior distribution U(0,1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the prior distribution used in the Bayesian analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "31739bf5-2b3c-41e4-a507-6c3fc61ef8f3",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C88",
+      "claim": "The likelihood was sampled using a Metropolis\u2013Hastings Markov Chain Monte Carlo (MCMC) algorithm and the posterior parameter distributions estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "The likelihood in Equation 12 was sampled using a Metropolis\u2013Hastings Markov Chain Monte Carlo (MCMC) algorithm and the posterior parameter distributions were estimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for parameter estimation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "27d3e95a-af42-4fc9-a93e-46a80b96cf97",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "claim_id": "C89",
+      "claim": "100,000 MCMC iterations were sampled and visually checked for convergence and mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "100,000 MCMC iterations were sampled and visually checked for convergence and mixing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MCMC procedure used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A within-host mathematical model for tropical P. vivax relapses was fitted to empirical data from three ecological zones using Bayesian methods. The model estimates parameters for hypnozoite number (N), activation rate (\u03b1), and death rate (\u03bc), though N and \u03b1 were found to be highly correlated, indicating identifiability issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C17-C18 and C81-C89 describe model fitting to empirical relapse data. However, C84 explicitly acknowledges that the data were \"not sufficiently informative to estimate the three parameters simultaneously,\" requiring informative priors (C85-C86). The high correlation between N and \u03b1 (C17, Figure 1\u2014figure supplement 1) indicates a fundamental identifiability problem: the same relapse pattern can result from few fast-activating or many slow-activating hypnozoites (C18). While the Bayesian framework is appropriate, the reliance on informative priors and parameter non-identifiability means the specific parameter estimates are uncertain and model-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The within-host model predicts dose-dependent relapse patterns where more hypnozoites lead to more frequent relapses and shorter time to first relapse. The model also predicts that apparent periodicity in relapses can arise from censoring effects due to prophylactic drug protection, rather than biological mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 and C25-C28 are well-supported by model simulations shown in Figures 2 and 3. The dose-dependency prediction (C19) follows logically from the model structure with independent hypnozoite activation. The periodicity explanation (C22-C23) is demonstrated through simulations with 14-day censoring windows. The exponential decay predictions (C25-C28) are consistent with the constant-rate assumptions and supported by cited empirical observations (Horing 1947, White 2011). These are internally consistent model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model assumes hypnozoites activate and die at constant rates, act independently, and follow a geometric distribution in number. The constant activation assumption implies immediate relapse potential, though this conflicts with clinical observations of a ~2-3 week delay before first relapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C49 and C69-C75 describe core model assumptions. While mathematically tractable, the constant activation assumption (C42-C43) is acknowledged to conflict with clinical observations (C44). The authors argue prophylactic drug effects mask early relapses, but this is speculative. C45 cites Tarning et al. (2014) as providing equivocal support. The model explicitly excludes known biological factors like fever triggers (C46), heterogeneity (C47), immunity (C48), and assumes all infected individuals transmit equally (C49). These simplifications may be reasonable for qualitative insights but limit quantitative predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "54ce245e-665d-4e32-b68e-1c2a3e7f6e40",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For temperate strains, the model incorporates a long-latency phase (mean ~6 months) before hypnozoites can activate, modeled using a gamma distribution implemented through multiple compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 describe the temperate strain model extension. The gamma distribution approach using M compartments (C78) is a standard mathematical technique for reducing variance in waiting times. The 6-month latency period is well-documented in the literature (C13-C14, C16). The model structure is clearly described and mathematically sound, though the biological mechanisms remain unknown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "e92dbdd1-0d5c-4447-ab3c-18fb23cee4fd",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The transmission model predicts that the hypnozoite reservoir is over-dispersed following a negative binomial distribution, with hypnozoite prevalence exceeding blood-stage prevalence. For given transmission intensity, P. vivax blood-stage prevalence is predicted to exceed P. falciparum prevalence due to multiple relapses from single infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C29-C32 are supported by model predictions shown in Figure 4. The negative binomial distribution (C32) arises naturally from the geometric distribution assumption for hypnozoites per infection combined with multiple infections. The prediction that hypnozoite prevalence exceeds blood-stage prevalence (C29) follows logically from the longer duration of hypnozoite carriage. The PvPR > PfPR prediction (C30) is a direct consequence of relapses generating additional blood-stage infections. These are internally consistent model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "92fb72b6-1af7-4b89-ac3d-79f079b36d29",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model predicts higher P. vivax than P. falciparum blood-stage prevalence at similar transmission intensities, but this contradicts empirical observations. The authors attribute this discrepancy to rapid immunity acquisition, low detectability of P. vivax, and longer P. falciparum infection durations not captured in the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C51-C54 identify a major discrepancy between model predictions and empirical data. C51 states the model prediction while C52 notes it contradicts observations (Snounou and White 2004, Mueller et al. 2009b). C53 offers post-hoc explanations citing immunity, detectability, and infection duration, but these factors are explicitly excluded from the model (C47-C48). This represents a fundamental model failure that the authors acknowledge but do not resolve. The explanations in C53 are speculative and would require model modifications to test.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "5f10b06a-2682-44c1-b512-357b6e595bd1",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Vector control interventions are predicted to cause greater reductions in P. falciparum than P. vivax prevalence because the hypnozoite reservoir allows P. vivax transmission to persist with fewer mosquito bites. This prediction is supported by observations from Thailand and Brazil.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C56-C57 present a model prediction (Figure 5A) with empirical support. The differential impact follows logically from the hypnozoite reservoir providing a buffer against transmission interruption. Citations to field observations from Thailand (Sattabongkot et al. 2004) and Brazil (Coura et al. 2006) provide external validation (C57). This represents a well-supported qualitative prediction, though quantitative validation would require more detailed comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "d9843a3f-0c7d-431a-9aa8-c2ea9371533e",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Treatment with blood-stage antimalarials alone reduces blood-stage prevalence of both species but has slow impact on the P. vivax hypnozoite reservoir since it is not directly targeted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 describe model predictions shown in Figure 5B. The slow reduction in hypnozoite prevalence (C35) follows logically from the model structure where blood-stage treatment only indirectly affects hypnozoites by preventing transmission. This is a straightforward consequence of the three-reservoir structure (blood, liver, mosquito) and is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "f8c1486d-08e5-4042-8f13-7e69e25d27a1",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Incorporating primaquine into first-line treatment is predicted to cause substantial reductions in P. vivax transmission by efficiently targeting the hypnozoite reservoir. Individuals with more hypnozoites experience more relapses, making them more likely to seek treatment and have their hypnozoites cleared, creating a self-targeting effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C36-C38 present a key model prediction supported by Figures 5C and 6. The self-targeting mechanism (C37-C38) is a logical consequence of the dose-dependent relapse frequency (C19) combined with treatment upon clinical presentation. Figure 6 demonstrates the preferential reduction in high-burden individuals. This represents an important and well-supported insight about intervention targeting, though it assumes perfect treatment compliance and efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "ff22714a-20cc-4cc9-be07-47c581b0a285",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Greater control effort is required to reduce P. vivax than P. falciparum transmission when blood-stage prevalence is similar, due to the additional hypnozoite reservoir. Primaquine treatment for P. falciparum may also reduce P. vivax transmission in co-endemic areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C59 are logical inferences from the model structure. C55 follows from the three-reservoir system requiring interventions to target an additional parasite stage. C59 is supported by C58 citing heterogeneity in exposure (Douglas et al. 2011). Both represent reasonable qualitative predictions, though C59 is more speculative as it depends on co-infection patterns not explicitly modeled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "718c946f-b00c-4cb6-98b7-e4797b15ac94",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Empirical studies in Papua New Guinea show that blood-stage antimalarials alone lead to rapid recurrence, while adding primaquine substantially reduces recurrence. However, primaquine requires 14-day treatment, poses hemolytic risks in G6PD-deficient patients, and requires G6PD testing. Tafenoquine offers single-dose treatment but has similar G6PD risks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 summarize established knowledge about primaquine and tafenoquine treatment, supported by appropriate citations (Betuela et al. 2012, Howes et al. 2013, Kim et al. 2011, Llanos-Cuentas et al. 2014). C60-C61 provide empirical validation of the model's predictions about primaquine efficacy. C62-C67 accurately describe treatment challenges and alternatives. These are well-documented facts from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "5c863814-1d3b-40c9-b406-e7825e46f89b",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In the absence of effective diagnostics for liver-stage parasites, mathematical models will play a crucial role in estimating intervention effectiveness against the hypnozoite reservoir.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is a reasonable conclusion supported by citation to malERA Consultative Group (2011) regarding diagnostic limitations. Given that hypnozoites cannot be directly detected in living patients, modeling is indeed necessary for predicting intervention impacts. This represents a well-justified statement about the role of modeling in this system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about P. vivax biology, epidemiology, and the hypnozoite reservoir, including geographical variation in relapse patterns and the distinction from P. falciparum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C5-C16, C39 present established knowledge about P. vivax biology and epidemiology, appropriately supported by citations to the literature (Mueller et al., Battle et al., White, Berliner et al., Coatney et al., etc.). These provide necessary background context and are well-documented in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "df0c4dd0-3b75-4b75-85a8-6a61d4ab90e9",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Alternative hypotheses for relapse patterns include fever-triggered activation and associations between P. falciparum and P. vivax in co-endemic regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C58 cite alternative mechanisms from the literature (White 2011, Douglas et al. 2011). These represent competing hypotheses that the current model does not test, appropriately acknowledged as limitations (C46). The citations provide adequate support for these alternative explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    },
+    {
+      "id": "116cfe96-e728-4f69-be1b-f0c03e9371a4",
+      "content_id": "d1c235e4-930d-40fe-b2ee-bc4dfb41201a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Parasite prevalence (PfPR and PvPR) are the most widely reported and validated metrics of malaria transmission from epidemiological studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by citations to Gething et al. (2011a, 2012) and represents established epidemiological practice. This is a factual statement about measurement standards in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:49:28.450580Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b182a2be-ab77-4bb5-91b6-679a9631fa15",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "5d25459c-293f-425a-95b2-e7b2dc6412c0",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "4a11da1d-c238-4cea-a5d8-e2d6b88a50b4",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "520bdb48-bc10-416b-9166-68ad0e4253e0",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "d7dfb871-188c-40d0-9c2a-6da1a4e2c580",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "769e57a1-3435-4df2-9db7-fe190af15cb4",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "d5f112f6-9171-4140-b579-98c314129673",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "dd6c81bc-6579-47ab-9f25-73fa1de65bd4",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "21a9eaf0-7367-4469-8c7b-ec946469e02d",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "31739bf5-2b3c-41e4-a507-6c3fc61ef8f3",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "27d3e95a-af42-4fc9-a93e-46a80b96cf97",
+      "result_id": "8f3f0df1-4ec4-4fea-97fe-449276b3dbd5"
+    },
+    {
+      "claim_id": "973ae08e-6610-4ad0-bc9f-3e9406be0e2f",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "5fea7916-c160-46ae-b9ea-30197a704aaf",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "ca0b0f0b-c28c-4325-ad67-a2bd13fa002c",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "6b70dee3-36da-44b0-9e75-4b78baf454b0",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "ac5b4b3c-1126-41a3-8ec5-e74e237bc144",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "7d64f965-3354-4d1b-a835-f8ec708a833c",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "bc23547f-224b-4b42-a92d-8c8ce75285d6",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "a5d33dcc-1950-4a19-8e1a-1c9d011e82a5",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "b7349e7a-6941-4bdf-bb20-3fe1c7c002ba",
+      "result_id": "e29f54a5-fd1b-4840-8ef8-a845a47cb681"
+    },
+    {
+      "claim_id": "621eaa2a-f8de-40d5-8134-b6c33462cbf0",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "dbc851e1-e560-4470-b177-586733672c1d",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "c479852a-d75a-4991-8522-e7409b953ee3",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "a4b54a26-3451-4eec-8131-34c759dc1588",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "6012ed15-5d6a-4008-9847-78a05dfd7ced",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "ea694f8f-af02-46d5-931d-99f34a7f3ed2",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "09481320-a729-4665-8a4f-a39ff33e8048",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "595a3561-bf6c-4b87-9bf6-0aaac0eba752",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "df14aab4-e863-44ed-abaa-f1fd8d711174",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "d948bc4c-0359-48db-99e6-ab25b2d9ef66",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "d31fac3c-367c-46d0-b5a6-334e3942a3a1",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "26e7cb85-793b-48da-8cb4-306f04e2397d",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "bdf1ba12-e08d-4924-8b7e-4ba2fac35514",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "198cd858-af75-4c90-bee3-9927aa9fe2f4",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "0113a111-1173-4f87-9ecf-51866b16f404",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "0c3c7ea2-d58d-419d-8656-70141196b5b2",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "752e48ee-11a2-4e7b-91a4-9702e3b8a2f3",
+      "result_id": "473f8f0c-cd2c-4aa0-ba48-16b6cb298860"
+    },
+    {
+      "claim_id": "6a4cd8a8-89d9-40f1-851b-73c2ed2060d8",
+      "result_id": "54ce245e-665d-4e32-b68e-1c2a3e7f6e40"
+    },
+    {
+      "claim_id": "bdb2c536-25c0-4fdb-9389-a7131768e8f5",
+      "result_id": "54ce245e-665d-4e32-b68e-1c2a3e7f6e40"
+    },
+    {
+      "claim_id": "59108721-115e-45ae-8070-08369120d173",
+      "result_id": "54ce245e-665d-4e32-b68e-1c2a3e7f6e40"
+    },
+    {
+      "claim_id": "8f57711a-6021-47a4-94e4-cf22c2387a43",
+      "result_id": "54ce245e-665d-4e32-b68e-1c2a3e7f6e40"
+    },
+    {
+      "claim_id": "57dab307-fadb-4e45-b942-c914413480c1",
+      "result_id": "54ce245e-665d-4e32-b68e-1c2a3e7f6e40"
+    },
+    {
+      "claim_id": "8bdbeab5-be56-4ccf-a8e3-e999a8a9853c",
+      "result_id": "e92dbdd1-0d5c-4447-ab3c-18fb23cee4fd"
+    },
+    {
+      "claim_id": "235dc697-55d6-4004-a727-75b14d9ce6f9",
+      "result_id": "e92dbdd1-0d5c-4447-ab3c-18fb23cee4fd"
+    },
+    {
+      "claim_id": "e4df6e7e-3682-4bf4-a4b8-e295b2976e0e",
+      "result_id": "e92dbdd1-0d5c-4447-ab3c-18fb23cee4fd"
+    },
+    {
+      "claim_id": "13910b26-d2d4-42d8-9d69-6ff348ba1292",
+      "result_id": "e92dbdd1-0d5c-4447-ab3c-18fb23cee4fd"
+    },
+    {
+      "claim_id": "e937a69d-d285-4393-8f55-f12f15959956",
+      "result_id": "e92dbdd1-0d5c-4447-ab3c-18fb23cee4fd"
+    },
+    {
+      "claim_id": "095fabcd-67d3-44b9-909a-4ad78475193e",
+      "result_id": "92fb72b6-1af7-4b89-ac3d-79f079b36d29"
+    },
+    {
+      "claim_id": "b96e0b60-389e-4843-b6c6-c47e8a490d37",
+      "result_id": "92fb72b6-1af7-4b89-ac3d-79f079b36d29"
+    },
+    {
+      "claim_id": "36d1c1b1-0ff2-421e-a813-623e875d8ca5",
+      "result_id": "92fb72b6-1af7-4b89-ac3d-79f079b36d29"
+    },
+    {
+      "claim_id": "df5c2d43-8567-4c1d-a0cb-8117b149627f",
+      "result_id": "92fb72b6-1af7-4b89-ac3d-79f079b36d29"
+    },
+    {
+      "claim_id": "f25fca6c-8e03-4ed1-8da7-a0e89bcb945d",
+      "result_id": "5f10b06a-2682-44c1-b512-357b6e595bd1"
+    },
+    {
+      "claim_id": "7aacee68-9d5a-4ea2-a0ef-77f23eaa8911",
+      "result_id": "5f10b06a-2682-44c1-b512-357b6e595bd1"
+    },
+    {
+      "claim_id": "cd7d863f-b98f-4781-9bbf-1924aa19ab03",
+      "result_id": "5f10b06a-2682-44c1-b512-357b6e595bd1"
+    },
+    {
+      "claim_id": "009c198f-eabf-413f-84b0-f974f487670c",
+      "result_id": "d9843a3f-0c7d-431a-9aa8-c2ea9371533e"
+    },
+    {
+      "claim_id": "05450000-92f1-4cb2-8047-e4b002894bb1",
+      "result_id": "d9843a3f-0c7d-431a-9aa8-c2ea9371533e"
+    },
+    {
+      "claim_id": "77e19659-f9f4-4ed8-8b7b-b680b92e359a",
+      "result_id": "f8c1486d-08e5-4042-8f13-7e69e25d27a1"
+    },
+    {
+      "claim_id": "c0fab196-d29a-4d8d-9ec2-d7294df30bed",
+      "result_id": "f8c1486d-08e5-4042-8f13-7e69e25d27a1"
+    },
+    {
+      "claim_id": "152b7565-e7a0-4905-81e1-01e30a5eb0b2",
+      "result_id": "f8c1486d-08e5-4042-8f13-7e69e25d27a1"
+    },
+    {
+      "claim_id": "dd792205-dee9-47c3-bdc0-c59098273528",
+      "result_id": "f8c1486d-08e5-4042-8f13-7e69e25d27a1"
+    },
+    {
+      "claim_id": "9eec63ad-acc8-4db9-9fb4-aac3c491e298",
+      "result_id": "f8c1486d-08e5-4042-8f13-7e69e25d27a1"
+    },
+    {
+      "claim_id": "b7543d31-8947-43d2-8da1-efae83522193",
+      "result_id": "ff22714a-20cc-4cc9-be07-47c581b0a285"
+    },
+    {
+      "claim_id": "4a513ec0-cc91-47ce-8751-ee8b3d5e691e",
+      "result_id": "ff22714a-20cc-4cc9-be07-47c581b0a285"
+    },
+    {
+      "claim_id": "567e0123-74ad-417c-9a08-1db7c9f0d9f1",
+      "result_id": "718c946f-b00c-4cb6-98b7-e4797b15ac94"
+    },
+    {
+      "claim_id": "29c3d4c0-2ff1-4edf-8b4a-a20a9af63536",
+      "result_id": "718c946f-b00c-4cb6-98b7-e4797b15ac94"
+    },
+    {
+      "claim_id": "de1e8600-aa43-4cd3-8c74-671edb8e4921",
+      "result_id": "718c946f-b00c-4cb6-98b7-e4797b15ac94"
+    },
+    {
+      "claim_id": "9af4ea5e-ee73-482b-91fb-ac2eecd96a5f",
+      "result_id": "718c946f-b00c-4cb6-98b7-e4797b15ac94"
+    },
+    {
+      "claim_id": "38d3feb4-b908-44d8-80d6-1efb07d1613b",
+      "result_id": "718c946f-b00c-4cb6-98b7-e4797b15ac94"
+    },
+    {
+      "claim_id": "04cf732a-ce96-48b2-a72f-1a7935d4bf16",
+      "result_id": "718c946f-b00c-4cb6-98b7-e4797b15ac94"
+    },
+    {
+      "claim_id": "554669c8-95d8-4458-91ed-d79879a2c7b2",
+      "result_id": "718c946f-b00c-4cb6-98b7-e4797b15ac94"
+    },
+    {
+      "claim_id": "589a2fd1-c9fb-4a1d-b6e3-4d70135d35f6",
+      "result_id": "718c946f-b00c-4cb6-98b7-e4797b15ac94"
+    },
+    {
+      "claim_id": "de450a81-76fe-4b05-a36b-7b4dce15ab13",
+      "result_id": "5c863814-1d3b-40c9-b406-e7825e46f89b"
+    },
+    {
+      "claim_id": "0d3b28b7-0a0f-4cce-812a-817f5e00b732",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "6045a649-a2d2-4530-a3f2-13d5e7fcd3f0",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "2e0c0395-410f-4589-a20e-7b13dcbccf1f",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "b9a46f8c-7c4f-41af-8a16-7a30ff8649c2",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "5dd93f8e-d191-4dbb-9af5-4080097183ac",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "009e8a50-fa96-494f-912d-889bf5bb40ac",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "4746a258-a02e-4f05-b135-e5cf246a6639",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "e4ceca15-ebdf-4c29-b042-acdce48336da",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "fabdb251-5dfb-4615-8f64-ed73c79d60c4",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "90a0db21-7b15-44e8-8f1e-afaf29e1bec9",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "ba48b0df-2fee-41a4-ae0e-e1071c358028",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "cee40ce1-eea7-4e53-8cd7-a8fdae2cb4ea",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "f447d8af-9c0c-4489-a89c-4cc73cecf3c8",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "988b6f4c-9ec5-400e-ac2e-f89a85f776c2",
+      "result_id": "2fdd9fb5-89a8-46f6-82ab-07ccec807904"
+    },
+    {
+      "claim_id": "e58c4f5c-add3-4c12-a747-32bdd351598d",
+      "result_id": "df0c4dd0-3b75-4b75-85a8-6a61d4ab90e9"
+    },
+    {
+      "claim_id": "f3afa0ab-b21b-4070-8c05-4aafd810bc75",
+      "result_id": "df0c4dd0-3b75-4b75-85a8-6a61d4ab90e9"
+    },
+    {
+      "claim_id": "7aa07bd8-2876-4d0c-ba9d-187c286ee375",
+      "result_id": "116cfe96-e728-4f69-be1b-f0c03e9371a4"
+    }
+  ],
+  "comparisons": []
+}

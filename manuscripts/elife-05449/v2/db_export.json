@@ -1,0 +1,1773 @@
+{
+  "submission": {
+    "id": "a7d5d7a6-b05a-40be-adc9-db554bc0def1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:37:47.706129Z",
+    "updated_at": "2025-11-28T22:37:47.706129Z"
+  },
+  "content": [
+    {
+      "id": "1132df98-d46c-462f-a0e8-889456434188",
+      "submission_id": "a7d5d7a6-b05a-40be-adc9-db554bc0def1",
+      "content_type": "manuscript",
+      "content_text": "# A striatal-enriched intronic GPCR modulates huntingtin levels and toxicity\n\n## Authors\n\n- Yuwei Yao<sup>1</sup>\n- Xiaotian Cui<sup>1</sup>\n- Ismael Al-Ramahi<sup>3</sup>\n- Xiaoli Sun<sup>1</sup>\n- Bo Li<sup>1</sup>\n- Jiapeng Hou<sup>1</sup>\n- Marian Difiglia<sup>4</sup>\n- James Palacino<sup>5</sup>\n- Zhi-Ying Wu<sup>6</sup> \u2020\n- Lixiang Ma<sup>7</sup> \u2020\n- Juan Botas<sup>3</sup> \u2020\n- Boxun Lu<sup>1</sup> \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Genetic Engineering, Department of Biophysics, School of Life Sciences Fudan University Shanghai China\n2. Collaborative Innovation Center for Brain Science Shanghai China\n3. Department of Molecular and Human Genetics Baylor College of Medicine Houston United States\n4. MassGeneral Institute for Neurodegenerative Diseases Massachusetts General Hospital Boston United States\n5. Developmental Molecular Pathways Novartis Institutes for Biomedical Research Cambridge United States\n6. Department of Neurology and Research Center of Neurology, Second Affiliated Hospital, School of Medicine Zhejiang University Hangzhou China\n7. Department of Anatomy, Histology and Embryology, Shanghai Medical College Fudan University Shanghai China\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuntington's disease (HD) represents an important model for neurodegenerative disorders and proteinopathies. It is mainly caused by cytotoxicity of the mutant huntingtin protein (Htt) with an expanded polyQ stretch. While Htt is ubiquitously expressed, HD is characterized by selective neurodegeneration of the striatum. Here we report a striatal-enriched orphan G protein-coupled receptor(GPCR) Gpr52 as a stabilizer of Htt in vitro and in vivo. Gpr52 modulates Htt via cAMP-dependent but PKA independent mechanisms. Gpr52 is located within an intron of Rabgap1l, which exhibits epistatic effects on Gpr52-mediated modulation of Htt levels by inhibiting its substrate Rab39B, which co-localizes with Htt and translocates Htt to the endoplasmic reticulum. Finally, reducing Gpr52 suppresses HD phenotypes in both patient iPS-derived neurons and in vivo Drosophila HD models. Thus, our discovery reveals modulation of Htt levels by a striatal-enriched GPCR via its GPCR function, providing insights into the selective neurodegeneration and potential treatment strategies.\n\n## Introduction\n\nNeurodegenerative disorders refer to a number of diseases caused by progressive loss of neurons, and they currently have no cure. Many similarities appear in these diseases, such as selective loss of neurons in certain brain regions and accumulation of aggregation-prone proteins (Soto, 2003). In order to study these fundamental features and find treatment strategies of these diseases, Huntington's disease (HD) is often used as an important model because of its clear genetics (The Huntington's Disease Collaborative Research Group, 1993), which facilitates establishment of genetic models as well as early diagnosis. The major cause of HD is the cytotoxicity of the mutant Htt protein (mHtt) (Rubinsztein and Carmichael, 2003), which is expressed throughout the brain and peripheral tissues, but elicits selective neurodegeneration of the corpus striatum and lesser damage to the cerebral cortex in HD patients (Cowan and Raymond, 2006). This selectivity is likely contributed, at least partially, by striatal-enriched modulators of mHtt toxicity and stability (Subramaniam et al., 2009; Tsvetkov et al., 2013). Consistent with this idea, the neuronal longevity correlates with mHtt turnover, which is slower in striatal than in cortical neurons (Tsvetkov et al., 2013), suggesting expression of striatal-enriched mHtt stabilizers. Discovery of such stabilizers may help understanding the selective pathology of HD.\n\nMore importantly, it provides potential therapeutic entry points for HD: while the mechanism of mHtt toxicity is unclear, lowering its level should suppress its downstream toxicity and treat the disease (Yu et al., 2014). Meanwhile, reducing the wild-type Htt protein (wtHtt) at the same time seems to be well-tolerated (Boudreau et al., 2009; Grondin et al., 2012; Lu and Palacino, 2013). Thus, modulators of Htt levels are attractive targets for potential HD treatment.\n\n## Results\n\n### Gpr52 modulates Htt levels in the striatal cells in vitro and in vivo\n\nTo identify modulators of Htt levels in the striatal cells, we screened through a number of candidates in STHdhQ7/Q111 cells, a well-established and easily-transfectable striatal-derived cellular HD model expressing endogenous full length mHtt (Trettel et al., 2000). We tested the endogenous mHtt levels following knock-down of 104 candidate modulators using pooled siRNAs. We selected these candidates based on our previous screening results in the stably-transfected Drosophila S2 cells (Lu et al., 2013) and tested the mHtt level changes by western-blots (Figure 1\u2014figure supplement 1). This effort revealed six potential modulators of mHtt levels: Gpr52 and Eaf1 siRNAs lower mHtt, whereas Gclc, Grid2, Ndrg3 and Hdhd3 siRNAs increase its level (Figure 1\u2014figure supplement 1).\n\nAmong them, Gpr52 (a GPCR) is of special interest. First, GPCRs locate on the plasma membrane and their functions are modulated by extracellular molecules, placing them among the most druggable targets: highly accessible to drugs and the functions are modulated by small molecules. Second, Gpr52 has been recently characterized as a G\u03b1s-coupled receptor highly enriched in the striatum, especially D2 neurons (Sawzdargo et al., 1999; Komatsu et al., 2014), which are amongst the earliest affected in HD (Raymond et al., 2011). The coincidence between Gpr52 expression and selective neurodegeneration suggests that Gpr52 may contribute to the selective early loss of striatal neurons in HD.\n\nTo confirm Gpr52's effect on Htt, we tested an additional set of siRNAs (Gpr52_si1\u223c3) in the STHdhQ7/Q111 cells, and observed robust reduction of both wild-type and mutant endogenous Htt levels (Figure 1A). Consistently, in the HdhQ140/Q140 knock-in mice (Menalled et al., 2003), shRNA mediated knock-down of Gpr52 lowers Htt in primary cultured striatal but not the cortical neurons (Figure 1B). More importantly, by crossing the Gpr52 heterozygous knockout mice with the HdhQ140/Q140 knock-in mice, we have observed robust lowering of endogenous Htt levels in the striata but not in the cortices by heterozygous knockout of Gpr52 (Figure 1C); confirming Gpr52 mediated modulation of Htt levels in vivo.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig1-v2.jpg)\n\n**Figure 1.:** All data plots: average and S.E.M.; \u2018*\u2019: p < 0.05, \u2018**\u2019: p < 0.01, \u2018***\u2019: p < 0.001 by the two-tailed Mann\u2013Whitney U test. The number on top of each bar indicates the biological replicate number. (A) Transfection of Gpr52 siRNAs (Gpr52_si1\u223c3) in the mouse striatal cells (STHdhQ7/Q111) lowers Htt levels, as detected by Htt antibodies MW1, 2166, ab1 and 2B7. MW1 is the polyQ antibody that detects only the mHtt protein, whereas 2166, 2B7 and ab1 detects both mHtt and wtHtt. Left panels: representative western-blots; Hdh5 is the Htt siRNA used as the positive control for Htt knock-down. Neg is the non-targeting siRNA used as the negative control. Right panel: western-blot quantification from multiple replicates. (B) Infection of lentiviruses expressing Gpr52 shRNAs (Gpr52_sh1\u223c2) lowers Htt in primary striatal but not cortical neurons cultured from HdhQ140/Q140 knock-in mice. Left panels: representative western-blots. Right panel: western-blot quantification for the normalized 3B5H10 signals from multiple replicates. (C) Heterozygous knockout of Gpr52 lowers Htt in vivo in the striata but not cortices of HdhQ140/Q7 knock-in mice in vivo. The mice were obtained by crossing the heterozygous Gpr52 knockout mice with the HdhQ140/Q140 knock-in mice. Littermates between 40 to 69 days of age were analyzed. Left panels: representative western-blots. Right panel: western-blot quantification of the normalized MW1 signals from multiple mouse samples. Each dot represents the signal from a single mouse. (D) Left panels: Immunostaining of HD patient iPS-derived striatal-like neurons. Differentiated neurons from HD patient's iPS cells express molecular markers for striatal medium spiny neurons: Tuj1, GABA and DARPP32. Scale bar: 50 \u03bcM. Right panels: Transfection of human Gpr52 siRNAs (hGpr52_si1\u223c2) in the HD patient iPS-derived neurons lowers Htt levels detected by both western-blots and HTRF. HTT3 is the Htt siRNA used as the positive control for Htt knock-down. Bar plot represents the normalized mHtt levels detected by HTRF using the 2B7/MW1 antibody pair.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative western-blots in the STHdhQ7/Q111 cells of candidate modifiers of mHtt levels. 104 candidate modifiers were selected based on our previous screening results (doi: 10.1038/nn.3367). The genes that had averaged Z score values larger than 1.2 and were not previously identified as validated hits in the patient fibroblasts were selected for testing in STHdh cells by pooled siRNAs (Dharmacon, custom library). The MW1 detected full length mHtt is quantified and normalized to the tubulin signal using the ImageJ software. The siRNAs that change mHtt levels by more than 30% in the same direction in three biological repeats were selected as hits. The number on top of each bar indicates the biological repeat number of siRNA knock-down. (B) The bar plot of mHtt level changes upon knock-down of the identified modifiers. The numbers on top of each bar represent the number of biological replicates tested.\n\nTo test Gpr52's effect in human neurons, we generated HD patient iPS-derived neurons mimicking the striatal medium spiny neurons (Figure 1D). These cells exhibit neuronal morphology with a high percentage expressing the neuronal marker Tuj1, as well as the medium spiny neuronal marker Darpp32 (Ouimet et al., 1984) and the neurotransmitter GABA (Figure 1D). Because HD patient striatal neurons are unavailable for culture, these neurons represent their closest culture model. Consistently, detected by both western-blots and Homogenous Time-Resolved F\u00f6rster Resonance Energy Transfer (HTRF) assays (Weiss et al., 2009), knocking-down Gpr52 significantly reduces Htt in these cells (Figure 1D). The effect is relatively specific, because levels of loading control proteins (Figures 1, 2) and another polyQ protein ataxin3 (Figure 2A) remain unchanged. The Htt lowering is not caused by antibody binding artifacts or Htt cleavage, as multiple antibodies detect comparable reduction (Figures 1, 2) and there is no obvious increase of possible Htt fragments of lower molecular weights that may account for the lowering of the full length protein (Figure 2B). We further tested different biochemical fractions of the lysates including P1, P2 and S2, representing the crude nuclear fraction, the membrane/organelle fraction, and the cytosolic soluble fractions, respectively (Kegel et al., 2005). The major Htt lowering occurs in both the P2 and S2 fractions, but not the P1 fraction (Figure 2C). In addition, the Htt mRNA level is not affected by Gpr52 (Figure 2D), and the Gpr52's effect is completely blocked by treatment with proteasome inhibitors (Figure 2E), suggesting that the modulation is mainly mediated by proteasomal degradation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative western-blots of STHdhQ7/Q111 cell lysates showing no reduction of Ataxin3 levels by Gpr52 knock-down. Bar graph: quantification of Atxn3 levels, n = 4. (B) Full membrane images of Htt blots showing no increase/appearance of lower molecular weight bands in the STHdh cell lysates, suggesting that the Htt reduction by Gpr52 knock-down is not due to protein cleavage modulations. (C) Representative western-blots for different biochemical fractions of the protein extract from STHdhQ7/Q111 cells transfected with non-targeting control siRNA (Neg) or the Gpr52 siRNA (Gpr52_si2). Gpr52 knock-down reduced Htt levels in both the P2 and S2 fractions, but not the P1 fraction. (D) In the Gpr52 siRNAs (triangles) transfected STHdhQ7/Q111 cells, Htt mRNA levels (Y-axis) and Gpr52 mRNA (X-axis) levels were measured by qPCR. Both the Gpr52 siRNAs and the Htt siRNAs show substantial knock-down of their targets, whereas the Gpr52 knock-down by Gpr52 siRNAs do not reduce Htt mRNA levels. No reverse-transcriptase control samples have been assayed to eliminate potential contaminations from genomic DNA. (E) Left: representative western-blots of STHdhQ7/Q111 cells transfected with non-targeting control siRNA (Neg) or the Gpr52 siRNA (Gpr52_si2) with or without proteasome or autophagy inhibitors. Right: the bar plot of western-blot quantification of the Htt level change by Gpr52 siRNA transfection with each compound treatment.\n\n### Gpr52 mediated modulation of Htt levels is cAMP-dependent but PKA-independent\n\nGpr52 is enriched in the striatum (Sawzdargo et al., 1999; Komatsu et al., 2014), and thus may contribute to the selective stabilization of Htt there (Tsvetkov et al., 2013). Consistent with this, over-expression of Gpr52 cDNA (Figure 3\u2014figure supplement 1) or treatment with an agonist reserpine (Komatsu et al., 2014) (Figure 3A) leads to a dose-dependent increase of Htt (Figure 3B\u2013C), confirming Gpr52 as an Htt stabilizer.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig3-v2.jpg)\n\n**Figure 3.:** All experiments are performed in the mouse striatal cell line STHdhQ7/Q111, and all data are plotted as average and S.E.M. \u2018*\u2019: p < 0.05, \u2018**\u2019: p < 0.01, \u2018***\u2019: p < 0.001. The number on top of each bar indicates the biological replicate number. (A) Changes of cAMP levels measured by the cAMP-Glo assay (Promega). Gpr52 siRNAs were tranfected for 3 days, whereas the compound treatment (forskolin: 1 \u00b5M; reserpine: 10 \u00b5M) lasts for 24 hr; statistical analyses performed by the two-tailed Mann\u2013Whitney U test. (B) Htt level measured by the 2B7/2166 HTRF (Liang et al., 2014) upon treatment of different doses of the Gpr52 agonist reserpine for 48 hr, with transfection of Gpr52 siRNA (Gpr52_si1) vs the non-targeting control (Neg_si), n = 4. (C) Htt level measured by the 2B7/2166 HTRF when transfected with hGPR52 cDNA titrated with the empty control vector at different percentages (X-axis), n = 6; statistical analysis performed by the one-way ANOVA and post-hoc Dunnett's test. (D) Left and middle: Representative western-blots of STHdhQ7/Q111 cells transfected with the Gpr52 siRNA (Gpr52_si2) and then treated with the indicated PKA modulators or cAMP analogs (forskolin and cAMP analogs: 1 \u00b5M; H89: 50 \u00b5M). Calnexin has been used as a loading control. The Bars plot: Htt level changes (%) measured by 2B7/2166 HTRF (Liang et al., 2014) of the total lysates with the same treatments as in the western-blot samples. (E) Confocal microscopy experiments showing that HTT proteins are enriched in the perinuclear and co-localize with the endoplasmic reticulum (ER) marker calreticulin upon treatment of Rp-cAMP or 8-pCpt-2\u2032-O-Me-cAMP (8-pCpt-cAMP for short). Upper panels: representative images showed the immunofluorescent signals of Htt (green), ER marker (red, only in the third and fourth columns) and DAPI (blue) in STHdh Q7/Q111 cells treated by vehicle, 1 \u03bcM Rp-cAMP or 1 \u03bcM 8-cpt-cAMP. Scale bars, 20 \u03bcM. The two panels on the right side are magnified images from the left for visualizing the co-localization. Yellow pixels indicate co-localization. Lower left plot: the percentage of cells showing clear perinuclear pattern in each samples. The pattern was judged blindly. Lower middle and right plots: co-localization parameters including Pearson's coefficient and overlap coefficient (mean and S.E.M.). Numbers in indicate the number of cells analyzed for each treatment from five or more biological replicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Representative western-blots showing increased Htt levels and over-expression of human Gpr52 (hGpr52) in STHdhQ7/Q111 transfected with the hGpr52 cDNA.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** PKA kinase activities are measured by the cAMP-Glo kit (Promega) with a modified protocol in the in vitro condition. Basically, PKA activity is determined by the phosphorylation of the kinase substrate, which is detected by the reduction of the luciferase signal after 1 hr. The average signal without any cAMP or analogs is used as the baseline (0% PKA activity, bar 1). The average signal with 200 nM purified cAMP (a component in the kit) is set as the 100% PKA activity. The PKA inhibitor H89 was applied together with 200 nM cAMP and blocked \u223c90% of the PKA activity. Different cAMP analogs (200 nM) are tested for their ability to activate PKA. n = 6 for each sample. Rp-cAMP and 8-pCPT-2\u2032-O-Me-cAMP do not activate PKA, whereas Sp-cAMP, 8-Br-cAMP and 6Bn-cAMP activate PKA as efficiently as cAMP.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Left: Representative western-blots of STHdhQ7/Q111 cells transfected with the Gpr52 siRNA (Gpr52_si2) versus control siRNA, and then with constitutively active or dominant negative Rap1 (Rap1CA or Rap1DN) or Rap2 (Rap2CA or Rap2DN). The Bars plot: Htt level reduction (%) measured by 2B7/2166 HTRF of the total lysates of cells with same transfections as in the western-blots.\n\nAs a G\u03b1s-coupled receptor, Gpr52 increases intracellular cyclic adenosine monophosphate (cAMP) levels when activated (Komatsu et al., 2014). Consistent with this, the intracellular cAMP level is reduced by knocking-down Gpr52 (by 15.6 \u00b1 2.5 nM, 35.8 \u00b1 2.5 nM and 21.1 \u00b1 3.1 nM, respectively; Figure 3A), suggesting some levels of constitutive activity. Uncovering the possible involvement of this cAMP reduction in lowering Htt is critical, because it determines whether we can target Gpr52's GPCR function to lower Htt. Thus, we tested the effect of the adenylyl cyclase activator forskolin, which increases intracellular cAMP levels (by 54.8 \u00b1 5.7 nM; Figure 3A). Treatment of forskolin completely inhibits the Htt reduction caused by the Gpr52 knock-down (Figure 3D, left panel, lane 5 and 6 compared to lane 1 and 2; Bar plot), suggesting that the reduction of cAMP is required for the Gpr52 mediated Htt modulation. The canonical cAMP sensor is protein kinase A (PKA) (Meinkoth et al., 1993). To test possible PKA-dependence, we treated the cells with Rp-cAMP, a non-hydrolysable cAMP analog that does not activate PKA (Rothermel and Parker Botelho, 1988) (Figure 3\u2014figure supplement 2). Rp-cAMP completely inhibits the Gpr52's effect on Htt levels (Figure 3D, middle panel, lane 5 and 6 compared to lane 1 and 2; bar plot), indicating that the Htt reduction by knocking-down Gpr52 is mediated via a PKA-independent sensor of cAMP levels. Note that Rp-cAMP was applied at 1 \u00b5M, which is much lower than the Ki value for Rp-cAMP's inhibition of PKA (Rothermel and Parker Botelho, 1988) and thus should not influence the PKA activity. Similarly, another cAMP analog 8-pCPT-2\u2032-O-Me-cAMP that does not activate PKA (Enserink et al., 2002) (Figure 3\u2014figure supplement 2) completely abolishes the Htt reduction (Figure 3D; Bar plot) as well. In contrast, the PKA inhibitor H89 (Takuma and Ichida, 1994) (Figure 3\u2014figure supplement 2) and a PKA-specific agonist 6-Bnz-cAMP (Christensen et al., 2003) fail to inhibit the Htt reduction by Gpr52 knock-down (Figure 3D), confirming the PKA-independence. Finally, the hydrolysable cAMP analog 8-Br-cAMP has little effect on the Gpr52 mediated Htt reduction (Figure 3D, middle panel, lane 3 and 4 compared to lane 1 and 2; bar plot), whereas the non-hydrolysable cAMP analogs 8-pCPT-2\u2032-O-Me-cAMP and Rp-cAMP block the Gpr52's effect entirely (Figure 3D), indicating that a sustained increase of the cAMP level is needed to abolish the Gpr52's effect.\n\nOther than PKA, the guanine exchange factor (GEF) Epac, Rapgef2 and potentially other GEFs have been reported as cAMP sensors that mediate downstream signals (de Rooij et al., 1998; Emery and Eiden, 2012; Emery et al., 2013). Thus, Gpr52 may function via a PKA-independent and cAMP-dependent signaling mechanism by activating GEFs. The reported small GTPases downstream of these GEFs are Rap1 and Rap2, and thus we tested their potential involvement by dominant negative and constitutively active Rap proteins (Fu et al., 2007). None of these showed obvious effects on the Htt lowering by Gpr52 knock-down (Figure 3\u2014figure supplement 3), suggesting novel mechanisms potentially involving other GEFs and/or small GTPases, which is suggested in other models as well (Emery and Eiden, 2012; Kuwayama et al., 2013). Given that the major function of small GTPases is trafficking, we tested potential Htt translocation events upon treatments of PKA-insensitive analogs Rp-cAMP or 8-pCPT-2\u2032-O-Me cAMP, and found that they lead to Htt enrichment at the perinuclear regions and co-localization with the endoplasmic reticulumn (ER) marker (Figure 3E). Translocation of Htt to the ER may prevent its proteasomal degradation due to lack of proteasomes in the ER (Plemper et al., 1997).\n\n### Rabgap1l contains Gpr52 in its intron and shows epistatic effect on the Gpr52 mediated Htt changes\n\nIn the genomes of vertebrates including human, monkey, mouse, rat, dog, chicken and zebrafish, Gpr52 is a single exon gene that is located in the intron of another gene Rabgap1l, which encodes a GTPase-activating protein (GAP) in the same orientation. Gpr52 is located within the intron of the GAP domain-containing splice variants (GAP transcripts) only, but not the non-GAP transcripts (Figure 4\u2014figure supplement 1A), suggesting possible functional links. GAPs function in opposition to GEFs in regulating small GTPase activities, and thus Rabgap1l may function to balance certain GEFs activated by Gpr52 via cAMP. The \u2018co-localization\u2019 of Gpr52 and Rabgap1l in the genome might facilitate co-regulations of their expressions in certain cell types, so that they can balance each other's function in regulating Htt levels. Consistent with this hypothesis, knocking-down Rabgap1l increases Htt levels (Figure 4\u2014figure supplement 1B) and blunts the Gpr52's effect (Figure 4A, Htt lowering drops from 60.3 \u00b1 7.1% to 6.3 \u00b1 7.7%). Interestingly, both Gpr52 and Rabgap1l mRNA levels are lowered when HTT is knocked-down (Figure 4B, dark axis). As a control, Gapdh mRNA levels do not change (Figure 4B, blue axis). This suggests that Gpr52 and Rabgap1l could be co-regulated together, possibly facilitated by their shared genomic locus, via possible feedback regulation by Htt. In summary, Gpr52 modulates Htt via a cAMP-dependent and PKA-independent signaling pathway, and its \u2018host\u2019 gene Rabgap1l exhibits epistatic effects on this modulation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig4-v2.jpg)\n\n**Figure 4.:** (A) Left: Representative western-blots of STHdhQ7/Q111 cells transfected with the Gpr52 siRNA (Gpr52_si2) vs the control siRNA, along with or without the Rabgap1l siRNA. Rabgap1l knock-down blunts the Gpr52's effect on the Htt level. Bar plot: HTRF quantification of the transfected cells as indicated, showing consistent results with the western-blots; statistical analyses by the two-tailed Mann\u2013Whitney U-test. (B) mRNA levels of Gpr52 (left Y-axis) or Gapdh (right Y-axis) vs the ones of Rabgap1l (X-axis) upon transfection with HTT siRNAs or control (Neg). Both Gpr52 and Rabgap1l mRNA levels are lowered upon HTT knock-down, and a correlation between the lowering is observed. (C) Left panels: Representative confocal microscopic immunofluorescent images of Htt and Rab39B in STHdhQ7/Q111 cells. Treatments with 1 \u03bcM RP-cAMP or 1 \u03bcM 8-pCPT-2\u2032-O-Me-cAMP for 48 hr leads to increased co-localization between Htt and Rab39B. Red: Rab39B; Blue: DAPI; Green: Htt (using antibody 2051); The lower panels are magnified images from the left for visualizing the co-localization. Yellow pixels indicate co-localization. Scale bars: 20 \u03bcm. Right panels: co-localization parameters including Pearson's coefficient and overlap coefficient (mean and S.E.M.). Numbers in indicate the number of cells analyzed for each treatment from five or more biological replicates. (D) A model figure explaining the modulation of Htt levels by Gpr52. Gpr52 increases cAMP when activated, which leads to activation of an unknown GEF (Guanine Exchange Factor) that activates the downstream Rab39B protein. Rab39B then co-localize with Htt and translocate it to the ER, where the proteasomal degradation is prohibited due to lack of proteasomes in the ER. The Gpr52 gene locates in an intron of the Rabgap1l gene, which expresses the GAP (GTPase Activating Protein) for Rab39B, and thus blocks the modulation. Thus, Gpr52 and Rabgap1l provide balanced regulation of Htt in striatal cells, and the shared genomic loci may facilitate their balance in modulating Htt levels via co-regulated expression in striatal cells.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Genomic loci of Rabgap1l and Gpr52. (B) qPCR quantification of the Rabgap1l mRNA level of STHdh cells transfected with Rabgap1l siRNAs or the non-targeting control siRNA (Neg). 50\u201380% knock-down could be achieved by siRNA transfection in these cells. (C) Western-blot (left) and HTRF (right) experiments showing that Rabgap1l knock-down by siRNA increases the Htt level in the STHdh cells. Hdh5 and B01 are Htt siRNAs used as positive controls. For HTRF, the 2B7/2166 antibody pair was used. Data are plotted as mean and S.E.M, n = 16 for non-targeting siRNA control (Neg) samples, and n = 12 for Rabgap1l siRNA transfected samples. \u2018***\u2019: P < 0.001 by the two-tailed Mann\u2013Whitney U-test.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Representative confocal microscopic immunofluorescent images of Htt and Rab22A in STHdhQ7/Q111 cells and the quantification analysis of co-localization. Treatments with 1 \u03bcM RP-cAMP or 1 \u03bcM 8-pCPT-2\u2032-O-Me-cAMP for 48 hr leads to no change of co-localization between Gpr52 and Rab22A. Red: Rab22A; Blue: DAPI; Green: Htt (using antibody 2051); Scale bars: 20 \u03bcm.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Left: Representative western-blots of Htt (ab1), consitutively active Rab39B (anti-FLAG for Rab39B_CA), and the loading control (Tubulin). \u2018\u2212\u2019 indicates the empty vector or scrambled siRNA controls. Right: quantification of the normalized Htt signals, n = 4.\n\n### The small GTPase Rab39B co-localizes with Htt and translocates Htt to the endoplasmic reticulumn when treated with cAMP analogs\n\nThe involvement of Rabgap1l gives the clue for identifying the downstream small GTPase(s) that mediates the modulation of Htt levels. There are three reported substrates for Rabgap1l: Rab22A, Rab39B and Rab34 (Itoh et al., 2006), among which Rab22A and Rab39B are expressed in the brain (http://www.biogps.org/; http://www.brain-map.org/). We thus tested whether Rab22A or Rab39B is the small GTPase downstream of Gpr52 and cAMP to mediate the Htt modulation.\n\nInterestingly, Rab39B but not Rab22A shows significantly increased co-localization with Htt when the cells are treated with cAMP analogs Rp-cAMP or 8-pCPT-2\u2032-O-Me cAMP (Figure 4C; Figure 4\u2014figure supplement 2), suggesting that Rab39B may participate in the translocation of Htt to the ER. Consistent with this, expressing the constitutively active form of Rab39B blunts the Gpr52's effect (averaged Htt lowering reduces from 54.1 \u00b1 6.3% to 17.2 \u00b1 10.6%), confirming Rab39B's involvement in the pathway (Figure 4\u2014figure supplement 3).\n\nTaken together (Figure 4D), the presence of Gpr52 leads to sustained elevation of intracellular cAMP levels, which activates potential GEF(s) and subsequently its substrate Rab39B. Rab39B co-localizes with Htt and changes the localization of Htt, protecting it from degradation. Rab39B is inactivated by its GAP Rabgap1l, which shows epistatic effects on Gpr52 mediated Htt modulation. Gpr52 and Rabgap1l locate in the same genomic loci, which may facilitate their balanced regulation of Htt levels in the striatal cells.\n\n### Targeting Gpr52 rescues neurons in HD models\n\nTo test whether targeting Gpr52 may benefit HD neurons, we examined several HD-related phenotypes. STHdhQ111/Q111 cells exhibit mHtt-dependent caspase 3 and/or 7 activation by stress, such as serum removal (Miller et al., 2012; Lu et al., 2013). This provides readout for mHtt-dependent toxicity in striatal cells. Knocking-down Gpr52 remarkably reduces serum starvation-induced caspase 3 and/or 7 activity in STHdhQ111/Q111 cells (by 67.8 \u00b1 1.1%; Figure 5A), indicating a suppression of the mHTT-induced toxicity. Treatment of forskolin substantially blunts this effect (to 17.3 \u00b1 4.8%; Figure 5A), confirming that the Gpr52's effect is mainly mediated via the cAMP-dependent Htt reduction. Consistently, in the HD patient iPS-derived striatal neurons, knocking-down Gpr52 suppresses the mHtt-dependent neuronal loss and caspase 3 activation induced by withdrawn of the brain-derived neurotrophic factor (BDNF) (HD iPS Consortium, 2012; Lu and Palacino, 2013) (Figure 5B\u2013C). In addition, knocking-down Rabgap1l exacerbate the neuronal loss and attenuates Gpr52's rescue (Figure 5C), confirming the involvement of Rabgap1l.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05449/elife-05449-fig5-v2.jpg)\n\n**Figure 5.:** (A) Caspase-glo of STHdhQ7/Q111 (HD) or STHdhQ7/Q7 cells (WT) with indicated transfections (Neg: the non-targeting controls siRNA; Gpr: the Gpr52 siRNA smartpool; Htt: the Htt siRNA Hdh5) and compound treatments; statistical analyses by the two-tailed Mann\u2013Whitney U-test. (B) Caspase 3 activity of patient iPS-derived neurons (Q47) measured by the fluorescent indicator dye before and after BDNF removal (scale bar: 200 \u00b5m). Bar plots: quantification of caspase 3 signals corrected by the total cell number (by DAPI) and normalized to the HD controls (second bar). Statistical analyses were performed by the two-tailed Mann\u2013Whitney U-test. (C) Immunostaining of Tuj1 and DAPI showing loss of neurons of HD patient iPS-derived neurons (Q47) cultured under the BDNF-deprived condition with indicated transfections, and the rescue by knocking-down Htt or Gpr52 or Rabgap1l or Rabgap1l + Gpr52 (scale bar: 200 \u00b5m). Bar plots: quantification of the area in each field covered by the Tuj1 signal (Tuj1 area) and the nuclei counts. All data normalized to the non-targeting siRNA transfected control samples. Statistical analyses were performed by the two-tailed Mann\u2013Whitney U-test. Sholl plots: the sholl analysis (Sholl, 1953) results plotted for each sample, \u2018n\u2019 indicated the number of analyzed neurons. Statistical analysis performed by two-way ANOVA tests. (D) Age-dependent motor performance in normal flies expressing elav-GAL4 driver alone (Negative control, blue dotted lines), HD flies expressing elav-GAL4 driven NT-Htt128Q or FL-Htt200Q alone (black dotted lines), or HD flies crossed to loss of function mutation (LOF) or knock-down (shRNA) lines of Drosophila homologs of Gpr52 or Rabgap1l (red lines). Lowering Gpr52 rescues the motor behavior deficits, whereas lowering Rabgap1l enhances the phenotype. n = 15, statistical analysis performed by one way ANOVA and Dunnett's post-tests.\n\nTo validate the above observations in vivo, we tested the effect of modulating Gpr52 levels in a Drosophila model of HD expressing the N-terminal human Htt fragment with 128Q (Figure 5D, NT-Htt128Q) (Al-Ramahi et al., 2006). Decreased levels of Drosophila Gpr52 either by shRNA knockdown or by loss-of-function mutation (LOF) causes a robust suppression of the motor deficits induced by expression of this mHtt fragment in the Drosophila central nervous system (Figure 5D). Meanwhile, consistent with cellular models where Rabgap1l functions in opposition to the effect of Gpr52, knock-down of the Drosophila homolog of Rabgap1l exacerbates the HD motor deficits in the in vivo fly model (Figure 5D). The rescue effect by knocking-down Gpr52 is further validated in a Drosophila model of HD expressing the full length human Htt protein with 200Q (FL-Htt200Q). Expression of Gpr52 shRNA substantially improves the motor defects in those flies as well (Video 1). To test if Gpr52 knock-down rescue the HD cell survival in vivo, we tested the retina degeneration phenotype of the fly HD model and failed to observe a significant rescue (not shown), probably due to a lack of expression of Gpr52 in the retina and the supporting cells.\n\n![Video 1.](https://cdn.elifesciences.org/articles/05449/elife-05449-media1.mov.jpg)\n\n## Discussion\n\n### Gpr52 as a striatal-enriched modulator of Htt levels\n\nWe have revealed Gpr52 as a striatal-enriched modulator of Htt levels. This provides a possible mechanism of selective neurodegeneration in the striatum, although other mechanisms may contribute as well; including striatal-enriched post-translational modifiers of Htt such as Rhes (Subramaniam et al., 2009), or non\u2013cell-autonomous mechanisms (Wang et al., 2014). Gpr52 is enriched in the D2 neurons (Komatsu et al., 2014), which are amongst the earliest affected in HD (Raymond et al., 2011), possibly reflecting their susceptibility to mHtt due to expression of Gpr52. Further evidence needs to be obtained to reveal whether Gpr52 is one of the major causes of the regional specificity. For example, Gpr52 could be exogenously expressed in other brain regions in HD in vivo models to see if the regional specificity of neurodegeneration is shifted.\n\nTargeting Gpr52 is effective in lowering Htt and remarkably rescues HD phenotypes in vitro and in vivo (Figure 5), confirming its therapeutic potential. Further efforts need to be made to confirm its activity in mammalian and/or large animal models and to screen for its antagonists, which are currently unavailable.\n\n### Gpr52's effect is cAMP-dependent\n\nWhile the possible link between cAMP and Htt has been suggested previously (Williams et al., 2008; Lin et al., 2013), those studies focus on exogenously expressed or transgenic Htt aggregates or fragments, and show inconsistent results. Our data confirm that the sustained lowering of cAMP is required for GPCR-mediated lowering of endogenous soluble full-length Htt through PKA-independent mechanisms. It is intriguing why other striatal GPCRs, such as dopamine receptors, were not identified as Htt modulators by our screenings. There are several major possibilities besides a random missing of these targets. First, in the knock-down screen that we performed, the GPCRs need to have a certain level of constitutive basal activity in order to be identified as hits. Second, a sustained change of cAMP is required to modulate Htt levels (Figure 3D), and this may not be achieved by knocking-down many of the GPCRs in absence of agonists. Gpr52 may have a relatively high endogenous activity in the striatal cells, enabling it to provide a significant contribution to the endogenous cAMP levels. Alternatively, the endogenous Gpr52 ligand might be present at a certain level under endogenous conditions, and ligand is predicted to be fatty acids (Kakarala and Jamil, 2014). Finally, cAMP may only be a required part of the mechanism, while other signaling pathway or the receptor itself may contribute as well.\n\n### The intronic gene and its host: Gpr52 and Rabgap1l\n\nGpr52 is located in the intron region of Rabgap1l gene in the mammalian genome, and the two genes are functionally linked in regulating Htt levels. This functional link is validated not only by the epistatic effects of Rabgap1l on Gpr52 mediated modulation (Figure 4A), but also confirmed by the involvement of Rab39B (Figure 4D), the substrate of Rabgap1l (Itoh et al., 2006). To our knowledge, this is so far the only pair of intronic and host genes showing functional links. The shared genomic locus of Gpr52 and Rabgapl1 may facilitate their balance in modulating Htt levels via co-regulated expression in certain cell types. For example, they may share the same enhancer regions or transcription factors in striatal cells. Alternatively, Gpr52 mRNA might be cleaved and processed from the intron of Rabgap1l pre-RNA, possibly in a similar way as the biogenesis of intronic lncRNAs that have been recently identified (Yin et al., 2012; Zhang et al., 2013). These possibilities could be potentially tested by reconstitution of the relevant genome regions with reporters in a different system, and are beyond the scope of this study.\n\n### Conclusion\n\nIn summary, we have identified Gpr52 as a striatal-enriched GPCR that stabilizes Htt in vitro and in vivo. It may contribute to the selective neurodegeneration and serve as a potential target for HD drug discovery. Our finding also implies that the selective vulnerability of striatal neurons may be contributed by striatal-enriched modulator of Htt levels. Identifying these modulators opens new therapeutic avenues for HD.\n\n## Materials and methods\n\n### Plasmid constructs\n\nThe Rap1-V12 (constitutively active Rap1), Rap1-N17 (dominant negative Rap1), Rap2-V12 (constitutively active Rap2) and Rap1-N17 (dominant negative Rap2) are kind gifts from Dr Daniel Pak. Their sequences and expression were further verified. All Rap mutants are in the mammalian expression vector pGW1 with the addition of an N-terminal HA (influenza hemagglutinin) epitope tag as previously described (Fu et al., 2007). The human GPR52 cDNA was synthesized in vitro and cloned into pDEST Gateway Vectors for transfections (Life Technologies, Grand Island, NY). The Rab39B cDNA was amplified from human brain first-strand cDNA library (Clonetech, Mountain View, CA cat no.S1199) and cloned into Hind III/Xho I sites of pcDNA3.0 (Life Technologies) with a FLAG-tag fused to C-teminus. The constitutively active forms (Q68L) were generated by point mutagenesis and verified by sequencing Rab39B.\n\n### Cell culture and cell line generation\n\nThe mouse striatal cells (STHdh) were obtained from Coriell Cell Repositories (Camden, NJ). STHdh cells were cultured in DMEM (Life Technologies, cat. no. 11965) with 10% (vol/vol) FBS (Life Technologies, cat. no. 10082\u2013147). For the generation of Huntington's disease iPSC lines, patient fibroblasts obtained from Coriell Cell Repositories (Q70) or from an HD patient (Q47) and his healthy sibling (WT, Q19) from one Mongolian family were transduced with the retroviral STEMCCA polycistronic reprogramming system (Millipore, Billarica, MA). The iPS lines were confirmed positive for Tra-1-81, Tra-1-60, SSEA-4 and Nanog by immunofluorescence and flow-cytometry and all four vector-encoded transgenes were found to be silenced. The study was approved by the ethic community of IBS at Fudan University (No.28). Verbal and written consent was obtained from all patients. iPSCs were maintained on a feeder layer of irradiated mouse embryonic fibroblasts (MEFs). The neuronal differentiation was performed as previously described (Ma et al., 2012). In briefly, iPSCs were differentiated to Pax6-expressing primitive neuroepithelia (NE) for 10\u201312 days in a neural induction medium. Sonic hedgehog (SHH, 200 ng/ml) was added at days 10\u201325 to induce ventral progenitors. For neuronal differentiation, neural progenitor clusters were dissociated and placed onto poly-ornithine/laminin-coated coverslips at day 26 in Neurobasal medium, with a set of trophic factors, including brain derived neurotrophic factor (BDNF, 20 ng/ml, Peprotech, Rocky Hill, NJ, cat. no. 450\u201302), glial-derived neurotrophic factor (GDNF, 10 ng/ml, Peprotech, cat. no. 450\u201310), insulin-like growth factor 1 (IGF1, 10 ng/ml, Peprotech, cat. no. 100\u201311) and Vitamin C (Sigma, St. Louis, MO cat. no. D-0260, 200 ng/ml). Primary mice cortex and striatum neurons were obtained from P0 pups, and tissues were digested with papain (Worthington Biochemical Corporation, Lakewood, NJ, cat. no. LS003119, 12 units/ml) and DNaseI (Roche Life Science, Indianapolis, IN, cat. no. 10104159001, 1 mg/ml) for 30 min with occasional mixing; digestion was stopped with 10% serum. Tissues were then triturated and plated in the Neurobasal @ medium (Life Technologies, cat. no. 21103\u2013049) supplemented with 2% B27 (Life Technologies, cat. no. 17504044), 0.5\u00d7 Pen/Strep (Life Technologies, cat. no. 15070\u2013063) and 2 mM Glutamax (Life Technologies, cat. no. 35050\u2013061) for striatal neurons (validated by Darpp32 staining), or 1% N2 (Life Technologies, cat. no. 17502\u2013048), 2% B27, 0.5\u00d7 Pen/Strep (Life Technologies, cat. no. 15140) and 2 mM Glutamax (Life Technologies, cat. no. 35050) for cortical neurons. All the cells were maintained at 37\u00b0C incubator with 5% CO2, except STHdh cells, which were maintained at 33\u00b0C with 5% CO2. All the cells were tested for mycoplasma contamination, but they have not been authenticated by STR profiling.\n\n### Mouse models\n\nThe generation and characterization of the Hdh140Q knock-in mice have been previously described (Menalled et al., 2003). The Gpr52 knock-out was generated by Cyagen Biosciences Inc. (Guangzhou, China) using TALEN technology. A pair of TALEN constructs for Gpr52 knockout were cloned into a mammalian expression vector pCMV-TALEN and capped, polyA-tailed mRNA for injection were produced using the Ambion mMessage mMachine kit. The knockout mice were produced by microinjecting TALEN mRNAs into fertilized eggs from C57BL/6 strain. The knockout allele has been sequence validated to have eight missing base pairs (GAATGTGT, 57\u201364 of the ORF), causing a frameshift and an early stop (sequencing primers, forward: 5\u2032-agccaaagctgcaaactccct-3\u2032; reverse: 5\u2032-gaaccaagcaggtaactccaacg-3\u2032). The mRNA transcribed from targeted allele with frameshift undergoes nonsense-mediated decay. The mice were back-crossed to the wild-type background for five generations before crossing to the HD mice (with the same genetic background) or performing other experiments. The mouse experiments were carried out following the general guidelines published by the Association for Assessment and Accreditation of Laboratory Animal Care. The Animal Care and Use Committee of the School of Medicine at Fudan University approved the protocol used in animal experiments (Approval #20140904). For protein extraction from the mouse brain, the brains were collected and the striata and cortices were acutely dissected.\n\n### cDNA and siRNA transfection\n\nThe siRNAs were reversely transfected into the STHdh cells with Lipofectamine 2000 (Life Technologies, cat. no. 11668) and into the iPSC-derived neurons with Lipofectamine RNAiMAX (Life Technologies, cat. no. 13778) according to the manufacturer's protocol. The cDNA were transfected with Lipofectamine 3000 (Life Technologies, cat. no. L3000) according to the manufacturer's protocol. Cells were collected 3 days after siRNA transfection or 2 days after cDNA transfection for western-blot, HTRF or immunofluorescence. For experiments with both cDNA and siRNA transfections, the cDNA transfection was performed 1 day after the siRNA transfection with culture medium replacement, and the cells were collect 2 days after the cDNA transfection. siRNA target sequences: mouse Gpr52_si1: GGATCGATATCTTGCAATA, Gpr52_si2: GGATAACTAGCGTGTTTTA, Gpr52_si3: GTGGATCGATATCTTGCAATA; human hGpr52_si1: TGTCGCTTGAGAATTTGCATTATTT, hGpr52_si2: GACAATCCAACTCTGTCCTTCTTAA; mouse Htt siRNA: ACCGTGTGAATCATTGTCTAA (Hdh5), CTCATTGTGAATCACATTCAA (B01), CTGGTTGGTATTCTTCTAGAA (C01); human Htt siRNA (HTT3): CAGGTTTATGAACTGACGTTA; mouse Rabgap1l siRNAs: mouse Rabgap1l siRNA1: GCAGUGAAGUGGAGGCUUUTT, Rabgap1l siRNA2: GCUAUGAUGGGAGAGCUUA; human Rabgap1l siRNA: GCUAUGAUGGGAGAGCUUA (target both human and mouse).\n\n### Compound treatment\n\nFor compound treatment, the cells were plated at the same density as the siRNA transfection, and the compounds were diluted in OPTI-MEM to 10\u00d7 concentrations and added 1\u20132 days later. The cells were then collected 1\u20132 days later for further analysis. Compound ordering information is as follows: forskolin (Sigma, cat. no. F6886), Rp-cAMP (Sigma, cat. no. A165), 8-pCPT-2O\u2032-Me-cAMP (Sigma, cat. no. C8988), 6-Bnz-cAMP (Sigma, cat. no. B4560), 8-Br-cAMP (Sigma, cat. no. B5386), H-89 (Sigma, cat. no. B1427), Reserpine (Selleck, Houston, TX, cat. no. S1601), Bafilomycin A (Sigma, cat. no. B1793), Epoxomicin (Cayman Chemical, Ann Arbor, MI, cat. no. BU4061T), MG132 (Sigma, cat. no. M7449), chloroquine (Sigma, cat. no. C6628), Ammonium chloride (Sigma, cat. no. A9434).\n\n### cAMP and PKA activity measurement\n\nThe assays utilize the cAMP-Glo Assay kit purchased from Promega (Fitchburg, WI, cat. no. V1501). For cAMP measurement in cells, chemicals were added 24 hr before measurement. On the day of measurement, change medium containing compound into PBS with phosphodiesterase inhibitors, and incubate 2 hr and then the procedures were performed following manufacture's instruction. Purified cAMP provided by the kit was diluted into different concentrations to plot the standard curve. The slope of the standard curve was utilized to determine the cAMP concentration change per unit change of the signal. For PKA activity measurement, compounds diluted in Opti-MEM at indicated concentrations were directly added into 384 well plates, and then the experiments were performed following manufacture's instruction.\n\n### Protein extraction and western-blots\n\nFor standard western-blots, the cell pellets were collected and lysed on ice for 30 min in PBS + 1% (vol/vol) Triton X-100 + 1\u00d7 Complete Protease Inhibitor (Roche Diagnostics, Indianapolis, IN, cat. no. 04693116001), sonicated for 10 s, and spun at >20,000\u00d7g at 4\u00b0C for 10 min. The supernatants were then loaded and transferred onto nitrocellulose membranes for western blots. For fractionation experiments that extract Htt proteins at different fractions, the cell lysates are fractionated into P1, P2 and S2 fractions according to the previously described protocol (Kegel et al., 2005). Briefly, cell homogenates made in the homogenate buffer (10 mm HEPES, pH 7.4, 250 mm sucrose, 1 mm EDTA plus 1\u00d7 Complete Protease Inhibitor) were centrifuged at 2000\u00d7g to obtain the crude nuclear pellet (P1) and the postnuclear supernatant (S1). S1 was then centrifuged at 100,000\u00d7g to obtain the membrane pellet (P2) and the cytosolic fraction (S2). The P1 and P2 pellets were then washed with the homogenate buffer and resuspended in 1\u00d7 PBS buffer with 2% SDS by sonication on ice for 10 s. Equal amount (10\u201320 \u03bcg of total proteins) of each fraction was loaded in each lane for western-blots. For detection of the Gpr52 protein, the cells are lysed in 2% Fos-choline-14 in 1\u00d7 PBS to extract the membrane proteins. For mouse brain samples, all mice striatum and cortex tissues protein extracts were obtained in the following ice-cold extraction buffer: 50mM Tris.HCl pH 7.4, 250mM NaCl, 5mM EDTA.Na2, 1% Triton-100 with 1\u00d7 Complete Protease Inhibitor, and then homogenized by electric homogenizer. The lysates were centrifuged at 20,000 g at 4\u00b0C for 20 min, and the supernatants were used for western-blots. The HTT antibodies 2B7 (Weiss et al., 2009) (1:1000), ab1 (Sapp et al., 2012) (1:3000) and MW1 (Ko et al., 2001) (1:1000) have been described previously. The antibody S830 (Sathasivam et al., 2001) (1:10000) is a kind gift from Dr Gillian Bates. Commercially purchased antibodies include HTT antibody 2166 (Millipore, cat. no. MAB2166, 1:1000), 3B5H10 (Sigma, cat. no. P1874, 1:1000), 2050 (AbD Serotec, Raleigh, NC, cat. no. MCA2050) and 2051 (AbD Serotec, cat. no. MCA2051), anti-\u00e2-tubulin (Abcam, Cambridge, MA, #ab6046, 1:5000), anti-Calnexin (Stressgen, San Diego, CA, cat. no. pAb-ADI-SPA-860, 1:2000), anti-Gpr52 (GeneTex, Irvine, CA, cat. no. GTX108123, 1:500), anti-Ataxin3 (Millipore, cat. no. MAB5360) and anti-HA (Santa Cruz Biotechnology, Santa Cruz, CA, cat. no. sc-805, 1:500). Note that anti-Gpr52 antibody only detects human Gpr52 but not the mouse Gpr52. We failed to generate anti-mouse Gpr52 antibody or mouse Gpr52 cDNA plasmids. Similar technical difficulties have been also reported by others (Komatsu et al., 2014). All secondary antibodies were used at 1:5000. For all the representative western-blots shown in the figures, three or more biological repeats have been performed showing consistent results.\n\n### Homogeneous time resolved fluorescence (HTRF) assay\n\nThe HTRF assays were performed similarly to those previously described (Lu et al., 2013; Liang et al., 2014). For all the samples, the protein concentration (by BCA, Life Technologies, cat. no. 23225) and/or the DNA content (by Picogreen, Life Technologies, cat. no. P7589, for lyse-in-well experiments) were measured to correct the loadings. Different protein concentrations or cell numbers per well were tested to ensure that the signals were in the linear range. Background corrections were performed by subtracting the background signals from blank samples.\n\n### Immunofluorescence\n\nCoverslip cultures were fixed in 4% paraformaldehyde for 15\u201320 min, washed with 1\u00d7 PBS 10 min three times and incubated in a blocking buffer (10% donkey serum and 0.2% triton X-100 in PBS) for 60 min and then incubated with primary antibodies: Tuj1 (Covance, Princeton, NJ, USA, cat. no. 14971502, 1:5000), GABA (Sigma, cat. no. A0310, 1:200), DARPP32 (Millipore, cat. no. AB1656, 1:1000), Htt antibodies 2B7 (Weiss et al., 2009) (1:200), 2050 or 2051 (Bio-rad, MCA2050 or MCA2051, 1:200), Rab22A antibody (abcam, cat. no. ab137093), or Rab39B antibody (abcam, cat. no. ab154826) overnight at 4\u00b0C. Fluorescence conjugated secondary antibodies were used to reveal the binding of primary antibodies (Life Technology, cat. no. A21206, A31572, A21202, A21203, 1:1000) and nuclei were stained with DAPI (Sigma, cat. no. D9542, 1:1000). Images were captured by Leica TCS SP8 confocol system. Co-localization was quantified using the Pearson's correlation coefficient and the overlap coefficient, which were calculated with Image-pro Plus software. Data represent the mean with standard deviation. One-way ANOVA experiments were performed to judge the statistical significance.\n\n### qPCR\n\nmRNA levels were determined by qPCR. RNA from siRNA-transfected or compound treated cells was extracted using RNAprep Pure Cell/Bacteria Kit (Tiangen, Beijing, China, cat. no. DP430). Random-primed cDNA was obtained by reverse transcription using the FastQuant RT Kit (Tiangen, cat. no. KR106). DNase I was added to break down the genomic DNA. qPCR was then performed using SYBR Green Realtime PCR Master Mix (Toyobo, Osaka, Japan, cat. no. QPK-201). qPCR Primers used were as follows: Gpr52 forward: TTGCTTTATTGTTTGTTTACTTTATGC, Gpr52 reverse: GTGAAAGTAAGTGAAGCAGACAACC; Rabgap1l forward: GGAACTGGCACAGACCAAAC, Rabgap1l reverse: GCTCCTCTCTGATGCTCAAGTT; Hprt forward: GTCAACGGGGGACATAAAAG, Hprt reverse: CAACAATCAAGACATTCTTTCCA; Htt forward: CTGCACGGCATCCTCTATGT, Htt reverse: TGTTCACGCAGTGGGCTATT.\n\nAll the primers were tested with standard curve, amplification efficiency was between 95%\u2013105%, and the R2 for linear relationship is >0.999. No reverse-transcriptase controls were used to ensure the specificity of the signals.\n\n### Neuronal loss assays\n\nThe patient iPS-derived neurons exhibit HD-dependent phenotypes including elevated caspase-3 signals and neuronal loss upon BDNF removal. Similarly, the STHdh cells exhibit HD-dependent caspase 3 and/or 7 activity upon stress, such as serum removal. Briefly, patient and wild type iPS-derived neurons were cultured in NIM (1% N2 in DMEM:F12) for further 48 hr after transfected with siRNAs for 4 days. These phenotypes could be detected by the caspase activity assay as well as the neuronal loss assay. For the caspase activity assay, the NucView 488 caspase-3 dye (Biotium, Hayward, CA, cat. no. 30029) was used for the caspase activity detection as based on manufacturer's protocols. The images of the caspase-3 dye and DAPI treated live cells were taken by Nikon ECLIPSE TE2000-S microscope. For the neuronal loss experiments, the Tuj1 confluence and shape were analyzed by ImageJ and the sholl analysis-plug in of ImageJ (Sholl, 1953). The images were analyzed blindly.\n\n### Drosophila motor performance tests\n\nExperiments were performed using 15 age-matched virgin females. We placed the flies in an empty vial and tapped them down. The percentage of flies that climbed past a 9-cm-high line after 18 s was recorded, and two replicates were tested in parallel for each genotype. The mean and S.E.M. of 10 observations is plotted for each day and data analyzed by ANOVA followed by Dunnett's post hoc test. Blinding was used both for carrying out the experiment and for analyzing the data. The nervous system driver line elav-GAL(c155) as well as the classical loss-of-function alleles DopEcRMI02790 and GapcenAf01044 were obtained from the Bloomington Drosophila Stock Center at University of Indiana (http://flystocks.bio.indiana.edu/). The inducible shRNA lines DopEcRKK103494 and GAPcenAKK103588 were obtained from the Vienna Drosophila Resource Center (http://stockcenter.vdrc.at/control/main/). NT-Htt128Q flies express an N-terminal human Htt fragments comprising exons 1\u20134 (first 336 amino acids including 128Q) and have been previously described (Al-Ramahi et al., 2006). FL-Htt200Q flies express the full length human Htt protein with 200Q and exhibit similar motor defects (Video 1).\n\n### Statistical analysis\n\nStatistical comparisons were conducted by the two-tailed unpaired Mann\u2013Whitney U-test for comparing the average of each sample in the bar graphs. For comparison of sample averages with different doses of Gpr52 cDNA transfected vs the single control (mock) (Figure 2C), one way ANOVA tests were performed followed by Dunnett's post hoc test. For comparisons between different groups over different time points, two-way ANOVA has been utilized (Figure 3C\u2013D). Significance was established at p < 0.05. In all graphs, error bars, S.E.M. The biological replicate numbers are indicated on top of each bar and/or as the n numbers in the legends. The statistical powers for all analyses were calculated and confirmed to be >80%. For all the cellular assays, the cells were evenly suspended and then randomly allocated in each well tested. For the animal experiments, the littermates were allocated into each group based on their genotypes and thus randomization does not apply. The key experiments including detecting Htt level changes upon Gpr52 knock-down or knockout, the co-localization analysis, and the cellular phenotypic rescue analyses were confirmed by blind testing in which different investigators prepared/labeled the samples and the analyses were carried out without information exchange before obtaining the results. The key observations including the lowering of Htt, the epistasis between Gpr52 and Rabgap1l and the phenotypic rescue have been replicated by multiple independent investigators. Data were excluded when there were clear indications of artifact or experimental failures, such as contamination, transfection/infection failure, etc.\n\n### Virus packaging\n\nLentiviral particles for infection were produced in HEK293T cells transfected with the pLKO-Gpr52-shRNA or scrambled constructs with the three plasmid packaging mix (pLP1, pLP2 and pLPVSV-G). After 48 hr, the medium was collected, filtered through a 0.45-\u00b5m membrane and ultracentrifuged at 20,000 rpm for 90 min. The viral pellets were resuspended in sterile PBS with 1% BSA and stored at \u221280\u00b0C. Viral titers were determined using Abm's qPCR Lentivirus Titration Kit (Abm, Richmond, Canada, cat. no. LV900). The Gpr52 shRNA target sequences are: Gpr52_sh1: CTCCGCTGTTACACCATTATA; Gpr52_sh2: GTGGATCGATATCTTGCAATA. The viruses were applied at M.O.I = 3 for the primary neurons, and the knock-down of Gpr52 was confirmed by qPCR.\n",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "44f139c2-699a-4c6a-adea-8c3e979138df",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C1",
+      "claim": "Huntington's disease (HD) is mainly caused by cytotoxicity of the mutant huntingtin protein (Htt) with an expanded polyQ stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "Huntington's disease (HD) represents an important model for neurodegenerative disorders and proteinopathies. It is mainly caused by cytotoxicity of the mutant huntingtin protein (Htt) with an expanded polyQ stretch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction section (Rubinsztein and Carmichael, 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "0c48fb0b-b064-4a7a-8cd5-27a4331bcbd4",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C2",
+      "claim": "While Htt is ubiquitously expressed, HD is characterized by selective neurodegeneration of the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "While Htt is ubiquitously expressed, HD is characterized by selective neurodegeneration of the striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Cowan and Raymond, 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "9d713736-a126-4a93-9052-f7dbe2931d8e",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C3",
+      "claim": "Gpr52 is a striatal-enriched orphan G protein-coupled receptor that acts as a stabilizer of Htt in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report a striatal-enriched orphan G protein-coupled receptor(GPCR) Gpr52 as a stabilizer of Htt in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "8ee40140-5c74-4ade-b84e-476c062e905a",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C4",
+      "claim": "Gpr52 modulates Htt via cAMP-dependent but PKA independent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr52 modulates Htt via cAMP-dependent but PKA independent mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 3D showing that PKA inhibitors do not block Gpr52's effect while cAMP analogs do.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "4593e0fb-9ece-41aa-b4a4-dd6e7eab3d3d",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C5",
+      "claim": "Gpr52 is located within an intron of Rabgap1l.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr52 is located within an intron of Rabgap1l, which exhibits epistatic effects on Gpr52-mediated modulation of Htt levels by inhibiting its substrate Rab39B, which co-localizes with Htt and translocates Htt to the endoplasmic reticulum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by genomic data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "b0913ab8-75b8-4d3e-a705-fd01f594a6dd",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C6",
+      "claim": "Rabgap1l exhibits epistatic effects on Gpr52-mediated modulation of Htt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr52 is located within an intron of Rabgap1l, which exhibits epistatic effects on Gpr52-mediated modulation of Htt levels by inhibiting its substrate Rab39B, which co-localizes with Htt and translocates Htt to the endoplasmic reticulum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 4A showing that Rabgap1l knockdown blunts Gpr52's effect on Htt levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "12a114c7-9b7b-4fc6-8d08-c299467eb2ff",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C7",
+      "claim": "Rab39B co-localizes with Htt and translocates Htt to the endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr52 is located within an intron of Rabgap1l, which exhibits epistatic effects on Gpr52-mediated modulation of Htt levels by inhibiting its substrate Rab39B, which co-localizes with Htt and translocates Htt to the endoplasmic reticulum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by immunofluorescence data in Figure 4C showing increased co-localization of Htt and Rab39B upon cAMP analog treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "394b11a5-23a6-4abc-9ab1-756e1b197674",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C8",
+      "claim": "Reducing Gpr52 suppresses HD phenotypes in patient iPS-derived neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, reducing Gpr52 suppresses HD phenotypes in both patient iPS-derived neurons and in vivo Drosophila HD models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 5B-C showing reduced caspase 3 activity and neuronal loss upon Gpr52 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "0496c04a-d6ca-402c-aeed-1fae8c7b867c",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C9",
+      "claim": "Reducing Gpr52 suppresses HD phenotypes in in vivo Drosophila HD models.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, reducing Gpr52 suppresses HD phenotypes in both patient iPS-derived neurons and in vivo Drosophila HD models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 5D showing improved motor performance in Drosophila HD models with Gpr52 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "574ce1b5-87af-4926-bde7-bcd32e96f663",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C10",
+      "claim": "Transfection of Gpr52 siRNAs in mouse striatal cells (STHdhQ7/Q111) lowers Htt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection of Gpr52 siRNAs (Gpr52_si1\u223c3) in the mouse striatal cells (STHdhQ7/Q111) lowers Htt levels, as detected by Htt antibodies MW1, 2166, ab1 and 2B7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1A legend and shown in the western blots and quantification in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "fd4cc1f3-9da7-4879-a983-b2934327a7be",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C11",
+      "claim": "Infection of lentiviruses expressing Gpr52 shRNAs lowers Htt in primary striatal but not cortical neurons cultured from HdhQ140/Q140 knock-in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection of lentiviruses expressing Gpr52 shRNAs (Gpr52_sh1\u223c2) lowers Htt in primary striatal but not cortical neurons cultured from HdhQ140/Q140 knock-in mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1B legend and shown in the western blots and quantification in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "2fe8c7ba-d50c-46ee-94f6-30b966479ad3",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C12",
+      "claim": "Heterozygous knockout of Gpr52 lowers Htt in vivo in the striata but not cortices of HdhQ140/Q7 knock-in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterozygous knockout of Gpr52 lowers Htt in vivo in the striata but not cortices of HdhQ140/Q7 knock-in mice in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1C legend and shown in the western blots and quantification in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "9ed2c512-22af-4843-91bb-eb0deba114be",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C13",
+      "claim": "Transfection of human Gpr52 siRNAs in HD patient iPS-derived neurons lowers Htt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection of human Gpr52 siRNAs (hGpr52_si1\u223c2) in the HD patient iPS-derived neurons lowers Htt levels detected by both western-blots and HTRF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1D legend and shown in the western blots and HTRF quantification in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "8e0472d0-2028-42be-a65a-c3f55c0ec3a6",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C14",
+      "claim": "HD patient iPS-derived striatal-like neurons express molecular markers for striatal medium spiny neurons: Tuj1, GABA and DARPP32.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiated neurons from HD patient's iPS cells express molecular markers for striatal medium spiny neurons: Tuj1, GABA and DARPP32.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1D legend and shown in the immunostaining images in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "62b9ec41-f804-48c9-9149-e6c67bd723ed",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C15",
+      "claim": "Gpr52 knock-down does not reduce Ataxin3 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative western-blots of STHdhQ7/Q111 cell lysates showing no reduction of Ataxin3 levels by Gpr52 knock-down.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 2A legend and shown in the western blots and quantification in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "b959b94e-ece9-41b5-8a2a-4f1cf97a4103",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C16",
+      "claim": "The Htt reduction by Gpr52 knock-down is not due to protein cleavage modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Full membrane images of Htt blots showing no increase/appearance of lower molecular weight bands in the STHdh cell lysates, suggesting that the Htt reduction by Gpr52 knock-down is not due to protein cleavage modulations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 2B legend and shown in the full membrane images in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "d8c9e764-b92e-451e-8d80-90900d5ddbaf",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C17",
+      "claim": "Gpr52 knock-down reduces Htt levels in both the P2 and S2 fractions, but not the P1 fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr52 knock-down reduced Htt levels in both the P2 and S2 fractions, but not the P1 fraction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 2C legend and shown in the western blots in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "34320eb5-6f3c-44b3-85a8-51e36ddc4e19",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C18",
+      "claim": "Gpr52 knock-down does not reduce Htt mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Gpr52 siRNAs (triangles) transfected STHdhQ7/Q111 cells, Htt mRNA levels (Y-axis) and Gpr52 mRNA (X-axis) levels were measured by qPCR. Both the Gpr52 siRNAs and the Htt siRNAs show substantial knock-down of their targets, whereas the Gpr52 knock-down by Gpr52 siRNAs do not reduce Htt mRNA levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 2D legend and shown in the qPCR data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "fc15e1ea-b57c-4daf-8c20-11f3de3bf5e2",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C19",
+      "claim": "The Htt lowering by Gpr52 knock-down is completely blocked by treatment with proteasome inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Htt mRNA level is not affected by Gpr52 (Figure 2D), and the Gpr52's effect is completely blocked by treatment with proteasome inhibitors (Figure 2E), suggesting that the modulation is mainly mediated by proteasomal degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the western blots and quantification in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "b8bd3803-5d13-41a1-a4d7-4a59f183293c",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C20",
+      "claim": "The modulation of Htt by Gpr52 is mainly mediated by proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Htt mRNA level is not affected by Gpr52 (Figure 2D), and the Gpr52's effect is completely blocked by treatment with proteasome inhibitors (Figure 2E), suggesting that the modulation is mainly mediated by proteasomal degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing no change in Htt mRNA and complete blockade by proteasome inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "22f14773-247b-4449-a051-c9b2700ea3ff",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C21",
+      "claim": "Over-expression of Gpr52 cDNA leads to a dose-dependent increase of Htt.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, over-expression of Gpr52 cDNA (Figure 3\u2014figure supplement 1) or treatment with an agonist reserpine (Komatsu et al., 2014) (Figure 3A) leads to a dose-dependent increase of Htt (Figure 3B\u2013C), confirming Gpr52 as an Htt stabilizer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the HTRF data in Figure 3C and western blots in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "952b1bc7-440c-4884-82a3-d4cc73306ae6",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C22",
+      "claim": "Treatment with the Gpr52 agonist reserpine leads to a dose-dependent increase of Htt.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, over-expression of Gpr52 cDNA (Figure 3\u2014figure supplement 1) or treatment with an agonist reserpine (Komatsu et al., 2014) (Figure 3A) leads to a dose-dependent increase of Htt (Figure 3B\u2013C), confirming Gpr52 as an Htt stabilizer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the HTRF data in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "0b7d05b1-2b9a-4602-a2ef-2e16fb33141e",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C23",
+      "claim": "Gpr52 is a G\u03b1s-coupled receptor that increases intracellular cyclic adenosine monophosphate (cAMP) levels when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "As a G\u03b1s-coupled receptor, Gpr52 increases intracellular cyclic adenosine monophosphate (cAMP) levels when activated (Komatsu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "59ba6e1d-fb76-4a7e-ac85-41d9ad50f4d0",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C24",
+      "claim": "The intracellular cAMP level is reduced by knocking-down Gpr52.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the intracellular cAMP level is reduced by knocking-down Gpr52 (by 15.6 \u00b1 2.5 nM, 35.8 \u00b1 2.5 nM and 21.1 \u00b1 3.1 nM, respectively; Figure 3A), suggesting some levels of constitutive activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the cAMP measurement data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "948e96e9-7e99-4321-8d8d-b6c398ff1072",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C25",
+      "claim": "Treatment of forskolin completely inhibits the Htt reduction caused by the Gpr52 knock-down.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of forskolin completely inhibits the Htt reduction caused by the Gpr52 knock-down (Figure 3D, left panel, lane 5 and 6 compared to lane 1 and 2; Bar plot), suggesting that the reduction of cAMP is required for the Gpr52 mediated Htt modulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the western blots and HTRF data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "35189709-cef3-42cd-a9df-f7048d39277a",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C26",
+      "claim": "The reduction of cAMP is required for the Gpr52 mediated Htt modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of forskolin completely inhibits the Htt reduction caused by the Gpr52 knock-down (Figure 3D, left panel, lane 5 and 6 compared to lane 1 and 2; Bar plot), suggesting that the reduction of cAMP is required for the Gpr52 mediated Htt modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that forskolin, which increases cAMP, blocks Gpr52's effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "20923581-fba8-4ad3-8854-4cbbaf40ae0c",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C27",
+      "claim": "Rp-cAMP is a non-hydrolysable cAMP analog that does not activate PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "To test possible PKA-dependence, we treated the cells with Rp-cAMP, a non-hydrolysable cAMP analog that does not activate PKA (Rothermel and Parker Botelho, 1988) (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by citation and PKA activity data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "f564ab2d-b3a3-44ae-966b-a49ea091a1ff",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C28",
+      "claim": "Rp-cAMP completely inhibits the Gpr52's effect on Htt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Rp-cAMP completely inhibits the Gpr52's effect on Htt levels (Figure 3D, middle panel, lane 5 and 6 compared to lane 1 and 2; bar plot), indicating that the Htt reduction by knocking-down Gpr52 is mediated via a PKA-independent sensor of cAMP levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the western blots and HTRF data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "2109d0a7-4c61-4725-8e34-cea12db68774",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C29",
+      "claim": "The Htt reduction by knocking-down Gpr52 is mediated via a PKA-independent sensor of cAMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Rp-cAMP completely inhibits the Gpr52's effect on Htt levels (Figure 3D, middle panel, lane 5 and 6 compared to lane 1 and 2; bar plot), indicating that the Htt reduction by knocking-down Gpr52 is mediated via a PKA-independent sensor of cAMP levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that Rp-cAMP, which does not activate PKA, blocks Gpr52's effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "8845e598-0dcd-49ac-bfca-28ca1f1ace8e",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C30",
+      "claim": "8-pCPT-2\u2032-O-Me-cAMP is a cAMP analog that does not activate PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, another cAMP analog 8-pCPT-2\u2032-O-Me-cAMP that does not activate PKA (Enserink et al., 2002) (Figure 3\u2014figure supplement 2) completely abolishes the Htt reduction (Figure 3D; Bar plot) as well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by citation and PKA activity data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "ba5c6ca6-a539-4c01-9732-139d72534b2a",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C31",
+      "claim": "8-pCPT-2\u2032-O-Me-cAMP completely abolishes the Htt reduction by Gpr52 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, another cAMP analog 8-pCPT-2\u2032-O-Me-cAMP that does not activate PKA (Enserink et al., 2002) (Figure 3\u2014figure supplement 2) completely abolishes the Htt reduction (Figure 3D; Bar plot) as well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the HTRF data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "e12b6929-9759-4428-99a1-574e9e7cf61f",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C32",
+      "claim": "The PKA inhibitor H89 fails to inhibit the Htt reduction by Gpr52 knock-down.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the PKA inhibitor H89 (Takuma and Ichida, 1994) (Figure 3\u2014figure supplement 2) and a PKA-specific agonist 6-Bnz-cAMP (Christensen et al., 2003) fail to inhibit the Htt reduction by Gpr52 knock-down (Figure 3D), confirming the PKA-independence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the HTRF data in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "68bb3618-443f-418b-a8b6-abc69420221e",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C33",
+      "claim": "The PKA-specific agonist 6-Bnz-cAMP fails to inhibit the Htt reduction by Gpr52 knock-down.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the PKA inhibitor H89 (Takuma and Ichida, 1994) (Figure 3\u2014figure supplement 2) and a PKA-specific agonist 6-Bnz-cAMP (Christensen et al., 2003) fail to inhibit the Htt reduction by Gpr52 knock-down (Figure 3D), confirming the PKA-independence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the HTRF data in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "7b6fb12d-81cc-40e6-969c-957c148e1b07",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C34",
+      "claim": "A sustained increase of the cAMP level is needed to abolish the Gpr52's effect on Htt.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the hydrolysable cAMP analog 8-Br-cAMP has little effect on the Gpr52 mediated Htt reduction (Figure 3D, middle panel, lane 3 and 4 compared to lane 1 and 2; bar plot), whereas the non-hydrolysable cAMP analogs 8-pCPT-2\u2032-O-Me-cAMP and Rp-cAMP block the Gpr52's effect entirely (Figure 3D), indicating that a sustained increase of the cAMP level is needed to abolish the Gpr52's effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data comparing hydrolysable and non-hydrolysable cAMP analogs in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "fbaf7847-c7ef-48ef-a9a3-a81fab34b21a",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C35",
+      "claim": "Treatment with PKA-insensitive analogs Rp-cAMP or 8-pCPT-2\u2032-O-Me cAMP leads to Htt enrichment at the perinuclear regions and co-localization with the endoplasmic reticulum (ER) marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the major function of small GTPases is trafficking, we tested potential Htt translocation events upon treatments of PKA-insensitive analogs Rp-cAMP or 8-pCPT-2\u2032-O-Me cAMP, and found that they lead to Htt enrichment at the perinuclear regions and co-localization with the endoplasmic reticulumn (ER) marker (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the immunofluorescence images and quantification in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "dac825f2-5d32-4696-ade0-3d3d46bc1e16",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C36",
+      "claim": "Translocation of Htt to the ER may prevent its proteasomal degradation due to lack of proteasomes in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Translocation of Htt to the ER may prevent its proteasomal degradation due to lack of proteasomes in the ER (Plemper et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "eb61c7b9-3c41-4580-9542-74b7d66c8b34",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C37",
+      "claim": "In the genomes of vertebrates including human, monkey, mouse, rat, dog, chicken and zebrafish, Gpr52 is a single exon gene that is located in the intron of another gene Rabgap1l.",
+      "claim_type": "EXPLICIT",
+      "source": "In the genomes of vertebrates including human, monkey, mouse, rat, dog, chicken and zebrafish, Gpr52 is a single exon gene that is located in the intron of another gene Rabgap1l, which encodes a GTPase-activating protein (GAP) in the same orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and can be verified from genomic databases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "01eaa122-eb9a-41a3-8948-94fa3701d02e",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C38",
+      "claim": "Gpr52 is located within the intron of the GAP domain-containing splice variants (GAP transcripts) of Rabgap1l only, but not the non-GAP transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr52 is located within the intron of the GAP domain-containing splice variants (GAP transcripts) only, but not the non-GAP transcripts (Figure 4\u2014figure supplement 1A), suggesting possible functional links.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the genomic loci diagram in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "de47c2f9-ecd0-4be0-b81d-adac62105ae7",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C39",
+      "claim": "Knocking-down Rabgap1l increases Htt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, knocking-down Rabgap1l increases Htt levels (Figure 4\u2014figure supplement 1B) and blunts the Gpr52's effect (Figure 4A, Htt lowering drops from 60.3 \u00b1 7.1% to 6.3 \u00b1 7.7%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the western blots and HTRF data in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "ea390a95-924e-4e0b-93e1-05bce5ae9d78",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C40",
+      "claim": "Knocking-down Rabgap1l blunts the Gpr52's effect on Htt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, knocking-down Rabgap1l increases Htt levels (Figure 4\u2014figure supplement 1B) and blunts the Gpr52's effect (Figure 4A, Htt lowering drops from 60.3 \u00b1 7.1% to 6.3 \u00b1 7.7%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the western blots and HTRF data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "90d68e9e-a50d-4139-baaf-4e5d2711b6bf",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C41",
+      "claim": "Both Gpr52 and Rabgap1l mRNA levels are lowered when HTT is knocked-down.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both Gpr52 and Rabgap1l mRNA levels are lowered when HTT is knocked-down (Figure 4B, dark axis). As a control, Gapdh mRNA levels do not change (Figure 4B, blue axis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the qPCR data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "762b15a7-8c02-4528-998f-fb94df809a24",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C42",
+      "claim": "Gpr52 and Rabgap1l could be co-regulated together, possibly facilitated by their shared genomic locus, via possible feedback regulation by Htt.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Gpr52 and Rabgap1l could be co-regulated together, possibly facilitated by their shared genomic locus, via possible feedback regulation by Htt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing coordinated changes in Gpr52 and Rabgap1l mRNA levels upon HTT knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "391395d7-5db6-4fc2-a940-e44cf43bed95",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C43",
+      "claim": "There are three reported substrates for Rabgap1l: Rab22A, Rab39B and Rab34.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three reported substrates for Rabgap1l: Rab22A, Rab39B and Rab34 (Itoh et al., 2006), among which Rab22A and Rab39B are expressed in the brain (http://www.biogps.org/; http://www.brain-map.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "1b96332b-5130-4774-9d93-7a6004164914",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C44",
+      "claim": "Rab22A and Rab39B are expressed in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three reported substrates for Rabgap1l: Rab22A, Rab39B and Rab34 (Itoh et al., 2006), among which Rab22A and Rab39B are expressed in the brain (http://www.biogps.org/; http://www.brain-map.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by references to gene expression databases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "d5655249-5488-402a-bb1c-52f020fee9ce",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C45",
+      "claim": "Rab39B but not Rab22A shows significantly increased co-localization with Htt when the cells are treated with cAMP analogs Rp-cAMP or 8-pCPT-2\u2032-O-Me cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Rab39B but not Rab22A shows significantly increased co-localization with Htt when the cells are treated with cAMP analogs Rp-cAMP or 8-pCPT-2\u2032-O-Me cAMP (Figure 4C; Figure 4\u2014figure supplement 2), suggesting that Rab39B may participate in the translocation of Htt to the ER.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the immunofluorescence images and quantification in Figure 4C and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "18e390f0-c8b2-4681-b9b3-c745f561d7c3",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C46",
+      "claim": "Expressing the constitutively active form of Rab39B blunts the Gpr52's effect on Htt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, expressing the constitutively active form of Rab39B blunts the Gpr52's effect (averaged Htt lowering reduces from 54.1 \u00b1 6.3% to 17.2 \u00b1 10.6%), confirming Rab39B's involvement in the pathway (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the western blots and quantification in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "84488201-1648-4d1b-9ac2-7684f6194466",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C47",
+      "claim": "Knocking-down Gpr52 remarkably reduces serum starvation-induced caspase 3 and/or 7 activity in STHdhQ111/Q111 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking-down Gpr52 remarkably reduces serum starvation-induced caspase 3 and/or 7 activity in STHdhQ111/Q111 cells (by 67.8 \u00b1 1.1%; Figure 5A), indicating a suppression of the mHTT-induced toxicity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the caspase activity data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "74562d3f-72a0-43c9-b4e9-84a39fb0923e",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C48",
+      "claim": "Treatment of forskolin substantially blunts the suppression of caspase activity by Gpr52 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of forskolin substantially blunts this effect (to 17.3 \u00b1 4.8%; Figure 5A), confirming that the Gpr52's effect is mainly mediated via the cAMP-dependent Htt reduction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the caspase activity data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "53c923ca-f9ae-4215-9ad5-3539429cdfdf",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C49",
+      "claim": "In HD patient iPS-derived striatal neurons, knocking-down Gpr52 suppresses the mHtt-dependent neuronal loss and caspase 3 activation induced by withdrawn of BDNF.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in the HD patient iPS-derived striatal neurons, knocking-down Gpr52 suppresses the mHtt-dependent neuronal loss and caspase 3 activation induced by withdrawn of the brain-derived neurotrophic factor (BDNF) (HD iPS Consortium, 2012; Lu and Palacino, 2013) (Figure 5B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the immunofluorescence images and quantification in Figure 5B-C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "b8a7fa0d-7b45-499e-be98-c67f4b2f55c1",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C50",
+      "claim": "Knocking-down Rabgap1l exacerbates the neuronal loss in HD patient iPS-derived neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, knocking-down Rabgap1l exacerbate the neuronal loss and attenuates Gpr52's rescue (Figure 5C), confirming the involvement of Rabgap1l.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the quantification in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "22217c95-556d-467b-af7b-1ddffc34f903",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C51",
+      "claim": "Knocking-down Rabgap1l attenuates Gpr52's rescue of neuronal loss in HD patient iPS-derived neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, knocking-down Rabgap1l exacerbate the neuronal loss and attenuates Gpr52's rescue (Figure 5C), confirming the involvement of Rabgap1l.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the quantification in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "d469bdb6-fda5-4a39-a8ab-d8f2eda74562",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C52",
+      "claim": "Decreased levels of Drosophila Gpr52 by shRNA knockdown causes a robust suppression of the motor deficits induced by expression of NT-Htt128Q in the Drosophila central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased levels of Drosophila Gpr52 either by shRNA knockdown or by loss-of-function mutation (LOF) causes a robust suppression of the motor deficits induced by expression of this mHtt fragment in the Drosophila central nervous system (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the motor performance data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "ae3157b3-8ea2-4a0f-bfa2-56849c179a71",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C53",
+      "claim": "Decreased levels of Drosophila Gpr52 by loss-of-function mutation causes a robust suppression of the motor deficits induced by expression of NT-Htt128Q in the Drosophila central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased levels of Drosophila Gpr52 either by shRNA knockdown or by loss-of-function mutation (LOF) causes a robust suppression of the motor deficits induced by expression of this mHtt fragment in the Drosophila central nervous system (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the motor performance data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "af757549-ef32-4c9c-928e-d340296d15b0",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C54",
+      "claim": "Knock-down of the Drosophila homolog of Rabgap1l exacerbates the HD motor deficits in the in vivo fly model.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, consistent with cellular models where Rabgap1l functions in opposition to the effect of Gpr52, knock-down of the Drosophila homolog of Rabgap1l exacerbates the HD motor deficits in the in vivo fly model (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the motor performance data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "20cf74e8-cf64-4bbe-a831-bf206b1b2261",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C55",
+      "claim": "Expression of Gpr52 shRNA substantially improves the motor defects in Drosophila expressing full length human Htt protein with 200Q (FL-Htt200Q).",
+      "claim_type": "EXPLICIT",
+      "source": "The rescue effect by knocking-down Gpr52 is further validated in a Drosophila model of HD expressing the full length human Htt protein with 200Q (FL-Htt200Q). Expression of Gpr52 shRNA substantially improves the motor defects in those flies as well (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Video 1 and Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "f91be016-5065-4e64-bdd2-ce8c7c2ac499",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C56",
+      "claim": "Gpr52 has been recently characterized as a G\u03b1s-coupled receptor highly enriched in the striatum, especially D2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Gpr52 has been recently characterized as a G\u03b1s-coupled receptor highly enriched in the striatum, especially D2 neurons (Sawzdargo et al., 1999; Komatsu et al., 2014), which are amongst the earliest affected in HD (Raymond et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "d32e0821-3b56-495b-a4c0-13cb6f69ecd2",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C57",
+      "claim": "D2 neurons are amongst the earliest affected in HD.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Gpr52 has been recently characterized as a G\u03b1s-coupled receptor highly enriched in the striatum, especially D2 neurons (Sawzdargo et al., 1999; Komatsu et al., 2014), which are amongst the earliest affected in HD (Raymond et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "3e905636-a2ad-4123-a159-89a7c45c0e70",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C58",
+      "claim": "The coincidence between Gpr52 expression and selective neurodegeneration suggests that Gpr52 may contribute to the selective early loss of striatal neurons in HD.",
+      "claim_type": "EXPLICIT",
+      "source": "The coincidence between Gpr52 expression and selective neurodegeneration suggests that Gpr52 may contribute to the selective early loss of striatal neurons in HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a speculation based on the expression pattern and disease pathology.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "6df3e93a-c2cf-4926-8363-76e51d294e59",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C59",
+      "claim": "STHdhQ7/Q111 cells are a well-established and easily-transfectable striatal-derived cellular HD model expressing endogenous full length mHtt.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify modulators of Htt levels in the striatal cells, we screened through a number of candidates in STHdhQ7/Q111 cells, a well-established and easily-transfectable striatal-derived cellular HD model expressing endogenous full length mHtt (Trettel et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "3f91d262-6c11-4538-b0de-b1525135a28b",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C60",
+      "claim": "The screening identified six potential modulators of mHtt levels: Gpr52 and Eaf1 siRNAs lower mHtt, whereas Gclc, Grid2, Ndrg3 and Hdhd3 siRNAs increase its level.",
+      "claim_type": "EXPLICIT",
+      "source": "This effort revealed six potential modulators of mHtt levels: Gpr52 and Eaf1 siRNAs lower mHtt, whereas Gclc, Grid2, Ndrg3 and Hdhd3 siRNAs increase its level (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the western blots and quantification in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "06221565-0844-4a5f-9738-c3a0285800a1",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C61",
+      "claim": "GPCRs locate on the plasma membrane and their functions are modulated by extracellular molecules, placing them among the most druggable targets.",
+      "claim_type": "EXPLICIT",
+      "source": "First, GPCRs locate on the plasma membrane and their functions are modulated by extracellular molecules, placing them among the most druggable targets: highly accessible to drugs and the functions are modulated by small molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as general knowledge about GPCRs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "dc4c0ca1-1da3-4517-be26-e9182a98d417",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C62",
+      "claim": "The mutant Htt protein (mHtt) is expressed throughout the brain and peripheral tissues, but elicits selective neurodegeneration of the corpus striatum and lesser damage to the cerebral cortex in HD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The major cause of HD is the cytotoxicity of the mutant Htt protein (mHtt) (Rubinsztein and Carmichael, 2003), which is expressed throughout the brain and peripheral tissues, but elicits selective neurodegeneration of the corpus striatum and lesser damage to the cerebral cortex in HD patients (Cowan and Raymond, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "855ba7d7-4bae-4c96-97a2-7334fb2b31a4",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C63",
+      "claim": "The selective neurodegeneration in HD is likely contributed, at least partially, by striatal-enriched modulators of mHtt toxicity and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "This selectivity is likely contributed, at least partially, by striatal-enriched modulators of mHtt toxicity and stability (Subramaniam et al., 2009; Tsvetkov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "1f67aa7c-c0ae-44d3-8d0c-5563adf408c2",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C64",
+      "claim": "The neuronal longevity correlates with mHtt turnover, which is slower in striatal than in cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, the neuronal longevity correlates with mHtt turnover, which is slower in striatal than in cortical neurons (Tsvetkov et al., 2013), suggesting expression of striatal-enriched mHtt stabilizers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "6f398e47-27e7-4dd0-bb91-93ed68a48a54",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C65",
+      "claim": "Lowering mHtt level should suppress its downstream toxicity and treat HD.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, it provides potential therapeutic entry points for HD: while the mechanism of mHtt toxicity is unclear, lowering its level should suppress its downstream toxicity and treat the disease (Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "b3abd3ca-f251-494e-8739-f9204a10a4a3",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C66",
+      "claim": "Reducing the wild-type Htt protein (wtHtt) seems to be well-tolerated.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, reducing the wild-type Htt protein (wtHtt) at the same time seems to be well-tolerated (Boudreau et al., 2009; Grondin et al., 2012; Lu and Palacino, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "14257787-0239-4065-8dd0-208fc1f51e84",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C67",
+      "claim": "Modulators of Htt levels are attractive targets for potential HD treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, modulators of Htt levels are attractive targets for potential HD treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a conclusion based on the therapeutic rationale.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "f17ee991-efbb-41b4-b916-8f7693a58ca4",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C68",
+      "claim": "STHdhQ111/Q111 cells exhibit mHtt-dependent caspase 3 and/or 7 activation by stress, such as serum removal.",
+      "claim_type": "EXPLICIT",
+      "source": "STHdhQ111/Q111 cells exhibit mHtt-dependent caspase 3 and/or 7 activation by stress, such as serum removal (Miller et al., 2012; Lu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "02f61e4e-b6fd-4eda-8605-cb06c3401864",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C69",
+      "claim": "The presence of Gpr52 leads to sustained elevation of intracellular cAMP levels, which activates potential GEF(s) and subsequently its substrate Rab39B.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together (Figure 4D), the presence of Gpr52 leads to sustained elevation of intracellular cAMP levels, which activates potential GEF(s) and subsequently its substrate Rab39B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in the model in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "ec1c94bc-bf08-46c6-8c64-473dbf3f2929",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C70",
+      "claim": "Rab39B co-localizes with Htt and changes the localization of Htt, protecting it from degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab39B co-localizes with Htt and changes the localization of Htt, protecting it from degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by the co-localization data in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "c08438e3-997b-487d-b183-995422cc11e5",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C71",
+      "claim": "Rab39B is inactivated by its GAP Rabgap1l, which shows epistatic effects on Gpr52 mediated Htt modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab39B is inactivated by its GAP Rabgap1l, which shows epistatic effects on Gpr52 mediated Htt modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by the epistasis data in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "4752b37b-4654-4cb2-84cf-38bf3cb02576",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C72",
+      "claim": "Gpr52 and Rabgap1l locate in the same genomic loci, which may facilitate their balanced regulation of Htt levels in the striatal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr52 and Rabgap1l locate in the same genomic loci, which may facilitate their balanced regulation of Htt levels in the striatal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a speculation based on the genomic organization.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "3bd428de-459f-4cdc-9f25-e6482488f60b",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C73",
+      "claim": "Gpr52 may contribute to the selective neurodegeneration in HD, although other mechanisms may contribute as well.",
+      "claim_type": "EXPLICIT",
+      "source": "We have revealed Gpr52 as a striatal-enriched modulator of Htt levels. This provides a possible mechanism of selective neurodegeneration in the striatum, although other mechanisms may contribute as well; including striatal-enriched post-translational modifiers of Htt such as Rhes (Subramaniam et al., 2009), or non\u2013cell-autonomous mechanisms (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a conclusion with acknowledgment of other possible mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "98a2ce97-54be-463f-8a87-0e9de5ab093c",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C74",
+      "claim": "Targeting Gpr52 is effective in lowering Htt and remarkably rescues HD phenotypes in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting Gpr52 is effective in lowering Htt and remarkably rescues HD phenotypes in vitro and in vivo (Figure 5), confirming its therapeutic potential.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by the rescue data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "ad5cd105-79c6-4827-a990-ffdea82d59c8",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C75",
+      "claim": "The sustained lowering of cAMP is required for GPCR-mediated lowering of endogenous soluble full-length Htt through PKA-independent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "While the possible link between cAMP and Htt has been suggested previously (Williams et al., 2008; Lin et al., 2013), those studies focus on exogenously expressed or transgenic Htt aggregates or fragments, and show inconsistent results. Our data confirm that the sustained lowering of cAMP is required for GPCR-mediated lowering of endogenous soluble full-length Htt through PKA-independent mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "0a38bb13-e09b-4641-b8a8-e002c47165f2",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C76",
+      "claim": "Gpr52 may have a relatively high endogenous activity in the striatal cells, enabling it to provide a significant contribution to the endogenous cAMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Gpr52 may have a relatively high endogenous activity in the striatal cells, enabling it to provide a significant contribution to the endogenous cAMP levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a speculation to explain why Gpr52 was identified in the screen.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "78d28fa4-63d6-4917-b8c4-1dc44b85e70e",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C77",
+      "claim": "The endogenous Gpr52 ligand might be present at a certain level under endogenous conditions, and ligand is predicted to be fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the endogenous Gpr52 ligand might be present at a certain level under endogenous conditions, and ligand is predicted to be fatty acids (Kakarala and Jamil, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a speculation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "8aaaf667-7c40-42c6-8166-417bf4440a89",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C78",
+      "claim": "The shared genomic locus of Gpr52 and Rabgapl1 may facilitate their balance in modulating Htt levels via co-regulated expression in certain cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The shared genomic locus of Gpr52 and Rabgapl1 may facilitate their balance in modulating Htt levels via co-regulated expression in certain cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a speculation based on the genomic organization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "5d551a97-d18b-49b1-82bd-c4dec2c6c8e5",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C79",
+      "claim": "Gpr52 and Rabgap1l may share the same enhancer regions or transcription factors in striatal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, they may share the same enhancer regions or transcription factors in striatal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a speculation about possible co-regulation mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "bd2588bf-f236-4810-95f2-8f28ca080be2",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C80",
+      "claim": "Gpr52 mRNA might be cleaved and processed from the intron of Rabgap1l pre-RNA, possibly in a similar way as the biogenesis of intronic lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, Gpr52 mRNA might be cleaved and processed from the intron of Rabgap1l pre-RNA, possibly in a similar way as the biogenesis of intronic lncRNAs that have been recently identified (Yin et al., 2012; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a speculation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "2d9f3a87-5106-4870-8a7b-1068c86292cd",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C81",
+      "claim": "The selective vulnerability of striatal neurons may be contributed by striatal-enriched modulator of Htt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have identified Gpr52 as a striatal-enriched GPCR that stabilizes Htt in vitro and in vivo. It may contribute to the selective neurodegeneration and serve as a potential target for HD drug discovery. Our finding also implies that the selective vulnerability of striatal neurons may be contributed by striatal-enriched modulator of Htt levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a conclusion from the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "d8f8ebb7-dd1f-4f99-b73c-a57a8cf8342f",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "claim_id": "C82",
+      "claim": "Identifying striatal-enriched modulators of Htt opens new therapeutic avenues for HD.",
+      "claim_type": "EXPLICIT",
+      "source": "Identifying these modulators opens new therapeutic avenues for HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a conclusion about the therapeutic implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "87d6a203-613c-48b8-a398-cea217b69f86",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HD is caused by mutant huntingtin (mHtt) cytotoxicity and is characterized by selective striatal neurodegeneration despite ubiquitous Htt expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 establish well-accepted background knowledge about HD pathology, supported by appropriate citations (Rubinsztein and Carmichael, 2003; Cowan and Raymond, 2006). These are foundational facts for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "31b527b0-3044-4548-a86b-6cddc7f735d5",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gpr52 is a striatal-enriched GPCR that stabilizes Htt levels in vitro and in vivo across multiple model systems including mouse striatal cells, primary neurons, knockout mice, and human iPS-derived neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10-C13 demonstrate consistent Htt reduction upon Gpr52 knockdown across multiple experimental systems with appropriate controls. The tissue-specific effect (striatum but not cortex, C11-C12) strengthens the conclusion. Multiple antibodies and detection methods (western blot, HTRF) provide convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "2a608aae-3a9c-46e8-8925-e101be5be683",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HD patient iPS-derived neurons express striatal medium spiny neuron markers (Tuj1, GABA, DARPP32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by immunostaining data in Figure 1D showing expression of appropriate neuronal markers. This validates the cell model used for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "d04ee26a-2312-47e6-a02f-39f6c29da079",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gpr52-mediated Htt reduction is specific, occurs post-transcriptionally in cytoplasmic and membrane fractions, and is mediated by proteasomal degradation rather than cleavage or transcriptional changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 provide mechanistic characterization showing specificity (no effect on Ataxin3), subcellular localization (P2/S2 fractions), no mRNA changes, and complete blockade by proteasome inhibitors. The convergent evidence from multiple approaches supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "1ab7be47-fbed-4a25-99ac-ed30c2cb479f",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gpr52 functions as a G\u03b1s-coupled receptor that stabilizes Htt, with overexpression or agonist treatment increasing Htt levels and knockdown reducing cAMP levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 demonstrate bidirectional effects: Gpr52 overexpression/agonist increases Htt (C21-C22), while knockdown reduces cAMP (C24). The dose-dependent responses and consistency with known Gpr52 function (C23, cited) support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gpr52 modulates Htt through a cAMP-dependent but PKA-independent mechanism, requiring sustained cAMP elevation to prevent Htt degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25-C34 provide comprehensive pharmacological evidence: forskolin blocks Gpr52's effect (C25), non-hydrolyzable PKA-insensitive cAMP analogs (Rp-cAMP, 8-pCPT-2'-O-Me-cAMP) block the effect (C28, C31), while PKA inhibitors/agonists do not (C32-C33). The requirement for sustained cAMP (C34) is demonstrated by differential effects of hydrolyzable vs non-hydrolyzable analogs. PKA activity assays (Figure 3\u2014supplement 2) validate compound specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "92847dd7-8eaa-4a77-a3b5-bf650b827072",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PKA-insensitive cAMP analogs cause Htt translocation to the endoplasmic reticulum, potentially protecting it from proteasomal degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 show Htt enrichment at perinuclear regions and ER co-localization upon cAMP analog treatment (Figure 3E with quantification). The mechanistic interpretation (C36) is reasonable given the cited lack of proteasomes in ER, though this remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "023ac254-239f-4e4c-a57b-25f1b7096982",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gpr52 is located within an intron of Rabgap1l across vertebrate genomes, specifically within GAP domain-containing splice variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37-C38 describe the genomic organization supported by Figure 4\u2014supplement 1A and verifiable from genomic databases. This establishes the structural basis for potential functional interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "92d5258c-4b0e-4afd-9e7e-df57642f108c",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rabgap1l exhibits epistatic effects on Gpr52-mediated Htt modulation, with Rabgap1l knockdown increasing Htt levels and blunting Gpr52's effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C39-C40 demonstrate genetic epistasis with quantitative data (Htt lowering drops from 60.3\u00b17.1% to 6.3\u00b17.7%, Figure 4A). This supports a functional relationship between the two genes consistent with their genomic organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "8436e0e5-1eb0-4c20-9637-9a05ef8fd66b",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Gpr52 and Rabgap1l mRNA levels are coordinately reduced upon HTT knockdown, suggesting co-regulation and possible feedback regulation by Htt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C41 shows correlated mRNA changes (Figure 4B), but claim C42's interpretation of co-regulation and feedback is speculative. While the correlation is observed, the mechanism remains unclear and alternative explanations (e.g., indirect effects) are not excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "572faa92-e30d-4b64-ac93-a3d02f0785db",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Rab39B, a substrate of Rabgap1l, shows increased co-localization with Htt upon cAMP analog treatment and constitutively active Rab39B blunts Gpr52's effect on Htt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 identify Rab39B as the relevant small GTPase through co-localization studies (Figure 4C showing increased co-localization with cAMP analogs but not for Rab22A) and functional validation (constitutively active Rab39B reduces Gpr52's effect from 54.1\u00b16.3% to 17.2\u00b110.6%, Figure 4\u2014supplement 3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "0ecc0731-c1f0-45c4-9b68-4388bc8381a1",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A mechanistic model where Gpr52 increases cAMP, activating unknown GEF(s) that activate Rab39B, which co-localizes with Htt and translocates it to the ER for protection from degradation, with Rabgap1l providing opposing regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C69-C72 synthesize the experimental findings into a coherent model (Figure 4D). While the GEF identity remains unknown, the model is well-supported by the epistasis data, co-localization studies, and pharmacological experiments. The genomic co-localization (C72) provides a plausible basis for coordinated regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "0a53501d-79de-4597-9525-3eb304710086",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Gpr52 knockdown suppresses HD-related phenotypes in cellular models, reducing caspase 3/7 activity in mouse striatal cells and neuronal loss in human iPS-derived neurons, with effects blocked by forskolin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C47-C49 demonstrate phenotypic rescue in multiple cellular systems (Figure 5A-C). The 67.8\u00b11.1% reduction in caspase activity (C47) and suppression of neuronal loss (C49) are substantial. Forskolin blockade (C48) confirms cAMP-dependence of the rescue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "d0e3aa5f-be80-4b20-8d12-2dd5cd2579ff",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Rabgap1l knockdown exacerbates neuronal loss and attenuates Gpr52's rescue effect in HD patient iPS-derived neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 show that Rabgap1l knockdown has opposing effects to Gpr52 knockdown in the neuronal loss assay (Figure 5C), consistent with the proposed epistatic relationship and supporting the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "1a2ccd0e-3f71-4b80-8f73-f9017e02b73c",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Gpr52 reduction (by shRNA or loss-of-function mutation) suppresses motor deficits in Drosophila HD models expressing either N-terminal or full-length mutant Htt, while Rabgap1l knockdown exacerbates deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C52-C55 demonstrate in vivo rescue in Drosophila using multiple approaches (shRNA, LOF mutation) and HD models (NT-Htt128Q, FL-Htt200Q). The opposing effect of Rabgap1l knockdown (C54) is consistent with cellular data. Statistical analysis (ANOVA, n=15) supports significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "c74f6ecb-5c45-4e7f-830e-c686915437e1",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Gpr52's enrichment in striatal D2 neurons, which are among the earliest affected in HD, suggests it may contribute to selective striatal vulnerability, though other mechanisms may also contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58, C73, C81 propose a mechanism for selective neurodegeneration based on Gpr52's expression pattern (cited in C56-C57) and the experimental data. The authors appropriately acknowledge alternative mechanisms (C73), making this a reasonable but not definitive conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "51c1b5f0-b7e8-4718-ab78-4f8ce533c0fb",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A screen in STHdhQ7/Q111 cells identified six modulators of mHtt levels, with Gpr52 selected for follow-up due to its druggability as a GPCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 describe the screening approach and rationale for focusing on Gpr52. The screen is documented in Figure 1\u2014supplement 1, and the rationale for GPCR selection (C61) is sound from a drug development perspective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "f28a6875-26c4-4680-a229-6126ddc3d961",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The therapeutic rationale for targeting Htt levels is based on selective striatal neurodegeneration being contributed by striatal-enriched modulators, with Htt lowering expected to suppress toxicity and wtHtt reduction being well-tolerated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 establish the therapeutic rationale with appropriate citations. These are well-accepted concepts in the HD field that justify the study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "bf096a03-c9cb-4b57-965c-b5aafb4e12db",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "STHdhQ111/Q111 cells exhibit mHtt-dependent caspase 3/7 activation upon serum starvation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 describes a validated cellular phenotype (cited) used as a readout for HD-related toxicity in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "2277650f-78c1-4499-9e3f-2816c394a36c",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Targeting Gpr52 effectively lowers Htt and rescues HD phenotypes in vitro and in vivo, confirming therapeutic potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 summarizes the therapeutic implications supported by the rescue data in Figure 5 across multiple model systems. However, translation to mammalian in vivo models and identification of antagonists remain as future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "448ae152-dc3b-4c38-97a1-1176c259c466",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "This study confirms that sustained cAMP lowering is required for GPCR-mediated reduction of endogenous soluble full-length Htt through PKA-independent mechanisms, clarifying inconsistent prior results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 distinguishes this work from prior studies by focusing on endogenous full-length Htt rather than exogenous fragments/aggregates. The comprehensive pharmacological characterization supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "8b1cd684-4f5d-4e64-b8ce-e1e0143d6f8d",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Gpr52 may have high endogenous activity in striatal cells or endogenous ligands (predicted to be fatty acids) may be present, explaining why it was identified in the screen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 are speculative explanations for why Gpr52 was identified. While the constitutive activity is supported by cAMP measurements (C24), the ligand prediction (C77) is based only on citation and remains unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "f462fdee-d86a-4b3b-a781-919203833d33",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The shared genomic locus of Gpr52 and Rabgap1l may facilitate coordinated regulation through shared enhancers/transcription factors or through processing of Gpr52 mRNA from Rabgap1l introns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C80 propose mechanisms for co-regulation but remain speculative. While the genomic organization and correlated expression (C41) are documented, the specific mechanisms (shared enhancers, intronic processing) are not tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    },
+    {
+      "id": "dfb52a6e-6867-4e78-b70a-8198240fb330",
+      "content_id": "1132df98-d46c-462f-a0e8-889456434188",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Identifying striatal-enriched modulators of Htt opens new therapeutic avenues for HD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is a reasonable conclusion based on the demonstration that Gpr52 modulates Htt and rescues HD phenotypes, though clinical translation remains distant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:37:47.706129Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "44f139c2-699a-4c6a-adea-8c3e979138df",
+      "result_id": "87d6a203-613c-48b8-a398-cea217b69f86"
+    },
+    {
+      "claim_id": "0c48fb0b-b064-4a7a-8cd5-27a4331bcbd4",
+      "result_id": "87d6a203-613c-48b8-a398-cea217b69f86"
+    },
+    {
+      "claim_id": "9d713736-a126-4a93-9052-f7dbe2931d8e",
+      "result_id": "31b527b0-3044-4548-a86b-6cddc7f735d5"
+    },
+    {
+      "claim_id": "574ce1b5-87af-4926-bde7-bcd32e96f663",
+      "result_id": "31b527b0-3044-4548-a86b-6cddc7f735d5"
+    },
+    {
+      "claim_id": "fd4cc1f3-9da7-4879-a983-b2934327a7be",
+      "result_id": "31b527b0-3044-4548-a86b-6cddc7f735d5"
+    },
+    {
+      "claim_id": "2fe8c7ba-d50c-46ee-94f6-30b966479ad3",
+      "result_id": "31b527b0-3044-4548-a86b-6cddc7f735d5"
+    },
+    {
+      "claim_id": "9ed2c512-22af-4843-91bb-eb0deba114be",
+      "result_id": "31b527b0-3044-4548-a86b-6cddc7f735d5"
+    },
+    {
+      "claim_id": "8e0472d0-2028-42be-a65a-c3f55c0ec3a6",
+      "result_id": "2a608aae-3a9c-46e8-8925-e101be5be683"
+    },
+    {
+      "claim_id": "62b9ec41-f804-48c9-9149-e6c67bd723ed",
+      "result_id": "d04ee26a-2312-47e6-a02f-39f6c29da079"
+    },
+    {
+      "claim_id": "b959b94e-ece9-41b5-8a2a-4f1cf97a4103",
+      "result_id": "d04ee26a-2312-47e6-a02f-39f6c29da079"
+    },
+    {
+      "claim_id": "d8c9e764-b92e-451e-8d80-90900d5ddbaf",
+      "result_id": "d04ee26a-2312-47e6-a02f-39f6c29da079"
+    },
+    {
+      "claim_id": "34320eb5-6f3c-44b3-85a8-51e36ddc4e19",
+      "result_id": "d04ee26a-2312-47e6-a02f-39f6c29da079"
+    },
+    {
+      "claim_id": "fc15e1ea-b57c-4daf-8c20-11f3de3bf5e2",
+      "result_id": "d04ee26a-2312-47e6-a02f-39f6c29da079"
+    },
+    {
+      "claim_id": "b8bd3803-5d13-41a1-a4d7-4a59f183293c",
+      "result_id": "d04ee26a-2312-47e6-a02f-39f6c29da079"
+    },
+    {
+      "claim_id": "22f14773-247b-4449-a051-c9b2700ea3ff",
+      "result_id": "1ab7be47-fbed-4a25-99ac-ed30c2cb479f"
+    },
+    {
+      "claim_id": "952b1bc7-440c-4884-82a3-d4cc73306ae6",
+      "result_id": "1ab7be47-fbed-4a25-99ac-ed30c2cb479f"
+    },
+    {
+      "claim_id": "0b7d05b1-2b9a-4602-a2ef-2e16fb33141e",
+      "result_id": "1ab7be47-fbed-4a25-99ac-ed30c2cb479f"
+    },
+    {
+      "claim_id": "59ba6e1d-fb76-4a7e-ac85-41d9ad50f4d0",
+      "result_id": "1ab7be47-fbed-4a25-99ac-ed30c2cb479f"
+    },
+    {
+      "claim_id": "8ee40140-5c74-4ade-b84e-476c062e905a",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "948e96e9-7e99-4321-8d8d-b6c398ff1072",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "35189709-cef3-42cd-a9df-f7048d39277a",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "20923581-fba8-4ad3-8854-4cbbaf40ae0c",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "f564ab2d-b3a3-44ae-966b-a49ea091a1ff",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "2109d0a7-4c61-4725-8e34-cea12db68774",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "8845e598-0dcd-49ac-bfca-28ca1f1ace8e",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "ba5c6ca6-a539-4c01-9732-139d72534b2a",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "e12b6929-9759-4428-99a1-574e9e7cf61f",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "68bb3618-443f-418b-a8b6-abc69420221e",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "7b6fb12d-81cc-40e6-969c-957c148e1b07",
+      "result_id": "fee239b7-d05e-4f3b-a5d7-09989d67a95e"
+    },
+    {
+      "claim_id": "fbaf7847-c7ef-48ef-a9a3-a81fab34b21a",
+      "result_id": "92847dd7-8eaa-4a77-a3b5-bf650b827072"
+    },
+    {
+      "claim_id": "dac825f2-5d32-4696-ade0-3d3d46bc1e16",
+      "result_id": "92847dd7-8eaa-4a77-a3b5-bf650b827072"
+    },
+    {
+      "claim_id": "4593e0fb-9ece-41aa-b4a4-dd6e7eab3d3d",
+      "result_id": "023ac254-239f-4e4c-a57b-25f1b7096982"
+    },
+    {
+      "claim_id": "eb61c7b9-3c41-4580-9542-74b7d66c8b34",
+      "result_id": "023ac254-239f-4e4c-a57b-25f1b7096982"
+    },
+    {
+      "claim_id": "01eaa122-eb9a-41a3-8948-94fa3701d02e",
+      "result_id": "023ac254-239f-4e4c-a57b-25f1b7096982"
+    },
+    {
+      "claim_id": "b0913ab8-75b8-4d3e-a705-fd01f594a6dd",
+      "result_id": "92d5258c-4b0e-4afd-9e7e-df57642f108c"
+    },
+    {
+      "claim_id": "de47c2f9-ecd0-4be0-b81d-adac62105ae7",
+      "result_id": "92d5258c-4b0e-4afd-9e7e-df57642f108c"
+    },
+    {
+      "claim_id": "ea390a95-924e-4e0b-93e1-05bce5ae9d78",
+      "result_id": "92d5258c-4b0e-4afd-9e7e-df57642f108c"
+    },
+    {
+      "claim_id": "90d68e9e-a50d-4139-baaf-4e5d2711b6bf",
+      "result_id": "8436e0e5-1eb0-4c20-9637-9a05ef8fd66b"
+    },
+    {
+      "claim_id": "762b15a7-8c02-4528-998f-fb94df809a24",
+      "result_id": "8436e0e5-1eb0-4c20-9637-9a05ef8fd66b"
+    },
+    {
+      "claim_id": "391395d7-5db6-4fc2-a940-e44cf43bed95",
+      "result_id": "572faa92-e30d-4b64-ac93-a3d02f0785db"
+    },
+    {
+      "claim_id": "1b96332b-5130-4774-9d93-7a6004164914",
+      "result_id": "572faa92-e30d-4b64-ac93-a3d02f0785db"
+    },
+    {
+      "claim_id": "d5655249-5488-402a-bb1c-52f020fee9ce",
+      "result_id": "572faa92-e30d-4b64-ac93-a3d02f0785db"
+    },
+    {
+      "claim_id": "18e390f0-c8b2-4681-b9b3-c745f561d7c3",
+      "result_id": "572faa92-e30d-4b64-ac93-a3d02f0785db"
+    },
+    {
+      "claim_id": "12a114c7-9b7b-4fc6-8d08-c299467eb2ff",
+      "result_id": "0ecc0731-c1f0-45c4-9b68-4388bc8381a1"
+    },
+    {
+      "claim_id": "02f61e4e-b6fd-4eda-8605-cb06c3401864",
+      "result_id": "0ecc0731-c1f0-45c4-9b68-4388bc8381a1"
+    },
+    {
+      "claim_id": "ec1c94bc-bf08-46c6-8c64-473dbf3f2929",
+      "result_id": "0ecc0731-c1f0-45c4-9b68-4388bc8381a1"
+    },
+    {
+      "claim_id": "c08438e3-997b-487d-b183-995422cc11e5",
+      "result_id": "0ecc0731-c1f0-45c4-9b68-4388bc8381a1"
+    },
+    {
+      "claim_id": "4752b37b-4654-4cb2-84cf-38bf3cb02576",
+      "result_id": "0ecc0731-c1f0-45c4-9b68-4388bc8381a1"
+    },
+    {
+      "claim_id": "394b11a5-23a6-4abc-9ab1-756e1b197674",
+      "result_id": "0a53501d-79de-4597-9525-3eb304710086"
+    },
+    {
+      "claim_id": "84488201-1648-4d1b-9ac2-7684f6194466",
+      "result_id": "0a53501d-79de-4597-9525-3eb304710086"
+    },
+    {
+      "claim_id": "74562d3f-72a0-43c9-b4e9-84a39fb0923e",
+      "result_id": "0a53501d-79de-4597-9525-3eb304710086"
+    },
+    {
+      "claim_id": "53c923ca-f9ae-4215-9ad5-3539429cdfdf",
+      "result_id": "0a53501d-79de-4597-9525-3eb304710086"
+    },
+    {
+      "claim_id": "b8a7fa0d-7b45-499e-be98-c67f4b2f55c1",
+      "result_id": "d0e3aa5f-be80-4b20-8d12-2dd5cd2579ff"
+    },
+    {
+      "claim_id": "22217c95-556d-467b-af7b-1ddffc34f903",
+      "result_id": "d0e3aa5f-be80-4b20-8d12-2dd5cd2579ff"
+    },
+    {
+      "claim_id": "0496c04a-d6ca-402c-aeed-1fae8c7b867c",
+      "result_id": "1a2ccd0e-3f71-4b80-8f73-f9017e02b73c"
+    },
+    {
+      "claim_id": "d469bdb6-fda5-4a39-a8ab-d8f2eda74562",
+      "result_id": "1a2ccd0e-3f71-4b80-8f73-f9017e02b73c"
+    },
+    {
+      "claim_id": "ae3157b3-8ea2-4a0f-bfa2-56849c179a71",
+      "result_id": "1a2ccd0e-3f71-4b80-8f73-f9017e02b73c"
+    },
+    {
+      "claim_id": "af757549-ef32-4c9c-928e-d340296d15b0",
+      "result_id": "1a2ccd0e-3f71-4b80-8f73-f9017e02b73c"
+    },
+    {
+      "claim_id": "20cf74e8-cf64-4bbe-a831-bf206b1b2261",
+      "result_id": "1a2ccd0e-3f71-4b80-8f73-f9017e02b73c"
+    },
+    {
+      "claim_id": "f91be016-5065-4e64-bdd2-ce8c7c2ac499",
+      "result_id": "c74f6ecb-5c45-4e7f-830e-c686915437e1"
+    },
+    {
+      "claim_id": "d32e0821-3b56-495b-a4c0-13cb6f69ecd2",
+      "result_id": "c74f6ecb-5c45-4e7f-830e-c686915437e1"
+    },
+    {
+      "claim_id": "3e905636-a2ad-4123-a159-89a7c45c0e70",
+      "result_id": "c74f6ecb-5c45-4e7f-830e-c686915437e1"
+    },
+    {
+      "claim_id": "3bd428de-459f-4cdc-9f25-e6482488f60b",
+      "result_id": "c74f6ecb-5c45-4e7f-830e-c686915437e1"
+    },
+    {
+      "claim_id": "2d9f3a87-5106-4870-8a7b-1068c86292cd",
+      "result_id": "c74f6ecb-5c45-4e7f-830e-c686915437e1"
+    },
+    {
+      "claim_id": "6df3e93a-c2cf-4926-8363-76e51d294e59",
+      "result_id": "51c1b5f0-b7e8-4718-ab78-4f8ce533c0fb"
+    },
+    {
+      "claim_id": "3f91d262-6c11-4538-b0de-b1525135a28b",
+      "result_id": "51c1b5f0-b7e8-4718-ab78-4f8ce533c0fb"
+    },
+    {
+      "claim_id": "06221565-0844-4a5f-9738-c3a0285800a1",
+      "result_id": "51c1b5f0-b7e8-4718-ab78-4f8ce533c0fb"
+    },
+    {
+      "claim_id": "dc4c0ca1-1da3-4517-be26-e9182a98d417",
+      "result_id": "f28a6875-26c4-4680-a229-6126ddc3d961"
+    },
+    {
+      "claim_id": "855ba7d7-4bae-4c96-97a2-7334fb2b31a4",
+      "result_id": "f28a6875-26c4-4680-a229-6126ddc3d961"
+    },
+    {
+      "claim_id": "1f67aa7c-c0ae-44d3-8d0c-5563adf408c2",
+      "result_id": "f28a6875-26c4-4680-a229-6126ddc3d961"
+    },
+    {
+      "claim_id": "6f398e47-27e7-4dd0-bb91-93ed68a48a54",
+      "result_id": "f28a6875-26c4-4680-a229-6126ddc3d961"
+    },
+    {
+      "claim_id": "b3abd3ca-f251-494e-8739-f9204a10a4a3",
+      "result_id": "f28a6875-26c4-4680-a229-6126ddc3d961"
+    },
+    {
+      "claim_id": "14257787-0239-4065-8dd0-208fc1f51e84",
+      "result_id": "f28a6875-26c4-4680-a229-6126ddc3d961"
+    },
+    {
+      "claim_id": "f17ee991-efbb-41b4-b916-8f7693a58ca4",
+      "result_id": "bf096a03-c9cb-4b57-965c-b5aafb4e12db"
+    },
+    {
+      "claim_id": "98a2ce97-54be-463f-8a87-0e9de5ab093c",
+      "result_id": "2277650f-78c1-4499-9e3f-2816c394a36c"
+    },
+    {
+      "claim_id": "ad5cd105-79c6-4827-a990-ffdea82d59c8",
+      "result_id": "448ae152-dc3b-4c38-97a1-1176c259c466"
+    },
+    {
+      "claim_id": "0a38bb13-e09b-4641-b8a8-e002c47165f2",
+      "result_id": "8b1cd684-4f5d-4e64-b8ce-e1e0143d6f8d"
+    },
+    {
+      "claim_id": "78d28fa4-63d6-4917-b8c4-1dc44b85e70e",
+      "result_id": "8b1cd684-4f5d-4e64-b8ce-e1e0143d6f8d"
+    },
+    {
+      "claim_id": "8aaaf667-7c40-42c6-8166-417bf4440a89",
+      "result_id": "f462fdee-d86a-4b3b-a781-919203833d33"
+    },
+    {
+      "claim_id": "5d551a97-d18b-49b1-82bd-c4dec2c6c8e5",
+      "result_id": "f462fdee-d86a-4b3b-a781-919203833d33"
+    },
+    {
+      "claim_id": "bd2588bf-f236-4810-95f2-8f28ca080be2",
+      "result_id": "f462fdee-d86a-4b3b-a781-919203833d33"
+    },
+    {
+      "claim_id": "d8f8ebb7-dd1f-4f99-b73c-a57a8cf8342f",
+      "result_id": "dfb52a6e-6867-4e78-b70a-8198240fb330"
+    }
+  ],
+  "comparisons": []
+}

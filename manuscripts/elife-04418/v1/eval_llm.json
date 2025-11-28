@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors developed a single-molecule FRET (smFRET) assay using zero-mode waveguides (ZMWs) to observe SRP binding to actively translating RNCs at physiologically relevant concentrations. The 50S ribosomal subunit was labeled with Cy3B and SRP with Cy5, with dye positions predicted to yield detectable FRET based on known SRP-RNC structures. ZMWs enabled measurements at 100 nM SRP, close to the physiological 400 nM concentration in bacterial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C46 describe a well-characterized experimental system with appropriate controls and validation. The FRET pair design is based on structural data (C40), the F\u00f6rster radius is appropriate (C41), and ZMWs are properly applied to reduce background fluorescence (C45-C46). The methodology is sound and enables physiologically relevant measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C3",
+      "C4",
+      "C36",
+      "C37"
+    ],
+    "result": "SRP binding to actively translating RNCs shows a ~50-fold delay in first binding events compared to subsequent events. This time-dependent progression from no binding to multiple binding events is consistent with the original conception that SRP only effectively binds RNCs after signal sequence emergence. Both association and dissociation rates are sensitive to active translation, with rapid and stable binding occurring only upon signal sequence exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C3-C4, C36-C37 present the core finding with quantitative data from Figure 1B. The ~50-fold delay is clearly demonstrated, and the interpretation connecting to the original SRP model (C51-C52) is well-supported by the experimental observations. This represents a major advance over prior work using stalled RNCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Varying EF-G concentration to modulate translation rate confirms that SRP binding depends on active translation. At 250 nM EF-G, ~50% of RNCs had >2 SRP binding events with first arrival half-time of ~350 s, while at 750 nM EF-G, ~80% had >2 events with first arrival half-time of ~280 s. Subsequent arrival times were also slower at lower EF-G (12 s vs 5 s half-times).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63 describe a well-controlled experiment varying translation rate through EF-G concentration. The quantitative results (C57-C62) from Figure 2 are internally consistent and support the interpretation that slower translation delays signal sequence exposure (C55-C56, C63). This provides strong evidence that the observed SRP binding depends on active translation dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors calibrated nascent chain length during translation using an engineered lepB mRNA with phenylalanine codon clusters at defined positions. Cy3.5-labeled tRNA^Phe pulses behaved as expected: most traces showed 3-4 pulses, pulse lifetimes were proportional to the number of phenylalanines incorporated (~30 s for 3-codon clusters vs ~10 s for single codon), and interpulse times were proportional to codons translated between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C78 describe a rigorous calibration approach with multiple internal consistency checks. The tRNA pulse behavior (C72-C76) matches theoretical expectations, validating that RNCs are actively translating (C77) and enabling accurate mapping of SRP binding to nascent chain length (C78). The experimental design and validation are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Using the calibrated translation system, 68% of first SRP binding events occurred when RNCs had translated 40-55 amino acids, corresponding to signal sequence emergence from the ribosomal peptide tunnel. Only 9% of first arrivals occurred before 40 amino acids. When the signal sequence was mutated to an inactive form, SRP binding events were virtually absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 present quantitative data from Figure 3C showing clear dependence on signal sequence exposure. The 40-55 amino acid range aligns with known signal sequence emergence (C80), and the mutant control (C82-C83) demonstrates specificity. The data strongly support signal sequence-dependent binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C50"
+    ],
+    "result": "After 50 amino acid nascent chain length, SRP-RNC binding events occurred at a rate of 1 per ~1-2 codons translated, compared to 1 per ~50 codons before 50 amino acids. This change is consistent with the ~50-fold increase in SRP association rates upon signal sequence exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide quantitative evidence for dramatically increased binding frequency after signal sequence exposure, consistent with the ~50-fold rate change observed in C50. The data from Figure 3C support this interpretation, showing a clear transition in binding behavior at the expected nascent chain length.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SRP-RNC residence times were longest (74.4 \u00b1 5.0 s) when RNCs were translating nascent chains of 50-60 amino acids, with ~2-fold shorter residence times for chains of 40-50 amino acids (34.7 \u00b1 4.1 s) or 60-70 amino acids (37.8 \u00b1 3.5 s). This is consistent with SRP binding most effectively to nascent chains of optimal length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 present quantitative residence time data from Figure 3C showing a clear peak at 50-60 amino acids. The error bars are provided, and the interpretation (C92) is reasonable given the data. This supports a model where SRP binding affinity depends on nascent chain length and conformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "As nascent chains grew from 45 to 60 amino acids, RNC occupancy by SRP rapidly increased in a manner dependent on a functional signal sequence. When the signal sequence was mutated, occupancy was lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 describe the occupancy data from Figure 3D-E, showing signal sequence-dependent increase in SRP-RNC occupancy. The mutant control (C95) demonstrates specificity. The data support the conclusion that SRP occupancy increases as the signal sequence becomes fully exposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The kinetic parameter most responsible for signal sequence discrimination is a highly variable SRP-RNC association rate. When no signal sequence is exposed, the association rate is >3.5 \u00d7 10^4 M^-1 s^-1 with negligible occupancy, but after signal sequence exposure, rates become \u226550-fold faster (~1.8 \u00d7 10^6 M^-1 s^-1). This contrasts with previous work suggesting association rates are insensitive to nascent chain length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 present a key mechanistic conclusion supported by the quantitative data. The ~50-fold difference in association rates (C101, C103) is well-documented in the results. The contrast with prior work (C104) is appropriately noted. The conclusion that association rate variation drives signal sequence discrimination is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The results suggest SRP does not engage stably with translating RNCs that do not expose a functional signal sequence. This is consistent with biochemical and structural work showing SRP can directly bind exposed signal sequences, but contrasts with previous work on stalled ribosomes suggesting SRP can bind prominently to RNCs with nascent chains as short as 20 amino acids with occluded signal sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 present the main conclusion and its relationship to prior work. The conclusion (C97) is well-supported by the experimental data showing delayed first binding and signal sequence dependence. The contrast with prior work (C99) is appropriately cited and discussed, with the authors providing plausible explanations for the discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The FRET-based system has limitations: detection is limited to inter-dye distances <~95 \u00c5 and temporal resolution is 100 ms. However, given that known SRP-RNC structures predict distances <50 \u00c5 and shortest reported residence times are ~70-100 ms, binding events conformationally similar to known complexes should be detected. Undetected intermediates, if present, would need to be conformationally distinct or very short-lived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113 provide an honest assessment of experimental limitations and their implications. The reasoning about what can and cannot be detected (C110) is sound based on the cited structural and kinetic data (C108-C109). The acknowledgment of potential undetected intermediates (C111-C113) is appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Stalled RNCs, despite being homogeneously stalled with 55 amino acid nascent chains, show 1-3 orders of magnitude differences in SRP arrival and residence times (2.4-40.9 s and 0.4-58.7 s median times). This variability suggests stalled RNCs exist in numerous conformational states, many likely inactive or off-pathway. Results from stalled RNCs may be less physiologically relevant than from actively translating RNCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 and C133-C135 present data from Figure 1\u2014figure supplement 3 showing enormous heterogeneity in stalled RNC behavior. The interpretation that this reflects multiple conformational states (C116, C134) is reasonable, and the conclusion about physiological relevance (C118) is well-justified. This provides important context for interpreting prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Based on previous calibrations of translation rates (~5-10 s per amino acid), the authors estimate first SRP arrival times occurred after ~35-45 amino acids were polymerized, corresponding to partial signal sequence emergence from the ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 present a reasonable estimate based on cited prior calibration work (C64) and the observed arrival times. The estimate of 35-45 amino acids (C65) aligns well with the more direct measurements from the tRNA pulse experiments (C79), and the interpretation about signal sequence emergence (C66) is supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "When dye-labeled SRP and RNCs were incubated to form complexes, smFRET was observed with 0.2-0.32 efficiency in ZMWs, corresponding to 0.33-0.5 E_FRET when calibrated using TIRFM. This is lower than the ~0.85 E_FRET predicted from cryo-EM structures, but the structures are low resolution (9.6-16 \u00c5) and previous work showed SRP can adopt multiple conformations on the ribosome, consistent with observed bimodality in E_FRET distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C132 describe the FRET calibration with appropriate controls (TIRFM calibration in C128). The discrepancy with structural predictions (C129) is acknowledged and reasonably explained by structural resolution limitations (C130) and conformational heterogeneity (C131-C132). The bimodal distribution supports multiple conformational states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Studies in yeast and mammalian cells observed some SRP preference for RNCs carrying signal sequences before exposure from the ribosome. These studies used stalled RNCs in crude cell extracts, suggesting factors absent in the current assays and/or prokaryotic-eukaryotic differences might influence early SRP-RNC interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C122 cite prior eukaryotic work (C120-C121) and speculate about potential differences (C122). While the citations appear accurate, the speculation about system differences is not tested in this work. The authors appropriately frame this as a possibility rather than a conclusion, but no data are provided to evaluate these potential differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C123"
+    ],
+    "result": "The results establish a new experimental paradigm for characterizing the dynamics of factors that interact co-translationally with RNCs, including chaperones and nascent chain modifying enzymes. The methods promise to be useful for studying other RNC-associating factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C123 present reasonable implications of the methodology. The experimental approach is indeed novel in observing actively translating RNCs at physiological concentrations, and the suggestion that it could be applied to other factors is logical. However, this is a forward-looking statement rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on SRP function and composition: SRP directs RNCs with signal sequences to target membranes in all three kingdoms of life. Mammalian SRP has 6 protein subunits and 300-nt RNA, while E. coli SRP has one protein (Ffh) and 114-nt RNA (4.5S RNA). E. coli SRP can replace mammalian SRP in vitro, retaining core targeting functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C14 present well-established background information about SRP function and composition, supported by appropriate citations. This is standard knowledge in the field and provides necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "All previous work on the initial SRP-RNC binding step used stalled, non-translating RNCs. This approach was technically necessary to create homogeneous RNC populations but lacked the temporal dimension provided by active translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C30 accurately characterize prior work in the field and identify a key limitation. This provides important motivation for the current study's approach using actively translating RNCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior equilibrium measurements showed tight SRP binding (1-100 nM) to stalled RNCs with nascent chains \u226435 amino acids. Given that ~10% of RNCs have chains <35 amino acids and SRP concentration is ~400 nM (100-fold less than ribosomes), tight binding would result in 75-100% of SRP bound to RNCs not exposing signal sequences (~95% of which never will), creating an unproductive sink.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 present a well-reasoned calculation based on cited prior measurements (C15-C17, C20) and ribosome profiling data (C16). The calculation identifying a potential problem with prior models (C19, C21) is mathematically sound and provides strong motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior kinetic studies concluded SRP arrives at RNCs quickly (~10^6 M^-1 s^-1) regardless of nascent chain length, with chain length affecting dissociation rates (wide range: ~10-0.01 s^-1 for no chain, ~0.1 to 2\u00d710^-4 s^-1 for exposed signal sequence). Models proposed SRP non-specifically binds early and remains until displaced by nascent chain emergence or additional factors like trigger factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 accurately summarize prior kinetic work with appropriate citations. The description of conflicting models (C25-C26) and their implications (C27) provides important context for understanding how the current work resolves these issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Multiple parameters change dynamically during active translation: ribosome conformations cycling through pre- and post-elongation states, nascent chain composition changing with each amino acid, and length/folding state of the chain outside the ribosomal tunnel. These factors could affect SRP-RNC interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe well-established aspects of translation dynamics (C31-C33) and reasonably hypothesize their potential effects on SRP binding (C34). This provides clear rationale for studying actively translating RNCs rather than stalled complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Experimental materials and methods: LepB is a well-characterized SRP substrate with N-terminal signal sequence. A 3'-truncated lepB mRNA encoding 155 amino acids was immobilized on ZMWs. Pre-initiation complexes were assembled on the mRNA. All proteins were from E. coli MC4100. The Ffh(E153C) mutant was engineered by QuikChange mutagenesis. Labeling efficiency was >90% for both Ffh and L29.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C124-C126 describe standard experimental materials and methods with appropriate citations (C47) and sufficient detail. The high labeling efficiency (C126) indicates good reagent quality.",
+    "result_type": "MINOR"
+  }
+]

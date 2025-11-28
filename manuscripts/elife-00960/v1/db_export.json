@@ -1,0 +1,1949 @@
+{
+  "submission": {
+    "id": "24c69631-4746-42f8-baa0-caabed6f9dce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:50:43.752186Z",
+    "updated_at": "2025-11-28T19:50:43.752186Z"
+  },
+  "content": [
+    {
+      "id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "submission_id": "24c69631-4746-42f8-baa0-caabed6f9dce",
+      "content_type": "manuscript",
+      "content_text": "# Spatial self-organization favors heterotypic cooperation over cheating\n\n## Authors\n\n- Babak Momeni<sup>1</sup> \u2020\n- Adam James Waite<sup>1</sup>\n- Wenying Shou<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Basic Sciences Fred Hutchinson Cancer Research Center Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHeterotypic cooperation\u2014two populations exchanging distinct benefits that are costly to produce\u2014is widespread. Cheaters, exploiting benefits while evading contribution, can undermine cooperation. Two mechanisms can stabilize heterotypic cooperation. In \u2018partner choice\u2019, cooperators recognize and choose cooperating over cheating partners; in \u2018partner fidelity feedback\u2019, fitness-feedback from repeated interactions ensures that aiding your partner helps yourself. How might a spatial environment, which facilitates repeated interactions, promote fitness-feedback? We examined this process through mathematical models and engineered Saccharomyces cerevisiae strains incapable of recognition. Here, cooperators and their heterotypic cooperative partners (partners) exchanged distinct essential metabolites. Cheaters exploited partner-produced metabolites without reciprocating, and were competitively superior to cooperators. Despite initially random spatial distributions, cooperators gained more partner neighbors than cheaters did. The less a cheater contributed, the more it was excluded and disfavored. This self-organization, driven by asymmetric fitness effects of cooperators and cheaters on partners during cell growth into open space, achieves assortment.\n\n## Introduction\n\nCooperation, providing a benefit available to others at a cost to self, has been postulated to drive major transitions in evolution (Maynard Smith and Szathmary, 1998). Cooperation may take place between similar individuals contributing and sharing identical benefits (homotypic cooperation) or between two populations exchanging distinct benefits such as in some forms of mutualism (heterotypic cooperation). Both homotypic and heterotypic cooperation are vulnerable to cheaters (Turner and Chao, 1999; Strassmann et al., 2000; Bronstein, 2001; Rainey and Rainey, 2003; Travisano and Velicer, 2004). Cheaters exploit cooperative benefits without contributing their fair share and are therefore competitively superior to their cooperating counterparts. How might cooperation avoid being taken over by cheaters? The answer lies in \u2018positive assortment\u2019 (Fletcher and Doebeli, 2009), in which benefit-supplying individuals interact more with other benefit-supplying individuals than with cheaters.\n\nIn homotypic cooperation that involves genetic relatives, positive assortment can be realized through \u2018kin discrimination\u2019, which is based on the active recognition and preferential treatment of more closely related individuals over distantly related ones (Sachs et al., 2004). Positive assortment can also be realized through \u2018kin fidelity\u2019 (Sachs et al., 2004). For example, restricted migration in a spatial environment causes homotypic cooperators and cheaters to cluster with their respective progeny. This clustering allows cooperators to preferentially interact with each other (Figure 1A, top). Both mechanisms of positive assortment can favor cooperation (Hamilton, 1964a; Hamilton, 1964b; Maynard Smith, 1964; Chao and Levin, 1981; Nowak and May, 1992; Fletcher and Doebeli, 2006; Kerr et al., 2006; MacLean and Gudelj, 2006; West et al., 2006; Lion and Baalen, 2008; Wild et al., 2009; West and Gardner, 2010). A spatial environment may also impede homotypic cooperation by intensifying competition among cooperators (Taylor, 1992; Wilson et al., 1992; West et al., 2002) and in certain cases, by potentially encouraging cheating strategies (Hauert and Doebeli, 2004).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig1-v1.jpg)\n\n**Figure 1.:** (A) Top: clustering with self-type can favor homotypic cooperators (yellow) over cheaters (black). Bottom: clustering with self-type should not favor heterotypic cooperation since cooperator clusters (red) and competitively superior cheater clusters (blue) should have equivalent access to the heterotypic cooperative partner (green). (B) We engineered three yeast strains: a red-fluorescent $R_{\u2192A}^{\u2190L}$ strain requiring lysine and releasing adenine; a green-fluorescent $G_{\u2192L}^{\u2190A}$ strain requiring adenine and releasing lysine; and a cyan-fluorescent $C^{\u2190L}$ strain requiring lysine and not releasing adenine. The three strains purely competed (\u2018Comp\u2019) or additionally cooperated and cheated (\u2018Co&Ch\u2019), depending on whether the medium contained or lacked adenine (\u2018Ade\u2019) and lysine (\u2018Lys\u2019), respectively. (C) In competitive communities, $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ dropped below the initial value of 1 (dotted line) during community growth due to the fitness advantage of $C^{\u2190L}$ over $R_{\u2192A}^{\u2190L}$. In contrast, $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ rose above 1 when the strains engaged in cooperation and cheating. Population ratios in experiments were measured using flow cytometry. All communities started from an initial density of 3000 total cells/mm2 with the three strains at a 1:1:1 ratio on top of an agarose column (Figure 1\u2014figure supplement 1A) and were analyzed after approximately six to eight generations (Figure 1\u2014figure supplement 2). p Values are from the Wilcoxon signed rank test, comparing the median with 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Unless otherwise stated (see B), experiments and simulations were initiated by randomly distributing the three cell populations on top of a filter placed above an agarose column of equal size. The agarose column was 6 mm in diameter and 11 mm in height. (B) Alternatively, a 2 mm-diameter spot of cell mixture was deposited at the center of a membrane filter on top of an agarose pad (24 mm \u00d7 24 mm \u00d7 4 mm). In this configuration, the initial inoculum spot had \u223c8 \u00d7 104 total cells/mm2. Unless otherwise stated, all communities were initiated from equal proportions of $R_{\u2192A}^{\u2190L}$, $G_{\u2192L}^{\u2190A}$, and $C^{\u2190L}$ populations.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** In experimental spatial communities, cooperators $R_{\u2192A}^{\u2190L}$ are favored over cheaters $C^{\u2190L}$.(A\u2013D) In the communities of heterotypic cooperation and cheating (Figure 1\u2014figure supplement 1A), the $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratio increased over time before leveling off. The initial surface cell density was 3000 cells/mm2 in (A and B) and 104 cells/mm2 in (C and D). The ratios did not change considerably in late stages of community growth (approximately six to eight generations in B and D) and were therefore used for reporting results (e.g., in Figure 1C). Since sampling was destructive, all data points were from independent communities grown to various times and generations. The consistency in the data trend highlights small variations among independent spatial communities. The leveling off of the $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratio in later generations likely reflects the fact that by that time, not much open space is available for self-organization (Figure 7). As a reference, 104/mm2 is two generations away from confluence. (E and F) Unlike in (A\u2013D) where the growth area was limited to the original inoculation domain (Figure 1\u2014figure supplement 1A), the $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratio continued to increase during later generations when the growth medium extended beyond the original inoculation domain (Figure 1\u2014figure supplement 1B). The initial decrease in $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ suggests that $C^{\u2190L}$ was more starvation-tolerant and therefore fitter than $R_{\u2192A}^{\u2190L}$ in this lysine-limited environment before sufficient cell growth and spatial organization occurred. Exp: experiment.\n\nHeterotypic cooperation can occur between populations that are genetically related but phenotypically differentiated, such as between different cell types in a multicellular organism. Alternatively, heterotypic cooperation can involve two genetically unrelated populations (e.g., species) exchanging distinct benefits that are costly to produce. For example, legume plants supply organic carbon and other essential nutrients to rhizobia, and rhizobia reciprocate with fixed nitrogen (Udvardi and Poole, 2013). Positive assortment in heterotypic cooperation can be achieved through \u2018partner choice\u2019 and \u2018partner fidelity feedback\u2019 (Bull and Rice, 1991; Sachs et al., 2004; Foster and Wenseleers, 2006; Weyl et al., 2010). In partner choice, active mechanisms (disruptable through for example mutational or pharmacological means) enable an individual to differentially reward cooperative instead of non-cooperative partners based on a signal. Thus, discrimination mediated by partner choice can occur in advance of exploitation (Bull and Rice, 1991). For instance, in the mutualism between client fish and cleaner fish in which cleaner fish obtain food from removing client parasites, client fish recognize and avoid cheating cleaners that also bite healthy tissues (Bshary, 2002). In partner fidelity feedback, fitness-feedback from repeated interactions ensures that aiding the partner helps self. Examples of partner fidelity feedback can be found in mutualism between hosts and their vertically transmitted symbionts, for example, between eukaryotes and their endosymbioic mitochondria and chloroplasts (Sachs et al., 2011).\n\nNatural heterotypic cooperative systems often benefit from a combination of partner choice and partner fidelity feedback. Often, for a particular system, it is challenging to determine which mechanism is mainly responsible for fending off cheaters. For instance, the mutualism between fig and fig wasp and between legume and rhizobia have been thought to employ partner choice by some investigators (Kiers et al., 2003; Sachs et al., 2004; Foster and Wenseleers, 2006; Jand\u00e9r and Herre, 2010) and partner fidelity feedback by others (Weyl et al., 2010).\n\nIn this study, using engineered yeast strains and mathematical models devoid of possibilities for partner choice, we examined how through partner fidelity feedback heterotypic cooperation between microbes may be protected against cheaters. Spatial environment, which facilitates repeated interactions between neighboring individuals, has been shown to promote heterotypic cooperation (Boucher et al., 1982; Doebeli and Knowlton, 1998; Yamamura et al., 2004; West et al., 2007; Harcombe, 2010; Mitri et al., 2011). However, the mechanism for how partner fidelity feedback unfolds in a spatial environment is not well understood. Specifically, how might spatial correlation in the tendency to contribute arise between genetically unrelated heterotypic cooperators when such correlation was initially absent (Frank, 1994)? If population viscosity was the sole driving force, then clusters of cooperators and clusters of competitively superior cheaters would be expected to have equivalent access to clusters of heterotypic cooperative partners. This would seem to favor cheaters (Figure 1A, bottom). Instead, we show that in a spatial environment, asymmetric fitness effects of cooperators and cheaters on partners during cell growth into open space drives assortment. This emergence of non-random patterns from initially random spatial distributions, known as self-organization, automatically grants cooperators instead of cheaters more access to heterotypic cooperative partners, disfavoring cheaters. Thus, partner fidelity feedback through self-organization excludes cheaters without evolving recognition mechanisms.\n\n## Results\n\n### Environment-dependent engineered heterotypic cooperation and cheating\n\nTo examine how partner fidelity feedback unfolds in a spatial environment, we started with an engineered experimental system incapable of partner recognition (Shou et al., 2007; Waite and Shou, 2012). This system consisted of three reproductively isolated Saccharomyces cerevisiae strains: a green-fluorescent strain requiring adenine and releasing lysine ($G_{\u2192L}^{\u2190A}$), a red-fluorescent strain requiring lysine and releasing adenine ($R_{\u2192A}^{\u2190L}$), and a cyan-fluorescent strain requiring lysine and not releasing adenine ($C^{\u2190L}$). Release of lysine or adenine was caused by metabolite overproduction due to a mutation that made the first enzyme of the biosynthetic pathway (Lys21 and Ade4, respectively) insensitive to end-product inhibition (Armitt and Woods, 1970; Feller et al., 1999). $C^{\u2190L}$ still produced adenine for itself at the wild-type level, but without the overproduction mutation, the adenine produced by $C^{\u2190L}$ was not sufficient to support the growth of $G_{\u2192L}^{\u2190A}$ (Figure supplement 6 in Shou et al., 2007).\n\nThese strains engaged in different types of interactions depending on the environment. In minimal medium supplemented with abundant adenine and lysine, they competed for nutrients required by all three strains (e.g., glucose and nitrogen) and limited space (Figure 1B, \u2018Comp\u2019). In minimal medium without supplements, in addition to competition, $G_{\u2192L}^{\u2190A}$ and $R_{\u2192A}^{\u2190L}$ exchanged essential metabolites lysine and adenine (Shou et al., 2007), while $C^{\u2190L}$ consumed lysine without releasing adenine. Not overproducing adenine, $C^{\u2190L}$ showed a \u223c2% growth rate advantage over $R_{\u2192A}^{\u2190L}$ when lysine was abundant (competition assay in Figure 1 of Waite and Shou, 2012). In the absence of lysine, there was no significant difference in the death rates of $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$ (Figure S1 in Waite and Shou, 2012). Finally, in media lacking lysine and adenine, binary cocultures of $R_{\u2192A}^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ could grow from low to high cell densities (Figure 1 in Shou et al., 2007), whereas cocultures of $C^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ failed to grow (Figure supplement 6 in Shou et al., 2007). These results collectively suggest that $C^{\u2190L}$ acts as a cheater variant of $R_{\u2192A}^{\u2190L}$ (Waite and Shou, 2012). In other words, in the absence of supplements, cooperator $R_{\u2192A}^{\u2190L}$ and the competitively superior cheater $C^{\u2190L}$ competed for the lysine supplied by the heterotypic cooperative partner (partner) $G_{\u2192L}^{\u2190A}$ (Figure 1B, \u2018Co&Ch\u2019). Cooperator $R_{\u2192A}^{\u2190L}$ \u2018reciprocated\u2019 by releasing adenine, which is essential for partner $G_{\u2192L}^{\u2190A}$, but cheater $C^{\u2190L}$ did not release adenine.\n\n### A spatial environment can stabilize heterotypic cooperation against cheaters\n\nWe first verified that a spatial environment could stabilize heterotypic cooperation against a competitively superior cheater in our system. We initiated experimental communities from randomly distributed equal proportions of the three cell populations on agarose pads (Figure 1\u2014figure supplement 1A). During pure competition in the presence of supplemented adenine and lysine, the $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratio dropped below the original value of 1 after approximately six to eight generations (Figure 1C), consistent with the known 2% growth advantage of $C^{\u2190L}$ over $R_{\u2192A}^{\u2190L}$ (Waite and Shou, 2012). In contrast, during cooperation and cheating in the absence of adenine and lysine supplements, cooperating $R_{\u2192A}^{\u2190L}$ was favored over cheating $C^{\u2190L}$ (Figure 1C, time course in Figure 1\u2014figure supplement 2).\n\nIf the spatial aspect of the environment is disrupted, either by periodically mixing a community or by growing it as a well-mixed liquid coculture, partner fidelity feedback should not operate and cheaters are expected to be favored over cooperators. However, the ratio of cooperators $R_{\u2192A}^{\u2190L}$ to cheaters $C^{\u2190L}$ in periodically mixed replicate communities varied dramatically (Figure 2\u2014figure supplement 1). This was because the lysine-limited environment strongly selected for adaptive mutants in $C^{\u2190L}$ and $R_{\u2192A}^{\u2190L}$ (Waite and Shou, 2012). Thus, $C^{\u2190L}$ and $R_{\u2192A}^{\u2190L}$ engaged in an \u2018adaptive race\u2019 (Waite and Shou, 2012) akin to clonal interference: if $C^{\u2190L}$ had the best mutation to grow under lysine limitation, then the coculture was quickly destroyed by cheaters; if $R_{\u2192A}^{\u2190L}$ had the best adaptive mutation, then the coculture quickly purged cheaters. As a result, $C^{\u2190L}$ outcompeted $R_{\u2192A}^{\u2190L}$ or $R_{\u2192A}^{\u2190L}$ outcompeted $C^{\u2190L}$ depending on which population had a better mutation, not because of social interactions. This kind of phenomenon has also been observed for non-engineered cooperating and cheating microbes (Morgan et al., 2012). We chose two evolving cocultures in which the $C^{\u2190L}$ populations were increasing in frequency, When we grew these two cocultures in well-mixed and in periodically perturbed spatial environments, $C^{\u2190L}$ was favored (Figure 2\u2014figure supplement 2; \u2018Materials and methods\u2019). However, in a spatial environment, $R_{\u2192A}^{\u2190L}$ was favored (Figure 2\u2014figure supplement 2), consistent with previous experiments on a different microbial system (Harcombe, 2010). Our experiments involved non-clonal and non-isogenic populations. In nature, cheaters can be of different species (such as the non-pollinating wasps of fig) and therefore not isogenic with their cooperating counterpart. Additionally, upon environmental stresses, originally isogenic cooperators and cheaters can quickly acquire different mutations and become nonisogenic (Morgan et al., 2012; Waite and Shou, 2012). Regardless, we resorted to mathematical models to eliminate the confounding influence of adaptive mutations.\n\nWe extended a three-dimensional individual-based model of community growth (previously described as the \u2018diffusion model\u2019 in Momeni et al., 2013) to include cooperators, cheaters, and heterotypic partners. The main assumptions of this model were: (1) that the growth of individual cells depended on consumption of the limiting metabolite, and the consumption rate in turn depended on the local concentration of the limiting metabolite according to Michaelis\u2013Menten kinetics; (2) that spatial distribution of metabolites was governed by release, diffusion, and consumption; and (3) that cells rearranged when necessary to accommodate new cells as per experimental observations (\u2018Materials and methods\u2019). Parameters of this model (such as the rates of growth, death, and metabolite consumption and release) were experimentally determined (Momeni et al., 2013), mostly through characterizing properties of monocultures (Figure 2\u2014source data 1). C\u2190L was assumed to have a constant intrinsic fitness advantage over R\u2192A\u2190L at all lysine concentrations, as modeled by a higher maximum uptake rate (vm,C>vm,R in \u2018The diffusion model\u2019 in \u2018Materials and methods\u2019). In the absence of adaptations, simulation results confirmed that a spatial environment favored cooperators over cheaters and that disrupting the spatial aspect of the environment gave cheaters an advantage over cooperators (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig2-v1.jpg)\n\n**Figure 2.:** The $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratios of simulated (\u2018Sim\u2019) spatial cooperating and cheating communities were grown either unperturbed (purple circles) or periodically mixed (orange squares). To simulate periodic mixing, the arrangement of cells was completely randomized every 12 hr. In each mixing event, the concentration of adenine and lysine throughout the community was assigned to be the average value over the entire community. Error bars show the standard deviation of ratios in six independent communities. The solid black line shows the ratio in a simulated well-mixed liquid coculture using the same parameters as simulated communities on agarose (Figure 2\u2014source data 1). The fitness advantage of cheater over cooperator was either 2% (top panel) or 8% (bottom panel).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratios diverged in six replicate experimental communities periodically mixed during growth. Cell migration during mixing allowed the mutant type most adapted to the low-lysine environment to sweep through the entire community. The most adaptive mutation could occur in either $R_{\u2192A}^{\u2190L}$ or $C^{\u2190L}$, which led to stochastic outcomes similar to those observed in well-mixed liquid cocultures (Waite and Shou, 2012). We started these communities from a spot at a density of \u223c8 \u00d7 104 total cells/mm2 (Figure 1\u2014figure supplement 1B) and physically mixed them daily (approximately every two generations) using a glass rod. The cells attached to the glass rod (estimated to be \u223c10% of the community population) were suspended in water and analyzed using flow cytometry. Exp: experiment.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) To preadapt cooperators and cheaters in the lysine-limited coculture environment so that no new mutations of large fitness benefits could quickly arise, we started eight well-mixed replicates (marked by different symbols) consisting of rsp5 $R_{\u2192A}^{\u2190L}$, rsp5 $C^{\u2190L}$, and the ancestral $G_{\u2192L}^{\u2190A}$(\u2018Materials and methods\u2019). The rsp5 mutation was previously found to be highly adaptive for the lysine-requiring cells in a lysine-limited environment (Waite and Shou, 2012). The initial stochastic phase was indicative of additional rounds of adaptive races (Waite and Shou, 2012) between rsp5 $R_{\u2192A}^{\u2190L}$and rsp5 $C^{\u2190L}$. After 250 hr, the $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratios showed steady trends, suggesting no additional rapid adaptive races. Two of these cultures (brown) that had $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratios close to 1:1 were revived from frozen stocks. (B) In the two revived cocultures where the evolved populations were denoted with a \u201c \u02b9 \u201d, $R^{\u2032}_{\u2192A}^{\u2190L}$:$C^{\u2032}^{\u2190L}$ continued to decline steadily. The broken axis indicates the period of time elapsed during which a small revived inoculum (30 \u03bcl frozen stock into 200 \u03bcl minimal medium and then expanded to 2 ml minimal medium) grew to detectable densities. (C) When preadapted communities were grown unperturbed on agarose pads, cooperators were favored as communities grew (purple circles). In contrast, cheaters were favored when the spatial aspect of the environment was either disrupted (daily mixing after day 5, orange squares) or absent (well-mixed liquid cocultures, black diamonds). We started all spatial communities at \u223c8 \u00d7 104 total cells/mm2 in a \u223c2 mm-diameter spot (Figure 1\u2014figure supplement 1B) and liquid communities at 5 \u00d7 105 total cells/ml in 3 ml SD. Exp: experiment.\n\nDuring spatial growth of the yeast community, ancestral $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$ should also engage in an adaptive race to adapt to the lysine-limited environment. However, unlike in the liquid environment, mutants in $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$ were spatially restricted to the neighborhood of their origins, and thus these mutants could not sweep through the entire community. Consequently, population dynamics from different replicates were highly reproducible (Figure 1\u2014figure supplement 2). Thus, we used ancestral $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$ for all other experiments.\n\n### Differential spatial association with partner favors heterotypic cooperation over cheating\n\nHow might a spatial environment promote heterotypic cooperation? The relative positioning of cells in a community, the \u2018spatial pattern\u2019 of a community, can develop differently based on the fitness effects of cell\u2013cell interactions (Momeni et al., 2013). Due to the inability of confocal or two-photon microscopy to yield three-dimensional patterns of cells in yeast communities, we only had access to the top-views (xy) and vertical cross-sections (z), with the latter being obtained through cryosectioning (Momeni and Shou, 2012). In vertical cross-sections, we have previously shown that in the absence of adenine and lysine supplements, $R_{\u2192A}^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ as a strongly cooperative pair (i.e., there is a large fitness gain from interacting with the other population) are expected to spatially mix (Momeni et al., 2013). In contrast, $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$, a competing pair, should form segregated columns, with each column consisting primarily of a single cell type (Momeni et al., 2013). Finally, for the commensal pair $G_{\u2192L}^{\u2190A}$ and $C^{\u2190L}$ in which each $G_{\u2192L}^{\u2190A}$ cell can support the local growth of multiple $C^{\u2190L}$ cells, $C^{\u2190L}$ is expected to grow over $G_{\u2192L}^{\u2190A}$ (Momeni et al., 2013). However, it is unclear what patterns would form when the three strains grow together in a community and how the patterns might impact cooperators and cheaters differently.\n\nTo examine how cooperation and cheating might affect community patterns, we compared communities grown in a spatial environment under conditions of competition (\u2018Comp\u2019) or cooperation and cheating (\u2018Co&Ch\u2019) (Figure 1B). Specifically, equal proportions of R\u2192A\u2190L, G\u2192L\u2190A, and C\u2190L cells were randomly distributed on top of an agarose surface and allowed to grow. Top-views of experimental (\u2018Exp\u2019) communities grown in the presence of adenine and lysine supplements revealed that R\u2192A\u2190L, G\u2192L\u2190A, and C\u2190L, when engaged in pure competition, were evenly distributed in the horizontal xy plane (Figure 3A, top panel). This pattern was caused by the initial cells growing into microcolonies which, after running into each other, were forced to grow upward (Figure 3\u2014figure supplement 1A) (Momeni et al., 2013). Indeed, vertical cross-sections exhibited patterns consistent with our expectations that competitive populations should form segregated columns (Momeni et al., 2013) (Figure 3A, bottom panel).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) Experimentally, as the initially randomly distributed cells grew, different patterns emerged depending on whether the medium contained or lacked adenine and lysine supplements and consequently whether the dominant cell-cell interaction was respectively competition (\u2018Comp\u2019) or cooperation and cheating (\u2018Co&Ch\u2019). Top-views: \u2018xy\u2019; vertical sections: \u2018z\u2019. (C) Compared to $C^{\u2190L}$, $R_{\u2192A}^{\u2190L}$ had a higher level of association with $G_{\u2192L}^{\u2190A}$ during cooperation and cheating ($A_{RG/CG}$> 1) but not during competition. In (C), the communities were analyzed after approximately six to eight generations. (D, E and F) We observed similar results in the simulated communities. In simulated top-views, higher color intensity indicates a greater number of cells of the corresponding fluorescent color stacked at that position. In simulated vertical cross-sections, low and high color intensity represent dead and live cells, respectively. Scale bar: 100 \u03bcm. In C and F, grey: competition; magenta: cooperation and cheating. p Values are from the Mann\u2013Whitney U-test. All communities started from an initial density of 3000 total cells/mm2 (Figure 1\u2014figure supplement 1A).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) On media supplemented with adenine and lysine, $R_{\u2192A}^{\u2190L}$, $G_{\u2192L}^{\u2190A}$, and $C^{\u2190L}$ competed for shared resources. Individual cells initially grew into microcolonies (hour 5) and expanded until they reached other microcolonies (hours 9\u201313). Subsequent growth was mainly in the vertical direction due to physical constraints (hour 46), and top-view patterns remained static (hours 46\u2013120). (B) On media not supplemented with adenine or lysine, $R_{\u2192A}^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ were the heterotypic cooperative pair and $C^{\u2190L}$ was the cheater. After small microcolonies formed (hour 81), the positive feedback between $R_{\u2192A}^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ led to the formation of pods consisting of mixed heterotypic cooperators (red and green) surrounded by isolated patches of cheaters (blue) (hours 101\u2013171). All parameters in simulations are similar to those in Figure 3. \u2018Sim w/delay\u2019 incorporated a 60 hr delay in the death of $G_{\u2192L}^{\u2190A}$ and in the consequent release of lysine according to experimental observations (Momeni et al., 2013). This simulation generated results qualitatively similar to simulations without incorporating the delay (\u2018Sim\u2019). For generality, we opted to use simulations without such a delay throughout the paper. Scale bar: 100 \u03bcm. Co&Ch: cooperating and cheating; Comp: competing; Exp: experiment; Sim: simulation.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The partner association indexes in simulated communities showed more association between $R_{\u2192A}^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ than between $C^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ during cooperation and cheating but not during competition.(A) Quantifying the partner association index in top-views (\u2018xy\u2019) and vertical cross-sections (\u2018z\u2019) of simulated communities shows trends similar to the experimental results in Figure 3C. (B) When quantified using a three-dimensional neighborhood, the partner association indexes showed similar results as in (A). The partner association indexes are less variable when averaged across each three-dimensional community using a three-dimensional neighborhood instead of across each two-dimensional slice of a community using a two-dimensional neighborhood (compare B with A). Co&Ch: cooperating and cheating; Comp: competing; Sim: simulation.\n\nIn the absence of adenine and lysine supplements, the three populations engaged in heterotypic cooperation and cheating in addition to competition for shared resources. Top-views of these experimental communities showed patterns distinct from those of purely competitive communities. Regions dominated by a mixture of the cooperating pair $R_{\u2192A}^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ appeared isolated from regions dominated by the cheater $C^{\u2190L}$ (Figure 3B, top panel and Figure 3\u2014figure supplement 1B). Vertical cross-sections of these communities revealed that cooperating $R_{\u2192A}^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ intermixed and formed tall \u2018pods\u2019. In contrast, cheating $C^{\u2190L}$ was relegated to the periphery of these pods and grew relatively poorly (Figure 3B, bottom panel).\n\nTo quantify differential partner association, the result of partner fidelity feedback, we define \u2018partner association index\u2019 $A_{RG/CG}$: for those $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$ cells bordering at least one other cell type (\u2018Materials and methods\u2019), $A_{RG/CG}$ is the ratio of the average number of $G_{\u2192L}^{\u2190A}$ in the immediate neighborhood of $R_{\u2192A}^{\u2190L}$ to the average number of $G_{\u2192L}^{\u2190A}$ in the immediate neighborhood of $C^{\u2190L}$. A partner association index $A_{RG/CG}$> 1 indicates more $G_{\u2192L}^{\u2190A}$ neighbors surrounding $R_{\u2192A}^{\u2190L}$ than surrounding $C^{\u2190L}$. Using a two-dimensional neighborhood to quantify $A_{RG/CG}$ in top-views and vertical cross-sections, we found that $A_{RG/CG}$ significantly exceeded 1 during cooperation and cheating but not during competition (Figure 3C). This self-organization\u2014the formation of non-random patterns from initially randomly distributed individuals purely driven by internal local interactions (Camazine et al., 2003; Sol\u00e9 and Bascompte, 2006)\u2014automatically makes $G_{\u2192L}^{\u2190A}$ partner more accessible to cooperating $R_{\u2192A}^{\u2190L}$ than to cheating $C^{\u2190L}$.\n\nSimilar to the experiments, top-views and vertical cross-sections in the communities simulated through the diffusion model (\u2018Sim\u2019) also showed that cooperating $R_{\u2192A}^{\u2190L}$ and $G_{\u2192L}^{\u2190A}$ preferentially associated with each other and formed tall pods, while cheating $C^{\u2190L}$ was isolated (Figure 3E). Such self-organization was absent in pure competition (Figure 3D). We quantified the partner association index of simulated communities using a three-dimensional neighborhood averaged across the entire community ($A_{RG/CG}^{3D}$), which turned out to be much less variable than analyzing two-dimensional slices (Figure 3\u2014figure supplement 2). During cooperation and cheating, $A_{RG/CG}^{3D}$ increased from an initial value of 1 to a steady level greater than 1 (Figure 3F, top). This greater-than-1 $A_{RG/CG}^{3D}$ favored cooperating $R_{\u2192A}^{\u2190L}$ over cheating $C^{\u2190L}$, as the ratio $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ continued to increase even after $A_{RG/CG}^{3D}$ had leveled off (Figure 3F, bottom). In contrast, during pure competition, $A_{RG/CG}^{3D}$ was close to 1 and $C^{\u2190L}$ was favored over $R_{\u2192A}^{\u2190L}$ (Figure 3F).\n\n### Self-organization can in theory discriminate among cooperators of varying quality\n\nIn addition to generating information difficult to obtain from experimental communities (such as the detailed time course of ARG/CG3D described above), simulations enabled us to explore a broader class of cooperator\u2013cheater communities. Simulations showed that self-organization also allowed discrimination among cooperators of varying quality (Figure 4). Specifically, we initiated diffusion-model simulations using three populations: G\u2192L\u2190A, R\u2192A\u2190L, and R\u2192A,d\u2190L. The adenine release rate of R\u2192A,d\u2190L was a fraction d (< 1) of that of R\u2192A\u2190L, and like C\u2190L, R\u2192A,d\u2190L had a constant growth rate advantage over R\u2192A\u2190L at all lysine concentrations. When grown in the absence of supplements, R\u2192A,d\u2190L were isolated and outcompeted by R\u2192A\u2190L. This effect was quantitative, as a lower d value resulted in a larger ARG/RdG (i.e., the less R\u2192A,d\u2190L released, the more it was excluded; Figure 4A,B), and a greater advantage of R\u2192A\u2190L over R\u2192A,d\u2190L (Figure 4C,D). In contrast, ARG/RdG was not highly sensitive to the intrinsic growth rate advantage of R\u2192A,d\u2190L over R\u2192A\u2190L (Figure 4\u2014figure supplement 1). R\u2192A,d\u2190L was still strongly disfavored even when it had relatively large (50%) intrinsic growth rate advantage over R\u2192A\u2190L (Figure 4\u2014figure supplement 1). Taken together, self-organization favors cooperators that supply the most benefits.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig4-v1.jpg)\n\n**Figure 4.:** In diffusion model simulations, $R_{\u2192A,d}^{\u2190L}$ produced adenine at a rate d-fold (0 \u2264 d < 1) of the release rate of $R_{\u2192A}^{\u2190L}$. $R_{\u2192A,d}^{\u2190L}$ had a 5% fitness advantage over $R_{\u2192A}^{\u2190L}$ at all lysine concentrations. $R_{\u2192A,d}^{\u2190L}$ that released less (smaller values of d) were isolated more in spatial patterns (A, steady-state values summarized in B) and disfavored more as the community grew (C and D). In (D), the fitness advantage of $R_{\u2192A}^{\u2190L}$ over $R_{\u2192A,d}^{\u2190L}$ was calculated from the rate of changes in the ratio $R_{\u2192A}^{\u2190L}$:$R_{\u2192A,d}^{\u2190L}$ between generations 2 and 6 in (C). In (B) and (D), data from six replicates were plotted. The communities were initiated at 3000 total cells/mm2. Sim: simulation.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Spatial self-organization allowed $R_{\u2192A}^{\u2190L}$ to increase in frequency even when $R_{\u2192A,d=0}^{\u2190L}$ was much fitter.In diffusion model simulations, the percent growth rate advantage of $R_{\u2192A,d}^{\u2190L}$ over $R_{\u2192A}^{\u2190L}$, marked in the insets, was assumed to be fixed at all concentrations of lysine. Here, d = 0. The partner association index ($A_{RG/R_{d}G}^{3D}$) did not show strong dependence on the intrinsic advantage of $R_{\u2192A,d}^{\u2190L}$ over $R_{\u2192A}^{\u2190L}$ (A and B). The overall advantage of $R_{\u2192A}^{\u2190L}$ over $R_{\u2192A,d}^{\u2190L}$ in the self-organized communities was reduced when the intrinsic growth rate advantage of $R_{\u2192A,d}^{\u2190L}$ over $R_{\u2192A}^{\u2190L}$ increased (C). However, $R_{\u2192A,d}^{\u2190L}$ were still disfavored compared to $R_{\u2192A}^{\u2190L}$, and a larger intrinsic advantage of $R_{\u2192A,d}^{\u2190L}$ over $R_{\u2192A}^{\u2190L}$ did not translate proportionally into better overall survival of $R_{\u2192A,d}^{\u2190L}$ in the community (D). The partner association indexes in (B) corresponded to communities after seven generations of growth. The $R_{\u2192A}^{\u2190L}$ advantage over $R_{\u2192A,d}^{\u2190L}$ in (D) was calculated from changes in the ratio $R_{\u2192A}^{\u2190L}$ :$R_{\u2192A,d}^{\u2190L}$ between generations 2 and 6 in (C). The communities were initiated at 3000 total cells/mm2. Sim: simulation.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The evolved cheater $C^{\u2190L}$\u2013LYP1 (with a mutation in LYP1 (see CT10 in Table 1 of Waite and Shou., 2012) is much more efficient in taking up lysine at low lysine concentrations than the ancestral cooperator $R_{\u2192A}^{\u2190L}$ (Waite and Shou, 2012). Thus, the evolved cheater consumed lysine and grew while keeping the lysine concentration at very low levels where the ancestral $R_{\u2192A}^{\u2190L}$ could hardly grow. In a spatial environment with no supplements, starting from equal proportions of $R_{\u2192A}^{\u2190L}$:$G_{\u2192L}^{\u2190A}$:$C^{\u2190L}$\u2013LYP1, cheaters were favored (purple circles). When supplied with abundant adenine and lysine (gray triangles), the high affinity of $C^{\u2190L}$\u2013LYP1 for low concentrations of lysine was no longer advantageous; the $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$\u2013LYP1 ratio slowly changed in favor of cheaters in this case, similar to the \u2018Comp\u2019 case in Figure 1C. Exp: experiment.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** In simulations, we examined the growth of communities of $R_{\u2192A}^{\u2190L}$, $G_{\u2192L}^{\u2190A}$, and $C^{\u2190L}$ at different initial ratios in well-mixed (A and B) and spatial (C and D) environments lacking supplements. The initial population size of $G_{\u2192L}^{\u2190A}$ was always one third of the initial total population size, which was kept constant. $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ varied among 1:10, 1:1, and 10:1 (dashed, solid, and dotted lines, respectively). Even though non-producer $C^{\u2190L}$ was assumed to have no fitness advantage over producer $R_{\u2192A}^{\u2190L}$, high levels of non-producers still destroyed mutualism ($R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ = 1:10) in liquid (B) and spatial (D) environments (cross indicates the extinction of the community). Error bars in (D) are standard deviations calculated using six independent replicates. Note that non-producers are disfavored in spatial, but not well-mixed, environment. Sim: simulation.\n\n### Heterogeneity in the initial spatial distribution of cells facilitates but is not required for self-organization\n\nOne might hypothesize that among the initially randomly distributed cell populations, the occasional fortuitous proximity of a cooperator cell to a partner cell is necessary for self-organization. To examine this hypothesis, we simulated communities starting from a periodic and symmetric initial distribution of cells (Figure 5A). In the absence of initial spatial asymmetry, other stochastic effects such as the initial metabolite-storage state of the cell, cell rearrangement, and death events broke the symmetry and self-organization still emerged (Figure 5B). Even though the final partner association index from random initial distribution was greater than that from periodic distribution, the latter was still significantly greater than 1 (Figure 5C). Consequently, cooperators still outperformed cheaters in periodic initial distribution, even though the degree of outperformance was greater in random initial distribution (Figure 5D). These simulation results suggest that the heterogeneity in the initial spatial distribution of cells promoted but was not required for self-organization.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig5-v1.jpg)\n\n**Figure 5.:** Starting from a symmetric and periodic distribution in which all cooperators $R_{\u2192A}^{\u2190L}$ and cheaters $C^{\u2190L}$ had an equal access to the partner $G_{\u2192L}^{\u2190A}$ (A), heterotypic cooperators self-organized (B and C) and were favored (D). (B\u2013D) corresponded to generation 6. Break of symmetry from the initial symmetric spatial distribution can be due to stochastic effects such as differences in the initial amounts of metabolites cells possessed, death of cells, or the random direction of cell division. Compared to a random initial distribution, communities with a periodic initial distribution showed smaller mean $A_{RG/CG}$; nonetheless, $A_{RG/CG}$ significantly exceeded 1 (Wilcoxon signed rank test). In these simulations, the growth rate advantage of $C^{\u2190L}$ over $R_{\u2192A}^{\u2190L}$ was assumed to be 10% at all concentrations of lysine. The communities were initiated at 4400 total cells/mm2. Scale bar: 100 \u03bcm. In simulated top-views, higher color intensity indicates a greater number of cells of the corresponding color stacked at that position. Sim: simulation.\n\n### Asymmetric fitness effects of cooperators and cheaters on partners drives self-organization\n\nWhat drives differential partner association during self-organization? Since self-organization was only observed during cooperation and cheating but not during competition, the very acts of cooperation and cheating are required. When the fitness effects of interactions are the major driving force of patterning, interacting populations are expected to intermix if both supply spatially localized large fitness benefit to the other (Momeni et al., 2013). In contrast, lack of benefit to either population causes population segregation (Momeni et al., 2013). Thus, we reason that the asymmetry between cooperators and cheaters in their capacity to reciprocate partner\u2019s benefits drives self-organization.\n\nTo examine how this asymmetry leads to self-organization, we simulated a community in which a center stripe of partners was initially bordered by a stripe of cooperators on one side and cheaters on the other (Figure 6). This simulation configuration allowed us to examine the process of self-organization from the simplest form of initial symmetry. Near the cooperator side, partners intermixed with cooperators due to the spatially localized large benefits to both (Momeni et al., 2013; red and green in Figure 6). In contrast, near the cheater side, the lack of benefits to partners caused minimal intermixing between cheaters and partners (Momeni et al., 2013; blue and green in Figure 6). This isolation of cheaters allowed cooperators to increase in frequency despite the intrinsic fitness advantage of cheaters over cooperators.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig6-v1.jpg)\n\n**Figure 6.:** Time progression of self-organization in a simulated community as observed in top-views (top) and vertical cross-sections (bottom). Heterotypic cooperative partners (green) supply large benefits to both cooperators (red) and cheaters (blue). Since the benefit is spatially localized, only cooperators and cheaters that are close to partners will grow. Given that cells dividing toward partners will on average have more access to benefits than those dividing away from partners, both cooperators and cheaters pile over partners. Cooperators reciprocate by supplying a large, but different, localized benefit to the partner, while cheaters do not. Thus, partners grow and pile over cooperators but not cheaters. Consequently, further growth of cooperators is facilitated, while cheaters become isolated and disfavored. In this simulation, cheaters have an 8% fitness advantage over cooperators. To mimic the top-view from microscopy, the top-view in this simulation represents the top-most layer of cells instead of the total intensity integrated over z at each pixel.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The partner association indexes and the $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratios of simulated cooperating and cheating spatial communities were compared at different levels of localization of benefits. \u2018Co&Ch\u2019 communities had parameters similar to those in Figure 3\u2014figure supplement 2B (purple circles) and therefore had normal levels of spatial localization of benefits. In \u2018Exc. release\u2019 communities (brown squares), cooperators and partners released excessive amounts of adenine and lysine, respectively (200-fold higher compared to the original communities). Since the neighboring cells could not consume the released metabolites fast enough, the benefits no longer remained localized to the vicinity of the releasing cell. In \u2018Inst. distr.\u2019 cases (black diamonds), the diffusion coefficient in the community was assumed to be very large, such that any released metabolite was instantly distributed among all cells. When benefits were delocalized either because of excessive metabolite release or rapid distribution of metabolite throughout the community, self-organization was diminished (A) and cooperators were disfavored compared to cheaters (B). In all cases, cheaters had an 8% intrinsic fitness advantage over cooperators, and communities were not disturbed (i.e., cells were not repositioned). Error bars show the standard deviation of ratios in six independent communities. Sim: simulation.\n\n### Cell growth into open space is required for self-organization\n\nIf the cell densities in the initial inoculum were so high that all cell types were forced to be each other\u2019s immediate neighbor, then the degree of self-organization might be limited. To test whether access to open space is required for self-organization, we initiated communities at high initial cell densities such that two cell layers covered the inoculation spot. We then allowed communities to grow unperturbed in a spatial environment (Figure 1\u2014figure supplement 1B). Compared to the center, the expanding front where open space offered opportunities for self-organization showed a significantly higher partner association index (Figure 7, Figure 7\u2014figure supplement 1). In the community center, cooperators were not favored over cheaters. In contrast, R\u2192A\u2190L:C\u2190L increased progressively above the initial value of 1 as the community grew into open space away from the inoculum (Figure 7). Thus, similar to what has been observed for homotypic cooperation (Datta et al., 2013; Van Dyken et al., 2013), growth into open space during range expansion also favors heterotypic cooperation over cheating.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig7-v1.jpg)\n\n**Figure 7.:** In an unperturbed spatial environment, a community starting from a high-density (\u223c105 total cells/mm2) confluent inoculum expanded to new territories (purple). Compared to \u2018Center\u2019, self-organization was significantly more in \u2018Expanding front\u2019. Consequently, the initially 1:1 $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratio changed in favor of cooperators as the community expanded outward but not in \u2018Center\u2019. Sections were collected from three independent communities. Using the Mann\u2013Whitney U-test, the association indexes of the \u2018Center\u2019 and of the \u2018Expanding front\u2019 were significantly different (p = 4 \u00d7 10\u22124). Exp: experiment.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00960/elife-00960-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** A schematic diagram (A) shows positions (gray solid lines) of cross-sections (B\u2013E) taken from a community initiated from a high-density inoculum (dashed circle). Vertical cross-sections in (B) and (C) were 100 \u03bcm and 180 \u03bcm from the edge of the community, respectively. (D) and (E) show respectively the center portion and the expanding front portion of a vertical cross-section through the initial inoculum region. Cheater patches became smaller or disappeared as the community front expanded out. Scale bar: 200 \u03bcm.\n\n## Discussion\n\nUsing an engineered yeast community and a mathematical model devoid of partner recognition, we examined how partner-fidelity feedback unfolds in a spatial environment at the individual cell level. In our system, partner cells released essential metabolites for cooperators and cheaters, and cooperators reciprocated with a different essential metabolite while cheaters did not. We found that despite an initially random or periodic spatial distribution, cells \u2018self-organized\u2019 into a non-random and non-symmetric pattern: cooperators had more partner neighbors than cheaters did. The level of differential partner association, as quantified by the partner association index, is correlated with how much cooperators outperform cheaters despite the intrinsic fitness advantage of cheaters over cooperators.\n\nWhat is required for self-organization? Self-organization is driven by the asymmetry between cooperators and cheaters in the amount of spatially localized benefits they supply to the heterotypic partner during cell growth into open space. Our previous work has shown that if two distinct populations receive spatially localized large fitness benefits from each other, then the two populations are expected to intermix (Momeni et al., 2013). In contrast, when the fitness benefit to at least one population is small, then cell types are not expected to intermix (Momeni et al., 2013). Consequently, partners intermix with cooperators but not cheaters (Figures 3\u20137). This difference in the tendency to intermix causes differential partner association, which facilitates the growth of cooperators and isolates and disfavors cheaters. Indeed in simulations, if intermixing was prevented through delocalizing benefits (Momeni et al., 2013; Allen et al., 2013), or if intermixing was imposed on all cells through high initial cell densities, self-organization and cooperator advantage over cheaters diminished (Figure 6\u2014figure supplement 1, Figure 7). Similar trends are observed in recent works which mathematically examined diffusion of public good in homotypic cooperation (Allen et al., 2013; Borenstein et al., 2013).\n\nSimulations showed that spatial self-organization could discriminate among cooperators that supply different levels of benefits (Figure 4). When cooperative benefits were limiting, the most \u2018helpful\u2019 cooperator ended up with the highest number of partners and was most favored. In our mathematical model, we could be sure that this was not due to partner recognition. Thus, in theory, self-organization through partner fidelity feedback is capable of achieving finer levels of discrimination without requiring sophisticated cognition and memory. Without knowing the molecular mechanisms of interactions, one could easily confuse partner fidelity feedback with partner recognition, because both are capable of discriminating partners of varying cooperative qualities. Our work suggests that any argument on partner recognition in a system that is intrinsically spatial (such as legume and rhizobia and fig and colonizing fig wasp) will require identifying variants that fail to distinguish cooperators from cheaters. Otherwise, interpreting cheater discrimination as \u2018partner choice\u2019 can be misleading.\n\nSpatial self-organization can fend off cheaters with large fitness advantages over cooperators (Figure 4D). However, if (non-isogenic) cheaters are much better than cooperators at taking up low concentrations of benefits, then cheaters will destroy heterotypic cooperation even in a spatial environment (experimental results in Figure 4\u2014figure supplement 2). In byproduct mutualism (benefit production incurs no cost and thus non-producers have no fitness advantage over producers), non-producers are excluded and disfavored in a spatial environment (Figure 4\u2014figure supplement 3). Furthermore, high levels of non-producers can still destroy byproduct mutualism in a spatial environment (simulation results in Figure 4\u2014figure supplement 3). This is because non-producers compete with producers for benefits from the partner. If the initial level of non-producers is too high, producers receive few benefits and suffer, which in turn negatively impacts the partner.\n\nConceptually, spatial self-organization favoring heterotypic cooperation can be considered as an example of niche construction or environmental feedback (Lehmann, 2007; Pepper, 2007). Cooperators construct favorable niches and cheaters construct unfavorable niches for partners. Through differential partner association, partners construct better niches for cooperators than for cheaters. Niche construction not only affects the growth of current cells, but also that of the future progeny. This reciprocal niche construction favors heterotypic cooperation over cheating.\n\nIn summary, spatial self-organization is the mechanism for partner fidelity feedback. Not requiring the evolution of partner recognition (Travisano and Velicer, 2004; Foster and Wenseleers, 2006), spatial self-organization offers a simple and fundamental mechanism solely driven by acts of strong cooperation and cheating during cell growth into open space. Even in natural heterotypic cooperative systems with long evolutionary histories, self-organization may act either alone or in synergy with potential recognition mechanisms (Weyl et al., 2010) to exclude cheaters.\n\n## Materials and methods\n\n### Engineered yeast strains\n\n$R_{\u2192A}^{\u2190L}$, $G_{\u2192L}^{\u2190A}$, and $C^{\u2190L}$ were respectively WS950 (MATa ste3::kanMX4 lys2\u03940 ade4::ADE4(PUR6) ADHp-DsRed.T4), WS954 (MATa ste3::kanMX4 ade8\u03940 lys21::LYS21(fbr) ADHp-venus-YFP), and WS962 (MATa ste3::kanMX4 lys2\u03940 ADHp-CFP).\n\n### Community growth and measurements\n\nTo grow yeast communities, agarose columns were prepared by pouring 2\u00d7 concentrated SD minimal medium (Guthrie and Fink, 1991) with 2% low melting temperature agarose either into flat-bottom 96-well plates (Figure 1\u2014figure supplement 1A) or into rectangular petri dishes (Figure 1\u2014figure supplement 1B). Agarose in the rectangular petri dishes was subsequently cut into 24 mm \u00d7 24 mm \u00d7 4 mm pads. For competition experiments, 2\u00d7 SD was supplemented with lysine and adenine (650 \u03bcM and 430 \u03bcM final concentrations, respectively). The communities on agarose were inoculated either from a uniform distribution of all cells (Figure 1\u2014figure supplement 1A at 3000 or 10,000 total cells/mm2) or a high-density inoculum of \u223c2 mm diameter (Figure 1\u2014figure supplement 1B at \u223c8 \u00d7 104 total cells/mm2), as specified. We grew well-mixed liquid cocultures in 3 ml of 1\u00d7 SD without supplementing adenine or lysine, with initially 5 \u00d7 105 total cells/ml. In all cases, cultures were initiated from equal proportions of $R_{\u2192A}^{\u2190L}$, $G_{\u2192L}^{\u2190A}$, and $C^{\u2190L}$ populations. Flow cytometry was used to measure population sizes of different types in a community (Momeni et al., 2013). Fluorescent imaging equipment and procedures are described in Momeni et al. (2013). Cryosectioning to obtain vertical cross-sections of yeast communities followed Momeni and Shou (2012).\n\n### Quantification of partner association\n\nWe quantified the relative association of cooperators and cheaters with the heterotypic partner by dividing the average number of immediate $G_{\u2192L}^{\u2190A}$ neighbors per focal $R_{\u2192A}^{\u2190L}$ cell by the average number of immediate $G_{\u2192L}^{\u2190A}$ neighbors per focal $C^{\u2190L}$ cell when a focal cell neighbored at least one different population ($A_{RG/CG}$, partner association index). We chose to count the immediate $G_{\u2192L}^{\u2190A}$ neighbors because nearest neighbors presumably had the greatest impact on the growth of the focal cell due to spatially localized benefits. We chose to analyze focal cells neighboring at least one different population because cells surrounded by their own types do not contribute as much to population growth as cells surrounded by partners.\n\nIn simulations, a three-dimensional neighborhood around each cell was used to quantify the association index ($A_{RG/CG}^{3D}$), whereas in experiments, a two-dimensional neighborhood was used in two-dimensional top-views or cross-sections of the community. Based on fluorescence intensities in the DsRed, YFP, and CFP channels, cell types were assigned to each pixel in fluorescent images. Pixels having fluorescence intensities less than 30% above the background in all fluorescence channels were defined as \u2018no signal\u2019. Otherwise, fluorescence intensities in each channel were normalized to their respective image-wide 90th percentile values and pixel identity was assigned to be the same as the fluorescence channel with the highest normalized intensity. For cross-sections taken from the center of communities in Figure 7, the top crown of cross-sections appeared very bright, whereas the middle and lower regions appeared dim (Figure 7\u2014figure supplement 1). This large dynamic range caused artifacts in cell identification. The intensity thresholds in these sections were therefore manually adjusted to increase the accuracy of cell identification. Eliminating manual adjustments did not alter the conclusions.\n\n### The diffusion model\n\nTo simulate the growth of three-dimensional yeast communities, we used the agent-based diffusion model (Momeni et al., 2013). In this model, metabolites are released by cooperators and partners, diffuse throughout the community and agarose, and are consumed by cells that need the metabolite. Most parameters were measured experimentally (Figure 2\u2014source data 1). We provide a summary of the most relevant features of the model below, without repeating the implementation details that can be found in Momeni et al. (2013).\n\nCells take up their required metabolites depending on the local concentration of the metabolite according to the Michaelis\u2013Menten equation:\n\n$$\nv_{i}(S_{i})=v_{m,i}\\frac{S_{i}}{S_{i}+K_{i}},\n$$\n\nwhere, i = $R_{\u2192A}^{\u2190L}$, $G_{\u2192L}^{\u2190A}$, or $C^{\u2190L}$ corresponding to each cell type, Si is the concentration of the required metabolite for each cell type (Si = SL, lysine concentration for $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$, and Si = SA, adenine concentration for $G_{\u2192L}^{\u2190A}$), vm,i is the maximum uptake rate when metabolites are abundant, and Ki is assumed to be equal to the Monod constant (the concentration of limiting nutrient at which half maximal growth rate is achieved) for each cell type. $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$ cells require $\\alpha_{L}$ fmole of lysine and $G_{\u2192L}^{\u2190A}$ cells require $\\alpha_{A}$ fmole of adenine to produce a new daughter cell.\n\nThe distribution of metabolites is modeled using the diffusion equation, with uptake and release as sinks and sources. Using simplified notations of $S_{A}=S_{A}(t)$ and $S_{L}=S_{L}(t)$ at time t, the metabolite distributions after a time step tu are calculated as\n\n$$\nS_{A}(t+t_{u})=S_{A}+t_{u}[\\nabla\u22c5(D\\nablaS_{A})\u2212v_{m,G}\\frac{S_{A}}{S_{A}+K_{A}}n_{G}+\\gamma_{A}n_{R}],\n$$\n\n and\n\n$$\nS_{L}(t+t_{u})=S_{L}+t_{u}[\\nabla\u22c5(D\\nablaS_{L})\u2212v_{m,R}\\frac{S_{L}}{S_{L}+K_{MM,R}}n_{R}\u2212v_{m,C}\\frac{S_{L}}{S_{L}+K_{MM,C}}n_{C}+\\frac{\\beta_{L}}{t_{u}}n_{G}^{\u2032}].\n$$\n\nHere, nR, nC, and nG are, respectively, the densities of live $R_{\u2192A}^{\u2190L}$, $C^{\u2190L}$, and $G_{\u2192L}^{\u2190A}$ cells in a focal community grid. $\\nabla=\\frac{\\partial}{\\partialx}x^+\\frac{\\partial}{\\partialy}y^+\\frac{\\partial}{\\partialz}z^$ is the vector differential operator. $n_{G}^{\u2032}$ is the density of $G_{\u2192L}^{\u2190A}$ cells that die (which is distributed as binomial (nG, p) where p = tu\u00b7dG, with dG being the death rate of $G_{\u2192L}^{\u2190A}$ ) and release lysine in the time step tu. D is a spatially varying function representing the diffusion coefficient in the environment (the value of D was 360 \u03bcm2/s inside agarose, 20 \u03bcm2/s inside yeast communities, and 0 \u03bcm2/s in the surrounding air, according to experimental measurements). Considering D as a spatially varying function simplifies the numerical calculations by automatically incorporating the boundary conditions at the community\u2013air interface. $v_{m,i}$, the maximum uptake rate of the limiting nutrient per cell, relates to the maximum growth rate $r_{m,i}$ through $v_{m,i}=\\alpha_{i}r_{m,i}/ln\u20612$, where $\\alpha_{i}$ is the amount of limiting nutrient required to produce a new cell ($\\alpha_{R}=\\alpha_{C}=\\alpha_{L}$ and $\\alpha_{G}=\\alpha_{A}$). $C^{\u2190L}$ has a fixed intrinsic fitness advantage over $R_{\u2192A}^{\u2190L}$ at all lysine concentrations. This advantage was modeled as a higher uptake rate for the limiting nutrient. For example, a 2% fitness advantage of cheaters means $v_{m,C}=1.02\u2009v_{m,R}$ or equivalently $r_{m,C}=1.02\u2009r_{m,R}$. \u03b2L is the amount of lysine released upon the death of a $G_{\u2192L}^{\u2190A}$ cell, and \u03b3A is the release rate of adenine per $R_{\u2192A}^{\u2190L}$ cell. $C^{\u2190L}$ cheaters do not release any adenine. For other types of cheaters that release adenine with a lower rate compared to cooperators (e.g., in Figure 4), a corresponding release term is included in the equation.\n\nTo solve this diffusion equation, we follow the above finite difference time-domain equations over time. The diffusion equation is solved over two separate spatial domains (Momeni et al., 2013), one containing the agarose (with a 60 \u03bcm grid size), and the other containing the community and the air above it (with a 15 \u03bcm grid size). These grid sizes accommodated different diffusion coefficients in agarose and in community and represented the average distance nutrient molecules diffuse in 3.5 s. When we used the same diffusion coefficient (360 \u03bcm2/s and one grid size of 50 \u03bcm) for agarose and community, similar results were obtained. No-flow ($\\partialS_{i}/\\partialz=0$) boundary conditions are applied to the top and bottom surfaces of the simulation domain and periodic boundary conditions are applied to the four vertical sides of the domain.\n\nTo incorporate the effects of competition for other shared resources, the growth of all cells also depended on, in addition to adenine or lysine, a shared resource (for instance, glucose) that was initially supplied in the medium (Figure 2\u2014source data 1). In such simulations, diffusion and uptake of glucose were also simulated in a way similar to the above equations. Each cell divided only after acquiring enough glucose, in addition to adenine or lysine. Once a cell had accumulated one metabolite sufficient for one cell division, it stopped consuming that metabolite and continued to acquire the second metabolite until a sufficient amount had been acquired to trigger the birth of a daughter cell.\n\nIn simulations, $R_{\u2192A}^{\u2190L}$, $C^{\u2190L}$, and $G_{\u2192L}^{\u2190A}$ cells are initially randomly distributed on the surface of solid medium. The cells start from random initial storage of their required metabolites. In each tu time step, each live cell takes up its required metabolites according to the Michaelis\u2013Menten equation shown above. Each cell type is assumed to require its limiting metabolite and a shared metabolite ($\\alpha_{L}$ lysine for $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$, $\\alpha_{A}$ adenine for $G_{\u2192L}^{\u2190A}$, and $\\alpha_{G}$ for the shared glucose for all cell types, all listed in Figure 2\u2014source data 1) to divide. The state of cells is examined at every \u03c4 time interval (\u03c4 = 6 min, which contains several diffusion tu time steps, but is still much shorter than the minimum cell doubling time of \u223c2 hr). The cells that have acquired the required amount of limiting metabolites divide.\n\nCell divisions in a three-dimensional community often required cell rearrangement. Assumptions concerning cell rearrangement were derived from experimental observations (Momeni et al., 2013). Time-lapse images of the growth of a single fluorescent cell into a microcolony showed that the center of the microcolony became brighter due to multiple cell layers when the microcolony grew to larger than a five-cell radius (Momeni et al., 2013). Thus, we assumed that each cell initially budded in the horizontal plane and pushed others in its immediate neighborhood to the side along the shortest path to empty space. Once a cell was completely surrounded on each side by roughly five cells, it either budded directly upward with a probability of 70% or randomly budded to one of the sides at the same level, pushing up the displaced cell and all the cells above. The probability of 0.7 (instead of 1) of dividing directly upward is estimated from experimental observations: when individual green-fluorescent cells were surrounded by many equally fit competing red-fluorescent cells, vertical cross-sections showed that as z increased, the progeny of the green-fluorescent cell \u2018diffused\u2019 laterally (instead of remaining a vertical line) (Figure 3\u2014figure supplement 1F in Momeni et al., 2013). Since we cannot experimentally track all possible outcomes of cell rearrangement, this assumption is a simplification of reality. This simplification could have contributed to the discrepancy between experimental and simulation patterns, although our conclusions from experiments and simulations are similar.\n\nThe cells also die stochastically corresponding to their fixed death rates (dR, dG, or dC as listed in Figure 2\u2014source data 1). After each cell state update (\u03c4), the diffusion coefficient is updated: the diffusion coefficient in each community diffusion grid (15 \u03bcm \u00d7 15 \u03bcm \u00d7 15 \u03bcm, maximally containing 3 \u00d7 3 \u00d7 3 = 27 cells of size 5 \u03bcm \u00d7 5 \u03bcm \u00d7 5 \u03bcm) is assumed to be proportional to the occupancy of that grid, changing from 0 to 20 \u03bcm2/s. In this three-dimensional agent-based model of community growth, the initial conditions of cells, cell death, random direction of growth, and cell rearrangement are the only sources of stochasticity; metabolite uptake and diffusion of metabolites in the environment are modeled as deterministic phenomena.\n\nMost of the parameters used for the simulations (Figure 2\u2014source data 1) are measured experimentally. More details of the implementation and assumptions can be found in Momeni et al. (2013). An example of the implementation of this model as a MATLAB code is included in additional files (Source code 1).\n\n### Yeast strains adapted to low-nutrient conditions\n\nWhen the ancestral $R_{\u2192A}^{\u2190L}$, $G_{\u2192L}^{\u2190A}$, and $C^{\u2190L}$ were periodically mixed on an agarose pad lacking adenine and lysine, the final $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratios were stochastic, either in favor of cheaters or cooperators (Figure 2\u2014figure supplement 1). This is consistent with previous experiments in liquid cocultures (Waite and Shou, 2012) that also yielded stochastic cheater outcomes due to an adaptive race between $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$. During the adaptive race, both $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$ sampled from the same set of mutations that enhanced cell fitness in the lysine-limited cooperative environment. The population with the fittest mutant rapidly dominated the coculture (Figure 2\u2014figure supplement 1; Waite and Shou, 2012).\n\nTo mitigate the confounding effect of adaptive race, we used $R_{\u2192A}^{\u2190L}$ and $C^{\u2190L}$ populations preadapted to the cooperative environment. First, $R_{\u2192A}^{\u2190L}$ containing a mutation in RSP5 (CT8, see Table 1 in Waite and Shou, 2012), known to significantly improve the fitness of lysine-requiring cells under lysine-limitation (Waite and Shou, 2012), was crossed to the ancestral $C^{\u2190L}$ to produce a diploid (WS1421). Sporulation of the diploid yielded a cyan-fluorescent cooperator (WS1447) and a red-fluorescent cheater (WS1448), both harboring the rsp5 mutation. The temperature sensitivity of this rsp5 allele allowed its easy selection at 37\u00b0C. To avoid confusion, we indicate these cooperators and cheaters as rsp5 $R_{\u2192A}^{\u2190L}$ and rsp5 $C^{\u2190L}$, respectively. Several well-mixed cocultures consisting of rsp5 $R_{\u2192A}^{\u2190L}$, rsp5 $C^{\u2190L}$, and the ancestral partner $G_{\u2192L}^{\u2190A}$ (WS954) were initiated at a ratio of 1:1:1. The initial stochastic phase in population dynamics was indicative of additional rounds of adaptive races (Waite and Shou, 2012) between rsp5 $R_{\u2192A}^{\u2190L}$ and rsp5 $C^{\u2190L}$ (Figure 2\u2014figure supplement 2A). After 250 hr, the $R_{\u2192A}^{\u2190L}$:$C^{\u2190L}$ ratios showed steady trends, suggesting the absence of further rapid adaptive races (Figure 2\u2014figure supplement 2A). After \u223c500 hr, two of the lines (brown) that displayed a steady change of the rsp5 $R_{\u2192A}^{\u2190L}$:rsp5 $C^{\u2190L}$ ratio in favor of cheaters and a final ratio close to 1:1 were frozen down. After reviving these preadapted cocultures (hereafter marked as \u201c \u2019 \u201d), $R^{\u2032}_{\u2192A}^{\u2190L}$:$C^{\u2032}^{\u2190L}$ continued to decline steadily (Figure 2\u2014figure supplement 2B). Propagating well-mixed liquid cocultures from these lines for an additional 400 hr, we observed that the $R^{\u2032}_{\u2192A}^{\u2190L}$:$C^{\u2032}^{\u2190L}$ ratio exhibited a steady decline (Figure 2\u2014figure supplement 2C, \u2018In liquid, well-mixed\u2019), suggesting a cheater $C^{\u2032}^{\u2190L}$ fitness advantage of around 8% (7.5 \u00b1 0.8% SD) over $R^{\u2032}_{\u2192A}^{\u2190L}$. It should be noted that since $R^{\u2032}_{\u2192A}^{\u2190L}$ and $C^{\u2032}^{\u2190L}$ are not isogenic, the fitness advantage of $C^{\u2032}^{\u2190L}$ over $R^{\u2032}_{\u2192A}^{\u2190L}$ is likely not solely due to the lack of adenine overproduction by $C^{\u2032}^{\u2190L}$. Nevertheless, this case models an advantage for the cheating type over the cooperating type, similar to what might be observed in nature if cheaters and cooperators are of different species (C\u00f4t\u00e9 and Cheney, 2005; Jand\u00e9r and Herre, 2010).\n",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "f9fc2728-df53-4471-8d37-77adf6d0fec6",
+      "submission_id": "24c69631-4746-42f8-baa0-caabed6f9dce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Diethard Tautz, Max Planck Institute for Evolutionary Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00960.023](https://doi.org/10.7554/eLife.00960.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cSpatial Self-organization Favors Heterotypic Cooperation over Cheating\u201d for consideration at eLife. Your article has been evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe study is based on a previously developed system of two yeast strains that can enter cooperative interactions. The authors have already published an eLife paper (http://dx.doi.org/10.7554/eLife.00230) describing a spatial patterning model in conjunction with a series of experiments that aimed to study inter-population cooperation. The present paper deals with the question of how cooperating patterns could emerge in the presence of a cheater. They use a similar technological approach as in their first paper and show that self-organization occurs among the cooperators, to the exclusion of the cheater. They validate their findings through modeling.\n\nWhile the referees consider the topic of potential interest for eLife, there are two major concerns that need to be clarified before a final decision can be taken. One of these requires additional experiments and the conceptual scope of this paper will depend on the outcome of these experiments. Thus it is currently not possible to state that the paper can be accepted once the experiments are done, but the authors are welcome to resubmit the revised version for new assessment.\n\nThe first concern relates to the use of the term \u201cheterotypic cooperation\u201d rather than \u201cmutualism\u201d, which is not simply a semantic question, but has direct relevance for the conceptual framing and the experimental approach to be taken. Due to the current interest in social interactions in microbes, this is a crucial issue for the paper. To qualify for cooperation, you need to show that:\n\n(i) In isolation, cooperators grow faster than cheaters. Here, one probably has to show that R outcompetes C in the presence of G. This crucial point does not seem to be addressed, so the system could simply be a case of negative frequency dependent selection. Even in this case, one could have a case of cooperation, but it still remains to be shown that pure cooperator populations maximize fitness (see e.g., MacLean et al, PLoS Biology, http://dx.doi.org/10.1371/journal.pbio.1000486; please check also definitions of \u201c\u201ccooperator\u201d in Nowack, Science 314, 1560 and Doebeli & Hauert, Ecology Letters 8, 748).\n\n(ii) In any mixture, defectors outcompete co-operators. Probably this is what you refer to when you write that \u201cC had a growth advantage over R\u201d, but this crucial point remains unclear. Instead, you turn off the interaction by providing lysine and adenine in the medium, but this is not the same.\n\nWith respect to mutualism, referee 2 sees a need to revisit and properly discuss previous concepts. Currently you posit partner choice/recognition as a possible mechanism favouring mutualism and contrast a spatial environment as an alternative explanation. You state however that the \u201cmechanism is unclear\u201d and that there is a \u201cparadox\u201d in terms of the effect of space. In fact this is an example of \u201cpartner fidelity feedback\u201d, a mechanism that is well known in the mutualism literature, so there is no paradox. The essence of partner fidelity feedback is that increasing the fitness of a mutualistic partner itself leads to increased fitness for the other partner. The results can thus be easily explained within this framework: cooperators increase the local fitness of their mutualist partners, thus receiving more cooperation themselves. Empty space is required for cooperators and their partners to grow into in order to self-organise.\n\nTo clarify these issues, it will be necessary to repeat the experiments (in both supplemented and un-supplemented media) with monocultures of both the cooperator and cheater strains, showing that growth rate is higher for the cheaters when supplemented, but lower when un-supplemented. Ideally you should be able to show that cheaters should also outcompete cooperators. However, it is acknowledged that this relies on an unstructured environment, so you would need to add a non-spatial treatment. If this is feasible it would be great, but other approaches to solve this issue might also be acceptable.\n\nThe second concern is about the details of the modeling. The reason for performing simulations are obscure. Do you indeed imply that simulation results \u201censure that no biological mechanism beyond cell growth [...] where required for spatial self organisation\u201d? It seems that modeling efforts would only help to arrive at such statements, but would not be sufficient to \u201censure\u201d this. Even more problematic is the fact that the model description is far from sufficient to repeat the simulations. In the equation, D is treated as a spatially varying function, but then referred to as a constant. With two different constant values, there are two different equations, but the position of D in a later equation suggests an unnecessary complication. The text suggests that this equation is solved numerically, but no details are given except the boundary conditions. Instead, you give many simulation results as figures, but it is completely unclear how randomness emerges in the deterministic equations. Is this based on some stochastic initial condition (although you speak of densities)? Or do you use a stochastic algorithm to numerically solve a deterministic equation? In the supplement, you list many parameters (enough to fit all kinds of things), but there is no information on how exactly these enter. The only equation in the paper seems to be almost decoration.\n\nThe figures combining simulations and experiments are impressive, but it remains unclear how the various parameters of the model where chosen to generate this similarity (which appears to be difficult to quantify). Moreover, a closer inspection of cluster size and form does suggest that there is some qualitative difference between simulations and experiments. Note that it would not be enough to only clarify the source of parameters \u2013 so far the model is not described in a way that one could repeat this study. Please describe it in a way that anyone who reads the paper should be able to come up with his or her own numerical code that leads to the same results.\n\nFinally, the current version of the manuscript is unnecessarily condensed, i.e., Results and Discussion are combined and much important information is relegated to the supplementary material. Given that there are no space constraints, an extended version of the manuscript should be envisaged, including all figures that document results and use supplementary files primarily for additional documentation that would in it self not be required for understanding the work.\n\n[Editors\u2019 note: before acceptance, the following revisions were also requested.]\n\nThank you for resubmitting your work entitled \u201cSpatial Self-organization Favors Heterotypic Cooperation over Cheating\u201d for further consideration at eLife. Your revised article has been favorably evaluated by a Senior editor and a member of the Board of Reviewing Editors. The manuscript has been improved but there are remaining issues that need to be addressed before acceptance, as outlined below.\n\nThe comments of referees 2 and 3 are included below. In addition, there was a consultation session with the referees that came to the following conclusion:\n\nThe presentation at the places referee 3 has pointed to is a big issue. Taking the perspective of someone reading the paper for the first time, they would quite likely be left confused on many points. A significant improvement in presentation, and addressing the use of non-isogenic lines are the main things the authors need to address.\n\nReviewer #2:\n\nI have major reservations about the experiments presented in Figure 2 of the revised manuscript, which I feel must be addressed before I can suggest acceptance of the manuscript.\n\nIn attempting to demonstrate that a cooperative dilemma occurs the authors pre-adapted both cooperators and cheaters to a lysine-limited environment in order to attempt to remove the confounding effect of adaptation to this environment. While I appreciate that the \u201cadaptive race\u201d could be a large confounding effect, I feel the potential biases introduced are not acceptable. As the strains have been pre-adapted they are likely to no longer be isogenic. As such, all fitness effects observed thereafter could be owing to differing mutations between cooperators and cheaters that have different effects depending on the environment. While much early research on social behaviour in microbes used similarly non-isogenic lines, this has resulted in reduced impact of this work in molecular microbiology. The gold standard now is clearly to use isogenic lines, and I do not feel that I can recommend publication of results using non-isogenic lines in a journal with the aspirations of eLife.\n\nThe obvious solution to this problem for me would be to remove the experiments presented in Figure 2 from the paper and simply point to the evidence from Shou et al. 2007 and Waite & Shou 2012 supporting the existence of a cooperative dilemma. Alternatively, if the authors could analyse co-cultures on a short enough timescale so that the adaptive race is not a problem this would be preferable, but I don\u2019t know whether this is possible. Regardless I don\u2019t think inclusion of experiments with non-isogenic lines is acceptable for a journal of eLife\u2019s standing.\n\nReviewer #3:\n\nAfter reading the manuscript carefully, I still do have several concerns. Most importantly, the results are presented in a way that is confusing and most probably not beneficial to the community. For example:\n\n- I have checked with several colleagues and the terms \u201chomotypic cooperation\u201d and \u201cheterotypic cooperation\u201d are not at all familiar terms. From the authors reply, I have not understood why they phrase their work in their own terms.\n\n- \u201cKin selection can achieve positive assortment\u201d makes no sense.\n\n- \u201cCan increase in frequency if it leads to more offspring that are genetically related to the original co-operator\u201d seems to hold for anything that evolves - this statement seems to be empty unless you indicate that the \u201cmore offspring\u201d is not produced by the focal individual.\n\n- \u201cSpatial environment, which allows repeated interactions\u201d is a weird formulation. Usually, these two are treated separately, as repeated interactions allow for sophisticated behaviour conditioned on the past, whereas spatial structure per se does not.\n\n- \u201cCan act as a cheater of the system\u201d is a weird formulation. C cheats G by not providing A, but does it cheat R?\n\n- \u201cbreak of symmetry from the initial symmetric distribution can be due to stochastic effects such as differences in the initial state of cells\u201d - this seems to be self-contradictory.\n\n- \u201ccells attached to the glass rod\u201d - are you sure all cells equally attach? Is this some biased sample?\n\nI am still not convinced that Figure 3 shows a good agreement between experiment and simulations beyond \u201cred-green domains grow, whereas blue regions remain constrained\u201d. Simulations suggest a more complex micro-structure, which is absent ion the experiment. Figure 3 C and F suggests a much stronger association in the Co&Ch treatment than the experiment. I was also wondering why the authors look at frequencies of the two strains throughout \u2013 are absolute population sizes not relevant for the interaction? Why?\n\nIn the new, slightly improved model section, the notation should be streamlined and made readable. E.g. K always has two indices, but MM is always the same. This is unusual and not necessary. The nabla operator is not defined and nothing is mentioned on its (probably) discrete spatial version. The metabolite model is basically a time discrete version of a stochastic partial differential equation, is there a reason to use a first order algorithm? Why use two separate grid sizes?\n\nAll this suggests a high level of sophistication in terms of numerically formulating the model, but it is not clear that the model results are robust. The dynamics of yeast cells is of course individual based, but some formulations suggest that many choices in this model have been made that are not explicitly described in the text. Thus, the model cannot be understood in detail without looking into the source code, which must be commented in a way that it could be read more easily.\n\nWhile I find the experimental system and the experimental results interesting, it seems that they follow in a straightforward way from the interactions in the system. Partners and co-operators can coexist and grow to high densities, whereas partners and cheaters cannot, which isolates cheaters.\n\nIn summary, while this paper has improved in the revision and while I find the basic results of interest, it is not written in a way that makes it easily accessible. I feel that these results could be presented in a much nicer, less confusing way.\n",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5f99ea6b-80fa-4493-8463-bececebeaa0a",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C1",
+      "claim": "Heterotypic cooperation\u2014two populations exchanging distinct benefits that are costly to produce\u2014is widespread.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterotypic cooperation\u2014two populations exchanging distinct benefits that are costly to produce\u2014is widespread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the prevalence of heterotypic cooperation, presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "6bfadd29-3278-4046-8798-5f45ae00aee1",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C2",
+      "claim": "Cheaters, exploiting benefits while evading contribution, can undermine cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cheaters, exploiting benefits while evading contribution, can undermine cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle about cheaters in cooperative systems, presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "5062e3f4-109a-4aff-84a0-daea0af7c695",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C3",
+      "claim": "Two mechanisms can stabilize heterotypic cooperation: 'partner choice' and 'partner fidelity feedback'.",
+      "claim_type": "EXPLICIT",
+      "source": "Two mechanisms can stabilize heterotypic cooperation. In 'partner choice', cooperators recognize and choose cooperating over cheating partners; in 'partner fidelity feedback', fitness-feedback from repeated interactions ensures that aiding your partner helps yourself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement defines two known mechanisms for stabilizing cooperation, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "6ab446af-174d-45bc-a144-d08b93169abe",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C4",
+      "claim": "In partner choice, cooperators recognize and choose cooperating over cheating partners.",
+      "claim_type": "EXPLICIT",
+      "source": "In 'partner choice', cooperators recognize and choose cooperating over cheating partners",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of partner choice mechanism, presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "c1ba3c3d-5c68-4d5a-95d9-4e8233a490f6",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C5",
+      "claim": "In partner fidelity feedback, fitness-feedback from repeated interactions ensures that aiding your partner helps yourself.",
+      "claim_type": "EXPLICIT",
+      "source": "in 'partner fidelity feedback', fitness-feedback from repeated interactions ensures that aiding your partner helps yourself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of partner fidelity feedback mechanism, presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "a8b7e14a-a432-4867-870d-dc8f19bf76eb",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C6",
+      "claim": "Cooperators and their heterotypic cooperative partners exchanged distinct essential metabolites in the engineered system.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, cooperators and their heterotypic cooperative partners (partners) exchanged distinct essential metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the engineered yeast system used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "afc9f1d1-f57b-4573-9d4b-ecf68ee8f0df",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C7",
+      "claim": "Cheaters exploited partner-produced metabolites without reciprocating in the engineered system.",
+      "claim_type": "EXPLICIT",
+      "source": "Cheaters exploited partner-produced metabolites without reciprocating",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavior of cheater strains in the experimental system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "7a161c2d-bc9f-44f8-aab3-9cae60bc78ef",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C8",
+      "claim": "Cheaters were competitively superior to cooperators in the engineered system.",
+      "claim_type": "EXPLICIT",
+      "source": "Cheaters exploited partner-produced metabolites without reciprocating, and were competitively superior to cooperators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements showing fitness advantages of cheaters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "3c445b2e-c8ea-471a-9cb6-dafd0e80ce6e",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C9",
+      "claim": "Despite initially random spatial distributions, cooperators gained more partner neighbors than cheaters did.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite initially random spatial distributions, cooperators gained more partner neighbors than cheaters did.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from both experimental and simulation data showing differential partner association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "f34835ab-1cb5-4b80-8794-9a720058c788",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C10",
+      "claim": "The less a cheater contributed, the more it was excluded and disfavored.",
+      "claim_type": "EXPLICIT",
+      "source": "The less a cheater contributed, the more it was excluded and disfavored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results shown in Figure 4 examining cooperators with varying contribution levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "b607f812-7d3b-4e35-8ee6-04c626a2a863",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C11",
+      "claim": "Self-organization is driven by asymmetric fitness effects of cooperators and cheaters on partners during cell growth into open space.",
+      "claim_type": "EXPLICIT",
+      "source": "This self-organization, driven by asymmetric fitness effects of cooperators and cheaters on partners during cell growth into open space, achieves assortment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main mechanistic finding from the study, supported by experimental and simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "91bd37df-3f27-4106-a712-206836815ec5",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C12",
+      "claim": "Cooperation has been postulated to drive major transitions in evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperation, providing a benefit available to others at a cost to self, has been postulated to drive major transitions in evolution (Maynard Smith and Szathmary, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Maynard Smith and Szathmary, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "c79ac608-4c7b-4e00-922c-c5dec424f153",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C13",
+      "claim": "Both homotypic and heterotypic cooperation are vulnerable to cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "Both homotypic and heterotypic cooperation are vulnerable to cheaters (Turner and Chao, 1999; Strassmann et al., 2000; Bronstein, 2001; Rainey and Rainey, 2003; Travisano and Velicer, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "357d0303-57be-48de-8dd1-6897006bd6aa",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C14",
+      "claim": "Cheaters are competitively superior to their cooperating counterparts because they exploit cooperative benefits without contributing their fair share.",
+      "claim_type": "EXPLICIT",
+      "source": "Cheaters exploit cooperative benefits without contributing their fair share and are therefore competitively superior to their cooperating counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle about cheaters in cooperative systems, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "374ddadd-9ab4-436d-93b3-06aa6f34a0d2",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C15",
+      "claim": "Cooperation can avoid being taken over by cheaters through 'positive assortment'.",
+      "claim_type": "EXPLICIT",
+      "source": "How might cooperation avoid being taken over by cheaters? The answer lies in 'positive assortment' (Fletcher and Doebeli, 2009), in which benefit-supplying individuals interact more with other benefit-supplying individuals than with cheaters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fletcher and Doebeli, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "d8178cd3-c36e-444d-901f-6a68299c7df9",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C16",
+      "claim": "In positive assortment, benefit-supplying individuals interact more with other benefit-supplying individuals than with cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "in which benefit-supplying individuals interact more with other benefit-supplying individuals than with cheaters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of positive assortment, cited from Fletcher and Doebeli, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "46409a2e-e7b3-4fc5-9d59-ecd8556f0284",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C17",
+      "claim": "In homotypic cooperation involving genetic relatives, positive assortment can be realized through 'kin discrimination'.",
+      "claim_type": "EXPLICIT",
+      "source": "In homotypic cooperation that involves genetic relatives, positive assortment can be realized through 'kin discrimination', which is based on the active recognition and preferential treatment of more closely related individuals over distantly related ones (Sachs et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sachs et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "74dfa72d-acf9-45a6-a757-6700a354fcb5",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C18",
+      "claim": "Kin discrimination is based on the active recognition and preferential treatment of more closely related individuals over distantly related ones.",
+      "claim_type": "EXPLICIT",
+      "source": "which is based on the active recognition and preferential treatment of more closely related individuals over distantly related ones (Sachs et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of kin discrimination, cited from Sachs et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "eb04b65c-76b8-4711-bf0d-be75524520c1",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C19",
+      "claim": "Positive assortment can be realized through 'kin fidelity' in homotypic cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive assortment can also be realized through 'kin fidelity' (Sachs et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sachs et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "4c23f70b-b21a-4de0-b62e-b78ae9d7b060",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C20",
+      "claim": "Restricted migration in a spatial environment causes homotypic cooperators and cheaters to cluster with their respective progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, restricted migration in a spatial environment causes homotypic cooperators and cheaters to cluster with their respective progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of kin fidelity mechanism, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "df390293-3eb2-4fe5-9304-08a053969c6a",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C21",
+      "claim": "Clustering allows homotypic cooperators to preferentially interact with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "This clustering allows cooperators to preferentially interact with each other (Figure 1A, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1A and is based on established knowledge about spatial structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "dd565a7d-8314-4252-853f-e58e2bade33c",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C22",
+      "claim": "Both mechanisms of positive assortment can favor cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mechanisms of positive assortment can favor cooperation (Hamilton, 1964a; Hamilton, 1964b; Maynard Smith, 1964; Chao and Levin, 1981; Nowak and May, 1992; Fletcher and Doebeli, 2006; Kerr et al., 2006; MacLean and Gudelj, 2006; West et al., 2006; Lion and Baalen, 2008; Wild et al., 2009; West and Gardner, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by extensive citations to previous theoretical and empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "81cb1147-a43e-4004-a305-6749c9b61247",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C23",
+      "claim": "A spatial environment may impede homotypic cooperation by intensifying competition among cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "A spatial environment may also impede homotypic cooperation by intensifying competition among cooperators (Taylor, 1992; Wilson et al., 1992; West et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "d5a030c4-a65d-430a-89a1-2614b8445c45",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C24",
+      "claim": "A spatial environment may in certain cases encourage cheating strategies in homotypic cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "and in certain cases, by potentially encouraging cheating strategies (Hauert and Doebeli, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hauert and Doebeli, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "3ef8ad1e-39ab-4815-b752-9d40921e3204",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C26",
+      "claim": "The three strains purely competed when the medium contained adenine and lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "The three strains purely competed ('Comp') or additionally cooperated and cheated ('Co&Ch'), depending on whether the medium contained or lacked adenine ('Ade') and lysine ('Lys'), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental conditions shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "7bb7d38a-16af-4f64-8e46-204665b772a5",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C27",
+      "claim": "The three strains additionally cooperated and cheated when the medium lacked adenine and lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "The three strains purely competed ('Comp') or additionally cooperated and cheated ('Co&Ch'), depending on whether the medium contained or lacked adenine ('Ade') and lysine ('Lys'), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental conditions shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "d2b9558e-c7f2-447b-8e3f-894a3d8c9fda",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C38",
+      "claim": "A spatial environment can stabilize heterotypic cooperation against a competitively superior cheater.",
+      "claim_type": "EXPLICIT",
+      "source": "We first verified that a spatial environment could stabilize heterotypic cooperation against a competitively superior cheater in our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding verified through experiments shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "36efacfd-da35-4644-8cb9-06a626ba8fdd",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C40",
+      "claim": "If the spatial aspect of the environment is disrupted, partner fidelity feedback should not operate and cheaters are expected to be favored over cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "If the spatial aspect of the environment is disrupted, either by periodically mixing a community or by growing it as a well-mixed liquid coculture, partner fidelity feedback should not operate and cheaters are expected to be favored over cooperators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the mechanism of partner fidelity feedback.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "6952372c-0d85-42ba-971b-a895b37a94e2",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C46",
+      "claim": "Similar results of spatial environments favoring cooperators have been observed for a different microbial system.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with previous experiments on a different microbial system (Harcombe, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Harcombe, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "c1b72355-6882-4eaf-9e6a-465ce89dc25e",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C47",
+      "claim": "Upon environmental stresses, originally isogenic cooperators and cheaters can quickly acquire different mutations and become nonisogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, upon environmental stresses, originally isogenic cooperators and cheaters can quickly acquire different mutations and become nonisogenic (Morgan et al., 2012; Waite and Shou, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Morgan et al., 2012 and Waite and Shou, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "abbf9a09-3397-44aa-83e8-760f035bbe68",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C48",
+      "claim": "A three-dimensional individual-based model was extended to include cooperators, cheaters, and heterotypic partners.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended a three-dimensional individual-based model of community growth (previously described as the 'diffusion model' in Momeni et al., 2013) to include cooperators, cheaters, and heterotypic partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "6d69a434-fb09-4236-b230-4cd0a42c1f14",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C49",
+      "claim": "The growth of individual cells in the model depended on consumption of the limiting metabolite.",
+      "claim_type": "EXPLICIT",
+      "source": "The main assumptions of this model were: (1) that the growth of individual cells depended on consumption of the limiting metabolite",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "6a52234f-6826-4621-a932-3c00460d6f47",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C50",
+      "claim": "The consumption rate in the model depended on the local concentration of the limiting metabolite according to Michaelis\u2013Menten kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "and the consumption rate in turn depended on the local concentration of the limiting metabolite according to Michaelis\u2013Menten kinetics",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "8d3497d4-4a21-42e9-99ba-811b1055ec4d",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C51",
+      "claim": "Spatial distribution of metabolites in the model was governed by release, diffusion, and consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) that spatial distribution of metabolites was governed by release, diffusion, and consumption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "367cb983-a973-460a-bcf6-194c687b1088",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C52",
+      "claim": "Cells in the model rearranged when necessary to accommodate new cells as per experimental observations.",
+      "claim_type": "EXPLICIT",
+      "source": "and (3) that cells rearranged when necessary to accommodate new cells as per experimental observations ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the mathematical model based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "0801478a-1aaa-4686-93f9-ba31e79e9650",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C53",
+      "claim": "Parameters of the model were experimentally determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameters of this model (such as the rates of growth, death, and metabolite consumption and release) were experimentally determined (Momeni et al., 2013), mostly through characterizing properties of monocultures (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Momeni et al., 2013 and reference to Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "f1242e9a-0ae2-4f8f-8c55-db2f9241ebce",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C54",
+      "claim": "C\u2190L was assumed to have a constant intrinsic fitness advantage over R\u2192A\u2190L at all lysine concentrations in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "C\u2190L was assumed to have a constant intrinsic fitness advantage over R\u2192A\u2190L at all lysine concentrations, as modeled by a higher maximum uptake rate (vm,C>vm,R in 'The diffusion model' in 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "2e7ba19c-57d9-4168-b051-af6ff43e9e9f",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C55",
+      "claim": "Simulation results confirmed that a spatial environment favored cooperators over cheaters in the absence of adaptations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of adaptations, simulation results confirmed that a spatial environment favored cooperators over cheaters",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "42068c6c-3ec8-45ec-8d5a-9a90e824fe06",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C56",
+      "claim": "Simulation results confirmed that disrupting the spatial aspect of the environment gave cheaters an advantage over cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "and that disrupting the spatial aspect of the environment gave cheaters an advantage over cooperators (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "c3973448-79e2-4d39-8ff7-3e476e31ec10",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C57",
+      "claim": "Top-views of experimental communities grown in the presence of adenine and lysine supplements revealed that R\u2192A\u2190L, G\u2192L\u2190A, and C\u2190L were evenly distributed in the horizontal xy plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Top-views of experimental ('Exp') communities grown in the presence of adenine and lysine supplements revealed that R\u2192A\u2190L, G\u2192L\u2190A, and C\u2190L, when engaged in pure competition, were evenly distributed in the horizontal xy plane (Figure 3A, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experimental images in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "966ffb2f-0b97-44cd-8910-6427587629b9",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C58",
+      "claim": "The even distribution pattern in competition was caused by initial cells growing into microcolonies which, after running into each other, were forced to grow upward.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern was caused by the initial cells growing into microcolonies which, after running into each other, were forced to grow upward (Figure 3\u2014figure supplement 1A) (Momeni et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1A and supported by citation to Momeni et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "daacd622-27c7-4bf2-90e1-136d762a4107",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C59",
+      "claim": "Vertical cross-sections of competitive communities exhibited patterns consistent with expectations that competitive populations should form segregated columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, vertical cross-sections exhibited patterns consistent with our expectations that competitive populations should form segregated columns (Momeni et al., 2013) (Figure 3A, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and supported by citation to Momeni et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "ca485d4b-75c9-495e-839f-0c8b545c1210",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C60",
+      "claim": "Top-views of experimental communities during cooperation and cheating showed patterns distinct from those of purely competitive communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Top-views of these experimental communities showed patterns distinct from those of purely competitive communities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experimental images in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "187b008e-d492-4851-a51c-214735050f3f",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C67",
+      "claim": "Self-organization was absent in simulated pure competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Such self-organization was absent in pure competition (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "58332994-b500-4734-b9cc-fadc60f6eb50",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C71",
+      "claim": "Self-organization allowed discrimination among cooperators of varying quality in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations showed that self-organization also allowed discrimination among cooperators of varying quality (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "f4f9d864-4d88-45ac-95a8-1347ec9b89d4",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C72",
+      "claim": "R\u2192A,d\u2190L were isolated and outcompeted by R\u2192A\u2190L when grown in the absence of supplements in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "When grown in the absence of supplements, R\u2192A,d\u2190L were isolated and outcompeted by R\u2192A\u2190L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in simulation results in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "81c8ce54-5dc7-4db5-9a38-2eaffe9ddb7c",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C73",
+      "claim": "A lower d value resulted in a larger ARG/RdG in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was quantitative, as a lower d value resulted in a larger ARG/RdG (i.e., the less R\u2192A,d\u2190L released, the more it was excluded; Figure 4A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "4776494d-ef22-48ea-879e-7af0a23ad621",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C74",
+      "claim": "A lower d value resulted in a greater advantage of R\u2192A\u2190L over R\u2192A,d\u2190L in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "and a greater advantage of R\u2192A\u2190L over R\u2192A,d\u2190L (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "99c6a555-8f05-4c47-821f-e5f6fcdc1fa3",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C75",
+      "claim": "ARG/RdG was not highly sensitive to the intrinsic growth rate advantage of R\u2192A,d\u2190L over R\u2192A\u2190L in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ARG/RdG was not highly sensitive to the intrinsic growth rate advantage of R\u2192A,d\u2190L over R\u2192A\u2190L (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "25539b3e-be90-4251-8342-ce7f02f6aea7",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C76",
+      "claim": "R\u2192A,d\u2190L was still strongly disfavored even when it had relatively large (50%) intrinsic growth rate advantage over R\u2192A\u2190L in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "R\u2192A,d\u2190L was still strongly disfavored even when it had relatively large (50%) intrinsic growth rate advantage over R\u2192A\u2190L (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "2b2d4f1e-8252-4a82-904b-e08128d5f343",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C77",
+      "claim": "Self-organization favors cooperators that supply the most benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, self-organization favors cooperators that supply the most benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "0b0a1468-3d67-4f08-af53-4a8654bb861d",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C78",
+      "claim": "Heterogeneity in the initial spatial distribution of cells promoted but was not required for self-organization.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulation results suggest that the heterogeneity in the initial spatial distribution of cells promoted but was not required for self-organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation results in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "7cae1ee4-8434-4bf9-a15c-e21fcfb45ece",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C79",
+      "claim": "Even starting from a periodic and symmetric initial distribution, self-organization still emerged in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of initial spatial asymmetry, other stochastic effects such as the initial metabolite-storage state of the cell, cell rearrangement, and death events broke the symmetry and self-organization still emerged (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "0707f5bf-fd3d-4714-afd5-731383f2557e",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C80",
+      "claim": "The final partner association index from random initial distribution was greater than that from periodic distribution in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the final partner association index from random initial distribution was greater than that from periodic distribution, the latter was still significantly greater than 1 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "bfc7abb0-c17d-4a46-bfdc-89d3350df699",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C81",
+      "claim": "Cooperators still outperformed cheaters in periodic initial distribution, even though the degree of outperformance was greater in random initial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, cooperators still outperformed cheaters in periodic initial distribution, even though the degree of outperformance was greater in random initial distribution (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "8ce8d951-3867-4b9a-be60-4b632090ba2c",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C82",
+      "claim": "The asymmetry between cooperators and cheaters in their capacity to reciprocate partner's benefits drives self-organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we reason that the asymmetry between cooperators and cheaters in their capacity to reciprocate partner's benefits drives self-organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation inferred from the experimental and simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "691a5dbf-73b1-4857-b95d-57f3ea66e0f6",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C83",
+      "claim": "If two distinct populations receive spatially localized large fitness benefits from each other, then the two populations are expected to intermix.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work has shown that if two distinct populations receive spatially localized large fitness benefits from each other, then the two populations are expected to intermix (Momeni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work (Momeni et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "4e627e73-dd80-4aa3-bf34-1bd6f39eb639",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C84",
+      "claim": "When the fitness benefit to at least one population is small, then cell types are not expected to intermix.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the fitness benefit to at least one population is small, then cell types are not expected to intermix (Momeni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work (Momeni et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "e9f0c80c-853f-4d12-ac45-6782a7ba47d4",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C85",
+      "claim": "Partners intermix with cooperators but not cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, partners intermix with cooperators but not cheaters (Figures 3\u20137).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experimental and simulation results in Figures 3\u20137.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "38b31812-46ab-48ae-aea2-794862e74136",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C86",
+      "claim": "Near the cooperator side, partners intermixed with cooperators due to the spatially localized large benefits to both.",
+      "claim_type": "EXPLICIT",
+      "source": "Near the cooperator side, partners intermixed with cooperators due to the spatially localized large benefits to both (Momeni et al., 2013; red and green in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 6 and supported by citation to Momeni et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "80b71aa9-28e6-4c1d-b06a-a48f8ec40ed4",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C87",
+      "claim": "Near the cheater side, the lack of benefits to partners caused minimal intermixing between cheaters and partners.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, near the cheater side, the lack of benefits to partners caused minimal intermixing between cheaters and partners (Momeni et al., 2013; blue and green in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 6 and supported by citation to Momeni et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "65ff96fc-7192-4446-84bb-2f5afb226fe4",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C88",
+      "claim": "The isolation of cheaters allowed cooperators to increase in frequency despite the intrinsic fitness advantage of cheaters over cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "This isolation of cheaters allowed cooperators to increase in frequency despite the intrinsic fitness advantage of cheaters over cooperators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "fe252be7-6847-4298-b942-c1027d128575",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C89",
+      "claim": "If intermixing was prevented through delocalizing benefits, self-organization and cooperator advantage over cheaters diminished in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed in simulations, if intermixing was prevented through delocalizing benefits (Momeni et al., 2013; Allen et al., 2013), or if intermixing was imposed on all cells through high initial cell densities, self-organization and cooperator advantage over cheaters diminished (Figure 6\u2014figure supplement 1, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 6\u2014figure supplement 1 and experimental results in Figure 7.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "e3d88a86-265b-42f4-b549-d2856bdb2292",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C90",
+      "claim": "If intermixing was imposed on all cells through high initial cell densities, self-organization and cooperator advantage over cheaters diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "or if intermixing was imposed on all cells through high initial cell densities, self-organization and cooperator advantage over cheaters diminished (Figure 6\u2014figure supplement 1, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experimental results in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "728ca7a4-020a-4a38-9fea-5232a64a0ba9",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C91",
+      "claim": "Compared to the center, the expanding front where open space offered opportunities for self-organization showed a significantly higher partner association index.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the center, the expanding front where open space offered opportunities for self-organization showed a significantly higher partner association index (Figure 7, Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experimental results in Figure 7 and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "d0dcb405-1a53-416e-a80b-f38ac4bd5634",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C92",
+      "claim": "In the community center, cooperators were not favored over cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "In the community center, cooperators were not favored over cheaters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experimental results in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "69b9b940-5f8d-4047-a585-1e126671efa1",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C93",
+      "claim": "R\u2192A\u2190L:C\u2190L increased progressively above the initial value of 1 as the community grew into open space away from the inoculum.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, R\u2192A\u2190L:C\u2190L increased progressively above the initial value of 1 as the community grew into open space away from the inoculum (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experimental results in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "0c7ad20c-326d-4490-a7b5-434f5e7f4a1d",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C94",
+      "claim": "Growth into open space during range expansion favors heterotypic cooperation over cheating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, similar to what has been observed for homotypic cooperation (Datta et al., 2013; Van Dyken et al., 2013), growth into open space during range expansion also favors heterotypic cooperation over cheating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental results in Figure 7, with citations to similar findings for homotypic cooperation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "c1a9c6c4-186c-4bec-b372-6dd4e7a77833",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C95",
+      "claim": "Self-organization is driven by the asymmetry between cooperators and cheaters in the amount of spatially localized benefits they supply to the heterotypic partner during cell growth into open space.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-organization is driven by the asymmetry between cooperators and cheaters in the amount of spatially localized benefits they supply to the heterotypic partner during cell growth into open space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main mechanistic conclusion from the study, supported by experimental and simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "246fa915-6343-4b9d-8e57-94082c5e6df0",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C96",
+      "claim": "Spatial self-organization is the mechanism for partner fidelity feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, spatial self-organization is the mechanism for partner fidelity feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, integrating all findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "3392ee33-323a-4442-a195-aa451ddbf24d",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C97",
+      "claim": "Spatial self-organization does not require the evolution of partner recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Not requiring the evolution of partner recognition (Travisano and Velicer, 2004; Foster and Wenseleers, 2006), spatial self-organization offers a simple and fundamental mechanism solely driven by acts of strong cooperation and cheating during cell growth into open space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study, with citations to previous work on partner recognition.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "2aa70fe0-f321-4e18-97a6-de5abcc29020",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C98",
+      "claim": "In natural heterotypic cooperative systems with long evolutionary histories, self-organization may act either alone or in synergy with potential recognition mechanisms to exclude cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in natural heterotypic cooperative systems with long evolutionary histories, self-organization may act either alone or in synergy with potential recognition mechanisms (Weyl et al., 2010) to exclude cheaters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about natural systems based on the study's findings, with citation to Weyl et al., 2010.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "c78c0713-e0d6-444c-b684-31b11472e7b3",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C99",
+      "claim": "Release of lysine or adenine was caused by metabolite overproduction due to a mutation that made the first enzyme of the biosynthetic pathway insensitive to end-product inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of lysine or adenine was caused by metabolite overproduction due to a mutation that made the first enzyme of the biosynthetic pathway (Lys21 and Ade4, respectively) insensitive to end-product inhibition (Armitt and Woods, 1970; Feller et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genetic basis of metabolite release in the engineered strains, with citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "76aaa6f2-9d69-437c-9b6a-34a5e00e10e1",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C101",
+      "claim": "Spatial environment has been shown to promote heterotypic cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial environment, which facilitates repeated interactions between neighboring individuals, has been shown to promote heterotypic cooperation (Boucher et al., 1982; Doebeli and Knowlton, 1998; Yamamura et al., 2004; West et al., 2007; Harcombe, 2010; Mitri et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "e6cc2d1a-c065-4288-8092-ec976c863a6e",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C102",
+      "claim": "The mechanism for how partner fidelity feedback unfolds in a spatial environment is not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mechanism for how partner fidelity feedback unfolds in a spatial environment is not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "f57f4c39-31f5-4b4a-8ebd-cd269cecd50a",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C103",
+      "claim": "In partner choice, active mechanisms enable an individual to differentially reward cooperative instead of non-cooperative partners based on a signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In partner choice, active mechanisms (disruptable through for example mutational or pharmacological means) enable an individual to differentially reward cooperative instead of non-cooperative partners based on a signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of partner choice mechanism, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "48dd2a13-f189-4629-9197-4a3164354ca3",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C104",
+      "claim": "Discrimination mediated by partner choice can occur in advance of exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, discrimination mediated by partner choice can occur in advance of exploitation (Bull and Rice, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bull and Rice, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "7c67abe9-492e-46c4-8051-fa23d55f0562",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C105",
+      "claim": "Client fish recognize and avoid cheating cleaners that also bite healthy tissues in the mutualism between client fish and cleaner fish.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in the mutualism between client fish and cleaner fish in which cleaner fish obtain food from removing client parasites, client fish recognize and avoid cheating cleaners that also bite healthy tissues (Bshary, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of partner choice, supported by citation to Bshary, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "e2129a52-d5fc-4e4e-b5ff-fde939687bd8",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C106",
+      "claim": "Examples of partner fidelity feedback can be found in mutualism between hosts and their vertically transmitted symbionts.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of partner fidelity feedback can be found in mutualism between hosts and their vertically transmitted symbionts, for example, between eukaryotes and their endosymbioic mitochondria and chloroplasts (Sachs et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sachs et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "575c3d5a-f5e3-42f7-bd43-e9e20213c381",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C107",
+      "claim": "Natural heterotypic cooperative systems often benefit from a combination of partner choice and partner fidelity feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural heterotypic cooperative systems often benefit from a combination of partner choice and partner fidelity feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about natural systems, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "2cf72511-4391-4d27-84fa-ebcc4ff0da39",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C108",
+      "claim": "For a particular system, it is challenging to determine which mechanism is mainly responsible for fending off cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "Often, for a particular system, it is challenging to determine which mechanism is mainly responsible for fending off cheaters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a challenge in the field, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "5635547b-692b-450d-9dc4-526918556849",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C109",
+      "claim": "The mutualism between fig and fig wasp has been thought to employ partner choice by some investigators.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the mutualism between fig and fig wasp and between legume and rhizobia have been thought to employ partner choice by some investigators (Kiers et al., 2003; Sachs et al., 2004; Foster and Wenseleers, 2006; Jand\u00e9r and Herre, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "2ac1d7a4-877f-421f-8ec2-2fe971e30d93",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C110",
+      "claim": "The mutualism between legume and rhizobia has been thought to employ partner choice by some investigators.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the mutualism between fig and fig wasp and between legume and rhizobia have been thought to employ partner choice by some investigators (Kiers et al., 2003; Sachs et al., 2004; Foster and Wenseleers, 2006; Jand\u00e9r and Herre, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "f7fa4908-9827-48a7-9f95-581b44f11200",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C111",
+      "claim": "The mutualism between fig and fig wasp has been thought to employ partner fidelity feedback by other investigators.",
+      "claim_type": "EXPLICIT",
+      "source": "and partner fidelity feedback by others (Weyl et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Weyl et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "0991bcd3-29f5-4b36-9334-d90ac9ade754",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C112",
+      "claim": "The mutualism between legume and rhizobia has been thought to employ partner fidelity feedback by other investigators.",
+      "claim_type": "EXPLICIT",
+      "source": "and partner fidelity feedback by others (Weyl et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Weyl et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "91ed0e66-5b1e-4a95-8531-b602aca20537",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C114",
+      "claim": "When cooperative benefits were limiting, the most 'helpful' cooperator ended up with the highest number of partners and was most favored.",
+      "claim_type": "EXPLICIT",
+      "source": "When cooperative benefits were limiting, the most 'helpful' cooperator ended up with the highest number of partners and was most favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from simulation results in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "9a10683d-00f4-49a6-acb2-2ec3460fd43c",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C115",
+      "claim": "Self-organization through partner fidelity feedback is capable of achieving finer levels of discrimination without requiring sophisticated cognition and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in theory, self-organization through partner fidelity feedback is capable of achieving finer levels of discrimination without requiring sophisticated cognition and memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation results, based on inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "bfabde75-22ad-4b60-a5a1-e34115749cca",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C116",
+      "claim": "Without knowing the molecular mechanisms of interactions, one could easily confuse partner fidelity feedback with partner recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Without knowing the molecular mechanisms of interactions, one could easily confuse partner fidelity feedback with partner recognition, because both are capable of discriminating partners of varying cooperative qualities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "896b51a4-955f-4365-970c-bd0c6afbf8f1",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C117",
+      "claim": "Any argument on partner recognition in a system that is intrinsically spatial will require identifying variants that fail to distinguish cooperators from cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work suggests that any argument on partner recognition in a system that is intrinsically spatial (such as legume and rhizobia and fig and colonizing fig wasp) will require identifying variants that fail to distinguish cooperators from cheaters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "91ab755c-4b2c-4615-8d97-4a8cb3a4179c",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C118",
+      "claim": "Interpreting cheater discrimination as 'partner choice' can be misleading without identifying variants that fail to distinguish cooperators from cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "Otherwise, interpreting cheater discrimination as 'partner choice' can be misleading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "a9decf05-a805-4d7c-84c9-336304d7d10b",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C119",
+      "claim": "Spatial self-organization can fend off cheaters with large fitness advantages over cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial self-organization can fend off cheaters with large fitness advantages over cooperators (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "11a1256f-0614-4396-b8fa-e60c696bd05c",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C120",
+      "claim": "If cheaters are much better than cooperators at taking up low concentrations of benefits, then cheaters will destroy heterotypic cooperation even in a spatial environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if (non-isogenic) cheaters are much better than cooperators at taking up low concentrations of benefits, then cheaters will destroy heterotypic cooperation even in a spatial environment (experimental results in Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experimental results in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "149469af-2f2e-4a1d-95fc-b40d7fd9c745",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C121",
+      "claim": "In byproduct mutualism, non-producers are excluded and disfavored in a spatial environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In byproduct mutualism (benefit production incurs no cost and thus non-producers have no fitness advantage over producers), non-producers are excluded and disfavored in a spatial environment (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "e5f69ad5-f876-4a2b-ab0c-dcb4c51c61a4",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C122",
+      "claim": "High levels of non-producers can still destroy byproduct mutualism in a spatial environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, high levels of non-producers can still destroy byproduct mutualism in a spatial environment (simulation results in Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "27e3a56b-c372-4c81-bd29-776e681775e8",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C123",
+      "claim": "Non-producers compete with producers for benefits from the partner in byproduct mutualism.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because non-producers compete with producers for benefits from the partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why high levels of non-producers can destroy byproduct mutualism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "691c4981-ae27-4eef-8e71-b6b00cf26019",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C124",
+      "claim": "If the initial level of non-producers is too high, producers receive few benefits and suffer, which in turn negatively impacts the partner.",
+      "claim_type": "EXPLICIT",
+      "source": "If the initial level of non-producers is too high, producers receive few benefits and suffer, which in turn negatively impacts the partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why high levels of non-producers can destroy byproduct mutualism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "6c9e6ab6-fc69-4191-9588-0a2d2570e13e",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C125",
+      "claim": "Spatial self-organization favoring heterotypic cooperation can be considered as an example of niche construction or environmental feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceptually, spatial self-organization favoring heterotypic cooperation can be considered as an example of niche construction or environmental feedback (Lehmann, 2007; Pepper, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual interpretation of the findings, with citations to previous work on niche construction.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "de8ebe45-779e-4bb3-b8d7-3eca1a45e67c",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C126",
+      "claim": "Cooperators construct favorable niches and cheaters construct unfavorable niches for partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperators construct favorable niches and cheaters construct unfavorable niches for partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual interpretation of the mechanism of self-organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "756cbc3b-29d3-498b-9f29-1cc3acdbfb22",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C127",
+      "claim": "Through differential partner association, partners construct better niches for cooperators than for cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "Through differential partner association, partners construct better niches for cooperators than for cheaters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual interpretation of the mechanism of self-organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "03803434-6efb-4ffe-ab26-e98153560623",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C128",
+      "claim": "Niche construction affects the growth of current cells and that of the future progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Niche construction not only affects the growth of current cells, but also that of the future progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual interpretation of the mechanism of self-organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "aca9247a-f8fc-444b-9175-9d538b703ee8",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "claim_id": "C129",
+      "claim": "Reciprocal niche construction favors heterotypic cooperation over cheating.",
+      "claim_type": "EXPLICIT",
+      "source": "This reciprocal niche construction favors heterotypic cooperation over cheating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual interpretation of the mechanism of self-organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the theoretical background on heterotypic cooperation, cheating, and mechanisms (partner choice and partner fidelity feedback) that can stabilize cooperation. These claims synthesize established knowledge from prior literature about cooperation theory, positive assortment, kin discrimination, kin fidelity, and the challenges of determining which stabilization mechanism operates in natural systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by extensive citations to established literature (C12-C24, C101-C112) and represent accurate summaries of prior knowledge in the field. The definitions and theoretical framework are consistent with cited sources and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "65377d68-91f6-4484-9f37-9a1169fe5dd8",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors engineered a yeast system with three strains: cooperators (R\u2192A\u2190L) and partners (G\u2192L\u2190A) that exchange essential metabolites (adenine and lysine), and cheaters (C\u2190L) that exploit partner-produced lysine without reciprocating adenine. Cheaters have a competitive advantage over cooperators due to not bearing the cost of adenine overproduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design is clearly described (C6, C7, C26, C27) with appropriate genetic engineering details (C99) supported by citations. The system is well-characterized and provides a controlled environment to test cooperation and cheating dynamics without confounding partner recognition mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both experiments and simulations demonstrate that spatial environments stabilize heterotypic cooperation against competitively superior cheaters, while disrupting spatial structure (through mixing or liquid culture) favors cheaters. A three-dimensional individual-based diffusion model with experimentally determined parameters recapitulates these findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The result is well-supported by both experimental data (Figures 1-2) and computational simulations (C48-C56) using a mechanistic model with experimentally validated parameters (C53). The consistency between experiments and simulations strengthens the conclusions. Similar findings in other microbial systems (C46) provide additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Despite initially random spatial distributions, cooperators gain more partner neighbors than cheaters through spatial self-organization. In cooperation/cheating conditions, partners intermix with cooperators but not cheaters, forming mixed pods while cheaters are isolated at the periphery. This differential spatial association is absent in pure competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This key finding is supported by both experimental imaging (C57-C60, Figure 3) and simulation results (C67, C85-C87, Figure 3). The quantification of partner association indices in both 2D and 3D (Figure 3C, F) provides statistical support. The mechanistic explanation (C86-C88) is consistent with the observed patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "202a3153-b87c-4856-875a-bdff20f28af0",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Self-organization discriminates among cooperators of varying quality: the less a cooperator contributes, the more it is excluded and disfavored. This discrimination is quantitative, sensitive to contribution level but relatively insensitive to intrinsic fitness advantages, and does not require sophisticated cognition or memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by systematic simulation experiments (C71-C76, Figure 4) examining cooperators with varying adenine release rates. The quantitative relationship between contribution level and exclusion (C73-C74) is clearly demonstrated. The insensitivity to intrinsic fitness advantages (C75-C76, Figure 4\u2014figure supplement 1) strengthens the conclusion that contribution level is the key factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "e15e303e-b8b0-428e-b911-cbc298b17d7f",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Heterogeneity in initial spatial distribution promotes but is not required for self-organization. Even starting from periodic and symmetric initial distributions, stochastic effects break symmetry and self-organization emerges, though to a lesser degree than with random initial distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is supported by simulation experiments (Figure 5) comparing random versus periodic initial distributions. The finding that self-organization occurs even without initial spatial heterogeneity (C79-C81) is important for understanding the robustness of the mechanism. Statistical significance is demonstrated (C80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "3df49af0-b321-4688-aec8-a6c8f736dd66",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spatial self-organization is the mechanism for partner fidelity feedback, driven by asymmetric fitness effects of cooperators and cheaters on partners during cell growth into open space. This mechanism achieves assortment without requiring evolution of partner recognition, based solely on the asymmetry in reciprocating spatially localized benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the central mechanistic conclusion of the study, well-supported by the integration of experimental and simulation results. The mechanistic explanation (C82, C95) is consistent with prior work on intermixing (C83-C84) and provides a parsimonious explanation for the observed patterns. The claim that recognition is not required (C97) is justified by the engineered system design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "61b48a57-ec0a-4ad1-97cf-8c4650b90f2d",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Growth into open space during range expansion is required for self-organization to favor cooperation. When intermixing is prevented (through delocalizing benefits) or imposed uniformly (through high initial cell densities), self-organization and cooperator advantage diminish. At expanding fronts with open space, cooperators are favored, while in crowded centers they are not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is supported by both simulations (C89, Figure 6\u2014figure supplement 1) and experiments (C90-C93, Figure 7). The comparison between community centers and expanding fronts (C91-C93) provides clear evidence for the importance of open space. The connection to similar findings in homotypic cooperation (C94) strengthens the generality of the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "769930a4-6254-4d06-8090-8fe968e68cf6",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spatial self-organization has limits: it can fend off cheaters with large fitness advantages, but fails if cheaters are much better at taking up low concentrations of benefits. In byproduct mutualism, non-producers are excluded but high initial levels can still destroy mutualism because non-producers compete with producers for partner-supplied benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These boundary conditions are well-supported by simulation (C119, C121-C122, Figure 4\u2014figure supplements 2-3) and experimental data (C120). The mechanistic explanations (C123-C124) are logical and consistent with the model assumptions. These results appropriately qualify the main findings and identify conditions where self-organization fails.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "3b5bc5e5-b29c-4d9b-ba75-3caf695f0238",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spatial self-organization favoring heterotypic cooperation can be conceptualized as reciprocal niche construction or environmental feedback, where cooperators and partners construct favorable niches for each other through differential association, affecting both current and future generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conceptual framework (C125-C129) provides a useful theoretical interpretation of the mechanism, supported by citations to niche construction literature (C125). The interpretation is consistent with the experimental and simulation findings and helps connect the work to broader ecological theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "4eef9b6c-433f-49e5-97d2-c4dca47dcd8e",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Without knowing molecular mechanisms, partner fidelity feedback could be confused with partner recognition because both can discriminate among partners of varying quality. Arguments for partner recognition in spatial systems require identifying variants that fail to distinguish cooperators from cheaters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This methodological insight (C116-C118) is a logical inference from the study's findings, particularly the demonstration that discrimination can occur without recognition (C71-C77). The recommendation for future studies (C117) is reasonable and addresses an important interpretational challenge in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "f05d3963-bf56-4943-b98f-260b15df8bef",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In natural heterotypic cooperative systems with long evolutionary histories, self-organization may act either alone or in synergy with potential recognition mechanisms to exclude cheaters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim is explicitly speculative (evidence_type includes SPECULATION) about natural systems beyond the scope of the experimental work. While plausible based on the study's findings, it lacks direct empirical support and represents a hypothesis for future investigation rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    },
+    {
+      "id": "cfce0518-93e3-4880-94fa-ba3ab6297235",
+      "content_id": "f8295ab8-cad6-472e-aa3a-3e04b1e9729c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Upon environmental stresses, originally isogenic cooperators and cheaters can quickly acquire different mutations and become nonisogenic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is well-supported by citations to prior work (Morgan et al., 2012; Waite and Shou, 2012) and provides important context for why the authors used simulations to avoid confounding effects of adaptive mutations in their experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:50:43.752186Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5f99ea6b-80fa-4493-8463-bececebeaa0a",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "6bfadd29-3278-4046-8798-5f45ae00aee1",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "5062e3f4-109a-4aff-84a0-daea0af7c695",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "6ab446af-174d-45bc-a144-d08b93169abe",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "c1ba3c3d-5c68-4d5a-95d9-4e8233a490f6",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "91bd37df-3f27-4106-a712-206836815ec5",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "c79ac608-4c7b-4e00-922c-c5dec424f153",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "357d0303-57be-48de-8dd1-6897006bd6aa",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "374ddadd-9ab4-436d-93b3-06aa6f34a0d2",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "d8178cd3-c36e-444d-901f-6a68299c7df9",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "46409a2e-e7b3-4fc5-9d59-ecd8556f0284",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "74dfa72d-acf9-45a6-a757-6700a354fcb5",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "eb04b65c-76b8-4711-bf0d-be75524520c1",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "4c23f70b-b21a-4de0-b62e-b78ae9d7b060",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "df390293-3eb2-4fe5-9304-08a053969c6a",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "dd565a7d-8314-4252-853f-e58e2bade33c",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "81cb1147-a43e-4004-a305-6749c9b61247",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "d5a030c4-a65d-430a-89a1-2614b8445c45",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "76aaa6f2-9d69-437c-9b6a-34a5e00e10e1",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "e6cc2d1a-c065-4288-8092-ec976c863a6e",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "f57f4c39-31f5-4b4a-8ebd-cd269cecd50a",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "48dd2a13-f189-4629-9197-4a3164354ca3",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "7c67abe9-492e-46c4-8051-fa23d55f0562",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "e2129a52-d5fc-4e4e-b5ff-fde939687bd8",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "575c3d5a-f5e3-42f7-bd43-e9e20213c381",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "2cf72511-4391-4d27-84fa-ebcc4ff0da39",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "5635547b-692b-450d-9dc4-526918556849",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "2ac1d7a4-877f-421f-8ec2-2fe971e30d93",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "f7fa4908-9827-48a7-9f95-581b44f11200",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "0991bcd3-29f5-4b36-9334-d90ac9ade754",
+      "result_id": "7bf96f5f-cb21-499c-8fd6-33d9501d4c0f"
+    },
+    {
+      "claim_id": "a8b7e14a-a432-4867-870d-dc8f19bf76eb",
+      "result_id": "65377d68-91f6-4484-9f37-9a1169fe5dd8"
+    },
+    {
+      "claim_id": "afc9f1d1-f57b-4573-9d4b-ecf68ee8f0df",
+      "result_id": "65377d68-91f6-4484-9f37-9a1169fe5dd8"
+    },
+    {
+      "claim_id": "7a161c2d-bc9f-44f8-aab3-9cae60bc78ef",
+      "result_id": "65377d68-91f6-4484-9f37-9a1169fe5dd8"
+    },
+    {
+      "claim_id": "3ef8ad1e-39ab-4815-b752-9d40921e3204",
+      "result_id": "65377d68-91f6-4484-9f37-9a1169fe5dd8"
+    },
+    {
+      "claim_id": "7bb7d38a-16af-4f64-8e46-204665b772a5",
+      "result_id": "65377d68-91f6-4484-9f37-9a1169fe5dd8"
+    },
+    {
+      "claim_id": "c78c0713-e0d6-444c-b684-31b11472e7b3",
+      "result_id": "65377d68-91f6-4484-9f37-9a1169fe5dd8"
+    },
+    {
+      "claim_id": "d2b9558e-c7f2-447b-8e3f-894a3d8c9fda",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "36efacfd-da35-4644-8cb9-06a626ba8fdd",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "6952372c-0d85-42ba-971b-a895b37a94e2",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "abbf9a09-3397-44aa-83e8-760f035bbe68",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "6d69a434-fb09-4236-b230-4cd0a42c1f14",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "6a52234f-6826-4621-a932-3c00460d6f47",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "8d3497d4-4a21-42e9-99ba-811b1055ec4d",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "367cb983-a973-460a-bcf6-194c687b1088",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "0801478a-1aaa-4686-93f9-ba31e79e9650",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "f1242e9a-0ae2-4f8f-8c55-db2f9241ebce",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "2e7ba19c-57d9-4168-b051-af6ff43e9e9f",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "42068c6c-3ec8-45ec-8d5a-9a90e824fe06",
+      "result_id": "dcfe09f7-7d6d-45ad-806d-340b9a4979cd"
+    },
+    {
+      "claim_id": "3c445b2e-c8ea-471a-9cb6-dafd0e80ce6e",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "c3973448-79e2-4d39-8ff7-3e476e31ec10",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "966ffb2f-0b97-44cd-8910-6427587629b9",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "daacd622-27c7-4bf2-90e1-136d762a4107",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "ca485d4b-75c9-495e-839f-0c8b545c1210",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "187b008e-d492-4851-a51c-214735050f3f",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "e9f0c80c-853f-4d12-ac45-6782a7ba47d4",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "38b31812-46ab-48ae-aea2-794862e74136",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "80b71aa9-28e6-4c1d-b06a-a48f8ec40ed4",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "65ff96fc-7192-4446-84bb-2f5afb226fe4",
+      "result_id": "88664955-92ac-4823-b1f9-a6c4f90e8fd1"
+    },
+    {
+      "claim_id": "f34835ab-1cb5-4b80-8794-9a720058c788",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "58332994-b500-4734-b9cc-fadc60f6eb50",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "f4f9d864-4d88-45ac-95a8-1347ec9b89d4",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "81c8ce54-5dc7-4db5-9a38-2eaffe9ddb7c",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "4776494d-ef22-48ea-879e-7af0a23ad621",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "99c6a555-8f05-4c47-821f-e5f6fcdc1fa3",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "25539b3e-be90-4251-8342-ce7f02f6aea7",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "2b2d4f1e-8252-4a82-904b-e08128d5f343",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "91ed0e66-5b1e-4a95-8531-b602aca20537",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "9a10683d-00f4-49a6-acb2-2ec3460fd43c",
+      "result_id": "202a3153-b87c-4856-875a-bdff20f28af0"
+    },
+    {
+      "claim_id": "0b0a1468-3d67-4f08-af53-4a8654bb861d",
+      "result_id": "e15e303e-b8b0-428e-b911-cbc298b17d7f"
+    },
+    {
+      "claim_id": "7cae1ee4-8434-4bf9-a15c-e21fcfb45ece",
+      "result_id": "e15e303e-b8b0-428e-b911-cbc298b17d7f"
+    },
+    {
+      "claim_id": "0707f5bf-fd3d-4714-afd5-731383f2557e",
+      "result_id": "e15e303e-b8b0-428e-b911-cbc298b17d7f"
+    },
+    {
+      "claim_id": "bfc7abb0-c17d-4a46-bfdc-89d3350df699",
+      "result_id": "e15e303e-b8b0-428e-b911-cbc298b17d7f"
+    },
+    {
+      "claim_id": "b607f812-7d3b-4e35-8ee6-04c626a2a863",
+      "result_id": "3df49af0-b321-4688-aec8-a6c8f736dd66"
+    },
+    {
+      "claim_id": "8ce8d951-3867-4b9a-be60-4b632090ba2c",
+      "result_id": "3df49af0-b321-4688-aec8-a6c8f736dd66"
+    },
+    {
+      "claim_id": "691a5dbf-73b1-4857-b95d-57f3ea66e0f6",
+      "result_id": "3df49af0-b321-4688-aec8-a6c8f736dd66"
+    },
+    {
+      "claim_id": "4e627e73-dd80-4aa3-bf34-1bd6f39eb639",
+      "result_id": "3df49af0-b321-4688-aec8-a6c8f736dd66"
+    },
+    {
+      "claim_id": "c1a9c6c4-186c-4bec-b372-6dd4e7a77833",
+      "result_id": "3df49af0-b321-4688-aec8-a6c8f736dd66"
+    },
+    {
+      "claim_id": "246fa915-6343-4b9d-8e57-94082c5e6df0",
+      "result_id": "3df49af0-b321-4688-aec8-a6c8f736dd66"
+    },
+    {
+      "claim_id": "3392ee33-323a-4442-a195-aa451ddbf24d",
+      "result_id": "3df49af0-b321-4688-aec8-a6c8f736dd66"
+    },
+    {
+      "claim_id": "fe252be7-6847-4298-b942-c1027d128575",
+      "result_id": "61b48a57-ec0a-4ad1-97cf-8c4650b90f2d"
+    },
+    {
+      "claim_id": "e3d88a86-265b-42f4-b549-d2856bdb2292",
+      "result_id": "61b48a57-ec0a-4ad1-97cf-8c4650b90f2d"
+    },
+    {
+      "claim_id": "728ca7a4-020a-4a38-9fea-5232a64a0ba9",
+      "result_id": "61b48a57-ec0a-4ad1-97cf-8c4650b90f2d"
+    },
+    {
+      "claim_id": "d0dcb405-1a53-416e-a80b-f38ac4bd5634",
+      "result_id": "61b48a57-ec0a-4ad1-97cf-8c4650b90f2d"
+    },
+    {
+      "claim_id": "69b9b940-5f8d-4047-a585-1e126671efa1",
+      "result_id": "61b48a57-ec0a-4ad1-97cf-8c4650b90f2d"
+    },
+    {
+      "claim_id": "0c7ad20c-326d-4490-a7b5-434f5e7f4a1d",
+      "result_id": "61b48a57-ec0a-4ad1-97cf-8c4650b90f2d"
+    },
+    {
+      "claim_id": "a9decf05-a805-4d7c-84c9-336304d7d10b",
+      "result_id": "769930a4-6254-4d06-8090-8fe968e68cf6"
+    },
+    {
+      "claim_id": "11a1256f-0614-4396-b8fa-e60c696bd05c",
+      "result_id": "769930a4-6254-4d06-8090-8fe968e68cf6"
+    },
+    {
+      "claim_id": "149469af-2f2e-4a1d-95fc-b40d7fd9c745",
+      "result_id": "769930a4-6254-4d06-8090-8fe968e68cf6"
+    },
+    {
+      "claim_id": "e5f69ad5-f876-4a2b-ab0c-dcb4c51c61a4",
+      "result_id": "769930a4-6254-4d06-8090-8fe968e68cf6"
+    },
+    {
+      "claim_id": "27e3a56b-c372-4c81-bd29-776e681775e8",
+      "result_id": "769930a4-6254-4d06-8090-8fe968e68cf6"
+    },
+    {
+      "claim_id": "691c4981-ae27-4eef-8e71-b6b00cf26019",
+      "result_id": "769930a4-6254-4d06-8090-8fe968e68cf6"
+    },
+    {
+      "claim_id": "6c9e6ab6-fc69-4191-9588-0a2d2570e13e",
+      "result_id": "3b5bc5e5-b29c-4d9b-ba75-3caf695f0238"
+    },
+    {
+      "claim_id": "de8ebe45-779e-4bb3-b8d7-3eca1a45e67c",
+      "result_id": "3b5bc5e5-b29c-4d9b-ba75-3caf695f0238"
+    },
+    {
+      "claim_id": "756cbc3b-29d3-498b-9f29-1cc3acdbfb22",
+      "result_id": "3b5bc5e5-b29c-4d9b-ba75-3caf695f0238"
+    },
+    {
+      "claim_id": "03803434-6efb-4ffe-ab26-e98153560623",
+      "result_id": "3b5bc5e5-b29c-4d9b-ba75-3caf695f0238"
+    },
+    {
+      "claim_id": "aca9247a-f8fc-444b-9175-9d538b703ee8",
+      "result_id": "3b5bc5e5-b29c-4d9b-ba75-3caf695f0238"
+    },
+    {
+      "claim_id": "bfabde75-22ad-4b60-a5a1-e34115749cca",
+      "result_id": "4eef9b6c-433f-49e5-97d2-c4dca47dcd8e"
+    },
+    {
+      "claim_id": "896b51a4-955f-4365-970c-bd0c6afbf8f1",
+      "result_id": "4eef9b6c-433f-49e5-97d2-c4dca47dcd8e"
+    },
+    {
+      "claim_id": "91ab755c-4b2c-4615-8d97-4a8cb3a4179c",
+      "result_id": "4eef9b6c-433f-49e5-97d2-c4dca47dcd8e"
+    },
+    {
+      "claim_id": "2aa70fe0-f321-4e18-97a6-de5abcc29020",
+      "result_id": "f05d3963-bf56-4943-b98f-260b15df8bef"
+    },
+    {
+      "claim_id": "c1b72355-6882-4eaf-9e6a-465ce89dc25e",
+      "result_id": "cfce0518-93e3-4880-94fa-ba3ab6297235"
+    }
+  ],
+  "comparisons": []
+}

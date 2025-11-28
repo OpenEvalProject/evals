@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The Drosophila midgut exhibits striking morphological regionalization along its anterior-posterior axis, with at least 10 distinct subregions defined by electron microscopy showing reproducible differences in cell type, size, membrane structure, and organelle content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 provide strong convergent evidence from multiple techniques (EM, fluorescence microscopy, quantitative cell counts) with good reproducibility (error bars in Figure 1C). The morphological differences are well-documented and validated with region-specific markers (Ferritin-GFP, Nile red staining).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Gene expression boundaries in endodermal cells correspond closely with morphological regional boundaries, while muscle gene expression boundaries are offset from endodermal boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by systematic GAL4 line screening (931 lines) showing striking correspondence between enterocyte gene expression and morphological boundaries (Figure 1D), contrasted with offset muscle boundaries (Figure 1E). This provides strong evidence for coordinated regional specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C50"
+    ],
+    "result": "RNAseq analysis of isolated midgut regions reveals extensive region-specific gene expression, with each subregion expressing 50-150 genes at 10-fold higher levels than other regions, and hundreds of genes differentially expressed between anterior, middle, and posterior zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C50 are well-supported by high-quality RNAseq data (30-110M paired-end reads, triplicates with R\u00b2>0.95). The high regional specificity of known markers (lab 40-100\u00d7 enriched in Cu, C39) validates minimal cross-contamination (C45). However, C45 overstates certainty by claiming this 'proves' rather than 'strongly suggests' minimal contamination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "PGRP family members show highly localized expression patterns, suggesting organized spatial interactions between the microbiome and regional enterocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by RNAseq data (Figure 2E) showing region-specific PGRP expression. However, C48's inference about bacterial localization is speculative and would require direct microbiome spatial mapping to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Many regionally expressed midgut genes reside in genomic clusters, including trypsins, lysozymes, serine proteases, alpha-glucosidases, lipases and Jonah genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by RNAseq data analysis and comparison to prior work (Spellman and Rubin, 2002). This represents a descriptive observation about gene organization rather than a mechanistic finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Intestinal stem cells show regional morphological differences, including flatter shape in A1, lipid droplet accumulation in P1, and differential expression of transcription factors Pdp1 and Stat92E.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by EM data (Figure 4A-C) and GAL4 reporter expression (Figure 4E). The morphological differences are clear, though the functional significance remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ISCs are present in all 10 midgut regions including the copper region, but divide at different rates ranging from once per day in P1-P3 to every 4-5 days in the copper region, and maintain different ratios of enteroendocrine cells to enterocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by improved Delta staining (Figure 4F-O) and clonal analysis (Figure 4S, 4R). C56 directly contradicts Strand & Micchelli 2011, which the authors acknowledge and attribute to improved methodology. The division rate data (C57-C59) could be affected by heat shock artifacts, though the authors attempted to minimize this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In P1 and P3 regions, Delta expression persists in enteroblasts and young enterocytes, leading to prolonged Notch signaling during enterocyte differentiation as shown by GbeSu(H)-lacZ reporter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by immunofluorescence and reporter data (Figure 4L', 4P-Q). C62 is an inference that is reasonable given the data, though direct measurement of Notch activity would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Clones in the midgut extend perpendicular to the anterior-posterior axis but rarely parallel to it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by clonal analysis observations (Figure 5A). This is a descriptive observation that sets up the boundary crossing experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Clonal analysis of 49 boundary clones at six regional boundaries shows that ISC progeny cross only the LFC/Fe boundary (88% crossing rate) but not five other boundaries tested (0% crossing at A1/A2, A3/Cu, Cu/LFC, Fe/P1, P1/P2), indicating regional restriction of stem cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C78, C97-C99 present the core clonal boundary analysis. The statistical analysis (C77) is appropriate, showing p<0.05 for most comparisons. However, sample sizes are small at some boundaries (N=3-4 for A3/Cu and Cu/LFC), limiting confidence. The 0% crossing at Cu/LFC is based on only 4 clones, which is insufficient to definitively conclude bidirectional restriction. The authors acknowledge this limitation by noting they cannot conclude LFC progeny lack crossing capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Clones frequently pushed into adjacent regions at boundaries but retained their autonomous identity based on marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by observations from the clonal analysis experiments, providing evidence that physical displacement occurs without transdifferentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Disruption of Notch signaling leads to enteroendocrine tumors that arise preferentially in P1, P3, and posterior A2 regions, with P1 showing the largest and earliest tumors, while A1 never develops tumors. Tumor cells respect regional boundaries during expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 are supported by experimental data using multiple Notch inhibition methods (RNAi, DAPT, dominant negative) showing consistent regional specificity (Figure 6B-H). The observation that tumor boundaries correspond to normal regional boundaries (C84-C87) is well-documented. However, the experiments lack quantification of tumor size/cell number and statistical analysis of regional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Regional epigenetic differences have a large effect on midgut enteroendocrine tumor development and regional boundaries restrict tumor cell movement into adjacent compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are reasonable inferences from the tumor data (C80-C87), though the term 'epigenetic' is used loosely without direct evidence of chromatin modifications. The restriction of tumor expansion to regional boundaries is well-supported visually but lacks quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The striking regionalization of structure and gene expression within the midgut is maintained at least in part by regional differences between resident stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is a major conclusion supported by the convergence of clonal analysis (C4, C97), ISC behavioral differences (C57-C60), and ISC gene expression differences (C55). The qualification 'at least in part' is appropriate given that other mechanisms (mechanical forces, cell-cell interactions) may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Regionalization likely supports complex metabolic tasks by enabling sequential processing of food through multiple digestive stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are reasonable inferences based on the gene ontology analysis (Figure 3) showing region-specific enrichment of digestive enzymes and metabolic pathways. However, this remains speculative without functional perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "There is close correspondence between the 10 regions defined in this study and the regions independently defined by Buchon et al. (2013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 provides validation through independent replication. The correspondence strengthens confidence in the regional definitions, though some differences in subdivision exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Known compartment-defining genes from developmental systems (engrailed, invected, hedgehog pathway components, apterous, Serrate, Hox genes) are not expressed in patterns consistent with defining midgut regional boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C108-C109, C111 are supported by RNAseq data analysis. This negative result is important for ruling out known mechanisms and suggesting novel boundary-defining factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The genetic basis for adult midgut compartmentalization probably differs from previously studied examples of tissue regionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is a reasonable inference from C105-C111, though the conclusion is necessarily tentative given the negative evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C120"
+    ],
+    "result": "The transcription factor labial shows highly specific expression in the copper region (40-100\u00d7 higher than other regions) and dve expression falls sixfold between Fe and P1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115 and C120 are supported by RNAseq data (Figure 2D). These represent candidate regional regulatory factors, though functional testing is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Regional differences in stem cell and tissue properties contribute to differential cancer susceptibility, with tumor-prone regions (P1, P3, A2) showing pre-existing differences in Notch signaling persistence and lipid droplet enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 connect the tumor susceptibility data to pre-existing regional differences. C132-C133 are supported by Figure 4P-Q data. However, the causal relationship between persistent Notch signaling, lipid accumulation, and tumor susceptibility (C134) remains correlative and requires functional testing.",
+    "result_type": "MAJOR"
+  }
+]

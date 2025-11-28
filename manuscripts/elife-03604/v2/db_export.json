@@ -1,0 +1,2052 @@
+{
+  "submission": {
+    "id": "733b4718-630e-4a87-85dd-38c33acccfe2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:08:10.523654Z",
+    "updated_at": "2025-11-28T21:08:10.523654Z"
+  },
+  "content": [
+    {
+      "id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "submission_id": "733b4718-630e-4a87-85dd-38c33acccfe2",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis of nucleoside and nucleoside drug selectivity by concentrative nucleoside transporters\n\n## Authors\n\n- Zachary Lee Johnson<sup>1</sup>\n- Jun-Ho Lee<sup>1</sup>\n- Kiyoun Lee<sup>2</sup>\n- Minhee Lee<sup>2</sup>\n- Do-Yeon Kwon<sup>2</sup>\n- Jiyong Hong<sup>2</sup>\n- Seok-Yong Lee<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Duke University Medical Center Durham United States\n2. Department of Chemistry Duke University Durham United States\n3. Department of Pharmacology and Cancer Biology Duke University Medical Center Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nConcentrative nucleoside transporters (CNTs) are responsible for cellular entry of nucleosides, which serve as precursors to nucleic acids and act as signaling molecules. CNTs also play a crucial role in the uptake of nucleoside-derived drugs, including anticancer and antiviral agents. Understanding how CNTs recognize and import their substrates could not only lead to a better understanding of nucleoside-related biological processes but also the design of nucleoside-derived drugs that can better reach their targets. Here, we present a combination of X-ray crystallographic and equilibrium-binding studies probing the molecular origins of nucleoside and nucleoside drug selectivity of a CNT from Vibrio cholerae. We then used this information in chemically modifying an anticancer drug so that it is better transported by and selective for a single human CNT subtype. This work provides proof of principle for utilizing transporter structural and functional information for the design of compounds that enter cells more efficiently and selectively.\n\n## Introduction\n\nNucleosides play critical roles in biology as precursors to nucleic acids and the energy currency of the cell and also serve as signaling molecules (King et al., 2006; Rose and Coe, 2008; Molina-Arcas et al., 2009). Furthermore, nucleoside analogs have clinical applications as anticancer and antiviral drugs (Damaraju et al., 2003; Jordheim and Dumontet, 2007). Because of their immense biological and clinical importance, efficient entry of nucleosides and their analogs into the cell is crucial to human health and disease. Cellular entry is accomplished by a class of membrane proteins known as nucleoside transporters (NTs). There are two types of NTs in humans: concentrative nucleoside transporters (CNTs) and equilibrative nucleoside transporters (ENTs). CNTs utilize the energy of ion gradients to actively transport nucleosides into the cell against their concentration gradients while ENTs transport nucleosides down their chemical gradients without the requirement of any additional energy source (Gray et al., 2004b).\n\nIn addition to nucleosides, NTs are responsible for the transport of a wide range of nucleoside-derived anticancer (e.g., gemcitabine and 5-fluorouridine) and antiviral (e.g., ribavirin) drugs (Farre et al., 2004; Marechal et al., 2009; Rabascio et al., 2010; Bhutia et al., 2011; Doehring et al., 2011; Fukao et al., 2011; Rau et al., 2013). Both NT families possess subtype-dependent nucleoside specificities and tissue distributions, while CNTs are more highly subtype-specific for their substrates and distributions than ENTs (Gray et al., 2004b; Paproski et al., 2013). As a result, different NT subtypes are responsible for the transport of different types of nucleosides and nucleoside drugs, and expression levels of different NTs can predict how patients with certain types of cancer and viral infection will respond to nucleoside-drug treatment (Mackey et al., 1998; Farre et al., 2004; Spratlin et al., 2004; Gray et al., 2004a; Damaraju et al., 2009; Marechal et al., 2009; Rabascio et al., 2010; Bhutia et al., 2011; Doehring et al., 2011; Fukao et al., 2011; Rau et al., 2013). Since there are three different isoforms of human CNTs (hCNT1-3) that possess differing nucleoside and nucleoside-drug specificities and tissue distributions, greater knowledge of the molecular origins of nucleoside selectivity by CNTs could potentially lead to better-tailored nucleoside drug delivery as well as a better understanding of CNT-mediated physiological processes.\n\nCNTs belong to the solute carrier (SLC) superfamily, constituting the family SLC28. The SLC superfamily, composed of 52 families, is responsible for the transport of ions, metabolites, neurotransmitters, and drugs in humans. Several SLC families are of particular clinical interest because of their roles in drug absorption, distribution, metabolism, and excretion (ADME) (Schlessinger et al., 2013). The recent determination of the structures of several SLC transporters has advanced our understanding of the inner workings of these transporters and expanded the applicability of structure-based ligand discovery using computational methods (Gao et al., 2009; He et al., 2010; Hu et al., 2011; Newstead et al., 2011; Johnson et al., 2012; Pedersen et al., 2013). Although this computational method of ligand discovery is a valuable approach, it cannot accurately predict the energetically important interactions between ligands and transporters, and therefore experimental approaches should be pursued to understand the principles of ligand and drug selectivity by these transporters.\n\nThe crystal structure of a CNT from Vibrio cholerae (vcCNT) presents the first opportunity to examine specific nucleoside recognition by CNTs from a structural perspective (Johnson et al., 2012). vcCNT is an excellent model system to study hCNTs: it utilizes a Na+ gradient for nucleoside transport like hCNTs and shares high sequence identity (36\u201339%) with hCNTs with particularly high sequence identity for the nucleoside-binding site (64% with hCNT1, 73% with hCNT2, 91% with hCNT3). For these reasons, vcCNT has been identified as an optimal candidate for structure-based ligand discovery using computational methods (Schlessinger et al., 2013).\n\nHere, we have exploited a combination of X-ray crystallographic studies and equilibrium-binding measurements of vcCNT to understand the structural basis of CNT selectivity. We have discovered that CNTs use a unique mode of nucleoside recognition that is suitable for its function as a transporter. Using the insights gained from these studies, we have chemically modified the anticancer drug gemcitabine and found that its binding affinity for vcCNT is greatly enhanced. Furthermore, the modified compound now possesses subtype-specific transport among human CNTs. Follow-up structural and mutational studies revealed the origin of subtype-specificity of the modified compound. Not only do our studies illuminate the structural basis of nucleoside selectivity by CNTs but they also provide proof of principle for utilizing membrane transporter structures for the design of drugs with more selective delivery (Han and Amidon, 2000; Majumdar et al., 2004).\n\n## Results\n\n### The nucleoside-binding site of vcCNT-7C8C and equilibrium-binding measurements\n\nvcCNT forms a homotrimer with each protomer possessing its own nucleoside-binding site and permeation pathway (Figure 1A). The protomer adopts a new fold and is divided into two domains: the scaffold domain that is responsible for trimerization and maintaining the overall architecture of the transporter (light blue, Figure 1B), and the transport domain where nucleoside binding and transport occur (other colors, Figure 1B). The nucleoside-binding site, facing the trimer axis, is formed at the center of the transport domain between the tips of two helical hairpins (HP1 and HP2) and two partially unwound transmembrane helices (TM4 and TM7) (Johnson et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig1-v2.jpg)\n\n**Figure 1.:** (A) The vcCNT-7C8C trimer viewed from within the plane of the membrane. The location of the membrane is marked by rectangles. The scaffold domain of one protomer is colored light blue, and the transport domain is colored red, blue, orange, cyan, wheat, and brown. The other two protomers are colored gray. Uridine is shown bound to each protomer in stick representation. The nucleoside-binding site is delineated with dashed lines. vcCNT-7C8C functions similarly to wild type (Figure 1\u2014figure supplement 1). (B) The vcCNT-7C8C protomer. The structure is rotated 120\u00b0 about the trimer axis relative to A, zoomed in, and the other two protomers have been removed for clarity. (C) Nucleoside-binding site. Amino acid residues that interact with the uridine are labeled and shown in stick representation and were used for sequence identity calculation with hCNTs. Hydrogen bonds are shown as dashed lines. The uracil base is marked with a blue box, and the ribose is marked with a gray box. For a stereo view of the electron density in the nucleoside-binding site, see Figure 1\u2014figure supplement 2. (D) Fluorescence titration of vcCNT with uridine. Uridine was titrated into solution containing vcCNT and the fluorescent nucleoside pyrrolo-cytidine, anisotropy was measured, and data were fit to a single-site competitive binding model to obtain a KD of 36 \u00b1 3 \u03bcM (mean \u00b1 SEM, n = 3 measurements).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Wild-type (WT) and 7C8C vcCNT were reconstituted into lipid vesicles and assessed for their ability to support the uptake of 2 \u03bcM of 3H-labeled nucleosides as described (Johnson et al., 2012). The data shown represent 2 min timepoints. Empty vesicles were included as a negative control.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The nucleoside-binding site of vcCNT-7C8C bound to uridine is shown in stereo in stick representation in the same orientation and colored as in Figure 1C. Uridine is yellow and the red spheres are water molecules. The resolution is 2.1 \u00c5 and density shown is from a 2Fo\u2013Fc electron density map contoured at 1\u03c3.\n\nWe solved the structure of a uridine-bound double mutant of vcCNT (Leu 7 to Cys and Ile 8 to Cys, termed 7C8C) at 2.1 \u00c5, which is higher resolution than the 2.4-\u00c5 wild-type structure. This mutant was originally designed to introduce binding sites for hydrophobic mercury compounds for heavy-atom phasing. The high-resolution mutant structure revealed another water in the binding site that bridges the 4-carbonyl of the uracil base with Glu 156 but was otherwise identical to the wild-type structure (Figure 1C, Figure 1\u2014figure supplement 2; Table 1). The mutations do not affect transporter function significantly (Figure 1\u2014figure supplement 1).\n\n**Table 1.**\n Data collection and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>vcCNT-7C8C-uridine</th>\n      <th>vcCNT-zebularine</th>\n      <th>vcCNT-7C8C-adenosine</th>\n      <th>vcCNT-7C8C-ribavirin</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"5\">Data collection</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P63</td>\n      <td>P63</td>\n      <td>P63</td>\n      <td>P63</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>119.7, 119.7, 83.1</td>\n      <td>119.8, 119.8, 82.7</td>\n      <td>120.0, 120.0, 83.5</td>\n      <td>119.7, 119.7, 83.6</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 90, 120</td>\n      <td>90, 90, 120</td>\n      <td>90, 90, 120</td>\n      <td>90, 90, 120</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>2.08 (2.12\u20132.08)*</td>\n      <td>2.90 (2.95\u20132.90)</td>\n      <td>3.10 (3.15\u20133.10)</td>\n      <td>2.80 (2.85\u20132.80)</td>\n    </tr>\n    <tr>\n      <td>Rsym or Rmerge</td>\n      <td>0.052 (0.554)</td>\n      <td>0.141 (0.766)</td>\n      <td>0.104 (0.567)</td>\n      <td>0.114 (0.758)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3I</td>\n      <td>42.0 (2.3)</td>\n      <td>13.5 (1.9)</td>\n      <td>14.1 (1.3)</td>\n      <td>20.2 (1.8)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.3 (93.0)</td>\n      <td>99.9 (100.0)</td>\n      <td>99.0 (96.5)</td>\n      <td>99.8 (100.0)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>5.9 (4.3)</td>\n      <td>5.8 (5.1)</td>\n      <td>4.2 (3.4)</td>\n      <td>7.0 (6.3)</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>2.08 (2.13\u20132.08)</td>\n      <td>2.91 (3.13\u20132.91)</td>\n      <td>3.10 (3.41\u20133.10)</td>\n      <td>2.80 (2.98\u20132.80)</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>40368 (2381)</td>\n      <td>14932 (2798)</td>\n      <td>12429 (2887)</td>\n      <td>16840 (2635)</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree (%)</td>\n      <td>20.2/23.3</td>\n      <td>21.1/24.7</td>\n      <td>22.4/26.9</td>\n      <td>22.2/25.9</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>2834</td>\n      <td>2868</td>\n      <td>2925</td>\n      <td>2947</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>17/1</td>\n      <td>16/1</td>\n      <td>19/1</td>\n      <td>17/1</td>\n    </tr>\n    <tr>\n      <td>Water/detergent</td>\n      <td>130/33</td>\n      <td>3/33</td>\n      <td>3/33</td>\n      <td>2/33</td>\n    </tr>\n    <tr>\n      <td>B-factors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>44.1</td>\n      <td>45.6</td>\n      <td>72.1</td>\n      <td>58.7</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>34.2/31.3</td>\n      <td>25.6/47.6</td>\n      <td>61.9/71.0</td>\n      <td>54.2/64.5</td>\n    </tr>\n    <tr>\n      <td>Water/detergent</td>\n      <td>54.4/62.6</td>\n      <td>29.3/56.4</td>\n      <td>54.6/89.0</td>\n      <td>48.1/72.3</td>\n    </tr>\n    <tr>\n      <td>R.m.s deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.005</td>\n      <td>0.003</td>\n      <td>0.002</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.782</td>\n      <td>0.676</td>\n      <td>0.617</td>\n      <td>0.709</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Highest resolution shell is shown in parenthesis._\n\nThe structure of vcCNT bound to uridine revealed that the interactions can be divided into two groups: those that involve the ribose moiety and those with the nitrogenous base (Figure 1C). To determine the energetic contributions of each of the interactions between nucleoside and vcCNT, we developed a fluorescence-anisotropy-based competition assay for measuring the equilibrium dissociation constants (KDs) for a variety of nucleosides and nucleoside analogs using the fluorescent cytidine analog pyrrolo-cytidine (Table 2; Damaraju et al., 2011). We calculated the KD for uridine to be 36 \u03bcM (Figure 1D), which is similar to the reported Km values of uridine for hCNTs (Km = 22\u201380 \u03bcM), further suggesting that vcCNT is a good model system to study hCNTs (Molina-Arcas et al., 2009).\n\n**Table 2.**\n KD values for nucleosides and nucleoside analog drugs calculated from fluorescence titrationsTable 2\u2014source data 1.Fluorescence data for KD calculations.For pyrrolo-cytidine and pyrrolo-gemcitabine, individual solutions with fixed nucleoside concentrations and increasing concentrations of vcCNT were prepared, the fluorescence anisotropy was measured, and the data were fit globally to a single-site binding model accounting for ligand depletion. For all other nucleosides, the nucleoside of interest was titrated into solution containing vcCNT and pyrrolo-cytidine 5 \u03bcl at a time, the fluorescence anisotropy was measured, and the data were fit globally to a single-site competitive binding model accounting for ligand depletion. All experiments were performed at least three times.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Compound</th>\n      <th>KD (\u03bcM)*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>uridine</td>\n      <td>36 \u00b1 3</td>\n    </tr>\n    <tr>\n      <td>cytidine</td>\n      <td>61 \u00b1 5</td>\n    </tr>\n    <tr>\n      <td>adenosine</td>\n      <td>470 \u00b1 100</td>\n    </tr>\n    <tr>\n      <td>gemcitabine</td>\n      <td>1,370 \u00b1 430</td>\n    </tr>\n    <tr>\n      <td>ribavirin</td>\n      <td>1,530 \u00b1 350</td>\n    </tr>\n    <tr>\n      <td>zebularine</td>\n      <td>120 \u00b1 5</td>\n    </tr>\n    <tr>\n      <td>3-methyluridine</td>\n      <td>520 \u00b1 80</td>\n    </tr>\n    <tr>\n      <td>5-fluorouridine</td>\n      <td>16 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>5-chlorouridine</td>\n      <td>14 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>5-iodouridine</td>\n      <td>58 \u00b1 5</td>\n    </tr>\n    <tr>\n      <td>5-methyluridine</td>\n      <td>61 \u00b1 7</td>\n    </tr>\n    <tr>\n      <td>2\u2032-deoxyuridine</td>\n      <td>170 \u00b1 10</td>\n    </tr>\n    <tr>\n      <td>3\u2032-deoxyuridine</td>\n      <td>&gt;2,800</td>\n    </tr>\n    <tr>\n      <td>5'-deoxyuridine</td>\n      <td>&gt;2,800</td>\n    </tr>\n    <tr>\n      <td>cytarabine</td>\n      <td>&gt;3,000</td>\n    </tr>\n    <tr>\n      <td>pyrrolo-cytidine</td>\n      <td>0.94 \u00b1 0.17</td>\n    </tr>\n    <tr>\n      <td>pyrrolo-gemcitabine</td>\n      <td>23.5 \u00b1 0.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Titrations were performed in triplicate and data were fit globally. All values are given as means \u00b1 SEM. See Table 2\u2014source data 1 for fluorescence data used in calculating KD values._\n\n### Nucleobase interactions\n\nHuman CNTs have differing nucleoside-base preferences: hCNT1 mainly transports pyrimidines, hCNT2 prefers purines, and hCNT3 is broadly selective for both pyrimidines and purines (Gray et al., 2004b; Molina-Arcas et al., 2009). The uracil base interacts with residues on HP1 (Gln 154 directly and Thr 155 and Glu 156 through water molecules) and TM4 (Val 188 via van der Waals interactions). To examine the energetics of these interactions, we measured KDs of vcCNT for uridine analogs with modifications to the uracil base as well as other nucleosides.\n\nThe anticancer drug zebularine is a uridine analog with no substituent at the C4 position of the pyrimidine base. Zebularine exhibits a \u223cthreefold loss of binding affinity (KD = 120 \u03bcM) relative to uridine. To deduce the structural basis of the reduced binding affinity, we solved the crystal structure of vcCNT bound to zebularine (Figure 2A, Figure 2\u2014figure supplement 1). The crystal structure shows that the side chain of Glu 156 adopts a different rotamer position probably because it is unable to form the water-mediated interaction with the C4-carbonyl of the uracil base, consistent with the loss of binding affinity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig2-v2.jpg)\n\n**Figure 2.:** (A) The crystal structure of vcCNT bound to zebularine. (B) Chemical structure of 3-methyluridine. (C) The crystal structure of vcCNT-7C8C bound to adenosine. (D) The crystal structure of vcCNT-7C8C bound to ribavirin. (E) The crystal structure of vcCNT-7C8C bound to 5-fluorouridine. Fluorine is colored cyan. All electron density maps represent Fo\u2013Fc SA-OMIT maps for the nucleoside contoured at 3\u03c3. Uridine is shown in the center of the figure for reference. For stereo views of the electron density in the nucleoside-binding site for each of these structures, see Figure 2\u2014figure supplements 1\u20134.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The nucleoside-binding site of vcCNT bound to zebularine is shown in stereo in stick representation in the same orientation and colored as in Figure 2A. Zebularine is yellow and the red spheres are water molecules. The resolution is 2.9 \u00c5 and density shown is from a 2Fo\u2013Fc electron density map contoured at 1\u03c3.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The nucleoside-binding site of vcCNT-7C8C bound to adenosine is shown in stereo in stick representation in the same orientation and colored as in Figure 2C. Adenosine is yellow and the red sphere is a water molecule. The resolution is 3.1 \u00c5 and density shown is from a 2Fo\u2013Fc electron density map contoured at 1\u03c3.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The nucleoside-binding site of vcCNT-7C8C bound to ribavirin is shown in stereo in stick representation in the same orientation and colored as in Figure 2D. Ribavirin is yellow and the red sphere is a water molecule. The resolution is 2.8 \u00c5 and density shown is from a 2Fo\u2013Fc electron density map contoured at 1\u03c3.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The nucleoside-binding site of vcCNT-7C8C bound to 5-fluorouridine is shown in stereo in stick representation in the same orientation and colored as in Figure 2E. 5-fluorouridine is yellow and the red spheres are water molecules. The resolution is 2.3 \u00c5 and density shown is from a 2Fo\u2013Fc electron density map contoured at 1\u03c3.\n\nN3 of the uracil base interacts with both Thr 155 and Glu 156 through a single water molecule that is coordinated by both residues. We measured the affinity of vcCNT for 3-methyluridine, which contains a methyl group at this position that blocks the water-mediated interaction, and we found that it significantly decreased the binding affinity (KD = 520 \u03bcM, Figure 2B, Figure 2\u2014figure supplement 2). The purine nucleoside adenosine and the antiviral guanosine analog ribavirin also possess similarly weaker binding affinity (KD = 470 and 1530 \u03bcM, respectively). To examine the structural basis of the reduced affinity, we solved the crystal structures of vcCNT-7C8C bound to adenosine (Figure 2C, Figure 2\u2014figure supplement 3) and ribavirin (Figure 2D, Figure 2\u2014figure supplement 4). The structures reveal that the bulky purine base displaces the water observed in the uridine structure while maintaining similar modes of ribose binding, corroborating the idea that the reduced affinities of adenosine and ribavirin are due to the loss of the water-mediated interactions and highlighting the importance of the water coordinated by Thr 155 and Glu 156 in nucleoside recognition by CNTs.\n\nTo test the energetic contribution of substituents at the C5 position of the pyrimidine ring, we measured the KD for the anticancer drug 5-fluorouridine to be 16 \u03bcM, which is \u223ctwofold lower than the KD for uridine. We also solved the crystal structure of vcCNT-7C8C bound to 5-fluorouridine (Figure 2E). The structure shows that the modified uracil base still fits into the nucleoside-binding site without any structural rearrangements of the protein. To understand the origin of enhanced affinity by the addition of fluorine at the C5 position, we compared the binding affinity of 5-fluorouridine to other C5-substituted uridine analogs with differing electronegativities and atomic radii (Table 3). Fluorine is highly electronegative (3.98 on the Pauling scale) and relatively small (1.47 \u00c5 radius). When another highly electronegative but slightly larger halogen, chlorine (3.16, 1.75 \u00c5), is substituted at the C5 position, a similar KD is observed (14 \u03bcM). However, when the large, weakly electronegative substituent iodine (2.66, 1.98 \u00c5) or a methyl group (2.55, 2.00 \u00c5) is added, we observe an increase in KD (\u223c60 \u03bcM). In short, we observed an increase in affinity with smaller, highly electronegative substituents but a decrease in affinity with larger, less electronegative substituents. What structural feature could account for the differing affinities of these compounds?\n\n**Table 3.**\n Properties of substituents of 5-substituted uridines and their binding affinities for vcCNT\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Substituent</th>\n      <th>Radius (\u00c5)</th>\n      <th>Electronegativity</th>\n      <th>KD (\u03bcM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>fluorine</td>\n      <td>1.47</td>\n      <td>3.98</td>\n      <td>16 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>chlorine</td>\n      <td>1.75</td>\n      <td>3.16</td>\n      <td>14 \u00b1 4</td>\n    </tr>\n    <tr>\n      <td>iodine</td>\n      <td>1.98</td>\n      <td>2.66</td>\n      <td>58 \u00b1 5</td>\n    </tr>\n    <tr>\n      <td>methyl</td>\n      <td>2.00</td>\n      <td>2.55</td>\n      <td>61 \u00b1 7</td>\n    </tr>\n  </tbody>\n</table>\n\nThese differences may result from interactions of the nucleosides with Phe 366. In the structure of vcCNT-7C8C bound to uridine, Phe 366 appears to interact with both the uracil base and the ribose of the nucleoside. Phe 366 forms an offset \u03c0\u2013\u03c0 interaction with the aromatic pyrimidine ring and also forms CH\u2013\u03c0 interactions with the ribose (Figure 1C, Figure 3A,B). The addition of a small, highly electronegative substituent at the C5 position could strengthen the interaction between the pyrimidine ring and Phe 366, as is the case with many \u03c0\u2013\u03c0 interactions (Hunter and Sanders, 1990; Ringer et al., 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig3-v2.jpg)\n\n**Figure 3.:** (A) The nucleoside-binding site of vcCNT-7C8C bound to uridine is shown viewed from the cytoplasm. Phe 366 interacts with the uracil base via \u03c0\u2013\u03c0 interactions. The other epimeric 2\u2032 position is marked with an arrow. (B) Another view of the interaction between Phe 366 and uridine. Phe 366 interacts with the ribose via CH\u2013\u03c0 interactions (dashed lines). (C\u2013F) Isothermal titration calorimetry of uridine binding to wild-type vcCNT and Phe 366 mutants. KD = 45 \u00b1 8 \u03bcM and \u0394Ho = \u22122970 \u00b1 330 cal/mol for WT, KD = 1630 \u00b1 120 \u03bcM and \u0394Ho = \u22122200 \u00b1 190 cal/mol for F366A, KD = 920 \u00b1 170 \u03bcM and \u0394Ho = \u22121600 \u00b1 440 cal/mol for F366Y, and KD = 1470 \u00b1 90 \u03bcM and \u0394Ho = \u22123190 \u00b1 130 cal/mol for F366W (means \u00b1 SEM, n = 3 measurements). Note that the KD for F366A could not be reliably measured due to the low heat associated with binding. Each of the F366 mutants is biochemically stable as evidenced by a single, sharp peak at the expected trimer size when subjected to size-exclusion chromatography (Figure 3\u2014figure supplement 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** 1 liter of each construct was expressed and purified in parallel without the addition of any exogenous nucleosides as described in the \u2018Materials and methods\u2019. Each sample was initially purified by size-exclusion chromatography using a Superdex 200 10/300 GL column to remove MBP, and then the peak fractions were collected, concentrated, and re-ran to generate the figures. Each individual chromatogram is shown in the top panels with absolute absorbance at 280 nm on the y-axis, and all of the normalized chromatograms are shown overlaid in the bottom panel.\n\nNotably, Phe 366 is universally conserved between members of the CNT family, and its functional importance has never been tested. To examine the role of Phe 366 in nucleoside recognition, we mutated this residue and performed isothermal titration calorimetry (ITC) experiments. We found that the requirement for Phe at this position is strict, as mutation of this residue to alanine or tyrosine or tryptophan results in significantly decreased binding affinity for uridine while not affecting the stability significantly (Figure 3C\u2013F, Figure 3\u2014figure supplement 1). Therefore, we suggest that Phe 366 plays a critical role in recognition of the nucleoside by CNTs.\n\n### Ribose interactions\n\nAmino acid residues that interact with the ribose in the vcCNT structure (Glu 332, Asn 368, and Ser 371) are invariant between hCNTs and vcCNT. To probe these interactions, we measured KDs for deoxyuridines from which each of the ribose hydroxyls have been removed. Both 3\u2032- and 5\u2032-deoxyuridine yielded KD values greater than 2800 \u03bcM (Figure 4A), while the binding affinity for 2\u2032-deoxyuridine is not as drastically affected (KD = 170 \u03bcM). Several anticancer nucleoside analog drugs contain modifications at the C2\u2032 position of the ribose. Gemcitabine, for example, is a cytidine analog with two fluorine atoms bonded to C2\u2032. The measured KD of gemcitabine for vcCNT (KD = 1370 \u03bcM) is \u223c22-fold higher than that for cytidine (KD = 61 \u03bcM) (Figure 4B, Figure 4\u2014figure supplement 1). To understand the structural basis of this significant reduction in binding affinity associated with the fluorine substitutions, we solved the crystal structure of vcCNT-7C8C bound to gemcitabine (Figure 4C, Figure 4\u2014figure supplement 2). In the uridine-bound structure, a CH\u2013\u03c0 interaction was observed between the C2\u2032 hydrogen and Phe 366 (Figure 3B). In order for vcCNT to accommodate for the bulkier fluorine atom on the other epimeric position of C2\u2032, which creates steric interference and electrostatic repulsion with the \u03c0 electrons of Phe 366, both Phe 366 and TM7b (including Ser 371) move slightly away from the nucleoside with respect to the uridine-bound structure (Figure 4D). Furthermore, the ribose of the gemcitabine is reoriented with respect to the other nucleoside-bound structures (Figure 4E). In addition to the steric and electrostatic disruption of the ribose-binding site, fluorine is a poor substitute for a hydroxyl as a hydrogen-bond acceptor and thus provides a less favorable interaction of the ribose with Ser 371 (Howard et al., 1996; Dunitz and Taylor, 1997). To further test the importance of the epimeric position of the 2\u2032-hydroxyl group of the ribose, we attempted to measure the KD of another anticancer cytidine analog known as cytarabine (cytosine arabinoside) which has its 2\u2032-hydroxyl flipped up above the ribose ring (Figure 4B). Cytarabine displayed no measurable binding when titrated into vcCNT (KD > 3000 \u03bcM). Interestingly, consistent with our observation with vcCNT, hCNTs show no significant binding and transport of cytarabine (Clarke et al., 2006). Taken together, these results reveal that the interactions of both the nucleobase and the ribose with Phe 366 and the interactions of the ribose with TM7 are critical for nucleoside recognition by CNTs, which explains the intolerance of CNTs for substituents at the other epimeric position of C2\u2032 of nucleosides.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig4-v2.jpg)\n\n**Figure 4.:** (A) Dissociation constants for deoxyuridines. (B) Chemical structures and KDs of cytidine, gemcitabine, and cytarabine. The cytidine is from the crystal structure of vcCNT-7C8C bound to cytidine (for a stereo view of the electron density in the nucleoside-binding site of this structure, see Figure 4\u2014figure supplement 1), and the other nucleosides are simply chemical structures in the same orientation as cytidine. Fluorine atoms in gemcitabine are colored cyan. (C) Crystal structure of vcCNT-7C8C bound to gemcitabine. Density shown is from an Fo\u2013Fc SA-OMIT map contoured at 3\u03c3. For a stereo view of the electron density in the nucleoside-binding site, see Figure 4\u2014figure supplement 2. (D) Alignment of uridine-bound and gemcitabine-bound vcCNT structures. Structures were aligned by C\u03b1 using PyMOL. TM7 was not used for the alignment. C\u03b1 traces and interacting amino acid residues are shown. The uridine-bound vcCNT structure (PDB ID: 3TIJ) is gray and the gemcitabine-bound vcCNT-7C8C structure is deep purple. (E) Alignment of vcCNT and vcCNT-7C8C structures bound to uridine (PDB ID: 3TIJ), zebularine, cytidine, pyrrolo-cytidine, 5-fluorouridine, and gemcitabine. Alignments were performed in the same manner as D. vcCNT-7C8C-gemcitabine is shown in hot pink and all other structures are shown in gray.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The nucleoside-binding site of vcCNT-7C8C bound to cytidine is shown in stereo in stick representation in the same orientation and colored as the structures in Figure 2. Cytidine is yellow and the red spheres are water molecules. The resolution is 2.6 \u00c5 and density shown is from a 2Fo\u2013Fc electron density map contoured at 1\u03c3.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The nucleoside-binding site of vcCNT-7C8C bound to gemcitabine is shown in stereo in stick representation in the same orientation and colored as in Figure 4C. Gemcitabine is yellow and the red sphere is a water molecule. The resolution is 2.9 \u00c5 and density shown is from a 2Fo\u2013Fc electron density map contoured at 1\u03c3.\n\n### Structure-based ligand modification\n\nOf all of the nucleosides and nucleoside analogs studied, the fluorescence probe pyrrolo-cytidine had the strongest binding affinity for vcCNT (KD = 0.9 \u03bcM, Figure 5A). We solved the crystal structure of vcCNT-7C8C bound to pyrrolo-cytidine and found that the methylpyrrole ring fits neatly into a pocket formed by TM4 and TM6 (Figure 5B, Figure 5\u2014figure supplement 1). None of the other nucleosides in this study have moieties that can exploit this \u2018nucleo-pocket\u2019, and therefore this could be the root of the added strength of binding for pyrrolo-cytidine.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig5-v2.jpg)\n\n**Figure 5.:** (A) Chemical structures and KDs of gemcitabine and the pyrrolo-nucleosides. (B) The crystal structure of vcCNT-7C8C in complex with pyrrolo-cytidine is shown in surface representation with pyrrolo-cytidine shown in stick representation. The additional three carbons that comprise the methylpyrrole ring of pyrrolo-cytidine are colored green. The vcCNT-7C8C nucleo-pocket, formed mainly by G187 (TM4), V188 (TM4), and L259 (TM6), is delineated with a dotted line. The location of the cytoplasm, adjacent to the nucleo-pocket, is shown. For a stereo view of the electron density in the nucleoside-binding site, see Figure 5\u2014figure supplement 1. (C) hCNT3 transports gemcitabine but not pyrrolo-gemcitabine. Na+ currents were elicited by the addition of nucleoside to Xenopus oocytes expressing hCNT3, and currents were measured by two-electrode voltage-clamp. An example current trace is shown. For each individual oocyte, the area under each current peak was measured to calculate total charge (Q) transported during application of nucleoside. The ratio of total charge co-transported with gemcitabine to that with pyrrolo-gemcitabine or gemcitabine total charge to gemcitabine + pyrrolo-gemcitabine total charge was calculated for each oocyte experiment (means \u00b1 SEM, n = 14 oocytes). For Gem + Pyr-Gem, 200 \u03bcM of each nucleoside was added simultaneously. (D) hCNT1 transports pyrrolo-gemcitabine better than gemcitabine. Same experiment as in C but hCNT1-expressing oocytes were used and the ratio of total charge for pyrrolo-gemcitabine to gemcitabine is shown (means \u00b1 SEM, n = 11 oocytes). Neither gemcitabine nor pyrrolo-gemcitabine elicited currents in water-injected oocytes (Figure 5\u2014figure supplement 2) See Figure 5\u2014source data 1 for total charge source data.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The nucleoside-binding site of vcCNT-7C8C bound to pyrrolo-cytidine is shown in stereo in stick representation in the same orientation and colored as the structures in Figure 2. Pyrrolo-cytidine is yellow, and the red spheres are water molecules. The resolution is 2.8 \u00c5 and density shown is from a 2Fo\u2013Fc electron density map contoured at 1\u03c3.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Current traces are shown for three different oocyte experiments. Experiments were performed in the same manner as those in 5C and 5D except water-injected oocytes were used.\n\nFrom our structural and binding studies, we learned that ribose interactions are important for CNT binding but nucleobase interactions are less stringent and can even be modified to improve binding. Because many nucleoside drugs contain modifications at the ribose (e.g., gemcitabine, AZT, and cytarabine), their apparent affinities for hCNTs are low (Graham et al., 2000; Clarke et al., 2006). We wondered whether this loss of affinity due to ribose modification could be compensated for by modification of the nucleobase. We synthesized a gemcitabine analog with the fluorescent nucleobase of pyrrolo-cytidine, which we now refer to as pyrrolo-gemcitabine (Figure 5A). We measured its binding affinity for vcCNT using the fluorescence-anisotropy assay and found that the KD decreased by \u223c60-fold to 24 \u03bcM, suggesting that nucleobase interactions and ribose interactions are additive.\n\nWe next sought to test how these results translated to transportability by hCNTs. It is known that hCNT1, hCNT3, and hENT1 are the main NTs that transport gemcitabine (Marechal et al., 2009; Bhutia et al., 2011; Damaraju et al., 2012; Paproski et al., 2013). To detect nucleoside transport by hCNTs, we turned to two-electrode voltage-clamp electrophysiological recording. Because hCNTs are Na+-nucleoside symporters, one can measure the current generated by the Na+ transport that is coupled with nucleoside transport. We injected Xenopus oocytes with mRNA coding for each of the hCNTs and measured inward Na+ currents elicited by the addition of different nucleosides to the extracellular side. Addition of 200 \u03bcM gemcitabine to hCNT3-expressing oocytes induced Na+ currents (Figure 5C, Figure 5\u2014figure supplement 2). However, the same amount of pyrrolo-gemcitabine had almost no effect. The lack of Na+ current upon addition of pyrrolo-gemcitabine can either mean that hCNT3 is unable to bind the modified compound or hCNT3 binds but cannot transport the modified compound. To resolve this issue, a mixture of equal concentrations of both compounds was added and a reduction of Na+ current was observed, suggesting that hCNT3 binds to but does not transport pyrrolo-gemcitabine. In contrast, 200 \u03bcM pyrrolo-gemcitabine elicited \u223csevenfold higher total charge uptake than gemcitabine for hCNT1 (Figure 5D). hCNT2 transported neither compound (data not shown). Although both hCNT1 and hCNT3 can transport pyrimidines, by modifying the pyrimidine nucleobase of gemcitabine we have created a subtype-specific nucleoside analog with enhanced transportability by hCNT1.\n\nThe nucleo-pocket of vcCNT differs by only one amino acid (Gly 187 to Ser 374) from hCNT3 and three amino acids (Gly 187 to Ser 352, Val 188 to Leu 353, and Leu 259 to Val 424) from hCNT1. Since the nucleoside-binding site of vcCNT is highly homologous to hCNTs, we generated models of the hCNT1 and hCNT3 nucleo-pockets by swapping out these residues in the vcCNT-pyrrolo-cytidine structure. The structural models of hCNT1 and hCNT3 suggest changes in the overall structure of the nucleo-pocket (Figure 6A,B). In particular, the nucleo-pocket of the hCNT1 model does not have a large enough cavity to accommodate the pyrrole ring, and the opening to the intracellular solution is larger due to the smaller side chain on TM6. In the paradigm of the alternating-access mechanism of sodium-coupled symporters (Krishnamurthy et al., 2009), substrate release is achieved by the transition from the inward-facing occluded to the inward-facing open state (Figure 6C). Because the structure of vcCNT adopts an inward-facing occluded conformation where TM6, including Leu 259, serves as part of the gate (Johnson et al., 2012), the hCNT1 model suggests that the additional pyrrole group may destabilize the inward-occluded state and facilitate the transition to the inward-open state. In contrast, the additional pyrrole group may stabilize the inward-occluded state of hCNT3 and slow the transition into the inward-open state. Our hypothesis predicts that changing the structure of the nucleo-pocket in the inward-facing state would affect nucleoside transport by hCNTs. Consistent with our prediction, mutation of Val 375 and Leu 446 of hCNT3 to mimic the nucleo-pocket of hCNT1 leads to an increase in transport of pyrrolo-gemcitabine (Figure 6D). Furthermore, mutation of Leu 353 and Val 424 of hCNT1 to mimic the nucleo-pocket of hCNT3 leads to a decrease in transport of pyrrolo-gemcitabine (Figure 6E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03604/elife-03604-fig6-v2.jpg)\n\n**Figure 6.:** (A) Model of hCNT3 nucleo-pocket. The structure of vcCNT-7C8C bound to pyrrolo-cytidine was used to generate a model of the hCNT3 nucleo-pocket by mutating the appropriate residues in PyMOL and selecting the rotamer that yielded the lowest amount of steric clash. (B) Model of hCNT1 nucleo-pocket. The model was generated in the same manner as A. Note that the methylpyrrole ring (green) will clash with the hCNT1 nucleo-pocket if it maintains the nucleoside-binding mode observed in the vcCNT structure. (C) Hypothetical alternating-access mechanism of vcCNT. A cartoon representation of the different conformational states along the transport cycle is depicted. The transport domain (including HP1, HP2, TM4b, and TM7b) and TM6 are shown as cylinders. Uridine is shown in stick representation. The nucleo-pocket in the inward-occluded conformation (bottom right) is located between TM6 and TM4 and is marked with a green star. The inward-occluded conformation is derived from the crystal structures of vcCNT. All other conformations are purely hypothetical. The transition between inward- and outward-facing conformations has been proposed to be achieved by a rigid-body movement of the transport domain across TM6 (Johnson et al., 2012). Extracellular and intracellular gating likely involves slight rearrangements of HP2/TM4b and HP1/TM7b, respectively. (D) hCNT3 (375L/446V) is capable of transporting both gemcitabine and pyrrolo-gemcitabine. Same experiment as Figure 5C,D but hCNT3 (375L/446V)-expressing oocytes were used and the ratio of total charge (Q) co-transported with gemcitabine to pyrrolo-gemcitabine is shown (means \u00b1 SEM, n = 11 oocytes). (E) hCNT1 (353V/424L) transports pyrrolo-gemcitabine less efficiently than gemcitabine (means \u00b1 SEM, n = 8 oocytes). Note that a higher nucleoside concentration was needed for D and E than the wild-type experiments due to lower transporter activity and/or expression. See Figure 6\u2014source data 1 for total charge source data.\n\n## Discussion\n\n### Design principles of nucleoside recognition by CNTs\n\nOur structural and equilibrium-binding studies of vcCNT have allowed us to better understand the design principles of nucleoside recognition by CNTs. Two helical hairpins (HP1 and HP2) and two unwound helices (TM4 and TM7), related by twofold pseudo-symmetry, create a bowl-shaped nucleoside-binding site at the center of the transport domain of vcCNT (Figure 1B,C). The interactions with the nucleobase are mainly formed with HP1 and TM4b, and the interactions with the ribose are mainly formed with HP2 and TM7b (Figure 1C). At the base of the bowl-shaped nucleoside-binding site, Phe 366 interacts with both the nucleobase and the ribose through \u03c0\u2013\u03c0 and CH\u2013\u03c0 interactions, respectively (Figure 3A,B). Three features make the architecture of the nucleoside-binding site of vcCNT particularly interesting: (1) the twofold pseudo-symmetry of the binding site that is divided in nucleobase and ribose binding on either side of the symmetry axis; (2) an aromatic ring at the base of the bowl that interacts with both the nucleobase and the ribose; (3) the localization of most of the protein\u2013nucleoside interactions to one side of the nucleoside. These features of the nucleoside-binding site lead to the following questions: What are the energetics of the nucleobase and ribose interactions? What is the role of Phe 366? Why are the interactions with the nucleoside localized to the concave side of the bowl?\n\nWith regard to binding energetics, our equilibrium-binding studies have shown that the ribose interactions are energetically important consistent with previous non-equilibrium studies with hCNTs (Clarke et al., 2006). However, while disruption of the nucleobase interactions can have significant effects, the nucleobase can also be modified to improve binding. It is worth noting that our equilibrium-binding studies of vcCNT translate well to hCNT function. For example, we showed that the interaction between the C3\u2032 ribose hydroxyl group and Ser 371 on TM7b is important in vcCNT (Figures 1C and 4A). Consistent with our observation, the hCNT1S546P variant is non-functional (Ser 546 in hCNT1 is equivalent to Ser 371 in vcCNT) (Cano-Soldado et al., 2012). Another important finding of our studies is that interactions with the nucleobase and ribose can be additive, and thus the loss of binding energy from modification of part of the nucleoside can be compensated for by the gain of energy from modification of another part of the nucleoside. Therefore, if a nucleoside drug contains a chemical modification necessary for its pharmacological function that hampers its recognition by CNTs, a compensatory chemical modification can be made so that the drug can still be recognized by CNTs.\n\nOur structural and equilibrium-binding studies highlighted the importance of Phe 366 in nucleoside recognition. The nucleoside-bound structures of vcCNT help to shed light upon the structural basis of the importance of this residue. Notably, Phe 366 is the only residue within the nucleoside-binding site that forms interactions with both portions of the nucleoside. Furthermore, all of the other binding-site residues on HP1, HP2, TM4b, and TM7b interact from the same side of the nucleoside as Phe 366, forming the shape of a bowl around the nucleoside with Phe 366 serving as its base. As a result, the nucleoside rests on the face of Phe 366, likely helping to orient the nucleoside so that it may form all of the other interactions within the binding site. Although \u03c0\u2013\u03c0 and CH\u2013\u03c0 interactions are generally weak, they can provide significant interaction energies depending on the circumstance (Waters, 2002; Nishio, 2011). The importance of Phe 366 is demonstrated by the changes in affinity of C5-substituted uridine analogs for vcCNT by altering the \u03c0\u2013\u03c0 interaction with the nucleobase and the significant reduction of affinity of C2\u2032-substituted nucleoside drugs via disruption of the CH\u2013\u03c0 interaction with the ribose. Furthermore, ITC experiments with Phe 366 mutants revealed the stringent requirement for phenylalanine at this position, as even replacement with tyrosine resulted in a significant loss of binding affinity for uridine. Taken together, we propose that the role of Phe 366 is to position the nucleoside for effective binding thus serving as a \u2018selectivity ring\u2019.\n\nWhat is the molecular basis of having a bowl-shaped nucleoside-binding site? Several other nucleoside-binding proteins bind to their substrates by sandwiching the nucleobase between aromatic residues (Suzuki et al., 2004; Monecke et al., 2014). The utilization of a bowl-shaped binding site for a transporter makes practical sense as the substrate must be able to bind to and dissociate readily from the binding site in order for efficient transport to occur. We previously proposed that the transport domain undergoes a rigid-body motion while the scaffold domain, including TM6, remains static during the transition from the outward-occluded to the inward-occluded conformational state (Figure 6C; Johnson et al., 2012). In the inward-occluded conformation, TM6 (including Leu 259) is located on top of the bowl, serving as part of the intracellular gate and partially occluding the nucleoside from dissociating into the cytoplasm. Portions of HP1 and TM7b form the rest of the intracellular gate and may move slightly during the transition from the inward-occluded to the inward-open conformational state (Figure 6C), allowing the nucleoside to exit from the top of the bowl.\n\nThis rigid-body conformational change also suggests that most of the interactions between transporter and nucleoside that are present in the inward-occluded structure are maintained in the outward-facing conformation, as observed with other sodium-coupled transporters (Reyes et al., 2009; Zhou et al., 2014). One exception is the interaction between the methylpyrrole ring of pyrrolo-cytidine with the nucleo-pocket, which is likely to preferentially interact with the inward-occluded conformation because of the involvement of part of the scaffold domain (TM6, Figures 5B and 6C), which we expect to be immobile during the conformational change. While both conformations should be represented when the transporter is solubilized in detergent micelles, we anticipate that our structural and equilibrium-binding data revealed most of the amino acid residues that are important for nucleoside recognition. Consistent with our hypothesis, amino acid residues that were shown to be important from our inward-conformation-based binding studies in detergent have also been shown to be important for the binding and transport of nucleosides by human CNTs in several cell-based mutational studies (Loewen et al., 1999; Zhang et al., 2003, 2005; Yao et al., 2007; Slugoski et al., 2009). Further structural and biophysical studies probing the outward-facing state will help us to develop a complete understanding of the principles of nucleoside recognition by CNTs.\n\n### Structure-based ligand modification and its implications\n\nDespite the recent progress in the area of structural biology of transporters, most SLC transporter structures determined to date are not highly homologous to human transporters, and it is often the case that drug interactions with these non-human transporters are different from their human counterparts, rendering structural studies of drug\u2013transporter interactions technically challenging and necessitating substantial engineering to mimic the behavior of the human transporters (Singh et al., 2007; Wang et al., 2013). Although our CNT is prokaryotic in origin, it is an excellent model system to study human CNTs and offers us the opportunity to conduct structural studies of nucleoside and nucleoside-drug selectivity by hCNTs.\n\nUnderstanding the structural principles of nucleoside and nucleoside drug recognition by vcCNT not only allowed us to understand why a certain class of drugs (e.g., gemcitabine and cytarabine) are not well recognized and transported by hCNTs, but also offered us an opportunity to modify an existing drug to improve its affinity for vcCNT. Furthermore, our electrophysiological studies show that it is not only transported more efficiently by hCNT1, but it is also selectively transported by hCNT1. Our structural models of hCNT1 and hCNT3 allowed us to hypothesize that the subtype-specific differences in the structures of the nucleo-pocket in the inward-facing-occluded conformation give rise to the subtype-selectivity of the modified compound. The results of the mutational studies of the nucleo-pockets in hCNTs are consistent with this hypothesis. Although we do not know whether the modification of gemcitabine affects the outward conformation due to the lack of a structure of the outward-facing conformation, our studies suggest that destabilization of the inward-facing-occluded step would facilitate the release of the pyrrolo-gemcitabine. Conversely, stabilization of the outward-facing-occluded step would facilitate the capture of the substrate. Taken together, if one has knowledge of both the outward- and inward-facing conformations of the transporter, it might be possible, at least in principle, to modify a compound to bind to both conformations with differential affinities, which may improve its transportability and selectivity. Prior to our studies, the presence of the nucleo-pocket structure was unknown. Although our study with pyrrolo-gemcitabine serves merely as proof of concept, it is conceivable that the nucleo-pocket structure can be utilized in the design of nucleoside-derived drugs or prodrugs that can be specifically targeted only to cell types that express hCNT1 since expression levels of hCNT1 are closely related to the responsiveness of many different types of normal or cancer cells to chemotherapy treatment (Lane et al., 2010; Naito et al., 2010; Rabascio et al., 2010; Bhutia et al., 2011; Choi, 2012).\n\nFinally, our studies provide another valuable concept: even though two transporter subtypes may share substrate and drug specificity, as is the case with hCNT1 and hCNT3, it is still possible to use structural differences (with the help of modeling) between the two subtypes to design or modify a drug that can be selectively transported. This concept has broad applications to many SLC transporters that are involved in ADME since many families such as SLC21, SLC22, and SLC29 possess subtype-dependent drug specificities and/or tissue distributions (Baldwin et al., 2004; Koepsell and Endou, 2004; Hagenbuch and Stieger, 2013).\n\nThese results can also have an impact on basic scientific research. Since some transporter subtypes show significant changes in expression levels between normal and pathological conditions (i.e., cancer), and these changes in transporter expression are usually important for the pathological conditions to persist, a fluorescent compound that is subtype-specific (e.g., pyrrolo-gemcitabine) for a certain transporter family can be a valuable tool to study the role of transporter subtypes in human health and disease through live cell imaging (Farre et al., 2004; Zhang et al., 2006; Bhutia et al., 2011; Perez-Torras et al., 2013). Taken together, this work not only represents an structural study of substrate and drug selectivity by membrane transporters, but our results also provide proof of principle for using this type of structure-function study for modifying drugs so that they are recognized and taken up into the cell by their cognate transporters more efficiently and selectively (Han and Amidon, 2000; Majumdar et al., 2004).\n\n## Materials and methods\n\n### Crystallization\n\nWild-type vcCNT and vcCNT-7C8C were expressed and purified as described (Johnson et al., 2012) in the absence of any added nucleoside. Briefly, protein was expressed as a His10-MBP fusion in C41 (DE3) cells, cells were lysed by homogenizer (AVESTIN, Ottawa, ON), protein was extracted from crude lysate using 30 mM dodecyl-maltoside, lysates were spun down to remove the insoluble fraction, and the supernatant was applied to a Co2+-affinity column for purification. The His10-MBP was cleaved by overnight digestion by PreScission Protease, and vcCNT was separated from His10-MBP by gel filtration using a Superdex 200 10/300 GL column in the presence of 5 mM decyl-maltoside. After gel filtration, protein was concentrated to \u223c10 mg/ml and nucleoside was added to 1 mM (uridine), 2 mM (cytidine, adenosine), or 10 mM (ribavirin, gemcitabine, 5-fluorouridine, pyrrolo-cytidine, zebularine). Crystals were grown in the presence of 100 mM CaCl2, 37\u201342% PEG400, and 100 mM buffer: HEPES pH 7.5 (ribavirin), Tris\u2013HCl pH 8.0\u20138.5 (adenosine, cytidine, gemcitabine, pyrrolo-cytidine), or glycine pH 9.5 (uridine, 5-fluorouridine, zebularine). Crystals were grown using the microbatch-under-oil technique. Crystals were harvested after 10\u201314 days, transferred to cryo solution containing 32.5% PEG400, and flash frozen in liquid nitrogen.\n\n### Data collection and structure determination\n\nX-ray data were collected at beamlines 22-ID-D and 24-ID-C at the Advanced Photon Source at Argonne National Laboratory. Data were processed using HKL-2000. The uridine, cytidine, zebularine, 5-fluorouridine, ribavirin, and pyrrolo-cytidine complex structures were refined using PHENIX with the original vcCNT structure (PDB ID 3TIJ) as the input model. The adenosine and gemcitabine complex structures were solved by molecular replacement with the original vcCNT structure as the search model using PHASER and refined using PHENIX.\n\n### Fluorescence-based equilibrium-binding assay\n\nTo measure the binding affinity of vcCNT for fluorescent nucleoside analogs, individual 500-\u03bcl solutions were prepared containing varying concentrations of vcCNT in 5 mM DM and either 5 \u03bcM pyrrolo-cytidine or 2 \u03bcM pyrrolo-gemcitabine. The fluorescence anisotropy of each solution at \u03bbex = 340 nm and \u03bbem = 467 nm was measured using a Cary Eclipse Fluorescence Spectrophotometer (Agilent, Santa Clara, CA) with automated polarizers. Each titration was performed at least three times. The data for the three titrations were simultaneously fit to a single-site binding model based off of Morrison's quadratic equation using nonlinear least-squares analysis in GraphPad Prism to obtain a dissociation constant and standard error.\n\nTo measure the binding affinity of vcCNT for other nucleosides and nucleoside analogs, the nucleoside of interest was titrated 5 \u03bcl at a time into 500 \u03bcl of solution initially containing 5 \u03bcM of vcCNT in 5 mM DM and 1\u20132 \u03bcM pyrrolo-cytidine. The fluorescence anisotropy after each addition was measured. Each titration was performed at least three times. The data for the three titrations were simultaneously fit to a one-site competitive binding model based off of Wang's method (Wang, 1995) using nonlinear least-squares analysis in GraphPad Prism to obtain a dissociation constant and standard error.\n\n### Isothermal titration calorimetry\n\nvcCNT mutants were prepared in the same manner as wild-type vcCNT. 15\u201330 mM of uridine was titrated 5 \u03bcl at a time into 25\u201340 \u03bcM of vcCNT solubilized in 5 mM DM using a MicroCal VP-ITC system (GE Healthcare, Pittsburgh, PA). The total heat exchanged during each injection was fit to a single-site binding isotherm with KD and \u0394Ho as independent parameters.\n\n### Chemical synthesis\n\nSee Supplementary file 1 for a full description of the pyrrolo-gemcitabine synthesis. Briefly, the Sonogashira coupling of known 2\u2032-deoxy-2\u2032,2\u2032-difluoro-5-iodo-uridine (Quintiliani et al., 2011) with propyne followed by Cu(I)-mediated cyclization provided the corresponding furano-gemcitabine in 64% for 2 steps. Treatment of furano-gemcitabine with NH4OH and CH3OH completed the synthesis of the desired pyrrolo-gemcitabine in 75%.\n\n### Xenopus laevis oocyte expression and electrophysiology\n\nThe genes coding for the three hCNTs and vcCNT were cloned into a pGEM-HE vector. Plasmids were linearized using either SphI or NheI, and mRNA was transcribed using the mMESSAGE mMACHINE T7 Transcription Kit (Ambion, Grand Island, NY). Defolliculated Xenopus laevis oocytes were purchased from Ecocyte Bioscience (Austin, TX). Individual oocytes were injected with 40 ng of mRNA using a 10-\u03bcl microdispenser (Drummond Scientific, Broomall, PA) fitted with a tapered glass pipette tip and incubated at 17 \u00b0C for 4\u20135 days in ND96 buffer (96 mM NaCl, 2 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, and 5 mM HEPES pH 7.5) with 0.1% penicillin and streptomycin before recording.\n\nThe oocyte-recording chamber was gravity-perfused with ND96 buffer at a rate of 2 ml/min. Membrane currents were measured using an Oocyte Clamp (OC-725C; Warner Instruments, Hamden, CT). Individual oocytes were penetrated with two microelectrodes filled with 3 M KCl (0.5\u20131.0 M\u03a9). All electrophysiological experiments were conducted at room temperature. The OC-725C Oocyte Clamp was computer-interfaced via an Axon Digidata 1550 and controlled by Axoscope software (Molecular Devices, Sunnyvale, CA). The current signals were filtered at 20 Hz and sampled at intervals of 20 ms. The signals were filtered at 0.5 Hz by use of pCLAMP 10.4 software for data presentation. Ooctyes were impaled with the electrode filled with 3 M KCl, and then membrane potentials were observed for 10 min. Cells were discarded if resting membrane potentials were unstable or more positive than \u221230 mV. Oocyte membrane potentials were clamped at \u221290 mV for holding potentials to measure transporter-generated currents. All data are shown as means \u00b1 SEM.\n",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "8c986a64-150a-44e7-9a52-817d6d104230",
+      "submission_id": "733b4718-630e-4a87-85dd-38c33acccfe2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03604.027](https://doi.org/10.7554/eLife.03604.027)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cStructural basis of nucleoside and nucleoside drug selectivity by concentrative nucleoside transporters\u201d for consideration at eLife. Your article has been favorably evaluated by Michael Marletta (Senior editor) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Volker D\u00f6tsch, Raimund Dutzler.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors describe a thorough investigation of the interaction of vcCNT with different substrate analogues, including important antiviral and anticancer drugs. vcCNT is a close prokaryotic homologue of the SLC28 family of Na-coupled nucleoside transporters, that are responsible for the import of nucleoside analogues into cells. Its structure was previously determined at high resolution by the same group. The binding mode of ligand analogues to an inward-facing conformation of the protein was investigated by X-ray crystallography. The data is of high quality and of sufficient resolution to analyze interactions. Next to the crystallographic studies, the binding affinity to the detergent solubilized protein was quantified by a competition assay with a fluorescent ligand and by isothermal titration calorimetry. Taken together the data provides detailed insight into the structural and energetic determinants of the interaction.\n\nA few points, however, should be addressed before publication:\n\n1) To be able to judge the crystallographic data it would be helpful if the authors could provide stereo figures of the different complexes with superimposed 2Fo-Fc electron density in the supplemental materials.\n\n2) For the binding studies it is not clear whether the authors expect to measure binding to an inward-facing conformation, or whether they believe that the transporter may adopt different conformations in solution.\n\n3) Figures 5C, D and 6D, E show bars of the average of the integrated charge from 10-12 independent experiments. It is not clear how the authors have accounted for differences in the transport currents due to different expression levels. For this figure, it would also be necessary to show the corresponding traces from non-injected oocytes as control.\n\n4) Is the change in subtype specificity from hCNT3 to hCNT1 important for the delivery of this class of compounds, or was this study designed as proof of concept?\n\n5) The results of the mutational analysis of F366 could potentially also be explained with misfolding of the protein. Has the integrity of the mutated transporter been investigated?\n",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "37997d5c-b2e2-457d-9096-014bd010b1b7",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C1",
+      "claim": "Concentrative nucleoside transporters (CNTs) are responsible for cellular entry of nucleosides, which serve as precursors to nucleic acids and act as signaling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentrative nucleoside transporters (CNTs) are responsible for cellular entry of nucleosides, which serve as precursors to nucleic acids and act as signaling molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biological function of CNTs, drawing from established scientific knowledge about nucleoside transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "ae7501ca-5d2b-450b-b27e-69bab4de4fb7",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C2",
+      "claim": "CNTs play a crucial role in the uptake of nucleoside-derived drugs, including anticancer and antiviral agents.",
+      "claim_type": "EXPLICIT",
+      "source": "CNTs also play a crucial role in the uptake of nucleoside-derived drugs, including anticancer and antiviral agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and is referenced in the introduction with multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "17c39b30-95cc-4b9e-ae74-d9295d9336c0",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C3",
+      "claim": "vcCNT is a CNT from Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of a CNT from Vibrio cholerae (vcCNT) presents the first opportunity to examine specific nucleoside recognition by CNTs from a structural perspective (Johnson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the text with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "faebb72e-abdb-4f2b-b222-91f2a93d0404",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C4",
+      "claim": "vcCNT utilizes a Na+ gradient for nucleoside transport like hCNTs.",
+      "claim_type": "EXPLICIT",
+      "source": "vcCNT is an excellent model system to study hCNTs: it utilizes a Na+ gradient for nucleoside transport like hCNTs and shares high sequence identity (36\u201339%) with hCNTs with particularly high sequence identity for the nucleoside-binding site (64% with hCNT1, 73% with hCNT2, 91% with hCNT3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the functional properties of vcCNT.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "3451b658-3c1c-47de-a823-ea2b2b7b5903",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C5",
+      "claim": "vcCNT shares 36-39% sequence identity with hCNTs.",
+      "claim_type": "EXPLICIT",
+      "source": "vcCNT is an excellent model system to study hCNTs: it utilizes a Na+ gradient for nucleoside transport like hCNTs and shares high sequence identity (36\u201339%) with hCNTs with particularly high sequence identity for the nucleoside-binding site (64% with hCNT1, 73% with hCNT2, 91% with hCNT3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about sequence similarity based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "57fd6341-9f03-4206-b849-e121b7e5622e",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C6",
+      "claim": "vcCNT shares 64% sequence identity with hCNT1 at the nucleoside-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "vcCNT is an excellent model system to study hCNTs: it utilizes a Na+ gradient for nucleoside transport like hCNTs and shares high sequence identity (36\u201339%) with hCNTs with particularly high sequence identity for the nucleoside-binding site (64% with hCNT1, 73% with hCNT2, 91% with hCNT3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about sequence similarity at the binding site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "d57cce28-2cdd-4ca2-945a-28fa2701f63b",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C7",
+      "claim": "vcCNT shares 73% sequence identity with hCNT2 at the nucleoside-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "vcCNT is an excellent model system to study hCNTs: it utilizes a Na+ gradient for nucleoside transport like hCNTs and shares high sequence identity (36\u201339%) with hCNTs with particularly high sequence identity for the nucleoside-binding site (64% with hCNT1, 73% with hCNT2, 91% with hCNT3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about sequence similarity at the binding site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "8270c64f-151d-4634-86ad-516901eb4803",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C8",
+      "claim": "vcCNT shares 91% sequence identity with hCNT3 at the nucleoside-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "vcCNT is an excellent model system to study hCNTs: it utilizes a Na+ gradient for nucleoside transport like hCNTs and shares high sequence identity (36\u201339%) with hCNTs with particularly high sequence identity for the nucleoside-binding site (64% with hCNT1, 73% with hCNT2, 91% with hCNT3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about sequence similarity at the binding site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "bf97adae-7b4e-4ab4-ad5e-5dbb86be1e67",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C9",
+      "claim": "vcCNT forms a homotrimer with each protomer possessing its own nucleoside-binding site and permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "vcCNT forms a homotrimer with each protomer possessing its own nucleoside-binding site and permeation pathway (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure shown in Figure 1A and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "ea24af0c-ca8f-4122-8e6b-6c37e230dbc4",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C10",
+      "claim": "The vcCNT protomer adopts a new fold and is divided into two domains: the scaffold domain and the transport domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The protomer adopts a new fold and is divided into two domains: the scaffold domain that is responsible for trimerization and maintaining the overall architecture of the transporter (light blue, Figure 1B), and the transport domain where nucleoside binding and transport occur (other colors, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "770b9c1a-7e94-4d2a-9e8f-917d7776a005",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C11",
+      "claim": "The scaffold domain is responsible for trimerization and maintaining the overall architecture of the transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "The protomer adopts a new fold and is divided into two domains: the scaffold domain that is responsible for trimerization and maintaining the overall architecture of the transporter (light blue, Figure 1B), and the transport domain where nucleoside binding and transport occur (other colors, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural analysis and previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "bafd7dab-de63-41fa-b2c7-4b53c558f6a2",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C12",
+      "claim": "The transport domain is where nucleoside binding and transport occur.",
+      "claim_type": "EXPLICIT",
+      "source": "The protomer adopts a new fold and is divided into two domains: the scaffold domain that is responsible for trimerization and maintaining the overall architecture of the transporter (light blue, Figure 1B), and the transport domain where nucleoside binding and transport occur (other colors, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural analysis and previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "9b5e5daa-f9e0-47a7-ad8c-4ba2c5062eab",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C13",
+      "claim": "The nucleoside-binding site is formed at the center of the transport domain between the tips of two helical hairpins (HP1 and HP2) and two partially unwound transmembrane helices (TM4 and TM7).",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleoside-binding site, facing the trimer axis, is formed at the center of the transport domain between the tips of two helical hairpins (HP1 and HP2) and two partially unwound transmembrane helices (TM4 and TM7) (Johnson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "c1bd3c86-23ef-45dc-9804-a374d8fda314",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C14",
+      "claim": "The structure of vcCNT-7C8C bound to uridine was solved at 2.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We solved the structure of a uridine-bound double mutant of vcCNT (Leu 7 to Cys and Ile 8 to Cys, termed 7C8C) at 2.1 \u00c5, which is higher resolution than the 2.4-\u00c5 wild-type structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the resolution of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "9232310d-9f8a-4ef2-a91e-5ddc223290ee",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C15",
+      "claim": "The vcCNT-7C8C structure revealed an additional water molecule in the binding site that bridges the 4-carbonyl of the uracil base with Glu 156.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-resolution mutant structure revealed another water in the binding site that bridges the 4-carbonyl of the uracil base with Glu 156 but was otherwise identical to the wild-type structure (Figure 1C, Figure 1\u2014figure supplement 2; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "eb570d02-77a1-45b1-be97-f43c2bff7f12",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C16",
+      "claim": "The vcCNT-7C8C mutations do not affect transporter function significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations do not affect transporter function significantly (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "6901f48c-4470-4dae-bec1-38642b89d122",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C17",
+      "claim": "The KD of uridine for vcCNT is 36 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated the KD for uridine to be 36 \u03bcM (Figure 1D), which is similar to the reported Km values of uridine for hCNTs (Km = 22\u201380 \u03bcM), further suggesting that vcCNT is a good model system to study hCNTs (Molina-Arcas et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "548684cb-377c-40e8-a203-139b62a01c5d",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C18",
+      "claim": "The KD of uridine for vcCNT is similar to the reported Km values of uridine for hCNTs (Km = 22\u201380 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated the KD for uridine to be 36 \u03bcM (Figure 1D), which is similar to the reported Km values of uridine for hCNTs (Km = 22\u201380 \u03bcM), further suggesting that vcCNT is a good model system to study hCNTs (Molina-Arcas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to literature values with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "a446eeed-bdcb-4c1e-8529-e468abc12835",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C19",
+      "claim": "hCNT1 mainly transports pyrimidines.",
+      "claim_type": "EXPLICIT",
+      "source": "Human CNTs have differing nucleoside-base preferences: hCNT1 mainly transports pyrimidines, hCNT2 prefers purines, and hCNT3 is broadly selective for both pyrimidines and purines (Gray et al., 2004b; Molina-Arcas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "7d0ee5c5-a7e5-44f0-874e-3ee118ba9135",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C20",
+      "claim": "hCNT2 prefers purines.",
+      "claim_type": "EXPLICIT",
+      "source": "Human CNTs have differing nucleoside-base preferences: hCNT1 mainly transports pyrimidines, hCNT2 prefers purines, and hCNT3 is broadly selective for both pyrimidines and purines (Gray et al., 2004b; Molina-Arcas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "cd0ef669-d04c-4ac2-9960-67b39133f8bf",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C21",
+      "claim": "hCNT3 is broadly selective for both pyrimidines and purines.",
+      "claim_type": "EXPLICIT",
+      "source": "Human CNTs have differing nucleoside-base preferences: hCNT1 mainly transports pyrimidines, hCNT2 prefers purines, and hCNT3 is broadly selective for both pyrimidines and purines (Gray et al., 2004b; Molina-Arcas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "3755ed7c-5128-4789-9e78-f4fd6920cdbc",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C22",
+      "claim": "The uracil base interacts with residues on HP1 (Gln 154 directly and Thr 155 and Glu 156 through water molecules) and TM4 (Val 188 via van der Waals interactions).",
+      "claim_type": "EXPLICIT",
+      "source": "The uracil base interacts with residues on HP1 (Gln 154 directly and Thr 155 and Glu 156 through water molecules) and TM4 (Val 188 via van der Waals interactions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "e942b9c0-b75e-4293-b4b0-f6af3217aa8d",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C23",
+      "claim": "Zebularine exhibits a ~threefold loss of binding affinity (KD = 120 \u03bcM) relative to uridine.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebularine exhibits a \u223cthreefold loss of binding affinity (KD = 120 \u03bcM) relative to uridine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "82519591-8a86-4449-a3a2-48e314800c8f",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C24",
+      "claim": "The crystal structure of vcCNT bound to zebularine shows that the side chain of Glu 156 adopts a different rotamer position because it is unable to form the water-mediated interaction with the C4-carbonyl of the uracil base.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure shows that the side chain of Glu 156 adopts a different rotamer position probably because it is unable to form the water-mediated interaction with the C4-carbonyl of the uracil base, consistent with the loss of binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 2A with inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "446d899a-e9c4-4c12-ab78-b51af01df563",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C25",
+      "claim": "3-methyluridine has a KD of 520 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the affinity of vcCNT for 3-methyluridine, which contains a methyl group at this position that blocks the water-mediated interaction, and we found that it significantly decreased the binding affinity (KD = 520 \u03bcM, Figure 2B, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "b584913f-c0a0-4c26-a0d5-be111b9a6ec0",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C26",
+      "claim": "Adenosine has a KD of 470 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "The purine nucleoside adenosine and the antiviral guanosine analog ribavirin also possess similarly weaker binding affinity (KD = 470 and 1530 \u03bcM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "47082b1a-2c8a-45db-947d-26012a6ffcc0",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C27",
+      "claim": "Ribavirin has a KD of 1530 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "The purine nucleoside adenosine and the antiviral guanosine analog ribavirin also possess similarly weaker binding affinity (KD = 470 and 1530 \u03bcM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "2713beca-5829-4527-9d10-e35333feb341",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C28",
+      "claim": "The structures of vcCNT-7C8C bound to adenosine and ribavirin reveal that the bulky purine base displaces the water observed in the uridine structure while maintaining similar modes of ribose binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures reveal that the bulky purine base displaces the water observed in the uridine structure while maintaining similar modes of ribose binding, corroborating the idea that the reduced affinities of adenosine and ribavirin are due to the loss of the water-mediated interactions and highlighting the importance of the water coordinated by Thr 155 and Glu 156 in nucleoside recognition by CNTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structures shown in Figures 2C and 2D with inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "e087a21a-df21-4c0c-9bad-a62123c4255e",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C29",
+      "claim": "The KD of 5-fluorouridine for vcCNT is 16 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the energetic contribution of substituents at the C5 position of the pyrimidine ring, we measured the KD for the anticancer drug 5-fluorouridine to be 16 \u03bcM, which is \u223ctwofold lower than the KD for uridine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "e1d06142-38ff-4a5a-8c6e-359747e66c10",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C30",
+      "claim": "5-fluorouridine has approximately twofold lower KD than uridine for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the energetic contribution of substituents at the C5 position of the pyrimidine ring, we measured the KD for the anticancer drug 5-fluorouridine to be 16 \u03bcM, which is \u223ctwofold lower than the KD for uridine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of measured values from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "1a051b57-37ec-4e9b-993d-8644f9d51842",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C31",
+      "claim": "The crystal structure of vcCNT-7C8C bound to 5-fluorouridine shows that the modified uracil base still fits into the nucleoside-binding site without any structural rearrangements of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows that the modified uracil base still fits into the nucleoside-binding site without any structural rearrangements of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "3affb5bb-f0fc-408b-8f34-ed090af9b949",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C32",
+      "claim": "5-chlorouridine has a KD of 14 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "When another highly electronegative but slightly larger halogen, chlorine (3.16, 1.75 \u00c5), is substituted at the C5 position, a similar KD is observed (14 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "665d8e64-03b3-4ba0-8980-d124634650aa",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C33",
+      "claim": "5-iodouridine has a KD of 58 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the large, weakly electronegative substituent iodine (2.66, 1.98 \u00c5) or a methyl group (2.55, 2.00 \u00c5) is added, we observe an increase in KD (\u223c60 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "71fbb9d0-25dd-4423-8f9d-3504bda7cc93",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C34",
+      "claim": "5-methyluridine has a KD of 61 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the large, weakly electronegative substituent iodine (2.66, 1.98 \u00c5) or a methyl group (2.55, 2.00 \u00c5) is added, we observe an increase in KD (\u223c60 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "3c1c80f4-344d-49b3-a353-03d7a573f755",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C35",
+      "claim": "Smaller, highly electronegative substituents at the C5 position of uridine increase binding affinity for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, we observed an increase in affinity with smaller, highly electronegative substituents but a decrease in affinity with larger, less electronegative substituents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the measured KD values for different C5-substituted uridines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "2013d682-38ee-430d-a5ba-7dddf5906583",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C36",
+      "claim": "Larger, less electronegative substituents at the C5 position of uridine decrease binding affinity for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, we observed an increase in affinity with smaller, highly electronegative substituents but a decrease in affinity with larger, less electronegative substituents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the measured KD values for different C5-substituted uridines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "16e457c2-cee4-4595-922b-315d28e39942",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C37",
+      "claim": "Phe 366 forms an offset \u03c0\u2013\u03c0 interaction with the aromatic pyrimidine ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Phe 366 forms an offset \u03c0\u2013\u03c0 interaction with the aromatic pyrimidine ring and also forms CH\u2013\u03c0 interactions with the ribose (Figure 1C, Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figures 1C and 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "b1280273-928e-4cfa-a2da-5aafeb814fe0",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C38",
+      "claim": "Phe 366 forms CH\u2013\u03c0 interactions with the ribose.",
+      "claim_type": "EXPLICIT",
+      "source": "Phe 366 forms an offset \u03c0\u2013\u03c0 interaction with the aromatic pyrimidine ring and also forms CH\u2013\u03c0 interactions with the ribose (Figure 1C, Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figures 1C and 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "091910c2-cb69-4caf-b89c-94fcc6298604",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C39",
+      "claim": "The addition of a small, highly electronegative substituent at the C5 position could strengthen the interaction between the pyrimidine ring and Phe 366.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of a small, highly electronegative substituent at the C5 position could strengthen the interaction between the pyrimidine ring and Phe 366, as is the case with many \u03c0\u2013\u03c0 interactions (Hunter and Sanders, 1990; Ringer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural observations and literature on \u03c0\u2013\u03c0 interactions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "26bb57ea-9a73-4ae1-b570-8cf37a83a37b",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C40",
+      "claim": "Phe 366 is universally conserved between members of the CNT family.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Phe 366 is universally conserved between members of the CNT family, and its functional importance has never been tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on sequence analysis of CNT family members.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "94e69ad3-4520-4620-9c02-c58af79f9805",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C41",
+      "claim": "Mutation of Phe 366 to alanine results in significantly decreased binding affinity for uridine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the requirement for Phe at this position is strict, as mutation of this residue to alanine or tyrosine or tryptophan results in significantly decreased binding affinity for uridine while not affecting the stability significantly (Figure 3C\u2013F, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC experiments shown in Figure 3C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "43d4ddb9-2073-461d-9bf7-c82cdae87008",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C42",
+      "claim": "Mutation of Phe 366 to tyrosine results in significantly decreased binding affinity for uridine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the requirement for Phe at this position is strict, as mutation of this residue to alanine or tyrosine or tryptophan results in significantly decreased binding affinity for uridine while not affecting the stability significantly (Figure 3C\u2013F, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC experiments shown in Figure 3C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "ce96ae38-5c3a-40cf-9b88-be3e6c20c140",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C43",
+      "claim": "Mutation of Phe 366 to tryptophan results in significantly decreased binding affinity for uridine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the requirement for Phe at this position is strict, as mutation of this residue to alanine or tyrosine or tryptophan results in significantly decreased binding affinity for uridine while not affecting the stability significantly (Figure 3C\u2013F, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC experiments shown in Figure 3C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "1a8c57af-4849-4fae-8f19-835235b02aa3",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C44",
+      "claim": "Phe 366 plays a critical role in recognition of the nucleoside by CNTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we suggest that Phe 366 plays a critical role in recognition of the nucleoside by CNTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutagenesis and binding studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "4fa1d5f6-531b-4c5e-af01-bda03efdb9db",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C45",
+      "claim": "Amino acid residues that interact with the ribose in the vcCNT structure (Glu 332, Asn 368, and Ser 371) are invariant between hCNTs and vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acid residues that interact with the ribose in the vcCNT structure (Glu 332, Asn 368, and Ser 371) are invariant between hCNTs and vcCNT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on sequence alignment of hCNTs and vcCNT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "4c7aaf62-2c39-49e7-9c72-6b38325e5799",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C46",
+      "claim": "3'-deoxyuridine has a KD greater than 2800 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Both 3\u2032- and 5\u2032-deoxyuridine yielded KD values greater than 2800 \u03bcM (Figure 4A), while the binding affinity for 2\u2032-deoxyuridine is not as drastically affected (KD = 170 \u03bcM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "3825869f-648e-4b65-a5dd-69db1ba26705",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C47",
+      "claim": "5'-deoxyuridine has a KD greater than 2800 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Both 3\u2032- and 5\u2032-deoxyuridine yielded KD values greater than 2800 \u03bcM (Figure 4A), while the binding affinity for 2\u2032-deoxyuridine is not as drastically affected (KD = 170 \u03bcM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "48e91641-d74a-419c-9b8a-b0444d6e1b14",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C48",
+      "claim": "2'-deoxyuridine has a KD of 170 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Both 3\u2032- and 5\u2032-deoxyuridine yielded KD values greater than 2800 \u03bcM (Figure 4A), while the binding affinity for 2\u2032-deoxyuridine is not as drastically affected (KD = 170 \u03bcM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "8ebd019f-85df-44fb-8f39-fff90f013377",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C49",
+      "claim": "The KD of gemcitabine for vcCNT is 1370 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured KD of gemcitabine for vcCNT (KD = 1370 \u03bcM) is \u223c22-fold higher than that for cytidine (KD = 61 \u03bcM) (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "240a8c3f-adb0-4310-ab0c-a099eef4915b",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C50",
+      "claim": "The KD of cytidine for vcCNT is 61 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured KD of gemcitabine for vcCNT (KD = 1370 \u03bcM) is \u223c22-fold higher than that for cytidine (KD = 61 \u03bcM) (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "2ec31222-50b9-44c8-be12-9658ddc94593",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C51",
+      "claim": "The KD of gemcitabine for vcCNT is approximately 22-fold higher than that for cytidine.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured KD of gemcitabine for vcCNT (KD = 1370 \u03bcM) is \u223c22-fold higher than that for cytidine (KD = 61 \u03bcM) (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of measured values from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "a00b1235-76b4-4237-bf53-038731a40aaa",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C52",
+      "claim": "In the gemcitabine-bound structure, both Phe 366 and TM7b (including Ser 371) move slightly away from the nucleoside with respect to the uridine-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In order for vcCNT to accommodate for the bulkier fluorine atom on the other epimeric position of C2\u2032, which creates steric interference and electrostatic repulsion with the \u03c0 electrons of Phe 366, both Phe 366 and TM7b (including Ser 371) move slightly away from the nucleoside with respect to the uridine-bound structure (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from comparing the gemcitabine-bound and uridine-bound crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "94f563ac-2e18-4aba-b289-e794d0cea6ea",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C53",
+      "claim": "The ribose of gemcitabine is reoriented with respect to the other nucleoside-bound structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the ribose of the gemcitabine is reoriented with respect to the other nucleoside-bound structures (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from comparing the gemcitabine-bound structure to other nucleoside-bound structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "f6247595-f7ec-4cf9-909e-ae0244556ecc",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C54",
+      "claim": "Fluorine is a poor substitute for a hydroxyl as a hydrogen-bond acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the steric and electrostatic disruption of the ribose-binding site, fluorine is a poor substitute for a hydroxyl as a hydrogen-bond acceptor and thus provides a less favorable interaction of the ribose with Ser 371 (Howard et al., 1996; Dunitz and Taylor, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "c8acfa24-5381-4dd7-b262-eef133eea633",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C55",
+      "claim": "Cytarabine has a KD greater than 3000 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytarabine displayed no measurable binding when titrated into vcCNT (KD > 3000 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "778caa9d-bedf-4c30-8015-f90c7fd7c08f",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C56",
+      "claim": "hCNTs show no significant binding and transport of cytarabine.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, consistent with our observation with vcCNT, hCNTs show no significant binding and transport of cytarabine (Clarke et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "8d44dd61-ac0e-4e47-a63c-a66b3d3e71f7",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C57",
+      "claim": "Pyrrolo-cytidine has a KD of 0.9 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all of the nucleosides and nucleoside analogs studied, the fluorescence probe pyrrolo-cytidine had the strongest binding affinity for vcCNT (KD = 0.9 \u03bcM, Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "6f0c0695-5d7b-45c7-87fc-5648a51f6010",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C58",
+      "claim": "The crystal structure of vcCNT-7C8C bound to pyrrolo-cytidine shows that the methylpyrrole ring fits neatly into a pocket formed by TM4 and TM6.",
+      "claim_type": "EXPLICIT",
+      "source": "We solved the crystal structure of vcCNT-7C8C bound to pyrrolo-cytidine and found that the methylpyrrole ring fits neatly into a pocket formed by TM4 and TM6 (Figure 5B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "1056548b-9f43-4192-ba70-74306326ef9b",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C59",
+      "claim": "The nucleo-pocket is formed mainly by G187 (TM4), V188 (TM4), and L259 (TM6).",
+      "claim_type": "EXPLICIT",
+      "source": "The vcCNT-7C8C nucleo-pocket, formed mainly by G187 (TM4), V188 (TM4), and L259 (TM6), is delineated with a dotted line.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "d14d873b-28a0-4e72-b4d3-cc8399ad8ee2",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C60",
+      "claim": "Pyrrolo-gemcitabine has a KD of 24 \u03bcM for vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured its binding affinity for vcCNT using the fluorescence-anisotropy assay and found that the KD decreased by \u223c60-fold to 24 \u03bcM, suggesting that nucleobase interactions and ribose interactions are additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "90bdb039-5847-4743-93b9-f74f54c8d685",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C61",
+      "claim": "The KD of pyrrolo-gemcitabine for vcCNT is approximately 60-fold lower than that of gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured its binding affinity for vcCNT using the fluorescence-anisotropy assay and found that the KD decreased by \u223c60-fold to 24 \u03bcM, suggesting that nucleobase interactions and ribose interactions are additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of measured values from fluorescence anisotropy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "b08aa530-79cb-4dab-8b14-ccede6382a3a",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C62",
+      "claim": "Nucleobase interactions and ribose interactions are additive in vcCNT binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured its binding affinity for vcCNT using the fluorescence-anisotropy assay and found that the KD decreased by \u223c60-fold to 24 \u03bcM, suggesting that nucleobase interactions and ribose interactions are additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the measured KD values for gemcitabine and pyrrolo-gemcitabine.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "c32d9458-9102-4073-a20e-b38b83173eb0",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C63",
+      "claim": "hCNT1, hCNT3, and hENT1 are the main NTs that transport gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that hCNT1, hCNT3, and hENT1 are the main NTs that transport gemcitabine (Marechal et al., 2009; Bhutia et al., 2011; Damaraju et al., 2012; Paproski et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "a78ef17c-8510-419f-83e5-639464a7db02",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C64",
+      "claim": "Addition of 200 \u03bcM gemcitabine to hCNT3-expressing oocytes induced Na+ currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of 200 \u03bcM gemcitabine to hCNT3-expressing oocytes induced Na+ currents (Figure 5C, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology experiments shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "5cea3b6c-26d7-4c84-a9be-4638bd9e0e47",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C65",
+      "claim": "200 \u03bcM pyrrolo-gemcitabine had almost no effect on Na+ currents in hCNT3-expressing oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same amount of pyrrolo-gemcitabine had almost no effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology experiments shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "2e1c8a81-ad9d-463b-b4f9-ff3e7057a001",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C66",
+      "claim": "hCNT3 binds to but does not transport pyrrolo-gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve this issue, a mixture of equal concentrations of both compounds was added and a reduction of Na+ current was observed, suggesting that hCNT3 binds to but does not transport pyrrolo-gemcitabine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the electrophysiology experiments showing competitive inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "660a3b77-2f13-41d6-801a-8080a5f60a89",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C67",
+      "claim": "200 \u03bcM pyrrolo-gemcitabine elicited approximately sevenfold higher total charge uptake than gemcitabine for hCNT1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 200 \u03bcM pyrrolo-gemcitabine elicited \u223csevenfold higher total charge uptake than gemcitabine for hCNT1 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology experiments shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "5c8abbf2-baca-4d59-baf1-0cc5a6b70291",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C68",
+      "claim": "hCNT2 transported neither gemcitabine nor pyrrolo-gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "hCNT2 transported neither compound (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "cb7ee93e-f237-4290-a3a7-db64ea614d0f",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C69",
+      "claim": "The nucleo-pocket of vcCNT differs by only one amino acid (Gly 187 to Ser 374) from hCNT3.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleo-pocket of vcCNT differs by only one amino acid (Gly 187 to Ser 374) from hCNT3 and three amino acids (Gly 187 to Ser 352, Val 188 to Leu 353, and Leu 259 to Val 424) from hCNT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on sequence alignment of vcCNT, hCNT1, and hCNT3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "d07e4eff-558c-4546-a5d1-f9ad2ed4b64e",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C70",
+      "claim": "The nucleo-pocket of vcCNT differs by three amino acids (Gly 187 to Ser 352, Val 188 to Leu 353, and Leu 259 to Val 424) from hCNT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleo-pocket of vcCNT differs by only one amino acid (Gly 187 to Ser 374) from hCNT3 and three amino acids (Gly 187 to Ser 352, Val 188 to Leu 353, and Leu 259 to Val 424) from hCNT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on sequence alignment of vcCNT, hCNT1, and hCNT3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "31281759-8875-4755-8a65-c9724bbaf425",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C71",
+      "claim": "Mutation of Val 375 and Leu 446 of hCNT3 to mimic the nucleo-pocket of hCNT1 leads to an increase in transport of pyrrolo-gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our prediction, mutation of Val 375 and Leu 446 of hCNT3 to mimic the nucleo-pocket of hCNT1 leads to an increase in transport of pyrrolo-gemcitabine (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology experiments shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "c4553a29-1afd-4aa9-882a-286d7c075639",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C72",
+      "claim": "Mutation of Leu 353 and Val 424 of hCNT1 to mimic the nucleo-pocket of hCNT3 leads to a decrease in transport of pyrrolo-gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutation of Leu 353 and Val 424 of hCNT1 to mimic the nucleo-pocket of hCNT3 leads to a decrease in transport of pyrrolo-gemcitabine (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology experiments shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "598f4ca9-3aab-439b-8b3e-70783d250a1b",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C73",
+      "claim": "The nucleoside-binding site of vcCNT has twofold pseudo-symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Two helical hairpins (HP1 and HP2) and two unwound helices (TM4 and TM7), related by twofold pseudo-symmetry, create a bowl-shaped nucleoside-binding site at the center of the transport domain of vcCNT (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "0011c60f-d6c5-499d-8488-7cedac93a476",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C74",
+      "claim": "The interactions with the nucleobase are mainly formed with HP1 and TM4b.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions with the nucleobase are mainly formed with HP1 and TM4b, and the interactions with the ribose are mainly formed with HP2 and TM7b (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "426a3810-3193-4252-b08d-13b665bf3277",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C75",
+      "claim": "The interactions with the ribose are mainly formed with HP2 and TM7b.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions with the nucleobase are mainly formed with HP1 and TM4b, and the interactions with the ribose are mainly formed with HP2 and TM7b (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "e207b3ce-e4dc-4c93-93dd-27fc01766cdf",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C76",
+      "claim": "The ribose interactions are energetically important for CNT binding.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to binding energetics, our equilibrium-binding studies have shown that the ribose interactions are energetically important consistent with previous non-equilibrium studies with hCNTs (Clarke et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the equilibrium-binding studies with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "12ca1b1f-bfc4-40dd-a5a4-cd037a110ba9",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C77",
+      "claim": "The interaction between the C3\u2032 ribose hydroxyl group and Ser 371 on TM7b is important in vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we showed that the interaction between the C3\u2032 ribose hydroxyl group and Ser 371 on TM7b is important in vcCNT (Figures 1C and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the structural and binding studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "ca85d415-f77a-47ac-aca4-408bda788246",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C78",
+      "claim": "The hCNT1S546P variant is non-functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observation, the hCNT1S546P variant is non-functional (Ser 546 in hCNT1 is equivalent to Ser 371 in vcCNT) (Cano-Soldado et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "e5dcde17-767e-420b-8f00-c95e8eeaf309",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C79",
+      "claim": "Ser 546 in hCNT1 is equivalent to Ser 371 in vcCNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observation, the hCNT1S546P variant is non-functional (Ser 546 in hCNT1 is equivalent to Ser 371 in vcCNT) (Cano-Soldado et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on sequence alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "1e6dfa0c-3165-4876-823b-abb9df3fd02b",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C80",
+      "claim": "The loss of binding energy from modification of part of the nucleoside can be compensated for by the gain of energy from modification of another part of the nucleoside.",
+      "claim_type": "EXPLICIT",
+      "source": "Another important finding of our studies is that interactions with the nucleobase and ribose can be additive, and thus the loss of binding energy from modification of part of the nucleoside can be compensated for by the gain of energy from modification of another part of the nucleoside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the binding studies with gemcitabine and pyrrolo-gemcitabine.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "6bab29e3-71e3-49f2-96f0-c03dbb7bce60",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C81",
+      "claim": "Phe 366 is the only residue within the nucleoside-binding site that forms interactions with both portions of the nucleoside.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Phe 366 is the only residue within the nucleoside-binding site that forms interactions with both portions of the nucleoside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "853cfb05-3fdc-4008-a994-3c8b74290f64",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C82",
+      "claim": "The role of Phe 366 is to position the nucleoside for effective binding thus serving as a 'selectivity ring'.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we propose that the role of Phe 366 is to position the nucleoside for effective binding thus serving as a 'selectivity ring'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural and binding studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "65619c14-149b-4f84-ab39-a634a452762e",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C83",
+      "claim": "The transport domain undergoes a rigid-body motion while the scaffold domain, including TM6, remains static during the transition from the outward-occluded to the inward-occluded conformational state.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously proposed that the transport domain undergoes a rigid-body motion while the scaffold domain, including TM6, remains static during the transition from the outward-occluded to the inward-occluded conformational state (Figure 6C; Johnson et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis from previous work with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "cd517eec-3798-4db3-b27e-6a5c09f399c6",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C84",
+      "claim": "In the inward-occluded conformation, TM6 (including Leu 259) is located on top of the bowl, serving as part of the intracellular gate and partially occluding the nucleoside from dissociating into the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the inward-occluded conformation, TM6 (including Leu 259) is located on top of the bowl, serving as part of the intracellular gate and partially occluding the nucleoside from dissociating into the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure with inference about function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "18557b6a-f612-4005-a0d7-2df2c6e36f61",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C85",
+      "claim": "Most of the interactions between transporter and nucleoside that are present in the inward-occluded structure are maintained in the outward-facing conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This rigid-body conformational change also suggests that most of the interactions between transporter and nucleoside that are present in the inward-occluded structure are maintained in the outward-facing conformation, as observed with other sodium-coupled transporters (Reyes et al., 2009; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural analysis and comparison to other transporters with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "711239b5-f9bf-4557-b650-7a7dd0016b53",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C86",
+      "claim": "Amino acid residues that were shown to be important from inward-conformation-based binding studies in detergent have also been shown to be important for the binding and transport of nucleosides by human CNTs in several cell-based mutational studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, amino acid residues that were shown to be important from our inward-conformation-based binding studies in detergent have also been shown to be important for the binding and transport of nucleosides by human CNTs in several cell-based mutational studies (Loewen et al., 1999; Zhang et al., 2003, 2005; Yao et al., 2007; Slugoski et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "58a36fed-5378-4e9a-80a3-cb3dbcd6c8cd",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C87",
+      "claim": "vcCNT is an excellent model system to study human CNTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our CNT is prokaryotic in origin, it is an excellent model system to study human CNTs and offers us the opportunity to conduct structural studies of nucleoside and nucleoside-drug selectivity by hCNTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the sequence and functional similarities between vcCNT and hCNTs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "1000c679-1fa9-4e0d-bc36-e0e637ca2ecd",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C88",
+      "claim": "Pyrrolo-gemcitabine is transported more efficiently by hCNT1 than gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our electrophysiological studies show that it is not only transported more efficiently by hCNT1, but it is also selectively transported by hCNT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology experiments shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "098f1f76-a149-430d-81c0-8407f6927f59",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C89",
+      "claim": "Pyrrolo-gemcitabine is selectively transported by hCNT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our electrophysiological studies show that it is not only transported more efficiently by hCNT1, but it is also selectively transported by hCNT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology experiments showing transport by hCNT1 but not hCNT3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "df9c87dc-dc42-43c4-b43e-527eb97cde25",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C90",
+      "claim": "Destabilization of the inward-facing-occluded step would facilitate the release of pyrrolo-gemcitabine.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not know whether the modification of gemcitabine affects the outward conformation due to the lack of a structure of the outward-facing conformation, our studies suggest that destabilization of the inward-facing-occluded step would facilitate the release of the pyrrolo-gemcitabine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural models and mutational studies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "3a13a4a0-54c8-43f4-a4d5-bdb2c8ad0093",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C91",
+      "claim": "Stabilization of the outward-facing-occluded step would facilitate the capture of the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, stabilization of the outward-facing-occluded step would facilitate the capture of the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural models and mutational studies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "5cd9a562-2555-4247-9dbc-0be413283810",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C92",
+      "claim": "Expression levels of hCNT1 are closely related to the responsiveness of many different types of normal or cancer cells to chemotherapy treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our study with pyrrolo-gemcitabine serves merely as proof of concept, it is conceivable that the nucleo-pocket structure can be utilized in the design of nucleoside-derived drugs or prodrugs that can be specifically targeted only to cell types that express hCNT1 since expression levels of hCNT1 are closely related to the responsiveness of many different types of normal or cancer cells to chemotherapy treatment (Lane et al., 2010; Naito et al., 2010; Rabascio et al., 2010; Bhutia et al., 2011; Choi, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "4fee314b-782c-4ec0-bd05-16d1aae4f430",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C93",
+      "claim": "CNTs utilize the energy of ion gradients to actively transport nucleosides into the cell against their concentration gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "CNTs utilize the energy of ion gradients to actively transport nucleosides into the cell against their concentration gradients while ENTs transport nucleosides down their chemical gradients without the requirement of any additional energy source (Gray et al., 2004b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CNT function with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "9c70672e-3c9c-4f5e-a406-40961217c9e3",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C94",
+      "claim": "ENTs transport nucleosides down their chemical gradients without the requirement of any additional energy source.",
+      "claim_type": "EXPLICIT",
+      "source": "CNTs utilize the energy of ion gradients to actively transport nucleosides into the cell against their concentration gradients while ENTs transport nucleosides down their chemical gradients without the requirement of any additional energy source (Gray et al., 2004b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ENT function with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "a33641c7-1263-4863-87f1-4e452dc3e67f",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C95",
+      "claim": "NTs are responsible for the transport of a wide range of nucleoside-derived anticancer and antiviral drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to nucleosides, NTs are responsible for the transport of a wide range of nucleoside-derived anticancer (e.g., gemcitabine and 5-fluorouridine) and antiviral (e.g., ribavirin) drugs (Farre et al., 2004; Marechal et al., 2009; Rabascio et al., 2010; Bhutia et al., 2011; Doehring et al., 2011; Fukao et al., 2011; Rau et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "74990d95-5169-49a1-8f6a-815ef0e58ee2",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C96",
+      "claim": "CNTs are more highly subtype-specific for their substrates and distributions than ENTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NT families possess subtype-dependent nucleoside specificities and tissue distributions, while CNTs are more highly subtype-specific for their substrates and distributions than ENTs (Gray et al., 2004b; Paproski et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "840e7ed0-5159-4a30-a1ab-949596cf5d0c",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C97",
+      "claim": "Expression levels of different NTs can predict how patients with certain types of cancer and viral infection will respond to nucleoside-drug treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, different NT subtypes are responsible for the transport of different types of nucleosides and nucleoside drugs, and expression levels of different NTs can predict how patients with certain types of cancer and viral infection will respond to nucleoside-drug treatment (Mackey et al., 1998; Farre et al., 2004; Spratlin et al., 2004; Gray et al., 2004a; Damaraju et al., 2009; Marechal et al., 2009; Rabascio et al., 2010; Bhutia et al., 2011; Doehring et al., 2011; Fukao et al., 2011; Rau et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "7b56ed60-7b8a-46d3-b15b-10bcd999a5a9",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C98",
+      "claim": "There are three different isoforms of human CNTs (hCNT1-3).",
+      "claim_type": "EXPLICIT",
+      "source": "Since there are three different isoforms of human CNTs (hCNT1-3) that possess differing nucleoside and nucleoside-drug specificities and tissue distributions, greater knowledge of the molecular origins of nucleoside selectivity by CNTs could potentially lead to better-tailored nucleoside drug delivery as well as a better understanding of CNT-mediated physiological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about human CNTs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "c82e856e-499d-466e-9a26-efc5e94cf139",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C99",
+      "claim": "hCNT1-3 possess differing nucleoside and nucleoside-drug specificities and tissue distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there are three different isoforms of human CNTs (hCNT1-3) that possess differing nucleoside and nucleoside-drug specificities and tissue distributions, greater knowledge of the molecular origins of nucleoside selectivity by CNTs could potentially lead to better-tailored nucleoside drug delivery as well as a better understanding of CNT-mediated physiological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about human CNTs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "cd632268-0d86-4f41-9c96-13a5bd9066fc",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C100",
+      "claim": "CNTs belong to the solute carrier (SLC) superfamily, constituting the family SLC28.",
+      "claim_type": "EXPLICIT",
+      "source": "CNTs belong to the solute carrier (SLC) superfamily, constituting the family SLC28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CNT classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "46c69982-0d74-4c83-876f-1b2e21bcb177",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C101",
+      "claim": "The SLC superfamily is composed of 52 families.",
+      "claim_type": "EXPLICIT",
+      "source": "The SLC superfamily, composed of 52 families, is responsible for the transport of ions, metabolites, neurotransmitters, and drugs in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the SLC superfamily.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "94246459-c56f-44df-a687-ddf36429d129",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C102",
+      "claim": "The SLC superfamily is responsible for the transport of ions, metabolites, neurotransmitters, and drugs in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The SLC superfamily, composed of 52 families, is responsible for the transport of ions, metabolites, neurotransmitters, and drugs in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the SLC superfamily.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "8b8b54be-211f-47ae-9a0e-8836d7bcf199",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C103",
+      "claim": "Several SLC families are of particular clinical interest because of their roles in drug absorption, distribution, metabolism, and excretion (ADME).",
+      "claim_type": "EXPLICIT",
+      "source": "Several SLC families are of particular clinical interest because of their roles in drug absorption, distribution, metabolism, and excretion (ADME) (Schlessinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "ff095f69-febc-4f62-919e-ad34ca19a20b",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "claim_id": "C104",
+      "claim": "vcCNT has been identified as an optimal candidate for structure-based ligand discovery using computational methods.",
+      "claim_type": "EXPLICIT",
+      "source": "For these reasons, vcCNT has been identified as an optimal candidate for structure-based ligand discovery using computational methods (Schlessinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the literature with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "08c32ff2-0a6d-4815-ba01-6dd1125e020a",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "vcCNT from Vibrio cholerae is an excellent model system for studying human CNTs (hCNTs). vcCNT utilizes a Na+ gradient for nucleoside transport like hCNTs and shares 36-39% overall sequence identity with hCNTs, with particularly high sequence identity at the nucleoside-binding site (64% with hCNT1, 73% with hCNT2, 91% with hCNT3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C8 provide quantitative sequence identity data supporting the similarity between vcCNT and hCNTs. Claim C4 establishes functional similarity (Na+ gradient utilization). Claim C87 synthesizes these observations into the conclusion that vcCNT is an excellent model. The high binding site sequence identity (64-91%) particularly supports the model system claim. These are established facts supported by sequence analysis data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The vcCNT structure reveals a homotrimeric architecture with each protomer containing its own nucleoside-binding site. Each protomer adopts a novel fold divided into a scaffold domain (responsible for trimerization) and a transport domain (where nucleoside binding occurs). The nucleoside-binding site exhibits twofold pseudo-symmetry, with HP1 and TM4b primarily interacting with the nucleobase and HP2 and TM7b primarily interacting with the ribose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 and C73-C75 describe structural features directly observed in crystal structures shown in Figure 1. The trimeric architecture, domain organization, and binding site architecture are all supported by crystallographic data. The pseudo-symmetry and division of nucleobase vs. ribose interactions are structural observations that can be verified from the coordinates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "8a648e8f-bcd3-4e36-835f-8d62274ea013",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A higher resolution (2.1 \u00c5) crystal structure of vcCNT-7C8C bound to uridine reveals an additional water molecule bridging the 4-carbonyl of uracil with Glu 156. The 7C8C mutations do not significantly affect transporter function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 states the resolution achieved. Claim C15 describes a structural observation visible in the electron density (Figure 1C, Figure 1\u2014figure supplement 2). Claim C16 is supported by functional assay data in Figure 1\u2014figure supplement 1 showing similar uptake for wild-type and 7C8C. The structural and functional data converge to support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "69071ec2-5a44-4f6c-9f48-daa9f9b6af85",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The KD of uridine for vcCNT is 36 \u03bcM, which is similar to the reported Km values of uridine for hCNTs (22-80 \u03bcM), further validating vcCNT as a model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 reports a measured KD value from fluorescence anisotropy experiments (Figure 1D, Table 2). Claim C18 compares this to literature values with appropriate citation. The similarity in binding affinity between vcCNT and hCNTs supports the model system validity. The experimental method is appropriate and the comparison is well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "5af6490a-82d5-4830-aa8e-8d4ec700bb27",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Human CNTs exhibit distinct nucleoside-base preferences: hCNT1 mainly transports pyrimidines, hCNT2 prefers purines, and hCNT3 is broadly selective for both pyrimidines and purines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 describe established knowledge from the literature with appropriate citations (Gray et al., 2004b; Molina-Arcas et al., 2009). This is background information that sets the context for the study and is well-supported by prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "d2e4814f-2672-4e9b-ab54-601659510593",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Water-mediated interactions between the uracil base and residues Thr 155 and Glu 156 are energetically important for nucleoside binding. Zebularine (lacking C4-carbonyl) shows ~3-fold loss of affinity (KD = 120 \u03bcM), 3-methyluridine (blocking water-mediated interaction at N3) shows KD = 520 \u03bcM, and purine nucleosides adenosine (KD = 470 \u03bcM) and ribavirin (KD = 1530 \u03bcM) also show reduced affinity due to displacement of this critical water molecule.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 combine structural observations (Figure 1C, Figure 2A-D) with binding affinity measurements (Table 2) to establish the importance of water-mediated interactions. The crystal structures show the water positions and interactions, while the KD measurements quantify the energetic consequences of disrupting these interactions. The structural and thermodynamic data are mutually consistent and support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "6777bedf-6fc9-4480-840a-a2706ea27b7f",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Substituents at the C5 position of the pyrimidine ring affect binding affinity in a size- and electronegativity-dependent manner. Small, highly electronegative substituents (fluorine: KD = 16 \u03bcM; chlorine: KD = 14 \u03bcM) increase affinity ~2-fold relative to uridine, while larger, less electronegative substituents (iodine: KD = 58 \u03bcM; methyl: KD = 61 \u03bcM) decrease affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 present a systematic structure-activity relationship supported by KD measurements for multiple C5-substituted uridines (Table 2, Table 3). The crystal structure of 5-fluorouridine (Figure 2E) shows the modified base fits without protein rearrangement. The trend correlating electronegativity/size with affinity is clearly demonstrated by the data and provides mechanistic insight into \u03c0-\u03c0 interactions with Phe 366.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Phe 366 plays a critical role in nucleoside recognition by forming offset \u03c0-\u03c0 interactions with the nucleobase and CH-\u03c0 interactions with the ribose. This universally conserved residue is the only binding site residue that interacts with both portions of the nucleoside. Mutation to alanine, tyrosine, or tryptophan significantly decreases uridine binding affinity, supporting its proposed role as a 'selectivity ring' that positions the nucleoside for effective binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 describe structural observations from crystal structures (Figures 1C, 3A-B). Claim C40 reports sequence conservation. Claims C41-C43 present ITC data (Figure 3C-F) showing that all tested mutations significantly reduce binding affinity while maintaining protein stability (Figure 3\u2014figure supplement 1). Claims C44, C81-C82 synthesize these observations into a mechanistic model. The convergence of structural, mutagenesis, and thermodynamic data strongly supports the critical role of Phe 366.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "74e10e6f-791c-4355-b8cf-f1272c401927",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ribose interactions are energetically important for CNT binding. Amino acid residues interacting with the ribose (Glu 332, Asn 368, Ser 371) are invariant between hCNTs and vcCNT. Removal of 3'- or 5'-hydroxyl groups drastically reduces affinity (KD > 2800 \u03bcM), while 2'-deoxyuridine shows moderate reduction (KD = 170 \u03bcM). The importance of the C3' hydroxyl interaction with Ser 371 is validated by the non-functional hCNT1-S546P variant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 present sequence conservation and binding data (Figure 4A, Table 2). Claims C76-C77 synthesize the energetic importance from equilibrium binding studies. Claims C78-C79 provide independent validation from literature showing a clinical variant affecting the equivalent residue is non-functional. The convergence of structural, thermodynamic, and clinical data strongly supports the importance of ribose interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Gemcitabine, with two fluorine atoms at C2', shows ~22-fold reduced affinity (KD = 1370 \u03bcM) compared to cytidine (KD = 61 \u03bcM). The crystal structure reveals that to accommodate the bulky fluorine, both Phe 366 and TM7b move away from the nucleoside and the ribose reorients. Fluorine's poor hydrogen-bond accepting ability further reduces affinity. Cytarabine (2'-hydroxyl flipped) shows no measurable binding (KD > 3000 \u03bcM), consistent with hCNT behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 present binding affinity measurements (Table 2, Figure 4B). Claims C52-C53 describe structural observations from the gemcitabine-bound structure (Figure 4C-E). Claim C54 cites established chemical knowledge about fluorine. Claims C55-C56 extend the findings to cytarabine with literature support. The structural and thermodynamic data are mutually consistent and explain the poor recognition of C2'-modified nucleosides.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "1d59bd1b-1855-4e49-a90a-704d1ec505d8",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pyrrolo-cytidine exhibits the strongest binding affinity among all tested nucleosides (KD = 0.9 \u03bcM). The crystal structure reveals that the methylpyrrole ring fits into a previously unrecognized 'nucleo-pocket' formed by residues G187 (TM4), V188 (TM4), and L259 (TM6).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 reports the measured KD (Table 2, Figure 5A). Claims C58-C59 describe structural observations from the pyrrolo-cytidine-bound crystal structure (Figure 5B, Figure 5\u2014figure supplement 1). The discovery of the nucleo-pocket is a novel structural finding supported by clear electron density. This represents an important advance in understanding CNT substrate recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "375503ed-66b6-4040-ae78-7ddbbd2167b0",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Pyrrolo-gemcitabine, combining the pyrrolo nucleobase with gemcitabine's ribose, shows KD = 24 \u03bcM, representing ~60-fold improvement over gemcitabine (KD = 1370 \u03bcM). This demonstrates that nucleobase and ribose interactions are additive, and loss of binding energy from ribose modification can be compensated by enhanced nucleobase interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 present binding affinity measurements (Table 2, Figure 5A). Claims C62 and C80 draw the conclusion about additivity. The ~60-fold improvement in affinity by adding the pyrrolo group to gemcitabine provides strong quantitative evidence for additivity of interactions. This is a key finding that enables rational drug design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "c77e3675-864c-4edd-b01a-cd8c94132346",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Pyrrolo-gemcitabine exhibits subtype-specific transport by human CNTs. While hCNT3 binds but does not transport pyrrolo-gemcitabine (competitive inhibition observed), hCNT1 transports pyrrolo-gemcitabine ~7-fold more efficiently than gemcitabine. hCNT2 transports neither compound. This demonstrates selective transport by hCNT1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 and C88-C89 present electrophysiology data from Xenopus oocyte experiments (Figure 5C-D, Figure 5\u2014figure supplement 2). The competitive inhibition experiment (C66) elegantly demonstrates that hCNT3 binds but doesn't transport pyrrolo-gemcitabine. The ~7-fold enhancement for hCNT1 (C67) is clearly shown. This represents successful structure-based ligand modification achieving subtype selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "34c03740-e50d-4e6d-964b-a1f47f2051ba",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The nucleo-pocket differs by one amino acid between vcCNT and hCNT3 (G187\u2192S374) and three amino acids between vcCNT and hCNT1 (G187\u2192S352, V188\u2192L353, L259\u2192V424). Mutating hCNT3 to mimic hCNT1's nucleo-pocket (V375L/L446V) increases pyrrolo-gemcitabine transport, while mutating hCNT1 to mimic hCNT3 (L353V/V424L) decreases transport, confirming the nucleo-pocket's role in subtype selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 present sequence alignment data. Claims C71-C72 present electrophysiology data from nucleo-pocket swap mutants (Figure 6D-E). The reciprocal effects of the mutations (increased transport in hCNT3 mutant, decreased in hCNT1 mutant) provide strong evidence that the nucleo-pocket residues determine subtype selectivity. This validates the structural models and mechanistic hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "1133923e-363e-49e6-bc81-021acbf4bd3b",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A rigid-body motion of the transport domain (while the scaffold domain including TM6 remains static) is proposed for the conformational transition. In the inward-occluded state, TM6 (including L259) serves as part of the intracellular gate. The nucleo-pocket interaction may destabilize the inward-occluded state (facilitating release) or stabilize the outward-occluded state (facilitating capture), affecting transport efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C85 describe a mechanistic model based on previous work (Johnson et al., 2012) and comparison to other transporters. Claims C90-C91 are explicitly speculative hypotheses about how nucleo-pocket interactions affect transport. While the model is reasonable and consistent with available data, the authors acknowledge lacking an outward-facing structure. The mechanistic details of how nucleo-pocket binding affects conformational transitions remain hypothetical and require further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "e31db554-6496-4504-a0c9-2961ffbfa4c7",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Amino acid residues identified as important from inward-conformation-based binding studies in detergent have also been shown to be important for binding and transport by human CNTs in cell-based mutational studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 compares the current findings to multiple literature studies (Loewen et al., 1999; Zhang et al., 2003, 2005; Yao et al., 2007; Slugoski et al., 2009). This cross-validation with independent cell-based studies supports the relevance of the detergent-based structural and binding studies to physiological function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    },
+    {
+      "id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd",
+      "content_id": "1ebe0633-4824-47a9-89b3-95014551dc1e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background information establishing the biological and clinical importance of nucleoside transporters, including their roles in nucleoside uptake, drug transport, and clinical relevance. CNTs and ENTs differ in their transport mechanisms and substrate specificities, with CNTs being more subtype-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C93-C104 present established background knowledge with appropriate citations. These claims provide context for the study and are well-supported by the literature. They establish the rationale for studying CNT structure and function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:08:10.523654Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "17c39b30-95cc-4b9e-ae74-d9295d9336c0",
+      "result_id": "08c32ff2-0a6d-4815-ba01-6dd1125e020a"
+    },
+    {
+      "claim_id": "faebb72e-abdb-4f2b-b222-91f2a93d0404",
+      "result_id": "08c32ff2-0a6d-4815-ba01-6dd1125e020a"
+    },
+    {
+      "claim_id": "3451b658-3c1c-47de-a823-ea2b2b7b5903",
+      "result_id": "08c32ff2-0a6d-4815-ba01-6dd1125e020a"
+    },
+    {
+      "claim_id": "57fd6341-9f03-4206-b849-e121b7e5622e",
+      "result_id": "08c32ff2-0a6d-4815-ba01-6dd1125e020a"
+    },
+    {
+      "claim_id": "d57cce28-2cdd-4ca2-945a-28fa2701f63b",
+      "result_id": "08c32ff2-0a6d-4815-ba01-6dd1125e020a"
+    },
+    {
+      "claim_id": "8270c64f-151d-4634-86ad-516901eb4803",
+      "result_id": "08c32ff2-0a6d-4815-ba01-6dd1125e020a"
+    },
+    {
+      "claim_id": "58a36fed-5378-4e9a-80a3-cb3dbcd6c8cd",
+      "result_id": "08c32ff2-0a6d-4815-ba01-6dd1125e020a"
+    },
+    {
+      "claim_id": "bf97adae-7b4e-4ab4-ad5e-5dbb86be1e67",
+      "result_id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff"
+    },
+    {
+      "claim_id": "ea24af0c-ca8f-4122-8e6b-6c37e230dbc4",
+      "result_id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff"
+    },
+    {
+      "claim_id": "770b9c1a-7e94-4d2a-9e8f-917d7776a005",
+      "result_id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff"
+    },
+    {
+      "claim_id": "bafd7dab-de63-41fa-b2c7-4b53c558f6a2",
+      "result_id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff"
+    },
+    {
+      "claim_id": "9b5e5daa-f9e0-47a7-ad8c-4ba2c5062eab",
+      "result_id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff"
+    },
+    {
+      "claim_id": "598f4ca9-3aab-439b-8b3e-70783d250a1b",
+      "result_id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff"
+    },
+    {
+      "claim_id": "0011c60f-d6c5-499d-8488-7cedac93a476",
+      "result_id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff"
+    },
+    {
+      "claim_id": "426a3810-3193-4252-b08d-13b665bf3277",
+      "result_id": "cb1deda7-9a00-4304-87ac-f005a4fd28ff"
+    },
+    {
+      "claim_id": "c1bd3c86-23ef-45dc-9804-a374d8fda314",
+      "result_id": "8a648e8f-bcd3-4e36-835f-8d62274ea013"
+    },
+    {
+      "claim_id": "9232310d-9f8a-4ef2-a91e-5ddc223290ee",
+      "result_id": "8a648e8f-bcd3-4e36-835f-8d62274ea013"
+    },
+    {
+      "claim_id": "eb570d02-77a1-45b1-be97-f43c2bff7f12",
+      "result_id": "8a648e8f-bcd3-4e36-835f-8d62274ea013"
+    },
+    {
+      "claim_id": "6901f48c-4470-4dae-bec1-38642b89d122",
+      "result_id": "69071ec2-5a44-4f6c-9f48-daa9f9b6af85"
+    },
+    {
+      "claim_id": "548684cb-377c-40e8-a203-139b62a01c5d",
+      "result_id": "69071ec2-5a44-4f6c-9f48-daa9f9b6af85"
+    },
+    {
+      "claim_id": "a446eeed-bdcb-4c1e-8529-e468abc12835",
+      "result_id": "5af6490a-82d5-4830-aa8e-8d4ec700bb27"
+    },
+    {
+      "claim_id": "7d0ee5c5-a7e5-44f0-874e-3ee118ba9135",
+      "result_id": "5af6490a-82d5-4830-aa8e-8d4ec700bb27"
+    },
+    {
+      "claim_id": "cd0ef669-d04c-4ac2-9960-67b39133f8bf",
+      "result_id": "5af6490a-82d5-4830-aa8e-8d4ec700bb27"
+    },
+    {
+      "claim_id": "3755ed7c-5128-4789-9e78-f4fd6920cdbc",
+      "result_id": "d2e4814f-2672-4e9b-ab54-601659510593"
+    },
+    {
+      "claim_id": "e942b9c0-b75e-4293-b4b0-f6af3217aa8d",
+      "result_id": "d2e4814f-2672-4e9b-ab54-601659510593"
+    },
+    {
+      "claim_id": "82519591-8a86-4449-a3a2-48e314800c8f",
+      "result_id": "d2e4814f-2672-4e9b-ab54-601659510593"
+    },
+    {
+      "claim_id": "446d899a-e9c4-4c12-ab78-b51af01df563",
+      "result_id": "d2e4814f-2672-4e9b-ab54-601659510593"
+    },
+    {
+      "claim_id": "b584913f-c0a0-4c26-a0d5-be111b9a6ec0",
+      "result_id": "d2e4814f-2672-4e9b-ab54-601659510593"
+    },
+    {
+      "claim_id": "47082b1a-2c8a-45db-947d-26012a6ffcc0",
+      "result_id": "d2e4814f-2672-4e9b-ab54-601659510593"
+    },
+    {
+      "claim_id": "2713beca-5829-4527-9d10-e35333feb341",
+      "result_id": "d2e4814f-2672-4e9b-ab54-601659510593"
+    },
+    {
+      "claim_id": "e087a21a-df21-4c0c-9bad-a62123c4255e",
+      "result_id": "6777bedf-6fc9-4480-840a-a2706ea27b7f"
+    },
+    {
+      "claim_id": "e1d06142-38ff-4a5a-8c6e-359747e66c10",
+      "result_id": "6777bedf-6fc9-4480-840a-a2706ea27b7f"
+    },
+    {
+      "claim_id": "1a051b57-37ec-4e9b-993d-8644f9d51842",
+      "result_id": "6777bedf-6fc9-4480-840a-a2706ea27b7f"
+    },
+    {
+      "claim_id": "3affb5bb-f0fc-408b-8f34-ed090af9b949",
+      "result_id": "6777bedf-6fc9-4480-840a-a2706ea27b7f"
+    },
+    {
+      "claim_id": "665d8e64-03b3-4ba0-8980-d124634650aa",
+      "result_id": "6777bedf-6fc9-4480-840a-a2706ea27b7f"
+    },
+    {
+      "claim_id": "71fbb9d0-25dd-4423-8f9d-3504bda7cc93",
+      "result_id": "6777bedf-6fc9-4480-840a-a2706ea27b7f"
+    },
+    {
+      "claim_id": "3c1c80f4-344d-49b3-a353-03d7a573f755",
+      "result_id": "6777bedf-6fc9-4480-840a-a2706ea27b7f"
+    },
+    {
+      "claim_id": "2013d682-38ee-430d-a5ba-7dddf5906583",
+      "result_id": "6777bedf-6fc9-4480-840a-a2706ea27b7f"
+    },
+    {
+      "claim_id": "16e457c2-cee4-4595-922b-315d28e39942",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "b1280273-928e-4cfa-a2da-5aafeb814fe0",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "091910c2-cb69-4caf-b89c-94fcc6298604",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "26bb57ea-9a73-4ae1-b570-8cf37a83a37b",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "94e69ad3-4520-4620-9c02-c58af79f9805",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "43d4ddb9-2073-461d-9bf7-c82cdae87008",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "ce96ae38-5c3a-40cf-9b88-be3e6c20c140",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "1a8c57af-4849-4fae-8f19-835235b02aa3",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "6bab29e3-71e3-49f2-96f0-c03dbb7bce60",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "853cfb05-3fdc-4008-a994-3c8b74290f64",
+      "result_id": "974ec56a-fe78-4ca3-8c39-46f2255b3dc9"
+    },
+    {
+      "claim_id": "4fa1d5f6-531b-4c5e-af01-bda03efdb9db",
+      "result_id": "74e10e6f-791c-4355-b8cf-f1272c401927"
+    },
+    {
+      "claim_id": "4c7aaf62-2c39-49e7-9c72-6b38325e5799",
+      "result_id": "74e10e6f-791c-4355-b8cf-f1272c401927"
+    },
+    {
+      "claim_id": "3825869f-648e-4b65-a5dd-69db1ba26705",
+      "result_id": "74e10e6f-791c-4355-b8cf-f1272c401927"
+    },
+    {
+      "claim_id": "48e91641-d74a-419c-9b8a-b0444d6e1b14",
+      "result_id": "74e10e6f-791c-4355-b8cf-f1272c401927"
+    },
+    {
+      "claim_id": "e207b3ce-e4dc-4c93-93dd-27fc01766cdf",
+      "result_id": "74e10e6f-791c-4355-b8cf-f1272c401927"
+    },
+    {
+      "claim_id": "12ca1b1f-bfc4-40dd-a5a4-cd037a110ba9",
+      "result_id": "74e10e6f-791c-4355-b8cf-f1272c401927"
+    },
+    {
+      "claim_id": "ca85d415-f77a-47ac-aca4-408bda788246",
+      "result_id": "74e10e6f-791c-4355-b8cf-f1272c401927"
+    },
+    {
+      "claim_id": "e5dcde17-767e-420b-8f00-c95e8eeaf309",
+      "result_id": "74e10e6f-791c-4355-b8cf-f1272c401927"
+    },
+    {
+      "claim_id": "8ebd019f-85df-44fb-8f39-fff90f013377",
+      "result_id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be"
+    },
+    {
+      "claim_id": "240a8c3f-adb0-4310-ab0c-a099eef4915b",
+      "result_id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be"
+    },
+    {
+      "claim_id": "2ec31222-50b9-44c8-be12-9658ddc94593",
+      "result_id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be"
+    },
+    {
+      "claim_id": "a00b1235-76b4-4237-bf53-038731a40aaa",
+      "result_id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be"
+    },
+    {
+      "claim_id": "94f563ac-2e18-4aba-b289-e794d0cea6ea",
+      "result_id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be"
+    },
+    {
+      "claim_id": "f6247595-f7ec-4cf9-909e-ae0244556ecc",
+      "result_id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be"
+    },
+    {
+      "claim_id": "c8acfa24-5381-4dd7-b262-eef133eea633",
+      "result_id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be"
+    },
+    {
+      "claim_id": "778caa9d-bedf-4c30-8015-f90c7fd7c08f",
+      "result_id": "363bdb4d-e6b5-442c-9bb6-1d9fc5f3f4be"
+    },
+    {
+      "claim_id": "8d44dd61-ac0e-4e47-a63c-a66b3d3e71f7",
+      "result_id": "1d59bd1b-1855-4e49-a90a-704d1ec505d8"
+    },
+    {
+      "claim_id": "6f0c0695-5d7b-45c7-87fc-5648a51f6010",
+      "result_id": "1d59bd1b-1855-4e49-a90a-704d1ec505d8"
+    },
+    {
+      "claim_id": "1056548b-9f43-4192-ba70-74306326ef9b",
+      "result_id": "1d59bd1b-1855-4e49-a90a-704d1ec505d8"
+    },
+    {
+      "claim_id": "d14d873b-28a0-4e72-b4d3-cc8399ad8ee2",
+      "result_id": "375503ed-66b6-4040-ae78-7ddbbd2167b0"
+    },
+    {
+      "claim_id": "90bdb039-5847-4743-93b9-f74f54c8d685",
+      "result_id": "375503ed-66b6-4040-ae78-7ddbbd2167b0"
+    },
+    {
+      "claim_id": "b08aa530-79cb-4dab-8b14-ccede6382a3a",
+      "result_id": "375503ed-66b6-4040-ae78-7ddbbd2167b0"
+    },
+    {
+      "claim_id": "1e6dfa0c-3165-4876-823b-abb9df3fd02b",
+      "result_id": "375503ed-66b6-4040-ae78-7ddbbd2167b0"
+    },
+    {
+      "claim_id": "c32d9458-9102-4073-a20e-b38b83173eb0",
+      "result_id": "c77e3675-864c-4edd-b01a-cd8c94132346"
+    },
+    {
+      "claim_id": "a78ef17c-8510-419f-83e5-639464a7db02",
+      "result_id": "c77e3675-864c-4edd-b01a-cd8c94132346"
+    },
+    {
+      "claim_id": "5cea3b6c-26d7-4c84-a9be-4638bd9e0e47",
+      "result_id": "c77e3675-864c-4edd-b01a-cd8c94132346"
+    },
+    {
+      "claim_id": "2e1c8a81-ad9d-463b-b4f9-ff3e7057a001",
+      "result_id": "c77e3675-864c-4edd-b01a-cd8c94132346"
+    },
+    {
+      "claim_id": "660a3b77-2f13-41d6-801a-8080a5f60a89",
+      "result_id": "c77e3675-864c-4edd-b01a-cd8c94132346"
+    },
+    {
+      "claim_id": "5c8abbf2-baca-4d59-baf1-0cc5a6b70291",
+      "result_id": "c77e3675-864c-4edd-b01a-cd8c94132346"
+    },
+    {
+      "claim_id": "1000c679-1fa9-4e0d-bc36-e0e637ca2ecd",
+      "result_id": "c77e3675-864c-4edd-b01a-cd8c94132346"
+    },
+    {
+      "claim_id": "098f1f76-a149-430d-81c0-8407f6927f59",
+      "result_id": "c77e3675-864c-4edd-b01a-cd8c94132346"
+    },
+    {
+      "claim_id": "cb7ee93e-f237-4290-a3a7-db64ea614d0f",
+      "result_id": "34c03740-e50d-4e6d-964b-a1f47f2051ba"
+    },
+    {
+      "claim_id": "d07e4eff-558c-4546-a5d1-f9ad2ed4b64e",
+      "result_id": "34c03740-e50d-4e6d-964b-a1f47f2051ba"
+    },
+    {
+      "claim_id": "31281759-8875-4755-8a65-c9724bbaf425",
+      "result_id": "34c03740-e50d-4e6d-964b-a1f47f2051ba"
+    },
+    {
+      "claim_id": "c4553a29-1afd-4aa9-882a-286d7c075639",
+      "result_id": "34c03740-e50d-4e6d-964b-a1f47f2051ba"
+    },
+    {
+      "claim_id": "65619c14-149b-4f84-ab39-a634a452762e",
+      "result_id": "1133923e-363e-49e6-bc81-021acbf4bd3b"
+    },
+    {
+      "claim_id": "cd517eec-3798-4db3-b27e-6a5c09f399c6",
+      "result_id": "1133923e-363e-49e6-bc81-021acbf4bd3b"
+    },
+    {
+      "claim_id": "18557b6a-f612-4005-a0d7-2df2c6e36f61",
+      "result_id": "1133923e-363e-49e6-bc81-021acbf4bd3b"
+    },
+    {
+      "claim_id": "df9c87dc-dc42-43c4-b43e-527eb97cde25",
+      "result_id": "1133923e-363e-49e6-bc81-021acbf4bd3b"
+    },
+    {
+      "claim_id": "3a13a4a0-54c8-43f4-a4d5-bdb2c8ad0093",
+      "result_id": "1133923e-363e-49e6-bc81-021acbf4bd3b"
+    },
+    {
+      "claim_id": "711239b5-f9bf-4557-b650-7a7dd0016b53",
+      "result_id": "e31db554-6496-4504-a0c9-2961ffbfa4c7"
+    },
+    {
+      "claim_id": "37997d5c-b2e2-457d-9096-014bd010b1b7",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "ae7501ca-5d2b-450b-b27e-69bab4de4fb7",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "4fee314b-782c-4ec0-bd05-16d1aae4f430",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "9c70672e-3c9c-4f5e-a406-40961217c9e3",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "a33641c7-1263-4863-87f1-4e452dc3e67f",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "74990d95-5169-49a1-8f6a-815ef0e58ee2",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "840e7ed0-5159-4a30-a1ab-949596cf5d0c",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "7b56ed60-7b8a-46d3-b15b-10bcd999a5a9",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "c82e856e-499d-466e-9a26-efc5e94cf139",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "cd632268-0d86-4f41-9c96-13a5bd9066fc",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "46c69982-0d74-4c83-876f-1b2e21bcb177",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "94246459-c56f-44df-a687-ddf36429d129",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "8b8b54be-211f-47ae-9a0e-8836d7bcf199",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    },
+    {
+      "claim_id": "ff095f69-febc-4f62-919e-ad34ca19a20b",
+      "result_id": "e8a83417-7f70-4c21-bc85-0f96d6f6c9dd"
+    }
+  ],
+  "comparisons": []
+}

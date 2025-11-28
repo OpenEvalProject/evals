@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C22",
+      "C23",
+      "C83"
+    ],
+    "result": "The allosteric AKT inhibitor MK2206 induces significantly more cell death than ATP-competitive AKT inhibitors (GSK690693 and GDC0068) in cancer cells with MET amplification, HER2 amplification, or PIK3CA mutations, despite less complete inhibition of AKT substrate phosphorylation. All three inhibitors induced near-complete proliferation arrest, demonstrating that allosteric and ATP-competitive AKT inhibitors differ in their ability to block AKT-mediated survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14, C22-C23, and C83 are supported by multiple cell death assays (Figures 1B-D, supplements) and Western blot data (Figure 1A) showing dose-dependent inhibition of AKT substrates. The differential cell death induction is consistently observed across multiple cell lines with different PI3K pathway alterations, with appropriate statistical testing (p-values reported). The paradox that MK2206 induces more cell death despite less substrate inhibition is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C84"
+    ],
+    "result": "Expression of drug-resistant AKT mutants (W80A) that cannot bind the allosteric inhibitor MK2206 completely rescued MK2206-induced cell death, while wild-type AKT did not. These mutants are biochemically insensitive to MK2206 and prevented PARP cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by cell death assays (Figure 1E, supplement 5) and Western blot data (supplement 6) showing that W80A mutants of both AKT1 and AKT2 rescue cell death and prevent apoptosis markers. The specificity control (wild-type AKT not rescuing) strengthens the conclusion that the effect is due to blocking MK2206 binding rather than off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C91"
+    ],
+    "result": "The ATP-competitive inhibitor GSK690693 antagonized the ability of the MET inhibitor crizotinib to kill EBC1 cells, while the allosteric inhibitor MK2206 did not compromise crizotinib-induced cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by combination treatment cell death assays shown in Figure 2B. The data demonstrate that GSK690693 antagonizes crizotinib despite inducing modest cell death as a single agent, while MK2206 does not show this antagonism. This supports the hypothesis that ATP-competitive inhibitors may promote kinase-independent survival signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C85",
+      "C86",
+      "C92"
+    ],
+    "result": "Catalytically inactive AKT (K179M mutant) protected cancer cells from MK2206-induced cell death in multiple cell lines, while wild-type AKT did not. The protection was partial compared to the drug-resistant W80A mutant, consistent with coexistence of kinase-independent and kinase-dependent signals. This protection was also observed in AKT knockdown experiments with hairpin-resistant kinase-dead AKT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by cell death assays in multiple cell lines (Figures 2C-F) and Western blot data confirming kinase inactivity. The knockdown/rescue experiment (Figure 2F) with physiological expression levels strengthens the conclusion by addressing potential overexpression artifacts. The partial protection compared to W80A (C30) is a reasonable interpretation supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "MK2206 markedly impaired phosphoinositide binding of AKT, consistent with allosteric inhibitors locking AKT in a closed conformation. In contrast, the ATP-competitive inhibitor GSK690693 increased AKT binding to PtdIns(3,4)P2 and PtdIns(3,4,5)P3 and increased AKT localization to the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by PIP-binding assays (Figure 3A) and immunofluorescence data (Figure 3B). The opposing effects of the two inhibitor classes on phosphoinositide binding and membrane localization are clearly demonstrated. The interpretation is consistent with structural studies cited (Wu et al., 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C71"
+    ],
+    "result": "The kinase-dead AKT mutant (K179M) was hyper-phosphorylated at T308 and constitutively localized to the plasma membrane, similar to GSK690693-bound AKT. T308 phosphorylation occurs at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by Western blot data (Figure 3C, supplement 1) and immunofluorescence (Figure 3D, supplement 2). The hyper-phosphorylation and membrane localization of kinase-dead AKT parallels the effects of ATP-competitive inhibitors. The citation for T308 phosphorylation at the membrane (Stephens et al., 1998) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C60",
+      "C72",
+      "C73"
+    ],
+    "result": "Membrane localization alone is not sufficient for the pro-survival function of kinase-dead AKT, as a myristoylated \u0394PH-AKT1-K179M mutant failed to protect from cell death despite constitutive phosphorylation. However, abrogation of phosphoinositide binding by R86A or R25C mutations did not completely abolish the pro-survival function of kinase-defective AKT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 and C60 are supported by cell death assays (Figures 3E-F, supplement 4C) and Western blot data (supplement 3, 4A-B). The myristoylation experiment demonstrates that membrane localization is necessary but not sufficient. The R86A and R25C experiments show that phosphoinositide binding is not absolutely required, suggesting the PH domain has additional functions. The logic is sound and the data are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C74",
+      "C75"
+    ],
+    "result": "A survey of cancer sequencing data identified five recurrent AKT2 kinase domain mutations. The AKT2-G161V mutant, found in human melanoma, showed complete loss of kinase activity in vitro and in cells, loss of substrate phosphorylation, and altered phosphoinositide binding with preference for PtdIns(4,5)P2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by cancer database analysis (Figure 4A), in vitro kinase assays (Figure 4B), Western blots of substrate phosphorylation (Figure 4C), and PIP-binding assays (Figure 4D). The characterization of G161V as a naturally occurring kinase-dead mutant is thorough and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C76"
+    ],
+    "result": "Expression of the kinase-dead AKT2-G161V mutant enabled immortalized human melanocytes to survive in TPA-deficient media, demonstrating that this naturally occurring cancer-associated mutant has pro-survival function independent of kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C76 are supported by cell survival assays (Figure 4E) showing that melanocytes expressing G161V can survive without TPA, which is normally required for their survival. This demonstrates the functional relevance of the kinase-independent activity in a physiologically relevant cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C77",
+      "C78"
+    ],
+    "result": "The E17K-AKT1 mutant, the most common somatic AKT mutation in cancer, showed reduced sensitivity to MK2206 and provided partial protection from MK2206-induced cell death. A kinase-dead E17K/K179M double mutant provided similar protection, suggesting this PH-domain mutant can mediate survival signals independent of catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by Western blot data (Figure 4F) and cell death assays (Figure 4G). The observation that the kinase-dead E17K/K179M double mutant provides similar protection as E17K alone is compelling evidence for kinase-independent function of this cancer-associated mutant. The interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C79"
+    ],
+    "result": "The endometrial cancer cell line MFE-319 harbors an AKT1-G311D mutation that lacks kinase activity. Knockdown of AKT1 induced substantially more cell death than knockdown of AKT2, suggesting addiction to signals from the mutant AKT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by Western blot data showing lack of substrate phosphorylation (Figure 5A) and differential cell death upon selective knockdown (Figure 5B). The interpretation of addiction to the mutant AKT1 is reasonable given the differential knockdown effects, though additional experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "This work represents the first example of a kinase-independent function of AKT. Kinase domain conformation critically influences PH-domain functions, and the PH-domain likely promotes survival through regulation of protein partners, with kinase domain perturbations affecting subcellular localization and/or protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C58 are interpretations/conclusions supported by the experimental data. However, C61-C62 are speculative hypotheses about mechanism (labeled as SPECULATION in evidence_type). While the kinase-independent function is well-demonstrated, the specific mechanism involving protein partners remains to be identified. The authors acknowledge this requires further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C64",
+      "C65",
+      "C90"
+    ],
+    "result": "ATP-competitive AKT inhibitors fail to block kinase-independent AKT function, representing a liability compared to allosteric inhibitors. Cancer cells with PI3K pathway alterations show reduced sensitivity to ATP-competitive inhibitors, possibly because these inhibitors induce an AKT conformation that serves as a platform for kinase-independent survival signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C64-C65 are conclusions supported by the collective experimental data comparing the two inhibitor classes. C90 is a hypothesis (labeled SPECULATION) that explains the observations. While the hypothesis is reasonable and supported by the data showing increased membrane localization with ATP-competitive inhibitors, it remains a model requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C89"
+    ],
+    "result": "MK2206 did not induce cell death in non-transformed bronchial epithelial cells or in lung cancer cell lines with activating EGFR mutations, suggesting that the mode of PI3K activation is critical in establishing AKT addiction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C15 states data not shown, which is problematic for evaluation. C16 is supported by Figure 1-supplement 4. The interpretation in C17 is reasonable but somewhat speculative given the limited data. The differential response based on genetic context is interesting but requires more mechanistic investigation to fully support the conclusion about mode of PI3K activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C94"
+    ],
+    "result": "Hyper-phosphorylation of AKT in response to ATP-competitive inhibitors may be due to both impaired phosphatase access and increased phosphorylation at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is a hypothesis supported by the observation that ATP-competitive inhibitors increase membrane localization (where phosphorylation occurs) in addition to the previously proposed mechanism of impaired phosphatase access (C94). The hypothesis is reasonable given the data, though direct testing of the relative contributions of these mechanisms would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The AKT-mediated survival signal can be mediated by either AKT1 or AKT2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by experiments showing that both AKT1-W80A and AKT2-W80A can rescue MK2206-induced cell death (Figures 1E, supplements 5-6), and that both AKT1-K179M and AKT2-K181M provide protection (Figures 2C-E, supplement 1). This demonstrates functional redundancy between the two isoforms for the kinase-independent survival function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C12",
+      "C25",
+      "C68",
+      "C69",
+      "C70",
+      "C87",
+      "C88"
+    ],
+    "result": "Background knowledge claims about AKT function, regulation, and role in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C7-C8, C12, C25, C68-C70, C87-C88) represent established knowledge supported by citations to prior literature. They provide necessary context for the study but are not novel findings. The citations appear appropriate and the statements are consistent with current understanding of AKT biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior studies have shown differential sensitivity of AKT mutants to allosteric vs ATP-competitive inhibitors. MK2206 is an allosteric inhibitor while GSK690693 and GDC0068 are ATP-competitive inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C80-C82 are supported by appropriate citations to prior literature characterizing these inhibitors and their differential effects on AKT mutants. These provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Cell lines and reagents were obtained from appropriate sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 document the sources of key cell lines used in the study. This is standard methodological information that is appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

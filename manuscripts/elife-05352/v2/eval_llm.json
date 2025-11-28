@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study recorded simultaneous intrathalamic and scalp EEG from eight epilepsy patients with electrodes implanted in the ATN and DMTN for treatment purposes. Electrodes were stereotactically placed and verified via imaging, with frontal scalp electrodes in all participants and parietal electrodes in two participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C3, C11, C12, C120-C136) are well-documented with specific technical details about electrode placement, verification procedures, recording parameters, and data acquisition. The sample size of eight patients is justified by prior work showing individual-level detection of memory-dependent phase synchrony (C121), and represents a larger sample than typical intracranial studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C153"
+    ],
+    "result": "All eight participants successfully discriminated old from new scenes with mean successful encoding of 55% and unsuccessful encoding of 45%. Response times during encoding did not differ between successfully and unsuccessfully encoded scenes, and there was no sequential dependency in encoding success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral results (C35-C40, C137-C153) are supported by statistical analyses showing no significant differences in response times (p=0.12) or sequential dependencies (p=0.22). The task performance demonstrates adequate memory formation while controlling for potential confounds like global attention fluctuations. The experimental design and data preprocessing procedures are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Frontal-right ATN theta synchrony (5-6 Hz) was significantly greater during successful than unsuccessful encoding between 0.5-1.5 s post-stimulus, with the effect being frequency-specific to theta and present in seven of eight participants individually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 present the primary theta synchrony finding with rigorous statistical support including permutation tests (p=0.001), paired t-tests (p=0.000022), conservative false discovery rate correction (p=0.0019), cluster-size permutation tests (p=0.016), and individual participant analyses (Wilcoxon p=0.038). Frequency specificity was confirmed through ANOVA showing significant interactions between theta vs. beta/alpha and encoding success (all p<0.002), but not between two theta frequencies (p>0.30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The theta synchrony effect was specific to the right ATN, with no significant differences observed for DMTN or left ATN. The RATN difference was significantly greater than right DMTN (p=0.018), though the RATN vs LATN comparison only approached significance (p=0.130).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 demonstrate anatomical specificity through direct statistical comparisons. The significant RATN vs. DMTN difference (C53) supports nucleus specificity. While the RATN vs. LATN comparison is not significant (C54), the authors appropriately acknowledge this limitation and provide a plausible interpretation based on the non-verbal nature of the stimuli (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Early upper theta/alpha synchrony (8-12 Hz, 0-0.2 s post-stimulus) was significantly greater during successful encoding and was post-stimulus rather than pre-stimulus, potentially reflecting enhanced item-specific attention and perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 describe an additional early synchrony effect with statistical support (PT p=0.002, TT p=0.00085, CSPT p=0.029). The post-stimulus nature is confirmed by comparing pre- and post-stimulus periods (C59: p=0.039). The interpretation as attention-related (C57) is appropriately tentative and supported by citation. The distinction from pre-stimulus activity strengthens the claim that effects are stimulus-driven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "In two participants with parietal electrodes, both parietal-RATN and frontal-RATN theta synchrony (0.5-1.5 s) were significantly enhanced during successful encoding when analyzed individually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 presents individual case analyses for the two participants with parietal recordings, showing significant effects (p<0.05) consistent with the group frontal findings. While limited to two participants due to practical constraints, the individual-level statistical significance and consistency with group data support this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Cross-frequency coupling between frontal theta phase-troughs and RATN gamma amplitude-peaks (40-50 Hz) was significantly greater during successful than unsuccessful encoding, with no effect for high gamma (up to 256 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 present the primary CFC finding with statistical support (TT T=4.9, p=0.0018; CSPT p=0.038). The specificity to lower gamma frequencies (40-50 Hz) rather than high gamma (C64) strengthens the interpretation. The analysis focused on the 0.5-1.5 s window where theta synchrony was significant, providing a principled rationale for the time window selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Within the RATN, theta phase-peaks coupled with gamma amplitude-peaks, with a narrower gamma range (40-50 Hz) during successful encoding compared to unsuccessful encoding (40-70 Hz). This pattern differed significantly between conditions (2-D KS test p=0.048) and may reflect neural specificity during encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe within-RATN CFC patterns with statistical support showing greater coupling at higher gamma frequencies during unsuccessful encoding (TT T=3.6, p=0.0086; CSPT p=0.045) and significant differences in CFC patterns between conditions (2-D KS p=0.048). The interpretation of narrower gamma reflecting neural specificity (C69) is appropriately presented as speculative and supported by citations. The postulation about corticothalamic coordination (C70) is clearly identified as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Within frontal cortex, theta-to-gamma CFC showed peak-to-peak coupling at higher theta frequencies (not related to encoding success) and trough-to-peak coupling at lower theta frequencies (greater during successful encoding). These patterns differed significantly from frontal-RATN and within-RATN CFC patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 characterize frontal CFC patterns with appropriate statistical support. The peak-to-peak coupling occurred for both conditions (C73, surrogate tests p=0.001) with no encoding difference (C74), while trough-to-peak coupling was greater during successful encoding (C75, TT T=3.6, p=0.0087; CSPT p=0.017). Statistical comparisons confirm distinct patterns between regions (C77: 2-D KS d=0.83, p=0.024; C78: d=0.98, p=0.011).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Granger causality analysis revealed that frontal theta better predicted RATN theta than vice versa, with peak prediction at model order 32 (63 ms delay, one-third theta cycle). This delay is consistent with the observed trough-to-peak frontal-RATN CFC and peak-to-peak intra-RATN CFC patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present Granger causality findings showing directional information flow from frontal cortex to RATN. The 63 ms delay (C80) is interpreted as consistent with the CFC phase relationships (C81), providing converging evidence. The synthesis that frontal theta modulates RATN gamma via theta synchrony (C82) is a reasonable inference from the combined CFC and GC findings, though it remains correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study demonstrates that timing of post-stimulus ATN theta activity and its relation to local gamma amplitudes is critical for successful memory encoding, providing the first electrophysiological evidence for ATN's role in human memory formation. The findings are consistent with ATN specialization for encoding and fit with prior lesion and laterality data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 synthesize the main findings and place them in context. The claim of first electrophysiological evidence (C85) is supported by the novelty of direct ATN recordings during memory encoding in humans. The interpretation regarding ATN vs. DMTN specialization (C86) is supported by the data and consistent with prior literature. The laterality interpretation (C87-C88) is appropriately cautious and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C152"
+    ],
+    "result": "Multiple lines of evidence argue against the findings reflecting simple global attentional fluctuations: timing at ~1 s post-stimulus matches prior memory encoding studies, ATN rather than DMTN involvement, no response time differences between conditions, and no sequential dependency in encoding success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 and C152 present a multi-faceted argument against an attention confound. The timing argument (C94-C95) is supported by extensive citations. The anatomical specificity argument (C96-C97) is logical given prior knowledge. The behavioral controls (C98-C99) are supported by statistical tests showing no RT differences (p=0.12) and no sequential dependency (p=0.22). While attention cannot be completely ruled out, the evidence collectively argues against it as the primary explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The phase synchrony pattern is discernible but not identical across frontopolar, other frontal, and parietal electrode placements. Both frontal and parietal cortices are recognized as involved in memory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 address regional specificity. The observation that patterns are similar but not identical across regions (C103) is supported by figure supplement data. The acknowledgment that both frontal and parietal cortices are involved in memory (C104) is well-supported by citations. The authors appropriately note that limited electrode coverage precludes strong conclusions about regional specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A limitation of the study is that results cannot be conclusively linked to recollection separately from familiarity due to task simplicity required for bedside testing. Nevertheless, the findings are consistent with theoretical proposals about ATN's role in episodic memory and encoding specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 appropriately acknowledge a significant limitation while contextualizing the findings. The rationale for task simplicity (C105) is practical and reasonable. The limitation regarding recollection vs. familiarity (C106) is honestly stated. The interpretation that findings are consistent with (but do not definitively prove) specific theoretical proposals (C107-C109) is appropriately cautious. The claim of novel evidence despite limitations (C111) is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The findings broaden understanding of memory formation to recognize a pivotal role for the ATN beyond the hippocampus and neocortex. The CFC findings, together with lesion data, suggest the ATN plays an active role in encoding rather than simply relaying signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 present the broader significance of the findings. The claim that findings broaden understanding (C118) is justified by the novel direct electrophysiological evidence from human ATN. The inference that ATN plays an active rather than relay role (C119) is supported by the CFC findings showing local processing and is appropriately contextualized with lesion data, though it remains an inference from correlational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Despite varying epileptic foci across participants, results were highly consistent across the group. Spikes/spike-waves were present in three participants but showed minimal difference between conditions (mean 1.83%), and findings remained significant when these epochs were excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C157 address potential confounds from epileptiform activity. The consistency across participants with different foci (C154) is supported by figure data. The quantification of spike/spike-wave occurrence (C155-C156) shows minimal difference between conditions. The robustness analysis excluding these epochs (C157) strengthens confidence that epileptiform activity does not explain the findings.",
+    "result_type": "MINOR"
+  }
+]

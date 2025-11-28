@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work established that adult-born granule cells (ABGCs) are involved in hippocampus-dependent learning and memory, with young ABGCs (~4 weeks) contributing to pattern separation due to heightened excitability, while older ABGCs (>8 weeks) lose these capabilities. Current theories correlate these two functional states with age-dependent maturation of cellular properties over 8-10 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 accurately summarize established knowledge from prior literature, supported by multiple citations. These claims provide appropriate context for the current study and correctly represent the prevailing hypotheses in the field that the authors aim to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ABGCs consist of two functionally distinct populations (S-group and L-group) with highly distinct input integration properties that are largely independent of cellular age and maturation stage. The S-group shows steep, highly variable input-output functions (sensitive to narrow input ranges), while the L-group shows linear, less sensitive responses. This functional separation is restricted to specific cellular properties (gain parameters) and not others (offset).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C32 are well-supported by experimental data using retroviral birth-dating, electrophysiological recordings, and statistical analyses (Gaussian fits, K-means clustering) shown in Figures 2-3. The identification of two populations based on ASL and VAR parameters, while basic biophysical parameters show continuous distributions, provides strong evidence for the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "While age alone does not directly determine individual ABGC functionality, the probability of belonging to S- or L-groups shows age-dependence. The youngest cells (3 weeks) are exclusively S-group, the oldest (10 weeks) are L-group, and both groups coexist with changing probabilities between 5-9 weeks. This continuously increasing probability of L-group membership could mask the two distinct populations when analyzed as population averages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by data in Figure 4A-B showing probabilistic age-dependence and parabolic variance distributions. The observation that individual cell properties don't correlate with age within groups, but group membership probability does correlate with age, is internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The gain of input-output properties in S-group ABGCs is independent of input resistance, while L-group cells show the expected dependence on input resistance. In contrast, the offset parameter depends on input resistance across both populations. This independence of gain from continuously developing biophysical parameters allows for the emergence of only two functionally distinct populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by correlation analyses in Figure 4C-D. The striking lack of correlation between gain and input resistance specifically in S-group cells (R\u00b2=0.087, p=0.045) versus strong correlation in L-group (R\u00b2=0.576, p<0.001) is a key mechanistic insight, though the biological basis remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Independent experiments in non-labeled adult animals confirmed the coexistence of S- and L-functionalities among granule cells, with similar correlations between integrative functions and input resistance as observed in birth-dated ABGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by data in Figure 4\u2014figure supplement 1. This independent validation in non-birth-dated cells strengthens the main findings by demonstrating that the two functional groups exist in the general granule cell population, not just in retrovirally labeled cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Consideration of multiple biophysical parameters by their arithmetical values is insufficient to predict functional separation of S- and L-groups, suggesting a complex and balanced interaction underlies the formation of the two states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by hierarchical cluster analysis in Figure 4E showing that intrinsic parameters don't predict functional group membership. However, C49's characterization as 'complex interaction' is somewhat speculative, as the specific mechanisms remain unidentified. The supporting experiments with temperature, calcium, and GIRK activation (Figure 4\u2014supplement 2A-C) show complex effects but don't definitively identify the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Blocking GABAA and AMPA/kainate receptors slightly increased ASL values, but the effect was independent of initial cell state, indicating that S- and L-group properties are established largely independent of spontaneous synaptic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by experimental data in Figure 4\u2014figure supplement 2D. The lack of group-specific effects of synaptic blockade provides evidence against synaptic drive as the primary determinant of functional group identity, though sample size and statistical details are not fully specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The gain of input-output transformation in 3-10 week-old ABGCs exists in two functionally distinct states independent of cellular age. Around 3 weeks, ABGCs form a homogeneous S-group population with stable functional parameters despite continuous maturation of other biophysical properties. Between 5-9 weeks, cells switch to L-group functionality. This allows for input disambiguation at the single-cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 synthesize the main experimental findings into a coherent model. The data support the existence of two states and the age-independent maintenance of S-group properties. However, C56 and C60 regarding 'disambiguation' are somewhat speculative functional interpretations not directly tested experimentally, though they are reasonable inferences from the observed properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Individual cell properties rather than cellular age determine input computation functionality. This challenges previous hypotheses that plasticity from adult neurogenesis is predominantly determined by postmitotic cellular age. Environmental conditions affecting neurogenesis may alter the relative contribution to S- or L-groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C64 represent interpretations and implications of the findings. While C62 is well-supported by the data, C63 appropriately identifies the challenge to existing theories. However, C61 and C64 are speculative extensions not tested in this study. The claim about environmental conditions (C64) is particularly speculative as no environmental manipulations were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The majority of tested biophysical parameters (input resistance, membrane time constant, capacitance, resting potential, AP threshold, peak dV/dt, maximal firing rate) of individual ABGCs changed continuously with age, with wide distributions and no emergence of distinguishable populations, consistent with previous observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by data in Figure 3A-B and citations to prior work. The continuous maturation of basic biophysical parameters provides important contrast to the discrete functional states, strengthening the main finding. Statistical analyses confirm single-peak distributions for these parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study used retroviral labeling for birth-dating ABGCs in 31-33 day-old rats, with sinusoidal current injections (5-80 Hz) to measure input-output characteristics. ASL and VAR parameters were calculated from input-output functions to characterize gain. Animals were housed with running wheels to increase ABGC survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C76 describe the experimental methods, which are clearly documented and appropriately justified. The retroviral birth-dating method is validated (C68), the sinusoidal stimulation approach is well-justified (C71), and the analysis parameters are clearly defined (C73-C76). The methods appear sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Lowering recording temperature eliminated the separation between S- and L-groups based on ASL and VAR. GIRK channel activation by ML297 increased ASL only in cells with initially low ASL (L-group-like cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by data in Figure 4\u2014figure supplement 2A,C. These manipulations provide insights into the complexity of the mechanisms underlying the two states, though they don't definitively identify the mechanism. The group-specific effect of GIRK activation is particularly interesting but requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

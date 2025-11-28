@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17"
+    ],
+    "result": "The Start transition in budding yeast is determined by time integration of Cln3-Cdk1 activity, with Whi5 serving as the integrator. G1 length is inversely proportional to average Cln3 concentration with a slope of -1 (R\u00b2=0.91) in log-log scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C16-C17 collectively establish the core integration mechanism. The inverse proportionality (C16, C17) with slope \u2248-1 and high R\u00b2 directly supports the mathematical integration model. The experimental data in Figure 1J provides strong quantitative evidence, and the identification of Whi5 as integrator (C2) is supported by both modeling and perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C73",
+      "C74"
+    ],
+    "result": "Signal integration reduces noise and variability in G1 length compared to an instantaneous threshold model. The Integration Model produces CV of 37.9% versus 92% for the Instantaneous Model with extrinsic noise, matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18-C19, C73-C74 demonstrate through stochastic simulations that integration reduces variability. The quantitative comparison (CV 37.9% vs 92%) matches experimental data (CV \u226450%, C55). Figure 2 provides clear visual and quantitative support for noise reduction through integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "In approximately 80% of cells, the timing of Cln3 peak differs from the timing of Start, ruling out an instantaneous threshold model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 provide direct experimental evidence against the instantaneous model. The 80% figure from Figure 2\u2014figure supplement 2 is a strong statistical observation that contradicts predictions of an instantaneous threshold mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The memory length of Whi5 integration is 13.7 min in mother cells and 10.6 min in daughter cells, comparable to the average G1 length (13.6 min) in daughter cells in SD medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 report experimental measurements of Whi5 dephosphorylation kinetics using Cdk1 inhibition. The measurements in Figure 2\u2014figure supplement 3 provide direct evidence for the memory window, though the method (inhibiting Cdk1 after G1) is an indirect estimate of the actual memory length during G1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C62"
+    ],
+    "result": "In whi5\u0394 strain, most cells pass Start with minimal G1 length and the inverse proportionality between G1 length and Cln3 concentration is severely compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C62 demonstrate that Whi5 is essential for the integration mechanism. The loss of inverse proportionality (slope >> -1) in whi5\u0394 strain (Figure 3A) directly supports Whi5's role as integrator, as predicted by the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C57",
+      "C75",
+      "C76"
+    ],
+    "result": "The integration threshold A is positively correlated with Whi5 concentration at single-cell level (Pearson r=0.53), and normalizing by Whi5tot causes inverse correlations in 1X and 2X WHI5 strains to collapse to the same curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C57, C75-C76 provide experimental validation of the model prediction that A scales with Whi5tot. The single-cell correlation (Figure 3C) and the collapse of normalized data (Figure 3\u2014figure supplement 2) strongly support the linear relationship between threshold and Whi5 concentration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In poor nutrient conditions, Whi5tot increases as growth rate decreases, resulting in a higher Start threshold rather than lower, contrary to previous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 present a counterintuitive finding supported by data across multiple nutrient conditions (Figure 4A-C). The negative correlation between Whi5tot and growth rate is clearly demonstrated, challenging previous assumptions about threshold modulation in poor nutrients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "When cells are switched between glucose concentrations, Whi5tot and G1 length adapt with different kinetics, with faster response when switching from high to low glucose including an overshoot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe nutrient switch experiments showing differential adaptation kinetics (Figure 4\u2014figure supplement 6). The data demonstrate that Whi5 and G1 length respond on different timescales, supporting the two-component sensor-integrator model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C83"
+    ],
+    "result": "G1 phase can reinitiate when cells are switched from high to low glucose before budding, a phenomenon that cannot be explained by current knowledge of Start.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38 and C83 report an unexpected observation (Figure 4\u2014figure supplement 6E) but acknowledge it cannot be explained by the current model. While the observation appears genuine, the lack of mechanistic understanding and limited characterization make this result uncertain. Additional experiments would be needed to validate and explain this phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C80"
+    ],
+    "result": "Daughter cells have higher Whi5tot intensity and steeper slope between Whi5tot and G1 length than mother cells, contributing to G1 delay in daughters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C80 identify a mother-daughter asymmetry in Whi5 regulation (Figure 4D,E). The data clearly show higher Whi5tot in daughters, providing a novel mechanism for daughter-specific G1 delay beyond the known Ace2-mediated Cln3 suppression (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Cln3 responds rapidly to external and internal cues while Whi5 adjusts on a much longer timescale, reinforcing changes in G1 length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe the differential response times of sensor (Cln3) versus integrator (Whi5), supported by nutrient switch experiments (Figure 4\u2014figure supplement 6). This two-timescale architecture is consistent with the observed adaptation kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C61",
+      "C63"
+    ],
+    "result": "Perturbations to the Start network (increasing phosphatase activity, weakening positive feedback, reducing Cln3-Cdk1 catalytic efficiency) produce predicted changes in Cln3c, memory length, and integration threshold A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C61, C63 describe model predictions tested through genetic perturbations (CDC14 overexpression, cln1\u0394, cln2\u0394). Figure 3D-F shows the predicted shifts in Cln3-TG1 correlations, validating the mathematical model. The observation that cln2\u0394 shifts more than cln1\u0394 (C63) is consistent with known expression differences (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "G1 length is prolonged as IPTG concentration decreases in both mother and daughter cells, and under full induction, Cln3* concentration is positively correlated with birth size while G1 length is negatively correlated with birth size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 establish basic relationships between Cln3 levels, G1 length, and cell size. The data in Figures 1C and 1\u2014figure supplement 5 support these correlations. The maintenance of size control with the Cln3 mutant validates its use as a proxy for wild-type Cln3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C53"
+    ],
+    "result": "Two Cln3 mutants (CLN3R108A and CLN3D166A) with lower activity and longer half-life were successfully screened and validated as faithful replacements of wild-type CLN3 under experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72, C53 describe the rationale, screening, and validation of Cln3 mutants. The mutants fulfill the design criteria (detectable, functional rescue, tight shut-off) and maintain normal cell cycle behaviors under full induction (C53), justifying their use in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C56"
+    ],
+    "result": "Bck2 acts as a bypass Start trigger in wild-type cells to prevent excessively long G1 phase when Cln3 concentration is too low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C56 describe the role of Bck2 as a fail-safe mechanism. The data in Figure 3\u2014figure supplement 1F show that G1 length plateaus at ~29 min in BCK2+ strain at low Cln3, supporting this interpretation. This is consistent with the known ability of Bck2 to trigger Start in cln3\u0394 cells (C56).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The Start network consists of two modules coupled via Whi5: a triggering module (Cln3-Cdk1 phosphorylating Whi5) and a switching module (positive feedback loop setting threshold Whi5c).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present the conceptual framework for understanding the Start network architecture. This modular view is well-supported by prior literature (C7) and provides the foundation for the mathematical model. The framework successfully explains the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MCM intensity does not increase in suboptimal nutrient conditions and shows no correlation with integration threshold A, indicating specificity of Whi5 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 use MCM as a control to demonstrate specificity of Whi5 regulation by nutrients. The lack of MCM changes (Figure 4\u2014figure supplement 3C) supports that the observed Whi5 modulation is specific rather than a general effect on cell cycle proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "A full understanding of size control requires considering the combined action of Cln3 dynamics, Whi5tot concentration, and the integration mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 synthesizes the findings to propose a more complete model of size control. This conclusion is well-supported by the data showing both Cln3 and Whi5 contribute to G1 length determination, though the exact mechanism coupling Cln3 to size remains unclear in the mutant system used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C39"
+    ],
+    "result": "Signal integration may be widely implemented in decision-making and signaling systems, as it has been observed in animal behavior and now at the cellular level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C39 place the findings in broader context. While C39 correctly cites animal behavior studies, C85's speculation about widespread implementation is reasonable but not directly tested. The demonstration of integration at the cellular level is novel and significant, supporting the generality hypothesis.",
+    "result_type": "MAJOR"
+  }
+]

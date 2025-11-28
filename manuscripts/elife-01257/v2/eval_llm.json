@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Ribosome profiling reveals two distinct populations of ribosome footprints (28-30 nt and 20-22 nt) that represent ribosomes in distinct conformational states. Both footprint populations localize to coding sequences with 3-nucleotide periodicity, confirming they originate from translating ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C27 provide strong experimental evidence from sequencing data showing two distinct footprint populations with appropriate localization and periodicity. Claims C5, C6, C22, and C23 are supported by differential effects of elongation inhibitors. The data in Figures 2 and 3 directly support these findings with multiple replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Small and large footprints have the same 5' ends positioned 15-16 nt upstream of the A-site codon but differ at their 3' ends, with small footprints extending 2-3 nt beyond the A-site codon and large footprints extending 10 nt beyond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by metagene analysis shown in Figure 2F. The inference about footprint positioning relative to the A-site is based on established knowledge about start codon positioning and is consistent with the observed periodicity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cycloheximide treatment stabilizes ribosomes in a non-rotated conformation that predominantly protects 28-30 nt footprints, with very few 20-22 nt footprints observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are directly supported by experimental data in Figure 3A-C showing predominance of large footprints with cycloheximide. Claims C37-C39 combine cited prior knowledge about cycloheximide mechanism (C37) with reasonable inference about ribosome conformation (C38-C39). The interpretation is consistent with established understanding of cycloheximide action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Anisomycin treatment stabilizes a distinct ribosome conformation that predominantly protects 20-22 nt footprints, likely representing a rotated conformation based on analogy to lincomycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are strongly supported by experimental data in Figure 3D-F showing predominance of small footprints with anisomycin. Claim C43 is supported by cited prior work. Claims C44-C46 provide mechanistic context through analogy to lincomycin, though C46 acknowledges this is speculative. The reciprocal effects of cycloheximide and anisomycin provide strong evidence for distinct conformational states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Two distinct ribosome conformations can be stabilized using elongation inhibitors, and the nearly complete reciprocal bias in footprint sizes between cycloheximide and anisomycin treatment provides evidence that large and small footprints originate from distinct ribosomal conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are well-supported by the combined experimental data from cycloheximide and anisomycin treatments shown in Figure 3. The reciprocal effects provide strong evidence for the interpretation that footprint size reflects conformational state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Treatment with 3-AT creates histidine starvation that dramatically increases large footprints at histidine codons with minimal effect on small footprints, demonstrating that the decoding phase (non-rotated conformation) is represented by large footprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are directly supported by experimental data in Figure 4. Claim C56 is supported by cited structural studies. Claim C57 represents a strong inference combining the 3-AT experimental results with established knowledge about ribosome conformations during decoding. This provides key evidence linking footprint size to specific elongation stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Substantial codon-specific variation exists in footprint distributions and relative occupancies, with small footprints ranging from 38\u00b112% to 87\u00b19% of total footprints and relative occupancies varying over a fivefold range. These patterns are highly reproducible between replicates and reflect aspects of translation rather than technical artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are directly supported by per-codon analysis shown in Figure 5. Claims C62-C63 provide important validation that the observed patterns reflect biological processes rather than technical biases, supported by comparison of A-site versus downstream codon occupancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Codon identity affects both pre-peptide-bond and post-peptide-bond stages of elongation, but the effects on these two phases are distinct, as evidenced by the near-zero correlation (r=0.11) between small and large footprint abundances across codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by correlation analysis of footprint data shown in Figure 5C-D. The reproducibility of codon-specific patterns combined with the lack of correlation between small and large footprint abundances provides strong evidence for distinct codon effects on different elongation stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Amino acid polarity is a major determinant of small footprint abundance, with small footprints more abundant at codons encoding polar amino acids (Spearman's r=-0.75 by amino acid), while large footprint abundance shows no correlation with polarity. This suggests amino acid properties affect the stability of the rotated, post-peptide-bond conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are directly supported by correlation analysis shown in Figure 6A. The strong correlation with polarity for small but not large footprints provides compelling evidence. Claim C70 represents a reasonable inference from this data, though the exact mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "Codon optimality (tAI) and tRNA abundance show only weak correlations with relative occupancy and footprint abundances (r=-0.39 to -0.20), suggesting that tRNA availability is not a major determinant of ribosome occupancy under optimal growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by correlation analysis of tAI and tRNA copy number with occupancy measures. Claims C77 and C79 represent reasonable inferences from these weak correlations. This finding is somewhat surprising but well-supported by the data, though it contrasts with the 3-AT experiment showing tRNA limitation can affect occupancy under extreme conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "While wobble pairing shows no consistent effect on occupancy, three specific wobble codons (CCG, CUG, CGA) show notably higher occupancy with dramatic increases in small footprints. The CGA codon shows particularly slow translation due to a prolonged post-decoding stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by data in Figure 6B-D. Claims C84-C85 are supported by cited prior work on CGA. Claims C86-C88 combine the current footprint data with prior knowledge to provide mechanistic insight into CGA's inhibitory effect. The interpretation that slow elongation at CGA is due to prolonged post-decoding is well-supported by the increased small footprints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C93",
+      "C94",
+      "C100"
+    ],
+    "result": "The authors propose a model where each ribosome cycles through both conformations at each codon, with large footprints originating from non-rotated ribosomes during decoding and small footprints from rotated ribosomes during translocation. The ratio of footprint sizes could reflect the relative duration of different elongation stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C93, C94, and C100 represent the authors' proposed model integrating their experimental findings. While these are explicitly stated as hypotheses/proposals, they are well-supported by the combined evidence from drug treatments (cycloheximide, anisomycin, 3-AT), codon-specific patterns, and consistency with established structural knowledge. The model provides a coherent framework explaining all major observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C98",
+      "C99"
+    ],
+    "result": "Small footprints were revealed only after omitting cycloheximide from the experimental procedure. Previous studies also observed both footprint sizes in the absence of cycloheximide, and both sizes have been observed with different nucleases and in different species, indicating the phenomenon is neither species- nor nuclease-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by comparison of experiments with and without cycloheximide. Claims C91-C92 and C98-C99 are supported by citations to prior work (Wolin and Walter, 1988), providing important validation that the two footprint sizes are a general phenomenon rather than an artifact of the specific experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "While ribosome footprint data have inherent technical biases and the overall balance of small and large footprints varied between replicates, the codon-specific variation in footprint ratios was robust and reproducible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 acknowledge important limitations while highlighting the robustness of the key findings. The reproducibility of codon-specific patterns despite overall variability strengthens confidence in the biological significance of the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Harvest methods significantly affect footprint distributions, with ribosomes depleted from the first 50 codons in untreated samples (suggesting ~10s of continued elongation after initiation ceases) and surprisingly low correlation of per-codon occupancies between cycloheximide-treated and untreated samples (r=0.02), though per-gene totals correlate well (r=0.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by correlation analysis and observed depletion patterns. These findings highlight important methodological considerations and potential artifacts that must be considered when interpreting ribosome profiling data. The exclusion of the first 50 codons from analysis is appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Using an estimated bulk elongation rate of 5.6 amino acids per second, the model predicts codon-specific elongation times ranging from 0.08s (GGU) to 0.5s (CCG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 cites a prior estimate of elongation rate. Claim C102 represents a calculation based on relative occupancy data and this rate estimate. However, the authors acknowledge multiple caveats about interpreting occupancy as duration, including technical biases and uncertainty about which conformation is more populated in vivo. The calculation is reasonable but should be considered preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The authors hypothesize that interactions between the ribosome and polar amino acids acylated to the A-site tRNA can slow translocation substantially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is explicitly stated as a hypothesis to explain the observed correlation between amino acid polarity and small footprint abundance. While the correlation is well-supported, the specific molecular mechanism remains speculative and would require additional biochemical or structural studies to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The authors initially hypothesized that non-rotated and rotated ribosomes might protect different lengths of mRNA, and that the two footprint sizes might represent these two conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe the initial hypothesis that motivated the drug treatment experiments. While stated as a hypothesis, it is subsequently well-supported by the experimental evidence from cycloheximide, anisomycin, and 3-AT treatments. This represents the conceptual framework that guided the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Crystal structures suggest mRNA accessibility is not dramatically different between rotated and non-rotated conformations. The physical mechanism generating different footprint sizes may involve RNase I penetrating the mRNA entrance channel or differential ribosomal RNA susceptibility to degradation in different conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is supported by cited structural studies. Claims C96-C97 are explicitly speculative proposals about the molecular mechanism of differential footprint generation. These remain unresolved questions requiring further investigation, though the observation that both footprint sizes occur with different nucleases (C98) provides some constraints on possible mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C33",
+      "C40",
+      "C52",
+      "C56",
+      "C58",
+      "C72",
+      "C80",
+      "C84",
+      "C85",
+      "C111"
+    ],
+    "result": "Background claims establishing prior knowledge about translation elongation, ribosome conformational changes, ribosome profiling methodology, and properties of specific codons and inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior work, supported by appropriate citations. They provide essential context for interpreting the novel findings but are not themselves new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The 3-AT experiment demonstrates that in an extreme case of tRNA limitation, translation slows during the large-footprint (decoding) stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is directly supported by the 3-AT experimental data showing increased large footprints at histidine codons. This provides important validation of the model linking footprint size to elongation stage, though it represents an extreme perturbation rather than normal physiological conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C112",
+      "C113"
+    ],
+    "result": "The abundance of footprints from each elongation step is affected by multiple codon-specific features with sometimes synergistic and opposing effects. Ribosome profiling reveals lack of uniformity in both decoding and post-decoding steps, potentially due to diversity in amino acid properties and codon-anticodon stability affecting post-decoding kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 represents a summary inference from the multiple factors identified (amino acid polarity, wobble pairing, etc.). Claim C112 is supported by the ribosome profiling data. Claim C113 is speculative but represents reasonable interpretation of the mechanistic basis for observed variation, consistent with the data showing distinct effects on different elongation stages.",
+    "result_type": "MINOR"
+  }
+]

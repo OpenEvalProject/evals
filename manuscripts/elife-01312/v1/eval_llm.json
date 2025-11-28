@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C130",
+      "C132",
+      "C136",
+      "C138"
+    ],
+    "result": "The hemispheric decoder, which pools activity across each hemisphere, performs poorly and discards critical information present in heterogeneous neural tuning, while pattern-based decoders that preserve cell identity information provide robust ITD estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C130, C132, and C136 demonstrate through computational modeling across multiple conditions (Figures 2-6) that hemispheric pooling is insufficient for reliable sound localization. Claims C4, C27, and C138 show that heterogeneous tuning contains essential information exploited by pattern decoders. The evidence spans simple to complex acoustic scenarios and is consistent across species models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C162"
+    ],
+    "result": "Simulated unilateral lesions show that sound localization remains intact in the ipsilateral field but degrades in the contralateral field, consistent with lesion studies in cats and humans, supporting pattern-based rather than hemispheric comparison codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 presents simulation results (Figure 7B) showing asymmetric performance after lesion. Claims C88-C89 cite empirical lesion studies showing the same pattern. Claim C90 notes this is incompatible with hemispheric comparison. The convergence of simulation and cited empirical data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C69",
+      "C81"
+    ],
+    "result": "A pattern match decoder that preserves information about cell identity (BF and BD) substantially outperforms both peak and hemispheric decoders across species models and acoustic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 document superior performance of pattern matching across frequencies and species (Figure 2B, 3A). Claims C69, C81 extend this to noise and HRTF conditions (Figures 5B, 6D). Claim C47 notes it outperformed multiple machine learning alternatives. The consistency across diverse test conditions strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C135"
+    ],
+    "result": "The hemispheric decoder lacks robustness to spectral variations: performance degrades when trained on broadband noise and tested on band-pass noise, and shows bias toward center with colored noise due to frequency-dependent changes in hemispheric difference curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 document poor cross-frequency performance (Figure 3B). Claims C58-C60 show bias with colored noise (Figure 3D). Claim C135 demonstrates degradation with broadband training. The mechanistic explanation (frequency-dependent hemispheric difference) is provided with supporting data, making this a well-supported finding about a fundamental limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C137"
+    ],
+    "result": "Heterogeneity in best delay tuning is critical for robust ITD estimation: reducing heterogeneity eliminates the advantage of pattern matching over hemispheric decoding, while increasing heterogeneity improves pattern decoder performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 present systematic manipulation of BD heterogeneity (Figure 7A) showing performance depends on heterogeneity for pattern but not hemispheric decoders. Claim C137 notes this directly contradicts prior claims favoring homogeneous populations. The experimental manipulation provides direct causal evidence for the role of heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "At low signal-to-noise ratios, the pattern match decoder substantially outperforms the hemispheric decoder, and even the smoothed peak decoder proves more robust than the hemispheric decoder, due to bias problems in the hemispheric approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 document relative performance in noise (Figure 5B). Claims C73-C74 provide mechanistic explanation via bias analysis. The finding that even a simpler decoder (smoothed peak) outperforms hemispheric coding in noise strengthens the case against hemispheric models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C97",
+      "C98",
+      "C106",
+      "C107",
+      "C108",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The hemispheric decoder produces errors inconsistent with behavioral sound localization accuracy in cats, humans, and barn owls, while the pattern match decoder provides sufficient information to account for observed behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 state the overall conclusion. Claims C97-C98, C106-C108, C120-C124 provide specific quantitative comparisons between model predictions and cited behavioral data across three species (Figures 6D, 8). The hemispheric decoder consistently produces errors 2-10\u00d7 larger than behavioral thresholds, while pattern matching is compatible with behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C65"
+    ],
+    "result": "Frequency-dependent normalization of hemispheric responses improves cross-frequency integration but still performs worse than training and testing in the same frequency band, while similar corrections improve pattern matching to near-optimal levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe the frequency-dependent correction and its effects (Figure 4). The correction addresses a known issue (frequency-dependent slope) but only partially rescues performance. This demonstrates an attempt to optimize the hemispheric model that still falls short, strengthening the case for alternative approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C79",
+      "C77",
+      "C78",
+      "C82",
+      "C83"
+    ],
+    "result": "When realistic head-related transfer functions with frequency-dependent ITDs are used, the pattern match decoder substantially outperforms the hemispheric decoder because it can exploit frequency-specific information that hemispheric pooling discards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 establish that HRTFs produce frequency-dependent ITDs, validated against prior measurements (Figure 6B). Claims C82-C83 show pattern matching exploits this while hemispheric coding cannot (Figure 6D). The use of measured HRTFs increases ecological validity of the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The peak decoder performs poorly due to spiking noise in single cells; smoothing improves performance but still relies on limited cell pools; hemispheric pooling reduces noise but discards BF/BD information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 document peak decoder limitations (Figure 2A). Claims C38-C41 provide mechanistic explanations for each decoder's limitations. These serve as important controls and establish the rationale for the pattern matching approach. The explanations are logical and consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "Decoder performance in restricted contexts overestimates performance in ecologically realistic scenarios; model results should be interpreted as lower bounds on decoder error, with the hemispheric decoder's poor performance being optimistic despite enhancement efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 establish the general principle with direct demonstration (comparing Figures 2B and 3B). Claims C104-C105 apply this to interpret results. This is an important methodological point that strengthens rather than weakens the main conclusions, as it suggests real-world performance gaps would be even larger.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C141"
+    ],
+    "result": "For a given level of accuracy, the hemispheric decoder requires many more neurons than the pattern match decoder, making it energetically inefficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118 and C141 both reference Figure 3A showing the relationship between neuron number and accuracy. This provides an additional argument against hemispheric coding beyond accuracy alone. The evidence is clear from the scaling curves, though the energetic efficiency argument is somewhat indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C133",
+      "C134",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Previous studies showing optimality of hemispheric codes tested only simple scenarios where ITD alone varies; in complex ecological situations with multiple varying dimensions, sensitivity-robustness tradeoffs favor heterogeneous pattern codes over summation codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 cite prior work on simple scenarios. Claims C133-C134 critique these as limited. Claims C22-C25 present theoretical framework for why complexity matters. This provides important context for why current results differ from prior conclusions, though the theoretical framework (C24-C25) relies heavily on a single citation (Brette, 2010).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C42",
+      "C160",
+      "C161",
+      "C163"
+    ],
+    "result": "The pattern match decoder can be implemented as a simple perceptron with Hebbian learning, is consistent with spatially tuned neurons observed in inferior colliculus, and is compatible with unilateral lesion effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 describe neural implementation. Claims C42, C160-C161, C163 connect to known physiology. The implementation is plausible and consistent with anatomy, though claim C158 about Hebbian learning is speculative. The physiological compatibility strengthens biological plausibility of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The hemispheric decoder requires both hemispheres for any localization, produces graded rather than spatially tuned responses, and would require additional nonmonotonic processing stages to generate spatial tuning, making it more complex than pattern-based alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C168 present logical analysis of hemispheric decoder requirements. The arguments are sound and highlight implementation challenges, though they are theoretical rather than empirically tested. This provides additional reasons to question the biological plausibility of hemispheric coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C185",
+      "C186"
+    ],
+    "result": "The computational model used is based on established models validated against empirical data and produces realistic responses, justifying its use given the infeasibility of obtaining sufficient electrophysiological data (>7 months of recording per cell).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C182 justify the modeling approach. Claims C185-C186 document validation. The justification is reasonable given practical constraints, and validation against published data (Joris et al., 2006) provides confidence. However, the study's conclusions ultimately depend on model accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C128",
+      "C129"
+    ],
+    "result": "Two competing theories exist for ITD coding in mammals: the Jeffress pattern/labeled-line theory and the more recent hemispheric summation theory, with the debate centered on whether the auditory system uses cell identity or sums activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C10, C15-C16, C128-C129 describe the theoretical landscape with appropriate citations. Claims C11-C14 note species differences and discrepancies. This accurately frames the scientific context and motivation for the study. The characterization of the debate is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "The discrepancy between current results and previous arguments for hemispheric coding stems from confusion between accuracy (absolute localization) and acuity (discrimination), with acuity relating to sensitivity but accuracy being the ecologically relevant measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 provide conceptual clarification with supporting citations. This is an important interpretive point that helps reconcile apparently conflicting findings. The distinction is well-established in the psychophysics literature (cited references), making this a valid reframing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Neural correlations in the MSO are likely dominated by stimulus-dependent rather than anatomical or feedback sources; when such correlations exist, optimal decoding differs from the most sensitive code, and correlation structure contains exploitable information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C145 argue MSO correlations are mainly stimulus-dependent, based on limited lateral connections (C143-C144 with citations). Claims C146-C148 present theoretical framework. However, the characterization of MSO correlations is somewhat speculative, and the theoretical claims (C147-C148) depend heavily on Brette 2010. More direct evidence about correlation structure would strengthen this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Previous studies found good performance with pattern decoders and opponent channel models, but tested only single sound types; a recent study found maximum likelihood outperformed hemispheric decoding, consistent with current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 summarize prior work with citations. Claim C155 critiques the limited stimulus diversity. Claim C156 cites consistent recent findings (Day and Delgutte, 2013). This appropriately contextualizes the current work within the literature, though the critique of prior studies (C155) could apply to some aspects of the current work as well.",
+    "result_type": "MINOR"
+  }
+]

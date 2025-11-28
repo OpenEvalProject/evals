@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The phosphodiesterase Pch (PA5017) is required for generating c-di-GMP heterogeneity in P. aeruginosa populations. Deletion of PA5017 eliminates the bimodal distribution of c-di-GMP, and complementation with catalytically active, but not inactive, Pch restores heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from FRET microscopy (C1), transposon screening (C2), prior characterization (C3), and genetic complementation with catalytic mutants (C4). The data demonstrate that Pch PDE activity is both necessary and sufficient for maintaining the low c-di-GMP subpopulation, with appropriate controls including catalytically inactive mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C9"
+    ],
+    "result": "Pch-mCherry localizes to the cell pole in 50% of cells and is asymmetrically partitioned during cell division to the daughter cell that exhibits low c-di-GMP levels. This asymmetric partitioning mechanism generates c-di-GMP heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 provide direct microscopy evidence from both snapshot and time-lapse imaging showing polar localization and asymmetric partitioning. C9 appropriately infers the mechanistic link between Pch partitioning and c-di-GMP heterogeneity. The correlation between Pch localization and low c-di-GMP is quantitatively demonstrated in Figure 2C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The flagellar apparatus, but not its polar positioning, is required for Pch localization and maintenance of low c-di-GMP levels. The fliF mutant abolishes both Pch localization and c-di-GMP heterogeneity, while the flhF mutant delocalizes Pch but maintains heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 provide a clear genetic dissection using fliF (flagellar assembly) and flhF (polar positioning) mutants. The differential effects on Pch localization versus c-di-GMP heterogeneity are well-documented with microscopy and FRET measurements. However, the interpretation in C14 is complicated by the observation that fliF also reduces Pch-mCherry protein levels (Figure 3\u2014figure supplement 2), making it unclear whether elevated c-di-GMP results from loss of localization or reduced Pch expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The chemotaxis machinery histidine kinase CheA is required for both polar localization and activity of Pch. Deletion of cheA abolishes Pch localization and eliminates c-di-GMP heterogeneity, while deletions of other chemotaxis components (cheR, cheY, cheB) have no effect on Pch localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 systematically test chemotaxis components and identify CheA as specifically required. The data show that cheA deletion affects both Pch localization (C16) and c-di-GMP heterogeneity (C17), while other che genes do not affect localization (C15). The inference in C18 is well-supported by the genetic evidence, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The phosphorylation state of CheA is required for Pch activity but not localization. The CheAH49N phosphotransfer mutant maintains Pch localization but fails to maintain low c-di-GMP levels, indicating that CheA phosphorylation regulates Pch enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 provide a clear separation-of-function experiment. The CheAH49N mutant that cannot undergo phosphotransfer maintains Pch localization (C19) but loses c-di-GMP heterogeneity (C20), supporting the conclusion that CheA phosphorylation regulates Pch activity (C21). This is a well-designed experiment with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C31",
+      "C32"
+    ],
+    "result": "Pch co-localizes with CheA at the cell pole and forms a complex with CheA or a CheA-associated protein. Pch and CheA co-localize in 93% of cells, are spatially separated from the flagellar motor protein FliM, and co-immunoprecipitate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 and C31-C32 provide multiple lines of evidence for Pch-CheA association: dual fluorescence microscopy showing co-localization (C22-C23), spatial measurements distinguishing CheA-Pch from CheA-FliM complexes (C24-C25), and biochemical validation by co-IP (C31). The conclusion that Pch associates with CheA or a CheA-associated adaptor (C32) is appropriately cautious given that direct interaction has not been demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "c-di-GMP levels modulate cell velocity in P. aeruginosa. Deletion of pch reduces velocity, while ectopic expression of a PDE increases the population of cells with higher velocities, indicating that c-di-GMP has a physiological role in regulating motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 demonstrate bidirectional effects of c-di-GMP on cell velocity using single-cell tracking. The \u0394pch mutant shows reduced velocity (C34), while PDE overexpression increases velocity (C35), supporting the physiological role of c-di-GMP in velocity modulation (C36). The use of automated, unbiased tracking methods strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "c-di-GMP levels modulate flagellar reversal frequency in P. aeruginosa. Wild-type cells show ~25% reversal frequency, which increases to >60% with PDE overexpression and decreases in \u0394pch mutants. Control strains (\u0394cheY, \u0394cheB) show expected reversal phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 systematically characterize reversal behavior across multiple genetic backgrounds. The data show dose-dependent effects of c-di-GMP on reversals (C37-C39) with appropriate positive and negative controls (C40-C41). The inference that c-di-GMP creates heterogeneity in both velocity and chemotaxis output (C42) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The PilZ domain protein PA3353 (YcgR homolog) does not mediate the effects of c-di-GMP on velocity or reversals under the assay conditions used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 show that deletion of PA3353 does not affect velocity or reversal rates. This negative result is appropriately qualified to the specific assay conditions used (C44). While this suggests PA3353 is not the primary mediator of c-di-GMP effects on motility in P. aeruginosa under these conditions, the possibility of redundant mechanisms or condition-specific effects is not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CheA deletion does not affect flagellar assembly, as evidenced by maintained FliM localization and motility in cheA mutants. Pch activation and localization depend primarily on CheA rather than the flagellar apparatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 establish that cheA deletion does not disrupt flagellar assembly, using FliM localization (C27) and prior motility data (C28) as evidence. This supports the conclusion that Pch depends on CheA rather than the flagellum per se (C30). However, the interpretation is complicated by the fact that flagellar assembly is required for chemotaxis machinery expression (C60), creating an indirect dependency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Pch likely interacts with CheA through an adaptor protein. Pch lacks CheW-like or receiver domains typically associated with CheA interactions, but possesses a degenerate GGDEF domain that could interact with a receiver domain-containing adaptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C83 present a speculative model for Pch-CheA interaction based on domain analysis. While the domain analysis is sound (C79, C81) and the proposed mechanism is plausible based on known GGDEF-receiver interactions (C82), this remains a hypothesis without direct experimental validation. The model is appropriately presented as speculative (C78, C83), but requires further experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Pch-mCherry localization is more diffuse in cheA deletion than in fliF deletion, suggesting additional protein interactions beyond CheA. FliF is required for flagellar assembly and expression of Class IV flagellar genes including chemotaxis components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 reports an observation of differential Pch localization patterns between mutants. Claims C85-C86 provide established knowledge about the flagellar regulatory cascade. Together, these suggest that FliF-dependent gene expression may affect Pch localization through additional factors, though the specific factors remain unidentified. The observation is valid but the mechanistic interpretation remains incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "A minority of cells exhibit high c-di-GMP despite having polarly localized Pch, possibly due to lack of allosteric activation of Pch in these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 reports a clear observation from FRET microscopy. Claim C88 offers a speculative but reasonable explanation based on Pch's multiple sensory domains. This observation is consistent with the known cAMP activation of Pch (C71) and suggests additional regulatory mechanisms, though these remain to be characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "c-di-GMP heterogeneity in P. aeruginosa is generated by asymmetric partitioning of the Pch phosphodiesterase, which depends on CheA and its phosphorylation state. This heterogeneity results in diverse motility behaviors within the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 summarize the major findings of the study. These summary claims are well-supported by the collective evidence from genetic, microscopy, and motility experiments. The mechanistic link from Pch partitioning through CheA-dependent regulation to motility diversity is established through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The requirement for chemotaxis machinery to activate Pch ensures that c-di-GMP heterogeneity occurs preferentially in motile, chemotaxis-competent populations, conferring diversity in cell velocities and reversal rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 present reasonable inferences from the experimental data. The dependence of Pch activity on functional chemotaxis machinery (C89) is well-established by the genetic experiments. The conclusion that this generates motility diversity (C90) is directly supported by the single-cell tracking data showing heterogeneity in both velocity and reversals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C73",
+      "C74"
+    ],
+    "result": "The generation of c-di-GMP heterogeneity through asymmetric partitioning may be important for bacterial survival by allowing diverse motility and chemotaxis behaviors, potentially providing advantages when encountering varied chemical gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C73, and C74 present speculative interpretations about the adaptive significance of c-di-GMP heterogeneity. While the speculation is reasonable and supported by prior literature on chemotaxis diversity (C73), no direct evidence for fitness advantages or behavior in chemical gradients is provided. The authors appropriately acknowledge that observations were made in uniform environments (C74).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "c-di-GMP heterogeneity involves a specific molecular mechanism linked to organelle inheritance rather than stochastic processes. Similar mechanisms may exist for other asymmetrically inherited organelles, representing a broader strategy for generating cellular diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is well-supported by the demonstration of a specific, CheA-dependent mechanism for Pch partitioning. Claims C76-C77 extend this to speculate about broader mechanisms, which is reasonable given the precedent established but remains hypothetical for other organelles. The distinction between mechanism-based and stochastic heterogeneity is an important conceptual contribution.",
+    "result_type": "MAJOR"
+  }
+]

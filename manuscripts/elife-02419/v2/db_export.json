@@ -1,0 +1,1515 @@
+{
+  "submission": {
+    "id": "07ff67fb-6a9a-4773-a800-7403b2fd8b25",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:29:20.986858Z",
+    "updated_at": "2025-11-28T20:29:20.986858Z"
+  },
+  "content": [
+    {
+      "id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "submission_id": "07ff67fb-6a9a-4773-a800-7403b2fd8b25",
+      "content_type": "manuscript",
+      "content_text": "# The GTPase IFT27 is involved in both anterograde and retrograde intraflagellar transport\n\n## Authors\n\n- Diego Huet<sup>1</sup>\n- Thierry Blisnick<sup>1</sup>\n- Sylvie Perrot<sup>1</sup>\n- Philippe Bastin<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Trypanosome Cell Biology Unit Institut Pasteur & CNRS Paris France\n2. Universit\u00e9 Pierre et Marie Curie, Cellule Pasteur-UPMC Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe construction of cilia and flagella depends on intraflagellar transport (IFT), the bidirectional movement of two protein complexes (IFT-A and IFT-B) driven by specific kinesin and dynein motors. IFT-B and kinesin are associated to anterograde transport whereas IFT-A and dynein participate to retrograde transport. Surprisingly, the small GTPase IFT27, a member of the IFT-B complex, turns out to be essential for retrograde cargo transport in Trypanosoma brucei. We reveal that this is due to failure to import both the IFT-A complex and the IFT dynein into the flagellar compartment. To get further molecular insight about the role of IFT27, GDP- or GTP-locked versions were expressed in presence or absence of endogenous IFT27. The GDP-locked version is unable to enter the flagellum and to interact with other IFT-B proteins and its sole expression prevents flagellum formation. These findings demonstrate that a GTPase-competent IFT27 is required for association to the IFT complex and that IFT27 plays a role in the cargo loading of the retrograde transport machinery.\n\n## Introduction\n\nCilia and flagella (interchangeable terms) are microtubule-based organelles surrounded by a specialized plasma membrane. These organelles are found protruding at the surface of a wide range of eukaryotic cells where they exert several roles including cellular motility, sensory reception and developmental signaling (Fliegauf et al., 2007; Drummond, 2012). Although cilia and flagella can differ by their functions, they share the same basic structure and are mainly assembled by an evolutionary conserved process called intraflagellar transport (IFT) (Kozminski et al., 1993; Rosenbaum and Witman, 2002). During IFT, large protein complexes called IFT trains are moved from the base to the tip of the flagellum by kinesin-2 (anterograde IFT) (Kozminski et al., 1995) and back towards the base by cytoplasmic dynein-1b/2 (retrograde IFT) (Pazour et al., 1998). The IFT particles are composed of at least 20 different proteins (Cole et al., 1998; Follit et al., 2009; Taschner et al., 2011) and can be divided in two different complexes known as complex A (made of at least 6 proteins) and B (made of at least 14 proteins) that are needed for retrograde and anterograde IFT respectively. Inactivation of IFT-B proteins or of the kinesin motor results in the failure to construct the flagellum whereas IFT-A proteins and the IFT dynein contribute to retrograde transport. Nevertheless, little is known about how the two processes are interconnected, as the interaction between the IFT complexes and their molecular motors is still poorly understood.\n\nStructurally, IFT proteins contain several protein\u2013protein interaction domains such as WD40, tetratricopeptide repeats, \u03b2-propeller or coiled-coil domains (Cole, 2003). However, two IFT proteins belonging to the IFT complex B do not share those features. Instead, they exhibit sequence homologies with the family of Rab-like small G proteins, which can function to regulate vesicle movement along actin and tubulin networks (Stenmark, 2009). This suggests that they could be involved in IFT regulation. The first one, IFT22 (or Rab-like 5) traffics inside the sensory neurons of Caenorhabditis elegans, where its disruption does not affect cilia assembly but produces an intriguing extended lifespan phenotype (Schafer et al., 2006). IFT22 also undergoes IFT in the flagellum of the protist Trypanosoma brucei but surprisingly knocking down the protein resulted in severe flagellar assembly defects, typical of inhibition of retrograde transport (Adhiambo et al., 2009). In Chlamydomonas, IFT22 regulates the availability of IFT proteins inside the cell (Silva et al., 2012). Despite being homologous to the Rab-like proteins, IFT22 lacks the G4 domain needed for recognition of the guanine base (Paduch et al., 2001) and GTP binding and hydrolysis has not been demonstrated to date. Therefore, IFT22 might have diverged from its ancestral GTPase function to complete specific roles in C. elegans, T. brucei, and Chlamydomonas.\n\nThe second protein is termed IFT27 (or Rab-like 4) and contrary to IFT22, it possesses all five RAS-GTPase consensus sequences needed for GTPase activity and GDP binding. Structurally, the protein is similar to Rab8 and Rab11 and is capable of GTP hydrolysis (Bhogaraju et al., 2011). IFT27 is part of the IFT complex B core, where the protein interacts directly with IFT25 (Lucker et al., 2005). This IFT25/27 sub-complex is associated with the rest of the IFT complex B prior to flagellum entry, suggesting a possible regulatory role during the entry of the IFT machinery (Wang et al., 2009). In Chlamydomonas, RNAi-mediated knockdown of IFT27 causes flagellar defects (Qin et al., 2007), supporting its role during flagellar assembly, although its exact contribution was not investigated. In this study, we analyzed the function of IFT27 in T. brucei, the parasite that causes sleeping sickness and that is also an amenable model to study flagellar assembly (Kohl and Bastin, 2005; Ralston and Hill, 2008) as well as the IFT components (Absalon et al., 2008b; Adhiambo et al., 2009; Franklin and Ullu, 2010; Bhogaraju et al., 2013; Buisson et al., 2013). We found that IFT27 travels by IFT and associates with other IFT-B proteins. RNAi knockdown surprisingly produced short flagella filled with IFT-like material and axoneme assembly defects. This phenotype is explained by the absence of both the IFT140 protein (a member of the IFT-A complex) and the IFT dynein motor from the flagellar compartment. Generation of constitutively active and inactive forms of IFT27 produced further insights: while expression of the active version of the protein complements the RNAi phenotype, this was not the case of the inactive version that was unable to penetrate the flagellar compartment. Surprisingly, its expression in the absence of endogenous protein led to the formation of short flagella that do not accumulate IFT-like material. This inactive version is unable to interact with two other IFT-B proteins, suggesting that IFT27 must be in a GTP-bound state in order to interact with the B-complex and enter the flagellum. These results show that IFT27, an IFT-B protein, performs two separate functions: one in the import of both the IFT-A complex and IFT dynein motors and one in the assembly of the IFT-B complex.\n\n## Results\n\n### IFT27 encodes a putative Rab-like protein\n\nThe T. brucei IFT27 gene (TritrypDB Accession number Tb927.3.5550) has a 552 nucleotide-long sequence that encodes a predicted protein of 183 amino acids (predicted molecular weight of 20.64 kDa). BLAST analyses show that IFT27 shares significant homology (E value = 2e\u221227) with the Rab-like 4 (RABL4) GTPase found in Homo sapiens and vertebrates. IFT27 homologues are present in the genomes of all ciliated organisms except in Drosophila, C. elegans, Giardia, and some ferns and mosses (van Dam et al., 2013). The predicted trypanosome protein contains all five consensus domains needed for GTP/GDP binding and GTPase activity found in most Rab proteins (Figure 1), indicating that IFT27 could be a functional small G protein. Additionally, all IFT27 sequences lack the prenylation motif (two cysteins at the C terminal end) found in Rab proteins suggesting that the protein is not lipid modified and thus unlikely to interact with the cellular membrane.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig1-v2.jpg)\n\n**Figure 1.:** Alignment was generated using CLC main workbench; the most conserved residues are shown in black, the less conserved in yellow. G1\u2013G5 indicates conserved motifs implicated in nucleotide binding domains and GTPase activity. Dashes indicate gaps introduced to optimize the alignment. Arrowheads indicate missense mutations created in IFT27RNAiRES. Abbreviations and accession numbers are as follows: Hs: Homo sapiens, NP_006851.1, Mm: Mus musculus, NP_080207.1, Dr: Danio rerio, NP_001008588.1, Cr: Chlamydomonas reinhardtii, XP_001689745.1, Tb: Trymanosoma brucei, Tb927.3.5550, Tc: Trypanosoma cruzi, AY371275, Lm: Leishmania major, LmjF.29.0090, Tt: Tetrahymena thermophila, TTHERM_00298510.\n\n### IFT27 traffics in the trypanosome flagellum\n\nTwo approaches were used to determine the location of IFT27 in T. brucei. First, the full-length protein was expressed and used to produce antisera in mice. Second, a GFP::IFT27 fusion protein was expressed in procyclic trypanosomes. Western blot analyses using the anti-IFT27 antibody showed a single band migrating at a position close to the predicted size of 20 kDa in wild-type cells (Figure 2A). In trypanosomes expressing the GFP::IFT27 fusion, the same antibody detected an additional band migrating close to the 50 kDa marker. This molecular weight is compatible with the expected mass of the fusion protein (Figure 2A). The anti-IFT27 antibody was then used in immunofluorescence assays in combination with DAPI to stain both nuclear and mitochondrial DNA, the latter being an easy marker of basal body positioning in trypanosomes (Robinson and Gull, 1991). In wild-type cells, the anti-IFT27 antibody produced a signal all along the flagellum, starting at the base of the organelle and reaching its distal tip where it was sometimes brighter (Figure 2B). The GFP-fusion protein showed a similar localization, with the presence of the protein at the flagellum base and inside the flagellum. Co-staining of the GFP-tagged protein and IFT27 showed a clear colocalization inside the flagellum (Figure 3A) and the use of live microscopy demonstrated that the fusion protein clearly traffics along the flagellum (Figure 2C,D; Video 1) where typical bidirectional IFT was visualized. Similar IFT trafficking was observed for other IFT-related proteins in trypanosomes including GFP::IFT52 (Absalon et al., 2008b), GFP::IFT22 (Adhiambo et al., 2009), and YFP::IFT81 (Bhogaraju et al., 2013). Kymographs were made to quantify IFT train speed (Figure 2D). The mean anterograde velocity was 2.5 \u00b1 0.68 \u00b5m/s (n = 234) and mean retrograde velocity was measured at 3.8 \u00b1 1.5 \u00b5m/s (n = 269). These speed values are similar to those previously reported for GFP::IFT52 (Buisson et al., 2013). Overall, these results show that IFT27 distribution and movement are similar to the other IFT-B proteins studied to date in T. brucei.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig2-v2.jpg)\n\n**Figure 2.:** (A) Western blot of wild-type trypanosomes and cells expressing GFP::IFT27 probed with the anti-IFT27 polyclonal antibody. (B) Immunofluorescence of wild-type cells fixed in methanol using the anti-IFT27 polyclonal antibody. The first panel shows the phase-contrast image merged with DAPI staining and the second one shows the anti-IFT27 staining (green) merged with DAPI staining (blue). (C) Still images of a trypanosome expressing GFP::IFT27 (Video 1). The white arrow shows the fluorescent protein pool at the level of the flagellum base and the yellow arrow shows the distal tip of the flagellum. Arrowheads indicate the successive position of an anterograde IFT train. (D) Kymograph from Video 1 shows clear IFT traces. Anterograde and retrograde events were separated as previously described (Chenouard et al., 2010, Buisson et al., 2013). Scale bars: 5 \u00b5m in B and C. In D, horizontal scale bar is 2 \u00b5m and vertical scale bar is 2 s.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig3-v2.jpg)\n\n**Figure 3.:** (A) Trypanosomes expressing GFP::IFT27 were fixed in methanol and stained simultaneously with the anti-IFT27 (red) antibody and the anti-GFP antibody (green). Top left and right panels show the phase-contrast image merged with DAPI staining and the anti-IFT27 staining respectively. Bottom left and right panels show the anti-GFP staining and the merged image. Non-induced (B) and 3-day induced (C) IFT27RNAiRESYFP cells were fixed in methanol and immunofluorescence assays was performed using simultaneously the anti-IFT27 and the anti-GFP antibodies in order to locate the endogenous and the fluorescent version of IFT27. Immunofluorescence assays reveal that both proteins are found within the flagellum. Scale bars: 5 \u00b5m.\n\n![Video 1.](https://cdn.elifesciences.org/articles/02419/elife-02419-media1.avi.jpg)\n\n**Video 1.:** Live procyclic, wild-type T. brucei cell transfected with GFP::IFT27 observed by time-lapse epifluorescence microscopy using a DMI4000 microscope at room temperature. Frames were taken every 250 ms for 30 s by an Evolve 512 EMCCD Camera. The resulting video was then exported to.AVI format with the ImageJ 1.47g13 software.\n\n### IFT27 is required for cell growth and flagellum formation\n\nTo evaluate the role of IFT27, inducible RNA interference (RNAi) was used to deplete the expression of the protein in 29\u201313 procyclic parasites in culture. The 29-13 strain expresses the tetracycline repressor and the viral T7 RNA polymerase, which enables conditional expression of double stranded RNA leading to RNAi-mediated gene inhibition (Wirtz et al., 1999; Wang et al., 2000). Western blot analysis using the anti-IFT27 polyclonal antibody showed that the IFT27 expression was inhibited after 48 hr of induction (Figure 4A) and IFT27RNAi cells showed a clear growth defect upon depletion of the protein (Figure 4B), in line with the essential role of the flagellum for the trypanosome cell cycle (Kohl et al., 2003). To analyze the impact of IFT27 depletion on flagellar formation, two markers were used: MAb25 (monoclonal, axoneme-specific) and L8C4 (monoclonal, paraflagellar rod-specific). Immunofluorescence assays results revealed that IFT27RNAi cells induced for 72 hr assemble abnormally short flagella (Figure 4C bottom panel, arrowhead) with a mean axonemal length of 4.0 \u00b1 6.8 \u00b5m (n = 100) instead of 20.5 \u00b1 2.8 \u00b5m (n = 100) for non-induced controls (Figure 4C, top panel). Furthermore, L8C4 staining unpredictably displayed a very bright or very weak staining in the flagella of induced IFT27RNAi cells, indicating that an excessive or a restrained amount of paraflagellar rod (PFR) material per unit length is found in the flagella of these cells (Figure 4C, bottom panel, arrow).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig4-v2.jpg)\n\n**Figure 4.:** (A) Western blot showing decrease of IFT27 protein upon RNAi silencing. Total protein samples of non-induced and induced cells were prepared after the indicated number of days. The membrane was incubated with the anti-IFT27 or the anti-aldolase as a control. (B) Growth curve of non-induced (blue) and induced (red) IFT27RNAi cells. (C) Non-induced and 3-day induced IFT27RNAi cells were fixed in methanol, stained with the Mab25 antibody to detect the axoneme (red) and the L8C4 antibody to detect the PFR (green) (right panels) then counterstained with DAPI (left panels). The arrowhead shows an abnormally short axoneme with an insufficient amount of PFR and the arrow indicates an excessive amount of PFR. Scale bar: 5 \u00b5m.\n\nTo evaluate whether and how IFT was affected, we first used immunofluorescence assays with three antibodies raised against different IFT-B proteins: IFT22 (Adhiambo et al., 2009), IFT172 (Absalon et al., 2008b), and PIFTC3 (Franklin and Ullu, 2010). IFT-B proteins in non-induced cells showed a uniform distribution along the flagellum (Figure 5Aa\u2013d). However, unexpected accumulations of IFT172 and IFT22 were found in the short flagella of induced IFT27RNAi cells (Figure 5Ae\u2013h, arrows) and the same results were observed for PIFTC3, a candidate IFT-B protein (Franklin and Ullu, 2010) (unpublished data). In a second approach, the IFT-B core protein IFT52 was expressed as a GFP fusion protein (Figure 5B). Whereas in non-induced cells, GFP::IFT52 was localized in the cytoplasm but also concentrated at the base of the flagellum and inside the organelle (Figure 5Ba\u2013d), 72-hr induced cells clearly showed an accumulation of the protein inside their short flagella (Figure 5Be\u2013h). Together, these observations demonstrate that at least four members of the IFT-B complex accumulate inside the flagellum of the induced IFT27RNAi cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig5-v2.jpg)\n\n**Figure 5.:** (A) IFT27RNAi cells were non-induced (a to d) or induced for 3 days (e to h), labeled with the anti-IFT172 (a, c, e and g) or the anti-IFT22 antibody (b, d, f and h) and counterstained with DAPI (blue). Arrows show the accumulation of IFT proteins in the short flagella. (B) Non-induced (a to d) and 3-day induced (e to h) IFT27RNAi GFP-IFT52 cells were treated as above except that the anti-GFP was used. Insets in f and h show the axoneme and GFP::IFT52 localization respectively. Scale bar: 5 \u00b5m. (C) TEM of non-induced (a\u2013b) and induced IFT27RNAi cells (c\u2013d). Black arrows show the axonemal defects, and the white arrow points to an excessive amount of IFT-like material. An enlarged PFR structure (bracket) is also visible. fp: flagellar pocket, axo: axoneme, bb: basal body. Scale bars: 500 nm in a and c, 200 nm in b and d.\n\nThe formation of short flagella filled with IFT proteins is typical of inhibition of retrograde IFT (Pazour et al., 1999; Blacque et al., 2006; Absalon et al., 2008a), suggesting that despite being a protein belonging to IFT-B complex, IFT27 could play a role in retrograde IFT. To further characterize this unexpected phenotype, transmission electron microscopy analyses were performed. Non-induced IFT27RNAi cells looked like normal wild-type trypanosomes (Figure 5Ca,b), whereas induced cells exhibited major defects in the short flagellum. First, a significant accumulation of electron-dense material that likely corresponds to excessive IFT material was observed (Figure 5Cc\u2013d). In addition, the axoneme was frequently disrupted and sometimes even split into two (Figure 5C,D) and an enlarged, often disorganized PFR structure was frequently observed. Over 61% of the flagellar sections (n = 77) displayed the combination of the three phenotypes. Other phenotypes included the presence of a membrane sleeve (18%) (Davidge et al., 2006; Absalon et al., 2008b), vesicles inside the lumen of the flagellar pocket (3%) and a loss of the alignment of the axonemal central pair relative to the PFR (14%) (Branche et al., 2006; Gadelha et al., 2006; Ralston et al., 2006; Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig6-v2.jpg)\n\n**Figure 6.:** Transmission electron micrographs of IFT27RNAi cells induced for 3 days displaying different flagellar defects. (A) Membrane-like material in the flagellar pocket lumen and the presence of a flagellum \u2018sleeve\u2019 (arrows). (B) Vesicle-like material inside the flagellar pocket (arrows) and misorientation of the basal body (arrowhead). (C) Defect in central pair alignment relative to the PFR. Scale bars 500 nm in A, 1 \u00b5m in B and 200 nm in C.\n\n### IFT27 contributes to the entry of the IFT dynein into the flagellum\n\nTo explain the surprising IFT retrograde phenotype, we examined the distribution of two elements involved in the retrograde transport machinery: the IFT dynein and IFT140, a member of the IFT-A complex. We generated an IFT27RNAi cell line expressing the IFT dynein heavy chain (DHC1b) fused to GFP, and its localization was analyzed by immunofluorescence assays using the Mab25 and the anti-GFP antibodies (Figure 7). In non-induced IFT27RNAi cells, the GFP::DHC1b signal was present around the base of the flagellum and displayed a punctuated staining inside the organelle and in the cytoplasm (Figure 7a\u2013d) confirming previous localization experiments performed with the anti-DHC1b antibody (our unpublished data). When IFT27RNAi cells were induced for 3 days, DHC1b was not detected inside the short flagella but instead the protein appeared concentrated at the base of the flagellum (Figure 7e\u2013h), suggesting defects in flagellum entry.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig7-v2.jpg)\n\n**Figure 7.:** (A) Immunofluorescence of non-induced (a to d) and 3-day induced (e to h) IFT27RNAi GFP::DHC1b cells fixed in methanol, counterstained with DAPI and stained with the Mab25 and anti-GFP antibodies. Insets in f and h show the localization of the axoneme (red) and the GFP::IFT dynein (green) respectively. Scale bars: 5 \u00b5m.\n\nTo determine the localization of the IFT-A complex, the core component IFT140 protein was fused to the Tandem Tomato (TdT) fluorescent protein upon endogenous tagging and expressed in IFT27RNAi cells (Figure 8). In vivo observations confirmed that the fusion protein indeed traffics inside the flagellum (unpublished data) and its localization was then analyzed by immunofluorescence assays using an anti-DsRed antibody. Slides were stained simultaneously with the Mab25 and anti-IFT172 antibodies to localize the axoneme and the IFT-B complex respectively. In non-induced cells, the fusion protein is localized inside the flagellum compartment (Figure 8b) as for the anti-IFT172 (Figure 8c). In 3-day-induced IFT27RNAi cells, TdT::IFT140 is only found concentrated at the base of the organelle and not inside the flagellar compartment (Figure 8f,h). In contrast, IFT172 is still aberrantly accumulated inside the organelle (Figure 8g,h) as observed previously.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig8-v2.jpg)\n\n**Figure 8.:** IFT27RNAi cells were non-induced (a to d) or induced for 3 days (e to h) and simultaneously labeled with the anti-DsRed (red), the anti-IFT172 (green) antibodies along with Mab25 (blue) and counterstained with DAPI. Insets show the localization of the axoneme and TdTomato::IFT140 in f and of the axoneme and IFT172 in g. In h, the localization of Td::IFT140, IFT172 and the axoneme are shown. The arrowhead indicates the base of the flagellum. Scale bar: 5 \u00b5m.\n\nTherefore, both actors of the retrograde transport fail to enter the flagellum in the absence of IFT27, suggesting that this protein, despite being a member of the IFT-B complex, is a major controller of retrograde transport.\n\n### An IFT27 RNAi-resistant version complements the IFT27RNAi cell line\n\nTo demonstrate the specificity of the IFT27 silencing phenotype, an RNAi-resistant version of the gene was synthetized (GeneBank Accession Number KF147877) and expressed into the IFT27RNAi cell line. Officially named IFT27RNAi+IFT27RNAiRES this new cell line will be termed IFT27RNAiRES for simplicity. This exogenous copy of IFT27 has a C-terminal TY-1 tag (Bastin et al., 1996) to allow for independent monitoring. Upon induction of IFT27 dsRNA expression, transcripts from the endogenous gene should be silenced, whereas the RNAi-resistant version of IFT27 should remain unaffected. Western blot analysis of uninduced IFT27RNAiRES cells using the anti-TY1 antibody showed a single band migrating close to the 20-kDa marker, whereas probing the membrane with the anti-IFT27 antibody revealed two bands, the endogenous IFT27 and the slightly larger exogenous IFT27RNAiRES (the TY1-tagged protein has a predicted molecular weight of 22.64 kDa) (Figure 9A). The inhibition of the endogenous IFT27 occurred when RNAi was induced while the exogenous IFT27RNAiRES continued to be expressed, as was evident in Western blots probed with the anti-IFT27 antibody (Figure 9B, left panel). Furthermore, IFT27 inhibition can be reversed after removing tetracycline, whereas IFT27RNAiRES expression remained unchanged (Figure 9B, right panel). The growth curve of the IFT27RNAiRES cell line showed no defects after RNAi induction (Figure 9C), and immunofluorescence assays using the anti-Ty1 antibody showed a signal all along the flagellum of both non-induced and induced cells, as expected (Figure 9D). These results show that the RNAi-resistant version of IFT27 complements gene function upon silencing of the endogenous IFT27 gene copies and demonstrate the specificity of the phenotypes observed in the IFT27RNAi cell line.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig9-v2.jpg)\n\n**Figure 9.:** (A) Western blot of total protein samples of wild-type (WT) and non-induced IFT27RNAiRES cells. The anti-IFT27 antibody was used first and the anti-TY1 antibody was used after membrane stripping. The epitope-tagged RNAi-resistant version of IFT27 is indicated by the red asterisk. (B) Western blot of total protein samples from the IFT27RNAiRES cell line prepared from induced cells and from cells deinduced after the indicated number of days. The red asterisk shows the presence of IFT27RNAiRES. (C) Growth curves of the non-induced (blue) and induced (red) IFT27RNAiRES cells. (D) Immunofluorescence of IFT27RNAiRES cells using the anti-TY1 antibody. The first panel shows the phase-contrast image merged with DAPI staining and the second shows the BB2 anti Ty-1 antibody staining. Scale bar: 5 \u00b5m.\n\nTo evaluate the ability of IFT27RNAiRES to participate in IFT, a version fused to YFP at the C-terminus was synthetized and transfected into the IFT27RNAi cell line in order to exclusively track the fluorescent RNAi-resistant version of IFT27 (Figure 10). Immunoblotting of this IFT27RNAiRESYFP cell line using the anti-IFT27 antibody showed reduced expression of endogenous IFT27 upon induction, while expression of IFT27RNAiRES::YFP seems unaffected (Figure 10A). Live microscopy analyses revealed a clear localization of the fusion protein in the flagellum and at the base of the organelle regardless of RNAi induction (Figure 10B). As expected, the tracks made in the induced IFT27RNAiRESYFP cell line context are more noticeable than in the non-induced one. Kymograph analyses of IFT27RNAiRES::YFP (Figure 10C; Video 2; Figure 3) revealed an average anterograde velocity of 2.3 \u00b1 0.87 \u00b5m/s (n = 161) for the non-induced cells and 2.0 \u00b1 0.53 \u00b5m/s (n = 177) for the induced cells. Retrograde IFT mean speed was measured at 4.4 \u00b1 1.3 \u00b5m/s (n = 211) for non-induced cells and 4.0 \u00b1 1.4 \u00b5m/s for induced cells (n = 227), values comparable with GFP::IFT27 (Figure 2D). Furthermore, immunofluorescence assays showed a clear colocalization of the endogenous and the recoded fusion protein in the flagellum and at the base of the organelle in both non-induced and induced context (Figure 3B,C). Overall, these results demonstrate the specificity of the IFT27 silencing phenotype since the RNAi-resistant version of IFT27 complements the IFT27RNAi phenotype, indicating that IFT27RNAiRES and the YFP-tagged version of the protein are functional.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig10-v2.jpg)\n\n**Figure 10.:** (A) Western blot using the anti-IFT27 showing a decrease of the IFT27 endogenous protein. The anti-PFR L13D6 antibody was used as loading control and cells were induced for the indicated number of days. (B) Live microscopy imaging of non-induced (top panels) and induced (bottom panels) IFT27RNAiRESYFP cells. White arrows show the fluorescent protein pool at the base of the flagellum and yellow arrows show the distal tip of the flagellum. Arrowheads indicate the successive position of an anterograde IFT train. (C) Kymographs show clear IFT tracks made by IFT27RNAiRES::YFP in non-induced (left) and 3 day induced (right) cells (Video 2). Scale bars: 5 \u00b5m in B. In C, horizontal scale bar is 2 \u00b5m and vertical scale bar is 2 s.\n\n![Video 2.](https://cdn.elifesciences.org/articles/02419/elife-02419-media2.avi.jpg)\n\n**Video 2.:** Observations of live, non-induced and 3-day-induced IFT27RNAiRESYFP cells using time-lapse epifluorescence microscopy using a DMI4000 microscope. Acquisitions were made at room temperature and frames were taken every 250 ms for 30 s by an Evolve 512 EMCCD Camera. Videos were exported to .AVI format with the ImageJ 1.47g13 software.\n\n### A point mutation in the G1 domain of IFT27 impairs flagellum assembly\n\nRab proteins function as molecular switches cycling between a GTP-bound \u2018ON\u2019 form and a GDP-bound \u2018OFF\u2019 form. While multiple effector proteins recognize the GTP-bound form, the GDP-bound form is unable to form such interactions. These two conformational changes also control the cellular localization of Rab proteins (Stenmark, 2009) and as a consequence, mutations leaving the proteins in a GTP-locked or GDP-locked state affect the function and localization of this GTPases. To evaluate the significance of the GTP/GDP state of IFT27, two missense mutations were introduced at critical residues (Figure 1, GeneBank Accession Numbers KF147878 and KF147879) of the epitope-tagged IFT27RNAiRES gene. The Q67L mutation replaces the catalytic glutamine at the G3 region found in most small G proteins with a leucine and is predicted to disrupt GTP hydrolysis, leaving the protein in a GTP-bound, active state. On the other hand, the mutation on the G1 domain replacing a threonine with an asparagine, T19N, is predicted to abolish GTP binding and should leave the protein in a GDP-bound, inactive state. These mutated versions were incorporated into the genome of the IFT27RNAi cell line context and were consequently named IFT27RNAi+IFT27RNAiREST19N and IFT27RNAi+IFT27RNAiRESQ67L respectively. For simplicity, we will refer to them as IFT27RNAiREST19N and IFT27RNAiRESQ67L.\n\nWestern blot showed that the amount of endogenous IFT27 decreased after 1 day of induction in both cell lines, leaving only the modified T19N (GDP-locked) and Q67L (GTP-locked) RNAi-resistant proteins (Figure 11A,C, stars). After induction, the growth rate of the IFT27RNAiRESQ67L cell line did not vary (Figure 11B), while the IFT27RNAiREST19N cells showed impaired growth (Figure 11D). Therefore, the modified T19N protein produces a phenotype only when the endogenous IFT27 expression is inhibited, suggesting a recessive effect of the T19N mutation. Immunofluorescence assays using the monoclonal antibodies Mab25 and L8C4 showed that the IFT27RNAiRESQ67L (GTP-locked) cells were undistinguishable from their non-induced control (Figure 11E) whereas IFT27RNAiREST19N (GDP-locked) cells build unusually short flagella after 3 days of induction (Figure 11F, arrows). The flagellar length of the IFT27RNAiRESQ67L cell line showed no significant differences between non-induced (16.9 \u00b1 1.9 \u00b5m, n = 100) and induced cells (16.6 \u00b1 2.98 \u00b5m, n = 100) whereas flagellar length of IFT27RNAiREST19N cells dropped to 3.7 \u00b1 3.1 \u00b5m (n = 79) after induction compared to 17.6 \u00b1 2.1 \u00b5m (n = 100) for the non-induced controls. However, by carefully analysing both IFT27RNAiREST19N and IFT27RNAiRESQ67L cells in non-induced conditions, we noticed that the length of the flagellum was shorter by about 3 \u00b5m compared to cell that are not expressing a mutated form of IFT27 (Figure 12). This interesting result indicates that the expression of a GDP or GTP-locked form of IFT27 has a slightly negative dominant impact on the formation of the trypanosome flagellum. Once the endogenous IFT27 is depleted, this effect is exacerbated in the case of the GDP-locked version but not in the case of the GTP-locked version (Figure 12). These observations reveal that the sole expression of the GTP-locked version, although able to sustain flagellum formation, is not neutral.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig11-v2.jpg)\n\n**Figure 11.:** (A and C) IFT27RNAiRESQ67L (A) and IFT27RNAiREST19N cells (C) were induced the indicated number of days and western blots were performed using the anti-IFT27 antibody. A decrease in the amount of the endogenous protein can be observed while the expression of the modified RNAi-resistant proteins remains constant (red stars). (B and D) Growth curves of the non-induced and induced IFT27RNAiRESQ67L (B) and IFT27RNAiREST19N (D) cell lines. (E and F) Immunofluorescence assays with the IFT27RNAiRESQ67L (E) and IFT27RNAiREST19N (F) cells. After methanol fixation, non-induced and 3 day-induced cells were stained using L8C4 together with Mab25 to detect the PFR and the axoneme respectively. Arrows show abnormal flagella. Scale bar: 5 \u00b5m.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig12-v2.jpg)\n\n**Figure 12.:** Flagellar length comparison of IFT27RNAiRES (expressing a non-mutant version of IFT27), IFT27RNAiRESQ67L (GTP-locked), and IFT27RNAiREST19N (GDP-locked) cells. Flagellum length was measured after the indicated hours upon RNAi induction using the axoneme marker Mab25 (n = 200 for each induction time).\n\nTo investigate if the IFT machinery was disrupted in the IFT27RNAiREST19N cell line, immunofluorescence assays using Mab25 and the anti-IFT172 were performed (Figure 13A). While the IFT172 staining looked normal in the non-induced context (Figure 13Aa\u2013d), the induced IFT27RNAiREST19N cells did not show signs of IFT B complex accumulation but IFT172 was found concentrated at the base of the organelle (Figure 13Ae\u2013h) in a way reminding of the localization of the IFT140 protein in the IFT27RNAi cell line (Figure 7). This is in stark contrast with the IFT27RNAi cell line where the depletion of IFT27 is accompanied by accumulation of IFT172 inside the flagellum (Figure 13B). The phenotype obtained in the induced IFT27RNAiREST19N cells is reminiscent to the ones observed upon disruption of the anterograde IFT machinery (Pazour et al., 2000; Absalon et al., 2008b) and shows that the expression of IFT27RNAiREST19N in the absence of endogenous IFT27 triggers an anterograde IFT phenotype. To understand this intriguing phenotype, the flagellar structure of the IFT27RNAiREST19N cell line was analyzed by TEM and scanning electron microscopy. TEM observations were not conclusive, as no visible defects in the axoneme structure were detected. These results could be explained by the fact that T. brucei assembles the new flagellum while retaining the old one and that only this one, formed prior to the RNAi-mediated silencing of IFT27, could be observed. On the other hand, SEM revealed the presence of abnormally short flagella with no visible dilation (Figure 13Aj, arrow) and the presence of a \u2018flagellar sleeve\u2019, a long and thin extension of the flagellum membrane (Figure 13Aj, arrowheads). This is very different from the induced IFT27RNAi cells that possess a short, bulky flagellum, in agreement with the presence of an excessive accumulation of material (Figure 12Bj, arrow). Since the IFT dynein is found concentrated at the base of flagellum after IFT27 depletion (Figure 8), we wondered what could be the localization of the motor in the presence of the Q67L and T19N versions of IFT27. This was addressed by immunofluorescence assays using an anti-DHC1b antibody in non-induced and induced IFT27RNAiRESQ67L (GTP-locked) or IFT27RNAiREST19N (GDP-locked) cells. In IFT27RNAiRESQ67L cells, the dynein signal showed no significant difference between the non-induced and induced conditions (Figure 14) suggesting that the motor is functional and participates normally to IFT. In contrast, DHC1b remained at the flagellum base in induced cells solely expressing the T19N mutant protein (Figure 14e\u2013h, arrow). In conclusion, the GDP-locked version does not sustain the entry of the IFT-B complex in the flagellar compartment, leading to an anterograde phenotype. Nevertheless, dynein is still targeted to the base of the flagellum.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig13-v2.jpg)\n\n**Figure 13.:** (A) Non-induced (a to d) and 3-day-induced (e to h) IFT27RNAiREST19N cells were fixed in methanol, stained with the anti-IFT172 and Mab25 and counterstained with DAPI. Insets show the axoneme and IFT172 localization. (i and j) Scanning electron microscopy of non-induced and induced IFT27RNAiREST19N cells. The white arrow shows the short flagellum and the black arrowheads in j indicate the flagellar sleeve. (B) Immunofluorescence of non-induced (a to d) and 3-day-induced IFT27RNAi cells using the same conditions. Scanning electron microscopy of the non-induced and induced IFT27RNAi cell line. The white arrow in j points to the short flagellum with an abnormally large diameter. Scale bars: 5 \u00b5m from a to h, 1 \u00b5m in i and j.\n\n![Figure 14.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig14-v2.jpg)\n\n**Figure 14.:** Non-induced and cells induced for 3 days of the IFT27RNAiQ67L (a to d) and IFT27RNAiREST19N (e to h) cell lines were fixed in methanol, probed with the anti-DHC1b antibody and counterstained with DAPI. Arrows indicate the dynein pool around the base of the flagellum. Scale bar: 5 \u00b5m.\n\n### The modified T19N IFT27 protein does not access the flagellum\n\nTo evaluate the ability of the mutated versions of IFT27 to traffic inside the flagellar compartment, the IFT27RNAiREST19N and Q67L point mutations were expressed as fusion proteins with YFP in the IFT27RNAi cell line. Immunofluorescence assays using the anti-IFT27 and the anti-GFP antibodies (Figure 15) showed that IFT27RNAiRESQ67L is localized inside the flagellum in non-induced (Figure 15Aa\u2013d) and induced (Figure 15Ae\u2013h) cells as the unmodified IFT27RNAiRES::YFP protein (Figure 3). In addition, the fluorescent Q67L modified protein traffics inside the flagellum in both conditions (Figure 15B; Video 3) and kymograph analyses demonstrated anterograde and retrograde train speed similar to the unmodified protein (Figure 15B, Figure 3).\n\n![Figure 15.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig15-v2.jpg)\n\n**Figure 15.:** (A) IFT27RNAiRESQ67LYFP cells were non-induced (a to d) or induced for 3 days (e to h), stained with the anti-IFT27, the anti-GFP antibody and counterstained with DAPI. (B) Live observation of the non-induced and 3-day-induced IFT27RNAiRESQ67LYFP cell line. Yellow arrows indicate the flagellar tip, white arrowheads show the fluorescent protein pool at the base of the flagellum and the asterisk indicates the cells used for kymograph analysis. (C) Immunofluorescence assays of non-induced (a to d) or 3 day induced (e to h) IFT27RNAiREST19NYFP cells using the anti-IFT27 and the anti-GFP antibody. Scale bar for (A), and (C): 5 \u00b5m. In (B), horizontal scale bar is 2 \u00b5m and vertical scale bar is 2 s. (D) Immunoprecipitates of total proteins by an anti-GFP antibody were separated on 4\u201315% polyacrylamide gels for the three different cell lines as indicated. Corresponding immunoblots with the anti-IFT172 (middle row) and the anti-IFT22 (bottom row) are shown and lanes labeled as \u2018Control\u2019 were precipitations with a rabbit antibody raised against T. brucei aldolase. These results were replicated in four independent experiments.\n\n![Video 3.](https://cdn.elifesciences.org/articles/02419/elife-02419-media3.avi.jpg)\n\n**Video 3.:** Live, time-lapse epifluorescence microscopy of non-induced and 3-day induced IFT27RNAiRESQ67L::YFP. All acquisitions were made at room temperature with frames taken every 250 ms for 30 s. Videos were exported to .AVI format with the ImageJ 1.47g13 software.\n\nStrikingly, the IFT27RNAiREST19N::YFP fusion protein was always found in the cytoplasm in both non-induced and induced situations (Figure 15C). No signal could be detected in the flagellum, neither by immunofluorescence assays (Figure 15C) nor by live cell imaging (Video 4) in both non-induced and induced cells, suggesting that the modified protein is not able to access the flagellum. Since the induced IFT27RNAiREST19N cell line shows no signs of IFT-B accumulation in contrast to the induced IFT27RNAi cell line (Figure 12), a possible explanation is that IFT27RNAiREST19N disrupts the assembly of the IFT complex B.\n\n![Video 4.](https://cdn.elifesciences.org/articles/02419/elife-02419-media4.avi.jpg)\n\n**Video 4.:** Live, time-lapse epifluorescence microscopy of non-induced IFT27RNAiREST19N::YFP cells as well as 3-day induced ones. All acquisitions were made at room temperature with frames taken every 250 ms for 30 s. Videos were exported to .AVI format with the ImageJ 1.47g13 software.\n\nTo first confirm the interaction of IFT27 with the IFT complex B of T. brucei, co-immunoprecipitation assays were performed using the anti-GFP antibody. The IFT27RNAiRES::YFP and the two mutated proteins were successfully immunoprecipitated in all three cell lines as confirmed by western blot with the anti-IFT27 (Figure 15D, top panel). Next, immunoblotting using two antibodies recognizing IFT-B proteins IFT22 and IFT172 showed that the immune complexes formed by IFT27RNAiRES::YFP and IFT27RNAiRESQ67L::YFP contain both proteins (Figure 15D, left and middle rows). However, immunoprecipitation of IFT27RNAiREST19N::YFP failed to bring down IFT22 and IFT172 (Figure 15D, right panel). These results demonstrate that IFT27RNAiRESQ67L is associated to the IFT-B complex like the non-modified protein, supporting the in vivo results (Figure 15B). In contrast, the T19N mutant version of IFT27 is unable to interact with at least two members of the IFT-B complex. Overall, these results demonstrate that IFT27 needs to be in a GTP-bound state to interact with the rest of the IFT complex and access the flagellar compartment.\n\n## Discussion\n\nStudies in different model organisms have shed light into the structure and nature of the IFT machinery but few data are available about the mechanisms coordinating the entry of the IFT complexes into the flagellum. Amongst the possible regulators, several small GTPases have been associated with the flagellum: ARL-13b is involved in the stabilization of ciliary assembly in C. elegans and its mutations are associated with a ciliopathy named Joubert syndrome (Cantagrel et al., 2008; Cevik et al., 2010; Li et al., 2010). The RAN importin system, known to be involved in nucleocytoplasmic transport, is responsible for the entry of the kinesin KIF17 inside the primary cilium (Dishinger et al., 2010). However, none of these proteins are part of any of the IFT complexes.\n\nHere, we have shown by immunoprecipitation that IFT27 likely is a constitutive member of the IFT-B complex in T. brucei. Previous purification assays of the B complex using C3/DYF13 in T. brucei identified most of the IFT-B predicted proteins but were not able to detect IFT27, perhaps because of its short molecular weight and the under-representation of small polypeptides inherent to the MS analysis. Significantly, IFT20 and IFT25, the two other predicted IFT-B proteins of short size, were also missing (Franklin and Ullu, 2010). We observed that GFP-tagged IFT27 traffics in the flagellum in a similar way to IFT52 or IFT81, two well-studied IFT-B members (Bhogaraju et al., 2013; Buisson et al., 2013) showing that IFT27 likely associates to the IFT-B complex and participates to the IFT process (Figure 16A). These findings are consistent with the fact that Chlamydomonas IFT27 is part of IFT-B complex and traffics inside the flagellum (Lucker et al., 2005; Qin et al., 2007).\n\n![Figure 16.](https://cdn.elifesciences.org/articles/02419/elife-02419-fig16-v2.jpg)\n\n**Figure 16.:** (A) The proposed model shows a GTP-bound IFT27 associated with the IFT-B complex prior to the entry into the flagellum. After leaving the flagellar compartment, GTP is hydrolyzed, releasing IFT27 and disassembling the IFT-B complex. (B) After RNAi-mediated depletion of IFT27, the IFT-B complex enters the flagellum but is unable to exit because of the absence of IFT dynein inside the flagellar compartment. To explain the anterograde phenotype seen in after expression of the GDP-bound version of IFT27, the inactive IFT27 could negatively control the entry of the IFT-B complex (C). The PFR was not drawn for clarity.\n\nSurprisingly for an IFT-B protein, IFT27 turns out to be essential for retrograde transport as its knockdown triggered the formation of short flagella with an unexpected accumulation of IFT-B proteins such as IFT52, IFT172, IFT22, and PIFTC3. By TEM, this accumulated material appeared as electron dense regions spread around short, irregular and often disrupted axonemes whereas the basal body and transition zone appeared normal. All these features are reminiscent of a retrograde phenotype, usually caused by a deficit of either the IFT dynein or the IFT-A complex (Pazour et al., 1998; Ou et al., 2007; Absalon et al., 2008a). Interestingly, DHC1b and IFT140, two essential molecules of the dynein and IFT-A complex respectively, are not able to enter the flagellum in the absence of IFT27 (Figure 16B). The IFT dynein is the retrograde motor of IFT that brings back IFT trains from the tip to the base of the flagellum, a process in which IFT-A is also involved although its exact contribution remains to be shown. Being an IFT-B protein, IFT27 could therefore regulate IFT-A and dynein transport at the physical interface between IFT-A, IFT-B and dynein complexes to ensure coordinate import in the flagellar compartment. Supporting that view, some relationships between IFT-B proteins and the IFT dynein motor have been suggested in the literature. First, IFT-B and dynein genes are both controlled at the transcriptional level by the transcription factor RFX whereas IFT-A and kinesin II are regulated differently in metazoans (Thomas et al., 2010). Second, co-immunoprecipitation experiments indicate that DHC1b interacts with the IFT-B protein IFT172 in Chlamydomonas (Pedersen et al., 2006). In T. brucei, we could not detect a direct interaction between IFT27 and DHC1b or IFT27 and IFT140 by co-immunoprecipitation (unpublished data) but the association might be transient, for example taking place only during protein entry in the flagellar compartment.\n\nIt has been shown that IFT27 forms a complex with IFT25, and both could be involved in flagellum entry regulation (Wang et al., 2009). In addition, the IFT25/27 structure displays a surface patch able to mediate protein\u2013protein interactions (Bhogaraju et al., 2011). This IFT25/27 sub-complex could then act as a scaffold mediating the interaction of the IFT-B complex with dynein and IFT-A complexes. In Chlamydomonas, the RNAi knockdown of IFT27 produced cells with abnormally short flagella but the nature of the IFT defect (effect on anterograde or retrograde IFT) has not been reported (Qin et al., 2007). In this organism, it is the only IFT protein whose inhibition triggers cell cycle defects. However, the specificity of the phenotype has not been proven and an off-target effect cannot be excluded. In trypanosomes, the flagellum is essential for cell morphogenesis and cytokinesis and inhibition of all IFT genes studied so far invariably resulted in growth arrest (Kohl et al., 2003; Davidge et al., 2006; Absalon et al., 2008a; Franklin and Ullu, 2010). In the present study, the possibility of this being an off-target effect has been ruled out upon complementation of the IFT27RNAi phenotype by the expression of an RNAi-resistant version of IFT27 that rescued both the observed growth and flagellar phenotype while displaying normal IFT trafficking in non-induced as well as in induced cells. IFT27 has all the necessary features to function as a GTPase, although it displays low intrinsic activity during in vitro assays (Bhogaraju et al., 2011). The orthologue of IFT27 in the related protozoan Trypanosoma cruzi exhibits GTPase activity in vitro (Ramos et al., 2005). As the T. cruzi protein is 88.5% similar to IFT27 and all the key residues are conserved, it is very likely that the T. brucei protein is also able to hydrolyze GTP. We have shown that the Q67L version apparently behaves like the unmodified protein even in the complete absence of the endogenous protein. Thus, IFT27 likely interacts with other IFT complex B members, controls the entry of the IFT-A complex and DHC1b and enters the flagellum in a GTP-bound state (Figure 16A). These findings could be compared with previous results showing that a constitutively active GTPase activity does not affect the localization of various Rab proteins (Richardson et al., 1998; Alvarez et al., 2003; Nachury et al., 2007). Another possible caveat to explain the absence of phenotype in the cells expressing the Q67L version of IFT27 is that the protein is not actually impaired in its GTPase activity so that it undergoes a normal chemical cycle. However, this is not likely the case as we noticed that cells expressing both the endogenous and the GTP-locked protein possessed a slightly shorter flagellum compared to cell that are not expressing a mutated form of IFT27 (Figure 12). These observations reveal that the sole expression of the GTP-locked version, although able to sustain flagellum formation, is not neutral.\n\nSince the constitutively active version of IFT27 is found inside the flagellum and interacts with the rest of the IFT machinery, one could argue about the need of an inactive state. However, T. brucei has a complex life cycle in which the length of the flagellum can vary from 3 \u00b5m to 30 \u00b5m (Rotureau et al., 2011). Therefore, it will be interesting to see the impact of the GTP/GDP cycle on assembly of flagella of different length during the life cycle of T. brucei.\n\nThe expression of the T19N version, predicted to leave IFT27 in a GDP-bound form, did not cause a dominant negative phenotype. However, the modified T19N protein was not found inside the flagellar compartment neither in the presence nor in the absence of endogenous IFT27 and was unable to associate with the IFT-B complex. One would then expect that the exclusive expression of IFT27 in its inactive state should phenocopy the IFT27RNAi cell line. Strikingly, this was not the case as only very short flagella that do not exhibit accumulation of IFT proteins were built, typical of anterograde inhibition (Absalon et al., 2008b). Several explanations could be proposed to explain this intriguing result. First, the inactive IFT27 protein could sequester other components of the IFT-B complex in the cytoplasm and inhibit their transfer to the base of the flagellum. However, immunofluorescence assays revealed that IFT172 is still found concentrated at the base of the flagellum but not inside organelle. Second, the inactive protein could interfere with assembly or stability of the IFT-B complex in the cytoplasm, a hypothesis supported by the reported decrease in the amount of several IFT proteins in the Chlamydomonas IFT27 RNAi experiments (Qin et al., 2007). However, this seems unlikely here because the total amount of IFT172 and IFT22 did not decrease when the IFT27T19N protein was exclusively expressed in the IFT27RNAiREST19N cell line (unpublished data). Third, the inactive IFT27 could negatively control the entry of the IFT-B complex hence resulting in an anterograde phenotype while the wild-type protein in non-induced conditions would overhaul this effect.\n\nCuriously, both IFT27 and IFT25 are absent from C. elegans, D. melanogaster, and Giardia intestinalis (van Dam et al., 2013). This could be the consequence of different organization of the flagellum base, a sub-compartment involved in the regulation of the entry of flagellar components (Reiter et al., 2012). No obvious basal body structure can be found at the base of C. elegans cilia (Perkins et al., 1986; Williams et al., 2011) and in D. melanogaster, the basal body possesses a unique electron-dense ring structure (Enjolras et al., 2012). The \u03b4- and \u03b5-tubulins, involved in basal body maturation, are also absent from the genomes of these two organisms (Dutcher, 2001). Finally, the basal bodies are deeply rooted in the cytoplasm in Giardia, with long cytoplasmic axoneme segments (Dawson and House, 2010). Therefore, the absence of IFT27 and IFT25 could be related to the non-canonical structure of their flagellum base, implying a different process for the entry of the IFT proteins. Alternatively, the requirement for retrograde transport might be different according to the type of cilia, necessitating specific adaptations for IFT-A/IFT dynein trafficking. Inhibition of retrograde IFT moderately affects the length of sensory cilia in Drosophila (reduced by one third in IFT140 or dynein mutants, Lee et al., 2008) or C. elegans (reduced by 25% in IFT-A mutants, Blacque et al., 2006) in contrast to the severe reduction observed in Chlamydomonas (Pazour et al., 1999), trypanosomes (Kohl et al., 2003) or Leishmania (Satir and Christensen, 2007). In summary, these findings demonstrate that a GTPase-competent IFT27 is required for association to the IFT complex and that IFT27 plays a role in the cargo loading of the retrograde transport machinery.\n\n## Materials and methods\n\n### Plasmids, cell lines, and culture conditions\n\nAll procyclic T. brucei cell lines were derivatives of the strain 427 and grown in SDM79 medium with hemin and 10% fetal calf serum. The 29\u201313 cell line expressing the T7 RNA polymerase and the tetracycline-repressor (Wirtz et al., 1999) has been described previously, as well as the cell line expressing GFP::IFT52 (Absalon et al., 2008b). For generation of the IFT27RNAi cell line, a 360-nucleotide fragment of IFT27 (Tb 927.3.5550) was amplified by PCR and cloned in the pZJM vector (Wang et al., 2000), allowing tetracycline-inducible expression of dsRNA generating RNAi upon transfection in the 29-13 recipient cell line. The dsRNA is expressed from two tetracycline-inducible T7 promoters facing each other in the pZJM vector. Primers were selected using the RNAit algorithm to ensure that the fragment lacked significant identity to other genes to avoid cross-RNAi (Redmond et al., 2003). The fragment was amplified by PCR with the forward primer cgatcgAAGCTTaaacttgcgtcttcaggtgg and the reverse primer gtcatCTCGAGatttgcgagatctttcccct, digested with XhoI and HindIII (sites underlined) and ligated into the corresponding sites of the pZJM vector. The plasmid was linearized at the unique NotI site in the rDNA intergenic targeting region before transfection (Wang et al., 2000). GeneCust Europe (Dudelange, Luxembourg) conducted the chemical synthesis of the pPCPFReGFPIFT27 plasmid allowing a GFP tagging at the N-terminal of IFT27. The whole IFT27 gene (552 nucleotides) was synthetized, digested with NheI and EcoRV and cloned into the corresponding sites of the pPCPFR vector (Adhiambo et al., 2009). The resulting plasmid was linearized with NsiI, targeting integration in the intergenic region of PFR2. Generation of the p2845TdTomatoIFT140 plasmid enabling the expression of TdTomato::IFT140 was performed by modifying the p2845IFT140 mCherry plasmid. The mCherry gene was removed from p2845IFT140 using XhoI and HindIII while simultaneasouly getting the TdTomato gene from the p2675TdTomatoIFT81 plasmid with the same restriction enzymes. Ligation was performed between the digested p2845IFT140 plasmid and the TdTomato insert overnight at 16\u00b0C, the resulting plasmid was then transfected into XL-10 Gold Ultracomptent Cells (Agilent Technologies, France) to allow amplification. Plasmids from 10 different colonies were double digested with XhoI and HindIII to assess the presence of the TdTomato insert.\n\nFor the RNAi-resistant version of IFT27, a new version of the gene was chemically synthesized modifying the first 411 nucleotides in order to make synonymous mutations, leaving the amino acid sequence unchanged (GeneBank Accession Number KF147877). This IFT27RNAires gene was then cloned into the pPCPFR vector. Additional point mutations (Figure 1) made by GeneCust Europe enabled the creation of the RNAi-resistant versions of IFT27 in a GTP (Q67L) or GDP (T19N) locked state (GeneBank Accession Numbers KF147878 and KF147879). The YFP-tagged version of IFT27RNAires was made by synthetizing and cloning the YFP gene into the pPCPFRIFT27RNAires vector between the NheI and BamHI restriction sites. The Q67L and T19N point mutations were then performed to finally obtain the C-terminus-tagged pPCPFRIFT27RNAiresQ67LYFP and pPCPFRIFT27RNAiresT19NYFP plasmids. Linearization was carried out with NsiI. In all cases, trypanosomes were transfected with the plasmid constructs by Nucleofector technology (Lonza, Italy) as described before (Burkard et al., 2007). Transfectants were grown in media with the appropriate antibiotic concentration and clonal populations were obtained by limited dilution.\n\n### Protein expression and antibody production\n\nFor antibody production, IFT27 was expressed as a recombinant fusion GST protein in Escherichia coli. The full length IFT27 coding sequence was amplified by PCR using Platinum Taq Polymerase High Fidelity (Invitrogen) and primer pairs gaggaaGGATCCatggtaaacttgcgtcttcagg and cgcaacagCCCGGGttacctcatttggg (BamHI and XmaI sites underlined). PCR products were ligated into the pCR2.1-TOPO vector (Invitrogen, Carlsbad, CA) following the manufacturer's instructions. IFT27 sequence was then excised using BamHI and XmaI enzymes and ligated into compatible sites of the pGEX B vector (GE Healthcare, Piscataway, NJ). The plasmid was sequenced to confirm correct fusion with GST and transformed in E. coli BL21. Protein expression was triggered by adding 0.1 mM IPTG for 3 hr at 37\u00b0C and analyzed by SDS-polyacrylamide gel electrophoresis (PAGE) followed by Coomassie staining. Glutathione transferase (GST)-coupled proteins were purified as described previously (Smith and Johnson, 1988) and 20 \u03bcg were administrated by four successive subcutaneous injections (every 3 weeks) to five BALB/c mice for immunization. After bleeding, sera were absorbed against GST. Sera from mice immunized with GST alone were used as negative controls.\n\n### Transmission and scanning electron microscopy\n\nFor transmission electron microscopy, cells were fixed in culture media overnight at 4\u00b0C in 2.5% glutaraldehyde\u20130.1 M cacodylate buffer (pH 7.2) and postfixed in OsO4 (2%) in the same buffer. After serial dehydration samples were embedded in Agar 100 (Agar Scientific, Ltd., United Kingdom) and left to polymerize at 60\u00b0C. Ultrathin sections (50\u201370 nm thick) were collected on Formvar-carbon-coated copper grids using a Leica EM UC6 ultramicrotome and stained with uranyl acetate and lead citrate. Observations were made on a Tecnai 10 electron microscope (FEI) and images were captured with a MegaView II camera and processed with AnalySIS and Adobe Photoshop CS4 (San Jose, CA). For scanning electron microscopy, samples were fixed overnight at 4\u00b0C in 2.5% glutaraldehyde\u20130.1 M cacodylate buffer (pH 7.2) and postfixed in 2% OsO4 in the same buffer. After serial dehydration, the samples were dried at the critical point and coated with platinum according to standard procedures. Observations were made in a JEOL 7600F microscope.\n\n### Immunofluorescence and live cell imaging\n\nCultured parasites were washed twice in SDM79 medium without serum and spread directly onto poly-L-lysine coated slides. The slides were air-dried for 10 min, fixed in methanol at \u221220\u00b0C for 30 s and rehydrated for 10 min in PBS. For immunodetection, slides were incubated with primary antibodies diluted in PBS with 0.1% Bovine Serum Albumine (BSA) for 1 hr. Three washes of 10 min were performed and the secondary antibody diluted in PBS with 0.1% BSA was added to the slides. After an incubation of 45 min, slides were washed three times in PBS for 10 min and DAPI (2 \u00b5g/\u00b5l) was added. Slides were mounted using ProLong antifade reagent (Invitrogen).\n\nAntibodies used were the anti-IFT27 antisera of one mouse diluted 1/800, the anti-IFT22/RABL5 mouse polyclonal antibody (Adhiambo et al., 2009), Mab25 recognizing TbSAXO1, a protein found all along the trypanosome axoneme (Pradel et al., 2006), L8C4, recognizing PFR2, a major paraflagellar rod protein (Kohl et al., 1999), BB2 recognizing the TY1-epitope (Bastin et al., 1996), the anti-IFT172 mouse monoclonal and anti-DHC1b polyclonal antibodies diluted 1/200 and 1/100 respectively (our unpublished data), the Living Colors DsRed Polyclonal Antibody (Clontech) diluted 1/1500 and the rabbit polyclonal anti-GFP (Invitrogen) diluted 1/500. Subclass-specific secondary antibodies coupled to Alexa 488 and Cy3 (1/400; Jackson ImmunoResearch Laboratories, West Grove, PA) were used for double labeling. Sample observation was performed using a DMI4000 microscope equipped with a 100X NA 1.4 lens (Leica, Wetzlar, Germany) and images captured with a CoolSnap HQ camera (Roper Scientific, Tucson, AZ). Pictures were analyzed using ImageJ 1.47g13 software (National Institutes of Health, Bethesda, MD) and images were merged and superimposed using Adobe Photoshop CS4. For live video microscopy, cells were covered by a coverslip and observed directly with the DMI4000 microscope at room temperature. Videos were acquired using an Evolve 512 EMCCD Camera (Photometrics, Tucson, AZ), the Metamorph acquisition software (Molecular Probes, Sunnyvale, CA). Trypanosomes were observed and the IFT was recorded at 250 ms per frame during 30 s using the Evolve 512 EMCCD Camera. Videos were mounted using iMovie 2011. Kymographs were extracted and analyzed as described previously (Chenouard et al., 2010, Buisson et al., 2013).\n\n### Western blot\n\nCells were washed in PBS and boiled in Laemmli loading buffer before SDS-PAGE separation, loading 20 \u03bcg of total cell protein per lane. Proteins were transferred overnight at 25V at 4\u00b0C to polyvinylidene fluoride membranes, then blocked with 5% skimmed milk in PBS-Tween 0.1% (PBST) and incubated with primary antibodies diluted in 1% milk and PBST. The anti-IFT27 serum was diluted 1/800, and BB2 was diluted 1/100. To detect GFP and YFP, we used a mouse monoclonal anti-GFP antibody (Roche) diluted 1/500. As loading controls, antibodies anti-PFR (L13D6) (Kohl et al., 1999) diluted 1/50 and anti-aldolase (a kind gift of Paul Michels, Brussels, Belgium) diluted 1/1000 were used. Three membrane washes were performed with PBST for 5 min. Species-specific secondary antibodies coupled to horseradish peroxidase (GE Healthcare) were diluted 1/20,000 in PBST containing 1% milk and incubated for 1 hr. Final detection was carried out by using an enhanced chemoluminescence kit and a high performance chemoluminescence film according to manufacturer's instructions (Amersham, Piscataway, NJ).\n\n### Immunoprecipitations\n\n50 ml of IFT27RNAiRESYFP, IFT27RNAiRESQ67LYFP and IFT27RNAiREST19NYFP cell lines were grown until they reached a concentration of 1.107 cells/ml. Cells were washed and incubated in IP2 buffer (0.8M NaCl, 20 mM Tris\u2013HCl pH 8, 20 mM EDTA, 2% Triton X100, 10 \u00b5g/ml leupeptin and pepstatine A) for 30 min at room temperature. Soluble protein extract was centrifuged at 21,130\u00d7g at 4\u00b0C for 30 min and supernatant was collected and incubated for 12 hr at 4\u00b0C with either 5 \u00b5l of polyclonal rabbit anti-GFP (Invitrogen) or 5 \u00b5l of anti-aldolase in the control. Prior to the immune complex recovery, protein A-Sepharose beads (GE Healthcare, NJ) were washed in IP1 buffer (0.4M NaCl, 10 mM Tris\u2013HCl pH 7, 4, 10 mM EDTA, 1% Triton X100, 1 mg/ml ovalbumine). Immune complexes were recovered by incubation with pretreated protein A-Sepharose beads for 15 min at 4\u00b0C. The beads then were washed three times with IP1 buffer, twice with IP2 buffer and once with IP3 buffer (0.4M NaCl, 10 mM Tris\u2013HCl pH 7,4, 10 mM EDTA). Interaction of the immune complex with the beads was disrupted by boiling in 50 \u03bcl of Laemmli loading buffer and analyzed by SDS-PAGE followed by immunoblotting.\n",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "72780967-49be-44ef-8b9f-eb2249fecdf9",
+      "submission_id": "07ff67fb-6a9a-4773-a800-7403b2fd8b25",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anthony A Hyman, Max Planck Institute of Molecular Cell Biology and Genetics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02419.023](https://doi.org/10.7554/eLife.02419.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe GTPase IFT27 participates in the regulation of anterograde and retrograde intraflagellar transport\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 3 reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThree reviewers read your paper, and after discussions with the editor, they recommend publication of the work. The main discussions centered around the biological insight. Those reviewers further from the field had a harder time understanding the insight than those closer to the field. Therefore we would like you to reemphasize the biological discovery here, which is not the fact that IFT27 is an important player in delivering cargo to the flagella, but rather the specific cargo is actually the retrograde machinery. Please make this clear in your Abstract, Introduction, and Discussion.\n\nExperimentally, the major concern is the surprising and actually quite striking lack of kymograph analysis of anterograde and retrograde trafficking for any protein other than IFT27 itself. At least the most naive expectation would be that if IFT27 affects retrograde but not anterograde transport, then this should be evident as a drop in the retrograde transport frequency without a corresponding drop in the anterograde frequency. We do agree that their end-point phenotypic analysis, showing accumulation of IFTB proteins in short swollen cilia full of electron dense material does strongly support a specific defect in retrograde transport, but wouldn't a live cell analysis make this point much more directly? Perhaps there are tricky timing issues: obviously one would have to do the analysis early enough in the RNAi process that the cilia had not yet become short stumps. The authors do mention that such data exists (for example the authors mention mention having done this analysis for IFT140) but they do not show it. In particular, IFT52 kymographs would strongly support their model of impaired retrograde return being the cause for IFTB accumulation in the RNAi lines. You may have had good reasons why this analysis wasn't possible but I think that you should at least spell those reasons out, since this really seemed like a glaring omission, especially given the incredibly thorough level of treatment that the authors gave to every other aspect of their story.\n\nAnother issue that one of the reviewers brought up was the fact that the GTP locked form of IFT27 can fully replace the function of wild-type IFT27 (if I am understanding the results correctly). This is surprising since one normally thinks of G proteins as executing a cyclic reaction so that jamming the reaction at any point in the cycle should impair function. I bring this up because it was a surprising aspect of the story, but to their great credit the authors face this surprise head on and give several possible explanations. These seem reasonable but worth commenting that this was the one point in the paper where the story suddenly deviated from what one might have expected. Perhaps there is an explanation. IFT is a cycle, with anterograde particles switching to retrograde motion and then re-entering the flagella for another anterograde run. Given the cyclic nature of IFT, and the fact that IFT27 is involved in coupling retrograde and anterograde motion, a palausible model could have been that the GTPase cycle of IFT27 was coupled to the directional cycle of IFT. There was never really any reason to think this, but many readers will make a similar assumption and thus be startled by the active site mutant results. We would thus encourage the authors to emphasize a bit more explicitly the idea that the two cycles might have been coupled but apparently are not. That may help readers to avoid confusion.\n",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f51e8dbc-c9bc-4e70-8469-ba1a132964d6",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C1",
+      "claim": "The construction of cilia and flagella depends on intraflagellar transport (IFT), the bidirectional movement of two protein complexes (IFT-A and IFT-B) driven by specific kinesin and dynein motors.",
+      "claim_type": "EXPLICIT",
+      "source": "The construction of cilia and flagella depends on intraflagellar transport (IFT), the bidirectional movement of two protein complexes (IFT-A and IFT-B) driven by specific kinesin and dynein motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about IFT and is supported by citations in the introduction section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "eab4b02b-1900-4ddc-bbcb-84112f824b41",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C2",
+      "claim": "IFT-B and kinesin are associated to anterograde transport.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT-B and kinesin are associated to anterograde transport whereas IFT-A and dynein participate to retrograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "52f5feaa-fc53-4a52-8b78-b7be9d835eac",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C3",
+      "claim": "IFT-A and dynein participate to retrograde transport.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT-B and kinesin are associated to anterograde transport whereas IFT-A and dynein participate to retrograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "6cc84128-752e-4d16-85d6-b0687af7518e",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C4",
+      "claim": "The small GTPase IFT27, a member of the IFT-B complex, is essential for retrograde cargo transport in Trypanosoma brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the small GTPase IFT27, a member of the IFT-B complex, turns out to be essential for retrograde cargo transport in Trypanosoma brucei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data showing accumulation of IFT proteins and failure to import IFT-A and dynein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "f5a428d1-c6c3-410c-b5ee-2e59bf23263b",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C5",
+      "claim": "IFT27 depletion causes failure to import both the IFT-A complex and the IFT dynein into the flagellar compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal that this is due to failure to import both the IFT-A complex and the IFT dynein into the flagellar compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data showing IFT140 and DHC1b concentrated at the flagellum base but not inside the flagellum in IFT27 RNAi cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "fa5b6795-6dce-4719-b95f-25aff2661768",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C6",
+      "claim": "The GDP-locked version of IFT27 is unable to enter the flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "The GDP-locked version is unable to enter the flagellum and to interact with other IFT-B proteins and its sole expression prevents flagellum formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence and live microscopy data showing IFT27T19N localized only in the cytoplasm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "524b038b-3025-4dec-925f-cc718d5031dd",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C7",
+      "claim": "The GDP-locked version of IFT27 is unable to interact with other IFT-B proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The GDP-locked version is unable to enter the flagellum and to interact with other IFT-B proteins and its sole expression prevents flagellum formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation experiments showing IFT27T19N fails to bring down IFT172 and IFT22.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "dfd29606-2c98-4f95-aae7-6e6410e48a21",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C8",
+      "claim": "Expression of the GDP-locked version of IFT27 alone prevents flagellum formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The GDP-locked version is unable to enter the flagellum and to interact with other IFT-B proteins and its sole expression prevents flagellum formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing short flagella in induced IFT27RNAiREST19N cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "2ac78431-e7c6-4caf-9631-6c36449944a2",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C9",
+      "claim": "A GTPase-competent IFT27 is required for association to the IFT complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that a GTPase-competent IFT27 is required for association to the IFT complex and that IFT27 plays a role in the cargo loading of the retrograde transport machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability of the GDP-locked version to interact with IFT-B proteins and enter the flagellum.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "811ee645-9d12-41f9-aa52-aff7449a948b",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C10",
+      "claim": "IFT27 plays a role in the cargo loading of the retrograde transport machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that a GTPase-competent IFT27 is required for association to the IFT complex and that IFT27 plays a role in the cargo loading of the retrograde transport machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing failure of IFT-A and dynein to enter the flagellum in the absence of IFT27.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "bc8dd2ec-2ffe-451d-809d-f054b7548404",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C11",
+      "claim": "IFT is an evolutionary conserved process for assembling cilia and flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Although cilia and flagella can differ by their functions, they share the same basic structure and are mainly assembled by an evolutionary conserved process called intraflagellar transport (IFT) (Kozminski et al., 1993; Rosenbaum and Witman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "d66b1e32-4f68-431c-ae25-48099ea41d60",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C12",
+      "claim": "During IFT, large protein complexes called IFT trains are moved from the base to the tip of the flagellum by kinesin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "During IFT, large protein complexes called IFT trains are moved from the base to the tip of the flagellum by kinesin-2 (anterograde IFT) (Kozminski et al., 1995) and back towards the base by cytoplasmic dynein-1b/2 (retrograde IFT) (Pazour et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "6b977310-a582-4d0f-b6ef-02869ac4c175",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C13",
+      "claim": "IFT trains are moved back towards the base by cytoplasmic dynein-1b/2.",
+      "claim_type": "EXPLICIT",
+      "source": "During IFT, large protein complexes called IFT trains are moved from the base to the tip of the flagellum by kinesin-2 (anterograde IFT) (Kozminski et al., 1995) and back towards the base by cytoplasmic dynein-1b/2 (retrograde IFT) (Pazour et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "4e0a7784-e2d3-4eb7-93ae-f1e4d0b8149e",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C14",
+      "claim": "The IFT particles are composed of at least 20 different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFT particles are composed of at least 20 different proteins (Cole et al., 1998; Follit et al., 2009; Taschner et al., 2011) and can be divided in two different complexes known as complex A (made of at least 6 proteins) and B (made of at least 14 proteins) that are needed for retrograde and anterograde IFT respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "3f6ddde7-637d-49de-922e-4612006840ba",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C15",
+      "claim": "IFT complex A is made of at least 6 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFT particles are composed of at least 20 different proteins (Cole et al., 1998; Follit et al., 2009; Taschner et al., 2011) and can be divided in two different complexes known as complex A (made of at least 6 proteins) and B (made of at least 14 proteins) that are needed for retrograde and anterograde IFT respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "0f508ab4-bd4d-4ffb-9107-96931be899e6",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C16",
+      "claim": "IFT complex B is made of at least 14 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The IFT particles are composed of at least 20 different proteins (Cole et al., 1998; Follit et al., 2009; Taschner et al., 2011) and can be divided in two different complexes known as complex A (made of at least 6 proteins) and B (made of at least 14 proteins) that are needed for retrograde and anterograde IFT respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "ad3a911f-823a-46df-84e2-953065f8fb7c",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C17",
+      "claim": "Inactivation of IFT-B proteins or of the kinesin motor results in the failure to construct the flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of IFT-B proteins or of the kinesin motor results in the failure to construct the flagellum whereas IFT-A proteins and the IFT dynein contribute to retrograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "a424a4b2-5eb4-458d-b3c4-0fb2af936f03",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C18",
+      "claim": "IFT27 exhibits sequence homologies with the family of Rab-like small G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two IFT proteins belonging to the IFT complex B do not share those features. Instead, they exhibit sequence homologies with the family of Rab-like small G proteins, which can function to regulate vesicle movement along actin and tubulin networks (Stenmark, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1 and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "e6c00fb9-da5b-47cb-b5cc-58f7500d99b2",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C19",
+      "claim": "IFT22 lacks the G4 domain needed for recognition of the guanine base.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being homologous to the Rab-like proteins, IFT22 lacks the G4 domain needed for recognition of the guanine base (Paduch et al., 2001) and GTP binding and hydrolysis has not been demonstrated to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "b4a100c3-3380-475c-8584-d38c9c21abe6",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C20",
+      "claim": "IFT27 possesses all five RAS-GTPase consensus sequences needed for GTPase activity and GDP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The second protein is termed IFT27 (or Rab-like 4) and contrary to IFT22, it possesses all five RAS-GTPase consensus sequences needed for GTPase activity and GDP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "e461bc27-ef8a-4b6c-845e-4cda592e1dfe",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C21",
+      "claim": "IFT27 is structurally similar to Rab8 and Rab11.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, the protein is similar to Rab8 and Rab11 and is capable of GTP hydrolysis (Bhogaraju et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "c178f4ad-bd17-4afd-b311-d9629057a7f1",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C22",
+      "claim": "IFT27 is capable of GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, the protein is similar to Rab8 and Rab11 and is capable of GTP hydrolysis (Bhogaraju et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "ab97b57c-6045-428f-b864-76f78636c6f1",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C23",
+      "claim": "IFT27 is part of the IFT complex B core.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT27 is part of the IFT complex B core, where the protein interacts directly with IFT25 (Lucker et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and co-immunoprecipitation data in the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "46b363e6-2b55-4fe8-9b28-36b138bd50ba",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C24",
+      "claim": "IFT27 interacts directly with IFT25.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT27 is part of the IFT complex B core, where the protein interacts directly with IFT25 (Lucker et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "407dc074-348d-4d18-8c9c-843b93a6bb52",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C25",
+      "claim": "The IFT25/27 sub-complex is associated with the rest of the IFT complex B prior to flagellum entry.",
+      "claim_type": "EXPLICIT",
+      "source": "This IFT25/27 sub-complex is associated with the rest of the IFT complex B prior to flagellum entry, suggesting a possible regulatory role during the entry of the IFT machinery (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "5afcf08d-f4a0-4725-a378-cfa725cdc558",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C26",
+      "claim": "RNAi-mediated knockdown of IFT27 causes flagellar defects in Chlamydomonas.",
+      "claim_type": "EXPLICIT",
+      "source": "In Chlamydomonas, RNAi-mediated knockdown of IFT27 causes flagellar defects (Qin et al., 2007), supporting its role during flagellar assembly, although its exact contribution was not investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "7db038b1-9ec4-4ad3-944b-dfca3fbab813",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C27",
+      "claim": "The T. brucei IFT27 gene encodes a predicted protein of 183 amino acids with a predicted molecular weight of 20.64 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "The T. brucei IFT27 gene (TritrypDB Accession number Tb927.3.5550) has a 552 nucleotide-long sequence that encodes a predicted protein of 183 amino acids (predicted molecular weight of 20.64 kDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of the gene.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "2619bb7b-d229-4f44-ab9f-843b4597ff78",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C28",
+      "claim": "IFT27 shares significant homology with the Rab-like 4 (RABL4) GTPase found in Homo sapiens and vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "BLAST analyses show that IFT27 shares significant homology (E value = 2e\u221227) with the Rab-like 4 (RABL4) GTPase found in Homo sapiens and vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on BLAST analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "45267294-ed64-48a9-95a3-b1335260b115",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C29",
+      "claim": "IFT27 homologues are present in the genomes of all ciliated organisms except in Drosophila, C. elegans, Giardia, and some ferns and mosses.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT27 homologues are present in the genomes of all ciliated organisms except in Drosophila, C. elegans, Giardia, and some ferns and mosses (van Dam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "48b47e22-752e-4bac-b088-d6af83f02c2f",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C30",
+      "claim": "All IFT27 sequences lack the prenylation motif found in Rab proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, all IFT27 sequences lack the prenylation motif (two cysteins at the C terminal end) found in Rab proteins suggesting that the protein is not lipid modified and thus unlikely to interact with the cellular membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "86880846-26c2-4a2b-b947-6512a893371d",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C31",
+      "claim": "IFT27 is unlikely to interact with the cellular membrane due to lack of prenylation motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, all IFT27 sequences lack the prenylation motif (two cysteins at the C terminal end) found in Rab proteins suggesting that the protein is not lipid modified and thus unlikely to interact with the cellular membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of prenylation motif.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "68c5d9c7-b5ff-4ea2-af40-8a610806ef09",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C32",
+      "claim": "The anti-IFT27 antibody detected a single band migrating at a position close to the predicted size of 20 kDa in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analyses using the anti-IFT27 antibody showed a single band migrating at a position close to the predicted size of 20 kDa in wild-type cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Western blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "16401a3b-faff-4d39-bc95-7abd2117b980",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C33",
+      "claim": "In trypanosomes expressing the GFP::IFT27 fusion, the anti-IFT27 antibody detected an additional band migrating close to the 50 kDa marker.",
+      "claim_type": "EXPLICIT",
+      "source": "In trypanosomes expressing the GFP::IFT27 fusion, the same antibody detected an additional band migrating close to the 50 kDa marker. This molecular weight is compatible with the expected mass of the fusion protein (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Western blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "c1b0a8ed-9774-44e3-9ede-40637f7a683f",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C34",
+      "claim": "IFT27 localizes all along the flagellum, starting at the base of the organelle and reaching its distal tip.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type cells, the anti-IFT27 antibody produced a signal all along the flagellum, starting at the base of the organelle and reaching its distal tip where it was sometimes brighter (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "0f1df001-ab30-45d7-a0f2-e85f3506e613",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C35",
+      "claim": "GFP::IFT27 clearly traffics along the flagellum with typical bidirectional IFT.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of live microscopy demonstrated that the fusion protein clearly traffics along the flagellum (Figure 2C,D; Video 1) where typical bidirectional IFT was visualized.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by live microscopy data in Figure 2C,D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "61452afe-ccb0-4313-8730-53d349542475",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C36",
+      "claim": "The mean anterograde velocity of GFP::IFT27 was 2.5 \u00b1 0.68 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean anterograde velocity was 2.5 \u00b1 0.68 \u00b5m/s (n = 234) and mean retrograde velocity was measured at 3.8 \u00b1 1.5 \u00b5m/s (n = 269).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on kymograph analysis of live microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "f8529bae-848e-42b8-9811-84507261726a",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C37",
+      "claim": "The mean retrograde velocity of GFP::IFT27 was 3.8 \u00b1 1.5 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean anterograde velocity was 2.5 \u00b1 0.68 \u00b5m/s (n = 234) and mean retrograde velocity was measured at 3.8 \u00b1 1.5 \u00b5m/s (n = 269).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on kymograph analysis of live microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "9428f721-7d4f-4d24-9aa3-8a58eac7e690",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C38",
+      "claim": "IFT27 expression was inhibited after 48 hr of RNAi induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis using the anti-IFT27 polyclonal antibody showed that the IFT27 expression was inhibited after 48 hr of induction (Figure 4A) and IFT27RNAi cells showed a clear growth defect upon depletion of the protein (Figure 4B), in line with the essential role of the flagellum for the trypanosome cell cycle (Kohl et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Western blot data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "326b4314-c85c-4b27-a265-a000f74c24ea",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C39",
+      "claim": "IFT27RNAi cells showed a clear growth defect upon depletion of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis using the anti-IFT27 polyclonal antibody showed that the IFT27 expression was inhibited after 48 hr of induction (Figure 4A) and IFT27RNAi cells showed a clear growth defect upon depletion of the protein (Figure 4B), in line with the essential role of the flagellum for the trypanosome cell cycle (Kohl et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by growth curve data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "681da602-6751-47df-a63d-4d620ed89f24",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C40",
+      "claim": "IFT27RNAi cells induced for 72 hr assemble abnormally short flagella with a mean axonemal length of 4.0 \u00b1 6.8 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence assays results revealed that IFT27RNAi cells induced for 72 hr assemble abnormally short flagella (Figure 4C bottom panel, arrowhead) with a mean axonemal length of 4.0 \u00b1 6.8 \u00b5m (n = 100) instead of 20.5 \u00b1 2.8 \u00b5m (n = 100) for non-induced controls (Figure 4C, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 4C and quantitative measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "658cb835-de71-4c9a-8cc2-2e6830ef5c62",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C41",
+      "claim": "Non-induced IFT27RNAi control cells have a mean axonemal length of 20.5 \u00b1 2.8 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence assays results revealed that IFT27RNAi cells induced for 72 hr assemble abnormally short flagella (Figure 4C bottom panel, arrowhead) with a mean axonemal length of 4.0 \u00b1 6.8 \u00b5m (n = 100) instead of 20.5 \u00b1 2.8 \u00b5m (n = 100) for non-induced controls (Figure 4C, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 4C and quantitative measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "8293e208-af56-4243-ad7d-1112619046a9",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C42",
+      "claim": "IFT172 and IFT22 accumulate in the short flagella of induced IFT27RNAi cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unexpected accumulations of IFT172 and IFT22 were found in the short flagella of induced IFT27RNAi cells (Figure 5Ae\u2013h, arrows) and the same results were observed for PIFTC3, a candidate IFT-B protein (Franklin and Ullu, 2010) (unpublished data).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "b8a1019a-623c-4b19-85af-8b9ca95465f6",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C43",
+      "claim": "GFP::IFT52 accumulates inside the short flagella of 72-hr induced IFT27RNAi cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas in non-induced cells, GFP::IFT52 was localized in the cytoplasm but also concentrated at the base of the flagellum and inside the organelle (Figure 5Ba\u2013d), 72-hr induced cells clearly showed an accumulation of the protein inside their short flagella (Figure 5Be\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "ea38054c-be07-4f92-9b13-5579196f4e4a",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C44",
+      "claim": "At least four members of the IFT-B complex accumulate inside the flagellum of the induced IFT27RNAi cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations demonstrate that at least four members of the IFT-B complex accumulate inside the flagellum of the induced IFT27RNAi cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunofluorescence data showing accumulation of IFT172, IFT22, PIFTC3, and IFT52.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "d1d82110-917e-4fec-a5ea-629b94d0f03f",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C45",
+      "claim": "Induced IFT27RNAi cells exhibit a significant accumulation of electron-dense material that likely corresponds to excessive IFT material.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a significant accumulation of electron-dense material that likely corresponds to excessive IFT material was observed (Figure 5Cc\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by transmission electron microscopy data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "7447e500-463e-445f-adf8-8544ef9e8b8b",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C46",
+      "claim": "The axoneme in induced IFT27RNAi cells was frequently disrupted and sometimes even split into two.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the axoneme was frequently disrupted and sometimes even split into two (Figure 5C,D) and an enlarged, often disorganized PFR structure was frequently observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by transmission electron microscopy data in Figures 5C and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "d4b7c689-556b-43a3-bac8-6a2485484a85",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C47",
+      "claim": "Over 61% of the flagellar sections in induced IFT27RNAi cells displayed the combination of IFT accumulation, axoneme disruption, and enlarged PFR.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 61% of the flagellar sections (n = 77) displayed the combination of the three phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of TEM sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "5ac769d5-504f-4c51-93ed-386dc0bf3f7f",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C48",
+      "claim": "In non-induced IFT27RNAi cells, GFP::DHC1b signal was present around the base of the flagellum and displayed a punctuated staining inside the organelle and in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-induced IFT27RNAi cells, the GFP::DHC1b signal was present around the base of the flagellum and displayed a punctuated staining inside the organelle and in the cytoplasm (Figure 7a\u2013d) confirming previous localization experiments performed with the anti-DHC1b antibody (our unpublished data).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "0d2a866f-26eb-4320-a1df-3d40eae25377",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C49",
+      "claim": "When IFT27RNAi cells were induced for 3 days, DHC1b was not detected inside the short flagella but instead the protein appeared concentrated at the base of the flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "When IFT27RNAi cells were induced for 3 days, DHC1b was not detected inside the short flagella but instead the protein appeared concentrated at the base of the flagellum (Figure 7e\u2013h), suggesting defects in flagellum entry.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "e9044b24-478d-4822-8d7c-7a381b5a08b2",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C50",
+      "claim": "In non-induced IFT27RNAi cells, TdT::IFT140 is localized inside the flagellum compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-induced cells, the fusion protein is localized inside the flagellum compartment (Figure 8b) as for the anti-IFT172 (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "52392eea-06d7-4a4c-9307-b613d937f194",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C51",
+      "claim": "In 3-day-induced IFT27RNAi cells, TdT::IFT140 is only found concentrated at the base of the organelle and not inside the flagellar compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "In 3-day-induced IFT27RNAi cells, TdT::IFT140 is only found concentrated at the base of the organelle and not inside the flagellar compartment (Figure 8f,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "d48dc4d2-1fd9-4a61-b71a-2b90ca75a5e2",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C52",
+      "claim": "Both actors of the retrograde transport fail to enter the flagellum in the absence of IFT27.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both actors of the retrograde transport fail to enter the flagellum in the absence of IFT27, suggesting that this protein, despite being a member of the IFT-B complex, is a major controller of retrograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data showing both IFT140 and DHC1b fail to enter the flagellum in IFT27 RNAi cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "f45f1ca5-3007-4b45-bc36-0d1c0653868f",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C53",
+      "claim": "The RNAi-resistant version of IFT27 complements gene function upon silencing of the endogenous IFT27 gene copies.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the RNAi-resistant version of IFT27 complements gene function upon silencing of the endogenous IFT27 gene copies and demonstrate the specificity of the phenotypes observed in the IFT27RNAi cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by growth curves and immunofluorescence data in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "7b17e423-68bf-4bdb-85e0-f39d96d4536d",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C54",
+      "claim": "The growth rate of the IFT27RNAiRESQ67L cell line did not vary after induction.",
+      "claim_type": "EXPLICIT",
+      "source": "After induction, the growth rate of the IFT27RNAiRESQ67L cell line did not vary (Figure 11B), while the IFT27RNAiREST19N cells showed impaired growth (Figure 11D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by growth curve data in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "f97cb840-dc62-45c3-ae04-65ce235504cb",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C55",
+      "claim": "The IFT27RNAiREST19N cells showed impaired growth after induction.",
+      "claim_type": "EXPLICIT",
+      "source": "After induction, the growth rate of the IFT27RNAiRESQ67L cell line did not vary (Figure 11B), while the IFT27RNAiREST19N cells showed impaired growth (Figure 11D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by growth curve data in Figure 11D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "7d60695f-7fca-4e1e-be5e-a9c6c1bb4165",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C56",
+      "claim": "The modified T19N protein produces a phenotype only when the endogenous IFT27 expression is inhibited, suggesting a recessive effect of the T19N mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the modified T19N protein produces a phenotype only when the endogenous IFT27 expression is inhibited, suggesting a recessive effect of the T19N mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that growth defects only appear after RNAi induction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "96b8abf9-57ca-4d87-bf4d-c770df25e0fb",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C57",
+      "claim": "IFT27RNAiREST19N cells build unusually short flagella after 3 days of induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence assays using the monoclonal antibodies Mab25 and L8C4 showed that the IFT27RNAiRESQ67L (GTP-locked) cells were undistinguishable from their non-induced control (Figure 11E) whereas IFT27RNAiREST19N (GDP-locked) cells build unusually short flagella after 3 days of induction (Figure 11F, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 11F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "61d3e758-1b3e-4451-b08e-a9d1c54b221e",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C58",
+      "claim": "Flagellar length of IFT27RNAiREST19N cells dropped to 3.7 \u00b1 3.1 \u00b5m after induction compared to 17.6 \u00b1 2.1 \u00b5m for the non-induced controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellar length of the IFT27RNAiRESQ67L cell line showed no significant differences between non-induced (16.9 \u00b1 1.9 \u00b5m, n = 100) and induced cells (16.6 \u00b1 2.98 \u00b5m, n = 100) whereas flagellar length of IFT27RNAiREST19N cells dropped to 3.7 \u00b1 3.1 \u00b5m (n = 79) after induction compared to 17.6 \u00b1 2.1 \u00b5m (n = 100) for the non-induced controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative measurements of flagellar length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "912967a9-bf26-4a5d-9ab2-686ba13afb6e",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C59",
+      "claim": "The expression of a GDP or GTP-locked form of IFT27 has a slightly negative dominant impact on the formation of the trypanosome flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by carefully analysing both IFT27RNAiREST19N and IFT27RNAiRESQ67L cells in non-induced conditions, we noticed that the length of the flagellum was shorter by about 3 \u00b5m compared to cell that are not expressing a mutated form of IFT27 (Figure 12). This interesting result indicates that the expression of a GDP or GTP-locked form of IFT27 has a slightly negative dominant impact on the formation of the trypanosome flagellum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by flagellar length measurements in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "64669561-c643-481d-948c-f49f8161edcc",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C60",
+      "claim": "The induced IFT27RNAiREST19N cells did not show signs of IFT B complex accumulation but IFT172 was found concentrated at the base of the organelle.",
+      "claim_type": "EXPLICIT",
+      "source": "While the IFT172 staining looked normal in the non-induced context (Figure 13Aa\u2013d), the induced IFT27RNAiREST19N cells did not show signs of IFT B complex accumulation but IFT172 was found concentrated at the base of the organelle (Figure 13Ae\u2013h) in a way reminding of the localization of the IFT140 protein in the IFT27RNAi cell line (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 13A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "4ca7f9ff-7fdd-4cec-9518-4af0498a2cb9",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C61",
+      "claim": "The expression of IFT27RNAiREST19N in the absence of endogenous IFT27 triggers an anterograde IFT phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype obtained in the induced IFT27RNAiREST19N cells is reminiscent to the ones observed upon disruption of the anterograde IFT machinery (Pazour et al., 2000; Absalon et al., 2008b) and shows that the expression of IFT27RNAiREST19N in the absence of endogenous IFT27 triggers an anterograde IFT phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of the phenotype to known anterograde IFT defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "b56b7164-3900-4179-a0cc-350961740210",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C62",
+      "claim": "DHC1b remained at the flagellum base in induced cells solely expressing the T19N mutant protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DHC1b remained at the flagellum base in induced cells solely expressing the T19N mutant protein (Figure 14e\u2013h, arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 14.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "d211adae-cb22-4b4f-a78b-27f118a94196",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C63",
+      "claim": "The GDP-locked version does not sustain the entry of the IFT-B complex in the flagellar compartment, leading to an anterograde phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the GDP-locked version does not sustain the entry of the IFT-B complex in the flagellar compartment, leading to an anterograde phenotype. Nevertheless, dynein is still targeted to the base of the flagellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization data of IFT172 and DHC1b in cells expressing the T19N mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "29b1b8f0-9fe4-45b0-84ca-c75d4ecc8d5b",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C64",
+      "claim": "IFT27RNAiRESQ67L is localized inside the flagellum in non-induced and induced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence assays using the anti-IFT27 and the anti-GFP antibodies (Figure 15) showed that IFT27RNAiRESQ67L is localized inside the flagellum in non-induced (Figure 15Aa\u2013d) and induced (Figure 15Ae\u2013h) cells as the unmodified IFT27RNAiRES::YFP protein (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 15A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "9cf7ea54-7a0b-4d42-917c-e0b73bfe220e",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C65",
+      "claim": "The fluorescent Q67L modified protein traffics inside the flagellum in both non-induced and induced conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fluorescent Q67L modified protein traffics inside the flagellum in both conditions (Figure 15B; Video 3) and kymograph analyses demonstrated anterograde and retrograde train speed similar to the unmodified protein (Figure 15B, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by live microscopy and kymograph data in Figure 15B and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "a7e03972-a176-4520-aa39-6f64c5260126",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C66",
+      "claim": "The IFT27RNAiREST19N::YFP fusion protein was always found in the cytoplasm in both non-induced and induced situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the IFT27RNAiREST19N::YFP fusion protein was always found in the cytoplasm in both non-induced and induced situations (Figure 15C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 15C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "7b8a1872-6eb2-4cff-ba89-95f05bfa3419",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C67",
+      "claim": "No signal of IFT27RNAiREST19N::YFP could be detected in the flagellum by immunofluorescence assays or by live cell imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "No signal could be detected in the flagellum, neither by immunofluorescence assays (Figure 15C) nor by live cell imaging (Video 4) in both non-induced and induced cells, suggesting that the modified protein is not able to access the flagellum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence data in Figure 15C and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "099e1ce5-b47b-40d3-afc3-1a6e4a098b8f",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C68",
+      "claim": "The immune complexes formed by IFT27RNAiRES::YFP and IFT27RNAiRESQ67L::YFP contain both IFT22 and IFT172.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, immunoblotting using two antibodies recognizing IFT-B proteins IFT22 and IFT172 showed that the immune complexes formed by IFT27RNAiRES::YFP and IFT27RNAiRESQ67L::YFP contain both proteins (Figure 15D, left and middle rows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by co-immunoprecipitation data in Figure 15D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "928e4b1b-484b-447f-84ea-d480b7c347ea",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C69",
+      "claim": "Immunoprecipitation of IFT27RNAiREST19N::YFP failed to bring down IFT22 and IFT172.",
+      "claim_type": "EXPLICIT",
+      "source": "However, immunoprecipitation of IFT27RNAiREST19N::YFP failed to bring down IFT22 and IFT172 (Figure 15D, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by co-immunoprecipitation data in Figure 15D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "fca8b018-f8e0-4f03-8c05-5ca6fd7756ed",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C70",
+      "claim": "The T19N mutant version of IFT27 is unable to interact with at least two members of the IFT-B complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the T19N mutant version of IFT27 is unable to interact with at least two members of the IFT-B complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on co-immunoprecipitation data showing failure to pull down IFT22 and IFT172.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "30c31e83-2fe9-4bd8-ad72-c1d6e1c2d10d",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C71",
+      "claim": "IFT27 needs to be in a GTP-bound state to interact with the rest of the IFT complex and access the flagellar compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results demonstrate that IFT27 needs to be in a GTP-bound state to interact with the rest of the IFT complex and access the flagellar compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability of the GDP-locked version to interact with IFT-B proteins and enter the flagellum, while the GTP-locked version can.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "20cfd496-e686-44ea-869c-6ff864b3e694",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C72",
+      "claim": "IFT27 is a constitutive member of the IFT-B complex in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown by immunoprecipitation that IFT27 likely is a constitutive member of the IFT-B complex in T. brucei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by co-immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "e645989c-bfa2-49c2-a64c-a96361038a7d",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "claim_id": "C73",
+      "claim": "IFT27 performs two separate functions: one in the import of both the IFT-A complex and IFT dynein motors and one in the assembly of the IFT-B complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that IFT27, an IFT-B protein, performs two separate functions: one in the import of both the IFT-A complex and IFT dynein motors and one in the assembly of the IFT-B complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data showing failure of IFT-A and dynein import in IFT27 RNAi cells, and failure of IFT-B assembly with the GDP-locked mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about intraflagellar transport (IFT), describing the bidirectional movement of IFT-A and IFT-B complexes driven by kinesin and dynein motors, with IFT-B/kinesin associated with anterograde transport and IFT-A/dynein with retrograde transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C11-C17 represent established knowledge in the field, supported by appropriate citations. These are background claims that provide context for the study rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "6b6e0846-c648-40bf-8b1e-7117e3922f78",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IFT27 is characterized as a Rab-like GTPase with all five RAS-GTPase consensus sequences, capable of GTP hydrolysis, structurally similar to Rab8 and Rab11, and part of the IFT-B complex core where it interacts with IFT25. The protein lacks prenylation motifs and is conserved across ciliated organisms with some exceptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C31 are well-supported by sequence analysis data (Figure 1), BLAST analysis, and citations to prior work. The characterization of IFT27's structural features and evolutionary conservation provides essential context for the functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "0299ba40-7616-4b9e-b923-4d535ac897fd",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IFT27 localizes throughout the flagellum and undergoes bidirectional IFT trafficking with mean anterograde velocity of 2.5 \u00b1 0.68 \u00b5m/s and retrograde velocity of 3.8 \u00b1 1.5 \u00b5m/s, as demonstrated by Western blot, immunofluorescence, and live microscopy of GFP::IFT27.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 are strongly supported by multiple complementary techniques including Western blot (Figure 2A), immunofluorescence (Figure 2B), live microscopy (Figure 2C,D, Video 1), and kymograph analysis. The velocities are consistent with other IFT-B proteins and sample sizes are adequate (n=234 and n=269).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "8654c95a-d45d-492a-92eb-f2f1cde19303",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNAi-mediated depletion of IFT27 after 48-72 hours causes growth defects and assembly of abnormally short flagella (4.0 \u00b1 6.8 \u00b5m vs 20.5 \u00b1 2.8 \u00b5m in controls).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are well-supported by Western blot showing protein depletion (Figure 4A), growth curves (Figure 4B), and quantitative immunofluorescence measurements (Figure 4C) with adequate sample sizes (n=100 for each condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "2761c10b-705a-4dbb-aee9-b51a1c337655",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IFT27 depletion causes accumulation of at least four IFT-B complex members (IFT172, IFT22, PIFTC3, IFT52) inside short flagella, along with electron-dense IFT material, disrupted axonemes, and enlarged PFR structures, with 61% of flagellar sections showing combined phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are strongly supported by immunofluorescence data (Figure 5A,B) and transmission electron microscopy (Figure 5C,D, Figure 6). The quantification of phenotypes (61%, n=77) provides statistical support. The accumulation phenotype is characteristic of retrograde IFT defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "4b6a3485-e270-4289-a6f7-91285602da38",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IFT27 depletion prevents entry of both IFT dynein (DHC1b) and IFT-A complex member (IFT140) into the flagellum, with both proteins concentrated at the flagellum base instead of inside the organelle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are well-supported by immunofluorescence data showing DHC1b (Figure 7) and IFT140 (Figure 8) localization patterns in non-induced versus induced conditions. The failure of both retrograde transport components to enter the flagellum provides a mechanistic explanation for the observed phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "4be0758c-1159-4ca8-9a4e-8c169a0f84c5",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "An RNAi-resistant version of IFT27 complements the loss-of-function phenotype, demonstrating specificity of the RNAi effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by rescue experiments showing restored growth and flagellar phenotypes (Figure 9). This is a critical control demonstrating that observed phenotypes are specifically due to IFT27 depletion rather than off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "e177429d-3c23-4024-a11d-75793cef8bcc",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Expression of GTP-locked IFT27 (Q67L) maintains normal growth and flagellar length, while GDP-locked IFT27 (T19N) shows impaired growth and short flagella (3.7 \u00b1 3.1 \u00b5m) only when endogenous IFT27 is depleted, indicating a recessive effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by growth curves (Figure 11B,D), immunofluorescence (Figure 11E,F), and quantitative measurements with adequate sample sizes (n=79-100). The differential effects of the two mutants provide insight into IFT27's GTPase cycle requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "34bb8431-51a3-4491-a53f-f8e77ca42b96",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Expression of either GDP- or GTP-locked forms of IFT27 has a slightly negative dominant effect on flagellum formation, reducing length by approximately 3 \u00b5m even in the presence of endogenous IFT27.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by careful quantitative analysis of flagellar length (Figure 12) comparing cells expressing mutant forms versus wild-type. This subtle dominant-negative effect suggests the mutants can partially interfere with normal IFT27 function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "3d4db25c-3633-46ff-b412-fd2f6eddb565",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Expression of GDP-locked IFT27 (T19N) in the absence of endogenous protein produces an anterograde IFT phenotype with IFT172 concentrated at the flagellum base but not accumulated inside, while DHC1b remains at the base, contrasting with the retrograde phenotype of simple IFT27 depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 are supported by immunofluorescence data (Figures 13A, 14) and comparison with known anterograde IFT phenotypes. The distinct phenotype from simple depletion suggests the GDP-locked form actively interferes with IFT-B complex entry rather than simply lacking function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "13609e3c-e388-44aa-b7e0-c60675a79678",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GTP-locked IFT27 (Q67L) localizes to and traffics within the flagellum in both non-induced and induced conditions with IFT velocities similar to wild-type protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are supported by immunofluorescence (Figure 15A), live microscopy (Figure 15B, Video 3), and kymograph analysis showing normal bidirectional IFT. This demonstrates the GTP-locked form can functionally substitute for wild-type IFT27.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "46c8e628-570f-4271-937f-44f5741e22fd",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GDP-locked IFT27 (T19N) is exclusively cytoplasmic and unable to enter the flagellum in both non-induced and induced conditions, as shown by immunofluorescence and live imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by immunofluorescence (Figure 15C) and live imaging (Video 4) showing consistent cytoplasmic localization. This localization defect provides a mechanistic basis for the protein's inability to function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "b1c99ffe-603f-4a6d-a87d-8ef2ec7a1963",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Wild-type and GTP-locked IFT27 co-immunoprecipitate with IFT-B proteins IFT22 and IFT172, while GDP-locked IFT27 (T19N) fails to interact with these proteins, demonstrating that IFT27 requires GTP-bound state for IFT complex association and flagellar entry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by co-immunoprecipitation experiments (Figure 15D) replicated four times. The differential binding of mutants provides strong biochemical evidence for GTP-dependent complex assembly. However, the manuscript notes they could not detect direct IFT27-DHC1b or IFT27-IFT140 interactions, suggesting indirect mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "5d9672fe-8176-42cc-853b-92874063019b",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "IFT27 is a constitutive member of the IFT-B complex that performs two separate functions: facilitating import of IFT-A complex and IFT dynein motors, and enabling IFT-B complex assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 synthesize multiple lines of evidence including co-immunoprecipitation (C72), failure of IFT-A/dynein import upon depletion (C5, C49-C52), and failure of IFT-B assembly with GDP-locked mutant (C69-C70). The dual function model is well-supported by the totality of experimental data, though the precise molecular mechanisms remain to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "0bf9606a-7b2c-4c54-8822-41e302ed8ba4",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "IFT27, despite being an IFT-B complex member, is essential for retrograde cargo transport in T. brucei through its role in cargo loading of the retrograde transport machinery, specifically by enabling import of IFT-A complex and IFT dynein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C9, C10 represent the central finding of the manuscript. The surprising retrograde phenotype from depleting an IFT-B protein is well-supported by: (1) accumulation of IFT-B proteins in short flagella (C42-C47), (2) failure of IFT-A and dynein to enter flagella (C49-C52), and (3) GTPase-dependent complex assembly (C68-C71). This represents a novel mechanistic insight into IFT regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    },
+    {
+      "id": "240a2362-5eed-461d-9ebd-e668cc266193",
+      "content_id": "f76e7d2b-f353-4ffb-a579-7c4312fe379a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "GDP-locked IFT27 is unable to enter the flagellum, cannot interact with other IFT-B proteins, and its sole expression prevents flagellum formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by immunofluorescence/live imaging showing cytoplasmic localization (C66-C67), co-IP showing loss of IFT-B interactions (C69-C70), and short flagella phenotype (C57-C58). These claims are well-integrated with the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:29:20.986858Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f51e8dbc-c9bc-4e70-8469-ba1a132964d6",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "eab4b02b-1900-4ddc-bbcb-84112f824b41",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "52f5feaa-fc53-4a52-8b78-b7be9d835eac",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "bc8dd2ec-2ffe-451d-809d-f054b7548404",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "d66b1e32-4f68-431c-ae25-48099ea41d60",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "6b977310-a582-4d0f-b6ef-02869ac4c175",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "4e0a7784-e2d3-4eb7-93ae-f1e4d0b8149e",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "3f6ddde7-637d-49de-922e-4612006840ba",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "0f508ab4-bd4d-4ffb-9107-96931be899e6",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "ad3a911f-823a-46df-84e2-953065f8fb7c",
+      "result_id": "bbb50d3d-7a5e-48be-8d9c-e6a1f9305554"
+    },
+    {
+      "claim_id": "a424a4b2-5eb4-458d-b3c4-0fb2af936f03",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "e6c00fb9-da5b-47cb-b5cc-58f7500d99b2",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "b4a100c3-3380-475c-8584-d38c9c21abe6",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "e461bc27-ef8a-4b6c-845e-4cda592e1dfe",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "c178f4ad-bd17-4afd-b311-d9629057a7f1",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "ab97b57c-6045-428f-b864-76f78636c6f1",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "46b363e6-2b55-4fe8-9b28-36b138bd50ba",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "407dc074-348d-4d18-8c9c-843b93a6bb52",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "5afcf08d-f4a0-4725-a378-cfa725cdc558",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "7db038b1-9ec4-4ad3-944b-dfca3fbab813",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "2619bb7b-d229-4f44-ab9f-843b4597ff78",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "45267294-ed64-48a9-95a3-b1335260b115",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "48b47e22-752e-4bac-b088-d6af83f02c2f",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "86880846-26c2-4a2b-b947-6512a893371d",
+      "result_id": "6b6e0846-c648-40bf-8b1e-7117e3922f78"
+    },
+    {
+      "claim_id": "68c5d9c7-b5ff-4ea2-af40-8a610806ef09",
+      "result_id": "0299ba40-7616-4b9e-b923-4d535ac897fd"
+    },
+    {
+      "claim_id": "16401a3b-faff-4d39-bc95-7abd2117b980",
+      "result_id": "0299ba40-7616-4b9e-b923-4d535ac897fd"
+    },
+    {
+      "claim_id": "c1b0a8ed-9774-44e3-9ede-40637f7a683f",
+      "result_id": "0299ba40-7616-4b9e-b923-4d535ac897fd"
+    },
+    {
+      "claim_id": "0f1df001-ab30-45d7-a0f2-e85f3506e613",
+      "result_id": "0299ba40-7616-4b9e-b923-4d535ac897fd"
+    },
+    {
+      "claim_id": "61452afe-ccb0-4313-8730-53d349542475",
+      "result_id": "0299ba40-7616-4b9e-b923-4d535ac897fd"
+    },
+    {
+      "claim_id": "f8529bae-848e-42b8-9811-84507261726a",
+      "result_id": "0299ba40-7616-4b9e-b923-4d535ac897fd"
+    },
+    {
+      "claim_id": "9428f721-7d4f-4d24-9aa3-8a58eac7e690",
+      "result_id": "8654c95a-d45d-492a-92eb-f2f1cde19303"
+    },
+    {
+      "claim_id": "326b4314-c85c-4b27-a265-a000f74c24ea",
+      "result_id": "8654c95a-d45d-492a-92eb-f2f1cde19303"
+    },
+    {
+      "claim_id": "681da602-6751-47df-a63d-4d620ed89f24",
+      "result_id": "8654c95a-d45d-492a-92eb-f2f1cde19303"
+    },
+    {
+      "claim_id": "658cb835-de71-4c9a-8cc2-2e6830ef5c62",
+      "result_id": "8654c95a-d45d-492a-92eb-f2f1cde19303"
+    },
+    {
+      "claim_id": "8293e208-af56-4243-ad7d-1112619046a9",
+      "result_id": "2761c10b-705a-4dbb-aee9-b51a1c337655"
+    },
+    {
+      "claim_id": "b8a1019a-623c-4b19-85af-8b9ca95465f6",
+      "result_id": "2761c10b-705a-4dbb-aee9-b51a1c337655"
+    },
+    {
+      "claim_id": "ea38054c-be07-4f92-9b13-5579196f4e4a",
+      "result_id": "2761c10b-705a-4dbb-aee9-b51a1c337655"
+    },
+    {
+      "claim_id": "d1d82110-917e-4fec-a5ea-629b94d0f03f",
+      "result_id": "2761c10b-705a-4dbb-aee9-b51a1c337655"
+    },
+    {
+      "claim_id": "7447e500-463e-445f-adf8-8544ef9e8b8b",
+      "result_id": "2761c10b-705a-4dbb-aee9-b51a1c337655"
+    },
+    {
+      "claim_id": "d4b7c689-556b-43a3-bac8-6a2485484a85",
+      "result_id": "2761c10b-705a-4dbb-aee9-b51a1c337655"
+    },
+    {
+      "claim_id": "5ac769d5-504f-4c51-93ed-386dc0bf3f7f",
+      "result_id": "4b6a3485-e270-4289-a6f7-91285602da38"
+    },
+    {
+      "claim_id": "0d2a866f-26eb-4320-a1df-3d40eae25377",
+      "result_id": "4b6a3485-e270-4289-a6f7-91285602da38"
+    },
+    {
+      "claim_id": "e9044b24-478d-4822-8d7c-7a381b5a08b2",
+      "result_id": "4b6a3485-e270-4289-a6f7-91285602da38"
+    },
+    {
+      "claim_id": "52392eea-06d7-4a4c-9307-b613d937f194",
+      "result_id": "4b6a3485-e270-4289-a6f7-91285602da38"
+    },
+    {
+      "claim_id": "d48dc4d2-1fd9-4a61-b71a-2b90ca75a5e2",
+      "result_id": "4b6a3485-e270-4289-a6f7-91285602da38"
+    },
+    {
+      "claim_id": "f45f1ca5-3007-4b45-bc36-0d1c0653868f",
+      "result_id": "4be0758c-1159-4ca8-9a4e-8c169a0f84c5"
+    },
+    {
+      "claim_id": "7b17e423-68bf-4bdb-85e0-f39d96d4536d",
+      "result_id": "e177429d-3c23-4024-a11d-75793cef8bcc"
+    },
+    {
+      "claim_id": "f97cb840-dc62-45c3-ae04-65ce235504cb",
+      "result_id": "e177429d-3c23-4024-a11d-75793cef8bcc"
+    },
+    {
+      "claim_id": "7d60695f-7fca-4e1e-be5e-a9c6c1bb4165",
+      "result_id": "e177429d-3c23-4024-a11d-75793cef8bcc"
+    },
+    {
+      "claim_id": "96b8abf9-57ca-4d87-bf4d-c770df25e0fb",
+      "result_id": "e177429d-3c23-4024-a11d-75793cef8bcc"
+    },
+    {
+      "claim_id": "61d3e758-1b3e-4451-b08e-a9d1c54b221e",
+      "result_id": "e177429d-3c23-4024-a11d-75793cef8bcc"
+    },
+    {
+      "claim_id": "912967a9-bf26-4a5d-9ab2-686ba13afb6e",
+      "result_id": "34bb8431-51a3-4491-a53f-f8e77ca42b96"
+    },
+    {
+      "claim_id": "64669561-c643-481d-948c-f49f8161edcc",
+      "result_id": "3d4db25c-3633-46ff-b412-fd2f6eddb565"
+    },
+    {
+      "claim_id": "4ca7f9ff-7fdd-4cec-9518-4af0498a2cb9",
+      "result_id": "3d4db25c-3633-46ff-b412-fd2f6eddb565"
+    },
+    {
+      "claim_id": "b56b7164-3900-4179-a0cc-350961740210",
+      "result_id": "3d4db25c-3633-46ff-b412-fd2f6eddb565"
+    },
+    {
+      "claim_id": "d211adae-cb22-4b4f-a78b-27f118a94196",
+      "result_id": "3d4db25c-3633-46ff-b412-fd2f6eddb565"
+    },
+    {
+      "claim_id": "29b1b8f0-9fe4-45b0-84ca-c75d4ecc8d5b",
+      "result_id": "13609e3c-e388-44aa-b7e0-c60675a79678"
+    },
+    {
+      "claim_id": "9cf7ea54-7a0b-4d42-917c-e0b73bfe220e",
+      "result_id": "13609e3c-e388-44aa-b7e0-c60675a79678"
+    },
+    {
+      "claim_id": "a7e03972-a176-4520-aa39-6f64c5260126",
+      "result_id": "46c8e628-570f-4271-937f-44f5741e22fd"
+    },
+    {
+      "claim_id": "7b8a1872-6eb2-4cff-ba89-95f05bfa3419",
+      "result_id": "46c8e628-570f-4271-937f-44f5741e22fd"
+    },
+    {
+      "claim_id": "099e1ce5-b47b-40d3-afc3-1a6e4a098b8f",
+      "result_id": "b1c99ffe-603f-4a6d-a87d-8ef2ec7a1963"
+    },
+    {
+      "claim_id": "928e4b1b-484b-447f-84ea-d480b7c347ea",
+      "result_id": "b1c99ffe-603f-4a6d-a87d-8ef2ec7a1963"
+    },
+    {
+      "claim_id": "fca8b018-f8e0-4f03-8c05-5ca6fd7756ed",
+      "result_id": "b1c99ffe-603f-4a6d-a87d-8ef2ec7a1963"
+    },
+    {
+      "claim_id": "30c31e83-2fe9-4bd8-ad72-c1d6e1c2d10d",
+      "result_id": "b1c99ffe-603f-4a6d-a87d-8ef2ec7a1963"
+    },
+    {
+      "claim_id": "20cfd496-e686-44ea-869c-6ff864b3e694",
+      "result_id": "5d9672fe-8176-42cc-853b-92874063019b"
+    },
+    {
+      "claim_id": "e645989c-bfa2-49c2-a64c-a96361038a7d",
+      "result_id": "5d9672fe-8176-42cc-853b-92874063019b"
+    },
+    {
+      "claim_id": "6cc84128-752e-4d16-85d6-b0687af7518e",
+      "result_id": "0bf9606a-7b2c-4c54-8822-41e302ed8ba4"
+    },
+    {
+      "claim_id": "f5a428d1-c6c3-410c-b5ee-2e59bf23263b",
+      "result_id": "0bf9606a-7b2c-4c54-8822-41e302ed8ba4"
+    },
+    {
+      "claim_id": "2ac78431-e7c6-4caf-9631-6c36449944a2",
+      "result_id": "0bf9606a-7b2c-4c54-8822-41e302ed8ba4"
+    },
+    {
+      "claim_id": "811ee645-9d12-41f9-aa52-aff7449a948b",
+      "result_id": "0bf9606a-7b2c-4c54-8822-41e302ed8ba4"
+    },
+    {
+      "claim_id": "fa5b6795-6dce-4719-b95f-25aff2661768",
+      "result_id": "240a2362-5eed-461d-9ebd-e668cc266193"
+    },
+    {
+      "claim_id": "524b038b-3025-4dec-925f-cc718d5031dd",
+      "result_id": "240a2362-5eed-461d-9ebd-e668cc266193"
+    },
+    {
+      "claim_id": "dfd29606-2c98-4f95-aae7-6e6410e48a21",
+      "result_id": "240a2362-5eed-461d-9ebd-e668cc266193"
+    }
+  ],
+  "comparisons": []
+}

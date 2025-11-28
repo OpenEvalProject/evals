@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Bub1 and BubR1 originated from duplication of an ancestor gene present in the last eukaryotic common ancestor (LECA), with up to nine distinct duplication events leading to sub-functionalization. This evolutionary divergence created proteins with complementary roles in the SAC, including loss of kinase activity in BubR1 and establishment of hierarchical kinetochore recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C10 are well-supported by citations to prior work (Suijkerbuijk et al., 2012a). Claims C11, C87-C89 provide appropriate context and interpretation consistent with established evolutionary biology principles. The evolutionary framework is appropriately cited and provides necessary background for understanding the functional divergence demonstrated experimentally in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Bub1 kinetochore recruitment is independent of BubR1, while BubR1 recruitment is strictly subordinate to Bub1. Both proteins require Mps1-mediated phosphorylation of Knl1 MELT repeats for kinetochore localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by both prior literature (multiple citations) and new experimental data (Figures 1E-H). Claims C27-C30 are supported by quantitative mass spectrometry (Figures 1C-D) and immunofluorescence microscopy with appropriate controls (depletion experiments, Mps1 inhibition). The hierarchical relationship is clearly demonstrated with proper quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The B3BD of Bub1 (residues 209-270) is sufficient for kinetochore targeting, while the equivalent B3BD of BubR1 (residues 362-431) is not sufficient for kinetochore recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C31-C33 are supported by localization experiments using GFP-tagged constructs (Figures 1I-J). The experiments include appropriate controls (endogenous protein depletion) and demonstrate a clear functional difference between the B3BDs of Bub1 and BubR1. This sets up the key question addressed by subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The loop region between \u03b21 and \u03b22 strands in the B3BD differentially modulates Bub3 binding to phosphorylated MELTP motifs. The Bub1 loop strongly enhances Bub3-MELTP binding, while the BubR1 loop has negligible effect. Loop-swap experiments demonstrate that this short motif is sufficient to transfer enhanced MELTP-binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 are supported by in vitro binding assays (Figure 2A, F), immunoprecipitation experiments (Figure 2G-H), and structural analysis (Figure 2B-D). The loop-swap experiments provide strong evidence for the functional importance of this region. Controls include unphosphorylated substrate and isolated Bub3. The structural positioning of the loop adjacent to the MELTP binding site (C37-C38) provides mechanistic rationale. However, the structural analysis relies on homology modeling rather than direct structure determination of human proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Grafting the Bub1 loop onto BubR1 creates a gain-of-function mutant (BubR1-B1-loop) that can localize to kinetochores independently of Bub1, in an Mps1-dependent manner. This localization does not saturate available MELTP binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by immunofluorescence microscopy with appropriate quantification (Figures 3A-H). The key experiment showing Bub1-independent localization of BubR1-B1-loop (C45) includes proper controls (Bub1 depletion, Reversine treatment). Claim C47 is supported by showing that endogenous Bub1 levels are not affected by BubR1-B1-loop expression, though this is an indirect measure of MELTP saturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C91",
+      "C96"
+    ],
+    "result": "The BubR1-B1-loop gain-of-function mutant cannot sustain a functional SAC despite achieving Bub1-independent kinetochore localization. This mutant shows reduced association with MCC and APC/C components, demonstrating that the evolutionary divergence of loop sequences is functionally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by live-cell imaging showing mitotic duration (Figure 3I) and immunoprecipitation experiments (Figures 3J-K). The failure of the gain-of-function mutant to rescue SAC function (C48) is a critical finding that demonstrates functional importance of the loop divergence. However, the mechanistic explanation for why the loop-swap impairs MCC/APC/C interaction remains speculative (discussed in C94-C96). The conclusion that evolutionary divergence is functionally relevant (C91, C96) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Bub1 requires a C-terminal extension (CTE, residues 271-409) in addition to the B3BD to recruit BubR1 to kinetochores. The minimal BubR1-recruiting region of Bub1 is residues 209-409, which interacts with BubR1 in immunoprecipitation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by systematic deletion analysis using immunofluorescence (Figures 4A-D) and immunoprecipitation (Figures 4E-F). The experiments clearly define the minimal regions required for BubR1 recruitment. Multiple constructs were tested with appropriate controls (endogenous Bub1 depletion). The conclusion that both B3BD and CTE are required is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Bub1 and BubR1 interact directly in vitro, as demonstrated by size-exclusion chromatography. The interaction requires both the B3BD and CTE regions of each protein. In vitro, BubR1 does not require Bub3 to bind Bub1/Bub3, though this may not reflect the in vivo requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by size-exclusion chromatography experiments (Figures 4G-J). The direct interaction is clearly demonstrated by co-elution of purified proteins. The systematic deletion analysis (C61) supports the requirement for both B3BD and CTE. However, the observation that BubR1 does not require Bub3 in vitro (C59) contrasts with cellular requirements shown later, and the authors appropriately note this discrepancy and suggest possible explanations (high protein concentration, Bub3 exchange).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The minimal Bub1-binding region of BubR1 is residues 362-571, containing both the B3BD and a ~140-residue CTE. Neither the isolated B3BD nor the isolated CTE is sufficient for Bub1 binding in vitro or kinetochore localization in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by parallel experiments using BubR1 deletion constructs in cells (Figures 5A-C) and in vitro (Figures 5D-F). The systematic approach mirrors the Bub1 analysis and demonstrates pseudo-symmetry in the interaction requirements. The correlation between in vitro binding and cellular localization strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The interacting domains of Bub1 (209-409) and BubR1 (362-571) are structurally equivalent, suggesting that the ability of modern Bub1 and BubR1 to form heterodimers may reflect ancestral homodimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is supported by sequence alignment and secondary structure prediction (Figure 6\u2014supplement 1A). However, claim C69 is explicitly speculative ('we surmise') and lacks direct experimental evidence. While the pseudo-symmetry is consistent with an ancestral homodimer hypothesis, this remains an inference based on sequence analysis rather than demonstrated experimentally. The speculation is reasonable but should not be considered a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Deletion of the predicted helical region (residues 432-484) or mutation of the Bub3-binding site (E409K+E413K) in BubR1 impairs kinetochore localization, demonstrating that both the CTE helical region and Bub3 binding are necessary for efficient BubR1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by immunofluorescence experiments (Figures 6C-F). The E409K+E413K mutations are based on prior structural studies showing these residues are important for Bub3 binding. The conclusion that Bub3 binding is necessary in cells (C72) is well-supported, and the authors appropriately discuss the apparent discrepancy with in vitro results where BubR1 without Bub3 can bind Bub1/Bub3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "LacI-Bub1 fusion protein recruits BubR1 to an ectopic chromosomal site distinct from kinetochores, and this recruitment requires the Bub3-binding site of Bub1. This demonstrates that kinetochores are not required for Bub1-BubR1 interaction and that Bub3 is required on both sides of the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by the LacO/LacI tethering experiment (Figures 6G-H). This elegant experiment demonstrates that the Bub1-BubR1 interaction can occur independently of kinetochore context. The requirement for Bub3 binding on the Bub1 side (E252K mutation) supports the model that Bub3 plays a direct role in the Bub1-BubR1 interaction beyond just MELTP binding. The experiment is well-controlled and addresses an important mechanistic question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C93"
+    ],
+    "result": "BubR1 requires Bub3 binding for SAC function and MCC incorporation. The E409K+E413K mutant that cannot bind Bub3 fails to restore SAC function and shows impaired interaction with MCC and APC/C components. In contrast, the \u0394432-484 mutant that retains Bub3 binding but cannot localize to kinetochores maintains SAC proficiency and MCC incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83, C93 are supported by live-cell imaging (Figure 7A) and immunoprecipitation experiments (Figure 7B-C). The comparison between two kinetochore-localization-deficient mutants with different SAC phenotypes is a key experiment that dissects the role of Bub3 binding from kinetochore localization. The conclusion that Bub3 binding is required for MCC incorporation (C83) is well-supported. However, the authors appropriately note uncertainty about whether the \u0394432-484 mutant has additional defects that might obscure an underlying SAC defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C99"
+    ],
+    "result": "Both E409K+E413K and \u0394432-484 BubR1 mutants fail to support stable kinetochore-microtubule attachments. The \u0394432-484 mutant shows reduced interaction with PP2A-B56, correlating with its defect in promoting stable attachments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86, C99 are supported by cold-stable microtubule assays (Figure 7D) and immunoprecipitation (Figure 7E). The correlation between PP2A-B56 binding and the attachment defect is consistent with prior literature (C85, C98). The experiments demonstrate that kinetochore localization of BubR1 is required for its role in chromosome bi-orientation, separable from its SAC function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Bub3 has at least three distinct functions: recruiting Bub1 to MELTP motifs, contributing to Bub1-BubR1 dimerization, and an unknown function in the SAC downstream of kinetochores. The BubR1 loop motif may influence the specificity of BubR1-bound Bub3 for SAC-relevant targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 summarizes multiple findings and is well-supported for functions 1 and 2. However, function 3 (C94) is speculative, based on the E409K+E413K mutant phenotype but lacking direct mechanistic evidence. Claims C95-C96 regarding the BubR1 loop influencing Bub3 specificity are explicitly speculative and based on analogy with the Bub1 loop function. While the speculation is reasonable and supported by the loop-swap SAC defect, it remains a hypothesis requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The MCC (Cdc20/C-Mad2 and BubR1/Bub3) can be interpreted as a 'copy' of kinetochore-bound 'templates' (Mad1/C-Mad2 and Bub1/Bub3), extending the template-copy model previously established for Mad1/Mad2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is well-supported by prior literature and appropriately cited. Claim C101 is an interpretive model that extends the template-copy concept to the Bub1-BubR1 system. While the parallel is intellectually appealing and consistent with the data showing hierarchical recruitment and pseudo-symmetric interaction, this remains a conceptual framework rather than a directly tested hypothesis. The authors appropriately present this as an interpretation and note that whether Bub1/Bub3 and Mad1/Mad2 form a complex at kinetochores is unclear.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Genome-wide NET-seq analysis reveals that genes whose transcription changes >3-fold during glucose to galactose shift are enriched for YMC-regulated genes, with decreased transcription enriched for OX phase genes (88.6%, p<1\u00d710\u207b\u2075) and increased transcription enriched for RC phase genes (71.1%, p<1\u00d710\u207b\u2075). For ~88% of genes, changes reflect altered transcription rather than RNA stability, and 33.1% of YMC genes show >3-fold change during the carbon source shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide converging evidence from NET-seq and microarray data with appropriate statistical testing (p-values reported). The enrichment analysis is quantitative with clear percentages and significance values. The comparison of NET-seq to microarray data (C3) appropriately distinguishes transcriptional from post-transcriptional regulation. Sample sizes and statistical methods appear adequate for genome-wide analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Computational simulation analysis reveals non-random genome organization: convergent ORF-T pairs occur more often than expected while tandem pairs occur less often; YMC genes are clustered (83.1% have at least one YMC neighbor); ORF-Ts flanked by SUTs/CUTs occur more often than expected and show 2-4 fold higher expression changes; convergent overlapping arrangements occur 3\u00d7 more frequently than expected with median overlaps of 92 bp (ORF-ORF) and 462 bp (ORF-noncoding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 are supported by computational simulation (10,000 iterations) comparing observed to expected frequencies. Quantitative metrics (percentages, fold-changes, overlap lengths) are provided. However, the manuscript does not fully describe the null model assumptions or provide confidence intervals from simulations. The code is referenced (Source code 1) which aids reproducibility, though details of the statistical testing framework are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Analysis of tandem gene arrangements reveals orientation-dependent regulation: OX genes show higher transcription in GLU regardless of upstream gene orientation, while RC genes in tandem with upstream OX genes are repressed in GLU, suggesting transcriptional interference. RC genes with divergent OX neighbors show no enrichment/depletion in GLU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C25 describe patterns from computational analysis but lack statistical significance values for most comparisons. C24 is explicitly speculative ('raises the possibility'), and the inference of transcriptional interference mechanism is not directly tested here. The observations are consistent with the hypothesis but require experimental validation provided later in the manuscript. The computational analysis alone is insufficient to establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Regulated tandem gene clusters share common features including reciprocal transcription in GLU/GAL, reciprocally cycling YMC transcripts, antisense transcription to OX genes, and di-cistronic transcripts. The HMS2:BAT2 locus exemplifies this with HMS2 peaking in OX/GLU and BAT2 peaking in RC/GAL, with reciprocal HMS2/SUT650 antisense relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by multiple data types (NET-seq, TIF-seq, microarray, YMC profiles) shown in figures. The characterization of common features across multiple loci (Figure 1 supplements) provides evidence for generality. The HMS2:BAT2 example is well-documented with expression data in multiple conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Dual-labeled RNA FISH reveals temporal separation of HMS2 and SUT650 expression: no cells show simultaneous nascent transcription of both at the nuclear site in GLU or GAL. The increase in SUT650 in GAL reflects increased cell numbers expressing SUT650 (from 48% to 67%) and decreased cells expressing HMS2 (from 100% to 45%), rather than changes in transcript levels per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are supported by quantitative single-cell RNA FISH with error bars (SEM, n=2, ~250 cells per condition). The lack of co-localization (C30) is a strong observation across multiple analyses. The population-level interpretation (C35) is appropriately inferred from the single-cell data. However, n=2 biological replicates is minimal for drawing strong conclusions, and more replicates would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The authors suggest potential co-regulation between BAT2 and SUT650 and reciprocal regulation of HMS2 and BAT2 based on observed expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 are explicitly speculative hypotheses ('suggests potential') based on correlative expression data. No direct mechanistic evidence is provided at this stage. These are reasonable hypotheses that motivate subsequent experiments but are not themselves supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Multiple methods (Northern blot, 3'RACE, TIF-seq) reveal transcript heterogeneity at HMS2/SUT650 including read-through transcripts (C1, C2) extending through BAT2 that increase in rrp6\u0394. HMS2 polyadenylation occurs at two sites (85 nt and 426 nt downstream of stop codon), with the distal site 45 nt upstream of BAT2 ATG, positioned to interfere with BAT2 transcription initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by multiple orthogonal methods (Northern, 3'RACE, TIF-seq, poly(A) mapping). The increase in read-through in rrp6\u0394 (C40) provides functional validation. The mapping of polyadenylation sites (C42-C43) is precise and data-driven. However, C44-C45 are inferences about interference that are tested experimentally in later sections rather than demonstrated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Insertion of ADH1 terminator into HMS2 coding region efficiently terminates HMS2 transcription, eliminates detectable transcripts over the HMS2 3' region, and results in ~2-fold increase in BAT2 transcript levels in both GLU and GAL, demonstrating that HMS2 sense transcription interferes with BAT2 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by Northern blot data with quantitation. The genetic manipulation (ADH1t insertion) is a direct test of the interference hypothesis. The ~2-fold effect on BAT2 (C48) is modest but consistent across conditions. The conclusion of interference (C49) is appropriately inferred from the relief of repression when HMS2 transcription is blocked. Biological replicates are performed though sample size is not explicitly stated for all experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "ADH1t insertion blocks SUT650 antisense transcription and increases truncated HMS2 sense transcript ~4-fold. HMS2:ADH1t remains carbon source responsive, indicating the signal is received at the HMS2 promoter. RNA FISH shows increased cell numbers expressing HMS2 in glucose when antisense is blocked, demonstrating that SUT650 antisense transcription limits the number of responding cells but does not affect environmental responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 combine Northern blot quantitation with single-cell RNA FISH (n=4, ~500 cells per strain). The carbon source responsiveness in the absence of antisense (C53) is a key control demonstrating promoter-level regulation. The FISH data (C56) with appropriate statistics (SEM) supports the population-level interpretation (C57-C58). The distinction between cell number vs. transcript level per cell is appropriately addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Replacing HMS2 coding region with URA3 eliminates antisense transcript and increases read-through transcripts (C1U) relative to HMS2:URA3 sense transcript (AU), resulting in 2-fold decrease in BAT2 and 3-fold increase in sense/read-through transcripts. ChIP analysis shows reduced initiation marks (H3K4me3, H3K56ac) and increased elongation marks (H3K79me3, H3K36me3) at the HMS2:BAT2 intergenic region, consistent with transcriptional interference. This demonstrates SUT650 antisense transcription controls cell proportion expressing HMS2 and attenuates sense/read-through transcription to prevent BAT2 interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 are supported by Northern blot quantitation (n=2) and ChIP-qPCR (n=2). The genetic manipulation removes antisense while preserving regulatory elements. The ChIP data (C65) provides mechanistic evidence for interference through chromatin modifications. The 2-fold effect on BAT2 (C64) is consistent with the ADH1t experiment. The conclusions about antisense function (C66-C67) are appropriately inferred from converging evidence. Sample sizes are minimal but consistent with field standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose a model where HMS2 and SUT650 transcription units are mutually exclusive in single cells, but SUT650 and BAT2 transcription units are not mutually exclusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 represent a model based on the FISH data showing no co-occurrence of HMS2 and SUT650 nascent transcripts (C30) and the observed co-regulation of SUT650 and BAT2. While explicitly a model ('we envisage'), it is well-supported by the single-cell data and consistent with all observations. The mutual exclusivity is directly observed; the non-exclusivity of SUT650/BAT2 is inferred from expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Using pGAL1:HMS2, antisense transcript (BG) is present in GLU and persists until sense induction in GAL. Anchor Away depletion of Gal4 after HMS2 induction abolishes sense and restores antisense, confirming sense transcription represses antisense independent of carbon source. Antisense does not impair sense activation kinetics. pGAL1:HMS2 activation causes up to 3.5-fold BAT2 repression, demonstrating HMS2 sense transcription represses both SUT650 and BAT2 regardless of conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 use inducible promoter and Anchor Away as orthogonal approaches to test directionality of regulation. The Anchor Away experiment (C73) is a strong control demonstrating sense-dependent antisense repression. The comparison of induction kinetics (C75) appropriately tests whether antisense affects sense activation. The 3.5-fold BAT2 repression (C76) is consistent with previous experiments. The conclusion (C78) is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Two antisense transcript isoforms exist during pGAL1:HMS2 induction: long form (BG1, ~500 nt upstream of GAL1 ATG) dominant until 30 min, and short form (BG2, 195 nt upstream) dominant after 1 h, confirmed by 3'RACE. Antisense shortening is inherent to natural SUT650, independent of Gal4 binding, and occurs in both GLU and GAL when sense transcription is inhibited, with variation in polyadenylation site usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by Northern blot showing two bands and 3'RACE mapping polyadenylation sites. The Anchor Away experiment (C83) controls for transcription factor binding effects. The observation in native SUT650 (C82) demonstrates this is not an artifact of the pGAL1 system. The conclusion about stable expression with alternative polyadenylation (C84) is appropriately inferred from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Transcription factor deletions (cbf1\u0394, fkh1\u0394, fkh2\u0394) show altered HMS2/SUT650 balance under nutrient-limited conditions: cbf1\u0394 and fkh1\u0394 lose HMS2 and accumulate short SUT650 isoform, while fkh2\u0394 shows reduced SUT650 and increased HMS2. This supports transcription factor control of sense/antisense balance during cell cycle (Fkh factors) and metabolic cycles (Cbf1), leading to a model where transcription factors signal to HMS2 promoter to mediate state-switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by Northern blot data from deletion strains under specific growth conditions. The effects are condition-dependent (nutrient-limited), which is appropriate given the biological context. C87 appropriately cites previous work linking these factors to cell cycle and metabolic regulation. C88 is a model but is well-supported by the genetic data. However, the mechanism by which these factors regulate HMS2 is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Analysis of 202 factors shows chromatin modulators and components are predominant at RC gene promoters, suggesting RC promoters are particularly sensitive to chromatin-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are based on analysis of published data (Venters et al., 2011) with enrichment analysis (p<0.01). The inference about chromatin sensitivity (C90) is supported by citation to Tirosh and Barkai 2008. This is a reasonable bioinformatic analysis though the manuscript does not provide details of the enrichment calculation or multiple testing correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Anchor Away depletion of TFIIB (Sua7) increases HMS2:BAT2 read-through but reduces all transcripts as expected for an essential factor. The sua7-1 allele specifically increases HMS2 and read-through transcripts while decreasing SUT650 antisense, suggesting TFIIB has a specific role in determining antisense transcription unit directionality and preventing sense read-through.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by Northern blot data from Anchor Away and mutant allele experiments. The sua7-1 allele is well-characterized (cited) and associated with 3' region function. The phenotype (C93) is striking and specific. However, C94-C95 are mechanistic hypotheses that are not directly tested. The sua7-1 data is consistent with the model but alternative explanations are not excluded. The conclusion about TFIIB function is appropriately cautious ('may have').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Engineering HMS2 with pTEF.KanMX.TEFt cassette shows TEFt functions bi-directionally to terminate multiple transcripts. Strong pTEF expression prevents HMS2/SUT650 transcription unit formation. Weakening pTEF (TEFdel1) reduces KanMX and antisense (E) expression and allows SUT650 antisense to read through TEFt, demonstrating conditional terminator function dependent on promoter strength and remarkable plasticity of transcription units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C106 are supported by Northern blot data from multiple engineered constructs. The systematic manipulation of promoter strength (Figure 7 supplement) provides strong evidence for promoter-dependent terminator function. The appearance of read-through antisense (C103) when pTEF is weakened is a key observation. The conclusions about conditional termination (C105) and transcription unit plasticity (C106) are well-supported by the engineering experiments. This is creative experimental design that directly tests the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The authors conclude that overlapping transcription in sense and antisense orientations constitutes an additional regulatory layer at clustered genes managing state-switching during environmental change, with HMS2 sense transcription transmitting regulatory signals to neighboring genes through cis-acting transcriptional interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 represent the main conclusions of the study. C107 is well-supported by the extensive experimental evidence throughout the manuscript. C108 is a mechanistic model that is supported by the interference experiments (ADH1t, URA3 replacement, ChIP data) though it remains somewhat speculative regarding the generality to other loci. The evidence at HMS2:BAT2 is strong, but broader genome-wide validation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The HMS2:BAT2 cluster is conserved across yeast strains, and many loci show di-cistronic read-through transcripts, suggesting transcriptional interference leading to reciprocal expression in tandem arrays may be widespread in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C109 states conservation but provides no data or analysis. C110 is supported by citation to Pelechano et al. 2013 TIF-seq data. C111 is explicitly speculative ('raising the possibility', 'may be'). While the hypothesis is reasonable given the prevalence of di-cistronic transcripts, the manuscript does not systematically test how many of these loci show the regulatory features observed at HMS2:BAT2. This is appropriate speculation for the Discussion but not a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The work indicates terminator function is conditional on proximal promoter strength, with stronger promoters preferentially selecting the proximal terminator, reflecting the role of promoters in defining transcription unit boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C112 is well-supported by the engineering experiments showing TEFt read-through depends on pTEF strength. C113 is a mechanistic hypothesis supported by citations (El Kaderi 2009, O'Sullivan 2004) and consistent with the data, though not directly tested. The relationship between promoter strength and terminator selection is demonstrated but the mechanism ('preferentially selecting') is inferred rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The sua7-1 allele is associated with the 3' region of genes, polyadenylation/transcription termination, and gene loops in chromatin based on previous characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C114 is supported by citations to previous work (Pinto 1994, Medler 2011). This is appropriate use of prior literature to justify the choice of this specific allele for testing the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The authors suggest overlapping transcription and alternative transcription unit formation associated with temporally segregated gene expression will be a general feature of gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C115 is explicitly speculative ('we suggest', 'will be') and represents extrapolation from the HMS2:BAT2 findings to genome-wide regulation. While the hypothesis is reasonable given the prevalence of overlapping transcription and the computational analysis showing many regulated tandem clusters, systematic validation across multiple loci is not provided. This is appropriate speculation for the Discussion but not a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

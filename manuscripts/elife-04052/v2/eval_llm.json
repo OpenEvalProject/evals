@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors identify two kinetically distinct pools of importin-\u03b2 (imp\u03b2) at the NPC using FRAP and photo-conversion experiments. One pool is stably bound for many minutes regardless of RanGTP presence, while a second pool exhibits rapid RanGTP-dependent turnover (16-fold faster recovery with RanGTP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide quantitative FRAP data showing 16-fold faster recovery with RanGTP. Claims C35-C37 provide photo-conversion data demonstrating both rapid and slow turnover populations. The experimental approaches are complementary and converge on the same conclusion (C38-C40). The data quality appears sufficient with N=20 replicates and clear kinetic differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C54",
+      "C55",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "RanGTP rapidly turns over a subpopulation of imp\u03b2, likely at Nup153. dSTORM imaging shows RanGTP depletes imp\u03b2 from the nuclear face of the NPC, and Nup153 knockdown produces similar depletion patterns. Photobleach counting indicates RanGTP causes 27% reduction in imp\u03b2 levels, similar to the 34% reduction from Nup153 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal approaches (dSTORM spatial localization C47-C49, C54-C55; photobleach counting C61-C65) converge on the conclusion that RanGTP-sensitive imp\u03b2 is located at Nup153. The quantitative agreement between RanGTP effects (27% reduction) and Nup153 knockdown effects (34% reduction) strongly supports the inference in C65. Statistical analysis with Mann-Whitney confidence intervals is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Importin-\u03b2, but not transportin-1 (TRN1), alters NPC permeability in a Ran-dependent manner. Imp\u03b2 (1 \u03bcM) significantly decreases permeability for GFP1 and GFP2 probes, while RanGTP increases permeability. TRN1 shows no effect even at 2 \u03bcM. In Nup153 knockdown cells, imp\u03b2 no longer restricts the NPC, indicating the imp\u03b2\u2022Nup153 interaction creates a steric barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The passive diffusion assays (C70-C71, C73, C75) provide clear functional evidence with appropriate controls. The TRN1 control (C73-C74) effectively rules out general molecular crowding. The Nup153 knockdown experiment (C75) directly tests the mechanistic hypothesis. The inference that this represents a steric barrier (C77) is well-supported by the use of inert probes lacking transport signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Nup153 reduction has opposite effects on passive versus active transport: inert cargos equilibrate faster across the NPC in Nup153 knockdown cells under passive conditions, but active transport efficiency is reduced. This demonstrates Nup153 affects both passive permeability and active transport efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (C66-C68) clearly show opposite effects of Nup153 knockdown on passive versus active transport, as visualized in Figure 5A,B. The bidirectional effect strengthens the conclusion that Nup153 plays a dual role. However, the mechanism underlying the impaired active transport is not fully elucidated, though the data are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Purified imp\u03b2 and Nup153FG form large, higher-order multivalent complexes in vitro within minutes, comprising tens to hundreds of imp\u03b2 molecules. RanQ69L\u2022GTP completely inhibits and dissolves these complexes through specific binding to imp\u03b2 (not Nup153FG), as demonstrated by the insensitivity of imp\u03b2(\u0394N70)\u2022Nup153FG complexes to RanGTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Fluorescence fluctuation spectroscopy (C82-C84) and confocal imaging (C81) provide converging evidence for complex formation. The RanGTP dissolution experiments (C86-C87) are convincing, and the imp\u03b2(\u0394N70) control experiment (C88) elegantly demonstrates specificity. The inference about complex size (C84) is reasonable based on fluorescence intensity, though absolute quantification has uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "RanGTP dissolves imp\u03b2\u2022Nup153 complexes but not TRN1\u2022Nup153 complexes, demonstrating functional differences between these transport receptors. TRN1 forms complexes with Nup153FG but these are insensitive to RanQ69L\u2022GTP, consistent with prior reports that TRN1-mediated import is less RanGTP-dependent and that TRN1 binds different sites within Nup153.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence fluctuation spectroscopy data (C89-C90) clearly show differential RanGTP sensitivity. The interpretation is strengthened by citations to prior work (C91-C92) showing functional and binding site differences. This provides an important control demonstrating specificity of the imp\u03b2\u2022Nup153\u2022Ran interaction rather than a general property of all transport receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C80",
+      "C100"
+    ],
+    "result": "The authors propose a model where imp\u03b2 and Nup153 interact at the NPC's nuclear face to form a Ran-regulated mesh that modulates NPC permeability. This could provide cells with an additional layer of control over nucleocytoplasmic transport by regulating the RanGTP gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as a proposed model (C8) and speculation about cellular regulation (C100). While the model integrates multiple experimental findings logically, it remains a hypothesis requiring further validation. The evidence supports the components (imp\u03b2\u2022Nup153 interaction, Ran sensitivity, permeability effects) but direct visualization or manipulation of the proposed mesh structure in intact NPCs is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "dSTORM super-resolution imaging with 12 nm localization precision reveals imp\u03b2 spatial distribution within NPCs. Two pools of imp\u03b2 are separated by ~90 nm along the transport axis, with the outermost pool overlapping with Nup358 at the cytoplasmic face. The central channel measures ~50 nm at its narrowest point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization precision is well-characterized (C41, Figure 2\u2014figure supplement 1). The spatial measurements (C44, C46) are consistent with prior structural and functional studies as cited. The two-color dSTORM validation with Nup358 (C45) provides important spatial reference. The measurements align with established NPC dimensions, lending credibility to the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Approximately 73 \u00b1 16% of imp\u03b2 molecules at each NPC are insensitive to nuclear RanGTP and stably bound for many minutes. These Ran-insensitive molecules are located near the cytoplasmic face and are not bound to Nup153.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The estimate (C94) is based on photobleach counting and photo-conversion data. The localization inference (C95) comes from dSTORM data, and the Nup153 independence (C96) is supported by the observation that Nup153 knockdown with RanGTP shows similar levels to wild-type with RanGTP. However, the identity and function of this pool remain unknown, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "In the absence of RanGTP, SA-IBB4 cargo and imp\u03b2-YFP accumulate at the nuclear envelope, forming bright rims. Addition of RanGTP reduces rim fluorescence and promotes nuclear accumulation of cargo, demonstrating that Ran modulates NPC interactions with both cargo-bound and free imp\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence microscopy data (C24, C26-C28) clearly show the described rim accumulation and RanGTP-dependent changes. The inference that cargo accumulates within the NPC (C25) is reasonable given the rim staining pattern. The conclusion about Ran modulating both cargo-bound and free imp\u03b2 (C29-C30) logically follows from observing effects on both SA-IBB4 and imp\u03b2-YFP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "There is considerable pore-to-pore heterogeneity in the axial distribution of imp\u03b2 across all conditions studied. Nup153 reduction notably decreases the number of pores with dominant imp\u03b2 signal at the nuclear face.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The waterfall plots (Figure 3E) provide clear visualization of NPC-to-NPC variation (C56). The specific observation about Nup153 knockdown effects (C57) is evident in the data. This heterogeneity is an important observation that may reflect functional diversity among NPCs, though the biological significance requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The optimum imp\u03b2 concentration for import is ~1 \u03bcM. At low concentrations, import is limited by imp\u03b2 availability; at high concentrations, competition between free imp\u03b2 and cargo\u2022imp\u03b2 complexes for NPC binding sites reduces import efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response data (Figure 1\u2014figure supplement 1) support the optimal concentration finding (C102). The mechanistic interpretations (C103-C104) are reasonable inferences from the biphasic dose-response curve, though alternative explanations are possible. This optimization is important for ensuring physiologically relevant conditions in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "RanGTP increases NPC permeability even without exogenous imp\u03b2 addition, likely due to endogenous transport receptors remaining at the pore after digitonin permeabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by experimental data in Figure 5\u2014figure supplement 1 showing that RanGTP wash increases permeability. The interpretation about endogenous receptors is reasonable given that digitonin permeabilization may not completely remove all NPC-bound proteins. This observation strengthens the overall model of Ran-dependent permeability modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Importin-\u03b2 can be considered a bona fide functional component of the NPC rather than only a soluble transport receptor, based on its long residence time (minutes to tens of minutes) and functional effects on pore permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference integrates the long residence time data (photo-conversion experiments) with the functional permeability data. While this represents a conceptual shift in thinking about imp\u03b2, the data support this interpretation. The claim is appropriately framed as a suggestion rather than definitive proof, acknowledging this is a new perspective on imp\u03b2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "NPC permeability, specifically size-filtering, is sensitive to RanGTP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a summary inference from the passive diffusion assays showing RanGTP effects on GFP probe translocation. The data clearly demonstrate this sensitivity. The broader implications for cellular regulation are discussed but remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "The sub-second turnover kinetics of the RanGTP-sensitive imp\u03b2 pool are similar to kinetic values for imp\u03b2 turnover in living cells, suggesting the reconstituted in vitro assay recapitulates key features of transport in intact cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to published in vivo data (Rabut et al., 2004) provides validation that the permeabilized cell system is physiologically relevant. This is important for interpreting the significance of all other findings. The kinetic similarity strengthens confidence in the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on nuclear transport: The NPC controls entry/exit of cargos from single proteins to large ribonucleoprotein complexes. Cargos <40 kDa passively equilibrate while larger cargos require transport receptors. Importin-\u03b2 family members use the RanGTP gradient for directional transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the nuclear transport field, appropriately cited to foundational literature. This background contextualizes the study but does not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior work suggests RanGTP has additional roles beyond cargo release: Ran is needed for cargo movement through the NPC, dissociates imp\u03b2 from the nuclear face, influences exit asymmetry of cargo-receptor complexes (~100-fold bias), and affects transport success of large cargos. A Ran-dependent process occurs near the nuclear face at ~70 nm along the transport axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior literature with appropriate citations. This establishes the motivation for the current study by identifying gaps in understanding of Ran's role within the NPC. The summary is fair and accurate based on the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Previous single-molecule titration experiments suggested two types of imp\u03b2 binding sites within the NPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately cites prior work (Tokunaga et al., 2008) and provides context for the current findings of two kinetically distinct pools. The citation is appropriate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Nup153 is an important terminal binding site for imp\u03b2 transport, can bind up to seven imp\u03b2 molecules, and interacts with Ran, as established by prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurately cited facts from the literature that provide rationale for investigating Nup153 as the site of RanGTP-sensitive imp\u03b2 binding. The citations are appropriate and support the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "siRNA treatment achieved ~70% reduction of Nup153 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by immunofluorescence (68%) and Western blot (72%) data shown in Figure 3\u2014figure supplement 4. The knockdown efficiency is well-characterized and sufficient for the functional studies, though incomplete knockdown is a limitation acknowledged by the partial reduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Summary of dSTORM findings: Without RanGTP, the pore is loaded with imp\u03b2. RanGTP increases turnover and depletes imp\u03b2 from the pore. Nup153 knockdown reduces overall imp\u03b2 counts and creates asymmetric, cytoplasm-biased distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurate summary statements of the dSTORM results presented in detail elsewhere. They synthesize multiple observations into clear conclusions about the effects of RanGTP and Nup153 on imp\u03b2 distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The GFP3 probe (83 kDa) translocates slowly regardless of imp\u03b2 and RanGTP presence, likely because its size exceeds the passive diffusion cutoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation from passive diffusion assays (Figure 5C) is consistent with known NPC size exclusion properties. The interpretation is reasonable and provides an appropriate size control for the permeability experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Large imp\u03b2\u2022Nup153 complex formation can be explained by multiple FG motifs in Nup153's FG domain and multiple FG-binding sites on imp\u03b2's surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable mechanistic explanation based on known structural features of both proteins. While not directly demonstrated in this study, it is consistent with established knowledge about imp\u03b2-FG interactions and provides a plausible molecular basis for the observed multivalent complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The RanGTP gradient is generated by chromatin-associated RCC1 exchange factor, whose activity and RanGDP substrate concentration are subject to multi-tiered regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately summarizes established knowledge about RanGTP gradient generation with appropriate citations. This background supports the discussion of potential cellular regulation of NPC permeability via RanGTP modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The ability to form Ran-reversible imp\u03b2/Nup153 material in vitro will enable future investigation of energy, imp\u03b2, and Ran interplay, and may allow creation of efficient molecular rectifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative about future research possibilities. While the in vitro system is established, the proposed applications remain to be demonstrated. This represents potential impact rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The median localization precision of dSTORM is 12 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This technical specification is supported by calibration data in Figure 2\u2014figure supplement 1B. Proper characterization of localization precision is essential for interpreting spatial measurements and is appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

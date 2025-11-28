@@ -1,0 +1,473 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C33",
+      "C35",
+      "C36",
+      "C72",
+      "C74",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors developed a flexible, user-friendly TB diagnostic modeling tool that allows non-expert users to input local epidemiological parameters (TB incidence, MDR-TB prevalence, HIV prevalence) and costs to generate 5-year projections of TB incidence, mortality, and costs for nine diagnostic strategies. The tool is available both as open-source Python code and as a web-based interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C33, C35, C36, C72, C74, C104, and C105 collectively describe the development and features of the modeling tool, which represents the primary methodological contribution of the manuscript. The tool's existence is documented through code availability (C33, C36), web interface (C35), and detailed description of capabilities (C14, C15, C72, C74). This is well-supported by the manuscript content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C83",
+      "C122"
+    ],
+    "result": "The model was validated against WHO global estimates, showing good agreement for TB mortality (14% vs 14%), HIV-associated TB (13% vs 13%), previously treated cases (13% vs 14%), and disease duration (1.2 vs 1.4 years). MDR-TB prevalence in previously treated cases showed modest discrepancy (15.4% vs 20%), explained by differences in case counting methodology. The model estimated 80% of incident TB was due to recent infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43, C83, and C122 document model validation results with specific quantitative comparisons to WHO estimates. The validation shows reasonable agreement across multiple epidemiological parameters, with uncertainty ranges provided (C37-C40) and explanations for discrepancies (C42). This provides evidence that the model produces epidemiologically plausible outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C46",
+      "C77"
+    ],
+    "result": "In settings with limited capacity for up-front investment, same-day microscopy had the greatest impact on TB incidence and became cost-saving within 5 years if delivered at $10/test (less than 5 times the routine cost).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C46, and C77 present a consistent finding about same-day microscopy being cost-saving in resource-limited settings, with specific cost thresholds provided. This is supported by model projections shown in Figure 3 and discussed in the results section. The finding is conditional on specific cost assumptions, which are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C80"
+    ],
+    "result": "With greater initial investment (approximately 50% increase in TB control budget), population-level scale-up of Xpert MTB/RIF or MODS/TLA for all TB diagnosis averted approximately 10 times more TB cases than narrowly-targeted strategies, with minimal incremental long-term cost by year 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C80 present a major finding about the comparative effectiveness of broad vs. targeted diagnostic strategies. This is supported by model results shown in Figures 3 and 4, which demonstrate substantially greater case reduction with broad strategies. The '10 times more' quantification and cost dynamics over 5 years are explicitly stated and supported by the model outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C78"
+    ],
+    "result": "Xpert for smear-positive TB had reasonable impact on MDR-TB incidence but at substantial cost and little impact on overall TB incidence and mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47, and C78 consistently describe the differential impact of the Xpert for smear-positive strategy on MDR-TB vs. overall TB outcomes. This is supported by model results in Figures 3 and 4, which show this strategy had the greatest impact on MDR-TB cases averted among targeted strategies but minimal impact on overall TB incidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In the high-incidence scenario, targeted strategies (culture for retreatment, Xpert for HIV-positive, Xpert for smear-positive) had smaller cost and impact compared to broader strategies (Xpert for all, MODS/TLA, same-day Xpert). Among broad strategies, culture confirmation of Xpert saved costs with little reduction in effectiveness, and same-day Xpert was the most expensive and most effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C49, C50, and C51 summarize the comparative results across diagnostic strategies in the high-incidence setting. These findings are directly supported by Figure 3, which shows the cost-effectiveness relationships, and the accompanying text describing the results. The ranking and relative performance of strategies are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C75"
+    ],
+    "result": "The ranking of diagnostic strategies remained similar across all four epidemiological settings (high incidence, low incidence, high MDR, high HIV), though absolute costs and impacts differed dramatically. In low-incidence settings, costs were highest and impact lowest. In high HIV settings, diagnostic interventions had diminished impact on TB incidence but similar impact on mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 and C75 describe how model results varied across different epidemiological settings. This is supported by Figure 4, which shows results for all four settings, demonstrating consistent ranking but varying magnitudes. The specific observations about low-incidence and high-HIV settings are directly shown in the figure panels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Sensitivity analysis showed that the impact of 'Xpert for all' on TB incidence was most sensitive to three parameters: empiric treatment proportion, pre-diagnostic delay, and reactivation rate (specifically the proportion of TB from recent vs. remote infection). Varying these parameters changed projected incidence reduction from 13-31%, while other parameters kept results within 12-25%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 present comprehensive sensitivity analysis results with specific quantitative impacts of parameter variations. The identification of key parameters (C57) and their quantitative effects (C59-C64) are explicitly stated with numerical values. The robustness to other parameters (C65) is also documented. This demonstrates thorough uncertainty analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Costs and incremental costs were more sensitive to TB treatment costs than diagnostic costs. Doubling first-line therapy costs increased incremental year 1 costs from 57% to 77%, doubling MDR therapy costs increased them to 86%, while doubling Xpert costs only increased them to 72%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 present sensitivity analysis results for cost parameters with specific quantitative comparisons. The finding that treatment costs drive overall costs more than diagnostic costs is clearly demonstrated through the comparative analysis (C67-C69). This has important implications for cost-effectiveness interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors constructed a transmission model using ordinary differential equations based on prior TB diagnostic models. The model categorizes patients by HIV status, TB treatment history, disease status, drug resistance (susceptible, INH-monoresistant, MDR), and infectiousness level. The model uses a population of 100,000 with constant size and can generate equilibrium or non-equilibrium scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C117 describe the basic structure and technical implementation of the transmission model. These are methodological details that are documented in the Materials and methods section with appropriate citations to prior work (C108). The model structure is shown in Figure 2. Independent coding by two authors (C112) provides validation of implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The model incorporates detailed natural history assumptions including latent TB (asymptomatic, non-infectious, with reactivation and reinfection risk), a 9-month pre-diagnostic phase before care-seeking, progression to diagnosis-seeking disease with smear-positive/negative stratification, and treatment outcomes (effective vs. ineffective therapy with defined failure/default rates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C133 describe the natural history structure of the TB model. These assumptions are standard in TB modeling (with citations to prior models, C121, C133) and are necessary for the model to function. The 9-month pre-diagnostic delay (C121) is justified by comparison to WHO prevalence-to-incidence ratios. These are well-documented methodological details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "HIV is modeled with fixed annual incidence calibrated to achieve user-defined prevalence, not as dynamic transmission. HIV affects all TB-related parameters including immune protection, mortality, reactivation rate, pre-diagnostic duration, and primary progression risk. ART coverage is assumed at the global average (50%) without explicit CD4 modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 describe how HIV is incorporated into the model. This is a simplifying assumption (C135, C137) justified by the focus on TB interventions rather than HIV dynamics. The approach is clearly documented with citations to UNAIDS data (C137). This represents a reasonable simplification for the model's purpose.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The model includes three drug resistance levels (susceptible, INH-monoresistant, MDR) without dual infection but allowing superinfection and acquired resistance during therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 describe the drug resistance structure in the model. This is a standard approach in TB modeling that balances complexity with tractability. The inclusion of acquired resistance (C141) is important for evaluating diagnostic strategies that may affect resistance emergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The model incorporates diagnostic specificity by including individuals without TB who present with TB-like symptoms (calibrated so 10% of evaluated individuals have TB in high-incidence settings). False-positive diagnoses incur treatment costs and mark individuals as previously treated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 describe how the model handles diagnostic specificity and false-positive diagnoses. This is an important feature for cost estimation, as false-positive treatments contribute to costs. The approach is clearly documented with specific assumptions about the rate of TB evaluation in non-TB individuals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Economic parameters use a unit-costing approach from the TB control program perspective, excluding HIV care and hospitalization costs. Individuals who default or die incur half the treatment cost. Costs are not discounted given the 5-year time horizon and focus on comparing year 1 and year 5 costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 describe the economic evaluation methodology. The unit-costing approach (C147) and TB program perspective (C148) are clearly stated. The decision not to discount (C150) is justified by the short time horizon and analytical goals. These are standard health economic methods appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Decision analysis calculates probabilities of successful/ineffective treatment, costs, and diagnostic delays conditional on patient characteristics (smear status, drug resistance, HIV, treatment history). These outputs feed into the transmission model. Primary outcomes are TB incidence, mortality, MDR-TB incidence, and incremental costs at years 1 and 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C156 describe how the decision analysis and transmission model components are integrated. This hybrid approach allows patient-level diagnostic pathways to inform population-level transmission dynamics. The primary outcomes (C156) are appropriate for evaluating diagnostic strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The model allows users to conduct any sensitivity analysis by changing inputs. The authors conducted one-way sensitivity analyses (\u00b150% of parameter values) and multivariable uncertainty analyses using partial rank correlation coefficients. They constructed 95% uncertainty intervals using 10,000 Latin Hypercube Sampling simulations, provided in the web interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C163 describe the sensitivity and uncertainty analysis methods. The approaches are standard (one-way sensitivity analysis, Latin Hypercube Sampling) and appropriately applied. The provision of uncertainty ranges in the web interface (C163) enhances the tool's utility for decision-makers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "TB transmission is modeled as density-dependent, with three separate forces of infection for different resistance strains. Model calibration requires solving a system of 100 ordinary differential equations plus three equations matching user inputs (TB incidence to \u03b2, MDR-TB prevalence to \u03c62, HIV prevalence to \u03b8) using SciPy's fsolve routine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C169 describe the mathematical implementation and calibration approach. The density-dependent transmission (C164) is standard in TB modeling. The calibration method (C166-C169) is technically sound, using numerical root-finding to match user-specified epidemiological targets. The use of SciPy (C167) provides computational transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "For non-equilibrium scenarios, the model fits an equilibrium 50 years in the past and adjusts transmission parameters to achieve user-defined targets at year 0. This is automated for low-incidence scenarios (<50 per 100,000/year) to account for higher latent TB prevalence and greater proportion of reactivation disease. Code allows users to define custom non-equilibrium and emerging MDR scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C176 describe the approach to modeling non-equilibrium epidemiology. The 50-year lookback (C170, C174) is a reasonable approach to capture historical transmission dynamics. The rationale for this approach in low-incidence settings (C175) is epidemiologically sound. The flexibility for custom scenarios (C176) enhances model utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The model evaluates nine diagnostic strategies (baseline microscopy, culture for retreatment, Xpert for HIV+, Xpert for smear+, Xpert for all, Xpert with culture confirmation, MODS/TLA, same-day microscopy, same-day Xpert) across four epidemiological settings (high incidence, low incidence, high MDR, high HIV) using uniform costs for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C32 define the diagnostic strategies and epidemiological settings evaluated. These are clearly described with appropriate citations for assumptions (e.g., C19, C26, C28). The choice of strategies covers a range of implementation approaches relevant to policy decisions. The four settings represent diverse epidemiological contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C48",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Among targeted strategies, Xpert for HIV+ and culture for retreatment offered smaller gains at lower cost than Xpert for smear+. Culture confirmation of Xpert results before MDR treatment is generally preferred. Same-day Xpert plus Xpert for all achieves greatest impact but at highest cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C79, C81, and C82 present additional comparative findings and policy recommendations based on model results. These are supported by the data in Figures 3 and 4 and represent reasonable interpretations of the model outputs for decision-making guidance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The model results are similar to other TB diagnostic models fit to specific locations. Comparison with Menzies et al. (2012) for Xpert scale-up in HIV+ individuals in southern Africa showed similar estimates (5-6% incidence reduction, 21-25% mortality reduction, 7-25% MDR-TB reduction, 28-41% cost increase), suggesting the models provide similar guidance for decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide external validation by comparing results to another published model (Menzies et al. 2012). The quantitative comparison (C85, C86) shows reasonable agreement despite different modeling approaches, supporting the validity of the simplified model's projections. The inference about similar guidance (C87) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors engaged potential end-user organizations (technical assistance agencies, funding bodies, NGOs, National TB Programs, WHO regional offices) through a 1-day workshop in April 2014 with hands-on exercises. Feedback is being incorporated into the model and web interface. The authors plan to develop case studies demonstrating in-country use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe the stakeholder engagement process for model development and dissemination. The workshop (C90) and feedback incorporation (C91) demonstrate appropriate user-centered design. The planned case studies (C92) represent future work to demonstrate practical application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The model makes simplifying assumptions (constant population, homogeneous mixing, no parameter changes over time, simplified HIV/drug resistance) necessary for flexibility and rapid results. It cannot capture subpopulation heterogeneity or operational aspects, excludes pediatric/extrapulmonary TB, and requires local data that may not be available sub-nationally. However, it provides 'first-pass' estimates where detailed models are unavailable and allows real-time assumption testing even with limited data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C103 acknowledge important model limitations while justifying the design choices. The authors appropriately recognize that simplifications (C93, C94) enable the model's flexibility but limit precision (C95, C96). The acknowledgment of data limitations (C98) and potential for unrealistic scenarios (C102) shows appropriate caution. The justification for the approach (C100, C103) is reasonable given the model's intended use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C8",
+      "C71"
+    ],
+    "result": "Most infectious disease transmission models, including for TB, do not provide results customized to local conditions and are difficult for local decision-makers to utilize. Simple, user-friendly transmission models have not been widely used for infectious diseases other than HIV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1, C5, C8, and C71 make general statements about the state of infectious disease modeling without providing specific supporting evidence or systematic review. While these claims provide motivation for the work, they are not directly supported by data in the manuscript and represent the authors' assessment of the field rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Simplified models like Spectrum have been used for HIV/reproductive health decision-making for over a decade and are incorporated into official estimates. Transmission models can guide TB diagnostic decisions at global and country levels. WHO recommends multiple new TB diagnostic strategies including same-day microscopy, microcolony culture, line-probe assays, and Xpert MTB/RIF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C9, C10, C11, and C12 provide background context supported by appropriate citations to published literature. These establish the precedent for simplified models (C6, C7), the potential role of models in TB diagnostics (C9), and the policy landscape of available diagnostic tests (C10, C11, C12). This background appropriately motivates the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C13",
+      "C73",
+      "C76",
+      "C106"
+    ],
+    "result": "Without transmission models providing locally relevant estimates, TB diagnostic decisions will be made without systematically considering scientific evidence. This model demonstrates how epidemiologists can provide decision-makers with rapid, customizable projections without tightly fitted models for all settings. Success in fighting TB depends on placing global knowledge in the hands of local decision-makers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C73, C76, and C106 make broad statements about the importance and impact of modeling for decision-making. While these represent reasonable perspectives on the value of the work, they are aspirational rather than demonstrated. The actual impact on decision-making would require follow-up studies of model use and influence on policy.",
+    "result_type": "MINOR"
+  }
+]

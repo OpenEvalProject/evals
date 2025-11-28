@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study found an inverse correlation between malaria positive fraction (MPF) and average age of children with malaria (rs = -0.16, p<0.0001), suggesting that children in homesteads with higher transmission acquire immunity more rapidly. This relationship was not confounded by spatial clustering of age, as the average age of children with non-malarial fever showed no spatial clustering and was not associated with MPF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33 provide strong statistical evidence (p<0.0001) for the inverse correlation. Claims C35-C36 demonstrate appropriate control analyses ruling out age confounding. The interpretation in C5 and C34 is biologically plausible and consistent with established malaria immunology. The statistical tests are appropriate and the sample size is adequate (n~20,000 presentations from ~1500 homesteads).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C37",
+      "C38",
+      "C68"
+    ],
+    "result": "The inverse correlation between MPF and average age of malaria increased gradually with increasing spatial scale of analysis, with no discontinuity observed across scales. This suggests that spatial heterogeneity in malaria transmission occurs at every geographical scale examined, with gradual differentiation in transmission characteristics as distance between homesteads increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C6 describe the empirical finding shown in Figure 1D. The interpretation in C38 and C68 is well-supported by the simulation analyses (Figure 1 supplements 1-3) which demonstrate that specific-scale clustering would produce 'spikes' in the correlation pattern, which were not observed. The absence of discontinuities provides strong evidence for multi-scale heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Nested hotspot analysis revealed hotspots within hotspots down to the level of individual homesteads. A 5.8 km radius hotspot contained a 0.76 km hotspot, which in turn contained a single-homestead hotspot with 36 malaria episodes versus 3 non-malaria fevers. Additional hotspots were identified in areas outside the main hotspot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide specific statistical evidence (all p<0.00001 except the single homestead at p=0.016) from SaTScan analysis with 9999 permutations, making Type I error unlikely. The nested analysis methodology is appropriate and the findings are internally consistent. Figure 2 provides visual confirmation. The extreme ratio (36:3) in the single homestead hotspot (C42) provides compelling evidence for fine-scale heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Temporal analysis revealed two distinct homestead types: stable high transmission homesteads (high mean MPF, low variance) with predominantly younger children affected, and unstable low transmission homesteads (low mean MPF, high variance) with older children at risk. Mean MPF in infants (<1 year) correlated with MPF in young children but not older children, while variance in infant MPF showed the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 provides strong statistical evidence (rs = -0.61, p<0.0001) for the mean-variance relationship. Claims C47-C50 describe multivariable regression results shown in Figure 3D that demonstrate differential age patterns. The interpretation in C45 and C51 is well-supported by the data patterns in Figures 3B-C. The analysis appropriately uses infant MPF to minimize immunity confounding, following established methodology (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C54",
+      "C55",
+      "C56",
+      "C73",
+      "C74"
+    ],
+    "result": "Simulation analysis of targeting strategies found that febrile malaria hotspots were temporally unstable. One-week surveillance periods could not identify persistent hotspots at fine scales (<1 km) but achieved 60% excess case targeting at 8 km diameter. One-month surveillance of 4-8 km diameter hotspots provided greatest accuracy, but information remained relevant for only 1 month before requiring updated surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide specific quantitative findings from the simulation analysis shown in Figure 4. The methodology appropriately uses the longitudinal dataset to simulate prospective targeting. Claims C73-C74 provide actionable recommendations based on the simulation results. However, the authors acknowledge this is from a single site (limitation noted in Discussion), and the temporal instability finding contrasts with some stable hotspots (C75), suggesting heterogeneity in temporal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ITN use provided personal protection from malaria (OR=0.69, 95%CI 0.67-0.8, p<0.001) but did not explain spatial micro-epidemiological patterns. ITN use was not spatially clustered, had minimal effect on hotspot identification, and did not correlate with mean or variance in infant MPF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 provides strong statistical evidence for personal protection with appropriate confidence intervals. Claims C59-C62 provide multiple lines of evidence (Moran's I, SaTScan sensitivity analysis, correlation analyses) demonstrating that ITNs do not explain spatial patterns. The conclusion in C63 is appropriately cautious ('unable to show'). However, ITN data were only collected in 2009-2010 (C57), limiting temporal coverage, and the analysis cannot rule out that ITN distribution patterns might have changed over the study period.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Among approximately 20,000 febrile presentations from approximately 1500 residences, 54% were positive for P. falciparum. Dispensary attendance declined with distance from the dispensary, but MPF did not vary significantly by distance (p=0.7), validating MPF as a metric that controls for access bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 provides the basic descriptive statistics. Claims C29-C30 demonstrate that while incidence shows distance bias (as expected), MPF does not (p=0.7), supporting the methodological rationale in C23-C24. This validates the use of MPF as the primary outcome measure. The statistical test is appropriate and the finding is consistent with the theoretical expectation that MPF controls for healthcare access.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C82"
+    ],
+    "result": "Despite general temporal instability, a 6 km diameter hotspot southeast of the dispensary maintained a 30-60% increase in MPF throughout 9 years of surveillance. The stronger inverse correlation at larger spatial scales suggests that spatial heterogeneity is progressively more stable at coarser scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 provides a specific example of temporal stability that contrasts with the general finding of instability (C9), demonstrating important heterogeneity. Claim C82 provides an interpretation of Figure 1 results that is consistent with the data. However, the manuscript provides limited quantitative analysis of this specific stable hotspot, and the interpretation of scale-dependent stability could benefit from more formal statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors acknowledge limitations and propose refinements: 61% of positive slides represent true febrile malaria versus asymptomatic parasitemia (39%). Asymptomatic parasitemia shows more temporally stable spatial patterns and could be targeted through community surveys. MPF is not comprehensive, and homesteads with consistently low average age likely represent stable high transmission sites that amplify transmission and may be effective targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 cites prior work on attributable fractions but this limitation affects interpretation of all results. Claim C77 cites the authors' previous work but doesn't present new data. Claims C78-C81 are reasonable inferences but represent proposed future work rather than demonstrated findings. The suggestion that targeting stable high transmission homesteads 'may be highly effective' (C81) is speculative, citing theoretical work (Woolhouse 1997) rather than empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that malaria transmission is spatially heterogeneous at global, regional, and fine scales, which reduces efficacy of indiscriminate control but creates opportunities for targeted control of hotspots, predicted to be highly effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C15 are well-supported by extensive citations to prior literature. Claims C2, C16 about reduced efficacy of indiscriminate control are logical consequences supported by cited theory. Claims C3, C17 about effectiveness of targeted control are appropriately qualified as predictions based on cited theoretical work (Dye & Hasibeder 1986, Woolhouse 1997), not empirical demonstrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The malaria positive fraction (MPF) methodology is justified as controlling for healthcare access bias because it uses febrile children presenting to the dispensary as the denominator. This is supported by literature showing parents cannot discriminate malarial from non-malarial fever and diagnostic testing is unavailable outside the dispensary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 provide the methodological rationale, supported by appropriate citations (C25). The empirical validation is provided by C30 showing MPF does not vary with distance. However, this assumes uniform fever rates across space, which is not directly tested. The methodology is reasonable but not without assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C93",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study collected data from 1500 homesteads within 8 km radius over 9 years (2003-2011) on children \u226415 years attending the dispensary. Analysis was restricted to the 8 km radius (>96% of visits) and excluded visits for specific non-febrile conditions (14% of visits).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the study design and are internally consistent. The 8 km radius captures >96% of visits (C96), providing good coverage. The exclusion criteria (C97) are reasonable to focus on fever-related visits. The 14% exclusion rate (C98) is substantial but justified. The 9-year timeframe and ~1500 homesteads provide adequate sample size and temporal coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors conclude that environmental factors determining malaria transmission operate at multiple spatial scales, speculating that mosquito breeding could be influenced equally by large features (rivers) or micro-features (hoof-prints). They recommend that ecological models include data at multiple spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is a reasonable inference from the multi-scale heterogeneity findings (C6-C8). However, C88 is explicitly speculative and C89 is a recommendation for future work rather than a demonstrated result. The study demonstrates multi-scale heterogeneity but does not identify the specific environmental factors responsible or validate that multi-scale environmental data improves prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "Methodological details: Blood smears were examined at 1000x magnification with 10% Giemsa staining, reading 100 fields before declaring negative. Fever was defined as reported or measured (\u226537.5\u00b0C axillary). Multiple fever/parasitemia episodes within 21 days were considered single episodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims describe standard procedures for malaria diagnosis and case definition. The 100-field threshold (C101) is appropriate for sensitivity. The fever definition (C104) is standard and cited. The 21-day window (C105) is reasonable to avoid counting recrudescence as new episodes. These are well-established methods.",
+    "result_type": "MINOR"
+  }
+]

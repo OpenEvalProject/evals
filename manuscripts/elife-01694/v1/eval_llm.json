@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Lrh-1LKO mice exhibit profound hepatic lipid accumulation, increased apoptosis, increased caspase and PARP cleavage, and protein aggregation following tunicamycin treatment, indicating severe ER stress-induced pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 provide converging evidence from multiple assays (macroscopic evaluation, biochemical measurements, TUNEL staining, immunoblotting, and Thioflavin T staining) demonstrating that loss of Lrh-1 results in severe ER stress pathology. The data are internally consistent and use appropriate markers for lipid accumulation, apoptosis, and protein aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Lrh-1LKO mice have a functional UPR with comparable nuclear accumulation and transcriptional activity of UPR transcription factors (XBP-1, ATF6, ATF4) compared to controls, but exhibit sustained UPR signaling indicating failure to resolve ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 demonstrate through immunoblotting and gene expression analysis that the canonical UPR pathways are functional in Lrh-1LKO mice, but the sustained signaling indicates a defect in stress resolution rather than UPR activation. This is a critical finding that distinguishes the LRH-1 pathway from canonical UPR pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Primary hepatocytes from Lrh-1LKO mice exhibit enhanced UPR responses, increased cell death, and increased fat accumulation when treated with alternative ER stressors (DTT and BFA), confirming that the phenotype is not specific to tunicamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 extend the findings to multiple ER stress inducers with different mechanisms of action, strengthening the conclusion that LRH-1 is generally required for ER stress resolution. The use of primary hepatocytes controls for potential in vivo confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Lrh-1LKO mice exhibit dramatic fat accumulation and sustained UPR signaling following partial hepatectomy, a physiological inducer of ER stress, demonstrating that the requirement for LRH-1 extends beyond chemical stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 demonstrate that the LRH-1 requirement is not an artifact of chemical ER stress inducers but extends to physiological stress. This is important for establishing biological relevance, though the mechanism of ER stress induction during liver regeneration could be better characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Lrh-1 expression is moderately induced following ER stress in a manner partially dependent on IRE1\u03b1 and ATF6, and LRH-1 target genes are induced by ER stress with IRE1\u03b1 specifically affecting LRH-1 transactivation, though LRH-1 remains constitutively nuclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 characterize the regulation of LRH-1 during ER stress through multiple approaches (qPCR, immunoblotting, siRNA knockdown, and fluorescence microscopy). The data suggest complex regulation involving UPR components, though the mechanism remains incompletely understood. The nuclear localization data (C24) appropriately rules out direct regulation by ER-bound IRE1\u03b1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Bioinformatic analysis identifies the cyclic AMP response element (CRE) as overrepresented in genes differentially regulated between control and Lrh-1LKO mice, and ATF2 phosphorylation at T51/53 is rapidly induced by tunicamycin in control but not Lrh-1LKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 use an unbiased bioinformatic approach to identify ATF2 as a candidate downstream effector, followed by direct biochemical validation. The approach is sound, though the statistical significance of the motif enrichment and the specificity of the phospho-ATF2 antibody are critical assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C59"
+    ],
+    "result": "ATF2 target genes (B3gat3, Creld1, Mcfd2) show blunted induction in Lrh-1LKO mice, with increased binding of phosphorylated ATF2 and histone H4 acetylation at these genes in control but not Lrh-1LKO mice following tunicamycin treatment, and the gene list is highly enriched for ATF2-bound genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, and C59 provide gene expression, ChIP, and statistical enrichment data demonstrating that ATF2 is functionally active at target genes in an LRH-1-dependent manner. The ChIP data directly demonstrate that ATF2 phosphorylation and enzymatic activity are impaired in Lrh-1LKO mice. The hypergeometric test (p=3.83e-08) provides strong statistical support for ATF2 enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C58"
+    ],
+    "result": "Plk3 expression is robustly induced at both mRNA and protein levels in control but not Lrh-1LKO mice following ER stress, with kinetics matching ATF2 phosphorylation, and LRH-1 occupancy is enriched at a predicted binding site in the Plk3 promoter following tunicamycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C58 establish Plk3 as a direct LRH-1 target gene through expression analysis, ChIP, and bioinformatic prediction. The temporal correlation between Plk3 induction and ATF2 phosphorylation supports a causal relationship, though this remains correlative rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In TLR-3 cells, ATF2 phosphorylation and CRE-dependent gene expression require Lrh-1 and are mediated predominantly by PLK3 rather than other kinases (JNK, p38, SGK), and overexpression of constitutively active ATF2 or Plk3 rescues stress-inducible gene expression in Lrh-1 knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 use a cell line model with pharmacological inhibitors and overexpression to establish PLK3 as the predominant kinase mediating ATF2 phosphorylation during ER stress. The rescue experiments (C36) provide strong evidence for sufficiency. However, the specificity of the PLK3 inhibitor and potential off-target effects should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "PLK3 inhibition in control mice and genetic deletion of Plk3 both result in sustained UPR signaling and inability to resolve ER stress, phenocopying the Lrh-1LKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide both pharmacological and genetic evidence that PLK3 is required for ER stress resolution. The convergence of these two independent approaches strengthens the conclusion. The Plk3-/- mice provide definitive genetic evidence, though only a single timepoint is shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Adenoviral overexpression of Plk3 in Lrh-1LKO hepatocytes restores stress-inducible ATF2 phosphorylation, ER stress resolution, and prevents lipid accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate that Plk3 is sufficient to rescue the Lrh-1LKO phenotype through gain-of-function experiments. This is critical evidence establishing Plk3 as the key downstream effector. The modest overexpression level (C6D) supports physiological relevance, though quantification would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Dominant-negative ATF2 impairs ER stress resolution in control hepatocytes, while constitutively active ATF2 enhances stress resolution capacity in Lrh-1LKO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 use loss- and gain-of-function approaches to establish ATF2 as necessary and sufficient for ER stress resolution. The bidirectional manipulation strengthens the conclusion, though the dominant-negative approach may have limitations due to functional redundancy with ATF7 and CRE-BPa (acknowledged in C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The LRH-1 agonist RJW100 increases Plk3 and ATF2 target gene expression, enhances ER stress resolution, and decreases cell death in hLrh-1 TG; mLrh-1 LKO hepatocytes but not in mLrh-1 LKO hepatocytes, demonstrating LRH-1-dependent pharmacological enhancement of ER stress resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 demonstrate that LRH-1 agonism can enhance ER stress resolution in a dose-dependent and LRH-1-dependent manner. The use of humanized mice (hLrh-1 TG; mLrh-1 LKO) provides an appropriate control for specificity. This has important therapeutic implications, though in vivo validation would strengthen the translational potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "LRH-1 initiates a novel pathway of ER stress resolution through Plk3 induction and ATF2 activation that is independent of but equally required as the canonical UPR pathways, though it cannot be considered a fourth UPR arm because it does not directly restore ER function and LRH-1 is not universally expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C68-C70 represent the major conclusions of the study. These are well-supported by the collective experimental evidence demonstrating: (1) functional UPR in Lrh-1LKO mice (C10-C12), (2) requirement for LRH-1 in stress resolution (C6-C17), (3) the LRH-1\u2192PLK3\u2192ATF2 pathway (C30-C44), and (4) rescue experiments (C40-C44). The distinction from canonical UPR is appropriate given the lack of evidence for direct ER function restoration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C77",
+      "C78"
+    ],
+    "result": "Targeting LRH-1 may be beneficial in human disorders associated with chronic ER stress, as LRH-1 agonism potently increases the ability of cells to resolve high levels of ER stress and human LRH-1 can compensate for loss of mouse LRH-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53, C77, and C78 represent speculative therapeutic implications. While the data support that LRH-1 agonism enhances ER stress resolution in vitro (C45-C50), the translational potential remains uncertain without in vivo validation in disease models. The human LRH-1 complementation (C77) is encouraging but limited to the ER stress context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims establishing that approximately one-third of newly synthesized proteins misfold, the UPR consists of three pathways producing ATF4, ATF6, and XBP-1, knockout mice for UPR components cannot resolve ER stress and accumulate hepatic triglycerides, and LRH-1 is expressed in secretory tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are background claims supported by appropriate citations to prior literature. These establish the context for the study but do not represent novel findings. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Additional background claims about metabolic diseases and ER stress, ATF2 regulation and function, functions of specific genes (B3gat3, Creld1, Mcfd2), MAP kinases in ER stress, and technical methods (Thioflavin T staining, partial hepatectomy effects, ATF2 functional redundancy, PLK3 substrates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C60-C67, and C72-C76 are background claims and methodological justifications supported by appropriate citations. These provide context and rationale for experimental approaches but do not represent primary findings of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "LRH-1 is not universally expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is an established fact about LRH-1 expression patterns, consistent with C5 which specifies its tissue-restricted expression. This is used to justify why the LRH-1 pathway cannot be considered a fourth UPR arm.",
+    "result_type": "MINOR"
+  }
+]

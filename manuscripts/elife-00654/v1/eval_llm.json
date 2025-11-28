@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The primary cilium is a signaling compartment with a microtubule-based axoneme structure. Its assembly and function depend on intraflagellar transport (IFT), which uses kinesin II and dynein 1b motors for bidirectional cargo transport along axonemal microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-established background knowledge supported by multiple citations to prior literature. These claims provide the foundational context for the study and are not contested by the authors' new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The prevailing model suggests ciliary membrane proteins explore ciliary space by loading onto IFT trains at one end and unloading at the other, but direct experimental evidence for this model is limited. Prior studies showed some processive movements but most ciliary membrane proteins appear homogeneously distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 accurately characterize the state of knowledge prior to this study, identifying gaps in understanding that motivate the current work. The authors correctly note the limited direct evidence for the IFT-mediated transport model (C9, C13, C16), which is supported by their literature assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Single molecules of SSTR3 and Smo move in a saltatory manner with mostly diffusive behavior interspersed with short directional movements, which differs from the smooth processive movement of IFT trains. The tracks of IFT trains and single SSTR3 molecules rarely overlap, suggesting SSTR3 and Smo move primarily by diffusion, though very small 'IFT nanotrains' below imaging sensitivity might contribute to directional movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are directly supported by experimental data in Figures 1B-D and supplementary figures/videos. The inference that SSTR3/Smo move primarily by diffusion (C20) is reasonable given the observed saltatory behavior. However, the 'nanotrain' hypothesis (C21) is speculative and acknowledged as such by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "FRAP experiments show that SSTR3-GFP in the distal half of the cilium recovers fluorescence in less than 60 seconds from the unbleached proximal half, with an apparent diffusion coefficient of 0.25 \u03bcm\u00b2/s. This demonstrates that saltatory movements enable rapid exploration of the entire ciliary space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by FRAP data in Figure 1C and supplementary figures. The diffusion coefficient calculation (C24) is derived from the FRAP data using appropriate mathematical modeling. The inference about rapid exploration (C23) is reasonable given the recovery kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The single molecule labeling strategy with monovalent streptavidin does not affect SSTR3 mobility or signaling properties, as demonstrated by comparable diffusion coefficients with and without saturating mSA labeling and by agonist-induced endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by control experiments in Figure 2A-D showing no significant difference in mobility (p>0.05) and preserved GPCR signaling function. These controls are essential for validating the single molecule approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Treatment with antimycin and deoxyglucose reduced cellular ATP by 90% and completely inhibited IFT88 foci movements, but SSTR3 saltatory movements were unaffected. Statistical analysis revealed that 27% of anterograde and 13% of retrograde SSTR3 movements involved active transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by experimental data in Figure 3. The ATP depletion (C27) and IFT inhibition (C28) are directly measured, while SSTR3 movement persistence (C29) is observed. The statistical analysis (C30) uses appropriate methods to deconvolve active from passive transport, though the asymmetry between anterograde and retrograde percentages requires explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Digitonin permeabilization reduced ATP to undetectable levels and completely inhibited IFT foci movements, while SSTR3 retained saltatory behavior. Statistical analysis showed 22% of anterograde and 24% of retrograde SSTR3 movements involved active transport. The mean velocities of the active transport component aligned with IFT motor velocities, suggesting these movements are powered by kinesin II and dynein 1b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by data in Figure 4. The digitonin approach provides independent validation of the antimycin/deoxyglucose results. The alignment of extracted velocities with known IFT motor speeds (C35) strongly supports the inference that active transport is IFT-mediated (C36). The similar percentages between anterograde and retrograde for digitonin (unlike antimycin) is noted but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "FRAP analysis showed similar SSTR3-GFP mobility in untreated and digitonin-treated cells, suggesting that the combination of passive diffusion and active transport effectively enables membrane proteins to explore ciliary space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by FRAP data in Figure 4A and supplementary figures. The similar recovery kinetics despite loss of large IFT trains supports the inference that diffusion plus residual active transport (possibly by nanotrains) is sufficient for ciliary exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Statistical analysis of Smo movements in digitonin-treated cells showed 34% of anterograde and 32% of retrograde movements involved active transport, indicating Smo also spends the majority of time diffusing rather than undergoing directed IFT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by data in Figure 4C. The analysis extends the findings from SSTR3 to Smo, demonstrating generalizability. The slightly higher percentages for Smo compared to SSTR3 are noted, but both proteins spend >60% of time in diffusive motion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C55"
+    ],
+    "result": "Ciliobrevin, a selective dynein inhibitor, rapidly inhibited retrograde IFT88 foci movement (2-3 min) and later inhibited anterograde movement (30 min), but did not affect SSTR3 movements. Statistical tests found no significant difference in SSTR3 velocity distributions between control and ciliobrevin-treated cells, and FRAP showed similar mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C45 are supported by data in Figure 5, but the interpretation is problematic. The unexpected finding that ciliobrevin inhibits large IFT88 foci but not SSTR3 active transport contradicts the inference from digitonin experiments (C36) that SSTR3 active transport is IFT-mediated. The authors propose nanotrains or alternative motors but provide no direct evidence. This result requires further investigation to resolve the apparent contradiction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "WGA treatment completely stopped SSTR3 movements within minutes by cross-linking membrane proteins, but had only a small (though statistically significant) effect on IFT movements. This indicates IFT88 movements can be largely uncoupled from binding to ciliary membrane protein cargo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by data in Figure 6. The complete immobilization of SSTR3 (C46) contrasts with minimal IFT perturbation (C47), supporting the inference of uncoupling (C48). However, the extrapolation that this applies to 'nearly all membrane proteins' based on WGA binding is reasonable but not directly tested for all proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "IFT trains assemble spontaneously rather than 'on demand' by binding cargo, similar in principle to cargo-independent assembly of clathrin-coated pits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is a reasonable inference from the WGA experiment showing IFT continues when cargo is immobilized. The analogy to clathrin-coated pits (C50) is supported by citation. However, this conclusion challenges the prevailing model and would benefit from additional direct evidence of IFT assembly kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Based on the measured diffusion coefficient, a single SSTR3 molecule could diffuse along a 4 \u03bcm cilium in less than 40 seconds, while IFT-mediated transport would take 8 seconds. The cilium dimensions are similar to bacteria where proteins explore cellular space by diffusion without cytoskeletal motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are calculations based on measured diffusion coefficients and known IFT velocities, which are mathematically sound. The comparison to bacteria (C53-C54) is supported by citation and provides useful context for understanding why diffusion is effective in cilia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Digitonin selectively permeabilizes the plasma membrane while leaving the ciliary membrane intact, resulting in depletion of cytoplasmic ciliary contents including motors and ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by citation and experimental validation in Figure 4. The selective permeabilization is a key methodological advance enabling the experiments, though the mechanism of selectivity (cholesterol content differences) is cited rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study used SSTR3 (a GPCR) and Smoothened (a non-GPCR 7-pass membrane protein) as model ciliary membrane proteins. Single molecule labeling achieved 0-5 labeled molecules per cilium, with pericentrin-RFP marking the ciliary base for orientation. Imaging was performed at 2 Hz until photobleaching (30-60 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe the experimental system and are supported by citations (C58-C59) and data in Figure 1B (C60-C61). The methodology (C62) is clearly described and appropriate for single molecule imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "There is a diffusion barrier at the ciliary base, as demonstrated by previous work showing that photobleaching the entire cilium led to no detectable recovery from the plasma membrane pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 cite prior work (Hu et al., 2010) establishing the ciliary diffusion barrier. This is relevant context for interpreting the half-cilium FRAP experiments but is not a new finding of this study.",
+    "result_type": "MINOR"
+  }
+]

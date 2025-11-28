@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "RBM47 was identified as a candidate breast cancer suppressor through integrative analysis of clinical gene expression data, cell line models, and mutation data. Low RBM47 expression correlates with poor prognosis in brain and lung metastasis, is associated with aggressive breast cancer subtypes, and RBM47 is genetically altered in a subset of breast cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C12, and C14-C18 collectively demonstrate a comprehensive integrative analysis identifying RBM47 as a candidate suppressor. The data includes validated expression differences (C7-C8), significant clinical associations with metastasis (C9-C11), subtype associations (C12), and genetic alterations (C14-C18). The multivariate analysis (C11) strengthens the clinical relevance. The convergence of multiple independent data sources provides strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28"
+    ],
+    "result": "Wild-type RBM47, but not the patient-derived RBM47I281fs mutant, suppresses breast cancer metastasis in experimental models. RBM47 overexpression inhibits lung and brain colonization, while RBM47 knockdown promotes metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C27-C28 provide strong functional evidence for RBM47 as a metastasis suppressor through both gain-of-function (C19-C21, C27) and loss-of-function (C22) experiments. The mutant control (C23, C28) demonstrates specificity. The use of multiple cell lines and metastatic sites strengthens the conclusion. The data are internally consistent and supported by appropriate in vivo models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Cancer cell populations show heterogeneous sensitivity to RBM47, with some clones forming metastases despite RBM47 expression while others suppress or lose RBM47 expression during metastatic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by immunohistochemistry data showing variable RBM47 expression in metastatic lesions. The observation that proliferation does not correlate with RBM47 levels (C26) suggests the effect is not simply on growth rate. This heterogeneity is important for understanding the biological context of RBM47 function, though it also indicates complexity in the tumor suppressor mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C66"
+    ],
+    "result": "RBM47 directly binds RNA in vivo and exhibits widespread binding to approximately 2,500 gene transcripts, predominantly in 3'UTRs and introns, with enrichment for polyU sequences at binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 and C66 are well-supported by HITS-CLIP data with appropriate controls (C29-C30), high reproducibility between replicates (C33), and systematic analysis of binding patterns (C31-C36). The identification of polyU motif enrichment (C35) provides mechanistic insight. The data quality metrics (reproducibility R\u00b2=0.998) and stringent filtering strengthen confidence in the binding site identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "RBM47 regulates alternative splicing of cassette exons, with 97 RBM47-bound exons showing significant splicing changes. RBM47 binding patterns near splice sites differ between included and excluded exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by RNA-seq analysis (C37-C38) with RT-PCR validation of specific targets (C39). The normalized complexity map (C40-C41) provides mechanistic insight into position-dependent splicing regulation. The integration of HITS-CLIP and RNA-seq data strengthens the conclusion that RBM47 directly regulates splicing of bound transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C67"
+    ],
+    "result": "RBM47 regulates steady-state mRNA levels of 194 genes (102 upregulated, 92 downregulated) in a dose-dependent manner at physiologically relevant expression levels. These gene expression patterns are clinically relevant and distinguish breast cancer subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 and C67 demonstrate RBM47-dependent mRNA regulation through dose-response analysis (C42-C43), validation at physiological levels (C44), and clinical relevance through TCGA clustering (C45-C47). The use of mutant controls and multiple clonal lines strengthens the specificity. The observation that only a subset of bound transcripts show expression changes (C67) is appropriately noted and consistent with complex post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Among RBM47-regulated genes, DKK1 and IL8 are top-scoring binding targets whose increased mRNA levels correlate with increased protein secretion, while VEGFA serves as a negative control showing binding without upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 integrate HITS-CLIP binding data with RNA-seq and ELISA protein measurements. The inclusion of VEGFA as a bound but non-regulated control (C51) strengthens the conclusion that binding alone is insufficient for regulation. The high tag counts for DKK1 and IL8 (C49) support robust binding. The protein-level validation (C50) is critical for demonstrating functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RBM47 stabilizes DKK1 mRNA by increasing its half-life up to fourfold and protects the DKK1 3'UTR from destabilizing factors, while not affecting 5'-targeting regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide mechanistic insight into RBM47 function through mRNA stability assays (C52-C53) and targeted knockdown experiments with region-specific shRNA-miRs (C54-C55). The position-dependent protection (3'UTR vs 5'UTR) is consistent with the HITS-CLIP binding patterns. The fourfold increase in half-life (C53) is substantial and biologically significant. The mutant control strengthens specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "RBM47 suppresses tumor progression through DKK1-mediated inhibition of Wnt signaling. RBM47 expression dampens Wnt-dependent gene expression, and DKK1 knockdown partially rescues RBM47's tumor-suppressive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 establish a mechanistic pathway linking RBM47 to Wnt inhibition through DKK1. The data include Wnt reporter assays (C56), DKK1 dependency experiments (C57), clinical correlation (C58), and functional rescue experiments (C59-C61). The partial dependency (C57) appropriately indicates DKK1 is one of multiple mediators. The in vivo validation (C59-C61) strengthens the biological relevance of this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "result": "RBM47 inhibits breast cancer re-initiation and growth by altering splicing and abundance of target mRNAs, with DKK1 exemplifying mRNAs that are stabilized and mediate tumor suppression downstream of RBM47.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, and C5 summarize the major functional findings. These are well-supported by the detailed experimental evidence in other claim groups. C2 is validated by in vivo experiments (C19-C22, C27-C28, C59-C61), C4 by HITS-CLIP and RNA-seq data (C37-C43), and C5 by mechanistic studies (C52-C61). The integration of these findings provides a coherent model of RBM47 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Transcriptome-wide HITS-CLIP analysis revealed widespread RBM47 binding to mRNAs, most prominently in introns and 3'UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is directly supported by the detailed HITS-CLIP analysis presented in claims C29-C36. The binding patterns are well-characterized with high reproducibility and appropriate controls. This is a key technical result that enables the mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study demonstrates that low-frequency cancer mutations can drive tumorigenic phenotypes and that loss of broadly targeted RNA-binding proteins can increase metastatic fitness, establishing RBP deregulation as a source of transcriptomic diversity supporting metastatic trait selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 represent high-level conclusions drawn from the entire study. These are well-supported by the comprehensive data showing RBM47 as a low-frequency mutated gene (C14-C18) with functional consequences (C19-C28) mediated through broad transcriptomic effects (C37-C47). The conclusions appropriately synthesize the findings and place them in broader context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript provides appropriate background context on breast cancer genomics, RNA-binding protein function, and prior work on related proteins, establishing the rationale for studying RBM47.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C62-C65, C68-C70, and C74-C90 represent background knowledge and literature citations that provide context for the study. These are appropriately cited and generally accurate representations of established knowledge. While important for framing the work, these are not novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

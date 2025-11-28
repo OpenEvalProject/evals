@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "miR-142 efficiently recruits APC mRNA to RISC, while miR-150 does not, despite both being computationally predicted to target APC. The efficiency of recruitment correlates with seed match type (8mer > 7mer-m8 > 7mer-1A > 6mer), and APC mRNA abundance is reduced in miR-142-transfected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C62, C64 demonstrate efficient recruitment of APC to RISC by miR-142 using Ago IP/microarray data (Figure 1). Claims C59-C60 show the correlation with seed match types. Claims C61, C63 establish that miR-150 does not efficiently recruit APC despite computational prediction. Claim C65 confirms reduced APC mRNA abundance. The convergence of multiple experimental approaches (Ago IP, microarray, seed match analysis) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "miR-142 directly targets the 3' UTR of APC mRNA and reduces APC protein levels in multiple cell lines. Mutagenesis of the seed sequence abolishes this effect, and knockdown of miR-142 increases APC protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 demonstrate specific targeting via luciferase assays with wild-type and mutant constructs (Figure 2A-B). Claims C69-C70 show reduced APC protein in HEK293T, MCF7, and MDA-MB-231 cells (Figure 2C-D). Claim C71 shows the converse effect with anti-miR-142 (Figure 2E). The combination of reporter assays, mutagenesis, Western blots, and gain/loss-of-function experiments provides robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "miR-142 activates canonical WNT signaling in an APC-dependent manner. TOPFlash/FOPFlash reporter activity increases 364% with LiCl stimulation and is rescued by expression of an APC construct lacking the miR-142 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 demonstrate WNT pathway activation using TOPFlash/FOPFlash reporters with LiCl and Wnt3A stimulation (Figure 3A). Claim C75 shows rescue with mutant APC plasmid (Figure 3C), establishing APC-dependence. Claim C76 synthesizes these findings. The rescue experiment is critical for establishing causality and is well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Knockdown of miR-142 suppresses organoid formation in both murine mammary CSCs and human BCSCs, reduces proliferation (EdU incorporation), and increases apoptosis (annexin V staining).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 establish the effect in mouse MLTV-Wnt-1 CSCs (Figure 4\u2014supplement 1). Claims C81-C83 demonstrate the same effect in human BCSCs (Figure 4A-B). Claims C84-C85 provide mechanistic insight through proliferation and apoptosis assays (Figure 4C-D). The consistency across species and multiple functional readouts strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "miR-142 upregulates miR-150 expression through activation of canonical WNT/\u03b2-catenin signaling. A \u03b2-catenin/TCF binding site exists in the miR-150 promoter, and \u03b2-catenin knockdown reduces miR-150 expression in miR-142-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 identifies the TCF/\u03b2-catenin binding site (Figure 5A). Claim C88 confirms \u03b2-catenin binding via ChIP (Figure 5B). Claim C89 shows miR-142 upregulates miR-150 (Figure 5C). Claims C90-C91 demonstrate dependence on \u03b2-catenin and miR-142 (Figure 5D-E). The combination of bioinformatics, ChIP, and functional validation provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Enforced expression of miR-142 or miR-150 in normal mouse mammary stem cells induces hyperproliferative mammary glands in vivo. miR-142 causes dysplastic structures with abnormal morphology, while miR-150 causes hyperplastic ducts with increased branching but normal cellular appearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 establish efficient lentiviral infection without perturbing engraftment. Claims C96-C98 describe miR-142-induced dysplasia (Figure 6A-B). Claims C99-C101 describe miR-150-induced hyperplasia (Figure 6A-C). Claims C102-C105 confirm hyperproliferation via PCNA staining and compare phenotypes. The in vivo mammary transplantation experiments with histological analysis provide strong evidence, though longer-term tumor formation data would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "miR-142-expressing mammary tissue shows cytoplasmic and nuclear \u03b2-catenin localization and positive staining for active \u03b2-catenin, indicating WNT pathway activation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 report nuclear \u03b2-catenin and active \u03b2-catenin staining (Figure 6\u2014supplement 1). However, claim C108 acknowledges that \u03b2-catenin immunohistochemistry suffers from non-specific staining, and the authors speculate about detectability. While the data support WNT activation, the acknowledged technical limitations and lack of quantification make this result uncertain. Additional validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Knockdown of miR-142 in human BCSCs slows tumor growth in xenograft models and elevates APC protein levels in tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 establish high infection efficiency (94-96%). Claim C112 demonstrates significantly slower tumor growth (Figure 7A). Claim C113 confirms elevated APC protein in anti-miR-142 tumors (Figure 7B). The in vivo tumor growth data with molecular validation provides strong evidence for therapeutic relevance, though the study uses only one patient-derived xenograft model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C125",
+      "C157"
+    ],
+    "result": "APC is a relevant target of miR-142, and miR-142 activates canonical WNT signaling and regulates proliferation in both normal and malignant mammary cells through upregulation of WNT/\u03b2-catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the major findings from the experimental results (C2-C114). The convergence of evidence from Ago IP, luciferase assays, Western blots, reporter assays, organoid assays, and in vivo experiments across multiple cell types and models provides strong support for these summary conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C142",
+      "C143",
+      "C145",
+      "C146"
+    ],
+    "result": "miR-150 is a transcriptional target of miR-142 via WNT/\u03b2-catenin signaling and plays a role in proliferation downstream of this pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129, C142-C143 establish miR-150 as a target of miR-142 via WNT signaling (supported by C87-C92). Claims C130-C131 propose miR-150's role in proliferation downstream of WNT. Claim C145 provides a mechanistic model. The ChIP, real-time PCR, and functional data support this regulatory axis, though direct evidence that miR-150 mediates miR-142's proliferative effects would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "While miR-150 can weakly suppress a luciferase reporter containing the APC 3' UTR (32% reduction), it does not efficiently recruit APC mRNA to RISC in vivo, likely due to competition from higher-affinity targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 notes a predicted miR-150 binding site in APC. Claim C133 shows 32% luciferase reduction (data not shown). Claims C134-C135 speculate about competition from other targets based on Ago IP data (C63). The speculation is reasonable given the Ago IP results, but the lack of shown luciferase data and the speculative nature of the competition hypothesis warrant caution. The conclusion is consistent with the data but involves inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Other pathways beyond WNT/APC likely contribute to miR-142's regulation of normal and malignant breast epithelium, given that miRNAs typically have hundreds of targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 states established miRNA biology. Claim C118 is a reasonable speculation based on this knowledge and the Ago IP data showing multiple miR-142 targets (C2, Figure 1). While speculative, this is a scientifically sound caveat acknowledging the complexity of miRNA biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C148",
+      "C158"
+    ],
+    "result": "Upregulation of miR-142, miR-150, and miR-155 in BCSCs may contribute directly to aberrant proliferation and could provide a molecular mechanism for WNT pathway activation in breast cancer initiation and progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims synthesize the findings and extend them to a broader hypothesis about BCSC biology and breast cancer. While the data support a role for miR-142 and miR-150, the inclusion of miR-155 (which was not functionally tested in this study) and the extension to cancer initiation/progression involve speculation beyond the presented data. The hypothesis is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  }
+]

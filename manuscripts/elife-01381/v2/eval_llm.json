@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study used 765 LCL samples from female Caucasian adult twins in the TwinsUK cohort (134 MZ and 192 DZ pairs) with RNA-seq quantification of 13,660 genes. Samples were genotyped on multiple Illumina arrays, imputed using IMPUTE2 into 1000 Genomes Phase 1 reference panel, and expression data were processed using root transformation, PEER correction (50 factors), quantile normalization, and GRAMMAR to account for relatedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C62-C73 provide comprehensive methodological details about sample collection, genotyping, imputation, RNA-seq processing, and normalization procedures. These are standard, well-established methods appropriately applied to the twin cohort design, with proper quality control filters and statistical corrections for relatedness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study identified 497 SNPs as peak v-eQTL for 508 genes at FDR < 0.05 (23 at Bonferroni significance), with 9.3% within 10 kb of TSS and 181 also being significant eQTL. The v-eQTL were detected using a non-parametric Spearman rank correlation test on squared residuals after removing mean eQTL effects, with significance assessed via permutation testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C74-C78 describe the v-eQTL discovery with appropriate statistical methods. The use of squared residuals after regressing out mean effects is a valid approach to detect variance effects, and permutation testing provides proper null distribution estimation. The overlap with eQTL (C6) is expected and supports the validity of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Using forward stepwise analysis with linear mixed models, the study identified 256 independent SNPs in epistasis with peak v-eQTL for 173 genes at Bonferroni significance (p < 1.98 \u00d7 10\u207b\u2078), after removing signals related to dominance and linkage disequilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C79-C81 describe appropriate statistical methodology for epistasis detection. The forward stepwise approach with dominance filtering and LD control is sound. However, the stringent Bonferroni threshold is appropriate given the multiple testing burden, though the final validated count depends on replication (addressed in subsequent results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In the GEUVADIS replication cohort (462 samples), 16 of 23 Bonferroni-significant v-eQTL replicated at FDR < 0.05, and 28 of 508 FDR-significant v-eQTL replicated. For epistasis, 137 of 246 testable associations replicated (FDR < 0.05), with 71% estimated replication by \u03c01 analysis, correlation of 0.58 between effect sizes (p = 5.9 \u00d7 10\u207b\u00b2\u2074), and 202 of 246 sharing direction of effect (p = 2.2 \u00d7 10\u207b\u00b2\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 and C83-C85 demonstrate robust replication with appropriate statistical measures. The replication rates (70% for Bonferroni v-eQTL, 56% for epistasis) are substantial, and the high correlation of effect sizes with consistent directions provides strong validation. The use of \u03c01 analysis and robustness checks (log transformation, C85) strengthen confidence in findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C61",
+      "C86"
+    ],
+    "result": "After controlling for all possible eQTL effects identified in the full sequence data from GEUVADIS (using forward stepwise scan at p < 10\u207b\u2075), 57 of the replicated epistasis signals remained significant, ruling out haplotype effects as the explanation for observed interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C61, and C86 describe a critical control analysis that distinguishes true epistasis from confounding by haplotype effects. The comprehensive eQTL scan in full sequence data and conditional testing provide strong evidence that the 57 remaining interactions represent genuine epistasis rather than LD-induced artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C82"
+    ],
+    "result": "The 57 replicated epistatic interactions explain on average 4.3% of phenotypic variance (up to 16% maximum), with 24 cases where interaction effects exceed additive contributions. For eight genes with multiple interactions, up to 10.4% variance was explained (average 5.1%). Variance explained was calculated using methods from Nakagawa and Schielzeth (2012) in the GEUVADIS cohort to avoid winner's curse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C20-C22, and C82 provide effect size estimates with appropriate methodology. Calculating variance explained in the replication cohort (C20) properly avoids inflation from winner's curse. The finding that interactions often exceed additive effects (C18, C22) is notable and well-quantified, though the range of variance explained (4-16%) is modest but biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "For the TRIT1 gene, the v-eQTL (rs3131691, MAF=0.30) lies near an ENCODE-defined LCL weak enhancer upstream, while the epistasis SNP (rs230273) is near a downstream enhancer. A nearby eQTL (rs34387655, MAF=0.08) in high D' with the v-eQTL does not explain the interaction, which remained significant (p=0.0095) when analyzing only major allele homozygotes. The epistatic interaction induces bimodality in expression for G allele carriers at rs3131691.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 and C90-C92 provide detailed characterization of a specific example with functional context. The conditional analysis (C29) ruling out the nearby eQTL as confounding is critical and well-executed. The mechanistic explanation linking epistasis to variance through bimodality (C91) is logical and supported by the data, and the regulatory element annotations provide biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "No trans SNPs (>5 Mbp from TSS) in epistasis with v-eQTL replicated in the GEUVADIS cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 reports a negative result that is clearly stated. While the lack of trans epistasis replication could reflect limited power for detecting trans effects (which are typically weaker and harder to replicate than cis effects), the finding is appropriately reported and consistent with the study's focus on cis interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Using twin-based heritability analysis with IBD sharing, 15 of 273 v-eQTL genes showed cis-trans interactions explaining >10% of expression variance, with 9 cases where interaction effects exceeded the combined direct genetic contribution of cis and trans variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe variance component analysis using the twin design to detect long-range epistasis. The approach is appropriate for the twin data structure, though the analysis is limited to 273 genes with available IBD information. The finding that interaction effects can exceed additive contributions is consistent with the cis-cis epistasis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Using MZ twin discordance analysis, approximately 70% of v-eQTL are estimated to also act as discordant eQTL (d-eQTL), with 176 of 508 showing significant discordance effects at FDR < 0.05. Of these 176, an estimated 40.3% are also eQTL, suggesting substantial gene-environment interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C33-C35 leverage the MZ twin design to infer GxE effects, since MZ twins share genotypes but can differ in environmental exposures. The 70% estimate using Storey's method is substantial and the lower overlap with eQTL among d-eQTL (40.3% vs overall proportion) suggests these represent distinct mechanisms. The logic connecting genotype-dependent MZ discordance to GxE is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The direction of epistatic effects was consistent within v-eQTL genotype groups across both cohorts. Sign epistasis (effect reversal conditional on genotype) was observed in at least two instances. The majority of interacting SNPs are physically close to each other and to the TSS, consistent with direct molecular interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe patterns in the epistatic interactions. The consistency of effect directions (C93) supports replication validity. Sign epistasis (C94) is a particularly interesting form of interaction with evolutionary implications. The physical proximity of interacting SNPs (C95) provides biological plausibility, though the inference of \"direct molecular interaction\" (C96) is speculative without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Five non-synonymous SNPs were involved in interactions in the TwinsUK dataset, with four predicted by PolyPhen to be benign and one (rs150369207) classified as possibly damaging for only one of nine coding transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 characterize the functional predictions for non-synonymous SNPs in epistatic interactions. The finding that most are predicted benign is consistent with the authors' argument that their approach detects different types of epistasis than those involving compensatory interactions with deleterious mutations. The data are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study reports 26 replicated variance eQTL and 57 replicated cis epistatic interactions explaining up to 16% of phenotypic variance. In almost half of cases, interaction effects exceed additive effects. The study demonstrates that v-eQTL are a valid approach for discovering genetic interactions affecting molecular phenotypes, with substantial evidence for gene-environment interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 summarize the main conclusions. The numbers are consistent with earlier detailed claims (C10 reports 28 replicated v-eQTL, but C113 reports 26, likely reflecting slightly different filtering). The validation of v-eQTL as a discovery method (C118) is well-supported by the replication results and mechanistic examples. The evidence for GxE (C116) comes from the MZ twin analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The study defines epistasis statistically as a joint effect of two loci on a trait, significant beyond the sum of additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides a clear operational definition of epistasis used throughout the study. This definition is standard in quantitative genetics and appropriately distinguishes interaction effects from additive effects. The definition is consistently applied in the statistical models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The manuscript reviews prior literature showing epistasis plays important roles in evolution and has been observed in model organisms (Drosophila, yeast, rice) with varying effect sizes (median 3% in yeast, up to 14% in one case), but has been harder to identify in human GWAS, possibly due to the large number of interactions to test and differences in genetic architecture between outbred and inbred populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 accurately summarize relevant prior work with appropriate citations. The cited effect sizes from model organisms (C41-C42) provide context for interpreting the current study's findings. The discussion of challenges in human studies (C45-C46) is reasonable, though the explanation remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The manuscript reviews the theoretical basis for using variance QTL to detect interactions (Par\u00e9 et al. 2010) and prior v-eQTL studies. Yang et al. (2012) found one replicated variance QTL for height/BMI in ~150,000 samples. Wang et al. (2014) studied v-eQTL in the same TwinsUK cohort using microarrays, concluding v-eQTL are often induced by partial LD with eQTL and that epistasis is not a cause, though they found evidence for GxE. Neither study used v-eQTL directly to identify interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 accurately characterize prior work and position the current study. The contrast with Wang et al.'s conclusions about epistasis (C53) is important context, as the current study reaches opposite conclusions using RNA-seq data. The technical superiority of RNA-seq over microarrays for variance analysis (C54) is a valid point supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The manuscript discusses potential confounders for v-eQTL detection: mean-variance relationships (which can be addressed by square root transformation of RNA-seq data) and haplotype effects where a recent strong eQTL co-segregates with a common SNP (high D', low R\u00b2), which could appear as variance effects or be mistaken for epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 identify important methodological considerations. The mean-variance relationship (C57-C58) is appropriately addressed by transformation. The haplotype effect concern (C59-C60) is critical and the authors address it through comprehensive conditional analysis in the replication cohort (covered in other claims). These represent thoughtful consideration of potential artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study used the qvalue package in R for FDR calculation with lambda restricted to the range of p-values, obtained ENCODE segmentation data for LCL cell line GM12878 from UCSC (11/6/2013), and deposited sequence data at the European Genome-phenome Archive under accession EGAS00001000805.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 provide methodological and data availability details. The FDR calculation approach is standard, the ENCODE data source is properly documented, and data deposition supports reproducibility. These are appropriate practices for transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The manuscript discusses how positive epistasis (where deleterious alleles mitigate each other's effects) can maintain high LD through selection on recombination rate, as observed by Lappalainen et al. (2011) for non-synonymous mutations with compensatory eQTL. The current study's approach requires LD breakdown to distinguish interactions from dominance, thus is more powered to detect epistasis amplifying deleterious effects rather than positive epistasis, which would be missed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide important context about the types of epistasis the study can detect. The logic is sound: the statistical approach requires low LD between interacting variants, which would be selected against for positive epistasis. This represents an important limitation and explains why the detected interactions differ from those in Lappalainen et al. The supporting data on benign PolyPhen predictions (C102) is consistent with this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The manuscript compares results to Hemani et al. (2014), who found 501 interactions (mostly cis-trans) affecting 238 genes in whole blood using arrays, with 30 replicating at Bonferroni significance. The lower replication rate compared to the current study may reflect greater difficulty replicating trans effects, tissue differences (LCLs show stronger genetic vs. environmental effects), and RNA-seq being more reliable than arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 provide appropriate comparison to related work with reasonable explanations for differences in replication rates. The cited factors (trans vs. cis effects, tissue type, technology) are all plausible contributors to the observed differences. The comparison helps contextualize the current study's relatively high replication rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The manuscript proposes that the ability to find genetic interactions affecting molecular phenotypes suggests a hypothesis-driven path to identify genetic interactions underlying more complex traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is a speculative statement about future applications. While the success in detecting epistasis for gene expression is encouraging, whether this approach will successfully extend to complex organismal traits remains to be demonstrated. The claim is appropriately framed as a suggestion rather than a proven conclusion.",
+    "result_type": "MINOR"
+  }
+]

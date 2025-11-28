@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "International air travel has facilitated the geographic spread of multiple emerging infectious diseases, including SARS (2003), influenza A/H1N1p (2009), influenza A/H7N9, MERS-CoV, and Ebola virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by appropriate citations to peer-reviewed literature. These claims establish the historical context and motivation for studying traveler screening programs. The evidence is consistent with well-documented patterns of disease spread via air travel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Traveler screening programs using fever detection and questionnaires have been proposed and implemented, but face multiple limitations including long incubation periods, imperfect device sensitivity, symptom concealment, and low specificity. Historical screening initiatives detained large numbers of travelers but detected few cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 are well-supported by multiple citations and empirical data from Table 1. The limitations of screening are documented through both theoretical considerations (incubation periods, device sensitivity) and empirical outcomes (low detection rates). The evidence converges to show screening faces substantial practical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C89",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The model assumes a sequential screening process (fever then risk factors) with a one-strike detention policy, using optimistic efficacy estimates of 70% for fever screening and 25% for honest risk factor reporting, derived from empirical data and literature review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C89, C134-C141 describe the model structure and parameter choices. The 70% fever screening efficacy is supported by citation to Bitar et al. 2009. The 25% honest reporting estimate is derived through explicit calculations from empirical screening data (C136-C139), though the authors acknowledge this is an upper bound. The model assumptions are clearly stated and justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Natural history analysis shows that while the majority of cases for all six pathogens exhibited fever, the proportion aware of exposure risk varied greatly by pathogen\u2014from lowest for influenza A/H1N1p to highest for Ebola virus. MERS-CoV lacks established exposure risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are supported by data presented in Figure 2A and Tables 2-3. The variation in exposure risk awareness across pathogens is clearly demonstrated and makes biological sense given transmission routes. The claim about MERS-CoV (C41) reflects the state of knowledge at the time and is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Incubation periods vary considerably among pathogens, with influenza viruses having the shortest (mean ~4 days) and filoviruses the longest (mean 6-9 days). However, estimates for some pathogens (Marburg, MERS-CoV) are based on limited case data and may have underestimated variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by data in Figure 2B and Table 3, with appropriate citations. The authors appropriately acknowledge uncertainty in parameter estimates, particularly for Marburg (5 cases) and MERS-CoV (23 cases). The recognition that variance estimates may expand with more data (C47-C48) demonstrates appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The effectiveness of screening components depends strongly on time since exposure. Shortly after exposure, only risk factor screening can detect cases, as symptoms have not yet developed. As time progresses, fever screening becomes increasingly effective, with pathogen natural history (incubation period, fever prevalence) becoming the primary determinant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by model results in Figure 3, which clearly shows the temporal dynamics of screening effectiveness. The biological logic is sound: recently exposed individuals are pre-symptomatic and only detectable via exposure history, while those with older infections are more likely symptomatic. The model appropriately captures this transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The infection age distribution of travelers is influenced by epidemic phase, with stable epidemics having older infections more likely to be symptomatic. Overall screening effectiveness is greater in stable than growing epidemics due to increased fever detection potential. However, even in stable epidemics, screening fails to detect at least 25% of infected travelers overall, and arrival screening alone misses 50-75%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are supported by model results in Figure 4 and supplements. The logic that severe cases cannot travel (C55) is sound. The finding that stable epidemics enable better screening (C57-C58) follows from the age structure argument. The quantitative estimates of screening failure (C60-C61) are clearly shown in Figure 4, though these represent best-case scenarios given optimistic parameter assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "For pathogens with short incubation periods (influenza viruses), fever screening dominates detection in all epidemic phases. For pathogens with longer incubation periods (Ebola, Marburg, SARS-CoV), exposure risk screening drives detection in growing epidemics, while fever screening becomes dominant only in stable epidemics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C62-C64 represent the core findings and are well-supported by model results in Figures 3-4. The pathogen-specific patterns make biological sense given incubation period differences. The distinction between epidemic phases is clearly demonstrated. These findings are internally consistent and follow logically from the model structure and natural history parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C18",
+      "C132"
+    ],
+    "result": "Screening effectiveness depends on the combined influence of pathogen natural history (incubation period, fever prevalence), epidemiological knowledge (exposure risk factors), epidemic phase, and human factors (implementation, compliance). Exposure risk screening contributes most during growing epidemics, for pathogens with long incubation periods, and when risk factors are well-characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C65-C66, and C132 synthesize the main findings. These are well-supported by the comprehensive model results throughout Figures 3-4. The multi-factorial nature of screening effectiveness is clearly demonstrated. The specific conditions favoring exposure risk screening (C66) are consistently shown across analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Influenza viruses, with short incubation periods, rely primarily on fever screening in any epidemic context. For filoviruses, exposure risk screening drives detection in growing epidemics, but fever becomes dominant in stable epidemics. SARS-CoV, despite a median incubation similar to influenza, shows filovirus-like screening outcomes due to its long-tailed incubation distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 provide pathogen-specific interpretations supported by model results. The SARS-CoV example (C70-C72) effectively illustrates how distribution variance, not just central tendency, affects outcomes. This is supported by data in Table 3 and Figure 2B showing SARS-CoV's right-skewed distribution. The taxonomic patterns are clearly demonstrated in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "For pathogens with long incubation periods, early characterization of exposure risk factors is crucial and can contribute more to case detection than fever screening during outbreak initiation. However, risk factor screening cannot improve effectiveness if factors are poorly characterized, as with MERS-CoV. Knowledge of risk factors also enables follow-up monitoring and may reduce risky behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 are supported by model results in Figures 3-4 and appropriate citations. The MERS-CoV example (C76-C77) illustrates the limitation when risk factors are unknown. The recommendations for prioritizing epidemiological studies (C78) and implementing follow-up (C80-C81) follow logically from the findings, though C79 about behavior change is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Although exposure risks for influenza A/H7N9 are well-defined (poultry/human contact), the short incubation period and high fever prevalence mean fever screening eclipses risk factor detection within days and remains dominant even in growing epidemics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by model results and pathogen characteristics. The exposure risks (C82) are documented by citations. The dominance of fever screening for H7N9 (C83-C84) is clearly shown in Figures 3-4 and follows logically from the short incubation period (Table 3) and high fever prevalence (Table 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Screening effectiveness increases when source epidemics stabilize or decline, as the infection age structure allows more fever-driven detection with higher efficacy than risk screening. This suggests epidemic stabilization could improve screening effectiveness. However, even in stable phases, arrival screening would miss more than half of infected passengers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by model results in Figure 4B. The mechanism (age structure shift enabling fever detection) is clearly explained. The inference about benefits of epidemic stabilization (C86) is logical but somewhat speculative. The persistent high miss rate (C87) is clearly demonstrated and important for policy implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Screening effectiveness depends on instrument and human factors. The model's assumptions (70% fever detection, 25% honest reporting) represent optimistic upper bounds, so quantitative results likely represent best-case scenarios. Empirical evidence suggests actual efficacies may be considerably lower due to antipyretic use, resource limitations, and low self-reporting rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C98 appropriately acknowledge model limitations and parameter uncertainty. The recognition that results represent best-case scenarios (C90) is important. Evidence for reduced efficacy (C91-C94) is supported by citations. The 25% honest reporting estimate (C97) is acknowledged as rough and upper-bound. The call for better incentives (C98) follows logically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Empirical validation shows mixed agreement with model predictions. Sydney H1N1 screening (7% sensitivity) performed worse than predicted (32%), while Auckland (6% observed vs 6% predicted) matched well. Ebola screening in US and UK detected 0 of 3 importations (0% vs ~50% predicted). These comparisons show screening is inherently imperfect and actual efficacies may be quite poor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 provide crucial empirical validation. The comparisons are appropriately cautious, noting small sample sizes for Ebola (C105). The mixed results (some matching predictions, some worse) suggest the model captures general patterns but real-world implementation faces additional challenges. The conclusion that screening is inherently imperfect (C106) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C17"
+    ],
+    "result": "Even under best-case assumptions, the model predicts arrival screening will miss half or more of infected travelers. For screening to achieve reasonable effectiveness, behavioral incentives are needed to substantially improve self-reporting and implementation efficacy beyond current levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C108-C109 synthesize key findings about screening limitations. These are well-supported by model results in Figure 4 and empirical comparisons. The call for behavioral incentives (C109) is a logical recommendation, though the feasibility of achieving much better compliance is uncertain. The persistent high miss rate is a robust finding across scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Model limitations include: screening order (fever before risk) affects attribution but not overall effectiveness; symptoms beyond fever were not considered, though many are non-specific or difficult to detect; and the focus was on sensitivity rather than specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 appropriately acknowledge model limitations. The clarification that screening order doesn't affect overall effectiveness (C111) is important. The justification for focusing on fever (C113) is reasonable given non-specificity of other symptoms. The focus on sensitivity over specificity (C115) is acknowledged as a limitation, though sensitivity is arguably more policy-relevant for rare pathogens.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Past screening programs have been costly, delayed many travelers, but detected few cases due to low positive predictive value of fever and risk factors for rare pathogens. Despite noted high costs and low effectiveness, no formal cost-benefit analysis has been conducted. Departure screening is suggested as more cost-effective than arrival screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 are supported by data in Table 1 and multiple citations. The observation about lack of formal cost analysis (C119) is notable and represents a gap in the literature. The suggestion that departure screening is more cost-effective (C120) is supported by citations but not directly evaluated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Arrival screening can make non-negligible contributions by detecting travelers who develop symptoms in-flight or were missed at departure, with greatest benefit when departure screening efficacy is low. However, even combined exit and arrival screening cannot prevent all importations. Policy makers should consider whether resources are better spent on screening versus tracing and containing inevitable arrivals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 provide important policy implications supported by model results. The recognition that arrival screening adds value (C121-C122) is balanced against its limitations (C123-C124). The policy recommendation (C126) is appropriately framed as a consideration rather than a definitive prescription, though it leans toward skepticism about screening value. This is supported by the evidence but involves value judgments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C133"
+    ],
+    "result": "Screening policies have been implemented during recent epidemics and will likely continue despite scientific criticisms, driven by political pressure. There is a need to characterize screening contributions across different contexts and pathogens. The results emphasize the importance of characterizing basic pathogen properties to enhance disease control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 and C133 provide context and motivation. The observation that screening will likely continue despite criticisms (C128-C130) is a reasonable inference based on political realities, though somewhat speculative. The call for better characterization (C131) and emphasis on pathogen properties (C133) follow logically from the study findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Questionnaire-based screening is common but faces challenges: epidemiological knowledge is limited for emerging pathogens, not all cases have known exposure sources even for well-characterized pathogens, and there are competing considerations between departure screening efficiency and political pressure for arrival screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 establish context for questionnaire screening. C29 is well-supported by citations. C30-C31 are supported by citations and general knowledge. C32-C33 present competing policy considerations that are reasonable but somewhat speculative regarding political pressures.",
+    "result_type": "MINOR"
+  }
+]

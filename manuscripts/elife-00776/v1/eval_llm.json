@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors measured metabolite levels in 316 Kas \u00d7 Tsu RILs (136 Kas cytoplasm, 180 Tsu cytoplasm) using GC-TOF-MS with fourfold replication across two experiments, identifying 2435 metabolites (215 known, 2220 unknown), with 559 detected in both experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is well-described with appropriate replication (C75, C24), quality control measures including mixed samples every 20 runs (C82), and data normalization (C83). The removal of 10 lines with impossible glucosinolate profiles (C84) demonstrates appropriate quality filtering. The balanced design with both cytoplasmic backgrounds supports the study objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C85"
+    ],
+    "result": "Using line heritability models, 361 metabolites showed significant line effects (p<0.01), with 334 showing significant maternal heritability averaging 1.6\u00b10.1% (range 0-15%), while 77 metabolites had significant nuclear broad-sense heritability averaging 21.3\u00b10.3% (range 2-58%). Genetic components explained ~19\u00d7 more variance than experimental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heritability analysis uses appropriate ANOVA models (C85) with proper nested design accounting for cytoplasmic subpopulations. The low maternal heritability (C30) vs. higher nuclear heritability (C31) appears contradictory to later claims but is explained by differences in degrees of freedom (2 cytoplasmic classes vs. 316 RILs). The comparison to environmental variance (C32) validates that genetic effects dominate technical variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "QTL mapping identified 2974 QTLs affecting 1822 metabolites (average 1.22\u00b10.02 QTLs per metabolite), partitioning into 14 metabolomic QTL hotspots with average LOD interval of ~5 cM, distributed unequally across chromosomes (chromosome IV had 5 hotspots, chromosomes I and II had only 1 each).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The QTL mapping methodology is described (C87, composite interval mapping with 10 cM window), but the LOD threshold of 2 (C88) is permissive compared to standard thresholds (typically 3-4), potentially inflating QTL counts. While permutation testing was performed, the relatively low threshold combined with testing 2435 metabolites raises concerns about false positives despite the conservative hotspot identification approach (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Using an additive model, cytoplasmic genome variation significantly affected 1755/2435 metabolites compared to nuclear loci affecting 298 metabolites on average (range 158-438). The cytoplasmic genome had larger average effect sizes and explained twice the variance of any individual nuclear locus, with Kas alleles more frequently increasing metabolite concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The additive model directly compares cytoplasmic and nuclear effects using the same statistical framework (C37-C40). The finding that cytoplasmic variation affects more metabolites with larger effects than individual nuclear loci is well-supported by the data and figures. However, the comparison is between the entire cytoplasmic genome (all organellar genes together) vs. individual nuclear QTL regions, which may not be entirely equivalent comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C67",
+      "C93"
+    ],
+    "result": "Sequence analysis of Kas and Tsu organellar genomes revealed polymorphisms across many genes including regulatory genes, with significant enrichment in NADH dehydrogenase genes (32/96 mitochondrial polymorphisms in NADH dehydrogenase 7, plus 13 in four other NADH dehydrogenase genes; hypergeometric test p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence analysis methodology is appropriate (C93, Bowtie2 alignment), and the statistical test for enrichment in NADH dehydrogenase genes is properly applied (C44). The non-random distribution of polymorphisms provides mechanistic insight. However, the authors correctly note (C68) that co-inheritance of mitochondrial and plastid genomes prevents resolution of which organelle drives specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C90",
+      "C91"
+    ],
+    "result": "Pairwise epistasis analysis revealed the cytoplasmic locus as a central hub connecting to 6/14 nuclear loci, higher than the network average degree (3.5\u00b10.46 SE). The M.I.83 nuclear locus showed highest connectivity (7/13 nuclear loci) but did not interact with cytoplasmic variation. The model used 120/314 degrees of freedom (38%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistatic network analysis is appropriately conservative, plotting only interactions affecting \u226510% of metabolites (C91). The degrees of freedom calculation (C90) demonstrates the model is not overfitted. The finding that cytoplasmic variation is a network hub is well-supported, though the 10% threshold for visualization may hide weaker but real interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C64"
+    ],
+    "result": "In cytonuclear epistatic interactions, the cytoplasmic genetic variation axis showed wider phenotypic ranges than nuclear locus axes, and cytonuclear epistatic effects were typically larger than nuclear-nuclear epistatic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 'center of mass' visualization approach is novel but mathematically sound for comparing relative effect sizes in epistatic interactions (C48, C49). The consistent pattern across multiple interactions strengthens the conclusion. However, this is a descriptive finding and the biological interpretation requires caution as the visualization method may emphasize certain patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Including cytoplasmic variation in the additive model nearly doubled average explained variance compared to nuclear-only models. Adding pairwise epistatic terms tripled variance explained. Including cytoplasm in the pairwise model increased variance from 38% to 53%, with cytoplasmic contribution (15%) exceeding the nuclear additive model (13%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic model comparison (additive vs. pairwise, with/without cytoplasm) provides strong quantitative evidence for cytoplasmic importance (C50-C53). The finding that cytoplasmic variation alone explains more variance than all nuclear additive effects combined is striking and well-supported by the data. The models are not overfitted based on degrees of freedom analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C65"
+    ],
+    "result": "Including 10 three-way interactions (cytoplasm \u00d7 nuclear locus 1 \u00d7 nuclear locus 2) significantly increased model variance (t-test p<0.001) using <42% of degrees of freedom. Specific metabolites (pyruvate, metabolite 227710, salicylic acid) showed nuclear epistatic interactions visible only in specific cytoplasmic backgrounds or with different patterns between backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the statistical significance is reported (C54) and specific examples provided (C56, C57), three-way interactions require substantial statistical power to detect reliably. With 316 lines and testing multiple three-way combinations, power may be limited. The examples are compelling but represent cherry-picked cases. The claim that cytoplasm 'hides or alters' nuclear epistasis is supported by the examples but the generalizability and false positive rate are unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The study demonstrates that cytoplasmic variation affects >80% of metabolites with effects as large or larger than individual nuclear loci, serves as a central hub in epistatic networks, and can alter or hide nuclear epistasis. While combined nuclear variance exceeds cytoplasmic variance, individual cytoplasmic effects are larger than individual nuclear loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims integrate findings from multiple analyses (heritability, QTL mapping, epistasis) and are well-supported by the collective evidence (C20, C37, C45, C58). The apparent contradiction between low maternal heritability (1.6%) and large effects is resolved by recognizing different statistical frameworks and degrees of freedom. The claims are appropriately nuanced, comparing cytoplasm to individual nuclear loci rather than the entire nuclear genome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "The widespread metabolic effects of cytoplasmic variation cannot be ascribed to specific plastidic or mitochondrial genes due to co-inheritance. Despite organellar genomes containing only ~1% of genes relative to the nuclear genome, genetic variation in this small fraction has large metabolic consequences. Separating organellar effects would require rare bi-parental inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the fundamental limitation of their design\u2014inability to separate mitochondrial from plastid effects (C68). The proposed solution of finding bi-parental inheritance (C69) is theoretically sound but practically difficult. The conclusion that small organellar genomes have disproportionate effects (C71) is well-supported but the mechanistic basis remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors conclude that cytoplasmic genomes must be included in future natural variation analyses, either as genotypes in GWAS or through reciprocal population designs, and should be prioritized in experimental approaches to understand evolution and genetic architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These recommendations (C6, C72, C73) logically follow from the demonstrated large effects of cytoplasmic variation. The specific suggestions (including cytoplasm in GWAS, reciprocal designs) are practical and actionable. However, the strength of the recommendation ('must be included') may overstate the case given that effects are system- and trait-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work has established that organellar variation affects human diseases, modifies nuclear loci effects, influences fitness and complex traits in model organisms, and causes cytoplasmic male sterility in plants. However, reciprocal F2 studies typically found small cytoplasmic effects, possibly due to inability to account for cytonuclear interactions, despite genomic evidence for substantial organellar polymorphism in Arabidopsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review appropriately contextualizes the study (C7-C15), citing relevant prior work. The explanation for why previous studies found small effects (C14\u2014inability to account for interactions) is plausible and supported by the current findings. The citations appear appropriate and accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The rationale for studying metabolomics is that plant organelles are central to primary metabolism, with ~13,000 nuclear genes involved in metabolism (~3,000 targeted to organelles), plus 88 plastid and 121 mitochondrial genes. The Kas \u00d7 Tsu RIL population structure (half with each cytoplasm) enables explicit analysis of cytoplasmic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The justification for using metabolomics is sound (C16) given organellar roles in metabolism. The gene counts (C17, C18) are appropriately cited and provide context for the potential scope of effects. The population structure (C19) is well-suited to the research question, enabling direct comparison of cytoplasmic backgrounds on a common nuclear genetic background.",
+    "result_type": "MINOR"
+  }
+]

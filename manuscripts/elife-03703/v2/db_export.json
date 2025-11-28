@@ -1,0 +1,1602 @@
+{
+  "submission": {
+    "id": "18b5324d-1c12-4d9d-bde8-2b1b08aacab8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:14:46.397824Z",
+    "updated_at": "2025-11-28T21:14:46.397824Z"
+  },
+  "content": [
+    {
+      "id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "submission_id": "18b5324d-1c12-4d9d-bde8-2b1b08aacab8",
+      "content_type": "manuscript",
+      "content_text": "# Selection of chromosomal DNA libraries using a multiplex CRISPR system\n\n## Authors\n\n- Owen W Ryan<sup>1</sup>\n- Jeffrey M Skerker<sup>1</sup>\n- Matthew J Maurer<sup>1</sup>\n- Xin Li<sup>1</sup>\n- Jordan C Tsai<sup>1</sup>\n- Snigdha Poddar<sup>1</sup>\n- Michael E Lee<sup>1</sup>\n- Will DeLoache<sup>1</sup>\n- John E Dueber<sup>1</sup>\n- Adam P Arkin<sup>1</sup>\n- Jamie HD Cate<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Energy Biosciences Institute, University of California, Berkeley Berkeley United States\n2. Department of Bioengineering University of California, Berkeley Berkeley United States\n3. Physical Biosciences Division Lawrence Berkeley National Laboratory Berkeley United States\n4. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n5. Department of Chemistry University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe directed evolution of biomolecules to improve or change their activity is central to many engineering and synthetic biology efforts. However, selecting improved variants from gene libraries in living cells requires plasmid expression systems that suffer from variable copy number effects, or the use of complex marker-dependent chromosomal integration strategies. We developed quantitative gene assembly and DNA library insertion into the Saccharomyces cerevisiae genome by optimizing an efficient single-step and marker-free genome editing system using CRISPR-Cas9. With this Multiplex CRISPR (CRISPRm) system, we selected an improved cellobiose utilization pathway in diploid yeast in a single round of mutagenesis and selection, which increased cellobiose fermentation rates by over 10-fold. Mutations recovered in the best cellodextrin transporters reveal synergy between substrate binding and transporter dynamics, and demonstrate the power of CRISPRm to accelerate selection experiments and discoveries of the molecular determinants that enhance biomolecule function.\n\n## Introduction\n\nDirected evolution using living systems allows selections for improved biomolecule function to be directly coupled to phenotype. However, present directed evolution systems require the use of extrachromosomal gene libraries encoded in bacteriophage or plasmids, which suffer from high levels of copy number variation (Yokobayashi et al., 2002; Turner, 2009; Esvelt et al., 2011). For example, in the yeast Saccharomyces cerevisiae, common yeast centromere containing (CEN) plasmids vary widely in copy number per cell resulting in highly variable expression levels from cell to cell (Figure 1). Ideally, the selective pressure applied to evolve improved or new biomolecule function should be limited to the DNA sequence level and not to gene copy number in a given cell (Zhou et al., 2012). To overcome copy number variation in yeast, the standard genetic tool of integrating linear DNA into the genome by homologous recombination is too inefficient to insert DNA libraries without multiple steps that rely on dominant selectable markers for chromosomal integrations (Wingler and Cornish, 2011) or specialized strain backgrounds (DiCarlo et al., 2013a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03703/elife-03703-fig1-v2.jpg)\n\n**Figure 1.:** Proteins mRuby2 (false-colored red) and Venus (false-colored green) were expressed in the same cell with a strong, PTDH3 promoter. (A) Fluorescent proteins expressed on two separate CEN plasmids; (B) in tandem on a single CEN plasmid; (C) integrated into two different loci (LEU2 and URA3) in the S. cerevisiae genome; and (D) integrated in tandem at a single locus (URA3) in the genome. Each image was auto-exposed for both red and green channels, with yellow showing co-expression of mRuby2 and Venus. The variability in the relative expression of the two fluorescent proteins is reduced by moving from two plasmids to one, and the variability in total expression is reduced by moving to the genome. The difference between integrating into one or two loci in the genome is minimal.\n\nBacterial type II CRISPR-Cas9 genome editing has been used successfully in several eukaryotic organisms (Cong et al., 2013; DiCarlo et al., 2013b; Mali et al., 2013a, 2013b; Shalem et al., 2014) but has not been adapted for selection experiments. Genome editing CRISPR-Cas systems require a Cas9 endonuclease that is targeted to specific DNA sequences by a non-coding single guide RNA (sgRNA) (Jinek, et al., 2012; Jinek et al., 2014). The Cas9-sgRNA ribonucleoprotein complex precisely generates double-strand breaks (DSBs) in eukaryotic genomes at sites specified by a 20-nucleotide guide sequence at the 5\u2032 end of the sgRNA that base pairs with the protospacer DNA sequence preceding a genomic protospacer adjacent motif (PAM) (Sternberg et al., 2014). The presence of the Cas9-produced DSB in genomic DNA can increase the rate of homology-directed repair (HDR) with linear DNA at the DSB locus by several 1000-fold (Storici et al., 2003; DiCarlo et al., 2013b) potentially enabling high-throughput experimental methods. CRISPR-Cas9 could therefore be useful in probing industrial S. cerevisiae strains, which are more robust compared to laboratory strains (Kerr and Service, 2005; Farrell et al., 2006; Rubin, 2008), but for which few genetic tools are available, due to the fact that these strains are often polyploid with low-efficiency mating and sporulation.\n\n## Results\n\nTo optimize the efficiency of HDR in S. cerevisiae mediated by Cas9, we first constructed a plasmid expressing Streptococcus pyogenes Cas9 fused to a nuclear localization signal (Cas9-NLS) that efficiently localizes to the nucleus of yeast cells (Figure 2A,B; Jinek et al., 2012). We used an intermediate strength promoter, PRNR2, to express Cas9 for genome targeting experiments, because Cas9 (Cas9-NLS-His8x) expression from the PRNR2 promoter resulted in yeast strains with near wild type fitness whereas Cas9 expressed using strong yeast promoters such as PTDH3 (Lee et al., 2013) reduced yeast fitness relative to wild type cells (Figure 2C). Second, we designed a new sgRNA architecture in order to improve its expression and function. Cellular levels of sgRNAs correlate with the efficiency of Cas9-mediated genome targeting in mammalian cells (Hsu et al., 2013). Controlled expression of nuclear-localized RNAs and the correlation between sgRNA levels and Cas9-editing in yeast has not been explored. To better control cellular levels of correctly folded sgRNA, we developed a modular design by fusing the sgRNA (Mali et al., 2013a) to the 3\u2032 end of the self-cleaving hepatitis delta virus (HDV) ribozyme (Ke et al., 2007; Webb et al., 2009; Figure 2D). We reasoned that the structured ribozyme would protect the 5\u2032 end of the sgRNA from 5\u2032 exonucleases (Houseley and Tollervey, 2009). Additionally, the HDV ribozyme would cleave the RNA immediately 5\u2032 of the ribozyme, removing extraneous RNA sequences and allowing flexibility in which promoters can be used, such as tRNAs whose DNA sequences also serve as RNA polymerase III promoters (Marck et al., 2006). Ribozyme removal of the tRNA would then separate transcription initiation from within the tRNA sequence (Marck et al., 2006) and tRNA nuclear export (K\u00f6hler and Hurt, 2007) from the process of forming functional sgRNA complexes with Cas9.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03703/elife-03703-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cas9 construct used for nuclear localization experiments. The S. pyogenes Cas9 protein was tagged with a C-terminal nuclear localization motif and a green fluorescent protein (GFP) (green). For genome editing experiments, the S. pyogenes Cas9 protein was tagged with a C-terminal nuclear localization motif and a Histidine affinity tag (gray). (B) Cellular localization of Cas9-GFP in exponentially growing S. cerevisiae cells. The Cas9-GFP protein was expressed from the TDH3 promoter in this experiment. Left, bright field image; right fluorescence microscopy. (C) Growth profiles of yeast expressing Cas9 from a strong promoter PTDH3 (black) or a weaker promoter PRNR2 (blue) relative to wild type (red). (D) The mature sgRNA contains a 5\u2032 hepatitis delta virus (HDV) ribozyme (\u03b4R, brown), 20mer target sequence (green), sgRNA (black) and RNA polymerase III terminator (red). The RNA polymerase III promoter tRNA (blue) is catalytically removed by the HDV ribozyme (red arrow). (E) Schematic of yeast Cas9 targeting. Cas9 and sgRNA are expressed from a single plasmid, form a complex, and cleave targeted genomic DNA, which is repaired using a barcoded oligonucleotide. (F) The linear barcoded repair DNA molecule. Each repair DNA contains a 5\u2032 TAA stop codon (gold), a forward primer sequence (green), a unique molecular barcode (gray), and a 3\u2032 reverse primer (green) (Giaever et al., 2002). Barcodes are amplified using a forward primer that contains 50 bp of homology (blue) to the genome targeting site and a reverse primer that contains 50 bp of homology to the genome targeting site. The 50 bp of genomic targeting sequence are each 10 bp proximal to the PAM motif, resulting in a 20 nt deletion and barcode oligonucleotide integration.\n\nTo quantify the efficiency and specificity of HDR with the new Cas9/sgRNA format, phenotype screens were performed by the co-transformation of a single plasmid that expresses the Cas9 protein and one or more HDV ribozyme-sgRNAs, containing a 20-nucleotide guide sequence that matches a specific site in the yeast genome, along with a linear double-stranded DNA (Figure 2E). The linear dsDNA, which contains a unique 20-mer barcode (Giaever et al., 2002) flanked by common primer sequences and 50 base pairs of DNA homologous to the regions proximal to the PAM motif (Figure 2F), acts as a template for DNA repair by HDR, resulting in a unique markerless and barcoded insertion allele. With a single sgRNA, we found tRNA sequences used as RNA polymerase III promoters resulted in nearly 100% efficient barcode insertion in diploid yeast at the URA3 locus, resulting in 5-fluororotic acid resistance (Boeke et al., 1984) whereas the non-tRNA promoters were mostly ineffective (Figure 3A; Supplementary file 1A). We also assessed target sequence bias by targeting 11 unlinked yeast genes in diploid S288C yeast cells using tRNATyr as the RNA polymerase III promoter (Supplementary file 2A). We found that targeting was highly efficient for every genomic target except LEU2, which at first was weak but was restored to 100% by selecting a different guide sequence (LEU2-2) as the sgRNA (Figure 3B). We also verified that our CRISPR-Cas9/sgRNA system did not result in non-specific genome targeting by sequencing 9 of the targeted strains (Supplementary file 1B). We also tested efficacy of our approach in the polyploid industrial S. cerevisiae strain ATCC4124 that has superior tolerance and productivity phenotypes (Ness et al., 1993). The non-tRNA promoter previously used in haploid yeast (DiCarlo et al., 2013b), PSNR52, functioned in diploid S288C yeast but failed to result in targeting in the polyploid industrial yeast ATCC4124; in contrast, the tRNAPro promoter enabled highly-efficient barcode insertion into all copies of the URA3 locus in ATCC4124, which we term cis-multiplexing, that is introducing a double-stranded DNA break at a single genomic locus across all chromosomes (Figure 3C; Supplementary file 1A). Notably, tRNATyr was inefficient at targeting in ATCC4124 though it was effective in S288C diploid (Supplementary file 1A), indicating that the choice of tRNA used for the expression of the HDV-sgRNA impacts multiplexing in a strain-dependent manner.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03703/elife-03703-fig3-v2.jpg)\n\n**Figure 3.:** (A) Targeting efficiency at the URA3 locus in diploid S288C yeast using RNA polymerase III promoters (x axis) to drive the expression of the sgRNA. (B) Targeting efficiency measured across 11 loci in 10 genes in diploid cells of yeast strain S288C, using the tRNATyr promoter. (C) Single fragment barcode integration (blue) and three-fragment NatR cassette integration (yellow) efficiency in S288C diploid and ATCC4124 polyploid strains. For each experiment the promoter and strain are indicated as promoter-strain (e.g., SNR52-S288C). (D) Efficiency of multiplex insertion of barcoded DNA in diploid yeast cells with the 5\u2032 HDV ribozyme (black) and without the 5\u2032 HDV ribozyme (red). Triplex targeting without the 5\u2032 HDV ribozyme was not tested. The tRNATyr promoter was used in these experiments. (E) The addition of a 5\u2032 HDV ribozyme increases the intracellular levels of sgRNA by sixfold. The RT-qPCR experiments were carried out in biological triplicate, with the mean and standard deviation shown. (F) Efficiency of targeting one (URA3), two (URA3, LYP1) and three (URA3, LYP1 and COX10) in haploid S288C yeast cells. The tRNATyr promoter was used for sgRNA expression.\n\nSince the efficiency of cis-multiplexing with our CRISPR-Cas9/sgRNA system is nearly 100% using one sgRNA, we next tested its ability for trans-multiplexed CRISPR-Cas9 genome editing, that is introducing double-stranded DNA breaks at multiple genomic loci simultaneously, using tRNAs to drive the expression of the HDV-sgRNAs. We simultaneously targeted two and three unlinked genomic loci in diploid cells for loss-of-function mutagenesis by introducing a single plasmid expressing Cas9 and two or three sgRNAs with two or three gene-specific barcoded DNA molecules, respectively. The efficiency of duplex and triplex targeting (requiring four and six chromosome cuts, respectively) with two sgRNAs (URA3 and LYP1) or three (URA3, LYP1 and COX10) was 43% and 19%, respectively (Figure 3D; Supplementary file 1A). This multiplexed efficiency was dependent on the presence of the HDV ribozyme 5\u2032 of the guide sequence as duplex targeting dropped to 3.5% in cells with sgRNA lacking the 5\u2032 HDV ribozyme (Figure 3D; Supplementary file 1A). We measured the relative cellular abundance of sgRNAs expressed by PSNR52, with and without the 5\u2032 HDV ribozyme, by reverse transcription quantitative polymerase chain reaction (RT-qPCR) and found that the presence of the ribozyme increases the intracellular abundance of the sgRNAs by sixfold (Figure 3E), consistent with the model that sgRNA abundance is rate limiting for CRISPR/Cas targeting (Hsu et al., 2013). Haploid trans-multiplexing showed a minimal loss in activity scaling from one to three loci (up to three chromosome cuts) (Figure 3F; Supplementary file 1A). These experiments demonstrate that our multiplexed CRISPR/Cas9 system, which we term CRISPRm, is powerful enough to generate multiple marker-free targeted mutations in the yeast genome in a single experiment and that the 5\u2032 tRNA-HDV ribozyme sequence is required for higher order multiplex targeting.\n\nHaving established CRISPRm for cis- and trans-multiplex targeting, we next tested its capabilities in engineering genes and pathways integrated in the yeast genome. We first tested whether CRISPRm could be used to assemble foreign genes as chromosomal integrations. We tested the efficiency of in vivo assembly of a functional nourseothricin-resistance (NatR) gene from three overlapping PCR products encoding a transcription promoter, protein open reading frame (ORF) and transcription terminator at a single locus using cis-multiplexing in the diploid S288C strain. The efficiency of Cas9-mediated integration and assembly of these three DNA fragments to the correct (URA3) locus was measured by a combination of 5-fluoroorotic acid resistance (5-FOAR) and NatR. We found 85% efficiency of targeting and assembly in both copies of the URA3 locus in diploid yeast S288C cells, and 70% in polyploid ATCC4124 by using the tRNAPro sequence as the sgRNA promoter (Figure 3C; Supplementary file 1A), whereas PSNR52-dependent targeting was weaker in S288C cells and non-existent in ATCC4124 cells (Figure 3C; Supplementary file 1A). Thus, CRISPRm enables the one-step markerless assembly of functional genes from multiple fragments into the S. cerevisiae genome, resulting in homozygous insertions into both diploid and polyploid yeast strains.\n\nFinally, we tested whether CRISPRm could be used for in vivo selections of improved protein function. We targeted a cellodextrin utilization pathway from the cellulolytic fungus Neurospora crassa, comprised of the cellodextrin transporter (cdt-1) and an intracellular \u03b2-glucosidase (gh1-1), to assemble in vivo in diploid S. cerevisiae. In combination, these two genes result in yeast cells capable of consuming the disaccharide cellobiose, which could be used to improve biofuel production (Galazka et al., 2010). To select for improved cellobiose utilizing strains we used error-prone PCR to amplify the cdt-1 gene. We co-transformed the library of mutated cdt-1 alleles, along with overlapping dsDNA fragments for the promoter and terminator, for assembly and integration into the URA3 locus (ura3::PPGK1-cdt-1-TADH1 library) of a diploid strain with a previously integrated \u03b2-glucosidase gh1-1 gene (lyp1::PTDH3-gh1-1-TCYC1) using CRISPRm. We then grew the transformants in medium containing cellobiose as the sole carbon source to select for functional cdt-1 alleles and identified one strain with 2.6-fold (homozygous cdt-1 N209S/I354N/S360P/T406S/W531L allele) and one strain with 1.7-fold (homozygous cdt-1 Q45H/F262Y/F533Y allele) increased cellobiose utilization capacity over wild type cdt-1 (Figure 4A). The mutations were mapped in CDT-1 onto structures of the homologous major facilitator superfamily (MFS) hexose-like transporters XylE from Escherichia coli (Sun et al., 2012) and GlcP from Staphylococcus epidermidis (Iancu et al., 2013) (Figure 4B). Notably, one site maps to a site that likely interacts directly with the sugar substrate (N209S) (Figure 4B). Whereas two mutations in the second allele (Q45H, F533Y) map to non-conserved regions of the transporters, one (F262Y) maps to a site immediately adjacent to the nearly universally-conserved PESPR motif in hexose transporters that is involved in transporter dynamics (Sun et al., 2012). Furthermore, the mutation from phenylalanine to tyrosine results in an expanded motif (PESPRY) that is present in all of the major hexose transporters in S. cerevisiae (Figure 4B). We then used CRISPRm to introduce the N209S mutation (nucleotide G626A) in the cdt-1Q45H/F262Y/F533Y diploid yeast background. The quadruple mutant cdt-1 allele resulted in synergistic cellobiose utilization with 3.9-fold increased growth over strains expressing wild-type cdt-1 (Figure 4A). We next tested the selected cdt-1 alleles in anaerobic fermentations using cellobiose as the sole carbon source. We constructed a cdt-1N209S/F262Y double-mutant in diploid yeast using CRISPRm, and compared it to wild-type cdt-1 and the cdt-1Q45H/N209S/F262Y/F533Y quadruple mutant. We found that wild-type cdt-1 integrated into the chromosome was barely able to support cellobiose fermentation (Figure 4C). By contrast, the cdt-1Q45H/N209S/F262Y/F533Y quadruple mutant or the cdt-1N209S/F262Y double-mutant expressed from the chromosome resulted in complete fermentation of cellobiose, comparable to wild-type cdt-1 expressed from a high-copy 2\u00b5 plasmid (Figure 4C; Ha et al., 2011).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03703/elife-03703-fig4-v2.jpg)\n\n**Figure 4.:** (A). Utilization of cellobiose in CRISPRm-engineered diploid yeast strains. S288C wild type cdt-1\u2212 (black), cdt-1 (blue), cdt-1Q45H/F262Y/F533Y (indicated as cdt-1F262Y* on the figure, gray), cdt-1N209S/I354N/S360P/T406S/W531L (indicated as cdt-1N209S* on the figure, green) and cdt-1N209S+Q45H/F262Y/F533Y (indicated as cdt-1N209S+F262Y* on the figure, red). (B) Location of mutations at conserved sites in the evolved CDT-1 transporter structure. The mutated residues are colored magenta in the top figure, and are mapped onto the E. coli XylE transporter in the outward-facing configuration bound to glucose (upper panels and lower left, PDB entry 4GBZ), and onto the S. epidermidis GlcP transporter in the inward-facing configuration (lower right, PDB entry 4LDS). Amino acids in parentheses are the sequences in XylE or GlcP. (C) Fermentation of cellobiose by wild-type cdt-1 expressed from a chromosomally-integrated copy in diploid S288C yeast. Cellobiose is indicated as G2, ethanol as EtOH. The rate of cellobiose consumption was 0.13 g L\u22121 hr\u22121. (D) Fermentation of cellobiose by mutant versions of cdt-1 expressed from chromosomally-integrated copies. Glucose consumption (gray) was identical in both strains. The rate of cellobiose consumption for both strains was over 2.0 g L\u22121 hr\u22121. In (C and D), values and error bars represent the means and standard deviations of three independent biological replicates.\n\n## Discussion\n\nWe have demonstrated that CRISPRm can be used to quickly generate markerless loss-of-function alleles, heterologous insertion alleles, allele swaps and engineer proteins in yeast by in vivo selections for greatly improved metabolic activity. Although we selected for improved protein function, as suggested by the location of the mutations in CDT-1 (Figure 4B), it is also possible that selection enriched for sequences that confer improved mRNA stability or translation efficiency, due to the fact that the selection was carried out in vivo. Future experiments will be needed to distinguish between these possibilities.\n\nCRISPRm could be used to integrate DNA libraries to interrogate cis-regulatory elements such as transcription promoters, 5\u2032- and 3\u2032-untranslated regions (5\u2032-UTRs and 3\u2032-UTRs) in mRNAs, or riboswitches. CRISPRm enables these types of experiments because it allows for near quantitative integration of DNA libraries, which can be a single fragment or complex assemblies of multiple fragments. This could enable integration and selection of multi-gene pathways, or specific mutation and selection of subsets of a protein or multiple DNA-encoded functions.\n\nThe ability to use chromosomally-integrated DNA libraries removes a key limitation in in vivo selection experiments by eliminating biomolecule expression variation due to variable plasmid copy numbers. Although we used a relatively small library size in the present experiments, even in this small library we observed impressive gains in transporter function. We observed 2\u20133 mutations per kilobase in the selected transporter genes, resulting in 3\u20135 amino acid substitutions per transporter. We were then able to combine the mutations in a single transporter with superior fermentation performance. Library sizes introduced by CRISPRm should be scalable to the limits of transformation efficiency, to 107 or larger (Kawai et al., 2010). CRISPRm should also enable multiple rounds of selection for directed evolution experiments. We envision that each cycle would involve error-prone PCR of the gene of interest, either from a starting sequence or an enriched and improved cell population, followed by CRISPRm-mediated integration of the amplified gene and selection. This cycle would compare favorably with that required for plasmid-based selections, yet would avoid the problem of plasmid copy number variation. CRISPRm should also be adaptable to screens that rely on sorting large populations of cells, that is by fluorescence-activated cell sorting. We envision that CRISPRm could improve the discovery of human therapeutics by yeast display (Krugel et al., 1988), and could be used to map the importance of protein\u2013protein interactions (Ovchinnikov et al., 2014) via multiplexed library insertion.\n\nTo achieve high efficiency multiplexing with CRISPRm, we found it was necessary to modify the sgRNA design by including a 5\u2032 HDV ribozyme, and to assay multiple RNA polymerase III promoters for a given strain background. The ease of discovering tRNAs in any genome and the universality of the sgRNA construct means that, with few modifications, CRISPRm can be used directly in non-model fungal hosts, such as pathogens or organisms used in the biotechnology industry. The genetics of many of these organisms have not been studied in any depth due to the technological limitations of available genetic manipulation techniques. For example, industrial S. cerevisiae strains are more stress tolerant and produce much higher yields of desired biofuel or renewable chemical end products than laboratory strains (Kerr and Service, 2005; Farrell et al., 2006; Rubin, 2008). However, linking genotypes of industrial yeasts to their phenotypes remains difficult. CRISPRm should serve as a rapid and high throughput means for connecting the genotypes of these organisms to their phenotypes, that is for generating marker-free barcoded alleles for large-scale pooled fitness studies of loss-of-function mutants in these organisms (Giaever et al., 2002). In the future, CRISPRm may also be applicable to interrogating mammalian cells, if the levels of HDR are sufficiently high. Finally, the ability to use CRISPRm for multiplexed targeting paves the way for applying directed evolution to cellular pathways and genetic circuits for higher order synthetic biology applications in any host strain.\n\n## Materials and methods\n\n### Cloning the pCAS plasmid backbone\n\nGibson Assembly Mastermix (E2611L) (New England Biolabs, Ipswich, MA) (Gibson et al., 2009) was used to fuse the KANMX (Yeastdeletionpages.com) cassette to the pUC bacterial origin of replication from pESC-URA (Agilent Technologies, Santa Clara, CA). Restriction\u2014free (RF) (van den Ent and L\u00f6we, 2006) cloning was used to add a yeast 2\u00b5 origin of replication from pESC-URA to the pCAS backbone. The resulting pCAS backbone plasmid was propagated in yeast to confirm functionality.\n\n### Cas9 expression constructs\n\nThe Cas9 gene from S. pyogenes was amplified from clone MJ824 (Jinek et al., 2012) and cloned into the pCAS backbone plasmid by RF cloning. A yeast nuclear localization signal (NLS) sequence, codon optimized using IDT software (Integrated DNA Technologies, Coralville, IO), was then cloned into the plasmid by RF cloning. Additional elements fused by RF cloning to the Cas9-NLS sequence included the GFP gene, the CYC1 terminator from S. cerevisiae strain S288c (Yeastgenome.org) and the promoters (800 base pairs upstream) from the genes TDH3, TEF1, RNR2 and REV1, also taken from strain S288c (Lee et al., 2013). For genome editing experiments, the GFP sequence was removed from the Cas9 gene and replaced with a C-terminal His8 affinity tag, by RF cloning.\n\n### Engineering of sgRNA constructs\n\nSynthetic DNA (Integrated DNA Technologies, Coralville, IO) for the sgRNA and for a catalytically active form of the Hepatitis Delta Virus (HDV) Ribozyme was sequentially cloned by RF cloning into the Cas9 containing vector (pCAS). The terminator (200 bp) of SNR52 (Yeastgenome.org) was cloned 3\u2032 of the ribozyme-sgRNA sequence by RF cloning. A series of RNA polymerase III (Pol III) promoters were PCR amplified from S288c genomic DNA and cloned 5\u2032 of the ribozyme-sgRNA sequence by RF cloning. The tRNA promoters included the full-length tRNA plus 100 base pairs upstream of the tRNA gene (Supplementary file 1C). The sgRNAs used for multiplex targeting were PCR amplified using primers containing 5\u2032 and 3\u2032 restriction sequences and sub-cloned into pCAS by ligation dependent cloning into SalI, SpeI and SacII unique restriction sites.\n\n### Yeast strains used in this study\n\nS. cerevisiae strain S288c (204508; ATCC) (American Type Culture Collection, Manassas, VA) was used as the haploid, and then mated to form the homozygous diploid for the diploid experiments. Yeast strain ATCC4124 is an industrial polyploid yeast isolated from a molasses distillery, and was obtained from ATCC (American Type Culture Collection, Manassas, VA).\n\n### Cas9-GFP localization and expression\n\nExpression and localization of Cas9-GFP was verified by imaging haploid S. cerevisiae S288c cells transformed with pCas9-GFP::KAN using fluorescence microscopy (Leica Epifluorescence, Leica Microsystems, Buffalo Grove, IL). Cells were grown overnight and nuclear localization visualized at 100\u00d7 magnification.\n\n### Fitness analysis of Cas9 expressed by different promoters\n\nYeast cells containing pCAS (Cas9-His8 variant) were grown in a Bioscreen C Growth Curve Analyzer (Growth Curve USA, Piscataway, NJ) in 200 \u00b5l of YPD + G418 liquid medium (20 g/l Peptone [211667; Bacto], 10 g/l Yeast Extract [212750; Bacto], 0.15 g/l Adenine hemisulfate [A9126; Sigma] and 20 g/l Glucose [G8270; Sigma] + 200 mg/l G418 [29065A; Santa Cruz Biotechnology]). Cells were grown in three biological replicates each with five technical replicates for 48 hr at 30\u00b0C under constant shaking. The wild-type control containing an empty vector (pOR1.1) was also grown in five technical replicates. Mean and standard deviations of the optical density at 600 nm were calculated for each time point measured by the Bioscreen.\n\n### CRISPR-Cas9 screening protocol\n\nThe Cas9 transformation mix consisted of 90 \u00b5l yeast competent cell mix (OD600 = 1.0), 10.0 \u00b5l \u00d7 10 mg/ml ssDNA (D9156; Sigma, St. Louis, MO), 1.0 \u00b5g pCAS plasmid, 5.0 \u00b5g of linear repair DNA and 900 \u00b5l Polyethyleneglycol2000 (295906; Sigma), 0.1 M Lithium acetate (517992; Sigma) 0.05 M Tris\u2013HCl (155568; Invitrogen) EDTA (10618973; Fisher Scientific). To measure Cas9 independent integration, the linear DNA was co-transformed with a plasmid lacking the Cas9 protein and sgRNA (pOR1.1) (Supplementary file 2B). Cells were incubated 30 min at 30\u00b0C, and then subjected to heat shock at 42\u00b0C for 17 min. Following heat shock, cells were re-suspended in 250 \u00b5l YPD at 30\u00b0C for 2 hr and then the entire contents were plated onto YPD+G418 plates (20 g/l Peptone, 10 g/l Yeast Extract, 20 g/l Agar, 0.15 g/l Adenine hemisulfate, 20 g/l Glucose and G418 at 200 mg/l). Cells were grown for 48 hr at 37\u00b0C, and colonies imaged using the Biorad ChemiDoc Imager (Biorad, Hercules, CA) before replica plating onto phenotype-selective media. The guide sequences in the sgRNAs used for targeting the various loci are shown in Supplementary file 1D. URA3 mutants were selected on 2.0 g/l Yeast nitrogen base without amino acids or ammonium sulfate (Y1251; Sigma), 5.0 g/l Ammonium sulfate (A4418; Sigma), 1.0 g/l CSM (4500-012; MP Biosciences), 20 g/l Glucose, 20 g/l Agar + 5-fluoroorotic acid (1 g/l) (F-230-25; Goldbio); LYP1 mutants were selected on 2.0 g/l Yeast nitrogen base without amino acids or ammonium sulfate, 5.0 g/l Ammonium sulfate, 1.0 g/l CSM-lysine (4510-612; MP Biosciences), 20 g/l Glucose, 20 g/l Agar + thialysine (100 mg/l) (A2636; Sigma); CAN1 mutants were selected on 2.0 g/l Yeast nitrogen base without amino acids or ammonium sulfate, 5.0 g/l Ammonium sulfate, 1.0 g/l CSM-arginine (4510-112; MP Biosciences), 20 g/l Glucose, 20 g/l Agar + canavanine sulfate (50 mg/l) (C9758; Sigma); the remaining auxotrophic mutants were selected on 2.0 g/l Yeast nitrogen base without amino acids or ammonium sulfate, 5.0 g/l Ammonium sulfate, 1.0 g/l CSM , 20 g/l Glucose, 20 g/l Agar; and aerobic respiration deficient mutants (petites) were selected on 20 g/l Peptone, 10 g/l Yeast Extract, 20 g/l Agar, 0.15 g/l Adenine hemisulfate, 20 g/l Glycerol (G5516; Sigma). Colonies from the YPD+G418 plates were picked and grown overnight in 0.8 ml of YPD. Genomic DNA was extracted from these cultures using the MasterPure Yeast DNA Extraction Kit (MPY80200; Epicentre). PCR confirmation of the 60-mer integration allele was performed using primers flanking the target site. PCR products were purified by Exo-SAP-IT (78201; Affymetrix) and Sanger sequenced at the UC Berkeley, Sequencing Facility (Berkeley, CA) to confirm barcode sequence in the amplicon.\n\n### RT-qPCR of sgRNAs\n\nCells containing the pCAS plasmid with sgRNA inserts were grown in 900 \u00b5l of YPD+G418 medium for 24 hr at 30\u00b0C and 750 rpm. Total RNA was extracted from exponentially growing yeast cells using Ambion RNA RiboPure Yeast Kit (AM1926) (Life Technologies, Carlsbad, CA). RT-qPCR was performed on the Applied Biosciences StepOne Real-Time PCR System (Applied Biosystems, Foster City, CA) using the Invitrogen EXPRESS One-Step SYBR GreenER Kit (Life Technologies, Carlsbad, CA). The RT-qPCR expression level data was quantified using the Comparative CTT (\u0394\u0394CT) method and relative abundance of the sgRNA was normalized to the mRNA transcript UBC6, which was used as the endogenous control (Teste et al., 2009). The primer sequence used for the RT reaction was 5\u2032-AAAAGCACCGACTCGGT-3\u2032 and the additional q-PCR primer used was 5\u2032-GTTTTAGAGCTAGAAATAGCAAG-3\u2032. The primers used for the UBC6 endogenous control were (RT) 5\u2032-CATTTCATAAAAAGGCCAACC-3\u2032 and (qPCR) 5\u2032-CCTAATGATAGTTCTTCAATGG-3\u2032. DNA sequences for the sgRNAs used to test HDV ribozyme function are shown in Supplementary file 2C and Supplementary file 2D.\n\n### Multiplex genome targeting by Cas9\n\nMultiplex targeting was performed as described above using pCAS plasmids containing more than one sgRNA expression construct cloned into one of the restriction sites by ligation dependent cloning. Single vs double mutant efficiency was scored relative to the number of colonies present on the YPD+G418 plate. Genomic DNA isolation and PCR of the integration site was performed as described above.\n\n### Multiplex in vivo assembly of DNA using Cas9\n\nDrug resistance cassettes were assembled in vivo from three linear double-stranded DNA fragments PCR amplified from the Ashbya gossypii TEF1 promoter (AgPTEF1), the nourseothricin open reading frame (NatR) and A. gossypii TEF1 (AgTTEF1) terminator in separate reactions. The primers used to amplify the promoter and terminators contained 50 bp of homology to the nourseothricin ORF and 50 bp of homology to the genomic target. Colonies exhibiting drug resistance (nourseothricin 100 mg/l) (N-500-1; Goldbio) following replica plating were compared to the number of colonies on the YPD+G418 to determine efficiency of multiplex assembly.\n\n### Selection of improved variants of cellodextrin transporter CDT1\n\nTo generate CDT1 mutant allele libraries, the GeneMorph II Random Mutagenesis Kit (200550; Aglient) (Agilent Technologies, Santa Clara, CA) was used to amplify the N. crassa cdt-1 open reading frame. The library of cdt-1 mutant alleles was co-transformed with PCR-amplified linear dsDNA fragments encoding the ScPPGK1 promoter and ScTADH1 terminator into a diploid S288c yeast strain containing a previously-integrated gh1-1 gene. The gh1-1 gene included the ScPTDH3 promoter, the N. crassa gh1-1 open reading frame and ScTCYC1 terminator. The primers used to amplify the promoters and terminators contained 50 bp of homology to either the cdt-1 or gh1-1 ORFs and 50 bp of homology to the respective the genomic targets. 5 \u00b5g of each of the three PCR products (promoter, open reading frame, terminator) were co-transformed with the pCAS plasmid containing the URA3 guide sequences and screened for G418 resistance as described. Approximately 1600 G418-resistant colonies were pooled and resuspended in minimal cellobiose medium (SCel) (2.0 g/l Yeast nitrogen base without amino acids or ammonium sulfate, 5.0 g/l Ammonium sulfate, 1.0 g/l CSM, 20 g/l Cellobiose). Resuspended cells were immediately spread evenly on SCel plates for initial analysis prior to cellobiose selection (t = 0 samples). Ten microliters of the resuspended cells were inoculated in 50 ml of SC medium in biological triplicate. Cells were harvested after 3 days and spread onto SCel plates. Cells were grown at 30\u00b0C for 4 days, and the largest colonies were chosen for further analysis.\n\n### Tecan growth analyzer and fitness calculation of cdt-1 alleles\n\nCells were grown overnight in 0.5 ml of Synthetic Dextrose (2%) (SD) in 96 well plates. Cultures were diluted 1:500 in SCel media (4% cellobiose) and 150 \u00b5l were grown using the Tecan Sunrise (Tecan Systems Inc., San Jose, CA) in biological triplicate for 3 days at 30\u00b0C. Average and standard deviation was calculated for each biological sample. Relative fitness was calculated by measuring area between the curves (ABC) which normalizes growth to the area under the curve (AUC) for diploid cells lacking cdt-1 (ABC = AUC cdt-1+\u2212AUC cdt-1\u2212). Fold cellobiose utilization capacity = (ABC cdt-1S209/ABC cdt-1).\n\n### Generating the double mutant and quadruple cdt-1 alleles\n\nIntegration of the repair oligonucleotide into the chromosomal wild-type cdt-1 gene or cdt-1Q45H/F262Y/F533Y was performed as described for integrating barcoded DNA. The sgRNA sequence used to target the wild type allele of cdt-1 was cloned into the pCAS vector with the sequence 5\u2032-TGCACTGGCTTCTACAACTG-3\u2032. The repair oligonucleotide used to make the A626G (i.e., N209S) mutation was 5\u2032-CGGCCGCTGCACTGGCTTCTACAGCTGCGGTTGGTTCGGAGGTTCATTCCTGCCGCCTG-3\u2032 with 50 more base pairs of homology to cdt-1, on both sides of the above oligonucleotide. Genomic DNA was extracted as described and Sanger sequencing confirmed the incorporation of the A626G mutation. Similarly, the T785A mutation (F262Y) was incorporated into the cdt-1N209S allele using an sgRNA with guide sequence 5\u2032-CCTCGCTTCCTATTTGCCAA-3\u2032, and a repair oligonucleotide with sequence 5\u2032-AGAATCCCCTCGCTACCTATTTGCCAACGGCCGCGACGCTGAGGCTGTTGCCTTTCTTGT-3\u2032. Genomic DNA was extracted as described and Sanger sequencing confirmed the incorporation of the T785A mutation.\n\n### Structural analysis of cdt-1N209S/Q45H/F262Y/F533Y\n\nThe sequences of N. crassa CDT-1 (accession XP_963801), E. coli XlyE (accession YP_492174.1), and S. epidermidis GlcP glucose transporter (accession ZP_04818045.1) were aligned with the MUSCLE algorithm (Edgar, 2004). Figures were prepared with the PyMol molecular graphics system (http://www.pymol.org/).\n\n### Imaging of integrated and plasmid based fluorescent proteins\n\nStrain yML068 was generated by integrating a short DNA \u2018spacer\u2019 sequence and Leu2 into the LEU2 locus of BY4741. Strain yML069 was generated by integrating PTDH3-mRuby2-TTDH1 and Ura3 into the URA3 locus, and integrating PTDH3-Venus-TTDH1 and Leu2 into the LEU2 locus of BY4741. Strain yML104 was generated by integrating PTDH3-mRuby2-TTDH1-PTDH3-Venus-TTDH1 and Ura3 into the URA3 locus of yML068. Plasmid pML1350 is a Ura3 CEN6/ARS4 plasmid with PTDH3-mRuby2-TTDH1. pML1362 is a Leu2 CEN6/ARS4 plasmid with PTDH3-Venus-TTDH1. pML1177 is a Ura3 CEN6/ARS4 plasmid with PTDH3-mRuby2-TTDH1-PTDH3-Venus-TTDH1.\n\nSynthetic defined media lacking leucine and uracil (SD-LU) was made by adding 6.7 g/l Difco Yeast Nitrogen Base without amino acids; 2 g/l Drop-out Mix Synthetic Minus Leucine, Uracil without Yeast Nitrogen Base (US Biological); and 20 g/l Dextrose to distilled water.\n\nColonies were picked into SD-LU media and grown to exponential phase at 30\u00b0C. Cultures were concentrated by centrifugation, spotted onto plain glass slides, and examined on a Zeiss Observer D1 microscope using a 100\u00d7 DIC objective. Images were captured using a Hamamatsu Orca-flash 4.0 (C11440) camera using auto-exposure. Fluorescence images were taken using an X-Cite Series 120 lamp, Zeiss filter set 45 (excitation at 560/40 nm and emission at 630/75 nm) for mRuby2, and Zeiss filter set 46 (excitation at 500/20 nm and emission at 535/30 nm) for Venus. Images were analyzed and composites were created using Fiji (http://fiji.sc).\n\n### Illumina sequencing to identify potential off-target mutations\n\nTo rule out that our CRISPR-Cas9/sgRNA system resulted in non-specific genome targeting, we performed whole genome sequencing for URA3 and LYP1 targeted strains and searched for insertion/deletions (INDELs), single nucleotide polymorphisms (SNPs) and multi-nucleotide polymorphisms (MNPs). We identified 21 sequence variants across the nine URA3 and LYP1 targeted strains (Supplementary file 1B). Whole genome sequencing was performed by the UC Davis Genome Center (Davis, CA) using the Illumina MiSeq platform (Illumina, Hayward, CA) to produce 150 bp paired-end reads. The software package versions used for sequencing data analysis were as follows: BWA (v. 0.7.5ar405), Picard (v. 1.92[1464]), SAMtools (v. 0.1.19-44428cd) and the GATK (2.7-2-g6bda569). The S288C reference genome (v. R64-1-1, release date 3 Feb 2011) was obtained from the Saccharomyces Genome Database (yeastgenome.org) and prepared for use in sequencing data analysis with bwa index, CreateSequenceDictionary from Picard, and samtools faidx. Sequencing reads were processed with Scythe (v. 0.991) to remove adapter contamination and Sickle (v. 1.210) to trim low quality bases. Processed reads were mapped to the S288C reference genome using bwa mem with the\u2014M option for picard and GATK compatibility. The mapped reads were sorted with SortSam and duplicate reads were marked with MarkDuplicates from Picard. Read alignments were refined by performing local realignment with the RealignerTargetCreator and IndelRealigner walkers from the GATK on all samples collectively.\n\nVariant detection for both SNPs and INDELs was performed with GATK's UnifiedGenotyper, with parameters adjusted for haploid genomes and no downsampling of coverage, for each sample independently. The resulting SNP and INDEL calls were filtered with the VariantFiltration walker from GATK (see header of the VCF file, supplemental VCF file, for details). A custom Perl script (Supplementary file 3) was written to identify all GG dinucleotide sequences in the S288C reference genome, extract every Cas9 target sequence (i.e., 20 nt sequence corresponding to the 20 nucleotides immediately 5\u2032 of the \u2018NGG\u2019 PAM site), and obtain the genome coordinates ranging from 30 nucleotides upstream and downstream of the PAM site. Cas9 target sequences were added to VCF files as custom annotations using snpEff (v3.3h), and SnpSift (v3.3h) was used to extract desired fields into tables for analysis with a custom R script (Supplementary file 4). Needleman\u2013Wunsch global alignments between our guide sequences and Cas9 target sequences were performed using the pairwiseAlignment function (Biostrings package, Bioconductor) in R, with a substitution matrix of \u22121 for mismatches and 2 for matches, produced with the nucleotideSubstitutionMatrix function (Biostrings package, Bioconductor). The probability of there being a better match for the guide sequence to a given Cas9 target sequence was calculated as the frequency of Cas9 target sequences with better alignments to the same guide sequence, amongst 10,000 randomly selected Cas9 target sequences. To compile counts of all variants and various subclasses, a GATKReport was generated from the VCF files with GATK's VariantEval walker, read into R using the \u2018gsalib\u2019 library, and the desired categories were extracted with a custom R script (Supplementary file 4).\n\nWithout the repair DNA template required for HDR, the majority of mutations caused by Cas9 are expected to be INDELs, SNPs or MNPs that initiate within the protospacer sequence, which is the 20 nucleotide (nt) sequence 5\u2032 of the PAM (Fu et al., 2013). Therefore, for completeness, we searched for all PAM sites within 30 nt upstream and downstream for each of the 21 variants. We then compared the 20 nt URA3 and LYP1 guide sequences to the putative protospacer sequences within the regions flanking each variant. An end-to-end alignment identified 10 or fewer nucleotide matches between the URA3 or LYP1 guide sequences and the variant sequences (Supplementary file 1B). Cas9 requires at least 12 perfect base pair matches within the guide-target sequence (Hsu et al., 2013) so it is highly unlikely that the URA3 and LYP1 guide sequences directed Cas9 to any of these potential protospacers that lie within variant sites. These mutations likely arose as natural variants during the course of the experiment.\n\nAs a second method to evaluate the likelihood of off-target mutations, we performed local alignments of our guide sequences to all Cas9 target sequences whose PAM site was within 30 nucleotides upstream and downstream of a detected variant, as well as to 10,000 randomly selected Cas9 target sequences from the genome. Since our guide sequences are expected to have a better match to 13% or more of all Cas9 target sequences (\u223c126,000 or more sites) than to the best matching Cas9 target sequence with a nearby variant, and the number of nucleotide matches in end-to-end alignments is at most 10, we argue that the variants identified in the genomes of URA3- and LYP1-targeted strains are unlikely the result of off-target Cas9 modifications.\n\n### Anaerobic fermentations\n\nYeast strain colonies were inoculated in 20 ml of oMM (optimized minimal media) (Yuping Lin, personal communication) with 2% glucose in 50 ml Falcon tubes and grown aerobically at 30\u00b0C to saturation for 24 hr. The oMM contained 1.7 g/l YNB (Y1251; Sigma, Saint Louis, MO, USA), 2\u00d7 CSM, 10 g/l (NH4)2SO4, 1 g/l MgSO4.7H2O, 6 g/l KH2PO4, 100 mg/l adenine hemisulfate, 10 mg/l inositol, 100 mg/l glutamic acid, 20 mg/l lysine, 375 mg/l serine and 0.1 M 2-(N-morpholino) ethanesulfonic acid (MES) pH 6.0. The saturated cultures were then inoculated to starting OD600 of 0.2 in 500 ml of oMM with 2% glucose in 1 l Erlenmeyer flasks and grown aerobically at 30\u00b0C to mid-log phase at a final OD600 of 2.5. Cells were harvested and washed twice with sterile ddH2O. The washed cells were then inoculated at OD600 of 20 in 50 ml oMM with 1% glucose and 8% cellobiose in 125 ml serum flasks. After inoculation, the flasks were sealed with rubber stoppers and clamped with an aluminum seal. To achieve anaerobic conditions, the headspaces of the sealed flasks were purged with nitrogen gas for 30 min. These were then cultivated at 30\u00b0C and 220 rpm.\n\nUsing sterile needles and syringes, 1 ml samples were removed through the rubber stoppers at the indicated time points. The cells were pelleted and 5 \u03bcl of the supernatants were analyzed for cellobiose, glucose, glycerol, and ethanol content by high performance liquid chromatography on a Prominence HPLC (Shimadzu, Kyoto, Japan) equipped with Rezex RFQ-FastAcid H 10 \u00d7 7.8 mm column. The column was eluted with 0.01 N of H2SO4 at a flow rate of 1 ml/min, 55\u00b0C.\n",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "058218a2-05b9-4b71-9be5-9ea87b20fa0c",
+      "submission_id": "18b5324d-1c12-4d9d-bde8-2b1b08aacab8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elisa Izaurralde, Max Planck Institute Development Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03703.011](https://doi.org/10.7554/eLife.03703.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cEvolution of chromosomal DNA libraries using CRISPRm\u201d for consideration at eLife. Your article has been favorably evaluated by Richard Losick (Senior editor) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers agree that the manuscript presents very important technological improvements that will be of interest to the yeast community and beyond. The strong point of the manuscript is the systematic comparison of different parameters to optimize the use of the CRISPR-Cas9 system in different yeast strains. This will be of wide interest to researchers in the yeast community and beyond to those working in genome engineering and synthetic biology.\n\nHowever, the \u201cprotein evolution\u201d experiment presented to validate the methodological development was judged to be of limited interest. The major concerns raised by these experiments are listed below. Although we do not request additional experiments to be performed, we would like to ask you to discuss these points in the revised version of manuscript.\n\nMajor concerns:\n\n1) In the \u201cprotein evolution\u201d experiment, a single cycle of mutation was done and it is not clear how more complex selection procedures would be implemented.\n\n2) If mutated coding sequences conferring improved characteristics to the host strain were selected, the characterization of the cognate proteins has not been performed. Thus at this stage, it remains unclear whether protein activity, stability, localization or even mRNA translatability of stability was changed.\n\n3) Also, the mutation rate resulting from the mutagenic PCR is unknown.\n\n4) The screening of complex libraries will certainly require screening higher numbers of transformants by several orders of magnitude. (Only 1600 transformants screened here, is it meaningful?)\n\n5) How will screening of very large numbers of transformants be achieved?\n",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1b0ad607-ce2e-4aaf-b00b-5aef95a2d0b6",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C1",
+      "claim": "Directed evolution of biomolecules to improve or change their activity is central to many engineering and synthetic biology efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "The directed evolution of biomolecules to improve or change their activity is central to many engineering and synthetic biology efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field that draws from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "1910606a-76d9-4acb-813a-e1dfdefb01c6",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C2",
+      "claim": "Selecting improved variants from gene libraries in living cells requires plasmid expression systems that suffer from variable copy number effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, selecting improved variants from gene libraries in living cells requires plasmid expression systems that suffer from variable copy number effects, or the use of complex marker-dependent chromosomal integration strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the manuscript and is consistent with established knowledge about plasmid-based systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "98ad3b37-a9c0-4844-9f6c-1c543e5a1727",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C3",
+      "claim": "Common yeast centromere containing (CEN) plasmids vary widely in copy number per cell resulting in highly variable expression levels from cell to cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the yeast Saccharomyces cerevisiae, common yeast centromere containing (CEN) plasmids vary widely in copy number per cell resulting in highly variable expression levels from cell to cell (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1 which shows visual evidence of expression variability, and is consistent with cited literature (Yokobayashi et al., 2002; Turner, 2009; Esvelt et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "430513f2-729e-4137-8463-58e3e2fcc71e",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C4",
+      "claim": "The standard genetic tool of integrating linear DNA into the genome by homologous recombination is too inefficient to insert DNA libraries without multiple steps that rely on dominant selectable markers.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome copy number variation in yeast, the standard genetic tool of integrating linear DNA into the genome by homologous recombination is too inefficient to insert DNA libraries without multiple steps that rely on dominant selectable markers for chromosomal integrations (Wingler and Cornish, 2011) or specialized strain backgrounds (DiCarlo et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Wingler and Cornish, 2011; DiCarlo et al., 2013a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "0f5a8412-fc2a-494c-ad84-a44e285b9d30",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C5",
+      "claim": "Bacterial type II CRISPR-Cas9 genome editing has been used successfully in several eukaryotic organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial type II CRISPR-Cas9 genome editing has been used successfully in several eukaryotic organisms (Cong et al., 2013; DiCarlo et al., 2013b; Mali et al., 2013a, 2013b; Shalem et al., 2014) but has not been adapted for selection experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "f36f1dd2-fc5f-4cec-b54d-3be8f3165eec",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C6",
+      "claim": "CRISPR-Cas9 has not been adapted for selection experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial type II CRISPR-Cas9 genome editing has been used successfully in several eukaryotic organisms (Cong et al., 2013; DiCarlo et al., 2013b; Mali et al., 2013a, 2013b; Shalem et al., 2014) but has not been adapted for selection experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field at the time of writing, based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "9d68e349-25ef-410f-9281-dfe9d280166d",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C7",
+      "claim": "The Cas9-sgRNA ribonucleoprotein complex precisely generates double-strand breaks (DSBs) in eukaryotic genomes at sites specified by a 20-nucleotide guide sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cas9-sgRNA ribonucleoprotein complex precisely generates double-strand breaks (DSBs) in eukaryotic genomes at sites specified by a 20-nucleotide guide sequence at the 5\u2032 end of the sgRNA that base pairs with the protospacer DNA sequence preceding a genomic protospacer adjacent motif (PAM) (Sternberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Sternberg et al., 2014) and represents established knowledge about CRISPR-Cas9 mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "ebdffc30-c1c4-4b60-a985-ca8a404070f5",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C8",
+      "claim": "The presence of the Cas9-produced DSB in genomic DNA can increase the rate of homology-directed repair (HDR) with linear DNA at the DSB locus by several 1000-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the Cas9-produced DSB in genomic DNA can increase the rate of homology-directed repair (HDR) with linear DNA at the DSB locus by several 1000-fold (Storici et al., 2003; DiCarlo et al., 2013b) potentially enabling high-throughput experimental methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Storici et al., 2003; DiCarlo et al., 2013b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "ae269420-42a1-4cac-b0bc-f26b6b76a784",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C9",
+      "claim": "Industrial S. cerevisiae strains are more robust compared to laboratory strains.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-Cas9 could therefore be useful in probing industrial S. cerevisiae strains, which are more robust compared to laboratory strains (Kerr and Service, 2005; Farrell et al., 2006; Rubin, 2008), but for which few genetic tools are available, due to the fact that these strains are often polyploid with low-efficiency mating and sporulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Kerr and Service, 2005; Farrell et al., 2006; Rubin, 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "21fb9d4d-ddc1-4d16-ab20-e3cdee1d2a70",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C10",
+      "claim": "Industrial S. cerevisiae strains are often polyploid with low-efficiency mating and sporulation.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-Cas9 could therefore be useful in probing industrial S. cerevisiae strains, which are more robust compared to laboratory strains (Kerr and Service, 2005; Farrell et al., 2006; Rubin, 2008), but for which few genetic tools are available, due to the fact that these strains are often polyploid with low-efficiency mating and sporulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about industrial yeast strains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "e08fbbf9-a839-494a-9e69-beb4cd5b656d",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C11",
+      "claim": "A plasmid expressing Streptococcus pyogenes Cas9 fused to a nuclear localization signal (Cas9-NLS) efficiently localizes to the nucleus of yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To optimize the efficiency of HDR in S. cerevisiae mediated by Cas9, we first constructed a plasmid expressing Streptococcus pyogenes Cas9 fused to a nuclear localization signal (Cas9-NLS) that efficiently localizes to the nucleus of yeast cells (Figure 2A,B; Jinek et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 2A,B showing the construct and localization data, and citation to prior work (Jinek et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "75159d8c-b7b5-4313-b6f9-e0be8863b054",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C12",
+      "claim": "Cas9 expression from the PRNR2 promoter resulted in yeast strains with near wild type fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an intermediate strength promoter, PRNR2, to express Cas9 for genome targeting experiments, because Cas9 (Cas9-NLS-His8x) expression from the PRNR2 promoter resulted in yeast strains with near wild type fitness whereas Cas9 expressed using strong yeast promoters such as PTDH3 (Lee et al., 2013) reduced yeast fitness relative to wild type cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2C comparing growth profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "0068766c-98ce-41a7-9b3f-23b49fd355b9",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C13",
+      "claim": "Cas9 expressed using strong yeast promoters such as PTDH3 reduced yeast fitness relative to wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an intermediate strength promoter, PRNR2, to express Cas9 for genome targeting experiments, because Cas9 (Cas9-NLS-His8x) expression from the PRNR2 promoter resulted in yeast strains with near wild type fitness whereas Cas9 expressed using strong yeast promoters such as PTDH3 (Lee et al., 2013) reduced yeast fitness relative to wild type cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2C comparing growth profiles, and citation to prior work (Lee et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "ccdc5b99-524c-4ca0-8690-77b5ff20623f",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C14",
+      "claim": "Cellular levels of sgRNAs correlate with the efficiency of Cas9-mediated genome targeting in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular levels of sgRNAs correlate with the efficiency of Cas9-mediated genome targeting in mammalian cells (Hsu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Hsu et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "d5fea275-abb9-45db-aef0-331ab7c48de0",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C15",
+      "claim": "The HDV ribozyme would protect the 5\u2032 end of the sgRNA from 5\u2032 exonucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the structured ribozyme would protect the 5\u2032 end of the sgRNA from 5\u2032 exonucleases (Houseley and Tollervey, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on reasoning and supported by citation to prior work on RNA degradation (Houseley and Tollervey, 2009).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "1fe962ed-94f2-44bf-9682-de2f45a58f1b",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C16",
+      "claim": "The HDV ribozyme would cleave the RNA immediately 5\u2032 of the ribozyme, removing extraneous RNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the HDV ribozyme would cleave the RNA immediately 5\u2032 of the ribozyme, removing extraneous RNA sequences and allowing flexibility in which promoters can be used, such as tRNAs whose DNA sequences also serve as RNA polymerase III promoters (Marck et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known properties of HDV ribozyme and supported by citation (Marck et al., 2006).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "3841e50d-486f-4c14-a230-e4c31be0db42",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C17",
+      "claim": "tRNA sequences used as RNA polymerase III promoters resulted in nearly 100% efficient barcode insertion in diploid yeast at the URA3 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "With a single sgRNA, we found tRNA sequences used as RNA polymerase III promoters resulted in nearly 100% efficient barcode insertion in diploid yeast at the URA3 locus, resulting in 5-fluororotic acid resistance (Boeke et al., 1984) whereas the non-tRNA promoters were mostly ineffective (Figure 3A; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "919a76f8-d364-4f9f-bb5e-ba24393cb78c",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C18",
+      "claim": "Non-tRNA promoters were mostly ineffective for barcode insertion in diploid yeast at the URA3 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "With a single sgRNA, we found tRNA sequences used as RNA polymerase III promoters resulted in nearly 100% efficient barcode insertion in diploid yeast at the URA3 locus, resulting in 5-fluororotic acid resistance (Boeke et al., 1984) whereas the non-tRNA promoters were mostly ineffective (Figure 3A; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "5388410b-b50f-4485-881a-cf98e3d7fc28",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C19",
+      "claim": "Targeting was highly efficient for every genomic target except LEU2 using tRNATyr as the RNA polymerase III promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed target sequence bias by targeting 11 unlinked yeast genes in diploid S288C yeast cells using tRNATyr as the RNA polymerase III promoter (Supplementary file 2A). We found that targeting was highly efficient for every genomic target except LEU2, which at first was weak but was restored to 100% by selecting a different guide sequence (LEU2-2) as the sgRNA (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B and Supplementary file 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "00041662-81c2-478e-ab68-aaf70820a04c",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C20",
+      "claim": "LEU2 targeting efficiency was restored to 100% by selecting a different guide sequence (LEU2-2).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that targeting was highly efficient for every genomic target except LEU2, which at first was weak but was restored to 100% by selecting a different guide sequence (LEU2-2) as the sgRNA (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "49983d47-753c-4309-8d66-45c39c377ad7",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C21",
+      "claim": "The CRISPR-Cas9/sgRNA system did not result in non-specific genome targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "We also verified that our CRISPR-Cas9/sgRNA system did not result in non-specific genome targeting by sequencing 9 of the targeted strains (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequencing data presented in Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "136031d1-73d2-4ce9-97cc-f75cba02df2b",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C22",
+      "claim": "The tRNAPro promoter enabled highly-efficient barcode insertion into all copies of the URA3 locus in ATCC4124.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-tRNA promoter previously used in haploid yeast (DiCarlo et al., 2013b), PSNR52, functioned in diploid S288C yeast but failed to result in targeting in the polyploid industrial yeast ATCC4124; in contrast, the tRNAPro promoter enabled highly-efficient barcode insertion into all copies of the URA3 locus in ATCC4124, which we term cis-multiplexing, that is introducing a double-stranded DNA break at a single genomic locus across all chromosomes (Figure 3C; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "2b7072a8-91c0-47ed-b223-dcc951d1d6cf",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C23",
+      "claim": "PSNR52 promoter functioned in diploid S288C yeast but failed to result in targeting in the polyploid industrial yeast ATCC4124.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-tRNA promoter previously used in haploid yeast (DiCarlo et al., 2013b), PSNR52, functioned in diploid S288C yeast but failed to result in targeting in the polyploid industrial yeast ATCC4124; in contrast, the tRNAPro promoter enabled highly-efficient barcode insertion into all copies of the URA3 locus in ATCC4124, which we term cis-multiplexing, that is introducing a double-stranded DNA break at a single genomic locus across all chromosomes (Figure 3C; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C and Supplementary file 1A, and citation to prior work (DiCarlo et al., 2013b).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "bfaa4df2-b037-4d7e-a6fc-6ade1b0bc94c",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C24",
+      "claim": "tRNATyr was inefficient at targeting in ATCC4124 though it was effective in S288C diploid.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, tRNATyr was inefficient at targeting in ATCC4124 though it was effective in S288C diploid (Supplementary file 1A), indicating that the choice of tRNA used for the expression of the HDV-sgRNA impacts multiplexing in a strain-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "0d29fa04-9251-4c1f-9d1c-ac02cf3d8b0c",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C25",
+      "claim": "The choice of tRNA used for the expression of the HDV-sgRNA impacts multiplexing in a strain-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, tRNATyr was inefficient at targeting in ATCC4124 though it was effective in S288C diploid (Supplementary file 1A), indicating that the choice of tRNA used for the expression of the HDV-sgRNA impacts multiplexing in a strain-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing differential efficiency across strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "24f285ce-4e77-4f38-81f4-1089adfe4c4b",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C26",
+      "claim": "The efficiency of duplex and triplex targeting with two sgRNAs (URA3 and LYP1) or three (URA3, LYP1 and COX10) was 43% and 19%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of duplex and triplex targeting (requiring four and six chromosome cuts, respectively) with two sgRNAs (URA3 and LYP1) or three (URA3, LYP1 and COX10) was 43% and 19%, respectively (Figure 3D; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "98b466bf-c8e7-4f5e-bd29-89f03f526f75",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C27",
+      "claim": "Duplex targeting dropped to 3.5% in cells with sgRNA lacking the 5\u2032 HDV ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "This multiplexed efficiency was dependent on the presence of the HDV ribozyme 5\u2032 of the guide sequence as duplex targeting dropped to 3.5% in cells with sgRNA lacking the 5\u2032 HDV ribozyme (Figure 3D; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "6868c7eb-905b-4ed5-bb53-5a404b66b346",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C28",
+      "claim": "The presence of the HDV ribozyme increases the intracellular abundance of the sgRNAs by sixfold.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the relative cellular abundance of sgRNAs expressed by PSNR52, with and without the 5\u2032 HDV ribozyme, by reverse transcription quantitative polymerase chain reaction (RT-qPCR) and found that the presence of the ribozyme increases the intracellular abundance of the sgRNAs by sixfold (Figure 3E), consistent with the model that sgRNA abundance is rate limiting for CRISPR/Cas targeting (Hsu et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "f179b65a-a941-4fa4-be6e-a73a60bc86f6",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C29",
+      "claim": "sgRNA abundance is rate limiting for CRISPR/Cas targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the relative cellular abundance of sgRNAs expressed by PSNR52, with and without the 5\u2032 HDV ribozyme, by reverse transcription quantitative polymerase chain reaction (RT-qPCR) and found that the presence of the ribozyme increases the intracellular abundance of the sgRNAs by sixfold (Figure 3E), consistent with the model that sgRNA abundance is rate limiting for CRISPR/Cas targeting (Hsu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Hsu et al., 2013) and is consistent with the experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "8c32af9f-68ad-4142-ac99-0c5635644d0e",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C30",
+      "claim": "Haploid trans-multiplexing showed a minimal loss in activity scaling from one to three loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Haploid trans-multiplexing showed a minimal loss in activity scaling from one to three loci (up to three chromosome cuts) (Figure 3F; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3F and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "c3df71ff-fc4f-4f64-b007-8a16f87f3d37",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C31",
+      "claim": "The 5\u2032 tRNA-HDV ribozyme sequence is required for higher order multiplex targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate that our multiplexed CRISPR/Cas9 system, which we term CRISPRm, is powerful enough to generate multiple marker-free targeted mutations in the yeast genome in a single experiment and that the 5\u2032 tRNA-HDV ribozyme sequence is required for higher order multiplex targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing reduced efficiency without the ribozyme.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "54df016b-c1dd-4ad0-a57b-117b05a9660e",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C32",
+      "claim": "The efficiency of Cas9-mediated integration and assembly of three DNA fragments to the URA3 locus was 85% in diploid yeast S288C cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of Cas9-mediated integration and assembly of these three DNA fragments to the correct (URA3) locus was measured by a combination of 5-fluoroorotic acid resistance (5-FOAR) and NatR. We found 85% efficiency of targeting and assembly in both copies of the URA3 locus in diploid yeast S288C cells, and 70% in polyploid ATCC4124 by using the tRNAPro sequence as the sgRNA promoter (Figure 3C; Supplementary file 1A), whereas PSNR52-dependent targeting was weaker in S288C cells and non-existent in ATCC4124 cells (Figure 3C; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "b994db36-255b-44e7-88cd-2032df3702e0",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C33",
+      "claim": "The efficiency of Cas9-mediated integration and assembly of three DNA fragments to the URA3 locus was 70% in polyploid ATCC4124.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 85% efficiency of targeting and assembly in both copies of the URA3 locus in diploid yeast S288C cells, and 70% in polyploid ATCC4124 by using the tRNAPro sequence as the sgRNA promoter (Figure 3C; Supplementary file 1A), whereas PSNR52-dependent targeting was weaker in S288C cells and non-existent in ATCC4124 cells (Figure 3C; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "dc5a1b3d-f5e9-4070-8a1a-575564eb451b",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C34",
+      "claim": "CRISPRm enables the one-step markerless assembly of functional genes from multiple fragments into the S. cerevisiae genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CRISPRm enables the one-step markerless assembly of functional genes from multiple fragments into the S. cerevisiae genome, resulting in homozygous insertions into both diploid and polyploid yeast strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on gene assembly efficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "66e6f692-bf9c-4bae-b757-d41d60bb5f14",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C35",
+      "claim": "One strain with homozygous cdt-1 N209S/I354N/S360P/T406S/W531L allele showed 2.6-fold increased cellobiose utilization capacity over wild type cdt-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We then grew the transformants in medium containing cellobiose as the sole carbon source to select for functional cdt-1 alleles and identified one strain with 2.6-fold (homozygous cdt-1 N209S/I354N/S360P/T406S/W531L allele) and one strain with 1.7-fold (homozygous cdt-1 Q45H/F262Y/F533Y allele) increased cellobiose utilization capacity over wild type cdt-1 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "adb1e1f9-53dc-4ae9-8150-58f4d2d601b2",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C36",
+      "claim": "One strain with homozygous cdt-1 Q45H/F262Y/F533Y allele showed 1.7-fold increased cellobiose utilization capacity over wild type cdt-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We then grew the transformants in medium containing cellobiose as the sole carbon source to select for functional cdt-1 alleles and identified one strain with 2.6-fold (homozygous cdt-1 N209S/I354N/S360P/T406S/W531L allele) and one strain with 1.7-fold (homozygous cdt-1 Q45H/F262Y/F533Y allele) increased cellobiose utilization capacity over wild type cdt-1 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "e41b80c0-e3b4-46f0-8989-92cde2a48775",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C37",
+      "claim": "One mutation site (N209S) maps to a site that likely interacts directly with the sugar substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, one site maps to a site that likely interacts directly with the sugar substrate (N209S) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural mapping shown in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "7af41a98-d82d-44b3-a640-cb7ee0e19b03",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C38",
+      "claim": "One mutation (F262Y) maps to a site immediately adjacent to the nearly universally-conserved PESPR motif in hexose transporters that is involved in transporter dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas two mutations in the second allele (Q45H, F533Y) map to non-conserved regions of the transporters, one (F262Y) maps to a site immediately adjacent to the nearly universally-conserved PESPR motif in hexose transporters that is involved in transporter dynamics (Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis and citation to prior work (Sun et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "1f8088d9-2aa3-491d-a383-aa20d61d6a17",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C39",
+      "claim": "The mutation from phenylalanine to tyrosine results in an expanded motif (PESPRY) that is present in all of the major hexose transporters in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the mutation from phenylalanine to tyrosine results in an expanded motif (PESPRY) that is present in all of the major hexose transporters in S. cerevisiae (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on sequence analysis and structural mapping shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "1c385a01-0427-4cbb-b748-c319890a9a41",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C40",
+      "claim": "The quadruple mutant cdt-1 allele resulted in synergistic cellobiose utilization with 3.9-fold increased growth over strains expressing wild-type cdt-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used CRISPRm to introduce the N209S mutation (nucleotide G626A) in the cdt-1Q45H/F262Y/F533Y diploid yeast background. The quadruple mutant cdt-1 allele resulted in synergistic cellobiose utilization with 3.9-fold increased growth over strains expressing wild-type cdt-1 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "2c01323a-3508-497c-a60a-e2af7549b313",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C41",
+      "claim": "Wild-type cdt-1 integrated into the chromosome was barely able to support cellobiose fermentation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that wild-type cdt-1 integrated into the chromosome was barely able to support cellobiose fermentation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fermentation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "28873b47-4349-4a0c-ab18-cd8029f2be19",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C42",
+      "claim": "The cdt-1Q45H/N209S/F262Y/F533Y quadruple mutant expressed from the chromosome resulted in complete fermentation of cellobiose.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the cdt-1Q45H/N209S/F262Y/F533Y quadruple mutant or the cdt-1N209S/F262Y double-mutant expressed from the chromosome resulted in complete fermentation of cellobiose, comparable to wild-type cdt-1 expressed from a high-copy 2\u00b5 plasmid (Figure 4C; Ha et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fermentation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "880ade67-1f5b-4baf-8d6c-0b09514ac0c2",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C43",
+      "claim": "The cdt-1N209S/F262Y double-mutant expressed from the chromosome resulted in complete fermentation of cellobiose.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the cdt-1Q45H/N209S/F262Y/F533Y quadruple mutant or the cdt-1N209S/F262Y double-mutant expressed from the chromosome resulted in complete fermentation of cellobiose, comparable to wild-type cdt-1 expressed from a high-copy 2\u00b5 plasmid (Figure 4C; Ha et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fermentation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "b137b1e9-9597-4d43-a68c-6dcb3a0ba0a2",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C44",
+      "claim": "The rate of cellobiose consumption for wild-type cdt-1 was 0.13 g L\u22121 hr\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of cellobiose consumption was 0.13 g L\u22121 hr\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement reported from the fermentation experiment shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "8c8fe810-ea3f-40c5-8d91-f3733db3c002",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C45",
+      "claim": "The rate of cellobiose consumption for mutant cdt-1 strains was over 2.0 g L\u22121 hr\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of cellobiose consumption for both strains was over 2.0 g L\u22121 hr\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement reported from the fermentation experiment shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "215a00bf-f93a-40a9-a70b-a95f20e92980",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C46",
+      "claim": "CRISPRm can be used to quickly generate markerless loss-of-function alleles, heterologous insertion alleles, allele swaps and engineer proteins in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that CRISPRm can be used to quickly generate markerless loss-of-function alleles, heterologous insertion alleles, allele swaps and engineer proteins in yeast by in vivo selections for greatly improved metabolic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from all the experimental results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "6f280eee-c9c3-442f-9eea-52592cdbaaa3",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C47",
+      "claim": "The mutations in CDT-1 may improve protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we selected for improved protein function, as suggested by the location of the mutations in CDT-1 (Figure 4B), it is also possible that selection enriched for sequences that confer improved mRNA stability or translation efficiency, due to the fact that the selection was carried out in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the structural location of mutations and the nature of the selection.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "d5e5a208-53e5-4506-b20f-584d972d130e",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C48",
+      "claim": "Selection may have enriched for sequences that confer improved mRNA stability or translation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we selected for improved protein function, as suggested by the location of the mutations in CDT-1 (Figure 4B), it is also possible that selection enriched for sequences that confer improved mRNA stability or translation efficiency, due to the fact that the selection was carried out in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about alternative explanations for the observed improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "9bd13338-cf84-46b3-938c-6ab09ae1a91a",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C49",
+      "claim": "CRISPRm could be used to integrate DNA libraries to interrogate cis-regulatory elements such as transcription promoters, 5\u2032- and 3\u2032-untranslated regions (5\u2032-UTRs and 3\u2032-UTRs) in mRNAs, or riboswitches.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRm could be used to integrate DNA libraries to interrogate cis-regulatory elements such as transcription promoters, 5\u2032- and 3\u2032-untranslated regions (5\u2032-UTRs and 3\u2032-UTRs) in mRNAs, or riboswitches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications based on the demonstrated capabilities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "db1abb26-3eec-41dc-b2e8-f666d0da06b1",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C50",
+      "claim": "CRISPRm enables near quantitative integration of DNA libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRm enables these types of experiments because it allows for near quantitative integration of DNA libraries, which can be a single fragment or complex assemblies of multiple fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing high efficiency integration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "38a50558-cbba-472a-b6bc-420140b05f86",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C51",
+      "claim": "The ability to use chromosomally-integrated DNA libraries removes a key limitation in in vivo selection experiments by eliminating biomolecule expression variation due to variable plasmid copy numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to use chromosomally-integrated DNA libraries removes a key limitation in in vivo selection experiments by eliminating biomolecule expression variation due to variable plasmid copy numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the demonstrated capabilities and the known problem of plasmid copy number variation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "3e7394ec-566b-4b73-afcc-f70b29fd023d",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C52",
+      "claim": "2\u20133 mutations per kilobase were observed in the selected transporter genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we used a relatively small library size in the present experiments, even in this small library we observed impressive gains in transporter function. We observed 2\u20133 mutations per kilobase in the selected transporter genes, resulting in 3\u20135 amino acid substitutions per transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the sequencing of selected mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "e4b4340b-0944-4c4a-acdd-c167ec5d6bdf",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C53",
+      "claim": "The selected transporter genes had 3\u20135 amino acid substitutions per transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed 2\u20133 mutations per kilobase in the selected transporter genes, resulting in 3\u20135 amino acid substitutions per transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the sequencing of selected mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "dc2cce85-7e4d-4a49-894d-fcc90c703def",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C54",
+      "claim": "Library sizes introduced by CRISPRm should be scalable to the limits of transformation efficiency, to 107 or larger.",
+      "claim_type": "EXPLICIT",
+      "source": "Library sizes introduced by CRISPRm should be scalable to the limits of transformation efficiency, to 107 or larger (Kawai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about scalability based on known transformation efficiency limits and citation to prior work (Kawai et al., 2010).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "998e02f4-3050-4744-b3c2-e71d4d2fb7e4",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C55",
+      "claim": "CRISPRm should enable multiple rounds of selection for directed evolution experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRm should also enable multiple rounds of selection for directed evolution experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications based on the demonstrated capabilities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "5eb3b03e-58d1-40ff-961b-872b4317d871",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C56",
+      "claim": "CRISPRm should be adaptable to screens that rely on sorting large populations of cells by fluorescence-activated cell sorting.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRm should also be adaptable to screens that rely on sorting large populations of cells, that is by fluorescence-activated cell sorting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications based on the demonstrated capabilities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "8563e246-b1c3-440d-8ae8-a17cb7db6099",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C57",
+      "claim": "CRISPRm could improve the discovery of human therapeutics by yeast display.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that CRISPRm could improve the discovery of human therapeutics by yeast display (Krugel et al., 1988), and could be used to map the importance of protein\u2013protein interactions (Ovchinnikov et al., 2014) via multiplexed library insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications with citations to relevant prior work (Krugel et al., 1988; Ovchinnikov et al., 2014).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "2a090b02-4916-4bb5-9c49-90fcc156dde6",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C58",
+      "claim": "CRISPRm could be used to map the importance of protein\u2013protein interactions via multiplexed library insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that CRISPRm could improve the discovery of human therapeutics by yeast display (Krugel et al., 1988), and could be used to map the importance of protein\u2013protein interactions (Ovchinnikov et al., 2014) via multiplexed library insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications with citation to relevant prior work (Ovchinnikov et al., 2014).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "ceebd787-9303-4b1a-91c7-3707cd21c627",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C59",
+      "claim": "It was necessary to modify the sgRNA design by including a 5\u2032 HDV ribozyme to achieve high efficiency multiplexing with CRISPRm.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve high efficiency multiplexing with CRISPRm, we found it was necessary to modify the sgRNA design by including a 5\u2032 HDV ribozyme, and to assay multiple RNA polymerase III promoters for a given strain background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data comparing efficiency with and without the ribozyme.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "b22dcaa4-c5ce-44fc-b7ef-6b28561ef625",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C60",
+      "claim": "It was necessary to assay multiple RNA polymerase III promoters for a given strain background to achieve high efficiency multiplexing with CRISPRm.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve high efficiency multiplexing with CRISPRm, we found it was necessary to modify the sgRNA design by including a 5\u2032 HDV ribozyme, and to assay multiple RNA polymerase III promoters for a given strain background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing strain-dependent promoter efficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "9b102b82-50b4-4f92-84ff-2b8b1f397353",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C61",
+      "claim": "CRISPRm can be used directly in non-model fungal hosts with few modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "The ease of discovering tRNAs in any genome and the universality of the sgRNA construct means that, with few modifications, CRISPRm can be used directly in non-model fungal hosts, such as pathogens or organisms used in the biotechnology industry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about applicability to other organisms based on the modular design and universal components.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "23ffb99c-0805-4d3d-beeb-4ca9e8a32b28",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C62",
+      "claim": "Industrial S. cerevisiae strains produce much higher yields of desired biofuel or renewable chemical end products than laboratory strains.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, industrial S. cerevisiae strains are more stress tolerant and produce much higher yields of desired biofuel or renewable chemical end products than laboratory strains (Kerr and Service, 2005; Farrell et al., 2006; Rubin, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Kerr and Service, 2005; Farrell et al., 2006; Rubin, 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "ef593e50-21d7-4b35-a0a8-3a9759f5968d",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C63",
+      "claim": "Linking genotypes of industrial yeasts to their phenotypes remains difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "However, linking genotypes of industrial yeasts to their phenotypes remains difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "272f7bc4-10b1-4837-93f0-197c37fb605f",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C64",
+      "claim": "CRISPRm should serve as a rapid and high throughput means for connecting the genotypes of organisms to their phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRm should serve as a rapid and high throughput means for connecting the genotypes of these organisms to their phenotypes, that is for generating marker-free barcoded alleles for large-scale pooled fitness studies of loss-of-function mutants in these organisms (Giaever et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications with citation to relevant prior work (Giaever et al., 2002).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "caf7b785-0411-4aee-95d1-497dd8bf8ad3",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C65",
+      "claim": "CRISPRm may be applicable to interrogating mammalian cells if the levels of HDR are sufficiently high.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, CRISPRm may also be applicable to interrogating mammalian cells, if the levels of HDR are sufficiently high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications with a conditional statement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "2595ab7e-fade-4a2c-a285-6563ddd104a8",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C66",
+      "claim": "The ability to use CRISPRm for multiplexed targeting paves the way for applying directed evolution to cellular pathways and genetic circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the ability to use CRISPRm for multiplexed targeting paves the way for applying directed evolution to cellular pathways and genetic circuits for higher order synthetic biology applications in any host strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications based on the demonstrated capabilities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "f0fbbfc1-c222-4078-bbcb-cce3039e0783",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C67",
+      "claim": "Cas9 requires at least 12 perfect base pair matches within the guide-target sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 requires at least 12 perfect base pair matches within the guide-target sequence (Hsu et al., 2013) so it is highly unlikely that the URA3 and LYP1 guide sequences directed Cas9 to any of these potential protospacers that lie within variant sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Hsu et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "78dafd2d-9492-488f-8a76-16aff5133cf2",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C68",
+      "claim": "It is highly unlikely that the URA3 and LYP1 guide sequences directed Cas9 to any of the potential protospacers that lie within variant sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 requires at least 12 perfect base pair matches within the guide-target sequence (Hsu et al., 2013) so it is highly unlikely that the URA3 and LYP1 guide sequences directed Cas9 to any of these potential protospacers that lie within variant sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the sequencing data analysis and known Cas9 targeting requirements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "c522c5ba-0ad7-4c5d-aaa8-9366a79bf1ff",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C69",
+      "claim": "The mutations identified in the genomes of URA3- and LYP1-targeted strains likely arose as natural variants during the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations likely arose as natural variants during the course of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the analysis showing poor matches between guide sequences and variant sites.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "8f5868ad-77d7-4159-94a9-208e24369c6a",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C70",
+      "claim": "The variants identified in the genomes of URA3- and LYP1-targeted strains are unlikely the result of off-target Cas9 modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our guide sequences are expected to have a better match to 13% or more of all Cas9 target sequences (\u223c126,000 or more sites) than to the best matching Cas9 target sequence with a nearby variant, and the number of nucleotide matches in end-to-end alignments is at most 10, we argue that the variants identified in the genomes of URA3- and LYP1-targeted strains are unlikely the result of off-target Cas9 modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on computational analysis of potential off-target sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "120c6a85-5a64-4268-9708-549f960f3f68",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C71",
+      "claim": "The variability in the relative expression of two fluorescent proteins is reduced by moving from two plasmids to one.",
+      "claim_type": "IMPLICIT",
+      "source": "The variability in the relative expression of the two fluorescent proteins is reduced by moving from two plasmids to one, and the variability in total expression is reduced by moving to the genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from visual inspection of Figure 1 comparing panels A and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "1da97fdf-572e-4592-b3e3-1acbeadc0ef2",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C72",
+      "claim": "The variability in total expression is reduced by moving to the genome.",
+      "claim_type": "IMPLICIT",
+      "source": "The variability in the relative expression of the two fluorescent proteins is reduced by moving from two plasmids to one, and the variability in total expression is reduced by moving to the genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from visual inspection of Figure 1 comparing plasmid-based (A, B) to genome-integrated (C, D) expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "87b8d552-72e5-4d9b-9b3c-c61929db89f9",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C73",
+      "claim": "The difference between integrating into one or two loci in the genome is minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between integrating into one or two loci in the genome is minimal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from visual inspection of Figure 1 comparing panels C and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "dea9a894-54aa-4f4e-a33d-e80548e87806",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C74",
+      "claim": "CRISPRm selected an improved cellobiose utilization pathway in diploid yeast in a single round of mutagenesis and selection.",
+      "claim_type": "EXPLICIT",
+      "source": "With this Multiplex CRISPR (CRISPRm) system, we selected an improved cellobiose utilization pathway in diploid yeast in a single round of mutagenesis and selection, which increased cellobiose fermentation rates by over 10-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "e20ed4e3-13f8-481e-a08e-c2030a12ec0d",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C75",
+      "claim": "CRISPRm increased cellobiose fermentation rates by over 10-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "With this Multiplex CRISPR (CRISPRm) system, we selected an improved cellobiose utilization pathway in diploid yeast in a single round of mutagenesis and selection, which increased cellobiose fermentation rates by over 10-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the fermentation data comparing wild-type and mutant strains (rate increased from 0.13 to over 2.0 g L\u22121 hr\u22121, which is over 15-fold).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "70059099-012a-4e11-af7d-7f566ce78516",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C76",
+      "claim": "Mutations recovered in the best cellodextrin transporters reveal synergy between substrate binding and transporter dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations recovered in the best cellodextrin transporters reveal synergy between substrate binding and transporter dynamics, and demonstrate the power of CRISPRm to accelerate selection experiments and discoveries of the molecular determinants that enhance biomolecule function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural location of mutations and the synergistic effect observed when combining mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "3b502a16-773b-4bc9-a364-50acc40e90bd",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C77",
+      "claim": "Yeast strain ATCC4124 is an industrial polyploid yeast isolated from a molasses distillery.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast strain ATCC4124 is an industrial polyploid yeast isolated from a molasses distillery, and was obtained from ATCC (American Type Culture Collection, Manassas, VA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about the strain source.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "d43fc12f-5b8c-4cb2-8218-953f72572507",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C78",
+      "claim": "The cellodextrin utilization pathway from Neurospora crassa is comprised of the cellodextrin transporter (cdt-1) and an intracellular \u03b2-glucosidase (gh1-1).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested whether CRISPRm could be used for in vivo selections of improved protein function. We targeted a cellodextrin utilization pathway from the cellulolytic fungus Neurospora crassa, comprised of the cellodextrin transporter (cdt-1) and an intracellular \u03b2-glucosidase (gh1-1), to assemble in vivo in diploid S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about the pathway components.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "b39be289-5223-43c8-8c8f-ec7dd82db4a6",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C79",
+      "claim": "The combination of cdt-1 and gh1-1 genes results in yeast cells capable of consuming the disaccharide cellobiose.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination, these two genes result in yeast cells capable of consuming the disaccharide cellobiose, which could be used to improve biofuel production (Galazka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Galazka et al., 2010) and is demonstrated by the experimental results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "c3420a75-aa77-472f-96f9-3cbe442ab1e8",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "claim_id": "C80",
+      "claim": "Cellobiose utilization could be used to improve biofuel production.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination, these two genes result in yeast cells capable of consuming the disaccharide cellobiose, which could be used to improve biofuel production (Galazka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications supported by citation to prior work (Galazka et al., 2010).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "686e2f53-995c-45e8-9993-897aec0e80b2",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Plasmid-based directed evolution systems suffer from variable copy number effects that cause highly variable expression levels from cell to cell, and traditional chromosomal integration methods are too inefficient for library insertion without complex marker-dependent strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the motivation for the work by documenting known limitations of existing methods. The claims are supported by citations to prior work and Figure 1 provides visual evidence of expression variability in plasmid-based systems. These are well-established problems in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "c1ae8054-6f03-4c15-b8db-1258b8b9e0fc",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CRISPR-Cas9 has been successfully used for genome editing in eukaryotes but had not been adapted for selection experiments, despite its ability to increase homology-directed repair rates by several 1000-fold at targeted loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 describe the state of CRISPR-Cas9 technology at the time of publication. All claims are supported by multiple citations to prior work establishing the mechanism and capabilities of CRISPR-Cas9, while noting the gap in application to selection experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "d50e2c68-6171-4328-82ee-a8501f44baf9",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A Cas9-NLS construct efficiently localizes to the yeast nucleus, and expression from the intermediate-strength PRNR2 promoter maintains near wild-type fitness, while strong promoters like PTDH3 reduce yeast fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are supported by experimental data shown in Figure 2A-C. The localization is demonstrated by microscopy (Figure 2B) and the fitness effects are quantified by growth curves (Figure 2C). The experimental design appropriately compares different promoter strengths.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "f1250f1b-1a44-4e81-b27b-fc637b96dd62",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors designed a novel sgRNA architecture incorporating a 5' HDV ribozyme to protect and stabilize sgRNAs, which increased intracellular sgRNA abundance by sixfold, consistent with sgRNA abundance being rate-limiting for CRISPR/Cas targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C28-C29 describe the sgRNA design rationale and experimental validation. The sixfold increase in sgRNA abundance is measured by RT-qPCR (Figure 3E, C28) with appropriate biological replicates. The reasoning is supported by citation to prior work (C14, C29) and the functional improvement is demonstrated in subsequent experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "fed7417b-9122-4f82-b479-6b6a524cad28",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "tRNA-based RNA polymerase III promoters achieved nearly 100% efficient barcode insertion at the URA3 locus and showed high efficiency across 11 genomic targets in diploid yeast, while non-tRNA promoters were mostly ineffective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are supported by data in Figure 3A-B and Supplementary files. The efficiency measurements are quantified and the guide sequence-dependent effect at LEU2 (C19-C20) demonstrates appropriate troubleshooting. However, the manuscript lacks details on sample sizes and statistical analysis of the efficiency measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "1c6cb426-cc14-4064-be64-2664224b8f67",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The tRNAPro promoter enabled highly efficient targeting in polyploid industrial yeast ATCC4124 where the PSNR52 promoter failed, demonstrating that tRNA promoter choice impacts multiplexing efficiency in a strain-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 demonstrate the system's applicability to industrial strains. The data in Figure 3C and Supplementary file 1A show clear differences between promoters and strains. The strain-dependent effect (C25) is a reasonable inference from the differential performance of tRNATyr and tRNAPro across strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "c2b72ade-da11-48c3-8afa-dccb77dcc663",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The CRISPRm system achieved 43% and 19% efficiency for duplex and triplex targeting in diploid yeast, respectively, with the 5' HDV ribozyme being essential for higher-order multiplexing (duplex efficiency dropped to 3.5% without it).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C30-C31 demonstrate multiplexing capabilities with quantitative efficiency data (Figure 3D-F, Supplementary file 1A). The dramatic reduction in efficiency without the HDV ribozyme (C27) provides strong evidence for its functional importance. The haploid data (C30) shows better scaling, though the manuscript doesn't fully explain this difference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "b7a402db-d8a4-422d-9c64-6a5ab3bf48a4",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CRISPRm enabled one-step markerless assembly of functional genes from three DNA fragments with 85% efficiency in diploid S288C and 70% efficiency in polyploid ATCC4124, resulting in homozygous insertions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 demonstrate gene assembly capabilities with quantitative efficiency data (Figure 3C, Supplementary file 1A). The functional NatR cassette assembly provides a clear phenotypic readout. However, the manuscript doesn't specify how many colonies were tested to determine these efficiencies or provide statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "7421690d-dd68-4290-9d95-44b229d04a65",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRISPRm-mediated directed evolution of the cellodextrin transporter cdt-1 yielded mutants with 2.6-fold and 1.7-fold increased cellobiose utilization, with 2-3 mutations per kilobase resulting in 3-5 amino acid substitutions, and a synergistic quadruple mutant showing 3.9-fold improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C40, C52-C53 present the directed evolution results with quantitative growth data (Figure 4A). The mutation rates are measured by sequencing. The synergistic effect of combining mutations (C40) is demonstrated. However, the manuscript uses a relatively small library size and doesn't report how many clones were screened or provide statistical significance testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "1a3b4052-0e78-48e4-a039-3e4827e0e228",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structural mapping of mutations in the evolved CDT-1 transporter revealed that N209S likely interacts with the sugar substrate and F262Y maps adjacent to the conserved PESPR motif involved in transporter dynamics, creating a PESPRY motif present in major S. cerevisiae hexose transporters, revealing synergy between substrate binding and transporter dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39, C76 provide structural interpretation of the mutations using homology modeling (Figure 4B). The mapping to functionally important regions is supported by citation to prior structural work (C38). However, these are inferences from homology models rather than direct structural determination of CDT-1, and alternative explanations (mRNA stability, translation efficiency) are acknowledged but not tested (C47-C48).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "ba0b7ce9-18ac-4687-8f32-5c92fb1c9b37",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Wild-type cdt-1 integrated into the chromosome barely supported cellobiose fermentation (0.13 g/L/hr), while the quadruple and double mutants achieved complete fermentation at rates over 2.0 g/L/hr, representing over 10-fold (actually >15-fold) improvement in fermentation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45, C74-C75 present anaerobic fermentation data (Figure 4C-D) with biological triplicates and error bars. The quantitative rate measurements clearly demonstrate the functional improvement. Note that C75 claims 'over 10-fold' but the actual data shows >15-fold improvement (0.13 to >2.0 g/L/hr), which is a minor inconsistency in reporting but doesn't undermine the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "3c4c5252-cca0-42bb-ac4a-098707dd2d00",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Whole genome sequencing of targeted strains identified 21 sequence variants that are unlikely to result from off-target Cas9 modifications, as guide sequences had poor matches (\u226410 nucleotides) to variant sites and likely arose as natural variants during the experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C67-C70 present comprehensive off-target analysis using whole genome sequencing (Supplementary file 1B). The computational analysis comparing guide sequences to potential off-target sites is thorough and the reasoning is sound. However, the conclusion that variants are 'natural' rather than off-target effects relies on computational prediction rather than direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "71c2b98a-4d69-453d-a2b9-b81ce72b26c9",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Fluorescent protein expression variability is reduced by moving from two plasmids to one, and further reduced by chromosomal integration, with minimal difference between integrating at one or two genomic loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are supported by visual evidence in Figure 1 comparing different expression systems. However, the evaluation is qualitative based on visual inspection rather than quantitative image analysis. The manuscript would benefit from quantitative measurements of expression variability (e.g., coefficient of variation) to support these conclusions more rigorously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "dd428db2-0bbf-41ef-9b43-5404a13dd00c",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CRISPRm enables rapid generation of markerless chromosomal modifications including loss-of-function alleles, heterologous insertions, and allele swaps with near-quantitative DNA library integration efficiency, eliminating expression variation from plasmid copy number, requiring the 5' HDV ribozyme and strain-specific promoter optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C50-C51, C59-C60 summarize the system's capabilities and requirements. These conclusions are well-supported by the collective experimental data presented throughout the manuscript. The key technical requirements (HDV ribozyme, promoter selection) are clearly demonstrated by comparative experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "12ba4f54-0770-4104-be63-d814c2f09697",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The mutations in CDT-1 may improve protein function, though it's also possible that selection enriched for improved mRNA stability or translation efficiency since selection was performed in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C48 acknowledge alternative explanations for the observed improvements. The authors appropriately recognize this limitation but do not perform experiments to distinguish between protein-level vs. RNA-level effects. This represents an important caveat to the mechanistic interpretation but doesn't undermine the practical utility of the selected variants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    },
+    {
+      "id": "2d24b2db-485f-4d2a-894b-e91ef73e1190",
+      "content_id": "9e815947-56c5-4f33-a478-7a1135de00a3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CRISPRm could potentially be applied to interrogate cis-regulatory elements, scale to library sizes of 10^7 or larger, enable iterative directed evolution, be adapted for FACS-based screens, improve therapeutic discovery by yeast display, map protein-protein interactions, be used in non-model fungal hosts, connect genotypes to phenotypes in industrial strains, and potentially be applicable to mammalian cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49, C54-C58, C61, C64-C66 are speculative statements about potential future applications. While these are reasonable extrapolations based on the demonstrated capabilities, they remain untested hypotheses. Some (like scalability to 10^7, C54) are supported by citations to transformation efficiency limits, while others are purely speculative. These represent future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:14:46.397824Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1b0ad607-ce2e-4aaf-b00b-5aef95a2d0b6",
+      "result_id": "686e2f53-995c-45e8-9993-897aec0e80b2"
+    },
+    {
+      "claim_id": "1910606a-76d9-4acb-813a-e1dfdefb01c6",
+      "result_id": "686e2f53-995c-45e8-9993-897aec0e80b2"
+    },
+    {
+      "claim_id": "98ad3b37-a9c0-4844-9f6c-1c543e5a1727",
+      "result_id": "686e2f53-995c-45e8-9993-897aec0e80b2"
+    },
+    {
+      "claim_id": "430513f2-729e-4137-8463-58e3e2fcc71e",
+      "result_id": "686e2f53-995c-45e8-9993-897aec0e80b2"
+    },
+    {
+      "claim_id": "0f5a8412-fc2a-494c-ad84-a44e285b9d30",
+      "result_id": "c1ae8054-6f03-4c15-b8db-1258b8b9e0fc"
+    },
+    {
+      "claim_id": "f36f1dd2-fc5f-4cec-b54d-3be8f3165eec",
+      "result_id": "c1ae8054-6f03-4c15-b8db-1258b8b9e0fc"
+    },
+    {
+      "claim_id": "9d68e349-25ef-410f-9281-dfe9d280166d",
+      "result_id": "c1ae8054-6f03-4c15-b8db-1258b8b9e0fc"
+    },
+    {
+      "claim_id": "ebdffc30-c1c4-4b60-a985-ca8a404070f5",
+      "result_id": "c1ae8054-6f03-4c15-b8db-1258b8b9e0fc"
+    },
+    {
+      "claim_id": "e08fbbf9-a839-494a-9e69-beb4cd5b656d",
+      "result_id": "d50e2c68-6171-4328-82ee-a8501f44baf9"
+    },
+    {
+      "claim_id": "75159d8c-b7b5-4313-b6f9-e0be8863b054",
+      "result_id": "d50e2c68-6171-4328-82ee-a8501f44baf9"
+    },
+    {
+      "claim_id": "0068766c-98ce-41a7-9b3f-23b49fd355b9",
+      "result_id": "d50e2c68-6171-4328-82ee-a8501f44baf9"
+    },
+    {
+      "claim_id": "ccdc5b99-524c-4ca0-8690-77b5ff20623f",
+      "result_id": "f1250f1b-1a44-4e81-b27b-fc637b96dd62"
+    },
+    {
+      "claim_id": "d5fea275-abb9-45db-aef0-331ab7c48de0",
+      "result_id": "f1250f1b-1a44-4e81-b27b-fc637b96dd62"
+    },
+    {
+      "claim_id": "1fe962ed-94f2-44bf-9682-de2f45a58f1b",
+      "result_id": "f1250f1b-1a44-4e81-b27b-fc637b96dd62"
+    },
+    {
+      "claim_id": "6868c7eb-905b-4ed5-bb53-5a404b66b346",
+      "result_id": "f1250f1b-1a44-4e81-b27b-fc637b96dd62"
+    },
+    {
+      "claim_id": "f179b65a-a941-4fa4-be6e-a73a60bc86f6",
+      "result_id": "f1250f1b-1a44-4e81-b27b-fc637b96dd62"
+    },
+    {
+      "claim_id": "3841e50d-486f-4c14-a230-e4c31be0db42",
+      "result_id": "fed7417b-9122-4f82-b479-6b6a524cad28"
+    },
+    {
+      "claim_id": "919a76f8-d364-4f9f-bb5e-ba24393cb78c",
+      "result_id": "fed7417b-9122-4f82-b479-6b6a524cad28"
+    },
+    {
+      "claim_id": "5388410b-b50f-4485-881a-cf98e3d7fc28",
+      "result_id": "fed7417b-9122-4f82-b479-6b6a524cad28"
+    },
+    {
+      "claim_id": "00041662-81c2-478e-ab68-aaf70820a04c",
+      "result_id": "fed7417b-9122-4f82-b479-6b6a524cad28"
+    },
+    {
+      "claim_id": "136031d1-73d2-4ce9-97cc-f75cba02df2b",
+      "result_id": "1c6cb426-cc14-4064-be64-2664224b8f67"
+    },
+    {
+      "claim_id": "2b7072a8-91c0-47ed-b223-dcc951d1d6cf",
+      "result_id": "1c6cb426-cc14-4064-be64-2664224b8f67"
+    },
+    {
+      "claim_id": "bfaa4df2-b037-4d7e-a6fc-6ade1b0bc94c",
+      "result_id": "1c6cb426-cc14-4064-be64-2664224b8f67"
+    },
+    {
+      "claim_id": "0d29fa04-9251-4c1f-9d1c-ac02cf3d8b0c",
+      "result_id": "1c6cb426-cc14-4064-be64-2664224b8f67"
+    },
+    {
+      "claim_id": "24f285ce-4e77-4f38-81f4-1089adfe4c4b",
+      "result_id": "c2b72ade-da11-48c3-8afa-dccb77dcc663"
+    },
+    {
+      "claim_id": "98b466bf-c8e7-4f5e-bd29-89f03f526f75",
+      "result_id": "c2b72ade-da11-48c3-8afa-dccb77dcc663"
+    },
+    {
+      "claim_id": "8c32af9f-68ad-4142-ac99-0c5635644d0e",
+      "result_id": "c2b72ade-da11-48c3-8afa-dccb77dcc663"
+    },
+    {
+      "claim_id": "c3df71ff-fc4f-4f64-b007-8a16f87f3d37",
+      "result_id": "c2b72ade-da11-48c3-8afa-dccb77dcc663"
+    },
+    {
+      "claim_id": "54df016b-c1dd-4ad0-a57b-117b05a9660e",
+      "result_id": "b7a402db-d8a4-422d-9c64-6a5ab3bf48a4"
+    },
+    {
+      "claim_id": "b994db36-255b-44e7-88cd-2032df3702e0",
+      "result_id": "b7a402db-d8a4-422d-9c64-6a5ab3bf48a4"
+    },
+    {
+      "claim_id": "dc5a1b3d-f5e9-4070-8a1a-575564eb451b",
+      "result_id": "b7a402db-d8a4-422d-9c64-6a5ab3bf48a4"
+    },
+    {
+      "claim_id": "66e6f692-bf9c-4bae-b757-d41d60bb5f14",
+      "result_id": "7421690d-dd68-4290-9d95-44b229d04a65"
+    },
+    {
+      "claim_id": "adb1e1f9-53dc-4ae9-8150-58f4d2d601b2",
+      "result_id": "7421690d-dd68-4290-9d95-44b229d04a65"
+    },
+    {
+      "claim_id": "1c385a01-0427-4cbb-b748-c319890a9a41",
+      "result_id": "7421690d-dd68-4290-9d95-44b229d04a65"
+    },
+    {
+      "claim_id": "3e7394ec-566b-4b73-afcc-f70b29fd023d",
+      "result_id": "7421690d-dd68-4290-9d95-44b229d04a65"
+    },
+    {
+      "claim_id": "e4b4340b-0944-4c4a-acdd-c167ec5d6bdf",
+      "result_id": "7421690d-dd68-4290-9d95-44b229d04a65"
+    },
+    {
+      "claim_id": "e41b80c0-e3b4-46f0-8989-92cde2a48775",
+      "result_id": "1a3b4052-0e78-48e4-a039-3e4827e0e228"
+    },
+    {
+      "claim_id": "7af41a98-d82d-44b3-a640-cb7ee0e19b03",
+      "result_id": "1a3b4052-0e78-48e4-a039-3e4827e0e228"
+    },
+    {
+      "claim_id": "1f8088d9-2aa3-491d-a383-aa20d61d6a17",
+      "result_id": "1a3b4052-0e78-48e4-a039-3e4827e0e228"
+    },
+    {
+      "claim_id": "70059099-012a-4e11-af7d-7f566ce78516",
+      "result_id": "1a3b4052-0e78-48e4-a039-3e4827e0e228"
+    },
+    {
+      "claim_id": "2c01323a-3508-497c-a60a-e2af7549b313",
+      "result_id": "ba0b7ce9-18ac-4687-8f32-5c92fb1c9b37"
+    },
+    {
+      "claim_id": "28873b47-4349-4a0c-ab18-cd8029f2be19",
+      "result_id": "ba0b7ce9-18ac-4687-8f32-5c92fb1c9b37"
+    },
+    {
+      "claim_id": "880ade67-1f5b-4baf-8d6c-0b09514ac0c2",
+      "result_id": "ba0b7ce9-18ac-4687-8f32-5c92fb1c9b37"
+    },
+    {
+      "claim_id": "b137b1e9-9597-4d43-a68c-6dcb3a0ba0a2",
+      "result_id": "ba0b7ce9-18ac-4687-8f32-5c92fb1c9b37"
+    },
+    {
+      "claim_id": "8c8fe810-ea3f-40c5-8d91-f3733db3c002",
+      "result_id": "ba0b7ce9-18ac-4687-8f32-5c92fb1c9b37"
+    },
+    {
+      "claim_id": "dea9a894-54aa-4f4e-a33d-e80548e87806",
+      "result_id": "ba0b7ce9-18ac-4687-8f32-5c92fb1c9b37"
+    },
+    {
+      "claim_id": "e20ed4e3-13f8-481e-a08e-c2030a12ec0d",
+      "result_id": "ba0b7ce9-18ac-4687-8f32-5c92fb1c9b37"
+    },
+    {
+      "claim_id": "49983d47-753c-4309-8d66-45c39c377ad7",
+      "result_id": "3c4c5252-cca0-42bb-ac4a-098707dd2d00"
+    },
+    {
+      "claim_id": "f0fbbfc1-c222-4078-bbcb-cce3039e0783",
+      "result_id": "3c4c5252-cca0-42bb-ac4a-098707dd2d00"
+    },
+    {
+      "claim_id": "78dafd2d-9492-488f-8a76-16aff5133cf2",
+      "result_id": "3c4c5252-cca0-42bb-ac4a-098707dd2d00"
+    },
+    {
+      "claim_id": "c522c5ba-0ad7-4c5d-aaa8-9366a79bf1ff",
+      "result_id": "3c4c5252-cca0-42bb-ac4a-098707dd2d00"
+    },
+    {
+      "claim_id": "8f5868ad-77d7-4159-94a9-208e24369c6a",
+      "result_id": "3c4c5252-cca0-42bb-ac4a-098707dd2d00"
+    },
+    {
+      "claim_id": "120c6a85-5a64-4268-9708-549f960f3f68",
+      "result_id": "71c2b98a-4d69-453d-a2b9-b81ce72b26c9"
+    },
+    {
+      "claim_id": "1da97fdf-572e-4592-b3e3-1acbeadc0ef2",
+      "result_id": "71c2b98a-4d69-453d-a2b9-b81ce72b26c9"
+    },
+    {
+      "claim_id": "87b8d552-72e5-4d9b-9b3c-c61929db89f9",
+      "result_id": "71c2b98a-4d69-453d-a2b9-b81ce72b26c9"
+    },
+    {
+      "claim_id": "215a00bf-f93a-40a9-a70b-a95f20e92980",
+      "result_id": "dd428db2-0bbf-41ef-9b43-5404a13dd00c"
+    },
+    {
+      "claim_id": "db1abb26-3eec-41dc-b2e8-f666d0da06b1",
+      "result_id": "dd428db2-0bbf-41ef-9b43-5404a13dd00c"
+    },
+    {
+      "claim_id": "38a50558-cbba-472a-b6bc-420140b05f86",
+      "result_id": "dd428db2-0bbf-41ef-9b43-5404a13dd00c"
+    },
+    {
+      "claim_id": "ceebd787-9303-4b1a-91c7-3707cd21c627",
+      "result_id": "dd428db2-0bbf-41ef-9b43-5404a13dd00c"
+    },
+    {
+      "claim_id": "b22dcaa4-c5ce-44fc-b7ef-6b28561ef625",
+      "result_id": "dd428db2-0bbf-41ef-9b43-5404a13dd00c"
+    },
+    {
+      "claim_id": "6f280eee-c9c3-442f-9eea-52592cdbaaa3",
+      "result_id": "12ba4f54-0770-4104-be63-d814c2f09697"
+    },
+    {
+      "claim_id": "d5e5a208-53e5-4506-b20f-584d972d130e",
+      "result_id": "12ba4f54-0770-4104-be63-d814c2f09697"
+    },
+    {
+      "claim_id": "9bd13338-cf84-46b3-938c-6ab09ae1a91a",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "dc2cce85-7e4d-4a49-894d-fcc90c703def",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "998e02f4-3050-4744-b3c2-e71d4d2fb7e4",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "5eb3b03e-58d1-40ff-961b-872b4317d871",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "8563e246-b1c3-440d-8ae8-a17cb7db6099",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "2a090b02-4916-4bb5-9c49-90fcc156dde6",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "9b102b82-50b4-4f92-84ff-2b8b1f397353",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "272f7bc4-10b1-4837-93f0-197c37fb605f",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "caf7b785-0411-4aee-95d1-497dd8bf8ad3",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    },
+    {
+      "claim_id": "2595ab7e-fade-4a2c-a285-6563ddd104a8",
+      "result_id": "2d24b2db-485f-4d2a-894b-e91ef73e1190"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C13",
+      "C17",
+      "C19",
+      "C20"
+    ],
+    "result": "p-EGFR is packaged at constant mean amounts in endosomes that are independent of EGF concentration and endosome size. After ~20 minutes of EGF stimulation, the mean p-EGFR content per endosome stabilizes to a constant level that remains fairly constant across nearly three orders of magnitude of EGF concentration, and this amount is independent of endosome area at steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measurements using FRET microscopy (C1, C11, C13, C17) and analysis of endosome size relationships (C19, C20) consistently demonstrate constant mean p-EGFR packaging. The data span multiple EGF concentrations and time points with appropriate controls, and the findings are validated with an independent antibody-based method (C9). The statistical analysis appears robust with sufficient sample sizes (~15,000 endosomes from >200 cells per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Cells respond to increasing EGF concentrations by increasing the number of p-EGFR-positive endosomes while maintaining constant mean p-EGFR per endosome. In contrast, total EGFR per endosome increases linearly with EGF concentration, and the number of EGFR-positive endosomes saturates at low EGF concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by dose-response data across EGF concentrations from 0.05 to 10 ng/ml (C2, C14, C15, C16). The differential behavior of total EGFR versus p-EGFR provides internal consistency and demonstrates that the constant p-EGFR packaging is not simply a consequence of receptor saturation. The data are presented with appropriate statistical measures and replicate numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C75"
+    ],
+    "result": "The kinetics of EGFR and p-EGFR in endosomes show distinct temporal patterns. Total endosomal EGFR peaks at 15 min while p-EGFR peaks at 10 min, and dephosphorylation of p-EGFR occurs faster than EGFR degradation (\u03c4decay p-EGFR = 30.97 \u00b1 1.69 vs \u03c4decay EGFR = 88.13 \u00b1 14.49). These measurements are consistent with previously reported EGFR transport and phosphorylation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal kinetics are well-characterized with quantitative decay constants (C8) and are validated against published literature (C9). The differential kinetics of phosphorylation versus degradation (C6, C7, C8) provide mechanistic insight and are consistent with known biology. The number of p-EGFR endosomes decays with similar kinetics to total p-EGFR signal (C75), providing internal consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C76"
+    ],
+    "result": "The distribution of p-EGFR per endosome narrows over time, becoming almost twofold narrower than the distribution of total EGFR by 30 min. At early time points (3 min), receptors in clathrin-coated vesicles are responsible for the width of the distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The narrowing of p-EGFR distribution is quantitatively demonstrated through comparison with EGFR distribution at multiple time points (C12, Figure 1D, Figure 1\u2014figure supplement 7). The interpretation regarding CCVs at early time points (C76) is reasonable given the known kinetics of endocytosis, though this is more inferential. The data support a progressive refinement of p-EGFR packaging over time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The packaging mechanism of p-EGFR in endosomes is saturable at high EGF concentrations, as demonstrated by loss of constant mean p-EGFR per endosome at high EGF doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The saturation of the packaging mechanism is demonstrated experimentally at high EGF concentrations (Figure 1\u2014figure supplement 8). This finding is important for establishing that the constant packaging is an active regulatory mechanism rather than a passive consequence of the system, and it provides boundary conditions for the mathematical model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The packaging of p-EGFR in endosomes occurs in primary mouse hepatocytes, indicating this is not peculiar to cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the claim states that similar p-EGFR packaging was observed in primary hepatocytes, the data are not shown ('data not shown'). Without access to these data, it is impossible to evaluate the quality of the measurements, statistical significance, or whether the same rigorous quantification methods were applied. This is an important control but requires data presentation for proper evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C78"
+    ],
+    "result": "p-EGFR localizes predominantly to early endosomes marked by EEA1 (~80% colocalization throughout the time course), with minimal presence in APPL1-positive compartments (<10% after 15 min) or LAMP-1-positive late endosomes/lysosomes. The fraction of p-EGFR in EEA1-positive endosomes remains constant over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The colocalization data (C22, C23, C24) clearly establish that p-EGFR packaging occurs in early endosomes. The constant fraction in EEA1-positive endosomes over time (C78) rules out progressive trafficking to other compartments as an explanation for the observations. The data are quantitative and include appropriate markers for different endosomal compartments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "p-EGFR is accessible to antibodies upon digitonin permeabilization and is not sequestered within intraluminal vesicles (ILVs), while a large fraction of total EGFR is not accessible, reflecting sequestration into ILVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential permeabilization assay (Figure 2A,B) provides clear evidence that p-EGFR remains on the cytoplasmic face of endosomes rather than being sequestered in ILVs. This is an important mechanistic finding that explains how p-EGFR can remain signaling-competent. The method is well-established in the literature and appropriately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C79",
+      "C80"
+    ],
+    "result": "The kinetics and distribution of ubiquitinated EGFR (ub-EGFR) differ significantly from p-EGFR. ub-EGFR peaks at 30 min (versus 15 min for p-EGFR), has a distribution similar to total EGFR but wider than p-EGFR, and the appearance of p-EGFR precedes ub-EGFR. EGFR ubiquitylation is required for internalization and depends on EGFR phosphorylation and c-Cbl recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal and distributional differences between ub-EGFR and p-EGFR (C27, C29) are clearly demonstrated and consistent with known biology (C28, C79). The interpretation regarding deubiquitylation prior to ILV sequestration (C80) is reasonable given the kinetics and supported by literature. These data establish that p-EGFR packaging is distinct from ubiquitylation-dependent sorting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Super-resolution microscopy reveals that p-EGFR forms clusters in endosomes that decrease in size between 10 and 30 min. Quantitative analysis estimates approximately 102 \u00b1 38 EGFR molecules and 76 \u00b1 29 p-EGFR molecules per endosome at 30 min, which would require ~12 clathrin-coated vesicles for delivery. Independent structural calculations estimate 83 \u00b1 25 receptors could fit in the p-EGFR cluster area visualized by dSTORM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The super-resolution imaging (C30) provides direct visualization of p-EGFR clusters, and the quantification uses two independent methods (photobleaching-based counting and structural calculations) that yield remarkably consistent estimates (C31, C32, C34). The calculation regarding CCV delivery (C33) provides useful context. However, the photobleaching method is novel and would benefit from more detailed validation. The agreement between methods strengthens confidence in the estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "RNAi screening of ESCRT components reveals that only Hrs depletion causes continuous accumulation of p-EGFR in endosomes and increases p-EGFR cluster size. Down-regulation of ESCRT-II (Snf8) and ESCRT-III (Vps24) components reduces EGFR sequestration into ILVs but does not affect p-EGFR packaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAi screen data (C35, C36, C37) clearly distinguish the role of Hrs from other ESCRT components in regulating p-EGFR packaging. The finding that ILV formation (Snf8/Vps24) is separable from p-EGFR packaging (C37) is important mechanistically. The use of multiple siRNAs per gene and super-resolution imaging to validate the Hrs phenotype strengthens the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The kinetics of Shc1 recruitment to endosomes precisely mimic the kinetics of p-EGFR, indicating that p-EGFR clusters are signaling competent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallel kinetics of Shc1 and p-EGFR (Figure 2\u2014figure supplement 5) provide functional evidence that the p-EGFR clusters can recruit downstream signaling components. This is an important validation that the observed p-EGFR packaging is functionally relevant for signaling. However, the claim that this 'argues' for signaling competence is somewhat inferential\u2014direct measurement of signaling output would be stronger.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "EGFR kinase activity is necessary to maintain p-EGFR levels in endosomes. At low EGF concentrations, kinase inhibitors do not significantly reduce total p-EGFR but cause accumulation in fewer, larger endosomes. At high EGF concentrations, kinase inhibitors cause sharp reduction in total p-EGFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinase inhibitor experiments (C39, C40, C41) demonstrate concentration-dependent effects that are consistent with the saturable packaging mechanism. The interpretation that kinase activity maintains p-EGFR levels (C42) is well-supported by the data. The differential effects at low versus high EGF concentrations provide insight into the mechanism and are consistent with the saturation observed in C18.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "RNAi screening identifies five phosphatases (PTP4A1, PTPN11, PTPN9, PTPN18, PTPRK) that increase p-EGFR in individual endosomes when depleted. PTPN11 is an EGFR interactor whose activity is enhanced upon tyrosine phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphatase screen (C43) identifies multiple candidates using appropriate criteria (multiple siRNAs per gene, effects on both total and per-endosome p-EGFR). The information about PTPN11 (C44) is from literature and provides mechanistic context. However, the screen identifies candidates but does not establish which are direct regulators of the packaging mechanism versus having indirect effects. Further validation would strengthen these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "A mathematical model incorporating sigmoidal dependency of p-EGFR dephosphorylation rate on p-EGFR amount per endosome successfully describes the experimental observations. A model without this non-linear term cannot correctly describe mean p-EGFR per endosome. The model predicts that total dephosphorylation rate depends on endosome fusion/fission rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical modeling (C45, C46) appropriately incorporates the key experimental observations into a mechanistic framework. The comparison with a linear model (C47) demonstrates the necessity of the non-linear dephosphorylation term. The prediction regarding fusion/fission rate dependency (C48) is testable and is subsequently validated experimentally. The model fitting appears appropriate, though more details on parameter identifiability and sensitivity analysis would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Mathematical modeling predicts that the p-EGFR packaging mechanism confers both robustness and regulation to signaling output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical model (Figure 3) demonstrates that the packaging mechanism provides robustness to variations in EGF concentration and receptor expression while allowing regulation through modulation of endosome fusion/fission. This is supported by the model's ability to reproduce experimental observations and make testable predictions. However, the claim would be strengthened by more explicit demonstration of robustness metrics and comparison with alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Partial down-regulation of early endosomal fusion machinery (EEA1, Rabenosyn5, Vps45) causes mild redistribution of EGFR to smaller endosomes without affecting surface EGFR levels, uptake kinetics, or recycling/degradation. The packaging of p-EGFR per endosome remains constant, but the total number of p-EGFR endosomes and their lifetime increase. The mathematical model with ~40% reduced fusion rate reproduces the experimental increase in p-EGFR endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fusion machinery knockdown experiments (C49-C54) are well-controlled, showing specific effects on endosome size distribution without affecting other aspects of EGFR trafficking. The preservation of constant p-EGFR packaging (C53) while increasing endosome number (C54) is a key prediction of the model that is experimentally validated. The agreement between model predictions and experimental data (C55) strengthens both the model and the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Reducing endosome fusion increases both the amplitude and duration of Erk1/2 phosphorylation upon EGF stimulation, and increases c-Fos phosphorylation after 30 min of EGF stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The signaling measurements (C56, C57) demonstrate functional consequences of altered endosome fusion on downstream signaling. The data are quantitative with appropriate replicates and statistical analysis. This validates the prediction that modulating p-EGFR distribution affects signaling output. However, the magnitude of effects and their biological significance could be better contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Different growth factors cause specific changes in endosome number and size in various cell systems. HGF causes a shift toward smaller endosomes in hepatoblasts while EGF has the opposite effect. NGF causes a shift toward smaller endosomes in PC12 cells compared to EGF, and NGF is distributed to more numerous smaller endosomes than EGF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis across growth factors and cell types (C58, C59, C60, C61) demonstrates that endosome size distribution is growth factor-specific and correlates with known signaling outcomes (sustained vs. transient Erk activation). The use of primary cells (hepatoblasts) and a well-established model system (PC12) strengthens generalizability. The data are quantitative and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C62"
+    ],
+    "result": "Redistributing EGF to a larger number of small endosomes by reducing endosome fusion is sufficient to reprogram PC12 cell fate, switching EGF from inducing proliferation to inducing differentiation (increased neurite formation, \u03b2-III tubulin expression, reduced proliferation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell fate reprogramming experiments (C62) provide strong evidence that endosome distribution is causally linked to signaling specificity. The use of multiple differentiation markers (neurite formation, \u03b2-III tubulin, EdU incorporation) and comparison with NGF as a positive control strengthen the conclusions. The magnitude of the effect is substantial and statistically significant. This is a key result demonstrating biological relevance of the packaging mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C63",
+      "C86"
+    ],
+    "result": "The authors propose that packaging of p-RTKs in endosomes is a general mechanism to ensure fidelity and specificity of signaling responses, and that the shape of endosomal network distribution can serve as a predictive parameter of cellular signaling status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are proposed general principles (C63, C86) based on observations with EGFR and limited data with other growth factors. While the EGFR data are strong and the observations with HGF and NGF are supportive, establishing this as a 'general mechanism' for RTKs would require systematic analysis of additional RTK systems. The proposals are reasonable hypotheses that warrant further investigation but are not yet fully established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The manuscript contextualizes findings within existing literature on RTK signaling specificity, endosomal signaling, and the debate over whether EGFR signals primarily from the plasma membrane or endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C64-C70) accurately represent established knowledge from the literature and provide appropriate context for the current work. The citations appear appropriate and the characterization of the field, including conflicting views on endosomal signaling (C69), is fair and balanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The HeLa EGFR-GFP BAC cell line used has approximately twofold higher EGF uptake compared to endogenous EGFR but similar transport kinetics. Fixation conditions do not significantly alter endosome morphology or area compared to live cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These validation experiments (C71-C74) are important controls demonstrating that the BAC cell line is a reasonable model system and that fixation artifacts are minimal. The data support the use of this system for the quantitative measurements. However, a twofold overexpression could still have subtle effects on signaling dynamics that are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The pool of p-EGFR in EEA1-positive endosomes decays faster than total EGFR after 10 min of EGF stimulation (\u03c4decay p-EGFR = 37.08 \u00b1 4.19 vs \u03c4decay EGFR = 56.03 \u00b1 5.72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential decay kinetics in EEA1-positive endosomes (C77) are quantitatively characterized and consistent with the overall kinetics described in C8. This provides additional spatial resolution to the temporal dynamics and supports the conclusion that dephosphorylation occurs faster than degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose that RTK stimulation can modulate endosome fusion through various mechanisms (p38 MAP kinase phosphorylation of EEA1/Rabenosyn-5, modulation of Rab5 nucleotide cycle), and predict that RTK ligands stimulating fusion will have short phosphorylation half-lives while those favoring smaller endosomes will have long half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic proposals (C81, C82, C83) are well-supported by literature and provide plausible explanations for how different growth factors could modulate endosome fusion. The predictions (C84, C85) are logical extensions of the model and experimental observations, though they remain to be systematically tested across multiple RTK systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The results support the concept of endosomes as signaling platforms and reconcile conflicting views in the literature by proposing that only the small fraction of p-RTK in endosomes is protected from inactivation and can contribute to signal propagation. Blocking endocytosis artificially increases active receptors at the cell surface, bypassing normal endosomal regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims (C87, C88, C90) provide a coherent framework for reconciling the current findings with conflicting literature. The proposal that endosomal p-EGFR represents a protected, signaling-competent pool is well-supported by the data. The explanation for why endocytosis inhibition affects signaling (C90) is reasonable and consistent with the model.",
+    "result_type": "MINOR"
+  }
+]

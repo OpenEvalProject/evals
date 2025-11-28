@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "TNF\u03b1 treatment regulates thousands of transcripts including protein-coding genes and various classes of lncRNAs. RNA-seq analysis identified 3596 protein-coding genes, 48 annotated lncRNAs, 54 pseudogene lncRNAs, and 64 de novo lncRNAs regulated by TNF\u03b1, with distinct expression patterns across different RNA classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data with >20 million mapped reads per condition (C40) provides robust quantitative evidence. The identification of known NF-\u03baB targets (C41) validates the approach. The differential patterns between RNA classes (C44-C51) are clearly documented with specific counts. The oscillatory expression pattern (C42) is consistent with known NF-\u03baB dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "LncRNAs show stimulus-specific expression patterns in response to different inflammatory signals. Different lncRNAs are selectively induced by specific combinations of cytokines (TNF\u03b1, IL-1\u03b2) and TLR agonists, suggesting lncRNAs may serve as internal representations of cellular exposure to distinct inflammatory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qRT-PCR validation data (C59-C66) demonstrates clear stimulus-specific patterns for multiple lncRNAs. The experimental design tests multiple stimuli systematically. However, C68 is speculative about lncRNAs serving as 'internal representations' - this is an interesting hypothesis but goes beyond what the data directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Several lncRNAs including Lethe are directly regulated by NF-\u03baB subunit RelA. RelA knockout experiments and ChIP data demonstrate that Lethe and Gp96 Convergent are direct transcriptional targets of RelA, while other lncRNAs show RelA-independent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of RelA knockout data (C69-C71) and ChIP showing direct RelA binding to promoters (C72-C73) provides strong evidence for direct transcriptional regulation. The differential dependence on RelA across lncRNAs is well-documented. The inference in C74 is appropriately supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "TNF\u03b1-induced lncRNAs show transcript-specific subcellular localization patterns. Lethe and several other lncRNAs are predominantly chromatin-associated, while others are nuclear or cytoplasmic. PolyA-selected Lethe remains chromatin-associated, indicating full-length transcripts localize to chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The subcellular fractionation data (C75-C79) is complemented by H3-RIP (C83-C84) and polyA selection experiments (C81-C82). Multiple orthogonal approaches support the chromatin localization of Lethe. The speculation in C80 about functional implications is reasonable but goes slightly beyond the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C55",
+      "C56",
+      "C64",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Lethe is a 697 bp pseudogene lncRNA selectively induced by proinflammatory cytokines (TNF\u03b1, IL-1\u03b2) but not TLR agonists or other stimuli. Lethe is independently regulated from neighboring genes Gmeb1 and Ythdf2, showing a characteristic NF-\u03baB oscillatory expression pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of Lethe is comprehensive with RNA-seq data (C85-C87), qRT-PCR validation (C32-C34, C55, C64), and genomic context analysis (C86, C88). The differential expression from neighboring genes (C55, C88) strongly supports independent regulation (C89). The stimulus specificity is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Lethe is directly regulated by RelA independent of its pseudogene family members and proximal genes. ChIP demonstrates RelA binding to the Lethe promoter, and Lethe induction is abrogated in RelA knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of ChIP data showing direct RelA binding (C72) and knockout data showing RelA dependence (C71) provides strong mechanistic evidence. The independence from family members is demonstrated by differential expression patterns. This result is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C90"
+    ],
+    "result": "Lethe is induced by the glucocorticoid receptor agonist dexamethasone but not by other nuclear hormone receptor agonists tested (vitamin D, methyltrienolone, estradiol). This makes Lethe responsive to both inflammatory stimuli and anti-inflammatory therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qRT-PCR data (C91-C92) clearly demonstrates selective induction by dexamethasone. The connection to glucocorticoid receptor is supported by established knowledge (C90). This finding is interesting as it links inflammatory and anti-inflammatory pathways, though the mechanism of GR-mediated induction is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Lethe expression decreases dramatically with organismal age in spleen tissue, showing 20-fold reduction in males and 160-fold reduction in females. Lethe is tissue-specific, expressed in spleen but not detectable in other tissues examined. Control genes (Nfkbia, Gmeb1) do not change with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qRT-PCR data from young and old mice (C96) provides clear quantitative evidence with appropriate controls (C97). The tissue specificity is documented (C95). The sex-specific difference in age-related decline is notable. Sample size (5 mice per group) and statistical analysis (ANOVA) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "ASO-mediated knockdown of Lethe leads to increased expression of NF-\u03baB target genes (Nfkbia and Nfkb2), suggesting Lethe acts as a repressor of NF-\u03baB activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The ASO knockdown shows increased target gene expression (C100-C101), supporting a repressive role. However, the effect on Nfkbia is only significant for one of two ASOs tested (C100), raising concerns about reproducibility. Additional validation with alternative knockdown methods would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Lethe functions in negative feedback signaling to NF-\u03baB. Overexpression of Lethe represses NF-\u03baB reporter gene activity in a dose-dependent manner, and this repression requires intact \u03baB binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The luciferase reporter assays (C103-C104) demonstrate dose-dependent repression with appropriate GFP controls. The requirement for \u03baB binding sites (C105) confirms NF-\u03baB specificity. This provides strong functional evidence for Lethe's role in negative feedback, complementing the knockdown data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C121"
+    ],
+    "result": "Lethe interacts with NF-\u03baB subunit RelA to inhibit RelA DNA binding and target gene activation. RNA-IP demonstrates direct Lethe-RelA interaction, ChIP shows reduced RelA occupancy at target genes upon Lethe overexpression, and EMSA demonstrates Lethe blocks RelA homodimer DNA binding without affecting RelA protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal approaches converge on the mechanism: RNA-IP shows direct binding (C109), ChIP shows reduced chromatin occupancy (C106), EMSA shows blocked DNA binding (C111), and immunoblot rules out protein level changes (C107). The specificity for RelA homodimers (C111) and selectivity among lncRNAs (C110) strengthen the conclusion. This is a well-supported molecular mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Lethe functions as a negative feedback inhibitor of NF-\u03baB signaling through a decoy lncRNA mechanism, similar to Gas5 and PANDA lncRNAs that sequester transcription factors from their DNA binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of Lethe as a negative feedback inhibitor (C122) is well-supported by the functional data. The classification as a 'decoy lncRNA' (C123) is appropriate given the mechanism of sequestering RelA from DNA. The comparison to Gas5 and PANDA (C124) provides useful context, though these are analogies rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Polyadenylated Lethe is highly associated with chromatin fractions, though the functional pool location (chromatin vs. nucleoplasm) cannot be definitively determined. Lethe fused to SV40 polyA signal retains inhibitory function, suggesting chromatin tethering as primary transcript is not strictly required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The polyA selection and fractionation data (C125) demonstrates chromatin association of mature transcripts. The acknowledgment of uncertainty (C126) is appropriate scientific caution. The SV40 polyA experiment (C127-C128) provides important mechanistic insight, though it doesn't rule out that chromatin localization may enhance function in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C94",
+      "C129",
+      "C130"
+    ],
+    "result": "Aging is associated with increased NF-\u03baB activity, and the age-associated loss of Lethe expression may contribute to increased NF-\u03baB activity in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The connection between aging and NF-\u03baB activity is well-established (C7, C94, C129). However, the claim that Lethe loss causes increased NF-\u03baB in aging (C130) is speculative. While the correlation is observed, causation is not demonstrated. This would require gain-of-function experiments in aged animals or demonstration that Lethe restoration reduces age-related NF-\u03baB activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "Anti-inflammatory therapeutics like dexamethasone may act in part by directly activating the negative feedback system of pro-inflammatory signaling through Lethe induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is an interesting hypothesis based on the observation that dexamethasone induces Lethe. However, this is highly speculative (C131). To support this claim would require: (1) demonstrating that Lethe induction is necessary for dexamethasone's anti-inflammatory effects, (2) showing the time course of Lethe induction aligns with therapeutic effects, and (3) testing whether Lethe knockdown reduces dexamethasone efficacy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Lethe's sex-specific age-dependent downregulation may be relevant to inflammatory diseases with higher female incidence (lupus, rheumatoid arthritis, ulcerative colitis), suggesting Lethe may have a protective role in inflammation that is lost with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of greater age-related Lethe loss in females (C96) is interesting in the context of sex differences in inflammatory disease (C132). However, the connection to disease susceptibility (C133) is highly speculative. This would require: (1) measuring Lethe in disease models or patients, (2) demonstrating that Lethe levels correlate with disease severity, and (3) showing that Lethe manipulation affects disease outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Seven Gapdh pseudogenes were identified as induced by TNF\u03b1 in RNA-seq but could not be validated by qRT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The failure to validate the Gapdh pseudogene induction (C53) suggests these may be false positives in the RNA-seq data, possibly due to mapping ambiguity or cross-hybridization. This negative result is important for interpreting the reliability of pseudogene expression measurements and highlights the need for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Most lncRNAs are co-regulated with their protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qRT-PCR validation data supports this general observation (C54). However, the notable exception of Lethe (C55-C56) demonstrates that independent regulation also occurs. This result provides context for understanding lncRNA regulation but is not a primary focus of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Many lncRNAs are uniquely regulated by specific stimuli in a RelA-dependent fashion, expanding the repertoire of specific transcriptional programs downstream of inflammatory and innate immunity signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic characterization of lncRNA responses to different stimuli and RelA dependence (C117) is well-documented. The conclusion that this expands the transcriptional repertoire (C118) is a reasonable inference from the data, though somewhat general. This represents an important conceptual advance in understanding inflammatory signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C145",
+      "C146"
+    ],
+    "result": "Some pseudogenes may function as lncRNAs, highlighting the need to accurately annotate pseudogenes in high-throughput analysis and further explore their roles throughout the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional characterization of Lethe as a pseudogene lncRNA (C137) provides proof-of-principle. The recommendations for improved annotation and further exploration (C145-C146) are reasonable conclusions from this work. This represents an important conceptual contribution to the field.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Loss of fcho-1 phenocopies AP2 subunit mutations in C. elegans, producing similar morphological defects including the characteristic 'jowls' phenotype, suggesting that FCHO-1 and AP2 function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish the phenotypic similarity between fcho-1 and AP2 mutants through genetic screens, molecular characterization of deletion alleles, and imaging data (Figure 1A, Figure 1\u2014figure supplement 1B). The epistasis analysis (C16) further supports that these proteins act in the same pathway. The evidence is consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "FCHo stabilizes AP2 clusters on the plasma membrane and reduces AP2 mobility, as demonstrated by FRAP analysis showing approximately three-fold faster fluorescence recovery in fcho-1 mutants compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by quantitative FRAP data (Figure 1C,D) showing faster recovery kinetics in fcho-1 mutants. The imaging data clearly demonstrates that AP2 remains membrane-associated but fails to form stable clusters in the absence of FCHo. The results are consistent with prior work (C11, C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "AP2-dependent endocytosis is defective in fcho-1 mutants, as shown by accumulation of a fluorescent cargo with a tyrosine recognition motif on the cell surface, and FCHO-1 acts in the same pathway as AP2 based on epistasis analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by cargo assay data (Figure 1E, Figure 1\u2014figure supplement 1D) showing significant cargo accumulation in both fcho-1 and AP2 mutants. The epistasis analysis (C16) demonstrates no enhancement in double mutants, supporting a single pathway model. The functional assay provides direct evidence of endocytic defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A genetic suppressor screen identified 71 dominant missense mutations in AP2 subunits that suppress fcho-1 phenotypes. These mutations cluster at sites predicted to stabilize the closed conformation of AP2, suggesting they destabilize the inactive state and promote the open conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 are supported by comprehensive sequencing data (Figure 2\u2014figure supplement 2) and structural mapping (Figure 2A-C). All 71 suppressors map to AP2 subunits at conserved residues in structurally relevant positions. The classification into four groups (C21) is based on crystal structure analysis. The inference that these mutations destabilize the closed state (C22-C23) is logical but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A TEV protease-sensitivity assay demonstrates that AP2 adopts a more closed, protease-resistant conformation in fcho-1 mutants, with slower mu2 cleavage rates compared to wild-type despite similar protease levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by Western blot data (Figure 3B,C, Figure 3\u2014figure supplement 1B-D) showing differential cleavage kinetics. The experimental design is sound, with appropriate controls for protease expression. The inference that slower cleavage indicates a closed conformation (C27) is reasonable given the structural basis for protease accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Suppressor mutations in AP2 increase protease sensitivity and partially rescue fcho-1 phenotypes, with the degree of rescue correlating with the extent of conformational opening. However, none fully restore cargo endocytosis despite rescuing growth and morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by TEV assay data (Figure 4C), cargo assays (Figure 4B), and starvation assays (Figure 4A). The correlation between protease sensitivity and rescue (C30) is qualitative but consistent. The partial rescue observation (C31-C33) is important and well-documented, suggesting FCHo has additional functions beyond AP2 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Phosphorylation of mu2 at T160 is reduced in fcho-1 mutants and increased in suppressor mutants. Both phospho-defective and phospho-mimetic mutations at T160 suppress fcho-1, suggesting that threonine at this position stabilizes the inactive state and that phosphorylation is a consequence rather than a cause of AP2 opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 are supported by phosphorylation-specific Western blots (Figure 4D) and genetic data (Figure 4A,B). The key insight that both T160A and T160E suppress fcho-1 (C36-C39) is well-documented and supports the model that the threonine itself stabilizes the closed state. The correlation between phosphorylation and protease sensitivity (C42) strengthens the conclusion. The structural caveat (C44) appropriately acknowledges uncertainty about accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Engineered mutations that break (\u03b2E361K, \u03bcK411E) or restore (double mutant) a salt bridge in the closed AP2 conformation demonstrate that the crystallographic closed structure is physiologically relevant and that destabilizing this structure bypasses the requirement for FCHo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 provide strong validation of the structural model through rational design. The salt bridge is identified structurally (C45, Figure 5A), single mutations suppress fcho-1 (C46-C48), and the double mutant reverses suppression (C49-C50), as shown in Figure 5B-E. This reciprocal complementation experiment is a rigorous test of the structural hypothesis and strongly supports the closed-to-open transition model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A conserved ~90 amino acid region in the linker domain of FCHo proteins, termed the AP2 Activator (APA) domain, is necessary and sufficient to rescue fcho-1 mutants. The F-BAR domain is dispensable, while the \u03bc-homology domain is required for full rescue of cargo endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 are supported by systematic domain deletion analysis (Figure 6B) and rescue experiments with APA domains from multiple species (Figure 6C, Figure 7\u2014figure supplement 1A). The data clearly show that the APA domain alone rescues growth, morphology, and AP2 clustering (C59-C60), while constructs lacking the \u03bcHD fail to fully rescue cargo endocytosis (C54). The conservation across species (C61) strengthens the functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The APA domain directly binds the AP2 core complex, as demonstrated by pulldown assays from HEK293 cells, mass spectrometry, in vivo colocalization, and reconstitution with purified recombinant proteins. The APA domain bridges the complex by binding both alpha/sigma and beta/mu hemicomplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 are supported by multiple complementary approaches: silver staining and Western blots (C64, Figure 7A, Figure 7\u2014figure supplement 1B), MudPIT mass spectrometry showing AP2 as the major interactor (C65, Figure 7B), in vivo colocalization (C67, Figure 7\u2014figure supplement 1D), and direct binding with purified proteins (C68-C70, Figure 7C). The convergence of evidence from different experimental systems strongly supports direct binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "FCHo acts upstream of AP2 through direct binding of the APA domain, and this function can be bypassed by constitutively open mutations in AP2. The APA fragment is necessary and sufficient for rescue when overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 synthesize the major findings: phenotypic similarity (C72), genetic suppression (C73), direct binding (C74), and rescue experiments (C75). These conclusions are well-supported by the collective data from genetic, biochemical, and cell biological experiments. The epistatic relationship and direct binding establish FCHo as an upstream activator of AP2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The dwell time of AP2 on the membrane is reduced from 35 to 10 seconds in fcho-1 mutant worms, consistent with observations in cultured cells showing that FCHo stabilizes AP2 at the membrane and promotes long-lived clathrin-coated pits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by FRAP data (C78, Figure 1) and citations to prior work in cultured cells (C76-C77). The consistency between worm and mammalian cell observations (C79) strengthens the conclusion that FCHo's role in stabilizing AP2 is conserved. The quantitative measurements provide clear evidence for reduced membrane dwell time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The current study refines the previous model of FCHo function by showing that the APA domain binds the AP2 core complex directly, rather than acting solely through the appendage domain of the alpha subunit as previously proposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 appropriately contextualize the findings relative to prior work. The pulldown data with purified proteins (C82, Figure 7C) clearly shows that the APA domain does not bind appendages but rather binds the core complex. This refines but does not contradict prior observations of linker-AP2 interactions (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The APA domain is conserved in metazoan FCHo orthologs but absent in yeast Syp1p. Full rescue of cargo endocytosis requires both the APA domain and the \u03bc-homology domain, with the latter binding Eps15 and likely required for cargo recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by sequence analysis (C83), rescue experiments (C84-C85, Figure 6), and MudPIT data showing Eps15 binding (C86, Figure 7\u2014figure supplement 1C). The inference that Eps15 binding is required for cargo endocytosis (C87) is reasonable given the partial rescue phenotype. The evolutionary observation (C83) is interesting but requires more comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The F-BAR domain is not required for rescue of fcho-1 mutants in C. elegans, suggesting its primary function is to localize the APA domain to the membrane rather than to bend membranes for pit formation. However, membrane-binding motifs are conserved in all FCHo/SGIP proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by rescue data showing that constructs lacking the F-BAR domain can rescue fcho-1 phenotypes (C90, Figure 6B). The inference that the F-BAR domain primarily serves to localize the APA domain (C92) is reasonable but somewhat speculative. The observation that membrane-binding domains are conserved (C94) suggests they remain functionally important despite being dispensable in the overexpression rescue context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The gain-of-function mutations in AP2 that bypass fcho-1 provide in vivo support for the open/closed conformational changes observed in crystal structures. However, these mutations do not fully restore all AP2 functions and do not enhance endocytosis in a wild-type background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 appropriately contextualize the structural findings. The suppressor mutations validate the physiological relevance of the crystallographic conformations (C98-C99). The observation that activated mutants don't enhance function in wild-type background (C101, Figure 8) is important and suggests regulatory mechanisms may counteract constitutive activation. The partial rescue (C100) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors propose a model in which FCHo/SGIP proteins evolved to promote endocytosis by binding to and stabilizing the open conformation of AP2, with the coincidental presence of FCHo, cargo, and PIP2 stabilizing the open state to nucleate clathrin-coated pit formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C106 represent the authors' mechanistic model and speculation about function. While the model is consistent with the data presented, several aspects are speculative (C102-C104 are explicitly labeled as speculation). The proposed mechanism (C105-C106) is a reasonable synthesis of the findings but would benefit from additional direct evidence, such as measurements of AP2 conformational dynamics in the presence and absence of FCHo, cargo, and PIP2.",
+    "result_type": "MAJOR"
+  }
+]

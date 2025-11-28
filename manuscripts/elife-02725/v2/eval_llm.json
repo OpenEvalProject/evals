@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "MMR-deficient tumors exhibit a hypermutator phenotype with approximately 50 times more somatic mutations than MMR-proficient tumors, with high validation rates (98% for substitutions, 88% for indels) and no POLE mutations detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by whole-genome sequencing data with appropriate validation experiments. The 50-fold increase in mutations is clearly demonstrated in Figure 1A, validation rates are documented in Figure 1\u2014source data 3, and POLE mutation status was confirmed through mutation analysis. The high validation rates strengthen confidence in the mutation calls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Indels in MMR-deficient tumors are more frequent than substitutions, predominantly affect homopolymers (40-fold enrichment), are 91% less frequent in exons, and 92% result in frameshift mutations suggesting negative clonal selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are supported by comprehensive mutation frequency analysis shown in Figures 1A-D. The enrichment analysis, regional distribution, and functional impact assessment are all data-driven. The inference about negative selection (C7) is reasonable given the reduced exonic indel frequency and high frameshift rate, though direct evidence of selection pressure is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Substitution patterns in MMR-deficient tumors (74% transitions) are similar to germ-line patterns and strongly correlate with de novo mutations, 1000 Genomes data, and human-chimpanzee divergence, but differ from other tumor types, suggesting that human genetic diversity arises through mismatches escaping MMR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are well-supported by comparative analysis shown in Figure 2A. The correlation data are quantitative and the comparisons across multiple datasets strengthen the conclusions. However, C11 represents an inference about population-level processes based on tumor data, which while plausible, extends beyond direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "At both small-scale (dinucleotide, R\u00b2=0.77) and large-scale (1 Mb windows, R\u00b2=0.67) contexts, MMR-deficient tumor substitution patterns highly correlate with germ-line genetic variation, with six genomic features independently correlating with substitution rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by quantitative correlation analyses shown in Figures 2B-E. The R\u00b2 values are clearly stated and the multivariate linear regression modeling appropriately identifies independent predictors. The statistical approach is sound for assessing context-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Replication timing correlates with transitions but not transversions in MMR-deficient tumors, contrasting with other genomes where late S phase transversions increase, suggesting reduced DNA repair fidelity in late S phase in MMR-proficient but not MMR-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by replication timing analysis in Figure 2F with statistical testing. C17 is an inference about mechanism that is reasonable given the data pattern, though the proposed explanations (decreased MMR activity or differential repair windows) are speculative and would require additional mechanistic studies to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Substitutions show a 1.6-fold increase at bases flanking simple repeats (threefold near homopolymers), predominantly converting flanking bases to match the repeat, likely through polymerase slippage similar to bacterial dislocation mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by analysis shown in Figure 2G. The enrichment data are clear and the pattern of base conversion is well-documented. The mechanistic inference about polymerase slippage is reasonable based on the observed pattern and analogy to known bacterial processes, though direct mechanistic evidence is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "G:C>A:T transitions in CpG sites depend on CpG content but inversely correlate with CpG islands, with much larger increases in MMR-deficient tumors (3449 vs 145 transitions) demonstrating replication-independent MMR involvement in deamination repair, and bases outside CpG islands being twice as likely to mutate, indicating DNA methylation contributes to mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are well-supported by data in Figures 2E and 2H. The comparison of CG>TG transitions between MMR-deficient and proficient tumors (C21) provides strong evidence for replication-independent MMR. C23 is an inference about methylation's role that is reasonable given the CpG island data, though the proposed mechanisms (polymerase stalling, error-prone repair) are cited from prior work rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Deletions are more frequent than insertions (81% vs 19%) in MMR-deficient tumors, and C:G homopolymers are less likely to accumulate indels (1.9% of indels) compared to their genomic representation (7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by indel composition analysis with references to prior observations in other systems. The deletion bias is well-documented and the C:G homopolymer depletion is clearly shown in Figure 3C. The inference about differential susceptibility is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Exome sequencing revealed MMR-deficient tumors contain approximately 2015 somatic events versus 39 for MMR-proficient tumors (52-fold increase), with validation rates of 87% for substitutions and 86% for indels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by exome sequencing data shown in Figure 4A with appropriate validation experiments. The 52-fold increase is consistent with whole-genome findings and the high validation rates support the quality of mutation calls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "1.6% of homopolymers were recurrently affected by indels across 16 MMR-deficient tumors, with 34 and 10 homopolymers affected in \u22656 or \u22658 tumors respectively, while only 55 substitutions were recurrent. Recurrent indels were enriched in short but not long homopolymers, suggesting positive clonal selection in coding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are well-supported by recurrent mutation analysis detailed in Figure 4\u2014source data 3 and Figure 4E. The enrichment analysis stratified by homopolymer length is appropriate. C32 is an inference about positive selection that is reasonable given the differential enrichment pattern and distribution of homopolymer lengths, though direct evidence of fitness advantage is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The 59-marker panel detected MSI with ~98% sensitivity and >99% specificity in endometrial tumors, showed higher sensitivity than the Bethesda panel in both endometrial and colorectal tumors, and successfully detected MSI in ovarian tumors and leukemias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are well-supported by validation studies comparing the 59-marker panel to IHC and Bethesda panel across multiple tumor types. The head-to-head comparisons with IHC confirmation of discordant cases (C34, C35) strengthen the conclusions. However, the sample size for other cancer types (C36) is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Pathway analyses using multiple databases (IPA, GenomeMuSiC, BioCarta, Reactome, DNARepairDB) consistently ranked DNA double-strand break repair by homologous recombination (DSBR by HR) as the top enriched pathway affected by somatic indels, with each MMR-deficient tumor containing on average 3.3\u00b10.4 indels in this pathway, and this enrichment was replicated in TCGA datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are well-supported by comprehensive pathway analyses using multiple independent databases shown in Table 2. The convergence across different pathway tools and databases strengthens the conclusion. The replication in TCGA data (C43) provides independent validation, though only one dataset survived multiple testing correction. C42 appropriately rules out homopolymer content as a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Indels affecting the DSBR by HR pathway are in the major tumor subclone, and RAD51 foci formation is significantly reduced in MMR-deficient cultures after exposure to olaparib (p=0.021) or mitomycin C (p=0.006), independent of RAD51 expression or cell cycle differences, suggesting impairment of DSBR by HR to a level intermediate between heterozygous and homozygous BRCA1 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are well-supported by allelic frequency analysis and immunofluorescence quantification shown in Figures 6A-B and supplementary figures. The statistical significance is clearly stated and appropriate controls rule out confounding factors. C47 is an inference comparing to BRCA1-deficient cells based on cited prior work, which is reasonable but represents an indirect comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "MMR-deficient cultures show dose-dependent sensitivity to olaparib (GI50: 26 \u00b5M vs 129 \u00b5M for MMR-proficient, p=0.0064), mitomycin C, and ionizing radiation, but not to paclitaxel, demonstrating selective sensitivity to DSB-inducing agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are well-supported by cytotoxicity assays shown in Figures 7A-B. The dose-response data are clear, statistical significance is reported, and the specificity is demonstrated by the lack of differential sensitivity to paclitaxel. The use of multiple DSB inducers strengthens the conclusion about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "siRNA knockdown experiments in MCF7 cells showed that 50% growth inhibition with olaparib was reached at 69.5\u00b11.1% ATR, 76.1\u00b14.4% BRCA1, or 80.0\u00b12.4% BRCA2 knockdown, suggesting the loss of DSBR by HR activity in MMR-deficient tumors corresponds to approximately 75-80% loss of BRCA1 or BRCA2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by siRNA knockdown experiments shown in Figure 7C. The experimental design appropriately quantifies both olaparib sensitivity and knockdown levels. C53 is an inference that reasonably extrapolates from the MCF7 model to MMR-deficient tumors, though this assumes comparable mechanisms and may not account for differences in genetic background or the oligogenic nature of HR deficiency in MMR-deficient tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Background information establishing that Lynch syndrome and MLH1 silencing account for 17-33% of endometrial/colorectal tumors, MMR deficiency leads to MSI, MMR-deficient tumors have distinct prognosis and treatment responses including resistance to standard chemotherapies, and prior therapeutic approaches have not translated to clinical success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 represent established background knowledge appropriately cited from prior literature. These provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

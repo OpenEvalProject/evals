@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors compiled a comprehensive database of 23 Ebola virus disease outbreaks in humans across Africa from 1976-2014, consisting of 30 independent primary infection events. Before December 2013, 2322 cases had occurred, with Zaire ebolavirus responsible for the most outbreaks (13), followed by Sudan ebolavirus (7) and Bundibugyo ebolavirus (2). The frequency of outbreaks has increased substantially post-2000.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64 collectively document the historical outbreak data used in the study. The data are directly stated and supported by Table 1 and Figure 2, with appropriate citations to outbreak investigation reports. The temporal patterns and species-specific outbreak counts are clearly derived from the compiled dataset and represent a well-documented result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors identified 51 surveyed locations reporting Ebola virus infections in animals since disease discovery, comprising 17 infections in gorillas, 9 in chimpanzees, 18 in Old World fruit bats, and 2 in duikers. A large proportion of great ape cases originated from the ROC/Gabon border, and all animal isolations came from countries that also reported human index cases, except for seropositive bats from southern Ghana.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 document the animal infection database compiled from literature. The data are directly stated and supported by Table 2 and Figure 3, with appropriate citations to field studies and surveys. The geographic patterns and species distributions are clearly derived from the compiled dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C132"
+    ],
+    "result": "The authors developed species distribution models for three suspected bat reservoir species (H. monstrosus, M. torquata, and E. franqueti) using 239 occurrence records from GBIF. All three models demonstrated predictive skill (AUC 0.58-0.63) and predictions were broadly consistent with expert opinion ranges. The combined distribution covers West and Central Africa, specifically moist forests of the Congo basin and Guinea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 and C132 describe the bat distribution modeling methodology and results. The AUC statistics indicate modest but significant predictive skill, and the validation approach using 10-fold cross-validation is appropriate. The geographic predictions are shown in Figure 4 and are consistent with known bat distributions. The modeling approach is sound and results are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C110",
+      "C133"
+    ],
+    "result": "The authors predicted a zoonotic transmission niche covering 22 countries across Central and West Africa using boosted regression tree models with an AUC of 0.85\u00b10.04. Enhanced vegetation index had the greatest impact (RC=65.3%), followed by elevation (11.7%), night-time LST (7.7%), PET (5.7%), and bat distribution (3.8%). All 7 countries with observed index cases (Set 1) have areas of highest environmental suitability, and 15 additional countries (Set 2) are predicted to have high suitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C76-C85, C110, and C133 describe the main Ebola distribution modeling results. The high AUC (0.85\u00b10.04) indicates strong model performance, validated through stringent 10-fold cross-validation. The relative contributions of environmental covariates are clearly quantified and ecologically interpretable. The prediction of 22 at-risk countries is well-supported by the modeling framework and shown in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors estimated that 22.2 million people live in areas suitable for zoonotic Ebola transmission, with 97% (21.7 million) in rural areas. Of these, 15.2 million are in Set 1 countries and 7 million in Set 2 countries. DRC, Guinea, and Uganda have the highest populations at risk in Set 1, while Nigeria, Cameroon, and CAR are highest in Set 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C86-C90 describe population at risk estimates derived from overlaying the predicted distribution with population data. The calculations are straightforward and supported by citations to population data sources (WorldPop, CIESIN). The rural/urban breakdown and country-specific rankings are shown in Figure 5A and represent a well-supported quantification of populations at risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Over the 40-year period since EVD discovery, the total population in countries within the predicted zoonotic niche nearly tripled (from 230 to 639 million), and the proportion living in urban settings increased from 25.5% to 59.2%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 document demographic changes calculated from World Bank population data. The calculations are straightforward and shown in Figure 6. The data sources are appropriately cited and the temporal trends are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Passenger seat capacity in Set 1 countries increased from 2.96 to 4.77 million (fractional change 1.61) between 2000-2013, while Set 2 increased from 5.6 to 15.6 million (change 2.8). Passenger volumes in Set 1 changed from 2 to 2.5 million (change 1.22) and Set 2 from 5 to 7.9 million (change 1.57) between 2005-2012. Total passenger volumes increased by a third from 9.5 to over 14 million during 2005-2012.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 document increases in airline connectivity calculated from Official Airline Guide and IATA data. The calculations are clearly presented in Figure 7 with appropriate data sources cited. The temporal trends demonstrate substantial increases in international connectivity from at-risk countries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The largest increases in passenger volumes occurred in WHO regions outside of sub-Saharan Africa (AFRO). In 2012, 47% of passengers from at-risk countries traveled to other AFRO nations, 27% to Europe (EURO), and 13% to Eastern Mediterranean (EMRO). Analysis by income level showed 40% of destinations were to low or low-middle income countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 describe the geographic distribution of air travel destinations from at-risk countries, calculated from IATA passenger data. The percentages are clearly stated and shown in Figure 8. The stratification by WHO region and income level provides important context for international spread risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Analysis excluding the Guinea outbreak from the training dataset still predicted high suitability in the Guinea region, with the presumed index village within 5 km of an at-risk pixel. This implies the eco-epidemiological situation in Guinea is very similar to past outbreaks, and the outbreak scale is more heavily influenced by human-to-human transmission than zoonotic niche expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 describe a validation analysis shown in Figure 5\u2014figure supplement 3. The leave-one-out approach demonstrates the model's ability to predict the Guinea outbreak location based on other outbreaks, supporting the robustness of the niche prediction. The inference about human-to-human transmission is reasonable given the ecological similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The largest recorded EVD outbreak began in Guinea in December 2013 and spread to Liberia, Sierra Leone, and Nigeria, leading to declaration as a Public Health Emergency of International Concern on August 8, 2014. Initial analysis suggested Guinea isolates formed a separate clade, but subsequent re-analysis indicated they nest within the Zaire ebolavirus lineage and diverged from Central African strains approximately ten years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10-C12, and C26-C28 describe the 2014 outbreak context supported by appropriate citations to outbreak reports and phylogenetic analyses. The phylogenetic placement is well-documented in the cited literature (Baize et al., Dudas and Rambaut, Gire et al.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "While reservoir species for Ebola are not well understood, significant progress has been made in narrowing down likely hosts. Primates have long harbored filoviral infections with significant mortality in great apes, but high case fatality rates and limited range indicate they are likely dead-end hosts. A survey in Gabon identified three bat species (H. monstrosus, E. franqueti, M. torquata) infected with Ebola viruses, and subsequent evidence supports Chiroptera playing an important role in filovirus life-cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 summarize the state of knowledge about Ebola reservoirs, supported by extensive citations to field studies and surveys. The inference that great apes are dead-end hosts is well-supported by epidemiological data, and the bat reservoir hypothesis is backed by multiple lines of evidence including viral isolation and serology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Humans represent a dead-end host for Ebola with no indication of reintroduction to reservoirs. The incubation period ranges from 2 days to 3 weeks, with death occurring within 6-16 days. Human-to-human transmission occurs through direct contact with infected individuals and cadavers. The typical outbreak profile involves an index case from bushmeat contact, with chains typically not exceeding 3-4 transmission events, though superspreading events have occurred. Secondary transmission can be restricted by effective case detection and isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C53 describe established knowledge about EVD transmission dynamics, supported by appropriate citations to clinical reviews and outbreak investigations. The characterization of transmission patterns, incubation periods, and outbreak control measures is well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The zoonotic niche map delineates areas at risk of zoonotic transmission but does not predict spillover likelihood or outbreak establishment. The modeling accommodates geographic uncertainty using point and polygon data, and includes 81 occurrences (30 human index cases + 51 animal infections). The rarity of EVD outbreaks suggests limited observation data compared to more prevalent zoonoses, though the model demonstrates predictive skill.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 clarify the interpretation and limitations of the niche map, describe methodological features, and acknowledge data limitations. These are appropriate caveats supported by the modeling approach and validation results. The acknowledgment of limited data is honest and the predictive skill demonstrated by AUC statistics supports the model's utility despite data limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Serological evidence suggests possible underreporting of small-scale outbreaks. Despite large populations at risk and widespread bushmeat hunting, Ebolavirus is rare in reservoirs and human outbreaks. There is indication that outbreak frequency has increased since 2000. The human population within the niche is larger, more mobile, and better connected than when the pathogen was first observed, increasing the likelihood of continued spread when spillover occurs, particularly in areas with poor healthcare infrastructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 synthesize findings about outbreak patterns and risk factors, supported by citations and the demographic/connectivity analyses presented. The inference about increased spread likelihood is reasonable given the documented population growth and connectivity increases, though it remains somewhat speculative about future dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Ebola outbreaks can have considerable economic and political impact, and destabilization of healthcare provisioning increases unrecorded morbidity and mortality from other diseases. The current outbreak represents significant strain on poorly provisioned healthcare systems, and many Set 1 and Set 2 countries rank among the lowest per capita healthcare spenders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 describe the broader health systems impact of Ebola outbreaks, supported by citations to health systems studies. The characterization of healthcare capacity in at-risk countries is consistent with general knowledge, though C119 lacks specific data citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The increasing connectedness of Africa means EVD is now a problem of international concern. While most secondary transmission occurs locally via ground transit, international spread is possible as demonstrated by the Liberia-Nigeria case. The aetiology of EVD means international outbreak propagated by air travel remains unlikely in high-income countries, but a non-negligible threat remains in low and middle income destinations, and rapid increases in connectivity indicate international airports could see more imported cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 discuss international spread risk, supported by the connectivity data presented and citations to outbreak analyses. The inferences about differential risk by income level are reasonable given healthcare capacity differences, though they remain somewhat speculative about future outbreak dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Ebola virus disease is a complex, highly virulent zoonosis that has caused outbreaks for 40 years with case fatality rates of 60-90%. Five Ebolavirus species have been isolated, with the earliest outbreaks in Zaire and Sudan in 1976. The species include Zaire, Sudan, Reston, Tai Forest, and Bundibugyo ebolaviruses, each with distinct geographic distributions and pathogenicity profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C9, and C13-C25 provide background on EVD virology and history, supported by extensive citations to historical literature and taxonomic references. This represents well-established knowledge appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C7",
+      "C93"
+    ],
+    "result": "Vegetation, elevation, temperature, evapotranspiration, and bat distributions define the zoonotic transmission relationship. The rarity of human outbreaks emphasizes very low transmission probability to humans. Increasing population sizes and international connectivity since 1976 suggest contemporary outbreak dynamics will differ from the past, with population movement rates scaling directly with population growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6-C7, and C93 summarize key findings about environmental drivers and changing outbreak dynamics. C4 is supported by the modeling results showing covariate contributions. C6 is a reasonable inference from the large at-risk population versus rare outbreaks. C7 and C93 are supported by the demographic and connectivity data, though C93's inference about movement scaling is theoretical and cited to mobility models rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "A boosted regression tree modeling framework was used to generate predictive risk maps of the zoonotic Ebola virus niche in Africa. The study was limited to Africa since no natural EVD outbreaks have occurred outside the continent. Reston ebolavirus, which has distribution in the Philippines but has never been pathogenic in humans, was excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 describe the methodological approach and scope decisions. These are clearly stated and appropriately justified based on the geographic distribution of pathogenic Ebola species and natural outbreak locations.",
+    "result_type": "MINOR"
+  }
+]

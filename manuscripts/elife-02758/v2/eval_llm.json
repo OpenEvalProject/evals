@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "C. crescentus ParA forms ATP-dependent dimers but does not form larger oligomers or filaments under the experimental conditions tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by gel filtration chromatography showing ATP-dependent dimerization (C1), absence of higher-order oligomers in gel filtration (C2), and electron microscopy showing no filaments (C3). However, C3 notes data not shown, which is a minor limitation. The physiological ATP concentration (2.5 mM) is appropriately justified by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "DNA binding switches ParA to an ATP hydrolysis-competent state, requiring direct ParA-DNA interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 demonstrate that DNA stimulates ParA ATPase activity in a dose-dependent manner (C4-C5), and that a DNA-binding deficient mutant (ParAR195E) fails to show DNA-stimulated activity despite retaining dimerization capacity (C6-C7). The control with ParAR195E effectively demonstrates the requirement for direct DNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The estimated intracellular DNA concentration in C. crescentus (~17 mg/ml) exceeds the KDNA for ParA ATPase stimulation, suggesting sufficient DNA is present in cells to activate ParA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by a calculation of intracellular DNA concentration that is compared to the measured KDNA (0.15 mg/ml) from in vitro experiments. The calculation method is described in Materials and methods, and the comparison is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "ParB stimulates ParA ATPase activity in a DNA-dependent manner, requiring high ParB concentrations (KParB = 80 \u00b5M) with much higher ParB than ParA needed for significant stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are well-supported by biochemical data showing ParB-dependent ATPase stimulation (C10), appropriate controls ruling out contaminating ATPase (C11), Michaelis-Menten kinetics yielding KParB = 80 \u00b5M (C12), and demonstration that equimolar concentrations are insufficient (C13). The ParBL12A mutant control is particularly strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C24",
+      "C26"
+    ],
+    "result": "The C. crescentus ParABS system differs from B. subtilis in ParB concentration requirements for ParA ATPase stimulation, explaining differences in ParA localization and function between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C24, and C26 are supported by citations to published work on B. subtilis (C14) and logical comparison with C. crescentus data. The mechanistic explanation for functional differences based on biochemical properties is well-reasoned, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In C. crescentus, approximately 80% of ParB (~580 molecules) associates with parS regions at high local concentration (~500 \u00b5M), sufficient to stimulate ParA ATPase activity, while diffusing ParB (~1 \u00b5M) is insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 are supported by multiple quantitative methods: fluorescence microscopy (C15-C16), Western blotting (C17), SEC analysis (C18), and PALM microscopy (C22). The integration of these measurements to calculate local ParB concentration and compare to measured KParB is rigorous. The conclusion that only parS-associated ParB can stimulate ParA (C23) logically follows from the concentration estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "During the fast ParA-dependent phase, the partition complex travels ~1 \u00b5m in ~4.7 min at ~220 nm/min but does not follow a linear trajectory, with similar short-axis displacements during fast and slow phases, inconsistent with a stable ParA filament bridge model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by quantitative time-lapse microscopy with good sample size (n=141 cells). The 2D trajectory analysis showing non-linear movement (C30) and similar short-axis displacements across phases (C31) provides strong evidence against a filament-guided mechanism (C32). The inference in C32 is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "C. crescentus contains ~180 ParA molecules (90 dimers) per cell, insufficient to form a micron-long filament based on structural considerations from related proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by three independent quantification methods (C33) and calculations based on structural data from related proteins (C34-C35). The conclusion that ParA abundance is too low for a micron-long filament (C36) is well-reasoned, though it relies on assumptions about filament structure from other organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PALM super-resolution microscopy reveals that ParA is asymmetrically distributed along the long axis but widely distributed along the short axis, similar to ribosomes rather than the filamentous protein crescentin, suggesting ParA exists as sparse DNA-bound dimers rather than filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by PALM microscopy with appropriate positive (crescentin) and negative (ribosomes) controls. The quantitative comparison of width distributions (C41) provides strong evidence. The conclusion that ParA does not form filaments (C42-C43) is well-supported by the similarity to ribosome distribution rather than crescentin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Brownian dynamics simulations of a diffusion-binding model using experimentally determined parameters failed to produce directional motion of the partition complex, performing no better than simple diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by computational simulations using experimentally measured parameters. The comparison to simple diffusion (C45) is an appropriate control. The mechanistic explanation for failure (C46) is physically sound. However, the model's validity depends on the accuracy of parameter estimates and assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Chromosomal loci in C. crescentus exhibit elastic dynamics, moving in asymmetric 2D harmonic potentials with measured spring constants of 0.001-0.003 pN/nm, consistent with chromosomes behaving as elastic filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 are well-supported by time-lapse microscopy of fluorescently labeled chromosomal loci (n=641 trajectories for groESL). The Gaussian distribution of positions (C50) supports harmonic motion (C51), and measurements of multiple loci show consistency (C55). The conversion to spring constants (C54) is mathematically appropriate. Citations support the elastic filament model (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A DNA-relay model incorporating chromosome dynamics produces fast and robust partition complex translocation in simulations using only experimentally measured parameters, with forces (~0.1 pN) consistent with elastic forces from chromosome dynamics (~0.06 pN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by simulations grounded in experimental measurements (C57). The force calculations (C59-C60) show good agreement between predicted and measured values, supporting the mechanism (C61). The mechanistic explanation for directionality (C58) is physically reasonable. The lack of parameter fitting strengthens confidence in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The segregating ParB/parS partition complex frequently adopts an extended conformation during ParA-dependent translocation, with decompaction frequency correlating with ParA-ATP dimer concentration and fluctuating over time, consistent with tension from elastic forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by fluorescence microscopy with appropriate controls (fixed cells, C64) and quantitative aspect ratio analysis. The spatial correlation between decompaction and ParA gradient (C67) and temporal fluctuations (C68) support the elastic force model. The analysis is rigorous and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The measured ParB-stimulated ATP hydrolysis rate (0.03 s\u207b\u00b9) matches the theoretically optimal rate calculated from chromosome dynamics, and simulations show that 10-fold changes in this rate reduce translocation efficiency, suggesting evolutionary optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are supported by theoretical calculations (C69) that match experimental measurements (C70), and simulations testing parameter sensitivity (C73). The predictions about suboptimal rates (C71-C72) are mechanistically reasonable. The claim of evolutionary optimization (C74) is inferential but well-supported by the data. The agreement between theory and experiment is striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The study proposes a DNA-relay mechanism for ParABS-mediated chromosome segregation in which DNA-bound ParA-ATP dimers serve as transient tethers that harness chromosome elastic dynamics to generate translocation force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 represent the main conclusion, integrating biochemical, microscopy, and modeling data. The mechanism is well-supported by the collective evidence from multiple experimental approaches and successful computational modeling. The proposal is internally consistent and explains observations that are inconsistent with alternative models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Elastic chromosome dynamics appear to be a universal feature of active cells, and the conservation of DNA-binding activity in ParA-like proteins suggests the DNA-relay mechanism may be general for bacterial intracellular transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C81 are based on citations to published work showing elastic dynamics in other systems (C77-C79) and conserved DNA-binding in ParA-like proteins (C80). However, the generalization to other systems (C81) is speculative and would require experimental validation in those systems. The speculation is reasonable but not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The relatively low ParA ATPase activity observed across ParABS systems is near-optimal for the DNA-relay mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by simulation results (Figure 7) showing optimal performance at measured rates. The observation that low ATPase activity is common across systems (C82) is based on literature knowledge. The conclusion provides a functional explanation for a previously puzzling observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Differential regulation of ParA dimeric states by ParB explains functional differences between C. crescentus (chromosome segregation) and B. subtilis (replication control), with a common biochemical framework tuned for different behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 integrate the current findings with published work on B. subtilis. The mechanistic explanation for functional differences based on ParB concentration requirements (C86-C87) is well-reasoned. The observation that Soj overexpression in B. subtilis produces C. crescentus-like behavior (C90) provides strong support. The conclusion about tunable frameworks (C91) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The ParABS system plays a major role in bacterial chromosome segregation, and the DNA-relay mechanism may represent a general form of intracellular transport in bacteria given the conservation of DNA-binding activity in ParA-like proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are based on established knowledge. However, C94's speculation about generality requires experimental validation in other systems. While the conservation of DNA-binding is suggestive, demonstrating the DNA-relay mechanism in other ParA-like systems would require additional work.",
+    "result_type": "MINOR"
+  }
+]

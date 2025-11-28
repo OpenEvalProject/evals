@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C59",
+      "C60",
+      "C89",
+      "C108",
+      "C109"
+    ],
+    "result": "P. aeruginosa responds to cell lysis by activating the Gac/Rsm pathway, which triggers rapid deployment of antibacterial factors (termed PARA), conferring fitness benefits in interspecies competition. This represents a bacterial danger-sensing mechanism analogous to eukaryotic danger responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C59-C60, and C89 are supported by multiple lines of experimental evidence including growth competition assays (C9, C39, C52, C60), microscopy showing increased H1-T6SS expression (C13-C17), lysis measurements (C46-C47), lysate experiments (C48-C52), and proteomic analysis (C49-C50). The Gac/Rsm pathway requirement is demonstrated through genetic deletions (C33, C35, C39-C40). The danger-sensing interpretation (C7, C108-C109) is a reasonable inference from the data showing self-derived signals trigger defensive responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C20",
+      "C46",
+      "C47",
+      "C90"
+    ],
+    "result": "Active T6SS in competing bacteria (B. thailandensis and E. cloacae) induces P. aeruginosa lysis, which precedes and triggers PARA activation, providing a mechanism for enhanced targeting of T6SS-positive competitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18, and C20 are well-supported by microscopy data showing T6SS-dependent increases in H1-T6SS expression (C13-C17) and activity (C15), lysis measurements demonstrating T6SS-dependent P. aeruginosa lysis (C46), and temporal analysis showing lysis precedes PARA activation (C47). Growth competition experiments (C9, C23) confirm functional consequences. The mechanistic link (C90) is a reasonable inference from the temporal and genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C67"
+    ],
+    "result": "Conjugative type IV secretion (T4SS) in E. coli induces P. aeruginosa lysis and activates PARA in a TPP-independent manner, leading to enhanced H1-T6SS-mediated killing of T4SS-positive E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C54-C58, and C67 are supported by growth competition experiments showing differential targeting of T4SS+ vs T4SS- E. coli (C54), microscopy demonstrating PARA activation by T4SS+ E. coli (C56), lysis assays showing T4SS-dependent P. aeruginosa lysis (C57), and experiments with TPP-deficient strains showing TPP independence (C55). The mechanistic integration (C58, C67) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C21",
+      "C22",
+      "C23",
+      "C27"
+    ],
+    "result": "The threonine phosphorylation pathway (TPP) is not required for PARA, distinguishing this response from previously described T6SS dueling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by microscopy experiments showing PARA occurs in \u0394pppA (C21) and \u0394TPP \u0394tagF (C22) strains, and growth competition experiments confirming these strains retain differential targeting ability (C23). The distinction from T6SS dueling (C25-C27) is supported by comparing TPP requirements and the level of regulation (transcriptional/translational vs posttranslational). However, the distinction relies partly on comparison with prior literature rather than direct experimental comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PARA operates through posttranscriptional regulation via the Gac/Rsm pathway, with RetS functioning as the upstream sensor required for PARA induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C38 are supported by \u03b2-galactosidase reporter assays showing posttranscriptional regulation (C28), microscopy with rsmZ and magA reporters showing Gac/Rsm activation (C30-C31), and genetic experiments demonstrating requirements for GacS (C33) and RetS (C35, C37) but not LadS (C34). The retSW90A mutation experiment (C37) supports RetS as a direct sensor, though alternative explanations (partial loss of function) cannot be fully excluded. The mechanistic conclusions (C32, C36, C38) are reasonable inferences from the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PARA is a complex defense mechanism comprising H1-T6SS and other Gac/Rsm-regulated factors, as evidenced by \u0394gacS showing greater fitness defects and increased lysis compared to \u0394tssM1 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by growth competition experiments showing \u0394gacS has 34-fold and 15-fold greater fitness defects than \u0394tssM1 against B. thailandensis and E. cloacae respectively (C39), microscopy showing increased lysis of \u0394gacS (C40), and control experiments ruling out general growth defects (C41). The conclusion that PARA involves multiple Gac/Rsm-regulated factors beyond H1-T6SS (C42) is a reasonable inference from the differential fitness phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "PARA does not require direct cell-cell contact; instead, a diffusible signal generated during P. aeruginosa-competitor interactions triggers PARA in surrounding cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by computational analysis of microscopy data showing no difference in ClpV1-GFP levels between contacting and non-contacting P. aeruginosa cells (C43), and membrane diffusion experiments showing PARA is detected when P. aeruginosa is separated from P. aeruginosa-B. thailandensis mixtures but not from B. thailandensis alone (C44). The conclusion of a diffusible signal (C45) is a reasonable inference, though the chemical identity remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Self-derived lysate from P. aeruginosa is sufficient to activate the Gac/Rsm pathway, induce PARA, and enhance fitness in competition, demonstrating that lysed kin cells serve as danger signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are strongly supported by reporter assays showing lysate activates Gac/Rsm and PARA markers (C48), proteomic analysis showing 49% of induced proteins are known Gac/Rsm targets despite representing only 4.5% of detected proteins (C49), gene set enrichment analysis showing significant enrichment of Gac/Rsm and H1-T6SS proteins (C50), and growth competition experiments showing 2.5-fold fitness increase with lysate (C52). The conclusion that lysed cells serve as danger signals (C53) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C92",
+      "C93"
+    ],
+    "result": "Wild-type P. aeruginosa efficiently targets non-self bacteria (B. thailandensis) without requiring \u0394retS mutation, unlike self-targeting which requires \u0394retS, suggesting non-self competitors stimulate H1-T6SS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by growth competition experiments (Figure 1) showing both wild-type and \u0394retS reduce B. thailandensis populations by several orders of magnitude (C9), but only \u0394retS shows T6SS-dependent fitness against self recipients (C10). The interpretation that non-self targeting doesn't require relief of negative regulation (C11) and that competitors stimulate H1-T6SS (C12) are reasonable inferences. Claims C92-C93 cite established prior knowledge supporting this differential requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C94",
+      "C95"
+    ],
+    "result": "Co-cultivation with competing bacteria possessing active T6SS leads to population-wide, graded increases in H1-T6SS expression and activity in P. aeruginosa, as demonstrated with both B. thailandensis and E. cloacae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are supported by time-lapse microscopy showing elevated ClpV1-GFP and Fha1-GFP levels (C13, C15) and increased foci frequency (C15) in co-cultures with B. thailandensis and E. cloacae. The response is T6SS-dependent (C18) and not specific to B. thailandensis (C16-C17). Claims C94-C95 show the response is population-wide with normal distribution rather than bimodal, supported by histogram analysis. The interpretation that competitors stimulate H1-T6SS expression (C14) is reasonable from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "P. aeruginosa growth rate is unaffected by the activity of B. thailandensis T6SS, ruling out growth rate changes as an explanation for altered H1-T6SS expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by doubling time measurements (Figure 2\u2014figure supplement 4) showing no significant difference in P. aeruginosa growth rates when co-cultured with B. thailandensis wild-type vs \u0394tssM-1. This control experiment appropriately addresses a potential confounding variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "PARA is distinct from previously described T6SS dueling based on differences in regulation level (transcriptional/translational vs posttranslational) and TPP requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by comparing characteristics of PARA with published characteristics of T6SS dueling. PARA involves transcriptional/translational changes (C26, C28) while dueling is posttranslational. TPP is essential for dueling but dispensable for PARA (C27, C24). However, this relies on comparison with prior literature (Basler and Mekalanos, 2012; Basler et al., 2013) rather than direct experimental comparison in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "PARA activation may have clinical implications, as host-induced lysis during infection could inadvertently convert P. aeruginosa to a more resistant state through Gac/Rsm-mediated production of c-di-GMP and exopolysaccharides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63 cite established knowledge about Gac/Rsm consequences (c-di-GMP production, exopolysaccharide production, increased resistance). However, claims C61 and C64 are speculative interpretations about clinical implications without direct experimental evidence in infection models. The reasoning is logical but requires validation in relevant infection contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The P. aeruginosa response to antagonism comprises both a global Gac/Rsm-mediated response (PARA) and a secondary T6S-specific element that remains incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 integrate current findings with prior observations (LeRoux et al., 2012; Basler et al., 2013) showing \u0394retS strains retain some differential targeting ability. The interpretation that the response has two components (C66) is a reasonable synthesis of the data, though the secondary T6S-specific element is acknowledged as not fully understood.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Danger sensing may be an evolutionarily conserved process in bacteria, though the variability of genes under Gac/Rsm control and potential diversity of signaling systems complicate predictions about generality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C111, and C112 are speculative about the generalizability of danger sensing beyond P. aeruginosa. While C110 correctly notes the Gac/Rsm pathway is widely conserved among \u03b3-proteobacteria, C111 acknowledges that variability in regulated genes confounds predictions. These are reasonable speculations for future investigation but lack direct experimental support in other organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background information on T6SS, Gac/Rsm pathway, TPP, and prior work on bacterial competition and danger sensing in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C68-C88, C96-C107) represent established knowledge from prior publications, appropriately cited throughout. They provide necessary context for interpreting the current findings. Claim C88 offers a valid critique of prior studies using \u0394retS backgrounds. These are not novel findings but appropriate background and contextualization.",
+    "result_type": "MINOR"
+  }
+]

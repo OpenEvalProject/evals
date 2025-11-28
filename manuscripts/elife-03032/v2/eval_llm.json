@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C42"
+    ],
+    "result": "A premature termination codon (PTC) potentiates miRNA-mediated repression of nonsense mRNAs by redefining the downstream ORF as 3' UTR, thereby unmasking miRNA-responsive elements (miREs) that trigger accelerated deadenylation and mRNA decay. This mechanism is PTC-dependent, miRE-dependent, and occurs when translation is blocked, demonstrating that translating ribosomes normally mask ORF miREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C35 provide comprehensive experimental evidence from deadenylation assays (Figure 1A-E) showing that PTCs unmask downstream miREs, leading to accelerated poly(A) tail shortening. The mechanism is validated through multiple controls including miRE mutations, different miRNA types (let-7a, miR-21), different PTC positions, intron retention models, and translation blocking experiments. The data consistently demonstrate PTC-dependent, miRE-specific acceleration of deadenylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "miRNA-mediated surveillance of nonsense mRNAs involves both mRNA degradation and translational repression, with translational repression playing a prominent role. The mechanism requires miREs to be located at least 10 nt downstream of the PTC, defining a distinct boundary rule that is smaller than the 50 nt rule for EJC-NMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by luciferase assays (Figures 2C-E, 2G) demonstrating that protein reduction exceeds mRNA reduction, indicating translational repression contributes significantly. The 10 nt boundary rule is experimentally validated through systematic testing of miRE positions relative to the PTC. The comparison to EJC-NMD's 50 nt rule is appropriately contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Naturally occurring cancer-causing APC nonsense mutants that escape EJC-NMD are repressed by miRNA-mediated surveillance through endogenous miR-29a. The mechanism is specific to PTC-containing APC (not wild-type APC), involves direct miRNA-mRNA interaction via Ago2, and is validated in SW480 colorectal cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C65 provide strong evidence through multiple complementary approaches: Western blots showing protein changes upon miR-29a knockdown/overexpression (Figures 3F-H), qRT-PCR showing mRNA changes (Figure 3E), RIP assays demonstrating Ago2 association (Figures 3J-M), specificity controls showing no effect on WT-APC (Figure 3H), and rescue experiments with compensatory mutations (Figure 3\u2014supplement 5). The convergence of these independent lines of evidence strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "miRNA-mediated surveillance and EJC-NMD are not mutually exclusive and act additively to enhance repression of nonsense mRNAs. This is demonstrated using BRCA1 reporters that are sensitive to either or both mechanisms, with the strongest repression observed when both pathways are active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by well-designed experiments using BRCA1 reporters with and without downstream introns (Figure 4C-D). GW182 knockdown experiments demonstrate miRNA involvement independent of intron presence, while reporters sensitive to both mechanisms show additive repression. The experimental design appropriately controls for individual pathway contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "miRNA-mediated surveillance is a general mechanism for downregulating nonsense mRNAs in human cells. Validation of 11 out of 16 candidates from HCT-116 cells showed functional miREs in their PTC-STOP regions, with several candidates harboring multiple functional miREs responsive to different miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by systematic experimental validation using luciferase assays (Figures 4E-I, Figure 4\u2014supplement 1). The 69% success rate (11/16) and identification of multiple functional miREs in several candidates provide strong evidence for generality. However, the sample size is modest and candidates were pre-selected based on computational predictions, which may introduce bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C94",
+      "C95"
+    ],
+    "result": "miRNA-mediated surveillance represents a novel EJC-independent mRNA quality control mechanism that recognizes targets through miREs in the PTC-STOP region (\u226510 nt downstream of PTC), combines mRNA degradation and translational inhibition, and acts in parallel with EJC-NMD to provide cellular protection against nonsense mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C77-C80, C94-C95) are well-supported by the collective experimental evidence from the study. The EJC-independence is demonstrated by experiments with intronless reporters, the 10 nt boundary rule is experimentally validated, dual mechanisms are shown through protein/mRNA comparisons, and additivity with EJC-NMD is demonstrated through BRCA1 experiments. These represent appropriate synthesis of the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "miRNA-mediated surveillance exhibits tissue-specific effects dependent on miRNA expression patterns. APC nonsense mutant repression by miR-29a occurs in SW480 (colon) cells with high miR-29a expression but not in HEK293 (kidney) cells with undetectable miR-29a, suggesting nonsense mRNAs may have different fates in different tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by experimental data (Figure 3\u2014supplement 4B,D, Figures 3F-H) showing tissue-specific repression correlating with miR-29a expression levels. However, C87 and C89 are speculative inferences about potential tissue-specific disease risk. While the speculation is reasonable given the data, it extends beyond what is directly demonstrated and would require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Approximately 35% of alternatively spliced gene products contain PTCs, and transcripts with retained introns are efficiently degraded by miRNAs. Computational analysis revealed hundreds of PTC-containing transcripts from intron retention are bound by Ago in their PTC-STOP regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by citations to published literature. C91 is experimentally validated (Figure 1D). C92 is supported by citations to Ago-CLIP studies. C93 is based on computational analysis of published data (Supplementary file 3). The experimental validation of intron retention (C91) combined with computational analysis (C93) provides reasonable support, though the computational predictions would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "APC and BRCA1 nonsense mutant mRNAs are downregulated by multiple miRNAs targeting PTC-STOP regions, providing a means to eliminate deleterious nonsense transcripts without impairing wild-type counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims are supported by the experimental evidence for APC (Figure 3) and BRCA1 (Figure 4). The specificity for nonsense mutants over wild-type is demonstrated for APC (Figures 3G-H). Multiple miRNAs are validated for both genes. The claims appropriately synthesize the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C88"
+    ],
+    "result": "Background claims establishing the biological context: nonsense mutations cause genetic diseases and cancer, cells use NMD for surveillance, miRNAs regulate gene expression through 3' UTR targeting, and miRNA expression is tissue-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C22, C81-C84, C88) represent established knowledge supported by appropriate citations to published literature. They provide necessary context for the study but do not constitute novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

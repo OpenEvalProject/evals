@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Rod1 is required for glucose-induced internalization of transporters at the plasma membrane. Stl1 was identified as a new Rod1-regulated cargo that requires Rod1 for glucose-induced endocytosis and degradation. In rod1\u0394 cells, Stl1-GFP remained at the plasma membrane and was not internalized even 30 min after glucose treatment, demonstrating Rod1's canonical role in transporter internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 provide direct experimental evidence using live-cell imaging and Western blotting showing that Stl1 internalization is completely blocked in rod1\u0394 mutants (Figure 1A-C, Video 1). The data clearly demonstrate Rod1's essential role at the plasma membrane for at least one cargo (Stl1), supporting the broader claim about Rod1's function in transporter internalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Rod1 has a post-endocytic role in targeting Jen1 to the vacuole. Unlike Stl1, Jen1 was still partially internalized in rod1\u0394 cells but failed to reach late endosomes/vacuole and instead recycled back to the plasma membrane. The internalization was delayed and less efficient in rod1\u0394 cells, and the recycled Jen1 originated from internalized protein rather than new synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 provide comprehensive evidence from live-cell imaging (Figure 1D-H, Videos 2-3) showing Jen1 forms cytoplasmic puncta in rod1\u0394 cells (latrunculin A-sensitive, confirming endocytic origin), displays delayed internalization kinetics, fails to reach late endosomes, and recycles to the plasma membrane. The recycling interpretation is supported by glucose repression of JEN1 expression (C62-C63). This establishes Rod1's dual function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Jen1 internalization in rod1\u0394 cells requires ubiquitylation but involves Rod1-independent ubiquitylation systems. A non-ubiquitylatable Jen1-KR mutant (all cytosolic lysines mutated to arginine) abolished glucose-induced endocytosis, demonstrating ubiquitylation is essential. Jen1 was still internalized in a 9-arrestin mutant lacking Rod1 and eight other ART proteins, suggesting Rod1's plasma membrane function is compensated by other systems, but its post-endocytic function is not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 provide strong evidence using the Jen1-KR mutant (Figure 2A-C) showing complete block of internalization despite functional transport activity (selenite assay, C68). Claims C71-C75 logically conclude that Rod1-independent ubiquitylation exists at the plasma membrane but is specific to that location. The 9-arrestin mutant data (C73) supports functional redundancy at the plasma membrane but not post-endocytically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Rod1 dynamically localizes to the trans-Golgi network (TGN) in response to glucose. Rod1-GFP appeared cytosolic in lactate-grown cells but transiently localized to punctate structures upon glucose addition. These puncta co-localized with the TGN marker Sec7-mCh and did not originate from endocytosis (unaffected by latrunculin A) or require new protein synthesis (unaffected by cycloheximide). Rod1 localization to the TGN required its glucose-induced activation via REG1-dependent dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 provide direct microscopy evidence (Figure 3A-D, Videos 4-5) showing Rod1's dynamic relocalization and co-localization with Sec7-mCh. Controls with cycloheximide (C78) and latrunculin A (C79) rule out alternative explanations. The reg1\u0394 experiment (C82-C83) establishes the mechanistic link between Rod1 activation and TGN localization, consistent with prior work on Rod1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Jen1 traffics to the TGN after internalization and transiently accumulates there in the absence of Rod1. Time-course co-localization analysis showed Jen1-GFP puncta initially co-localized with the early endosomal marker Vps17-mCh, then partially with the TGN marker Sec7-mCh. In rod1\u0394 cells, Jen1 followed the same route but displayed prolonged co-localization with Sec7-mCh, indicating transient accumulation at the TGN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by quantitative co-localization analysis (Figure 4A-C, Videos 6-7) showing sequential association with endosomal and TGN markers. The prolonged TGN co-localization in rod1\u0394 (C87-C88) is quantified in Figure 4C. Controls showing Vps17 and Sec7 occupy distinct compartments (Figure 4\u2014supplements 1, 6) validate the markers. Simultaneous two-camera imaging (Figure 4\u2014supplement 3) addresses potential artifacts from sequential acquisition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Endosome-to-TGN retrograde trafficking is required for Jen1 degradation. In mutants affecting retrograde trafficking (vps52\u0394, ypt6\u0394, ric1\u0394, rgp1\u0394), Jen1 was internalized but accumulated in cytoplasmic puncta, failed to reach the vacuole, and was not degraded. In ypt6\u0394 cells, Jen1 no longer co-localized with the TGN, confirming that retrograde trafficking is necessary for Jen1 to reach the TGN and subsequently the vacuole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide convergent evidence from multiple retrograde trafficking mutants (Figure 4E-G) showing consistent phenotypes: Jen1 internalization occurs but vacuolar delivery and degradation are blocked. The loss of TGN co-localization in ypt6\u0394 (C92) directly demonstrates the requirement for retrograde trafficking. The interpretation (C93-C94) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "TGN-to-endosome sorting via Gga1/Gga2 is required for Jen1 vacuolar targeting. In gga1\u0394 gga2\u0394 mutants, Jen1 internalization was not reduced but vacuolar targeting was impaired, leading to Jen1 recycling to the plasma membrane. Jen1-GFP co-localized more strongly with Sec7-mCh in the gga1\u0394 gga2\u0394 mutant than in WT cells, mimicking the rod1\u0394 phenotype and indicating accumulation at the TGN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by microscopy and quantification (Figure 4H-I) showing Jen1 recycling and enhanced TGN co-localization in gga1\u0394 gga2\u0394 mutants. The phenotypic similarity to rod1\u0394 (C96) strengthens the interpretation. Controls showing Vps17 and Sec7 remain distinct in this mutant (Figure 4\u2014supplement 7) validate organelle identity. The complementation with Gga2-HA rescues the phenotype, confirming specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Post-endocytic control at the TGN is a general mechanism for transporter trafficking. The dicarboxylic amino acid transporter Dip5 also transiently co-localized with the TGN during substrate-induced endocytosis, and its vacuolar sorting depended on Gga1/Gga2 proteins, demonstrating that TGN-mediated post-endocytic sorting is not restricted to Jen1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 provide evidence from a second transporter system (Figure 4\u2014supplements 8-9) showing similar TGN trafficking and Gga1/Gga2 dependence. This extends the findings beyond Jen1 and supports the generality claim (C100). However, only one additional transporter was tested, so the extent of generality remains somewhat limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C112"
+    ],
+    "result": "Jen1 ubiquitylation is dynamically remodeled during trafficking: ubiquitylated at the plasma membrane and deubiquitylated after internalization. In vps52\u0394 mutants (where Jen1 cannot reach the TGN), Jen1 ubiquitylation decreased sharply after 20 min of glucose treatment. In vrp1\u0394 mutants (endocytosis blocked), Jen1 maintained robust ubiquitylation, indicating the loss of ubiquitylation is not due to protein instability but to active deubiquitylation occurring post-internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by Western blot analysis (Figure 5A) comparing different trafficking mutants. The contrasting ubiquitylation patterns in vps52\u0394 (loss) vs. vrp1\u0394 (maintained) provide strong evidence for post-endocytic deubiquitylation (C104). The interpretation (C102, C112) is logical given JEN1 transcriptional repression by glucose. This establishes dynamic ubiquitylation remodeling during trafficking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "A second ubiquitylation event occurs at the TGN involving Rsp5 and Rod1. In gga1\u0394 gga2\u0394 mutants where Jen1 accumulates at the TGN, Jen1 also accumulated in a highly ubiquitylated state. This accumulation required retrograde trafficking (abolished in ypt6\u0394 gga1\u0394 gga2\u0394 triple mutant). Rsp5 was recruited to the TGN in response to glucose and co-localized with both Jen1 and Rod1 at the TGN, supporting a model of TGN-localized re-ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 provide genetic evidence (Figure 5B) showing Jen1 ubiquitylation accumulation at the TGN requires retrograde trafficking. Claims C109-C111 provide direct visualization (Figure 5C-E) of Rsp5 recruitment to the TGN and three-color imaging showing co-localization of Rsp5, Rod1, and Jen1. Together, these data strongly support the proposed TGN ubiquitylation model (C113), though the model remains somewhat speculative as direct proof of ubiquitylation occurring at the TGN is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C126"
+    ],
+    "result": "Glucose removal promotes Jen1 deubiquitylation, Rod1 relocalization to cytosol, and Jen1 recycling to the plasma membrane. After a 10-min glucose pulse, Jen1 redistributed back to the plasma membrane within 20 min of glucose removal, coinciding with loss of Jen1 ubiquitylation. This deubiquitylation was rapid and not due to degradation (occurred in vrp1\u0394). Jen1 recycling required retrograde trafficking (blocked in vps52\u0394) and led to polarized redistribution to cell buds, correlating with Rod1 loss from the TGN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C123 provide comprehensive evidence from glucose pulse-chase experiments (Figure 6A-D, Video 8) showing reversible endocytosis, coordinated deubiquitylation, and Rod1 relocalization. The vrp1\u0394 control (C119) demonstrates active deubiquitylation rather than degradation. The vps52\u0394 experiment (C120-C121) establishes the retrograde requirement. The polarized redistribution (C122) is consistent with TGN-mediated recycling. The temporal correlation with Rod1 dynamics (C123, C126) supports the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C142"
+    ],
+    "result": "Rod1 localization and post-translational modifications respond dynamically to glucose availability. Rod1 localization was extremely responsive to glucose treatments, and repeated glucose/lactate cycles revealed robust, reversible changes in both Rod1 localization and post-translational modifications (phosphorylation and ubiquitylation). This relocalization relies on rapid glucose-induced changes in Rod1 modifications through PP1-dependent dephosphorylation and Rsp5-mediated ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by dynamic imaging and biochemical analysis (Figure 6D-F, Video 9) showing reversible Rod1 behavior through multiple cycles. The post-translational modification analysis (C125, C142) using phosphatase treatment and Rod1-KR mutants demonstrates the molecular basis. This is consistent with prior work (Becuwe et al., 2012b) on Rod1 regulation and provides direct visualization of the dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Rod1 and Rsp5 control sorting of neosynthesized Jen1 from the secretory pathway to the vacuole in a glucose- and ubiquitylation-dependent manner. When Jen1 was induced with galactose in the presence of glucose, it was targeted to the vacuole instead of the plasma membrane in WT cells. This rerouting required Rod1, Rsp5, ubiquitylation (blocked in Jen1-KR), and Gga1/Gga2, demonstrating integrated control of transporter sorting at the TGN during both secretion and post-endocytic trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 provide convergent genetic evidence (Figure 7B-F, Video 10) showing that glucose-induced vacuolar targeting of neosynthesized Jen1 requires Rod1, Rsp5 (npi1 mutant), ubiquitylation (Jen1-KR), and Gga1/Gga2. The vrp1\u0394 control (Figure 7\u2014supplement 1) confirms this does not involve plasma membrane targeting and endocytosis. This demonstrates the TGN as a common sorting station for both secretory and endocytic pathways, supporting the integrative model (C10, C127).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C143"
+    ],
+    "result": "The study establishes a dual-function model for Rod1 and identifies the TGN as a critical post-endocytic sorting station. Rod1 functions at both the plasma membrane (essential for Stl1, contributing to Jen1 internalization) and the TGN (controlling post-endocytic sorting). The TGN serves as a decision point where nutrient signals regulate transporter fate through ART/Rsp5 localization, allowing re-evaluation of transporter commitment to degradation vs. recycling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C132-C143) synthesize the major findings and are well-supported by the collective experimental evidence. The dual-function model (C133-C134) is demonstrated through differential effects on Stl1 vs. Jen1. The TGN as a critical organelle (C135-C136) is established through retrograde and anterograde trafficking mutant analyses. The regulatory model (C139-C141, C143) integrating nutrient signaling with ART/Rsp5 localization is supported by the dynamic localization and recycling experiments. The interpretations are logical extensions of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The introduction establishes the background on ubiquitin-mediated endocytic regulation. Ubiquitin conjugation regulates cargo sorting in the endocytic pathway, with roles at both the plasma membrane (promoting internalization) and endosomes (controlling post-endocytic fate). The balance between ubiquitylation and deubiquitylation determines cargo fate (degradation vs. recycling). In yeast, Rsp5 and ART proteins regulate nutrient transporter endocytosis, but the mechanisms linking external signals to post-endocytic ubiquitylation machinery are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C48) summarize established knowledge from the literature, supported by appropriate citations. They provide context for the current study by identifying the knowledge gap (C39, C43, C48) that motivates the research. The claims accurately represent prior work on ubiquitin-mediated trafficking in both mammalian and yeast systems, including the conservation of arrestin-related protein function (C20-C21). These are appropriately classified as background/context rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The study uses microfluidics-assisted live-cell imaging to investigate Rod1's place of action during endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 accurately describes the study's approach and main finding as stated in the introduction. The use of microfluidics is a methodological advance that enabled the dynamic observations throughout the study. This is a summary claim that frames the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "The discussion speculates on broader implications and future directions. The TGN-based control may prevent neosynthesized cargoes from reaching the cell surface during endocytosis-inducing conditions. The Bul1/Bul2 proteins may act at the TGN to control both Gap1 biosynthetic sorting and down-regulation, reconciling conflicting prior reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C145 are explicitly speculative (\"may be,\" \"appears likely\") and propose interpretations of prior work on other proteins (Gap1, Bul1/Bul2) in light of the current findings. While these are reasonable hypotheses supported by citations to prior work, they are not directly tested in this study and represent future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

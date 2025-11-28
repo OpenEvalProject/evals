@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C51"
+    ],
+    "result": "DNA scaffolds with myosin V and VI display solely unidirectional movement on both 1D actin filaments and 2D keratocyte networks, but the directional flux differs between architectures. On 1D filaments, myosin V dominates (68% plus-end directed), while on 2D networks the motors are evenly matched (52% outward flux). This discrepancy stems primarily from actin architecture rather than scaffold type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C32 are well-supported by experimental data in Figures 2 and 3, showing unidirectional movement with architecture-dependent directional flux. The comparison between 1D and 2D systems is systematic and includes appropriate controls (C29-C31). The conclusion that actin architecture is the primary determinant (C32) is justified by the experimental design that isolates this variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C34",
+      "C52",
+      "C53"
+    ],
+    "result": "Directional flux of scaffolds can be linearly tuned by the relative number of myosin V and VI motors and is independently modulated by both actin architecture and myosin lever arm structural properties. The relationship between motor number and directional flux is linear (R\u00b2 = 0.80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C34, C52-C53 are supported by systematic experimental data in Figure 3 showing linear relationships between motor ratios and directional flux. The R\u00b2 value of 0.80 indicates good fit. Independent modulation by lever arm properties is demonstrated through chimera experiments (Figure 6). Sample sizes appear adequate (N=58-1897 trajectories).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "All motors on antagonistic scaffolds continuously engage with actin tracks during unidirectional movement, as evidenced by reduced speeds compared to single motor-type scaffolds and photo-cleavage experiments showing directional switches and speed increases upon motor removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40, C55-C61 form a coherent argument supported by multiple lines of evidence: speed reduction data (Figure 2D, 3C), run length analysis (C55), and photo-cleavage experiments (Figure 4). The photo-cleavage experiments provide particularly strong evidence for continuous engagement (C38-C40, C61). Statistical significance is reported (p < 0.01 for photo-cleavage). The logic connecting observations to conclusions is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C54",
+      "C62",
+      "C63",
+      "C64",
+      "C68"
+    ],
+    "result": "Computational modeling identifies the ratio of motor stall forces (rs = Fhigh/Flow) as the key parameter determining competitive outcomes. For motors with similar strength (1 < rs < 2), directional flux depends on normalized inter-motor tension per step (\u0394T/Flow). On 2D networks, lever arm flexural rigidity modulates \u0394T, with rigid motors experiencing greater tension per step and losing competitive advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42-C48, C54, C62-C64, C68 describe a computational model that successfully predicts experimental observations. The model assumptions (C42, C82-C83) are reasonable. Model predictions match experimental data for both 1D filaments (\u03a6out = 68%, Figure 5B) and 2D networks (\u03a6out = 52%, Figure 5E). The identification of \u0394Thigh/\u0394Tlow = 1.20 \u00b1 0.05 as explaining the 2D network behavior is quantitative and testable. However, the model is relatively simple and some parameters (ks, kF) are not independently measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C69"
+    ],
+    "result": "Chimeric myosins with swapped lever arms restore myosin V dominance on 2D networks by balancing tension per step between antagonistic motors. Both V/VI:VI (flexible vs flexible) and VI/V:V (rigid vs rigid) chimera pairs show significantly higher outward flux than wild-type 1V:1VI scaffolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C69 are supported by experimental data in Figure 6B showing significantly higher outward flux for both chimera combinations compared to wild-type. This provides direct experimental validation of the computational model's prediction that lever arm rigidity affects competitive outcomes. The experimental design is appropriate, testing both possible chimera combinations. Sample sizes appear adequate (N \u2265 126 trajectories).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Myosin V and VI are antagonistic motors that co-reside on membrane vesicles in cells, with myosin V implicated in secretory traffic and myosin VI in endocytosis. Both bind cargo as dimers and are considered evenly matched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C15 establish biological context through citations to prior literature. These are well-established facts in the field supported by appropriate references (Suter et al., 2000; Kneussel and Wagner, 2013; Trybus, 2008; Spudich and Sivaramakrishnan, 2010; Mehta et al., 1999; Buss and Kendrick-Jones, 2008). C15 appropriately uses tentative language ('presumably') for the less certain myosin VI dimerization mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Myosin V and VI have similar biophysical properties (step sizes ~30-36 nm, stepping kinetics ~9-12 s\u207b\u00b9, stall forces ~2-3 pN) but opposite directionality due to a unique insert in myosin VI. They have structurally distinct lever arms with different flexural rigidities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 summarize established biophysical properties from prior literature with appropriate citations (Mehta et al., 1999; Rief et al., 2000; Rock et al., 2001; Nishikawa et al., 2002; Yildiz et al., 2003; Altman et al., 2004; Uemura et al., 2004; Liao et al., 2009; Trybus, 2008; Spudich and Sivaramakrishnan, 2010). These provide essential background for interpreting the current study's results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C41",
+      "C58",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Prior studies show varied outcomes for antagonistic motor competitions depending on experimental conditions. The current work reconciles discrepancies between quantum dot and DNA nanostructure studies, attributing differences to actin architecture rather than scaffold type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C41, C58, C65-C67, C70-C74 appropriately cite and contextualize prior work (Ali et al., 2011; Hariadi et al., 2014; Derr et al., 2012; Roberts et al., 2014; Soppina et al., 2009; and others). The reconciliation of prior discrepancies (C26-C28, C32) is a valuable contribution. C67 appropriately identifies speculation about endosome bidirectionality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Traditional reconstituted systems do not incorporate actin-myosin interactions, and while unconventional myosins are necessary for membrane traffic, their functional roles are not apparent in live cell studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 establish the knowledge gap motivating this study, supported by appropriate citations (Lee et al., 2004; Zanetti et al., 2012; Hasson et al., 1997; Sahlender et al., 2005; Hartman et al., 2011). This provides clear rationale for the reconstitution approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The experimental system uses DNA origami scaffolds with six attachment sites for myosins, decorated with 23 Cy3 fluorophores, on detergent-extracted keratocyte actin networks with ~30 nm mesh size and \u00b135\u00b0 filament orientation matching Arp2/3 branch angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 describe the experimental system with appropriate technical detail and citations (Rothemund, 2006; Woo and Rothermund, 2011; Hariadi et al., 2014; Svitkina et al., 1995; Maly and Borisy, 2001). The system design is well-justified and technically sound. Figures 1 and supplements provide visual confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The computational model assumes a linear force-speed relationship for both motors, with load-dependent speed given by v = v0(1 \u2212 T/Fstall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe reasonable modeling assumptions. Linear force-velocity relationships are well-established for myosins in the literature. The mathematical formulation is standard and appropriate for this type of model. However, the model is relatively simple and does not capture all biological complexity.",
+    "result_type": "MINOR"
+  }
+]

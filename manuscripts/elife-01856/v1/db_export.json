@@ -1,0 +1,1917 @@
+{
+  "submission": {
+    "id": "2157edfa-4b0a-482c-8a16-33156fc432e0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:05:18.451284Z",
+    "updated_at": "2025-11-28T20:05:18.451284Z"
+  },
+  "content": [
+    {
+      "id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "submission_id": "2157edfa-4b0a-482c-8a16-33156fc432e0",
+      "content_type": "manuscript",
+      "content_text": "# p97-dependent retrotranslocation and proteolytic processing govern formation of active Nrf1 upon proteasome inhibition\n\n## Authors\n\n- Senthil K Radhakrishnan<sup>1</sup>\n- Willem den Besten<sup>1</sup>\n- Raymond J Deshaies<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n2. Division of Biology and Biological Engineering Howard Hughes Medical Institute, California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nProteasome inhibition elicits an evolutionarily conserved response wherein proteasome subunit mRNAs are upregulated, resulting in recovery (i.e., \u2018bounce-back\u2019) of proteasome activity. We previously demonstrated that the transcription factor Nrf1/NFE2L1 mediates this homeostatic response in mammalian cells. We show here that Nrf1 is initially translocated into the lumen of the ER, but is rapidly and efficiently retrotranslocated to the cytosolic side of the membrane in a manner that depends on p97/VCP. Normally, retrotranslocated Nrf1 is degraded promptly by the proteasome and active species do not accumulate. However, in cells with compromised proteasomes, retrotranslocated Nrf1 escapes degradation and is cleaved N-terminal to Leu-104 to yield a fragment that is no longer tethered to the ER membrane. Importantly, this cleavage event is essential for Nrf1-dependent activation of proteasome gene expression upon proteasome inhibition. Our data uncover an unexpected role for p97 in activation of a transcription factor by relocalizing it from the ER lumen to the cytosol.\n\n## Introduction\n\nTranscription factor Nuclear factor erythroid derived 2-related factor 1 (Nrf1) belongs to the cap \u2018n\u2019 collar basic leucine zipper (CNC-bZIP) family of proteins that are known to be activated in response to cellular stress (Sykiotis and Bohmann, 2010). Other members of this family include p45 NF-E2, Nrf2, Nrf3, Bach1, and Bach2 (Andrews et al., 1993; Moi et al., 1994; Oyake et al., 1996; Kobayashi et al., 1999). The CNC-bZIP transcriptions factors heterodimerize with small Maf proteins (Maf F, Maf G, and Maf K) and preferentially bind to anti-oxidant response elements (AREs) present in the promoter region of their target genes (Motohashi et al., 2002). The most studied member of the CNC-bZIP family is Nrf2, which in response to oxidative stress directs a transcriptional program that helps maintain cellular redox homeostasis (Kensler et al., 2007). Owing to their sequence similarity, Nrf1 was initially thought to have an overlapping function with Nrf2 in regulating antioxidant gene expression, but a growing body of emerging evidence contradicts this notion.\n\nRecently, we demonstrated that in mouse embryonic fibroblasts, Nrf1 but not Nrf2 is necessary for elevated expression of proteasome subunit mRNAs observed in cells treated with proteasome inhibitor, leading to a recovery or \u2018bounce-back\u2019 of proteasome activity (Radhakrishnan et al., 2010). Consistent with our observation, TCF11 (a longer isoform of Nrf1 found only in humans) was subsequently reported to be a mediator of proteasome bounce-back response after proteasome inhibition in human cells (Steffen et al., 2010). Thus it appears that Nrf1 functions to combat proteotoxic stress caused by proteasome inhibition in mammals akin to transcription factors RPN4 in yeast (Xie and Varshavsky, 2001) and Cnc-C in Drosophila (Grimberg et al., 2011). From the standpoint of cancer treatment, blockade of this bounce-back response may be a viable strategy to enhance the efficacy of proteasome inhibition therapy, given that Nrf1 depletion slows the rate of recovery of proteasome activity following transient application of a covalent proteasome inhibitor and results in enhanced proteasome inhibitor-mediated apoptosis in cancer cells (Radhakrishnan et al., 2010). However, since the molecular requirements for Nrf1 activation have not been described, there remains no known mechanism to exploit this possibility.\n\nIn addition to its role in the induced synthesis of proteasome subunit (PSM) genes, Nrf1 has also been found to regulate their basal expression in certain scenarios. For instance, in Nrf1\u2212/\u2212 mouse neurons, PSM gene expression is diminished resulting in impaired proteasome function and neurodegeneration (Lee et al., 2011). Also, a liver-specific knockout of Nrf1 in mice caused a similar attenuation of PSM expression in hepatocytes (Lee et al., 2013).\n\nDespite the importance of Nrf1 in proteasome biology and its potential as an anti-cancer target, a thorough understanding of the molecular mechanism behind its activation is currently lacking. What is known is that Nrf1 exists in two forms, p120 and p110, both of which are unstable and accumulate when the proteasome is inhibited (Radhakrishnan et al., 2010). Whereas p120 is embedded in the ER membrane, p110 is soluble and can enter the nucleus (Biswas and Chan, 2009). However, the mechanism leading to the formation of these species is controversial, with one study pointing to proteolytic cleavage (Wang and Chan, 2006) and another to differential glycosylation (Zhang et al., 2007). We show here that, in striking contrast to other ER membrane-tethered transcription factors, the bulk of the Nrf1 polypeptide is inserted into the ER lumen. Activation of Nrf1 depends on p97/VCP-dependent transfer of the luminal segments of Nrf1 to the cytosolic side of the ER membrane, followed by a novel proteolytic processing step.\n\n## Results\n\n### Transcriptionally active Nrf1 p110 is derived from p120 by proteolytic processing\n\nTo discriminate between the possibilities that p110 is derived by cleavage or deglycosylation of p120, we first overexpressed 3\u00d7FlagNrf1HA in human HEK-293T and mouse NIH-3T3 cells. This construct contains three consecutive copies of the Flag tag at the N-terminus of Nrf1 and an HA tag at the C-terminus. In the presence of MG132, regardless of the cell type used, we observed that although the anti-HA antibody was able to detect two different forms of Nrf1 (\u223c120 and \u223c110 kDa), the anti-Flag antibody was able to detect only the \u223c120 kDa form (Figure 1A). The simplest explanation for this observation is that Nrf1 p120 was cleaved somewhere close to the N-terminus to yield p110. To test this hypothesis and to identify the cleavage site, we overexpressed Nrf13\u00d7Flag (Nrf1 with C-terminal triple Flag tag) in HEK-293T cells and immunopurified the protein and subjected the p120 and p110 forms to Edman degradation-based N-terminal sequencing. Although the \u223c120 kDa band confirmed the intact N-terminus of the full-length Nrf1, sequence from the \u223c110 kDa band was consistent with a new N-terminus starting with Leu-104 (Figure 1B; putative cleavage site indicated with a scissor).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01856/elife-01856-fig1-v1.jpg)\n\n**Figure 1.:** (A) Human HEK-293T or mouse NIH-3T3 cells were transduced with a retrovirus expressing 3xFlagNrf1HA and 72 hr later were left untreated or treated with 5 \u00b5M MG132 for 5 hr. The cell lysates were then used for immunoblotting with anti-Flag and anti-HA antibodies. \u03b2-actin protein levels were evaluated as a loading control. (B) Amino acids 99 to 108 from human Nrf1 are shown. The scissor indicates the cleavage position predicted by the Edman degradation sequencing. Also shown are mutants 1 through 6 with the mutated amino acids highlighted. (C) HEK-293T cells were transiently transfected with wild-type or various mutant constructs (m1 through m6) of Nrf13\u00d7Flag and 48 hr later were left untreated or treated with 5 \u00b5M MG132 for 5 hr. The cell lysates were then processed for immunoblotting with anti-Flag antibody. \u03b2-actin was used as a loading control. (D) HEK-293 cells stably expressing either wild-type Nrf13\u00d7Flag or Nrf1(m1)3\u00d7Flag were pulse-labeled for 1 hr with L-azidohomoalanine and then chased with MG132, cycloheximide (CHX), and excess methionine. The cells were harvested at the time points indicated (from 0 min to 120 min) and the lysates were subjected to immunoprecipitation with anti-Flag beads. Nrf1 species were visualized using the tetramethylrhodamine based click-chemistry method as described in \u2018Materials and methods\u2019.\n\nTo further confirm this observation, we introduced several mutations flanking the predicted cleavage site (m1 through m6 in Figure 1B) and compared these mutants to wild-type Nrf13\u00d7Flag for their ability to be processed into Nrf1 p110. We found that all mutants were defective to varying degrees in their ability to be processed to the p110 form, although the defects of m4 and m6 were relatively modest (Figure 1C). Interestingly, m4 and m6 are the only mutants that retain Trp-103 at the P1 position (with respect to the cleavage site), implying a crucial role of this Trp residue for protease recognition.\n\nAlthough our data suggested that p110 was derived from p120, there is no decisive evidence that proves that this is the case. To determine if there is a post-translational precursor\u2013product relationship between Nrf1 p120 and p110 forms, we performed a pulse-chase experiment. We used L-azidohomoalanine (analog of the amino acid L-methionine) to pulse-label newly synthesized proteins and followed the resultant pool of Nrf1 during a chase period in which protein synthesis and proteasome-dependent degradation were both inhibited by the addition of cycloheximide and MG132. We observed that over time, wild-type p120 was processed to p110 but the non-cleavable Nrf1(m1)3\u00d7Flag was not processed (Figure 1D). Taken together, our data are consistent with a model in which newly synthesized Nrf1 p120 undergoes proteolytic processing between Trp-103 and Leu-104 to generate the p110 form.\n\nNext, we asked if this proteolytic processing of Nrf1 is biologically relevant. To this end, we compared the ability of wild-type and non-cleavable mutant Nrf1 to reconstitute the bounce-back response in Nrf1\u2212/\u2212 mouse embryonic fibroblasts (Figure 2A). As expected, wild-type Nrf13\u00d7Flag was able to reinstate the induction of proteasome subunit (PSM) genes in response to MG132 treatment in these cells (Figure 2B). In contrast, non-cleavable Nrf1(m1)3\u00d7Flag was defective in inducing PSM genes under the same conditions, implicating a necessary role for proteolytic processing in Nrf1\u2019s transcriptional program.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01856/elife-01856-fig2-v1.jpg)\n\n**Figure 2.:** (A) Nrf1\u2212/\u2212 MEFs were transfected with constructs expressing either Nrf13\u00d7Flag, Nrf1(m1)3\u00d7Flag, or vector control and 48 hr later were subjected to Geneticin selection. These antibiotic resistant cells were treated with 1 \u00b5M MG132 for 10 hr as indicated. Lysates from these cells were immunoblotted with anti-Flag antibodies to detect exogenous Nrf1. \u03b2-actin was used as a loading control. (B) RNA from Nrf1\u2212/\u2212 MEFs transfected and selected as described above was used for quantitative RT-PCR to assess the mRNA levels of representative PSM genes. The values were normalized to GAPDH mRNA levels. Error bars denote SD (n = 3).\n\n### p97 is required for Nrf1 activity and its proteolytic processing\n\np97 is a homo-hexameric AAA ATPase that is implicated in numerous cellular processes ranging from cell-cycle regulation to membrane fusion and protein degradation (Ye, 2006). p97 has also been implicated in the turnover of the TCF11 isoform of human Nrf1 via the endoplasmic reticulum-associated degradation (ERAD) pathway (Steffen et al., 2010). Similar to inhibition of the proteasome, depletion of p97 leads to the strong accumulation of ubiquitin-conjugated substrates (Wojcik et al., 2004), underscoring its role in enabling degradation of a subset of the ubiquitinated proteome by the proteasome (Kolawa et al., 2013). Given that cells depleted of p97 or treated with proteasome inhibitors accumulate both ubiquitinated proteins and Nrf1, we asked if p97 depletion was also sufficient to trigger the Nrf1-mediated bounce-back response. To this end, we made use of NIH-3T3 mouse fibroblasts that have been engineered to stably express a doxycycline-inducible form of an shRNA targeting p97. Unlike proteasome inhibition, depletion of p97 upon addition of doxycycline did not induce the bounce-back response (Figure 3A; compare bars 1 and 3 for the PSM genes). By contrast, we observed that MG132-mediated bounce-back response was severely impaired when p97 was knocked-down (Figure 3A; compare bars 3 and 4 for the PSM genes).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01856/elife-01856-fig3-v1.jpg)\n\n**Figure 3.:** (A) NIH-3T3-p97sh cells stably expressing doxycycline (Doxy)-inducible shRNA targeting p97 were either mock-treated or induced with Doxy (1 \u00b5g/ml) for 3 days after which the cells were further treated with DMSO or 1 \u00b5M MG132 as indicated for 10 hr. The RNA from these cells was used for quantitative RT-PCR to assess the mRNA levels of the representative PSM genes. The values were normalized to GAPDH mRNA levels. Error bars denote SD (n = 3). (B) NIH-3T3-p97sh cells were subjected to Doxy and MG132 treatments as above and the cell lysates were fractionated by SDS-PAGE and immunoblotted to detect p97 and Nrf1. \u03b2-actin was used as a loading control. (C) NIH-3T3 (left panel) or HEK-293-Nrf13\u00d7Flag cells (right panel) were pulsed for an hour with 10 \u00b5M NMS-873 and then chased with MG132 plus cycloheximide (CHX). The cells were harvested at the time points indicated (from 0 min to 120 min) and the lysates were fractionated by SDS-PAGE and immunoblotted to detect endogenous Nrf1. \u03b2-actin was used as a loading control.\n\nTo investigate the molecular basis for the lack of bounce-back response in p97-depleted cells, we examined the fate of Nrf1. Consistent with Steffen et al., 2010, Nrf1 accumulated in cells depleted of p97 (Figure 3B, compare lanes 1 and 3). To address the key question of whether p97 contributes to processing of Nrf1, which is essential for its activation, we evaluated the forms of Nrf1 that accumulated in control vs p97-depleted cells treated with MG132. Whereas the control cells accumulated p110 (indicative of Nrf1 activation), this form was markedly absent in p97-depleted cells (Figure 3B, compare lanes 2 and 4). This failure to process p120 is sufficient to account for the lack of bounce-back response in these cells. However, one concern was that due to the 3\u20134 days required for p97 knock-down, the p120 form we observed in p97-depleted cells could represent an aberrant dead-end species that only accumulated upon sustained deprivation of p97 activity, and was not a true intermediate in the processing pathway. To address this possibility, we made use of the recently described compound NMS-873, a reversible inhibitor of p97 (Magnaghi et al., 2013; Polucci et al., 2013). Treatment of NIH-3T3 mouse fibroblasts or HEK-293-Nrf13\u00d7Flag cells with NMS-873 led to a robust accumulation of p120 Nrf1 (Figure 3C; lane 1), which was then efficiently converted to the p110 form with a half-life of \u223c30 min upon washout of NMS-873 in the presence of cycloheximide and MG132 (Figure 3C, lanes 2\u20136). The overproduced protein behaved similarly in HEK-293 cells, although the conversion of p120 to p110 was not as efficient as for the endogenous protein (Figure 3C, compare left and right panels). Thus, our results are consistent with a model in which p97 controls not only the degradation of Nrf1, but also its processing to the active p110 form.\n\n### p97 re-positions the C-terminal domain of Nrf1 into the cytosol\n\nIt has been proposed that during synthesis, Nrf1 becomes anchored in the ER membrane via an N-terminal transmembrane region (residues 7\u201324) (Zhang and Hayes, 2010). Given the role of p97 in Nrf1 processing and activation, we hypothesized that either p97 promotes processing of cytosolically-exposed Nrf1 and possibly its subsequent extraction from binding partners (as is the case for Spt23 and Mga2 in yeast, Hoppe et al., 2000; Rape et al., 2001), or p97 could be involved in re-positioning the TAD and DBD of Nrf1 from the luminal to the cytosolic side of the ER membrane to facilitate its processing. To distinguish between these possibilities, we performed a series of protease protection experiments to assess the topology of Nrf1 under various conditions (Figure 4A\u2013D). Regardless of p97 status (normal in the absence of doxycycline, or depleted in the presence of doxycycline, Figure 4A), 3\u00d7FlagNrf1 was susceptible to Proteinase K (PK) digestion in the absence of detergent, implying that the N-terminus was oriented towards the cytosol at all times. Interestingly, however, the orientation of the C-terminus of Nrf13\u00d7Flag showed a strong dependence on p97 status (Figure 4B). In mock-depleted cells, Nrf13\u00d7Flag was largely susceptible to digestion by PK (Figure 4B, compare lanes 4 and 5). In stark contrast, when p97 was depleted by the addition of doxycycline, Nrf13\u00d7Flag was largely resistant to PK (Figure 4B, compare lanes 7 and 8, or lanes 10 and 11). The different behaviors of 3\u00d7FlagNrf1 and Nrf13\u00d7Flag and the failure to observe detectable trimming of Nrf13\u00d7Flag are consistent with a topology wherein only a very small amino-terminal segment of newly-synthesized Nrf1 is exposed to the cytosol (amino acids 1\u20136), whereas the bulk of Nrf1 (amino acids 25\u2013742) remains in the lumen of the ER when the retrotranslocation activity of p97 is blocked. Interestingly, when we overexposed our blots, a small, protease-resistant pool of p120 was detectable at steady-state (Figure 4C, lanes 1 and 2). This pool quickly disappeared upon chasing with cycloheximide plus MG132 (lanes 4\u201311). We propose that retrotranslocation of p120 constitutively occurs at such a fast rate that, at steady-state, only a tiny fraction of luminal p120 can be detected unless retrotranslocation is blocked by depletion of p97 as in Figure 4B.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01856/elife-01856-fig4-v1.jpg)\n\n**Figure 4.:** (A) HEK-293 cells stably expressing doxycycline (Doxy)-inducible shRNA targeting p97 (HEK-293-p97sh cells) were transiently transfected with a 3\u00d7FlagNrf1 expression construct and 24 hr later were incubated in the presence or absence of Doxy for 4 days after which the cells were further treated or not with 5 \u00b5M MG132 for 5 hr. Microsomes prepared from these cells were subjected to protease protection assay with Proteinase K (PK). SDS-PAGE followed by immunoblotting with anti-Flag antibody was used to detect Nrf1. Formation of a discrete cleavage product of Calnexin in the absence of detergent (Triton X-100) was used as an indicator for intact microsomes. (B) Same as (A), except that cells were transfected with an Nrf13\u00d7Flag expression construct. (C) HEK-293 cells stably expressing the non-cleavable Nrf1(m1)3\u00d7Flag were treated with MG132 plus cycloheximide (CHX) and cells were harvested at indicated time points. Microsomes from these cells were subjected to protease protection assay with PK. Samples were fractionated by SDS-PAGE followed by immunoblotting with anti-Flag antibody. (D) HEK-293 cells stably expressing either Nrf13\u00d7Flag or the non-cleavable Nrf1(m1)3\u00d7Flag were pulsed for an hour with 10 \u00b5M NMS-873 and then chased with MG132 plus cycloheximide (CHX). Microsomes prepared from cells harvested at the indicated time points (0 min and 120 min) were used in a protease protection assay with PK. SDS-PAGE followed by immunoblotting with anti-Flag antibody was used to detect Nrf1. (E) Total cell lysates from the pulse-chase experiment described above were subjected to deglycosylation by the enzyme Endoglycosidase H prior to SDS-PAGE and immunoblotting with anti-Flag. Species \u2018a\u2019 refers to full-length Nrf1 (p120) that was fully glycosylated. Species \u2018b\u2019 refers to Nrf1 that was proteolytically processed to p110 and degylcosylated following p97-dependent retrotranslocation. Species \u2018c\u2019 refers to species \u2018a\u2019 that was deglycosylated with Endo H. Note that species \u2018b\u2019 migrates slightly more slowly than species \u2018c\u2019 even though both species were deglycosylated and species \u2018b\u2019 lacked the N-terminal 103 residues. The unexpectedly slow mobility of species \u2018b\u2019 presumably reflects acquisition of additional post-translational modifications upon retrotranslocation on Nrf1\u2019s CTD to the cytosolic side of the ER membrane. (TMD\u2013transmembrane domain; Gly\u2013N-linked glycan).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01856/elife-01856-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** HEK-293 cells stably expressing wild-type Nrf13\u00d7Flag were treated with MG132 and/or cotransin, an inhibitor of protein insertion into the Sec61 translocation channel (Garrison et al., 2005) as indicated (lanes 1 to 4) and total cell lysates were prepared. Lanes 5 and 6 contain full-length Nrf13\u00d7Flag and Nrf1(104-742)3\u00d7Flag that were translated in vitro (IVT) in rabbit reticulocyte lysate in the absence of membranes. The HEK293 cell lysates and IVT reactions were examined by SDS-PAGE followed by immunoblotting with anti-Flag antibody. Different Nrf1 species are shown (ungly\u2013unglycosylated; unmod\u2013unmodified). Nrf1 p120 (species \u2018a\u2019) was converted to species \u2018c\u2019, which comigrated with the primary translation product (species \u2018d\u2019) upon expression in cells treated with cotransin, suggesting that the slow mobility of p120 arose from modifications (e.g., N-linked glycosylation) that occurred within the endoplasmic reticulum. Retrotranslocation and processing of p120 (species \u2018a\u2019) yielded p110 (species \u2018b\u2019). Species \u2018b\u2019 was not sensitive to endoglycosidase H (Figure 4E), suggesting that it was deglycosylated upon retrotranslocation into the cytosol. Nevertheless, species \u2018b\u2019 migrated considerably more slowly than the primary translation product for Nrf1(104-742)3\u00d7Flag (species \u2018e\u2019), indicating that p110 must carry additional modifications that remain uncharacterized. Please note that deglycosylation by cytosolic enzymes converts the Asn at the site of glycosylation to Asp, which could influence migration on SDS-PAGE.\n\nIf the type II transmembrane orientation (Ncytosol/Clumen) for Nrf1 indicated by the protease protection experiments represents a true intermediate in its biogenesis, the accumulation of this species should be reversed upon restoration of p97 activity. To test if this is the case, we utilized the p97 inhibitor NMS-873. Whereas Nrf13\u00d7Flag was largely resistant to digestion by PK in HEK293 cells treated with NMS-873 (Figure 4D, lanes 1 and 2), it became sensitive to PK upon washout of NMS-873 in the presence of MG132 plus cycloheximide (Figure 4D, lanes 4 and 5). In this case, the Nrf1 was detected as a p120 species, because the tagged protein was chased to p110 less efficiently than the endogenous protein (Figure 3C), and the p110 that did form during the chase fractionated with soluble proteins upon preparation of the membrane fraction. Nrf1(m1)3\u00d7Flag mirrored the behavior of the wild-type protein (Figure 4D), indicating that the lack of processing observed for non-cleavable mutant was not due to defective retrotranslocation.\n\nTo corroborate the results from the protease protection experiments, we also monitored the glycosylation status of Nrf1. We reasoned that when the C-terminal domain (CTD) is oriented towards the lumen, Nrf1 should be glycosylated on a set of Asn-X-Ser/Thr sites C-terminal to the transmembrane domain (Zhang et al., 2007), whereas when the CTD is retrotranslocated to the cytosol, it should become degylcosylated. To evaluate the glycosylation status of Nrf1, we monitored its sensitivity to the degylcosylating enzyme Endoglycosidase H (Endo H). Nrf1 p120 that accumulated in cells treated with NMS-873 was sensitive to Endo H (Figure 4E, compare lanes 1 and 2 or 5 and 6), whereas it became largely resistant to Endo H upon being chased in the presence of MG132 plus cycloheximide (Figure 4E, compare lanes 3 and 4 or 7 and 8). This behavior is consistent with the protease protection data that indicated that the CTD of p120 flips from a luminal to a cytosolic orientation upon restoration of p97 activity. Notably, the cytosolically-oriented Nrf1 that accumulated upon restoration of p97 activity migrated more slowly than expected for Nrf1 that has been deglycosylated and proteolytically processed. This was particularly evident when the migration of the primary translation product for amino acids 104\u2013742 was compared to the species of Nrf1 that accumulated in cells subjected to various perturbations (Figure 4\u2014figure supplement 1). Our data suggest that once it is retrotranslocated to the cytosol, Nrf1 is not only deglycosylated and proteolytically cleaved after Trp103, but it also gains one or more additional modifications, the nature of which remains unknown.\n\n## Discussion\n\nMouse Nrf1 and its human ortholog TCF11 are transcription factors that enhance the accumulation of mRNAs that encode proteasome subunits upon inhibition of proteasome activity (Radhakrishnan et al., 2010; Steffen et al., 2010). Prior work established that Nrf1 is initially integrated into the ER membrane but is turned over rapidly (Biswas and Chan, 2009; Radhakrishnan et al., 2010). Upon proteasome inhibition, it accumulates, migrates to the nucleus, and activates gene expression. In this work, we make several critical new observations about the biogenesis and processing of Nrf1 that allow us to formulate a model that explains how it becomes activated in response to proteasome inhibition. Specifically, we show that the domains of Nrf1 that are implicated in transcriptional activation are initially translocated into the lumen of the ER, but subsequently are retrotranslocated to the cytosolic side of the membrane in a manner that depends on the AAA ATPase p97/VCP. In unperturbed cells, the retrotranslocated Nrf1 is promptly degraded by the proteasome, resulting in a futile cycle of continuous synthesis, membrane insertion, retrotranslocation, and degradation (Figure 5, left-hand side). However, in cells with compromised proteasome activity, some of the retrotranslocated Nrf1 escapes degradation and is cleaved on the N-terminal side of Leu-104 to yield a p110 fragment that is no longer tethered to the ER membrane and can migrate to the nucleus (Figure 5, right-hand side). Importantly, this cleavage event is essential for Nrf1-dependent activation of proteasome gene expression upon inhibition of the proteasome.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01856/elife-01856-fig5-v1.jpg)\n\n**Figure 5.:** Newly synthesized Nrf1 p120 is initially inserted into the endoplasmic reticulum (ER) membrane in an Ncytosol/Clumen orientation. It is then rapidly and efficiently retrotranslocated to the cytosol, where it is immediately degraded by the proteasome. In cells deficient in proteasome activity, degradation of cytosolically-exposed Nrf1 is retarded, allowing sufficient time for proteolytic processing of Nrf1 p120 to yield the active p110 form which can then migrate to the nucleus, heterodimerize with small Maf proteins, and activate transcription of its targets (e.g., PSM genes) by binding to antioxidant response elements (ARE). Note that the exact mechanism of the retrotranslocation step is unknown; what is shown in the figure reflects one possibility among several. Also, although the putative protease is depicted to be in the cytosol, it remains possible that it is in the ER membrane or lumen.\n\nThis model raises two important questions. First, what is the identity of the protease that clips p120 to yield p110? This remains unclear, but the available evidence rules out the most likely candidates. Cleavage by the site-1 and site-2 proteases involved in mobilization of SREBP appears unlikely, because CHO cell lines deficient in these activities (Rawson et al., 1997, 1998) were nonetheless able to accumulate p110 upon proteasome inhibition (R Rawson, personal communication). In addition, the proteasome, which cleaves Spt23 and Mga2 from the ER membrane in yeast (Hoppe et al., 2000), appears to be dispensable for cleavage because we observed robust formation of p110 in two different cell lines with three different proteasome inhibitors across a wide range of concentrations (Figure 1, and data not shown). Finally, an inhibitor of ER-localized rhomboid protease(s) (Pierrat et al., 2011) failed to impede the accumulation of p110 in cells treated with MG132 (data not shown). The second question is why does p110 not normally accumulate in unperturbed cells? Although it will be easier to address this question when the protease is in hand, a reasonable working hypothesis is that in unperturbed cells, p97-dependent retrotranslocation and proteasome-dependent degradation are so intimately coupled that there is no opportunity for the cleavage event to occur as Nrf1 is threaded from the membrane into the maw of the proteasome. However, when the proteasome is inhibited, Nrf1 accumulates on the cytosolic side of the membrane where it is susceptible to cleavage. Even if the protease occasionally intercedes before the proteasome can act and small amounts of p110 are generated, p110 is intrinsically unstable (Radhakrishnan et al., 2010) and thus does not accumulate to substantial levels.\n\nIt should be immediately evident from the foregoing discussion how the activation of Nrf1 differs markedly from the activation of all other ER membrane-tethered transcription factors that have been studied to date, including SREBP, ATF6, OASIS, CREB-H, Spt23, and Mga2 (Brown and Goldstein, 1997; Hoppe et al., 2000; Ye et al., 2000; Kondo et al., 2005; Zhang et al., 2006). In all of those cases, the precursor is inserted into the ER membrane such that the functional domains involved in transcription are displayed on the cytosolic side of the membrane. Cleavages in the cytosolic or intramembrane domains can therefore liberate soluble fragments that translocate to the nucleus. By contrast, since Nrf1 begins its life with its functional domains in the ER lumen, it must be retrotranslocated to the cytosol before processing can yield a functional fragment that can relocalize to the nucleus. However, because the p97-dependent retrotranslocation pathway traversed by Nrf1 is normally employed to clear misfolded proteins from the ER (Wolf and Stolz, 2012), the inevitable consequence of Nrf1 piggybacking on this mechanism is that it is rapidly degraded by the proteasome as soon as it gains access to the cytosol. This precludes the accumulation of Nrf1 precursor on the cytosolic side of the ER membrane, except under circumstances where there is insufficient proteasome activity to keep pace with the appearance of substrates.\n\nRecently, Zhang and Hayes (Zhang and Hayes, 2013) put forth a model for Nrf1 activation that shares some features with the model proposed here but is very different in its key aspects, leading to a fundamentally different view regarding the biogenesis and maturation of p120 into an active transcription factor. Specifically, Zhang and Hayes proposed that p120 spans the ER membrane at least three times. They argued that turnover of this species is promoted by calpain, not the proteasome. p120 that escapes degradation was envisioned to remain stably integrated as a multispanning transmembrane protein until it is mobilized by an unknown signal, which triggers retrotranslocation of the luminal domains followed by their deglycosylation to yield active Nrf1. It was proposed that Nrf1 is later cleaved by the proteasome to yield lower molecular weight soluble species, but appearance of active Nrf1 precedes this cleavage event. However, the causal relationship between cleavage and activation could not be evaluated because the cleavage site(s) was not identified. Another key distinction is that Zhang and Hayes do not perform true chase experiments, and thus their data do not distinguish whether there is a precursor\u2013product relationship between the various Nrf1 species, or they arise from newly-synthesized Nrf1 following different biogenetic pathways. We do not understand the basis for the multiple discrepancies between our data and those of Zhang and Hayes.\n\nOur observation that a functional transcription factor can begin its life in the lumen of the ER is unexpected but not without precedent. Ricin, a plant toxin, and some bacterial toxins including cholera toxin, and shiga toxin likewise are retrotranslocated from the ER lumen to the cytosol, where they exert their biological functions (Inoue et al., 2011). Another example is the Hepatitis E Virus capsid protein ORF2, which co-opts the ERAD machinery to gain access to the cytosol (Surjit et al., 2007). To our knowledge, the only host protein that undergoes retrotranslocation from the ER but escapes degradation by the proteasome is calreticulin (Afshar et al., 2005; Gold et al., 2010). Upon inhibition of the proteasome, presumably the entire complement of ERAD substrates mimics Nrf1 in that these proteins are retrotranslocated from the luminal to the cytosolic side of the ER membrane but are not degraded. Our observations provoke the question of whether some of these proteins, like Nrf1, exert novel functions upon their accumulation in the cytosol. An obvious question that emerges from our findings is why is Nrf1 regulated by such a baroque mechanism? Targeting Nrf1 to the ER may ensure that the basal level of Nrf1 activity is essentially zero in the absence of proteasome stress, due to the normally tight coupling between retrotranslocation and degradation (Wolf and Stolz, 2012). In cells that experience insufficient proteasome activity\u2014brought about either through environmental insults including proteasome or chaperone inhibitors produced by microbes, or through changes in gene expression\u2014accumulation of active Nrf1 can restore an adequate level of proteasome function.\n\nOur finding that p97 is required for the Nrf1-mediated proteasome bounce-back response potentially has therapeutic implications. Previously, we demonstrated that in cancer cells, depletion of Nrf1 slows down recovery of proteasome activity upon transient inhibition of the proteasome and enhances apoptosis caused by a covalent proteasome inhibitor (Radhakrishnan et al., 2010). Although inhibition of transcription factors with small molecules has proven difficult (Berg, 2008), p97 is a druggable target (Chou et al., 2011, 2013; Magnaghi et al., 2013). Indeed, recent papers have reported enhanced killing of cancer cells when proteasome and p97 inhibitors are used in combination (Auner et al., 2013; Chou et al., 2013). It will be interesting to see whether blockade of the Nrf1-mediated bounce-back response through inhibition of p97 enhances the efficacy of proteasome inhibitor therapy in multiple myeloma or enables expansion of proteasome inhibitor therapy into new indications.\n\n## Materials and methods\n\n### Constructs\n\n3\u00d7FlagNrf1 (RDB-2411) and 3\u00d7FlagNrf1HA (RDB-2412) constructs have been described previously (Radhakrishnan et al., 2010). Human Nrf1 coding region along with a C-terminal 3\u00d7Flag sequence was cloned into pcDNA3.1+ (Invitrogen, Carlsbad, CA) to establish the wild-type construct Nrf13\u00d7Flag (RDB-2867). The following mutants were derived from Nrf13\u00d7Flag via site-directed mutagenesis using the indicated forward primers together with their corresponding reverse complement primers: Nrf1(m1)3\u00d7Flag (RDB-2868; forward primer: 5\u2032-ACA GGT TCC AGG TGC CAA CCA CTG AGG TAG CTG CCG CGG CGG CTG CCC GAG ACC CAG AGG G-3\u2032), Nrf1(m2)3\u00d7Flag (RDB-2869; forward primer: 5\u2032-GGT GCC AAC CAC TGA GGT AGC TGC CGC GCT GGT TCA CCG AGA-3\u2032), Nrf1(m3)3\u00d7Flag (RDB-2870; forward primer: 5\u2032-CAC TGA GGT AAA TGC CGC GCT GGT TCA CCG AGA C-3\u2032), Nrf1(m4)3\u00d7Flag (RDB-2871; forward primer: 5\u2032-GAG GTA AAT GCC TGG GCG GTT CAC CGA GAC CC-3\u2032), Nrf1(m5)3\u00d7Flag (RDB-2872; forward primer: 5\u2032-CCA CTG AGG TAA ATG CCG CGG CGG TTC ACC GAG ACC CAG-3\u2032), and Nrf1(m6)3\u00d7Flag (RDB-2873; forward primer: 5\u2032-ACT GAG GTA AAT GCC TGG GCG GCT GCC CGA GAC CCA GAG GGG TC-3\u2032).\n\nThe doxycycline-inducible shRNA expression construct pTRIPZ-p97sh (RDB-2874) targeting p97 was based on a 21-mer sequence (AAC AGC CAT TCT CAA ACA GAA) present in the coding region of both human and mouse genes and was cloned into the pTRIPZ vector (Open Biosystems, Huntsville, AL).\n\n### Cell culture\n\nHEK-293T, HEK-293, and NIH-3T3 cell lines were grown in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) supplemented with 10% fetal bovine serum (Atlanta Biologicals, Norcross, GA), penicillin, and streptomycin (Invitrogen) at 37\u00b0C in 5% CO2. Immortalized Nrf1\u2212/\u2212 mouse embryonic fibroblasts (MEFs) (Radhakrishnan et al., 2010) were grown as above except that the medium was additionally supplemented with \u03b2-mercaptoethanol and non-essential amino acids (Invitrogen).\n\n### Transient transfection and retroviral transduction\n\nTransfection reagents Lipofectamine 2000 (for HEK-293T, HEK-293 cells) or Lipofectamine LTX (for mouse embryonic fibroblasts) were used for transient transfections as per manufacturer\u2019s recommendations (Invitrogen).\n\nFor retroviral production, HEK-293T cells were transfected with the required retroviral construct along with helper plasmids. 48 hr after transfection, media supernatant containing the retrovirus was collected every 4\u20135 hr for 2 days. This retrovirus-containing medium, supplemented with polybrene (10 \u00b5g/ml), was used to transduce the target cells.\n\n### Stable cell lines\n\nNIH-3T3-p97sh cell line (DTC-138) expressing doxycyline-inducible p97-specific shRNA was generated by transducing the mouse NIH-3T3 cells with the pTRIPZ-p97sh retroviral construct and selecting them in the presence of 7.5 \u00b5g/ml of puromycin. The HEK-293-p97sh cell line (DTC-139) was generated similarly except that 2 \u00b5g/ml puromycin was used for selection.\n\nStable cell lines HEK-293-Nrf13\u00d7Flag (DTC-140) and HEK-293-Nrf1(m1)3\u00d7Flag (DTC-141) were established by transfecting HEK-293 cells with the constructs Nrf13\u00d7Flag and Nrf1(m1)3\u00d7Flag respectively and subjecting the cells to 500 \u00b5g/ml Geneticin selection.\n\n### Immunoblot analysis\n\nCells were lysed in RIPA buffer (50 mM Tris pH 7.4, 150 mM NaCl, 1% NP40, 1% Na.Deoxycholate, 0.1% SDS, 1 mM EDTA) supplemented with a protease and phosphatase inhibitor cocktail (Pierce, Rockford, IL). Immunoblots were performed with antibodies specific for Nrf1 (8052S; Cell Signaling, Danvers, MA), Flag tag (A8592; Sigma\u2013Aldrich, St. Louis, MO), HA tag (2013819; Roche Diagnostics, Indianapolis, IN), p97 (sc-20799; SantaCruz Biotechnology, Dallas, TX), Calnexin (sc-11397; SantaCruz Biotechnology), and \u03b2-actin (A5441; Sigma\u2013Aldrich).\n\n### N-terminal Edman degradation sequencing\n\nHEK-293T cell line was transiently transfected with the construct Nrf13\u00d7Flag and 48 hr later was treated with 5 \u00b5M MG132 for 5 hr. Cell lysate was prepared in lysis buffer (50 mM Tris pH 7.4, 0.5 M NaCl, 1 mM EDTA, 1% Triton X-100) supplemented with protease and phosphatase inhibitor cocktail (Pierce). The lysate was then subjected to immunoprecipitation with anti-Flag beads (Sigma-Aldrich) and eluted with Flag peptide (Sigma-Aldrich). The eluate was resolved by SDS-PAGE and transferred on to a PVDF membrane in the presence of 10 mM CAPS (3-cyclohexylamino-1-propane sulfonic acid), pH 11.0 and 10% Methanol. The membrane was stained with Ponceau S solution, and the Nrf1-specific bands (p120 and p110) were excised and sequenced using a protein micro-sequencer (Procise cLC 492A sequencer; Applied Biosystems, Foster City, CA).\n\nWhereas the p120 sample confirmed the intact N-terminus, the p110 sample indicated a mix of amino acid sequences LVHRD and VHRD. The latter sequence is likely to be a frayed-end version of the former that was generated during sample processing (F Rusnak, personal communication), thus revealing the N-terminus of p110 to be Leu-104.\n\n### Quantitative reverse transcription PCR\n\nRNA was isolated using the RNeasy kit (Qiagen, Valencia, CA). cDNA was prepared using the Superscript III first strand synthesis kit (Invitrogen) according to the manufacturer\u2019s recommendations. Quantitative PCR (qPCR) was performed using the SYBR GreenER supermix (Invitrogen). The primers used to quantify murine proteasome subunits (PSM) and GAPDH mRNA levels have been described previously (Radhakrishnan et al., 2010).\n\n### Pulse-chase assay\n\nThe pulse-chase experiment to establish the precursor\u2013product relationship between Nrf1 p120 and p110 was carried out using the Click-iT Metabolic labeling and detection kits (Invitrogen) as per the manufacturer\u2019s recommendations. Briefly, HEK-293 cells stably expressing either wild-type Nrf13\u00d7Flag or Nrf1(m1)3\u00d7Flag were starved for an hour in methionine-free medium and pulsed for an additional hour with 50 \u00b5M L-azidohomoalanine. Then the cells were washed with PBS and subjected to a chase with the addition of 5 \u00b5M MG132, 50 \u00b5g/ml cycloheximide, and 2 mM L-methionine. The cells were harvested at different time points and the cell lysates were prepared in lysis buffer (50 mM Tris pH 7.4, 0.5 M NaCl, 1 mM EDTA, 1% Triton X-100) supplemented with protease and phosphatase inhibitor cocktail (Pierce). The lysates were then used for immunoprecipitation with anti-Flag beads (Sigma-Aldrich). The immunoprecipitates were labeled with Tetramethylrhodamine (TAMRA)-alkyne and resolved by SDS-PAGE. The labeled bands were visualized in a Typhoon laser scan imaging system (GE Healthcare, Pittsburgh, PA).\n\n### Protease protection assay\n\nThe cells were washed once in PBS, resuspended in 10 mM Hepes-KOH pH 7.5 buffer and incubated on ice for 10 min. The swollen cells were then sedimented, resuspended in homogenization buffer (10 mM Hepes-KOH pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 5 mM EGTA, and 250 mM sucrose) and passed through a 27G syringe needle several times. The homogenate was then subjected to serial centrifugations at 600\u00d7g (10 min), 3000\u00d7g (10 min) and 100,000\u00d7g (60 min). The microsomes collected at the end of the 100,000\u00d7g ultracentrifugation step were resuspended in membrane buffer (10 mM Hepes-KOH pH 7.5, 50 mM KOAc, 2 mM Mg(OAc)2, 1 mM DTT, and 250 mM sucrose).\n\nMicrosomes were mock-treated or subjected to Proteinase K (0.5 \u00b5g/\u00b5l) treatment either in the absence or presence of 1% Triton X-100 for 60 min on ice. The samples were then precipitated by trichloroacetic acid (TCA), resuspended in boiling sample buffer, resolved by SDS-PAGE and subsequently analyzed by immunoblotting with appropriate antibodies.\n\n### Deglycosylation assay\n\nCells were lysed in IP buffer (50 mM HEPES/KOH pH 7.5, 5 mM Mg(OAc)2, 70 mM KOAc, 0.2% Triton X-100; 10% glycerol, and 0.2 mM EDTA) supplemented with a protease and phosphatase inhibitor cocktail (Pierce). These cell lysates were used for deglycosylation reactions with the enzyme Endoglycosidase H for 1 hr at 37\u00b0C as per the manufacturer\u2019s recommendations (New England Biolabs, Ipswich, MA).\n",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c4327d73-bd34-40ab-a2f4-b168e9c08871",
+      "submission_id": "2157edfa-4b0a-482c-8a16-33156fc432e0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael S Brown, UT Southwestern Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01856.009](https://doi.org/10.7554/eLife.01856.009)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: although it is not typical of the review process at eLife, in this case the editors decided to include the reviews in their entirety for the authors\u2019 consideration as they prepared their revised submission.]\n\nThank you for sending your work entitled \u201cp97-dependent retrotranslocation and proteolytic processing govern formation of active Nrf1 upon proteasome inhibition\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and three reviewers, two of whom are members of our Board of Reviewing Editors.\n\nThe reviewers have made some suggestions that you should consider prior to submitting a final manuscript. The most important question is whether you wish to revise Figure 5 to indicate that the proposed model for C-terminal retrotranslocation led by the C-terminus is only provisional and other models are also possible. We are including the reviews below for your information.\n\nReviewer #1:\n\nThis important paper documents a novel mechanism for control of proteasome biosynthesis through the p57-mediated retrotranslocation of Nrf1 from ER lumen to cytosol and eventually to the nucleus. The experiments are comprehensive and well performed.\n\nI see only one major problem. The diagram in Figure 5 implies that Nrf1 is retrotranslocated with the COOH-terminus leading the way. This requires a new membrane-spanning segment that the authors do not document. It seems equally likely that the NH2-terminal transmembrane helix is actually an uncleaved signal sequence that may never dissociate from the Sec61 translocation machinery. In this case the retrotranslocation may proceed by simply reversing the original membrane insertion mechanism so that the NH2- terminus would lead the way. If the authors agree they should consider modifying Figure 5 to indicate this alternate mechanism for retrotranslocation.\n\nReviewer #2:\n\nThis manuscript reports on a mechanism for the regulated activation of the transcription factor Nrf1 in mammalian cells with diminished proteasome activity. Using a panel of suitably tagged mutant versions of Nrf1 and exploiting inhibitors of the AAA protein p97 and the proteasome, Radhakrishnan and colleagues provide compelling evidence that the bulk of Nrf1 (its C-terminus) is normally translocated into the lumen of the ER and then subject to proteasome-dependent ER-associated degradation (a process i.e. dependent on the activity of p97). Under conditions of diminished proteasome activity, the C-terminal portion of Nrf1 is untethered from its membrane anchor by a yet-to-be identified protease (that cleaves after Trp103) and finds its way to the nucleus where it serves to activate the transcription of genes encoding proteasome subunits.\n\nThis study is remarkable both in terms of its physiological significance (clarifying a mechanism relevant to the regulated expression of a key component of the cell's protein degradation apparatus) and in terms of the level of detail it provides on the molecular aspects. The cleavage site of Nrf1 is precisely mapped and, crucially, the proposed unusual itinerary of Nrf1's C-terminal portion is confirmed by tracing the glycosylation status of the various trapped intermediates. Thus, this study will be of interest to a wide range of investigators.\n\nTwo specific comments follow (the first critical and the second speculative):\n\nThe critical comment:\n\nThe supplement to Figure 4 is a bit cryptic. The experiment exploits cotransin - presumably the compound described by Taunton's group in 2005 (PMID: 16015336) \u2013 to inhibit Sec61-mediated translocation of something. But neither the logic of the experiment nor the provenance of cotransin (Taunton's paper is not cited), nor the significance of the observations are discussed in any detail. eLife's readers would benefit from rectification of these shortcomings.\n\nThe speculative comment:\n\nComparing the mobility of the P110 fragment synthesized in vitro, with that isolated from cells, the researchers conclude that the latter is subject to a novel post-translational modification. This is likely true, but it is worth perhaps considering the possibility that the modification in question may be a direct consequence of cytosolic deglycosylation of the single (predicted) N-linked glycan in Nrf1, which would convert Asn 347 to an aspartic acid (EndoH results in a different remnant, a GlcNAc attached to Asn 347 accounting perhaps for the different mobility of bands c and b in Figure 4). If the deglycosylated residue were important to P110's activity, this could provide a satisfying explanation for Nrf1's unusual itinerary: its purpose is to convert Asn347 to Asp347. This idea would be supported (though by no means proven) by judicious mutagenesis of Asn347.\n\nReviewer #3:\n\nThis manuscript demonstrates a novel transcriptional regulatory mechanism. The authors show that the transcriptional activation domain of Nrf1 is localized in the ER lumen after its initial synthesis, and then subject to constitutive retrotranslocation followed by rapid proteasomal degradation under normal circumstance. Upon inhibition of proteasomes, a proteolytic event-generated C-terminal fragment of the protein (p110) activates transcription of genes encoding proteasome subunits. These results are potentially interesting, but they are not enough to support the model shown in Figure 5, primarily because the authors fail to show how the precursor of Nrf1 (p120) associates with membranes.\n\n1) The authors cited a previous study showing that Nrf1 (p120) is an intrinsic membrane protein. However, after reading the cited reference, this reviewer found that the particular study did not address whether the protein is really an intrinsic membrane protein or a soluble ER luminal protein. Indeed, the reviewer suspects that Nrf1 (p120) may be a soluble ER luminal protein as the so-called N-terminal transmembrane segment is not hydrophobic enough to be a transmembrane helix but appears to be a good candidate for a signal sequence. This hypothesis can be tested by alkaline treatment or other methods to break microsome membranes to see whether such treatment releases the protein from membrane pellets in cells in which p97 is depleted. An intrinsic ER membrane protein such as calnexin and a soluble ER luminal protein such as calreticulin should be used as controls in the experiment.\n\n2) If NRF1 (p120) is a soluble ER protein, then after retrotranslocation it should be a soluble cytosolic protein. Under this condition, the proteolytic cleavage may allow p110 to enter the nucleus where it activates transcription of its target genes. This hypothesis should be tested by cell fractionation experiments to determine the subcellular localization of p120 and p110 in cells treated with a proteasomal inhibitor but with p97 present.\n\n3) Even if NRF1 (p120) is an intrinsic membrane protein, the model shown in Figure 5 still does not make sense as it suggests the presence of a new transmembrane domain during the retrotranslocation. Is there any evidence supporting this hypothesis? A more likely model is that during retrotranslocation the transmembrane helix horizontally dips into membranes so that both the N and C terminal segment of the proteins can face the cytosol. If this is the case, the authors need to demonstrate that whereas p120 is an intrinsic membrane protein, p110 is a soluble protein that can enter the nucleus.\n",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "449d0521-5501-49de-8c26-cf24eac81fb7",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C1",
+      "claim": "Proteasome inhibition elicits an evolutionarily conserved response wherein proteasome subunit mRNAs are upregulated, resulting in recovery (i.e., 'bounce-back') of proteasome activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteasome inhibition elicits an evolutionarily conserved response wherein proteasome subunit mRNAs are upregulated, resulting in recovery (i.e., 'bounce-back') of proteasome activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge about proteasome homeostasis and is presented as background information in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "fe38decd-ba7d-4c94-a758-8cb28bdd0c4f",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C2",
+      "claim": "The transcription factor Nrf1/NFE2L1 mediates the proteasome bounce-back response in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that the transcription factor Nrf1/NFE2L1 mediates this homeostatic response in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work by the authors (Radhakrishnan et al., 2010) as indicated by the phrase 'We previously demonstrated'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "1dc33617-2496-4fd1-970f-e0daa1f46335",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C3",
+      "claim": "Nrf1 is initially translocated into the lumen of the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Nrf1 is initially translocated into the lumen of the ER, but is rapidly and efficiently retrotranslocated to the cytosolic side of the membrane in a manner that depends on p97/VCP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically protease protection assays shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "db235c2c-2a1f-4afb-8b05-709241b61ef1",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C4",
+      "claim": "Nrf1 is rapidly and efficiently retrotranslocated to the cytosolic side of the membrane in a manner that depends on p97/VCP.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Nrf1 is initially translocated into the lumen of the ER, but is rapidly and efficiently retrotranslocated to the cytosolic side of the membrane in a manner that depends on p97/VCP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data including p97 depletion experiments and p97 inhibitor studies shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "41e46a66-23bb-4e58-b827-5113e69ae931",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C5",
+      "claim": "Normally, retrotranslocated Nrf1 is degraded promptly by the proteasome and active species do not accumulate.",
+      "claim_type": "EXPLICIT",
+      "source": "Normally, retrotranslocated Nrf1 is degraded promptly by the proteasome and active species do not accumulate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations showing that Nrf1 accumulates only when proteasomes are inhibited, as shown in Figure 1 and discussed throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "16d34bc8-cace-4c08-a16f-ca67d2b0200e",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C6",
+      "claim": "In cells with compromised proteasomes, retrotranslocated Nrf1 escapes degradation and is cleaved N-terminal to Leu-104 to yield a fragment that is no longer tethered to the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in cells with compromised proteasomes, retrotranslocated Nrf1 escapes degradation and is cleaved N-terminal to Leu-104 to yield a fragment that is no longer tethered to the ER membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by N-terminal sequencing data (Figure 1B) and pulse-chase experiments (Figure 1D) showing cleavage at Leu-104.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "1dd678d7-9df1-4c08-8c25-7f4af513ac47",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C7",
+      "claim": "The cleavage event N-terminal to Leu-104 is essential for Nrf1-dependent activation of proteasome gene expression upon proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this cleavage event is essential for Nrf1-dependent activation of proteasome gene expression upon proteasome inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experiments with non-cleavable Nrf1 mutants showing defective PSM gene induction (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c4eb2531-feaa-4781-b526-9c9fbb8160d3",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C8",
+      "claim": "Nrf1 belongs to the cap 'n' collar basic leucine zipper (CNC-bZIP) family of proteins that are known to be activated in response to cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription factor Nuclear factor erythroid derived 2-related factor 1 (Nrf1) belongs to the cap 'n' collar basic leucine zipper (CNC-bZIP) family of proteins that are known to be activated in response to cellular stress (Sykiotis and Bohmann, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sykiotis and Bohmann, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "7f5d471a-19ee-44b9-abb0-07ebbb539717",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C9",
+      "claim": "Other members of the CNC-bZIP family include p45 NF-E2, Nrf2, Nrf3, Bach1, and Bach2.",
+      "claim_type": "EXPLICIT",
+      "source": "Other members of this family include p45 NF-E2, Nrf2, Nrf3, Bach1, and Bach2 (Andrews et al., 1993; Moi et al., 1994; Oyake et al., 1996; Kobayashi et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations (Andrews et al., 1993; Moi et al., 1994; Oyake et al., 1996; Kobayashi et al., 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "ea9ed8fb-f72e-4ca2-b7f9-ba12bee728a4",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C10",
+      "claim": "The CNC-bZIP transcription factors heterodimerize with small Maf proteins (Maf F, Maf G, and Maf K) and preferentially bind to anti-oxidant response elements (AREs) present in the promoter region of their target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNC-bZIP transcriptions factors heterodimerize with small Maf proteins (Maf F, Maf G, and Maf K) and preferentially bind to anti-oxidant response elements (AREs) present in the promoter region of their target genes (Motohashi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Motohashi et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "4de8c4ac-4f2d-4d93-802b-aaac32eb0a1a",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C11",
+      "claim": "Nrf2 is the most studied member of the CNC-bZIP family.",
+      "claim_type": "EXPLICIT",
+      "source": "The most studied member of the CNC-bZIP family is Nrf2, which in response to oxidative stress directs a transcriptional program that helps maintain cellular redox homeostasis (Kensler et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of scientific consensus supported by citation to Kensler et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "59443fe9-690a-4f72-b50e-594f3a224ff9",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C12",
+      "claim": "Nrf2 directs a transcriptional program that helps maintain cellular redox homeostasis in response to oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The most studied member of the CNC-bZIP family is Nrf2, which in response to oxidative stress directs a transcriptional program that helps maintain cellular redox homeostasis (Kensler et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kensler et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "84ffb9dc-d438-4459-b85f-06bf08256818",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C13",
+      "claim": "In mouse embryonic fibroblasts, Nrf1 but not Nrf2 is necessary for elevated expression of proteasome subunit mRNAs observed in cells treated with proteasome inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we demonstrated that in mouse embryonic fibroblasts, Nrf1 but not Nrf2 is necessary for elevated expression of proteasome subunit mRNAs observed in cells treated with proteasome inhibitor, leading to a recovery or 'bounce-back' of proteasome activity (Radhakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work by the authors (Radhakrishnan et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "9fb8b1c5-13ed-480b-95cd-3c7e6bf07dc8",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C14",
+      "claim": "TCF11 (a longer isoform of Nrf1 found only in humans) is a mediator of proteasome bounce-back response after proteasome inhibition in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observation, TCF11 (a longer isoform of Nrf1 found only in humans) was subsequently reported to be a mediator of proteasome bounce-back response after proteasome inhibition in human cells (Steffen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Steffen et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "09789c45-4dc0-4fbf-be23-d098823cfcc5",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C15",
+      "claim": "Nrf1 functions to combat proteotoxic stress caused by proteasome inhibition in mammals akin to transcription factors RPN4 in yeast and Cnc-C in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it appears that Nrf1 functions to combat proteotoxic stress caused by proteasome inhibition in mammals akin to transcription factors RPN4 in yeast (Xie and Varshavsky, 2001) and Cnc-C in Drosophila (Grimberg et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Xie and Varshavsky, 2001 and Grimberg et al., 2011, and represents an inference about functional conservation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "a1ea4468-fd55-44b8-9514-45d7d1a2f4a1",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C16",
+      "claim": "Nrf1 depletion slows the rate of recovery of proteasome activity following transient application of a covalent proteasome inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "From the standpoint of cancer treatment, blockade of this bounce-back response may be a viable strategy to enhance the efficacy of proteasome inhibition therapy, given that Nrf1 depletion slows the rate of recovery of proteasome activity following transient application of a covalent proteasome inhibitor and results in enhanced proteasome inhibitor-mediated apoptosis in cancer cells (Radhakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work by the authors (Radhakrishnan et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "cc434a8a-f016-4798-b01d-94db3d1960d0",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C17",
+      "claim": "Nrf1 depletion results in enhanced proteasome inhibitor-mediated apoptosis in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From the standpoint of cancer treatment, blockade of this bounce-back response may be a viable strategy to enhance the efficacy of proteasome inhibition therapy, given that Nrf1 depletion slows the rate of recovery of proteasome activity following transient application of a covalent proteasome inhibitor and results in enhanced proteasome inhibitor-mediated apoptosis in cancer cells (Radhakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work by the authors (Radhakrishnan et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "561483de-5c6d-472a-8d6c-0e1f1c26e825",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C18",
+      "claim": "Blockade of the Nrf1-mediated bounce-back response may be a viable strategy to enhance the efficacy of proteasome inhibition therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "From the standpoint of cancer treatment, blockade of this bounce-back response may be a viable strategy to enhance the efficacy of proteasome inhibition therapy, given that Nrf1 depletion slows the rate of recovery of proteasome activity following transient application of a covalent proteasome inhibitor and results in enhanced proteasome inhibitor-mediated apoptosis in cancer cells (Radhakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential therapeutic applications based on prior experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "bafb216f-51fb-4a20-9b1f-3514a5b5a146",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C19",
+      "claim": "In Nrf1\u2212/\u2212 mouse neurons, PSM gene expression is diminished resulting in impaired proteasome function and neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in Nrf1\u2212/\u2212 mouse neurons, PSM gene expression is diminished resulting in impaired proteasome function and neurodegeneration (Lee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lee et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c47deac6-6616-447f-a253-c077bc64a9f7",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C20",
+      "claim": "A liver-specific knockout of Nrf1 in mice caused attenuation of PSM expression in hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, a liver-specific knockout of Nrf1 in mice caused a similar attenuation of PSM expression in hepatocytes (Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "fbaed8b5-0015-40a5-8b49-714906750379",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C21",
+      "claim": "Nrf1 exists in two forms, p120 and p110, both of which are unstable and accumulate when the proteasome is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "What is known is that Nrf1 exists in two forms, p120 and p110, both of which are unstable and accumulate when the proteasome is inhibited (Radhakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work by the authors (Radhakrishnan et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "ace70f73-0dc0-44aa-9634-96d50c4b52dc",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C22",
+      "claim": "Nrf1 p120 is embedded in the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas p120 is embedded in the ER membrane, p110 is soluble and can enter the nucleus (Biswas and Chan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Biswas and Chan, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "79fdcceb-de8f-4b76-874c-34b2a5477c5d",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C23",
+      "claim": "Nrf1 p110 is soluble and can enter the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas p120 is embedded in the ER membrane, p110 is soluble and can enter the nucleus (Biswas and Chan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Biswas and Chan, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "792a62c3-6334-4401-b63c-8783cd851f99",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C24",
+      "claim": "The anti-HA antibody was able to detect two different forms of Nrf1 (\u223c120 and \u223c110 kDa) in cells expressing 3\u00d7FlagNrf1HA treated with MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of MG132, regardless of the cell type used, we observed that although the anti-HA antibody was able to detect two different forms of Nrf1 (\u223c120 and \u223c110 kDa), the anti-Flag antibody was able to detect only the \u223c120 kDa form (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "8a4bbd1b-3b99-4471-a8dd-cfd127c08a0b",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C25",
+      "claim": "The anti-Flag antibody was able to detect only the \u223c120 kDa form of Nrf1 in cells expressing 3\u00d7FlagNrf1HA treated with MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of MG132, regardless of the cell type used, we observed that although the anti-HA antibody was able to detect two different forms of Nrf1 (\u223c120 and \u223c110 kDa), the anti-Flag antibody was able to detect only the \u223c120 kDa form (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "cce5caca-6e75-429e-a50d-e4f158d80aea",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C26",
+      "claim": "Nrf1 p120 is cleaved somewhere close to the N-terminus to yield p110.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest explanation for this observation is that Nrf1 p120 was cleaved somewhere close to the N-terminus to yield p110.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential detection of Nrf1 forms by N-terminal vs C-terminal tags.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "b60676d6-3130-45c9-ac52-1cb489ab0390",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C27",
+      "claim": "The p110 form of Nrf1 has a new N-terminus starting with Leu-104.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the \u223c120 kDa band confirmed the intact N-terminus of the full-length Nrf1, sequence from the \u223c110 kDa band was consistent with a new N-terminus starting with Leu-104 (Figure 1B; putative cleavage site indicated with a scissor).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by N-terminal Edman degradation sequencing data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "32863bab-d559-4cbe-b7c8-3623904cb329",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C28",
+      "claim": "All mutants (m1 through m6) flanking the predicted cleavage site were defective to varying degrees in their ability to be processed to the p110 form.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all mutants were defective to varying degrees in their ability to be processed to the p110 form, although the defects of m4 and m6 were relatively modest (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "7882b6bc-841c-4ae1-8a6a-60794e62d1fd",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C29",
+      "claim": "Trp-103 at the P1 position plays a crucial role for protease recognition in Nrf1 processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, m4 and m6 are the only mutants that retain Trp-103 at the P1 position (with respect to the cleavage site), implying a crucial role of this Trp residue for protease recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that mutants retaining Trp-103 showed less severe processing defects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "d10f499c-0189-444f-b2c2-306eac8619a0",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C30",
+      "claim": "Wild-type p120 Nrf1 is processed to p110 over time in a pulse-chase experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that over time, wild-type p120 was processed to p110 but the non-cleavable Nrf1(m1)3\u00d7Flag was not processed (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pulse-chase experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "97fe02b8-ec6c-4a77-825a-5e554cc5b7b4",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C31",
+      "claim": "The non-cleavable Nrf1(m1)3\u00d7Flag mutant is not processed to p110 in a pulse-chase experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that over time, wild-type p120 was processed to p110 but the non-cleavable Nrf1(m1)3\u00d7Flag was not processed (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pulse-chase experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "b22c2fa3-a430-443d-9c39-786575f8e983",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C32",
+      "claim": "Newly synthesized Nrf1 p120 undergoes proteolytic processing between Trp-103 and Leu-104 to generate the p110 form.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data are consistent with a model in which newly synthesized Nrf1 p120 undergoes proteolytic processing between Trp-103 and Leu-104 to generate the p110 form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of experimental evidence including sequencing and mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "0d36334d-5e1f-4cec-bc51-9dac8e69b0f6",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C33",
+      "claim": "Wild-type Nrf13\u00d7Flag is able to reinstate the induction of proteasome subunit (PSM) genes in response to MG132 treatment in Nrf1\u2212/\u2212 MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, wild-type Nrf13\u00d7Flag was able to reinstate the induction of proteasome subunit (PSM) genes in response to MG132 treatment in these cells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "f5bfbf32-5f29-49fd-9bde-5dea3b0f66cf",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C34",
+      "claim": "Non-cleavable Nrf1(m1)3\u00d7Flag is defective in inducing PSM genes upon MG132 treatment in Nrf1\u2212/\u2212 MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, non-cleavable Nrf1(m1)3\u00d7Flag was defective in inducing PSM genes under the same conditions, implicating a necessary role for proteolytic processing in Nrf1's transcriptional program.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "6c0be0d9-b4b8-40b4-a4a4-03b61d96e794",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C35",
+      "claim": "Proteolytic processing plays a necessary role in Nrf1's transcriptional program.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, non-cleavable Nrf1(m1)3\u00d7Flag was defective in inducing PSM genes under the same conditions, implicating a necessary role for proteolytic processing in Nrf1's transcriptional program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that non-cleavable Nrf1 mutants fail to induce PSM genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "f085d975-7ebe-489c-9035-a0e44bc121fa",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C36",
+      "claim": "p97 is a homo-hexameric AAA ATPase that is implicated in numerous cellular processes ranging from cell-cycle regulation to membrane fusion and protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "p97 is a homo-hexameric AAA ATPase that is implicated in numerous cellular processes ranging from cell-cycle regulation to membrane fusion and protein degradation (Ye, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ye, 2006 and represents established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "2c6ebbf2-a0e9-4730-ab1c-5fe5b82904a4",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C37",
+      "claim": "p97 has been implicated in the turnover of the TCF11 isoform of human Nrf1 via the endoplasmic reticulum-associated degradation (ERAD) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "p97 has also been implicated in the turnover of the TCF11 isoform of human Nrf1 via the endoplasmic reticulum-associated degradation (ERAD) pathway (Steffen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Steffen et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "8575f4a4-cf75-4d21-83a5-25e02d9f4e46",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C38",
+      "claim": "Depletion of p97 leads to the strong accumulation of ubiquitin-conjugated substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to inhibition of the proteasome, depletion of p97 leads to the strong accumulation of ubiquitin-conjugated substrates (Wojcik et al., 2004), underscoring its role in enabling degradation of a subset of the ubiquitinated proteome by the proteasome (Kolawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wojcik et al., 2004 and Kolawa et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "ac837e09-8a16-4ca6-9fdb-6e9e649ca6e9",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C39",
+      "claim": "p97 plays a role in enabling degradation of a subset of the ubiquitinated proteome by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to inhibition of the proteasome, depletion of p97 leads to the strong accumulation of ubiquitin-conjugated substrates (Wojcik et al., 2004), underscoring its role in enabling degradation of a subset of the ubiquitinated proteome by the proteasome (Kolawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kolawa et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "38608571-a317-4090-a067-812f5fe59f93",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C40",
+      "claim": "Depletion of p97 does not induce the bounce-back response in NIH-3T3 mouse fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike proteasome inhibition, depletion of p97 upon addition of doxycycline did not induce the bounce-back response (Figure 3A; compare bars 1 and 3 for the PSM genes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "922daad3-eb8b-48bd-933b-8d57377e91ab",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C41",
+      "claim": "MG132-mediated bounce-back response is severely impaired when p97 is knocked-down.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we observed that MG132-mediated bounce-back response was severely impaired when p97 was knocked-down (Figure 3A; compare bars 3 and 4 for the PSM genes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c8597b63-0149-4f61-b3fb-ad2d6499a5ea",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C42",
+      "claim": "Nrf1 accumulates in cells depleted of p97.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Steffen et al., 2010, Nrf1 accumulated in cells depleted of p97 (Figure 3B, compare lanes 1 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 3B and is consistent with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "9396a94c-9c96-4f6f-8788-4c8df31b91a3",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C43",
+      "claim": "Control cells treated with MG132 accumulate the p110 form of Nrf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the control cells accumulated p110 (indicative of Nrf1 activation), this form was markedly absent in p97-depleted cells (Figure 3B, compare lanes 2 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c8ea65b1-d2aa-4e59-8203-44e6e8be0617",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C44",
+      "claim": "The p110 form of Nrf1 is markedly absent in p97-depleted cells treated with MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the control cells accumulated p110 (indicative of Nrf1 activation), this form was markedly absent in p97-depleted cells (Figure 3B, compare lanes 2 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "f196b38e-b2c6-4d76-a49e-eb339602cd13",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C45",
+      "claim": "Treatment of NIH-3T3 mouse fibroblasts with NMS-873 leads to a robust accumulation of p120 Nrf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of NIH-3T3 mouse fibroblasts or HEK-293-Nrf13\u00d7Flag cells with NMS-873 led to a robust accumulation of p120 Nrf1 (Figure 3C; lane 1), which was then efficiently converted to the p110 form with a half-life of \u223c30 min upon washout of NMS-873 in the presence of cycloheximide and MG132 (Figure 3C, lanes 2\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pulse-chase experimental data with p97 inhibitor shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "9d7f5a49-1423-4dce-b26e-05acc04b4854",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C46",
+      "claim": "p120 Nrf1 is efficiently converted to the p110 form with a half-life of \u223c30 min upon washout of NMS-873 in the presence of cycloheximide and MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of NIH-3T3 mouse fibroblasts or HEK-293-Nrf13\u00d7Flag cells with NMS-873 led to a robust accumulation of p120 Nrf1 (Figure 3C; lane 1), which was then efficiently converted to the p110 form with a half-life of \u223c30 min upon washout of NMS-873 in the presence of cycloheximide and MG132 (Figure 3C, lanes 2\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pulse-chase experimental data with p97 inhibitor shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "e2d4eadb-5945-4d60-a6b8-7bd91d60e7f4",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C47",
+      "claim": "p97 controls not only the degradation of Nrf1, but also its processing to the active p110 form.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results are consistent with a model in which p97 controls not only the degradation of Nrf1, but also its processing to the active p110 form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple experimental observations including p97 depletion and inhibitor studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "9d9bf380-a389-483f-9ce4-f67fa5ec487b",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C48",
+      "claim": "During synthesis, Nrf1 becomes anchored in the ER membrane via an N-terminal transmembrane region (residues 7\u201324).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that during synthesis, Nrf1 becomes anchored in the ER membrane via an N-terminal transmembrane region (residues 7\u201324) (Zhang and Hayes, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhang and Hayes, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "3ece0477-b7b0-4b2b-a3ae-9a16d5096a20",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C49",
+      "claim": "The N-terminus of 3\u00d7FlagNrf1 is oriented towards the cytosol regardless of p97 status.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of p97 status (normal in the absence of doxycycline, or depleted in the presence of doxycycline, Figure 4A), 3\u00d7FlagNrf1 was susceptible to Proteinase K (PK) digestion in the absence of detergent, implying that the N-terminus was oriented towards the cytosol at all times.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by protease protection assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "8812d8bf-b7e0-4b1b-a939-256381f66baf",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C50",
+      "claim": "The orientation of the C-terminus of Nrf13\u00d7Flag shows a strong dependence on p97 status.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, the orientation of the C-terminus of Nrf13\u00d7Flag showed a strong dependence on p97 status (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by protease protection assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "ffd8564c-2bca-4d0c-9e5b-ef2a0709982d",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C51",
+      "claim": "In mock-depleted cells, Nrf13\u00d7Flag is largely susceptible to digestion by Proteinase K.",
+      "claim_type": "EXPLICIT",
+      "source": "In mock-depleted cells, Nrf13\u00d7Flag was largely susceptible to digestion by PK (Figure 4B, compare lanes 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by protease protection assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "223f617f-728d-4f87-8af4-312f5a1a03cd",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C52",
+      "claim": "When p97 is depleted, Nrf13\u00d7Flag is largely resistant to Proteinase K.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, when p97 was depleted by the addition of doxycycline, Nrf13\u00d7Flag was largely resistant to PK (Figure 4B, compare lanes 7 and 8, or lanes 10 and 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by protease protection assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "1310f110-0070-4987-b200-2907638b1faf",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C53",
+      "claim": "Only a very small amino-terminal segment of newly-synthesized Nrf1 (amino acids 1\u20136) is exposed to the cytosol, whereas the bulk of Nrf1 (amino acids 25\u2013742) remains in the lumen of the ER when the retrotranslocation activity of p97 is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "The different behaviors of 3\u00d7FlagNrf1 and Nrf13\u00d7Flag and the failure to observe detectable trimming of Nrf13\u00d7Flag are consistent with a topology wherein only a very small amino-terminal segment of newly-synthesized Nrf1 is exposed to the cytosol (amino acids 1\u20136), whereas the bulk of Nrf1 (amino acids 25\u2013742) remains in the lumen of the ER when the retrotranslocation activity of p97 is blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential protease sensitivity of N-terminally vs C-terminally tagged Nrf1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "11e08f21-43aa-4e89-94cf-6ee8b413bb53",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C54",
+      "claim": "Retrotranslocation of p120 Nrf1 constitutively occurs at such a fast rate that, at steady-state, only a tiny fraction of luminal p120 can be detected unless retrotranslocation is blocked by depletion of p97.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that retrotranslocation of p120 constitutively occurs at such a fast rate that, at steady-state, only a tiny fraction of luminal p120 can be detected unless retrotranslocation is blocked by depletion of p97 as in Figure 4B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation based on the observation of a small protease-resistant pool of p120 at steady-state.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "ef24b3f0-7c45-414c-b987-dd975d79e9af",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C55",
+      "claim": "Nrf13\u00d7Flag becomes sensitive to Proteinase K upon washout of NMS-873 in the presence of MG132 plus cycloheximide.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Nrf13\u00d7Flag was largely resistant to digestion by PK in HEK293 cells treated with NMS-873 (Figure 4D, lanes 1 and 2), it became sensitive to PK upon washout of NMS-873 in the presence of MG132 plus cycloheximide (Figure 4D, lanes 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by protease protection assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "de8eb603-ad95-4885-886d-5623247f4f5a",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C56",
+      "claim": "Nrf1(m1)3\u00d7Flag mirrors the behavior of wild-type Nrf1 in protease protection assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrf1(m1)3\u00d7Flag mirrored the behavior of the wild-type protein (Figure 4D), indicating that the lack of processing observed for non-cleavable mutant was not due to defective retrotranslocation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by protease protection assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c23c3249-3157-4877-93e6-43431046a6d4",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C57",
+      "claim": "The lack of processing observed for non-cleavable Nrf1 mutant is not due to defective retrotranslocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrf1(m1)3\u00d7Flag mirrored the behavior of the wild-type protein (Figure 4D), indicating that the lack of processing observed for non-cleavable mutant was not due to defective retrotranslocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that non-cleavable Nrf1 undergoes retrotranslocation normally.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "ee78d314-42a8-4a0e-a2b8-5853e6bec0b0",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C58",
+      "claim": "When the C-terminal domain (CTD) of Nrf1 is oriented towards the lumen, Nrf1 should be glycosylated on a set of Asn-X-Ser/Thr sites C-terminal to the transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that when the C-terminal domain (CTD) is oriented towards the lumen, Nrf1 should be glycosylated on a set of Asn-X-Ser/Thr sites C-terminal to the transmembrane domain (Zhang et al., 2007), whereas when the CTD is retrotranslocated to the cytosol, it should become degylcosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on established knowledge about N-linked glycosylation in the ER lumen, supported by citation to Zhang et al., 2007.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "8b7f4fd5-4c5a-4009-b4de-1f3a1c3e5d4e",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C59",
+      "claim": "When the CTD of Nrf1 is retrotranslocated to the cytosol, it should become deglycosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that when the C-terminal domain (CTD) is oriented towards the lumen, Nrf1 should be glycosylated on a set of Asn-X-Ser/Thr sites C-terminal to the transmembrane domain (Zhang et al., 2007), whereas when the CTD is retrotranslocated to the cytosol, it should become degylcosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on established knowledge about protein glycosylation and the cytosolic environment.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "24d16eea-01fa-4cc6-b498-152f12e6e926",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C60",
+      "claim": "Nrf1 p120 that accumulated in cells treated with NMS-873 is sensitive to Endoglycosidase H.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrf1 p120 that accumulated in cells treated with NMS-873 was sensitive to Endo H (Figure 4E, compare lanes 1 and 2 or 5 and 6), whereas it became largely resistant to Endo H upon being chased in the presence of MG132 plus cycloheximide (Figure 4E, compare lanes 3 and 4 or 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by deglycosylation assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "ed91214a-26fc-4a3f-81c2-7f58c52b41b8",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C61",
+      "claim": "Nrf1 p120 becomes largely resistant to Endoglycosidase H upon being chased in the presence of MG132 plus cycloheximide after NMS-873 washout.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrf1 p120 that accumulated in cells treated with NMS-873 was sensitive to Endo H (Figure 4E, compare lanes 1 and 2 or 5 and 6), whereas it became largely resistant to Endo H upon being chased in the presence of MG132 plus cycloheximide (Figure 4E, compare lanes 3 and 4 or 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by deglycosylation assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "4778af7f-462c-4530-9d3b-7d917f0353da",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C62",
+      "claim": "The CTD of p120 Nrf1 flips from a luminal to a cytosolic orientation upon restoration of p97 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is consistent with the protease protection data that indicated that the CTD of p120 flips from a luminal to a cytosolic orientation upon restoration of p97 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on both protease protection and glycosylation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "fffe7bc4-4bd5-4b55-a1ef-445ad5e28b58",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C63",
+      "claim": "Once retrotranslocated to the cytosol, Nrf1 is not only deglycosylated and proteolytically cleaved after Trp103, but it also gains one or more additional modifications, the nature of which remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that once it is retrotranslocated to the cytosol, Nrf1 is not only deglycosylated and proteolytically cleaved after Trp103, but it also gains one or more additional modifications, the nature of which remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the unexpectedly slow migration of processed Nrf1 on SDS-PAGE compared to unmodified protein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "9c1dcce1-c962-4c14-a27c-fcaf3bdd7526",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C64",
+      "claim": "Mouse Nrf1 and its human ortholog TCF11 are transcription factors that enhance the accumulation of mRNAs that encode proteasome subunits upon inhibition of proteasome activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse Nrf1 and its human ortholog TCF11 are transcription factors that enhance the accumulation of mRNAs that encode proteasome subunits upon inhibition of proteasome activity (Radhakrishnan et al., 2010; Steffen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Radhakrishnan et al., 2010 and Steffen et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "ef35dc94-99c6-4194-a76c-de650579c820",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C65",
+      "claim": "Nrf1 is initially integrated into the ER membrane but is turned over rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work established that Nrf1 is initially integrated into the ER membrane but is turned over rapidly (Biswas and Chan, 2009; Radhakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Biswas and Chan, 2009 and Radhakrishnan et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "055dbefb-d78c-43a5-bc82-1338e3cb3b67",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C66",
+      "claim": "Upon proteasome inhibition, Nrf1 accumulates, migrates to the nucleus, and activates gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon proteasome inhibition, it accumulates, migrates to the nucleus, and activates gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of established findings from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "2beb4595-414f-4ac4-8eb8-5d15294208b7",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C67",
+      "claim": "The domains of Nrf1 that are implicated in transcriptional activation are initially translocated into the lumen of the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that the domains of Nrf1 that are implicated in transcriptional activation are initially translocated into the lumen of the ER, but subsequently are retrotranslocated to the cytosolic side of the membrane in a manner that depends on the AAA ATPase p97/VCP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by protease protection and glycosylation data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "b8772afc-83e0-4617-867e-af3bf8afab83",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C68",
+      "claim": "The domains of Nrf1 that are implicated in transcriptional activation are subsequently retrotranslocated to the cytosolic side of the membrane in a manner that depends on the AAA ATPase p97/VCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that the domains of Nrf1 that are implicated in transcriptional activation are initially translocated into the lumen of the ER, but subsequently are retrotranslocated to the cytosolic side of the membrane in a manner that depends on the AAA ATPase p97/VCP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by p97 depletion and inhibitor experiments shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "a4936e49-53de-46a8-a320-94610ecedae2",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C69",
+      "claim": "In unperturbed cells, retrotranslocated Nrf1 is promptly degraded by the proteasome, resulting in a futile cycle of continuous synthesis, membrane insertion, retrotranslocation, and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In unperturbed cells, the retrotranslocated Nrf1 is promptly degraded by the proteasome, resulting in a futile cycle of continuous synthesis, membrane insertion, retrotranslocation, and degradation (Figure 5, left-hand side).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model based on the integration of multiple experimental observations and is depicted in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "8f82c899-f35e-4be0-aa62-2e7a61884dd6",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C70",
+      "claim": "In cells with compromised proteasome activity, some of the retrotranslocated Nrf1 escapes degradation and is cleaved on the N-terminal side of Leu-104 to yield a p110 fragment that is no longer tethered to the ER membrane and can migrate to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in cells with compromised proteasome activity, some of the retrotranslocated Nrf1 escapes degradation and is cleaved on the N-terminal side of Leu-104 to yield a p110 fragment that is no longer tethered to the ER membrane and can migrate to the nucleus (Figure 5, right-hand side).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model based on the integration of multiple experimental observations and is depicted in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "601be099-47b0-4805-9811-0fcf02a93b45",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C71",
+      "claim": "Cleavage by the site-1 and site-2 proteases involved in mobilization of SREBP appears unlikely to be responsible for Nrf1 processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage by the site-1 and site-2 proteases involved in mobilization of SREBP appears unlikely, because CHO cell lines deficient in these activities (Rawson et al., 1997, 1998) were nonetheless able to accumulate p110 upon proteasome inhibition (R Rawson, personal communication).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on unpublished data from a personal communication and citations to Rawson et al., 1997, 1998.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "0163d210-9fba-43e1-851e-d88fb404a017",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C72",
+      "claim": "The proteasome appears to be dispensable for cleavage of Nrf1 p120 to p110.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the proteasome, which cleaves Spt23 and Mga2 from the ER membrane in yeast (Hoppe et al., 2000), appears to be dispensable for cleavage because we observed robust formation of p110 in two different cell lines with three different proteasome inhibitors across a wide range of concentrations (Figure 1, and data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations with proteasome inhibitors and citation to Hoppe et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c9402624-02a3-422d-a075-601cc4f82d5c",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C73",
+      "claim": "An inhibitor of ER-localized rhomboid protease(s) failed to impede the accumulation of p110 in cells treated with MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, an inhibitor of ER-localized rhomboid protease(s) (Pierrat et al., 2011) failed to impede the accumulation of p110 in cells treated with MG132 (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on unpublished experimental data and citation to Pierrat et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "b260f790-ee4b-4512-ba26-55ffdc561053",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C74",
+      "claim": "In unperturbed cells, p97-dependent retrotranslocation and proteasome-dependent degradation are so intimately coupled that there is no opportunity for the cleavage event to occur as Nrf1 is threaded from the membrane into the maw of the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it will be easier to address this question when the protease is in hand, a reasonable working hypothesis is that in unperturbed cells, p97-dependent retrotranslocation and proteasome-dependent degradation are so intimately coupled that there is no opportunity for the cleavage event to occur as Nrf1 is threaded from the membrane into the maw of the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed to explain why p110 does not accumulate in unperturbed cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "41ba0ea5-a0e4-4e21-87dc-f86d7775099d",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C75",
+      "claim": "When the proteasome is inhibited, Nrf1 accumulates on the cytosolic side of the membrane where it is susceptible to cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the proteasome is inhibited, Nrf1 accumulates on the cytosolic side of the membrane where it is susceptible to cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that p110 accumulates when proteasomes are inhibited.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "967388e1-039b-4677-877a-5ec418ec2e52",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C76",
+      "claim": "p110 is intrinsically unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if the protease occasionally intercedes before the proteasome can act and small amounts of p110 are generated, p110 is intrinsically unstable (Radhakrishnan et al., 2010) and thus does not accumulate to substantial levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Radhakrishnan et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "4c8821b9-db9a-43e9-b081-0943109836fd",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C77",
+      "claim": "The activation of Nrf1 differs markedly from the activation of all other ER membrane-tethered transcription factors that have been studied to date, including SREBP, ATF6, OASIS, CREB-H, Spt23, and Mga2.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be immediately evident from the foregoing discussion how the activation of Nrf1 differs markedly from the activation of all other ER membrane-tethered transcription factors that have been studied to date, including SREBP, ATF6, OASIS, CREB-H, Spt23, and Mga2 (Brown and Goldstein, 1997; Hoppe et al., 2000; Ye et al., 2000; Kondo et al., 2005; Zhang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative analysis based on the novel findings about Nrf1 and established knowledge about other ER membrane-tethered transcription factors, supported by multiple citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "b8bec697-93a0-47fc-bb76-7875462a469d",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C78",
+      "claim": "For SREBP, ATF6, OASIS, CREB-H, Spt23, and Mga2, the precursor is inserted into the ER membrane such that the functional domains involved in transcription are displayed on the cytosolic side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In all of those cases, the precursor is inserted into the ER membrane such that the functional domains involved in transcription are displayed on the cytosolic side of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about other ER membrane-tethered transcription factors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "8ad78c1e-436b-426b-838a-fce3393583ba",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C79",
+      "claim": "For SREBP, ATF6, OASIS, CREB-H, Spt23, and Mga2, cleavages in the cytosolic or intramembrane domains can liberate soluble fragments that translocate to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavages in the cytosolic or intramembrane domains can therefore liberate soluble fragments that translocate to the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the activation mechanism of other ER membrane-tethered transcription factors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "7369a581-c336-45b3-bbbc-03bf225a6d3b",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C80",
+      "claim": "Since Nrf1 begins its life with its functional domains in the ER lumen, it must be retrotranslocated to the cytosol before processing can yield a functional fragment that can relocalize to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, since Nrf1 begins its life with its functional domains in the ER lumen, it must be retrotranslocated to the cytosol before processing can yield a functional fragment that can relocalize to the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the experimental findings about Nrf1 topology and processing.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "7766badb-7db7-431a-8434-82039b66d518",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C81",
+      "claim": "The p97-dependent retrotranslocation pathway traversed by Nrf1 is normally employed to clear misfolded proteins from the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the p97-dependent retrotranslocation pathway traversed by Nrf1 is normally employed to clear misfolded proteins from the ER (Wolf and Stolz, 2012), the inevitable consequence of Nrf1 piggybacking on this mechanism is that it is rapidly degraded by the proteasome as soon as it gains access to the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wolf and Stolz, 2012 and represents established knowledge about ERAD.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "e5d44c93-1aab-42f8-bef2-2d8dfb63a72a",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C82",
+      "claim": "The inevitable consequence of Nrf1 piggybacking on the p97-dependent retrotranslocation mechanism is that it is rapidly degraded by the proteasome as soon as it gains access to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the p97-dependent retrotranslocation pathway traversed by Nrf1 is normally employed to clear misfolded proteins from the ER (Wolf and Stolz, 2012), the inevitable consequence of Nrf1 piggybacking on this mechanism is that it is rapidly degraded by the proteasome as soon as it gains access to the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of the ERAD pathway and the experimental observations about Nrf1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "09ccf38c-e628-4a94-878c-e2a55e650ee0",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C83",
+      "claim": "The coupling of retrotranslocation to degradation precludes the accumulation of Nrf1 precursor on the cytosolic side of the ER membrane, except under circumstances where there is insufficient proteasome activity to keep pace with the appearance of substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "This precludes the accumulation of Nrf1 precursor on the cytosolic side of the ER membrane, except under circumstances where there is insufficient proteasome activity to keep pace with the appearance of substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference that explains the conditional activation of Nrf1 based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "bc75f089-e6bf-4a47-84fc-d93242c1ac81",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C84",
+      "claim": "Ricin is retrotranslocated from the ER lumen to the cytosol, where it exerts its biological function.",
+      "claim_type": "EXPLICIT",
+      "source": "Ricin, a plant toxin, and some bacterial toxins including cholera toxin, and shiga toxin likewise are retrotranslocated from the ER lumen to the cytosol, where they exert their biological functions (Inoue et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Inoue et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "b43157c3-fba4-4a48-9083-fa64193e2de0",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C85",
+      "claim": "Cholera toxin and shiga toxin are retrotranslocated from the ER lumen to the cytosol, where they exert their biological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ricin, a plant toxin, and some bacterial toxins including cholera toxin, and shiga toxin likewise are retrotranslocated from the ER lumen to the cytosol, where they exert their biological functions (Inoue et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Inoue et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "47fc0514-76e6-42e6-bfae-8f9c45bfaf5f",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C86",
+      "claim": "The Hepatitis E Virus capsid protein ORF2 co-opts the ERAD machinery to gain access to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is the Hepatitis E Virus capsid protein ORF2, which co-opts the ERAD machinery to gain access to the cytosol (Surjit et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Surjit et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "76a4d6b2-f66e-4611-903c-a59703fa92e7",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C87",
+      "claim": "Calreticulin is the only known host protein that undergoes retrotranslocation from the ER but escapes degradation by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, the only host protein that undergoes retrotranslocation from the ER but escapes degradation by the proteasome is calreticulin (Afshar et al., 2005; Gold et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Afshar et al., 2005 and Gold et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "9124e168-5d04-4549-9bb7-cb3737a5d37b",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C88",
+      "claim": "Upon inhibition of the proteasome, presumably the entire complement of ERAD substrates mimics Nrf1 in that these proteins are retrotranslocated from the luminal to the cytosolic side of the ER membrane but are not degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon inhibition of the proteasome, presumably the entire complement of ERAD substrates mimics Nrf1 in that these proteins are retrotranslocated from the luminal to the cytosolic side of the ER membrane but are not degraded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the general mechanism of ERAD and proteasome inhibition.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "8e2a030b-bbc1-4d1c-915d-455297587bc7",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C89",
+      "claim": "Targeting Nrf1 to the ER may ensure that the basal level of Nrf1 activity is essentially zero in the absence of proteasome stress, due to the normally tight coupling between retrotranslocation and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting Nrf1 to the ER may ensure that the basal level of Nrf1 activity is essentially zero in the absence of proteasome stress, due to the normally tight coupling between retrotranslocation and degradation (Wolf and Stolz, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the biological rationale of Nrf1's unusual activation mechanism, supported by citation to Wolf and Stolz, 2012.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "d7b465f5-2025-45f2-89c2-15a21dc030c1",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C90",
+      "claim": "In cells that experience insufficient proteasome activity, accumulation of active Nrf1 can restore an adequate level of proteasome function.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells that experience insufficient proteasome activity\u2014brought about either through environmental insults including proteasome or chaperone inhibitors produced by microbes, or through changes in gene expression\u2014accumulation of active Nrf1 can restore an adequate level of proteasome function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the biological function of the Nrf1 activation mechanism based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "45697a06-004e-4dd7-9d2a-9ff8a2d18b02",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C91",
+      "claim": "In cancer cells, depletion of Nrf1 slows down recovery of proteasome activity upon transient inhibition of the proteasome and enhances apoptosis caused by a covalent proteasome inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that in cancer cells, depletion of Nrf1 slows down recovery of proteasome activity upon transient inhibition of the proteasome and enhances apoptosis caused by a covalent proteasome inhibitor (Radhakrishnan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work by the authors (Radhakrishnan et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "82474c32-c94e-4bc8-94e0-2849f8465d90",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C92",
+      "claim": "p97 is a druggable target.",
+      "claim_type": "EXPLICIT",
+      "source": "Although inhibition of transcription factors with small molecules has proven difficult (Berg, 2008), p97 is a druggable target (Chou et al., 2011, 2013; Magnaghi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Berg, 2008; Chou et al., 2011, 2013; and Magnaghi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "0a0264ad-0ad8-47f1-9517-d04a04c407ee",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C93",
+      "claim": "Recent papers have reported enhanced killing of cancer cells when proteasome and p97 inhibitors are used in combination.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent papers have reported enhanced killing of cancer cells when proteasome and p97 inhibitors are used in combination (Auner et al., 2013; Chou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Auner et al., 2013 and Chou et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "89674775-4c32-4550-9543-44daca12bf1a",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C94",
+      "claim": "Blockade of the Nrf1-mediated bounce-back response through inhibition of p97 may enhance the efficacy of proteasome inhibitor therapy in multiple myeloma or enable expansion of proteasome inhibitor therapy into new indications.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be interesting to see whether blockade of the Nrf1-mediated bounce-back response through inhibition of p97 enhances the efficacy of proteasome inhibitor therapy in multiple myeloma or enables expansion of proteasome inhibitor therapy into new indications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "0e4c6f62-7b25-433b-9a6d-7fe1b8c02120",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "claim_id": "C95",
+      "claim": "NMS-873 is a reversible inhibitor of p97.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this possibility, we made use of the recently described compound NMS-873, a reversible inhibitor of p97 (Magnaghi et al., 2013; Polucci et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Magnaghi et al., 2013 and Polucci et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "937a6872-c7f5-41b5-9355-4d162c1fef22",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nrf1 p120 is proteolytically cleaved between Trp-103 and Leu-104 to generate the p110 form. This cleavage was identified by N-terminal sequencing showing p110 starts at Leu-104, confirmed by mutagenesis showing all mutants flanking this site are defective in processing (with Trp-103 being crucial), and demonstrated by pulse-chase experiments showing p120 is converted to p110 over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C32 provide converging evidence from multiple experimental approaches (differential epitope tag detection, N-terminal sequencing, site-directed mutagenesis, and pulse-chase experiments) that consistently support proteolytic cleavage at the Trp-103/Leu-104 junction. The data are internally consistent and the experimental logic is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "2fa3e083-85a7-4d8c-bfc7-203b0aa3f6f4",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Proteolytic processing of Nrf1 is essential for its transcriptional activity. Wild-type Nrf1 can restore PSM gene induction in Nrf1-/- MEFs upon MG132 treatment, whereas non-cleavable Nrf1(m1) mutant is defective in inducing PSM genes under the same conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C7 demonstrate functional importance of cleavage through rescue experiments in knockout cells. The comparison between wild-type and non-cleavable mutant provides clear evidence that processing is necessary for transcriptional activity. The experimental design appropriately controls for Nrf1 expression levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "1d1f1895-2853-42e8-ada5-cb4aa1fa7622",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "p97 is required for both Nrf1 processing and the proteasome bounce-back response. p97 depletion does not induce bounce-back on its own, but severely impairs MG132-mediated bounce-back. While Nrf1 accumulates in p97-depleted cells, it remains as p120 and fails to process to the active p110 form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 and C47 are supported by consistent qRT-PCR and immunoblot data showing p97 depletion blocks both PSM gene induction and p110 formation. The experiments appropriately distinguish between p97's role in Nrf1 degradation versus processing. However, the 3-4 day depletion period raises questions about indirect effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "99a95180-278a-40cf-a84a-9abd8997eff0",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using the reversible p97 inhibitor NMS-873, accumulated p120 Nrf1 is efficiently converted to p110 with a half-life of ~30 min upon washout in the presence of cycloheximide and MG132, demonstrating that p120 is a bona fide precursor to p110.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 address the concern about long-term p97 depletion by using acute, reversible inhibition. The pulse-chase experiment with NMS-873 washout provides strong evidence for a precursor-product relationship and confirms p97's direct role in processing. The half-life measurement adds quantitative rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "0f91f650-34ae-4916-9eb8-f9f93c48a177",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nrf1 topology analysis reveals that the N-terminus is constitutively cytosolic while the C-terminus orientation depends on p97 status. In mock-depleted cells, the C-terminus is cytosolic (protease-sensitive), but when p97 is depleted, the C-terminus becomes luminal (protease-resistant), indicating that the bulk of Nrf1 (amino acids 25-742) is initially translocated into the ER lumen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53, C3, and C67 are supported by systematic protease protection assays using differentially tagged Nrf1 constructs. The experimental design cleverly exploits N- versus C-terminal tags to map topology. The interpretation that amino acids 1-6 are cytosolic while 25-742 are luminal when p97 is blocked is logically sound given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "f7616526-4066-4464-8465-05d43afa896d",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Upon restoration of p97 activity (NMS-873 washout), the C-terminus of Nrf1 becomes protease-sensitive, indicating p97-dependent retrotranslocation from the ER lumen to the cytosol. The non-cleavable Nrf1(m1) mutant undergoes retrotranslocation normally, demonstrating that processing defects are not due to impaired retrotranslocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C4, and C68 use acute p97 inhibitor washout to demonstrate reversibility of topology changes, strengthening the case for p97-dependent retrotranslocation. The control experiment with the non-cleavable mutant (C56-C57) is critical for ruling out that processing defects result from retrotranslocation defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "7da501f6-6138-4ee7-9008-58be7860554c",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Glycosylation analysis corroborates the topology findings. Nrf1 p120 accumulated during NMS-873 treatment is Endo H-sensitive (indicating luminal glycosylation), but becomes Endo H-resistant upon chase with MG132 plus cycloheximide (indicating deglycosylation after retrotranslocation to the cytosol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 provide orthogonal biochemical evidence for the topology model using glycosylation as a marker of luminal versus cytosolic localization. The Endo H sensitivity changes are consistent with the protease protection data, strengthening the overall model. The reasoning about N-linked glycosylation is based on established ER biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "2d39d610-b2ed-4184-b525-5b4f2d59abbb",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Retrotranslocated and processed Nrf1 (p110) acquires additional unknown post-translational modifications beyond deglycosylation and cleavage, as evidenced by its slower-than-expected migration on SDS-PAGE compared to unmodified protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by gel mobility analysis (Figure 4\u2014figure supplement 1) comparing processed Nrf1 to in vitro translated protein. While the nature of the modifications remains unknown, the observation is clearly documented and the inference is reasonable. This represents an incomplete but honest characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "3a451cad-fb1c-4d0c-8c26-c82b4f9cb693",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose a model where in unperturbed cells, retrotranslocated Nrf1 is promptly degraded by the proteasome in a futile cycle, but when proteasomes are compromised, retrotranslocated Nrf1 escapes degradation and is cleaved to yield p110 that can migrate to the nucleus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70, C5-C6 synthesize the experimental findings into a coherent model. While the model contains inferential elements, it is well-supported by the collective data showing: (1) p120 is rapidly turned over normally, (2) p120 accumulates only when proteasomes are inhibited, (3) processing to p110 occurs after retrotranslocation, and (4) p110 is transcriptionally active.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "78e23eb9-2983-4f09-b16a-b23527c702d8",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The identity of the protease responsible for Nrf1 cleavage remains unknown, but site-1/site-2 proteases (involved in SREBP processing), the proteasome itself, and ER-localized rhomboid proteases have been ruled out based on experiments with deficient cell lines or inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C73 report negative results that constrain possible mechanisms. However, C71 relies on unpublished personal communication, and C73 mentions unpublished data. While these exclusions are valuable, the lack of detailed methods and the reliance on unpublished data limit confidence. The protease identity remains an important unresolved question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "934cce43-9de6-4d64-b888-b318ef725f4a",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors hypothesize that in unperturbed cells, p97-dependent retrotranslocation and proteasome-dependent degradation are tightly coupled, preventing cleavage, but when proteasomes are inhibited, Nrf1 accumulates on the cytosolic side where it becomes susceptible to cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 present a mechanistic hypothesis to explain why p110 only accumulates when proteasomes are inhibited. While explicitly speculative (C74 states 'reasonable working hypothesis'), the hypothesis is logical and consistent with all experimental observations. It provides a satisfying explanation for the conditional activation of Nrf1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c329d497-690a-45e5-b41f-1eca38ba7d48",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Nrf1 activation differs fundamentally from other ER membrane-tethered transcription factors (SREBP, ATF6, OASIS, CREB-H, Spt23, Mga2). Unlike these factors where functional domains are cytosolic and cleavage liberates them, Nrf1's functional domains begin in the ER lumen and must be retrotranslocated before processing can yield an active fragment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 make a valid comparative analysis supported by the experimental data on Nrf1 topology and established knowledge about other ER-tethered transcription factors. The distinction is mechanistically significant and well-supported by the topology data. This represents an important conceptual advance in understanding transcription factor activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "cb325b8c-52ba-40e9-8ef8-91437f6f4ac3",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Nrf1 co-opts the p97-dependent ERAD pathway normally used to clear misfolded proteins, which inevitably couples retrotranslocation to rapid proteasomal degradation. This coupling prevents accumulation of active Nrf1 except when proteasome activity is insufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 integrate the experimental findings with established ERAD biology to explain the regulatory logic of Nrf1 activation. The reasoning is sound and supported by citations to ERAD literature. This provides a mechanistic explanation for how Nrf1 specifically senses proteasome insufficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "1e32e4c2-ff17-4238-b7a9-d529c0875ec7",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that retrotranslocation of p120 occurs so rapidly that only a tiny fraction of luminal p120 is detectable at steady-state unless retrotranslocation is blocked by p97 depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 explains the observation of a small protease-resistant pool of p120 at steady-state (Figure 4C). The proposal is reasonable given the rapid conversion kinetics observed in the NMS-873 washout experiments (~30 min half-life). This interpretation is consistent with the overall model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "421200f9-9a9d-4bbc-b99a-107358e779ac",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that targeting Nrf1 to the ER ensures basal Nrf1 activity is essentially zero due to tight coupling between retrotranslocation and degradation, allowing Nrf1 to specifically respond to proteasome insufficiency and restore adequate proteasome function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 present a teleological explanation for Nrf1's unusual regulatory mechanism. While explicitly speculative, the reasoning is logical and consistent with the experimental findings. This provides a satisfying biological rationale for the baroque activation mechanism, though it remains a hypothesis about evolutionary design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "0f19b348-faf2-46ff-9606-70653bc99eb8",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors suggest that blocking the Nrf1-mediated bounce-back response through p97 inhibition may enhance proteasome inhibitor therapy efficacy in cancer. This is supported by prior work showing Nrf1 depletion enhances proteasome inhibitor-mediated apoptosis, and recent reports of enhanced cancer cell killing with combined proteasome and p97 inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C18, C91-C94 discuss therapeutic implications. While C91-C93 cite published work, the therapeutic speculation (C18, C94) is not directly tested in this manuscript. The logic is reasonable given that p97 is druggable and combination therapy shows promise, but these remain hypotheses requiring clinical validation. The speculation is appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims about proteasome homeostasis, Nrf1/CNC-bZIP family, p97 function, and examples of retrotranslocation are established by citations to prior literature and represent accepted scientific knowledge that contextualizes the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C23, C36-C39, C48, C64-C66, C76, C84-C87 provide background information supported by appropriate citations. These claims accurately represent prior work and established knowledge. They are not novel findings but provide necessary context for interpreting the new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    },
+    {
+      "id": "5f5ab20f-57cc-4747-ae58-7a9014a5495a",
+      "content_id": "cb534064-671d-48cd-94b8-ce3d58bd05d5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors speculate that upon proteasome inhibition, the entire complement of ERAD substrates may mimic Nrf1 by being retrotranslocated but not degraded, potentially acquiring novel cytosolic functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is explicitly speculative and not tested experimentally. While the logic is reasonable given that ERAD substrates would accumulate when proteasomes are inhibited, whether they acquire novel functions is pure speculation. This represents an interesting hypothesis for future investigation but lacks experimental support in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:05:18.451284Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "792a62c3-6334-4401-b63c-8783cd851f99",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "8a4bbd1b-3b99-4471-a8dd-cfd127c08a0b",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "cce5caca-6e75-429e-a50d-e4f158d80aea",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "b60676d6-3130-45c9-ac52-1cb489ab0390",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "32863bab-d559-4cbe-b7c8-3623904cb329",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "7882b6bc-841c-4ae1-8a6a-60794e62d1fd",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "d10f499c-0189-444f-b2c2-306eac8619a0",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "97fe02b8-ec6c-4a77-825a-5e554cc5b7b4",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "b22c2fa3-a430-443d-9c39-786575f8e983",
+      "result_id": "937a6872-c7f5-41b5-9355-4d162c1fef22"
+    },
+    {
+      "claim_id": "0d36334d-5e1f-4cec-bc51-9dac8e69b0f6",
+      "result_id": "2fa3e083-85a7-4d8c-bfc7-203b0aa3f6f4"
+    },
+    {
+      "claim_id": "f5bfbf32-5f29-49fd-9bde-5dea3b0f66cf",
+      "result_id": "2fa3e083-85a7-4d8c-bfc7-203b0aa3f6f4"
+    },
+    {
+      "claim_id": "6c0be0d9-b4b8-40b4-a4a4-03b61d96e794",
+      "result_id": "2fa3e083-85a7-4d8c-bfc7-203b0aa3f6f4"
+    },
+    {
+      "claim_id": "1dd678d7-9df1-4c08-8c25-7f4af513ac47",
+      "result_id": "2fa3e083-85a7-4d8c-bfc7-203b0aa3f6f4"
+    },
+    {
+      "claim_id": "38608571-a317-4090-a067-812f5fe59f93",
+      "result_id": "1d1f1895-2853-42e8-ada5-cb4aa1fa7622"
+    },
+    {
+      "claim_id": "922daad3-eb8b-48bd-933b-8d57377e91ab",
+      "result_id": "1d1f1895-2853-42e8-ada5-cb4aa1fa7622"
+    },
+    {
+      "claim_id": "c8597b63-0149-4f61-b3fb-ad2d6499a5ea",
+      "result_id": "1d1f1895-2853-42e8-ada5-cb4aa1fa7622"
+    },
+    {
+      "claim_id": "9396a94c-9c96-4f6f-8788-4c8df31b91a3",
+      "result_id": "1d1f1895-2853-42e8-ada5-cb4aa1fa7622"
+    },
+    {
+      "claim_id": "c8ea65b1-d2aa-4e59-8203-44e6e8be0617",
+      "result_id": "1d1f1895-2853-42e8-ada5-cb4aa1fa7622"
+    },
+    {
+      "claim_id": "e2d4eadb-5945-4d60-a6b8-7bd91d60e7f4",
+      "result_id": "1d1f1895-2853-42e8-ada5-cb4aa1fa7622"
+    },
+    {
+      "claim_id": "f196b38e-b2c6-4d76-a49e-eb339602cd13",
+      "result_id": "99a95180-278a-40cf-a84a-9abd8997eff0"
+    },
+    {
+      "claim_id": "9d7f5a49-1423-4dce-b26e-05acc04b4854",
+      "result_id": "99a95180-278a-40cf-a84a-9abd8997eff0"
+    },
+    {
+      "claim_id": "0e4c6f62-7b25-433b-9a6d-7fe1b8c02120",
+      "result_id": "99a95180-278a-40cf-a84a-9abd8997eff0"
+    },
+    {
+      "claim_id": "3ece0477-b7b0-4b2b-a3ae-9a16d5096a20",
+      "result_id": "0f91f650-34ae-4916-9eb8-f9f93c48a177"
+    },
+    {
+      "claim_id": "8812d8bf-b7e0-4b1b-a939-256381f66baf",
+      "result_id": "0f91f650-34ae-4916-9eb8-f9f93c48a177"
+    },
+    {
+      "claim_id": "ffd8564c-2bca-4d0c-9e5b-ef2a0709982d",
+      "result_id": "0f91f650-34ae-4916-9eb8-f9f93c48a177"
+    },
+    {
+      "claim_id": "223f617f-728d-4f87-8af4-312f5a1a03cd",
+      "result_id": "0f91f650-34ae-4916-9eb8-f9f93c48a177"
+    },
+    {
+      "claim_id": "1310f110-0070-4987-b200-2907638b1faf",
+      "result_id": "0f91f650-34ae-4916-9eb8-f9f93c48a177"
+    },
+    {
+      "claim_id": "1dc33617-2496-4fd1-970f-e0daa1f46335",
+      "result_id": "0f91f650-34ae-4916-9eb8-f9f93c48a177"
+    },
+    {
+      "claim_id": "2beb4595-414f-4ac4-8eb8-5d15294208b7",
+      "result_id": "0f91f650-34ae-4916-9eb8-f9f93c48a177"
+    },
+    {
+      "claim_id": "ef24b3f0-7c45-414c-b987-dd975d79e9af",
+      "result_id": "f7616526-4066-4464-8465-05d43afa896d"
+    },
+    {
+      "claim_id": "de8eb603-ad95-4885-886d-5623247f4f5a",
+      "result_id": "f7616526-4066-4464-8465-05d43afa896d"
+    },
+    {
+      "claim_id": "c23c3249-3157-4877-93e6-43431046a6d4",
+      "result_id": "f7616526-4066-4464-8465-05d43afa896d"
+    },
+    {
+      "claim_id": "db235c2c-2a1f-4afb-8b05-709241b61ef1",
+      "result_id": "f7616526-4066-4464-8465-05d43afa896d"
+    },
+    {
+      "claim_id": "b8772afc-83e0-4617-867e-af3bf8afab83",
+      "result_id": "f7616526-4066-4464-8465-05d43afa896d"
+    },
+    {
+      "claim_id": "ee78d314-42a8-4a0e-a2b8-5853e6bec0b0",
+      "result_id": "7da501f6-6138-4ee7-9008-58be7860554c"
+    },
+    {
+      "claim_id": "8b7f4fd5-4c5a-4009-b4de-1f3a1c3e5d4e",
+      "result_id": "7da501f6-6138-4ee7-9008-58be7860554c"
+    },
+    {
+      "claim_id": "24d16eea-01fa-4cc6-b498-152f12e6e926",
+      "result_id": "7da501f6-6138-4ee7-9008-58be7860554c"
+    },
+    {
+      "claim_id": "ed91214a-26fc-4a3f-81c2-7f58c52b41b8",
+      "result_id": "7da501f6-6138-4ee7-9008-58be7860554c"
+    },
+    {
+      "claim_id": "4778af7f-462c-4530-9d3b-7d917f0353da",
+      "result_id": "7da501f6-6138-4ee7-9008-58be7860554c"
+    },
+    {
+      "claim_id": "fffe7bc4-4bd5-4b55-a1ef-445ad5e28b58",
+      "result_id": "2d39d610-b2ed-4184-b525-5b4f2d59abbb"
+    },
+    {
+      "claim_id": "a4936e49-53de-46a8-a320-94610ecedae2",
+      "result_id": "3a451cad-fb1c-4d0c-8c26-c82b4f9cb693"
+    },
+    {
+      "claim_id": "8f82c899-f35e-4be0-aa62-2e7a61884dd6",
+      "result_id": "3a451cad-fb1c-4d0c-8c26-c82b4f9cb693"
+    },
+    {
+      "claim_id": "41e46a66-23bb-4e58-b827-5113e69ae931",
+      "result_id": "3a451cad-fb1c-4d0c-8c26-c82b4f9cb693"
+    },
+    {
+      "claim_id": "16d34bc8-cace-4c08-a16f-ca67d2b0200e",
+      "result_id": "3a451cad-fb1c-4d0c-8c26-c82b4f9cb693"
+    },
+    {
+      "claim_id": "601be099-47b0-4805-9811-0fcf02a93b45",
+      "result_id": "78e23eb9-2983-4f09-b16a-b23527c702d8"
+    },
+    {
+      "claim_id": "0163d210-9fba-43e1-851e-d88fb404a017",
+      "result_id": "78e23eb9-2983-4f09-b16a-b23527c702d8"
+    },
+    {
+      "claim_id": "c9402624-02a3-422d-a075-601cc4f82d5c",
+      "result_id": "78e23eb9-2983-4f09-b16a-b23527c702d8"
+    },
+    {
+      "claim_id": "b260f790-ee4b-4512-ba26-55ffdc561053",
+      "result_id": "934cce43-9de6-4d64-b888-b318ef725f4a"
+    },
+    {
+      "claim_id": "41ba0ea5-a0e4-4e21-87dc-f86d7775099d",
+      "result_id": "934cce43-9de6-4d64-b888-b318ef725f4a"
+    },
+    {
+      "claim_id": "4c8821b9-db9a-43e9-b081-0943109836fd",
+      "result_id": "c329d497-690a-45e5-b41f-1eca38ba7d48"
+    },
+    {
+      "claim_id": "b8bec697-93a0-47fc-bb76-7875462a469d",
+      "result_id": "c329d497-690a-45e5-b41f-1eca38ba7d48"
+    },
+    {
+      "claim_id": "8ad78c1e-436b-426b-838a-fce3393583ba",
+      "result_id": "c329d497-690a-45e5-b41f-1eca38ba7d48"
+    },
+    {
+      "claim_id": "7369a581-c336-45b3-bbbc-03bf225a6d3b",
+      "result_id": "c329d497-690a-45e5-b41f-1eca38ba7d48"
+    },
+    {
+      "claim_id": "7766badb-7db7-431a-8434-82039b66d518",
+      "result_id": "cb325b8c-52ba-40e9-8ef8-91437f6f4ac3"
+    },
+    {
+      "claim_id": "e5d44c93-1aab-42f8-bef2-2d8dfb63a72a",
+      "result_id": "cb325b8c-52ba-40e9-8ef8-91437f6f4ac3"
+    },
+    {
+      "claim_id": "09ccf38c-e628-4a94-878c-e2a55e650ee0",
+      "result_id": "cb325b8c-52ba-40e9-8ef8-91437f6f4ac3"
+    },
+    {
+      "claim_id": "11e08f21-43aa-4e89-94cf-6ee8b413bb53",
+      "result_id": "1e32e4c2-ff17-4238-b7a9-d529c0875ec7"
+    },
+    {
+      "claim_id": "8e2a030b-bbc1-4d1c-915d-455297587bc7",
+      "result_id": "421200f9-9a9d-4bbc-b99a-107358e779ac"
+    },
+    {
+      "claim_id": "d7b465f5-2025-45f2-89c2-15a21dc030c1",
+      "result_id": "421200f9-9a9d-4bbc-b99a-107358e779ac"
+    },
+    {
+      "claim_id": "561483de-5c6d-472a-8d6c-0e1f1c26e825",
+      "result_id": "0f19b348-faf2-46ff-9606-70653bc99eb8"
+    },
+    {
+      "claim_id": "45697a06-004e-4dd7-9d2a-9ff8a2d18b02",
+      "result_id": "0f19b348-faf2-46ff-9606-70653bc99eb8"
+    },
+    {
+      "claim_id": "82474c32-c94e-4bc8-94e0-2849f8465d90",
+      "result_id": "0f19b348-faf2-46ff-9606-70653bc99eb8"
+    },
+    {
+      "claim_id": "0a0264ad-0ad8-47f1-9517-d04a04c407ee",
+      "result_id": "0f19b348-faf2-46ff-9606-70653bc99eb8"
+    },
+    {
+      "claim_id": "89674775-4c32-4550-9543-44daca12bf1a",
+      "result_id": "0f19b348-faf2-46ff-9606-70653bc99eb8"
+    },
+    {
+      "claim_id": "449d0521-5501-49de-8c26-cf24eac81fb7",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "fe38decd-ba7d-4c94-a758-8cb28bdd0c4f",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "c4eb2531-feaa-4781-b526-9c9fbb8160d3",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "7f5d471a-19ee-44b9-abb0-07ebbb539717",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "ea9ed8fb-f72e-4ca2-b7f9-ba12bee728a4",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "4de8c4ac-4f2d-4d93-802b-aaac32eb0a1a",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "59443fe9-690a-4f72-b50e-594f3a224ff9",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "84ffb9dc-d438-4459-b85f-06bf08256818",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "9fb8b1c5-13ed-480b-95cd-3c7e6bf07dc8",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "09789c45-4dc0-4fbf-be23-d098823cfcc5",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "a1ea4468-fd55-44b8-9514-45d7d1a2f4a1",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "cc434a8a-f016-4798-b01d-94db3d1960d0",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "bafb216f-51fb-4a20-9b1f-3514a5b5a146",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "c47deac6-6616-447f-a253-c077bc64a9f7",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "fbaed8b5-0015-40a5-8b49-714906750379",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "ace70f73-0dc0-44aa-9634-96d50c4b52dc",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "79fdcceb-de8f-4b76-874c-34b2a5477c5d",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "f085d975-7ebe-489c-9035-a0e44bc121fa",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "2c6ebbf2-a0e9-4730-ab1c-5fe5b82904a4",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "8575f4a4-cf75-4d21-83a5-25e02d9f4e46",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "ac837e09-8a16-4ca6-9fdb-6e9e649ca6e9",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "9d9bf380-a389-483f-9ce4-f67fa5ec487b",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "9c1dcce1-c962-4c14-a27c-fcaf3bdd7526",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "ef35dc94-99c6-4194-a76c-de650579c820",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "055dbefb-d78c-43a5-bc82-1338e3cb3b67",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "967388e1-039b-4677-877a-5ec418ec2e52",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "bc75f089-e6bf-4a47-84fc-d93242c1ac81",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "b43157c3-fba4-4a48-9083-fa64193e2de0",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "47fc0514-76e6-42e6-bfae-8f9c45bfaf5f",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "76a4d6b2-f66e-4611-903c-a59703fa92e7",
+      "result_id": "c971ed0e-ad50-4bf9-a7a9-f0ed4e747d33"
+    },
+    {
+      "claim_id": "9124e168-5d04-4549-9bb7-cb3737a5d37b",
+      "result_id": "5f5ab20f-57cc-4747-ae58-7a9014a5495a"
+    }
+  ],
+  "comparisons": []
+}

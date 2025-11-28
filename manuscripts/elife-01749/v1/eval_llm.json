@@ -1,0 +1,482 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors generated 18 lincRNA knockout mouse strains using a rigorous selection pipeline that excluded transcripts with protein-coding potential, overlapping gene annotations, and conserved coding sequences. Each lincRNA was replaced with a lacZ reporter cassette, representing the first lincRNA knockout models to incorporate a reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C27, C31-C32 describe a comprehensive and well-documented selection and generation strategy. The multi-step filtering process (Pfam domains, CSF analysis, ribosome profiling, mass spectrometry) is clearly described with appropriate citations and thresholds (CSF <-200). The lacZ reporter integration is novel and well-characterized. The methodology is rigorous and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Three lincRNA knockout strains (Fendrr, Peril, and Mdgt) exhibit lethal phenotypes, with Fendrr showing fully penetrant perinatal lethality, while Peril and Mdgt show incomplete penetrance (>50% and 65% respectively) with postnatal death. This demonstrates that specific lincRNA genes are required for viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C33-C42 are well-supported by genotyping data at multiple developmental stages and weaning age (Figure 1D). Statistical analysis using chi-square tests confirms deviations from Mendelian ratios. Sample sizes are adequate (n=32 expected for Peril, n=17 for Mdgt, n=23 for Fendrr at weaning). The conclusion that lincRNAs are required for viability is directly supported by the observed lethal phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Peril knockout mice show reduced viability with ~50% penetrance, dying within 2-20 days after birth. Peril is highly enriched in mouse ES cells and shows tight spatiotemporal regulation in brain and spinal cord. RNA-seq analysis reveals downregulation of genes involved in cell cycle, energy metabolism, immune response, and mRNA/protein processing in Peril\u2212/\u2212 brains, though the link to lethality remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C61 are supported by multiple lines of evidence including genotyping data (Figure 2A), survival monitoring, RNA-seq expression profiling (Figure 2D), lacZ staining (Figure 2F), and GSEA analysis (Figure 2\u2014supplement 1B,C). The authors appropriately acknowledge uncertainty about whether transcriptional changes underlie lethality (C61), which is scientifically honest. Sample sizes for RNA-seq (n=2) are modest but acceptable for initial characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Fendrr knockout mice exhibit perinatal lethality with all mutants dying within 24 hours of birth. Fendrr is expressed in mesenchyme-derived tissues including lung, gastrointestinal tract, and shows defects in lung vascularization, alveolar development, esophageal muscle layers, and intraventricular septal heart defects. Respiratory failure at birth is likely due to lung maturation and vascularization defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C95 are extensively supported by multiple experimental approaches: genotyping at multiple stages (Figure 3B), RNA-seq expression profiling (Figure 3D), lacZ reporter staining (Figures 3E,F), respiratory function testing (Figure 3G, n=7 mutants, n=15 heterozygotes, n=8 WT), and detailed histological analysis (Figures 3H-K, n=3 per genotype). The conclusion linking respiratory failure to lung defects is well-supported by converging evidence from multiple organ systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors' Fendrr knockout results differ from those of Grote et al. (2013), who observed earlier lethality (E13.75) with omphalocele, while this study found perinatal lethality without omphalocele at E14.5. Both studies confirm Fendrr is lethal, with differences potentially due to distinct targeting strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 appropriately acknowledge and discuss discrepancies with prior work. The authors provide evidence (Figure 3\u2014supplement 1) showing no omphalocele in their E14.5 embryos, directly contradicting Grote et al. The speculation about targeting strategy differences (C75) is reasonable given that Grote et al. retained the DNA sequence while this study deleted it. The conclusion that both studies confirm lethality (C76) is valid despite phenotypic differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Fendrr deletion does not significantly affect neighboring Foxf1a gene expression, and genes within \u00b11 Mb show no significant enrichment for differential expression (p<0.087), suggesting Fendrr does not act as a local enhancer. GSEA identifies muscle differentiation and contraction as the most misregulated gene sets in Fendrr\u2212/\u2212 lungs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by RNA-seq analysis (n=2 per genotype) and appropriate statistical testing. The bootstrapping approach for testing local enrichment (1000 random 2 Mb intervals) is rigorous. The conclusion that Fendrr does not act as a local enhancer is well-supported by the lack of local gene expression changes. GSEA results (Figure 3M) are consistent with observed muscle/mesenchyme defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Mdgt\u2212/\u2212 mice show severe growth retardation with sex bias (females 60% smaller, males 32% smaller at 1 week), with lethality within 2 weeks and persistent growth defects in survivors up to 10 weeks. Mdgt is highly expressed in testes and moderately in brain, kidney, colon, and skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C113 are supported by body weight measurements over time (Figure 4C,D) with adequate sample sizes (n=5 females, n=3 males for mutants; n=10 WT) and statistical significance (p<0.00001 for females, p<0.05 for males). RNA-seq expression data (Figure 4B) and lacZ staining (Figure 4E) confirm tissue-specific expression. The sex bias observation is interesting and well-documented. Note that the entire Mdgt locus deletion includes AK144266, which could complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Two additional lincRNA knockout strains (linc-Brn1b and linc-Pint) show growth defects, with linc-Pint\u2212/\u2212 mice showing 22-29% reduced body weight by 7 weeks, and linc-Brn1b\u2212/\u2212 and Peril\u2212/\u2212 showing 29-35% reduction by 3 weeks. This demonstrates that specific lincRNAs are important for normal body weight and growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C114-C118 are supported by body weight measurements (Figure 4\u2014supplement 1) with statistical significance and adequate sample sizes (n=3-5 per genotype). The conclusion that lincRNAs are important for growth is well-supported by multiple independent strains showing similar phenotypes. However, the mechanisms underlying growth defects are not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Seven lincRNAs from the knockout strains have human orthologs dynamically induced during neuronal differentiation, including linc-Brn1a and linc-Brn1b which are almost exclusively expressed in NSCs. linc-Brn1b shows spatiotemporal restriction in developing cortex, with expression in VZ/SVZ progenitors and later in upper cortical layers and barrel structures, suggesting a role in area-specific development of projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C136 are supported by RNA-seq analysis of human NSC differentiation (769 lincRNAs with q<0.01, Figure 5\u2014supplement 1), comparative genomics, RNA-FISH (Figure 5F), and detailed lacZ expression analysis (Figures 5G-I). The spatiotemporal expression pattern is well-documented across multiple developmental stages (E13.5, E15.5, E18.5, P7). The conclusion about potential role in projection neuron development is appropriately stated as suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "linc-Brn1b deletion causes ~50% reduction in neighboring Brn1 gene expression at RNA and protein levels, while paradoxically increasing linc-Brn1a expression. GSEA reveals decreased genes associated with proliferation and increased genes associated with neuronal maturation, consistent with a role in neural progenitor differentiation and neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 are supported by RNA-seq at multiple time points (E13.5, E15.5, P7; n=2 per genotype, Figure 6A, Figure 6\u2014supplement 1A,B), Western blot analysis (Figure 6B), and GSEA (Figure 6C). The opposing effects on Brn1 (decrease) and linc-Brn1a (increase, p<0.01) are intriguing and well-documented. The consistency with GBA predictions strengthens the interpretation. However, sample size (n=2) is modest for RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "linc-Brn1b knockout mice show a specific 36.88% reduction in pH3+ intermediate progenitor cells in the SVZ (p<3.93e-05) with no change in VZ apical progenitors. This is accompanied by decreased expression of intermediate progenitor markers TBR2, Cux2, and Svet1, indicating a specific defect in SVZ intermediate progenitor proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C150 are supported by quantitative immunofluorescence (Figure 6D,E) and in situ hybridization (Figures 6F-H) with appropriate statistical testing (Student's t-test, p<3.93e-05). The specificity to intermediate progenitors (no change in apical progenitors) strengthens the conclusion. Multiple independent markers (TBR2, Cux2, Svet1) showing consistent changes provides strong converging evidence. Sample sizes appear adequate though not explicitly stated for all experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "linc-Brn1b\u2212/\u2212 mice show 6.24% reduction in total cortical thickness with specific 11.62% reduction in upper layers II/III-IV (p<0.0004) and 12.97% decrease in CUX1+ callosal projection neurons (p<0.03). Conversely, CTIP2+ subcerebral neurons increase 36.39% (p<0.016) and TLE4+ corticothalamic neurons increase 21.77% (p<5.9\u00d710\u22125), suggesting abnormal fate specification where upper layer progenitors may generate deep layer neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C160 are supported by detailed quantitative analysis at P7 with adequate sample sizes (n=17 WT sections, n=10 mutant sections for thickness; specific n for cell counts in Figure 7A-C) and appropriate statistics (Student's t-test with significant p-values). The layer-specific effects (upper layers reduced, deep layers unchanged in thickness but increased in cell number) are well-documented. The speculation about fate switch (C158) is appropriately cautious. The connection to intermediate progenitor defects (C159) is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "linc-Brn1b\u2212/\u2212 mice show reduced barrel cortex size with pronounced loss of Ror\u03b2+ neurons at the medial edge, disruption of barrel structures particularly in the anteriolateral barrel subfield (ALBSF), and general disorganization of individual barrels as confirmed by cytochrome oxidase, vGLUT2, and 5-HTT staining. This demonstrates linc-Brn1b is required for proper development of projection neurons and may affect cortical sensory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C168 are supported by multiple complementary approaches: in situ hybridization for Ror\u03b2 (Figure 7E), cytochrome oxidase staining (Figure 7F), and immunostaining for vGLUT2 and 5-HTT (Figures 7G,H). The convergence of multiple markers showing consistent barrel structure defects provides strong evidence. The conclusion about requirement for projection neuron development is well-supported. The speculation about sensory processing implications (C168) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Fendrr deletion phenocopies Foxf1a heterozygous mutants despite no significant change in Foxf1a expression. While chromatin marks suggest enhancer-like properties, genetic analysis is inconsistent with Fendrr acting as a DNA enhancer. The targeting strategy retained the promoter and first exon with active lacZ transcription, ruling out passive transcription as functional. Combined with lack of coding potential, Fendrr is concluded to be a functional RNA molecule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C186 present a logical argument supported by multiple lines of evidence: phenotypic similarity to Foxf1a mutants (C176, C187 with citation), chromatin data (C177), comparison with Grote et al.'s different targeting strategy (C179), and lack of coding potential from PhyloCSF/ribosome profiling (C185). The reasoning about ruling out DNA enhancer function and passive transcription is sound. However, the conclusion relies partly on comparison with another study and inference rather than direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Fendrr mutants exhibit features similar to Foxf1a heterozygous mutants, suggesting Fendrr may act downstream of Foxf1a. FOXF1A is important for lung and gastrointestinal development, and human genetic deletions encompassing both FOXF1 and FENDRR are associated with lethal alveolar capillary dysplasia, supporting that lincRNAs can be required for organ development and are relevant to human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C191 connect mouse genetics to human disease through appropriate citations (Mahlapuu et al. 2001, Szafranski et al. 2013). The speculation about Fendrr acting downstream of Foxf1a (C188) is reasonable given lack of Foxf1a expression change. The human genetic evidence (C190) provides important translational relevance. The conclusion about lincRNA relevance to human disease (C191) is well-supported by converging mouse and human data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "Mdgt deletion does not phenocopy Hoxd1 (viable/fertile) or Hoxd3 (reduced viability but no growth defect), indicating distinct function. Neither Peril nor Mdgt loci show enhancer chromatin marks (H3K4me1, H3K27ac), and no local gene expression changes are observed within \u00b11 Mb (p<1.0 for Peril), suggesting lethality is not due to cis or enhancer-like regulatory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C199 are supported by comparison with prior literature (appropriate citations), chromatin data analysis, and statistical testing of local gene expression (bootstrapping approach, p<1.0 for Peril). The conclusion that lethality is not due to cis effects is well-supported by multiple lines of negative evidence across three different lincRNAs. However, the Mdgt interpretation is complicated by deletion of AK144266 (C109-C110), which is not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "linc-Brn1b shows canonical active transcription marks (H3K4me3/H3K36me3) rather than enhancer marks, and deletion affects neighboring Brn1 expression (~50% reduction). However, linc-Brn1b deletion does not phenocopy Brn1 deletion (which requires Brn1/Brn2 double knockout for cortical defects) and produces a stronger phenotype, with expression in brain regions lacking Brn1. This suggests lincRNAs adjacent to developmental regulators may act on upstream/distinct pathways beyond cis-enhancer mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C212 present a nuanced analysis supported by chromatin data, RNA-seq (Figure 6A, Figure 6\u2014supplement 1C), Western blot (Figure 6B), comparison with prior literature on Brn1/Brn2 mutants (appropriate citations), and lacZ expression data. The argument that linc-Brn1b has functions beyond simple cis-regulation of Brn1 is well-supported by: (1) stronger phenotype than Brn1 deletion alone, (2) expression in regions without Brn1, (3) lack of widespread local gene expression changes (p<0.225, Figure 3\u2014supplement 2B), and (4) no change in Brn2 expression. The conclusion is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "Despite recent suggestions that lincRNAs from bidirectional promoters are unstable and non-functional, Fendrr (bidirectional with Foxf1a) deletion is lethal even with intact promoter and first exon expression, and linc-Brn1b deletion causes significant upregulation of linc-Brn1a (bidirectional with Brn1). The opposing effects on Brn1 (decrease) and linc-Brn1a (increase) suggest functional roles rather than transcriptional noise, confirming that some bidirectional lincRNAs play critical functional roles in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C213-C219 address an important debate in the field with appropriate citations (Cabili et al. 2011, Pauli et al. 2012, Almada et al. 2013, Sigova et al. 2013). The evidence for functional roles is strong: (1) Fendrr lethality despite retained promoter/transcription (C215), (2) significant linc-Brn1a upregulation (p<0.01, C216), and (3) opposing regulatory effects suggesting specific regulation rather than noise (C217). The conclusion is well-supported and addresses an important conceptual issue in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The 18 candidate lincRNAs show diverse expression patterns with tissue-specific (e.g., Celr in NSCs, linc-Enc1 in ES cells, Manr/linc-Cox2 in lung) and ubiquitous (linc-Pint, Spasm, linc-Ppara, Tug1) expression. Most (12/18) are expressed in adult brain or ES-derived NSCs. Guilt-by-association analysis predicts diverse functions ranging from cell cycle regulation and chromosome organization to neuronal differentiation and immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by RNA-seq expression profiling across multiple tissues (Figure 1B) and computational GBA analysis (Figure 1C). The expression patterns are clearly documented and the GBA predictions provide testable hypotheses. However, GBA is a correlative computational approach and predictions require experimental validation, which is provided for some candidates (e.g., linc-Brn1b neuronal phenotype consistent with GBA prediction, C143).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Fendrr\u2212/\u2212 neonates have defects in lung, gastrointestinal tract, and heart, while linc-Brn1b\u2212/\u2212 mutants display abnormalities in generation of upper layer II-IV neurons in the neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 accurately summarize major phenotypes that are extensively documented in the manuscript with multiple lines of evidence (histology, immunostaining, in situ hybridization, quantitative analysis). These are the primary findings highlighted in the abstract and are well-supported by the detailed results sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Mammalian genomes encode thousands of lncRNAs emerging as key regulators of cellular processes including chromatin modification, cellular identity, cell cycle, and translation, with correlations to disease states. However, direct in vivo genetic evidence of functional significance remains elusive, with most prior knockout studies focusing on classic examples (Xist, H19, Kcnq1ot1, Malat1) rather than RNA-Seq-derived catalogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 accurately describe the state of the field with appropriate citations to prior literature. These are background claims that set up the rationale for the study. The characterization of the knowledge gap (C13, C15) is accurate and well-supported by citations, providing clear justification for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "While debate exists about whether most lncRNA transcripts are functional or transcriptional by-products, early studies found X-inactivation lncRNAs (Xist, Tsix) required for life, though many subsequent models showed subtle or no phenotypes. Some suspect acute inactivation produces stronger phenotypes than constitutive deletions due to compensation. This study demonstrates important insights can be gleaned from constitutive lincRNA knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C174 accurately frame the debate in the field with appropriate citations. The conclusion (C174) is supported by the study's findings of multiple lethal and developmental phenotypes from constitutive knockouts, directly addressing the concern about compensatory mechanisms. This provides important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "The brain is one of the most complex and fast-evolving organs, likely requiring complex lincRNA regulatory mechanisms for layered gene expression control. Many lincRNAs from the screen show restricted patterns in VZ/SVZ progenitors suggesting neurogenesis roles. Preliminary observations show behavioral abnormalities in Spasm (tremors/spastic movements) and linc-p21 (hindlimb clasping) strains. The 18 knockout models constitute a useful resource for future studies on lincRNA roles in development, physiology, and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C220-C227 mix well-supported observations (expression patterns C222, preliminary behavioral observations C224-C225) with speculation (C221, C223) and summary statements (C226-C227). The behavioral observations (C224-C225) are preliminary and unpublished, lacking rigorous characterization. The speculation about lincRNA evolution (C221) and future findings (C223) are reasonable but not directly tested. The conclusion about resource value (C227) is appropriate but represents future potential rather than current findings.",
+    "result_type": "MINOR"
+  }
+]

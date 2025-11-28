@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors developed a new post-refinement procedure (implemented in the program 'prime') specifically designed for XFEL still diffraction data from randomly oriented crystals. This method greatly improves diffraction data quality from three different proteins and allows complete data sets to be extracted from far fewer images than the Monte Carlo method requires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 collectively establish the development and validation of the post-refinement method. The experimental data from three different proteins (myoglobin, hydrogenase, thermolysin) demonstrate improved data quality metrics (CC1/2, R-factors, electron density maps) and reduced image requirements, providing strong converging evidence for the method's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C69"
+    ],
+    "result": "The partiality model assumes reflections are spherical volumes and that measurements are infinitely thin (areal) samples. The Ewald offset correction is defined as 1 when a reflection is centered on the Ewald sphere, corresponding to maximum partial intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C69 describe the fundamental assumptions of the partiality model. These are clearly stated theoretical assumptions with mathematical definitions provided in the Materials and methods section. The spherical volume assumption is acknowledged as a simplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "For myoglobin, the partiality model target function (Tpr) markedly decreased in the first microcycle and fully converged in the last microcycle, while the spot position residual (Txy) decreased during post-refinement of crystal orientation and unit-cell parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe convergence behavior observed in Figure 3 for a representative myoglobin diffraction image. The data clearly show the described decreases in both target functions during the iterative refinement process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "For myoglobin using all 757 images, post-refinement improved CC1/2 values (especially at low resolution), increased real-space correlation coefficients for the heme group in difference maps, and produced the best Rfree and Rwork values. Post-refinement against an iteratively improved reference set is superior to methods considering each image individually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by quantitative data in Table 2, Figures 5C and 6A. Multiple independent quality metrics (CC1/2, real-space correlation, R-factors) consistently show improvement with post-refinement compared to averaged-merged and mean-scaled partiality-corrected methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Post-refinement of only 100 myoglobin diffraction images (80% complete) produced difference maps with better real-space correlation for the heme group than averaged-merged data from all 757 images (97.7% complete). Post-refinement both improves data quality for a given set of images and reduces the number of images required for structure determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 demonstrate a key practical advantage of the method. The comparison shown in Figure 6A and Table 2 provides direct evidence that post-refined data from 100 images outperforms non-post-refined data from 757 images by real-space correlation metrics, despite lower completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C67"
+    ],
+    "result": "Comparison of post-refined XFEL myoglobin data with synchrotron data showed comparable quality omit maps and real-space correlation coefficients for the heme group, though the authors suggest synchrotron data may be somewhat better.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 states comparable quality while C67 suggests synchrotron data are 'perhaps somewhat better.' Figure 7 shows similar map quality, but the authors' own assessment introduces uncertainty. The comparison is limited to one protein and lacks systematic evaluation across multiple metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "For hydrogenase, 177 diffraction images from eight crystals were collected and merged to 91% completeness. Post-refinement significantly improved CC1/2 values, clearly revealed the entire Fe-S cluster in omit maps (whereas averaged-merged data showed much poorer density), and produced significantly better R and Rfree values. Similar improvements were seen with only 100 images (83% complete).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by data in Table 3 and Figure 8. The Fe-S cluster provides a clear structural feature for quality assessment, and the visual difference in omit map quality between post-refined and averaged-merged data is striking. Quantitative metrics (CC1/2, R-factors) corroborate the visual assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Thermolysin diffraction data collected at the zinc absorption edge showed improved anomalous signal after post-refinement. Two anomalous difference peaks above 3\u03c3 were observed near the active site using post-refined data; the second, smaller peak was not visible in averaged-merged data with 2000 images and had not been clearly visible in previous analysis (PDB: 4OW3). These peaks correspond to two zinc sites reported in a previous structure (PDB: 1LND).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe improved anomalous signal detection. Figure 9 and Table 4 show clear improvements in peak heights. The identification of a second zinc site not visible in previous analysis demonstrates the practical value of the method. The correspondence with a previously reported structure (1LND) provides independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A Leu-Lys dipeptide was observed in well-connected electron density near the thermolysin active site in post-refined data. In the previously deposited model (PDB: 4OW3), weak density in this region was interpreted as water molecules. The dipeptide had higher real-space correlation with post-refined maps than averaged-merged maps, and post-refined data produced lower Rwork and Rfree values throughout the resolution range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe identification of a structural feature missed in previous analysis. Figure 10 shows clear visual improvement in electron density connectivity. The comparison with the deposited structure and quantitative metrics (real-space correlation, R-factors) support the superior quality of post-refined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "When completeness is high, adding more images to increase multiplicity has only modest impact on final structure quality using post-refined data. For thermolysin subsets from 2000-12,000 images (all 100% complete at 2.6 \u00c5), peak heights, CC1/2 values, and R values did not improve significantly beyond 8000 images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by data in Figure 11. The plateau in quality metrics beyond 8000 images demonstrates diminishing returns with increased multiplicity when completeness is already high. This has important practical implications for data collection efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Radiation damage limits macromolecular structure quality, but femtosecond XFEL pulses enable visualization before damage onset. XFEL structures use liquid jet injection or goniometer setups, producing still diffraction patterns from effectively stationary crystals containing only partially recorded reflections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background context supported by appropriate citations. These establish the motivation for XFEL crystallography and describe the nature of XFEL diffraction data. All claims are well-established in the field and properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Most XFEL data processing approaches use the Monte Carlo method, which requires very large numbers of crystals to ensure convergence. Shot-to-shot differences in pulse intensity and energy spectrum arise from the SASE process and contribute to intensity variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 describe the state of XFEL data processing and its limitations, supported by appropriate citations. These claims establish the problem that the authors' method addresses and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Post-refinement methods were developed in the 1970s for virus crystals and made it possible to obtain high-quality data from many crystals. Other post-refinement schemes for XFEL data have been described but only applied to simulated XFEL data or pseudo-still synchrotron images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 provide historical context and position the current work relative to prior art. All claims are supported by appropriate citations. The distinction that previous XFEL post-refinement methods were not applied to experimental data is important for establishing novelty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors' implementation differs from Kabsch (2014) and White (2014) in the partiality model and initial reference set calculation. Neither previous report describes application to experimental XFEL data, preventing direct comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 distinguish the current method from previous approaches. The differences in methodology are clearly stated, and the lack of experimental validation in previous reports is accurately noted. This establishes the novelty of the experimental validation presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors' post-refinement implementation substantially improves diffraction data quality from three XFEL experiments, producing structures with significantly lower R-factors and clearer electron density maps. A key feature is iterative refinement against an improved reference set. This development will make XFEL crystallography accessible to problems where sample quantity is limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 summarize the demonstrated improvements, supported by extensive experimental data. Claim C66 is a forward-looking statement about impact that is reasonable given the demonstrated reduction in required sample, though it remains to be validated by future applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C28",
+      "C29"
+    ],
+    "result": "The SASE spectrum is broad and varies shot-to-shot. Myoglobin and hydrogenase data were collected from frozen crystals on a goniometer setup, while thermolysin used an electrospun liquid jet for nanocrystal injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C28-C29 describe experimental conditions and XFEL beam properties. These are factual descriptions of the data collection methods, properly cited and consistent with the experimental details in Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The authors suspect rotation data would be better than still data due to the ability to directly measure full reflections without modeling partiality, which is still a relatively crude process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is explicitly speculative ('We suspect'). While the reasoning is sound, no experimental comparison between rotation and still XFEL data is provided. This remains an untested hypothesis that would require systematic comparison to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "More sophisticated models consider crystal mosaicity to have three components (domain size, unit-cell variation, orientational spread), each affecting reciprocal lattice points differently. The current model does not consider anisotropic mosaicity or the rugged SASE energy spectrum. In cctbx.xfel, mosaicity and domain size are considered during reflection prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe limitations of the current model and acknowledge more sophisticated approaches. These are honest assessments of model simplifications, properly cited where appropriate. The acknowledgment of limitations is important for understanding the scope and potential improvements of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The XFEL beam at LCLS is strongly polarized horizontally. For stationary crystals with monochromatic beams, Lorentz factor correction is not applicable, but spectral dispersion (\u03b4E/E ~ 3\u00d710\u207b\u00b3) is accounted for by the \u03b3e term.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 describe technical aspects of the correction model. These are based on established crystallographic theory and LCLS beam properties. The treatment of polarization and spectral dispersion is appropriate for the experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The program prime is implemented in cctbx. Molecular replacement used Phaser with default settings and r.m.s.d. of 0.8. The standard deviation of the Ewald offset distribution for myoglobin after post-refinement is 0.0016 \u00c5\u207b\u00b9 (approximately 0.12\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide implementation and methodological details. These are factual statements about software, protocols, and results. The Ewald offset distribution (C82, Figure 12) provides quantitative validation of the refinement convergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Processing XFEL still diffraction data from randomly oriented crystals requires new methods and implementations. Improved data collection and processing methods that reduce sample requirements are important for making XFELs useful for challenging structural biology investigations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are general statements about the need for method development in XFEL crystallography. These are well-supported by the context and challenges described throughout the manuscript. The importance of reducing sample requirements is demonstrated by the experimental results.",
+    "result_type": "MINOR"
+  }
+]

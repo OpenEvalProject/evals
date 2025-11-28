@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "TEDG method validation using simulated data shows that with 30 patients, the method achieves 80% accuracy for linear models and 90% for branching models, and the results are robust to parameter selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C74 are supported by simulation data shown in Figure 2. The accuracy metrics are clearly stated with specific values, and the robustness analysis demonstrates that TEDG performs well across a range of parameter values, providing confidence in the method's reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "CLL evolution follows a temporally ordered process with 13q14 deletion, +12, and NOTCH1 mutations as significant early events, while TP53 and BIRC3 mutations are significant late events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, C20, and C21 are well-supported by the TEDG analysis and statistical testing (p-value < 0.0001 for ordered structure, specific p-values for early/late events). The hierarchical layout of ISN and binomial testing provide robust statistical evidence for the temporal ordering of genetic lesions in CLL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C37",
+      "C57"
+    ],
+    "result": "Two distinct and mutually exclusive evolutionary paths exist in CLL: one involving +12 and NOTCH1 mutations leading to TP53/BIRC3 abnormalities, and another involving 13q14 deletion leading to SF3B1/BIRC3 abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48-C51, C37, and C57 are supported by both TEDG topology analysis and statistical association testing showing mutual exclusivity between +12 and 13q14 deletion. The integration of temporal ordering data with co-occurrence/mutual exclusivity patterns provides converging evidence for two distinct evolutionary paths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C4"
+    ],
+    "result": "Late genetic events in CLL have significantly higher growth rates than early events (p=0.005), indicating that late events drive higher fitness or more aggressive clones, supporting progressive clonal replacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C4 are supported by statistical analysis using Wilcoxon Rank-Sum Test with significant p-values (0.005 and 0.0114). The result remains significant even after controlling for clonal lesions (MCF > 20%), strengthening the conclusion that late events are associated with higher fitness clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "High maximal mutation frequency slope (MMFS) is associated with TP53 mutations and correlates with poor survival (HR: 3.17, p=0.005), increased Richter syndrome transformation risk (HR: 4.61, p=0.003), with 77% of deaths due to transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are well-supported by survival analysis with appropriate statistical methods (Cox proportional hazards, Wilcoxon Rank-Sum Test) and significant p-values. The hazard ratios with 95% confidence intervals and Kaplan-Meier curves (Figure 6\u2014figure supplement 2) provide robust evidence for the clinical impact of MMFS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A minority of CLL patients (5%, n=3/60) show branching evolution with clonal replacement, all involving SF3B1 mutations occurring after treatment (p=0.0016), suggesting that dominant clone genetics alone may be insufficient for therapeutic decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by data analysis with appropriate statistical testing (Fisher's exact test, p=0.0016, FDR=0.1). However, the small sample size (n=3) limits generalizability. The association between SF3B1 mutations, treatment, and branching evolution is statistically significant but would benefit from validation in larger cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Analysis at the individual mutation level reveals that monoallelic 13q14 deletion, RB1 deletion, and +12 are early events (p<0.01), while BIRC3 E537fs and TP53 R248Q are late lesions (p<0.05), with different mutations in the same gene occurring at distinct evolutionary stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by statistical analysis shown in Figure 4\u2014figure supplement 1. However, C30 explicitly acknowledges that sample size prevents statistical considerations for some TP53 mutations, making those specific mutation timing claims speculative. The general finding that different mutations in the same gene can occur at different stages is supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "Statistical association analysis of 1,403 CLL patients confirms known co-mutations and reveals novel associations (BIRC3 with +12/NOTCH1, 13q14 deletion with BIRC3 deletion), validating TEDG's ability to capture tumor evolution information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, and C38 are supported by statistical analysis of a large cohort (n=1,403) with appropriate multiple testing corrections. The consistency between TEDG predictions and association analysis provides indirect validation, though C38's claim of validation is somewhat circular since both analyses use related data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The sequential order of genetic lesions remains consistent in patients receiving chemotherapy (Pearson's r=0.9, p<1e-3), suggesting therapy may affect the order of genetic lesion development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C23 is supported by statistical analysis, but C24's inference that therapy affects mutation order is problematic. The comparison shows high correlation (0.9) in treated patients but low correlation (0.4, p>0.1) in untreated patients. However, the low correlation in untreated patients may reflect insufficient statistical power rather than true disorder. The causal claim about therapy affecting order requires more rigorous analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "MYD88 mutations might occur before 13q14 deletion in some cases (1 of 6 patients), suggesting Toll-like receptor pathway activation could be important in CLL initiation for a subset of tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C22 is explicitly acknowledged to lack statistical power (sample size prevents statistical considerations). The observation is based on only 1 of 6 patients, making it highly speculative. While the biological hypothesis about Toll-like receptor pathway is plausible and supported by citation, the data presented is insufficient to support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TEDG can improve cancer classification into genetic subgroups, anticipate genetic composition of progressive/relapsed disease, and provides a general framework applicable to other tumor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 are conclusions drawn from the CLL analysis. While C65 is supported by the identification of two evolutionary paths, C66's claim about anticipating disease progression is only partially demonstrated (limited to the 3 branching cases). C67's claim about general applicability is entirely speculative as TEDG has only been tested on CLL. These require validation in additional datasets and tumor types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study analyzed 70 CLL patients with 164 sequential samples over 12 years, with appropriate ethical approval, high tumor purity (70-98%), and sequencing depth (1200\u00d7) sufficient to detect mutations >1% frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C68-C72 describe the study design and methodology. These are well-documented with specific numbers and appropriate quality control measures. The sequencing depth claim (C72) is supported by citation. The cohort characteristics are clearly presented in supplementary figures.",
+    "result_type": "MINOR"
+  }
+]

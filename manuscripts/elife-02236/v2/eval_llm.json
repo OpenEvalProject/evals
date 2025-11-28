@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Rps27l\u2212/\u2212 mice exhibit postnatal lethality with all pups dying within 12 days in pure C57BL/6 background and by 35 days in mixed background. These mice show growth retardation (50% body weight), organ hypocellularity (reduced thymus and spleen weight), bone marrow depletion, and increased apoptosis in thymus and bone marrow as evidenced by cleaved caspase-3 and Annexin V staining, but no change in proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence consistently demonstrate the lethal phenotype and apoptotic mechanism. The claims are supported by quantitative measurements (body weight, organ weight, cell counts), histological analysis (H&E staining), immunofluorescence (cleaved caspase-3), flow cytometry (Annexin V), and immunoblotting (Puma, cleaved caspase-3). The distinction between apoptosis and proliferation is appropriately demonstrated with both Annexin V and BrdU incorporation assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Rps27l\u2212/\u2212 fetal livers show substantial reduction in hematopoietic stem and progenitor cells (HSPCs) including LSK and myeloid progenitor populations. These cells completely fail to reconstitute sterilized bone marrow in non-competitive transplantation assays even when using 3-fold more cells, and are outcompeted by wild-type cells in competitive reconstitution assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional defect in HSPCs is rigorously demonstrated through multiple complementary approaches: FACS quantification of specific cell populations, non-competitive reconstitution showing 100% lethality, dose-escalation experiments ruling out cell number effects, and competitive reconstitution showing complete absence of donor-derived cells. The experiments include appropriate controls and multiple time points, providing strong evidence for an intrinsic HSPC defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Rps27l disruption causes increased p53 protein levels in multiple tissues (fetal liver, bone marrow, spleen, brain) and MEFs, both basally and in response to various stresses (radiation, actinomycin D, etoposide). The increase is independent of enhanced DNA damage response as \u03b3H2AX and Chk1 phosphorylation levels are similar between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "p53 elevation is consistently demonstrated across multiple tissues and cell types using complementary methods (immunohistochemistry, immunoblotting). The stress-response experiments appropriately test multiple inducers. The control experiments measuring DNA damage markers (\u03b3H2AX, Chk1) strengthen the conclusion that p53 increase is not due to enhanced DNA damage signaling. The data support increased p53 activity as evidenced by elevated downstream targets (Puma, p21, Mdm2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Increased p53 upon Rps27l disruption occurs post-transcriptionally through reduced degradation rather than increased synthesis or transcription. p53 half-life doubles from ~10 to ~25 minutes, accompanied by reduced ubiquitylation. p53 mRNA levels are unchanged while target gene mRNAs (Mdm2, p21) are increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is systematically dissected using appropriate methods: qRT-PCR for transcription, metabolic labeling for synthesis rate, cycloheximide chase for half-life, and ubiquitylation assays. The sequential logic (no change in mRNA or synthesis \u2192 increased half-life \u2192 reduced ubiquitylation) is sound. The increased target gene expression validates p53 transcriptional activity. Multiple independent MEF pairs strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Rps27l negatively regulates Mdm2 protein stability without affecting Mdm2 transcription. Rps27l disruption extends Mdm2 half-life from ~18 to 40 minutes and reduces Mdm2 self-ubiquitylation. Conversely, RPS27L overexpression decreases MDM2 levels and shortens its half-life in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bidirectional regulation is demonstrated through complementary loss-of-function (knockout, knockdown) and gain-of-function (overexpression) experiments. Half-life measurements are performed in both mouse and human cells. The mechanism (reduced self-ubiquitylation) is directly demonstrated. The dose-dependent effect in overexpression experiments strengthens causality. However, the paradox of increased Mdm2 leading to increased p53 requires the Mdm4 mechanism to be fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Rps27l disruption reduces total Mdm4 levels but increases the fraction of Mdm4 bound to Mdm2, indicating higher Mdm2-Mdm4 binding affinity. Time-course experiments show sequential changes: Mdm2 increases first (24h), followed by Mdm4 decrease (48h), then p53 accumulation (72-84h). These changes occur independently of p53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal sequence is rigorously established using acute depletion with Ad-Cre in both Trp53+/+ and Trp53\u2212/\u2212 backgrounds. The co-immunoprecipitation experiments with quantification demonstrate increased binding affinity despite reduced total Mdm4. The p53-independence is directly tested. However, the interpretation of \"higher binding affinity\" from IP data could be confounded by the stabilized Mdm2 having more opportunity to bind the remaining Mdm4. The sequential timing strongly supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Rps27l is a ribosomal protein whose disruption triggers ribosomal stress, evidenced by nucleolar B23 release (25% vs 7% of cells) and increased Mdm2 binding of specific ribosomal proteins (Rpl11, Rpl23, Rps7, Rps14, Rps27). p53 activation by Rps27l deficiency is dependent on Rpl11 but not Rpl5, as shown by shRNA experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Ribosomal localization is demonstrated by sucrose gradient profiling. Ribosomal stress is evidenced by two independent markers: B23 nucleoplasmic translocation and selective increase in Mdm2-RP binding. The Rpl11 dependence is shown in two independent MEF pairs with appropriate controls. The partial p53-independence of B23 release (17% in Trp53\u2212/\u2212 background) is appropriately tested. The unexpected finding that Rpl5 silencing increases p53 is noted but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Mdm4 reduction in Rps27l\u2212/\u2212 cells occurs through enhanced proteasomal degradation rather than decreased transcription or translation. Mdm4 ubiquitylation is increased and its half-life is shortened upon Rps27l disruption, while RPS27L overexpression inhibits MDM2-mediated MDM4 ubiquitylation and extends Mdm4 half-life. These changes are consistent across multiple tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is systematically established: qRT-PCR rules out transcriptional effects, MG132 treatment demonstrates proteasomal degradation, ubiquitylation assays show increased Mdm4 ubiquitylation, and half-life measurements confirm accelerated turnover. Bidirectional experiments (loss and gain of function) in both mouse and human cells strengthen conclusions. The consistency across brain and liver tissues supports physiological relevance. The cited literature on Mdm2-mediated Mdm4 degradation provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Deletion of one or both Trp53 alleles completely rescues postnatal lethality, growth retardation, and organ hypocellularity in Rps27l\u2212/\u2212 mice. Heterozygous Trp53 deletion rescues survival and most phenotypes but only partially rescues bone marrow HSPC depletion, while homozygous deletion provides complete rescue. Fetal liver reconstitution ability is also restored by Trp53 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic rescue experiments provide definitive evidence for p53-dependence of the lethal phenotype. The dose-dependent rescue (heterozygous vs homozygous Trp53 deletion) is thoroughly documented with appropriate quantification of multiple parameters (body weight, cell numbers, HSPC populations). The distinction between survival rescue and complete HSPC rescue is important and well-documented. Reconstitution assays confirm functional restoration. The Mendelian ratios and statistical analyses support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Rps27l\u2212/\u2212;Trp53+/\u2212 mice show significantly shortened lifespan compared to controls (p=0.0036) and develop lymphomas at high frequency (50% by 400 days), predominantly T-lymphoblastic lymphomas. These tumors exhibit p53 loss-of-heterozygosity (97% of tumors) and severe genomic instability with 63% aneuploidy and centromere-centromere fusions. In contrast, Rps27l genotype has no effect on Trp53\u2212/\u2212 mice (p=0.713).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tumor phenotype is rigorously documented with Kaplan-Meier survival analysis, necropsy, histopathology, FACS characterization, genotyping of 30 tumors, and metaphase chromosome analysis. The high frequency of p53 LOH (97%) strongly supports selection pressure against wild-type p53. The severe aneuploidy (63%) exceeds that in Trp53\u2212/\u2212 tumors (30-35% from cited literature), suggesting additional genomic instability. The lack of effect in Trp53\u2212/\u2212 background provides important genetic context. Statistical analyses are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Genomic instability occurs prior to p53 deletion in Rps27l\u2212/\u2212;Trp53+/\u2212 cells. Early passage MEFs show significantly higher aneuploidy (30% vs 15%) while retaining wild-type Trp53 as measured by qPCR. Importantly, Rps27l\u2212/\u2212;Trp53+/+ MEFs show low aneuploidy (~10%) similar to wild-type, indicating genomic instability requires Trp53 heterozygosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal sequence is established by examining early passage MEFs before selection for p53 loss. The qPCR confirmation of retained Trp53 in aneuploid cells is critical for establishing that genomic instability precedes p53 deletion. The comparison with Trp53+/+ background (showing no increased aneuploidy) demonstrates the requirement for p53 haploinsufficiency. Four independent MEF pairs strengthen the conclusion. This is a key finding explaining the paradoxical tumor promotion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In Rps27l\u2212/\u2212;Trp53+/\u2212 MEFs, both basal and ActD-induced p53 levels are elevated compared to controls, while p19/Arf levels are reduced. This demonstrates that genomic instability and p53 activation occur independently of p53 loss. The higher p53 levels in Rps27l\u2212/\u2212;Trp53+/+ compared to Rps27l\u2212/\u2212;Trp53+/\u2212 MEFs determine postnatal survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments in three independent MEF pairs demonstrate that p53 is activated (not lost) during the genomic instability phase. The reduced p19/Arf is an interesting observation suggesting additional selective pressures, though the mechanism is unclear. The comparison of p53 levels between Trp53+/+ and Trp53+/\u2212 backgrounds on Rps27l\u2212/\u2212 provides a mechanistic explanation for the life-death threshold. The interpretation that genomic instability triggers p53 activation is logical and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Rps27l is required in vivo to keep p53 in check, as demonstrated by the first targeted inactivation of a single Mdm2-binding ribosomal protein. Developmental defects and postnatal death are rescued by deletion of a single Trp53 allele, indicating moderate p53 increase is sufficient for lethality. Rps27l plays a non-redundant role in hematopoiesis despite the presence of other ribosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic rescue experiments definitively establish the p53-dependence and the sufficiency of moderate p53 increase for lethality. The non-redundancy is an important observation given that other Mdm2-binding ribosomal proteins are present. However, the claim of being \"the first targeted inactivation\" should be qualified as the manuscript cites an Rps14 deletion study (Barlow et al., 2010), though that involved deletion of multiple genes. The physiological role is well-established through the in vivo model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Rps27l is required for genomic stability maintenance, but this role is context-dependent. With normal p53 (Trp53+/+), Rps27l plays a limited role in genomic stability. However, when one Trp53 allele is deleted/mutated (as in Li-Fraumeni syndrome), Rps27l becomes critically essential for preventing p53 LOH. Loss of Rps27l exacerbates genomic instability and provides selection pressure for p53 inactivation, leading to tumor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The context-dependent tumor suppressor function is well-supported by the differential aneuploidy rates in different genetic backgrounds and the high frequency of p53 LOH in tumors. The comparison with cited literature (aneuploidy in Trp53\u2212/\u2212 tumors, RPS27L knockdown in HCT116 cells) provides additional support. The clinical relevance to Li-Fraumeni syndrome is speculative but logical. The dual function model (p53 inhibitor in normal cells, tumor suppressor in Trp53+/\u2212 cells) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Rps27l has dual functions in p53 regulation depending on Trp53 status: In Trp53+/+ cells, Rps27l acts as a physiological p53 inhibitor by optimizing Mdm2-Mdm4 E3 ligase activity. In Trp53+/\u2212 cells, Rps27l acts as a tumor suppressor by maintaining genomic stability and preventing Trp53 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates the major findings into a coherent dual-function model. The p53 inhibitor function is supported by the rescue experiments, the mechanism involving Mdm2-Mdm4 stabilization, and the postnatal lethality. The tumor suppressor function is supported by the increased lymphoma incidence, genomic instability, and p53 LOH in Trp53+/\u2212 background. The model is well-supported by the comprehensive genetic, biochemical, and cellular data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "RPS27L is an 84-amino acid ribosomal-like protein that differs from RPS27 by only three amino acids (R5K, L12P, K17R) at the N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are basic descriptive claims about the protein structure that are explicitly stated with accession numbers. The three amino acid differences are specific and verifiable. These claims provide essential background information for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "RPS27L is a direct p53 target that binds MDM2, undergoes MDM2-mediated degradation, and competes with p53 for MDM2 binding. It is the first and only known ribosomal-like protein with all three properties: p53 target, MDM2 substrate, and MDM2-p53 axis regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are based on prior published work (cited studies) and provide important context for the current study. The uniqueness claim is appropriately qualified by comparing to other ribosomal proteins (RPS7, RPL26) that are MDM2 substrates but lack the other properties. These are background claims that motivate the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on p53 regulation: p53 is inactivated in cancer by mutation (50%) or Mdm2/Mdm4-mediated degradation. Mdm2 is a p53 target that forms an auto-regulatory loop. Mdm2 inactivates p53 by blocking transactivation and promoting degradation. Mdm4 lacks intrinsic E3 activity but binds p53 and forms heterodimers with Mdm2. The Mdm2-Mdm4 heterodimer has optimal E3 ligase activity. Various ribosomal proteins bind MDM2 upon stress to inhibit p53 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims from the literature, appropriately cited. They provide essential context for understanding the significance of the current findings. The claims accurately represent the cited literature and current understanding of the p53-Mdm2-Mdm4 axis. These are foundational knowledge claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "High RPS27L expression predicted better prognosis in colon cancer patients according to a cited study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a single citation to published clinical data that supports the potential tumor suppressor function of RPS27L. While relevant, it is a minor supporting observation from the literature rather than a finding of the current study.",
+    "result_type": "MINOR"
+  }
+]

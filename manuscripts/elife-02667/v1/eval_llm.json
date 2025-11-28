@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Dephosphorylated Aurora A was obtained by \u03bb-protein phosphatase treatment and exhibits 100-fold lower catalytic activity (kcat = 0.01 \u00b1 0.005 s\u207b\u00b9) compared to phosphorylated Aurora A (kcat = 1.0 \u00b1 0.2 s\u207b\u00b9) toward the AP peptide substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide a clear methodological approach (\u03bbPP treatment) and quantitative kinetic data with error estimates showing the 100-fold difference in activity. The data are supported by mass spectrometry validation (Figure 1A) and kinetic measurements (Figure 1B), with appropriate controls for substrate saturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "TPX2 binding activates dephosphorylated Aurora A to levels comparable to T288 phosphorylation, with TPX2\u2081\u208b\u2084\u2085 stimulating dephosphorylated Aurora A by 50-fold and the T288V mutant by 25-fold, while providing only a 2-fold increase to already phosphorylated Aurora A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 demonstrate that TPX2 and phosphorylation are alternative, not additive, activation mechanisms. The T288V mutant serves as an appropriate control to eliminate autophosphorylation during the assay. Quantitative kinetic data with replicates support the conclusions, though the exact mechanism of TPX2 protection from autophosphorylation during measurement could be more explicitly addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Crystal structures reveal that dephosphorylated Aurora A bound to TPX2 forms a dimer with both monomers in an active conformation, characterized by \u03b1C-helix rotation, E181-K162 ion pair formation, DFG-in positioning of F275, and completion of the regulatory spine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 are supported by crystallographic data (Table 1, Figure 2) with appropriate resolution (2.69-2.79 \u00c5). The structural hallmarks of active kinases are identified using established bioinformatics tools (LSP alignment, C23). The comparison to inactive structures and previous Aurora A structures provides appropriate context. The structural interpretation is consistent with the kinetic data showing TPX2 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The TPX2-bound Aurora A dimer exhibits domain swapping with asymmetric features: both monomers show \u03b26/\u03b29 sheet formation, but only one monomer (enzyme) displays the complete hydrogen bond network (D256-K258-T292) characteristic of a fully active kinase, while W313 and E299-R371 interactions are swapped between monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 describe detailed structural features supported by crystallographic data (Figure 3A). The asymmetry between monomers is clearly documented with missing electron density for residues 283-288 in monomer II (C36). The structural features are compared to established hallmarks of active Ser/Thr kinases with appropriate citations (C27). The domain-swapped nature is well-characterized with specific intermolecular contacts identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The asymmetric dimer structure suggests an enzyme-substrate arrangement where monomer I (with complete activation loop and proper hydrogen bonding geometry) acts as the enzyme, while monomer II (missing residues 283-288) serves as the substrate, with targeted MD simulations showing T288 of monomer II can approach the \u03b3-phosphate of AMPPCP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C37 are well-supported by crystallographic data showing structural asymmetry. However, C38 is explicitly stated as speculation, and C39 relies on targeted MD simulations that are acknowledged as 'crude' tests. While the structural data are sound, the functional interpretation as an enzyme-substrate complex requires additional experimental validation beyond computational modeling. The TMD approach is biased toward the desired outcome and doesn't prove this arrangement occurs during catalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Solution studies by SAXS and AUC demonstrate that Aurora A forms a long-lived dimer in solution (KD > 300 \u03bcM) independent of TPX2 presence, with 9% dimer detected by SAXS fitting and slow monomer-dimer interconversion observed by sedimentation velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by orthogonal biophysical methods (SAXS and AUC, Figure 4). The observation of discrete peaks in sedimentation velocity (C42) provides strong evidence for slow interconversion. The SAXS fitting requiring the crystallographic dimer structure (C43) validates the physiological relevance of the crystal structure. The KD estimate (C44) is appropriately qualified as an estimate due to solubility limitations. These data are critical for establishing that the crystallographic dimer is not an artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Intermolecular autophosphorylation is demonstrated by mixing experiments where catalytically dead Aurora A D274A is phosphorylated by wild-type Aurora A at comparable rates when present in equal concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide direct functional evidence for intermolecular autophosphorylation using an elegant experimental design. The D274A mutant is validated as kinase-dead (C45, Figure 5A), and the trans-phosphorylation is clearly demonstrated (C46, Figure 5A). Controls showing that N- and C-terminal truncations don't affect activity (Figure 5-supplement 1) strengthen the interpretation. This is a key result distinguishing intermolecular from intramolecular mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Serial dilution experiments demonstrate dimer-dependent autophosphorylation: 1 \u03bcM Aurora A diluted from 200 \u03bcM stock (containing more slowly-dissociating dimer) shows much faster autophosphorylation than the same final concentration diluted from 20 \u03bcM stock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide a second independent line of evidence for dimer-dependent autophosphorylation. The experimental design cleverly exploits the slow dimer dissociation rate established by AUC (C42). The logic is sound: if autophosphorylation requires dimers and dimers dissociate slowly, then samples with more pre-formed dimer should show faster initial kinetics at the same final monomer concentration. The data (Figure 5B) support this prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "TPX2 strongly accelerates autophosphorylation via the long-lived swapped dimer, with the dimer being necessary but not sufficient for autophosphorylation (as the catalytically impaired D274A mutant shows high dimer percentage but no autophosphorylation), indicating TPX2 triggers a conformational change to a catalytically active dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 integrate kinetic data (C50, Figure 5B) with structural insights (C51) and appropriate controls (C52, Figure 4A). The logic that dimers are necessary but not sufficient is well-supported by the D274A data. The inference that TPX2 triggers conformational change (C53) is reasonable given the structural data showing active conformations in TPX2-bound dimers. The claims are internally consistent and supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The C290A mutation, designed to disrupt dimer formation based on structural analysis showing C290 contacts Y334 in the dimer but different residues in the monomer, results in a primarily monomeric protein with severely impaired autophosphorylation but nearly normal peptide phosphorylation activity once phosphorylated, with kinetic analysis of WT/C290A mixtures showing WT autophosphorylation precedes C290A phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 provide a third independent line of evidence through rational mutagenesis. The structural rationale (C54-C55, Figure 6A-B) is sound, the biochemical characterization is thorough (C56-C58, Figure 6C-E), and the mixing experiment (C59-C60, Figure 6D) provides elegant kinetic evidence. The interpretation that C290A cannot form hybrid dimers (C61) logically explains the kinetic lag. This result strongly supports the functional importance of the swapped dimer for autophosphorylation while ruling out artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In contrast to previous structures showing TPX2\u2083\u2080\u208b\u2084\u2083 as a helix protecting T288 from dephosphorylation, the new dimer structure reveals only TPX2\u2084/\u2086\u208b\u2082\u2080/\u2082\u2082 is visible with the helical portion completely missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 accurately describe differences between the current structure and previous work (Bayliss et al., 2003). The crystallographic observation of missing electron density for the helical region (C65, Figure 2A-B, Figure 7-supplement 1) is clearly documented. This discrepancy motivates the functional characterization of TPX2 fragments that follows. The comparison to prior work is appropriately cited and the structural differences are objectively reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Functional characterization demonstrates that TPX2\u2081\u208b\u2082\u2085 is necessary and sufficient for Aurora A binding (same affinity as longer constructs, no discrimination between phosphorylation states), activation, and protection from \u03bbPP-directed dephosphorylation, while TPX2\u2082\u2085\u208b\u2084\u2085 shows no binding or functional effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 are supported by multiple complementary assays: ITC for binding (C66-C68, Figure 7A), activity assays (C69-C70), and phosphatase protection assays (C71-C72, Figure 7B). The data consistently show that residues 1-25 are necessary and sufficient. The inference (C73) is well-supported by the functional data. This result revises the understanding of which TPX2 region is functionally important and provides a more minimal system for mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The interaction between Y8/Y10 of TPX2 and the hydrophobic \u03b1B/\u03b1C groove in Aurora A represents a conserved regulatory mechanism across kinase families, analogous to cyclin binding in CMGC kinases, C-terminal tail binding in MAPK and AGC kinases, and autoinhibitory or activating interactions in tyrosine kinase families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 place the Aurora A-TPX2 interaction in a broader evolutionary and mechanistic context. The structural comparisons (Figure 7-supplement 2) and extensive citations (C74-C79) support the conservation of this regulatory mechanism. The inference that Y8/Y10 are key triggers (C80) is reasonable given the structural data and evolutionary conservation. This comparative analysis strengthens the mechanistic interpretation and suggests broader implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The combined data resolve the controversy about Aurora A autophosphorylation mechanism by demonstrating intermolecular autophosphorylation, in contrast to the intramolecular mechanism proposed by Dodson et al. (2013), whose conclusions are critiqued for using indirect peptide phosphorylation assays and inappropriate Michaelis-Menten analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is a reasonable summary of the study's findings given the multiple lines of evidence presented. Claims C82-C83 provide specific methodological critiques of Dodson et al. (2013): using indirect readouts (C82) and violating Michaelis-Menten assumptions (C83). The critique about peptide concentration (3 \u03bcM) not being much higher than enzyme concentrations is valid. However, the authors' tone is somewhat dismissive, and a more detailed quantitative analysis of the Dodson et al. data would strengthen the critique. The core conclusion about intermolecular mechanism is well-supported by the current study's data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The functional validation of the domain-swapped dimer suggests that similar structures reported for other Ser/Thr kinases are mechanistically meaningful rather than crystallographic artifacts, with the current Aurora A structure being unique in showing both monomers in active conformations with one as enzyme and one as substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 provide important context by comparing to other kinase structures (Figure 3-supplement 1). The argument that functional validation in Aurora A (this study) supports the relevance of similar structures in other kinases (C86) is reasonable but somewhat speculative for those other systems. The characterization of most swapped dimers as inactive (C87) versus a few as active (C88) is supported by structural analysis. The uniqueness of the current structure (C90) in showing asymmetric active conformations is accurately stated and significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Autophosphorylation provides a 100-fold increase in Aurora A catalytic activity comparable to other Ser/Thr kinases, while TPX2 binding activates dephosphorylated Aurora A to similar levels, indicating a classic allosteric regulation mechanism where either modification shifts equilibrium toward the active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 synthesize the kinetic findings into a mechanistic model. The 100-fold activation (C91) is well-documented. The comparison to other kinases (C92) is appropriately cited. The key finding that TPX2 activation is comparable to phosphorylation (C93) is supported by the data. The allosteric model (C94) is a reasonable interpretation given that the two mechanisms are not additive and both produce similar activity levels. This represents an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Integration with in vivo data suggests two distinct Aurora A regulation mechanisms in different cellular locations: autophosphorylation-mediated activation at centrosomes and TPX2-mediated activation of dephosphorylated Aurora A at spindle microtubules, reinterpreting previous observations of dephosphorylated spindle-associated Aurora A as kinase-active rather than kinase-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 accurately cite prior in vivo observations about Aurora A phosphorylation states in different cellular locations. The reinterpretation (C98) that dephosphorylated spindle Aurora A is kinase-active (via TPX2) rather than kinase-independent is logical given the current findings. However, the proposed model (C99) of two distinct spatial regulation mechanisms, while plausible and well-reasoned, remains a hypothesis requiring direct in vivo validation. The in vitro data support the possibility but don't prove this occurs in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The temporal availability of Aurora A (S-phase through G2) preceding TPX2 (prometaphase) supports the model of sequential activation mechanisms, with autophosphorylation being the essential mode of activation as PAK1 inhibition doesn't abolish cell division while Aurora A inhibitors do.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 cite established cell cycle timing data for Aurora A and TPX2 expression. Claim C102 provides evidence that autophosphorylation is physiologically important by comparing effects of PAK1 versus Aurora A inhibition. The logic is sound: if PAK1 were the primary activator, its inhibition should have similar effects to Aurora A inhibition. The temporal correlation (C100-C101) supports but doesn't prove the sequential activation model. These claims provide important context for physiological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The autophosphorylation kinetics show an initial slow phase (via dephosphorylated dimer) followed by faster sigmoidal kinetics (phosphorylated enzyme phosphorylating dephosphorylated substrate), qualitatively consistent with Aurora A T288 phosphorylation progression during 3-4 hour G2/M in HeLa cells considering increased local concentration at centrosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 describe the biphasic autophosphorylation kinetics supported by data in Figures 5 and 6. The mechanistic interpretation (slow dimer-dimer followed by fast phosphorylated-dephosphorylated) is consistent with all the experimental evidence. Claim C105 attempts to relate in vitro kinetics to in vivo timing, appropriately noting that exact centrosomal concentrations are unknown and the comparison is qualitative. This is a reasonable attempt to assess physiological relevance while acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Background claims establishing Aurora A as a key mitotic regulator involved in centrosome maturation, spindle formation, and mitotic entry, with T288 autophosphorylation increasing activity, controversy about autophosphorylation mechanism, and Aurora A as a cancer drug target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C106-C112 provide background context with appropriate citations to establish the biological importance of Aurora A, the controversy about autophosphorylation mechanisms, and the rationale for the study. These are literature-based claims that accurately represent prior work and frame the current investigation. They are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Trans-activation through domain-swapped dimers has been proposed for multiple kinases based on crystal structures, while a recent report suggested strict intramolecular autophosphorylation for Aurora A and Chk2, creating controversy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 accurately describe the controversy in the field with appropriate citations. These claims establish the context and motivation for the current study's focus on directly measuring autophosphorylation mechanism. They represent fair characterization of prior work and the state of the field.",
+    "result_type": "MINOR"
+  }
+]

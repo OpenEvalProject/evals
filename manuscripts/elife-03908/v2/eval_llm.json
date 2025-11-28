@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C22",
+      "C34",
+      "C52"
+    ],
+    "result": "The rate of new Ebola outbreaks is high, with a mean time between outbreaks of 1.49[1.02,2.24] years. This is modeled as a memoryless Poisson process with rate \u03bb=0.67[0.45,0.98].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C22, C34, and C52 collectively establish the outbreak rate through Poisson modeling of WHO data. The statistical analysis in Figure 1A and 1C provides direct empirical support with appropriate confidence intervals. The modeling approach is mathematically sound and the data source (WHO) is authoritative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C35"
+    ],
+    "result": "The case fatality ratio (CFR) of Ebola is high with significant variability between outbreaks, modeled as a beta distribution with parameters \u03b1=6.1[2.8,11] and \u03b2=3.1[1.5,5.9].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C35 are supported by the beta distribution fit to empirical CFR data shown in Figure 1B, D, and E. The beta distribution is an appropriate choice for modeling proportions, and the wide credible intervals on the parameters appropriately capture the stated variability between outbreaks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16"
+    ],
+    "result": "For completed outbreaks, the effective reproductive ratio Rt is estimated to be 0.88[0.64,0.96] (just below 1), with geometric parameter p=0.089[0.029,0.19].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, and C16 are directly supported by Bayesian MCMC analysis of final outbreak sizes shown in Figure 2C and 2D. The model fit to data (Figure 2A, 2B) appears reasonable, and the conclusion that Rt is just below 1 is consistent with the posterior distribution. However, the interpretation of Rt as a fundamental property requires caution given potential time-varying interventions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C19"
+    ],
+    "result": "When augmenting completed outbreak data with a hypothetical outbreak of size 1000-5000, the effective reproductive ratio increases to Rt=0.94[0.87,0.99], geometric parameter p=0.11[0.054,0.21], and the probability of such a large outbreak is estimated at 0.023[0.0015,0.088].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, and C21 are supported by the augmented analysis shown in Figure 4. The methodology appropriately uses Equation 5 to incorporate the uncertain large outbreak. The shift in Rt closer to 1 is consistent with branching process theory. However, the wide credible interval on the probability (0.0015 to 0.088) indicates substantial uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C41",
+      "C48"
+    ],
+    "result": "Ebola outbreaks exhibit near-critical branching process behavior with early extinction or significant growth before extinction. Model parameters are identifiable from final size data, as demonstrated through simulation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C41, and C48 are supported by the simulation study shown in Figure 3. Figure 3A demonstrates the characteristic bimodal behavior of near-critical processes, and Figure 3B shows clear parameter identifiability through likelihood contours. This addresses concerns raised in the literature (C40) about using final size data for emerging diseases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The analysis uses WHO data on 24 completed Ebola outbreaks since 1976, which arose from zoonotic transmission. The 2014 outbreak was the largest to date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C6, and C33 are supported by citations to WHO data sources. These provide the empirical foundation for the analysis. The claims about zoonotic origin represent established scientific understanding at the time of writing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C46",
+      "C47"
+    ],
+    "result": "Bayesian MCMC with uninformative priors was used for model fitting, with fast convergence independent of initial conditions and no multimodality observed in parameter spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C46, and C47 describe the computational methodology. The use of uninformative priors is appropriate for this exploratory analysis. The statements about convergence and lack of multimodality are supported by the low-dimensional parameter spaces allowing comprehensive sweeps. However, specific convergence diagnostics (e.g., Gelman-Rubin statistics) are not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Small unreported outbreaks may exist but there is no strong evidence for overdispersal beyond that implied by geometric distributions in the current data. Future work could incorporate explicit overdispersal parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 is speculative about data completeness, C30 suggests future methodological improvements, and C31 states no evidence for additional overdispersal was found. However, the manuscript does not present formal model comparison tests (e.g., likelihood ratio tests, AIC/BIC) to support the claim that overdispersal parameters are unnecessary, making this conclusion uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The results support appeals for greater resources to respond to the ongoing epidemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is a policy inference drawn from the scientific findings. Given the high outbreak rate, high CFR, and Rt near 1 (which could exceed 1 under certain conditions), this conclusion logically follows from the results, though it represents an interpretation rather than a direct scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C3"
+    ],
+    "result": "Ebola is a deadly, often fatal disease with no vaccine or specific treatment that causes frequent outbreaks in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C3 represent general knowledge statements about Ebola that were accurate at the time of writing (2014). These are supported by the subsequent quantitative analysis in the manuscript and established medical literature. Note: vaccines have since been developed, making C3 outdated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Similar R\u2080 estimates to those from 1995 and 2000 outbreaks were obtained for the ongoing 2014 outbreak by other researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by citation to Althaus (2014). This contextualizes the current work within the broader literature on Ebola transmission dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Doubts have been raised in the literature about using final size data for emerging diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by citation to Drake (2005) and motivates the identifiability analysis performed in this study. This represents appropriate acknowledgment of methodological concerns in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "MATLAB code to reproduce the analysis is publicly available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 provides a specific URL for code availability, supporting reproducibility. This is a methodological strength, though the current accessibility of the repository cannot be verified from the manuscript alone.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study used centrifugal elutriation combined with mass spectrometry-based proteomics and RNA-Seq to analyze protein and mRNA expression across the cell cycle in NB4 cells. Six elutriated fractions were collected, proteins were digested with trypsin/LysC and fractionated before MS analysis, achieving >10,000 protein identifications with ~38% mean sequence coverage. RNA-Seq quantified transcripts from 12,078 protein-coding genes, with 9,667 genes measured across three pooled elutriated fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C33 describe the experimental workflow and quantitative outcomes. The methodology is clearly documented with specific technical details (C28-C31), and the quantitative results (C30, C32-C33) are directly stated as experimental findings. The approach is internally consistent and the depth of coverage is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C158",
+      "C159"
+    ],
+    "result": "Centrifugal elutriation successfully enriched NB4 cells into six fractions representing different cell cycle phases (F1-F2: G1; F3-F4: S; F5-F6: G2&M), validated by flow cytometry and immunoblotting of cell cycle markers. Elutriated cells remained viable with minimal perturbation, and the methodology showed high reproducibility (Pearson correlation >0.97 for technical and biological replicates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 and C158-C159 are supported by multiple orthogonal validation methods: flow cytometry with Watson model fitting (C34-C36), immunoblot analysis of known markers (C37-C38), viability assays (C39-C40), and statistical correlation analysis (C41-C42). The convergence of evidence from different techniques strongly supports the effectiveness and reproducibility of the elutriation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The proteomics workflow identified 154,985 peptides corresponding to 10,929 protein groups (>10,000 with \u22652 peptides), representing >9,000 genes. Protein abundances spanned eight orders of magnitude in MS intensity (corresponding to four orders of magnitude in copy number). Combined use of Lys-C and Trypsin-DD proteases yielded complementary peptide coverage, improving mean sequence coverage by >8% to achieve ~38% for >10,000 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C57 describe the depth and quality of proteomic coverage. The quantitative metrics are clearly stated (C43-C45, C50-C53, C56-C57) and the complementarity of the dual-protease strategy is demonstrated (C51, C54-C56). The dynamic range measurements (C46-C47) are supported by citation and consistent with the data shown in Figure 3A. The abundance distribution analysis (C48-C49) follows established patterns from previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The NB4 proteome is highly representative of the human proteome (r>0.98 correlation for GO terms and amino acid frequencies). Meta-analysis of 14 cell line proteomes identified a core proteome of ~3,000 genes expressed across all lines, enriched in RNA processing, translation, cell cycle, and DNA metabolism. Approximately 10% of NB4-detected proteins are cell line-specific, enriched in transcription factors, immune response proteins, and myeloid differentiation factors including RAR\u03b1, RXR\u03b2, CEBP\u03b1, GFI-1, and PU.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 describe comparative proteome analysis. The representativeness assessment (C58) is quantitatively supported by high correlation coefficients. The meta-analysis (C59-C63) integrates data from multiple published studies with appropriate citations. The identification of NB4-specific proteins (C64-C66) is based on direct comparison and includes specific examples of known myeloid markers, providing biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Cell line-specific protein expression patterns reflect tissue origin and culture conditions. HeLa/MCF7-specific proteins are enriched in cell adhesion genes (cadherins, integrins), while Jurkat-T-specific proteins include T-cell markers (CD1, CD3, CD4). Among 87 proteins shared between myeloid K562 and NB4 but absent in MCF7/HeLa, 22 are transcription factors (including SP1 and JUN), with network analysis revealing regulatory cross-talk. SP1 shows high expression in hematopoietic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 describe cell type-specific protein expression patterns. The enrichment analyses (C67-C68) are based on GO term analysis shown in Figure 4A. The myeloid-specific analysis (C69-C71) identifies specific transcription factors and demonstrates regulatory networks using MSigDB database. The SP1 tissue expression pattern (C72) is supported by Human Protein Atlas data. The conclusions (C73-C74) are reasonable inferences from the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Analysis of 6,505 high-quality proteins (>22 peptides/protein, >45% sequence coverage) identified 358 proteins (5.5%) with \u22652-fold abundance variation across the cell cycle. This threshold enriched for cell cycle-associated GO terms (p<<0.01). Approximately 50% of cell cycle-regulated proteins peak in G2&M, 27% in S phase, 17% in G1, and 7% show bimodal peaks in G2&M and G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 describe the identification and distribution of cell cycle-regulated proteins. The data filtering criteria (C75-C76) are clearly stated and ensure high-quality measurements. The threshold selection (C77) is justified by GO term enrichment. The quantitative distribution (C78-C82) is directly shown in Figure 5C. However, the relatively low proportion of cell cycle-regulated proteins (5.5%) compared to some previous studies (discussed in C160-C163) may reflect methodological differences or biological variation between cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "Cell cycle-regulated proteins show phase-specific expression patterns consistent with known biology: ORC1 and CDT1 peak in G1 (origin licensing), UNG and Cyclin A2 peak in S phase (DNA repair/replication), and Aurora kinase B and Cyclins B1/B2 peak in G2&M (mitosis). Promoter analysis reveals enrichment of E2F binding sites in S-phase proteins, NF-Y sites in G2&M proteins, and STAT3 sites in G2&M+G1 proteins. E2F6 and E2F8 proteins themselves peak in S and G2&M phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 describe specific examples of cell cycle-regulated proteins and transcription factor enrichment patterns. The protein examples (C83-C85, C88) are well-established cell cycle regulators, providing validation of the approach. The transcription factor binding site enrichment analysis (C86, C89, C91) shown in Table 1 provides mechanistic insight. The identification of E2F6/E2F8 regulation (C88) is consistent with recent literature. The observation that 'cell cycle' GO term enrichment is limited to S and G2&M clusters (C92) may reflect annotation bias rather than biological reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "High sequence coverage enabled isoform-specific analysis, mapping peptides to 33,575 protein isoforms. Three genes show isoform-specific cell cycle regulation: CASC4 (isoforms 1-2 decrease G1\u2192G2&M while isoform 3 remains constant), PPFIBP1 (isoforms 1-4 vary while isoform 5 is constant, with D-box motifs only in regulated isoforms), and SDCCAG8 (isoforms 1,3,4 decrease G1\u2192G2&M while isoform 2 peaks in S-phase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 demonstrate isoform-specific regulation. The mapping to 33,575 isoforms (C93) shows comprehensive coverage. The three examples (C94-C98) are well-documented in Figure 6 with clear differential expression patterns. The identification of D-box motifs in regulated PPFIBP1 isoforms (C97) provides mechanistic insight. However, the authors acknowledge (C95) that aggregating isoform data would mask this regulation, highlighting both the value of high coverage and the limitations of conventional analysis approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Phosphoproteomics analysis identified 2,761 phosphopeptides (28% multiply phosphorylated), with 64% on Ser, 17% on Thr, and 16% on Tyr. Among sites detected in all six fractions, 89 phosphopeptides (3%, mapping to 79 proteins) showed \u22652-fold cell cycle variation. Only four cell cycle-regulated phosphosites mapped to proteins with cell cycle-regulated abundance. Most regulated phosphosites were on Ser (87%), with the only regulated pTyr being CDK2/CDK1 Tyr15, known to modulate kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 describe phosphorylation analysis. The quantitative metrics (C99-C102, C104) are clearly stated. The observation that most regulated phosphosites are on proteins with constant abundance (C103) indicates post-translational regulation independent of protein levels. The identification of CDK2/CDK1 Tyr15 (C105-C106) provides validation, as this is a well-characterized regulatory site. However, the relatively low number of regulated phosphosites (89) may reflect the lack of phosphopeptide enrichment in the workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "RNA-Seq detected mRNA expression from 12,078 genes, with 9,667 genes quantified across three pooled elutriated fractions. Technical and biological replicates showed high correlation (r>0.90), though with higher variance than proteomics replicates. The high reproducibility indicates that observed protein-mRNA differences predominantly represent biological variation rather than technical error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 describe RNA-Seq data quality. The quantitative results (C107-C108) are directly stated. The correlation analysis (C109) shown in Figure 8\u2014figure supplement 1 demonstrates reproducibility. The conclusion (C110) that variance reflects biological differences is reasonable given the high technical reproducibility, though this remains an inference that cannot be definitively proven without additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Direct comparison of 6,170 genes showed positive correlation between protein and mRNA levels (Spearman r=0.63), but the moderate correlation indicates mRNA alone is not a reliable predictor of protein abundance for many genes. This correlation is within the upper quartile of previously reported values and remains constant across G1, S, and G2&M phases (r=0.65 for each), suggesting little global change in protein-mRNA relationships across interphase and a large contribution from post-transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 describe the protein-mRNA relationship. The correlation analysis (C111-C113) is clearly shown in Figure 8A with appropriate statistical measures. The comparison to literature (C114) provides context with multiple citations. The phase-specific analysis (C115) shown in Figure 8B supports the conclusion of constant correlation. However, the inference about post-transcriptional mechanisms (C116) is reasonable but indirect\u2014moderate correlation could also reflect measurement noise, temporal delays, or other factors not fully accounted for.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "For cell cycle-regulated proteins, protein-mRNA correlation is weaker (r=0.47) than for all genes (r=0.63-0.65), suggesting greater post-transcriptional regulation. Correlation varies by peak phase: moderate for G1/S-peaking proteins (r=0.57) but poor for G2&M-peaking (r=0.31) and G2&M+G1-peaking proteins (r=0.20). Thus, mRNA levels are particularly poor predictors of protein abundance for proteins peaking in G2&M or G2&M+G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 describe phase-dependent protein-mRNA relationships. The correlation analyses (C117, C119-C120) are shown in Figures 8C-D with clear quantitative differences. The conclusions (C118, C121-C123) logically follow from the data. The poor correlation for G2&M-peaking proteins is consistent with known post-transcriptional regulation mechanisms (e.g., APC/C-mediated degradation). However, the analysis could be strengthened by considering temporal delays between transcription and translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Nearly half of cell cycle-regulated proteins show moderate-to-high protein-mRNA correlation (r>0.5), exemplified by Cyclin A2 (highly correlated, with known coordinated transcriptional and post-transcriptional regulation). However, over half show low correlation (r<0.5), with Cdt1 showing anti-correlation: Cdt1 mRNA peaks in S-phase where protein is lowest, confirmed by immunoblot and consistent with geminin-mediated regulation. Thus, for a large fraction of genes, mRNA abundance is not a reliable predictor of protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C133 provide specific examples of protein-mRNA relationships. The Cyclin A2 example (C124-C126) is well-established in the literature and serves as a positive control. The Cdt1 example (C129-C132) is particularly striking, showing anti-correlation validated by immunoblot (Figure 8G) and consistent with known biology. The quantitative distribution (C127-C128) is shown in Figure 8E. The overall conclusion (C133) is well-supported, though the term 'surprisingly large fraction' is somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Among 358 cell cycle-regulated proteins, 31 show coordinated protein and mRNA regulation (>1.5-fold mRNA variation), with highly correlated expression profiles (r=0.93 across fractions; r=0.76-0.84 in individual phases). All 31 contain APC/C degradation motifs (KEN or RxxL; 18/31 contain both), 28/31 were previously annotated as cell cycle-regulated, and 26/31 (84%) have NF-Y binding sites in their promoters (significantly enriched, p=2.1\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 identify a subset of genes with coordinated regulation. The quantitative metrics (C134-C136) are clearly stated and shown in Figures 9A-C. The sequence analysis (C137-C138) provides mechanistic insight linking to APC/C degradation. The enrichment of NF-Y binding sites (C140) is statistically significant. The high proportion of previously annotated genes (C139) validates the approach. This represents a well-characterized subset with convergent evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Three previously unannotated cell cycle-regulated genes were identified: ARHGAP11A, ZNF646, and FAM125B. ARHGAP11A (a predicted RhoGAP important for cytokinetic furrow formation) shows coordinated protein and mRNA expression peaking in G2&M and lowest in G1, confirmed by MS, RNA-Seq, and immunoblot. Functional validation shows ARHGAP11A levels are regulated by APC/C: depletion of Cdh1/Cdc20 stabilizes ARHGAP11A in U2OS and RPE-1 cells, and Cdh1 depletion stabilizes ARHGAP11A in G1-arrested RPE-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C154 provide detailed validation of ARHGAP11A as a novel cell cycle-regulated protein. The expression patterns (C144-C147) are confirmed by multiple methods (MS, RNA-Seq, immunoblot in Figure 10A-B). The functional validation (C148-C153) using siRNA depletion in multiple cell lines (U2OS, RPE-1) with appropriate controls (cyclin B1 stabilization) provides strong evidence for APC/C-mediated regulation. The conclusion (C154) is well-supported. This represents a complete characterization from discovery to mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "All analyzed protein and RNA data have been incorporated into the Encyclopedia of Proteome Dynamics (EPD), a publicly-available, searchable web resource that aggregates data from this study with previous large-scale studies on protein complexes, subcellular localization, and turnover in HeLa and U2OS cells, facilitating cross-correlation and analysis of protein properties across multidimensional proteomics studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 describe data dissemination. The creation of the EPD database (C155-C156) is clearly documented with URLs provided. The functionality (C157) is demonstrated in Figure 11. This represents good scientific practice for data sharing, though the long-term maintenance and accessibility of such resources can be uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Recent technological advances in mass spectrometry and nucleic acid sequencing have enabled unprecedented depth and sensitivity in analyzing cellular protein and RNA levels. Previous studies have shown that several laboratories independently identified ~10,000 proteins in human cell lines, and that RNA levels alone are not uniformly predictive of protein levels in human cells and model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C9 provide background context supported by multiple citations to established literature. These are well-accepted facts in the field that set the stage for the current study. The claims are appropriately referenced and represent accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The cell cycle is a conserved, highly regulated process in eukaryotes, categorized into G1, S, G2, and M phases, with regulation important for controlling growth, proliferation, and coordinating major cellular events. Previous studies have used various synchronization methods to study cell cycle gene expression in yeast and mammalian cells, but these methods may cause side effects. There is tissue-specific plasticity in cell cycle regulation, and large-scale studies in myeloid cells are sparse, with no previous large-scale studies on myeloid cell cycle gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 provide background on cell cycle biology and previous research approaches. These are well-established facts (C10-C14) and accurate summaries of prior literature (C15-C21) supported by appropriate citations. The identification of a gap in the literature (C21-C22) provides justification for the current study. These claims accurately represent the state of knowledge and research needs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "NB4 cells, derived from the myeloid lineage in an undifferentiated promyelocyte state, have been widely used for studying acute promyelocytic leukemia and myeloid biology. This study characterized the NB4 proteome to >10,000 proteins with high sequence coverage, analyzed cell cycle-regulated gene expression at protein and mRNA levels, and identified subsets of genes with cell cycle-regulated abundance, including novel factors, isoforms, and phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe the cell line choice and study overview. The characterization of NB4 cells (C23-C24) is supported by citations. The summary of findings (C25-C27) accurately reflects the experimental work described in detail elsewhere. These claims provide appropriate context and overview.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C57"
+    ],
+    "result": "This dataset represents one of the deepest surveys to date of gene expression in human cells, with combined mean sequence coverage of ~38% for over 10,000 proteins, providing one of the most detailed protein expression maps reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C57 make comparative statements about the depth of the study. The quantitative metrics (>10,000 proteins, ~38% coverage) are well-documented in the data. The comparative claim 'one of the deepest/most detailed' is reasonable given the metrics, though such statements are inherently subjective and depend on the specific comparison set. The claim is supported by the data but represents a qualitative assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The proportion of cell cycle-regulated proteins in NB4 cells (~5%) is lower than estimates from HeLa cells (~40% with thymidine/nocodazole synchronization, ~15% with thymidine alone). These differences may reflect technical differences, analysis criteria, growth conditions, quantitation methods, synchronization approaches, and/or tissue-specific plasticity in cell cycle regulation between cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C163 compare results to previous studies and speculate on reasons for differences. The comparison (C160-C161) is accurate based on cited literature. However, the proposed explanations (C162-C163) are speculative\u2014while reasonable, they are not tested in this study. The lower proportion could also reflect the minimal perturbation approach (avoiding synchronization artifacts) or genuine biological differences. Without direct experimental comparison, the reasons for differences remain uncertain.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C16",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "GEMOT is a novel three-stage computational method that constructs three-layer modules consisting of genetic variants, driver transcripts (causative transcripts), and traits. The method uses a stepwise heuristic approach to reduce computational burden and identify causative relationships rather than all types of relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C26 collectively describe the GEMOT algorithm structure and methodology. The three-stage approach (bipartite \u2192 tripartite \u2192 refined modules) is clearly documented with figures, and the focus on causative relationships through driver transcripts is well-defined. The computational efficiency claim (C16) is supported by simulation comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Application of GEMOT to 1738 traits across BXD mouse strains with myeloid cell gene expression data identified 40 bipartite modules, 11 tripartite modules, and 8 mature GEMOT modules with high statistical significance (FDR < 10^-3, p < 0.01 for non-random generation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C34 describe the application and statistical validation of GEMOT. The permutation testing (C30-C32) provides appropriate negative controls, and the statistical significance measures (C27-C29, C33-C34) are clearly reported with proper FDR correction. The dataset description (C17-C19) is adequately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C74"
+    ],
+    "result": "Module no. 2 identifies Klf7 as a key driver gene affecting 17 morphine-response behavioral traits through 32 driver transcripts organized in two groups (Group I: 21 genes negatively correlated with traits; Group II: 11 genes positively correlated). Klf7 shows significantly stronger causative effects on other module transcripts than Idh1 (p < 10^-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C68, C74 describe module no. 2's structure and Klf7's central role. The computational predictions are supported by strong statistical evidence (C57: FDR < 6\u00d710^-5; C66: p < 10^-7), clear correlation patterns (C53: |r| = 0.6-0.99), and consistent genetic effects across groups (C59-C62). The hierarchical causality analysis distinguishing Klf7 from Idh1 is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Experimental validation through Klf7 knockdown and overexpression in bone marrow cells confirms GEMOT predictions: knockdown significantly downregulates Group I transcripts (p < 1.5\u00d710^-5, FDR < 5\u00d710^-5) with no effect on Group II (p > 0.32), while overexpression shows opposite effects (Group II downregulation: p < 0.05, FDR < 0.06; Group I upregulation: p < 0.002, FDR < 0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 provide experimental validation of computational predictions. The perturbation experiments show statistically significant and directionally consistent effects matching the predicted activator/repressor roles of Klf7. The use of both knockdown and overexpression provides bidirectional validation. Sample sizes and statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C96",
+      "C103"
+    ],
+    "result": "GEMOT modules show tissue-specific causative effects: Klf7's effect on morphine response (module no. 2), Eya3/Cd52's effects on pain and eye traits (module no. 3), and Ythdf2/Aldh6a1's effects (module no. 4) are all specific to myeloid cells and not observed in brain, eye, liver, or lymphoid tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C96, C103 demonstrate tissue specificity through systematic analysis across multiple tissues. The myeloid-specific causality is shown across different modules and validated along the entire myeloid lineage (C96), providing strong evidence for tissue-specific mechanisms. This is supported by referenced figures showing causality matrices across tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C87",
+      "C89"
+    ],
+    "result": "The study suggests that behavioral responses to morphine are affected not only by neuronal activity but also through immune system components, specifically myeloid cells. This represents a novel finding as Klf7's role has been primarily reported in neurons, but here shows myeloid-specific causative effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 present a novel mechanistic insight. The contrast with prior knowledge (C87) is appropriately cited, the myeloid-specific effect is demonstrated (C88), and the temporal concordance with neutrophil infiltration (C89) provides supporting evidence. However, the mechanism remains somewhat speculative and would benefit from additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "Module no. 3 identifies novel connections among five distinct traits (pain response, lens weight, eye weight, ethanol response) with strong intercorrelations (|r| = 0.67-0.9), mediated by cis-associated drivers Eya3 and Cd52 acting through myeloid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 describe module no. 3's composition and validation. The trait correlations are quantified (C92), the driver predictions are supported by known gene functions (C94-C95 with citations), and tissue specificity is demonstrated (C96). The module represents a novel finding connecting disparate trait types through a common mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Module no. 4 demonstrates GEMOT's ability to identify shared mechanisms among weakly correlated traits (|r| = 0.01-0.58), including hippocampal structures, cocaine response, liver tumors, and hematopoietic stem cells, with Ythdf2 and Aldh6a1 as top drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 describe module no. 4's unique characteristic of weak trait correlations but shared drivers. The driver predictions are validated by literature support (C101-C102 with recent citations). This demonstrates GEMOT's capability beyond identifying strongly correlated trait groups, though the biological interpretation of such diverse traits sharing mechanisms requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Simulation studies demonstrate GEMOT's superior performance in identifying traits sharing causal transcripts, with best accuracy at noise levels 0.25-1 (biologically relevant range), maintained accuracy with increasing trait numbers, and superiority over compared methods (Hageman, QPSO, QTLNet) due to its focus on causative relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 report systematic simulation validation. The performance evaluation uses appropriate synthetic data with varying parameters (noise levels, trait numbers), includes proper comparisons with existing methods, and demonstrates GEMOT's advantages in the biologically relevant parameter range (C105). The explanation for superior performance (C109) is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "GEMOT's trait pair correlations are significantly stronger than chance (p < 10^-200), comparable to gene-based INVAMOD, but weaker than trait-based HC (p < 10^-160). However, GEMOT outperforms gene-based and random methods in transcript support (p < 10^-30 and p < 10^-50) and is comparable to trait-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 provide comparative performance evaluation. The statistical comparisons are appropriate, and the explanation for HC's stronger correlations (C47: direct optimization) is valid. GEMOT's strength in transcript support demonstrates its unique value in identifying mechanistic relationships rather than just correlated traits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "GEMOT modules show varying trait correlation patterns (strong in modules 1-3, 6-8; moderate/weak in 4-5) with overlapping trait collections but distinct genetic and molecular mechanisms, demonstrating GEMOT's ability to predict multiple distinct mechanisms for the same traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 characterize the global properties of identified modules. The observation of non-overlapping drivers/variants despite overlapping traits (C39) is well-supported by referenced figures and demonstrates a key capability of GEMOT. The varying correlation patterns (C35-C36) show the method's flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Module no. 2 drivers are supported by extensive literature: p35/Cdk5 phosphorylates opioid receptors, Idh1/Ggt1 control morphine-GSH adduct, drivers affect cell migration pathways, and top Klf7-mediated drivers significantly affect glioblastoma patient survival (p < 1\u00d710^-4, FDR < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C86 provide literature validation and human disease relevance. The mechanistic connections are well-cited (C75-C81, C83-C86), and the glioblastoma survival analysis (C82) provides independent validation in human data. However, these are primarily supporting evidence from prior work rather than novel findings, though the integration is valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "GEMOT results reveal three types of trait organization: (i) tightly related traits sharing mechanisms, (ii) distinct traits sharing mechanisms without high correlations, and (iii) overlapping traits with different mechanisms. GEMOT is superior to previous methods in validating causative transcripts and identifying trait groups sharing underlying transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 summarize the main findings and methodological advantages. The three types of organization are demonstrated through specific modules (C110), and the superiority claims are supported by simulation results (C112) and methodological differences (C111). This represents a valid synthesis of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "GEMOT is more scalable than alternative network reconstruction methods in terms of running time and accuracy under increased network sizes, though it constructs networks only partially rather than completely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 compare scalability with network reconstruction methods. The trade-off between scalability and completeness is honestly acknowledged (C114), and the superior performance is demonstrated with referenced figures (C115). This represents a fair assessment of GEMOT's computational characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The study is motivated by the recognition that disease co-morbidity is often determined by shared genetic/molecular mechanisms, and that understanding these mechanisms enables improved disease classification, treatment, and drug repurposing. Existing trait-based and gene-based approaches have significant limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 establish the scientific context and motivation. The background claims are appropriately cited (C1, C5, C7, C8), the potential applications are reasonable (C6-C8), and the critiques of existing methods (C9-C12) are logical and set up the need for GEMOT. This is standard background material.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Many GEMOT findings were supported by independent knowledge or data, and tissue specificity of modules was demonstrated through post-processing analysis of gene expression in additional tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are general statements about validation approaches used throughout the study. These are supported by the specific validation results described in other claim groups (e.g., C69-C73 for experimental validation, C75-C86 for literature support, C88-C103 for tissue specificity). These are summary statements rather than specific results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "GEMOT modules include both collections of tightly related traits (modules 1, 2: morphine and ethanol responses measured at different time points) and previously unknown connections between distinct traits (modules 3, 4, 5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 characterize the types of modules identified. The examples are specific and demonstrate GEMOT's dual capability of confirming expected relationships and discovering novel ones. This is supported by the detailed analyses of individual modules presented elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Future directions include applying GEMOT to multi-tissue data, other molecular data types (cytokines, lipids), additional strains for resolving linkage disequilibrium, characterizing gene-gene interactions, and constructing internal causative relationships. GEMOT has limitations in distinguishing regulatory circuits and provides hypotheses for experimental investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C125 discuss future directions and limitations. These are reasonable extensions (C116-C122) and honest acknowledgments of limitations (C123-C124). The generalizability claim (C125) is supported by the method's design. These are appropriate discussion points rather than results requiring validation.",
+    "result_type": "MINOR"
+  }
+]

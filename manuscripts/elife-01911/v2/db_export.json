@@ -1,0 +1,2116 @@
+{
+  "submission": {
+    "id": "41a8a696-7409-4b28-905b-6a26fce829ce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:30:14.509524Z",
+    "updated_at": "2025-11-28T20:30:14.509524Z"
+  },
+  "content": [
+    {
+      "id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "submission_id": "41a8a696-7409-4b28-905b-6a26fce829ce",
+      "content_type": "manuscript",
+      "content_text": "# Targeted genome editing by lentiviral protein transduction of zinc-finger and TAL-effector nucleases\n\n## Authors\n\n- Yujia Cai<sup>1</sup>\n- Rasmus O Bak<sup>1</sup>\n- Jacob Giehm Mikkelsen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biomedicine Aarhus University Aarhus Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nFuture therapeutic use of engineered site-directed nucleases, like zinc-finger nucleases (ZFNs) and transcription activator-like effector nucleases (TALENs), relies on safe and effective means of delivering nucleases to cells. In this study, we adapt lentiviral vectors as carriers of designer nuclease proteins, providing efficient targeted gene disruption in vector-treated cell lines and primary cells. By co-packaging pairs of ZFN proteins with donor RNA in \u2018all-in-one\u2019 lentiviral particles, we co-deliver ZFN proteins and the donor template for homology-directed repair leading to targeted DNA insertion and gene correction. Comparative studies of ZFN activity in a predetermined target locus and a known nearby off-target locus demonstrate reduced off-target activity after ZFN protein transduction relative to conventional delivery approaches. Additionally, TALEN proteins are added to the repertoire of custom-designed nucleases that can be delivered by protein transduction. Altogether, our findings generate a new platform for genome engineering based on efficient and potentially safer delivery of programmable nucleases.\n\n## Introduction\n\nThe capacity of designed nucleases, like ZFNs and TALENs, to generate DNA double-stranded breaks (DSBs) at desired positions in the genome has created optimism for therapeutic translation of locus-directed genome engineering. ZFNs and TALENs are chimeric nucleases composed of a custom-designed DNA binding domain fused to the DNA-cleavage domain from the FokI endonuclease that upon dimer formation cleaves the DNA. ZFN- and TALEN-induced DSBs trigger genome editing through cellular repair mechanisms involving either error-prone non-homologous end joining (NHEJ) or homologous recombination (HR) with an available DNA donor template. Designer nucleases have broad applications in biological experimentation (Urnov et al., 2010; Bogdanove and Voytas, 2011) and have been successfully utilized for the production of gene knockout model animals (Doyon et al., 2008; Geurts et al., 2009; Tesson et al., 2011) and in emerging gene therapies (Perez et al., 2008; Li et al., 2011, 2013; Sun et al., 2012).\n\nThe safety of designer nucleases is of major concern in relation to their use in treatment of human diseases. Thus far, ZFNs and TALENs have been administered to cells by transfection or electroporation of nucleic acids, DNA or RNA, encoding a pair of nuclease proteins (Urnov et al., 2005; Miller et al., 2011; Carlson et al., 2012) or by exploiting viral gene vehicles such as integrase-deficient lentiviral vectors (IDLVs) (Lombardo et al., 2007), adeno-associated virus-derived vectors (AAV vectors) (Ellis et al., 2013), or adenoviral vectors (Holkers et al., 2013). Successful administration of ZFN- or TALEN-encoding genes leads to high intracellular levels of nucleases and furthermore imposes a risk of random insertion in the genome, resulting potentially in prolonged nuclease expression and accumulating events of off-target cleavage. Ideally, ZFNs and TALENs are provided in a \u2018hit-and-run\u2019 fashion allowing short-term and dose-controllable nuclease activity without losing the effectiveness of creating locus-directed DSBs. Towards this goal, ZFNs have been fused to destabilizing domains regulated by small molecules to attenuate ZFN toxicity (Pruett-Miller et al., 2009). Moreover, by exploiting the cell-penetrating capability of ZFNs, targeted gene disruption has recently been achieved by direct cellular delivery of purified ZFN proteins (Gaj et al., 2012). Although such approach may require multiple treatments due to the reduced cellular uptake of proteins (Mellert et al., 2012), recent findings suggest that ZFN uptake may be further improved by ligand-mediated endocytosis (Chen et al., 2013). However, for gene correction by homology-directed repair such strategies would need to be combined with other means of delivering the donor template.\n\nIt has been known for decades that retroviruses can tolerate the incorporation of heterologous proteins (Jones et al., 1990; Weldon et al., 1990). Lentiviral particles (LPs) have been engineered to carry foreign proteins for the purpose of visualizing the intracellular behavior of the virus during infection (McDonald et al., 2002; Jouvenet et al., 2008) and altering the viral integration profile (Bushman, 1994; Goulaouic and Chow, 1996; Bushman and Miller, 1997), as well as for ferrying antiviral (Okui et al., 2000; Ao et al., 2008) and antitumor (Link et al., 2006; Miyauchi et al., 2012) protein therapeutics. As the delicate structural composition of HIV-1-derived lentiviral particles is easily disturbed by an inappropriate load of nonviral proteins, leading to suboptimal vector yields and/or reduced transduction capability, various strategies for transducing heterologous protein cargo have been scrutinized. In early strategies, the accessory HIV-1 protein Vpr was adapted as a carrier of fused proteins (Wu et al., 1995). Recently, Vpr fusions have been shown also to ferry Cre recombinase (Michel et al., 2010) and I-SceI meganuclease (Izmiryan et al., 2011) into transduced cells. However, HIV-1 virions incorporate relatively few copies of Vpr (estimated 700 copies Vpr per virion [Swanson and Malim, 2008]), and the therapeutic potential of such approach may be hampered further by the known toxicity of the Vpr protein (Tachiwana et al., 2006). Alternatively, nonviral proteins may be packaged in LPs as part of the Gag polypeptide, as was previously shown for reporter proteins like GFP (Aoki et al., 2011) and the apoptosis-inducing caspase 3 protein (Miyauchi et al., 2012). During virion maturation, Gag is processed by the viral proteins into shorter proteins constituting the structural\u2014and most abundant\u2014proteins of the virus particle. It is estimated that each virion contains 5000 copies of Gag and 250 copies of GagPol (Swanson and Malim, 2008). We recently adapted LPs for the delivery of the piggybac DNA transposase (Cai et al., 2014). The transposase was released from Gag in the virus particles in a protease-dependent manner and found to be able to facilitate efficient DNA transposition in transduced cells. In yet another strategy, heterologous proteins fused to the integrase in the Pol region of the GagPol polypeptide were successfully delivered by protein transduction (Schenkwein et al., 2010).\n\nIn this study, we describe the use of lentivirus-derived particles as carriers of designer nucleases for safe administration of ZFN and TALEN proteins fused to lentiviral Gag precursors. We produce ZFN-loaded lentiviral particles that induce high-efficiency gene disruption with a favorable on-target/off-target ratio in safe genomic harbors like the CCR5 locus. Also, gene disruption and repair is evident in cells treated with particles carrying TALEN proteins. Successful incorporation of nuclease proteins within lentiviral particles allows co-delivery of nucleases and the donor template for homology-directed repair. Our findings demonstrate targeted and programmable gene repair in the human genome by delivery of both \u2018scissors\u2019 and \u2018patch\u2019 in a single combined protein and gene vehicle.\n\n## Results\n\n### Incorporation, processing, and transduction of ZFNs in LPs\n\nTo incorporate ZFN proteins in LPs, we fused ZFNs to the N-terminus of Gag containing also an intervening heterologous phospholipase C-\u03b41 pleckstrin homology (PH) domain thought to promote the recruitment of Gag and GagPol to the membrane (Urano et al., 2008). We began by incorporating ZFNs targeting the egfp reporter gene (Urnov et al., 2005) into the gag gene of a packaging construct harboring the IN D64V mutation (Figure 1A), rendering the viral integrase (IN) incapable of catalyzing vector insertion. An HIV-1 protease cleavage site (SQNY/PIVQ) was included between the ZFN and the PH domain to allow the release of functional ZFN proteins during particle maturation. LPs harboring HA-tagged left and right egfp-targeting ZFNs, respectively, were produced separately and analyzed for their particle content by Western blot analysis (Figure 1B,C). For both ZFN-loaded LPs, we detected HA-tagged ZFNs of the predicted, full-length size (\u223c37.5 kDa), demonstrating that the majority of the virion-associated ZFNs was correctly released from the Gag and GagPol polypeptides during particle maturation. The identity of this band was confirmed by control analyses including plasmid-encoded HA-tagged ZFN protein (Figure 1\u2014figure supplement 1). Nevertheless, both longer and shorter forms of the ZFNs were evident (indicated by ZFN* in Figure 1B,C), suggesting that processing was not complete and that proteolytic cleavage had also occurred outside the inserted cleavage site, despite the fact that neither the ZFNs nor the PH domain contained naive HIV-1 cleavage sites. Release of ZFN and p24 (Figure 1B,C, left and right panels, respectively) from ZFN-PH-GagPol polypeptides was inhibited by treatment of the virus-producing cells with the HIV-1 protease inhibitor Saquinavir (SQV), confirming that polypeptide cleavage, and the resulting release of ZFN proteins, was dependent on the HIV-1 protease.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01911/elife-01911-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the composition of Gag and GagPol polypeptides encoded by ZFN-encoding packaging constructs (top) and the production of ZFN-loaded LPs (bottom). Gag is composed of the N-terminal ZFN domain, an HIV-1 cleavage site (SQNY/PIVQ), the phospholipase C-\u03b41 pleckstrin homology (PH) domain, matrix (MA), capsid (CA), nucleocapsid (NC), and p6, whereas Pol consists of protease (PR), reverse transcriptase (RT), and integrase harboring the D64V mutation (IN-D64V). LPs harboring two types of ZFNs (indicated by blue and green dots inside the virion) are produced by co-transfecting 293T cells with pMD.2G (encoding VSV-G surface protein) and pZFNL-PH-gagpol-D64V and pZFNR-PH-gagpol-D64V encoding ZFNL and ZFNR, respectively. (B) and (C) Analysis of the contents of LPs by Western blot using HA- and p24-specific antibodies. HA-tagged ZFNs were incorporated in this LP batch, allowing detection of ZFNs and ZFN derivatives (left panel). ZFNs originating from non-intentional processing or cleavage at cryptic HIV-1 cleavage sites are indicated by arrows labeled with ZFN*. The same membrane was stripped and re-used for detection of p24 (right panels). It is indicated below each panel whether 0.2 \u03bcM of the protease inhibitor Saquinavir (SQV) was included during LP production. (D) egfp gene disruption by protein transduction of ZFNs in HEK293-eGFPmut reporter cells as measured by Surveyor nuclease-based detection of DNA mismatches. Cells were harvested for analysis 24 hr posttransduction. Arrowheads point to the specific cleavage products. Quantified locus modification rates (indel %) are indicated below relevant lanes. (E) egfp gene disruption by ZFN proteins at different time points after transduction. HEK293-eGFPmut reporter cells were transduced with 300 ng p24 LP-ZFNLR(gfp). Locus modification rates (indel %) are provided below the gel.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01911/elife-01911-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Western blot analysis of the cleavage pattern of ZFN proteins was carried out on cellular protein, as control, and on protein prepared from ZFN-loaded virions. For the control, 293T cells were co-transfected with pcDNA3.1-HA-ZFNL(gfp) and pcDNA3.1-HA-ZFNL(gfp) expressing HA-tagged left and right ZFNs, respectively (left lane). Cell protein was purified for Western blot analysis 1 day after transfection. Right lanes show protein incorporated in LPs packaged with both HA-tagged left and right ZFNs. A short exposure of the blot is shown on the left, whereas a longer exposure of the blot is shown on the right. ZFNs originating from non-intentional processing are indicated by an asterisk (*).\n\n### Efficient gene disruption by ZFN proteins delivered by LPs\n\nNext, we transduced HEK293-eGFPmut reporter cells harboring a mutated egfp gene with increasing doses of LPs, designated LP-ZFNLR(gfp), harboring both left and right egfp-targeting ZFNs (ZFNL(gfp) and ZFNR(gfp)). ZFN protein transduction caused dose-dependent cleavage of egfp as measured by detection of NHEJ-induced sequence alterations using the Surveyor nuclease assay (Figure 1D). The presence of indels inside egfp was confirmed by sequence analysis of cloned PCR fragments obtained from cells treated with 600 ng p24 LP-ZFNLR(gfp) (Table 1\u2014source data 1). Among a total of 42 analyzed clones, 8 were found to contain egfp gene disruptions, providing an unbiased disruption frequency of 19% (Table 1). Notably, ZFN-directed cleavage and subsequent error-prone repair by NHEJ was detectable as early as 12 hr posttransduction (Figure 1E).\n\n**Table 1.**\n Summary of the targeting rates obtained by sequence-based identification of locus-targeted indels after LP-directed delivery of ZFN proteinsTable 1\u2014source data 1.Sequences of egfp gene disruption by ZFN protein transduction in the HEK293-eGFPmut reporter cells.Genomic DNA of HEK293-eGFPmut reporter cells transduced with 600 ng p24 LP-ZFNLR(gfp) was used as PCR template for amplification and subsequent cloning of the part of the egfp gene encompassing the region recognized by the two ZFNs. The wild-type sequence is shown at the top. The net change of length caused by indels is indicated to the right of each sequence. Green dashes represent deleted nucleotides, red lower case letters represent nucleotide substitutions, whereas blue lower case letters illustrate inserted nucleotides. If one particular sequence appeared in more than one clone, the exact number of clones with this particular sequence is provided in parenthesis.Table 1\u2014source data 2.Sequences of CCR5 gene disruption by ZFN protein transduction of HEK293, NHDFs and HKs.Genomic DNA of cells transduced with 200 ng p24 LP-ZFNLR(CCR5) was used as PCR template for amplification and subsequent cloning of a CCR5 amplicon encompassing the region recognized by the two ZFNs. The wild-type sequence is shown at the top. Types of indels are indicated as described in the legend to Table 1\u2014source data 1.Table 1\u2014source data 3.Sequences of AAVS1 gene disruption by ZFN protein transduction in HEK293, NHDFs and HKs.Genomic DNA of cells transduced with 200 ng p24 LP-ZFNLR(AAVS1) was used as PCR template for amplification and subsequent cloning of an AAVS1 amplicon encompassing the region recognized by the two ZFNs. The wild-type sequence is shown at the top. Types of indels are indicated as described in the legend to Table 1\u2014source data 1. If one particular sequence appeared in more than one clone, the exact number of clones with this sequence is provided in parenthesis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Cell type</th>\n    </tr>\n    <tr>\n      <th>Target locus</th>\n      <th>HEK293</th>\n      <th>Normal human dermal fibroblasts</th>\n      <th>Primary human keratinocytes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>egfp</td>\n      <td>8/42 (19%)*</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>CCR5</td>\n      <td>7/42 (17%)</td>\n      <td>8/46 (17%)</td>\n      <td>11/45 (24%)</td>\n    </tr>\n    <tr>\n      <td>AAVS1</td>\n      <td>6/46 (13%)</td>\n      <td>7/43 (16%)</td>\n      <td>8/40 (20%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Provided ratios indicate the number of alleles with indels out of the total number of analyzed alleles after treatment with 600 ng p24 LP-ZFNLR(gfp), 200 ng p24 LP-ZFNLR(CCR5) or 200 ng p24 LP-ZFNLR(AAVS1), respectively.*indicates that data were obtained in HEK293-eGFPmut reporter cells; N/A, not available._\n\nTo evaluate the versatility of this approach, we produced LPs loaded with ZFNs targeting the endogenous CCR5 and AAVS1 loci (designated as LP-ZFNLR(CCR5) and LP-ZFNLR(AAVS1), respectively) and exposed HEK293 cells, normal human dermal fibroblasts (NHDFs), and primary human keratinocytes (HKs) to increasing dosages of these LPs. For both loci and in all cell types, we observed significant levels of disruption and found that such disruption occurred in an LP dose-dependent manner (Figure 2). In HEK293 cells and HKs, we consistently observed an extra band (indicated by * in Figure 2, left panels) that was confirmed by sequencing to originate from the CCR5 \u039432 allele present in these cells. To evaluate the extent of cleavage and error-prone repair at the CCR5 and AAVS1 loci induced by LP-delivered pairs of ZFNs, we cloned and sequenced PCR products encompassing the targeted regions. For both loci and in all three cell types, numerous different indels could be identified in the targeted region of the genome (Table 1\u2014source data 2 and 3). The rates of gene disruption by both CCR5- and AAVS1-targeting ZFNs (using an amount of LPs corresponding to 200 ng p24) are summarized in Table 1. For the three cell types, the percentage of sequenced clones harboring targeted disruptions in the CCR5 locus ranged from 17% in HEK293 cells and NHDFs to 24% in primary HKs, whereas from 13% to 20% of the analyzed AAVS1 loci, depending on the cell type, harbored indels. In summary, our findings demonstrate potent targeted gene disruption and knockout by lentiviral delivery of ZFN pairs targeting predetermined loci in the human genome.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01911/elife-01911-fig2-v2.jpg)\n\n**Figure 2.:** HEK293, normal human dermal fibroblasts (NHDFs) and primary human keratinocytes (HKs) were transduced with increasing amounts of LPs containing ZFNs targeting the CCR5 (left) and AAVS1 (right) loci. Cells were harvested for analysis 24 hr posttransduction. Arrowheads indicate specific cleavage products, whereas fragments marked with * were generated due to the presence of the CCR5 \u039432 allele in the analyzed cells. Quantified locus modification rates are indicated below relevant lanes.\n\n### Targeted genome editing by \u2018all-in-one\u2019 lentiviral vectors\n\nWe next set out to engineer ZFN-loaded lentiviral vectors with the capacity to not only disrupt but also edit targeted genes through HR. By packaging a vector genome harboring a HR donor sequence into LPs, we reasoned that ZFNs and donor could be co-delivered in such \u2018all-in-one\u2019 lentiviral vectors (Figure 3A). We generated, therefore, a donor vector plasmid carrying a 2.1-kb long sequence with homology to the egfp cassette present in the HEK293-eGFPmut cell line. This vector did not itself express eGFP, but served as donor for robust repair of egfp (leading to eGFP production) in HEK293-eGFPmut cells that were transfected with donor-containing plasmid DNA and treated with increasing dosages of LP-ZFNLR(gfp) (Figure 3B). Hence, at a dose of 300 ng p24, LP-ZFNLR(gfp) induced a level of repair that was comparable to that obtained by the efficient co-transfection of plasmid DNA encoding the two ZFNs (Figure 3B, compare two right columns). Next, the donor sequence was delivered by integrase-defective lentiviral vectors (IDLV/donor), allowing the reverse-transcribed vector to serve as a recombination donor during HR-directed editing. Co-delivery of IDLV/donor and LP-ZFNLR(gfp) to the HEK293-eGFPmut cells induced gene repair, whereas neither IDLV/donor nor LP-ZFNLR(gfp) alone induced significant levels of eGFP expression (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01911/elife-01911-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of the production and intracellular action of IDLVs carrying two ZFNs (indicated by blue and green dots) and a vector with the donor sequence for HR-directed repair (indicated in red as an RNA homodimer). Upon endosomal escape and uncoating, the donor sequence is reverse-transcribed to double-stranded DNA that is imported to the nucleus, where it serves as a donor for repair either in the form of linear DNA or as 1-LTR or 2-LTR circles (only HR between linear DNA and the target is shown). Homologous sequences are highlighted in light yellow. The egfp gene harboring internal mutations (indicated by a red box) is repaired through ZFN-mediated cleavage and HR using the reverse-transcribed vector as a recombination donor. (B\u2013E) Correction of the egfp gene by lentiviral delivery of ZFN proteins. Flow cytometric analysis was performed 4 days after transduction or transfection. In (B), donor plasmid (pLV/egfp-donor-fw) was transfected 6 hr prior to ZFN protein transduction. Co-transfection of donor plasmid and ZFN-encoding plasmid DNA (pZFN) served as a positive control. In (C), the donor sequence was provided by IDLV/donor (MOI of 46) co-transduced with LP-ZFNLR(gfp), whereas in (D) correction was achieved by co-transduction with two IDLVs (IDLV-ZFNL(gfp)/donor and IDLV-ZFNR(gfp)/donor, respectively), both at an MOI of 9, loaded each with one of the two egfp-targeting ZFNs. In (E), \u2018all-in-one\u2019 IDLVs (IDLV-ZFNLR(gfp)/donor) induced potent gene correction. Gene editing was measured with virus loads ranging from an MOI of 2 (corresponding to 37 ng p24) to an MOI of 34 (corresponding to 600 ng p24). IDLVs without the VSV-G surface protein as well as reporter cells pretreated with of 1 \u03bcM Bafilomycin A1 (Baf A1) served as negative controls. (F) Targeted editing at endogenous CCR5 and AAVS1 loci. Schematic representation of PCR-based assay used for detection of gene editing at CCR5 and AAVS1 loci (left panel). Primers are indicated above the edited target sequence. LS, linker sequence. Gene editing at CCR5 and AAVS1 loci in HEK293 cells and NHDFs, as confirmed by PCR (right panel), was obtained with an MOI of 34. PCR fragments amplified from the AAVS1 locus and the CCR5 locus served as controls for CCR5- and AAVS1-directed LS insertion, respectively. The error bars represent \u00b1SD from three independent replicates of the experiment.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01911/elife-01911-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Quantitative PCR analysis was carried out on total DNA isolated from 105 HEK293-eGFPmut reporter cells treated in three independent experiments with a load of IDLV/donor and IDLV-ZFNLR(gfp)/donor corresponding to 30 ng p24. Genomic DNA was extracted 2 days after transduction. 48 ng genomic DNA was used for qPCR and each reaction was performed in triplicate. (A) Number of lentiviral DNA copies as measured by qPCR amplification of the WPRE element located in the lentiviral vector carrying the donor. (B) Determination of the number of copies of the albumin gene in the transduced cells. (C) Calculated multiplicity of infection (MOI) obtained in cells treated with a number of IDLVs corresponding to 30 ng p24. The MOI was calculated as follows: 2 \u00d7 lentiviral DNA copy number/albumin gene copy number. (D) Determination of the number of infectious units (IU) per ng p24. The number of IU per ng p24 was calculated as follows: cell numbers \u00d7 MOI/ng p24. The error bars represent \u00b1SD from three independent replicates of the experiments using for each IDLV three separate vector preparations.\n\nTo investigate whether gene editing could be obtained with viral particles containing both donor RNA and ZFN proteins, HEK293-eGFPmut cells were co-transduced first with two separately produced IDLVs carrying either ZFNL(gfp) or ZFNR(gfp). Both IDLVs carried the vector RNA containing the egfp donor sequence. Induced eGFP expression was observed only in cells treated with both IDLVs, indicative of active editing in about 4% of the treated cells, whereas neither of the two vectors alone caused gene editing (Figure 3D).\n\nWe then created \u2018all-in-one\u2019 IDLVs (IDLV-ZFNLR(gfp)/donor) carrying the egfp donor vector as well as both ZFNs, containing thus all the components necessary to facilitate (i) vector transfer, (ii) targeted formation of DSBs, and (iii) editing by HR. Treatment of the HEK293-eGFPmut cells with this vector resulted in potent induction of eGFP expression in a vector dose-dependent manner, leading to editing at most in more than 8% of the cells treated with ZFN-loaded IDLVs corresponding to 600 ng p24 (Figure 3E).\n\nTo provide an indication of the number of IDLV particles that was required to obtain such efficient gene correction, we determined the multiplicity of infection (MOI) of donor-containing IDLVs with and without virally incorporated ZFNs (IDLV/donor and IDLV-ZFNLR(gfp)/donor, respectively). Copy numbers of lentiviral DNA and the genomic albumin gene in transduced cells were quantified by quantitative PCR (Figure 3\u2014figure supplement 1A,B) on total DNA prepared from 1 \u00d7 105 HEK293-eGFPmut reporter cells transduced with IDLVs corresponding to 30 ng p24. Using this approach, we determined MOIs of 9.2 and 1.7 for IDLV/donor and IDLV-ZFNLR(gfp)/donor, respectively (Figure 3\u2014figure supplement 1C), demonstrating that the overall transduction capacity of ZFN-loaded IDLVs was reduced more than fivefold relative to standard IDLVs. Hence, the most effective repair rate by IDLV-ZFNLR(gfp)/donor (Figure 3E) was obtained with an MOI of approximately 34. It is directly deduced from these analyses that IDLV/donor samples contain 3.1 \u00d7 104 infectious units (IU)/ng p24, whereas preparations of IDLV-ZFNLR(gfp)/donor contain an estimated 5.7 \u00d7 103 IU/ng p24 (Figure 3\u2014figure supplement 1D).\n\nImportantly, editing of the egfp gene was absent when the particles were not pseudotyped with VSV-G and therefore incapable of transducing the cells (Figure 3E). Furthermore, pretreatment of the reporter cells with Bafilomycin A1 (Baf A1), an inhibitor of endosomal escape, markedly reduced the level of editing (Figure 3E). We conclude that \u2018all-in-one\u2019 lentiviral vectors containing both ZFN proteins and the donor sequence facilitate high levels of targeted gene repair in a manner that depends on the dose and VSV-G-mediated endocytosis.\n\nTo investigate the versatility of such engineered \u2018all-in-one\u2019 lentiviral virions as tools in genomic editing, we generated IDLVs containing pairs of ZFN proteins targeting the CCR5 and AAVS1 loci, respectively, and transduced HEK293 cells and NHDFs at an MOI of 34. In these IDLVs, we packaged a vector genome containing a donor sequence with an internal linker sequence (LS) flanked by two homology arms matching either CCR5 or AAVS1 (Figure 3F, left panel). By PCR amplification using primers recognizing the LS and sequences outside the homology arm, we observed site-directed editing facilitated by HR of both the CCR5 and AAVS1 loci in HEK293 cells and NHDFs (Figure 3F, right panel). Notably, signs of editing were not evident in cells treated with preparations of IDLVs harboring only one of the ZFNs (ZFNL(CCR5) or ZFNL(AAVS1)), indicating that homology-directed insertion of the linker was achieved only after delivery of both left and right ZFN proteins.\n\n### Targeted gene disruption by lentivirally delivered TALEN proteins\n\nTo expand the repertoire of designed nucleases that are compatible with lentiviral protein transduction, we set out next to explore the possibility of delivering TALEN proteins incorporated into lentiviral particles. We designed a shuttle plasmid that is compatible with the Golden Gate assembly method (Cermak et al., 2011) and equivalent to pTAL3, allowing us to isolate the DNA segment carrying the assembled TALEN sequence and insert it into GagPol in the correct reading frame (Figure 4A). HEK293-eGFPmut reporter cells were transduced with increasing amounts of LP-TALENLR(gfp) carrying both the left and right TALEN proteins designed to recognize sequences flanking the mutations in the egfp gene. Gene disruption was identified by Surveyor nuclease-directed detection of mismatches in re-annealed PCR products (Figure 4B) and confirmed by sequencing of cloned PCR products. Hence, 3 out of 46 sequenced alleles (6.5%) were found to contain indels as a result of the treatment with LP-delivered TALEN proteins (Figure 4C). Moreover, by transfecting the cells with plasmid DNA containing the donor sequence prior to treatment of the cells with LP-TALENLR(gfp), we found that 0.2% of the cells were eGFP positive (as measured 15 days after transduction), whereas control treatments without LPs and donor DNA, respectively did not trigger eGFP expression (Figure 4D). These findings demonstrated the capacity of lentivirally delivered TALEN proteins to facilitate targeted gene repair. Notably, Western blot analysis of viral particles harboring an HA-tagged version of one of the two TALEN proteins fused to the GagPol polypeptide unveiled a cleavage pattern indicative of substantial proteolytic cleavage within the TALEN domain of the fusion protein, leading to truncated versions of the protein (indicated by TALEN* in Figure 4E). Although a low level of full-length TALEN protein with the same mobility as HA-tagged TALEN protein expressed in cells (Figure 4E, upper band marked by \u2018TALEN\u2019) was indeed evident in the particles, these data indicated the presence of cryptic HIV-1 protease cleavage sites internally in the TALEN protein. This suggests that TALEN-directed gene disruption and repair may be further optimized by localizing and eliminating internal protease cleavage sites.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01911/elife-01911-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of the construction of the TALEN-GagPol polypeptide expression construct. GoldyTALEN was assembled as the Golden Gate assembly method into a shuttle plasmid pC-Goldy-TALEN-PH and was then cut out and cloned into pGFP-PH-gagpol-D64V to get the destination construct pTALEN-PH-gagpol-D64V expressing polypeptides composed of GoldyTALEN and GagPol connected by the HIV-1 protease cleavage site SQNY/PIVQ. NLS, SV40 nuclear localization signal, \u0394152, 152 amino acids deletion from the wild-type TALE protein, RVDs, repeat variable di-residues, +63, 63 amino acids following the last repeat, PH, phospholipase C-\u03b41 pleckstrin homology domain. (B) egfp gene disruption by protein transduction of TALENs in HEK293-eGFPmut reporter cells as measured by Surveyor nuclease assay 24 hr posttransduction. (C) Sequences of egfp gene disruption by TALEN protein transduction in the HEK293-eGFPmut reporter cell line. Genomic DNA of HEK293-eGFPmut reporter cells transduced with 160 ng p24 LP-TALENLR(gfp) was used as PCR template for amplification and subsequent cloning of the part of the egfp gene encompassing the region recognized by the two TALENs. The wild-type sequence is shown at the top. The net change of length caused by the indels is indicated to the right of each sequence. Green dashes represent deleted nucleotides, whereas blue lower case letters illustrate inserted nucleotides. Three alleles out of 46 sequenced clones were found to be disrupted (disruption frequency: 6.5%). (D) Targeted egfp gene repair in HEK293-eGFPmut reporter cells. Cells were transfected with 1.8 \u03bcg donor plasmid (pLV/egfp-donor-fw) and transduced with 160 ng p24 of LP-TALENLR(gfp) 6 hr later. Cells treated only with LP-TALENLR(gfp) or donor served as negative controls. eGFP expression was analyzed by flow cytometry 15 days posttransduction. (E) Analysis of the contents of LP-HA-TALENR(gfp) by Western blot using HA-specific antibody. The left lane shows protein derived from 293T cells expressing right HA-TALEN(gfp) from transfected plasmid pcDNA3.1-Goldy-HA-TALENR(gfp). The expected size of the full-length TALEN is indicated, and truncated TALEN derivatives originating from non-intentional cleavage at cryptic, internal HIV-1 cleavage sites are indicated by an asterisk (*). The error bars represent \u00b1SD from three independent replicates.\n\n### Improved on- vs off-target activity of LP-delivered ZFNs\n\nNuclease protein transduction facilitates both coordinated delivery of the two proteins and a short boost of activity in transduced cells. As other delivery techniques based on intracellular nuclease production may lead to prolonged nuclease activity, we hypothesized that ZFNs delivered in LPs would have low off-target relative to on-target activity. To test this notion, we compared the activity of CCR5-directed ZFNs in the neighboring CCR2 locus after ZFN delivery into HEK293 cells by protein transduction and plasmid DNA transfection, respectively. The CCR2 locus has high homology to CCR5 and has been identified as a major off-target site of CCR5-targeting ZFNs (Perez et al., 2008; Lee et al., 2010). For the CCR5-targeting ZFNs employed in this study, only a single nucleotide differs between the CCR5 and CCR2 recognition sites of each ZFN. In initial examinations of the potential off-target activity at the CCR2 locus, we designed a PCR method that would detect NHEJ between fragments created by ZFN activity at both the CCR5 and CCR2 locus leading to deletion of the intervening sequence (Figure 5A). Indeed, we observed off-target cleavage at the CCR2 locus by both protein transduction and plasmid transfection but not in the non-treated cells (Figure 5B), indicating that both LP-delivered and DNA-encoded ZFNs induced simultaneous double-stranded DNA breaks within the CCR2 and CCR5 loci.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01911/elife-01911-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic representation of the PCR-based assay used for detection of simultaneous on-target and off-target cleavage at the CCR5 and CCR2 loci, respectively. Small blue and red boxes above each locus indicate the location of the two ZFN recognition sites in the CCR5 locus and the highly homologous sequences located within the CCR2 locus. Horizontal arrows indicate the location of sequences recognized by the primers used. (B) Detection of off-target cleavage by PCR-based detection of CCR2-CCR5 fusion fragments. HEK293 cells were seeded at a density of 1 \u00d7 105 cells/well on day 1 and were on day 2 either transduced with increasing amounts of LP-ZFNLR(CCR5) (50, 100, 200 ng p24, respectively; indicated by \u2018LP\u2019) or co-transfected with increasing amounts of the two ZFN-encoding plasmids (50 ng + 50 ng, 100 ng + 100 ng, 200 ng + 200 ng, respectively; indicated by \u2018plasmid\u2019). On day 3, cells were harvested for genomic DNA purification. (C) Disruption within the CCR5 and CCR2 loci after LP- and plasmid-directed ZFN delivery. HEK293 cells were treated with increasing amounts of LP-ZFNLR(CCR5) and ZFN-encoding plasmids as in (B). Sequence changes introduced by NHEJ-directed repair were identified by Surveyor nuclease-directed detection of mismatches in re-annealed PCR products. Analyses of CCR5- and CCR2-directed cleavage were performed on the same genomic DNA samples. Arrowheads indicate specific cleavage products. Quantified locus modification rates are indicated below each gel. (D) Distinct levels of CCR2 gene disruption using experimental conditions that support similar levels of CCR5 disruption after LP- and plasmid-directed ZFN delivery. HEK293 cells were treated by LP transduction (80 ng p24) or plasmid transfection (300 ng + 300 ng), essentially as described in (B), facilitating similar levels of gene disruption in the CCR5 locus. Surveyor nuclease assays were performed as in (C) except for the use of an alternative CCR5 primer set. Quantified locus modification rates are indicated below relevant lanes.\n\nNext, we compared the on-target activity in the CCR5 locus achieved by the two delivery methods. As shown in Figure 5C (left panel) by Surveyor nuclease-directed detection of mismatches in re-annealed PCR products, protein transduction by lentiviral particles induced under the given conditions significantly higher rates of on-target gene disruption than plasmid transfection. These findings also confirmed the dose-dependent activity of LP-delivered ZFNs. Similarly, when we analyzed for mismatches at the CCR2 locus, an increasing dose of ZFN-loaded LPs was seen to trigger increased off-target activity (Figure 5C, right panel). Importantly, however, a similar level of off-target activity was observed for all doses of transfected plasmid DNA, indicating that LP-delivered ZFNs even at levels that induced markedly higher levels of on-target disruption did not induce increased levels of off-target activity at the CCR2 locus. These findings showed a reduced relative off-target activity of lentivirus-delivered ZFNs.\n\nTo simplify and strengthen the comparison between LP-delivered and plasmid-encoded ZFNs, we established experimental conditions under which the efficiency of on-target gene disruption by LP transduction and plasmid transfection was similar (Figure 5D, left panel). By subsequent analyses of off-target disruption within the CCR2 locus of the same cells, we detected disruption (3%) induced by plasmid-encoded ZFNs, whereas indels and mismatches were not evident after ZFN protein transduction. In summary, our findings lend strong support to the notion that locus targeting by LP-directed protein transduction is both effective and favored by an improved on-target/off-target cleavage ratio.\n\n## Discussion\n\nEngineered nucleases have become driving forces in genomic engineering (Gaj et al., 2013). To improve the safe use of such nucleases, it is crucial to scrutinize novel delivery techniques. Lentiviral virions have previously been engineered to incorporate foreign proteins to study different aspects of HIV-1 biology and antiviral strategies (Wu et al., 1995; Fletcher et al., 1997; Hermida-Matsumoto and Resh , 2000; Hubner et al., 2007), demonstrating the capability of ferrying protein effectors into target cells. Indeed, delivery of Cre recombinase and I-SceI meganuclease has been achieved by fusing the heterologous protein-of-interest to the HIV-1 accessory protein Vpr (Michel et al., 2010; Izmiryan et al., 2011). However, none of these enzymes are programmable and therefore can only edit a single artificial target, which would need to be introduced in the target cells prior to editing. Also, as both Cre and I-SceI function as monomers they may be easily adaptable for alternative delivery strategies. In consideration of the increasing focus on engineered nucleases, it is crucial to investigate alternative nuclease delivery strategies.\n\nWith the goal of effectively co-delivering two different nuclease proteins and the donor for repair, we turned to a strategy based on transferring the heterologous protein as part of the lentiviral Gag polypeptide. Derivatives of Gag polypeptides are the most abundant proteins in HIV-1-derived particles, and each virion has been estimated to contain approximately 5000 copies of Gag-derived proteins like p24 (Swanson and Malim, 2008). Hence, such strategy for transduction of proteins is superior in terms of cargo load. Though IDLVs have been exploited to deliver ZFN-encoding genes (Lombardo et al., 2007), there are some clear inherent limitations to this approach. Firstly, random integration of the vector can lead to insertional mutagenesis and sustained expression of ZFNs may cause cytotoxicity or chromosomal aberrations. Secondly, two separate IDLVs are necessary to provide the two ZFNs and a third IDLV needs to be included if a donor template is required for homologous recombination. Single IDLVs encoding both ZFNs have recently been described, but these do not perform as well as two separate IDLVs (Joglekar et al., 2013). Thirdly, due to the highly repetitive sequences in TALENs there are major difficulties in delivering these by IDLVs due to an inherent propensity of lentiviral vectors to undergo recombination during reverse transcription (Mikkelsen and Pedersen, 2000; Holkers et al., 2013).\n\nIn this study, we have shown the feasibility of exploiting lentivirus-derived particles as vehicles for different sets of designer nuclease proteins that are released from the Gag polypeptide upon virion maturation. This approach facilitates a short boost of protein activity that drives immediate targeted gene disruption (within 12 hr) in up to near one-fourth of the target alleles in a population of cells without the risks of permanently inserting copies of ZFN- or TALEN-encoding genes into the genome. Moreover, as an alternative to protocols based on transfection of in vitro-transcribed RNA (Meng et al., 2008) or the cell-penetrating capability of purified ZFNs (Gaj et al., 2012), a lentiviral protein delivery approach benefits from effective lentiviral transduction and can easily be further customized by adapting different lentiviral pseudotypes to direct protein transduction to specific cell types of interest.\n\nThe ability to edit predetermined genomic loci, rather than disrupt loci, may be crucial for future therapeutic applications of designer nucleases. We have shown that ZFN proteins (left and right) and HR donor sequences can be incorporated into a single preparation of IDLVs and trigger effective gene repair in transduced cells. At an MOI of approximately 34, such \u2018all-in-one\u2019 vectors edited the reporter gene in up to 8% of treated cells. We also provide proof-of-principle that \u2018all-in-one\u2019 vectors can target the insertion of additional genetic sequences in the form of a linker sequence, suggesting that HR-mediated insertion facilitated by transduced ZFN proteins has a potential as a tool for targeted lentiviral insertion.\n\nThe level of gene repair obtained with IDLVs carrying both ZFNs and the donor template is higher than previously reported repair rates obtained with the same pair of ZFNs under similar conditions using an analogous reporter system (Urnov et al., 2005). Although a direct comparison is not possible, we reason that a high rate of repair after protein transduction reflects the combined capacity of LPs to (i) coordinately deliver pairs of nucleases by protein transduction and (ii) provide a donor for homologous recombination which is associated with the pre-integration complex and therefore is actively and efficiently translocated to the nucleus (Coluccio et al., 2013). We have previously observed that the uptake of LP-delivered heterologous proteins is extremely limited relative to the very high levels of nuclear protein that can be achieved by standard plasmid DNA transfection (Cai et al., 2014). Based on these findings, we currently favor a model by which editing is further supported by the co-localization of ZFN proteins and the donor template within the pre-integration complex. In several aspects, such model mimics the ability of conventional lentiviral vectors to carry the integrase protein along with the reverse-transcribed vector DNA into the nucleus.\n\nIn comparison to ZFNs, TALENs have higher modularity and are becoming more routinely used due to the ease of production. However, TALENs are relatively large proteins (\u223c100 kDa), and this may challenge their delivery. In addition, lentiviral delivery of TALEN-encoding genes is further complicated by frequent recombination between the highly similar sequence repeats encoding the DNA-binding domain (Holkers et al., 2013), and lentiviral delivery of genes encoding re-coded TALE variants has been reported so far only for transcriptional activation (Yang et al., 2013). In this study, we show that TALENs can be delivered as proteins by LPs, facilitating gene disruption or, in the presence of a donor template, repair in a reporter cell line. However, the majority of virally incorporated TALEN subunits are cleaved internally by the HIV-1 protease, which is suspected to limit the overall efficiency. Further work is necessary to identify and eliminate the cryptic viral protease cleavage site to improve the delivery of virus-incorporated TALEN proteins.\n\nIt is likely that efficient gene targeting can be achieved in a narrow window of ZFN exposure and that activity outside this time window can cause toxicity without improving gene targeting efficiencies (Porteus and Baltimore, 2003; Pruett-Miller et al., 2009). To analyze this aspect, we compared ZFN-directed disruption in the CCR5 target locus and the nearby and highly similar CCR2 locus. Interestingly, LPs loaded with CCR5-directed ZFNs caused disruptions in the CCR5 locus more effectively than ZFNs expressed from transfected plasmid DNA. In the same cells, disruptions in the off-target CCR2 locus were evident with all concentrations of plasmid but detectable only with the highest and most effective dose of LPs. Importantly, under experimental conditions that allowed similar rates of disruption using LP-directed ZFN delivery and plasmid-encoded ZFN production, off-target activity within the CCR2 locus was detected only after ZFN-encoding plasmid delivery. These findings support the notion that LP-delivered ZFNs target a safe harbor in the human genome with an improved on-target/off-target cleavage ratio. We reason that such improvement is a combined effect of efficient transduction and the short-term exposure to transduced ZFN proteins.\n\nWith ZFNs and TALENs as early driving forces, designer nucleases stand out as key tools in genomic editing with implications for the development of future gene repair therapies. We anticipate that lentiviral protein transduction of nuclease proteins represents a versatile alternative to current nuclease delivery techniques and will support continued efforts to promote safe genome editing therapies. Uniquely, this approach allows the delivery of the tools for targeted gene editing in a single combined gene and protein vehicle. Likely, genomic engineers will strive to adapt LPs as carriers of Cas9 proteins for RNA-guided genome editing.\n\n## Materials and methods\n\n### Production of lentiviral particles (LPs) and integrase-defective lentiviral vectors (IDLVs)\n\nThroughout this work, the annotation \u2018LP-ZFNLR(target)\u2019 was used to designate lentiviral particles that contain left and right ZFN proteins but do not carry a lentiviral vector genome. Same nomenclature applies to TALEN. A similar type of particle harboring, for example, only the left ZFN was accordingly designated LP-ZFNL(target). When a lentiviral genome was included for example as a carrier of a HR donor sequence, we referred to this vector as an IDLV (due to presence of the IN D64V mutation, rendering the vector integrase-defective). These vectors were named with the specification of the incorporated ZFNs and the donor that were included. IDLV-ZFNLR(gfp)/donor, for example, contains both egfp-directed ZFNs (left and right) and RNAs of which reverse transcription products carry a donor sequence with homology to egfp. Of note, we have consistently observed that virions harboring Gag fused N-terminally to foreign proteins are strongly reduced in their capability of transferring vector RNA (most likely due to complications during reverse transcription), but that this capacity can be restored by including unfused GagPol (encoded by pMDlg/pRRE-D64V) in the virions. Preparations of LPs and IDLVs were produced as follows. On day 1, 293T cells were plated at a density of 6 \u00d7 104/cm2. On day 2, cells were transfected with calcium phosphate precipitates of plasmid DNA. To produce LPs, 293T cells in 15-cm dishes were transfected with 10 \u03bcg pMD.2 G, 30 \u03bcg pZFNL(target)-PH-gagpol-D64V (targeting either gfp, CCR5, or AAVS1) and 30 \u03bcg pZFNR(target)-PH-gagpol-D64V (targeting either gfp, CCR5, or AAVS1). LPs containing TALENs were produced accordingly except using pTALENL(gfp)-PH-gagpol-D64V and pTALENR(gfp)-PH-gagpol-D64V instead of corresponding ZFN constructs. To produce IDLVs that did not incorporate foreign protein, cells in 15-cm dishes were transfected with 9.07 \u03bcg pMD.2G, 7.26 \u03bcg pRSV-Rev, 31.46 \u03bcg pMDlg/pRRE-D64V, and 31.46 \u03bcg pLV/egfp-donor-re. To produce IDLVs incorporating ZFN proteins, 293T cells plated in 15-cm dishes were transfected with 9.07 \u03bcg pMD.2G, 7.26 \u03bcg pRSV-Rev, 15.73 \u03bcg pMDlg/pRRE-D64V, 7.8 \u03bcg pZFNL(target)-PH-gagpol-D64V (targeting either gfp, CCR5, or AAVS1), 7.8 \u03bcg pZFNR(target)-PH-gagpol-D64V (targeting either gfp, CCR5 or AAVS1), and 31.46 \u03bcg donor-containing vector (either pLV/egfp-donor-re, pLV/CCR5-donor-LS, or pLV/AAVS1-donor-LS). After transfection, the medium was refreshed on day 3, and supernatants were harvested on day 4 and day 5, passed through a 0.45-\u03bcm filter (Millipore, Billerica, Massachusetts), and ultracentrifuged at RPM 25,000 at 4\u00b0C for 2 hr. Pellets were re-suspended in PBS and stored at \u221280\u00b0C. Concentrations of HIV-1 p24 were measured by ELISA (Zeptometrix, Buffalo, New York) according to the manufacturer\u2019s protocol.\n\n### Plasmid construction\n\npT2/CMV-egfp-mut.SV40-neo containing mutated egfp was constructed by inserting a BsrGI/SacII-digested overlap PCR product into pT2/CMV-egfp(s)-SV40.neo vector (Staunstrup et al., 2012). The overlap PCR product was generated by amplifying first two fragments from pT2/CMV-egfp(s).SV40-neo (using primer sets 4684-YJ001R and YJ002F-BGHpA) and fusing these by overlap PCR with primers 4684 and BGHpA (primers are listed in Supplementary file 1). The resulting egfp cassette harbored both a stop mutation and a frameshift mutation in the sequence flanked by the two ZFN recognition sequences. The lentiviral vector plasmid harboring the egfp donor sequence in the forward orientation (pLV/egfp-donor-fw) was created by inserting a PCR product amplified from pT2/CMV-egfp(s).SV40-neo with primers YJ003F and YJ004R into ApaI/XhoI-digested pLV/RSV-SB100X (Moldt et al., 2011). By this procedure, the RSV-SB100X cassette was completely removed and exchanged with the donor sequence. A lentiviral plasmid vector with the egfp donor in the reverse orientation (pLV/egfp-donor-re) was created by amplifying the donor sequence from pLV/egfp-donor-fw with the primer set YJ150F-YJ151R and inserting the donor sequence into ApaI/XhoI-digested pLV/egfp-donor-fw. Each resulting donor vector contained a truncated egfp gene (with an upstream 37-bp deletion from the start codon), the SV40 promoter, and a shortened neo gene (with a 46-bp deletion as counted from the third position of the stop codon) together constituting a 2100-bp cassette with homology to its target sequence within genomically inserted pT2/CMV-egfp-mut.SV40-neo.\n\nSequences encoding the zinc-finger (ZF) of known ZFNs targeting the CCR5 and AAVS1 loci were synthesized by GenScript according to sequences that have been provided in the literature (Lombardo et al., 2007; Hockemeyer et al., 2009). To introduce these sequences into a ZFN context, AflII/BamHI-fragments containing the ZF sequence were inserted into AflII/BamHI-digested pcDNA3.1-ZFNL(gfp) (Urnov et al., 2005) which was kindly provided by Michael C Holmes (Sangamo Biosciences, Richmond, California). The resulting plasmids, in which the ZF sequences were fused to the FokI nuclease domain, were designated pcDNA3.1-ZFNL(CCR5), and pcDNA3.1-ZFNR(CCR5), pcDNA3.1-ZFNL(AAVS1), and pcDNA3.1-ZFNR(AAVS1). We subsequently fused the ZFN-coding sequences to the 5\u2032-end of gag gene in pGFP-PH-gagpol, which was kindly provided by Jun Komano, National Institute of Infectious Diseases, Tokyo, Japan. Prior to insertion of the ZFN sequences, the D64V mutation was introduced in the HIV-1 integrase sequence in pGFP-PH-gagpol (creating pGFP-PH-gagpol-D64V) to abolish the conventional lentiviral integration capability. Sequences encoding the left and right gfp-targeted ZFNs were amplified from pcDNA3.1-ZFNL(gfp) and pcDNA3.1-ZFNR(gfp), respectively, with primers YJ112F and YJ113R. Sequences encoding HA-tagged versions of these ZFNs, HA-ZFNL(gfp) and HA-ZFNR(gfp), were amplified from pcDNA3.1-ZFNL(gfp) and pcDNA3.1-ZFNR(gfp) with primers YJ168F and YJ113R. ZFNL(CCR5)- and ZFNR(CCR5)-encoding sequences were amplified from pcDNA3.1-ZFNL(CCR5) and pcDNA3.1-ZFNR(CCR5), respectively, with primers YJ177F and YJ113R. ZFNL(AAVS1)- and ZFNR(AAVS1)-encoding sequences were amplified from pcDNA3.1-ZFNL(AAVS1) and pcDNA3.1-ZFNR(AAVS1) with the primer sets YJ175F-YJ113R and YJ176F-YJ113R, respectively. The resulting PCR products were digested with XmaI and cloned into AgeI/AccIII-digested pGFP-PH-gagpol-D64V to create pZFNL(gfp)-PH-gagpol-D64V, pZFNR(gfp)-PH-gagpol-D64V, pHA-ZFNL(gfp)-PH-gagpol-D64V, pHA-ZFNR(gfp)-PH-gagpol-D64V, pZFNL(CCR5)-PH-gagpol-D64V, pZFNR(CCR5)-PH-gagpol-D64V, pZFNL(AAVS1)-PH-gagpol-D64V, and pZFNR(AAVS1)-PH-gagpol-D64V. To construct pcDNA3.1-HA-ZFNL(gfp) and pcDNA3.1-HA-ZFNR(gfp) for cellular production of HA-tagged ZFNs, HA-ZFN fragments were amplified from pHA-ZFNL(gfp)-PH-gagpol-D64V and pHA-ZFNR(gfp)-PH-gagpol-D64V, respectively, using primer pair YJ211F-YJ212R and inserted into AflII/XhoI-digested pcDNA3.1-ZFNL(gfp).\n\nA lentiviral vector plasmid, pLV/CCR5-donor-LS, with a CCR5-targeted donor sequence (consisting of two 550-bp homology arms) and an internal linker sequence (LS) was constructed by PCR amplification of the homology arms from genomic DNA of NHDFs with the primer sets YJ193F-YJ206R and YJ195F-YJ196R. The two arms were fused by overlap PCR using primers YJ193F and YJ196R, generating a PCR product with the internal 24-bp LS sequence. The ApaI/XhoI-digested PCR product was inserted into ApaI/XhoI-digested pLV/RSV-SB100X (Moldt et al., 2011), allowing substitution of the RSV-SB100X cassette with the CCR5 donor sequence. pLV/AAVS1-donor-LS containing two 600-bp AAVS1 homology arms flanking an internal LS was constructed by a similar method by which two PCR products were generated with the primer pairs YJ200F-YJ201R and YJ202F-YJ203R. The MluI/XhoI-digested overlap PCR product (generated with primers YJ200F and YJ203R) was inserted into MluI/XhoI-digested pLV/egfp-donor-fw.\n\nTo generate pC-Goldy-TALEN-PH, YJ213F-YJ186R-amplified fragments from pC-GoldyTALEN (Bedell et al., 2012) were digested by SpeI/XmaI and inserted into XbaI/XmaI digested pC-GoldyTALEN. pC-Goldy-HA-TALEN-PH was generated by the same way except using primer YJ218F instead of YJ213F. The repeats of TAL effector were assembled as described except using pC-Goldy-TALEN-PH or pC-Goldy-HA-TALEN-PH to replace pTAL3. The reading frames of the gfp-targeting TALENs were cut out by AgeI/XmaI and inserted into the destination vector pGFP-PH-gagpol-D64V digested with AgeI/AccIII. The resulting constructs, pTALENL(gfp)-PH-gagpol-D64V, pTALENR(gfp)-PH-gagpol-D64V, pHA-TALENL-PH-(gfp)-gagpol-D64V, and pHA-TALENR-PH-(gfp)-gagpol-D64V encode polypeptides containing both the TALEN and lentiviral GagPol connected by an HIV-1 cleavage site SQNY/PIVQ. All these constructs contain 63 amino-acid residues at the C-terminus of the TALEN repeat region. pTALEN-PH-gagpol-D64V and a version with an HA-tagged TALEN, pHA-TALEN-PH-gagpol-D64V, were assembled (Cermak et al., 2011) and cloned as shown in Figure 4A. The repeat variable di-residue sequences of GoldyTALEN for egfp targeting were \u2018NN HD NG NG HD NI NN HD HD NN HD NG NI HD HD\u2019 and \u2018NN NN HD NN NN NI HD NG NG NN NI NI NN NI NI\u2019, respectively.\n\npYJ63-HA-PH-gagpol-D64V was constructed by inserting fragments that were amplified from pC-Goldy-HA-TALEN-PH with primer pair YJ256F-YJ257R into pGFP-PH-gagpol-D64V. Inserts and vector were digested by AccIII and AgeI/AccIII, respectively. pcDNA3.1-Goldy-HA-TALEN was generated by inserting fragments amplified from pYJ63-HA-PH-gagpol-D64V with YJ553F-YJ554R into pcDNA3.1-ZFNL(gfp). Inserts and vector were cut by AflII/SalI and AflII/XhoI, respectively. HA-tagged TALEN, pcDNA3.1-Goldy-HA-TALENR(gfp), was assembled as Golden Gate cloning by using pcDNA3.1-Goldy-HA-TALEN in place of pTAL3.\n\n### Detection of gene disruption by Surveyor nuclease assay\n\nTo determine gene disruption frequencies, we utilized the mismatch detection assay based on the Surveyor nuclease (Transgenomic, Omaha, Nebraska) according to manufacturer\u2019s instructions. Briefly, cells treated with ZFN-loaded LPs were harvested 24 hr after transduction unless specific time points were indicated. Genomic DNA was extracted by saturated NaCl and precipitated by absolute ethanol. egfp, CCR5, AAVS1 and CCR2 fragments were amplified with primer sets 4684-YJ170R, YJ207F-YJ208R (or YJ207F-YJ225R), YJ222F-YJ223R and YJ220F-YJ359R, respectively, using the Phusion High-Fidelity PCR Master Mix (Thermo Scientific, Waltham, Massachusetts). After denaturation and re-annealing, each sample was digested by 1 \u03bcl Surveyor nuclease plus 1 \u03bcl enhancer (Transgenomic). Cleavage products were separated by gel electrophoresis in 1.5% agarose gel and stained by ethidium bromide. Quantification was based on relative band intensities. Indel percentage was determined by the formula 100 \u00d7 (1\u2212(1\u2212fraction cleaved)1/2), wherein the fraction cleaved is the sum of the cleavage product peaks divided by the sum of the cleavage product and parent peaks.\n\n### Sequence analysis of targeted loci\n\nTo analyze gene disruption by sequencing, we PCR-amplified and cloned target fragments allowing for separate sequencing of plasmid preparations from separate bacterial clones. Fragments encompassing the egfp, CCR5 and AAVS1 target sites were amplified using primer sets YJ180F-YJ181R, YJ237F-YJ238R, and YJ240F-YJ244R, respectively, from genomic DNA of cells transduced with 600 ng p24 in case of LP-ZFNLR(gfp) and with 200 ng p24 in the case of LP-ZFNLR(CCR5) and LP-ZFNLR(AAVS1). The resulting PCR products were digested with EcoRI and BamHI (for egfp and CCR5) or EcoRI and BglII (for AAVS1), and cloned into EcoRI/BamHI-digested pUC57. Sequence analysis was performed on individual cloned transformants using primer YJ226F.\n\n### Targeted gene modification and insertion analysis\n\nCells transduced with \u2018all-in-one\u2019 vectors IDLV-ZFNLR(CCR5)/donor-LS and IDLV-ZFNLR(AAVS1)/donor-LS were harvested 9 days posttransduction. Genomic DNA was purified as described above. PCR primer sets were designed to identify gene targeting as shown in Figure 3F (YJ191F-YJ208R for IDLV-ZFNLR(CCR5)/donor-LS and YJ191F-YJ205R for IDLV-ZFNLR(AAVS1)/donor-LS). Fragments of AAVS1 and CCR5 loci were amplified by primer pair YJ222F-YJ223R and YJ224F-YJ225R, respectively, as loading controls.\n\n### Cells and culture conditions\n\nHEK293 (human embryonic kidney cells), 293T, and NHDFs (normal human dermal fibroblasts) were cultured in Dulbecco\u2019s Modified Eagle\u2019s Medium (Lonza, Basel, Switzerland). Culture medium was supplemented with 10% fetal calf serum, 100 U/ml penicillin, 100 \u03bcg/ml streptomycin, and 250 \u03bcg/ml L-glutamine. Primary human keratinocytes (HKs) were grown in serum-free keratinocyte medium (Gibco BRL-Life Technologies, Carlsbad, California) supplemented with bovine pituitary extract (25 \u03bcg/ml) and recombinant epidermal growth factor (0.1\u20130.2 ng/ml). All cells were cultured at 37\u00b0C and 5% (vol/vol) CO2. To determine the activity of LP-incorporated ZFNs, we established a reporter system in HEK293 cells (HEK293-eGFPmut reporter cells) based on the genomic insertion of a Sleeping Beauty DNA transposon (carried by the plasmid pT2/CMV-egfp-mut.SV40-neo) harboring an egfp cassette gene from which expression was inhibited by stop- and frameshift-mutations flanked by the two ZFN recognition sequences.\n\n### Flow cytometry\n\nTo examine LP-ZFNLR(gfp)-induced homologous repair, HEK293-eGFPmut reporter cells were seeded in six-well plates (1 \u00d7 105 cells/well), and on the following day, cells were co-transfected with 1.8 \u03bcg pLV/egfp-donor-fw, 100 ng pcDNA3.1-ZFNL(gfp), 100 ng pcDNA3.1-ZFNR(gfp) as a positive control, or only transfected with 1.8 \u03bcg pLV/donor-egfp-fw and 6 hr later transduced with LP-ZFNLR(gfp). To measure homologous repair induced by IDLV-ZFNLR(gfp)/donor, HEK293-eGFPmut reporter cells were seeded in six-well plates at a density of 1 \u00d7 105 cells/well and the next day transduced with VSV-G-positive or VSV-G-negative lentiviral vectors. Reporter cells pretreated with 1 \u03bcM Bafilomycin A1 (Baf A1) for 30 min before transduction served as an additional negative control. 4 days after transduction, cells were washed with PBS before being harvested and fixed with 4% paraformaldehyde. Data were collected on a FACSCalibur (Becton Dickinson, Franklin Lakes, New Jersey) and analyzed with FlowJo (Tree Star, Ashland, Oregon).\n\n### Western blot analysis of ZFNs/TALENs incorporated into LPs\n\nTo analyze the protein contents of engineered LPs, LP-containing supernatants were centrifuged through a 20% (wt/vol in PBS) sucrose cushion. LPs were lysed in the presence of a protease inhibitor. The viral proteins were separated by SDS-polyacrylamide gel electrophoresis and transferred to the PVDF membrane. Membranes were blocked by 5% fat-free milk dissolved in TBS/0.05% Tween-20 for 1 hr and incubated with an HA monoclonal antibody (Covance, Princeton, New Jersey) overnight at 4\u00b0C. The membranes were incubated with anti-mouse secondary antibodies (Dako, Glostrup, Denmark) and visualized by enhanced chemiluminescence (ECL) using a HRP substrate (Thermo Scientific). The HA monoclonal antibody was washed away by stripping buffer (Thermo Scientific), and the PVDF membrane was re-used for incubation with a HIV-1 p24 polyclonal antibody (Thermo Scientific) and later peroxidase-conjugated anti-rabbit secondary antibody (Dako).\n\n### Quantitative PCR for determination of MOIs\n\nQuantitative PCR (qPCR) on lentiviral DNA was performed as previously described (Bak et al., 2013). Briefly, qPCR reactions were run using Maxima Probe qPCR Master Mix (Fisher Scientific, Waltham, Massachusetts) with primers and probe specific for the WPRE sequence present in the lentiviral vector. Primers and probe specific for the albumin gene were used to quantify the cell number in each qPCR reaction assuming an albumin gene copy number of two per genome. WPRE and albumin DNA copy numbers were determined using standard curves with serially diluted plasmid containing the two targets. For WPRE, the pCCL-PGK-Puro-H1-MCS plasmid was used (Bak et al., 2011) and for albumin we used pAlbumin kindly provided by Didier Trono (Addgene plasmid #22037). The multiplicity of infection (MOI) was calculated as: 2 \u00d7 copy numbers of lentiviral DNA/copy numbers of albumin. The infectious units/ng p24 was calculated as: number of cells \u00d7 MOI/ng p24.\n",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "31939d39-2245-4a18-bea9-16209c3e4165",
+      "submission_id": "41a8a696-7409-4b28-905b-6a26fce829ce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Todd Golub, Broad Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01911.015](https://doi.org/10.7554/eLife.01911.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTargeted genome editing by lentiviral protein transduction of zinc-finger and TAL-effector nucleases\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor and 3 reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Todd Golub, Reviewing editor; Perry Hackett, peer reviewer. The other two reviewers have chosen to remain anonymous.\n\nThe Reviewing editor and other reviewers discussed their comments before reaching this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript describe proof-of-concept for the use of non-replicative lentiviruses to transiently deliver both DNA-specific nucleases (zinc fingers and TALENs) and donor sequences for homologous recombination-dependent gene editing. The goal of reducing off-target effects of the ZFNs/TALENs is a laudable one, and one that would significantly advance the field. The manuscript was clearly written, and the conclusions in general justified.\n\nHowever, there are several important issues that must be addressed before the work is suitable for publication.\n\n1) The authors claim that higher levels of repair compared to co-transfection of plasmids encoding the two ZFNs. What is the number of nuclease molecules packaged into each LP, and how does this correspond to 300 ng of p24? Also, could the higher indel efficiency induced by LP be due to higher levels of protein present at the time when cells were harvested for analysis? Furthermore, it is generally difficult to compare absolute modification efficiencies across different experiments (especially those previously reported) \u2013 cell conditions, transfection efficiencies, and even analysis conditions can vary greatly. If the authors really want to make the argument that there is increased efficiency, they should conduct a side-by-side comparison.\n\n2) In order to be maximally informative for readers, the authors should specify more of the experimental parameters surrounding the work. For example, what was the time point at which the ZFN-LP exposed cells were analyzed compared with transiently transfected cells? Similarly, since viruses were used, provide MOIs of the vectors (from qPCR of the genomes) because without this information we have no idea of the numbers of cells that even have a chance at gene editing, nor the efficiency of those cells with the right genomes. As a result, it is hard to compare efficiencies of 1%, 4% and 8% in the different panels.\n\n3) The indel modification rates for the gels shown should be quantified. Similarly, the Surveyor results in Figure 5C should be quantitated since the image is only marginally convincing. How many times was this experiment repeated? It may be important to repeat the experiment and try and quantitate the results in some way to substantiate the argument that this ZFN pair is safer when delivered by LP. This is an important claim in the manuscript.\n\n4) Figure 3A should be redrawn to make the targeting construct (lentiviral RNA genome) clearer. Where are the homology arms and how are they related to the mutant reporter in the host cell genome? What does the reverse-transcribed DNA look like and what is its architecture relative to the target genomic locus? Clarity of this illustration will help readers design their own experiments, and so it is worth the time to make it as clear and informative as possible.\n\n5) Figure 1B and Figure 4E: It would benefit the reader to see a control on the western for plasmid-encoded HA-tagged ZFN or TALEN proteins to compare to what is processed by the virus. As it stands, it is difficult to determine whether the bands not labeled as asterisks are really the expected products and that the ones with asterisks are improperly processed.\n\n6) The authors should show how plasmid transfection compares to LP delivery of ZFNs/TALENs to understand whether LP-delivery is generally more efficient than plasmid delivery for multiple reagents, like is shown in Figure 5C, or if the CCR5 ZFNs are somehow special in this regard.\n",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "68593398-7854-417e-a295-96d80a6f4230",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C1",
+      "claim": "Lentiviral vectors can be adapted as carriers of designer nuclease proteins, providing efficient targeted gene disruption in vector-treated cell lines and primary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we adapt lentiviral vectors as carriers of designer nuclease proteins, providing efficient targeted gene disruption in vector-treated cell lines and primary cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a primary finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a7a68801-213e-4a7a-8201-ce18aa3141e1",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C2",
+      "claim": "Co-packaging pairs of ZFN proteins with donor RNA in 'all-in-one' lentiviral particles enables co-delivery of ZFN proteins and the donor template for homology-directed repair leading to targeted DNA insertion and gene correction.",
+      "claim_type": "EXPLICIT",
+      "source": "By co-packaging pairs of ZFN proteins with donor RNA in 'all-in-one' lentiviral particles, we co-deliver ZFN proteins and the donor template for homology-directed repair leading to targeted DNA insertion and gene correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes this as a key finding, with supporting experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "ff99cb26-4faf-459b-96bc-0fef74e9a634",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C3",
+      "claim": "ZFN protein transduction demonstrates reduced off-target activity relative to conventional delivery approaches in comparative studies of ZFN activity at a predetermined target locus and a known nearby off-target locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative studies of ZFN activity in a predetermined target locus and a known nearby off-target locus demonstrate reduced off-target activity after ZFN protein transduction relative to conventional delivery approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by experimental data in Figure 5 comparing LP-delivered and plasmid-encoded ZFNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "56c171e7-d378-40c0-8688-ddc9e52d18d8",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C4",
+      "claim": "TALEN proteins can be delivered by protein transduction using lentiviral particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, TALEN proteins are added to the repertoire of custom-designed nucleases that can be delivered by protein transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, with supporting experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "b796be4a-8e3d-4ee0-8ce5-d0c4168d62b6",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C5",
+      "claim": "ZFNs and TALENs are chimeric nucleases composed of a custom-designed DNA binding domain fused to the DNA-cleavage domain from the FokI endonuclease that upon dimer formation cleaves the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "ZFNs and TALENs are chimeric nucleases composed of a custom-designed DNA binding domain fused to the DNA-cleavage domain from the FokI endonuclease that upon dimer formation cleaves the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the structure and function of ZFNs and TALENs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "65d1d848-9d68-46f7-8ba4-93ecf7ee9f5d",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C6",
+      "claim": "ZFN- and TALEN-induced DSBs trigger genome editing through cellular repair mechanisms involving either error-prone non-homologous end joining (NHEJ) or homologous recombination (HR) with an available DNA donor template.",
+      "claim_type": "EXPLICIT",
+      "source": "ZFN- and TALEN-induced DSBs trigger genome editing through cellular repair mechanisms involving either error-prone non-homologous end joining (NHEJ) or homologous recombination (HR) with an available DNA donor template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about DNA repair mechanisms following nuclease-induced double-strand breaks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "fc23bb18-c35e-415e-832a-32d91d36229a",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C7",
+      "claim": "Designer nucleases have broad applications in biological experimentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Designer nucleases have broad applications in biological experimentation (Urnov et al., 2010; Bogdanove and Voytas, 2011) and have been successfully utilized for the production of gene knockout model animals (Doyon et al., 2008; Geurts et al., 2009; Tesson et al., 2011) and in emerging gene therapies (Perez et al., 2008; Li et al., 2011, 2013; Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a48bf7d6-5e2e-4fe4-a6ed-3b23c5ed742d",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C8",
+      "claim": "Designer nucleases have been successfully utilized for the production of gene knockout model animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Designer nucleases have broad applications in biological experimentation (Urnov et al., 2010; Bogdanove and Voytas, 2011) and have been successfully utilized for the production of gene knockout model animals (Doyon et al., 2008; Geurts et al., 2009; Tesson et al., 2011) and in emerging gene therapies (Perez et al., 2008; Li et al., 2011, 2013; Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Doyon et al., 2008; Geurts et al., 2009; Tesson et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a2821fae-3749-4fef-81a6-f0a9a8889196",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C9",
+      "claim": "Designer nucleases have been used in emerging gene therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Designer nucleases have broad applications in biological experimentation (Urnov et al., 2010; Bogdanove and Voytas, 2011) and have been successfully utilized for the production of gene knockout model animals (Doyon et al., 2008; Geurts et al., 2009; Tesson et al., 2011) and in emerging gene therapies (Perez et al., 2008; Li et al., 2011, 2013; Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Perez et al., 2008; Li et al., 2011, 2013; Sun et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "2dace665-0ea3-4002-b004-0e2a08fbbe90",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C10",
+      "claim": "ZFNs and TALENs have been administered to cells by transfection or electroporation of nucleic acids, DNA or RNA, encoding a pair of nuclease proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, ZFNs and TALENs have been administered to cells by transfection or electroporation of nucleic acids, DNA or RNA, encoding a pair of nuclease proteins (Urnov et al., 2005; Miller et al., 2011; Carlson et al., 2012) or by exploiting viral gene vehicles such as integrase-deficient lentiviral vectors (IDLVs) (Lombardo et al., 2007), adeno-associated virus-derived vectors (AAV vectors) (Ellis et al., 2013), or adenoviral vectors (Holkers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Urnov et al., 2005; Miller et al., 2011; Carlson et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "35e74f3e-1e33-4737-b374-53d8c8671a76",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C11",
+      "claim": "ZFNs and TALENs have been administered to cells by exploiting viral gene vehicles such as integrase-deficient lentiviral vectors (IDLVs).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, ZFNs and TALENs have been administered to cells by transfection or electroporation of nucleic acids, DNA or RNA, encoding a pair of nuclease proteins (Urnov et al., 2005; Miller et al., 2011; Carlson et al., 2012) or by exploiting viral gene vehicles such as integrase-deficient lentiviral vectors (IDLVs) (Lombardo et al., 2007), adeno-associated virus-derived vectors (AAV vectors) (Ellis et al., 2013), or adenoviral vectors (Holkers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Lombardo et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a5f78818-97c5-40d4-bead-d620a32134cb",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C12",
+      "claim": "ZFNs and TALENs have been administered to cells using adeno-associated virus-derived vectors (AAV vectors).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, ZFNs and TALENs have been administered to cells by transfection or electroporation of nucleic acids, DNA or RNA, encoding a pair of nuclease proteins (Urnov et al., 2005; Miller et al., 2011; Carlson et al., 2012) or by exploiting viral gene vehicles such as integrase-deficient lentiviral vectors (IDLVs) (Lombardo et al., 2007), adeno-associated virus-derived vectors (AAV vectors) (Ellis et al., 2013), or adenoviral vectors (Holkers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Ellis et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "d2625f68-8010-4d98-b5b8-7bb73b9bcbf4",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C13",
+      "claim": "ZFNs and TALENs have been administered to cells using adenoviral vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, ZFNs and TALENs have been administered to cells by transfection or electroporation of nucleic acids, DNA or RNA, encoding a pair of nuclease proteins (Urnov et al., 2005; Miller et al., 2011; Carlson et al., 2012) or by exploiting viral gene vehicles such as integrase-deficient lentiviral vectors (IDLVs) (Lombardo et al., 2007), adeno-associated virus-derived vectors (AAV vectors) (Ellis et al., 2013), or adenoviral vectors (Holkers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Holkers et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "5addacf9-111f-4bf9-91a6-c5b5e9dce68d",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C14",
+      "claim": "Successful administration of ZFN- or TALEN-encoding genes leads to high intracellular levels of nucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful administration of ZFN- or TALEN-encoding genes leads to high intracellular levels of nucleases and furthermore imposes a risk of random insertion in the genome, resulting potentially in prolonged nuclease expression and accumulating events of off-target cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of gene delivery methods and their known consequences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "8c1c3fb0-d9a6-4fc5-b517-85676213dd0e",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C15",
+      "claim": "Administration of ZFN- or TALEN-encoding genes imposes a risk of random insertion in the genome, resulting potentially in prolonged nuclease expression and accumulating events of off-target cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful administration of ZFN- or TALEN-encoding genes leads to high intracellular levels of nucleases and furthermore imposes a risk of random insertion in the genome, resulting potentially in prolonged nuclease expression and accumulating events of off-target cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known risks of gene delivery methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "4d64035e-d0a6-43b7-9273-f667adbcb788",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C16",
+      "claim": "ZFNs have been fused to destabilizing domains regulated by small molecules to attenuate ZFN toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Towards this goal, ZFNs have been fused to destabilizing domains regulated by small molecules to attenuate ZFN toxicity (Pruett-Miller et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Pruett-Miller et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a69a74df-5daa-4173-ab8e-1f2920c1d7b3",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C17",
+      "claim": "Targeted gene disruption has been achieved by direct cellular delivery of purified ZFN proteins by exploiting the cell-penetrating capability of ZFNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, by exploiting the cell-penetrating capability of ZFNs, targeted gene disruption has recently been achieved by direct cellular delivery of purified ZFN proteins (Gaj et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Gaj et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "66028830-7db5-48f3-85e9-16b822ad398d",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C18",
+      "claim": "Direct cellular delivery of purified ZFN proteins may require multiple treatments due to the reduced cellular uptake of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such approach may require multiple treatments due to the reduced cellular uptake of proteins (Mellert et al., 2012), recent findings suggest that ZFN uptake may be further improved by ligand-mediated endocytosis (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Mellert et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "428a479b-ae7d-4189-8849-b748d721b67f",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C19",
+      "claim": "ZFN uptake may be improved by ligand-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such approach may require multiple treatments due to the reduced cellular uptake of proteins (Mellert et al., 2012), recent findings suggest that ZFN uptake may be further improved by ligand-mediated endocytosis (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Chen et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "ab1c01e9-cd78-4db4-8de3-55c3289dde02",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C20",
+      "claim": "Retroviruses can tolerate the incorporation of heterologous proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been known for decades that retroviruses can tolerate the incorporation of heterologous proteins (Jones et al., 1990; Weldon et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Jones et al., 1990; Weldon et al., 1990).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "d04d0baf-9f26-4b4f-966b-d5f03f8d7a36",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C21",
+      "claim": "Lentiviral particles (LPs) have been engineered to carry foreign proteins for the purpose of visualizing the intracellular behavior of the virus during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentiviral particles (LPs) have been engineered to carry foreign proteins for the purpose of visualizing the intracellular behavior of the virus during infection (McDonald et al., 2002; Jouvenet et al., 2008) and altering the viral integration profile (Bushman, 1994; Goulaouic and Chow, 1996; Bushman and Miller, 1997), as well as for ferrying antiviral (Okui et al., 2000; Ao et al., 2008) and antitumor (Link et al., 2006; Miyauchi et al., 2012) protein therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (McDonald et al., 2002; Jouvenet et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "997f28e3-b3f9-4918-9fc9-17ab8c424262",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C22",
+      "claim": "Lentiviral particles have been engineered to carry foreign proteins for altering the viral integration profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentiviral particles (LPs) have been engineered to carry foreign proteins for the purpose of visualizing the intracellular behavior of the virus during infection (McDonald et al., 2002; Jouvenet et al., 2008) and altering the viral integration profile (Bushman, 1994; Goulaouic and Chow, 1996; Bushman and Miller, 1997), as well as for ferrying antiviral (Okui et al., 2000; Ao et al., 2008) and antitumor (Link et al., 2006; Miyauchi et al., 2012) protein therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Bushman, 1994; Goulaouic and Chow, 1996; Bushman and Miller, 1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "7232f3c6-b60d-43ee-81fa-0512bf028baa",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C23",
+      "claim": "Lentiviral particles have been engineered to carry foreign proteins for ferrying antiviral protein therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentiviral particles (LPs) have been engineered to carry foreign proteins for the purpose of visualizing the intracellular behavior of the virus during infection (McDonald et al., 2002; Jouvenet et al., 2008) and altering the viral integration profile (Bushman, 1994; Goulaouic and Chow, 1996; Bushman and Miller, 1997), as well as for ferrying antiviral (Okui et al., 2000; Ao et al., 2008) and antitumor (Link et al., 2006; Miyauchi et al., 2012) protein therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Okui et al., 2000; Ao et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "c201fe61-e608-4964-88f2-737cfdde1923",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C24",
+      "claim": "Lentiviral particles have been engineered to carry foreign proteins for ferrying antitumor protein therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentiviral particles (LPs) have been engineered to carry foreign proteins for the purpose of visualizing the intracellular behavior of the virus during infection (McDonald et al., 2002; Jouvenet et al., 2008) and altering the viral integration profile (Bushman, 1994; Goulaouic and Chow, 1996; Bushman and Miller, 1997), as well as for ferrying antiviral (Okui et al., 2000; Ao et al., 2008) and antitumor (Link et al., 2006; Miyauchi et al., 2012) protein therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Link et al., 2006; Miyauchi et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "70f90550-3953-4986-8443-429e3e02c6ec",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C25",
+      "claim": "The accessory HIV-1 protein Vpr was adapted as a carrier of fused proteins in early strategies for transducing heterologous protein cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "In early strategies, the accessory HIV-1 protein Vpr was adapted as a carrier of fused proteins (Wu et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Wu et al., 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "79601d43-a7d0-45b3-bf49-0caab7764ed9",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C26",
+      "claim": "Vpr fusions have been shown to ferry Cre recombinase into transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Vpr fusions have been shown also to ferry Cre recombinase (Michel et al., 2010) and I-SceI meganuclease (Izmiryan et al., 2011) into transduced cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Michel et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "92dab61c-ba22-446d-a9b6-cb9624db6cb9",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C27",
+      "claim": "Vpr fusions have been shown to ferry I-SceI meganuclease into transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Vpr fusions have been shown also to ferry Cre recombinase (Michel et al., 2010) and I-SceI meganuclease (Izmiryan et al., 2011) into transduced cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Izmiryan et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "ed7fccad-97bc-404d-9473-741ad1bcd9d6",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C28",
+      "claim": "HIV-1 virions incorporate approximately 700 copies of Vpr per virion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, HIV-1 virions incorporate relatively few copies of Vpr (estimated 700 copies Vpr per virion [Swanson and Malim, 2008]), and the therapeutic potential of such approach may be hampered further by the known toxicity of the Vpr protein (Tachiwana et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Swanson and Malim, 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "e2f8f3b7-c073-4357-8aee-f00e833cf4bd",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C29",
+      "claim": "The therapeutic potential of Vpr-based protein delivery may be hampered by the known toxicity of the Vpr protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, HIV-1 virions incorporate relatively few copies of Vpr (estimated 700 copies Vpr per virion [Swanson and Malim, 2008]), and the therapeutic potential of such approach may be hampered further by the known toxicity of the Vpr protein (Tachiwana et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Tachiwana et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "cf6d3460-e51f-49f0-acbb-2b232b3c3818",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C30",
+      "claim": "Nonviral proteins may be packaged in LPs as part of the Gag polypeptide, as was previously shown for reporter proteins like GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, nonviral proteins may be packaged in LPs as part of the Gag polypeptide, as was previously shown for reporter proteins like GFP (Aoki et al., 2011) and the apoptosis-inducing caspase 3 protein (Miyauchi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Aoki et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "967a6374-93a9-40a3-bc7f-fb66f5d2d9c3",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C31",
+      "claim": "Nonviral proteins may be packaged in LPs as part of the Gag polypeptide, as was previously shown for the apoptosis-inducing caspase 3 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, nonviral proteins may be packaged in LPs as part of the Gag polypeptide, as was previously shown for reporter proteins like GFP (Aoki et al., 2011) and the apoptosis-inducing caspase 3 protein (Miyauchi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Miyauchi et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "029868b1-9993-4d6f-ab3d-9b5e9f7fef94",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C32",
+      "claim": "Each HIV-1 virion contains approximately 5000 copies of Gag and 250 copies of GagPol.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that each virion contains 5000 copies of Gag and 250 copies of GagPol (Swanson and Malim, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Swanson and Malim, 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "ed594dc0-e1f3-4022-bc2e-c69fa9402198",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C33",
+      "claim": "LPs have been adapted for the delivery of the piggybac DNA transposase, which was released from Gag in a protease-dependent manner and found to facilitate efficient DNA transposition in transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently adapted LPs for the delivery of the piggybac DNA transposase (Cai et al., 2014). The transposase was released from Gag in the virus particles in a protease-dependent manner and found to be able to facilitate efficient DNA transposition in transduced cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors (Cai et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "d9583f2f-959d-4978-8606-7aaaf00c9672",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C34",
+      "claim": "Heterologous proteins fused to the integrase in the Pol region of the GagPol polypeptide were successfully delivered by protein transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In yet another strategy, heterologous proteins fused to the integrase in the Pol region of the GagPol polypeptide were successfully delivered by protein transduction (Schenkwein et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Schenkwein et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "c02892bc-3e40-4b0f-808e-5b8bb995e0dc",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C35",
+      "claim": "ZFN proteins fused to lentiviral Gag precursors are released from the Gag and GagPol polypeptides during particle maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "For both ZFN-loaded LPs, we detected HA-tagged ZFNs of the predicted, full-length size (\u223c37.5 kDa), demonstrating that the majority of the virion-associated ZFNs was correctly released from the Gag and GagPol polypeptides during particle maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "118cedfc-08fa-4a5b-8bdf-551e39680e6e",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C36",
+      "claim": "Release of ZFN and p24 from ZFN-PH-GagPol polypeptides is dependent on the HIV-1 protease.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of ZFN and p24 (Figure 1B,C, left and right panels, respectively) from ZFN-PH-GagPol polypeptides was inhibited by treatment of the virus-producing cells with the HIV-1 protease inhibitor Saquinavir (SQV), confirming that polypeptide cleavage, and the resulting release of ZFN proteins, was dependent on the HIV-1 protease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1B,C demonstrating inhibition by Saquinavir.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "870a889f-b937-43da-8982-89796deb662d",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C37",
+      "claim": "ZFN protein transduction causes dose-dependent cleavage of egfp as measured by detection of NHEJ-induced sequence alterations using the Surveyor nuclease assay.",
+      "claim_type": "EXPLICIT",
+      "source": "ZFN protein transduction caused dose-dependent cleavage of egfp as measured by detection of NHEJ-induced sequence alterations using the Surveyor nuclease assay (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "08eb5634-90c0-4a07-8ab3-78c89da43711",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C38",
+      "claim": "Among 42 analyzed clones from cells treated with 600 ng p24 LP-ZFNLR(gfp), 8 were found to contain egfp gene disruptions, providing an unbiased disruption frequency of 19%.",
+      "claim_type": "EXPLICIT",
+      "source": "Among a total of 42 analyzed clones, 8 were found to contain egfp gene disruptions, providing an unbiased disruption frequency of 19% (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence analysis data presented in Table 1 and Table 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "d08f23b9-f852-4a77-9d36-468473226c98",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C39",
+      "claim": "ZFN-directed cleavage and subsequent error-prone repair by NHEJ is detectable as early as 12 hr posttransduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ZFN-directed cleavage and subsequent error-prone repair by NHEJ was detectable as early as 12 hr posttransduction (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by time-course data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "05992931-152a-4e88-8f3c-b8a2806b28e4",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C40",
+      "claim": "LP-delivered pairs of ZFNs targeting CCR5 and AAVS1 loci cause significant levels of disruption in HEK293 cells, normal human dermal fibroblasts (NHDFs), and primary human keratinocytes (HKs) in an LP dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "For both loci and in all cell types, we observed significant levels of disruption and found that such disruption occurred in an LP dose-dependent manner (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "c91b0965-4995-406b-9ac3-68487849e3bc",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C41",
+      "claim": "The percentage of sequenced clones harboring targeted disruptions in the CCR5 locus ranges from 17% in HEK293 cells and NHDFs to 24% in primary HKs.",
+      "claim_type": "EXPLICIT",
+      "source": "For the three cell types, the percentage of sequenced clones harboring targeted disruptions in the CCR5 locus ranged from 17% in HEK293 cells and NHDFs to 24% in primary HKs, whereas from 13% to 20% of the analyzed AAVS1 loci, depending on the cell type, harbored indels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence analysis data presented in Table 1 and Table 1\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "35462432-862d-42a4-9f0e-a348ca312176",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C42",
+      "claim": "From 13% to 20% of the analyzed AAVS1 loci, depending on the cell type, harbor indels after treatment with LP-ZFNLR(AAVS1).",
+      "claim_type": "EXPLICIT",
+      "source": "For the three cell types, the percentage of sequenced clones harboring targeted disruptions in the CCR5 locus ranged from 17% in HEK293 cells and NHDFs to 24% in primary HKs, whereas from 13% to 20% of the analyzed AAVS1 loci, depending on the cell type, harbored indels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence analysis data presented in Table 1 and Table 1\u2014source data 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "0c7dec67-25ab-4a7a-940a-8809e93c87c8",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C43",
+      "claim": "At a dose of 300 ng p24, LP-ZFNLR(gfp) induces a level of repair that is comparable to that obtained by the efficient co-transfection of plasmid DNA encoding the two ZFNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, at a dose of 300 ng p24, LP-ZFNLR(gfp) induced a level of repair that was comparable to that obtained by the efficient co-transfection of plasmid DNA encoding the two ZFNs (Figure 3B, compare two right columns).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "8158c6fe-a940-42f2-b0b6-b831dd61ed5c",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C44",
+      "claim": "Co-delivery of IDLV/donor and LP-ZFNLR(gfp) to HEK293-eGFPmut cells induces gene repair, whereas neither IDLV/donor nor LP-ZFNLR(gfp) alone induces significant levels of eGFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-delivery of IDLV/donor and LP-ZFNLR(gfp) to the HEK293-eGFPmut cells induced gene repair, whereas neither IDLV/donor nor LP-ZFNLR(gfp) alone induced significant levels of eGFP expression (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "b57fe225-e94f-4413-b056-9297ea2af3c9",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C45",
+      "claim": "Co-transduction with two IDLVs (IDLV-ZFNL(gfp)/donor and IDLV-ZFNR(gfp)/donor) induces eGFP expression in about 4% of treated cells, whereas neither of the two vectors alone causes gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Induced eGFP expression was observed only in cells treated with both IDLVs, indicative of active editing in about 4% of the treated cells, whereas neither of the two vectors alone caused gene editing (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "4670e42f-fbab-4f34-9e88-d891d3f90bd4",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C46",
+      "claim": "Treatment of HEK293-eGFPmut cells with 'all-in-one' IDLVs (IDLV-ZFNLR(gfp)/donor) results in potent induction of eGFP expression in a vector dose-dependent manner, leading to editing in more than 8% of the cells treated with ZFN-loaded IDLVs corresponding to 600 ng p24.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the HEK293-eGFPmut cells with this vector resulted in potent induction of eGFP expression in a vector dose-dependent manner, leading to editing at most in more than 8% of the cells treated with ZFN-loaded IDLVs corresponding to 600 ng p24 (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "79c22230-1870-4f91-82c2-7e58f0f87568",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C47",
+      "claim": "The overall transduction capacity of ZFN-loaded IDLVs is reduced more than fivefold relative to standard IDLVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we determined MOIs of 9.2 and 1.7 for IDLV/donor and IDLV-ZFNLR(gfp)/donor, respectively (Figure 3\u2014figure supplement 1C), demonstrating that the overall transduction capacity of ZFN-loaded IDLVs was reduced more than fivefold relative to standard IDLVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "952bc7ea-1bac-40e0-a195-2fc2885dbc7f",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C48",
+      "claim": "IDLV/donor samples contain 3.1 \u00d7 10^4 infectious units (IU)/ng p24.",
+      "claim_type": "EXPLICIT",
+      "source": "It is directly deduced from these analyses that IDLV/donor samples contain 3.1 \u00d7 104 infectious units (IU)/ng p24, whereas preparations of IDLV-ZFNLR(gfp)/donor contain an estimated 5.7 \u00d7 103 IU/ng p24 (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data and calculations shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "623d7d51-cb87-4014-bc94-678c015d7eee",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C49",
+      "claim": "Preparations of IDLV-ZFNLR(gfp)/donor contain an estimated 5.7 \u00d7 10^3 IU/ng p24.",
+      "claim_type": "EXPLICIT",
+      "source": "It is directly deduced from these analyses that IDLV/donor samples contain 3.1 \u00d7 104 infectious units (IU)/ng p24, whereas preparations of IDLV-ZFNLR(gfp)/donor contain an estimated 5.7 \u00d7 103 IU/ng p24 (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data and calculations shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "356d19b2-8267-4e9d-a936-a25b5da56055",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C50",
+      "claim": "Editing of the egfp gene is absent when the particles are not pseudotyped with VSV-G and therefore incapable of transducing the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, editing of the egfp gene was absent when the particles were not pseudotyped with VSV-G and therefore incapable of transducing the cells (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a3c3a86b-319c-4f83-8c7b-becb60d67d4d",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C51",
+      "claim": "Pretreatment of reporter cells with Bafilomycin A1 (Baf A1), an inhibitor of endosomal escape, markedly reduces the level of editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, pretreatment of the reporter cells with Bafilomycin A1 (Baf A1), an inhibitor of endosomal escape, markedly reduced the level of editing (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "40c5a9de-1203-48bf-b054-dfbd6e72af8a",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C52",
+      "claim": "'All-in-one' lentiviral vectors containing both ZFN proteins and the donor sequence facilitate high levels of targeted gene repair in a manner that depends on the dose and VSV-G-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that 'all-in-one' lentiviral vectors containing both ZFN proteins and the donor sequence facilitate high levels of targeted gene repair in a manner that depends on the dose and VSV-G-mediated endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "93246099-6e7c-45ed-a036-b9cb26f5644e",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C53",
+      "claim": "Site-directed editing facilitated by HR of both the CCR5 and AAVS1 loci is observed in HEK293 cells and NHDFs after treatment with 'all-in-one' IDLVs at an MOI of 34.",
+      "claim_type": "EXPLICIT",
+      "source": "By PCR amplification using primers recognizing the LS and sequences outside the homology arm, we observed site-directed editing facilitated by HR of both the CCR5 and AAVS1 loci in HEK293 cells and NHDFs (Figure 3F, right panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by PCR data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "099aa3ef-5af6-4778-97db-a90ea86860e8",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C54",
+      "claim": "Signs of editing are not evident in cells treated with preparations of IDLVs harboring only one of the ZFNs (ZFNL(CCR5) or ZFNL(AAVS1)), indicating that homology-directed insertion of the linker is achieved only after delivery of both left and right ZFN proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, signs of editing were not evident in cells treated with preparations of IDLVs harboring only one of the ZFNs (ZFNL(CCR5) or ZFNL(AAVS1)), indicating that homology-directed insertion of the linker was achieved only after delivery of both left and right ZFN proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by PCR data shown in Figure 3F and represents an inference from the negative control results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "0ae47e08-fb13-4de1-b5b9-525b9ccf8a8e",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C55",
+      "claim": "LP-TALENLR(gfp) carrying both the left and right TALEN proteins designed to recognize sequences flanking the mutations in the egfp gene induces gene disruption in HEK293-eGFPmut reporter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene disruption was identified by Surveyor nuclease-directed detection of mismatches in re-annealed PCR products (Figure 4B) and confirmed by sequencing of cloned PCR products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 4B and sequence data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "988d59b4-5418-403b-974a-f71b2a0f24eb",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C56",
+      "claim": "3 out of 46 sequenced alleles (6.5%) were found to contain indels as a result of treatment with LP-delivered TALEN proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, 3 out of 46 sequenced alleles (6.5%) were found to contain indels as a result of the treatment with LP-delivered TALEN proteins (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence analysis data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "1c8efec6-60fa-48f1-855a-92ca6ccb1cb2",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C57",
+      "claim": "Transfecting cells with plasmid DNA containing the donor sequence prior to treatment with LP-TALENLR(gfp) results in 0.2% of the cells being eGFP positive as measured 15 days after transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, by transfecting the cells with plasmid DNA containing the donor sequence prior to treatment of the cells with LP-TALENLR(gfp), we found that 0.2% of the cells were eGFP positive (as measured 15 days after transduction), whereas control treatments without LPs and donor DNA, respectively did not trigger eGFP expression (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "aebc3625-b29f-460c-8cfb-cc7b1f9b709e",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C58",
+      "claim": "Western blot analysis of viral particles harboring an HA-tagged version of one of the two TALEN proteins fused to the GagPol polypeptide reveals a cleavage pattern indicative of substantial proteolytic cleavage within the TALEN domain of the fusion protein, leading to truncated versions of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Western blot analysis of viral particles harboring an HA-tagged version of one of the two TALEN proteins fused to the GagPol polypeptide unveiled a cleavage pattern indicative of substantial proteolytic cleavage within the TALEN domain of the fusion protein, leading to truncated versions of the protein (indicated by TALEN* in Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "814adf6b-bbcd-4c66-89e5-742384ddc95a",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C59",
+      "claim": "A low level of full-length TALEN protein is evident in the particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a low level of full-length TALEN protein with the same mobility as HA-tagged TALEN protein expressed in cells (Figure 4E, upper band marked by 'TALEN') was indeed evident in the particles, these data indicated the presence of cryptic HIV-1 protease cleavage sites internally in the TALEN protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a74f93d5-6512-4583-8cec-da3b16ad2fa5",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C60",
+      "claim": "The presence of cryptic HIV-1 protease cleavage sites internally in the TALEN protein is indicated by Western blot analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a low level of full-length TALEN protein with the same mobility as HA-tagged TALEN protein expressed in cells (Figure 4E, upper band marked by 'TALEN') was indeed evident in the particles, these data indicated the presence of cryptic HIV-1 protease cleavage sites internally in the TALEN protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the Western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "2b0101c7-c594-458c-aa5d-59e27b0b0af1",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C61",
+      "claim": "TALEN-directed gene disruption and repair may be further optimized by localizing and eliminating internal protease cleavage sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that TALEN-directed gene disruption and repair may be further optimized by localizing and eliminating internal protease cleavage sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation of internal cleavage sites.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "df8fbc51-66e2-47ce-8883-4ed328dd17a8",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C62",
+      "claim": "The CCR2 locus has high homology to CCR5 and has been identified as a major off-target site of CCR5-targeting ZFNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The CCR2 locus has high homology to CCR5 and has been identified as a major off-target site of CCR5-targeting ZFNs (Perez et al., 2008; Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Perez et al., 2008; Lee et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "bf4d64d6-35ce-4537-a67a-4c14f6f87d5b",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C63",
+      "claim": "For the CCR5-targeting ZFNs employed in this study, only a single nucleotide differs between the CCR5 and CCR2 recognition sites of each ZFN.",
+      "claim_type": "EXPLICIT",
+      "source": "For the CCR5-targeting ZFNs employed in this study, only a single nucleotide differs between the CCR5 and CCR2 recognition sites of each ZFN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the specific ZFNs used in the study, based on sequence analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "1fa22c93-30be-4da2-b07f-51c235e1857a",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C64",
+      "claim": "Off-target cleavage at the CCR2 locus is observed by both protein transduction and plasmid transfection but not in non-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed off-target cleavage at the CCR2 locus by both protein transduction and plasmid transfection but not in the non-treated cells (Figure 5B), indicating that both LP-delivered and DNA-encoded ZFNs induced simultaneous double-stranded DNA breaks within the CCR2 and CCR5 loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by PCR data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "7c5282b9-8209-4f02-bb37-d7b56a16f414",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C65",
+      "claim": "Both LP-delivered and DNA-encoded ZFNs induce simultaneous double-stranded DNA breaks within the CCR2 and CCR5 loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed off-target cleavage at the CCR2 locus by both protein transduction and plasmid transfection but not in the non-treated cells (Figure 5B), indicating that both LP-delivered and DNA-encoded ZFNs induced simultaneous double-stranded DNA breaks within the CCR2 and CCR5 loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the PCR data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "d3bb88ae-4a6c-4f8c-8b21-3cda6f811d69",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C66",
+      "claim": "Protein transduction by lentiviral particles induces significantly higher rates of on-target gene disruption than plasmid transfection under the given conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5C (left panel) by Surveyor nuclease-directed detection of mismatches in re-annealed PCR products, protein transduction by lentiviral particles induced under the given conditions significantly higher rates of on-target gene disruption than plasmid transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "98d49643-447f-43b9-a7c8-8c10ed869c79",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C67",
+      "claim": "An increasing dose of ZFN-loaded LPs triggers increased off-target activity at the CCR2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when we analyzed for mismatches at the CCR2 locus, an increasing dose of ZFN-loaded LPs was seen to trigger increased off-target activity (Figure 5C, right panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "7e31c31c-35e9-42b3-99c3-467763e57fb8",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C68",
+      "claim": "A similar level of off-target activity is observed for all doses of transfected plasmid DNA, indicating that LP-delivered ZFNs even at levels that induced markedly higher levels of on-target disruption do not induce increased levels of off-target activity at the CCR2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, a similar level of off-target activity was observed for all doses of transfected plasmid DNA, indicating that LP-delivered ZFNs even at levels that induced markedly higher levels of on-target disruption did not induce increased levels of off-target activity at the CCR2 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 5C and represents an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "4ea5a277-dbb9-4ac7-9c4f-43eef8ce3be9",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C69",
+      "claim": "Under experimental conditions that allow similar rates of on-target disruption using LP-directed ZFN delivery and plasmid-encoded ZFN production, off-target activity within the CCR2 locus is detected only after ZFN-encoding plasmid delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "By subsequent analyses of off-target disruption within the CCR2 locus of the same cells, we detected disruption (3%) induced by plasmid-encoded ZFNs, whereas indels and mismatches were not evident after ZFN protein transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "fd0bd1a2-e14b-41be-8a57-eeba71b098b1",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C70",
+      "claim": "LP-directed protein transduction achieves locus targeting with an improved on-target/off-target cleavage ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings lend strong support to the notion that locus targeting by LP-directed protein transduction is both effective and favored by an improved on-target/off-target cleavage ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "5b2e3c97-9969-436b-938e-ced356d0ceec",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C71",
+      "claim": "Efficient gene targeting can be achieved in a narrow window of ZFN exposure and activity outside this time window can cause toxicity without improving gene targeting efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that efficient gene targeting can be achieved in a narrow window of ZFN exposure and that activity outside this time window can cause toxicity without improving gene targeting efficiencies (Porteus and Baltimore, 2003; Pruett-Miller et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Porteus and Baltimore, 2003; Pruett-Miller et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "802cade7-a10a-4369-8f51-713d07ba7915",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C72",
+      "claim": "The improvement in on-target/off-target cleavage ratio is a combined effect of efficient transduction and the short-term exposure to transduced ZFN proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We reason that such improvement is a combined effect of efficient transduction and the short-term exposure to transduced ZFN proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "f510fe46-ef7d-42ce-93bd-dc1bf1397448",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C73",
+      "claim": "Lentiviral protein transduction of nuclease proteins represents a versatile alternative to current nuclease delivery techniques and will support continued efforts to promote safe genome editing therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that lentiviral protein transduction of nuclease proteins represents a versatile alternative to current nuclease delivery techniques and will support continued efforts to promote safe genome editing therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the future applications of the technology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "750102eb-9609-45d4-8335-a2f5fce3ba18",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C74",
+      "claim": "Genomic engineers will likely strive to adapt LPs as carriers of Cas9 proteins for RNA-guided genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Likely, genomic engineers will strive to adapt LPs as carriers of Cas9 proteins for RNA-guided genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "04db1b51-88b9-4c54-b8bf-ee781e2877e1",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C75",
+      "claim": "IDLVs have been exploited to deliver ZFN-encoding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Though IDLVs have been exploited to deliver ZFN-encoding genes (Lombardo et al., 2007), there are some clear inherent limitations to this approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Lombardo et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a29f655e-b85b-4153-a3ee-01468fc35077",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C76",
+      "claim": "Random integration of the vector can lead to insertional mutagenesis and sustained expression of ZFNs may cause cytotoxicity or chromosomal aberrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, random integration of the vector can lead to insertional mutagenesis and sustained expression of ZFNs may cause cytotoxicity or chromosomal aberrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the risks of gene delivery methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "c21e47cc-31f2-4e68-a1b5-f4ef21345245",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C77",
+      "claim": "Two separate IDLVs are necessary to provide the two ZFNs and a third IDLV needs to be included if a donor template is required for homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, two separate IDLVs are necessary to provide the two ZFNs and a third IDLV needs to be included if a donor template is required for homologous recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the requirements of conventional IDLV-based ZFN delivery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "9c3084f4-7376-4c5a-8e39-3350d8959943",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C78",
+      "claim": "Single IDLVs encoding both ZFNs have been described but do not perform as well as two separate IDLVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Single IDLVs encoding both ZFNs have recently been described, but these do not perform as well as two separate IDLVs (Joglekar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Joglekar et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "e5acaa81-3a69-4399-a65e-bdbdf2e69b86",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C79",
+      "claim": "There are major difficulties in delivering TALENs by IDLVs due to an inherent propensity of lentiviral vectors to undergo recombination during reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, due to the highly repetitive sequences in TALENs there are major difficulties in delivering these by IDLVs due to an inherent propensity of lentiviral vectors to undergo recombination during reverse transcription (Mikkelsen and Pedersen, 2000; Holkers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Mikkelsen and Pedersen, 2000; Holkers et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "2536c4dc-fce6-4c28-888d-40960c2264df",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C80",
+      "claim": "Lentiviral delivery of genes encoding re-coded TALE variants has been reported so far only for transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, lentiviral delivery of TALEN-encoding genes is further complicated by frequent recombination between the highly similar sequence repeats encoding the DNA-binding domain (Holkers et al., 2013), and lentiviral delivery of genes encoding re-coded TALE variants has been reported so far only for transcriptional activation (Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Yang et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "04e3349e-6305-4a44-a177-4bc650b583b8",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C81",
+      "claim": "Lentivirus-derived particles can be used as vehicles for different sets of designer nuclease proteins that are released from the Gag polypeptide upon virion maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have shown the feasibility of exploiting lentivirus-derived particles as vehicles for different sets of designer nuclease proteins that are released from the Gag polypeptide upon virion maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study, supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "d8be56e0-ba9a-4652-bdd0-adbf2e198ac0",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C82",
+      "claim": "Lentiviral protein delivery facilitates a short boost of protein activity that drives immediate targeted gene disruption (within 12 hr) in up to near one-fourth of the target alleles in a population of cells without the risks of permanently inserting copies of ZFN- or TALEN-encoding genes into the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach facilitates a short boost of protein activity that drives immediate targeted gene disruption (within 12 hr) in up to near one-fourth of the target alleles in a population of cells without the risks of permanently inserting copies of ZFN- or TALEN-encoding genes into the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings supported by data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "08f348b6-c040-4893-8917-763297830944",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C83",
+      "claim": "A lentiviral protein delivery approach benefits from effective lentiviral transduction and can easily be further customized by adapting different lentiviral pseudotypes to direct protein transduction to specific cell types of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as an alternative to protocols based on transfection of in vitro-transcribed RNA (Meng et al., 2008) or the cell-penetrating capability of purified ZFNs (Gaj et al., 2012), a lentiviral protein delivery approach benefits from effective lentiviral transduction and can easily be further customized by adapting different lentiviral pseudotypes to direct protein transduction to specific cell types of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the approach, with citations to alternative methods (Meng et al., 2008; Gaj et al., 2012).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "aa779587-d1de-485a-8d19-5634898bcbba",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C84",
+      "claim": "At an MOI of approximately 34, 'all-in-one' vectors edited the reporter gene in up to 8% of treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At an MOI of approximately 34, such 'all-in-one' vectors edited the reporter gene in up to 8% of treated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "14799abb-e897-4c2e-901d-1d082afdddc3",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C85",
+      "claim": "The level of gene repair obtained with IDLVs carrying both ZFNs and the donor template is higher than previously reported repair rates obtained with the same pair of ZFNs under similar conditions using an analogous reporter system.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of gene repair obtained with IDLVs carrying both ZFNs and the donor template is higher than previously reported repair rates obtained with the same pair of ZFNs under similar conditions using an analogous reporter system (Urnov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior literature (Urnov et al., 2005) based on the data obtained in this study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "e8b3599b-7d9f-4551-8823-2e2445e831ac",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C86",
+      "claim": "A high rate of repair after protein transduction reflects the combined capacity of LPs to coordinately deliver pairs of nucleases by protein transduction and provide a donor for homologous recombination which is associated with the pre-integration complex and therefore is actively and efficiently translocated to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a direct comparison is not possible, we reason that a high rate of repair after protein transduction reflects the combined capacity of LPs to (i) coordinately deliver pairs of nucleases by protein transduction and (ii) provide a donor for homologous recombination which is associated with the pre-integration complex and therefore is actively and efficiently translocated to the nucleus (Coluccio et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism, with citation to prior literature (Coluccio et al., 2013).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "69af40c5-83a3-41e2-8107-2eeb4b1024ca",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C87",
+      "claim": "The uptake of LP-delivered heterologous proteins is extremely limited relative to the very high levels of nuclear protein that can be achieved by standard plasmid DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously observed that the uptake of LP-delivered heterologous proteins is extremely limited relative to the very high levels of nuclear protein that can be achieved by standard plasmid DNA transfection (Cai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors (Cai et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a85dd9af-c196-4aa0-b922-c400d111c51d",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C88",
+      "claim": "Editing is supported by the co-localization of ZFN proteins and the donor template within the pre-integration complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we currently favor a model by which editing is further supported by the co-localization of ZFN proteins and the donor template within the pre-integration complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed by the authors based on their observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "a6dd5e2a-b8df-49b1-92bf-943da62d8c35",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C89",
+      "claim": "TALENs have higher modularity than ZFNs and are becoming more routinely used due to the ease of production.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to ZFNs, TALENs have higher modularity and are becoming more routinely used due to the ease of production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the relative advantages of TALENs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "692f2966-26b7-4a5e-9cd6-c8b3da52b4b3",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C90",
+      "claim": "TALENs are relatively large proteins (\u223c100 kDa), which may challenge their delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TALENs are relatively large proteins (\u223c100 kDa), and this may challenge their delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the size of TALENs and an inference about delivery challenges.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "3bd8d4c4-a474-4a53-b241-798b81b1ef52",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C91",
+      "claim": "The majority of virally incorporated TALEN subunits are cleaved internally by the HIV-1 protease, which is suspected to limit the overall efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of virally incorporated TALEN subunits are cleaved internally by the HIV-1 protease, which is suspected to limit the overall efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "c43df591-0be9-4f14-8b09-84eb24b324af",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C92",
+      "claim": "LPs loaded with CCR5-directed ZFNs cause disruptions in the CCR5 locus more effectively than ZFNs expressed from transfected plasmid DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, LPs loaded with CCR5-directed ZFNs caused disruptions in the CCR5 locus more effectively than ZFNs expressed from transfected plasmid DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "50a06c0b-52e4-4140-9858-2b5c590358df",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C93",
+      "claim": "In cells where LPs and plasmid-encoded ZFNs cause similar rates of CCR5 disruption, disruptions in the off-target CCR2 locus are evident with all concentrations of plasmid but detectable only with the highest and most effective dose of LPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same cells, disruptions in the off-target CCR2 locus were evident with all concentrations of plasmid but detectable only with the highest and most effective dose of LPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Surveyor nuclease assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "dafdf286-1ba9-4a7e-a4a7-c1d8ecc7a9d8",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C94",
+      "claim": "LP-delivered ZFNs target a safe harbor in the human genome with an improved on-target/off-target cleavage ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support the notion that LP-delivered ZFNs target a safe harbor in the human genome with an improved on-target/off-target cleavage ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "44b7fa94-0c63-4cd7-a2a4-32814445c5b4",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C95",
+      "claim": "The IN D64V mutation renders the viral integrase incapable of catalyzing vector insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "We began by incorporating ZFNs targeting the egfp reporter gene (Urnov et al., 2005) into the gag gene of a packaging construct harboring the IN D64V mutation (Figure 1A), rendering the viral integrase (IN) incapable of catalyzing vector insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the D64V mutation in HIV-1 integrase.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "58b48b16-fe08-42dc-851b-330c485d40ef",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C96",
+      "claim": "An HIV-1 protease cleavage site (SQNY/PIVQ) was included between the ZFN and the PH domain to allow the release of functional ZFN proteins during particle maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "An HIV-1 protease cleavage site (SQNY/PIVQ) was included between the ZFN and the PH domain to allow the release of functional ZFN proteins during particle maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "943ac099-695e-41dd-9f29-acfad50fa695",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C97",
+      "claim": "Processing of ZFN-PH-GagPol polypeptides is not complete and proteolytic cleavage also occurs outside the inserted cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, both longer and shorter forms of the ZFNs were evident (indicated by ZFN* in Figure 1B,C), suggesting that processing was not complete and that proteolytic cleavage had also occurred outside the inserted cleavage site, despite the fact that neither the ZFNs nor the PH domain contained naive HIV-1 cleavage sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on Western blot data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "292f1052-3089-4040-93d5-47dd467d7774",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C98",
+      "claim": "Neither the ZFNs nor the PH domain contain naive HIV-1 cleavage sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, both longer and shorter forms of the ZFNs were evident (indicated by ZFN* in Figure 1B,C), suggesting that processing was not complete and that proteolytic cleavage had also occurred outside the inserted cleavage site, despite the fact that neither the ZFNs nor the PH domain contained naive HIV-1 cleavage sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design of the constructs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "e62de3bb-5535-4790-95f9-b9642d1a0c86",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C99",
+      "claim": "HEK293 cells and HKs contain the CCR5 \u039432 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "In HEK293 cells and HKs, we consistently observed an extra band (indicated by * in Figure 2, left panels) that was confirmed by sequencing to originate from the CCR5 \u039432 allele present in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequencing data confirming the identity of the extra band in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "eb4fc658-b91e-4545-8551-ffae75ebefdb",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C100",
+      "claim": "The donor vector plasmid carries a 2.1-kb long sequence with homology to the egfp cassette present in the HEK293-eGFPmut cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated, therefore, a donor vector plasmid carrying a 2.1-kb long sequence with homology to the egfp cassette present in the HEK293-eGFPmut cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "d534eedd-e598-43ea-9d43-a5eec87b58dd",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C101",
+      "claim": "The donor vector does not itself express eGFP, but serves as donor for robust repair of egfp in HEK293-eGFPmut cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This vector did not itself express eGFP, but served as donor for robust repair of egfp (leading to eGFP production) in HEK293-eGFPmut cells that were transfected with donor-containing plasmid DNA and treated with increasing dosages of LP-ZFNLR(gfp) (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design and results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "87a91a2f-b9c8-4044-af57-41539e0f3833",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C102",
+      "claim": "The reverse-transcribed vector serves as a recombination donor during HR-directed editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the donor sequence was delivered by integrase-defective lentiviral vectors (IDLV/donor), allowing the reverse-transcribed vector to serve as a recombination donor during HR-directed editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design and mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "02bd47fb-6dd7-41ac-9941-3e27d765ec29",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C103",
+      "claim": "Virions harboring Gag fused N-terminally to foreign proteins are strongly reduced in their capability of transferring vector RNA, but this capacity can be restored by including unfused GagPol in the virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we have consistently observed that virions harboring Gag fused N-terminally to foreign proteins are strongly reduced in their capability of transferring vector RNA (most likely due to complications during reverse transcription), but that this capacity can be restored by including unfused GagPol (encoded by pMDlg/pRRE-D64V) in the virions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "e3962fb1-d4ac-4265-b1cd-6914eecd57f4",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "claim_id": "C104",
+      "claim": "The reduced capability of transferring vector RNA in virions with Gag fused N-terminally to foreign proteins is most likely due to complications during reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we have consistently observed that virions harboring Gag fused N-terminally to foreign proteins are strongly reduced in their capability of transferring vector RNA (most likely due to complications during reverse transcription), but that this capacity can be restored by including unfused GagPol (encoded by pMDlg/pRRE-D64V) in the virions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f8b68df2-1ea3-4a11-b5df-b1d3ea1d7600",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ZFN proteins fused to lentiviral Gag precursors are released from the Gag and GagPol polypeptides during particle maturation in an HIV-1 protease-dependent manner, though processing is incomplete and some cleavage occurs at cryptic sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are directly supported by Western blot data in Figure 1B,C showing full-length ZFN release and protease inhibitor experiments. Claims C96-C98 describe the experimental design and observations of incomplete processing. The data consistently demonstrate protease-dependent ZFN release with some non-specific cleavage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "034c7ae8-83dd-41d5-ba3b-d34382a65d70",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LP-delivered ZFN proteins cause dose-dependent gene disruption in reporter cells, with detectable activity as early as 12 hours post-transduction and achieving 19% disruption frequency at 600 ng p24.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by Surveyor nuclease assay data (Figure 1D,E) and sequence analysis (Table 1). The dose-dependent response, rapid kinetics, and quantified disruption rates provide strong evidence for functional ZFN delivery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "56fdf9d6-5020-468b-a4bc-363321631231",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LP-delivered ZFN pairs targeting endogenous CCR5 and AAVS1 loci achieve significant gene disruption (13-24%) across multiple cell types including HEK293 cells, NHDFs, and primary keratinocytes in a dose-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by Surveyor assay data (Figure 2) and sequence analysis (Table 1, source data 2-3). The consistency across cell types and loci demonstrates broad applicability, though efficiency varies by cell type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "4824aee6-7929-4635-a754-213e08f83de1",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Co-delivery of ZFN proteins and donor templates via lentiviral particles enables homology-directed repair, with 'all-in-one' IDLVs achieving up to 8% gene editing in a dose-dependent manner that requires VSV-G-mediated endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46, C50-C52 are supported by flow cytometry data (Figure 3B-E) showing gene repair with various delivery configurations. Controls demonstrate specificity (VSV-G requirement, Bafilomycin A1 inhibition). The 8% editing efficiency at MOI 34 is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "9789e322-406d-4c1b-9917-d2bd1ae637fd",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ZFN-loaded IDLVs have reduced transduction capacity (MOI 1.7, ~5,700 IU/ng p24) compared to standard IDLVs (MOI 9.2, ~31,000 IU/ng p24), representing a greater than fivefold reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by qPCR data (Figure 3\u2014figure supplement 1) quantifying viral DNA and calculating MOI and infectious units. The methodology is appropriate and the fivefold reduction is clearly demonstrated, though this represents a limitation of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "070274de-a092-42fc-9e27-29124025bb72",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "'All-in-one' IDLVs carrying both ZFN proteins and donor templates achieve site-directed editing via homologous recombination at CCR5 and AAVS1 loci, requiring delivery of both left and right ZFN proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by PCR data (Figure 3F) showing linker sequence insertion at endogenous loci. The negative controls (single ZFN delivery) appropriately demonstrate the requirement for both ZFN proteins, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "5c2a0bb7-1885-4d1a-bcba-570c6d181201",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LP-delivered TALEN proteins achieve targeted gene disruption (6.5% of alleles) and can facilitate gene repair (0.2% of cells) when combined with donor DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by Surveyor assay (Figure 4B), sequence analysis (Figure 4C), and flow cytometry (Figure 4D). However, the efficiency is notably lower than ZFN-mediated editing, and the 15-day timepoint for repair assessment is unusually long.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "1518a509-55a0-464a-abb7-65594b3c9877",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TALEN proteins incorporated into lentiviral particles undergo substantial internal proteolytic cleavage by HIV-1 protease, producing truncated proteins alongside low levels of full-length TALEN, which likely limits overall efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by Western blot data (Figure 4E) showing cleavage patterns. Claims C61 and C91 are reasonable inferences about optimization potential and efficiency limitations. The presence of cryptic cleavage sites is a significant technical challenge that requires further work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "250aac76-10b5-4990-ab0d-1bbea785bc30",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LP-delivered ZFNs induce higher on-target disruption than plasmid-delivered ZFNs under given conditions, while showing dose-dependent off-target activity at CCR2 that does not increase proportionally with on-target activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by PCR and Surveyor assay data (Figure 5B,C). The comparison shows LP delivery achieves better on-target activity, and importantly, off-target activity plateaus for plasmid delivery while remaining dose-dependent for LP delivery, suggesting improved specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "0a8f368d-d6a7-4f72-9681-21e3e261a912",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Under conditions producing similar on-target CCR5 disruption rates, LP-delivered ZFNs show no detectable off-target activity at CCR2 while plasmid-encoded ZFNs produce 3% off-target disruption, demonstrating improved on-target/off-target ratio for protein transduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70, C92-C94 are supported by Surveyor assay data (Figure 5C,D) comparing matched on-target conditions. This is a key finding demonstrating safety advantages of protein delivery. The experimental design appropriately controls for on-target activity levels to enable fair comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "8bf23284-29ba-4558-9e7b-8397de07f6f8",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Lentiviral vectors can be adapted as carriers of designer nuclease proteins, facilitating rapid targeted gene disruption (within 12 hours) in up to one-fourth of target alleles without genomic integration of nuclease-encoding genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C81-C82 summarize the main findings supported by data throughout the manuscript (Figures 1-2, Table 1). The approach is demonstrated for both ZFNs and TALENs across multiple cell types and genomic loci, representing a significant methodological advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "40afd032-c82f-4e73-b695-71bd9a3beace",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Co-packaging ZFN proteins with donor RNA in 'all-in-one' lentiviral particles enables coordinated delivery achieving up to 8% gene repair at MOI 34, exceeding previously reported rates with the same ZFNs, likely due to co-localization within the pre-integration complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C84-C86 are supported by flow cytometry data (Figure 3E) and comparison to prior literature (Urnov et al., 2005). The mechanistic explanation (C86) is a reasonable inference supported by citation to Coluccio et al., 2013, though direct evidence for co-localization is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "c2e51f8c-b666-49a2-b436-8955174e30a3",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ZFN protein transduction demonstrates reduced off-target activity relative to conventional plasmid delivery, attributed to efficient transduction combined with short-term protein exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C72 are supported by comparative data in Figure 5. The mechanistic explanation (C72) is a reasonable inference consistent with the data and prior knowledge (C71) about optimal ZFN exposure windows, though direct measurement of protein half-life is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "20be4059-6cbd-4256-a1a5-56b25b192add",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TALEN proteins can be delivered by lentiviral protein transduction despite their large size (~100 kDa) and higher modularity compared to ZFNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C89-C90 are supported by data in Figure 4 demonstrating functional TALEN delivery. However, the substantial internal cleavage (C58-C60) represents a significant limitation that reduces efficiency compared to ZFN delivery, requiring further optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "8109ff45-4ebb-4458-a9f7-8683d4a9221a",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The experimental system uses a donor vector with 2.1-kb homology to egfp that serves as a recombination template after reverse transcription, with HEK293 cells and keratinocytes containing the CCR5 \u039432 allele.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 describe experimental design elements supported by data (Figure 2 sequencing confirmation of \u039432 allele, Figure 3B showing donor function). These are methodological details that enable the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "6f616b7a-0ebe-486a-b69f-ab3909e2155c",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Virions with Gag fused N-terminally to foreign proteins show reduced vector RNA transfer capability, likely due to reverse transcription complications, but this can be restored by including unfused GagPol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 is supported by the authors' observations stated in the methods. Claim C104 is explicitly labeled as speculation. This represents an important technical observation for the methodology, though the mechanistic explanation requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "1196a4a7-14a4-4b3d-9418-0a146104409d",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ZFNs and TALENs are chimeric nucleases with custom DNA-binding domains fused to FokI nuclease that induce DSBs triggering NHEJ or HR repair, with the D64V integrase mutation preventing vector integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C95, C98 represent established knowledge and experimental design elements. These are accurately stated background information and methodological details that are well-supported in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "ea9db68b-7753-402e-a01b-ad76c4d56416",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The CCR2 locus has high homology to CCR5 with only single nucleotide differences in ZFN recognition sites, making it a known major off-target site for CCR5-targeting ZFNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by citations to prior literature (Perez et al., 2008; Lee et al., 2010) and sequence analysis. This provides important context for the off-target analysis and validates the choice of CCR2 as the off-target locus to examine.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "c2e387bb-ecf7-4a21-af98-91536d52f94b",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Lentiviral protein transduction represents a versatile alternative to current nuclease delivery techniques with potential for customization via pseudotyping, and may be extended to Cas9 delivery, with editing supported by co-localization of nucleases and donor template.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 are explicitly speculative about future applications. Claim C83 makes reasonable inferences about advantages with supporting citations. Claim C88 proposes a mechanistic model without direct evidence. While these are reasonable extrapolations, they represent future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "e2a2d1f9-28b8-4fbc-aebf-cae61b151ef7",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Conventional IDLV-based ZFN/TALEN delivery has inherent limitations including insertional mutagenesis risk, requirement for multiple vectors, and recombination issues with repetitive TALEN sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 are supported by citations to prior literature and represent established knowledge about limitations of gene-based delivery methods. These provide important context for why protein delivery represents an advance, though they are background information rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    },
+    {
+      "id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65",
+      "content_id": "97c86623-ea5f-40ae-9cdc-16cf84f752c1",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Designer nucleases have broad applications and have been delivered by various methods including transfection, viral vectors, and direct protein delivery, with lentiviral particles previously engineered to carry various heterologous proteins including transposases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C34, C71, C87 represent background information supported by extensive citations to prior literature. These establish the context and prior art for the current work, demonstrating knowledge of the field and positioning the current study appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:30:14.509524Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c02892bc-3e40-4b0f-808e-5b8bb995e0dc",
+      "result_id": "f8b68df2-1ea3-4a11-b5df-b1d3ea1d7600"
+    },
+    {
+      "claim_id": "118cedfc-08fa-4a5b-8bdf-551e39680e6e",
+      "result_id": "f8b68df2-1ea3-4a11-b5df-b1d3ea1d7600"
+    },
+    {
+      "claim_id": "58b48b16-fe08-42dc-851b-330c485d40ef",
+      "result_id": "f8b68df2-1ea3-4a11-b5df-b1d3ea1d7600"
+    },
+    {
+      "claim_id": "943ac099-695e-41dd-9f29-acfad50fa695",
+      "result_id": "f8b68df2-1ea3-4a11-b5df-b1d3ea1d7600"
+    },
+    {
+      "claim_id": "292f1052-3089-4040-93d5-47dd467d7774",
+      "result_id": "f8b68df2-1ea3-4a11-b5df-b1d3ea1d7600"
+    },
+    {
+      "claim_id": "870a889f-b937-43da-8982-89796deb662d",
+      "result_id": "034c7ae8-83dd-41d5-ba3b-d34382a65d70"
+    },
+    {
+      "claim_id": "08eb5634-90c0-4a07-8ab3-78c89da43711",
+      "result_id": "034c7ae8-83dd-41d5-ba3b-d34382a65d70"
+    },
+    {
+      "claim_id": "d08f23b9-f852-4a77-9d36-468473226c98",
+      "result_id": "034c7ae8-83dd-41d5-ba3b-d34382a65d70"
+    },
+    {
+      "claim_id": "05992931-152a-4e88-8f3c-b8a2806b28e4",
+      "result_id": "56fdf9d6-5020-468b-a4bc-363321631231"
+    },
+    {
+      "claim_id": "c91b0965-4995-406b-9ac3-68487849e3bc",
+      "result_id": "56fdf9d6-5020-468b-a4bc-363321631231"
+    },
+    {
+      "claim_id": "35462432-862d-42a4-9f0e-a348ca312176",
+      "result_id": "56fdf9d6-5020-468b-a4bc-363321631231"
+    },
+    {
+      "claim_id": "0c7dec67-25ab-4a7a-940a-8809e93c87c8",
+      "result_id": "4824aee6-7929-4635-a754-213e08f83de1"
+    },
+    {
+      "claim_id": "8158c6fe-a940-42f2-b0b6-b831dd61ed5c",
+      "result_id": "4824aee6-7929-4635-a754-213e08f83de1"
+    },
+    {
+      "claim_id": "b57fe225-e94f-4413-b056-9297ea2af3c9",
+      "result_id": "4824aee6-7929-4635-a754-213e08f83de1"
+    },
+    {
+      "claim_id": "4670e42f-fbab-4f34-9e88-d891d3f90bd4",
+      "result_id": "4824aee6-7929-4635-a754-213e08f83de1"
+    },
+    {
+      "claim_id": "356d19b2-8267-4e9d-a936-a25b5da56055",
+      "result_id": "4824aee6-7929-4635-a754-213e08f83de1"
+    },
+    {
+      "claim_id": "a3c3a86b-319c-4f83-8c7b-becb60d67d4d",
+      "result_id": "4824aee6-7929-4635-a754-213e08f83de1"
+    },
+    {
+      "claim_id": "40c5a9de-1203-48bf-b054-dfbd6e72af8a",
+      "result_id": "4824aee6-7929-4635-a754-213e08f83de1"
+    },
+    {
+      "claim_id": "79c22230-1870-4f91-82c2-7e58f0f87568",
+      "result_id": "9789e322-406d-4c1b-9917-d2bd1ae637fd"
+    },
+    {
+      "claim_id": "952bc7ea-1bac-40e0-a195-2fc2885dbc7f",
+      "result_id": "9789e322-406d-4c1b-9917-d2bd1ae637fd"
+    },
+    {
+      "claim_id": "623d7d51-cb87-4014-bc94-678c015d7eee",
+      "result_id": "9789e322-406d-4c1b-9917-d2bd1ae637fd"
+    },
+    {
+      "claim_id": "93246099-6e7c-45ed-a036-b9cb26f5644e",
+      "result_id": "070274de-a092-42fc-9e27-29124025bb72"
+    },
+    {
+      "claim_id": "099aa3ef-5af6-4778-97db-a90ea86860e8",
+      "result_id": "070274de-a092-42fc-9e27-29124025bb72"
+    },
+    {
+      "claim_id": "0ae47e08-fb13-4de1-b5b9-525b9ccf8a8e",
+      "result_id": "5c2a0bb7-1885-4d1a-bcba-570c6d181201"
+    },
+    {
+      "claim_id": "988d59b4-5418-403b-974a-f71b2a0f24eb",
+      "result_id": "5c2a0bb7-1885-4d1a-bcba-570c6d181201"
+    },
+    {
+      "claim_id": "1c8efec6-60fa-48f1-855a-92ca6ccb1cb2",
+      "result_id": "5c2a0bb7-1885-4d1a-bcba-570c6d181201"
+    },
+    {
+      "claim_id": "aebc3625-b29f-460c-8cfb-cc7b1f9b709e",
+      "result_id": "1518a509-55a0-464a-abb7-65594b3c9877"
+    },
+    {
+      "claim_id": "814adf6b-bbcd-4c66-89e5-742384ddc95a",
+      "result_id": "1518a509-55a0-464a-abb7-65594b3c9877"
+    },
+    {
+      "claim_id": "a74f93d5-6512-4583-8cec-da3b16ad2fa5",
+      "result_id": "1518a509-55a0-464a-abb7-65594b3c9877"
+    },
+    {
+      "claim_id": "2b0101c7-c594-458c-aa5d-59e27b0b0af1",
+      "result_id": "1518a509-55a0-464a-abb7-65594b3c9877"
+    },
+    {
+      "claim_id": "3bd8d4c4-a474-4a53-b241-798b81b1ef52",
+      "result_id": "1518a509-55a0-464a-abb7-65594b3c9877"
+    },
+    {
+      "claim_id": "1fa22c93-30be-4da2-b07f-51c235e1857a",
+      "result_id": "250aac76-10b5-4990-ab0d-1bbea785bc30"
+    },
+    {
+      "claim_id": "7c5282b9-8209-4f02-bb37-d7b56a16f414",
+      "result_id": "250aac76-10b5-4990-ab0d-1bbea785bc30"
+    },
+    {
+      "claim_id": "d3bb88ae-4a6c-4f8c-8b21-3cda6f811d69",
+      "result_id": "250aac76-10b5-4990-ab0d-1bbea785bc30"
+    },
+    {
+      "claim_id": "98d49643-447f-43b9-a7c8-8c10ed869c79",
+      "result_id": "250aac76-10b5-4990-ab0d-1bbea785bc30"
+    },
+    {
+      "claim_id": "7e31c31c-35e9-42b3-99c3-467763e57fb8",
+      "result_id": "250aac76-10b5-4990-ab0d-1bbea785bc30"
+    },
+    {
+      "claim_id": "4ea5a277-dbb9-4ac7-9c4f-43eef8ce3be9",
+      "result_id": "0a8f368d-d6a7-4f72-9681-21e3e261a912"
+    },
+    {
+      "claim_id": "fd0bd1a2-e14b-41be-8a57-eeba71b098b1",
+      "result_id": "0a8f368d-d6a7-4f72-9681-21e3e261a912"
+    },
+    {
+      "claim_id": "c43df591-0be9-4f14-8b09-84eb24b324af",
+      "result_id": "0a8f368d-d6a7-4f72-9681-21e3e261a912"
+    },
+    {
+      "claim_id": "50a06c0b-52e4-4140-9858-2b5c590358df",
+      "result_id": "0a8f368d-d6a7-4f72-9681-21e3e261a912"
+    },
+    {
+      "claim_id": "dafdf286-1ba9-4a7e-a4a7-c1d8ecc7a9d8",
+      "result_id": "0a8f368d-d6a7-4f72-9681-21e3e261a912"
+    },
+    {
+      "claim_id": "68593398-7854-417e-a295-96d80a6f4230",
+      "result_id": "8bf23284-29ba-4558-9e7b-8397de07f6f8"
+    },
+    {
+      "claim_id": "04e3349e-6305-4a44-a177-4bc650b583b8",
+      "result_id": "8bf23284-29ba-4558-9e7b-8397de07f6f8"
+    },
+    {
+      "claim_id": "d8be56e0-ba9a-4652-bdd0-adbf2e198ac0",
+      "result_id": "8bf23284-29ba-4558-9e7b-8397de07f6f8"
+    },
+    {
+      "claim_id": "a7a68801-213e-4a7a-8201-ce18aa3141e1",
+      "result_id": "40afd032-c82f-4e73-b695-71bd9a3beace"
+    },
+    {
+      "claim_id": "aa779587-d1de-485a-8d19-5634898bcbba",
+      "result_id": "40afd032-c82f-4e73-b695-71bd9a3beace"
+    },
+    {
+      "claim_id": "14799abb-e897-4c2e-901d-1d082afdddc3",
+      "result_id": "40afd032-c82f-4e73-b695-71bd9a3beace"
+    },
+    {
+      "claim_id": "e8b3599b-7d9f-4551-8823-2e2445e831ac",
+      "result_id": "40afd032-c82f-4e73-b695-71bd9a3beace"
+    },
+    {
+      "claim_id": "ff99cb26-4faf-459b-96bc-0fef74e9a634",
+      "result_id": "c2e51f8c-b666-49a2-b436-8955174e30a3"
+    },
+    {
+      "claim_id": "802cade7-a10a-4369-8f51-713d07ba7915",
+      "result_id": "c2e51f8c-b666-49a2-b436-8955174e30a3"
+    },
+    {
+      "claim_id": "56c171e7-d378-40c0-8688-ddc9e52d18d8",
+      "result_id": "20be4059-6cbd-4256-a1a5-56b25b192add"
+    },
+    {
+      "claim_id": "a6dd5e2a-b8df-49b1-92bf-943da62d8c35",
+      "result_id": "20be4059-6cbd-4256-a1a5-56b25b192add"
+    },
+    {
+      "claim_id": "692f2966-26b7-4a5e-9cd6-c8b3da52b4b3",
+      "result_id": "20be4059-6cbd-4256-a1a5-56b25b192add"
+    },
+    {
+      "claim_id": "e62de3bb-5535-4790-95f9-b9642d1a0c86",
+      "result_id": "8109ff45-4ebb-4458-a9f7-8683d4a9221a"
+    },
+    {
+      "claim_id": "eb4fc658-b91e-4545-8551-ffae75ebefdb",
+      "result_id": "8109ff45-4ebb-4458-a9f7-8683d4a9221a"
+    },
+    {
+      "claim_id": "d534eedd-e598-43ea-9d43-a5eec87b58dd",
+      "result_id": "8109ff45-4ebb-4458-a9f7-8683d4a9221a"
+    },
+    {
+      "claim_id": "87a91a2f-b9c8-4044-af57-41539e0f3833",
+      "result_id": "8109ff45-4ebb-4458-a9f7-8683d4a9221a"
+    },
+    {
+      "claim_id": "02bd47fb-6dd7-41ac-9941-3e27d765ec29",
+      "result_id": "6f616b7a-0ebe-486a-b69f-ab3909e2155c"
+    },
+    {
+      "claim_id": "e3962fb1-d4ac-4265-b1cd-6914eecd57f4",
+      "result_id": "6f616b7a-0ebe-486a-b69f-ab3909e2155c"
+    },
+    {
+      "claim_id": "b796be4a-8e3d-4ee0-8ce5-d0c4168d62b6",
+      "result_id": "1196a4a7-14a4-4b3d-9418-0a146104409d"
+    },
+    {
+      "claim_id": "65d1d848-9d68-46f7-8ba4-93ecf7ee9f5d",
+      "result_id": "1196a4a7-14a4-4b3d-9418-0a146104409d"
+    },
+    {
+      "claim_id": "44b7fa94-0c63-4cd7-a2a4-32814445c5b4",
+      "result_id": "1196a4a7-14a4-4b3d-9418-0a146104409d"
+    },
+    {
+      "claim_id": "292f1052-3089-4040-93d5-47dd467d7774",
+      "result_id": "1196a4a7-14a4-4b3d-9418-0a146104409d"
+    },
+    {
+      "claim_id": "df8fbc51-66e2-47ce-8883-4ed328dd17a8",
+      "result_id": "ea9db68b-7753-402e-a01b-ad76c4d56416"
+    },
+    {
+      "claim_id": "bf4d64d6-35ce-4537-a67a-4c14f6f87d5b",
+      "result_id": "ea9db68b-7753-402e-a01b-ad76c4d56416"
+    },
+    {
+      "claim_id": "f510fe46-ef7d-42ce-93bd-dc1bf1397448",
+      "result_id": "c2e387bb-ecf7-4a21-af98-91536d52f94b"
+    },
+    {
+      "claim_id": "750102eb-9609-45d4-8335-a2f5fce3ba18",
+      "result_id": "c2e387bb-ecf7-4a21-af98-91536d52f94b"
+    },
+    {
+      "claim_id": "08f348b6-c040-4893-8917-763297830944",
+      "result_id": "c2e387bb-ecf7-4a21-af98-91536d52f94b"
+    },
+    {
+      "claim_id": "a85dd9af-c196-4aa0-b922-c400d111c51d",
+      "result_id": "c2e387bb-ecf7-4a21-af98-91536d52f94b"
+    },
+    {
+      "claim_id": "04db1b51-88b9-4c54-b8bf-ee781e2877e1",
+      "result_id": "e2a2d1f9-28b8-4fbc-aebf-cae61b151ef7"
+    },
+    {
+      "claim_id": "a29f655e-b85b-4153-a3ee-01468fc35077",
+      "result_id": "e2a2d1f9-28b8-4fbc-aebf-cae61b151ef7"
+    },
+    {
+      "claim_id": "c21e47cc-31f2-4e68-a1b5-f4ef21345245",
+      "result_id": "e2a2d1f9-28b8-4fbc-aebf-cae61b151ef7"
+    },
+    {
+      "claim_id": "9c3084f4-7376-4c5a-8e39-3350d8959943",
+      "result_id": "e2a2d1f9-28b8-4fbc-aebf-cae61b151ef7"
+    },
+    {
+      "claim_id": "e5acaa81-3a69-4399-a65e-bdbdf2e69b86",
+      "result_id": "e2a2d1f9-28b8-4fbc-aebf-cae61b151ef7"
+    },
+    {
+      "claim_id": "2536c4dc-fce6-4c28-888d-40960c2264df",
+      "result_id": "e2a2d1f9-28b8-4fbc-aebf-cae61b151ef7"
+    },
+    {
+      "claim_id": "fc23bb18-c35e-415e-832a-32d91d36229a",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "a48bf7d6-5e2e-4fe4-a6ed-3b23c5ed742d",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "a2821fae-3749-4fef-81a6-f0a9a8889196",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "2dace665-0ea3-4002-b004-0e2a08fbbe90",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "35e74f3e-1e33-4737-b374-53d8c8671a76",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "a5f78818-97c5-40d4-bead-d620a32134cb",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "d2625f68-8010-4d98-b5b8-7bb73b9bcbf4",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "5addacf9-111f-4bf9-91a6-c5b5e9dce68d",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "8c1c3fb0-d9a6-4fc5-b517-85676213dd0e",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "4d64035e-d0a6-43b7-9273-f667adbcb788",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "a69a74df-5daa-4173-ab8e-1f2920c1d7b3",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "66028830-7db5-48f3-85e9-16b822ad398d",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "428a479b-ae7d-4189-8849-b748d721b67f",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "ab1c01e9-cd78-4db4-8de3-55c3289dde02",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "d04d0baf-9f26-4b4f-966b-d5f03f8d7a36",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "997f28e3-b3f9-4918-9fc9-17ab8c424262",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "7232f3c6-b60d-43ee-81fa-0512bf028baa",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "c201fe61-e608-4964-88f2-737cfdde1923",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "70f90550-3953-4986-8443-429e3e02c6ec",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "79601d43-a7d0-45b3-bf49-0caab7764ed9",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "92dab61c-ba22-446d-a9b6-cb9624db6cb9",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "ed7fccad-97bc-404d-9473-741ad1bcd9d6",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "e2f8f3b7-c073-4357-8aee-f00e833cf4bd",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "cf6d3460-e51f-49f0-acbb-2b232b3c3818",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "967a6374-93a9-40a3-bc7f-fb66f5d2d9c3",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "029868b1-9993-4d6f-ab3d-9b5e9f7fef94",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "ed594dc0-e1f3-4022-bc2e-c69fa9402198",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "d9583f2f-959d-4978-8606-7aaaf00c9672",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "5b2e3c97-9969-436b-938e-ced356d0ceec",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    },
+    {
+      "claim_id": "69af40c5-83a3-41e2-8107-2eeb4b1024ca",
+      "result_id": "8fe51c6d-9914-4977-a161-11b1f3e8fd65"
+    }
+  ],
+  "comparisons": []
+}

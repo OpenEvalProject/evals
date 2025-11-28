@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C29",
+      "C31",
+      "C32"
+    ],
+    "result": "At mitotic cycle 8, embryonic chromatin is in a relatively simple state with few nucleosome free regions, undetectable levels of histone methylation marks, and low levels of histone acetylation at a small number of loci. Global histone H3 levels are relatively stable, and the replication-associated mark H4K5ac declines rapidly from cycle 8 onwards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C29, C31-C32 are well-supported by ChIP-seq data shown in Figures 2, 3, 5, and 6. The data clearly demonstrate low nucleosome density, absence of methylation marks, limited acetylation, stable H3 levels with gradual increase, and declining H4K5ac at cycle 8. The experimental design includes appropriate normalization controls using D. pseudoobscura chromatin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35"
+    ],
+    "result": "Histone acetylation marks (H4K8ac, H3K18ac, H3K27ac) increase by cycle 12 and are enriched at hundreds of loci, while histone methylation marks (H3K9ac, H3K4me1, H3K4me3, H3K36me3, H3K27me3) are effectively absent until cycle 14a when they show sharp increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C35 are strongly supported by ChIP-seq data in Figures 2 and 3, showing clear temporal separation between early-appearing acetylation marks and late-appearing methylation marks. The quantitative normalization approach allows for robust comparison across developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Nucleosome free regions and domains of histone methylation become widespread at cycle 14, coinciding with the appearance of transcription. Specific histone modifications (H4K8ac, H3K18ac, H3K27ac) appear along with transcription, while H3K9ac and methylation marks are absent until cycle 14a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C36-C38 are well-supported by integrated ChIP-seq and RNA-seq data shown in Figures 5 and 6. The temporal correlation between nucleosome depletion, histone modifications, and transcription onset is clearly demonstrated across multiple gene classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Early histone acetylation is strongly associated with regions bound by the transcription factor Zelda (ZLD) in early embryos. The ZLD CAGGTAG motif is most strongly correlated with early acetylation marks, with extremely high overlap between ZLD-bound peaks and H3K27ac, H3K18ac, H4K8ac peaks. Higher ZLD binding levels correlate quantitatively with increased acetylation, though this relationship decays over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C62, C64-C67 are strongly supported by multiple lines of evidence including motif enrichment analysis (Figure 7A), overlap analysis (Figure 7B), and quantitative correlation analysis (Figure 7C-D). The data demonstrate a clear and quantitative relationship between ZLD binding and early histone acetylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In embryos lacking maternal zld, intergenic ZLD-bound regions show marked loss of H3K4me1, decreased H3K18ac, and loss of nucleosome free regions, while promoter histone states remain largely unchanged with strong NFRs and similar histone mark levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by ChIP-seq data from zld mutant embryos shown in Figure 8. The differential effects at enhancers versus promoters are clearly demonstrated. However, the interpretation is complicated by residual ZLD activity from paternal zygotic transcription, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C69"
+    ],
+    "result": "ZLD triggers a cascade of events including accumulation of specific histone modifications that plays a role in subsequent sequence activation. ZLD is a dominant factor shaping the early chromatin landscape, particularly at enhancers where it directs histone acetylation deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C63, C69 represent interpretations and inferences from the correlation data. While the association between ZLD binding and histone modifications is well-documented (C7, C62, C64-C67), the causal mechanism remains speculative. The zld mutant data (C70-C72) provides some support but is limited by incomplete ZLD depletion and lack of temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C53",
+      "C54",
+      "C59",
+      "C60"
+    ],
+    "result": "In cycle 14 embryos, H3K27me3 is enriched around promoters of zygotically expressed genes but absent from maternal genes, consistent with Polycomb-mediated silencing. Many putative enhancers are found within H3K27me3 domains, with H3K4me1 appearing at cycle 14a but H3K27me3 not appearing until cycle 14c.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C53-C54, C59-C60 are supported by H3K27me3 ChIP-seq data in Figures 5 and 6. The temporal dynamics and spatial distribution of H3K27me3 are clearly demonstrated, and the interpretation regarding Polycomb function is consistent with cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Maternally deposited genes have strong, developmentally stable nucleosome free regions upstream of promoters at all time points, which was previously described and predicted based on DNA sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by H3 ChIP-seq data across developmental stages shown in Figure 5, extending previous observations from Gaertner et al., 2012. The developmental stability of these NFRs is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "At cycle 14, enhancers exhibit chromatin states consistent with active enhancers in other systems: strong nucleosome depletion, enrichment of H3K4me1, H3K27ac, and H3K18ac on flanking nucleosomes, and depletion of H3K4me3 and H3K36me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are well-supported by ChIP-seq data in Figure 6 and are consistent with extensive prior literature on enhancer chromatin signatures. The characterization is thorough and the comparison to established enhancer marks is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Putative blastoderm enhancers have high nucleosome densities at cycle 8, with weak enrichment of early acetylation marks (especially H3K18ac) that become stronger by cycle 12. Nucleosome depletion is initially evident at cycle 12 but much stronger at cycle 14a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by ChIP-seq data in Figure 6 showing the temporal dynamics of chromatin changes at enhancers. The progressive establishment of enhancer chromatin architecture is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Genome reprogramming during the maternal-to-zygotic transition occurs by transitioning through a na\u00efve state with low histone marks, with establishment of totipotent chromatin architecture proceeding in an ordered process where acetyl marks are deposited prior to methyl marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 represent interpretations well-supported by the comprehensive ChIP-seq data showing temporal dynamics of histone marks (Figures 2-6). The ordered appearance of acetylation before methylation is clearly demonstrated, though the mechanistic basis remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "In early embryos, transcription often occurs in the near absence of marks canonically associated with gene activation (H3K4me3, H3K36me3), with H3K4me3 first detectable at the MBT. These marks are not associated with transcriptional activity in the very early zygote.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C88 are supported by comparison of RNA-seq and ChIP-seq data in Figures 4 and 5, confirming and extending Chen et al., 2013. The dissociation between transcription and these canonical marks is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Early events reflected by enhancer-associated acetylation and methylation marks may play a role in keeping regions active once Polycomb-mediated repression is established. ZLD binding may trigger a cascade countering Polycomb repression, potentially by directing H3K27 acetylation to enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61, C97-C99 are speculative models based on temporal dynamics and known mechanisms from S2 cells (Tie et al., 2009). While the temporal sequence is well-documented, the causal relationships and mechanisms remain hypothetical and require direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Two alternative mechanisms are proposed for ZLD function: direct recruitment of histone acetyltransferases with modifications playing direct/indirect roles in genome activation, or ZLD acting as steric impediment to chromatin compaction with histone acetylation as an indirect byproduct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 are purely speculative hypotheses about ZLD mechanism. No direct evidence is provided to distinguish between these alternatives or to demonstrate either mechanism. These represent testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "ZLD binds to DNA prior to activation and prior to other factors, but may not require the ability to bind condensed chromatin since there is essentially no condensed chromatin in the early embryo. ZLD binds to >50% of its target sites, likely because condensed chromatin is absent. Nonetheless, ZLD fulfills the pioneer factor role of facilitating subsequent factor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C114 mix well-supported observations (early ZLD binding, broad target site occupancy from Harrison et al., 2011) with speculative interpretations about chromatin state and pioneer factor characteristics. The inference that lack of condensed chromatin explains broad ZLD binding is logical but not directly tested. The conclusion about pioneer factor function (C114) is reasonable but conditional on the model being correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The specification of enhancer location and output are distinct processes: pioneer factors like ZLD determine where enhancers will be by influencing chromatin maturation, while classical patterning factors determine transcriptional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C125 represent a speculative model for enhancer specification. While the data on ZLD binding and chromatin effects support ZLD's role in enhancer establishment, the proposed separation of location specification from output determination is a hypothesis that requires direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on early Drosophila development: maternal dependence, timing of zygotic transcription onset, gradual increase through mitotic cycles, widespread transcription at cycle 13 end, ~3000 genes transcribed in cellular blastoderm with ~1000 spatially restricted, regulated by ~50 transcription factors binding to enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 represent established background knowledge supported by appropriate citations to primary literature. These provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on cellular blastoderm chromatin and ZLD: active regions have low nucleosome density, transcription factor binding, and characteristic histone modifications. A seven base-pair motif is found in most patterning enhancers, bound by maternally deposited ZLD by cycle 8, with ZLD sites also in promoters of early activated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 represent prior work from the authors' lab and others, appropriately cited. These establish the foundation for the current study's focus on ZLD and chromatin dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Chromatin reprogramming during MZT occurs across species: DNA methylation loss/reestablishment in mouse, histone mark removal in mouse/bovine, widespread chromatin changes in zebrafish with general increase in histone methylation. Dramatic increase in histone modifications at MZT coinciding with genome activation appears to be a general feature, with removal of parental modifications potentially being a general reprogramming feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 appropriately summarize prior work in other organisms with proper citations. The comparative context strengthens the interpretation of the Drosophila results, though C84 is somewhat speculative about general mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Context on histone marks and transcription: H3K4me3 not required for transcription in wing disc, H3K36me3 enriched in only one class of active chromatin in S2 cells, transcription without these marks likely not unique to early development. In zebrafish, H3K4me3 precedes RNA polymerase and may prepare genes for activation. Overall, histone marks can be associated with transcriptional outputs but are neither necessary nor sufficient for predicting gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 appropriately cite and interpret prior literature to contextualize the findings. The synthesis across different systems and developmental stages is reasonable, with appropriate distinction between observations and interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In zebrafish, Pou5f1 (Oct4) with Nanog and SoxB1 drives zygotic genome activation and may share pioneer-like activity with ZLD. This suggests pioneer transcription factors may generally be required for genome activation at the MZT. The connection to pluripotency factors (Oct4, Nanog, Sox2) used for iPSC generation links pioneer factor roles in zygotic genome activation to totipotent state establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C120 appropriately cite zebrafish studies (Lee et al., 2013; Leichsenring et al., 2013) and make reasonable connections to pluripotency. However, the generalization about pioneer factors being required across species (C117) and the explicit connection to totipotency (C120) are somewhat speculative inferences from limited comparative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Methodological approaches: D. pseudoobscura chromatin used as internal standard for normalization, showing stable peak numbers and signals across time-points. Relative D. melanogaster to D. pseudoobscura recovery used to measure relative mark abundance. A set of 588 likely blastoderm enhancers identified based on cumulative transcription factor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 describe methodological approaches that are well-documented in the Materials and Methods and validated by data in Figure 1\u2014Figure supplement 1. The normalization strategy is sound and the enhancer identification approach is reasonable.",
+    "result_type": "MINOR"
+  }
+]

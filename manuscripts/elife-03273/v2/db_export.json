@@ -1,0 +1,2432 @@
+{
+  "submission": {
+    "id": "1b668c54-4293-4ca7-bfd9-46524ab35dfe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:12:55.653605Z",
+    "updated_at": "2025-11-28T21:12:55.653605Z"
+  },
+  "content": [
+    {
+      "id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "submission_id": "1b668c54-4293-4ca7-bfd9-46524ab35dfe",
+      "content_type": "manuscript",
+      "content_text": "# DNA binding polarity, dimerization, and ATPase ring remodeling in the CMG helicase of the eukaryotic replisome\n\n## Authors\n\n- Alessandro Costa<sup>1</sup> \u2020\n- Ludovic Renault<sup>1</sup>\n- Paolo Swuec<sup>1</sup>\n- Tatjana Petojevic<sup>3</sup>\n- James J Pesavento<sup>3</sup>\n- Ivar Ilves<sup>4</sup>\n- Kirsty MacLellan-Gibson<sup>2</sup>\n- Roland A Fleck<sup>2</sup>\n- Michael R Botchan<sup>3</sup> \u2020\n- James M Berger<sup>5</sup> \u2020\n\n### Affiliations\n\n1. London Research Institute, Cancer Research UK London United Kingdom\n2. Department of Imaging National Institute for Biological Standards and Control Potters Bar United Kingdom\n3. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n4. Institute of Technology, Faculty of Science and Technology University of Tartu Tartu Estonia\n5. Department of Biophysics and Biophysical Chemistry Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Cdc45/Mcm2-7/GINS (CMG) helicase separates DNA strands during replication in eukaryotes. How the CMG is assembled and engages DNA substrates remains unclear. Using electron microscopy, we have determined the structure of the CMG in the presence of ATP\u03b3S and a DNA duplex bearing a 3\u2032 single-stranded tail. The structure shows that the MCM subunits of the CMG bind preferentially to single-stranded DNA, establishes the polarity by which DNA enters into the Mcm2-7 pore, and explains how Cdc45 helps prevent DNA from dissociating from the helicase. The Mcm2-7 subcomplex forms a cracked-ring, right-handed spiral when DNA and nucleotide are bound, revealing unexpected congruencies between the CMG and both bacterial DnaB helicases and the AAA+ motor of the eukaryotic proteasome. The existence of a subpopulation of dimeric CMGs establishes the subunit register of Mcm2-7 double hexamers and together with the spiral form highlights how Mcm2-7 transitions through different conformational and assembly states as it matures into a functional helicase.\n\n## Introduction\n\nThe faithful copying of DNA requires the correct spatial and temporal assembly of replication machineries at specific chromosomal loci known as origins. In eukaryotes, origins are licensed for replication by recruitment of the Mcm2-7 complex, a ring-shaped helicase that serves as the principal unwinding activity for separating parental DNA strands (Blow, 1993; Bochman and Schwacha, 2008; Costa et al., 2011; Lyubimov et al., 2012). Mcm2-7 is initially loaded around duplex DNA as an inactive double hexamer by the origin recognition complex (ORC), Cdc6, and Cdt1 in the G1 phase of the cell cycle (Evrin et al., 2009; Remus et al., 2009), forming a stable intermediate known as the pre-replicative complex (pre-RC, Diffley et al., 1994; Donovan et al., 1997; Maiorano et al., 2000; Sun et al., 2013; Yanagi et al., 2002). Upon entry into S phase, Mcm2-7 associates with the GINS complex and Cdc45 generating an 11-member assembly termed the CMG (Kanemaki et al., 2003; Gambus et al., 2006; Moyer et al., 2006; Pacek et al., 2006; Ilves et al., 2010). GINS/Cdc45 assembly is dependent on the CDK kinase (Zegerman and Diffley, 2007), while post-translational modification of Mcm subunits 2, 4, and 6 by the Cdc7/Dbf4 kinase (DDK) further contributes to CMG activation (Labib, 2010; Sheu and Stillman, 2010). Following the assembly of replicative polymerases and replisomal scaffolding factors (Gambus et al., 2009; Muramatsu et al., 2010), the two CMG particles split apart into discrete complexes that have been proposed to each encircle a single DNA strand during translocation (Yardimci et al., 2010; Boos et al., 2012).\n\nAt present, multiple aspects of the Mcm2-7 loading and activation cycle remain poorly understood. Although the six homologous subunits of one Mcm2-7 complex are known to pair with a second Mcm2-7 complex through their N-terminal domains in the context of a double-hexamer (Evrin et al., 2009; Remus et al., 2009), the precise register by which these subunits interact with each other across the two rings is not known. How DDK phosphorylation of the Mcm2, Mcm6, and Mcm4 N-termini (Labib, 2010), or how a DDK-bypass mutation in the N-terminus of either Mcm4 (Sheu and Stillman, 2010) or Mcm5 (Jackson et al., 1993), might aid in the switch from an inactive Mcm2-7 double hexamer state to a functional CMG is similarly unclear, particularly as Mcm4 is spatially segregated from Mcm2 and Mcm5 (Costa et al., 2011).\n\nDuring unwinding and fork progression, the CMG translocates 3\u2032\u21925\u2032 along DNA. How the various components of the CMG engage nucleic acid strands during this process has remained ill-defined. Cdc45 has recently been shown to contain a RecJ exonuclease domain that can bind DNA but that is catalytically inactive (Petojevic et al., unpublished data, as well as Sanchez-Pulido and Ponting, 2011; Krastanova et al., 2012; Szambowska et al., 2014). Whether or how the Cdc45 RecJ fold might bind single DNA strands formed in the context of the CMG has not been established. Conflicting models likewise exist for how Mcm2-7 engages substrate DNAs as it moves 3\u2032\u21925\u2032 during strand separation, with biochemical data from archaeal MCMs and phylogenetic relationships to superfamily III (SFIII) helicases (such as the SV40 Large T antigen and the papillomavirus E1 protein) predicting mutually exclusive binding orientations (McGeoch et al., 2005; Enemark and Joshua-Tor, 2006; Rothenberg et al., 2007; Lee et al., 2014).\n\nTo begin to understand several extant questions surrounding how the CMG is formed and operates at molecular level, we have determined structure of the full-length complex from Drosophila melanogaster in the presence of a 3\u2032-tailed DNA duplex and the non-hydrolyzable ATP analog, ATP\u03b3S, using negative-stain electron microscopy and single-particle reconstruction methods. The structure establishes that: 1) the CMG preferentially associates with single-stranded DNAs over double-stranded substrates, 2) the C-terminal ATPase domains of Mcm2-7 form the leading edge of the motor as it advances on a duplex, and 3) the RecJ domain of Cdc45 is oriented to favor the capture of DNA segments that might accidently escape the Mcm2-7 pore. Comparison of the new structure with a previously-determined apo CMG model (Costa et al., 2011) shows that the Mcm2-7 ATPase domains of the complex transition from a planar, open ring into a closed, right-handed spiral in the presence of both DNA and nucleotide. Analysis of this state alongside other ring-ATPases shows that the MCM spiral is most similar to that adopted by the bacterial DnaB helicase upon engaging single-stranded DNA (Itsathitphaisarn et al., 2012), and that the GINS\u2022Cdc45 complex bridges the junction between the ends of the spiral in a manner similar to that by which the Rpn1 accessory subunit spans a spiral Rpt1-6 ATPase assembly in the eukaryotic proteasome (Lander et al., 2012). Interestingly, examination of a subpopulation of CMG dimers present in our EM data shows how two Mcm2-7 complexes associate within a double hexamer and suggests that this dimerized state persists during CMG formation, prior to separation during fork progression (Ilves et al., 2010; Yardimci et al., 2010). Collectively, our observations establish that Mcm2-7 unwinds DNA using an approach distinct from that of superfamily III helicases and highlight several new Mcm2-7 ring configurations and assembly states accessed by the motor during the initiation of DNA replication.\n\n## Results and discussion\n\n### Determination of a higher-resolution CMG model\n\nIn a previous study, we determined the medium-resolution (28 \u00c5) structures of the Drosophila melanogaster CMG helicase in both an apo state and bound to a non-hydrolyzable ATP analog (Costa et al., 2011). Though sufficient for mapping individual subunits within the CMG, both models revealed a planar structure for Mcm2-7, with GINS and Cdc45 spanning a gap that appeared between Mcm2 and Mcm5 when nucleotide was omitted. Since insights into where DNA might bind to the CMG or how binding might potentially alter the structure of complex were unclear, we set out to trap and image a prospective translocation intermediate of the CMG using 3D single-particle electron microscopy. A purified solution of the CMG was first mixed with a 20 bp duplex DNA substrate bearing a single-stranded 3\u2032-dT(40) tail and passed over a sizing column in the presence of the non-hydrolyzable ATP analog, ATP\u03b3S, to form a ternary complex. The complex did not behave well during cryo-preservation attempts using holey-carbon EM grids, so samples were instead deposited onto continuous carbon grids and exposed to uranyl formate for negative staining. A total of 29,913 particles were selected from EM micrographs acquired with JADAS automated data collection software (JEOL, Zhang et al., 2009) on a JEM2100 electron microscope. Following particle picking and 2D averaging, a 3D model was generated by projection matching using a low-pass filtered (60 \u00c5), free-hand test-validated, nucleotide-bound structure of the CMG as a starting model (\u2018Materials and methods\u2019; Rosenthal and Henderson, 2003; Lyubimov et al., 2012).\n\nCMG particles imaged with DNA and ATP\u03b3S turned out to be quite uniform, permitting structure determination to a higher resolution than that obtained previously (18 \u00c5 vs 28 \u00c5 resolution, Figure 1\u2014figure supplement 1). The resultant model (Figure 1A) in turn allowed for a more accurate fitting of the Mcm2-7 and GINS subunits (Figure 1B,C), revealing several new features. For instance, the location of Psf1 C-terminus, which was previously not visible, was now clearly evident, and could be readily fit to a recently-published full-length structure of Psf1 from an archaeal ortholog (Oyama et al., 2011; Figure 1C). Flexing within the Mcm2-7 ring was also apparent with the C-terminal lobes of different MCM subunits displaying markedly distinct degrees of movement with respect to their associated N-terminal regions (Figure 1D,E). Asymmetric positioning between the two tiers of an MCM ring has not been reported previously, demonstrating that these elements are conformationally independent of each other to some extent in the presence of DNA substrates.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig1-v2.jpg)\n\n**Figure 1.:** (A) Top-down view (N-terminal MCM face) of the CMG highlighting subunit positions. (B) Docking of homology models into the assembly. (C) Docked structures into segmented density for: top\u2014a near-full-length, archaeal MCM monomer Mcm4 (PDB ID 3F9V); middle\u2014the GINS complex (PDB ID 2Q9Q and 3ANW, \u2018Materials and methods\u2019); bottom\u2014the archaeal Mcm N-terminal domain hexamer (PDB ID 1LTL and 2VL6, \u2018Materials and methods\u2019). (D) The N- and C-terminal domains of Mcm2-7 (colors) differentially flex around the helicase ring, with GINS\u2013Cdc45 (white) wedging open Mcm5 in particular. (E) The N-terminal domains of Mcm2-7 are relatively planar, and are fit best by a hexameric, DNA-free structure of the archaeal MCM NTDs, indicating the observed intra-subunit flexing derives from ATPase domain movement.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative micrographs. (B) Comparison of Euler plots obtained with either RELION (left) or SPARX (right) three-dimensional structure refinement. (C) Comparison between two-dimensional projections of the SPARX-refined, three-dimensional structure and reference-free, two-dimensional class averages. (D) Comparison of the independently determined, three-dimensional structures of DNA- and ATP\u03b3S-bound CMG particles generated with RELION and SPARX. (E) Fourier-shell correlation showing the calculated resolution for the 3D EM models.\n\n### The CMG advances on duplex DNA from the C-terminal, ATPase side of Mcm2-7\n\nThe increase in resolution obtained for the CMG in the presence of DNA provided initial, support evidence for nucleic acid binding to the complex. More concrete evidence for DNA association was apparent in electron density maps generated for the CMG, which showed a rod-shaped feature jutting away from the C-terminal face of Mcm subunits 2 and 5 (Figure 2A)\u2014this feature is absent in DNA-free 3D reconstructions of the CMG (Costa et al., 2011). Because negative-stains are non-ideal for visualizing nucleic acids (Grob et al., 2012), we further assessed DNA binding by biotin-labeling the duplex end of the oligonucleotide, mixing the CMG\u2013DNA samples with streptavidin, and collecting new single-particle EM data. Inspection of the resultant 2D class averages from this approach revealed clear additional density compared to the unlabeled CMG\u2013DNA particles (Figure 2B), demonstrating that the tailed substrate indeed associates with the complex particles. Given the electron density features seen for the DNA and the distance the streptavidin \u2018pointer\u2019 resides from the complex, the EM data show that the CMG binds to the single-stranded end of the 3\u2032-tailed DNA substrate, corroborating biochemical data indicating that the complex preferentially associates with and translocates along single-stranded DNA over duplex substrates (Ilves et al., 2010; Fu et al., 2011).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig2-v2.jpg)\n\n**Figure 2.:** (A) Observed experimental density seen at low contours reveals a rod-shaped extension (green) of comparable length to that expected for a 20mer DNA duplex that extends from the Mcm C-terminal motor domain. This feature is absent in DNA-free CMG reconstructions (Costa et al., 2011). A schematic of the relative single- and double-stranded DNA regions of the substrate used for the present studies is shown at left. (B) Comparison of DNA\u2013CMG class averages with and without streptavidin-labeling clearly marks the duplex end of the 3\u2032-tailed duplex substrate. Note how the streptavidin density sits at a distance from the body of the CMG, indicating that the majority of the duplex region of the substrate is not bound by the CMG.\n\nThe ability to visualize not only DNA binding to the CMG but also the position of the duplex end with respect to the particle, resolves a key question concerning the polarity by which MCM helicases engage a presumptive translocation strand. MCMs and viral SF3 helicases, such as SV40 LTag and the papilloma virus E1 protein, are both AAA+ ATPases (Neuwald et al., 1999). This relationship, coupled with shared ability of MCMs and SF3 enzymes to translocate along DNA in a 3\u2032\u21925\u2032 direction (Kelman et al., 1999; Chong et al., 2000; Bochman and Schwacha, 2008; Moyer et al., 2006), has suggested that members of two helicase families might operate by a common translocation mechanism. However, studies of E1 and archaeal MCMs bound to DNA substrates have yielded conflicting data concerning the direction by which DNA threads through the helicase pore. In E1, the 3\u2032 end of DNA has been observed by X-ray crystallography to lie proximal to the C-terminal motor domains of the helicase (Enemark and Joshua-Tor, 2006). By contrast, based on FRET measurements between a dye-labeled DNA/MCM pair, the converse has been reported for Sulfolobus solfataricus MCM (McGeoch et al., 2005; Rothenberg et al., 2007). In the new CMG structure, the streptavidin appended to the duplex DNA end can be clearly seen to localize next to the C-terminal, AAA+ domain face of the particle (Figure 2B). This finding not only demonstrates that a DNA segment bound by an MCM runs from the N-terminal collar to the ATPase motor region in a 3\u2032 to 5\u2032 direction, but also indicates that MCM and SF3 helicases bind substrates with opposing polarities.\n\n### The RecJ domain of Cdc45 is poised to assist in the capture of DNA that might escape the Mcm2/5 gate\n\nWhen the structure of the CMG was first reported, the fold of the associated Cdc45 subunit was unknown. As a consequence, although the general location of Cdc45 could be identified in both apo and ATP-bound forms of the CMG, the orientation and role of this subunit was left unresolved (Costa et al., 2011). Recently, however, the N-terminus of Cdc45 was shown to belong to the RecJ family of ssDNA exonucleases (Sanchez-Pulido and Ponting, 2011). Interestingly, within this grouping, Cdc45 belongs to an offshoot branch that can still bind DNA, but that also possesses natural amino acid substitutions which would appear to inactivate any native hydrolase functions (Krastanova et al., 2012).\n\nTo understand how the RecJ fold of Cdc45 interfaces with Mcm2-7 and GINS, we built a homology model for DmCdc45 based on Thermus thermophilus RecJ and docked it into the higher-resolution, DNA-bound CMG reconstruction. The catalytic core and DNA tracking domain of the homology model fit unambiguously into only one region of the Cdc45 density (Figure 3A), leaving only a single, unaccounted for region (most likely corresponding to the C-terminal segment of Cdc45 outside the defunct exonuclease core, or possibly to the N-terminal extension present in Mcm2) that interdigitates between the N-terminal \u2018A-domains\u2019 of Mcm5 and Mcm2 (Figure 3B, Figure 3\u2014figure supplement 1). Notably, in placing the Cdc45 RecJ domain, we found that this element appeared to contact the now-apparent C-terminal \u2018B-domain\u2019 of Psf1 (Figure 3A). To test whether this interaction might be real or fortuitous, we subjected the Psf1 B-domain surface to site-directed mutagenesis and tested the ability of the mutant subunits to support binding to both Mcm2-7 and Cdc45 (\u2018Materials and methods\u2019). Ablation of either the Psf1 B-domain region (residues 185\u2013202) or Cdc45 N-terminal region (residues 1\u201399) prevented CMG formation under the conditions used to purify the intact assembly (Figure 3\u2014figure supplement 2). Likewise, while point mutations were unable to disrupt CMG formation as judged by co-immunoprecipitation, a quadruple Psf1 mutant (E190A/L192A/V193A/R194A) proved unable to interact with Cdc45. Together, these data indicate that the Cdc45\u2013Psf1 interaction evident from the EM data plays a critical role in CMG formation and/or stability.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig3-v2.jpg)\n\n**Figure 3.:** (A) Top\u2014Segmented electron density corresponding to Cdc45. A prominent horseshoe-shaped region fits well to the catalytic core of the homologous RecJ exonuclease (PDB ID 1IR6). Bottom\u2014Docked models of RecJ and full-length GINS (generated using an archaeal Psf1 homolog, PDB IDs 2Q9Q and 3ANW) into DNA-bound CMG reconstructions highlight a previously unobserved interaction between the B-domain of Psf1 and the exonuclease-like domain of Cdc45. (B) An extension of the Cdc45 RecJ-like region contacts and interdigitates between the A-domains of the Mcm2 and Mcm5 N-terminal regions. (C) The Mcm2-7 central channel (black line) and the Cdc45 DNA tracking groove (red arrow) are offset by \u223c90\u00b0. (D) Schematic showing how the single-stranded DNA-binding groove of the Cdc45 RecJ-like domain could facilitate the capture of a leading strand segment if the Mcm5-2 DNA gate were to transiently open.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Docking of the Mcm2-7 DNA-interaction collar, GINS, and the RecJ exonuclease domain occupies most of the CMG density, with the exception of some unoccupied density shown in gray. We have tentatively assigned this region to the otherwise unaccounted for C-terminal domain of Cdc45; however, the density could also correspond to the disordered N-terminal tail of Mcm2, which may become structured upon Cdc45 binding.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) (Left panel) Expression levels of individual subunits used for assessing the CMG formation were detected by antibodies against specific proteins as indicated (asterisk indicates a degradation product of Psf2). Loading was controlled by an \u03b1-tubulin antibody. (Right panel) Co-immunoprecipitation (IP) experiments analyzing CMG stability. Lanes are as follows: (1) wild-type CMG; (2 and 5\u20137) CMG with various C-terminal truncations in Psf1; (3) CMG without MCM5; (4) CMG without Cdc45. Immunoprecipitation of FLAG-tagged Mcm3 subunit pulls down intact CMG complexes (lane 1). By contrast, removal of the entire Psf1 B-domain (lane 2, Psf11\u2212139), smaller truncations of Psf1 B-domain (lanes 5\u20137), the absence of Mcm5 (lane 3), or the absence of Cdc45 (lane 4) all disrupt the CMG formation. (B) (Left panel) Expression levels of individual subunits used for assessing the CMG formation were detected by antibodies against specific proteins as indicated. (Right panel) Co-immunoprecipitation (IP) experiments analyzing the CMG stability. Lanes are as follows: (1) wild-type CMG; (2) CMG expression without Mcm5; (3) CMG expression without Mcm3; (4\u20139) CMG expression with various alanine substitutions in Psf1 C-terminal helix. Immunoprecipitation of Mcm3 via a FLAG-tag on this subunit pulls down the intact CMG complex (lane 1), and most point mutations in the C-terminal helix of Psf1 do not appear to compromise the CMG formation (lanes 4 and 6\u20139). By contrast, the alanine substitutions in four residues in the B-domain of Psf1 (lane 5), the absence of Mcm5 (lane 2), or a lack of Mcm3 (the bait protein, lane 3) disrupt the CMG. The different alanine substitutions in Psf1 are listed below the gel at left. (C) Purification of the CMG with Cdc45\u03941\u221299. (Left) Input (4 \u03bcl of 30 ml-total clarified whole cell lysate) and IP (4 \u03bcl out of 5 ml-total eluate following anti-FLAG affinity purification) of the CMG component utilizing Cdc45\u03941\u221299 are shown. The FLAG-tag on Mcm3 was used as bait for the IP. Co-immunoprecipitated proteins were separated by SDS-PAGE (10%) and the CMG subunits were detected by antibodies against several CMG proteins as indicated on the right of the western blot. Mcm2 and Mcm5 represent the Mcm2-7 complex; Psf1 and Psf3 were used to follow the GINS complex. The experiment shows a near total loss of Psf1 and Psf3 from the CMG when the N-terminus of Cdc45 is truncated. (Right) MonoQ profile for the CMG purification, with the expected positions for various constituents labeled (FLAG-Mcm3 alone, Mcm2-7 and the intact CMG complex). The CMG formation was abrogated when the N-terminus of Cdc45 is removed.\n\nIn previous apo and ATP-bound models of the CMG, the particle was seen to transition from a conformation in which the Mcm2/5 interface was open to one in which it was closed (Costa et al., 2011). This transition in turn pinched off the large single channel that ran through the particle into two smaller channels, sealing the interior of Mcm2-7 away from the inner surface of GINS\u2013Cdc45. In the DNA-bound model, the CMG still exhibits two channels; however, docking of the Cdc45 RecJ domain shows that its exonuclease/DNA-tracking groove is offset by 90\u00b0 with respect to the central axis of the Mcm2-7 pore (Figure 3C). This orientation indicates that, were Cdc45 to bind DNA in a manner similar to RecJ, it would be poised to capture the leading DNA strand that might escape from Mcm5-2 gate (Figure 3D). Consistent with this idea, cross-linking data in work to be published elsewhere (Petojevic et al.) show both that Cdc45 engages the leading strand of a fork substrate only in the absence of nucleotide and that this interaction is ablated by the mutation of residues suggested by the model to be important for DNA binding.\n\n### DNA and nucleotide remodel the Mcm2-7 AAA+ ATPase subunits into a right-handed spiral\n\nHow ATP-dependent physical movements within hexameric helicases are coupled to DNA binding and unwinding has long been a central question in the field (Singleton et al., 2007; Enemark and Joshua-Tor, 2008; Lyubimov et al., 2011). Notably, when comparing the new DNA-bound CMG model to the prior substrate-free state, we found that the AAA+ ATPase ring is no longer flat, but instead adopts a clear right-handed spiral (Figure 4A,B). This change in conformation does not propagate into the N-terminal domains, which maintain a roughly planar character (Figure 1E), but is instead offset by the variable flexing seen for the C-terminal domains in different positions around the ring (Figure 1D). The observed asymmetry between the two MCM tiers indicates that the N-terminal domains form a relatively stable collar that likely helps to coordinate and restrain movements of the associated C-terminal ATPase regions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cut-away view (removing Mcm5) of the Mcm2-7 central channel highlights a spiral organization for the Mcm2-6-4-7-3 AAA+ ATPase regions. Colored spheres demarcate the approximate center of mass for AAA+ pore loops as derived from the docking of MCM AAA+ domain as shown in Figure 1B. (B) Top-down view (from the N-terminal face) of MCM AAA+ domains docked into the DNA-bound CMG reconstruction showing the existence of a right-handed spiral. The CMG density has been removed for clarity. (C) In the presence of a single-stranded DNA, bacterial DnaB can adopt a right-handed spiral with a moderately-wide pore (PDB ID 4ESV, Itsathitphaisarn et al., 2012). (D) The E1 helicase assembles into a right-handed spiral with a relatively narrow pore (PDB ID 2GXA, Enemark and Joshua-Tor, 2006). (E) Comparison of the AAA+ ring of the eukaryotic proteasome with Mcm2-7 region of the DNA- and ATP\u03b3S-bound CMG. The non-ATPase subunit Rpn1 binds to the side of the Rpt1-6 hetero-hexamer, wedging itself between the N-terminal and C-terminal tiers of the ATPase ring and helping to promote the formation of a right-handed ATPase domain spiral. Similar architectural features are apparent within the DNA\u2013ATP\u03b3S\u2013CMG complex, where GINS\u2013Cdc45 occupy an analogous position.\n\nCloser analysis of the AAA+ spiral reveals several features that have important implications for the action of MCM subunits during DNA unwinding. First, the largest inter-subunit shifts within the Mcm2-7 ring, which occur between Mcm subunits 2 and 5, also correspond to the point where the GINS\u2013Cdc45 complex docks against the helicase. Inspection of the DNA-bound model reveals that GINS\u2013Cdc45 does not simply straddle the Mcm2/5 interface, but that portions of the accessory subunits actually wedge themselves between the N- and C-terminal tiers of the Mcm2-7 ring (Figure 1D). This action widens the exterior groove between the MCM N- and C-terminal domains at their points-of-contact with GINS\u2013Cdc45, and is offset by a concomitant narrowing of the groove on the exterior MCM face opposite the GINS\u2013Cdc45 binding site (i.e., Mcm4, Figure 1D). The structural consequences resulting from GINS\u2013Cdc45 binding suggests that these accessory subunits not only play a role in blocking access through the Mcm2/5 gate, as has been seen previously (Costa et al., 2011), but that they also help stabilize a spiral configuration of ATPase centers when DNA is present. Since the mutation of active site residues at the Mcm2/5 interface ablates helicase activity (Bochman et al., 2008; Ilves et al., 2010), it is likely that the spiral state observed here, which positionally offsets the ATP-binding site of Mcm5 from the arginine-finger residue of Mcm2, inter-converts with another conformation in which the Mcm2/5 interface is remodeled to form a catalytically functional ATPase center during the translocation cycle. Hence, a need for GINS\u2013Cdc45 in preventing DNA from escaping Mcm2-7 would likely be infrequent and limited to instances when the Mcm2/5 gate accidentally opens for an extended period of time, such as at a roadblock created by other nucleoprotein complexes or DNA damage.\n\nA second unexpected feature of the DNA-bound CMG complex is that the spiral is more pronounced than that seen in SF3 helicases, and instead more closely approximating the spiral evinced by a RecA-family helicase, DnaB, in the presence of DNA (Figure 4B\u2013D). The width of the Mcm2-7 central channel (as measured from homology models of the motor domains docked into the EM density) is likewise significantly larger (\u223c30\u201335 \u00c5) compared to E1 (\u223c14 \u00c5), and more closely approaches that of DnaB (\u223c22 \u00c5). Interestingly, in E1 and DnaB the difference in channel diameter and subunit rise between the two proteins sculpts the DNA substrate bound by each helicase into a single-stranded helix whose relative pitches differ significantly; these geometric differences allow each subunit of DnaB to engage two nucleotides of DNA (Itsathitphaisarn et al., 2012), whereas E1 binds only a single nucleotide per protomer (Enemark and Joshua-Tor, 2006). The similarity of the Mcm2-7 spiral to DnaB raises the interesting possibility that the helicase might translocate with a step-size greater than one nucleotide per ATP consumed; consistent with this notion, a recent study has shown that the MCM N-terminal DNA-binding collar of Pyrococcus furiosus binds four nucleotides per subunit (Froelich et al., 2014).\n\nA third notable attribute of the ternary DNA\u2013CMG\u2013ATP\u03b3S model is that several structural features of the complex turn out to be most similar not to replicative helicases, but to a completely orthogonal system, namely, the regulatory subcomplex of the eukaryotic proteasome. The proteasome consists of several discrete subcomplexes including a heterohexameric unfoldase region, termed the \u2018base\u2019, which (like the CMG) contains six homologous AAA+ ATPase subunits (Rpt1-6) (Forster et al., 2013). Recent cryo-EM studies have imaged the complete 26S yeast proteasome bound to ATP at \u223c9 \u00c5 resolution showing that the AAA+ subunits of the base also form a right-handed spiral (Lander et al., 2012). Comparison of proteasome spiral with that seen here for the CMG shows that these regions of the two systems exhibit a surprisingly similar global architecture (Figure 4E). Moreover, the proteasome also contains an accessory subunit (Rpn1) that\u2014as observed here for GINS\u2013Cdc45 in the context of the CMG\u2014wedges itself between a subset of ATPase and OB-fold domains present in Rpt1-6 (Lander et al., 2012; Figure 4E). The structural congruencies exhibited between the CMG and proteasome ATPase subcomplexes suggest that, even though the substrates for the two systems differ greatly, both motors may share certain commonalities in how ATP turnover is coupled to movements that promote translocation. Such a similarity could underlie both the pronounced asymmetry of the CMG and proteasome ATPase rings, and the relatively high degree of tolerance shown by both systems toward active-site mutations within certain subunits (Moreau et al., 2007; Ilves et al., 2010; Beckwith et al., 2013).\n\n### Identification of a dimeric CMG configuration\n\nAlthough the CMG has been observed to operate as a discrete single complex during replication (Yardimci et al., 2010), the loading of the Mcm2-7 hexamer onto DNA by ORC, Cdc6, and Cdt1 during initiation results in the transient formation of a catalytically inactive, head-to-head double hexamer intermediate (Evrin et al., 2009; Remus et al., 2009). The MCM N-terminal domains have been shown to comprise the dimer interface of the double hexamer (Fletcher et al., 2003; Costa et al., 2006; Remus et al., 2009), and create a critical target site for the Dbf4-dependent Cdc7 protein kinase DDK (Labib, 2010; Sheu and Stillman, 2006, 2010); phosphorylation of the N-terminal tails of Mcm2/4/6 alters the configuration of the Mcm2-7 complex, but does not directly promote Mcm2-7 dissociation (On et al., 2014).\n\nAt present, it is unclear how the Mcm2, Mcm4, and Mcm6 subunits are aligned with respect to one another in the Mcm2-7 double hexamer. However, in the course of our studies, we found a new configuration of the CMG that sheds light on this issue. In particular, a small (\u223c5%) but consistent population of CMG particles was seen to form a clear dimeric species that adopts a distinctive head-to-head configuration through its MCM N-terminal regions, and which consistently orients the GINS\u2013Cdc45 subcomplex toward opposing sides of the two ring (Figure 5A). The abundance and uniformity of CMG dimers, which were noted in several independent preparations, suggests that these particles represent a naturally occurring state of the assembly.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig5-v2.jpg)\n\n**Figure 5.:** (A) Experimentally observed 2D class averages showing that the CMG forms a defined double-hexamer in which the GINS-Cdc45 subcomplex is rotationally offset toward opposite sides of the Mcm2-7 rings. Arrowheads mark the position of GINS/Cdc45. The structure of the archaeal N-terminal double hexamer is shown to depict the six possible Mcm2-7 registers that were tested. The class averages show that the interface between the N-terminal collars can partially crack open in some instances, suggesting that this region is somewhat unstable when the CMG is bound to ssDNA. (B) Computationally derived 2D projections of double-hexameric 3D CMG models in which Mcm2-7 N-terminal domain dimers (modeled on an archaeal Mcm crystal structure of this region, PDB ID 1LTL) have been manually offset by distinct rotational registers. The reference-free class averages best resemble a model in which Mcm5 from ring 1 juxtaposes with Mcm4 from ring 2, although our data cannot formally rule out a configuration where Mcm4 might juxtapose with Mcm3 or Mcm2 (although in these configurations the two Mcm2/5 gates would still remain misaligned). Arrowheads mark the position of GINS/Cdc45. (C) Cartoon representation of the Mcm2-7 double ring register formed in head-to-head dimers of the CMG.\n\nThe observed organization of the CMG dimers has several implications for the formation and function of the helicase. For example, the 180\u00b0 offset of GINS and Cdc45 present in the dimer places each Mcm2/5 gate on the opposite sides of the complex, facing away from each other (Figure 5B,C). During origin melting, this configuration would allow a single DNA strand to escape each Mcm2-7 hexamer without steric interference from its partner CMG, enabling particle separation and the formation of two independent replication forks. The organization of the CMG dimer also indicates that the N-terminal regions of Mcm2 and Mcm5 of one hexamer associate in trans with the N-terminal regions of Mcm6 and Mcm4 of the partner hexamer. Such an interaction would help explain why Mcm4 and GINS have been seen to interact in pulldown studies (Ilves et al., 2010), even though the two factors map to distal positions of the CMG in the context of a monomer (Costa et al., 2011). Finally, the observed arrangement suggests that the ability of DDK to activate Mcm2-7 by phosphorylation of Mcm4, 2, and 6 (Labib, 2010) (as well as the ability of the Bob1 mutation in Mcm5 to bypass the requirement for DDK [Jackson et al., 1993]) could result from a destabilization of the CMG dimer contacts that are symmetrically apposed across the N-terminal collar (Figure 5C). Altogether, our data establish that the two Mcm2/5 gates of a double hexamer are spatially segregated from each other and indicate that separation of Mcm2-7 double hexamers occurs subsequent to CMG formation. Such a mechanism is consistent with recent findings showing that the phosphorylation by DDK is insufficient to promote the separation of Mcm2-7 double hexamers on its own (On et al., 2014).\n\nThe existence of a dimeric CMG state, coupled with prior views of Mcm2-7 and the DNA-bound conformation of the Mcm2-7 ATPase domains seen here, highlights the innate plasticity of the MCM ring and the means by which different factors help remodel the helicase to support appropriate loading and activation during the initiation of DNA replication (Figure 6). Biochemical studies using Saccharomyces cerevisiae proteins first showed that Mcm2-7 on its own possesses a natural discontinuity\u2014the \u2018Mcm2/5 gate\u2019\u2014through which DNA can enter and exit the helicase pore (Bochman and Schwacha, 2007). Structural studies have corroborated this observation, additionally showing that metazoan Mcm2-7 rings preferentially assume a left-handed lock-washer shape and that ATP alone is incapable of fully inducing ring closure (Costa et al., 2011; Lyubimov et al., 2012). Following the action of ORC, Cdc6, and Cdt1, two Mcm2-7 hexamers become locked into a planarized co-joined ring (Evrin et al., 2009; Remus et al., 2009); in the presence of GINS, Cdc45, and single-stranded DNA, the Mcm2-7 ATPase domains shift again, but now into a right-handed spiral conformation (Figure 4). Thus, Mcm2-7 undergoes a chiral-flip in architectural state as it matures into a functional helicase with loading, activation, and DNA binding all appearing to participate in these transitions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03273/elife-03273-fig6-v2.jpg)\n\n**Figure 6.:** Following synthesis and assembly, the isolated metazoan Mcm2-7 motor forms an inactive left-handed spiral, irrespective of nucleotide state, with a discontinuity between Mcm5 and Mcm2. The action of ORC, Cdc6 and Cdt1 results in the loading of a planar, head-to-head Mcm2-7 double hexamer onto a duplex DNA in which the Mcm2/5 gates are closed. Following loading, Dpb11-Sld2-Sld3 (11-2-3) chaperone GINS and Cdc45 onto the Mcm2-7 double hexamer and along with DDK promoted phosphorylation events, help promote both DNA melting, CMG formation and replication fork separation. Structural analysis of dimeric CMG particles (Figure 5) indicates that the Mcm2/5 gates are localized on the opposing sides of the dodecameric Mcm2-7 complex and that CMG formation precedes separation of the double hexamer.\n\nWhy might Mcm2-7 traverse through such disparate intermediates? One possibility is that Mcm2-7 initially assembles into an inactive conformation to prevent inadvertently triggering aberrant replication events. An alternative possibility, not necessarily incompatible with the first, is that Mcm2-7 might transition through different forms as a means to promote the melting of duplex replication origins. Interestingly, an important attribute of some of the states adopted by Mcm2-7 is the existence of a breach or subunit offset in the ATPase ring between the Mcm2 and Mcm5 subunits. Given the topological barrier that extended DNA segments present to encirclement by toroidal proteins, it is notable that two MCM-associated factors\u2014Cdt1 and GINS\u2013Cdc45\u2014both appear to occlude the Mcm2/5 interface (Costa et al., 2011; Sun et al., 2013). Hence, controlled access through the Mcm2/5 gate appears useful not only for regulating DNA access into a preformed Mcm2-7 hexamer (Bochman and Schwacha, 2007), but also for preventing accidental DNA egress in the apo state and at stalled forks (Petojevic et al., unpublished data).\n\n### Concluding remarks\n\nThe structure of the eukaryotic CMG complex bound to nucleotide and a 3\u2032-tailed DNA substrate helps resolve many outstanding questions surrounding the mechanism by which this key replication assembly forms and operates. The structure reveals that the RecJ domain of Cdc45, which recent data have found to bind to escaped leading strand substrates (Petojevic et al., unpublished data), takes up a position on the CMG that would aid in capturing a DNA segment that might escape from the Mcm2-7 pore. Our EM data show that the nucleotide-loaded CMG orients on single-stranded DNA such that the 3\u2032 end enters first through the C-terminal AAA+ domains of Mcm2-7, consistent with prior biochemical data indicating that archaeal MCMs move along DNA with the opposite polarity as superfamily III helicases (McGeoch and Bell, 2005; Rothenberg et al., 2007). The binding of DNA to the CMG also induces the formation of a right-handed spiral in the MCM ATPase domains whose overall structure more closely mimics bacterial RecA-family replicative helicases than its viral AAA+ cousins, and whose relative arrangement of AAA+ domains and accessory subunits is mirrored by the regulatory subcomplex of the eukaryotic proteasome (Lander et al., 2012). Finally, we find that the CMG can form head-to-head dimers in which the two Mcm2/5 gates are fully offset from each other, helping to fill in key gaps concerning the higher-order organization of the Mcm2-7 double hexamer and how the CMG matures from this state into two single particles that encircle complementary single strands. Future studies will be needed to definitively establish the full paths of the leading- and lagging-strand DNA bound to the CMG and the extent to which the disparate AAA+ and RecA-family ring-translocases share or diverge in coupling ATP turnover to specific subunit movements that drive substrate translocation.\n\n## Materials and methods\n\n### Cloning and construction of baculoviruses\n\nBaculoviruses were constructed as previously described (Ilves et al., 2010). Briefly, the MCM3 gene was tagged with FLAG epitope at the amino terminus through 5\u2032 PCR oligonucleotides that inserted the epitope in frame. Mcm2, Mcm3, Mcm4, Mcm5, Psf1, Psf2, and Psf3 cDNAs were inserted between EcoRI and SpeI restriction sites of the pFastBac1 vector. The cDNA of Mcm6 and Mcm7 was inserted between BamHI and SpeI sites, and Cdc45 and Sld5 cDNA between EcoRI and Xba restriction sites. These vector templates were used for generation of CMG mutants through PCR based mutagenesis. Sequencing was used to verify the entire protein coding regions of all generated pFastBac1 constructs. Specific deletion mutants of either the Psf1 C-terminus or Cdc45 N-terminus included Psf11\u2212139, Psf11\u2212170, Psf11\u2212176, Psf11\u2212184, and Cdc45\u03941\u221299. C-terminal deletions were constructed by introducing stop codons after the desired residue and by removing any remaining C-terminal sequences present from the original cDNA clone. N-terminal deletions were constructed by the removal of the pertinent cDNA regions and by introducing a start (ATG) codon in front of the desired residue. The same restriction enzyme sites as described above were used to subclone all truncation constructs into the pFastBac1 vector. To target the Psf1\u2013Cdc45 interface, alanine substitutions in the C-terminus of Psf1 were introduced individually or in parallel into for Glu190, Leu192, Val193, and Arg194 by site-directed mutagenesis.\n\n### Nucleoprotein complex preparation\n\nThe CMG complex was purified as previously described (Ilves et al., 2010), but with the following changes. Briefly, after co-infection with 11 distinct baculoviruses, proteins were expressed for 72 hr in Hi5 cells (Invitrogen, Carlsbad, CA) by culturing in 500-ml spinner flasks and co-infecting at 1.2^106 cells/ml density. Cells were lysed by hypotonic shock combined with one freeze\u2013thaw cycle and Dounce homogenization. The lysate was clarified by centrifugation, and the protein complex was immunoaffinity purified over anti-flag (M2) antibody-conjugated agarose beads (Sigma, St. Louis, MO) to bind a FLAG-tag on Mcm3. To isolate the fully intact CMG from incomplete complexes, the protein preparation was passed over a Mono S HR 5/5 ion exchange column, followed by a Mono Q HR 5/5 ion exchange chromatography using an \u00c4KTA Purifier (GE Healthcare, Piscataway, NJ). Peak fractions were collected and then both further purified and concentrated using a Mono Q PC 1.6/5 column coupled to a Pharmacia SMART system. The purified material was dialyzed into a buffer containing 25 mM HEPES (pH 7.6), 50 mM sodium acetate, 10 mM magnesium acetate, and 1 mM DTT. The final protein concentration as measured by the Bradford protein assay was 1.2 mg/ml.\n\nOligonucleotides used for nucleoprotein complex reconstitution were synthesized by Integrated DNA Technology and shipped as lyophilized pellets. Oligo \u2018LEAD60\u2019 contained the sequence 5\u2032\u2013GGG-CAC-TTG-ATC-GGC-CAA-CCT-T39\u20133\u2032, while \u20183BTNLAG20\u2019 contained the sequence 5\u2032\u2013GGT-TGG-CCG-ATC-AAG-TGC-CC\u2013biotin\u20133\u2032. The oligonucleotides were dissolved in the CMG buffer and quantified by A260. For annealing, LEAD60 and 3BTNLAG20 were mixed in equimolar amounts, briefly heated to 95\u00b0C and slow-cooled to 4\u00b0C. Previous work has shown that the ATP\u03b3S binds to a duplex-DNA substrate containing a 40mer 3\u2032 single-stranded DNA tail (Ilves et al., 2010). To form helicase/DNA complexes, 10 nmol of concentrated CMG were mixed with the annealed DNA with a 1.2 molar excess of nucleic acid in CMG buffer plus 0.1 mM ATP\u03b3S. After incubation at room temperature for 30 min, the sample was passed over a Superose 6 PC 3.2/30 gel filtration column using an ETTAN micropurification system (GE Healthcare). A 50-\u03bcl fraction containing the center of the nucleoprotein elution peak was collected and immediately used for negative stain grid preparation, either with or without co-incubation with 1.2-fold molar excess of streptavidin.\n\n### Negative stain grid preparation\n\nEM grids were prepared by floating a thin layer of continuous carbon over a 400-mesh copper grid (Electron Microscopy Sciences, Hatfield, PA) using a custom-made carbon-floating device. Four microliters (\u223c40 ng) of the CMG\u2013DNA or CMG\u2013DNA\u2013Streptavidin complex were then applied onto freshly glow-discharged grids for 30 s. The grids were laid on top of 75-\u03bcl drops of a fresh 2% (wt/vol) uranyl formate solution and stirred for five consecutive 10-s staining steps. The staining solution was then blotted dry and the grids were stored.\n\n### Electron microscopy\n\nNucleoprotein particles were imaged using a JEM-2100 LaB6 electron microscope (JEOL, Japan) operated at 200 kV. Images were recorded at a nominal magnification of 50,000\u00d7 on a Ultrascan 4k \u00d7 4k CCD camera (Gatan, Pleasanton, CA), resulting in a 2.14 \u00c5 pixel size at the specimen level. The JEOL Automated Data Acquisition System (JADAS, Zhang et al., 2009) was used to automatically collect low-dose images with a 0.5 to 3.5 \u00b5m defocus at around 35 electrons per \u00c52. In addition, manual data collection was performed under the same imaging conditions. In total, 579 micrographs were collected for the non-labelled and 436 micrographs for the labeled nucleoprotein complex.\n\n### Image processing and atomic docking\n\nParticles were semi-automatically picked and phase flipped using the EMAN2 package, version 2.05 (Tang et al., 2007). Reference free two-dimensional class-sums were obtained using RELION, version 1.2 (Scheres, 2012), except for the streptavidin-DNA-bound CMG complex that was processed using Imagic (van Heel et al., 1996) and the rotation and classification protocol implemented in Costa et al. (2011). Working with the ADP(BeF3) bound CMG as a starting model (Costa et al., 2011), multi-model three-dimensional refinement was performed with an iterative projection-matching and back-projection protocol that employs libraries from the EMAN2 and SPARX software packages (Hohn et al., 2007; Tang et al., 2007) or, in a parallel effort, using three-dimensional classification and refinement routines as implemented in RELION (Scheres, 2012). Refinement of the starting models began using an angular increment of 15\u00b0, progressing down to 2\u00b0 with EMAN2/SPARX, and default parameters in RELION 1.2 (7.5\u00b0 angular sampling, 5 pixel search range, and 1 pixel search step). The two approaches yielded virtually identical results (Figure 1\u2014figure supplement 1) with the best structure containing 7,409 particles (obtained with EMAN2/SPARX and shown in all figures). The resolution was estimated by the \u2018gold-standard\u2019 Fourier Shell Correlation approach implemented in RELION (Scheres, 2012). 3D-maps were segmented using the Segger program (Pintilie and Chiu, 2012) in UCSF Chimera (Pettersen et al., 2004). The Chimera \u2018Fit in Map\u2019 option was used for rigid-body fitting of crystal structures and to generate all surface renderings included in the figures (Pettersen et al., 2004). The full-length Psf1 protein was modelled by superposing the Thermococcus kodakaraensis GINS51 (PDB entry 3ANW) onto the human Psf1 structure. The N-terminal Mcm2-7 collar was modelled by superposing protomers of the Methanothermobacter thermautotrophicus MCM (PDB entry 1LTL) or the Sulfolobus solfataricus MCM (PDB entry 2VL6) onto the isolated oligomerization subdomain of the M. thermautotrophicus MCM. The two structures exhibit markedly distinct configurations in their N-terminal \u03b1-helical region (subdomain A), with the S. solfataricus MCM region matching best to the N-terminal domain configuration of Mcm4 and Mcm5. The atomic model of the near full-length S. solfataricus MCM (PDB entry 3F9V) was found to fit the entire Mcm4 electron density region, whereas slight rigid body transformations of the MCM AAA+ domain relative to the N-terminal region were allowed to best fit the electron density of Mcms 2, 3, 5, 6, and 7. A homology model based on the bacterial RecJ (PDB entry 1IR6) was used for docking of Cdc45. The EM map has been deposited in the 3D-EM database (www.emdatabank.org) with accession code EMD-2772.\n",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "b8146069-65b9-4645-a6d8-90b4bdeae2d6",
+      "submission_id": "1b668c54-4293-4ca7-bfd9-46524ab35dfe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Kowalczykowski, University of California, Davis , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03273.012](https://doi.org/10.7554/eLife.03273.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cDNA binding polarity, dimerization, and ATPase ring remodeling in the Cdc45-MCM-GINS replicative helicase\u201d for consideration at eLife. Your article has been favorably evaluated by James Manley (Senior editor) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOverall, the experiments are well executed the data are sound and the main conclusions are justified. However, neither the inference regarding the ssDNA path (on Cdc45) nor the final model (in terms of conformational changes during the loading and translocation) are fully supported by the data. These issues can be addressed provided that the authors can address the following major points; additional experimentation is likely not required:\n\n1) Relationship of ssDNA binding to Mcm subunits. Figure 2A shows a very specific structure in which DNA is uniquely in contact with the Mcm5 subunit. The basis for this figure is EM reconstructions of the CMG complex with bound DNA that contains a streptavidin tag. As ssDNA is poorly visualized under EM, the streptavidin marks the location of the DNA in the complex. However, 1) the class averages in Figure 2B show the streptavidin at a considerable distance from the CMG complex, making assignment of a specific DNA-binding MCM subunit difficult, and 2) as nearly as this reviewer can tell, there is nothing in the text that specifically identifies Mcm5 as the sole DNA binding subunit. Explain: is Figure 2A a structural summary or artistic license?\n\n2) Thresholding/filtering issues. A major point in the paper is the physical interaction between CDC45 and Mcm5, in which the N terminus of CDC45 is proposed to essentially pry apart the N and C-terminal domains of Mcm5 (Figure 1D). There are several technical problems with this conclusion. Although varying the thresholding (presumably through Chimera) is a useful way to emphasize various features, in Figure 1D it is so extensive that the N and C-terminal domains of Mcm5 are completely separated from one another, a feature not demonstrated by other CMG structures presented in this paper. In general, the thresholding level should generate an enclosed volume consistent with the calculated molecular weight of the component proteins: was this done? When 2 structures are being compared, the levels of thresholding and filtering should be the same in each structure.\n\n3) In addition, the interpretation that CDC45 pries apart the N and C-terminus of Mcm5 largely depends upon how the various masses within the structure were segmented \u2013 what part of the density belongs to Mcm5 and what part actually belongs to CDC45? This question has an additional problem insofar as the region of CDC45 that likely interacts with Mcm5 is not highly conserved and the authors were unable to generate a homology model for it. Moreover, the software used for segmentation that sets the subunit boundaries (likely the Segger tool in Chimera) requires a very high-resolution structure to give reliable results without computational validation (< 10 angstroms). Although for transmission EM the structures in this manuscript are excellent, it seems a little optimistic that the authors have enough resolution to accurately validate these boundaries visually. There are computational methods available to provide proper validation of their results (http://ncmi.bcm.edu/ncmi/software/segger/docs_fitting_scores).\n\n4) The figures are confusing and should be improved. Specifically:\n\nA) In all the figures, top and side views should be kept in similar orientations whenever possible for clarity.\n\nB) Figure 3 and Figure 6 are inconsistent in terms of leading strand and lagging strand positions relative to Mcm subunits.\n\nC) Figure 3D suggests a rocking motion (rotation) between the CMG and the duplex DNA. This is not supported by data here. It is quite possible that the leading strand could slip out to the outer channel formed by GINS and Cdc45 without altering the relative orientation between duplex DNA and the CMG. Furthermore, the conformation when the leading strand is captured by Cdc45 is different from that shown here. This figure should be altered to reflect this.\n\nD) Figure 5 suggests the exact register of the CMG dimer based on 2D class averages. Although it is plausible, there are no experimental data to confirm this and Models 3 or 5 cannot be completely dismissed. Furthermore, Figure 5A suggest there might be some flexibility in the dimer arrangement as not all the class averages display the same tight packing. This part of the Results/discussions should be tuned down.\n\nE) Figure 6. Translocation step. The interactions of GINS and Cdc45 with Mcm are different in the two complexes. Please check polarity! The earlier steps neither are unclear nor supported by data here so should be omitted. Furthermore, since Mcm2-7 likely act sequentially, different subunits will have different nucleotide bound states at a given time. ATP-gS state presented here therefore might not reflect the functional state during translocation. It is also unclear what triggers gate open/close. How does the Cdt1-Orc complex (which induces the gate being blocked) enable dsDNA loading? What is the defining factor that leads to DNA melting and gate opening/strand separation? These are not addressed here and therefore Figure 6 should be modified to only reflect major conclusions here. The leading strand and lacking strand as well as their directionality should be labelled.\n\n5) Methods: how many particles contributed to the final reconstruction? How were the streptavidin-labelled data processed? Is a 3D reconstruction obtained (since 436 micrographs were collected)?\n\n6) Significance: the author argued that the need for GINS/Cdc45 in preventing DNA from escaping Mcm2-7 would likely to be minimal. This raises the question of the significance of the additional roles proposed in this paper (to capture the \u201cescaped\u201d leading strand). Please reconcile.\n",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b29324c7-609c-4f2f-b530-ce235d4af6ee",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C1",
+      "claim": "The CMG helicase separates DNA strands during replication in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cdc45/Mcm2-7/GINS (CMG) helicase separates DNA strands during replication in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental statement about CMG function presented in the abstract, supported by the broader scientific literature on eukaryotic DNA replication.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "da429bbc-f4e7-4049-86f1-7d99b7c58b32",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C2",
+      "claim": "The structure of the CMG was determined in the presence of ATP\u03b3S and a DNA duplex bearing a 3\u2032 single-stranded tail using electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Using electron microscopy, we have determined the structure of the CMG in the presence of ATP\u03b3S and a DNA duplex bearing a 3\u2032 single-stranded tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach used to determine the structure, which is supported by the methods section and EM data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "744170fc-8232-46a6-a4f2-4cd42d9bbee2",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C3",
+      "claim": "The MCM subunits of the CMG bind preferentially to single-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows that the MCM subunits of the CMG bind preferentially to single-stranded DNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the structural data and biochemical observations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "c0b088ea-83b8-4452-8b28-d74159e755b3",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C4",
+      "claim": "The structure establishes the polarity by which DNA enters into the Mcm2-7 pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows that the MCM subunits of the CMG bind preferentially to single-stranded DNA, establishes the polarity by which DNA enters into the Mcm2-7 pore",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural data showing DNA orientation relative to the CMG complex provides direct evidence for DNA entry polarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "13a58fff-19d2-4aa5-9b91-63829407019d",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C5",
+      "claim": "Cdc45 helps prevent DNA from dissociating from the helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "establishes the polarity by which DNA enters into the Mcm2-7 pore, and explains how Cdc45 helps prevent DNA from dissociating from the helicase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural positioning of Cdc45 and its RecJ domain orientation provide evidence for this function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "1efccca9-86d8-4888-b5e6-751fc634c432",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C6",
+      "claim": "The Mcm2-7 subcomplex forms a cracked-ring, right-handed spiral when DNA and nucleotide are bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mcm2-7 subcomplex forms a cracked-ring, right-handed spiral when DNA and nucleotide are bound",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The EM structure directly shows this spiral configuration in the presence of DNA and ATP\u03b3S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "b6ea10bc-6c7a-4eea-8022-a23d67c51d32",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C7",
+      "claim": "The CMG exhibits unexpected congruencies with bacterial DnaB helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mcm2-7 subcomplex forms a cracked-ring, right-handed spiral when DNA and nucleotide are bound, revealing unexpected congruencies between the CMG and both bacterial DnaB helicases and the AAA+ motor of the eukaryotic proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison between CMG and DnaB reveals similar spiral architectures and channel dimensions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "9d9bc995-244f-4ea0-9c82-4797a8a245f0",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C8",
+      "claim": "The CMG exhibits unexpected congruencies with the AAA+ motor of the eukaryotic proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mcm2-7 subcomplex forms a cracked-ring, right-handed spiral when DNA and nucleotide are bound, revealing unexpected congruencies between the CMG and both bacterial DnaB helicases and the AAA+ motor of the eukaryotic proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison shows similar organization of AAA+ domains and accessory subunit positioning between CMG and proteasome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "656f3ccb-7697-4a0f-937a-2b76b13fcbe1",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C9",
+      "claim": "A subpopulation of dimeric CMGs exists.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a subpopulation of dimeric CMGs establishes the subunit register of Mcm2-7 double hexamers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EM data shows approximately 5% of CMG particles form dimers with a defined head-to-head configuration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "234bfc73-df61-4482-86ff-2de9fa058dc6",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C10",
+      "claim": "The dimeric CMG structure establishes the subunit register of Mcm2-7 double hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a subpopulation of dimeric CMGs establishes the subunit register of Mcm2-7 double hexamers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of 2D class averages of CMG dimers compared to computational models reveals the specific subunit arrangement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "9b60caaa-7069-41a4-b6ab-8687c628923f",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C11",
+      "claim": "Mcm2-7 transitions through different conformational and assembly states as it matures into a functional helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "together with the spiral form highlights how Mcm2-7 transitions through different conformational and assembly states as it matures into a functional helicase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of different structural states (apo, nucleotide-bound, DNA-bound, dimeric) reveals conformational changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "9e9c5986-89e9-4b8b-b5d2-f9eb4822a4f0",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C12",
+      "claim": "Mcm2-7 is a ring-shaped helicase that serves as the principal unwinding activity for separating parental DNA strands in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, origins are licensed for replication by recruitment of the Mcm2-7 complex, a ring-shaped helicase that serves as the principal unwinding activity for separating parental DNA strands (Blow, 1993; Bochman and Schwacha, 2008; Costa et al., 2011; Lyubimov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work establishing Mcm2-7 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "9449de85-81d7-4a35-bddb-9340d21bd2b0",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C13",
+      "claim": "Mcm2-7 is initially loaded around duplex DNA as an inactive double hexamer by ORC, Cdc6, and Cdt1 in the G1 phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm2-7 is initially loaded around duplex DNA as an inactive double hexamer by the origin recognition complex (ORC), Cdc6, and Cdt1 in the G1 phase of the cell cycle (Evrin et al., 2009; Remus et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited biochemical studies showing Mcm2-7 loading mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "7b03ae92-56ba-4eb8-bece-652ea8807b5a",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C14",
+      "claim": "The Mcm2-7 double hexamer forms a stable intermediate known as the pre-replicative complex (pre-RC).",
+      "claim_type": "EXPLICIT",
+      "source": "forming a stable intermediate known as the pre-replicative complex (pre-RC, Diffley et al., 1994; Donovan et al., 1997; Maiorano et al., 2000; Sun et al., 2013; Yanagi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations support the characterization of the pre-RC as a stable intermediate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "fdf69d33-4e2d-4599-9b2e-3398b02548c1",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C15",
+      "claim": "Upon entry into S phase, Mcm2-7 associates with the GINS complex and Cdc45 generating an 11-member assembly termed the CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon entry into S phase, Mcm2-7 associates with the GINS complex and Cdc45 generating an 11-member assembly termed the CMG (Kanemaki et al., 2003; Gambus et al., 2006; Moyer et al., 2006; Pacek et al., 2006; Ilves et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations document the formation of the CMG complex during S phase.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "2aed10bd-aca4-4d9a-b5b7-77a1fa5461bf",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C16",
+      "claim": "GINS/Cdc45 assembly is dependent on the CDK kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "GINS/Cdc45 assembly is dependent on the CDK kinase (Zegerman and Diffley, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work on CDK-dependent CMG assembly.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "d161697a-15c1-44b6-87f2-2ee75b946619",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C17",
+      "claim": "Post-translational modification of Mcm subunits 2, 4, and 6 by the Cdc7/Dbf4 kinase (DDK) contributes to CMG activation.",
+      "claim_type": "EXPLICIT",
+      "source": "while post-translational modification of Mcm subunits 2, 4, and 6 by the Cdc7/Dbf4 kinase (DDK) further contributes to CMG activation (Labib, 2010; Sheu and Stillman, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the role of DDK phosphorylation in CMG activation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "ed5f003a-d31d-4444-9d31-2f4a789e226c",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C18",
+      "claim": "The two CMG particles split apart into discrete complexes that have been proposed to each encircle a single DNA strand during translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the assembly of replicative polymerases and replisomal scaffolding factors (Gambus et al., 2009; Muramatsu et al., 2010), the two CMG particles split apart into discrete complexes that have been proposed to each encircle a single DNA strand during translocation (Yardimci et al., 2010; Boos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior work support the model of CMG separation and single-strand encirclement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "7f928faf-e609-4d1d-8266-d8adb5fa05d0",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C19",
+      "claim": "The precise register by which Mcm2-7 subunits interact with each other across the two rings in a double-hexamer is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the six homologous subunits of one Mcm2-7 complex are known to pair with a second Mcm2-7 complex through their N-terminal domains in the context of a double-hexamer (Evrin et al., 2009; Remus et al., 2009), the precise register by which these subunits interact with each other across the two rings is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "f0f2ebca-67d7-4384-8a57-8ddd07a088a2",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C20",
+      "claim": "DDK phosphorylates the N-termini of Mcm2, Mcm6, and Mcm4.",
+      "claim_type": "EXPLICIT",
+      "source": "How DDK phosphorylation of the Mcm2, Mcm6, and Mcm4 N-termini (Labib, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation supports the identification of DDK phosphorylation targets.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "8c038a79-238e-40ee-b7ca-433fcee66690",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C21",
+      "claim": "A DDK-bypass mutation exists in the N-terminus of Mcm4.",
+      "claim_type": "EXPLICIT",
+      "source": "or how a DDK-bypass mutation in the N-terminus of either Mcm4 (Sheu and Stillman, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation documents the existence of a DDK-bypass mutation in Mcm4.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "beebb2c0-7672-4d1f-b345-e0509ec465df",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C22",
+      "claim": "A DDK-bypass mutation exists in the N-terminus of Mcm5.",
+      "claim_type": "EXPLICIT",
+      "source": "or Mcm5 (Jackson et al., 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation documents the existence of a DDK-bypass mutation in Mcm5.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "44256028-5f43-461e-86d0-716873b1c89d",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C23",
+      "claim": "Mcm4 is spatially segregated from Mcm2 and Mcm5 in the CMG structure.",
+      "claim_type": "EXPLICIT",
+      "source": "particularly as Mcm4 is spatially segregated from Mcm2 and Mcm5 (Costa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior structural work establishes the spatial arrangement of Mcm subunits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "7dddcdf8-04e0-4d68-93b3-4e5b344d6ac6",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C24",
+      "claim": "The CMG translocates 3\u2032\u21925\u2032 along DNA during unwinding and fork progression.",
+      "claim_type": "EXPLICIT",
+      "source": "During unwinding and fork progression, the CMG translocates 3\u2032\u21925\u2032 along DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CMG directionality supported by prior biochemical studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "a09c5aa5-6ea7-43a6-93de-7f9401c439ae",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C25",
+      "claim": "Cdc45 contains a RecJ exonuclease domain that can bind DNA but is catalytically inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc45 has recently been shown to contain a RecJ exonuclease domain that can bind DNA but that is catalytically inactive (Petojevic et al., unpublished data, as well as Sanchez-Pulido and Ponting, 2011; Krastanova et al., 2012; Szambowska et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations and unpublished data support the identification and characterization of the Cdc45 RecJ domain.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "c815b583-1d21-49c9-b950-58b4a783fa59",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C26",
+      "claim": "Conflicting models exist for how Mcm2-7 engages substrate DNAs as it moves 3\u2032\u21925\u2032 during strand separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conflicting models likewise exist for how Mcm2-7 engages substrate DNAs as it moves 3\u2032\u21925\u2032 during strand separation, with biochemical data from archaeal MCMs and phylogenetic relationships to superfamily III (SFIII) helicases (such as the SV40 Large T antigen and the papillomavirus E1 protein) predicting mutually exclusive binding orientations (McGeoch et al., 2005; Enemark and Joshua-Tor, 2006; Rothenberg et al., 2007; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior work document conflicting models for MCM DNA engagement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "e74657ef-343c-4a52-87a8-5ba1364d6f3c",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C27",
+      "claim": "The structure was determined using Drosophila melanogaster CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "To begin to understand several extant questions surrounding how the CMG is formed and operates at molecular level, we have determined structure of the full-length complex from Drosophila melanogaster",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the organism source of the CMG complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "46240217-668f-47ca-a85f-dab4feb5df97",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C28",
+      "claim": "The structure was determined in the presence of a 3\u2032-tailed DNA duplex and ATP\u03b3S using negative-stain electron microscopy and single-particle reconstruction methods.",
+      "claim_type": "EXPLICIT",
+      "source": "we have determined structure of the full-length complex from Drosophila melanogaster in the presence of a 3\u2032-tailed DNA duplex and the non-hydrolyzable ATP analog, ATP\u03b3S, using negative-stain electron microscopy and single-particle reconstruction methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods used for structure determination are explicitly described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "716c8433-9725-4b64-aa02-a5efadb28e83",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C29",
+      "claim": "The C-terminal ATPase domains of Mcm2-7 form the leading edge of the motor as it advances on a duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure establishes that: 1) the CMG preferentially associates with single-stranded DNAs over double-stranded substrates, 2) the C-terminal ATPase domains of Mcm2-7 form the leading edge of the motor as it advances on a duplex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural data showing DNA orientation relative to the CMG establishes this polarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "80ef1263-5493-4adb-b304-77657629c715",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C30",
+      "claim": "The RecJ domain of Cdc45 is oriented to favor the capture of DNA segments that might accidentally escape the Mcm2-7 pore.",
+      "claim_type": "EXPLICIT",
+      "source": "and 3) the RecJ domain of Cdc45 is oriented to favor the capture of DNA segments that might accidently escape the Mcm2-7 pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural positioning of the Cdc45 RecJ domain relative to the Mcm2/5 gate supports this functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "3263d5e3-435a-47d4-8101-3dafcf7d369f",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C31",
+      "claim": "The Mcm2-7 ATPase domains transition from a planar, open ring to a closed, right-handed spiral in the presence of both DNA and nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the new structure with a previously-determined apo CMG model (Costa et al., 2011) shows that the Mcm2-7 ATPase domains of the complex transition from a planar, open ring into a closed, right-handed spiral in the presence of both DNA and nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison between apo and DNA/nucleotide-bound structures reveals this conformational change.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "d3b961ca-cd0f-4b2a-b51e-cfa201de99e9",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C32",
+      "claim": "The MCM spiral is most similar to that adopted by the bacterial DnaB helicase upon engaging single-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of this state alongside other ring-ATPases shows that the MCM spiral is most similar to that adopted by the bacterial DnaB helicase upon engaging single-stranded DNA (Itsathitphaisarn et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison with DnaB structure supports this similarity.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "377683bb-9975-4c78-8d36-267eebfbaf55",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C33",
+      "claim": "GINS\u2022Cdc45 bridges the junction between the ends of the spiral in a manner similar to how Rpn1 spans a spiral Rpt1-6 ATPase assembly in the eukaryotic proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the GINS\u2022Cdc45 complex bridges the junction between the ends of the spiral in a manner similar to that by which the Rpn1 accessory subunit spans a spiral Rpt1-6 ATPase assembly in the eukaryotic proteasome (Lander et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison with proteasome structure reveals this architectural similarity.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "fa230315-c5f4-491e-9a8a-fec39c327d1a",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C34",
+      "claim": "Examination of CMG dimers shows how two Mcm2-7 complexes associate within a double hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, examination of a subpopulation of CMG dimers present in our EM data shows how two Mcm2-7 complexes associate within a double hexamer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of dimeric CMG particles in the EM data reveals the double hexamer organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "d2bb4bc6-2593-4b56-a5dc-cab61c6a88ba",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C35",
+      "claim": "The dimerized CMG state persists during CMG formation, prior to separation during fork progression.",
+      "claim_type": "EXPLICIT",
+      "source": "and suggests that this dimerized state persists during CMG formation, prior to separation during fork progression (Ilves et al., 2010; Yardimci et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation of CMG dimers combined with cited work on CMG separation supports this model.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "305f8c6e-5dd7-4e13-b7c6-ea6c76201f3d",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C36",
+      "claim": "Mcm2-7 unwinds DNA using an approach distinct from that of superfamily III helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our observations establish that Mcm2-7 unwinds DNA using an approach distinct from that of superfamily III helicases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The opposite DNA polarity observed compared to SF3 helicases supports this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "50bfcfe4-073c-4014-8fc3-0d7a38540e1e",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C37",
+      "claim": "A previous study determined medium-resolution (28 \u00c5) structures of the Drosophila melanogaster CMG helicase in both an apo state and bound to a non-hydrolyzable ATP analog.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we determined the medium-resolution (28 \u00c5) structures of the Drosophila melanogaster CMG helicase in both an apo state and bound to a non-hydrolyzable ATP analog (Costa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work by the authors documents these previous structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "0a19ebfa-80ed-4910-81c5-119fcba104e9",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C38",
+      "claim": "Previous CMG models revealed a planar structure for Mcm2-7, with GINS and Cdc45 spanning a gap between Mcm2 and Mcm5 when nucleotide was omitted.",
+      "claim_type": "EXPLICIT",
+      "source": "Though sufficient for mapping individual subunits within the CMG, both models revealed a planar structure for Mcm2-7, with GINS and Cdc45 spanning a gap that appeared between Mcm2 and Mcm5 when nucleotide was omitted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of prior structural findings from cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "785bde73-5ee2-4f7f-8afc-a1e45fab71d0",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C39",
+      "claim": "A total of 29,913 particles were selected from EM micrographs for the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 29,913 particles were selected from EM micrographs acquired with JADAS automated data collection software (JEOL, Zhang et al., 2009) on a JEM2100 electron microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of particles used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "2690395d-7bbb-4d32-91e2-f3142200e3f7",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C40",
+      "claim": "The current CMG structure was determined to 18 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "CMG particles imaged with DNA and ATP\u03b3S turned out to be quite uniform, permitting structure determination to a higher resolution than that obtained previously (18 \u00c5 vs 28 \u00c5 resolution, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is explicitly stated and supported by FSC analysis shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "c3503e86-f02e-4871-a99c-391a97b6668e",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C41",
+      "claim": "The location of Psf1 C-terminus was not visible in previous structures but is clearly evident in the new structure.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the location of Psf1 C-terminus, which was previously not visible, was now clearly evident, and could be readily fit to a recently-published full-length structure of Psf1 from an archaeal ortholog (Oyama et al., 2011; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The improved resolution allows visualization of previously unseen structural features, as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "8b824ecc-7fef-4eef-8412-4e613cb2ec83",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C42",
+      "claim": "Flexing within the Mcm2-7 ring is apparent with the C-terminal lobes of different MCM subunits displaying markedly distinct degrees of movement with respect to their associated N-terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Flexing within the Mcm2-7 ring was also apparent with the C-terminal lobes of different MCM subunits displaying markedly distinct degrees of movement with respect to their associated N-terminal regions (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The structural data shown in Figure 1D,E demonstrates differential positioning of MCM domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "834c3101-092b-4419-994f-1b735d2e8d37",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C43",
+      "claim": "Asymmetric positioning between the two tiers of an MCM ring has not been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric positioning between the two tiers of an MCM ring has not been reported previously",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a novel structural observation from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "5edaa38c-043e-4c17-9790-1bfbaf05e59a",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C44",
+      "claim": "The N-terminal and C-terminal domains of MCM are conformationally independent of each other to some extent in the presence of DNA substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that these elements are conformationally independent of each other to some extent in the presence of DNA substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observed differential flexing between N- and C-terminal domains supports this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "e8ccec6b-10fa-4b7c-afd9-9e4e9d871776",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C45",
+      "claim": "A rod-shaped feature jutting away from the C-terminal face of Mcm subunits 2 and 5 is present in electron density maps of the DNA-bound CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "More concrete evidence for DNA association was apparent in electron density maps generated for the CMG, which showed a rod-shaped feature jutting away from the C-terminal face of Mcm subunits 2 and 5 (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The electron density map shown in Figure 2A directly shows this feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "3a936876-d200-4063-bb24-551fda7f328b",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C46",
+      "claim": "The rod-shaped feature is absent in DNA-free 3D reconstructions of the CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "this feature is absent in DNA-free 3D reconstructions of the CMG (Costa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior DNA-free structures shows this feature is specific to DNA-bound state.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "99a6e248-1890-41e5-9c60-3ca2dae7cd30",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C47",
+      "claim": "Biotin-labeling of the duplex end of the oligonucleotide followed by streptavidin binding shows additional density in 2D class averages compared to unlabeled CMG\u2013DNA particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the resultant 2D class averages from this approach revealed clear additional density compared to the unlabeled CMG\u2013DNA particles (Figure 2B), demonstrating that the tailed substrate indeed associates with the complex particles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The 2D class averages shown in Figure 2B provide direct visual evidence of streptavidin labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "426b3e78-7d1a-4893-9ccf-94200b860885",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C48",
+      "claim": "The CMG binds to the single-stranded end of the 3\u2032-tailed DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the electron density features seen for the DNA and the distance the streptavidin 'pointer' resides from the complex, the EM data show that the CMG binds to the single-stranded end of the 3\u2032-tailed DNA substrate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The position of streptavidin relative to the CMG in the EM data supports this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "9c272cef-3cd1-45dc-9782-660e3e68c7fe",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C49",
+      "claim": "The CMG preferentially associates with and translocates along single-stranded DNA over duplex substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "corroborating biochemical data indicating that the complex preferentially associates with and translocates along single-stranded DNA over duplex substrates (Ilves et al., 2010; Fu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior biochemical studies support this preference for ssDNA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "07774ed3-b19a-42ca-97d7-4a62221b95a9",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C50",
+      "claim": "In E1, the 3\u2032 end of DNA has been observed by X-ray crystallography to lie proximal to the C-terminal motor domains of the helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "In E1, the 3\u2032 end of DNA has been observed by X-ray crystallography to lie proximal to the C-terminal motor domains of the helicase (Enemark and Joshua-Tor, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior structural work on E1 helicase.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "c88e29fa-3201-4ef3-a3c5-81923a4421fa",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C51",
+      "claim": "Based on FRET measurements, the converse DNA orientation has been reported for Sulfolobus solfataricus MCM compared to E1.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, based on FRET measurements between a dye-labeled DNA/MCM pair, the converse has been reported for Sulfolobus solfataricus MCM (McGeoch et al., 2005; Rothenberg et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior FRET studies on archaeal MCM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "5886c448-3a7b-4e51-891c-7d7546748239",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C52",
+      "claim": "The streptavidin appended to the duplex DNA end localizes next to the C-terminal, AAA+ domain face of the CMG particle.",
+      "claim_type": "EXPLICIT",
+      "source": "In the new CMG structure, the streptavidin appended to the duplex DNA end can be clearly seen to localize next to the C-terminal, AAA+ domain face of the particle (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2B shows the position of streptavidin relative to the CMG structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "115a710f-e148-4a6c-b943-5add8d0acac6",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C53",
+      "claim": "A DNA segment bound by an MCM runs from the N-terminal collar to the ATPase motor region in a 3\u2032 to 5\u2032 direction.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding not only demonstrates that a DNA segment bound by an MCM runs from the N-terminal collar to the ATPase motor region in a 3\u2032 to 5\u2032 direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The streptavidin labeling experiment establishes the DNA polarity through the MCM pore.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "70ffd68c-4470-4156-8acf-dbe8665c4ffc",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C54",
+      "claim": "MCM and SF3 helicases bind substrates with opposing polarities.",
+      "claim_type": "EXPLICIT",
+      "source": "but also indicates that MCM and SF3 helicases bind substrates with opposing polarities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of DNA orientation in CMG versus E1 structures reveals opposite polarities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "94a3fea6-a3de-4bda-8a29-dbd4ab1954bb",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C55",
+      "claim": "The N-terminus of Cdc45 belongs to the RecJ family of ssDNA exonucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, however, the N-terminus of Cdc45 was shown to belong to the RecJ family of ssDNA exonucleases (Sanchez-Pulido and Ponting, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work identifying the RecJ domain in Cdc45.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "b11779eb-83cf-4628-990a-7f7aa0dd990a",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C56",
+      "claim": "Within the RecJ family, Cdc45 belongs to an offshoot branch that can still bind DNA but possesses natural amino acid substitutions which inactivate hydrolase functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, within this grouping, Cdc45 belongs to an offshoot branch that can still bind DNA, but that also possesses natural amino acid substitutions which would appear to inactivate any native hydrolase functions (Krastanova et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work characterizing the inactive exonuclease domain of Cdc45.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "130d8c6b-c292-461e-9f40-4653e5d70a86",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C57",
+      "claim": "A homology model for DmCdc45 was built based on Thermus thermophilus RecJ.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand how the RecJ fold of Cdc45 interfaces with Mcm2-7 and GINS, we built a homology model for DmCdc45 based on Thermus thermophilus RecJ and docked it into the higher-resolution, DNA-bound CMG reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods describe the homology modeling approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "7d96db6e-b95e-4d3f-8fc2-b3b6b8c4df91",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C58",
+      "claim": "The catalytic core and DNA tracking domain of the Cdc45 homology model fit unambiguously into only one region of the Cdc45 density.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic core and DNA tracking domain of the homology model fit unambiguously into only one region of the Cdc45 density (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3A shows the docking of the RecJ homology model into the EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "c32f6e01-44b9-4d05-bc78-4b0422e3abdc",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C59",
+      "claim": "The Cdc45 RecJ domain appears to contact the C-terminal 'B-domain' of Psf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in placing the Cdc45 RecJ domain, we found that this element appeared to contact the now-apparent C-terminal 'B-domain' of Psf1 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The structural model shown in Figure 3A suggests this interaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "297506b7-cad6-4e76-8872-3416dbc9836b",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C60",
+      "claim": "Ablation of the Psf1 B-domain region (residues 185\u2013202) prevented CMG formation under the conditions used to purify the intact assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of either the Psf1 B-domain region (residues 185\u2013202) or Cdc45 N-terminal region (residues 1\u201399) prevented CMG formation under the conditions used to purify the intact assembly (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mutagenesis experiments shown in Figure 3\u2014figure supplement 2 demonstrate the requirement for these regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "0952ba00-a2a4-419e-a921-c7617da95a83",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C61",
+      "claim": "Ablation of the Cdc45 N-terminal region (residues 1\u201399) prevented CMG formation under the conditions used to purify the intact assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of either the Psf1 B-domain region (residues 185\u2013202) or Cdc45 N-terminal region (residues 1\u201399) prevented CMG formation under the conditions used to purify the intact assembly (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mutagenesis experiments shown in Figure 3\u2014figure supplement 2 demonstrate the requirement for these regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "a1688406-1987-438b-ad52-0ac0de29eb9a",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C62",
+      "claim": "A quadruple Psf1 mutant (E190A/L192A/V193A/R194A) was unable to interact with Cdc45.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, while point mutations were unable to disrupt CMG formation as judged by co-immunoprecipitation, a quadruple Psf1 mutant (E190A/L192A/V193A/R194A) proved unable to interact with Cdc45.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Co-immunoprecipitation experiments demonstrate loss of Cdc45 interaction with this mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "54804c30-549f-49f7-b7cb-6fce8bbe5eb6",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C63",
+      "claim": "The Cdc45\u2013Psf1 interaction plays a critical role in CMG formation and/or stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that the Cdc45\u2013Psf1 interaction evident from the EM data plays a critical role in CMG formation and/or stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mutagenesis data disrupting this interface prevents CMG formation, supporting this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "e0f7a6f0-7d4b-4306-919a-bf165695a557",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C64",
+      "claim": "The Mcm2-7 central channel and the Cdc45 DNA tracking groove are offset by approximately 90\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In the DNA-bound model, the CMG still exhibits two channels; however, docking of the Cdc45 RecJ domain shows that its exonuclease/DNA-tracking groove is offset by 90\u00b0 with respect to the central axis of the Mcm2-7 pore (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3C shows the relative orientations of the Mcm2-7 channel and Cdc45 groove.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "d190f8e1-96f0-4023-8ad6-d04ec29a057c",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C65",
+      "claim": "If Cdc45 were to bind DNA in a manner similar to RecJ, it would be poised to capture the leading DNA strand that might escape from Mcm5-2 gate.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation indicates that, were Cdc45 to bind DNA in a manner similar to RecJ, it would be poised to capture the leading DNA strand that might escape from Mcm5-2 gate (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The structural orientation of Cdc45 relative to the Mcm2/5 gate supports this functional model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "718b3218-335f-41ed-8c68-c563ca072438",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C66",
+      "claim": "Cross-linking data show that Cdc45 engages the leading strand of a fork substrate only in the absence of nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, cross-linking data in work to be published elsewhere (Petojevic et al.) show both that Cdc45 engages the leading strand of a fork substrate only in the absence of nucleotide",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to unpublished cross-linking data supports the DNA capture model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "ef32cac6-8812-4c9f-94cf-b610154c689e",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C67",
+      "claim": "Cdc45-DNA interaction is ablated by mutation of residues suggested by the model to be important for DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "and that this interaction is ablated by the mutation of residues suggested by the model to be important for DNA binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mutagenesis data from unpublished work validates the structural model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "8a6667a9-8fcb-4898-b46f-4b865b8aec30",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C68",
+      "claim": "The AAA+ ATPase ring of Mcm2-7 is no longer flat in the DNA-bound state but adopts a clear right-handed spiral.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when comparing the new DNA-bound CMG model to the prior substrate-free state, we found that the AAA+ ATPase ring is no longer flat, but instead adopts a clear right-handed spiral (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of DNA-bound and apo structures shown in Figure 4A,B reveals this conformational change.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "54cc82c9-4721-43e7-b15c-9053dfae66d1",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C69",
+      "claim": "The conformational change to a spiral does not propagate into the N-terminal domains, which maintain a roughly planar character.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in conformation does not propagate into the N-terminal domains, which maintain a roughly planar character (Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1E shows that the N-terminal domains remain planar despite C-terminal domain spiraling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "0b81bb78-cfa7-4c6c-9f17-743230e57523",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C70",
+      "claim": "The N-terminal domains form a relatively stable collar that likely helps to coordinate and restrain movements of the associated C-terminal ATPase regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed asymmetry between the two MCM tiers indicates that the N-terminal domains form a relatively stable collar that likely helps to coordinate and restrain movements of the associated C-terminal ATPase regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The differential behavior of N- and C-terminal domains supports this functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "f81edb98-cb4f-4472-acb6-d0867d23bcdb",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C71",
+      "claim": "The largest inter-subunit shifts within the Mcm2-7 ring occur between Mcm subunits 2 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the largest inter-subunit shifts within the Mcm2-7 ring, which occur between Mcm subunits 2 and 5, also correspond to the point where the GINS\u2013Cdc45 complex docks against the helicase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis reveals the magnitude of shifts between different Mcm subunits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "a160c82e-74ec-46ba-a7e2-e74d1afb9ce6",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C72",
+      "claim": "GINS\u2013Cdc45 wedges itself between the N- and C-terminal tiers of the Mcm2-7 ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the DNA-bound model reveals that GINS\u2013Cdc45 does not simply straddle the Mcm2/5 interface, but that portions of the accessory subunits actually wedge themselves between the N- and C-terminal tiers of the Mcm2-7 ring (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1D shows how GINS\u2013Cdc45 inserts between MCM tiers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "f8286a36-135a-40be-9bac-f87dae65f097",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C73",
+      "claim": "GINS\u2013Cdc45 binding widens the exterior groove between the MCM N- and C-terminal domains at their points-of-contact.",
+      "claim_type": "EXPLICIT",
+      "source": "This action widens the exterior groove between the MCM N- and C-terminal domains at their points-of-contact with GINS\u2013Cdc45",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis shows the effect of GINS\u2013Cdc45 wedging on MCM domain spacing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "02d3ef33-d7a8-4868-ac5e-28d5c653f267",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C74",
+      "claim": "GINS\u2013Cdc45 binding causes a concomitant narrowing of the groove on the exterior MCM face opposite the GINS\u2013Cdc45 binding site (i.e., Mcm4).",
+      "claim_type": "EXPLICIT",
+      "source": "and is offset by a concomitant narrowing of the groove on the exterior MCM face opposite the GINS\u2013Cdc45 binding site (i.e., Mcm4, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1D shows the compensatory narrowing at Mcm4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "47f924e1-0aef-4bef-ac87-19f371d5764e",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C75",
+      "claim": "GINS\u2013Cdc45 help stabilize a spiral configuration of ATPase centers when DNA is present.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural consequences resulting from GINS\u2013Cdc45 binding suggests that these accessory subunits not only play a role in blocking access through the Mcm2/5 gate, as has been seen previously (Costa et al., 2011), but that they also help stabilize a spiral configuration of ATPase centers when DNA is present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The wedging action of GINS\u2013Cdc45 and its correlation with spiral formation supports this functional role.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "59343a83-288b-4759-b362-d16c5d32f95d",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C76",
+      "claim": "Mutation of active site residues at the Mcm2/5 interface ablates helicase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the mutation of active site residues at the Mcm2/5 interface ablates helicase activity (Bochman et al., 2008; Ilves et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior mutagenesis studies demonstrate the importance of the Mcm2/5 interface for activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "768ab818-55fb-4617-a9e0-c3d162f3b74f",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C77",
+      "claim": "The spiral state observed in the structure inter-converts with another conformation in which the Mcm2/5 interface is remodeled to form a catalytically functional ATPase center during the translocation cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "it is likely that the spiral state observed here, which positionally offsets the ATP-binding site of Mcm5 from the arginine-finger residue of Mcm2, inter-converts with another conformation in which the Mcm2/5 interface is remodeled to form a catalytically functional ATPase center during the translocation cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural offset of the Mcm2/5 active site in the spiral combined with the requirement for this interface for activity supports this model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "18d9f729-ae60-42ba-9659-93aee83a3472",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C78",
+      "claim": "The width of the Mcm2-7 central channel is approximately 30\u201335 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The width of the Mcm2-7 central channel (as measured from homology models of the motor domains docked into the EM density) is likewise significantly larger (\u223c30\u201335 \u00c5) compared to E1 (\u223c14 \u00c5), and more closely approaches that of DnaB (\u223c22 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measurement from the structural model provides this dimension.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "7b4ed0d8-71d2-499a-b2e7-54324910c362",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C79",
+      "claim": "The E1 helicase central channel is approximately 14 \u00c5 wide.",
+      "claim_type": "EXPLICIT",
+      "source": "The width of the Mcm2-7 central channel (as measured from homology models of the motor domains docked into the EM density) is likewise significantly larger (\u223c30\u201335 \u00c5) compared to E1 (\u223c14 \u00c5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published E1 structure provides this dimension.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "1850f4ef-03d4-406b-8f5f-fc028ecb9ef0",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C80",
+      "claim": "The DnaB helicase central channel is approximately 22 \u00c5 wide.",
+      "claim_type": "EXPLICIT",
+      "source": "and more closely approaches that of DnaB (\u223c22 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published DnaB structure provides this dimension.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "5329d207-ee31-42f1-be28-784712c5e2ba",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C81",
+      "claim": "In E1 and DnaB, the difference in channel diameter and subunit rise sculpts the DNA substrate into a single-stranded helix whose relative pitches differ significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in E1 and DnaB the difference in channel diameter and subunit rise between the two proteins sculpts the DNA substrate bound by each helicase into a single-stranded helix whose relative pitches differ significantly",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of E1 and DnaB structures reveals this relationship between channel geometry and DNA conformation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "1f27831c-5d67-4f2f-b8a2-796a914c01b2",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C82",
+      "claim": "Each subunit of DnaB engages two nucleotides of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "these geometric differences allow each subunit of DnaB to engage two nucleotides of DNA (Itsathitphaisarn et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior structural work on DnaB-DNA complex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "1bfc33c8-0317-461e-ba71-ee6ef8afa875",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C83",
+      "claim": "E1 binds only a single nucleotide per protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas E1 binds only a single nucleotide per protomer (Enemark and Joshua-Tor, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior structural work on E1-DNA complex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "9b635640-9ba3-4565-86b3-9bbd2088afc2",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C84",
+      "claim": "The similarity of the Mcm2-7 spiral to DnaB raises the possibility that the helicase might translocate with a step-size greater than one nucleotide per ATP consumed.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity of the Mcm2-7 spiral to DnaB raises the interesting possibility that the helicase might translocate with a step-size greater than one nucleotide per ATP consumed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural similarity to DnaB, which binds two nucleotides per subunit, suggests this possibility.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "4f3260fc-57c8-475c-b0b7-5b1bae8d2d5d",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C85",
+      "claim": "The MCM N-terminal DNA-binding collar of Pyrococcus furiosus binds four nucleotides per subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with this notion, a recent study has shown that the MCM N-terminal DNA-binding collar of Pyrococcus furiosus binds four nucleotides per subunit (Froelich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to recent work on archaeal MCM DNA binding supports the multi-nucleotide step-size model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "43ef67d1-90aa-4f99-85df-6cc09c9f16c7",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C86",
+      "claim": "The proteasome base contains six homologous AAA+ ATPase subunits (Rpt1-6).",
+      "claim_type": "EXPLICIT",
+      "source": "The proteasome consists of several discrete subcomplexes including a heterohexameric unfoldase region, termed the 'base', which (like the CMG) contains six homologous AAA+ ATPase subunits (Rpt1-6) (Forster et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work on proteasome structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "cc4b5bc6-954f-41b3-baf9-d6885c6212a5",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C87",
+      "claim": "Cryo-EM studies have imaged the complete 26S yeast proteasome bound to ATP at approximately 9 \u00c5 resolution showing that the AAA+ subunits of the base form a right-handed spiral.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent cryo-EM studies have imaged the complete 26S yeast proteasome bound to ATP at \u223c9 \u00c5 resolution showing that the AAA+ subunits of the base also form a right-handed spiral (Lander et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior cryo-EM work on proteasome structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "a5886f61-0900-4a38-ab1f-267c38338eaf",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C88",
+      "claim": "The proteasome spiral and the CMG spiral exhibit a surprisingly similar global architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of proteasome spiral with that seen here for the CMG shows that these regions of the two systems exhibit a surprisingly similar global architecture (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural comparison shown in Figure 4E reveals this similarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "c52816fb-92ba-4d1e-97bd-e57e3ad418ab",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C89",
+      "claim": "The proteasome accessory subunit Rpn1 wedges itself between a subset of ATPase and OB-fold domains present in Rpt1-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the proteasome also contains an accessory subunit (Rpn1) that\u2014as observed here for GINS\u2013Cdc45 in the context of the CMG\u2014wedges itself between a subset of ATPase and OB-fold domains present in Rpt1-6 (Lander et al., 2012; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Citation to prior proteasome structure and comparison shown in Figure 4E.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "83607731-3e6d-4022-acd8-cc014cabc636",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C90",
+      "claim": "The CMG and proteasome ATPase subcomplexes may share commonalities in how ATP turnover is coupled to movements that promote translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural congruencies exhibited between the CMG and proteasome ATPase subcomplexes suggest that, even though the substrates for the two systems differ greatly, both motors may share certain commonalities in how ATP turnover is coupled to movements that promote translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural similarities between CMG and proteasome support this speculation about shared mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "12e027e3-a5da-45f9-a19b-c45db5d4edc6",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C91",
+      "claim": "Both the CMG and proteasome show relatively high degrees of tolerance toward active-site mutations within certain subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a similarity could underlie both the pronounced asymmetry of the CMG and proteasome ATPase rings, and the relatively high degree of tolerance shown by both systems toward active-site mutations within certain subunits (Moreau et al., 2007; Ilves et al., 2010; Beckwith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior mutagenesis studies on both systems support this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "3bcdd129-bfb0-46a8-a87f-264fbad86a47",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C92",
+      "claim": "The CMG has been observed to operate as a discrete single complex during replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the CMG has been observed to operate as a discrete single complex during replication (Yardimci et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work on CMG function during replication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "18438dd2-3f77-4475-9b81-eaf37fb69810",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C93",
+      "claim": "The loading of Mcm2-7 hexamer onto DNA by ORC, Cdc6, and Cdt1 during initiation results in the transient formation of a catalytically inactive, head-to-head double hexamer intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "the loading of the Mcm2-7 hexamer onto DNA by ORC, Cdc6, and Cdt1 during initiation results in the transient formation of a catalytically inactive, head-to-head double hexamer intermediate (Evrin et al., 2009; Remus et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior work on Mcm2-7 loading and double hexamer formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "330f08b9-a49b-454e-bced-77d9e2c6091d",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C94",
+      "claim": "The MCM N-terminal domains comprise the dimer interface of the double hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "The MCM N-terminal domains have been shown to comprise the dimer interface of the double hexamer (Fletcher et al., 2003; Costa et al., 2006; Remus et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior structural and biochemical work on MCM double hexamer interface.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "1a617846-8707-4ecb-9461-216de04645cb",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C95",
+      "claim": "The MCM N-terminal domains create a critical target site for the Dbf4-dependent Cdc7 protein kinase DDK.",
+      "claim_type": "EXPLICIT",
+      "source": "and create a critical target site for the Dbf4-dependent Cdc7 protein kinase DDK (Labib, 2010; Sheu and Stillman, 2006, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior work on DDK phosphorylation targets.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "120d7899-7b75-49b5-baec-4079bfd49af6",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C96",
+      "claim": "Phosphorylation of the N-terminal tails of Mcm2/4/6 alters the configuration of the Mcm2-7 complex but does not directly promote Mcm2-7 dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "phosphorylation of the N-terminal tails of Mcm2/4/6 alters the configuration of the Mcm2-7 complex, but does not directly promote Mcm2-7 dissociation (On et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to recent work on the effects of DDK phosphorylation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "7f657bf3-02eb-4689-837d-e7f3c2ba5f38",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C97",
+      "claim": "A small (approximately 5%) but consistent population of CMG particles forms a clear dimeric species that adopts a distinctive head-to-head configuration through its MCM N-terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a small (\u223c5%) but consistent population of CMG particles was seen to form a clear dimeric species that adopts a distinctive head-to-head configuration through its MCM N-terminal regions, and which consistently orients the GINS\u2013Cdc45 subcomplex toward opposing sides of the two ring (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EM data shown in Figure 5A reveals this dimeric population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "8701ba67-c670-4f1d-9edf-575ef3d57cc9",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C98",
+      "claim": "The dimeric CMG consistently orients the GINS\u2013Cdc45 subcomplex toward opposing sides of the two rings.",
+      "claim_type": "EXPLICIT",
+      "source": "a small (\u223c5%) but consistent population of CMG particles was seen to form a clear dimeric species that adopts a distinctive head-to-head configuration through its MCM N-terminal regions, and which consistently orients the GINS\u2013Cdc45 subcomplex toward opposing sides of the two ring (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EM class averages shown in Figure 5A demonstrate this consistent orientation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "fdc66c52-92bf-48ee-9e36-c365657a3117",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C99",
+      "claim": "The abundance and uniformity of CMG dimers suggests that these particles represent a naturally occurring state of the assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance and uniformity of CMG dimers, which were noted in several independent preparations, suggests that these particles represent a naturally occurring state of the assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The consistent observation of dimers across multiple preparations supports this interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "8d7c9e25-a9b8-473a-bbfb-7384f580a092",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C100",
+      "claim": "The 180\u00b0 offset of GINS and Cdc45 in the dimer places each Mcm2/5 gate on opposite sides of the complex, facing away from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 180\u00b0 offset of GINS and Cdc45 present in the dimer places each Mcm2/5 gate on the opposite sides of the complex, facing away from each other (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of the dimer structure shown in Figure 5B,C reveals this arrangement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "92f42b87-4642-4bee-8787-c0a26d19626a",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C101",
+      "claim": "During origin melting, the configuration of the CMG dimer would allow a single DNA strand to escape each Mcm2-7 hexamer without steric interference from its partner CMG, enabling particle separation and the formation of two independent replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "During origin melting, this configuration would allow a single DNA strand to escape each Mcm2-7 hexamer without steric interference from its partner CMG, enabling particle separation and the formation of two independent replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural arrangement of gates in the dimer supports this functional model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "6d300b44-0249-4610-8a96-959c25905686",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C102",
+      "claim": "The N-terminal regions of Mcm2 and Mcm5 of one hexamer associate in trans with the N-terminal regions of Mcm6 and Mcm4 of the partner hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "The organization of the CMG dimer also indicates that the N-terminal regions of Mcm2 and Mcm5 of one hexamer associate in trans with the N-terminal regions of Mcm6 and Mcm4 of the partner hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of the dimer structure and comparison with computational models reveals this subunit register.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "9303b362-50f6-45ad-bb4d-1c3af9d6130a",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C103",
+      "claim": "Mcm4 and GINS have been seen to interact in pulldown studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an interaction would help explain why Mcm4 and GINS have been seen to interact in pulldown studies (Ilves et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior biochemical interaction studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "663f3842-ebfd-4205-ada7-ee60dc7b1795",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C104",
+      "claim": "Mcm4 and GINS map to distal positions of the CMG in the context of a monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "even though the two factors map to distal positions of the CMG in the context of a monomer (Costa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior structural work on monomeric CMG.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "1ef35558-35da-4d7e-9575-3e1f95f45aa9",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C105",
+      "claim": "The ability of DDK to activate Mcm2-7 by phosphorylation of Mcm4, 2, and 6 could result from a destabilization of the CMG dimer contacts that are symmetrically apposed across the N-terminal collar.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the observed arrangement suggests that the ability of DDK to activate Mcm2-7 by phosphorylation of Mcm4, 2, and 6 (Labib, 2010) (as well as the ability of the Bob1 mutation in Mcm5 to bypass the requirement for DDK [Jackson et al., 1993]) could result from a destabilization of the CMG dimer contacts that are symmetrically apposed across the N-terminal collar (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The structural arrangement of DDK target sites in the dimer interface supports this mechanistic model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "da97c390-d615-4909-8a03-0b459a38ca17",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C106",
+      "claim": "The Bob1 mutation in Mcm5 can bypass the requirement for DDK.",
+      "claim_type": "EXPLICIT",
+      "source": "(as well as the ability of the Bob1 mutation in Mcm5 to bypass the requirement for DDK [Jackson et al., 1993])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior genetic work on DDK bypass mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "d722239c-d32f-46c8-9faa-acc399f917f3",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C107",
+      "claim": "The two Mcm2/5 gates of a double hexamer are spatially segregated from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data establish that the two Mcm2/5 gates of a double hexamer are spatially segregated from each other",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The dimer structure directly shows the spatial separation of the two gates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "61bf8109-dfbd-4cb7-a486-6d011184bcd1",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C108",
+      "claim": "Separation of Mcm2-7 double hexamers occurs subsequent to CMG formation.",
+      "claim_type": "EXPLICIT",
+      "source": "and indicate that separation of Mcm2-7 double hexamers occurs subsequent to CMG formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation of CMG dimers indicates that CMG formation precedes double hexamer separation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "0348466f-1b7e-484b-9d55-9389584b3120",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C109",
+      "claim": "Phosphorylation by DDK is insufficient to promote the separation of Mcm2-7 double hexamers on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism is consistent with recent findings showing that the phosphorylation by DDK is insufficient to promote the separation of Mcm2-7 double hexamers on its own (On et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to recent work on DDK function supports this conclusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "7ecabd9c-fac2-4670-b7e6-9147f6358df5",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C110",
+      "claim": "Mcm2-7 on its own possesses a natural discontinuity\u2014the 'Mcm2/5 gate'\u2014through which DNA can enter and exit the helicase pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies using Saccharomyces cerevisiae proteins first showed that Mcm2-7 on its own possesses a natural discontinuity\u2014the 'Mcm2/5 gate'\u2014through which DNA can enter and exit the helicase pore (Bochman and Schwacha, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior biochemical work on the Mcm2/5 gate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "6265a1f9-7d88-47ee-8e89-95afdd4f2f7c",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C111",
+      "claim": "Metazoan Mcm2-7 rings preferentially assume a left-handed lock-washer shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies have corroborated this observation, additionally showing that metazoan Mcm2-7 rings preferentially assume a left-handed lock-washer shape and that ATP alone is incapable of fully inducing ring closure (Costa et al., 2011; Lyubimov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior structural work on Mcm2-7 conformation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "04bff464-5bba-4c15-bf0b-e2109d1265dd",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C112",
+      "claim": "ATP alone is incapable of fully inducing ring closure in metazoan Mcm2-7.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies have corroborated this observation, additionally showing that metazoan Mcm2-7 rings preferentially assume a left-handed lock-washer shape and that ATP alone is incapable of fully inducing ring closure (Costa et al., 2011; Lyubimov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior structural work on Mcm2-7 nucleotide-dependent conformations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "e207e6ce-df0f-4f99-9c57-919836bcb480",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C113",
+      "claim": "Following the action of ORC, Cdc6, and Cdt1, two Mcm2-7 hexamers become locked into a planarized co-joined ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the action of ORC, Cdc6, and Cdt1, two Mcm2-7 hexamers become locked into a planarized co-joined ring (Evrin et al., 2009; Remus et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior work on Mcm2-7 loading and double hexamer formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "25afd419-1c26-4c59-ace0-8f5b49353df5",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C114",
+      "claim": "In the presence of GINS, Cdc45, and single-stranded DNA, the Mcm2-7 ATPase domains shift into a right-handed spiral conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "in the presence of GINS, Cdc45, and single-stranded DNA, the Mcm2-7 ATPase domains shift again, but now into a right-handed spiral conformation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The current structural data shown in Figure 4 demonstrates this conformation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "cc75ebd4-c3d4-4bef-9dd9-73450ef6959b",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C115",
+      "claim": "Mcm2-7 undergoes a chiral-flip in architectural state as it matures into a functional helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Mcm2-7 undergoes a chiral-flip in architectural state as it matures into a functional helicase with loading, activation, and DNA binding all appearing to participate in these transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of left-handed apo state with right-handed DNA-bound state reveals this chiral transition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "20340f66-7a92-40c3-815c-05084e749b59",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C116",
+      "claim": "The isolated metazoan Mcm2-7 motor forms an inactive left-handed spiral, irrespective of nucleotide state, with a discontinuity between Mcm5 and Mcm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Following synthesis and assembly, the isolated metazoan Mcm2-7 motor forms an inactive left-handed spiral, irrespective of nucleotide state, with a discontinuity between Mcm5 and Mcm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes prior structural findings on apo Mcm2-7.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "6c1282fd-52f9-45bd-86af-e8457629b326",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C117",
+      "claim": "Dpb11-Sld2-Sld3 chaperone GINS and Cdc45 onto the Mcm2-7 double hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Following loading, Dpb11-Sld2-Sld3 (11-2-3) chaperone GINS and Cdc45 onto the Mcm2-7 double hexamer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known pathway for CMG assembly based on prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "9dbf4db8-32f3-4db1-b61d-bb997a842bb4",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C118",
+      "claim": "DDK-promoted phosphorylation events help promote both DNA melting, CMG formation and replication fork separation.",
+      "claim_type": "EXPLICIT",
+      "source": "and along with DDK promoted phosphorylation events, help promote both DNA melting, CMG formation and replication fork separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the known roles of DDK in replication initiation based on prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "bae35f51-b123-457a-b735-f445c6760af7",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C119",
+      "claim": "Structural analysis of dimeric CMG particles indicates that the Mcm2/5 gates are localized on the opposing sides of the dodecameric Mcm2-7 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analysis of dimeric CMG particles (Figure 5) indicates that the Mcm2/5 gates are localized on the opposing sides of the dodecameric Mcm2-7 complex",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of the dimer structure shown in Figure 5 reveals this arrangement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "b138073f-e3ca-41f1-b5c8-7f90e8d71302",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C120",
+      "claim": "CMG formation precedes separation of the double hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "and that CMG formation precedes separation of the double hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The observation of CMG dimers supports this temporal ordering of events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "0c13e89c-de4f-4c92-ba92-4889ed3504da",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C121",
+      "claim": "Mcm2-7 might initially assemble into an inactive conformation to prevent inadvertently triggering aberrant replication events.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that Mcm2-7 initially assembles into an inactive conformation to prevent inadvertently triggering aberrant replication events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for why Mcm2-7 adopts different conformational states.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "abf3ea17-6d9f-43b3-8aa7-387993d3047f",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C122",
+      "claim": "Mcm2-7 might transition through different forms as a means to promote the melting of duplex replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative possibility, not necessarily incompatible with the first, is that Mcm2-7 might transition through different forms as a means to promote the melting of duplex replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the functional significance of conformational transitions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "56fb395c-9ef5-4239-81f6-b3e08734c583",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C123",
+      "claim": "Two MCM-associated factors\u2014Cdt1 and GINS\u2013Cdc45\u2014both appear to occlude the Mcm2/5 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the topological barrier that extended DNA segments present to encirclement by toroidal proteins, it is notable that two MCM-associated factors\u2014Cdt1 and GINS\u2013Cdc45\u2014both appear to occlude the Mcm2/5 interface (Costa et al., 2011; Sun et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior structural work showing how these factors interact with the Mcm2/5 gate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "1d22118d-ef9c-4dcb-abb7-9473f75b9ba6",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C124",
+      "claim": "Controlled access through the Mcm2/5 gate is useful for regulating DNA access into a preformed Mcm2-7 hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, controlled access through the Mcm2/5 gate appears useful not only for regulating DNA access into a preformed Mcm2-7 hexamer (Bochman and Schwacha, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work on gate function combined with structural observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "68399833-66d9-465c-bd79-e1be619a5f4d",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C125",
+      "claim": "Controlled access through the Mcm2/5 gate is useful for preventing accidental DNA egress in the apo state and at stalled forks.",
+      "claim_type": "EXPLICIT",
+      "source": "but also for preventing accidental DNA egress in the apo state and at stalled forks (Petojevic et al., unpublished data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to unpublished data supports this additional function of gate control.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "fb433c25-97d5-4dd0-a5bc-ac0bb3c02358",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C126",
+      "claim": "The CMG complex did not behave well during cryo-preservation attempts using holey-carbon EM grids.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex did not behave well during cryo-preservation attempts using holey-carbon EM grids, so samples were instead deposited onto continuous carbon grids and exposed to uranyl formate for negative staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical challenge encountered during sample preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "8fa8d403-882f-42ee-afcb-cc45747e1194",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C127",
+      "claim": "Images were acquired with JADAS automated data collection software on a JEM2100 electron microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 29,913 particles were selected from EM micrographs acquired with JADAS automated data collection software (JEOL, Zhang et al., 2009) on a JEM2100 electron microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "5f82bcd4-ca74-4f39-872b-ec8138576de8",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "claim_id": "C128",
+      "claim": "A 3D model was generated by projection matching using a low-pass filtered (60 \u00c5), free-hand test-validated, nucleotide-bound structure of the CMG as a starting model.",
+      "claim_type": "EXPLICIT",
+      "source": "Following particle picking and 2D averaging, a 3D model was generated by projection matching using a low-pass filtered (60 \u00c5), free-hand test-validated, nucleotide-bound structure of the CMG as a starting model ('Materials and methods'; Rosenthal and Henderson, 2003; Lyubimov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the 3D reconstruction methodology and starting model validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c12e9017-5538-4c4d-b982-5e22e09fb311",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined an 18 \u00c5 resolution structure of the Drosophila melanogaster CMG complex bound to ATP\u03b3S and a 3\u2032-tailed DNA duplex using negative-stain electron microscopy and single-particle reconstruction from 29,913 particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C27, C28, C39, C40, C126-C128 collectively establish the structural determination methodology. The resolution (18 \u00c5 vs previous 28 \u00c5), organism source, substrate composition, particle number, and technical approaches are explicitly stated and supported by methods descriptions and FSC analysis. The use of negative stain due to cryo-EM challenges is documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "47eed921-86b4-4ef0-88fc-c3bdaa5b4267",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The CMG preferentially binds to the single-stranded region of the 3\u2032-tailed DNA substrate, as demonstrated by electron density features and streptavidin-biotin labeling experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C45-C49 provide converging evidence for ssDNA preference. The rod-shaped density (C45) absent in DNA-free structures (C46), streptavidin labeling showing additional density (C47), and the position of streptavidin relative to the complex (C48) all support that CMG binds the ssDNA end. This is corroborated by cited biochemical data (C49).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "f4332758-58d1-4c94-b2e4-419fa104f1dc",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DNA enters the Mcm2-7 pore with the 3\u2032 end proximal to the C-terminal ATPase domains, establishing that MCM and SF3 helicases bind DNA with opposing polarities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C29, C52-C54 establish DNA polarity through streptavidin labeling experiments showing the duplex end localizes near the C-terminal face. This directly contradicts prior FRET data on archaeal MCM (C51) but is consistent with the 3\u2032\u21925\u2032 translocation direction. The comparison with E1 helicase (C50) supports the conclusion of opposite polarities between MCM and SF3 helicases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The RecJ domain of Cdc45 is oriented 90\u00b0 offset from the Mcm2-7 central channel and is positioned to capture DNA that might escape through the Mcm2/5 gate, with the Cdc45-Psf1 interaction being critical for CMG formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C25, C30, C55-C67 provide structural, mutagenesis, and functional evidence. The RecJ domain identification (C25, C55-C56), homology modeling and docking (C57-C58), interaction with Psf1 B-domain (C59), mutagenesis disrupting CMG formation (C60-C62), and the 90\u00b0 offset orientation (C64-C65) all support the DNA capture model. Unpublished cross-linking data (C66-C67) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the presence of DNA and nucleotide, the Mcm2-7 C-terminal ATPase domains transition from a planar ring to a right-handed spiral, with GINS-Cdc45 wedging between the N- and C-terminal tiers to stabilize this conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C31, C68-C75 establish the conformational change through direct structural comparison. The spiral formation (C6, C68), planar N-terminal domains (C69-C70), GINS-Cdc45 wedging action (C71-C74), and stabilization role (C75) are all supported by the structural data shown in Figures 1 and 4. The asymmetric positioning between tiers is a novel observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "7205602d-9af0-4389-b584-3a7fc9d0661e",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Mcm2-7 spiral architecture (30-35 \u00c5 channel) more closely resembles bacterial DnaB helicase than SF3 helicases like E1, suggesting the CMG may translocate with a step-size greater than one nucleotide per ATP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C32, C78-C85 establish structural similarities through comparative analysis. The channel dimensions (C78-C80), spiral architecture comparison (C32), and nucleotide binding differences between DnaB and E1 (C81-C83) support the similarity to DnaB. The speculation about step-size (C84) is appropriately qualified and supported by archaeal MCM data showing 4 nucleotides per subunit binding (C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "1d298543-948b-4442-b998-84414952c6de",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The CMG exhibits unexpected structural similarities to the eukaryotic proteasome, with GINS-Cdc45 occupying a position analogous to Rpn1 in bridging the spiral ATPase ring, suggesting shared mechanisms for coupling ATP turnover to translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C33, C86-C91 establish the proteasome comparison through structural analysis. The right-handed spiral of proteasome Rpt1-6 (C87), similar global architecture (C88), analogous positioning of accessory subunits (C89), and tolerance to active-site mutations in both systems (C91) all support the comparison. The mechanistic speculation (C90) is appropriately qualified as a suggestion based on structural similarities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Approximately 5% of CMG particles form head-to-head dimers with GINS-Cdc45 oriented 180\u00b0 apart, establishing that the two Mcm2/5 gates are spatially segregated and that Mcm2/5 of one hexamer associates with Mcm6/4 of the partner hexamer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C34, C97-C100, C102, C107, C119 establish the dimer structure and subunit register. The consistent observation of ~5% dimers (C97, C99), head-to-head configuration (C97-C98), 180\u00b0 offset of GINS-Cdc45 (C100), and comparison with computational models (C10, C102) all support the subunit register determination. The spatial segregation of gates (C107, C119) is directly shown by the structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "39ce35e8-653a-4412-bfcd-0c6f62447a0f",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The dimeric CMG configuration indicates that CMG formation precedes double hexamer separation, with the gate arrangement allowing strand escape without steric interference during fork formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C101, C108, C120 establish the temporal ordering and functional implications. The observation of CMG dimers (C35, C108, C120) directly demonstrates that CMG formation occurs before separation. The functional model for strand escape (C101) is appropriately qualified as speculation but is logically supported by the gate positioning shown in the structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mcm2-7 undergoes a chiral flip from a left-handed spiral (apo state) to a right-handed spiral (DNA/nucleotide-bound state), demonstrating that the helicase transitions through different conformational states during maturation and operates by a mechanism distinct from SF3 helicases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C36, C115-C116, C111-C114 establish the conformational transitions through comparison of multiple states. The left-handed apo state (C111, C116), planar double hexamer (C113), and right-handed DNA-bound state (C114-C115) are all supported by structural data. The conclusion of a distinct mechanism from SF3 helicases (C36) is supported by the opposite DNA polarity and different spiral architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "ce89351a-8f87-45b7-a402-180ecf0d8163",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The dimer structure explains how Mcm4 and GINS can interact despite being distal in monomers, and suggests that DDK phosphorylation of Mcm2/4/6 or the Bob1 mutation in Mcm5 may destabilize dimer contacts, though DDK alone is insufficient for separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C106, C109 provide a mechanistic model for DDK function. The explanation for Mcm4-GINS interaction (C103-C104) is supported by the dimer structure. The DDK phosphorylation model (C105) is appropriately qualified as speculation but is supported by the positioning of target sites in the dimer interface. The insufficiency of DDK alone (C109) is supported by cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "bc7cf49b-0eb6-4659-9d61-8fd633dbaf49",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The spiral state observed in the structure likely inter-converts with another conformation where the Mcm2/5 interface forms a catalytically functional ATPase center during translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 propose a dynamic model based on the observation that the Mcm2/5 interface is offset in the spiral state yet is required for activity. While the requirement for Mcm2/5 activity is established by prior mutagenesis (C76), the inter-conversion model (C77) is speculative and lacks direct evidence. The model is logical but would require additional experiments (e.g., time-resolved studies, intermediate state trapping) to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "07cb14df-040f-40a9-931c-481e1d914131",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The improved resolution reveals previously unseen features including the Psf1 C-terminus and asymmetric flexing between N- and C-terminal MCM domains, demonstrating conformational independence of these regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe technical improvements and novel structural observations. The visualization of Psf1 C-terminus (C41), differential flexing (C42), and the novelty of asymmetric positioning (C43) are all supported by the structural data shown in Figure 1. The conclusion of conformational independence (C44) is a reasonable inference from the observed flexing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "ece34b68-00c1-44a4-b159-1d5f29406cfa",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that Mcm2-7 may adopt different conformational states either to prevent aberrant replication or to promote origin melting, with controlled access through the Mcm2/5 gate serving multiple regulatory functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C121-C125 present speculative functional models. While the structural observations of different conformational states are well-established, the functional explanations (C121-C122) are explicitly presented as possibilities without direct experimental support. The gate control functions (C124-C125) are better supported by prior work and unpublished data, but the overall mechanistic models remain speculative and would require additional functional studies to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    },
+    {
+      "id": "151156a8-f6fa-4e07-951b-0777e18526d3",
+      "content_id": "2653c21f-2bca-4983-99dc-279497ae52af",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on CMG biology, including Mcm2-7 loading, double hexamer formation, CMG assembly, activation by DDK and CDK, and the existence of knowledge gaps regarding subunit register and DNA engagement mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C26, C37-C38, C92-C96, C110, C117-C118 summarize established knowledge from prior work. These claims are appropriately supported by multiple citations to the literature and accurately represent the state of the field. The identification of knowledge gaps (C19, C26) provides context for the current study's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:55.653605Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "da429bbc-f4e7-4049-86f1-7d99b7c58b32",
+      "result_id": "c12e9017-5538-4c4d-b982-5e22e09fb311"
+    },
+    {
+      "claim_id": "e74657ef-343c-4a52-87a8-5ba1364d6f3c",
+      "result_id": "c12e9017-5538-4c4d-b982-5e22e09fb311"
+    },
+    {
+      "claim_id": "46240217-668f-47ca-a85f-dab4feb5df97",
+      "result_id": "c12e9017-5538-4c4d-b982-5e22e09fb311"
+    },
+    {
+      "claim_id": "785bde73-5ee2-4f7f-8afc-a1e45fab71d0",
+      "result_id": "c12e9017-5538-4c4d-b982-5e22e09fb311"
+    },
+    {
+      "claim_id": "2690395d-7bbb-4d32-91e2-f3142200e3f7",
+      "result_id": "c12e9017-5538-4c4d-b982-5e22e09fb311"
+    },
+    {
+      "claim_id": "fb433c25-97d5-4dd0-a5bc-ac0bb3c02358",
+      "result_id": "c12e9017-5538-4c4d-b982-5e22e09fb311"
+    },
+    {
+      "claim_id": "8fa8d403-882f-42ee-afcb-cc45747e1194",
+      "result_id": "c12e9017-5538-4c4d-b982-5e22e09fb311"
+    },
+    {
+      "claim_id": "5f82bcd4-ca74-4f39-872b-ec8138576de8",
+      "result_id": "c12e9017-5538-4c4d-b982-5e22e09fb311"
+    },
+    {
+      "claim_id": "744170fc-8232-46a6-a4f2-4cd42d9bbee2",
+      "result_id": "47eed921-86b4-4ef0-88fc-c3bdaa5b4267"
+    },
+    {
+      "claim_id": "e8ccec6b-10fa-4b7c-afd9-9e4e9d871776",
+      "result_id": "47eed921-86b4-4ef0-88fc-c3bdaa5b4267"
+    },
+    {
+      "claim_id": "3a936876-d200-4063-bb24-551fda7f328b",
+      "result_id": "47eed921-86b4-4ef0-88fc-c3bdaa5b4267"
+    },
+    {
+      "claim_id": "99a6e248-1890-41e5-9c60-3ca2dae7cd30",
+      "result_id": "47eed921-86b4-4ef0-88fc-c3bdaa5b4267"
+    },
+    {
+      "claim_id": "426b3e78-7d1a-4893-9ccf-94200b860885",
+      "result_id": "47eed921-86b4-4ef0-88fc-c3bdaa5b4267"
+    },
+    {
+      "claim_id": "9c272cef-3cd1-45dc-9782-660e3e68c7fe",
+      "result_id": "47eed921-86b4-4ef0-88fc-c3bdaa5b4267"
+    },
+    {
+      "claim_id": "c0b088ea-83b8-4452-8b28-d74159e755b3",
+      "result_id": "f4332758-58d1-4c94-b2e4-419fa104f1dc"
+    },
+    {
+      "claim_id": "716c8433-9725-4b64-aa02-a5efadb28e83",
+      "result_id": "f4332758-58d1-4c94-b2e4-419fa104f1dc"
+    },
+    {
+      "claim_id": "07774ed3-b19a-42ca-97d7-4a62221b95a9",
+      "result_id": "f4332758-58d1-4c94-b2e4-419fa104f1dc"
+    },
+    {
+      "claim_id": "c88e29fa-3201-4ef3-a3c5-81923a4421fa",
+      "result_id": "f4332758-58d1-4c94-b2e4-419fa104f1dc"
+    },
+    {
+      "claim_id": "5886c448-3a7b-4e51-891c-7d7546748239",
+      "result_id": "f4332758-58d1-4c94-b2e4-419fa104f1dc"
+    },
+    {
+      "claim_id": "115a710f-e148-4a6c-b943-5add8d0acac6",
+      "result_id": "f4332758-58d1-4c94-b2e4-419fa104f1dc"
+    },
+    {
+      "claim_id": "70ffd68c-4470-4156-8acf-dbe8665c4ffc",
+      "result_id": "f4332758-58d1-4c94-b2e4-419fa104f1dc"
+    },
+    {
+      "claim_id": "13a58fff-19d2-4aa5-9b91-63829407019d",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "a09c5aa5-6ea7-43a6-93de-7f9401c439ae",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "80ef1263-5493-4adb-b304-77657629c715",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "94a3fea6-a3de-4bda-8a29-dbd4ab1954bb",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "b11779eb-83cf-4628-990a-7f7aa0dd990a",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "130d8c6b-c292-461e-9f40-4653e5d70a86",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "7d96db6e-b95e-4d3f-8fc2-b3b6b8c4df91",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "c32f6e01-44b9-4d05-bc78-4b0422e3abdc",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "297506b7-cad6-4e76-8872-3416dbc9836b",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "0952ba00-a2a4-419e-a921-c7617da95a83",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "a1688406-1987-438b-ad52-0ac0de29eb9a",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "54804c30-549f-49f7-b7cb-6fce8bbe5eb6",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "e0f7a6f0-7d4b-4306-919a-bf165695a557",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "d190f8e1-96f0-4023-8ad6-d04ec29a057c",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "718b3218-335f-41ed-8c68-c563ca072438",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "ef32cac6-8812-4c9f-94cf-b610154c689e",
+      "result_id": "d4453938-6b7d-4f5f-b99e-fe212d28d4d8"
+    },
+    {
+      "claim_id": "1efccca9-86d8-4888-b5e6-751fc634c432",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "3263d5e3-435a-47d4-8101-3dafcf7d369f",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "8a6667a9-8fcb-4898-b46f-4b865b8aec30",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "54cc82c9-4721-43e7-b15c-9053dfae66d1",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "0b81bb78-cfa7-4c6c-9f17-743230e57523",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "f81edb98-cb4f-4472-acb6-d0867d23bcdb",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "a160c82e-74ec-46ba-a7e2-e74d1afb9ce6",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "f8286a36-135a-40be-9bac-f87dae65f097",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "02d3ef33-d7a8-4868-ac5e-28d5c653f267",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "47f924e1-0aef-4bef-ac87-19f371d5764e",
+      "result_id": "cd2e73d3-8b80-4fda-818b-ca587b5247d8"
+    },
+    {
+      "claim_id": "b6ea10bc-6c7a-4eea-8022-a23d67c51d32",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "d3b961ca-cd0f-4b2a-b51e-cfa201de99e9",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "18d9f729-ae60-42ba-9659-93aee83a3472",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "7b4ed0d8-71d2-499a-b2e7-54324910c362",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "1850f4ef-03d4-406b-8f5f-fc028ecb9ef0",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "5329d207-ee31-42f1-be28-784712c5e2ba",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "1f27831c-5d67-4f2f-b8a2-796a914c01b2",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "1bfc33c8-0317-461e-ba71-ee6ef8afa875",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "9b635640-9ba3-4565-86b3-9bbd2088afc2",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "4f3260fc-57c8-475c-b0b7-5b1bae8d2d5d",
+      "result_id": "7205602d-9af0-4389-b584-3a7fc9d0661e"
+    },
+    {
+      "claim_id": "9d9bc995-244f-4ea0-9c82-4797a8a245f0",
+      "result_id": "1d298543-948b-4442-b998-84414952c6de"
+    },
+    {
+      "claim_id": "377683bb-9975-4c78-8d36-267eebfbaf55",
+      "result_id": "1d298543-948b-4442-b998-84414952c6de"
+    },
+    {
+      "claim_id": "43ef67d1-90aa-4f99-85df-6cc09c9f16c7",
+      "result_id": "1d298543-948b-4442-b998-84414952c6de"
+    },
+    {
+      "claim_id": "cc4b5bc6-954f-41b3-baf9-d6885c6212a5",
+      "result_id": "1d298543-948b-4442-b998-84414952c6de"
+    },
+    {
+      "claim_id": "a5886f61-0900-4a38-ab1f-267c38338eaf",
+      "result_id": "1d298543-948b-4442-b998-84414952c6de"
+    },
+    {
+      "claim_id": "c52816fb-92ba-4d1e-97bd-e57e3ad418ab",
+      "result_id": "1d298543-948b-4442-b998-84414952c6de"
+    },
+    {
+      "claim_id": "83607731-3e6d-4022-acd8-cc014cabc636",
+      "result_id": "1d298543-948b-4442-b998-84414952c6de"
+    },
+    {
+      "claim_id": "12e027e3-a5da-45f9-a19b-c45db5d4edc6",
+      "result_id": "1d298543-948b-4442-b998-84414952c6de"
+    },
+    {
+      "claim_id": "656f3ccb-7697-4a0f-937a-2b76b13fcbe1",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "234bfc73-df61-4482-86ff-2de9fa058dc6",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "fa230315-c5f4-491e-9a8a-fec39c327d1a",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "7f657bf3-02eb-4689-837d-e7f3c2ba5f38",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "8701ba67-c670-4f1d-9edf-575ef3d57cc9",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "fdc66c52-92bf-48ee-9e36-c365657a3117",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "8d7c9e25-a9b8-473a-bbfb-7384f580a092",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "6d300b44-0249-4610-8a96-959c25905686",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "d722239c-d32f-46c8-9faa-acc399f917f3",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "bae35f51-b123-457a-b735-f445c6760af7",
+      "result_id": "a66a4bc1-5b5f-47bb-8f41-7ce2a9c48657"
+    },
+    {
+      "claim_id": "d2bb4bc6-2593-4b56-a5dc-cab61c6a88ba",
+      "result_id": "39ce35e8-653a-4412-bfcd-0c6f62447a0f"
+    },
+    {
+      "claim_id": "92f42b87-4642-4bee-8787-c0a26d19626a",
+      "result_id": "39ce35e8-653a-4412-bfcd-0c6f62447a0f"
+    },
+    {
+      "claim_id": "61bf8109-dfbd-4cb7-a486-6d011184bcd1",
+      "result_id": "39ce35e8-653a-4412-bfcd-0c6f62447a0f"
+    },
+    {
+      "claim_id": "b138073f-e3ca-41f1-b5c8-7f90e8d71302",
+      "result_id": "39ce35e8-653a-4412-bfcd-0c6f62447a0f"
+    },
+    {
+      "claim_id": "9b60caaa-7069-41a4-b6ab-8687c628923f",
+      "result_id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4"
+    },
+    {
+      "claim_id": "305f8c6e-5dd7-4e13-b7c6-ea6c76201f3d",
+      "result_id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4"
+    },
+    {
+      "claim_id": "cc75ebd4-c3d4-4bef-9dd9-73450ef6959b",
+      "result_id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4"
+    },
+    {
+      "claim_id": "20340f66-7a92-40c3-815c-05084e749b59",
+      "result_id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4"
+    },
+    {
+      "claim_id": "6265a1f9-7d88-47ee-8e89-95afdd4f2f7c",
+      "result_id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4"
+    },
+    {
+      "claim_id": "04bff464-5bba-4c15-bf0b-e2109d1265dd",
+      "result_id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4"
+    },
+    {
+      "claim_id": "e207e6ce-df0f-4f99-9c57-919836bcb480",
+      "result_id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4"
+    },
+    {
+      "claim_id": "25afd419-1c26-4c59-ace0-8f5b49353df5",
+      "result_id": "85ec15f9-98a3-4aa5-9922-ab536b1bb9c4"
+    },
+    {
+      "claim_id": "9303b362-50f6-45ad-bb4d-1c3af9d6130a",
+      "result_id": "ce89351a-8f87-45b7-a402-180ecf0d8163"
+    },
+    {
+      "claim_id": "663f3842-ebfd-4205-ada7-ee60dc7b1795",
+      "result_id": "ce89351a-8f87-45b7-a402-180ecf0d8163"
+    },
+    {
+      "claim_id": "1ef35558-35da-4d7e-9575-3e1f95f45aa9",
+      "result_id": "ce89351a-8f87-45b7-a402-180ecf0d8163"
+    },
+    {
+      "claim_id": "da97c390-d615-4909-8a03-0b459a38ca17",
+      "result_id": "ce89351a-8f87-45b7-a402-180ecf0d8163"
+    },
+    {
+      "claim_id": "0348466f-1b7e-484b-9d55-9389584b3120",
+      "result_id": "ce89351a-8f87-45b7-a402-180ecf0d8163"
+    },
+    {
+      "claim_id": "59343a83-288b-4759-b362-d16c5d32f95d",
+      "result_id": "bc7cf49b-0eb6-4659-9d61-8fd633dbaf49"
+    },
+    {
+      "claim_id": "768ab818-55fb-4617-a9e0-c3d162f3b74f",
+      "result_id": "bc7cf49b-0eb6-4659-9d61-8fd633dbaf49"
+    },
+    {
+      "claim_id": "c3503e86-f02e-4871-a99c-391a97b6668e",
+      "result_id": "07cb14df-040f-40a9-931c-481e1d914131"
+    },
+    {
+      "claim_id": "8b824ecc-7fef-4eef-8412-4e613cb2ec83",
+      "result_id": "07cb14df-040f-40a9-931c-481e1d914131"
+    },
+    {
+      "claim_id": "834c3101-092b-4419-994f-1b735d2e8d37",
+      "result_id": "07cb14df-040f-40a9-931c-481e1d914131"
+    },
+    {
+      "claim_id": "5edaa38c-043e-4c17-9790-1bfbaf05e59a",
+      "result_id": "07cb14df-040f-40a9-931c-481e1d914131"
+    },
+    {
+      "claim_id": "0c13e89c-de4f-4c92-ba92-4889ed3504da",
+      "result_id": "ece34b68-00c1-44a4-b159-1d5f29406cfa"
+    },
+    {
+      "claim_id": "abf3ea17-6d9f-43b3-8aa7-387993d3047f",
+      "result_id": "ece34b68-00c1-44a4-b159-1d5f29406cfa"
+    },
+    {
+      "claim_id": "56fb395c-9ef5-4239-81f6-b3e08734c583",
+      "result_id": "ece34b68-00c1-44a4-b159-1d5f29406cfa"
+    },
+    {
+      "claim_id": "1d22118d-ef9c-4dcb-abb7-9473f75b9ba6",
+      "result_id": "ece34b68-00c1-44a4-b159-1d5f29406cfa"
+    },
+    {
+      "claim_id": "68399833-66d9-465c-bd79-e1be619a5f4d",
+      "result_id": "ece34b68-00c1-44a4-b159-1d5f29406cfa"
+    },
+    {
+      "claim_id": "9e9c5986-89e9-4b8b-b5d2-f9eb4822a4f0",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "9449de85-81d7-4a35-bddb-9340d21bd2b0",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "7b03ae92-56ba-4eb8-bece-652ea8807b5a",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "fdf69d33-4e2d-4599-9b2e-3398b02548c1",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "2aed10bd-aca4-4d9a-b5b7-77a1fa5461bf",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "d161697a-15c1-44b6-87f2-2ee75b946619",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "ed5f003a-d31d-4444-9d31-2f4a789e226c",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "7f928faf-e609-4d1d-8266-d8adb5fa05d0",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "f0f2ebca-67d7-4384-8a57-8ddd07a088a2",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "8c038a79-238e-40ee-b7ca-433fcee66690",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "beebb2c0-7672-4d1f-b345-e0509ec465df",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "44256028-5f43-461e-86d0-716873b1c89d",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "7dddcdf8-04e0-4d68-93b3-4e5b344d6ac6",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "c815b583-1d21-49c9-b950-58b4a783fa59",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "50bfcfe4-073c-4014-8fc3-0d7a38540e1e",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "0a19ebfa-80ed-4910-81c5-119fcba104e9",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "3bcdd129-bfb0-46a8-a87f-264fbad86a47",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "18438dd2-3f77-4475-9b81-eaf37fb69810",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "330f08b9-a49b-454e-bced-77d9e2c6091d",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "1a617846-8707-4ecb-9461-216de04645cb",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "120d7899-7b75-49b5-baec-4079bfd49af6",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "7ecabd9c-fac2-4670-b7e6-9147f6358df5",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "6c1282fd-52f9-45bd-86af-e8457629b326",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    },
+    {
+      "claim_id": "9dbf4db8-32f3-4db1-b61d-bb997a842bb4",
+      "result_id": "151156a8-f6fa-4e07-951b-0777e18526d3"
+    }
+  ],
+  "comparisons": []
+}

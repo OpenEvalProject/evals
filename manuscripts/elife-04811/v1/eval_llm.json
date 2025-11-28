@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C43",
+      "C44",
+      "C45",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors mathematically prove that reward-seeking and physiological stability are equivalent behavioral objectives. Specifically, they show that any behavioral policy maximizing the sum of discounted rewards also minimizes the sum of discounted deviations from the homeostatic setpoint, establishing the notion of 'physiological rationality' of behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical proof in Equation 5 and the Materials and Methods section rigorously demonstrates the equivalence between reward maximization and homeostatic maintenance when rewards are defined as drive reduction (C4, C40). The proof is logically sound given the definitions of drive (Equation 1) and reward (Equation 2), and the conclusion about physiological rationality follows directly from this equivalence (C43-C45, C114-C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The theory provides a normative explanation for temporal discounting of rewards. The authors prove that without discounting (\u03b3=1), reward-seeking would not lead to physiological stability, whereas discounting motivates animals to follow the shortest path toward the homeostatic setpoint by expediting rewards and postponing punishments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical argument in the Materials and Methods section and the intuitive explanations (C47-C50) coherently demonstrate why temporal discounting is necessary for homeostatic maintenance. The proof shows that without discounting, policies with equal net shifts in internal state have equal value regardless of trajectory, which would not ensure physiological stability (C50). This provides a principled, normative basis for temporal discounting (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The model accounts for anticipatory responding to ethanol-induced hypothermia. Simulations demonstrate that the integration of homeostatic regulation and reinforcement learning processes can explain how animals learn tolerance responses that preemptively counteract predicted homeostatic perturbations, matching experimental data showing gradual reduction of ethanol-induced temperature drops and compensatory hyperthermia during extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (C54-C56) from Mansfield & Cunningham (1980) is well-established, and the simulations in Figure 3 (C59-C62) successfully reproduce the key qualitative features: gradual tolerance development, extinction effects, and the rise-fall pattern. The model's explanation that tolerance responses are optimal for minimizing homeostatic deviation is internally consistent with the theoretical framework (C63-C64). However, the simulations are qualitative demonstrations rather than quantitative fits to data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The model accounts for four key behavioral phenomena through appropriate choice of drive function parameters (n > m > 1): (1) dose-dependent reinforcement value, (2) deprivation-dependent potentiation of reward, (3) inhibitory effects of irrelevant drives, and (4) risk aversion. These phenomena are shown to arise from the nonlinear mapping between physiological and motivational states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical derivations (Equations 6-9) correctly show that the proposed drive function produces the claimed effects (C68, C70, C73, C76). Each prediction is supported by cited experimental evidence (C69, C71, C74-C75, C77). The risk aversion simulation (Figure 5, C78) demonstrates the model's behavior. The unified explanation through the drive function's functional form is theoretically coherent (C81-C82). However, the specific values of m and n are not empirically constrained, and the model is not quantitatively fit to the cited experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The model demonstrates that agents avoid extreme homeostatic deviations without ever experiencing them. Simulations show that starting from a deviated state, agents never visit states beyond a certain boundary, and the mean internal state across agents converges to the setpoint with bounded variance, regardless of model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulations in Figure 6 and supplements clearly demonstrate the claimed property (C85, C87). The robustness analysis across different parameter values (C88) strengthens the result. The mechanism is intuitive: the exponentially decreasing probability of consecutive moves in the same direction prevents exploration of extreme states. This provides a normative explanation for avoiding dangerous states without prior experience (C89). However, this result depends on the specific simulation setup (tabula rasa initialization, random walk exploration) and may not generalize to all learning scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The model accounts for the separation of reinforcement and satiation effects in water self-administration experiments. Simulations reproduce the rise-fall pattern of responding with oral delivery and the absence of responding with intragastric delivery, explaining that reinforcement depends on orosensory properties while satiation depends on actual water ingested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data from McFarland (1969) is well-established (C101-C104, C109), and the simulations in Figures 8-9 successfully reproduce the key patterns (C105, C110). The model's explanation that the ascending limb reflects learning while the descending limb reflects satiation (C106) is internally consistent and distinguishes the current model from classical RL and HR models (C107). The prediction about oral/fistula proportion effects (C111) is a logical consequence of the model. However, the simulations are qualitative demonstrations rather than quantitative fits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The model accounts for overeating of hyperpalatable foods by incorporating a drive-independent reward term (T > 0). Simulations show that hyperpalatable food leads to internal states exceeding the setpoint, higher total consumption, and preference over normal food, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The simulations (Figures 10, C144-C146, C149) demonstrate that adding a drive-independent term T produces overeating behavior, and this is consistent with cited experimental evidence (C150). However, the formulation of hyperpalatability as a simple additive term (Equation 11, C143) is ad hoc and not derived from the theoretical framework. The model essentially breaks its own rationality principle to account for irrational behavior. While this demonstrates a point of vulnerability in the theory, it does not provide a mechanistic explanation for why hyperpalatable foods override homeostatic signals. The speculation about obesity (C148) is not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "A linear approximation of the drive-reduction reward is equivalent to multiplicative deprivation-modulated reward models. The current framework generalizes these models and provides a normative basis, while also accounting for nonlinearities (inhibitory effects of irrelevant drives, risk aversion) that previous models cannot explain. The nonlinear model predicts an inverted U-shaped utility function, testable experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical derivation (Equation 13, C162) correctly shows the equivalence between linear approximation and multiplicative models. The claim that the framework generalizes previous models (C163) is supported by the mathematical relationship. The advantage over previous models (C164) follows from the earlier results on nonlinearities. The experimental test distinguishing linear from nonlinear models (C165-C168, Figure 11) is a logical prediction. However, the comparison is limited to a specific class of previous models, and the cited models may have other features not captured by this comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C175",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The authors propose that their notion of drive is equivalent to 'surprise' in the free energy framework, but distinguish their homeostatic RL theory from free energy theory at different levels of analysis (algorithmic vs. computational), using different mathematical tools (optimal control vs. variational Bayes), and with different roles for reward (essential vs. redundant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed equivalence between drive and surprise (C175, Equation 14) is mathematically stated but not rigorously proven. The connection through Equation 5 to a principle of least action (C178) is conceptually interesting but remains somewhat informal. The distinctions between the frameworks (C179-C183) are clearly articulated and appear valid, but the claimed equivalence of drive and surprise is not sufficiently developed to be considered established. The relationship between the frameworks would benefit from more rigorous mathematical treatment or empirical tests that could distinguish their predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The formal theory addresses major limitations of classical drive-reduction theory: it explains anticipatory responding as optimal behavior, accounts for secondary reinforcers through RL integration, and explains why intravenous food is not rewarding through orosensory approximation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The three identified limitations of classical drive-reduction theory (C154, C156, C158) are well-established in the literature. The current theory's solutions are internally consistent: anticipatory responding is shown to be optimal through simulations (C155, referencing earlier results), secondary reinforcement follows from standard RL mechanisms (C157), and the orosensory approximation hypothesis explains the intravenous food paradox (C159). The claim that the theory alleviates these faults (C153, C160) is justified, though the solutions introduce their own assumptions (e.g., orosensory approximation) that require empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The theory makes several testable predictions: (1) oral/fistula proportion affects satiation speed, (2) inverted U-shaped utility function, (3) preference for deviation-reducing then deviation-increasing outcomes over the reverse order, (4) instrumental anticipatory responding, and (5) transitory burst of responding after outcome magnitude reduction, distinguishing it from classical HR models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Each prediction (C190-C195) logically follows from the model's assumptions and mechanisms. The predictions are clearly stated and testable. The simulations in Figure 12 (C195-C197) demonstrate the burst prediction and contrast it with classical HR models. These predictions could empirically distinguish the current theory from alternatives. However, the predictions are not yet tested against experimental data, so they remain theoretical predictions rather than confirmed results. The value of these predictions depends on whether they are subsequently tested and confirmed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors identify a gap in understanding how homeostatic regulation and reinforcement learning interact, noting that classical HR models cannot explain complex behavioral strategies and classical RL models do not explain reward construction or internal state effects, despite neurobiological evidence of interaction between hypothalamus and reward circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identified gap (C2, C10, C13) is well-supported by the cited limitations of existing models (C8-C12) and neurobiological evidence of system interaction (C14). The motivation for integrating HR and RL (C1, C7, C15) is clearly established. The proposed approach of defining reward in physiological terms (C3, C16) is a reasonable strategy to address the gap. This provides solid motivation for the work, though it is primarily a literature review and problem statement rather than a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors develop a formal framework defining homeostatic space, physiological state, setpoint, and drive as the distance from setpoint. Primary reward is formally defined as the approximated ability of an outcome to restore internal equilibrium, operationalized as drive reduction. This framework is claimed to account for phenomena that classical drive-reduction theory could not explain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical definitions (C24-C27) are clearly stated and internally consistent. The drive function (Equation 1) is a reasonable formalization with flexible parameters m and n (C28-C29). The connection to information-theoretic surprise (C30) is noted for later discussion. The definition of reward as drive reduction (C22, Equation 2) follows logically from the homeostatic framework. The claim that this accounts for phenomena unexplained by classical theory (C23) is supported by subsequent results. However, the specific functional form of the drive function is not empirically derived but rather chosen for mathematical convenience and flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "The orosensory approximation hypothesis proposes that sensory properties of food provide an estimate of post-ingestive effects, allowing immediate reward computation. This explains why dopamine neurons respond immediately to food, why intravenous food is not rewarding, and why saccharine is motivating despite lacking calories. It also provides a computational basis for separating reinforcement and satiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The orosensory approximation hypothesis (Equation 10, C94) is conceptually reasonable and consistent with cited neurobiological evidence (C95) and experimental observations (C96, C101). The explanations for intravenous food (C97) and saccharine (C98) follow logically from the hypothesis. However, the hypothesis is introduced as an assumption rather than derived from the theory, and the mechanism by which orosensory properties are learned or evolved to approximate nutritional content (C91) is not specified. The claim about separating reinforcement and satiation (C100) is supported by subsequent simulations, but the orosensory approximation itself remains an auxiliary assumption requiring independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors propose neural substrates for their model, suggesting that hypothalamic signals (leptin, insulin, ghrelin) modulate dopaminergic activity in the VTA, consistent with the model's prediction that deprivation level affects reward value. Orexin neurons and direct hormone receptors on VTA neurons provide interfaces between homeostatic and reward systems. Opioid systems mediate orosensory influences on reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neurobiological evidence cited (C118, C120-C126, C128-C132) is well-established and accurately described. The correspondence between the model's predictions (C119) and the observed neural pathways is reasonable. However, this section primarily reviews existing neurobiology and proposes correspondences with the model rather than providing new empirical evidence. The proposed mappings are plausible but not uniquely determined by the data\u2014alternative computational interpretations of the same neural circuits are possible. The discussion of orosensory approximation mechanisms (C133-C134) acknowledges both evolutionary and learning-based possibilities but does not resolve between them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C172",
+      "C184",
+      "C185",
+      "C194"
+    ],
+    "result": "The theory predicts that animals can learn both Pavlovian and instrumental anticipatory responding, contrasting with predictive homeostasis (allostasis) theory which posits only reflexive responses. The incentive salience theory also cannot account for anticipatory responding according to the authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The prediction of instrumental anticipatory responding (C65, C194) follows logically from the model's integration of RL with homeostatic reward. The contrast with predictive homeostasis theory (C66, C184-C185) is clearly stated. However, the claim that incentive salience theory cannot account for anticipatory responding (C172) is based on the authors' interpretation and may not be universally accepted. The prediction itself is testable but not yet empirically validated. The distinction between theories depends on specific interpretations of what constitutes 'anticipatory responding' and whether it must be instrumentally learned versus reflexively triggered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "The authors acknowledge limitations: the theory applies only to rewards with corresponding regulatory systems, does not address evolutionary vs. learning origins, and makes simplifying assumptions (fixed setpoint, full observability, specific drive function form). They suggest future extensions to address these limitations and apply the framework to psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledged limitations (C200-C201) are significant and appropriately recognized. The scope limitation to homeostatic rewards (C199-C200) is a fundamental constraint of the approach. The suggested future directions (C202-C204) are reasonable extensions that could address some limitations, though they remain speculative. The acknowledgment of limitations and the relationship to evolutionary processes (C198, C209) demonstrates appropriate scientific caution. This honest assessment of scope and limitations is important for contextualizing the theory's contributions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "USP13 and USP5 are distinct deubiquitinases with different enzymatic activities. USP5 readily cleaves Ub-AFC and binds free ubiquitin, while USP13 is almost completely inactive. The second UBA domain accounts for these differential activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from sequence analysis (C1), functional assays (C4-C6), and domain-swapping experiments (C7) demonstrating that USP13 and USP5 have distinct activities determined by the second UBA domain. The data from Ub-AFC cleavage assays and chimera experiments strongly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "USP13 interacts with p97 through an adaptor in cells, not directly. While USP13 was reported to bind p97, in vitro binding assays show no direct interaction between purified USP13 and p97.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 demonstrate through both literature citation and direct experimental evidence (in vitro binding vs. cell extract pulldown) that USP13 requires an adaptor to interact with p97. The contrasting results between purified proteins and cell extracts provide strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "gp78 is the adaptor that mediates USP13-p97 interaction. gp78 binds USP13 directly, and this interaction requires the second UBA domain in USP13. The second UBA domain inhibits USP13's DUB activity while enabling gp78 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 provide multiple lines of evidence including co-precipitation, in vitro binding, knockdown experiments, and domain mapping that establish gp78 as a direct USP13 interactor. The chimera experiments (C16-C17) demonstrate the dual role of the second UBA domain in both suppressing activity and enabling gp78 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Overexpressed USP13 has a dominant negative effect on ERAD that depends on gp78 binding. Wild-type USP13 overexpression increases TCR\u03b1 half-life from 1.6 hr to 4.6 hr, and this effect requires gp78 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 demonstrate through cycloheximide chase experiments and chimera analysis that USP13 overexpression inhibits ERAD in a gp78-dependent manner. The observation that catalytically inactive USP13 has similar effects (C19) and that gp78-binding deficient chimeras show reduced inhibition (C20) support the dominant negative interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "USP13 is specifically required for efficient turnover of ERAD substrates. USP13 knockdown stabilizes TCR\u03b1 but has no effect on the non-ERAD substrate \u0394sTCR\u03b1-YFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 demonstrate through multiple approaches (immunoblotting, flow cytometry, CHX chase) that USP13 specifically affects ERAD substrates. The negative control with \u0394sTCR\u03b1-YFP (C22) rules out indirect effects through ubiquitin depletion and supports the specificity of USP13 for ERAD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "USP13 functions downstream of p97-mediated retrotranslocation to maintain substrate solubility. USP13 depletion does not affect deglycosylation but causes accumulation of ERAD substrates in insoluble aggregates, similar to Bag6 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide comprehensive evidence through deglycosylation analysis (C24), microscopy (C27), and biochemical fractionation (C28, C30) that USP13 acts after retrotranslocation. The comparison with p97 and Bag6 depletion phenotypes (C26, C29, C31) supports the conclusion that USP13 functions at a post-dislocation step to maintain substrate solubility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "USP13 forms a multiprotein complex with gp78, Bag6, and the proteasome. USP13 binds Bag6 directly through the Bag6 N-terminal UBL domain, and this interaction does not require USP13's catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 demonstrate through immunoprecipitation, GST pulldown with purified proteins, and domain mapping that USP13 physically interacts with the Bag6 complex. The sequential IP experiment (C39) and the identification of the Bag6 UBL domain as necessary and sufficient (C38) provide strong support for a direct multiprotein complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Ubl4A, but not Bag6 or Trc35, is ubiquitinated with K48-linked chains preferentially on the membrane-associated pool. Despite carrying K48-linked ubiquitin chains, Ubl4A is a stable protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate through immunoprecipitation under denaturing conditions and ubiquitin mutant analysis that Ubl4A is specifically ubiquitinated with K48-linked chains. The biochemical fractionation (C42) and stability data (C44) are well-supported, though the mechanism of Ubl4A stability despite K48-ubiquitination remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Ubiquitination of Ubl4A is specifically regulated by USP13. USP13 depletion causes accumulation of ubiquitinated Ubl4A, while USP19 knockdown has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 demonstrate through both knockdown and knockout experiments that USP13 specifically regulates Ubl4A ubiquitination. The negative control with USP19 (C46) strengthens the conclusion of specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "USP13 preferentially deubiquitinates Ubl4A but not ERAD substrates. Recombinant USP13 can deubiquitinate Ubl4A in vitro at pH 8.0 but does not deubiquitinate TCR\u03b1 under the same conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide direct biochemical evidence through in vitro deubiquitination assays that USP13 preferentially acts on Ubl4A. The pH optimization (C48) and the negative control with TCR\u03b1 (C50) support substrate specificity. The conclusion that this specificity is mediated by direct Bag6 binding (C51) is well-supported by earlier claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "USP13 and gp78 play antagonizing roles in regulating Ubl4A ubiquitination. gp78 can ubiquitinate Ubl4A directly in vitro and in vivo, while USP13 removes these ubiquitin chains. Co-depletion of both reduces ubiquitinated Ubl4A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 demonstrate through in vitro ubiquitination assays (C52), overexpression (C53), and co-depletion experiments (C55) that gp78 and USP13 have opposing activities on Ubl4A. The surprising observation that gp78 knockdown alone doesn't reduce basal ubiquitination (C54) is explained by the co-depletion result (C55), supporting a model where multiple E3s can ubiquitinate Ubl4A but USP13 specifically removes gp78-assembled chains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Hyper-ubiquitination of Ubl4A is associated with proteolytic cleavage of Bag6. A fast-migrating Bag6 species (Bag6*) accumulates in USP13-depleted cells, primarily in NP40-insoluble fractions, and its generation correlates with Ubl4A hyper-ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 demonstrate through immunoblotting with different antibodies (C58), biochemical fractionation (C59, C61), and genetic manipulations (C60, C62, C63) that Bag6 cleavage is associated with Ubl4A hyper-ubiquitination. The correlation between conditions that increase Ubl4A ubiquitination and Bag6* accumulation is consistent across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Hyper-ubiquitination of Ubl4A causes ERAD inhibition in a dominant negative manner. Overexpression of gp78 or Ub-Ubl4A fusion protein inhibits TCR\u03b1 degradation, likely through Bag6 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 demonstrate through cycloheximide chase experiments that conditions causing Ubl4A hyper-ubiquitination also inhibit ERAD. The observation that gp78 overexpression inhibits Bag6-dependent but not Bag6-independent substrates (C64) supports the mechanistic link to Bag6 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Lys48 is the major ubiquitination site in Ubl4A for both gp78-dependent and gp78-independent ubiquitination. Mass spectrometry identified Lys48, and mutation of this residue abolishes ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 provide converging evidence from mass spectrometry (C67) and mutagenesis experiments (C68, C69) that Lys48 is the major ubiquitination site. The use of stable cell lines with controlled expression levels (described in C68) addresses potential artifacts from transient overexpression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "USP13 facilitates the association between SGTA and Bag6. Lys48 in Ubl4A interacts with SGTA, and USP13 knockdown specifically reduces the Bag6-SGTA crosslinking product without affecting other SGTA complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 demonstrate through crosslinking experiments both in cells and in vitro (C71, C72) that Bag6 and SGTA form a complex. The specificity of USP13 knockdown effect (C75) and the requirement for Ubl4A (C74) support the conclusion that USP13 facilitates this interaction by preventing Ubl4A hyper-ubiquitination at Lys48.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "USP13 and gp78 form a complex that coordinately promotes ERAD. Ubl4A is a shared substrate of both enzymes, and USP13 depletion leads to Ubl4A hyper-ubiquitination and altered Bag6-SGTA interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 represent the main conclusions of the study, which are well-supported by the comprehensive experimental evidence from all previous claims. The multiple lines of evidence for physical interactions, opposing enzymatic activities, and functional consequences provide strong support for this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The mechanism by which USP13 regulates Bag6-SGTA interaction may involve steric hindrance by ubiquitin conjugates on Ubl4A or an adaptor function of USP13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 propose two possible mechanisms but acknowledge that both are speculative. While the steric hindrance model (C85) is described as the 'simplest model' based on structural data, and the adaptor model (C86) is presented as an alternative, neither mechanism is directly tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The mechanism of Bag6 cleavage may involve Ubl4A normally covering a protease site near the BAG domain. Hyper-ubiquitination of Ubl4A may alter its function, leading to increased Bag6 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 propose a mechanism for Bag6 cleavage based on the location of the cleavage site and Ubl4A binding site. While Bag6* accumulation in Ubl4A-depleted cells (C91) supports a role for Ubl4A in regulating Bag6 cleavage, the proposed mechanism remains speculative without direct identification of the protease or the cleavage site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "USP13 depletion impairs Bag6 function through at least two mechanisms: causing Bag6 cleavage and inhibiting Bag6-SGTA interaction. These two events may be linked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 summarize two well-documented phenotypes of USP13 depletion. While both mechanisms are supported by experimental evidence, the proposed link between them (C93) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Transient ubiquitination of Ubl4A by gp78 at the site of retrotranslocation may serve a positive role in ERAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 explicitly states this as a possibility not excluded by the results. No experimental evidence is provided to support a positive role for Ubl4A ubiquitination in ERAD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C100",
+      "C103",
+      "C117"
+    ],
+    "result": "The study proposes a novel paradigm where a DUB cooperates with an E3 ligase to enhance substrate specificity by removing unwanted ubiquitination from machinery components. This E3-DUB 'tag team' mechanism may be broadly applicable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C96, C100, C103, and C117 present the main conceptual contribution of the study. The experimental evidence for the gp78-USP13 system strongly supports this model. The proposal that this paradigm may be broadly applicable (C117) is reasonable speculation based on the findings but requires validation in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102"
+    ],
+    "result": "E3 ligases may ubiquitinate cofactors in addition to substrates, and such undesired ubiquitination could cause damage over time. How E3 cofactors normally evade ubiquitination was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 accurately describe established knowledge and gaps in the field. Claims C101-C102 present reasonable speculation about the potential consequences of promiscuous E3 activity, which provides context for the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The concept that DUBs can amplify E3 specificity is consistent with a recent study showing non-specific DUB activities can help quality control E3s discriminate between substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 cites Zhang et al., 2013 to support the broader concept. This provides appropriate context for the findings but represents prior work rather than a result of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study reveals that K48-linked ubiquitination can have a non-destructive function to regulate protein-protein interactions. This represents a paradigm where ubiquitination inhibits cofactor recruitment, distinct from the common mechanism where ubiquitin recruits effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 present a conceptual contribution regarding non-degradative K48-ubiquitination. The observation that Ubl4A is stable despite K48-ubiquitination and that this modification disrupts SGTA binding supports this conclusion. The citation of similar mechanisms in TGF\u03b2 signaling (C109) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Ubl4A may escape proteasomal degradation because ubiquitin conjugates are bound by ERAD factors with ubiquitin-binding motifs, preventing proteasome recognition. A similar mechanism maintains stability of ubiquitinated Met4 in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 propose a mechanism for how Ubl4A remains stable despite K48-ubiquitination, supported by analogy to Met4 in yeast (C111). However, this remains speculative without direct experimental evidence showing which ubiquitin-binding proteins protect Ubl4A from degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "USP13 activity needs tight spatial and temporal regulation. Purified USP13 is inactive, and sequence variations in the UBA domain allow USP13 to acquire interactors that may activate it at the ER membrane. Purified gp78 is insufficient for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 address the regulation of USP13 activity. The observation that purified USP13 is inactive (C113) is well-documented. The proposal that interactors activate USP13 (C114) is reasonable inference from the chimera data. The statement that purified gp78 is insufficient (C115) is based on unpublished results, which limits evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "A ubiquitin ligase and a DUB can act in concert to coordinate protein turnover at the ER by regulating the ubiquitination status of a degradation machinery factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 summarizes the main conclusion of the study, which is well-supported by the comprehensive experimental evidence demonstrating that gp78 and USP13 coordinately regulate Ubl4A ubiquitination to maintain ERAD function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The manuscript provides extensive background on ERAD components including USP5, gp78, Hrd1p, p97, Bag6, SGTA, and other DUBs, establishing the context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C11, C80-C84, C118-C129 accurately cite and describe prior work on ERAD components and mechanisms. These claims provide appropriate context and are supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

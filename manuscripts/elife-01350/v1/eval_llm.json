@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Mammalian whiskers serve diverse sensory functions and exhibit varied morphologies across species. Rodent whiskers are conical, sea lion and human hair are cylindrical, and harbor seal whiskers have undulated elliptical cross-sections. These morphological differences likely reflect functional adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 establish background knowledge about whisker diversity and function through extensive citations to prior literature. The morphological descriptions (C6-C9) and functional roles (C1-C4) are well-documented in the cited references. The evolutionary interpretation (C10) is appropriately qualified as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Rodents use whiskers for active tactile sensing through rhythmic whisking motions. Whiskers are conical elastic structures whose mechanical properties, including distance-dependent bending stiffness that varies over five orders of magnitude, enable object localization, texture discrimination, and distance estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 describe established properties of rodent whisker mechanics and behavior, supported by multiple citations to prior research. The claim about five orders of magnitude change in bending stiffness (C19) follows logically from the conical geometry described in C18. The distance-estimation function (C20) is supported by citation to Pammer et al., 2013.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C94",
+      "C95",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "A boundary-value problem formulation of the Euler-Bernoulli beam equation reveals that conical whiskers have two solutions (stable and unstable) for whisker shape during object contact. At a critical push angle, these solutions coalesce at a saddle-node bifurcation, causing sudden slip-off before the whisker tip reaches the object. Two types of detachment exist: slip-off (sobj < LW) and pull-off (sobj = LW).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38, C94-C95, and C117-C123 describe the theoretical model and its predictions. The mathematical framework is appropriately grounded in established beam theory (C121) and dynamical systems theory (C31, C36). The model correctly identifies saddle-node bifurcations as the mechanism for slip-off (C36, C38, C95), which is later validated experimentally (C55-C62, C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The theoretical model predicts that for conical whiskers, the range of push angles with stable solutions decreases approximately linearly with object distance. The concave forward (CF) configuration allows larger push angles before slip-off compared to concave backward (CB). Near the whisker tip, pull-offs occur instead of slip-offs due to whisker truncation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 describe detailed predictions from the theoretical model shown in Figure 3. The linear relationship (C42) and CF/CB differences (C43-C44) are clearly demonstrated in Figure 3E. The transition from slip-off to pull-off at large distances (C45-C46) is a logical consequence of whisker truncation and is supported by the model results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C97"
+    ],
+    "result": "Cylindrical whiskers exhibit fundamentally different behavior than conical whiskers. For cylindrical whiskers, saddle-node bifurcations occur at push angles >90\u00b0, beyond biologically plausible whisking ranges. Therefore, cylindrical whiskers do not slip-off but only pull-off when the tip reaches the object, and this behavior is independent of cylinder thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 and C97 describe the theoretical predictions for cylindrical whiskers, supported by modeling results in Figure 3G-J. The critical finding that SNB occurs beyond 90\u00b0 (C48) is clearly shown in the figures. The independence from thickness (C51) follows from the mathematical properties of homogeneous cylinders. These predictions are later validated experimentally (C57-C58, C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C99",
+      "C100"
+    ],
+    "result": "Experimental validation using mouse whiskers and human hair mounted on galvanometers confirms theoretical predictions. Conical whiskers slip-off before the tip reaches the object, with critical push angle decreasing with object distance. Cylindrical hairs only pull-off when the tip reaches the object. Agreement between theory and experiment is very good, with small deviations attributable to imperfect conical geometry and material inhomogeneities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62, C99-C100 describe experimental validation shown in Figure 4. The experiments directly test the key theoretical predictions and show strong agreement (C59, C99). The use of similar Young's modulus materials (C54) ensures valid comparison. Deviations are appropriately attributed to known limitations (C61, C100). The experimental design is sound with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C98"
+    ],
+    "result": "Slip-offs occur naturally during whisker-dependent behavior in head-fixed mice performing object localization tasks. Slip-offs are more likely at distant object locations, occur at larger push angles for closer objects, and happen in ~15% of trials. Truncated whiskers behave more cylindrical-like. Variability in critical push angles across trials is likely due to differences in whisker movement and elevation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 and C98 describe behavioral experiments shown in Figure 5. The data demonstrate that slip-offs occur naturally (C63, C66) with distance-dependent properties consistent with theory (C64-C65, C67-C68). The truncation effect (C98) validates model predictions. The variability explanation (C70) is appropriately qualified as speculative but reasonable. Sample size appears adequate (140 slip events mentioned).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C26",
+      "C27",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C92",
+      "C93",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "During texture exploration, conical whiskers sweep across surfaces with informative stick-slip micromotions, while cylindrical whiskers become trapped and immobilized. Conical whiskers exhibit transient trapping followed by high-velocity slips, with patterns varying by surface distance. Cylindrical hairs remain trapped for multiple whisking cycles and only escape when geometric constraints allow pull-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C26-C27, C71-C81, C92-C93, C110-C112 describe texture interaction experiments shown in Figure 6. The qualitative differences between conical and cylindrical whiskers are clearly demonstrated through dual-perspective videography. The stick-slip patterns for conical whiskers (C75-C77) and persistent trapping for cylindrical hairs (C78-C80) are well-documented. The mechanical explanation (C111-C112) is reasonable though appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Neural recordings from barrel cortex during object localization reveal that slip-offs produce strong cortical responses comparable to first touch, despite occurring when the circuit is adapted. Slip-offs overcome cortical touch adaptation and likely contribute to tactile sensation and perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 and C113-C116 describe electrophysiology experiments shown in Figure 7. The data clearly show that slip-offs evoke large responses (C86, C115) despite adaptation (C84, C114). Statistical analysis is reported (Figure 7G) showing significant differences. The sample size is limited (34 slip-off responses, 6 shanks) but adequate for the comparison. The functional interpretation (C116) is appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C82",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The conical whisker structure provides adaptive advantages for sensor mobility in constrained environments and feature extraction during haptic exploration. Tapered whiskers have greater freedom of movement past obstacles compared to cylindrical hairs, enabling effective tactile sensing in confined spaces and during active exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C28-C29, C82, C87-C91 synthesize the functional implications of the experimental and theoretical results. The mobility advantage (C22, C90) is directly supported by the slip-off data (Figures 4-5). The feature extraction advantage (C29, C81) is supported by the texture experiments (Figure 6). The confined space advantage (C23, C28, C82) is a reasonable inference though not directly tested. The resonance frequency claim (C87) is appropriately cited to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Rodents naturally inhabit confined tunnel environments where whisker mobility is critical for navigation, object localization, and social interactions. The conical whisker structure prevents tactile blind-spots that would occur if whiskers became trapped in constrained spaces. Whisker sweeping across surfaces is a major sensory mechanism for object identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 provide ecological context for the functional advantages of conical whiskers. The habitat descriptions (C103) are supported by citations to ecological studies. The behavioral descriptions (C104-C105, C109) are cited to prior research. The functional requirements in tunnels (C106-C107) are reasonable inferences. The blind-spot hypothesis (C108) is appropriately qualified as speculative but logically follows from the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "For conical whiskers, critical push angles for slip-off fall within the normal whisking range, while for cylindrical hairs they fall outside this range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 summarize key differences between conical and cylindrical whiskers validated in Figures 3-4. The normal whisking range (50\u00b0 peak-to-peak) is cited to prior literature (C41). The experimental data clearly show conical whiskers slip within this range while cylindrical hairs do not.",
+    "result_type": "MAJOR"
+  }
+]

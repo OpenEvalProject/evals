@@ -1,0 +1,1657 @@
+{
+  "submission": {
+    "id": "253cc44b-4aab-478d-9616-f643eb5098fc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:17:48.176541Z",
+    "updated_at": "2025-11-28T22:17:48.176541Z"
+  },
+  "content": [
+    {
+      "id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "submission_id": "253cc44b-4aab-478d-9616-f643eb5098fc",
+      "content_type": "manuscript",
+      "content_text": "# Reliable cell cycle commitment in budding yeast is ensured by signal integration\n\n## Authors\n\n- Xili Liu<sup>1</sup>\n- Xin Wang<sup>1</sup>\n- Xiaojing Yang<sup>1</sup>\n- Sen Liu<sup>3</sup>\n- Lingli Jiang<sup>1</sup>\n- Yimiao Qu<sup>1</sup>\n- Lufeng Hu<sup>1</sup>\n- Qi Ouyang<sup>1</sup>\n- Chao Tang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Center for Quantitative Biology Peking University Beijing China\n2. Peking-Tsinghua Center for Life Sciences Peking University Beijing China\n3. Institute of Molecular Biology, College of Medical Science China Three Gorges University Yichang China\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell fate decisions are critical for life, yet little is known about how their reliability is achieved when signals are noisy and fluctuating with time. In this study, we show that in budding yeast, the decision of cell cycle commitment (Start) is determined by the time integration of its triggering signal Cln3. We further identify the Start repressor, Whi5, as the integrator. The instantaneous kinase activity of Cln3-Cdk1 is recorded over time on the phosphorylated Whi5, and the decision is made only when phosphorylated Whi5 reaches a threshold. Cells adjust the threshold by modulating Whi5 concentration in different nutrient conditions to coordinate growth and division. Our work shows that the strategy of signal integration, which was previously found in decision-making behaviors of animals, is adopted at the cellular level to reduce noise and minimize uncertainty.\n\n## Introduction\n\nExtensive studies have shown the importance of precise cell fate decisions in many life activities, such as cell cycle entry in response to environmental changes and pattern formation during embryonic development (Xiong and Ferrell, 2003; Gregor et al., 2007; Bal\u00e1zsi et al., 2011). However, little is known about how cells utilize the information of the input signal to make robust and reliable decisions especially in cases of noisy and time-varying signals. We address this issue by using the Start transition in budding yeast (Saccharomyces cerevisiae) as a model system. Start is a major cell cycle checkpoint in budding yeast (corresponding to the restriction point in mammalian cells), which decides whether or not the cell should make the irreversible commitment to the next round of division (Hartwell et al., 1974). The environmental and internal conditions are sensed and passed to the Start signal Cln3 (Gallego et al., 1997; Polymenis and Schmidt, 1997; Hall et al., 1998; Parviz et al., 1998; Menoyo et al., 2013). As a G1 cyclin, Cln3 triggers the Start transition by activating a downstream positive feedback loop composed of the repressor Whi5, the transcription factor SBF/MBF and the cyclin Cln1/2 (Skotheim et al., 2008; Charvin et al., 2010) (Figure 1A upper panel). The Start checkpoint coordinates cell growth and cell division and is thought to control the cell size under different growth conditions (Johnston et al., 1977; Jorgensen and Tyers, 2004). However, the mechanisms of the coordination and control have not been fully elucidated.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of the Start regulatory network in wild-type (upper panel) and in strains used in this study (lower panel). (B) G1 length is defined as the time interval during which Whi5 resides in the nucleus (Figure 1\u2014figure supplement 1). Whi5 localization is schematically shown in red. (C) Population-averaged G1 length at different IPTG concentrations for cells carrying IPTG-induced CLN3 as the Start signal (Strain YCT2002). Error bars represent standard deviation. (D) Composite bright-field and fluorescence images for cells carrying GFP-GFP-CLN3* and WHI5-tdTomato (Strain YCT2003) under full induction (2 mM IPTG). White arrows indicate the beginning of G1; yellow arrows indicate the timing of Start transition. (E\u2013H) Time courses of the GFP-GFP-Cln3* (green) and nuclear Whi5-tdTomato (red) fluorescent intensities in a representative single cell at each different IPTG concentration. The empty squares and circles denote the raw data of Cln3 and nuclear Whi5 fluorescence, respectively; the green and red lines are the smoothing splines of the raw data; purple boxes show the G1 duration. (I) G1 length vs the average Cln3 fluorescent intensity in G1. Each dot represents a measurement from one cell cycle event; error bars indicate standard deviation. Color groups represent data collected from each of the corresponding IPTG concentrations. (J) G1 length vs the average Cln3 fluorescence in log\u2013log scale (empty circles are calculated from I). <Cln3> represents the average Cln3 fluorescence in G1; T0 and Cln3c are fitted from I as described in \u2018Materials and methods\u2019. The solid line is the best linear fit of the binned data (filled squares). Error bars indicate standard deviation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Nuclear Whi5-tdTomato intensity in a representative single cell; open circle shows the raw data; solid red line shows the spline smoothing. (B) The first derivative of the smoothed data; pink shade area denotes the G1 duration.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The sequence of GlacSpr. (B) The dose\u2013response curve of GlacSpr. The transcriptional activity of GlacSpr in the OFF state is a little higher than GAL1pr in glucose, as the result, GlacSpr is not tight enough to completely shut off the cyclin activity of the wild-type Cln3. The cln3\u0394 bck2\u0394 cells carrying GlacSpr-CLN3 are viable in the absence of IPTG with prolonged G1 phase.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Cln3 is shown in dim grey and Cdk1 in light grey. The Cln3 in this model only contains amino acid 70-312. The hydrophobic patch is indicated in red, while the interface to Cdk1 is indicated in green. The mutation sites we screened by alanine substitution are shown in sticks. Among those sites, D76, D79, K106, R108, D137, K138, K163, D166, K168, R170, K357, and K359 are in the clustered charge residues; M107, R108, L110, and I111 are in the hydrophobic MRAIL patch; H80, Y81, K163, F164, D166, E194, and W203 are on the interface of Cln3-Cdk1 complex.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp4-v3.jpg)\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) The correlation between birth size and GFP-GFP-Cln3* intensity under full induction, Pearson Coefficient is 0.75. (B) The correlation between birth size and G1 length under full induction, Pearson Coefficient is \u22120.51 (YCT 2003).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp6-v3.jpg)\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp7-v3.jpg)\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp8-v3.jpg)\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig1-figsupp9-v3.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Open circle denotes raw data in log\u2013log scale; closed square denotes the binned data; solid line is the best linear fit of the middle part; error bars are standard deviation.\n\nIt was proposed that Cln3 concentration in the nucleus (or total Cln3 abundance) increases with cell size and the Start transition is triggered when Cln3 level reaches a critical threshold (Chen et al., 2004; Jorgensen and Tyers, 2004). There are several issues with this model. For instance, it is unclear how nuclear Cln3 concentration is coupled to cell size. Furthermore, both the CLN3 mRNA and the Cln3 protein turn over very fast (with a few minutes half-lives [Cross and Blake, 1993; Tyers et al., 1992; Yaglom et al., 1995]) at very low abundance (a few copies of the mRNA [McInerny et al., 1997; Arava et al., 2003] and 100\u2013200 copies of the protein [Tyers et al., 1993]), enabling it to rapidly respond to the environmental and cellular condition changes. This would imply considerable noise and fluctuations in the Cln3 profile. If the Start transition were triggered by the instantaneous Cln3 concentration passing above a threshold (Chen et al., 2004; Jorgensen and Tyers, 2004), the decision would be rather stochastic and could be unreliable.\n\nIn this study, by quantitatively measuring an inducible Cln3 mutant and simultaneously monitoring the timing of Start transition in single cells, we address the question of what information in the Cln3 profile the cell is using to make the Start decision. We found that the Start transition is triggered by the time integration of Cln3 activity on phosphorylated Whi5. Furthermore, cells modulate Whi5 concentration in different nutrient conditions. Cln3 and Whi5 together control G1 length through the time integration mechanism to coordinate cell division with cell growth. The time integration strategy can reduce noise and minimize uncertainty in the decision and may be widely implied in decision making systems at the cellular level.\n\n## Results\n\n### G1 length is inversely proportional to Cln3 concentration\n\nTo quantitatively investigate how Start transition is triggered by Cln3, we first integrated a copy of inducible CLN3 onto the genome in a strain lacking the native CLN3 and BCK2 and fused the endogenous WHI5 with the red fluorescent protein tdTomato. The G1 length TG1 is defined as the time interval between Whi5 nuclear entry in late mitosis and its exclusion from the nucleus at the Start transition (Taberner et al., 2009) (Figure 1B and Figure 1\u2014figure supplement 1), which is a measure for how long the cell waits to make the Start decision. Cln3 level under a synthetic inducible promoter GlacSpr (Figure 1\u2014figure supplement 2) was controlled by titrating the inducer IPTG. The cells were grown in a microfluidic chip and monitored by time-lapse microscopy. We found that in both mother and daughter cells G1 length is prolonged as IPTG concentration decreases, which is consistent with the previous findings that increased Cln3 dosage shortens G1 length (Di Talia et al., 2007) and suggests a negative correlation between G1 length and Cln3 level (Figure 1C).\n\nThe low abundance and short half-life of the wild-type Cln3 make its detection in single cells extremely difficult (data not shown). To better quantitate the observed negative correlation between G1 length and Cln3 level, we screened for Cln3 mutants with lower activity and longer half-life based on a homolog modeling of the Cln3-Cdk1 complex (Figure 1\u2014figure supplement 3). Lower activity requires higher Cln3 concentration to pass Start and longer half-life allows more fluorescent proteins to mature before the tagged Cln3 is degraded, thus making the mutant Cln3 detectable in single cells. The fluorescent intensity and CDK activity of the GFP-GFP-Cln3 mutants were carefully examined. The desired mutants should fulfill three criteria: 1) the fluorescent brightness of the mutant can be quantitatively measured; 2) under full induction, the mutant can rescue the physiological function of the endogenous Cln3 in cln3\u0394 cells (Figure 1\u2014figure supplement 4); 3) the cell cycle of cln3\u0394 bck2\u0394 strain can be arrested when the mutant is shut off. Two successful mutants, CLN3R108A and CLN3D166A, were obtained from the screening. Since the fully induced mutants do not change cell cycle behaviors such as the doubling time and cell size, we consider them faithful replacements of wild-type CLN3 under our experimental conditions. Unless otherwise specified, the mutant CLN3R108A (denoted CLN3*) was used in following experiments (Figure 1A lower panel and D). Interestingly, we found that under full induction, the nuclear concentration of GFP-GFP-Cln3* is positively correlated and G1 length is negatively correlated with birth size (Figure 1\u2014figure supplement 5), which implies that size control is maintained with the mutant Cln3 (Di Talia et al., 2007). It was proposed that Cln3 responds to size through the upstream open reading frame (uORF) of its mRNA (Polymenis and Schmidt, 1997) and/or ER-associated proteins Whi3 and Ydj1 (Wang et al., 2004; Verg\u00e9s et al., 2007). However, in our construct, the 5\u2032 leader of Cln3 mRNA was removed, and we did not observe any ER-like localization of Cln3 protein. The promoter activity does not correlate with size either (data not shown). The result suggests that there may be other regulation mechanism coupling Cln3 concentration to cell size. When the inducible promoter is repressed to different extent by reducing IPTG concentration, the correlation between Cln3 concentration and cell size is disrupted and promoter activity becomes the dominant controller of Cln3 concentration. In this work, we leave the question of how Cln3 is coupled to size and focus on how Start transition is triggered by a controllable Cln3 concentration.\n\nUsing Cln3* as the signal to trigger Start, we again observed a negative correlation between G1 length and Cln3 signal strength in single cells (Figure 1E\u2013H): when the signal is strong, the cell passes Start sooner; when the signal is weak, the cell waits for a longer time. In Figure 1I, we plot G1 length vs the average Cln3 in G1 for many single cells. The data shows an inverse-like correlation. Similar results were obtained when mother\u2013daughter cell types were distinguished, CLN3D166A was used as the signal, or G1 length is defined by the MCM marker (Liku et al., 2005) (Figure 1\u2014figure supplement 6\u20138). All of these results strongly suggest that the inverse-like correlation between G1 length and Cln3 signal strength is an intrinsic property of the Start transition.\n\nTo get a quantitative understanding, we plot log(TG1 \u2212 T0) against log(<Cln3> \u2212 Cln3c) in Figure 1J, where T0 is the horizontal asymptote representing the minimum G1 length (time from Whi5 nuclear entry to cytokinesis) and Cln3c is the vertical asymptote representing the minimum Cln3 concentration for cell to eventually pass Start. The slope of the linear fit is very close to \u22121 (R2 = 0.91) (Figure 1J and Figure 1\u2014figure supplement 9). Thus G1 length is inversely proportional to the average Cln3 concentration in G1, which can be expressed as,\n\n$$\nT_{G1}\u2212T_{0}=\\frac{A}{<Cln3>\u2212Cln3_{c}},\n$$\n\nwhere A is the constant of proportionality. Equation (1) can be rewritten into an integral form:\n\n$$\n\\int_{T_{0}}^{T_{G1}}(Cln3(t)\u2212Cln3_{c})dt=A.\n$$\n\nThe above equation implies that the Start transition is triggered (at t = TG1) when the time integration of the Start signal is above a threshold (A).\n\n### Time integration reduces the variability in G1 length\n\nTo investigate the potential benefit of having signal integration during the cell cycle commitment, we simulated the mRNA expression and protein level of Cln3 with a stochastic algorithm (Gillespie, 1976). Most parameters in the model were derived from published papers (Figure 2\u2014source data 1). Due to the low abundance and short half-life, the Cln3 profile fluctuates considerably (Figure 2A). We compared two hypothetical models of Start triggering: the Instantaneous Model in which the Start transition is triggered once the Cln3 level reaches a certain threshold, and the Integration Model in which the Start is triggered once the integration of Cln3 level over time reaches a certain threshold (Figure 2A). The Instantaneous Model leads to a large variability in G1 length even in identical cells (no extrinsic noise from cell-to-cell variability) and under a constant environment (Figure 2B). When extrinsic noise is added in the model, the G1 variability of the Instantaneous Model is as large as 92%, which is significantly larger than experimental observations for WT cells in previous and this studies (Di Talia et al., 2007; Skotheim et al., 2008; Charvin et al., 2008; Ferrezuelo et al., 2012) (CVs are no more than 50%, Figure 2C). In contrast, since the G1 length in the Integration Model depends on the integration of Cln3 level within a time window, a considerable amount of noise is averaged out. As a result, the variability in G1 length is much smaller (Figure 2A\u2013C) and is consistent with the experimental data (Figure 2C). Furthermore, the shape of the G1 length distribution generated by the Integration Model is more similar to that of the experimental data. While the Instantaneous Model leads to a G1 length distribution with a long tail; this means that a significant fraction of the cells would have prolonged G1 lengths, which could be disadvantageous for the population. The conclusion holds the same when considering the nuclear volume increase during cell growth (Figure 2\u2014figure supplement 1) and using a wide range of parameters.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative Cln3 profiles in single cells. Each color represents simulation of a single cell. In the Instantaneous Model, Start is triggered at the time TG1 (vertical blue dash line) when Cln3 profile hits a threshold (here set to 150) for the first time. In the Integration Model, Start is triggered at the time TG1 (vertical red dash line) when the integration of Cln3 (the area under the Cln3 curve as indicated by shadow) reaches a threshold (here set to 1900). The two thresholds are chosen to generate the same average TG1 \u2248 20 min in both models. In generating Cln3 profiles, both intrinsic noise and extrinsic noise are used (Elowitz et al., 2002; Raser and O'Shea, 2004). (B\u2013C) The distributions of TG1 in the Instantaneous (blue) and Integration (red) models, respectively, with intrinsic molecular noise only (B) and with both intrinsic and extrinsic noise (C). The parameters to generate this figure are specified in Figure 2\u2014source data 1. The G1 length distribution from experimental data (Strain YCT2001) is shown in (C).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative Cln3 concentration profiles in single cells. Each color represents simulation of a single cell. (B\u2013C) The distributions of TG1 in the Instantaneous (blue) and Integration (red) models, respectively, with intrinsic molecular noise only (B) and with both intrinsic and extrinsic noise (C).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic plot of the test. The test is considered a pass if the timing of Start is near the timing of Cln3 peak by the specified tolerance value. The Cln3 profiles are from the real data. Open circles denote the raw data; solid lines are the smoothing splines. (B\u2013C) Test failure percentage. Grey bars indicate the failure percentage and red bars indicate the percentage of cells whose Cln3 peak value is more than 20% larger than Cln3 at Start, for all cells (B) and cells with G1 longer than 30 min (C).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Dynamics of nuclear Whi5 intensity in a representative single cell (YCT2016). 50 \u03bcM 1-NM-PP-1 was added to the medium to inhibit Cdk1 activity at 30 min. Open circles are the raw data; solid line is the smoothing spline. (B) Fitting Whi5 dephosphorylation rate and the memory length from Whi5 nuclear entry when Cdk1 is inactivated. Open circles are from A. Solid line is the least squares best fit of the equation Whi5(t) = A \u2212 B \u00d7 exp(\u2212t/\u03c4), where 1/\u03c4 denotes Whi5 dephosphorylation rate and \u03c4 is the memory length (Supplementary file 1A). (C\u2013D) The distributions of the memory length in mother (C) and daughter (D) cells, respectively. The red solid lines are Gaussian envelops of the distributions.\n\nWe tested the Instantaneous Model with the measured Cln3 profiles. If the Instantaneous Model were true, cells should pass Start at or near the peak of Cln3 profile during G1. However, we found that in near 80% cells, the timing of Cln3 peak is different from the timing of Start (Figure 2\u2014figure supplement 2). Thus, it is very unlikely that Start is triggered by the instantaneous Cln3 concentration.\n\n### Whi5 acts as the integrator of Cln3-Cdk1 activity\n\nIntegration of Cln3 profile would imply an accumulation of Cln3-Cdk1 kinase activity over time. We next proceeded to identify the integrator, that is, on what molecule this kinase activity is being accumulated. The Start network is composed of two modules: Cln3-Cdk1 phosphorylating Whi5 as the triggering module and the positive feedback loop as the switching module (Figure 1A). The two modules are coupled via Whi5. The triggering module initiates Start by reducing Whi5 concentration in the nucleus. The switching module sets a threshold for the nuclear Whi5 concentration, Whi5c, below which the switch will be flipped. Thus, G1 length is the time needed for the nuclear Whi5 concentration to drop below Whi5c. We constructed a mathematical model for the kinetics of Whi5 phosphorylation (Supplementary file 1A). The model can reproduce the observed experimental data and make several predictions. The basic feature of the integration mechanism can be captured by a simplified version of the model as below.\n\nIn the simplified model, we assume there is only one phosphorylation site on Whi5, which is phosphorylated by Cln3-Cdk1 and dephosphorylated by some basal phosphatase. We further assume both enzymes operate at saturation (see Supplementary file 1A on how the assumption can be justified and/or relaxed). Then the rate change of the phosphorylated Whi5, Whi5P, can be expressed by the following equation:\n\n$$\n\\frac{dWhi5_{P}}{dt}=k_{1}\u22c5Cln3\u2212k_{2},\n$$\n\nwhere k1 is the catalytic rate of Cln3-Cdk1 on Whi5, and k2 is the rate of the phosphatase times the phosphatase concentration. The concentrations of unphosphorylated and phosphorylated Whi5 fulfill a mass equation:\n\n$$\nWhi5+Whi5_{P}=Whi5_{tot}.\n$$\n\nBy our definition, G1 starts from Whi5 nuclear entry, when Cdc14 is the major phosphatase that is responsible for Whi5 dephosphorylation (Taberner et al., 2009). Cln3 cannot initiate the export of nuclear Whi5 until Cdc14 is inactivated at cytokinesis (Shou et al., 1999; Visintin et al., 1999). We define the time from Whi5 nuclear entry to Cdc14 inactivation as T0. We assume Whi5P (t = T0) = 0, thus Whi5tot is the nuclear Whi5 concentration when the phosphorylation reaction becomes dominant. At the Start transition t = TG1, the nuclear Whi5 concentration drops to Whi5c, which is the critical Whi5 threshold determined by the positive feedback loop (Supplementary file 1A), so that Whi5P (t = TG1) = Whi5tot \u2212 Whi5c. By integrating Equation (3) from T0 to TG1, we have:\n\n$$\nWhi5_{tot}\u2212Whi5_{c}=\\int_{T_{0}}^{T_{G1}}(k_{1}Cln3\u2212k_{2})dt.\n$$\n\nEquation (5) can be reformulated as:\n\n$$\n\\int_{T_{0}}^{T_{G1}}(Cln3\u2212Cln3_{c})dt=A,\n$$\n\nwhere A = (Whi5tot \u2212 Whi5c)/k1 and Cln3c = k2/k1. We thus identified Whi5 as the integrator: the number of phosphorylated Whi5, Whi5P, accumulates with Cln3-Cdk1 activity and the increase of Whi5P causes a decrease in the nuclear Whi5 concentration. The Start transition happens when the nuclear Whi5 concentration drops below Whi5c, or the accumulation of Whi5P reaches a threshold. In the case where the phosphatase operates in the linear region, Equation (3) becomes\n\n$$\n\\frac{dWhi5_{P}}{dt}=k_{1}\u22c5Cln3\u2212k_{2}Whi5_{P}.\n$$\n\nIn this case, there is a window of \u2018memory\u2019 of length 1/k2, beyond which the integration effect is erased.\n\nIt is difficult to measure the window of memory or the memory length in G1 directly. Because most Whi5 is dephosphorylated and resides in the nucleus in G1 phase, we could not directly measure Whi5 dephosphorylation rate in G1. Thus, we measured Whi5 nuclear entry right after G1 by inhibiting Cdk1 activity with a strain bearing a cdc28-as1 allele (Bishop et al., 2000). The average half time of Whi5 nuclear entry, which is an estimate of the memory length in the mathematical model (Supplementary file 1A), is 13.7 min in mother cells and 10.6 min in daughter cells, respectively (Figure 2\u2014figure supplement 3). Note that this memory length is comparable to the average G1 length (from cytokinesis to Start) in daughter cells in SD medium, which is 13.6 min in our experiment. In poor nutrient conditions, when G1 length is prolonged, Whi5 dephosphorylation rate and the memory length might be further adjusted.\n\n### The correlation between Cln3 and G1 length with perturbations in the Start network\n\nThe mathematical model of Whi5 kinetics makes several predictions. The first is that there is a linear relation between the integration threshold A and the total Whi5 concentration Whi5tot (a more detailed ODE model predicts that Cln3c will also change with Whi5tot [Supplementary file 1A]). The second is that increasing the phosphatase activity k2 reduces memory length and increases Cln3c. The third is that reducing Whi5c by weakening the positive feedback loop increases the integration threshold A (the ODE model predicts that Cln3c will also change when perturbing the loop strength [Supplementary file 1A]). Note that Cln3 half-life by itself has no effect on the integration dynamics; and that reducing the Cln3-Cdk1 catalytic efficiency k1 (as in Cln3*) increases Cln3c and A proportionally, requiring an increased Cln3 concentration to pass Start.\n\nWe verified the model's predictions by perturbing the Start network. First, the integration effect would have difficulty to manifest itself without the integrator. Indeed, our experiment shows that in whi5\u0394 strain, most cells pass Start with minimal G1 length (Figure 3\u2014figure supplement 1A). We further checked to what extent the inverse correlation holds by plotting G1 length and Cln3 intensity in log\u2013log scale (Figure 3A). The slope of the linear fit is much larger than \u22121, suggesting that the inverse proportionality is severely compromised. Second, the integration threshold A should increase with the total Whi5 concentration. This means that at the same Cln3 concentration cell waits longer time in G1 with higher Whi5 dosage. The prediction is consistent with the previous finding that Whi5 overexpression significantly increased the percentage of the cells in G1 phase (Costanzo et al., 2004). We quantitatively verified the effect of the total Whi5 concentration on the integration threshold A with a strain containing two copies of WHI5 (Figure 3\u2014figure supplement 1B and Figure 3B). The inverse correlation shifts upward in log\u2013log scale, which represents larger A. Remarkably, the positive correlation between A and Whi5 concentration can also be seen at the single-cell level (Pearson correlation coefficient = 0.53, Figure 3C). In Cln3-TG1 correlations, the variation of G1 is high when Cln3 concentration is low. At least part of the variation is due to the variance in Whi5tot concentration (and thus the variance in A). After normalizing by Whi5tot, inverse correlations in both 1X and 2X WHI5 strains are more converged and collapse to the same curve (Figure 3\u2014figure supplement 2). Third, the model predicts that increasing the phosphatase activity will not only increase Cln3c but also cause deviation from the inverse correlation by shortening the memory length. It is known that overexpressing the phosphatase CDC14 affects the nuclear accumulation of Whi5 and increases the percentage of the cells in G1 phase (Visintin et al., 1998; Stevenson et al., 2001). Thus, we tested the prediction in a CDC14 overexpressing strain. We observed that Cln3c increases and the inverse proportionality is compromised (Figure 3\u2014figure supplement 1C and Figure 3D). Finally, the model predicts that weakening the strength of the positive feedback loop will both reduce Whi5c (thus increase A) and increase Cln3c. We measured G1 length vs Cln3 intensity in cln1\u0394 and cln2\u0394 strains and observed that Cln3cs increase and the inverse correlations shift upward in log\u2013log scale as predicted (Figure 3\u2014figure supplement 1D,E and Figure 3E,F). The correlation in cln2\u0394 shifts more than in cln1\u0394, suggesting that Cln2 contributes more to the positive feedback loop. This is consistent with the fact that the expression level of Cln2 is about three times higher than Cln1 and with the previous finding that Cln2 is more potent in the Start transition (Huh et al., 2003; Tyers and Futcher, 1993; Tyers et al., 1993).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig3-v3.jpg)\n\n**Figure 3.:** Correlations between G1 length and the average Cln3 fluorescence in log\u2013log scale in (A) cln3\u0394 bck2\u0394 whi5\u0394 strain (Strain YCT2008) (blue), (B) cln3\u0394 bck2\u0394 2XWHI5 strain (Strain YCT2007) (red), (D) cln3\u0394 bck2\u0394 CDC14 overexpressing strain (Strain YCT2009) (purple), (E) cln3\u0394 bck2\u0394 cln1\u0394 strain (Strain YCT2013) (green), (F) cln3\u0394 bck2\u0394 cln2\u0394 strain (Strain YCT2014) (pink) and (G) cln3\u0394 BCK2+ strain (YCT2015) (wine), in comparison with in cln3\u0394 bck2\u0394 strain (Strain YCT2003) (black). Data are also plotted in linear scale in Figure 3\u2014figure supplement 1. <Cln3> represents the average Cln3 fluorescence in G1; T0 and Cln3c are fitted from Figure 3\u2014figure supplement 1 as described in \u2018Materials and methods\u2019. The solid lines are linear fits of the binned data (filled squares). Error bars indicate standard deviation. Cln3c, T0, Slope, Y Intercept and R2 of the linear fit for each strain are summarized in (H). (C) The integral A (calculated as TG1 mutiplied by average Cln3 intensity in G1) vs Whi5tot fluorescence intensity in cln3\u0394 bck2\u0394 (black) and cln3\u0394 bck2\u0394 2XWHI5 (red) strains. Each dot represents a measurement from one cell cycle event; error bars indicate standard deviation \u03c1 signifies Pearson correlation coefficient.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Each dot represents a measurement from one cell cycle event; error bars indicate standard deviation; solid lines are simulation results from the ODE model (Supplementary file 1B). Note we didn't fit the result of cln3\u0394 BCK2+ strain, because the mechanism of Bck2 related Start triggering is not clear.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The Cln3-TG1 correlation indicating Whi5tot intensity of each cell by colors. (B) Whi5tot distribution of cells with Cln3 intensity less than 300. Red line is the Gaussian envelop. (C) Average G1 length binned by Whi5tot intensity of cells with Cln3 intensity less than 300. (D) G1 length verse Cln3 intensity divided by Whi5tot intensity in 1XWHI5 (YCT2003) and 2XWHI5 (YCT2007) strains.\n\nWe also investigated how the correlation between Cln3 and G1 length is affected by Bck2, which triggers the Start transition in the absence of Cln3 (Wijnen, 1999). As shown in Figure 3\u2014figure supplement 1F, the Cln3-TG1 correlation of BCK2+ strain loses the long G1 tail at low Cln3 concentration. And in log\u2013log scale the inverse correlation only holds to certain range. As Cln3 concentration decreases, the mean G1 length stops increasing at about 29 min. The result suggests that in wild-type cells, Bck2 acts as a bypass Start trigger to prevent a too long G1 phase when Cln3 concentration is too low.\n\n### Cells modulate Whi5 concentration in different nutrient conditions to coordinate G1 length with growth rate\n\nIn budding yeast, the G1 checkpoint Start coordinates cell division with growth (Hartwell et al., 1974; Jorgensen and Tyers, 2004). Under different nutrient conditions, cells spend different time growing in G1 before passing Start (Ferrezuelo et al., 2012). However, it is not clear how this coordination is achieved. In light of our findings (Equation (5), Figure 3B,C), it is suggestive that the cell could modulate the integration threshold A, and thus the G1 length, by tuning Whi5tot. Indeed, we found that in suboptimal nutrient conditions, the Cln3-TG1 correlations shift towards right with higher Whi5tot intensity and A (Figure 4\u2014figure supplement 1). Similar shift was observed with the MCM marker as a measure of G1 length (Figure 4\u2014figure supplement 3). However, we did not observe any increase of MCM intensity in suboptimal nutrient condition, nor any correlation between A and MCM intensity, suggesting that the nutrient regulation on Whi5 and the Whi5 regulation on A are specific. We further quantified Whi5tot intensity in a series of nutrient conditions in WT cells. Surprisingly, Whi5tot increases as growth rate decreases and G1 length is accordingly prolonged in both mother and daughter cells (Figure 4A\u2013C). It means that in poor nutrient conditions, the Start threshold is actually higher rather than lower as proposed by previous studies (Jorgensen and Tyers, 2004; Schneider et al., 2004; Turner et al., 2012), although the cell size may appear to be smaller.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig4-v3.jpg)\n\n**Figure 4.:** (A) Whi5tot intensity is negatively correlated with growth rate in various nutrient conditions (Strain YCT2001). (B\u2013C) G1 length is positively correlated with Whi5tot intensity for mothers (B) and daughters (C) (Strain YCT2001) in different nutrient conditions. Each color represents one nutrient condition as in A. Each dot in A\u2013C is calculated from all cells in that nutrient condition. (Single-cell data are presented in Figure 4\u2014figure supplement 4,5; statistic results are summarized in Figure 4\u2014source data 1) Black straight lines are guide lines; error bars indicate standard deviation.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, D and G) The correlations between G1 length and the average Cln3 fluorescence in 2% raffinose (A), limited nitrogen (D) and 0.05% glucose (G), comparing with in 2% glucose (Strain YCT2003). Each dot represents a measurement from one cell cycle event; error bars indicate standard deviation. (B, E and H) The correlations in A, D and H are plotted in log\u2013log scale in (B), (E) and (H), respectively (open circles). The solid lines are linear fits of the binned data (filled squares). Error bars indicate standard deviation. Cln3c, T0, Slope, and Y Intercept are the fitting parameters as described in \u2018Materials and methods\u2019 and summarized in (J). Note the linear fit for 2% raffinose is not very meaningful, because its Cln3 only varies in a small range. (C, F and I) The corresponding correlations between the integral A and Whi5tot fluorescence intensity in 2% raffinose (C), limited nitrogen (C) and 0.05% glucose (F), comparing with in 2% glucose. Each dot represents a measurement from one cell cycle event; error bars indicate standard deviation. Each nutrient condition was shown in a separate panel in Figure 4\u2014figure supplement 2.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig4-figsupp2-v3.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A and B) The Cln3-TG1 correlations with the MCM marker as a measure of G1 length in glucose and raffinose in linear (A) and log\u2013log scale (B). The solid lines in B are linear fits of the binned data (filled squares). Cln3c, T0, Slope, and Y Intercept are the fitting parameters as described in \u2018Materials and methods\u2019 and summarized in (D). (C) The correlation between A and MCM-mCherry fluorescence in glucose and raffinose. Error bars indicate standard deviation.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig4-figsupp4-v3.jpg)\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Legend is the same as in Figure 4\u2014figure supplement 4.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/03977/elife-03977-fig4-figsupp6-v3.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A\u2013E) The raw data of Whi5 dynamics and G1 length from representative single cells in constant 2% (A), constant 0.01% (B), 0.01\u20132% (C) and 2\u20130.01% (D\u2013E) glucose media; 0.01% glucose period is marked as yellow and 2% glucose period is marked as green, respectively. (F\u2013I) Whi5tot intensity and G1 length adapt with time after nutrient transitions; yellow squares are steady states in 0.01% glucose whereas green diamonds are steady states in 2% glucose; time 0 is the timing of nutrient transition; G1 beginning time is the time when a G1 phase (not necessarily the first G1 phase) begins after nutrient transition. There is no data for daughter cells in 2\u20130.01% glucose condition, because only few daughter cells budded in the first 300 min after transition.\n\nWe also monitored the adaptation of Whi5tot intensity and G1 length after nutrient change. When the cells were switched from low glucose to high glucose medium, both Whi5tot intensity and G1 length decreased gradually and reached the same level as in constant high glucose medium after several cell cycles (Figure 4\u2014figure supplement 6A\u2013C,F,G). Contrarily, when cells were switched from high glucose to low glucose medium, Whi5tot increased fast and underwent an overshoot before it reached a steady level (Figure 4\u2014figure supplement 6D,H). G1 length increased even faster and its overshoot was also more pronounced than Whi5 (Figure 4\u2014figure supplement 6D,I). Surprisingly, we found when switched from high to low glucose, if the cell had not started budding, G1 phase could reinitiate (Figure 4\u2014figure supplement 6E). This result could not be explained by current knowledge of Start and must involve further changes in CDK and phosphatase activities.\n\n## Discussion\n\n### Time integration in decision making process\n\nCellular decision making is a fundamental problem with broad implications, ranging from development, cell-fate determination, stress response, to cell cycle control and signaling. A decision-making process in a cell usually consists of (i) sensing (of external and/or internal signals and cues), (ii) information processing (of the sensed information), and (iii) actuating (e.g., turning on a switch). Previous works have been mainly focused on the first and the last steps. Even in many cases where the molecular players and the circuitry are mapped out, how cells process information to make the best decision is largely unknown. This is intrinsically a quantitative question and is especially important when the signals are noisy and with uncertainties. Information processing is the brain of decision making; understanding this step is critical to understand the rationale and the strategy the cell adopts to make better decisions.\n\nWe address this question with a well-studied model system: the budding yeast Start checkpoint. Using a quantitative single cell assay with a controllable and quantifiable Cln3 signal, we discovered that it is not the instantaneous value of the Cln3 concentration, but rather the integration of the concentration over time, that triggers the switch. Cln3 is a sensor that senses, with a fast response time, the instant information/condition relevant to making cell cycle commitment. We found that the instant Cln3 activity is memorized on phosphorylated Whi5, and the memory length is about 10 min in SD medium. This implies that the cell uses information within a time window of the past in order to get an assessment of the future.\n\nThis strategy of signal integration averages out noise and fluctuations and minimizes error and uncertainty in decision making. Signal integration has been seen in decision-making behaviors of animals (Bowman et al., 2012; Bogacz et al., 2006). Our work shows that it is also adopted at the cellular level, suggesting a general strategy that may be widely implemented in decision-making and signaling systems (Li et al., 2010; Di Talia and Wieschaus, 2012; Doncic and Skotheim, 2013).\n\n### Novel roles of Whi5 in the Start transition\n\nWhi5 (more precisely, the phosphorylated Whi5) serves as the integrator in the system, that is, the physical memory onto which the integration is being recorded. We found that cells modulate Whi5 level to set different integration thresholds in different nutrient conditions. Whi5 level is higher in poor nutrients, thus cells are more cautious and wait for longer time to make the decision.\n\nWe also found that daughter cells always have higher Whi5tot intensity and steeper slope between Whi5tot and G1 length than mother cells (Figure 4D,E). The finding suggests that besides the daughter-specific Cln3 suppression by Ace2 (Laabs et al., 2003), Whi5 contributes to G1 delay in daughter cells as well. It is also consistent with the previous finding that Whi5 is required for the different behaviors of mother and daughter cells under low metal stress (Avraham et al., 2013).\n\nAlthough Cln3 and Whi5 determine G1 length together, they have very different response time. While Cln3 responds to external and internal cues rapidly, Whi5 adjusts in a much longer time scale and reinforces the change of G1 length (Figure 4\u2014figure supplement 6). The system could utilize the different response times of the sensor and the integrator to develop more complex strategies when adapting to environmental fluctuations and changes.\n\n### Revisiting the size control problem\n\nThe coordination of cell growth with division is often posed as a \u2018size control problem\u2019. Previous studies on size control were more focused on Cln3's response to environmental changes (Gallego et al., 1997; Polymenis and Schmidt, 1997; Hall et al., 1998; Parviz et al., 1998; Jorgensen and Tyers, 2004). It was proposed that the Start threshold is lowered in poor nutrient conditions, based on the conventional (instantaneous) model and the observation that the abundance of Cln3 is lower in these conditions (Jorgensen and Tyers, 2004; Schneider et al., 2004; Turner et al., 2012). However, our finding on Whi5 modulation reveals a different scenario \u2013 the Start threshold is in fact raised in poor nutrients and the longer G1 length is a result of a longer integration time of Cln3. Cell cycle is coupled to growth rate by both Cln3 and Whi5. A full understanding of size control may need to take into account the combined action of Cln3 dynamics, Whi5tot concentration and the integration mechanism.\n\n## Materials and methods\n\n### Strains and plasmids\n\nStandard methods were used throughout.\n\nAll strains in this study are congenic W303. W303-1A ADE2+ was made by integrating ADE2 fragment amplified from the 4741 genome at the ADE2 locus of W303-1A. The KAN-MX6, NAT-MX6, and LEU2 fragments flanking with homologous sequence to the target gene (40 bp) for deletion were amplified from the plasmid pFA6-KAN-MX6 (Longtine et al., 1998), pFA6-NAT-MX6 (Goldstein and McCusker, 1999), and pRS305 (Sikorski and Hieter, 1989), respectively. The WHI5-tdTomato constructs were made by digesting pCT2001 with HindIII, integrating at the WHI5 locus and losing the CaURA3 marker between the two TEF1 terminators. The inducible CLN3 constructs were made by digesting pCT2002, pCT2003, pCT2004, or pCT2005 with PmeI and integrating at the HIS3 locus. The ADH1pr-HTB2-CFP construct was made by digesting pCT2006 with XbaI and integrating at the TRP1 locus. The ADH1pr-MCM-mCherry, ADH1pr-MCM-GFP, additional WHI5pr-WHI5-tdTomato and GPDpr-CDC14 constructs were made by digesting pCT2007 with NdeI, pCT2008 with BstBI, pCT2009 with NdeI and pCT2010 with NcoI, respectively and integrating at the URA3 locus. All the constructs and deletion strains were verified by PCR. All the strains used in this study are summarized in Supplementary file 2A.\n\nThe plasmid pCT2001 was constructed as following: first replaced the ADH1ter between AscI and BglII on the plasmid pNI8, a kind gift from Jonathan Weissman (UCSF), with the TEF1ter amplified from the same plasmid; then replaced the mCherry fragment between PacI and AscI with the tdTomato fragment amplified from pRS304-tdTomato; next the 300 bp upstream of the WHI5 stop codon amplified from the W303 genome was inserted between HindIII and PacI sites; finally the 300 bp downstream of the WHI5 stop codon amplified from the W303 genome was inserted by using ClaI, along with an additional HindIII site at the 3\u2032 end. Each inducible Cln3 plasmid contains three transcription units: the lactose transporter, the constantly expressed LacI and the inducible promoter controlled Cln3 signal. The STE5pr (\u2212602 to \u22121 of STE5) amplified from the W303 genome, the LAC12 amplified from pKR1B-LAC4-1 (Sreekrishna and Dickson, 1985), and the CYC1ter amplified from pGREG506 (Jansen et al., 2005) were inserted into pRS304 (Sikorski and Hieter, 1989) with SacI-SpeI-SalI-XhoI to make the transcription unit of the transporter (each fragment was sequentially inserted between two restriction sites). The GPDpr amplified from pRS424-GPD (Mumberg et al., 1995), the LacI gene amplified from the Escherichia coli genome and the CYC1ter were inserted into pGREG506 with NotI-HindIII-EcoRI-SacI to make the transcription unit of LacI. The inducible promoter GlacSpr, which essentially is the ADH1pr (\u2212700 to \u22121 of ADH1) with two LacI binding sites (one on each side of the TATA box), was obtained by overlapping PCR (Figure 1\u2014figure supplement 2). GFP was amplified from pNT10, a kind gift from Jonathan Weissman (UCSF). Venus was amplified from pVenus-N1-NPY (Nagai et al., 2002). A 11-amino-acid linker optimized for yeast (Ala-Ala-Ala-Gly-Asp-Gly-Ala-Gly-Leu-Ile-Asn-) was introduced to the C terminal of the fluorescent proteins by PCR primers. The wild-type CLN3 was amplified from the genome, while mutants were constructed by overlapping PCR. The transcription unit of Cln3 signal GlacSpr-CLN3-CYC1ter was constructed by inserting the corresponding fragments sequentially into pGREG506 with ClaI-BamHI-SalI-XhoI; GlacSpr-GFP-GFP-CLN3R108A-CYC1ter and GlacSpr-GFP-GFP-CLN3D166A -CYC1ter were constructed into pGREG506 with ClaI-BamHI-EcoRI-NotI-SalI-XhoI; GlacSpr-Venus-Venus-Venus-CLN3R108A-CYC1ter was constructed into pGREG506 with ClaI-BamHI-EcoRI-SphI-NotI-SalI-XhoI. Then, the transcription units of LacI and Cln3 were subcloned into pNH603 (a kind gift from Wendell A. Lim lab, designed to make sure single integrant) with SacI-NotII and ClaI-XhoI respectively. Finally, the transcription unit of transporter was amplified by PCR and inserted into the plasmid with SacI site to accomplish the inducible Cln3 plasmids pCT2002-pCT2005. The pCT2006 plasmid was constructed by inserting the ADH1pr amplified from the genome, the HTB2 without stop codon amplified from the genome, the CFP with linker at the N-terminal amplified from BBa_E0020 (iGEM Registry) and the CYC1ter into pRS304 with SacI-NotI-SpeI-SalI-XhoI. The pCT2007 and pCT2008 plasmids were constructed by inserting the ADH1pr, the MCM marker amplified from pML103 (Liku et al., 2005), GFP (for pCT2007), or mCherry (for pCT2008) with linker at the N terminal and the CYC1ter into pRS306 (Sikorski and Hieter, 1989) with SacI-NotI-NotI-SalI-KpnI. The pCT2009 plasmid was constructed by replacing the mCherry fragment between PacI and AscI on pNT8 with tdTomato, inserting the upstream 1430 bp of the WHI5 stop codon (including WHI5pr and WHI5 coding sequence) amplified from the genome into HindIII-PacI and subcloning the HindIII-BglII fragment of the resultant plasmid into pRS306. pCT2010 was constructed by inserting the GPDpr, the CDC14 amplified from the genome and the CYC1ter into pRS306 with SacI-BamHI-SalI-XhoI. All the plasmids were verified by sequencing on both strands and summarized in Supplementary file 2B.\n\n### Media and chemicals\n\nAll the inverse correlations were measured in Synthetic Dextrose (SD) medium containing 2% (wt/vol) glucose, 1\u00d7 amino acid (AA) dropout, 6.7 g/L yeast nitrogen base (YNB) without amino acid, 100 mg/L leucine, 20 mg/L histidine, 20 mg/L tryptophan, 20 mg/L adenine, and 20 mg/L urea, unless otherwise indicated. The formula of 1\u00d7 amino acid dropout is 20 mg/L arginine, 20 mg/L methionine, 30 mg/L tyrosine, 30 mg/L isoleucine, 30 mg/L lysine, 50 mg/L phenylalanine, 100 mg/L glutamic acid, 100 mg/L aspartic acid, 150 mg/L valine, 2 g/L threonine and 4 g/L serine. The limited nitrogen medium contains 2% (wt/vol) glucose, 0.05 mM ammonium sulfate, 6.7 g/L yeast nitrogen base (YNB) without ammonium sulfate and amino acid, 100 mg/L leucine, 20 mg/L histidine, 20 mg/L tryptophan, 20 mg/L adenine, and 20 mg/L urea (Gallego et al., 1997). The limited carbon media have similar ingredients as the SD medium except for various carbon sources or glucose concentrations. All nutrients were purchased from Sigma\u2013Aldrich, St. Louis, MO, except that glucose was purchased from Ameresco, Solon, OH. IPTG (Isopropyl \u03b2-D-1-thiogalactopyranoside) was purchased from Sigma\u2013Aldrich, St. Louis, MO and dissolved to make 0.5 M stocks. conA was purchased from Sigma\u2013Aldrich, St. Louis, MO and dissolved to make 1 mg/mL stocks. 1-NM-PP-1 was purchased from Merck Millipore, Billerica, MA and dissolved in DMSO to make 5 mM stocks.\n\n### Constructing the homologous structure of Cln3-Cdk1 complex and screening for desired Cln3 mutants\n\nWe constructed the homologous structure of Cln3 based on the cyclin A chain (chain B) in 3DDQ (PDB ID). Two other structures, the cyclin D3 chain (chain B) in 3G33 (PDB ID) and the cyclin E1 chain (chain B) in 1W98 (PDB ID), were chosen for reference as well. The amino acid sequences of those proteins were aligned by the 3D-Jury server (http://meta.bioinfo.pl/) (Ginalski et al., 2003), and then the alignment result was used to model the 3D structure of Cln3 in Rosetta CM (comparative modeling, v37268) (Chivian and Baker, 2006). Similar method was used to construct the homologous structure of Cdk1, with the Cdk2 chain (chain A) in 1VYW (PDB ID) as the template. The complex model of Cln3 and Cdk1 was prepared by Rosetta Docking (Wang et al., 2007), taking the complex structure of Cdk2-cyclin A (PDB ID: 1FIN) as the template. The contacts or residues in the complex models were optimized by Rosetta Relax with backbones fixed. The importance of the interface residues was evaluated by using the fixed-backbone alanine scanning protocol in Rosetta (Kortemme and Baker, 2002).\n\nTo screen for the desired Cln3 mutants, we selected 12 single amino acid sites in clustered charged residues (Miller et al., 2005). Three more sites were chosen from the conserved MRAIL hydrophobic patch involved in substrate reorganization (Schulman et al., 1998). Five more mutation sites on the interface of Cln3-Cdk1 complex were suggested by in silico alanine scanning. Finally, we selected 20 single-amino-acid sites in total for alanine scanning experimentally. Mutants were constructed by site-directed mutagenesis PCR. The mutation sites were summarized and labeled on the homologous structure of Cln3 in Figure 1\u2014figure supplement 3.\n\nTo check the brightness and the activity of the Cln3 mutants, the wild-type and mutant Cln3s were fused with two tandem GFPs on the N terminus and expressed by the synthetic inducible promoter GlacSpr. Each construct was integrated at the HIS3 locus of the cln3\u0394 strain YCT2011. The GFP brightness and cell size under full induction was quantified by fluorescent microscopy. Only mutants with significantly higher GFP intensity than wild-type were shown in Figure 1\u2014figure supplement 4. We further deleted BCK2 in those strains and investigate their cell division without IPTG under microscopy. The shut-off of cell cycle was considered tight if less than 5% cells budded in 6 hr.\n\n### Microfluidic device\n\nSimilar molds and methods as described previously (Tian et al., 2012) were used to fabricate the microfluidic chips. Medium was fed through the main channel by auto-controlled syringe pump (TS-1B, Longer Pump Corp., Baoding, China). The flow rate was 66.6 \u03bcL/hr. In the nutrient switching experiments, both the tubing and the syringe providing the medium were changed within 3 min, to make sure the transition is as fast as possible.\n\n### Time lapse microscopy\n\nExcept for the measurement of Whi5 dephosphorylation rate, cells were grown in the microfluidic chip to maintain the constant IPTG concentration and nutrient condition. Temperature of the microfluidic chip was kept at 30\u00b0C with a stage top incubator (INU-TIZHB-F1, Tokai Hit Co., Ltd., Fujinomiya-shi, Japan).Time lapse movies were collected with epi-fluorescence microscopy using a Nikon Ti-E inverted microscope equipped with the objective lens Plan Apo VC 100\u00d7/1.40 Oil DIC N2, the motorized XY stage and the Perfect-Focus System (Nikon Co., Tokyo, Japan). Images were acquired every 3 min with an Andor iXon3 897 EMCCD (512 \u00d7 512, 16 \u03bcm, Andor Technology Ltd., Belfast, UK) and Lambda SC shutter controllers (Sutter Instrument, Novato, CA). NIS Elements AR v3.2 (Nikon Co., Tokyo, Japan) was used to automate image acquisition and microscope control. There is no significant photo-toxicity or perturbations of cell cycle time caused by the detection of either GFP-GFP-Cln3 or Whi5-tdTomato or both. There is no significant photo-bleaching in the GFP or tdTomato channel (data not shown). The brightness of the mercury lamp on different days was normalized by fluorescent reference slides (Fluor-REF, Microscopy Education, Microscopy & Imaging Place Inc., McKinney, TX).\n\nTo measure Whi5 dephosphorylation rate, cells were immobilized on glass bottomed dish by conA. Temperature was kept by ZILCS incubation chamber (Tokai Hit Co., Ltd., Fujinomiya-shi, Japan). Cells were monitored for 30 min and then another 2 hr after adding 50 \u03bcM 1-NM-PP-1 to the medium. Time lapse movie was collected with a UltraVIEW VoX Laser Confocal Imaging System (PerkinElmer, Watham, MA) and a CSU-X1 spinning disk confocal (Yokogawa,Tokyo, Japan) on a Nikon Ti-E inverted microscope equipped with the APO TIRF 100X OIL NA 1.45 objective lens, the motorized XY stage and the Perfect-Focus System (Nikon Co., Tokyo, Japan). Whi5-tdTomato fluorescence was excited with the 561 nm 50 mW laser line and collected by the appropriate filters. Images were acquired every 3 min by a Hamamatsu C9100-13 EMCCD (Hamamasu Photonics K. K., Hamamatsu City, Japan) camera. At each time point, 5 Z-series optical sections were collected with a step size of 1.6 \u03bcm, using a NanoScanZ 400 \u03bcm Piezo focusing drive (Prior Scientific, Cambrige, UK). Maximum projections of Z stacks were performed with ImageJ.\n\n### Image and data analysis\n\nCell segmentation and tracing were based on bright field images and automatically accomplished by the MATLAB custom software cellseg as described previously (Lau, 2009; Yang et al., 2013). Daughters were counted in once the bud can be recognized by the software (usually in early or middle mitosis). We quantified the mean intensity of the brightest 5 \u00d7 5 Whi5-tdTomato pixels in one cell as nuclear Whi5 concentration. G1 length was defined as the time interval between the local maximum and minimum of its first derivative within certain time frame (as shown in Figure 1\u2014figure supplement 1). In strains bearing the MCM marker, G1 length was defined similarly except for using the MCM marker. The MCM marker is an artificial marker generally reporting CDK activity. It enters the nucleus 2 min prior to and exports 5 min later than Whi5 (data not shown). Whi5tot intensity was taken as the maximum of nuclear Whi5 intensity during one G1 phase. Since Cln3 localizes in the nucleus, similar to Whi5, we quantified the mean intensity of the brightest 9 \u00d7 9 GFP-GFP-Cln3* pixels in one cell as Cln3 concentration, which had been verified to be a good proxy (data not shown). The brightest 3 \u00d7 3 pixels were deducted from the brightest 9 \u00d7 9 pixels to eliminate the artifact of aggregates. Cell size was taken as cell area in two dimensional. Cells were assumed grow exponentially in G1. Growth rate fitted by more than six data points and with standard error smaller than 0.02 were used in the final statistics. Export of the fluorescent intensities and cell area was automatically accomplished by cellseg with minor revision. Following analysis was accomplished by the MATLAB custom software analyzestart, which was developed before (Lau, 2009; Yang et al., 2013) and modified for the purpose of this study. The integral A in Figures 3C, 4B, Figure 4\u2014figure supplement 1D,G,I, 2, 3B was calculated as Cln3 intensity multiplied by G1 length. Whi5 dephosphorylation rate was fitted by the equation $Whi5(t)=A\u2212B\u22c5exp(\u2212t/\\tau)$, where 1/\u03c4 is the Whi5 dephosphorylation rate and \u03c4 is the memory length; A denotes Whi5tot concentration; B denotes Whi5tot \u2212 Whi5 (t = 0) (Supplementary file 1A).\n\n### Fitting the slope of Cln3-TG1 correlations in log\u2013log scale\n\nCln3-TG1 correlations in log\u2013log scale were fitted by the following criteria:T0 was set as 5 min for strains with the Whi5 marker (Di Talia et al., 2007) or 12 min for strains with the MCM marker.Except for whi5\u0394 and BCK2+ strains, Cln3c was fitted in the range of min_Cln3-200 to min_Cln3. For each strain, min_Cln3 is the lowest average Cln3 intensity we observed that can pass Start.In whi5\u0394 strain, Cln3c was set as 0.In cln3\u0394 BCK2+ strain, Cln3c was set as the same value as cln3\u0394 bck2\u0394 strain.Data points in log\u2013log scale were binned according to their Cln3 intensity.Only bins with more than 10 data points were used in fitting.Median of Cln3 intensity and G1 length within each bin was used in fitting to avoid the effect of outliers.\n\nFor cln3\u0394 bck2\u0394 strain in 2% glucose, we adopted the least square fit. For other strains or growth conditions, we adopted the fit whose slope is closest to \u22121. For cln3\u0394 BCK2+ strain, there was no good linear fit for the whole Cln3 intensity region, thus we only fitted the high Cln3 part.\n\n### Stochastic simulation of the Cln3 profile and simple models of the Start triggering process\n\nStochastic simulation of the Cln3 profile was done using Stochastic Simulation Algorithm (SSA) converted from the Ordinary Differential Equations (Gillespie, 1976):\n\n$$\n\\frac{d[mRNA_{cln3}]}{dt}=a_{1}\u2212D_{1}\u22c5[mRNA_{cln3}]\n$$\n\n\n\n$$\n\\frac{d[Protein_{Cln3}]}{dt}=a_{2}\u22c5exp(\\alpha\u22c5t)\u22c5[mRNA_{cln3}]\u2212D_{2}\u22c5[Protein_{Cln3}]\n$$\n\n\n\n$$\nInitial\u2009state:[mRNA_{cln3}]=Int(\\frac{a_{1}}{D_{1}}\u22c5r),\u2009[Protein_{Cln3}]=Int(\\frac{a_{1}\u22c5a_{2}}{D_{1}\u22c5D_{2}}\u22c5r)\n$$\n\n\n\n$$\nInt(x)={n|n\\in\u2124,|x\u2212n|\\leq0.5\n$$\n\nThe meaning, value and reference of the parameters to generate Figure 2 are summarized in Figure 2\u2014source data 1.\n\nWe adopted flowing assumptions in generating Cln3 profile:Constant transcription rate of CLN3 gene.Constant degradation rate of Cln3 mRNA and protein.Exponential growth of cell volume.Ribosome number (reflected by translation rate) is proportional to cell volume.Cln3 transcription gets suppressed at early G1 (r ratio of full capacity) to mimic the Ace2 suppression in daughter cells.Nuclear volume is constant thus Cln3 abundance directly reflects Cln3 nuclear concentration. In the model, we simply simulated Cln3 mRNA and protein numbers instead of concentrations.\n\nIn Instantaneous Model, G1 starts from zero time point with Cln3's initial state. TG1 is the time when $Protein_{Cln3}$ first exceeds Instantaneous_threshold. In Integration Model G1 starts from zero time point with Cln3 initial state. TG1 is the time when the integration of Cln3 ($\\int^{\u200b}Protein_{Cln3}dt$) surpasses Integration_ threshold. Instantaneous_threshold was chosen as 150, while Integration_threshold was chosen as 1900 to generate average 19 min TG1.\n\nExtrinsic noise was simulated by randomizing the model parameters around their nominal values within a certain percentage range. Extrinsic noise of 20% CV was applied to all parameters (D1, a1, D2, a2, \u03b1, r, Instantaneous_threshold and Integration_threshold) within this model.\n\nFor the robustness of our conclusion, we checked our model with different parameter sets of {D1, a1, D2, a2, \u03b1} varying in all possible ranges and found that the Integration Model does generate a TG1 distribution with much closer resemblance to experimental result than the Instantaneous Model under all circumstances.\n\nWe also considered the case that nuclear volume increases with cell volume in Figure 2\u2014figure supplement 1. In the simulation, nuclear volume was assumed to be proportional to cell volume and the initial nuclear volume was set as 2.9 fL (Jorgensen et al., 2007). Cln3 concentration equals to Cln3 protein number divided by nuclear volume. Instantaneous_threshold was set as 1.86 nM, and Integration_threshold was set as 10.6 nM*min. Other equations and parameters used in the simulation were kept the same as Figure 2.\n\n### ODE model of the Start network\n\nAn explicit model of the whole Start network was constructed. Simulation results in, Figure 3\u2014figure supplement 1A\u2013E were produced by this model. Multiple phosphorylation of Whi5 was taken into account as well as the positive feedback loop. The equations and parameters are listed in Supplementary file 1B.\n",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "13b700a3-2e00-4d1b-93b7-86faf1f1a549",
+      "submission_id": "253cc44b-4aab-478d-9616-f643eb5098fc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James Ferrell, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03977.031](https://doi.org/10.7554/eLife.03977.031)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cReliable cell cycle commitment in budding yeast is ensured by signal integration\u201d for consideration at eLife. Your article has been favorably evaluated by Richard Losick (Senior editor) and a member of the Board of Reviewing Editors (James Ferrell), and has been reviewed in depth by three peer reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript \u201cReliable cell cycle commitment in budding yeast is ensured by signal integration\u201d by Liu et al. addresses the important problem of how yeast cells make the decision to commit to a new round of cell division at the Start transition. The authors reach the interesting conclusion that cells integrate Cln3 activity over time to make a reliable decision. This is in principle an important finding and the integration model could be very general.\n\nWe have two main criticisms that need to be addressed prior to publication. There are a number of minor criticisms as well, which would improve the rigor and understandability of the paper.\n\nMajor concerns:\n\n1) One major concern is that the integration model is not compared to alternative models. I would suggest that the authors use statistical methods to prove that the integration model provides a significantly better fit of the experimental data than alternative models (for example instantaneous Cln3 concentration or instantaneous total Cln3 in the whole cell). Notice that equation number 4 in the Supplementary file 1 actually suggests that the total amount of Cln3 in a cell should be a good estimator of when cells divide. The authors need to provide stronger arguments to distinguish among models. This should be readily doable, as they have already acquired the necessary data.\n\n2) An important assumption of the integrator model is that Whi5 has a 'memory', namely that its activity depends not only on the instantaneous Cln3 but also on previous events. This means that its dephosphorylation rate is slow. In the supplementary materials, the authors cite published work from Charvin et al. (2010) that they say indicates that the half-time for Cln3 dephosphorylation is longer than 30 min. However this is not exactly what Charvin et al. said or what Charvin et al.'s data show.\n\nWhat Charvin et al. showed (their Figure 4E) is that following a 15 min pulse of CLN2 expression in the presence of Clb-inhibitory levels of Sic1-4A expression, Whi5 exits the nucleus and then begins to reenter it. Re-entry begins very soon after the inducer of CLN2 expression is washed away and is half-maximal by 35 min. Some of this time interval-Charvin et al. guess about 5-10 min-is probably due to the kinetics of CLN2 degradation. Presumably the remaining \u223c25-30 min is partly attributable to the kinetics of Whi5 dephosphorylation, and partly to the kinetics of Whi5 nuclear transport. So based on these experiments, one might conclude that Whi5 dephosphorylation could have a half-time of up to 30 min, not that it has a half-time of longer than 30 min.\n\nThere are two ways the authors could deal with this issue. They could directly measure for themselves how fast Whi5 returns to the nucleus after inhibition of CDK1. One way would be to use an analog-sensitive CDK1 mutant, which would obviate the need to guess how long CLN2 remains above the level required for Whi5 phosphorylation after the induction of CLN2 is terminated. While this might be the ideal solution, we appreciate that there is already a lot of data in the paper, and we would be satisfied if the authors would just accurately state Charvin et al.'s findings in the main text and acknowledge that slow Whi5 dephosphorylation kinetics remains a key incompletely-tested assumption of the authors' model.\n",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f0e2bf84-f2a4-4849-8937-6d17514de4df",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C1",
+      "claim": "In budding yeast, the decision of cell cycle commitment (Start) is determined by the time integration of its triggering signal Cln3.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that in budding yeast, the decision of cell cycle commitment (Start) is determined by the time integration of its triggering signal Cln3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract, supported by experimental data throughout the manuscript showing the inverse proportional relationship between G1 length and Cln3 concentration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "6c329b4d-d6d2-4f1b-bc8c-e26f70527c79",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C2",
+      "claim": "Whi5 is the integrator of Cln3-Cdk1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We further identify the Start repressor, Whi5, as the integrator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by mathematical modeling and experimental perturbations showing Whi5 accumulates phosphorylation over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "cba122b3-92c1-4998-a039-15d2fca84e28",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C3",
+      "claim": "The instantaneous kinase activity of Cln3-Cdk1 is recorded over time on the phosphorylated Whi5.",
+      "claim_type": "EXPLICIT",
+      "source": "The instantaneous kinase activity of Cln3-Cdk1 is recorded over time on the phosphorylated Whi5, and the decision is made only when phosphorylated Whi5 reaches a threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mathematical model and experimental data showing Whi5 phosphorylation accumulates with Cln3-Cdk1 activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "f8546779-fd08-40c7-8226-4d2a9b544990",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C4",
+      "claim": "Cells adjust the threshold by modulating Whi5 concentration in different nutrient conditions to coordinate growth and division.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells adjust the threshold by modulating Whi5 concentration in different nutrient conditions to coordinate growth and division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing Whi5 concentration increases in poor nutrient conditions (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "071698e3-6c42-466d-b4f0-591627e08fb8",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C5",
+      "claim": "Signal integration strategy reduces noise and minimizes uncertainty in decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that the strategy of signal integration, which was previously found in decision-making behaviors of animals, is adopted at the cellular level to reduce noise and minimize uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by stochastic simulations showing the Integration Model produces lower variability in G1 length compared to the Instantaneous Model (Figure 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "7e23ef0d-e224-420a-b71f-7de4c20fb593",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C6",
+      "claim": "Start is a major cell cycle checkpoint in budding yeast corresponding to the restriction point in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Start is a major cell cycle checkpoint in budding yeast (corresponding to the restriction point in mammalian cells), which decides whether or not the cell should make the irreversible commitment to the next round of division (Hartwell et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Hartwell et al., 1974.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "18480976-bc7c-458d-8dd3-6b698470299a",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C7",
+      "claim": "Cln3 triggers the Start transition by activating a downstream positive feedback loop composed of the repressor Whi5, the transcription factor SBF/MBF and the cyclin Cln1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "As a G1 cyclin, Cln3 triggers the Start transition by activating a downstream positive feedback loop composed of the repressor Whi5, the transcription factor SBF/MBF and the cyclin Cln1/2 (Skotheim et al., 2008; Charvin et al., 2010) (Figure 1A upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge from previous studies (Skotheim et al., 2008; Charvin et al., 2010) and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "1c9fe344-7764-480b-b071-5e2939591270",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C8",
+      "claim": "CLN3 mRNA has a half-life of a few minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both the CLN3 mRNA and the Cln3 protein turn over very fast (with a few minutes half-lives [Cross and Blake, 1993; Tyers et al., 1992; Yaglom et al., 1995])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous studies (Cross and Blake, 1993; Tyers et al., 1992; Yaglom et al., 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "2b49210c-c89d-437b-98d0-197a100e7b36",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C9",
+      "claim": "Cln3 protein has a half-life of a few minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both the CLN3 mRNA and the Cln3 protein turn over very fast (with a few minutes half-lives [Cross and Blake, 1993; Tyers et al., 1992; Yaglom et al., 1995])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous studies (Cross and Blake, 1993; Tyers et al., 1992; Yaglom et al., 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "4921a3de-4767-4e30-8f70-6f24e804c92e",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C10",
+      "claim": "Cln3 abundance is very low with a few copies of mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "at very low abundance (a few copies of the mRNA [McInerny et al., 1997; Arava et al., 2003] and 100\u2013200 copies of the protein [Tyers et al., 1993])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous studies (McInerny et al., 1997; Arava et al., 2003; Tyers et al., 1993).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "477281f9-6aa9-4fbc-8c88-f194666e0b8e",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C11",
+      "claim": "Cln3 protein abundance is 100-200 copies per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "at very low abundance (a few copies of the mRNA [McInerny et al., 1997; Arava et al., 2003] and 100\u2013200 copies of the protein [Tyers et al., 1993])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Tyers et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "647ef589-8ce6-4b09-835b-fb20226e0cee",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C12",
+      "claim": "G1 length is prolonged as IPTG concentration decreases in both mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in both mother and daughter cells G1 length is prolonged as IPTG concentration decreases, which is consistent with the previous findings that increased Cln3 dosage shortens G1 length (Di Talia et al., 2007) and suggests a negative correlation between G1 length and Cln3 level (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "159c7b77-b1bf-4c89-bab1-1320b37845fa",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C13",
+      "claim": "Increased Cln3 dosage shortens G1 length.",
+      "claim_type": "EXPLICIT",
+      "source": "which is consistent with the previous findings that increased Cln3 dosage shortens G1 length (Di Talia et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Di Talia et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "44f3488c-ddff-430a-80f8-c042731e0dbe",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C14",
+      "claim": "Under full induction, the nuclear concentration of GFP-GFP-Cln3* is positively correlated with birth size.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that under full induction, the nuclear concentration of GFP-GFP-Cln3* is positively correlated and G1 length is negatively correlated with birth size (Figure 1\u2014figure supplement 5), which implies that size control is maintained with the mutant Cln3 (Di Talia et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "5423a3d1-a544-410f-a9e8-de7934cdf521",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C15",
+      "claim": "Under full induction, G1 length is negatively correlated with birth size.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that under full induction, the nuclear concentration of GFP-GFP-Cln3* is positively correlated and G1 length is negatively correlated with birth size (Figure 1\u2014figure supplement 5), which implies that size control is maintained with the mutant Cln3 (Di Talia et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "5b9ad14e-ea54-46d8-af96-c24fbe8a6caa",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C16",
+      "claim": "G1 length is inversely proportional to the average Cln3 concentration in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus G1 length is inversely proportional to the average Cln3 concentration in G1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the linear fit in Figure 1J with slope very close to -1 (R2 = 0.91).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "9b739e2f-707f-4a12-aae8-27f97d2bcf3f",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C17",
+      "claim": "The slope of the linear fit of log(TG1 \u2212 T0) against log(<Cln3> \u2212 Cln3c) is very close to \u22121 with R2 = 0.91.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope of the linear fit is very close to \u22121 (R2 = 0.91) (Figure 1J and Figure 1\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the result of data analysis shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "8fd0bcad-bdce-4391-9894-f79bd54ec7bf",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C18",
+      "claim": "The Integration Model leads to much smaller variability in G1 length compared to the Instantaneous Model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, since the G1 length in the Integration Model depends on the integration of Cln3 level within a time window, a considerable amount of noise is averaged out. As a result, the variability in G1 length is much smaller (Figure 2A\u2013C) and is consistent with the experimental data (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by stochastic simulation results in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "560c956a-9b0e-4f01-b082-cd9eb0a23f13",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C19",
+      "claim": "The Instantaneous Model leads to a G1 length distribution with a long tail.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Instantaneous Model leads to a G1 length distribution with a long tail; this means that a significant fraction of the cells would have prolonged G1 lengths, which could be disadvantageous for the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "2ae7cd3e-d892-41cb-8435-e44296a6b1f2",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C20",
+      "claim": "In near 80% of cells, the timing of Cln3 peak is different from the timing of Start.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that in near 80% cells, the timing of Cln3 peak is different from the timing of Start (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "19aab843-31f2-4d29-a8fa-76931deb3f44",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C21",
+      "claim": "It is very unlikely that Start is triggered by the instantaneous Cln3 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is very unlikely that Start is triggered by the instantaneous Cln3 concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that in 80% of cells, the timing of Cln3 peak differs from the timing of Start.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "319797ab-f9ce-4283-af82-d6bd5d9bd432",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C22",
+      "claim": "The average half time of Whi5 nuclear entry is 13.7 min in mother cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The average half time of Whi5 nuclear entry, which is an estimate of the memory length in the mathematical model (Supplementary file 1A), is 13.7 min in mother cells and 10.6 min in daughter cells, respectively (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "51400d02-1077-4009-8c73-bffaa83ebba9",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C23",
+      "claim": "The average half time of Whi5 nuclear entry is 10.6 min in daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The average half time of Whi5 nuclear entry, which is an estimate of the memory length in the mathematical model (Supplementary file 1A), is 13.7 min in mother cells and 10.6 min in daughter cells, respectively (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "25c022a6-cbe9-4f31-a917-b1966ce9d4e8",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C24",
+      "claim": "The memory length is comparable to the average G1 length from cytokinesis to Start in daughter cells in SD medium, which is 13.6 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this memory length is comparable to the average G1 length (from cytokinesis to Start) in daughter cells in SD medium, which is 13.6 min in our experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "5f9e8f7c-c71c-4773-961b-9c1f468e1563",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C25",
+      "claim": "In whi5\u0394 strain, most cells pass Start with minimal G1 length.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our experiment shows that in whi5\u0394 strain, most cells pass Start with minimal G1 length (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "fa6cf94b-6881-47b5-ae18-d1c27b58478e",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C26",
+      "claim": "Whi5 overexpression significantly increased the percentage of cells in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The prediction is consistent with the previous finding that Whi5 overexpression significantly increased the percentage of the cells in G1 phase (Costanzo et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Costanzo et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "7cb6ccca-3ccf-4c71-a53b-396950dd76f8",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C27",
+      "claim": "There is a positive correlation between the integration threshold A and Whi5 concentration at the single-cell level with Pearson correlation coefficient = 0.53.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the positive correlation between A and Whi5 concentration can also be seen at the single-cell level (Pearson correlation coefficient = 0.53, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "261543be-286c-4818-9f1d-3890ddc89665",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C28",
+      "claim": "Overexpressing CDC14 affects the nuclear accumulation of Whi5 and increases the percentage of cells in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that overexpressing the phosphatase CDC14 affects the nuclear accumulation of Whi5 and increases the percentage of the cells in G1 phase (Visintin et al., 1998; Stevenson et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Visintin et al., 1998 and Stevenson et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "81359eb2-9cf0-40c9-b8c6-13c4ca28d5bf",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C29",
+      "claim": "The expression level of Cln2 is about three times higher than Cln1.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the fact that the expression level of Cln2 is about three times higher than Cln1 and with the previous finding that Cln2 is more potent in the Start transition (Huh et al., 2003; Tyers and Futcher, 1993; Tyers et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Huh et al., 2003; Tyers and Futcher, 1993; Tyers et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "d6c0719d-1d0f-4032-876f-c316ef55b652",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C30",
+      "claim": "Cln2 is more potent than Cln1 in the Start transition.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the fact that the expression level of Cln2 is about three times higher than Cln1 and with the previous finding that Cln2 is more potent in the Start transition (Huh et al., 2003; Tyers and Futcher, 1993; Tyers et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Huh et al., 2003; Tyers and Futcher, 1993; Tyers et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "9968b666-80b5-4cbc-82bd-cddfb744af3d",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C31",
+      "claim": "In wild-type cells, Bck2 acts as a bypass Start trigger to prevent a too long G1 phase when Cln3 concentration is too low.",
+      "claim_type": "EXPLICIT",
+      "source": "The result suggests that in wild-type cells, Bck2 acts as a bypass Start trigger to prevent a too long G1 phase when Cln3 concentration is too low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that in BCK2+ strain, G1 length stops increasing at low Cln3 concentration (Figure 3\u2014figure supplement 1F).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "1d5c3522-fabe-4530-aeb4-8a23c8ad5ed2",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C32",
+      "claim": "In suboptimal nutrient conditions, the Cln3-TG1 correlations shift towards right with higher Whi5tot intensity and A.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that in suboptimal nutrient conditions, the Cln3-TG1 correlations shift towards right with higher Whi5tot intensity and A (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "6982272c-d8e5-4db6-af04-516853982e91",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C33",
+      "claim": "Whi5tot increases as growth rate decreases in both mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Whi5tot increases as growth rate decreases and G1 length is accordingly prolonged in both mother and daughter cells (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "0f8059b4-6c3e-4417-816b-b3baa96cff7c",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C34",
+      "claim": "In poor nutrient conditions, the Start threshold is higher rather than lower.",
+      "claim_type": "EXPLICIT",
+      "source": "It means that in poor nutrient conditions, the Start threshold is actually higher rather than lower as proposed by previous studies (Jorgensen and Tyers, 2004; Schneider et al., 2004; Turner et al., 2012), although the cell size may appear to be smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Whi5tot increases in poor nutrient conditions, which increases the integration threshold A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "63a8a328-b579-45fe-b3ac-1378aaa228f2",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C35",
+      "claim": "When cells were switched from low glucose to high glucose medium, both Whi5tot intensity and G1 length decreased gradually and reached the same level as in constant high glucose medium after several cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "When the cells were switched from low glucose to high glucose medium, both Whi5tot intensity and G1 length decreased gradually and reached the same level as in constant high glucose medium after several cell cycles (Figure 4\u2014figure supplement 6A\u2013C,F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "ccdc41de-4903-4727-8e86-e6718e8c7948",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C36",
+      "claim": "When cells were switched from high glucose to low glucose medium, Whi5tot increased fast and underwent an overshoot before it reached a steady level.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrarily, when cells were switched from high glucose to low glucose medium, Whi5tot increased fast and underwent an overshoot before it reached a steady level (Figure 4\u2014figure supplement 6D,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4\u2014figure supplement 6D,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "bf3c1913-1424-4877-a4c9-76e56fa338b6",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C37",
+      "claim": "G1 length increased even faster than Whi5tot and its overshoot was more pronounced when cells were switched from high to low glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "G1 length increased even faster and its overshoot was also more pronounced than Whi5 (Figure 4\u2014figure supplement 6D,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4\u2014figure supplement 6D,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "1202c50d-c12b-499f-be20-1b3865656228",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C38",
+      "claim": "When switched from high to low glucose, if the cell had not started budding, G1 phase could reinitiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found when switched from high to low glucose, if the cell had not started budding, G1 phase could reinitiate (Figure 4\u2014figure supplement 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental observation shown in Figure 4\u2014figure supplement 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "d60349dc-0c01-4bdd-ac79-5dbe2f69baa2",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C39",
+      "claim": "Signal integration has been seen in decision-making behaviors of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Signal integration has been seen in decision-making behaviors of animals (Bowman et al., 2012; Bogacz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bowman et al., 2012 and Bogacz et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "b2b5bb63-f6b6-4139-bb29-7ea63209e19d",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C40",
+      "claim": "Daughter cells always have higher Whi5tot intensity than mother cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that daughter cells always have higher Whi5tot intensity and steeper slope between Whi5tot and G1 length than mother cells (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "d869fd77-c0aa-45e2-981b-67ffb23de12b",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C41",
+      "claim": "Daughter cells have steeper slope between Whi5tot and G1 length than mother cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that daughter cells always have higher Whi5tot intensity and steeper slope between Whi5tot and G1 length than mother cells (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "48109bdd-10ba-4293-bcb0-91455e3bc656",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C42",
+      "claim": "Whi5 is required for the different behaviors of mother and daughter cells under low metal stress.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also consistent with the previous finding that Whi5 is required for the different behaviors of mother and daughter cells under low metal stress (Avraham et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Avraham et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "596942da-f0ce-4292-a05e-88e59887029e",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C43",
+      "claim": "Cln3 responds to external and internal cues rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Cln3 and Whi5 determine G1 length together, they have very different response time. While Cln3 responds to external and internal cues rapidly, Whi5 adjusts in a much longer time scale and reinforces the change of G1 length (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data showing different adaptation kinetics in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "953826ec-e7f5-445e-a629-9c997094a2d2",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C44",
+      "claim": "Whi5 adjusts in a much longer time scale than Cln3 and reinforces the change of G1 length.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Cln3 and Whi5 determine G1 length together, they have very different response time. While Cln3 responds to external and internal cues rapidly, Whi5 adjusts in a much longer time scale and reinforces the change of G1 length (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data showing different adaptation kinetics in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "303f2fce-1419-448d-8554-e81865ab3603",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C45",
+      "claim": "The Start checkpoint coordinates cell growth and cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "The Start checkpoint coordinates cell growth and cell division and is thought to control the cell size under different growth conditions (Johnston et al., 1977; Jorgensen and Tyers, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Johnston et al., 1977 and Jorgensen and Tyers, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "f6022ec2-ed3c-4bee-aad4-6b54e371b915",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C46",
+      "claim": "Cln3 concentration in the nucleus increases with cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "It was proposed that Cln3 concentration in the nucleus (or total Cln3 abundance) increases with cell size and the Start transition is triggered when Cln3 level reaches a critical threshold (Chen et al., 2004; Jorgensen and Tyers, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed in previous studies (Chen et al., 2004; Jorgensen and Tyers, 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "8d5c4544-3d0b-4473-ae34-e252ca11bfae",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C47",
+      "claim": "Cln3 responds to size through the upstream open reading frame (uORF) of its mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It was proposed that Cln3 responds to size through the upstream open reading frame (uORF) of its mRNA (Polymenis and Schmidt, 1997) and/or ER-associated proteins Whi3 and Ydj1 (Wang et al., 2004; Verg\u00e9s et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism cited from Polymenis and Schmidt, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "95f0a714-1e52-485c-80e0-ef6a200090f9",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C48",
+      "claim": "Cln3 responds to size through ER-associated proteins Whi3 and Ydj1.",
+      "claim_type": "EXPLICIT",
+      "source": "It was proposed that Cln3 responds to size through the upstream open reading frame (uORF) of its mRNA (Polymenis and Schmidt, 1997) and/or ER-associated proteins Whi3 and Ydj1 (Wang et al., 2004; Verg\u00e9s et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism cited from Wang et al., 2004 and Verg\u00e9s et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "4aad986f-9483-483b-b2b4-c0e62b871437",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C49",
+      "claim": "Cdc14 is the major phosphatase responsible for Whi5 dephosphorylation in early G1.",
+      "claim_type": "EXPLICIT",
+      "source": "By our definition, G1 starts from Whi5 nuclear entry, when Cdc14 is the major phosphatase that is responsible for Whi5 dephosphorylation (Taberner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Taberner et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "144bc220-6a81-4942-8e67-195b5099abce",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C50",
+      "claim": "Cln3 cannot initiate the export of nuclear Whi5 until Cdc14 is inactivated at cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cln3 cannot initiate the export of nuclear Whi5 until Cdc14 is inactivated at cytokinesis (Shou et al., 1999; Visintin et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Shou et al., 1999 and Visintin et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "0564086a-f8b9-49ab-accf-26caa1ff959f",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C51",
+      "claim": "The environmental and internal conditions are sensed and passed to the Start signal Cln3.",
+      "claim_type": "EXPLICIT",
+      "source": "The environmental and internal conditions are sensed and passed to the Start signal Cln3 (Gallego et al., 1997; Polymenis and Schmidt, 1997; Hall et al., 1998; Parviz et al., 1998; Menoyo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple studies (Gallego et al., 1997; Polymenis and Schmidt, 1997; Hall et al., 1998; Parviz et al., 1998; Menoyo et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "ded146e3-08a1-4fd9-b7fc-998d293c1aa8",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C52",
+      "claim": "G1 length is defined as the time interval during which Whi5 resides in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "G1 length is defined as the time interval during which Whi5 resides in the nucleus (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the operational definition used in this study, illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "11099825-d6b0-47de-a115-e783e11e756d",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C53",
+      "claim": "The fully induced Cln3 mutants do not change cell cycle behaviors such as the doubling time and cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the fully induced mutants do not change cell cycle behaviors such as the doubling time and cell size, we consider them faithful replacements of wild-type CLN3 under our experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation used to validate the mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "f4417613-e308-48eb-916d-ab1b7023dfe5",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C54",
+      "claim": "The MCM marker enters the nucleus 2 min prior to Whi5 and exports 5 min later than Whi5.",
+      "claim_type": "EXPLICIT",
+      "source": "The MCM marker is an artificial marker generally reporting CDK activity. It enters the nucleus 2 min prior to and exports 5 min later than Whi5 (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "5a196b05-ffc7-4ced-ae78-e6b06cf87749",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C55",
+      "claim": "The coefficient of variation (CV) of G1 length in wild-type cells is no more than 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "which is significantly larger than experimental observations for WT cells in previous and this studies (Di Talia et al., 2007; Skotheim et al., 2008; Charvin et al., 2008; Ferrezuelo et al., 2012) (CVs are no more than 50%, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with experimental data from multiple studies including this one.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "105f8128-abda-4cf5-a19e-d0a2f851fdb0",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C56",
+      "claim": "Bck2 triggers the Start transition in the absence of Cln3.",
+      "claim_type": "EXPLICIT",
+      "source": "We also investigated how the correlation between Cln3 and G1 length is affected by Bck2, which triggers the Start transition in the absence of Cln3 (Wijnen, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Wijnen, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "61d784e2-af83-4cf2-a521-741838a9a7f4",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C57",
+      "claim": "There is a linear relation between the integration threshold A and the total Whi5 concentration Whi5tot.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is that there is a linear relation between the integration threshold A and the total Whi5 concentration Whi5tot (a more detailed ODE model predicts that Cln3c will also change with Whi5tot [Supplementary file 1A]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "4f1edd77-cb6b-4c09-b5e7-63d6d2635fa7",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C58",
+      "claim": "Increasing the phosphatase activity k2 reduces memory length and increases Cln3c.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is that increasing the phosphatase activity k2 reduces memory length and increases Cln3c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "0100ae1e-3f1c-43c6-8025-2cb8eecb9514",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C59",
+      "claim": "Reducing Whi5c by weakening the positive feedback loop increases the integration threshold A.",
+      "claim_type": "EXPLICIT",
+      "source": "The third is that reducing Whi5c by weakening the positive feedback loop increases the integration threshold A (the ODE model predicts that Cln3c will also change when perturbing the loop strength [Supplementary file 1A]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "5f107cb0-b751-4a7a-82b9-2cdff07ebab9",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C60",
+      "claim": "Cln3 half-life by itself has no effect on the integration dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that Cln3 half-life by itself has no effect on the integration dynamics",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "2f156397-a640-4bb3-be7d-08bc815b34ac",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C61",
+      "claim": "Reducing the Cln3-Cdk1 catalytic efficiency k1 increases Cln3c and A proportionally.",
+      "claim_type": "EXPLICIT",
+      "source": "and that reducing the Cln3-Cdk1 catalytic efficiency k1 (as in Cln3*) increases Cln3c and A proportionally, requiring an increased Cln3 concentration to pass Start.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "aab34d43-7047-4637-bee4-df9be0e61ac7",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C62",
+      "claim": "The inverse proportionality between G1 length and Cln3 concentration is severely compromised in whi5\u0394 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "We further checked to what extent the inverse correlation holds by plotting G1 length and Cln3 intensity in log\u2013log scale (Figure 3A). The slope of the linear fit is much larger than \u22121, suggesting that the inverse proportionality is severely compromised.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "7470d25e-a53b-4e70-a07c-ad7f06c4db4d",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C63",
+      "claim": "The inverse correlation in cln2\u0394 shifts more than in cln1\u0394, suggesting that Cln2 contributes more to the positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation in cln2\u0394 shifts more than in cln1\u0394, suggesting that Cln2 contributes more to the positive feedback loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the experimental data in Figure 3E and 3F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "ef43e495-56e9-49b2-9a3c-281e046b1617",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C64",
+      "claim": "The Start network is composed of two modules: Cln3-Cdk1 phosphorylating Whi5 as the triggering module and the positive feedback loop as the switching module.",
+      "claim_type": "EXPLICIT",
+      "source": "The Start network is composed of two modules: Cln3-Cdk1 phosphorylating Whi5 as the triggering module and the positive feedback loop as the switching module (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conceptual framework presented in the study and illustrated in Figure 1A.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "2c08b3a0-df7c-4407-bee9-914b26a83c83",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C65",
+      "claim": "The two modules are coupled via Whi5.",
+      "claim_type": "EXPLICIT",
+      "source": "The two modules are coupled via Whi5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the conceptual framework of the Start network.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "c937433a-0ff4-4dbe-8e90-0f7885ebc9e6",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C66",
+      "claim": "The triggering module initiates Start by reducing Whi5 concentration in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The triggering module initiates Start by reducing Whi5 concentration in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic understanding of the Start network.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "dc94d0fb-aafa-444d-8dca-82a4f53cc691",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C67",
+      "claim": "The switching module sets a threshold for the nuclear Whi5 concentration, Whi5c, below which the switch will be flipped.",
+      "claim_type": "EXPLICIT",
+      "source": "The switching module sets a threshold for the nuclear Whi5 concentration, Whi5c, below which the switch will be flipped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic understanding of the Start network.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "ef157ab8-f277-41bf-a1bf-02034ee84d00",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C68",
+      "claim": "G1 length is the time needed for the nuclear Whi5 concentration to drop below Whi5c.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, G1 length is the time needed for the nuclear Whi5 concentration to drop below Whi5c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model of the Start network.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "c2507fb6-b4b0-47de-b25f-3782fba4204e",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C69",
+      "claim": "The low abundance and short half-life of wild-type Cln3 make its detection in single cells extremely difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "The low abundance and short half-life of the wild-type Cln3 make its detection in single cells extremely difficult (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "f71dcaa3-77f4-4e62-b8eb-7d2bd42ebdf3",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C70",
+      "claim": "The desired Cln3 mutants should have lower activity, requiring higher Cln3 concentration to pass Start.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower activity requires higher Cln3 concentration to pass Start and longer half-life allows more fluorescent proteins to mature before the tagged Cln3 is degraded, thus making the mutant Cln3 detectable in single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the rationale for screening Cln3 mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "68a99e5b-9406-48a7-a59b-9149f0b7018a",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C71",
+      "claim": "The desired Cln3 mutants should have longer half-life to allow more fluorescent proteins to mature.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower activity requires higher Cln3 concentration to pass Start and longer half-life allows more fluorescent proteins to mature before the tagged Cln3 is degraded, thus making the mutant Cln3 detectable in single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the rationale for screening Cln3 mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "2dfa31e8-10e1-42a6-8dd3-e9862cdb8686",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C72",
+      "claim": "Two successful Cln3 mutants, CLN3R108A and CLN3D166A, were obtained from the screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Two successful mutants, CLN3R108A and CLN3D166A, were obtained from the screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of the mutant screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "a2fbfbc4-375e-4ee8-9e68-fd1b38264397",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C73",
+      "claim": "The Instantaneous Model leads to a G1 variability of 92% with extrinsic noise.",
+      "claim_type": "EXPLICIT",
+      "source": "When extrinsic noise is added in the model, the G1 variability of the Instantaneous Model is as large as 92%, which is significantly larger than experimental observations for WT cells in previous and this studies (Di Talia et al., 2007; Skotheim et al., 2008; Charvin et al., 2008; Ferrezuelo et al., 2012) (CVs are no more than 50%, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the result of stochastic simulation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "97b42e7e-4fe9-4ddf-b903-b397b6ecbc86",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C74",
+      "claim": "The shape of the G1 length distribution generated by the Integration Model is more similar to experimental data than the Instantaneous Model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the shape of the G1 length distribution generated by the Integration Model is more similar to that of the experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing simulation results with experimental data in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "1865fa3a-2bb1-4bc3-8c42-46720afc86db",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C75",
+      "claim": "After normalizing by Whi5tot, inverse correlations in both 1X and 2X WHI5 strains collapse to the same curve.",
+      "claim_type": "EXPLICIT",
+      "source": "After normalizing by Whi5tot, inverse correlations in both 1X and 2X WHI5 strains are more converged and collapse to the same curve (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "d44ee7e4-92f5-420f-a127-b9d3d62d022d",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C76",
+      "claim": "At least part of the variation in G1 length at low Cln3 concentration is due to the variance in Whi5tot concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In Cln3-TG1 correlations, the variation of G1 is high when Cln3 concentration is low. At least part of the variation is due to the variance in Whi5tot concentration (and thus the variance in A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that normalizing by Whi5tot reduces variation (Figure 3\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "9e2322b1-8c3c-4b13-a421-970044bfbe91",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C77",
+      "claim": "There was no increase of MCM intensity in suboptimal nutrient condition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any increase of MCM intensity in suboptimal nutrient condition, nor any correlation between A and MCM intensity, suggesting that the nutrient regulation on Whi5 and the Whi5 regulation on A are specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation used to show specificity of Whi5 regulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "42e0a7bd-fed7-4ec3-bdfb-fab2681ef680",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C78",
+      "claim": "There is no correlation between A and MCM intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any increase of MCM intensity in suboptimal nutrient condition, nor any correlation between A and MCM intensity, suggesting that the nutrient regulation on Whi5 and the Whi5 regulation on A are specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation shown in Figure 4\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "2e4356f1-dff1-43bf-a5b7-255a42c92f09",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C79",
+      "claim": "The nutrient regulation on Whi5 and the Whi5 regulation on A are specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any increase of MCM intensity in suboptimal nutrient condition, nor any correlation between A and MCM intensity, suggesting that the nutrient regulation on Whi5 and the Whi5 regulation on A are specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of MCM changes in different nutrient conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "728a3763-08a0-49bb-831a-e5dadb029d0a",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C80",
+      "claim": "Whi5 contributes to G1 delay in daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding suggests that besides the daughter-specific Cln3 suppression by Ace2 (Laabs et al., 2003), Whi5 contributes to G1 delay in daughter cells as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that daughter cells have higher Whi5tot intensity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "578f7221-4de4-4ffb-92df-12069159ac75",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C81",
+      "claim": "Ace2 suppresses Cln3 specifically in daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding suggests that besides the daughter-specific Cln3 suppression by Ace2 (Laabs et al., 2003), Whi5 contributes to G1 delay in daughter cells as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Laabs et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "d4751cd8-feac-4958-abeb-fc565b69e558",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C82",
+      "claim": "The system could utilize the different response times of the sensor and the integrator to develop more complex strategies when adapting to environmental fluctuations and changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The system could utilize the different response times of the sensor and the integrator to develop more complex strategies when adapting to environmental fluctuations and changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional significance of having different response times.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "89e299a2-035f-422f-9f57-5b45ca395f53",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C83",
+      "claim": "The G1 reinitiation after nutrient switch could not be explained by current knowledge of Start and must involve further changes in CDK and phosphatase activities.",
+      "claim_type": "EXPLICIT",
+      "source": "This result could not be explained by current knowledge of Start and must involve further changes in CDK and phosphatase activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of G1 reinitiation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "51d59d48-efce-42e7-9465-9135e7371b8e",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C84",
+      "claim": "A full understanding of size control may need to take into account the combined action of Cln3 dynamics, Whi5tot concentration and the integration mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "A full understanding of size control may need to take into account the combined action of Cln3 dynamics, Whi5tot concentration and the integration mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "7dfec745-1b5a-427a-b1d3-cd40ba49e04d",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "claim_id": "C85",
+      "claim": "Signal integration may be widely implemented in decision-making and signaling systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that it is also adopted at the cellular level, suggesting a general strategy that may be widely implemented in decision-making and signaling systems (Li et al., 2010; Di Talia and Wieschaus, 2012; Doncic and Skotheim, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the generality of the signal integration strategy, with some support from cited studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "76ff4732-0626-4080-ba23-69149fe521d2",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Start transition in budding yeast is determined by time integration of Cln3-Cdk1 activity, with Whi5 serving as the integrator. G1 length is inversely proportional to average Cln3 concentration with a slope of -1 (R\u00b2=0.91) in log-log scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C16-C17 collectively establish the core integration mechanism. The inverse proportionality (C16, C17) with slope \u2248-1 and high R\u00b2 directly supports the mathematical integration model. The experimental data in Figure 1J provides strong quantitative evidence, and the identification of Whi5 as integrator (C2) is supported by both modeling and perturbation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "fb79bf8b-e688-4625-9f6f-ca04a63e9ef2",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Signal integration reduces noise and variability in G1 length compared to an instantaneous threshold model. The Integration Model produces CV of 37.9% versus 92% for the Instantaneous Model with extrinsic noise, matching experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C18-C19, C73-C74 demonstrate through stochastic simulations that integration reduces variability. The quantitative comparison (CV 37.9% vs 92%) matches experimental data (CV \u226450%, C55). Figure 2 provides clear visual and quantitative support for noise reduction through integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "db6dd7f7-ea1d-4063-b9bb-7a0ed1152886",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In approximately 80% of cells, the timing of Cln3 peak differs from the timing of Start, ruling out an instantaneous threshold model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 provide direct experimental evidence against the instantaneous model. The 80% figure from Figure 2\u2014figure supplement 2 is a strong statistical observation that contradicts predictions of an instantaneous threshold mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "f83914ab-9ef4-497a-9763-502a1b2526d8",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The memory length of Whi5 integration is 13.7 min in mother cells and 10.6 min in daughter cells, comparable to the average G1 length (13.6 min) in daughter cells in SD medium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 report experimental measurements of Whi5 dephosphorylation kinetics using Cdk1 inhibition. The measurements in Figure 2\u2014figure supplement 3 provide direct evidence for the memory window, though the method (inhibiting Cdk1 after G1) is an indirect estimate of the actual memory length during G1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "089e0891-fdff-46fd-b325-0856b06873be",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In whi5\u0394 strain, most cells pass Start with minimal G1 length and the inverse proportionality between G1 length and Cln3 concentration is severely compromised.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C62 demonstrate that Whi5 is essential for the integration mechanism. The loss of inverse proportionality (slope >> -1) in whi5\u0394 strain (Figure 3A) directly supports Whi5's role as integrator, as predicted by the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "61ffcad1-aa47-4189-8628-3117c2c746e6",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The integration threshold A is positively correlated with Whi5 concentration at single-cell level (Pearson r=0.53), and normalizing by Whi5tot causes inverse correlations in 1X and 2X WHI5 strains to collapse to the same curve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C57, C75-C76 provide experimental validation of the model prediction that A scales with Whi5tot. The single-cell correlation (Figure 3C) and the collapse of normalized data (Figure 3\u2014figure supplement 2) strongly support the linear relationship between threshold and Whi5 concentration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "bd04266d-fd7e-4694-9ecd-e9accea08255",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In poor nutrient conditions, Whi5tot increases as growth rate decreases, resulting in a higher Start threshold rather than lower, contrary to previous models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 present a counterintuitive finding supported by data across multiple nutrient conditions (Figure 4A-C). The negative correlation between Whi5tot and growth rate is clearly demonstrated, challenging previous assumptions about threshold modulation in poor nutrients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "fe449088-d467-46f2-b88a-3d005907174e",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "When cells are switched between glucose concentrations, Whi5tot and G1 length adapt with different kinetics, with faster response when switching from high to low glucose including an overshoot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 describe nutrient switch experiments showing differential adaptation kinetics (Figure 4\u2014figure supplement 6). The data demonstrate that Whi5 and G1 length respond on different timescales, supporting the two-component sensor-integrator model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "8f2d646c-fdfc-40b8-9152-24a062019d92",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "G1 phase can reinitiate when cells are switched from high to low glucose before budding, a phenomenon that cannot be explained by current knowledge of Start.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38 and C83 report an unexpected observation (Figure 4\u2014figure supplement 6E) but acknowledge it cannot be explained by the current model. While the observation appears genuine, the lack of mechanistic understanding and limited characterization make this result uncertain. Additional experiments would be needed to validate and explain this phenomenon.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "7ef89bfb-7edd-493b-90cc-66c428d0cbb6",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Daughter cells have higher Whi5tot intensity and steeper slope between Whi5tot and G1 length than mother cells, contributing to G1 delay in daughters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41, C80 identify a mother-daughter asymmetry in Whi5 regulation (Figure 4D,E). The data clearly show higher Whi5tot in daughters, providing a novel mechanism for daughter-specific G1 delay beyond the known Ace2-mediated Cln3 suppression (C81).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "43099889-517d-45c5-9544-8146e21ceb83",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cln3 responds rapidly to external and internal cues while Whi5 adjusts on a much longer timescale, reinforcing changes in G1 length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 describe the differential response times of sensor (Cln3) versus integrator (Whi5), supported by nutrient switch experiments (Figure 4\u2014figure supplement 6). This two-timescale architecture is consistent with the observed adaptation kinetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "657b7c5f-c749-4f48-b489-38f290b3ef52",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Perturbations to the Start network (increasing phosphatase activity, weakening positive feedback, reducing Cln3-Cdk1 catalytic efficiency) produce predicted changes in Cln3c, memory length, and integration threshold A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C61, C63 describe model predictions tested through genetic perturbations (CDC14 overexpression, cln1\u0394, cln2\u0394). Figure 3D-F shows the predicted shifts in Cln3-TG1 correlations, validating the mathematical model. The observation that cln2\u0394 shifts more than cln1\u0394 (C63) is consistent with known expression differences (C29).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "af0874ff-0ebb-4ea5-bb56-b42153ec75d1",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "G1 length is prolonged as IPTG concentration decreases in both mother and daughter cells, and under full induction, Cln3* concentration is positively correlated with birth size while G1 length is negatively correlated with birth size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 establish basic relationships between Cln3 levels, G1 length, and cell size. The data in Figures 1C and 1\u2014figure supplement 5 support these correlations. The maintenance of size control with the Cln3 mutant validates its use as a proxy for wild-type Cln3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "7ec1d7a8-414d-4f5c-9b82-e067c1dc220c",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Two Cln3 mutants (CLN3R108A and CLN3D166A) with lower activity and longer half-life were successfully screened and validated as faithful replacements of wild-type CLN3 under experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72, C53 describe the rationale, screening, and validation of Cln3 mutants. The mutants fulfill the design criteria (detectable, functional rescue, tight shut-off) and maintain normal cell cycle behaviors under full induction (C53), justifying their use in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "c99cd921-1a6c-4681-9294-a9e4fd4e8f6b",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bck2 acts as a bypass Start trigger in wild-type cells to prevent excessively long G1 phase when Cln3 concentration is too low.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C56 describe the role of Bck2 as a fail-safe mechanism. The data in Figure 3\u2014figure supplement 1F show that G1 length plateaus at ~29 min in BCK2+ strain at low Cln3, supporting this interpretation. This is consistent with the known ability of Bck2 to trigger Start in cln3\u0394 cells (C56).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "dda03e9c-6184-415b-8927-8c124cb7d7d8",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The Start network consists of two modules coupled via Whi5: a triggering module (Cln3-Cdk1 phosphorylating Whi5) and a switching module (positive feedback loop setting threshold Whi5c).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 present the conceptual framework for understanding the Start network architecture. This modular view is well-supported by prior literature (C7) and provides the foundation for the mathematical model. The framework successfully explains the experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "15dcffbd-c899-4097-bb6d-d2adf46c07ad",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "MCM intensity does not increase in suboptimal nutrient conditions and shows no correlation with integration threshold A, indicating specificity of Whi5 regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 use MCM as a control to demonstrate specificity of Whi5 regulation by nutrients. The lack of MCM changes (Figure 4\u2014figure supplement 3C) supports that the observed Whi5 modulation is specific rather than a general effect on cell cycle proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "4057f710-fe9d-451d-a8fb-6a1135eff28d",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A full understanding of size control requires considering the combined action of Cln3 dynamics, Whi5tot concentration, and the integration mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 synthesizes the findings to propose a more complete model of size control. This conclusion is well-supported by the data showing both Cln3 and Whi5 contribute to G1 length determination, though the exact mechanism coupling Cln3 to size remains unclear in the mutant system used.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    },
+    {
+      "id": "14f92253-1b64-4885-b7f8-c981a8aa7f42",
+      "content_id": "84ccfef7-57c6-419f-8b2e-091306c56e83",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Signal integration may be widely implemented in decision-making and signaling systems, as it has been observed in animal behavior and now at the cellular level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85 and C39 place the findings in broader context. While C39 correctly cites animal behavior studies, C85's speculation about widespread implementation is reasonable but not directly tested. The demonstration of integration at the cellular level is novel and significant, supporting the generality hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:17:48.176541Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f0e2bf84-f2a4-4849-8937-6d17514de4df",
+      "result_id": "76ff4732-0626-4080-ba23-69149fe521d2"
+    },
+    {
+      "claim_id": "6c329b4d-d6d2-4f1b-bc8c-e26f70527c79",
+      "result_id": "76ff4732-0626-4080-ba23-69149fe521d2"
+    },
+    {
+      "claim_id": "cba122b3-92c1-4998-a039-15d2fca84e28",
+      "result_id": "76ff4732-0626-4080-ba23-69149fe521d2"
+    },
+    {
+      "claim_id": "5b9ad14e-ea54-46d8-af96-c24fbe8a6caa",
+      "result_id": "76ff4732-0626-4080-ba23-69149fe521d2"
+    },
+    {
+      "claim_id": "9b739e2f-707f-4a12-aae8-27f97d2bcf3f",
+      "result_id": "76ff4732-0626-4080-ba23-69149fe521d2"
+    },
+    {
+      "claim_id": "071698e3-6c42-466d-b4f0-591627e08fb8",
+      "result_id": "fb79bf8b-e688-4625-9f6f-ca04a63e9ef2"
+    },
+    {
+      "claim_id": "8fd0bcad-bdce-4391-9894-f79bd54ec7bf",
+      "result_id": "fb79bf8b-e688-4625-9f6f-ca04a63e9ef2"
+    },
+    {
+      "claim_id": "560c956a-9b0e-4f01-b082-cd9eb0a23f13",
+      "result_id": "fb79bf8b-e688-4625-9f6f-ca04a63e9ef2"
+    },
+    {
+      "claim_id": "a2fbfbc4-375e-4ee8-9e68-fd1b38264397",
+      "result_id": "fb79bf8b-e688-4625-9f6f-ca04a63e9ef2"
+    },
+    {
+      "claim_id": "97b42e7e-4fe9-4ddf-b903-b397b6ecbc86",
+      "result_id": "fb79bf8b-e688-4625-9f6f-ca04a63e9ef2"
+    },
+    {
+      "claim_id": "2ae7cd3e-d892-41cb-8435-e44296a6b1f2",
+      "result_id": "db6dd7f7-ea1d-4063-b9bb-7a0ed1152886"
+    },
+    {
+      "claim_id": "19aab843-31f2-4d29-a8fa-76931deb3f44",
+      "result_id": "db6dd7f7-ea1d-4063-b9bb-7a0ed1152886"
+    },
+    {
+      "claim_id": "319797ab-f9ce-4283-af82-d6bd5d9bd432",
+      "result_id": "f83914ab-9ef4-497a-9763-502a1b2526d8"
+    },
+    {
+      "claim_id": "51400d02-1077-4009-8c73-bffaa83ebba9",
+      "result_id": "f83914ab-9ef4-497a-9763-502a1b2526d8"
+    },
+    {
+      "claim_id": "25c022a6-cbe9-4f31-a917-b1966ce9d4e8",
+      "result_id": "f83914ab-9ef4-497a-9763-502a1b2526d8"
+    },
+    {
+      "claim_id": "5f9e8f7c-c71c-4773-961b-9c1f468e1563",
+      "result_id": "089e0891-fdff-46fd-b325-0856b06873be"
+    },
+    {
+      "claim_id": "aab34d43-7047-4637-bee4-df9be0e61ac7",
+      "result_id": "089e0891-fdff-46fd-b325-0856b06873be"
+    },
+    {
+      "claim_id": "7cb6ccca-3ccf-4c71-a53b-396950dd76f8",
+      "result_id": "61ffcad1-aa47-4189-8628-3117c2c746e6"
+    },
+    {
+      "claim_id": "61d784e2-af83-4cf2-a521-741838a9a7f4",
+      "result_id": "61ffcad1-aa47-4189-8628-3117c2c746e6"
+    },
+    {
+      "claim_id": "1865fa3a-2bb1-4bc3-8c42-46720afc86db",
+      "result_id": "61ffcad1-aa47-4189-8628-3117c2c746e6"
+    },
+    {
+      "claim_id": "d44ee7e4-92f5-420f-a127-b9d3d62d022d",
+      "result_id": "61ffcad1-aa47-4189-8628-3117c2c746e6"
+    },
+    {
+      "claim_id": "1d5c3522-fabe-4530-aeb4-8a23c8ad5ed2",
+      "result_id": "bd04266d-fd7e-4694-9ecd-e9accea08255"
+    },
+    {
+      "claim_id": "6982272c-d8e5-4db6-af04-516853982e91",
+      "result_id": "bd04266d-fd7e-4694-9ecd-e9accea08255"
+    },
+    {
+      "claim_id": "0f8059b4-6c3e-4417-816b-b3baa96cff7c",
+      "result_id": "bd04266d-fd7e-4694-9ecd-e9accea08255"
+    },
+    {
+      "claim_id": "63a8a328-b579-45fe-b3ac-1378aaa228f2",
+      "result_id": "fe449088-d467-46f2-b88a-3d005907174e"
+    },
+    {
+      "claim_id": "ccdc41de-4903-4727-8e86-e6718e8c7948",
+      "result_id": "fe449088-d467-46f2-b88a-3d005907174e"
+    },
+    {
+      "claim_id": "bf3c1913-1424-4877-a4c9-76e56fa338b6",
+      "result_id": "fe449088-d467-46f2-b88a-3d005907174e"
+    },
+    {
+      "claim_id": "1202c50d-c12b-499f-be20-1b3865656228",
+      "result_id": "8f2d646c-fdfc-40b8-9152-24a062019d92"
+    },
+    {
+      "claim_id": "89e299a2-035f-422f-9f57-5b45ca395f53",
+      "result_id": "8f2d646c-fdfc-40b8-9152-24a062019d92"
+    },
+    {
+      "claim_id": "b2b5bb63-f6b6-4139-bb29-7ea63209e19d",
+      "result_id": "7ef89bfb-7edd-493b-90cc-66c428d0cbb6"
+    },
+    {
+      "claim_id": "d869fd77-c0aa-45e2-981b-67ffb23de12b",
+      "result_id": "7ef89bfb-7edd-493b-90cc-66c428d0cbb6"
+    },
+    {
+      "claim_id": "728a3763-08a0-49bb-831a-e5dadb029d0a",
+      "result_id": "7ef89bfb-7edd-493b-90cc-66c428d0cbb6"
+    },
+    {
+      "claim_id": "596942da-f0ce-4292-a05e-88e59887029e",
+      "result_id": "43099889-517d-45c5-9544-8146e21ceb83"
+    },
+    {
+      "claim_id": "953826ec-e7f5-445e-a629-9c997094a2d2",
+      "result_id": "43099889-517d-45c5-9544-8146e21ceb83"
+    },
+    {
+      "claim_id": "4f1edd77-cb6b-4c09-b5e7-63d6d2635fa7",
+      "result_id": "657b7c5f-c749-4f48-b489-38f290b3ef52"
+    },
+    {
+      "claim_id": "0100ae1e-3f1c-43c6-8025-2cb8eecb9514",
+      "result_id": "657b7c5f-c749-4f48-b489-38f290b3ef52"
+    },
+    {
+      "claim_id": "2f156397-a640-4bb3-be7d-08bc815b34ac",
+      "result_id": "657b7c5f-c749-4f48-b489-38f290b3ef52"
+    },
+    {
+      "claim_id": "7470d25e-a53b-4e70-a07c-ad7f06c4db4d",
+      "result_id": "657b7c5f-c749-4f48-b489-38f290b3ef52"
+    },
+    {
+      "claim_id": "647ef589-8ce6-4b09-835b-fb20226e0cee",
+      "result_id": "af0874ff-0ebb-4ea5-bb56-b42153ec75d1"
+    },
+    {
+      "claim_id": "159c7b77-b1bf-4c89-bab1-1320b37845fa",
+      "result_id": "af0874ff-0ebb-4ea5-bb56-b42153ec75d1"
+    },
+    {
+      "claim_id": "44f3488c-ddff-430a-80f8-c042731e0dbe",
+      "result_id": "af0874ff-0ebb-4ea5-bb56-b42153ec75d1"
+    },
+    {
+      "claim_id": "5423a3d1-a544-410f-a9e8-de7934cdf521",
+      "result_id": "af0874ff-0ebb-4ea5-bb56-b42153ec75d1"
+    },
+    {
+      "claim_id": "f71dcaa3-77f4-4e62-b8eb-7d2bd42ebdf3",
+      "result_id": "7ec1d7a8-414d-4f5c-9b82-e067c1dc220c"
+    },
+    {
+      "claim_id": "68a99e5b-9406-48a7-a59b-9149f0b7018a",
+      "result_id": "7ec1d7a8-414d-4f5c-9b82-e067c1dc220c"
+    },
+    {
+      "claim_id": "2dfa31e8-10e1-42a6-8dd3-e9862cdb8686",
+      "result_id": "7ec1d7a8-414d-4f5c-9b82-e067c1dc220c"
+    },
+    {
+      "claim_id": "11099825-d6b0-47de-a115-e783e11e756d",
+      "result_id": "7ec1d7a8-414d-4f5c-9b82-e067c1dc220c"
+    },
+    {
+      "claim_id": "9968b666-80b5-4cbc-82bd-cddfb744af3d",
+      "result_id": "c99cd921-1a6c-4681-9294-a9e4fd4e8f6b"
+    },
+    {
+      "claim_id": "105f8128-abda-4cf5-a19e-d0a2f851fdb0",
+      "result_id": "c99cd921-1a6c-4681-9294-a9e4fd4e8f6b"
+    },
+    {
+      "claim_id": "ef43e495-56e9-49b2-9a3c-281e046b1617",
+      "result_id": "dda03e9c-6184-415b-8927-8c124cb7d7d8"
+    },
+    {
+      "claim_id": "2c08b3a0-df7c-4407-bee9-914b26a83c83",
+      "result_id": "dda03e9c-6184-415b-8927-8c124cb7d7d8"
+    },
+    {
+      "claim_id": "c937433a-0ff4-4dbe-8e90-0f7885ebc9e6",
+      "result_id": "dda03e9c-6184-415b-8927-8c124cb7d7d8"
+    },
+    {
+      "claim_id": "dc94d0fb-aafa-444d-8dca-82a4f53cc691",
+      "result_id": "dda03e9c-6184-415b-8927-8c124cb7d7d8"
+    },
+    {
+      "claim_id": "ef157ab8-f277-41bf-a1bf-02034ee84d00",
+      "result_id": "dda03e9c-6184-415b-8927-8c124cb7d7d8"
+    },
+    {
+      "claim_id": "9e2322b1-8c3c-4b13-a421-970044bfbe91",
+      "result_id": "15dcffbd-c899-4097-bb6d-d2adf46c07ad"
+    },
+    {
+      "claim_id": "42e0a7bd-fed7-4ec3-bdfb-fab2681ef680",
+      "result_id": "15dcffbd-c899-4097-bb6d-d2adf46c07ad"
+    },
+    {
+      "claim_id": "2e4356f1-dff1-43bf-a5b7-255a42c92f09",
+      "result_id": "15dcffbd-c899-4097-bb6d-d2adf46c07ad"
+    },
+    {
+      "claim_id": "51d59d48-efce-42e7-9465-9135e7371b8e",
+      "result_id": "4057f710-fe9d-451d-a8fb-6a1135eff28d"
+    },
+    {
+      "claim_id": "7dfec745-1b5a-427a-b1d3-cd40ba49e04d",
+      "result_id": "14f92253-1b64-4885-b7f8-c981a8aa7f42"
+    },
+    {
+      "claim_id": "d60349dc-0c01-4bdd-ac79-5dbe2f69baa2",
+      "result_id": "14f92253-1b64-4885-b7f8-c981a8aa7f42"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "T cells exhibit bimodal, all-or-none activation responses to antigen with limited dynamic range at early timepoints. A 1000-fold increase in antigen dose yields only a 50-fold increase in IL-2 production at 12 hours, and smaller T cell populations show poorer antigen resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 are directly supported by experimental data in Figure 1, showing bimodal activation markers and saturated responses. The limited dynamic range and population size effects at early timepoints are clearly demonstrated through flow cytometry and ELISA measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "IL-2 accumulation over multiple days exhibits population size-independent scaling with antigen dose following a power law: [IL-2]max \u221d (NT cells)^(-0.10\u00b10.02) \u00d7 [Antigen]^(+0.76\u00b10.05). Small populations accumulate comparable IL-2 to large populations in less than twice the time, independent of cell proliferation or death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 are strongly supported by extensive experimental data from 118 conditions across six experiments (Figure 2). The empirical scaling law is rigorously derived with statistical confidence intervals, and the population size independence is demonstrated across 100-fold differences in cell numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C21"
+    ],
+    "result": "The classical model of IL-2 regulation predicts population size-dependent IL-2 accumulation and weak antigen scaling that saturates near 10 pM, incompatible with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C21 describe computational model predictions (Figure 3) that are explicitly stated to be incompatible with experimental results. The model predictions are clearly presented and compared to experimental data, establishing the need for additional regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "TCR signaling inhibits STAT5 phosphorylation in response to IL-2 in an antigen dose-dependent manner. This inhibition scales linearly with antigen dose when controlling for IL-2 receptor abundance, occurs at the level of STAT5 phosphorylation rather than receptor engagement, and decays over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 are supported by multiple experimental approaches including flow cytometry dose-response curves (Figure 4B-C) and cell-to-cell variability analysis (CCVA, Figure 4D-G). The linear scaling with antigen dose and temporal decay are quantitatively demonstrated, though the molecular mechanism remains incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The TCR-pSTAT5-IL-2 regulatory network forms a type IV coherent feed-forward loop where TCR signaling both promotes IL-2 production directly and inhibits pSTAT5-mediated shutdown. This architecture enforces tight synchronization between IL-2 production and antigen signaling persistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 are supported by antibody blocking experiments (Figure 5A-D) showing rapid IL-2 shutdown upon antigen blockade and differential kinetics with dual inhibition. The feed-forward loop architecture is correctly classified with appropriate citation (Alon, 2007), and functional consequences are demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Smaller T cell populations maintain IL-2 secretion for longer periods despite having fewer IL-2 producers. Population size differences in IL-2 accumulation cannot be explained by differential cytokine consumption, as both large and small populations show limited IL-2 consumption before reaching [IL-2]max.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by cytokine capture assays (Figure 6A-B) and human IL-2 consumption experiments (Figure 6C-D). The paradoxical observation that smaller populations accumulate more IL-2 despite fewer producers is clearly demonstrated, and consumption is ruled out as an explanation through direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "IL-2 secretion rate per cell accelerates nonlinearly over time (up to 30-fold), with the magnitude and timing of acceleration depending on antigen dose and population size. This acceleration explains the nonlinear IL-2 accumulation kinetics and underlies the population size-independence and expanded dynamic range of [IL-2]max.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C58 are supported by time-series measurements showing nonlinear relationships between cumulative IL-2 producers and IL-2 concentration (Figure 7A-D). The acceleration is quantified and shown to vary with experimental conditions. However, the molecular mechanism remains phenomenological, limiting mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A computational ODE model incorporating TCR inhibition of pSTAT5 and nonlinear IL-2 secretion acceleration reproduces experimental IL-2 dynamics and recapitulates the scaling law [IL-2]max \u221d (NT cells)^(-0.12\u00b10.03) \u00d7 (NAntigen)^(+0.82\u00b10.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by detailed model-experiment comparisons (Figures 8C, 9A). The model scaling law closely matches experimental observations (compare C61 to C11). The model is extensively parameterized from experimental data and literature, though some parameters remain phenomenological.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Computational model perturbations demonstrate that removing TCR inhibition of pSTAT5 causes [IL-2]max to saturate at ~10 pM, while removing IL-2 secretion acceleration prevents small populations from accumulating comparable IL-2 to large populations and reduces antigen scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64-C65 are supported by in silico perturbation experiments (Figure 9B-C) showing the necessity of both regulatory mechanisms. The model predictions are internally consistent and demonstrate that both mechanisms are required to reproduce experimental scaling laws.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The computational model predicted that JAK inhibition would cause larger T cell populations to sustain higher IL-2 concentrations than smaller populations, which was experimentally validated, demonstrating critical dependence of IL-2 scaling on feedback from IL-2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are strongly supported by successful a priori model predictions validated experimentally (Figure 9D). The JAK inhibitor experiments confirm model predictions and demonstrate the importance of IL-2 signaling feedbacks, providing strong validation of the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In mixed populations of two T cell clones, [IL-2]max is determined by combined antigen doses independently of cell numbers. IL-2 produced by co-cultured clones equals the sum of IL-2 from separate cultures during the production phase, and relative antigen doses can be resolved through differential pSTAT5 responses to shared IL-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by two-clone experiments (Figure 10) showing both model predictions and experimental validation. The additivity of IL-2 production and resolution of relative antigen doses through cross-talk are clearly demonstrated, extending the single-clone findings to polyclonal settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "TCR-IL-2R cross-talk can quantify tumor antigenicity ex vivo. The calculated antigen signaling scaled with tumor cellularity, antigen presentation per tumor cell was independent of tumor size, while antigen per cell in draining lymph nodes scaled with tumor size. Single snapshot measurements of pSTAT5 amplitude can distinguish relative TCR signaling strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C80, C82-C84 are supported by tumor antigenicity measurements (Figure 11) using the cross-talk assay. The calibration curve approach is validated by confirming expected biological relationships (tumor cellularity scaling, uniform tumor cell antigenicity). This demonstrates practical application of the discovered regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior literature established that T cells bimodally secrete IL-2 and express IL-2R\u03b1 following TCR engagement, IL-2 production is switched off by loss of TCR signaling or pSTAT5 activation, pSTAT5 upregulates IL-2R\u03b1, and 10 pM IL-2 is sufficient for receptor binding and STAT5 phosphorylation that inhibits IL-2 synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16, C19-C20 accurately cite established knowledge from prior literature with appropriate references. These claims provide necessary background context and are correctly attributed to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C40",
+      "C87",
+      "C88",
+      "C90",
+      "C92"
+    ],
+    "result": "Prior studies established that TCR signaling inhibits pSTAT5 response to IL-2, type IV feed-forward loops have signal delay properties, IL-2 signaling optimizes lymphocyte differentiation/proliferation/survival, sustained IL-2R\u03b1 expression corresponds to effector rather than memory fates, IL-2R\u03b1 expression scales with antigenic affinity, and TCR feedback loops generate digital activation filters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C40, C87-C88, C90, C92 accurately cite and contextualize prior literature with appropriate references. These provide important background for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C86",
+      "C89",
+      "C91"
+    ],
+    "result": "The authors hypothesize that TCR inhibition of pSTAT5 could delay IL-2 production shutdown enabling accumulation beyond 10 pM, feedback-controlled IL-2 accumulation may help scale long-term responses to antigenic stimulus, tight antigen-IL-2 correlation may ensure large pathogenic challenges generate robust effector responses, and graded pSTAT5 inhibition may influence CD4+ T helper differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31, C86, C89, C91 are explicitly stated as hypotheses or speculations about functional significance. While plausible and consistent with the data, these remain untested predictions requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Time integration of IL-2 regulatory loops generates collective outputs with higher fidelity, functional range, and temporal persistence than early activation responses. Binary readouts have limitations including saturation and narrow dynamic range, while TCR-driven pSTAT5 inhibition provides graded readouts of antigen signaling strength, and convolution of cross-talk with IL-2 production increases output resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C93-C95 are supported by comparing early timepoint data (Figure 1) with long-term dynamics (Figure 2) and demonstrating the utility of cross-talk measurements (Figures 4, 10-11). These represent valid conclusions about the advantages of the discovered regulatory architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Experimental system: Varied numbers of 5C.C7 TCR transgenic T cells were cultured with antigen-presenting cells pulsed with varied K5 peptide concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 describes the core experimental system used throughout the study. This is clearly documented in methods and figure legends, providing the foundation for all experimental results.",
+    "result_type": "MINOR"
+  }
+]

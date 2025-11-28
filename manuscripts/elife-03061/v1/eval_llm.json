@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior literature establishes that theta oscillations exhibit phase-specific organization of neural activity, with encoding and retrieval processes potentially segregated by theta phase. Entorhinal cortex inputs peak at theta trough (associated with encoding/LTP), while CA3 inputs peak at theta peak (associated with retrieval/LTD). High and low gamma oscillations indicate differential CA1-EC vs CA3-EC coordination at different theta phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide comprehensive background from prior literature establishing the theoretical framework for the study. All claims are supported by appropriate citations to peer-reviewed work documenting theta phase-specific activity patterns, plasticity, and coordination between hippocampal subregions. This background is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Four male PV-Cre mice (8-12 weeks old at training start) were trained on a spatial navigation task for 2-4 weeks. By the last 5 days of training, all mice performed significantly above chance (61\u00b15% correct, p<0.05) at 1.49\u00b10.69 trials/minute. Mice were food-restricted and received sugar pellet rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C75-C81 describe the behavioral training and animal characteristics with appropriate detail. Statistical significance is properly assessed using binomial distribution. Sample size (N=4) is modest but acceptable for this type of within-subject optogenetic study. Baseline performance and training progression are adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "After training, mice received bilateral hippocampal implants with fiber optics (0.9mm depth) and tetrodes. AAV5-DIO-ChR2-EYFP was injected into CA1. Viral expression spread ~2mm along dorsal hippocampus, primarily in CA1 and lateral CA3, with strongest labeling in the cell layer. Expression was confirmed histologically in all animals, with no expression in dentate gyrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C82-C102 describe surgical procedures, viral vectors, and histological verification with appropriate technical detail. The viral expression pattern is documented with imaging (Figure 2A) and is consistent with the injection parameters. The specificity to PV+ cells via Cre-dependent expression is properly implemented. Methods are reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "10ms light pulses (50 mW/mm\u00b2) reliably elicited up to 4 spikes from fast-spiking units (peak 400Hz) and inhibited nearby regular-spiking units for ~25ms, consistent with fast-spiking inhibition kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 demonstrate successful optogenetic activation of PV+ interneurons and resulting inhibition of pyramidal cells. The electrophysiological data (Figure 2B-F) clearly shows light-evoked spiking in fast-spiking units and subsequent inhibition of regular-spiking units. The 25ms inhibition duration is consistent with cited literature (Bartos et al., 2007) and appropriate for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C92",
+      "C93",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Closed-loop stimulation was delivered with mean delays of 21.7\u00b17.2ms (peak) and 21.3\u00b17.4ms (trough), equivalent to ~1/6 theta cycle. Mean stimulation phases were 96\u00b154\u00b0 (peak) and -131\u00b163\u00b0 (trough). Trough targeting was less precise due to asymmetric theta waveforms. Mean pulses per trial: 8.8\u00b13.3 (retrieval/peak), 8.3\u00b18.3 (retrieval/trough), 46.1\u00b157.2 (encoding/peak), 39.6\u00b139.6 (encoding/trough). Stimulation did not generally alter track occupancy times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 and C92-C106 characterize the closed-loop stimulation system with appropriate technical detail. The ~20ms delay is reasonable for real-time processing. Phase targeting precision is documented (Figure 3C-E), with acknowledgment of greater variability for trough stimulation. The large standard deviations in pulse counts for encoding segments (C35) suggest high trial-to-trial variability, but this is expected given variable exploration times. Data analysis methods are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Optogenetic feedback altered LFP power spectra, increasing theta peak frequency/amplitude during peak stimulation and increasing low-gamma (25-35Hz) and beta (16-25Hz) power for both conditions. Individual pulses affected subsequent theta cycle amplitude, with effects visible in stimulus-triggered averages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 document spectral changes induced by optogenetic stimulation (Figure 4A-B). The authors appropriately note that low-gamma increases may reflect spectral leakage from beta-band activity rather than true induced gamma oscillations. The stimulus-triggered LFP averages show clear evoked responses. These are expected consequences of periodic optogenetic perturbation and do not invalidate the behavioral findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In 3/4 mice, stimulation phase relative to high gamma power was consistent across animals despite electrode location variability: peak-triggered stimulation occurred after high gamma trough, while trough-triggered stimulation occurred around/after high gamma peak. High gamma power is a reliable indicator of CA1-MEC coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 establish absolute theta phase of stimulation using high gamma as a landmark (Figure 4C). This is critical for interpreting results, as online triggering was relative to local theta. The consistency across animals strengthens the findings. The reliance on high gamma as a proxy for CA1-MEC synchronization is supported by citations (Colgin et al., 2009; Yamamoto et al., 2014), though direct measurement would be stronger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Retrieval segment: peak stimulation had no effect (57.3\u00b110.0% baseline vs 57.8\u00b110.5% peak), while trough stimulation improved performance in 4/4 mice (71.0\u00b18.2%, p<0.05). Encoding segment: trough stimulation had no effect in 3/4 mice (59.1\u00b12.4% baseline vs 58.7\u00b110.5% trough), while peak stimulation improved performance in 3/4 mice (69.6\u00b114.7%, p<0.05). Average improvements: 13.7% (retrieval/trough) and 10.5% (encoding/peak).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 present the core behavioral findings showing a double dissociation (Figure 5B-C, Table 1). Statistical testing using binomial distribution with baseline as chance level is appropriate. The consistency across individual animals (4/4 for retrieval/trough, 3/4 for encoding/peak) strengthens the result. However, one mouse showed impairment with trough/encoding and one showed no effect with peak/encoding, indicating some individual variability. The modest baseline performance (~60%) provides room for improvement but limits ability to detect impairments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C107",
+      "C108"
+    ],
+    "result": "Bootstrap analysis (10,000 iterations) showed the probability of observing effects along any diagonal of the 2\u00d72 design was p=0.0013, and along both diagonals (actual result) was p=0.0001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C107-C108 provide rigorous statistical assessment of the double dissociation using bootstrap methods. The extremely low probability (p=0.0001) of observing the pattern by chance strongly supports the specificity of phase-dependent effects. The bootstrap approach appropriately accounts for multiple comparisons by considering all possible double-dissociation patterns. This statistical framework is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mice exhibited a 'win-stay, lose-switch' bias: higher accuracy when cued to switch after incorrect (82\u00b114%) or stay after correct (72\u00b118%) vs. switch after correct (32\u00b19%) or stay after incorrect (40\u00b121%). Strongest stimulation effects were on 'correct/switch' trials: trough/retrieval improved performance by 19.5\u00b17.3% (4/4 mice), peak/encoding by 25.0\u00b110.3% (4/4 mice). No evidence for reduced performance by optimal stimulation phase for any trial type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 provide important mechanistic insight by analyzing error types (Figure 5E-F). The win-stay/lose-switch bias explains modest baseline performance and shows that optogenetic stimulation helps overcome this bias, particularly on difficult 'correct/switch' trials. The lack of impairment on any trial type (C59) is notable and discussed by authors as potentially due to floor effects. This analysis strengthens the interpretation that stimulation enhances task-relevant processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Peak-triggered hippocampal inhibition enhanced navigational accuracy during encoding (when environmental cues are available), while trough-triggered inhibition increased correct choices during retrieval (when guidance depends on internal signals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 summarize the main experimental findings. These conclusions are well-supported by the behavioral data (C45-C51), statistical analyses (C52-C53), and error-type analysis (C54-C59). The double dissociation provides strong evidence for phase-specific effects that depend on task demands. The interpretation linking encoding to environmental cues and retrieval to internal signals is reasonable given the task structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors propose that phase-specific inhibition reduces response to task-irrelevant inputs by modulating the balance between CA3 and EC influence on CA1. Inhibiting CA1 during EC-dominant phases (trough) increases relative CA3 influence (improving retrieval), while inhibiting during CA3-dominant phases (peak) increases relative EC influence (improving encoding). The ~25ms inhibition duration (~1/5 theta cycle) is sufficient to impact encoding/retrieval without disrupting entire cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C68 present the authors' mechanistic interpretation. While this model is plausible and consistent with prior literature (C63-C64 cite Hasselmo et al., 2002; Laszt\u00f3czi & Klausberger, 2014), it remains speculative (C62 explicitly states 'our favored explanation'). The proposed mechanism involves local CA1 dynamics, but the authors acknowledge alternative explanations involving inter-regional coupling (C69-C72) or strategy switching (C73) cannot be ruled out without additional experiments. The interpretation is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Alternative mechanisms are considered: changes in CA1-retrosplenial cortex coupling (important for spatial working memory), CA1-mPFC synchrony (task-phase dependent), or strategy switching between egocentric and allocentric navigation. The authors note that only performance enhancements (not impairments) were observed, possibly due to floor effects from modest baseline performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 demonstrate appropriate scientific caution by discussing alternative mechanisms and limitations. The authors acknowledge that without simultaneous recordings from downstream regions, they cannot definitively rule out inter-regional coupling changes. The discussion of strategy switching (C73) and floor effects (C74) shows critical evaluation of their own results. This balanced discussion is a strength of the paper.",
+    "result_type": "MINOR"
+  }
+]

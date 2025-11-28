@@ -1,0 +1,1419 @@
+{
+  "submission": {
+    "id": "6a0900b8-14ee-43ee-a8ed-f35491a8ebe0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:28:41.449323Z",
+    "updated_at": "2025-11-28T20:28:41.449323Z"
+  },
+  "content": [
+    {
+      "id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "submission_id": "6a0900b8-14ee-43ee-a8ed-f35491a8ebe0",
+      "content_type": "manuscript",
+      "content_text": "# Midbrain dopamine neurons sustain inhibitory transmission using plasma membrane uptake of GABA, not synthesis\n\n## Authors\n\n- Nicolas X Tritsch<sup>1</sup>\n- Won-Jong Oh<sup>2</sup>\n- Chenghua Gu<sup>2</sup>\n- Bernardo L Sabatini<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Howard Hughes Medical Institute, Harvard Medical School Boston United States\n2. Department of Neurobiology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynaptic transmission between midbrain dopamine neurons and target neurons in the striatum is essential for the selection and reinforcement of movements. Recent evidence indicates that nigrostriatal dopamine neurons inhibit striatal projection neurons by releasing a neurotransmitter that activates GABAA receptors. Here, we demonstrate that this phenomenon extends to mesolimbic afferents, and confirm that the released neurotransmitter is GABA. However, the GABA synthetic enzymes GAD65 and GAD67 are not detected in midbrain dopamine neurons. Instead, these cells express the membrane GABA transporters mGAT1 (Slc6a1) and mGAT4 (Slc6a11) and inhibition of these transporters prevents GABA co-release. These findings therefore indicate that GABA co-release is a general feature of midbrain dopaminergic neurons that relies on GABA uptake from the extracellular milieu as opposed to de novo synthesis. This atypical mechanism may confer dopaminergic neurons the flexibility to differentially control GABAergic transmission in a target-dependent manner across their extensive axonal arbors.\n\n## Introduction\n\nDopamine (DA)-releasing neurons in the mammalian midbrain play an important role in fundamental behaviors, including motivation, reinforcement learning and motor control, and their dysfunction is associated with a wide range of neuropsychiatric disorders (Wise, 2004; Costa, 2007; Schultz, 2007; Morris et al., 2009; Redgrave et al., 2010). The major target of midbrain DA neurons is the striatum, a large subcortical structure implicated in the selection and reinforcement of motor actions. DA neurons located in the substantia nigra pars compacta (SNc) project mainly to the dorsal striatum (also known as the caudate and putamen, CPu), whereas those in the ventral tegmental area (VTA) innervate the ventral striatum (or nucleus accumbens, NAc), forming the nigrostriatal and mesolimbic pathways, respectively. The striatum controls motor behavior through two parallel output streams with opposing effects; the so-called \u2018direct\u2019 and \u2018indirect\u2019 pathways. Each pathway arises from distinct groups of GABAergic striatal projection neurons (SPNs) that differ, amongst other things, in their response to DA (Gerfen and Surmeier, 2011; Tritsch and Sabatini, 2012). By providing DA to the striatum, SNc and VTA neurons are believed to play a pivotal role in balancing the activity of direct- and indirect-pathway SPNs. However, our understanding of the cellular and molecular mechanisms employed by DA neurons to modulate striatal function remains incomplete.\n\nAlthough the activation of metabotropic receptors following the release of DA from SNc/VTA neurons is undoubtedly central to their function, DA neurons also co-release several other transmitters that shape striatal output (Hnasko et al., 2010; Stuber et al., 2010; Tecuapetla et al., 2010; Tritsch et al., 2012). In particular, we recently showed that DA neurons in SNc potently inhibit action potential firing in SPNs by releasing a transmitter that activates GABAA receptors (Tritsch et al., 2012). Release of this neurotransmitter requires activity of the vesicular monoamine transporter Slc18a2 (VMAT2), which can be replaced by exogenous expression of the vesicular GABA transporter Slc32a1 (also known as VGAT or VIAAT). In addition, VMAT2 expression in SPNs lacking VGAT is sufficient to sustain GABAergic transmission. Collectively, these findings suggest that SNc neurons co-release GABA using VMAT2 for vesicular loading. However, this study raises several important questions. First, does GABAergic transmission generalize to DA neurons in the VTA, or is it limited to nigrostriatal afferents? Second, what is the identity of the transmitter released by DA neurons? GABA exists as a zwitterion at neutral pH and lacks the characteristic molecular structure of VMAT2 substrates, which typically feature an aromatic ring and a positive charge (Yelin and Schuldiner, 1995). GABAA receptors can be activated by several naturally-occurring agonists and allosteric modulators, including \u03b2-alanine, taurine, imidazole-4-acetic acid and neurosteroids (Johnston, 1996; Belelli and Lambert, 2005). Although none of these molecules constitute ideal candidates for VMAT2-dependent vesicular transport based on their structure, charge, or both, they nonetheless raise the possibility that DA neurons liberate a transmitter other than GABA to inhibit SPNs. Third, do all DA neurons contribute to GABAergic signaling, or is it reserved to a subpopulation of cells, similar to glutamate co-release from DA neurons (Hnasko and Edwards, 2011). Finally, how is inhibitory synaptic transmission sustained in DA neurons? Addressing this point will help identify molecules required for GABAergic transmission by DA neurons and will permit the development of genetic tools to determine the relative contribution of SPN inhibition by DA neurons in vivo under normal and pathological conditions.\n\nIn this study, we address these questions by examining the cellular and molecular mechanisms that underlie the rapid GABAA receptor-mediated inhibition of SPNs upon stimulation of DA axons. Our results provide strong evidence that the inhibitory transmitter released by midbrain DA neurons is GABA, and suggest that GABA co-release is a general feature of all midbrain DA neurons. Moreover, we reveal that DA neurons rely on GABA uptake through the plasma membrane\u2014but not on de novo GABA synthesis\u2014to sustain GABAergic transmission.\n\n## Results\n\n### Stimulation of mesolimbic axons evokes inhibitory currents in striatal projection neurons\n\nWe recently reported that activation of SNc axons in dorsal striatum evokes monosynaptic, GABAA receptor-mediated inhibitory postsynaptic currents (IPSCs) in SPNs (Tritsch et al., 2012; Figure 1\u2014figure supplement 1). To determine whether this GABAergic signaling extends to DA neurons projecting to ventral striatum, we expressed channelrhodopsin 2 (ChR2) in the VTA using one of two approaches (\u2018Materials and methods\u2019). We either injected Slc6a3-ires-Cre mice (Backman et al., 2006) stereotaxically with an adeno-associated virus expressing Cre recombinase-dependent ChR2 (Figure 1A) or drove ChR2 expression genetically by crossing Slc6a3-ires-Cre mice to transgenic mice (Madisen et al., 2012) containing a conditional allele of ChR2 in the Rosa26 locus (Figure 1D). Mice also harbored Drd2-Egfp or Drd1a-tdTomato bacterial artificial chromosome (BAC) transgenes to permit distinction between direct- and indirect-pathway SPNs, respectively (Gong et al., 2003; Ade et al., 2011). We performed whole-cell voltage-clamp recordings from SPNs in sagittal brain slices of NAc in the presence of inhibitors of ionotropic glutamate receptors (NBQX and R-CPP) and metabotropic GABAB receptors (CGP55845) to prevent excitatory synaptic transmission by dopaminergic axons, as well as modulatory effects of GABAB receptors, respectively. Under our recording conditions, optogenetic stimulation of VTA axons with brief (1 ms) flashes of blue light reliably evoked inward IPSCs in direct- and indirect-pathway SPNs that were blocked by the GABAA receptor antagonists picrotoxin (n = 12; Figure 1B,E) and SR95531 (n = 4, not shown). With the exception of synaptic latency, optogenetically-evoked IPSCs (oIPSCs) exhibited similar properties in both experimental systems and were consequently pooled for analysis. They averaged 353 \u00b1 60 pA in peak amplitude (range = 68\u2013905 pA; n = 16) and their kinetics were similar to those observed in dorsal striatum (Tritsch et al., 2012; Figure 1\u2014figure supplement 1), with a 10\u201390% rise time of 2.4 \u00b1 0.2 ms and a decay time constant of 46.8 \u00b1 7.2 ms. The synaptic latency of oIPSCs in NAc did not differ from that observed in dorsal striatum under similar experimental conditions (Figure 1C,F), indicating that the connection is monosynaptic. Synaptic stimulation of midbrain DA neurons therefore directly engages GABAA receptors on SPNs in both dorsal and ventral striatum.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig1-v2.jpg)\n\n**Figure 1.:** ChR2 was expressed in VTA DA neurons virally (A\u2013C) or genetically (D\u2013F). (A) Coronal cross section of a Slc6a3-ires-Cre mouse ventral midbrain immunolabeled for TH (red) showing viral transduction of ChR2-EYFP in the VTA (green). (B) Representative oIPSC recorded from an indirect-pathway SPN in NAc before (black trace) and after (gray trace) bath application of the GABAA receptor antagonist picrotoxin (100 \u03bcM). Blue line depicts a 1-ms full field flash of 473 nm laser light (5 mW\u00b7mm\u22122). All recordings in this and subsequent figures were performed at \u221270 mV using a high Cl\u2212internal solution in the presence of NBQX (10 \u03bcM), R-CPP (10 \u03bcM), and CGP55845 (2\u20135 \u03bcM) in the perfusate. (C) Latency from flash onset to oIPSC onset in NAc and dorsal striatum (Caudate/Putamen, CPu) SPNs. For analysis of oIPSCs in CPu, ChR2 was expressed in SNc in a separate cohort of mice. White circles depict individual recordings, red circles are mean \u00b1 SEM. (D\u2013F) As in (A\u2013C) for recordings in Slc6a3-ires-Cre;Ai32 mice. Note that the synaptic latency in these mice is significantly longer than in virally transduced Slc6a3-ires-Cre mice in both CPu and NAc (p<0.001, Mann\u2013Whitney test), presumably because of lower ChR2 expression in Ai32 mice.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** ChR2 was expressed in SNc DA neurons virally. (A) or genetically (B). (A) Overlay of fifteen consecutive light-evoked (1ms, 473 nm, 5 mW\u00b7mm\u22122; blue line) IPSCs recorded under control conditions at \u221270 mV from a SPN in the dorsal striatum of a Slc6a3-ires-Cre mouse previously injected in the SNc with an AAV encoding Cre-dependent ChR2-mCherry. The first trace obtained after break-in is in black and subsequent oIPSCs are shown in progressively lighter shades of gray. The magenta trace depicts the average waveform of the first five oIPSCs. Recordings were performed with NBQX (10 \u03bcM), R-CPP (10 \u03bcM), and CGP55845 (2 \u03bcM) in the perfusate. (B) As in (A) for a SPN recorded under control conditions in the dorsal striatum of a Slc6a3-ires-Cre;Ai32 mouse. (C) Plot of the amplitude of consecutive oIPSCs shown in (A; magenta) and (B; green) over time. (D) As in (C) for oIPSCs recorded in dorsal striatum SPNs from AAV-infected mice (n = 17; magenta), Ai32 mice (n = 8; green), or both (n = 25, black). Amplitude is normalized to the first oIPSC after break-in. Note how the amplitude of oIPSCs progressively decreases with each stimulus under control conditions, regardless of the method used for expressing ChR2. This decrement in oIPSC amplitude is specific to dopaminergic synapses, as oIPSCs recorded from the collaterals of iSPNs in Adora2a-Cre expressing ChR2-mCherry in the dorsal striatum remained maintained their amplitude for the duration of the recording (n = 8; gray). Data represent mean \u00b1 SEM. *p<0.001 vs black trace; Sidak's multiple comparison test. (E) Mean latency from flash onset to oIPSC onset in individual dorsal striatum SPNs recordings from AAV-infected (magenta) and Ai32 (green) mice. The difference in synaptic delay are likely due to differences in expression levels of ChR2. Mean (\u00b1SEM) shown in red. *p<0.001, Mann\u2013Whitney test. (F) Mean standard deviation (SD) of the synaptic latency of oIPSCs in individual cells indicates little temporal jitter in both experimental models, in agreement with monosynaptic transmission. Mean (\u00b1SEM) shown in red. n.s., no significant difference between means (p=0.8; Mann\u2013Whitney test). (G) Time course of oIPSC amplitude rundown starting at the time of drug application (or the 5th stimulus for control recordings in ACSF). The number of SPN recordings in each condition are: ACSF, 25; picrotoxin, 19; SR95531, 11; SKF 89976A, 9; SKF 89976A+SNAP-5114, 8. Changes in the decay kinetics of oIPSCs shown in Figure 2 were quantified 3\u20134 min after initiating the perfusion of SKF89976A, just as the effects of the GABAA receptor antagonists begin to significantly inhibit oIPSCs. Note that acute application of GAT antagonists does not immediately affect the amplitude of oIPSCs in SPNs. Data represent mean \u00b1 SEM. *p<0.01, picrotoxin or SR95531 vs black trace; Tukey's multiple comparison test.\n\n### Dopaminergic IPSCs are shaped by membrane GABA transporters\n\nThe chemical identity of a synaptic neurotransmitter is traditionally established by determining whether a synapse fulfills several necessary criteria. They include the presence of (1) presynaptic synthetic enzymes, (2) presynaptic vesicular transporters, (3) postsynaptic receptors, and (4) a biochemical mechanism for inactivation. In the case of GABAergic signaling at dopaminergic synapses, conditions 2 and 3 are respectively satisfied by the presence of VMAT2 in DA neurons and GABAA receptors in SPNs. For many central nervous system transmitters, condition 4 is mediated by diffusion and reuptake through plasma membrane transporters. Of the four genes identified in mice that encode high affinity membrane GABA transporters, Slc6a1 is expressed predominantly throughout the brain (Borden, 1996; Lein et al., 2007). Its gene product, mGAT1, distributes mainly to presynaptic terminals of GABAergic neurons and serves to shape the amplitude and time course of IPSCs as well as regulate extrasynaptic levels of GABA (Isaacson et al., 1993; Jensen et al., 2003; Overstreet and Westbrook, 2003; Conti et al., 2004; Chiu et al., 2005; Bragina et al., 2008; Kirmse et al., 2008; Cepeda et al., 2013). Importantly, mGAT1 is highly selective for GABA and does not transport structurally similar GABAA receptor agonists such as \u03b2-alanine, taurine, and muscimol (Johnston et al., 1978; Tamura et al., 1995). Thus, we reasoned that if dopaminergic IPSCs are modulated by inhibition of mGAT1, it would provide compelling evidence that GABA is the neurotransmitter released.\n\nTo test this, we recorded dopaminergic oIPSCs from SPNs in dorsal striatum (Figure 2). Stimulation intensity was calibrated to evoke sub-maximal IPSCs (approximately 20% of IPSC peak amplitude at maximum intensity; mean: 232 \u00b1 40 pA, n = 19) in order to minimize spillover of GABA at dopaminergic synapses (Figure 2\u2014figure supplement 1). We compared the amplitude and kinetics of IPSCs recorded before (baseline) and during the first 3\u20134 min following bath application of control saline (ACSF; n = 9; Figure 2A) or saline containing SKF 89976A, a selective mGAT1 antagonist (n = 10; Figure 2B). In both conditions, the IPSC amplitude progressively declined to \u223c70% of baseline (p<0.01 each, Wilcoxon signed-rank test; Figure 2C), whereas the synaptic latency and 10\u201390% rise time remained unchanged relative to baseline (p>0.1, Wilcoxon signed-rank test). The decrease in amplitude is consistent with previous reports of activity-dependent rundown of GABA and DA release from midbrain DA neurons in vitro (Schmitz et al., 2003; Tritsch et al., 2012; Ishikawa et al., 2013) and did not differ between conditions (p=0.8, Mann\u2013Whitney test; Figure 2C, Figure 1\u2014figure supplement 1G), indicating that acute inhibition of mGAT1 does not interfere with neurotransmitter release or postsynaptic GABAA receptors. By contrast, mGAT1 antagonism significantly affected decay kinetics: whereas oIPSC decay time constants remained stable in control recordings (baseline: 33.6 \u00b1 5.8 ms; 3\u20134 min after ACSF wash-in: 32.1 \u00b1 5.8 ms; p=0.6, Wilcoxon signed-rank test), they were prolonged by a factor of 3 in the presence of SKF 89976A (baseline: 38.6 \u00b1 6.0 ms; 3\u20134 min after SKF 89976A wash-in: 115.9 \u00b1 26.3 ms; p=0.002, Wilcoxon signed-rank test; Figure 2D). These results indicate that mGAT1 activity normally shortens the duration of dopaminergic IPSCs, likely by clearing released neurotransmitter from the extracellular space.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig2-v2.jpg)\n\n**Figure 2.:** (A) Two representative oIPSCs recorded in SPNs using sub-maximal ChR2 stimulation (1ms; 0.3\u20132 mW\u00b7mm\u22122; blue line) before (baseline, left black trace) and 3\u20134 min after (middle gray trace) bath application of control saline (ACSF). Right, overlay of peak-normalized oIPSCs showing identical decay kinetics. (B) As in (A) for oIPSCs recorded in SKF 89976A (10 \u03bcM, in green). (C) Histogram of mean (\u00b1SEM) peak oIPSC amplitude normalized to baseline for SPNs perfused in ACSF (gray) and SKF 89976A (green). Number of recordings indicated in parentheses. (D) Plot of individual oIPSC decay time constants before and after bath application of ACSF and SKF 89976A. Mean (\u00b1SEM) shown in red. *p=0.002 vs baseline, Wilcoxon signed-rank test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The decay time constant of oIPSCs evoked with maximal light intensity (5 mW\u00b7mm\u22122) does not correlate with oIPSC peak amplitude (n = 25 SPNs; R2 = 0.01, linear regression; red line). (B\u2013C) In a subset of SPN recordings (n = 6), the amplitude (B) and decay time constant (C) of oIPSCs were measured at different light power densities (blue: 5 mW\u00b7mm\u22122; gray: 0.3 mW\u00b7mm\u22122). Maximal stimulation strength increased the mean amplitude and mean decay time constant of oIPSCs (red circles; p<0.04 for both, Wilcoxon signed-rank test), suggesting that the ability of GATs to limit pooling and/or spillover of GABA at dopaminergic synapses is compromised at high light stimulation intensities.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Continuous whole-cell voltage-clamp recording (Vhold = \u221270 mV) from a direct pathway SPN (dSPN) upon bath application of the GABAA receptor antagonist picrotoxin (100 \u03bcM, black bar) in the presence of NBQX (10 \u03bcM), R-CPP (10 \u03bcM), and CGP55845 (5 \u03bcM). Downward deflections represent spontaneous IPSCs. The presence of a standing inward current mediated by extracellular GABA is revealed upon application of picrotoxin, which evokes a shift in baseline holding current. (B) As in (A) for an indirect pathway SPN (iSPN) upon bath application of SKF 89976A (10 \u03bcM) and picrotoxin (indicated by green and black bars, respectively). Green box indicates the 3\u20134 min window following the onset of SKF 89976A perfusion during which oIPSCs, eIPSCs, sIPSCs and SKF 89976A-evoked currents are quantified. (C) Histogram of picrotoxin-evoked shift in holding current recorded in dSPNs under control conditions (ACSF, gray) or upon acute inhibition of mGAT1 (SKF 89976A, green). Number of recordings is indicated in parentheses. *p<0.01, Mann\u2013Whitney test. (D) As in (C) for iSPNs. Note that no differences in tonic GABAA-receptor-mediated currents were observed between iSPNs and dSPNs, either in ACSF or SKF 89976A.\n\nIn the striatum, mGAT1 controls ambient levels of GABA that evoke a tonic GABAA receptor-mediated conductance in SPNs (Ade et al., 2008; Kirmse et al., 2008; Santhakumar et al., 2010; Cepeda et al., 2013). Consistent with this, acute pharmacological inhibition of mGAT1 was accompanied by a significant increase in holding current caused by a threefold increase in tonic GABA current in both direct- and indirect-pathway SPNs (Figure 2\u2014figure supplement 2). To exclude the possibility that the increase in oIPSC decay time constant stems from changes in recording conditions during bath application of SKF 89976A, we also monitored spontaneous (s) IPSCs as well as IPSCs evoked electrically within the striatum (eIPSCs; Figure 3). Unlike dopaminergic oIPSCs, neither the amplitude nor the kinetics of eIPSCs were significantly affected after acute mGAT1 inhibition (baseline amplitude: 304 \u00b1 70 pA; 3\u20134 min after SKF 89976A wash-in: 339 \u00b1 80 pA. Baseline 10\u201390% rise time: 1.3 \u00b1 0.4 ms; 3\u20134 min after SKF 89976A wash-in: 1.3 \u00b1 0.4 ms. Baseline decay time constant: 14.8 \u00b1 2.6 ms; 3\u20134 min after SKF 89976A wash-in: 19.6 \u00b1 4.9 ms; n = 9; p>0.1 for all, Wilcoxon signed-rank test; Figure 3A,B), despite a notable increase in holding current during the first few minutes following bath application of SKF 89976A (baseline: \u221282 \u00b1 16 pA; SKF 89976A: \u2212143 \u00b1 21 pA; n = 9; p<0.001, Wilcoxon signed-rank test). Moreover, although the amplitude of sIPSCs decreased slightly in SKF 89976A relative to baseline (97 \u00b1 9 vs 83 \u00b1 7 pA, n = 14; p=0.01, Wilcoxon signed-rank test), the frequency and kinetics of sIPSCs remained unchanged (baseline frequency: 2.7 \u00b1 0.5 Hz; 3\u20134 min after SKF 89976A wash-in: 2.5 \u00b1 0.5 Hz. Baseline 10\u201390% rise time: 0.9 \u00b1 0.1 ms; 3\u20134 min after SKF 89976A wash-in: 0.8 \u00b1 0.1 ms. Baseline decay time constant: 6.8 \u00b1 0.4 ms; 3\u20134 min after SKF 89976A wash-in: 6.4 \u00b1 0.5 ms; p>0.05 for all, Wilcoxon signed-rank test; Figure 3C,D). These results are consistent with previous reports in the striatum and hippocampus (Isaacson et al., 1993; Kirmse et al., 2008). Thus, our results indicate that prolongation of light-evoked IPSCs by SKF 89976A is specific to dopaminergic synapses and not secondary to increased GABAergic tone. Together, these data reveal that the duration of dopaminergic IPSCs is critically dependent on mGAT1 function and, therefore, strongly support that GABA is the transmitter co-released by DA neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative electrically-evoked IPSC before (baseline, black trace) and 3\u20134 min after (green trace) bath application of SKF 89976A (10 \u03bcM). Inset, overlay of peak-normalized eIPSCs. (B) Plot of individual eIPSC decay time constants before (black) and after (green) SKF 89976A application. Mean (\u00b1SEM) shown in red. (C and D) As in (A and B) for spontaneous IPSCs. Note that sIPSCs have much faster kinetics compared to eIPSCs.\n\n### Mouse midbrain DA neurons do not express GABA synthetic enzymes\n\nPrevious reports indicate that up to 10% of midbrain DA neurons in rat contain detectable levels of mRNA for the 65 kDa isoform of glutamic acid decarboxylase (GAD65) (Gonzalez-Hernandez et al., 2001; 2004). Together with GAD67, these enzymes constitute the major biosynthetic pathway for GABA in the central nervous system (Soghomonian and Martin, 1998). To determine the fraction of midbrain DA neurons capable of synthesizing (and by extension releasing) GABA in mice, we performed double fluorescence in situ hybridization for Slc18a2 (Vmat2) and Gad1 or Gad2 (which encode GAD67 and GAD65, respectively). We focused our analyses to regions highlighted in Figure 4A, which consist of the SNc and lateral VTA. In agreement with previous findings (Gonzalez-Hernandez et al., 2001, 2004), we did not detect significant overlap between Vmat2 and Gad1, as only 4 out of 958 Vmat2+ neurons (0.4%) showed weak signal for Gad1 in SNc and lateral VTA (Figure 4A,B). To our surprise, we were also unable to detect Gad2 mRNA in these regions (Figure 4D,E): only 7 out of 1200 Vmat2+ cells (0.6%) were weakly Gad2+, despite the presence of numerous brightly-labeled GABAergic neurons in neighboring substantia nigra pars reticulata (SNr) and within the SNc and lateral VTA. We confirmed our ability to detect co-labeling by examining the histaminergic tuberomamillary nucleus (TMN) and dopaminergic A13 cell group (Figure 4C,F), both of which express GADs (Lin et al., 1990; Esclapez et al., 1993).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig4-v2.jpg)\n\n**Figure 4.:** (A) Two-color in situ hybridization of Slc18a2 (Vmat2; top, red) and Gad1 (middle, green) demonstrates the absence of co-labeled DA neurons (bottom) in a coronal section through lateral VTA and SNc (dashed outline). Nuclei are stained blue. SNr, substantia nigra pars reticulata; D, dorsal; V, ventral; M, medial; L, lateral. (B) Representative high magnification confocal image of Slc18a2 (red) and Gad1 (green) expression in SNc. (C) Double fluorescence in situ hybridization for Slc18a2 and Gad1 exhibits considerable overlap in the tuberomamillary nucleus (TMN). (D and E) As in (A and B) for Slc18a2 (Vmat2) and Gad2 expression. (F) Slc18a2 and Gad2 expression co-localize in the A13 dopaminergic cell group.\n\nLevels of mRNA for GAD65 and GAD67 in DA neurons may be below the detection threshold, yet high enough to sustain GABA synthesis. To address this concern, we attempted to directly visualize GAD protein in DA neurons by immunofluorescence using antibodies directed against GAD65/67 and tyrosine hydroxylase (TH) to label catecholaminergic neurons. However, the high density of GABAergic axons converging into the substantia nigra, combined with the low concentration of GADs in cell bodies compared to axon terminals prevented us from clearly identifying DA neurons that expressed GADs (not shown). We instead imaged coronal brain sections from knock-in mice (Tamamaki et al., 2003; Taniguchi et al., 2011) expressing either EGFP or Cre recombinase under transcriptional control of the endogenous promoter for Gad1 or Gad2 (Figure 5). Cre expression was visualized using a sensitive fluorescent reporter allele (Madisen et al., 2010) and TH expression was revealed via immunofluorescence. These mice offer the advantage of having bright somatic labeling including, in the case of Gad2-ires-Cre mice, of cells with very little transcriptional activity. However, we were unable to detect any DA neuron expressing fluorescent reporter protein driven by either Gad1 (0 out of 519 TH+ neurons) or Gad2 (0 out of 526 TH+ neurons) promoters (Figure 5A\u2013D). Collectively, these results indicate that midbrain DA neurons in the SNc and lateral VTA of mice do not express the GABA synthetic enzymes GAD65 and GAD67.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig5-v2.jpg)\n\n**Figure 5.:** (A) Low magnification epifluorescence image of a coronal section through the ventral midbrain showing the absence of overlap between tyrosine hydroxylase (TH) immunofluorescence (red) and endogenous EGFP (green) in the SNc and lateral VTA of Gad1-Egfp knock-in mice. Blue, nuclear stain. D, dorsal; V, ventral; M, medial; L, lateral. (B) Representative high magnification confocal image of SNc in Gad1-Egfp mice showing mutually exclusive expression of EFGP and TH, confirming that GAD67 is not expressed in SNc DA neurons. (C and D) As in (A and B) for coronal brain sections from Gad2-ires-Cre knock-in mice expressing a fluorescence Cre reporter allele (Ai14). TH immunolabeling and Cre reporter fluorescence respectively depicted in red and green for consistency. The absence of overlap indicates that GAD65 is not expressed in DA neurons of the SNc and lateral VTA.\n\n### Midbrain DA neurons express GABA transaminase\n\nMammalian cells possess alternative means of synthesizing GABA (Seiler, 1980; Caron et al., 1987; Petroff, 2002). GABA transaminase is an enzyme expressed at high levels in GABAergic neurons, including in the ventral midbrain that can reversibly convert succinate semialdehyde into GABA, and vice versa (Bessman et al., 1953; Roberts and Bregoff, 1953; Medina-Kauwe et al., 1994). Because succinate semialdehyde is readily oxidized to succinate to sustain energy production as part of the Krebs cycle, GABA transaminase is thought to participate in the degradation of GABA in most cells, not its synthesis (Balazs et al., 1970). Nevertheless, we considered the possibility that GABA transaminase might contribute GABA in DA neurons. Double fluorescence in situ hybridization for Vmat2 and Abat (the gene encoding GABA transaminase) revealed strong co-labeling in 701 out of 738 DA neurons (95%) within the SNc and lateral VTA (Figure 6A,B), indicating that DA neurons express genes involved in GABA metabolism. To test whether DA neurons employ GABA transaminase to synthesize GABA, we incubated slices of striatum in control ACSF or vigabatrin (VGT)\u2014an irreversible inhibitor of GABA transaminase\u2014for at least thirty minutes prior to recording oIPSCs in SPNs. In agreement with prior work (Overstreet and Westbrook, 2001), this manipulation significantly elevated extracellular GABA levels (picrotoxin-sensitive tonic current in SPNs in ACSF: 24 \u00b1 3 pA, n = 11; in VGT: 115 \u00b1 23 pA, n = 12; p<0.001, Dunn's Multiple Comparison Test), confirming the effectiveness of the drug. To minimize differences in light-evoked responses within experiments, we obtained maximal oIPSCs using strong ChR2 stimulation and limited comparisons to SPNs located in similar areas of dorsal striatum in adjacent slices. Under these conditions, we did not detect significant differences in oIPSC amplitude between both groups (ACSF: 1.1 \u00b1 0.3 nA; VGT: 1.4 \u00b1 0.2 nA; n = 14; p=0.3, Wilcoxon signed-rank test; Figure 6C,D), indicating that GABA transaminase function is not required for GABAergic signaling by DA neurons.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig6-v2.jpg)\n\n**Figure 6.:** (A) Double fluorescence in situ hybridization for Slc18a2 (Vmat2; red) and Abat (green) reveals that midbrain DA neurons overwhelmingly express GABA transaminase. Blue, nuclear stain. D, dorsal; V, ventral; M, medial; L, lateral. (B) High magnification confocal image of Slc18a2 (red) and Abat (green) mRNA distribution in SNc. (C) Light-evoked IPSCs recorded from SPNs upon strong ChR2 stimulation (1 ms, 5 mW\u00b7mm\u22122; blue line) after prolonged incubation in ACSF (black) or vigabatrin (VGT, 100 \u03bcM; magenta). (D) Plot of mean peak oIPSC amplitude in SPNs recorded in similar regions of dorsal striatum in adjacent slices (depicted by gray lines) incubated in either ACSF (black) or VGT (magenta). Mean (\u00b1SEM) values for each group shown in red.\n\n### Midbrain DA neurons express plasma membrane GABA transporters\n\nOur data indicate that inhibitory synaptic transmission from DA neurons does not depend on synthesis of GABA by either GADs or GABA transaminase. In the central nervous system, several synapses rely on neurotransmitter reuptake across the plasma membrane as opposed to de novo synthesis to sustain synaptic transmission (Torres et al., 2003; Edwards, 2007). It is therefore conceivable that DA neurons inhibit SPNs by releasing GABA they acquire from the extracellular environment. mGAT1 and mGAT4 (encoded by Slc6a11) are the two major plasma membrane GABA transporters expressed in the mouse midbrain (Borden, 1996; Lein et al., 2007). We therefore performed double fluorescence in situ hybridization for Vmat2 and mGat1 or mGat4 to establish whether either isoform is present in DA neurons (Figure 7). Surprisingly, we found considerable expression of mGat1 in 667 out of 748 Vmat2+ neurons (89%), particularly within the SNc. mGat4 localized predominantly to glial cells, consistent with previous reports (Borden, 1996), although faint labeling above background was also detected in a substantial fraction (80%) of DA neurons in SNc and lateral VTA (568 out of 713 Vmat2+ neurons).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig7-v2.jpg)\n\n**Figure 7.:** (A) Two color in situ hybridization for Slc18a2 (Vmat2; top, red) and mGat1 (middle, green) shows considerable overlap in SNc and lateral VTA (bottom). Nuclei are stained blue. D, dorsal; V, ventral; M, medial; L, lateral. (B) Representative high magnification confocal image of Slc18a2 (red) and mGat1 (green) in SNc confirms that DA neurons express mRNA for mGAT1. (C) Same as (A) for Slc18a2 (top, red) and mGat4 (middle, green). Note that mGat4 is most strongly expressed in star-shaped glial cells. (D) Confocal image through SNc reveals strong expression of mGat4 mRNA in glial cells and weak labeling in DA neurons.\n\n### GAT function is required for dopaminergic IPSCs\n\nThe expression of mRNA for mGAT1 and mGAT4 in DA neurons raises the possibility that DA neurons acquire GABA not through de novo synthesis, but rather through plasma membrane uptake. Being almost exclusively composed of GABAergic neurons, the striatum represents a rich source of extracellular GABA for dopaminergic terminals (Ade et al., 2008; Kirmse et al., 2008; Janssen et al., 2009; Santhakumar et al., 2010; Cepeda et al., 2013). Inhibition of mGAT1 for a few minutes does not affect the release of GABA from SNc axons (Figure 2C), indicating either that this pharmacological manipulation incompletely blocks GABA reuptake, or that it is too short to deplete presynaptic GABA levels. To determine whether uptake of ambient GABA is necessary for sustaining GABAergic transmission by DA neurons, we therefore inhibited both mGAT1 and mGAT4 in striatal slices using a cocktail of SKF 89976A and SNAP-5114 (a mGAT4 antagonist) for at least 30 min prior to examining oIPSCs in SPNs in the continued presence of GAT antagonists. Whereas oIPSCs obtained under control conditions averaged 1.3 \u00b1 0.2 nA in amplitude (n = 15), oIPSCs recorded in adjacent slices with GABA transport chronically blocked were significantly smaller (0.20 \u00b1 0.07 nA, n = 16; p<0.001 vs ACSF, Dunn's Multiple Comparison Test; Figure 8A,B). Importantly, prolonged exposure to SKF 89976A and SNAP-5114 did not prevent transmitter release non-specifically, as light-evoked dopamine release from SNc axons as well as GABA release from striatopallidal terminals were maintained under these conditions (Figure 8\u2014figure supplement 1). Moreover, the small picrotoxin-sensitive oIPSCs that remained exhibited extremely long decay time constants (>1.5 s), consistent with persistent GABAergic signaling in the absence of plasma membrane reuptake.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig8-v2.jpg)\n\n**Figure 8.:** (A) Dopaminergic IPSCs evoked by strong ChR2 stimulation (1 ms, 5 mW\u00b7mm\u22122; blue line) in slices incubated for at least 30 min in control ACSF (left, black), muscimol (0.1 \u03bcM; right, gray) or a cocktail of mGAT1 and mGAT4 antagonists (10 \u03bcM SKF 89976A + 50 \u03bcM SNAP-5114, respectively; middle, green). Recordings were performed in the continued presence of each drug, in addition to the GABAB receptor antagonist CGP55845 (2\u20135 \u03bcM) and the glutamate receptor blockers NBQX (10 \u03bcM) and R-CPP (10 \u03bcM). Inset, oIPSC in GAT antagonists shown on longer time scale to illustrate slow kinetics. (B) Plot of peak oIPSC amplitudes recorded from individual SPNs in adjacent slices after prolonged incubation in ACSF (black), mGAT1 and mGAT4 inhibitors (green) and muscimol (gray). Mean (\u00b1SEM) indicated in red. *p<0.01 for indicated comparisons, Dunn's Multiple Comparison Test. (C) Histogram of tonic GABA current (IGABA) measured in SPNs as the reduction in holding current evoked by bath application of the GABAA receptor antagonist picrotoxin (100 \u03bcM) under control conditions (black), or after prolonged incubation in mGAT1 and mGAT4 blockers (10 \u03bcM SKF 89976A + 50 \u03bcM SNAP-5114; green), muscimol (0.1 \u03bcM; gray) or vigabatrin (100 \u03bcM; magenta). *p<0.01 vs ACSF, Dunn's Multiple Comparison Test. Number of recordings indicated in parentheses. (D) Plot of consecutive oIPSC amplitudes (normalized to the first light-evoked response) over time under control conditions (ACSF; black; n = 25) and after prolonged incubation in a cocktail of GAT antagonists (10 \u03bcM SKF 89976A + 50 \u03bcM SNAP-5114; green; n = 11). *p<0.001 vs ACSF, Sidak's multiple comparison test. (E) As in (D) for slices supplied with exogenous GABA (100 \u03bcM) for 5\u201310 min before obtaining oIPSCs from SPNs in dorsal striatum (blue; n = 10), and slices supplied with exogenous GABA after prolonged inhibition of GATs with 10 \u03bcM SKF 89976A + 50 \u03bcM SNAP-5114 (magenta; n = 12). *p<0.05 vs ACSF, #p<0.005 vs GABA, Tukey's multiple comparison test. Control traces in (D) and (E) are the same as in Figure 1\u2014figure supplement 1D.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Example traces of light-evoked (1 ms, 5 mW\u00b7mm\u22122; blue line) IPSCs recorded from neurons in the external segment of the globus pallidus (GPe; Vhold = \u221270 mV) in Adora2a-Cre;Ai32 mice, which express ChR2-EYFP in indirect-pathway SPNs. GPe boundaries were identified using the strong EYFP fluorescence of iSPN axonal terminals. Slices were incubated for at least 30 min in ACSF (left, black) or in a cocktail of 10 \u03bcM SKF 89976A and 50 \u03bcM SNAP-5114 (right, green). Pre-incubations and recordings were performed in the continued presence of each drug, in addition to CGP55845 (5 \u03bcM), NBQX (10 \u03bcM) and R-CPP (10 \u03bcM). (B) Amplitude normalized traces from (A) shown on an expanded time scale to reveal the slow decay kinetics of IPSCs in the presence of GAT antagonists. (C) The peak amplitude of striatopallidal oIPSCs did not significantly differ (p=0.7; Mann\u2013Whitney test) between slices bathed in ACSF (black; n = 11 GPe neurons) and slices chronically incubated in GAT blockers (green; n = 16 GPe neurons), indicating that this pharmacological manipulation does not inhibit synaptic transmission at \u2018classical\u2019 GABAergic synapses. Mean (\u00b1SEM) shown in red. (D) Representative traces of light-evoked (1 ms, 5 mW\u00b7mm\u22122; blue lines) DA release in the dorsal striatum of Slc6a3-ires-Cre;Ai32 measured by carbon-fiber amperometry. Pharmacological conditions are identical to those in (A\u2013C). Stimulation artifacts are blanked for clarity. (E) Peak extracellular DA concentration measured in dorsal striatum slices incubated in ACSF (black; n = 9 slices) or in GAT antagonists (green; n = 14 slices). Population means (\u00b1SEM in red) did not differ significantly (p=0.09; Mann\u2013Whitney test).\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01936/elife-01936-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) The peak amplitude of the first oIPSC recorded in dorsal striatum SPNs within the first 1.5 hr after slicing (black) was comparable to that recorded during the next 1.5 hr (gray), indicating that oIPSCs do not rundown with time in the absence of stimulation. Data in this and subsequent panels represent mean \u00b1 SEM. The number of SPNs recorded is indicated in parentheses. (B) The time course of synaptic transmission rundown by consecutive light stimuli was similar in the two groups of slices, confirming that recording conditions in the first and second halves of recording sessions are comparable, and that synaptic rundown of DA neuron oIPSCs is dependent on activity. (C\u2013D) As in (A\u2013B) for slices chronically incubated for 0.5\u20131.0 hr (dark green) or 1.1\u20132.0 hr (light green) in SKF 89976A (10 \u03bcM) + SNAP-5114 (50 \u03bcM). The effect of GAT inhibition on oIPSC amplitude does not vary with pre-incubation duration (C), indicating that our pharmacological manipulation depletes synaptic GABA levels within 30 min. Importantly, stimulation-evoked rundown in GAT blockers is accelerated (contrast panels B and D), consistent with activity dependent depletion of vesicular GABA when cytoplasmic GABA levels are not replenished by GATs.\n\nChronic inhibition of GABA reuptake was also accompanied by considerable elevation of ambient GABA in the striatum, as evidenced by a 7.5-fold increase in tonic GABAA receptor-mediated current in SPNs (picrotoxin-evoked tonic current in ACSF: 24 \u00b1 3 pA, n = 11; in GAT antagonists: 182 \u00b1 32 pA, n = 11; p<0.001, Dunn's Multiple Comparison Test; Figure 8C). This increase in extracellular GABA might account for the reduced amplitude of oIPSCs by promoting the desensitization of GABAA receptors, by shunting synaptic currents, or both. To examine these possibilities, we included an additional experimental condition in which slices were pre-incubated in muscimol before evoking dopaminergic oIPSCs (Figure 8A,B). Muscimol is a potent synaptic and extrasynaptic GABAA receptor agonist that promotes GABAA receptor desensitization to the same extent as GABA (Mortensen et al., 2010), but displays minimal affinity for plasma membrane GABA transporters (Johnston et al., 1978). The concentration of muscimol was titrated to evoke tonic GABAA receptor-mediated currents similar those that developed upon persistent GAT inhibition (picrotoxin-sensitive tonic current: 212 \u00b1 46 pA, n = 10; p<0.001 vs ACSF; p>0.05 vs GAT antagonists, Dunn's Multiple Comparison Test; Figure 8C). Strikingly, this manipulation did not reduce the amplitude of dopaminergic oIPSCs (1.3 \u00b1 0.3 nA, n = 12; p>0.05 vs ACSF, p<0.01 vs GAT antagonists, Dunn's Multiple Comparison Test; Figure 8A,B), indicating that the reduction in oIPSC amplitude observed following GAT inhibition is not secondary to elevation of ambient GABAergic tone. In agreement with this conclusion, the amplitude of oIPSCs was not diminished by prolonged treatment with VGT either (Figure 6C,D), despite significant increases in extracellular GABA (picrotoxin-sensitive tonic current in VGT: 115 \u00b1 23 pA, n = 12; p<0.01 vs ACSF, p>0.05 vs GAT antagonists or muscimol, Dunn's Multiple Comparison Test; Figure 8C).\n\nThese results collectively indicate that GAT function is necessary for GABAergic transmission from SNc axons. If membrane GABA reuptake is required for supplying GABA for vesicular exocytosis, inhibiting GATs should prevent DA neurons from maintaining GABA release with repeated stimulation. Indeed, chronic inhibition of GATs precipitated the rundown of GABAergic transmission from DA neurons in an activity-dependent manner (Figure 8D, Figure 8\u2014figure supplement 2). A second prediction is that elevating extracellular GABA should attenuate synaptic rundown. To test this, we locally applied GABA (100 \u03bcM) to the dorsal striatum for 5\u201310 min prior to recording oIPSCs from SPNs. Following this manipulation, the amplitude of oIPSCs was maintained for several minutes after break-in (Figure 8E). Importantly, this increase in oIPSC amplitude by exogenous GABA was prevented in slices incubated in GAT antagonists (Figure 8E). These data therefore provide strong evidence that membrane GABA transporters play an important role in sustaining GABAergic transmission from DA neurons by supplying the neurotransmitter GABA to presynaptic terminals for vesicular loading and exocytosis.\n\n## Discussion\n\nDespite the importance of midbrain DA neurons, the mechanisms by which they shape the activity of target neurons in the striatum remain poorly understood. In this study, we combined histochemical and electrophysiological approaches to define the cellular and molecular mechanisms that govern GABAergic signaling by DA neurons. Our findings indicate that the vast majority of midbrain DA neurons have the capacity to co-release GABA and identify presynaptic membrane GABA transporters as the likely mechanism employed by DA neurons to acquire GABA for vesicular exocytosis.\n\n### Midbrain DA neurons co-release GABA\n\nThe chemical identity of a synaptic transmitter is typically established only after several independent observations converge on a plausible candidate. In this case, the transmitter released by midbrain DA neurons (1) functions as a GABAA receptor agonist, (2) serves as a substrate for VGAT (Tritsch et al., 2012), and (3) is a substrate for mGAT1. Although VGAT can transport GABA, glycine, and \u03b2-alanine into synaptic vesicles (Gasnier, 2000; Wojcik et al., 2006; Juge et al., 2013), glycine does not function as a GABAA receptor agonist, and the low affinity of \u03b2-alanine for GABAA receptors would give rise to IPSCs with faster kinetics than the ones we observed (Jones et al., 1998a). In addition, mGAT1 is highly selective for GABA (Borden, 1996), and applying GABA exogenously helped sustain IPSCs from DA neurons in a GAT-dependent fashion. Although we did not detect GABA synthetic enzymes in DA neurons in our experiments, SNc and VTA neurons display a GABAergic phenotype, as they contain mRNA for GABA transaminase and the membrane GABA transporters mGAT1 and mGAT4. Together, these results strongly suggest that the neurotransmitter released by midbrain DA neurons is GABA. In agreement with this conclusion, a recent electron microscopic study detected GABA in close association with VMAT2-containing synaptic vesicles in dopaminergic terminals within striatum (Stensrud et al., 2013). Moreover, other dopaminergic neurons in the central nervous system have been reported to contain and/or release GABA, including amacrine cells in the retina (Hirasawa et al., 2012), periglomerular cells in the olfactory bulb (Maher and Westbrook, 2008; Borisovska et al., 2013; Liu et al., 2013), as well as dopaminergic cell groups throughout the brain (Bjorklund and Dunnett, 2007; Stamatakis et al., 2013), suggesting that GABA co-release may be a general property of dopaminergic cells.\n\n### Midbrain DA neurons sustain inhibitory transmission using plasma membrane uptake of GABA\n\nSynaptic transmission requires constant refilling of new and recycled vesicles, which is contingent upon the availability of transmitter in the cytosol. Most GABAergic neurons sustain inhibitory transmission by maintaining high cytosolic concentrations of GABA using de novo synthesis from glutamate by GAD67 and to a lesser extent GAD65 (Asada et al., 1997; Tian et al., 1999; Petroff, 2002). Given that all cells contain glutamate, an amino acid necessary for the production of proteins, the expression of either GAD67 or GAD65 in conjunction with a vesicular GABA transporter is sufficient to mediate vesicular release of GABA. Previous reports have estimated that up to 10% of DA neurons in the SNc and VTA of rats express mRNA for GAD65 (Gonzalez-Hernandez et al., 2001, 2004), suggesting that GABA release may be limited to a subpopulation of DA neurons. We were unable to replicate this observation using two separate approaches, indicating that DA neurons in the SNc and lateral VTA of mice do not rely on de novo synthesis of GABA and have instead adopted other means of obtaining GABA.\n\nMost classical transmitters are transported back into the presynaptic terminal after vesicular release using plasma membrane transporters. This process is important not only for limiting the duration of synaptic currents and preventing extrasynaptic spillover, but also for replenishing presynaptic transmitter levels (Edwards, 2007; Conti et al., 2011). In fact, several synapses, including monoaminergic (Giros et al., 1996; Bengel et al., 1998; Jones et al., 1998b; Xu et al., 2000), glycinergic (Gomeza et al., 2003a, 2003b; Rousseau et al., 2008; Apostolides and Trussell, 2013) as well as some GABAergic terminals (Mathews and Diamond, 2003; Bak et al., 2006; Fricke et al., 2007; Brown and Mathews, 2010; Wang et al., 2013) rely heavily on membrane transporter function to maintain cytosolic transmitter pools available for vesicular loading. Our results show that DA neurons contain mRNA for mGAT1 and mGAT4, indicating that DA neurons might acquire GABA through membrane transport. Indeed, we find that prolonged inhibition of mGAT1 and mGAT4 inhibited GABAergic transmission by DA neurons and precipitated the rundown of oIPSCs, suggesting that DA neurons critically depend on extracellular GABA uptake to maintain cytoplasmic GABA levels and fill synaptic vesicles. By contrast, application of exogenous GABA helped sustain inhibitory transmission from DA neurons. By virtue of the fact that the vast majority of DA neurons in the SNc and lateral VTA contain mRNA for mGATs, our results suggest that GABA co-release is, unlike glutamate co-transmission (Hnasko and Edwards, 2011), a common feature of these cells in the adult nervous system. The reliance on plasma membrane uptake may partially explain why release of both DA and GABA from these neurons is prone to rundown upon repeated stimulation in brain slices (Schmitz et al., 2003; Tritsch et al., 2012; Ishikawa et al., 2013), whereas release of glutamate from dopaminergic neurons or GABA from SPNs (which presumably depend on neurotransmitter synthesis to sustain release) do not suffer from the same shortcoming (Tritsch et al., 2012; Figure 1\u2014figure supplement 1D). Nevertheless, these findings provide evidence that the expression of GABA synthetic enzymes is not required to sustain GABAergic transmission, and identify a GABAergic synapse that instead relies entirely on recycling extracellular GABA. Interestingly, a similar mechanism underlies exocytic release of serotonin from dopaminergic neurons (Zhou et al., 2005) as well as from glutamatergic thalamocortical neurons during development (Lebrand et al., 1996).\n\n### Implications of GABAergic signaling for striatal function\n\nAlthough DA neurons in SNc and VTA differ in the inputs they receive and the signals they convey (Matsumoto and Hikosaka, 2009; Lammel et al., 2011, 2012; Watabe-Uchida et al., 2012; Roeper, 2013), we find that both cell populations are capable of co-releasing GABA with DA, pointing to a fundamental property of dopaminergic signaling. Morphological studies of SPNs at the electron microscopic level have revealed that the majority of dopaminergic synapses terminate on the neck of spines that receive excitatory inputs from cortex and thalamus (Wickens and Arbuthnott, 2005). Although the actions of DA are not believed to be spatially localized (Arbuthnott and Wickens, 2007), this unique synaptic arrangement is indicative of an additional, point-to-point mode of action. An intriguing possibility is that GABA co-release may function to hyperpolarize spines or shunt excitatory cortical and thalamic inputs by activating GABAA receptors. Phasic activation of DA neurons may thereby dampen ongoing cortical and thalamic drive onto SPNs to limit DA receptor-mediated plastic changes to synaptic inputs most strongly activated by salient or rewarding stimuli. In addition, the mechanism adopted by DA neurons to obtain GABA may confer these cells the flexibility to dynamically and locally control GABAergic transmission across their extensive axonal arbors. For instance, VTA neurons projecting to NAc and medial prefrontal cortex may only co-release GABA in the former, where extracellular GABA levels are high compared to cortex (Drasbek and Jensen, 2006; Weitlauf and Woodward, 2008). Alternatively, phasic and chronic changes in mGAT function or extracellular GABA levels resulting from synaptic activity, drugs or disease may alter the amplitude and kinetics of GABAergic currents arising from midbrain dopamine neurons. A greater understanding of the relative effects of DA and GABA on the activity of striatal circuits will help reveal how DA neurons contribute to behavior in health and disease.\n\n## Materials and methods\n\n### Experimental subjects and stereotaxic surgery\n\nAll experimental manipulations were performed in accordance with protocols approved by the Harvard Standing Committee on Animal Care following guidelines described in the US National Institutes of Health Guide for the Care and Use of Laboratory Animals. All mice were group-housed and maintained on a 12-hr light cycle with ad libitum access to food and water. Slc6a3-ires-Cre knock-in mice expressing Cre recombinase in DA neurons (Backman et al., 2006) were obtained from Jackson Labs (Bar Harbor, ME; stock # 006660). These mice were crossed with Drd2-Egfp (GENSAT, founder line S118) or Drd1a-tdTomato (stock # 016204; Jackson Labs) BAC transgenic mice to permit distinction between direct- and indirect-pathway SPNs (Gong et al., 2003; Ade et al., 2011). To genetically target indirect pathway SPNs, Adora2a-Cre BAC transgenic mice (GENSAT, founder line KG139) were used. For stereotaxic viral injections, postnatal day 18\u201325 mice were anesthetized with isoflurane, placed in a small animal stereotaxic frame (David Kopf Instruments, Tujunga, CA) and injected with 1 \u03bcl of an adeno-associated virus (\u223c1012 genome copies per ml; UNC Vector Core Facility, Chapel Hill, NC) encoding Cre-dependent ChR2 (AAV2/8.EF1\u03b1.DIO.hChR2(H134R)-mCherry or AAV2/8.EF1\u03b1.DIO.hChR2(H134R)-EYFP), as described previously (Tritsch et al., 2012). Injection coordinates were 0.8 mm anterior from Lambda, 1.3 mm lateral and 4.4 mm below pia for SNc, and 0.8 mm anterior from Lambda, 0.6 mm lateral and 4.4 mm below pia for VTA. Alternatively, ChR2(H134R)-EYFP was expressed genetically in Cre-containing cells by crossing Slc6a3-ires-Cre;Drd2-Egfp or Slc6a3-ires-Cre;Drd1a-tdTomato mice with Ai32 mice (stock # 012569; Jackson Labs) (Madisen et al., 2012). The knock-in lines used in Figure 5 include Gad1-Egfp (Tamamaki et al., 2003) and Gad2-ires-Cre mice (Taniguchi et al., 2011). The latter were crossed with mice bearing a Cre-dependent tdTomato reporter transgene (Ai14; stock # 007914; Jackson Labs) to reveal the distribution of Cre+ cells (Madisen et al., 2010). Mice were maintained on a C57BL/6 background. Only mice heterozygous for all transgenes were used for experiments.\n\n### Immunocytochemistry and in situ hybridization\n\nMice were anesthetized with isoflurane and transcardially perfused with phosphate buffered saline followed by 4% (wt/vol) paraformaldehyde in 0.1 M sodium phosphate buffer. 50-micrometer coronal brain sections were subject to immunohistochemical staining for tyrosine hydroxylase (AB152; 1:2000; Millipore, Billerica, MA), as described previously (Tritsch et al., 2012). Endogenous tdTomato and EGFP fluorescence were not immuno-enhanced. Double fluorescence in situ hybridization was performed using a tyramide signal amplification method according to the manufacturer's instructions (NEL753001KT; PerkinElmer, Waltham, MA), as previously described (Kwon et al., 2012). Briefly, brains from 4-week old mice were dissected and immediately frozen in liquid nitrogen. They were then cut in 25-\u03bcm-thick sections with a cryostat (Leica, Buffalo Grove, IL), postfixed in 4% PFA, acetylated in 1% triethanolamine and 0.25% acetic anhydride, dehydrated serially in ethanol, bleached in 3% hydrogen peroxide diluted in methanol, prehybridized, and hybridized at 65\u00b0C using the following anti-sense probes provided by the Allen Institute for Brain Science (riboprobe ID specified in parentheses): Gad1 (RP_040324_01_F01), Gad2 (RP_071018_02_B07), Vmat2 (RP_071218_02_B08), mouse Gat1 (RP_071204_04_H01), mouse Gat4 (RP_050428_04_D04), and Abat (RP_050301_02_C02). For in vitro transcription, each cDNA was cloned out from a mouse brain cDNA library using the primer sets suggested in the in situ hybridization data portal from the Allen Institute for Brain Science. Two fluorescein- or digoxigenin-labeled riboprobes generated by an in vitro transcription method (Promega, Madison, WI) were hybridized simultaneously and stained by fluorescein or Cy3 chromogens, respectively. After staining, sections were mounted with Prolong Gold antifade reagent with DAPI nuclear stain (Life Technologies, Grand Island, NY).\n\n### Slice electrophysiology\n\nAcute brain slices and whole-cell voltage-clamp recordings from identified SPNs were obtained using standard methods, as described previously (Tritsch et al., 2012). Briefly, mice (49\u2013178 days old; median = 107 days) were anesthetized and perfused with ice-cold artificial cerebrospinal fluid (ACSF) containing (in mM) 125 NaCl, 2.5 KCl, 25 NaHCO3, 2 CaCl2, 1 MgCl2, 1.25 NaH2PO4 and 11 glucose (295 mOsm\u00b7kg\u22121). Parasagittal slices of striatum (275-\u03bcm thick) were subsequently obtained in cold choline-based cutting solution (in mM: 110 choline chloride, 25 NaHCO3, 2.5 KCl, 7 MgCl2, 0.5 CaCl2, 1.25 NaH2PO4, 25 glucose, 11.6 ascorbic acid, and 3.1 pyruvic acid). Following 15 min recovery in ACSF at 34\u00b0C, slices were kept at room temperature (20\u201322\u00b0C) until use. All solutions were constantly bubbled with 95% O2/5% CO2. Whole-cell voltage-clamp recordings were established from direct- and indirect-pathway SPNs in dorsal or ventral striatum resting 18\u201375 \u03bcm below the slice surface (median: 40 \u03bcm) in ACSF warmed to 32\u201334\u00b0C. Direct-pathway SPNs were identified as tdTomato+ cells in Drd1a-tdTomato mice or EGFP\u2013cells in Drd2-EGFP mice, and indirect-pathway SPNs as tdTomato\u2212or EGFP+ cells in Drd1a-tdTomato and Drd2-EGFP mice, respectively. Patch pipettes (2\u20134 M\u2126) were filled with (in mM) 125 CsCl, 10 TEA-Cl, 10 HEPES, 0.1 Cs-EGTA, 3.3 QX-314 (Cl\u2212salt), 4 Mg-ATP, 0.3 Na-GTP, 8 Na2-Phosphocreatine (pH 7.3 adjusted with CsOH; 295 mOsm\u00b7kg\u22121). The recording perfusate always contained NBQX (10 \u03bcM) and R-CPP (10 \u03bcM) to block AMPA and NMDA receptor-mediated inward currents, respectively, as well as CGP55845 (2\u20135 \u03bcM) to prevent GABAB receptor-evoked pre- and post-synaptic modulation. For some experiments (Figures 6 and 8, Figure 8\u2014figure supplements 1 and 2), slices were incubated for at least 30 min (and up to two hours) in ACSF containing CGP55845 (2\u20135 \u03bcM) in addition to vigabatrin (100 \u03bcM), muscimol (0.1 \u03bcM), or SKF 89976A (10 \u03bcM) + SNAP-5114 (50 \u03bcM) to allow for the depletion of cytosolic GABA levels and synaptic vesicles containing GABA, and to control for the effects of chronically elevated GABAergic signaling. In these cases, drugs continued to be present in the recording chamber for the duration of the experiment. For Figure 8E, GABA (100 \u03bcM, in ACSF containing either 5 \u03bcM CGP55845 or 5 \u03bcM CGP55845 + 10 \u03bcM SKF 89976A + 50 \u03bcM SNAP-5114) was locally applied to the slice via a gravity-fed 250-\u03bcm-wide flow pipe for 5\u201310 min prior to recording. For all voltage-clamp experiments, errors due to the voltage drop across the series resistance (<20 M\u03a9) were left uncompensated. Membrane potentials were corrected for a \u223c5-mV liquid junction potential. Under these conditions, GABAA receptor-mediated currents appeared inward when SPNs were held at negative membrane potentials (Vhold = \u221270 mV). To activate ChR2-expressing fibers, light from a 473-nm laser (Optoengine, Midvale, UT) was focused on the back aperture of the microscope objective to produce wide-field illumination of the recorded cell. Brief pulses of light (1-ms duration; 5 mW\u00b7mm\u22122 under the objective for maximal stimulation, 0.3\u20132 mW\u00b7mm\u22122, for sub-maximal stimulation) were delivered at the recording site at 30 s intervals under control of the acquisition software. Epifluorescence illumination was used sparingly to minimize ChR2 activation prior to recording. eIPSCs were evoked using constant-current pulses (0.1 ms, 7\u201390 \u03bcA) delivered every 15 s through a bipolar tungsten stimulating electrodes positioned within striatum, 100\u2013200 \u03bcm away from the recorded cell. Constant-potential amperometry was performed as before (Tritsch et al., 2012) using commercial glass-encased carbon-fiber microelectrodes (Carbostar-1, Kation Scientific, Minneapolis, MN) placed within dorsal striatum slices and held at 600 mV. All recordings were obtained within 4 hr of slicing. All pharmacological agents were obtained from Tocris (Minneapolis, MN).\n\n### Data acquisition and analysis\n\nBrain sections processed for in situ hybridization or immunofluorescence were imaged with an Olympus VS110 slide-scanning microscope. High-resolution images of regions of interest were subsequently acquired with a Zeiss LSM 510 META confocal microscope (Harvard NeuroDiscovery Center). Individual imaging planes were overlaid and quantified for colocalization in ImageJ (NIH) and thresholded for display in Photoshop (Adobe). Confocal images in figures represent maximum intensity projections of 3-\u00b5m confocal stacks. Membrane currents were amplified and low-pass filtered at 3 kHz using a Multiclamp 700B amplifier (Molecular Devices, Sunnyvale, CA), digitized at 10 kHz and acquired using National Instruments acquisition boards and a custom version of ScanImage (Pologruto et al., 2003; available upon request or from https://openwiki.janelia.org/wiki/display/ephus/ScanImage) written in MATLAB (Mathworks). Electrophysiology data were analyzed offline using Igor Pro (Wavemetrics, Natick, MA). In figures, voltage-clamp traces represent the averaged waveform of 3\u20135 consecutive acquisitions. Averaged waveforms were used to obtain current latency, peak amplitude, 10\u201390% rise time and decay time constant. The latter was estimated by measuring the time elapsed from the peak of the IPSC to 1/e (36.8%) of the peak amplitude. Detection threshold for sIPSCs was set at 40 pA to facilitate event detection in the presence of large and noisy tonic GABA currents. For pharmacological analyses in Figures 2 and 3, the peak amplitude of IPSCs measured 3\u20134 min following the onset of drug perfusion were averaged, normalized to baseline averages obtained immediately prior to drug application and compared statistically to values obtained at corresponding times in control preparations bathed in ACSF. Data (reported in text and figures as mean \u00b1 SEM) were compared using Prism 6 (GraphPad, La Jolla, CA) with the following non-parametric statistical tests (as indicated in the text): Mann\u2013Whitney for group comparisons, Wilcoxon signed-rank for paired comparisons, and Kruskal\u2013Wallis analysis of variance (ANOVA) followed by Dunn's Multiple Comparison Test for multiple group comparisons. In experiments characterizing the time course of synaptic transmission rundown, two-way ANOVAs were used followed by the Sidak's and Tukey's multiple comparison tests for comparisons between two and more conditions, respectively. p values smaller than 0.05 were considered statistically significant. N values represent the number of recorded cells. For most experiments, a single cell was recorded from in each slice, with each animal contributing fewer than five recordings to individual data sets.\n",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "77c5dc1b-c8fa-47e4-8876-e34b2785c4b9",
+      "submission_id": "6a0900b8-14ee-43ee-a8ed-f35491a8ebe0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Vollum Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01936.016](https://doi.org/10.7554/eLife.01936.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMidbrain dopamine neurons sustain inhibitory transmission using plasma membrane uptake of GABA, not synthesis\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors. The Reviewing editor and the other reviewers discussed their comments before reaching this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis relatively straightforward report follows up on prior work of these authors examining the corelease of GABA from \u201cdopamine\u201d neurons. In this report they extend their studies from the nigrostriatal pathway to the mesolimbic pathway. Interestingly GABA is supplied not by synthetic enzymes in the neurons, but rather by expression of membrane GABA transporters. As previously shown, vesicular uptake of GABA can be performed by the vesicular monamine transporter VMAT2. The questions addressed in this manuscript are whether such corelease occurs in the mesolimbic pathway and whether the agonist is GABA or a related analog.\n\nThe authors nicely demonstrate in Figure 1 that VTA inputs to NAc have similar properties with respect to GABA corelease as the previously demonstrated SNc inputs to dorsal striatum. The majority of the figures then focus on the identity and source of GABA in the VTA-NAc pathway. These experiments are carefully conducted and well presented and convincingly demonstrate that GABA is the principal agonist and that the main source is membrane uptake rather than intracellular synthesis. Although these results are somewhat predictable from prior studies and could be further extended, the results are important in understanding the rather novel, albeit still somewhat mysterious, role of a fast-acting transmitter in midbrain dopamine neurons, and thus should be of interest to a broad community of neuroscientists. The substantial comments of the 3 reviewers are numbered below.\n\n1) These data make several specific, testable predictions that would enhance the strength of the main interpretation. For example, increasing extracellular GABA should increase the amplitude of DA-IPSCs through an mGAT-dependent mechanism. Does bath application of GABA, or perhaps extracellular GABA uncaging, increase DA-IPSCs? And is this effect blocked by the acute presence of mGAT blockers during said GABA application? Wang et al. 2013 (cited) showed that GAT activity can rescue transmission in conventional GABAergic synapses when GABA is bath applied in the presence of gabazine. This experiment would reveal the timecourse over which DA neurons take up GABA from the extracellular space and package it into synaptic vesicles, and it would be important to contrast the timecourse of the authors' novel mechanism with that of enzymatic synthesis at more traditional GABA synapses. This experiment would enhance also the claim that GAT supplies the GABA used for synaptic vesicles.\n\n2) A second prediction is that rundown of transmission induced by SKF should be activity dependent. I found it confusing at first that Figure 2 shows little effect of SKF on IPSC amplitude and Figure 7 shows a large effect, and I am sure readers will also be caught off guard. The difference is that with time the synapses in SKF are depleted of GABA. Therefore if the synapses were stimulated one might expect to accelerate the process, confirming that it reflects depletion of vesicular GABA rather than a side effect of the drug.\n\n3) The authors deal with a number of potential confounding factors such as the increased tonic GABA currents produced by GABA transporter inhibition, showing that this does not affect the kinetics of quantal GABA events from sources other than dopamine neurons. On the other hand, it is remarkable that the inhibitor does not affect the kinetics of these other events \u2013 is it so selective for GABA release from dopamine neurons because the transporter is only expressed on those terminals? It would be helpful if the authors could address this surprising result \u2013 previous work has indicated expression of GAT-1 by SPNs and an effect of a different inhibitor (NO-711) on amplitude and decay time of events evoked by local depolarization (Kirmse et al. 2008).\n\n4) Treatment with GAT-1 inhibitor for longer times effectively eliminates the GABA release by dopamine neurons, as anticipated if it depends on the GABA taken up from other cells. However, it is also possible that dopamine neurons make GABA themselves, and the main argument used here against this is the apparent lack of expression by a variety of criteria. Although these seem reasonable, other work cited by the authors in a different context (Stensrud et al. 2013) along with other work they do cite suggests expression of GAD by a subset of dopamine neurons. Rather than rely on the anatomy, it would help greatly to demonstrate that inactivation of GAD specifically in dopamine neurons does not eliminate the dopaminergic IPSCs. This might require a substantial amount of work that would lie outside the scope of this manuscript (for example a double knockout of both isoforms that is conditional and may not even be available), but it would certainly be helpful. However, showing that expression of a GAD isoform in dopamine neurons makes the dopaminergic IPSCs resistant to inhibition of GAT-1 would be considerably simpler.\n\n5) The authors also suggest that GABA corelease involves both mesostriatal and mesolimbic projections, in contrast to the apparent corelease of glutamate by a subset of VTA neurons. However, Stensrud et al. (2013) also showed that only \u223c10 % of striatal terminals apparently contain GABA, raising the question whether the dopaminergic IPSCs derive from a subset of both populations, or all of them. It would be great if the authors could address this point, and one way might be to determine whether GAT-1 inhibition influences dopamine release measured by voltammetry-GABA corelease by many terminals should have some effect on total dopamine release, but involvement of only a subset would produce minimal if any effect. This would also help to address one important functional outcome of corelease that has not yet been examined.\n",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1e665be0-510e-42a9-8f3b-f51e9addffbd",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C1",
+      "claim": "Synaptic transmission between midbrain dopamine neurons and target neurons in the striatum is essential for the selection and reinforcement of movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic transmission between midbrain dopamine neurons and target neurons in the striatum is essential for the selection and reinforcement of movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the functional importance of dopaminergic transmission, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "e7c7e34c-a410-4b7a-a80c-2f0b754574eb",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C2",
+      "claim": "Nigrostriatal dopamine neurons inhibit striatal projection neurons by releasing a neurotransmitter that activates GABAA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence indicates that nigrostriatal dopamine neurons inhibit striatal projection neurons by releasing a neurotransmitter that activates GABAA receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references recent evidence and is supported by citation to prior work (implicitly the authors' previous work mentioned later).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "49fbea1e-850b-4c81-a2b2-0816d8db4c7b",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C3",
+      "claim": "The inhibitory phenomenon extends to mesolimbic afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that this phenomenon extends to mesolimbic afferents",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the current study, supported by experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "8604017d-0779-4158-90ab-33185b65fc97",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C4",
+      "claim": "The released neurotransmitter is GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "and confirm that the released neurotransmitter is GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding confirmed through multiple experimental approaches including pharmacological characterization with mGAT1 inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "859fbb79-a073-452d-a07e-f7fb23d81b29",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C5",
+      "claim": "The GABA synthetic enzymes GAD65 and GAD67 are not detected in midbrain dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the GABA synthetic enzymes GAD65 and GAD67 are not detected in midbrain dopamine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by in situ hybridization and immunofluorescence data presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "81462c43-0917-4dda-a051-bd8c44ed5ca9",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C6",
+      "claim": "Midbrain dopamine neurons express the membrane GABA transporters mGAT1 (Slc6a1) and mGAT4 (Slc6a11).",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, these cells express the membrane GABA transporters mGAT1 (Slc6a1) and mGAT4 (Slc6a11)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by double fluorescence in situ hybridization data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "a79b2db8-e6c2-438a-b129-2197a2a32993",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C7",
+      "claim": "Inhibition of GABA transporters prevents GABA co-release.",
+      "claim_type": "EXPLICIT",
+      "source": "and inhibition of these transporters prevents GABA co-release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by pharmacological experiments with GAT antagonists shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "63734785-1712-4858-909c-a1f4430e6ef6",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C8",
+      "claim": "GABA co-release is a general feature of midbrain dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings therefore indicate that GABA co-release is a general feature of midbrain dopaminergic neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the widespread expression of mGATs in DA neurons and the observation of GABAergic transmission in both SNc and VTA projections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "4adc508f-e4ce-41e1-8b4b-c020c91d5027",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C9",
+      "claim": "GABA co-release relies on GABA uptake from the extracellular milieu as opposed to de novo synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "that relies on GABA uptake from the extracellular milieu as opposed to de novo synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the absence of GAD enzymes, the presence of GABA transporters, and the effects of GAT inhibition on synaptic transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "73119c6f-7806-4bbd-b8c8-e58147ab1f64",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C10",
+      "claim": "Optogenetic stimulation of VTA axons evokes monosynaptic, GABAA receptor-mediated inhibitory postsynaptic currents in striatal projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our recording conditions, optogenetic stimulation of VTA axons with brief (1 ms) flashes of blue light reliably evoked inward IPSCs in direct- and indirect-pathway SPNs that were blocked by the GABAA receptor antagonists picrotoxin (n = 12; Figure 1B,E) and SR95531 (n = 4, not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by electrophysiological recordings shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "492ba329-c88f-4e7c-b942-705c237f2720",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C11",
+      "claim": "Optogenetically-evoked IPSCs in NAc averaged 353 \u00b1 60 pA in peak amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "They averaged 353 \u00b1 60 pA in peak amplitude (range = 68\u2013905 pA; n = 16)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "21a6dceb-744d-4ac6-ae31-56edb9d952a6",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C12",
+      "claim": "Optogenetically-evoked IPSCs in NAc have a 10\u201390% rise time of 2.4 \u00b1 0.2 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "with a 10\u201390% rise time of 2.4 \u00b1 0.2 ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of IPSC kinetics from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "2c1bcccb-3986-4134-b10f-49298435d6ba",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C13",
+      "claim": "Optogenetically-evoked IPSCs in NAc have a decay time constant of 46.8 \u00b1 7.2 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "and a decay time constant of 46.8 \u00b1 7.2 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of IPSC kinetics from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "e02a1280-70a5-4e41-ac55-c4963e5e9daa",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C14",
+      "claim": "The synaptic latency of oIPSCs in NAc did not differ from that observed in dorsal striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptic latency of oIPSCs in NAc did not differ from that observed in dorsal striatum under similar experimental conditions (Figure 1C,F), indicating that the connection is monosynaptic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative analysis of electrophysiological data used to infer monosynaptic connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "df0eb468-30b7-482c-969d-af417de022f1",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C15",
+      "claim": "mGAT1 is expressed predominantly throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the four genes identified in mice that encode high affinity membrane GABA transporters, Slc6a1 is expressed predominantly throughout the brain (Borden, 1996; Lein et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "e03f2231-3456-4663-a7fe-89d98d099953",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C16",
+      "claim": "mGAT1 distributes mainly to presynaptic terminals of GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Its gene product, mGAT1, distributes mainly to presynaptic terminals of GABAergic neurons and serves to shape the amplitude and time course of IPSCs as well as regulate extrasynaptic levels of GABA (Isaacson et al., 1993; Jensen et al., 2003; Overstreet and Westbrook, 2003; Conti et al., 2004; Chiu et al., 2005; Bragina et al., 2008; Kirmse et al., 2008; Cepeda et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "629a34fc-0ba9-4081-be15-cf83ae70a179",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C17",
+      "claim": "mGAT1 is highly selective for GABA and does not transport structurally similar GABAA receptor agonists such as \u03b2-alanine, taurine, and muscimol.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, mGAT1 is highly selective for GABA and does not transport structurally similar GABAA receptor agonists such as \u03b2-alanine, taurine, and muscimol (Johnston et al., 1978; Tamura et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "255ebb2f-3e9f-4a9b-a6f9-7d5b4c093526",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C18",
+      "claim": "Acute inhibition of mGAT1 with SKF 89976A significantly prolonged the decay time constant of dopaminergic oIPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mGAT1 antagonism significantly affected decay kinetics: whereas oIPSC decay time constants remained stable in control recordings (baseline: 33.6 \u00b1 5.8 ms; 3\u20134 min after ACSF wash-in: 32.1 \u00b1 5.8 ms; p=0.6, Wilcoxon signed-rank test), they were prolonged by a factor of 3 in the presence of SKF 89976A (baseline: 38.6 \u00b1 6.0 ms; 3\u20134 min after SKF 89976A wash-in: 115.9 \u00b1 26.3 ms; p=0.002, Wilcoxon signed-rank test; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding from pharmacological manipulation and electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "f783cff4-e2fe-44f0-9860-6d05cb2c5272",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C19",
+      "claim": "mGAT1 activity normally shortens the duration of dopaminergic IPSCs by clearing released neurotransmitter from the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that mGAT1 activity normally shortens the duration of dopaminergic IPSCs, likely by clearing released neurotransmitter from the extracellular space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the effects of mGAT1 inhibition on IPSC kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "7a5e9f3f-e916-47dc-85e0-eea3790f2a0a",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C20",
+      "claim": "Only 4 out of 958 Vmat2+ neurons (0.4%) showed weak signal for Gad1 in SNc and lateral VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous findings (Gonzalez-Hernandez et al., 2001, 2004), we did not detect significant overlap between Vmat2 and Gad1, as only 4 out of 958 Vmat2+ neurons (0.4%) showed weak signal for Gad1 in SNc and lateral VTA (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from in situ hybridization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "7812d949-2f8c-41ef-b7fa-58cece9624d6",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C21",
+      "claim": "Only 7 out of 1200 Vmat2+ cells (0.6%) were weakly Gad2+ in SNc and lateral VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, we were also unable to detect Gad2 mRNA in these regions (Figure 4D,E): only 7 out of 1200 Vmat2+ cells (0.6%) were weakly Gad2+",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from in situ hybridization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "5167b3b6-742a-47b9-a0b1-03c8224a1ed8",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C22",
+      "claim": "No DA neurons expressing fluorescent reporter protein driven by Gad1 promoter were detected (0 out of 519 TH+ neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were unable to detect any DA neuron expressing fluorescent reporter protein driven by either Gad1 (0 out of 519 TH+ neurons)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from immunofluorescence analysis of knock-in mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "fa4d4ca7-1898-4c4e-acc6-04478b5f3770",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C23",
+      "claim": "No DA neurons expressing fluorescent reporter protein driven by Gad2 promoter were detected (0 out of 526 TH+ neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "or Gad2 (0 out of 526 TH+ neurons) promoters (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from immunofluorescence analysis of knock-in mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "62385810-410c-4af0-9a18-dc9d4beb3d44",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C24",
+      "claim": "Midbrain DA neurons in the SNc and lateral VTA of mice do not express the GABA synthetic enzymes GAD65 and GAD67.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that midbrain DA neurons in the SNc and lateral VTA of mice do not express the GABA synthetic enzymes GAD65 and GAD67.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on multiple lines of experimental evidence from in situ hybridization and immunofluorescence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "37e49626-d373-4331-8be6-584fa3a6905a",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C25",
+      "claim": "701 out of 738 DA neurons (95%) within the SNc and lateral VTA express Abat (GABA transaminase).",
+      "claim_type": "EXPLICIT",
+      "source": "Double fluorescence in situ hybridization for Vmat2 and Abat (the gene encoding GABA transaminase) revealed strong co-labeling in 701 out of 738 DA neurons (95%) within the SNc and lateral VTA (Figure 6A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from in situ hybridization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "3295c9a7-7966-4a04-b5dd-4d3c0bcf29b2",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C26",
+      "claim": "Prolonged exposure to vigabatrin significantly elevated extracellular GABA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with prior work (Overstreet and Westbrook, 2001), this manipulation significantly elevated extracellular GABA levels (picrotoxin-sensitive tonic current in SPNs in ACSF: 24 \u00b1 3 pA, n = 11; in VGT: 115 \u00b1 23 pA, n = 12; p<0.001, Dunn's Multiple Comparison Test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from pharmacological manipulation and electrophysiological recordings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "b91ac79a-6c7e-4b5c-ad67-31925d7c9612",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C27",
+      "claim": "Vigabatrin treatment did not significantly affect oIPSC amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we did not detect significant differences in oIPSC amplitude between both groups (ACSF: 1.1 \u00b1 0.3 nA; VGT: 1.4 \u00b1 0.2 nA; n = 14; p=0.3, Wilcoxon signed-rank test; Figure 6C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from pharmacological manipulation and electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "afc7ce93-2e1b-422a-b0c8-96d87343d6eb",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C28",
+      "claim": "GABA transaminase function is not required for GABAergic signaling by DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that GABA transaminase function is not required for GABAergic signaling by DA neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the lack of effect of vigabatrin on oIPSC amplitude.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "48437050-0167-4fc5-a4fc-a952abf9e2de",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C29",
+      "claim": "667 out of 748 Vmat2+ neurons (89%) express mGat1, particularly within the SNc.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found considerable expression of mGat1 in 667 out of 748 Vmat2+ neurons (89%), particularly within the SNc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from in situ hybridization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "dbadf6bf-b92a-4ca3-a684-5aa31f257a00",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C30",
+      "claim": "568 out of 713 Vmat2+ neurons (80%) in SNc and lateral VTA express mGat4.",
+      "claim_type": "EXPLICIT",
+      "source": "mGat4 localized predominantly to glial cells, consistent with previous reports (Borden, 1996), although faint labeling above background was also detected in a substantial fraction (80%) of DA neurons in SNc and lateral VTA (568 out of 713 Vmat2+ neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from in situ hybridization experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "fbc86d7d-5a71-47e6-ad82-2ce6a8eff6e9",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C31",
+      "claim": "Chronic inhibition of mGAT1 and mGAT4 significantly reduced oIPSC amplitude compared to control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas oIPSCs obtained under control conditions averaged 1.3 \u00b1 0.2 nA in amplitude (n = 15), oIPSCs recorded in adjacent slices with GABA transport chronically blocked were significantly smaller (0.20 \u00b1 0.07 nA, n = 16; p<0.001 vs ACSF, Dunn's Multiple Comparison Test; Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding from pharmacological manipulation and electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "ab6bb935-06fb-42c9-8e28-2b55d24dccc2",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C32",
+      "claim": "Prolonged exposure to SKF 89976A and SNAP-5114 did not prevent transmitter release non-specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, prolonged exposure to SKF 89976A and SNAP-5114 did not prevent transmitter release non-specifically, as light-evoked dopamine release from SNc axons as well as GABA release from striatopallidal terminals were maintained under these conditions (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment demonstrating specificity of the pharmacological manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "a4d6e42c-95e4-4853-a9b5-77ce6a06d0de",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C33",
+      "claim": "Chronic inhibition of GABA reuptake was accompanied by a 7.5-fold increase in tonic GABAA receptor-mediated current in SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic inhibition of GABA reuptake was also accompanied by considerable elevation of ambient GABA in the striatum, as evidenced by a 7.5-fold increase in tonic GABAA receptor-mediated current in SPNs (picrotoxin-evoked tonic current in ACSF: 24 \u00b1 3 pA, n = 11; in GAT antagonists: 182 \u00b1 32 pA, n = 11; p<0.001, Dunn's Multiple Comparison Test; Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from pharmacological manipulation and electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "b0008278-fd96-4b78-8ca7-7f8e9654e473",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C34",
+      "claim": "Muscimol treatment did not reduce the amplitude of dopaminergic oIPSCs despite elevating tonic GABA current.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, this manipulation did not reduce the amplitude of dopaminergic oIPSCs (1.3 \u00b1 0.3 nA, n = 12; p>0.05 vs ACSF, p<0.01 vs GAT antagonists, Dunn's Multiple Comparison Test; Figure 8A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment demonstrating that elevated GABAergic tone alone does not account for reduced oIPSCs with GAT inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "4d7c084d-b4c7-493d-9e52-ba2274842b79",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C35",
+      "claim": "The reduction in oIPSC amplitude observed following GAT inhibition is not secondary to elevation of ambient GABAergic tone.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the reduction in oIPSC amplitude observed following GAT inhibition is not secondary to elevation of ambient GABAergic tone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the muscimol control experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "2ee9370c-8004-4a2a-b5b9-09d729ddaf54",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C36",
+      "claim": "Chronic inhibition of GATs precipitated the rundown of GABAergic transmission from DA neurons in an activity-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, chronic inhibition of GATs precipitated the rundown of GABAergic transmission from DA neurons in an activity-dependent manner (Figure 8D, Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from pharmacological manipulation and repeated stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "9c545394-6b5a-4fdb-8dc3-8d1b4b1292fa",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C37",
+      "claim": "Local application of GABA (100 \u03bcM) to the dorsal striatum maintained the amplitude of oIPSCs for several minutes after break-in.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we locally applied GABA (100 \u03bcM) to the dorsal striatum for 5\u201310 min prior to recording oIPSCs from SPNs. Following this manipulation, the amplitude of oIPSCs was maintained for several minutes after break-in (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from exogenous GABA application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "3a47b723-f01c-4594-b6dd-b9071be02a61",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C38",
+      "claim": "The increase in oIPSC amplitude by exogenous GABA was prevented in slices incubated in GAT antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this increase in oIPSC amplitude by exogenous GABA was prevented in slices incubated in GAT antagonists (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding demonstrating that the effect of exogenous GABA requires functional GATs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "940105a8-e7bd-4efe-98d2-e94fdca4d918",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C39",
+      "claim": "Membrane GABA transporters play an important role in sustaining GABAergic transmission from DA neurons by supplying the neurotransmitter GABA to presynaptic terminals for vesicular loading and exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These data therefore provide strong evidence that membrane GABA transporters play an important role in sustaining GABAergic transmission from DA neurons by supplying the neurotransmitter GABA to presynaptic terminals for vesicular loading and exocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "fe121603-0d15-4547-a06d-ac89734094ec",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C40",
+      "claim": "The vast majority of midbrain DA neurons have the capacity to co-release GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that the vast majority of midbrain DA neurons have the capacity to co-release GABA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the widespread expression of mGATs in DA neurons and functional evidence of GABAergic transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "3f5ff2c0-8a05-45da-9461-11cb5ac66c28",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C41",
+      "claim": "Presynaptic membrane GABA transporters are the mechanism employed by DA neurons to acquire GABA for vesicular exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "and identify presynaptic membrane GABA transporters as the likely mechanism employed by DA neurons to acquire GABA for vesicular exocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "63db0272-189d-47c0-bd6f-f8c08abd4ee9",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C42",
+      "claim": "VGAT can transport GABA, glycine, and \u03b2-alanine into synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although VGAT can transport GABA, glycine, and \u03b2-alanine into synaptic vesicles (Gasnier, 2000; Wojcik et al., 2006; Juge et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "60957b37-c939-41f6-a740-14b0d3a2ebf9",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C43",
+      "claim": "Glycine does not function as a GABAA receptor agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "glycine does not function as a GABAA receptor agonist",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of neurotransmitter pharmacology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "6c9b05ad-e450-4e97-a75e-0a4665d665a0",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C44",
+      "claim": "The low affinity of \u03b2-alanine for GABAA receptors would give rise to IPSCs with faster kinetics than the ones observed.",
+      "claim_type": "EXPLICIT",
+      "source": "and the low affinity of \u03b2-alanine for GABAA receptors would give rise to IPSCs with faster kinetics than the ones we observed (Jones et al., 1998a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on pharmacological properties and comparison with observed data, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "79afd739-9da6-4618-a1f1-043023527e29",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C45",
+      "claim": "A recent electron microscopic study detected GABA in close association with VMAT2-containing synaptic vesicles in dopaminergic terminals within striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this conclusion, a recent electron microscopic study detected GABA in close association with VMAT2-containing synaptic vesicles in dopaminergic terminals within striatum (Stensrud et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "6b953167-85ef-42f3-98e5-489479a23c2b",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C46",
+      "claim": "Other dopaminergic neurons in the central nervous system have been reported to contain and/or release GABA, including amacrine cells in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, other dopaminergic neurons in the central nervous system have been reported to contain and/or release GABA, including amacrine cells in the retina (Hirasawa et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "2a55614c-1a14-4a0d-a15f-f7e1d12beffe",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C47",
+      "claim": "Periglomerular cells in the olfactory bulb contain and/or release GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "periglomerular cells in the olfactory bulb (Maher and Westbrook, 2008; Borisovska et al., 2013; Liu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "49fbeeb6-8808-4ff4-b98d-f705bf474bcc",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C48",
+      "claim": "GABA co-release may be a general property of dopaminergic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that GABA co-release may be a general property of dopaminergic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on observations across multiple dopaminergic cell types.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "27f989ed-a655-412e-a9d1-1ab7414c9280",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C49",
+      "claim": "Most GABAergic neurons sustain inhibitory transmission by maintaining high cytosolic concentrations of GABA using de novo synthesis from glutamate by GAD67 and to a lesser extent GAD65.",
+      "claim_type": "EXPLICIT",
+      "source": "Most GABAergic neurons sustain inhibitory transmission by maintaining high cytosolic concentrations of GABA using de novo synthesis from glutamate by GAD67 and to a lesser extent GAD65 (Asada et al., 1997; Tian et al., 1999; Petroff, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "52c0579a-fa68-42fe-9655-9729a38ea8da",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C50",
+      "claim": "The expression of either GAD67 or GAD65 in conjunction with a vesicular GABA transporter is sufficient to mediate vesicular release of GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that all cells contain glutamate, an amino acid necessary for the production of proteins, the expression of either GAD67 or GAD65 in conjunction with a vesicular GABA transporter is sufficient to mediate vesicular release of GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of GABAergic neurotransmission.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "b71c284d-924d-47f8-a8cf-d4fdd7d409bf",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C51",
+      "claim": "Previous reports have estimated that up to 10% of DA neurons in the SNc and VTA of rats express mRNA for GAD65.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports have estimated that up to 10% of DA neurons in the SNc and VTA of rats express mRNA for GAD65 (Gonzalez-Hernandez et al., 2001, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "0eb89f20-070a-4db0-8cb5-c983b58342ed",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C52",
+      "claim": "DA neurons in the SNc and lateral VTA of mice do not rely on de novo synthesis of GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "We were unable to replicate this observation using two separate approaches, indicating that DA neurons in the SNc and lateral VTA of mice do not rely on de novo synthesis of GABA and have instead adopted other means of obtaining GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the absence of GAD expression in the authors' experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "895b06c2-fdfd-4365-ab5b-02528cdcd091",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C53",
+      "claim": "Several synapses rely heavily on membrane transporter function to maintain cytosolic transmitter pools available for vesicular loading.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, several synapses, including monoaminergic (Giros et al., 1996; Bengel et al., 1998; Jones et al., 1998b; Xu et al., 2000), glycinergic (Gomeza et al., 2003a, 2003b; Rousseau et al., 2008; Apostolides and Trussell, 2013) as well as some GABAergic terminals (Mathews and Diamond, 2003; Bak et al., 2006; Fricke et al., 2007; Brown and Mathews, 2010; Wang et al., 2013) rely heavily on membrane transporter function to maintain cytosolic transmitter pools available for vesicular loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "31652bc1-ee1a-4bb8-8636-9c147dd25b94",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C54",
+      "claim": "DA neurons critically depend on extracellular GABA uptake to maintain cytoplasmic GABA levels and fill synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that prolonged inhibition of mGAT1 and mGAT4 inhibited GABAergic transmission by DA neurons and precipitated the rundown of oIPSCs, suggesting that DA neurons critically depend on extracellular GABA uptake to maintain cytoplasmic GABA levels and fill synaptic vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the effects of chronic GAT inhibition on synaptic transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "dc5ad550-5f46-4465-aa5a-3640556a28a2",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C55",
+      "claim": "The reliance on plasma membrane uptake may partially explain why release of both DA and GABA from these neurons is prone to rundown upon repeated stimulation in brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "The reliance on plasma membrane uptake may partially explain why release of both DA and GABA from these neurons is prone to rundown upon repeated stimulation in brain slices (Schmitz et al., 2003; Tritsch et al., 2012; Ishikawa et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on the findings and supported by citations to previous observations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "4b5c1120-98cf-4f3e-8aa7-5cdf28cfaf16",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C56",
+      "claim": "Release of glutamate from dopaminergic neurons or GABA from SPNs do not suffer from rundown.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas release of glutamate from dopaminergic neurons or GABA from SPNs (which presumably depend on neurotransmitter synthesis to sustain release) do not suffer from the same shortcoming (Tritsch et al., 2012; Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative observation supported by data and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "7d54a640-0e9b-457a-9c71-86cdd0a7ef50",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C57",
+      "claim": "The expression of GABA synthetic enzymes is not required to sustain GABAergic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these findings provide evidence that the expression of GABA synthetic enzymes is not required to sustain GABAergic transmission",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a major conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "a61f7432-1cd9-40d9-b949-db6fcf7281e4",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C58",
+      "claim": "This study identifies a GABAergic synapse that relies entirely on recycling extracellular GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "and identify a GABAergic synapse that instead relies entirely on recycling extracellular GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a major conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "9b8a6ffc-ec88-400c-8592-ebc342545447",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C59",
+      "claim": "A similar mechanism underlies exocytic release of serotonin from dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a similar mechanism underlies exocytic release of serotonin from dopaminergic neurons (Zhou et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "ef1b786b-dc4c-4b68-95af-eaeeeeec8091",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C60",
+      "claim": "A similar mechanism underlies exocytic release of serotonin from glutamatergic thalamocortical neurons during development.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as from glutamatergic thalamocortical neurons during development (Lebrand et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "0b6a5501-269a-44f9-a8bb-7d49e8b26705",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C61",
+      "claim": "DA neurons in SNc and VTA differ in the inputs they receive and the signals they convey.",
+      "claim_type": "EXPLICIT",
+      "source": "Although DA neurons in SNc and VTA differ in the inputs they receive and the signals they convey (Matsumoto and Hikosaka, 2009; Lammel et al., 2011, 2012; Watabe-Uchida et al., 2012; Roeper, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "891eb6a7-5043-42b0-999c-93ac2c168d11",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C62",
+      "claim": "Both SNc and VTA cell populations are capable of co-releasing GABA with DA.",
+      "claim_type": "EXPLICIT",
+      "source": "we find that both cell populations are capable of co-releasing GABA with DA, pointing to a fundamental property of dopaminergic signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a major finding of the study based on experimental data from both brain regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "81d4681c-b1d3-4bf6-be39-9ee82dc83249",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C63",
+      "claim": "The majority of dopaminergic synapses terminate on the neck of spines that receive excitatory inputs from cortex and thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphological studies of SPNs at the electron microscopic level have revealed that the majority of dopaminergic synapses terminate on the neck of spines that receive excitatory inputs from cortex and thalamus (Wickens and Arbuthnott, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "315c97d5-381c-47fb-8f71-c4be75d7bef6",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C64",
+      "claim": "The actions of DA are not believed to be spatially localized.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the actions of DA are not believed to be spatially localized (Arbuthnott and Wickens, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "ca752f82-9b38-46dd-b0d7-61b39b443d6d",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C65",
+      "claim": "GABA co-release may function to hyperpolarize spines or shunt excitatory cortical and thalamic inputs by activating GABAA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing possibility is that GABA co-release may function to hyperpolarize spines or shunt excitatory cortical and thalamic inputs by activating GABAA receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the functional role of GABA co-release.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "96c5d34a-e2a5-4f86-add2-290a6186b36c",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C66",
+      "claim": "Phasic activation of DA neurons may dampen ongoing cortical and thalamic drive onto SPNs to limit DA receptor-mediated plastic changes to synaptic inputs most strongly activated by salient or rewarding stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Phasic activation of DA neurons may thereby dampen ongoing cortical and thalamic drive onto SPNs to limit DA receptor-mediated plastic changes to synaptic inputs most strongly activated by salient or rewarding stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the functional role of GABA co-release.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "322f8229-db04-43d0-9756-a51cb4ef5851",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C67",
+      "claim": "The mechanism adopted by DA neurons to obtain GABA may confer these cells the flexibility to dynamically and locally control GABAergic transmission across their extensive axonal arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the mechanism adopted by DA neurons to obtain GABA may confer these cells the flexibility to dynamically and locally control GABAergic transmission across their extensive axonal arbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the functional implications of the uptake mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "7a38272e-6a0e-46ff-9495-19d23f693e10",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C68",
+      "claim": "VTA neurons projecting to NAc and medial prefrontal cortex may only co-release GABA in the former, where extracellular GABA levels are high compared to cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, VTA neurons projecting to NAc and medial prefrontal cortex may only co-release GABA in the former, where extracellular GABA levels are high compared to cortex (Drasbek and Jensen, 2006; Weitlauf and Woodward, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by citations about regional differences in GABA levels.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "ebeec64b-b391-459d-8faa-04b386606245",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "claim_id": "C69",
+      "claim": "Phasic and chronic changes in mGAT function or extracellular GABA levels resulting from synaptic activity, drugs or disease may alter the amplitude and kinetics of GABAergic currents arising from midbrain dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, phasic and chronic changes in mGAT function or extracellular GABA levels resulting from synaptic activity, drugs or disease may alter the amplitude and kinetics of GABAergic currents arising from midbrain dopamine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about potential modulatory mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c1aa4f7d-3c31-4d54-9564-dbd178e219fc",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of VTA dopaminergic axons evokes monosynaptic, GABAA receptor-mediated inhibitory postsynaptic currents (IPSCs) in striatal projection neurons in the nucleus accumbens (NAc). These IPSCs have characteristic kinetics (353 \u00b1 60 pA amplitude, 2.4 \u00b1 0.2 ms rise time, 46.8 \u00b1 7.2 ms decay) and synaptic latencies comparable to those in dorsal striatum, indicating monosynaptic connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10-C14 provide converging electrophysiological evidence from optogenetic experiments showing GABAergic transmission from VTA to NAc. The data include quantitative measurements of IPSC properties, pharmacological blockade with GABAA antagonists, and latency analysis supporting monosynaptic connectivity. The experimental design is appropriate with proper controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "1e1f4bfa-3a6c-4b76-8e6c-fb20b924de99",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The neurotransmitter released by dopaminergic neurons is GABA, not alternative GABAA receptor agonists. This is supported by the high selectivity of mGAT1 for GABA (not \u03b2-alanine, taurine, or muscimol), and by the observation that acute mGAT1 inhibition with SKF 89976A significantly prolongs the decay time constant of dopaminergic IPSCs by approximately 3-fold without affecting amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17-C19, C42-C44 provide strong pharmacological evidence that GABA is the released neurotransmitter. The selectivity of mGAT1 for GABA (C17) combined with the specific effect of mGAT1 inhibition on IPSC kinetics (C18) provides compelling evidence. The exclusion of alternative agonists based on pharmacological properties (C43-C44) is well-reasoned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "b728a877-d757-45ec-af39-f1c84d9754af",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Midbrain dopamine neurons in the SNc and lateral VTA of mice do not express the GABA synthetic enzymes GAD65 (Gad2) or GAD67 (Gad1). This was demonstrated using two independent approaches: double fluorescence in situ hybridization showing <1% colocalization of Vmat2 with Gad1 or Gad2, and immunofluorescence in knock-in reporter mice showing 0% overlap of TH+ neurons with Gad1 or Gad2 promoter-driven reporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C20-C24, C51-C52 provide robust evidence from two complementary methods (in situ hybridization and genetic reporter mice) showing absence of GAD expression in DA neurons. The quantitative data are clear (<1% overlap), sample sizes are adequate (>500 neurons counted), and the findings contradict prior reports in rats (C51), which the authors appropriately address.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "8d229fe5-804f-47b3-a261-99824b267928",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GABA transaminase (Abat) is expressed in 95% of DA neurons in SNc and lateral VTA, but its function is not required for GABAergic signaling by DA neurons. Prolonged inhibition of GABA transaminase with vigabatrin elevated extracellular GABA levels but did not significantly affect oIPSC amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 demonstrate that while GABA transaminase is present in DA neurons, it is not necessary for GABA release. The in situ hybridization data (C25) are quantitative and robust. The vigabatrin experiment (C26-C27) includes appropriate controls showing drug efficacy (elevated tonic GABA) while oIPSC amplitude remains unchanged, supporting the conclusion in C28.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "d3bc5bf6-bbf2-4188-9951-7abd6ed752b1",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Midbrain dopamine neurons express the membrane GABA transporters mGAT1 (Slc6a1) and mGAT4 (Slc6a11). Double fluorescence in situ hybridization revealed that 89% of Vmat2+ neurons express mGat1 (particularly in SNc) and 80% express mGat4 (though mGat4 is predominantly in glia).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C29-C30 provide quantitative in situ hybridization data showing widespread expression of GABA transporters in DA neurons. Sample sizes are adequate (>700 neurons), and the findings are internally consistent. The observation that mGat4 is predominantly glial (C30) is appropriately noted and consistent with prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chronic inhibition of GABA transporters (mGAT1 and mGAT4) prevents GABA co-release from dopaminergic neurons. Prolonged GAT blockade significantly reduced oIPSC amplitude (from 1.3 \u00b1 0.2 nA to 0.20 \u00b1 0.07 nA), precipitated activity-dependent rundown of transmission, and this effect was rescued by exogenous GABA application in a GAT-dependent manner. The reduction in oIPSC amplitude is not due to elevated ambient GABA tone, as muscimol treatment did not reduce oIPSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C31-C39, C54 provide comprehensive evidence that GAT function is necessary for sustained GABA release. The experimental design includes appropriate controls: specificity controls showing maintained DA and striatopallidal GABA release (C32), muscimol control excluding tonic GABA effects (C34-C35), and rescue experiments with exogenous GABA (C37-C38). The convergence of multiple lines of evidence strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "081bae9e-f235-4df9-8144-6c0f893b22ae",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GABA co-release is a general feature of midbrain dopaminergic neurons that relies on GABA uptake from the extracellular milieu rather than de novo synthesis. Both SNc and VTA DA neurons are capable of co-releasing GABA with dopamine, representing a novel GABAergic synapse that relies entirely on recycling extracellular GABA without requiring GABA synthetic enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C40-C41, C57-C58, C62 represent the major conclusions of the study. These are well-supported by the convergence of multiple experimental findings: absence of GAD enzymes (C5, C24), presence of GABA transporters (C6, C29-C30), requirement for GAT function (C7, C31-C39), and functional evidence from both SNc and VTA (C3, C62). The logic connecting these observations is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "d55b03d7-ff2f-4c89-84ed-29947ec6925c",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "mGAT1 (Slc6a1) is expressed predominantly throughout the brain and distributes mainly to presynaptic terminals of GABAergic neurons, where it shapes IPSC amplitude and time course and regulates extrasynaptic GABA levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are well-supported by multiple citations to established literature. These represent accepted background knowledge about mGAT1 function and distribution that provides context for the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "4879f9b2-4a22-4a18-bba1-3333157c2510",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Synaptic transmission between midbrain dopamine neurons and striatal projection neurons is essential for movement selection and reinforcement. Recent evidence indicates that nigrostriatal dopamine neurons inhibit striatal projection neurons by releasing a neurotransmitter that activates GABAA receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 represent established background knowledge (C1) and reference to prior work including the authors' previous findings (C2). These provide appropriate context for the current study and are supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "9dc366c0-1b3d-4f93-8ccb-94257ecd9667",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "GABA co-release from dopaminergic neurons has been observed in multiple neuronal populations, including retinal amacrine cells, olfactory bulb periglomerular cells, and other dopaminergic cell groups. Similar uptake-dependent neurotransmitter release mechanisms have been reported for serotonin release from dopaminergic and glutamatergic neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48, C59-C60 are supported by appropriate citations to prior literature. These claims provide important context showing that the findings are consistent with observations in other systems, though C48 is appropriately qualified as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "efdb0952-b225-48ae-9d12-a2a893730a29",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Most GABAergic neurons sustain inhibitory transmission through de novo GABA synthesis via GAD67 and GAD65, which is sufficient for vesicular GABA release. However, several synapses (monoaminergic, glycinergic, and some GABAergic) rely heavily on membrane transporter function to maintain cytosolic transmitter pools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50, C53 represent established background knowledge supported by appropriate citations. These provide important context for understanding why the findings in DA neurons represent a departure from typical GABAergic transmission.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "ba50fbbd-5cb7-4ca4-bbb6-12ac415265b7",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The reliance on plasma membrane uptake may explain why DA and GABA release from dopaminergic neurons is prone to rundown upon repeated stimulation in brain slices, whereas glutamate release from dopaminergic neurons or GABA from SPNs (which depend on synthesis) do not show the same rundown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 provide a mechanistic explanation for observed rundown phenomena, supported by citations and data (Figure 1\u2014figure supplement 1D). The comparative observation (C56) strengthens the interpretation, though the explanation remains somewhat speculative (appropriately qualified in C55).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "6b615740-e8c1-4a9c-9cd4-81a02ecd90d7",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "DA neurons in SNc and VTA differ in their inputs and signals, and dopaminergic synapses predominantly terminate on spine necks receiving excitatory inputs from cortex and thalamus. The actions of DA are not believed to be spatially localized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C63-C64 represent established knowledge from prior literature, appropriately cited. These provide anatomical and functional context for interpreting the significance of GABA co-release.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    },
+    {
+      "id": "7fc90156-f97e-47e9-9b8e-41a0cde08bf3",
+      "content_id": "01e07b8f-0070-4da9-97a3-318ad903ea00",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "GABA co-release may function to hyperpolarize spines or shunt excitatory inputs, potentially allowing phasic DA neuron activation to dampen cortical/thalamic drive and limit plasticity to strongly activated inputs. The uptake-dependent mechanism may confer flexibility for dynamic, local control of GABAergic transmission across axonal arbors, potentially allowing target-specific GABA co-release depending on local extracellular GABA levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C69 represent speculative hypotheses about functional implications. While these are reasonable interpretations based on the findings and anatomical knowledge, they lack direct experimental support. The authors appropriately present these as possibilities (\"may function,\" \"intriguing possibility\") rather than established facts. These hypotheses would require additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:28:41.449323Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "49fbea1e-850b-4c81-a2b2-0816d8db4c7b",
+      "result_id": "c1aa4f7d-3c31-4d54-9564-dbd178e219fc"
+    },
+    {
+      "claim_id": "73119c6f-7806-4bbd-b8c8-e58147ab1f64",
+      "result_id": "c1aa4f7d-3c31-4d54-9564-dbd178e219fc"
+    },
+    {
+      "claim_id": "492ba329-c88f-4e7c-b942-705c237f2720",
+      "result_id": "c1aa4f7d-3c31-4d54-9564-dbd178e219fc"
+    },
+    {
+      "claim_id": "21a6dceb-744d-4ac6-ae31-56edb9d952a6",
+      "result_id": "c1aa4f7d-3c31-4d54-9564-dbd178e219fc"
+    },
+    {
+      "claim_id": "2c1bcccb-3986-4134-b10f-49298435d6ba",
+      "result_id": "c1aa4f7d-3c31-4d54-9564-dbd178e219fc"
+    },
+    {
+      "claim_id": "e02a1280-70a5-4e41-ac55-c4963e5e9daa",
+      "result_id": "c1aa4f7d-3c31-4d54-9564-dbd178e219fc"
+    },
+    {
+      "claim_id": "8604017d-0779-4158-90ab-33185b65fc97",
+      "result_id": "1e1f4bfa-3a6c-4b76-8e6c-fb20b924de99"
+    },
+    {
+      "claim_id": "629a34fc-0ba9-4081-be15-cf83ae70a179",
+      "result_id": "1e1f4bfa-3a6c-4b76-8e6c-fb20b924de99"
+    },
+    {
+      "claim_id": "255ebb2f-3e9f-4a9b-a6f9-7d5b4c093526",
+      "result_id": "1e1f4bfa-3a6c-4b76-8e6c-fb20b924de99"
+    },
+    {
+      "claim_id": "f783cff4-e2fe-44f0-9860-6d05cb2c5272",
+      "result_id": "1e1f4bfa-3a6c-4b76-8e6c-fb20b924de99"
+    },
+    {
+      "claim_id": "63db0272-189d-47c0-bd6f-f8c08abd4ee9",
+      "result_id": "1e1f4bfa-3a6c-4b76-8e6c-fb20b924de99"
+    },
+    {
+      "claim_id": "60957b37-c939-41f6-a740-14b0d3a2ebf9",
+      "result_id": "1e1f4bfa-3a6c-4b76-8e6c-fb20b924de99"
+    },
+    {
+      "claim_id": "6c9b05ad-e450-4e97-a75e-0a4665d665a0",
+      "result_id": "1e1f4bfa-3a6c-4b76-8e6c-fb20b924de99"
+    },
+    {
+      "claim_id": "859fbb79-a073-452d-a07e-f7fb23d81b29",
+      "result_id": "b728a877-d757-45ec-af39-f1c84d9754af"
+    },
+    {
+      "claim_id": "7a5e9f3f-e916-47dc-85e0-eea3790f2a0a",
+      "result_id": "b728a877-d757-45ec-af39-f1c84d9754af"
+    },
+    {
+      "claim_id": "7812d949-2f8c-41ef-b7fa-58cece9624d6",
+      "result_id": "b728a877-d757-45ec-af39-f1c84d9754af"
+    },
+    {
+      "claim_id": "5167b3b6-742a-47b9-a0b1-03c8224a1ed8",
+      "result_id": "b728a877-d757-45ec-af39-f1c84d9754af"
+    },
+    {
+      "claim_id": "fa4d4ca7-1898-4c4e-acc6-04478b5f3770",
+      "result_id": "b728a877-d757-45ec-af39-f1c84d9754af"
+    },
+    {
+      "claim_id": "62385810-410c-4af0-9a18-dc9d4beb3d44",
+      "result_id": "b728a877-d757-45ec-af39-f1c84d9754af"
+    },
+    {
+      "claim_id": "b71c284d-924d-47f8-a8cf-d4fdd7d409bf",
+      "result_id": "b728a877-d757-45ec-af39-f1c84d9754af"
+    },
+    {
+      "claim_id": "0eb89f20-070a-4db0-8cb5-c983b58342ed",
+      "result_id": "b728a877-d757-45ec-af39-f1c84d9754af"
+    },
+    {
+      "claim_id": "37e49626-d373-4331-8be6-584fa3a6905a",
+      "result_id": "8d229fe5-804f-47b3-a261-99824b267928"
+    },
+    {
+      "claim_id": "3295c9a7-7966-4a04-b5dd-4d3c0bcf29b2",
+      "result_id": "8d229fe5-804f-47b3-a261-99824b267928"
+    },
+    {
+      "claim_id": "b91ac79a-6c7e-4b5c-ad67-31925d7c9612",
+      "result_id": "8d229fe5-804f-47b3-a261-99824b267928"
+    },
+    {
+      "claim_id": "afc7ce93-2e1b-422a-b0c8-96d87343d6eb",
+      "result_id": "8d229fe5-804f-47b3-a261-99824b267928"
+    },
+    {
+      "claim_id": "81462c43-0917-4dda-a051-bd8c44ed5ca9",
+      "result_id": "d3bc5bf6-bbf2-4188-9951-7abd6ed752b1"
+    },
+    {
+      "claim_id": "48437050-0167-4fc5-a4fc-a952abf9e2de",
+      "result_id": "d3bc5bf6-bbf2-4188-9951-7abd6ed752b1"
+    },
+    {
+      "claim_id": "dbadf6bf-b92a-4ca3-a684-5aa31f257a00",
+      "result_id": "d3bc5bf6-bbf2-4188-9951-7abd6ed752b1"
+    },
+    {
+      "claim_id": "a79b2db8-e6c2-438a-b129-2197a2a32993",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "fbc86d7d-5a71-47e6-ad82-2ce6a8eff6e9",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "ab6bb935-06fb-42c9-8e28-2b55d24dccc2",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "a4d6e42c-95e4-4853-a9b5-77ce6a06d0de",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "b0008278-fd96-4b78-8ca7-7f8e9654e473",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "4d7c084d-b4c7-493d-9e52-ba2274842b79",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "2ee9370c-8004-4a2a-b5b9-09d729ddaf54",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "9c545394-6b5a-4fdb-8dc3-8d1b4b1292fa",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "3a47b723-f01c-4594-b6dd-b9071be02a61",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "940105a8-e7bd-4efe-98d2-e94fdca4d918",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "31652bc1-ee1a-4bb8-8636-9c147dd25b94",
+      "result_id": "7b2c5bf3-5523-4f40-a7af-1acae5f79887"
+    },
+    {
+      "claim_id": "63734785-1712-4858-909c-a1f4430e6ef6",
+      "result_id": "081bae9e-f235-4df9-8144-6c0f893b22ae"
+    },
+    {
+      "claim_id": "4adc508f-e4ce-41e1-8b4b-c020c91d5027",
+      "result_id": "081bae9e-f235-4df9-8144-6c0f893b22ae"
+    },
+    {
+      "claim_id": "fe121603-0d15-4547-a06d-ac89734094ec",
+      "result_id": "081bae9e-f235-4df9-8144-6c0f893b22ae"
+    },
+    {
+      "claim_id": "3f5ff2c0-8a05-45da-9461-11cb5ac66c28",
+      "result_id": "081bae9e-f235-4df9-8144-6c0f893b22ae"
+    },
+    {
+      "claim_id": "7d54a640-0e9b-457a-9c71-86cdd0a7ef50",
+      "result_id": "081bae9e-f235-4df9-8144-6c0f893b22ae"
+    },
+    {
+      "claim_id": "a61f7432-1cd9-40d9-b949-db6fcf7281e4",
+      "result_id": "081bae9e-f235-4df9-8144-6c0f893b22ae"
+    },
+    {
+      "claim_id": "891eb6a7-5043-42b0-999c-93ac2c168d11",
+      "result_id": "081bae9e-f235-4df9-8144-6c0f893b22ae"
+    },
+    {
+      "claim_id": "df0eb468-30b7-482c-969d-af417de022f1",
+      "result_id": "d55b03d7-ff2f-4c89-84ed-29947ec6925c"
+    },
+    {
+      "claim_id": "e03f2231-3456-4663-a7fe-89d98d099953",
+      "result_id": "d55b03d7-ff2f-4c89-84ed-29947ec6925c"
+    },
+    {
+      "claim_id": "1e665be0-510e-42a9-8f3b-f51e9addffbd",
+      "result_id": "4879f9b2-4a22-4a18-bba1-3333157c2510"
+    },
+    {
+      "claim_id": "e7c7e34c-a410-4b7a-a80c-2f0b754574eb",
+      "result_id": "4879f9b2-4a22-4a18-bba1-3333157c2510"
+    },
+    {
+      "claim_id": "79afd739-9da6-4618-a1f1-043023527e29",
+      "result_id": "9dc366c0-1b3d-4f93-8ccb-94257ecd9667"
+    },
+    {
+      "claim_id": "6b953167-85ef-42f3-98e5-489479a23c2b",
+      "result_id": "9dc366c0-1b3d-4f93-8ccb-94257ecd9667"
+    },
+    {
+      "claim_id": "2a55614c-1a14-4a0d-a15f-f7e1d12beffe",
+      "result_id": "9dc366c0-1b3d-4f93-8ccb-94257ecd9667"
+    },
+    {
+      "claim_id": "49fbeeb6-8808-4ff4-b98d-f705bf474bcc",
+      "result_id": "9dc366c0-1b3d-4f93-8ccb-94257ecd9667"
+    },
+    {
+      "claim_id": "9b8a6ffc-ec88-400c-8592-ebc342545447",
+      "result_id": "9dc366c0-1b3d-4f93-8ccb-94257ecd9667"
+    },
+    {
+      "claim_id": "ef1b786b-dc4c-4b68-95af-eaeeeeec8091",
+      "result_id": "9dc366c0-1b3d-4f93-8ccb-94257ecd9667"
+    },
+    {
+      "claim_id": "27f989ed-a655-412e-a9d1-1ab7414c9280",
+      "result_id": "efdb0952-b225-48ae-9d12-a2a893730a29"
+    },
+    {
+      "claim_id": "52c0579a-fa68-42fe-9655-9729a38ea8da",
+      "result_id": "efdb0952-b225-48ae-9d12-a2a893730a29"
+    },
+    {
+      "claim_id": "895b06c2-fdfd-4365-ab5b-02528cdcd091",
+      "result_id": "efdb0952-b225-48ae-9d12-a2a893730a29"
+    },
+    {
+      "claim_id": "dc5ad550-5f46-4465-aa5a-3640556a28a2",
+      "result_id": "ba50fbbd-5cb7-4ca4-bbb6-12ac415265b7"
+    },
+    {
+      "claim_id": "4b5c1120-98cf-4f3e-8aa7-5cdf28cfaf16",
+      "result_id": "ba50fbbd-5cb7-4ca4-bbb6-12ac415265b7"
+    },
+    {
+      "claim_id": "0b6a5501-269a-44f9-a8bb-7d49e8b26705",
+      "result_id": "6b615740-e8c1-4a9c-9cd4-81a02ecd90d7"
+    },
+    {
+      "claim_id": "81d4681c-b1d3-4bf6-be39-9ee82dc83249",
+      "result_id": "6b615740-e8c1-4a9c-9cd4-81a02ecd90d7"
+    },
+    {
+      "claim_id": "315c97d5-381c-47fb-8f71-c4be75d7bef6",
+      "result_id": "6b615740-e8c1-4a9c-9cd4-81a02ecd90d7"
+    },
+    {
+      "claim_id": "ca752f82-9b38-46dd-b0d7-61b39b443d6d",
+      "result_id": "7fc90156-f97e-47e9-9b8e-41a0cde08bf3"
+    },
+    {
+      "claim_id": "96c5d34a-e2a5-4f86-add2-290a6186b36c",
+      "result_id": "7fc90156-f97e-47e9-9b8e-41a0cde08bf3"
+    },
+    {
+      "claim_id": "322f8229-db04-43d0-9756-a51cb4ef5851",
+      "result_id": "7fc90156-f97e-47e9-9b8e-41a0cde08bf3"
+    },
+    {
+      "claim_id": "7a38272e-6a0e-46ff-9495-19d23f693e10",
+      "result_id": "7fc90156-f97e-47e9-9b8e-41a0cde08bf3"
+    },
+    {
+      "claim_id": "ebeec64b-b391-459d-8faa-04b386606245",
+      "result_id": "7fc90156-f97e-47e9-9b8e-41a0cde08bf3"
+    }
+  ],
+  "comparisons": []
+}

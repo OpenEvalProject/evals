@@ -1,0 +1,2167 @@
+{
+  "submission": {
+    "id": "6d63b6d8-67c8-4521-8930-75f15ded1cb9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:51:44.182068Z",
+    "updated_at": "2025-11-28T19:51:44.182068Z"
+  },
+  "content": [
+    {
+      "id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "submission_id": "6d63b6d8-67c8-4521-8930-75f15ded1cb9",
+      "content_type": "manuscript",
+      "content_text": "# Three-dimensional electron crystallography of protein microcrystals\n\n## Authors\n\n- Dan Shi<sup>1</sup>\n- Brent L Nannenga<sup>1</sup>\n- Matthew G Iadanza<sup>1</sup>\n- Tamir Gonen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Janelia Farm Research Campus, Howard Hughes Medical Institute Ashburn United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe demonstrate that it is feasible to determine high-resolution protein structures by electron crystallography of three-dimensional crystals in an electron cryo-microscope (CryoEM). Lysozyme microcrystals were frozen on an electron microscopy grid, and electron diffraction data collected to 1.7 \u00c5 resolution. We developed a data collection protocol to collect a full-tilt series in electron diffraction to atomic resolution. A single tilt series contains up to 90 individual diffraction patterns collected from a single crystal with tilt angle increment of 0.1\u20131\u00b0 and a total accumulated electron dose less than 10 electrons per angstrom squared. We indexed the data from three crystals and used them for structure determination of lysozyme by molecular replacement followed by crystallographic refinement to 2.9 \u00c5 resolution. This proof of principle paves the way for the implementation of a new technique, which we name \u2018MicroED\u2019, that may have wide applicability in structural biology.\n\n## Introduction\n\nX-ray crystallography depends on large and well-ordered crystals for diffraction studies. Crystals are solids composed of repeated structural motifs in a three-dimensional lattice (hereafter called \u20183D crystals\u2019). The periodic structure of the crystalline solid acts as a diffraction grating to scatter the X-rays. For every elastic scattering event that contributes to a diffraction pattern there are \u223c10 inelastic events that cause beam damage (Henderson, 1995). Therefore, large crystals are required to withstand the high levels of radiation damage received during data collection (Henderson, 1995). Despite the development of highly sophisticated robotics for crystal growth assays and the implementation of microfocus beamlines (Moukhametzianov et al., 2008), this important step remains a critical bottleneck. In an attempt to alleviate this problem, researchers have turned to femtosecond X-ray crystallography (Chapman et al., 2011; Boutet et al., 2012), in which a very intense pulse of X-rays yields coherent signal in a time shorter than the destructive response to deposited energy. While this technique shows great promise, the current implementation of the technology requires an extremely large number of crystals (millions) and access to sources is still in developmental stages.\n\nElectron crystallography is a bona fide method for determining protein structure from crystalline material but with important differences. The crystals that are used must be very thin (Henderson and Unwin, 1975; Henderson et al., 1990; Kuhlbrandt et al., 1994; Kimura et al., 1997). Because electrons interact with materials more strongly than X-rays (Henderson, 1995), electrons can yield meaningful data from relatively small and thin crystals. This technique has been used successfully to determine the structures of several proteins from thin two-dimensional crystals (2D crystals) (Wisedchaisri et al., 2011). High energy electrons result in a large amount of radiation damage to the sample, leading to loss in resolution and destruction of the crystalline material (Glaeser, 1971). As each crystal can usually yield only a single diffraction pattern, structure determination is only possible by merging data originating from hundreds of individual crystals. For example, electron diffraction data from more than 200 individual crystals were merged to generate a data set for aquaporin-0 at 1.9 \u00c5 resolution (Gonen et al., 2005). While electron crystallography has been successful with 2D crystals, previous attempts at using electron diffraction for structure determination from protein 3D crystals were not successful. A number of studies detail the difficulties associated with data collection and processing of diffraction data that originates from several hundreds of 3D crystals, limiting the ability to integrate and merge the data in order to determine a structure in such a way (Shi et al., 1998; Jiang et al., 2011).\n\nWe show here that atomic resolution diffraction data can be collected from crystals with volumes up to six orders of magnitude smaller than those typically used for X-ray crystallography. The technique, which we call \u2018MicroED\u2019, uses equipment standard in most cryo-EM laboratories and facilities. We developed a strategy for data collection with extremely low electron dose and procedures for indexing and integrating reflections. We processed the diffraction data and determined the structure of lysozyme at 2.9 \u00c5 resolution. Thus, a high-resolution protein structure can be determined from electron diffraction of three-dimensional protein crystals in an electron microscope.\n\n## Results\n\n### Sample preparation and data collection\n\nLysozyme was chosen as a model protein because it is a well-behaved and well-characterized protein that readily forms well-ordered crystals. From the time its structure was first analyzed (Blake et al., 1962, 1965), lysozyme has been a well-studied protein and the model protein of choice for many new methods in crystallography (Boutet et al., 2012; Cipriani et al., 2012; Nederlof et al., 2013). Small microcrystals of lysozyme were grown by slightly modifying the crystal growth conditions as detailed in the \u2018Materials and methods\u2019 section. Figure 1A shows a typical crystallization drop containing microcrystals, which appear as barely visible specks (arrows) alongside the larger crystals that are typically used for X-ray crystallography. These specks are up to 6 orders of magnitude smaller in volume than the larger crystals in the drop. The solution containing these microcrystals was applied to an electron microscopy holey-carbon grid with a pipette and plunged into liquid ethane. The grids were then imaged using a 200 kV TEM under cryogenic conditions (Figure 1B). More than 100 microcrystals were typically observed per grid preparation, and these ranged in size from several microns to sub micron. The crystals typically appeared as electron dense rectangular or triangular forms with very sharp edges.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01345/elife-01345-fig1-v1.jpg)\n\n**Figure 1.:** (A) Light micrograph showing lysozyme microcrystals (three examples indicated by arrows) in comparison with larger crystals of the size normally used for X-ray crystallography. Scale bar is 50 \u03bcm. (B) Lysozyme microcrystals visualized in over-focused diffraction mode on the cryo-EM prior to data collection. The length and width of the crystals varied from 2 to 6 \u00b5m with an estimated thickness of \u223c0.5\u20131 \u00b5m. Scale bar is 1 \u00b5m.\n\nElectron diffraction was used to assess the quality of the cryo-preparations. Crystals that appeared thick (estimated as >3 \u03bcm) did not yield diffraction data because the electron beam could not penetrate the sample. Crystals that appeared slightly thinner, estimated at \u223c1.5 \u03bcm, did show diffraction, but because the quality of the pattern varied depending on the sample tilt (Figure 2A), we did not use crystals of this thickness and size for data collection. Approximately 50% of the crystals in our preparations appeared much thinner, estimated at \u223c0.5 \u03bcm, and showed a distribution of attainable resolutions with the best diffracting to \u223c1.7 \u00c5 resolution (Figure 2B,C). Generally, we were only able to obtain high quality diffraction data from the very thin crystals, \u223c0.5\u20131 \u03bcm thick and 1\u20136 \u00b5m long and wide. While these crystals are exceptionally small, they still contain approximately 55 \u00d7 106 unit cells. Moreover, we found that for such thin crystals the tilt had no significant adverse affect on the diffraction quality (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01345/elife-01345-fig2-v1.jpg)\n\n**Figure 2.:** (A) Analysis of the effects of crystal thickness on maximum resolution of observed reflections from thick crystals. The analysis shows adverse effects of crystal thickness on the obtainable resolution as large crystals are tilted. (B) For assessing the quality of our cryo preparations, diffraction data were obtained from 100 lysozyme microcrystals. 43/100 were thin crystals that showed reflections in the 2\u20134 \u00c5 range, with the best crystal in this set yielding data to \u223c1.7 \u00c5 resolution. (C) An example of lysozyme diffraction data collected at 0.01e\u2212/\u00c52/second and a 10 s exposure. The pattern shows strong and sharp spots surpassing 2 \u00c5 resolution. This diffraction pattern was processed with ImageJ and despeckled for ease of viewing. (D) Analysis of the effects of crystal thickness on maximum resolution of observed reflections from thin crystals. The small crystal shows a relatively constant maximum resolution that does not appear to be affected by crystal tilt.\n\nFor 2D electron crystallography, the electron dose that is typically used in diffraction causes significant radiation damage to the sample, leading to a rapid loss in resolution and destruction of the crystal (Glaeser, 1971; Unwin and Henderson, 1975; Taylor and Glaeser, 1976). As a result, each crystal exposed to high dose usually only yields a single diffraction pattern, and structure determination requires the merging of data originating from a large number of individual crystals. However, 3D crystals can deliver electron diffraction data to atomic resolution with very low doses. A recent study documents \u223c3 \u00c5 resolution diffraction data from catalase 3D crystals after a single exposure of less than 10e\u2212/\u00c52 (Baker et al., 2010).\n\nWe reasoned that one way to overcome the difficulties of indexing and merging data from hundreds of crystals is to collect a complete diffraction data set from a single crystal while keeping the total dose below \u223c10e\u2212/\u00c52. Because all the data would originate from a single crystal, indexing, integration and merging should be straightforward and structure determination possible. We used a sensitive CMOS based detector (Tietz Video and Image Processing Systems GmbH), previously shown to be beneficial for electron diffraction studies (Tani et al., 2009) and modified our data collection procedure. We found that even with extremely low electron dose of <0.01 e\u2212/\u00c52 per second, we could record diffraction data from lysozyme microcrystals showing strong and sharp diffraction spots extending well beyond the 2 \u00c5 resolution mark (Figure 2C).\n\nAs a dataset containing multiple exposures from a single crystal is collected, energy transferred by inelastic scattering will damage the crystalline matrix, negatively affecting both the resolution limit and intensities of observed reflections. Although the overall damage from electron scattering is much lower than that for X-rays (approximately 60 eV deposited per elastic scattering event vs 80 keV per elastic X-ray scattering event [Henderson, 1995]), accumulating radiation damage will eventually contribute significant error to the recorded intensities.\n\nWe performed an experiment to quantify the effects of increasing electron dosage on recorded intensities (Figure 3). A single protein microcrystal was subjected to sequential 10 s exposures, each delivering \u223c0.1 e\u2212/\u00c52, until a total accumulated dose of \u223c12 e\u2212/\u00c52 was reached. The intensities of three diffraction spots, ranging from resolutions of 2.9 to 4.6 \u00c5, were measured on each of the 120 resulting diffraction patterns and compared. There were no observable adverse effects on resolution (Figure 2D) or intensity until the accumulated dose had reached \u223c9 e\u2212/\u00c52 (Figure 3). We therefore optimized the data collection protocol to keep the total accumulated electron dosage below this critical value.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01345/elife-01345-fig3-v1.jpg)\n\n**Figure 3.:** A single lysozyme microcrystal was subjected to 120 sequential exposures without tilting, each of a dose of \u223c0.1 e\u2212/\u00c52 for a total accumulated dose of \u223c12 e\u2212/\u00c52. Normalized intensity vs total accumulated dose for three diffraction spots observed over all 120 sequential frames was plotted. A decrease in diffraction intensity becomes apparent at a dosage of \u223c9 e\u2212/\u00c52 (\u2018critical dose\u2019). Bars represent standard error of the mean.\n\nBy using such a low dose, we could limit the radiation damage to the crystal, allowing us to collect multiple diffraction patterns from a single crystal instead of just a single pattern. Using this modified procedure, we were able to collect up to 90 individual diffraction patterns from a single crystal (Video 1). Each pattern was recorded following a 1\u00b0 tilt to cover \u223c40\u201390\u00b0 (begin with the stage tilted at \u221245\u00b0 and proceed to collect data to +45\u00b0 in order to cover a 90\u00b0 wedge). 0.1 and 0.2 degree increments were also applied to sample the reciprocal space at higher resolution. Each exposure lasted up to 10 s at a dosage of approximately 0.01 e\u2212/\u00c52 per second, for a cumulative dose of no more than \u223c9 e\u2212/\u00c52 per data set.\n\n![Video 1.](https://cdn.elifesciences.org/articles/01345/elife-01345-media1.avi.jpg)\n\n**Video 1.:** In this example, diffraction patterns were recorded at 1\u00b0 intervals from a single crystal, tilted over 47\u00b0. Cumulative dose was \u223c5 e\u2212/\u00c52 in this example.\n\n### Data processing and structure determination\n\nThe lattice parameters were determined and the lattice indexed with software based on previous studies (Shi et al., 1998). By collecting multiple frames from the same crystal, it was possible to determine the orientation and magnitude of the reciprocal unit cell vectors a*, b*, and c* as described in the \u2018Materials and methods\u2019 section. These vectors were calculated for each data set, allowing the prediction of the position of the reflections in each diffraction pattern (Figure 4; Video 2) and indexing of the entire data set. The unit cell dimensions were calculated as a = b = 77 \u00c5, c = 37 \u00c5, \u03b1 = \u03b2 = \u03b3 = 90\u00b0 and P43212 symmetry. This space group symmetry and unit cell dimensions are consistent with previous lysozyme X-ray diffraction data (Diamond, 1974; Sauter et al., 2001; Cipriani et al., 2012).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01345/elife-01345-fig4-v1.jpg)\n\n**Figure 4.:** (A and B) Two examples of diffraction patterns obtained from a single crystal at tilt angles of 0\u00b0 and 20\u00b0 respectively. Locations indicated by circles were predicted to contain diffraction spots by our spot prediction algorithm. Additional examples from the same crystal are presented in Video 2. The resolution limit was set at 2.9 \u00c5 resolution for this study.\n\n![Video 2.](https://cdn.elifesciences.org/articles/01345/elife-01345-media2.mov.jpg)\n\n**Video 2.:** Reflections predicted on representative diffraction patterns obtained from a single crystal tilted over 39\u00b0 sampled every 2\u00b0 in this video. Predictions were made to 2.9 \u00c5 resolution using our spot prediction algorithm.\n\nThe electron diffraction data were collected on a microscope operating at 200 kV and equipped with a field emission gun (FEG) electron source. The FEG can generate a very coherent beam with an energy-spread function of <1 eV at 200 kV acceleration voltage. The electron beam wavelength is 0.025 \u00c5 at 200 kV compared with \u223c1 \u00c5 for X-rays. Under such conditions, the Ewald sphere in our experiments is nearly flat (the sphere is off the reciprocal plane by only 0.003 \u00c5\u22121 at 2 \u00c5 resolution) even in the high-resolution range. Measurements of the full width at half maximum intensity for the strongest reflections indicate that the reflections in our experiments are very tight, spreading less than a 6 pixel sphere that corresponds to \u223c1/1000 \u00c5. (Figure 5) In our experiments, the shortest unit cell dimension for lysozyme in reciprocal space is a* = b* = 1/77 \u00c5. Therefore, without beam oscillation or mechanical oscillation of the crystal (microscope compustage), the lattice points on a single projection that are not exactly at the Ewald sphere surface will give partial intensities.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01345/elife-01345-fig5-v1.jpg)\n\n**Figure 5.:** The plots show the approximate dimensions of the full reflection with a width (full width at half maximum height) of 3\u20135 pixels in the x, y, and z direction.\n\nBecause we densely sampled the reciprocal space, we recorded multiple observations for every lattice point (Table 1). Therefore, we could sample the observed intensity values for each reflection multiple times (multiplicity value = 34), and we made the assumption that the strongest intensity roughly approximated the complete intensity. Therefore, we kept only the maximum intensity and treated it as a unique reflection in the final structure factor file. All other recorded intensities were presumed to be partial reflections and were therefore discarded. The merging of data in P422 symmetry from three separate crystals processed in this manner resulted in a final data set with 2490 unique reflections with \u223c92% cumulative completeness at 2.9 \u00c5 resolution (Table 1, Video 3). The measured intensities were converted to amplitudes by assuming Ihkl \u2248 |Fhkl|2 (Drenth, 1994) and an mtz file generated.\n\n**Table 1.**\n MicroED crystallographic data\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Excitation voltage</td>\n      <td>200 kV</td>\n    </tr>\n    <tr>\n      <td>Electron source</td>\n      <td>Field emission gun</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.025</td>\n    </tr>\n    <tr>\n      <td>Total electron dose per crystal</td>\n      <td>\u223c9 e\u2212/\u00c52</td>\n    </tr>\n    <tr>\n      <td>Number of patterns per crystal</td>\n      <td>40\u201390</td>\n    </tr>\n    <tr>\n      <td>No. crystals used</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Total reflections to 2.9 \u00c5</td>\n      <td>84,889</td>\n    </tr>\n    <tr>\n      <td>Data refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P43212</td>\n    </tr>\n    <tr>\n      <td>Unit cell dimensions</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a = b</td>\n      <td>77 \u00c5</td>\n    </tr>\n    <tr>\n      <td>c</td>\n      <td>37 \u00c5</td>\n    </tr>\n    <tr>\n      <td>\u03b1 = \u03b2 = \u03b3</td>\n      <td>90\u00b0</td>\n    </tr>\n    <tr>\n      <td>Resolution</td>\n      <td>2.9\u201320.0 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Total unique reflections</td>\n      <td>2490</td>\n    </tr>\n    <tr>\n      <td>Reflections in working set</td>\n      <td>2240</td>\n    </tr>\n    <tr>\n      <td>Reflections in test set</td>\n      <td>250</td>\n    </tr>\n    <tr>\n      <td>Multiplicity*</td>\n      <td>34</td>\n    </tr>\n    <tr>\n      <td>Completeness (2.9\u20133.1)</td>\n      <td>92% (57%)</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree (%)</td>\n      <td>25.5/27.8</td>\n    </tr>\n    <tr>\n      <td>RMSD bonds</td>\n      <td>0.051 \u00c5</td>\n    </tr>\n    <tr>\n      <td>RMSD angles</td>\n      <td>1.587\u00b0</td>\n    </tr>\n    <tr>\n      <td>Ramachandran (%)\u2020 (allowed, generous, disallowed)</td>\n      <td>99.1; 0.9; 0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Multiplicity is defined as total measured reflections divided by number of unique reflections.\u2020Statistics given by PROCHECK (Laskowski et al., 1993)._\n\n![Video 3.](https://cdn.elifesciences.org/articles/01345/elife-01345-media3.mov.jpg)\n\n**Video 3.:** 2490 total unique reflections are present for an overall completeness of 92% at 2.9 \u00c5 resolution. Video begins with a* axis horizontal, b* axis vertical, and the c* axis normal to the image plane.\n\nThe structure of lysozyme was solved at 2.9 \u00c5 resolution by molecular replacement (MR) using the lysozyme PDB 4AXT (Cipriani et al., 2012) as a search model. The initial MR 2Fobs\u2212Fcalc map prior to refinement is presented in Figure 6. The map shows well-defined density around the model, indicating high quality phases from MR (Figure 6A,B). Likewise, a composite-omit map that was calculated by omitting 5% at a time showed good agreement with the original map obtained by MR (Figure 6C). When a poly-alanine (polyA) model of lysozyme was used for MR, the resulting map showed significant density beyond the alanine side chains (indicated by arrows in Figure 6E,F), into which the correct side chains could be built. These results indicated that our solution from MR was not dominated by model bias.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01345/elife-01345-fig6-v1.jpg)\n\n**Figure 6.:** Molecular replacement was performed with both the full model of lysozyme (PDB 4AXT, top panels) as well as a poly-alanine model (bottom panels) and the resulting 2Fobs\u2212Fcalc maps around residues 1\u201320 are shown. (A and B) The phases following molecular replacement with the full model were of good quality demonstrated by how well the density surrounding the model fits, even before any refinement is performed. (C) A composite-omit map calculated by omitting 5% at a time showed good agreement with the unrefined structure indicating the phases were not dominated by model bias. (D\u2013F) As an additional test of model bias, phasing was done with a poly-alanine homology search model of lysozyme. The resulting 2Fobs\u2212Fcalc map is of good quality (D) and shows density extending beyond the poly-alanine model (E and F, arrows). (F) The same density map as E but with the structure of lysozyme fit. Arrows in D and E show examples of clear side chain density from the poly-alanine map. All maps are contoured at 1.0\u03c3.\n\nFollowing refinement that included the use of electron scattering factors, rigid body, simulated annealing, and B-factor refinement, a solution was found with acceptable statistics (Rwork/Rfree = 25.5%/27.8%) and good geometry at 2.9 \u00c5 resolution (Table 1). The density map obtained by electron diffraction shows good agreement with the refined model (Figure 7A, Video 4). The Fobs\u2212Fcalc difference map shows no interpretable features (Figure 7B). Additionally, the final structure has a very low RMSD (0.475 \u00c5 for C\u03b1, 0.575 \u00c5 for all atoms) when compared to the previously published high-resolution structure of lysozyme (Cipriani et al., 2012).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01345/elife-01345-fig7-v1.jpg)\n\n**Figure 7.:** (A) The 2Fobs\u2212Fcalc (contoured at 1.5\u03c3) map covers protein residues 5\u201345 of lysozyme. (B) Fobs\u2212Fcalc difference map contoured at +3.0\u03c3 (green) and \u22123.0\u03c3 (red) for the same protein region. The map (A) shows well-defined density around the vast majority of side chains and the difference map (B) shows no large discrepancies between the observed data (Fobs) and the model (Fcalc). The final structure of lysozyme is shown in panel C and the complete three-dimensional map is presented in Video 3.\n\n![Video 4.](https://cdn.elifesciences.org/articles/01345/elife-01345-media4.mov.jpg)\n\n### Model validation and bias tests\n\nTo further validate the method and test for model bias, we performed a number of tests on the data to check whether a good solution could be obtained from random noise as has been demonstrated for electron micrographs (Shatsky et al., 2009). We created multiple randomized datasets to test the robustness of the phasing and model building procedure. The test datasets were generated as follows:All measured intensities were replaced with random numbers ranging between the minimum and maximum of the actual observed experimental values.The experimental intensity values were kept but the Miller indices were randomized.All experimental intensities were replaced with an actual intensity value that was measured by X-ray crystallography of an unrelated structure (Calmodulin PDB ID:3SUI [Lau et al., 2012]).Each experimental intensity was increased or decreased randomly by up to 35%.\n\nIn addition, the correct experimental dataset was also used and labeled as dataset \u20185\u2019. These five datasets were treated as \u2018blind test cases\u2019, in which the user did not know the identities of the various test datasets. Each test dataset was used for molecular replacement with the lysozyme model (Cipriani et al., 2012), followed by a single round of refinement in PHENIX (Adams et al., 2010). Only dataset 5, which contained the correct observed experimental intensities, yielded a solution that could be further refined to acceptable Rwork/Rfree and geometry. Datasets 1\u20134, which contained the random errors described above, either did not yield MR solutions or would not allow refinement to produce an acceptable structure (Table 2).\n\n**Table 2.**\n Results of model validation and bias tests\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data set</th>\n      <th>Molecular replacement result</th>\n      <th>TFZ</th>\n      <th>Final Rfree (%)\u00b6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1*</td>\n      <td>No solution</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>2\u2020</td>\n      <td>Solution**</td>\n      <td>19.1</td>\n      <td>54.9</td>\n    </tr>\n    <tr>\n      <td>3\u2021</td>\n      <td>No solution</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>4\u00a7</td>\n      <td>Solution</td>\n      <td>12.6</td>\n      <td>35.2</td>\n    </tr>\n    <tr>\n      <td>5#</td>\n      <td>Solution</td>\n      <td>14.7</td>\n      <td>27.8</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Random intensities.\u2020Shuffled Miller indices.\u2021Calmodulin replaced intensities.\u00a7Intensities \u00b1 35%.#Original data.\u00b6Final Rfree after a minimum of two cycles of refinement.**Solution was found; however, the space group was incorrect (P4121)._\n\nWe also tested the robustness of the MR procedure by using a number of unrelated structures, chosen from the PDB for their similar unit cell dimensions and protein molecular weights, as search models against our experimental data. The unrelated structures were: T4 lysozyme, calmodulin, dodecin, and \u03b1A crystallin (Table 3). None of these structures gave an acceptable MR solution.\n\n**Table 3.**\n Models for molecular replacement validation\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th>PDB ID</th>\n      <th>Molecular weight (kDa)</th>\n      <th>Symmetry</th>\n      <th>Unit cell dimensions</th>\n      <th>MR solution</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Hen Egg White Lysozyme*</td>\n      <td rowspan=\"3\">4AXT</td>\n      <td rowspan=\"3\">14.3</td>\n      <td rowspan=\"3\">P43212</td>\n      <td>a = b = 78.24 \u00c5</td>\n      <td rowspan=\"3\">Yes</td>\n    </tr>\n    <tr>\n      <td>c = 37.47 \u00c5</td>\n    </tr>\n    <tr>\n      <td>\u03b1 = \u03b2 = \u03b3 = 90\u00b0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">T4 Lysozyme\u2020</td>\n      <td rowspan=\"4\">2LZM</td>\n      <td rowspan=\"4\">18.7</td>\n      <td rowspan=\"4\">P3212</td>\n      <td>a = b = 61.20 \u00c5</td>\n      <td rowspan=\"4\">No</td>\n    </tr>\n    <tr>\n      <td>c = 96.80 \u00c5</td>\n    </tr>\n    <tr>\n      <td>\u03b1 = \u03b2 = 90\u00b0</td>\n    </tr>\n    <tr>\n      <td>\u03b3 = 120\u00b0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Calmodulin\u2021</td>\n      <td rowspan=\"6\">3CLN</td>\n      <td rowspan=\"6\">16.7</td>\n      <td rowspan=\"6\">P1</td>\n      <td>a = 29.71 \u00c5,</td>\n      <td rowspan=\"6\">No</td>\n    </tr>\n    <tr>\n      <td>b = 53.79 \u00c5,</td>\n    </tr>\n    <tr>\n      <td>c = 24.99 \u00c5</td>\n    </tr>\n    <tr>\n      <td>\u03b1 = 94.13\u00b0,</td>\n    </tr>\n    <tr>\n      <td>\u03b2 = 97.57\u00b0,</td>\n    </tr>\n    <tr>\n      <td>\u03b3 = 89.46\u00b0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Dodecin\u00a7</td>\n      <td rowspan=\"2\">4B2J</td>\n      <td rowspan=\"2\">8.5</td>\n      <td rowspan=\"2\">F4132</td>\n      <td>a = b = c = 142.90 \u00c5</td>\n      <td rowspan=\"2\">No</td>\n    </tr>\n    <tr>\n      <td>\u03b1 = \u03b2 = \u03b3 = 90\u00b0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">\u03b1A Crystallin#</td>\n      <td rowspan=\"3\">3L1E</td>\n      <td rowspan=\"3\">11.9</td>\n      <td rowspan=\"3\">P41212</td>\n      <td>a = b = 56.22 \u00c5,</td>\n      <td rowspan=\"3\">No</td>\n    </tr>\n    <tr>\n      <td>c = 68.66 \u00c5</td>\n    </tr>\n    <tr>\n      <td>\u03b1 = \u03b2 = \u03b3 = 90\u00b0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Cipriani et al. (2012).\u2020Weaver and Matthews (1987).\u2021Babu et al. (1988).\u00a7Staudt et al. (2013).#Laganowsky et al. (2010)._\n\nTogether, these experiments indicate that the extracted intensities are accurate enough to yield a reliable structure and that model bias originating from MR did not skew our results.\n\n### Completeness and accuracy of the measured intensities in electron diffraction\n\nData sets collected in electron crystallography of 2D crystals suffer from a missing cone due to the limitation of the maximum achievable tilt angle in the TEM. Previous reports estimate that with tilt angles up to 60\u00b0, the missing cone is roughly 13% (Glaeser et al., 1989), and the resolution in plane is typically higher than the resolution perpendicular to the tilt axis (z*). In our experiments, because the data from 3 crystals were eventually used, and the orientation of each crystal on the grid varied, we could cover the full reciprocal space (Video 3).\n\nDynamic scattering likely introduces inaccuracies in the electron diffraction data. In electron diffraction, dynamic scattering (multi scattering events) could redistribute primary reflection intensities, reducing the accuracy of the intensity measurements by randomly contributing to the observed intensities (Grigorieff et al., 1996). The lysozyme crystals have P43212, symmetry and systematic absences are expected at (2n+1,0,0). However, very weak reflections were observed at the positions where absences were expected (Figure 8). It is likely that these reflections originate from dynamic scattering events. We plotted the intensities along the a* and b* axes and compared the intensity values. The intensities of Miller indices (2n+1,0,0) and (0,2n+1,0) were measured and compared to the intensities of the four immediately adjacent reflections (2n+2,1,0), (2n+2,\u22121,0), (2n\u22122,1,0), and (2n\u22122,\u22121,0). On average, the intensity in the systematic absences was found to be 4.9% of the total intensity of the adjacent spots. (Standard deviation 2.7%, Max 12.4%, n = 17). Moreover, comparison of our experimental intensities with intensities obtained by X-ray diffraction of lysozyme of the same crystal form indicates that our data follow a similar trend and are not dominated by intensity randomness. A Pearson correlation coefficient between the two data sets was 0.63 from 6.0 to 13.5 \u00c5 (0.56 from 2.0\u201313.5 \u00c5), indicating conservation of reflection hierarchy\u2014strong intensities remain strong and weak intensities remain weak. Together, our analyses suggest that multiple scattering contributes at maximum roughly 10% to the intensity value and that at least for structure determination at 2.9 \u00c5 resolution such an error in intensity appears to be tolerable. It is possible that dynamic scattering will become a significant source of error at higher resolutions and some correction algorithm will then have to be developed.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01345/elife-01345-fig8-v1.jpg)\n\n**Figure 8.:** Intensity measurement along the a* axis of a raw diffraction pattern illustrating the relatively small contributions due to dynamic scattering. (A) Diffraction pattern from the major plane of a lysozyme crystal with visible intensity in the (2n+1,0,0) and (0,2n+1,0) Miller indices. (B) (2n+1, 0, 0) reflections (starred) are expected to be systematically absent and observed intensities at these indices are assumed to be the result of dynamic scattering. Image contrast was enhanced for clarity using ImageJ.\n\n## Discussion\n\nWe present a method, \u2018MicroED\u2019, for structure determination by electron crystallography. It should be widely applicable to both soluble and membrane proteins as long as small, well-ordered crystals can be obtained. We have shown that diffraction data at atomic resolution can be collected and a structure determined from crystals that are up to 6 orders of magnitude smaller in volume than those typically used for X-ray crystallography.\n\nFor difficult targets such as membrane proteins and multi-protein complexes, screening often produces microcrystals that require a great deal of optimization before reaching the size required for X-ray crystallography. Sometimes such size optimization becomes an impassable barrier. Electron diffraction of microcrystals as described here offers an alternative, allowing this roadblock to be bypassed and data to be collected directly from the initial crystallization hits.\n\nWhile our proof of principle is an important first step, further optimization of the method is required. Better programs need to be developed for accurately determining lattice parameters, indexing all reflections, extracting the intensities and correcting for incomplete intensities, dynamic scattering, and Ewald sphere curvature. Specifically, developing procedures for postrefinement (unit cell refinement, estimating the mosaic spread, rocking curve, etc) should allow for the proper correction and scaling of partially recorded reflections, leading to improved estimation of full intensities. Relatively minor modifications to existing programs such as MOSFLM (Leslie and Powell, 2007) should allow the handling of electron diffraction data from 3D crystals and take advantage of the large body of work already dedicated to processing X-ray diffraction data.\n\nThe accuracy of the microscope compustage can be improved and procedures for crystal or beam oscillation implemented. Our method of using the maximum intensity measurement as an approximation of the full intensity of any given spot is admittedly crude, as it depends on the intersection of the Ewald sphere through the center of each spot at some point in the tilt series. As the resolution increases, this event becomes increasingly unlikely. Crystal oscillation or related methods such as precession of the electron beam (Gj\u00f8nnes et al., 1998) would allow more accurate determination of spot intensities, especially at very high resolutions.\n\nFurther development of various methods for phasing the diffraction data are also required and could possibly include heavy metal phasing. Such phasing methods are standard in X-ray crystallography and rely on differences in intensity values between a native data set and heavy metal derivative data sets. It is possible that in electron crystallography dynamic scattering could hinder phasing by such methods, and new algorithms will need to be developed to make this possible. Phase extension from projection maps or from low-resolution density maps can also be used for direct phasing (Gipson et al., 2011; Wisedchaisri and Gonen, 2011). It is also possible that single particle cryo-EM could be used for direct phasing as previously demonstrated where a low-resolution single particle map was used to phase X-ray diffraction data (Speir et al., 1995; Dodson, 2001; Xiong, 2008). Moreover, a double tilt cryo holder as well as newly developed goniometer-based grid holders could be used to cover more of the Fourier space. Finally this method could benefit from automation in data collection.\n\nThis first study serves as a proof of principle that three-dimensional electron diffraction can yield an accurate protein structure from microcrystals. As additional protocols and programs are developed, MicroED promises to advance the field of structural biology and open the door to many exciting new studies.\n\n## Materials and methods\n\n### Lysozyme crystallization and sample preparation\n\nLysozyme was purchased from Fisher Scientific and a 200 mg/ml solution was prepared in 50 mM sodium acetate pH 4.5. Lysozyme solution was mixed 1 to 1 with precipitant solution (3.5M sodium chloride; 15% PEG 5,000; 50 mM sodium acetate pH 4.5) and crystals were grown by the hanging drop method. Following the crystal formation, the sample was diluted three to five times in 5% PEG 200. A 5 \u03bcl drop of the crystal solution was applied to a quantifoil 2/2 holey-carbon copper EM grid. The grid was then blotted and vitrified by plunging into liquid ethane using a Vitrobot Mark IV (FEI). The frozen-hydrated grid was loaded onto a Gatan 626 cryo-holder and transferred to a cryo-TEM.\n\n### Electron diffraction\n\nAll electron microscopy was performed on a FEI Tecnai F20 TEM equipped with a field emission electron source (FEG) and operating at 200 kV. Electron diffraction pattern tilt series data were recorded with a bottom mount TVIPS F416 4 k \u00d7 4 k CMOS camera with pixel size 15.6 \u03bcm using built in series exposure mode. The electron dose was kept below 0.01 e\u2212/\u00c52 per second, and each frame of a data set was taken with an exposure time of up to 10 s per frame. The electron dosage was calibrated with the use of a Faraday cage as well as by calibrating the counts on the CMOS detector in bright field mode. Each data set consisted of up to 90 still frames taken at 0.1\u20131\u00b0 intervals with a maximum total dose of \u223c9e\u2212/\u00c52 per crystal. The camera length was optimized for the desired resolution as described previously (Gonen, 2013).\n\n### Data processing\n\nAlthough our original intent was to perform all data analysis with existing X-ray crystallography software various incompatibilities and logistical roadblocks necessitated the development of some additional tools. Diffraction patterns were indexed and background subtracted intensities extracted and merged with in-house developed software implemented in python using methods adapted from those developed by Shi et al. (1998).\n\nBriefly, measurements were made on images identified as major planes of the crystal with ImageJ and used to determine the approximate magnitudes of the unit cell vectors a*, b*, and c* and the angles between them (\u03b1, \u03b2, and \u03b3). Subsequently, 100 to 350 spots were chosen across several images from each set of diffraction patterns. Vectors in reciprocal space were calculated for all of the selected spots. Difference vectors between spot vectors were calculated allowing vectors approximating the estimated unit cell lengths to be identified. The angles between potential unit cell vectors were calculated and \u2018orthogonal triplets\u2019 identified. Orthogonal triplets are defined as sets of vectors that contain a predicted a*, b*, and c*, which are all 90\u00b0 from each other (\u03b1 = \u03b2 = \u03b3 = 90\u00b0 for this crystal). All sets of the orthogonal triplets were averaged to yield estimated a*, b*, and c* vectors. The estimated a*, b*, and c* vectors were then refined by identifying parallel difference vectors derived from the original selected spots with lengths that were multiples of the unit cell lengths.\n\nThe calculated unit cell vectors were then used to predict the spots in each diffraction pattern. Two reference spots were chosen for each image and their Miller indices calculated using the previously determined unit cell vectors. For every diffraction pattern, the vector normal to the detector plane was calculated as:\n\n$$\nr_{1}\\times\u00a0r_{2}=n\n$$\n\nwhere r1 and r2 are the vectors defined by the Miller indices from reference spots one and two, respectively, and n is the resulting vector normal to the detector plane. Any reflection that appears on a given diffraction pattern will satisfy:\n\n$$\nn\u00b7v=0\n$$\n\nwhere v is any set of Miller indices. For any h, k, l that satisfied the above equation, within a defined threshold, that particular reflection was predicted to appear on the diffraction image, and its x, y detector coordinates on the diffraction pattern image were calculated.\n\nIntensities for each predicted reflection were integrated by first drawing both a square and a circular mask centered on the reflection, with the diameter of the circle identical to the length of the square. The mean pixel intensity outside the circle but within the square was calculated yielding the mean background intensity. The mean background was then subtracted from each pixel within the circle, and the resulting pixel intensities were summed. All related intensities from three data sets were grouped based on P422 symmetry. The maximum value for each group of equivalent reflections was assumed to best approximate the full intensity and was used for that reflection in the final data set. Because each intensity measurement ultimately originated from a single observation, SigI and SigF values were estimated as the square root of the intensity and square root of the structure factor, respectively. The final mtz file contains columns h, k, l, F, SIGF, I, SIGI. The final data set contained 2490 unique reflections from 2.9\u201320 \u00c5 with cumulative completeness of 92% (Table 1).\n\n### Structure refinement\n\nPhaser (McCoy et al., 2007) was used to obtain phases with lysozyme structure 4AXT (Cipriani et al., 2012) as a MR search model (LLG = 372 and TFZ = 14.7). The structure was then refined using CNS (Br\u00fcnger et al., 1998) and PHENIX (Adams et al., 2010) by rounds of rigid body, simulated annealing, and B-factor refinement. The Rfree data set represented 10% of the total data set. The data were subjected to twinning analysis; however, twinning with this symmetry group is forbidden and therefore we ruled out twinning in our crystals. Electron scattering factors (Gonen et al., 2005) were used during refinement.\n\n### Data deposition and software availability\n\nThe structure factors and coordinates of the final model were deposited in the Protein Data Bank with accession code 3J4G. The in house developed program that was used for processing the MicroED data is available for download at http://www.github.com/gonenlab/microED.git.\n",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "41babbc8-ba7c-4008-ba53-0bf517ce5046",
+      "submission_id": "6d63b6d8-67c8-4521-8930-75f15ded1cb9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Harrison, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01345.018](https://doi.org/10.7554/eLife.01345.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThree-dimensional electron crystallography of protein microcrystals\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Stephen Harrison (guest Reviewing editor), Richard Henderson, and Axel Brunger (peer reviewers).\n\nThe guest Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the guest Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis is an interesting paper reporting a successful, 2.9\u00c5 resolution, electron crystallographic study of tetragonal lysozyme crystals. It must be viewed in the context of the publication 50 years ago of the 6\u00c5 X-ray structure of the same tetragonal lysozyme crystals (Blake et al., Nature, 1962), the 2\u00c5 structure 3 years later (Blake et al., Nature, 1965) and the 0.94\u00c5 structure in 2001, which is cited in the present paper. Lysozyme has been a prototype for testing out new methods and approaches ever since Roberto Poljak crystallized it in the 1950s. It has also been studied recently by electron diffraction and imaging (Nederhof et al., Acta Cryst D69, 1223-1230 (2013); Nederhof et al., Acta Cryst D69, 852-859 (2013)). It would be helpful if the authors of the current paper cited the above publications. There is also Moukhametzianov et al., Acta Cryst D, 64, 158-166 (2008) who collected a full 3D 1.5\u00c5 resolution dataset from very small microcrystals of xylanase using an X-ray microfocus beam.\n\nAlthough the authors have done well to navigate all the technical hurdles that have so far prevented anyone else from collecting a full set of 3D electron diffraction data, it is still not clear whether there is any practical advantage in using electrons over conventional X-rays for 3D crystals. As Moukhametzianov et al., showed, there is also less radiation damage in X-ray crystallography when the crystals get very small because the secondary photoelectrons that are emitted when an X-ray is adsorbed can escape without depositing all their energy inside the crystal. The central background of inelastically scattered electrons in the electron diffraction patterns the present authors show is quite high. This high background could be greatly improved by using a zero-loss energy filter to remove these electrons. The paper should discuss the issue of damage, include some damage statistics from the present work (see item 2 in the revision requests, below), and mention the longer-term value of using a zero-loss energy filter.\n\nThe authors have also used a very crude way to measure intensities, simply taking the highest intensity of each peak in the rotation series. This would be greatly improved if the now fully established method of profile fitting that is used by the X-ray crystallographers and the methods for correcting partial reflection suggested below were implemented. (See changes in Abstract requested below.) If the work could be repeated with zero-loss energy filtering, a better detector, plus proper estimation of intensities, we might then be in a better position to see how successful the technique is, and what potential it has. Nevertheless, this is a useful step along the way.\n\nWe recommend two changes in the Abstract.\n\n1) Change the first sentence to: \u201cWe demonstrate that it is feasible to determine high-resolution proteins structures by electron crystallography of three-dimensional crystal in an electron cryo-microscope (CryoEM).\u201d The current first sentence is a trace misleading, because the study is really a demonstration of feasibility rather than a de novo structure determination.\n\n2) Change the last sentence to: \u201cThis proof of principle paves the way for the implementation of a new technique that may have wide applicability in structural biology\u201d.\n\nThe following substantive points should be addressed in a revision.\n\n1) Specify the significance of the MR solution (TFZ and LLG). A 2Fo-Fc map should be shown after MR in order to assess the quality of the MR phases. Moreover, a \u201comit\u201d refinement should be performed with a small fragment of the protein omitted (< \u223c10%) and a difference map of that omitted region calculated in order to assess the potential model bias of the maps.\n\n2) Plot a quantity related to radiation damage (for example, the average diffraction intensity) as a function of dose for each subsequent shot for the three crystals used for the final data set.\n\n3) Figure 2A: Is the diffraction limit of the crystals related to size? In other words, is the useful limit related to the number of electrons per Bragg peak?\n\n4) There is an XFEL lysozyme structure available to higher resolution (to dmin = 1.9) (Boutet et al., Science 2012) with comparable crystal size (less than 1 micrometer by 1 micrometer by 3 micrometers). This perhaps suggests that low-dose electron diffraction data collection is ultimately limited by radiation damage or the number of electrons per Bragg peak, in contrast to XFELs where radiation damage is circumvented, even at high-photon flux. The authors should comment on this.\n\n5) Did the authors try a standard indexing programs used in X-ray crystallography? It is curious why a new indexing program was developed.\n\n6) Taking the maximum intensity among the set of equivalent reflection in order to approximate the fully recorded refection is a very crude approximation that depends on the chance of recording approximately fully recorded reflections. This chance in turn is related to the energy bandwidth of the electron beam, the crystal mosacity, crystal and detector parameters, and crystal size (for very small crystals). A discussion of these factors and parameters for this particular experiment would be useful.\n\n7) The \u201cblind\u201d test cases either did not lead to a MR solution or they would not allow refinement. Please specify details: did some of the blind tests produce an MR solution, but refinement was stuck at high Rfree?\n\n8) The observation of non-zero intensities for systematic extinctions is interesting. The explanation by dynamic scattering is possible, although could there be other possibilities, e.g., due to small crystal size?\n\n9) In the Introduction the authors commented on XFELs: the large sample requirement is a limitation of current delivery methods and data analysis (i.e., without post-refinement), not due to XFELs per se. However, the comment on the limited availability of beam time is well taken. In this respect, the low-dose method presented by the authors could be an important staging method for XFEL experiments, and the combination of both experiments could be very powerful.\n",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ffb93f0b-4237-474d-9625-a19531b08c5f",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C1",
+      "claim": "It is feasible to determine high-resolution protein structures by electron crystallography of three-dimensional crystals in an electron cryo-microscope (CryoEM).",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that it is feasible to determine high-resolution protein structures by electron crystallography of three-dimensional crystals in an electron cryo-microscope (CryoEM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental results presented in the manuscript showing structure determination of lysozyme.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "a2d63f90-8200-4888-b04f-ae8149ae1c60",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C2",
+      "claim": "Lysozyme microcrystals were frozen on an electron microscopy grid.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysozyme microcrystals were frozen on an electron microscopy grid, and electron diffraction data collected to 1.7 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "cd9ec26f-dff1-4e00-9342-9ba533c3f2e4",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C3",
+      "claim": "Electron diffraction data from lysozyme microcrystals were collected to 1.7 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysozyme microcrystals were frozen on an electron microscopy grid, and electron diffraction data collected to 1.7 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement reported from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "fe0224dd-b2d9-4c10-9763-5f3af82fe222",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C4",
+      "claim": "A single tilt series contains up to 90 individual diffraction patterns collected from a single crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "A single tilt series contains up to 90 individual diffraction patterns collected from a single crystal with tilt angle increment of 0.1\u20131\u00b0 and a total accumulated electron dose less than 10 electrons per angstrom squared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection protocol developed and implemented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "f30ab9f6-fd0c-4ff3-9c2f-21ee4ff6dcd8",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C5",
+      "claim": "Diffraction patterns were collected with tilt angle increment of 0.1\u20131\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "A single tilt series contains up to 90 individual diffraction patterns collected from a single crystal with tilt angle increment of 0.1\u20131\u00b0 and a total accumulated electron dose less than 10 electrons per angstrom squared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter of the data collection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "8fc8dc40-9b3d-4e70-acc9-094f3ae3b793",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C6",
+      "claim": "The total accumulated electron dose was less than 10 electrons per angstrom squared.",
+      "claim_type": "EXPLICIT",
+      "source": "A single tilt series contains up to 90 individual diffraction patterns collected from a single crystal with tilt angle increment of 0.1\u20131\u00b0 and a total accumulated electron dose less than 10 electrons per angstrom squared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured parameter of the data collection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "c85e6002-8b66-4c44-84b7-ff1087b34ae9",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C7",
+      "claim": "Data from three crystals were indexed and used for structure determination of lysozyme by molecular replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "We indexed the data from three crystals and used them for structure determination of lysozyme by molecular replacement followed by crystallographic refinement to 2.9 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing and structure determination approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "5a31fda6-856d-4632-a891-a696ce9cbb7d",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C8",
+      "claim": "The structure of lysozyme was refined to 2.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We indexed the data from three crystals and used them for structure determination of lysozyme by molecular replacement followed by crystallographic refinement to 2.9 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the final resolution achieved in the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "33407991-e0a8-480e-97ab-10db9674f6bc",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C9",
+      "claim": "X-ray crystallography depends on large and well-ordered crystals for diffraction studies.",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray crystallography depends on large and well-ordered crystals for diffraction studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of structural biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "ab2c922a-7854-4d85-a39b-b99eab0ba48a",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C10",
+      "claim": "For every elastic scattering event that contributes to a diffraction pattern there are \u223c10 inelastic events that cause beam damage.",
+      "claim_type": "EXPLICIT",
+      "source": "For every elastic scattering event that contributes to a diffraction pattern there are \u223c10 inelastic events that cause beam damage (Henderson, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Henderson, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "dce57029-37bc-40f8-b86d-de93648833bb",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C11",
+      "claim": "Large crystals are required to withstand the high levels of radiation damage received during X-ray data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, large crystals are required to withstand the high levels of radiation damage received during data collection (Henderson, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Henderson, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "b0cae69e-219a-4ca7-b48b-b5b668991623",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C12",
+      "claim": "Femtosecond X-ray crystallography uses a very intense pulse of X-rays that yields coherent signal in a time shorter than the destructive response to deposited energy.",
+      "claim_type": "EXPLICIT",
+      "source": "In an attempt to alleviate this problem, researchers have turned to femtosecond X-ray crystallography (Chapman et al., 2011; Boutet et al., 2012), in which a very intense pulse of X-rays yields coherent signal in a time shorter than the destructive response to deposited energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chapman et al., 2011 and Boutet et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "7e62851d-a77d-433c-84cf-5d0a87b2f871",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C13",
+      "claim": "Femtosecond X-ray crystallography requires an extremely large number of crystals (millions).",
+      "claim_type": "EXPLICIT",
+      "source": "While this technique shows great promise, the current implementation of the technology requires an extremely large number of crystals (millions) and access to sources is still in developmental stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the current state of femtosecond X-ray crystallography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "9dc5d5da-06fd-4c6d-8279-fe588476d5bf",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C14",
+      "claim": "Electrons interact with materials more strongly than X-rays.",
+      "claim_type": "EXPLICIT",
+      "source": "Because electrons interact with materials more strongly than X-rays (Henderson, 1995), electrons can yield meaningful data from relatively small and thin crystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Henderson, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "3f931e99-9095-4379-aec5-bd7106a6426c",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C15",
+      "claim": "Electrons can yield meaningful data from relatively small and thin crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "Because electrons interact with materials more strongly than X-rays (Henderson, 1995), electrons can yield meaningful data from relatively small and thin crystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stronger interaction of electrons with materials.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "0c445408-666c-46b8-ae9d-4be021f3178f",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C16",
+      "claim": "Electron crystallography has been used successfully to determine the structures of several proteins from thin two-dimensional crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has been used successfully to determine the structures of several proteins from thin two-dimensional crystals (2D crystals) (Wisedchaisri et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wisedchaisri et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "962bf383-d285-46ef-a079-1e607a759286",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C17",
+      "claim": "High energy electrons result in a large amount of radiation damage to the sample, leading to loss in resolution and destruction of the crystalline material.",
+      "claim_type": "EXPLICIT",
+      "source": "High energy electrons result in a large amount of radiation damage to the sample, leading to loss in resolution and destruction of the crystalline material (Glaeser, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Glaeser, 1971.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "ca92f47e-e739-4375-9078-2a7f6ba2914f",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C18",
+      "claim": "Each crystal in electron crystallography can usually yield only a single diffraction pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "As each crystal can usually yield only a single diffraction pattern, structure determination is only possible by merging data originating from hundreds of individual crystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of electron crystallography limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "81bf961b-6ba5-4c2b-9c00-b765cc84c266",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C19",
+      "claim": "Electron diffraction data from more than 200 individual crystals were merged to generate a data set for aquaporin-0 at 1.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, electron diffraction data from more than 200 individual crystals were merged to generate a data set for aquaporin-0 at 1.9 \u00c5 resolution (Gonen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gonen et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "80d81f28-89bd-4e34-94b6-0ab5a7d21243",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C20",
+      "claim": "Previous attempts at using electron diffraction for structure determination from protein 3D crystals were not successful.",
+      "claim_type": "EXPLICIT",
+      "source": "While electron crystallography has been successful with 2D crystals, previous attempts at using electron diffraction for structure determination from protein 3D crystals were not successful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies detailing the difficulties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "1a1a97d3-1df3-4656-b8fa-1cb5bb129f88",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C21",
+      "claim": "Atomic resolution diffraction data can be collected from crystals with volumes up to six orders of magnitude smaller than those typically used for X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that atomic resolution diffraction data can be collected from crystals with volumes up to six orders of magnitude smaller than those typically used for X-ray crystallography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental results in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "96441e0d-6f12-4a0c-8e7b-671561e3e2fd",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C22",
+      "claim": "Lysozyme was chosen as a model protein because it is a well-behaved and well-characterized protein that readily forms well-ordered crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysozyme was chosen as a model protein because it is a well-behaved and well-characterized protein that readily forms well-ordered crystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the rationale for the choice of model system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "a2fd983e-844e-4cc7-a158-4f712593145f",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C23",
+      "claim": "Lysozyme has been a well-studied protein and the model protein of choice for many new methods in crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "From the time its structure was first analyzed (Blake et al., 1962, 1965), lysozyme has been a well-studied protein and the model protein of choice for many new methods in crystallography (Boutet et al., 2012; Cipriani et al., 2012; Nederlof et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies using lysozyme.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "3b83ec5d-aab4-441c-9857-9feffb14dd70",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C24",
+      "claim": "Lysozyme microcrystals are up to 6 orders of magnitude smaller in volume than the larger crystals typically used for X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "These specks are up to 6 orders of magnitude smaller in volume than the larger crystals in the drop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on the observed crystal sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "245eb57a-9a71-4712-b84a-c0159f0c7441",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C25",
+      "claim": "More than 100 microcrystals were typically observed per grid preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 100 microcrystals were typically observed per grid preparation, and these ranged in size from several microns to sub micron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "8b4d1fde-15cb-4f97-aeec-f2019aa85240",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C26",
+      "claim": "Lysozyme microcrystals ranged in size from several microns to sub micron.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 100 microcrystals were typically observed per grid preparation, and these ranged in size from several microns to sub micron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "2dcf2cb0-3ca5-4360-b75b-d6564bae8b54",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C27",
+      "claim": "Crystals that appeared thick (estimated as >3 \u03bcm) did not yield diffraction data because the electron beam could not penetrate the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals that appeared thick (estimated as >3 \u03bcm) did not yield diffraction data because the electron beam could not penetrate the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "0bed6687-85e9-4569-9e43-7997ae578260",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C28",
+      "claim": "Crystals estimated at \u223c1.5 \u03bcm showed diffraction, but the quality of the pattern varied depending on the sample tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals that appeared slightly thinner, estimated at \u223c1.5 \u03bcm, did show diffraction, but because the quality of the pattern varied depending on the sample tilt (Figure 2A), we did not use crystals of this thickness and size for data collection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "2d4e80b7-a30e-4a45-b91f-45a8b23a107d",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C29",
+      "claim": "Approximately 50% of the crystals in the preparations appeared much thinner, estimated at \u223c0.5 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50% of the crystals in our preparations appeared much thinner, estimated at \u223c0.5 \u03bcm, and showed a distribution of attainable resolutions with the best diffracting to \u223c1.7 \u00c5 resolution (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "6943e95e-9cda-46c4-80a3-afb4eb0349dc",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C30",
+      "claim": "The best diffracting thin crystals (\u223c0.5 \u03bcm) diffracted to \u223c1.7 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50% of the crystals in our preparations appeared much thinner, estimated at \u223c0.5 \u03bcm, and showed a distribution of attainable resolutions with the best diffracting to \u223c1.7 \u00c5 resolution (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the diffraction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "2880202f-7178-41c5-b5f8-536a8eb4ffaf",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C31",
+      "claim": "High quality diffraction data could only be obtained from very thin crystals, \u223c0.5\u20131 \u03bcm thick and 1\u20136 \u00b5m long and wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, we were only able to obtain high quality diffraction data from the very thin crystals, \u223c0.5\u20131 \u03bcm thick and 1\u20136 \u00b5m long and wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "859363eb-8f54-4617-a54b-e0b90adfd804",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C32",
+      "claim": "Thin lysozyme crystals (\u223c0.5\u20131 \u03bcm) contain approximately 55 \u00d7 10^6 unit cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While these crystals are exceptionally small, they still contain approximately 55 \u00d7 106 unit cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the crystal dimensions and unit cell parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "aad28b27-5621-4951-bd6a-09361183fd16",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C33",
+      "claim": "For thin crystals, tilt had no significant adverse effect on the diffraction quality.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that for such thin crystals the tilt had no significant adverse affect on the diffraction quality (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "c40aa5ac-9683-43b3-8784-93e125b284e7",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C34",
+      "claim": "In 2D electron crystallography, the electron dose typically used in diffraction causes significant radiation damage to the sample, leading to a rapid loss in resolution and destruction of the crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "For 2D electron crystallography, the electron dose that is typically used in diffraction causes significant radiation damage to the sample, leading to a rapid loss in resolution and destruction of the crystal (Glaeser, 1971; Unwin and Henderson, 1975; Taylor and Glaeser, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Glaeser, 1971; Unwin and Henderson, 1975; Taylor and Glaeser, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "ed3846ce-e5fc-4091-8b31-a543734cc574",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C35",
+      "claim": "3D crystals can deliver electron diffraction data to atomic resolution with very low doses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 3D crystals can deliver electron diffraction data to atomic resolution with very low doses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental results and a citation to Baker et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "aedddf36-68fc-48d7-9c2d-0016a1e7ed1f",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C36",
+      "claim": "A recent study documents \u223c3 \u00c5 resolution diffraction data from catalase 3D crystals after a single exposure of less than 10e\u2212/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study documents \u223c3 \u00c5 resolution diffraction data from catalase 3D crystals after a single exposure of less than 10e\u2212/\u00c52 (Baker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Baker et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "02aa9251-39e5-4571-8929-3d0e0f851e44",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C37",
+      "claim": "Diffraction data from lysozyme microcrystals could be recorded with extremely low electron dose of <0.01 e\u2212/\u00c52 per second showing strong and sharp diffraction spots extending well beyond the 2 \u00c5 resolution mark.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that even with extremely low electron dose of <0.01 e\u2212/\u00c52 per second, we could record diffraction data from lysozyme microcrystals showing strong and sharp diffraction spots extending well beyond the 2 \u00c5 resolution mark (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "c413a464-6e66-4dfc-af2e-b5d115a580c0",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C38",
+      "claim": "There were no observable adverse effects on resolution or intensity until the accumulated dose had reached \u223c9 e\u2212/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no observable adverse effects on resolution (Figure 2D) or intensity until the accumulated dose had reached \u223c9 e\u2212/\u00c52 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the dose experiment shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "92c540f1-c0a8-4bff-9bf7-ce8c13b31143",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C39",
+      "claim": "The data collection protocol was optimized to keep the total accumulated electron dosage below \u223c9 e\u2212/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore optimized the data collection protocol to keep the total accumulated electron dosage below this critical value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the optimized protocol based on the dose experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "aa4e1d75-fe9a-4d95-891e-17df67032a7a",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C40",
+      "claim": "By using low dose, multiple diffraction patterns could be collected from a single crystal instead of just a single pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "By using such a low dose, we could limit the radiation damage to the crystal, allowing us to collect multiple diffraction patterns from a single crystal instead of just a single pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the low dose approach and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "ff22643b-cd3b-490b-9f2f-19f739675430",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C41",
+      "claim": "Up to 90 individual diffraction patterns could be collected from a single crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this modified procedure, we were able to collect up to 90 individual diffraction patterns from a single crystal (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the experiments shown in Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "0dd822e6-e7fc-497c-8b0d-a79c04f9a7ce",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C42",
+      "claim": "Each diffraction pattern was recorded following a 1\u00b0 tilt to cover \u223c40\u201390\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Each pattern was recorded following a 1\u00b0 tilt to cover \u223c40\u201390\u00b0 (begin with the stage tilted at \u221245\u00b0 and proceed to collect data to +45\u00b0 in order to cover a 90\u00b0 wedge).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "f0c6c4c0-1561-44bf-b913-38a52b4d294c",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C43",
+      "claim": "Each exposure lasted up to 10 s at a dosage of approximately 0.01 e\u2212/\u00c52 per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Each exposure lasted up to 10 s at a dosage of approximately 0.01 e\u2212/\u00c52 per second, for a cumulative dose of no more than \u223c9 e\u2212/\u00c52 per data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "2f66f4aa-e4b0-49dd-ba7d-5d06983afdba",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C44",
+      "claim": "The cumulative dose was no more than \u223c9 e\u2212/\u00c52 per data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Each exposure lasted up to 10 s at a dosage of approximately 0.01 e\u2212/\u00c52 per second, for a cumulative dose of no more than \u223c9 e\u2212/\u00c52 per data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured parameter of the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "ae111b44-8804-47a1-a1bf-08aa31070291",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C45",
+      "claim": "The unit cell dimensions were calculated as a = b = 77 \u00c5, c = 37 \u00c5, \u03b1 = \u03b2 = \u03b3 = 90\u00b0 and P43212 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The unit cell dimensions were calculated as a = b = 77 \u00c5, c = 37 \u00c5, \u03b1 = \u03b2 = \u03b3 = 90\u00b0 and P43212 symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the data processing and indexing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "f6dc690b-ab86-48bd-81b4-62b9ce93e8ca",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C46",
+      "claim": "The space group symmetry and unit cell dimensions are consistent with previous lysozyme X-ray diffraction data.",
+      "claim_type": "EXPLICIT",
+      "source": "This space group symmetry and unit cell dimensions are consistent with previous lysozyme X-ray diffraction data (Diamond, 1974; Sauter et al., 2001; Cipriani et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous lysozyme structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "a75beaf5-6ede-4728-ba62-c9adc7d621df",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C47",
+      "claim": "The electron beam wavelength is 0.025 \u00c5 at 200 kV.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron beam wavelength is 0.025 \u00c5 at 200 kV compared with \u223c1 \u00c5 for X-rays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known physical property of electrons at 200 kV.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "0481c347-75c7-4ff6-9080-f26bcf8d0815",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C48",
+      "claim": "The Ewald sphere in the experiments is nearly flat (the sphere is off the reciprocal plane by only 0.003 \u00c5\u22121 at 2 \u00c5 resolution).",
+      "claim_type": "EXPLICIT",
+      "source": "Under such conditions, the Ewald sphere in our experiments is nearly flat (the sphere is off the reciprocal plane by only 0.003 \u00c5\u22121 at 2 \u00c5 resolution) even in the high-resolution range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the electron wavelength and geometry.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "496a90e9-818b-4625-baad-a7afe843efb1",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C49",
+      "claim": "The reflections in the experiments are very tight, spreading less than a 6 pixel sphere that corresponds to \u223c1/1000 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of the full width at half maximum intensity for the strongest reflections indicate that the reflections in our experiments are very tight, spreading less than a 6 pixel sphere that corresponds to \u223c1/1000 \u00c5. (Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the diffraction data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "71d54213-a775-4440-bb29-bb5d58f0d6e7",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C50",
+      "claim": "Multiple observations were recorded for every lattice point.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we densely sampled the reciprocal space, we recorded multiple observations for every lattice point (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result of the data collection strategy shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "cf12dccc-b0d7-4bf1-97fe-67fbd4728fc4",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C51",
+      "claim": "The multiplicity value was 34.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we could sample the observed intensity values for each reflection multiple times (multiplicity value = 34), and we made the assumption that the strongest intensity roughly approximated the complete intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistic from the data processing shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "70574677-1b53-4a34-8a2f-6749782934cf",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C52",
+      "claim": "The merging of data in P422 symmetry from three separate crystals resulted in a final data set with 2490 unique reflections with \u223c92% cumulative completeness at 2.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The merging of data in P422 symmetry from three separate crystals processed in this manner resulted in a final data set with 2490 unique reflections with \u223c92% cumulative completeness at 2.9 \u00c5 resolution (Table 1, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the data processing shown in Table 1 and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "6c89e910-afb3-40ee-96b1-ba6a252fd637",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C53",
+      "claim": "The structure of lysozyme was solved at 2.9 \u00c5 resolution by molecular replacement using the lysozyme PDB 4AXT as a search model.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of lysozyme was solved at 2.9 \u00c5 resolution by molecular replacement (MR) using the lysozyme PDB 4AXT (Cipriani et al., 2012) as a search model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure determination method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "262a7678-5d24-4032-9fd0-d79733cdb6d1",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C54",
+      "claim": "The initial MR 2Fobs\u2212Fcalc map prior to refinement shows well-defined density around the model, indicating high quality phases from MR.",
+      "claim_type": "EXPLICIT",
+      "source": "The map shows well-defined density around the model, indicating high quality phases from MR (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the electron density map shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "5bfb4af1-43c5-42ef-85eb-c2c101197e6b",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C55",
+      "claim": "A composite-omit map showed good agreement with the original map obtained by MR.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, a composite-omit map that was calculated by omitting 5% at a time showed good agreement with the original map obtained by MR (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the composite-omit map shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "8499d614-030e-4d0c-bf7b-049c49db4482",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C56",
+      "claim": "When a poly-alanine model of lysozyme was used for MR, the resulting map showed significant density beyond the alanine side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "When a poly-alanine (polyA) model of lysozyme was used for MR, the resulting map showed significant density beyond the alanine side chains (indicated by arrows in Figure 6E,F), into which the correct side chains could be built.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the electron density map shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "b961df43-f0f2-4c59-b57b-de83ea2444b8",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C57",
+      "claim": "The MR solution was not dominated by model bias.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that our solution from MR was not dominated by model bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the poly-alanine MR results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "4123f5c3-e18e-439a-b7ec-1e2834c88f41",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C58",
+      "claim": "Following refinement, a solution was found with Rwork/Rfree = 25.5%/27.8% and good geometry at 2.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Following refinement that included the use of electron scattering factors, rigid body, simulated annealing, and B-factor refinement, a solution was found with acceptable statistics (Rwork/Rfree = 25.5%/27.8%) and good geometry at 2.9 \u00c5 resolution (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the crystallographic refinement shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "3f3f492d-71c5-4c9e-90fa-f21e3771b847",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C59",
+      "claim": "The final structure has a very low RMSD (0.475 \u00c5 for C\u03b1, 0.575 \u00c5 for all atoms) when compared to the previously published high-resolution structure of lysozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the final structure has a very low RMSD (0.475 \u00c5 for C\u03b1, 0.575 \u00c5 for all atoms) when compared to the previously published high-resolution structure of lysozyme (Cipriani et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison calculation between the MicroED structure and a reference structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "58668108-bb9a-4e5d-919c-31212db1ad28",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C60",
+      "claim": "Only the dataset containing the correct observed experimental intensities yielded a solution that could be further refined to acceptable Rwork/Rfree and geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Only dataset 5, which contained the correct observed experimental intensities, yielded a solution that could be further refined to acceptable Rwork/Rfree and geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model validation tests shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "45c4ab99-c47f-413f-bc5f-8d57618b80b4",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C61",
+      "claim": "Datasets containing random errors either did not yield MR solutions or would not allow refinement to produce an acceptable structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Datasets 1\u20134, which contained the random errors described above, either did not yield MR solutions or would not allow refinement to produce an acceptable structure (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model validation tests shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "bac22741-9b79-448f-bbd0-70f7a62f3f18",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C62",
+      "claim": "None of the unrelated structures gave an acceptable MR solution.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these structures gave an acceptable MR solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the MR validation tests shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "b23a5548-732e-4972-8315-e1bc65ea1a96",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C63",
+      "claim": "The extracted intensities are accurate enough to yield a reliable structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments indicate that the extracted intensities are accurate enough to yield a reliable structure and that model bias originating from MR did not skew our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the validation tests.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "59308d30-d716-490c-9960-5c9be7ee84b6",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C64",
+      "claim": "Model bias originating from MR did not skew the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments indicate that the extracted intensities are accurate enough to yield a reliable structure and that model bias originating from MR did not skew our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the validation tests.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "7b9e234d-d8d1-4c9d-9b67-dad014be3506",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C65",
+      "claim": "Data sets collected in electron crystallography of 2D crystals suffer from a missing cone due to the limitation of the maximum achievable tilt angle in the TEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Data sets collected in electron crystallography of 2D crystals suffer from a missing cone due to the limitation of the maximum achievable tilt angle in the TEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in electron crystallography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "d733639f-0f52-46d8-be9b-1f9aef7386f0",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C66",
+      "claim": "With tilt angles up to 60\u00b0, the missing cone is roughly 13%.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports estimate that with tilt angles up to 60\u00b0, the missing cone is roughly 13% (Glaeser et al., 1989), and the resolution in plane is typically higher than the resolution perpendicular to the tilt axis (z*).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Glaeser et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "286fabef-1c3e-46b0-a5fc-e6ed8bab64bf",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C67",
+      "claim": "Because the data from 3 crystals were used and the orientation of each crystal on the grid varied, the full reciprocal space could be covered.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, because the data from 3 crystals were eventually used, and the orientation of each crystal on the grid varied, we could cover the full reciprocal space (Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data collection strategy shown in Video 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "ffc4c30f-ea4d-4520-a80e-4b7d064f07ba",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C68",
+      "claim": "Dynamic scattering likely introduces inaccuracies in the electron diffraction data.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic scattering likely introduces inaccuracies in the electron diffraction data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on known properties of electron diffraction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "7520ee70-3ea1-471e-b7cc-cde132ee9c8f",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C69",
+      "claim": "In electron diffraction, dynamic scattering could redistribute primary reflection intensities, reducing the accuracy of the intensity measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In electron diffraction, dynamic scattering (multi scattering events) could redistribute primary reflection intensities, reducing the accuracy of the intensity measurements by randomly contributing to the observed intensities (Grigorieff et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Grigorieff et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "85e3a417-6744-4932-8b35-e330da22389d",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C70",
+      "claim": "Very weak reflections were observed at the positions where systematic absences were expected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, very weak reflections were observed at the positions where absences were expected (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the diffraction data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "1c4b1eef-8d99-42f9-afb5-a011628446cd",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C71",
+      "claim": "The weak reflections at systematic absence positions likely originate from dynamic scattering events.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that these reflections originate from dynamic scattering events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of weak reflections at systematic absence positions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "2b20e06d-d3b4-4ab2-b190-9c873a9b11ae",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C72",
+      "claim": "On average, the intensity in the systematic absences was found to be 4.9% of the total intensity of the adjacent spots.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the intensity in the systematic absences was found to be 4.9% of the total intensity of the adjacent spots. (Standard deviation 2.7%, Max 12.4%, n = 17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the diffraction data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "412d924c-545d-49e8-abaa-f00002d93c24",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C73",
+      "claim": "Comparison of experimental intensities with intensities obtained by X-ray diffraction of lysozyme indicates that the data follow a similar trend and are not dominated by intensity randomness.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, comparison of our experimental intensities with intensities obtained by X-ray diffraction of lysozyme of the same crystal form indicates that our data follow a similar trend and are not dominated by intensity randomness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison analysis between MicroED and X-ray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "6e5370ad-0f7f-4cc7-9ca7-f6b92e7f8020",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C74",
+      "claim": "A Pearson correlation coefficient between the MicroED and X-ray data sets was 0.63 from 6.0 to 13.5 \u00c5 (0.56 from 2.0\u201313.5 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "A Pearson correlation coefficient between the two data sets was 0.63 from 6.0 to 13.5 \u00c5 (0.56 from 2.0\u201313.5 \u00c5), indicating conservation of reflection hierarchy\u2014strong intensities remain strong and weak intensities remain weak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis comparing MicroED and X-ray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "37a4f9f4-3493-4036-bab8-6ea8a428ab60",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C75",
+      "claim": "Multiple scattering contributes at maximum roughly 10% to the intensity value.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our analyses suggest that multiple scattering contributes at maximum roughly 10% to the intensity value and that at least for structure determination at 2.9 \u00c5 resolution such an error in intensity appears to be tolerable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the systematic absence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "e575cf7d-9b8e-4d2e-a77b-94573d8e0eff",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C76",
+      "claim": "At 2.9 \u00c5 resolution, an error of roughly 10% in intensity from multiple scattering appears to be tolerable.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our analyses suggest that multiple scattering contributes at maximum roughly 10% to the intensity value and that at least for structure determination at 2.9 \u00c5 resolution such an error in intensity appears to be tolerable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the successful structure determination despite multiple scattering.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "9426cb8d-78d7-4a65-8a48-8e2190f2aadc",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C77",
+      "claim": "It is possible that dynamic scattering will become a significant source of error at higher resolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that dynamic scattering will become a significant source of error at higher resolutions and some correction algorithm will then have to be developed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future challenges at higher resolution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "7ae4dfae-ac37-4022-8cef-92d99b12c4c0",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C78",
+      "claim": "MicroED should be widely applicable to both soluble and membrane proteins as long as small, well-ordered crystals can be obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be widely applicable to both soluble and membrane proteins as long as small, well-ordered crystals can be obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential applicability of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "14cd75fc-b663-47cc-aff6-402aac603f48",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C79",
+      "claim": "Diffraction data at atomic resolution can be collected from crystals that are up to 6 orders of magnitude smaller in volume than those typically used for X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that diffraction data at atomic resolution can be collected and a structure determined from crystals that are up to 6 orders of magnitude smaller in volume than those typically used for X-ray crystallography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "a6392e21-9305-4dbd-ae1f-b62688b3286b",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C80",
+      "claim": "Electron diffraction of microcrystals offers an alternative when crystal size optimization becomes an impassable barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron diffraction of microcrystals as described here offers an alternative, allowing this roadblock to be bypassed and data to be collected directly from the initial crystallization hits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "0d8570ee-68af-4284-8626-349390a20ebf",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C81",
+      "claim": "Better programs need to be developed for accurately determining lattice parameters, indexing all reflections, extracting the intensities and correcting for incomplete intensities, dynamic scattering, and Ewald sphere curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Better programs need to be developed for accurately determining lattice parameters, indexing all reflections, extracting the intensities and correcting for incomplete intensities, dynamic scattering, and Ewald sphere curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of future improvements needed for the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "038a4907-ea21-4e1b-957e-dbe4eee2101f",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C82",
+      "claim": "Developing procedures for postrefinement should allow for the proper correction and scaling of partially recorded reflections, leading to improved estimation of full intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, developing procedures for postrefinement (unit cell refinement, estimating the mosaic spread, rocking curve, etc) should allow for the proper correction and scaling of partially recorded reflections, leading to improved estimation of full intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "8b34d388-da1c-431b-81fa-e5fd4f2db71e",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C83",
+      "claim": "Relatively minor modifications to existing programs such as MOSFLM should allow the handling of electron diffraction data from 3D crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively minor modifications to existing programs such as MOSFLM (Leslie and Powell, 2007) should allow the handling of electron diffraction data from 3D crystals and take advantage of the large body of work already dedicated to processing X-ray diffraction data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about adapting existing software for MicroED data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "da067cac-8550-4fcf-a629-5bc3a1f4c742",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C84",
+      "claim": "Crystal oscillation or related methods such as precession of the electron beam would allow more accurate determination of spot intensities, especially at very high resolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal oscillation or related methods such as precession of the electron beam (Gj\u00f8nnes et al., 1998) would allow more accurate determination of spot intensities, especially at very high resolutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential improvements to the data collection method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "596f4850-510c-4f48-bcfc-679318f1a36d",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C85",
+      "claim": "It is possible that in electron crystallography dynamic scattering could hinder phasing by heavy metal methods.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that in electron crystallography dynamic scattering could hinder phasing by such methods, and new algorithms will need to be developed to make this possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential challenges for phasing methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "d5018f35-530c-43a9-b1de-26a7c26130ca",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C86",
+      "claim": "Phase extension from projection maps or from low-resolution density maps can be used for direct phasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase extension from projection maps or from low-resolution density maps can also be used for direct phasing (Gipson et al., 2011; Wisedchaisri and Gonen, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gipson et al., 2011 and Wisedchaisri and Gonen, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "2bb698ec-02a4-4678-8c7c-69512f8f552a",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C87",
+      "claim": "Single particle cryo-EM could be used for direct phasing as previously demonstrated where a low-resolution single particle map was used to phase X-ray diffraction data.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that single particle cryo-EM could be used for direct phasing as previously demonstrated where a low-resolution single particle map was used to phase X-ray diffraction data (Speir et al., 1995; Dodson, 2001; Xiong, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Speir et al., 1995; Dodson, 2001; Xiong, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "b5dfb04e-d599-44e6-8911-23d00bae4a38",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C88",
+      "claim": "Three-dimensional electron diffraction can yield an accurate protein structure from microcrystals.",
+      "claim_type": "EXPLICIT",
+      "source": "This first study serves as a proof of principle that three-dimensional electron diffraction can yield an accurate protein structure from microcrystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "e90f8659-928a-443e-95f4-ac8c115bf50b",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C89",
+      "claim": "MicroED promises to advance the field of structural biology and open the door to many exciting new studies.",
+      "claim_type": "EXPLICIT",
+      "source": "As additional protocols and programs are developed, MicroED promises to advance the field of structural biology and open the door to many exciting new studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the future impact of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "48cd26eb-ad45-4242-9661-ffa6635f6b8e",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C90",
+      "claim": "All electron microscopy was performed on a FEI Tecnai F20 TEM equipped with a field emission electron source (FEG) and operating at 200 kV.",
+      "claim_type": "EXPLICIT",
+      "source": "All electron microscopy was performed on a FEI Tecnai F20 TEM equipped with a field emission electron source (FEG) and operating at 200 kV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "d60952f4-3811-4ec4-b5d7-e635f340ed14",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C91",
+      "claim": "Electron diffraction pattern tilt series data were recorded with a bottom mount TVIPS F416 4 k \u00d7 4 k CMOS camera with pixel size 15.6 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron diffraction pattern tilt series data were recorded with a bottom mount TVIPS F416 4 k \u00d7 4 k CMOS camera with pixel size 15.6 \u03bcm using built in series exposure mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the detector used for data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "477272c3-14d3-4e06-b699-90d5671de53e",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C92",
+      "claim": "The FEG can generate a very coherent beam with an energy-spread function of <1 eV at 200 kV acceleration voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "The FEG can generate a very coherent beam with an energy-spread function of <1 eV at 200 kV acceleration voltage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the electron source used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "df2a98ab-8a16-47ee-861f-25b1d01bbfb3",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C93",
+      "claim": "Phaser was used to obtain phases with lysozyme structure 4AXT as a MR search model (LLG = 372 and TFZ = 14.7).",
+      "claim_type": "EXPLICIT",
+      "source": "Phaser (McCoy et al., 2007) was used to obtain phases with lysozyme structure 4AXT (Cipriani et al., 2012) as a MR search model (LLG = 372 and TFZ = 14.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the molecular replacement procedure and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "4c541bcb-f500-4a5a-bf70-aef92996ed1b",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C94",
+      "claim": "The structure was refined using CNS and PHENIX by rounds of rigid body, simulated annealing, and B-factor refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure was then refined using CNS (Br\u00fcnger et al., 1998) and PHENIX (Adams et al., 2010) by rounds of rigid body, simulated annealing, and B-factor refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the refinement procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "970518e3-a2de-452f-831b-e5c2af74a24d",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C95",
+      "claim": "The Rfree data set represented 10% of the total data set.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rfree data set represented 10% of the total data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cross-validation procedure used in refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "6ccf28af-5963-42ad-8a7b-dc718f02ed00",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C96",
+      "claim": "Electron scattering factors were used during refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron scattering factors (Gonen et al., 2005) were used during refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the refinement procedure with citation to Gonen et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "d59cd48a-df47-48af-bd29-8cfe5f53d961",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C97",
+      "claim": "The structure factors and coordinates of the final model were deposited in the Protein Data Bank with accession code 3J4G.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure factors and coordinates of the final model were deposited in the Protein Data Bank with accession code 3J4G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "49204fb5-a648-4d67-8bc5-39278b694534",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C98",
+      "claim": "The in house developed program for processing MicroED data is available for download at http://www.github.com/gonenlab/microED.git.",
+      "claim_type": "EXPLICIT",
+      "source": "The in house developed program that was used for processing the MicroED data is available for download at http://www.github.com/gonenlab/microED.git.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "090b8e4c-a61d-4b1a-ba69-cf8399d06d5a",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C99",
+      "claim": "Lysozyme microcrystals have length and width that varied from 2 to 6 \u00b5m with an estimated thickness of \u223c0.5\u20131 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The length and width of the crystals varied from 2 to 6 \u00b5m with an estimated thickness of \u223c0.5\u20131 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the cryo-EM observations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "31fa27df-3054-442c-8104-2526aa768ea3",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C100",
+      "claim": "43 out of 100 thin crystals showed reflections in the 2\u20134 \u00c5 range.",
+      "claim_type": "EXPLICIT",
+      "source": "43/100 were thin crystals that showed reflections in the 2\u20134 \u00c5 range, with the best crystal in this set yielding data to \u223c1.7 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistic from the quality assessment of cryo preparations shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "68f1c731-a23e-40bd-9056-4b539f63dbfa",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C101",
+      "claim": "Approximately 60 eV is deposited per elastic electron scattering event.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall damage from electron scattering is much lower than that for X-rays (approximately 60 eV deposited per elastic scattering event vs 80 keV per elastic X-ray scattering event [Henderson, 1995]), accumulating radiation damage will eventually contribute significant error to the recorded intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Henderson, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "41bf099b-5de3-4050-8ab0-c584ab320dd2",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C102",
+      "claim": "Approximately 80 keV is deposited per elastic X-ray scattering event.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall damage from electron scattering is much lower than that for X-rays (approximately 60 eV deposited per elastic scattering event vs 80 keV per elastic X-ray scattering event [Henderson, 1995]), accumulating radiation damage will eventually contribute significant error to the recorded intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Henderson, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "80e803ea-2414-4cfe-abdf-573f4eb3b3dd",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C103",
+      "claim": "The overall damage from electron scattering is much lower than that for X-rays.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall damage from electron scattering is much lower than that for X-rays (approximately 60 eV deposited per elastic scattering event vs 80 keV per elastic X-ray scattering event [Henderson, 1995]), accumulating radiation damage will eventually contribute significant error to the recorded intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Henderson, 1995 and the comparison of deposited energy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "281e244e-4398-402a-962d-ee0dfbcd83d1",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C104",
+      "claim": "The shortest unit cell dimension for lysozyme in reciprocal space is a* = b* = 1/77 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, the shortest unit cell dimension for lysozyme in reciprocal space is a* = b* = 1/77 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation from the unit cell dimensions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "b928f739-1573-4b7c-bce1-337c36c5f9bc",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C105",
+      "claim": "The density map obtained by electron diffraction shows good agreement with the refined model.",
+      "claim_type": "EXPLICIT",
+      "source": "The density map obtained by electron diffraction shows good agreement with the refined model (Figure 7A, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the electron density map shown in Figure 7A and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "d6762da8-b458-424b-a626-3d840472038c",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C106",
+      "claim": "The Fobs\u2212Fcalc difference map shows no interpretable features.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fobs\u2212Fcalc difference map shows no interpretable features (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the difference map shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "6a4e35a9-0da9-4424-83ec-b6af76833931",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C107",
+      "claim": "Lysozyme solution was prepared at 200 mg/ml in 50 mM sodium acetate pH 4.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysozyme was purchased from Fisher Scientific and a 200 mg/ml solution was prepared in 50 mM sodium acetate pH 4.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "3a7db4d8-f221-4d87-b08e-5cba93a6906d",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C108",
+      "claim": "Lysozyme solution was mixed 1 to 1 with precipitant solution (3.5M sodium chloride; 15% PEG 5,000; 50 mM sodium acetate pH 4.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Lysozyme solution was mixed 1 to 1 with precipitant solution (3.5M sodium chloride; 15% PEG 5,000; 50 mM sodium acetate pH 4.5) and crystals were grown by the hanging drop method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the crystallization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "cb2904af-31a8-4acf-a4c8-0cebbf18f49d",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C109",
+      "claim": "Crystals were grown by the hanging drop method.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysozyme solution was mixed 1 to 1 with precipitant solution (3.5M sodium chloride; 15% PEG 5,000; 50 mM sodium acetate pH 4.5) and crystals were grown by the hanging drop method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the crystallization method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "5300fb60-916c-40f5-91bd-7fd534d5ad5e",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C110",
+      "claim": "Following crystal formation, the sample was diluted three to five times in 5% PEG 200.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the crystal formation, the sample was diluted three to five times in 5% PEG 200.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "f47caaba-3c43-47ff-a0fd-d4071c2ce3ec",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C111",
+      "claim": "A 5 \u03bcl drop of the crystal solution was applied to a quantifoil 2/2 holey-carbon copper EM grid.",
+      "claim_type": "EXPLICIT",
+      "source": "A 5 \u03bcl drop of the crystal solution was applied to a quantifoil 2/2 holey-carbon copper EM grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the grid preparation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "28b708c5-82b9-4c2c-a40c-fa412c679b07",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C112",
+      "claim": "The grid was blotted and vitrified by plunging into liquid ethane using a Vitrobot Mark IV (FEI).",
+      "claim_type": "EXPLICIT",
+      "source": "The grid was then blotted and vitrified by plunging into liquid ethane using a Vitrobot Mark IV (FEI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the vitrification procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "cad394e3-ccda-44ac-a9a1-3c72d4b1b082",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "claim_id": "C113",
+      "claim": "The frozen-hydrated grid was loaded onto a Gatan 626 cryo-holder and transferred to a cryo-TEM.",
+      "claim_type": "EXPLICIT",
+      "source": "The frozen-hydrated grid was loaded onto a Gatan 626 cryo-holder and transferred to a cryo-TEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample loading procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ffbf1583-143e-464d-912a-f1f86aae95b0",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that high-resolution protein structures can be determined by electron crystallography of 3D microcrystals using MicroED. Lysozyme microcrystals were used to collect electron diffraction data to 1.7 \u00c5 resolution, and the structure was refined to 2.9 \u00c5 resolution using data from three crystals that are up to 6 orders of magnitude smaller in volume than those typically used for X-ray crystallography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8, C21, C79, and C88 collectively demonstrate the core finding. The experimental data show successful structure determination from microcrystals with appropriate resolution (C3, C8), proper methodology (C7), and validation against known structures (C59). The claim of 6 orders of magnitude smaller crystal volume (C21, C24, C79) is supported by crystal size measurements (C99, C31) and comparison to typical X-ray crystallography requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a low-dose data collection protocol that allows collection of up to 90 individual diffraction patterns from a single crystal with tilt angle increments of 0.1-1\u00b0 and total accumulated electron dose below ~9 e\u207b/\u00c5\u00b2. This low dose approach limits radiation damage and enables multiple patterns from a single crystal instead of requiring hundreds of crystals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C37-C44 describe the data collection protocol with specific parameters that are consistently reported. The dose experiment (C38, Figure 3) empirically determined the critical dose threshold of ~9 e\u207b/\u00c5\u00b2, which informed protocol optimization (C39). The ability to collect multiple patterns from a single crystal (C40, C41) represents a key methodological advance over traditional 2D electron crystallography (C18).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "e551eb08-2a14-4013-9c8c-a31d1f25a110",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Crystal thickness critically affects diffraction quality in MicroED. Thick crystals (>3 \u03bcm) yielded no diffraction, intermediate thickness crystals (~1.5 \u03bcm) showed tilt-dependent quality variation, while thin crystals (~0.5-1 \u03bcm thick, 1-6 \u03bcm long/wide) provided high-quality diffraction to ~1.7 \u00c5 resolution with no significant adverse tilt effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33, C99-C100 describe systematic observations of crystal thickness effects supported by Figure 2A-D. The observations are internally consistent and provide clear criteria for crystal selection. The finding that 43% of crystals showed useful diffraction (C100) and that thin crystals show tilt-independent quality (C33) are empirical observations from the experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Data processing yielded unit cell dimensions of a=b=77 \u00c5, c=37 \u00c5, \u03b1=\u03b2=\u03b3=90\u00b0 with P43212 symmetry, consistent with previous X-ray structures. The nearly flat Ewald sphere (0.003 \u00c5\u207b\u00b9 deviation at 2 \u00c5) and tight reflections enabled dense reciprocal space sampling with multiplicity of 34, resulting in 2490 unique reflections with ~92% completeness at 2.9 \u00c5 resolution from three crystals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52 and C104 describe data processing results with specific numerical values reported in Table 1. The unit cell parameters match literature values (C46), providing validation. The Ewald sphere calculation (C48) is mathematically sound given the electron wavelength (C47). The high multiplicity (C51) and completeness (C52) are direct outcomes of the dense sampling strategy (C50).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The lysozyme structure was solved by molecular replacement using PDB 4AXT and refined to 2.9 \u00c5 resolution with Rwork/Rfree=25.5%/27.8%. The initial MR map showed well-defined density, composite-omit maps confirmed lack of model bias, and poly-alanine MR showed density for side chains. The final structure has RMSD of 0.475 \u00c5 (C\u03b1) compared to the reference structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 and C93-C96, C105-C106 describe structure determination and validation with appropriate crystallographic metrics. The Rwork/Rfree values (C58) are reasonable for 2.9 \u00c5 resolution. Multiple validation approaches (composite-omit map C55, poly-alanine test C56-C57) address model bias concerns. The low RMSD (C59) confirms structural accuracy. Electron density maps (Figure 6, 7) visually support the quality claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "ad9ea114-369d-4f0e-a5bb-57fd9d768940",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Validation tests demonstrate that only the correct experimental data yielded an acceptable refined structure. Datasets with randomized intensities, shuffled Miller indices, or replaced with unrelated structure data failed to produce acceptable solutions, and unrelated protein structures failed molecular replacement, confirming data accuracy and absence of model bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 describe rigorous validation experiments (Tables 2-3) that test for model bias and data quality. The experimental design is sound: only the correct dataset (C60) refined successfully while corrupted datasets (C61) and unrelated structures (C62) failed. These negative controls strongly support the conclusion that the structure is determined by the experimental data rather than model bias (C63-C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "afdea881-6071-4192-9292-a1b9e65f525c",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Unlike 2D electron crystallography which suffers from a missing cone (~13% with 60\u00b0 tilt), the use of three crystals with varied orientations in MicroED allowed coverage of the full reciprocal space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 address completeness concerns. The missing cone problem in 2D crystallography (C65-C66) is established knowledge. The solution of using multiple crystals with different orientations (C67) is logical and supported by Video 3 showing reciprocal space coverage. The 92% completeness achieved (C52) empirically validates this approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dynamic scattering introduces inaccuracies in electron diffraction data, evidenced by weak reflections (~4.9% intensity) at systematic absence positions. However, comparison with X-ray data shows correlation (Pearson r=0.63 from 6.0-13.5 \u00c5), suggesting multiple scattering contributes at maximum ~10% to intensity values, which appears tolerable at 2.9 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C76 address a known limitation of electron diffraction. The observation of weak reflections at systematic absences (C70, Figure 8) provides direct evidence for dynamic scattering (C71). The quantification (~4.9% average, C72) and correlation with X-ray data (C74) support the estimate of ~10% contribution (C75). The successful structure determination validates that this error level is tolerable at 2.9 \u00c5 (C76), though this is resolution-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background context establishes that X-ray crystallography requires large crystals due to radiation damage, femtosecond X-ray crystallography requires millions of crystals, electrons interact more strongly with matter enabling use of smaller crystals, and previous 2D electron crystallography succeeded but 3D attempts failed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C20 provide literature context with appropriate citations (Henderson 1995, Chapman et al. 2011, Boutet et al. 2012, Gonen et al. 2005, etc.). These are established facts in the field that motivate the current work. The claims accurately represent prior knowledge and properly cite sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "b9aea380-6d5f-46ea-8636-dcabbed5dac3",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Lysozyme was chosen as a model protein because it is well-characterized and readily forms crystals. The microcrystals produced were up to 6 orders of magnitude smaller than typical X-ray crystals, with >100 microcrystals per grid ranging from several microns to sub-micron in size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 describe sample selection and characterization. The rationale for using lysozyme (C22-C23) is well-established and properly cited. The size comparison (C24) is supported by Figure 1A showing microcrystals alongside larger crystals. The quantification of crystal numbers and size range (C25-C26) represents direct experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "87361a39-0e72-497b-a067-8e4708dcc5a8",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Thin lysozyme crystals (~0.5-1 \u03bcm) contain approximately 55 \u00d7 10\u2076 unit cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C32 provides a calculation of unit cell number but the calculation method is not shown. Given crystal dimensions (~0.5-1 \u03bcm thick, 1-6 \u03bcm long/wide, C31, C99) and unit cell parameters (a=b=77 \u00c5, c=37 \u00c5, C45), the calculation should be verifiable but requires assumptions about crystal shape and exact dimensions. The order of magnitude appears reasonable but cannot be fully verified without the explicit calculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "71b03f40-c914-4efa-86a5-429bfec78496",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While 2D electron crystallography suffers from rapid radiation damage, 3D crystals can deliver atomic resolution data with very low doses. Electron scattering deposits ~60 eV per elastic event compared to ~80 keV for X-rays, resulting in much lower overall damage from electrons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C101-C103 compare radiation damage between 2D/3D electron crystallography and X-rays, with appropriate citations (Glaeser 1971, Henderson 1995, Baker et al. 2010). The energy deposition values (C101-C102) are from Henderson 1995. The claim that 3D crystals tolerate low doses better (C35-C36) is supported by the Baker et al. 2010 citation and the current experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "d3655544-e9db-4560-88c4-224ab3049385",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate about future developments including: potential limitations of dynamic scattering at higher resolution, broad applicability to soluble and membrane proteins, utility when crystal optimization is difficult, need for better data processing software, potential for crystal oscillation methods, challenges for heavy atom phasing, alternative phasing approaches, and promise for advancing structural biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C89 are explicitly speculative statements about future work and potential applications. These are reasonable extrapolations from the proof-of-principle results but are not experimentally validated. They represent the authors' informed opinions about future directions rather than demonstrated results. As speculation, they cannot be evaluated as supported or unsupported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    },
+    {
+      "id": "e31f383e-42ff-48c8-b83b-d5d627309628",
+      "content_id": "1bcde8cb-963a-4677-b8f1-76e00717ba7f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methods describe equipment (FEI Tecnai F20 TEM at 200 kV with TVIPS F416 CMOS camera), sample preparation (lysozyme crystallization by hanging drop, dilution, grid preparation, vitrification), and data deposition (PDB 3J4G, software on GitHub).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 and C97-C98, C107-C113 provide methodological details. These are straightforward descriptions of equipment specifications, experimental procedures, and data availability. The information is specific and verifiable (e.g., PDB accession code C97, GitHub repository C98). These represent standard methods reporting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:51:44.182068Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ffb93f0b-4237-474d-9625-a19531b08c5f",
+      "result_id": "ffbf1583-143e-464d-912a-f1f86aae95b0"
+    },
+    {
+      "claim_id": "a2d63f90-8200-4888-b04f-ae8149ae1c60",
+      "result_id": "ffbf1583-143e-464d-912a-f1f86aae95b0"
+    },
+    {
+      "claim_id": "cd9ec26f-dff1-4e00-9342-9ba533c3f2e4",
+      "result_id": "ffbf1583-143e-464d-912a-f1f86aae95b0"
+    },
+    {
+      "claim_id": "c85e6002-8b66-4c44-84b7-ff1087b34ae9",
+      "result_id": "ffbf1583-143e-464d-912a-f1f86aae95b0"
+    },
+    {
+      "claim_id": "5a31fda6-856d-4632-a891-a696ce9cbb7d",
+      "result_id": "ffbf1583-143e-464d-912a-f1f86aae95b0"
+    },
+    {
+      "claim_id": "1a1a97d3-1df3-4656-b8fa-1cb5bb129f88",
+      "result_id": "ffbf1583-143e-464d-912a-f1f86aae95b0"
+    },
+    {
+      "claim_id": "14cd75fc-b663-47cc-aff6-402aac603f48",
+      "result_id": "ffbf1583-143e-464d-912a-f1f86aae95b0"
+    },
+    {
+      "claim_id": "b5dfb04e-d599-44e6-8911-23d00bae4a38",
+      "result_id": "ffbf1583-143e-464d-912a-f1f86aae95b0"
+    },
+    {
+      "claim_id": "fe0224dd-b2d9-4c10-9763-5f3af82fe222",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "f30ab9f6-fd0c-4ff3-9c2f-21ee4ff6dcd8",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "8fc8dc40-9b3d-4e70-acc9-094f3ae3b793",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "02aa9251-39e5-4571-8929-3d0e0f851e44",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "c413a464-6e66-4dfc-af2e-b5d115a580c0",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "92c540f1-c0a8-4bff-9bf7-ce8c13b31143",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "aa4e1d75-fe9a-4d95-891e-17df67032a7a",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "ff22643b-cd3b-490b-9f2f-19f739675430",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "0dd822e6-e7fc-497c-8b0d-a79c04f9a7ce",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "f0c6c4c0-1561-44bf-b913-38a52b4d294c",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "2f66f4aa-e4b0-49dd-ba7d-5d06983afdba",
+      "result_id": "f65a20d5-f9dc-4c1d-81dd-5c579cd8dd56"
+    },
+    {
+      "claim_id": "2dcf2cb0-3ca5-4360-b75b-d6564bae8b54",
+      "result_id": "e551eb08-2a14-4013-9c8c-a31d1f25a110"
+    },
+    {
+      "claim_id": "0bed6687-85e9-4569-9e43-7997ae578260",
+      "result_id": "e551eb08-2a14-4013-9c8c-a31d1f25a110"
+    },
+    {
+      "claim_id": "2d4e80b7-a30e-4a45-b91f-45a8b23a107d",
+      "result_id": "e551eb08-2a14-4013-9c8c-a31d1f25a110"
+    },
+    {
+      "claim_id": "6943e95e-9cda-46c4-80a3-afb4eb0349dc",
+      "result_id": "e551eb08-2a14-4013-9c8c-a31d1f25a110"
+    },
+    {
+      "claim_id": "2880202f-7178-41c5-b5f8-536a8eb4ffaf",
+      "result_id": "e551eb08-2a14-4013-9c8c-a31d1f25a110"
+    },
+    {
+      "claim_id": "aad28b27-5621-4951-bd6a-09361183fd16",
+      "result_id": "e551eb08-2a14-4013-9c8c-a31d1f25a110"
+    },
+    {
+      "claim_id": "090b8e4c-a61d-4b1a-ba69-cf8399d06d5a",
+      "result_id": "e551eb08-2a14-4013-9c8c-a31d1f25a110"
+    },
+    {
+      "claim_id": "31fa27df-3054-442c-8104-2526aa768ea3",
+      "result_id": "e551eb08-2a14-4013-9c8c-a31d1f25a110"
+    },
+    {
+      "claim_id": "ae111b44-8804-47a1-a1bf-08aa31070291",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "f6dc690b-ab86-48bd-81b4-62b9ce93e8ca",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "a75beaf5-6ede-4728-ba62-c9adc7d621df",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "0481c347-75c7-4ff6-9080-f26bcf8d0815",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "496a90e9-818b-4625-baad-a7afe843efb1",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "71d54213-a775-4440-bb29-bb5d58f0d6e7",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "cf12dccc-b0d7-4bf1-97fe-67fbd4728fc4",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "70574677-1b53-4a34-8a2f-6749782934cf",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "281e244e-4398-402a-962d-ee0dfbcd83d1",
+      "result_id": "59ef3ecf-103a-4b28-bf1d-416f650ce2f0"
+    },
+    {
+      "claim_id": "6c89e910-afb3-40ee-96b1-ba6a252fd637",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "262a7678-5d24-4032-9fd0-d79733cdb6d1",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "5bfb4af1-43c5-42ef-85eb-c2c101197e6b",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "8499d614-030e-4d0c-bf7b-049c49db4482",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "b961df43-f0f2-4c59-b57b-de83ea2444b8",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "4123f5c3-e18e-439a-b7ec-1e2834c88f41",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "3f3f492d-71c5-4c9e-90fa-f21e3771b847",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "df2a98ab-8a16-47ee-861f-25b1d01bbfb3",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "4c541bcb-f500-4a5a-bf70-aef92996ed1b",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "970518e3-a2de-452f-831b-e5c2af74a24d",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "6ccf28af-5963-42ad-8a7b-dc718f02ed00",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "b928f739-1573-4b7c-bce1-337c36c5f9bc",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "d6762da8-b458-424b-a626-3d840472038c",
+      "result_id": "9fbabb05-4c36-4d94-9c5d-9ee14508c8c9"
+    },
+    {
+      "claim_id": "58668108-bb9a-4e5d-919c-31212db1ad28",
+      "result_id": "ad9ea114-369d-4f0e-a5bb-57fd9d768940"
+    },
+    {
+      "claim_id": "45c4ab99-c47f-413f-bc5f-8d57618b80b4",
+      "result_id": "ad9ea114-369d-4f0e-a5bb-57fd9d768940"
+    },
+    {
+      "claim_id": "bac22741-9b79-448f-bbd0-70f7a62f3f18",
+      "result_id": "ad9ea114-369d-4f0e-a5bb-57fd9d768940"
+    },
+    {
+      "claim_id": "b23a5548-732e-4972-8315-e1bc65ea1a96",
+      "result_id": "ad9ea114-369d-4f0e-a5bb-57fd9d768940"
+    },
+    {
+      "claim_id": "59308d30-d716-490c-9960-5c9be7ee84b6",
+      "result_id": "ad9ea114-369d-4f0e-a5bb-57fd9d768940"
+    },
+    {
+      "claim_id": "7b9e234d-d8d1-4c9d-9b67-dad014be3506",
+      "result_id": "afdea881-6071-4192-9292-a1b9e65f525c"
+    },
+    {
+      "claim_id": "d733639f-0f52-46d8-be9b-1f9aef7386f0",
+      "result_id": "afdea881-6071-4192-9292-a1b9e65f525c"
+    },
+    {
+      "claim_id": "286fabef-1c3e-46b0-a5fc-e6ed8bab64bf",
+      "result_id": "afdea881-6071-4192-9292-a1b9e65f525c"
+    },
+    {
+      "claim_id": "ffc4c30f-ea4d-4520-a80e-4b7d064f07ba",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "7520ee70-3ea1-471e-b7cc-cde132ee9c8f",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "85e3a417-6744-4932-8b35-e330da22389d",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "1c4b1eef-8d99-42f9-afb5-a011628446cd",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "2b20e06d-d3b4-4ab2-b190-9c873a9b11ae",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "412d924c-545d-49e8-abaa-f00002d93c24",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "6e5370ad-0f7f-4cc7-9ca7-f6b92e7f8020",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "37a4f9f4-3493-4036-bab8-6ea8a428ab60",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "e575cf7d-9b8e-4d2e-a77b-94573d8e0eff",
+      "result_id": "b5f5d92d-8469-4fbb-9910-68bd79387d8a"
+    },
+    {
+      "claim_id": "33407991-e0a8-480e-97ab-10db9674f6bc",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "ab2c922a-7854-4d85-a39b-b99eab0ba48a",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "dce57029-37bc-40f8-b86d-de93648833bb",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "b0cae69e-219a-4ca7-b48b-b5b668991623",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "7e62851d-a77d-433c-84cf-5d0a87b2f871",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "9dc5d5da-06fd-4c6d-8279-fe588476d5bf",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "3f931e99-9095-4379-aec5-bd7106a6426c",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "0c445408-666c-46b8-ae9d-4be021f3178f",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "962bf383-d285-46ef-a079-1e607a759286",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "ca92f47e-e739-4375-9078-2a7f6ba2914f",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "81bf961b-6ba5-4c2b-9c00-b765cc84c266",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "80d81f28-89bd-4e34-94b6-0ab5a7d21243",
+      "result_id": "8e0cfc4c-9a2c-4c8c-a243-2076215123cb"
+    },
+    {
+      "claim_id": "96441e0d-6f12-4a0c-8e7b-671561e3e2fd",
+      "result_id": "b9aea380-6d5f-46ea-8636-dcabbed5dac3"
+    },
+    {
+      "claim_id": "a2fd983e-844e-4cc7-a158-4f712593145f",
+      "result_id": "b9aea380-6d5f-46ea-8636-dcabbed5dac3"
+    },
+    {
+      "claim_id": "3b83ec5d-aab4-441c-9857-9feffb14dd70",
+      "result_id": "b9aea380-6d5f-46ea-8636-dcabbed5dac3"
+    },
+    {
+      "claim_id": "245eb57a-9a71-4712-b84a-c0159f0c7441",
+      "result_id": "b9aea380-6d5f-46ea-8636-dcabbed5dac3"
+    },
+    {
+      "claim_id": "8b4d1fde-15cb-4f97-aeec-f2019aa85240",
+      "result_id": "b9aea380-6d5f-46ea-8636-dcabbed5dac3"
+    },
+    {
+      "claim_id": "859363eb-8f54-4617-a54b-e0b90adfd804",
+      "result_id": "87361a39-0e72-497b-a067-8e4708dcc5a8"
+    },
+    {
+      "claim_id": "c40aa5ac-9683-43b3-8784-93e125b284e7",
+      "result_id": "71b03f40-c914-4efa-86a5-429bfec78496"
+    },
+    {
+      "claim_id": "ed3846ce-e5fc-4091-8b31-a543734cc574",
+      "result_id": "71b03f40-c914-4efa-86a5-429bfec78496"
+    },
+    {
+      "claim_id": "aedddf36-68fc-48d7-9c2d-0016a1e7ed1f",
+      "result_id": "71b03f40-c914-4efa-86a5-429bfec78496"
+    },
+    {
+      "claim_id": "68f1c731-a23e-40bd-9056-4b539f63dbfa",
+      "result_id": "71b03f40-c914-4efa-86a5-429bfec78496"
+    },
+    {
+      "claim_id": "41bf099b-5de3-4050-8ab0-c584ab320dd2",
+      "result_id": "71b03f40-c914-4efa-86a5-429bfec78496"
+    },
+    {
+      "claim_id": "80e803ea-2414-4cfe-abdf-573f4eb3b3dd",
+      "result_id": "71b03f40-c914-4efa-86a5-429bfec78496"
+    },
+    {
+      "claim_id": "9426cb8d-78d7-4a65-8a48-8e2190f2aadc",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "7ae4dfae-ac37-4022-8cef-92d99b12c4c0",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "a6392e21-9305-4dbd-ae1f-b62688b3286b",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "0d8570ee-68af-4284-8626-349390a20ebf",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "038a4907-ea21-4e1b-957e-dbe4eee2101f",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "8b34d388-da1c-431b-81fa-e5fd4f2db71e",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "da067cac-8550-4fcf-a629-5bc3a1f4c742",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "596f4850-510c-4f48-bcfc-679318f1a36d",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "d5018f35-530c-43a9-b1de-26a7c26130ca",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "2bb698ec-02a4-4678-8c7c-69512f8f552a",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "e90f8659-928a-443e-95f4-ac8c115bf50b",
+      "result_id": "d3655544-e9db-4560-88c4-224ab3049385"
+    },
+    {
+      "claim_id": "48cd26eb-ad45-4242-9661-ffa6635f6b8e",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "d60952f4-3811-4ec4-b5d7-e635f340ed14",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "477272c3-14d3-4e06-b699-90d5671de53e",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "d59cd48a-df47-48af-bd29-8cfe5f53d961",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "49204fb5-a648-4d67-8bc5-39278b694534",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "6a4e35a9-0da9-4424-83ec-b6af76833931",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "3a7db4d8-f221-4d87-b08e-5cba93a6906d",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "cb2904af-31a8-4acf-a4c8-0cebbf18f49d",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "5300fb60-916c-40f5-91bd-7fd534d5ad5e",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "f47caaba-3c43-47ff-a0fd-d4071c2ce3ec",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "28b708c5-82b9-4c2c-a40c-fa412c679b07",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    },
+    {
+      "claim_id": "cad394e3-ccda-44ac-a9a1-3c72d4b1b082",
+      "result_id": "e31f383e-42ff-48c8-b83b-d5d627309628"
+    }
+  ],
+  "comparisons": []
+}

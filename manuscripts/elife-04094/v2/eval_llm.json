@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C12",
+      "C13",
+      "C58",
+      "C70"
+    ],
+    "result": "The authors developed a high-throughput recombinase-based method that allows parallel insertion of hundreds to thousands of DNA sequence variants at a single genomic site in mouse embryonic stem cells, generating unprecedented sequence diversity. The method yielded reproducibly up to several thousand integrants, with approximately 30% of inserted fragments efficiently recovered during methylation profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C12, C13 describe the method and its scale, supported by quantitative data in C12 and C70. The method's novelty (C13) and advantages over transient transfections (C58) are clearly stated. The technical limitation identified in C70 (bisulfite PCR as bottleneck) adds credibility through transparent reporting of method constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C69"
+    ],
+    "result": "When CGI-derived fragments were inserted ectopically, 63.5% maintained methylation states similar to their endogenous counterparts, with elements as small as 100 bp sufficient to establish unmethylated states. However, 40% of fragments gained methylation relative to their endogenous sites, with reproducible methylation patterns between independent insertions (R > 0.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide quantitative results from the ectopic insertion experiments, with C69 establishing reproducibility. The data demonstrate that short CGI fragments can autonomously maintain methylation states, though context-dependent effects exist. The reproducibility metric and quantitative percentages support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "CG frequency alone explains only 14% of methylation variation (R = -0.37) among inserted fragments. At very high CG densities (\u226512 CGs/100 bp), CG content appears sufficient for unmethylated states, but at lower densities, fragments with similar CG content show highly variable methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 present quantitative analysis showing the limited explanatory power of CG density alone. The correlation coefficient (R = -0.37, R\u00b2 = 0.14) and the threshold of \u226512 CGs/100 bp are data-derived. The observation of high variability at lower CG densities is supported by Figure 2D and sets up the need for additional determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Using prokaryotic DNA sequences lacking mammalian transcription factor binding sites, the authors found that at highest CG densities (\u226512 CG/100 bp), sequences remain unmethylated, but at lower densities they become readily methylated. Prokaryotic fragments show much stronger negative correlation between CG density and methylation (R = 0.65) compared to mouse fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 describe the E. coli control experiment designed to isolate CG density effects. The rationale (C20) is sound, and the quantitative results (C23: R = 0.65) demonstrate stronger CG-methylation correlation in prokaryotic sequences. This comparison is critical for establishing that additional sequence features beyond CG density contribute to mouse fragment behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The 'CG only' model derived from prokaryotic sequences has predictive power for mouse fragments (R = 0.38), but numerous mouse fragments are significantly less methylated than predicted. These under-methylated fragments show significantly higher DNaseI hypersensitive site enrichment at their endogenous loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 demonstrate that the CG-only model has limited predictive power (R = 0.38) and identify DHS enrichment as correlating with deviations from predictions. The correlation with DHS (C26) provides evidence for transcription factor involvement. The statistical significance is stated and the logic connecting under-methylation to TF binding is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Synthetic mutant experiments where non-CG nucleotides were replaced with E. coli sequence showed that fragments with weak predicted CG-based protection gained methylation, with amplitude related to CG density (R = 0.64). Insertion of high-score REST motifs reduced methylation while low-score motifs had no effect. These results demonstrate that mouse CGI fragments are maintained unmethylated by combined action of CG density and sequence-specific protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe the synthetic mutant library experiments that directly test the role of TF binding sites. The quantitative correlation (C28: R = 0.64) and the REST motif experiment (C29) provide experimental validation of the model. The conclusion (C31) that both mechanisms act together is well-supported by the convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Genome-wide application of the CG-only model overestimates methylation (R\u00b2 = 0.47), with >50% of CGs in unmethylated regions showing lower methylation than predicted. A combined model integrating CG density and DHS data explains over two-thirds (68% genome-wide, 60% at CG-rich regions) of methylation variation, suggesting CG density and TF binding are the major determinants of genomic methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 extend the findings genome-wide with quantitative modeling. The improvement from R\u00b2 = 0.47 (CG only) to 68% variance explained (combined model) is substantial. The conclusion (C36) that these are major determinants is justified by the high explanatory power, though the remaining ~32% unexplained variance suggests other factors may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The regulatory principles derived from mouse ESCs apply similarly in other somatic cell types and organisms, as demonstrated by modeling in different human methylomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 extends the findings to human cells and other cell types, supported by Figure 4\u2014figure supplement 1. This cross-species and cross-cell-type validation strengthens the generalizability of the findings, though the manuscript provides limited detail on the human data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "During differentiation from stem cells to neuronal progenitors, CG-rich regions show little methylation variation overall, while CG-poor regions experience extensive changes. Within CG-rich regions, cytosines that gain methylation reside where the CG-only model predicts methylation, approaching the predicted state. Stem cell-specific TF motifs (e.g., Oct4) are enriched around differentially methylated CGs, and Oct4 binding sites show methylation increases in neuronal progenitors, while constitutively expressed factors (e.g., REST) show no change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 analyze methylation dynamics during differentiation. The observations are consistent with the model: regions with high CG density remain stable (C38), while TF-dependent regions change (C40-C44). The specific examples (Oct4 vs REST) provide mechanistic support. The motif enrichment analysis (C42) and the approach toward CG-predicted values (C41) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Methylation changes during differentiation are tightly anti-correlated with DHS changes at CG-poor regions, but at higher CG densities, similar DHS changes do not result in methylation changes. This demonstrates that TF binding contributes to unmethylated states at CG-poorer regions within CGIs, while being non-essential at highly CG-rich regions. The CG-dependent effect is remarkably stable across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 integrate DHS dynamics with methylation changes to demonstrate the differential importance of TF binding based on local CG density. The anti-correlation at CG-poor regions (C45) contrasted with stability at CG-rich regions (C46) supports the hierarchical model. The cross-cell-type stability of CG effects (C48) is an important observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Within CGIs, a subset of CGs embedded in short CG-dense patches (\u226512 CGs/100 bp) are constitutively unmethylated regardless of TF binding. However, these patches are absent in 50% of CGIs and contain only 30% of CGs within islands, suggesting that for the majority of CGs (67.5%) within islands, TF binding could contribute to their unmethylated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide quantitative genome-wide analysis of CG-dense patches within CGIs. The percentages (50% of CGIs lack such patches, 30% of CGs in patches, 67.5% potentially TF-dependent) are clearly stated and supported by Figure 5\u2014figure supplement 1. This analysis is important for understanding the relative contributions of the two mechanisms across the genome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Normal colon cells show methylation changes following the CG-based model during differentiation, but colon cancer cells display a distinct hypermethylation phenotype that does not follow the model. Cancer cells show significant methylation gain even at constitutively unmethylated CGs with high CG density, affecting both CG-driven and TF-mediated effects, suggesting cancer hypermethylation is mechanistically distinct and cannot be explained by altered TF binding patterns alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 contrast normal differentiation with cancer-associated methylation changes. The observation that cancer hypermethylation affects even high-CG-density regions (C55) that are normally protected is striking and well-supported by Figure 5F,G. The conclusion that this is mechanistically distinct (C56, C57) is justified by the deviation from the model that accurately describes normal changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Only 50% of CGIs harbor sequence stretches above the CG density threshold (\u226512 CGs/100 bp) sufficient to create unmethylated states. The higher the CG content, the lower the TF-dependent methylation changes and vice versa. Methylation variability within CGIs is not restricted to particular locations but is defined by local CG frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 synthesize key findings about CGI heterogeneity. The quantification that only 50% of CGIs have high-CG-density stretches (C59) is important for understanding CGI biology. The inverse relationship between CG content and TF dependence (C60) and the local nature of regulation (C61) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In cancer, it is not individual cytosines but rather the class of CGs (as defined by CG density) that is predictive. Cancer hypermethylation particularly targets CGIs controlling inactive genes and occurs within larger partially methylated domains (PMDs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 discuss cancer methylation patterns. C62 is supported by the modeling results, while C63 and C64 cite established findings from the literature. The integration of these observations with the current model provides context for understanding cancer-specific methylation changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "CG density alone is a minor determinant of the unmethylated state of CpG islands, while transcription factor binding sites play a principal role, as confirmed by testing synthetic mutant libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 state the main conclusions of the paper. These are well-supported by the comprehensive experimental evidence including: limited explanatory power of CG density alone (C17: R\u00b2 = 0.14), strong correlation in prokaryotic sequences lacking TF sites (C23: R = 0.65), synthetic mutant experiments (C27-C28), and genome-wide modeling (C35: 68% variance explained by combined model). The hierarchy is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The findings support the notion that CGIs arose as an evolutionary footprint of ancient regulatory regions, compatible with the idea that CG-rich regions emerged indirectly through TF-driven demethylation and reduced C-to-T transition. This is consistent with reports of limited positive selection for CG content and substantial variation in nucleotide composition across vertebrate unmethylated regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C68 present evolutionary speculation based on the findings. While the observations about TF contribution to hypomethylation are well-supported, the evolutionary interpretation (C65, C68) is speculative and relies on cited literature (C66, C67) rather than direct evidence from this study. The evolutionary scenario is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background knowledge claims about mammalian DNA methylation, CpG islands, and unmethylated regions, including that the majority of mammalian promoters are CpG islands, DNA methylation occurs mainly at CG dinucleotides and correlates with transcriptional repression, and that recent methylation maps have revealed complexity in unmethylated region boundaries and methylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C11 present established background knowledge with appropriate citations. These are standard facts in the field and provide necessary context for the study. The citations support these claims, though C1's statement that \"the majority\" of promoters are CGIs may be an oversimplification depending on the definition used.",
+    "result_type": "MINOR"
+  }
+]

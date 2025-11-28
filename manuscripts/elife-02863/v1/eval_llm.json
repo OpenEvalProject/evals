@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C13",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors developed Buffered Qualitative Stability (BQS) theory, which proposes that GRNs are organized to remain robust through qualitative rather than quantitative features, specifically by avoiding long feedback loops. This theory explains many small- and large-scale properties of GRNs across E. coli, M. tuberculosis, P. aeruginosa, yeast, mouse, and human.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C8, C13, C77-C78 collectively establish the BQS theoretical framework and its explanatory power. The theory is grounded in mathematical principles of Qualitative Stability (C13) and is supported by extensive empirical validation across multiple organisms (C3). The data analyses presented throughout the manuscript consistently verify BQS predictions at multiple scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Real GRNs have dramatically fewer long feedback loops (\u22653 genes) compared to random networks. P. aeruginosa, S. cerevisiae, and human have zero such loops; E. coli has only two 3-gene loops; M. tuberculosis has two 3-gene and one 4-gene loop. Random networks of equivalent size contain thousands of such loops, with statistical significance p<10\u207b\u2076.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 provide strong empirical evidence for the absence of long feedback loops in real GRNs. The data are supported by rigorous statistical analysis (C22-C23), robustness checks across different confidence levels (C24), and stark contrasts with random networks (C20-C21). The consistency across multiple organisms strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Real GRNs contain far fewer incomplete feedback loops than random networks. E. coli, S. cerevisiae, and human GRNs have <2000 incomplete feedback loops of relatively small size, while comparable random networks have >10\u2075 such loops. The probability this occurs by chance is <10\u207b\u00b9\u2079.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 demonstrate that GRNs are buffered against destabilization through new connections. The thousand-fold difference between real and random networks (C28), extremely low probability of chance occurrence (C29), and robustness to varying confidence levels (C30) provide strong statistical support for this BQS prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A very high percentage of transcription factors in real GRNs are unregulated (not regulated by other TFs) across E. coli, S. cerevisiae, M. tuberculosis, P. aeruginosa, human, and other yeast datasets. The probability of obtaining this proportion by chance is between 10\u207b\u2076\u2078 and 10\u207b\u00b3\u2079.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 establish that GRNs minimize feedback loop formation by having many unregulated TFs. The consistency across diverse organisms (C31), extremely low probability of chance occurrence (C32), and robustness to data quality variations (C33) strongly support this as a fundamental BQS principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "GRNs exhibit distributed rather than centralized control: transcription factors tend to be either highly regulated OR highly regulating, but not both. In E. coli, no TFs regulate >2 other TFs while being regulated by >2 TFs. Similar patterns hold in human and yeast, with yeast showing some exceptions representing a small minority.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 demonstrate that BQS favors distributed control architecture. The specific quantitative observations in E. coli (C34-C35), consistency in human (C36), partial consistency in yeast (C37), and the inference about distributed control (C38) are well-supported by the data presented in Figure 4 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In real GRNs, buffered motifs (3- and 4-gene network patterns resistant to destabilization) are much more abundant than expected by chance, while unbuffered motifs are much less abundant. This pattern holds across E. coli, S. cerevisiae, human, M. tuberculosis, P. aeruginosa, and other datasets, and explains the prevalence of feedforward loops and bi-fans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 establish that local network structure follows BQS principles. The motif analysis (C39) is consistent across multiple organisms and confidence levels (C40), provides mechanistic explanation for previously observed patterns (C41), and identifies the most buffered motifs (C42). The data in Figure 5 strongly support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Real GRNs are highly buffered against random edge additions creating long feedback loops. In human GRN, 4363 new interactions could be added but only 48 would create long feedback loops (1.1% hit rate), compared to ~50% hit rate in random networks. This buffering is significantly stronger in real GRNs than random networks across organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 quantify the extent of buffering in real GRNs. The computational analysis (C43-C44) provides specific numbers demonstrating the remarkable buffering capacity, and the comparison with random networks (C45) shows this is a non-random property. The data in Figure 5H and Supplementary file 1 support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The rare instances where GRNs deviate from BQS (containing long feedback loops) occur in genes involved in stress responses (drug/acid resistance in E. coli, stress responses in M. tuberculosis). These illegal motifs share a specific topology (two linked 2-gene feedback loops forming a 3-node loop) that can display chaotic behavior, and the genes involved are highly regulated, suggesting controlled instability for stress adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C58 characterize the few exceptions to BQS and provide functional context. The structural analysis (C46, C48, C52-C53), functional annotations from literature (C47, C51), connection to chaotic dynamics (C49), high regulation of involved genes (C50), and consistency across organisms (C54-C58) collectively support the interpretation that these are controlled deviations for specific biological functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C5"
+    ],
+    "result": "The human cancer cell line K562 shows severe compromise of BQS compared to non-cancer cell line GM12878. K562 has significantly more long feedback loops (4-8 genes), more incomplete feedback loops, abundant poorly buffered motifs, and less extreme TF cross-regulation. Only a limited number of TFs contribute to the 59 long loops in K562.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 and C5 demonstrate loss of BQS in cancer. The multiple lines of evidence\u2014feedback loop distribution (C59-C60), incomplete loops (C61), motif analysis (C62), and identification of key TFs (C63)\u2014are supported by data in Figure 7. The consistency across multiple BQS metrics strengthens the conclusion that BQS is compromised in cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C98",
+      "C101"
+    ],
+    "result": "The TFs most critical for long feedback loops in K562 cancer cells (EGR1, FOSL1, JUNB) are proto-oncogenes/oncogenes that also participate in the longest incomplete feedback loops in non-cancer GM12878 cells. Three specific destabilizing interactions present in K562 were among the 48 potentially destabilizing interactions in GM12878, occurring 5\u00d7 more frequently than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C98, C101 link cancer-associated genes to GRN destabilization. The functional annotations (C64), overlap between cancer and non-cancer incomplete loops (C65, C98, C101), specific interaction analysis (C66), and statistical enrichment (C67) provide converging evidence that cancer progression involves destabilization of already-vulnerable network regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The murine dendritic cell GRN at 0 hr (unstimulated) satisfies all BQS predictions, with only three long feedback loops (all depending on SFPI1-E2F1 interaction). E2F1 is transiently activated during cell cycle. The 0.5 hr network remains BQS-compliant and resembles the 0 hr network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 establish baseline BQS compliance in unstimulated dendritic cells. The comprehensive satisfaction of BQS predictions (C68), limited long loops (C69), dependence on a single interaction (C70), biological context for E2F1 (C71), and stability at 0.5 hr (C72) are supported by Figure 8 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C90",
+      "C91"
+    ],
+    "result": "Murine dendritic cells show marked deviation from BQS at 1-2 hr after stimulus, with new long feedback loops peaking at 1 hr. At 2 hr, 22 long loops remain but all depend on RUNX1-CEBPB interaction, suggesting the network is 'on the verge of stability'. Some BQS components (incomplete loops, TF cross-regulation, unbuffered motifs, unregulated TFs) remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76, C90-C91 demonstrate transient BQS loss during transcriptional response. The temporal dynamics (C73-C74), critical interaction at 2 hr (C75), selective preservation of some BQS features (C76), and interpretation of controlled instability (C90-C91) are supported by Figure 9 data. The partial maintenance of BQS suggests selective, controlled deviation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Loss of BQS in cancer cells may underlie their phenotypic plasticity, allowing them to readily change phenotype in response to stresses and explore different phenotypic states. K562 still possesses greater BQS than random networks, and single-cell experiments show large protein abundance changes in cancer cells after drug treatment, consistent with this theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C94-C96 propose a mechanistic link between BQS loss and cancer phenotypic plasticity. While the loss of BQS in K562 is well-documented (C95) and single-cell data are consistent (C96), the causal connection between BQS loss and phenotypic plasticity (C6, C94) remains speculative. The manuscript acknowledges this is a 'suggestion' and the evidence is correlative rather than mechanistic. Additional experiments would be needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "BQS provides five simple design rules for highly stable networks: (1) avoid long feedback loops, (2) favor unregulated nodes, (3) avoid long paths, (4) favor buffered motifs, and (5) avoid centralized control hubs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 synthesizes the empirical findings into design principles. Each rule is supported by specific results: rule 1 by C16-C24, rule 2 by C31-C33, rule 3 by C28-C30, rule 4 by C39-C42, and rule 5 by C34-C38. The rules are illustrated in Figure 10 and represent a valid synthesis of the demonstrated BQS properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "BQS theory predicts that random perturbations to normal cell GRNs will likely leave stability unchanged, but destabilization will involve genes 'on the edge of stability' (e.g., in long incomplete loops). If network instability is a general cancer feature, this analysis could enable design of new anti-cancer strategies exploiting weaknesses of cells lacking BQS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100, C102 make predictions and suggest applications based on BQS theory. While the predictions are logical inferences from BQS principles (C99-C100), they lack direct experimental validation. The therapeutic application (C102) is highly speculative ('if...can potentially') and would require extensive additional work including validation in multiple cancer types and experimental demonstration of therapeutic efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Qualitative Stability of GRNs prevents Maxwell's catastrophe (oscillations of increasing intensity) even when quantitative parameters are altered, and the expected damped oscillatory response has been observed in single-cell experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 connect BQS to dynamic behavior. The theoretical prediction (C25) follows from Qualitative Stability theory, and the citation to experimental observation of damped oscillations (C26) provides supporting evidence. However, the connection is somewhat indirect as the cited experiment was not designed to test BQS specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Defects in GRN data are unlikely to undermine BQS conclusions because: (1) random networks with same link density don't satisfy BQS while real GRNs do, (2) BQS compliance is preserved when false positive/negative rates are varied, and (3) GM12878 and K562 show very different BQS properties despite similar link densities and data generation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 address data quality concerns. The three arguments (C81-C83) provide strong evidence that BQS findings are robust to data imperfections. The comparison with random networks (C81), sensitivity analyses (C82), and controlled comparison of cancer vs. non-cancer cells (C83) demonstrate that the observed patterns are not artifacts of incomplete or noisy data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Post-transcriptional networks show some BQS features (overrepresentation of feedforward loops, stable motifs more common than unstable ones) but also contain feedback loops, suggesting BQS constraints are 'loosened' at post-transcriptional level. This raises the hypothesis that different regulatory levels segregate control modules with different robustness properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C89 extend BQS concepts to post-transcriptional regulation. The cited evidence (C85-C86, C88) suggests partial BQS compliance, but the data are from other studies not designed to test BQS. The interpretation that constraints are 'loosened' (C87) and the hypothesis about regulatory level segregation (C89) are reasonable but speculative, lacking direct systematic analysis of post-transcriptional networks using BQS framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The only instances where E. coli and M. tuberculosis GRNs deviate from BQS involve genes functionally related to stress responses, and therapeutic targeting of these unstable motifs may provide a novel systems approach to drug discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is well-supported by the data on illegal motifs in E. coli and M. tuberculosis. However, claim C93 about therapeutic targeting is highly speculative. While the identification of unstable motifs in stress response genes is interesting, the leap to drug discovery applications lacks supporting evidence or even preliminary validation. The statement acknowledges 'other mechanisms are likely to be in play.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "BQS adds a powerful new weapon to the arsenal of network medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is a broad statement about BQS's potential impact on network medicine. While the theoretical framework and empirical validation are strong, the actual application to network medicine remains to be demonstrated. The claim is supported by citations to network medicine literature but lacks concrete examples of BQS-guided therapeutic interventions or clinical applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Among the four conditions for Qualitative Stability, condition 1 (absence of positive self-regulation) is of questionable relevance to GRNs due to saturating effects, condition 4 (invertibility of sign matrix) is trivially verified, and condition 3 (absence of long feedback loops) is the most significant for GRNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 provide theoretical justification for focusing on feedback loops. The arguments about biological constraints making condition 1 less relevant (C103), the logical impossibility of violating condition 4 given GRN construction methods (C104), and the conclusion that condition 3 is most significant (C105) are well-reasoned and grounded in both biological knowledge and mathematical theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The E. coli RegulonDB dataset is probably the most validated GRN available, and the Harbison et al. (2004) yeast dataset is the most exhaustive GRN derived from direct biological methods under stable conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 justify dataset selection. These are reasonable assessments based on the literature and are supported by citations. The statements are appropriately qualified ('probably', 'to the authors' knowledge') and the rationale for dataset selection is provided in the Materials and methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C79"
+    ],
+    "result": "Background claims establishing the importance of GRNs, biological robustness, prior work on Qualitative Stability in other fields, and the novelty of applying these concepts to GRNs and molecular cell biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C9-C12, C14-C15, C79 provide context and establish the novelty of the work. These are well-supported by citations to relevant literature and represent accurate characterizations of established knowledge (C1, C7, C11-C12, C14-C15) and prior work (C9, C79). The novelty claim (C10) is appropriately scoped.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C19",
+      "C27"
+    ],
+    "result": "All 3-gene feedback loops in real GRNs share the same peculiar structure, and long feedback loops can be created by adding feedback connections from lower to higher TFs in network paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C27 make observations about network structure. C19 notes a pattern in the limited 3-gene loops observed (supported by data), while C27 is a logical inference about how network topology can be altered. Both are straightforward observations/inferences supported by the data and network theory.",
+    "result_type": "MINOR"
+  }
+]

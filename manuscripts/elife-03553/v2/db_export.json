@@ -1,0 +1,1910 @@
+{
+  "submission": {
+    "id": "c4a73cf0-b940-479a-aff3-7cf7612a1497",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:26:57.037962Z",
+    "updated_at": "2025-11-28T21:26:57.037962Z"
+  },
+  "content": [
+    {
+      "id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "submission_id": "c4a73cf0-b940-479a-aff3-7cf7612a1497",
+      "content_type": "manuscript",
+      "content_text": "# Active RNAP pre-initiation sites are highly mutated by cytidine deaminases in yeast, with AID targeting small RNA genes\n\n## Authors\n\n- Benjamin JM Taylor<sup>1</sup> ([ORCID: 0000-0001-6101-3786](https://orcid.org/0000-0001-6101-3786)) \u2020\n- Yee Ling Wu<sup>1</sup>\n- Cristina Rada<sup>1</sup> ([ORCID: 0000-0003-4898-5550](https://orcid.org/0000-0003-4898-5550)) \u2020\n\n### Affiliations\n\n1. Protein and Nucleic Acid Chemistry Division Medical Research Council Laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCytidine deaminases are single stranded DNA mutators diversifying antibodies and restricting viral infection. Improper access to the genome leads to translocations and mutations in B cells and contributes to the mutation landscape in cancer, such as kataegis. It remains unclear how deaminases access double stranded genomes and whether off-target mutations favor certain loci, although transcription and opportunistic access during DNA repair are thought to play a role. In yeast, AID and the catalytic domain of APOBEC3G preferentially mutate transcriptionally active genes within narrow regions, 110 base pairs in width, fixed at RNA polymerase initiation sites. Unlike APOBEC3G, AID shows enhanced mutational preference for small RNA genes (tRNAs, snoRNAs and snRNAs) suggesting a putative role for RNA in its recruitment. We uncover the high affinity of the deaminases for the single stranded DNA exposed by initiating RNA polymerases (a DNA configuration reproduced at stalled polymerases) without a requirement for specific cofactors.\n\n## Introduction\n\nCytidine deaminases are a family of polynucleotide mutators that modify cytosines into uracil in viral nucleic acids as part of the innate immune defences (Harris and Liddament, 2004). Their success in restricting infection is reflected in the fact that the family has undergone a rapid expansion in primates and humans (Jarmuz et al., 2002). The ancestral founder of the family, activation induced deaminase (AID), functions in the adaptive immune system to mutate antibody genes in B cells as a fast mechanism to promote diversity of the antibody response to match the rapid evolution of pathogens during infection. The evolutionary advantages of these strategies are counterbalanced by the risk of exposing the host genome to active mutagenesis, a frequent cause of oncogenic transformation in leukaemia and lymphomas of B cell origin.\n\nAll members of the AID/APOBEC family are selective in the sequence context of the deaminated cytosine, with the two preceding nucleotides identifying the signature of individual deaminases (Beale et al., 2004). This mutation context signature has identified the human APOBEC3A and 3B proteins as the source of many of the somatic mutations accumulated by cancer genomes (Nik-Zainal et al., 2012; Burns et al., 2013; Roberts et al., 2013, Taylor et al., 2013). The combined mutational landscape observed in mammalian genomes is complicated by the contribution from multiple cellular processes in addition to enzymatic deamination, such as metabolic oxidation, methyl-CpG deamination and aging, thus elucidating the precise contribution of the APOBECs is far from straightforward (Alexandrov et al., 2013; Lawrence et al., 2013). However the peculiar clustering of same strand mutations at TpC dinucleotides observed in kataegic mutations in breast cancers constitutes a hallmark of the APOBEC3A and 3B deaminases that can be experimentally induced. Repair of double stranded DNA breaks can expose long patches of single stranded DNA with multiple deaminations leading to the mutation clusters observed in association with genomic rearrangements in breast cancer genomes (Nik-Zainal et al., 2012; Roberts et al., 2012; Taylor et al., 2013).\n\nPhysiologically, the activity of such mutators is targeted to specific substrates and restricted from the rest of the genome to limit genomic instability. In the case of AID, expressed upon activation in only a fraction of B cells, by limiting access to the nuclear compartment and preferential recruitment to the immunoglobulin genes; in the case of APOBEC3G, expressed preferentially in lymphoid cells, by its localisation in the cytosol and binding to the viral genome and capsid. The mechanism that preferentially directs AID to the immunoglobulin genes is not fully understood, but active transcription has been repeatedly invoked as a requirement (Reviewed in Storb, 2014) and many of the proteins found to be associated with AID are also involved in transcription and mRNA processing (Pavri et al., 2010; Basu et al., 2011; Okazaki et al., 2011; Willmann et al., 2012). Access of AID to off-target loci are documented not only by the anecdotal occurrence of mutations in oncogenes and chromosomal break points bearing the signature of the deaminase (Bcl6, MYC [Pasqualucci et al., 2001]) but also by AID dependent chromosome-break-capture and direct ChIP, where widespread off-target presence of AID is experimentally detected outside the immunoglobulin locus in mouse B cells (Chiarle et al., 2011; Klein et al., 2011; Yamane et al., 2011).\n\nIn addition to the sporadic off-target mutations induced by AID in B cells, APOBEC3A and 3B are thought to be responsible for many of the non-clustered/non-kataegic mutations at TpC dinucleotides observed not only in breast cancers but in other tumour types where the kataegic signature is not obviously present (Kuong and Loeb, 2013). As with sporadic AID mutations, the circumstances that promote or grant access of the APOBECs to single stranded DNA substrates of the host are not known. We have shown that overexpresison of deaminases in yeast faithfully recapitulates the mutation signatures observed in mammalian genomes. Here we have attempted to identify genomic features that promote or are permissive for enzymatic deamination by footprinting mutator activity on multiple genomes. Our results indeed reveal a preferential targeting of the deaminases to defined regions of the genome that is not dependent on cofactors but is rather based on accessibility, with structural features of the DNA at the promoter of actively transcribed genes being the key determinant. We also uncover a potential mechanistic explanation for the targeting and off-target preferences of the antibody diversification mutator AID.\n\n## Results\n\n### AID and APOBEC3G extensively mutate the yeast genome\n\nOverexpression of cytidine deaminases in yeast leads to the accumulation of genome wide mutations, which can be monitored by the number of cells resistant to the arginine analogue L-Canavinine through inactivation of the arginine permease CAN1 gene (Figure 1A). We have previously shown that such overexpression leads to an uracil-DNA glycosylase (UNG) dependent enrichment of kataegic mutations through deamination of cytosines on single stranded DNA intermediates during the repair of double strand breaks (Taylor et al., 2013). To assess the distribution of isolated mutations, we obtained a dataset largely devoid of kataegic mutations by expressing the deaminases in ung\u0394 cells. Overexpression of AID* (an AID hyperactive mutant [Wang et al., 2009; Taylor et al., 2013]) in haploid cells results in highly elevated frequency of Canavinine resistant colonies (164 \u00d7 10\u22126), but relatively few mutations, averaging 61 single nucleotide variations (SNVs) per genome (Figure 1A,B). Diploid cells can overcome this limit as they avoid the reduction in fitness costs caused by accumulated mutation (Waters and Parry, 1973; Lada et al., 2013). Our experimental setting confirms this effect; whereas the mutation frequency is reduced almost 40-fold due to the requirement to inactivate both CAN1 alleles, the genome wide SNV increase over 10-fold, averaging 796 SNVs per genome for AID* and 592 SNVs for transformants expressing sA3G* (a hyperactive mutant of the catalytic domain of human APOBEC3G [Wang et al., 2009]; Figure 1A,B). For comparison, a database of mutations at C\u2022G pairs was generated using the alkylating agent ethyl methane sulfonate (EMS). Alkylation of guanosines promotes base pairing with thymine, thereby causing G > A transitions during replication. Overnight exposure of diploid cells to 0.2% EMS resulted in increased mutation frequency and SNV load per genome similar to that elicited by the deaminases (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig1-v2.jpg)\n\n**Figure 1.:** (A) Mutation frequency (expressed as the number of canavinine resistant colonies per 106 ) at the CAN1 locus in ung1\u0394 haploid yeast (data in part from Taylor et al., 2013) and ung1\u0394/ung1\u0394 diploid yeast transformants expressing AID/APOBEC proteins or upon treatment with 0.2% EMS. Red bars indicate the median mutation frequency (n = 12\u2013126 colonies). (B) Genome wide SNV number in ung1\u0394 haploid and ung1\u0394/\u0394 diploid yeast transformants expressing AID/APOBEC proteins or with EMS treatment. Red bars indicate the median mutation per genome (n = 25\u201350 independent clones). (C) Sequence context of mutations at G\u2022C pairs in diploid yeast genomes (indicated as mutations at cytosines) exposed to AID*, sA3G* or EMS mutagenesis. The numbers indicate total mutations per dataset, with the height of colour bars proportional to the frequency of each base found in the vicinity of a mutation. (D) Distribution of mutations per diploid yeast chromosome expressed as the number of mutations per chromosome in each independent genome against the chromosome length. The bars represent the projected linear trend for mutations at C (in black) or G (in red).\n\nWhen interrogating the mutations (99.8% of which occur at C:G pairs; A:T mutations were excluded from further analysis; all detected mutations are given in Supplementary file 1), the expected flanking sequence context of WRC was found for AID* and YCC for sA3G* (Figure 1C). In stark contrast, no consensus motif was observed in the EMS data, highlighting the random nature of this mutagenesis. In all three datasets SNVs appeared distributed throughout the genome, with all chromosomes displaying similar overall mutation that is strongly correlated with chromosome length, ruling out major biases in the targeting of mutations (Spearman's correlation coefficient for AID*: \u03c1 > 0.65; for sA3G*: \u03c1 > 0.55; for EMS: \u03c1 > 0.68; Figure 1D).\n\n### Deaminase induced mutations are highly enriched in a small fraction of the genome\n\nWhilst mutations are equally distributed amongst chromosomes, they are not uniformly arranged along the chromosome. By combining the SNVs from independent transformants, regions can be observed in AID* and sA3G* genomes which show pronounced mutational peaks (Figure 2A). Only one such region of high mutation density is seen in the EMS treated clones, that of the CAN1 gene. The presence of multiple loci with high mutation density is therefore a deaminase specific process.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig2-v2.jpg)\n\n**Figure 2.:** (A) Radial histograms depict the density (Z-score) of pooled mutations for each dataset in 2 kb overlapping genomic segments along each chromosome. The CAN1 locus is highlighted in red. The peak highlighted in cyan is further enlarged in panels (B), (C) and (D). (B) Mutation densities along ChrII in AID* (red), sA3G* (black) and EMS (blue) treated genomes, expressed as the Z-score of mutation density per dataset (y-axis) along chromosome II (x-axis; 200 bp bin size). The region shadowed in cyan is magnified in (C). (C) Regions of high mutation density identify narrow mutation enriched regions (MELs), shown as green boxes for AID* and purple boxes for sA3G* in the bottom panel. Horizontal lines represent a single genome with each non-clonal mutation at C or G indicated by a dot (black or red respectively). Regions in Chr II and Chr X containing mutation enriched loci shown at the same scale, with the genomic coordinates indicated. (D) Mutations in the pronounced MEL on ChrII (highlighted cyan in panels (A), (B) and (C) shown in green for AID* and purple for sA3G*. Coordinates are indicated. (E) Overlap of detected MELs in AID*, sA3G* and EMS datasets. (F) Distribution of MELs width with the median indicated for AID* and sA3G* mutated genomes. (G) Fraction of the total deaminase mutations in MELs (black boxes) relative to genomic coverage of MELs. (H) Distribution of distances between AID and A3G mutable motifs within MELs vs genome wide mutable motif distances.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Strand distribution of mutations within AID* and sA3G* MEL regions. MELs comprising a single base were excluded. (B) Strand distribution of mutations within MEL regions in relation to the direction of transcription of the associated gene. (C) Strand distribution of WRC and YCC deaminase motifs within MEL regions and their flanking 50 base pairs.\n\nA more detailed look at regions with high density of mutations reveals narrow peaks of accumulated mutation that are in many cases common to both deaminases (Figure 2B), with the most prominent peaks resulting from the proximity of several regions of densely targeted loci. These peaks represent high mutation densities within a bin size of 150 base pairs but surprisingly reflect the accumulation of mutations focussed to very narrow intervals within targeted loci (Figure 2C,D).\n\nTo further delineate mutation favoured loci, we defined regions of high mutation density by identifying overlapping 150 base pair fragments containing higher than expected mutation loads (minimum of six mutations per fragment, originating from three independent transformants). We identify 1227 and 568 such mutation-enriched loci (MELs) in the AID* and sA3G* treated genomes, in contrast to just 1 obtained for EMS treatment (overlapping the body of the CAN1 gene and hence due to canavinine selection). On average 35 such MELs would be expected for simulated datasets of equivalent mutation loads (Figure 2E and Supplementary file 2). MELs span remarkably narrow regions, with a window width averaging 110 bp for AID* and 71bp for sA3G* (Figure 2F), and with almost 41% of all AID* and 22% of all sA3G* induced mutations localised to these regions (Table 1 and Supplementary file 2). In total, 25,618 of the combined 72,196 AID* and sA3G* mutations are occurring in MELs which account for just 1.5% of the genome (Figure 2G).\n\n**Table 1.**\n Deaminase induced Mutation Enriched Loci (MEL) in yeast genomes\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Observed</th>\n      <th colspan=\"3\">Simulated</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>AID*</th>\n      <th>sA3G*</th>\n      <th>EMS</th>\n      <th>AID*</th>\n      <th>sA3G*</th>\n      <th>EMS</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MELs</td>\n      <td>1227</td>\n      <td>568</td>\n      <td>1</td>\n      <td>50</td>\n      <td>21</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>% MEL mutation</td>\n      <td>40.7</td>\n      <td>21.6</td>\n      <td>0.24</td>\n      <td>0.75</td>\n      <td>0.39</td>\n      <td>0.14</td>\n    </tr>\n  </tbody>\n</table>\n\nBoth AID and APOBEC3G target cytosines for deamination within a specific sequence context, leading to the mutation hotspots associated with antibody diversification and the recurrent mutations at CCC trinucleotides observed in HIV-1 genomes during the evolution of viral clades and which accumulate in viral genomes from infected individual (Kijak et al., 2008). We therefore analysed the distribution of AID and APOBEC3G preferred sequence context in the yeast genome and find that the densities of AID and APOBEC3G motifs (WRC and YCC respectively) show no enrichment within the highly targeted regions compared to the remaining genome (Figure 2H). Therefore, the accumulation of mutations in MELs is not a consequence of localised clustering of mutable motifs.\n\nReinforcing the notion that MELs are highly favoured targets for mutations, we find these areas are frequency mutated on both alleles: 48% of AID* genomes and 56% of sA3G* genomes have mutations within MELs occurring on both chromosome alleles, compared to just 2\u20133% predicted for random fragments of equivalent size and mutation loads. MELs also contain most of the homozygous mutations detected (82% of AID* and 78% of sA3G*). Targeting of both alleles in MELs suggests they represent highly mutable regions within the genome, with the deaminases returning repeatedly to the same sites (albeit on a second chromosome) to mutate.\n\nRe-analysis of deaminase mutations we previously reported in haploid yeast (Taylor et al., 2013) identified 39 MELs which overlap with hypermutated MELs in diploid yeast, thus the focusing of mutations to MELs is seemingly unaffected by ploidy, suggesting the skewing of mutations due to selective pressures, such as fitness, is negligible (Figure 2\u2014figure supplement 1). Equally, we observe no significant strand bias in the hypermutated hotspots associated with AID* MELs suggesting that both strands are targeted in a similar fashion. A broader distribution of sA3G* strand bias more likely reflects the partial skewing in the presence of YCC motifs at MELs (Figure 2\u2014figure supplement 2).\n\nIn conclusion, deaminases preferentially target narrow focussed regions throughout the genome independent of the sequence density of deaminase targets.\n\n### MELs exclusively overlap gene promoters\n\nThere is a well-recognised relationship between AID induced mutations and transcription both in B cells at immunoglobulin genes, and for off-target loci, with mutations preferentially accumulating towards the promoter proximal region of the transcription unit (Pasqualucci et al., 2001; Rada and Milstein, 2001). The transcription link is interpreted as a mechanism that facilitates access of AID due to the generation of single stranded DNA intermediates (Chaudhuri et al., 2003). We therefore wondered whether AID induced MELs would be found associated with transcription. Contrary to expectation, enrichment analysis reveals that both AID* and sA3G* MELs are depleted within the body of RNA polymerase II (RNAP II) transcribed mRNA genes and rather that the deaminase induced mutations are preferentially associated with promoter regions, with over 76% of deaminase targeted hotspots found at promoters, compared to just 24% for simulated fragments (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-v2.jpg)\n\n**Figure 3.:** (A) Proportion of promoters, gene bodies, intergenic regions and replication origins (ARS) harbouring a MEL (green) or not (grey) for AID* and sA3G* datasets vs the expected distribution (sim.AID*sA3G*) determined by Monte Carlo simulation of equivalent sized fragments for each MEL dataset distributed randomly across the genome. (B) Density of mutations in relation to their distance to the nearest transcription start site (TSS) of mRNA (RNAP II) transcripts compared to the density relative to transcription termination sites (TTS). Data includes all mutations in addition to MELs. (C) Deaminase mutations relative to the TATA or TATA-like element for each RNAP II promoters (Rhee and Pugh, 2012) compared to the mutation distance distribution aligned to the transcription start site (TSS). (D) Proportion of AID* or sA3G* mutable motifs within RNAP II promoter regions, centred on the TATA-elements (Rhee and Pugh, 2012). Total number of mutations for each dataset is shown at each position (black line). (E) Relative transcription rates (see methods) at RNAP II promoters targeted by MELs compared to relative transcription rates for all RNAP II genes in gal induced conditions (Garc\u00eda-Mart\u00ednez et al., 2004). (F) Relative enrichment of RNAP II and RNAP II CTD phosphorylation (S2P, S5P and S7P) in promoters containing AID* (red) and sA3G* (black) MELs and all RNAP II promoters (grey) ranked according to transcriptional activity (Garc\u00eda-Mart\u00ednez et al., 2004).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Proportion of AID* or sA3G* mutable motifs around replication origins (ARS), depicted as in Figure 3D. Total number of mutations for each dataset is shown for at position (black line, scale as in Figure 3D).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Mutations are grouped according to the TAF1 enrichment status (data from Rhee and Pugh, 2012) with the line colour depicting the mutator (AID*, red; sA3G*, black; EMS, blue). Data includes all mutations in addition to MELs.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Enrichment of (A) deaminase, (B) serine 5 phosphorylated RNAPII and (C) Histone H3 at MEL promoters, unmutated promoters and intergenic regions. Enrichment is shown relative to input chromatin (B and C) or further normalised to control cell lines (A). Data from 2\u20133 independent experiments.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Frequency of each yeast transcription factor at individual promoters as described in (Venters et al., 2011) (blue dots) compared with the frequency that the transcription factor appears in the promoter of genes containing AID* (red dots) and sA3G* (black dots) MELs. Factors are ordered according to number of binding sites in all promoters. Basal transcription factors are the most commonly associated with deaminase targeted promoters (labelled). (B) Transcription rates of genes grouped according to Spt16 promoter occupancy and presence of MELs. (C) List of transcription factors found to vary in occupancy at MEL targeted promoters vs their overall frequency at all yeast promoters (Venters dataset). Transcription factors showing \u00b110% variation which are present in at least 25% of MELs are listed.\n\nInitiation of replication also transiently generates single stranded DNA at defined locations. However, there is no enrichment of mutated hotspots associated with replication origins (ARS) (Figure 3A). Although this could reflect the relative depletion of mutable motifs within ARS core consensus sequence, we find similar densities of mutable cytosines within the broader sequence context encompassing 200\u2013300 base pairs nucleosome depleted regions associated with functional origins (Figure 3\u2014figure supplement 1), suggesting that single strand availability provided by melting the DNA by the ORC complex might not be sufficient to efficiently target the deaminases.\n\nMutation enrichment at promoters is not restricted to hotspots identified within MELs, which exclude 73% of the total mutations due to the threshold applied in defining enriched loci. Aligning all mutations to mRNA transcriptional starts (TSS) and termination sites (TTS) (Xu et al., 2009), revealed a strong association of deaminase induced mutations with the TSS, with over 57% of AID* and 46% of sA3G* mutations occurring within the promoter region (defined as 500 base pairs upstream and 50 base pairs downstream of the TSS), compared to only 21% of EMS mutations (the expected frequency for randomly distributed mutations). Mutation accumulation is skewed upstream of the TSS (peak at -21 bp and -38 bp for AID* and sA3G* respectively; Figure 3B), corresponding to the nucleosome free region where the pre-initiation RNAP complex forms before scanning for the TSS (Rhee and Pugh, 2012). Indeed, aligning SNVs to the TATA box/TATA-like element or TSS revealed that not only are the majority of promoter associated mutations occurring between these two features (Figure 3C), there is also a paucity of mutations at the TATA-element suggesting this region is protected by TBP/TFIID binding (this paucity is, at least for AID*, not due to an absence of mutable sequence motifs; Figure 3D). Intriguingly, the peak of AID* and sA3G* induced SNVs centred 30 base pairs from the TATA-element, the region where TBP guides TFIIB to load RNAPII for the formation of the pre-initiation complex (PIC) (Rhee and Pugh, 2012).\n\nThe deaminase mutated hotspots thus identify the position where promoter melting occurs before the scanning polymerase encounters the TSS, suggesting a mechanistic basis for the hypothesis that the deaminases access the promoter coincidentally with the assembly of the pre-initiation complex. Consistent with the notion that initiating polymerases create transient access for the deaminases rather than specifically loading the proteins, we detect robust association of RNAP II with the promoter region of deaminase targeted promoters in yeast but negligible enhancement in the association of either AID or sA3G with mutated promoters compared to unmutated or intergenic regions (Figure 3\u2014figure supplement 3). Additionally, while there is a correlation between the mutated strand and the direction of transcription (Figure 2\u2014figure supplement 2), MELs are predominantly composed of mutations occurring in both strands suggesting the PIC makes both strands available during initiation.\n\nSupporting the idea that the deaminases preferentially mutate promoters due to their ability to recognize the melted DNA associated with the transcription pre-initiation complex, we observe that MELs occur in genes with above average transcriptional activity (Garc\u00eda-Mart\u00ednez et al., 2004) but targeting appears unrelated to any particular transcriptional program (Figure 3\u2014figure supplement 4). Rather than simply transcription factor binding at the promoter, active initiation by RNAP II is important for MEL development (Wilcox test p < 0.005 for all groups; Figure 3E). The transition of RNAP II from the pre-initiation complex to the elongation complex is associated with a shift in phosphorylation of the C-terminal domain (CTD) serine 5/7 to serine 2 (Kim et al., 2010). In agreement with the transcription rate analysis, deaminase MELs are associated with both high levels of RNAP II occupancy and CTD-S5P, that parallels the association with the highest transcribed genes (Figure 3F). Indeed, the recurrent association of both AID* and sA3G* MELs with regions enriched for the basal transcription machinery and in particular Spt16 -a chromatin chaperon associated with highly transcribed genes (Formosa, 2013) (Figure 3\u2014figure supplement 4), reinforces the idea that active transcription and potential pausing (at promoters highly dependent on the FACT/Spt16 complex) determines the deaminases targeting.\n\nIn summary, cytidine deaminases mutate at specific loci through the yeast genome, predominantly within active gene promoter regions.\n\n### AID targets promoter regions of small RNAP III genes\n\nIn B cells, AID is found in association with components of the transcription machinery such as SPT5 and SPT6, and RNAP II itself (Nambu et al., 2003; Pavri et al., 2010; Okazaki et al., 2011), therefore we wondered whether the enrichment of mutations associated with promoters might be a feature restricted to RNAP II dependent genes. Analysis of mutations in highly transcribed non-RNAP II dependent transcripts, such as RNAP III dependent tRNA genes, astonishingly reveals an even more pronounced enrichment of targeted hotspots with 78% of the genomic regions corresponding to tRNAs harbouring repeated mutations. While we find that both sA3G* and AID* MELs overlap with tRNAs, AID* MELs are disproportionately overrepresented, with 228 of 275 tRNA genes being highly targeted (Figure 4A). Furthermore, aligning of mutations within 250 base pairs of the TSS of tRNA genes shows that all occur within the tRNA gene body, which is also the site of RNAP III initiation (Figure 4B). As in the case of mRNA promoters, the mutations in tRNAs are highly focussed to narrow hotspots that span the site where loading of the polymerase is thought to occur (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-v2.jpg)\n\n**Figure 4.:** (A) Number of tRNA genes harbouring (green) an AID* or sA3G* MEL compared with expected number from Monte Carlo simulations. (B) Density of mutations in relation to the transcription start site (TSS) of tRNA genes. Mutations within the 500 base pair interval centred at the TSS are included. (C) Mutation frequency in promoters of mRNA genes (within a window 500 bp upstream and 50 bp downstream of the TSS) compared to the frequency of mutations in the promoters of tRNA (550 bp window centred on the middle of the tRNA gene), snoRNAs and snRNA genes (550 bp window as for mRNA genes). mRNA genes are binned according to transcription rate as in Figure 3. Both RNAP II and III driven snoRNAs are included. (D) Example of MELs in ChrIV and ChrXV corresponding to tRNA tI(UAU)D and tG(CCC)O, depicted as in Figure 3.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The number of deaminase motifs for each MEL vs the number of mutations within each MEL for AID* and sA3G* datasets.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Sequence context of low allelic frequency mutations detected in the rDNA locus, as depicted in Figure 1C. (B) Schematic of the rDNA repeat region. Panels show mutations detected in yeast transformants at the rDNA locus. Each line represents one clone with dots representing mutations (mutation at C, black; at G, red; at A, green). Clones with no detected mutations are not depicted.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Tables showing the correlation between R-loops formation predicted by the QmRLFS-finder (Wongsurawat et al., 2012) or SkewR package (Ginno et al., 2012) and the presence of MELs.\n\nThe mutation frequency (normalised number of mutations per 550 base pairs) in AID* genomes within tRNA genes is higher than at mRNA gene promoters (p value < 2e-16, Wilcox non-parametric test; Figure 4C) and much higher than that observed even in the subset of highly transcribed mRNA promoters. While the differences in mutation frequency between mRNA promoters and tRNAs is still statistically significant for A3G* (p value < 8e-10), this effect is less pronounced. Enhanced mutation is also observed in the promoters of snoRNA and snRNA genes, again particularly in the case of AID* genomes, whereas no statistically significant differences are observed between any of the promoter subsets for mutations driven by EMS. The enhanced mutation attributable to AID* is not likely a feature of RNAP III, since snoRNAs are even more targeted for mutation though all but snR52 are transcribed by RNAP II (Moqtaderi and Struhl, 2004).\n\nTargeting of tRNA, snRNA and snoRNA genes by the deaminases could be enhanced by the availability of hypermutable motifs, as there is on average one more YCC motif in the tRNA genes (1.5 more in the MEL region itself) targeted by sA3G* than in those tRNA genes not targeted by sA3G*. We see no such difference with AID* target motifs which are present within tRNA, snRNA and snoRNA gene promoters at similar frequency as in other promoters (average 52 to 63 motifs per 550 base pairs promoter window, Figure 4\u2014figure supplement 1). Overall, there is only weak correlation between the number of motifs within the 550 base pair promoter window and the number of mutations (Spearman's \u03c1 = 0.02 and \u03c1 = 0.2 for AID* and sA3G* respectively; Figure 4\u2014figure supplement 2), confirming that motif availability is not the main determinant for targeting.\n\nMutations at rRNA genes were poorly mapped due to the repetitive nature of the region on Chr XII (150\u2013200 copies of the 9.1 kb unit containing the 35S pre-RNA and the 5S RNA). By including repeatedly mapped reads across the rDNA locus, we could detect several hundred mutations at low allele frequency all within the expected deaminase mutation context, giving confidence in their detection and location (Figure 4\u2014figure supplement 3A). Mutations were restricted to the well defined ribosomal replication fork barrier (rRFB) located between the 5S and 35S transcriptional units. No enhanced mutation was detected at the promoter regions (which are transcribed in opposite directions by RNAP III and RNAP I respectively). However mutations clustered at the rRFB site for both deaminases (Figure 4\u2014figure supplement 3B), at a site where induced homologous recombination maintains the size of the ribosomal gene array. Although DNA double-strand breaks (DSB) have been detected at the site, it is likely that in vivo persistent breaks are rare in undamaged yeast (Fritsch et al., 2010). Accordingly we did not detect kataegic like clusters in the region, but rather localised mutated hotspots. Thus it is possible that other mechanisms such as cryptic transcription (Houseley et al., 2007) might expose the site to the action of the deaminases, rather than repair of double strand breaks. While AID overexpression in yeast deficient for components of the RNA processing machinery (THO) have enhanced genomic instability, particularly in highly transcribed GC-rich regions prone to R-loop formation (G\u00f3mez-Gonz\u00e1lez and Aguilera, 2007), in wild type yeast this effect is only mild. Nonetheless we observe positive association of MELs with predicted R-loop potential genes although the paucity of these features across the genomes (between 59\u201378 sites) precludes any predictive dissociation between high density of mutation, R-loop potential and transcription rates (Figure 4\u2014figure supplement 4).\n\n### AID but not sA3G binds small RNAs\n\nAn alternative explanation for the enhanced targeting of small RNA promoters by AID* is that the RNAs themselves preferentially bind AID, thereby creating co-transcriptional enrichment of AID in the vicinity of their genes. Purified AID binds RNA, with its in vitro deamination activity enhanced by treatment with RNAse A (Bransteitter et al., 2003), whereas the non-catalytic domain of APOBEC3G is responsible for its ability to bind RNA and form high molecular weight ribonucleic\u2013protein complexes (Huthoff et al., 2009; B\u00e9langer et al., 2013). It is not known whether binding in both cases is specific for any particular RNA species, but based on our current observations we decided to test the ability of human AID and human APOBEC3G to bind in vitro transcribed tRNA as well as polyU RNA. Whereas both Flag-tagged overexpressed human AID and full length human APOBEC3G can be recovered from cell extracts by binding to biotin labelled RNAs, the catalytic domain of APOBEC3G (sA3G) is not (Figure 5A). Furthermore, full length APOBEC3G is efficiently recovered from extracts by the extended linear polyU RNA, a reflection of its ability to oligomerise in an RNA dependent fashion, whereas AID recovery is not enhanced by its binding to linear polyU RNA. Binding of AID to tRNA species was also found for endogenous yeast tRNAs, suggesting that the modifications found in vivo (pseudouridylation and 2\u2032-O-ribose methylation) do not affect the interaction. The single domain APOBEC3A protein shows no RNA binding ability except a limited amount to doubled stranded RNA, despite sharing the preferential targeting to promoters as the rest of the deaminases (Figure 5\u2014figure supplement 1A). Taken together, this data suggest a degree of specificity in the RNA binding preferences of the deaminases, with AID preference linked to structured rather than linear RNA (Figure 5B). Interestingly the catalytic activity of AID is not required for the binding or the specificity, since similar binding was observed for the inactive mutant AID-E58A (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig5-v2.jpg)\n\n**Figure 5.:** (A) Left panel shows the in vitro transcribed pre-tI(UAU)D tRNA used for affinity purification. Right panel shows immunoblots for transiently overexpressed AID/APOBEC3G proteins following RNA-immunoprecipitation with pre-tRNA. (B) Affinity purification with tl(UAU)D probe, total yeast tRNA, homopolymeric single stranded (polyU) and double stranded (polyA:U) RNA. Left panel shows input proteins, right panel shows immunoblots for transiently overexpressed AID/APOBEC3 proteins following RNA-immunoprecipitation. Results representative of at least 3 independent experiments. (C) Deaminase induced mutations in the promoter region of the YBR194W locus. Top panels: accumulated mutations in the AID*, sA3G* and EMS whole genome datasets. Bottom panels: mutations detected in Sanger sequenced yeast clones unmodified or harbouring a chimeric YBR194W-snR6 locus. Each line represents one clone with dots representing mutations (at C, black; at G, red). Clones with no mutations are indicated.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Mutation density relative to the TSS for APOBEC3A and APOBEC3B induced mutations from ung\u0394 haploid cells (data from Taylor et al., 2013). The density at tRNA promoters is shown separately in red. (B) Mutations in breast cancer genome PD4120a and lung adenocarcenoma LUAD-S01345. Pie charts show the contribution of mutations at TC over mutations at the remaining dinucleotides and histograms show mutation density relative to all human TSS (Ensemble annotation).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Immunoprecipitation of chromatin associated RNAP II or (B) Histone H3 from unmodified or YBR194W-snR6 chimeric yeast. Black bars show enrichment relative to input in the unmodified strain with the modified strain in red. An unrelated locus, YJL105W is shown as control. Data from three independent experiments. (C) mRNA levels of YBR194W shown relative to ACF1. Levels at the TAF10 gene are shown as a control. Data from three independent experiments.\n\nIn order to test the RNA binding properties of AID in modulating its targeting preferences we introduced a chimeric snR6 RNA into the RNAP II driven YBR194W gene, which was identified in our dataset as a transcribed but poorly targeted promoter by both deaminases (Figure 5C top panels). Initiation and transcription of the modified locus remained overall unaffected (Figure 5\u2014figure supplement 2), while comparison of the YBR194W promoter region by Sanger sequencing revealed enhanced mutation focused to the immediate vicinity of the TSS by AID* but not sA3G*. No such focussing of mutations was observed in the unmodified yeast overexpresing AID* (Figure 5C).\n\nWe conclude that the differential preference of AID* for tRNA, snRNAs and snoRNAs in yeast might reflect the ability of AID to preferentially associate with abundant small RNA species, in contrast to the catalytic domain of APOBEC3G (sA3G*) that possesses no RNA binding activity.\n\nTargeting mutations to initiating promoters is not likely a function of the size of the deaminase, as could be inferred from the results described for both AID and the single domain fragment of APOBEC3G used in our study. Similar promoter associated recurrent mutations can be elicited not only by APOBEC3A (also a single domain deaminase) but also by the double domain APOBEC3B (Figure 5\u2014figure supplement 1A). It is therefore not entirely unexpected to observe enrichment of mutations at TpC (versus other dinucleotides) in association with promoter regions in a breast cancer genome that has the highest incidence of APOBEC3 kataegic mutations (Figure 5\u2014figure supplement 1B), suggesting that the deaminases could access dsDNA at initiating or paused RNAPs also in mammalian cells.\n\n## Discussion\n\nThe involvement of AID and APOBEC3A and 3B in cancer suggests that enzymatic deamination of genomic targets is an infrequent but recurrent consequence of the presence of the deaminases in vertebrates. Despite subcellular compartmentalisation, specific targeting and restricted expression limiting AID off-target activity, some genomic regions other than the natural target, the immunoglobulin loci, are predisposed to mutation. BCL6, PIM1 and MYC are recurrent off-targets of AID mutation in B cell malignancies (Pasqualucci et al., 2001); in the case of BCL6 it is estimated that AID induced mutations are also prevalent in non transformed B cells at just 103-fold lower frequency than at immunoglobulin genes (Liu et al., 2008) and even in the absence of the mutator phenotypes attributable to malignant transformation, normal B cells frequently show AID induced translocations at the MYC locus (Roschke et al., 1997; Casellas et al., 2009). In cancer genomes, the association of APOBEC mutations with genomic rearrangements suggests that replication stress, persistent DNA lesions and incomplete repair expose single stranded DNA that becomes a substrate for deaminases leading to clustered mutations. It is unclear how APOBEC3A and 3B gain access to single stranded DNA leading to the singlet isolated mutations highly prevalent in mutated cancer genomes that bear the APOBEC signature (Taylor et al., 2013). It is therefore important to understand the genomic context that facilitates off-target activity of the deaminases in the absence of explicit DNA damage.\n\nExpression of AID and other APOBEC proteins in yeast faithfully recapitulates the signature of mutations observed in mammalian cells in a smaller genome with no background mutations due to unrelated processes, such as DNA repair (Lada et al., 2013; Taylor et al., 2013). In this study we demonstrate the non-random nature of the mutations induced by the deaminases, which is remarkably focussed to just 1.5% of the yeast genome but nonetheless overlaps more than half of the active promoters. AID is known to interact with components of the transcription machinery in mammalian cells (reviewed in Kenter, 2012). However, the overlap between highly mutated promoters by both AID and APOBEC3G suggests that rather than conservation of protein\u2013protein interactions of the deaminases with the transcription complex, properties of the promoter itself can determine targeting.\n\nEnhanced targeting of RNAP III transcribed genes argues against active recruitment of the deaminases by conserved initiation factors, whereas the structural conservation of the DNA template conformation at the core pre-initiation complex of all polymerases (Vannini and Cramer, 2012) supports the idea that the conformation of the DNA template is the common element in the recruitment of the deaminases. Indeed, the site of polymerase loading (within the body of the tRNA genes) rather than the TSS is the preferred target of deamination in the case of the RNAP III transcribed tRNAs in contrast to the 5\u2032 region of the RNAP III transcribed SNR52 snoRNA, where the loading of the RNAP is fixed at the 5\u2032 promoter region. Furthermore, the high density of mutations focussed to the small region between the TATA binding protein site (TBP) and the transcription start site (TSS), more precisely identify the pre-initiation complex (PIC) as the target for the deaminases.\n\nBudding yeast RNAP II promoters show characteristic and highly regulated nucleosome exclusion. This is partly due to sequence composition, with regions enriched for poly dA\u2022dT nucleotides that confer rigidity to the DNA and are therefore thermodynamically less favourable to wrap around nucleosomes (Yuan et al., 2005), and partly due to the regulated and precise positioning of the +1 nucleosome relative to the TSS that includes specific histone variants (H2A.Z and H3.3) that promote chromatin accessibility (reviewed in Jiang and Pugh, 2009). Therefore it is highly significant that other nucleosome free regions, such as ARS are not targeted by the deaminases, despite undergoing DNA melting during the initiation of replication. This reinforces our interpretation that intrinsic properties of active promoters, in particular the configuration associated with loading of the polymerase at the pre-initiation complex (open pre-initiation complex) (Gr\u00fcnberg et al., 2012), are sufficient to generate persistent single stranded DNA accessible for deamination. Our data supports the presence of such open PICs in most yeast active promoters.\n\nNeither the preferential targeting of promoters nor the narrow focus of the MELs is due to the preferential clustering of mutable motifs. Interestingly, the nature of the mutation hotspots within MELs (both at C and G), reveals that both strands of the melted DNA structure associated with active promoters are accessible. Furthermore, protection from mutation is evident at the TBP binding site while the peak of mutations \u223c30 base pairs downstream identifies the site of RNAP loading and DNA melting mapped by permanganate footprinting (Giardina and Lis, 1993) and high resolution ChIP (Rhee and Pugh, 2012). Our deaminase footprinting data further confirms the persistent open configuration and single stranded nature of this region potentially identifying open pre-initiation promoters.\n\nDifferences in the assembly of the PIC in TATA and TATA-like promoters, do not seem to affect mutation susceptibility, although predictably, TATA box promoters show a more defined distance between the TBP protected footprint and the accessible melted DNA (Figure 3\u2014figure supplement 2) indicating that it is the structure of the single stranded DNA rather than the assembly (SAGA or THIID dependent) of the transcription initiation complex itself that determines targeting (Rhee and Pugh, 2012).\n\nUp to 75% of human promoters in different cell types are occupied by a pre-initiating form of RNAP II (Guenther et al., 2007), whereas pausing and stalling are much more common in metazoan transcription compared with Saccharomyces cerevisiae. Mammalian promoters are frequently regulated by proximal pausing, with most promoters pausing within 200 base pairs of the TSS (Adelman and Lis, 2012). In the presence of a deaminase, initiating and or paused sites would become accessible for mutation, thus it is intriguing to observe promoter proximal enrichment of mutations at TpC dinucleotides in PD4120a, a breast cancer genome with dramatic accumulation of kataegis that betrays its mutagenesis by APOBEC3B (Nik-Zainal et al., 2012). Our data favours the idea that accessibility of single stranded DNA at RNAP II stalled sites suffice to recruit APOBECs or indeed AID. This model offers explanation for the association of AID with mammalian SPT5, which functions in modulating the pausing of RNAP II during elongation as transcription stalls, and is consistent with the recurrent targeting by AID of the promoter proximal region of MYC (Duquette et al., 2005) a well characterised promoter-proximal pausing regulated gene (Krumm et al., 1992; Strobl and Eick, 1992).\n\nThe correlation between high transcription rates and enhanced deaminase targeting reinforces the hypothesis that repeated loading of the pre-initiation complex leads to the persistence of a small region of melted DNA that is very efficiently targeted by the deaminases. Indeed the enhanced targeting of tRNA, snoRNAs and snRNA genes could reflect the high transcription rates of these essential RNAs given that RNAP I and III transcripts constitute almost 80% of the total nuclear gene expression in dividing cells (Vannini, 2013). The unexpected finding that tRNAs are disproportionally targeted for mutation by AID compared with APOBEC3G, as are the promoters of other highly structured RNAs (snRNA or snoRNA), and the indication that this difference is not due to motif enrichment at those promoters, brings into focus the potential involvement of the RNA binding properties of the deaminases in promoting targeting. While APOBEC3G has been shown to bind not only HIV RNA, but cellular RNAs, including abundant 7S RNA (Huthoff et al., 2009), this ability is dependent on the N-terminal domain. Mutation targeting of the RNAP initiation complex is not linked to the ability of the deaminases to bind RNA per se, as the catalytic C-terminal domain of APOBEC3G in this study is inert regarding RNA binding. Notably, our results show that AID binds structured RNAs in vitro (such as tRNAs), and preferentially targets tRNAs and other small RNA promoters for mutation in yeast, prompting the speculation that binding to abundant RNAs sequesters AID to subnuclear localities such as nucleolar areas, where small RNAs genes also localise during transcription. Indeed nucleolar localisation of overexpressed AID has been reported in mammalian cells, although its significance under physiological levels remains to be tested (Hu et al., 2013). Alternatively preferential recognition of particular RNA structures such as folded tRNAs could determine the recruitment of AID to genomic regions.\n\nIn conclusion, our study uncovers the remarkable preference of mammalian cytidine deaminases to mutate active promoters when expressed in yeast, a preference blind to the type of RNA polymerase (both RNAP II and III genes are targets) and not ascribable to sequence context or targeting by specific cofactors. The precise and narrow location of the recurrent mutations pinpoints the site where the RNAP pre-initiation complex is loaded highlighting the conservation of the TBP (TATA binding protein) site and the formation of the pre-initiation complex, whereas exclusion of mutations from the TBP site confirms the poised nature of active yeast promoters.\n\nThese results suggest that initiating polymerases create a small but persistent accessible patch of single stranded DNA in vivo, which has high affinity for deaminases and where both strands are accessible for mutation. They also strongly support the notion that AID might directly bind to single stranded DNA at the pre-initiating or stalling RNAP sites without a requirement for specific cofactors and that its targeting is modulated by its ability to interact with structured RNA species.\n\n## Materials and methods\n\n### Yeast transformants\n\nYeast strain BY4743 ung\u0394/ung\u0394 was generated by crossing BY4741 ung\u0394 (MATa; his3\u03941; leu2\u03940; met15\u03940; ura3\u03940) obtained from Euroscarf deletion collection (Frankfurt, Germany) with the BY4742 ung\u0394 strain. BY4742 ung\u0394 was generated by removal of the UNG1 open reading frame by homologous recombination in the parental BY4742 strain, using a PCR generated URA3 cassette flanked by a 57-bp 5\u2032 homology and 51-bp 3\u2032 homology arms that include adaptamers for post integration removal of the URA3 selection cassette (Reid et al., 2002). The YBR194W-snR6 chimeric strain was generated by inserting a URA3 cassette at the 5\u2032 end of the YBR194W gene in BY4741 ung\u0394 cells. Homology arms and the snR6 gene were amplified from genomic DNA using the primers (1) 5\u2032-CCTGCCACTTTCAAAAGGCG-3\u2032 and 5\u2032-CGAAGGGTTACTTCGCGAACTCCTGTCCCTATTACATATTCAACC-3\u2032, (2) 5\u2032-GGTTGAATATGTAATAGGGACAGGAGTTCGCGAAGTAACCCTTCG-3\u2032 and 5\u2032-GCCAGGCATGCTAATGGCAAAACGAAATAAATCTCTTTGTAAAAC-3\u2032, (3) 5\u2032-GTTTTACAAAGAGATTTATTTCGTTTTGCCATTAGCATGCCTGGC-3\u2032 and 5\u2032-TGGTGGTCATATGCTCGGTG-3\u2032. A PCR fusion of all three fragments with the first and last primer was used to retarget the URA3 containing locus. 5-Fluoroorotic acid counter-selection was used to isolate targeted colonies that were then mated with BY4742 ung\u0394 to generate the final BY4743 ung\u0394/ung\u0394 YBR194W-snR6/YBR194W strain. Correct integration of all targeting constructs was confirmed by PCR.\n\nYeast transformation and selection, genomic DNA extraction and mutation frequency calculation were performed as described previously (Taylor et al., 2013). Control and AID* expression vectors were as described previously (Taylor et al., 2013). The sA3G* vector was generated by PCR amplification of the C-terminal domain of A3G* fused with a 5\u2032 SV40 nuclear localisation sequence and FLAG tag using primers 5\u2032-GCAAGCTTGCCACCATGCCTAAAAAGAAGCGTAAAGTCGAGATTCTCAGACACTCG-3\u2032 and 5\u2032-CCAGAATCAGGAAAACGGAGCAGACTACAAGGACGATGACGACAAGTAGCTCGAGGC-3\u2032 and ligating the resultant Hind III-Xho I fragment it into pRS426-GAL1pr-tADHpolyA vector described previously (Taylor et al., 2013).\n\nEthyl methanesulfonate (EMS) mutagenesis was performed by culturing BY4743 ung\u0394/ung\u0394 yeast overnight in YEPD with 0.2% EMS, after which cells were washed in 5% sodium thiosulfate and plated for viability and canavanine resistance as above.\n\n### Sample preparation and DNA sequencing\n\nDNA libraries were generated using the multiplexing Nextera DNA Sample Prep Kit (Illumina, Little Chesterford, UK) according to manufactures instructions. The libraries were sequenced by BGI (BGI, Beijing, China). The de-multiplexed sequence reads were aligned to the reference yeast genome (SacCer_Apr2011/sacCer3) using BWA-MEM (Li and Durbin, 2009). Optical duplicates were removed using Picard (http://picard.sourceforge.net) and only uniquely mapped paired reads were retained. On average 43-fold sequence coverage was achieved for each yeast genome. Unprocessed sequence reads for this study have been deposited at the EMBL-EBI European Nucleotide Archive, study accession number PRJEB7456 (http://www.ebi.ac.uk/ena/data/view/PRJEB7456).\n\n### Data analysis\n\n#### Mutation calling\n\nAn in-house pipeline for mutation calling was used where GATK base quality score recalibration and indel realignment (McKenna et al., 2010) was performed prior to somatic mutation calling by Somatic Sniper (Larson et al., 2012) using the parental BY4743 genome as reference. High confidence single nucleotide variations (SNVs) were filtered using the following criteria: (1) SomaticSniper score >50, (2) allele frequency \u22650.3, (3) reference or samples read count \u22654, (4) average position as fraction on reads \u22650.1, (5) average distance to 3\u2032 end \u22650.1, (6) average base quality \u226530, (7) average read length >50 bp.\n\n#### Mutation enriched loci (MEL) identification\n\nWithin each data set, mutations were pooled with the number of mutations within 150 base pair windows. Based on the assumption of a random distribution of mutation amongst the fragments, a binomial distribution was determined using the following parameters: size equal to the average number of mutations per clone and probability equal to the average number of mutations per clone over the total number of mutable motifs. Mutable motifs were the total number of WRC, YCC, or C bases for AID*, sA3G* and EMS respectively. The 99th percentile was used as a threshold to identify significantly mutated windows and adjacent windows merged. To refine the span of each individual mutation enriched loci (MEL), unmutated residues and residues falling in the following categories were removed and the window size adjusted: bases that had a count below the 25th percentile of all the counts in the window; bases which had a mutation count below four standard deviations from the average for the window and all bases with only a single detected mutation (where the median mutation count was above one). A final threshold was applied so that only regions with more than 5 mutations derived from at least four independent transformants were assigned as high confidence MELs. All MELs were manually assessed using a genome browser and are shown in Supplementary file 3.\n\nThe averaged fraction of overlapping regions for simulated MEL dataset were determined by 1000 cycles of bootstrap analysis using randomised equivalent number of fragments of identical sizes for each dataset distributed across the genome.\n\n#### Normalised mutation density\n\nThe normalised mutation density was calculated by dividing the mutation count for each residue by the total number of mutation for the dataset.\n\n#### RNAP enrichment\n\nChIP enrichment was determined by taking the sum of the ChIP enrichment scores (Kim et al., 2010) for each promoter fragment (defined as 550 bp upstream and 50 bp downstream from the TSS [Rhee and Pugh, 2012]). Promoters were then grouped according to the transcription rate (Garc\u00eda-Mart\u00ednez et al., 2004) or whether they contained a MEL.\n\n#### Average mutation frequency for mRNA, tRNA, snoRNA and snRNA promoters\n\nPromoter fragments for mRNA genes and transcription rate binning were performed as above. tRNA gene promoter fragments were defined as a 550 bp fragment centred on the middle of the tRNA gene. snoRNA and snRNA promoters were defined as 550 bp upstream and 50 bp downstream from the TSS defined in the Saccharomyces Genome Database (Cherry et al., 2012). Intronic snoRNA genes were assigned the mRNA promoter and polycistronic snoRNA genes were assigned only one promoter. Mutation frequency was calculated by first randomly down-sampling the databases to half the size of the EMS dataset, to allow equivalent numbers of mutations to be compared. The number of mutations occurring on each promoter was then calculated. The process was bootstrapped 1000 times to give a directly comparable average number of mutations for each promoter.\n\n#### rDNA mapping\n\nTo detect mutations at the repetitive rDNA locus a less stringent algorithm was used. De-multiplexed sequence reads were aligned as before and unmapped reads removed. Reads mapping to the rDNA region (chrXII:434839-508289) were extracted and used for mutation calling by SomaticSniper. Mutations with a SomaticSniper score of above 50, a read depth of 10 in both the reference and the sample and no evidence of the mutated base in the reference genome were assigned.\n\nAll analyses were performed using Bioconductor. Scripts are included as Supplementary file 4.\n\n### Immunopreciptation\n\n#### RNA binding\n\nThe tI(UAU)D RNA probes were generated by in vitro transcription (MegaShortScript T7 Kit, Life Technologies, Paisley, UK) with or without biotin-UTP (Life Technologies), according to manufactures instructions. Free nucleotides were removed using Oligo Clean & Concentrator columns (Zymo, Irvine, CA, USA). The tI(UAU)D template was generated by annealing the following oligos 5\u2032-AATTTAATACGACTCACTATAGGGCTCGTGTAGCTCAGTGGTTAGAGCTTCGTGCTTATAACG-3\u2032 and 5\u2032-TGCTCGAGGTGGGGTTTGAACCCACGACGGTCGCGTTATAAGCACGAAGCTCTAACC-3\u2032. The pre-tI(UAU)D template was generated by PCR amplification from yeast genomic DNA using the following primers 5\u2032- AATTTAATACGACTCACTATAGGGCTCGTGTAGCTCAGTGGTTAGAGC-3\u2032 and 5\u2032-TGCTCGAGGTGGGGTTTGAACCCACGACGG-3\u2032. Biotinylation of total yeast RNA (Life Technologies), polyuridylic acid, polyadenylic acid-polyuridylic acid (Sigma\u2013Aldrich, Gillingham, UK) and the tI(UAU)D probe were performed using the RNA 3\u2032 End Biotinylation Kit (Pierce) according to manufacturers instructions.\n\nBiotinylated RNA probes (3.6 \u03bcg) were refolded by heating to 80\u00b0C for 5 min in folding buffer (25 mM Tris pH 7.6, 100 mM KCl, 1 mM EDTA), MgCl2 was then added to a final concentration of 20 mM and the RNA allowed to slowly cool to 10\u00b0C before being bound to magnetic beads (Pierce, Loughborough, UK) for 1 hr at 4\u00b0C. Unbound probe was removed by washing with RNA buffer (25 mM Tris pH 7.6, 50 mM KCl, 5 mM NaCl, 1.5 mM MgCl2, 35 mM Glycine, 10% glycerol) supplemented with 0.5% Triton X-100. The integrity of the RNA was monitored by denaturing gel electrophoresis and staining with toluidine blue.\n\nClarified whole cell extracts (in RNA buffer supplemented with 0.3% Triton X-100 and complete protease inhibitors [Roche, Burgess Hill, UK]) from HEK 293 cells expressing Flag-AID, catalytically inactive AID (E58A mutation), APOBEC3G-Flag and the SV40-NLS tagged catalytic C-terminal domain of APOBEC3G (sA3G)-Flag, were incubated for 1 hr at 4\u00b0C in the presence of bead bound biotinylated RNA probes. Unbound proteins were removed by washing the beads four times in RNA buffer supplemented with 0.5% Triton X-100 at 4\u00b0C and the bound protein monitored by western using anti Flag antibodies (M2-HRP, Sigma\u2013Aldrich).\n\n#### Chromatin imunoprecipitation\n\nOvernight 60 ml yeast cultures fixed in 1% formaldehyde for 20 min and quenched in 0.125 M glycine (final) were washed twice in cold PBS, resuspended in RIPAlo (150 mM NaCl, 10 mM Tris\u2013HCl pH 7.5, 1 mM EDTA, 1% Triton X-100, 0.1% SDS, 0.1% Sodium Deoxycholate, 1\u00d7 Complete protease inhibitors) prior to lysis using a MPI TissueLyser (10 cycles of 30 s on, 5 min off, 4000 rpm), sonication using a Bioruptor (14 cycles of 30 s on, 30 s off, high intensity) and centrifugation (10 min 15,000\u00d7g). Equal amounts of clarified chromatin were incubated overnight at 4\u00b0C with 3 \u03bcg anti-HA 16B12 (Covance, Maidenhead, UK), 2 \u03bcg anti-H3 ab1791 (Abcam, Cambridge, UK), 2 \u03bcg anti-RNAPII S5P ab5131 (Abcam). Purification followed on Protein-G dynabeads for 2 hr with extensive washes (twice in RIPAlo, twice in RIPAhi [RIPAlo but for 500 mM NaCl], once in RIPA-LiCl [RIPAlo but 250 mM LiCl replacing NaCl] and twice in TE) and overnight elution in 25 mM Tris\u2013HCl, 1 mM EDTA, pH to 9.8, 50 \u03bcg/ml proteinase K at 65\u00b0C. Input DNA was extracted using Gentra Puregene (Qiagen, Manchester, UK) with qPCR performed using QuantiFast SYBR kit (Qiagen) all as per manufactures instructions. Primers used are; YBR019C; 5\u2032-ATCCAGCACCACCTGTAACC-3\u2032 and 5\u2032-AAACTTCTTTGCGTCCATCC-3\u2032, YBR020W; 5\u2032-ACCTGAGTTCAATTCTAGCGC-3\u2032 and 5\u2032-TCCGGTTTAGCATCATAAGCG-3\u2032, YNL067W; 5\u2032-AACCAAACTCTAGCCTCCAA-3\u2032 and 5\u2032-TGCTGACAGTAACACCTTCTGG-3\u2032, YBL003C; 5\u2032-TGTGCACTCTACCAACTGGG-3\u2032 and 5\u2032-ATGTCCGGTGGTAAAGGTGG-3\u2032, YPL250C; 5\u2032-AGAGAGTTGCTCCAGACCCT-3\u2032 and 5\u2032-GCATAAAGAAGCGGCTCTGC-3\u2032, YEL009C; 5\u2032-GGGGGAGAGTAACCTGTGTT-3\u2032 and 5\u2032-TTTCGGCTCGCTGTCTTACC-3\u2032, YBR194W; 5\u2032-TCTTCTTGCTCGGGGTTCTC-3\u2032 and 5\u2032-TGCTGAAGGCCTTTGCAAAG-3\u2032, YPL189W; 5\u2032-GCGAAGATTACGGCACTCGA-3\u2032 and 5\u2032-ACAGGTACGGGCTATCTGGA-3\u2032, YLR183C; 5\u2032-ACATCTGCCACGACACATCA-3\u2032 and 5\u2032-TGGTGGAGAGTACGGATCCA-3\u2032, YJL105W; 5\u2032-TTTCTTGCTCTTGGCGGCTA-3\u2032 and 5\u2032-AGTTAGGATCTGAGCCGGGT-3\u2032, YPR007C; 5\u2032-ACAGGTTCGAGCTTCATGGG-3\u2032 and 5\u2032-CGGGAATTTCATCCAGCGGA-3\u2032, chrXV;367475-367594 5\u2032-ACTTGGCACTTCTTCCTCAACA-3\u2032 and 5\u2032-TCGCAAAGTTGGCTAACCGT-3\u2032, chrX;585916-586020 5\u2032-ATGTCTCCCTGTTACCCGGT-3\u2032 and 5\u2032-ACAGGTGCTGTCACAAAACA-3\u2032, chrIV;76,875-76,955 5'\u2032-GGCAGCACCGAGAATGTTTT-3\u2032 and 5\u2032-GCTGTTAGCATATTGGGGGT-3\u2032.\n\n### Yeast transcript analysis\n\nRNA from 1 ml overnight cultures purified with RNAeasy plus (Qiagen) was used to generate cDNA using oligo-dTs and the GoScript Kit (Promega, Southampton, UK) followed by qPCR employing QuantiFast SYBR (Qiagen) all as per manufactures instructions. Primers used are TAF10; 5\u2032-ATATTCCAGGATCAGGTCTTCCGTAGC-3\u2032 and 5\u2032-GTAGTCTTCTCATTCTGTTGATGTTGTTGTTG-3\u2032, ACT1; 5\u2032-CTTTCAACGTTCCAGCCTTC-3\u2032 and 5\u2032-CCAGCGTAAATTGGAACGAC-3\u2032, YBR194W-snR6; 5\u2032-CCTGCCACTTTCAAAAGGCG-3\u2032 and 5\u2032-CAGGGGAACTGCTGATCATCTCTG-3\u2032, YBR194W; 5\u2032-GGGTCGTGAAAAAGAGAACGG-3\u2032 and 5\u2032-ATGTGATGGTGCAGTGCCTC-3\u2032.\n\n### YBR194W promoter sequencing\n\nThe YBR194W promoter region was amplified using the following primers; 5\u2032-ATTGTGGCAGTTCGGCTTTG-3\u2032 and 5\u2032-AGGTTTCCCAGTCTGGCTTG-3\u2032 and Sanger sequenced using the latter.\n",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "44bbc6cd-0821-4fc7-a88f-bf89c7579587",
+      "submission_id": "c4a73cf0-b940-479a-aff3-7cf7612a1497",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nick J Proudfoot, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03553.025](https://doi.org/10.7554/eLife.03553.025)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cActive RNAP pre-initiation sites are highly mutated by cytidine deaminases in yeast, with AID targeting small RNAs genes\u201d for consideration at eLife. Your article has been favorably evaluated by James Manley (Senior editor) and 2 reviewers, one of whom, Nick Proudfoot, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and another expert reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAnalysis of the in vivo effect of human deaminases, such as AID and APOBEC3G, in heterologous systems such as E. coli and yeast has been undertaken by different labs and has contributed greatly to understand their mechanisms of action. Despite the limitations that yeast may have as a system to make conclusions about the in vivo action of these deaminases in human cells, it is clear that this type of approach reveals important features of the genome accessibility for these enzymes known to act specifically on ssDNA. In yeast, the pattern of mutations induced by these deaminases has been reported by different laboratories. This manuscript of Taylor and Rada, from the former laboratory of M. Neuberger, extends such studies further. A detailed analysis of clustering of mutations along the genome of diploid yeast reveals that such clusters are preferentially located at promoters of highly expressed RNAPII-driven genes. This is the case for both AID and APOBEC3G-induced mutations, and in the case of AID this is also observed for RNAPIII genes. Taylor and Rada conclude that this is due to the ability of the small RNAs to bring AID to its site of action. To probe this hypothesis they show that AID binds in vitro to yeast tRNA and poly U. This work is interesting and novel by providing new information about the yeast genome accessibility to human deaminases that should help clarify its mechanism of action. It is consistent with the ability of these enzymes to act on ssDNA formed at active pre-initiation complexes.\n\n1) We are not convinced that the authors provide significant evidence that this recruitment is RNA mediated. AID was discovered by the Honjo lab as an RNA modifying enzyme, and the ability of AID to interact in vitro with RNA is not that novel. More importantly, the data presented is insufficient to prove that RNA plays a direct role in recruiting AID to pre-initiation complexes in vivo. The difference between RNAPII and RNAPIII promoters (embedded in the body of the genes) could be due to a different structure of the pre-initiation complex, a difference in the opening and accessibility of the ssDNA formed at such promoters or to different factors that might influence the action of AID in vivo, not necessarily its recruitment. Despite this, it is clear that these proteins act at RNAPII promoters as deduced from the impressive enrichment of MELs at such promoters. Is the average length of the RNA generated in such promoters small? Do long RNA molecules bind AID in vitro?\n\n2) It is important to distinguish loading and recruitment of the deaminases from their sites of action (as seen by their mutational analysis). This study can only deduce sites of action not sites of loading and recruitment. This later point should be addressed by performing ChIP analysis to show that the deaminases are loaded at the promoter by the promoter initiation complex. Also reporter systems could be employed to probe these issues in vivo by turning on or off transcription (using inducible promoters e.g. GAL) This is relevant given the reported role of transcription factors in AID recruitment in human cells that in principle would not correlate with mutational hotspots.\n\n3) Are the authors sure that Canavinine is an Arginine permease transporter inhibitor or just an Arginine analogue that uses the same permease (encoded by the CAN1 gene). This later reason could explain why can1 mutations impede canavarine uptake leading to can resistance? Please comment.\n\n4) Can the authors further explain why mutations within the MELs are much more likely to occur on both alleles of the diploid strain compared to equivalent random fragments? As the information on whether such mutations are coincident between both alleles is not clear, I wonder whether the authors can exclude the possibility that such high levels could be due to gene conversion type of events whether or not mediated by double-strand breaks.\n\n5) It is important that 57% of AID and 46 % of sA3G mutations occur within the promoter region compared to only 21% of EMS mutations. However, considering that the authors found 1227 and 568 MELs in the AID and sA3G treated genomes, but only 1 for MMS, a simple analysis would reveal that the MMS mutations in the promoter region compared to the total frequency of MMS-induced MELs is extremely high. Could the authors clarify or discuss this point better, so that the reader does not get misled by a simple analysis, if that is the case?\n",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0b42c995-e676-42d4-9ec2-04834d869148",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C1",
+      "claim": "Cytidine deaminases are single stranded DNA mutators diversifying antibodies and restricting viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytidine deaminases are single stranded DNA mutators diversifying antibodies and restricting viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field supported by scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "4c119901-4ec3-48ed-b822-af2602412f05",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C2",
+      "claim": "Improper access of cytidine deaminases to the genome leads to translocations and mutations in B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Improper access to the genome leads to translocations and mutations in B cells and contributes to the mutation landscape in cancer, such as kataegis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about deaminase activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "3986e1b7-b275-4f67-98bc-d2a94787b727",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C3",
+      "claim": "Improper access of cytidine deaminases to the genome contributes to the mutation landscape in cancer, such as kataegis.",
+      "claim_type": "EXPLICIT",
+      "source": "Improper access to the genome leads to translocations and mutations in B cells and contributes to the mutation landscape in cancer, such as kataegis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about APOBEC-induced mutations in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "4692e109-99fe-4ba1-a14b-96cd061366a6",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C4",
+      "claim": "In yeast, AID and the catalytic domain of APOBEC3G preferentially mutate transcriptionally active genes within narrow regions, 110 base pairs in width, fixed at RNA polymerase initiation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, AID and the catalytic domain of APOBEC3G preferentially mutate transcriptionally active genes within narrow regions, 110 base pairs in width, fixed at RNA polymerase initiation sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "1c7ebed4-78a3-4297-9f25-687eba67ac19",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C5",
+      "claim": "AID shows enhanced mutational preference for small RNA genes (tRNAs, snoRNAs and snRNAs) compared to APOBEC3G.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike APOBEC3G, AID shows enhanced mutational preference for small RNA genes (tRNAs, snoRNAs and snRNAs) suggesting a putative role for RNA in its recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "8defbb7d-632a-4684-aeb7-8ddabd324333",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C6",
+      "claim": "The enhanced mutational preference of AID for small RNA genes suggests a putative role for RNA in its recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike APOBEC3G, AID shows enhanced mutational preference for small RNA genes (tRNAs, snoRNAs and snRNAs) suggesting a putative role for RNA in its recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "3fba864a-b0e8-4761-8f09-56539f716bf5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C7",
+      "claim": "Deaminases have high affinity for single stranded DNA exposed by initiating RNA polymerases without a requirement for specific cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "We uncover the high affinity of the deaminases for the single stranded DNA exposed by initiating RNA polymerases (a DNA configuration reproduced at stalled polymerases) without a requirement for specific cofactors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "2c17e0f5-fe61-4553-9595-4ea1157bd18d",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C8",
+      "claim": "The DNA configuration at stalled polymerases reproduces that at initiating RNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "We uncover the high affinity of the deaminases for the single stranded DNA exposed by initiating RNA polymerases (a DNA configuration reproduced at stalled polymerases) without a requirement for specific cofactors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural similarity of these polymerase states.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "23610c07-c32e-41a3-9f0c-ee021672bbe5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C9",
+      "claim": "The AID/APOBEC family has undergone rapid expansion in primates and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Their success in restricting infection is reflected in the fact that the family has undergone a rapid expansion in primates and humans (Jarmuz et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jarmuz et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "6256014d-b07b-4ac8-b448-ca552ca12be8",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C10",
+      "claim": "AID functions in the adaptive immune system to mutate antibody genes in B cells as a mechanism to promote diversity of the antibody response.",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestral founder of the family, activation induced deaminase (AID), functions in the adaptive immune system to mutate antibody genes in B cells as a fast mechanism to promote diversity of the antibody response to match the rapid evolution of pathogens during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about AID function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "2bac58ba-57b7-4cf5-996f-3c1c2eb0d82d",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C11",
+      "claim": "All members of the AID/APOBEC family are selective in the sequence context of the deaminated cytosine, with the two preceding nucleotides identifying the signature of individual deaminases.",
+      "claim_type": "EXPLICIT",
+      "source": "All members of the AID/APOBEC family are selective in the sequence context of the deaminated cytosine, with the two preceding nucleotides identifying the signature of individual deaminases (Beale et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Beale et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "7854e683-e225-45fc-8365-592741fa7f68",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C12",
+      "claim": "The mutation context signature has identified human APOBEC3A and 3B proteins as the source of many somatic mutations accumulated by cancer genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation context signature has identified the human APOBEC3A and 3B proteins as the source of many of the somatic mutations accumulated by cancer genomes (Nik-Zainal et al., 2012; Burns et al., 2013; Roberts et al., 2013, Taylor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "5ee219e1-9bf0-4087-ac9e-27a12b6873e2",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C13",
+      "claim": "The clustering of same strand mutations at TpC dinucleotides observed in kataegic mutations in breast cancers constitutes a hallmark of APOBEC3A and 3B deaminases.",
+      "claim_type": "EXPLICIT",
+      "source": "However the peculiar clustering of same strand mutations at TpC dinucleotides observed in kataegic mutations in breast cancers constitutes a hallmark of the APOBEC3A and 3B deaminases that can be experimentally induced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge and citations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "c4709328-57ef-40f2-baad-dea79f010b0f",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C14",
+      "claim": "Repair of double stranded DNA breaks can expose long patches of single stranded DNA with multiple deaminations leading to mutation clusters observed in association with genomic rearrangements in breast cancer genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Repair of double stranded DNA breaks can expose long patches of single stranded DNA with multiple deaminations leading to the mutation clusters observed in association with genomic rearrangements in breast cancer genomes (Nik-Zainal et al., 2012; Roberts et al., 2012; Taylor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "501b7849-250d-440c-be68-a6442e623323",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C15",
+      "claim": "Active transcription has been repeatedly invoked as a requirement for AID targeting to immunoglobulin genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism that preferentially directs AID to the immunoglobulin genes is not fully understood, but active transcription has been repeatedly invoked as a requirement (Reviewed in Storb, 2014) and many of the proteins found to be associated with AID are also involved in transcription and mRNA processing (Pavri et al., 2010; Basu et al., 2011; Okazaki et al., 2011; Willmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies and a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "24c0bfae-6fdf-4db3-a9c0-696bd6a4f2fb",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C16",
+      "claim": "Many proteins associated with AID are also involved in transcription and mRNA processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism that preferentially directs AID to the immunoglobulin genes is not fully understood, but active transcription has been repeatedly invoked as a requirement (Reviewed in Storb, 2014) and many of the proteins found to be associated with AID are also involved in transcription and mRNA processing (Pavri et al., 2010; Basu et al., 2011; Okazaki et al., 2011; Willmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "19e2eefd-bd8c-4306-8255-b8b625ffbdf0",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C17",
+      "claim": "Widespread off-target presence of AID is experimentally detected outside the immunoglobulin locus in mouse B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Access of AID to off-target loci are documented not only by the anecdotal occurrence of mutations in oncogenes and chromosomal break points bearing the signature of the deaminase (Bcl6, MYC [Pasqualucci et al., 2001]) but also by AID dependent chromosome-break-capture and direct ChIP, where widespread off-target presence of AID is experimentally detected outside the immunoglobulin locus in mouse B cells (Chiarle et al., 2011; Klein et al., 2011; Yamane et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "d7431a7c-5dfe-4b83-93da-7789daf32351",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C18",
+      "claim": "APOBEC3A and 3B are thought to be responsible for many non-clustered/non-kataegic mutations at TpC dinucleotides observed in various tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the sporadic off-target mutations induced by AID in B cells, APOBEC3A and 3B are thought to be responsible for many of the non-clustered/non-kataegic mutations at TpC dinucleotides observed not only in breast cancers but in other tumour types where the kataegic signature is not obviously present (Kuong and Loeb, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kuong and Loeb, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "7500898c-82cb-4ad9-9167-64930f200daa",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C19",
+      "claim": "Overexpression of deaminases in yeast faithfully recapitulates the mutation signatures observed in mammalian genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that overexpresison of deaminases in yeast faithfully recapitulates the mutation signatures observed in mammalian genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "006429f2-febd-43eb-ba80-45a802394e43",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C20",
+      "claim": "Overexpression of AID* in haploid cells results in highly elevated frequency of Canavinine resistant colonies (164 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of AID* (an AID hyperactive mutant [Wang et al., 2009; Taylor et al., 2013]) in haploid cells results in highly elevated frequency of Canavinine resistant colonies (164 \u00d7 10\u22126), but relatively few mutations, averaging 61 single nucleotide variations (SNVs) per genome (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "0e64cb34-892f-4f04-a28b-c856d0bd8208",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C21",
+      "claim": "Overexpression of AID* in haploid cells results in relatively few mutations, averaging 61 single nucleotide variations (SNVs) per genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of AID* (an AID hyperactive mutant [Wang et al., 2009; Taylor et al., 2013]) in haploid cells results in highly elevated frequency of Canavinine resistant colonies (164 \u00d7 10\u22126), but relatively few mutations, averaging 61 single nucleotide variations (SNVs) per genome (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "d07ec4ce-c0f1-4062-800e-a0143a3f4249",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C22",
+      "claim": "Diploid cells can overcome the limit of accumulated mutations by avoiding reduction in fitness costs caused by accumulated mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Diploid cells can overcome this limit as they avoid the reduction in fitness costs caused by accumulated mutation (Waters and Parry, 1973; Lada et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Waters and Parry, 1973 and Lada et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "4165edc8-708f-4db3-8d1d-41bc9475b0c5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C23",
+      "claim": "In diploid cells expressing AID*, the genome wide SNV averages 796 SNVs per genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental setting confirms this effect; whereas the mutation frequency is reduced almost 40-fold due to the requirement to inactivate both CAN1 alleles, the genome wide SNV increase over 10-fold, averaging 796 SNVs per genome for AID* and 592 SNVs for transformants expressing sA3G* (a hyperactive mutant of the catalytic domain of human APOBEC3G [Wang et al., 2009]; Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "fd2b0da1-3be1-4cda-bf70-7ba8000d7029",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C24",
+      "claim": "In diploid cells expressing sA3G*, the genome wide SNV averages 592 SNVs per genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental setting confirms this effect; whereas the mutation frequency is reduced almost 40-fold due to the requirement to inactivate both CAN1 alleles, the genome wide SNV increase over 10-fold, averaging 796 SNVs per genome for AID* and 592 SNVs for transformants expressing sA3G* (a hyperactive mutant of the catalytic domain of human APOBEC3G [Wang et al., 2009]; Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "1b2b0113-f9a9-4e65-ae5e-fc5cf57119c5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C25",
+      "claim": "The expected flanking sequence context of WRC was found for AID*.",
+      "claim_type": "EXPLICIT",
+      "source": "When interrogating the mutations (99.8% of which occur at C:G pairs; A:T mutations were excluded from further analysis; all detected mutations are given in Supplementary file 1), the expected flanking sequence context of WRC was found for AID* and YCC for sA3G* (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "9bb6f9b9-6d21-4845-98b3-9563e0f85dca",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C26",
+      "claim": "The expected flanking sequence context of YCC was found for sA3G*.",
+      "claim_type": "EXPLICIT",
+      "source": "When interrogating the mutations (99.8% of which occur at C:G pairs; A:T mutations were excluded from further analysis; all detected mutations are given in Supplementary file 1), the expected flanking sequence context of WRC was found for AID* and YCC for sA3G* (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "6f68e6c0-a036-4c0d-a20f-a707fd3d7c38",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C27",
+      "claim": "99.8% of mutations occur at C:G pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "When interrogating the mutations (99.8% of which occur at C:G pairs; A:T mutations were excluded from further analysis; all detected mutations are given in Supplementary file 1), the expected flanking sequence context of WRC was found for AID* and YCC for sA3G* (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "3eb9dc81-967e-48c1-87c8-95c2996b710d",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C28",
+      "claim": "No consensus motif was observed in the EMS data.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, no consensus motif was observed in the EMS data, highlighting the random nature of this mutagenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "097084b3-abfb-47ac-907e-5501315dda43",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C29",
+      "claim": "In all three datasets SNVs appeared distributed throughout the genome, with all chromosomes displaying similar overall mutation that is strongly correlated with chromosome length.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three datasets SNVs appeared distributed throughout the genome, with all chromosomes displaying similar overall mutation that is strongly correlated with chromosome length, ruling out major biases in the targeting of mutations (Spearman's correlation coefficient for AID*: \u03c1 > 0.65; for sA3G*: \u03c1 > 0.55; for EMS: \u03c1 > 0.68; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "037ea34d-38bd-4e81-b2ea-60b79ae2c978",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C30",
+      "claim": "1227 mutation-enriched loci (MELs) were identified in AID* treated genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To further delineate mutation favoured loci, we defined regions of high mutation density by identifying overlapping 150 base pair fragments containing higher than expected mutation loads (minimum of six mutations per fragment, originating from three independent transformants). We identify 1227 and 568 such mutation-enriched loci (MELs) in the AID* and sA3G* treated genomes, in contrast to just 1 obtained for EMS treatment (overlapping the body of the CAN1 gene and hence due to canavinine selection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "c423f07f-92b1-43d4-9c6f-a3904ad26d48",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C31",
+      "claim": "568 mutation-enriched loci (MELs) were identified in sA3G* treated genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To further delineate mutation favoured loci, we defined regions of high mutation density by identifying overlapping 150 base pair fragments containing higher than expected mutation loads (minimum of six mutations per fragment, originating from three independent transformants). We identify 1227 and 568 such mutation-enriched loci (MELs) in the AID* and sA3G* treated genomes, in contrast to just 1 obtained for EMS treatment (overlapping the body of the CAN1 gene and hence due to canavinine selection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "96867271-82e9-42ba-96a2-1dff4664971d",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C32",
+      "claim": "Only 1 MEL was obtained for EMS treatment, overlapping the body of the CAN1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "To further delineate mutation favoured loci, we defined regions of high mutation density by identifying overlapping 150 base pair fragments containing higher than expected mutation loads (minimum of six mutations per fragment, originating from three independent transformants). We identify 1227 and 568 such mutation-enriched loci (MELs) in the AID* and sA3G* treated genomes, in contrast to just 1 obtained for EMS treatment (overlapping the body of the CAN1 gene and hence due to canavinine selection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "c2ab7e50-3778-4ea6-b630-e545691fbac4",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C33",
+      "claim": "MELs span remarkably narrow regions, with a window width averaging 110 bp for AID* and 71bp for sA3G*.",
+      "claim_type": "EXPLICIT",
+      "source": "MELs span remarkably narrow regions, with a window width averaging 110 bp for AID* and 71bp for sA3G* (Figure 2F), and with almost 41% of all AID* and 22% of all sA3G* induced mutations localised to these regions (Table 1 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "2e2152c9-e3da-4d33-9dab-6b4d7e64e6e4",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C34",
+      "claim": "Almost 41% of all AID* induced mutations are localised to MEL regions.",
+      "claim_type": "EXPLICIT",
+      "source": "MELs span remarkably narrow regions, with a window width averaging 110 bp for AID* and 71bp for sA3G* (Figure 2F), and with almost 41% of all AID* and 22% of all sA3G* induced mutations localised to these regions (Table 1 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "e47ad0f4-ef78-4cea-afa6-53adf404aa1c",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C35",
+      "claim": "22% of all sA3G* induced mutations are localised to MEL regions.",
+      "claim_type": "EXPLICIT",
+      "source": "MELs span remarkably narrow regions, with a window width averaging 110 bp for AID* and 71bp for sA3G* (Figure 2F), and with almost 41% of all AID* and 22% of all sA3G* induced mutations localised to these regions (Table 1 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "316b6820-6800-41c1-aab4-d63249f3f602",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C36",
+      "claim": "25,618 of the combined 72,196 AID* and sA3G* mutations are occurring in MELs which account for just 1.5% of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 25,618 of the combined 72,196 AID* and sA3G* mutations are occurring in MELs which account for just 1.5% of the genome (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "470ec313-f39f-4965-9400-ceca96f2bfde",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C37",
+      "claim": "The densities of AID and APOBEC3G motifs (WRC and YCC respectively) show no enrichment within the highly targeted regions compared to the remaining genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore analysed the distribution of AID and APOBEC3G preferred sequence context in the yeast genome and find that the densities of AID and APOBEC3G motifs (WRC and YCC respectively) show no enrichment within the highly targeted regions compared to the remaining genome (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "ce42e432-fe9e-4473-960a-83418b86acea",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C38",
+      "claim": "The accumulation of mutations in MELs is not a consequence of localised clustering of mutable motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the accumulation of mutations in MELs is not a consequence of localised clustering of mutable motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that motif densities show no enrichment in MELs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "285da95c-886b-4e3e-9999-c6492c10ae6c",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C39",
+      "claim": "48% of AID* genomes have mutations within MELs occurring on both chromosome alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Reinforcing the notion that MELs are highly favoured targets for mutations, we find these areas are frequency mutated on both alleles: 48% of AID* genomes and 56% of sA3G* genomes have mutations within MELs occurring on both chromosome alleles, compared to just 2\u20133% predicted for random fragments of equivalent size and mutation loads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "54a95d59-7a90-4ebf-93de-5e27c4e346fe",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C40",
+      "claim": "56% of sA3G* genomes have mutations within MELs occurring on both chromosome alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Reinforcing the notion that MELs are highly favoured targets for mutations, we find these areas are frequency mutated on both alleles: 48% of AID* genomes and 56% of sA3G* genomes have mutations within MELs occurring on both chromosome alleles, compared to just 2\u20133% predicted for random fragments of equivalent size and mutation loads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "602f52c6-e079-40ae-b605-662778b7a5c5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C41",
+      "claim": "MELs contain 82% of AID* homozygous mutations detected.",
+      "claim_type": "EXPLICIT",
+      "source": "MELs also contain most of the homozygous mutations detected (82% of AID* and 78% of sA3G*).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "2d4d4a1f-0130-4122-a50a-1745957ee7a6",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C42",
+      "claim": "MELs contain 78% of sA3G* homozygous mutations detected.",
+      "claim_type": "EXPLICIT",
+      "source": "MELs also contain most of the homozygous mutations detected (82% of AID* and 78% of sA3G*).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "2f033d9c-0e10-4caa-87e9-51d5785a3377",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C43",
+      "claim": "Both AID* and sA3G* MELs are depleted within the body of RNA polymerase II (RNAP II) transcribed mRNA genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to expectation, enrichment analysis reveals that both AID* and sA3G* MELs are depleted within the body of RNA polymerase II (RNAP II) transcribed mRNA genes and rather that the deaminase induced mutations are preferentially associated with promoter regions, with over 76% of deaminase targeted hotspots found at promoters, compared to just 24% for simulated fragments (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "e5daf0b9-18b6-4d8a-b10f-cb30be4803d4",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C44",
+      "claim": "Deaminase induced mutations are preferentially associated with promoter regions, with over 76% of deaminase targeted hotspots found at promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to expectation, enrichment analysis reveals that both AID* and sA3G* MELs are depleted within the body of RNA polymerase II (RNAP II) transcribed mRNA genes and rather that the deaminase induced mutations are preferentially associated with promoter regions, with over 76% of deaminase targeted hotspots found at promoters, compared to just 24% for simulated fragments (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "d19b868d-356a-422f-81db-cb85e6ab369f",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C45",
+      "claim": "Over 57% of AID* mutations occur within the promoter region (defined as 500 base pairs upstream and 50 base pairs downstream of the TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "Aligning all mutations to mRNA transcriptional starts (TSS) and termination sites (TTS) (Xu et al., 2009), revealed a strong association of deaminase induced mutations with the TSS, with over 57% of AID* and 46% of sA3G* mutations occurring within the promoter region (defined as 500 base pairs upstream and 50 base pairs downstream of the TSS), compared to only 21% of EMS mutations (the expected frequency for randomly distributed mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to Xu et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "794be0c1-4d80-4aa7-9e6e-9e61fd2fe3ff",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C46",
+      "claim": "46% of sA3G* mutations occur within the promoter region (defined as 500 base pairs upstream and 50 base pairs downstream of the TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "Aligning all mutations to mRNA transcriptional starts (TSS) and termination sites (TTS) (Xu et al., 2009), revealed a strong association of deaminase induced mutations with the TSS, with over 57% of AID* and 46% of sA3G* mutations occurring within the promoter region (defined as 500 base pairs upstream and 50 base pairs downstream of the TSS), compared to only 21% of EMS mutations (the expected frequency for randomly distributed mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to Xu et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "ef88ea74-5e73-414d-97d6-74221aef80a4",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C47",
+      "claim": "Mutation accumulation is skewed upstream of the TSS with peak at -21 bp for AID* and -38 bp for sA3G*.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation accumulation is skewed upstream of the TSS (peak at -21 bp and -38 bp for AID* and sA3G* respectively; Figure 3B), corresponding to the nucleosome free region where the pre-initiation RNAP complex forms before scanning for the TSS (Rhee and Pugh, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B and citation to Rhee and Pugh, 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "f93ae568-3960-4620-bf26-d370202c8507",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C48",
+      "claim": "The majority of promoter associated mutations occur between the TATA box/TATA-like element and TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, aligning SNVs to the TATA box/TATA-like element or TSS revealed that not only are the majority of promoter associated mutations occurring between these two features (Figure 3C), there is also a paucity of mutations at the TATA-element suggesting this region is protected by TBP/TFIID binding (this paucity is, at least for AID*, not due to an absence of mutable sequence motifs; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "51950bd7-3b38-42b2-b0a5-739f4ada13dc",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C49",
+      "claim": "There is a paucity of mutations at the TATA-element suggesting this region is protected by TBP/TFIID binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, aligning SNVs to the TATA box/TATA-like element or TSS revealed that not only are the majority of promoter associated mutations occurring between these two features (Figure 3C), there is also a paucity of mutations at the TATA-element suggesting this region is protected by TBP/TFIID binding (this paucity is, at least for AID*, not due to an absence of mutable sequence motifs; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observed paucity of mutations at the TATA-element.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "6b9998cc-a112-4f7e-9cc7-7ec52aa044f0",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C50",
+      "claim": "The peak of AID* and sA3G* induced SNVs is centred 30 base pairs from the TATA-element, the region where TBP guides TFIIB to load RNAPII for the formation of the pre-initiation complex (PIC).",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the peak of AID* and sA3G* induced SNVs centred 30 base pairs from the TATA-element, the region where TBP guides TFIIB to load RNAPII for the formation of the pre-initiation complex (PIC) (Rhee and Pugh, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to Rhee and Pugh, 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "5d715abd-246c-4b65-a3dc-e4a30d7dd454",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C51",
+      "claim": "Robust association of RNAP II with the promoter region of deaminase targeted promoters in yeast is detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the notion that initiating polymerases create transient access for the deaminases rather than specifically loading the proteins, we detect robust association of RNAP II with the promoter region of deaminase targeted promoters in yeast but negligible enhancement in the association of either AID or sA3G with mutated promoters compared to unmutated or intergenic regions (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "7e75cf55-f31b-4dbd-81ec-c2bebabc7b6c",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C52",
+      "claim": "Negligible enhancement in the association of either AID or sA3G with mutated promoters compared to unmutated or intergenic regions is detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the notion that initiating polymerases create transient access for the deaminases rather than specifically loading the proteins, we detect robust association of RNAP II with the promoter region of deaminase targeted promoters in yeast but negligible enhancement in the association of either AID or sA3G with mutated promoters compared to unmutated or intergenic regions (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "143ea999-ab6b-4749-82be-c3c47ebff0c9",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C53",
+      "claim": "MELs occur in genes with above average transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting the idea that the deaminases preferentially mutate promoters due to their ability to recognize the melted DNA associated with the transcription pre-initiation complex, we observe that MELs occur in genes with above average transcriptional activity (Garc\u00eda-Mart\u00ednez et al., 2004) but targeting appears unrelated to any particular transcriptional program (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and citation to Garc\u00eda-Mart\u00ednez et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "b9d8a47b-bb74-4533-af8a-2869a6b36b69",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C54",
+      "claim": "Active initiation by RNAP II is important for MEL development.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than simply transcription factor binding at the promoter, active initiation by RNAP II is important for MEL development (Wilcox test p < 0.005 for all groups; Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "07476a8d-c891-4362-9d68-236bd9b7d1db",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C55",
+      "claim": "Deaminase MELs are associated with both high levels of RNAP II occupancy and CTD-S5P.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the transcription rate analysis, deaminase MELs are associated with both high levels of RNAP II occupancy and CTD-S5P, that parallels the association with the highest transcribed genes (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "02a68450-2364-4834-9ee0-da0d7185da6b",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C56",
+      "claim": "78% of the genomic regions corresponding to tRNAs harbour repeated mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of mutations in highly transcribed non-RNAP II dependent transcripts, such as RNAP III dependent tRNA genes, astonishingly reveals an even more pronounced enrichment of targeted hotspots with 78% of the genomic regions corresponding to tRNAs harbouring repeated mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "39ac717b-59ac-4703-a021-d7b2a6616844",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C57",
+      "claim": "228 of 275 tRNA genes are highly targeted by AID* MELs.",
+      "claim_type": "EXPLICIT",
+      "source": "While we find that both sA3G* and AID* MELs overlap with tRNAs, AID* MELs are disproportionately overrepresented, with 228 of 275 tRNA genes being highly targeted (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "3723558d-1b50-4908-ab94-2cd14b1202ac",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C58",
+      "claim": "All mutations within 250 base pairs of the TSS of tRNA genes occur within the tRNA gene body, which is also the site of RNAP III initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, aligning of mutations within 250 base pairs of the TSS of tRNA genes shows that all occur within the tRNA gene body, which is also the site of RNAP III initiation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "e8309fa6-d930-4cb9-bff3-571b63b5b05c",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C59",
+      "claim": "The mutation frequency in AID* genomes within tRNA genes is higher than at mRNA gene promoters (p value < 2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation frequency (normalised number of mutations per 550 base pairs) in AID* genomes within tRNA genes is higher than at mRNA gene promoters (p value < 2e-16, Wilcox non-parametric test; Figure 4C) and much higher than that observed even in the subset of highly transcribed mRNA promoters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "820fb4c4-4a63-4c2e-a1a4-7d30a07fe1ff",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C60",
+      "claim": "The differences in mutation frequency between mRNA promoters and tRNAs is statistically significant for A3G* (p value < 8e-10).",
+      "claim_type": "EXPLICIT",
+      "source": "While the differences in mutation frequency between mRNA promoters and tRNAs is still statistically significant for A3G* (p value < 8e-10), this effect is less pronounced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "3b1d160f-362a-491b-9881-8d1718e9e9ba",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C61",
+      "claim": "Enhanced mutation is observed in the promoters of snoRNA and snRNA genes, particularly in the case of AID* genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced mutation is also observed in the promoters of snoRNA and snRNA genes, again particularly in the case of AID* genomes, whereas no statistically significant differences are observed between any of the promoter subsets for mutations driven by EMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "2889b3a5-1957-457b-897b-5a6017665041",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C62",
+      "claim": "There is on average one more YCC motif in the tRNA genes targeted by sA3G* than in those tRNA genes not targeted by sA3G*.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting of tRNA, snRNA and snoRNA genes by the deaminases could be enhanced by the availability of hypermutable motifs, as there is on average one more YCC motif in the tRNA genes (1.5 more in the MEL region itself) targeted by sA3G* than in those tRNA genes not targeted by sA3G*.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "e242c49d-296a-4716-aacc-b246254dcb88",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C63",
+      "claim": "AID* target motifs are present within tRNA, snRNA and snoRNA gene promoters at similar frequency as in other promoters (average 52 to 63 motifs per 550 base pairs promoter window).",
+      "claim_type": "EXPLICIT",
+      "source": "We see no such difference with AID* target motifs which are present within tRNA, snRNA and snoRNA gene promoters at similar frequency as in other promoters (average 52 to 63 motifs per 550 base pairs promoter window, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "8c2ad76f-667a-4ade-bdcc-15af437aefe9",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C64",
+      "claim": "There is only weak correlation between the number of motifs within the 550 base pair promoter window and the number of mutations (Spearman's \u03c1 = 0.02 and \u03c1 = 0.2 for AID* and sA3G* respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, there is only weak correlation between the number of motifs within the 550 base pair promoter window and the number of mutations (Spearman's \u03c1 = 0.02 and \u03c1 = 0.2 for AID* and sA3G* respectively; Figure 4\u2014figure supplement 2), confirming that motif availability is not the main determinant for targeting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "05f5cdf9-4f65-4d54-8823-c69526ab3fb5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C65",
+      "claim": "Motif availability is not the main determinant for targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, there is only weak correlation between the number of motifs within the 550 base pair promoter window and the number of mutations (Spearman's \u03c1 = 0.02 and \u03c1 = 0.2 for AID* and sA3G* respectively; Figure 4\u2014figure supplement 2), confirming that motif availability is not the main determinant for targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the weak correlation between motif number and mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "a1be7606-3367-4500-9496-0c7a57bbd02b",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C66",
+      "claim": "Mutations at rRNA genes were restricted to the well defined ribosomal replication fork barrier (rRFB) located between the 5S and 35S transcriptional units.",
+      "claim_type": "EXPLICIT",
+      "source": "By including repeatedly mapped reads across the rDNA locus, we could detect several hundred mutations at low allele frequency all within the expected deaminase mutation context, giving confidence in their detection and location (Figure 4\u2014figure supplement 3A). Mutations were restricted to the well defined ribosomal replication fork barrier (rRFB) located between the 5S and 35S transcriptional units.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "3c4d3091-3d97-4cf5-8822-985157e2cea9",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C67",
+      "claim": "No enhanced mutation was detected at the rRNA promoter regions.",
+      "claim_type": "EXPLICIT",
+      "source": "No enhanced mutation was detected at the promoter regions (which are transcribed in opposite directions by RNAP III and RNAP I respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "b2381b39-96aa-43dd-99e3-7720981f601e",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C68",
+      "claim": "Mutations clustered at the rRFB site for both deaminases.",
+      "claim_type": "EXPLICIT",
+      "source": "However mutations clustered at the rRFB site for both deaminases (Figure 4\u2014figure supplement 3B), at a site where induced homologous recombination maintains the size of the ribosomal gene array.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "c1c34391-48f6-4854-9d17-0709fe72d22f",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C69",
+      "claim": "Both Flag-tagged overexpressed human AID and full length human APOBEC3G can be recovered from cell extracts by binding to biotin labelled RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas both Flag-tagged overexpressed human AID and full length human APOBEC3G can be recovered from cell extracts by binding to biotin labelled RNAs, the catalytic domain of APOBEC3G (sA3G) is not (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "e8d2b22f-c9a9-4aa8-9a66-b662d266afc1",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C70",
+      "claim": "The catalytic domain of APOBEC3G (sA3G) cannot be recovered from cell extracts by binding to biotin labelled RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas both Flag-tagged overexpressed human AID and full length human APOBEC3G can be recovered from cell extracts by binding to biotin labelled RNAs, the catalytic domain of APOBEC3G (sA3G) is not (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "4501d1b9-9434-46b9-802a-c90dbc26305f",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C71",
+      "claim": "Full length APOBEC3G is efficiently recovered from extracts by the extended linear polyU RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, full length APOBEC3G is efficiently recovered from extracts by the extended linear polyU RNA, a reflection of its ability to oligomerise in an RNA dependent fashion, whereas AID recovery is not enhanced by its binding to linear polyU RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "c94a0b0c-1619-4dca-8cd9-748cc97939d4",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C72",
+      "claim": "AID recovery is not enhanced by its binding to linear polyU RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, full length APOBEC3G is efficiently recovered from extracts by the extended linear polyU RNA, a reflection of its ability to oligomerise in an RNA dependent fashion, whereas AID recovery is not enhanced by its binding to linear polyU RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "994b329a-37e3-4f7b-a920-f8d55895fc08",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C73",
+      "claim": "Binding of AID to tRNA species was also found for endogenous yeast tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of AID to tRNA species was also found for endogenous yeast tRNAs, suggesting that the modifications found in vivo (pseudouridylation and 2\u2032-O-ribose methylation) do not affect the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "e8cf0926-75b2-408f-af01-93975dcf302f",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C74",
+      "claim": "The single domain APOBEC3A protein shows no RNA binding ability except a limited amount to doubled stranded RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The single domain APOBEC3A protein shows no RNA binding ability except a limited amount to doubled stranded RNA, despite sharing the preferential targeting to promoters as the rest of the deaminases (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "1d637014-74a7-4e74-921a-7a2dbc23a325",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C75",
+      "claim": "AID binds structured RNAs in vitro (such as tRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our results show that AID binds structured RNAs in vitro (such as tRNAs), and preferentially targets tRNAs and other small RNA promoters for mutation in yeast, prompting the speculation that binding to abundant RNAs sequesters AID to subnuclear localities such as nucleolar areas, where small RNAs genes also localise during transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "d18b4d9b-69b2-42d8-8322-5f2da18d00be",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C76",
+      "claim": "Introduction of a chimeric snR6 RNA into the RNAP II driven YBR194W gene results in enhanced mutation focused to the immediate vicinity of the TSS by AID* but not sA3G*.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test the RNA binding properties of AID in modulating its targeting preferences we introduced a chimeric snR6 RNA into the RNAP II driven YBR194W gene, which was identified in our dataset as a transcribed but poorly targeted promoter by both deaminases (Figure 5C top panels). Initiation and transcription of the modified locus remained overall unaffected (Figure 5\u2014figure supplement 2), while comparison of the YBR194W promoter region by Sanger sequencing revealed enhanced mutation focused to the immediate vicinity of the TSS by AID* but not sA3G*.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "17a77108-f290-422b-becf-51046a1a42b1",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C77",
+      "claim": "The differential preference of AID* for tRNA, snRNAs and snoRNAs in yeast might reflect the ability of AID to preferentially associate with abundant small RNA species.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the differential preference of AID* for tRNA, snRNAs and snoRNAs in yeast might reflect the ability of AID to preferentially associate with abundant small RNA species, in contrast to the catalytic domain of APOBEC3G (sA3G*) that possesses no RNA binding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "58d899af-9219-4bea-9b74-487879942fd0",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C78",
+      "claim": "Targeting mutations to initiating promoters is not likely a function of the size of the deaminase.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting mutations to initiating promoters is not likely a function of the size of the deaminase, as could be inferred from the results described for both AID and the single domain fragment of APOBEC3G used in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both single and double domain deaminases show similar promoter targeting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "805cca52-edf4-461b-88b6-06fcbf53cfe5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C79",
+      "claim": "Similar promoter associated recurrent mutations can be elicited by APOBEC3A and APOBEC3B.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar promoter associated recurrent mutations can be elicited not only by APOBEC3A (also a single domain deaminase) but also by the double domain APOBEC3B (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "0c1cb3c8-a989-449b-b8c4-e7c2f1ecfbbc",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C80",
+      "claim": "Enrichment of mutations at TpC (versus other dinucleotides) in association with promoter regions is observed in a breast cancer genome that has the highest incidence of APOBEC3 kataegic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore not entirely unexpected to observe enrichment of mutations at TpC (versus other dinucleotides) in association with promoter regions in a breast cancer genome that has the highest incidence of APOBEC3 kataegic mutations (Figure 5\u2014figure supplement 1B), suggesting that the deaminases could access dsDNA at initiating or paused RNAPs also in mammalian cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "e9b3aea7-58bf-465d-9c89-b30cad1976d5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C81",
+      "claim": "The deaminases could access dsDNA at initiating or paused RNAPs also in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore not entirely unexpected to observe enrichment of mutations at TpC (versus other dinucleotides) in association with promoter regions in a breast cancer genome that has the highest incidence of APOBEC3 kataegic mutations (Figure 5\u2014figure supplement 1B), suggesting that the deaminases could access dsDNA at initiating or paused RNAPs also in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the yeast data and cancer genome analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "b393527e-84fe-41dc-b4a5-01d3aed5aa29",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C82",
+      "claim": "BCL6, PIM1 and MYC are recurrent off-targets of AID mutation in B cell malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "BCL6, PIM1 and MYC are recurrent off-targets of AID mutation in B cell malignancies (Pasqualucci et al., 2001); in the case of BCL6 it is estimated that AID induced mutations are also prevalent in non transformed B cells at just 103-fold lower frequency than at immunoglobulin genes (Liu et al., 2008) and even in the absence of the mutator phenotypes attributable to malignant transformation, normal B cells frequently show AID induced translocations at the MYC locus (Roschke et al., 1997; Casellas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "c8a8572c-8edc-433e-b031-57ad0f4cab35",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C83",
+      "claim": "AID induced mutations at BCL6 are prevalent in non transformed B cells at just 103-fold lower frequency than at immunoglobulin genes.",
+      "claim_type": "EXPLICIT",
+      "source": "BCL6, PIM1 and MYC are recurrent off-targets of AID mutation in B cell malignancies (Pasqualucci et al., 2001); in the case of BCL6 it is estimated that AID induced mutations are also prevalent in non transformed B cells at just 103-fold lower frequency than at immunoglobulin genes (Liu et al., 2008) and even in the absence of the mutator phenotypes attributable to malignant transformation, normal B cells frequently show AID induced translocations at the MYC locus (Roschke et al., 1997; Casellas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "a5fc5f14-4f5f-4af5-b29b-8a9d056ef9aa",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C84",
+      "claim": "Normal B cells frequently show AID induced translocations at the MYC locus.",
+      "claim_type": "EXPLICIT",
+      "source": "BCL6, PIM1 and MYC are recurrent off-targets of AID mutation in B cell malignancies (Pasqualucci et al., 2001); in the case of BCL6 it is estimated that AID induced mutations are also prevalent in non transformed B cells at just 103-fold lower frequency than at immunoglobulin genes (Liu et al., 2008) and even in the absence of the mutator phenotypes attributable to malignant transformation, normal B cells frequently show AID induced translocations at the MYC locus (Roschke et al., 1997; Casellas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Roschke et al., 1997 and Casellas et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "f39fa378-905e-4d40-8bae-b98b295a968c",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C85",
+      "claim": "Expression of AID and other APOBEC proteins in yeast faithfully recapitulates the signature of mutations observed in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of AID and other APOBEC proteins in yeast faithfully recapitulates the signature of mutations observed in mammalian cells in a smaller genome with no background mutations due to unrelated processes, such as DNA repair (Lada et al., 2013; Taylor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lada et al., 2013 and Taylor et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "640297c2-35c9-4802-bdb0-e2acac01fb14",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C86",
+      "claim": "The non-random nature of the mutations induced by the deaminases is remarkably focussed to just 1.5% of the yeast genome but overlaps more than half of the active promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we demonstrate the non-random nature of the mutations induced by the deaminases, which is remarkably focussed to just 1.5% of the yeast genome but nonetheless overlaps more than half of the active promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "bcea42dc-148a-41b4-9628-90ed09ffa7e0",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C87",
+      "claim": "The overlap between highly mutated promoters by both AID and APOBEC3G suggests that properties of the promoter itself can determine targeting rather than conservation of protein\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the overlap between highly mutated promoters by both AID and APOBEC3G suggests that rather than conservation of protein\u2013protein interactions of the deaminases with the transcription complex, properties of the promoter itself can determine targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both deaminases target similar promoters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "5f4a9e3e-c19e-414e-9e9b-aee5ef80e404",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C88",
+      "claim": "Enhanced targeting of RNAP III transcribed genes argues against active recruitment of the deaminases by conserved initiation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced targeting of RNAP III transcribed genes argues against active recruitment of the deaminases by conserved initiation factors, whereas the structural conservation of the DNA template conformation at the core pre-initiation complex of all polymerases (Vannini and Cramer, 2012) supports the idea that the conformation of the DNA template is the common element in the recruitment of the deaminases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both RNAP II and III genes are targeted, and supported by citation to Vannini and Cramer, 2012.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "7a13e9bf-38e6-4459-bd3e-514aa2391538",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C89",
+      "claim": "The structural conservation of the DNA template conformation at the core pre-initiation complex of all polymerases supports the idea that the conformation of the DNA template is the common element in the recruitment of the deaminases.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced targeting of RNAP III transcribed genes argues against active recruitment of the deaminases by conserved initiation factors, whereas the structural conservation of the DNA template conformation at the core pre-initiation complex of all polymerases (Vannini and Cramer, 2012) supports the idea that the conformation of the DNA template is the common element in the recruitment of the deaminases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vannini and Cramer, 2012 and inference from the data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "535f99de-3bb6-4ff9-badf-cd4f80a65875",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C90",
+      "claim": "The site of polymerase loading (within the body of the tRNA genes) rather than the TSS is the preferred target of deamination in the case of the RNAP III transcribed tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the site of polymerase loading (within the body of the tRNA genes) rather than the TSS is the preferred target of deamination in the case of the RNAP III transcribed tRNAs in contrast to the 5\u2032 region of the RNAP III transcribed SNR52 snoRNA, where the loading of the RNAP is fixed at the 5\u2032 promoter region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "34912205-e09f-4a82-8c89-d01ca1099353",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C91",
+      "claim": "The high density of mutations focussed to the small region between the TATA binding protein site (TBP) and the transcription start site (TSS) identifies the pre-initiation complex (PIC) as the target for the deaminases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the high density of mutations focussed to the small region between the TATA binding protein site (TBP) and the transcription start site (TSS), more precisely identify the pre-initiation complex (PIC) as the target for the deaminases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the spatial distribution of mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "690354e3-721b-49f9-909a-9f7169c07601",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C92",
+      "claim": "Intrinsic properties of active promoters, in particular the configuration associated with loading of the polymerase at the pre-initiation complex (open pre-initiation complex), are sufficient to generate persistent single stranded DNA accessible for deamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore it is highly significant that other nucleosome free regions, such as ARS are not targeted by the deaminases, despite undergoing DNA melting during the initiation of replication. This reinforces our interpretation that intrinsic properties of active promoters, in particular the configuration associated with loading of the polymerase at the pre-initiation complex (open pre-initiation complex) (Gr\u00fcnberg et al., 2012), are sufficient to generate persistent single stranded DNA accessible for deamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ARS are not targeted despite DNA melting, and supported by citation to Gr\u00fcnberg et al., 2012.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "7fa588c4-af94-41d4-bdee-553c537e12a2",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C93",
+      "claim": "The nature of the mutation hotspots within MELs (both at C and G) reveals that both strands of the melted DNA structure associated with active promoters are accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the preferential targeting of promoters nor the narrow focus of the MELs is due to the preferential clustering of mutable motifs. Interestingly, the nature of the mutation hotspots within MELs (both at C and G), reveals that both strands of the melted DNA structure associated with active promoters are accessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of mutations on both strands.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "79eccbb9-8af8-48ac-9747-bea4dfeddd0f",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C94",
+      "claim": "Protection from mutation is evident at the TBP binding site while the peak of mutations \u223c30 base pairs downstream identifies the site of RNAP loading and DNA melting.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, protection from mutation is evident at the TBP binding site while the peak of mutations \u223c30 base pairs downstream identifies the site of RNAP loading and DNA melting mapped by permanganate footprinting (Giardina and Lis, 1993) and high resolution ChIP (Rhee and Pugh, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to Giardina and Lis, 1993 and Rhee and Pugh, 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "d3269bfa-5241-4344-878b-de147762eb24",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C95",
+      "claim": "Deaminase footprinting data confirms the persistent open configuration and single stranded nature of the region around 30 bp downstream of TBP binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Our deaminase footprinting data further confirms the persistent open configuration and single stranded nature of this region potentially identifying open pre-initiation promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutation pattern observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "8e137247-35b9-4b60-acfe-1b378b799dab",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C96",
+      "claim": "Up to 75% of human promoters in different cell types are occupied by a pre-initiating form of RNAP II.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to 75% of human promoters in different cell types are occupied by a pre-initiating form of RNAP II (Guenther et al., 2007), whereas pausing and stalling are much more common in metazoan transcription compared with Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guenther et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "422de757-5e9b-49fa-ab0b-93900dad84c8",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C97",
+      "claim": "Most mammalian promoters pause within 200 base pairs of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian promoters are frequently regulated by proximal pausing, with most promoters pausing within 200 base pairs of the TSS (Adelman and Lis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Adelman and Lis, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "1f91d728-3d49-441b-ac8c-4cdcd3bea683",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C98",
+      "claim": "Accessibility of single stranded DNA at RNAP II stalled sites suffices to recruit APOBECs or AID.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data favours the idea that accessibility of single stranded DNA at RNAP II stalled sites suffice to recruit APOBECs or indeed AID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "b0297937-7555-418a-a575-0024567cb48c",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C99",
+      "claim": "This model offers explanation for the association of AID with mammalian SPT5, which functions in modulating the pausing of RNAP II during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "This model offers explanation for the association of AID with mammalian SPT5, which functions in modulating the pausing of RNAP II during elongation as transcription stalls, and is consistent with the recurrent targeting by AID of the promoter proximal region of MYC (Duquette et al., 2005) a well characterised promoter-proximal pausing regulated gene (Krumm et al., 1992; Strobl and Eick, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "9cffb012-646a-402c-80ff-4c7e5293bd0e",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C100",
+      "claim": "The correlation between high transcription rates and enhanced deaminase targeting reinforces the hypothesis that repeated loading of the pre-initiation complex leads to the persistence of a small region of melted DNA that is very efficiently targeted by the deaminases.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between high transcription rates and enhanced deaminase targeting reinforces the hypothesis that repeated loading of the pre-initiation complex leads to the persistence of a small region of melted DNA that is very efficiently targeted by the deaminases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between transcription rates and mutation targeting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "7037d5ce-1e53-42d0-8a82-ac793327518a",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C101",
+      "claim": "The enhanced targeting of tRNA, snoRNAs and snRNA genes could reflect the high transcription rates of these essential RNAs given that RNAP I and III transcripts constitute almost 80% of the total nuclear gene expression in dividing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed the enhanced targeting of tRNA, snoRNAs and snRNA genes could reflect the high transcription rates of these essential RNAs given that RNAP I and III transcripts constitute almost 80% of the total nuclear gene expression in dividing cells (Vannini, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citation to Vannini, 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "67663190-2a5d-4748-aff1-44f4afb916c9",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "claim_id": "C102",
+      "claim": "The catalytic activity of AID is not required for RNA binding or specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly the catalytic activity of AID is not required for the binding or the specificity, since similar binding was observed for the inactive mutant AID-E58A (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context and prior knowledge about cytidine deaminases, including their roles in antibody diversification, viral restriction, and cancer mutagenesis. These claims describe the established functions of AID and APOBEC family members, their evolutionary expansion, sequence specificity, and documented off-target effects in B cells and cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C9-C18, C82-C84) are well-supported by citations to established literature and represent accepted knowledge in the field. They provide essential background context for the study and are appropriately referenced to primary sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Overexpression of hyperactive AID* and sA3G* mutants in yeast generates genome-wide mutations with characteristic sequence signatures (WRC for AID*, YCC for sA3G*) that faithfully recapitulate mammalian mutation patterns. Diploid cells accumulate more mutations (796 SNVs for AID*, 592 for sA3G*) than haploid cells (61 SNVs) due to reduced fitness costs, while mutations are distributed proportionally to chromosome length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C29 and C85 are strongly supported by experimental data shown in Figure 1 and previous publications. The mutation frequencies, sequence contexts, and genome-wide distributions are quantified with appropriate controls (EMS) and statistical analysis (Spearman correlation). The diploid vs. haploid comparison is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Deaminase-induced mutations are highly concentrated in narrow mutation-enriched loci (MELs): 1227 MELs for AID* and 568 for sA3G*, averaging 110 bp and 71 bp width respectively. These MELs account for only 1.5% of the genome but contain 41% of AID* and 22% of sA3G* mutations. MEL targeting is independent of mutable motif density and shows high frequency of bi-allelic mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C42 and C86 are well-supported by computational analysis and experimental data in Figure 2 and Table 1. The MEL identification methodology is clearly described with appropriate thresholds. The comparison to EMS (only 1 MEL) and simulated data provides strong controls. The bi-allelic mutation frequency (48-56%) vs. random expectation (2-3%) is compelling evidence for preferential targeting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MELs are preferentially located at active promoter regions rather than gene bodies, with 76% of MELs at promoters vs. 24% expected. Mutations peak 21-38 bp upstream of the TSS, between the TATA element and TSS, corresponding to the pre-initiation complex (PIC) assembly site. The TATA element shows protection from mutation while the region ~30 bp downstream shows peak mutation density. Both DNA strands are accessible for mutation, and targeting correlates with transcription rates and RNAP II occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C55 and C87-C95 are strongly supported by data in Figure 3 and supplementary figures. The spatial distribution analysis is rigorous, with appropriate alignment to TSS/TTS and TATA elements. ChIP data (Figure 3\u2014supplement 3) supports the mechanistic interpretation. The correlation with transcription rates and RNAP II CTD phosphorylation (Figure 3E-F) provides functional validation. The inference that both DNA strands are accessible is well-justified by the mutation patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "ede53eea-c0fe-4df8-8982-c68b9be9dbd5",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study's central finding is that AID and APOBEC3G preferentially mutate transcriptionally active genes within narrow regions (110 bp width) fixed at RNA polymerase initiation sites, with high affinity for single-stranded DNA exposed by initiating polymerases without requiring specific cofactors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C7, and C8 represent the main conclusions of the study and are well-supported by the comprehensive experimental data showing MEL localization to promoters, the narrow width of mutation hotspots, and the correlation with transcription initiation. The lack of requirement for specific cofactors is supported by the observation that both RNAP II and III genes are targeted and that both AID and APOBEC3G show similar promoter preferences despite different protein interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AID* shows enhanced targeting of RNAP III-transcribed genes, particularly tRNAs (228 of 275 tRNA genes highly targeted), with mutation frequencies significantly higher than at mRNA promoters (p < 2e-16). Mutations occur at the site of polymerase loading within tRNA gene bodies. Enhanced targeting is also observed for snoRNA and snRNA genes, particularly by AID*. This preferential targeting is not explained by motif availability (weak correlation \u03c1 = 0.02-0.2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C68 are well-supported by data in Figure 4 and supplements. The statistical analysis is appropriate with non-parametric tests. The observation that mutations cluster at polymerase loading sites rather than TSS for tRNAs is particularly compelling. The weak correlation between motif density and mutations (Figure 4\u2014supplement 2) effectively rules out sequence-based explanations. The rRNA data (C66-C68) showing mutations at the rRFB rather than promoters adds additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "f4691f54-cb68-4d10-b114-9adbefceaf90",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AID shows enhanced mutational preference for small RNA genes (tRNAs, snoRNAs, snRNAs) compared to APOBEC3G, which correlates with AID's ability to bind structured RNAs in vitro. Full-length AID and APOBEC3G bind RNA, but the catalytic domain sA3G does not. Introduction of a chimeric snR6 RNA into a poorly targeted promoter enhances AID* but not sA3G* mutation at that locus. This suggests RNA binding may modulate AID targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C69-C77, C102 are supported by the combination of genomic mutation data (Figure 4) and biochemical RNA binding assays (Figure 5A-B). The chimeric snR6 experiment (C76, Figure 5C) provides functional validation that RNA can influence targeting. However, the mechanistic interpretation (C6, C77) remains somewhat speculative as the exact role of RNA binding in vivo is not definitively established. The data support the correlation but causation requires additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "71f31d10-b5bf-4554-97d9-e00c542f052a",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Promoter targeting is not dependent on deaminase size, as both single-domain (AID, APOBEC3A, sA3G) and double-domain (APOBEC3B) deaminases show similar promoter-associated mutations. Analysis of a breast cancer genome with high APOBEC3 kataegic mutations shows enrichment of TpC mutations at promoter regions, suggesting deaminases may access DNA at initiating or paused polymerases in mammalian cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 are well-supported by data in Figure 5\u2014supplement 1A showing similar promoter targeting patterns for different deaminases. However, claims C80-C81 regarding mammalian cancer genomes are more speculative. While the breast cancer data (Figure 5\u2014supplement 1B) shows promoter-associated TpC enrichment, this is a single genome analysis without statistical validation or comparison to other cancer types. The extrapolation from yeast to mammalian cells requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    },
+    {
+      "id": "0d58eb95-b1ec-4d47-96f4-ac534a24e447",
+      "content_id": "613cb377-5bf0-4f65-993b-7a989ae507de",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that their yeast findings are relevant to mammalian systems, where up to 75% of promoters are occupied by pre-initiating RNAP II and promoter-proximal pausing is common. They suggest that accessibility of single-stranded DNA at stalled RNAP II sites suffices to recruit deaminases, which could explain AID's association with SPT5 and targeting of the MYC promoter-proximal region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C101 are largely speculative extrapolations from the yeast data to mammalian systems. While the citations to mammalian transcription literature (C96-C97, C99) are appropriate, the mechanistic proposals (C98, C100-C101) lack direct experimental validation in mammalian cells. These represent reasonable hypotheses based on the yeast findings but require future experimental testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:26:57.037962Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0b42c995-e676-42d4-9ec2-04834d869148",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "4c119901-4ec3-48ed-b822-af2602412f05",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "3986e1b7-b275-4f67-98bc-d2a94787b727",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "23610c07-c32e-41a3-9f0c-ee021672bbe5",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "6256014d-b07b-4ac8-b448-ca552ca12be8",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "2bac58ba-57b7-4cf5-996f-3c1c2eb0d82d",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "7854e683-e225-45fc-8365-592741fa7f68",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "5ee219e1-9bf0-4087-ac9e-27a12b6873e2",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "c4709328-57ef-40f2-baad-dea79f010b0f",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "501b7849-250d-440c-be68-a6442e623323",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "24c0bfae-6fdf-4db3-a9c0-696bd6a4f2fb",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "19e2eefd-bd8c-4306-8255-b8b625ffbdf0",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "d7431a7c-5dfe-4b83-93da-7789daf32351",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "b393527e-84fe-41dc-b4a5-01d3aed5aa29",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "c8a8572c-8edc-433e-b031-57ad0f4cab35",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "a5fc5f14-4f5f-4af5-b29b-8a9d056ef9aa",
+      "result_id": "0618bdfb-c80c-465c-afc1-ce1d0ea22cae"
+    },
+    {
+      "claim_id": "7500898c-82cb-4ad9-9167-64930f200daa",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "006429f2-febd-43eb-ba80-45a802394e43",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "0e64cb34-892f-4f04-a28b-c856d0bd8208",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "d07ec4ce-c0f1-4062-800e-a0143a3f4249",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "4165edc8-708f-4db3-8d1d-41bc9475b0c5",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "fd2b0da1-3be1-4cda-bf70-7ba8000d7029",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "1b2b0113-f9a9-4e65-ae5e-fc5cf57119c5",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "9bb6f9b9-6d21-4845-98b3-9563e0f85dca",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "6f68e6c0-a036-4c0d-a20f-a707fd3d7c38",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "3eb9dc81-967e-48c1-87c8-95c2996b710d",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "097084b3-abfb-47ac-907e-5501315dda43",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "f39fa378-905e-4d40-8bae-b98b295a968c",
+      "result_id": "fc77a585-9da0-4a7b-9f88-5590f1b780d9"
+    },
+    {
+      "claim_id": "037ea34d-38bd-4e81-b2ea-60b79ae2c978",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "c423f07f-92b1-43d4-9c6f-a3904ad26d48",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "96867271-82e9-42ba-96a2-1dff4664971d",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "c2ab7e50-3778-4ea6-b630-e545691fbac4",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "2e2152c9-e3da-4d33-9dab-6b4d7e64e6e4",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "e47ad0f4-ef78-4cea-afa6-53adf404aa1c",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "316b6820-6800-41c1-aab4-d63249f3f602",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "470ec313-f39f-4965-9400-ceca96f2bfde",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "ce42e432-fe9e-4473-960a-83418b86acea",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "285da95c-886b-4e3e-9999-c6492c10ae6c",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "54a95d59-7a90-4ebf-93de-5e27c4e346fe",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "602f52c6-e079-40ae-b605-662778b7a5c5",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "2d4d4a1f-0130-4122-a50a-1745957ee7a6",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "640297c2-35c9-4802-bdb0-e2acac01fb14",
+      "result_id": "0c4634c8-ff4b-4876-b9c8-ea5e9c3ac202"
+    },
+    {
+      "claim_id": "2f033d9c-0e10-4caa-87e9-51d5785a3377",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "e5daf0b9-18b6-4d8a-b10f-cb30be4803d4",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "d19b868d-356a-422f-81db-cb85e6ab369f",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "794be0c1-4d80-4aa7-9e6e-9e61fd2fe3ff",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "ef88ea74-5e73-414d-97d6-74221aef80a4",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "f93ae568-3960-4620-bf26-d370202c8507",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "51950bd7-3b38-42b2-b0a5-739f4ada13dc",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "6b9998cc-a112-4f7e-9cc7-7ec52aa044f0",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "5d715abd-246c-4b65-a3dc-e4a30d7dd454",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "7e75cf55-f31b-4dbd-81ec-c2bebabc7b6c",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "143ea999-ab6b-4749-82be-c3c47ebff0c9",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "b9d8a47b-bb74-4533-af8a-2869a6b36b69",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "07476a8d-c891-4362-9d68-236bd9b7d1db",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "bcea42dc-148a-41b4-9628-90ed09ffa7e0",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "5f4a9e3e-c19e-414e-9e9b-aee5ef80e404",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "7a13e9bf-38e6-4459-bd3e-514aa2391538",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "535f99de-3bb6-4ff9-badf-cd4f80a65875",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "34912205-e09f-4a82-8c89-d01ca1099353",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "690354e3-721b-49f9-909a-9f7169c07601",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "7fa588c4-af94-41d4-bdee-553c537e12a2",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "79eccbb9-8af8-48ac-9747-bea4dfeddd0f",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "d3269bfa-5241-4344-878b-de147762eb24",
+      "result_id": "2fed47dc-4e3a-4756-9e29-d7c568b454a3"
+    },
+    {
+      "claim_id": "4692e109-99fe-4ba1-a14b-96cd061366a6",
+      "result_id": "ede53eea-c0fe-4df8-8982-c68b9be9dbd5"
+    },
+    {
+      "claim_id": "3fba864a-b0e8-4761-8f09-56539f716bf5",
+      "result_id": "ede53eea-c0fe-4df8-8982-c68b9be9dbd5"
+    },
+    {
+      "claim_id": "2c17e0f5-fe61-4553-9595-4ea1157bd18d",
+      "result_id": "ede53eea-c0fe-4df8-8982-c68b9be9dbd5"
+    },
+    {
+      "claim_id": "02a68450-2364-4834-9ee0-da0d7185da6b",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "39ac717b-59ac-4703-a021-d7b2a6616844",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "3723558d-1b50-4908-ab94-2cd14b1202ac",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "e8309fa6-d930-4cb9-bff3-571b63b5b05c",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "820fb4c4-4a63-4c2e-a1a4-7d30a07fe1ff",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "3b1d160f-362a-491b-9881-8d1718e9e9ba",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "2889b3a5-1957-457b-897b-5a6017665041",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "e242c49d-296a-4716-aacc-b246254dcb88",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "8c2ad76f-667a-4ade-bdcc-15af437aefe9",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "05f5cdf9-4f65-4d54-8823-c69526ab3fb5",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "a1be7606-3367-4500-9496-0c7a57bbd02b",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "3c4d3091-3d97-4cf5-8822-985157e2cea9",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "b2381b39-96aa-43dd-99e3-7720981f601e",
+      "result_id": "efa479c1-9b6d-4fa3-914f-43e618fe5c27"
+    },
+    {
+      "claim_id": "1c7ebed4-78a3-4297-9f25-687eba67ac19",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "8defbb7d-632a-4684-aeb7-8ddabd324333",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "c1c34391-48f6-4854-9d17-0709fe72d22f",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "e8d2b22f-c9a9-4aa8-9a66-b662d266afc1",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "4501d1b9-9434-46b9-802a-c90dbc26305f",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "c94a0b0c-1619-4dca-8cd9-748cc97939d4",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "994b329a-37e3-4f7b-a920-f8d55895fc08",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "e8cf0926-75b2-408f-af01-93975dcf302f",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "1d637014-74a7-4e74-921a-7a2dbc23a325",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "d18b4d9b-69b2-42d8-8322-5f2da18d00be",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "17a77108-f290-422b-becf-51046a1a42b1",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "67663190-2a5d-4748-aff1-44f4afb916c9",
+      "result_id": "f4691f54-cb68-4d10-b114-9adbefceaf90"
+    },
+    {
+      "claim_id": "58d899af-9219-4bea-9b74-487879942fd0",
+      "result_id": "71f31d10-b5bf-4554-97d9-e00c542f052a"
+    },
+    {
+      "claim_id": "805cca52-edf4-461b-88b6-06fcbf53cfe5",
+      "result_id": "71f31d10-b5bf-4554-97d9-e00c542f052a"
+    },
+    {
+      "claim_id": "0c1cb3c8-a989-449b-b8c4-e7c2f1ecfbbc",
+      "result_id": "71f31d10-b5bf-4554-97d9-e00c542f052a"
+    },
+    {
+      "claim_id": "e9b3aea7-58bf-465d-9c89-b30cad1976d5",
+      "result_id": "71f31d10-b5bf-4554-97d9-e00c542f052a"
+    },
+    {
+      "claim_id": "8e137247-35b9-4b60-acfe-1b378b799dab",
+      "result_id": "0d58eb95-b1ec-4d47-96f4-ac534a24e447"
+    },
+    {
+      "claim_id": "422de757-5e9b-49fa-ab0b-93900dad84c8",
+      "result_id": "0d58eb95-b1ec-4d47-96f4-ac534a24e447"
+    },
+    {
+      "claim_id": "1f91d728-3d49-441b-ac8c-4cdcd3bea683",
+      "result_id": "0d58eb95-b1ec-4d47-96f4-ac534a24e447"
+    },
+    {
+      "claim_id": "b0297937-7555-418a-a575-0024567cb48c",
+      "result_id": "0d58eb95-b1ec-4d47-96f4-ac534a24e447"
+    },
+    {
+      "claim_id": "9cffb012-646a-402c-80ff-4c7e5293bd0e",
+      "result_id": "0d58eb95-b1ec-4d47-96f4-ac534a24e447"
+    },
+    {
+      "claim_id": "7037d5ce-1e53-42d0-8a82-ac793327518a",
+      "result_id": "0d58eb95-b1ec-4d47-96f4-ac534a24e447"
+    }
+  ],
+  "comparisons": []
+}

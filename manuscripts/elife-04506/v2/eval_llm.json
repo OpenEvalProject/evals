@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C15"
+    ],
+    "result": "Set1 functions as a transcriptional repressor largely independent of the Set1C complex and H3K4 methylation in S. pombe. Loss of set1 resulted in derepression of nearly 1000 microarray probes, while H3K4me null mutants affected only ~100 probes, and the set1\u0394 profile includes upregulated transcripts such as Tf2 retrotransposons, pericentromeric repeats, and lncRNAs that were minimally affected in other Set1C/H3K4me mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C9, and C15 collectively demonstrate that Set1 has a major repressive function independent of H3K4me. The microarray data (Figure 1A) clearly shows the differential impact of set1\u0394 versus H3K4me mutants, and hierarchical clustering (Figure 1C) confirms the distinct transcriptional profile of set1\u0394. The evidence is internally consistent and well-supported by multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Different Set1C subunit deletions produce distinct transcriptional effects: loss of ash2 primarily increases sense transcription, while loss of shg1, spp1, or swd3 predominantly affects intergenic transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 are directly supported by the strand/location analysis shown in Figure 1B. The data clearly demonstrate differential effects of Set1C subunit deletions on transcript types, suggesting functional specialization or distinct roles for these subunits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Set1 localizes to both highly expressed and repressed genes, but Set1 binding levels do not linearly correlate with transcription levels. Set1 is enriched at active Pol II promoters as well as at lowly expressed and repressed developmental genes, and this localization is not dependent on H3K4me or Set1's catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C17, C18, C19, C85, C86, and C87 are well-supported by ChIP-chip data (Figures 2A, 2B, 2C) and supplementary ChIP data (Figure 2\u2014figure supplement 1). The lack of linear correlation between Set1 binding and transcription is clearly demonstrated in Figure 2C. The observation that set1FH3K4me\u2212 shows enhanced chromatin association (C86) is particularly interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Set1-bound genes show functional stratification by expression level: highly expressed Set1-bound genes are enriched for GO terms related to rapid growth (ribosome, translation, glycolysis), while lowly expressed Set1-bound genes are enriched for stress response, cell wall biogenesis, and transcription factor functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C21 are supported by GO analysis presented in Figure 2D and Figure 2\u2014source data 1. The functional stratification is consistent with Set1 having distinct roles at different genomic contexts. However, the exclusion of heterochromatic noncoding RNAs from the low-expression analysis due to limited GO annotation is a limitation that should be noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "Atf1 recruits Set1 to heterochromatic loci (centromeres, rDNA) and stress-response gene promoters. Atf1 and Set1 colocalize at centromeric regions, rDNA, and the ste11 promoter, and loss of atf1 reduces both Set1 enrichment and H3K4me3 levels at these loci. More than one-third of Atf1 and Set1 binding sites are co-occupied (p < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24-C29, and C31 are well-supported by extensive ChIP-chip data (Figures 3A-E). The colocalization is clearly demonstrated, and the reduction of Set1 enrichment and H3K4me3 in atf1\u0394 cells provides strong evidence for Atf1-mediated recruitment. The statistical significance of co-occupancy (p < 0.001, Fisher's exact test) strengthens the conclusion. The mechanistic link is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C88"
+    ],
+    "result": "At the ste11 locus, Atf1 and Set1 act primarily in parallel pathways to maintain repression, as significant upregulation of ste11 expression occurs only in the atf1\u0394 set1\u0394 double mutant, not in single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C88 are supported by expression analysis in Figure 3\u2014figure supplement 4. The parallel pathway model is consistent with the observation that single mutants show minimal derepression while the double mutant shows substantial upregulation. This suggests redundant or compensatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C71"
+    ],
+    "result": "Set1 coordinates with the class II HDAC Clr3 in heterochromatin assembly at pericentromeric regions. The set1\u0394 clr3\u0394 double mutant exhibits synthetic growth defects, sensitivity to thiabendazole, synergistic derepression of pericentromeric repeats on both strands, while the set1FH3K4me\u2212 clr3\u0394 mutant shows only slight defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35-C38, and C71 are well-supported by multiple lines of evidence including growth assays (Figure 4A), reporter assays (Figure 4B), and bidirectional transcription analysis (Figure 4C). The observation that set1FH3K4me\u2212 clr3\u0394 shows minimal defects (C36) strongly supports the H3K4me-independent function of Set1 in heterochromatin assembly. The synergistic effects in the double mutant are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C72"
+    ],
+    "result": "Set1 and Clr3 cooperate in establishing H3K9me2-associated heterochromatin. Loss of both set1 and clr3 results in dramatic reduction of H3K9me2 and Swi6 levels with increased Pol II occupancy at pericentromeric repeats and other heterochromatin domains. This heterochromatic activity of Set1 is independent of its H3K4me function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C72 are strongly supported by ChIP-qPCR (Figure 4D, Figure 4\u2014figure supplement 1) and ChIP-chip data (Figures 4E, Figure 4\u2014figure supplement 2). The dramatic reduction in H3K9me2 in the double mutant compared to single mutants demonstrates functional cooperation. The H3K4me-independence (C72) is inferred from the minimal defects in set1FH3K4me\u2212 clr3\u0394 and is consistent with prior observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Loss of clr3 or set1 individually results in increased siRNA levels, but the set1\u0394 clr3\u0394 double mutant shows dramatically reduced siRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 are directly supported by northern blot analysis (Figure 4F). The paradoxical reduction of siRNAs in the double mutant despite increased transcription suggests complex regulatory interactions between Set1, Clr3, and the RNAi machinery. This result is well-documented but the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C93",
+      "C94"
+    ],
+    "result": "Set1 and Clr3 coordinate genome-wide transcriptional repression. Loss of clr3 affects 792 probes with equal upregulation and downregulation, while the set1\u0394 clr3\u0394 double mutant shows differential expression of nearly 2900 probes (2343 upregulated). Loss of H3K4me in a clr3\u0394 background does not produce such drastic changes. A large subset of genes shows significant expression changes only in the double mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46-C49, C93, and C94 are well-supported by comprehensive microarray analysis (Figures 5A-C, Figure 5\u2014figure supplements 1-2). The synergistic effects in the double mutant are clearly demonstrated by hierarchical clustering. The observation that set1FH3K4me\u2212 clr3\u0394 does not show comparable effects (C48) reinforces the H3K4me-independent function of Set1. The scale of the transcriptional changes is substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C95"
+    ],
+    "result": "Upregulated transcripts in set1\u0394 clr3\u0394 include developmental and stress-response regulators (fbp1, mei2, ste11) and are enriched for GO terms related to stress-response processes including the Tor2-Mei2-Ste11 pathways, which are activated during meiotic development. The set1\u0394 clr3\u0394 double mutant exhibits considerable meiotic defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C95 are supported by expression analysis (Figure 5\u2014figure supplement 3), GO analysis (Figure 5D, Figure 5\u2014source data 1), and meiotic phenotype analysis (Figure 5\u2014figure supplement 4). The functional coherence of upregulated genes and the meiotic defects provide strong support for the biological significance of Set1-Clr3 coordination in developmental control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C82"
+    ],
+    "result": "Atf1 is a stress-response transcription factor that localizes to its targets before activation, contributes to heterochromatic silencing at the silent mating-type locus, and is activated by phosphorylation via the Sty1 MAPK pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, and C82 are background knowledge claims supported by appropriate citations. These establish the known functions of Atf1 that provide context for the current study's findings. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C83",
+      "C84"
+    ],
+    "result": "The Set1C complex contains seven subunits in addition to Set1, with six subunits (Swd1, Swd2, Swd3, Spp1, Ash2, Sdc1) having orthologs in S. cerevisiae and humans. Loss of individual subunits differentially affects H3K4me levels. S. pombe Set1 exists in at least two complexes: a large ~1 MDa complex and a smaller ~800 kDa complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C83, and C84 are background knowledge supported by appropriate citations. These establish the composition and organization of Set1C, providing essential context for interpreting the functional differences observed between Set1 and other Set1C subunits. The existence of multiple Set1 complexes (C84) is particularly relevant to the interpretation of Set1's H3K4me-independent functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C69",
+      "C70",
+      "C81",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background on chromatin modifications and heterochromatin assembly: HATs are associated with gene activation while HDACs correlate with repression; H3K4me and H3K9me distinguish euchromatin and heterochromatin; the euchromatin/heterochromatin landscape is fluid; RNAi, exosome, HATs, and Pol II contribute to heterochromatin assembly; Set1 homologs have been implicated in transcriptional silencing; heterochromatin is characterized by H3K9me and HP1/Swi6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62, C69-C70, C81, C90-C92 are background knowledge claims that establish the conceptual framework for the study. All are supported by appropriate citations and represent well-established principles in chromatin biology. These provide essential context for understanding the novelty and significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Prior work on Set1 function: S. pombe Set1 has roles in repression and genome organization of Tf2 retrotransposons and heterochromatic repeats that are dependent and independent of Set1C and H3K4me. In S. cerevisiae, loss of Set1C subunits produces comparable expression profiles, and loss of set1 has modest effects fully accounted for by loss of H3K4me.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 accurately represent prior work, with C63 citing the authors' own previous studies and C64-C65 citing work in S. cerevisiae. These claims establish the contrast between S. cerevisiae and S. pombe that motivates the current study. The citations appear appropriate and the characterization of prior work is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "S. pombe Set1 might mediate its repressive non-H3K4me function via a distinct form of Set1 different from the canonical Set1C complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is a speculative inference based on the observation that Set1 exists in multiple complexes (C84) and has H3K4me-independent functions. While this is a reasonable hypothesis consistent with the data, it lacks direct experimental evidence. The claim is appropriately presented as speculative ('might mediate') but requires further investigation to be confirmed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C76",
+      "C77"
+    ],
+    "result": "Co-occupancy of Set1 and Atf1 at developmental and stress-response gene promoters likely maintains these genes in a poised transcriptional off-state and may contribute to their rapid activation in response to stress signals. At these loci, Set1 may act with Atf1, Clr3, and other HDACs to maintain repression, with chromatin states supporting transcriptionally poised Pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67, C68, C76, and C77 are speculative inferences about the functional significance of Set1/Atf1 co-occupancy. While these are reasonable hypotheses consistent with the observed colocalization and known roles of Atf1 in stress response, they lack direct experimental evidence for the 'poised' state or rapid activation mechanism. The claims are appropriately presented as speculative ('likely,' 'may,' 'probably') but require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Set1-mediated heterochromatin assembly might involve methylation of a nonhistone substrate, analogous to SUV39H1/Clr4 methylating Mlo3. The only known nonhistone target of Set1 is DAM1 in S. cerevisiae, but the S. pombe dam1 ortholog does not appear to be the target of Set1-mediated heterochromatic silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is speculative reasoning based on analogy to Clr4, while C74 and C75 provide context by noting that dam1 is not the relevant target in S. pombe. The speculation about a nonhistone substrate is reasonable given the H3K4me-independent function, but lacks direct evidence. The exclusion of dam1 (C75) is based on unpublished data, which limits independent verification. This hypothesis requires identification of the actual substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Methodological details: Null mutants were constructed using a kanamycin cassette, double mutants were generated by standard genetic crosses, and liquid cultures were grown at 30\u00b0C in YEA medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe standard methodological procedures that are well-established and appropriately cited. These are routine techniques in yeast genetics and are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Several repressed genes whose promoters are occupied by Atf1 exhibited increased H3K4me3 levels in atf1\u0394 cells, probably due to loss of Atf1-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by ChIP-chip data (Figure 3\u2014figure supplement 3). The interpretation that increased H3K4me3 results from loss of Atf1-mediated repression is reasonable, as derepression would lead to increased transcription and associated H3K4me3. This is consistent with the known association of H3K4me3 with active transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The set1\u0394 clr3\u0394 double mutant exhibited synthetic slow-growth phenotype and sensitivity to thiabendazole, suggesting defects in chromosome segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by growth assays (Figure 4A). The inference of chromosome segregation defects from thiabendazole sensitivity is reasonable, as thiabendazole is a tubulin inhibitor that affects microtubule function. However, this is an indirect inference and direct analysis of chromosome segregation would strengthen the conclusion.",
+    "result_type": "MINOR"
+  }
+]
